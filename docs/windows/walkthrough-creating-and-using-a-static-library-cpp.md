@@ -65,7 +65,7 @@ ms.locfileid: "40015747"
   
 1.  새 클래스에 대한 헤더 파일을 만들려면 **솔루션 탐색기** 에서 **MathFuncsLib**프로젝트에 대한 바로 가기 메뉴를 연 후 **추가**, **새 항목**을 선택합니다. **새 항목 추가** 대화 상자의 왼쪽 창에 있는 **Visual C++** 에서 **코드**를 선택합니다. 가운데 창에서 **헤더 파일 (.h)** 을 선택합니다. 헤더 파일의 이름을 지정-예를 들어 *MathFuncsLib.h*-를 선택 합니다 **추가** 단추입니다. 빈 헤더 파일이 표시됩니다.  
   
-2.  라는 클래스를 추가 `MyMathFuncs` 더하기, 빼기, 곱하기 및 나누기 같은 일반적인 산술 연산을 수행 합니다. 코드는 다음과 비슷합니다.  
+2.  더하기, 빼기, 곱하기 및 나누기와 같은 일반적인 산술 연산들을 수행하는 `MyMathFuncs` 라는 클래스를 추가합니다. 코드는 아래와 같습니다. 
   
      [!code-cpp[NVC_Walkthrough_Create_Static_Lib#100](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_1.h)]  
   
