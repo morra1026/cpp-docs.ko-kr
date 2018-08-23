@@ -16,19 +16,19 @@ dev_langs:
 helpviewer_keywords:
 - Object class
 ms.assetid: 709e84a8-0bff-471b-bc14-63e424080b5a
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7fc6dc1df1d1e22032dbe7322b9a6ead8334ddc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 19c302f08485b6db89ea2a6b66106244ed95b48c
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33091883"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42601740"
 ---
 # <a name="platformobject-class"></a>Platform::Object 클래스
-Ref 클래스 및 ref 구조체는 Windows 런타임 앱에 대 한 일반적인 동작을 제공 합니다. 모든 ref 클래스 및 ref 구조체 인스턴스는 Platform::Object^로 암시적으로 변환될 수 있고 해당하는 가상 ToString 메서드를 재정의할 수 있습니다.  
+Ref 클래스 및 Windows 런타임 앱에서 ref 구조체에 대 한 일반적인 동작을 제공 합니다. 모든 ref 클래스 및 ref 구조체 인스턴스는 Platform::Object^로 암시적으로 변환될 수 있고 해당하는 가상 ToString 메서드를 재정의할 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -99,7 +99,7 @@ public:int GetHashCode()
  이 개체를 고유하게 식별하는 숫자 값입니다.  
   
 ### <a name="remarks"></a>설명  
- GetHashCode를 사용하여 맵에 개체의 키를 만들 수 있습니다. 사용 하 여 해시 코드를 비교할 수 [object:: equals](#equals)합니다. 코드 경로가 매우 중요하며 `GetHashCode` 및 `Equals`가 충분히 빠르지 않은 경우 기본 COM 레이어로 드롭다운하고 네이티브 `IUnknown` 포인터 비교를 수행할 수 있습니다.  
+ GetHashCode를 사용하여 맵에 개체의 키를 만들 수 있습니다. 사용 하 여 해시 코드를 비교할 수 있습니다 [object:: equals](#equals)합니다. 코드 경로가 매우 중요하며 `GetHashCode` 및 `Equals`가 충분히 빠르지 않은 경우 기본 COM 레이어로 드롭다운하고 네이티브 `IUnknown` 포인터 비교를 수행할 수 있습니다.  
   
 
 
@@ -117,11 +117,11 @@ Object::GetType()
  A [platform:: type](../cppcx/platform-type-class.md) 개체의 런타임 형식을 설명 하는 개체입니다.  
   
 ### <a name="remarks"></a>설명  
- 정적 [type:: gettypecode](../cppcx/platform-type-class.md#gettypecode) 가져오는 데 사용할 수는 [platform:: typecode 열거형](../cppcx/platform-typecode-enumeration.md) 현재 형식을 나타내는 값입니다. 대부분의 경우 이는 기본 제공 형식에 유용합니다. 제외한 모든 ref 클래스에 대 한 형식 코드 [platform:: string](../cppcx/platform-string-class.md) 개체 (1)입니다.  
+ 정적 [type:: gettypecode](../cppcx/platform-type-class.md#gettypecode) 가져오는 데 사용할 수는 [platform:: typecode 열거형](../cppcx/platform-typecode-enumeration.md) 현재 형식을 나타내는 값입니다. 대부분의 경우 이는 기본 제공 형식에 유용합니다. 형식 코드를 제외한 모든 ref 클래스에 대 한 [platform:: string](../cppcx/platform-string-class.md) 개체 (1).  
   
- [Windows::UI::Xaml::Interop::TypeName](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) 클래스 Windows 구성 요소와 앱 간에 형식 정보를 전달 하는 언어 독립적 방법으로 Windows Api에서 사용 됩니다. T[platform:: type 클래스](../cppcx/platform-type-class.md) 형식 사이의 변환 하기 위한 연산자가 `Type` 및 `TypeName`합니다.  
+ 합니다 [Windows::UI::Xaml::Interop::TypeName](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) 클래스는 Windows 구성 요소와 앱 간에 형식 정보를 전달 하는 언어 독립적 방법으로 Windows Api에서 사용 됩니다. T[platform:: type 클래스](../cppcx/platform-type-class.md) 간의 변환에 대 한 연산자가 `Type` 고 `TypeName`입니다.  
   
- 사용 하 여 [typeid](../windows/typeid-cpp-component-extensions.md) 반환 하도록 연산자는 `Platform::Type` 하면 XAML 페이지 간을 탐색할 때 등에 클래스 이름에 대 한 개체:  
+ 사용 된 [typeid](../windows/typeid-cpp-component-extensions.md) 반환 하도록 연산자는 `Platform::Type` 예를 들어 XAML 페이지 사이 탐색할 때 클래스 이름에 대 한 개체:  
   
 ```  
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);  

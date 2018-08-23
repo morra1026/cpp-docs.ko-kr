@@ -5,16 +5,16 @@ ms.date: 01/22/2017
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: 11034314-d54a-426d-923b-5ab7a6b9f8ce
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6be3b207f6bd64685f7ec1d3f6d2271ec3b83f17
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d8ed06b84ec53cddac2d76488f7d1540a92c1d52
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33090654"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42592554"
 ---
 # <a name="interfaces-ccx"></a>인터페이스(C++/CX)
 ref 클래스가 상속할 수 있는 구체적 기본 클래스는 하나뿐이지만 구현할 수 있는 인터페이스 클래스의 개수에는 제한이 없습니다. 인터페이스 클래스(또는 인터페이스 구조체) 자체는 여러 인터페이스 클래스를 상속하거나 필요로 할 수 있고, 멤버 함수를 오버로드할 수 있으며, 형식 매개 변수를 사용할 수 있습니다.  
@@ -30,7 +30,7 @@ ref 클래스가 상속할 수 있는 구체적 기본 클래스는 하나뿐이
   
 -   필드 및 정적 멤버는 허용되지 않습니다.  
   
--   속성, 메서드 매개 변수로 사용 되는 값만 Windows 런타임 형식; 수를 반환 하는 형식 여기에 기본 형식 및 열거형 클래스 형식이 포함 됩니다.  
+-   반환 값에는 Windows 런타임 형식; 가능 합니다. 또는 메서드 매개 변수 속성으로 사용 되는 형식 여기에 기본 형식 및 열거형 클래스 형식이 포함 됩니다.  
   
 ## <a name="declaration-and-usage"></a>선언과 사용법  
  다음 예제에서는 인터페이스를 선언하는 방법을 보여 줍니다. 인터페이스는 클래스나 구조체 형식으로 선언할 수 있습니다.  
@@ -63,9 +63,9 @@ ref 클래스가 상속할 수 있는 구체적 기본 클래스는 하나뿐이
  [!code-cpp[cx_interfaces#06](../cppcx/codesnippet/CPP/interfacestest/class1.h#06)]  
   
 ## <a name="generic-interfaces"></a>제네릭 인터페이스  
- C + + /CX에서는 `generic` 키워드는 Windows 런타임 매개 변수화 된 형식을 나타내는 데 사용 됩니다. 매개 변수화된 형식은 메타데이터로 내보내지고 형식 매개 변수를 지원하는 임의의 언어로 작성된 코드에서 사용될 수 있습니다. 일부 제네릭 인터페이스를 정의 하는 Windows 런타임-예를 들어 [Windows::Foundation::Collections::IVector\<T >](Windows::Foundation::Collections::IVector)-하지만 C + 사용자 정의 public 제네릭 인터페이스의 생성을 지원 하지 않습니다 것 + CX 합니다. 하지만 private 제네릭 인터페이스를 만들 수 있습니다.  
+ C + + /CX는 `generic` 키워드 매개 변수가 있는 Windows 런타임 형식을 나타내는 데 사용 됩니다. 매개 변수화된 형식은 메타데이터로 내보내지고 형식 매개 변수를 지원하는 임의의 언어로 작성된 코드에서 사용될 수 있습니다. Windows 런타임 일부 제네릭 인터페이스를 정의 합니다.-예를 들어 [Windows::Foundation::Collections::IVector\<T >](Windows::Foundation::Collections::IVector)-C + 사용자 정의 public 제네릭 인터페이스의 생성을 지원 하지 않습니다 하지만 + CX 합니다. 하지만 private 제네릭 인터페이스를 만들 수 있습니다.  
   
- 제네릭 인터페이스를 작성 하 여 Windows 런타임 형식을 사용할 수 있는 방법을 다음과 같습니다.  
+ 제네릭 인터페이스를 작성 하려면 Windows 런타임 형식을 사용할 수 있는 방법을 다음과 같습니다.  
   
 -   구성 요소의 제네릭 사용자 정의 `interface class` 는 Windows 메타데이터 파일로 내보낼 수 없으므로 public 액세스 가능성을 가질 수 없으며 다른 .winmd 파일의 클라이언트 코드가 이 클래스를 구현할 수 없습니다. 이 클래스는 동일한 구성 요소의 public이 아닌 ref 클래스에서 구현될 수 있습니다. public ref 클래스는 제네릭 인터페이스 형식을 private 멤버로 사용할 수 있습니다.  
   
@@ -93,7 +93,7 @@ ref 클래스가 상속할 수 있는 구체적 기본 클래스는 하나뿐이
   
 -   메서드 매개 변수의 형식이 형식 매개 변수일 경우 해당 매개 변수 또는 변수 선언에 포인터, 네이티브 참조 또는 핸들 선언자 없이 형식 매개 변수의 이름이 사용됩니다. 따라서 "T^"를 작성할 필요가 없습니다.  
   
--   템플릿 기반 ref 클래스는 private여야 하며, 제네릭 인터페이스를 구현할 수 있고 템플릿 매개 변수를 전달할 수 *T* 제네릭 인수를 *T*합니다. 템플릿 기반 ref 클래스의 각 인스턴스화 자체가 ref 클래스입니다.  
+-   템플릿 기반 ref 클래스는 private여야 하며, 제네릭 인터페이스를 구현할 수 있고 템플릿 매개 변수를 전달할 수 있습니다 *T* 제네릭 인수 *T*합니다. 템플릿 기반 ref 클래스의 각 인스턴스화 자체가 ref 클래스입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [형식 시스템](../cppcx/type-system-c-cx.md)   

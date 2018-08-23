@@ -11,16 +11,16 @@ dev_langs:
 helpviewer_keywords:
 - Platform::ValueType Class
 ms.assetid: 79aa8754-b140-4974-a5b1-be046938a10a
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1994aa6445c67bae138a51f1d3eebb2a54f9b17d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 12766e81ddd90b257830b6bf5adefd2562781d9e
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088208"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42611049"
 ---
 # <a name="platformvaluetype-class"></a>Platform::ValueType 클래스
 값 형식 인스턴스의 기본 클래스입니다.  
@@ -35,7 +35,7 @@ public ref class ValueType : Object
   
 |||  
 |-|-|  
-|[ValueType::ToString](#tostring)|개체의 문자열 표현을 반환합니다. 상속 되며, [platform:: object](../cppcx/platform-object-class.md)합니다.|  
+|[ValueType::ToString](#tostring)|개체의 문자열 표현을 반환 합니다. 상속 [platform:: object](../cppcx/platform-object-class.md)합니다.|  
   
 ### <a name="remarks"></a>설명  
  ValueType 클래스는 값 형식을 생성하는 데 사용됩니다. ValueType은 기본 멤버인 Object에서 파생됩니다. 그러나 컴파일러는 해당 기본 멤버를 ValueType 클래스에서 파생된 값 형식에서 분리합니다. 컴파일러는 값 형식이 boxing될 때 해당 기본 멤버를 다시 연결합니다.  
@@ -49,8 +49,8 @@ public ref class ValueType : Object
   
  **메타데이터:** platform.winmd  
 
-## <a name="tostring"></a> ValueType::ToString 메서드
-개체의 문자열 표현을 반환합니다.  
+## <a name="tostring"></a> Valuetype:: Tostring 메서드
+개체의 문자열 표현을 반환 합니다.  
   
 ### <a name="syntax"></a>구문  
   

@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2214067aae84d1c6aae0a93cf008463829fafda4
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 4089b786363f6b1bcbb50d08e16821efc186539a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37886052"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42609501"
 ---
 # <a name="cstringt-class"></a>CStringT 클래스
 이 클래스를 나타냅니다는 `CStringT` 개체입니다.  
@@ -298,9 +298,9 @@ BSTR AllocSysString() const;
  MFC 프로그램에는 [CMemoryException 클래스](../../mfc/reference/cmemoryexception-class.md) 메모리가 부족 하 여 없으면 throw 됩니다. ATL 프로그램에서을 [CAtlException](../../atl/reference/catlexception-class.md) throw 됩니다. 이 함수는 Automation에 대 한 문자열을 반환 하려면 일반적으로 사용 됩니다.  
   
 
- 일반적으로이 문자열은 COM 함수에 전달 하는 경우 [in] 매개 변수를 다음이 필요 호출자가 해제할 문자열입니다. 사용 하 여 이렇게 [SysFreeString](https://msdn.microsoft.com/library/windows/desktop/ms221481.aspx)Windows SDK에 설명 된 대로 합니다. 자세한 내용은 [Allocating 및 BSTR에 대해 메모리를 해제](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md)합니다.  
+ 일반적으로이 문자열은 COM 함수에 전달 하는 경우 [in] 매개 변수를 다음이 필요 호출자가 해제할 문자열입니다. 사용 하 여 이렇게 [SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)Windows SDK에 설명 된 대로 합니다. 자세한 내용은 [Allocating 및 BSTR에 대해 메모리를 해제](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md)합니다.  
   
- Windows에서 OLE 할당 함수에 대 한 자세한 내용은 참조 하세요. [SysAllocString](https://msdn.microsoft.com/library/windows/desktop/ms221458.aspx) Windows SDK에 있습니다.  
+ Windows에서 OLE 할당 함수에 대 한 자세한 내용은 참조 하세요. [SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring) Windows SDK에 있습니다.  
 
   
 ### <a name="example"></a>예  
@@ -552,7 +552,7 @@ CStringT(const YCHAR* pch, int nLength, IAtlStringMgr* pStringMgr) :
 - `CStringT`( `const unsigned char*` `psz` ): 생성할 수는 `CStringT` 에 대 한 포인터에서 **unsigned char**합니다.  
   
 > [!NOTE]
->  간의 문자열의 암시적 변환을 사용 하지 않으려면 _CSTRING_DISABLE_NARROW_WIDE_CONVERSION 매크로 정의할 [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)] 고 [!INCLUDE[TLA#tla_unicode](../../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] 문자열입니다. 매크로 변환을 지 컴파일 생성자에서 제외 합니다.  
+>  ANSI 및 유니코드 문자열 간의 암시적 문자열 변환 하지 않으려면 _CSTRING_DISABLE_NARROW_WIDE_CONVERSION 매크로 정의 합니다. 매크로 변환을 지 컴파일 생성자에서 제외 합니다.  
   
  합니다 *strSrc* 수 매개 변수 중 하나는 `CStringT` 또는 `CThisSimpleString` 개체입니다. 에 대 한 `CStringT`, 해당 기본 인스턴스화 중 하나를 사용 하 여 (`CString`, `CStringA`, 또는 `CStringW`);에 대 한 `CThisSimpleString`를 사용 하 여를 **이** 포인터입니다. `CThisSimpleString` 인스턴스를 선언 합니다 [CSimpleStringT 클래스](../../atl-mfc-shared/reference/csimplestringt-class.md), 보다 작은 기본 제공 기능을 사용 하 여 더 작은 문자열 클래스인는 `CStringT` 클래스입니다.  
   

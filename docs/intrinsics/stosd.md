@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99d00b5e3b39f17203ba915d6b4344438803db88
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e63ee47c98e898fe5cba1a24078029f6afe10b15
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33327134"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42543225"
 ---
 # <a name="stosd"></a>__stosd
 **Microsoft 전용**  
@@ -45,25 +45,25 @@ void __stosd(
  작업의 대상입니다.  
   
  [in] `Data`  
- 데이터를 저장 하는입니다.  
+ 데이터 저장소입니다.  
   
  [in] `Count`  
- 쓰려는 2 배 워드를 블록의 길이입니다.  
+ 쓸 2 배 워드 블록의 길이입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__stosd`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__stosd`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- 결과 더블 워드 `Data` 블록으로 기록 `Count` 가리키는 메모리 위치에 2 배 워드 `Dest`합니다.  
+ 결과 더블 워드 `Data` 블록으로 기록 됩니다 `Count` 가리키는 메모리 위치에서 2 배 워드 `Dest`합니다.  
   
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 // stosd.c  

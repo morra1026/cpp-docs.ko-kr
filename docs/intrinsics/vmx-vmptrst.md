@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad1b6587f4386565ae7de84a7b6a170da98b6df8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e2997ed93de7291c22ae4f147bdd2392b71385e6
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33328596"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539901"
 ---
 # <a name="vmxvmptrst"></a>__vmx_vmptrst
 **Microsoft 전용**  
   
- 지정된 된 주소에서 현재 가상 컴퓨터 제어 구조 (VMCS)에 대 한 포인터를 저장합니다.  
+ 지정된 된 주소에는 현재 가상 머신 제어 구조 (VMCS)에 대 한 포인터를 저장합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,15 +44,15 @@ void __vmx_vmptrst(
 ## <a name="remarks"></a>설명  
  VMCS 포인터는 64 비트 물리적 주소입니다.  
   
- `__vmx_vmptrst` 함수는 동일는 `VMPTRST` 컴퓨터 명령입니다. 이 함수는 게스트 운영 체제 및 해당 응용 프로그램과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 문서 번호 C97063-002, 자세한 내용은 "Intel 가상화 기술 사양에 대 한 the ia-32 Intel 아키텍처" 문서에 대 한 검색에 대 한는 [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) 사이트입니다.  
+ 합니다 `__vmx_vmptrst` 함수는 동일 합니다 `VMPTRST` 컴퓨터 명령입니다. 이 함수는 게스트 운영 체제 및 해당 응용 프로그램과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용은 "Intel 가상화 기술 사양에 대 한는 IA-32 Intel 아키텍처" 문서를 검색에서 숫자 C97063-002를 문서화 합니다 [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) 사이트입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__vmx_vmptrst`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__vmx_vmptrst`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 **Microsoft 전용 종료**  
   

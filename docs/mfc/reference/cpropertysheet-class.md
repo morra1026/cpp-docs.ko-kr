@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d265b2547f35e0c8c25ee5e3aad1135945e346b
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 994e9f8c48bb6d6db2a9af06613abca895b09f51
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853206"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42538759"
 ---
 # <a name="cpropertysheet-class"></a>CPropertySheet 클래스
 속성 시트(탭 대화 상자라고도 함)를 나타냅니다.  
@@ -121,7 +121,7 @@ class CPropertySheet : public CWnd
 ## <a name="remarks"></a>설명  
  구성 속성 시트를 `CPropertySheet` 개체와 하나 이상의 [CPropertyPage](../../mfc/reference/cpropertypage-class.md) 개체입니다. 프레임 워크는 속성 시트의 탭 인덱스와 현재 선택한 페이지를 포함 하는 영역 집합을 사용 하 여 창으로 표시 합니다. 사용자는 해당 탭을 사용 하 여 특정 페이지로 이동 합니다.  
   
- `CPropertySheet` 확장 된에 지 [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546) 구조에 도입 된 [!INCLUDE[Win98](../../mfc/reference/includes/win98_md.md)] 및 Windows NT 2000입니다. 구조 추가 플래그 및 "워터 마크" 배경 비트맵을 사용 하 여 지는 멤버를 포함 합니다.  
+ `CPropertySheet` 확장 된에 지 [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546) Windows 98 및 Windows NT 2000에 도입 된 구조입니다. 구조 추가 플래그 및 "워터 마크" 배경 비트맵을 사용 하 여 지는 멤버를 포함 합니다.  
   
  속성 시트 개체에서 이러한 새 이미지를 자동으로 표시, 색상표 및 비트맵 이미지에 대 한 유효한 값에 대 한 호출에 전달 [CPropertySheet::Construct](#construct) 또는 [CPropertySheet::CPropertySheet](#cpropertysheet).  
   

@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4fd8aebb3f9a4f0078c8174aa25b9abb9378f1b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3f70588ca17a2bde34de6a16b62b18fa6125b08c
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33333631"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540340"
 ---
 # <a name="mmcvttsssi64x"></a>_mm_cvttss_si64x
 **Microsoft 전용**  
   
- 내보내는 확장 x64 버전의 64 비트 정수 잘림 단 정밀도 부동 소수점 숫자로 변환 (`cvttss2si`) 명령입니다.  
+ 내보내는 확장 x64 버전의 64 비트 정수로 잘림 단 정밀도 부동 소수점 숫자를 사용 하 여 변환 (`cvttss2si`) 명령입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -48,16 +48,16 @@ __int64 _mm_cvttss_si64x(
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`_mm_cvttss_si64x`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_mm_cvttss_si64x`|X64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- 내장 다른 `_mm_cvtss_si64x` 만 있다는 점에서 부정확 한 변환을 0으로 잘립니다. 때문에 `__m128` 구조체 나타냅니다 XMM 레지스터, 생성 된 명령 XMM 레지스터에서 시스템 메모리에 데이터를 이동 합니다.  
+ 내장 함수에서 다른 `_mm_cvtss_si64x` 만 부정확 한 변환을 0으로 잘립니다. 때문에 `__m128` 구조는 XMM 레지스터를 나타내며, 생성 지침을 XMM 레지스터에서 시스템 메모리에 데이터를 이동 합니다.  
   
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 // _mm_cvttss_si64x.cpp  

@@ -47,12 +47,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00aa5276c0d79be570cf17986865066a466a326c
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 304e350c9f37e29bfda8414a1c33c1211929872f
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880835"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572868"
 ---
 # <a name="catlmap-class"></a>CAtlMap 클래스
 이 클래스를 만들고 지도 개체를 관리 하기 위한 메서드를 제공 합니다.  
@@ -694,5 +694,5 @@ V  m_value;
   
 ## <a name="see-also"></a>참고 항목  
  [움직이는 텍스트 샘플](../../visual-cpp-samples.md)   
- [UpdatePV 샘플](../../visual-cpp-samples.md)   
+ [UpdatePV 샘플](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)   
  [클래스 개요](../../atl/atl-class-overview.md)

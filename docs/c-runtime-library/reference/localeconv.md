@@ -18,6 +18,7 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
+- api-ms-win-crt-locale-l1-1-0.dll
 apitype: DLLExport
 f1_keywords:
 - localeconv
@@ -32,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe3cc75430dfa9bb2f4c5513f4b2ba5a2fd1c4c9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7f4e8a20ef31f4379e7ddf6b7425fd7ecc70294a
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405252"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42572858"
 ---
 # <a name="localeconv"></a>localeconv
 
@@ -51,22 +52,22 @@ struct lconv *localeconv( void );
 
 ## <a name="return-value"></a>반환 값
 
-**localeconv** 형식의 채워진 개체에 대 한 포인터를 반환 [구조체 lconv](../../c-runtime-library/standard-types.md)합니다. 개체에 포함 된 값 스레드 로컬 저장소의 로캘 설정에서 복사 되 고 후속 호출에 의해 덮어쓸 수 있는 **localeconv**합니다. 이 개체의 값에 대 한 변경 내용을 로캘 설정을 수정 하지 마십시오. 에 대 한 호출이 [setlocale](setlocale-wsetlocale.md) 와 *범주* 값 **LC_ALL**, **LC_MONETARY**, 또는 **LC_NUMERIC** 구조체의 내용을 덮어씁니다.
+**localeconv** 형식의 채워진 개체에 대 한 포인터를 반환 [struct lconv](../../c-runtime-library/standard-types.md)합니다. 개체에 포함 된 값은 스레드 로컬 저장소의 로캘 설정에서 복사 되 고 후속 호출을 덮어쓸 수 있습니다 **localeconv**합니다. 이 개체의 값 변경의 로캘 설정을 수정 하지 마십시오. 에 대 한 호출 [setlocale](setlocale-wsetlocale.md) 사용 하 여 *범주* 의 값 **LC_ALL**를 **LC_MONETARY**, 또는 **LC_NUMERIC** 구조체의 내용을 덮어씁니다.
 
 ## <a name="remarks"></a>설명
 
-**localeconv** 함수는 현재 로캘에 대 한 숫자 형식 지정에 대 한 자세한 정보를 가져옵니다. 이 정보는 **lconv** 형식의 구조체에 저장됩니다. LOCALE.H에 저장된 **lconv** 구조체에는 다음 멤버가 포함됩니다.
+합니다 **localeconv** 함수는 현재 로캘의 숫자 형식에 대 한 자세한 정보를 가져옵니다. 이 정보는 **lconv** 형식의 구조체에 저장됩니다. LOCALE.H에 저장된 **lconv** 구조체에는 다음 멤버가 포함됩니다.
 
 |필드|의미|
 |-|-|
-decimal_point,<br/>_W_decimal_point|소수점 문자 nonmonetary 수량에 대 한 포인터입니다.
-thousands_sep,<br/>_W_thousands_sep|정수 nonmonetary 수량에 대 한 소수점의 왼쪽에 구분 문자에 대 한 포인터입니다.
-그룹화|에 대 한 포인터는 **char**-자릿수 nonmonetary 수량에 각 그룹의 크기를 포함 하는 정수 크기입니다.
+decimal_point,<br/>_W_decimal_point|소수점 문자 비 통화 수량에 대 한 포인터입니다.
+thousands_sep,<br/>_W_thousands_sep|비 통화 수량에 대 한 소수점 왼쪽의 숫자 그룹 구분 하는 문자에 대 한 포인터입니다.
+그룹화|에 대 한 포인터를 **char**-자릿수 비 통화 수량에서 각 그룹의 크기를 포함 하는 정수 크기입니다.
 int_curr_symbol,<br/>_W_int_curr_symbol|현재 로캘에 대 한 국제 통화 기호에 대 한 포인터입니다. 처음 세 문자는 *ISO 4217 Codes for the Representation of Currency and Funds* 표준에 정의된 대로 영문자 국제 통화 기호를 지정합니다. 네 번째 문자(null 문자 바로 앞)는 통화 수량에서 국제 통화 기호를 구분합니다.
 currency_symbol,<br/>_W_currency_symbol|현재 로캘에 대 한 현지 통화 기호에 대 한 포인터입니다.
 mon_decimal_point,<br/>_W_mon_decimal_point|소수점 문자 통화 수량에 대 한 포인터입니다.
-mon_thousands_sep,<br/>_W_mon_thousands_sep|구분 기호 왼쪽 통화 수량에 소수 자릿수의 숫자의 그룹에 대 한 포인터입니다.
-mon_grouping|에 대 한 포인터는 **char**-자릿수 통화 수량에 각 그룹의 크기를 포함 하는 정수 크기입니다.
+mon_thousands_sep,<br/>_W_mon_thousands_sep|통화 수량에서 소수점 자리 왼쪽의 숫자 그룹 구분 기호에 대 한 포인터입니다.
+mon_grouping|에 대 한 포인터를 **char**-자릿수 통화 수량에서 각 그룹의 크기를 포함 하는 정수 크기입니다.
 positive_sign,<br/>_W_positive_sign|음수가 아닌 통화 수량에 대한 부호를 나타내는 문자열입니다.
 negative_sign,<br/>_W_negative_sign|음수 통화 수량에 대한 부호를 나타내는 문자열입니다.
 int_frac_digits|국제적으로 서식이 지정된 통화 수량에서 소수점 오른쪽의 자릿수입니다.
@@ -78,15 +79,15 @@ n_sep_by_space|통화 기호가 음수 서식이 지정된 통화 수량에 대�
 p_sign_posn|음수가 아닌 서식이 지정된 통화 수량에서 양수 부호의 위치입니다.
 n_sign_posn|음수 서식이 지정된 통화 수량에서 양수 부호의 위치입니다.
 
-지정 된, 멤버로 제외 하 고는 **lconv** 있는 구조 `char *` 및 `wchar_t *` 버전은 문자열에 대 한 포인터입니다. 해당 하는 이러한 **""** (또는 **L ""** 에 대 한 **wchar_t \*** )는 길이가 0 인 또는 현재 로컬에서 지원 되지 않습니다. **decimal_point** 및 **_W_decimal_point** 항상 지원 되며 0이 아닌 길이의 됩니다.
+지정 된 멤버를 제외 하 고는 **lconv** 있는 구조 `char *` 고 `wchar_t *` 버전은 문자열에 대 한 포인터입니다. 해당 하는 이러한 **""** (또는 **L ""** 에 대 한 **wchar_t \*** ) 길이가 0 인 중 하나 이거나 현재 로캘에서 지원 되지 않습니다. 사실은 **decimal_point** 하 고 **_W_decimal_point** 는 항상 지원 되며 0이 아닌 길이의 합니다.
 
-**char** 구조체의 멤버는 작은 음수가 아닌 숫자, 문자 대신 합니다. **CHAR_MAX**와 동일한 이러한 멤버는 현재 로캘에서 지원되지 않습니다.
+합니다 **char** 구조체의 멤버는 음수가 아닌 작은 숫자 이며 문자가 아닙니다. **CHAR_MAX**와 동일한 이러한 멤버는 현재 로캘에서 지원되지 않습니다.
 
-값 **그룹화** 및 **mon_grouping** 다음 규칙에 따라 해석 됩니다.
+값 **그룹화** 하 고 **mon_grouping** 다음 규칙에 따라 해석 됩니다.
 
-- **CHAR_MAX** -추가 그룹화를 수행 하지 않습니다.
+- **CHAR_MAX** -그룹화를 더 이상 수행 하지 않습니다.
 
-- 0-각 나머지 자릿수에 대 한 이전 요소를 사용 합니다.
+- 0-나머지 각 숫자에 대 한 이전 요소를 사용 합니다.
 
 - *n* -현재 그룹을 구성 하는 자릿수입니다. 다음 요소를 검사하여 현재 그룹 앞 다음 숫자 그룹의 크기를 확인합니다.
 
@@ -98,31 +99,31 @@ n_sign_posn|음수 서식이 지정된 통화 수량에서 양수 부호의 위�
 
 **p_cs_precedes** 및 **n_cs_precedes**에 대한 값은 다음 규칙에 따라 해석됩니다. **n_cs_precedes** 규칙은 괄호 안에 표시됩니다.
 
-- 통화 기호는 0-(음수) 음이 아닌 형식이 지정 된 통화 값에 대 한 값을 따릅니다.
+- 0-통화 기호가 음수가 아닌 (음수) 서식이 지정 된 통화 값에 대 한 값을 따릅니다.
 
-- 1-통화 기호 앞 음수가 아닌 (음수) 형식이 지정 된 통화 값에 대 한 값을 표시 됩니다.
+- 1-통화 기호는 음수가 아닌 (음수) 서식이 지정 된 통화 값에 대 한 값 앞에 옵니다.
 
 **p_sep_by_space** 및 **n_sep_by_space**에 대한 값은 다음 규칙에 따라 해석됩니다. **n_sep_by_space** 규칙은 괄호 안에 표시됩니다.
 
-- 0-(음수) 음이 아닌 형식이 지정 된 통화 값에 대 한 공간으로 값에서 통화 기호 분리 됩니다.
+- 0-통화 기호가 음수가 아닌 (음수) 서식이 지정 된 통화 값에 대 한 공백으로 값에서 구분 됩니다.
 
-- 1-통화 기호 및 음수가 아닌 (음수) 형식이 지정 된 통화 값에 대 한 값 사이의 공간 분리 되지 않습니다.
+- 1-통화 기호가 음수가 아닌 (음수) 서식이 지정 된 통화 값에 대 한 값 사이의 공간 분리 되지 않습니다.
 
 **p_sign_posn** 및 **n_sign_posn**에 대한 값은 다음 규칙에 따라 해석됩니다.
 
 - 0-괄호 수량 및 통화 기호를 묶습니다.
 
-- 1-sign 문자열 수량 및 통화 기호를 앞에 옵니다.
+- 1-부호 문자열이 수량 및 통화 기호를 앞에 옵니다.
 
-- 2) 기호 (+ 문자열 수량 및 통화 기호는 다음과 같습니다.
+- 2-부호 문자열이 수량 및 통화 기호를 따릅니다.
 
-- 3-기호 문자열에 통화 기호 바로 앞에 있습니다.
+- 3-부호 문자열이 통화 기호에 바로 앞에 옵니다.
 
-- 4-기호 즉시 다음과 통화 기호는 문자열입니다.
+- 4-기호 바로 다음과 같이 통화 기호는 문자열입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**localeconv**|\<locale.h>|
 

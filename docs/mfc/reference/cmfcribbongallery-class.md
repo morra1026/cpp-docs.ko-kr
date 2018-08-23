@@ -88,16 +88,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af14457e10758c696a4141e58249e43134cf385a
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 3ed6fde4ffb510c30189e49639112edfadfcfd14
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851528"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540328"
 ---
 # <a name="cmfcribbongallery-class"></a>CMFCRibbonGallery 클래스
 Office 2007 스타일의 리본 갤러리를 구현합니다.  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
 ## <a name="syntax"></a>구문  
   

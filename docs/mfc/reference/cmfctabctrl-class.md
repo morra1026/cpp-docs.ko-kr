@@ -114,12 +114,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 219f0bc1f5b9959a424a8c3a63ec0c4e3505eb55
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: d843b3b491973c32d8fb5ff3160327a9e82223c8
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852590"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541863"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl Class
 `CMFCTabCtrl` 클래스는 tab 컨트롤에 대 한 기능을 제공 합니다. 탭 컨트롤은 맨 위 또는 아래에 평면 또는 3차원 탭이 포함된 도킹 가능한 창을 표시합니다. 탭은 텍스트와 이미지를 표시하고 활성화된 경우 색을 변경할 수 있습니다.  
@@ -221,7 +221,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
   
 -   분리 가능한 탭된 창입니다.  
   
- 합니다 `CMFCTabCtrl` 클래스는 대화 상자를 사용 하 여 도킹을 사용 하는 응용 프로그램 컨트롤 막대의 등을 위한 것 이지만 [!INCLUDE[ofprexcel](../../mfc/reference/includes/ofprexcel_md.md)] 및 [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)]합니다. 자세한 내용은 [CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md)합니다.  
+ `CMFCTabCtrl` 클래스는 대화 상자를 사용 하 여 도킹을 사용 하는 응용 프로그램 컨트롤 막대의 Microsoft Excel에서 Visual Studio 등을 위한 것 이지만 합니다. 자세한 내용은 [CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md)합니다.  
   
  응용 프로그램에서 탭 컨트롤을 도킹을 크기 조정 가능한 추가 하려면 다음이 단계를 수행 합니다.  
   
@@ -269,7 +269,7 @@ void ActivateMDITab(int nTab = -1);
  0부터 시작 인덱스는 탭을 표시 하거나 현재 활성 탭을 지정 하려면-1입니다.  
   
 ##  <a name="allowdestroyemptytabbedpane"></a>  CMFCTabCtrl::AllowDestroyEmptyTabbedPane  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
 ```  
 virtual BOOL AllowDestroyEmptyTabbedPane() const;  

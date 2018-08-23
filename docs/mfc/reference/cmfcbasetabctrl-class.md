@@ -248,16 +248,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 825c761f920e48f31bab667790981e5c422f3612
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 6a629f372058e3e6688a57043d73e29717f3601d
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337490"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540121"
 ---
 # <a name="cmfcbasetabctrl-class"></a>CMFCBaseTabCtrl Class
 탭 창의 기본 기능을 구현합니다.  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -401,7 +401,7 @@ class CMFCBaseTabCtrl : public CWnd
 ## <a name="remarks"></a>설명  
  `CMFCBaseTabCtrl` 클래스는 추상 클래스입니다. 따라서 인스턴스화할 수 없습니다. 탭 창을 만들려면 `CMFCBaseTabCtrl`에서 클래스를 파생해야 합니다. MFC 라이브러리에는 몇 가지 파생 클래스 예제가 있으며, 그중 두 개는 [CMFCTabCtrl Class](../../mfc/reference/cmfctabctrl-class.md) 및 [CMFCOutlookBarTabCtrl Class](../../mfc/reference/cmfcoutlookbartabctrl-class.md)입니다.  
   
- [!INCLUDE[vs_dev14](../../ide/includes/vs_dev14_md.md)]부터 이 클래스는 Microsoft Active Accessibility를 지원합니다.  
+ Visual Studio 2015부터이 클래스는 Microsoft Active Accessibility를 지원 합니다.  
   
 ## <a name="customization-tips"></a>사용자 지정 팁  
  다음은 `CMFCBaseTabCtrl Class` 및 이 클래스에서 상속되는 클래스와 관련된 팁입니다.  

@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 373e9c1f8cc24ca4de4f0a78dd75011681c78056
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f5a25e16439673f367cfe0bfe208dbc21a621b81
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33327527"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539119"
 ---
 # <a name="invlpg"></a>__invlpg
 **Microsoft 전용**  
   
- X86 생성 `invlpg` translation lookaside 버퍼 (TLB)를 통해 메모리와 관련 된 페이지에 대 한 무효화 명령 `Address`합니다.  
+ X86을 생성 `invlpg` 가 가리키는 메모리와 관련 된 페이지에 대 한 번역 할당 준비 버퍼 (TLB)을 무효화 하는 명령 `Address`입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -46,12 +46,12 @@ void __invlpg(
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__invlpg`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__invlpg`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- 내장 `__invlpg` 특수 명령을 내보냅니다 하며 0의 권한 수준 (CPL)를 사용 하 여 커널 모드에서 사용할 수만 있습니다.  
+ 내장 `__invlpg` 권한 있는 명령을 내보냅니다 이며 0의 권한 수준 (CPL)를 사용 하 여 커널 모드에서 사용할 수만 있습니다.  
   
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   

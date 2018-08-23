@@ -41,12 +41,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 661ac13acd1d8eac0ecde9af9fa08875b99153e3
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 0179bbc68bb6ed60f6fadf26f98be492c2eeb4c1
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336982"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572305"
 ---
 # <a name="cutlprops-class"></a>CUtlProps 클래스
 다양 한 OLE DB 속성 인터페이스에 대 한 속성을 구현 (예를 들어 `IDBProperties`, `IDBProperties`, 및 `IRowsetInfo`).  
@@ -123,7 +123,7 @@ virtual HRESULT CUtlPropsBase::IsValidValue(ULONG /* iCurSet */,
  속성 집합 배열로; 인덱스 하나의 속성 집합이 있는 경우 0입니다.  
   
  *pDBProp*  
- 속성 ID와 새 값을 [DBPROP](https://msdn.microsoft.com/library/ms717970.aspx) 구조입니다.  
+ 속성 ID와 새 값을 [DBPROP](/previous-versions/windows/desktop/ms717970\(v=vs.85\)) 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  표준 HRESULT입니다. 기본 반환 값에는 S_OK입니다.  
@@ -178,7 +178,7 @@ virtual HRESULT OnPropertyChanged(ULONG /* iCurSet */,
  속성 집합 배열로; 인덱스 하나의 속성 집합이 있는 경우 0입니다.  
   
  *pDBProp*  
- 속성 ID와 새 값을 [DBPROP](https://msdn.microsoft.com/library/ms717970.aspx) 구조입니다.  
+ 속성 ID와 새 값을 [DBPROP](/previous-versions/windows/desktop/ms717970\(v=vs.85\)) 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  표준 HRESULT입니다. 기본 반환 값에는 S_OK입니다.  

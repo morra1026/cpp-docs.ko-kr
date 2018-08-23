@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60e0eacba00f9c0fb397b1fe37d2be8b108b6a59
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0231c2514805479c0ec999698ebd027ab51e3119
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33336975"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541311"
 ---
 # <a name="movsq"></a>__movsq
 **Microsoft 전용**  
@@ -48,22 +48,22 @@ void __movsq(
  작업의 원본입니다.  
   
  [in] `Count`  
- 복사할 개 쿼드 워드 수입니다.  
+ 복사할 (쿼드 워드)의 수입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__movsq`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__movsq`|X64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- 결과 첫 번째 `Count` 가리키는 개 쿼드 워드 `Source` 에 복사는 `Dest` 문자열입니다.  
+ 결과 첫 번째 `Count` (쿼드 워드)로 가리키는 `Source` 에 복사 됩니다는 `Dest` 문자열입니다.  
   
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 // movsq.cpp  

@@ -12,16 +12,16 @@ helpviewer_keywords:
 - buffer overflows [C++]
 - MBCS [C++], buffer overflow
 ms.assetid: f2b7e40a-f02b-46d8-a449-51d26fc0c663
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9bb362be360986371200c8cde292b3fff5acd7cd
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 11a3da883dae4d292a55eb2537fd98609404b5a9
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40020189"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42609514"
 ---
 # <a name="buffer-overflow"></a>버퍼 오버플로
 문자 크기를 다르게 버퍼로 문자를 배치 하는 경우 문제가 발생할 수 있습니다. 문자열에서 문자를 복사, 다음 코드를 살펴보세요 `sz`, 버퍼로 `rgch`:  

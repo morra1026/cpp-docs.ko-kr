@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3735b6cd8b0397ae1e1092fdb37ba094248ab507
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: dc5f5c987f8e448490a0d337517d7a0699619849
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963928"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42539863"
 ---
 # <a name="tuple-class"></a>튜플 클래스
 
@@ -57,7 +57,7 @@ public:
 
 ## <a name="remarks"></a>설명
 
-형식의 n 개 개체를 저장 하는 개체를 설명 하는 템플릿 클래스 `T1`, `T2`,..., `TN`각각, 여기서는 `0 <= N <= Nmax`합니다. 튜플 인스턴스 익스텐트 `tuple<T1, T2, ..., TN>` 수 `N` 해당 템플릿 인수의 합니다. 템플릿 인수의 인덱스 `Ti` 형식의 저장된 된 해당 값은 및 `i - 1`합니다. 따라서 것이 설명서의 n 1에서 형식 번호를 하는 동안 해당 인덱스 값 범위는 0에서 n-1입니다.
+형식의 n 개 개체를 저장 하는 개체를 설명 하는 템플릿 클래스 `T1`, `T2`,..., `TN`각각 여기서 `0 <= N <= Nmax`합니다. 튜플 인스턴스 익스텐트 `tuple<T1, T2, ..., TN>` 수 `N` 해당 템플릿 인수의 합니다. 템플릿 인수의 인덱스 `Ti` 형식의 저장된 된 해당 값은 및 `i - 1`합니다. 따라서 것이 설명서의 n 1에서 형식 번호를 하는 동안 해당 인덱스 값 범위는 0에서 n-1입니다.
 
 ## <a name="example"></a>예
 

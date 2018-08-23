@@ -51,12 +51,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 72ac1a5be4f2e114e5b90b65542b09733c43d174
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 1ca0d5a4dfd8139c0941dffd22397f296b7b4354
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338865"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572511"
 ---
 # <a name="csession-class"></a>CSession 클래스
 단일 데이터베이스 액세스 세션을 나타냅니다.  
@@ -98,7 +98,7 @@ HRESULT Abort(BOID* pboidReason = NULL,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [itransaction:: Abort](https://msdn.microsoft.com/library/ms709833.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [itransaction:: Abort](/previous-versions/windows/desktop/ms709833\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="return-value"></a>반환 값  
  표준 HRESULT입니다. 
@@ -127,13 +127,13 @@ HRESULT Commit(BOOL bRetaining = FALSE,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [itransaction:: Commit](https://msdn.microsoft.com/library/ms713008.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [itransaction:: Commit](/previous-versions/windows/desktop/ms713008\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="return-value"></a>반환 값  
  표준 HRESULT입니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [itransaction:: Commit](https://msdn.microsoft.com/library/ms713008.aspx)합니다.  
+ 자세한 내용은 [itransaction:: Commit](/previous-versions/windows/desktop/ms713008\(v=vs.85\))합니다.  
 
 ## <a name="gettransactioninfo"></a> Csession:: Gettransactioninfo
 트랜잭션에 대 한 정보를 반환합니다.  
@@ -145,13 +145,13 @@ HRESULT GetTransactionInfo(XACTTRANSINFO* pInfo) const throw();
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [ITransaction::GetTransactionInfo](https://msdn.microsoft.com/library/ms714975.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [ITransaction::GetTransactionInfo](/previous-versions/windows/desktop/ms714975\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="return-value"></a>반환 값  
  표준 HRESULT입니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [ITransaction::GetTransactionInfo](https://msdn.microsoft.com/library/ms714975.aspx) 에 *OLE DB Programmer's Reference*합니다. 
+ 자세한 내용은 [ITransaction::GetTransactionInfo](/previous-versions/windows/desktop/ms714975\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 
 
 ## <a name="open"></a> Csession:: Open
 데이터 원본 개체에 대 한 새 세션을 엽니다.  
@@ -169,10 +169,10 @@ HRESULT Open(const CDataSource& ds,
  [in] 데이터 소스 세션을 열 수입니다.  
   
  *pPropSet*  
- [in] 배열에 대 한 포인터 [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](https://msdn.microsoft.com/library/ms713696.aspx) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다.  
+ [in] 배열에 대 한 포인터 [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다.  
   
  *ulPropSets*  
- [in] 수가 [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) 구조에 전달 합니다 *pPropSet* 인수입니다.  
+ [in] 수가 [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) 구조에 전달 합니다 *pPropSet* 인수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  표준 HRESULT입니다.  
@@ -193,13 +193,13 @@ HRESULT StartTransaction(ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [itransactionlocal:: Starttransaction](https://msdn.microsoft.com/library/ms709786.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [itransactionlocal:: Starttransaction](/previous-versions/windows/desktop/ms709786\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="return-value"></a>반환 값  
  표준 HRESULT입니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [itransactionlocal:: Starttransaction](https://msdn.microsoft.com/library/ms709786.aspx) 에 *OLE DB Programmer's Reference*합니다. 
+ 자세한 내용은 [itransactionlocal:: Starttransaction](/previous-versions/windows/desktop/ms709786\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 
   
 ## <a name="see-also"></a>참고 항목  
  [CatDB](../../visual-cpp-samples.md)   

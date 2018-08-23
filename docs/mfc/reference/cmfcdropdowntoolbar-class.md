@@ -30,17 +30,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e12799f10fe86ef5dd556eac4e344aa972e2503
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 55abed046ddf1c770271a9cc5346b70a752d81a6
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027312"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539515"
 ---
 # <a name="cmfcdropdowntoolbar-class"></a>CMFCDropDownToolBar 클래스
 사용자가 최상위 도구 모음 단추를 누르고 있을 때 나타나는 도구 모음입니다.  
   
-   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
 ## <a name="syntax"></a>구문  
   
 ```  

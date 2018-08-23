@@ -17,43 +17,47 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fc0dcba6597b6b8a3b37c240bf1c4a58f30b6b23
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: e63b0b47dcc3f53ecd5af2d51505df844f66437a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40020345"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42599388"
 ---
 # <a name="noinjectedtext"></a>no_injected_text
-컴파일러 특성 사용으로 인해 코드를 삽입 하지 못하도록 방지 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-[ no_injected_text(  
-   boolean  
-) ];  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *부울* (선택 사항)  
- **true 이면** 없는 코드를 삽입 하려는 경우 **false** 코드를 삽입할 수 있도록 합니다. **true** 가 기본값입니다.  
-  
-## <a name="remarks"></a>설명  
- 가장 일반적으로 사용 합니다 **no_injected_text** 에서 c + + 특성은는 [/Fx](../build/reference/fx-merge-injected-code.md) 삽입 하는 컴파일러 옵션을를 **no_injected_text** 특성이.mrg 파일에.  
-  
-## <a name="requirements"></a>요구 사항  
-  
-### <a name="attribute-context"></a>특성 컨텍스트  
-  
-|||  
-|-|-|  
-|**적용 대상**|원하는 위치|  
-|**반복 가능**|아니요|  
-|**필수 특성**|없음|  
-|**잘못된 특성**|없음|  
-  
- 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.  
-  
-## <a name="see-also"></a>참고 항목  
- [컴파일러 특성](../windows/compiler-attributes.md)   
+
+컴파일러 특성 사용으로 인해 코드를 삽입 하지 못하도록 방지 합니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+[ no_injected_text(
+   boolean
+) ];
+```
+
+### <a name="parameters"></a>매개 변수
+
+*부울* (선택 사항)  
+**true 이면** 없는 코드를 삽입 하려는 경우 **false** 코드를 삽입할 수 있도록 합니다. **true** 가 기본값입니다.
+
+## <a name="remarks"></a>설명
+
+가장 일반적으로 사용 합니다 **no_injected_text** 에서 c + + 특성은는 [/Fx](../build/reference/fx-merge-injected-code.md) 삽입 하는 컴파일러 옵션을를 **no_injected_text** 특성이.mrg 파일에.
+
+## <a name="requirements"></a>요구 사항
+
+### <a name="attribute-context"></a>특성 컨텍스트
+
+|||
+|-|-|
+|**적용 대상**|원하는 위치|
+|**반복 가능**|아니요|
+|**필수 특성**|없음|
+|**잘못된 특성**|없음|
+
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+[컴파일러 특성](../windows/compiler-attributes.md)  

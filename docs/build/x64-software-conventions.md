@@ -15,15 +15,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2115b353f269ff59c107737eeb4fdb590ffd71b6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 971f1fae3fe2d6733b0819f3a6e88db07612bce7
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32380890"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571993"
 ---
 # <a name="x64-software-conventions"></a>x64 소프트웨어 규칙
-이 섹션에서는 Visual c + +에 대 한 호출 규칙을 설명 [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)], 64 비트 확장 x86 아키텍처.  
+이 섹션에서는 Visual c + + 호출 규칙 x64, x86 64 비트 확장에 대 한 설명 아키텍처입니다.  
   
 -   [x64 호출 규칙 개요](../build/overview-of-x64-calling-conventions.md)  
   
@@ -43,7 +43,7 @@ ms.locfileid: "32380890"
   
 -   [이미지 형식](../build/image-format.md)  
   
- 다음 컴파일러 옵션을 사용 하도록 응용 프로그램을 최적화 하는 데 [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]:  
+ 다음 컴파일러 옵션에는 x64에 대 한 응용 프로그램을 최적화할 수 있습니다.  
   
 -   [/favor(아키텍처에 맞게 최적화)](../build/reference/favor-optimize-for-architecture-specifics.md)  
   

@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c58090351829f6a12ae90d56e8985bf615966f65
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 731229f8aca9d564e418382a54e097ff61316586
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852278"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540089"
 ---
 # <a name="cnetaddressctrl-class"></a>CNetAddressCtrl 클래스
 `CNetAddressCtrl` 클래스에 입력 한 IPv4, IPv6 및 DNS 주소를 이름이 지정된 형식의 유효성을 검사하는 데 사용할 수 있는 네트워크 주소 컨트롤을 나타냅니다.  
@@ -72,7 +72,7 @@ class CNetAddressCtrl : public CEdit
   
  다음 그림은 네트워크 주소 컨트롤이 포함 된 대화 상자를 보여 줍니다. 텍스트 상자 (1) 네트워크 주소 컨트롤에 대 한 잘못 된 네트워크 주소를 포함합니다. 정보 팁 메시지 (2)는 네트워크 주소가 유효 하지 않은 경우에 표시 됩니다.  
   
- ![네트워크 주소 컨트롤 및 정보 팁을 사용 하 여 대화 상자. ] (../../mfc/reference/media/cnetaddctrl.png "cnetaddctrl")  
+ ![네트워크 주소 컨트롤 및 정보 팁을 사용 하 여 대화 상자. ](../../mfc/reference/media/cnetaddctrl.png "cnetaddctrl")  
   
 ## <a name="example"></a>예  
  다음 코드 예제는 네트워크 주소의 유효성을 검사 하는 대화의 일부입니다. 세 개의 라디오 단추에 대 한 이벤트 처리기 지정 네트워크 주소 세 가지 주소 유형 중 하나일 수 있습니다. 사용자가 네트워크 컨트롤의 텍스트 상자에 주소를 입력 한 다음 주소를 확인 하는 단추를 누를 합니다. 주소가 올바르면 성공 메시지가 표시 됩니다. 그렇지 않으면 미리 정의 된 정보 팁 오류 메시지가 표시 됩니다.  
@@ -98,7 +98,7 @@ class CNetAddressCtrl : public CEdit
 ## <a name="requirements"></a>요구 사항  
  **헤더:** afxcmn.h  
   
- 이 클래스에서 지원 됩니다 [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] 이상.  
+ 이 클래스는 Windows Vista 이상 사용할 수 있습니다.  
   
  이 클래스에 대 한 추가 요구 사항에 설명 되어 [빌드 요구 사항에 대 한 Windows Vista 공용 컨트롤](../../mfc/build-requirements-for-windows-vista-common-controls.md)합니다.  
   

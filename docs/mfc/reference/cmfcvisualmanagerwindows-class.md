@@ -150,17 +150,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5582c634428290086393791ae23d551726bff7ab
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: fd7ebc32fa76165e35aa3ea23cf3acda61b80189
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040664"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42543239"
 ---
 # <a name="cmfcvisualmanagerwindows-class"></a>CMFCVisualManagerWindows 클래스
-`CMFCVisualManagerWindows` 사용자가 Windows XP 또는 Vista 테마를 선택할 때 Microsoft Windows XP 또는 Microsoft Vista의 형태를 그대로 모방 합니다.  
+`CMFCVisualManagerWindows` Windows XP 또는 Vista 테마를 선택 하면 Microsoft Windows XP 또는 Microsoft Vista의 모양을 모방 합니다.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -180,7 +180,7 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
   
 |이름|설명|  
 |----------|-----------------|  
-|[CMFCVisualManagerWindows::AlwaysHighlight3DTabs](#alwayshighlight3dtabs)|프레임 워크는 응용 프로그램에 항상 3D 탭을 강조 해야 표시할지 여부를 확인 하려면이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::AlwaysHighlight3DTabs](../../mfc/reference/cmfcvisualmanager-class.md#alwayshighlight3dtabs).)|  
+|[CMFCVisualManagerWindows::AlwaysHighlight3DTabs](#alwayshighlight3dtabs)|프레임 워크는 응용 프로그램에서 항상 3D 탭을 강조 해야 하는지 여부를 확인 하려면이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::AlwaysHighlight3DTabs](../../mfc/reference/cmfcvisualmanager-class.md#alwayshighlight3dtabs).)|  
 |[CMFCVisualManagerWindows::DrawComboBorderWinXP](#drawcomboborderwinxp)|(`CMFCVisualManager::DrawComboBorderWinXP`를 재정의합니다.)|  
 |[CMFCVisualManagerWindows::DrawComboDropButtonWinXP](#drawcombodropbuttonwinxp)|(재정의 [CMFCVisualManager::DrawComboDropButtonWinXP](../../mfc/reference/cmfcvisualmanager-class.md#drawcombodropbuttonwinxp).)|  
 |[CMFCVisualManagerWindows::DrawPushButtonWinXP](#drawpushbuttonwinxp)|(재정의 [CMFCVisualManager::DrawPushButtonWinXP](../../mfc/reference/cmfcvisualmanager-class.md#drawpushbuttonwinxp).)|  
@@ -193,9 +193,9 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
 |[CMFCVisualManagerWindows::IsDefaultWinXPPopupButton](#isdefaultwinxppopupbutton)|(재정의 [CMFCVisualManager::IsDefaultWinXPPopupButton](../../mfc/reference/cmfcvisualmanager-class.md#isdefaultwinxppopupbutton).)|  
 |[CMFCVisualManagerWindows::IsHighlightWholeMenuItem](#ishighlightwholemenuitem)|(`CMFCVisualManagerOfficeXP::IsHighlightWholeMenuItem`를 재정의합니다.)|  
 |[CMFCVisualManagerWindows::IsOfficeStyleMenus](#isofficestylemenus)||  
-|[CMFCVisualManagerWindows::IsOfficeXPStyleMenus](#isofficexpstylemenus)|비주얼 관리자 Office XP 스타일의 메뉴를 구현 하는지 여부를 나타냅니다. (재정의 [CMFCVisualManager::IsOfficeXPStyleMenus](../../mfc/reference/cmfcvisualmanager-class.md#isofficexpstylemenus).)|  
+|[CMFCVisualManagerWindows::IsOfficeXPStyleMenus](#isofficexpstylemenus)|비주얼 관리자 Office XP 스타일 메뉴를 구현 하는지 여부를 나타냅니다. (재정의 [CMFCVisualManager::IsOfficeXPStyleMenus](../../mfc/reference/cmfcvisualmanager-class.md#isofficexpstylemenus).)|  
 |[CMFCVisualManagerWindows::IsWindowsThemingSupported](#iswindowsthemingsupported)|(`CMFCVisualManager::IsWindowsThemingSupported`를 재정의합니다.)|  
-|[CMFCVisualManagerWindows::IsWinXPThemeAvailable](#iswinxpthemeavailable)|Windows 테마의 사용할 수 있는지 여부를 나타냅니다.|  
+|[CMFCVisualManagerWindows::IsWinXPThemeAvailable](#iswinxpthemeavailable)|Windows 테마를 사용할 수 있는지 여부를 나타냅니다.|  
 |[CMFCVisualManagerWindows::OnDrawBarGripper](#ondrawbargripper)|(`CMFCVisualManagerOfficeXP::OnDrawBarGripper`를 재정의합니다.)|  
 |[CMFCVisualManagerWindows::OnDrawBrowseButton](#ondrawbrowsebutton)|(`CMFCVisualManagerOfficeXP::OnDrawBrowseButton`를 재정의합니다.)|  
 |[CMFCVisualManagerWindows::OnDrawButtonBorder](#ondrawbuttonborder)|(`CMFCVisualManagerOfficeXP::OnDrawButtonBorder`를 재정의합니다.)|  
@@ -209,7 +209,7 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
 |[CMFCVisualManagerWindows::OnDrawEditBorder](#ondraweditborder)|(`CMFCVisualManagerOfficeXP::OnDrawEditBorder`를 재정의합니다.)|  
 |[CMFCVisualManagerWindows::OnDrawExpandingBox](#ondrawexpandingbox)|(재정의 [CMFCVisualManager::OnDrawExpandingBox](../../mfc/reference/cmfcvisualmanager-class.md#ondrawexpandingbox).)|  
 |[CMFCVisualManagerWindows::OnDrawFloatingToolbarBorder](#ondrawfloatingtoolbarborder)|(`CMFCVisualManagerOfficeXP::OnDrawFloatingToolbarBorder`를 재정의합니다.)|  
-|[CMFCVisualManagerWindows::OnDrawHeaderCtrlBorder](#ondrawheaderctrlborder)|인스턴스 주위에 테두리를 그릴 때 프레임 워크에서이 메서드를 호출는 [CMFCHeaderCtrl 클래스](../../mfc/reference/cmfcheaderctrl-class.md)합니다. (재정의 [CMFCVisualManager::OnDrawHeaderCtrlBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawheaderctrlborder).)|  
+|[CMFCVisualManagerWindows::OnDrawHeaderCtrlBorder](#ondrawheaderctrlborder)|인스턴스의 테두리를 그릴 때 프레임 워크에서이 메서드를 호출 합니다 [CMFCHeaderCtrl 클래스](../../mfc/reference/cmfcheaderctrl-class.md)합니다. (재정의 [CMFCVisualManager::OnDrawHeaderCtrlBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawheaderctrlborder).)|  
 |[CMFCVisualManagerWindows::OnDrawHeaderCtrlSortArrow](#ondrawheaderctrlsortarrow)|헤더 컨트롤의 정렬 화살표를 그릴 때 프레임 워크에서이 함수를 호출 합니다. (재정의 [CMFCVisualManager::OnDrawHeaderCtrlSortArrow](../../mfc/reference/cmfcvisualmanager-class.md#ondrawheaderctrlsortarrow).)|  
 |[CMFCVisualManagerWindows::OnDrawMenuBorder](#ondrawmenuborder)|(`CMFCVisualManagerOfficeXP::OnDrawMenuBorder`를 재정의합니다.)|  
 |[CMFCVisualManagerWindows::OnDrawMenuSystemButton](#ondrawmenusystembutton)|(`CMFCVisualManagerOfficeXP::OnDrawMenuSystemButton`를 재정의합니다.)|  
@@ -222,8 +222,8 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
 |[CMFCVisualManagerWindows::OnDrawSeparator](#ondrawseparator)|(`CMFCVisualManagerOfficeXP::OnDrawSeparator`를 재정의합니다.)|  
 |[CMFCVisualManagerWindows::OnDrawSpinButtons](#ondrawspinbuttons)|(`CMFCVisualManagerOfficeXP::OnDrawSpinButtons`를 재정의합니다.)|  
 |[CMFCVisualManagerWindows::OnDrawStatusBarPaneBorder](#ondrawstatusbarpaneborder)|(`CMFCVisualManagerOfficeXP::OnDrawStatusBarPaneBorder`를 재정의합니다.)|  
-|[CMFCVisualManagerWindows::OnDrawStatusBarProgress](#ondrawstatusbarprogress)|진행률 표시기 그릴 때 프레임 워크에이 메서드 호출의 [CMFCStatusBar](../../mfc/reference/cmfcstatusbar-class.md) 개체입니다. (재정의 [CMFCVisualManager::OnDrawStatusBarProgress](../../mfc/reference/cmfcvisualmanager-class.md#ondrawstatusbarprogress).)|  
-|[CMFCVisualManagerWindows::OnDrawStatusBarSizeBox](#ondrawstatusbarsizebox)|에 대 한 크기 상자를 그릴 때 프레임 워크에서이 메서드를 호출는 [CMFCStatusBar](../../mfc/reference/cmfcstatusbar-class.md)합니다. (재정의 [CMFCVisualManager::OnDrawStatusBarSizeBox](../../mfc/reference/cmfcvisualmanager-class.md#ondrawstatusbarsizebox).)|  
+|[CMFCVisualManagerWindows::OnDrawStatusBarProgress](#ondrawstatusbarprogress)|진행률 표시기 그릴 때 프레임 워크에서이 메서드를 호출 합니다 [CMFCStatusBar](../../mfc/reference/cmfcstatusbar-class.md) 개체입니다. (재정의 [CMFCVisualManager::OnDrawStatusBarProgress](../../mfc/reference/cmfcvisualmanager-class.md#ondrawstatusbarprogress).)|  
+|[CMFCVisualManagerWindows::OnDrawStatusBarSizeBox](#ondrawstatusbarsizebox)|프레임 워크에 대 한 크기 상자를 그릴 때이 메서드를 호출을 [CMFCStatusBar](../../mfc/reference/cmfcstatusbar-class.md)합니다. (재정의 [CMFCVisualManager::OnDrawStatusBarSizeBox](../../mfc/reference/cmfcvisualmanager-class.md#ondrawstatusbarsizebox).)|  
 |[CMFCVisualManagerWindows::OnDrawTab](#ondrawtab)|(`CMFCVisualManagerOfficeXP::OnDrawTab`를 재정의합니다.)|  
 |[CMFCVisualManagerWindows::OnDrawTabCloseButton](#ondrawtabclosebutton)|(`CMFCVisualManagerOfficeXP::OnDrawTabCloseButton`를 재정의합니다.)|  
 |[CMFCVisualManagerWindows::OnDrawTabsButtonBorder](#ondrawtabsbuttonborder)|(`CMFCVisualManagerOfficeXP::OnDrawTabsButtonBorder`를 재정의합니다.)|  
@@ -234,14 +234,14 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
 |[CMFCVisualManagerWindows::OnErasePopupWindowButton](#onerasepopupwindowbutton)|(`CMFCVisualManagerOfficeXP::OnErasePopupWindowButton`를 재정의합니다.)|  
 |[CMFCVisualManagerWindows::OnEraseTabsArea](#onerasetabsarea)|(`CMFCVisualManagerOfficeXP::OnEraseTabsArea`를 재정의합니다.)|  
 |[CMFCVisualManagerWindows::OnEraseTabsButton](#onerasetabsbutton)|(`CMFCVisualManagerOfficeXP::OnEraseTabsButton`를 재정의합니다.)|  
-|[CMFCVisualManagerWindows::OnEraseTabsFrame](#onerasetabsframe)|프레임 워크에서 프레임을 지울 때이 메서드를 호출는 [CMFCBaseTabCtrl 클래스](../../mfc/reference/cmfcbasetabctrl-class.md)합니다. (재정의 [CMFCVisualManager::OnEraseTabsFrame](../../mfc/reference/cmfcvisualmanager-class.md#onerasetabsframe).)|  
+|[CMFCVisualManagerWindows::OnEraseTabsFrame](#onerasetabsframe)|프레임 워크에서 프레임을 지우고 해당 하는 경우이 메서드를 호출을 [CMFCBaseTabCtrl 클래스](../../mfc/reference/cmfcbasetabctrl-class.md)합니다. (재정의 [CMFCVisualManager::OnEraseTabsFrame](../../mfc/reference/cmfcvisualmanager-class.md#onerasetabsframe).)|  
 |[CMFCVisualManagerWindows::OnFillBarBackground](#onfillbarbackground)|(`CMFCVisualManagerOfficeXP::OnFillBarBackground`를 재정의합니다.)|  
 |[CMFCVisualManagerWindows::OnFillButtonInterior](#onfillbuttoninterior)|(`CMFCVisualManagerOfficeXP::OnFillButtonInterior`를 재정의합니다.)|  
 |[CMFCVisualManagerWindows::OnFillCommandsListBackground](#onfillcommandslistbackground)|(`CMFCVisualManagerOfficeXP::OnFillCommandsListBackground`를 재정의합니다.)|  
 |[CMFCVisualManagerWindows::OnFillMiniFrameCaption](#onfillminiframecaption)|(`CMFCVisualManagerOfficeXP::OnFillMiniFrameCaption`를 재정의합니다.)|  
-|[CMFCVisualManagerWindows::OnFillOutlookPageButton](#onfilloutlookpagebutton)|프레임 워크 내부 Outlook 페이지 단추를 채울 때이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::OnFillOutlookPageButton](../../mfc/reference/cmfcvisualmanager-class.md#onfilloutlookpagebutton).)|  
+|[CMFCVisualManagerWindows::OnFillOutlookPageButton](#onfilloutlookpagebutton)|프레임 워크는 Outlook 페이지 단추의 내부 채울 때이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::OnFillOutlookPageButton](../../mfc/reference/cmfcvisualmanager-class.md#onfilloutlookpagebutton).)|  
 |[CMFCVisualManagerWindows::OnFillTasksGroupInterior](#onfilltasksgroupinterior)|(`CMFCVisualManagerOfficeXP::OnFillTasksGroupInterior`를 재정의합니다.)|  
-|[CMFCVisualManagerWindows::OnFillTasksPaneBackground](#onfilltaskspanebackground)|배경을 채울 때 프레임 워크에서이 메서드를 호출는 [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) 제어 합니다. (재정의 [CMFCVisualManager::OnFillTasksPaneBackground](../../mfc/reference/cmfcvisualmanager-class.md#onfilltaskspanebackground).)|  
+|[CMFCVisualManagerWindows::OnFillTasksPaneBackground](#onfilltaskspanebackground)|배경을 채울 때 프레임 워크에서이 메서드를 호출을 [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) 제어 합니다. (재정의 [CMFCVisualManager::OnFillTasksPaneBackground](../../mfc/reference/cmfcvisualmanager-class.md#onfilltaskspanebackground).)|  
 |[CMFCVisualManagerWindows::OnHighlightMenuItem](#onhighlightmenuitem)|(`CMFCVisualManagerOfficeXP::OnHighlightMenuItem`를 재정의합니다.)|  
 |[CMFCVisualManagerWindows::OnHighlightRarelyUsedMenuItems](#onhighlightrarelyusedmenuitems)|(`CMFCVisualManagerOfficeXP::OnHighlightRarelyUsedMenuItems`를 재정의합니다.)|  
 |[CMFCVisualManagerWindows::OnUpdateSystemColors](#onupdatesystemcolors)|(`CMFCVisualManagerOfficeXP::OnUpdateSystemColors`를 재정의합니다.)|  
@@ -251,15 +251,15 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
   
 |name|설명|  
 |----------|-----------------|  
-|[CMFCVisualManagerWindows::m_b3DTabsXPTheme](#m_b3dtabsxptheme)|Windows XP 테마 3D 탭에 표시 되는지 여부를 지정 합니다.|  
+|[CMFCVisualManagerWindows::m_b3DTabsXPTheme](#m_b3dtabsxptheme)|Windows XP 테마 3D 탭 표시 여부를 지정 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 사용 된 `CMFCVisualManagerWindows` 응용 프로그램이 실행 되는 컴퓨터에서 현재 테마를 모방 하기 위해 응용 프로그램의 모양을 변경 하는 클래스입니다.  
+ 사용 된 `CMFCVisualManagerWindows` 응용 프로그램이 실행 되는 컴퓨터의 현재 테마를 모방 하기 위해 응용 프로그램의 모양을 변경 하는 클래스입니다.  
   
- 그러나 Windows 테마를 사용할 수 없습니다 응용 프로그램은 Windows XP 이전 버전의 Windows에서 실행 중인 경우 또는 사용자가 사용 하기 때문에 테마를 사용할 수 있는 경우는 **클래식** 보기. 응용 프로그램에 정의 된 기본 비주얼 관리자를 사용 하 여 테마 없음 표시 되 면 [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md)합니다.  
+ 그러나 Windows 테마를 사용 하지 못할 테마를 사용 중 이므로 사용할 수 없는 경우 또는 응용 프로그램이 Windows XP 이전의 Windows 버전에서 실행 되는 경우는 **클래식** 보기. 응용 프로그램에 정의 된 기본 비주얼 관리자를 사용 하 여 테마 없음 사용 가능한 경우 [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md)합니다.  
   
 ## <a name="example"></a>예  
- 다음 예제에서는 사용 하는 방법을 `CMFCVisualManagerWindows`합니다. 이 코드 조각은의 일부인는 [바탕 화면 경고 데모 샘플](../../visual-cpp-samples.md)합니다.  
+ 다음 예제에 사용 하는 방법을 보여 줍니다. `CMFCVisualManagerWindows`합니다. 이 코드 조각은의 일부인 합니다 [바탕 화면 경고 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_DesktopAlertDemo#10](../../mfc/reference/codesnippet/cpp/cmfcvisualmanagerwindows-class_1.cpp)]  
   
@@ -501,24 +501,24 @@ virtual BOOL IsWindowsThemingSupported() const;
 ### <a name="remarks"></a>설명  
   
 ##  <a name="iswinxpthemeavailable"></a>  CMFCVisualManagerWindows::IsWinXPThemeAvailable  
- Windows 테마를 사용할 수 있는지 여부를 결정 합니다.  
+ Windows 테마를 사용할 수 있는지 확인 합니다.  
   
 ```  
 static BOOL IsWinXPThemeAvailible();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 테마는 사용할 수 있습니다. 0이 아닌 그렇지 않으면 0입니다.  
+ 테마를 사용할 수 있습니다. 0이 아닌 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 모든 Windows XP 및 이상 테마에 대해 유효 합니다.  
+ 이 메서드는 모든 Windows XP 및 이후 테마에 대 한 유효 합니다.  
   
- `IsWinXPThemeAvailable` 동일 `CMFCVisualManagerWindows::IsWindowsThemingAvailable` 점을 제외 하 고 `IsWinXPThemeAvailable` 는 정적 메서드입니다. 따라서 만들어집니다 임시 비주얼 관리자 존재 하지 않는 경우.  
+ `IsWinXPThemeAvailable` 동일 `CMFCVisualManagerWindows::IsWindowsThemingAvailable` 점을 제외 하 고 `IsWinXPThemeAvailable` 는 정적 메서드입니다. 따라서 존재 하지 않는 경우 임시 비주얼 관리자를 만듭니다.  
   
- `IsWinXPThemeAvailable` Windows XP 이전 버전의 Windows에 대 한 0을 항상 반환 합니다.  
+ `IsWinXPThemeAvailable` 항상 Windows XP 이전의 Windows 버전에 대 한 0을 반환 합니다.  
   
 ##  <a name="m_b3dtabsxptheme"></a>  CMFCVisualManagerWindows::m_b3DTabsXPTheme  
- 비주얼 관리자 3D 탭에 표시 되는지 여부를 결정 하는 부울 매개 변수입니다.  
+ 비주얼 관리자 3D 탭 표시 되는지 여부를 결정 하는 부울 매개 변수입니다.  
   
 ```  
 AFX_IMPORT_DATA static BOOL m_b3DTabsXPTheme;  

@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e20ae1ad9c549aed176d26667d9bdc62a32b8dc7
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: d2b90ef2eeca60a305cd8836e09dc81940392d2c
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692537"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42539484"
 ---
 # <a name="reduction"></a>reduction
-각 스레드에 private 되는 하나 이상의 변수에 병렬 영역 끝날 때 감소 작업의 제목을 지정 합니다.  
+각 스레드에 private는 하나 이상의 변수 끝의 병렬 영역 감소 작업의 제목을 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,13 +36,13 @@ reduction(operation:var)
  다음은 각 문자에 대한 설명입니다.  
   
  `operation`  
- 변수에서 수행할 작업에 대 한 연산자 (`var`) 병렬 영역의 끝에 있습니다.  
+ 변수에서 수행할 작업에 대 한 연산자 (`var`) 병렬 영역의 끝입니다.  
   
  `var`  
- 스칼라 감소가 수행할 하나 이상의 변수입니다. 둘 이상의 변수를 지정 하는 경우 변수 이름을 쉼표로 구분 합니다.  
+ 스칼라 감소가 수행 하는 하나 이상의 변수입니다. 둘 이상의 변수를 지정할 경우 쉼표를 사용 하 여 변수 이름을 구분 합니다.  
   
 ## <a name="remarks"></a>설명  
- `reduction` 다음과 같은 지시문에 적용 됩니다.  
+ `reduction` 다음 지시문에 적용 됩니다.  
   
 -   [for](../../../parallel/openmp/reference/for-openmp.md)  
   
@@ -50,9 +50,9 @@ reduction(operation:var)
   
 -   [섹션](../../../parallel/openmp/reference/sections-openmp.md)  
   
- 자세한 내용은 참조 [2.7.2.6 감소](../../../parallel/openmp/2-7-2-6-reduction.md)합니다.  
+ 자세한 내용은 [2.7.2.6 감소](../../../parallel/openmp/2-7-2-6-reduction.md)합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 // omp_reduction.cpp  
@@ -127,10 +127,10 @@ int main( )
              "%d to %d, is %d\n", 1, 10, nSum);  
   
     if (bSucceed)  
-        printf_s("All of the the functions, func1 through "  
+        printf_s("All of the functions, func1 through "  
                  "func5 succeeded!\n");  
     else  
-        printf_s("One or more of the the functions, func1 "  
+        printf_s("One or more of the functions, func1 "  
                  "through func5 failed!\n");  
   
     if (nCount != NUM_THREADS)   
@@ -162,7 +162,7 @@ int main( )
 ```Output  
 The parallel section was executed 4 times in parallel.  
 The sum of the consecutive integers from 1 to 10, is 55  
-All of the the functions, func1 through func5 succeeded!  
+All of the functions, func1 through func5 succeeded!  
 ```  
   
 ## <a name="see-also"></a>참고 항목  

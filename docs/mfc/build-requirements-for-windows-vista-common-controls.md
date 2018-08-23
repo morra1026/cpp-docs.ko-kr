@@ -15,22 +15,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8f167ac560fd8e2109c149f30841ecbe3c44fc8
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: d8d3e5c8cd6b4a0876d0cac8e1fb3c7e87eed9cc
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36930978"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541114"
 ---
 # <a name="build-requirements-for-windows-vista-common-controls"></a>Windows Vista 공용 컨트롤의 빌드 요구 사항
-MFC(Microsoft Foundation Class) 라이브러리는 Windows 공용 컨트롤 버전 6.1을 지원합니다. 공용 컨트롤은 [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)]에 포함되며, 라이브러리는 [!INCLUDE[vsipsdk](../mfc/includes/vsipsdk_md.md)]에 포함됩니다. 라이브러리에서 기존 클래스 및 새 클래스를 향상 시키는 새로운 메서드와 지 원하는 메서드를 제공 [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)] 공용 컨트롤입니다. 응용 프로그램을 빌드할 때는 다음 섹션에 설명된 컴파일 및 마이그레이션 요구 사항을 따라야 합니다.  
+MFC(Microsoft Foundation Class) 라이브러리는 Windows 공용 컨트롤 버전 6.1을 지원합니다. 공용 컨트롤은 Windows Vista에 포함 및 라이브러리는 Visual Studio SDK에 포함 되어 있습니다. 라이브러리는 기존 클래스와 새 클래스를 향상 하는 새로운 방법 및 Windows Vista 공용 컨트롤을 지 원하는 메서드를 제공 합니다. 응용 프로그램을 빌드할 때는 다음 섹션에 설명된 컴파일 및 마이그레이션 요구 사항을 따라야 합니다.  
   
 ## <a name="compilation-requirements"></a>컴파일 요구 사항  
   
 ### <a name="supported-versions"></a>지원되는 버전  
- 일부 새 클래스 및 메서드에서는 [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)] 이상만 지원되지만 다른 메서드에서는 이전 버전의 운영 체제도 지원됩니다. 각 메서드 항목의 `Requirements` 섹션에는 필요한 최소 운영 체제가 [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)]인 경우 그에 대한 알림이 표시되어 있습니다.  
+ 일부 새 클래스 및 메서드만 Windows Vista 지원 및 나중에 다른 메서드 또한 이전 버전의 운영 체제를 지원 합니다. 에 `Requirements` 각 메서드 항목의 경우 필요한 최소 운영 체제는 Windows Vista를 지정 합니다.  
   
- 컴퓨터 실행 되지 않는 경우에 [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)]에서 실행 되는 MFC 응용 프로그램을 빌드할 수 [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)] 컴퓨터에 버전 6.1 MFC 헤더 파일을 사용 하는 경우. 그러나 공통 제어 용으로 특별히 설계 [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)] 해당 시스템에 대해서만 작동 하 고 이전 버전의 운영 체제에서 무시 됩니다.  
+ 컴퓨터는 Windows Vista에서 실행 되지 하는 경우에 컴퓨터에 버전 6.1 MFC 헤더 파일을 사용 하는 경우 Windows Vista에서 실행 되는 MFC 응용 프로그램을 빌드할 수 있습니다. 그러나 Windows Vista에 맞게 설계 된 공용 컨트롤 해당 시스템에 대해서만 작동 하 고 이전 운영 체제에서 무시 됩니다.  
   
 ### <a name="supported-character-sets"></a>지원되는 문자 집합  
  새로운 Windows 공용 컨트롤에서는 ANSI 문자 집합이 아닌 유니코드 문자 집합만 지원됩니다. 명령 줄에서 응용 프로그램을 빌드할 때는 다음 정의 컴파일러 옵션(/D)을 모두 사용해서 기본 문자 집합으로 유니코드를 지정합니다.  
@@ -39,12 +39,12 @@ MFC(Microsoft Foundation Class) 라이브러리는 Windows 공용 컨트롤 버�
 /D_UNICODE /DUNICODE  
 ```  
   
- Visual Studio 통합된 개발 환경 (IDE)에서 응용 프로그램을 빌드할 경우 지정 된 **유니코드 문자 집합** 옵션의는 **문자 집합** 속성에는 **일반**  프로젝트 속성의 노드.  
+ Visual Studio 통합된 개발 환경 (IDE)에서 응용 프로그램을 작성 하는 경우 지정는 **유니코드 문자 집합** 옵션을 **문자 집합** 속성에는 **일반**  프로젝트 속성의 노드.  
   
- ANSI 버전으로 된 일부 MFC 메서드는 Windows 공용 컨트롤 버전 6.1부터 더 이상 사용되지 않습니다. 자세한 내용은 참조 [사용 되지 않는 ANSI Api](../mfc/deprecated-ansi-apis.md)합니다.  
+ ANSI 버전으로 된 일부 MFC 메서드는 Windows 공용 컨트롤 버전 6.1부터 더 이상 사용되지 않습니다. 자세한 내용은 [사용 되지 않는 ANSI Api](../mfc/deprecated-ansi-apis.md)합니다.  
   
 ## <a name="migration-requirements"></a>마이그레이션 요구 사항  
- Visual Studio IDE를 사용해서 Windows 공용 컨트롤 버전 6.1을 사용하는 새로운 MFC 응용 프로그램을 빌드할 경우, IDE가 적절한 매니페스트를 자동으로 선언합니다. 하지만 이전 버전의 Visual Studio에서 기존 MFC 응용 프로그램을 마이그레이션하고 새로운 공용 컨트롤을 사용하려는 경우에는 IDE가 응용 프로그램을 업그레이드하기 위한 매니페스트 정보를 자동으로 제공하지 않습니다. 대신, 다음 소스 코드를 수동으로 삽입 해야 프로그램 **stdafx.h** 파일:  
+ Visual Studio IDE를 사용해서 Windows 공용 컨트롤 버전 6.1을 사용하는 새로운 MFC 응용 프로그램을 빌드할 경우, IDE가 적절한 매니페스트를 자동으로 선언합니다. 하지만 이전 버전의 Visual Studio에서 기존 MFC 응용 프로그램을 마이그레이션하고 새로운 공용 컨트롤을 사용하려는 경우에는 IDE가 응용 프로그램을 업그레이드하기 위한 매니페스트 정보를 자동으로 제공하지 않습니다. 다음 소스 코드를 수동으로 삽입 해야 대신에 **stdafx.h** 파일:  
   
 ```  
 #ifdef UNICODE  

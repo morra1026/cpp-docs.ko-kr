@@ -20,18 +20,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a77056c6a3d0427c865658cd945e74e29d672b0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4b6eb6e9a1b7be12d125a68d3873401ccdeb7be3
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371943"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42573273"
 ---
 # <a name="lib-reference"></a>LIB 참조
-Microsoft 라이브러리 관리자 (LIB.exe)가 만들고 COFF 공용 개체 파일 형식 () 개체 파일의 라이브러리를 관리 합니다. LIB은 내보내기 파일을 만들고 내보낸 정의 참조 하려면 가져오기 라이브러리를 사용할 수도 있습니다.  
+Microsoft 라이브러리 관리자 (LIB.exe)를 만들고 개체 파일 형식 COFF (공용) 개체 파일의 라이브러리를 관리 합니다. LIB는 내보내기 파일을 만들고 내보낸 정의 참조 하려면 라이브러리를 가져오는 데도 사용할 수 있습니다.  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] 명령 프롬프트에서만 이 도구를 시작할 수 있습니다. 시스템 명령 프롬프트 또는 파일 탐색기에서는 시작할 수 없습니다.  
+>  Visual Studio 명령 프롬프트 에서만에서이 도구를 시작할 수 있습니다. 시스템 명령 프롬프트 또는 파일 탐색기에서는 시작할 수 없습니다.  
   
 -   [LIB 개요](../../build/reference/overview-of-lib.md)  
   

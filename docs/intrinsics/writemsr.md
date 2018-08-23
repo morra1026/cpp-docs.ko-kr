@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76131f4d07dec1713c80b4cd4f98f729b9ecf07b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d9a3fdc9b094ebb81db1bfe841d7974c5df89ca0
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33323526"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539304"
 ---
 # <a name="writemsr"></a>__writemsr
 **Microsoft 전용**  
   
- 모델 특정 레지스터 쓰기를 생성 (`wrmsr`) 명령입니다.  
+ 모델 특정 레지스터 쓰기 생성 (`wrmsr`) 명령입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -50,12 +50,12 @@ void __writemsr(
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__writemsr`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__writemsr`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- 이 루틴은 내장 함수로 사용할 수만 하 고이 함수는 커널 모드에만 사용할 수 있습니다.  
+ 커널 모드에서이 함수만 사용할 수 있으며이 루틴은 내장 함수로 사용할 수만 있습니다.  
   
 **Microsoft 전용 종료**  
   

@@ -100,17 +100,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42680d4cd79c5079703a94361403efd858ef80f2
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 128334398b268c91ec7e6b938bcbd0d2e6e37dd0
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36955269"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539716"
 ---
 # <a name="cdockingpanesrow-class"></a>CDockingPanesRow 클래스
 도크 사이트의 동일한 수평 또는 수직 행(열)에 위치한 창 목록을 관리합니다.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -224,7 +224,7 @@ virtual void AddPaneFromRow(
 ### <a name="remarks"></a>설명  
   
 ##  <a name="arrangepanes"></a>  CDockingPanesRow::ArrangePanes  
- 지정 된 여백에 따라 행의 창을 도킹 및 간격 매개 변수를 정렬 합니다.  
+ 지정한 오차 범위가 따라 창을 도킹 및 간격 매개 변수를 정렬 합니다.  
   
 ```  
 virtual void ArrangePanes(
@@ -234,13 +234,13 @@ virtual void ArrangePanes(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *nMargin*  
- 오프셋을 행의 왼쪽 위 모서리에서 첫 번째 창을 픽셀 단위로 지정 합니다.  
+ 행의 왼쪽 위 모서리에서 첫 번째 창에 픽셀에서 오프셋을 지정 합니다.  
   
  [in] *nSpacing*  
- 창 사이 픽셀 단위로 간격을 지정합니다.  
+ 픽셀 단위로 창 사이의 간격을 지정합니다.  
   
 ### <a name="remarks"></a>설명  
- 창 도킹 됩니다 있는 행의 정렬 하려면이 메서드를 호출 합니다. 이 메서드를 호출한 후 `CDockingPanesRow::FixupVirtualRects(FALSE, NULL)`합니다.  
+ 창 도킹 됩니다 여기서 행의 정렬 하려면이 메서드를 호출 합니다. 이 메서드를 호출한 후 `CDockingPanesRow::FixupVirtualRects(FALSE, NULL)`합니다.  
   
 ##  <a name="calcfixedlayout"></a>  CDockingPanesRow::CalcFixedLayout  
 

@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05d7897bf7b18d804d787f865b80b615b7564919
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: a2ce93a17dd2666469b8e6d56e1a106d508855f7
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028293"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42538753"
 ---
 # <a name="cdockablepane-class"></a>CDockablePane Class
 도킹 사이트에 도킹되거나 탭 창에 포함될 수 있는 창을 구현합니다.  
@@ -927,7 +927,7 @@ virtual AFX_CS_STATUS GetDockingStatus(
 ### <a name="remarks"></a>설명  
  프레임 워크가 부동 창의 도킹을 처리 하려면이 메서드를 호출 합니다.  
   
- 부동 도구 모음 또는 도킹 창 DT_IMMEDIATE 도킹 모드를 사용 하는 경우 프레임 워크는 사용자가 도킹 발생 하기 전에 창의 부모 프레임의 클라이언트 영역 밖으로 이동할 수 있도록 하는 도킹 명령의 지연 합니다. 지연의 길이 밀리초 단위로 측정 됩니다 및에 의해 제어 됩니다 합니다 [CDockingManager::m_nTimeOutBeforeToolBarDock](../../mfc/reference/cdockingmanager-class.md#m_ntimeoutbeforetoolbardock) 데이터 멤버... 기본값인 [CDockingManager::m_nTimeOutBeforeToolBarDock](../../mfc/reference/cdockingmanager-class.md#m_ntimeoutbeforetoolbardock) 는 200 개입니다. 이 동작의 도킹 동작을 에뮬레이션 [!INCLUDE[ofprword](../../mfc/reference/includes/ofprword_md.md)] 2007입니다.  
+ 부동 도구 모음 또는 도킹 창 DT_IMMEDIATE 도킹 모드를 사용 하는 경우 프레임 워크는 사용자가 도킹 발생 하기 전에 창의 부모 프레임의 클라이언트 영역 밖으로 이동할 수 있도록 하는 도킹 명령의 지연 합니다. 지연의 길이 밀리초 단위로 측정 됩니다 및에 의해 제어 됩니다 합니다 [CDockingManager::m_nTimeOutBeforeToolBarDock](../../mfc/reference/cdockingmanager-class.md#m_ntimeoutbeforetoolbardock) 데이터 멤버... 기본값인 [CDockingManager::m_nTimeOutBeforeToolBarDock](../../mfc/reference/cdockingmanager-class.md#m_ntimeoutbeforetoolbardock) 는 200 개입니다. 이 동작은 Microsoft Word 2007의 도킹 동작을 에뮬레이션합니다.  
   
  지연 된 도킹 상태 (CS_DELAY_DOCK 및 CS_DELAY_DOCK_TO_TAB) 프레임 워크는 마우스 단추를 놓을 때까지 도킹를 수행 하지 않습니다. 창을 DT_STANDARD 도킹 모드를 사용 하는 경우 프레임 워크는 프로젝션 된 도킹 위치에 사각형을 표시 합니다. 프레임 워크 창 DT_SMART 도킹 모드에서는 스마트 도킹 표식 및 반투명 사각형 예상된 도킹 위치에 표시 됩니다. 호출 하 여 창에 대 한 도킹 모드를 지정 하는 [CBasePane::SetDockingMode](../../mfc/reference/cbasepane-class.md#setdockingmode) 메서드. 스마트 도킹 하는 방법에 대 한 자세한 내용은 참조 하십시오 [CDockingManager::GetSmartDockingParams](../../mfc/reference/cdockingmanager-class.md#getsmartdockingparams)합니다.  
   
@@ -1186,7 +1186,7 @@ AFX_IMPORT_DATA static int m_nSlideSteps;
  빠르게 애니메이션 효과 위해이 값을 줄입니다. 느린 애니메이션 효과 위해이 값을 늘립니다.  
   
 ##  <a name="onafterchangeparent"></a>  CDockablePane::OnAfterChangeParent  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
 ```  
 virtual void OnAfterChangeParent(CWnd* pWndOldParent);

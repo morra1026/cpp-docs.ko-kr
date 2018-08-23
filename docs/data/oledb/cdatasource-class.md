@@ -68,12 +68,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5c3bd275c189e7c99bbc275caf31436b5f5a1d5e
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 69a96cf199e7ce131e91f750cdd83ebc915c38d8
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39340087"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572975"
 ---
 # <a name="cdatasource-class"></a>CDataSource 클래스
 데이터 원본에 공급자를 통해 연결을 나타내는 OLE DB 데이터 원본 개체에 해당 합니다.  
@@ -153,7 +153,7 @@ HRESULT GetProperties(ULONG ulPropIDSets,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [idbproperties:: Getproperties](https://msdn.microsoft.com/library/ms714344.aspx) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다.  
+ 참조 [idbproperties:: Getproperties](/previous-versions/windows/desktop/ms714344\(v=vs.85\)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
  표준 HRESULT입니다.  
@@ -238,10 +238,10 @@ HRESULT Open(LPCSTR szProgID,
  [in] `CLSID` 데이터 공급자입니다.  
   
  *pPropSet*  
- [in] 배열에 대 한 포인터 [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](https://msdn.microsoft.com/library/ms713696.aspx) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다.  
+ [in] 배열에 대 한 포인터 [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다.  
   
  *nPropertySets*  
- [in] 수가 [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) 구조에 전달 합니다 *pPropSet* 인수입니다.  
+ [in] 수가 [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) 구조에 전달 합니다 *pPropSet* 인수입니다.  
   
  *pName*  
  [in] 연결할 데이터베이스의 이름입니다.  
@@ -253,7 +253,7 @@ HRESULT Open(LPCSTR szProgID,
  [in] 사용자의 암호입니다.  
   
  *nInitMode*  
- [in] 데이터베이스 초기화 모드입니다. 참조 [초기화 속성](https://msdn.microsoft.com/library/ms723127.aspx)에 *OLE DB Programmer's Reference* 올바른 초기화 모드 목록을 Windows sdk입니다. 하는 경우 *nInitMode* 0, 아니요 초기화가 모드는 연결을 여는데 사용 되는 속성 집합에 포함 됩니다.  
+ [in] 데이터베이스 초기화 모드입니다. 참조 [초기화 속성](/previous-versions/windows/desktop/ms723127\(v=vs.85\))에 *OLE DB Programmer's Reference* 올바른 초기화 모드 목록을 Windows sdk입니다. 하는 경우 *nInitMode* 0, 아니요 초기화가 모드는 연결을 여는데 사용 되는 속성 집합에 포함 됩니다.  
   
  *szProgID*  
  [in] 프로그램 식별자입니다.  
@@ -293,7 +293,7 @@ HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();
  *szFileName*  
  [in] 일반적으로 데이터 소스 연결(.UDL) 파일의 이름입니다.  
   
- 데이터 연결 파일 (.udl 파일)에 대 한 자세한 내용은 참조 하세요. [데이터 링크 API 개요](https://msdn.microsoft.com/library/ms718102.aspx) Windows SDK에 있습니다.  
+ 데이터 연결 파일 (.udl 파일)에 대 한 자세한 내용은 참조 하세요. [데이터 링크 API 개요](/previous-versions/windows/desktop/ms718102\(v=vs.85\)) Windows SDK에 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
  표준 HRESULT입니다.  
@@ -376,10 +376,10 @@ HRESULT OpenWithServiceComponents (LPCSTR szProgID,
  [in] 데이터 공급자의 프로그램 ID입니다.  
   
  *pPropset*  
- [in] 배열에 대 한 포인터 [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](https://msdn.microsoft.com/library/ms713696.aspx) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다. 데이터 원본 개체가 초기화되면 속성은 데이터 원본 속성 그룹에 속해야 합니다. 동일한 속성에 두 번 이상 지정 된 경우 *pPropset*, 다음 사용 되는 값은 공급자별으로 다릅니다. 하는 경우 *ulPropSets* 가 0 이면이 매개 변수가 무시 됩니다.  
+ [in] 배열에 대 한 포인터 [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다. 데이터 원본 개체가 초기화되면 속성은 데이터 원본 속성 그룹에 속해야 합니다. 동일한 속성에 두 번 이상 지정 된 경우 *pPropset*, 다음 사용 되는 값은 공급자별으로 다릅니다. 하는 경우 *ulPropSets* 가 0 이면이 매개 변수가 무시 됩니다.  
   
  *ulPropSets*  
- [in] 수가 [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) 구조에 전달 합니다 *pPropSet* 인수입니다. 이 값이 0 이면 공급자 무시 *pPropset*합니다.  
+ [in] 수가 [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) 구조에 전달 합니다 *pPropSet* 인수입니다. 이 값이 0 이면 공급자 무시 *pPropset*합니다.  
   
 ### <a name="return-value"></a>반환 값  
  표준 HRESULT입니다.  

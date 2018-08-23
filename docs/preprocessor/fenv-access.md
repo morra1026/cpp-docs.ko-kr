@@ -18,28 +18,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2f6f379e61ea84c1142bd94be49b55a50b28753
-ms.sourcegitcommit: 1ac8f983eeaacd09135a249dea00f10e1c94e0e3
+ms.openlocfilehash: eeb138a8b2598c209005031a3ccd3104fead48dc
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36963325"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42541781"
 ---
 # <a name="fenvaccess"></a>fenv_access
-
-사용 하지 않도록 설정 (**에**) 선택 하거나 선택을 취소 (**오프**) 부동 소수점 환경을 변경할 수 있는 최적화 플래그 테스트 및 모드 변경 합니다.
+사용 하지 않도록 설정 (**온**)을 선택 하거나 (**해제**) 부동 소수점 환경을 변경할 수 있는 최적화 플래그 테스트 및 모드 변경 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **#pragma fenv_access (** { **에** | **오프** } **)**  
+> **#pragma fenv_access (** {0} **온** | **해제** } **)**  
 
 ## <a name="remarks"></a>설명
 
-기본적으로 **fenv_access** 은 **오프**합니다. 컴파일러가 가정할 수 있습니다 코드에 액세스 하거나 부동 소수점 환경을 조작 하지 않는 경우 여러 부동 소수점 코드 최적화가 수행할 수 있습니다. 설정 **fenv_access** 를 **에** 코드가 액세스 부동 소수점 환경 상태 플래그, 예외를 테스트 하려면 또는 제어 모드 플래그를 설정 하는 컴파일러에 알릴 수 있습니다. 컴파일러는 코드는 부동 소수점 환경을 일관 되 게 액세스할 수 있도록 이러한 최적화를 해제 합니다. 
+기본적으로 **fenv_access** 됩니다 **해제**합니다. 컴파일러 가정할 수 있습니다 코드에 액세스 하지 않거나 부동 소수점 환경을 조작할 경우 여러 부동 소수점 코드 최적화를 수행할 수 있습니다. 설정 **fenv_access** 하 **에서** 하는 코드에서 액세스 하는 부동 소수점 환경을 예외 상태 플래그를 테스트 하거나 제어 모드 플래그를 설정 하려면 컴파일러에 알립니다. 컴파일러는 코드는 부동 소수점 환경의 일관 되 게 액세스할 수 있도록 이러한 최적화를 해제 합니다. 
 
-부동 소수점 동작에 대 한 자세한 내용은 참조 하십시오. [/fp (부동 소수점 동작 지정)](../build/reference/fp-specify-floating-point-behavior.md)합니다.
+부동 소수점 동작에 대 한 자세한 내용은 참조 하세요. [/fp (부동 소수점 동작 지정)](../build/reference/fp-specify-floating-point-behavior.md)합니다.
 
-적용 되는 최적화 종류는 **fenv_access** 됩니다.
+적용할 수 있는 최적화 종류 **fenv_access** 됩니다.
 
 - 전역 공통 하위 식 제거
 
@@ -55,7 +54,7 @@ ms.locfileid: "36963325"
 
 ## <a name="examples"></a>예제
 
-이 예에서는 설정 **fenv_access** 를 **에** 24 비트 정밀도 부동 소수점 제어 레지스터를 설정 하려면:
+설정 하는이 예제 **fenv_access** 하 **에서** 24 비트 정밀도 부동 소수점 제어 등록을 설정 하려면:
 
 ```cpp
 // pragma_directive_fenv_access_x86.cpp
@@ -85,7 +84,7 @@ int main() {
 out=9.999999776482582e-003
 ```
 
-주석으로 처리 하는 경우 `#pragma fenv_access (on)` 위의 샘플에서 컴파일러는 컴파일 시간 계산 컨트롤 모드를 사용 하지 않는 때문에 출력은 서로 다른 것을 확인 합니다.
+주석으로 처리 하는 경우 `#pragma fenv_access (on)` 앞의 예제에서 컴파일러는 컴파일 시간 계산이 컨트롤 모드를 사용 하지 않는 있으므로 출력은 다른 점에 유의 합니다.
 
 ```cpp
 // pragma_directive_fenv_access_2.cpp

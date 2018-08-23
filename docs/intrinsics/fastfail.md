@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b59aeb1bd2e7986e173608689b0b1c37a0ef247e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8a0346be9f7a48defc702c9f2ef6aa187c37f187
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33334368"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540506"
 ---
 # <a name="fastfail"></a>__fastfail
 **Microsoft 전용**  
@@ -38,14 +38,14 @@ void __fastfail(unsigned int code);
  `__fastfail` 내장 함수는 결과를 반환하지 않습니다.  
   
 ## <a name="remarks"></a>설명  
- `__fastfail` 내장 함수에 대 한 메커니즘을 제공 된 *빠른 실패* 요청-손상 가능성이 있는 프로세스가 즉각적인 프로세스 종료를 요청 하는 방법을 합니다. 프로그램 상태와 스택을 복구할 수 없을 정도로 손상시켰을 수 있는 심각한 오류는 일반적인 예외 처리 기능을 통해 처리할 수 없습니다. 최소한의 오버헤드로 프로세스를 종료하려면 `__fastfail`을 사용합니다.  
+ 합니다 `__fastfail` 내장 함수에 대 한 메커니즘을 제공을 *빠른 실패* 요청-요청 즉각적인 프로세스 종료를 잠재적으로 손상 된 프로세스에 대 한 방법입니다. 프로그램 상태와 스택을 복구할 수 없을 정도로 손상시켰을 수 있는 심각한 오류는 일반적인 예외 처리 기능을 통해 처리할 수 없습니다. 최소한의 오버헤드로 프로세스를 종료하려면 `__fastfail`을 사용합니다.  
   
  내부적으로 `__fastfail`은 다양한 아키텍처별 메커니즘을 사용하여 구현됩니다.  
   
 |아키텍처|명령|코드 인수의 위치|  
 |------------------|-----------------|-------------------------------|  
 |x86|int 0x29|ecx|  
-|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|int 0x29|rcx|  
+|X64|int 0x29|rcx|  
 |ARM|Opcode 0xDEFB|r0|  
   
  빠른 실패 요청은 독립적이며 대개 두 가지 명령만 있으면 실행할 수 있습니다. 빠른 실패 요청이 실행되면 커널이 적절한 작업을 수행합니다. 사용자 모드 코드에서는 빠른 실패 이벤트 발생 시 명령 포인터 자체 이외의 메모리 종속성이 없습니다. 따라서 메모리가 심각하게 손상되어도 안정성을 최대화할 수 있습니다.  
@@ -62,9 +62,9 @@ void __fastfail(unsigned int code);
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__fastfail`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)], ARM|  
+|`__fastfail`|x86, x64, ARM|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 **Microsoft 전용 종료**  
   

@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 291cb73d3469264ad3b889cbd01c59622c4a370b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1f2e88c7b4b19dd558a211327988dc68f81cc9d1
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33324706"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42538936"
 ---
 # <a name="writecr3"></a>__writecr3
 **Microsoft 전용**  
   
- 값이 기록 `Data` CR3 레지스터에 있습니다.  
+ 값을 씁니다 `Data` CR3 등록 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,9 +44,9 @@ void writecr3(
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__writecr3`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__writecr3`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
  이 내장 함수는 커널 모드에서만 사용할 수 있으며 루틴은 내장 함수로만 사용할 수 있습니다.  

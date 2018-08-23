@@ -17,26 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e4beb2f64448af585537347f0bf0bc7474f541c5
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 7f0a609785b46c13f899961ceae1678b4cfbc026
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39653172"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42592893"
 ---
 # <a name="handlethandle-data-member"></a>HandleT::handle_ Data 멤버
-핸들을 나타내는 포함 된 **HandleT** 개체입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-typename HandleTraits::Type handle_;  
-```  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## <a name="see-also"></a>참고 항목  
- [HandleT 클래스](../windows/handlet-class.md)
+
+핸들을 나타내는 포함 된 **HandleT** 개체입니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+typename HandleTraits::Type handle_;
+```
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## <a name="see-also"></a>참고 항목
+
+[HandleT 클래스](../windows/handlet-class.md)

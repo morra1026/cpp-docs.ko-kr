@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8da1e3d2c5b1a2018df0e46f085fede9b923fff8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7d93cff5c1be0847a6c88f0d60b89527388e4d8b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33332412"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42538943"
 ---
 # <a name="vmxvmclear"></a>__vmx_vmclear
 **Microsoft 전용**  
   
- (VMCS)의 지정 된 가상 컴퓨터 제어 구조를 초기화 하 고 시작 상태로 설정 `Clear`합니다.  
+ 지정 된 가상 머신 제어 구조 (VMCS)를 초기화 하 고 시작 상태로 설정 `Clear`합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,7 +41,7 @@ unsigned char __vmx_vmclear(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] `VmcsPhysicalAddress`|지울 VMCS의 실제 주소를 포함 하는 64 비트 메모리 위치에 대 한 포인터입니다.|  
+|[in] `VmcsPhysicalAddress`|제거할 VMCS의 실제 주소를 포함 하는 64 비트 메모리 위치에 대 한 포인터입니다.|  
   
 ## <a name="return-value"></a>반환 값  
   
@@ -52,17 +52,17 @@ unsigned char __vmx_vmclear(
 |2|사용 가능한 상태 없이 작업이 실패했습니다.|  
   
 ## <a name="remarks"></a>설명  
- 응용 프로그램 중 하나를 사용 하 여 VM 시작 작업을 수행할 수는 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) 또는 [__vmx_vmresume](../intrinsics/vmx-vmresume.md) 함수입니다. [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) 함수는 시작 상태가 인 VMCS 에서만 사용할 수 있습니다 `Clear`, 및 [__vmx_vmresume](../intrinsics/vmx-vmresume.md) 함수는 시작 상태가 인 VMCS 에서만 사용할 수 있습니다 `Launched`합니다. 따라서 사용 하 여는 [__vmx_vmclear](../intrinsics/vmx-vmclear.md) 를 VMCS의 시작 상태를 설정 하려면 함수 `Clear`합니다. 사용 하 여는 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) 첫 번째 VM 시작 작업에 대 한 함수 및 [__vmx_vmresume](../intrinsics/vmx-vmresume.md) 이후 VM 시작 작업에 대 한 함수입니다.  
+ 응용 프로그램이 사용 하 여 VM 시작 작업을 수행할 수는 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) 하거나 [__vmx_vmresume](../intrinsics/vmx-vmresume.md) 함수입니다. 합니다 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) 함수는 시작 상태가 인 vmcs 에서만 사용할 수 있습니다 `Clear`, 및 [__vmx_vmresume](../intrinsics/vmx-vmresume.md) 함수는 시작 상태가 인 vmcs 에서만 사용할 수 있습니다 `Launched`합니다. 결과적으로 사용 합니다 [__vmx_vmclear](../intrinsics/vmx-vmclear.md) 에 VMCS의 시작 상태를 설정 하는 함수 `Clear`합니다. 사용 된 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) 첫 번째 VM 시작 작업에 대 한 함수 및 [__vmx_vmresume](../intrinsics/vmx-vmresume.md) 이후 VM 시작 작업에 대 한 함수입니다.  
   
- `__vmx_vmclear` 함수는 동일는 `VMCLEAR` 컴퓨터 명령입니다. 이 함수는 게스트 운영 체제 및 해당 응용 프로그램과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 문서 번호 C97063-002, 자세한 내용은 "Intel 가상화 기술 사양에 대 한 the ia-32 Intel 아키텍처" 문서에 대 한 검색에 대 한는 [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) 사이트입니다.  
+ 합니다 `__vmx_vmclear` 함수는 동일 합니다 `VMCLEAR` 컴퓨터 명령입니다. 이 함수는 게스트 운영 체제 및 해당 응용 프로그램과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용은 "Intel 가상화 기술 사양에 대 한는 IA-32 Intel 아키텍처" 문서를 검색에서 숫자 C97063-002를 문서화 합니다 [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) 사이트입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__vmx_vmclear`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__vmx_vmclear`|X64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 **Microsoft 전용 종료**  
   

@@ -150,16 +150,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8e8225163f8370e5664465ead7e0b01e5213afb
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 682f4ecbbc4d048f6353be6844bfef042efbc45f
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850290"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539131"
 ---
 # <a name="cmfctoolbarimages-class"></a>CMFCToolBarImages 클래스
 도구 모음에서 이미지입니다. `CMFCToolBarImages` 클래스 파일에서 응용 프로그램 리소스에서 로드 하는 도구 모음 이미지를 관리 합니다.  
-   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
 ## <a name="syntax"></a>구문  
   
 ```  

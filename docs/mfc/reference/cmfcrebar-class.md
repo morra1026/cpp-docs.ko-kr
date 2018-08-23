@@ -38,16 +38,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 292de0795033e40d93a30840be620e10369f87ce
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: c8af155401492e97be6a9e3a80b72c8c4e7fbd9e
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028218"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540511"
 ---
 # <a name="cmfcrebar-class"></a>CMFCReBar 클래스
 `CMFCReBar` 개체 레이아웃, 지 속성 및 rebar 컨트롤에 대 한 상태 정보를 제공 하는 컨트롤 막대입니다.  
-   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
 ## <a name="syntax"></a>구문  
   
 ```  

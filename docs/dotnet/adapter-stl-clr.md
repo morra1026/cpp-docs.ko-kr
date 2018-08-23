@@ -59,12 +59,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: f87ea6791144b7ce40f4e2d71a2ca7f031adbedf
-ms.sourcegitcommit: bad2441d1930275ff506d44759d283d94cccd1c0
+ms.openlocfilehash: 7023ef21258a5b93d889d02c1b586b524c8b98be
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39376110"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42573358"
 ---
 # <a name="adapter-stlclr"></a>adapter(STL/CLR)
 STL/CLR 헤더 `<cliext/adapter>` 두 템플릿 클래스를 지정 합니다 (`collection_adapter` 하 고 `range_adapter`), 및 템플릿 함수 `make_collection`합니다.  
@@ -307,7 +307,7 @@ collection_adapter(Coll^ collection);
   
  `collection_adapter(Coll^ collection);`  
   
- 사용 하 여 사용 하 여 저장 된 핸들을 초기화 `collection`합니다.  
+ 사용 하 여 저장 된 핸들을 초기화 `collection`합니다.  
   
 ### <a name="example"></a>예  
   

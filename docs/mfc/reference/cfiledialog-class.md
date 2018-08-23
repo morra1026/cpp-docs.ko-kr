@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c681cc5f79d0c9d876da522666565e5a43c8e145
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: d758bcc700180781c899f2263fe04c29ee0e6409
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028007"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42538554"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog 클래스
 파일 열기 또는 저장 작업 파일에 사용 되는 일반 대화 상자를 캡슐화 합니다.  
@@ -561,7 +561,7 @@ explicit CFileDialog(
   
  합니다 *lpszFilter* 파일로 파일 목록에 표시할 수 있어야 하는 파일 이름의 형식을 확인할 매개 변수를 사용 합니다. 문자열 쌍의 첫 번째 문자열; 필터를 설명합니다. 두 번째 문자열을 사용 하 여 파일 이름 확장명을 나타냅니다. 구분 기호로 세미콜론 (';' 문자)를 사용 하 여 여러 확장을 지정할 수 있습니다. 두 개의 문자열 종료 '&#124;' 문자를 NULL 문자 뒤에 있습니다. 사용할 수도 있습니다는 [CString](../../atl-mfc-shared/using-cstring.md) 이 매개 변수에 대 한 개체입니다.  
   
- 예를 들어 [!INCLUDE[ofprexcel](../../mfc/reference/includes/ofprexcel_md.md)] 특히 확장.xlc (차트) 또는.xls (워크시트)에 있는 파일을 열 수 있습니다. Excel에 대 한 필터는 다음과 같이 작성할 수 있습니다.  
+ 예를 들어 Microsoft Excel에서는 확장.xlc (차트) 또는 특히.xls (워크시트)에 있는 파일을 열 수가 있습니다. Excel에 대 한 필터는 다음과 같이 작성할 수 있습니다.  
   
  [!code-cpp[NVC_MFCFiles#24](../../atl-mfc-shared/reference/codesnippet/cpp/cfiledialog-class_2.cpp)]  
   
@@ -1353,7 +1353,7 @@ void SetControlText(
  컨트롤에 대해 설정할 텍스트를 포함 하는 문자열에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 함수의 두 버전 모두 유니코드를 사용 하는 응용 프로그램에 적합 합니다. 그러나 LPCSTR 유형 사용 하 여 버전만를 사용 하는 응용 프로그램에 대 한 유효 [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)]합니다.  
+ 이 함수의 두 버전 모두 유니코드를 사용 하는 응용 프로그램에 적합 합니다. 그러나 LPCSTR 유형 사용 하 여 버전만 ANSI를 사용 하는 응용 프로그램에 유효 합니다.  
   
  이 메서드를 사용 하려면 OFN_EXPLORER 스타일으로 대화 상자를 만들어야 합니다. 그렇지 않으면 함수 어설션에서 실패 합니다.  
   
@@ -1439,16 +1439,16 @@ void SetTemplate(
  비-탐색기에 대 한 템플릿 리소스의 ID 번호를 포함 `CFileDialog` 개체입니다. 이 템플릿은 Windows NT 3.51 또는 OFN_EXPLORER 스타일 없을 경우에 사용 됩니다.  
   
  [in] *nWin4ID*  
- 탐색기에 대 한 템플릿 리소스의 ID 번호를 포함 `CFileDialog` 개체입니다. 이 템플릿은 경우에 사용 됩니다 [!INCLUDE[WinNt4Family](../../mfc/reference/includes/winnt4family_md.md)] 및 이상 버전, Windows 95 및 이후 버전에서는 OFN_EXPLORER 스타일 있으면 또는 합니다.  
+ 탐색기에 대 한 템플릿 리소스의 ID 번호를 포함 `CFileDialog` 개체입니다. 이 템플릿은 OFN_EXPLORER 스타일에 있는 경우 또는 Windows NT 4.0, 버전, Windows 95 및 이상 버전 에서만 사용 됩니다.  
   
  [in] *lpWin3ID*  
  비-탐색기에 대 한 템플릿 리소스의 이름을 포함 `CFileDialog` 개체입니다. 이 템플릿은 Windows NT 3.51 또는 OFN_EXPLORER 스타일 없을 경우에 사용 됩니다.  
   
  [in] *lpWin4ID*  
- 탐색기의 템플릿 리소스의 이름을 포함 `CFileDialog` 개체입니다. 이 템플릿은 경우에 사용 됩니다 [!INCLUDE[WinNt4Family](../../mfc/reference/includes/winnt4family_md.md)] 및 이상 버전, Windows 95 및 이후 버전에서는 OFN_EXPLORER 스타일 있으면 또는 합니다.  
+ 탐색기의 템플릿 리소스의 이름을 포함 `CFileDialog` 개체입니다. 이 템플릿은 OFN_EXPLORER 스타일에 있는 경우 또는 Windows NT 4.0, 버전, Windows 95 및 이상 버전 에서만 사용 됩니다.  
   
 ### <a name="remarks"></a>설명  
- 지정 된 템플릿 중 하나에 사용 됩니다. 시스템은 OFN_EXPLORER 스타일 및 응용 프로그램에서 실행 되는 운영 체제의 존재를 기준으로 사용할 템플릿을 결정 합니다. 비 탐색기 및 템플릿 탐색기 스타일을 지정 하 여 쉽습니다 지원, Windows NT 3.51 [!INCLUDE[WinNt4Family](../../mfc/reference/includes/winnt4family_md.md)] 및 이후 버전 및 Windows 95 및 이상 버전.  
+ 지정 된 템플릿 중 하나에 사용 됩니다. 시스템은 OFN_EXPLORER 스타일 및 응용 프로그램에서 실행 되는 운영 체제의 존재를 기준으로 사용할 템플릿을 결정 합니다. 비 탐색기 및 템플릿 탐색기 스타일을 지정 하 여 Windows NT 3.51, Windows NT 4.0 및 이상 버전 및 Windows 95 및 이상 버전을 지원 하기 쉽습니다.  
   
 > [!NOTE]
 > Windows Vista 또는 이후 스타일 파일 대화 상자에는이 함수를 지원 하지 않습니다. Windows Vista 또는 이후 스타일 파일 대화 상자에서이 함수를 사용 하는 동안 시킵니다 [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)합니다. 대신은 사용자 지정된 대화 상자를 사용 하는 것입니다. 사용자 지정을 사용 하는 방법에 대 한 자세한 내용은 `CFileDialog`를 참조 하세요 [해 주는 IFileDialogCustomize](http://msdn.microsoft.com/library/windows/desktop/bb775912)합니다.  

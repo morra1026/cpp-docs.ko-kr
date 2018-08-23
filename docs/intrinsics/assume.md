@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec83775a007e3a07582f218c5588ae4fe7909b20
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 38a3bb405fac71a651b37fd6d6098c0d0f0263b0
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340569"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42545870"
 ---
 # <a name="assume"></a>__assume
 **Microsoft 전용**  
@@ -51,7 +51,7 @@ __assume(
   
  `__assume`은 올바른 내장 함수가 아니며, 함수로 선언할 필요도 없고 `#pragma intrinsic` 지시문에서 사용할 수도 없습니다. 코드는 생성되지 않지만 최적화 프로그램에서 생성하는 코드가 영향을 받습니다.  
   
- 사용 하 여 `__assume` 에 [ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) 만 어설션이 없는 경우 복구할 수 있습니다. 후속 오류 복구 코드가 있는 어설션에서는 `__assume`을 사용하지 마세요. 이렇게 하면 컴파일러가 오류 처리 코드를 최적화하지 않을 수도 있습니다.  
+ 사용 하 여 `__assume` 에 [ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) 만 경우 assert는 복구할 수 없습니다. 후속 오류 복구 코드가 있는 어설션에서는 `__assume`을 사용하지 마세요. 이렇게 하면 컴파일러가 오류 처리 코드를 최적화하지 않을 수도 있습니다.  
   
  `__assume(0)` 문은 특수한 경우입니다. 연결할 수 없는 코드 경로를 나타내려는 경우 `__assume(0)`을 사용합니다. 다음 예제에서는 `__assume(0)`을 사용하여 스위치 문의 기본 사례에 연결할 수 없음을 나타내는 방법을 보여 줍니다. 여기에는 가장 일반적인 `__assume(0)` 사용 방식이 나와 있습니다.  
   
@@ -59,9 +59,9 @@ __assume(
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__assume`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__assume`|x86, ARM, x64|  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 // compiler_intrinsics__assume.cpp  

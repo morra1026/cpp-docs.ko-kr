@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5bd2a384af6e73ae0c113bf8c27ae9d0c7529a8
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 2b5cff88aab5a4b069d96808755ce92d61f32fff
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881102"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42575525"
 ---
 # <a name="ccompolyobject-class"></a>CComPolyObject 클래스
 이 클래스는 구현 `IUnknown` 집계 또는 집계 개체에 대 한 합니다.  
@@ -63,7 +63,7 @@ class CComPolyObject : public IUnknown,
 |이름|설명|  
 |----------|-----------------|  
 |[CComPolyObject::AddRef](#addref)|개체의 참조 횟수를 증가 시킵니다.|  
-|[CComPolyObject::CreateInstance](#createinstance)|(정적) 새로 만들 수 있습니다 **CComPolyObject <** `contained` **>** 오버 헤드 없이 개체 [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615)합니다.|  
+|[CComPolyObject::CreateInstance](#createinstance)|(정적) 새로 만들 수 있습니다 **CComPolyObject <** `contained` **>** 오버 헤드 없이 개체 [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)합니다.|  
 |[CComPolyObject::FinalConstruct](#finalconstruct)|최종 초기화를 수행 `m_contained`합니다.|  
 |[CComPolyObject::FinalRelease](#finalrelease)|최종 소멸 수행 `m_contained`합니다.|  
 |[CComPolyObject::QueryInterface](#queryinterface)|요청된 인터페이스에 대한 포인터를 검색합니다.|  
@@ -137,7 +137,7 @@ CComPolyObject(void* pv);
  할당 된 모든 리소스를 호출 해제 [FinalRelease](#finalrelease), 및 모듈 잠금 횟수를 줄입니다.  
   
 ##  <a name="createinstance"></a>  CComPolyObject::CreateInstance  
- 새로 만들 수 있습니다 **CComPolyObject <** `contained` **>** 오버 헤드 없이 개체 [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615)합니다.  
+ 새로 만들 수 있습니다 **CComPolyObject <** `contained` **>** 오버 헤드 없이 개체 [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)합니다.  
   
 ```
 static HRESULT WINAPI CreateInstance(  

@@ -18,15 +18,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 984dc392b6ffa51d662d3ab56b1c0dc0dbc92233
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a3081837cc4516750f8c2c0d75cfc37eef208f9d
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33839157"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42540672"
 ---
 # <a name="constseg"></a>const_seg
-세그먼트를 지정 합니다. 여기서 [const](../cpp/const-cpp.md) 변수가.obj 파일에 저장 됩니다.  
+세그먼트를 지정 합니다. 여기서 [const](../cpp/const-cpp.md) 변수.obj 파일에 저장 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,34 +35,35 @@ ms.locfileid: "33839157"
 ```  
   
 ## <a name="remarks"></a>설명  
- 의미 *세그먼트* 및 *섹션* 은이 항목의 서로 전환이 가능 합니다.  
+ 
+의미 *세그먼트* 하 고 *섹션* 이 항목에서 서로 바꿀 수 있습니다.  
   
- OBJ 파일을 볼 수 있는 [dumpbin](../build/reference/dumpbin-command-line.md) 응용 프로그램입니다. `const` 변수에 대한 .obj 파일의 기본 세그먼트는 .rdata입니다. 스칼라 같은 일부 `const` 변수는 자동으로 코드 스트림으로 인라인 처리됩니다. 인라인 처리된 코드는 .rdata에 나타나지 않습니다.  
+OBJ 파일을 사용 하 여 볼 수 있습니다 합니다 [dumpbin](../build/reference/dumpbin-command-line.md) 응용 프로그램입니다. `const` 변수에 대한 .obj 파일의 기본 세그먼트는 .rdata입니다. 스칼라 같은 일부 `const` 변수는 자동으로 코드 스트림으로 인라인 처리됩니다. 인라인 처리된 코드는 .rdata에 나타나지 않습니다.  
   
- `const_seg`에 동적 초기화가 필요한 개체를 정의하면 정의되지 않은 동작이 발생합니다.  
+`const_seg`에 동적 초기화가 필요한 개체를 정의하면 정의되지 않은 동작이 발생합니다.  
   
- 매개 변수 없는 `#pragma const_seg`는 세그먼트를 .rdata로 다시 설정합니다.  
+매개 변수 없는 `#pragma const_seg`는 세그먼트를 .rdata로 다시 설정합니다.  
   
- `push`(선택 사항)  
- 내부 컴파일러 스택에 기록합니다. `push`에는 `identifier` 및 `segment-name`이 포함될 수 있습니다.  
+*푸시* (선택 사항)  
+내부 컴파일러 스택에 기록합니다. A *푸시* 있을 수 있습니다는 *식별자* 하 고 *세그먼트 이름이*합니다.  
   
- `pop`(선택 사항)  
- 내부 컴파일러 스택 맨 위에서 기록을 제거합니다.  
+*pop* (선택 사항)  
+내부 컴파일러 스택 맨 위에서 기록을 제거합니다.  
   
- `identifier`(선택 사항)  
- `push`와 함께 사용할 때 내부 컴파일러 스택의 레코드에 이름을 할당합니다. `pop`과 함께 사용할 때 `identifier`가 제거될 때까지 내부 스택에서 레코드를 팝합니다. `identifier`가 내부 스택에 없으면 아무 것도 팝되지 않습니다.  
+*식별자* (선택 사항)  
+와 함께 사용할 때 *푸시*, 내부 컴파일러 스택의 레코드에 이름을 할당 합니다. 와 함께 사용할 때 *pop*, 될 때까지 내부 스택에서 기록을 팝 *식별자* 가 제거 *식별자* 없는 내부 스택에서 아무 것도 팝 합니다.  
   
- `identifier`를 사용하면 여러 레코드가 하나의 `pop` 명령으로 팝될 수 있습니다.  
+사용 하 여 *식별자* 여러 레코드는 단일으로 팝 될 수 있습니다 *pop* 명령입니다.  
   
- "`segment-name`"(옵션)  
- 세그먼트의 이름입니다. 스택은 `pop`과 함께 사용하면 팝되고 `segment-name`이 활성 세그먼트 이름이 됩니다.  
+"*세그먼트 이름이*" (선택 사항)  
+세그먼트의 이름입니다. 와 함께 사용할 경우 *pop*, 스택이 팝 되 고 *세그먼트 이름이* 활성 세그먼트 이름이 됩니다.  
   
- "`segment-class`"(옵션)  
- C++ 2.0 이전 버전과의 호환성을 위해 포함됩니다. 무시됩니다.  
+"*세그먼트 클래스*" (선택 사항)  
+C++ 2.0 이전 버전과의 호환성을 위해 포함됩니다. 무시됩니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
-```  
+```cpp  
 // pragma_directive_const_seg.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -97,9 +98,11 @@ test4
 ```  
   
 ## <a name="comments"></a>설명  
- 참조 [/section](../build/reference/section-specify-section-attributes.md) 섹션을 만들 때 사용 하지 않아야 하는 이름 목록에 대 한 합니다.  
+ 
+참조 [/section](../build/reference/section-specify-section-attributes.md) 섹션을 만들 때 사용 하지 않아야 하는 이름의 목록에 대 한 합니다.  
   
- 초기화 된 데이터에 대 한 섹션도 지정할 수 있습니다 ([data_seg](../preprocessor/data-seg.md)), 초기화 되지 않은 데이터 ([bss_seg](../preprocessor/bss-seg.md)), 및 함수 ([code_seg](../preprocessor/code-seg.md)).  
+초기화 된 데이터에 대 한 섹션도 지정할 수 있습니다 ([data_seg](../preprocessor/data-seg.md)), 초기화 되지 않은 데이터 ([bss_seg](../preprocessor/bss-seg.md)), 및 함수 ([code_seg](../preprocessor/code-seg.md)).  
   
 ## <a name="see-also"></a>참고 항목  
- [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

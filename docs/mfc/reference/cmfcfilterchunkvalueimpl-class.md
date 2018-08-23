@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c11e50755097176b276c82877c7a636be149756
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: fdce28feddfca0789306a16f8dc6d047dc375120
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852577"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42540495"
 ---
 # <a name="cmfcfilterchunkvalueimpl-class"></a>CMFCFilterChunkValueImpl 클래스
 청크 및 속성 값 쌍의 논리를 간소화 하는 클래스입니다.  
@@ -91,7 +91,7 @@ class CMFCFilterChunkValueImpl : public ATL::IFilterChunkValue;
 |[CMFCFilterChunkValueImpl::GetChunkGUID](#getchunkguid)|GUID 청크를 검색합니다.|  
 |[CMFCFilterChunkValueImpl::GetChunkPID](#getchunkpid)|청크 PID (속성 ID)를 검색합니다.|  
 |[CMFCFilterChunkValueImpl::GetChunkType](#getchunktype)|가져옵니다 청크 형식입니다.|  
-|[CMFCFilterChunkValueImpl::GetString](#getstring)|검색 된 문자열 값입니다.|  
+|[CMFCFilterChunkValueImpl::GetString](#getstring)|문자열 값을 검색 합니다.|  
 |[CMFCFilterChunkValueImpl::GetValue](#getvalue)|할당 된 propvariant으로 값을 검색합니다.|  
 |[CMFCFilterChunkValueImpl::GetValueNoAlloc](#getvaluenoalloc)|(내부 값)을 할당 되지 않은 반환 값입니다.|  
 |[CMFCFilterChunkValueImpl::IsValid](#isvalid)|이 속성 값이 유효한 지 여부를 확인 합니다.|  

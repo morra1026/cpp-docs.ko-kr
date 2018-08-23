@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 115f5b3d7012ae3e9073d81e0c1005dcb513e045
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: eb4142b742ae6c2a758c2a2fb5e09c604959433f
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849342"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42541645"
 ---
 # <a name="injectstatement"></a>inject_statement
 **C + + 전용**  
   
- 소스 텍스트로서 인수를 형식 라이브러리 헤더에 삽입합니다.  
+소스 텍스트로서 인수를 형식 라이브러리 헤더에 삽입합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,15 +34,17 @@ ms.locfileid: "33849342"
 inject_statement("source_text")  
 ```  
   
-#### <a name="parameters"></a>매개 변수  
- `source_text`  
- 형식 라이브러리 헤더 파일에 삽입되는 소스 텍스트입니다.  
+### <a name="parameters"></a>매개 변수  
+*source_text*  
+형식 라이브러리 헤더 파일에 삽입되는 소스 텍스트입니다.  
   
 ## <a name="remarks"></a>설명  
- 헤더 파일의 형식 라이브러리 내용을 래핑하는 네임스페이스 선언의 시작 부분에 텍스트가 배치됩니다.  
+ 
+헤더 파일의 형식 라이브러리 내용을 래핑하는 네임스페이스 선언의 시작 부분에 텍스트가 배치됩니다.  
   
- **C + + 전용 종료**  
+**C + + 전용 종료**  
   
 ## <a name="see-also"></a>참고 항목  
- [#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
- [#import 지시문](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
+[#import 지시문](../preprocessor/hash-import-directive-cpp.md)

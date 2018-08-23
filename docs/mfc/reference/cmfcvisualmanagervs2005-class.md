@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7282730779360ecc0bb93f0ae827b46ddff19d0
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: e3ce4384ebce3140f8d3ccadf781f3d45b92340b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37038063"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541487"
 ---
 # <a name="cmfcvisualmanagervs2005-class"></a>CMFCVisualManagerVS2005 클래스
 `CMFCVisualManagerVS2005` 응용 프로그램에 Microsoft Visual Studio 2005 모양을 제공 합니다.  
@@ -70,11 +70,11 @@ class CMFCVisualManagerVS2005 : public CMFCVisualManagerOffice2003
   
 |이름|설명|  
 |----------|-----------------|  
-|[CMFCVisualManagerVS2005::GetDockingTabsBordersSize](#getdockingtabsborderssize)|도킹 되 고 탭 창 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::GetDockingTabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#getdockingtabsborderssize).)|  
-|[CMFCVisualManagerVS2005::GetMDITabsBordersSize](#getmditabsborderssize)|프레임 워크 창을 그립니다 전에 MDITabs 창의 테두리 크기를 확인 하려면이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::GetMDITabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#getmditabsborderssize).)|  
+|[CMFCVisualManagerVS2005::GetDockingTabsBordersSize](#getdockingtabsborderssize)|창을 도킹 되 고 탭을 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::GetDockingTabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#getdockingtabsborderssize).)|  
+|[CMFCVisualManagerVS2005::GetMDITabsBordersSize](#getmditabsborderssize)|프레임 워크 창 그릴 전에 MDITabs 창의 테두리 크기를 확인 하려면이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::GetMDITabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#getmditabsborderssize).)|  
 |[CMFCVisualManagerVS2005::GetPropertyGridGroupColor](#getpropertygridgroupcolor)|(재정의 [CMFCVisualManagerOffice2003::GetPropertyGridGroupColor](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#getpropertygridgroupcolor).)|  
 |[CMFCVisualManagerVS2005::GetTabFrameColors](#gettabframecolors)|(재정의 [CMFCVisualManagerOffice2003::GetTabFrameColors](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#gettabframecolors).)|  
-|[CMFCVisualManagerVS2005::HasOverlappedAutoHideButtons](#hasoverlappedautohidebuttons)|자동 숨기기 단추 현재 비주얼 관리자에서 겹치는 지 여부를 반환 합니다. (재정의 [CMFCVisualManager::HasOverlappedAutoHideButtons](../../mfc/reference/cmfcvisualmanager-class.md#hasoverlappedautohidebuttons).)|  
+|[CMFCVisualManagerVS2005::HasOverlappedAutoHideButtons](#hasoverlappedautohidebuttons)|자동 숨기기 단추는 현재 비주얼 관리자에서 겹치는 지 여부를 반환 합니다. (재정의 [CMFCVisualManager::HasOverlappedAutoHideButtons](../../mfc/reference/cmfcvisualmanager-class.md#hasoverlappedautohidebuttons).)|  
 |[CMFCVisualManagerVS2005::OnDrawAutoHideButtonBorder](#ondrawautohidebuttonborder)|(재정의 [CMFCVisualManagerOffice2003::OnDrawAutoHideButtonBorder](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawautohidebuttonborder).)|  
 |[CMFCVisualManagerVS2005::OnDrawCaptionButton](#ondrawcaptionbutton)|(`CMFCVisualManagerOfficeXP::OnDrawCaptionButton`를 재정의합니다.)|  
 |[CMFCVisualManagerVS2005::OnDrawPaneCaption](#ondrawpanecaption)|(재정의 [CMFCVisualManagerOffice2003::OnDrawPaneCaption](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawpanecaption).)|  
@@ -88,12 +88,12 @@ class CMFCVisualManagerVS2005 : public CMFCVisualManagerOffice2003
 |[CMFCVisualManagerVS2005::OnUpdateSystemColors](#onupdatesystemcolors)|(재정의 [CMFCVisualManagerOffice2003::OnUpdateSystemColors](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onupdatesystemcolors).)|  
   
 ## <a name="remarks"></a>설명  
- CMFCVisualManagerVS2005 클래스를 사용 하 여의 유사 하 게 응용 프로그램의 시각적 모양을 변경 하는 [!INCLUDE[vsprvsext](../../mfc/reference/includes/vsprvsext_md.md)]합니다.  
+ CMFCVisualManagerVS2005 클래스를 사용 하 여 Microsoft Visual Studio 2005의 유사 하 게 응용 프로그램의 시각적 모양을 변경 합니다.  
   
- 이 클래스의 멤버의 모든는이 클래스의 상위 항목에서 파생 되는 가상 함수 [CMFCVisualManager 클래스](../../mfc/reference/cmfcvisualmanager-class.md)합니다.  
+ 이 클래스의 멤버 모두이 클래스의 상위 항목에서 파생 되는 가상 함수 [CMFCVisualManager 클래스](../../mfc/reference/cmfcvisualmanager-class.md)합니다.  
   
 ## <a name="example"></a>예  
- 다음 예제에서는 VS 2005 비주얼 관리자를 사용 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인는 [바탕 화면 경고 데모 샘플](../../visual-cpp-samples.md)합니다.  
+ 다음 예제에서는 VS 2005 비주얼 관리자를 사용 하는 방법에 설명 합니다. 이 코드 조각은의 일부인 합니다 [바탕 화면 경고 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_DesktopAlertDemo#9](../../mfc/reference/codesnippet/cpp/cmfcvisualmanagervs2005-class_1.cpp)]  
   

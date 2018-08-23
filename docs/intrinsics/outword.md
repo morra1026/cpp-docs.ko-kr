@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f0e827b16b9743cb6bc7fe6906b4c74c3006864
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d118c26e79a462723f87e76672b2d9b9c1a76cb2
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33331138"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541089"
 ---
 # <a name="outword"></a>__outword
 **Microsoft 전용**  
   
- 생성 된 `out` 단어를 전송 하는 명령 `Data` 끝으로 지정 된 I/O 포트 `Port`합니다.  
+ 생성 된 `out` 단어를 전송 하는 명령 `Data` 로 지정 된 I/O 포트를 찾기 `Port`합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,18 +40,18 @@ void __outword(
   
 #### <a name="parameters"></a>매개 변수  
  [in] `Port`  
- 데이터를 보내야 하는 포트입니다.  
+ 데이터를 보낼 포트입니다.  
   
  [in] `Data`  
- 데이터를 보낼 수 있습니다.  
+ 데이터 전송입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__outword`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__outword`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  

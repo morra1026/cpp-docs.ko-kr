@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8863f3a6c37693ec28f931c2af4cb0d299788daa
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 56297f53aa40741a506ea65761d151dcab98c421
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39402665"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42571981"
 ---
 # <a name="bstrtgetbstr"></a>_bstr_t::GetBSTR
 **Microsoft 전용**  
@@ -38,7 +38,7 @@ BSTR& GetBSTR( );
  `BSTR`에 의해 래핑되는 `_bstr_t`의 시작 부분입니다.  
   
 ## <a name="remarks"></a>설명  
- **GetBSTR** 모두에 영향을 줍니다 `_bstr_t` 공유 하는 개체는 `BSTR`합니다. 둘 이상의 `_bstr_t` 공유할 수는 `BSTR` 복사 생성자를 사용 하 여 및 및 **연산자 =** 합니다.  
+ **GetBSTR** 모두에 영향을 줍니다 `_bstr_t` 공유 하는 개체는 `BSTR`합니다. 둘 이상의 `_bstr_t` 공유할 수는 `BSTR` 복사 생성자를 사용 하 여 및 **연산자 =** 합니다.  
   
 ## <a name="example"></a>예  
  참조 [_bstr_t:: assign](../cpp/bstr-t-assign.md) 사용 하는 예제 **GetBSTR**합니다.  

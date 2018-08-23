@@ -16,18 +16,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 397b5274c22acd3a136925495fa350c3aa40dece
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 724772c0057d5defc8bfa3e2207df85d3a207f31
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39653217"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590296"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (c + +)
 
 이 연습에서는 Visual Studio에서 기존 Windows 데스크톱 응용 프로그램을 만드는 방법을 보여 줍니다. 예제 응용 프로그램을 만든 Windows API를 사용 하 여 "Hello, Windows desktop!"를 표시 하려면 줍니다. 이 연습에서 개발하는 코드를 패턴으로 사용하여 다른 Windows 데스크톱 응용 프로그램을 만들 수 있습니다.
 
-Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API)는 Windows 응용 프로그램을 만들기 위한 C 언어 기반 프레임 워크입니다. 1980 년대부터 존재에서 되었습니다 하 고 수십 Windows 응용 프로그램을 만드는 데 사용 된 합니다. MFC, ATL 및.NET frameworks 등이 API를 기반으로 빌드되어 더욱 고급 및 프로그램을 쉽게 프레임 워크입니다. C +로 작성 된 UWP 및 스토어 앱에 대 한 가장 최신 코드 + WinRT 아래이 API를 사용 합니다. Windows API에 대 한 자세한 내용은 참조 하세요. [Windows API 인덱스](https://msdn.microsoft.com/library/windows/desktop/ff818516.aspx)합니다. 여러 가지 방법으로 Windows 응용 프로그램을 만들고 했지만이 첫 번째입니다.
+Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API)는 Windows 응용 프로그램을 만들기 위한 C 언어 기반 프레임 워크입니다. 1980 년대부터 존재에서 되었습니다 하 고 수십 Windows 응용 프로그램을 만드는 데 사용 된 합니다. MFC, ATL 및.NET frameworks 등이 API를 기반으로 빌드되어 더욱 고급 및 프로그램을 쉽게 프레임 워크입니다. C +로 작성 된 UWP 및 스토어 앱에 대 한 가장 최신 코드 + WinRT 아래이 API를 사용 합니다. Windows API에 대 한 자세한 내용은 참조 하세요. [Windows API 인덱스](/windows/desktop/apiindex/windows-api-list)합니다. 여러 가지 방법으로 Windows 응용 프로그램을 만들고 했지만이 첫 번째입니다.
 
 > [!IMPORTANT]
 > 간단히 하기 위해 일부 코드 문은 텍스트에서 생략 됩니다. 합니다 [코드를 작성](#build-the-code) 이 문서의 끝에 있는 섹션에는 전체 코드를 보여 줍니다.
@@ -570,4 +570,5 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 지금까지 이 연습을 완료 하 고 기존 Windows 데스크톱 응용 프로그램을 구축 했습니다.
 
 ## <a name="see-also"></a>참고 항목
- [Windows 데스크톱 응용 프로그램](../windows/windows-desktop-applications-cpp.md)
+
+[Windows 데스크톱 응용 프로그램](../windows/windows-desktop-applications-cpp.md)

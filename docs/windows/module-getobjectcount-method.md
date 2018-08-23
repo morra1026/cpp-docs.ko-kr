@@ -17,29 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f677557c81502a38caf7414abf71936ada456471
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 2be87f336adeb156789bb8c0ae7c8d05c8de39a4
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40016303"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42608639"
 ---
 # <a name="modulegetobjectcount-method"></a>Module::GetObjectCount 메서드
-이 모듈에서 관리되는 개체 수를 가져옵니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-virtual long GetObjectCount() const;  
-```  
-  
-## <a name="return-value"></a>반환 값  
- 이 모듈에서 관리되는 현재 개체 수입니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** module.h  
-  
- **네임스페이스:** Microsoft::WRL
- 
+
+이 모듈에서 관리되는 개체 수를 가져옵니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+virtual long GetObjectCount() const;
+```
+
+## <a name="return-value"></a>반환 값
+
+이 모듈에서 관리되는 현재 개체 수입니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** module.h
+
+**네임스페이스:** Microsoft::WRL
+
 ## <a name="see-also"></a>참고 항목
- [Module 클래스](../windows/module-class.md)
+
+[Module 클래스](../windows/module-class.md)

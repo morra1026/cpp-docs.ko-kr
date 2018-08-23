@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28f0cedbe20ebea21b3b10e5016605c1bce51383
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 0b2cff8470ad11270d2f40abf3d03c708a9d6e87
+ms.sourcegitcommit: 9035b4df448583c195f54318e941284b632dc308
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39407389"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42573361"
 ---
 # <a name="member-access-control-c"></a>멤버 Access Control(C++)
 액세스 제어를 사용 하면 분리할 수는 [공개](../cpp/public-cpp.md) 에서 클래스의 인터페이스는 [개인](../cpp/private-cpp.md) 구현 세부 정보 및 [보호](../cpp/protected-cpp.md) 멤버에 대해서만 사용 하 여 파생된 클래스입니다. 액세스 지정자는 다음 액세스 지정자가 나타날 때까지 해당 액세스 지정자 뒤에 선언된 모든 멤버에 적용됩니다.  
@@ -80,28 +80,44 @@ protected:      // Declare protected function for derived classes only.
   
 ```cpp 
 // access_specifiers_for_base_classes.cpp  
-class BaseClass  
-{  
-public:  
-    int PublicFunc();    // Declare a public member.  
-protected:  
+class BaseClass
+{
+public:
+    int PublicFunc(); // Declare a public member.  
+protected:
     int ProtectedFunc(); // Declare a protected member.  
-private:  
-    int PrivateFunc();   // Declare a private member.  
-};  
-  
+private:
+    int PrivateFunc(); // Declare a private member.  
+};
+
 // Declare two classes derived from BaseClass.  
-class DerivedClass1 : public BaseClass  
-{  
-};  
-  
-class DerivedClass2 : private BaseClass  
-{  
-};  
-  
-int main()  
-{  
-}  
+class DerivedClass1 : public BaseClass
+{
+    void foo()
+    {
+        PublicFunc();
+        ProtectedFunc();
+        PrivateFunc(); // function is inaccessible
+    }
+};
+
+class DerivedClass2 : private BaseClass
+{
+    void foo()
+    {
+        PublicFunc();
+        ProtectedFunc();
+        PrivateFunc(); // function is inaccessible
+    }
+};
+
+int main()
+{
+    DerivedClass1 derived_class1;
+    DerivedClass2 derived_class2;
+    derived_class1.PublicFunc();
+    derived_class2.PublicFunc(); // function is inaccessible
+}
 ```  
   
  `DerivedClass1`에서는 `PublicFunc`가 공용 기본 클래스이므로 멤버 함수 `ProtectedFunc`가 공용 멤버이고 `BaseClass`가 보호된 멤버입니다. `PrivateFunc`는 `BaseClass` 전용이며 모든 파생 클래스에서 액세스할 수 없습니다.  
@@ -228,5 +244,6 @@ int main()
   
  그림에서 클래스 `VBase`에 선언된 이름은 언제나 클래스 `RightPath`를 통해 도달됩니다.  `RightPath`는 `VBase`를 공용 기본 클래스로 선언하지만, `LeftPath`는 `VBase`를 비공개로 선언합니다. 따라서, 오른쪽 경로를 보다 쉽게 액세스할 수 있습니다.  
   
-## <a name="see-also"></a>참고자료  
+
+## <a name="see-also"></a>참고 항목  
  [C++ 언어 참조](../cpp/cpp-language-reference.md)

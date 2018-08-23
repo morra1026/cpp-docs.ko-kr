@@ -43,15 +43,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0f77f9a33b0cf51ea54d16f89e86ea914640f627
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: c64d6cc460d068a5d0acf90795cb405a920b867f
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339600"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42573270"
 ---
 # <a name="irowsetchangeimpl-class"></a>IRowsetChangeImpl 클래스
-OLE DB 템플릿 구현의 합니다 [IRowsetChange](https://msdn.microsoft.com/library/ms715790.aspx) OLE DB 사양에 대 한 인터페이스입니다.  
+OLE DB 템플릿 구현의 합니다 [IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\)) OLE DB 사양에 대 한 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -114,7 +114,7 @@ class ATL_NO_VTABLE IRowsetChangeImpl : public BaseInterface
   
 -   6 장은 *OLE DB 프로그래머 참조*  
   
--   또한 참조 하는 방법을 `RUpdateRowset` 클래스 UpdatePV 샘플에서 사용 됩니다  
+-   참조 하는 방법을 `RUpdateRowset` 클래스에서 사용 됩니다 합니다 [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) 샘플.  
   
 ## <a name="deleterows"></a> Irowsetchangeimpl:: Deleterows
 행 집합에서 행을 삭제합니다.  
@@ -129,7 +129,7 @@ STDMETHOD (DeleteRows )(HCHAPTER /* hReserved */,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [irowsetchange:: Deleterows](https://msdn.microsoft.com/library/ms724362.aspx) 에 *OLE DB Programmer's Reference*합니다. 
+ 참조 [irowsetchange:: Deleterows](/previous-versions/windows/desktop/ms724362(v%3dvs.85)) 에 *OLE DB Programmer's Reference*합니다. 
 
 ## <a name="insertrow"></a> Irowsetchangeimpl:: Insertrow
 만들고 행 집합에 새 행을 초기화 합니다.  
@@ -144,7 +144,7 @@ STDMETHOD (InsertRow )(HCHAPTER /* hReserved */,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [irowsetchange:: Insertrow](https://msdn.microsoft.com/library/ms716921.aspx) 에 *OLE DB Programmer's Reference*합니다. 
+ 참조 [irowsetchange:: Insertrow](/previous-versions/windows/desktop/ms716921\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 
 
 ## <a name="setdata"></a> Irowsetchangeimpl:: Setdata
 하나 이상의 열에 데이터 값을 설정 합니다.  
@@ -158,7 +158,7 @@ STDMETHOD (SetData )(HROW hRow,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [irowsetchange:: Setdata](https://msdn.microsoft.com/library/ms721232.aspx) 에 *OLE DB Programmer's Reference*합니다. 
+ 참조 [irowsetchange:: Setdata](/previous-versions/windows/desktop/ms721232\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 
 
 ## <a name="flushdata"></a> Irowsetchangeimpl:: Flushdata
 데이터 저장소에 커밋하는 공급자가 재정의 되 면 합니다.  

@@ -412,12 +412,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 317e953d4c1a4e2637c71891fabde542ca751c8e
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 791b27e9ff5648a2616c92852a1d4f824d43127b
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339711"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42538370"
 ---
 # <a name="cdc-class"></a>CDC 클래스
 디바이스 컨텍스트 개체의 클래스를 정의합니다.  
@@ -2537,16 +2537,16 @@ DWORD GetCharacterPlacement(
  처리 하는 데 문자열 포인터입니다.  
   
  *nCount*  
- 문자열의 길이 지정합니다. ANSI 버전의 경우 바이트 수 이며 유니코드 함수에 대 한 단어 개수입니다. 자세한 내용은 [GetCharacterPlacement](http://msdn.microsoft.com/library/windows/desktop/dd144860\(v=vs.85\).aspx)합니다.  
+ 문자열의 길이 지정합니다. ANSI 버전의 경우 바이트 수 이며 유니코드 함수에 대 한 단어 개수입니다. 자세한 내용은 [GetCharacterPlacement](/windows/desktop/api/wingdi/nf-wingdi-getcharacterplacementa)합니다.  
   
  *nMaxExtent*  
  문자열 처리 됩니다 (논리 단위)에서 최대 범위를 지정 합니다. 처리 하는 경우이 범위를 기준으로 초과 하는 문자는 무시 됩니다. 모든 필요한 주문 또는 문자 모양 배열에 대 한 계산이 포함된 된 문자에만 적용 됩니다. 이 매개 변수는 GCP_MAXEXTENT 값에 지정 된 경우에 사용 합니다 *dwFlags* 매개 변수입니다. 입력된 문자열을 처리 하는 함수, 각 문자와 그 범위가 추가 됩니다 출력, 범위 내에서 다른 배열 하 고 총 범위가 아직 최대값을 초과 하지 않은 경우에. 제한에 도달 처리가 중지 됩니다.  
   
  lpResults  
- 에 대 한 포인터를 [GCP_Results](http://msdn.microsoft.com/library/windows/desktop/dd144842\(v=vs.85\).aspx) 함수의 결과 수신 하는 구조입니다.  
+ 에 대 한 포인터를 [GCP_Results](/windows/desktop/api/wingdi/ns-wingdi-taggcp_resultsa) 함수의 결과 수신 하는 구조입니다.  
   
  *dwFlags*  
- 필요한 배열에 문자열을 처리 하는 방법을 지정 합니다. 이 매개 변수 하나만 수 또는 더 많은 값에 나열 된를 *dwFlags* 섹션을 [GetCharacterPlacement](http://msdn.microsoft.com/library/windows/desktop/dd144860\(v=vs.85\).aspx) 항목.  
+ 필요한 배열에 문자열을 처리 하는 방법을 지정 합니다. 이 매개 변수 하나만 수 또는 더 많은 값에 나열 된를 *dwFlags* 섹션을 [GetCharacterPlacement](/windows/desktop/api/wingdi/nf-wingdi-getcharacterplacementa) 항목.  
   
  *str*  
  에 대 한 포인터를 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 프로세스 개체입니다.  
@@ -2557,7 +2557,7 @@ DWORD GetCharacterPlacement(
  함수가 실패하면 반환 값은 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 함수의 기능을 에뮬레이트합니다 [GetCharacterPlacement](http://msdn.microsoft.com/library/windows/desktop/dd144860\(v=vs.85\).aspx)Windows SDK에 설명 된 대로 합니다.  
+ 이 멤버 함수는 함수의 기능을 에뮬레이트합니다 [GetCharacterPlacement](/windows/desktop/api/wingdi/nf-wingdi-getcharacterplacementa)Windows SDK에 설명 된 대로 합니다.  
   
 ##  <a name="getcharabcwidths"></a>  CDC::GetCharABCWidths  
  현재 트루타입 글꼴에서 지정된 된 범위에 연속 된 문자 너비를 검색합니다.  

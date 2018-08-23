@@ -19,18 +19,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 218ade95dc3e1084e42ebceda8fbfcb83c16810b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 047f74a48b2c3f378b81868721b16ecdd22a6379
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33336071"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540114"
 ---
 # <a name="cpuid-cpuidex"></a>__cpuid, __cpuidex
 
 **Microsoft 전용**
 
-x86 및 `cpuid`에서 사용할 수 있는 [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] 명령을 생성합니다. 이 명령은 지원되는 기능 및 CPU 형식에 대한 정보의 프로세서를 쿼리합니다.
+생성 된 `cpuid` x86 및 x64에서 사용할 수 있는 명령입니다. 이 명령은 지원되는 기능 및 CPU 형식에 대한 정보의 프로세서를 쿼리합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -62,28 +62,28 @@ EAX, EBX, ECX 및 EDX에서 CPU의 지원되는 기능에 대해 반환되는 �
 
 |내장 함수|아키텍처|
 |---------------|------------------|
-|`__cpuid`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|
-|`__cpuidex`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|
+|`__cpuid`|x86, x64|
+|`__cpuidex`|x86, x64|
 
-**헤더 파일** \<. h >
+**헤더 파일** \<intrin.h >
 
 ## <a name="remarks"></a>설명
 
-지원 되는 기능 및 CPU 정보를 반환한이 내장 함수를 저장 된 `cpuid` 명령 *cpuInfo*, 배열을 32 비트 정수 4 개의 채워지는 EAX, EBX, ECX 및 EDX의 값으로 (에 등록 순서 대로)입니다. 반환 되는 정보로 전달 된 값에 따라 다른 의미를 갖기는 *function_id* 매개 변수입니다. 다양 한 값으로 반환 되는 정보 *function_id* 프로세서에 따라 다릅니다.
+지원 되는 기능 및 CPU 정보를 반환한이 내장 함수를 저장 합니다 `cpuid` 의 지침 *cpuInfo*, (에 네 개의 32 비트 정수 배열을 채워진 EAX, EBX, ECX 및 EDX의 값을 사용 하 여 등록 순서 대로)입니다. 반환 된 정보로 전달 된 값에 따라 다른 의미가 합니다 *function_id* 매개 변수입니다. 다양 한 값을 사용 하 여 반환 되는 정보 *function_id* 프로세서에 따라 다릅니다.
 
-`__cpuid` 내장 함수는 `cpuid` 명령을 호출하기 전에 ECX 레지스터를 지웁니다. `__cpuidex` 내장 ECX 레지스터의 값을 설정 *subfunction_id* 생성 하기 전에 `cpuid` 명령입니다. 따라서 프로세서에 대한 추가 정보를 수집할 수 있습니다.
+`__cpuid` 내장 함수는 `cpuid` 명령을 호출하기 전에 ECX 레지스터를 지웁니다. 합니다 `__cpuidex` 내장 함수를 ECX 레지스터의 값을 설정 *subfunction_id* 생성 하기 전에 `cpuid` 명령입니다. 따라서 프로세서에 대한 추가 정보를 수집할 수 있습니다.
 
-특정 매개 변수를 사용 하 여 및 Intel 프로세서에서 이러한 내장 함수에서 반환 된 값에 대 한 자세한 내용은 참조에 대 한 설명서는 `cpuid` 명령 [Intel 64 및 ia-32 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조](http://go.microsoft.com/fwlink/p/?LinkID=510021) 및 [Intel 아키텍처 명령 집합 확장명 프로그래밍 참조](http://go.microsoft.com/fwlink/p/?LinkID=506627)합니다. 에 대 한 "leaf" 및 "subleaf 라는" 사용 하는 Intel 설명서는 *function_id* 및 *subfunction_id* EAX 및 ECX에서 전달 된 매개 변수입니다.
+특정 매개 변수를 사용 하 여 및 Intel 프로세서에서 이러한 내장 함수가 반환 하는 값에 대 한 자세한 내용은 설명서를 참조 합니다 `cpuid` 의 지침에 [Intel 64 및 IA-32 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조](http://go.microsoft.com/fwlink/p/?LinkID=510021) 하 고 [Intel 아키텍처 명령 집합 확장 프로그래밍 참조](http://go.microsoft.com/fwlink/p/?LinkID=506627)합니다. 에 대 한 용어 "leaf" 및 "subleaf 라는" 사용 하는 Intel 설명서를 *function_id* 하 고 *subfunction_id* EAX 및 ECX에서 전달 된 매개 변수입니다.
 
-특정 매개 변수를 사용 하 여 및 AMD 프로세서에서 이러한 내장 함수에서 반환 된 값에 대 한 자세한 내용은 참조에 대 한 설명서는 `cpuid` AMD64 아키텍처 프로그래머용 설명서 볼륨 3에 있는 명령: 범용 및 시스템 지침 및 특정 프로세서 제품군에 대 한 수정 버전 가이드입니다. 이러한 문서 및 기타 정보에 대 한 링크를 참조 AMD [개발자 가이드, 설명서 및 ISA 문서](http://go.microsoft.com/fwlink/p/?LinkId=510023) 페이지. AMD 설명서 용어 "function number" 및 "subfunction number"를 사용 하 여에 대 한는 *function_id* 및 *subfunction_id* EAX 및 ECX에서 전달 된 매개 변수입니다.
+특정 매개 변수를 사용 하 여 및 AMD 프로세서에서 이러한 내장 함수가 반환 하는 값에 대 한 자세한 내용은 설명서를 참조 합니다 `cpuid` AMD64 아키텍처 프로그래머 설명서 볼륨 3에 있는 명령: 범용 및 시스템 지침 및 특정 프로세서 제품군에 대 한 수정 지침입니다. 이러한 문서 및 기타 정보에 대 한 링크에 대 한 참조는 AMD [개발자 가이드, 설명서 및 ISA 문서](http://go.microsoft.com/fwlink/p/?LinkId=510023) 페이지입니다. AMD 설명서에 대 한 사용 약관 "function number" 및 "subfunction number"를 사용 합니다 *function_id* 하 고 *subfunction_id* EAX 및 ECX에서 전달 된 매개 변수입니다.
 
-경우는 *function_id* 인수가 0 이면 *cpuInfo*가장 높은 [0] 반환 사용 가능한 확장 되지 않는 *function_id* 프로세서에 의해 지원 되는 값입니다. 프로세서 제조업체에서 인코딩됩니다 *cpuInfo*[1], *cpuInfo*[2], 및 *cpuInfo*[3].
+경우는 *function_id* 인수가 0 *cpuInfo*[0] 반환 된 가장 높은 사용 가능한 비확장 *function_id* 프로세서에 의해 지원 되는 값. 프로세서 제조업체에서 인코딩됩니다 *cpuInfo*[1] *cpuInfo*[2], 및 *cpuInfo*[3].
 
-지원 특정 명령 집합 확장명 및 CPU 기능에 대 한 인수를 인코딩하는 *cpuInfo* 높을수록에 반환 된 결과 *function_id* 값입니다. 자세한 내용은 위에 링크되어 있는 설명서와 다음 예제 코드를 참조하세요.
+인코딩된 특정 명령 집합 확장명 및 CPU 기능에 대 한 지원 합니다 *cpuInfo* 이상에 대 한 반환 된 결과 *function_id* 값입니다. 자세한 내용은 위에 링크되어 있는 설명서와 다음 예제 코드를 참조하세요.
 
-일부 프로세서에서는 확장 함수 CPUID 정보를 지원합니다. 이 지원 되는 경우 *function_id* 값 0x80000000 정보를 반환 하는 데 사용 될 수 있습니다. 허용 된 최대 의미 있는 값을 확인 하려면 설정 *function_id* 를 0x80000000입니다. 최대값 *function_id* 을 쓸 확장 된 기능에 대 한 지원 *cpuInfo*[0].
+일부 프로세서에서는 확장 함수 CPUID 정보를 지원합니다. 이 지원 되는 경우 *function_id* 0x80000000 값을 사용 하 여 정보를 반환할 수 있습니다. 의미 있는 허용 되는 최대값을 확인 하려면 설정 *function_id* 를 0x80000000입니다. 최대값 *function_id* 지원 확장된 함수를 쓸 *cpuInfo*[0]입니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 이 예제에서는 `__cpuid` 및 `__cpuidex` 내장 함수를 통해 제공되는 일부 정보를 보여 줍니다. 앱은 현재 프로세서가 지원하는 명령 집합 확장을 나열합니다. 출력에는 특정 프로세서에 대해 반환될 수 있는 결과가 표시됩니다.
 

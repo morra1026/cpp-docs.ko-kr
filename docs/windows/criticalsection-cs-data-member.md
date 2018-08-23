@@ -17,29 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d00370014767d7b29de5f1efa592fd999af3d0bb
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 2bf40202f225c015522a31c4e9b0482e37c7d0da
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39641394"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42599490"
 ---
 # <a name="criticalsectioncs-data-member"></a>CriticalSection::cs_ 데이터 멤버
-임계 영역 데이터 멤버를 선언합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-CRITICAL_SECTION cs_;  
-```  
-  
-## <a name="remarks"></a>설명  
- 이 데이터 멤버가 보호됩니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## <a name="see-also"></a>참고 항목  
- [CriticalSection 클래스](../windows/criticalsection-class.md)
+
+임계 영역 데이터 멤버를 선언합니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+CRITICAL_SECTION cs_;
+```
+
+## <a name="remarks"></a>설명
+
+이 데이터 멤버가 보호됩니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## <a name="see-also"></a>참고 항목
+
+[CriticalSection 클래스](../windows/criticalsection-class.md)

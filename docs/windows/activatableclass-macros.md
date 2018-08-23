@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: aa178126b3a749e3af67b9dae3711c0a5cf9f408
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 398149d0d65b0dcf4c914d8f35e4c6faf209173f
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39645788"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42606989"
 ---
 # <a name="activatableclass-macros"></a>ActivatableClass 매크로
 
@@ -54,7 +54,7 @@ ActivatableClassWithFactoryEx(
 ### <a name="parameters"></a>매개 변수
 
 *응용 프로그램 이름*  
-만들 클래스의 이름입니다.  
+만들 클래스의 이름입니다.
 
 *팩터리*  
 지정된 된 클래스의 인스턴스를 만든 팩터리입니다.
@@ -73,4 +73,5 @@ ActivatableClassWithFactoryEx(
 **네임스페이스:** Microsoft::WRL
 
 ## <a name="see-also"></a>참고 항목
+
 [Module 클래스](../windows/module-class.md)

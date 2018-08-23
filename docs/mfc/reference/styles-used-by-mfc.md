@@ -206,12 +206,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8c8868f83cb2e05a364b8977b014db5c02689c5
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 318951b5216513c20cdb21ac4a4fcfff9c3e0ac7
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37886065"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42543213"
 ---
 # <a name="styles-used-by-mfc"></a>MFC에서 사용하는 스타일  
   
@@ -232,15 +232,15 @@ ms.locfileid: "37886065"
 |BS_AUTOCHECKBOX|두 가지 상태의 확인란 단추를 만듭니다: BST_CHECKED 및 BST_UNCHECKED 합니다. 단추를 클릭 하면 소유자 창에 BN_CLICKED 알림을 보내고 단추의 상태를 변경 합니다. 기본적으로 관련된 텍스트가 확인란 오른쪽에 표시 됩니다. 확인란의 왼쪽에 텍스트를 표시 하려면 BS_LEFTTEXT 또는 BS_RIGHTBUTTON 스타일을 사용 합니다.|  
 |BS_AUTORADIOBUTTON|두 가지 상태의 라디오 단추를 만듭니다: BST_CHECKED 및 BST_UNCHECKED 합니다. 라디오 단추는 일반적으로 각 그룹에 최대 한 번에 하나의 선택된 옵션을 사용 하 여 그룹에 사용 됩니다. 단추를 클릭 하 BN_CLICKED 알림을 소유자 창에 전송, BST_CHECKED에 라디오 단추의 상태를 설정 하 고 BST_UNCHECKED 단추 그룹의 다른 모든 라디오 단추의 상태를 설정 합니다. 기본적으로 관련된 텍스트가 라디오 단추 오른쪽에 표시 됩니다. 라디오 단추의 왼쪽에 텍스트를 표시 하려면 BS_LEFTTEXT 또는 BS_RIGHTBUTTON 스타일을 사용 합니다.|  
 |BS_CHECKBOX|두 가지 상태의 확인란 단추를 만듭니다: BST_CHECKED 및 BST_UNCHECKED 합니다. 단추를 클릭 하면 소유자 창에 BN_CLICKED 알림을 보내지만 단추의 상태를 변경 하지 않습니다. 기본적으로 관련된 텍스트가 확인란 오른쪽에 표시 됩니다. 확인란의 왼쪽에 텍스트를 표시 하려면 BS_LEFTTEXT 또는 BS_RIGHTBUTTON 스타일을 사용 합니다.|  
-|BS_COMMANDLINK|명령 링크 단추를 만듭니다. 명령 링크 단추는 명령 단추 관련 [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] 주 텍스트와 고 메인 텍스트 아래 메모의 왼쪽에 녹색 화살표를 표시 하는 합니다. 사용 하 여 메모 텍스트를 설정할 수 있습니다 [CButton::SetNote](../../mfc/reference/cbutton-class.md#setnote)합니다.|  
-|BS_DEFCOMMANDLINK|명령 링크 단추를 만듭니다. 명령 링크 단추는 명령 단추 관련 [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] 주 텍스트와 고 메인 텍스트 아래 메모의 왼쪽에 녹색 화살표를 표시 하는 합니다. 사용 하 여 메모 텍스트를 설정할 수 있습니다 [CButton::SetNote](../../mfc/reference/cbutton-class.md#setnote)합니다. 대화 상자에 단추가 경우 ENTER 키를 눌러 BN_CLICKED에 알림을 보냅니다 대화 상자 단추에 입력된 포커스가 없는 경우에 합니다.|  
+|BS_COMMANDLINK|명령 링크 단추를 만듭니다. 명령 링크 단추에는 기본 텍스트와 고 메인 텍스트 아래 메모의 왼쪽에 녹색 화살표를 표시 하는 Windows Vista 관련 명령 단추가입니다. 사용 하 여 메모 텍스트를 설정할 수 있습니다 [CButton::SetNote](../../mfc/reference/cbutton-class.md#setnote)합니다.|  
+|BS_DEFCOMMANDLINK|명령 링크 단추를 만듭니다. 명령 링크 단추에는 기본 텍스트와 고 메인 텍스트 아래 메모의 왼쪽에 녹색 화살표를 표시 하는 Windows Vista 관련 명령 단추가입니다. 사용 하 여 메모 텍스트를 설정할 수 있습니다 [CButton::SetNote](../../mfc/reference/cbutton-class.md#setnote)합니다. 대화 상자에 단추가 경우 ENTER 키를 눌러 BN_CLICKED에 알림을 보냅니다 대화 상자 단추에 입력된 포커스가 없는 경우에 합니다.|  
 |BS_DEFPUSHBUTTON|두꺼운 검정 테두리가 있는 명령 단추를 만듭니다. 대화 상자에 단추가 경우 ENTER 키를 눌러 BN_CLICKED에 알림을 보냅니다 대화 상자 단추에 입력된 포커스가 없는 경우에 합니다.|  
-|BS_DEFSPLITBUTTON|분할 단추를 만듭니다. 분할 단추는 명령 단추 관련 [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] 드롭다운 화살표 옆의 단추가 들어 있는입니다. 단추를 클릭 하면 기본 명령이 실행 됩니다. 드롭다운 화살표를 클릭 하면 추가 명령이 메뉴에 표시 됩니다. 분할 단추가 있는 대화 상자에서 경우, ENTER 키를 눌러 BN_CLICKED에 알림을 보냅니다 대화 상자의 단추에 입력된 포커스가 없는 경우에|  
+|BS_DEFSPLITBUTTON|분할 단추를 만듭니다. 분할 단추에는 드롭다운 화살표 옆의 단추가 포함 된 Windows Vista 관련 명령 단추가입니다. 단추를 클릭 하면 기본 명령이 실행 됩니다. 드롭다운 화살표를 클릭 하면 추가 명령이 메뉴에 표시 됩니다. 분할 단추가 있는 대화 상자에서 경우, ENTER 키를 눌러 BN_CLICKED에 알림을 보냅니다 대화 상자의 단추에 입력된 포커스가 없는 경우에|  
 |BS_GROUPBOX|다른 단추를 그룹화 할 수 있습니다 사각형을 만듭니다. 이 스타일과 관련 된 텍스트 사각형의 왼쪽 위 모퉁이에 표시 됩니다.|  
 |BS_OWNERDRAW|소유자가 그린 단추를 만듭니다. 프레임 워크 호출을 `DrawItem` 메서드 버튼의 시각적 측면이 변경 되었습니다. 사용 하는 경우이 스타일을 설정 해야 합니다는 `CBitmapButton` 클래스입니다.|  
 |BS_PUSHBUTTON|사용자 단추를 클릭할 때 BN_CLICKED 알림이 소유자 창에 보내는 명령 단추를 만듭니다.|  
 |BS_RADIOBUTTON|두 가지 상태의 라디오 단추를 만듭니다: BST_CHECKED 및 BST_UNCHECKED 합니다. 라디오 단추는 일반적으로 각 그룹에 최대 한 번에 하나의 선택된 옵션을 사용 하 여 그룹에 사용 됩니다. 단추를 클릭 하면 소유자 창에 BN_CLICKED 알림을 보내지만 그룹에 있는 단추의 상태가 자동으로 변경 되지 않습니다. 기본적으로 관련된 텍스트가 라디오 단추 오른쪽에 표시 됩니다. 라디오 단추의 왼쪽에 텍스트를 표시 하려면 BS_LEFTTEXT 또는 BS_RIGHTBUTTON 스타일을 사용 합니다.|  
-|BS_SPLITBUTTON|분할 단추를 만듭니다. 분할 단추는 명령 단추 관련 [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] 드롭다운 화살표 옆의 단추가 들어 있는입니다. 단추를 클릭 하면 기본 명령이 실행 됩니다. 드롭다운 화살표를 클릭 하면 추가 명령이 메뉴에 표시 됩니다.|  
+|BS_SPLITBUTTON|분할 단추를 만듭니다. 분할 단추에는 드롭다운 화살표 옆의 단추가 포함 된 Windows Vista 관련 명령 단추가입니다. 단추를 클릭 하면 기본 명령이 실행 됩니다. 드롭다운 화살표를 클릭 하면 추가 명령이 메뉴에 표시 됩니다.|  
 |BS_USERBUTTON|사용 되지는 않지만, 16 비트 버전 Windows의 호환성을 제공 합니다. Win32 기반 응용 프로그램 BS_OWNERDRAW를 대신 사용 해야 합니다.|  
   
 ### <a name="radio-button-and-check-box-styles"></a>라디오 단추 및 확인란 스타일  
@@ -498,7 +498,7 @@ ms.locfileid: "37886065"
 |WS_EX_CONTEXTHELP|창의 제목 표시줄에 물음표를 포함합니다. 사용자가 물음표를 클릭하면 커서가 포인터가 있는 물음표로 변경됩니다. 자식 창을 클릭 한 다음, 하면 자식이 WM_HELP 메시지를 받습니다.|  
 |WS_EX_CONTROLPARENT|TAB 키를 사용 하 여 창의 자식 창 사이 이동할 수 있습니다.|  
 |WS_EX_DLGMODALFRAME|(선택 사항) 제목 표시줄에서 WS_CAPTION 스타일 플래그를 지정 하는 경우를 사용 하 여 만들 수 있는 이중 테두리가 있는 창을 지정 합니다 *dwStyle* 매개 변수입니다.|  
-|WS_EX_LAYERED|창이 [계층화 된 창](http://msdn.microsoft.com/library/ms632599.aspx#layered)합니다. 창에 있으면이 스타일을 사용할 수 없습니다는 [클래스 스타일](http://msdn.microsoft.com/library/ms633574.aspx#class_styles) CS_OWNDC 또는 있는 합니다. 그러나 [!INCLUDE[win8_first](../../mfc/reference/includes/win8_first_md.md)] 않습니다 WS_EX_LAYERED 스타일 자식 창에 있는 이전 Windows 버전 지원 최상위 창에 대해서만 지원 합니다.|  
+|WS_EX_LAYERED|창이 [계층화 된 창](http://msdn.microsoft.com/library/ms632599.aspx#layered)합니다. 창에 있으면이 스타일을 사용할 수 없습니다는 [클래스 스타일](http://msdn.microsoft.com/library/ms633574.aspx#class_styles) CS_OWNDC 또는 있는 합니다. 그러나 Microsoft Windows 8 않습니다 WS_EX_LAYERED 스타일 자식 창에 있는 이전 Windows 버전 지원 최상위 창에 대해서만을 지원 합니다.|  
 |WS_EX_LEFT|창 제네릭 왼쪽 맞춤 속성을 제공합니다. 이 값이 기본값입니다.|  
 |WS_EX_LEFTSCROLLBAR|클라이언트 영역의 왼쪽에 세로 스크롤 막대를 배치합니다.|  
 |WS_EX_LTRREADING|왼쪽에서 오른쪽을 사용 하 여 창 텍스트를 표시 읽기 순서 속성입니다. 이 값이 기본값입니다.|  

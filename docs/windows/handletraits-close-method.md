@@ -17,35 +17,40 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 561862427238a86dbb23ee05044c1d01558abab5
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: b1b36d4feea61e9a79978cc86dca29a7ad14846a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39647601"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42594038"
 ---
 # <a name="handletraitsclose-method"></a>HANDLETraits::Close 메서드
-지정된 된 핸들을 닫습니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-inline static bool Close(  
-   _In_ Type h  
-);  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *h*  
- 핸들 닫기입니다.  
-  
-## <a name="return-value"></a>반환 값  
- **true** 경우 처리할 *h* 이 고, 그렇지 않으면 닫은 **false**합니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## <a name="see-also"></a>참고 항목  
- [HANDLETraits 구조체](../windows/handletraits-structure.md)
+
+지정된 된 핸들을 닫습니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+inline static bool Close(
+   _In_ Type h
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*h*  
+핸들 닫기입니다.
+
+## <a name="return-value"></a>반환 값
+
+**true** 경우 처리할 *h* 이 고, 그렇지 않으면 닫은 **false**합니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## <a name="see-also"></a>참고 항목
+
+[HANDLETraits 구조체](../windows/handletraits-structure.md)

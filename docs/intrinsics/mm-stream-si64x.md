@@ -17,18 +17,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ea6b9bdc57765b15128ebcc6f9a17bba2612e29
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0385f2812c58b65102780780a1b7a548b2b08429
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33328791"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42545871"
 ---
 # <a name="mmstreamsi64x"></a>_mm_stream_si64x  
   
 **Microsoft 전용**  
   
- MOVNTI 명령을 생성합니다. 에 데이터를 기록 `Source` 로 지정 된 메모리 위치에 `Dest`, 오염 캐시 하지 않고 있습니다.  
+ MOVNTI 명령을 생성합니다. 데이터를 씁니다 `Source` 으로 지정 된 메모리 위치를 `Dest`, 캐시를 오염 시 키 지 않고 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,15 +51,15 @@ void _mm_stream_si64x(
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`_mm_stream_si64x`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_mm_stream_si64x`|X64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
   
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```C  
 // _mm_stream_si64x.c  

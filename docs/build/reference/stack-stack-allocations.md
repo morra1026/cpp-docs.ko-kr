@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8ee3fac90bcbb972278d9b3e2cf7cebd62fedf4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 29ed2efa73d3ec1014bf0a65e7b4b1b1b85cf879
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377878"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572879"
 ---
 # <a name="stack-stack-allocations"></a>/STACK(스택 할당)
 ```  
@@ -35,19 +35,19 @@ ms.locfileid: "32377878"
 ```  
   
 ## <a name="remarks"></a>설명  
- /STACK 옵션 바이트의 스택 크기를 설정합니다. .Exe 파일을 작성 하는 경우에이 옵션을 사용 합니다.  
+ /STACK 옵션 스택의 크기를 바이트 단위로 설정 합니다. .Exe 파일을 작성 하는 경우에이 옵션을 사용 합니다.  
   
- `reserve` 가상 메모리에서 총 스택 할당을 지정 하는 값입니다. ARM, x86 및 [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] 컴퓨터의 경우 기본 스택 크기는 1MB입니다.  
+ `reserve` 값 가상 메모리의 총 스택 할당을 지정 합니다. 에 대 한 ARM, x86 및 x64 컴퓨터를 기본 스택 크기는 1MB입니다.  
   
- `commit` 운영 체제에 의해 해석 될 수 있습니다. Windows WindowsRT에서는 한 번에 할당할 실제 메모리의 양을 지정합니다. 커밋된 가상 메모리 공간을 예약 하는 페이징 파일에서 발생 합니다. 응용 프로그램에 더 많은 스택 공간이 필요할 때 `commit` 값이 크면 시간을 줄일 수 있지만 메모리 요구 사항이 늘어나고 시작 시간이 오래 걸릴 수 있습니다. ARM, x86 및 [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] 컴퓨터의 경우 기본 커밋 값은 4KB입니다.  
+ `commit` 운영 체제에 의해 해석 될 수 있습니다. Windows WindowsRT에서는 한 번에 할당할 실제 메모리의 양을 지정합니다. 커밋된 가상 메모리 페이징 파일에 예약 될 공간을 하면 됩니다. 응용 프로그램에 더 많은 스택 공간이 필요할 때 `commit` 값이 크면 시간을 줄일 수 있지만 메모리 요구 사항이 늘어나고 시작 시간이 오래 걸릴 수 있습니다. ARM, x86 및 x64 컴퓨터를 기본 커밋 값은 4KB입니다.  
   
  10진수 또는 C 언어 표기법으로 `reserve` 및 `commit` 값을 지정합니다.  
   
- 또 다른 방법은 스택 크기를 설정 하는 [STACKSIZE](../../build/reference/stacksize.md) 모듈 정의 (.def) 파일의 문입니다. **STACKSIZE** 스택 할당을 재정의 합니다. (/stack) 모두 지정 된 옵션입니다. .Exe 파일을 사용 하 여 빌드한 후에 스택 크기를 변경할 수는 [EDITBIN](../../build/reference/editbin-reference.md) 도구입니다.  
+ 스택 크기를 설정 하는 또 다른 방법은 된 합니다 [STACKSIZE](../../build/reference/stacksize.md) 모듈 정의 (.def) 파일의 문입니다. **STACKSIZE** 스택 할당을 재정의 합니다. (/stack) 모두 지정 된 옵션입니다. .Exe 파일을 사용 하 여 빌드된 후에 스택 크기를 변경할 수는 [EDITBIN](../../build/reference/editbin-reference.md) 도구입니다.  
   
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면  
   
-1.  프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.  
+1.  프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.  
   
 2.  선택 된 **링커** 폴더입니다.  
   

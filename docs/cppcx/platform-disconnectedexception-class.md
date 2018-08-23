@@ -12,16 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - Platform::DisconnectedException
 ms.assetid: c25e0d64-5bff-4c21-88e5-c4ec2776fa7f
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b756ef02082eb80cd8c9bd6b118ee9abca47236e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a84d07db2e3fe48d981641d2803352d90268d93a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33087491"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42606309"
 ---
 # <a name="platformdisconnectedexception-class"></a>Platform::DisconnectedException 클래스
 COM 프록시 개체가 더 이상 존재하지 않는 COM 서버를 참조하려고 할 때 throw됩니다.  

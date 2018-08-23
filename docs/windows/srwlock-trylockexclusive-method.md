@@ -17,37 +17,42 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 674a7dced019926e6ea07b41641eb42db70c45a0
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 2ec8275b1db692410677276e762f79ccf23548cc
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40013482"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42606233"
 ---
 # <a name="srwlocktrylockexclusive-method"></a>SRWLock::TryLockExclusive 메서드
-획득 하 려는 **SRWLock** 개체의 현재 또는 지정 된 단독 모드 **SRWLock** 개체입니다. 호출이 성공 하면 호출 스레드는 잠금 소유권을 받습니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-SyncLockExclusive TryLockExclusive();  
-  
-static SyncLockExclusive TryLockExclusive(  
-   _In_ SRWLOCK* lock  
-);  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *lock*  
- 에 대 한 포인터를 **SRWLock** 개체입니다.  
-  
-## <a name="return-value"></a>반환 값  
- 성공한 경우는 **SRWLock** 개체 단독 모드 및 호출 스레드는 잠금 소유권을 받습니다. 그렇지 않은 경우는 **SRWLock** 개체 상태가 올바르지 않습니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## <a name="see-also"></a>참고 항목  
- [SRWLock 클래스](../windows/srwlock-class.md)
+
+획득 하 려는 **SRWLock** 개체의 현재 또는 지정 된 단독 모드 **SRWLock** 개체입니다. 호출이 성공 하면 호출 스레드는 잠금 소유권을 받습니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+SyncLockExclusive TryLockExclusive();
+
+static SyncLockExclusive TryLockExclusive(
+   _In_ SRWLOCK* lock
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*lock*  
+에 대 한 포인터를 **SRWLock** 개체입니다.
+
+## <a name="return-value"></a>반환 값
+
+성공한 경우는 **SRWLock** 개체 단독 모드 및 호출 스레드는 잠금 소유권을 받습니다. 그렇지 않은 경우는 **SRWLock** 개체 상태가 올바르지 않습니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## <a name="see-also"></a>참고 항목
+
+[SRWLock 클래스](../windows/srwlock-class.md)

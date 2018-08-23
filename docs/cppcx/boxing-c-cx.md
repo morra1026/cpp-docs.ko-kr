@@ -5,16 +5,16 @@ ms.date: 12/30/2016
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: edfb12fa-2a9b-42f6-bdac-d4d76cb8274e
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e47313f65c4129bbc6fbf0a7bfbf698eb092f9f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e70b908bddbf7034e1d60f16cb0e492c0a707586
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33086501"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42598882"
 ---
 # <a name="boxing-ccx"></a>Boxing(C++/CX)
 *boxing* 은 [Windows::Foundation::DateTime](http://msdn.microsoft.com/library/windows/apps/windows.foundation.datetime.aspx)과 같은 값 형식 변수 또는 `int`와 같은 기본 스칼라 형식이 [Platform::Object^](../cppcx/platform-object-class.md) 을 해당 입력 형식으로 사용하는 메서드에 전달될 때 해당 변수를 ref 클래스에 래핑합니다.  
@@ -24,8 +24,8 @@ ms.locfileid: "33086501"
   
  [!code-cpp[cx_boxing#01](../cppcx/codesnippet/CPP/cx_boxing/class1.cpp#01)]  
   
-### <a name="using-platformiboxt-to-support-nullable-value-types"></a>Platform::를 사용 하 여\<T > nullable 값 형식을 지원 하기 위해  
- C# 및 Visual Basic에서는 null 허용 값 형식의 개념을 지원합니다. C + + /CX에서는에서는 `Platform::IBox<T>` nullable 값 형식 매개 변수를 지 원하는 공용 메서드를 표시 하는 형식입니다. 다음 예제에서는 C + + /cli CX 공용 메서드를 C# 호출자가 인수 중 하나에 대해 null을 전달 하는 경우 null을 반환 합니다.  
+### <a name="using-platformiboxt-to-support-nullable-value-types"></a>Platform:: ibox를 사용 하 여\<T > nullable 값 형식을 지원 하기 위해  
+ C# 및 Visual Basic에서는 null 허용 값 형식의 개념을 지원합니다. C + + /CX에서는 사용할 수는 `Platform::IBox<T>` nullable 값 형식 매개 변수를 지 원하는 공용 메서드를 노출 하는 형식입니다. 다음 예제에서는 C + + /cli는 C# 호출자가 인수 중 하나에 대해 null을 전달 하는 경우 null을 반환 하는 CX 공용 메서드.  
   
  [!code-cpp[cx_boxing#02](../cppcx/codesnippet/CPP/cx_boxing/class1.h#02)]  
   

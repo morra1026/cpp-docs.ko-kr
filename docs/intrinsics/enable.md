@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86e6c8ba9fc1b4dff9b1ad947a770ae901937611
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3ca265bc8a6adc3da747e94ca67cd57749687f21
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33330947"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42544516"
 ---
 # <a name="enable"></a>_enable
 **Microsoft 전용**  
@@ -41,9 +41,9 @@ void _enable(void);
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`_enable`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_enable`|x86, ARM, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
  `_enable`은 인터럽트 플래그를 설정하도록 프로세서에 명령합니다. x86 시스템에서 이 함수는 인터럽트 플래그 설정(`sti`) 명령을 생성합니다.  

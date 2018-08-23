@@ -11,16 +11,16 @@ dev_langs:
 helpviewer_keywords:
 - InputIterator Class
 ms.assetid: ef72eea4-32a9-42b9-8119-ce87dbdcd3be
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fbd80f649b27bcb3af720871d6d1378f5fe220c8
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 303b93f986777c249062236efd977f7ac387e6e3
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208486"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42598431"
 ---
 # <a name="platformcollectionsinputiterator-class"></a>Platform::Collections::InputIterator 클래스
 Windows Runtime에서 파생 된 컬렉션에 대 한 표준 템플릿 라이브러리 InputIterator를 제공 합니다.  

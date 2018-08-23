@@ -13,16 +13,16 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 2d09c7ec-0f16-458e-83ed-7225a1b9221e
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 646a09dd46e123f0bc7eadc178e3741367e908ed
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 56f7c6b2c7699d7be96309a6ab7f060e48838475
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33097512"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42609665"
 ---
 # <a name="platformstringreference-class"></a>Platform::StringReference 클래스
 최저의 복사 작업으로 `Platform::String^` 입력 매개 변수의 문자열 데이터를 다른 메서드로 전달하는 데 사용할 수 있는 최적화 형식입니다.  
@@ -149,7 +149,7 @@ StringReference& operator=(const ::default::char16* __strArg);
  `StringReference` 형식의 개체에 대한 참조입니다.  
   
 ### <a name="remarks"></a>설명  
- 때문에 `StringReference` 표준 c + + 클래스 및 ref 클래스가 아닌 이면에 표시 되지 않습니다는 **개체 브라우저**합니다.  
+ 때문에 `StringReference` 표준 c + + 클래스 및 ref 클래스가 아닌 이면에 나타나지 않으면 합니다 **개체 브라우저**합니다.  
   
 
 
@@ -195,7 +195,7 @@ StringReference(const ::default::char16* __strArg, size_t __lenArg)
  `__strArg`의 요소 수입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 생성자의 첫 번째 버전은 기본 생성자입니다. 두 번째 버전은 `StringReference` 매개 변수로 지정된 개체에서 새 `__fstrArg` 인스턴스 클래스를 초기화합니다. 세 번째와 네 번째 오버 로드를 초기화할 새 `StringReference` char16 값의 배열에서 인스턴스. char16은 16비트 유니코드 텍스트 문자를 나타냅니다.  
+ 이 생성자의 첫 번째 버전은 기본 생성자입니다. 두 번째 버전은 `StringReference` 매개 변수로 지정된 개체에서 새 `__fstrArg` 인스턴스 클래스를 초기화합니다. 세 번째와 네 번째 오버 로드 초기화 새 `StringReference` char16 값의 배열에서 인스턴스. char16은 16비트 유니코드 텍스트 문자를 나타냅니다.  
   
 
 

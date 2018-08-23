@@ -16,19 +16,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Agile
 ms.assetid: e34459a9-c429-4c79-97fd-030c43ca4155
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d7d2299dd1395e93f4cd88cbeaec6c0b9467308
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f552327156d9fc1abe5e921f3b59b1fb4132ff3d
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33092433"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596604"
 ---
 # <a name="platformagile-class"></a>Platform::Agile 클래스
-MashalingBehavior=Standard를 agile 개체로 나타냅니다. 이를 통해 런타임 스레딩 예외가 발생할 가능성이 매우 감소합니다. `Agile<T>` 를 사용하여 agile이 아닌 개체가 같거나 다른 스레드를 호출하거나 해당 스레드에서 호출될 수 있습니다. 자세한 내용은 참조 [스레딩 및 마샬링](../cppcx/threading-and-marshaling-c-cx.md)합니다.  
+MashalingBehavior=Standard를 agile 개체로 나타냅니다. 이를 통해 런타임 스레딩 예외가 발생할 가능성이 매우 감소합니다. `Agile<T>` 를 사용하여 agile이 아닌 개체가 같거나 다른 스레드를 호출하거나 해당 스레드에서 호출될 수 있습니다. 자세한 내용은 [스레딩 및 마샬링](../cppcx/threading-and-marshaling-c-cx.md)합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -139,7 +139,7 @@ Agile 클래스의 현재 인스턴스를 제거합니다.
 ### <a name="return-value"></a>반환 값  
  현재 Agile 개체가 나타내는 개체에 대한 핸들입니다.  
   
- 반환 값의 형식은 실제로 알려지지 않은 내부 형식입니다. 반환 값을 포함 하는 편리한 방법을 지정 하는 것으로 선언 된 변수에 **자동** 형식 추론 키워드입니다. 예를 들어, `auto x = myAgileTvariable->Get();`을 입력합니다.  
+ 반환 값의 형식은 실제로 알려지지 않은 내부 형식입니다. 반환 값을 저장 하는 편리한 방법을 사용 하 여 선언 된 변수에 할당 하는 것은 **자동** 형식 추론 키워드입니다. 예를 들어, `auto x = myAgileTvariable->Get();`을 입력합니다.  
   
 ## <a name="getaddressof"></a>  Agile:: getaddressof 메서드
 현재 Agile 개체를 다시 초기화하고 핸들 주소를 `T`형식 개체에 반환합니다.  
@@ -160,7 +160,7 @@ throw();
  형식의 개체에 대 한 핸들의 주소 `T`합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 작업에는 형식의 개체의 현재 표현 해제 `T`; 있는 경우, Agile 개체의 데이터 멤버를 다시 초기화 하 고 현재 스레딩 컨텍스트; 나타낼 수 있는 개체 핸들 변수의 주소를 반환 합니다는 agile이 아닌 개체입니다. 할당 연산자를 사용 하 여 개체를 나타내는 클래스를 Agile 클래스 인스턴스를 발생 ([agile:: operator =](#operator-assign)) 개체를 Agile 클래스 인스턴스에 할당 합니다.  
+ 이 작업 해제 형식의 개체의 현재 표현이 `T`있으면, Agile 개체의 데이터 멤버를 다시 초기화 하 고, 현재 스레딩 컨텍스트를 획득 하 고, 나타낼 수 있는 개체 핸들 변수의 주소를 반환을 agile이 아닌 개체입니다. 개체를 나타내는 Agile 클래스 인스턴스가 시킬 대입 연산자를 사용 하 여 ([agile:: operator =](#operator-assign)) 개체를 Agile 클래스 인스턴스에 할당 합니다.  
 
 ## <a name="getaddressofforinout"></a>  Agile::GetAddressOfForInOut Method
 현재 Agile 개체가 나타내는 개체에 대한 핸들의 주소를 반환합니다.  
@@ -211,7 +211,7 @@ const throw();
 ### <a name="return-value"></a>반환 값  
  현재 Agile 개체가 나타내는 개체에 대한 핸들입니다.  
   
- 이 연산자는 실제로 알려지지 않은 내부 형식을 반환합니다. 반환 값을 포함 하는 편리한 방법을 지정 하는 것으로 선언 된 변수에 **자동** 형식 추론 키워드입니다.  
+ 이 연산자는 실제로 알려지지 않은 내부 형식을 반환합니다. 반환 값을 저장 하는 편리한 방법을 사용 하 여 선언 된 변수에 할당 하는 것은 **자동** 형식 추론 키워드입니다.  
 
 ## <a name="operator-assign"></a>  Agile:: operator = 연산자
 지정한 개체를 현재 Agile 개체에 할당합니다.  

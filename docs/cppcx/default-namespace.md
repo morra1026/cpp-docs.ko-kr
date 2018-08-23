@@ -7,16 +7,16 @@ ms.topic: language-reference
 dev_langs:
 - C++
 ms.assetid: 4712e9dc-57ba-43cc-811e-022e1dae4de8
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f4386d3636744a673a10dd9530fd3836fdb78e6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 87510fe7eee6a8027e5375f82f2b6ce7bf74ec3c
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33086950"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42589736"
 ---
 # <a name="default-namespace"></a>default 네임스페이스
 `default` 네임 스페이스 범위에서 C + 지원 되는 기본 제공 형식 + CX 합니다.  
@@ -39,7 +39,7 @@ namespace default;
   
 ### <a name="built-in-types"></a>기본 제공 형식  
   
-|이름|설명|  
+|name|설명|  
 |----------|-----------------|  
 |`char16`|유니코드(UTF-16) 코드 포인트를 나타내는 숫자가 아닌 16비트 값입니다.|  
 |`float32`|32비트 IEEE 754 부동 소수점 숫자입니다.|  

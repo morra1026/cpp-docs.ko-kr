@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26e2984a3b52152b54d5f35ae72b8f3fdeaff474
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 686dbe540301508bd95563b7eafc466a5821a9f6
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39209224"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572984"
 ---
 # <a name="ccomptrbase-class"></a>CComPtrBase 클래스
 이 클래스는 COM 기반 메모리 루틴을 사용 하 여 스마트 포인터 클래스에 대 한 기반을 제공 합니다.  
@@ -173,10 +173,10 @@ HRESULT CoCreateInstance(
  데이터 및 개체를 만드는 데 사용할 코드와 연관 된 CLSID입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 실패 시 또는 REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING 성공 하면 E_NOINTERFACE S_OK를 반환합니다. 참조 [CoCreateClassInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615) 하 고 [CLSIDFromProgID](http://msdn.microsoft.com/library/windows/desktop/ms688386) 이러한 오류에 대 한 합니다.  
+ 실패 시 또는 REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING 성공 하면 E_NOINTERFACE S_OK를 반환합니다. 참조 [CoCreateClassInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) 하 고 [CLSIDFromProgID](http://msdn.microsoft.com/library/windows/desktop/ms688386) 이러한 오류에 대 한 합니다.  
   
 ### <a name="remarks"></a>설명  
- 메서드의 첫 번째 형태를 호출 하면 [CLSIDFromProgID](http://msdn.microsoft.com/library/windows/desktop/ms688386) CLSID를 복구 하는 데 사용 됩니다. 두 형태 모두 다음 호출 [CoCreateClassInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615)합니다.  
+ 메서드의 첫 번째 형태를 호출 하면 [CLSIDFromProgID](http://msdn.microsoft.com/library/windows/desktop/ms688386) CLSID를 복구 하는 데 사용 됩니다. 두 형태 모두 다음 호출 [CoCreateClassInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)합니다.  
   
  디버그 빌드에서 어설션 오류가 발생 하는 경우 [CComPtrBase::p](#p) NULL와 같지 않습니다.  
   

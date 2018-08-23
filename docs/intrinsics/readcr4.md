@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca0c8290aad18fcad22dc05175f4e3d0ee329b2b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 76462562dcf2567ec9532f3f32a721ba1e657e32
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33322587"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539893"
 ---
 # <a name="readcr4"></a>__readcr4
 **Microsoft 전용**  
@@ -35,15 +35,15 @@ unsigned __int64 __readcr4(void);
 ```  
   
 ## <a name="return-value"></a>반환 값  
- CR4 레지스터의 값입니다.  
+ CR4 레지스터 값입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__readcr4`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__readcr4`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
  이 내장 함수는 커널 모드에서만 사용할 수 있으며 루틴은 내장 함수로만 사용할 수 있습니다.  

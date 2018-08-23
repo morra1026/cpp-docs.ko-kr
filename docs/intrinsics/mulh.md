@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae312de1311bfe068ac48838f2720bd8a2a83e53
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6bf4cc0ce245b6b80165ced5a9649586f9214639
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33339542"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539324"
 ---
 # <a name="mulh"></a>__mulh
 **Microsoft 전용**  
   
- 64 비트 부호 있는 두 정수의 곱의 상위 64 비트를 반환합니다.  
+ 두 64 비트 부호 있는 정수 곱의 상위 64 비트를 반환합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,14 +51,14 @@ __int64 __mulh(
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__mulh`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__mulh`|X64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 // mulh.cpp  

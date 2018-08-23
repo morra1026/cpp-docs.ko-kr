@@ -37,15 +37,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f1f726459e72d57aa8e855df4f4f3ec5d566f687
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: d07c0e64e969e599393a657d4c41a8dd544901c9
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337075"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572095"
 ---
 # <a name="irowsetinfoimpl-class"></a>IRowsetInfoImpl 클래스
-에 대 한 구현을 제공 합니다 [IRowsetInfo](https://msdn.microsoft.com/library/ms724541.aspx) 인터페이스입니다.  
+에 대 한 구현을 제공 합니다 [IRowsetInfo](/previous-versions/windows/desktop/ms724541\(v=vs.85\)) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -92,7 +92,7 @@ STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [irowsetinfo:: Getproperties](https://msdn.microsoft.com/library/ms719611.aspx) 에 *OLE DB Programmer's Reference*합니다. 
+ 참조 [irowsetinfo:: Getproperties](/previous-versions/windows/desktop/ms719611\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 
 
 ## <a name="getreferencedrowset"></a> Irowsetinfoimpl:: Getreferencedrowset
 책갈피 적용 되는 행 집합에 대 한 인터페이스 포인터를 반환 합니다.  
@@ -106,7 +106,7 @@ STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [IRowsetInfo::GetReferencedRowset](https://msdn.microsoft.com/library/ms721145.aspx) 에 *OLE DB Programmer's Reference*합니다. 합니다 *iOrdinal* 매개 변수는 책갈피 열 이어야 합니다. 
+ 참조 [IRowsetInfo::GetReferencedRowset](/previous-versions/windows/desktop/ms721145\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 합니다 *iOrdinal* 매개 변수는 책갈피 열 이어야 합니다. 
 
 ## <a name="getspecification"></a> Irowsetinfoimpl:: Getspecification
 이 행 집합을 만든 개체 (명령 또는 세션)에 대 한 인터페이스 포인터를 반환 합니다.  
@@ -119,7 +119,7 @@ STDMETHOD (GetSpecification )(REFIID riid,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [IRowsetInfo::GetSpecification](https://msdn.microsoft.com/library/ms716746.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [IRowsetInfo::GetSpecification](/previous-versions/windows/desktop/ms716746\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드를 사용 하 여 [IGetDataSourceImpl](../../data/oledb/igetdatasourceimpl-class.md) 데이터 원본 개체에서 속성을 검색할 수 있습니다.  

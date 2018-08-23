@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c45a9ab0e709366d5f391e574c9b8b3a5db4a53a
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 5cc725907c93955777cd09b5745651855892e4cd
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881729"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42572894"
 ---
 # <a name="cwin32heap-class"></a>CWin32Heap 클래스
 이 클래스는 구현 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) Win32 힙 할당 함수를 사용 합니다.  
@@ -162,7 +162,7 @@ CWin32Heap(
   
  매개 변수 HEAP_NO_SERIALIZE 힙 함수를 할당 하 고 성능에 따라 증가 사용 하 여 메모리를 해제 하는 경우 상호 배제 사용 되지 않습니다 지정 합니다.  
   
- 세 번째 매개 변수의 기본값이 0으로 지정되어, 필요에 따라 힙을 증가시킬 수 있습니다. 참조 [HeapCreate](http://msdn.microsoft.com/library/windows/desktop/aa366599\(v=vs.85\).aspx) 메모리 크기 및 플래그에 대 한 설명은 합니다.  
+ 세 번째 매개 변수의 기본값이 0으로 지정되어, 필요에 따라 힙을 증가시킬 수 있습니다. 참조 [HeapCreate](/windows/desktop/api/heapapi/nf-heapapi-heapcreate) 메모리 크기 및 플래그에 대 한 설명은 합니다.  
   
 ##  <a name="dtor"></a>  CWin32Heap:: ~ CWin32Heap  
  소멸자입니다.  

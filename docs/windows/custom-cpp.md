@@ -17,55 +17,59 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2c0f4f04adb9ddc847b1c22485d10512a9d684d0
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: cb5a3ebbf3ecf1454745d507fc2f2b6f792768ac
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39651897"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42600423"
 ---
 # <a name="custom-c"></a>custom(C++)
-형식 라이브러리의 개체에 대 한 메타 데이터를 정의합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-[ custom(  
-   uuid,   
-   value  
-) ];  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *uuid*  
- 고유한 ID입니다.  
-  
- *값*  
- Variant로 입력할 수 있는 값입니다.  
-  
-## <a name="remarks"></a>설명  
- 합니다 **사용자 지정** c + + 특성 정보를 형식 라이브러리에 배치 하면 됩니다. 형식 라이브러리에서 사용자 지정 값을 읽는 도구를 해야 합니다.  
-  
- 합니다 **사용자 지정** 특성이 동일한 기능을 합니다 [사용자 지정](http://msdn.microsoft.com/library/windows/desktop/aa366766) MIDL 특성입니다.  
-  
-## <a name="requirements"></a>요구 사항  
-  
-### <a name="attribute-context"></a>특성 컨텍스트  
-  
-|||  
-|-|-|  
-|**적용 대상**|비-COM **인터페이스**, **클래스**, **열거형**s `idl_module` 인터페이스 매개 변수, 메서드, 인터페이스 멤버 **typedef**s, **union**개이면 **구조체**s|  
-|**반복 가능**|예|  
-|**필수 특성**|**coclass** (클래스에 사용) 하는 경우|  
-|**잘못된 특성**|없음|  
-  
- 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.  
-  
-## <a name="see-also"></a>참고 항목  
- [IDL 특성](../windows/idl-attributes.md)   
- [독립 실행형 특성](../windows/stand-alone-attributes.md)   
- [Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)   
- [매개 변수 특성](../windows/parameter-attributes.md)   
- [메서드 특성](../windows/method-attributes.md)   
- [클래스 특성](../windows/class-attributes.md)   
- [인터페이스 특성](../windows/interface-attributes.md)   
+
+형식 라이브러리의 개체에 대 한 메타 데이터를 정의합니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+[ custom(
+   uuid,
+   value
+) ];
+```
+
+### <a name="parameters"></a>매개 변수
+
+*uuid*  
+고유한 ID입니다.
+
+*값*  
+Variant로 입력할 수 있는 값입니다.
+
+## <a name="remarks"></a>설명
+
+합니다 **사용자 지정** c + + 특성 정보를 형식 라이브러리에 배치 하면 됩니다. 형식 라이브러리에서 사용자 지정 값을 읽는 도구를 해야 합니다.
+
+합니다 **사용자 지정** 특성이 동일한 기능을 합니다 [사용자 지정](http://msdn.microsoft.com/library/windows/desktop/aa366766) MIDL 특성입니다.
+
+## <a name="requirements"></a>요구 사항
+
+### <a name="attribute-context"></a>특성 컨텍스트
+
+|||
+|-|-|
+|**적용 대상**|비-COM **인터페이스**, **클래스**, **열거형**s `idl_module` 인터페이스 매개 변수, 메서드, 인터페이스 멤버 **typedef**s, **union**개이면 **구조체**s|
+|**반복 가능**|예|
+|**필수 특성**|**coclass** (클래스에 사용) 하는 경우|
+|**잘못된 특성**|없음|
+
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+[IDL 특성](../windows/idl-attributes.md)  
+[독립 실행형 특성](../windows/stand-alone-attributes.md)  
+[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  
+[매개 변수 특성](../windows/parameter-attributes.md)  
+[메서드 특성](../windows/method-attributes.md)  
+[클래스 특성](../windows/class-attributes.md)  
+[인터페이스 특성](../windows/interface-attributes.md)  

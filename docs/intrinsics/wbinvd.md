@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be74b466ed641474283e26217ae728c57f28edd8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ccee7703550bff7980e1cf07b30f29d284e2a3a5
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33326347"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540316"
 ---
 # <a name="wbinvd"></a>__wbinvd
 **Microsoft 전용**  
   
- 다시 작성 및 생성 캐시 무효화 (`wbinvd`) 명령입니다.  
+ 다시 작성 및 캐시 무효화를 생성 (`wbinvd`) 명령입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,9 +39,9 @@ void __wbinvd(void);
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__wbinvd`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__wbinvd`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
  이 함수는 0의 권한 수준 (CPL)를 사용 하 여 커널 모드에서 사용할 수만 및 루틴은 내장 함수로 사용할 수만 있습니다.  

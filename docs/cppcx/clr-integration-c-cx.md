@@ -5,26 +5,26 @@ ms.date: 01/22/2017
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: 76e213cf-2f3d-4181-b35b-9fd25d5b307c
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50b455bd3b6fd4a96c3181b60904cb7a3250e866
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 527ce8beaf5fb08d0642026336be193e3b39d73b
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33086898"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42581126"
 ---
 # <a name="clr-integration-ccx"></a>CLR 통합(C++/CX)
-일부 Windows 런타임 형식은 C + 특수 처리를 수신 + CX 및 공용 언어 런타임 (CLR)을 기반으로 하는 언어입니다. 이 문서에서는 한 언어의 여러 형식을 다른 언어에 매핑하는 방법을 설명합니다. 예를 들어 CLR은 Windows.Foundation.IVector를 System.Collections.IList에 매핑하고, Windows.Foundation.IMap를 System.Collections.IDictionary에 매핑합니다. 마찬가지로, C + + /cli CX에는 특별히 platform:: delegate 및 platform:: string과 같은 형식을 매핑합니다.  
+C +에서 특별 한 처리를 수신 하는 일부 Windows 런타임 형식 + CX 및는 CLR (공용 언어 런타임)을 기반으로 하는 언어입니다. 이 문서에서는 한 언어의 여러 형식을 다른 언어에 매핑하는 방법을 설명합니다. 예를 들어 CLR은 Windows.Foundation.IVector를 System.Collections.IList에 매핑하고, Windows.Foundation.IMap를 System.Collections.IDictionary에 매핑합니다. 마찬가지로, C + + /cli CX에는 특별히 platform:: delegate 및 platform:: string과 같은 형식을 매핑합니다.  
   
-## <a name="mapping-the-windows-runtime-to-ccx"></a>Windows 런타임 C + 매핑 + CX  
- 경우 C + + /cli CX Windows 메타 데이터 (.winmd) 파일을 읽고, 컴파일러에 자동으로 매핑됩니다 공통 Windows 런타임 네임 스페이스와 형식의 C + + /CX 네임 스페이스 및 형식입니다. 예를 들어 숫자 Windows 런타임 형식이 `UInt32` 은 자동으로 매핑됩니다 `default::uint32`합니다.  
+## <a name="mapping-the-windows-runtime-to-ccx"></a>Windows 런타임 매핑할 C + + /cli CX  
+ 때 C + + /cli CX Windows 메타 데이터 (.winmd) 파일을 읽고, 컴파일러가 자동으로 매핑합니다 공통 Windows 런타임 네임 스페이스 및 형식 C + + /CX 네임 스페이스 및 형식입니다. 예를 들어 숫자 Windows 런타임 형식 `UInt32` 자동으로 매핑됩니다 `default::uint32`합니다.  
   
- C + + /cli CX 여러 다른 Windows 런타임 형식을 매핑하는 **플랫폼** 네임 스페이스입니다. 예를 들어는 **windows:: foundation** 읽기 전용 유니코드 텍스트 문자열을 나타내며 HSTRING 핸들 매핑된 C + + /cli CX `Platform::String` 클래스입니다. Windows 런타임 작업이 오류 HRESULT를 반환 하는 경우 매핑되는 C + + /cli CX `Platform::Exception`합니다. 자세한 내용은 [Built-in Types](http://msdn.microsoft.com/en-us/acc196fd-09da-4882-b554-6c94685ec75f)을 참조하세요.  
+ C + + /cli CX 다른 여러 Windows 런타임 형식을에 매핑하는 **플랫폼** 네임 스페이스입니다. 예를 들어 합니다 **windows:: foundation** 는 읽기 전용 유니코드 텍스트 문자열을 나타내는 HSTRING 핸들에 매핑되는 C + + /cli CX `Platform::String` 클래스입니다. Windows 런타임 작업 오류 HRESULT를 반환 하는 경우 매핑되는 C + + /cli CX `Platform::Exception`합니다. 자세한 내용은 [Built-in Types](http://msdn.microsoft.com/en-us/acc196fd-09da-4882-b554-6c94685ec75f)을 참조하세요.  
   
- C + + /cli CX 형식의 기능을 향상 시킬 Windows Runtime 네임 스페이스의 특정 형식을 매핑하여 합니다. 이러한 형식의 C + + /cli CX 도우미 생성자 및 c + + 관련 되어 하는 형식의 표준.winmd 파일에 사용할 수 없는 메서드를 제공 합니다.  
+ C + + /cli CX 형식의 기능 향상을 위해 Windows 런타임 네임 스페이스의 특정 형식을 매핑합니다. 이러한 유형의 C + + /cli CX 도우미 생성자 및 메서드는 c + + 및 형식의 표준.winmd 파일에서 사용할 수 없는 제공 합니다.  
   
  다음 목록에서는 새 생성자 및 도우미 메서드를 지원하는 값 구조체를 보여 줍니다. 구조체 초기화 목록을 사용하는 이전에 작성된 코드가 있으면 새로 추가된 생성자를 사용하도록 이를 변경합니다.  
   
@@ -68,10 +68,10 @@ ms.locfileid: "33086898"
   
 -   Matrix3D  
   
-## <a name="mapping-the-clr-to-ccx"></a>C + CLR 매핑 + CX  
- Visual c + + 또는 C# 컴파일러는.winmd 파일을 읽으면 자동으로 매핑할 메타 데이터 파일의 특정 형식을 적절 한 C + + /CX 또는 CLR 형식입니다. 예를 들어는 IVector CLR에서에서\<T > 인터페이스 IList에 매핑되어\<T >. 하지만 C + + /cli CX는 IVector\<T > 인터페이스는 다른 형식에 매핑되지 않습니다.  
+## <a name="mapping-the-clr-to-ccx"></a>CLR 매핑할 C + + /cli CX  
+ Visual c + + 또는 C# 컴파일러는.winmd 파일을 읽을 때 자동으로 매핑되는 메타 데이터 파일의 특정 형식을 적절 한 C + + /CX 또는 CLR 형식입니다. IVector CLR에서 예를 들어\<T > IList 인터페이스는 매핑됩니다\<T >입니다. 하지만 C + + /cli CX는 IVector\<T > 인터페이스는 다른 형식에 매핑되어 있지 않습니다.  
   
- IReference\<T > Nullable에 매핑되는 Windows 런타임\<T >.net에서 합니다.  
+ IReference\<T >는 Windows 런타임에서 매핑됩니다\<T >.net에서.  
   
 ## <a name="see-also"></a>참고 항목  
- [다른 언어와의 상호 운용](../cppcx/interoperating-with-other-languages-c-cx.md)
+ [다른 언어와 상호 운용](../cppcx/interoperating-with-other-languages-c-cx.md)

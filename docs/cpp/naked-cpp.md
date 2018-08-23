@@ -17,17 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3366995105f6295fd1d4d89ad85896fbb625519d
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 0b74c08ee2130e9742884eacfa93d6fc55110291
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39402498"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571524"
 ---
 # <a name="naked-c"></a>naked(C++)
 **Microsoft 전용**  
   
- 으로 선언 된 함수에 대 한 합니다 **naked** 특성, 컴파일러가 프롤로그 및 에필로그 코드 없이 코드를 생성 합니다. 이 기능을 이용하여 인라인 어셈블러 코드로 사용자 정의 프롤로그/에필로그 코드 시퀀스를 작성할 수 있습니다. naked 함수는 가상 장치 드라이버 작성에 특히 유용합니다.  유의 합니다 **naked** ARM, x86에만 유효 특성과에서 사용할 수 없는 [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]합니다.  
+ 으로 선언 된 함수에 대 한 합니다 **naked** 특성, 컴파일러가 프롤로그 및 에필로그 코드 없이 코드를 생성 합니다. 이 기능을 이용하여 인라인 어셈블러 코드로 사용자 정의 프롤로그/에필로그 코드 시퀀스를 작성할 수 있습니다. naked 함수는 가상 장치 드라이버 작성에 특히 유용합니다.  이때 합니다 **naked** 특성 에서만 유효 하 고 ARM, x86 및 x64에서 사용할 수 없는 합니다.  
   
 ## <a name="syntax"></a>구문  
   

@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a9f73b401d953c026c60d504fbb016838720b7c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bf41c1c91d8c0b5d2d7626d1fc0eee67aa96ff32
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33329347"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539706"
 ---
 # <a name="stosw"></a>__stosw
 **Microsoft 전용**  
@@ -45,25 +45,25 @@ void __stosw(
  작업의 대상입니다.  
   
  [in] `Data`  
- 데이터를 저장 하는입니다.  
+ 데이터 저장소입니다.  
   
  [in] `Count`  
- 작성 하는 단어의 블록의 길이입니다.  
+ 쓸 단어 블록의 길이입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__stosw`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__stosw`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- 결과는 단어 `Data` 블록으로 기록 `Count` 에 단어는 `Dest` 문자열입니다.  
+ 결과 단어 `Data` 블록으로 기록 됩니다 `Count` 에서 단어를 `Dest` 문자열입니다.  
   
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 // stosw.c  

@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - Platform::MTAThreadAttribute Class
 ms.assetid: bfc546a7-4333-4407-85b4-4721565e1f44
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4dd035a3a11898230cb7f8a14db0b98ff1611120
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 389767cdbd09cb5a2139b9302fc25fe02fb8a056
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33089167"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42613461"
 ---
 # <a name="platformmtathreadattribute-class"></a>Platform::MTAThreadAttribute 클래스
 응용 프로그램의 스레딩 모델이 MTA(다중 스레드 아파트)임을 나타냅니다.  
@@ -44,7 +44,7 @@ public ref class MTAThreadAttribute sealed : Attribute
 ### <a name="public-methods"></a>Public 메서드  
  MTAThreadAttribute 특성에서 상속 [platform:: object 클래스](../cppcx/platform-object-class.md)합니다. MTAThreadAttribute도 다음 멤버를 오버로드하거나 포함합니다.  
   
-|이름|설명|  
+|name|설명|  
 |----------|-----------------|  
 |[MTAThreadAttribute::Equals](#equals)|지정한 개체와 현재 개체가 같은지 여부를 확인합니다.|  
 |[MTAThreadAttribute::GetHashCode](#gethashcode)|이 인스턴스의 해시 코드를 반환합니다.|  

@@ -15,44 +15,46 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1a180a8923dd5a9e8cb257b12ee0d2ba09df8ed5
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: f5a86748d5a51e433e2e90450593ef1bac1c8de3
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39642996"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596283"
 ---
 # <a name="changing-the-font-of-text-on-an-image-image-editor-for-icons"></a>이미지의 텍스트 글꼴 변경(아이콘에 대한 이미지 편집기)
-다음 절차는 하는 방법의 예:  
-  
--   Windows 응용 프로그램의 아이콘에 텍스트 추가  
-  
--   텍스트의 글꼴 조작  
-  
-### <a name="to-change-the-font-of-text-on-an-image"></a>이미지의 텍스트의 글꼴을 변경 하려면  
-  
-1.  C + + Windows Forms 응용 프로그램을 만듭니다. 자세한 내용은 참조 하세요 [Windows 응용 프로그램 프로젝트를 만드는](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)합니다. 합니다 [Windows Forms 응용 프로그램 템플릿을](http://msdn.microsoft.com/1babdebf-ab3f-4a64-a608-98499a5b9cea) 이라는 파일을 추가 `app.ico` 기본적으로 프로젝트에 있습니다.  
-  
-2.  **솔루션 탐색기**, app.ico 파일을 두 번 클릭 합니다. 합니다 [이미지 편집기](../windows/image-editor-for-icons.md) 열립니다.  
-  
-3.  **이미지** 메뉴에서 **도구** 선택한 후 **텍스트 도구**합니다. 합니다 [텍스트 도구 대화 상자](../windows/text-tool-dialog-box-image-editor-for-icons.md) 나타납니다.  
-  
-4.  에 **텍스트 도구** 대화 상자에서 `C++` 빈 텍스트 영역에 있습니다. 이 텍스트의 왼쪽된 위 모퉁이 크기를 조정할 수 상자에 나타납니다 `app.ico`에 **이미지 편집기**합니다.  
-  
-5.  에 **이미지 편집기**, 크기를 조정할 수 상자 텍스트의 가독성을 높이기 위해 app.ico의 가운데로 끕니다.  
-  
-6.  에 **텍스트 도구** 대화 상자에서 클릭 합니다 **글꼴** 단추입니다. 합니다 [텍스트 도구 글꼴 대화 상자](../windows/text-tool-font-dialog-box-image-editor-for-icons.md) 나타납니다.  
-  
-7.  에 **텍스트 도구 글꼴** 대화 상자에서 **Times New Roman** 에 나와 있는 사용 가능한 글꼴 목록에서를 **글꼴** 목록 상자입니다.  
-  
-8.  선택 **굵게** 에 나열 된 사용 가능한 글꼴 스타일 목록을 합니다 **글꼴 스타일** 목록 상자입니다.  
-  
-9. 선택 **10** 지점에 나열 된 크기의 사용 가능한 목록의 합니다 **크기** 목록 상자입니다.  
-  
-10. 클릭 합니다 **확인** 단추입니다. 합니다 **텍스트 도구 글꼴** 대화 상자가 닫히고 새 글꼴 설정을 텍스트에 적용 됩니다.  
-  
-11. 클릭 합니다 **닫습니다** 단추를 **텍스트 도구** 대화 상자. 텍스트 주위의 크기 조정 가능한 상자에서 사라집니다 합니다 **이미지 편집기**합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [그래픽 리소스 편집](../windows/editing-graphical-resources-image-editor-for-icons.md)   
- [도구 모음](../windows/toolbar-image-editor-for-icons.md)
+
+다음 절차는 하는 방법의 예:
+
+- Windows 응용 프로그램의 아이콘에 텍스트 추가
+
+- 텍스트의 글꼴 조작
+
+### <a name="to-change-the-font-of-text-on-an-image"></a>이미지의 텍스트의 글꼴을 변경 하려면
+
+1. C + + Windows Forms 응용 프로그램을 만듭니다. 자세한 내용은 참조 하세요 [Windows 응용 프로그램 프로젝트를 만드는](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)합니다. 합니다 [Windows Forms 응용 프로그램 템플릿을](http://msdn.microsoft.com/1babdebf-ab3f-4a64-a608-98499a5b9cea) 이라는 파일을 추가 `app.ico` 기본적으로 프로젝트에 있습니다.
+
+2. **솔루션 탐색기**, app.ico 파일을 두 번 클릭 합니다. 합니다 [이미지 편집기](../windows/image-editor-for-icons.md) 열립니다.
+
+3. **이미지** 메뉴에서 **도구** 선택한 후 **텍스트 도구**합니다. 합니다 [텍스트 도구 대화 상자](../windows/text-tool-dialog-box-image-editor-for-icons.md) 나타납니다.
+
+4. 에 **텍스트 도구** 대화 상자에서 `C++` 빈 텍스트 영역에 있습니다. 이 텍스트의 왼쪽된 위 모퉁이 크기를 조정할 수 상자에 나타납니다 `app.ico`에 **이미지 편집기**합니다.
+
+5. 에 **이미지 편집기**, 크기를 조정할 수 상자 텍스트의 가독성을 높이기 위해 app.ico의 가운데로 끕니다.
+
+6. 에 **텍스트 도구** 대화 상자에서 클릭 합니다 **글꼴** 단추입니다. 합니다 [텍스트 도구 글꼴 대화 상자](../windows/text-tool-font-dialog-box-image-editor-for-icons.md) 나타납니다.
+
+7. 에 **텍스트 도구 글꼴** 대화 상자에서 **Times New Roman** 에 나와 있는 사용 가능한 글꼴 목록에서를 **글꼴** 목록 상자입니다.
+
+8. 선택 **굵게** 에 나열 된 사용 가능한 글꼴 스타일 목록을 합니다 **글꼴 스타일** 목록 상자입니다.
+
+9. 선택 **10** 지점에 나열 된 크기의 사용 가능한 목록의 합니다 **크기** 목록 상자입니다.
+
+10. 클릭 합니다 **확인** 단추입니다. 합니다 **텍스트 도구 글꼴** 대화 상자가 닫히고 새 글꼴 설정을 텍스트에 적용 됩니다.
+
+11. 클릭 합니다 **닫습니다** 단추를 **텍스트 도구** 대화 상자. 텍스트 주위의 크기 조정 가능한 상자에서 사라집니다 합니다 **이미지 편집기**합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[그래픽 리소스 편집](../windows/editing-graphical-resources-image-editor-for-icons.md)  
+[도구 모음](../windows/toolbar-image-editor-for-icons.md)

@@ -19,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - Map Class (C++/Cx)
 ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6580ccb9ca19a575bac6a9fedbb4e8f16c7060ba
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b6831369f6327b7cef38b1a4f15013f1e3ff4043
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33093183"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42608990"
 ---
 # <a name="platformcollectionsmap-class"></a>Platform::Collections::Map 클래스
 
@@ -53,10 +53,10 @@ ref class Map sealed;
 키/값 쌍의 값 형식입니다.
 
 *C*  
-두 요소 값을 정렬 키로 비교하여 맵에서 해당 상대 순서를 확인할 수 있는 함수 개체를 제공하는 형식입니다. 기본적으로 [std::less\<K >](../standard-library/less-struct.md)합니다.
+두 요소 값을 정렬 키로 비교하여 맵에서 해당 상대 순서를 확인할 수 있는 함수 개체를 제공하는 형식입니다. 기본적으로 [std:: less\<K >](../standard-library/less-struct.md)합니다.
 
 *__is_valid_winrt_type()*  
-형식의 유효성을 검사 하는 컴파일러 생성 함수 *K* 및 *V* 하 고 맵에서 유형을 저장할 수 없을 경우 친숙 한 오류 메시지를 제공 합니다.
+유형의 유효성을 검사 하는 컴파일러에서 생성 된 함수 *K* 하 고 *V* 형식을 Map에 저장할 수 없을 경우 친숙 한 오류 메시지를 제공 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -72,9 +72,9 @@ ref class Map sealed;
 
 - public enum 클래스
 
-Map은 기본적으로 [std::map](../standard-library/map-class.md)에 대한 래퍼입니다. 구체적 c + + 구현에서 [Windows::Foundation::Collections::IMap < Windows::Foundation::Collections::IKeyValuePair\<K, V >>](http://go.microsoft.com/fwlink/p/?LinkId=262408) 및 [IObservableMap](http://msdn.microsoft.com/library/windows/apps/br226050.aspx) Windows 런타임 인터페이스를 공개를 통해 전달 되는 형식입니다. 공용 반환 값 또는 매개 변수에서 `Platform::Collections::Map` 형식을 사용하려고 하면 컴파일러 오류 C3986이 발생합니다. 매개 변수 또는 반환 값의 형식을 변경 하 여 오류를 해결할 수 [Windows::Foundation::Collections::IMap\<K, V >](http://go.microsoft.com/fwlink/p/?LinkId=262408)합니다.
+Map은 기본적으로 [std::map](../standard-library/map-class.md)에 대한 래퍼입니다. 구체적인 c + + 구현 된 [Windows::Foundation::Collections::IMap < Windows::Foundation::Collections::IKeyValuePair\<K, V >>](http://go.microsoft.com/fwlink/p/?LinkId=262408) 하 고 [IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) Windows 런타임 인터페이스를 공용 전반에서 전달 되는 형식입니다. 공용 반환 값 또는 매개 변수에서 `Platform::Collections::Map` 형식을 사용하려고 하면 컴파일러 오류 C3986이 발생합니다. 매개 변수 또는 반환 값의 형식을 변경 하 여 오류를 해결할 수 있습니다 [Windows::Foundation::Collections::IMap\<K, V >](http://go.microsoft.com/fwlink/p/?LinkId=262408)합니다.
 
-자세한 내용은 참조 [컬렉션](../cppcx/collections-c-cx.md)합니다.
+자세한 내용은 [컬렉션](../cppcx/collections-c-cx.md)합니다.
 
 ### <a name="members"></a>멤버
 
@@ -101,7 +101,7 @@ Map은 기본적으로 [std::map](../standard-library/map-class.md)에 대한 �
 
 |||
 |-|-|
-|이름|설명|
+|name|설명|
 |[Map::MapChanged](#mapchanged-event.md) `event`|Map이 변경될 때 발생합니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
@@ -141,11 +141,11 @@ Windows::Foundation::Collections::IKeyValuePair<K, V>^>^ First();
 
 ### <a name="remarks"></a>설명
 
-선언 된 변수에 반환 값을 할당 하는 First()에서 반환 된 반복기를 보유 하는 편리한 방법은 **자동** 형식 추론 키워드입니다. 예를 들어, `auto x = myMap->First();`을 입력합니다.
+First ()에서 반환 된 반복기를 보유 하는 편리한 방법을 사용 하 여 선언 된 변수에 반환 값을 할당 하는 것은 **자동** 형식 추론 키워드입니다. 예를 들어, `auto x = myMap->First();`을 입력합니다.
 
 ## <a name="getview"></a>  Map:: getview 메서드
 
-현재 Map의 읽기 전용 보기를 반환합니다. 즉, 한 [Platform::Collections::MapView 클래스](../cppcx/platform-collections-mapview-class.md)를 구현 하는 [Windows::Foundation::Collections::IMapView\<K, V >](http://msdn.microsoft.com/library/windows/apps/br226037.aspx) 인터페이스입니다.
+현재 Map의 읽기 전용 보기를 반환합니다. 즉,을 [Platform::Collections::MapView 클래스](../cppcx/platform-collections-mapview-class.md)를 구현 하는 합니다 [Windows::Foundation::Collections::IMapView\<K, V >] / uwp/api/Windows.Foundation.Collections.IMapView_K_V_) 인터페이스입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -196,7 +196,7 @@ virtual bool Insert(K key, V value);
 
 ### <a name="return-value"></a>반환 값
 
-`true` 현재 Map의 기존 요소 키와 일치 하는 경우 *키* 요소의 값 부분이로 설정 되어 *값*합니다. `false` 현재 Map의 기존 요소가 없는 일치 하는 경우 *키* 및 *키* 및 *값* 매개 변수는 키-값 쌍으로 생성 되며 그런 다음 현재 Map에 추가 합니다.
+`true` 현재 Map의 기존 요소 키와 일치 하는 경우 *키* 로 설정 되어 해당 요소의 값 부분이 *값*합니다. `false` 일치 하는 현재 Map의 기존 요소가 *키* 하며 *키* 하 고 *값* 매개 변수는 키-값 쌍으로 수행 하 고 현재 Map에 추가 합니다.
 
 ## <a name="lookup"></a>  Map:: lookup 메서드
 
@@ -215,11 +215,11 @@ V Lookup(K key);
 
 ### <a name="return-value"></a>반환 값
 
-함께 사용 하는 값은 *키*합니다. 반환 값의 형식이 typename *V*합니다.
+함께 사용 되는 값을 *키*합니다. 반환 값의 형식은 typename *V*합니다.
 
 ### <a name="remarks"></a>설명
 
-키가 없는 경우는 [platform:: outofboundsexception](../cppcx/platform-outofboundsexception-class.md) throw 됩니다.
+키가 없으면 다음을 [platform:: outofboundsexception](../cppcx/platform-outofboundsexception-class.md) throw 됩니다.
 
 ## <a name="ctor"></a>  Map:: map 생성자
 
@@ -247,7 +247,7 @@ Map(
 두 요소 값을 정렬 키로 비교하여 맵에서 해당 상대 순서를 확인할 수 있는 함수 개체를 제공하는 형식입니다.
 
 *m*  
-대 한 참조 또는 [Lvalue 및 Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) 에 `map Class` 현재 Map를 초기화 하는 데 사용 되는 합니다.
+참조 또는 [Lvalue 및 Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) 에 `map Class` 현재 Map를 초기화 하는 데 사용 되는 합니다.
 
 *first*  
 현재 Map를 초기화하는 데 사용되는 요소 범위에서 첫 번째 요소의 입력 반복기입니다.
@@ -267,11 +267,11 @@ event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
 
 ### <a name="property-valuereturn-value"></a>속성 값/반환 값
 
-A [MapChangedEventHandler\<K, V >](http://msdn.microsoft.com/library/windows/apps/br206644.aspx) 에서 이벤트와 발생 한 변경의 종류를 발생 시킨 개체에 대 한 정보가 들어 있는입니다. 참고 항목 [IMapChangedEventArgs\<K >](http://msdn.microsoft.com/library/windows/apps/br226034.aspx) 및 [CollectionChange 열거형](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx)합니다.
+A [MapChangedEventHandler\<K, V >](/uwp/api/windows.foundation.collections.mapchangedeventhandler) 발생 한 변경 내용 유형의 이벤트를 발생 시킨 개체에 대 한 정보를 포함 하는 합니다. 참고 항목 [IMapChangedEventArgs\<K >](http://msdn.microsoft.com/library/windows/apps/br226034.aspx) 하 고 [CollectionChange 열거형](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx)합니다.
 
 ## <a name="net-framework-equivalent"></a>.NET Framework의 해당 값
 
-C# 또는 Visual Basic을 사용 하는 Windows 런타임 앱 프로젝트 IMap\<K, V > IDictionary로\<K, V > 합니다.
+C# 또는 Visual Basic을 사용 하는 Windows 런타임 앱 프로젝트 IMap\<K, V > IDictionary로\<K, V >.
 
 ## <a name="remove"></a>  Map:: remove 메서드
 

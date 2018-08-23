@@ -12,16 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - Platform::AccessDeniedException
 ms.assetid: 6ae2155b-7b16-4587-8d2d-da05eab4c7e9
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4be26bfc87be55d36954429c64094cabd6a6cf9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 808de08163f0f94e4c3d0064fced7cb81f83c931
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33087616"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42597938"
 ---
 # <a name="platformaccessdeniedexception-class"></a>Platform::AccessDeniedException 클래스
 리소스 또는 기능에 대한 액세스가 거부된 경우 throw됩니다.  

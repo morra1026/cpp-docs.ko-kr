@@ -15,15 +15,15 @@ helpviewer_keywords:
 - security [C++], best practices
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
 author: mikeblome
-ms.author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e16a00d83f7917cf21f114b2a80fa1ad55a90875
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: e941c15d734ce85513696d60da13184cfbfd2355
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40015626"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42610055"
 ---
 # <a name="security-best-practices-for-c"></a>C++의 최선의 보안 구현 방법
 
@@ -34,7 +34,7 @@ ms.locfileid: "40015626"
  이러한 보안 기능은 Visual C++ 컴파일러 및 링커에 기본 제공됩니다.  
   
  [/guard(제어 흐름 보호 사용)](../build/reference/guard-enable-control-flow-guard.md)  
- 컴파일러가 컴파일 시간에 간접 호출 대상에 대한 제어 흐름을 분석한 다음 런타임에 대상을 확인하는 코드를 삽입하게 합니다.  
+ 컴파일러가 컴파일 시간에 간접 호출 대상에 대 한 제어 흐름을 분석 하 고 다음 런타임에 대상을 확인 하는 코드를 삽입 합니다.  
   
  [/GS(버퍼 보안 검사)](../build/reference/gs-buffer-security-check.md)  
  악용될 위험이 있는 함수에 오버런 감지 코드를 삽입하도록 컴파일러에 지시합니다. 오버런이 감지되면 실행이 중지됩니다. 이 옵션은 기본적으로 켜져 있습니다.  

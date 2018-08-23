@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4885cf6e5ddbff939e3f8e6401bd23661f13e275
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 9df970022ccc4f358864c3e3462ffea2b373cd00
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337410"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42540922"
 ---
 # <a name="afxglobaldata-structure"></a>AFX_GLOBAL_DATA 구조체
 `AFX_GLOBAL_DATA` 구조는 프레임워크를 관리하거나 응용 프로그램의 모양과 동작을 사용자 지정하는 데 사용되는 필드 및 메서드를 포함합니다.  
@@ -69,7 +69,7 @@ struct AFX_GLOBAL_DATA
 |[Afx_global_data:: onsettingchange](#onsettingchange)|데스크톱 메뉴 애니메이션의 현재 상태 및 작업 표시줄 자동 숨기기 기능을 탐지합니다.|  
 |[Afx_global_data:: registerwindowclass](#registerwindowclass)|지정된 MFC 창 클래스를 등록합니다.|  
 |[Afx_global_data:: releasetaskbarrefs](#releasetaskbarrefs)|GetITaskbarList 및 GetITaskbarList3 메서드를 통해 얻은 인터페이스를 해제합니다.|  
-|[Afx_global_data:: resume](#resume)|Windows [테마 및 비주얼 스타일](https://msdn.microsoft.com/library/windows/desktop/hh270423.aspx)을 지원하는 메서드에 액세스하는 내부 함수 포인터를 다시 초기화합니다.|  
+|[Afx_global_data:: resume](#resume)|Windows를 지 원하는 메서드에 액세스 하는 내부 함수 포인터를 다시 초기화 [테마 및 비주얼 스타일](/windows/desktop/Controls/visual-styles-overview)합니다.|  
 |[Afx_global_data:: setlayeredattrib](#setlayeredattrib)|Windows [SetLayeredWindowAttributes](http://msdn.microsoft.com/library/windows/desktop/ms633540) 메서드를 호출하는 간단한 방법을 제공합니다.|  
 |[Afx_global_data:: setmenufont](#setmenufont)|지정된 논리 글꼴을 만듭니다.|  
 |[Afx_global_data:: shellcreateitemfromparsingname](#shellcreateitemfromparsingname)|구문 분석 이름에서 셸 항목 개체를 만들고 초기화합니다.|  

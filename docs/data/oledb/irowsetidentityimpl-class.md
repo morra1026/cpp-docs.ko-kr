@@ -25,15 +25,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 55c9b4b7e14a9572f5a8922b65a41a9a92a0d688
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: ed8cc8fc2b61a3a85beb7297317c5b266557268c
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337711"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572387"
 ---
 # <a name="irowsetidentityimpl-class"></a>IRowsetIdentityImpl 클래스
-OLE DB 구현 [IRowsetIdentity](https://msdn.microsoft.com/library/ms715913.aspx) 행 id에 대 한 테스트 수 있도록 하는 인터페이스입니다.  
+OLE DB 구현 [IRowsetIdentity](/previous-versions/windows/desktop/ms715913\(v=vs.85\)) 행 id에 대 한 테스트 수 있도록 하는 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -72,7 +72,7 @@ STDMETHOD(IsSameRow )(HROW hThisRow,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [IRowsetIdentity::IsSameRow](https://msdn.microsoft.com/library/ms719629.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="remarks"></a>설명  
  행 핸들을 비교 하려면이 메서드는 다음과 같이 캐스팅 됩니다.는 `HROW` 핸들 `RowClass` 멤버 및 호출 `memcmp` 는 포인터에 대 한 합니다.  

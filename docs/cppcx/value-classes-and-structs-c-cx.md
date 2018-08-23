@@ -8,19 +8,19 @@ helpviewer_keywords:
 - value struct
 - value class
 ms.assetid: 262a0992-9721-4c02-8297-efc07d90e5a4
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b623e706fae0dfd8fca6b9aaf217e76b27dbbda
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 226198c35dc0b7e7e1c7fab4ce81fc4782b5ca38
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33090716"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42589058"
 ---
 # <a name="value-classes-and-structs-ccx"></a>값 클래스 및 구조체(C++/CX)
-A *값 구조체* 또는 *값 클래스* 는 windows 런타임 호환 POD ("plain old data" 구조체). 크기가 고정되어 있고 필드로만 구성되어 있으며 ref 클래스와는 달리 속성이 없습니다.  
+A *값 구조체* 또는 *값 클래스* 는 Windows 런타임 호환 POD ("plain old data" 구조체) 됩니다. 크기가 고정되어 있고 필드로만 구성되어 있으며 ref 클래스와는 달리 속성이 없습니다.  
   
  다음 예제에서는 값 구조체를 선언하고 초기화하는 방법을 보여 줍니다.  
   
@@ -59,7 +59,7 @@ A *값 구조체* 또는 *값 클래스* 는 windows 런타임 호환 POD ("plai
   
  *값 클래스* 는 필드에 public 액세스 가능성이 명시적으로 부여되어야 한다는 점을 제외하고 `value struct` 와 비슷합니다. `value class` 키워드를 사용하여 선언됩니다.  
   
- 값 구조체 또는 값 클래스는만 기본 숫자 형식, 열거형 클래스, 필드로 포함할 수 있습니다 `Platform::String^`, 또는 [platform:: ibox \<T > ^](../cppcx/platform-ibox-interface.md) 여기서 T는 숫자 형식, 열거형 클래스, 값 클래스 또는 구조체입니다. `IBox<T>^` 필드의 값은 `nullptr`로 지정할 수 있습니다. 이는 *null 허용 형식*개념이 C++에서 구현되는 방법입니다.  
+ 값 구조체 또는 값 클래스를 포함할 수 있습니다만 기본 숫자 형식, 열거형 클래스, 필드 `Platform::String^`, 또는 [platform:: ibox \<T > ^](../cppcx/platform-ibox-interface.md) 여기서 T는 숫자 형식, 열거형 클래스, 값 클래스 또는 구조체입니다. `IBox<T>^` 필드의 값은 `nullptr`로 지정할 수 있습니다. 이는 *null 허용 형식*개념이 C++에서 구현되는 방법입니다.  
   
  `Platform::String^` 또는 `IBox<T>^` 형식을 멤버로 포함하는 값 클래스 또는 값 구조체는 `memcpy`할 수 없습니다.  
   
@@ -95,7 +95,7 @@ Method2(ref obj);
  또한 포인터 기호(*)를 사용하여 값 형식을 참조로 전달할 수 있습니다. 다른 언어의 호출자와 비교하여 동작은 동일(C#의 호출자는 `ref` 키워드 사용)하지만 메서드에서의 형식은 값 형식에 대한 포인터입니다.  
   
 ## <a name="nullable-value-types"></a>Nullable 값 형식  
- 값 클래스 또는 값 구조체 형식의 필드를 가질 수 있습니다 앞서 언급 했 듯이 [platform:: ibox\<T > ^](../cppcx/platform-ibox-interface.md)-예를 들어 `IBox<int>^`합니다. 이러한 필드에는 `int` 형식에 대해 유효한 모든 숫자 값 또는 `nullptr`값을 지정할 수 있습니다. 매개 변수가 선택적으로 선언되었거나 값 형식에 값이 지정될 필요가 없는 메서드에 nullable 필드를 인수로 전달할 수 있습니다.  
+ 값 클래스 또는 값 구조체 형식의 필드를 가질 수 있습니다 앞에서 설명 했 듯이 [platform:: ibox\<T > ^](../cppcx/platform-ibox-interface.md)-예를 들어 `IBox<int>^`합니다. 이러한 필드에는 `int` 형식에 대해 유효한 모든 숫자 값 또는 `nullptr`값을 지정할 수 있습니다. 매개 변수가 선택적으로 선언되었거나 값 형식에 값이 지정될 필요가 없는 메서드에 nullable 필드를 인수로 전달할 수 있습니다.  
   
  다음 예제에서는 null 허용 필드가 있는 구조체를 초기화하는 방법을 보여 줍니다.  
   

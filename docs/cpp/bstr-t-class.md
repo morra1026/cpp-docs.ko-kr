@@ -18,17 +18,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7cb3d05997cfe3d803f522962ed9e7382269bd3
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 16a43c0f7ca5f54d1c920d488a236012d8b974e3
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39404927"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42571424"
 ---
 # <a name="bstrt-class"></a>_bstr_t 클래스
 **Microsoft 전용**  
   
- A `_bstr_t` 개체를 캡슐화 합니다 [BSTR 데이터 형식](http://msdn.microsoft.com/1b2d7d2c-47af-4389-a6b6-b01b7e915228)합니다. 클래스가 관리 리소스 할당 및 할당 해제 함수 호출을 통해 `SysAllocString` 하 고 `SysFreeString` 및 기타 `BSTR` 적절 한 경우 Api. 합니다 **_bstr_t** 클래스는 과도 한 오버 헤드를 방지 하기 위해 참조 가산을 사용 합니다.  
+ A `_bstr_t` 개체를 캡슐화 합니다 [BSTR 데이터 형식](/previous-versions/windows/desktop/automat/bstr)합니다. 클래스가 관리 리소스 할당 및 할당 해제 함수 호출을 통해 `SysAllocString` 하 고 `SysFreeString` 및 기타 `BSTR` 적절 한 경우 Api. 합니다 **_bstr_t** 클래스는 과도 한 오버 헤드를 방지 하기 위해 참조 가산을 사용 합니다.  
   
 ### <a name="construction"></a>생성  
   

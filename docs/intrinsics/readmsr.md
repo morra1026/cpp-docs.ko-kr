@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e8196b25b1507c92542faa6dd8ca59b4632d8f0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b3be04079de11642b2641260fdfe997d3fcb48d6
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33335915"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539300"
 ---
 # <a name="readmsr"></a>__readmsr
 **Microsoft 전용**  
   
- 에서는 오류가 발생 하는 `rdmsr` 로 지정 된 모델 특정 레지스터를 읽는 명령 `register` 해당 값을 반환 합니다.  
+ 생성 된 `rdmsr` 로 지정 된 모델 특정 레지스터 읽기는 명령 `register` 하 고 해당 값을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,7 +40,7 @@ __int64 __readmsr(
   
 #### <a name="parameters"></a>매개 변수  
  [in] `register`  
- 읽을 모델 특정 레지스터입니다.  
+ 읽기 모델 특정 레지스터입니다.  
   
 ## <a name="return-value"></a>반환 값  
  지정된 된 레지스터의 값입니다.  
@@ -49,14 +49,14 @@ __int64 __readmsr(
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__readmsr`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__readmsr`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
  이 함수는 커널 모드에서 사용할 수만 및 루틴은 내장 함수로 사용할 수만 있습니다.  
   
- 자세한 내용은 AMD 설명서를 참조 합니다.  
+ 자세한 내용은 AMD 설명서를 참조 하십시오.  
   
 **Microsoft 전용 종료**  
   

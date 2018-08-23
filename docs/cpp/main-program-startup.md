@@ -22,15 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d78ca2a195ac60e31e01bbe271b7f92536cc1a05
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 824bb7059e13c76af0c2f739676d32afc04aa0c7
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39401484"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572204"
 ---
 # <a name="main-program-startup"></a>main: 프로그램 시작
-이라는 특수 함수 **주** 모든 C 및 c + + 프로그램에 대 한 실행의 시작 지점입니다. 준수 하는 코드를 작성 하는 경우는 [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] 프로그래밍 모델을 사용할 수 있습니다 `wmain`의 와이드 문자 버전인 **주**합니다.  
+이라는 특수 함수 **주** 모든 C 및 c + + 프로그램에 대 한 실행의 시작 지점입니다. 유니코드 프로그래밍 모델을 따르는 코드를 작성 하는, 하는 경우 사용할 수 있습니다 `wmain`의 와이드 문자 버전인 **주**합니다.  
   
  합니다 **주** 함수는 컴파일러에서 미리 정의 되지 않습니다. 프로그램 텍스트에서 제공되어야 합니다.  
   

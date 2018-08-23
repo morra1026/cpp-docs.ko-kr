@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94cf50287c28fe530df939488c4e707d17aede03
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 364ad39bfe47ff04c4a1eefb52b32ed4bddb7809
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33327374"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539139"
 ---
 # <a name="lllshift"></a>__ll_lshift
 **Microsoft 전용**  
   
- 제공 된 64 비트 값 왼쪽에 지정 된 비트 수 만큼 이동합니다.  
+ 제공된 된 64 비트 값 왼쪽에 지정 된 비트 수 만큼 이동합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,28 +41,28 @@ unsigned __int64 __ll_lshift(
   
 #### <a name="parameters"></a>매개 변수  
  [in] `Mask`  
- 왼쪽으로 이동 하려면 64 비트 정수 값입니다.  
+ 시프트 레프트 64 비트 정수 값입니다.  
   
  [in] `nBit`  
  이동할 비트 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
- / / 마스크 41을 왼쪽으로 이동 `nBit` 비트입니다.  
+ 왼쪽으로 이동 하 여 마스크 `nBit` 비트입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__ll_lshift`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__ll_lshift`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- 64 비트 아키텍처를 사용 하 여 프로그램을 컴파일하는 경우 및 `nBit` 63 보다 크면 이동할 비트 수는 `nBit` 64로 나눈 나머지입니다. 32 비트 아키텍처를 사용 하 여 프로그램을 컴파일하는 경우 및 `nBit` 31 보다 큽니다. 이동할 비트 수는 `nBit` 32 모듈로 합니다.  
+ 64 비트 아키텍처를 사용 하 여 프로그램을 컴파일하는 경우 및 `nBit` 63 보다 크면 이동할 비트 수는 `nBit` 64 모듈로. 32 비트 아키텍처를 사용 하 여 프로그램을 컴파일하는 경우 및 `nBit` 31, 보다 크면 이동할 비트 수는 `nBit` 32 모듈로.  
   
- `ll` 이름에서에 작업 임을 나타냅니다 `long long` (`__int64`).  
+ 합니다 `ll` 이름에서에 작업 임을 나타냅니다 `long long` (`__int64`).  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 // ll_lshift.cpp  
@@ -89,7 +89,7 @@ int main()
 10000  
 ```  
   
- **참고** 왼쪽된 시프트 연산의 서명 되지 않은 버전이 없습니다. 때문에 이것이 `__ll_lshift` 이미 서명 되지 않은 입력된 매개 변수를 사용 합니다. 오른쪽 시프트 달리 종속 하지 않습니다 기호 왼쪽된 시프트에 대 한 결과의 가장 덜 중요 한 비트 0을 향해 이동 하는 값의 부호에 관계 없이 항상 설정 되어 있으므로 합니다.  
+ **참고** 왼쪽된 시프트 연산의 부호 없는 버전이 없습니다. 왜냐하면 `__ll_lshift` 이미 서명 되지 않은 입력된 매개 변수를 사용 합니다. 오른쪽 시프트는 달리 왼쪽된 shift에 대 한 로그인 종속 되지 않습니다 결과의 최하위 비트 0의 값 이동 부호에 관계 없이 항상 설정 되어 있기 때문입니다.  
   
 **Microsoft 전용 종료**  
   

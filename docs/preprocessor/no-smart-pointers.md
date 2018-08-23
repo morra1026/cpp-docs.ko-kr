@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e4503ab027589f54c5b5bce60dc405a570dcc59
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 345da5de492c33107effffb9c97b2fe60906e899
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849693"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42545854"
 ---
 # <a name="nosmartpointers"></a>no_smart_pointers
 **C + + 전용**  
   
- 형식 라이브러리의 모든 인터페이스에 대한 스마트 포인터를 만들지 않습니다.  
+형식 라이브러리의 모든 인터페이스에 대한 스마트 포인터를 만들지 않습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,10 +35,12 @@ no_smart_pointers
 ```  
   
 ## <a name="remarks"></a>설명  
- `#import`를 사용하는 경우 기본적으로 형식 라이브러리에 있는 모든 인터페이스에 대한 스마트 포인터 선언을 가져옵니다. 이러한 스마트 포인터 형식의 [_com_ptr_t 클래스](../cpp/com-ptr-t-class.md)합니다.  
+ 
+`#import`를 사용하는 경우 기본적으로 형식 라이브러리에 있는 모든 인터페이스에 대한 스마트 포인터 선언을 가져옵니다. 이러한 스마트 포인터는 형식이 [_com_ptr_t 클래스](../cpp/com-ptr-t-class.md)합니다.  
   
- **C + + 전용 종료**  
+**C + + 전용 종료**  
   
 ## <a name="see-also"></a>참고 항목  
- [#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
- [#import 지시문](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
+[#import 지시문](../preprocessor/hash-import-directive-cpp.md)

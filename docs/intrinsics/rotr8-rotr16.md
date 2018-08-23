@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca8c9bddac3f9e1a34d9b1a430cb97da86c40865
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a667f857621c01900165f6e93de7f7bddc837915
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33337225"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540684"
 ---
 # <a name="rotr8-rotr16"></a>_rotr8, _rotr16
 **Microsoft 전용**  
@@ -57,15 +57,15 @@ unsigned short _rotr16(
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`_rotr8`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`_rotr16`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_rotr8`|x86, ARM, x64|  
+|`_rotr16`|x86, ARM, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
  오른쪽 시프트 작업과는 달리 오른쪽 회전을 실행할 때는 최소값에 속하는 하위 비트가 상위 비트 위치로 이동됩니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 // rotr.cpp  

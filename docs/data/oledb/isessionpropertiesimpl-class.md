@@ -25,15 +25,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5da668814888c11c5aaa0734be5ebc39b943778e
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: eca3e25e1476023ef4b7192efd2ffbd4170e88ca
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337257"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572594"
 ---
 # <a name="isessionpropertiesimpl-class"></a>ISessionPropertiesImpl 클래스
-구현을 제공 합니다 [ISessionProperties](https://msdn.microsoft.com/library/ms713721.aspx) 인터페이스입니다.  
+구현을 제공 합니다 [ISessionProperties](/previous-versions/windows/desktop/ms713721\(v=vs.85\)) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -79,7 +79,7 @@ STDMETHOD(GetProperties)(ULONG cPropertyIDSets,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [ISessionProperties::GetProperties](https://msdn.microsoft.com/library/ms723643.aspx) 에 *OLE DB Programmer's Reference*합니다. 
+ 참조 [ISessionProperties::GetProperties](/previous-versions/windows/desktop/ms723643\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 
 
 ## <a name="setproperties"></a> Isessionpropertiesimpl:: Setproperties
 속성을 설정 합니다 `DBPROPSET_SESSION` 속성 그룹입니다.  
@@ -92,7 +92,7 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [ISessionProperties::SetProperties](https://msdn.microsoft.com/library/ms714405.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [ISessionProperties::SetProperties](/previous-versions/windows/desktop/ms714405\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)   

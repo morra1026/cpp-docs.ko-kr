@@ -74,12 +74,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24fee4d4a73fb2933b00160879be130f4c33083b
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: a4555de3e42efd298cc7a6f67949a8b474f76064
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37854059"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42539872"
 ---
 # <a name="cmfctoolbarcomboboxbutton-class"></a>CMFCToolBarComboBoxButton 클래스
 콤보 상자 컨트롤을 포함 하는 도구 모음 단추 ( [CComboBox 클래스](../../mfc/reference/ccombobox-class.md)).  
@@ -1165,7 +1165,7 @@ void SetText(LPCTSTR lpszText);
   
 ### <a name="parameters"></a>매개 변수  
  [in] *lpszText*  
- 편집 상자에 대 한 텍스트를 포함 하는 문자열에 대 한 포인터입니다.  
+ 편집 상자에 텍스트를 포함 하는 문자열에 대 한 포인터입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [계층 구조 차트](../../mfc/hierarchy-chart.md)   

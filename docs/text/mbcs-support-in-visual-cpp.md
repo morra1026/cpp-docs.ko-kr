@@ -28,16 +28,16 @@ helpviewer_keywords:
 - Input Method Editor [C++]
 - MBCS [C++], enabling
 ms.assetid: 6179f6b7-bc61-4a48-9267-fb7951223e38
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d00495f95b3c67e4a6fc3613b949b8ae2946bd6
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: f595a048d9f2e5795f69b7d1da6c4c6cf4ca0fa2
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40010388"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42608682"
 ---
 # <a name="mbcs-support-in-visual-c"></a>Visual C++에서 MBCS 지원
 MBCS 지원 버전의 Windows 실행 하는 경우 Visual c + + 개발 시스템 (통합된 소스 코드 편집기, 디버거 및 명령줄 도구 등)는 MBCS 지원, 메모리 창을 제외 하 고.  
@@ -53,7 +53,7 @@ MBCS 지원 버전의 Windows 실행 하는 경우 Visual c + + 개발 시스템
   
  ALT + 활성화 IME를\` 키 조합을, 단추 (표시기) 집합과 변환 창으로 표시 됩니다. 응용 프로그램 창을 텍스트 삽입 지점에 배치합니다. 응용 프로그램 처리 해야 합니다 `WM_MOVE` 고 `WM_SIZE` 새 위치 또는 대상 창의 크기에 맞게 변환 창을 기준으로 메시지입니다.  
   
- 간지 문자를 입력할 수 있도록 응용 프로그램의 사용자를 하려는 경우 응용 프로그램 Windows IME 메시지를 처리 해야 합니다. IME 프로그래밍에 대 한 자세한 내용은 참조 하세요. [Input Method Editor](https://msdn.microsoft.com/library/ms776145.aspx)합니다.  
+ 간지 문자를 입력할 수 있도록 응용 프로그램의 사용자를 하려는 경우 응용 프로그램 Windows IME 메시지를 처리 해야 합니다. IME 프로그래밍에 대 한 자세한 내용은 참조 하세요. [Input Method Editor](/previous-versions/windows/desktop/ms776145\(v=vs.85\))합니다.  
   
 ## <a name="visual-c-debugger"></a>Visual c + + 디버거  
  Visual c + + 디버거는 IME 메시지에 중단점을 설정 하는 기능을 제공 합니다. 또한 메모리 창을 더블 바이트 문자를 표시할 수 있습니다.  

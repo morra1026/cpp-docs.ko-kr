@@ -100,12 +100,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd7160f2998eee18439baa67a93a73fcd73b5c0f
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 61fc3d0ddf07887af2f565fd338b337eacd130ef
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853552"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42539344"
 ---
 # <a name="cmonthcalctrl-class"></a>CMonthCalCtrl 클래스
 달력 컨트롤의 기능을 캡슐화합니다.  
@@ -736,7 +736,7 @@ void SetCalendarBorder(int cxyBorder);
 |[in] *cxyBorder*|픽셀에서 테두리의 너비입니다.|  
   
 ### <a name="remarks"></a>설명  
- 이 메서드가 성공 하면 테두리 너비를로 설정 됩니다는 *cxyBorder* 매개 변수입니다. 테두리 두께입니다. 현재 지정 된 기본 값으로 다시 설정 됩니다이 고, 그렇지 [테마](https://msdn.microsoft.com/library/windows/desktop/hh270423.aspx), 또는 테마 사용 되지 않는 경우 0입니다.  
+ 이 메서드가 성공 하면 테두리 너비를로 설정 됩니다는 *cxyBorder* 매개 변수입니다. 테두리 두께입니다. 현재 지정 된 기본 값으로 다시 설정 됩니다이 고, 그렇지 [테마](/windows/desktop/Controls/visual-styles-overview), 또는 테마 사용 되지 않는 경우 0입니다.  
   
  이 메서드는 전송 된 [MCM_SETCALENDARBORDER](http://msdn.microsoft.com/library/windows/desktop/bb760993) Windows SDK에 설명 된 메시지입니다.  
   
@@ -758,7 +758,7 @@ void SetCalendarBorderDefault();
 ```  
   
 ### <a name="remarks"></a>설명  
- 테두리 너비를 현재 지정 된 기본값으로 설정 되어 [테마](https://msdn.microsoft.com/library/windows/desktop/hh270423.aspx), 또는 테마 사용 되지 않는 경우 0입니다.  
+ 테두리 너비를 현재 지정 된 기본값으로 설정 되어 [테마](/windows/desktop/Controls/visual-styles-overview), 또는 테마 사용 되지 않는 경우 0입니다.  
   
  이 메서드는 전송 된 [MCM_SETCALENDARBORDER](http://msdn.microsoft.com/library/windows/desktop/bb760993) Windows SDK에 설명 된 메시지입니다.  
   

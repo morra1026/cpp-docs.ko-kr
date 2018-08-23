@@ -828,12 +828,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97d8e923d89085161feb7dcec38d3b0e3972b96e
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 317eae9ee404e603eaf37b2d512724c6b3d0c9f9
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028423"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539917"
 ---
 # <a name="cwnd-class"></a>CWnd 클래스
 MFC 라이브러리의 모든 Window 클래스의 기본적인 기능을 제공합니다.  
@@ -2258,7 +2258,7 @@ virtual BOOL DestroyWindow();
   
  합니다 `DestroyWindow` 멤버 함수는 또한 모덜리스 대화 상자에서 만든 소멸 [CDialog::Create](../../mfc/reference/cdialog-class.md#create)합니다.  
   
- 경우는 `CWnd` 자식 창을 소멸 되 고 이며 없는 [WS_EX_NOPARENTNOTIFY](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) 스타일 집합을 해당 [창에 WM_PARENTNOTIFY ](https://msdn.microsoft.com/library/ms632638.aspx) 부모에 전송 됩니다.  
+ 경우는 `CWnd` 자식 창을 소멸 되 고 이며 없는 [WS_EX_NOPARENTNOTIFY](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) 스타일 집합을 해당 [창에 WM_PARENTNOTIFY ](/previous-versions/windows/desktop/inputmsg/wm-parentnotify) 부모에 전송 됩니다.  
   
 ### <a name="example"></a>예  
  [!code-cpp[NVC_MFCWindowing#87](../../mfc/reference/codesnippet/cpp/cwnd-class_26.cpp)]  
@@ -6613,7 +6613,7 @@ afx_msg void OnKeyDown(
   
 ### <a name="parameters"></a>매개 변수  
  *NChar*  
- 지정된 된 키의 가상 키 코드를 지정합니다. 표준 가상 키 코드의 목록, Winuser.h을 참조 하세요.  
+ 지정된 된 키의 가상 키 코드를 지정합니다. 에서 표준 가상 키 코드 목록은 Winuser.h을 참조 하세요.  
   
  *nRepCnt*  
  반복 실행 횟수 (횟수 키 입력 키를 누른 사용자로 인해 반복 됩니다).  
@@ -6655,7 +6655,7 @@ afx_msg void OnKeyUp(
   
 ### <a name="parameters"></a>매개 변수  
  *NChar*  
- 지정된 된 키의 가상 키 코드를 지정합니다. 표준 가상 키 코드의 목록, Winuser.h을 참조 하세요.  
+ 지정된 된 키의 가상 키 코드를 지정합니다. 에서 표준 가상 키 코드 목록은 Winuser.h을 참조 하세요.  
   
  *nRepCnt*  
  반복 실행 횟수 (횟수 키 입력 키를 누른 사용자로 인해 반복 됩니다).  
@@ -7780,7 +7780,7 @@ afx_msg void OnNcXButtonUp(
 >  이 멤버 함수는 응용프로그램에서 Windows 메시지를 처리할 수 있도록 프레임워크에서 호출됩니다. 함수에 전달되는 매개 변수는 해당 메시지가 수신되었을 때 프레임워크에서 받았던 매개 변수를 반영합니다. 이 함수의 기본 클래스 구현을 호출하는 경우, 해당 구현은 해당 함수에 공급한 매개변수가 아닌, 메시지와 함께 전달 받았던 원래의 매개 변수를 사용할 것입니다.  
   
 ##  <a name="onnextmenu"></a>  CWnd::OnNextMenu  
- 이 멤버 함수를 호출 하는 프레임 워크 오른쪽 또는 왼쪽 화살표 키를이 메뉴 모음과 시스템 메뉴 간을 전환 하려면 사용는 경우.  
+ 메뉴 모음과 시스템 메뉴 간을 전환 하려면 오른쪽 또는 왼쪽 화살표 키를 사용 하는 경우이 멤버 함수를 호출 하는 프레임 워크입니다.  
   
 ```  
 afx_msg void OnNextMenu(
@@ -8260,7 +8260,7 @@ afx_msg void OnSessionChange(
 ### <a name="remarks"></a>설명  
  이 메서드를 수신 합니다 [WM_WTSSESSION_CHANGE](http://msdn.microsoft.com/library/aa383828) Windows SDK에 설명 된 알림.  
   
- 합니다 *nSessionState* 매개 변수는 연결 되었거나 콘솔 또는 원격 터미널에서 연결이 끊긴 세션, 사용자 로그온 또는 로그 오프, 세션 잠금 또는 잠금 해제 또는 지정 세션 상태가 원격 제어로 변경 되었습니다. 자세한 내용은 참조는 *wParam* 의 매개 변수를를 [WM_WTSSESSION_CHANGE](http://msdn.microsoft.com/library/aa383828) 메시지.  
+ 합니다 *nSessionState* 매개 변수는 연결 되었거나 콘솔 또는 원격 터미널에서 연결이 끊긴 세션, 사용자 로그온 또는 로그 오프, 세션 잠금 또는 잠금 해제 또는 지정 세션 상태가 원격 제어로 변경 되었습니다. 자세한 내용은 참조는 *wParam* 의 매개 변수를 [WM_WTSSESSION_CHANGE](http://msdn.microsoft.com/library/aa383828) 메시지입니다.  
   
 > [!NOTE]
 >  이 멤버 함수는 응용프로그램에서 Windows 메시지를 처리할 수 있도록 프레임워크에서 호출됩니다. 함수에 전달되는 매개 변수는 해당 메시지가 수신되었을 때 프레임워크에서 받았던 매개 변수를 반영합니다. 이 함수의 기본 클래스 구현을 호출하는 경우, 해당 구현은 해당 함수에 공급한 매개변수가 아닌, 메시지와 함께 전달 받았던 원래의 매개 변수를 사용할 것입니다.  
@@ -8561,7 +8561,7 @@ afx_msg void OnSysChar(
 |31|전환 상태를 지정합니다. 값 1 경우 해제 되는 키 또는 키를 누른 경우 0입니다.|  
   
 ### <a name="remarks"></a>설명  
- 메뉴 컨트롤 키의 가상 키 코드를 지정합니다. (표준 가상 키 코드의 목록은, Winuser.h 참조)  
+ 메뉴 컨트롤 키의 가상 키 코드를 지정합니다. (목록은 표준 가상 키 코드 Winuser.h 참조)  
   
  상황에 맞는 코드를이 0 이면 WM_SYSCHAR 전달할 수는 [WM_SYSCHAR](http://msdn.microsoft.com/library/windows/desktop/ms646357) 메시지를 [TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms646373) 시스템 대신 키가 일반 메시지 처럼 처리 됩니다 하는 Windows 함수 문자-키입니다. 이 액셀러레이터 키를 활성 창에 입력된 포커스가 없는 경우에 활성 창에 사용할 수 있습니다.  
   
@@ -8694,7 +8694,7 @@ afx_msg void OnSysKeyDown(
   
 ### <a name="parameters"></a>매개 변수  
  *NChar*  
- 키를 누르는의 가상 키 코드를 지정 합니다. 표준 가상 키 코드의 목록, Winuser.h을 참조 하세요.  
+ 키를 누르는의 가상 키 코드를 지정 합니다. 에서 표준 가상 키 코드 목록은 Winuser.h을 참조 하세요.  
   
  *nRepCnt*  
  반복 횟수를 지정합니다.  
@@ -8738,7 +8738,7 @@ afx_msg void OnSysKeyUp(
   
 ### <a name="parameters"></a>매개 변수  
  *NChar*  
- 키를 누르는의 가상 키 코드를 지정 합니다. 표준 가상 키 코드의 목록, Winuser.h을 참조 하세요.  
+ 키를 누르는의 가상 키 코드를 지정 합니다. 에서 표준 가상 키 코드 목록은 Winuser.h을 참조 하세요.  
   
  *nRepCnt*  
  반복 횟수를 지정합니다.  
@@ -8983,7 +8983,7 @@ afx_msg void OnUnInitMenuPopup(
 >  이 멤버 함수는 응용프로그램에서 Windows 메시지를 처리할 수 있도록 프레임워크에서 호출됩니다. 함수에 전달되는 매개 변수는 해당 메시지가 수신되었을 때 프레임워크에서 받았던 매개 변수를 반영합니다. 이 함수의 기본 클래스 구현을 호출하는 경우, 해당 구현은 해당 함수에 공급한 매개변수가 아닌, 메시지와 함께 전달 받았던 원래의 매개 변수를 사용할 것입니다.  
   
 ##  <a name="onupdateuistate"></a>  CWnd::OnUpdateUIState  
- 지정된 된 창 및 모든 자식 창에 대 한 사용자 인터페이스 (UI) 상태를 변경 하 하기 위해 호출 합니다.  
+ 지정된 창 및 모든 자식 창에 대한 UI(사용자 인터페이스) 상태를 변경하기 위해 호출됩니다.  
   
 ```  
 afx_msg void OnUpdateUIState(
@@ -9038,7 +9038,7 @@ afx_msg int OnVKeyToItem(
   
 ### <a name="parameters"></a>매개 변수  
  *nKey*  
- 사용자가 누른 키의 가상 키 코드를 지정 합니다. 표준 가상 키 코드의 목록, Winuser.h을 참조 하세요.  
+ 사용자가 누른 키의 가상 키 코드를 지정 합니다. 에서 표준 가상 키 코드 목록은 Winuser.h을 참조 하세요.  
   
  *pListBox*  
  목록 상자에 대 한 포인터를 지정합니다. 해당 포인터는 임시적이며, 나중에 사용하려고 저장하면 안됩니다.  

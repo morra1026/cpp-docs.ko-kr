@@ -60,12 +60,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b28dc721b3131fc413248f6ba4a0b0612176cb67
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 6cb88decfd69fd7fb81667164f651e934ee08775
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337582"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540528"
 ---
 # <a name="cdatabase-class"></a>CDatabase 클래스
 데이터 소스 작업을 할 수 있는 통로인 데이터 소스에 대한 연결을 나타냅니다.  
@@ -189,7 +189,7 @@ void Cancel();
 ```  
   
 ### <a name="remarks"></a>설명  
- MFC ODBC 클래스에 비동기 처리를 사용 하지는 note 비동기 작업을 수행 하려면 직접 ODBC API 함수를 호출 해야 [SQLSetConnectOption](https://msdn.microsoft.com/library/ms713564.aspx)합니다. 자세한 내용은 [비동기 실행](https://msdn.microsoft.com/library/ms713563.aspx) Windows SDK에 있습니다.  
+ MFC ODBC 클래스에 비동기 처리를 사용 하지는 note 비동기 작업을 수행 하려면 직접 ODBC API 함수를 호출 해야 [SQLSetConnectOption](/previous-versions/windows/desktop/ms713564\(v=vs.85\))합니다. 자세한 내용은 [비동기 실행](/previous-versions/windows/desktop/ms713563\(v=vs.85\)) Windows SDK에 있습니다.  
   
 ##  <a name="cantransact"></a>  CDatabase::CanTransact  
  데이터베이스 트랜잭션이 있는지 여부를 확인 하려면이 멤버 함수를 호출 합니다.  

@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d97e3e993571392893533be220e243b045b81e30
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 789a8165a12977d11220d299e2c99549121dba64
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852889"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540339"
 ---
 # <a name="cmfcribbonminitoolbar-class"></a>CMFCRibbonMiniToolBar 클래스
 상황별 팝업 도구 모음을 구현합니다.  
@@ -162,7 +162,7 @@ BOOL ShowWithContextMenu(
  이 함수를 사용 하 여 상황에 맞는 메뉴에 있는 미니 도구 모음을 표시 합니다. 상황에 맞는 메뉴는 미니 도구 모음 아래 배치 15 픽셀입니다.  
   
 ##  <a name="iscontextmenumode"></a>  CMFCRibbonMiniToolBar::IsContextMenuMode  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
 ```  
 BOOL IsContextMenuMode() const;  
@@ -173,7 +173,7 @@ BOOL IsContextMenuMode() const;
 ### <a name="remarks"></a>설명  
   
 ##  <a name="isribbonminitoolbar"></a>  CMFCRibbonMiniToolBar::IsRibbonMiniToolBar  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
 ```  
 virtual BOOL IsRibbonMiniToolBar() const;  

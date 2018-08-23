@@ -17,39 +17,44 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ff24ac92e5e84cb85127ef6e33805928fabd6f60
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 8398f0bd4d9fdc786926782b13ebcac913a6a351
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39647533"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42612872"
 ---
 # <a name="chaininterfacescancastto-method"></a>ChainInterfaces::CanCastTo 메서드
-각 기본이 아닌 템플릿 매개 변수를 정의한 특수화에 지정 된 인터페이스 ID 캐스팅 될 수 있는지 여부를 나타냅니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-__forceinline bool CanCastTo(  
-   REFIID riid,  
-   _Deref_out_ void **ppv  
-);  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *riid*  
- 인터페이스 ID입니다.  
-  
- *ppv*  
- 성공적으로 캐스팅 된 마지막 인터페이스 ID에 대 한 포인터입니다.  
-  
-## <a name="return-value"></a>반환 값  
- **true 이면** 모든 캐스트 작업이 성공 하면이 고, 그렇지 **false**합니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** implements.h  
-  
- **네임스페이스:** Microsoft::WRL  
-  
-## <a name="see-also"></a>참고 항목  
- [ChainInterfaces 구조체](../windows/chaininterfaces-structure.md)
+
+각 기본이 아닌 템플릿 매개 변수를 정의한 특수화에 지정 된 인터페이스 ID 캐스팅 될 수 있는지 여부를 나타냅니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+__forceinline bool CanCastTo(
+   REFIID riid,
+   _Deref_out_ void **ppv
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*riid*  
+인터페이스 ID입니다.
+
+*ppv*  
+성공적으로 캐스팅 된 마지막 인터페이스 ID에 대 한 포인터입니다.
+
+## <a name="return-value"></a>반환 값
+
+**true 이면** 모든 캐스트 작업이 성공 하면이 고, 그렇지 **false**합니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** implements.h
+
+**네임스페이스:** Microsoft::WRL
+
+## <a name="see-also"></a>참고 항목
+
+[ChainInterfaces 구조체](../windows/chaininterfaces-structure.md)

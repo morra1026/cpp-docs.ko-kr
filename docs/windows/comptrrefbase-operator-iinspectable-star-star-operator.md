@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4683305b9f7f396168bd9404f6f2501502db3d01
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: f711a9d1f5fe92e5f35bf333fc0b3473fc0eebf4
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39645024"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42604408"
 ---
 # <a name="comptrrefbaseoperator-iinspectable-operator"></a>Comptrrefbase:: Operator IInspectable\* \* 연산자
 
@@ -49,5 +49,6 @@ operator IInspectable**() const;
 **Namespace:** Microsoft::WRL::Details
 
 ## <a name="see-also"></a>참고 항목
-[ComPtrRefBase 클래스](../windows/comptrrefbase-class.md)   
+
+[ComPtrRefBase 클래스](../windows/comptrrefbase-class.md)  
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

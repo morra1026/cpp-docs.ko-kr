@@ -14,16 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Exception Class
 ms.assetid: ca1d5a67-3a5a-48fe-8099-f9c38a2d2dce
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5adab38c3dc09c533c4df90f313346b22f888c0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6774aa0d90e9903798cd2a77a480782b669fdc57
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33091562"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42586637"
 ---
 # <a name="platformexception-class"></a>Platform::Exception 클래스
 응용 프로그램을 실행할 때 나타나는 오류를 나타냅니다. 사용자 지정 예외 클래스는 `Platform::Exception`에서 파생될 수 없습니다. 사용자 지정 예외가 필요한 경우 `Platform::COMException` 을 사용하고 앱 관련 HRESULT를 지정할 수 있습니다.  
@@ -46,7 +46,7 @@ public ref class Exception : Object,    IException,    IPrintable,    IEquatable
 |[Exception::Exception](#ctor)|`Exception` 클래스의 새 인스턴스를 초기화합니다.|  
   
 ### <a name="methods"></a>메서드  
- `Exception` 클래스 상속의 `Equals()`, `Finalize()`,`GetHashCode()`,`GetType()`,`MemberwiseClose()`, 및 `ToString()` 에서 메서드는 [platform:: object 클래스](../cppcx/platform-object-class.md)합니다. `Exception` 클래스에는 다음 메서드도 있습니다.  
+ `Exception` 클래스를 상속 합니다 `Equals()`, `Finalize()`,`GetHashCode()`,`GetType()`,`MemberwiseClose()`, 및 `ToString()` 메서드를를 [platform:: object 클래스](../cppcx/platform-object-class.md). `Exception` 클래스에는 다음 메서드도 있습니다.  
   
 |멤버|설명|  
 |------------|-----------------|  
@@ -81,7 +81,7 @@ Exception^ CreateException(int32 hr, Platform::String^ message)
   
 ### <a name="parameters"></a>매개 변수  
  hr  
- 일반적으로 COM 메서드 호출에서 가져오는 HRESULT 값입니다. 값이 0으로, s_ok이 고가 인 경우이 메서드에서 throw [platform:: invalidargumentexception](../cppcx/platform-invalidargumentexception-class.md) 되므로 성공 하는 COM 메서드는 예외를 throw 하지 않아야 합니다.  
+ 일반적으로 COM 메서드 호출에서 가져오는 HRESULT 값입니다. 값이 0(s_ok와 같음가 0 인 경우이 메서드에서 throw [platform:: invalidargumentexception](../cppcx/platform-invalidargumentexception-class.md) 성공 하는 COM 메서드는 예외를 throw 하지 않아야 하기 때문에 있습니다.  
   
  message  
  오류를 설명하는 문자열입니다.  
@@ -92,7 +92,7 @@ Exception^ CreateException(int32 hr, Platform::String^ message)
 ### <a name="remarks"></a>설명  
  예를 들어 COM 인터페이스 메서드에 대한 호출에서 반환되는 HRESULT에서 예외를 만들려면 이 메서드를 사용합니다. String^ 매개 변수를 사용하는 오버로드를 사용하여 사용자 지정 메시지를 제공할 수 있습니다.  
   
- CreateException 강력한 형식의 예외를 만드는 데 권장 되는 대신이 만드는 [platform:: comexception](../cppcx/platform-comexception-class.md) 는 단순히 HRESULT를 포함 합니다.  
+ 강력한 CreateException 강력한 형식의 예외를 만드는 데 권장 되는 것이 아니라 만드는 것을 [platform:: comexception](../cppcx/platform-comexception-class.md) 는 단순히 HRESULT를 포함 합니다.  
   
 
 
@@ -146,7 +146,7 @@ public:property String^ Message;
  Windows 런타임에서 발생하는 예외의 경우, 이것은 오류에 대한 시스템 제공 설명입니다.  
   
 ### <a name="remarks"></a>설명  
- Windows 8이이 속성은 읽기 전용 이므로 해당 버전의 Windows 런타임이 HRESULTS로만 ABI 전반에서 전송 됩니다. Windows 8.1에서는 다양한 예외 정보가 ABI 전체에 전송되며 다른 구성 요소에서 프로그래밍 방식으로 액세스할 수 있는 사용자 지정 메시지를 제공할 수 있습니다. 자세한 내용은 참조 [예외 (C + + /cli CX)](../cppcx/exceptions-c-cx.md)합니다.  
+ Windows 8,이 속성은 읽기 전용 하므로 해당 버전의 Windows 런타임 예외 HRESULTS로만 abi 전반에서 전송 됩니다. Windows 8.1에서는 다양한 예외 정보가 ABI 전체에 전송되며 다른 구성 요소에서 프로그래밍 방식으로 액세스할 수 있는 사용자 지정 메시지를 제공할 수 있습니다. 자세한 내용은 [예외 (C + + /cli CX)](../cppcx/exceptions-c-cx.md)합니다.  
   
 
   

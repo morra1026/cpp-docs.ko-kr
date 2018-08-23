@@ -354,17 +354,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 021b66393b37cdc83a514ca194baef8049f5c62f
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: e9ac21e909c8286ef6a7d1973837b0caf69b711c
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853565"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541696"
 ---
 # <a name="cmfcvisualmanager-class"></a>CMFCVisualManager 클래스
 응용 프로그램의 모양을 전역 수준에서 변경하는 기능을 지원합니다. `CMFCVisualManager` 클래스는 일관된 스타일을 사용하여 응용 프로그램의 GUI 컨트롤을 그리는 명령을 제공하는 클래스와 함께 작동합니다. 이러한 다른 클래스를 비주얼 관리자라고 하며 `CMFCBaseVisualManager`에서 상속됩니다.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
 ## <a name="syntax"></a>구문  
   

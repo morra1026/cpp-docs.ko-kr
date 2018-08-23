@@ -58,12 +58,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b0fc52585171df740f70e12d81d849e3726dcd7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7eff5cab57c1288af1f6e1109fae458c35e0fa7b
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33339185"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42611385"
 ---
 # <a name="interlockedcompareexchange-intrinsic-functions"></a>_InterlockedCompareExchange 내장 함수
 **Microsoft 전용**  
@@ -202,15 +202,15 @@ __int64 _InterlockedCompareExchange64_rel(
   
 |내장 함수|아키텍처|머리글|  
 |---------------|------------------|------------|  
-|`_InterlockedCompareExchange`, `_InterlockedCompareExchange8`, `_InterlockedCompareExchange16`, `_InterlockedCompareExchange64`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
+|`_InterlockedCompareExchange`, `_InterlockedCompareExchange8`, `_InterlockedCompareExchange16`, `_InterlockedCompareExchange64`|x86, ARM, x64|\<intrin.h>|  
 |`_InterlockedCompareExchange_acq`, `_InterlockedCompareExchange_rel`, `_InterlockedCompareExchange8_acq`, `_InterlockedCompareExchange8_nf`, `_InterlockedCompareExchange8_rel`,`_InterlockedCompareExchange16_acq`, `_InterlockedCompareExchange16_nf`, `_InterlockedCompareExchange16_rel`, `_InterlockedCompareExchange64_acq`, `_InterlockedCompareExchange64_nf`, `_InterlockedCompareExchange64_rel`,|ARM|\<intrin.h>|  
-|`_InterlockedCompareExchange_np`, `_InterlockedCompareExchange16_np`, `_InterlockedCompareExchange64_np`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
-|`_InterlockedCompareExchange_HLEAcquire`, `_InterlockedCompareExchange_HLERelease`, `_InterlockedCompareExchange64_HLEAcquire`, `_InterlockedCompareExchange64_HLERelease`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h>|  
+|`_InterlockedCompareExchange_np`, `_InterlockedCompareExchange16_np`, `_InterlockedCompareExchange64_np`|X64|\<intrin.h>|  
+|`_InterlockedCompareExchange_HLEAcquire`, `_InterlockedCompareExchange_HLERelease`, `_InterlockedCompareExchange64_HLEAcquire`, `_InterlockedCompareExchange64_HLERelease`|x86, x64|\<immintrin.h>|  
   
 ## <a name="remarks"></a>설명  
  `_InterlockedCompareExchange`는 `Destination` 값과 `Comparand` 값의 원자성 비교를 수행합니다. `Destination` 값이 `Comparand` 값과 같으면 `Exchange`으로 지정된 주소에 `Destination` 값이 저장됩니다. 그렇지 않으면 작업이 수행되지 않습니다.  
   
- `_InterlockedCompareExchange` Win32에 대 한 컴파일러 내장 지원을 제공 [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] [InterlockedCompareExchange](http://msdn.microsoft.com/library/ms683560.aspx) 함수입니다.  
+ `_InterlockedCompareExchange` Win32 Windows SDK에 대 한 컴파일러 내장 지원을 제공 [InterlockedCompareExchange](/windows/desktop/api/winbase/nf-winbase-interlockedcompareexchange) 함수입니다.  
   
  사용되는 데이터 형식과 프로세서별 획득 또는 해제 의미 체계에 따라 다른 `_InterlockedCompareExchange`의 여러 변형이 있습니다.  
   
@@ -224,8 +224,8 @@ __int64 _InterlockedCompareExchange64_rel(
   
  이러한 루틴은 내장 함수로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 간단한 하위 수준 스레드 동기화에 `_InterlockedCompareExchange`를 사용합니다. 이 방식은 다중 스레드 프로그래밍의 기준으로 사용하기에는 한계가 있으며, 일반적인 연관 내장 함수 사용 방법을 보여 주기 위한 용도로 제공됩니다. 최상의 결과를 얻으려면 Windows API를 사용합니다. 다중 스레드 프로그래밍에 대 한 자세한 내용은 참조 하십시오. [다중 스레드 Win32 프로그램 작성](../parallel/writing-a-multithreaded-win32-program.md)합니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 간단한 하위 수준 스레드 동기화에 `_InterlockedCompareExchange`를 사용합니다. 이 방식은 다중 스레드 프로그래밍의 기준으로 사용하기에는 한계가 있으며, 일반적인 연관 내장 함수 사용 방법을 보여 주기 위한 용도로 제공됩니다. 최상의 결과를 얻으려면 Windows API를 사용합니다. 다중 스레드 프로그래밍에 대 한 자세한 내용은 참조 하세요. [다중 스레드 Win32 프로그램 작성](../parallel/writing-a-multithreaded-win32-program.md)합니다.  
   
 ```  
 // intrinExample.cpp  

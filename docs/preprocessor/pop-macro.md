@@ -18,32 +18,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7790cadf9b5bc0b9a1fa37b5131f4fb704142ad2
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3106bc3c74be0f6d5a9a386b0f4c8c9c64bdfedf
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849641"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42538902"
 ---
 # <a name="popmacro"></a>pop_macro
-값을 설정는 *macro_name* 매크로를 값이이 매크로 대 한 스택 맨 위에 있습니다.  
+값을 설정 합니다 *macro_name* 매크로 값이이 매크로 대 한 스택의 맨 위에 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
 ```  
-  
 #pragma pop_macro("  
 macro_name  
 ")  
-  
 ```  
   
 ## <a name="remarks"></a>설명  
- 먼저 실행 해야는 [push_macro](../preprocessor/push-macro.md) 에 대 한 *macro_name* 수행 하기 전에 **pop_macro**합니다.  
+ 
+먼저 실행 해야 합니다는 [push_macro](../preprocessor/push-macro.md) 에 대 한 *macro_name* 수행 하기 전에 **pop_macro**합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
-```  
+```cpp  
 // pragma_directives_pop_macro.cpp  
 // compile with: /W1  
 #include <stdio.h>  
@@ -76,4 +75,5 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

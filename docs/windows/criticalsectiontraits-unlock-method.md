@@ -17,37 +17,42 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b64f44e2188848a25e607c53171e25aa721e9bc4
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 003bb9c845ef8124ade1262a25368d3d4cb34fa6
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39641368"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42606433"
 ---
 # <a name="criticalsectiontraitsunlock-method"></a>CriticalSectionTraits::Unlock 메서드
-특수화는 `CriticalSection` 를 지정 된 임계 영역 개체의 해제 소유권 지원 하므로 템플릿.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-inline static void Unlock(  
-   _In_ Type cs  
-);  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *cs*  
- 임계 영역 개체에 대 한 포인터입니다.  
-  
-## <a name="remarks"></a>설명  
- 합니다 `Type` 한정자로 정의 된 `typedef CRITICAL_SECTION* Type;`합니다.  
-  
- 자세한 내용은 **LeaveCriticalSection 함수** 에 **동기화 함수** Windows API 설명서의 섹션입니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## <a name="see-also"></a>참고 항목  
- [CriticalSectionTraits 구조체](../windows/criticalsectiontraits-structure.md)
+
+특수화는 `CriticalSection` 를 지정 된 임계 영역 개체의 해제 소유권 지원 하므로 템플릿.
+
+## <a name="syntax"></a>구문
+
+```cpp
+inline static void Unlock(
+   _In_ Type cs
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*cs*  
+임계 영역 개체에 대 한 포인터입니다.
+
+## <a name="remarks"></a>설명
+
+합니다 `Type` 한정자로 정의 된 `typedef CRITICAL_SECTION* Type;`합니다.
+
+자세한 내용은 **LeaveCriticalSection 함수** 에 **동기화 함수** Windows API 설명서의 섹션입니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## <a name="see-also"></a>참고 항목
+
+[CriticalSectionTraits 구조체](../windows/criticalsectiontraits-structure.md)

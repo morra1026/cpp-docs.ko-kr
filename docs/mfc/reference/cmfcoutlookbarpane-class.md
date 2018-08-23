@@ -50,15 +50,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81087eb5f611edd5ad41725177226c2c2b7a9c2d
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 394cd0da74171e517086886a5c0c915fc77ba49c
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851349"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541893"
 ---
 # <a name="cmfcoutlookbarpane-class"></a>CMFCOutlookBarPane 클래스
-[!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
  파생 되는 컨트롤 [CMFCToolBar 클래스](../../mfc/reference/cmfctoolbar-class.md) Outlook 표시줄에 삽입할 수 있는 ( [CMFCOutlookBar 클래스](../../mfc/reference/cmfcoutlookbar-class.md)). Outlook 표시줄 창에 큰 단추의 열이 포함되어 있습니다. 단추 목록이 창보다 크면 위 아래로 스크롤할 수 있습니다. 사용자가 Outlook 표시줄 창을 Outlook 표시줄에서 분리하면 기본 프레임 창에서 이동하거나 도킹할 수 있습니다.  
   
@@ -222,7 +222,7 @@ BOOL AddButton(
  으로 지정 된 인덱스 *iInsertAt* 가-1 이면 단추를 페이지의 끝에 추가 됩니다.  
   
 ##  <a name="canbeattached"></a>  CMFCOutlookBarPane::CanBeAttached  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
 ```  
 virtual BOOL CanBeAttached() const;  
