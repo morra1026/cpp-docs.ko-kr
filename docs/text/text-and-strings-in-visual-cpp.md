@@ -30,16 +30,16 @@ helpviewer_keywords:
 - portability [C++], character sets
 - MBCS [C++], international programming
 ms.assetid: a1bb27ac-abe5-4c6b-867d-f761d4b93205
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8eaf5425bab79d31391e6ccd82e03c667de1271c
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: ed4232c73122e797a3b0e7aa17c43cde5ab47cf5
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40016628"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42610716"
 ---
 # <a name="text-and-strings-in-visual-c"></a>Visual C++의 텍스트 및 문자열
 국제 시장 용 응용 프로그램 개발의 중요 한 측면에는 로컬 문자 집합의 적합 한 표현입니다. ASCII 문자 집합 0x00-0x7F 범위의 문자를 정의합니다. 주로 유럽 ASCII 문자 집합과 동일 하 게 0x00-0x7F 범위의 문자를 정의 하 고 또한 0xFF 뿐만 아니라 0x80에서로 확장된 된 문자를 정의 하는 다른 문자 집합입니다. 따라서 (SBCS)는 8 비트, 단일 바이트 문자 집합은 ASCII 문자 집합 뿐만 아니라 많은 유럽 언어에 대 한 문자 집합을 나타내는 데 충분 합니다. 그러나 한국어와 같은 일부 비 유럽 문자 집합에는 싱글바이트 코딩 구성표로 나타낼 수 있습니다 및 멀티 바이트 문자 집합 (MBCS) 인코딩이 필요 것 보다 많은 문자가 포함 합니다.  

@@ -34,12 +34,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c8e7a31c5377d71eaad96fddc7d93215ed3abb4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0f8ab76252c355bb56a1e2157e0e025a4eddb0d8
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340387"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596538"
 ---
 # <a name="interlockedcompareexchangepointer-intrinsic-functions"></a>_InterlockedCompareExchangePointer Intrinsic Functions
 **Microsoft 전용**  
@@ -101,18 +101,18 @@ long _InterlockedCompareExchangePointer_rel (
   
 ## <a name="requirements"></a>요구 사항  
   
-|내장 함수|아키텍처|Header|  
+|내장 함수|아키텍처|헤더|  
 |---------------|------------------|------------|  
-|`_InterlockedCompareExchangePointer`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
+|`_InterlockedCompareExchangePointer`|x86, ARM, x64|\<intrin.h>|  
 |`_InterlockedCompareExchangePointer_acq`, `_InterlockedCompareExchangePointer_nf`, `_InterlockedCompareExchangePointer_rel`|ARM|\<iiintrin.h>|  
-|`_InterlockedCompareExchangePointer_HLEAcquire`, `_InterlockedCompareExchangePointer_HLERelease`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h>|  
+|`_InterlockedCompareExchangePointer_HLEAcquire`, `_InterlockedCompareExchangePointer_HLERelease`|x86, x64|\<immintrin.h>|  
   
 ## <a name="remarks"></a>설명  
  `_InterlockedCompareExchangePointer`는 `Destination` 주소와 `Comparand` 주소의 원자성 비교를 수행합니다. `Destination` 주소가 `Comparand` 주소와 같으면 `Exchange`으로 지정된 주소에 `Destination` 주소가 저장됩니다. 그렇지 않으면 작업이 수행되지 않습니다.  
   
- `_InterlockedCompareExchangePointer` Win32에 대 한 컴파일러 내장 지원을 제공 [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] [_InterlockedCompareExchangePointer](http://msdn.microsoft.com/library/ff547863.aspx) 함수입니다.  
+ `_InterlockedCompareExchangePointer` Win32 Windows SDK에 대 한 컴파일러 내장 지원을 제공 [_InterlockedCompareExchangePointer](http://msdn.microsoft.com/library/ff547863.aspx) 함수입니다.  
   
- 사용 하는 방법의 예제를 보려면 `_InterlockedCompareExchangePointer`, 참조 [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md)합니다.  
+ 사용 하는 방법의 예제 `_InterlockedCompareExchangePointer`를 참조 하세요 [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md)합니다.  
   
  ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("no fence"의 약어) 접미사가 포함된 ARM 내장 함수는 메모리 장벽으로 작동하지 않습니다.  
   

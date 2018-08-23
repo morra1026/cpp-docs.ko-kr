@@ -17,38 +17,44 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 61b56472e490d95e22c1013595c5c088d2b58dcd
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 1244b87410a09996d946408ff77dbb552b339c85
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39643032"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42591156"
 ---
 # <a name="asyncbasetrytransitiontoerror-method"></a>AsyncBase::TryTransitionToError 메서드
-지정된 된 오류 코드 내부 오류 상태를 수정할 수 있는지 여부를 나타냅니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-bool TryTransitionToError(  
-   const HRESULT error  
-);  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *error*  
- HRESULT 오류가 발생 합니다.  
-  
-## <a name="return-value"></a>반환 값  
- **true 이면** 내부 오류 상태가 고, 그렇지 않으면 변경 되었으면 **false**합니다.  
-  
-## <a name="remarks"></a>설명  
- 오류 상태는 s_ok가 이미 설정 되어 있는 경우에이 작업은 오류 상태를 수정 합니다. 이 작업이 오류 상태가 이미 오류, 취소, 완료 또는 종료 하는 경우에 효과가 없습니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** async.h  
-  
- **네임스페이스:** Microsoft::WRL  
-  
-## <a name="see-also"></a>참고 항목  
- [AsyncBase 클래스](../windows/asyncbase-class.md)
+
+지정된 된 오류 코드 내부 오류 상태를 수정할 수 있는지 여부를 나타냅니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+bool TryTransitionToError(
+   const HRESULT error
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*error*  
+HRESULT 오류가 발생 합니다.
+
+## <a name="return-value"></a>반환 값
+
+**true 이면** 내부 오류 상태가 고, 그렇지 않으면 변경 되었으면 **false**합니다.
+
+## <a name="remarks"></a>설명
+
+오류 상태는 s_ok가 이미 설정 되어 있는 경우에이 작업은 오류 상태를 수정 합니다. 이 작업이 오류 상태가 이미 오류, 취소, 완료 또는 종료 하는 경우에 효과가 없습니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** async.h
+
+**네임스페이스:** Microsoft::WRL
+
+## <a name="see-also"></a>참고 항목
+
+[AsyncBase 클래스](../windows/asyncbase-class.md)

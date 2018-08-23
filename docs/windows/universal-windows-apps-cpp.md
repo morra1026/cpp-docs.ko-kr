@@ -13,18 +13,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 56b6642bb24107da4c09856dbd8daaf70fb7dfd5
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 7ba556ee3803bb00f07032e0589209af2d32addf
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40015009"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42591755"
 ---
 # <a name="universal-windows-apps-c"></a>유니버설 Windows 앱(C++)
 
 UWP (유니버설 Windows 플랫폼) 앱은 다양 한 장치에서 다양 한 화면 크기에 대 한 자동으로 조정 하는 콘텐츠를 중심으로 하는 간단한 사용자 인터페이스를 강조 하는 디자인 원칙을 구현 합니다. XAML 태그로 UI를 만들고 네이티브 C++에서 코드 숨김을 만듭니다. 다른 언어로 작성된 UWP 앱에서 사용할 수 있는 구성 요소(DLL)를 만들 수도 있습니다. UWP 앱에 대 한 API 화면은 다양 한 운영 체제 서비스를 제공 하는 잘 구성 된 라이브러리는 Windows 런타임입니다.
 
-> [!TIP]  
+> [!TIP]
 > Windows 10 용 Microsoft Store 통해 배포할 기존의 데스크톱 응용 프로그램 패키지를 데스크톱 브리지 앱 변환기를 사용할 수 있습니다. 자세한 내용은 [Centennial 프로젝트에서 사용 하 여 Visual c + + 런타임](https://blogs.msdn.microsoft.com/vcblog/2016/07/07/using-visual-c-runtime-in-centennial-project) 하 고 [데스크톱 브리지](/windows/uwp/porting/desktop-to-uwp-root)합니다.
 
 ## <a name="uwp-apps-that-use-cwinrt"></a>UWP 앱을 사용 하 여 C + + /cli WinRT
@@ -46,4 +46,5 @@ C + + /cli WinRT 프로젝션인 새, 헤더 전용 라이브러리 기반 c + +
 Windows Runtime c + + 템플릿 라이브러리는 ISO c + + 코드가 예외 없는 환경에서 Windows 런타임 액세스할 수 있는 하위 수준 COM 인터페이스를 제공 합니다. 대부분의 경우에서 것이 좋습니다를 사용 하는 C + + /cli WinRT 또는 C + + UWP 앱 개발을 위한 Windows Runtime c + + 템플릿 라이브러리 대신 CX 합니다. Windows Runtime c + + 템플릿 라이브러리에 대 한 정보를 참조 하세요 [Windows 런타임 c + + 템플릿 라이브러리 (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)합니다.
 
 ## <a name="see-also"></a>참고자료
- [Visual C++](../visual-cpp-in-visual-studio.md)<br/>
+
+[Visual C++](../visual-cpp-in-visual-studio.md)<br/>

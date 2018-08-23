@@ -5,19 +5,19 @@ ms.date: 01/22/2017
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: 3175bf1c-86d8-4eda-8d8f-c5b6753d8e38
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9936280d25933afb787d883139725b5a7044db6e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 050b11050cc280fc6d3aa8900487442bd723a57f
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33092390"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42592775"
 ---
 # <a name="delegates-ccx"></a>대리자(C++/CX)
-`delegate` 키워드는 표준 c + +에서 함수 개체를 해당 하는 Windows 런타임 참조 형식을 선언 하는 데 사용 됩니다. 대리자 선언은 함수 서명과 유사하며, 래핑된 함수에 있어야 하는 반환 형식과 매개 변수 형식을 지정합니다. 다음은 사용자 정의 대리자 선언입니다.  
+`delegate` 키워드 표준 c + +에서 함수 개체에 Windows 런타임 상응 하는 참조 형식을 선언 하는 데 사용 됩니다. 대리자 선언은 함수 서명과 유사하며, 래핑된 함수에 있어야 하는 반환 형식과 매개 변수 형식을 지정합니다. 다음은 사용자 정의 대리자 선언입니다.  
   
 ```cpp  
      public delegate void PrimeFoundHandler(int result);  
@@ -29,10 +29,10 @@ ms.locfileid: "33092390"
 event PrimeFoundHandler^ primeFoundEvent;  
 ```  
   
- Windows 런타임 응용 프로그램 이진 인터페이스를 통해 클라이언트에 노출 될 대리자를 선언를 사용 하 여 [Windows::Foundation::TypedEventHandler\<, TResult >](http://msdn.microsoft.com/library/windows/apps/br225997.aspx)합니다. 이 대리자에는 Javascript 클라이언트에서 대리자를 사용할 수 있게 하는 프록시 및 스텁 이진 파일이 미리 정의되어 있습니다.  
+ Windows 런타임 응용 프로그램 이진 인터페이스에서 클라이언트에 노출 될 대리자를 선언, 사용 하 여 [Windows::Foundation::TypedEventHandler\<, TResult >](http://msdn.microsoft.com/library/windows/apps/br225997.aspx)합니다. 이 대리자에는 Javascript 클라이언트에서 대리자를 사용할 수 있게 하는 프록시 및 스텁 이진 파일이 미리 정의되어 있습니다.  
   
 ## <a name="consuming-delegates"></a>대리자 사용  
- 유니버설 Windows 플랫폼 앱을 만들려면 주로 Windows 런타임 클래스를 노출 하는 이벤트의 형식으로 대리자와 작업 합니다. 이벤트를 구독하려면 대리자 시그니처와 일치하는 함수(또는 람다)를 지정하여 대리자 형식의 인스턴스를 만듭니다. 그런 다음 `+=` 연산자를 사용하여 클래스의 이벤트 멤버에 대리자 개체를 전달합니다. 이를 이벤트 구독이라고 합니다. 클래스 인스턴스가 이벤트를 "발생"시키면 개체 또는 다른 개체가 추가한 다른 모든 처리기와 함께 함수가 호출됩니다.  
+ 유니버설 Windows 플랫폼 앱을 만들 때 종종 Windows 런타임 클래스를 노출 하는 이벤트의 형식으로 대리자를 사용 하 여 작동 합니다. 이벤트를 구독하려면 대리자 시그니처와 일치하는 함수(또는 람다)를 지정하여 대리자 형식의 인스턴스를 만듭니다. 그런 다음 `+=` 연산자를 사용하여 클래스의 이벤트 멤버에 대리자 개체를 전달합니다. 이를 이벤트 구독이라고 합니다. 클래스 인스턴스가 이벤트를 "발생"시키면 개체 또는 다른 개체가 추가한 다른 모든 처리기와 함께 함수가 호출됩니다.  
   
 > [!TIP]
 >  이벤트 처리기를 만들 때 Visual Studio에서는 많은 작업을 수행합니다. 예를 들어 XAML 태그에서 이벤트 처리기를 지정하면 도구 설명이 나타납니다. 도구 설명을 선택하는 경우 Visual Studio에서는 자동으로 이벤트 처리기 메서드를 만들어 게시 클래스에 대한 이벤트와 연결합니다.  
@@ -48,9 +48,9 @@ event PrimeFoundHandler^ primeFoundEvent;
  [!code-cpp[cx_delegates#121](../cppcx/codesnippet/CPP/delegatesevents/class1.cpp#121)]  
   
 > [!WARNING]
->  일반적으로 이벤트 처리기의 경우 순환 참조를 방지하기 위해 크게 주의하지 않는 한 람다 대신 명명된 함수를 사용하는 것이 좋습니다. 명명된 함수는 약한 참조로 "this" 포인터를 캡처하지만 람다는 강력한 참조로 캡처하고 순환 참조를 만듭니다. 자세한 내용은 참조 [약한 참조 및 순환 끊기](../cppcx/weak-references-and-breaking-cycles-c-cx.md)합니다.  
+>  일반적으로 이벤트 처리기의 경우 순환 참조를 방지하기 위해 크게 주의하지 않는 한 람다 대신 명명된 함수를 사용하는 것이 좋습니다. 명명된 함수는 약한 참조로 "this" 포인터를 캡처하지만 람다는 강력한 참조로 캡처하고 순환 참조를 만듭니다. 자세한 내용은 [약한 참조 및 순환 중단](../cppcx/weak-references-and-breaking-cycles-c-cx.md)합니다.  
   
- Windows 런타임에서 정의 된 이벤트 처리기 대리자 이름은 규칙에 따라 형식으로 되어 * EventHandler-예를 들어 RoutedEventHandler, SizeChangedEventHandler 또는 SuspendingEventHandler 합니다. 또한 규칙에 따라 이벤트 처리기 대리자는 매개 변수 2개를 사용하고 void를 반환합니다. 형식 매개 변수가 없는 대리자에서 첫 번째 매개 변수는 [Platform::Object^](../cppcx/platform-object-class.md)형식이며 이벤트를 발생시킨 개체인 전송자에 대한 참조를 보유합니다. 이벤트 처리기 메서드에서 인수를 사용하기 전에 원래 형식으로 다시 캐스팅해야 합니다. 형식 매개 변수가 있는 이벤트 처리기 대리자에서 첫 번째 형식 매개 변수는 전송자의 형식을 지정하고, 두 번째 매개 변수는 이벤트에 대한 정보를 보유하는 ref 클래스에 대한 핸들입니다. 규칙에 따라 해당 클래스 이름은 \*EventArgs입니다. 예를 들어 RoutedEventHandler 대리자에는 RoutedEventArgs^ 형식의 두 번째 매개 변수가 있고, DragEventHander에는 DragEventArgs^ 형식의 두 번째 매개 변수가 있습니다.  
+ Windows 런타임에서 정의 된 이벤트 처리기 대리자 이름은 규칙에 따라 폼을 갖습니다 * EventHandler-예를 들어 RoutedEventHandler, SizeChangedEventHandler 또는 SuspendingEventHandler 합니다. 또한 규칙에 따라 이벤트 처리기 대리자는 매개 변수 2개를 사용하고 void를 반환합니다. 형식 매개 변수가 없는 대리자에서 첫 번째 매개 변수는 [Platform::Object^](../cppcx/platform-object-class.md)형식이며 이벤트를 발생시킨 개체인 전송자에 대한 참조를 보유합니다. 이벤트 처리기 메서드에서 인수를 사용하기 전에 원래 형식으로 다시 캐스팅해야 합니다. 형식 매개 변수가 있는 이벤트 처리기 대리자에서 첫 번째 형식 매개 변수는 전송자의 형식을 지정하고, 두 번째 매개 변수는 이벤트에 대한 정보를 보유하는 ref 클래스에 대한 핸들입니다. 규칙에 따라 해당 클래스 이름은 \*EventArgs입니다. 예를 들어 RoutedEventHandler 대리자에는 RoutedEventArgs^ 형식의 두 번째 매개 변수가 있고, DragEventHander에는 DragEventArgs^ 형식의 두 번째 매개 변수가 있습니다.  
   
  규칙에 따라 비동기 작업이 완료될 때 실행되는 코드를 래핑하는 대리자의 이름은 *CompletedHandler로 지정됩니다. 이러한 대리자는 이벤트로 정의되지 않고 클래스에 대한 속성으로 정의됩니다. 따라서 `+=` 연산자를 사용하여 이러한 대리자를 구독하지 않고 대리자 개체를 속성에 할당합니다.  
   
@@ -58,7 +58,7 @@ event PrimeFoundHandler^ primeFoundEvent;
 >  C++ IntelliSense는 전체 대리자 시그니처를 보여 주지 않으므로 EventArgs 매개 변수의 특정 형식을 확인하는 데 도움이 되지 않습니다. 형식을 찾으려면 **개체 브라우저** 로 이동하고 대리자의 `Invoke` 메서드를 살펴보세요.  
   
 ## <a name="creating-custom-delegates"></a>사용자 지정 대리자 만들기  
- 이벤트 처리기를 정의 하거나 소비자가 사용자 지정 기능 Windows 런타임 구성 요소에 전달할 수 있도록 하려면 사용자가 직접 대리자를 정의할 수 있습니다. 다른 Windows 런타임 형식 처럼 공용 대리자 없습니다 generic으로 선언할 수 있습니다.  
+ 이벤트 처리기를 정의 하거나 소비자가 사용자 지정 기능 Windows 런타임 구성 요소에 전달할 수 있도록 사용자가 직접 대리자를 정의할 수 있습니다. 다른 Windows 런타임 형식 처럼 public 대리자를 없습니다 제네릭으로 선언 될 수 있습니다.  
   
 ### <a name="declaration"></a>선언  
  대리자 선언은 대리자가 형식이라는 점을 제외하고 함수 선언과 유사합니다. 일반적으로 대리자는 네임스페이스 범위에서 선언하지만 클래스 선언에 대리자 선언을 중첩할 수도 있습니다. 다음 대리자는 `ContactInfo^` ^를 입력으로 사용하고 `Platform::String^`을 반환하는 모든 함수를 캡슐화합니다.  
@@ -70,9 +70,9 @@ event PrimeFoundHandler^ primeFoundEvent;
  [!code-cpp[Cx_delegates#112](../cppcx/codesnippet/CPP/delegatesevents/class1.h#112)]  
   
 > [!NOTE]
->  사용 된 "^" 대리자 형식을 참조할 때는 것 처럼 모든 Windows 런타임 참조 하는 형식 기호입니다.  
+>  사용 하는 "^" 대리자 형식을 참조할 때는 모든 Windows 런타임으로 참조 하는 형식 처럼 기호입니다.  
   
- 이벤트 선언에는 항상 대리자 형식이 있습니다. 이 예제에서는 일반적인 대리자 형식 시그니처는 Windows 런타임에서:  
+ 이벤트 선언에는 항상 대리자 형식이 있습니다. 이 예제에서는 일반적인 대리자를 보여 줍니다. Windows 런타임에서 형식 시그니처:  
   
  [!code-cpp[cx_delegates#122](../cppcx/codesnippet/CPP/delegatesevents/class1.h#122)]  
   
@@ -86,7 +86,7 @@ event PrimeFoundHandler^ primeFoundEvent;
   
  [!code-cpp[Cx_delegates#114](../cppcx/codesnippet/CPP/delegatesevents/class1.cpp#114)]  
   
- 다음 예제에서는 클라이언트 응용 프로그램의 각 항목에 대해 대리자를 실행 하는 Windows 런타임 구성 요소에서 공용 메서드에 사용자 지정 대리자를 전달는 `Vector`:  
+ 다음 예제에서는 클라이언트 앱을 사용자 지정 대리자를 전달의 각 항목에 대 한 대리자를 실행 하는 Windows 런타임 구성 요소에서 공용 메서드는 `Vector`:  
   
  [!code-cpp[Cx_delegates#118](../cppcx/codesnippet/CPP/clientapp/mainpage.xaml.cpp#118)]  
   
@@ -122,7 +122,7 @@ event PrimeFoundHandler^ primeFoundEvent;
 ## <a name="delegates-and-threads"></a>대리자 및 스레드  
  대리자는 함수 개체와 마찬가지로 나중에 실행하게 될 코드를 포함합니다. 대리자를 만들고 전달하는 코드와 대리자를 사용하고 실행하는 함수가 동일한 스레드에서 실행 중인 경우 작업이 비교적 단순합니다. 해당 스레드가 UI 스레드일 경우 대리자가 XAML 컨트롤과 같은 사용자 인터페이스 개체를 직접 조작할 수 있습니다.  
   
- 클라이언트 응용 프로그램이 스레드 아파트에서 실행 되 고 해당 구성 요소에 대리자를 제공 하는 Windows 런타임 구성 요소를 로드 하는 경우 기본적으로 STA 스레드에서 직접 대리자 호출 됩니다. 대부분의 Windows 런타임 구성 요소는 STA 또는 MTA에서 실행할 수 있습니다.  
+ 클라이언트 응용 프로그램이 스레드 아파트에서 실행 되 고 해당 구성 요소에 대 한 대리자를 제공 하는 Windows 런타임 구성 요소를 로드 하는 경우 기본적으로 STA 스레드에서 직접 대리자 호출 됩니다. 대부분의 Windows 런타임 구성 요소는 STA 또는 MTA에서 실행할 수 있습니다.  
   
  대리자를 실행하는 코드가 다른 스레드에서 실행 중인 경우(예: concurrency::task 개체의 컨텍스트 내) 공유 데이터에 대한 액세스 동기화 책임은 사용자에게 있습니다. 예를 들어 대리자에 Vector에 대한 참조가 포함되어 있고 XAML 컨트롤에 동일한 Vector에 대한 참조가 있는 경우 대리자와 XAML 컨트롤이 동시에 Vector에 액세스를 시도할 경우 발생할 수 있는 교착 상태나 경합 상태를 피하기 위해 조치를 취해야 합니다. 또한 대리자가 호출되기 전에 범위를 벗어날 수 있는 지역 변수 참조로 캡처를 시도하지 않도록 주의해야 합니다.  
   

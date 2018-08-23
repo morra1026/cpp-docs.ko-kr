@@ -15,33 +15,38 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fc8f919dcec994be5d4f0300e9c96dde95895e16
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 7045229cc15304a88253f97e1ad3c9f171f139a0
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39608523"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42597130"
 ---
 # <a name="hstringreferenceoperator-operator"></a>HStringReference::Operator= 연산자
-다른 값으로 이동 **HStringReference** 개체를 현재 **HStringReference** 개체입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
+
+다른 값으로 이동 **HStringReference** 개체를 현재 **HStringReference** 개체입니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
 HStringReference& operator=(HStringReference&& other) throw()  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *other*  
- 기존 **HStringReference** 개체입니다.  
-  
-## <a name="remarks"></a>설명  
- 기존 값 *다른* 현재 개체를 복사할 **HStringReference** 개체를 차례로 합니다 *다른* 개체는 소멸 됩니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## <a name="see-also"></a>참고 항목  
- [HStringReference 클래스](../windows/hstringreference-class.md)
+```
+
+### <a name="parameters"></a>매개 변수
+
+*other*  
+기존 **HStringReference** 개체입니다.
+
+## <a name="remarks"></a>설명
+
+기존 값 *다른* 현재 개체를 복사할 **HStringReference** 개체를 차례로 합니다 *다른* 개체는 소멸 됩니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## <a name="see-also"></a>참고 항목
+
+[HStringReference 클래스](../windows/hstringreference-class.md)

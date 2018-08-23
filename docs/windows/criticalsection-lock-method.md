@@ -17,40 +17,46 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ee66017edabf80349bf2960f7cb2ca2654c8c4cc
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 4fedde29441c9c14b68dec5cff998be57d216e29
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39643581"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42607662"
 ---
 # <a name="criticalsectionlock-method"></a>CriticalSection::Lock 메서드
-지정된 임계 영역 개체의 소유권을 기다립니다. 함수가 호출 스레드가 소유권을 부여받는 시기를 반환합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-SyncLock Lock();  
-  
-   static SyncLock Lock(  
-   _In_ CRITICAL_SECTION* cs  
-);  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *cs*  
- 사용자가 지정한 임계 영역 개체입니다.  
-  
-## <a name="return-value"></a>반환 값  
- 현재 임계 영역의 잠금을 해제하는 데 사용할 수 있는 잠금 개체입니다.  
-  
-## <a name="remarks"></a>설명  
- 첫 번째 **잠금** 함수는 현재 임계 영역 개체에 영향을 줍니다. 두 번째 **잠금** 함수는 사용자가 지정한 임계 영역에 영향을 줍니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## <a name="see-also"></a>참고 항목  
- [CriticalSection 클래스](../windows/criticalsection-class.md)
+
+지정된 임계 영역 개체의 소유권을 기다립니다. 함수가 호출 스레드가 소유권을 부여받는 시기를 반환합니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+SyncLock Lock();
+
+   static SyncLock Lock(
+   _In_ CRITICAL_SECTION* cs
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*cs*  
+사용자가 지정한 임계 영역 개체입니다.
+
+## <a name="return-value"></a>반환 값
+
+현재 임계 영역의 잠금을 해제하는 데 사용할 수 있는 잠금 개체입니다.
+
+## <a name="remarks"></a>설명
+
+첫 번째 **잠금** 함수는 현재 임계 영역 개체에 영향을 줍니다. 두 번째 **잠금** 함수는 사용자가 지정한 임계 영역에 영향을 줍니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## <a name="see-also"></a>참고 항목
+
+[CriticalSection 클래스](../windows/criticalsection-class.md)

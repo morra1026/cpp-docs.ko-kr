@@ -17,56 +17,59 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ec4f120a0b9634a0ff11c4b35ea4790674959383
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 18a53f75f783f5843e3bdf603d21dbacf6746e2b
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39649343"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42591783"
 ---
 # <a name="control"></a>컨트롤
-사용자 정의 형식 컨트롤을 지정 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-[control]  
-```  
-  
-## <a name="remarks"></a>설명  
- **제어** 특성을 의미 합니다 [coclass](../windows/coclass.md) 특성입니다. **제어** c + + 특성에 동일한 기능을 합니다 [컨트롤](http://msdn.microsoft.com/library/windows/desktop/aa366764) MIDL 특성입니다.  
-  
-## <a name="example"></a>예  
-  
-```cpp  
-// cpp_attr_ref_control.cpp  
-// compile with: /LD  
-#include <windows.h>  
-[module(name="Test", control=true)];  
-  
-[object, uuid("9e66a290-4365-11d2-a997-00c04fa37ddb")]  
-__interface ICustom {  
-   HRESULT Custom([in] long l, [out, retval] long *pLong);  
-};  
-  
-[coclass, control, appobject, uuid("9e66a294-4365-11d2-a997-00c04fa37ddb")]  
-class CTest : public ICustom {};  
-```  
-  
-## <a name="requirements"></a>요구 사항  
-  
-### <a name="attribute-context"></a>특성 컨텍스트  
-  
-|||  
-|-|-|  
-|**적용 대상**|**클래스**, **구조체**|  
-|**반복 가능**|아니요|  
-|**필수 특성**|없음|  
-|**잘못된 특성**|없음|  
-  
- 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.  
-  
-## <a name="see-also"></a>참고 항목  
- [IDL 특성](../windows/idl-attributes.md)   
- [클래스 특성](../windows/class-attributes.md)   
- [Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)   
+
+사용자 정의 형식 컨트롤을 지정 합니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+[control]
+```
+
+## <a name="remarks"></a>설명
+
+**제어** 특성을 의미 합니다 [coclass](../windows/coclass.md) 특성입니다. **제어** c + + 특성에 동일한 기능을 합니다 [컨트롤](http://msdn.microsoft.com/library/windows/desktop/aa366764) MIDL 특성입니다.
+
+## <a name="example"></a>예
+
+```cpp
+// cpp_attr_ref_control.cpp
+// compile with: /LD
+#include <windows.h>
+[module(name="Test", control=true)];
+
+[object, uuid("9e66a290-4365-11d2-a997-00c04fa37ddb")]
+__interface ICustom {
+   HRESULT Custom([in] long l, [out, retval] long *pLong);
+};
+
+[coclass, control, appobject, uuid("9e66a294-4365-11d2-a997-00c04fa37ddb")]
+class CTest : public ICustom {};
+```
+
+## <a name="requirements"></a>요구 사항
+
+### <a name="attribute-context"></a>특성 컨텍스트
+
+|||
+|-|-|
+|**적용 대상**|**클래스**, **구조체**|
+|**반복 가능**|아니요|
+|**필수 특성**|없음|
+|**잘못된 특성**|없음|
+
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+[IDL 특성](../windows/idl-attributes.md)  
+[클래스 특성](../windows/class-attributes.md)  
+[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  

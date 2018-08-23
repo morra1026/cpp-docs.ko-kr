@@ -14,16 +14,16 @@ helpviewer_keywords:
 - MBCS [C++], enabling
 - Unicode [C++], enabling
 ms.assetid: b077f4ca-5865-40ef-a46e-d9e4d686ef21
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5afb7bd027fca215e1c10c111132ee881ad49548
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: b63801ac98027f490463f36df23541993528d33b
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40018067"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596200"
 ---
 # <a name="international-enabling"></a>국가별 사용
 대부분의 기존 C 및 c + + 코드에서는 국가별 응용 프로그램에 대 한 제대로 작동 하지 않는 문자 및 문자열 조작에 대 한 가정 합니다. 런타임 라이브러리와 MFC MBCS 또는 유니코드를 지원 하지만 아직 해결 방법이 수행할 수 있습니다. 이 섹션에서는 안내, Visual c + +에서 "국가별 사용"의 의미를 설명 합니다.  

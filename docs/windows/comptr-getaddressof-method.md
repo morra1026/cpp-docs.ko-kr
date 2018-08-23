@@ -17,30 +17,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c1be1dd844b08be23312848f007e4a57dbd893b5
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 98609ce9cc15940586d626c52d24b5ca506164e7
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39646987"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42598996"
 ---
 # <a name="comptrgetaddressof-method"></a>ComPtr::GetAddressOf 메서드
-주소를 검색 합니다 [ptr_](../windows/comptr-ptr-data-member.md) 이 나타내는 인터페이스에 대 한 포인터를 포함 하는 데이터 멤버 **ComPtr**합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-T* const* GetAddressOf() const;  
-T** GetAddressOf();  
-```  
-  
-## <a name="return-value"></a>반환 값  
- 변수의 주소입니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** client.h  
-  
- **네임스페이스:** Microsoft::WRL  
-  
-## <a name="see-also"></a>참고 항목  
- [ComPtr 클래스](../windows/comptr-class.md)
+
+주소를 검색 합니다 [ptr_](../windows/comptr-ptr-data-member.md) 이 나타내는 인터페이스에 대 한 포인터를 포함 하는 데이터 멤버 **ComPtr**합니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+T* const* GetAddressOf() const;
+T** GetAddressOf();
+```
+
+## <a name="return-value"></a>반환 값
+
+변수의 주소입니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** client.h
+
+**네임스페이스:** Microsoft::WRL
+
+## <a name="see-also"></a>참고 항목
+
+[ComPtr 클래스](../windows/comptr-class.md)

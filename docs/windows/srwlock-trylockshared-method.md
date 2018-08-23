@@ -17,36 +17,41 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e67ecd6d5b4968af94ff1a82ad8be24e5b816298
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: bcad153145432997841753828b3b01b728ff365d
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40014249"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42608175"
 ---
 # <a name="srwlocktrylockshared-method"></a>SRWLock::TryLockShared 메서드
-획득 하 려는 **SRWLock** 개체를 현재 또는 지정 된 공유 모드로 **SRWLock** 개체입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-WRL_NOTHROW SyncLockShared TryLockShared();  
-WRL_NOTHROW static SyncLockShared TryLockShared(  
-   _In_ SRWLOCK* lock  
-);  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *lock*  
- 에 대 한 포인터를 **SRWLock** 개체입니다.  
-  
-## <a name="return-value"></a>반환 값  
- 성공한 경우는 **SRWLock** 개체 공유 모드 및 호출 스레드는 잠금 소유권을 받습니다. 그렇지 않은 경우는 **SRWLock** 개체 상태가 올바르지 않습니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## <a name="see-also"></a>참고 항목  
- [SRWLock 클래스](../windows/srwlock-class.md)
+
+획득 하 려는 **SRWLock** 개체를 현재 또는 지정 된 공유 모드로 **SRWLock** 개체입니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+WRL_NOTHROW SyncLockShared TryLockShared();
+WRL_NOTHROW static SyncLockShared TryLockShared(
+   _In_ SRWLOCK* lock
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*lock*  
+에 대 한 포인터를 **SRWLock** 개체입니다.
+
+## <a name="return-value"></a>반환 값
+
+성공한 경우는 **SRWLock** 개체 공유 모드 및 호출 스레드는 잠금 소유권을 받습니다. 그렇지 않은 경우는 **SRWLock** 개체 상태가 올바르지 않습니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## <a name="see-also"></a>참고 항목
+
+[SRWLock 클래스](../windows/srwlock-class.md)

@@ -15,46 +15,51 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0c9a77a8a943dcefdf9db9d43121f2b00bde1568
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 061b3be0e642bb8e7406f54a469723c70559d85a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40011012"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42610163"
 ---
 # <a name="hstringmakereference-method"></a>HString::MakeReference 메서드
-만듭니다는 `HStringReference` 지정 된 문자열 매개 변수에서 개체입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-template<unsigned int sizeDest>  
-    static HStringReference MakeReference(  
-              wchar_t const (&str)[ sizeDest]);  
-  
-    template<unsigned int sizeDest>  
-    static HStringReference MakeReference(  
-              wchar_t const (&str)[sizeDest],   
-              unsigned int len);  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *sizeDest*  
- 대상의 크기를 지정 하는 템플릿 매개 변수 `HStringReference` 버퍼입니다.  
-  
- *str*  
- 와이드 문자 문자열에 대한 참조입니다.  
-  
- *Len 함수*  
- 최대 길이 *str* 이 작업에 사용할 매개 변수 버퍼입니다. 경우는 *len* 매개 변수를 지정 하지 않으면 전체 *str* 매개 변수를 사용 합니다.  
-  
-## <a name="return-value"></a>반환 값  
- `HStringReference` 개체는 지정 된 대로 동일한 값인 *str* 매개 변수입니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## <a name="see-also"></a>참고 항목  
- [HString 클래스](../windows/hstring-class.md)
+
+만듭니다는 `HStringReference` 지정 된 문자열 매개 변수에서 개체입니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+template<unsigned int sizeDest>
+    static HStringReference MakeReference(
+              wchar_t const (&str)[ sizeDest]);
+
+    template<unsigned int sizeDest>
+    static HStringReference MakeReference(
+              wchar_t const (&str)[sizeDest],
+              unsigned int len);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*sizeDest*  
+대상의 크기를 지정 하는 템플릿 매개 변수 `HStringReference` 버퍼입니다.
+
+*str*  
+와이드 문자 문자열에 대한 참조입니다.
+
+*Len 함수*  
+최대 길이 *str* 이 작업에 사용할 매개 변수 버퍼입니다. 경우는 *len* 매개 변수를 지정 하지 않으면 전체 *str* 매개 변수를 사용 합니다.
+
+## <a name="return-value"></a>반환 값
+
+`HStringReference` 개체는 지정 된 대로 동일한 값인 *str* 매개 변수입니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## <a name="see-also"></a>참고 항목
+
+[HString 클래스](../windows/hstring-class.md)

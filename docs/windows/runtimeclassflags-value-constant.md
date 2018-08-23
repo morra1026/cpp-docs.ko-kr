@@ -17,26 +17,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0a9deb05bcb38acb157eaefcc392e9906bea6253
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b64cb5c4e09cd72d96ff0ad7924f6ab5f203b015
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33895738"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42605276"
 ---
 # <a name="runtimeclassflagsvalue-constant"></a>RuntimeClassFlags::value 상수
-포함 하는 필드는 [RuntimeClassType 열거형](../windows/runtimeclasstype-enumeration.md) 값입니다.  
+포함 된 필드를 [RuntimeClassType 열거형](../windows/runtimeclasstype-enumeration.md) 값입니다.
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>구문
   
-```cpp  
-static const unsigned int value = flags;  
-```  
+```cpp
+static const unsigned int value = flags;
+```
   
-## <a name="requirements"></a>요구 사항  
- **헤더:** implements.h  
+## <a name="requirements"></a>요구 사항
+ **헤더:** implements.h
   
- **네임스페이스:** Microsoft::WRL  
+ **네임스페이스:** Microsoft::WRL
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고 항목
  [RuntimeClassFlags 구조체](../windows/runtimeclassflags-structure.md)

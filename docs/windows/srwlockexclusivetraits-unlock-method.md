@@ -17,32 +17,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f30c2d10bd5a25a8241bc52913d675b98e23d88a
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 84f1ef800154f4acf410d45528c50d86180bad39
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40013101"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42607890"
 ---
 # <a name="srwlockexclusivetraitsunlock-method"></a>SRWLockExclusiveTraits::Unlock 메서드
-지정 된 한 독점적인 제어권을 해제 `SRWLock` 개체입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-inline static void Unlock(  
-   _In_ Type srwlock  
-);  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *srwlock*  
- 에 대 한 핸들을 `SRWLock` 개체입니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## <a name="see-also"></a>참고 항목  
- [SRWLockExclusiveTraits 구조체](../windows/srwlockexclusivetraits-structure.md)
+
+지정 된 한 독점적인 제어권을 해제 `SRWLock` 개체입니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+inline static void Unlock(
+   _In_ Type srwlock
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*srwlock*  
+에 대 한 핸들을 `SRWLock` 개체입니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## <a name="see-also"></a>참고 항목
+
+[SRWLockExclusiveTraits 구조체](../windows/srwlockexclusivetraits-structure.md)

@@ -5,22 +5,22 @@ ms.date: 01/22/2017
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: 31c8e08a-00ad-40f9-8f7e-124864aaad58
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98231f0803270a9e033529e163ff2cc23cdd64e9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8465572cf5b921f56e357ae554ecdeaf9943b725
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33089640"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42606378"
 ---
 # <a name="events-ccx"></a>이벤트(C++/CX)
-Windows 런타임 형식을 선언할 수 있습니다 (즉, 게시) 이벤트 및 동일한 구성 요소 또는 다른 구성 요소의 클라이언트 코드는 메서드 호출 연결 하 여 이러한 이벤트에 가입할 수 *이벤트 처리기* 이벤트와 합니다. 여러 이벤트 처리기를 단일 이벤트에 연결할 수 있습니다. 게시 개체에서 이벤트가 발생하면 호출되는 모든 이벤트 처리기가 발생됩니다. 이 방법으로 구독 클래스에서는 게시자가 이벤트를 발생시킬 때 적절한 사용자 지정 작업은 무엇이든 수행할 수 있습니다. 이벤트에는 모든 이벤트 처리기에서 이벤트를 구독하기 위해 필요한 서명을 지정하는 대리자 형식이 있습니다.  
+Windows 런타임 형식을 선언할 수 있습니다 (즉, 게시) 이벤트 및 동일한 구성 요소 또는 다른 구성 요소의 클라이언트 코드는 호출 된 메서드를 연결 하 여 이러한 이벤트를 구독할 수 있습니다 *이벤트 처리기* 이벤트를 사용 하 여 합니다. 여러 이벤트 처리기를 단일 이벤트에 연결할 수 있습니다. 게시 개체에서 이벤트가 발생하면 호출되는 모든 이벤트 처리기가 발생됩니다. 이 방법으로 구독 클래스에서는 게시자가 이벤트를 발생시킬 때 적절한 사용자 지정 작업은 무엇이든 수행할 수 있습니다. 이벤트에는 모든 이벤트 처리기에서 이벤트를 구독하기 위해 필요한 서명을 지정하는 대리자 형식이 있습니다.  
   
 ## <a name="consuming-events-in-windows-components"></a>Windows 구성 요소의 이벤트 사용  
- Windows 런타임의 많은 구성 요소가 이벤트를 노출 합니다. 예를 들어 LightSensor 개체는 센서가 새 luminescence 값을 보고하면 ReadingChanged 이벤트를 발생시킵니다. 프로그램에서 LightSensor 개체를 사용하는 경우 ReadingChanged 이벤트가 발생할 때 호출되는 메서드를 정의할 수 있습니다. 무엇이 든 원하는; 작업을 수행 하는 메서드에서 수행할 수 있습니다. 유일한 요구 사항은 해당 서명이 대리자 이벤트 처리기를 만들고 및 이벤트를 구독 하 참조 하는 방법에 대 한 자세한 내용은 대리자의 서명과 일치 해야 한다는 것 [대리자](../cppcx/delegates-c-cx.md)합니다.  
+ Windows 런타임에서 많은 구성 요소가 이벤트를 노출 합니다. 예를 들어 LightSensor 개체는 센서가 새 luminescence 값을 보고하면 ReadingChanged 이벤트를 발생시킵니다. 프로그램에서 LightSensor 개체를 사용하는 경우 ReadingChanged 이벤트가 발생할 때 호출되는 메서드를 정의할 수 있습니다. 메서드를 원하는 것으로 작업을 수행할 수 있습니다. 유일한 요구 사항은 해당 서명이 대리자 이벤트 처리기를 만듭니다 및 이벤트를 구독 하려면 참조 하는 방법에 대 한 자세한 내용은 사용 되는 대리자의 서명과 일치 해야 하는 [대리자](../cppcx/delegates-c-cx.md)합니다.  
   
 ## <a name="creating-custom-events"></a>사용자 지정 이벤트 만들기  
   

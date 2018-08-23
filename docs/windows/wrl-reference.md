@@ -13,32 +13,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 98a1a1a1ed78d423173c83c1892aced77e9f84e3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5fcd354194a5fe1b28fec774b8ee26550dacf778
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33890946"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42610906"
 ---
 # <a name="wrl-reference"></a>WRL 참조
-이 섹션에는 Windows 런타임 c + + 템플릿 라이브러리 (WRL)에 대 한 참조 정보가 포함 되어 있습니다.  
+이 섹션에서는 Windows 런타임 c + + 템플릿 라이브러리 (WRL)에 대 한 참조 정보를 포함합니다.
   
 > [!NOTE]
->  Windows 런타임 c + + 템플릿 라이브러리는 Windows 런타임 c + + 템플릿 라이브러리 인프라를 지원 하며 사용자 코드에서 직접 사용할 수 없도록 하는 기능을 정의 합니다. 이러한 기능은이 설명서에 기록 됩니다.  
+> Windows 런타임 c + + 템플릿 라이브러리를 Windows 런타임 c + + 템플릿 라이브러리 인프라를 지원 하며 코드에서 직접 사용할 수 없습니다는 기능을 정의 합니다. 이 설명서에서는 이러한 기능이 표시 됩니다.
   
-## <a name="in-this-section"></a>섹션 내용  
+## <a name="in-this-section"></a>섹션 내용
  [Microsoft::WRL 네임스페이스](../windows/microsoft-wrl-namespace.md)  
- Windows 런타임 c + + 템플릿 라이브러리를 구성 하는 기본 형식을 정의 합니다.  
+ Windows 런타임 c + + 템플릿 라이브러리를 구성 하는 기본 형식을 정의 합니다.
   
  [Microsoft::WRL::Wrappers 네임스페이스](../windows/microsoft-wrl-wrappers-namespace.md)  
- 개체, 문자열 및 핸들의 수명 관리를 간소화하는 RAII(Resource Acquisition Is Initialization) 래퍼 유형을 정의합니다.  
+ 개체, 문자열 및 핸들의 수명 관리를 간소화하는 RAII(Resource Acquisition Is Initialization) 래퍼 유형을 정의합니다.
   
  [Microsoft::WRL::Wrappers::HandleTraits 네임스페이스](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)  
- 일반 핸들 기반 리소스 종류의 특징을 설명합니다.  
+ 일반적인 핸들 기반 리소스 종류의 특징을 설명 합니다.
   
  [Windows::Foundation 네임스페이스](../windows/windows-foundation-namespace.md)  
- 개체 및 팩터리 생성 등의 기본적인 Windows 런타임 기능을 사용 하도록 설정 합니다.  
+ 개체 및 팩터리 만들기와 같은 기본적인 Windows 런타임 기능을 사용 하도록 설정 합니다.
   
-## <a name="related-sections"></a>관련 단원  
+## <a name="related-sections"></a>관련 단원
  [Windows 런타임 C++ 템플릿 라이브러리(WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)  
- Windows 런타임 c + + 템플릿 라이브러리를 작성 및 Windows 런타임 구성 요소를 사용 하는 간단한 방법을 제공 하는 COM 기반 템플릿 라이브러리를 소개 합니다.
+ Windows 런타임 c + + 템플릿 라이브러리를 만들고 Windows 런타임 구성 요소를 사용 하기 위한 간단한 방법을 제공 하는 COM 기반 템플릿 라이브러리를 소개 합니다.

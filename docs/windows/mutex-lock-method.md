@@ -17,42 +17,45 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1dcb5b187944e58ff24f312fa376ff71e2cf63f3
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 38bd11620f8d403bbd1667ab6fa4f3f827362c88
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40018639"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42600875"
 ---
 # <a name="mutexlock-method"></a>Mutex::Lock 메서드
-현재 개체를 때까지 대기 또는 **뮤텍스** 지정된 된 핸들, 뮤텍스 또는 지정 된 시간 제한 간격이 경과 하는 릴리스를 사용 하 여 연결 된 개체입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-SyncLock Lock(  
-   DWORD milliseconds = INFINITE  
-);  
-  
-static SyncLock Lock(  
-   HANDLE h,  
-   DWORD milliseconds = INFINITE  
-);  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *시간 (밀리초)*  
- 제한 시간 간격(밀리초)입니다. 기본값은 INFINITE으로, 무제한 대기합니다.  
-  
- *h*  
- 핸들을 **뮤텍스** 개체입니다.  
-  
-## <a name="return-value"></a>반환 값  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers
- 
- ## <a name="see-also"></a>참고 항목
- [Mutex 클래스](../windows/mutex-class1.md)
+
+현재 개체를 때까지 대기 또는 **뮤텍스** 지정된 된 핸들, 뮤텍스 또는 지정 된 시간 제한 간격이 경과 하는 릴리스를 사용 하 여 연결 된 개체입니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+SyncLock Lock(
+   DWORD milliseconds = INFINITE
+);
+
+static SyncLock Lock(
+   HANDLE h,
+   DWORD milliseconds = INFINITE
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*시간 (밀리초)*  
+제한 시간 간격(밀리초)입니다. 기본값은 INFINITE으로, 무제한 대기합니다.
+
+*h*  
+핸들을 **뮤텍스** 개체입니다.
+
+## <a name="return-value"></a>반환 값
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## <a name="see-also"></a>참고 항목
+[Mutex 클래스](../windows/mutex-class1.md)

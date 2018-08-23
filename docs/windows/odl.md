@@ -17,60 +17,63 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: aebc183bb8f74e3cd1710912c053bca46bef84a5
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: fdc9e12a72758129f19ccd515c705df76bfe47ad
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40014070"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42594603"
 ---
 # <a name="odl"></a>odl
-개체 설명 언어 (ODL) 인터페이스는 인터페이스를 식별합니다. MIDL 컴파일러 않아도 합니다 **odl** ; 특성 이전.odl 파일을 사용 하 여 호환성을 위해서만 인식 됩니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-[odl]  
-```  
-  
-## <a name="remarks"></a>설명  
- 합니다 **odl** c + + 특성에 동일한 기능을 합니다 [odl](http://msdn.microsoft.com/library/windows/desktop/aa367126) MIDL 특성입니다.  
-  
-## <a name="example"></a>예  
-  
-```cpp  
-// cpp_attr_ref_odl.cpp  
-// compile with: /LD  
-#include <unknwn.h>  
-[module(name="MyLIb")];  
-  
-[odl, oleautomation, dual, uuid("00000000-0000-0000-0000-000000000001")]  
-__interface IMyInterface  
-{  
-   HRESULT x();  
-};  
-  
-[coclass, uuid("00000000-0000-0000-0000-000000000002")]  
-class cmyClass : public IMyInterface  
-{  
-public:  
-   HRESULT x(){}  
-};  
-```  
-  
-## <a name="requirements"></a>요구 사항  
-  
-### <a name="attribute-context"></a>특성 컨텍스트  
-  
-|||  
-|-|-|  
-|**적용 대상**|**interface**|  
-|**반복 가능**|아니요|  
-|**필수 특성**|없음|  
-|**잘못된 특성**|없음|  
-  
- 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.  
-  
-## <a name="see-also"></a>참고 항목  
- [IDL 특성](../windows/idl-attributes.md)   
- [인터페이스 특성](../windows/interface-attributes.md)   
+
+개체 설명 언어 (ODL) 인터페이스는 인터페이스를 식별합니다. MIDL 컴파일러 않아도 합니다 **odl** ; 특성 이전.odl 파일을 사용 하 여 호환성을 위해서만 인식 됩니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+[odl]
+```
+
+## <a name="remarks"></a>설명
+
+합니다 **odl** c + + 특성에 동일한 기능을 합니다 [odl](http://msdn.microsoft.com/library/windows/desktop/aa367126) MIDL 특성입니다.
+
+## <a name="example"></a>예
+
+```cpp
+// cpp_attr_ref_odl.cpp
+// compile with: /LD
+#include <unknwn.h>
+[module(name="MyLIb")];
+
+[odl, oleautomation, dual, uuid("00000000-0000-0000-0000-000000000001")]
+__interface IMyInterface
+{
+   HRESULT x();
+};
+
+[coclass, uuid("00000000-0000-0000-0000-000000000002")]
+class cmyClass : public IMyInterface
+{
+public:
+   HRESULT x(){}
+};
+```
+
+## <a name="requirements"></a>요구 사항
+
+### <a name="attribute-context"></a>특성 컨텍스트
+
+|||
+|-|-|
+|**적용 대상**|**interface**|
+|**반복 가능**|아니요|
+|**필수 특성**|없음|
+|**잘못된 특성**|없음|
+
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+[IDL 특성](../windows/idl-attributes.md)  
+[인터페이스 특성](../windows/interface-attributes.md)  

@@ -17,26 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9d47c3b8513883b3b9ee27457fa3a0d670acac13
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: d3ab1f176029c872c121b816a4ea57b9f83ca6bc
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39646217"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596839"
 ---
 # <a name="classfactoryclassfactory-constructor"></a>ClassFactory::ClassFactory 생성자
-## <a name="syntax"></a>구문  
-  
-```cpp  
-WRL_NOTHROW ClassFactory();  
-```  
-  
-## <a name="return-value"></a>반환 값  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** module.h  
-  
- **네임스페이스:** Microsoft::WRL  
-  
-## <a name="see-also"></a>참고 항목  
- [ClassFactory 클래스](../windows/classfactory-class.md)
+
+## <a name="syntax"></a>구문
+
+```cpp
+WRL_NOTHROW ClassFactory();
+```
+
+## <a name="return-value"></a>반환 값
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** module.h
+
+**네임스페이스:** Microsoft::WRL
+
+## <a name="see-also"></a>참고 항목
+
+[ClassFactory 클래스](../windows/classfactory-class.md)

@@ -11,16 +11,16 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Metadata::DefaultMemberAttribute Attribute
 ms.assetid: d8abda01-c257-4371-aec4-541d4825e0af
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2233dd96f483df632c7ff8cd5b1a7a051232c94d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 62d531418e4729c34907cb65d446f89bfa60fb63
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33087938"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42608916"
 ---
 # <a name="platformmetadatadefaultmemberattribute-attribute"></a>Platform::Metadata::DefaultMemberAttribute 특성
 몇 가지 가능한 오버로드된 함수 중에서 호출할 기본 설정 함수를 나타냅니다.  

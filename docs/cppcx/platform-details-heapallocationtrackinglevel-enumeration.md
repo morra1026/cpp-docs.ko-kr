@@ -11,16 +11,16 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Details::HeapAllocationTrackingLevel Enumeration
 ms.assetid: dc341bc0-b47b-4eb2-9445-fbaf788e7b1a
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc1c3dd382604e51f049ac157faba38e0d7d0032
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d80a91c8dcca5b2b66f0225a39c3cb208656b46c
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33086930"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42593850"
 ---
 # <a name="platformdetailsheapallocationtrackinglevel-enumeration"></a>Platform::Details::HeapAllocationTrackingLevel 열거형
 이 열거형은 내부 전용이며 개발용으로 사용되지 않아야 합니다.  

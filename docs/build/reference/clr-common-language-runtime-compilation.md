@@ -23,12 +23,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1284d0300fcea3adc5f2884a7d1eff7862ff2b65
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6b7ec520d27d52bb3e50a58780d822363016ef76
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379616"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42606865"
 ---
 # <a name="clr-common-language-runtime-compilation"></a>/clr(공용 언어 런타임 컴파일)
 응용 프로그램 및 구성 요소가 CLR(공용 언어 런타임)의 기능을 사용할 수 있게 합니다.  
@@ -50,13 +50,13 @@ ms.locfileid: "32379616"
   
  [혼합형 (네이티브 및 관리) 어셈블리](../../dotnet/mixed-native-and-managed-assemblies.md) 및  
   
- [How to: Migrate to /clr](../../dotnet/how-to-migrate-to-clr.md).  
+ [방법: /clr으로 마이그레이션](../../dotnet/how-to-migrate-to-clr.md)합니다.  
   
  **/clr:pure**  
  /clr:pure는 사용되지 않습니다. 이후 버전의 컴파일러는 이 옵션을 지원하지 않을 수 있습니다. C#에 대한 순수형 MSIL이어야 하는 코드를 포팅하는 것이 좋습니다.  
   
  **/clr:safe**  
- /clr:safe는 사용되지 않습니다. 이후 버전의 컴파일러는 이 옵션을 지원하지 않을 수 있습니다. C#에 대 한 안전 MSIL 이어야 하는 코드를 포팅하는 것이 좋습니다. 
+ /clr:safe는 사용되지 않습니다. 이후 버전의 컴파일러는 이 옵션을 지원하지 않을 수 있습니다. C#에 안전 하 게 MSIL 이어야 하는 코드를 포팅하는 것이 좋습니다. 
   
  **/clr:noAssembly**  
  어셈블리 매니페스트를 출력 파일에 삽입하지 않도록 지정합니다. 기본적으로 **noAssembly** 옵션은 적용되지 않습니다.  
@@ -68,7 +68,7 @@ ms.locfileid: "32379616"
  Visual C++ 2005 이전은, **/clr:noAssembly** 에 **/LD**가 필요합니다. **/clr:noAssembly** 를 지정할 때 **/LD**가 암시됩니다.  
   
  **/clr:initialAppDomain**  
- CLR 버전 1에서 [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] 응용 프로그램을 실행할 수 있게 합니다. 사용 하는 경우 **initialAppDomain**에서 설명 하는 문제 중 일부를 나타날 수 [버그: 관리 Visual c + + 구성 요소에 대 한 확장을 사용할 때의 AppDomainUnloaded 예외](http://go.microsoft.com/fwlink/p/?linkid=169465) microsoft 웹 사이트를 지원 합니다.  
+ CLR 버전 1에서 실행 하려면 Visual c + + 응용 프로그램을 사용 하도록 설정 합니다. 사용 하는 경우 **initialAppDomain**에서 설명 하는 문제 중 일부에 나타날 수 있습니다 [버그: 관리 Visual c + + 구성 요소에 대 한 확장을 사용할 때의 AppDomainUnloaded 예외](http://go.microsoft.com/fwlink/p/?linkid=169465) microsoft 웹 사이트를 지원 합니다.  
   
  **initialAppDomain** 을 사용하여 컴파일된 응용 프로그램은 CLR 버전 1에서 지원되지 않으므로 ASP.NET을 사용하는 응용 프로그램에서 사용하면 안됩니다.  
   
@@ -84,11 +84,11 @@ ms.locfileid: "32379616"
   
  관리 되는 응용 프로그램에서 디버깅을 사용 하려면 참조 [/ASSEMBLYDEBUG (DebuggableAttribute 추가)](../../build/reference/assemblydebug-add-debuggableattribute.md)합니다.  
   
- CLR 형식만 가비지 수집 힙에 인스턴스화됩니다. 자세한 내용은 참조 [클래스 및 구조체](../../windows/classes-and-structs-cpp-component-extensions.md)합니다. 함수를 네이티브 코드로 컴파일하려면 `unmanaged` pragma를 사용합니다. 자세한 내용은 참조 [관리, 관리 되지 않는](../../preprocessor/managed-unmanaged.md)합니다.  
+ CLR 형식만 가비지 수집 힙에 인스턴스화됩니다. 자세한 내용은 [클래스 및 구조체](../../windows/classes-and-structs-cpp-component-extensions.md)합니다. 함수를 네이티브 코드로 컴파일하려면 `unmanaged` pragma를 사용합니다. 자세한 내용은 [관리 되는, 관리 되지 않는](../../preprocessor/managed-unmanaged.md)합니다.  
   
  기본적으로 **/clr** 은 적용되지 않습니다. **/clr** 이 적용되는 경우 **/MD** 도 적용됩니다. 자세한 내용은 [/MD, /MT, /LD(런타임 라이브러리 사용)](../../build/reference/md-mt-ld-use-run-time-library.md)를 참조하세요. **/MD** 는 표준 헤더(.h) 파일에서 동적으로 연결된 다중 스레드 버전의 런타임 루틴이 선택되도록 합니다. CLR 가비지 수집기는 보조 스레드에서 종료자를 실행하므로 관리되는 프로그래밍에 다중 스레딩이 필요합니다.  
   
- 사용 하 여 컴파일하는 경우 **/c**, 여 결과 출력 파일의 CLR 형식을 지정할 수 있습니다 [/CLRIMAGETYPE](../../build/reference/clrimagetype-specify-type-of-clr-image.md)합니다.  
+ 사용 하 여 컴파일하면 **/c**를 사용 하 여 결과 출력 파일의 CLR 형식을 지정할 수 있습니다 [/CLRIMAGETYPE](../../build/reference/clrimagetype-specify-type-of-clr-image.md)합니다.  
   
  **/clr** 은 **/EHa**를 암시하며, 다른 **/EH** 옵션은 **/clr**에 대해 지원되지 않습니다. 자세한 내용은 [/EH(예외 처리 모델)](../../build/reference/eh-exception-handling-model.md)를 참조하세요.  
   
@@ -100,7 +100,7 @@ ms.locfileid: "32379616"
   
  **/clr** 을 사용하는 경우 `_MANAGED` 기호가 1로 정의됩니다. 자세한 내용은 [Predefined Macros](../../preprocessor/predefined-macros.md)을 참조하십시오.  
   
- 네이티브 개체 파일의 전역 변수가 먼저 초기화된 다음(실행 파일이 DLL인 경우 DllMain 중에) 관리되는 섹션의 전역 변수가 초기화됩니다(관리 코드가 실행되기 전에). `#pragma`[init_seg](../../preprocessor/init-seg.md) 만 스레드와 관리 되지 않는 범주의 초기화 순서에 영향을 줍니다.  
+ 네이티브 개체 파일의 전역 변수가 먼저 초기화된 다음(실행 파일이 DLL인 경우 DllMain 중에) 관리되는 섹션의 전역 변수가 초기화됩니다(관리 코드가 실행되기 전에). `#pragma`[init_seg](../../preprocessor/init-seg.md) 만 관리 하 고 관리 되지 않는 범주의 초기화 순서에 영향을 줍니다.  
   
 ## <a name="metadata-and-unnamed-classes"></a>메타데이터 및 명명되지 않은 클래스  
  명명되지 않은 클래스는 `$UnnamedClass$`*crc-of-current-file-name*`$`*index*`$`와 같이 이름이 지정된 메타데이터에 나타납니다. 여기서 *index* 는 컴파일할 때 이름이 지정되지 않은 클래스의 순차적 개수입니다. 예를 들어 다음 코드 샘플은 메타데이터에 명명되지 않은 클래스를 생성합니다.  
@@ -129,7 +129,7 @@ class {} x;
     > [!NOTE]
     >  **속성 페이지** 대화 상자에서 **/clr** 을 사용하도록 설정하는 경우 **/clr** 과 호환되지 않는 컴파일러 옵션 속성도 필요에 따라 조정됩니다. 예를 들어 **/RTC** 를 설정한 다음 **/clr** 을 사용하도록 설정하는 경우 **/RTC** 가 해제됩니다.  
     >   
-    >  또한 **/clr** 응용 프로그램을 디버그하는 경우 **디버거 형식** 속성을 **혼합** 또는 **관리 전용**으로 설정합니다. 자세한 내용은 참조 [c + + 디버그 구성에 대 한 프로젝트 설정을](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration)합니다.  
+    >  또한 **/clr** 응용 프로그램을 디버그하는 경우 **디버거 형식** 속성을 **혼합** 또는 **관리 전용**으로 설정합니다. 자세한 내용은 [c + + 디버그 구성에 대 한 프로젝트 설정을](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration)합니다.  
   
      모듈을 만드는 방법에 대 한 정보에 대 한 참조 [/NOASSEMBLY (MSIL 모듈 만들기)](../../build/reference/noassembly-create-a-msil-module.md)합니다.  
   

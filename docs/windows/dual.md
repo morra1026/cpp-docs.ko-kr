@@ -17,77 +17,81 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 60a4326975f60455e6d2ef90575f5c940287042a
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 3727fc70698d3202734db7bbe72773cbe49bffb9
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39644114"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42592915"
 ---
 # <a name="dual"></a>dual
-.Idl 파일에 이중 인터페이스와 인터페이스를 배치합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-[dual]  
-```  
-  
-## <a name="remarks"></a>설명  
- 경우는 **이중** c + + 특성이 인터페이스 앞에 오면, 생성된 된.idl 파일의 라이브러리 블록 안에 배치 하는 인터페이스입니다.  
-  
-## <a name="example"></a>예  
- 다음 코드는 사용 하는 특성 블록 **이중** 인터페이스 정의 하기 전에:  
-  
-```cpp  
-// cpp_attr_ref_dual.cpp  
-// compile with: /LD  
-#include <windows.h>  
-[module(name="MyLibrary")];  
-  
-[uuid("2F5F63F1-16DA-11d2-9E7B-00C04FB926DA"), dual]  
-  
-__interface IStatic : IDispatch   
-{  
-   HRESULT Func1(int i);  
-   [   propget,   
-      id(1),   
-      bindable,   
-      displaybind,   
-      defaultbind,   
-      requestedit  
-   ]   
-   HRESULT P1([out, retval] long *nSize);  
-   [   propput,   
-      id(1),   
-      bindable,   
-      displaybind,   
-      defaultbind,   
-      requestedit  
-   ]   
-   HRESULT P1([in] long nSize);      
-};  
-  
-[cpp_quote("#include file.h")];  
-```  
-  
-## <a name="requirements"></a>요구 사항  
-  
-### <a name="attribute-context"></a>특성 컨텍스트  
-  
-|||  
-|-|-|  
-|**적용 대상**|**interface**|  
-|**반복 가능**|아니요|  
-|**필수 특성**|없음|  
-|**잘못된 특성**|`dispinterface`|  
-  
- 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.  
-  
-## <a name="see-also"></a>참고 항목  
- [IDL 특성](../windows/idl-attributes.md)   
- [용도별 특성](../windows/attributes-by-usage.md)   
- [사용자 지정](../windows/custom-cpp.md)   
- [Dispinterface](../windows/dispinterface.md)   
- [object](../windows/object-cpp.md)   
- [__interface](../cpp/interface.md)   
+
+.Idl 파일에 이중 인터페이스와 인터페이스를 배치합니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+[dual]
+```
+
+## <a name="remarks"></a>설명
+
+경우는 **이중** c + + 특성이 인터페이스 앞에 오면, 생성된 된.idl 파일의 라이브러리 블록 안에 배치 하는 인터페이스입니다.
+
+## <a name="example"></a>예
+
+다음 코드는 사용 하는 특성 블록 **이중** 인터페이스 정의 하기 전에:
+
+```cpp
+// cpp_attr_ref_dual.cpp
+// compile with: /LD
+#include <windows.h>
+[module(name="MyLibrary")];
+
+[uuid("2F5F63F1-16DA-11d2-9E7B-00C04FB926DA"), dual]
+
+__interface IStatic : IDispatch
+{
+   HRESULT Func1(int i);
+   [   propget,
+      id(1),
+      bindable,
+      displaybind,
+      defaultbind,
+      requestedit
+   ]
+   HRESULT P1([out, retval] long *nSize);
+   [   propput,
+      id(1),
+      bindable,
+      displaybind,
+      defaultbind,
+      requestedit
+   ]
+   HRESULT P1([in] long nSize); 
+};
+
+[cpp_quote("#include file.h")];
+```
+
+## <a name="requirements"></a>요구 사항
+
+### <a name="attribute-context"></a>특성 컨텍스트
+
+|||
+|-|-|
+|**적용 대상**|**interface**|
+|**반복 가능**|아니요|
+|**필수 특성**|없음|
+|**잘못된 특성**|`dispinterface`|
+
+자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+[IDL 특성](../windows/idl-attributes.md)  
+[용도별 특성](../windows/attributes-by-usage.md)  
+[custom](../windows/custom-cpp.md)  
+[dispinterface](../windows/dispinterface.md)  
+[object](../windows/object-cpp.md)  
+[__interface](../cpp/interface.md)  

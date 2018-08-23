@@ -15,19 +15,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ebe701711de329d7b763b7bf3b3d3dbf1ce0ce93
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 89a6b3392491ad36a0b0c9d542ffac4738b7c0f6
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881119"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42605361"
 ---
 # <a name="id-property"></a>ID 속성
-ID 속성에는 프로그램 코드에서 각 액셀러레이터 키 테이블 항목을 참조합니다. 바로 가기 키 또는 키 조합을 누를 때 프로그램 받을 명령 값입니다. 액셀러레이터에서 메뉴 항목 같도록 하 게 Id 동일 (액셀러레이터 키 테이블의 ID는 메뉴 리소스에 대 한 ID와 동일).  
+ID 속성에는 프로그램 코드에서 각 액셀러레이터 키 테이블 항목을 참조합니다. 이 프로그램의 액셀러레이터 키 또는 키 조합을 누를 때 받을 명령 값입니다. 메뉴 항목 동일 액셀러레이터 키를 확인, 하 게 해당 Id 동일 (액셀러레이터 키 테이블의 ID 메뉴 리소스에 대 한 ID와 동일).
   
-## <a name="requirements"></a>요구 사항  
- Win32  
+## <a name="requirements"></a>요구 사항
+ Win32
   
-## <a name="see-also"></a>참고 항목  
- [액셀러레이터 키 속성 설정](../windows/setting-accelerator-properties.md)   
+## <a name="see-also"></a>참고 항목
+ [액셀러레이터 키 속성 설정](../windows/setting-accelerator-properties.md)  
  [액셀러레이터 키 편집기](../windows/accelerator-editor.md)

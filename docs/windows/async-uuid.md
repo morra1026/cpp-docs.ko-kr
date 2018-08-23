@@ -17,58 +17,62 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0596b15daff5567e2572bf8c1f2b401cdf300a49
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 7619868e131476143c144e695e842708d1b54a6b
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39642414"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42606447"
 ---
 # <a name="asyncuuid"></a>async_uuid
-MIDL 컴파일러에 지시 합니다 COM 인터페이스의 동기 및 비동기 버전을 정의 하는 UUID를 지정 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-[async_uuid (  
-   uuid  
-)]  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *uuid*  
- 인터페이스의 버전을 식별 하는 UUID입니다.  
-  
-## <a name="remarks"></a>설명  
- 합니다 **async_uuid** c + + 특성에 동일한 기능을 합니다 [async_uuid](http://msdn.microsoft.com/library/windows/desktop/aa366735) MIDL 특성입니다.  
-  
-## <a name="example"></a>예  
-  
-```cpp  
-// cpp_attr_ref_async_uuid.cpp  
-// compile with: /LD  
-#include <Windows.h>  
-[module(name="Test")];  
-[object, uuid("9e66a290-4365-11d2-a997-00c04fa37ddb"),   
-async_uuid("e8583106-38fd-487e-912e-4fc8645c677e")]  
-__interface ICustom {  
-   HRESULT Custom([in] long l, [out, retval] long *pLong);  
-};  
-```  
-  
-## <a name="requirements"></a>요구 사항  
-  
-### <a name="attribute-context"></a>특성 컨텍스트  
-  
-|||  
-|-|-|  
-|**적용 대상**|`interface`|  
-|**반복 가능**|아니요|  
-|**필수 특성**|없음|  
-|**잘못된 특성**|**이중**, **dispinterface**|  
-  
- 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.  
-  
-## <a name="see-also"></a>참고 항목  
- [IDL 특성](../windows/idl-attributes.md)   
- [인터페이스 특성](../windows/interface-attributes.md)   
+
+MIDL 컴파일러에 지시 합니다 COM 인터페이스의 동기 및 비동기 버전을 정의 하는 UUID를 지정 합니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+[async_uuid (
+   uuid
+)]
+```
+
+### <a name="parameters"></a>매개 변수
+
+*uuid*  
+인터페이스의 버전을 식별 하는 UUID입니다.
+
+## <a name="remarks"></a>설명
+
+합니다 **async_uuid** c + + 특성에 동일한 기능을 합니다 [async_uuid](http://msdn.microsoft.com/library/windows/desktop/aa366735) MIDL 특성입니다.
+
+## <a name="example"></a>예
+
+```cpp
+// cpp_attr_ref_async_uuid.cpp
+// compile with: /LD
+#include <Windows.h>
+[module(name="Test")];
+[object, uuid("9e66a290-4365-11d2-a997-00c04fa37ddb"),
+async_uuid("e8583106-38fd-487e-912e-4fc8645c677e")]
+__interface ICustom {
+   HRESULT Custom([in] long l, [out, retval] long *pLong);
+};
+```
+
+## <a name="requirements"></a>요구 사항
+
+### <a name="attribute-context"></a>특성 컨텍스트
+
+|||
+|-|-|
+|**적용 대상**|`interface`|
+|**반복 가능**|아니요|
+|**필수 특성**|없음|
+|**잘못된 특성**|**이중**, **dispinterface**|
+
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+[IDL 특성](../windows/idl-attributes.md)  
+[인터페이스 특성](../windows/interface-attributes.md)  

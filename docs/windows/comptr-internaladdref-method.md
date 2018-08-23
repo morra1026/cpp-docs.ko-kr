@@ -17,29 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 30cba8b29ad6100826f580dd625bc18e2b8f9e16
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 7d9217a91b6b6ceda3a0743f94186dc52cbb7f80
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39641293"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42613352"
 ---
 # <a name="comptrinternaladdref-method"></a>ComPtr::InternalAddRef 메서드
-와 연결 된 인터페이스의 참조 횟수를 증가 시킵니다 **ComPtr**합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-void InternalAddRef() const;  
-```  
-  
-## <a name="remarks"></a>설명  
- 이 메서드는 보호 됩니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** client.h  
-  
- **네임스페이스:** Microsoft::WRL  
-  
-## <a name="see-also"></a>참고 항목  
- [ComPtr 클래스](../windows/comptr-class.md)
+
+와 연결 된 인터페이스의 참조 횟수를 증가 시킵니다 **ComPtr**합니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+void InternalAddRef() const;
+```
+
+## <a name="remarks"></a>설명
+
+이 메서드는 보호 됩니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** client.h
+
+**네임스페이스:** Microsoft::WRL
+
+## <a name="see-also"></a>참고 항목
+
+[ComPtr 클래스](../windows/comptr-class.md)

@@ -17,72 +17,77 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e15897eeaa6a158ae3946202819b697c7372984d
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 4ef8cfc2a8485a45ac3156a277617c3eacdd8a5b
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39642709"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42612796"
 ---
 # <a name="firstis"></a>first_is
-전송할 첫 번째 배열 요소의 인덱스를 지정 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-[ first_is(  
-   "expression"  
-) ]  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *식*  
- 하나 이상의 C 언어 식입니다. 빈 인수 슬롯 허용 됩니다.  
-  
-## <a name="remarks"></a>설명  
- 합니다 **first_is** c + + 특성에 동일한 기능을 합니다 [first_is](http://msdn.microsoft.com/library/windows/desktop/aa366831) MIDL 특성입니다.  
-  
-## <a name="example"></a>예  
- 다음 코드 섹션을 배열에 지정 하는 다양 한 방법을 보여 줍니다.  
-  
-```cpp  
-// cpp_attr_ref_first_is.cpp  
-// compile with: /LD  
-#include "windows.h"  
-#include "unknwn.h"  
-  
-[module(name="MyLib")];  
-  
-[object, uuid(11111111-1111-1111-1111-111111111111)]  
-__interface b   
-{  
-   [id(0), propget, bindable, displaybind, defaultbind,   
-requestedit] HRESULT get_I([out, retval]long *i);  
-   HRESULT Proc1([in] short First, [in] short Last,   
-[first_is(First), last_is(Last), size_is(Last-First)] char Arr1[]);   
-   HRESULT Proc2([in] short First, [in] short Last,   
-[last_is(First), size_is(Last)] char Arr2[]);  
-};  
-```  
-  
-## <a name="requirements"></a>요구 사항  
-  
-### <a name="attribute-context"></a>특성 컨텍스트  
-  
-|||  
-|-|-|  
-|**적용 대상**|필드에 **구조체** 하거나 **union**인터페이스 매개 변수, 인터페이스 메서드|  
-|**반복 가능**|아니요|  
-|**필수 특성**|없음|  
-|**잘못된 특성**|없음|  
-  
- 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.  
-  
-## <a name="see-also"></a>참고 항목  
- [IDL 특성](../windows/idl-attributes.md)   
- [Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)   
- [매개 변수 특성](../windows/parameter-attributes.md)   
- [last_is](../windows/last-is.md)   
- [max_is](../windows/max-is.md)   
- [length_is](../windows/length-is.md)   
- [size_is](../windows/size-is.md)   
+
+전송할 첫 번째 배열 요소의 인덱스를 지정 합니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+[ first_is(
+   "expression"
+) ]
+```
+
+### <a name="parameters"></a>매개 변수
+
+*식*  
+하나 이상의 C 언어 식입니다. 빈 인수 슬롯 허용 됩니다.
+
+## <a name="remarks"></a>설명
+
+합니다 **first_is** c + + 특성에 동일한 기능을 합니다 [first_is](http://msdn.microsoft.com/library/windows/desktop/aa366831) MIDL 특성입니다.
+
+## <a name="example"></a>예
+
+다음 코드 섹션을 배열에 지정 하는 다양 한 방법을 보여 줍니다.
+
+```cpp
+// cpp_attr_ref_first_is.cpp
+// compile with: /LD
+#include "windows.h"
+#include "unknwn.h"
+
+[module(name="MyLib")];
+
+[object, uuid(11111111-1111-1111-1111-111111111111)]
+__interface b
+{
+   [id(0), propget, bindable, displaybind, defaultbind,
+requestedit] HRESULT get_I([out, retval]long *i);
+   HRESULT Proc1([in] short First, [in] short Last,
+[first_is(First), last_is(Last), size_is(Last-First)] char Arr1[]);
+   HRESULT Proc2([in] short First, [in] short Last,
+[last_is(First), size_is(Last)] char Arr2[]);
+};
+```
+
+## <a name="requirements"></a>요구 사항
+
+### <a name="attribute-context"></a>특성 컨텍스트
+
+|||
+|-|-|
+|**적용 대상**|필드에 **구조체** 하거나 **union**인터페이스 매개 변수, 인터페이스 메서드|
+|**반복 가능**|아니요|
+|**필수 특성**|없음|
+|**잘못된 특성**|없음|
+
+자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+[IDL 특성](../windows/idl-attributes.md)  
+[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  
+[매개 변수 특성](../windows/parameter-attributes.md)  
+[last_is](../windows/last-is.md)  
+[max_is](../windows/max-is.md)  
+[length_is](../windows/length-is.md)  
+[size_is](../windows/size-is.md)  
