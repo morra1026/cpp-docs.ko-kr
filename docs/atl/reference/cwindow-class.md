@@ -163,12 +163,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a725ee9eb8d35ec947d21799c577243223f59ed4
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: a4f29cefa626928cb87ce7d72904a4b189113f05
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881268"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42572743"
 ---
 # <a name="cwindow-class"></a>CWindow 클래스
 이 클래스는 창 조작 하기 위한 메서드를 제공 합니다.  
@@ -976,7 +976,7 @@ DWORD GetHotKey() const throw();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 가상 키 코드와 창과 연결 된 바로 가기 키에 대 한 한정자입니다. 가능한 한정자 목록에 대해서 [WM_GETHOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646278) Windows SDK에 있습니다. 표준 가상 키 코드의 목록, Winuser.h를 참조 하세요.  
+ 가상 키 코드와 창과 연결 된 바로 가기 키에 대 한 한정자입니다. 가능한 한정자 목록에 대해서 [WM_GETHOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646278) Windows SDK에 있습니다. 에서 표준 가상 키 코드 목록은 Winuser.h를 참조 하세요.  
   
 ##  <a name="geticon"></a>  CWindow::GetIcon  
  창의 크거나 작은 아이콘에 대 한 핸들을 검색합니다.  
@@ -2091,7 +2091,7 @@ int SetHotKey(WORD wVirtualKeyCode, WORD wModifiers) throw();
   
 ### <a name="parameters"></a>매개 변수  
  *wVirtualKeyCode*  
- [in] 바로 가기 키의 가상 키 코드입니다. 표준 가상 키 코드의 목록, Winuser.h를 참조 하세요.  
+ [in] 바로 가기 키의 가상 키 코드입니다. 에서 표준 가상 키 코드 목록은 Winuser.h를 참조 하세요.  
   
  *wModifiers*  
  [in] 바로 가기 키의 한정자입니다. 가능한 값 목록을 Windows SDK의 WM_SETHOTKEY를 참조 하세요.  
