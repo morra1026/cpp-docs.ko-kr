@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7a8705f6c1ed1030f1beeb7c2302f0d629c5d17d
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: b66d6d3a7da6c9e3084ce2ef6fa18922e015a459
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40012195"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42604281"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++의 Windows 프로그래밍 개요
 
@@ -26,14 +26,14 @@ Windows 서버, 클라우드에서 또는 Xbox에서 다양 한 종류의 (x 86,
 - 메모리 요구 사항을 효율적으로
 - 전력 소비 경제적인 옵션 
 - 다중 코어 및 다중 코어 장치를 최대한 활용할 수
-- 일반 컴퓨팅 (GPGPU) 그래픽 처리 장치에서 작업을 수행할 수   
+- 일반 컴퓨팅 (GPGPU) 그래픽 처리 장치에서 작업을 수행할 수  
 - 하드웨어에서 다른 최신 고급 기능을 활용할 수 있습니다.
 
 Visual C++를 사용하여 광범위한 범주의 다양한 Windows 앱을 구현할 수 있습니다. 이러한 범주에 서로 다른 프로그래밍 모델 없거나 년간 추가한 앱 모델입니다. 각 모델 플랫폼에 대 한 액세스를 제공 하 고 창 및 대화 상자와 같은 사용자 인터페이스를 만들 다른 라이브러리 및 Api를 사용 합니다. UWP에 대 한 몇 가지 제한 사항이 이러한 범주 중 하나에서 타사 라이브러리 뿐만 아니라 c + + 표준 라이브러리를 사용할 수 있습니다.
 
 - [Windows 유니버설 앱](#BK_WindowsUniversal). Windows 앱의 세 번째 범주는 Windows 8에 처음 추가되었고 이 앱 범주는 Windows 10에서 계속 지원됩니다. 이 앱을 "Windows 앱"이라고도 하며 다양한 장치를 대상으로 하는 데스크톱 및 모바일 앱을 포함합니다. C++/CX, Windows 런타임 개발 지원이 포함된 C++ 언어 또는 WRL(Windows 런타임 라이브러리)을 사용하는 COM을 통한 표준 C++로 이러한 앱을 작성할 수 있습니다. 이들 앱은 원래 전체 화면으로 실행되도록 디자인되었으나 Windows 10 사용자는 데스크톱 창에서 이들 앱을 실행할 수 있습니다. 이들 앱은 터치를 지향하지만 사용자가 원하거나 터치 화면이 없으면 마우스로 쉽게 작동할 수 있습니다. 이러한 앱은 Microsoft Store 유발한 "Store" 앱을 호출 되 고 팩트에서 배포 됩니다.
 
-UWP 앱, 휴대폰 및 태블릿 같은 모든 Windows 10 장치 및 데스크톱에서 실행할 수 있습니다. 데스크톱에서는 항상 전체 화면으로 실행되지 않고 데스크톱 창으로 실행될 수 있습니다. 이러한 앱은 Xbox 및 앞으로 제공될 장치에서도 실행될 수 있습니다.  UWP 앱 사용자 인터페이스 요소, 서비스 및 Windows에서 지원 되는 다양 한 하드웨어 장치에 대 한 인터페이스를 제공 하는 Windows 런타임에서 실행 됩니다.  
+UWP 앱, 휴대폰 및 태블릿 같은 모든 Windows 10 장치 및 데스크톱에서 실행할 수 있습니다. 데스크톱에서는 항상 전체 화면으로 실행되지 않고 데스크톱 창으로 실행될 수 있습니다. 이러한 앱은 Xbox 및 앞으로 제공될 장치에서도 실행될 수 있습니다.  UWP 앱 사용자 인터페이스 요소, 서비스 및 Windows에서 지원 되는 다양 한 하드웨어 장치에 대 한 인터페이스를 제공 하는 Windows 런타임에서 실행 됩니다.
 
 C +의 UWP 앱을 작성할 수 있습니다 + CX, c + + 언어 사용할 수는 [C + + /cli WinRT 라이브러리](https://moderncpp.com/)몇 가지 시나리오에 대 한 합니다. UWP 앱을 네이티브 코드로 컴파일 및 XAML 사용자 인터페이스가 있거나 DirectX를 사용 합니다. Windows 런타임 구성 요소는 네이티브 코드로 작성 된 UWP 앱의 다른 언어로 작성 된 사용할 수 있습니다. 자세한 내용은 [c + + 유니버설 Windows 플랫폼 앱을 만들](http://go.microsoft.com/fwlink/?LinkID=534976)를 [DirectX를 사용 하 여 첫 번째 UWP 게임을 만들](http://go.microsoft.com/fwlink/p/?LinkId=244656), 및 [Windows 런타임 구성 요소 만들기 c + +에서](http://go.microsoft.com/fwlink/p/?LinkId=244658)합니다.
 
@@ -84,7 +84,7 @@ DirectX 게임은 PC 또는 Xbox에서 실행할 수 있습니다. 자세한 내
 
 ## <a name="sdks-libraries-and-header-files"></a>Sdk, 라이브러리 및 헤더 파일
 
-Visual c + +는 C 런타임 라이브러리 (CRT), c + + 표준 라이브러리 및 기타 Microsoft 전용 라이브러리를 포함합니다. 이러한 라이브러리에 대 한 헤더 파일이 포함 된 포함 폴더는 \VC\ 폴더 아래에서 또는 Windows SDK 설치 폴더에서 CRT의 경우 Visual Studio 설치 디렉터리에서.   
+Visual c + +는 C 런타임 라이브러리 (CRT), c + + 표준 라이브러리 및 기타 Microsoft 전용 라이브러리를 포함합니다. 이러한 라이브러리에 대 한 헤더 파일이 포함 된 포함 폴더는 \VC\ 폴더 아래에서 또는 Windows SDK 설치 폴더에서 CRT의 경우 Visual Studio 설치 디렉터리에서.
 
 사용할 수는 [Vcpkg 패키지 관리자](../vcpkg.md) 편리 하 게 Windows에 대 한 수백 개의 타사 오픈 소스 라이브러리를 설치 합니다.
 
@@ -100,7 +100,7 @@ Microsoft 라이브러리는 다음과 같습니다.
 
 많은 Windows 프로그래밍 시나리오에는 Windows 운영 체제 구성 요소에 액세스할 수 있는 헤더 파일을 포함하는 Windows SDK도 필요합니다. 기본적으로 Visual Studio는 유니버설 Windows 앱을 개발할 수 있도록 하는 c + + 데스크톱 워크 로드의 구성 요소로 Windows SDK를 설치 합니다. UWP 앱을 개발 하려면 Windows 10 버전의 Windows SDK를 해야 합니다. 정보를 참조 하세요 [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)합니다. (이전 버전 Windows의 Windows Sdk에 대 한 자세한 내용은 참조는 [Windows SDK 아카이브](https://developer.microsoft.com/windows/downloads/sdk-archive)). 
 
-**프로그램 파일 (x86) \Windows 키트** 는 모든 버전의 설치 된 Windows SDK에 대 한 기본 위치입니다.
+**프로그램 파일 (x86) \Windows 키트** 설치 된 Windows SDK의 모든 버전에 대 한 기본 위치입니다.
 
 Xbox, Azure 등 다른 플랫폼은 설치가 필요한 고유의 SDK가 있습니다. 자세한 내용은 DirectX 개발자 센터 및 Azure 개발자 센터를 참조하세요.
 

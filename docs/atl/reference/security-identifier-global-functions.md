@@ -47,18 +47,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 153436ab5d05d0355d85ca165b2bfba9ae86d534
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b567c56c8c4ca5c25fc870e91c8c608e17280557
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32365157"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42610235"
 ---
 # <a name="security-identifier-global-functions"></a>보안 식별자 전역 함수
 이러한 함수 개체 일반적인 잘 알려진 SID를 반환합니다.  
   
 > [!IMPORTANT]
->  다음 표에 나열 된 함수는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.  
+>  다음 표에 나열 된 함수를 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.  
   
 |||  
 |-|-|  
@@ -196,9 +196,9 @@ CSid NetworkService() throw(...);
 ```  
   
 ### <a name="remarks"></a>설명  
- NetworkService를 사용 하 여 NT AUTHORITY\NetworkService 사용자 CPerfMon 보안 개체를 읽을 수 있도록 합니다. NetworkService DLL NetworkService 계정으로 로그인 할 수 있는 ATLServer 코드에는 SecurityAttribute 추가 [!INCLUDE[WinXpFamily](../../atl/reference/includes/winxpfamily_md.md)] 및 큰 운영 체제입니다.  
+ NetworkService CPerfMon 보안 개체를 읽는 NT AUTHORITY\NetworkService 사용자를 사용 하도록 설정 하려면 사용 합니다. NetworkService는 DLL Windows XP Home Edition, Windows XP Professional, Windows Server 2003 및 큰 운영 체제에서 NetworkService 계정으로 로그인을 사용 하면 ATLServer 코드에는 SecurityAttribute를 추가 합니다.  
   
- 사용자 지정 로그 카운터 Perfmon mmc에서 ATLServer CPerfMon 클래스를 사용 하 여 만들어진, 실시간 보기에서 올바르게 표시 되도록 하지만 로그 파일을 볼 때 카운터 나타나지 않을 수 있습니다. CPerfMon 사용자 지정 성능 카운터에는 "성능 로그 및 경고" 서비스 (smlogsvc.exe)에서 실행 하는 데 필요한 권한이 없는 [!INCLUDE[WinXpFamily](../../atl/reference/includes/winxpfamily_md.md)] (이상) 운영 체제. 이 서비스는 "NT AUTHORITY\NetworkService" 계정에서 실행 합니다.  
+ 사용자 지정 로그 카운터 Perfmon mmc에서 ATLServer CPerfMon 클래스를 사용 하 여 생성 되 면 실시간 보기에서 올바르게 표시 되도록 하지만 로그 파일을 보는 카운터 나타나지 않을 수 있습니다. CPerfMon 사용자 지정 성능 카운터 (smlogsvc.exe) "성능 로그 및 경고" 서비스 아래 Windows XP Home Edition, Windows XP Professional, windows Server 2003 이상 운영 체제를 실행 하는 데 필요한 권한이 없는 합니다. 이 서비스는 "NT AUTHORITY\NetworkService" 계정으로 실행 됩니다.  
   
 ##  <a name="null"></a>  Sids::Null  
  SECURITY_NULL_RID SID를 반환합니다.  

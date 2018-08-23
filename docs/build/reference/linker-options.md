@@ -1,7 +1,7 @@
 ---
 title: 링커 옵션 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/20/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7a7fe51c6f49af4fdd232b860b1f9243c1ea462
-ms.sourcegitcommit: d1f576a0f59678edc3d93508cf46485138332178
+ms.openlocfilehash: d514e992b165f7deb5f9354f58fe5a409f52546a
+ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34753632"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "42575537"
 ---
 # <a name="linker-options"></a>링커 옵션
 
@@ -40,7 +40,7 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 
 - [예약어](../../build/reference/reserved-words.md)
 
-명령줄에서 링커 옵션은 대/소문자를 구분 합니다. 예를 들어 /base와 /base는 같습니다. 명령줄 또는 Visual Studio에서 각 옵션을 지정하는 방법에 대한 자세한 내용은 해당 옵션에 대한 설명서를 참조하세요.
+명령줄에서 링커 옵션은 대/소문자를 구분 합니다. 예를 들어 /base와 /BASE 동일한 작업을 의미 합니다. 명령줄 또는 Visual Studio에서 각 옵션을 지정하는 방법에 대한 자세한 내용은 해당 옵션에 대한 설명서를 참조하세요.
 
 [주석](../../preprocessor/comment-c-cpp.md) pragma를 사용하여 일부 링커 옵션을 지정할 수 있습니다.
 
@@ -75,7 +75,7 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 |[/ENTRY](../../build/reference/entry-entry-point-symbol.md)|시작 주소를 설정합니다.|
 |[/errorReport](../../build/reference/errorreport-report-internal-linker-errors.md)|Microsoft에 내부 링커 오류를 보고합니다.|
 |[/EXPORT](../../build/reference/export-exports-a-function.md)|함수를 내보냅니다.|
-|[/ FILEALIGN](../../build/reference/filealign.md)|지정된 된 값의 배수에 출력 파일에 있는 섹션에 맞춥니다.|
+|[/ FILEALIGN](../../build/reference/filealign.md)|지정된 된 값의 배수에서 출력 파일 내의 섹션을 맞춥니다.|
 |[/FIXED](../../build/reference/fixed-fixed-base-address.md)|기본 설정 기준 주소에서만 로드할 수 있는 프로그램을 만듭니다.|
 |[/FORCE](../../build/reference/force-force-file-output.md)|확인되지 않은 기호 또는 두 번 이상 정의된 기호를 사용해도 링크가 강제로 완료되도록 합니다.|
 |[/FUNCTIONPADMIN](../../build/reference/functionpadmin-create-hotpatchable-image.md)|핫 패치할 수 있는 이미지를 만듭니다.|
@@ -123,6 +123,7 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 |[/RELEASE](../../build/reference/release-set-the-checksum.md)|.exe 헤더의 체크섬을 설정합니다.|
 |[/SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md)|이미지에 안전한 예외 처리기 테이블을 포함하도록 지정합니다.|
 |[/SECTION](../../build/reference/section-specify-section-attributes.md)|섹션의 특성을 재정의합니다.|
+|[/ SOURCELINK](../../build/reference/sourcelink.md)|PDB에 추가할 SourceLink 파일을 지정 합니다.|
 |[/STACK](../../build/reference/stack-stack-allocations.md)|스택 크기를 바이트 단위로 설정합니다.|
 |[/STUB](../../build/reference/stub-ms-dos-stub-file-name.md)|MS-DOS 스텁 프로그램을 Win32 프로그램에 첨부합니다.|
 |[/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md)|운영 체제에 .exe 파일을 실행하는 방법을 알립니다.|
@@ -133,7 +134,7 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 |[/USEPROFILE](../../build/reference/useprofile.md)|최적화 학습 데이터를 사용 하 여 프로필 기반 최적화 된 이미지를 만듭니다.|
 |[/VERBOSE](../../build/reference/verbose-print-progress-messages.md)|링커 진행 메시지를 출력합니다.|
 |[/VERSION](../../build/reference/version-version-information.md)|버전 번호를 할당합니다.|
-|[/ WHOLEARCHIVE](../../build/reference/wholearchive-include-all-library-object-files.md)|지정 된 정적 라이브러리에서 모든 개체 파일에 포함 됩니다.|
+|[/WHOLEARCHIVE](../../build/reference/wholearchive-include-all-library-object-files.md)|지정 된 정적 라이브러리에서 모든 개체 파일을 포함합니다.|
 |[/WINMD](../../build/reference/winmd-generate-windows-metadata.md)|Windows 런타임 메타데이터 파일을 생성하도록 설정합니다.|
 |[/WINMDFILE](../../build/reference/winmdfile-specify-winmd-file.md)|[/WINMD](../../build/reference/winmd-generate-windows-metadata.md) 링커 옵션으로 생성된 Windows 런타임 메타데이터(winmd) 출력 파일의 파일 이름을 지정합니다.|
 |[/WINMDKEYFILE](../../build/reference/winmdkeyfile-specify-winmd-key-file.md)|Windows 런타임 메타데이터 파일에 서명할 키 또는 키 쌍을 지정합니다.|

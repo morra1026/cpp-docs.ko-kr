@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dfe9f7616a20dc09265028cf414aa15340b68c70
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 00c0f8e67a535d126eab3a19bf17b0bf8bfd7440
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33333416"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540685"
 ---
 # <a name="indwordstring"></a>__indwordstring
 **Microsoft 전용**  
@@ -42,21 +42,21 @@ void __indwordstring(
   
 #### <a name="parameters"></a>매개 변수  
  [in] `Port`  
- 읽을 수는 포트입니다.  
+ 포트에서 읽기입니다.  
   
  [out] `Buffer`  
- 포트에서 읽은 데이터를 여기에 기록 됩니다.  
+ 여기에 포트에서 읽은 데이터가 기록 됩니다.  
   
  [in] `Count`  
- 데이터를 읽을 바이트 수입니다.  
+ 읽을 데이터의 바이트 수입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__indwordstring`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__indwordstring`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  

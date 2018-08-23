@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d8c79981b41bf7b74cb1aa44b98b44e0b5acbc90
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: e1c3ccdba1de9191079630989facf154ccf62d7f
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337923"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539124"
 ---
 # <a name="cdbvariant-class"></a>CDBVariant 클래스
 MFC ODBC 클래스의 variant 데이터 형식을 나타냅니다.  
@@ -200,7 +200,7 @@ void Clear();
 ### <a name="remarks"></a>설명  
  `m_pdate` 데이터 멤버는 공용 구조체에 속합니다. 에 액세스 하기 전에 `m_pdate`, 먼저 값을 확인 [CDBVariant::m_dwType](#m_dwtype)합니다. 하는 경우 `m_dwType` 다음 DBVT_DATE로 `m_pdate` 대 한 유효한 포인터를 포함에 액세스 하 고, 그렇지 않으면 `m_pdate` 신뢰할 수 없는 결과가 생성 됩니다.  
   
- TIMESTAMP_STRUCT 데이터 형식에 대 한 자세한 내용은 항목을 참조 하세요. [C 데이터 형식](https://msdn.microsoft.com/library/ms714556.aspx) 의 부록 D에는 *ODBC 프로그래머 참조* Windows sdk에서입니다.  
+ TIMESTAMP_STRUCT 데이터 형식에 대 한 자세한 내용은 항목을 참조 하세요. [C 데이터 형식](/previous-versions/windows/desktop/ms714556\(v=vs.85\)) 의 부록 D에는 *ODBC 프로그래머 참조* Windows sdk에서입니다.  
   
 ##  <a name="m_pstring"></a>  CDBVariant::m_pstring  
  형식의 개체에 대 한 포인터를 저장 [CString](../../atl-mfc-shared/reference/cstringt-class.md)합니다.  

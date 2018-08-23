@@ -5,19 +5,19 @@ ms.date: 12/30/2016
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: 4438e03c-4de3-433d-abcc-31aa863bc0e0
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 627e89c844b97637897c9b5eb6c1cc7e32081fd6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7db8d6c527842cd3784623002fba001a4174c1fc
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33086846"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42601140"
 ---
 # <a name="attributes-ccx"></a>특성(C++/CX)
-특성에는 특별 한 종류의 메타 데이터 생성에서 특정 동작을 지정 하는 Windows 런타임 형식 및 메서드에 대괄호 앞에 추가 될 수 있는 ref 클래스입니다. 몇 가지 미리 정의 된 특성-예를 들어 [Windows::Foundation::Metadata::WebHostHidden](http://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.webhosthiddenattribute.aspx)-일반적으로 C + + /CX 코드입니다. 이 예제에서는 특성이 클래스에 적용되는 방식을 보여 줍니다.  
+특성 메타 데이터 생성에서 특정 동작을 지정 하는 Windows 런타임 형식 및 메서드에 대괄호 앞에 추가 될 수 있는 ref 클래스의 특별 한 종류입니다. 미리 정의 된 여러 특성-예를 들어 [Windows::Foundation::Metadata::WebHostHidden](http://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.webhosthiddenattribute.aspx)-일반적으로 되는 C + + /CX 코드입니다. 이 예제에서는 특성이 클래스에 적용되는 방식을 보여 줍니다.  
   
  [!code-cpp[cx_attributes#01](../cppcx/codesnippet/CPP/cx_attributes/class1.h#01)]  
   

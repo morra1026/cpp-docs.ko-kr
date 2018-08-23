@@ -44,12 +44,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 15a1506980519880652abc637549ec2c7bf17e1d
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 1b94898cbe4a041ac1bb9a5d01c55380ee496106
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337599"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571732"
 ---
 # <a name="cdbpropset-class"></a>CDBPropSet 클래스
 상속 되는 `DBPROPSET` 구조체 및 키 필드를 초기화 하는 생성자를 추가 `AddProperty` 메서드에 액세스 합니다.  
@@ -131,7 +131,7 @@ bool AddProperty(DWORD dwPropertyID,
  **true** 경우 속성이 추가 되었습니다. 그렇지 않으면 **false**합니다. 
 
 ## <a name="cdbpropset"></a> Cdbpropset:: Cdbpropset
-생성자입니다. 초기화 합니다 `rgProperties`, `cProperties`, 및 `guidPropertySet` 의 필드를 [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) 구조입니다.  
+생성자입니다. 초기화 합니다 `rgProperties`, `cProperties`, 및 `guidPropertySet` 의 필드를 [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) 구조입니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -161,7 +161,7 @@ void SetGUID(const GUID& guid) throw();
   
 #### <a name="parameters"></a>매개 변수  
  *guid*  
- [in] 설정 하는 데 GUID를 `guidPropertySet` 필드를 [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) 구조입니다.  
+ [in] 설정 하는 데 GUID를 `guidPropertySet` 필드를 [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) 구조입니다.  
   
 ### <a name="remarks"></a>설명  
  이 필드에서 설정할 수는 [생성자](../../data/oledb/cdbpropset-cdbpropset.md) 도 합니다.  
@@ -179,5 +179,5 @@ CDBPropSet& operator =(CDBPropSet& propset) throw();
  [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)   
  [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)   
  [CDBPropIDSet 클래스](../../data/oledb/cdbpropidset-class.md)   
- [DBPROPSET 구조](https://msdn.microsoft.com/library/ms714367.aspx)   
- [DBPROP 구조](https://msdn.microsoft.com/library/ms717970.aspx)
+ [DBPROPSET 구조](/previous-versions/windows/desktop/ms714367\(v=vs.85\))   
+ [DBPROP 구조](/previous-versions/windows/desktop/ms717970\(v=vs.85\))

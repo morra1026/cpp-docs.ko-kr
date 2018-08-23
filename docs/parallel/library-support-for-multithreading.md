@@ -1,5 +1,5 @@
 ---
-title: 에 대 한 라이브러리 지원의 다중 스레딩과 | Microsoft Docs
+title: 라이브러리 지원에 대 한 다중 스레딩 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,17 +15,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b25d506b5364dcbc26d3e32f5b0eb34188b30bd
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 4f775cbb78ff81ba6f1c2761d7969feabd932bd7
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33685675"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42539044"
 ---
 # <a name="library-support-for-multithreading"></a>다중 스레딩을 위한 라이브러리 지원
-모든 버전의 CRT는 이제 잠기지 않은 버전의 일부 함수를 제외 하 고 다중 스레딩을 지원 합니다. 참조 [다중 스레드 라이브러리 성능](../c-runtime-library/multithreaded-libraries-performance.md) 자세한 정보에 대 한 합니다.  
+이제 모든 버전의 CRT는 일부 함수의 비잠금 버전을 제외 하 고 다중 스레딩 지원 합니다. 참조 [다중 스레드 라이브러리 성능](../c-runtime-library/multithreaded-libraries-performance.md) 자세한 내용은 합니다.  
   
- 참조 [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md) CRT 버전에 대 한 자세한 내용은 합니다.  
+참조 [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md) CRT 버전에 대 한 자세한 내용은 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [C 및 Win32를 사용한 다중 스레딩](../parallel/multithreading-with-c-and-win32.md)
+
+[C 및 Win32를 사용한 다중 스레딩](../parallel/multithreading-with-c-and-win32.md)

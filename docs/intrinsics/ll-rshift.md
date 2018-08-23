@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e086339c41f789323cb4aab386a96dae27a0eeb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dd8189f15f38d5d3008c1f20959573ca9d2337c9
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33324930"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42545884"
 ---
 # <a name="llrshift"></a>__ll_rshift
 **Microsoft 전용**  
@@ -41,26 +41,26 @@ __int64 __ll_rshift(
   
 #### <a name="parameters"></a>매개 변수  
  [in] `Mask`  
- 오른쪽으로 이동 하려면 64 비트 정수 값입니다.  
+ 오른쪽 시프트 64 비트 정수 값입니다.  
   
  [in] `nBit`  
- X64, 64로 나눈 나머지 및 x86 32 모듈로 이동할 비트 수입니다.  
+ X86 32 모듈로 및 x64에서 64 모듈로 이동할 비트 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
- / / 마스크 하 여 이동 된 `nBit` 비트입니다.  
+ 으로 이동 하 여 마스크 `nBit` 비트입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__ll_rshift`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__ll_rshift`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- 두 번째 매개 변수 64 x64 (x86 32) 보다 큰 경우 해당 개수 계산 된 것 (x86 32) 64로 나눈 나머지 이동할 비트 수를 결정 합니다. `ll` 접두사에는 작업 임을 나타냅니다. `long long`, 다른 이름을 `__int64`, 64 비트 부호 있는 정수 형식입니다.  
+ 두 번째 매개 변수 번호도 이동할 비트 수를 확인 하려면 64 (x86 32) 모듈로 수행 되는 (32) x86에서 x64 64 보다 큰 경우. `ll` 접두사에는 작업 임을 나타냅니다 `long long`다른 이름 `__int64`, 64 비트 부호 있는 정수 계열 형식입니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 // ll_rshift.cpp  
@@ -93,7 +93,7 @@ fffffffffffffff0
  - 10  
 ```  
   
- **참고** 경우 `_ull_rshift` 되었습니다을 사용 하는 오른쪽 이동 된 값의 MSB 있었을 0 되므로 원하는 결과 하지 얻은 음수 값의 경우.  
+ **참고** 경우 `_ull_rshift` 되었습니다 사용 오른쪽 이동 값의 MSB 되었을 0 되므로 원하는 결과 하지 얻은 경우 음수 값입니다.  
   
 **Microsoft 전용 종료**  
   

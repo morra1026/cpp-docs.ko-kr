@@ -11,16 +11,16 @@ dev_langs:
 helpviewer_keywords:
 - Platform::TypeCode Enumeration
 ms.assetid: 93c1305f-eb16-4bec-aead-f88d9518b4cf
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 033241f0be5653f27a117ef9710837817b5abff6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0e874b3dc479755f688128b3e6690eee89929c1c
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088426"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42606184"
 ---
 # <a name="platformtypecode-enumeration"></a>Platform::TypeCode 열거형
 기본 제공 형식을 나타내는 숫자 범주를 지정합니다.  

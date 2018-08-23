@@ -18,16 +18,16 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 298583c5-22c3-40f6-920e-9ec96d42abd8
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3aa2f0dffd33f0ac885753e4c7fb7f413d755149
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 445e4c9e5c3c7a71d527b6a378cad9e1d767354a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40020329"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42604733"
 ---
 # <a name="using-tcharh-data-types-with-mbcs-code"></a>_MBCS 코드와 TCHAR.H 데이터 형식 사용
 경우 매니페스트 상수 `_MBCS` 는 지정 된 제네릭 텍스트 루틴 정의 다음 종류의 루틴 중 하나에 매핑됩니다.  

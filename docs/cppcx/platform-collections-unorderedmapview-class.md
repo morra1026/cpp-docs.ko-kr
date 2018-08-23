@@ -7,16 +7,16 @@ ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::UnorderedMapView
 ms.assetid: 545a3725-2efd-4cc1-b590-4a7cd2351f61
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec6b1541eff80b6aac4d8d82bfb7ea6ceb977843
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3a2d8668f0ed5d58ce3b8028fb02d572bb04f8bc
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33092679"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42613576"
 ---
 # <a name="platformcollectionsunorderedmapview-class"></a>Platform::Collections::UnorderedMapView 클래스
 읽기 전용 보기를 키/값 쌍의 컬렉션인 *맵*으로 나타냅니다.  
@@ -42,7 +42,7 @@ ref class UnorderedMapView sealed;
  같은지 확인하기 위해 두 키 값을 비교할 수 있는 함수 개체를 제공하는 형식입니다. 기본적으로 [std:: equal_to\<K >](../standard-library/equal-to-struct.md)  
   
 ### <a name="remarks"></a>설명  
- UnorderedMapView는의 구체적 c + + 구현에서 [Windows::Foundation::Collections::IMapView\<K, V >](http://go.microsoft.com/fwlink/p/?LinkId=262409) 응용 프로그램 이진 인터페이스 ABI ()를 통해 전달 되는 인터페이스입니다. 자세한 내용은 [컬렉션(C++/CX)](../cppcx/collections-c-cx.md)을 참조하세요.  
+ UnorderedMapView의 구체적인 c + + 구현입니다 합니다 [Windows::Foundation::Collections::IMapView\<K, V >](http://go.microsoft.com/fwlink/p/?LinkId=262409) 응용 프로그램 이진 인터페이스 ABI ()를 통해 전달 되는 인터페이스입니다. 자세한 내용은 [컬렉션(C++/CX)](../cppcx/collections-c-cx.md)을 참조하세요.  
   
 ### <a name="members"></a>멤버  
   
@@ -71,7 +71,7 @@ ref class UnorderedMapView sealed;
  **네임스페이스:** Platform::Collections  
 
 ## <a name="first"></a>  UnorderedMapView::First 메서드
-첫 번째 지정 하는 반복기를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) unordered map의 요소입니다.  
+첫 번째를 지정 하는 반복기를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) unordered map의 요소입니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -85,7 +85,7 @@ virtual Windows::Foundation::Collections::IIterator<
  맵 뷰의 첫 번째 요소를 지정하는 반복기입니다.  
   
 ### <a name="remarks"></a>설명  
- 선언 된 변수에 반환 값을 할당 하는 First()에서 반환 된 반복기를 보유 하는 편리한 방법은 **자동** 형식 추론 키워드입니다. 예를 들어, `auto x = myMapView->First();`을 입력합니다.  
+ First ()에서 반환 된 반복기를 보유 하는 편리한 방법을 사용 하 여 선언 된 변수에 반환 값을 할당 하는 것은 **자동** 형식 추론 키워드입니다. 예를 들어, `auto x = myMapView->First();`을 입력합니다.  
   
 
 
@@ -100,7 +100,7 @@ bool HasKey(K key);
   
 ### <a name="parameters"></a>매개 변수  
  `key`  
- 요소를 찾는 데 사용되는 키입니다. 유형의 `key` 형식 이름 *K*합니다.  
+ 요소를 찾는 데 사용되는 키입니다. 유형의 `key` typename 됩니다 *K*합니다.  
   
 ### <a name="return-value"></a>반환 값  
  키가 있으면 `true`이고, 그렇지 않으면 `false`입니다.  
@@ -118,10 +118,10 @@ V Lookup(K key);
   
 ### <a name="parameters"></a>매개 변수  
  `key`  
- UnorderedMapView에서 요소를 찾는 데 사용되는 키입니다. 유형의 `key` 형식 이름 *K*합니다.  
+ UnorderedMapView에서 요소를 찾는 데 사용되는 키입니다. 유형의 `key` typename 됩니다 *K*합니다.  
   
 ### <a name="return-value"></a>반환 값  
- `key`와 쌍을 이루는 값입니다. 반환 값의 형식이 typename *V*합니다.  
+ `key`와 쌍을 이루는 값입니다. 반환 값의 형식은 typename *V*합니다.  
   
 
 
@@ -221,13 +221,13 @@ UnorderedMapView(
  UnorderedMapView의 형식 이름입니다.  
   
  `H`  
- 키에 해시 값을 사용할 수 있는 함수 개체입니다. 기본적으로 [std:: hash\<K >](http://msdn.microsoft.com/en-us/54f67435-af9d-4217-a29d-fa4d2491a104) 형식에는 `std::hash` 지원 합니다.  
+ 키에 해시 값을 사용할 수 있는 함수 개체입니다. 기본값으로 [std:: hash\<K >](http://msdn.microsoft.com/en-us/54f67435-af9d-4217-a29d-fa4d2491a104) 형식에는 `std::hash` 지원 합니다.  
   
  `P`  
- 같은지 확인하기 위해 두 키를 비교할 수 있는 함수 개체를 제공하는 형식입니다. 기본적으로 [std:: equal_to\<K >](../standard-library/equal-to-struct.md)합니다.  
+ 같은지 확인하기 위해 두 키를 비교할 수 있는 함수 개체를 제공하는 형식입니다. 기본값으로 [std:: equal_to\<K >](../standard-library/equal-to-struct.md)합니다.  
   
  `m`  
- 대 한 참조 또는 [Lvalue 및 Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) 에 [std:: unordered_map](../standard-library/unordered-map-class.md) UnorderedMapView를 초기화 하는 데 사용 되는 합니다.  
+ 참조 또는 [Lvalue 및 Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) 에 [std:: unordered_map](../standard-library/unordered-map-class.md) UnorderedMapView를 초기화 하는 데 사용 되는 합니다.  
   
  `first`  
  UnorderedMapView를 초기화하는 데 사용되는 요소 범위에서 첫 번째 요소의 입력 반복기입니다.  

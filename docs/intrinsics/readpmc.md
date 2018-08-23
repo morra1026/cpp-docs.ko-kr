@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73d98db19be60bd038965763a24b83ddd0016c9f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d5072f49728a4ea9b7a323d3837997dd3d767358
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33333793"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539900"
 ---
 # <a name="readpmc"></a>__readpmc
 **Microsoft 전용**  
   
- 생성 된 `rdpmc` 성능 카운터로 지정 된 모니터링을 읽는 명령 `counter`합니다.  
+ 생성 된 `rdpmc` 성능 모니터 카운터로 지정 된 된 명령 `counter`입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,18 +43,18 @@ unsigned __int64 __readpmc(
  읽기 성능 카운터입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 지정된 된 성능 카운터의 값입니다.  
+ 지정한 성능 카운터의 값입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__readpmc`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__readpmc`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- 이 내장 함수는 커널 모드 에서만 사용할 수 및 루틴은 내장 함수로 사용할 수만 있습니다.  
+ 이 내장 함수는 커널 모드 에서만 사용할 수 있습니다 및 루틴은 내장 함수로 사용할 수만 있습니다.  
   
 **Microsoft 전용 종료**  
   

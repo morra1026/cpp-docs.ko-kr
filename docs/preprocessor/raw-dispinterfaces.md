@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f2a0d91d0f0dd3d23886ade75072526e6c895f7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 093c994de24b947c53bfc19d33213e77f3ec2593
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849456"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42539669"
 ---
 # <a name="rawdispinterfaces"></a>raw_dispinterfaces
 **C + + 전용**  
   
- 호출 하는 dispinterface 메서드 및 속성에 대 한 하위 수준의 래퍼 함수를 생성 하는 컴파일러가 **idispatch:: Invoke** 다음 다시 돌아와 `HRESULT` 오류 코드입니다.  
+호출 하는 dispinterface 메서드 및 속성에 대 한 하위 수준의 래퍼 함수를 생성 하도록 컴파일러에 지시 `IDispatch::Invoke` HRESULT 오류 코드를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,10 +35,12 @@ raw_dispinterfaces
 ```  
   
 ## <a name="remarks"></a>설명  
- 이 특성이 지정되지 않은 경우 실패 시 C++ 예외를 throw하는 상위 수준 래퍼만 생성됩니다.  
+ 
+이 특성이 지정되지 않은 경우 실패 시 C++ 예외를 throw하는 상위 수준 래퍼만 생성됩니다.  
   
- **C + + 전용 종료**  
+**C + + 전용 종료**  
   
 ## <a name="see-also"></a>참고 항목  
- [#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
- [#import 지시문](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
+[#import 지시문](../preprocessor/hash-import-directive-cpp.md)

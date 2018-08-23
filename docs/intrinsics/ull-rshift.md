@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5248792d04efca518fc425a144c692cd88cf8d1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c834b3b2284a7a5ae660870b840d3275c985dc9e
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33333120"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540100"
 ---
 # <a name="ullrshift"></a>__ull_rshift
 **Microsoft 전용**  
   
- x64, 오른쪽에 첫 번째 매개 변수로 지정 된 64 비트 값을 두 번째 매개 변수로 지정 된 비트 수 만큼 이동 합니다.  
+ x64에서 오른쪽으로 첫 번째 매개 변수로 지정 된 64 비트 값을 두 번째 매개 변수로 지정 된 비트 수 만큼 이동 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,26 +40,26 @@ unsigned __int64 __ull_rshift(
   
 #### <a name="parameters"></a>매개 변수  
  [in] `mask`  
- 오른쪽으로 이동 하려면 64 비트 정수 값입니다.  
+ 오른쪽 시프트 64 비트 정수 값입니다.  
   
  [in] `nBit`  
- 모듈로 32, x86 및 x64 64로 나눈 나머지 이동할 비트 수입니다.  
+ X86, 32 모듈로 및 x64 64 모듈로 이동할 비트 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
- / / 마스크 하 여 이동 된 `nBit` 비트입니다.  
+ 으로 이동 하 여 마스크 `nBit` 비트입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__ull_rshift`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__ull_rshift`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- 두 번째 매개 변수 (x64 63) x86 31 보다 큰 경우 해당 번호는 32 (x64 64) 모듈로 이동할 비트 수를 결정 사용 합니다. `ull` 이름 나타냅니다 `unsigned long long (unsigned __int64)`합니다.  
+ 두 번째 매개 변수 31 이동할 비트 수를 결정할 수 32 (x64 64) 모듈로 수행 되는 x86 (x64 63) 보다 큰 경우. 합니다 `ull` 이름을 나타냅니다 `unsigned long long (unsigned __int64)`합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 // ull_rshift.cpp  

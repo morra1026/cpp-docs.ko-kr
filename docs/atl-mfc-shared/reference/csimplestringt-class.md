@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da0cd0df9311d11b30c3ef42d8492c71cb78abb4
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: fd96c7028f5f37d617c86e412fa238ccf141cb58
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883634"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42571710"
 ---
 # <a name="csimplestringt-class"></a>CSimpleStringT 클래스
 이 클래스를 나타냅니다는 `CSimpleStringT` 개체입니다.  
@@ -467,7 +467,7 @@ PXSTR GetBufferSetLength(int nLength);
   
  버퍼 메모리는 자동으로 해제 될 때를 `CSimpleStringT` 개체는 소멸 됩니다.  
   
- 유지 추적 경우 문자열 길이 자신을 추가 하지 마십시오 하지 null 종결 문자. 사용 하 여 버퍼를 해제 하는 경우에 최종 문자열 길이 지정 해야 `ReleaseBuffer`합니다. 호출할 때 null 종결 문자를 추가 수행 하는 경우 `ReleaseBuffer`,-1 (기본값) 길이 전달 `ReleaseBuffer`, 및 `ReleaseBuffer` 수행할지를 `strlen` 해당 길이 확인 하는 버퍼에서 합니다.  
+ 추적 있습니다 문자열 길이 직접, 종결 null 문자를 추가 하지 마십시오. 사용 하 여 버퍼를 해제 하는 경우에 최종 문자열 길이 지정 해야 `ReleaseBuffer`합니다. 호출할 때 null 종결 문자를 추가 수행 하는 경우 `ReleaseBuffer`,-1 (기본값) 길이 전달 `ReleaseBuffer`, 및 `ReleaseBuffer` 수행할지를 `strlen` 해당 길이 확인 하는 버퍼에서 합니다.  
   
  참조 횟수에 대 한 자세한 내용은 다음 문서를 참조 합니다.  
   

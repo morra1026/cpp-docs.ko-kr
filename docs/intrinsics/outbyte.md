@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c73d32b9300a5a581306d926688230660cd998b8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 70aa643d7d8f81cca0ff74a3016badd6551c11a0
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33330625"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42538757"
 ---
 # <a name="outbyte"></a>__outbyte
 **Microsoft 전용**  
   
- 생성 된 `out` 명령으로 지정 된 경우 1 바이트를 전송 하는 `Data` 끝으로 지정 된 I/O 포트 `Port`합니다.  
+ 생성 된 `out` 명령으로 지정 된 1 바이트를 전송 하는 `Data` 로 지정 된 I/O 포트를 찾기 `Port`합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,18 +40,18 @@ void __outbyte(
   
 #### <a name="parameters"></a>매개 변수  
  [in] `Port`  
- 데이터를 보내야 하는 포트입니다.  
+ 데이터를 보낼 포트입니다.  
   
  [in] `Data`  
- 바이트 지정된 된 포트 전송입니다.  
+ 지정된 된 포트에 보내도록 바이트입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__outbyte`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__outbyte`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  

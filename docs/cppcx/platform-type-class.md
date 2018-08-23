@@ -12,19 +12,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Type Class
 ms.assetid: d6b03f1e-b240-49b9-a08e-53a460030475
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc70f0a0f714cb6f5a2f4b28d922308d8fe4d645
-ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
+ms.openlocfilehash: e4d2931df50c6bfac126bc8e8ab1c70d61bdfe39
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34255540"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596703"
 ---
 # <a name="platformtype-class"></a>Platform::Type 클래스
-특정 형식에 대한 런타임 정보(문자열 이름 및 형식 코드)를 포함합니다. 호출 하 여 가져온 [object:: gettype](../cppcx/platform-object-class.md#gettype) 임의 개체에서 또는 또는 사용 하 여는 [typeid](../windows/typeid-cpp-component-extensions.md) 클래스 또는 구조체 이름에는 연산자입니다.  
+특정 형식에 대한 런타임 정보(문자열 이름 및 형식 코드)를 포함합니다. 호출 하 여 가져올 [object:: gettype](../cppcx/platform-object-class.md#gettype) 모든 개체에 사용 하 여 또는 [typeid](../windows/typeid-cpp-component-extensions.md) 클래스 또는 구조체 이름에는 연산자입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,7 +35,7 @@ public ref class Platform::Type :
 ```  
   
 ### <a name="remarks"></a>설명  
- `Type` 클래스는 개체의 런타임 형식을 기반으로 분기하는 `if` 또는 `switch` 문을 사용하여 처리를 지시해야 하는 응용 프로그램에서 유용합니다. 형식 범주를 설명 하는 형식 코드를 사용 하 여 검색 되는 [type:: gettypecode](#gettypecode) 멤버 함수입니다.  
+ `Type` 클래스는 개체의 런타임 형식을 기반으로 분기하는 `if` 또는 `switch` 문을 사용하여 처리를 지시해야 하는 응용 프로그램에서 유용합니다. 형식의 범주를 설명 하는 형식 코드를 사용 하 여 검색 되는 [type:: gettypecode](#gettypecode) 멤버 함수입니다.  
   
 ## <a name="public-methods"></a>public 메서드  
   
@@ -49,7 +49,7 @@ public ref class Platform::Type :
   
 |||  
 |-|-|  
-|[Type::FullName](#fullname)|형식의 정규화된 이름을 나타내며 ::(콜론 두 개) 대신 .(점)을 구분 기호로 사용(예: "MyNamespace.MyClass")하는 [Platform::String 클래스](../cppcx/platform-string-class.md)^을 (점)를 구분 하지 않습니다:: (콜론)-예를 들어 `MyNamespace.MyClass`합니다.|  
+|[Type::FullName](#fullname)|형식의 정규화된 이름을 나타내며 ::(콜론 두 개) 대신 .(점)을 구분 기호로 사용(예: "MyNamespace.MyClass")하는 [Platform::String 클래스](../cppcx/platform-string-class.md)^을 (점)를 구분 기호로 없습니다:: (콜론)-예를 들어 `MyNamespace.MyClass`합니다.|  
   
 ## <a name="conversion-operators"></a>변환 연산자  
   
@@ -79,7 +79,7 @@ String^ FullName();
   
 ### <a name="return-value"></a>반환 값  
  형식의 이름입니다.  
-### <a name="example"></a>예제  
+### <a name="example"></a>예  
   
 ```  
   
@@ -108,7 +108,7 @@ Platform::TypeCode GetTypeCode();
  Platform::TypeCode 열거형 값의 하나입니다.  
   
 ### <a name="remarks"></a>설명  
- Gettypecode () 멤버 메서드에 해당 합니다는 `typeid` 속성입니다.
+ gettypecode () 멤버 메서드에 해당 합니다 `typeid` 속성입니다.
 
 ## <a name="tostring"></a> Type::ToString 메서드
 검색 한 형식의 이름입니다.  
@@ -120,7 +120,7 @@ Platform::String^ ToString();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 해당 메타 데이터에 지정 된 형식의 이름입니다.    
+ 이름으로 해당 메타 데이터에 지정 된 형식입니다.    
   
 ## <a name="see-also"></a>참고 항목  
  [Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)

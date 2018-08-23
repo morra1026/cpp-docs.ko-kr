@@ -17,29 +17,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d63b90bb3622129589fca41c029f548a07ec21b8
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: e0459c729368dc182de955f85afda514b2ff5071
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40017658"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42591864"
 ---
 # <a name="modulemodule-constructor"></a>Module::Module 생성자
-새 인스턴스를 초기화 합니다 **모듈** 클래스입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-Module();  
-```  
-  
-## <a name="remarks"></a>설명  
- 이 생성자는 보호 되 고 사용 하 여 호출할 수 없습니다는 **새** 키워드입니다. 대신, 호출 [module:: getmodule 메서드](../windows/module-getmodule-method.md) 하거나 [module:: create 메서드](../windows/module-create-method.md)합니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** module.h  
-  
- **네임스페이스:** Microsoft::WRL
- 
- ## <a name="see-also"></a>참고 항목
- [Module 클래스](../windows/module-class.md)
+
+새 인스턴스를 초기화 합니다 **모듈** 클래스입니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+Module();
+```
+
+## <a name="remarks"></a>설명
+
+이 생성자는 보호 되 고 사용 하 여 호출할 수 없습니다는 **새** 키워드입니다. 대신, 호출 [module:: getmodule 메서드](../windows/module-getmodule-method.md) 하거나 [module:: create 메서드](../windows/module-create-method.md)합니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** module.h
+
+**네임스페이스:** Microsoft::WRL
+
+## <a name="see-also"></a>참고 항목
+[Module 클래스](../windows/module-class.md)

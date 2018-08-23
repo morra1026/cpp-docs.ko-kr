@@ -17,57 +17,61 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 790e01f1b74d7d592196bdd5a21284f8379df5c4
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 390ab7723cb760793ab96a31bc3ac948f5a40dcd
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40011701"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590393"
 ---
 # <a name="wiremarshal"></a>wire_marshal
-응용 프로그램별 데이터 형식 대신 전송을 위해 사용 될 데이터 형식을 지정 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-[wire_marshal]  
-```  
-  
-## <a name="remarks"></a>설명  
- 합니다 **wire_marshal** c + + 특성에 동일한 기능을 합니다 [wire_marshal](http://msdn.microsoft.com/library/windows/desktop/aa367309) MIDL 특성입니다.  
-  
-## <a name="example"></a>예  
- 다음 코드는 사용 방법을 보여 줍니다 **wire_marshal**:  
-  
-```cpp  
-// cpp_attr_ref_wire_marshal.cpp  
-// compile with: /LD  
-#include "windows.h"  
-[module(name="MyLibrary")];  
-  
-[export, public] typedef unsigned long _FOUR_BYTE_DATA;  
-  
-[export] typedef struct _TWO_X_TWO_BYTE_DATA {  
-   unsigned short low;  
-   unsigned short high;  
-} TWO_X_TWO_BYTE_DATA ;  
-  
-[export, wire_marshal(TWO_X_TWO_BYTE_DATA)] typedef _FOUR_BYTE_DATA FOUR_BYTE_DATA;  
-```  
-  
-## <a name="requirements"></a>요구 사항  
-  
-### <a name="attribute-context"></a>특성 컨텍스트  
-  
-|||  
-|-|-|  
-|**적용 대상**|**typedef**|  
-|**반복 가능**|아니요|  
-|**필수 특성**|없음|  
-|**잘못된 특성**|없음|  
-  
- 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.  
-  
-## <a name="see-also"></a>참고 항목  
- [IDL 특성](../windows/idl-attributes.md)   
- [Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)   
+
+응용 프로그램별 데이터 형식 대신 전송을 위해 사용 될 데이터 형식을 지정 합니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+[wire_marshal]
+```
+
+## <a name="remarks"></a>설명
+
+합니다 **wire_marshal** c + + 특성에 동일한 기능을 합니다 [wire_marshal](http://msdn.microsoft.com/library/windows/desktop/aa367309) MIDL 특성입니다.
+
+## <a name="example"></a>예
+
+다음 코드는 사용 방법을 보여 줍니다 **wire_marshal**:
+
+```cpp
+// cpp_attr_ref_wire_marshal.cpp
+// compile with: /LD
+#include "windows.h"
+[module(name="MyLibrary")];
+
+[export, public] typedef unsigned long _FOUR_BYTE_DATA;
+
+[export] typedef struct _TWO_X_TWO_BYTE_DATA {
+   unsigned short low;
+   unsigned short high;
+} TWO_X_TWO_BYTE_DATA ;
+
+[export, wire_marshal(TWO_X_TWO_BYTE_DATA)] typedef _FOUR_BYTE_DATA FOUR_BYTE_DATA;
+```
+
+## <a name="requirements"></a>요구 사항
+
+### <a name="attribute-context"></a>특성 컨텍스트
+
+|||
+|-|-|
+|**적용 대상**|**typedef**|
+|**반복 가능**|아니요|
+|**필수 특성**|없음|
+|**잘못된 특성**|없음|
+
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+[IDL 특성](../windows/idl-attributes.md)  
+[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  

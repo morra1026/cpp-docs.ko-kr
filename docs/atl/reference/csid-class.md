@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da9e69cd7ea5e7eabdd826e021e57dac3ba8e6aa
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: d6aa313252d2ba06cf0a912f31564dec3d65e0e8
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208860"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42572517"
 ---
 # <a name="csid-class"></a>CSid 클래스
 이 클래스는에 대 한 래퍼를 `SID` (보안 식별자) 구조입니다.  
@@ -332,13 +332,13 @@ bool LoadAccount(
  시스템 이름입니다. 이 문자열에는 원격 컴퓨터의 이름일 수 있습니다. 이 문자열이 NULL 인 경우 로컬 시스템이 대신 사용 됩니다.  
   
  *pSid*  
- 에 대 한 포인터를 [SID](http://msdn.microsoft.com/library/windows/desktop/aa379594\(v=vs.85\).aspx) 구조입니다.  
+ 에 대 한 포인터를 [SID](/windows/desktop/api/winnt/ns-winnt-_sid) 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 TRUE를 반환 합니다. 실패 한 경우 FALSE입니다. 확장 오류 정보를 가져오려면 `GetLastError`를 호출합니다.  
   
 ### <a name="remarks"></a>설명  
- `LoadAccount` 지정 된 이름에 대 한 보안 식별자를 찾으려고 시도 합니다. 참조 [LookupAccountSid](http://msdn.microsoft.com/library/windows/desktop/aa379166\(v=vs.85\).aspx) 대 한 자세한 내용은 합니다.  
+ `LoadAccount` 지정 된 이름에 대 한 보안 식별자를 찾으려고 시도 합니다. 참조 [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) 대 한 자세한 내용은 합니다.  
   
 ##  <a name="operator_eq"></a>  CSid::operator =  
  대입 연산자입니다.  

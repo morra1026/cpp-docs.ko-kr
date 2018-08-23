@@ -23,19 +23,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::String
 ms.assetid: 72dd04a4-a694-40d3-b899-eaa0b503eab8
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7a18b1a8ced533389b5938d44a73589336f717f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5a7852140b26260b56bd4436c2ee4f7abd2300b3
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33094828"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42587413"
 ---
 # <a name="platformstring-class"></a>Platform::String 클래스
-텍스트를 나타내는 데 사용되는 유니코드 문자의 순차적인 컬렉션을 나타냅니다. 자세한 내용 및 예제에 대 한 참조 [문자열](../cppcx/strings-c-cx.md)합니다.  
+텍스트를 나타내는 데 사용되는 유니코드 문자의 순차적인 컬렉션을 나타냅니다. 자세한 내용 및 예제를 참조 하세요 [문자열](../cppcx/strings-c-cx.md)합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -81,13 +81,13 @@ public ref class String sealed : Object,
 |[String::Equals](#equals)|지정된 개체가 현재 개체와 같은지 여부를 나타냅니다.|  
 |[String::GetHashCode](#gethashcode)|이 인스턴스의 해시 코드를 반환합니다.|  
 |[String::IsEmpty](#isempty)|현재 String 개체가 비어 있는지 여부를 나타냅니다.|  
-|[String::IsFastPass](#isfastpass)|현재 String 개체가 *빠른 전달* 작업에 참여하고 있는지를 나타냅니다. 빠른 전달 작업에서는 참조 횟수가 일시 중단됩니다.|  
+|[String::IsFastPass](#isfastpass)|현재 String 개체가 참여 하는지 여부를 나타내는 *빠른 전달* 작업 합니다. 빠른 전달 작업에서는 참조 횟수가 일시 중단됩니다.|  
 |[String::Length](#length)|현재 String 개체의 길이를 검색합니다.|  
 |[String::ToString](#tostring)|현재 문자열과 같은 값을 갖는 String 개체를 반환합니다.|  
   
  **연산자**  
   
- String 클래스에는 다음과 같은 연산자입니다.  
+ String 클래스에 다음과 같은 연산자입니다.  
   
 |멤버|설명|  
 |------------|-----------------|  
@@ -171,7 +171,7 @@ String^ Concat( String^ str1, String^ str2)
 ### <a name="return-value"></a>반환 값  
  `str1` 값과 `str2` 값의 연결을 값으로 하는 새로운 String^ 개체입니다.  
   
- 경우 `str1` 은 `null` 및 `str2` 는 사용 되지 않는 `str1` 반환 됩니다. 경우 `str2` 은 `null` 및 `str1` 는 사용 되지 않는 `str2` 반환 됩니다. `str1`과 `str2`가 모두 `null`이면 빈 문자열(L"")이 반환됩니다.  
+ 경우 `str1` 됩니다 `null` 하 고 `str2` 되지 `str1` 반환 됩니다. 경우 `str2` 됩니다 `null` 하 고 `str1` 되지 `str2` 반환 됩니다. `str1`과 `str2`가 모두 `null`이면 빈 문자열(L"")이 반환됩니다.  
   
 
 
@@ -185,10 +185,10 @@ const char16* Data()
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 시작 부분에 대 한 포인터는 `const char16` 유니코드 문자 배열 (`char16` 에 대 한 typedef `wchar_t`).  
+ 시작 부분에 대 한 포인터를 `const char16` 유니코드 문자 배열 (`char16` 의 typedef `wchar_t`).  
   
 ### <a name="remarks"></a>설명  
- 이 메서드를 사용하여 `Platform::String^`에서 `wchar_t*`로 변환합니다. `String` 개체가 범위를 벗어나는 경우 데이터 포인터의 유효성이 더 이상 보장되지 않습니다. 원래의 수명 넘어서는 데이터를 저장 하려면 `String` 개체를 가져오려면 [wcscpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) 직접 할당 한 메모리로 배열을 복사 합니다.  
+ 이 메서드를 사용하여 `Platform::String^`에서 `wchar_t*`로 변환합니다. `String` 개체가 범위를 벗어나는 경우 데이터 포인터의 유효성이 더 이상 보장되지 않습니다. 원래의 수명 넘어서는 데이터를 저장할 `String` 개체를 사용 하 여 [wcscpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) 직접 할당 한 메모리로 배열을 복사 합니다.  
   
 
 
@@ -216,7 +216,7 @@ char16* End()
  현재 문자열의 끝을 지나는 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
- End ()는 begin () + Length를 반환 합니다.  
+ End ()는 begin () + Length를 반환합니다.  
   
 
 
@@ -275,7 +275,7 @@ bool IsEmpty()
 
 
 ## <a name="isfastpass"></a>  String:: isfastpass 메서드
-현재 String 개체가 *빠른 전달* 작업에 참여하고 있는지를 나타냅니다. 빠른 전달 작업에서는 참조 횟수가 일시 중단됩니다.  
+현재 String 개체가 참여 하는지 여부를 나타내는 *빠른 전달* 작업 합니다. 빠른 전달 작업에서는 참조 횟수가 일시 중단됩니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -311,12 +311,12 @@ String^ str = "Hello";
 int len = str->Length(); //len = 5  
 ```  
   
- 문자 배열에서 반환 되는 [string:: data](#data) 종결 NULL 또는 '\0' 인 추가 문자열이 하나 있습니다. 이 문자의 길이도 2바이트입니다.  
+ 문자 배열에서 반환 된 [string:: data](#data) 종결 NULL 또는 '\0' 인 추가 문자열이 하나 있습니다. 이 문자의 길이도 2바이트입니다.  
   
 
 
 ## <a name="operator-plus"></a>  String:: operator + 연산자
-두 개의 연결 [문자열](../cppcx/platform-string-class.md) 새 개체 [문자열](../cppcx/platform-string-class.md) 개체입니다.
+두 연결 [문자열](../cppcx/platform-string-class.md) 를 새로운 개체 [문자열](../cppcx/platform-string-class.md) 개체입니다.
   
 ### <a name="syntax"></a>구문  
   
@@ -382,7 +382,7 @@ bool String::operator>( String^ str1, String^ str2)
  `str1`의 값이 `str2`의 값보다 크면 `true`이고, 그렇지 않으면 `false`입니다.  
   
 ### <a name="remarks"></a>설명  
- 명시적으로 호출 하는 것이 연산자는 [string:: compareordinal](#compareordinal) 고 0 보다 큰 결과 가져오는 합니다.  
+ 이 연산자는 명시적으로 호출 하는 것 [string:: compareordinal](#compareordinal) 0 보다 큰 결과 가져오는 및 합니다.  
   
 
 
@@ -466,7 +466,7 @@ String(char16* s, unsigned int n)
   
 ### <a name="remarks"></a>설명  
  성능이 중요 하며 소스 문자열의 수명을 제어 하는 경우 사용할 수 있습니다 [platform:: stringreference](../cppcx/platform-stringreference-class.md) 문자열 대신 합니다.  
-### <a name="example"></a>예제  
+### <a name="example"></a>예  
   
 ```cpp  
 String^ s = L"Hello!";  

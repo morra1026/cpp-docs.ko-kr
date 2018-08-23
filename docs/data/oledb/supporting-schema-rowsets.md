@@ -18,15 +18,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7c0468a9df7b79e79b3e20074c43fc1621058d71
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 7f5c24623e10de23e42041592eb1b2f417f1ed5b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339707"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571521"
 ---
 # <a name="supporting-schema-rowsets"></a>스키마 행 집합 지원
-스키마 행 집합에는 소비자가 해당 기본 구조 또는 스키마를 몰라도 데이터 저장소에 대 한 정보를 얻을 수 있습니다. 예를 들어, 데이터 저장소를 읽는 것 외에 스키마를 알 수 없기 때문에 사용자 정의 계층을 구성 하는 테이블이 있을 수 있습니다. (또 다른 예로, note는 Visual c + + 마법사 사용 하 여 스키마 행 집합 생성 소비자는 접근자입니다.) 이 작업을 수행 하기 위해 소비자를 허용 하려면 공급자의 세션 개체에 메서드를 노출 합니다 [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) 인터페이스입니다. Visual c + + 응용 프로그램을 사용 하 여 합니다 [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) 구현 하는 클래스 `IDBSchemaRowset`합니다.  
+스키마 행 집합에는 소비자가 해당 기본 구조 또는 스키마를 몰라도 데이터 저장소에 대 한 정보를 얻을 수 있습니다. 예를 들어, 데이터 저장소를 읽는 것 외에 스키마를 알 수 없기 때문에 사용자 정의 계층을 구성 하는 테이블이 있을 수 있습니다. (또 다른 예로, note는 Visual c + + 마법사 사용 하 여 스키마 행 집합 생성 소비자는 접근자입니다.) 이 작업을 수행 하기 위해 소비자를 허용 하려면 공급자의 세션 개체에 메서드를 노출 합니다 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) 인터페이스입니다. Visual c + + 응용 프로그램을 사용 하 여 합니다 [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) 구현 하는 클래스 `IDBSchemaRowset`합니다.  
   
  `IDBSchemaRowsetImpl` 다음 메서드를 지원합니다.  
   
@@ -64,7 +64,7 @@ ms.locfileid: "39339707"
 -   **C***ShortName***SessionColSchemaRowset**, 테이블의 이름을 전달는 `DBID`합니다.  
   
 ## <a name="setting-restrictions"></a>제한 설정  
- 스키마 행 집합 지원에서 중요 한 개념은 설정 하는 사용 하 여 작업을 수행할 있습니다 `SetRestrictions`합니다. 제한을 통해 소비자는 일치하는 행만 페치할 수 있습니다. 예를 들어 "MyTable" 테이블의 모든 열을 찾을 수 있습니다. 제한은 선택 사항이므로 지원되는 제한이 없는 경우(기본값) 항상 모든 데이터가 반환됩니다. 에서는 제한 사항을 지원 하는 공급자의 예제를 참조 합니다 [UpdatePV](http://msdn.microsoft.com/c8bed873-223c-4a7d-af55-f90138c6f38f) 샘플입니다.  
+ 스키마 행 집합 지원에서 중요 한 개념은 설정 하는 사용 하 여 작업을 수행할 있습니다 `SetRestrictions`합니다. 제한을 통해 소비자는 일치하는 행만 페치할 수 있습니다. 예를 들어 "MyTable" 테이블의 모든 열을 찾을 수 있습니다. 제한은 선택 사항이므로 지원되는 제한이 없는 경우(기본값) 항상 모든 데이터가 반환됩니다. 에서는 제한 사항을 지원 하는 공급자의 예제를 참조 합니다 [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) 샘플입니다.  
   
 ## <a name="setting-up-the-schema-map"></a>스키마 맵 설정  
  UpdatePV에서 Session.h에서이 이와 같은 스키마 맵을 설정 합니다.  
@@ -93,7 +93,7 @@ class CUpdateSessionTRSchemaRowset :
   
  사실은 `CUpdateSession` 에서 상속 `IDBSchemaRowsetImpl`모든 제한 메서드를 처리 하므로, 합니다. 사용 하 여 `CSchemaRowsetImpl`합니다 (위의 스키마 구조의 나열 됨) 하는 세 개의 자식 클래스를 선언: `CUpdateSessionTRSchemaRowset`, `CUpdateSessionColSchemaRowset`, 및 `CUpdateSessionPTSchemaRowset`합니다. 각 자식 클래스에는 `Execute` 해당 집합이 제한 (검색 조건)를 처리 하는 메서드. 각 `Execute` 메서드 값을 비교 합니다 `cRestrictions` 고 `rgRestrictions` 매개 변수입니다. 이러한 매개 변수 설명을 참조 [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md)합니다.  
   
- 특정 스키마 행 집합으로 해당 제한 사항에 대 한 자세한 내용은 스키마 행 집합 Guid 표를 참조에서 [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) 에 *OLE DB Programmer's Reference* 에 Windows SDK입니다.  
+ 특정 스키마 행 집합으로 해당 제한 사항에 대 한 자세한 내용은 스키마 행 집합 Guid 표를 참조에서 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 에 Windows SDK입니다.  
   
  예를 들어 지원 하는 **TABLE_NAME** 에 대 한 제한 `DBSCHEMA_TABLES`, 다음을 수행 합니다.  
   

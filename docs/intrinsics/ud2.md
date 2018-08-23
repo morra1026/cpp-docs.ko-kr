@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c282456f74fa86940e3d1ffc77d0226a28ed0b80
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eeb63aa411278c2ca6b2217d9243331b57cd7624
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33326165"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541676"
 ---
 # <a name="ud2"></a>__ud2
 **Microsoft 전용**  
   
- 정의 되지 않은 명령을 생성 합니다.  
+ 정의 되지 않은 명령을 생성합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,22 +36,22 @@ void __ud2();
 ```  
   
 ## <a name="remarks"></a>설명  
- 프로세서는 정의 되지 않은 명령을 실행 하는 경우 잘못 된 opcode 예외가 발생 합니다.  
+ 프로세서 정의 되지 않은 명령을 실행 하는 경우 잘못 된 opcode가 예외를 발생 시킵니다.  
   
- `__ud2` 함수는 동일는 `UD2` 컴퓨터, 명령 및 커널 모드 에서만 사용할 수 있습니다. 자세한 내용을 보려면 문서에 대 한 검색 "Intel 아키텍처 소프트웨어 개발자 설명서, 볼륨 2: 명령 집합 참조"에 [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) 사이트입니다.  
+ 합니다 `__ud2` 함수는 동일 합니다 `UD2` 컴퓨터 명령 및 커널 모드 에서만 사용할 수 있습니다. 자세한 내용은 문서를 검색 "Intel 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조"에 [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) 사이트입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__ud2`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__ud2`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 **Microsoft 전용 종료**  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 예외가 발생 하는 정의 되지 않은 명령을 실행 합니다. 예외 처리기 하나에 0에서 반환 코드를 변경합니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 예외가 발생 하는 정의 되지 않은 명령을 실행 합니다. 그런 다음 예외 처리기 하나는 0 개에서 반환 코드를 변경합니다.  
   
 ```  
 // __ud2_intrinsic.cpp  

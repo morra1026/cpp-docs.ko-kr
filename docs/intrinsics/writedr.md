@@ -16,15 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6fab96a22dec9b4cf2914fa2c02dd973bcd7ace8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 598b95df8fd2f4dd2826fcfa1f59a7e2daa8d523
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33329185"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42545888"
 ---
 # <a name="writedr"></a>__writedr
-지정 된 디버그 레지스터에 지정된 된 값을 씁니다.  
+지정 된 디버그 레지스터를 지정된 된 값을 씁니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,21 +35,21 @@ void __writedr(unsigned DebugRegister, unsigned __int64 DebugValue);
   
 #### <a name="parameters"></a>매개 변수  
  [in] `DebugRegister`  
- 디버그를 식별 하는 0 ~ 7 사이의 숫자를 등록 합니다.  
+ 디버그를 식별 하는 0부터 7 까지의 숫자를 등록 합니다.  
   
  [in] `DebugValue`  
- 디버그에 쓸 수 있는 값을 등록 합니다.  
+ 디버그에 쓸 값을 등록 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 내장 함수는 커널 모드 에서만 사용할 수 및의 루틴은 내장 함수로 사용할 수 있습니다.  
+ 이러한 내장 함수는 커널 모드 에서만 사용할 수 있습니다 및 루틴은 내장 함수로 사용할 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__writedr`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__writedr`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 **Microsoft 전용 종료**  
   

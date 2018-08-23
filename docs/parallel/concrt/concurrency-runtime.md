@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be177574aa78080f3a950fb674adc0a8fab0b5c4
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: b39fb35b21721cb9b93741a74f62d749b6fb1051
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208391"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42608269"
 ---
 # <a name="concurrency-runtime"></a>동시성 런타임
 C++용 동시성 런타임은 강력하고 확장 가능하며 응답성이 높은 병렬 응용 프로그램을 작성하는 데 도움이 됩니다. 이는 동시성과 관련된 인프라 세부 정보를 관리할 필요가 없도록 추상화 수준을 높입니다. 또한 이러한 동시성 런타임을 사용하여 응용 프로그램의 서비스 품질 요구 사항을 충족하는 일정 예약 정책을 지정할 수도 있습니다. 다음 리소스는 동시성 런타임 작업을 시작하는 데 도움이 됩니다.  
@@ -111,7 +111,7 @@ C++용 동시성 런타임은 강력하고 확장 가능하며 응답성이 높�
 |[동시성 런타임 및 Visual Studio 2010의 병렬 패턴 라이브러리에 대 한 코드 샘플](http://go.microsoft.com/fwlink/p/?linkid=183875)|동시성 런타임을 보여 주는 샘플 응용 프로그램 및 유틸리티를 제공합니다.|  
 |[네이티브 코드 블로그의 병렬 프로그래밍](http://go.microsoft.com/fwlink/p/?linkid=183873)|동시성 런타임의 병렬 프로그래밍에 대한 자세한 추가 블로그 기사를 제공합니다.|  
 |[C + + 및 네이티브 코드 포럼에서 병렬 컴퓨팅](http://go.microsoft.com/fwlink/p/?linkid=183874)|동시성 런타임에 대한 커뮤니티 토론에 참여할 수 있습니다.|  
-|[병렬 프로그래밍](/dotnet/standard/parallel-programming/index)|[!INCLUDE[dnprdnshort](../../error-messages/tool-errors/includes/dnprdnshort_md.md)]에서 사용할 수 있는 병렬 프로그래밍 모델에 대해 알려 줍니다.|  
+|[병렬 프로그래밍](/dotnet/standard/parallel-programming/index)|.NET Framework에서 사용할 수 있는 병렬 프로그래밍 모델에 설명 합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [참조](../../parallel/concrt/reference/reference-concurrency-runtime.md)

@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 895df401ab10ae85641fd2eed9f7a9654916f33f
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 42fc4bd5186ade5efaa9c4fa8e9f567f37509039
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39465235"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42571531"
 ---
 # <a name="varianttdetach"></a>_variant_t::Detach
 **Microsoft 전용**  
@@ -41,7 +41,7 @@ VARIANT Detach( );
  캡슐화 된 `VARIANT`합니다.  
   
 ## <a name="remarks"></a>설명  
- 추출 하 고 캡슐화 된 반환 `VARIANT`, 그런 다음이 지우고 `_variant_t` 제거 하지 않고 개체입니다. 이 멤버 함수를 제거 합니다 `VARIANT` 캡슐화 및 집합에서 합니다 `VARTYPE` 이 `_variant_t` 개체 값을 vt_empty로 합니다. 반환 된 릴리스 하는 것 `VARIANT` 를 호출 하 여 합니다 [VariantClear](http://msdn.microsoft.com/28741d81-8404-4f85-95d3-5c209ec13835) 함수입니다.  
+ 추출 하 고 캡슐화 된 반환 `VARIANT`, 그런 다음이 지우고 `_variant_t` 제거 하지 않고 개체입니다. 이 멤버 함수를 제거 합니다 `VARIANT` 캡슐화 및 집합에서 합니다 `VARTYPE` 이 `_variant_t` 개체 값을 vt_empty로 합니다. 반환 된 릴리스 하는 것 `VARIANT` 를 호출 하 여 합니다 [VariantClear](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-variantclear) 함수입니다.  
   
  **Microsoft 전용 종료**  
   

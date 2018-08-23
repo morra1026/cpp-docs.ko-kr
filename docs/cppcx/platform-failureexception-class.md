@@ -12,16 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - Platform::FailureException
 ms.assetid: 1729cd07-bfc2-448e-9db5-185d5cbf5b81
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1094810663ce0a0abf8234af386d7a8427472ced
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e644ec013b4beac6ebc4f7c774f926711dc1093e
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088143"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42609170"
 ---
 # <a name="platformfailureexception-class"></a>Platform::FailureException 클래스
 작업이 실패하면 throw됩니다. 이 지시문은 E_FAIL HRESULT에 해당합니다.  

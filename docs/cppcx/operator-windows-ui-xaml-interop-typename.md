@@ -5,16 +5,16 @@ ms.date: 12/30/2016
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: a65a105e-7e3a-452f-932f-2cdaf00fbba5
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 714d39a70b19998a5daddceadc2c91df65312122
-ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
+ms.openlocfilehash: 0cf5041e6e3faa8c495d52c31d86ff25c903a174
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34256282"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42600722"
 ---
 # <a name="operator-windowsuixamlinteroptypename"></a>연산자 Windows::UI::Xaml::Interop::TypeName
 `Platform::Type` 을 [Windows::UI::Xaml::Interop::TypeName](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx)으로 변환할 수 있습니다.  
@@ -35,7 +35,7 @@ Operator TypeName(Platform::Type^ type)
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);  
 ```  
   
-### <a name="example"></a>예제  
+### <a name="example"></a>예  
  다음 예제에서는 `TypeName` 과 `Type`간을 변환하는 방법을 보여 줍니다.  
   
 ```  

@@ -11,16 +11,16 @@ dev_langs:
 helpviewer_keywords:
 - VectorViewIterator Class
 ms.assetid: be3aa1ae-e6ba-4a06-8d6b-86d8128026f7
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee104956bdfb5c7b72d20195fb3fb7a2789e236c
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 2f7894710957994faadcb22753c1fca389a13506
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207707"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42597724"
 ---
 # <a name="platformcollectionsvectorviewiterator-class"></a>Platform::Collections::VectorViewIterator 클래스
 Windows Runtime에서 파생 된 개체에 대 한 표준 템플릿 라이브러리 반복기를 제공`IVectorView` 인터페이스입니다.  

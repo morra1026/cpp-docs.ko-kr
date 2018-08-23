@@ -11,16 +11,16 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Guid Struct
 ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c295138d6239ce516b4f322fb5fc479e2235a6be
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 102585cf7148923f584591102712278847ee7573
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33089453"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42601256"
 ---
 # <a name="platformguid-value-class"></a>Platform::Guid 값 클래스
 Windows 런타임 형식 시스템의 [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx) 형식을 나타냅니다.  
@@ -42,7 +42,7 @@ public value struct Guid
 |[operator()](#operator-call)|Guid를 GUID로 변환합니다.|  
   
 ### <a name="remarks"></a>설명  
- Windows 함수 [CoCreateGuid](http://msdn.microsoft.com/library/windows/desktop/ms688568\(v=vs.85\).aspx)를 사용하여 새 Platform::Guid를 생성하는 방법에 대한 예제는 [WinRT 구성 요소: GUID를 생성하는 방법](http://blogs.msdn.com/b/eternalcoding/archive/2013/03/25/winrt-component-how-to-generate-a-guid.aspx)을 참조하세요.  
+ Windows 함수를 사용 하 여 새 platform::를 생성 하는 방법의 예로 [CoCreateGuid](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateguid)를 참조 하세요 [WinRT 구성 요소: GUID를 생성 하는 방법?](http://blogs.msdn.com/b/eternalcoding/archive/2013/03/25/winrt-component-how-to-generate-a-guid.aspx)  
   
 ### <a name="requirements"></a>요구 사항  
  **지원 되는 최소 클라이언트:** Windows 8  
@@ -146,12 +146,12 @@ Platform::Guid::operator!=
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 두 guid 같지 않으면 true입니다.
+ 두 guid가 같지 않으면 true입니다.
 
 
 
 ## <a name="operator-call"></a> Guid::operator() 연산자
-암시적으로 변환 된 [GUID 구조체](http://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx)GUID를 platform:: guid 합니다.  
+암시적으로 변환 된 [GUID 구조체](http://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx)platform:: GUID입니다.  
   
 ### <a name="syntax"></a>구문  
   

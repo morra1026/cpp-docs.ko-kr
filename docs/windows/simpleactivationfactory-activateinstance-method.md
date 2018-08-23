@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 260d7e2993bd92297167c23458d37ba80919306f
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: f83c98d35ce64ef51a15bccf0f33695fd266d0af
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40013387"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42609572"
 ---
 # <a name="simpleactivationfactoryactivateinstance-method"></a>SimpleActivationFactory::ActivateInstance 메서드
 
@@ -37,6 +37,7 @@ STDMETHOD( ActivateInstance )(
 ```
 
 ### <a name="parameters"></a>매개 변수
+
 *ppvObject*  
 이 작업이 완료 될 때, 지정 된 개체의 인스턴스에 대 한 포인터를 `Base` 클래스 템플릿 매개 변수입니다.
 
@@ -55,4 +56,5 @@ STDMETHOD( ActivateInstance )(
 **네임스페이스:** Microsoft::WRL
 
 ## <a name="see-also"></a>참고 항목
- [SimpleActivationFactory 클래스](../windows/simpleactivationfactory-class.md)
+
+[SimpleActivationFactory 클래스](../windows/simpleactivationfactory-class.md)

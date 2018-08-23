@@ -17,50 +17,56 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a2f8712e06838fb2d2269ba307a551997d7bd57c
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: aea326149c9748ff480d523a1078f54ba733cb14
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40018233"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42610422"
 ---
 # <a name="interfacetraitscancastto-method"></a>InterfaceTraits::CanCastTo 메서드
-WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-template<typename T>  
-static __forceinline bool CanCastTo(  
-   _In_ T* ptr,  
-   REFIID riid,  
-   _Deref_out_ void **ppv  
-);  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *ptr*  
- 이름 형식에 대 한 포인터입니다.  
-  
- *riid*  
- 인터페이스 ID의 `Base`합니다.  
-  
- *ppv*  
- 이 작업에 성공 하면 *ppv* 로 지정 된 인터페이스를 가리키는 `Base`합니다. 그렇지 않으면 *ppv* 로 설정 된 **nullptr**합니다.  
-  
-## <a name="return-value"></a>반환 값  
- **true** 이 작업이 완료 되 고 *ptr* 포인터로 캐스팅 됩니다 `Base`이 고, 그렇지 않으면 **false** 합니다.  
-  
-## <a name="remarks"></a>설명  
- 지정된 된 포인터에 대 한 포인터로 캐스팅 될 수 있는지 여부를 나타내는 `Base`합니다.  
-  
- 에 대 한 자세한 내용은 `Base`를 참조 합니다 **공용 Typedefs** 섹션 [InterfaceTraits 구조체](../windows/interfacetraits-structure.md)합니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## <a name="see-also"></a>참고 항목  
- [InterfaceTraits 구조체](../windows/interfacetraits-structure.md)   
- [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)
+
+WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+template<typename T>
+static __forceinline bool CanCastTo(
+   _In_ T* ptr,
+   REFIID riid,
+   _Deref_out_ void **ppv
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*ptr*  
+이름 형식에 대 한 포인터입니다.
+
+*riid*  
+인터페이스 ID의 `Base`합니다.
+
+*ppv*  
+이 작업에 성공 하면 *ppv* 로 지정 된 인터페이스를 가리키는 `Base`합니다. 그렇지 않으면 *ppv* 로 설정 된 **nullptr**합니다.
+
+## <a name="return-value"></a>반환 값
+
+**true** 이 작업이 완료 되 고 *ptr* 포인터로 캐스팅 됩니다 `Base`이 고, 그렇지 않으면 **false** 합니다.
+
+## <a name="remarks"></a>설명
+
+지정된 된 포인터에 대 한 포인터로 캐스팅 될 수 있는지 여부를 나타내는 `Base`합니다.
+
+에 대 한 자세한 내용은 `Base`를 참조 합니다 **공용 Typedefs** 섹션 [InterfaceTraits 구조체](../windows/interfacetraits-structure.md)합니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## <a name="see-also"></a>참고 항목
+
+[InterfaceTraits 구조체](../windows/interfacetraits-structure.md)  
+[Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

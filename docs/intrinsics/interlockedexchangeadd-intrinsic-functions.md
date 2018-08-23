@@ -65,17 +65,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c141caf090eb34482fe53a03138ff71d2740e2fc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2d25fccd56522d420a96b589796ef77cc30148d3
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340556"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42600894"
 ---
 # <a name="interlockedexchangeadd-intrinsic-functions"></a>_InterlockedExchangeAdd Intrinsic Functions
 **Microsoft 전용**  
   
- Win32에 대 한 컴파일러 내장 지원을 제공 [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] [_InterlockedExchangeAdd 내장 함수](../intrinsics/interlockedexchangeadd-intrinsic-functions.md) 함수입니다.  
+ Win32 Windows SDK에 대 한 컴파일러 내장 함수 지원을 제공 [_InterlockedExchangeAdd 내장 함수](../intrinsics/interlockedexchangeadd-intrinsic-functions.md) 함수입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -177,9 +177,9 @@ __int64 _InterlockedExchangeAdd64_HLERelease(
   
 |내장 함수|아키텍처|머리글|  
 |---------------|------------------|------------|  
-|`_InterlockedExchangeAdd`, `_InterlockedExchangeAdd8`, `_InterlockedExchangeAdd16`, `_InterlockedExchangeAdd64`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
+|`_InterlockedExchangeAdd`, `_InterlockedExchangeAdd8`, `_InterlockedExchangeAdd16`, `_InterlockedExchangeAdd64`|x86, ARM, x64|\<intrin.h>|  
 |`_InterlockedExchangeAdd_acq`, `_InterlockedExchangeAdd_rel`, `_InterlockedExchangeAdd_nf`, `_InterlockedExchangeAdd8_acq`, `_InterlockedExchangeAdd8_rel`, `_InterlockedExchangeAdd8_nf`,`_InterlockedExchangeAdd16_acq`, `_InterlockedExchangeAdd16_rel`, `_InterlockedExchangeAdd16_nf`, `_InterlockedExchangeAdd64_acq`, `_InterlockedExchangeAdd64_rel`, `_InterlockedExchangeAdd64_nf`|ARM|\<intrin.h>|  
-|`_InterlockedExchangeAdd_HLEAcquire`, `_InterlockedExchangeAdd_HLERelease`, `_InterlockedExchangeAdd64_HLEAcquire`, `_InterlockedExchangeAdd64_HLErelease`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h>|  
+|`_InterlockedExchangeAdd_HLEAcquire`, `_InterlockedExchangeAdd_HLERelease`, `_InterlockedExchangeAdd64_HLEAcquire`, `_InterlockedExchangeAdd64_HLErelease`|x86, x64|\<immintrin.h>|  
   
 ## <a name="remarks"></a>설명  
  사용되는 데이터 형식과 프로세서별 획득 또는 해제 의미 체계에 따라 다른 `_InterlockedExchangeAdd`의 여러 변형이 있습니다.  
@@ -190,10 +190,10 @@ __int64 _InterlockedExchangeAdd64_HLERelease(
   
  HLE(Hardware Lock Elision) 명령을 지원하는 Intel 플랫폼에서 `_HLEAcquire` 및 `_HLERelease` 접미사가 포함된 내장 함수는 하드웨어에서 잠금 쓰기 단계를 제거하여 성능을 향상시킬 수 있는 힌트를 프로세서에 포함합니다. HLE를 지원하지 않는 플랫폼에서 이러한 내장 함수를 호출하면 힌트는 무시됩니다.  
   
- 이러한 루틴은 내장 함수로만 사용할 수 있습니다. 따라서 루틴은 내장 함수 인지 여부 [/Oi](../build/reference/oi-generate-intrinsic-functions.md) 또는 [내장 #pragma](../preprocessor/intrinsic.md) 사용 됩니다. 사용할 수 없으면 [#pragma 함수](../preprocessor/function-c-cpp.md) 이러한 내장 함수에 있습니다.  
+ 이러한 루틴은 내장 함수로만 사용할 수 있습니다. 따라서 이들은 내장 함수 인지 여부 [/Oi](../build/reference/oi-generate-intrinsic-functions.md) 하거나 [내장 #pragma](../preprocessor/intrinsic.md) 사용 됩니다. 사용 하는 것이 불가능 [#pragma 함수](../preprocessor/function-c-cpp.md) 에서 이러한 내장 함수입니다.  
   
-## <a name="example"></a>예제  
- 샘플을 사용 하는 방법에 대 한 `_InterlockedExchangeAdd`, 참조 [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md)합니다.  
+## <a name="example"></a>예  
+ 샘플을 사용 하는 방법에 대 한 `_InterlockedExchangeAdd`를 참조 하세요 [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md)합니다.  
   
 **Microsoft 전용 종료**  
   

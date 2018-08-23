@@ -11,16 +11,16 @@ dev_langs:
 helpviewer_keywords:
 - end Function
 ms.assetid: fb837bff-fc76-4bae-9096-facf0e03041c
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 771d7e83024f9c258df1437ff902d638bffc8478
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ec25b92ca9ce21f72ff2fb573aae316ef1c19eac
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33086423"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596652"
 ---
 # <a name="end-function"></a>end 함수
 지정된 인터페이스 매개 변수로 액세스되는 컬렉션 끝 너머를 가리키는 반복자를 반환합니다.  
@@ -52,10 +52,10 @@ template <typename T>
  템플릿 형식 매개 변수입니다.  
   
  `v`  
- 벡터의 컬렉션인\<T > 또는\<T > IVector에서 액세스할 수 있는 개체\<T >, 또는 IVectorView\<T > 인터페이스입니다.  
+ 벡터의 컬렉션인\<T > 또는 VectorView\<T >를 IVector로 액세스할 수 있는 개체\<T >, 또는 IVectorView\<T > 인터페이스입니다.  
   
  `i`  
- Windows 런타임 수의 컬렉션 개체는 IIterable 액세스 되\<T > 인터페이스입니다.  
+ 개체는 IIterable 액세스 되는 Windows 런타임 arbitraty 컬렉션\<T > 인터페이스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  컬렉션 끝 너머를 가리키는 반복자입니다.  

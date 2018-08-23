@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e24dac191e05cc3b47192cb6ec7fb0fc48dd447
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 76ab5b2911d349c62ff18967e7a660cdc3589ddd
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849485"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42539857"
 ---
 # <a name="function-cc"></a>함수 (C/C++)
 pragma의 인수 목록에서 지정된 함수에 대한 호출이 생성되도록 지정합니다.  
@@ -31,18 +31,18 @@ pragma의 인수 목록에서 지정된 함수에 대한 호출이 생성되도�
 ## <a name="syntax"></a>구문  
   
 ```  
-  
 #pragma function( function1 [, function2, ...] )  
 ```  
   
 ## <a name="remarks"></a>설명  
- 사용 하는 경우는 **내장** pragma (또는 /Oi) 내장 함수 (내장 함수는 함수 호출 아니라 인라인 코드로 생성 됨)를 생성 하도록 컴파일러에 게 사용할 수 있습니다는 **함수** pragma 함수 호출을 명시적으로 강제로 합니다. function pragma가 표시되면 지정된 내장 함수를 포함하는 첫 번째 함수 정의에서 적용되며, 모양에 또는 소스 파일의 끝까지 계속 적용은 **내장** pragma는 동일한 내장 함수를 지정 합니다. **함수** pragma는 함수의 외부 에서만 사용할 수 등의 전역 수준에서 합니다.  
+
+사용 하는 경우는 `intrinsic` pragma (또는 /Oi) 내장 함수 (내장 함수는 함수 호출이 아니라 인라인 코드로 생성 됨)를 생성 하도록 컴파일러에 게 사용할 수 있습니다 합니다 **함수** pragma를 명시적으로 강제 적용을 함수 호출입니다. function pragma가 표시되면 지정된 내장 함수를 포함하는 첫 번째 함수 정의에서 적용되며, 효과의 모양에 또는 소스 파일의 끝에 계속는 `intrinsic` pragma 동일한 내장 함수를 지정 합니다. 합니다 **함수** pragma는 함수의 외부 에서만 사용할 수 있습니다-전역 수준입니다.  
   
- 내장 형식을 있는 함수 목록에 대 한 참조 [내장 #pragma](../preprocessor/intrinsic.md)합니다.  
+내장 형식을 있는 함수 목록에 대해서 [#pragma 내장](../preprocessor/intrinsic.md)합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
-```  
+```cpp  
 // pragma_directive_function.cpp  
 #include <ctype.h>  
 #include <stdio.h>  
@@ -92,5 +92,6 @@ str is 'Now************'
 str is '!!!!!!!!!!!!!!!'  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+## <a name="see-also"></a>참고 항목
+
+[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

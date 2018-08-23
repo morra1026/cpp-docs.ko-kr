@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07ffd955400b1b27efc192a7fe0df4ef31164cda
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 00113372d86e488882c687afb56bd5e52bb74c21
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372681"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571731"
 ---
 # <a name="nmake-reference"></a>NMAKE 참조
-Microsoft Program Maintenance Utility(NMAKE. EXE)는 설명 파일에 포함된 명령을 기반으로 프로젝트를 빌드하는 명령줄 도구로 [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)]에 포함되어 있습니다.  
+Microsoft Program Maintenance Utility (NMAKE. EXE)는 설명 파일에 포함 된 명령을 기반으로 하는 프로젝트를 작성 하는 Visual Studio에 포함 된 명령줄 도구입니다.  
   
- NMAKE를 사용하려면 개발자 명령 프롬프트 창에서 실행해야 합니다. 개발자 명령 프롬프트 창에는 명령줄에서 빌드하는 데 필요한 도구, 라이브러리 및 포함 파일 경로에 대한 환경 변수 집합이 있습니다. 개발자 명령 프롬프트 창을 여는 방법에 대 한 세부 정보를 참조 하십시오. [명령줄에서 빌드 C/c + + 코드](../build/building-on-the-command-line.md)합니다.  
+ NMAKE를 사용하려면 개발자 명령 프롬프트 창에서 실행해야 합니다. 개발자 명령 프롬프트 창에는 명령줄에서 빌드하는 데 필요한 도구, 라이브러리 및 포함 파일 경로에 대한 환경 변수 집합이 있습니다. 개발자 명령 프롬프트 창을 여는 방법에 대 한 자세한 내용은 참조 하세요. [명령줄에서 빌드 C/c + + 코드](../build/building-on-the-command-line.md)합니다.  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보  
  [NMAKE 실행](../build/running-nmake.md)  
@@ -47,7 +47,7 @@ Microsoft Program Maintenance Utility(NMAKE. EXE)는 설명 파일에 포함된 
  [메이크파일 전처리](../build/makefile-preprocessing.md)  
   
 ## <a name="see-also"></a>참고 항목  
- [C/c + + 코드를 명령줄에서 빌드](../build/building-on-the-command-line.md)   
+ [명령줄에서 C/c + + 코드를 작성 합니다.](../build/building-on-the-command-line.md)   
  [C/c + + 빌드 도구](../build/reference/c-cpp-build-tools.md)   
  [Visual C++ 프로젝트 만들기 및 관리](../ide/creating-and-managing-visual-cpp-projects.md)   
  [Visual Studio의 디버깅](/visualstudio/debugger/debugging-in-visual-studio)   

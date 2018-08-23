@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9c72910a6b8084d015f151d7e701f6b63ffd1d2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 61d37405a9853fda79c8717f16abbd931ed947e7
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33328229"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539314"
 ---
 # <a name="movsb"></a>__movsb
 **Microsoft 전용**  
   
- 이동 문자열을 생성 (`rep movsb`) 명령입니다.  
+ 이동 하는 문자열을 생성 합니다 (`rep movsb`) 명령입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,7 +42,7 @@ void __movsb(
   
 #### <a name="parameters"></a>매개 변수  
  [out] `Destination`  
- 복사의 대상에 대 한 포인터입니다.  
+ 복사 대상에 대 한 포인터입니다.  
   
  [in] `Source`  
  복사의 원본에 대 한 포인터입니다.  
@@ -54,16 +54,16 @@ void __movsb(
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__movsb`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__movsb`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- 결과 첫 번째 `Count` 가리키는 바이트 `Source` 복사 되는 `Destination` 문자열입니다.  
+ 결과 첫 번째 `Count` 가리키는 바이트 `Source` 에 복사 됩니다는 `Destination` 문자열입니다.  
   
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 // movsb.cpp  

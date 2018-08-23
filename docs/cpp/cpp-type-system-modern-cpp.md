@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b5a91caab06f4d03beeea8ba542e1ebc12a8ecb
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 394136ccd11b4efd9f312c82acad7e9258309551
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39407863"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42573286"
 ---
 # <a name="c-type-system-modern-c"></a>C++ 형식 시스템(최신 C++)
 개념이 *형식* 는 c + +에서 매우 중요 합니다. 모든 변수, 함수 인수 및 함수 반환 값은 형식이 있어야 컴파일할 수 있습니다. 또한 모든 식(리터럴 값 포함)은 확인 전 컴파일러가 암시적으로 형식을 지정합니다. 형식의 몇 가지 예로 **int** 정수 값을 저장할 **double** 부동 소수점 값을 저장 (라고도 *스칼라* 데이터 형식), 또는 표준 라이브러리 클래스 [std::basic_string](../standard-library/basic-string-class.md) 텍스트를 저장 합니다. 정의 하 여 고유한 형식을 만들 수 있습니다는 **클래스** 하거나 **구조체**합니다. 이 형식은 변수에 할당되는(또는 식 결과) 메모리 양, 해당 변수에 저장할 수 있는 값의 유형, 이러한 값(비트 패턴)의 해석 방법 및 여기에 대해 수행할 수 있는 작업을 지정합니다. 이 문서에는 C++ 형식 시스템의 주요 기능에 대한 비공식적 개요가 들어 있습니다.  
@@ -157,7 +157,7 @@ void someFunction() {
  일반적으로 참조 포인터에 대 한 자세한 내용은 [포인터](../cpp/pointers-cpp.md)합니다.  
   
 ## <a name="windows-data-types"></a>Windows 데이터 형식  
- C 및 C++의 클래식 Win32 프로그래밍에서 대부분의 함수에는 매개 변수 및 반환 값 형식을 지정하는 Windows 관련 typedefs 및 #define 매크로(`windef.h`에 정의됨)가 사용됩니다. 이러한 Windows 데이터 유형은 주로 C/c + + 기본 제공 형식에 지정 된 특수 이름 (별칭)입니다. 이러한 typedefs 및 전처리기 정의의 전체 목록은 참조 하세요 [Windows 데이터 형식](http://msdn.microsoft.com/4553cafc-450e-4493-a4d4-cb6e2f274d46)합니다. HRESULT, LCID와 같은 이러한 typedefs 중 일부는 유용하며 설명을 포함합니다. INT와 같은 다른 형식은 특별한 의미가 없으며 기본적 C++ 형식의 별칭입니다. 그 외 Windows 데이터 유형은 C 프로그래밍 및 16비트 프로세서 시기부터 내려온 이름을 그대로 가지고 있으며 최신 하드웨어 또는 운영 체제에 다른 목적과 의미를 가지고 있지 않습니다. 특수 데이터 형식으로 나열 하는 Windows 런타임 라이브러리와 연결 된 밖에도 [Windows 런타임 기본 데이터 형식](http://msdn.microsoft.com/b5735851-ec07-48c1-92b4-ca9f768096f6)합니다. 현대적인 C++에서 일반적인 지침은 Windows 형식이 값 해석 방식에 대해 추가적인 의미를 전달하지 않는 한 C++ 기본 형식을 사용하는 것입니다.  
+ C 및 C++의 클래식 Win32 프로그래밍에서 대부분의 함수에는 매개 변수 및 반환 값 형식을 지정하는 Windows 관련 typedefs 및 #define 매크로(`windef.h`에 정의됨)가 사용됩니다. 이러한 Windows 데이터 유형은 주로 C/c + + 기본 제공 형식에 지정 된 특수 이름 (별칭)입니다. 이러한 typedefs 및 전처리기 정의의 전체 목록은 참조 하세요 [Windows 데이터 형식](/windows/desktop/WinProg/windows-data-types)합니다. HRESULT, LCID와 같은 이러한 typedefs 중 일부는 유용하며 설명을 포함합니다. INT와 같은 다른 형식은 특별한 의미가 없으며 기본적 C++ 형식의 별칭입니다. 그 외 Windows 데이터 유형은 C 프로그래밍 및 16비트 프로세서 시기부터 내려온 이름을 그대로 가지고 있으며 최신 하드웨어 또는 운영 체제에 다른 목적과 의미를 가지고 있지 않습니다. 특수 데이터 형식으로 나열 하는 Windows 런타임 라이브러리와 연결 된 밖에도 [Windows 런타임 기본 데이터 형식](/windows/desktop/WinRT/base-data-types)합니다. 현대적인 C++에서 일반적인 지침은 Windows 형식이 값 해석 방식에 대해 추가적인 의미를 전달하지 않는 한 C++ 기본 형식을 사용하는 것입니다.  
   
 ## <a name="more-information"></a>추가 정보  
  C++ 형식 시스템에 대한 자세한 내용은 다음 항목을 참조하십시오.  

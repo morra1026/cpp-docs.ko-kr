@@ -16,22 +16,24 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e5ca62b63cd09f2c5041efbbf36b01cc3b44f77c
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e2bbcd8fb0e1b04ec35520f154724b095762233b
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33887028"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42608003"
 ---
 # <a name="custom-attributes-c"></a>사용자 지정 특성(C++)
-사용자 지정 특성은 메타 데이터를 확장할 수 있는 강력한 형식의 기술입니다. 이 항목의 특성을 사용 하 여 다루는: 매개 변수 및 대상을 지정 합니다.  
-  
- 새 사용자 지정 속성을 정의 하는 방법은 대 한 참조,  
-  
--   [사용자 정의 특성](../windows/user-defined-attributes-cpp-component-extensions.md)  
-  
--   [특성](../windows/attribute.md) (사용 되지 않는 구문).  
-  
-## <a name="see-also"></a>참고 항목  
- [특성](../windows/attribute.md)   
- [사용자 지정 특성(C++)](../windows/custom-attributes-cpp.md)
+
+사용자 지정 특성에는 메타 데이터를 확장할 수 있도록 강력한 형식의 기술입니다. 이 항목에서는 특성을 사용 하 여 처리: 매개 변수 및 대상을 지정 합니다.
+
+새 사용자 지정 특성을 정의 하는 방법은 하세요
+
+- [사용자 정의 특성](../windows/user-defined-attributes-cpp-component-extensions.md)
+
+- [특성](../windows/attribute.md) (구문 사용 되지 않음).
+
+## <a name="see-also"></a>참고 항목
+
+[attribute](../windows/attribute.md)  
+[사용자 지정 특성(C++)](../windows/custom-attributes-cpp.md)

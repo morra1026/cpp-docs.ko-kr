@@ -16,21 +16,21 @@ dev_langs:
 helpviewer_keywords:
 - Platform::WriteOnlyArray Class
 ms.assetid: 92d7dd56-ec58-4b8c-88ba-9c903668b687
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f5c1f1f0260d4f1d1c4a6fb640b7cbf1e9d3f2f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3871b6ad3aead88c32c906726f689d949eb945ba
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33091489"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42603348"
 ---
 # <a name="platformwriteonlyarray-class"></a>Platform::WriteOnlyArray 클래스
 호출자가 채울 메서드에 대해 배열을 전달할 때 입력 매개 변수로 사용되는 1차원 배열을 나타냅니다.  
   
- 이 ref 클래스는 vccorlib.h에서 private으로 선언되므로 메타데이터로 내보내지지 않고 C++에서만 사용할 수 있습니다. 이 클래스는 호출자가 할당한 배열을 받는 입력 매개 변수로만 사용해야 합니다. 이 클래스는 사용자 코드에서 생성할 수 없으며 C++ 메서드가 해당 배열에 직접 작성할 수 있게 합니다( *FillArray* 패턴). 자세한 내용은 참조 [Array 및 WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)합니다.  
+ 이 ref 클래스는 vccorlib.h에서 private으로 선언되므로 메타데이터로 내보내지지 않고 C++에서만 사용할 수 있습니다. 이 클래스는 호출자가 할당한 배열을 받는 입력 매개 변수로만 사용해야 합니다. 이 클래스는 사용자 코드에서 생성할 수 없으며 C++ 메서드가 해당 배열에 직접 작성할 수 있게 합니다( *FillArray* 패턴). 자세한 내용은 [Array 및 WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,15 +43,15 @@ private ref class WriteOnlyArray<T, 1>
 ### <a name="public-methods"></a>Public 메서드  
  이러한 메서드의 액세스 가능성은 internal이므로 C++ 앱 또는 구성 요소 내에서만 액세스할 수 있습니다.  
   
-|이름|설명|  
+|name|설명|  
 |----------|-----------------|  
 
 |[Writeonlyarray:: Begin](#begin)| 배열의 첫 번째 요소를 가리키는 반복기입니다. |  
 |[Writeonlyarray:: Data](#data)| 데이터 버퍼에 대 한 포인터입니다. |  
-|[Writeonlyarray:: End](#end)| 배열의 마지막 요소 하나를 가리키는 반복기입니다. |  
-|[Writeonlyarray:: Fastpass](#fastpass)| 배열에 시스템에서 투명 하 게 수행 되는 최적화 인 FastPass 메커니즘을 사용할 수 있는지 여부를 나타냅니다. 코드에서이 사용 하지 마세요 |  
+|[Writeonlyarray:: End](#end)| 배열의 마지막 요소 하나 다음을 가리키는 반복기입니다. |  
+|[Writeonlyarray:: Fastpass](#fastpass)| 배열 되는 시스템에서 투명 하 게 수행 하는 최적화 인 FastPass 메커니즘을 사용할 수 있는지 여부를 나타냅니다. 코드에서이 사용 하지 않는 |  
 |[Writeonlyarray:: Length](#length)| 배열의 요소 수를 반환 합니다. |  
-|[Writeonlyarray:: Set](#set)| 지정된 된 값으로 지정 된 요소를 가져오거나 설정 합니다. |  
+|[Writeonlyarray:: Set](#set)| 지정된 된 값으로 지정된 된 요소를 설정 합니다. |  
 
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
@@ -187,7 +187,7 @@ T& set(
 
   
 ### <a name="remarks"></a>설명  
- HRESULT 값을 해석 하는 방법에 대 한 자세한 내용은 참조 [COM 오류 코드 구조](http://go.microsoft.com/fwlink/p/?LinkId=262045)합니다.  
+ HRESULT 값을 해석 하는 방법에 대 한 자세한 내용은 참조 하세요. [COM 오류 코드 구조](http://go.microsoft.com/fwlink/p/?LinkId=262045)합니다.  
   
   
 ## <a name="see-also"></a>참고 항목  

@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 78402d4487eecde00c55ea5e0aad913d97226325
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9969f58b24defdb3dfa8a96437769d0b19e4569e
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33283925"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42543246"
 ---
 # <a name="compiler-warning-level-1-c4114"></a>컴파일러 경고 (수준 1) C4114
 동일한 형식 한정자를 두 번 이상 사용했습니다.  
   
- 형식 한정자를 사용 하 여 형식 선언 또는 정의 (**const**, `volatile`, **서명**, 또는 `unsigned`) 두 번 이상. 이렇게 하면 경고 이며 Microsoft 확장명 (/Ze)와 ANSI 호환성 (/Za)에서 오류를 발생 합니다.  
+ 형식 한정자를 사용 하 여 형식 선언 또는 정의 (**상수**, **volatile**, **서명**, 또는 **부호 없는**) 두 번 이상. 이렇게 하면 경고 이며 Microsoft 확장명 (/Ze) 및 ANSI 호환성 (/Za)에서 오류를 발생 합니다.  
   
  다음 샘플에서는 C4114 오류가 생성 됩니다.  
   

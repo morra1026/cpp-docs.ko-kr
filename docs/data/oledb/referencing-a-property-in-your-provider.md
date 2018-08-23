@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ec2a52949754e6b19730d5ef025f958d517f6fd0
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 467fa4812af6957bea249d6f55701e1474a9382d
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341038"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572384"
 ---
 # <a name="referencing-a-property-in-your-provider"></a>공급자의 속성 참조
-원하는 속성에 대 한 속성 그룹 및 속성 ID를 찾습니다. 자세한 내용은 [OLE DB 속성](https://msdn.microsoft.com/library/ms722734.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+원하는 속성에 대 한 속성 그룹 및 속성 ID를 찾습니다. 자세한 내용은 [OLE DB 속성](/previous-versions/windows/desktop/ms722734\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
  다음 예제에서는 하려는 행 집합에서 속성을 가정 합니다. 세션 또는 명령에 대 한 코드는 유사 하지만 서로 다른 인터페이스를 사용 합니다.  
   

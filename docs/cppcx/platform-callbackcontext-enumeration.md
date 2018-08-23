@@ -11,16 +11,16 @@ dev_langs:
 helpviewer_keywords:
 - Platform::CallbackContext Enumeration
 ms.assetid: 60e0c7cb-5d8f-482a-bdca-ca9335ae4899
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 757de5f686bb809a5d2fb159a3ee547a20edc982
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4b80fe7749fdb2f91e300cff007c01001edfa557
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33086953"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42603040"
 ---
 # <a name="platformcallbackcontext-enumeration"></a>Platform::CallbackContext 열거형
 콜백 함수(이벤트 처리기)가 실행되는 스레드 컨텍스트를 지정합니다.  

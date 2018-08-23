@@ -17,17 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b87aeafd1b9c0c1a35e3f5d99ab5b9d76410b4d0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ec022fe2d317ec38bc1d9b06f459b9efc7818c92
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33337719"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539892"
 ---
 # <a name="vmxvmwrite"></a>__vmx_vmwrite
 **Microsoft 전용**  
   
- 현재 가상 컴퓨터 제어 구조 (VMCS)에 지정된 된 필드에 지정 된 값을 씁니다.  
+ 현재 가상 머신 제어 구조 (VMCS)에 지정된 된 필드를 지정된 된 값을 씁니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -56,15 +56,15 @@ unsigned char __vmx_vmwrite(
  사용 가능한 상태 없이 작업이 실패했습니다.  
   
 ## <a name="remarks"></a>설명  
- `__vmx_vmwrite` 함수는 동일는 `VMWRITE` 컴퓨터 명령입니다. 값은 `Field` 매개 변수는 Intel 설명서에 설명 되어 있는 인코딩된 필드 인덱스입니다. 문서 번호 C97063-002, 자세한 내용은 "Intel 가상화 기술 사양에 대 한 the ia-32 Intel 아키텍처" 문서에 대 한 검색에 대 한는 [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) 사이트 하 고 다음의 부록 C을 참조 하십시오. 문서입니다.  
+ 합니다 `__vmx_vmwrite` 함수는 동일 합니다 `VMWRITE` 컴퓨터 명령입니다. 값을 `Field` 매개 변수는 Intel 설명서에 설명 된 인코딩된 필드 인덱스입니다. 자세한 내용은 "Intel 가상화 기술 사양에 대 한는 IA-32 Intel 아키텍처" 문서를 검색에서 숫자 C97063-002, 문서를 [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) 사이트 및 다음의 부록 C를 참조 하세요. 문서입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__vmx_vmwrite`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__vmx_vmwrite`|X64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 **Microsoft 전용 종료**  
   

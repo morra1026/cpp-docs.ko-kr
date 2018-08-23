@@ -15,22 +15,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5918c7d91a3568799f361fcb42edb2e9c7b1445e
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 16549d6b7a80a8aa0f3f98cf9c7cd89c74058959
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33850537"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42540868"
 ---
 # <a name="variadic-macros"></a>Variadic 매크로
-Variadic 매크로 가변 개수의 인수를 포함 하는 함수 형식 매크로입니다.  
+Variadic 매크로 인수의 변수 번호를 포함 하는 함수 형식 매크로입니다.  
   
 ## <a name="remarks"></a>설명  
- Variadic 매크로 사용 하려면 줄임표로 지정할 수 있습니다 매크로 정의와 대체 식별자에 마지막 형식 인수 `__VA_ARGS__` 불필요 한 인수를 삽입 하려면 정의에 사용할 수 있습니다.  `__VA_ARGS__` 쉼표로 구분 하를 포함 하 여 줄임표와 일치 하는 인수를 모두으로 바뀝니다.  
+ 
+Variadic 매크로 사용 하려면 줄임표 매크로 정의에서 대체 식별자 최종 형식 인수로 지정할 있습니다 `__VA_ARGS__` 불필요 한 인수를 삽입할 정의에 사용할 수 있습니다.  `__VA_ARGS__` 쉼표로 구분 하를 포함 하 고 줄임표를 일치 하는 인수의 모든으로 바뀝니다.  
   
- C 표준 지정 하나 이상의 인수에 매크로 후행 쉼표는 식으로 해결 되지 않으면 되도록 줄임표에 전달 되어야 합니다.  줄임표 전달 되는 인수가 없는 경우 Visual c + + 구현 후행 쉼표를 표시 되지 것입니다.  
+C 표준 매크로 후행 쉼표를 사용 하 여 식을 확인 되지 않으면 되도록 줄임표에 하나 이상의 인수를 전달 되어야 합니다를 지정 합니다.  줄임표에 인수 전달 되는 경우 Visual c + + 구현 후행 쉼표를 표시 되지 것입니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```cpp  
 // variadic_macros.cpp  
@@ -58,10 +59,8 @@ int main() {
                              // suppresses the trailing comma  
 }  
 ```  
-  
-## <a name="output"></a>출력  
-  
-```  
+    
+```Output  
 here are some varargs1(1)  
 here are some varargs2(4)  
 here are some varargs3(5)  
@@ -70,4 +69,5 @@ error
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [매크로(C/C++)](../preprocessor/macros-c-cpp.md)
+ 
+[매크로(C/C++)](../preprocessor/macros-c-cpp.md)

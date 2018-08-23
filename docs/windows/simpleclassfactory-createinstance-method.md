@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: aa0d48ba96c550ff6ee1248dccd0b4c8e3021212
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: d9dfb783a8e002f249d5f6b4cc0a45193669efb3
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40020306"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42603115"
 ---
 # <a name="simpleclassfactorycreateinstance-method"></a>SimpleClassFactory::CreateInstance 메서드
 
@@ -39,6 +39,7 @@ STDMETHOD( CreateInstance )(
 ```
 
 ### <a name="parameters"></a>매개 변수
+
 *pUnkOuter*  
 여야 **nullptr**고, 그렇지 않으면 반환 값은 CLASS_E_NOAGGREGATION 합니다.
 
@@ -65,4 +66,5 @@ SimpleClassFactory 집계를 지원 하지 않습니다. 집계 된 지원 하 �
 **네임스페이스:** Microsoft::WRL
 
 ## <a name="see-also"></a>참고 항목
- [SimpleClassFactory 클래스](../windows/simpleclassfactory-class.md)
+
+[SimpleClassFactory 클래스](../windows/simpleclassfactory-class.md)

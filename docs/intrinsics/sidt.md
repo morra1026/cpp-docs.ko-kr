@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 29e41b0edd9b2a3da1046888f16a55e19f2d9f20
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 96d20916210b0fe55817dceb86d388a33f8e238b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33324514"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540882"
 ---
 # <a name="sidt"></a>__sidt
 **Microsoft 전용**  
@@ -40,18 +40,18 @@ void __sidt(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] `Destination`|IDTR 저장 된 메모리 위치에 대 한 포인터입니다.|  
+|[in] `Destination`|IDTR 저장 되어 있는 메모리 위치에 대 한 포인터입니다.|  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__sidt`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__sidt`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- `__sidt` 함수는 동일는 `SIDT` 컴퓨터 명령입니다. 자세한 내용을 보려면 문서에 대 한 검색 "Intel 아키텍처 소프트웨어 개발자 설명서, 볼륨 2: 명령 집합 참조"에 [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) 사이트입니다.  
+ 합니다 `__sidt` 함수는 동일 합니다 `SIDT` 컴퓨터 명령입니다. 자세한 내용은 문서를 검색 "Intel 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조"에 [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) 사이트입니다.  
   
 **Microsoft 전용 종료**  
   

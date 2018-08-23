@@ -5,24 +5,24 @@ ms.date: 12/30/2016
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: 99fbbe28-c1cd-43af-9ead-60f90eba6e68
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c96fa4e7194e262eec0be4cf5f7467c163530bd2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 725e2b9edb7ba2a84418e900ffb1aafe4c5064af
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33087383"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42593966"
 ---
 # <a name="enums-ccx"></a>열거형(C++/CX)
-C + + /cli CX 지원는 `public enum class` 키워드는 표준 c + +과 유사한 `scoped  enum`합니다. `public enum class` 키워드를 사용하여 선언된 열거자를 사용할 경우 열거형 식별자를 사용하여 각 열거자 값의 범위를 지정해야 합니다.  
+C + + /cli CX 지원 합니다 `public enum class` 표준 c + +과 유사한 키워드를 `scoped  enum`입니다. `public enum class` 키워드를 사용하여 선언된 열거자를 사용할 경우 열거형 식별자를 사용하여 각 열거자 값의 범위를 지정해야 합니다.  
   
 ### <a name="remarks"></a>설명  
  `public enum class` 과 같은 액세스 지정자가 없는 `public`는 표준 C++ [범위 지정 열거형](../cpp/enumerations-cpp.md)으로 처리됩니다.  
   
- A `public enum class` 또는 `public enum struct` 자체는 Windows 런타임에서 형식이 int32 또는 uint32 플래그 열거형 되어야 한다는 필요로 하지만 선언은 내부 형식이 모든 정수 계열 형식일을 가질 수 있습니다. 다음 구문에서는 `public enum class` 또는 `public enum struct`부분을 설명합니다.  
+ A `public enum class` 또는 `public enum struct` 선언은 내부 형식이 모든 정수 계열 형식 가질 수 있는 Windows 런타임 자체에서는 int32 또는 uint32 플래그 열거형 형식 이어야 합니다. 다음 구문에서는 `public enum class` 또는 `public enum struct`부분을 설명합니다.  
   
  이 예제에서는 public enum 클래스를 정의하는 방법을 보여 줍니다.  
   

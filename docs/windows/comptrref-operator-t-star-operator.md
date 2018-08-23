@@ -17,30 +17,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 472cdaeec78c30d49f3160ac4d632eb95ef8e71a
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 54c370029b4e6fc90d1f210164de7d7ecb22f3a5
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39641875"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42595421"
 ---
 # <a name="comptrrefoperator-t-operator"></a>ComPtrRef::operator T* 연산자
-WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-operator T*();  
-```  
-  
-## <a name="remarks"></a>설명  
- 값을 반환 합니다 [ptr_](../windows/comptrrefbase-ptr-data-member.md) 현재 데이터 멤버 **ComPtrRef** 개체입니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** client.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## <a name="see-also"></a>참고 항목  
- [ComPtrRef 클래스](../windows/comptrref-class.md)   
- [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)
+
+WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+operator T*();
+```
+
+## <a name="remarks"></a>설명
+
+값을 반환 합니다 [ptr_](../windows/comptrrefbase-ptr-data-member.md) 현재 데이터 멤버 **ComPtrRef** 개체입니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** client.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## <a name="see-also"></a>참고 항목
+
+[ComPtrRef 클래스](../windows/comptrref-class.md)  
+[Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

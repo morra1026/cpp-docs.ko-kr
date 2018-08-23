@@ -12,16 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - Platform::OutOfBoundsException
 ms.assetid: 96f8bf75-1207-4049-964b-7771822cadf3
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fc0eb412cad1ef7f971c6bc3ee9035a47889994
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2f7f45d76e69f3eaaf94bdb66a0da0e4d3b78069
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088305"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42609071"
 ---
 # <a name="platformoutofboundsexception-class"></a>Platform::OutOfBoundsException 클래스
 작업이 유효한 범위를 벗어난 데이터에 액세스하려고 하면 throw됩니다.  

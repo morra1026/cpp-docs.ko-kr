@@ -38,15 +38,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e95ab02abaf4dd536ad6a081708a76cf54cca6b0
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 2bc335a0c83e57b8abfeb708d9c6acce977010dd
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337244"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571410"
 ---
 # <a name="icolumnsinfoimpl-class"></a>IColumnsInfoImpl 클래스
-구현을 제공 합니다 [IColumnsInfo](https://msdn.microsoft.com/library/ms724541.aspx) 인터페이스입니다.  
+구현을 제공 합니다 [IColumnsInfo](/previous-versions/windows/desktop/ms724541\(v=vs.85\)) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -88,7 +88,7 @@ STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [icolumnsinfo:: Getcolumninfo](https://msdn.microsoft.com/library/ms722704.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
 
 ## <a name="mapcolumnids"></a> Icolumnsinfoimpl:: Mapcolumnids
 지정된 된 열 Id로 식별 되는 행 집합의 열 서 수의 배열을 반환 합니다.  
@@ -102,7 +102,7 @@ STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [IColumnsInfo::MapColumnIDs](https://msdn.microsoft.com/library/ms714200.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)   

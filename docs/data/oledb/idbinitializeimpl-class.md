@@ -50,15 +50,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 756ced3e2e1eef48023831329751477d07d7cfec
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: f59619db743d8f8d08b2a202e992cdfcd532e1e8
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336490"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572789"
 ---
 # <a name="idbinitializeimpl-class"></a>IDBInitializeImpl 클래스
-에 대 한 구현을 제공 합니다 [IDBInitialize](https://msdn.microsoft.com/library/ms713706.aspx) 인터페이스입니다.  
+에 대 한 구현을 제공 합니다 [IDBInitialize](/previous-versions/windows/desktop/ms713706\(v=vs.85\)) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -121,7 +121,7 @@ STDMETHOD(Initialize)(void);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [idbinitialize:: Initialize](https://msdn.microsoft.com/library/ms718026.aspx) 에 *OLE DB Programmer's Reference*합니다. 
+ 참조 [idbinitialize:: Initialize](/previous-versions/windows/desktop/ms718026\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 
 
 ## <a name="uninitialize"></a> Idbinitializeimpl:: Uninitialize
 위치 데이터 원본 속성 지원과 같은 내부 리소스를 해제 하 여 초기화 되지 않은 상태로 개체입니다.  
@@ -133,7 +133,7 @@ STDMETHOD(Uninitialize)(void);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [idbinitialize:: Uninitialize](https://msdn.microsoft.com/library/ms719648.aspx) 에 *OLE DB Programmer's Reference*합니다.
+ 참조 [idbinitialize:: Uninitialize](/previous-versions/windows/desktop/ms719648\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="dwstatus"></a> Idbinitializeimpl:: M_dwstatus
 데이터 원본 플래그입니다.  

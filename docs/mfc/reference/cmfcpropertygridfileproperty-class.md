@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0dd70e67769d35bf50e52b7be4b2c8848c089cb0
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 79089a7457d1a3f08c58c374ae2501a48feca79d
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851604"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42541901"
 ---
 # <a name="cmfcpropertygridfileproperty-class"></a>CMFCPropertyGridFileProperty 클래스
 `CMFCPropertyGridFileProperty` 클래스 파일 선택 대화 상자를 여는 속성 목록 컨트롤 항목을 지원 합니다.  
@@ -105,7 +105,7 @@ CMFCPropertyGridFileProperty(
 ### <a name="return-value"></a>반환 값  
   
 ### <a name="remarks"></a>설명  
- 사용 가능한 플래그의 전체 목록을 참조 하세요 [OPENFILENAME 구조체](https://msdn.microsoft.com/library/ms646839.aspx)합니다.  
+ 사용 가능한 플래그의 전체 목록을 참조 하세요 [OPENFILENAME 구조체](/windows/desktop/api/commdlg/ns-commdlg-tagofna)합니다.  
   
 ### <a name="example"></a>예  
  다음 예제에서는 `CMFCPropertyGridFileProperty` 클래스의 생성자를 사용하여 개체를 만드는 방법을 보여 줍니다. 이 예제는의 일부를 [Visual Studio 데모 샘플](../../visual-cpp-samples.md)합니다.  

@@ -12,16 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - Platform::ChangedStateException
 ms.assetid: f894beac-9e80-4fac-ac25-89f1dbc0a6a4
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 04daf6229ffa3f5ce41087a34ab53d92e3a1361c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 029242a466b7fbac0d967596c114eb0ad45aa569
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33087951"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42603214"
 ---
 # <a name="platformchangedstateexception-class"></a>Platform::ChangedStateException 클래스
 개체의 내부 상태가 변경되어 메서드의 결과가 무효화될 때 throw됩니다.  

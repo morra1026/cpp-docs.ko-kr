@@ -15,16 +15,16 @@ helpviewer_keywords:
 - multibyte characters [C++]
 - MBCS [C++]
 ms.assetid: b498733c-a1e1-45e3-8f26-d6da3cb5f2dd
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46eb8a3db986c1709aa23da9b96b03867837066a
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 523adf9f6f64c17d1ab728e416425d8f0d0ad5a9
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40012822"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42606810"
 ---
 # <a name="support-for-multibyte-character-sets-mbcss"></a>MBCS(멀티바이트 문자 집합) 지원
 MBCS(멀티바이트 문자 집합)는 일본어 및 중국어와 같이 싱글바이트로 표현할 수 없는 문자 집합을 지원하기 위한 이전의 접근 방식입니다. 새 개발을 수행하는 경우 최종 사용자에게 표시되지 않는 시스템 문자열을 제외한 모든 텍스트 문자열에 유니코드를 사용해야 합니다. MBCS는 이전 기술이며 새로운 개발에는 사용하지 않는 것이 좋습니다.  

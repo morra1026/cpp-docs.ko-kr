@@ -17,58 +17,62 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 812f5e2462236faef1b2b13d5fb25320319e773e
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 5dc2419cad0744ae3487f368b2238f80b96bd8fb
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40015731"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42612859"
 ---
 # <a name="nonextensible"></a>nonextensible
-지정 된 `IDispatch` 구현 속성만 포함 하 고 메서드 인터페이스 설명에 나열 된 런타임 시 추가 멤버를 사용 하 여 확장할 수 없습니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-[nonextensible]  
-```  
-  
-## <a name="remarks"></a>설명  
- 합니다 **nonextensible** c + + 특성에 동일한 기능을 합니다 [nonextensible](http://msdn.microsoft.com/library/windows/desktop/aa367120) MIDL 특성입니다.  
-  
- 이용 **nonextensible** 도 필요 합니다 [oleautomation](../windows/oleautomation.md) 특성입니다.  
-  
-## <a name="example"></a>예  
- 다음 코드와의 용도 중 하나는 **nonextensible** 특성:  
-  
-```cpp  
-// cpp_attr_ref_nonextensible.cpp  
-// compile with: /LD  
-#include "unknwn.h"  
-[module(name="ATLFIRELib")];  
-[export] typedef long HRESULT;  
-  
-[dual, nonextensible, ms_union, oleautomation,   
-uuid("00000000-0000-0000-0000-000000000001")]  
-__interface IFireTabCtrl  
-{  
-   HRESULT procedure (int i);   
-};  
-```  
-  
-## <a name="requirements"></a>요구 사항  
-  
-### <a name="attribute-context"></a>특성 컨텍스트  
-  
-|||  
-|-|-|  
-|**적용 대상**|**interface**|  
-|**반복 가능**|아니요|  
-|**필수 특성**|`dual` 및 `oleautomation`, 또는 `dispinterface`|  
-|**잘못된 특성**|없음|  
-  
- 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.  
-  
-## <a name="see-also"></a>참고 항목  
- [IDL 특성](../windows/idl-attributes.md)   
- [인터페이스 특성](../windows/interface-attributes.md)   
+
+지정 된 `IDispatch` 구현 속성만 포함 하 고 메서드 인터페이스 설명에 나열 된 런타임 시 추가 멤버를 사용 하 여 확장할 수 없습니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+[nonextensible]
+```
+
+## <a name="remarks"></a>설명
+
+합니다 **nonextensible** c + + 특성에 동일한 기능을 합니다 [nonextensible](http://msdn.microsoft.com/library/windows/desktop/aa367120) MIDL 특성입니다.
+
+이용 **nonextensible** 도 필요 합니다 [oleautomation](../windows/oleautomation.md) 특성입니다.
+
+## <a name="example"></a>예
+
+다음 코드와의 용도 중 하나는 **nonextensible** 특성:
+
+```cpp
+// cpp_attr_ref_nonextensible.cpp
+// compile with: /LD
+#include "unknwn.h"
+[module(name="ATLFIRELib")];
+[export] typedef long HRESULT;
+
+[dual, nonextensible, ms_union, oleautomation,
+uuid("00000000-0000-0000-0000-000000000001")]
+__interface IFireTabCtrl
+{
+   HRESULT procedure (int i);
+};
+```
+
+## <a name="requirements"></a>요구 사항
+
+### <a name="attribute-context"></a>특성 컨텍스트
+
+|||
+|-|-|
+|**적용 대상**|**interface**|
+|**반복 가능**|아니요|
+|**필수 특성**|`dual` 및 `oleautomation`, 또는 `dispinterface`|
+|**잘못된 특성**|없음|
+
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+[IDL 특성](../windows/idl-attributes.md)  
+[인터페이스 특성](../windows/interface-attributes.md)  

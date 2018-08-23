@@ -204,12 +204,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58a336ef74a3fdcb787dee5feeef2b76e45706bf
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: c3c291c7eb9b6a9cd87330f4af5135037a1f31de
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027861"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42538962"
 ---
 # <a name="chtmlview-class"></a>CHtmlView 클래스
 MFC의 문서/뷰 아키텍처 컨텍스트 내에서 WebBrowser 컨트롤의 기능을 제공합니다.  
@@ -243,7 +243,7 @@ class CHtmlView : public CFormView
 |[CHtmlView::GetLocationURL](#getlocationurl)|현재 WebBrowser에 표시되는 리소스의 URL을 검색합니다.|  
 |[CHtmlView::GetMenuBar](#getmenubar)|메뉴 모음을 표시할지 여부를 결정하는 값을 검색합니다.|  
 |[CHtmlView::GetOffline](#getoffline)|컨트롤이 오프라인 상태인지 여부를 결정하는 값을 검색합니다.|  
-|[CHtmlView::GetParentBrowser](#getparentbrowser)|`IDispatch` 인터페이스에 대한 포인터를 검색합니다. 자세한 내용은 [IDispatch 인터페이스 구현](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945)합니다.|  
+|[CHtmlView::GetParentBrowser](#getparentbrowser)|`IDispatch` 인터페이스에 대한 포인터를 검색합니다. 자세한 내용은 [IDispatch 인터페이스 구현](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)합니다.|  
 |[CHtmlView::GetProperty](#getproperty)|지정된 개체와 연결된 속성의 현재 값을 검색합니다.|  
 |[CHtmlView::GetReadyState](#getreadystate)|웹 브라우저 개체의 준비 상태를 검색합니다.|  
 |[CHtmlView::GetRegisterAsBrowser](#getregisterasbrowser)|WebBrowser 컨트롤이 대상 이름 확인을 위한 최상위 브라우저로 등록되었는지 여부를 나타냅니다.|  
@@ -508,7 +508,7 @@ LPDISPATCH GetApplication() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 에 대 한 포인터를 `IDispatch` 활성 문서 개체의 인터페이스입니다. 자세한 내용은 [IDispatch 인터페이스 구현](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945)합니다.  
+ 에 대 한 포인터를 `IDispatch` 활성 문서 개체의 인터페이스입니다. 자세한 내용은 [IDispatch 인터페이스 구현](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)합니다.  
   
 ### <a name="remarks"></a>설명  
  Internet Explorer 및 WebBrowser에 적용됩니다.  

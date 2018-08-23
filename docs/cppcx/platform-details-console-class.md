@@ -11,16 +11,16 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Details::Console Class
 ms.assetid: e8d01367-d8c8-4211-9b9e-3f93c8115dae
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: befad7fedb2ad2e13fad52331c6208394767f1bf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 904ca2920f1086aeb099290382402e7201e81b49
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088318"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42601938"
 ---
 # <a name="platformdetailsconsole-class"></a>Platform::Details::Console 클래스
 이 클래스는 내부 전용이며 개발용으로 사용되지 않아야 합니다.  

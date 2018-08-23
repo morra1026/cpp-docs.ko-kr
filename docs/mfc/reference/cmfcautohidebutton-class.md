@@ -60,17 +60,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3135c95ddc32c198bb7abc6ddea4ef5aea5a1d8a
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: e4cfc3e0d129fdb10ee10275000df6d8c51604be
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338021"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539319"
 ---
 # <a name="cmfcautohidebutton-class"></a>CMFCAutoHideButton 클래스
 숨기도록 구성된 [CDockablePane Class](../../mfc/reference/cdockablepane-class.md) 를 표시하거나 숨기는 단추입니다.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
+ 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.    
 ## <a name="syntax"></a>구문  
   
 ```  

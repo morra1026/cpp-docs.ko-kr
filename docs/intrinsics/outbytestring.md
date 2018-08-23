@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b61fcd7875fd98e73c2d4cbd6502a98624daed5a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 55dc6492faea101df40c2901ced24321822f36e8
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33334625"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42538743"
 ---
 # <a name="outbytestring"></a>__outbytestring
 **Microsoft 전용**  
   
- 생성 된 `rep outsb` 첫 번째 전송 하는 명령 `Count` 가리키는 데이터의 바이트 `Buffer` 로 지정 된 포트에 `Port`합니다.  
+ 생성 된 `rep outsb` 보내는 첫 번째 명령 `Count` 가리키는 데이터의 바이트 `Buffer` 하 여 지정 된 포트를 `Port`.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,21 +42,21 @@ void __outbytestring(
   
 #### <a name="parameters"></a>매개 변수  
  [in] `Port`  
- 데이터를 보내야 하는 포트입니다.  
+ 데이터를 보낼 포트입니다.  
   
  [in] `Buffer`  
  데이터 전송 지정된 된 포트입니다.  
   
  [in] `Count`  
- 데이터를 보낼 수의 바이트 수입니다.  
+ 전송할 데이터의 바이트 수입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__outbytestring`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__outbytestring`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  

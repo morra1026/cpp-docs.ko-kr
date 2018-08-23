@@ -17,24 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 02293fce154fa9c4c98c583de02e8967f4d3957b
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: a90aab0fae3edbb54dfdd9176ffe47a18ad1796a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40020215"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596943"
 ---
 # <a name="selecting-multiple-menus-or-menu-commands"></a>여러 메뉴 또는 메뉴 명령 선택
-여러 메뉴 이름이나 메뉴 명령을 선택하여 속성 삭제 또는 변경과 같은 일괄 작업을 수행할 수 있습니다.  
-  
-### <a name="to-select-multiple-menu-commands"></a>여러 메뉴 명령을 선택하려면  
-  
-1.  누른 채 합니다 **Ctrl** 키, 메뉴 또는 하위 메뉴 명령을 클릭 합니다.  
-  
- 관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다.  
-  
-## <a name="requirements"></a>요구 사항  
- Win32  
-  
-## <a name="see-also"></a>참고 항목  
- [메뉴 편집기](../windows/menu-editor.md)
+
+여러 메뉴 이름이나 메뉴 명령을 선택하여 속성 삭제 또는 변경과 같은 일괄 작업을 수행할 수 있습니다.
+
+### <a name="to-select-multiple-menu-commands"></a>여러 메뉴 명령을 선택하려면
+
+1. 누른 채 합니다 **Ctrl** 키, 메뉴 또는 하위 메뉴 명령을 클릭 합니다.
+
+관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다.
+
+## <a name="requirements"></a>요구 사항
+
+Win32
+
+## <a name="see-also"></a>참고 항목
+
+[메뉴 편집기](../windows/menu-editor.md)

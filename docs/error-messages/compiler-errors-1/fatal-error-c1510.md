@@ -16,19 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f39a609e1621dab404ff79e49ade56a88277aa80
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 25b1c3f83b770dc7b346e83e9675afe423af2516
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199355"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541883"
 ---
 # <a name="fatal-error-c1510"></a>심각한 오류 C1510
 언어 리소스 clui.dll을 열 수 없습니다.  
   
- 컴파일러 언어 리소스 DLL을 로드할 수 없습니다.  
+ 컴파일러는 언어 리소스 DLL을 로드할 수 없습니다.  
   
-이 문제에 대 한 일반적인 원인은 다음 두 가지 있습니다. 32 비트 컴파일러 및 도구를 사용 하 여 링크 하는 동안 2GB 이상의 메모리를 사용 하는 대규모 프로젝트에 대 한이 오류가 표시 될 수 있습니다. 64 비트 Windows 시스템에서 가능한 솔루션은 64 비트 네이티브를 사용 하 여 또는 크로스 컴파일러 및 코드를 생성 하는 도구입니다. 이 64 비트 응용 프로그램에서 사용할 수 있는 더 큰 메모리 공간을 활용 합니다. 32 비트 시스템에서 실행 되므로 32 비트 컴파일러를 사용 해야 하는 경우 일부 경우에 링커에서을 3GB의 사용 가능한 메모리 양을 늘릴 수 있습니다. 자세한 내용은 참조 [4 기가바이트 튜닝: BCDEdit 및 Boot.ini](https://msdn.microsoft.com/library/vs/alm/bb613473(v=vs.85).aspx) 및 [BCDEdit increaseuserva설정/](https://msdn.microsoft.com/library/ff542202.aspx) 명령입니다.  
+이 문제에 대 한 공통적인 두 원인이 있습니다. 32 비트 컴파일러 및 도구를 사용 하는 경우 링크 중 2GB 이상의 메모리를 사용 하는 대규모 프로젝트에 대 한이 오류가 표시 될 수 있습니다. 64 비트 Windows 시스템에서 사용 가능한 해결 크로스 컴파일러 및 코드 생성 도구 또는 64 비트 네이티브를 사용 하는 것입니다. 이 64 비트 응용 프로그램을 사용할 수 있는 더 큰 메모리 공간 활용 합니다. 32 비트 시스템에서 실행 되므로 32 비트 컴파일러를 사용 해야 하는 경우에 따라서는 링커 3GB를 사용할 수 있는 메모리의 양을 늘릴 수 있습니다. 자세한 내용은 참조 하세요. [4gb 튜닝: BCDEdit 및 Boot.ini](https://msdn.microsoft.com/library/vs/alm/bb613473\(v=vs.85\).aspx) 하며 [BCDEdit increaseuserva 설정](https://msdn.microsoft.com/library/ff542202.aspx) 명령입니다.  
 
-다른 일반적인 이유는 손상 되었거나 불완전 한 Visual Studio 설치입니다. 이 경우 복구 하거나 Visual Studio를 다시 설치를 다시 설치를 실행 합니다.  
+다른 일반적인 원인은 손상 되었거나 불완전 한 Visual Studio 설치 합니다. 이 경우 설치 관리자를 복구 하거나 Visual Studio를 다시 설치를 다시 실행 합니다.  
   

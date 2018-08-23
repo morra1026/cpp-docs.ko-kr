@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 20e24c5286afbe20b1f5b71a67b0d10385f80874
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 1077a9567509d98b68a864d7478ab84b94d11054
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208798"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42541336"
 ---
 # <a name="colecurrency-class"></a>COleCurrency 클래스
 OLE 자동화의 `CURRENCY` 데이터 형식을 캡슐화합니다.  
@@ -137,11 +137,11 @@ COleCurrency(
   
 - COleCurrency (`curSrc`)를 생성 한 `COleCurrency` 기존 개체 `COleCurrency` 개체입니다. 새 개체는 소스 개체와 동일한 상태입니다.  
   
-- COleCurrency (`varSrc`)를 생성 한 `COleCurrency` 개체입니다. 변환 하려고 시도 [VARIANT](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) 구조 또는 `COleVariant` 개체 (VT_CY) 통화 값입니다. 이 변환에 성공한 경우 변환 된 값은 복사할 새 `COleCurrency` 개체입니다. 없으면의 값을 `COleCurrency` 개체 영 (0) 및 해당 상태를 잘못 됨로 설정 됩니다.  
+- COleCurrency (`varSrc`)를 생성 한 `COleCurrency` 개체입니다. 변환 하려고 시도 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 구조 또는 `COleVariant` 개체 (VT_CY) 통화 값입니다. 이 변환에 성공한 경우 변환 된 값은 복사할 새 `COleCurrency` 개체입니다. 없으면의 값을 `COleCurrency` 개체 영 (0) 및 해당 상태를 잘못 됨로 설정 됩니다.  
   
 - `COleCurrency(`nUnits`, `nFractionalUnits`) Constructs a `COleCurrency' 개체에서 지정된 된 숫자 구성 요소입니다. 소수 부분의 절대값이 10,000 보다 크면 단위에 적절 한 조정이 이루어집니다. 참고 단위 및 소수 부분이 서명 된 long 값으로 지정 됩니다.  
   
- 자세한 내용은 참조는 [통화](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) 및 [VARIANT](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) Windows SDK에는 항목입니다.  
+ 자세한 내용은 참조는 [통화](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) 및 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.  
   
 ### <a name="example"></a>예  
  다음 예에서는 0이 매개 변수 및 매개 변수 2 생성자의 효과 보여 줍니다.  
@@ -304,7 +304,7 @@ const COleCurrency& operator=(const COleCurrency& curSrc);
   
 - **연산자 = (** *varSrc* **)** 하는 경우 변환 된 `VARIANT` 값 (또는 [COleVariant](../../mfc/reference/colevariant-class.md) 개체) 통화로 ( `VT_CY`)는 성공 하면 변환 된 값이 복사 됩니다 `COleCurrency` 개체 및 해당 상태에 잘못 설정 됩니다. 변환이 성공적 이면 값은 `COleCurrency` 개체 0과를 잘못 됨 상태가로 설정 됩니다.  
   
- 자세한 내용은 참조는 [통화](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) 및 [VARIANT](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) Windows SDK에는 항목입니다.  
+ 자세한 내용은 참조는 [통화](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) 및 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.  
   
 ### <a name="example"></a>예  
  [!code-cpp[NVC_MFCOleContainer#15](../../mfc/codesnippet/cpp/colecurrency-class_4.cpp)]  
@@ -450,7 +450,7 @@ throw(COleException*);
 ### <a name="remarks"></a>설명  
  소스 문자열에서 숫자가 아닌 문자의 의미에 대 한 로컬 언어 사양 (로캘 Id)를 사용합니다.  
   
- 로캘 ID 값, 참조 [여러 언어를 지 원하는](http://msdn.microsoft.com/47dc5add-232c-4268-b977-43e12da81ede)합니다.  
+ 로캘 ID 값, 참조 [여러 언어를 지 원하는](/previous-versions/windows/desktop/automat/supporting-multiple-national-languages)합니다.  
   
  문자열에 통화 변환 된 경우 값을이 값 `COleCurrency` 개체 유효한 값 및 해당 상태를로 설정 됩니다.  
   

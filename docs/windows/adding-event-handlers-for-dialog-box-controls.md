@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2dce9b2ce59eb98c59c7a6cf04be52f3d439fdb0
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: ad7b007728d3de949fec678249edd56c7032d250
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39642853"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42605739"
 ---
 # <a name="adding-event-handlers-for-dialog-box-controls"></a>대화 상자 컨트롤에 사용할 이벤트 처리기 추가
 
@@ -49,13 +49,13 @@ ms.locfileid: "39642853"
 
    - BN_SETFOCUS
 
-    > [!NOTE]
-    > 또는 대화 상자를 선택 하 고 클릭 합니다 **컨트롤 이벤트** 단추를 대화 상자에서 모든 컨트롤에 대 한 일반적인 Windows 이벤트의 목록을 표시 합니다.
+   > [!NOTE]
+   > 또는 대화 상자를 선택 하 고 클릭 합니다 **컨트롤 이벤트** 단추를 대화 상자에서 모든 컨트롤에 대 한 일반적인 Windows 이벤트의 목록을 표시 합니다.
 
 3. 에 **속성** 창에서 이벤트를 처리 하기 위해 옆에 있는 오른쪽 열을 클릭 하 고 제안 된 알림 이벤트 이름을 선택 합니다 (예를 들어 `OnBnClickedOK` BN_CLICKED 처리).
 
-    > [!NOTE]
-    > 또는 기본 이벤트 처리기 이름을 선택 하는 것이 아니라 선택한 이벤트 처리기 이름을 제공할 수 있습니다.
+   > [!NOTE]
+   > 또는 기본 이벤트 처리기 이름을 선택 하는 것이 아니라 선택한 이벤트 처리기 이름을 제공할 수 있습니다.
 
    Visual Studio가 열리고 사용자가 이벤트를 선택 합니다 **텍스트 편집기** 이벤트 처리기의 코드를 표시 합니다. 예를 들어, 다음 코드는 기본 추가 `OnBnClickedOK`:
 
@@ -71,14 +71,16 @@ ms.locfileid: "39642853"
 관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리 되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대 한 내용은 참조 하세요 [데스크톱 앱에 대 한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)합니다. 전역화 및 지역화 관리 되는 앱의 리소스에 대 한 내용은 참조 하세요 [Globalizing and Localizing.NET Framework Applications](/dotnet/standard/globalization-localization/index)합니다.
 
 ## <a name="requirements"></a>요구 사항
- Win32
+
+Win32
 
 ## <a name="see-also"></a>참고 항목
- [기본 컨트롤 이벤트](../windows/default-control-events.md)  
- [대화 상자 컨트롤의 멤버 변수 정의](../windows/defining-member-variables-for-dialog-controls.md)  
- [대화 상자 컨트롤 및 변수 형식](../ide/dialog-box-controls-and-variable-types.md)  
- [클래스 추가](../ide/adding-a-class-visual-cpp.md)  
- [멤버 함수 추가](../ide/adding-a-member-function-visual-cpp.md)  
- [멤버 변수 추가](../ide/adding-a-member-variable-visual-cpp.md)  
- [가상 함수 재정의](../ide/overriding-a-virtual-function-visual-cpp.md)  
- [MFC 메시지 처리기](../mfc/reference/adding-an-mfc-message-handler.md)  
+
+[기본 컨트롤 이벤트](../windows/default-control-events.md)  
+[대화 상자 컨트롤의 멤버 변수 정의](../windows/defining-member-variables-for-dialog-controls.md)  
+[대화 상자 컨트롤 및 변수 형식](../ide/dialog-box-controls-and-variable-types.md)  
+[클래스 추가](../ide/adding-a-class-visual-cpp.md)  
+[멤버 함수 추가](../ide/adding-a-member-function-visual-cpp.md)  
+[멤버 변수 추가](../ide/adding-a-member-variable-visual-cpp.md)  
+[가상 함수 재정의](../ide/overriding-a-virtual-function-visual-cpp.md)  
+[MFC 메시지 처리기](../mfc/reference/adding-an-mfc-message-handler.md)  

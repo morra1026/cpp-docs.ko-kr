@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 204abfb28ed58051f27f62b522ed0b02a0a78585
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 4983234cdbc64f4ca8364c5afcc2d8e735ba2d01
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339577"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42573144"
 ---
 # <a name="ole-db-provider-templates-c"></a>OLE DB 공급자 템플릿(C++)
 OLE DB는 Microsoft Universal Data Access 전략의 중요 한 부분입니다. OLE DB의 디자인은 데이터 소스의 고성능 데이터 액세스를 허용 합니다. 모든 테이블 형식 데이터는 데이터베이스에서 인지에 관계 없이 OLE DB를 통해 볼 수 있습니다. 유연성은 뛰어난 성능 제공합니다.  
@@ -63,7 +63,7 @@ OLE DB는 Microsoft Universal Data Access 전략의 중요 한 부분입니다. 
  공급자는 복잡성 및 기능에 크게 달라질 수 있습니다. 읽기 전용 공급자 및 업데이트할 수 있는 공급자에 공급자를 분류 하는 것이 유용 합니다.  
   
 -   Visual c + + 6.0에는 읽기 전용 공급자만 지원 합니다. [OLE DB 공급자 만들기](../../data/oledb/creating-an-ole-db-provider.md) 읽기 전용 공급자를 만드는 방법에 설명 합니다.  
--   Visual c + +를 업데이트할 수는 업데이트할 수 있는 공급자 지원 (쓸) 데이터 저장소입니다. 업데이트할 수 있는 공급자에 대 한 자세한 내용은 [업데이트 가능 공급자 만들기](../../data/oledb/creating-an-updatable-provider.md); [UpdatePV](http://msdn.microsoft.com/c8bed873-223c-4a7d-af55-f90138c6f38f) 샘플은 업데이트할 수 있는 공급자의 예입니다.  
+-   Visual c + +를 업데이트할 수는 업데이트할 수 있는 공급자 지원 (쓸) 데이터 저장소입니다. 업데이트할 수 있는 공급자에 대 한 자세한 내용은 [업데이트 가능 공급자 만들기](../../data/oledb/creating-an-updatable-provider.md); [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) 샘플은 업데이트할 수 있는 공급자의 예입니다.  
   
  자세한 내용은 다음을 참조하세요.  
   
@@ -75,5 +75,5 @@ OLE DB는 Microsoft Universal Data Access 전략의 중요 한 부분입니다. 
   
 ## <a name="see-also"></a>참고 항목  
  [데이터 액세스](../data-access-in-cpp.md)   
- [OLE DB SDK 설명서](https://msdn.microsoft.com/library/ms722784.aspx)   
- [OLE DB 프로그래머 참조](https://msdn.microsoft.com/library/ms713643.aspx)
+ [OLE DB SDK 설명서](/previous-versions/windows/desktop/ms722784\(v=vs.85\))   
+ [OLE DB 프로그래머 참조](/previous-versions/windows/desktop/ms713643\(v=vs.85\))

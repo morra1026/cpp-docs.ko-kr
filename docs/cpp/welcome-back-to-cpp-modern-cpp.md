@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4426f3d25681e3ee46bf4d5da615d185babb0f0
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: d626385523cb957b44589784c2e69539b5ed8fca
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462364"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572218"
 ---
 # <a name="welcome-back-to-c-modern-c"></a>C++의 진화(최신 C++)
 C++는 전세계적으로 가장 널리 사용되는 프로그래밍 언어 중 하나입니다. 잘 작성된 C++ 프로그램은 빠르고 효율적입니다. 이 언어는 재미있고 흥미로운 게임에서 고성능 과학 소프트웨어, 장치 드라이버, 포함 프로그램 및 Windows 클라이언트 응용 프로그램에 이르기까지 다양한 응용 프로그램을 만드는 데 사용할 수 있으며 유연성이 다른 언어보다 훨씬 더 뛰어납니다. C++는 20년 이상 이러한 문제와 기타 문제를 해결하는 데 사용되었습니다. 여러분은 모르겠지만, 오래된 C 스타일 프로그래밍을 접고 대신 최신 C++를 사용하는 C++ 프로그래머의 수가 점점 증가하고 있습니다.  
@@ -107,7 +107,7 @@ void f()
   
  성능이 가장 중요해지면서 C++가 다시 부활하고 있습니다. 프로그래머의 생산성이 중요할 경우 Java와 C#과 같은 언어가 유용하지만 힘과 성능이 중요할 경우에는 한계성을 드러냅니다. 특히 하드웨어가 제한적인 장치에서는 C++가 가장 뛰어난 효율성과 성능을 제공합니다.  
   
- 언어뿐만 아니라 개발 도구도 최신입니다. [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)]는 개발 주기의 모든 부분을 강력하고 효율적으로 만들어줍니다. ALM(응용 프로그램 수명 주기 관리) 도구, IntelliSense와 같이 강화된 IDE 기능, XAML과 같이 도구 활용이 편한 메커니즘, 빌딩, 디버깅과 기타 도구가 포함됩니다.  
+ 언어뿐만 아니라 개발 도구도 최신입니다. Visual Studio는 강력 하 고 효율적인 개발 주기의 모든 부분을 만듭니다. ALM(Application Lifecycle Management) 도구, IntelliSense와 같이 강화된 IDE 기능, XAML과 같이 도구 활용이 편한 메커니즘, 빌딩, 디버깅과 기타 도구가 포함됩니다.  
   
  이 설명서 부분에 포함된 문서에서는 현대적인 C++ 프로그램을 작성하는 데 가장 중요한 기능 및 기술에 대한 고급 지침 및 모범 사례를 제공합니다.  
   

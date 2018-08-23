@@ -38,17 +38,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9da7016e98d9bd84e62c3b05cae32346827142f
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: b4bb740f445d65c37d1bee8c1e777dbd8984e1c2
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37121840"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541862"
 ---
 # <a name="ctabbedpane-class"></a>CTabbedPane 클래스
 분리 가능한 탭이 포함된 창의 기능을 구현합니다.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -88,12 +88,12 @@ class CTabbedPane : public CBaseTabbedPane
 ## <a name="remarks"></a>설명  
  사용자가 두 번째 창의 캡션을 가리켜서 한 창을 다른 창에 연결하는 경우 프레임워크에서 자동으로 이 클래스의 인스턴스를 만듭니다. 프레임워크에서 만든 모든 탭 창의 ID는 -1입니다.  
   
- Outlook 스타일 탭 대신 일반 탭을 지정 하려면 AFX_CBRS_REGULAR_TABS 스타일으로 전달 된 [cdockablepane:: Createex](../../mfc/reference/cdockablepane-class.md#createex) 메서드.  
+ Outlook 스타일 탭 대신 일반 탭을 지정 하려면 AFX_CBRS_REGULAR_TABS 스타일을 전달 합니다 [cdockablepane:: Createex](../../mfc/reference/cdockablepane-class.md#createex) 메서드.  
   
  분리 가능한 탭을 포함하는 탭 창을 만드는 경우 프레임워크에서 자동으로 창을 제거할 수 있으므로 포인터를 저장하면 안 됩니다. 탭 창에 대한 포인터를 가져오려면 `CBasePane::GetParentTabbedPane` 메서드를 호출합니다.  
   
 ## <a name="example"></a>예  
- 이 예제에서는 `CTabbedPane` 개체를 만듭니다. 다음으로, 사용 [cbasetabbedpane:: Addtab](../../mfc/reference/cbasetabbedpane-class.md#addtab) 추가 탭을 연결 합니다.  
+ 이 예제에서는 `CTabbedPane` 개체를 만듭니다. 다음을 사용 하 여 [cbasetabbedpane:: Addtab](../../mfc/reference/cbasetabbedpane-class.md#addtab) 추가 탭을 연결 합니다.  
   
 ```  
 CTabbedPane* pTabbededBar = new CTabbedPane (TRUE);
@@ -125,7 +125,7 @@ DockPane(pTabbededBar);
 ```  
   
 ## <a name="example"></a>예  
- 탭된 컨트롤 막대 개체를 만드는 또 다른 방법은 사용 하는 것 [CDockablePane::AttachToTabWnd](../../mfc/reference/cdockablepane-class.md#attachtotabwnd)합니다. `AttachToTabWnd` 메서드 설정한 런타임 클래스 정보를 사용 하 여 탭된 창 개체를 동적으로 만듭니다 [cdockablepane:: Settabbedpanertc](../../mfc/reference/cdockablepane-class.md#settabbedpanertc)합니다.  
+ 탭된 컨트롤 막대 개체를 만드는 또 다른 방법은 사용 하는 것 [cdockablepane:: Attachtotabwnd](../../mfc/reference/cdockablepane-class.md#attachtotabwnd)합니다. 합니다 `AttachToTabWnd` 메서드는 동적으로 설정한 런타임 클래스 정보를 사용 하 여 탭된 창 개체를 만듭니다 [cdockablepane:: Settabbedpanertc](../../mfc/reference/cdockablepane-class.md#settabbedpanertc)합니다.  
   
  이 예제에서는 탭 창을 동적으로 만들고 두 탭을 연결한 다음 두 번째 탭을 분리 불가능하게 만듭니다.  
   
@@ -196,11 +196,11 @@ static void EnableTabAutoColor(BOOL bEnable = TRUE);
  탭;의 자동 색 지정을 사용 하도록 설정. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 정적 메서드를 사용 하 여 응용 프로그램에서 모든 탭된 창에서 탭의 자동 색 지정을 사용 합니다. 이 기능을 사용 하는 경우 각 탭은 고유한 색으로 채워집니다. 호출 하 여 탭 색에 사용 되는 색 목록을 찾을 수 있습니다는 [CMFCBaseTabCtrl::GetAutoColors](../../mfc/reference/cmfcbasetabctrl-class.md#getautocolors) 메서드.  
+ 응용 프로그램에서 모든 탭된 창에서 탭 자동 색 지정을 사용 하지 않도록 설정 하거나 설정 하려면이 정적 메서드를 사용 합니다. 이 기능을 사용 하는 경우 각 탭 고유한 색으로 채워집니다. 호출 하 여 탭 색에 사용 되는 색 목록을 찾을 수 있습니다 합니다 [CMFCBaseTabCtrl::GetAutoColors](../../mfc/reference/cmfcbasetabctrl-class.md#getautocolors) 메서드.  
   
- 호출 하 여 탭에 대해 사용할 수 있는 색 목록을 지정할 수 있습니다 [CTabbedPane::SetTabAutoColors](#settabautocolors)합니다.  
+ 호출 하 여 탭에 사용할 색 목록을 지정할 수 있습니다 [CTabbedPane::SetTabAutoColors](#settabautocolors)합니다.  
   
- 기본적으로이 옵션은 사용할 수 없습니다.  
+ 기본적으로이 옵션이 비활성화 됩니다.  
   
 ##  <a name="floattab"></a>  CTabbedPane::FloatTab  
 
@@ -224,7 +224,7 @@ virtual BOOL FloatTab(
 ### <a name="remarks"></a>설명  
   
 ##  <a name="gettabarea"></a>  CTabbedPane::GetTabArea  
- 탭된 창에 크기와 탭 영역의 위치를 반환합니다.  
+ 탭 창의 크기와 탭 영역의 위치를 반환합니다.  
   
 ```  
 virtual void GetTabArea(
@@ -234,13 +234,13 @@ virtual void GetTabArea(
   
 ### <a name="parameters"></a>매개 변수  
  [out] *rectTabAreaTop*  
- 크기와 화면 좌표에서 최상위 탭 영역의 위치를 포함합니다.  
+ 크기와 화면 좌표에서 위쪽 탭 영역의 위치를 포함합니다.  
   
  [out] *rectTabAreaBottom*  
  크기와 화면 좌표에서 아래쪽 탭 영역의 위치를 포함합니다.  
   
 ### <a name="remarks"></a>설명  
- 프레임 워크는 사용자가 끌고 있는 창을 도킹 하는 방법을 결정 하려면이 메서드를 호출 합니다. 대상 창 탭 영역 위로 창을 끌 때 프레임 워크 대상 창에 새 테이블로 추가 하려고 시도 합니다. 그렇지 않으면 두 창을 구분 하는 창 구분선으로 새 창 컨테이너를 만드는 작업이 포함 된 대상 창 옆쪽에 창을 도킹할 하려고 합니다.  
+ 프레임 워크는 사용자가 끌고 있는 창이 도킹 하는 방법을 확인 하려면이 메서드를 호출 합니다. 사용자가 대상 창의 탭 영역 창을 끌, 프레임 워크에서는 대상 창의 새 탭으로 추가 하려고 시도 합니다. 그렇지 않으면 두 창을 구분 하는 창 구분선을를 사용 하 여 새 창 컨테이너 만들기를 포함 하는 대상 창에 있는 창 도킹 하려고 합니다.  
   
  이 메서드를 재정의 한 `CTabbedPane`-이 동작을 변경 하는 클래스를 파생 합니다.  
   
@@ -274,7 +274,7 @@ virtual BOOL IsTabLocationBottom() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 탭 영역의 탭 창의 맨 아래에 있는 경우 TRUE 그렇지 않으면 FALSE입니다.  
+ 탭 영역 아래쪽의 탭된 창에 있는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -286,7 +286,7 @@ AFX_IMPORT_DATA static BOOL m_bTabsAlwaysTop;
 ```  
   
 ### <a name="remarks"></a>설명  
- 탭된 창 위쪽에 표시할 응용 프로그램에서 모든 탭 force true 이면이 정적 멤버를 설정 합니다.  
+ 탭 창의 위쪽에 표시할 응용 프로그램에서 모든 탭 강제 하는 true로 설정 하면이 정적 멤버를 설정 합니다.  
   
  탭된 창 생성 되기 전에이 값을 설정 해야 합니다.  
   
@@ -300,7 +300,7 @@ AFX_IMPORT_DATA static CRuntimeClass* m_pTabWndRTC;
 ```  
   
 ### <a name="remarks"></a>설명  
- 이 정적 멤버 변수의 런타임 클래스 정보에 대 한 포인터를 설정 하는 `CMFCTabCtrl`-파생 된 개체는 탭된 창 내 탭된 창 사용자 지정을 사용 하는 경우.  
+ 런타임 클래스 정보에 대 한 포인터를이 정적 멤버 변수를 설정 한 `CMFCTabCtrl`-탭된 창 내에서 사용자 지정 탭된 창을 사용 하는 경우 개체를 파생 합니다.  
   
 ##  <a name="resettabs"></a>  CTabbedPane::ResetTabs  
  모든 탭 창을 기본 상태로 다시 설정합니다.  
@@ -310,7 +310,7 @@ static void ResetTabs();
 ```  
   
 ### <a name="remarks"></a>설명  
- 모든 탭된 창을 기본 상태로 되돌리려면이 메서드를 호출 합니다. 호출 되 면이 메서드 테두리 크기와의 모든 탭된 창이 자동 색 상태 다시 설정 합니다.  
+ 모든 탭된 창을 기본 상태로 되돌리려면이 메서드를 호출 합니다. 를 호출 하면이 메서드가 테두리 크기와의 모든 탭된 창 자동 색 상태 다시 설정 합니다.  
   
 ##  <a name="settabautocolors"></a>  CTabbedPane::SetTabAutoColors  
  자동 색 기능이 사용 하도록 설정한 경우 사용 되는 사용자 지정 색 목록을 설정 합니다.  
@@ -321,12 +321,12 @@ static void SetTabAutoColors(const CArray<COLORREF, COLORREF>& arColors);
   
 ### <a name="parameters"></a>매개 변수  
  [in] *arColors*  
- 설정 하는 색 배열에 포함 되어 있습니다.  
+ 설정 하는 색 배열을에 포함 되어 있습니다.  
   
 ### <a name="remarks"></a>설명  
- 자동 색 기능이 사용 하도록 설정한 경우 사용 되는 색 목록을 사용자 지정 하려면이 메서드를 사용 합니다. 정적 함수 이므로 응용 프로그램에서 모든 탭된 창에 영향을 줍니다.  
+ 자동 색 기능이 사용 하도록 설정한 경우 사용 되는 색 목록을 사용자 지정 하려면이 메서드를 사용 합니다. 정적 함수 이며 응용 프로그램에서 모든 탭된 창에 영향을 줍니다.  
   
- 사용 하 여 [CTabbedPane::EnableTabAutoColor](#enabletabautocolor) 자동 색 기능이 사용 하지 않도록 설정 하거나 설정 하려면.  
+ 사용 하 여 [CTabbedPane::EnableTabAutoColor](#enabletabautocolor) 사용 하도록 설정 하거나 자동 색 기능이 사용 하지 않도록 설정 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [계층 구조 차트](../../mfc/hierarchy-chart.md)   

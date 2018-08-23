@@ -113,12 +113,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2fa455bbe4a5aa902232b502e129f6c8e21463a9
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: e741055950449ea07c719cf6cd4c33a34d6f43b3
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337724"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571512"
 ---
 # <a name="cbulkrowset-class"></a>CBulkRowset 클래스
 인출 하 고 단일 호출으로 여러 행 핸들을 검색 하 여 데이터를 대량으로 작업할 행을 조작 합니다.  
@@ -160,7 +160,7 @@ class CBulkRowset : public CRowset<TAccessor>
  [!code-cpp[NVC_OLEDB_Consumer#1](../../data/oledb/codesnippet/cpp/cbulkrowset-class_1.cpp)]  
 
 ## <a name="addrefrows"></a> Cbulkrowset:: Addrefrows
-호출 [irowset:: Addrefrows](https://msdn.microsoft.com/library/ms719619.aspx) bulk 행 집합에서 현재 검색 된 모든 행에 대 한 참조 수를 증가 합니다.  
+호출 [irowset:: Addrefrows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) bulk 행 집합에서 현재 검색 된 모든 행에 대 한 참조 수를 증가 합니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -246,7 +246,7 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
  [in] 대상 행에 책갈피에서 행의 수입니다. 하는 경우 *lSkip* 가 0 이면 첫 번째 인출 된 행이 책갈피가 표시 된 행입니다. 하는 경우 *lSkip* 이 1 이면 첫 번째 인출 된 행이 행 책갈피가 표시 된 행 후 합니다. 하는 경우 *lSkip* 가-1 이면 첫 번째 인출 된 행이 책갈피가 표시 된 행 앞에 있는 행입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 참조 [irowset:: Getdata](https://msdn.microsoft.com/library/ms716988.aspx) 에 *OLE DB Programmer's Reference*합니다. 
+ 참조 [irowset:: Getdata](/previous-versions/windows/desktop/ms716988\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 
 
 ## <a name="movetoratio"></a> Cbulkrowset:: Movetoratio
 행 집합의 소수 자릿수 위치에서 시작 하는 행을 인출 합니다.  
@@ -273,10 +273,10 @@ HRESULT MoveToRatio(DBCOUNTITEM nNumerator,
   
  `(nNumerator *  RowsetSize ) / nDenominator`  
   
- 여기서 `RowsetSize` 행 단위로 측정 되는 행 집합의 크기입니다. 이 수식의 정확도 특정 공급자에 따라 달라 집니다. 세부 정보를 참조 하세요 [irowsetscroll::](https://msdn.microsoft.com/library/ms709602.aspx) 에 *OLE DB Programmer's Reference*합니다.   
+ 여기서 `RowsetSize` 행 단위로 측정 되는 행 집합의 크기입니다. 이 수식의 정확도 특정 공급자에 따라 달라 집니다. 세부 정보를 참조 하세요 [irowsetscroll::](/previous-versions/windows/desktop/ms709602\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.   
 
 ## <a name="releaserows"></a> Cbulkrowset:: Releaserows
-호출 [irowset:: Releaserows](https://msdn.microsoft.com/library/ms719771.aspx) bulk 행 집합에서 현재 검색 된 모든 행에 대 한 참조 횟수를 줄여야 합니다.  
+호출 [irowset:: Releaserows](/previous-versions/windows/desktop/ms719771\(v=vs.85\)) bulk 행 집합에서 현재 검색 된 모든 행에 대 한 참조 횟수를 줄여야 합니다.  
   
 ### <a name="syntax"></a>구문  
   

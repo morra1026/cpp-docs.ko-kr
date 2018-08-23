@@ -116,16 +116,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5fb3c0295b56f394fae97be7d14e3dccb5cd46b3
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: a4d8961cc929196c21838fd21132146deddabcc1
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853779"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539904"
 ---
 # <a name="cmfcmenubar-class"></a>CMFCMenuBar 클래스
 도킹을 구현하는 메뉴 모음입니다.  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -439,7 +439,7 @@ void EnableHelpCombobox(
  픽셀에서 콤보 상자 단추의 너비입니다.  
   
 ### <a name="remarks"></a>설명  
- **도움말** 콤보 상자와 유사 합니다 **도움말** 콤보 상자에 있는 메뉴 표시줄에서 [!INCLUDE[ofprword](../../mfc/reference/includes/ofprword_md.md)]합니다.  
+ **도움말** 콤보 상자와 유사 합니다 **도움말** Microsoft Word의 메뉴 모음에서 콤보 상자입니다.  
   
  이 메서드를 호출 하면 *uiID* 이 메서드는 콤보 상자 숨깁니다을 0으로 설정 합니다. 그렇지 않으면이 메서드 콤보 상자 자동으로 표시 됩니다 메뉴 모음의 오른쪽에. 이 메서드를 호출한 후 호출 [CMFCMenuBar::GetHelpCombobox](#gethelpcombobox) 삽입 된에 대 한 포인터를 가져오려면 [CMFCToolBarComboBoxButton](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md) 개체입니다.  
   

@@ -24,17 +24,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f162a8da230177509ebe67741580ef224b20ba19
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 1ea72c42f1c10e8d5cd27537db13c7b7baafef5d
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040797"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42538939"
 ---
 # <a name="cmfcdesktopalertdialog-class"></a>CMFCDesktopAlertDialog 클래스
-`CMFCDesktopAlertDialog` 클래스와 함께 사용 되는 [CMFCDesktopAlertWnd 클래스](../../mfc/reference/cmfcdesktopalertwnd-class.md) 팝업 창에 사용자 지정 대화 상자를 표시 하려면.  
+합니다 `CMFCDesktopAlertDialog` 클래스와 함께 사용 됩니다 합니다 [CMFCDesktopAlertWnd 클래스](../../mfc/reference/cmfcdesktopalertwnd-class.md) 팝업 창에는 사용자 지정 대화 상자를 표시 합니다.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -60,7 +60,7 @@ class CMFCDesktopAlertDialog : public CDialogEx
   
 2.  프로젝트 리소스에서 자식 대화 상자 템플릿을 만듭니다.  
   
-3.  호출 [cmfcdesktopalertwnd:: Create](../../mfc/reference/cmfcdesktopalertwnd-class.md#create) 대화 상자 템플릿의 리소스 id 매개 변수로 파생된 클래스의 런타임 클래스 정보에 대 한 포인터입니다.  
+3.  호출 [cmfcdesktopalertwnd:: Create](../../mfc/reference/cmfcdesktopalertwnd-class.md#create) 대화 상자 템플릿의 리소스 ID 매개 변수로 파생된 클래스의 런타임 클래스 정보에 대 한 포인터를 사용 하 여 합니다.  
   
 4.  호스트된 컨트롤에서 생성되는 모든 알림을 처리하는 사용자 지정 대화 상자를 프로그래밍하거나 이러한 알림을 직접 처리하는 호스트된 컨트롤을 프로그래밍합니다.  
   
@@ -90,7 +90,7 @@ BOOL CreateFromParams(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *params*  
+ [in] *매개 변수*  
  [in] *pParent*  
   
 ### <a name="return-value"></a>반환 값  

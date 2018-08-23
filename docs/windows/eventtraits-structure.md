@@ -17,33 +17,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f46f1bc6d03f7bf222edcd3d23def72edfcb11fa
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 02f7670daea943669844081a8d956ef0539d656b
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39647575"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42594338"
 ---
 # <a name="eventtraits-structure"></a>EventTraits 구조체
-특성의 정의 `Event` 클래스 핸들입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-struct EventTraits : HANDLENullTraits;  
-```  
-  
-## <a name="members"></a>멤버  
-  
-## <a name="inheritance-hierarchy"></a>상속 계층  
- `HANDLENullTraits`  
-  
- `EventTraits`  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## <a name="see-also"></a>참고 항목  
- [Microsoft::WRL::Wrappers::HandleTraits 네임스페이스](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+
+특성의 정의 `Event` 클래스 핸들입니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+struct EventTraits : HANDLENullTraits;
+```
+
+## <a name="members"></a>멤버
+
+## <a name="inheritance-hierarchy"></a>상속 계층
+
+`HANDLENullTraits`
+
+`EventTraits`
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## <a name="see-also"></a>참고 항목
+
+[Microsoft::WRL::Wrappers::HandleTraits 네임스페이스](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

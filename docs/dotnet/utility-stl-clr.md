@@ -49,12 +49,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: e1150fb6d3df325fd9d5d9b4180318fa029102c3
-ms.sourcegitcommit: bad2441d1930275ff506d44759d283d94cccd1c0
+ms.openlocfilehash: 931e0561a57cd65b8f0f9204eb08e4df99c0150e
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39375918"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42572192"
 ---
 # <a name="utility-stlclr"></a>utility(STL/CLR)
 STL/CLR 헤더를 포함 `<cliext/utility>` 템플릿 클래스를 정의 하려면 `pair` 및 몇 가지 지원 템플릿 함수입니다.  
@@ -288,7 +288,7 @@ pair(Value1 val1, Value2 val2);
   
  `pair(Value1 val1, Value2 val2);`  
   
- 초기화를 사용 하 여 저장 된 쌍 *val1* 하 고 *val2*합니다.  
+ 사용 하 여 저장 된 쌍 초기화 *val1* 하 고 *val2*합니다.  
   
 ### <a name="example"></a>예  
   

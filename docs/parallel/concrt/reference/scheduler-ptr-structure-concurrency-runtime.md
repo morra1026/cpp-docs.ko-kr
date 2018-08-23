@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 672e4a0dd5f66ab613dde8877915c799d6c4b2f4
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 99c2ed2f8446b94d606c907f4d030c417e21fc01
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33686986"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42538723"
 ---
 # <a name="schedulerptr-structure"></a>scheduler_ptr 구조체
-스케줄러에 대한 포인터를 나타냅니다. 이 클래스는 shared_ptr을 사용하는 공유 수명 또는 원시 포인터를 사용하는 일반 참조의 사양을 허용하기 위해 존재합니다.  
+스케줄러에 대한 포인터를 나타냅니다. 이 클래스는 공유 수명 사양의 원시 포인터를 사용 하 여 shared_ptr 또는 일반 참조를 사용 하 여 있도록 존재 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -75,7 +75,7 @@ scheduler_interface* get() const;
 ##  <a name="operator_bool"></a>  scheduler_ptr::operator bool   
  스케줄러 포인터가 null이 아닌지 여부를 테스트합니다.  
   
-' ' const; 연산자 bool()
+' ' operator bool () const;
 ```  
   
 ##  <a name="operator_ptr"></a>  scheduler_ptr::operator-&gt;   

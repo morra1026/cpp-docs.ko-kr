@@ -28,12 +28,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6789a8e602fded02d4d521be74e602557ebdaefe
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7b64118753138087bce446a92716c6cb1731c7ea
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340335"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42543226"
 ---
 # <a name="interlockedbittestandset-intrinsic-functions"></a>_interlockedbittestandset Intrinsic Functions
 **Microsoft 전용**  
@@ -93,16 +93,16 @@ unsigned char _interlockedbittestandset64_HLERelease(
   
 ## <a name="requirements"></a>요구 사항  
   
-|내장 함수|아키텍처|Header|  
+|내장 함수|아키텍처|헤더|  
 |---------------|------------------|------------|  
-|`_interlockedbittestandset`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
+|`_interlockedbittestandset`|x86, ARM, x64|\<intrin.h>|  
 |`_interlockedbittestandset_acq`, `_interlockedbittestandset_nf`, `_interlockedbittestandset_rel`|ARM|\<intrin.h>|  
-|`_interlockedbittestandset_HLEAcquire`, `_interlockedbittestandset_HLERelease`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h>|  
-|`_interlockedbittestandset64`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
-|`_interlockedbittestandset64_HLEAcquire`, `_interlockedbittestandset64_HLERelease`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h>|  
+|`_interlockedbittestandset_HLEAcquire`, `_interlockedbittestandset_HLERelease`|x86, x64|\<immintrin.h>|  
+|`_interlockedbittestandset64`|X64|\<intrin.h>|  
+|`_interlockedbittestandset64_HLEAcquire`, `_interlockedbittestandset64_HLERelease`|X64|\<immintrin.h>|  
   
 ## <a name="remarks"></a>설명  
- x86 및 [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] 프로세서에서 이러한 내장 함수는 `lock bts` 명령을 사용하여 지정한 비트를 읽고 1로 설정합니다. 이 작업은 원자성 작업입니다.  
+ 이러한 내장 함수가 x86 및 x64 프로세서에서 사용 하 여는 `lock bts` 지침을 읽고 지정된 된 비트를 1로 설정 합니다. 이 작업은 원자성 작업입니다.  
   
  ARM 프로세서에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("no fence"의 약어) 접미사가 포함된 ARM 내장 함수는 메모리 장벽으로 작동하지 않습니다.  
   

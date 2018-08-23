@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad2e02d4e1bc1ee5d1694769b2ec217cd7acbaba
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a7a659c9ac452d9ff42bb37d049e5cf44ff2c261
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33329831"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540901"
 ---
 # <a name="inbyte"></a>__inbyte
 **Microsoft 전용**  
@@ -40,7 +40,7 @@ unsigned char __inbyte(
   
 #### <a name="parameters"></a>매개 변수  
  [in] `Port`  
- 읽을 수는 포트입니다.  
+ 포트에서 읽기입니다.  
   
 ## <a name="return-value"></a>반환 값  
  지정된 된 포트에서 읽은 바이트입니다.  
@@ -49,9 +49,9 @@ unsigned char __inbyte(
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__inbyte`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__inbyte`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 **Microsoft 전용 종료**  
   

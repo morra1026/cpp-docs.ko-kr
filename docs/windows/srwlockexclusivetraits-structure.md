@@ -17,44 +17,48 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d6543ada6840b292d6a7b981eefeab41642c42df
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 542ad92aa636c934e3250817931dd7f31d1fe85b
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40017934"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42601605"
 ---
 # <a name="srwlockexclusivetraits-structure"></a>SRWLockExclusiveTraits 구조체
-일반적인 특징을 설명 합니다 `SRWLock` 배타적 잠금 모드의 클래스입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-struct SRWLockExclusiveTraits;  
-```  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="public-typedefs"></a>공용 Typedefs  
-  
-|이름|설명|  
-|----------|-----------------|  
-|`Type`|동의어에 대 한 포인터를 [SRWLOCK](../windows/srwlock-class.md) 클래스입니다.|  
-  
-### <a name="public-methods"></a>Public 메서드  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[SRWLockExclusiveTraits::GetInvalidValue 메서드](../windows/srwlockexclusivetraits-getinvalidvalue-method.md)|검색을 **SRWLockExclusiveTraits** 항상 유효 하지 않은 개체입니다.|  
-|[SRWLockExclusiveTraits::Unlock 메서드](../windows/srwlockexclusivetraits-unlock-method.md)|지정 된 한 독점적인 제어권을 해제 `SRWLock` 개체입니다.|  
-  
-## <a name="inheritance-hierarchy"></a>상속 계층  
- `SRWLockExclusiveTraits`  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## <a name="see-also"></a>참고 항목  
- [Microsoft::WRL::Wrappers::HandleTraits 네임스페이스](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+
+일반적인 특징을 설명 합니다 `SRWLock` 배타적 잠금 모드의 클래스입니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+struct SRWLockExclusiveTraits;
+```
+
+## <a name="members"></a>멤버
+
+### <a name="public-typedefs"></a>공용 Typedefs
+
+|이름|설명|
+|----------|-----------------|
+|`Type`|동의어에 대 한 포인터를 [SRWLOCK](../windows/srwlock-class.md) 클래스입니다.|
+
+### <a name="public-methods"></a>Public 메서드
+
+|이름|설명|
+|----------|-----------------|
+|[SRWLockExclusiveTraits::GetInvalidValue 메서드](../windows/srwlockexclusivetraits-getinvalidvalue-method.md)|검색을 **SRWLockExclusiveTraits** 항상 유효 하지 않은 개체입니다.|
+|[SRWLockExclusiveTraits::Unlock 메서드](../windows/srwlockexclusivetraits-unlock-method.md)|지정 된 한 독점적인 제어권을 해제 `SRWLock` 개체입니다.|
+
+## <a name="inheritance-hierarchy"></a>상속 계층
+
+`SRWLockExclusiveTraits`
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## <a name="see-also"></a>참고 항목
+
+[Microsoft::WRL::Wrappers::HandleTraits 네임스페이스](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

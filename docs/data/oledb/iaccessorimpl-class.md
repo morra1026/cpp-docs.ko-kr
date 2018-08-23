@@ -48,15 +48,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9ec9e30112a9f0f5b54b84ccbbb61268e56d70d2
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 73e0b7646da57af679e7b3cbec3b0bb72d4ea8b8
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338781"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572404"
 ---
 # <a name="iaccessorimpl-class"></a>IAccessorImpl 클래스
-구현을 제공 합니다 [IAccessor](https://msdn.microsoft.com/library/ms719672.aspx) 인터페이스입니다.  
+구현을 제공 합니다 [IAccessor](/previous-versions/windows/desktop/ms719672\(v=vs.85\)) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -98,7 +98,7 @@ class ATL_NO_VTABLE IAccessorImpl : public IAccessorImplBase<BindType>
 |[ReleaseAccessor](#releaseaccessor)|접근자를 해제합니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 행 집합 및 명령에 대해 필수입니다. OLE DB 공급자는 HACCESSOR 구현에 필요한 태그를 배열에는 [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) 구조입니다. 제공한 HACCESSORs `IAccessorImpl` 의 주소는 `BindType` 구조입니다. 기본적으로 `BindType` 으로 정의 되는 `ATLBINDINGS` 에서 `IAccessorImpl`의 템플릿 정의 합니다. `BindType` 사용 하는 메커니즘을 제공 `IAccessorImpl` 의 요소 수를 추적 하는 `DBBINDING` 참조 개수 및 접근자 플래그 뿐만 아니라 배열입니다.  
+ 이 행 집합 및 명령에 대해 필수입니다. OLE DB 공급자는 HACCESSOR 구현에 필요한 태그를 배열에는 [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) 구조입니다. 제공한 HACCESSORs `IAccessorImpl` 의 주소는 `BindType` 구조입니다. 기본적으로 `BindType` 으로 정의 되는 `ATLBINDINGS` 에서 `IAccessorImpl`의 템플릿 정의 합니다. `BindType` 사용 하는 메커니즘을 제공 `IAccessorImpl` 의 요소 수를 추적 하는 `DBBINDING` 참조 개수 및 접근자 플래그 뿐만 아니라 배열입니다.  
 
 ## <a name="iaccessorimpl"></a> Iaccessorimpl:: Iaccessorimpl
 생성자입니다.  
@@ -120,7 +120,7 @@ STDMETHOD(AddRefAccessor)(HACCESSOR hAccessor,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [IAccessor::AddRefAccessor](https://msdn.microsoft.com/library/ms714978.aspx) 에 *OLE DB Programmer's Reference*합니다.
+ 참조 [IAccessor::AddRefAccessor](/previous-versions/windows/desktop/ms714978\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="createaccessor"></a> Iaccessorimpl:: Createaccessor
 바인딩 집합에서 접근자를 만듭니다.  
@@ -137,7 +137,7 @@ STDMETHOD(CreateAccessor)(DBACCESSORFLAGS dwAccessorFlags,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [iaccessor:: Createaccessor](https://msdn.microsoft.com/library/ms720969.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [iaccessor:: Createaccessor](/previous-versions/windows/desktop/ms720969\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
 
 ## <a name="getbindings"></a> Iaccessorimpl:: Getbindings
 접근자에서 소비자에서 기본 열 바인딩을 반환합니다.  
@@ -152,7 +152,7 @@ STDMETHOD(GetBindings)(HACCESSOR hAccessor,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [IAccessor::GetBindings](https://msdn.microsoft.com/library/ms721253.aspx) 에 *OLE DB Programmer's Reference*합니다. 
+ 참조 [IAccessor::GetBindings](/previous-versions/windows/desktop/ms721253\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 
 
 ## <a name="releaseaccessor"></a> Iaccessorimpl:: Releaseaccessor
 접근자를 해제합니다.  
@@ -165,7 +165,7 @@ STDMETHOD(ReleaseAccessor)(HACCESSOR hAccessor,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [iaccessor:: Releaseaccessor](https://msdn.microsoft.com/library/ms719717.aspx) 에 *OLE DB Programmer's Reference*합니다.
+ 참조 [iaccessor:: Releaseaccessor](/previous-versions/windows/desktop/ms719717\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.
   
 ## <a name="see-also"></a>참고 항목  
  [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)   

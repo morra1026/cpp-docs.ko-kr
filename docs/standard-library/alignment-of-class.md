@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8b679d4c8807a19c977cd7e59481dc1d78e67ba1
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: eb492c1c804aacd79f1552afb5293b8b40a8b648
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956520"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42540879"
 ---
 # <a name="alignmentof-class"></a>alignment_of 클래스
 
@@ -41,7 +41,7 @@ struct alignment_of;
 
 ## <a name="remarks"></a>설명
 
-값을 보유 하는 형식 쿼리 된 형식의 맞춤 *Ty*합니다.
+형식의 맞춤 값을 포함 하는 형식 쿼리 *Ty*합니다.
 
 ## <a name="requirements"></a>요구 사항
 

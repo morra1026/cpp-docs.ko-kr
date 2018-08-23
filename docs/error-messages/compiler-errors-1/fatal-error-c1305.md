@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3cb1cf19d0fc4152fbb458d684972bb5a4418f37
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 90d73003d9f19eb41f9eb34cd47c7b90b1e6164f
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33227149"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539875"
 ---
 # <a name="fatal-error-c1305"></a>심각한 오류 C1305
 'pgd_file' 프로필 데이터베이스는 다른 아키텍처용입니다.  
   
- 다른 플랫폼에 전달 된에 대 한 /ltcg: pginstrument 작업에서 생성 된.pgd 파일 [/ltcg: pgoptimize](../../build/reference/ltcg-link-time-code-generation.md) 합니다. [프로필 기반 최적화](../../build/reference/profile-guided-optimizations.md) x86에 사용할 수 있는 및 [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] 플랫폼입니다. 그러나.pgd 파일을 생성 한 플랫폼에 대 한 /ltcg: pginstrument 작업과 유효 하지 다른 플랫폼에 대 한 /ltcg: pgoptimize는 입력으로 합니다.  
+ 다른 플랫폼에 전달 된에 대 한 /ltcg: pginstrument 작업에서 생성 된.pgd 파일로 [/ltcg: pgoptimize](../../build/reference/ltcg-link-time-code-generation.md) 합니다. [프로필 기반 최적화](../../build/reference/profile-guided-optimizations.md) x86 및 x64 플랫폼에 사용할 수 있습니다. 그러나 단일 플랫폼에 대 한 /ltcg: pginstrument 작업과 생성 된.pgd 파일을 올바르지 다른 플랫폼에 대 한 /ltcg: pgoptimize 입력으로 합니다.  
   
- 이 오류를 해결 하려면만 /ltcg: pginstrument 동일한 플랫폼에서 /ltcg: pgoptimize 사용 하 여 만든.pgd 파일을 전달 합니다.
+ 이 오류를 해결 하려면만 동일한 플랫폼에서 /ltcg: pgoptimize /ltcg: pginstrument를 사용 하 여 만든.pgd 파일을 전달 합니다.

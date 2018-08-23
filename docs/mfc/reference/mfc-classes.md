@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 840ca90b2f704fc3340c67a830856e006123867a
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: bc862ee708239878229825c9aa050c2835222b95
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027815"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42539144"
 ---
 # <a name="mfc-classes"></a>MFC 클래스
 다음 목록의 클래스는 MFC(Microsoft Foundation Class) 라이브러리에 포함되어 있습니다.  
@@ -852,7 +852,7 @@ ms.locfileid: "39027815"
  사용자가 Windows XP 또는 Vista 테마를 선택할 경우 Microsoft Windows XP 또는 Microsoft Vista의 형태를 그대로 모방합니다.  
   
  [CMFCVisualManagerWindows7 클래스](../../mfc/reference/cmfcvisualmanagerwindows7-class.md)  
- 응용 프로그램에 [!INCLUDE[win7](../../build/includes/win7_md.md)] 응용 프로그램 모양을 제공합니다.  
+ 응용 프로그램에 Windows 7 응용 프로그램의 모양을 제공 합니다.  
   
  [CMFCWindowsManagerDialog 클래스](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)  
  사용자가 MDI 응용 프로그램에서 MDI 자식 창을 관리할 수 있도록 합니다.  
@@ -1020,7 +1020,7 @@ ms.locfileid: "39027815"
  OLE 편집 링크 대화 상자의 특별한 경우에 사용됩니다. 예를 들어, 문서에서 기존에 연결되거나 포함된 개체만 업데이트할 경우에 사용해야 합니다.  
   
  [COleVariant 클래스](../../mfc/reference/colevariant-class.md)  
- 캡슐화 된 [VARIANT](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) 데이터 형식입니다.  
+ 캡슐화 된 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 데이터 형식입니다.  
   
  [CPagerCtrl 클래스](../../mfc/reference/cpagerctrl-class.md)  
  `CPagerCtrl` 클래스는 윈도우에 맞지 않는 포함된 창을 보기로 스크롤할 수 있는 Windows 페이저 컨트롤을 래핑합니다.  

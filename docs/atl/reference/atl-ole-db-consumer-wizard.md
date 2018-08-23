@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7dc15e9eaf7068756aa4d945cf494156498af6f9
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 2a03e29ed5197d27b421135b1561f3edc88af596
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39025986"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571412"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB 소비자 마법사
 이 마법사를 설정 하는 OLE DB 소비자 클래스 데이터 바인딩을 사용 하 여 지정 된 OLE DB 공급자를 통해 지정 된 데이터 원본에 액세스 하는 데 필요한 합니다.  
@@ -33,7 +33,7 @@ ms.locfileid: "39025986"
   
 ## <a name="uielement-list"></a>UI 요소 목록  
 **데이터 원본**  
-합니다 **데이터 원본** 단추 지정된 된 OLE DB 공급자를 사용 하 여 지정 된 데이터 소스를 설정할 수 있습니다. 이 단추를 클릭 합니다 **데이터 연결 속성** 대화 상자가 나타납니다. 연결 문자열을 작성 하는 방법은 하며 **데이터 연결 속성** 대화 상자, 참조 [데이터 링크 API 개요](https://msdn.microsoft.com/library/ms718102.aspx) Windows SDK 설명서의 합니다.  
+합니다 **데이터 원본** 단추 지정된 된 OLE DB 공급자를 사용 하 여 지정 된 데이터 소스를 설정할 수 있습니다. 이 단추를 클릭 합니다 **데이터 연결 속성** 대화 상자가 나타납니다. 연결 문자열을 작성 하는 방법은 하며 **데이터 연결 속성** 대화 상자, 참조 [데이터 링크 API 개요](/previous-versions/windows/desktop/ms718102\(v=vs.85\)) Windows SDK 설명서의 합니다.  
   
 > [!NOTE]
 >  클릭 하면 이전 릴리스에서 **데이터 원본** 단추는 파일 열기 대화 상자가 열려 데이터 연결 (.udl) 파일을 선택할 수 있습니다. 이 기능은 지원 되지 않습니다.  
@@ -176,7 +176,7 @@ ms.locfileid: "39025986"
  사용 하려는 경우이 옵션을 선택 `CCommand` 또는 `db_command` 명령 및 명령 접근자 클래스 선언을 만들려면. 이 기본적으로 선택 합니다.  
   
  **지원**  
- (기본값은 none) 소비자에서 지원 되는 데 업데이트 종류를 지정 하는 확인란을 선택 합니다. 설정이 다음 각 [DBPROP_IRowsetChange](https://msdn.microsoft.com/library/ms715892.aspx) 와 적절 한 항목을 [DBPROP_UPDATABILITY](https://msdn.microsoft.com/library/ms722676.aspx) 속성에서 지도 설정 합니다.  
+ (기본값은 none) 소비자에서 지원 되는 데 업데이트 종류를 지정 하는 확인란을 선택 합니다. 설정이 다음 각 [DBPROP_IRowsetChange](/previous-versions/windows/desktop/ms715892\(v=vs.85\)) 와 적절 한 항목을 [DBPROP_UPDATABILITY](/previous-versions/windows/desktop/ms722676\(v=vs.85\)) 속성에서 지도 설정 합니다.  
   
  **변경**  
  소비자 행 집합의 행 데이터의 업데이트는 지원 하도록 지정 합니다.  
@@ -190,4 +190,4 @@ ms.locfileid: "39025986"
 ## <a name="see-also"></a>참고 항목  
  [ATL OLE DB 소비자](../../atl/reference/adding-an-atl-ole-db-consumer.md)   
  [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)   
- [연결 문자열 및 데이터 링크 (OLE DB)](https://msdn.microsoft.com/library/ms718376.aspx)
+ [연결 문자열 및 데이터 링크 (OLE DB)](/previous-versions/windows/desktop/ms718376\(v=vs.85\))

@@ -1,7 +1,7 @@
 ---
 title: C++ 규칙 향상 | Microsoft 문서
 ms.custom: ''
-ms.date: 03/11/2018
+ms.date: 08/15/2018
 ms.technology:
 - cpp-language
 ms.topic: conceptual
@@ -10,14 +10,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2eb0ea67156671ac682b61cd0e105d1781bda915
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 43bb06a4ef2229b2b9e98bf7acabbe757744fc73
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39209094"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42571532"
 ---
-# <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157"></a>Visual Studio 2017 버전 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157)의 C++ 규칙 향상입니다.
+# <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158"></a>Visual Studio 2017 버전 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158)의 C++ 규칙 향상입니다.
 
 Microsoft Visual C++ 컴파일러는 일반화된 constexpr을 지원하고 집계에 NSDMI를 사용할 수 있기 때문에 이제 C++14 표준에 추가된 기능을 완벽히 갖췄습니다. 하지만 아직까지 C++11 표준 기능과 C++98 표준 기능이 몇 가지 부족합니다. 컴파일러의 현재 상태를 보여 주는 테이블은 [Visual C++ Language Conformance](visual-cpp-language-conformance.md)(Visual C++ 언어 규칙)를 참조하세요.
 
@@ -1624,6 +1624,8 @@ int main() {
 ```
 
 ## <a name="update_158"></a> Visual Studio 2017 15.8 버전의 버그 수정 및 동작 변경
+
+Visual Studio 2017 버전 15.8의 모든 컴파일러 변경 사항은 버그 수정 및 동작 변경의 범주에 속하며, 아래에 나열되어 있습니다.
 
 ### <a name="typename-on-unqualified-identifiers"></a>정규화되지 않은 식별자의 형식 이름
 

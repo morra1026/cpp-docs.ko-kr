@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee18591ea3729551f00267fef6e4594a45f673ed
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bd45e8919e7b1f0347511e2c3ad782975ecbe71a
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33332977"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42543230"
 ---
 # <a name="readdr"></a>__readdr
 지정 된 디버그 레지스터의 값을 읽습니다.  
@@ -35,21 +35,21 @@ unsigned __int64 __readdr(unsigned int DebugRegister);
   
 #### <a name="parameters"></a>매개 변수  
  [in] `DebugRegister`  
- 0에서 7 사이 디버그를 식별 하는 상수를 등록 합니다.  
+ 디버그를 식별 하는 0 ~ 7에서에서 상수를 등록 합니다.  
   
 ## <a name="return-value"></a>반환 값  
  지정 된 디버그 레지스터의 값입니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 내장 함수는 커널 모드 에서만 사용할 수 및의 루틴은 내장 함수로 사용할 수 있습니다.  
+ 이러한 내장 함수는 커널 모드 에서만 사용할 수 있습니다 및 루틴은 내장 함수로 사용할 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__readdr`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__readdr`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 **Microsoft 전용 종료**  
   

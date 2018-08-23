@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4643181bf70bc92f4ef5e88b8a9add1ba7bdaad7
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 63097c9ac47f3b791ff7fd5949cece4d85e5ca1f
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849303"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42540674"
 ---
 # <a name="rawinterfacesonly"></a>raw_interfaces_only
 **C + + 전용**  
   
- 오류 처리 래퍼 함수를 생성 하지 않습니다 및 [속성](../cpp/property-cpp.md) 이러한 래퍼 함수를 사용 하는 선언 합니다.  
+오류 처리 래퍼 함수를 생성 하지 않습니다 하 고 [속성](../cpp/property-cpp.md) 해당 래퍼 함수를 사용 하는 선언 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,12 +35,14 @@ raw_interfaces_only
 ```  
   
 ## <a name="remarks"></a>설명  
- 또한 `raw_interfaces_only` 특성을 사용하면 비속성 함수 명명에 사용된 기본 접두사가 제거됩니다. 접두사는 일반적으로 **raw_** 합니다. 이 특성이 지정되면 형식 라이브러리에서 직접 함수 이름을 가져옵니다.  
+ 
+합니다 **raw_interfaces_only** 문제도 발생 하 게 제거할 수 있는 비 속성 함수 명명에 사용 된 기본 접두사가 특성입니다. 접두사는 일반적으로 **raw_** 합니다. 이 특성이 지정되면 형식 라이브러리에서 직접 함수 이름을 가져옵니다.  
   
- 이 특성을 사용하면 형식 라이브러리의 하위 내용만 노출할 수 있습니다.  
+이 특성을 사용하면 형식 라이브러리의 하위 내용만 노출할 수 있습니다.  
   
- **C + + 전용 종료**  
+**C + + 전용 종료**  
   
 ## <a name="see-also"></a>참고 항목  
- [#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
- [#import 지시문](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
+[#import 지시문](../preprocessor/hash-import-directive-cpp.md)

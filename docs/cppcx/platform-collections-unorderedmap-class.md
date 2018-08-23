@@ -7,16 +7,16 @@ ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::UnorderedMap
 ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fbc1905023f64c4983cf041eda244b28ce507abc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d86e5e36c7219a79b77d79fe02e6b2ae811ccabc
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33092333"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42612720"
 ---
 # <a name="platformcollectionsunorderedmap-class"></a>Platform::Collections::UnorderedMap 클래스
 
@@ -58,9 +58,9 @@ ref class Map sealed;
 
 - public enum 클래스
 
-**UnorderedMap** 에 대 한 래퍼는 기본적으로 [std:: unordered_map](../standard-library/unordered-map-class.md) 지 원하는 Windows 런타임 형식의 저장 합니다. 구체적인 구현을 [Windows::Foundation::Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_) 및 [IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) 공용 간에 전달 되는 형식을 Windows 런타임 인터페이스입니다. 공용 반환 값 또는 매개 변수에서 `Platform::Collections::UnorderedMap` 형식을 사용하려고 하면 컴파일러 오류 C3986이 발생합니다. 매개 변수 또는 반환 값의 형식을 변경 하 여 오류를 해결할 수 [Windows::Foundation::Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_)합니다.
+**UnorderedMap** 에 대 한 래퍼는 기본적으로 [std:: unordered_map](../standard-library/unordered-map-class.md) Windows 런타임 형식의 storage를 지 원하는 합니다. 것을의 구체적인 구현을 합니다 [Windows::Foundation::Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_) 및 [IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) 공용 전반에서 전달 되는 Windows 런타임 인터페이스. 공용 반환 값 또는 매개 변수에서 `Platform::Collections::UnorderedMap` 형식을 사용하려고 하면 컴파일러 오류 C3986이 발생합니다. 매개 변수 또는 반환 값의 형식을 변경 하 여 오류를 해결할 수 있습니다 [Windows::Foundation::Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_)합니다.
 
-자세한 내용은 참조 [컬렉션](../cppcx/collections-c-cx.md)합니다.
+자세한 내용은 [컬렉션](../cppcx/collections-c-cx.md)합니다.
 
 ### <a name="members"></a>멤버
 
@@ -87,7 +87,7 @@ ref class Map sealed;
 
 |||
 |-|-|
-|이름|설명|
+|name|설명|
 |[Map:: mapchanged](#mapchanged) 이벤트|Map이 변경될 때 발생합니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
@@ -112,7 +112,7 @@ virtual void Clear();
 
 ## <a name="first"></a>  Unorderedmap:: First 메서드
 
-첫 번째 지정 하는 반복기를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) unordered map의 요소입니다.
+첫 번째를 지정 하는 반복기를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) unordered map의 요소입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -128,11 +128,11 @@ virtual Windows::Foundation::Collections::IIterator<
 
 ### <a name="remarks"></a>설명
 
-선언 된 변수에 반환 값을 할당 하는 First()에서 반환 된 반복기를 보유 하는 편리한 방법은 **자동** 형식 추론 키워드입니다. 예를 들어, `auto x = myUnorderedMap->First();`을 입력합니다.
+First ()에서 반환 된 반복기를 보유 하는 편리한 방법을 사용 하 여 선언 된 변수에 반환 값을 할당 하는 것은 **자동** 형식 추론 키워드입니다. 예를 들어, `auto x = myUnorderedMap->First();`을 입력합니다.
 
 ## <a name="getview"></a>  Unorderedmap:: Getview 메서드
 
-현재 UnorderedMap의 읽기 전용 보기를 반환합니다. 즉, 한 [Platform::Collections::UnorderedMapView 클래스](../cppcx/platform-collections-unorderedmapview-class.md) 구현 하는 [Windows::Foundation::Collections::IMapView::IMapView](http://msdn.microsoft.com/library/windows/apps/br226037.aspx) 인터페이스입니다.
+현재 UnorderedMap의 읽기 전용 보기를 반환합니다. 즉, 한 [Platform::Collections::UnorderedMapView 클래스](../cppcx/platform-collections-unorderedmapview-class.md) 구현 하는 [Windows::Foundation::Collections::IMapView::IMapView]/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) 인터페이스입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -188,7 +188,7 @@ virtual bool Insert(
 
 ### <a name="return-value"></a>반환 값
 
-`true` 현재 Map의 기존 요소 키와 일치 하는 경우 *키* 요소의 값 부분이로 설정 되어 *값*합니다. `false` 현재 Map의 기존 요소가 없는 일치 하는 경우 *키* 및 *키* 및 *값* 매개 변수는 키-값 쌍으로 생성 되며 그런 다음 현재 UnorderedMap에 추가 합니다.
+`true` 현재 Map의 기존 요소 키와 일치 하는 경우 *키* 로 설정 되어 해당 요소의 값 부분이 *값*합니다. `false` 일치 하는 현재 Map의 기존 요소가 *키* 하며 *키* 하 고 *값* 매개 변수는 키-값 쌍으로 수행 하 고 현재 UnorderedMap에 추가 합니다.
 
 ## <a name="lookup"></a>  Unorderedmap:: Lookup 메서드
 
@@ -209,7 +209,7 @@ UnorderedMap에서 요소를 찾는 데 사용되는 키입니다. 유형의 *�
 
 ### <a name="return-value"></a>반환 값
 
-함께 사용 하는 값은 *키*합니다. 반환 값의 형식이 typename *V*합니다.
+함께 사용 되는 값을 *키*합니다. 반환 값의 형식은 typename *V*합니다.
 
 ## <a name="mapchanged"></a>  UnorderedMap::MapChanged
 
@@ -223,11 +223,11 @@ event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
 
 ### <a name="property-valuereturn-value"></a>속성 값/반환 값
 
-A [MapChangedEventHandler\<K, V >](http://msdn.microsoft.com/library/windows/apps/br206644.aspx) 에서 이벤트와 발생 한 변경의 종류를 발생 시킨 개체에 대 한 정보가 들어 있는입니다. 참고 항목 [IMapChangedEventArgs\<K >](http://msdn.microsoft.com/library/windows/apps/br226034.aspx) 및 [CollectionChange 열거형](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx)합니다.
+A [MapChangedEventHandler\<K, V >](/uwp/api/windows.foundation.collections.mapchangedeventhandler) 발생 한 변경 내용 유형의 이벤트를 발생 시킨 개체에 대 한 정보를 포함 하는 합니다. 참고 항목 [IMapChangedEventArgs\<K >](http://msdn.microsoft.com/library/windows/apps/br226034.aspx) 하 고 [CollectionChange 열거형](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx)합니다.
 
 ## <a name="net-framework-equivalent"></a>.NET Framework의 해당 값
 
-C# 또는 Visual Basic IMap 프로젝트는 Windows 런타임 앱\<K, V > IDictionary로\<K, V > 합니다.
+C# 또는 Visual Basic 프로젝트 IMap 하는 Windows 런타임 앱\<K, V > IDictionary로\<K, V >.
 
 ## <a name="remove"></a>  Unorderedmap:: Remove 메서드
 
@@ -353,10 +353,10 @@ UnorderedMap(
 같은지 여부를 확인하기 위해 두 키를 비교할 수 있는 함수 개체입니다. 이 매개 변수의 기본값은 [std:: equal_to\<K >](../standard-library/equal-to-struct.md)합니다.
 
 *H*  
-키에 대한 해시 값을 생성하는 함수 개체입니다. 이 매개 변수의 기본값은 [클래스 1 해시](../standard-library/hash-class.md) 클래스는 지원 하 고 키 형식에 대 한 합니다.
+키에 대한 해시 값을 생성하는 함수 개체입니다. 이 매개 변수의 기본값은 [해시 클래스 1](../standard-library/hash-class.md) 키 형식에 대 한 클래스를 지원 합니다.
 
 *m*  
-대 한 참조 또는 [Lvalue 및 Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) 에 [std:: unordered_map](../standard-library/unordered-map-class.md) 현재 UnorderedMap을 초기화 하는 데 사용 되는 합니다.
+참조 또는 [Lvalue 및 Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) 에 [std:: unordered_map](../standard-library/unordered-map-class.md) 현재 UnorderedMap을 초기화 하는 데 사용 되는 합니다.
 
 *il* A [std:: initializer_list](../standard-library/initializer-list-class.md) 의 [std:: pair](../standard-library/pair-structure.md) map를 초기화 하는 데 사용 되는 개체입니다.
 

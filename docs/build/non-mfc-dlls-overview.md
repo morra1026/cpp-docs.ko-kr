@@ -15,21 +15,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c61ad8e6d1107dfdacc91c32d48ca1e3624a0211
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 037f6d7bc80956536a7098ee67275425c41a2f68
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368644"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42613221"
 ---
 # <a name="non-mfc-dlls-overview"></a>비 MFC DLL: 개요
-비 MFC DLL은 MFC를 내부적으로 사용 하지 않는 DLL 및 MFC 또는 비 MFC 실행 파일에서 DLL의 내보낸된 함수를 호출할 수 있습니다. 함수는 표준 C 인터페이스를 사용 하 여 비 MFC DLL에서 대개 내보내집니다.  
+비 MFC DLL은 MFC를 내부적으로 사용 하지 않는 DLL 및 MFC 또는 비 MFC 실행 파일에서 DLL의 내보내기 함수를 호출할 수 있습니다. 함수는 표준 C 인터페이스를 사용 하 여 비 MFC DLL에서 일반적으로 내보내집니다.  
   
- 자세한 내용은 대 한 비 MFC Dll에 대 한 참조 [동적 연결 라이브러리](http://msdn.microsoft.com/library/windows/desktop/ms682589) 에 [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)]합니다.  
+ 자세한 정보에 대 한 비 MFC Dll을 참조 하세요 [동적 연결 라이브러리](http://msdn.microsoft.com/library/windows/desktop/ms682589) Windows SDK에 있습니다.  
   
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.  
   
--   [연습: 만들기 및 동적 연결 라이브러리를 사용 하 여](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)  
+-   [연습: 동적 연결 라이브러리를 사용 하 여 만들고](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)  
   
 -   [DLL에서 내보내기](../build/exporting-from-a-dll.md)  
   
@@ -39,9 +39,9 @@ ms.locfileid: "32368644"
   
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보  
   
--   [기본 MFC Dll에 정적으로 MFC에 링크](../build/regular-dlls-statically-linked-to-mfc.md)  
+-   [정적으로 MFC에 링크 된 기본 MFC Dll](../build/regular-dlls-statically-linked-to-mfc.md)  
   
--   [동적으로 MFC에 링크 하는 기본 MFC Dll](../build/regular-dlls-dynamically-linked-to-mfc.md)  
+-   [동적으로 MFC에 링크 된 기본 MFC Dll](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
 -   [MFC 확장명 DLL: 개요](../build/extension-dlls-overview.md)  
   

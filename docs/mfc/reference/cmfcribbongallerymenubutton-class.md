@@ -28,16 +28,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2dd3d47b2175a64be605ac8db9fdb1502ce2755
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: a63d72d9744928ca0871ed251cfaea254d0acb14
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37041262"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42544521"
 ---
 # <a name="cmfcribbongallerymenubutton-class"></a>CMFCRibbonGalleryMenuButton 클래스
 리본 갤러리가 포함된 리본 메뉴 단추를 구현합니다.  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
    
 ## <a name="syntax"></a>구문  
   
@@ -113,7 +113,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ### <a name="remarks"></a>설명  
   
 ##  <a name="cmfcribbongallerymenubutton"></a>  CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton  
- 생성 하 고 초기화는 [CMFCRibbonGalleryMenuButton](../../mfc/reference/cmfcribbongallerymenubutton-class.md) 개체입니다.  
+ 생성 하 고 초기화 된 [CMFCRibbonGalleryMenuButton](../../mfc/reference/cmfcribbongallerymenubutton-class.md) 개체입니다.  
   
 ```  
 CMFCRibbonGalleryMenuButton(
@@ -133,10 +133,10 @@ CMFCRibbonGalleryMenuButton(
   
 ### <a name="parameters"></a>매개 변수  
  *uiID*  
- 단추의 명령 ID입니다. 이 단추를 클릭할 때 WM_COMMAND 메시지에 전송 하는 값입니다.  
+ 단추의 명령 ID입니다. 이 단추를 클릭할 때 WM_COMMAND 메시지를 전송 하는 값입니다.  
   
  *iImage*  
- 갤러리 메뉴 단추와 함께 표시할 이미지의 인덱스입니다. 에 저장 된 이미지는 *imagesPalette* 매개 변수입니다.  
+ 갤러리 메뉴 단추를 사용 하 여 표시할 이미지의 인덱스입니다. 이미지에 저장 되는 *imagesPalette* 매개 변수입니다.  
   
  *lpszText*  
  메뉴 단추에 표시할 텍스트입니다.  
@@ -151,10 +151,10 @@ CMFCRibbonGalleryMenuButton(
  갤러리에 표시할 이미지의 픽셀에서 너비를 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
- 갤러리 메뉴 단추가 팝업 메뉴로 화살표가 있는 표시 됩니다. 사용자가 이 단추를 클릭하면 이미지 갤러리가 표시됩니다.  
+ 화살표가 있는 팝업 메뉴로 갤러리 메뉴 단추가 표시 됩니다. 사용자가 이 단추를 클릭하면 이미지 갤러리가 표시됩니다.  
   
 ### <a name="example"></a>예  
- 다음 예제에서는의 생성자를 사용 하 여 `CMFCRibbonGalleryMenuButton` 클래스입니다. 이 코드 조각은의 일부인는 [MS Office 2007 데모 샘플](../../visual-cpp-samples.md)합니다.  
+ 다음 예제에서는의 생성자를 사용 하는 방법에 설명 합니다 `CMFCRibbonGalleryMenuButton` 클래스입니다. 이 코드 조각은의 일부인 합니다 [MS Office 2007 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_MSOffice2007Demo#8](../../mfc/reference/codesnippet/cpp/cmfcribbongallerymenubutton-class_1.cpp)]  
   

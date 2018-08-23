@@ -15,26 +15,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0f68e51de101ad8ef7adfb4d9ad061a66071ef48
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 58f8ac0383e2aeed2f042da7d4968e6b19a36d68
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39605433"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42600175"
 ---
 # <a name="modulereleasenotifierrelease"></a>Module::ReleaseNotifier::Release
-현재 삭제 **module:: releasenotifier** 개체의 매개 변수를 사용 하 여 생성 된 경우 개체 **true**합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-void Release() throw();  
-```  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** module.h  
-  
- **네임스페이스:** Microsoft::WRL  
-  
-## <a name="see-also"></a>참고 항목  
- [Module::ReleaseNotifier 클래스](../windows/module-releasenotifier-class.md)
+
+현재 삭제 **module:: releasenotifier** 개체의 매개 변수를 사용 하 여 생성 된 경우 개체 **true**합니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+void Release() throw();
+```
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** module.h
+
+**네임스페이스:** Microsoft::WRL
+
+## <a name="see-also"></a>참고 항목
+
+[Module::ReleaseNotifier 클래스](../windows/module-releasenotifier-class.md)

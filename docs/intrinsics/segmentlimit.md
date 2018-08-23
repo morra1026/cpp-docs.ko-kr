@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64fffacbaebc99d3298b5463a014db1e9117cd7b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eacffcd5e66d73cd7594207f58356a4a8a0ecb47
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33330754"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540714"
 ---
 # <a name="segmentlimit"></a>__segmentlimit
 **Microsoft 전용**  
@@ -42,22 +42,22 @@ unsigned long __segmentlimit(
  세그먼트 선택기를 지정 하는 상수입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 로 지정 된 세그먼트 선택기의 세그먼트 제한을 `a`, 선택기 값은 현재 사용 권한 수준에서 유효 하 고 표시 합니다.  
+ 지정 된 세그먼트 선택기의 세그먼트 제한을 `a`있는 선택기를 현재 사용 권한 수준에서 유효 하 고 표시 되는 경우.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__segmentlimit`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__segmentlimit`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- 세그먼트 제한을 검색할 수 없는 경우이 명령은 실패 합니다. 실패 한 경우,이 명령은 ZF 플래그를 지웁니다 및 반환 값이 정의 되지 않습니다.  
+ 세그먼트 제한을 검색할 수 없는 경우이 명령이 실패 합니다. 오류가 발생 하면이 명령은 ZF 플래그를 지우고 반환 값은 정의 되지 않습니다.  
   
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 #include <stdio.h>  

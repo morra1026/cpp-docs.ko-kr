@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - Platform::IntPtr Struct
 ms.assetid: 6c0326e8-edfd-4e53-a963-240b845dcde8
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b54facc94be3f43b500e38371e0eba9e00d130a4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a97d77f0b84366c83f09f6a6c72afe1bbb25dc6d
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088156"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42612131"
 ---
 # <a name="platformintptr-value-class"></a>Platform::IntPtr 값 클래스
 플랫폼(32비트 또는 64비트)에 맞는 크기의 부호 있는 포인터 또는 핸들을 나타냅니다.  
@@ -90,7 +90,7 @@ static IntPtr::operator IntPtr( void* value1);   static IntPtr::operator IntPtr(
   
 
 
-## <a name="toint32"> </a> Intptr:: Toint32 메서드
+## <a name="toint32"> </a> IntPtr::ToInt32 메서드
 현재 IntPtr 값을 32비트 정수로 변환합니다.  
   
 ### <a name="syntax"></a>구문  

@@ -11,16 +11,16 @@ dev_langs:
 helpviewer_keywords:
 - Platform::ArrayReference Class
 ms.assetid: 9ab3b15e-8a60-4600-8fcb-7d6c86284f4b
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8e4183c400cf45a23f24a98292b68f6df537da1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a7b2a0fd8c4903852e88fa80f12bc05894625888
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33089116"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42588313"
 ---
 # <a name="platformarrayreference-class"></a>Platform::ArrayReference 클래스
 `ArrayReference` 는 C 스타일 배열을 입력 데이터로 채울 때 입력 매개 변수에서 [Platform::Array^](../cppcx/platform-array-class.md) 를 대체할 수 있는 최적화 형식입니다.  
@@ -49,7 +49,7 @@ class ArrayReference
 ## <a name="exceptions"></a>예외  
   
 ### <a name="remarks"></a>설명  
- `ArrayReference` 를 사용하여 C 스타일 배열을 채워서 먼저 `Platform::Array` 변수로 복사한 다음 C 스타일 배열로 복사하는 추가적인 복사 작업을 피합니다. `ArrayReference`를 사용하면 한 번의 복사 작업만 있습니다. 코드 예제를 참조 하십시오. [Array 및 WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)합니다.  
+ `ArrayReference` 를 사용하여 C 스타일 배열을 채워서 먼저 `Platform::Array` 변수로 복사한 다음 C 스타일 배열로 복사하는 추가적인 복사 작업을 피합니다. `ArrayReference`를 사용하면 한 번의 복사 작업만 있습니다. 코드 예제를 참조 하세요 [Array 및 WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)합니다.  
   
 ### <a name="requirements"></a>요구 사항  
  **지원 되는 최소 클라이언트:** Windows 8  
@@ -61,7 +61,7 @@ class ArrayReference
  **헤더:** vccorlib.h  
   
 ## <a name="ctor"></a>  Arrayreference:: Arrayreference 생성자
-새 인스턴스를 초기화는 [platform:: arrayreference](../cppcx/platform-arrayreference-class.md) 클래스입니다.  
+새 인스턴스를 초기화 합니다 [platform:: arrayreference](../cppcx/platform-arrayreference-class.md) 클래스입니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -86,7 +86,7 @@ ArrayReference(ArrayReference&& otherArg)
 
 
 ## <a name="operator-assign"></a>  Arrayreference:: Operator = 연산자
-지정한 개체를 현재 할당 [platform:: arrayreference](../cppcx/platform-arrayreference-class.md) 이동 의미 체계를 사용 하 여 개체입니다.  
+현재 지정된 된 개체를 할당 [platform:: arrayreference](../cppcx/platform-arrayreference-class.md) 이동 의미 체계를 사용 하 여 개체입니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -123,7 +123,7 @@ Array<TArg>^ operator ();
  `Array<TArg>^` 형식의 개체 핸들입니다.  
   
 ### <a name="remarks"></a>설명  
- [Platform:: arrayreference](../cppcx/platform-arrayreference-class.md) 및 [platform:: array](../cppcx/platform-array-class.md) 는 표준 c + + 클래스 템플릿입니다 하지 ref 클래스입니다.  
+ [Platform:: arrayreference](../cppcx/platform-arrayreference-class.md) 하 고 [platform:: array](../cppcx/platform-array-class.md) 템플릿은 표준 c + + 클래스를 하지 ref 클래스입니다.  
   
 
 

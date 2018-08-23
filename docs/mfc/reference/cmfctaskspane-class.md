@@ -204,15 +204,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da86312e425f6b54abf6422af09a04c45aa733f2
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 51beef03fe4e92f4eacd733b2d92b04675ed4242
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028384"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42543241"
 ---
 # <a name="cmfctaskspane-class"></a>CMFCTasksPane 클래스
-[!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
  `CMFCTasksPane` 클래스는 클릭할 수 있는 항목(작업) 목록을 구현합니다.  
   

@@ -20,23 +20,23 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 932185002032ab86ca80b2b3384bfe6cbb69f8b1
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 59e890e9d38ff0a37114f2f15217a748c21fff44
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338712"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42573271"
 ---
 # <a name="supporting-transactions-in-ole-db"></a>OLE DB에서 트랜잭션 지원
 A [트랜잭션](../../data/transactions-mfc-data-access.md) 그룹 또는 일괄 처리에 일련의 데이터 원본에 대 한 업데이트 없음 커밋됩니다 (경우 중 하나가 실패할) 하거나 모두 실패 하 고 한 번에 커밋됩니다 있도록 하는 방법 및 전체 트랜잭션이 롤백됩니다. 이 프로세스 데이터 원본에 대 한 결과의 무결성을 보장 합니다.  
   
  OLE DB는 다음 세 가지 메서드를 사용 하 여 트랜잭션을 지원합니다.  
   
--   [ITransactionLocal::StartTransaction](https://msdn.microsoft.com/library/ms709786.aspx)  
+-   [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786\(v=vs.85\))  
   
--   [ITransaction::Commit](https://msdn.microsoft.com/library/ms713008.aspx)  
+-   [ITransaction::Commit](/previous-versions/windows/desktop/ms713008\(v=vs.85\))  
   
--   [ITransaction::Abort](https://msdn.microsoft.com/library/ms709833.aspx)  
+-   [ITransaction::Abort](/previous-versions/windows/desktop/ms709833\(v=vs.85\))  
   
 ## <a name="relationship-of-sessions-and-transactions"></a>세션 및 트랜잭션과의 관계  
  단일 데이터 원본 개체를 내부 또는 지정된 된 시간에 트랜잭션 범위 외부의 수는 각각 하나 이상의 세션 개체를 만들 수 있습니다.  
@@ -55,7 +55,7 @@ A [트랜잭션](../../data/transactions-mfc-data-access.md) 그룹 또는 일�
  호출 `ITransaction::Commit` 또는 `ITransaction::Abort` 트랜잭션을 종료 합니다. `Commit` 모든 변경 내용을 데이터 저장소에 적용할 트랜잭션의 범위 내에서 발생 합니다. `Abort` 원인 취소할 트랜잭션 및 데이터 저장소의 범위 내에서 모든 변경 내용을 상태의 왼쪽은 트랜잭션이 시작 되기 전에 했습니다.  
   
 ## <a name="nested-transactions"></a>중첩 된 트랜잭션  
- A [트랜잭션 중첩](https://msdn.microsoft.com/library/ms716985.aspx) 세션에 활성 트랜잭션이 이미 있는 경우 새 로컬 트랜잭션을 시작할 때 발생 합니다. 현재 트랜잭션 아래 중첩 트랜잭션으로 새 트랜잭션이 시작 됩니다. 공급자는 중첩 된 트랜잭션을 지원 하지 않으면, 호출 `StartTransaction` 세션에 활성 트랜잭션이 이미 있을 때 XACT_E_XTIONEXISTS를 반환 합니다.  
+ A [트랜잭션 중첩](/previous-versions/windows/desktop/ms716985\(v=vs.85\)) 세션에 활성 트랜잭션이 이미 있는 경우 새 로컬 트랜잭션을 시작할 때 발생 합니다. 현재 트랜잭션 아래 중첩 트랜잭션으로 새 트랜잭션이 시작 됩니다. 공급자는 중첩 된 트랜잭션을 지원 하지 않으면, 호출 `StartTransaction` 세션에 활성 트랜잭션이 이미 있을 때 XACT_E_XTIONEXISTS를 반환 합니다.  
   
 ## <a name="distributed-transactions"></a>분산 트랜잭션  
  분산된 데이터를 업데이트 하는 트랜잭션이 분산된 트랜잭션 둘 이상의 네트워크에 연결 된 컴퓨터 시스템에는 데이터입니다. 분산된 시스템을 통해 트랜잭션을 지원 하려는 경우 OLE DB 트랜잭션 지원이 아닌.NET Framework를 사용 해야 합니다.  

@@ -17,32 +17,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 276024be7b3d75edf308e43a08e4d2cbe9901c1e
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: aeab6c448818d9d54ca96832a8c7875ebaa97091
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39652057"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42611361"
 ---
 # <a name="classfactoryaddref-method"></a>ClassFactory::AddRef 메서드
-현재 참조 횟수를 증가 시킵니다 **ClassFactory** 개체입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-STDMETHOD_(  
-   ULONG,  
-   AddRef  
-)();  
-```  
-  
-## <a name="return-value"></a>반환 값  
- 성공하면 S_OK이고, 그렇지 않으면 실패를 설명하는 HRESULT가 발생합니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** module.h  
-  
- **네임스페이스:** Microsoft::WRL  
-  
-## <a name="see-also"></a>참고 항목  
- [ClassFactory 클래스](../windows/classfactory-class.md)
+
+현재 참조 횟수를 증가 시킵니다 **ClassFactory** 개체입니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+STDMETHOD_(
+   ULONG,
+   AddRef
+)();
+```
+
+## <a name="return-value"></a>반환 값
+
+성공하면 S_OK이고, 그렇지 않으면 실패를 설명하는 HRESULT가 발생합니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** module.h
+
+**네임스페이스:** Microsoft::WRL
+
+## <a name="see-also"></a>참고 항목
+
+[ClassFactory 클래스](../windows/classfactory-class.md)

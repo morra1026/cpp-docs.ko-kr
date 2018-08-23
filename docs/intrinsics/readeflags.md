@@ -16,15 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8233b949fc0ab06663e9f20fad8f47f633fadf6f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a6488cc42519bbbee8c8fefb242996144f6bb8a8
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340101"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540705"
 ---
 # <a name="readeflags"></a>__readeflags
-프로그램 상태 및 제어 (EFLAGS) 등록을 읽습니다.  
+등록 프로그램 상태 및 컨트롤 (EFLAGS)을 읽습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,9 +43,9 @@ unsigned __int64 __readeflags(void);
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__readeflags`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__readeflags`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 **Microsoft 전용 종료**  
   

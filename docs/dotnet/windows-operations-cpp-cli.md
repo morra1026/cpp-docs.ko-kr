@@ -54,17 +54,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 7a303e80b58207e555dbd9067982ee1e2c506bb3
-ms.sourcegitcommit: 27be37ae07ee7b657a54d23ed34438220d977fdc
+ms.openlocfilehash: 0f9566fb6e3117b10d0d6f4a2bccbe56fe33a28a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39110023"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42609351"
 ---
 # <a name="windows-operations-ccli"></a>Windows 작업(C++/CLI)
-사용 하 여 다양 한 Windows 관련 작업을 보여 줍니다는 [!INCLUDE[winsdklong](../dotnet/includes/winsdklong_md.md)]합니다.  
+Windows SDK를 사용 하 여 다양 한 Windows 관련 작업을 보여 줍니다.  
   
- 다음 항목에서는 사용 하 여 수행 하는 다양 한 Windows 작업을 설명 합니다 [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] Visual c + +를 사용 하 여 합니다.  
+ 다음 항목에서는 Visual c + +를 사용 하 여 Windows SDK를 사용 하 여 수행 하는 다양 한 Windows 작업을 설명 합니다.  
 
 ## <a name="determine_shutdown"></a> 종료 프로세스 시작 확인
 다음 코드 예제에서는 응용 프로그램 또는.NET Framework는 현재 종료 여부를 결정 하는 방법에 설명 합니다. 종료 하는 동안 이러한 구문은 시스템에 의해 종료 되 고 안정적으로 사용할 수 없습니다 때문에.NET Framework의 정적 요소에 액세스 하기 위한 유용 합니다. 확인 하 여는 <xref:System.Environment.HasShutdownStarted%2A> 속성 먼저 이러한 요소에 액세스 하지 하 여 잠재적인 오류를 방지할 수 있습니다.  

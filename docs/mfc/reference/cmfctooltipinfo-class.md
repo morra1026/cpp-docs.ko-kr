@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: babc490d63f6c7e1692877e53b4971fc85ec4c24
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 0a8ec3a7898f846af85614dec75c10c5a0393e24
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850893"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540704"
 ---
 # <a name="cmfctooltipinfo-class"></a>CMFCToolTipInfo 클래스
 도구 설명의 시각적 모양에 대한 정보를 저장합니다.  
@@ -222,7 +222,7 @@ BOOL m_bVislManagerTheme;
  하는 경우 `m_bVislManagerTheme` 가 TRUE 인 모든 도구 설명 새 요청 [CMFCToolTipInfo](../../mfc/reference/cmfctooltipinfo-class.md) 화면에 표시 하 고 모양을 결정 하는 개체의 값을 사용 하려면 먼저 응용 프로그램의 비주얼 관리자에서. 다른 멤버에 [CMFCToolTipInfo](../../mfc/reference/cmfctooltipinfo-class.md) 무시 됩니다.  
   
 ##  <a name="operator_eq"></a>  CMFCToolTipInfo::operator =  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
 ```  
 CMFCToolTipInfo& operator=(CMFCToolTipInfo& src);

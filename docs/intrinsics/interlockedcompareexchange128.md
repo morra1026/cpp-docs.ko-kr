@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f491f59289a2e3b951e1bad60f260a801ea68bea
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3e5433e2d1ddf94f23a3f483a8857e3032c27be3
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33337937"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42545867"
 ---
 # <a name="interlockedcompareexchange128"></a>_InterlockedCompareExchange128
 **Microsoft 전용**  
@@ -43,44 +43,44 @@ unsigned char _InterlockedCompareExchange128(
   
 #### <a name="parameters"></a>매개 변수  
  [in, out] `Destination`  
- 두 개의 64 비트 정수 배열 대상에 대 한 포인터를 128 비트 필드로 간주 합니다. 대상 데이터에 일반 보호 오류를 방지 하기 위해 정렬 16 바이트 여야 합니다.  
+ 두 64 비트 정수의 배열 대상에 대 한 포인터 128 비트 필드로 간주 합니다. 대상 데이터에 일반 보호 오류를 방지 하려면 정렬 16 바이트 여야 합니다.  
   
  [in] `ExchangeHigh`  
- 대상의 상위 부분으로 교환할 수 있는 64 비트 정수입니다.  
+ 대상의 상위 부분을 사용 하 여 교환할 수 있는 64 비트 정수입니다.  
   
  [in] `ExchangeLow`  
  대상의 하위 부분으로 교환할 수 있는 64 비트 정수입니다.  
   
  [in, out] `ComparandResult`  
- (128 비트 필드로 간주)는 두 개의 64 비트 정수 배열에 대 한 포인터를 대상으로 비교 합니다.  출력에는 대상의 원래 값으로 덮어쓰며이 합니다.  
+ (128 비트 필드로 간주 됨) 하는 두 개의 64 비트 정수 배열에 대 한 포인터를 대상으로 비교 합니다.  출력 시이 대상의 원래 값으로 덮어씁니다 되어 있습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 128 비트 피비교수와 대상의 원래 값이 일치 하는 경우 1입니다. `ExchangeHigh` 및 `ExchangeLow` 128 비트 대상 덮어쓰기.  
+ 128 비트 피비교수와 대상의 원래 값이 일치 하는 경우 1입니다. `ExchangeHigh` 및 `ExchangeLow` 128 비트 대상을 덮어씁니다.  
   
- 비교 피연산자는 대상의 원래 값과 일치 하지 않는 경우 0입니다. 대상의 값이 변경 되지 하 고 대상의 값과 비교 피연산자의 값을 덮어씁니다.  
+ 비교 피연산자는 대상의 원래 값과 같지 않으면 0입니다. 대상의 값이 변경 되지 않습니다 및 대상의 값과 비교 피연산자의 값을 덮어씁니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`_InterlockedCompareExchange128`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_InterlockedCompareExchange128`|X64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- 이 내장 함수 생성의 `cmpxchg16b` 명령 (으로 `lock` 접두사) 128 비트 잠긴된 비교 및 교환 수행 하 합니다. AMD 64 비트 하드웨어의 초기 버전에는이 명령을 지원 하지 않습니다. 에 대 한 하드웨어 지원을 확인 하 고 `cmpxchg16b` 명령, 호출의 `__cpuid` 포함 된 내장 함수 `InfoType=0x00000001 (standard function 1)`합니다. 13 비트 `CPUInfo[2]` (ECX)는 명령이 지원 되는 경우 1이 됩니다.  
+ 이 내장 함수 생성 합니다 `cmpxchg16b` 명령 (사용 하 여는 `lock` 접두사) 128 비트 잠긴된 비교 및 교환 하는 데 있습니다. AMD 64 비트 하드웨어의 초기 버전에는이 명령을 지원 하지 않습니다. 에 대 한 하드웨어 지원을 확인 하는 `cmpxchg16b` 명령을 호출 합니다 `__cpuid` 포함 된 내장 함수 `InfoType=0x00000001 (standard function 1)`합니다. 13 많은 `CPUInfo[2]` 명령 지원 되는 경우 (ECX)는 1입니다.  
   
 > [!NOTE]
->  값 `ComparandResult` 항상 덮어씁니다. 후의 `lock` 의 초기 값은 즉시 복사 하는 명령,이 내장 `Destination` 를 `ComparandResult`합니다. 이러한 이유로 `ComparandResult` 및 `Destination` 예기치 않은 동작을 방지 하기 위해 개별 메모리 위치를 가리켜야 합니다.  
+>  변수의 `ComparandResult` 을 항상 덮어씁니다. 후 합니다 `lock` 의 초기 값을 즉시 복사 하는 명령에이 내장 `Destination` 에 `ComparandResult`입니다. 이러한 이유로 `ComparandResult` 고 `Destination` 예기치 않은 문제를 방지 하려면 별도 메모리 위치를 가리켜야 합니다.  
   
- 사용할 수 있지만 `_InterlockedCompareExchange128` 하위 수준 스레드 동기화에 대 한 불필요 더 작은 동기화 함수를 사용할 수 있는 경우 128 비트 이상 동기화 할 (다른 같은 `_InterlockedCompareExchange` 내장 함수) 대신. 사용 하 여 `_InterlockedCompareExchange128` 메모리에 128 비트 값에 대 한 원자성 액세스 하려는 경우.  
+ 사용할 수 있지만 `_InterlockedCompareExchange128` 하위 수준 스레드 동기화에 대 한 필요가 없습니다 작은 동기화 함수를 사용할 수 있는 경우 128 비트 개를 동기화 하려면 (다른 같은 `_InterlockedCompareExchange` 내장 함수) 대신 합니다. 사용 하 여 `_InterlockedCompareExchange128` 메모리에는 128 비트 값에 대 한 원자성 액세스 하려는 경우.  
   
- 하는 경우 코드를 실행 하면 사용 하 여이 내장 함수를 지원 하지 않는 하드웨어에는 `cmpxchg16b` 명령 결과 예측할 수 없습니다.  
+ 경우 코드를 실행 하면 사용 하 여이 내장 함수를 지원 하지 않는 하드웨어를 `cmpxchg16b` 명령 결과 예측할 수 없습니다.  
   
  이 루틴은 내장 함수로 사용할 수 있습니다.  
   
-## <a name="example"></a>예제  
- 이 예에서는 `_InterlockedCompareExchange128` 두 개의 64 비트 정수 배열의 높은 단어는 고가 및 저가 단어의 합으로 컨트롤러를 바꾸려면 낮은 단어 증가 합니다. BigInt.Int 배열에 대 한 액세스가 원자성을 하지만이 예제에서는 단일 스레드를 사용 하 고 단순성에 대 한 잠금을 무시 합니다.  
+## <a name="example"></a>예  
+ 이 예제에서는 `_InterlockedCompareExchange128` 해당 높음 및 낮음 단어의 합계를 사용 하 여 두 개의 64 비트 정수 배열로 높은 단어를 대체 하는 데 하위 워드를 하나씩 늘립니다. BigInt.Int 배열에 대 한 액세스는 원자성 하지만이 예제에서는 단일 스레드를 사용 하 고 간단히 하기 위해 잠금을 무시 합니다.  
   
 ```  
 // cmpxchg16b.c  
@@ -129,7 +129,7 @@ BigInt.Int[1] = 34, BigInt.Int[0] = 12
 ```  
   
 **Microsoft 전용 종료**  
- 고급 마이크로 장치, inc 2007 저작권 All rights reserved. 고급 마이크로 장치, Inc. 로부터 사용 권한을 승인 하에 복제  
+ 고급 마이크로 장치, inc 저작권 2007 All rights reserved. 고급 마이크로 장치, Inc. 사용 권한을 사용 하 여 재현  
   
 ## <a name="see-also"></a>참고 항목  
  [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)   

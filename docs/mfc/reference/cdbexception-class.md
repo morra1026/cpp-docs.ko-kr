@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e45a5c97f0f25ed0bcb704b584de645bce18cb9
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: e67dec2474d89e3daccf0bc0e59332c79080cc99
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338607"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42544519"
 ---
 # <a name="cdbexception-class"></a>CDBException 클래스
 데이터베이스 클래스에서 발생하는 예외 상태를 나타냅니다.  
@@ -132,7 +132,7 @@ class CDBException : public CException
 ### <a name="remarks"></a>설명  
  문자열의 폼 "상태 %s, 네이티브 %ld, 원본 %s"를 순서 대로 형식 코드를 설명 하는 값으로 대체 됩니다 여기서 다음과 같습니다:::.  
   
--   SQLSTATE, 5 문자 오류 코드가 포함 된 null로 끝나는 문자열을 반환 합니다 *szSqlState* ODBC 함수의 매개 변수가 `SQLError`합니다. 부록 A에서에서 SQLSTATE 값 나와 [ODBC 오류 코드](https://msdn.microsoft.com/library/ms714687.aspx)를 *ODBC 프로그래머 참조*합니다. 예: "S0022"입니다.  
+-   SQLSTATE, 5 문자 오류 코드가 포함 된 null로 끝나는 문자열을 반환 합니다 *szSqlState* ODBC 함수의 매개 변수가 `SQLError`합니다. 부록 A에서에서 SQLSTATE 값 나와 [ODBC 오류 코드](/previous-versions/windows/desktop/ms714687\(v=vs.85\))를 *ODBC 프로그래머 참조*합니다. 예: "S0022"입니다.  
   
 -   에 반환 된 원시 오류 코드, 데이터 원본에 특정 합니다 *pfNativeError* 의 매개 변수는 `SQLError` 함수입니다. 예제: 207 합니다.  
   
@@ -140,7 +140,7 @@ class CDBException : public CException
   
  프레임 워크가 오류 문자열을 해석 하 고 해당 구성 요소에 배치 `m_strStateNativeOrigin`같으면 `m_strStateNativeOrigin` 정보가 둘 이상의 오류를 오류 줄 바꿈 문자로 구분 됩니다. 프레임 워크에는 영숫자 오류 텍스트를 배치 `m_strError`합니다.  
   
- 이 문자열을 구성 하는 데 코드에 대 한 자세한 내용은 참조는 [SQLError](https://msdn.microsoft.com/library/ms716312.aspx) 함수는 *ODBC 프로그래머 참조*합니다.  
+ 이 문자열을 구성 하는 데 코드에 대 한 자세한 내용은 참조는 [SQLError](/previous-versions/windows/desktop/ms716312\(v=vs.85\)) 함수는 *ODBC 프로그래머 참조*합니다.  
   
 ### <a name="example"></a>예  
   ODBC:에서 "상태: S0022, 네이티브: 207, 원본: [Microsoft] [ODBC SQL Server Driver] [SQL Server] 잘못 된 열 이름 'ColName'"  

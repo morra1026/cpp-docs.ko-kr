@@ -21,16 +21,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2894c503dde89668bfb90b615c7b0966fe5fe2e5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2fa07308d04d14395b0ca9773e2a0c81ed0c2bc2
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360977"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42573175"
 ---
 # <a name="building-cc-programs"></a>C/C++ 프로그램 빌드
 
-Visual Studio 또는 명령줄에서 Visual C++ 프로젝트를 빌드할 수 있습니다. Visual Studio IDE를 사용 하 여 [MSBuild](../build/msbuild-visual-cpp.md) 프로젝트 및 솔루션을 빌드할 수 있습니다. 명령줄에서는 C/C++ 컴파일러(cl.exe) 및 링커(link.exe)를 사용하여 간단한 프로젝트를 빌드할 수 있습니다. 명령줄에서 보다 복잡 한 프로젝트를 빌드하려면 MSBuild를 사용할 수 있습니다 또는 [NMAKE](../build/nmake-reference.md)합니다. 에 대 한 개요를 사용 하는 방법에 대 한 [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] 프로젝트 및 솔루션을 빌드하려면 참조 [컴파일 및 빌드](/visualstudio/ide/compiling-and-building-in-visual-studio)합니다.  
+Visual Studio 또는 명령줄에서 Visual C++ 프로젝트를 빌드할 수 있습니다. Visual Studio IDE를 사용 하 여 [MSBuild](../build/msbuild-visual-cpp.md) 프로젝트 및 솔루션을 빌드할 수 있습니다. 명령줄에서는 C/C++ 컴파일러(cl.exe) 및 링커(link.exe)를 사용하여 간단한 프로젝트를 빌드할 수 있습니다. 명령줄에서 보다 복잡 한 프로젝트를 빌드하려면 MSBuild를 사용할 수 있습니다 또는 [NMAKE](../build/nmake-reference.md)합니다. Visual Studio 프로젝트 및 솔루션 빌드를 사용 하는 방법에 대 한 개요를 보려면 [컴파일 및 빌드](/visualstudio/ide/compiling-and-building-in-visual-studio)합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
 

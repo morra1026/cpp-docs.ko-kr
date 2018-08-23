@@ -13,32 +13,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1aaaf8c6849b30e26463810ff353234319960048
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 23d521b8373969abdd739b6e4f48eb334284664d
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33883370"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42605175"
 ---
 # <a name="deferrableeventargsinvokeallfinished-method"></a>DeferrableEventArgs::InvokeAllFinished 메서드
-지연된 이벤트를 처리하는 모든 처리가 완료되었음을 나타내기 위해 호출됩니다.  
+지연된 이벤트를 처리하는 모든 처리가 완료되었음을 나타내기 위해 호출됩니다.
   
-## <a name="syntax"></a>구문  
+## <a name="syntax"></a>구문
   
-```cpp  
+```cpp
 void InvokeAllFinished()  
-```  
+```
   
-## <a name="remarks"></a>설명  
- 이벤트 소스 호출한 후이 메서드를 호출 해야 [InvokeAll](../windows/eventsource-invokeall-method.md)합니다. 이 메서드를 호출하면 추가 지연이 수행되지 않고, 수행된 지연이 없을 경우 완료 처리기가 강제로 실행됩니다.  
+## <a name="remarks"></a>설명
+ 이벤트 원본 호출한 후이 메서드를 호출 해야 [InvokeAll](../windows/eventsource-invokeall-method.md)합니다. 이 메서드를 호출하면 추가 지연이 수행되지 않고, 수행된 지연이 없을 경우 완료 처리기가 강제로 실행됩니다.
   
- 코드 예제를 참조 하십시오. [DeferrableEventArgs 클래스](../windows/deferrableeventargs-class.md)합니다.  
+ 코드 예제를 참조 하세요 [DeferrableEventArgs 클래스](../windows/deferrableeventargs-class.md)합니다.
   
-## <a name="requirements"></a>요구 사항  
- **헤더:** event.h  
+## <a name="requirements"></a>요구 사항
+ **헤더:** event.h
   
- **네임스페이스:** Microsoft::WRL  
+ **네임스페이스:** Microsoft::WRL
   
-## <a name="see-also"></a>참고 항목  
- [DeferrableEventArgs 클래스](../windows/deferrableeventargs-class.md)   
+## <a name="see-also"></a>참고 항목
+ [DeferrableEventArgs 클래스](../windows/deferrableeventargs-class.md)  
  [EventSource::InvokeAll 메서드](../windows/eventsource-invokeall-method.md)

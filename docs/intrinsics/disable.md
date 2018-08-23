@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4359d77f13338e2e007236b0103fd358dffd0ce1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2748d0412c9ee0f7e7684d35a38f3c2b5d133754
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33324261"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42545889"
 ---
 # <a name="disable"></a>_disable
 **Microsoft 전용**  
@@ -41,9 +41,9 @@ void _disable(void);
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`_disable`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_disable`|x86, ARM, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
  `_disable`는 인터럽트 플래그를 지우도록 프로세서에 명령합니다. x86 시스템에서 이 함수는 인터럽트 플래그 지우기(`cli`) 명령을 생성합니다.  

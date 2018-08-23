@@ -1,7 +1,7 @@
 ---
 title: range_error 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/14/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 63d6497dda220723587623cb42551366ddcbef80
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: cf6c2f46d3dedc80cb89e6776a82eee6ebe57026
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853088"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539115"
 ---
 # <a name="rangeerror-class"></a>range_error 클래스
 
@@ -33,17 +33,15 @@ ms.locfileid: "33853088"
 class range_error : public runtime_error {
 public:
     explicit range_error(const string& message);
-
     explicit range_error(const char *message);
-
 };
 ```
 
 ## <a name="remarks"></a>설명
 
-[what](../standard-library/exception-class.md)에서 반환된 값은 **message**`.`[data](../standard-library/basic-string-class.md#data)의 복사본입니다.
+반환 된 값 [무엇입니까](../standard-library/exception-class.md) 복사본이 `message.data`합니다. 자세한 내용은 [basic_string:: data](../standard-library/basic-string-class.md#data)합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 ```cpp
 // range_error.cpp
@@ -56,7 +54,7 @@ int main()
    {
       throw range_error( "The range is in error!" );
    }
-   catch (exception &e)
+   catch (range_error &e)
    {
       cerr << "Caught: " << e.what( ) << endl;
       cerr << "Type: " << typeid( e ).name( ) << endl;

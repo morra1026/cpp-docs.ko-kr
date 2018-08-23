@@ -63,15 +63,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 07453e3040594332857ba75455b1847a3914fdd2
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: d6adec1a87463515f3fa87dfd4ca31fda650e902
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337796"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42573090"
 ---
 # <a name="icommandimpl-class"></a>ICommandImpl 클래스
-에 대 한 구현을 제공 합니다 [ICommand](https://msdn.microsoft.com/library/ms709737.aspx) 인터페이스입니다.  
+에 대 한 구현을 제공 합니다 [ICommand](/previous-versions/windows/desktop/ms709737\(v=vs.85\)) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -124,7 +124,7 @@ STDMETHOD(Cancel)();
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [ICommand::Cancel](https://msdn.microsoft.com/library/ms714402.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [ICommand::Cancel](/previous-versions/windows/desktop/ms714402\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
 
 ## <a name="cancelexecution"></a> Icommandimpl:: Cancelexecution
 현재 명령 실행을 취소합니다.  
@@ -178,7 +178,7 @@ HRESULT CreateRowset(IUnknown* pUnkOuter,
 ### <a name="remarks"></a>설명  
  둘 이상의 행 집합을 만들고, 다른 행 집합 만들기에 대 한 사용자 고유의 조건을 제공 하는 다양 한 호출을 배치 `CreateRowset` 내에서 `Execute`합니다.  
   
- 참조 [icommand:: Execute](https://msdn.microsoft.com/library/ms718095.aspx) 에 *OLE DB 프로그래머 참조입니다.*  
+ 참조 [icommand:: Execute](/previous-versions/windows/desktop/ms718095\(v=vs.85\)) 에 *OLE DB 프로그래머 참조입니다.*  
 
 ## <a name="execute"></a> Icommandimpl:: Execute
 명령을 실행합니다.  
@@ -194,7 +194,7 @@ HRESULT Execute(IUnknown* pUnkOuter,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [icommand:: Execute](https://msdn.microsoft.com/library/ms718095.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [icommand:: Execute](/previous-versions/windows/desktop/ms718095\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="remarks"></a>설명  
  요청 하는 송신 인터페이스에는이 함수에서 만들어지는 행 집합 개체에서 가져온 인터페이스가 됩니다.  
@@ -212,7 +212,7 @@ STDMETHOD (GetDBSession) (REFIID riid,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [ICommand::GetDBSession](https://msdn.microsoft.com/library/ms719622.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [ICommand::GetDBSession](/previous-versions/windows/desktop/ms719622\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="remarks"></a>설명  
  세션에서 속성을 검색 하는 데 유용 합니다.  

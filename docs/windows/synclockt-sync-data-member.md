@@ -17,29 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7fa3193e505480a0acb8616510d8c2cdbc4f5d94
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: d6f1c2f9aba65fd96603f966649d3ba62f25cde7
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40016355"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42612300"
 ---
 # <a name="synclocktsync-data-member"></a>SyncLockT::sync_ 데이터 멤버
-WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-typename SyncTraits::Type sync_;  
-```  
-  
-## <a name="remarks"></a>설명  
- 표시 되는 기본 리소스를 보유 합니다 **SyncLockT** 클래스입니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::Details  
-  
-## <a name="see-also"></a>참고 항목  
- [SyncLockT 클래스](../windows/synclockt-class.md)
+
+WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+typename SyncTraits::Type sync_;
+```
+
+## <a name="remarks"></a>설명
+
+표시 되는 기본 리소스를 보유 합니다 **SyncLockT** 클래스입니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::Details
+
+## <a name="see-also"></a>참고 항목
+
+[SyncLockT 클래스](../windows/synclockt-class.md)

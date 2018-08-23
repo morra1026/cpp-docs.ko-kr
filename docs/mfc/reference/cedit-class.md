@@ -104,12 +104,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e1521c73f92bbb941b1060cb5cf2051ead88ffb
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 45632fb870f1586453c2c591ef8edce23e625002
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339594"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541099"
 ---
 # <a name="cedit-class"></a>CEdit Class
 Windows 편집 컨트롤의 기능을 제공합니다.  
@@ -798,7 +798,7 @@ int LineLength(int nLine = -1) const;
 ### <a name="return-value"></a>반환 값  
  단일 줄 편집 컨트롤에 대 한 반환 값은 편집 컨트롤의 텍스트의 길이, TCHARs 합니다.  
   
- 여러 줄 편집 컨트롤에 대 한 반환 값은 지정 된 줄의 길이 TCHARs, 합니다 *n 줄* 매개 변수입니다. 에 대 한 [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)] 텍스트 줄에서 바이트 수가 길이가; 유니코드 텍스트 길이 줄의 문자 수입니다. 길이 줄의 끝에 캐리지 리턴 문자를 포함 되지 않습니다.  
+ 여러 줄 편집 컨트롤에 대 한 반환 값은 지정 된 줄의 길이 TCHARs, 합니다 *n 줄* 매개 변수입니다. ANSI 텍스트 길이; 줄에서 바이트 수 유니코드 텍스트는 길이 줄의 문자 수입니다. 길이 줄의 끝에 캐리지 리턴 문자를 포함 되지 않습니다.  
   
  경우는 *n 줄* 매개 변수를 사용 하는 컨트롤의 문자 수보다 더, 반환 값은 0입니다.  
   

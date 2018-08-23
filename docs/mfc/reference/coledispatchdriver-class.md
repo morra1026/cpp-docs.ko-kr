@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 927ac1c73bee38257396a98a7f7ce1487d0c134d
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 61e4a36db71809dab5603211dce91fad3eedd082
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026947"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42539146"
 ---
 # <a name="coledispatchdriver-class"></a>COleDispatchDriver 클래스
 OLE 자동화의 클라이언트 쪽을 구현합니다.  
@@ -106,7 +106,7 @@ class COleDispatchDriver
  **헤더:** afxdisp.h  
   
 ##  <a name="attachdispatch"></a>  COleDispatchDriver::AttachDispatch  
- `AttachDispatch` 멤버 함수를 호출하여 `IDispatch` 개체에 대한 `COleDispatchDriver` 포인터를 연결합니다. 자세한 내용은 [IDispatch 인터페이스 구현](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945)합니다.  
+ `AttachDispatch` 멤버 함수를 호출하여 `IDispatch` 개체에 대한 `COleDispatchDriver` 포인터를 연결합니다. 자세한 내용은 [IDispatch 인터페이스 구현](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)합니다.  
   
 ```  
 void AttachDispatch(
@@ -147,17 +147,17 @@ COleDispatchDriver(LPDISPATCH lpDispatch, BOOL bAutoRelease = TRUE);
  기존 참조 `COleDispatchDriver` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
- 폼 `COleDispatchDriver`( `LPDISPATCH lpDispatch`를 **BOOL**`bAutoRelease` = **TRUE**) 연결 된 [IDispatch](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945) 인터페이스입니다.  
+ 폼 `COleDispatchDriver`( `LPDISPATCH lpDispatch`를 **BOOL**`bAutoRelease` = **TRUE**) 연결 된 [IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) 인터페이스입니다.  
   
  폼 `COleDispatchDriver`( **const**`COleDispatchDriver`& `dispatchSrc`) 기존 복사 `COleDispatchDriver` 개체 및 참조 횟수를 증가 시킵니다.  
   
- 폼 `COleDispatchDriver`()를 만듭니다를 `COleDispatchDriver` 개체 있지만 연결 하지는 `IDispatch` 인터페이스입니다. 사용 하기 전에 `COleDispatchDriver`연결 해야 인수 없이 ()는 `IDispatch` 중 하나를 사용 하 여 [coledispatchdriver:: Createdispatch](#createdispatch) 하거나 [COleDispatchDriver::AttachDispatch](#attachdispatch)합니다. 자세한 내용은 [IDispatch 인터페이스 구현](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945)합니다.  
+ 폼 `COleDispatchDriver`()를 만듭니다를 `COleDispatchDriver` 개체 있지만 연결 하지는 `IDispatch` 인터페이스입니다. 사용 하기 전에 `COleDispatchDriver`연결 해야 인수 없이 ()는 `IDispatch` 중 하나를 사용 하 여 [coledispatchdriver:: Createdispatch](#createdispatch) 하거나 [COleDispatchDriver::AttachDispatch](#attachdispatch)합니다. 자세한 내용은 [IDispatch 인터페이스 구현](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)합니다.  
   
 ### <a name="example"></a>예  
   예를 참조 하세요 [coledispatchdriver:: Createdispatch](#createdispatch)합니다.  
   
 ##  <a name="createdispatch"></a>  Coledispatchdriver:: Createdispatch  
- 만듭니다는 [IDispatch](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945) 인터페이스 개체에 연결 하 고는 `COleDispatchDriver` 개체입니다.  
+ 만듭니다는 [IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) 인터페이스 개체에 연결 하 고는 `COleDispatchDriver` 개체입니다.  
   
 ```  
 BOOL CreateDispatch(
@@ -199,7 +199,7 @@ LPDISPATCH DetachDispatch();
 ### <a name="remarks"></a>설명  
  `IDispatch` 해제 되지 않습니다.  
   
- LPDISPATCH 유형에 대 한 자세한 내용은 참조 하세요. [IDispatch 인터페이스 구현](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945) Windows SDK에 있습니다.  
+ LPDISPATCH 유형에 대 한 자세한 내용은 참조 하세요. [IDispatch 인터페이스 구현](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) Windows SDK에 있습니다.  
   
 ### <a name="example"></a>예  
  [!code-cpp[NVC_MFCOleContainer#5](../../mfc/codesnippet/cpp/coledispatchdriver-class_3.cpp)]  
@@ -244,7 +244,7 @@ void AFX_CDECL InvokeHelper(
  호출할 메서드 또는 속성을 식별합니다.  
   
  *wflags에서*  
- 에 대 한 호출의 컨텍스트를 설명 하는 플래그 `IDispatch::Invoke`합니다. . 가능한 값 목록을 참조 하세요. 합니다 *wFlags* 에 매개 변수 [idispatch:: Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx) Windows SDK의 합니다.  
+ 에 대 한 호출의 컨텍스트를 설명 하는 플래그 `IDispatch::Invoke`합니다. . 가능한 값 목록을 참조 하세요. 합니다 *wFlags* 에 매개 변수 [idispatch:: Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) Windows SDK의 합니다.  
   
  *vtRet*  
  반환 값 형식을 지정합니다. 가능한 값은 설명 섹션을 참조하세요.  
@@ -281,9 +281,9 @@ void AFX_CDECL InvokeHelper(
   
  합니다 *pbParamInfo* 인수는 공백으로 구분 된 목록을 **VTS_** 상수입니다. 공백(쉼표가 아님)으로 구분된 이러한 값 중 하나 이상이 함수의 매개 변수 목록을 지정합니다. 가능한 값과 함께 나열 됩니다는 [EVENT_CUSTOM](event-maps.md#event_custom) 매크로입니다.  
   
- 이 함수 VARIANTARG 값을 매개 변수를 문자열로 변환한 다음 호출을 [idispatch:: Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx) 메서드. `Invoke` 호출에 실패하면 이 함수가 예외를 throw합니다. SCODE (상태 코드)에서 반환 하는 경우 `IDispatch::Invoke` DISP_E_EXCEPTION을를이 함수는 [COleException](../../mfc/reference/coleexception-class.md) throw이 고, 그렇지 않으면 개체를 [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).  
+ 이 함수 VARIANTARG 값을 매개 변수를 문자열로 변환한 다음 호출을 [idispatch:: Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) 메서드. `Invoke` 호출에 실패하면 이 함수가 예외를 throw합니다. SCODE (상태 코드)에서 반환 하는 경우 `IDispatch::Invoke` DISP_E_EXCEPTION을를이 함수는 [COleException](../../mfc/reference/coleexception-class.md) throw이 고, 그렇지 않으면 개체를 [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).  
   
- 자세한 내용은 [VARIANTARG](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118)를 [IDispatch 인터페이스 구현](http://msdn.microsoft.com/library/windows/desktop/ms221037\(v=vs.85\).aspx)를 [idispatch:: Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx), 및 [COM 오류 코드 구조](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK에에서 있습니다.  
+ 자세한 내용은 [VARIANTARG](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant)를 [IDispatch 인터페이스 구현](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)를 [idispatch:: Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke), 및 [COM 오류 코드 구조](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK에에서 있습니다.  
   
 ### <a name="example"></a>예  
   예를 참조 하세요 [coledispatchdriver:: Createdispatch](#createdispatch)합니다.  
@@ -313,7 +313,7 @@ LPDISPATCH m_lpDispatch;
 ### <a name="remarks"></a>설명  
  `m_lpDispatch` 데이터 멤버는 LPDISPATCH 형식의 공용 변수입니다.  
   
- 자세한 내용은 [IDispatch](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945) Windows SDK에 있습니다.  
+ 자세한 내용은 [IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) Windows SDK에 있습니다.  
   
 ### <a name="example"></a>예  
   예를 참조 하세요 [COleDispatchDriver::AttachDispatch](#attachdispatch)합니다.  
@@ -340,7 +340,7 @@ operator LPDISPATCH();
  [!code-cpp[NVC_MFCOleContainer#8](../../mfc/codesnippet/cpp/coledispatchdriver-class_6.cpp)]  
   
 ##  <a name="releasedispatch"></a>  COleDispatchDriver::ReleaseDispatch  
- 릴리스는 `IDispatch` 연결 합니다. 자세한 내용은 참조 하세요. [IDispatch 인터페이스 구현](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945)  
+ 릴리스는 `IDispatch` 연결 합니다. 자세한 내용은 참조 하세요. [IDispatch 인터페이스 구현](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)  
   
 ```  
 void ReleaseDispatch();

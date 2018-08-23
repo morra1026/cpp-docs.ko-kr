@@ -25,16 +25,16 @@ dev_langs:
 helpviewer_keywords:
 - Vector Class (C++/Cx)
 ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7433ed3d1a81704180aa724424a39d39b193f15
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 550a1e40d3fee80b4c9666457a60772ed49b580a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33092498"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590237"
 ---
 # <a name="platformcollectionsvector-class"></a>Platform::Collections::Vector 클래스
 
@@ -53,7 +53,7 @@ template <typename T, typename E>
 Vector 개체에 포함된 요소의 형식입니다.
 
 *E*  
-형식의 값으로 같음을 테스트 하기 위한 이진 조건자를 지정 *T*합니다. 기본값은 `std::equal_to<T>`입니다.
+형식의 값을 사용 하 여 같음을 테스트 하기 위한 이진 조건자를 지정 *T*합니다. 기본값은 `std::equal_to<T>`입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -69,9 +69,9 @@ Vector 개체에 포함된 요소의 형식입니다.
 
 1. public enum 클래스
 
-**벡터** 클래스의 구체적 c + + 구현이는 [Windows::Foundation::Collections::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_) 인터페이스입니다.
+합니다 **벡터** 클래스는 c + + 구체적 구현 합니다 [Windows::Foundation::Collections::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_) 인터페이스입니다.
 
-사용 하려는 경우는 **벡터** 입력 공용 반환 값 또는 매개 변수, 컴파일러 오류 c 3986이 발생 합니다. 매개 변수를 변경 하 여 오류를 해결 하거나 반환 값 형식을 수 [Windows::Foundation::Collections::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_)합니다. 자세한 내용은 [컬렉션(C++/CX)](../cppcx/collections-c-cx.md)을 참조하세요.
+사용 하려는 경우는 **벡터** 입력 공용 반환 값 또는 매개 변수, 컴파일러 오류 C3986이 발생 합니다. 값 형식을 반환 하거나 매개 변수를 변경 하 여 오류를 해결할 수 있습니다 [Windows::Foundation::Collections::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_)합니다. 자세한 내용은 [컬렉션(C++/CX)](../cppcx/collections-c-cx.md)을 참조하세요.
 
 ### <a name="members"></a>멤버
 
@@ -103,7 +103,7 @@ Vector 개체에 포함된 요소의 형식입니다.
 
 |||
 |-|-|
-|이름|설명|
+|name|설명|
 |이벤트 [Windows::Foundation::Collection::VectorChangedEventHandler\<T > ^ VectorChanged](http://go.microsoft.com/fwlink/p/?LinkId=262644)|Vector가 변경될 때 발생합니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
@@ -129,7 +129,7 @@ virtual void Append(T item);
 ### <a name="parameters"></a>매개 변수
 
 *index*  
-Vector에 삽입할 항목입니다. 유형의 *항목* 가 정의한는 *T* typename입니다.
+Vector에 삽입할 항목입니다. 유형의 *항목* 정의한 합니다 *T* typename입니다.
 
 ## <a name="clear"></a>  Vector:: clear 메서드
 
@@ -157,9 +157,9 @@ Vector의 첫 번째 요소를 가리키는 반복기입니다.
 
 ### <a name="remarks"></a>설명
 
-선언 된 변수에 반환 값을 할당 하는 First()에서 반환 된 반복기를 보유 하는 편리한 방법은 **자동** 형식 추론 키워드입니다. 예를 들어, `auto x = myVector->First();`을 입력합니다. 이 반복기는 컬렉션의 길이를 알고 있습니다.
+First ()에서 반환 된 반복기를 보유 하는 편리한 방법을 사용 하 여 선언 된 변수에 반환 값을 할당 하는 것은 **자동** 형식 추론 키워드입니다. 예를 들어, `auto x = myVector->First();`을 입력합니다. 이 반복기는 컬렉션의 길이를 알고 있습니다.
 
-STL 함수에 전달 하는 반복기 쌍이 필요한 경우 free 함수를 사용 하 여 [Windows::Foundation::Collections:: 시작](../cppcx/begin-function.md) 및 [Windows::Foundation::Collections::end](../cppcx/end-function.md)
+Free 함수를 사용 하 여 쌍의 반복기는 STL 함수에 전달할 경우 [Windows::Foundation::Collections:: begin](../cppcx/begin-function.md) 고 [Windows::Foundation::Collections::end](../cppcx/end-function.md)
 
 ## <a name="getat"></a>  Vector:: getat 메서드
 
@@ -178,7 +178,7 @@ Vector 개체의 특정 요소를 지정하는 0부터 시작하는 부호 없�
 
 ### <a name="return-value"></a>반환 값
 
-지정한 요소는 *인덱스* 매개 변수입니다. 요소 형식은 정의한는 *T* typename입니다.
+지정 하는 요소는 *인덱스* 매개 변수입니다. 요소 형식은 정의한 합니다 *T* typename입니다.
 
 ## <a name="getmany"></a>  Vector:: getmany 메서드
 
@@ -198,7 +198,7 @@ virtual unsigned int GetMany(
 검색할 항목 시작 부분의 0부터 시작하는 인덱스입니다.
 
 *dest*  
-로 지정 된 요소에서 시작 하는 항목의 호출자가 할당 한 배열 *startIndex* 벡터의 마지막 요소에서 끝나는 합니다.
+지정 하는 요소에서 시작 하는 항목의 호출자가 할당 한 배열 *startIndex* 벡터에서 마지막 요소에서 끝나는 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -206,7 +206,7 @@ virtual unsigned int GetMany(
 
 ### <a name="remarks"></a>설명
 
-이 함수는 클라이언트 코드에서 직접 사용하지 않습니다. 내부적으로 사용 되는 [to_vector 함수](../cppcx/to-vector-function.md) platform std:: vector 인스턴스로 효율적으로 변환할 수 있도록 합니다.
+이 함수는 클라이언트 코드에서 직접 사용하지 않습니다. 내부적으로 사용 되는 [to_vector 함수](../cppcx/to-vector-function.md) std:: vector 인스턴스로 효율적으로 변환 platform을 사용 하도록 설정 합니다.
 
 ## <a name="getview"></a>  Vector:: getview 메서드
 
@@ -240,7 +240,7 @@ virtual bool IndexOf(T value, unsigned int* index);
 *index*  
 항목의 인덱스 0부터 시작 하는 경우 매개 변수 *값* 이 고, 그렇지 않으면 0입니다.
 
-*인덱스* 매개 변수 0은 항목 벡터의 첫 번째 요소 이거나 항목을 찾을 수 없습니다. 반환 값이 `true`일 경우 항목을 찾았고 첫 번째 요소인 것이며, 그렇지 않으면 항목을 찾지 못한 것입니다.
+합니다 *인덱스* 매개 변수 0은 벡터의 첫 번째 요소인 항목 또는 항목을 찾을 수 없습니다. 반환 값이 `true`일 경우 항목을 찾았고 첫 번째 요소인 것이며, 그렇지 않으면 항목을 찾지 못한 것입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -266,7 +266,7 @@ virtual void InsertAt(unsigned int index, T item)
 Vector 개체의 특정 요소를 지정하는 0부터 시작하는 부호 없는 정수입니다.
 
 *item*  
-로 지정 된 요소 뒤에 Vector에 삽입할 항목 *인덱스*합니다. 유형의 *항목* 가 정의한는 *T* typename입니다.
+항목을 지정 하는 요소 뒤에 Vector에 삽입할 *인덱스*합니다. 유형의 *항목* 정의한 합니다 *T* typename입니다.
 
 ## <a name="removeat"></a>  Vector:: removeat 메서드
 
@@ -306,7 +306,7 @@ virtual void ReplaceAll(const ::Platform::Array<T>^ arr);
 ### <a name="parameters"></a>매개 변수
 
 *arr*  
-변수로 정의 된 개체의 배열에서 *T* typename입니다.
+형식이 정의한 개체의 배열을 합니다 *T* typename입니다.
 
 ## <a name="setat"></a>  Vector:: setat 메서드
 
@@ -324,7 +324,7 @@ virtual void SetAt(unsigned int index, T item);
 Vector 개체의 특정 요소를 지정하는 0부터 시작하는 부호 없는 정수입니다.
 
 *item*  
-지정된 요소에 할당할 값입니다. 유형의 *항목* 가 정의한는 *T* typename입니다.
+지정된 요소에 할당할 값입니다. 유형의 *항목* 정의한 합니다 *T* typename입니다.
 
 ## <a name="size"></a>  Vector:: size 메서드
 
@@ -366,16 +366,16 @@ Vector(std::initializer_list<T> il);
 ### <a name="parameters"></a>매개 변수
 
 *a*  
-A [std:: array](../standard-library/array-class-stl.md) Vector를 초기화 하는 데 사용 되어야 합니다.
+A [std:: array](../standard-library/array-class-stl.md) Vector를 초기화 하는 데 수 있습니다.
 
 *arr*  
-A [platform:: array](../cppcx/platform-array-class.md) Vector를 초기화 하는 데 사용 되어야 합니다.
+A [platform:: array](../cppcx/platform-array-class.md) Vector를 초기화 하는 데 수 있습니다.
 
 *InIt*  
 현재 Vector를 초기화하는 데 사용되는 개체 컬렉션의 형식입니다.
 
 *il*  
-A [std:: initializer_list](../standard-library/initializer-list-class.md) 형식 개체의 *T* Vector를 초기화 하는 데 사용 되어야 합니다.
+A [std:: initializer_list](../standard-library/initializer-list-class.md) 형식의 개체 *T* Vector를 초기화 하는 데 수 있습니다.
 
 *N*  
 현재 Vector를 초기화하는 데 사용되는 개체 컬렉션의 요소 수입니다.
@@ -393,10 +393,10 @@ Vector의 요소 수입니다.
 현재 Vector를 초기화하는 데 사용되는 `std::vector`에 대한 포인터입니다.
 
 *first*  
-현재 Vector를 초기화하는 데 사용되는 개체 시퀀스의 첫 번째 요소입니다. 유형의 *첫 번째* 방법으로 전달 *완벽 전달*합니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
+현재 Vector를 초기화하는 데 사용되는 개체 시퀀스의 첫 번째 요소입니다. 유형의 *첫 번째* 이용 하 여 전달 됩니다 *전달을 완벽*합니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
 
 *last*  
-현재 Vector를 초기화하는 데 사용되는 개체 시퀀스의 마지막 요소입니다. 유형의 *마지막* 방법으로 전달 *완벽 전달*합니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
+현재 Vector를 초기화하는 데 사용되는 개체 시퀀스의 마지막 요소입니다. 유형의 *마지막* 이용 하 여 전달 됩니다 *전달을 완벽*합니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

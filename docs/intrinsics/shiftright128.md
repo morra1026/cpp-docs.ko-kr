@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 393138916bf29fd9adb5dceb0b8612b576b84e76
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0aa5b4028863ff31084e8d01892a86b990de51fb
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33339724"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42538346"
 ---
 # <a name="shiftright128"></a>__shiftright128
 **Microsoft 전용**  
@@ -55,14 +55,14 @@ unsigned __int64 __shiftright128(
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__shiftright128`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__shiftright128`|X64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
  `Shift` 값은 항상 64로 나눈 나머지이므로 예를 들어 `__shiftright128(0, 1, 64)`를 호출하면 함수는 상위 부분의 `0`비트를 오른쪽으로 이동하고 일반적인 경우에 반환되는 `0`이 아닌 하위 부분 `1`을 반환합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  예를 들어 참조 [__shiftleft128](../intrinsics/shiftleft128.md)합니다.  
   
 **Microsoft 전용 종료**  

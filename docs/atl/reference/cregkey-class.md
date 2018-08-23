@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7804513c45de1951935e0fdf2fd485b9457e2a5e
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: b2f295b6bf54077ad131176092b06dbeca7a2201
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885300"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42571533"
 ---
 # <a name="cregkey-class"></a>CRegKey 클래스
 이 클래스는 시스템 레지스트리에서 항목을 조작 하기 위한 메서드를 제공 합니다.  
@@ -876,7 +876,7 @@ LONG SetStringValue(
  메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR에 정의 된 0이 아닌 오류 코드입니다. 8.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 [regsetvalueex에 오류가 발생](http://msdn.microsoft.com/library/windows/desktop/ms724923\(v=vs.85\).aspx) 레지스트리 값을 작성할 수 있습니다.  
+ 이 메서드는 [regsetvalueex에 오류가 발생](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) 레지스트리 값을 작성할 수 있습니다.  
   
 ##  <a name="setvalue"></a>  CRegKey::SetValue  
  지정 된 값 필드에 데이터를 저장 하려면이 메서드를 호출 [m_hKey](#m_hkey)합니다. 이 메서드의 이전 버전이 더 이상 지원 되지 않으며 ATL_DEPRECATED로 표시 됩니다.  

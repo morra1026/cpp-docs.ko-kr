@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17ec3560e7faf8c49f410437c79609bfb871a9c9
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 58772f3690a68dc3a0d22c2db863fc7ad4904a1c
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849951"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541674"
 ---
 # <a name="cmfcvisualmanagerwindows7-class"></a>CMFCVisualManagerWindows7 클래스
-`CMFCVisualManagerWindows7` 모양의 응용 프로그램에 제공 된 [!INCLUDE[win7](../../build/includes/win7_md.md)] 응용 프로그램입니다.  
+`CMFCVisualManagerWindows7` 응용 프로그램을 Windows 7 응용 프로그램의 모양을 제공 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -103,7 +103,7 @@ class CMFCVisualManagerWindows7 : public CMFCVisualManagerWindows;
 |`CMFCVisualManagerWindows7::SetStyle`|설정의 색 구성표를 `CMFCVisualManagerWindows7` GUI입니다.|  
   
 ## <a name="remarks"></a>설명  
- 사용 된 `CMFCVisualManagerWindows7` 기본값을 모방 하기 위해 응용 프로그램의 모양을 변경 하는 클래스 [!INCLUDE[win7](../../build/includes/win7_md.md)] 응용 프로그램입니다. 이 클래스는 버전의 Windows에서 응용 프로그램 실행 중인 경우에 유효 하지 않을 이전의 [!INCLUDE[win7](../../build/includes/win7_md.md)]합니다. 이 시나리오에서는 응용 프로그램에 정의 된 기본 비주얼 관리자를 사용 [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md)합니다.  
+ 사용 된 `CMFCVisualManagerWindows7` 기본 Windows 7 응용 프로그램을 모방 하기 위해 응용 프로그램의 모양을 변경 하는 클래스입니다. 이 클래스는 응용 프로그램은 Windows 7 이전 버전의 Windows에서 실행 중인 경우에 유효 하지 않을 수 있습니다. 이 시나리오에서는 응용 프로그램에 정의 된 기본 비주얼 관리자를 사용 [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md)합니다.  
   
  CMFCVisualManagerWindows7를 둘 다에서 여러 메서드를 상속 합니다 [CMFCVisualManagerWindows 클래스](../../mfc/reference/cmfcvisualmanagerwindows-class.md) 및 `CMFCVisualManager` 클래스입니다. 이전 섹션에 나열 된 메서드는 메서드를 처음 사용 하 여 `CMFCVisualManagerWindows7` 클래스입니다.  
   

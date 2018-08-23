@@ -128,17 +128,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fdf57093ff1feeccc0f805bee197959dd4fb453b
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: c0e5fe8c9f9eb5f4d09bac28c4ffed3eda95454c
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37123073"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540109"
 ---
 # <a name="cwinappex-class"></a>CWinAppEx 클래스
-`CWinAppEx` 응용 프로그램 상태를 처리, 레지스트리에 상태를 저장, 레지스트리에서 상태를 로드, 응용 프로그램 관리자를 초기화 및 이러한 동일한 응용 프로그램 관리자에 대 한 링크를 제공 합니다.  
+`CWinAppEx` 응용 프로그램 상태를 처리, 상태를 레지스트리에 저장, 레지스트리에서 상태를 로드, 응용 프로그램 관리자를 초기화 및 이러한 동일한 응용 프로그램 관리자에 대 한 링크를 제공 합니다.  
   
-   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
 ## <a name="syntax"></a>구문  
   
 ```  
@@ -158,27 +158,27 @@ class CWinAppEx : public CWinApp
 |이름|설명|  
 |----------|-----------------|  
 |[CWinAppEx::CleanState](#cleanstate)|Windows 레지스트리에서 응용 프로그램에 대 한 정보를 제거합니다.|  
-|[CWinAppEx::EnableLoadWindowPlacement](#enableloadwindowplacement)|여부를 응용 프로그램에서에서 로드 합니다 초기 크기와 위치는 주 프레임 창의 레지스트리를 지정 합니다.|  
-|[CWinAppEx::EnableTearOffMenus](#enabletearoffmenus)|사용 하도록 설정 분리 메뉴는 응용 프로그램에 대 한 합니다.|  
-|[CWinAppEx::EnableUserTools](#enableusertools)|사용자를 응용 프로그램에서 사용자 지정 메뉴 명령을 만들 수 있습니다.|  
-|[CWinAppEx::ExitInstance](#exitinstance)|내에서 프레임 워크에서 호출 된 `Run` 멤버 함수를 응용 프로그램의이 인스턴스를 종료 합니다. (재정의 [CWinApp::ExitInstance](../../mfc/reference/cwinapp-class.md#exitinstance).)|  
-|[CWinAppEx::GetBinary](#getbinary)|지정 된 레지스트리 값과 연결 된 이진 데이터를 읽습니다.|  
+|[CWinAppEx::EnableLoadWindowPlacement](#enableloadwindowplacement)|로드할 수 있는지 여부를 응용 프로그램은 초기 크기와 주 프레임 창의 위치를 레지스트리에서 지정 합니다.|  
+|[CWinAppEx::EnableTearOffMenus](#enabletearoffmenus)|수 있도록 분리 메뉴 응용 프로그램입니다.|  
+|[CWinAppEx::EnableUserTools](#enableusertools)|응용 프로그램에서 사용자 지정 메뉴 명령을 만들 수 있습니다.|  
+|[CWinAppEx::ExitInstance](#exitinstance)|프레임 워크에서 호출을 `Run` 멤버 함수는 응용 프로그램의이 인스턴스를 종료 합니다. (재정의 [CWinApp::ExitInstance](../../mfc/reference/cwinapp-class.md#exitinstance).)|  
+|[CWinAppEx::GetBinary](#getbinary)|지정 된 레지스트리 값을 사용 하 여 연결 된 이진 데이터를 읽습니다.|  
 |[CWinAppEx::GetContextMenuManager](#getcontextmenumanager)|전역에 대 한 포인터를 반환 [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) 개체입니다.|  
 |[CWinAppEx::GetDataVersion](#getdataversion)||  
-|[CWinAppEx::GetDataVersionMajor](#getdataversionmajor)|Windows 레지스트리에 저장 하는 응용 프로그램의 주 버전을 반환 합니다.|  
-|[CWinAppEx::GetDataVersionMinor](#getdataversionminor)|Windows 레지스트리에 저장 된 응용 프로그램의 부 버전을 반환 합니다.|  
-|[CWinAppEx::GetInt](#getint)|레지스트리에서 지정된 된 값과 연관 된 숫자 데이터를 읽습니다.|  
+|[CWinAppEx::GetDataVersionMajor](#getdataversionmajor)|Windows 레지스트리에 저장 응용 프로그램의 주 버전을 반환 합니다.|  
+|[CWinAppEx::GetDataVersionMinor](#getdataversionminor)|Windows 레지스트리에 저장 응용 프로그램의 부 버전을 반환 합니다.|  
+|[CWinAppEx::GetInt](#getint)|레지스트리에서 지정된 된 값을 사용 하 여 연결 된 숫자 데이터를 읽습니다.|  
 |[CWinAppEx::GetKeyboardManager](#getkeyboardmanager)|전역에 대 한 포인터를 반환 [CKeyboardManager](../../mfc/reference/ckeyboardmanager-class.md) 개체입니다.|  
 |[CWinAppEx::GetMouseManager](#getmousemanager)|전역에 대 한 포인터를 반환 [CMouseManager](../../mfc/reference/cmousemanager-class.md) 개체입니다.|  
-|[CWinAppEx::GetObject](#getobject)|읽고 `CObject`-레지스트리에서 지정 된 값과 연결 된 데이터를 파생 합니다.|  
-|[CWinAppEx::GetRegSectionPath](#getregsectionpath)|레지스트리 키의 경로 문자열을 반환 합니다. 이 경로 제공 된 상대 경로와 응용 프로그램 경로 연결합니다.|  
+|[CWinAppEx::GetObject](#getobject)|읽고 `CObject`-레지스트리에서 지정된 된 값을 사용 하 여 연결 된 데이터를 파생 합니다.|  
+|[CWinAppEx::GetRegSectionPath](#getregsectionpath)|레지스트리 키의 경로 문자열을 반환 합니다. 이 경로 응용 프로그램 경로 사용 하 여 제공 된 상대 경로 연결합니다.|  
 |[CWinAppEx::GetRegistryBase](#getregistrybase)|응용 프로그램에 대 한 레지스트리 경로 반환합니다.|  
-|[CWinAppEx::GetSectionBinary](#getsectionbinary)|지정한 키와 값의 레지스트리에서 연관 된 이진 데이터를 읽습니다.|  
-|[CWinAppEx::GetSectionInt](#getsectionint)|지정한 키와 값와 관련 된 레지스트리에서 숫자 데이터를 읽습니다.|  
+|[CWinAppEx::GetSectionBinary](#getsectionbinary)|지정 된 키와 레지스트리 값을 사용 하 여 연결 된 이진 데이터를 읽습니다.|  
+|[CWinAppEx::GetSectionInt](#getsectionint)|연결 된 지정 된 키와 값을 레지스트리에서 숫자 데이터를 읽습니다.|  
 |[CWinAppEx::GetSectionObject](#getsectionobject)|읽고 `CObject` 값 레지스트리에서 지정 된 키와 연결 된 데이터입니다.|  
-|[CWinAppEx::GetSectionString](#getsectionstring)|지정 된 키와 값 레지스트리에서 연결 문자열 데이터를 읽습니다.|  
+|[CWinAppEx::GetSectionString](#getsectionstring)|지정 된 키와 레지스트리 값을 사용 하 여 연결 된 문자열 데이터를 읽습니다.|  
 |[CWinAppEx::GetShellManager](#getshellmanager)|전역에 대 한 포인터를 반환 [CShellManager](../../mfc/reference/cshellmanager-class.md) 개체입니다.|  
-|[CWinAppEx::GetString](#getstring)|레지스트리에서 지정된 된 값과 연관 된 문자열 데이터를 읽습니다.|  
+|[CWinAppEx::GetString](#getstring)|레지스트리에서 지정된 된 값을 사용 하 여 연결 된 문자열 데이터를 읽습니다.|  
 |[CWinAppEx::GetTooltipManager](#gettooltipmanager)|전역에 대 한 포인터를 반환 [CTooltipManager](../../mfc/reference/ctooltipmanager-class.md) 개체입니다.|  
 |[CWinAppEx::GetUserToolsManager](#getusertoolsmanager)|전역에 대 한 포인터를 반환 [CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md) 개체입니다.|  
 |[CWinAppEx::InitContextMenuManager](#initcontextmenumanager)|초기화는 `CContextMenuManager` 개체입니다.|  
@@ -189,48 +189,48 @@ class CWinAppEx : public CWinApp
 |[CWinAppEx::IsResourceSmartUpdate](#isresourcesmartupdate)||  
 |[CWinAppEx::IsStateExists](#isstateexists)|레지스트리에 지정된 된 키가 있는지 여부를 나타냅니다.|  
 |[CWinAppEx::LoadState](#loadstate)|레지스트리에서 응용 프로그램 상태를 로드합니다.|  
-|[CWinAppEx::OnAppContextHelp](#onappcontexthelp)|사용자에 대 한 상황에 맞는 도움말을 요청 하면 프레임 워크에서 호출 된 **사용자 지정** 대화 상자.|  
-|[CWinAppEx::OnViewDoubleClick](#onviewdoubleclick)|사용자가 응용 프로그램에서 아무 곳 이나 사용자 정의 명령을 호출 합니다.|  
+|[CWinAppEx::OnAppContextHelp](#onappcontexthelp)|사용자에 대 한 상황에 맞는 도움말을 요청 하는 경우 프레임 워크에서 호출 된 **사용자 지정** 대화 상자.|  
+|[CWinAppEx::OnViewDoubleClick](#onviewdoubleclick)|사용자가 응용 프로그램에서 아무 곳 이나 두 번 클릭할 때 사용자 정의 명령을 호출 합니다.|  
 |[CWinAppEx::OnWorkspaceIdle](#onworkspaceidle)||  
-|[CWinAppEx::SaveState](#savestate)|응용 프로그램 프레임 워크의 상태를 Windows 레지스트리에 씁니다.|  
-|[CWinAppEx::SetRegistryBase](#setregistrybase)|기본 레지스트리 키의 경로 설정 합니다. 이 키는 모든 후속 레지스트리 호출에 대 한 루트도 사용 될 합니다.|  
+|[CWinAppEx::SaveState](#savestate)|Windows 레지스트리에 응용 프로그램 프레임 워크의 상태를 씁니다.|  
+|[CWinAppEx::SetRegistryBase](#setregistrybase)|기본 레지스트리 키의 경로 설정합니다. 이 키는 모든 후속 레지스트리 호출에 대 한 루트로 사용 됩니다.|  
 |[CWinAppEx::ShowPopupMenu](#showpopupmenu)|팝업 메뉴를 표시합니다.|  
-|[CWinAppEx::WriteBinary](#writebinary)|지정된 된 레지스트리 값을 이진 데이터를 씁니다.|  
+|[CWinAppEx::WriteBinary](#writebinary)|지정 된 레지스트리 값으로 이진 데이터를 씁니다.|  
 |[CWinAppEx::WriteInt](#writeint)|지정 된 레지스트리 값으로 숫자 데이터를 씁니다.|  
-|[CWinAppEx::WriteObject](#writeobject)|파생 된 데이터에 기록 된 [CObject 클래스](../../mfc/reference/cobject-class.md) 지정된 된 레지스트리 값을 합니다.|  
-|[CWinAppEx::WriteSectionBinary](#writesectionbinary)|지정된 된 레지스트리 키의 값에 이진 데이터를 씁니다.|  
-|[CWinAppEx::WriteSectionInt](#writesectionint)|지정된 된 레지스트리 키의 값에 숫자 데이터를 씁니다.|  
-|[CWinAppEx::WriteSectionObject](#writesectionobject)|파생 된 데이터를 쓰는 `CObject` 지정된 된 레지스트리 키의 값으로 클래스입니다.|  
-|[CWinAppEx::WriteSectionString](#writesectionstring)|지정된 된 레지스트리 키의 값에 문자열 데이터를 씁니다.|  
-|[CWinAppEx::WriteString](#writestring)|지정 된 레지스트리 값에 문자열 데이터를 씁니다.|  
+|[CWinAppEx::WriteObject](#writeobject)|파생 되는 데이터를 기록 합니다 [CObject 클래스](../../mfc/reference/cobject-class.md) 지정 된 레지스트리 값입니다.|  
+|[CWinAppEx::WriteSectionBinary](#writesectionbinary)|지정된 된 레지스트리 키의 값으로 이진 데이터를 씁니다.|  
+|[CWinAppEx::WriteSectionInt](#writesectionint)|지정된 된 레지스트리 키의 값으로 숫자 데이터를 씁니다.|  
+|[CWinAppEx::WriteSectionObject](#writesectionobject)|파생 된 데이터를 기록 합니다 `CObject` 지정된 된 레지스트리 키의 값으로 클래스입니다.|  
+|[CWinAppEx::WriteSectionString](#writesectionstring)|지정된 된 레지스트리 키의 값으로 문자열 데이터를 씁니다.|  
+|[CWinAppEx::WriteString](#writestring)|지정 된 레지스트리 값으로 문자열 데이터를 씁니다.|  
   
 ### <a name="protected-methods"></a>보호된 메서드  
   
 |이름|설명|  
 |----------|-----------------|  
 |[CWinAppEx::LoadCustomState](#loadcustomstate)|응용 프로그램 상태가 로드 되었을 때 프레임 워크에서 호출 됩니다.|  
-|[CWinAppEx::LoadWindowPlacement](#loadwindowplacement)|레지스트리에서 응용 프로그램의 위치와 크기를 로드할 때 프레임 워크에서 호출 됩니다. 로드 된 데이터 크기와 위치는 주 프레임의 마지막으로 닫은 응용 프로그램 시간에 포함 합니다.|  
-|[CWinAppEx::OnClosingMainFrame](#onclosingmainframe)|주 프레임 창이 WM_CLOSE를 처리할 때 프레임 워크에서 호출 됩니다.|  
+|[CWinAppEx::LoadWindowPlacement](#loadwindowplacement)|레지스트리에서 응용 프로그램의 위치와 크기를 로드할 때 프레임 워크에서 호출 됩니다. 로드 된 데이터는 응용 프로그램을 마지막으로 닫을 때 크기 및 주 프레임의 위치를 포함 합니다.|  
+|[CWinAppEx::OnClosingMainFrame](#onclosingmainframe)|주 프레임 창이 WM_CLOSE 처리할 때 프레임 워크에서 호출 됩니다.|  
 |[CWinAppEx::PreLoadState](#preloadstate)|바로 전에 프레임 워크에서 호출 응용 프로그램 상태가 로드 됩니다.|  
-|[CWinAppEx::PreSaveState](#presavestate)|바로 전에 프레임 워크에서 호출 응용 프로그램 상태 저장 됩니다.|  
+|[CWinAppEx::PreSaveState](#presavestate)|바로 전에 프레임 워크에서 호출 응용 프로그램 상태에 저장 됩니다.|  
 |[CWinAppEx::ReloadWindowPlacement](#reloadwindowplacement)|레지스트리에서 제공 된 창의 위치와 크기를 다시 로드|  
-|[CWinAppEx::SaveCustomState](#savecustomstate)|레지스트리에 응용 프로그램 상태를 쓴 후에 프레임 워크에서 호출 합니다.|  
-|[CWinAppEx::StoreWindowPlacement](#storewindowplacement)|레지스트리에 주 프레임의 위치와 크기를 작성 하기 위해 프레임 워크에서 호출 됩니다.|  
+|[CWinAppEx::SaveCustomState](#savecustomstate)|응용 프로그램 상태를 레지스트리에 쓴 후 프레임 워크에서 호출 됩니다.|  
+|[CWinAppEx::StoreWindowPlacement](#storewindowplacement)|주 프레임의 위치와 크기를 레지스트리에 쓸 하기 위해 프레임 워크에서 호출 됩니다.|  
   
 ### <a name="data-members"></a>데이터 멤버  
   
 |name|설명|  
 |----------|-----------------|  
-|[CWinAppEx::m_bForceImageReset](#m_bforceimagereset)|도구 모음을 포함 하는 프레임 창을 로드 될 때 프레임 워크에서 모든 도구 모음 이미지를 다시 됩니다 있는지 여부를 지정 합니다.|  
+|[CWinAppEx::m_bForceImageReset](#m_bforceimagereset)|프레임 창 도구 모음을 포함 하는 로드 될 때 프레임 워크에서 모든 도구 모음 이미지를 다시는 여부를 지정 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 대부분의 MFC 프레임 워크에서 제공 하는 기능에 따라 달라 집니다는 `CWinAppEx` 클래스입니다. 통합할 수 있습니다는 `CWinAppEx` 두 가지 방법 중 하나에서 응용 프로그램에 클래스:  
+ MFC 프레임 워크에서 제공 하는 기능에 크게 좌우 합니다 `CWinAppEx` 클래스입니다. 통합할 수는 `CWinAppEx` 두 가지 방법 중 하나에서 응용 프로그램에 클래스:  
   
 -   생성 된 `CWinAppEx` 주 스레드의 클래스입니다.  
   
 -   기본 응용 프로그램 클래스를 파생 `CWinAppEx`합니다.  
   
- 통합 후 `CWinAppEx` 응용 프로그램에 응용 프로그램 관리자 중 하나를 초기화할 수 있습니다. 응용 프로그램 관리자를 사용 하기 전에 적절 한 initialize 메서드를 호출 하 여 초기화 해야 합니다. 특정 관리자에 대 한 포인터를 얻으려면 관련된 get 메서드를 호출 합니다. `CWinAppEx` 클래스 관리는 다음과 같은 응용 프로그램 관리자: [CMouseManager 클래스](../../mfc/reference/cmousemanager-class.md), [CContextMenuManager 클래스](../../mfc/reference/ccontextmenumanager-class.md), [CKeyboardManager 클래스](../../mfc/reference/ckeyboardmanager-class.md), [ CUserToolsManager 클래스](../../mfc/reference/cusertoolsmanager-class.md), 및 [CMenuTearOffManager 클래스](../../mfc/reference/cmenutearoffmanager-class.md)합니다.  
+ 통합 후 `CWinAppEx` 응용 프로그램에 응용 프로그램 관리자 중 하나를 초기화할 수 있습니다. 응용 프로그램 관리자를 사용 하기 전에 적절 한 initialize 메서드를 호출 하 여 초기화 해야 합니다. 특정 관리자에 대 한 포인터를 얻으려면 관련된 get 메서드를 호출 합니다. `CWinAppEx` 클래스에 다음 응용 프로그램 관리자는 관리: [CMouseManager 클래스](../../mfc/reference/cmousemanager-class.md), [CContextMenuManager 클래스](../../mfc/reference/ccontextmenumanager-class.md)를 [CKeyboardManager 클래스](../../mfc/reference/ckeyboardmanager-class.md)합니다 [ CUserToolsManager 클래스](../../mfc/reference/cusertoolsmanager-class.md), 및 [CMenuTearOffManager 클래스](../../mfc/reference/cmenutearoffmanager-class.md)합니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -258,10 +258,10 @@ virtual BOOL CleanState(LPCTSTR lpszSectionName=NULL);
  레지스트리 키의 경로 포함 하는 문자열입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 0이 아닌 그렇지 않으면 0입니다.  
+ 메서드가 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 레지스트리의 특정 섹션에서 응용 프로그램 데이터를 지웁니다. 매개 변수를 사용 하 여 지울 섹션을 지정할 수 있습니다 *lpszSectionName*합니다. 경우 *lpszSectionName* 가 null 인 경우이 메서드는에 저장 된 기본 레지스트리 경로 사용 하면는 `CWinAppEx` 개체입니다. 기본 레지스트리 경로 가져오려면 [CWinAppEx::GetRegistryBase](#getregistrybase)합니다.  
+ 이 메서드는 레지스트리의 특정 섹션에서 응용 프로그램 데이터를 지웁니다. 매개 변수를 사용 하 여 선택을 취소 하려면 섹션을 지정할 수 있습니다 *lpszSectionName*합니다. 하는 경우 *lpszSectionName* 가 null 인 경우에 저장 된 기본 레지스트리 경로 사용 하면이 메서드는 `CWinAppEx` 개체입니다. 기본 레지스트리 경로 가져오려면 [CWinAppEx::GetRegistryBase](#getregistrybase)합니다.  
   
 ##  <a name="cwinappex"></a>  CWinAppEx::CWinAppEx  
  `CWinAppEx` 개체를 생성합니다.  
@@ -272,13 +272,13 @@ CWinAppEx(BOOL bResourceSmartUpdate = FALSE);
   
 ### <a name="parameters"></a>매개 변수  
  [in] *bResourceSmartUpdate*  
- 작업 영역 개체를 검색 하 고 리소스 업데이트를 처리 해야 하는지 여부를 지정 하는 부울 매개 변수입니다.  
+ Workspace 개체 검색 하 고 리소스 업데이트를 처리 해야 하는지 여부를 지정 하는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
- `CWinAppEx` 클래스에 초기화 메서드가 저장 하 고 응용 프로그램 정보를 레지스트리에 로드에 대 한 기능을 제공 하 고 전역 응용 프로그램 설정을 제어 합니다. 와 같은 전역 관리자를 사용할 수도 있습니다는 [CKeyboardManager 클래스](../../mfc/reference/ckeyboardmanager-class.md) 및 [CUserToolsManager 클래스](../../mfc/reference/cusertoolsmanager-class.md)합니다. 각 응용 프로그램의 인스턴스가 하나만 있을 수는 `CWinAppEx` 클래스입니다.  
+ `CWinAppEx` 클래스 초기화 메서드가 레지스트리에 응용 프로그램 정보를 로드 및 저장에 대 한 기능을 제공 하 고 전역 응용 프로그램 설정을 제어 합니다. 있도록와 같은 전역 관리자를 사용 하는 [CKeyboardManager 클래스](../../mfc/reference/ckeyboardmanager-class.md) 하며 [CUserToolsManager 클래스](../../mfc/reference/cusertoolsmanager-class.md)합니다. 각 응용 프로그램에는 하나의 인스턴스만 가질 수는 `CWinAppEx` 클래스입니다.  
   
 ##  <a name="enableloadwindowplacement"></a>  CWinAppEx::EnableLoadWindowPlacement  
- 여부를 응용 프로그램에서에서 로드 합니다 초기 크기와 위치는 주 프레임 창의 레지스트리를 지정 합니다.  
+ 로드할 수 있는지 여부를 응용 프로그램은 초기 크기와 주 프레임 창의 위치를 레지스트리에서 지정 합니다.  
   
 ```  
 void EnableLoadWindowPlacement(BOOL bEnable = TRUE);
@@ -289,10 +289,10 @@ void EnableLoadWindowPlacement(BOOL bEnable = TRUE);
  응용 프로그램의 초기 크기와 주 프레임 창 위치 레지스트리에서 로드 하는지 여부를 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
- 기본적으로 크기와 위치는 주 프레임의 다른 응용 프로그램 설정과 함께 레지스트리에서 로드 됩니다. 동안이 오류가 발생 [CWinAppEx::LoadState](#loadstate)합니다. 레지스트리에서 초기 창 배치를 로드 하지 않을 경우이 메서드를 호출 *bEnable* FALSE로 설정 합니다.  
+ 기본적으로 주 프레임의 위치와 크기는 다른 응용 프로그램 설정과 함께 레지스트리에서 로드 됩니다. 하는 동안 이런 [CWinAppEx::LoadState](#loadstate)합니다. 레지스트리에서 초기 창 배치를 로드 하려면이 메서드를 호출 *bEnable* FALSE로 설정 합니다.  
   
 ##  <a name="enabletearoffmenus"></a>  CWinAppEx::EnableTearOffMenus  
- 만들고 초기화는 [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) 개체입니다.  
+ 만들고 초기화 된 [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) 개체입니다.  
   
 ```  
 BOOL EnableTearOffMenus(
@@ -303,22 +303,22 @@ BOOL EnableTearOffMenus(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *lpszRegEntry*  
- 레지스트리 키의 경로 포함 하는 문자열입니다. 응용 프로그램이이 레지스트리 키를 사용 하 여 분리 메뉴에 대 한 정보를 저장 합니다.  
+ 레지스트리 키의 경로 포함 하는 문자열입니다. 이 레지스트리 키를 사용 하 여 분리 메뉴에 대 한 정보를 저장 하는 응용 프로그램.  
   
  [in] *uiCmdFirst*  
- 첫 번째 데 메뉴가 도구 모음 id입니다.  
+ 첫 번째 삭제 메뉴 id입니다.  
   
  [in] *uiCmdLast*  
  메뉴 마지막 삭제 id입니다.  
   
 ### <a name="return-value"></a>반환 값  
- TRUE 이면은 `CMenuTearOffManager` 만들어지고 초기화 되었습니다. FALSE 오류가 발생 하거나는 `CMenuTearOffManager` 이미 있습니다.  
+ True는 `CMenuTearOffManager` 만들어지고 초기화 되었습니다. FALSE 오류가 발생 하거나는 `CMenuTearOffManager` 이미 있습니다.  
   
 ### <a name="remarks"></a>설명  
  이 함수를 사용 하 여 응용 프로그램에서 분리 메뉴를 사용 하도록 설정 합니다. 이 함수를 호출 해야 `InitInstance`합니다.  
   
 ##  <a name="enableusertools"></a>  CWinAppEx::EnableUserTools  
- 사용자를 응용 프로그램에서 키 입력을 축소 하는 사용자 지정 메뉴 명령을 만들 수 있습니다. 이 메서드가 만드는 [CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md) 개체입니다.  
+ 응용 프로그램에서 키 입력을 줄이는 사용자 지정 메뉴 명령을 만들 수 있습니다. 이 메서드를 만듭니다는 [CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md) 개체입니다.  
   
 ```  
 BOOL EnableUserTools(
@@ -332,7 +332,7 @@ BOOL EnableUserTools(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *uiCmdToolsDummy*  
- 프레임 워크 사용자 도구 메뉴의 명령 ID에 대 한 자리 표시자로 사용 하는 부호 없는 정수입니다.  
+ 프레임 워크는 사용자 도구 메뉴의 명령 ID에 대 한 자리 표시자로 사용 하는 부호 없는 정수입니다.  
   
  [in] *uiCmdFirst*  
  첫 번째 사용자 도구 명령에 대 한 명령 ID입니다.  
@@ -341,7 +341,7 @@ BOOL EnableUserTools(
  마지막 사용자 도구 명령에 대 한 명령 ID입니다.  
   
  [in] *pToolRTC*  
- A는 클래스는 `CUserToolsManager` 개체가 사용 하 여 새 사용자 도구를 만듭니다.  
+ 클래스는 `CUserToolsManager` 개체가 사용 하 여 새 사용자 도구를 만듭니다.  
   
  [in] *uArgMenuID*  
  인수 메뉴 id입니다.  
@@ -350,14 +350,14 @@ BOOL EnableUserTools(
  초기 도구 디렉터리에 대 한 메뉴 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 메서드를 만들고 초기화 하는 경우 TRUE를 `CUserToolsManager` 개체 FALSE 메서드가 실패 하거나 경우는 `CUserToolsManager` 개체가 이미 있습니다.  
+ 메서드를 만들고 초기화 하는 경우 TRUE를 `CUserToolsManager` 개체 FALSE 경우 또는 메서드가 실패 하는 경우는 `CUserToolsManager` 개체가 이미 있습니다.  
   
 ### <a name="remarks"></a>설명  
- 사용자 정의 도구를 사용 하도록 설정 하면 프레임 워크는 자동으로 사용자 지정 하는 동안 확장 될 수 있는 동적 메뉴를 지원 합니다. 프레임 워크 외부 명령을 새 각 항목에 연결합니다. 프레임 워크에서 적절 한 항목을 선택할 때 이러한 명령을 호출 하는 **도구** 메뉴.  
+ 사용자 정의 도구를 사용 하면 프레임 워크는 자동으로 사용자 지정 하는 동안 확장 될 수 있는 동적 메뉴를 지원 합니다. 프레임 워크는 외부 명령을 사용 하 여 각 새 항목을 연결합니다. 프레임 워크에서 적절 한 항목을 선택할 때 이러한 명령을 호출 합니다 **도구** 메뉴.  
   
- 사용자가 새 항목에 추가 될 때마다 프레임 워크에는 새 개체를 만듭니다. 새 개체에 대 한 클래스 형식을 정의한 *pToolRTC*합니다. *pToolRTC* 클래스 형식에서 파생 되어야 합니다는 [CUserTool 클래스](../../mfc/reference/cusertool-class.md)합니다.  
+ 사용자가 새 항목에 추가 될 때마다 프레임 워크에는 새 개체를 만듭니다. 새 개체의 클래스 형식을 정의한 *pToolRTC*합니다. 합니다 *pToolRTC* 클래스 형식에서 파생 되어야 합니다 [CUserTool 클래스](../../mfc/reference/cusertool-class.md)합니다.  
   
- 사용자 도구 및 응용 프로그램에 통합 하는 방법에 대 한 자세한 내용은 참조 [사용자 정의 도구](../../mfc/user-defined-tools.md)합니다.  
+ 사용자 도구 및 응용 프로그램에 통합 하는 방법에 대 한 자세한 내용은 참조 하십시오 [사용자 정의 도구](../../mfc/user-defined-tools.md)합니다.  
   
 ##  <a name="exitinstance"></a>  CWinAppEx::ExitInstance  
 
@@ -385,18 +385,18 @@ BOOL GetBinary(
  레지스트리 키의 이름을 포함 하는 문자열입니다.  
   
  [out] *ppData*  
- 이진 데이터로 채워지는 버퍼에 대 한 포인터입니다.  
+ 메서드는 이진 데이터를 채우는 버퍼에 대 한 포인터입니다.  
   
  [out] *pBytes*  
- 읽은 바이트 수를 작성 하는 메서드에서 사용 하는 부호 없는 정수에 대 한 포인터입니다.  
+ 읽은 바이트 수를 쓴 메서드를 사용 하는 부호 없는 정수에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 성공 하면 FALSE 그렇지 않은 경우.  
+ 성공 하면 FALSE이 고, 그렇지 합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 레지스트리에 기록 된 이진 데이터를 읽습니다. 레지스트리 데이터를 쓰려고 메서드를 사용 하 여 [CWinAppEx::WriteBinary](#writebinary) 및 [CWinAppEx::WriteSectionBinary](#writesectionbinary)합니다.  
+ 이 메서드는 레지스트리에 기록 된 이진 데이터를 읽습니다. 메서드를 사용 하 여 레지스트리 데이터를 쓸 [CWinAppEx::WriteBinary](#writebinary) 하 고 [CWinAppEx::WriteSectionBinary](#writesectionbinary)합니다.  
   
- *lpszEntry* 매개 변수는 응용 프로그램에 대 한 기본 레지스트리 키 아래에 있는 레지스트리 항목의 이름입니다. 를 가져오거나 기본 레지스트리 키를 설정 하려면 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 및 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
+ 합니다 *lpszEntry* 매개 변수는 응용 프로그램에 대 한 기본 레지스트리 키 아래에 레지스트리 항목의 이름입니다. 가져오거나 설정할 기본 레지스트리 키, 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 하 고 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
   
 ##  <a name="getcontextmenumanager"></a>  CWinAppEx::GetContextMenuManager  
  전역에 대 한 포인터를 반환 [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) 개체입니다.  
@@ -409,7 +409,7 @@ CContextMenuManager* GetContextMenuManager();
  전역에 대 한 포인터 `CContextMenuManager` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 함수를 호출 하는 CContextMenuManager 개체가 초기화 되지 않은 경우 [CWinAppEx::InitContextMenuManager](#initcontextmenumanager) 대 한 포인터를 반환 하기 전에.  
+ CContextMenuManager 개체 초기화 되지 않은 경우이 함수 호출 [CWinAppEx::InitContextMenuManager](#initcontextmenumanager) 대 한 포인터를 반환 하기 전에 합니다.  
   
 ##  <a name="getdataversion"></a>  CWinAppEx::GetDataVersion  
 
@@ -423,7 +423,7 @@ int GetDataVersion() const;
 ### <a name="remarks"></a>설명  
   
 ##  <a name="getdataversionmajor"></a>  CWinAppEx::GetDataVersionMajor  
- 호출 하는 경우 Windows 레지스트리에 저장 되는 응용 프로그램의 주 버전을 반환 [CWinAppEx::SaveState](#savestate)합니다.  
+ 호출할 때 Windows 레지스트리에 저장 되는 응용 프로그램의 주 버전을 반환 합니다 [CWinAppEx::SaveState](#savestate)합니다.  
   
 ```  
 int GetDataVersionMajor() const;  
@@ -433,7 +433,7 @@ int GetDataVersionMajor() const;
  주 버전 번호를 포함 하는 정수 값입니다.  
   
 ##  <a name="getdataversionminor"></a>  CWinAppEx::GetDataVersionMinor  
- 호출 하는 경우 Windows 레지스트리에 저장 되는 응용 프로그램의 부 버전을 반환 [CWinAppEx::SaveState](#savestate)합니다.  
+ 호출할 때 Windows 레지스트리에 저장 되는 응용 프로그램의 부 버전을 반환 [CWinAppEx::SaveState](#savestate)합니다.  
   
 ```  
 int GetDataVersionMinor() const;  
@@ -455,16 +455,16 @@ int GetInt(
  [in] *lpszEntry*  
  레지스트리 항목의 이름을 포함 하는 문자열입니다.  
   
- [in] *nDefault*  
- 지정 된 레지스트리 항목이 존재 하지 않는 경우 메서드가 반환 하는 기본 값입니다.  
+ [in] *n 기본*  
+ 지정 된 레지스트리 항목이 존재 하지 않는 경우 메서드가 반환 하는 기본값입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 레지스트리 데이터 그렇지 않으면 *nDefault*합니다.  
+ 메서드가 성공 하는 경우 레지스트리 데이터 그렇지 않으면 *n 기본*입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 레지스트리에서 정수 데이터를 읽습니다. 로 표시 하는 레지스트리 키와 연결 된 정수 데이터가 없는 경우 *lpszEntry*,이 메서드가 반환 *nDefault*합니다. 레지스트리 데이터를 쓰려고 메서드를 사용 하 여 [CWinAppEx::WriteSectionInt](#writesectionint) 및 [CWinAppEx::WriteInt](#writeint)합니다.  
+ 이 메서드는 레지스트리에서 정수 데이터를 읽습니다. 가리키는 레지스트리 키와 연결 된 정수 데이터가 없는 경우 *lpszEntry*,이 메서드는 반환 *n 기본*입니다. 메서드를 사용 하 여 레지스트리 데이터를 쓸 [CWinAppEx::WriteSectionInt](#writesectionint) 하 고 [CWinAppEx::WriteInt](#writeint)합니다.  
   
- *lpszEntry* 매개 변수는 응용 프로그램에 대 한 기본 레지스트리 키 아래에 있는 레지스트리 항목의 이름입니다. 를 가져오거나 기본 레지스트리 키를 설정 하려면 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 및 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
+ 합니다 *lpszEntry* 매개 변수는 응용 프로그램에 대 한 기본 레지스트리 키 아래에 레지스트리 항목의 이름입니다. 가져오거나 설정할 기본 레지스트리 키, 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 하 고 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
   
 ##  <a name="getkeyboardmanager"></a>  CWinAppEx::GetKeyboardManager  
  전역에 대 한 포인터를 반환 [CKeyboardManager](../../mfc/reference/ckeyboardmanager-class.md) 개체입니다.  
@@ -477,7 +477,7 @@ CKeyboardManager* GetKeyboardManager();
  전역에 대 한 포인터 `CKeyboardManager` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 함수를 호출 하는 키보드 관리자 초기화 되지 않은 경우 [CWinAppEx::InitKeyboardManager](#initkeyboardmanager) 대 한 포인터를 반환 하기 전에.  
+ 이 함수를 호출 하는 키보드 관리자 초기화 되지 않은 경우 [CWinAppEx::InitKeyboardManager](#initkeyboardmanager) 대 한 포인터를 반환 하기 전에 합니다.  
   
 ##  <a name="getmousemanager"></a>  CWinAppEx::GetMouseManager  
  전역에 대 한 포인터를 반환 [CMouseManager](../../mfc/reference/cmousemanager-class.md) 개체입니다.  
@@ -490,10 +490,10 @@ CMouseManager* GetMouseManager();
  전역에 대 한 포인터 `CMouseManager` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 함수를 호출 하는 마우스 관리자, 초기화 되지 않은 경우 [CWinAppEx::InitMouseManager](#initmousemanager) 대 한 포인터를 반환 하기 전에.  
+ 이 함수를 호출 하는 마우스 manager, 초기화 되지 않은 경우 [CWinAppEx::InitMouseManager](#initmousemanager) 대 한 포인터를 반환 하기 전에 합니다.  
   
 ##  <a name="getobject"></a>  CWinAppEx::GetObject  
- 읽고 [CObject](../../mfc/reference/cobject-class.md)레지스트리에서-dervied 데이터입니다.  
+ 읽습니다 [CObject](../../mfc/reference/cobject-class.md)레지스트리에서-나오는 데이터입니다.  
   
 ```  
 BOOL GetObject(
@@ -506,15 +506,15 @@ BOOL GetObject(
  레지스트리 항목의 상대 경로 포함 하는 문자열입니다.  
   
  [out] *obj*  
- 에 대 한 참조는 `CObject`합니다. 메서드는이 참조를 사용 하 여 레지스트리 데이터를 저장 합니다.  
+ 에 대 한 참조를 `CObject`입니다. 이 참조를 사용 하 여 레지스트리 데이터를 저장 하는 메서드.  
   
 ### <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 0이 아닌 그렇지 않으면 0입니다.  
+ 메서드가 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는에서 파생 된 레지스트리에서 데이터를 읽고 `CObject`합니다. 쓰려는 `CObject` 사용 하 여 데이터를 레지스트리에 [CWinAppEx::WriteObject](#writeobject) 또는 [CWinAppEx::WriteSectionObject](#writesectionobject)합니다.  
+ 이 메서드는 데이터에서 파생 되는 레지스트리에서 읽습니다 `CObject`합니다. 쓸 `CObject` 사용 하 여 데이터를 레지스트리에 [CWinAppEx::WriteObject](#writeobject) 하거나 [CWinAppEx::WriteSectionObject](#writesectionobject)합니다.  
   
- *lpszEntry* 매개 변수는 응용 프로그램에 대 한 기본 레지스트리 키 아래에 있는 레지스트리 항목의 이름입니다. 를 가져오거나 기본 레지스트리 키를 설정 하려면 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 및 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
+ 합니다 *lpszEntry* 매개 변수는 응용 프로그램에 대 한 기본 레지스트리 키 아래에 있는 레지스트리 항목의 이름입니다. 가져오거나 설정할 기본 레지스트리 키, 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 하 고 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
   
 ##  <a name="getregistrybase"></a>  CWinAppEx::GetRegistryBase  
  응용 프로그램에 대 한 기본 레지스트리 경로 검색합니다.  
@@ -524,10 +524,10 @@ LPCTSTR GetRegistryBase();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 기본 레지스트리 위치 경로 포함 하는 문자열입니다.  
+ 기본 레지스트리 위치의 경로 포함 하는 문자열입니다.  
   
 ### <a name="remarks"></a>설명  
- 모든 메서드는 [CWinAppEx 클래스](../../mfc/reference/cwinappex-class.md) 레지스트리 시작 기본 위치에 액세스 하는 합니다. 이 메서드를 사용 하 여 기본 레지스트리 위치에 대 한 경로 검색 합니다. 사용 하 여 [CWinAppEx::SetRegistryBase](#setregistrybase) 기본 레지스트리 위치를 변경 합니다.  
+ 모든 메서드는 [CWinAppEx 클래스](../../mfc/reference/cwinappex-class.md) 액세스 하는 기본 위치에 레지스트리 시작 합니다. 이 메서드를 사용 하 여 기본 레지스트리 위치의 경로를 검색 합니다. 사용 하 여 [CWinAppEx::SetRegistryBase](#setregistrybase) 기본 레지스트리 위치를 변경 합니다.  
   
 ##  <a name="getregsectionpath"></a>  CWinAppEx::GetRegSectionPath  
  만들고 레지스트리 키의 절대 경로 반환 합니다.  
@@ -541,10 +541,10 @@ CString GetRegSectionPath(LPCTSTR szSectionAdd = _T(""));
  레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
   
 ### <a name="return-value"></a>반환 값  
- A `CString` 레지스트리 키의 절대 경로 포함 하는 합니다.  
+ `CString` 레지스트리 키의 절대 경로 포함 하는 합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 레지스트리 키의 절대 경로에 상대 경로 추가 하 여 정의 *szSectionAdd* 응용 프로그램에 대 한 기본 레지스트리 위치에 있습니다. 메서드를 사용 하 여 기본 레지스트리 키를 가져오려면 [CWinAppEx::GetRegistryBase](#getregistrybase)합니다.  
+ 이 방법은의 상대 경로 추가 하 여 레지스트리 키의 절대 경로 정의 *szSectionAdd* 응용 프로그램에 대 한 기본 레지스트리 위치에 있습니다. 메서드를 사용 하 여 기본 레지스트리 키를 가져오려면 [CWinAppEx::GetRegistryBase](#getregistrybase)합니다.  
   
 ##  <a name="getsectionbinary"></a>  CWinAppEx::GetSectionBinary  
  레지스트리에서 이진 데이터를 읽습니다.  
@@ -562,21 +562,21 @@ BOOL GetSectionBinary(
  레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
   
  [in] *lpszEntry*  
- 읽을 수 값을 포함 하는 문자열입니다.  
+ 읽은 값을 포함 하는 문자열입니다.  
   
  [out] *ppData*  
  메서드는 데이터를 저장 하는 위치는 버퍼에 대 한 포인터입니다.  
   
  [out] *pBytes*  
- 부호 없는 정수에 대 한 포인터입니다. 이 메서드는 크기를 기록 *ppData* 이 매개 변수입니다.  
+ 부호 없는 정수에 대 한 포인터입니다. 메서드 기록의 크기 *ppData* 이 매개 변수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 TRUE이고, 실패하면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 메서드를 사용 하 여 레지스트리에 기록 되는 이진 데이터를 읽어 [CWinAppEx::WriteBinary](#writebinary) 및 [CWinAppEx::WriteSectionBinary](#writesectionbinary)합니다.  
+ 이 메서드는 메서드를 사용 하 여 레지스트리 작성 된 이진 데이터를 읽어 [CWinAppEx::WriteBinary](#writebinary) 하 고 [CWinAppEx::WriteSectionBinary](#writesectionbinary)합니다.  
   
- *lpszSubSection* 매개 변수는 레지스트리 항목에 대 한 절대 경로가 아닙니다. 것은 응용 프로그램에 대 한 기본 레지스트리 키의 끝에 추가 되는 상대 경로입니다. 를 가져오거나 기본 레지스트리 키를 설정 하려면 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 및 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
+ 합니다 *lpszSubSection* 매개 변수는 레지스트리 항목에 대 한 절대 경로가 아닙니다. 응용 프로그램에 대 한 기본 레지스트리 키의 끝에 추가 되는 상대 경로 것입니다. 가져오거나 설정할 기본 레지스트리 키, 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 하 고 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
   
 ##  <a name="getsectionint"></a>  CWinAppEx::GetSectionInt  
  레지스트리에서 정수 데이터를 읽습니다.  
@@ -593,21 +593,21 @@ int GetSectionInt(
  레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
   
  [in] *lpszEntry*  
- 읽을 수 값을 포함 하는 문자열입니다.  
+ 읽은 값을 포함 하는 문자열입니다.  
   
- [in] *nDefault*  
+ [in] *n 기본*  
  지정된 된 값이 없는 경우 반환할 기본값입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 지정 된 레지스트리 값;에 저장 된 정수 데이터 *nDefault* 데이터가 존재 하지 않는 경우.  
+ 지정 된 레지스트리 값에 저장 된 정수 데이터 *n 기본* 데이터가 없는 경우.  
   
 ### <a name="remarks"></a>설명  
- 메서드를 사용 하 여 [CWinAppEx::WriteInt](#writeint) 및 [CWinAppEx::WriteSectionInt](#writesectionint) 정수 데이터를 레지스트리에 쓸 수 있습니다.  
+ 메서드를 사용 하 여 [CWinAppEx::WriteInt](#writeint) 하 고 [CWinAppEx::WriteSectionInt](#writesectionint) 정수 데이터를 레지스트리에 쓸입니다.  
   
- *lpszSubSection* 매개 변수는 레지스트리 항목의 절대 경로가 아닙니다. 응용 프로그램에 대 한 기본 레지스트리 키의 끝에 추가 하는 상대 경로 를 가져오거나 기본 레지스트리 키를 설정 하려면 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 및 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
+ 합니다 *lpszSubSection* 매개 변수는 레지스트리 항목의 절대 경로가 아닙니다. 응용 프로그램에 대 한 기본 레지스트리 키의 끝에 추가 되는 상대 경로 것입니다. 가져오거나 설정할 기본 레지스트리 키, 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 하 고 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
   
 ##  <a name="getsectionobject"></a>  CWinAppEx::GetSectionObject  
- 읽고 [CObject](../../mfc/reference/cobject-class.md) 레지스트리에서 레지스트리 데이터입니다.  
+ 읽습니다 [CObject](../../mfc/reference/cobject-class.md) 레지스트리에서 레지스트리 데이터입니다.  
   
 ```  
 BOOL GetSectionObject(
@@ -621,21 +621,21 @@ BOOL GetSectionObject(
  레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
   
  [in] *lpszEntry*  
- 읽을 수 값을 포함 하는 문자열입니다.  
+ 읽은 값을 포함 하는 문자열입니다.  
   
  [out] *obj*  
- 에 대 한 참조는 `CObject`합니다. 이 메서드가 사용 하 여 `CObject` 레지스트리 데이터를 저장 합니다.  
+ 에 대 한 참조를 `CObject`입니다. 이 메서드를 사용 하 여 `CObject` 레지스트리 데이터를 저장 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 레지스트리에서 데이터를 읽습니다. 데이터 읽기는 `CObject` 에서 파생 된 클래스에 대 한 데이터 또는 `CObject`합니다. 쓰려는 `CObject` 사용 하 여 데이터를 레지스트리에 [CWinAppEx::WriteObject](#writeobject) 또는 [CWinAppEx::WriteSectionObject](#writesectionobject)합니다.  
+ 이 메서드는 레지스트리에서 데이터를 읽습니다. 데이터 읽기 `CObject` 데이터 또는 데이터에서 파생 된 클래스에 대 한 `CObject`합니다. 쓸 `CObject` 사용 하 여 데이터를 레지스트리에 [CWinAppEx::WriteObject](#writeobject) 하거나 [CWinAppEx::WriteSectionObject](#writesectionobject)합니다.  
   
- *lpszSubSection* 매개 변수는 레지스트리 항목에 대 한 절대 경로가 아닙니다. 것은 응용 프로그램에 대 한 기본 레지스트리 키의 끝에 추가 되는 상대 경로입니다. 를 가져오거나 기본 레지스트리 키를 설정 하려면 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 및 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
+ 합니다 *lpszSubSection* 매개 변수는 레지스트리 항목에 대 한 절대 경로가 아닙니다. 응용 프로그램에 대 한 기본 레지스트리 키의 끝에 추가 되는 상대 경로 것입니다. 가져오거나 설정할 기본 레지스트리 키, 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 하 고 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
   
 ##  <a name="getsectionstring"></a>  CWinAppEx::GetSectionString  
- 읽기는 레지스트리에서 데이터 문자열입니다.  
+ 읽기 레지스트리에서 데이터 문자열입니다.  
   
 ```  
 CString GetSectionString(
@@ -649,18 +649,18 @@ CString GetSectionString(
  레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
   
  [in] *lpszEntry*  
- 읽을 수 값을 포함 하는 문자열입니다.  
+ 읽은 값을 포함 하는 문자열입니다.  
   
  [in] *lpszDefault*  
  지정된 된 값이 없는 경우 반환할 기본값입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 데이터가 있는; 지정된 된 레지스트리 값에 저장 된 문자열 데이터 그렇지 않으면 *lpszDefault*합니다.  
+ 데이터가 있으면 지정 된 레지스트리 값에 저장 된 문자열 데이터 그렇지 않으면 *lpszDefault*합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 레지스트리에 기록 하는 문자열 데이터를 읽습니다. 사용 하 여 [CWinAppEx::WriteString](#writestring) 및 [CWinAppEx::WriteSectionString](#writesectionstring) 문자열 데이터를 레지스트리에 쓸 수 있습니다.  
+ 이 메서드는 레지스트리에 기록 하는 문자열 데이터를 읽습니다. 사용 하 여 [CWinAppEx::WriteString](#writestring) 하 고 [CWinAppEx::WriteSectionString](#writesectionstring) 레지스트리 문자열 데이터를 쓸입니다.  
   
- *lpszSubSection* 매개 변수는 레지스트리 항목에 대 한 절대 경로가 아닙니다. 것은 응용 프로그램에 대 한 기본 레지스트리 키의 끝에 추가 되는 상대 경로입니다. 를 가져오거나 기본 레지스트리 키를 설정 하려면 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 및 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
+ 합니다 *lpszSubSection* 매개 변수는 레지스트리 항목에 대 한 절대 경로가 아닙니다. 응용 프로그램에 대 한 기본 레지스트리 키의 끝에 추가 되는 상대 경로 것입니다. 가져오거나 설정할 기본 레지스트리 키, 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 하 고 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
   
 ##  <a name="getshellmanager"></a>  CWinAppEx::GetShellManager  
  전역에 대 한 포인터를 반환 [CShellManager](../../mfc/reference/cshellmanager-class.md) 개체입니다.  
@@ -673,10 +673,10 @@ CShellManager* GetShellManager();
  전역에 대 한 포인터 `CShellManager` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
- 경우는 `CShellManager` 개체가 초기화 되지 않은,이 함수 호출 [CWinAppEx::InitShellManager](#initshellmanager) 대 한 포인터를 반환 하기 전에.  
+ 경우는 `CShellManager` 개체가 초기화 되지 않은,이 함수 호출 [CWinAppEx::InitShellManager](#initshellmanager) 대 한 포인터를 반환 하기 전에 합니다.  
   
 ##  <a name="getstring"></a>  CWinAppEx::GetString  
- 읽기는 지정된 된 레지스트리 키의 데이터 문자열입니다.  
+ 읽기는 지정된 된 레지스트리 키에서 데이터를 문자열입니다.  
   
 ```  
 CString GetString(
@@ -689,15 +689,15 @@ CString GetString(
  레지스트리 키의 이름을 포함 하는 문자열  
   
  [in] *lpzDefault*  
- 지정 된 레지스트리 항목이 존재 하지 않는 경우 메서드가 반환 하는 기본 값입니다.  
+ 지정 된 레지스트리 항목이 존재 하지 않는 경우 메서드가 반환 하는 기본값입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 성공 하면 레지스트리에 저장 된 문자열 데이터 *lpszDefault* 그렇지 않은 경우.  
+ 성공할 경우 레지스트리에 저장 된 문자열 데이터 *lpszDefault* 그렇지 않은 경우.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 레지스트리에 기록 하는 문자열 데이터를 읽습니다. 레지스트리 데이터를 쓰려고 메서드를 사용 하 여 [CWinAppEx::WriteString](#writestring) 또는 [CWinAppEx::WriteSectionString](#writesectionstring)합니다.  
+ 이 메서드는 레지스트리에 기록 하는 문자열 데이터를 읽습니다. 메서드를 사용 하 여 레지스트리 데이터를 쓸 [CWinAppEx::WriteString](#writestring) 하거나 [CWinAppEx::WriteSectionString](#writesectionstring)합니다.  
   
- *lpszEntry* 매개 변수는 응용 프로그램에 대 한 기본 레지스트리 키 아래에 있는 레지스트리 항목의 이름입니다. 를 가져오거나 기본 레지스트리 키를 설정 하려면 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 및 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
+ 합니다 *lpszEntry* 매개 변수는 응용 프로그램에 대 한 기본 레지스트리 키 아래에 레지스트리 항목의 이름입니다. 가져오거나 설정할 기본 레지스트리 키, 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 하 고 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
   
 ##  <a name="gettooltipmanager"></a>  CWinAppEx::GetTooltipManager  
  전역에 대 한 포인터를 반환 [CTooltipManager](../../mfc/reference/ctooltipmanager-class.md) 개체입니다.  
@@ -710,7 +710,7 @@ CTooltipManager* GetTooltipManager();
  전역에 대 한 포인터 `CTooltipManager` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
- 경우는 `CTooltipManager` 개체가 초기화 되지 않은,이 함수 호출 [cwinappex:: Inittooltipmanager](#inittooltipmanager) 대 한 포인터를 반환 하기 전에.  
+ 경우는 `CTooltipManager` 개체가 초기화 되지 않은,이 함수 호출 [cwinappex:: Inittooltipmanager](#inittooltipmanager) 대 한 포인터를 반환 하기 전에 합니다.  
   
 ##  <a name="getusertoolsmanager"></a>  CWinAppEx::GetUserToolsManager  
  전역에 대 한 포인터를 반환 [CUserToolsManager](../../mfc/reference/cusertoolsmanager-class.md) 개체입니다.  
@@ -720,85 +720,85 @@ CUserToolsManager* GetUserToolsManager();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 전역에 대 한 포인터 `CUserToolsManager` 개체 사용자 도구 관리 하는 경우에 NULL 응용 프로그램에 대 한 사용 되지 않습니다.  
+ 전역에 대 한 포인터 `CUserToolsManager` 개체 사용자 도구 관리 하는 경우 NULL 응용 프로그램에 대 한 사용 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
- 에 대 한 포인터를 검색 하기 전에 `CUserToolsManager` 개체를 호출 하 여 관리자를 초기화 해야 [CWinAppEx::EnableUserTools](#enableusertools)합니다.  
+ 에 대 한 포인터를 검색 하기 전에 합니다 `CUserToolsManager` 개체를 호출 하 여 관리자를 초기화 해야 합니다 [CWinAppEx::EnableUserTools](#enableusertools)합니다.  
   
 ##  <a name="initcontextmenumanager"></a>  CWinAppEx::InitContextMenuManager  
- 초기화는 [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) 개체입니다.  
+ 초기화 된 [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) 개체입니다.  
   
 ```  
 BOOL InitContextMenuManager();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 메서드가; CContextMenuManager 개체를 만드는 경우 0이 아닌 인 경우 0은 `CContextMenuManager` 개체가 이미 있습니다.  
+ 메서드는 CContextMenuManager 개체를 만드는 경우 0이 아닌 값 인 경우 0을 `CContextMenuManager` 개체가 이미 있습니다.  
   
 ### <a name="remarks"></a>설명  
- 호출 하는 경우 [CWinAppEx::GetContextMenuManager](#getcontextmenumanager), 해당 메서드의 기본 구현에서는 호출 `InitContextMenuManager`합니다.  
+ 호출 하는 경우 [CWinAppEx::GetContextMenuManager](#getcontextmenumanager), 해당 메서드의 기본 구현을 호출 `InitContextMenuManager`합니다.  
   
- 경우에 상황에 맞는 메뉴 관리자가 이미 응용 프로그램을 호출 하면 `InitContextMenuManager`, 응용 프로그램이 포함 됩니다는 [ASSERT](diagnostic-services.md#assert) 실패 합니다. 따라서 호출 하면 안 `InitContextMenuManager` 만들면는 `CContextMenuManager` 개체를 직접 합니다. 사용자 지정을 사용 하지 않는 경우 `CContextMenuManager`를 사용 해야 `GetContextMenuManager` 만들려는 `CContextMenuManager` 개체입니다.  
+ 경우에 상황에 맞는 메뉴 관리자가 이미 응용 프로그램을 호출 하면 `InitContextMenuManager`, 응용 프로그램 해야는 [ASSERT](diagnostic-services.md#assert) 실패 합니다. 호출 하지 않아야 하므로 `InitContextMenuManager` 만드는 경우는 `CContextMenuManager` 직접 개체입니다. 사용자 지정을 사용 하지 않는 경우 `CContextMenuManager`를 사용 해야 `GetContextMenuManager` 만들려는 `CContextMenuManager` 개체입니다.  
   
 ##  <a name="initkeyboardmanager"></a>  CWinAppEx::InitKeyboardManager  
- 초기화는 [CKeyboardManager](../../mfc/reference/ckeyboardmanager-class.md) 개체입니다.  
+ 초기화 된 [CKeyboardManager](../../mfc/reference/ckeyboardmanager-class.md) 개체입니다.  
   
 ```  
 BOOL InitKeyboardManager();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 메서드를 만드는 경우 0이 아닌는 `CKeyboardManager` 개체; 인 경우 0은 `CKeyboardManager` 개체가 이미 있습니다.  
+ 메서드를 만드는 경우 0이 아닌 합니다 `CKeyboardManager` 개체; 인 경우 0을 `CKeyboardManager` 개체가 이미 있습니다.  
   
 ### <a name="remarks"></a>설명  
- 호출 하는 경우 [CWinAppEx::GetKeyboardManager](#getkeyboardmanager), 해당 메서드의 기본 구현에서는 호출 `InitKeyboardManager`합니다.  
+ 호출 하는 경우 [CWinAppEx::GetKeyboardManager](#getkeyboardmanager), 해당 메서드의 기본 구현을 호출 `InitKeyboardManager`합니다.  
   
- 경우에 키보드 관리자가 이미 응용 프로그램을 호출 하면 `InitKeyboardManager`, 응용 프로그램이 포함 됩니다는 [ASSERT](diagnostic-services.md#assert) 실패 합니다. 따라서 호출 하면 안 `InitKeyboardManager` 만들면는 `CKeyboardManager` 개체를 직접 합니다. 사용자 지정을 사용 하지 않는 경우 `CKeyboardManager`를 사용 해야 `GetKeyboardManager` 만들려는 `CKeyboardManager` 개체입니다.  
+ 경우에 키보드 관리자가 이미 응용 프로그램을 호출 하면 `InitKeyboardManager`, 응용 프로그램 해야는 [ASSERT](diagnostic-services.md#assert) 실패 합니다. 호출 하지 않아야 하므로 `InitKeyboardManager` 만드는 경우는 `CKeyboardManager` 직접 개체입니다. 사용자 지정을 사용 하지 않는 경우 `CKeyboardManager`를 사용 해야 `GetKeyboardManager` 만들려는 `CKeyboardManager` 개체입니다.  
   
 ##  <a name="initmousemanager"></a>  CWinAppEx::InitMouseManager  
- 초기화는 [CMouseManager](../../mfc/reference/cmousemanager-class.md) 개체입니다.  
+ 초기화 된 [CMouseManager](../../mfc/reference/cmousemanager-class.md) 개체입니다.  
   
 ```  
 BOOL InitMouseManager();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 메서드를 만드는 경우 0이 아닌는 `CMouseManager` 개체; 인 경우 0은 `CMouseManager` 개체가 이미 있습니다.  
+ 메서드를 만드는 경우 0이 아닌 합니다 `CMouseManager` 개체; 인 경우 0을 `CMouseManager` 개체가 이미 있습니다.  
   
 ### <a name="remarks"></a>설명  
- 호출 하는 경우 [CWinAppEx::GetMouseManager](#getmousemanager), 해당 메서드의 기본 구현에서는 호출 `InitMouseManager`합니다.  
+ 호출 하는 경우 [CWinAppEx::GetMouseManager](#getmousemanager), 해당 메서드의 기본 구현을 호출 `InitMouseManager`합니다.  
   
- 경우에 마우스 관리자가 이미 응용 프로그램을 호출 하면 `InitMouseManager`, 응용 프로그램이 포함 됩니다는 [ASSERT](diagnostic-services.md#assert) 실패 합니다. 따라서 호출 하면 안 `InitMouseManager` 만들면는 `CMouseManager` 개체를 직접 합니다. 사용자 지정을 사용 하지 않는 경우 `CMouseManager`를 사용 해야 `GetMouseManager` 만들려는 `CMouseManager` 개체입니다.  
+ 경우에 마우스 관리자가 이미 응용 프로그램을 호출 하면 `InitMouseManager`, 응용 프로그램 해야는 [ASSERT](diagnostic-services.md#assert) 실패 합니다. 호출 하지 않아야 하므로 `InitMouseManager` 만드는 경우는 `CMouseManager` 직접 개체입니다. 사용자 지정을 사용 하지 않는 경우 `CMouseManager`를 사용 해야 `GetMouseManager` 만들려는 `CMouseManager` 개체입니다.  
   
 ##  <a name="initshellmanager"></a>  CWinAppEx::InitShellManager  
- 초기화는 [CShellManager](../../mfc/reference/cshellmanager-class.md) 개체입니다.  
+ 초기화 된 [CShellManager](../../mfc/reference/cshellmanager-class.md) 개체입니다.  
   
 ```  
 BOOL InitShellManager();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 메서드를 만드는 경우 0이 아닌는 `CShellManager` 개체; 인 경우 0은 `CShellManager` 개체가 이미 있습니다.  
+ 메서드를 만드는 경우 0이 아닌 합니다 `CShellManager` 개체; 인 경우 0을 `CShellManager` 개체가 이미 있습니다.  
   
 ### <a name="remarks"></a>설명  
- 호출 하는 경우 [CWinAppEx::GetShellManager](#getshellmanager), 해당 메서드의 기본 구현에서는 호출 `InitShellManager`합니다.  
+ 호출 하는 경우 [CWinAppEx::GetShellManager](#getshellmanager), 해당 메서드의 기본 구현을 호출 `InitShellManager`합니다.  
   
- 경우에 셸 관리자가 이미 응용 프로그램을 호출 하면 `InitShellManager`, 응용 프로그램 발생 한 [ASSERT](diagnostic-services.md#assert) 실패 합니다. 따라서 호출 하지 않으면 `InitShellManager` 만들면는 `CShellManager` 개체를 직접 합니다. 사용자 지정을 사용 하지 않는 경우 `CShellManager`를 사용 하 여 `GetShellManager` 만들려는 `CShellManager` 개체입니다.  
+ 경우에 셸 관리자가 이미 응용 프로그램을 호출 하면 `InitShellManager`에서 발생 하는 [ASSERT](diagnostic-services.md#assert) 실패 합니다. 따라서 호출 하지 마세요 `InitShellManager` 만드는 경우는 `CShellManager` 직접 개체입니다. 사용자 지정을 사용 하지 않는 경우 `CShellManager`를 사용 하 여 `GetShellManager` 만들려는 `CShellManager` 개체입니다.  
   
 ##  <a name="inittooltipmanager"></a>  Cwinappex:: Inittooltipmanager  
- 초기화는 [CTooltipManager](../../mfc/reference/ctooltipmanager-class.md) 개체입니다.  
+ 초기화 된 [CTooltipManager](../../mfc/reference/ctooltipmanager-class.md) 개체입니다.  
   
 ```  
 BOOL InitTooltipManager();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 메서드를 만드는 경우 0이 아닌는 `CTooltipManager` 개체; 인 경우 0은 `CTooltipManager` 개체가 이미 있습니다.  
+ 메서드를 만드는 경우 0이 아닌 합니다 `CTooltipManager` 개체; 인 경우 0을 `CTooltipManager` 개체가 이미 있습니다.  
   
 ### <a name="remarks"></a>설명  
- 호출 하는 경우 [CWinAppEx::GetTooltipManager](#gettooltipmanager), 해당 메서드의 기본 구현에서는 호출 `InitTooltipManager`합니다.  
+ 호출 하는 경우 [CWinAppEx::GetTooltipManager](#gettooltipmanager), 해당 메서드의 기본 구현을 호출 `InitTooltipManager`합니다.  
   
- 경우에 도구 설명 관리자가 이미 응용 프로그램을 호출 하면 `InitTooltipManager`, 응용 프로그램이 포함 됩니다는 [ASSERT](diagnostic-services.md#assert) 실패 합니다. 따라서 호출 하면 안 `InitTooltipManager` 만들면는 `CTooltipManager` 개체를 직접 합니다. 사용자 지정을 사용 하지 않는 경우 `CTooltipManager`를 사용 해야 `GetTooltipManager` 만들려는 `CTooltipManager` 개체입니다.  
+ 경우에 도구 설명 관리자가 이미 응용 프로그램을 호출 하면 `InitTooltipManager`, 응용 프로그램 해야는 [ASSERT](diagnostic-services.md#assert) 실패 합니다. 호출 하지 않아야 하므로 `InitTooltipManager` 만드는 경우는 `CTooltipManager` 직접 개체입니다. 사용자 지정을 사용 하지 않는 경우 `CTooltipManager`를 사용 해야 `GetTooltipManager` 만들려는 `CTooltipManager` 개체입니다.  
   
 ##  <a name="isresourcesmartupdate"></a>  CWinAppEx::IsResourceSmartUpdate  
 
@@ -823,19 +823,19 @@ BOOL IsStateExists(LPCTSTR lpszSectionName);
  레지스트리 키의 경로 포함 하는 문자열입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 레지스트리에서;가 있으면 0이 아닌 그렇지 않으면 0입니다.  
+ 레지스트리에서; 키를 0이 아닌 그렇지 않으면 0입니다.  
   
 ##  <a name="loadcustomstate"></a>  CWinAppEx::LoadCustomState  
- 레지스트리에서 응용 프로그램의 상태를 로드 한 후이 메서드를 호출 하는 프레임 워크입니다.  
+ 프레임 워크는 레지스트리에서 응용 프로그램의 상태를 로드 한 후이 메서드를 호출 합니다.  
   
 ```  
 virtual void LoadCustomState();
 ```  
   
 ### <a name="remarks"></a>설명  
- 레지스트리에서 응용 프로그램 상태를 로드 한 후 모든 처리를 수행 하려는 경우이 메서드를 재정의 합니다. 기본적으로이 메서드는 아무 작업도 수행 하지 않습니다.  
+ 레지스트리에서 상태를 로드 하는 응용 프로그램에 후 처리를 수행 하려는 경우이 메서드를 재정의 합니다. 기본적으로이 메서드는 없습니다.  
   
- 레지스트리에서 사용자 지정 상태 정보를 로드 하기 위해 정보 저장 해야를 사용 하 여 [CWinAppEx::SaveCustomState](#savecustomstate)합니다.  
+ 레지스트리에서 사용자 지정 상태 정보를 로드 하기 위해 정보를 저장 해야 사용 하 여 [CWinAppEx::SaveCustomState](#savecustomstate)합니다.  
   
 ##  <a name="loadstate"></a>  CWinAppEx::LoadState  
  Windows 레지스트리에서 응용 프로그램 상태를 읽습니다.  
@@ -863,23 +863,23 @@ virtual BOOL LoadState(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *pFrame*  
- 프레임 창 개체에 대 한 포인터입니다. 메서드는이 프레임 창에 레지스트리에서 상태 정보를 적용합니다.  
+ 프레임 창 개체에 대 한 포인터입니다. 메서드가이 프레임 창에 상태 정보를 레지스트리에 적용 됩니다.  
   
  [in] *lpszSectionName*  
  레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
   
  [in] *pFrameImpl*  
- 에 대 한 포인터는 `CFrameImpl` 개체입니다. 메서드는이 프레임 창에 레지스트리에서 상태 정보를 적용합니다.  
+ 에 대 한 포인터를 `CFrameImpl` 개체입니다. 메서드가이 프레임 창에 상태 정보를 레지스트리에 적용 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
- 성공 하면 0이 아닌 그렇지 않으면 0입니다.  
+ 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 응용 프로그램 프레임 창에 대 한 상태 정보 및 상태를 로드합니다. 프레임 창에 대 한 로드 된 정보는 제공 된 프레임 창에 적용 됩니다. 프레임 창을 제공 하지 않으면 응용 프로그램 상태 정보에만 로드 됩니다. 상태를 포함 하는 응용 프로그램 정보는 [CMouseManager 클래스](../../mfc/reference/cmousemanager-class.md), [CContextMenuManager 클래스](../../mfc/reference/ccontextmenumanager-class.md), [CKeyboardManager 클래스](../../mfc/reference/ckeyboardmanager-class.md), 및 [ CUserToolsManager 클래스](../../mfc/reference/cusertoolsmanager-class.md)합니다.  
+ 이 메서드는 프레임 창에 대 한 상태 정보 및 응용 프로그램 상태를 로드합니다. 프레임 창에 대 한 로드 정보는 제공 된 프레임 창에 적용 됩니다. 프레임 창을 제공 하지 않으면 응용 프로그램 상태 정보에만 로드 됩니다. 상태를 포함 하는 응용 프로그램 정보를 [CMouseManager 클래스](../../mfc/reference/cmousemanager-class.md), [CContextMenuManager 클래스](../../mfc/reference/ccontextmenumanager-class.md)합니다 [CKeyboardManager 클래스](../../mfc/reference/ckeyboardmanager-class.md), 및 [ CUserToolsManager 클래스](../../mfc/reference/cusertoolsmanager-class.md)합니다.  
   
- 기본 구현은 `CFrameImpl::OnLoadFrame` 호출 `LoadState`합니다.  
+ 기본 구현의 `CFrameImpl::OnLoadFrame` 호출 `LoadState`합니다.  
   
- *lpszSectionName* 매개 변수는 레지스트리 항목에 대 한 절대 경로가 아닙니다. 응용 프로그램에 대 한 기본 레지스트리 키의 끝에 추가 하는 상대 경로 를 가져오거나 기본 레지스트리 키를 설정 하려면 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 및 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
+ 합니다 *lpszSectionName* 매개 변수는 레지스트리 항목에 대 한 절대 경로가 아닙니다. 응용 프로그램에 대 한 기본 레지스트리 키의 끝에 추가 되는 상대 경로 것입니다. 가져오거나 설정할 기본 레지스트리 키, 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 하 고 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
   
 ##  <a name="loadwindowplacement"></a>  CWinAppEx::LoadWindowPlacement  
  레지스트리에서 주 프레임 창의 위치와 크기를 로드할 때 프레임 워크에서 호출 됩니다.  
@@ -893,34 +893,34 @@ virtual BOOL LoadWindowPlacement(
   
 ### <a name="parameters"></a>매개 변수  
  [out] *rectNormalPosition*  
- 복원 된 위치에 있을 때 주 프레임 창의 좌표를 포함 하는 사각형입니다.  
+ 복원된 위치에 있을 때 주 프레임 창의 좌표를 포함 하는 사각형입니다.  
   
  [out] *nFlags*  
- 최소화 된 창을 하 고 운영 체제 최소화 및 복원 된 창 간에 전환 하는 방법의 위치를 제어 하는 플래그입니다.  
+ 최소화 된 창 및 운영 체제 최소화 및 복원 된 창 간에 전환 하는 방법의 위치를 제어 하는 플래그입니다.  
   
  [out] *nShowCmd*  
- 창의 표시 상태를 지정 하는 정수입니다. 가능한 값에 대 한 자세한 내용은 참조 [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow)합니다.  
+ 창의 표시 상태를 지정 하는 정수입니다. 가능한 값에 대 한 자세한 내용은 참조 하세요. [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow)합니다.  
   
 ### <a name="return-value"></a>반환 값  
- 성공 하면 0이 아닌 그렇지 않으면 0입니다.  
+ 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 기본적으로 MFC 자동으로 로드 이전 위치 및 주 프레임 창의 상태 응용 프로그램이 시작 합니다. 이 정보가 레지스트리에 저장 되는 방법에 대 한 자세한 내용은 참조 [CWinAppEx::StoreWindowPlacement](#storewindowplacement)합니다.  
+ 기본적으로 MFC 때 자동으로 로드 이전 위치 및 주 프레임 창의 상태를 응용 프로그램을 시작 합니다. 이 정보는 레지스트리에 저장 되는 방법을 하는 방법에 대 한 자세한 내용은 참조 하세요. [CWinAppEx::StoreWindowPlacement](#storewindowplacement)합니다.  
   
  주 프레임 창에 대 한 추가 정보를 로드 하려는 경우이 메서드를 재정의 합니다.  
   
 ##  <a name="m_bforceimagereset"></a>  CWinAppEx::m_bForceImageReset  
- 도구 모음을 포함 하는 프레임 창을 다시 로드 하는 경우 프레임 워크 다시 모든 도구 모음 이미지를 설정 하는지 여부를 지정 합니다.  
+ 도구 모음을 포함 하는 프레임 창 다시 로드 하는 경우 프레임 워크 다시 모든 도구 모음 이미지를 설정 하는지 여부를 지정 합니다.  
   
 ```  
 BOOL m_bForceImageReset;  
 ```  
   
 ### <a name="remarks"></a>설명  
- `m_bForceImageReset` 데이터 멤버에 보호 된 변수입니다.  
+ `m_bForceImageReset` 데이터 멤버 변수가 보호 합니다.  
   
 ##  <a name="onappcontexthelp"></a>  CWinAppEx::OnAppContextHelp  
- 프레임 워크는 사용자에 대 한 상황에 맞는 도움말을 요청 하면이 메서드를 호출는 **사용자 지정** 대화 상자.  
+ 프레임 워크는 사용자에 대 한 상황에 맞는 도움말을 요청 하는 경우이 메서드를 호출 합니다 **사용자 지정** 대화 상자.  
   
 ```  
 virtual void OnAppContextHelp(
@@ -930,16 +930,16 @@ virtual void OnAppContextHelp(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *pWndControl*  
- 사용자는에 대 한 상황에 맞는 도움말을 호출 window 개체에 대 한 포인터입니다.  
+ 사용자는에 대 한 상황에 맞는 도움말을 호출 하는 창 개체에 대 한 포인터입니다.  
   
  [in] *dwHelpIDArray*  
  예약 된 값입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 나중에 사용할 현재 예약 되어 있습니다. 기본 구현은 없으며 현재 호출 되지 않습니다 프레임 워크에서 합니다.  
+ 이 메서드는 나중에 사용할 현재 예약 되어 있습니다. 기본 구현은 아무 작업도 수행 하지 하 고 현재 호출 되지 않기 프레임 워크에서.  
   
 ##  <a name="onclosingmainframe"></a>  CWinAppEx::OnClosingMainFrame  
- 프레임 창이 WM_CLOSE를 처리할 때 프레임 워크에서이 메서드를 호출 합니다.  
+ 프레임 워크는 프레임 창이 WM_CLOSE 처리 하는 경우이 메서드를 호출 합니다.  
   
 ```  
 virtual void OnClosingMainFrame(CFrameImpl* pFrameImpl);
@@ -947,13 +947,13 @@ virtual void OnClosingMainFrame(CFrameImpl* pFrameImpl);
   
 ### <a name="parameters"></a>매개 변수  
  [in] *pFrameImpl*  
- 에 대 한 포인터는 `CFrameImpl` 개체입니다.  
+ 에 대 한 포인터를 `CFrameImpl` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
- 상태를 저장 하는이 메서드의 기본 구현 *pFrameImpl*합니다.  
+ 상태를 저장 하는이 메서드의 기본 구현은 *pFrameImpl*합니다.  
   
 ##  <a name="onviewdoubleclick"></a>  CWinAppEx::OnViewDoubleClick  
- 사용자가 해당 보기 내에서 아무 곳 이나 두 번 클릭할 때 보기와 연결 된 사용자 정의 명령을 호출 합니다.  
+ 사용자가 해당 뷰 내에서 아무 곳 이나 두 번 클릭할 때 뷰를 사용 하 여 연결 된 사용자 정의 명령을 호출 합니다.  
   
 ```  
 virtual BOOL OnViewDoubleClick(
@@ -963,16 +963,16 @@ virtual BOOL OnViewDoubleClick(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *pWnd*  
- 파생 된 개체에 대 한 포인터는 [CView 클래스](../../mfc/reference/cview-class.md)합니다.  
+ 파생 된 개체에 대 한 포인터를 [CView 클래스](../../mfc/reference/cview-class.md)합니다.  
   
  [in] *iViewId*  
- 보기 id입니다.  
+ 뷰 ID  
   
 ### <a name="return-value"></a>반환 값  
- 프레임 워크 명령; 발견 한 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+ 프레임 워크는 명령에서 발견 한 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 사용자 지정 마우스 동작을 지원 하기 위해 WM_LBUTTONDBLCLK 메시지를 처리 하는 경우이 함수를 호출 해야 합니다. 이 메서드는 제공한 보기 ID와 연결 된 명령을 실행 합니다. *iViewId*합니다. 사용자 지정 마우스 동작에 대 한 자세한 내용은 참조 [키보드 및 마우스 사용자 지정](../../mfc/keyboard-and-mouse-customization.md)합니다.  
+ 사용자 지정 마우스 동작을 지원 하기 위해 WM_LBUTTONDBLCLK 메시지를 처리 하는 경우이 함수를 호출 해야 합니다. 이 메서드는에서 제공 하는 뷰 ID와 사용 하 여 연결 명령을 실행 합니다 *iViewId*합니다. 사용자 지정 마우스 동작에 대 한 자세한 내용은 참조 하세요. [키보드 및 마우스 사용자 지정](../../mfc/keyboard-and-mouse-customization.md)합니다.  
   
 ##  <a name="onworkspaceidle"></a>  CWinAppEx::OnWorkspaceIdle  
 
@@ -999,7 +999,7 @@ virtual void PreLoadState();
  프레임 워크 응용 프로그램 상태를 로드 하기 전에 즉시 처리를 수행 하려는 경우이 메서드를 재정의 합니다.  
   
 ##  <a name="presavestate"></a>  CWinAppEx::PreSaveState  
- 응용 프로그램 상태를 저장 하기 바로 전에이 메서드를 호출 하는 프레임 워크입니다.  
+ 응용 프로그램 상태를 저장 하기 직전에이 메서드를 호출 하는 프레임 워크입니다.  
   
 ```  
 virtual void PreSaveState();
@@ -1009,7 +1009,7 @@ virtual void PreSaveState();
  프레임 워크 응용 프로그램 상태를 저장 하기 전에 즉시 처리를 수행 하려는 경우이 메서드를 재정의 합니다.  
   
 ##  <a name="reloadwindowplacement"></a>  CWinAppEx::ReloadWindowPlacement  
- 레지스트리에서 창의 위치와 크기를 다시 로드합니다.  
+ 레지스트리에서 창 위치와 크기를 다시 로드합니다.  
   
 ```  
 virtual BOOL ReloadWindowPlacement(CFrameWnd* pFrame);
@@ -1020,10 +1020,10 @@ virtual BOOL ReloadWindowPlacement(CFrameWnd* pFrame);
  프레임 창에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 0이 아닌 로드할 데이터가 부하 있거나 실패 한 경우 0입니다.  
+ 메서드가 성공 하면 0이 아닌 값 되었거나 실패 한 부하가 로드할 데이터가 없는 경우 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 함수를 사용 하 여 [CWinAppEx::StoreWindowPlacement](#storewindowplacement) 크기 및 창 위치는 레지스트리에 쓸 수 있습니다.  
+ 함수를 사용 하 여 [CWinAppEx::StoreWindowPlacement](#storewindowplacement) 크기와 창 위치를 레지스트리에 쓸 수 있습니다.  
   
 ##  <a name="savecustomstate"></a>  CWinAppEx::SaveCustomState  
  프레임 워크를 레지스트리에 응용 프로그램의 상태를 저장 한 후이 메서드를 호출 합니다.  
@@ -1033,10 +1033,10 @@ virtual void SaveCustomState();
 ```  
   
 ### <a name="remarks"></a>설명  
- 응용 프로그램 상태를 레지스트리에 저장 후 모든 처리를 수행 하려는 경우이 메서드를 재정의 합니다. 기본적으로이 메서드는 아무 작업도 수행 하지 않습니다.  
+ 응용 프로그램 상태를 레지스트리에 저장 하는 후 처리를 수행 하려는 경우이 메서드를 재정의 합니다. 기본적으로이 메서드는 없습니다.  
   
 ##  <a name="savestate"></a>  CWinAppEx::SaveState  
- 응용 프로그램 상태를 Windows 레지스트리에 씁니다.  
+ Windows 레지스트리에 응용 프로그램 상태를 씁니다.  
   
 ```  
 virtual BOOL SaveState(
@@ -1064,18 +1064,18 @@ BOOL SaveState(
  레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
   
  [in] *pFrameImpl*  
- 에 대 한 포인터는 `CFrameImpl` 개체입니다. 이 프레임은 Windows 레지스트리에 저장 됩니다.  
+ 에 대 한 포인터를 `CFrameImpl` 개체입니다. 이 프레임은 Windows 레지스트리에 저장 됩니다.  
   
  [in] *pFrame*  
  프레임 창 개체에 대 한 포인터입니다. 이 프레임은 Windows 레지스트리에 저장 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
- 성공 하면 FALSE 그렇지 않은 경우.  
+ 성공 하면 FALSE이 고, 그렇지 합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 제공 된 프레임 창에 대 한 상태 정보 및 응용 프로그램 상태를 저장 합니다. 프레임 창을 제공 하지 않으면 메서드는 응용 프로그램 상태를 저장 합니다. 상태를 포함 하는 응용 프로그램 정보는 [CMouseManager 클래스](../../mfc/reference/cmousemanager-class.md), [CContextMenuManager 클래스](../../mfc/reference/ccontextmenumanager-class.md), [CKeyboardManager 클래스](../../mfc/reference/ckeyboardmanager-class.md), 및 [ CUserToolsManager 클래스](../../mfc/reference/cusertoolsmanager-class.md)합니다.  
+ 이 메서드는 제공 된 프레임 창에 대 한 상태 정보 및 응용 프로그램 상태를 저장합니다. 프레임 창에 제공 하지 않는 경우 메서드는만 응용 프로그램 상태를 저장 합니다. 상태를 포함 하는 응용 프로그램 정보를 [CMouseManager 클래스](../../mfc/reference/cmousemanager-class.md), [CContextMenuManager 클래스](../../mfc/reference/ccontextmenumanager-class.md)합니다 [CKeyboardManager 클래스](../../mfc/reference/ckeyboardmanager-class.md), 및 [ CUserToolsManager 클래스](../../mfc/reference/cusertoolsmanager-class.md)합니다.  
   
- *lpszSectionName* 매개 변수는 레지스트리 항목에 대 한 절대 경로가 아닙니다. 것은 응용 프로그램에 대 한 기본 레지스트리 키의 끝에 추가 되는 상대 경로입니다. 를 가져오거나 기본 레지스트리 키를 설정 하려면 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 및 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
+ 합니다 *lpszSectionName* 매개 변수는 레지스트리 항목에 대 한 절대 경로가 아닙니다. 응용 프로그램에 대 한 기본 레지스트리 키의 끝에 추가 되는 상대 경로 것입니다. 가져오거나 설정할 기본 레지스트리 키, 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 하 고 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
   
 ##  <a name="setregistrybase"></a>  CWinAppEx::SetRegistryBase  
  응용 프로그램에 대 한 기본 레지스트리 경로 설정 합니다.  
@@ -1089,10 +1089,10 @@ LPCTSTR SetRegistryBase(LPCTSTR lpszSectionName = NULL);
  레지스트리 키의 경로 포함 하는 문자열입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 기본 레지스트리 위치 경로 포함 하는 문자열입니다.  
+ 기본 레지스트리 위치의 경로 포함 하는 문자열입니다.  
   
 ### <a name="remarks"></a>설명  
- 모든 메서드는 [CWinAppEx 클래스](../../mfc/reference/cwinappex-class.md) 레지스트리 시작 기본 위치에 액세스 하는 합니다. 이 메서드를 사용 하 여 해당 기본 레지스트리 위치를 변경 합니다. 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 기본 레지스트리 위치를 검색할 수 있습니다.  
+ 모든 메서드는 [CWinAppEx 클래스](../../mfc/reference/cwinappex-class.md) 액세스 하는 기본 위치에 레지스트리 시작 합니다. 이 메서드를 사용 하 여 해당 기본 레지스트리 위치를 변경 합니다. 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 하는 기본 레지스트리 위치를 검색 합니다.  
   
 ##  <a name="showpopupmenu"></a>  CWinAppEx::ShowPopupMenu  
  팝업 메뉴를 표시합니다.  
@@ -1109,21 +1109,21 @@ virtual BOOL ShowPopupMenu(
  메뉴 리소스 id입니다.  
   
  [in] *지점*  
- A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 화면 좌표에서 메뉴의 위치를 지정 하는 합니다.  
+ A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 화면 좌표에서 메뉴의 위치를 지정 하 합니다.  
   
  [in] *pWnd*  
  팝업 메뉴를 소유 하는 창에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 팝업 메뉴가 성공적으로 표시 되어 있으면 0이 아닌 그렇지 않으면 0입니다.  
+ 팝업 메뉴 성공적으로 표시 되 면 0이 아닌 값 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 연결 된 메뉴 표시 *uiMenuResId*합니다.  
+ 이 메서드는 연결 된 메뉴를 표시 *uiMenuResId*합니다.  
   
- 팝업 메뉴를 지원 하기 위해 있어야는 [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) 개체입니다. 초기화 되지 있을 경우는 `CContextMenuManager` 개체 `ShowPopupMenu` 실패 합니다.  
+ 팝업 메뉴를 지원 하려면 해야는 [CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md) 개체입니다. 초기화 되지 않은 있는 경우는 `CContextMenuManager` 개체를 `ShowPopupMenu` 실패 합니다.  
   
 ##  <a name="storewindowplacement"></a>  CWinAppEx::StoreWindowPlacement  
- 레지스트리에 주 프레임 창의 위치와 크기를 작성 하기 위해 프레임 워크에서 호출 됩니다.  
+ 주 프레임 창의 위치와 크기를 레지스트리에 쓸 하기 위해 프레임 워크에서 호출 됩니다.  
   
 ```  
 virtual BOOL StoreWindowPlacement(
@@ -1134,19 +1134,19 @@ virtual BOOL StoreWindowPlacement(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *nFlags*  
- 최소화 된 창을 하 고 운영 체제 최소화 및 복원 된 창 간에 전환 하는 방법의 위치를 제어 하는 플래그입니다.  
+ 최소화 된 창 및 운영 체제 최소화 및 복원 된 창 간에 전환 하는 방법의 위치를 제어 하는 플래그입니다.  
   
  [in] *nShowCmd*  
- 창의 표시 상태를 지정 하는 정수입니다. 가능한 값에 대 한 자세한 내용은 참조 [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow)합니다.  
+ 창의 표시 상태를 지정 하는 정수입니다. 가능한 값에 대 한 자세한 내용은 참조 하세요. [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow)합니다.  
   
  [in] *rectNormalPosition*  
- 복원 된 상태에 있을 때 주 프레임 창의 좌표를 포함 하는 사각형입니다.  
+ 복원된 상태에 있을 때 주 프레임 창의 좌표를 포함 하는 사각형입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 성공 하면 0이 아닌 그렇지 않으면 0입니다.  
+ 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 기본적으로 MFC 응용 프로그램 종료 되기 전에 주 프레임 창의 상태와 위치에 자동으로 저장합니다. 이 정보는 응용 프로그램에 대 한 기본 레지스트리 위치에 WindowPlacement 키 아래 Windows 레지스트리에서에 저장 됩니다. 응용 프로그램의 기본 레지스트리 위치에 대 한 자세한 내용은 참조 [CWinAppEx::GetRegistryBase](#getregistrybase)합니다.  
+ 기본적으로 MFC 응용 프로그램이 종료 되기 전에 주 프레임 창의 상태와 위치에 자동으로 저장합니다. 이 정보는 응용 프로그램에 대 한 기본 레지스트리 위치에 WindowPlacement 키 아래 Windows 레지스트리에 저장 됩니다. 응용 프로그램의 기본 레지스트리 위치에 대 한 자세한 내용은 참조 하세요. [CWinAppEx::GetRegistryBase](#getregistrybase)합니다.  
   
  주 프레임 창에 대 한 추가 정보를 저장 하려는 경우이 메서드를 재정의 합니다.  
   
@@ -1165,18 +1165,18 @@ BOOL WriteBinary(
  레지스트리 키의 이름을 포함 하는 문자열입니다.  
   
  [in] *pData*  
- 데이터를 저장 하는입니다.  
+ 데이터 저장소입니다.  
   
  [in] *nBytes*  
- 크기 *pData* (바이트)에서입니다.  
+ 크기인 *pData* (바이트)에서입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+ 이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- *lpszEntry* 매개 변수는 응용 프로그램에 대 한 기본 레지스트리 키 아래에 있는 레지스트리 항목의 이름입니다. 를 가져오거나 기본 레지스트리 키를 설정 하려면 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 및 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
+ 합니다 *lpszEntry* 매개 변수는 응용 프로그램에 대 한 기본 레지스트리 키 아래에 있는 레지스트리 항목의 이름입니다. 가져오거나 설정할 기본 레지스트리 키, 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 하 고 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
   
- 지정 된 키의 경우 *lpszEntry* 가 없으면이 메서드를 만들 합니다.  
+ 키를 지정 하면 *lpszEntry* 존재 하지 않는 것이 메서드는 만듭니다.  
   
 ##  <a name="writeint"></a>  CWinAppEx::WriteInt  
  숫자 데이터를 레지스트리에 씁니다.  
@@ -1192,18 +1192,18 @@ BOOL WriteInt(
  레지스트리 키의 이름을 포함 하는 문자열입니다.  
   
  [in] *n 값*  
- 데이터를 저장 하는입니다.  
+ 데이터 저장소입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+ 이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- *lpszEntry* 매개 변수는 응용 프로그램에 대 한 기본 레지스트리 키 아래에 있는 레지스트리 항목의 이름입니다. 를 가져오거나 기본 레지스트리 키를 설정 하려면 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 및 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
+ 합니다 *lpszEntry* 매개 변수는 응용 프로그램에 대 한 기본 레지스트리 키 아래에 레지스트리 항목의 이름입니다. 가져오거나 설정할 기본 레지스트리 키, 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 하 고 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
   
- 지정 된 키의 경우 *lpszEntry* 가 없으면이 메서드를 만들 합니다.  
+ 키를 지정 하면 *lpszEntry* 존재 하지 않는 것이 메서드는 만듭니다.  
   
 ##  <a name="writeobject"></a>  CWinAppEx::WriteObject  
- 파생 된 데이터에 기록 된 [CObject 클래스](../../mfc/reference/cobject-class.md) 레지스트리에 합니다.  
+ 파생 된 데이터를 기록 합니다 [CObject 클래스](../../mfc/reference/cobject-class.md) 레지스트리에 합니다.  
   
 ```  
 BOOL WriteObject(
@@ -1216,16 +1216,16 @@ BOOL WriteObject(
  설정할 값을 포함 하는 문자열입니다.  
   
  [in] *obj*  
- 에 대 한 참조 `CObject` 메서드는 저장 된 데이터입니다.  
+ 에 대 한 참조 `CObject` 메서드를 저장 하는 데이터입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+ 이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 작성는 *obj* 데이터 기본 레지스트리 키 아래에서 지정 된 값입니다. 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 현재 레지스트리 키를 확인할 수 있습니다.  
+ 이 메서드는 작성 된 *obj* 기본 레지스트리 키에서 지정된 된 값으로 데이터입니다. 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 현재 레지스트리 키를 확인 하려면.  
   
 ##  <a name="writesectionbinary"></a>  CWinAppEx::WriteSectionBinary  
- 이진 데이터를 레지스트리에서 값을 씁니다.  
+ 레지스트리 값으로 이진 데이터를 씁니다.  
   
 ```  
 BOOL WriteSectionBinary(
@@ -1246,15 +1246,15 @@ BOOL WriteSectionBinary(
  레지스트리에 쓸 데이터입니다.  
   
  [in] *nBytes*  
- 크기 *pData* (바이트)에서입니다.  
+ 크기인 *pData* (바이트)에서입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+ 이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- *lpszSubSection* 매개 변수는 레지스트리 항목에 대 한 절대 경로가 아닙니다. 것은 응용 프로그램에 대 한 기본 레지스트리 키의 끝에 추가 되는 상대 경로입니다. 를 가져오거나 기본 레지스트리 키를 설정 하려면 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 및 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
+ 합니다 *lpszSubSection* 매개 변수는 레지스트리 항목에 대 한 절대 경로가 아닙니다. 응용 프로그램에 대 한 기본 레지스트리 키의 끝에 추가 되는 상대 경로 것입니다. 가져오거나 설정할 기본 레지스트리 키, 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 하 고 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
   
- 지정 된 키의 경우 *lpszEntry* 가 없으면이 메서드를 만들 합니다.  
+ 키를 지정 하면 *lpszEntry* 존재 하지 않는 것이 메서드는 만듭니다.  
   
 ##  <a name="writesectionint"></a>  CWinAppEx::WriteSectionInt  
  숫자 데이터를 레지스트리에 씁니다.  
@@ -1277,15 +1277,15 @@ BOOL WriteSectionInt(
  레지스트리에 쓸 데이터입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+ 이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- *lpszSubSection* 매개 변수는 레지스트리 항목에 대 한 절대 경로가 아닙니다. 것은 응용 프로그램에 대 한 기본 레지스트리 키에 추가 되는 상대 경로입니다. 를 가져오거나 기본 레지스트리 키를 설정 하려면 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 및 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
+ 합니다 *lpszSubSection* 매개 변수는 레지스트리 항목에 대 한 절대 경로가 아닙니다. 응용 프로그램에 대 한 기본 레지스트리 키에 추가 되는 상대 경로 것입니다. 가져오거나 설정할 기본 레지스트리 키, 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 하 고 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
   
- 지정 된 키의 경우 *lpszEntry* 가 없으면이 메서드를 만들 합니다.  
+ 키를 지정 하면 *lpszEntry* 존재 하지 않는 것이 메서드는 만듭니다.  
   
 ##  <a name="writesectionobject"></a>  CWinAppEx::WriteSectionObject  
- 파생 된 데이터에 기록 된 [CObject 클래스](../../mfc/reference/cobject-class.md) 특정 레지스트리 값을 합니다.  
+ 파생 된 데이터를 기록 합니다 [CObject 클래스](../../mfc/reference/cobject-class.md) 특정 레지스트리 값으로.  
   
 ```  
 BOOL WriteSectionObject(
@@ -1302,18 +1302,18 @@ BOOL WriteSectionObject(
  설정할 값의 이름을 포함 하는 문자열입니다.  
   
  [in] *obj*  
- 데이터를 저장 하는입니다.  
+ 데이터 저장소입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+ 이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- *lpszSubSection* 매개 변수는 레지스트리 항목에 대 한 절대 경로가 아닙니다. 것은 응용 프로그램에 대 한 기본 레지스트리 키의 끝에 추가 되는 상대 경로입니다. 를 가져오거나 기본 레지스트리 키를 설정 하려면 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 및 [CWinAppEx::SetRegistryBase](#setregistrybase)각각.  
+ 합니다 *lpszSubSection* 매개 변수는 레지스트리 항목에 대 한 절대 경로가 아닙니다. 응용 프로그램에 대 한 기본 레지스트리 키의 끝에 추가 되는 상대 경로 것입니다. 가져오거나 설정할 기본 레지스트리 키, 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 하 고 [CWinAppEx::SetRegistryBase](#setregistrybase)각각.  
   
- 지정 된 값 *lpszEntry* 로 지정 된 레지스트리 키 아래에 존재 하지 않는 *lpszSubSection*,이 메서드는 값을 만듭니다.  
+ 지정 된 값 *lpszEntry* 지정 하는 레지스트리 키 아래에서 존재 하지 않는 *lpszSubSection*,이 메서드는 해당 값을 만듭니다.  
   
 ##  <a name="writesectionstring"></a>  CWinAppEx::WriteSectionString  
- 레지스트리에서 값에 문자열 데이터를 씁니다.  
+ 레지스트리 값으로 문자열 데이터를 씁니다.  
   
 ```  
 BOOL WriteSectionString(
@@ -1330,15 +1330,15 @@ BOOL WriteSectionString(
  설정할 값을 포함 하는 문자열입니다.  
   
  [in] *lpszValue*  
- 문자열 데이터를 레지스트리에 쓸입니다.  
+ 레지스트리에 쓸 문자열 데이터입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+ 이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- *lpszSubSection* 매개 변수는 레지스트리 항목에 대 한 절대 경로가 아닙니다. 것은 응용 프로그램에 대 한 기본 레지스트리 키의 끝에 추가 되는 상대 경로입니다. 를 가져오거나 기본 레지스트리 키를 설정 하려면 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 및 [CWinAppEx::SetRegistryBase](#setregistrybase)각각.  
+ 합니다 *lpszSubSection* 매개 변수는 레지스트리 항목에 대 한 절대 경로가 아닙니다. 응용 프로그램에 대 한 기본 레지스트리 키의 끝에 추가 되는 상대 경로 것입니다. 가져오거나 설정할 기본 레지스트리 키, 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 하 고 [CWinAppEx::SetRegistryBase](#setregistrybase)각각.  
   
- 지정 된 값 *lpszEntry* 에서 존재 하지 않는 *lpszSubSection*,이 메서드를 만들 합니다.  
+ 지정 된 값 *lpszEntry* 없습니다 *lpszSubSection*,이 메서드는이 만듭니다.  
   
 ##  <a name="writestring"></a>  CWinAppEx::WriteString  
  문자열 데이터를 레지스트리에 씁니다.  
@@ -1354,15 +1354,15 @@ BOOL WriteString(
  레지스트리 키의 이름을 포함 하는 문자열입니다.  
   
  [in] *lpszValue*  
- 데이터를 저장 하는입니다.  
+ 데이터 저장소입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+ 이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- *lpszEntry* 매개 변수는 응용 프로그램에 대 한 기본 레지스트리 키 아래에 있는 레지스트리 항목의 이름입니다. 를 가져오거나 기본 레지스트리 키를 설정 하려면 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 및 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
+ 합니다 *lpszEntry* 매개 변수는 응용 프로그램에 대 한 기본 레지스트리 키 아래에 레지스트리 항목의 이름입니다. 가져오거나 설정할 기본 레지스트리 키, 메서드를 사용 하 여 [CWinAppEx::GetRegistryBase](#getregistrybase) 하 고 [CWinAppEx::SetRegistryBase](#setregistrybase) 각각.  
   
- 지정 된 키의 경우 *lspzEntry* 가 없으면이 메서드를 만들 합니다.  
+ 키를 지정 하면 *lspzEntry* 존재 하지 않는 것이 메서드는 만듭니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [계층 구조 차트](../../mfc/hierarchy-chart.md)   

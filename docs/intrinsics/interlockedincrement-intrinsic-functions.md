@@ -54,17 +54,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 598365e4a5439bc17baaed5e603f30c10c49bc1e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 900200eb1894a4f7065a008aeada9b90e71c6fcd
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33337982"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42575790"
 ---
 # <a name="interlockedincrement-intrinsic-functions"></a>_InterlockedIncrement Intrinsic Functions
 **Microsoft 전용**  
   
- Win32에 대 한 컴파일러 내장 지원을 제공 [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] [InterlockedIncrement](http://msdn.microsoft.com/library/ms683614.aspx) 함수입니다.  
+ Win32 Windows SDK에 대 한 컴파일러 내장 함수 지원을 제공 [InterlockedIncrement](/windows/desktop/api/winbase/nf-winbase-interlockedincrement) 함수입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -116,9 +116,9 @@ __int64 _InterlockedIncrement64_nf(
   
 ## <a name="requirements"></a>요구 사항  
   
-|내장 함수|아키텍처|Header|  
+|내장 함수|아키텍처|헤더|  
 |---------------|------------------|------------|  
-|`_InterlockedIncrement`, `_InterlockedIncrement16`, `_InterlockedIncrement64`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
+|`_InterlockedIncrement`, `_InterlockedIncrement16`, `_InterlockedIncrement64`|x86, ARM, x64|\<intrin.h>|  
 |`_InterlockedIncrement_acq`, `_InterlockedIncrement_rel`, `_InterlockedIncrement_nf`, `_InterlockedIncrement16_acq`, `_InterlockedIncrement16_rel`, `_InterlockedIncrement16_nf`, `_InterlockedIncrement64_acq`, `_InterlockedIncrement64_rel`, `_InterlockedIncrement64_nf`|ARM|\<intrin.h>|  
   
 ## <a name="remarks"></a>설명  
@@ -128,14 +128,14 @@ __int64 _InterlockedIncrement64_nf(
   
  ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("no fence"의 약어) 접미사가 포함된 내장 함수는 메모리 장벽으로 작동하지 않습니다.  
   
- `lpAddend` 매개 변수가 가리키는 변수는 32비트 경계에 정렬되어야 합니다. 그렇지 않으면 다중 프로세서 x86 시스템과 x86이 아닌 시스템에서 이 함수가 실패합니다. 자세한 내용은 참조 [맞춤](../cpp/align-cpp.md)합니다.  
+ `lpAddend` 매개 변수가 가리키는 변수는 32비트 경계에 정렬되어야 합니다. 그렇지 않으면 다중 프로세서 x86 시스템과 x86이 아닌 시스템에서 이 함수가 실패합니다. 자세한 내용은 [맞춤](../cpp/align-cpp.md)합니다.  
   
  Win32 함수는 `Wdm.h` 또는 `Ntddk.h`에서 선언됩니다.  
   
  이러한 루틴은 내장 함수로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예제  
- 샘플을 사용 하는 방법에 대 한 `_InterlockedIncrement`, 참조 [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md)합니다.  
+## <a name="example"></a>예  
+ 샘플을 사용 하는 방법에 대 한 `_InterlockedIncrement`를 참조 하세요 [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md)합니다.  
   
 **Microsoft 전용 종료**  
   

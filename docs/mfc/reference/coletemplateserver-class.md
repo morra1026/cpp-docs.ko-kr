@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c77c8cc20588df8329951167db502a65a67b3756
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 980edf3b7e7f699b1fc870fda2e58f6422e3a1cb
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849342"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42541141"
 ---
 # <a name="coletemplateserver-class"></a>COleTemplateServer 클래스
 OLE 비주얼 편집 서버, 자동화 서버 및 링크 컨테이너(포함에 대한 링크를 지원하는 응용 프로그램)에 사용합니다.  
@@ -162,7 +162,7 @@ void UpdateRegistry(
   
  인수에 대 한 정보 *rglpszRegister* 하 고 *rglpszOverwrite* 호출을 통해 레지스트리에 기록 됩니다 [AfxOleRegisterServerClass](application-control.md#afxoleregisterserverclass)합니다. 두 인수는 NULL 때 등록 되는 기본 정보를 대부분의 응용 프로그램에 적합 합니다. 이러한 인수에 있는 정보의 구조에 대 한 자세한 내용은 `AfxOleRegisterServerClass`합니다.  
   
- 자세한 내용은 [IDispatch 인터페이스 구현](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945)합니다.  
+ 자세한 내용은 [IDispatch 인터페이스 구현](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [MFC 샘플 HIERSVR](../../visual-cpp-samples.md)   

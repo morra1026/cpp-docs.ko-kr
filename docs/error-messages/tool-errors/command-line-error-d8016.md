@@ -16,22 +16,22 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6f9709da189403f2594d76751430d30554bffe5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3c6ba57b7036aae652b9eb6d885f9105d8bf0826
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300620"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42607605"
 ---
 # <a name="command-line-error-d8016"></a>명령줄 오류 D8016
-'옵션 1' 및 '옵션 2' 명령줄 옵션이 호환 되지 않습니다.  
+'옵션 1' 및 'option2' 명령줄 옵션이 호환 되지 않습니다.  
   
  명령줄 옵션을 함께 지정할 수 없습니다.  
   
- 환경 변수, CL 같은 옵션 사양에 대 한을 확인 합니다.  
+ 같은 환경 변수를 CL 옵션 사양에 대 한 확인 합니다.  
   
- **/clr** 의미 **/EHa**, 다른를 지정할 수 없습니다 **/EH** 컴파일러 옵션을 **/clr**합니다. 자세한 내용은 [/clr(공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md)을 참조하세요.  
+ **/clr** 의미 **/EHa**, 기타 지정할 수 없습니다 **/EH** 컴파일러 옵션 **/clr**합니다. 자세한 내용은 [/clr(공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md)을 참조하세요.  
   
- 8016 업데이트 한 후 한 [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] 6.0 프로젝트: 프로젝트 업데이트 마법사 프로세스를 수행할 수 있게 해 **/RTC** 재정의 하는 프로젝트에 각 소스 코드 파일에 대 한는 **/RTC** 에 대 한 설정의 프로젝트입니다.  를 해결 하려면 변경 된 **/RTC** 기본 설정으로 프로젝트의 각 소스 코드 파일에 대 한 설정, 즉에 대 한 프로젝트 설정 **/RTC** 각 파일에 대해 적용 됩니다.  
+ 8016 Visual c + + 6.0 프로젝트를 업데이트 한 후: 프로젝트 업데이트 마법사 프로세스를 설정할 수 있습니다 **/RTC** 재정의 하는 프로젝트의 각 소스 코드 파일에 대 한 합니다 **/RTC** 프로젝트에 대 한 설정입니다.  를 해결 하려면 변경 된 **/RTC** 기본 설정으로 프로젝트의 각 소스 코드 파일에 대 한 설정, 즉 프로젝트 설정이 **/RTC** 각 파일에 대해 적용 됩니다.  
   
- 참조 [/RTC (런타임 오류 검사)](../../build/reference/rtc-run-time-error-checks.md) 변경에 대 한 내용은 **/RTC** 속성을 설정 합니다.
+ 참조 [/RTC (런타임 오류 검사)](../../build/reference/rtc-run-time-error-checks.md) 변경에 대 한 정보에 대 한 합니다 **/RTC** 속성을 설정 합니다.

@@ -24,12 +24,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4d93d1042f48ae877e61692b095be9442f9a7917
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: b9dc35df928d53d7d5ca5d833db8e87c96e1c7f4
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337179"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572788"
 ---
 # <a name="crestrictions-class"></a>CRestrictions 클래스
 스키마 행 집합에 대 한 제한을 지정할 수 있는 제네릭 클래스입니다.  
@@ -96,7 +96,7 @@ HRESULT Open(const CSession& session,
 ### <a name="remarks"></a>설명  
  스키마 행 집합에서 최대 7 개의 제한 지정할 수 있습니다.  
   
- 참조 [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) 각 스키마 행 집합에서 정의 된 제한에 대 한 정보에 대 한 합니다.  
+ 참조 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) 각 스키마 행 집합에서 정의 된 제한에 대 한 정보에 대 한 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)   

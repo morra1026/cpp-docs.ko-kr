@@ -14,16 +14,16 @@ helpviewer_keywords:
 - wWinMain function
 - wmain function
 ms.assetid: 41213c41-668c-40a4-8a1e-77d9eded720d
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 390f2a11b98a851b5f33b4e0a941a515421d5836
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: b82c233d1f03ae4679a355b6782bb9e7dd9dad15
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40011619"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42604065"
 ---
 # <a name="support-for-using-wmain"></a>wmain 사용 지원
 Visual c + +에서는 정의 **wmain** 함수와 유니코드 응용 프로그램에 와이드 문자 인수를 전달 합니다. 정식 매개 변수를 선언 **wmain**, 비슷한 형식으로 사용 하 여 `main`입니다. 와이드 문자 인수 또는 와이드 문자 환경 포인터를 프로그램에 전달할 수 있습니다. **wmain**에 대한 `argv` 및 `envp` 매개 변수는 `wchar_t*` 형식입니다. 예를 들어:  

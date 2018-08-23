@@ -5,21 +5,21 @@ ms.date: 12/30/2016
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: db4f9370-dd95-4896-b5b8-4b202284f579
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42f363cd3af602685890cb8957cf9978c88602a2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 87b95044c3a0b874d155b227db736c5e4b81f1b1
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33090551"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42613032"
 ---
 # <a name="obtaining-pointers-to-data-buffers-ccx"></a>데이터 버퍼에 대한 포인터 얻기(C++/CX)
 Windows 런타임에서 [Windows::Storage::Streams::IBuffer](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.ibuffer.aspx) 인터페이스는 데이터 버퍼에 액세스할 수 있는 언어 중립적인 스트림 기반 방법을 제공합니다. C++에서는 robuffer.h에 정의되어 있는 Windows 런타임 라이브러리 IBufferByteAccess 인터페이스를 사용하여 내부 바이트 배열에 대한 원시 포인터를 가져올 수 있습니다. 이 방법을 사용하여 데이터의 불필요한 복사본을 만들지 않고 바이트 배열을 내부에서 수정할 수 있습니다.  
   
- 다음 다이어그램에서는 원본이 [Windows::UI::Xaml::Media::Imaging WriteableBitmap](http://msdn.microsoft.com/%20library/windows/apps/windows.ui.xaml.media.imaging.writeablebitmap.aspx)인 XAML 이미지 요소를 보여 줍니다. 임의의 언어로 작성된 클라이언트 앱은 `WriteableBitmap` 에 대한 참조를 C++ 코드에 전달할 수 있으며, 그러면 C++는 내부 버퍼에서 가져올 참조를 사용할 수 있습니다. C + +로 작성 하는 유니버설 Windows 플랫폼 앱에서 Windows 런타임 구성 요소에 패키징하지 않고 소스 코드에서 직접 다음 예제의 함수를 사용할 수 있습니다.  
+ 다음 다이어그램에서는 원본이 [Windows::UI::Xaml::Media::Imaging WriteableBitmap](http://msdn.microsoft.com/%20library/windows/apps/windows.ui.xaml.media.imaging.writeablebitmap.aspx)인 XAML 이미지 요소를 보여 줍니다. 임의의 언어로 작성된 클라이언트 앱은 `WriteableBitmap` 에 대한 참조를 C++ 코드에 전달할 수 있으며, 그러면 C++는 내부 버퍼에서 가져올 참조를 사용할 수 있습니다. C + +로 작성 된 유니버설 Windows 플랫폼 앱에서 Windows 런타임 구성 요소에 패키징하지 않고 소스 코드에서 직접 다음 예제의 함수를 사용할 수 있습니다.  
   
  ![C&#43; &#43; 픽셀 데이터에 직접 액세스 하는 코드](../cppcx/media/ibufferbyteaccessdiagram.png "IBufferByteAccessDiagram")  
   
@@ -56,11 +56,11 @@ byte* Class1::GetPointerToPixelData(IBuffer^ pixelBuffer, unsigned int *length)
 ```  
   
 ## <a name="complete-example"></a>완성된 예제  
- 다음 단계를 전달 하는 C# 유니버설 Windows 플랫폼 앱을 만드는 방법을 보여는 `WriteableBitmap` c + + Windows 런타임 구성 요소 DLL에 있습니다. C++ 코드는 픽셀 버퍼에 대한 포인터를 가져오고 이미지에 대한 간단한 내부 수정을 수행합니다. 또는 C# 대신 Visual Basic, JavaScript 또는 C++에서 클라이언트 앱을 만들 수 있습니다. C++를 사용하는 경우에는 구성 요소 DLL이 필요하지 않습니다. MainPage 클래스 또는 정의한 다른 클래스에 이 메서드를 직접 추가하면 됩니다.  
+ 다음 단계를 전달 하는 C# 유니버설 Windows 플랫폼 앱을 만드는 방법을 보여 줍니다는 `WriteableBitmap` c + + Windows 런타임 구성 요소 DLL에 있습니다. C++ 코드는 픽셀 버퍼에 대한 포인터를 가져오고 이미지에 대한 간단한 내부 수정을 수행합니다. 또는 C# 대신 Visual Basic, JavaScript 또는 C++에서 클라이언트 앱을 만들 수 있습니다. C++를 사용하는 경우에는 구성 요소 DLL이 필요하지 않습니다. MainPage 클래스 또는 정의한 다른 클래스에 이 메서드를 직접 추가하면 됩니다.  
   
 #### <a name="create-the-client"></a>클라이언트 만들기  
   
-1.  C# 유니버설 Windows 플랫폼 앱을 만들려면 새 응용 프로그램 프로젝트 템플릿을 사용 합니다.  
+1.  C# 유니버설 Windows 플랫폼 앱을 만드는 새 앱 프로젝트 템플릿을 사용 합니다.  
   
 2.  MainPage.xaml에서  
   
@@ -134,7 +134,7 @@ byte* Class1::GetPointerToPixelData(IBuffer^ pixelBuffer, unsigned int *length)
   
 #### <a name="create-the-c-component"></a>C++ 구성 요소 만들기  
   
-1.  기존 솔루션에 새 c + + Windows 런타임 구성 요소를 추가 하 고 이름을 `ImageManipCPP`합니다. **솔루션 탐색기** 에서 해당 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가**, **참조**를 선택하여 C# 프로젝트에 해당 구성 요소에 대한 참조를 추가합니다.  
+1.  새 c + + Windows 런타임 구성 요소를 기존 솔루션에 추가 하 고 이름을 `ImageManipCPP`입니다. **솔루션 탐색기** 에서 해당 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가**, **참조**를 선택하여 C# 프로젝트에 해당 구성 요소에 대한 참조를 추가합니다.  
   
 2.  Class1.h에서  
   

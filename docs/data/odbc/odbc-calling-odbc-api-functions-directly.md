@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 386bc03234ccb29b293a413944f221189f466c80
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: c0bd8ade91e2e543e8ccf1c0a9b04525b8d81b43
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336597"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572685"
 ---
 # <a name="odbc-calling-odbc-api-functions-directly"></a>ODBC: ODBC API 함수 직접 호출
 데이터베이스 클래스를 제공 하기 위한 간단한 인터페이스를 [데이터 원본](../../data/odbc/data-source-odbc.md) 는 ODBC 보다 합니다. 결과적으로, 클래스는 모든 ODBC API를 캡슐화 하지 않습니다. 클래스의 기능을 벗어나는 모든 기능에 대 한 ODBC API 함수를 직접 호출 해야 합니다. ODBC 카탈로그 함수를 호출 해야 하는 예를 들어, (`::SQLColumns`, `::SQLProcedures`, `::SQLTables`, 등) 직접.  
@@ -48,7 +48,7 @@ ms.locfileid: "39336597"
   
 -   완료 하면 저장소 할당을 취소 합니다.  
   
- 다음이 단계에 대 한 자세한 내용은 참조 하세요. 합니다 [개방형 데이터베이스 연결 (ODBC)](https://msdn.microsoft.com/library/ms710252.aspx) MSDN 설명서에서 SDK.  
+ 다음이 단계에 대 한 자세한 내용은 참조 하세요. 합니다 [개방형 데이터베이스 연결 (ODBC)](/previous-versions/windows/desktop/ms710252\(v=vs.85\)) MSDN 설명서에서 SDK.  
   
  이러한 단계 외에도 함수 반환 값을 확인 하려면 프로그램 비동기 호출을 완료 하 고 기다리고 있지 않도록 추가 단계를 수행 해야 합니다. AFX_SQL_ASYNC 및 AFX_SQL_SYNC 매크로 사용 하 여 마지막 단계를 간소화할 수 있습니다. 자세한 내용은 [매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md) 에 *MFC 참조*합니다.  
 

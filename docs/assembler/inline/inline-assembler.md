@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5236bebdeef2db519556d3dace4c20d9529d0e23
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 4b45c55fbba37d27aa005480789cb490b891b103
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32055042"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571778"
 ---
 # <a name="inline-assembler"></a>인라인 어셈블러
 **Microsoft 전용**  
@@ -33,7 +33,7 @@ ms.locfileid: "32055042"
 > [!NOTE]
 >  인라인 어셈블러 코드를 포함하는 프로그램은 다른 하드웨어 플랫폼에 완벽하게 이식할 수 없습니다. 이식성을 위해 디자인할 경우 인라인 어셈블러를 사용하지 마십시오.  
   
- 인라인 어셈블리는 ARM 및 [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] 프로세서에서는 지원되지 않습니다.  다음 항목에서는 x86 프로세서에서 Visual C/C++ 인라인 어셈블러를 사용하는 방법을 설명합니다.  
+ 인라인 어셈블리는 ARM 및 x64 지원 되지 않습니다 프로세서.  다음 항목에서는 x86 프로세서에서 Visual C/C++ 인라인 어셈블러를 사용하는 방법을 설명합니다.  
   
 -   [인라인 어셈블러 개요](../../assembler/inline/inline-assembler-overview.md)  
   

@@ -198,17 +198,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69b27a3fd2fdce9836512e19c566b02c40afb78a
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 73f4f14f01cd9d881c0e9da0db8aa23d7946e719
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853519"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539334"
 ---
 # <a name="cmfcribbonbar-class"></a>CMFCRibbonBar 클래스
 `CMFCRibbonBar` 클래스는 Office 2007에서 사용한 것과 비슷한 리본 표시줄을 구현합니다.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
    
 ## <a name="syntax"></a>구문  
   

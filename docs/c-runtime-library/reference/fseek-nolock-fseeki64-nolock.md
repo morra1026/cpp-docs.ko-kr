@@ -19,6 +19,7 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
+- api-ms-win-crt-stdio-l1-1-0.dll
 apitype: DLLExport
 f1_keywords:
 - _fseek_nolock
@@ -39,12 +40,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40eca7e4944d74e8b86d5318702c954d86a3f54f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3b1ce866f7438ebc677156e6cfc9113f9725b65d
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397355"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42572195"
 ---
 # <a name="fseeknolock-fseeki64nolock"></a>_fseek_nolock, _fseeki64_nolock
 
@@ -78,15 +79,15 @@ int _fseeki64_nolock(
 
 ## <a name="return-value"></a>반환 값
 
-와 동일 [fseek](fseek-fseeki64.md) 및 [_fseeki64](fseek-fseeki64.md)각각.
+동일 [fseek](fseek-fseeki64.md) 하 고 [_fseeki64](fseek-fseeki64.md), 각각.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 잠기지 않은 버전의 [fseek](fseek-fseeki64.md) 및 [_fseeki64](fseek-fseeki64.md)각각. 이러한 작업은 동일 [fseek](fseek-fseeki64.md) 및 [_fseeki64](fseek-fseeki64.md) 제외 하 고 다른 스레드에서 방해 로부터 보호 되지 않습니다. 이러한 함수는 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 응용 프로그램과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
+이러한 함수는 잠기지 않은 버전의 [fseek](fseek-fseeki64.md) 하 고 [_fseeki64](fseek-fseeki64.md), 각각. 이러한 동일 [fseek](fseek-fseeki64.md) 하 고 [_fseeki64](fseek-fseeki64.md) 는 다른 스레드의 간섭 으로부터 보호 되지 않는다는 점을 제외 하 고 있습니다. 이러한 함수는 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 응용 프로그램과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**_fseek_nolock**, **_fseeki64_nolock**|\<stdio.h>|
 

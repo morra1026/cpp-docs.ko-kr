@@ -12,16 +12,16 @@ helpviewer_keywords:
 - string conversion [C++]
 - strings [C++], converting
 ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf7623c377e8fcce2a6a498176aaf9fb08a55b20
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: e21473c887c6f51406eb72d3cbb03a08df9e01f6
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40015094"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42608947"
 ---
 # <a name="how-to-convert-between-various-string-types"></a>방법: 다양한 문자열 형식 간 변환
 이 항목에서는 다양 한 Visual c + + 문자열 형식을 다른 문자열로 변환 하는 방법에 설명 합니다. 적용 되는 문자열 형식 포함 `char *`, `wchar_t*`를 [_bstr_t](../cpp/bstr-t-class.md)를 [CComBSTR](../atl/reference/ccombstr-class.md)를 [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md), 및 <xref:System.String?displayProperty=fullName>합니다. 모든 경우에 새 형식으로 변환할 때 문자열의 복사본이 만들어집니다. 새 문자열을 변경한 내용을 원래 문자열에서 영향을 주지 것입니다 그 반대로 가능 합니다.  

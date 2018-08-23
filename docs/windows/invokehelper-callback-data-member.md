@@ -17,32 +17,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0d6d767a77b68ad8585da711861d942abbe6b686
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: e602a8d2eef8e495ad732dcd61d0e8aa0b242130
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40013495"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42601002"
 ---
 # <a name="invokehelpercallback-data-member"></a>InvokeHelper::callback_ 데이터 멤버
-WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-TCallback callback_;  
-```  
-  
-## <a name="remarks"></a>설명  
- 이벤트가 발생할 때 호출할 이벤트 처리기를 나타냅니다.  
-  
- `TCallback` 템플릿 매개 변수는 이벤트 처리기의 유형을 지정 합니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** event.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## <a name="see-also"></a>참고 항목  
- [InvokeHelper 구조체](../windows/invokehelper-structure.md)   
- [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)
+
+WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+TCallback callback_;
+```
+
+## <a name="remarks"></a>설명
+
+이벤트가 발생할 때 호출할 이벤트 처리기를 나타냅니다.
+
+`TCallback` 템플릿 매개 변수는 이벤트 처리기의 유형을 지정 합니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** event.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## <a name="see-also"></a>참고 항목
+
+[InvokeHelper 구조체](../windows/invokehelper-structure.md)  
+[Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

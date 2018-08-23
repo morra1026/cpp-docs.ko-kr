@@ -11,16 +11,16 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Details::Heap Class
 ms.assetid: d6dcf9c0-8036-433f-9eb8-c53ec49b0993
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6a980583cb480ccc674e0606fa44c4399539e56
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d9bd4238f9e89a6d9c11f402aa0af2fa6f2418bd
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088247"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42591715"
 ---
 # <a name="platformdetailsheap-class"></a>Platform::Details::Heap 클래스
 이 클래스는 내부 전용이며 개발용으로 사용되지 않아야 합니다.  

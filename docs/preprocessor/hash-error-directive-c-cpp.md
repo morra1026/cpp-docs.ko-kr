@@ -18,15 +18,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba4f0e06798bc6419f8db0471f19588039eb679a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d2da939fe52e41e122ecd4926e34fb9c4be735ae
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33905574"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42539855"
 ---
 # <a name="error-directive-cc"></a>#error 지시문 (C/C++)
-`#error` 지시문 컴파일 타임에 사용자 지정 오류 메시지를 내보냅니다 하 고 다음 컴파일을 종료 합니다.  
+합니다 **#error** 지시문 컴파일 타임에 사용자 지정 오류 메시지를 내보내는 하 고 컴파일을 종료 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,7 +35,8 @@ ms.locfileid: "33905574"
 ```  
   
 ## <a name="remarks"></a>설명  
- 이 지시문에서 오류 메시지에 포함 된 *토큰 문자열* 매개 변수입니다. `token-string` 매개 변수는 매크로 확장이 적용 되지 않습니다. 이 지시어는 프로그램 불일치할 개발자 또는 제약 조건 위반을 알리기 위한 전처리 중 가장 유용 합니다. 다음 예에서는 전처리 하는 동안 처리 되는 오류를 보여 줍니다.  
+ 
+이 지시문이 생성 하는 오류 메시지에 포함 된 *토큰 문자열* 매개 변수입니다. 합니다 *토큰 문자열* 매개 변수는 매크로 확장이 적용 되지 않습니다. 이 지시어는 불일치를 프로그램의 개발자 또는 제약 조건 위반을 알리기 위한 전처리 중 가장 유용 합니다. 다음 예에서는 전처리 도중 처리 하는 오류를 보여 줍니다.  
   
 ```  
 #if !defined(__cplusplus)  
@@ -44,4 +45,5 @@ ms.locfileid: "33905574"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [전처리기 지시문](../preprocessor/preprocessor-directives.md)
+ 
+[전처리기 지시문](../preprocessor/preprocessor-directives.md)

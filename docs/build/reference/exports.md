@@ -1,7 +1,7 @@
 ---
 title: 내보내기 | Microsoft Docs
 ms.custom: ''
-ms.date: 07/11/2018
+ms.date: 08/20/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c642a623e76a9e1344a90efd4f0a47ad195c553e
-ms.sourcegitcommit: e5792fcb89b9ba64c401f90f4f26a8e45d4a2359
+ms.openlocfilehash: f6645ee4c890dab65cde8eab5dc18df1c31082c1
+ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39322191"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "42571825"
 ---
 # <a name="exports"></a>EXPORTS
 
@@ -49,11 +49,18 @@ EXPORTS
    func2=func1
 ```
 
-다른 모듈에서 내보내는 이름이 인 경우 내보내기의 이름을 DLL에서 사용 하 여 지정할 *other_module.exported_name*합니다. 예를 들어 DLL이 함수 `other_module.func1`을 내보내고 호출자가 이 함수를 `func2`로 사용하도록 하려는 경우 다음과 같이 지정할 수 있습니다.
+일부 다른 모듈에서 내보내는 이름이 인 경우 내보내기의 이름을 DLL에서 사용 하 여 지정할 *other_module.exported_name*합니다. 예를 들어 DLL이 함수 `other_module.func1`을 내보내고 호출자가 이 함수를 `func2`로 사용하도록 하려는 경우 다음과 같이 지정할 수 있습니다.
 
 ```DEF
 EXPORTS
    func2=other_module.func1
+```
+
+내보내기를 사용 하 여 DLL의 서 수의 서 수로 내보내는 다른 모듈에서 내보내는 이름이 인 경우 지정할 *other_module. #ordinal_number*합니다. 예를 들어, DLL 있는 서 수 42 이므로 그대로 사용 하 여 호출자가 원하는 다른 모듈에서 함수를 내보내는 경우 `func2`를 지정할 수 있습니다.
+
+```DEF
+EXPORTS
+   func2=other_module.#42
 ```
 
 C + + 함수에 대 한 이름 데코레이션을 사용 하는 Visual c + + 컴파일러, 때문에 데코레이팅된 이름을 internal_name 사용 하거나 소스 코드에서 extern "C"를 사용 하 여 내보낸된 함수를 정의 합니다. 컴파일러에는 또한 C 함수를 사용 하 여 데코 레이트 합니다 [__stdcall](../../cpp/stdcall.md) 호출 규칙에 밑줄 (_) 접두사와 접미사로 at 기호 (@) 뒤에 바이트 수 (10 진수) 인수 목록의 합니다.  

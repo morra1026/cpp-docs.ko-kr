@@ -15,39 +15,44 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2de0d40a4b506da2cec36719b8fa2fe9c22108d8
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 5d24968f4c076605a698e1af02c8e3fa3f556610
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39604215"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42589714"
 ---
 # <a name="operatorlt-operator-microsoftwrl"></a>연산자&lt; 연산자 (microsoft:: wrl)
-한 개체의 주소를 다른 미만 인지 확인 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-template<class T, class U>  
-bool operator<(const ComPtr<T>& a, const ComPtr<U>& b) throw();  
-template<class T, class U>  
-bool operator<(const Details::ComPtrRef<ComPtr<T>>& a, const Details::ComPtrRef<ComPtr<U>>& b) throw();  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *a*  
- 왼쪽 개체입니다.  
-  
- *b*  
- 오른쪽 개체입니다.  
-  
-## <a name="return-value"></a>반환 값  
- **true** 경우 주소의 *는* 의 주소 보다 작습니다 *b*고, 그렇지 않으면 **false**합니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** client.h  
-  
- **네임스페이스:** Microsoft::WRL  
-  
-## <a name="see-also"></a>참고 항목  
- [Microsoft::WRL 네임스페이스](../windows/microsoft-wrl-namespace.md)
+
+한 개체의 주소를 다른 미만 인지 확인 합니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+template<class T, class U>
+bool operator<(const ComPtr<T>& a, const ComPtr<U>& b) throw();
+template<class T, class U>
+bool operator<(const Details::ComPtrRef<ComPtr<T>>& a, const Details::ComPtrRef<ComPtr<U>>& b) throw();
+```
+
+### <a name="parameters"></a>매개 변수
+
+*a*  
+왼쪽 개체입니다.
+
+*b*  
+오른쪽 개체입니다.
+
+## <a name="return-value"></a>반환 값
+
+**true** 경우 주소의 *는* 의 주소 보다 작습니다 *b*고, 그렇지 않으면 **false**합니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** client.h
+
+**네임스페이스:** Microsoft::WRL
+
+## <a name="see-also"></a>참고 항목
+
+[Microsoft::WRL 네임스페이스](../windows/microsoft-wrl-namespace.md)

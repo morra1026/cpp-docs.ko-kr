@@ -19,36 +19,39 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ada5ed80a1077dc2fc50494dcf6fcae609b0b0c9
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 748b45b93f6145a03d8cd9745b7b61e3482ec53d
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39652434"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42603746"
 ---
 # <a name="changing-a-symbol39s-numeric-value"></a>기호 변경&#39;가 숫자 값
-단일 리소스와 연결 된 기호를 사용할 수 있습니다 합니다 [속성 창](/visualstudio/ide/reference/properties-window) 기호 값을 변경 합니다. 사용할 수는 [리소스 기호 대화 상자](../windows/resource-symbols-dialog-box.md) 리소스에 할당 되어 있지 않은 기호의 값을 변경 합니다. 자세한 내용은 [할당 되지 않은 기호 변경](../windows/changing-unassigned-symbols.md)합니다.  
-  
-### <a name="to-change-a-symbol-value-assigned-to-a-single-resource-or-object"></a>단일 리소스 또는 개체에 할당된 기호 값을 변경하려면  
-  
-1.  [리소스 뷰](../windows/resource-view-window.md), 리소스를 선택 합니다.  
-  
-    > [!NOTE]
-    >  프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.  
-  
-2.  에 **속성** 창, 형식 기호 이름 뒤에 등호 기호와 정수를 합니다 **ID** 상자 예를 들어:  
-  
-    ```  
-    IDC_EDITNAME=5100  
-    ```  
-  
- 새 값은 다음에 프로젝트를 저장할 때 기호 헤더 파일에 저장됩니다. 기호 이름만 ID 상자에 표시되고, 유효성 검사가 완료된 후에는 등호 기호와 값이 표시되지 않습니다.  
-  
- 관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 를 참조하세요. 관리되는 프로젝트에 리소스 파일 추가, 리소스 액세스, 정적 리소스 표시, 속성에 리소스 문자열 할당 등의 작업을 수동으로 수행하는 방법에 대한 자세한 내용은 [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6)를 선택합니다.  
-  
-## <a name="requirements"></a>요구 사항  
- Win32  
-  
-## <a name="see-also"></a>참고 항목  
- [기호 값 제한](../windows/symbol-value-restrictions.md)   
- [미리 정의된 기호 ID](../windows/predefined-symbol-ids.md)
+
+단일 리소스와 연결 된 기호를 사용할 수 있습니다 합니다 [속성 창](/visualstudio/ide/reference/properties-window) 기호 값을 변경 합니다. 사용할 수는 [리소스 기호 대화 상자](../windows/resource-symbols-dialog-box.md) 리소스에 할당 되어 있지 않은 기호의 값을 변경 합니다. 자세한 내용은 [할당 되지 않은 기호 변경](../windows/changing-unassigned-symbols.md)합니다.
+
+### <a name="to-change-a-symbol-value-assigned-to-a-single-resource-or-object"></a>단일 리소스 또는 개체에 할당된 기호 값을 변경하려면
+
+1. [리소스 뷰](../windows/resource-view-window.md), 리소스를 선택 합니다.
+
+   > [!NOTE]
+   > 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.
+
+2. 에 **속성** 창, 형식 기호 이름 뒤에 등호 기호와 정수를 합니다 **ID** 상자 예를 들어:
+
+    ```
+    IDC_EDITNAME=5100
+    ```
+
+새 값은 다음에 프로젝트를 저장할 때 기호 헤더 파일에 저장됩니다. 기호 이름만 ID 상자에 표시되고, 유효성 검사가 완료된 후에는 등호 기호와 값이 표시되지 않습니다.
+
+관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 를 참조하세요. 관리되는 프로젝트에 리소스 파일 추가, 리소스 액세스, 정적 리소스 표시, 속성에 리소스 문자열 할당 등의 작업을 수동으로 수행하는 방법에 대한 자세한 내용은 [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6)를 선택합니다.
+
+## <a name="requirements"></a>요구 사항
+
+Win32
+
+## <a name="see-also"></a>참고 항목
+
+[기호 값 제한](../windows/symbol-value-restrictions.md)  
+[미리 정의된 기호 ID](../windows/predefined-symbol-ids.md)
