@@ -18,33 +18,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a6300b02fccad672eef19b387d595a42e4b94ef2
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 757360f231f15bc7166008e0e8d003bebab9eb3d
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39645112"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42578757"
 ---
 # <a name="displaying-or-hiding-the-colors-window-image-editor-for-icons"></a>색상 창 표시 또는 숨기기(아이콘에 대한 이미지 편집기)
-### <a name="to-display-colors-window"></a>색 창을 표시 하려면  
-  
-1.  마우스 오른쪽 단추로 클릭는 **이미지 편집기** 창 선택 **색상 창 표시** 바로 가기 메뉴에서.  
-  
-     \- 또는 -  
-  
-2.  클릭 **색상 창 표시** 에 [이미지 메뉴](../windows/image-menu-image-editor-for-icons.md)합니다.  
-  
-### <a name="to-hide-the-colors-window"></a>색 창을 숨기려면  
-  
-1.  창 고정을 해제 합니다. 이렇게 하면 자동 숨기기 창을 사용 하 여에 없는 경우.  
-  
- \- 또는 -  
-  
--   클릭 합니다 **닫기** 단추입니다.  
-  
-## <a name="requirements"></a>요구 사항  
- 없음  
-  
-## <a name="see-also"></a>참고 항목  
- [색상 창](../windows/colors-window-image-editor-for-icons.md)   
- [아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)
+
+### <a name="to-display-colors-window"></a>색 창을 표시 하려면
+
+1. 마우스 오른쪽 단추로 클릭는 **이미지 편집기** 창 선택 **색상 창 표시** 바로 가기 메뉴에서.
+
+   \- 또는 -
+
+2. 클릭 **색상 창 표시** 에 [이미지 메뉴](../windows/image-menu-image-editor-for-icons.md)합니다.
+
+### <a name="to-hide-the-colors-window"></a>색 창을 숨기려면
+
+1. 창 고정을 해제 합니다. 이렇게 하면 자동 숨기기 창을 사용 하 여에 없는 경우.
+
+\- 또는 -
+
+- 클릭 합니다 **닫기** 단추입니다.
+
+## <a name="requirements"></a>요구 사항
+
+없음
+
+## <a name="see-also"></a>참고 항목
+
+[색상 창](../windows/colors-window-image-editor-for-icons.md)  
+[아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)

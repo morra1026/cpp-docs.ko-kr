@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 79ca2afc7270a69c443447d1b294ee7ec8bbe5a7
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: e08e8dae82675d9503575d543edfcaa2c96275e9
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704999"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541881"
 ---
 # <a name="linker-tools-error-lnk1112"></a>링커 도구 오류 LNK1112
 
@@ -33,7 +33,7 @@ ms.locfileid: "34704999"
 
 예를 들어 **/clr** 로 컴파일된 개체 파일 및 **/clr:pure** (컴퓨터 종류 CEE)로 컴파일된 개체 파일을 연결하려고 하면 링커에서 오류 LNK1112를 생성합니다. **/clr: pure** 컴파일러 옵션은 Visual Studio 2015에서 사용 되지 않으며 Visual Studio 2017에서 지원 되지 않습니다.
 
-마찬가지로 [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] 컴파일러를 사용하여 하나의 모듈을 만들고 x86 컴파일러를 사용하여 다른 모듈을 만든 경우 연결하려고 하면 링커에서 LNK1112를 생성합니다.
+마찬가지로, x64를 사용 하 여 모듈을 만든 경우 컴파일러 및 x86 사용 하 여 다른 모듈 컴파일러 및 연결을 하려고 링커에서 LNK1112를 생성 합니다.
 
 이 오류는 64비트 응용 프로그램을 개발하고 있지만 Visual C++ 64비트 컴파일러 중 하나를 설치하지 않은 경우에 발생할 수 있습니다. 이런 경우 64비트 구성을 사용할 수 없습니다. 이 문제를 해결하려면 Visual Studio 설치 관리자를 실행하고 누락된 C++ 구성 요소를 설치하세요.
 

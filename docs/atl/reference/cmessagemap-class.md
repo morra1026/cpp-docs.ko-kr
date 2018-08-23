@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 663ee462bf03e76ab15cbac05790c89dcaf07dca
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: ae6f41c2e8e8d142ee143d7ba0829751e1c230a3
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884856"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571415"
 ---
 # <a name="cmessagemap-class"></a>CMessageMap 클래스
 이 클래스는 개체의 메시지 맵 다른 개체에 의해 액세스를 허용 합니다.  
@@ -50,7 +50,7 @@ class ATL_NO_VTABLE CMessageMap
 ## <a name="remarks"></a>설명  
  `CMessageMap` 개체의 메시지를 허용 하는 추상 기본 클래스를 다른 개체에 의해 액세스할 수 매핑되는입니다. 메시지 맵을 노출 하는 개체에 대 한 순서로 해당 클래스에서 파생 되어야 `CMessageMap`합니다.  
   
- ATL 사용 `CMessageMap` 지원이 포함 된 windows 및 동적 메시지 맵 체 이닝 합니다. 예를 들어, 모든 클래스를 포함 하는 [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) 개체에서 파생 되어야 합니다 `CMessageMap`합니다. 다음 코드에서 가져온 것은 [SUBEDIT](../../visual-cpp-samples.md) 샘플입니다. 통해 [CComControl](../../atl/reference/ccomcontrol-class.md)서 `CAtlEdit` 클래스에서 자동으로 파생 됩니다 `CMessageMap`합니다.  
+ ATL 사용 `CMessageMap` 지원이 포함 된 windows 및 동적 메시지 맵 체 이닝 합니다. 예를 들어, 모든 클래스를 포함 하는 [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) 개체에서 파생 되어야 합니다 `CMessageMap`합니다. 다음 코드에서 가져온 것은 [SUBEDIT](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/SubEdit) 샘플입니다. 통해 [CComControl](../../atl/reference/ccomcontrol-class.md)서 `CAtlEdit` 클래스에서 자동으로 파생 됩니다 `CMessageMap`합니다.  
   
  [!code-cpp[NVC_ATL_Windowing#90](../../atl/codesnippet/cpp/cmessagemap-class_1.h)]  
   

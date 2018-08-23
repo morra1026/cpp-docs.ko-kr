@@ -33,15 +33,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2b54d0db22181089a8470c540ccd72f85c717fbe
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: e190f81c0097e707830f7ac09c801929ea3e85e9
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39340295"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571522"
 ---
 # <a name="icommandtextimpl-class"></a>ICommandTextImpl 클래스
-에 대 한 구현을 제공 합니다 [ICommandText](https://msdn.microsoft.com/library/ms714914.aspx) 인터페이스입니다.  
+에 대 한 구현을 제공 합니다 [ICommandText](/previous-versions/windows/desktop/ms714914\(v=vs.85\)) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -87,7 +87,7 @@ STDMETHOD(GetCommandText)(GUID * pguidDialect,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [ICommandText::GetCommandText](https://msdn.microsoft.com/library/ms709825.aspx) 에 *OLE DB Programmer's Reference*합니다. 합니다 *pguidDialect* 기본적으로 매개 변수가 무시 됩니다.  
+ 참조 [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 합니다 *pguidDialect* 기본적으로 매개 변수가 무시 됩니다.  
 
 ## <a name="setcommandtext"></a> Icommandtextimpl:: Setcommandtext
 기존 명령 텍스트를 대체 하는 명령 텍스트에 설정 합니다.  
@@ -100,7 +100,7 @@ STDMETHOD(SetCommandText)(REFGUID rguidDialect,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [icommandtext:: Setcommandtext](https://msdn.microsoft.com/library/ms709757.aspx) 에 *OLE DB Programmer's Reference*합니다. 
+ 참조 [icommandtext:: Setcommandtext](/previous-versions/windows/desktop/ms709757\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 
 
 ## <a name="strcommandtext"></a> Icommandtextimpl:: M_strcommandtext
 명령 텍스트 문자열을 저장합니다.  

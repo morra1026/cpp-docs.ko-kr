@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c12df1a2166c9ef5a1af8a33a5764a8899909edb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 75e0086f96f39814bd1a7e77df2adccc47d698fc
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377625"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42573389"
 ---
 # <a name="subsystem"></a>/SUBSYSTEM
 실행 가능 이미지에 필요한 실행 환경을 지정합니다.  
@@ -40,13 +40,13 @@ ms.locfileid: "32377625"
  다음과 같은 하위 시스템을 지정할 수 있습니다.  
   
  BOOT_APPLICATION  
- Windows 부팅 환경에서 실행되는 응용 프로그램입니다. 부팅 응용 프로그램에 대 한 자세한 내용은 참조 [BCD WMI 공급자에 대 한](http://msdn.microsoft.com/library/aa362639.aspx)합니다.  
+ Windows 부팅 환경에서 실행되는 응용 프로그램입니다. 부팅 응용 프로그램에 대 한 자세한 내용은 참조 하세요. [BCD WMI 공급자에 대 한](/previous-versions/windows/desktop/bcd/about-bcd)합니다.  
   
  CONSOLE  
  Windows 문자 모드 응용 프로그램입니다. 운영 체제는 콘솔 응용 프로그램에 콘솔을 제공합니다.  
   
  EFI(Extensible Firmware Interface) 이미지  
- EFI 하위 시스템 옵션은 Extensible Firmware Interface 환경에서 실행되는 실행 가능 이미지에 대해 설명합니다. 이 환경은 일반적으로 하드웨어와 함께 제공되고 운영 체제가 로드되기 전에 실행됩니다. EFI 이미지 형식 간의 주요 차이점은 이미지가 로드되는 메모리 위치와 이미지 호출에서 반환할 때 수행되는 동작입니다. EFI_APPLICATION 이미지는 컨트롤이 반환될 때 언로드됩니다. EFI_BOOT_SERVICE_DRIVER 또는 EFI_RUNTIME_DRIVER는 컨트롤이 반환되고 오류 코드가 표시되는 경우에만 언로드됩니다. EFI_ROM 이미지는 ROM에서 실행됩니다. 자세한 내용은 사양을 참조는 [통합 EFI 포럼](http://www.uefi.org/) 웹 사이트입니다.  
+ EFI 하위 시스템 옵션은 Extensible Firmware Interface 환경에서 실행되는 실행 가능 이미지에 대해 설명합니다. 이 환경은 일반적으로 하드웨어와 함께 제공되고 운영 체제가 로드되기 전에 실행됩니다. EFI 이미지 형식 간의 주요 차이점은 이미지가 로드되는 메모리 위치와 이미지 호출에서 반환할 때 수행되는 동작입니다. EFI_APPLICATION 이미지는 컨트롤이 반환될 때 언로드됩니다. EFI_BOOT_SERVICE_DRIVER 또는 EFI_RUNTIME_DRIVER는 컨트롤이 반환되고 오류 코드가 표시되는 경우에만 언로드됩니다. EFI_ROM 이미지는 ROM에서 실행됩니다. 자세한 내용은 사양을 참조를 [Unified EFI Forum](http://www.uefi.org/) 웹 사이트입니다.  
   
  NATIVE  
  커널 모드 장치 드라이버 및 네이티브 시스템 프로세스와 같이 하위 시스템 환경 없이 실행되는 코드입니다. 이 옵션은 일반적으로 Windows 시스템 기능에 예약되어 있습니다.  
@@ -68,9 +68,9 @@ ms.locfileid: "32377625"
   
 -   `major` 및 `minor` 값은 0에서 65,535 사이여야 합니다.  
   
- 하위 시스템 선택은 프로그램의 기본 시작 주소에 영향을 줍니다. 자세한 내용은 참조 [/ENTRY (진입점 기호)](../../build/reference/entry-entry-point-symbol.md), 링커 /ENTRY:*함수* 옵션입니다.  
+ 하위 시스템 선택은 프로그램의 기본 시작 주소에 영향을 줍니다. 자세한 내용은 [/ENTRY (진입점 기호)](../../build/reference/entry-entry-point-symbol.md), linker /ENTRY:*함수* 옵션입니다.  
   
- 각 하위 시스템에 대 한 주 및 부 버전 번호에 대 한 최소값 및 기본값 값을 포함 한 자세한 내용은 참조는 [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) 링커 옵션입니다.  
+ 각 하위 시스템의 주 및 부 버전 번호에 대 한 최소 및 기본 값을 비롯 한 자세한 내용은 참조는 [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) 링커 옵션입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [EDITBIN 옵션](../../build/reference/editbin-options.md)

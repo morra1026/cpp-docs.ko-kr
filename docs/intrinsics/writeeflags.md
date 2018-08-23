@@ -16,15 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a2885f2ea103ad43535b11c526b96ed42de45fd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9a6f3d8f8a3527e193ed1bec0f7dc4b563593b84
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340530"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540112"
 ---
 # <a name="writeeflags"></a>__writeeflags
-지정된 된 값에는 프로그램 작성 상태 및 제어 (EFLAGS)을 등록 합니다.  
+지정 된 값이 프로그램에 기록 상태 및 컨트롤 (EFLAGS) 등록 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,7 +37,7 @@ void __writeeflags(unsigned __int64 Value);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] `Value`|EFLAGS 레지스터에 쓸 값입니다. `Value` 매개 변수는 32 비트 및 64 비트는 32 비트 플랫폼에 대해 64 비트 플랫폼에 대해 합니다.|  
+|[in] `Value`|EFLAGS 레지스터에 쓸 값입니다. `Value` 매개 변수는 32 비트 및 64 비트는 32 비트 플랫폼에 대 한 장기 64 비트 플랫폼에 대 한 시간입니다.|  
   
 ## <a name="remarks"></a>설명  
  이러한 루틴은 내장 함수로 사용할 수 있습니다.  
@@ -46,9 +46,9 @@ void __writeeflags(unsigned __int64 Value);
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__writeeflags`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__writeeflags`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 **Microsoft 전용 종료**  
   

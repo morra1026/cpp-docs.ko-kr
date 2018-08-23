@@ -16,16 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - VectorView Class
 ms.assetid: 05cd461d-dce7-49d3-b0e7-2e5c78ed8192
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 937342c340b085f2e2bdeef8ed7df21dae826152
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b0020937bae5f6392c7d9e5e8daf22f3cc4e6a31
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33092912"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42584108"
 ---
 # <a name="platformcollectionsvectorview-class"></a>Platform::Collections::VectorView 클래스
 인덱스로 각각 액세스할 수 있는 순차 개체 컬렉션의 읽기 전용 보기를 나타냅니다. 템플릿 매개 변수로 지정된 컬렉션의 각 개체 형식입니다.  
@@ -45,7 +45,7 @@ template <typename T, typename E>
  `T`형식의 값을 사용하여 같음을 테스트하기 위한 이진 조건자를 지정합니다. 기본값은 `std::equal_to<T>`입니다.  
   
 ### <a name="remarks"></a>설명  
- `VectorView` 클래스가 구현 하는 [Windows::Foundation::Collections::IVectorView\<T >](http://go.microsoft.com/fwlink/p/?LinkId=262411) 인터페이스와 표준 템플릿 라이브러리 반복기에 대 한 지원.  
+ 합니다 `VectorView` 클래스가 구현 하는 [Windows::Foundation::Collections::IVectorView\<T >](http://go.microsoft.com/fwlink/p/?LinkId=262411) 인터페이스와 표준 템플릿 라이브러리 반복기에 대 한 지원을 합니다.  
   
 ### <a name="members"></a>멤버  
   
@@ -88,7 +88,7 @@ virtual Windows::Foundation::Collections::IIterator<T>^
  VectorView의 첫 번째 요소를 지정하는 반복기입니다.  
   
 ### <a name="remarks"></a>설명  
- 선언 된 변수에 반환 값을 할당 하는 First()에서 반환 된 반복기를 보유 하는 편리한 방법은 **자동** 형식 추론 키워드입니다. 예를 들어, `auto x = myVectorView->First();`을 입력합니다.  
+ First ()에서 반환 된 반복기를 보유 하는 편리한 방법을 사용 하 여 선언 된 변수에 반환 값을 할당 하는 것은 **자동** 형식 추론 키워드입니다. 예를 들어, `auto x = myVectorView->First();`을 입력합니다.  
   
 
 
@@ -109,7 +109,7 @@ T GetAt(
  VectorView 개체의 특정 요소를 지정하는 0부터 시작하는 부호 없는 정수입니다.  
   
 ### <a name="return-value"></a>반환 값  
- `index` 매개 변수로 지정된 요소입니다. 요소 형식은 VectorView 템플릿 매개 변수로 지정 된 *T*합니다.  
+ `index` 매개 변수로 지정된 요소입니다. 요소 형식은 VectorView 템플릿 매개 변수로 지정 *T*합니다.  
   
 
 
@@ -131,7 +131,7 @@ virtual unsigned int GetMany(
  검색할 항목 시작 부분의 0부터 시작하는 인덱스입니다.  
   
  `dest`  
- 이 작업이 완료 될 때, 지정 된 요소에서 시작 하는 항목의 배열을 `startIndex` VectorView의 마지막 요소에서 끝나는 합니다.  
+ 이 작업이 완료 될 때를 지정 하는 요소에서 시작 하는 항목의 배열을 `startIndex` VectorView의 마지막 요소에서 끝나는 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  검색된 항목의 수입니다.  
@@ -242,7 +242,7 @@ VectorView(
  현재 VectorView를 초기화하는 데 사용되는 개체 컬렉션의 형식입니다.  
   
  il  
- A [std:: initializer_list](../standard-library/initializer-list-class.md) 요소에서 VectorView를 초기화 하는 데 사용 됩니다.  
+ A [std:: initializer_list](../standard-library/initializer-list-class.md) 요소가 VectorView를 초기화 하는 데 사용 됩니다.  
   
  `N`  
  현재 VectorView를 초기화하는 데 사용되는 개체 컬렉션의 요소 수입니다.  
@@ -266,10 +266,10 @@ VectorView(
  A [std:: array](../standard-library/array-class-stl.md) 현재 VectorView를 초기화 하는 데 사용 되는 개체입니다.  
   
  `first`  
- 현재 VectorView를 초기화하는 데 사용되는 개체 시퀀스의 첫 번째 요소입니다. 유형의 `first` 방법으로 전달 *완벽 전달*합니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.  
+ 현재 VectorView를 초기화하는 데 사용되는 개체 시퀀스의 첫 번째 요소입니다. 유형의 `first` 이용 하 여 전달 됩니다 *완벽 전달*합니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.  
   
  `last`  
- 현재 VectorView를 초기화하는 데 사용되는 개체 시퀀스의 마지막 요소입니다. 유형의 `last` 방법으로 전달 *완벽 전달*합니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.  
+ 현재 VectorView를 초기화하는 데 사용되는 개체 시퀀스의 마지막 요소입니다. 유형의 `last` 이용 하 여 전달 됩니다 *완벽 전달*합니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.  
   
 
 

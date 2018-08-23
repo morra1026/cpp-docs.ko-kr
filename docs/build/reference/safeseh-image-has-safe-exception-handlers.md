@@ -18,33 +18,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54d13e6922650f0193d4bbc3469d4acf25904234
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9156fd0d4d0433cfb975c242bc87008471bc4723
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377911"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572510"
 ---
 # <a name="safeseh-image-has-safe-exception-handlers"></a>/SAFESEH(이미지에 안전한 예외 처리기 포함)
 ```  
 /SAFESEH[:NO]  
 ```  
   
- 때 **/SAFESEH** 지정, 링커에서 이미지의 안전한 예외 처리기 테이블을 만들 수 있을 경우에 이미지를 생성 합니다. 이 테이블은 예외 처리기는 이미지에 사용할 운영 체제를 지정 합니다.  
+ 때 **/SAFESEH** 지정 않으면 링커에서 이미지의 안전한 예외 처리기 테이블을 만들 수 있을 경우에 이미지를 생성 합니다. 이 테이블은 예외 처리기는 해당 이미지에 올바른 운영 체제를 지정 합니다.  
   
- **/SAFESEH** x86에 대 한 연결 때만 유효 대상으로 합니다. **/SAFESEH** 예외 처리기에 이미 있는 플랫폼에 대 한 지원 되지 않습니다. 예를 들어 [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] 및 ARM에서는 모든 예외 처리기가 PDATA에 표시됩니다. ML64.exe는 ml64 함수를 통해 해제할 수 있도록 이미지에 추가 (XDATA 및 PDATA) SEH 정보를 생성 하는 주석을 지원 합니다. 참조 [MASM (ml64.exe) x64](../../assembler/masm/masm-for-x64-ml64-exe.md) 자세한 정보에 대 한 합니다.  
+ **/SAFESEH** 은 유효한 경우에 x86에 대 한 링크 대상입니다. **/SAFESEH** 예외 처리기에 이미 있는 플랫폼에 대 한 지원 되지 않습니다. 예를 들어, x64 및 ARM에서 모든 예외 처리기 PDATA에 표시 됩니다. ML64.exe는 ml64 함수를 통해 해제할 수 있도록 이미지로 내보내는 SEH 정보 (XDATA 및 PDATA) 주석 추가 지원 합니다. 참조 [MASM (ml64.exe) x64](../../assembler/masm/masm-for-x64-ml64-exe.md) 자세한 내용은 합니다.  
   
- 경우 **/SAFESEH** 을 지정 하지 않으면 링커는 모든 모듈 안전한 예외 처리 기능과 호환 될 때만 안전한 예외 처리기 테이블을 사용 하 여 이미지를 생성 합니다. 모든 모듈 안전한 예외 처리 기능과 호환 되었으면 결과 이미지에 안전한 예외 처리기 테이블을 포함 되지 않습니다. 경우 [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) WINDOWSCE 또는 EFI_ * 옵션 중 하나를 지정 수 모두 하위 시스템으로 안전한 예외 처리기 테이블을 사용 하 여 이미지를 생성 하기 위해 링커 시도 하지 것입니다는 정보를 사용 합니다.  
+ 하는 경우 **/SAFESEH** 지정 하지 않으면 모든 모듈 안전한 예외 처리 기능을 사용 하 여 호환 되는 경우 링커는 안전한 예외 처리기 테이블을 사용 하 여 이미지를 생성 합니다. 모든 모듈에 안전한 예외 처리 기능과 호환 없는 경우 결과 이미지에 안전한 예외 처리기 테이블을 포함 되지 않습니다. 하는 경우 [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) WINDOWSCE 또는 EFI_ * 옵션 중 하나를 지정 합니다. 하위 시스템 하나도 가능으로 링커는 안전한 예외 처리기 테이블을 사용 하 여 이미지를 생성 하기 위해 시도 하지 않습니다 정보를 사용 합니다.  
   
- 경우 **/SAFESEH:NO** 를 지정 링커는 모든 모듈 안전한 예외 처리 기능과와 호환 되는 경우에 안전한 예외 처리기 테이블을 사용 하 여 이미지를 생성 하지 않습니다.  
+ 하는 경우 **/SAFESEH:NO** 지정, 링커는 모든 모듈은 안전한 예외 처리 기능을 사용 하 여 호환 되는 경우에 안전한 예외 처리기 테이블을 사용 하 여 이미지를 생성 하지 않습니다.  
   
- 이미지를 생성할 수 링커에 대 한 가장 일반적인 이유 하나 이상의 입력된 파일 (모듈)을 링커에 안전한 예외 처리기 기능과 호환 되지 않았습니다. 때문입니다. 안전한 예외 처리기와 호환 되지 모듈에 대 한 일반적인 이유에는 이전 버전의 Visual c + + 컴파일러로 작성 되었으므로입니다.  
+ 링커 입력된 파일 (모듈)의 하나 이상의 안전한 예외 처리기 기능을 사용 하 여 호환 되지 않으므로 이미지를 생성할 수 있으려면 필요가 링커에 대 한 가장 일반적인 이유. 안전한 예외 처리기를 사용 하 여 호환 되지 모듈에 대 한 일반적인 이유는 이전 버전의 Visual c + + 컴파일러를 사용 하 여 만들어졌기 때문에 경우  
   
  사용 하 여 구조적된 예외 처리기로 함수를 등록할 수도 있습니다 [합니다. SAFESEH](../../assembler/masm/dot-safeseh.md)합니다.  
   
- 기존 표시할 수 없는 이진 또는 있는 것으로 안전한 예외 처리기 (예외 처리기가 없는); 빌드 시에 안전한 예외 처리에 대 한 정보를 추가 합니다.  
+ 기존 표시할 수 없는 안전한 예외 처리기 (또는 예외 처리기가 없는) 것으로 이진 빌드 시간에 안전한 예외 처리에 대 한 정보를 추가 해야 합니다.  
   
- C 런타임 라이브러리를 사용 하 여 응용 프로그램에 안전한 예외 처리기 테이블을 작성 하는 링커의 기능에 따라 다릅니다. 사용 하 여 링크 [/NODEFAULTLIB](../../build/reference/nodefaultlib-ignore-libraries.md) 안전한 예외 처리기 테이블, (예: loadcfg.c CRT 소스 파일에서 확인할 수 있습니다) 로드 구성 구조를 제공 해야 하 고 Visual c + +에 대해 정의 된 모든 항목을 포함 하 합니다. 예를 들어:  
+ 링커의 안전한 예외 처리기 테이블을 작성할 수는 C 런타임 라이브러리를 사용 하 여 응용 프로그램에 따라 달라 집니다. 사용 하 여 링크 [/NODEFAULTLIB](../../build/reference/nodefaultlib-ignore-libraries.md) 안전한 예외 처리기 테이블을 (예: loadcfg.c CRT 소스 파일에서 찾을 수 있습니다)를 로드 구성 구조를 제공 해야 Visual c + +에 대해 정의 된 모든 항목을 포함 하는 합니다. 예를 들어:  
   
 ```  
 #include <windows.h>  
@@ -107,13 +107,13 @@ const IMAGE_LOAD_CONFIG_DIRECTORY32_2 _load_config_used = {
   
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면  
   
-1.  프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.  
+1.  프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.  
   
 2.  선택 된 **링커** 폴더입니다.  
   
 3.  선택 된 **명령줄** 속성 페이지.  
   
-4.  에 옵션을 입력에서 **추가 옵션** 상자입니다.  
+4.  에 대 한 옵션을 입력 합니다 **추가 옵션** 상자입니다.  
   
 ### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면  
   

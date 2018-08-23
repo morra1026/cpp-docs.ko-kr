@@ -16,20 +16,20 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a759533a8e88ef05e3660e0e9b36525df378334
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7dec5377bca1cc56e2444d7466fc5107d594205a
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32369054"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572388"
 ---
 # <a name="how-to-embed-a-manifest-inside-a-cc-application"></a>방법: C/C++ 응용 프로그램에 매니페스트 포함
-C/c + + 응용 프로그램 (또는 라이브러리) 한지의 매니페스트가 대부분의 시나리오에서 올바른 런타임 동작을 보장 하기 때문에 최종 이진에 포함 하는 것이 좋습니다. 기본적으로 [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] 참조; 소스 파일에서 프로젝트를 빌드할 때 매니페스트를 포함 하려고 [Visual Studio에서 매니페스트 생성](../build/manifest-generation-in-visual-studio.md) 자세한 정보에 대 한 합니다. 그러나를 nmake를 사용 하 여 응용 프로그램을 빌드하는 경우 일부 기존의 메이크파일을 변경이 필요 합니다. 이 섹션에는 최종 이진 매니페스트를 자동으로 포함 하도록 기존 메이크파일을 변경 하는 방법을 보여 줍니다.  
+C/c + + 응용 프로그램 (또는 라이브러리)이 대부분의 시나리오에서 올바른 런타임 동작을 보장 하므로 최종 이진 포함 된 매니페스트는 것이 좋습니다. 기본적으로 Visual Studio 소스 파일에서 프로젝트를 빌드할 때 매니페스트를 포함 하려고 참조 [Visual Studio에서 매니페스트 생성](../build/manifest-generation-in-visual-studio.md) 자세한 내용은 합니다. 그러나를 nmake를 사용 하 여 응용 프로그램을 빌드하는 경우 일부 기존 메이크파일으로 변경이 필요 합니다. 이 섹션에서는 자동으로 최종 이진에는 매니페스트를 포함 하도록 기존 메이크파일을 변경 하는 방법에 설명 합니다.  
   
 ## <a name="two-approaches"></a>두 가지 방법  
- 응용 프로그램 또는 라이브러리에는 매니페스트를 포함 하는 방법은 두 가지가 있습니다.  
+ 응용 프로그램이 나 라이브러리에는 매니페스트를 포함 하는 방법은 두 가지가 있습니다.  
   
--   증분 빌드를 수행 하지 않습니다 빌드 후 단계는 다음과 같은 명령줄을 사용 하 여 매니페스트를 직접 포함할 수 있습니다.  
+-   증분 빌드를 수행 하지 않습니다 하는 경우 빌드 후 단계로 다음과 같은 명령줄을 사용 하 여 매니페스트를 직접 포함할 수 있습니다.  
   
      **mt.exe-MyApp.exe.manifest 매니페스트-outputresource:MyApp.exe;1**  
   
@@ -37,20 +37,20 @@ C/c + + 응용 프로그램 (또는 라이브러리) 한지의 매니페스트�
   
      **mt.exe-MyLibrary.dll.manifest 매니페스트-outputresource:MyLibrary.dll;2**  
   
-     (EXE, DLL에 대 한 2에 대해 1)  
+     (exe, DLL에 대 한 2 1.)  
   
--   증분 빌드를 수행 하는 경우 다음과 같이 리소스를 직접 편집 증분 빌드가 사용 하지 않도록 설정 되며 전체 다시; 따라서 다른 방법을 수행 해야 합니다.  
+-   증분 빌드를 수행 하는 경우 다음과 같이 리소스를 직접 편집 증분 빌드를 사용 하지 않도록 설정 되며 전체 다시; 따라서 다른 방법을 사용 해야 합니다.  
   
-    -   MyApp.exe.manifest 파일을 생성 하기 위해 이진 파일에 연결 합니다.  
+    -   MyApp.exe.manifest 파일을 생성 하기 위해 이진 파일을 연결 합니다.  
   
     -   매니페스트 리소스 파일로 변환 합니다.  
   
-    -   다시 이진 파일에 매니페스트 리소스를 포함 하려면 (증분적으로) 연결 합니다.  
+    -   다시 연결할 (증분) 이진 파일에 매니페스트 리소스를 포함 합니다.  
   
- 다음 예에서는 두 가지 기술을 통합 하는 메이크파일을 변경 하는 방법을 보여 줍니다.  
+ 다음 예제에서는 두 가지 기술을 통합 하는 메이크파일을 변경 하는 방법을 보여 줍니다.  
   
 ## <a name="makefiles-before"></a>메이크파일 (이전)  
- Nmake 스크립트 MyApp.exe, 하나의 파일에서 작성 된 간단한 응용 프로그램에 대 한 고려 합니다.  
+ MyApp.exe에 하나의 파일에서 작성 된 간단한 응용 프로그램에 대 한 nmake 스크립트를 고려 합니다.  
   
 ```  
 # build MyApp.exe  
@@ -70,9 +70,9 @@ clean :
     del MyApp.obj MyApp.exe  
 ```  
   
- 이 스크립트 실행 된 경우 Visual c + +로 변경 하지 않고, MyApp.exe 성공적으로 만듭니다. 또한 런타임에 종속 어셈블리를 로드 하는 운영 체제에서 사용 하기 위해 외부 매니페스트 파일 MyApp.exe.manifest를 만듭니다.  
+ 이 스크립트를 Visual c + +를 사용 하 여 변경 되지 않고 실행 하는 경우 성공적으로 MyApp.exe를 만듭니다. 또한 런타임에 종속 어셈블리를 로드 하는 운영 체제에서 사용할 외부 매니페스트 파일 MyApp.exe.manifest를 만듭니다.  
   
- Nmake 스크립트가 MyLibrary.dll 매우 유사합니다.  
+ Nmake 스크립트가 MyLibrary.dll 매우 유사 합니다.  
   
 ```  
 # build MyLibrary.dll  
@@ -96,7 +96,7 @@ clean :
 ```  
   
 ## <a name="makefiles-after"></a>메이크파일 (이후)  
- 빌드하는 데 원래 메이크파일에 서를 4 개의 약간 변경 해야 하는 매니페스트를 포함 합니다. MyApp.exe 메이크파일:  
+ 원래 메이크파일을 4 개의 약간 변경 해야 하는 매니페스트를 포함 하 여 빌드해야 합니다. MyApp.exe 메이크파일:  
   
 ```  
 # build MyApp.exe  
@@ -159,9 +159,9 @@ clean :
 #^^^^^^^^^^^^^^^^^^^^^^^^^ Change #4. (Add full path if necessary.)  
 ```  
   
- 메이크파일은 이제 실제 작업 시간, makefile.inc 및 makefile.targ.inc 수행 하는 두 개의 파일이 포함 됩니다.  
+ 이제 메이크파일 실제 작업과 makefile.inc makefile.targ.inc 수행 하는 두 개의 파일을 포함 합니다.  
   
- Makefile.inc 만들고에 다음 텍스트를 복사 합니다.  
+ Makefile.inc 만들고를 다음을 복사 합니다.  
   
 ```  
 # makefile.inc -- Include this file into existing makefile at the very top.  
@@ -232,7 +232,7 @@ _VC_MANIFEST_CLEAN=
 ####################################################  
 ```  
   
- 이제 makefile.targ.inc 만들고에 다음 텍스트를 복사 합니다.  
+ 이제 makefile.targ.inc 만들고를 다음을 복사 합니다.  
   
 ```  
 # makefile.targ.inc - include this at the very bottom of the existing makefile  

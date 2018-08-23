@@ -16,31 +16,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b459fbf77b75a61350fd1aa69c00749ceb1afc4c
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: ee34744a110b31eba125e4b6cbef48207081f5d7
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40017242"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42578642"
 ---
 # <a name="predefined-symbol-ids"></a>미리 정의된 기호 ID
-새 프로젝트를 시작하면 프로젝트 형식에 따라 일부 기호 ID가 바로 사용할 수 있도록 미리 정의되어 있습니다. 이러한 기호 ID는 다양한 라이브러리와 MFC 등의 프로젝트 형식을 지원합니다. 이 ID는 응용 프로그램에 대체로 포함되는 일반 작업 또는 마우스나 프린터와 같은 하드웨어 항목의 작업 등을 나타냅니다.  
-  
- 이러한 기호 ID는 리소스 작업을 할 때 중요해집니다. 액셀러레이터 키 테이블을 편집할 때 사용할 수 있으며, 일부는 이미 가상 키와 연결되어 있습니다. 통해 사용할 수도 있습니다는 [속성 창](/visualstudio/ide/reference/properties-window)합니다. 미리 정의된 기호 ID 중 하나를 새 리소스에 지정하거나 ID에 액셀러레이터 키를 할당할 수 있습니다. 그러면 해당 기호 ID와 관련된 기능이 해당 키 조합과 자동 연결됩니다.  
-  
- 다음 라이브러리에는 프로젝트의 일부로 나타나는 미리 정의된 기호가 있습니다.  
-  
--   [미리 정의된 MFC 기호](../windows/mfc-predefined-symbols.md)  
-  
--   [미리 정의된 ATL 기호](../windows/atl-predefined-symbols.md)  
-  
--   [미리 정의된 Win32 기호](../windows/win32-predefined-symbols.md)  
-  
-    > [!NOTE]
-    >  미리 정의된 기호는 항상 읽기 전용입니다.  
-  
-## <a name="requirements"></a>요구 사항  
- Win32, MFC 또는 ATL  
-  
-## <a name="see-also"></a>참고 항목  
- [기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)
+
+새 프로젝트를 시작하면 프로젝트 형식에 따라 일부 기호 ID가 바로 사용할 수 있도록 미리 정의되어 있습니다. 이러한 기호 ID는 다양한 라이브러리와 MFC 등의 프로젝트 형식을 지원합니다. 이 ID는 응용 프로그램에 대체로 포함되는 일반 작업 또는 마우스나 프린터와 같은 하드웨어 항목의 작업 등을 나타냅니다.
+
+이러한 기호 ID는 리소스 작업을 할 때 중요해집니다. 액셀러레이터 키 테이블을 편집할 때 사용할 수 있으며, 일부는 이미 가상 키와 연결되어 있습니다. 통해 사용할 수도 있습니다는 [속성 창](/visualstudio/ide/reference/properties-window)합니다. 미리 정의된 기호 ID 중 하나를 새 리소스에 지정하거나 ID에 액셀러레이터 키를 할당할 수 있습니다. 그러면 해당 기호 ID와 관련된 기능이 해당 키 조합과 자동 연결됩니다.
+
+다음 라이브러리에는 프로젝트의 일부로 나타나는 미리 정의된 기호가 있습니다.
+
+- [미리 정의된 MFC 기호](../windows/mfc-predefined-symbols.md)
+
+- [미리 정의된 ATL 기호](../windows/atl-predefined-symbols.md)
+
+- [미리 정의된 Win32 기호](../windows/win32-predefined-symbols.md)
+
+   > [!NOTE]
+   > 미리 정의된 기호는 항상 읽기 전용입니다.
+
+## <a name="requirements"></a>요구 사항
+
+Win32, MFC 또는 ATL
+
+## <a name="see-also"></a>참고 항목
+
+[기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)

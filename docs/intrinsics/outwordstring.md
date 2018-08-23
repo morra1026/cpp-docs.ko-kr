@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc25fdc4d43b7454761787264583b5e4f8fa47e0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7abc221b81b6ace3afb165585b7e24655d348c2b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33333696"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42545883"
 ---
 # <a name="outwordstring"></a>__outwordstring
 **Microsoft 전용**  
   
- 생성 된 `rep outsw` 명령을 전송 하는 `Count` 에서 시작 하는 단어 `Buffer` 끝으로 지정 된 I/O 포트 `Port`합니다.  
+ 생성 된 `rep outsw` 명령을 보냅니다 `Count` 에서 시작 하는 단어 `Buffer` 로 지정 된 I/O 포트를 찾기 `Port`.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,10 +42,10 @@ void __outwordstring(
   
 #### <a name="parameters"></a>매개 변수  
  [in] `Port`  
- 데이터를 보내야 하는 포트입니다.  
+ 데이터를 보낼 포트입니다.  
   
  [in] `Buffer`  
- 데이터를 지정된 된 포트 전송에 대 한 포인터입니다.  
+ 지정된 된 포트에 보내도록 데이터에 대 한 포인터입니다.  
   
  [in] `Count`  
  보낼 단어의 수입니다.  
@@ -54,9 +54,9 @@ void __outwordstring(
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__outwordstring`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__outwordstring`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  

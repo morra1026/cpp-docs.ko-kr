@@ -33,15 +33,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 37d53932a283ea047d748985a1da348d9346ce1e
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 604b28147c6881c7b2d62c388c5402f12bb71c78
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336968"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571722"
 ---
 # <a name="cenumerator-class"></a>CEnumerator 클래스
-노출 하는 OLE DB 열거자 개체를 사용 하는 [ISourcesRowset](https://msdn.microsoft.com/library/ms715969.aspx) 모든 데이터 원본 및 열거자를 설명 하는 행 집합을 반환 하는 인터페이스입니다.  
+노출 하는 OLE DB 열거자 개체를 사용 하는 [ISourcesRowset](/previous-versions/windows/desktop/ms715969\(v=vs.85\)) 모든 데이터 원본 및 열거자를 설명 하는 행 집합을 반환 하는 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -83,7 +83,7 @@ bool Find(TCHAR* szSearchName) throw();
  **true** 경우 이름을 찾을 수 있습니다. 그렇지 않으면 **false**합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 이름에 매핑되는 `SOURCES_NAME` 의 멤버는 [ISourcesRowset](https://msdn.microsoft.com/library/ms715969.aspx) 인터페이스입니다.  
+ 이 이름에 매핑되는 `SOURCES_NAME` 의 멤버는 [ISourcesRowset](/previous-versions/windows/desktop/ms715969\(v=vs.85\)) 인터페이스입니다.  
   
 ## <a name="getmoniker"></a> Cenumerator:: Getmoniker
 모니커를 변환할 수는 문자열의 구성 요소를 추출 하려면 표시 이름을 구문 분석 합니다.  
@@ -108,7 +108,7 @@ HRESULT GetMoniker(LPMONIKER* ppMoniker,
  표준 HRESULT입니다.  
 
 ## <a name="open"></a> Cenumerator:: Open
-지정 된 경우 하나를 호출 하 여 행 집합 열거자에 대 한 검색 하는 경우 열거자에 대 한 모니커를 바인딩합니다 [ISourcesRowset::GetSourcesRowset](https://msdn.microsoft.com/library/ms711200.aspx)합니다.  
+지정 된 경우 하나를 호출 하 여 행 집합 열거자에 대 한 검색 하는 경우 열거자에 대 한 모니커를 바인딩합니다 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\))합니다.  
   
 ### <a name="syntax"></a>구문  
   

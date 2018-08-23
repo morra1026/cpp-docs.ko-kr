@@ -21,15 +21,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: fdef616456b98086bf9490297d68c98596b2dca4
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: edf4b2bd69947730caba6db5d31b1e5da15f3759
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338972"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572393"
 ---
 # <a name="receiving-notifications"></a>알림 수신
-OLE DB 이벤트가 발생할 때 알림을 수신 하기 위한 인터페이스를 제공 합니다. 에 설명 된 이러한 [OLE DB 개체 알림을](https://msdn.microsoft.com/library/ms725406.aspx) 에 *OLE DB Programmer's Reference*합니다. 표준 COM 연결 지점 메커니즘을 사용 하는 이러한 이벤트를 설치 합니다. ATL 개체를 통해 이벤트를 검색 하려고 하는 예를 들어 `IRowsetNotify` 구현 합니다 `IRowsetNotify` 인터페이스를 추가 하 여 `IRowsetNotify` 파생 된 클래스 목록 및 COM_INTERFACE_ENTRY 매크로 통해 노출 합니다.  
+OLE DB 이벤트가 발생할 때 알림을 수신 하기 위한 인터페이스를 제공 합니다. 에 설명 된 이러한 [OLE DB 개체 알림을](/previous-versions/windows/desktop/ms725406\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 표준 COM 연결 지점 메커니즘을 사용 하는 이러한 이벤트를 설치 합니다. ATL 개체를 통해 이벤트를 검색 하려고 하는 예를 들어 `IRowsetNotify` 구현 합니다 `IRowsetNotify` 인터페이스를 추가 하 여 `IRowsetNotify` 파생 된 클래스 목록 및 COM_INTERFACE_ENTRY 매크로 통해 노출 합니다.  
   
  `IRowsetNotify` 에 여러 번 호출할 수 있는 세 가지 메서드가 있습니다. 이러한 메서드 중 하나에 응답 하려는 경우 사용할 수 있습니다 합니다 [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) 에 관심이 없는 메서드에 대 한 E_NOTIMPL을 반환 하는 클래스입니다.  
   

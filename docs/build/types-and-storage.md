@@ -12,15 +12,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93d53749ace6b9021bd04e681fc74eb0e5ae4a5e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c76ea1bac491a7e9484ac88834c8e4b070c57ae5
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32380617"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571898"
 ---
 # <a name="types-and-storage"></a>형식 및 저장소
-이 섹션에서는 열거 및 저장소에 대 한 데이터 형식의 설명는 [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] 아키텍처.  
+이 섹션에서는 설명 열거형 및 x64에 대 한 데이터 형식의 저장소 아키텍처입니다.  
   
 -   [스칼라 형식](../build/scalar-types.md)  
   

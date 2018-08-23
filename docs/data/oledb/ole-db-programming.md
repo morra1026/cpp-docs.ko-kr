@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d211297d587fffcfc58ac57db6687dc8edde4344
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: ed63e89c2470691b677a234ba6b30e4f3ddd558d
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336549"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572217"
 ---
 # <a name="ole-db-programming"></a>OLE DB 프로그래밍
 Microsoft OLE DB는 레거시 기술입니다. 새 응용 프로그램 연결 된 SQL 서버에 필요한 데이터 액세스 API입니다. 새 응용 프로그램을 모두 ODBC 사용 해야 합니다. SQL Server에 대 한 현재 OLE DB 공급자가 SQLNCLI11입니다. DLL입니다. 공급자는 SQL Server 2016에서 여전히 배송 됩니다. 이 문서는 이미 OLE DB를 사용 하는 기존 응용 프로그램을 유지 하는 개발자를 위한 것입니다.
@@ -39,7 +39,7 @@ Microsoft OLE DB는 레거시 기술입니다. 새 응용 프로그램 연결 �
 |OLE DB 공급자 템플릿 사용(개념 항목)|[OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)|  
 |OLE DB 템플릿 클래스 및 매크로|[OLE DB 템플릿 참조](../../data/oledb/ole-db-templates.md) (Visual c + +)|  
 |OLE DB 소비자 특성|[OLE DB 소비자 특성](../../windows/ole-db-consumer-attributes.md)|  
-|OLE DB 인터페이스|[OLE DB 프로그래머 참조](https://msdn.microsoft.com/library/ms713643.aspx) (에 Windows SDK)|  
+|OLE DB 인터페이스|[OLE DB 프로그래머 참조](/previous-versions/windows/desktop/ms713643\(v=vs.85\)) (에 Windows SDK)|  
 |OLE DB 템플릿 샘플|[OLE DB 템플릿 샘플](http://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c)| 
 |데이터 액세스 프로그래밍 개요(Visual C++)|[데이터 액세스 프로그래밍](../../data/data-access-programming-mfc-atl.md)|  
 |ODBC 개념 항목|[ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)|  

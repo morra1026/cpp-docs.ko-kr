@@ -26,17 +26,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 271f5bf7140dff437b6ef0935f8a4c90daabccd4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 50c0025e561c86fc18bbf5c4554c9f894fe32ec7
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33329477"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541301"
 ---
 # <a name="addgsbyte-addgsword-addgsdword-addgsqword"></a>__addgsbyte, __addgsword, __addgsdword, __addgsqword
 **Microsoft 전용**  
   
- 값의 시작 부분에 상대적인 오프셋으로 지정 된 메모리 위치에 추가 `GS` 세그먼트입니다.  
+ 값의 시작을 기준으로 오프셋으로 지정 된 메모리 위치에 추가 된 `GS` 세그먼트입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -61,7 +61,7 @@ void __addgsqword(
   
 #### <a name="parameters"></a>매개 변수  
  [in] `Offset`  
- 시작 부분에서 오프셋 `GS`합니다.  
+ 시작 부분 으로부터의 오프셋 `GS`합니다.  
   
  [in] `Data`  
  메모리 위치에 추가할 값입니다.  
@@ -70,13 +70,13 @@ void __addgsqword(
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__addgsbyte`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__addgsword`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__addgsdword`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__addgsqword`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__addgsbyte`|X64|  
+|`__addgsword`|X64|  
+|`__addgsdword`|X64|  
+|`__addgsqword`|X64|  
   
 ## <a name="remarks"></a>설명  
- 이러한 내장 함수는 커널 모드 에서만 사용할 수 및 이러한 루틴은 내장 함수로 사용할 수만 있습니다.  
+ 이러한 내장 함수는 커널 모드 에서만 사용할 수 있습니다 하 고 이러한 루틴은 내장 함수로 사용할 수 있습니다.  
   
 **Microsoft 전용 종료**  
   

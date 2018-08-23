@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: dcd166e205f35133fe2c466175e07ea82970e31f
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 17e2f5ce1ec78b150e6569fb571f9c08e39efe0e
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339277"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571787"
 ---
 # <a name="retrieving-a-blob"></a>BLOB 검색
-다양 한 방법으로 이진 대형 개체 (BLOB)를 검색할 수 있습니다. 사용할 수 있습니다 `DBTYPE_BYTES` 같은 인터페이스를 사용 하거나 바이트의 시퀀스로 BLOB 검색 `ISequentialStream`합니다. 자세한 내용은 [BLOB 및 OLE 개체](https://msdn.microsoft.com/library/ms711511.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+다양 한 방법으로 이진 대형 개체 (BLOB)를 검색할 수 있습니다. 사용할 수 있습니다 `DBTYPE_BYTES` 같은 인터페이스를 사용 하거나 바이트의 시퀀스로 BLOB 검색 `ISequentialStream`합니다. 자세한 내용은 [BLOB 및 OLE 개체](/previous-versions/windows/desktop/ms711511\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
  다음 코드를 사용 하 여 BLOB을 검색 하는 방법을 보여 줍니다 `ISequentialStream`합니다. 매크로 [BLOB_ENTRY](../../data/oledb/blob-entry.md) 인터페이스 및 인터페이스에 사용 되는 플래그를 지정할 수 있습니다. 테이블을 연 후 코드는 다음과 같이 호출 됩니다. `Read` 에 반복적으로 `ISequentialStream` BLOB에서 바이트를 읽을 수 있습니다. 호출 `Release` 인터페이스 포인터를 호출 하기 전에 삭제할 `MoveNext` 다음 레코드를 가져오려고 합니다.  
   

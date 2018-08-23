@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1437aa6f13a6f19afad36a59985c4d14e8e6a1d4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 68bb7ec3d89ac7fffbc2896023fbd2f1dd0584ba
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33325840"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42539133"
 ---
 # <a name="writecr0"></a>__writecr0
 **Microsoft 전용**  
   
- 값이 기록 `Data` CR0 레지스터를 합니다.  
+ 값을 씁니다 `Data` CR0 레지스터를 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,9 +44,9 @@ void writecr0(
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__writecr0`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__writecr0`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
  이 내장 함수는 커널 모드에서만 사용할 수 있으며 루틴은 내장 함수로만 사용할 수 있습니다.  

@@ -25,15 +25,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 57ad4c5e9f119a7c9904376db4f77c35de4290f2
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: e176cc20dc3f6f13eb868133b99c0ce7e86d25c4
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337130"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42573269"
 ---
 # <a name="iconverttypeimpl-class"></a>IConvertTypeImpl 클래스
-구현을 제공 합니다 [IConvertType](https://msdn.microsoft.com/library/ms715926.aspx) 인터페이스입니다.  
+구현을 제공 합니다 [IConvertType](/previous-versions/windows/desktop/ms715926\(v=vs.85\)) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -73,7 +73,7 @@ STDMETHOD(CanConvert)(DBTYPE wFromType,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [IConvertType::CanConvert](https://msdn.microsoft.com/library/ms711224.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [IConvertType::CanConvert](/previous-versions/windows/desktop/ms711224\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="remarks"></a>설명  
  OLE DB 데이터 변환을 사용 하 여 `MSADC.DLL`입니다.  

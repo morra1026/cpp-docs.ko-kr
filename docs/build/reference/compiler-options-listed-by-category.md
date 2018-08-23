@@ -1,7 +1,7 @@
 ---
 title: 컴파일러 옵션 범주별 목록 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/20/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -14,16 +14,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fff661bf573ca30a5b0e7550c2e53b00a7ff3d8f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a255259af5f660a11007005fd71f85bff80a8e05
+ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379330"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "42573288"
 ---
 # <a name="compiler-options-listed-by-category"></a>컴파일러 옵션 범주별 목록
 
-이 문서에는 컴파일러 옵션의 범주별 목록이 포함되어 있습니다. 사전순 목록에 대 한 참조 [컴파일러 옵션 사전순으로 나열 된](compiler-options-listed-alphabetically.md)합니다.
+이 문서에는 컴파일러 옵션의 범주별 목록이 포함되어 있습니다. 사전순 목록에 대해서 [Compiler Options Listed Alphabetically](compiler-options-listed-alphabetically.md)합니다.
 
 ### <a name="optimization"></a>최적화
 
@@ -67,9 +67,9 @@ ms.locfileid: "32379330"
 |[/Gw](gw-optimize-global-data.md)|전체 프로그램 전역 데이터 최적화를 사용하도록 설정합니다.|
 |[/GX](gx-enable-exception-handling.md)|더 이상 사용되지 않습니다. 동기 예외 처리를 사용합니다. 사용 하 여 [/EH](eh-exception-handling-model.md) 대신 합니다.|
 |[/Gy](gy-enable-function-level-linking.md)|함수 수준 링크를 사용합니다.|
-|[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|더 이상 사용되지 않습니다. 빠른 검사를 사용하도록 설정합니다. (동일 [/RTC1](rtc-run-time-error-checks.md))|
+|[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|더 이상 사용되지 않습니다. 빠른 검사를 사용하도록 설정합니다. (동일 [/rtc1](rtc-run-time-error-checks.md))|
 |[/Gz](gd-gr-gv-gz-calling-convention.md)|`__stdcall` 호출 규칙을 사용합니다(x86 (x86 전용)|
-|[/homeparams](homeparams-copy-register-parameters-to-stack.md)|레지스터에 전달된 매개 변수를 함수 시작 시 스택의 해당 위치에 기록합니다. 이 컴파일러 옵션은 [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] 컴파일러(네이티브 및 크로스 컴파일)에만 사용됩니다.|
+|[/homeparams](homeparams-copy-register-parameters-to-stack.md)|레지스터에 전달된 매개 변수를 함수 시작 시 스택의 해당 위치에 기록합니다. X64에만이 컴파일러 옵션은 컴파일러 (네이티브 및 크로스 컴파일).|
 |[/hotpatch](hotpatch-create-hotpatchable-image.md)|핫 패치할 수 있는 이미지를 만듭니다.|
 |[/Qfast_transcendentals](qfast-transcendentals-force-fast-transcendentals.md)|빠른 초월수를 생성합니다.|
 |[QIfist](qifist-suppress-ftol.md)|더 이상 사용되지 않습니다. 부동 소수점 형식에서 정수 계열 형식으로 변환해야 할 때 도우미 함수 `_ftol` 이 호출되지 않도록 합니다. (x86 전용)|
@@ -77,7 +77,7 @@ ms.locfileid: "32379330"
 |[/Qpar](qpar-auto-parallelizer.md)|루프 자동 병렬화를 사용하도록 설정합니다.|
 |[/Qpar-report](qpar-report-auto-parallelizer-reporting-level.md)|자동 병렬화에 대한 보고 수준을 사용하도록 설정합니다.|
 |[/Qsafe_fp_loads](qsafe-fp-loads.md)|부동 소수점 값에 대한 정수 이동 명령을 사용하고 특정 부동 소수점 부하 최적화를 사용하지 않도록 설정합니다.|
-|[/Qspectre](qspectre.md)|유령 공격 클래스에 대 한 CVE 2017 5753에 대 한 완화 기능이 사용 하도록 설정 합니다.|
+|[/Qspectre](qspectre.md)|CVE 2017-5753에 스펙터 공격 클래스에 대 한 완화를 사용 하도록 설정 합니다.|
 |[/Qvec-report](qvec-report-auto-vectorizer-reporting-level.md)|자동 벡터화에 대한 보고 수준을 사용하도록 설정합니다.|
 |[/RTC](rtc-run-time-error-checks.md)|런타임 오류 검사를 사용합니다.|
 |[/volatile](volatile-volatile-keyword-interpretation.md)|volatile 키워드가 해석되는 방식을 선택합니다.|
@@ -119,7 +119,7 @@ ms.locfileid: "32379330"
 
 |옵션|용도|
 |------------|-------------|
-|[/constexpr](constexpr-control-constexpr-evaluation.md)|컴파일 타임에 constexpr 평가 제어 합니다.|
+|[/constexpr](constexpr-control-constexpr-evaluation.md)|컴파일 타임에 컨트롤 constexpr 평가 합니다.|
 |[/openmp](openmp-enable-openmp-2-0-support.md)|소스 코드에서 [#pragma omp](../../preprocessor/omp.md) 를 활성화합니다.|
 |[/vd](vd-disable-construction-displacements.md)|숨겨진 `vtordisp` 클래스 멤버를 사용하도록 설정하거나 표시하지 않습니다.|
 |[/vmb](vmb-vmg-representation-method.md)|멤버의 포인터에 best case를 사용합니다.|
@@ -131,13 +131,13 @@ ms.locfileid: "32379330"
 |[/Za](za-ze-disable-language-extensions.md)|언어 확장을 사용하지 않습니다.|
 |[/Zc](zc-conformance.md)|표준 동작을 지정 [/Ze](za-ze-disable-language-extensions.md)합니다.|
 |[/Ze](za-ze-disable-language-extensions.md)|더 이상 사용되지 않습니다. 언어 확장을 사용합니다.|
-|[/Zf](zf.md)|PDB 병렬 빌드에서 생성 시간을 향상 시킵니다.|
+|[/Zf](zf.md)|PDB 병렬 빌드에서 생성 시간을 개선합니다.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|편집하며 계속하기와 호환되는 프로그램 데이터베이스에 디버깅 정보를 포함합니다. (x86 전용)|
 |[/Zi](z7-zi-zi-debug-information-format.md)|완전한 디버깅 정보를 생성합니다.|
 |[/Zl](zl-omit-default-library-name.md)|.obj 파일에서 기본 라이브러리 이름을 제거합니다.|
 |[/Zp](zp-struct-member-alignment.md) *n*|구조체 멤버를 압축합니다.|
 |[/Zs](zs-syntax-check-only.md)|구문만 확인합니다.|
-|[/ZW](zw-windows-runtime-compilation.md)|Windows Runtime에서 실행할 출력 파일을 생성 합니다.|
+|[/ZW](zw-windows-runtime-compilation.md)|Windows 런타임에서 실행 하는 출력 파일을 생성 합니다.|
 
 ### <a name="linking"></a>연결
 
@@ -169,15 +169,16 @@ ms.locfileid: "32379330"
 |[/H](h-restrict-length-of-external-names.md)|더 이상 사용되지 않습니다. 외부 공개 이름의 길이를 제한합니다.|
 |[/HELP](help-compiler-command-line-help.md)|컴파일러 옵션을 나열합니다.|
 |[/J](j-default-char-type-is-unsigned.md)|기본 `char` 형식을 변경합니다.|
+|[/ JMC](jmc.md)|네이티브 c + + 내 코드만 디버깅 옵션을 지원합니다.|
 |[/kernel](kernel-create-kernel-mode-binary.md)|컴파일러와 링커는 Windows 커널에서 실행할 수 있는 이진 파일을 만듭니다.|
 |[/MP](mp-build-with-multiple-processes.md)|여러 개의 소스 파일을 동시에 빌드합니다.|
 |[/nologo](nologo-suppress-startup-banner-c-cpp.md)|초기 화면 배너를 표시하지 않습니다.|
 |[/sdl](sdl-enable-additional-security-checks.md)|추가 보안 기능 및 경고를 사용하도록 설정합니다.|
 |[/showIncludes](showincludes-list-include-files.md)|컴파일하는 동안 전체 포함 파일의 목록을 표시합니다.|
 |[/Tc](tc-tp-tc-tp-specify-source-file-type.md)|C 소스 파일을 지정합니다.|
-|[/TC](tc-tp-tc-tp-specify-source-file-type.md)|3. 모든 소스 파일 지정|
+|[/TC](tc-tp-tc-tp-specify-source-file-type.md)|3. 모든 원본 파일 지정|
 |[/Tp](tc-tp-tc-tp-specify-source-file-type.md)|C++ 소스 파일을 지정합니다.|
-|[/TP](tc-tp-tc-tp-specify-source-file-type.md)|모든 소스 파일은 c + +를 지정 합니다.|
+|[/TP](tc-tp-tc-tp-specify-source-file-type.md)|모든 원본 파일은 c + +를 지정 합니다.|
 |[/V](v-version-number.md)|더 이상 사용되지 않습니다. 버전 문자열을 설정합니다.|
 |[/w](compiler-option-warning-level.md)|모든 경고를 사용하지 않습니다.|
 |[/W0, /W1, /W2, /W3, /W4](compiler-option-warning-level.md)|출력 경고 수준을 설정합니다.|
@@ -195,11 +196,11 @@ ms.locfileid: "32379330"
 |[/Yu](yu-use-precompiled-header-file.md)|빌드하는 동안 미리 컴파일된 헤더 파일을 사용합니다.|
 |[/Y-](y-ignore-precompiled-header-options.md)|현재 빌드에서 미리 컴파일된 다른 모든 헤더 컴파일러 옵션을 무시합니다.|
 |[/Zm](zm-specify-precompiled-header-memory-allocation-limit.md)|미리 컴파일된 헤더 메모리의 할당 제한을 지정합니다.|
-|[/await](await-enable-coroutine-support.md)|코 루틴 (다시 시작 가능한 함수) 확장을 사용 합니다.|
-|[/source-charset](source-charset-set-source-character-set.md)|소스 문자 집합을 설정 합니다.|
-|[/execution-charset](execution-charset-set-execution-character-set.md)|실행 문자 집합을 설정 합니다.|
+|[/await](await-enable-coroutine-support.md)|코 루틴 (다시 시작 가능한 함수) 확장을 사용 하도록 설정 합니다.|
+|[/source-charset](source-charset-set-source-character-set.md)|소스 문자 집합입니다.|
+|[/execution-charset](execution-charset-set-execution-character-set.md)|실행 문자 집합입니다.|
 |[/utf-8](utf-8-set-source-and-executable-character-sets-to-utf-8.md)|소스 및 실행 문자 집합을 u t F-8로 설정합니다.|
-|[/validate-charset](validate-charset-validate-for-compatible-characters.md)|호환 문자만 대 한 utf-8 파일의 유효성을 검사 합니다.|
+|[/validate-charset](validate-charset-validate-for-compatible-characters.md)|만 호환 문자에 대 한 utf-8 파일의 유효성을 검사 합니다.|
 |[/diagnostics](diagnostics-compiler-diagnostic-options.md)|진단 메시지의 형식을 제어합니다.|
 |[/permissive-](permissive-standards-conformance.md)|표준 준수 모드를 설정 합니다.|
 |[/std](std-specify-language-standard-version.md)|C + + 표준 버전 호환성 선택기입니다.|
@@ -212,7 +213,7 @@ ms.locfileid: "32379330"
 |[/Fr](fr-fr-create-dot-sbr-file.md)|더 이상 사용되지 않습니다. 지역 변수 없이 찾아보기 정보 파일을 만듭니다.|
 |[/Ge](ge-enable-stack-probes.md)|더 이상 사용되지 않습니다. 스택 프로브를 활성화합니다. 기본적으로 설정되어 있습니다.|
 |[/GX](gx-enable-exception-handling.md)|더 이상 사용되지 않습니다. 동기 예외 처리를 사용합니다. 사용 하 여 [/EH](eh-exception-handling-model.md) 대신 합니다.|
-|[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|더 이상 사용되지 않습니다. 빠른 검사를 사용하도록 설정합니다. 사용 하 여 [/RTC1](rtc-run-time-error-checks.md) 대신 합니다.|
+|[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|더 이상 사용되지 않습니다. 빠른 검사를 사용하도록 설정합니다. 사용 하 여 [/rtc1](rtc-run-time-error-checks.md) 대신 합니다.|
 |[/H](h-restrict-length-of-external-names.md)|더 이상 사용되지 않습니다. 외부 공개 이름의 길이를 제한합니다.|
 |[/Og](og-global-optimizations.md)|더 이상 사용되지 않습니다. 전역 최적화를 사용합니다.|
 |[QIfist](qifist-suppress-ftol.md)|더 이상 사용되지 않습니다. 부동 소수점 형식에서 정수 계열 형식으로 변환하는 방법을 지정하는 데 사용되었습니다.|

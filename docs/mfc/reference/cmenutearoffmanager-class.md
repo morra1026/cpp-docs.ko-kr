@@ -34,17 +34,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 105c933ee36c9bbeb634d85963d9254f3b68ebe4
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: b05c93bbdfd09bc28288b27a55520c5ac664b723
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37041015"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42540102"
 ---
 # <a name="cmenutearoffmanager-class"></a>CMenuTearOffManager 클래스
 분리 메뉴를 관리합니다. 분리 메뉴는 메뉴 모음의 메뉴입니다. 사용자는 메뉴 모음에서 분리 메뉴를 제거하여 이동 가능한 상태로 만들 수 있습니다.  
   
-   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
    
 ## <a name="syntax"></a>구문  
   
@@ -66,7 +66,7 @@ class CMenuTearOffManager : public CObject
 |----------|-----------------|  
 |[CMenuTearOffManager::Build](#build)||  
 |[CMenuTearOffManager::GetRegPath](#getregpath)||  
-|[CMenuTearOffManager::Initialize](#initialize)|초기화 한 `CMenuTearOffManager` 개체입니다.|  
+|[CMenuTearOffManager::Initialize](#initialize)|초기화는 `CMenuTearOffManager` 개체입니다.|  
 |[CMenuTearOffManager::IsDynamicID](#isdynamicid)||  
 |[CMenuTearOffManager::Parse](#parse)||  
 |[CMenuTearOffManager::Reset](#reset)||  
@@ -74,10 +74,10 @@ class CMenuTearOffManager : public CObject
 |[CMenuTearOffManager::SetupTearOffMenus](#setuptearoffmenus)||  
   
 ## <a name="remarks"></a>설명  
- 응용 프로그램에서 분리 메뉴를 사용 하려면 있어야는 `CMenuTearOffManager` 개체입니다. 대부분의 경우에서 만들기 또는 초기화 하지 않습니다는 `CMenuTearOffManager` 개체를 직접 합니다. 이 자동으로 처리를 호출할 때는 [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus) 함수입니다.  
+ 응용 프로그램에서 분리 메뉴를 사용 하려면 있어야를 `CMenuTearOffManager` 개체입니다. 대부분의 경우에서 만들기 또는 초기화 하지 않습니다는 `CMenuTearOffManager` 직접 개체입니다. 이 처리를 호출 하는 경우는 [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus) 함수입니다.  
   
 ## <a name="example"></a>예  
- 다음 예제에서는 생성 하 고 초기화 하는 `CMenuTearOffManager` 호출 하 여 개체는 `CWinAppEX::EnableTearOffMenus` 메서드. 이 코드 조각은 [워드 패드 샘플](../../visual-cpp-samples.md)의 일부입니다.  
+ 다음 예제에는 생성 하 고 초기화 하는 방법을 보여 줍니다.는 `CMenuTearOffManager` 를 호출 하 여 개체를 `CWinAppEX::EnableTearOffMenus` 메서드. 이 코드 조각은 [워드 패드 샘플](../../visual-cpp-samples.md)의 일부입니다.  
   
  [!code-cpp[NVC_MFC_WordPad#12](../../mfc/reference/codesnippet/cpp/cmenutearoffmanager-class_1.cpp)]  
   
@@ -112,7 +112,7 @@ CMenuTearOffManager();
 ```  
   
 ### <a name="remarks"></a>설명  
- 대부분의 경우에서 만들지 마십시오는 `CMenuTearOffManager` 수동으로 합니다. 응용 프로그램의 프레임 워크 만듭니다는 `CMenuTearOffManager` 호출 하는 경우 개체 [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus)합니다.  
+ 대부분의 경우, 만들지 않아야는 `CMenuTearOffManager` 수동으로. 응용 프로그램의 프레임 워크를 만듭니다는 `CMenuTearOffManager` 개체를 호출할 때 [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus)합니다.  
   
 ##  <a name="getregpath"></a>  CMenuTearOffManager::GetRegPath  
 
@@ -126,7 +126,7 @@ LPCTSTR GetRegPath() const;
 ### <a name="remarks"></a>설명  
   
 ##  <a name="initialize"></a>  CMenuTearOffManager::Initialize  
- 초기화는 [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) 개체입니다.  
+ 초기화 된 [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) 개체입니다.  
   
 ```  
 BOOL Initialize(
@@ -137,7 +137,7 @@ BOOL Initialize(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *lpszRegEntry*  
- 레지스트리 항목의 경로 포함 하는 문자열입니다. 응용 프로그램에서이 레지스트리 항목 분리 막대에 대 한 설정을 저장 합니다.  
+ 레지스트리 항목의 경로 포함 하는 문자열입니다. 이 레지스트리 항목에서 분리 막대가 막대에 대 한 설정을 저장 하는 응용 프로그램.  
   
  [in] *uiTearOffMenuFirst*  
  분리 메뉴에 대 한 첫 번째 메뉴 ID를 지정 합니다.  
@@ -149,7 +149,7 @@ BOOL Initialize(
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 메뉴 Id의 범위 *uiTearOffMenuFirst* 를 *uiTearOffMenuLast* 연속 간격 이어야 합니다. 간격의 응용 프로그램에 동시에 나타날 수 있는 분리 메뉴를 정의 합니다.  
+ 메뉴 Id 범위의 *uiTearOffMenuFirst* 하 *uiTearOffMenuLast* 연속 간격 이어야 합니다. 간격의 응용 프로그램에서 동시에 나타날 수 있는 분리 메뉴를 정의 합니다.  
   
 ##  <a name="isdynamicid"></a>  CMenuTearOffManager::IsDynamicID  
 

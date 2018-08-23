@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2bdfe58f5b42b4c06b3eda3f641bb9f2a4c628cd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8b0b259c730a7db343cc08ff077cf57043f292a6
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33326913"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541299"
 ---
 # <a name="addressofreturnaddress"></a>_AddressOfReturnAddress
 **Microsoft 전용**  
   
- 현재 함수의 반환 주소를 보유 하는 메모리 위치의 주소를 제공 합니다. 다른 메모리 위치 (예를 들어 함수의 인수)에 액세스 하려면이 주소를 사용할 수 없습니다.  
+ 현재 함수의 반환 주소를 보유 하는 메모리 위치의 주소를 제공 합니다. 다른 메모리 위치 (예: 함수의 인수)에 액세스 하려면이 주소를 사용할 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,16 +40,16 @@ void * _AddressOfReturnAddress();
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`_AddressOfReturnAddress`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_AddressOfReturnAddress`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- 때 `_AddressOfReturnAddress` 로 컴파일된 프로그램에서 사용 되는 [/clr](../build/reference/clr-common-language-runtime-compilation.md)를 포함 하는 함수는 `_AddressOfReturnAddress` 네이티브 함수 호출이 컴파일됩니다. 관리 되는 포함 하는 함수를 호출 하는 함수를 컴파일할 때 `_AddressOfReturnAddress`, `_AddressOfReturnAddress` 예상 대로 동작 하지 않을 수 있습니다.  
+ 때 `_AddressOfReturnAddress` 로 컴파일된 프로그램에서 사용 됩니다 [/clr](../build/reference/clr-common-language-runtime-compilation.md)를 포함 하는 함수는 `_AddressOfReturnAddress` 네이티브 함수로 호출 컴파일됩니다. 포함 하는 함수에 대 한 호출은 관리 되는 함수를 컴파일할 때 `_AddressOfReturnAddress`, `_AddressOfReturnAddress` 예상 대로 작동 하지 않을 수 있습니다.  
   
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 // compiler_intrinsics_AddressOfReturnAddress.cpp  

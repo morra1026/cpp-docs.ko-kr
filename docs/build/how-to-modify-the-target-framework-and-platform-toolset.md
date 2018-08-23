@@ -16,25 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f21ec9d205e009438fac97914ec4b684713102a3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c53960b7ef972d605902a260de9e7ef344a31274
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371904"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572602"
 ---
 # <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>방법: 대상 프레임워크 및 플랫폼 도구 집합 수정
-다른 버전의.NET Framework를 대상 고 다른 플랫폼 도구 집합을 사용 하도록 Visual c + + 프로젝트 설정을 변경할 수 있습니다. 기본적으로 프로젝트 시스템에는 프로젝트를 만드는 데 사용하는 Visual Studio 버전에 해당하는 .NET Framework 버전 및 도구 집합 버전이 사용됩니다. 프로젝트 속성을 수정하여 대상 플랫폼 도구 집합을 변경할 수 있습니다. 프로젝트 파일(.vcxproj)을 수정하여 대상 프레임워크를 변경할 수 있습니다. 각 컴파일 대상에 대해 별도의 코드베이스를 유지 관리할 필요는 없습니다.  
+다른 버전의.NET Framework를 대상으로 하는 다른 플랫폼 도구 집합을 사용 하 여 Visual c + + 프로젝트 설정을 변경할 수 있습니다. 기본적으로 프로젝트 시스템에는 프로젝트를 만드는 데 사용하는 Visual Studio 버전에 해당하는 .NET Framework 버전 및 도구 집합 버전이 사용됩니다. 프로젝트 속성을 수정하여 대상 플랫폼 도구 집합을 변경할 수 있습니다. 프로젝트 파일(.vcxproj)을 수정하여 대상 프레임워크를 변경할 수 있습니다. 각 컴파일 대상에 대해 별도의 코드베이스를 유지 관리할 필요는 없습니다.  
   
 > [!IMPORTANT]
->  일부 버전에서는 수정된 대상 프레임워크 또는 플랫폼 도구 집합을 지원하지 않습니다. 호환성 정보를 참조 하십시오. [포트, 마이그레이션 및 Visual Studio 프로젝트 업그레이드](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects)합니다.  
+>  일부 버전에서는 수정된 대상 프레임워크 또는 플랫폼 도구 집합을 지원하지 않습니다. 호환성 정보를 참조 하세요 [포트, 마이그레이션 및 Visual Studio 프로젝트 업그레이드](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects)합니다.  
   
  대상 프레임워크를 변경하는 경우 플랫폼 도구 집합도 해당 프레임워크를 지원하는 버전으로 변경합니다. 예를 들어 .NET Framework 4.5를 대상으로 하려면 Visual Studio 2015(v140), Visual Studio 2013(v120) 또는 Visual Studio 2012(v110)와 같은 호환되는 플랫폼 도구 집합을 사용해야 합니다. .NET Framework 2.0, 3.0, 3.5, 4 및 x86, Itanium, x64 플랫폼을 대상으로 하는 **Windows7.1SDK** 플랫폼 도구 집합을 사용할 수 있습니다.  
   
 > [!NOTE]
 >  대상 플랫폼 도구 집합을 변경하려면 연관된 버전의 Visual Studio 또는 Windows 플랫폼 SDK가 설치되어 있어야 합니다. 예를 들어 **Windows7.1SDK** 플랫폼 도구 집합이 있는 Itanium 플랫폼을 대상으로 하려면 [Windows 7용 Microsoft Windows SDK 및 .NET Framework 4 SP1](http://www.microsoft.com/download/details.aspx?id=8279) 이 설치되어 있어야 합니다. 그러나 올바른 Framework 버전 및 플랫폼 도구 집합을 대상으로 한 경우 Visual Studio의 다른 호환 버전을 사용하여 개발 작업을 수행할 수 있습니다.  
   
- 사용자 지정 플랫폼 도구 집합을 만들어 대상 플랫폼을 추가로 확장할 수 있습니다. 자세한 내용은 참조 [c + + 네이티브 멀티 타기 팅](http://go.microsoft.com/fwlink/p/?linkid=196619) Visual c + + 블로그.  
+ 사용자 지정 플랫폼 도구 집합을 만들어 대상 플랫폼을 추가로 확장할 수 있습니다. 자세한 내용은 [c + + 네이티브 멀티 타기 팅](http://go.microsoft.com/fwlink/p/?linkid=196619) Visual c + + 블로그.  
   
 ### <a name="to-change-the-target-framework"></a>대상 프레임워크를 변경하려면  
   
@@ -63,7 +63,7 @@ ms.locfileid: "32371904"
   
 3.  대화 상자의 왼쪽 창에서 **구성 속성** 을 확장하고 **일반**을 선택합니다.  
   
-4.  오른쪽 창에서 **플랫폼 도구 집합** 을 선택하고 드롭다운 목록에서 원하는 도구 집합을 선택합니다. 예를 들어 [!INCLUDE[vs_dev10_long](../build/includes/vs_dev10_long_md.md)] 도구 집합을 설치한 경우 프로젝트에 사용하도록 **Visual Studio 2010 (v100)** 을 선택합니다.  
+4.  오른쪽 창에서 **플랫폼 도구 집합** 을 선택하고 드롭다운 목록에서 원하는 도구 집합을 선택합니다. 예를 들어 Visual Studio 2010 도구를 설치한 후 선택할 **Visual Studio 2010 (v100)** 프로젝트에 대해 사용 하도록 합니다.  
   
 5.  **확인** 단추를 선택합니다.  
   

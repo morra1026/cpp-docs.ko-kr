@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: af146c37490d86a839f717d387c4072fbd649a87
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 425d404272ad21ad5c732a4db210379eedc7515f
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339439"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571509"
 ---
 # <a name="ole-db-templates"></a>OLE DB 템플릿
 OLE DB 템플릿은 OLE DB 데이터 액세스가 보다 용이할 합니다. Visual c + +는 여러 가지 자주 사용 되는 OLE DB 인터페이스를 구현 하는 템플릿 클래스를 제공 합니다. OLE DB (소비자) 클라이언트 응용 프로그램을 작성 하려면 Visual c + + 소비자 템플릿과 공급자 템플릿으로 서버 (공급자) 응용 프로그램을 작성 하려면 사용할 수 있습니다.  
@@ -38,7 +38,7 @@ OLE DB 템플릿은 OLE DB 데이터 액세스가 보다 용이할 합니다. Vi
  [OLE DB 프로그래밍 개요](../../data/oledb/ole-db-programming-overview.md)  
  OLE DB 이란 설명 하 고 OLE db에서 범용 데이터 액세스에 설명 합니다.  
   
- [OLE DB 프로그래머 참조](https://msdn.microsoft.com/library/ms713643.aspx)  
+ [OLE DB 프로그래머 참조](/previous-versions/windows/desktop/ms713643\(v=vs.85\))  
  OLE DB에는 Windows SDK 설명서에 대 한 링크를 제공합니다.  
   
  [OLE DB 템플릿 샘플](../../visual-cpp-samples.md)  

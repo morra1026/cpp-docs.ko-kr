@@ -344,12 +344,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 483584c7b38db05c920134cfc675538be36a3816
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 0adcca7c8080d6603e4e4de8c2002b2ace6f9ad9
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028023"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42540081"
 ---
 # <a name="colecontrol-class"></a>COleControl 클래스
 OLE 컨트롤을 개발할 수 있는 강력한 기본 클래스입니다.  
@@ -1129,7 +1129,7 @@ void FireKeyDown(
   
 ### <a name="parameters"></a>매개 변수  
  *pnChar*  
- 누른된 키의 가상 키 코드 값에 대 한 포인터입니다. 표준 가상 키 코드의 목록, Winuser.h을 참조 하세요.  
+ 누른된 키의 가상 키 코드 값에 대 한 포인터입니다. 에서 표준 가상 키 코드 목록은 Winuser.h을 참조 하세요.  
   
  *nShiftState*  
  플래그의 조합을 포함 합니다.  
@@ -1174,7 +1174,7 @@ void FireKeyUp(
   
 ### <a name="parameters"></a>매개 변수  
  *pnChar*  
- 출시 된 키의 가상 키 코드 값에 대 한 포인터입니다. 표준 가상 키 코드의 목록, Winuser.h을 참조 하세요.  
+ 출시 된 키의 가상 키 코드 값에 대 한 포인터입니다. 에서 표준 가상 키 코드 목록은 Winuser.h을 참조 하세요.  
   
  *nShiftState*  
  플래그의 조합을 포함 합니다.  
@@ -1408,7 +1408,7 @@ BOOL GetAmbientProperty(
 |VT_BOOL|**BOOL\***|  
 |VT_BSTR|`CString*`|  
 |VT_I2|**short\***|  
-|VT_I4|**long\***|  
+|VT_I4|**Long\***|  
 |VT_R4|**float\***|  
 |VT_R8|**double\***|  
 |VT_CY|**CY\***|  

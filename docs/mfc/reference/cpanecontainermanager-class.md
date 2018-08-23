@@ -116,16 +116,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7c988f062fc870359a8f1ae1265fb91d02dbb3d
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: a3a0372d5892ec4b563275d0a5bb8f309cf6fc47
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37079379"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541323"
 ---
 # <a name="cpanecontainermanager-class"></a>CPaneContainerManager 클래스
-`CPaneContainerManager` 저장 및 표시 현재 도킹 레이아웃의 클래스를 관리 합니다.  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+`CPaneContainerManager` 클래스는 저장 하 고 현재 도킹 레이아웃의 표시를 관리 합니다.  
+ 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -191,12 +191,12 @@ class CPaneContainerManager : public CObject
 |[CPaneContainerManager::StoreRecentDockSiteInfo](#storerecentdocksiteinfo)||  
   
 ### <a name="remarks"></a>설명  
- 프레임 워크의 인스턴스를 자동으로 만드는 `CPaneContainerManager` 개체 및 하거나 포함 시킵니다에 [CPaneDivider 클래스](../../mfc/reference/cpanedivider-class.md) 개체 또는에 [CMultiPaneFrameWnd 클래스](../../mfc/reference/cmultipaneframewnd-class.md) 개체입니다.  
+ 프레임 워크의 인스턴스를 자동으로 만듭니다 `CPaneContainerManager` 개체를 포함 하거나 시킵니다로 [CPaneDivider 클래스](../../mfc/reference/cpanedivider-class.md) 개체 또는 [CMultiPaneFrameWnd 클래스](../../mfc/reference/cmultipaneframewnd-class.md) 개체입니다.  
   
- `CPaneContainerManager` 에서 빌드한 이진 트리의 루트에 대 한 포인터를 저장 하는 클래스 [CPaneContainer](../../mfc/reference/cpanecontainer-class.md) 개체입니다.  
+ 합니다 `CPaneContainerManager` 클래스에서 기본 제공 되는 이진 트리의 루트에 대 한 포인터를 저장 [CPaneContainer](../../mfc/reference/cpanecontainer-class.md) 개체입니다.  
   
 ## <a name="example"></a>예  
- 다음 예제에 대 한 참조를 가져오는 방법을 `CPaneContainerManager` 개체입니다. 이 코드 조각은의 일부인는 [창 크기 설정 샘플](../../visual-cpp-samples.md)합니다.  
+ 다음 예제에 대 한 참조 하는 방법에 설명 된 `CPaneContainerManager` 개체입니다. 이 코드 조각은의 일부인 합니다 [창 크기 설정 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_SetPaneSize#5](../../mfc/reference/codesnippet/cpp/cpanecontainermanager-class_1.cpp)]  
   

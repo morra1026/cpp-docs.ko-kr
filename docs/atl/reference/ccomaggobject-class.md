@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5699f4c8c49bd35e85479572e1b49f8080415e65
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
-ms.translationtype: HT
+ms.openlocfilehash: 9ea5da8b98c528eb6832c850e41b0a42c386f901
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884995"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571861"
 ---
 # <a name="ccomaggobject-class"></a>CComAggObject 클래스
 이 클래스에서 구현 된 [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) 집계 개체에 대 한 인터페이스입니다. 정의 따라 집계 개체는 외부 개체에 포함 됩니다. 합니다 `CComAggObject` 클래스는 비슷합니다는 [CComObject 클래스](../../atl/reference/ccomobject-class.md)외부 클라이언트에 직접 액세스할 수 있는 인터페이스를 노출 하는 점을 제외 하 고 합니다.  
@@ -63,7 +63,7 @@ class CComAggObject : public IUnknown,
 |이름|설명|  
 |----------|-----------------|  
 |[CComAggObject::AddRef](#addref)|집계 된 개체의 참조 횟수를 증가 시킵니다.|  
-|[CComAggObject::CreateInstance](#createinstance)|이 정적 함수를 사용 하면 새를 만들 수 있습니다 **CComAggObject <** `contained` **>** 오버 헤드 없이 개체 [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615)합니다.|  
+|[CComAggObject::CreateInstance](#createinstance)|이 정적 함수를 사용 하면 새를 만들 수 있습니다 **CComAggObject <** `contained` **>** 오버 헤드 없이 개체 [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)합니다.|  
 |[CComAggObject::FinalConstruct](#finalconstruct)|최종 초기화를 수행 `m_contained`합니다.|  
 |[CComAggObject::FinalRelease](#finalrelease)|최종 소멸 수행 `m_contained`합니다.|  
 |[CComAggObject::QueryInterface](#queryinterface)|요청된 인터페이스에 대한 포인터를 검색합니다.|  
@@ -129,7 +129,7 @@ CComAggObject(void* pv);
  할당 된 모든 리소스를 호출 해제 [FinalRelease](#finalrelease), 및 모듈 잠금 횟수를 줄입니다.  
   
 ##  <a name="createinstance"></a>  CComAggObject::CreateInstance  
- 이 정적 함수를 사용 하면 새를 만들 수 있습니다 **CComAggObject <** `contained` **>** 오버 헤드 없이 개체 [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615)합니다.  
+ 이 정적 함수를 사용 하면 새를 만들 수 있습니다 **CComAggObject <** `contained` **>** 오버 헤드 없이 개체 [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)합니다.  
   
 ```
 static HRESULT WINAPI CreateInstance(

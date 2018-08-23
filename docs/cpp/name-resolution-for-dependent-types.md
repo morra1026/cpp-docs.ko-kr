@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6421c634fb6d27bf79ea0ead9f0b6b8f5829f19
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: ad833d0fb4309ed4fed0eba4c162c9d6d46bf95d
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39402688"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42588219"
 ---
 # <a name="name-resolution-for-dependent-types"></a>종속적인 형식에 대한 이름 확인
 사용 하 여 **typename** 지정된 된 정규화 이름이 형식을 식별 하는 컴파일러에 지시 하는 템플릿 정의의 정규화 된 이름에 대 한 합니다. 자세한 내용은 [typename](../cpp/typename.md)합니다.  
@@ -98,7 +98,7 @@ Int MyNamespace::myFunction
 ```  
   
 ### <a name="template-disambiguation"></a>템플릿 명확성  
- [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)]는 "템플릿" 키워드를 사용하여 명확성에 대한 C++ 98/03/11 표준 규칙을 적용합니다. 다음 예제에서는 Visual c + + 2010는 표준에 맞지 않는 줄 및 표준에 맞는 줄 수락 합니다.  [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] 표준에 맞는 줄만 허용합니다.  
+ Visual Studio 2012는 C + + 11/03 98/표준에 대 한 규칙 "템플릿" 키워드를 사용 하 여 명확성을 적용합니다. 다음 예제에서는 Visual c + + 2010는 표준에 맞지 않는 줄 및 표준에 맞는 줄 수락 합니다.  Visual Studio 2012에는 표준에 맞는 줄만 허용합니다.  
   
 ```cpp  
 #include <iostream>  

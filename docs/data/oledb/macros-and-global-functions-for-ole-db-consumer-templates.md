@@ -111,12 +111,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a915a581a574193918f86f80083d3202c9949674
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 533891a3bc7517df7570e0c976d05ed8b3b20579
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338150"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571784"
 ---
 # <a name="macros-and-global-functions-for-ole-db-consumer-templates"></a>OLE DB 소비자 템플릿에 대한 매크로 및 전역 함수
 OLE DB 소비자 템플릿은 다음과 같습니다. 다음 매크로 및 전역 함수  
@@ -354,7 +354,7 @@ BEGIN_COLUMN_MAP(x)
  <!--[!CODE [NVC_OLEDB_Consumer#16](../codesnippet/vs_snippets_cpp/nvc_oledb_consumer#16)]  -->
 
 ### <a name="blob_entry"></a> BLOB_ENTRY
-BEGIN_COLUMN_MAP END_COLUMN_MAP와 바인딩하는 데 사용할 binary large object ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)).  
+BEGIN_COLUMN_MAP END_COLUMN_MAP와 바인딩하는 데 사용할 binary large object ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))).  
   
 #### <a name="syntax"></a>구문  
   
@@ -379,7 +379,7 @@ BLOB_ENTRY(nOrdinal, IID, flags, data)
  참조 [BLOB을 검색 하는 방법을?](../../data/oledb/retrieving-a-blob.md)합니다.  
 
 ### <a name="blob_entry_length"></a> BLOB_ENTRY_LENGTH
-BEGIN_COLUMN_MAP END_COLUMN_MAP와 바인딩하는 데 사용할 binary large object ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). 비슷합니다 [BLOB_ENTRY](../../data/oledb/blob-entry.md)한다는 점을 제외 하이 매크로 BLOB 열의 바이트 길이 가져옵니다.  
+BEGIN_COLUMN_MAP END_COLUMN_MAP와 바인딩하는 데 사용할 binary large object ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). 비슷합니다 [BLOB_ENTRY](../../data/oledb/blob-entry.md)한다는 점을 제외 하이 매크로 BLOB 열의 바이트 길이 가져옵니다.  
   
 #### <a name="syntax"></a>구문  
   
@@ -407,7 +407,7 @@ BLOB_ENTRY_LENGTH(nOrdinal, IID, flags, data, length)
  참조 [BLOB을 검색 하는 방법을?](../../data/oledb/retrieving-a-blob.md)합니다.  
 
 ### <a name="blob_entry_length_status"></a> BLOB_ENTRY_LENGTH_STATUS
-BEGIN_COLUMN_MAP END_COLUMN_MAP와 바인딩하는 데 사용할 binary large object ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). 비슷합니다 [BLOB_ENTRY](../../data/oledb/blob-entry.md)한다는 점을 제외 하는 길이 상태의 해당 BLOB 열에도이 매크로 가져옵니다.  
+BEGIN_COLUMN_MAP END_COLUMN_MAP와 바인딩하는 데 사용할 binary large object ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). 비슷합니다 [BLOB_ENTRY](../../data/oledb/blob-entry.md)한다는 점을 제외 하는 길이 상태의 해당 BLOB 열에도이 매크로 가져옵니다.  
   
 #### <a name="syntax"></a>구문  
   
@@ -444,7 +444,7 @@ BLOB_ENTRY_LENGTH_STATUS(
  참조 [BLOB을 검색 하는 방법을?](../../data/oledb/retrieving-a-blob.md)합니다.  
 
 ### <a name="blob_entry_status"></a> BLOB_ENTRY_STATUS
-바인딩하는 데 BEGIN_COLUMN_MAP 또는 BEGIN_ACCESSOR_MAP binary large object ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). 비슷합니다 [BLOB_ENTRY](../../data/oledb/blob-entry.md)한다는 점을 제외 하이 매크로는 또한 BLOB 열의 상태를 가져옵니다.  
+바인딩하는 데 BEGIN_COLUMN_MAP 또는 BEGIN_ACCESSOR_MAP binary large object ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). 비슷합니다 [BLOB_ENTRY](../../data/oledb/blob-entry.md)한다는 점을 제외 하이 매크로는 또한 BLOB 열의 상태를 가져옵니다.  
   
 #### <a name="syntax"></a>구문  
   
@@ -472,7 +472,7 @@ BLOB_ENTRY_STATUS(nOrdinal, IID, flags, data, status)
  참조 [BLOB을 검색 하는 방법을?](../../data/oledb/retrieving-a-blob.md)합니다.  
 
 ### <a name="blob_name"></a> BLOB_NAME
-BEGIN_COLUMN_MAP END_COLUMN_MAP와 바인딩하는 데 사용할 binary large object ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). 비슷합니다 [BLOB_ENTRY](../../data/oledb/blob-entry.md)한다는 점을 제외 하이 매크로 열 번호 대신 열 이름을 사용 합니다.  
+BEGIN_COLUMN_MAP END_COLUMN_MAP와 바인딩하는 데 사용할 binary large object ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). 비슷합니다 [BLOB_ENTRY](../../data/oledb/blob-entry.md)한다는 점을 제외 하이 매크로 열 번호 대신 열 이름을 사용 합니다.  
   
 #### <a name="syntax"></a>구문  
   
@@ -497,7 +497,7 @@ BLOB_NAME(pszName, IID, flags, data )
  참조 [BLOB을 검색 하는 방법을?](../../data/oledb/retrieving-a-blob.md)합니다.  
 
 ### <a name="blob_name_length"></a> BLOB_NAME_LENGTH
-BEGIN_COLUMN_MAP END_COLUMN_MAP와 바인딩하는 데 사용할 binary large object ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). 비슷합니다 [BLOB_NAME](../../data/oledb/blob-name.md)한다는 점을 제외 하도이 매크로의 BLOB 열 데이터의 바이트의 길이 가져옵니다.  
+BEGIN_COLUMN_MAP END_COLUMN_MAP와 바인딩하는 데 사용할 binary large object ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). 비슷합니다 [BLOB_NAME](../../data/oledb/blob-name.md)한다는 점을 제외 하도이 매크로의 BLOB 열 데이터의 바이트의 길이 가져옵니다.  
   
 #### <a name="syntax"></a>구문  
   
@@ -522,7 +522,7 @@ BLOB_NAME_LENGTH(pszName, IID, flags, data, length )
  [out] BLOB 열 (실제) 길이 (바이트)에서입니다.  
 
 ### <a name="blob_name_length_status"></a> BLOB_NAME_LENGTH_STATUS
-BEGIN_COLUMN_MAP END_COLUMN_MAP와 바인딩하는 데 사용할 binary large object ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). 비슷합니다 [BLOB_NAME](../../data/oledb/blob-name.md)한다는 점을 제외 하이 매크로 또한 길이 및 BLOB 데이터 열의 상태를 가져옵니다.  
+BEGIN_COLUMN_MAP END_COLUMN_MAP와 바인딩하는 데 사용할 binary large object ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). 비슷합니다 [BLOB_NAME](../../data/oledb/blob-name.md)한다는 점을 제외 하이 매크로 또한 길이 및 BLOB 데이터 열의 상태를 가져옵니다.  
   
 #### <a name="syntax"></a>구문  
   
@@ -550,7 +550,7 @@ BLOB_NAME_LENGTH_STATUS(pszName, IID, flags, data, length, status )
  [out] BLOB 필드의 상태입니다.  
 
 ### <a name="blob_name_status"></a> BLOB_NAME_STATUS
-BEGIN_COLUMN_MAP END_COLUMN_MAP와 바인딩하는 데 사용할 binary large object ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). 비슷합니다 [BLOB_NAME](../../data/oledb/blob-name.md)한다는 점을 제외 하이 매크로는 또한 BLOB 열 데이터의 상태를 가져옵니다.  
+BEGIN_COLUMN_MAP END_COLUMN_MAP와 바인딩하는 데 사용할 binary large object ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). 비슷합니다 [BLOB_NAME](../../data/oledb/blob-name.md)한다는 점을 제외 하이 매크로는 또한 BLOB 열 데이터의 상태를 가져옵니다.  
   
 #### <a name="syntax"></a>구문  
   
@@ -637,7 +637,7 @@ END_COLUMN_MAP()
   
 #### <a name="see-also"></a>참고 항목  
  [CBookmark 클래스](../../data/oledb/cbookmark-class.md)   
- [DBPROP_BOOKMARKS](https://msdn.microsoft.com/library/ms709728.aspx)
+ [DBPROP_BOOKMARKS](/previous-versions/windows/desktop/ms709728\(v=vs.85\))
 
 ### <a name="column_entry"></a> COLUMN_ENTRY
 행 집합의 특정 열에는 행 집합의 바인딩을 나타냅니다.  
@@ -649,7 +649,7 @@ COLUMN_ENTRY(nOrdinal, data)
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
  *nOrdinal*  
  [in] 열 번호입니다.  
@@ -679,7 +679,7 @@ COLUMN_ENTRY_EX(nOrdinal, wType, nLength, nPrecision, nScale, data, length, stat
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
  *nOrdinal*  
  [in] 열 번호입니다.  
@@ -727,7 +727,7 @@ COLUMN_ENTRY_LENGTH(nOrdinal, data, length)
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
  *nOrdinal*  
  [in] 하나를 사용 하 여 시작 하는 열 번호입니다. 책갈피 열 0에 해당합니다.  
@@ -757,7 +757,7 @@ COLUMN_ENTRY_LENGTH_STATUS(nOrdinal, data, length, status)
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
  *nOrdinal*  
  [in] 열 번호입니다.  
@@ -790,7 +790,7 @@ COLUMN_ENTRY_PS(nOrdinal, nPrecision, nScale, data)
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
  *nOrdinal*  
  [in] 열 번호입니다.  
@@ -823,7 +823,7 @@ COLUMN_ENTRY_PS_LENGTH(nOrdinal, nPrecision, nScale, data, length)
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
  *nOrdinal*  
  [in] 하나를 사용 하 여 시작 하는 열 번호입니다. 책갈피 열 0에 해당합니다.  
@@ -859,7 +859,7 @@ COLUMN_ENTRY_PS_LENGTH_STATUS(nOrdinal, nPrecision, nScale, data, length, status
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
  *nOrdinal*  
  [in] 열 번호입니다.  
@@ -898,7 +898,7 @@ COLUMN_ENTRY_PS_STATUS(nOrdinal, nPrecision, nScale, data, status)
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
  *nOrdinal*  
  [in] 열 번호입니다.  
@@ -934,7 +934,7 @@ COLUMN_ENTRY_STATUS(nOrdinal, data, status)
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
  *nOrdinal*  
  [in] 열 번호입니다.  
@@ -1424,7 +1424,7 @@ BEGIN_PARAM_MAP(x)
  [in] 사용자 레코드 클래스의 이름입니다.  
   
 #### <a name="remarks"></a>설명  
- 매개 변수를 사용 하 여 [명령](https://msdn.microsoft.com/library/ms724608.aspx)입니다.  
+ 매개 변수를 사용 하 여 [명령](/previous-versions/windows/desktop/ms724608\(v=vs.85\))입니다.  
   
 #### <a name="example"></a>예  
  예제를 참조 합니다 [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) 매크로입니다.  
@@ -1455,7 +1455,7 @@ SET_PARAM_TYPE(type)
  [in] 매개 변수에 대해 설정할 형식입니다.  
   
 #### <a name="remarks"></a>설명  
- 공급자는 기본 데이터 소스에서 지원되는 매개 변수 입력/출력 형식만 지원합니다. 형식은 하나 이상의 조합 `DBPARAMIO` 값 (참조 [DBBINDING 구조체](https://msdn.microsoft.com/library/ms716845.aspx) 에 *OLE DB Programmer's Reference*):  
+ 공급자는 기본 데이터 소스에서 지원되는 매개 변수 입력/출력 형식만 지원합니다. 형식은 하나 이상의 조합 `DBPARAMIO` 값 (참조 [DBBINDING 구조체](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) 에 *OLE DB Programmer's Reference*):  
   
 -   `DBPARAMIO_NOTPARAM` 접근자에 매개 변수가 없습니다. 일반적으로 설정한 `eParamIO` 이 값 행 접근자에서 사용자 매개 변수가 무시 됩니다.  
   

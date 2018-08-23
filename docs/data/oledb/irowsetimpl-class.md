@@ -102,12 +102,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6cd6ec4bcee26c1e2fb558670c69d0130808c933
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: faf782f4386cf2b2640ed65f3a2b24bbf4c5d693
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338342"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42572884"
 ---
 # <a name="irowsetimpl-class"></a>IRowsetImpl 클래스
 `IRowset` 인터페이스의 구현을 제공합니다.  
@@ -169,7 +169,7 @@ class ATL_NO_VTABLE IRowsetImpl : public RowsetInterface
 |[m_rgRowHandles](#rgrowhandles)|목록 행 핸들입니다.|  
   
 ## <a name="remarks"></a>설명  
- [IRowset](https://msdn.microsoft.com/library/ms720986.aspx) 기본 행 집합 인터페이스입니다.  
+ [IRowset](/previous-versions/windows/desktop/ms720986\(v=vs.85\)) 기본 행 집합 인터페이스입니다.  
 
 ## <a name="addrefrows"></a> Irowsetimpl:: Addrefrows
 기존 행 핸들에 대 한 참조 횟수를 추가합니다.  
@@ -184,7 +184,7 @@ STDMETHOD(AddRefRows )(DBCOUNTITEM cRows,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [irowset:: Addrefrows](https://msdn.microsoft.com/library/ms719619.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [irowset:: Addrefrows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
 
 ## <a name="createrow"></a> Irowsetimpl:: Createrow
 호출 하는 도우미 메서드입니다 [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) 새 할당할 `HROW`합니다.  
@@ -222,7 +222,7 @@ STDMETHOD(GetData )(HROW hRow,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [irowset:: Getdata](https://msdn.microsoft.com/library/ms716988.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [irowset:: Getdata](/previous-versions/windows/desktop/ms716988\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
  에 해당 하는 일부 매개 변수 *OLE DB Programmer's Reference* 매개 변수에서 설명 하는 다른 이름의 `IRowset::GetData`:  
   
@@ -251,7 +251,7 @@ virtual DBSTATUS GetDBStatus(RowClass* currentRow,
  상태 요청 되는 열입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 합니다 [DBSTATUS](https://msdn.microsoft.com/library/ms722617.aspx) 열에 대 한 플래그입니다. 
+ 합니다 [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) 열에 대 한 플래그입니다. 
 
 ## <a name="getnextrows"></a> Irowsetimpl:: Getnextrows
 행을 순차적으로 인출의 이전 위치를 기억 합니다.  
@@ -267,7 +267,7 @@ STDMETHOD(GetNextRows )(HCHAPTER hReserved,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [irowset:: Getnextrows](https://msdn.microsoft.com/library/ms709827.aspx) 에 *OLE DB Programmer's Reference*합니다. 
+ 참조 [irowset:: Getnextrows](/previous-versions/windows/desktop/ms709827\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 
 
 ## <a name="irowsetimpl"></a> Irowsetimpl:: Irowsetimpl
 생성자입니다.  
@@ -295,7 +295,7 @@ HRESULT RefRows(DBCOUNTITEM cRows,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [irowset:: Addrefrows](https://msdn.microsoft.com/library/ms719619.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [irowset:: Addrefrows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="return-value"></a>반환 값  
  표준 HRESULT 값입니다.  
@@ -314,7 +314,7 @@ STDMETHOD(ReleaseRows )(DBCOUNTITEM cRows,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [irowset:: Releaserows](https://msdn.microsoft.com/library/ms719771.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [irowset:: Releaserows](/previous-versions/windows/desktop/ms719771\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
 
 ## <a name="restartposition"></a> Irowsetimpl:: Restartposition
 다음 인출 위치를 초기 위치로; 위치 변경 즉, 첫 번째 행 집합 때 해당 위치에 만들어집니다.  
@@ -326,7 +326,7 @@ STDMETHOD(RestartPosition )(HCHAPTER /* hReserved */);
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [irowset:: Restartposition](https://msdn.microsoft.com/library/ms712877.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [irowset:: Restartposition](/previous-versions/windows/desktop/ms712877\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="remarks"></a>설명  
  행 집합 위치까지 정의 되지 않습니다. `GetNextRow` 라고 합니다. 이동할 수 있습니다 이전 버전과 rowet 호출 하 여 `RestartPosition` 및 다음 인출 또는 뒤로 스크롤.  
@@ -344,7 +344,7 @@ virtual HRESULT SetDBStatus(DBSTATUS* statusFlags,
   
 #### <a name="parameters"></a>매개 변수  
  *statusFlags*  
- 합니다 [DBSTATUS](https://msdn.microsoft.com/library/ms722617.aspx) 열에 대해 설정할 플래그입니다.  
+ 합니다 [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) 열에 대해 설정할 플래그입니다.  
   
  *currentRow*  
  현재 행입니다.  

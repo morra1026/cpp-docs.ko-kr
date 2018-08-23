@@ -16,16 +16,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 458288ecff0b457205ba1735494ad8106c3feae7
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: aee2c58d8763581987fec40b0cb486c67363697b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040950"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541669"
 ---
 # <a name="cmfcdragframeimpl-class"></a>CMFCDragFrameImpl 클래스
-`CMFCDragFrameImpl` 클래스는 사용자가 표준 도킹 모드의 창을 끌 때 나타나는 끌기 사각형을 그립니다.  
-   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+`CMFCDragFrameImpl` 클래스 사용자가 표준 도킹 모드에서 창을 끌 때 나타나는 끌기 사각형을 그립니다.  
+   자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
    
 ## <a name="syntax"></a>구문  
   
@@ -34,9 +34,9 @@ class CMFCDragFrameImpl
 ```  
   
 ## <a name="remarks"></a>설명  
- 이 클래스의 개체가 각각에 포함 된 [CPane 클래스](../../mfc/reference/cpane-class.md) 개체입니다. 따라서 사용 하는 각 창에서 `CanFloat` 메서드는 사용자가 끌어올 때 끌기 사각형을 표시 합니다.  
+ 이 클래스의 개체는 각각에 포함 된 [CPane 클래스](../../mfc/reference/cpane-class.md) 개체입니다. 사용 하는 각 창에 따라서는 `CanFloat` 메서드는 사용자가이 끌 때 끌기 사각형을 표시 합니다.  
   
- 사용 하 여 끌기 사각형의 두께 제어할 수 있습니다 [afx_global_data:: m_ndragframethicknessfloat](afx-global-data-structure.md#m_ndragframethicknessfloat) 및 [afx_global_data:: m_ndragframethicknessdock](afx-global-data-structure.md#m_ndragframethicknessdock)합니다.  
+ 사용 하 여 끌기 사각형의 두께 제어할 수 있습니다 [afx_global_data:: m_ndragframethicknessfloat](afx-global-data-structure.md#m_ndragframethicknessfloat) 하 고 [afx_global_data:: m_ndragframethicknessdock](afx-global-data-structure.md#m_ndragframethicknessdock)합니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  [CMFCDragFrameImpl](../../mfc/reference/cmfcdragframeimpl-class.md)  

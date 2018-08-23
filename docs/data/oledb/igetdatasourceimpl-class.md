@@ -25,15 +25,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0c6e304547af06d5de6d81bae2ceace119e4681d
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: aee6122e8dbcf85f882e5b78475a2c332b855721
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339798"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571995"
 ---
 # <a name="igetdatasourceimpl-class"></a>IGetDataSourceImpl 클래스
-구현을 제공 합니다 [IGetDataSource](https://msdn.microsoft.com/library/ms709721.aspx) 개체입니다.  
+구현을 제공 합니다 [IGetDataSource](/previous-versions/windows/desktop/ms709721\(v=vs.85\)) 개체입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -71,7 +71,7 @@ STDMETHOD(GetDataSource)(REFIID riid,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [IGetDataSource::GetDataSource](https://msdn.microsoft.com/library/ms725443.aspx) 에 *OLE DB Programmer's Reference*합니다.  
+ 참조 [IGetDataSource::GetDataSource](/previous-versions/windows/desktop/ms725443\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="remarks"></a>설명  
  데이터 원본 개체의 속성에 액세스 해야 하는 경우에 유용 합니다.  

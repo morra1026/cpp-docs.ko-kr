@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 802e3845e72516e6dd0f09fd2a350a65565cd502
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 659da66ea74088247a9eb46ae25f9920050719a1
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33326926"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42538924"
 ---
 # <a name="movsd"></a>__movsd
 **Microsoft 전용**  
   
- 이동 문자열을 생성 (`rep movsd`) 명령입니다.  
+ 이동 하는 문자열을 생성 합니다 (`rep movsd`) 명령입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -48,22 +48,22 @@ void __movsd(
  작업의 원본입니다.  
   
  [in] `Count`  
- 복사할 2 배 워드의 수입니다.  
+ 복사할 2 배 워드 횟수입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__movsd`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__movsd`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- 결과 첫 번째 `Count` 가리키는 2 배 워드 `Source` 복사 되는 `Dest` 문자열입니다.  
+ 결과 첫 번째 `Count` 가리키는 2 배 워드 `Source` 에 복사 됩니다는 `Dest` 문자열입니다.  
   
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 // movsd.cpp  

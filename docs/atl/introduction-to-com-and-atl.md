@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bb3337ffa82bf65ba0d4ff010d0b70afd7a99d7
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 00204e283feb14e6b8e831a12e8bd9ad3e352adc
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848212"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571529"
 ---
 # <a name="introduction-to-com-and-atl"></a>COM 및 ATL 소개
 이 섹션에서는 COM 및 ATL에 대해 간략히 소개합니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "37848212"
   
 ## <a name="related-sections"></a>관련 단원  
  [구성 요소 개체 모델](http://msdn.microsoft.com/library/windows/desktop/ms694363)  
- COM을 구성하는 [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)]  
+ Com Windows SDK 자료  
   
  [ATL](../atl/active-template-library-atl-concepts.md)  
  액티브 템플릿 라이브러리를 사용하여 프로그래밍하는 방법에 대한 개념 항목의 링크를 제공합니다.  

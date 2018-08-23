@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8043ff1c25c08c6adcb640defba1bc967a2fb8b
-ms.sourcegitcommit: 66f4f12d3851c897ca69cf62da1697e95b2b97c2
+ms.openlocfilehash: bfc91d25e4c843eaa004b59eab076bcfbe188253
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39496560"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42573078"
 ---
 # <a name="install-c-support-in-visual-studio"></a>Visual Studio에서 c + + 지원 설치
 
@@ -61,7 +61,7 @@ ms.locfileid: "39496560"
 
    처음 Visual Studio를 실행 하면 Microsoft 계정으로 로그인 하 라는 메시지가 표시 됩니다. 사용자 계정이 없는 경우 무료로 만들 수 있습니다. 테마를 선택 해야 합니다. 작업을 하려는 경우 나중에 변경할 수 있습니다. 
 
-   Visual Studio 여러 걸릴 수 있습니다 분에 대해 준비 하려면 처음으로 사용 하 여 실행 합니다. 모양을 빠른 시간 경과에 다음과 같습니다.
+   Visual Studio 여러 걸릴 수 있습니다 분을 처음 실행 하면 사용 합니다. 모양을 빠른 시간 경과에 다음과 같습니다.
 
    ![Visual Studio 2017에 로그인](../build/media/vscpp-quickstart-first-run.gif "Visual Studio 2017에 로그인")
 

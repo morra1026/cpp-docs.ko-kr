@@ -48,15 +48,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ffd681a589f9e8cc1c9cc56139f7b155773038f
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 6c92ccfe9dbf25fa1355885a5f6dd3570df4884b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36952087"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42538941"
 ---
 # <a name="cglobalutils-class"></a>CGlobalUtils 클래스
-[!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -298,7 +298,7 @@ BOOL GetPaneAndAlignFromPoint(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *barContainerManager*  
- [in] *pt*  
+ [in] *(태평양 표준시)*  
  [out] *ppTargetControlBar*  
  [out] *dwAlignment*  
  [out] *bTabArea*  

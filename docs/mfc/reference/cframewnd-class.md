@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d2dee6c5157858fef2bd26101ac128ff3d53d23
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 991b8c55c02272613ce329be9a053ff0110f1926
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337384"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42538544"
 ---
 # <a name="cframewnd-class"></a>CFrameWnd 클래스
 창 관리를 위한 멤버와 함께 겹쳐진 Windows SDI(단일 문서 인터페이스) 또는 팝업 프레임 창의 기능을 제공합니다.  
@@ -1010,7 +1010,7 @@ virtual void SetMenuBarVisibility(DWORD nStyle);
 ### <a name="remarks"></a>설명  
  하는 경우의 값을 *nStyle* 디버그 모드와 발생 어설션 매개 변수가 올바르지 않으면이 메서드 [CInvalidArgException](../../mfc/reference/cinvalidargexception-class.md) 릴리스 모드에서. 그 외 런타임 오류 발생 시이 디버그 모드에서 어설션을 메서드와에서 파생 된 예외가 발생 합니다 [CException](../../mfc/reference/cexception-class.md) 클래스입니다.  
   
- 이 메서드가 작성 된 응용 프로그램에서 메뉴의 상태에 영향을 줍니다 [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] 이상.  
+ 이 메서드는 Windows Vista 이상 작성 된 응용 프로그램에서 메뉴 상태의 영향을 줍니다.  
   
 ##  <a name="setmessagetext"></a>  CFrameWnd::SetMessageText  
  ID가 0이 있는 상태 표시줄 창에 문자열을 배치 하려면이 함수를 호출 합니다.  

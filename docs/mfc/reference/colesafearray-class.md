@@ -70,12 +70,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff18423aa981fc453850084bb2f315a5600cf6fd
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 68f2e8e199fb22295ebd1fd25bbd3332c63e03b6
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027640"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42540921"
 ---
 # <a name="colesafearray-class"></a>COleSafeArray 클래스
 임의의 형식 및 차원 배열 작업용 클래스입니다.  
@@ -379,7 +379,7 @@ VARIANT Detach();
  내부 `VARIANT` 값을 `COleSafeArray` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
- 함수를 설정 하 여 안전 하 게 배열에서 데이터를 분리 합니다 [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) VT_EMPTY 개체의 합니다. Windows 함수를 호출 하 여 배열 해제를 호출자의 책임 [VariantClear](http://msdn.microsoft.com/28741d81-8404-4f85-95d3-5c209ec13835)합니다.  
+ 함수를 설정 하 여 안전 하 게 배열에서 데이터를 분리 합니다 [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) VT_EMPTY 개체의 합니다. Windows 함수를 호출 하 여 배열 해제를 호출자의 책임 [VariantClear](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-variantclear)합니다.  
   
  함수에서 오류를 throw 한 [COleException](../../mfc/reference/coleexception-class.md)합니다.  
   
@@ -607,7 +607,7 @@ void PutElement(
  배열에 할당할 데이터에 대한 포인터입니다. VT_DISPATCH 고 VT_UNKNOWN, VT_BSTR variant 형식은 포인터 이며 다른 수준의 간접 참조가 필요 하지 않습니다.  
   
 ### <a name="remarks"></a>설명  
- 이 함수는 자동으로 Windows 함수 호출 [SafeArrayLock](https://msdn.microsoft.com/library/windows/desktop/ms221492.aspx) 하 고 [SafeArrayUnlock](https://msdn.microsoft.com/library/windows/desktop/ms221246.aspx) 앞과 뒤 요소를 할당 합니다. 데이터 요소가 문자열, 개체 또는 Variant이면 함수는 이를 올바르게 복사하고 기존 요소가 문자열, 개체 또는 Variant이면 제대로 지워집니다.  
+ 이 함수는 자동으로 Windows 함수 호출 [SafeArrayLock](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-safearraylock) 하 고 [SafeArrayUnlock](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-safearrayunlock) 앞과 뒤 요소를 할당 합니다. 데이터 요소가 문자열, 개체 또는 Variant이면 함수는 이를 올바르게 복사하고 기존 요소가 문자열, 개체 또는 Variant이면 제대로 지워집니다.  
   
  배열에는 여러 잠금이 있을 수 있으므로 다른 작업에 의해 배열이 잠긴 동안 요소를 배열에 삽입할 수 있습니다.  
   

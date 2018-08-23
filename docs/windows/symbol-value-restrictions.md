@@ -18,53 +18,56 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1e6b594ad7fe1d805511d5e2cd1b67bd0d791e8e
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 5ed1631d9b8f0c591006c7b708662b3a7321f22b
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40013404"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42602746"
 ---
 # <a name="symbol-value-restrictions"></a>기호 값 제한
-기호 값은 #define 전처리기 지시문에 대해 일반적인 방식으로 표현된 정수일 수 있습니다. 다음은 기호 값의 몇 가지 예입니다.  
-  
-```  
-18  
-4001  
-0x0012  
--3456  
-```  
-  
- 리소스(액셀러레이터 키, 비트맵, 커서, 대화 상자, 아이콘, 메뉴, 문자열 테이블 및 버전 정보)에 대한 기호 값은 0에서 32,767 사이의 10진수여야 하며 16진수일 수 없습니다. 대화 상자 컨트롤이나 문자열 테이블의 개별 문자열 같이 리소스 일부에 대한 기호 값은 0에서 65,534 사이이거나 -32,768에서 32,767 사이일 수 있습니다.  
-  
- 리소스 기호는 16비트 숫자입니다. 이 기호는 부호 있는 숫자나 부호 없는 숫자로 입력할 수 있지만 내부적으로는 부호 없는 정수로 사용됩니다. 따라서 음수는 해당 양수 값으로 캐스팅됩니다.  
-  
- 다음은 기호 값에 대한 몇 가지 제한 사항입니다.  
-  
--   Visual Studio 개발 환경 및 MFC에서는 일부 숫자 범위를 특별한 용도로 사용합니다. 가장 중요한 비트 세트를 사용하는 모든 숫자(부호에 따라 -32,768 ~ -1 또는 32,768 ~ 65,534)는 MFC에 의해 예약되었습니다.  
-  
--   기호 값은 다른 기호 문자열을 사용하여 정의할 수 없습니다. 예를 들어 다음과 같은 기호 정의는 지원되지 않습니다.  
-  
-    ```cpp  
-    #define IDC_MYEDIT  IDC_OTHEREDIT  //not supported  
-    ```  
-  
--   인수가 있는 전처리기 매크로는 값 정의로 사용할 수 없습니다. 예를 들어:  
-  
-    ```cpp  
-    #define   IDD_ABOUT  ID(7) //not supported  
-    ```  
-  
-     컴파일 시간에 `ID`가 계산되는 결과에 관계없이 유효한 식이 아닙니다.  
-  
--   응용 프로그램에 식으로 정의된 기호를 포함하는 기존 파일이 있을 수 있습니다. 읽기 전용 기호로 포함 하는 방법에 대 한 자세한 내용은 참조 하세요. [공유 (읽기 전용) 또는 계산 된 기호](../windows/including-shared-read-only-or-calculated-symbols.md)합니다.  
-  
- 숫자 범위에 대 한 자세한 내용은 참조 하세요. [TN023: 표준 MFC 리소스](../mfc/tn023-standard-mfc-resources.md)합니다.  
-  
-## <a name="requirements"></a>요구 사항  
- Win32  
-  
-## <a name="see-also"></a>참고 항목  
- [기호 숫자 값 변경](../windows/changing-a-symbol-s-numeric-value.md)   
- [기호 이름 제한](../windows/symbol-name-restrictions.md)   
- [미리 정의된 기호 ID](../windows/predefined-symbol-ids.md)
+
+기호 값은 #define 전처리기 지시문에 대해 일반적인 방식으로 표현된 정수일 수 있습니다. 다음은 기호 값의 몇 가지 예입니다.
+
+```
+18
+4001
+0x0012
+-3456
+```
+
+리소스(액셀러레이터 키, 비트맵, 커서, 대화 상자, 아이콘, 메뉴, 문자열 테이블 및 버전 정보)에 대한 기호 값은 0에서 32,767 사이의 10진수여야 하며 16진수일 수 없습니다. 대화 상자 컨트롤이나 문자열 테이블의 개별 문자열 같이 리소스 일부에 대한 기호 값은 0에서 65,534 사이이거나 -32,768에서 32,767 사이일 수 있습니다.
+
+리소스 기호는 16비트 숫자입니다. 이 기호는 부호 있는 숫자나 부호 없는 숫자로 입력할 수 있지만 내부적으로는 부호 없는 정수로 사용됩니다. 따라서 음수는 해당 양수 값으로 캐스팅됩니다.
+
+다음은 기호 값에 대한 몇 가지 제한 사항입니다.
+
+- Visual Studio 개발 환경 및 MFC에서는 일부 숫자 범위를 특별한 용도로 사용합니다. 가장 중요한 비트 세트를 사용하는 모든 숫자(부호에 따라 -32,768 ~ -1 또는 32,768 ~ 65,534)는 MFC에 의해 예약되었습니다.
+
+- 기호 값은 다른 기호 문자열을 사용하여 정의할 수 없습니다. 예를 들어 다음과 같은 기호 정의는 지원되지 않습니다.
+
+    ```cpp
+    #define IDC_MYEDIT  IDC_OTHEREDIT  //not supported
+    ```
+
+- 인수가 있는 전처리기 매크로는 값 정의로 사용할 수 없습니다. 예를 들어:
+
+    ```cpp
+    #define   IDD_ABOUT  ID(7) //not supported
+    ```
+
+   컴파일 시간에 `ID`가 계산되는 결과에 관계없이 유효한 식이 아닙니다.
+
+- 응용 프로그램에 식으로 정의된 기호를 포함하는 기존 파일이 있을 수 있습니다. 읽기 전용 기호로 포함 하는 방법에 대 한 자세한 내용은 참조 하세요. [공유 (읽기 전용) 또는 계산 된 기호](../windows/including-shared-read-only-or-calculated-symbols.md)합니다.
+
+숫자 범위에 대 한 자세한 내용은 참조 하세요. [TN023: 표준 MFC 리소스](../mfc/tn023-standard-mfc-resources.md)합니다.
+
+## <a name="requirements"></a>요구 사항
+
+Win32
+
+## <a name="see-also"></a>참고 항목
+
+[기호 숫자 값 변경](../windows/changing-a-symbol-s-numeric-value.md)  
+[기호 이름 제한](../windows/symbol-name-restrictions.md)  
+[미리 정의된 기호 ID](../windows/predefined-symbol-ids.md)

@@ -1,5 +1,5 @@
 ---
-title: 다중 스레드 C 프로그램 샘플 | Microsoft Docs
+title: 샘플 다중 스레드 C 프로그램 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,21 +12,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1584d52f9ea543c95363a0f7f03cdad80442ee1c
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 1899187bd1ff8315300a1d60b24dbfb04f77a15a
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687994"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42538521"
 ---
 # <a name="sample-multithread-c-program"></a>샘플 다중 스레드 C 프로그램
-Bounce.c 샘플 다중 스레드 프로그램에서는 새입니다 스레드 때마다 문자는 **는** 또는 **A** 를 입력 합니다. 각 스레드는 화면 다른 색상의 웃는 얼굴을 반송 합니다. 최대 32 개의 스레드를 만들 수 있습니다. 프로그램의 정상적으로 종료 때 `q` 또는 **Q** 를 입력 합니다. 컴파일 및 Bounce.c 연결 하는 방법에 대 한 정보를 참조 하십시오. [프로그램 컴파일 및 링크 다중 스레드](../parallel/compiling-and-linking-multithread-programs.md)합니다.  
+Bounce.c는 샘플 다중 스레드 프로그램에서는 새입니다 스레드 때마다 문자 `a` 또는 `A` 형식화 됩니다. 각 스레드는 화면 주위에 여러 색상의 움직이는 웃는 얼굴을 바운스합니다. 최대 32 개의 스레드를 만들 수 있습니다. 프로그램의 정상적으로 종료 하면 `q` 또는 `Q` 형식화 됩니다. 컴파일 및 Bounce.c를 연결 하는 방법에 대 한 내용은 [연결 다중 스레드 프로그램 컴파일 및](../parallel/compiling-and-linking-multithread-programs.md)합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ### <a name="code"></a>코드  
   
-```  
+```c  
 // sample_multithread_c_program.c  
 // compile with: /c  
 //  
@@ -219,4 +219,5 @@ q
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [C 및 Win32를 사용한 다중 스레딩](../parallel/multithreading-with-c-and-win32.md)
+
+[C 및 Win32를 사용한 다중 스레딩](../parallel/multithreading-with-c-and-win32.md)

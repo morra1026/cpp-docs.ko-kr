@@ -18,35 +18,38 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: eb15dbd56656c72bc0f96491d24fc43fb96de84c
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: f419f9c370c58c1e3ebf07d3b78f15499a072d4e
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40017814"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42603500"
 ---
 # <a name="moving-or-copying-an-accelerator-table-entry-to-another-resource-script-file"></a>액셀러레이터 키 테이블 항목을 다른 리소스 스크립트 파일로 이동/복사
-### <a name="to-move-or-copy-an-accelerator-table-entry-to-another-resource-script-file"></a>액셀러레이터 키 테이블 항목을 다른 리소스 스크립트 파일로 이동/복사  
-  
-1.  두 리소스 스크립트 파일 모두에서 액셀러레이터 키 테이블을 엽니다.  
-  
-    > [!NOTE]
-    >  프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.  
-  
-2.  이동하려는 항목을 선택합니다.  
-  
-3.  **편집할** 메뉴에서 선택 **복사** 또는 **잘라내기**합니다.  
-  
-4.  대상 리소스 스크립트 파일에서 항목을 선택합니다.  
-  
-5.  **편집할** 메뉴 선택 **붙여넣기**합니다.  
-  
-    > [!NOTE]
-    >  복사 및 붙여넣기의 바로 가기 키를 사용할 수도 있습니다.  
-  
-## <a name="requirements"></a>요구 사항  
- Win32  
-  
-## <a name="see-also"></a>참고 항목  
- [액셀러레이터 키 테이블 편집](../windows/editing-accelerator-tables.md)   
- [액셀러레이터 키 편집기](../windows/accelerator-editor.md)
+
+### <a name="to-move-or-copy-an-accelerator-table-entry-to-another-resource-script-file"></a>액셀러레이터 키 테이블 항목을 다른 리소스 스크립트 파일로 이동/복사
+
+1. 두 리소스 스크립트 파일 모두에서 액셀러레이터 키 테이블을 엽니다.
+
+   > [!NOTE]
+   > 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.
+
+2. 이동하려는 항목을 선택합니다.
+
+3. **편집할** 메뉴에서 선택 **복사** 또는 **잘라내기**합니다.
+
+4. 대상 리소스 스크립트 파일에서 항목을 선택합니다.
+
+5. **편집할** 메뉴 선택 **붙여넣기**합니다.
+
+   > [!NOTE]
+   > 복사 및 붙여넣기의 바로 가기 키를 사용할 수도 있습니다.
+
+## <a name="requirements"></a>요구 사항
+
+Win32
+
+## <a name="see-also"></a>참고 항목
+
+[액셀러레이터 키 테이블 편집](../windows/editing-accelerator-tables.md)  
+[액셀러레이터 키 편집기](../windows/accelerator-editor.md)

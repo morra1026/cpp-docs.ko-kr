@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80556b31650cc04e66b2ad6681d60eff2fa72d5f
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: d138f65e447594059dba5b536378ee004be77036
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39025820"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42573366"
 ---
 # <a name="atl-project-wizard"></a>ATL 프로젝트 마법사
 액티브 템플릿 라이브러리 (ATL)은 작고 빠른 COM 개체 작성을 단순화 하는 템플릿 기반 c + + 클래스의 집합. ATL 프로젝트 마법사는 COM 개체를 포함 하는 구조를 사용 하 여 프로젝트를 만듭니다.  
@@ -52,7 +52,7 @@ ms.locfileid: "39025820"
   
 -   [ATL 프로젝트의 컴파일러 최적화](../../atl/reference/specifying-compiler-optimization-for-an-atl-project.md)  
   
- 프로젝트 속성을 지정할 수 있습니다 (예를 들어 [CRT에 정적으로 링크 것인지](../../atl/programming-with-atl-and-c-run-time-code.md))에 [프로젝트 속성](../../ide/general-property-page-project.md) 페이지를 설정할 수 있습니다 [빌드 구성](/visualstudio/ide/understanding-build-configurations) 에 대 한는 ATL 프로젝트입니다. 참조 [응용 프로그램 빌드를 사용 하 여 프로젝트](http://msdn.microsoft.com/3339fa90-bac2-4b95-8361-662a2e0e7dfe) 자세한 내용은 합니다.  
+ 프로젝트 속성을 지정할 수 있습니다 (예를 들어 [CRT에 정적으로 링크 것인지](../../atl/programming-with-atl-and-c-run-time-code.md))에 [프로젝트 속성](../../ide/general-property-page-project.md) 페이지를 설정할 수 있습니다 [빌드 구성](/visualstudio/ide/understanding-build-configurations) 에 대 한는 ATL 프로젝트입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Visual C++ 프로젝트 만들기 및 관리](../../ide/creating-and-managing-visual-cpp-projects.md)   

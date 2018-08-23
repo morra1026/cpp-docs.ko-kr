@@ -40,16 +40,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4588829b3ec1d348405be925a75c493f4e8594b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 898281e0652345f22c63076cf4b0a73294faaf04
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397755"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42571907"
 ---
 # <a name="endthread-endthreadex"></a>_endthread, _endthreadex
 
-스레드를 종료 **_endthread** 에 의해 만들어진 스레드 종료 **_beginthread** 및 **_endthreadex** 에 의해 만들어진 스레드 종료 **_beginthreadex**.
+스레드 종료 **_endthread** 에서 만든 스레드를 종료 **_beginthread** 하 고 **_endthreadex** 에서 만든 스레드를 종료 **_beginthreadex**.
 
 ## <a name="syntax"></a>구문
 
@@ -66,21 +66,21 @@ void _endthreadex(
 
 ## <a name="remarks"></a>설명
 
-그러나 호출할 수 있습니다 **_endthread** 또는 **_endthreadex** 명시적으로 스레드를 종료할 **_endthread** 또는 **_endthreadex** 라고 자동으로에 대 한 매개 변수로 전달 된 스레드가 루틴에서 반환 하는 경우 **_beginthread** 또는 **_beginthreadex**합니다. 에 대 한 호출으로 스레드를 종료 **endthread** 또는 **_endthreadex** 스레드에 대 한 할당 된 리소스의 적절 한 복구 보장 합니다.
+호출할 수 있습니다 **_endthread** 또는 **_endthreadex** 명시적으로 스레드를 종료할; 그러나 **_endthread** 하거나 **_endthreadex** 라고 자동으로 매개 변수로 전달 된 스레드가 루틴에서 반환 하는 경우 **_beginthread** 하거나 **_beginthreadex**합니다. 호출 하 여 스레드를 종료 **endthread** 하거나 **_endthreadex** 스레드에 대 한 할당 된 리소스의 적절 한 복구를 보장 하는 데 도움이 됩니다.
 
 > [!NOTE]
-> Libcmt.lib로 연결된 실행 파일의 경우 런타임 시스템이 할당된 리소스를 회수하지 않도록 Win32 [ExitThread](http://msdn.microsoft.com/library/windows/desktop/ms682659.aspx) API를 호출하지 마세요. **_endthread** 및 **_endthreadex** 할당 된 스레드 리소스를 회수 한 다음 호출 **ExitThread**합니다.
+> Libcmt.lib로 연결된 실행 파일의 경우 런타임 시스템이 할당된 리소스를 회수하지 않도록 Win32 [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) API를 호출하지 마세요. **_endthread** 하 고 **_endthreadex** 할당 된 스레드 리소스를 회수 하 고 호출 **ExitThread**합니다.
 
-**_endthread** 스레드 핸들을 자동으로 닫습니다. (이 동작은 Win32에서 **ExitThread** API입니다.) 따라서 사용 하는 경우 **_beginthread** 및 **_endthread**를 명시적으로 닫지 마세요 스레드 핸들 Win32를 호출 하 여 [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API입니다.
+**_endthread** 스레드 핸들을 자동으로 닫습니다. (이 동작은 Win32에서 다릅니다 **ExitThread** API입니다.) 따라서 사용 하는 경우 **_beginthread** 하 고 **_endthread**를 명시적으로 닫지 마세요 스레드 핸들을 Win32를 호출 하 여 [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API.
 
-같은 Win32 **ExitThread** API **_endthreadex** 스레드 핸들을 닫지 않습니다. 따라서 사용 하는 경우 **_beginthreadex** 및 **_endthreadex**, Win32를 호출 하 여 스레드 핸들을 닫아야 **CloseHandle** API입니다.
+Win32와 같은 **ExitThread** API **_endthreadex** 스레드 핸들을 닫지 않습니다. 따라서 사용 하는 경우 **_beginthreadex** 하 고 **_endthreadex**, Win32를 호출 하 여 스레드 핸들을 닫아야 **CloseHandle** API.
 
 > [!NOTE]
-> **_endthread** 및 **_endthreadex** c + + 소멸자 보류 중인 스레드를 호출할 수 있습니다.
+> **_endthread** 하 고 **_endthreadex** 호출 되지 않은 스레드에서 c + + 소멸자가 보류 중인 발생 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**_endthread**|\<process.h>|
 |**_endthreadex**|\<process.h>|
@@ -91,7 +91,7 @@ void _endthreadex(
 
 다중 스레드 버전의 유일한 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md) 입니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 [_beginthread](beginthread-beginthreadex.md)에 대한 예를 참조하세요.
 

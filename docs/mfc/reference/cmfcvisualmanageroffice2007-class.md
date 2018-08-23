@@ -240,17 +240,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4fd70adb821724a476a66ad21157eb8506ffaa40
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: fd52e1437146c5584fa6240b4423462401921b44
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37039591"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42538762"
 ---
 # <a name="cmfcvisualmanageroffice2007-class"></a>CMFCVisualManagerOffice2007 클래스
 `CMFCVisualManagerOffice2007` 응용 프로그램에 Microsoft Office 2007 모양을 제공 합니다. 
 
-[!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -279,7 +279,7 @@ class CMFCVisualManagerOffice2007 : public CMFCVisualManagerOffice2003
 |[CMFCVisualManagerOffice2007::GetRibbonStatusBarTextColor](#getribbonstatusbartextcolor)||  
 |[CMFCVisualManagerOffice2007::GetShowAllMenuItemsHeight](#getshowallmenuitemsheight)||  
 |[CMFCVisualManagerOffice2007::GetStatusBarPaneTextColor](#getstatusbarpanetextcolor)||  
-|`CMFCVisualManagerOffice2007::GetStyle`|현재 색 구성표를 반환는 `CMFCVisualManagerOffice2007` GUI는 차례로 Microsoft Office 2007 GUI를 모방 합니다.|  
+|`CMFCVisualManagerOffice2007::GetStyle`|현재 색 구성표를 반환 합니다 `CMFCVisualManagerOffice2007` 차례로 Microsoft Office 2007 GUI를 모방 하는 GUI입니다.|  
 |[CMFCVisualManagerOffice2007::GetTabFrameColors](#gettabframecolors)||  
 |[CMFCVisualManagerOffice2007::GetTabHorzMargin](#gettabhorzmargin)||  
 |[CMFCVisualManagerOffice2007::GetTabTextColor](#gettabtextcolor)||  
@@ -377,13 +377,13 @@ class CMFCVisualManagerOffice2007 : public CMFCVisualManagerOffice2003
 |[CMFCVisualManagerOffice2007::OnSetWindowRegion](#onsetwindowregion)||  
 |[CMFCVisualManagerOffice2007::OnUpdateSystemColors](#onupdatesystemcolors)||  
 |[CMFCVisualManagerOffice2007::SetResourceHandle](#setresourcehandle)||  
-|`CMFCVisualManagerOffice2007::SetStyle`|설정의 색 구성표는 `CMFCVisualManagerOffice2007` GUI 합니다.|  
+|`CMFCVisualManagerOffice2007::SetStyle`|설정의 색 구성표를 `CMFCVisualManagerOffice2007` GUI입니다.|  
   
 ## <a name="remarks"></a>설명  
- 사용 하 여 `CMFCVisualManagerOffice2007` Microsoft Office 2007의 유사 하 게 응용 프로그램의 시각적 모양을 변경할 수 있습니다. 이 비주얼 관리자를 사용 하기 전에 스타일을 설정 해야 합니다. 이 비주얼 관리자를 전달 하기 전에 `CMFCVisualManager::SetDefaultManager`, 정적 함수를 호출 해야 `CMFCVisualManagerOffice2007::SetStyle`합니다.  
+ 사용 하 여 `CMFCVisualManagerOffice2007` 비슷하게 Microsoft Office 2007의 응용 프로그램의 시각적 모양을 변경 합니다. 이 비주얼 관리자 사용 하기 전에 스타일을 설정 해야 합니다. 이 비주얼 관리자를 전달 하기 전에 `CMFCVisualManager::SetDefaultManager`, 정적 함수를 호출 해야 `CMFCVisualManagerOffice2007::SetStyle`합니다.  
   
 ## <a name="example"></a>예  
- 다음 예제에서는 Office 2007 비주얼 관리자를 사용 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인는 [바탕 화면 경고 데모 샘플](../../visual-cpp-samples.md)합니다.  
+ 다음 예제에서는 Office 2007 비주얼 관리자를 사용 하는 방법에 설명 합니다. 이 코드 조각은의 일부인 합니다 [바탕 화면 경고 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_DesktopAlertDemo#7](../../mfc/reference/codesnippet/cpp/cmfcvisualmanageroffice2007-class_1.cpp)]  
   
@@ -710,8 +710,8 @@ virtual BOOL GetToolTipInfo(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *params*  
- [in] *n 유형*  
+ [in] *매개 변수*  
+ [in] *n 형식*  
   
 ### <a name="return-value"></a>반환 값  
   

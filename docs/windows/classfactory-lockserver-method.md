@@ -17,38 +17,44 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ee858346fdb70e136edfbc562c2dfffb1f63e462
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 5ea76974359da2002178a342ab7d9b5523c52889
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39652373"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42584140"
 ---
 # <a name="classfactorylockserver-method"></a>ClassFactory::LockServer 메서드
-증가 또는 현재 추적 되는 개체의 기본 수 감소 **ClassFactory** 개체입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-STDMETHOD(  
-   LockServer  
-)(BOOL fLock);  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *떼*  
- **true** 추적 된 개체 수가 증가 합니다. **false** 추적 된 개체 수가 감소 합니다.  
-  
-## <a name="return-value"></a>반환 값  
- 성공하면 S_OK이고, 그렇지 않으면 E_FAIL입니다.  
-  
-## <a name="remarks"></a>설명  
- **ClassFactory** 개체의 기본 인스턴스에서 추적 합니다 [모듈](../windows/module-class.md) 클래스입니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** module.h  
-  
- **네임스페이스:** Microsoft::WRL  
-  
-## <a name="see-also"></a>참고 항목  
- [ClassFactory 클래스](../windows/classfactory-class.md)
+
+증가 또는 현재 추적 되는 개체의 기본 수 감소 **ClassFactory** 개체입니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+STDMETHOD(
+   LockServer
+)(BOOL fLock);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*떼*  
+**true** 추적 된 개체 수가 증가 합니다. **false** 추적 된 개체 수가 감소 합니다.
+
+## <a name="return-value"></a>반환 값
+
+성공하면 S_OK이고, 그렇지 않으면 E_FAIL입니다.
+
+## <a name="remarks"></a>설명
+
+**ClassFactory** 개체의 기본 인스턴스에서 추적 합니다 [모듈](../windows/module-class.md) 클래스입니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** module.h
+
+**네임스페이스:** Microsoft::WRL
+
+## <a name="see-also"></a>참고 항목
+
+[ClassFactory 클래스](../windows/classfactory-class.md)

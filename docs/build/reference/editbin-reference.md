@@ -19,20 +19,20 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c20191fdb133fe09ed4f6a462cd777098acd5f05
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6e1e9963328d328767d97b3af34e20b1d2a1840b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372310"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42571727"
 ---
 # <a name="editbin-reference"></a>EDITBIN 참조
-Microsoft COFF Binary 파일 편집기 (EDITBIN 합니다. EXE) 파일 형식 COFF (공용 개체) 이진 파일을 수정 합니다. 개체 파일, 실행 파일 및 동적 연결 라이브러리 (DLL)를 수정 하려면 EDITBIN를 사용할 수 있습니다.  
+Microsoft COFF Binary 파일 편집기 (EDITBIN 합니다. EXE) 개체 파일 형식 COFF (공용) 이진 파일을 수정 합니다. 개체 파일, 실행 파일 및 동적 연결 라이브러리 (DLL)를 수정 하려면 EDITBIN를 사용할 수 있습니다.  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] 명령 프롬프트에서만 이 도구를 시작할 수 있습니다. 시스템 명령 프롬프트 또는 파일 탐색기에서는 시작할 수 없습니다.  
+>  Visual Studio 명령 프롬프트 에서만에서이 도구를 시작할 수 있습니다. 시스템 명령 프롬프트 또는 파일 탐색기에서는 시작할 수 없습니다.  
   
- EDITBIN 사용으로 생성 된 파일을 사용할 수 없으면는 [/GL](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션입니다. 다시 컴파일 및 연결 하 여 실현할 수 /GL으로 생성 된 이진 파일을 수정 해야 합니다.  
+ EDITBIN를 사용 하 여 생성 된 파일에서 사용 하기 위해 사용할 수 없는 합니다 [/GL](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션입니다. 다시 컴파일 및 연결 하 여 구현할 수 /GL을 사용 하 여 생성 된 이진 파일을 수정 해야 합니다.  
   
 -   [EDITBIN 명령줄](../../build/reference/editbin-command-line.md)  
   

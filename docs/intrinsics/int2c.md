@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e163eabd802fdd33d9f90d3a3a111017188dd89e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 23727ed40b12506ddd47a03055eaf8514d5685c5
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33329409"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42538922"
 ---
 # <a name="int2c"></a>__int2c
 **Microsoft 전용**  
@@ -41,9 +41,9 @@ void __int2c(void);
   
 |내장 함수|아키텍처|  
 |---------------|------------------|  
-|`__int2c`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__int2c`|x86, x64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 **Microsoft 전용 종료**  
   

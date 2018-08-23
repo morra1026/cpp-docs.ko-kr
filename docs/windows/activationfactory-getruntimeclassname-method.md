@@ -17,35 +17,40 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: edc4658ebf0519ef9d1792d62b303f423e658835
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 8847083fe134c36f506e7080772b1e5f0e2a873c
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39643071"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590184"
 ---
 # <a name="activationfactorygetruntimeclassname-method"></a>ActivationFactory::GetRuntimeClassName 메서드
-개체의 런타임 클래스 이름을 가져옵니다 현재 **ActivationFactory** 인스턴스화합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-STDMETHOD(  
-   GetRuntimeClassName  
-)(_Out_ HSTRING* runtimeName);  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *runtimeName*  
- 이 작업이 완료 될 때, 개체의 런타임 클래스 이름을 포함 하는 문자열에 대 한 핸들을 현재 **ActivationFactory** 인스턴스화합니다.  
-  
-## <a name="return-value"></a>반환 값  
- 성공하면 S_OK이고, 그렇지 않으면 실패를 설명하는 HRESULT가 발생합니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** module.h  
-  
- **네임스페이스:** Microsoft::WRL  
-  
-## <a name="see-also"></a>참고 항목  
- [ActivationFactory 클래스](../windows/activationfactory-class.md)
+
+개체의 런타임 클래스 이름을 가져옵니다 현재 **ActivationFactory** 인스턴스화합니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+STDMETHOD(
+   GetRuntimeClassName
+)(_Out_ HSTRING* runtimeName);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*runtimeName*  
+이 작업이 완료 될 때, 개체의 런타임 클래스 이름을 포함 하는 문자열에 대 한 핸들을 현재 **ActivationFactory** 인스턴스화합니다.
+
+## <a name="return-value"></a>반환 값
+
+성공하면 S_OK이고, 그렇지 않으면 실패를 설명하는 HRESULT가 발생합니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** module.h
+
+**네임스페이스:** Microsoft::WRL
+
+## <a name="see-also"></a>참고 항목
+
+[ActivationFactory 클래스](../windows/activationfactory-class.md)

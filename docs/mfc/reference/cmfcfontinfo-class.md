@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 23ff2d857938881f1c3d9f02a1d8465a5a4e97c7
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: ff2f4a6962ee70882ba85a15ea213f7fe6ffe11f
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852421"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541125"
 ---
 # <a name="cmfcfontinfo-class"></a>CMFCFontInfo 클래스
 `CMFCFontInfo` 클래스 이름 및 글꼴의 기타 특성에 설명 합니다.  
@@ -115,7 +115,7 @@ CMFCFontInfo(const CMFCFontInfo& src);
 ### <a name="return-value"></a>반환 값  
   
 ### <a name="remarks"></a>설명  
- 이 설명서에서는 용어 *문자 집합* 하 고 *스크립트* 서로 교환해 서입니다. A *스크립트*, 문자 및 하나 이상의 언어에서 해당 문자를 작성 하는 것에 대 한 규칙의 컬렉션인는으로 쓰는 쓰기 시스템 라고도 합니다. 에 알파벳 및 스크립트에 사용 되는 문장 부호 문자의 컬렉션에 포함 됩니다. 예를 들어 미국에서 사용 되는 것와 해당 알파벳 A부터 Z 까지의 문자가 포함 됩니다. 라틴어 스크립트 영어에 사용 됩니다. 합니다 `lfCharSet` 의 멤버는 [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) 구조에는 문자 집합을 지정 합니다. 예를 들어, 값은 굴림 지정는 [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)] 라틴 알파벳을 포함 하는 문자 집합입니다.  
+ 이 설명서에서는 용어 *문자 집합* 하 고 *스크립트* 서로 교환해 서입니다. A *스크립트*, 문자 및 하나 이상의 언어에서 해당 문자를 작성 하는 것에 대 한 규칙의 컬렉션인는으로 쓰는 쓰기 시스템 라고도 합니다. 에 알파벳 및 스크립트에 사용 되는 문장 부호 문자의 컬렉션에 포함 됩니다. 예를 들어 미국에서 사용 되는 것와 해당 알파벳 A부터 Z 까지의 문자가 포함 됩니다. 라틴어 스크립트 영어에 사용 됩니다. 합니다 `lfCharSet` 의 멤버는 [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) 구조에는 문자 집합을 지정 합니다. 예를 들어 값 굴림 라틴 알파벳을 포함 하는 ANSI 문자 집합을 지정 합니다.  
   
 ##  <a name="getfullname"></a>  CMFCFontInfo::GetFullName  
  연결 된 글꼴 이름과 해당 문자 집합 (스크립트)를 검색 합니다.  

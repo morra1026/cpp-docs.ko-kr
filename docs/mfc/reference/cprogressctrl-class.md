@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca1c4d1d2a7c37838a57a55189330465cd0700e8
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 93a637c1374e77127a5bf71c6fa736d2857928f1
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850159"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42541701"
 ---
 # <a name="cprogressctrl-class"></a>CProgressCtrl 클래스
 Windows의 공용 진행률 표시줄 컨트롤의 기능을 제공합니다.  
@@ -350,10 +350,12 @@ COLORREF SetBarColor(COLORREF clrBar);
 |[in] *clrBar*|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 새로운 진행률 표시줄의 색을 지정 하는 값입니다. 기본 색을 사용 하 여 진행률 표시줄이 시킬 CLR_DEFAULT를 지정 합니다.|  
   
 ### <a name="return-value"></a>반환 값  
- 진행률 표시줄의 이전 색으로 표시를 [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 값 또는 CLR_DEFAULT 경우 진행률 표시줄의 색은 기본 색입니다.  
+
+진행률 표시줄의 이전 색으로 표시를 [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 값 또는 CLR_DEFAULT 경우 진행률 표시줄의 색은 기본 색입니다.  
   
 ### <a name="remarks"></a>설명  
- 합니다 `SetBarColor` 진행률 표시줄 경우에만 색을 설정 하는 메서드를 [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] [테마](https://msdn.microsoft.com/library/windows/desktop/hh270423.aspx) 은 적용 되지 않습니다.  
+
+합니다 `SetBarColor` 메서드는 Windows Vista 진행률 표시줄 경우에만 색을 설정 [테마](/windows/desktop/Controls/visual-styles-overview) 은 적용 되지 않습니다.  
   
  이 메서드는 전송 된 [PBM_SETBARCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760838) Windows SDK에 설명 된 메시지입니다.  
   

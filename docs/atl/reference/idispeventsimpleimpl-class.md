@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cea7c17b61f3576ed2a8f1a4daa894f5a30c8b4e
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 7793262b60adbbacb2cf7b10245340790b26e805
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027289"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42571637"
 ---
 # <a name="idispeventsimpleimpl-class"></a>IDispEventSimpleImpl 클래스
 이 클래스의 구현을 제공 하는 `IDispatch` 형식 라이브러리에서 형식 정보를 가져오지 않고 메서드.  
@@ -189,7 +189,7 @@ STDMETHOD(GetIDsOfNames)(
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IDispatch::GetIDsOfNames](http://msdn.microsoft.com/6f6cf233-3481-436e-8d6a-51f93bf91619) Windows SDK에에서 있습니다.  
+ 참조 [IDispatch::GetIDsOfNames](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) Windows SDK에에서 있습니다.  
   
 ##  <a name="gettypeinfo"></a>  IDispEventSimpleImpl::GetTypeInfo  
  이 구현의 `IDispatch::GetTypeInfo` E_NOTIMPL을 반환 합니다.  
@@ -202,7 +202,7 @@ STDMETHOD(GetTypeInfo)(
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IDispatch::GetTypeInfo](http://msdn.microsoft.com/cc1ec9aa-6c40-4e70-819c-a7c6dd6b8c99) Windows SDK에에서 있습니다.  
+ 참조 [IDispatch::GetTypeInfo](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfo) Windows SDK에에서 있습니다.  
   
 ##  <a name="gettypeinfocount"></a>  IDispEventSimpleImpl::GetTypeInfoCount  
  이 구현의 `IDispatch::GetTypeInfoCount` E_NOTIMPL을 반환 합니다.  
@@ -212,7 +212,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* /* pctinfo */);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/da876d53-cb8a-465c-a43e-c0eb272e2a12) Windows SDK에에서 있습니다.  
+ 참조 [IDispatch::GetTypeInfoCount](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) Windows SDK에에서 있습니다.  
   
 ##  <a name="invoke"></a>  IDispEventSimpleImpl::Invoke  
  이 구현의 `IDispatch::Invoke` 이벤트 처리기 나열 이벤트 싱크 맵 호출 합니다.  
@@ -230,7 +230,7 @@ STDMETHOD(Invoke)(
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [idispatch:: Invoke](http://msdn.microsoft.com/964ade8e-9d8a-4d32-bd47-aa678912a54d)합니다.  
+ 참조 [idispatch:: Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke)합니다.  
   
 ##  <a name="unadvise"></a>  IDispEventSimpleImpl::Unadvise  
  나타내는 이벤트 소스를 사용 하 여 연결을 끊는 *pUnk*합니다.  

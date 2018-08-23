@@ -1,5 +1,5 @@
 ---
-title: _InterlockedExchangePointer intrinsic 함수 | Microsoft Docs
+title: _InterlockedExchangePointer 내장 함수 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -30,12 +30,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8482b7d5b21c113001b702e00f406b9a3fcfd9c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dfeb1453cffac6cfe338f42da8b8efe60e18c9f8
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33334940"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42541889"
 ---
 # <a name="interlockedexchangepointer-intrinsic-functions"></a>_InterlockedExchangePointer Intrinsic Functions
 **Microsoft 전용**  
@@ -83,16 +83,16 @@ void * _InterlockedExchangePointer_HLERelease(
   
 ## <a name="requirements"></a>요구 사항  
   
-|내장 함수|아키텍처|Header|  
+|내장 함수|아키텍처|헤더|  
 |---------------|------------------|------------|  
-|`_InterlockedExchangePointer`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
+|`_InterlockedExchangePointer`|x86, ARM, x64|\<intrin.h>|  
 |`_InterlockedExchangePointer_acq`, `_InterlockedExchangePointer_rel`, `_InterlockedExchangePointer_nf`|ARM|\<intrin.h>|  
-|`_InterlockedExchangePointer_HLEAcquire`, `_InterlockedExchangePointer_HLERelease`|HLE가 지원되는 [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h>|  
+|`_InterlockedExchangePointer_HLEAcquire`, `_InterlockedExchangePointer_HLERelease`|HLE가 지원 x64|\<immintrin.h>|  
   
  x86 아키텍처에서 `_InterlockedExchangePointer`는 `_InterlockedExchange`를 호출하는 매크로입니다.  
   
 ## <a name="remarks"></a>설명  
- 64비트 시스템에서 매개 변수는 64비트이며 64비트 경계에 정렬해야 합니다. 그렇지 않으면 함수가 실패합니다. 32비트 시스템에서 매개 변수는 32비트이며 32 비트 경계에 정렬해야 합니다. 자세한 내용은 참조 [맞춤](../cpp/align-cpp.md)합니다.  
+ 64비트 시스템에서 매개 변수는 64비트이며 64비트 경계에 정렬해야 합니다. 그렇지 않으면 함수가 실패합니다. 32비트 시스템에서 매개 변수는 32비트이며 32 비트 경계에 정렬해야 합니다. 자세한 내용은 [맞춤](../cpp/align-cpp.md)합니다.  
   
  ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("no fence"의 약어) 접미사가 포함된 내장 함수는 메모리 장벽으로 작동하지 않습니다.  
   

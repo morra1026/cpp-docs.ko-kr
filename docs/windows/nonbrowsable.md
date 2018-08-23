@@ -17,54 +17,57 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: db563fb7e140aece589c4f13bfcfe82cf490c966
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: d2537ba803d27cc3cf90d111e69778e9d6970770
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40016725"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590147"
 ---
 # <a name="nonbrowsable"></a>nonbrowsable
-인터페이스 멤버를 속성 브라우저에 표시 되지 해야 나타냅니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-[nonbrowsable]  
-```  
-  
-## <a name="remarks"></a>설명  
- 합니다 **nonbrowsable** c + + 특성에 동일한 기능을 합니다 [nonbrowsable](http://msdn.microsoft.com/library/windows/desktop/aa367117) MIDL 특성입니다.  
-  
-## <a name="example"></a>예  
-  
-```cpp  
-// cpp_attr_ref_nonbrowsable.cpp  
-// compile with: /LD  
-#include <unknwn.h>  
-[module(name="MyLib")];  
-  
-[object, helpstring("help string"), helpstringcontext(1),   
-uuid="11111111-1111-1111-1111-111111111111"]   
-__interface IMyI  
-{  
-   [nonbrowsable] HRESULT xx();  
-};  
-```  
-  
-## <a name="requirements"></a>요구 사항  
-  
-### <a name="attribute-context"></a>특성 컨텍스트  
-  
-|||  
-|-|-|  
-|**적용 대상**|인터페이스 메서드|  
-|**반복 가능**|아니요|  
-|**필수 특성**|없음|  
-|**잘못된 특성**|없음|  
-  
- 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.  
-  
-## <a name="see-also"></a>참고 항목  
- [IDL 특성](../windows/idl-attributes.md)   
- [메서드 특성](../windows/method-attributes.md)   
+
+인터페이스 멤버를 속성 브라우저에 표시 되지 해야 나타냅니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+[nonbrowsable]
+```
+
+## <a name="remarks"></a>설명
+
+합니다 **nonbrowsable** c + + 특성에 동일한 기능을 합니다 [nonbrowsable](http://msdn.microsoft.com/library/windows/desktop/aa367117) MIDL 특성입니다.
+
+## <a name="example"></a>예
+
+```cpp
+// cpp_attr_ref_nonbrowsable.cpp
+// compile with: /LD
+#include <unknwn.h>
+[module(name="MyLib")];
+
+[object, helpstring("help string"), helpstringcontext(1),
+uuid="11111111-1111-1111-1111-111111111111"]
+__interface IMyI
+{
+   [nonbrowsable] HRESULT xx();
+};
+```
+
+## <a name="requirements"></a>요구 사항
+
+### <a name="attribute-context"></a>특성 컨텍스트
+
+|||
+|-|-|
+|**적용 대상**|인터페이스 메서드|
+|**반복 가능**|아니요|
+|**필수 특성**|없음|
+|**잘못된 특성**|없음|
+
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+[IDL 특성](../windows/idl-attributes.md)  
+[메서드 특성](../windows/method-attributes.md)  

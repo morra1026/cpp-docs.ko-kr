@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 532d5ba64288fb70b19f10386186c0b520e67661
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 40774d6307eb9b423ebd4fd303a48acbd87eda24
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32375918"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42572009"
 ---
 # <a name="constraints-of-delay-loading-dlls"></a>DLL 지연 로드의 제약 조건
 가져오기 지연 로드에 대한 제약 조건이 있습니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "32375918"
   
 -   [바인딩](../../build/reference/binding-imports.md) 항목의 전달 된 지원 되지 않습니다.  
   
--   지연 로드된 DLL의 진입점에서 프로세스별 초기화가 발생하는 경우 DLL 지연 로드로 인해 동일한 동작의 프로세스가 발생하지 않을 수 있습니다. 다른 사례에는 정적 TLS (스레드 로컬 저장소)를 사용 하 여 선언 [__declspec (thread)](../../cpp/thread.md)를 통해 DLL이 로드 되는 경우 처리 되지 않은 있는 `LoadLibrary`합니다. `TlsAlloc`, `TlsFree`, `TlsGetValue` 및 `TlsSetValue`를 사용하는 동적 TLS는 정적 또는 지연 로드된 DLL에 계속해서 사용할 수 있습니다.  
+-   지연 로드된 DLL의 진입점에서 프로세스별 초기화가 발생하는 경우 DLL 지연 로드로 인해 동일한 동작의 프로세스가 발생하지 않을 수 있습니다. 사용 하 여 선언 된 정적 TLS (스레드 로컬 저장소)를 포함 하는 경우도 [__declspec (thread)](../../cpp/thread.md)를 통해 DLL이 로드 될 때 처리 되지 않은 `LoadLibrary`합니다. `TlsAlloc`, `TlsFree`, `TlsGetValue` 및 `TlsSetValue`를 사용하는 동적 TLS는 정적 또는 지연 로드된 DLL에 계속해서 사용할 수 있습니다.  
   
 -   정적(전역) 함수 포인터는 첫 번째 함수 호출 후 가져온 함수로 다시 초기화해야 합니다. 이는 함수 포인터의 첫 번째 사용이 썽크를 가리키기 때문입니다.  
   
@@ -45,7 +45,7 @@ ms.locfileid: "32375918"
  [LoadLibrary 함수](http://msdn.microsoft.com/library/windows/desktop/ms684175.aspx)   
  [GetModuleHandle 함수](http://msdn.microsoft.com/library/windows/desktop/ms683199.aspx)   
  [GetProcAddress 함수](http://msdn.microsoft.com/library/windows/desktop/ms683212.aspx)   
- [TlsAlloc 함수](http://msdn.microsoft.com/library/windows/desktop/ms686801.aspx)   
- [TlsFree 함수](http://msdn.microsoft.com/library/windows/desktop/ms686804.aspx)   
- [TlsGetValue 함수](http://msdn.microsoft.com/library/windows/desktop/ms686812.aspx)   
- [TlsSetValue 함수](http://msdn.microsoft.com/library/windows/desktop/ms686818.aspx)
+ [TlsAlloc 함수](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc)   
+ [Tlsfree가 함수](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsfree)   
+ [TlsGetValue 함수](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)   
+ [TlsSetValue 함수](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlssetvalue)
