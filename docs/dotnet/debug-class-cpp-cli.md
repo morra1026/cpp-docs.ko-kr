@@ -25,15 +25,16 @@ ms.lasthandoff: 05/04/2018
 ms.locfileid: "33106208"
 ---
 # <a name="debug-class-ccli"></a>Debug 클래스(C++/CLI)
-사용 하는 경우 <xref:System.Diagnostics.Debug> Visual c + + 응용 프로그램에서 동작 디버그 및 릴리스 빌드 간에 변경 되지 않습니다.  
+Visual C++ 어플리케이션에서 <xref:System.Diagnostics.Debug> 클래스를 사용하더라도, 디버그 빌드와 릴리스 빌드 모두 똑같이 동작합니다.
   
 ## <a name="remarks"></a>설명  
- 에 대 한 동작 <xref:System.Diagnostics.Trace> 는 Debug 클래스에 대 한 동작과 동일 하지만 추적을 정의 하 고 기호에 따라 달라 집니다. 즉, 업그레이드 해야 합니다 `#ifdef` 릴리스 빌드에서 디버그 동작을 방지 하기 위해 모든 추적 관련 코드입니다.  
+<xref:System.Diagnostics.Trace> 클래스가 수행하는 기능은 Debug 클래스가 수행하는 기능과 동일 합니다. 하지만, <xref:System.Diagnostics.Trace>클래스는 TRACE 심볼의 정의 여부에 의존적입니다.
+이 말은 곧, 릴리스 빌드에서의 디버깅 기능을 방지하기 위해, <xref:System.Diagnostics.Trace> 클래스 관련 코드를 `#ifdef` 지시문으로 감싸줘야 한다는 의미입니다.   
   
 ## <a name="example"></a>예제  
   
 ### <a name="description"></a>설명  
- 다음 샘플에 출력 문을 사용 하 여 컴파일하면 여부에 관계 없이 항상 실행 **/DDEBUG** 또는 **/DTRACE**합니다.  
+ 아래의 샘플은, **/DDEBUG** 또는 **/DTRACE** 옵션을 사용하여 컴파일 하더라도, 항상 출력문을 수행한다는것을 보여줍니다.
   
 ### <a name="code"></a>코드  
   
@@ -69,7 +70,7 @@ test
 ## <a name="example"></a>예제  
   
 ### <a name="description"></a>설명  
- 예상 된 동작을 얻으려면 (즉, "test"가 출력 되지 인쇄 릴리스 빌드에 대 한)를 사용 해야 합니다는 `#ifdef` 및 `#endif` 지시문입니다. 이 해결 방법을 보여 주기 위해 아래 앞의 코드 예제는이 수정 됩니다.  
+예상했던 동작을 얻고 싶은 경우(즉, 릴리스 빌드에서 "test" 라는 결과가 출력되지 않게 하려면), `#ifdef` 지시문이나 `#endif` 지시문을 사용해야 합니다. 바로 이전의 샘플코드가 바로 아래 예제의 해결방법을 보여주는 예제였습니다. 
   
 ### <a name="code"></a>코드  
   
