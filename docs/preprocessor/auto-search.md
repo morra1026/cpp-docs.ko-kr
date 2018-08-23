@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5de12c9db3eec4fe84a93321bdb2d9d96d629ecd
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6cea1e1fa31c21a399dace0a58983f97cc87988c
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33913046"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42541659"
 ---
 # <a name="autosearch"></a>auto_search
 **C + + 전용**  
   
- 형식 라이브러리를 #import로 참조하고 형식 라이브러리 자체가 다른 형식 라이브러리를 참조할 때 컴파일러가 다른 형식 라이브러리에 대해 암시적 #import를 수행할 수 있도록 지정합니다.  
+사용 하 여 형식 라이브러리를 참조할 때 지정 `#import` 컴파일러가 암시적 작업을 수행할 수를 다른 형식 라이브러리 참조 및 `#import` 다른 형식 라이브러리에 대 한 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,6 +37,7 @@ auto_search
 ## <a name="remarks"></a>설명  
  **C + + 전용 종료**  
   
-## <a name="see-also"></a>참고 항목  
- [#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
- [#import 지시문](../preprocessor/hash-import-directive-cpp.md)
+## <a name="see-also"></a>참고 항목 
+
+[#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
+[#import 지시문](../preprocessor/hash-import-directive-cpp.md)

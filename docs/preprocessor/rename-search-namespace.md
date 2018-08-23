@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 367294991b9cbb07ee7c852d757842a20c51cc30
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 20072a5196ce476cf178f7c6e1071bd495202062
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33850257"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42539037"
 ---
 # <a name="renamesearchnamespace"></a>rename_search_namespace
 **C + + 전용**  
   
- 와 동일한 기능에는 [rename_namespace](../preprocessor/rename-namespace.md) 특성 하지만 #import 지시어를 함께 사용 하는 형식 라이브러리에 사용 되는 [auto_search](../preprocessor/auto-search.md) 특성입니다.  
+와 동일한 기능을 [rename_namespace](../preprocessor/rename-namespace.md) 하지만 사용 하는 형식 라이브러리에 사용 되는 `#import` 지시문에 [auto_search](../preprocessor/auto-search.md) 특성.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,13 +34,15 @@ ms.locfileid: "33850257"
 rename_search_namespace("NewName")  
 ```  
   
-#### <a name="parameters"></a>매개 변수  
- `NewName`  
- 네임스페이스의 새 이름입니다.  
+### <a name="parameters"></a>매개 변수  
+*NewName*  
+네임스페이스의 새 이름입니다.  
   
 ## <a name="remarks"></a>설명  
- **C + + 전용 종료**  
+ 
+**C + + 전용 종료**  
   
 ## <a name="see-also"></a>참고 항목  
- [#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
- [#import 지시문](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
+[#import 지시문](../preprocessor/hash-import-directive-cpp.md)

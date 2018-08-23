@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e908a07253e924fa3cfc0a11cdef57a9253eee00
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9c222a939ccb00dc3b7466a1cb1a83abe7ea4036
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844792"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42539671"
 ---
 # <a name="intrinsic"></a>intrinsic
 
@@ -37,11 +37,11 @@ pragma의 인수 목록에 지정된 함수에 대한 호출을 내장 함수로
 
 ## <a name="remarks"></a>설명
 
-**내장** pragma는 함수에 알려진 동작이 컴파일러 지시 합니다.  컴파일러는 함수를 호출할 수 있으며 성능을 개선할 수 있는 경우 함수 호출을 인라인 명령으로 바꾸지 않을 수 있습니다.
+합니다 **내장** pragma는 함수에 알려진 동작이 컴파일러 지시 합니다.  컴파일러는 함수를 호출할 수 있으며 성능을 개선할 수 있는 경우 함수 호출을 인라인 명령으로 바꾸지 않을 수 있습니다.
 
-아래에 내장 형식의 라이브러리 함수가 나와 있습니다. 한 번는 **내장** pragma 표시 되 면, 지정된 된 내장 함수를 포함 하는 첫 번째 함수 정의에서 적용 됩니다. 모양에 또는 소스 파일의 끝까지 계속 적용 한 **함수** pragma는 동일한 내장 함수를 지정 합니다. **내장** pragma는 함수 정의 외에 사용할 수-의 전역 수준에서 합니다.
+아래에 내장 형식의 라이브러리 함수가 나와 있습니다. 한 번을 **내장** pragma 표시 되 면, 지정 된 내장 함수를 포함 하는 첫 번째 함수 정의에 적용 됩니다. 효과의 모양에 또는 소스 파일의 끝에 계속를 `function` pragma 동일한 내장 함수를 지정 합니다. 합니다 **내장** pragma는 함수 정의 외부에 사용할 수-전역 수준입니다.
 
-다음 함수는 내장 형식이 며, 내장 형식은 지정할 때 사용 되는 [/Oi](../build/reference/oi-generate-intrinsic-functions.md):
+다음 함수는 내장 형식이 며, 내장 형식은 지정할 때 사용 됩니다 [/Oi](../build/reference/oi-generate-intrinsic-functions.md):
 
 |||||
 |-|-|-|-|
@@ -56,11 +56,11 @@ pragma의 인수 목록에 지정된 함수에 대한 호출을 내장 함수로
 
 **x86 특정**
 
-**_disable** 및 **사용 (_e)** 내장 함수를 비활성화/활성화 인터럽트 커널 모드 명령을 생성 하 고 커널 모드 드라이버에서 유용할 수 있습니다.
+합니다 `_disable` 고 `_enable` 내장 함수를 비활성화/활성화 인터럽트 커널 모드 명령을 생성 하 고 커널 모드 드라이버에서 유용할 수 있습니다.
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
-"cl -c -FAs sample.c"를 사용하여 다음 코드를 명령줄에서 컴파일한 다음 sample.asm을 찾아 이러한 내장 함수가 x86 명령 CLI 및 STI로 바뀌었는지 확인하십시오.
+사용 하 여 명령줄에서 다음 코드를 컴파일합니다 `cl -c -FAs sample.c` 는 바뀌기 x86을 보려면 다음 CLI 및 STI 지침:
 
 ```cpp
 // pragma_directive_intrinsic.cpp
@@ -86,7 +86,7 @@ int main() {
 |[acos](../c-runtime-library/reference/acos-acosf-acosl.md)|[cosh](../c-runtime-library/reference/cosh-coshf-coshl.md)|[pow](../c-runtime-library/reference/pow-powf-powl.md)|[tanh](../c-runtime-library/reference/tanh-tanhf-tanhl.md)|
 |[asin](../c-runtime-library/reference/asin-asinf-asinl.md)|[fmod](../c-runtime-library/reference/fmod-fmodf.md)|[sinh](../c-runtime-library/reference/sinh-sinhf-sinhl.md)||
 
- 아래에 나열 된 부동 소수점 함수는 지정 하는 경우 실제 내장 형식을 포함 [/Oi](../build/reference/oi-generate-intrinsic-functions.md), [/Og](../build/reference/og-global-optimizations.md), 및 [/fp: fast](../build/reference/fp-specify-floating-point-behavior.md) (또는 /Og을 포함 하는 옵션: [/ Ox](../build/reference/ox-full-optimization.md), [/O1](../build/reference/o1-o2-minimize-size-maximize-speed.md), 및 /O2):
+ 아래 나열 된 부동 소수점 함수를 지정 하는 경우 실제 내장 형식을 포함 [/Oi](../build/reference/oi-generate-intrinsic-functions.md)하십시오 [/Og](../build/reference/og-global-optimizations.md), 및 [/fp:fast](../build/reference/fp-specify-floating-point-behavior.md) (또는 /Og을 포함 하는 모든 옵션: [/ Ox](../build/reference/ox-full-optimization.md)하십시오 [/o1](../build/reference/o1-o2-minimize-size-maximize-speed.md), 및/o2):
 
 |||||
 |-|-|-|-|
@@ -96,9 +96,9 @@ int main() {
 
 사용할 수 있습니다 [/fp: strict](../build/reference/fp-specify-floating-point-behavior.md) 또는 [/Za](../build/reference/za-ze-disable-language-extensions.md) 실제 내장 부동 소수점 옵션 생성을 재정의할 수 있습니다. 이 경우에는 함수가 인수를 프로그램 스택으로 푸시하는 대신 부동 소수점 칩으로 직접 전달하는 라이브러리 루틴으로 생성됩니다.
 
-참조 [#pragma 함수](../preprocessor/function-c-cpp.md) 내용 및 예제 소스 텍스트 블록에 대 한 내장 함수를 설정/해제 하는 방법에 대 한 합니다.
+참조 [#pragma 함수](../preprocessor/function-c-cpp.md) 정보 및 소스 텍스트 블록에 대 한 내장 함수에 대 한 활성화/비활성화 하는 방법의 예제입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
-[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
+[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)  
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)  

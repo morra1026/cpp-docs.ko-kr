@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7561e9d9b49f9af885299a6b94d3edbcf8f2a74
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 70049daf514659a9ae525e1fca40152df4ab382a
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33912812"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42540867"
 ---
 # <a name="autorename"></a>auto_rename
 **C + + 전용**  
   
- 변수 이름에 잠재적인 이름 충돌을 해결하는 두 개의 밑줄(__)을 추가하여 C++ 예약어의 이름을 바꿉니다.  
+변수 이름에 잠재적인 이름 충돌을 해결하는 두 개의 밑줄(__)을 추가하여 C++ 예약어의 이름을 바꿉니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,11 +34,13 @@ ms.locfileid: "33912812"
 auto_rename  
 ```  
   
-## <a name="remarks"></a>설명  
- 이 특성은 하나 이상의 C++ 예약어(키워드 또는 매크로)를 변수 이름으로 사용하는 형식 라이브러리를 가져올 때 사용됩니다.  
+## <a name="remarks"></a>설명 
+
+이 특성은 하나 이상의 C++ 예약어(키워드 또는 매크로)를 변수 이름으로 사용하는 형식 라이브러리를 가져올 때 사용됩니다.  
   
  **C + + 전용 종료**  
   
-## <a name="see-also"></a>참고 항목  
- [#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
- [#import 지시문](../preprocessor/hash-import-directive-cpp.md)
+## <a name="see-also"></a>참고 항목 
+
+[#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
+[#import 지시문](../preprocessor/hash-import-directive-cpp.md)

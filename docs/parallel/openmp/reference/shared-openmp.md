@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8287f96f80748272e29b22ed5c43c364f4353b86
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: b2bc1a0bbf56623feccd4d3bd96f1e719e192d48
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691679"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42541786"
 ---
 # <a name="shared-openmp"></a>shared (OpenMP)
-하나 이상의 변수 모든 스레드 간에 공유 되지 않아야 지정 합니다.  
+하나 이상의 변수는 모든 스레드 간에 공유 해야 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,12 +36,12 @@ shared(var)
  다음은 각 문자에 대한 설명입니다.  
   
  `var`  
- 공유를 하나 더 자세한 변수입니다. 둘 이상의 변수를 지정 하는 경우 변수 이름을 쉼표로 구분 합니다.  
+ 하나 이상의 변수를 공유 합니다. 둘 이상의 변수를 지정할 경우 쉼표를 사용 하 여 변수 이름을 구분 합니다.  
   
 ## <a name="remarks"></a>설명  
- 다른 스레드 간에 변수를 공유 방법은 [copyprivate](../../../parallel/openmp/reference/copyprivate.md) 절.  
+ 스레드 간에 변수를 공유 하는 또 다른 방법은 된 합니다 [copyprivate](../../../parallel/openmp/reference/copyprivate.md) 절.  
   
- `shared` 다음과 같은 지시문에 적용 됩니다.  
+ `shared` 다음 지시문에 적용 됩니다.  
   
 -   [for](../../../parallel/openmp/reference/for-openmp.md)  
   
@@ -49,10 +49,10 @@ shared(var)
   
 -   [섹션](../../../parallel/openmp/reference/sections-openmp.md)  
   
- 자세한 내용은 참조 [공유 2.7.2.4](../../../parallel/openmp/2-7-2-4-shared.md)합니다.  
+ 자세한 내용은 [2.7.2.4 공유](../../../parallel/openmp/2-7-2-4-shared.md)합니다.  
   
-## <a name="example"></a>예제  
- 참조 [개인](../../../parallel/openmp/reference/private-openmp.md) 사용 하는 예제에 대 한 `shared`합니다.  
+## <a name="example"></a>예  
+ 참조 [사설](../../../parallel/openmp/reference/private-openmp.md) 사용 하는 예제에 대 한 `shared`합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [절](../../../parallel/openmp/reference/openmp-clauses.md)

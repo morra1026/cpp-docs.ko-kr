@@ -112,12 +112,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22e48299b6a97f4cb6acba87c7c7bf9a68b16240
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 5b77254c78dbb84d546e080ca5bc275919aac64a
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339256"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42539295"
 ---
 # <a name="clistbox-class"></a>CListBox 클래스
 Windows 목록 상자의 기능을 제공합니다.  
@@ -1307,7 +1307,7 @@ virtual int VKeyToItem(
   
 ### <a name="parameters"></a>매개 변수  
  *nKey*  
- 사용자가 누른 키의 가상 키 코드입니다. 표준 가상 키 코드의 목록, Winuser.h을 참조 하세요.  
+ 사용자가 누른 키의 가상 키 코드입니다. 에서 표준 가상 키 코드 목록은 Winuser.h을 참조 하세요.  
   
  *nIndex*  
  목록 상자 캐럿의 현재 위치입니다.  

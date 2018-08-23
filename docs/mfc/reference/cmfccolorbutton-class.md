@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac1b2c7f078acaa929cbfec0ac85456e6d72ee20
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 43ee49dede1a71e8bd2a01e98a3bdd2dd53ef63d
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850110"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42543200"
 ---
 # <a name="cmfccolorbutton-class"></a>CMFCColorButton 클래스
 합니다 `CMFCColorButton` 하 고 [CMFCColorBar 클래스](../../mfc/reference/cmfccolorbar-class.md) 색 선택 컨트롤을 구현 하려면 클래스를 함께 사용 합니다.  
@@ -276,7 +276,7 @@ virtual void OnDrawBorder(
  테두리를 그리는 데 사용 되는 장치 컨텍스트를 가리킵니다.  
   
  [in] *rectClient*  
- 사각형에 지정 된 디바이스 컨텍스트에서 합니다는 *pDC* 그릴 단추의 경계를 정의 하는 매개 변수입니다.  
+ 사각형에 지정 된 디바이스 컨텍스트에서 합니다 *pDC* 그릴 단추의 경계를 정의 하는 매개 변수입니다.  
   
  [in] *uiState*  
  단추의 표시 상태를 지정합니다.  

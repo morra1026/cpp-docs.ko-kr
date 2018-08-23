@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71695816672fa0f806accc32ac4f5a373557bdd9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 54436aab9ebb7821e33037bc7ec14a43aa20dda8
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33254335"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42539293"
 ---
 # <a name="compiler-error-c3018"></a>컴파일러 오류 C3018
 'var1': OpenMP 'for' 문의 테스트 식 또는 증가 식에는 인덱스 변수 'var2'를 사용해야 합니다.  
@@ -41,13 +41,13 @@ int main()
    {  
       #pragma omp for  
       for (i = 0; j < 10; ++i)   // C3018  
-      // try the the following line instead  
+      // try the following line instead  
       // for (i = 0; i < 10; ++i)  
          j *= 2;  
   
       #pragma omp for  
       for (i = 0; i < 10; j = j + i)   // C3018  
-      // try the the following line instead  
+      // try the following line instead  
       // for (i = 0; i < 10; i = j + i)  
          j *= 2;  
    }  

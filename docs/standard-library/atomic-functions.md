@@ -68,12 +68,12 @@ helpviewer_keywords:
 - std::kill_dependency [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df0c7ea332cda65aa3621de581eb39419ee9b9d4
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: b70f4df63b5a885403b91c1470c3066c33f5f123
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028319"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42538336"
 ---
 # <a name="ltatomicgt-functions"></a>&lt;atomic&gt; 함수
 
@@ -164,7 +164,7 @@ inline bool atomic_compare_exchange_strong_explicit(
 
 ### <a name="remarks"></a>설명
 
-*원자 비교 및 교환 작업* 이 가리키는 개체에 저장 된 값과 비교 *Atom* 가 가리키는 값에 대해 *Exp*합니다. 값이 같음, 경우에이 가리키는 개체에 저장 된 값 *atom* 바뀝니다 `Val` 사용 하 여를 `read-modify-write` 작업과 적용 메모리 순서 제약 조건을 로지정되는 *(Diffgr:id="order1*합니다. 작업에서 가리키는 값을 대체 값이 같지 않으면 *Exp* 이 가리키는 개체에 저장 된 값을 가진 *Atom* 된 메모리 순서 제약 조건을 적용 지정 된 *Order2*합니다.
+*원자 비교 및 교환 작업* 이 가리키는 개체에 저장 된 값과 비교 *Atom* 가 가리키는 값에 대해 *Exp*합니다. 값이 같음, 값이 가리키는 개체에 저장 된 *atom* 바뀝니다 *값* 사용 하 여를 `read-modify-write` 작업과 된 메모리 순서 제약 조건을 적용 합니다. 지정 된 *(diffgr:id="order1*합니다. 작업에서 가리키는 값을 대체 값이 같지 않으면 *Exp* 이 가리키는 개체에 저장 된 값을 가진 *Atom* 된 메모리 순서 제약 조건을 적용 지정 된 *Order2*합니다.
 
 ## <a name="atomic_compare_exchange_weak"></a>  atomic_compare_exchange_weak
 

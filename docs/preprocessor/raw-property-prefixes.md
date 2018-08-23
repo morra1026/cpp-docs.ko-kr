@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1f548c9513a086dd4741a9c61c51acebebb25db
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 423a66b698f4e421ff29e6ac3dfddd11fa11c58f
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840131"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42539665"
 ---
 # <a name="rawpropertyprefixes"></a>raw_property_prefixes
 **C + + 전용**  
   
- 세 가지 속성 메서드의 대체 접두사를 지정합니다.  
+세 가지 속성 메서드의 대체 접두사를 지정합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,21 +34,23 @@ ms.locfileid: "33840131"
 raw_property_prefixes("GetPrefix","PutPrefix","PutRefPrefix")  
 ```  
   
-#### <a name="parameters"></a>매개 변수  
- `GetPrefix`  
- 에 사용할 접두사는 **propget** 메서드.  
+### <a name="parameters"></a>매개 변수  
+*GetPrefix*  
+에 사용할 접두사를 `propget` 메서드.  
   
- `PutPrefix`  
- 에 사용할 접두사는 **propput** 메서드.  
+*PutPrefix*  
+에 사용할 접두사를 `propput` 메서드.  
   
- `PutRefPrefix`  
- 에 사용할 접두사는 **propputref** 메서드.  
+*PutRefPrefix*  
+에 사용할 접두사를 `propputref` 메서드.  
   
 ## <a name="remarks"></a>설명  
- 기본적으로 낮은 수준의 **propget**, **propput**, 및 **propputref** 메서드가의 접두사로 명명 된 멤버 함수에 의해 노출 되 **get_**, **put_**, 및 **putref_** 각각. 이 접두사는 MIDL로 생성한 헤더 파일에 사용되는 이름과 호환됩니다.  
+ 
+기본적으로 낮은 수준의 `propget`, `propput`, 및 `propputref` 메서드는 접두사를 사용 하 여 명명 된 멤버 함수에 의해 노출 됩니다 **get_** 를 **put_**, 및 **putref_** 각각. 이 접두사는 MIDL로 생성한 헤더 파일에 사용되는 이름과 호환됩니다.  
   
- **C + + 전용 종료**  
+**C + + 전용 종료**  
   
 ## <a name="see-also"></a>참고 항목  
- [#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
- [#import 지시문](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
+[#import 지시문](../preprocessor/hash-import-directive-cpp.md)

@@ -61,12 +61,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: cb2ee3fa52612ee3c6abae7a57046564c10c8afb
-ms.sourcegitcommit: bad2441d1930275ff506d44759d283d94cccd1c0
+ms.openlocfilehash: 573b365e0ca0d1c5b607144b1d143796e1ce927c
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39376039"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42572194"
 ---
 # <a name="priorityqueue-stlclr"></a>priority_queue(STL/CLR)
 템플릿 클래스는 다양 한 길이의 액세스가 제한 된 요소의 시퀀스를 정렬 된 제어 하는 개체를 설명 합니다. 컨테이너 어댑터를 사용 하 여 `priority_queue` 우선 순위 큐로 기본 컨테이너를 관리할 수 있습니다.  
@@ -855,7 +855,7 @@ void push(value_type val);
 ```  
   
 ### <a name="remarks"></a>설명  
- 멤버 함수는 값을 사용 하 여 요소를 삽입 `val` 에 제어 된 시퀀스 힙 분야를 유지 하기 위해 제어 되는 시퀀스를 다시 정렬 하 고 있습니다. 큐에 다른 요소를 추가 하는 데 사용할 수 있습니다.  
+ 멤버 함수는 값을 사용 하 여 요소를 삽입 `val` 제어 된 시퀀스에 힙 분야를 유지 하기 위해 제어 되는 시퀀스를 다시 정렬 하 고 있습니다. 큐에 다른 요소를 추가 하는 데 사용할 수 있습니다.  
   
 ### <a name="example"></a>예  
   

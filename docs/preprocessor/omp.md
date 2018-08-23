@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 87dd737b1bbe9263af5ef6416e7d6b8d287feb53
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 15491517ad95973d7eabf2998741dbcc89ca602b
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33849472"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42538502"
 ---
 # <a name="omp"></a>omp
 모든 선택적 지시문 절과 함께 하나 이상의 OpenMP 지시문을 사용합니다.  
@@ -31,12 +31,13 @@ ms.locfileid: "33849472"
 ## <a name="syntax"></a>구문  
   
 ```  
-  
 #pragma omp directive  
 ```  
   
 ## <a name="remarks"></a>설명  
- 참조 [OpenMP 지시문](../parallel/openmp/reference/openmp-directives.md) 자세한 정보에 대 한 합니다.  
+ 
+참조 [OpenMP 지시문](../parallel/openmp/reference/openmp-directives.md) 자세한 내용은 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+
+[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
