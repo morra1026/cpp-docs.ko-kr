@@ -28,13 +28,13 @@ ms.locfileid: "33106208"
 Visual C++ 어플리케이션에서 <xref:System.Diagnostics.Debug> 클래스를 사용하더라도, 디버그 빌드와 릴리스 빌드 모두 똑같이 동작합니다.
   
 ## <a name="remarks"></a>설명  
-<xref:System.Diagnostics.Trace> 클래스가 수행하는 기능은 Debug 클래스가 수행하는 기능과 동일 합니다. 하지만, <xref:System.Diagnostics.Trace>클래스는 TRACE 심볼의 정의 여부에 의존적입니다.
+<xref:System.Diagnostics.Trace> 클래스가 수행하는 기능은 Debug 클래스가 수행하는 기능과 동일합니다. 하지만, <xref:System.Diagnostics.Trace> 클래스는 TRACE 심볼의 정의 여부에 의존적입니다.
 이 말은 곧, 릴리스 빌드에서의 디버깅 기능을 방지하기 위해, <xref:System.Diagnostics.Trace> 클래스 관련 코드를 `#ifdef` 지시문으로 감싸줘야 한다는 의미입니다.   
   
 ## <a name="example"></a>예제  
   
 ### <a name="description"></a>설명  
- 아래의 샘플은, **/DDEBUG** 또는 **/DTRACE** 옵션을 사용하여 컴파일 하더라도, 항상 출력문을 수행한다는것을 보여줍니다.
+ 아래의 샘플은 **/DDEBUG** 또는 **/DTRACE** 옵션을 사용하여 컴파일하더라도, 항상 출력문을 수행한다는것을 보여줍니다.
   
 ### <a name="code"></a>코드  
   
@@ -70,7 +70,7 @@ test
 ## <a name="example"></a>예제  
   
 ### <a name="description"></a>설명  
-예상했던 동작을 얻고 싶은 경우(즉, 릴리스 빌드에서 "test" 라는 결과가 출력되지 않게 하려면), `#ifdef` 지시문이나 `#endif` 지시문을 사용해야 합니다. 바로 이전의 샘플코드가 바로 아래 예제의 해결방법을 보여주는 예제였습니다. 
+예상했던 동작을 얻고 싶은 경우(즉, 릴리스 빌드에서 "test" 라는 결과가 출력되지 않게 하려면), `#ifdef` 지시문이나 `#endif` 지시문을 사용해야 합니다. 바로 이전의 샘플 코드가 바로 아래 예제의 해결 방법을 보여주는 예제였습니다. 
   
 ### <a name="code"></a>코드  
   
