@@ -1,4 +1,4 @@
----
+﻿---
 title: Debug 클래스 (C + + /cli CLI) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
