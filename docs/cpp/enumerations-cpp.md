@@ -1,7 +1,7 @@
 ---
 title: 열거형 (c + +) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/01/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48f9328ef6a862ffc8888b99b16764978b0005c2
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 00a1b940ad6c792abbb13ec91b7376b73b2be16b
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406255"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43130952"
 ---
 # <a name="enumerations-c"></a>열거형(C++)
 열거형은 열거자라는 명명된 정수 상수 집합으로 구성된 사용자 정의 형식입니다.  
@@ -149,7 +149,8 @@ namespace ScopedEnumConversions
   
  선 `hand = account_num;`은 앞에서 보았듯이 범위가 지정되지 않은 열거형에 발생하는 오류를 초래합니다. 명시적 캐스트로 허용됩니다. 그러나 범위가 지정된 열거형을 사용하여 다음 문 `account_num = Suit::Hearts;`에서 시도된 변환은 명시적 캐스트 없이는 더 이상 허용되지 않습니다. 
 
-## <a name="enums-with-no-enumerators"></a>없는 열거자를 사용 하 여 열거형
+## <a name="no_enumerators"></a> 없는 열거자를 사용 하 여 열거형
+
 **Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): (일반 또는 범위가 지정 된) 열거형에 명시적 기본 형식 및 없습니다 열거자를 사용 하 여 정의 하 여 적용를 도입할 수 있습니다 새는 정수 계열 형식 다른 형식으로 암시적 변환이 있습니다. 기본 제공 기본 형식 대신이 형식을 사용 하 여 의도 하지 않은 암시적 변환으로 인 한 사소한 오류 가능성을 제거할 수 있습니다.  
 
 

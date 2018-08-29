@@ -1,5 +1,5 @@
 ---
-title: constexpr c + +의 람다 식 | Microsoft Docs
+title: c + +에서 constexpr 람다 식 | Microsoft Docs
 ms.custom: ''
 ms.date: 07/19/2017
 ms.technology:
@@ -14,14 +14,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b78fa3de7777ffc6702902cf967a405595caf12f
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 1b4636333861cc853130a777956ca4b88114f3c6
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408205"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131401"
 ---
-# <a name="constexpr-lambda-expressions-in-c"></a>constexpr c + +의 람다 식
+# <a name="constexpr-lambda-expressions-in-c"></a>c + +에서 constexpr 람다 식
 **Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 람다 식으로 선언할 수 있습니다 **constexpr** 상수 식에서 사용할 때 각 초기화 캡처하거나 소개 하는 데이터 멤버는 상수 식 내에서 허용 됩니다.  
 
 ```cpp

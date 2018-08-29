@@ -1,7 +1,7 @@
 ---
-title: '다중 스레딩: 스레드 종료 | Microsoft Docs'
+title: '다중 스레딩: MFC에서 스레드를 종료 | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-parallel
 ms.topic: conceptual
@@ -23,14 +23,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2411d11c154bef09b95d33e5b8598ba3c64dfb94
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 3b192c0ee4bc7658fc39791545c4aa9334edd183
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608846"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131947"
 ---
-# <a name="multithreading-terminating-threads"></a>다중 스레딩: 스레드 종료
+# <a name="multithreading-terminating-threads-in-mfc"></a>다중 스레딩: MFC에서 스레드 종료
 두 가지 일반적인 문제 때문 스레드가 종료: 제어 함수가 끝나거나 스레드 실행을 완료할 수 없습니다. 워드 프로세서 백그라운드 인쇄를 위해 스레드를 사용 하는 경우 제어 함수는 성공적으로 완료 된 인쇄 하는 경우 정상적으로 종료 됩니다. 그러나 사용자가 인쇄 작업을 취소 합니다는 백그라운드 인쇄 스레드가 완전 종료 되어야 합니다. 이 항목에서는 각 상황을 구현 하는 방법 및 종료 된 후 스레드의 종료 코드를 가져오는 방법을 모두 설명 합니다.  
   
 - [정상적인 스레드 종료](#_core_normal_thread_termination)  
@@ -67,7 +67,7 @@ ms.locfileid: "42608846"
   
 ## <a name="see-also"></a>참고 항목  
  
-[C + + 및 MFC에서 다중 스레딩](../parallel/multithreading-with-cpp-and-mfc.md)   
+[C + + 및 MFC에서 다중 스레딩](multithreading-with-cpp-and-mfc.md)   
 [_endthread, _endthreadex](../c-runtime-library/reference/endthread-endthreadex.md)   
 [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)   
 [ExitThread](http://msdn.microsoft.com/library/windows/desktop/ms682659)

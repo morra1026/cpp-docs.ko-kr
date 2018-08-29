@@ -1,7 +1,7 @@
 ---
-title: '다중 스레딩: 프로그래밍 팁 | Microsoft Docs'
+title: '다중 스레딩: MFC 프로그래밍 팁 | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-parallel
 ms.topic: conceptual
@@ -26,15 +26,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ad830117323aef807fcebc1ef61b4dfb1900bd9
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 28446576fefe52dfaa99b69ae410a87424e28e3b
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591313"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43132040"
 ---
-# <a name="multithreading-programming-tips"></a>다중 스레딩: 프로그래밍 팁
-다중 스레드 응용 프로그램 데이터에 액세스 하는 경우 단일 스레드 응용 프로그램 보다 엄격한 주의가 필요 합니다. 에 있기 때문에 여러 독립 실행 경로가 동시에 다중 스레드 응용 프로그램에 사용할 알고리즘, 데이터 또는 둘 다 알아야 데이터 한 번에 둘 이상의 스레드에서 사용할 수 있습니다. 이 항목에서는 Microsoft Foundation 클래스 (MFC) 라이브러리를 사용 하 여 다중 스레드 응용 프로그램을 프로그래밍 하는 경우 잠재적인 문제를 방지 하는 방법에 설명 합니다.  
+# <a name="multithreading-mfc-programming-tips"></a>다중 스레딩: MFC 프로그래밍 팁
+다중 스레드 응용 프로그램에는 단일 스레드 응용 프로그램 의도 된 순서에서 연산이 수행 하 고 여러 스레드에서 액세스 되는 데이터 손상 되지 보다 엄격한 주의가 필요 합니다. 이 항목에서는 Microsoft Foundation 클래스 (MFC) 라이브러리를 사용 하 여 다중 스레드 응용 프로그램을 프로그래밍 하는 경우 잠재적인 문제를 방지 하는 방법에 설명 합니다.  
   
 - [여러 스레드에서 개체에 액세스](#_core_accessing_objects_from_multiple_threads)  
   
@@ -46,13 +46,13 @@ ms.locfileid: "42591313"
   
 ##  <a name="_core_accessing_objects_from_multiple_threads"></a> 여러 스레드에서 개체에 액세스  
  
-크기 및 성능 이유로 MFC 개체 않습니다 스레드로부터 안전한 클래스 수준 에서만 개체 수준에서. 즉, 두 가지를 조작 하는 두 개의 별도 스레드 수 있다는 `CString` 개체에 있지만 두 스레드가 동일한 조작 되지 `CString` 개체입니다. 반드시 필요한 여러 스레드에서 동일한 개체를 조작 하는 경우 중요 섹션과 같은 적절 한 Win32 동기화 메커니즘을 사용 하 여 이러한 액세스를 보호 합니다. 임계 영역 및 기타에 대 한 자세한 내용은 관련 개체를 참조 하세요 [동기화](http://msdn.microsoft.com/library/windows/desktop/ms686353) Windows SDK에 있습니다.  
+단독으로 MFC 개체는 스레드로부터 안전 하지 않습니다. 두 개의 별도 스레드는 중요 섹션 같은 mfc 동기화 및/또는 적절 한 Win32 동기화 개체를 사용 하지 않는 한 동일한 개체를 조작할 수 없습니다. 임계 영역 및 기타에 대 한 자세한 내용은 관련 개체를 참조 하세요 [동기화](/windows/desktop/Sync/synchronization) Windows SDK에 있습니다.  
   
 클래스 라이브러리 디버그 메모리 할당에 의해 사용 되는 전역 데이터 구조를 보호 하기 위해 내부적으로 중요 섹션을 사용 합니다.  
   
 ##  <a name="_core_accessing_mfc_objects_from_non.2d.mfc_threads"></a> 비 MFC 스레드에서 MFC 개체 액세스  
  
-스레드를 만드는 방식으로 사용 하는 다중 스레드 응용 프로그램의 경우는 [CWinThread](../mfc/reference/cwinthread-class.md) 개체를 해당 스레드에서 다른 MFC 개체를 액세스할 수 없습니다. 즉, 보조 스레드에서 MFC 개체에 액세스 하려는 경우 만들어야 스레드에 설명 된 방법 중 하나를 사용 하 여 [다중 스레딩: 사용자 인터페이스 스레드 만들기](../parallel/multithreading-creating-user-interface-threads.md) 또는 [다중 스레딩: 작업자 스레드 만들기](../parallel/multithreading-creating-worker-threads.md)합니다. 이러한 메서드는 다중 스레드 응용 프로그램을 처리 하는 데 필요한 내부 변수를 초기화 하는 클래스 라이브러리를 사용할 수 있는 유일한입니다.  
+스레드를 만드는 방식으로 사용 하는 다중 스레드 응용 프로그램의 경우는 [CWinThread](../mfc/reference/cwinthread-class.md) 개체를 해당 스레드에서 다른 MFC 개체를 액세스할 수 없습니다. 즉, 보조 스레드에서 MFC 개체에 액세스 하려는 경우 만들어야 스레드에 설명 된 방법 중 하나를 사용 하 여 [다중 스레딩: 사용자 인터페이스 스레드 만들기](multithreading-creating-user-interface-threads.md) 또는 [다중 스레딩: 작업자 스레드 만들기](multithreading-creating-worker-threads.md)합니다. 이러한 메서드는 다중 스레드 응용 프로그램을 처리 하는 데 필요한 내부 변수를 초기화 하는 클래스 라이브러리를 사용할 수 있는 유일한입니다.  
   
 ##  <a name="_core_windows_handle_maps"></a> Windows 핸들 맵  
  
@@ -62,12 +62,12 @@ ms.locfileid: "42591313"
   
 에 해당 하는 작업이 나와 작업자 스레드가 수행 되며 응용 프로그램의 주 창에 이러한 메시지를 게시 하는 새 사용자 정의 메시지를 만드는 또 다른 방법은 사용 하 여 `::PostMessage`입니다. 이 통신 메서드를 제외 하 고 두 스레드 모두 동일한 주소 공간에서 실행 되는 대화는 두 개의 다른 응용 프로그램와 비슷합니다.  
   
-핸들 맵에 대 한 자세한 내용은 참조 하세요. [기술 참고 3](../mfc/tn003-mapping-of-windows-handles-to-objects.md)합니다. 스레드 로컬 저장소에 대 한 자세한 내용은 참조 하세요. [스레드 로컬 저장소](http://msdn.microsoft.com/library/windows/desktop/ms686749) 하 고 [스레드 로컬 저장소를 사용 하 여](http://msdn.microsoft.com/library/windows/desktop/ms686991) Windows SDK에 있습니다.  
+핸들 맵에 대 한 자세한 내용은 참조 하세요. [기술 참고 3](../mfc/tn003-mapping-of-windows-handles-to-objects.md)합니다. 스레드 로컬 저장소에 대 한 자세한 내용은 참조 하세요. [스레드 로컬 저장소](/windows/desktop/ProcThread/thread-local-storage) 하 고 [스레드 로컬 저장소를 사용 하 여](/windows/desktop/ProcThread/using-thread-local-storage) Windows SDK에 있습니다.  
   
 ##  <a name="_core_communicating_between_threads"></a> 스레드 간 통신  
  
-MFC에는 여러 스레드 보안을 유지 하는 개체에 대 한 액세스를 동기화 하는 스레드를 허용 하는 클래스를 제공 합니다. 이러한 클래스의 사용에 설명 되어 [다중 스레딩: 동기화 클래스 사용 방법](../parallel/multithreading-how-to-use-the-synchronization-classes.md) 하 고 [다중 스레딩: 동기화 클래스를 사용 하는 경우](../parallel/multithreading-when-to-use-the-synchronization-classes.md)합니다. 이러한 개체에 대 한 자세한 내용은 참조 하세요. [동기화](http://msdn.microsoft.com/library/windows/desktop/ms686353) Windows SDK에 있습니다.  
+MFC에는 여러 스레드 보안을 유지 하는 개체에 대 한 액세스를 동기화 하는 스레드를 허용 하는 클래스를 제공 합니다. 이러한 클래스의 사용에 설명 되어 [다중 스레딩: 동기화 클래스 사용 방법](multithreading-how-to-use-the-synchronization-classes.md) 하 고 [다중 스레딩: 동기화 클래스를 사용 하는 경우](multithreading-when-to-use-the-synchronization-classes.md)합니다. 이러한 개체에 대 한 자세한 내용은 참조 하세요. [동기화](/windows/desktop/Sync/synchronization) Windows SDK에 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
 
-[C++ 및 MFC에서 다중 스레딩](../parallel/multithreading-with-cpp-and-mfc.md)
+[C++ 및 MFC에서 다중 스레딩](multithreading-with-cpp-and-mfc.md)

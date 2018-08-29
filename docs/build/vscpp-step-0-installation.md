@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 c + + 지원 설치 | Microsoft Docs
+title: Visual Studio 2017에서 c + + 지원 설치 | Microsoft Docs
 description: Visual Studio의 Visual c + + 지원 설치
 ms.custom: mvc
 ms.date: 06/21/2018
@@ -14,16 +14,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bfc91d25e4c843eaa004b59eab076bcfbe188253
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 4ee0763608edde0f7ceff81983a324190b605ff7
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42573078"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43130893"
 ---
 # <a name="install-c-support-in-visual-studio"></a>Visual Studio에서 c + + 지원 설치
 
-다운로드 하 고 Visual Studio 및 Visual c + + 도구를 아직 설치 하지 않은 경우 시작 하는 방법을 다음과 같습니다.
+다운로드 하 고 Visual Studio 2017 및 Visual c + + 도구를 아직 설치 하지 않은 경우 시작 하는 방법을 다음과 같습니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -35,7 +35,13 @@ ms.locfileid: "42573078"
 
 디스크 공간 및 운영 체제 요구 사항에 대 한 자세한 내용은 참조 하세요. [Visual Studio 제품군 시스템 요구 사항](/visualstudio/productinfo/vs2017-system-requirements-vs)합니다. 설치 관리자에서 선택한 옵션에 대 한 필요한 디스크 공간을 보고 합니다.
 
-## <a name="installation"></a>설치
+## <a name="visual-studio-2015-installation"></a>Visual Studio 2015 설치
+
+ Visual Studio 2015를 설치 하려면로 이동 [이전 버전의 Visual Studio 다운로드](https://www.visualstudio.com/vs/older-downloads/)합니다. 설치 프로그램을 실행 하 고 선택 **사용자 지정 설치** 를 c + + 구성 요소를 선택 합니다. 
+
+ 일반적으로 Visual Studio 2015 컴파일러를 사용 하 여 코드를 컴파일해야 하는 경우에 Visual Studio 2017을 사용 하는 것이 좋습니다. 자세한 내용은 [Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드](../porting/use-native-multi-targeting.md)를 참조하세요.
+
+## <a name="visual-studio-2017-installation"></a>Visual Studio 2017 설치
 
 1. Windows에 대 한 최신 Visual Studio 2017 설치 관리자를 다운로드 합니다.
 

@@ -1,7 +1,7 @@
 ---
-title: '다중 스레딩: 사용자 인터페이스 스레드 만들기 | Microsoft Docs'
+title: '다중 스레딩: MFC 사용자 인터페이스 스레드 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-parallel
 ms.topic: conceptual
@@ -21,14 +21,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0223e342bf2312919247d42564445a9e116ca59b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 625518a76bb22c60a41175e649af7ae650161494
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607397"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131562"
 ---
-# <a name="multithreading-creating-user-interface-threads"></a>다중 스레딩: 사용자 인터페이스 스레드 만들기
+# <a name="multithreading-creating-mfc-user-interface-threads"></a>다중 스레딩: MFC 사용자 인터페이스 스레드 만들기
 사용자 인터페이스 스레드를 응용 프로그램의 다른 부분을 실행 하는 스레드 독립적으로 사용자 이벤트에 응답 하 고 사용자 입력을 처리 하려면 일반적으로 사용 됩니다. 주 응용 프로그램 스레드 (나오는 `CWinApp`-파생 클래스) 이미 생성 되어 시작 합니다. 이 항목에서는 추가 사용자 인터페이스 스레드를 만드는 데 필요한 단계를 설명 합니다.  
   
 가장 먼저 해야 할 사용자 인터페이스 스레드를 만드는 경우에서 클래스를 파생 됩니다 [CWinThread](../mfc/reference/cwinthread-class.md)합니다. 선언 하 고이 구현 해야 클래스를 사용 하는 [DECLARE_DYNCREATE](../mfc/reference/run-time-object-model-services.md#declare_dyncreate) 하 고 [IMPLEMENT_DYNCREATE](../mfc/reference/run-time-object-model-services.md#implement_dyncreate) 매크로입니다. 이 클래스는 일부 함수를 재정의 해야 하며 다른 사용자가 재정의할 수 있습니다. 이러한 함수 및 수행 해야 할 작업은 다음 표에 표시 됩니다.  
@@ -37,13 +37,12 @@ ms.locfileid: "42607397"
   
 |기능|용도|  
 |--------------|-------------|  
-
-|[ExitInstance](../mfc/reference/cwinthread-class.md#exitinstance)| 스레드가 종료 되 면 정리를 수행 합니다. 일반적으로 재정의 합니다. |  
-|[InitInstance](../mfc/reference/cwinthread-class.md#initinstance)| 스레드 인스턴스 초기화를 수행 합니다. 재정의 해야 합니다. |  
-|[OnIdle](../mfc/reference/cwinthread-class.md#onidle)| 스레드별 유휴 시간 처리를 수행 합니다. 재정의 하지. |  
-|[PreTranslateMessage](../mfc/reference/cwinthread-class.md#pretranslatemessage)| 디스패치 되기 전에 메시지를 필터링 `TranslateMessage` 고 `DispatchMessage`입니다. 재정의 하지. |  
-|[ProcessWndProcException](../mfc/reference/cwinthread-class.md#processwndprocexception)| 스레드의 메시지 및 명령 처리기에서 throw 된 처리 되지 않은 예외를 가로챕니다. 재정의 하지. |  
-|[실행](../mfc/reference/cwinthread-class.md#run)| 스레드에 대 한 함수를 제어 합니다. 메시지 펌프를 포함합니다. 재정의 된 경우는 거의 없습니다. |  
+|[ExitInstance](../mfc/reference/cwinthread-class.md#exitinstance)|스레드가 종료 되 면 정리를 수행 합니다. 일반적으로 재정의 합니다.|  
+|[InitInstance](../mfc/reference/cwinthread-class.md#initinstance)|스레드 인스턴스 초기화를 수행 합니다. 재정의 해야 합니다.|  
+|[OnIdle](../mfc/reference/cwinthread-class.md#onidle)|스레드별 유휴 시간 처리를 수행 합니다. 일반적으로 재정의 되지 않습니다.|  
+|[PreTranslateMessage](../mfc/reference/cwinthread-class.md#pretranslatemessage)|디스패치 되기 전에 메시지를 필터링 `TranslateMessage` 고 `DispatchMessage`입니다. 일반적으로 재정의 되지 않습니다.|  
+|[ProcessWndProcException](../mfc/reference/cwinthread-class.md#processwndprocexception)|스레드의 메시지 및 명령 처리기에서 throw 된 처리 되지 않은 예외를 가로챕니다. 일반적으로 재정의 되지 않습니다.|  
+|[실행](../mfc/reference/cwinthread-class.md#run)|스레드에 대 한 함수를 제어 합니다. 메시지 펌프를 포함합니다. 재정의 된 경우는 거의 없습니다.|  
 
   
 MFC는 매개 변수 오버로드를 통해 `AfxBeginThread`의 두 가지 버전을 제공합니다. 하나는 작업자 스레드만 만들 수 있고, 다른 하나는 사용자 인터페이스 스레드 또는 작업자 스레드를 만들 수 있습니다. 사용자 인터페이스 스레드를 시작 하려면 두 번째 오버 로드를 호출 [AfxBeginThread](../mfc/reference/application-information-and-management.md#afxbeginthread), 다음 정보를 제공 합니다.  
@@ -62,12 +61,12 @@ MFC는 매개 변수 오버로드를 통해 `AfxBeginThread`의 두 가지 버�
   
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보  
   
-- [다중 스레딩: 스레드 종료](../parallel/multithreading-terminating-threads.md)  
+- [다중 스레딩: 스레드 종료](multithreading-terminating-threads.md)  
   
-- [다중 스레딩: 작업자 스레드 만들기](../parallel/multithreading-creating-worker-threads.md)  
+- [다중 스레딩: 작업자 스레드 만들기](multithreading-creating-worker-threads.md)  
   
-- [프로세스 및 스레드](http://msdn.microsoft.com/library/windows/desktop/ms684841)  
+- [프로세스 및 스레드](/windows/desktop/ProcThread/processes-and-threads)  
   
 ## <a name="see-also"></a>참고 항목  
  
-[C++ 및 MFC에서 다중 스레딩](../parallel/multithreading-with-cpp-and-mfc.md)
+[C++ 및 MFC에서 다중 스레딩](multithreading-with-cpp-and-mfc.md)

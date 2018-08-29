@@ -1,7 +1,7 @@
 ---
 title: Visual C++의 폴더 열기 프로젝트 | Microsoft Docs
 ms.custom: ''
-ms.date: 08/02/2017
+ms.date: 06/01/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -14,15 +14,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0fe4eba09f06b987ab11f35429e13796fe6baafb
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: d4444e70ec158d7afa35c3955bbef9af4bfa12f2
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33337287"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131325"
 ---
 # <a name="open-folder-projects-in-visual-c"></a>Visual C++의 폴더 열기 프로젝트
-Visual Studio 2017에는 소스 파일의 폴더를 열고 IntelliSense, 검색, 리팩터링, 디버깅 등의 지원을 통해 코딩을 즉시 시작할 수 있는 "폴더 열기" 기능이 도입되었습니다. .sln 또는 .vcxproj 파일이 로드되지 않습니다. 필요한 경우 간단한 .json 파일을 통해 매개 변수를 작성하고 시작할 수 있을 뿐만 아니라 사용자 지정 작업을 지정할 수도 있습니다. 폴더 열기로 구동되는 Visual C++는 이제 느슨한 파일 모음뿐만 아니라 CMake, Ninja, QMake(Qt 프로젝트 용), gyp, SCons, Gradle, Buck, make 등을 포함한 모든 빌드 시스템도 지원할 수 있습니다. 
+
+Visual Studio 2017 이상에서 "폴더 열기" 기능을 통해 소스 파일의 폴더를 열고 IntelliSense, 검색, 리팩터링, 디버깅 등의 지원을 통해 코딩을 즉시 시작할 수 있습니다. .sln 또는 .vcxproj 파일이 로드되지 않습니다. 필요한 경우 간단한 .json 파일을 통해 매개 변수를 작성하고 시작할 수 있을 뿐만 아니라 사용자 지정 작업을 지정할 수도 있습니다. 폴더 열기로 구동되는 Visual C++는 이제 느슨한 파일 모음뿐만 아니라 CMake, Ninja, QMake(Qt 프로젝트 용), gyp, SCons, Gradle, Buck, make 등을 포함한 모든 빌드 시스템도 지원할 수 있습니다. 
 
 폴더 열기를 사용하려면 주 메뉴에서 *파일 | 열기 | 폴더*를 차례대로 선택하거나 *Ctrl +Shift+Alt+O*를 누릅니다. 솔루션 탐색기에서 폴더의 모든 파일이 즉시 표시됩니다. 파일을 클릭하여 편집을 시작할 수 있습니다. 백그라운드에서 Visual Studio는 IntelliSense, 탐색 및 리팩터링 기능을 사용할 수 있도록 파일 인덱싱을 시작합니다. 파일을 편집, 생성, 이동 또는 삭제하면 Visual Studio는 변경 내용을 자동으로 추적하고 해당 IntelliSense 인덱스를 계속해서 업데이트합니다. 
   
@@ -30,7 +31,7 @@ Visual Studio 2017에는 소스 파일의 폴더를 열고 IntelliSense, 검색,
 CMake는 C++ 데스크톱 워크로드의 구성 요소인 Visual C++용 CMake 도구로 Visual Studio IDE에 통합되어 있습니다. 자세한 내용은 [Visual C++용 CMake 도구](cmake-tools-for-visual-cpp.md)를 참조하세요.
  
 ## <a name="qmake-projects-that-target-the-qt-framework"></a>Qt 프레임워크를 대상으로 하는 QMake 프로젝트
-Visual C++용 CMake 도구를 사용하여 Qt를 대상으로 하는 Qt 프로젝트를 만들거나 Qt Visual Studio 확장을 사용할 수 있습니다. 참고: 2017년 8월 현재, [Visual Studio 2017용 Qt Visual Studio 확장 지원](https://download.qt.io/development_releases/vsaddin/)은 베타 버전으로 사용할 수 있습니다.
+Visual C++용 CMake 도구를 사용하여 Qt를 대상으로 하는 Qt 프로젝트를 만들거나 Visual Studio 2015 또는 Visual Studio 2017에 [Qt Visual Studio 확장](https://download.qt.io/development_releases/vsaddin/)을 사용할 수 있습니다.
 
 ## <a name="gyp-cons-scons-buck-etc"></a>gyp, Cons, SCons, Buck 등
 Visual C++에서 모든 빌드 시스템을 사용할 수 있으며 Visual C++ IDE 및 디버거의 장점을 이용할 수 있습니다. 프로젝트의 루트 폴더를 열면 Visual C++에서 추론을 사용하여 IntelliSense 및 검색 대상인 소스 파일을 인덱싱합니다. CppProperties.json 파일을 편집하여 코드 구조에 대한 힌트를 제공할 수 있습니다. 이와 비슷한 방식으로 launch.vs.json 파일을 편집하여 빌드 프로그램을 구성할 수 있습니다. 

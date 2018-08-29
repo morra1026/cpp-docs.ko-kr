@@ -208,12 +208,12 @@ helpviewer_keywords:
 - std::swap [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d905c8208bef98d584d3052c242de1ac127a4830
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 3314921d528624e5f08d9053f44f171d5c45b7f2
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39209302"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43132232"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algorithm&gt; 함수
 
@@ -255,15 +255,15 @@ ms.locfileid: "39209302"
 
 ```cpp
 template<class ForwardIterator>
-    ForwardIterator adjacent_find(
-        ForwardIterator first,
-        ForwardIterator last);
+ForwardIterator adjacent_find(
+    ForwardIterator first,
+    ForwardIterator last);
 
 template<class ForwardIterator , class BinaryPredicate>
-    ForwardIterator adjacent_find(
-        ForwardIterator first,
-        ForwardIterator last,
-        BinaryPredicate comp);
+ForwardIterator adjacent_find(
+    ForwardIterator first,
+    ForwardIterator last,
+    BinaryPredicate comp);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -284,7 +284,7 @@ template<class ForwardIterator , class BinaryPredicate>
 
 요소 간의 일치를 확인하는 데 사용되는 `operator==`는 피연산자 간에 동등 관계를 적용해야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_adj_fnd.cpp
@@ -352,10 +352,10 @@ There are two adjacent elements where the second is twice the first.
 
 ```cpp
 template<class InputIterator, class Predicate>
-    bool all_of(
-        InputIterator first,
-        InputIterator last,
-        BinaryPredicatecomp);
+bool all_of(
+    InputIterator first,
+    InputIterator last,
+    BinaryPredicatecomp);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -380,10 +380,10 @@ template<class InputIterator, class Predicate>
 
 ```cpp
 template<class InputIterator, class UnaryPredicate>
-    bool any_of(
-        InputIterator first,
-        InputIterator last,
-        UnaryPredicate comp);
+bool any_of(
+    InputIterator first,
+    InputIterator last,
+    UnaryPredicate comp);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -410,17 +410,17 @@ template<class InputIterator, class UnaryPredicate>
 
 ```cpp
 template<class ForwardIterator, class Type>
-    bool binary_search(
-        ForwardIterator first,
-        ForwardIterator last,
-        const Type& value);
+bool binary_search(
+    ForwardIterator first,
+    ForwardIterator last,
+    const Type& value);
 
 template<class ForwardIterator,  class Type,  class BinaryPredicate>
-    bool binary_search(
-        ForwardIterator first,
-        ForwardIterator last,
-        const Type& value,
-        BinaryPredicate comp);
+bool binary_search(
+    ForwardIterator first,
+    ForwardIterator last,
+    const Type& value,
+    BinaryPredicate comp);
 
 ```
 
@@ -450,7 +450,7 @@ template<class ForwardIterator,  class Type,  class BinaryPredicate>
 
 알고리즘의 복잡성은 임의 액세스 반복기에 대 한 로그 및 선형 비례 하는 단계 수 이며 그렇지 않은 경우 (`last` - `first`).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_bin_srch.cpp
@@ -471,7 +471,7 @@ bool mod_lesser( int elem1, int elem2 )
     return elem1 < elem2;
 }
 
-int main( )
+int main()
 {
     using namespace std;
 
@@ -492,7 +492,7 @@ int main( )
     cout << ")" << endl;
 
     // default binary search for 10
-    if( binary_search(List1.begin(), List1.end(), 10) )
+    if ( binary_search(List1.begin(), List1.end(), 10) )
         cout << "There is an element in list List1 with a value equal to 10."
         << endl;
     else
@@ -501,7 +501,7 @@ int main( )
 
     // a binary_search under the binary predicate greater
     List1.sort(greater<int>());
-    if( binary_search(List1.begin(), List1.end(), 10, greater<int>()) )
+    if ( binary_search(List1.begin(), List1.end(), 10, greater<int>()) )
         cout << "There is an element in list List1 with a value greater than 10 "
         << "under greater than." << endl;
     else
@@ -511,7 +511,7 @@ int main( )
     // a binary_search under the user-defined binary predicate mod_lesser
     vector<int> v1;
 
-    for( auto i = -2; i <= 4; ++i )
+    for ( auto i = -2; i <= 4; ++i )
     {
         v1.push_back(i);
     }
@@ -519,11 +519,11 @@ int main( )
     sort(v1.begin(), v1.end(), mod_lesser);
 
     cout << "Ordered using mod_lesser, vector v1 = ( " ;
-    for( auto Iter : v1 )
+    for ( auto Iter : v1 )
         cout << Iter << " ";
     cout << ")" << endl;
 
-    if( binary_search(v1.begin(), v1.end(), -3, mod_lesser) )
+    if ( binary_search(v1.begin(), v1.end(), -3, mod_lesser) )
         cout << "There is an element with a value equivalent to -3 "
         << "under mod_lesser." << endl;
     else
@@ -538,10 +538,10 @@ int main( )
 
 ```cpp
 template<class InputIterator, class OutputIterator>
-    OutputIterator copy(
-        InputIterator first,
-        InputIterator last,
-        OutputIterator destBeg);
+OutputIterator copy(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator destBeg);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -564,7 +564,7 @@ template<class InputIterator, class OutputIterator>
 
 이 `copy` 알고리즘은 반복기가 가리키는 값만 수정하며 대상 범위에 있는 요소에 새로운 값을 할당합니다. 새 요소를 만드는 데 사용할 수 없고 빈 컨테이너에 요소를 직접 삽입할 수 없습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_copy.cpp
@@ -628,10 +628,10 @@ v2 with shifted insert = ( 0 3 0 10 20 10 20 21 24 27 30 )
 
 ```cpp
 template<class BidirectionalIterator1, class BidirectionalIterator2>
-    BidirectionalIterator2 copy_backward(
-        BidirectionalIterator1 first,
-        BidirectionalIterator1 last,
-        BidirectionalIterator2 destEnd);
+BidirectionalIterator2 copy_backward(
+    BidirectionalIterator1 first,
+    BidirectionalIterator1 last,
+    BidirectionalIterator2 destEnd);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -658,7 +658,7 @@ template<class BidirectionalIterator1, class BidirectionalIterator2>
 
 이 `copy_backward` 알고리즘은 반복기가 가리키는 값만 수정하며 대상 범위에 있는 요소에 새로운 값을 할당합니다. 새 요소를 만드는 데 사용할 수 없고 빈 컨테이너에 요소를 직접 삽입할 수 없습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_copy_bkwd.cpp
@@ -715,11 +715,11 @@ int main() {
 
 ```cpp
 template<class InputIterator, class OutputIterator, class BinaryPredicate>
-    OutputIterator copy_if(
-        InputIterator first,
-        InputIterator last,
-        OutputIterator dest,
-        Predicate pred);
+OutputIterator copy_if(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator dest,
+    Predicate pred);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -740,7 +740,7 @@ template<class InputIterator, class OutputIterator, class BinaryPredicate>
 
 템플릿 함수는
 
-`if (_Pred(*_First + N)) * dest++ = *(_First + N))`
+`if (pred(*_First + N)) * dest++ = *(_First + N))`
 
 `[0, last - first)` 범위의 각 `N`에 대해 위의 식을 한 번 평가하고, 가장 낮은 값부터 시작하여 `N`의 값을 최소값부터 엄격하게 증가시킵니다. 하는 경우 *dest* 하 고 *첫 번째* 저장소, 영역을 지정 *dest* 범위에 없어야 `[ first, last )`합니다.
 
@@ -750,10 +750,10 @@ template<class InputIterator, class OutputIterator, class BinaryPredicate>
 
 ```cpp
 template<class InputIterator, class Size, class OutputIterator>
-    OutputIterator copy_n(
-        InputIterator first,
-        Size count,
-        OutputIterator dest);
+OutputIterator copy_n(
+    InputIterator first,
+    Size count,
+    OutputIterator dest);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -778,10 +778,10 @@ template<class InputIterator, class Size, class OutputIterator>
 
 ```cpp
 template<class InputIterator, class Type>
-    typename iterator_traits<InputIterator>::difference_type count(
-        InputIterator first,
-        InputIterator last,
-        const Type& val);
+typename iterator_traits<InputIterator>::difference_type count(
+    InputIterator first,
+    InputIterator last,
+    const Type& val);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -802,7 +802,7 @@ template<class InputIterator, class Type>
 
 이 알고리즘은 템플릿 함수 [count_if](../standard-library/algorithm-functions.md#count_if)가 포함된 모든 조건자를 충족하는 요소를 계산하기 위해 일반화됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_count.cpp
@@ -845,10 +845,10 @@ The number of 10s in v2 is: 3.
 
 ```cpp
 template<class InputIterator, class Predicate>
-    typename iterator_traits<InputIterator>::difference_type count_if(
-        InputIterator first,
-        InputIterator last,
-        Predicate pred);
+typename iterator_traits<InputIterator>::difference_type count_if(
+    InputIterator first,
+    InputIterator last,
+    Predicate pred);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -867,7 +867,7 @@ template<class InputIterator, class Predicate>
 
 이 템플릿 함수는 "지정한 값과 일치" 조건자를 다른 임의의 조건자로 교체하는 방식으로 [count](../standard-library/algorithm-functions.md#count) 알고리즘을 일반화한 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_count_if.cpp
@@ -878,7 +878,7 @@ template<class InputIterator, class Predicate>
 
 bool greater10(int value)
 {
-    return value >10;
+    return value > 10;
 }
 
 int main()
@@ -972,7 +972,7 @@ bool equal(
 
 피연산자 간에 대칭, 재귀 및 전이적인 동등 관계를 적용하려면 `operator==`나 사용자 정의 조건자 모두 필요하지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <iostream>
@@ -1051,7 +1051,7 @@ pair<ForwardIterator, ForwardIterator> equal_range(
 
 알고리즘의 복잡성은 임의 액세스 반복기에 대 한 로그 및 선형 비례 하는 단계 수 이며 그렇지 않은 경우 (*마지막* - *첫 번째*).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_equal_range.cpp
@@ -1063,17 +1063,17 @@ pair<ForwardIterator, ForwardIterator> equal_range(
 #include <string>
 using namespace std;
 
-template<class T> void dump_vector( const vector<T>& v, pair< typename vector<T>::iterator, typename vector<T>::iterator > range )
+template<class T> void dump_vector( const vector<T>& v, pair<typename vector<T>::iterator, typename vector<T>::iterator> range )
 {
     // prints vector v with range delimited by [ and ]
 
-    for( typename vector<T>::const_iterator i = v.begin(); i != v.end(); ++i )
+    for ( typename vector<T>::const_iterator i = v.begin(); i != v.end(); ++i )
     {
-        if( i == range.first )
+        if ( i == range.first )
         {
             cout << "[ ";
         }
-        if( i == range.second )
+        if ( i == range.second )
         {
             cout << "] ";
         }
@@ -1089,13 +1089,13 @@ template<class T> void equal_range_demo( const vector<T>& original_vector, T val
 
     sort( v.begin(), v.end() );
     cout << "Vector sorted by the default binary predicate <:" << endl << '\t';
-    for( vector<T>::const_iterator i = v.begin(); i != v.end(); ++i )
+    for ( vector<T>::const_iterator i = v.begin(); i != v.end(); ++i )
     {
         cout << *i << " ";
     }
     cout << endl << endl;
 
-    pair< vector<T>::iterator, vector<T>::iterator > result
+    pair<vector<T>::iterator, vector<T>::iterator> result
         = equal_range( v.begin(), v.end(), val );
 
     cout << "Result of equal_range with val = " << val << ":" << endl << '\t';
@@ -1109,13 +1109,13 @@ template<class T, class F> void equal_range_demo( const vector<T>& original_vect
 
     sort( v.begin(), v.end(), pred );
     cout << "Vector sorted by the binary predicate " << predname << ":" << endl << '\t';
-    for( typename vector<T>::const_iterator i = v.begin(); i != v.end(); ++i )
+    for ( typename vector<T>::const_iterator i = v.begin(); i != v.end(); ++i )
     {
         cout << *i << " ";
     }
     cout << endl << endl;
 
-    pair< typename vector<T>::iterator, typename vector<T>::iterator > result
+    pair<typename vector<T>::iterator, typename vector<T>::iterator> result
         = equal_range( v.begin(), v.end(), val, pred );
 
     cout << "Result of equal_range with val = " << val << ":" << endl << '\t';
@@ -1140,12 +1140,12 @@ int main()
     vector<int> v1;
 
     // Constructing vector v1 with default less than ordering
-    for( int i = -1; i <= 4; ++i )
+    for ( int i = -1; i <= 4; ++i )
     {
         v1.push_back(i);
     }
 
-    for( int i =-3; i <= 0; ++i )
+    for ( int i =-3; i <= 0; ++i )
     {
         v1.push_back( i );
     }
@@ -1193,7 +1193,7 @@ void fill(
 
 대상 범위는 유효해야 하고 모든 포인터는 역참조 가능해야 하며 처음 위치에서 증분하여 마지막 위치까지 도달할 수 있어야 합니다. 복잡성은 범위의 크기와 선형입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_fill.cpp
@@ -1202,7 +1202,7 @@ void fill(
 #include <algorithm>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1;
@@ -1262,7 +1262,7 @@ OutputIterator fill_n(
 
 대상 범위는 유효해야 하고 모든 포인터는 역참조 가능해야 하며 처음 위치에서 증분하여 마지막 위치까지 도달할 수 있어야 합니다. 복잡성은 범위의 크기와 선형입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_fill_n.cpp
@@ -1384,7 +1384,7 @@ ForwardIterator1 find_end(
 
 참조된 범위는 유효해야 하고 모든 포인터는 역참조 가능해야 하며 각 시퀀스 내에서 처음 위치에서 증분하여 마지막 위치까지 도달할 수 있어야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_find_end.cpp
@@ -1400,7 +1400,7 @@ bool twice ( int elem1, int elem2 )
    return 2 * elem1 == elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1, v2;
@@ -1503,7 +1503,7 @@ ForwardIterator1 find_first_of(
 
 ### <a name="parameters"></a>매개 변수
 
-*first1* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*First1* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
 
 *last1* 검색할 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
 
@@ -1511,7 +1511,7 @@ ForwardIterator1 find_first_of(
 
 *last2* 일치 시킬 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
 
-*comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*Comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1523,7 +1523,7 @@ ForwardIterator1 find_first_of(
 
 참조된 범위는 유효해야 하고 모든 포인터는 역참조 가능해야 하며 각 시퀀스 내에서 처음 위치에서 증분하여 마지막 위치까지 도달할 수 있어야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_find_first_of.cpp
@@ -1539,7 +1539,7 @@ bool twice ( int elem1, int elem2 )
    return 2 * elem1 == elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1, v2;
@@ -1650,7 +1650,7 @@ InputIterator find_if(
 
 이 템플릿 함수는 [find](../standard-library/algorithm-functions.md#find) 알고리즘을 일반화한 것으로, "equals a specific value" 조건자를 임의의 조건자로 바꿉니다. 이 조건자와 논리적으로 반대되는 항목(조건자를 충족하지 않는 첫 번째 요소를 찾음)은 [find_if_not](../standard-library/algorithm-functions.md#find_if_not)을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // cl.exe /W4 /nologo /EHsc /MTd
@@ -1662,7 +1662,7 @@ InputIterator find_if(
 using namespace std;
 
 template <typename S> void print(const S& s) {
-    for (const auto& p : s) {
+for (const auto& p : s) {
         cout << "(" << p << ") ";
     }
     cout << endl;
@@ -1775,7 +1775,7 @@ template<class InputIterator, class Function>
 Function for_each(
     InputIterator first,
     InputIterator last,
-    Function _Func);
+    Function func);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -1798,7 +1798,7 @@ Function for_each(
 
 복잡성은 선형 이며 최대 ( *마지막* -  *첫 번째*) 비교 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_for_each.cpp
@@ -1819,7 +1819,7 @@ public:
    }
 
    // The function call for the element to be multiplied
-   void operator ( ) ( Type& elem ) const
+   void operator( ) ( Type& elem ) const
    {
       elem *= Factor;
    }
@@ -1833,26 +1833,26 @@ private:
    long sum;      // The sum of the elements
 public:
    // Constructor initializes the value to multiply by
-   Average ( ) : num ( 0 ) , sum ( 0 )
+   Average( ) : num ( 0 ) , sum ( 0 )
    {
    }
 
    // The function call to process the next elment
-   void operator ( ) ( int elem ) \
+   void operator( ) ( int elem ) \
    {
       num++;      // Increment the element count
       sum += elem;   // Add the value to the partial sum
    }
 
    // return Average
-   operator double ( )
+   operator double( )
    {
       return  static_cast <double> (sum) /
       static_cast <double> (num);
    }
 };
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1;
@@ -1871,7 +1871,7 @@ int main( )
    cout << ")." << endl;
 
    // Using for_each to multiply each element by a Factor
-   for_each ( v1.begin ( ) , v1.end ( ) , MultValue<int> ( -2 ) );
+   for_each ( v1.begin( ), v1.end( ), MultValue<int> ( -2 ) );
 
    cout << "Multiplying the elements of the vector v1\n "
         <<  "by the factor -2 gives:\n v1mod1 = ( " ;
@@ -1881,7 +1881,7 @@ int main( )
 
    // The function object is templatized and so can be
    // used again on the elements with a different Factor
-   for_each (v1.begin ( ) , v1.end ( ) , MultValue<int> (5 ) );
+   for_each (v1.begin( ), v1.end( ), MultValue<int> (5 ) );
 
    cout << "Multiplying the elements of the vector v1mod\n "
         <<  "by the factor 5 gives:\n v1mod2 = ( " ;
@@ -1892,8 +1892,8 @@ int main( )
    // The local state of a function object can accumulate
    // information about a sequence of actions that the
    // return value can make available, here the Average
-   double avemod2 = for_each ( v1.begin ( ) , v1.end ( ) ,
-      Average ( ) );
+   double avemod2 = for_each ( v1.begin( ), v1.end( ),
+      Average( ) );
    cout << "The average of the elements of v1 is:\n Average ( v1mod2 ) = "
         << avemod2 << "." << endl;
 }
@@ -1939,7 +1939,7 @@ void generate(
 
 복잡성은 선형 이며 정확히 ( `last`  -   `first`)에 필요한 생성기에 대 한 호출 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_generate.cpp
@@ -1950,7 +1950,7 @@ void generate(
 #include <iostream>
 #include <ostream>
 
-int main( )
+int main()
 {
    using namespace std;
 
@@ -1960,7 +1960,7 @@ int main( )
    deque <int> deq1 ( 5 );
    deque <int>::iterator d1_Iter;
 
-   generate ( v1.begin ( ), v1.end ( ) , rand );
+   generate ( v1.begin( ), v1.end( ), rand );
 
    cout << "Vector v1 is ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
@@ -1968,7 +1968,7 @@ int main( )
    cout << ")." << endl;
 
    // Assigning random values to deque integer elements
-   generate ( deq1.begin ( ), deq1.end ( ) , rand );
+   generate ( deq1.begin( ), deq1.end( ), rand );
 
    cout << "Deque deq1 is ( " ;
    for ( d1_Iter = deq1.begin( ) ; d1_Iter != deq1.end( ) ; d1_Iter++ )
@@ -2010,7 +2010,7 @@ void generate_n(
 
 복잡성은 필요한 생성기에 대해 정확하게 `Count`개 선형 호출입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // cl.exe /EHsc /nologo /W4 /MTd
@@ -2105,7 +2105,7 @@ bool includes(
 
 알고리즘의 복잡성은 선형 이며 최대 2 \* (( *last1-first1*)-(* last2-first2 *))-1 비어 있지 않은 소스 범위에 대해 비교 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_includes.cpp
@@ -2125,7 +2125,7 @@ bool mod_lesser (int elem1, int elem2 )
    return elem1 < elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1a, v1b;
@@ -2152,26 +2152,26 @@ int main( )
 
    cout << "Original vector v1b with range sorted by the\n "
         <<  "binary predicate less than is v1b = ( " ;
-   for ( Iter1b = v1b.begin ( ) ; Iter1b != v1b.end ( ) ; Iter1b++ )
+   for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
       cout << *Iter1b << " ";
    cout << ")." << endl;
 
    // Constructing vectors v2a & v2b with ranges sorted by greater
    vector <int> v2a ( v1a ) , v2b ( v1b );
    vector <int>::iterator Iter2a,  Iter2b;
-   sort ( v2a.begin ( ) , v2a.end ( ) , greater<int> ( ) );
-   sort ( v2b.begin ( ) , v2b.end ( ) , greater<int> ( ) );
-   v2a.pop_back ( );
+   sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
+   sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
+   v2a.pop_back( );
 
    cout << "Original vector v2a with range sorted by the\n "
         <<  "binary predicate greater is v2a = ( " ;
-   for ( Iter2a = v2a.begin ( ) ; Iter2a != v2a.end ( ) ; Iter2a++ )
+   for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
       cout << *Iter2a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v2b with range sorted by the\n "
         <<  "binary predicate greater is v2b = ( " ;
-   for ( Iter2b = v2b.begin ( ) ; Iter2b != v2b.end ( ) ; Iter2b++ )
+   for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
       cout << *Iter2b << " ";
    cout << ")." << endl;
 
@@ -2179,28 +2179,28 @@ int main( )
    vector <int> v3a ( v1a ), v3b ( v1b ) ;
    vector <int>::iterator Iter3a, Iter3b;
    reverse (v3a.begin( ), v3a.end( ) );
-   v3a.pop_back ( );
-   v3a.pop_back ( );
-   sort ( v3a.begin ( ) , v3a.end ( ) , mod_lesser );
-   sort ( v3b.begin ( ) , v3b.end ( ) , mod_lesser );
+   v3a.pop_back( );
+   v3a.pop_back( );
+   sort ( v3a.begin( ), v3a.end( ), mod_lesser );
+   sort ( v3b.begin( ), v3b.end( ), mod_lesser );
 
    cout << "Original vector v3a with range sorted by the\n "
         <<  "binary predicate mod_lesser is v3a = ( " ;
-   for ( Iter3a = v3a.begin ( ) ; Iter3a != v3a.end ( ) ; Iter3a++ )
+   for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
       cout << *Iter3a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v3b with range sorted by the\n "
         <<  "binary predicate mod_lesser is v3b = ( " ;
-   for ( Iter3b = v3b.begin ( ) ; Iter3b != v3b.end ( ) ; Iter3b++ )
+   for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
       cout << *Iter3b << " ";
    cout << ")." << endl;
 
    // To test for inclusion under an asscending order
-   // with the default binary predicate less <int> ( )
+   // with the default binary predicate less <int>( )
    bool Result1;
-   Result1 = includes ( v1a.begin ( ) , v1a.end ( ) ,
-      v1b.begin ( ) , v1b.end ( ) );
+   Result1 = includes ( v1a.begin( ), v1a.end( ),
+      v1b.begin( ), v1b.end( ) );
    if ( Result1 )
       cout << "All the elements in vector v1b are "
            << "contained in vector v1a." << endl;
@@ -2211,8 +2211,8 @@ int main( )
    // To test for inclusion under descending
    // order specify binary predicate greater<int>( )
    bool Result2;
-   Result2 = includes ( v2a.begin ( ) , v2a.end ( ) ,
-      v2b.begin ( ) , v2b.end ( ) , greater <int> ( ) );
+   Result2 = includes ( v2a.begin( ), v2a.end( ),
+      v2b.begin( ), v2b.end( ), greater <int>( ) );
    if ( Result2 )
       cout << "All the elements in vector v2b are "
            << "contained in vector v2a." << endl;
@@ -2223,8 +2223,8 @@ int main( )
    // To test for inclusion under a user
    // defined binary predicate mod_lesser
    bool Result3;
-   Result3 = includes ( v3a.begin ( ) , v3a.end ( ) ,
-      v3b.begin ( ) , v3b.end ( ) , mod_lesser );
+   Result3 = includes ( v3a.begin( ), v3a.end( ),
+      v3b.begin( ), v3b.end( ), mod_lesser );
    if ( Result3 )
       cout << "All the elements in vector v3b are "
            << "contained under mod_lesser in vector v3a."
@@ -2291,7 +2291,7 @@ void inplace_merge(
 
 알고리즘은 임시 버퍼에 메모리를 할당하므로 복잡성은 사용 가능한 메모리에 따라 달라집니다. 충분 한 메모리가 사용 가능한 경우 최상의 경우는 선형 이며 (*-먼저 마지막 *)-1 비교; 최악의 경우에는 보조 메모리가 없습니다. 사용 가능한 경우 *N* 로그 *(N)* 여기서  *N* = (* 성-*).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_inplace_merge.cpp
@@ -2311,7 +2311,7 @@ bool mod_lesser ( int elem1, int elem2 )
    return elem1 < elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1;
@@ -2339,9 +2339,9 @@ int main( )
    // Constructing vector v2 with ranges sorted by greater
    vector <int> v2 ( v1 );
    vector <int>::iterator break2;
-   break2 = find ( v2.begin ( ) , v2.end ( ) , -5 );
-   sort ( v2.begin ( ) , break2 , greater<int> ( ) );
-   sort ( break2 , v2.end ( ) , greater<int> ( ) );
+   break2 = find ( v2.begin( ), v2.end( ), -5 );
+   sort ( v2.begin( ), break2 , greater<int>( ) );
+   sort ( break2 , v2.end( ), greater<int>( ) );
    cout << "Original vector v2 with subranges sorted by the\n "
         << "binary predicate greater is v2 = ( " ;
    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
@@ -2351,9 +2351,9 @@ int main( )
    // Constructing vector v3 with ranges sorted by mod_lesser
    vector <int> v3 ( v1 );
    vector <int>::iterator break3;
-   break3 = find ( v3.begin ( ) , v3.end ( ) , -5 );
-   sort ( v3.begin ( ) , break3 , mod_lesser );
-   sort ( break3 , v3.end ( ) , mod_lesser );
+   break3 = find ( v3.begin( ), v3.end( ), -5 );
+   sort ( v3.begin( ), break3 , mod_lesser );
+   sort ( break3 , v3.end( ), mod_lesser );
    cout << "Original vector v3 with subranges sorted by the\n "
         << "binary predicate mod_lesser is v3 = ( " ;
    for ( Iter3 = v3.begin( ) ; Iter3 != v3.end( ) ; Iter3++ )
@@ -2361,7 +2361,7 @@ int main( )
    cout << ")" << endl;
 
    vector <int>::iterator break1;
-   break1 = find (v1.begin ( ) , v1.end ( ) , -5 );
+   break1 = find (v1.begin( ), v1.end( ), -5 );
    inplace_merge ( v1.begin( ), break1, v1.end( ) );
    cout << "Merged inplace with default order,\n vector v1mod = ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
@@ -2561,7 +2561,7 @@ bool is_permutation(
 
 두 번째 및 네 번째 템플릿 함수는 `operator==(X, Y)`를 `Pred(X, Y)`로 대체한다는 점을 제외하고 동일하게 동작합니다. 올바르게 동작하려면 조건자가 대칭, 재귀 및 전이여야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서는 `is_permutation`을 사용하는 방법을 보여 줍니다.
 
@@ -2657,16 +2657,14 @@ bool is_sorted(
 
 ```cpp
 template<class ForwardIterator>
-    ForwardIterator is_sorted_until(
-        ForwardIterator first,
-        ForwardIterator last
-    );
+ForwardIterator is_sorted_until(
+    ForwardIterator first,
+    ForwardIterator last); 
 template<class ForwardIterator, class BinaryPredicate>
-    ForwardIterator is_sorted_until(
-        ForwardIterator first,
-        ForwardIterator last,
-        BinaryPredicate comp
-    );
+ForwardIterator is_sorted_until(
+    ForwardIterator first,
+    ForwardIterator last,
+    BinaryPredicate comp); 
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -2709,7 +2707,7 @@ void iter_swap( ForwardIterator1 left, ForwardIterator2 right );
 
 입력 정방향 반복기의 값 형식은 동일한 값을 가져야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_iter_swap.cpp
@@ -2755,7 +2753,7 @@ bool mod_lesser ( int elem1, int elem2 )
    return elem1 < elem2;
 };
 
-int main( )
+int main()
 {
    CInt c1 = 5, c2 = 1, c3 = 10;
    deque<CInt> deq1;
@@ -2772,7 +2770,7 @@ int main( )
    cout << " " << *d1_Iter << " )." << endl;
 
    // Exchanging first and last elements with iter_swap
-   iter_swap ( deq1.begin ( ) , --deq1.end ( ) );
+   iter_swap ( deq1.begin( ), --deq1.end( ) );
 
    cout << "The deque of CInts with first & last elements swapped is:\n deq1 = (";
    for ( d1_Iter = deq1.begin( ); d1_Iter != --deq1.end( ); d1_Iter++ )
@@ -2781,7 +2779,7 @@ int main( )
    cout << " " << *d1_Iter << " )." << endl;
 
    // Swapping back first and last elements with swap
-   swap ( *deq1.begin ( ) , *(deq1.end ( ) -1 ) );
+   swap ( *deq1.begin( ), *(deq1.end( ) -1 ) );
 
    cout << "The deque of CInts with first & last elements swapped back is:\n deq1 = (";
    for ( d1_Iter = deq1.begin( ); d1_Iter != --deq1.end( ); d1_Iter++ )
@@ -2817,7 +2815,7 @@ int main( )
       cout << *d2_Iter << " ";
    cout << ")." << endl;
 
-   iter_swap ( v1.begin ( ) , deq2.begin ( ) );
+   iter_swap ( v1.begin( ), deq2.begin( ) );
 
    cout << "After exchanging first elements,\n vector v1 is: v1 = ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
@@ -2848,19 +2846,19 @@ After exchanging first elements,
 
 ```cpp
 template<class InputIterator1, class InputIterator2>
- bool lexicographical_compare(
-     InputIterator1  first1,
-     InputIterator1 Last1,
-     InputIterator2  first2,
-     InputIterator2 Last2  );
+bool lexicographical_compare(
+    InputIterator1  first1,
+    InputIterator1 Last1,
+    InputIterator2  first2,
+    InputIterator2 Last2  );
 
 template<class InputIterator1, class InputIterator2, class BinaryPredicate>
 bool lexicographical_compare(
-     InputIterator1  first1,
-     InputIterator1 Last1,
-     InputIterator2  first2,
-     InputIterator2 Last2,
-     BinaryPredicate  comp  );
+    InputIterator1  first1,
+    InputIterator1 Last1,
+    InputIterator2  first2,
+    InputIterator2 Last2,
+    BinaryPredicate  comp  );
 
 ```
 
@@ -2890,7 +2888,7 @@ bool lexicographical_compare(
 
 - 부등식이 발견되지 않고 시퀀스가 동일한 수의 요소를 가지고 있어서, 시퀀스가 같으며 비교 결과가 false가 될 때까지
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_lex_comp.cpp
@@ -2906,7 +2904,7 @@ bool twice ( int elem1, int elem2 )
    return 2 * elem1 < elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1, v2;
@@ -2992,16 +2990,16 @@ Vector v1 is not lexicographically_less than v2 under twice.
 ```cpp
 template<class ForwardIterator, class Type>
 ForwardIterator lower_bound(
-     ForwardIterator first,
-     ForwardIterator last,
-     const Type& value );
+    ForwardIterator first,
+    ForwardIterator last,
+    const Type& value );
 
 template<class ForwardIterator, class Type, class BinaryPredicate>
 ForwardIterator lower_bound(
-     ForwardIterator first,
-     ForwardIterator last,
-     const Type& value,
-     BinaryPredicate comp );
+    ForwardIterator first,
+    ForwardIterator last,
+    const Type& value,
+    BinaryPredicate comp );
 
 ```
 
@@ -3031,7 +3029,7 @@ ForwardIterator lower_bound(
 
 알고리즘의 복잡성은 임의 액세스 반복기에 대 한 로그 및 선형 비례 하는 단계 수 이며 그렇지 않은 경우 (`last - first`).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_lower_bound.cpp
@@ -3051,7 +3049,7 @@ bool mod_lesser( int elem1, int elem2 )
     return elem1 < elem2;
 }
 
-int main( )
+int main()
 {
     using namespace std;
 
@@ -3129,14 +3127,14 @@ int main( )
 ```cpp
 template<class RandomAccessIterator>
 void make_heap(
-     RandomAccessIterator first,
-     RandomAccessIterator last );
+    RandomAccessIterator first,
+    RandomAccessIterator last );
 
 template<class RandomAccessIterator, class BinaryPredicate>
 void make_heap(
-     RandomAccessIterator first,
-     RandomAccessIterator last,
-     BinaryPredicate comp );
+    RandomAccessIterator first,
+    RandomAccessIterator last,
+    BinaryPredicate comp );
 
 ```
 
@@ -3160,7 +3158,7 @@ void make_heap(
 
 복잡성은 선형 이며 3 요구 \* (* 성-*) 비교 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_make_heap.cpp
@@ -3208,25 +3206,21 @@ int main() {
 
 ```cpp
 template<class Type>
-    const Type& max(
-        const Type& left,
-        const Type& right
-    );
+constexpr Type& max(
+    const Type& left,
+    const Type& right); 
 template<class Type, class Pr>
-    const Type& max(
-        const Type& left,
-        const Type& right,
-        BinaryPredicate comp
-    );
+constexpr Type& max(
+    const Type& left,
+    const Type& right,
+    BinaryPredicate comp); 
 template<class Type>
-    Type& max (
-        initializer_list<Type> _Ilist
-    );
+constexpr Type& max (
+    initializer_list<Type> ); 
 template<class Type, class Pr>
-    Type& max(
-        initializer_list<Type> _Ilist,
-        BinaryPredicate comp
-    );
+constexpr Type& max(
+    initializer_list<Type> ,
+    BinaryPredicate comp); 
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -3245,9 +3239,9 @@ template<class Type, class Pr>
 
 ### <a name="remarks"></a>설명
 
-`max` 알고리즘은 대체로 매개 변수로 전달된 개체를 사용하지 않습니다. 대부분의 C++ 표준 라이브러리 알고리즘은 매개 변수로 전달된 반복기가 위치를 지정하는 요소 범위에서 작동합니다. 요소 범위에서 작동하는 함수가 필요한 경우 [max_element](../standard-library/algorithm-functions.md#max_element)를 대신 사용합니다.
+`max` 알고리즘은 대체로 매개 변수로 전달된 개체를 사용하지 않습니다. 대부분의 C++ 표준 라이브러리 알고리즘은 매개 변수로 전달된 반복기가 위치를 지정하는 요소 범위에서 작동합니다. 요소 범위에서 작동하는 함수가 필요한 경우 [max_element](../standard-library/algorithm-functions.md#max_element)를 대신 사용합니다. Visual Studio 2017을 사용 하면 **constexpr** 에 initializer_list를 사용 하는 오버 로드 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_max.cpp
@@ -3294,7 +3288,7 @@ bool abs_greater ( int elem1, int elem2 )
    return elem1 < elem2;
 };
 
-int main( )
+int main()
 {
    int a = 6, b = -7;
    // Return the integer with the larger absolute value
@@ -3421,10 +3415,10 @@ Vector v5 = max (v1,v3) is ( 0 2 4 ).
 
 ```cpp
 template<class ForwardIterator>
-ForwardIterator max_element(ForwardIterator first, ForwardIterator last );
+constexpr ForwardIterator max_element(ForwardIterator first, ForwardIterator last );
 
 template<class ForwardIterator, class BinaryPredicate>
-ForwardIterator max_element(ForwardIterator first, ForwardIterator last, BinaryPredicate comp );
+constexpr ForwardIterator max_element(ForwardIterator first, ForwardIterator last, BinaryPredicate comp );
 
 ```
 
@@ -3446,7 +3440,7 @@ ForwardIterator max_element(ForwardIterator first, ForwardIterator last, BinaryP
 
 복잡성은 선형: (`last` - `first`)-1 비교는 비어 있지 않은 범위에 대 한 필요 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_max_element.cpp
@@ -3492,7 +3486,7 @@ bool mod_lesser ( int elem1, int elem2 )
    return elem1 < elem2;
 };
 
-int main( )
+int main()
 {
    // Searching a set container with elements of type CInt
    // for the maximum element
@@ -3510,7 +3504,7 @@ int main( )
    s1_Iter = --s1.end( );
    cout << " " << *s1_Iter << " )." << endl;
 
-   s1_R1_Iter = max_element ( s1.begin ( ) , s1.end ( ) );
+   s1_R1_Iter = max_element ( s1.begin( ), s1.end( ) );
 
    cout << "The largest element in s1 is: " << *s1_R1_Iter << endl;
    cout << endl;
@@ -3537,8 +3531,8 @@ int main( )
       cout << *v1_Iter << " ";
    cout << ")." << endl;
 
-   v1_R1_Iter = max_element ( v1.begin ( ) , v1.end ( ) );
-   v1_R2_Iter = max_element ( v1.begin ( ) , v1.end ( ), mod_lesser);
+   v1_R1_Iter = max_element ( v1.begin( ), v1.end( ) );
+   v1_R2_Iter = max_element ( v1.begin( ), v1.end( ), mod_lesser);
 
    cout << "The largest element in v1 is: " << *v1_R1_Iter << endl;
    cout << "The largest element in v1 under the mod_lesser"
@@ -3552,21 +3546,21 @@ int main( )
 
 ```cpp
 template<class InputIterator1, class InputIterator2, class OutputIterator>
- OutputIterator merge(
-     InputIterator1 first1,
-     InputIterator1 last1,
-     InputIterator2 first2,
-     InputIterator2 last2,
-     OutputIterator result );
+OutputIterator merge(
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2,
+    InputIterator2 last2,
+    OutputIterator result );
 
 template<class InputIterator1, class InputIterator2, class OutputIterator, class BinaryPredicate>
 OutputIterator merge(
-     InputIterator1 first1,
-     InputIterator1 last1,
-     InputIterator2 first2,
-     InputIterator2 last2,
-     OutputIterator result,
-     BinaryPredicate comp );
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2,
+    InputIterator2 last2,
+    OutputIterator result,
+    BinaryPredicate comp );
 
 ```
 
@@ -3604,7 +3598,7 @@ OutputIterator merge(
 
 [list class](../standard-library/list-class.md) 클래스는 두 목록의 요소를 병합하는 멤버 함수 "병합"을 제공합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_merge.cpp
@@ -3645,49 +3639,49 @@ int main() {
 
    cout << "Original vector v1b with range sorted by the\n "
         << "binary predicate less than is  v1b = ( " ;
-   for ( Iter1b = v1b.begin ( ) ; Iter1b != v1b.end ( ) ; Iter1b++ )
+   for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
       cout << *Iter1b << " ";
    cout << ")." << endl;
 
    // Constructing vector v2 with ranges sorted by greater
    vector <int> v2a ( v1a ) , v2b ( v1b ) ,  v2 ( v1 );
    vector <int>::iterator Iter2a,  Iter2b, Iter2;
-   sort ( v2a.begin ( ) , v2a.end ( ) , greater<int> ( ) );
-   sort ( v2b.begin ( ) , v2b.end ( ) , greater<int> ( ) );
+   sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
+   sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
 
    cout << "Original vector v2a with range sorted by the\n "
         <<  "binary predicate greater is   v2a =  ( " ;
-   for ( Iter2a = v2a.begin ( ) ; Iter2a != v2a.end ( ) ; Iter2a++ )
+   for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
       cout << *Iter2a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v2b with range sorted by the\n "
         <<  "binary predicate greater is   v2b =  ( " ;
-   for ( Iter2b = v2b.begin ( ) ; Iter2b != v2b.end ( ) ; Iter2b++ )
+   for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
       cout << *Iter2b << " ";
    cout << ")." << endl;
 
    // Constructing vector v3 with ranges sorted by mod_lesser
    vector <int> v3a ( v1a ), v3b ( v1b ) ,  v3 ( v1 );
    vector <int>::iterator Iter3a,  Iter3b, Iter3;
-   sort ( v3a.begin ( ) , v3a.end ( ) , mod_lesser );
-   sort ( v3b.begin ( ) , v3b.end ( ) , mod_lesser );
+   sort ( v3a.begin( ), v3a.end( ), mod_lesser );
+   sort ( v3b.begin( ), v3b.end( ), mod_lesser );
 
    cout << "Original vector v3a with range sorted by the\n "
         << "binary predicate mod_lesser is   v3a =  ( " ;
-   for ( Iter3a = v3a.begin ( ) ; Iter3a != v3a.end ( ) ; Iter3a++ )
+   for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
       cout << *Iter3a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v3b with range sorted by the\n "
         << "binary predicate mod_lesser is   v3b =  ( " ;
-   for ( Iter3b = v3b.begin ( ) ; Iter3b != v3b.end ( ) ; Iter3b++ )
+   for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
       cout << *Iter3b << " ";
    cout << ")." << endl;
 
    // To merge inplace in ascending order with default binary
-   // predicate less <int> ( )
-   merge ( v1a.begin ( ) , v1a.end ( ) , v1b.begin ( ) , v1b.end ( ) , v1.begin ( ) );
+   // predicate less <int>( )
+   merge ( v1a.begin( ), v1a.end( ), v1b.begin( ), v1b.end( ), v1.begin( ) );
    cout << "Merged inplace with default order,\n vector v1mod =  ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
       cout << *Iter1 << " ";
@@ -3695,8 +3689,8 @@ int main() {
 
    // To merge inplace in descending order, specify binary
    // predicate greater<int>( )
-   merge ( v2a.begin ( ) , v2a.end ( ) , v2b.begin ( ) , v2b.end ( ) ,
-       v2.begin ( ) ,  greater <int> ( ) );
+   merge ( v2a.begin( ), v2a.end( ), v2b.begin( ), v2b.end( ),
+       v2.begin( ),  greater <int>( ) );
    cout << "Merged inplace with binary predicate greater specified,\n "
         << "vector v2mod  = ( " ;
    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
@@ -3704,8 +3698,8 @@ int main() {
    cout << ")." << endl;
 
    // Applying A user-defined (UD) binary predicate mod_lesser
-   merge ( v3a.begin ( ) , v3a.end ( ) , v3b.begin ( ) , v3b.end ( ) ,
-       v3.begin ( ) ,  mod_lesser );
+   merge ( v3a.begin( ), v3a.end( ), v3b.begin( ), v3b.end( ),
+       v3.begin( ),  mod_lesser );
    cout << "Merged inplace with binary predicate mod_lesser specified,\n "
         << "vector v3mod  = ( " ; ;
    for ( Iter3 = v3.begin( ) ; Iter3 != v3.end( ) ; Iter3++ )
@@ -3720,23 +3714,21 @@ int main() {
 
 ```cpp
 template<class Type>
-    const Type& min(
-        const Type& left,
-        const Type& right
-    );
+constexpr const Type& min(
+    const Type& left,
+    const Type& right); 
 template<class Type, class Pr>
-    const Type& min(
-        const Type& left,
-        const Type& right,
-        BinaryPredicate comp
-    );
+constexpr const Type& min(
+    const Type& left,
+    const Type& right,
+    BinaryPredicate comp); 
 template<class Type>
-    Type min ( initializer_list<Type> _Ilist
-    );
-template<class Type, class Pr>    Type min (
-        initializer_list<Type> _Ilist,
-        BinaryPredicate comp
-    );
+constexpr Type min( 
+    initializer_list<Type> ); 
+template<class Type, class Pr>
+constexpr Type min(
+    initializer_list<Type>,
+    BinaryPredicate comp); 
 
 ```
 
@@ -3756,9 +3748,9 @@ template<class Type, class Pr>    Type min (
 
 ### <a name="remarks"></a>설명
 
-`min` 알고리즘은 대체로 매개 변수로 전달된 개체를 사용하지 않습니다. 대부분의 C++ 표준 라이브러리 알고리즘은 매개 변수로 전달된 반복기가 위치를 지정하는 요소 범위에서 작동합니다. 요소 범위를 사용하는 함수가 필요한 경우 [min_element](../standard-library/algorithm-functions.md#min_element)를 사용합니다.
+`min` 알고리즘은 대체로 매개 변수로 전달된 개체를 사용하지 않습니다. 대부분의 C++ 표준 라이브러리 알고리즘은 매개 변수로 전달된 반복기가 위치를 지정하는 요소 범위에서 작동합니다. 요소 범위를 사용하는 함수가 필요한 경우 [min_element](../standard-library/algorithm-functions.md#min_element)를 사용합니다. [constexpr](../cpp/constexpr-cpp.md) 에서 사용 되는 `initializer_list` Visual Studio 2017에서 오버 로드 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_min.cpp
@@ -3804,7 +3796,7 @@ bool mod_lesser ( int elem1, int elem2 )
     return elem1 < elem2;
 };
 
-int main( )
+int main()
 {
     // Comparing integers directly using the min algorithm with
     // binary predicate mod_lesser & with default less than
@@ -3814,7 +3806,7 @@ int main( )
 
     cout << "The mod_lesser of the integers 6 & -7 is: "
         << result1 << "." << endl;
-     cout << "The lesser of the integers -7 & 7 is: "
+    cout << "The lesser of the integers -7 & 7 is: "
         << result2 << "." << endl;
     cout << endl;
 
@@ -3931,10 +3923,13 @@ Vector v5 = min ( v1,v3 ) is ( 0 1 2 ).
 
 ```cpp
 template<class ForwardIterator>
-ForwardIterator min_element(ForwardIterator first, ForwardIterator last );
+constexpr ForwardIterator min_element(ForwardIterator first, ForwardIterator last );
 
 template<class ForwardIterator, class BinaryPredicate>
-ForwardIterator min_element(ForwardIterator first, ForwardIterator last, BinaryPredicate comp);
+constexpr ForwardIterator min_element(
+    ForwardIterator first,
+    ForwardIterator last,
+    BinaryPredicate comp);
 
 ```
 
@@ -3956,7 +3951,7 @@ ForwardIterator min_element(ForwardIterator first, ForwardIterator last, BinaryP
 
 복잡성은 선형: (`last` - `first`)-1 비교는 비어 있지 않은 범위에 대 한 필요 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_min_element.cpp
@@ -4020,7 +4015,7 @@ int main()
    s1_Iter = --s1.end( );
    cout << " " << *s1_Iter << " )." << endl;
 
-   s1_R1_Iter = min_element ( s1.begin ( ) , s1.end ( ) );
+   s1_R1_Iter = min_element ( s1.begin( ), s1.end( ) );
 
    cout << "The smallest element in s1 is: " << *s1_R1_Iter << endl;
    cout << endl;
@@ -4047,8 +4042,8 @@ int main()
       cout << *v1_Iter << " ";
    cout << ")." << endl;
 
-   v1_R1_Iter = min_element ( v1.begin ( ) , v1.end ( ) );
-   v1_R2_Iter = min_element ( v1.begin ( ) , v1.end ( ), mod_lesser);
+   v1_R1_Iter = min_element ( v1.begin( ), v1.end( ) );
+   v1_R2_Iter = min_element ( v1.begin( ), v1.end( ), mod_lesser);
 
    cout << "The smallest element in v1 is: " << *v1_R1_Iter << endl;
    cout << "The smallest element in v1 under the mod_lesser"
@@ -4072,18 +4067,14 @@ The smallest element in v1 under the mod_lesser
 
 ```cpp
 template<class ForwardIterator>
-    pair< ForwardIterator, ForwardIterator >
-        minmax_element(
-            ForwardIterator  first,
-            ForwardIterator Last
-                 );
+constexpr pair<ForwardIterator, ForwardIterator> minmax_element(
+    ForwardIterator first,
+    ForwardIterator Last); 
 template<class ForwardIterator, class BinaryPredicate>
-    pair< ForwardIterator, ForwardIterator >
-        minmax_element(
-            ForwardIterator  first,
-            ForwardIterator Last,
-            BinaryPredicate  comp
-                );
+constexpr pair<ForwardIterator, ForwardIterator> minmax_element(
+    ForwardIterator  first,
+    ForwardIterator Last,
+    BinaryPredicate  comp); 
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -4120,26 +4111,21 @@ template<class ForwardIterator, class BinaryPredicate>
 
 ```cpp
 template<class Type>
-    pair<const Type&, const Type&>
-        minmax(
-            const Type& left,
-            const Type& right
-        );
+constexpr pair<const Type&, const Type&> minmax(
+    const Type& left,
+    const Type& right); 
 template<class Type, class BinaryPredicate>
-    pair<const Type&, const Type&>
-        minmax(
-            const Type& left,
-            const Type& right,
-            BinaryPredicate comp
-        );
-template<class Type>     pair<Type&, Type&>         minmax(
-            initializer_list<Type> _Ilist
-        );
+constexpr pair<const Type&, const Type&> minmax(
+    const Type& left,
+    const Type& right,
+    BinaryPredicate comp); 
+template<class Type>
+ constexpr pair<Type&, Type&> minmax(
+    initializer_list<Type> ); 
 template<class Type, class BinaryPredicate>
-    pair<Type&, Type&>         minmax(
-            initializer_list<Type> _Ilist,
-            BinaryPredicate comp
-        );
+constexpr pair<Type&, Type&> minmax(
+    initializer_list<Type>,
+    BinaryPredicate comp); 
 
 ```
 
@@ -4173,33 +4159,33 @@ template<class Type, class BinaryPredicate>
 template<class InputIterator1, class InputIterator2>
 pair<InputIterator1, InputIterator2>>
 mismatch(
-     InputIterator1 First1,
-     InputIterator1 Last1,
-     InputIterator2 First2 );
+    InputIterator1 First1,
+    InputIterator1 Last1,
+    InputIterator2 First2 );
 
 template<class InputIterator1, class InputIterator2, class BinaryPredicate> pair<InputIterator1, InputIterator2>>
 mismatch(
-     InputIterator1 First1,
-     InputIterator1 Last1,
-     InputIterator2 First2,
-     BinaryPredicate Comp );
+    InputIterator1 First1,
+    InputIterator1 Last1,
+    InputIterator2 First2,
+    BinaryPredicate Comp );
 
 //C++14
 template<class InputIterator1, class InputIterator2>
 pair<InputIterator1, InputIterator2>>
 mismatch(
     InputIterator1 First1,
-     InputIterator1 Last1,
-     InputIterator2 First2,
-     InputIterator2 Last2 );
+    InputIterator1 Last1,
+    InputIterator2 First2,
+    InputIterator2 Last2 );
 
 template<class InputIterator1, class InputIterator2, class BinaryPredicate> pair<InputIterator1, InputIterator2>>
 mismatch(
-     InputIterator1 First1,
-     InputIterator1 Last1,
-     InputIterator2 First2,
-     InputIterator2 Last2,
-     BinaryPredicate Comp);
+    InputIterator1 First1,
+    InputIterator1 Last1,
+    InputIterator2 First2,
+    InputIterator2 Last2,
+    BinaryPredicate Comp);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -4228,7 +4214,7 @@ mismatch(
 
 피연산자 간에 대칭, 재귀 및 전이적인 동등 관계를 적용하려면 사용자 정의 조건자가 필요하지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서는 불일치 사용 방법을 보여 줍니다. C++03 오버로드는 예기치 않은 결과를 생성하는 방법을 보여 주는 목적으로만 표시됩니다.
 
@@ -4331,11 +4317,10 @@ Press a key
 
 ```cpp
 template<class InputIterator, class OutputIterator>
-    OutputIterator move(
-        InputIterator first,
-        InputIterator last,
-        OutputIterator dest
-                  );
+OutputIterator move(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator dest); 
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -4410,7 +4395,7 @@ bool next_permutation(BidirectionalIterator first, BidirectionalIterator last, B
 
 복잡성은 선형 이며 최대 (* 성-*) / 2 개의 교환이 지원 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_next_perm.cpp
@@ -4456,7 +4441,7 @@ bool mod_lesser ( int elem1, int elem2 )
    return elem1 < elem2;
 };
 
-int main( )
+int main()
 {
    // Reordering the elements of type CInt in a deque
    // using the prev_permutation algorithm
@@ -4475,7 +4460,7 @@ int main( )
    d1_Iter = --deq1.end( );
    cout << " " << *d1_Iter << " )." << endl;
 
-   deq1Result = next_permutation ( deq1.begin ( ) , deq1.end ( ) );
+   deq1Result = next_permutation ( deq1.begin( ), deq1.end( ) );
 
    if ( deq1Result )
       cout << "The lexicographically next permutation "
@@ -4508,7 +4493,7 @@ int main( )
       cout << *Iter1 << " ";
    cout << ")." << endl;
 
-   next_permutation ( v1.begin ( ) , v1.end ( ) , mod_lesser );
+   next_permutation ( v1.begin( ), v1.end( ), mod_lesser );
 
    cout << "After the first next_permutation, vector v1 is:\n v1 = ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
@@ -4517,7 +4502,7 @@ int main( )
 
    int iii = 1;
    while ( iii <= 5 ) {
-      next_permutation ( v1.begin ( ) , v1.end ( ) , mod_lesser );
+      next_permutation ( v1.begin( ), v1.end( ), mod_lesser );
       cout << "After another next_permutation of vector v1,\n v1 =   ( " ;
       for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ;Iter1 ++ )
          cout << *Iter1  << " ";
@@ -4582,7 +4567,7 @@ template<class RandomAccessIterator, class BinaryPredicate>
 
 정렬 복잡성의 평균은 선형 * 성-* 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_nth_elem.cpp
@@ -4679,17 +4664,17 @@ bool none_of(InputIterator first, InputIterator last, BinaryPredicate comp);
 
 ```cpp
 template<class RandomAccessIterator>
-   void partial_sort(
-      RandomAccessIterator first,
-      RandomAccessIterator sortEnd,
-      RandomAccessIterator last);
+void partial_sort(
+    RandomAccessIterator first,
+    RandomAccessIterator sortEnd,
+    RandomAccessIterator last);
 
 template<class RandomAccessIterator, class BinaryPredicate>
-   void partial_sort(
-      RandomAccessIterator first,
-      RandomAccessIterator sortEnd,
-      RandomAccessIterator last
-      BinaryPredicate comp);
+void partial_sort(
+    RandomAccessIterator first,
+    RandomAccessIterator sortEnd,
+    RandomAccessIterator last
+    BinaryPredicate comp);
 
 ```
 
@@ -4711,7 +4696,7 @@ template<class RandomAccessIterator, class BinaryPredicate>
 
 평균 부분 정렬 복잡성은 *O*((`last`- `first`) 로그 (`sortEnd`- `first`)).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_partial_sort.cpp
@@ -4727,7 +4712,7 @@ bool UDgreater ( int elem1, int elem2 )
    return elem1 > elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1;
@@ -4798,11 +4783,11 @@ RandomAccessIterator partial_sort_copy(
 
 template<class InputIterator, class RandomAccessIterator, class BinaryPredicate>
 RandomAccessIterator partial_sort_copy(
-     InputIterator first1,
-     InputIterator last1,
-     RandomAccessIterator first2,
-     RandomAccessIterator last2,
-     BinaryPredicate comp);
+    InputIterator first1,
+    InputIterator last1,
+    RandomAccessIterator first2,
+    RandomAccessIterator last2,
+    BinaryPredicate comp);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -4815,7 +4800,7 @@ RandomAccessIterator partial_sort_copy(
 
 *last2* 하나 다음 위치의 마지막 요소 정렬된 된 대상 범위에서 주소를 지정 하는 임의 액세스 반복기입니다.
 
-*comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*Comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -4827,7 +4812,7 @@ RandomAccessIterator partial_sort_copy(
 
 등가가 아닌 요소는 정렬되고 등가인 요소는 정렬되지 않도록 엄밀히 약한 정렬을 제공해야 합니다. 둘 중 어느 요소도 다른 것보다 작지 않은 경우 두 요소는 보다 작음 조건에서 등가이지만, 반드시 같음은 아닙니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_partial_sort_copy.cpp
@@ -4909,10 +4894,10 @@ int main() {
 
 ```cpp
 template<class BidirectionalIterator, class Predicate>
-   BidirectionalIterator partition(
-      BidirectionalIterator first,
-      BidirectionalIterator last,
-      Predicate comp);
+BidirectionalIterator partition(
+    BidirectionalIterator first,
+    BidirectionalIterator last,
+    Predicate comp);
 
 ```
 
@@ -4936,7 +4921,7 @@ template<class BidirectionalIterator, class Predicate>
 
 복잡성은 선형: 가지 (`last` - `first`)의 응용 프로그램 *comp* 자에서 (`last` - `first`) / 2 개의 교환이 지원 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_partition.cpp
@@ -4946,10 +4931,10 @@ template<class BidirectionalIterator, class Predicate>
 #include <iostream>
 
 bool greater5 ( int value ) {
-   return value >5;
+   return value > 5;
 }
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1, v2;
    vector <int>::iterator Iter1, Iter2;
@@ -4981,14 +4966,13 @@ int main( ) {
 
 ```cpp
 template<class InputIterator, class OutputIterator1, class OutputIterator2, class Predicate>
-    pair<OutputIterator1, OutputIterator2>
-        partition_copy(
-            InputIterator first,
-            InputIterator last,
-            OutputIterator1 dest1,
-            OutputIterator2 dest2,
-            Predicate pred
-        );
+pair<OutputIterator1, OutputIterator2>
+    partition_copy(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator1 dest1,
+    OutputIterator2 dest2,
+    Predicate pred); 
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -5013,11 +4997,10 @@ template<class InputIterator, class OutputIterator1, class OutputIterator2, clas
 
 ```cpp
 template<class ForwardIterator, class Predicate>
-    ForwardIterator partition_point(
-        ForwardIterator first,
-        ForwardIterator last,
-        Predicate comp
-    );
+ForwardIterator partition_point(
+    ForwardIterator first,
+    ForwardIterator last,
+    Predicate comp); 
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -5075,7 +5058,7 @@ void pop_heap(RandomAccessIterator first, RandomAccessIterator last, BinaryPredi
 
 복잡성은 로그 이며, 필요한 최대 로그 (* 성-*) 비교 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_pop_heap.cpp
@@ -5085,7 +5068,7 @@ void pop_heap(RandomAccessIterator first, RandomAccessIterator last, BinaryPredi
 #include <functional>
 #include <iostream>
 
-int main( )  {
+int main()  {
    using namespace std;
    vector <int> v1;
    vector <int>::iterator Iter1, Iter2;
@@ -5143,15 +5126,15 @@ int main( )  {
 
 ```cpp
 template<class BidirectionalIterator>
-   bool prev_permutation(
-      BidirectionalIterator first,
-      BidirectionalIterator last);
+bool prev_permutation(
+    BidirectionalIterator first,
+    BidirectionalIterator last);
 
 template<class BidirectionalIterator, class BinaryPredicate>
-   bool prev_permutation(
-      BidirectionalIterator first,
-      BidirectionalIterator last,
-      BinaryPredicate comp);
+bool prev_permutation(
+    BidirectionalIterator first,
+    BidirectionalIterator last,
+    BinaryPredicate comp);
 
 ```
 
@@ -5175,7 +5158,7 @@ template<class BidirectionalIterator, class BinaryPredicate>
 
 복잡성은 선형 이며 최대 (`last` -  `first`) / 2 개의 교환이 지원 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_prev_perm.cpp
@@ -5236,7 +5219,7 @@ int main() {
    d1_Iter = --deq1.end( );
    cout << " " << *d1_Iter << " )." << endl;
 
-   deq1Result = prev_permutation ( deq1.begin ( ) , deq1.end ( ) );
+   deq1Result = prev_permutation ( deq1.begin( ), deq1.end( ) );
 
    if ( deq1Result )
       cout << "The lexicographically previous permutation "
@@ -5267,7 +5250,7 @@ int main() {
       cout << *Iter1 << " ";
    cout << ")." << endl;
 
-   prev_permutation ( v1.begin ( ) , v1.end ( ) , mod_lesser );
+   prev_permutation ( v1.begin( ), v1.end( ), mod_lesser );
 
    cout << "After the first prev_permutation, vector v1 is:\n v1 = ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
@@ -5276,7 +5259,7 @@ int main() {
 
    int iii = 1;
    while ( iii <= 5 ) {
-      prev_permutation ( v1.begin ( ) , v1.end ( ) , mod_lesser );
+      prev_permutation ( v1.begin( ), v1.end( ), mod_lesser );
       cout << "After another prev_permutation of vector v1,\n v1 =   ( " ;
       for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ;Iter1 ++ )
          cout << *Iter1  << " ";
@@ -5348,7 +5331,7 @@ void push_heap( RandomAccessIterator first, RandomAccessIterator last, BinaryPre
 
 복잡성은 로그 이며, 로그 요구에 가장 ( *성-*) 비교 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_push_heap.cpp
@@ -5358,7 +5341,7 @@ void push_heap( RandomAccessIterator first, RandomAccessIterator last, BinaryPre
 #include <functional>
 #include <iostream>
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1, v2;
    vector <int>::iterator Iter1, Iter2;
@@ -5453,7 +5436,7 @@ template<class ForwardIterator, class Type>
 
 합니다 [list 클래스](../standard-library/list-class.md) 의 보다 효율적인 멤버 함수 버전이 `remove`은 포인터로 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_remove.cpp
@@ -5462,7 +5445,7 @@ template<class ForwardIterator, class Type>
 #include <algorithm>
 #include <iostream>
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1;
    vector <int>::iterator Iter1, Iter2, new_end;
@@ -5535,7 +5518,7 @@ template<class InputIterator, class OutputIterator, class Type>
 
 복잡성은 선형; 있습니다 (`last` - `first`) 개의 비교 및 최대 같은지 (`last` - `first`) 할당 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_remove_copy.cpp
@@ -5616,7 +5599,7 @@ OutputIterator remove_copy_if(InputIterator first, InputIterator Last, OutputIte
 
 이러한 함수의 동작 방식에 대한 자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_remove_copy_if.cpp
@@ -5626,7 +5609,7 @@ OutputIterator remove_copy_if(InputIterator first, InputIterator Last, OutputIte
 #include <iostream>
 
 bool greater6 ( int value ) {
-   return value >6;
+   return value > 6;
 }
 
 int main() {
@@ -5672,7 +5655,10 @@ int main() {
 
 ```cpp
 template<class ForwardIterator, class Predicate>
- ForwardIterator remove_if(ForwardIterator first, ForwardIterator last, Predicate pred);
+ForwardIterator remove_if(
+    ForwardIterator first,
+    ForwardIterator last,
+    Predicate pred);
 
 ```
 
@@ -5700,7 +5686,7 @@ template<class ForwardIterator, class Predicate>
 
 List에는 remove의 더욱 효율적인 멤버 함수 버전이 있습니다. 이 버전은 포인터를 다시 링크합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_remove_if.cpp
@@ -5710,10 +5696,10 @@ List에는 remove의 더욱 효율적인 멤버 함수 버전이 있습니다. �
 #include <iostream>
 
 bool greater6 ( int value ) {
-   return value >6;
+   return value > 6;
 }
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1, v2;
    vector <int>::iterator Iter1, Iter2, new_end;
@@ -5756,7 +5742,11 @@ int main( ) {
 
 ```cpp
 template<class ForwardIterator, class Type>
-void replace(ForwardIterator first, ForwardIterator last, const Type& _OldVal, const Type& _NewVal);
+void replace(
+    ForwardIterator first,
+    ForwardIterator last,
+    const Type& oldVal,
+    const Type& newVal);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -5779,7 +5769,7 @@ void replace(ForwardIterator first, ForwardIterator last, const Type& _OldVal, c
 
 복잡성은 선형; 있습니다 (`last` - `first`) 개의 비교 및 최대 같은지 (`last` - `first`) 개의 새 값 할당이 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_replace.cpp
@@ -5788,7 +5778,7 @@ void replace(ForwardIterator first, ForwardIterator last, const Type& _OldVal, c
 #include <algorithm>
 #include <iostream>
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1;
    vector <int>::iterator Iter1;
@@ -5827,8 +5817,8 @@ OutputIterator replace_copy(
     InputIterator first,
     InputIterator last,
     OutputIterator result,
-    const Type& _OldVal,
-    const Type& _NewVal);
+    const Type& oldVal,
+    const Type& newVal);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -5857,7 +5847,7 @@ OutputIterator replace_copy(
 
 복잡성은 선형: 가지 (`last` - `first`) 개의 비교 및 최대 같은지 (`last` - `first`) 개의 새 값 할당이 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_replace_copy.cpp
@@ -5867,7 +5857,7 @@ OutputIterator replace_copy(
 #include <algorithm>
 #include <iostream>
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1;
    list <int> L1 (15);
@@ -5955,7 +5945,7 @@ OutputIterator replace_copy_if(
 
 복잡성은 선형; 있습니다 (`last` - `first`) 개의 비교 및 최대 같은지 (`last` - `first`) 개의 새 값 할당이 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_replace_copy_if.cpp
@@ -5966,10 +5956,10 @@ OutputIterator replace_copy_if(
 #include <iostream>
 
 bool greater6 ( int value ) {
-   return value >6;
+   return value > 6;
 }
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1;
    list <int> L1 (13);
@@ -6025,7 +6015,11 @@ int main( ) {
 
 ```cpp
 template<class ForwardIterator, class Predicate, class Type>
-void replace_if(ForwardIterator first, ForwardIterator last, Predicate pred, const Type& val);
+void replace_if(
+    ForwardIterator first,
+    ForwardIterator last,
+    Predicate pred,
+    const Type& val);
 
 ```
 
@@ -6051,7 +6045,7 @@ void replace_if(ForwardIterator first, ForwardIterator last, Predicate pred, con
 
 복잡성은 선형: 가지 (`last` - `first`) 개의 비교 및 최대 같은지 (`last` - `first`) 개의 새 값 할당이 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_replace_if.cpp
@@ -6061,10 +6055,10 @@ void replace_if(ForwardIterator first, ForwardIterator last, Predicate pred, con
 #include <iostream>
 
 bool greater6 ( int value ) {
-   return value >6;
+   return value > 6;
 }
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1;
    vector <int>::iterator Iter1;
@@ -6101,7 +6095,7 @@ int main( ) {
 
 ```cpp
 template<class BidirectionalIterator>
- void reverse(BidirectionalIterator first, BidirectionalIterator last);
+void reverse(BidirectionalIterator first, BidirectionalIterator last);
 
 ```
 
@@ -6115,7 +6109,7 @@ template<class BidirectionalIterator>
 
 참조된 소스 범위는 유효해야 하고 모든 포인터는 역참조 가능해야 하며 시퀀스 내에서 처음 위치에서 증분하여 마지막 위치까지 도달할 수 있어야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_reverse.cpp
@@ -6124,7 +6118,7 @@ template<class BidirectionalIterator>
 #include <algorithm>
 #include <iostream>
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1;
    vector <int>::iterator Iter1;
@@ -6164,9 +6158,9 @@ The modified vector v1 with values reversed is:
 ```cpp
 template<class BidirectionalIterator, class OutputIterator>
 OutputIterator reverse_copy(
-    BidirectionalIterator  first,
+    BidirectionalIterator first,
     BidirectionalIterator Last,
-    OutputIterator  result);
+    OutputIterator result);
 
 ```
 
@@ -6186,7 +6180,7 @@ OutputIterator reverse_copy(
 
 참조된 소스 및 대상 범위는 유효해야 하고 모든 포인터는 역참조 가능해야 하며 시퀀스 내에서 처음 위치에서 증분하여 마지막 위치까지 도달할 수 있어야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_reverse_copy.cpp
@@ -6195,7 +6189,7 @@ OutputIterator reverse_copy(
 #include <algorithm>
 #include <iostream>
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1, v2( 10 );
    vector <int>::iterator Iter1, Iter2;
@@ -6232,7 +6226,10 @@ int main( ) {
 
 ```cpp
 template<class ForwardIterator>
- void rotate(ForwardIterator first, ForwardIterator middle, ForwardIterator last);
+ void rotate(
+    ForwardIterator first,
+    ForwardIterator middle,
+    ForwardIterator last);
 
 ```
 
@@ -6250,7 +6247,7 @@ template<class ForwardIterator>
 
 복잡성은 선형 이며 최대 (`last` - `first`) 개의 교환이 지원 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_rotate.cpp
@@ -6260,7 +6257,7 @@ template<class ForwardIterator>
 #include <algorithm>
 #include <iostream>
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1;
    deque <int> d1;
@@ -6284,7 +6281,7 @@ int main( ) {
       cout << *v1Iter1  << " ";
    cout << ")." << endl;
 
-   rotate ( v1.begin ( ) , v1.begin ( ) + 3 , v1.end ( ) );
+   rotate ( v1.begin( ), v1.begin( ) + 3 , v1.end( ) );
    cout << "After rotating, vector v1 is ( " ;
    for ( v1Iter1 = v1.begin( ) ; v1Iter1 != v1.end( ) ;v1Iter1 ++ )
       cout << *v1Iter1  << " ";
@@ -6296,8 +6293,8 @@ int main( ) {
    cout << ")." << endl;
 
    int iii = 1;
-   while ( iii <= d1.end ( ) - d1.begin ( ) ) {
-      rotate ( d1.begin ( ) , d1.begin ( ) + 1 , d1.end ( ) );
+   while ( iii <= d1.end( ) - d1.begin( ) ) {
+      rotate ( d1.begin( ), d1.begin( ) + 1 , d1.end( ) );
       cout << "After the rotation of a single deque element to the back,\n d1 is   ( " ;
       for ( d1Iter1 = d1.begin( ) ; d1Iter1 != d1.end( ) ;d1Iter1 ++ )
          cout << *d1Iter1  << " ";
@@ -6359,7 +6356,7 @@ _ *마지막* 회전할 하나 다음 위치의 마지막 요소 범위에서 �
 
 복잡성은 선형 이며 최대 (`last` - `first`) 개의 교환이 지원 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_rotate_copy.cpp
@@ -6389,7 +6386,7 @@ int main() {
       cout << *v1Iter  << " ";
    cout << ")." << endl;
 
-   rotate_copy ( v1.begin ( ) , v1.begin ( ) + 3 , v1.end ( ) , v2.begin ( ) );
+   rotate_copy ( v1.begin( ), v1.begin( ) + 3 , v1.end( ), v2.begin( ) );
    cout << "After rotating, the vector v1 remains unchanged as:\n v1 = ( " ;
    for ( v1Iter = v1.begin( ) ; v1Iter != v1.end( ) ;v1Iter ++ )
       cout << *v1Iter  << " ";
@@ -6406,9 +6403,9 @@ int main() {
    cout << ")." << endl;
 
    int iii = 1;
-   while ( iii <= d1.end ( ) - d1.begin ( ) )
+   while ( iii <= d1.end( ) - d1.begin( ) )
    {
-      rotate_copy ( d1.begin ( ) , d1.begin ( ) + iii , d1.end ( ) , d2.begin ( ) );
+      rotate_copy ( d1.begin( ), d1.begin( ) + iii , d1.end( ), d2.begin( ) );
       cout << "After the rotation of a single deque element to the back,\n d2 is   ( " ;
       for ( d2Iter = d2.begin( ) ; d2Iter != d2.end( ) ;d2Iter ++ )
          cout << *d2Iter  << " ";
@@ -6424,25 +6421,25 @@ int main() {
 
 ```cpp
 template<class ForwardIterator1, class ForwardIterator2>
-   ForwardIterator1 search(
-      ForwardIterator1 first1,
-      ForwardIterator1 last1,
-      ForwardIterator2 first2,
-      ForwardIterator2 last2);
+ForwardIterator1 search(
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2,
+    ForwardIterator2 last2);
 
 template<class ForwardIterator1, class ForwardIterator2, class Predicate>
-   ForwardIterator1 search(
-      ForwardIterator1 first1,
-      ForwardIterator1 last1,
-      ForwardIterator2 first2,
-      ForwardIterator2 last2
-      Predicate comp);
+ForwardIterator1 search(
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2,
+    ForwardIterator2 last2
+    Predicate comp);
 
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*first1* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*First1* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
 
 *last1* 검색할 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
 
@@ -6450,7 +6447,7 @@ template<class ForwardIterator1, class ForwardIterator2, class Predicate>
 
 *last2* 일치 시킬 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
 
-*comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*Comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -6464,7 +6461,7 @@ template<class ForwardIterator1, class ForwardIterator2, class Predicate>
 
 평균 복잡성은 검색 범위의 크기에 대해 선형이며, 가장 나쁜 경우의 복잡성도 검색 대상 시퀀스의 크기에 대해 선형입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_search.cpp
@@ -6480,7 +6477,7 @@ bool twice (int elem1, int elem2 )
    return 2 * elem1 == elem2;
 }
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1, v2;
    list <int> L1;
@@ -6568,25 +6565,25 @@ There is a sequence of elements in v1 that are equivalent
 
 ```cpp
 template<class ForwardIterator1, class Diff2, class Type>
-   ForwardIterator1 search_n(
-      ForwardIterator1 first1,
-      ForwardIterator1 last1,
-      Diff2 count,
-      const Type& val);
+ForwardIterator1 search_n(
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    Diff2 count,
+    const Type& val);
 
 template<class ForwardIterator1, class Diff2, class Type, class BinaryPredicate>
-   ForwardIterator1 search_n(
-      ForwardIterator1 first1,
-      ForwardIterator1 last1,
-      Diff2 count,
-      const Type& val,
-      BinaryPredicate comp);
+ForwardIterator1 search_n(
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    Diff2 count,
+    const Type& val,
+    BinaryPredicate comp);
 
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*first1* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*First1* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
 
 *last1* 검색할 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
 
@@ -6594,7 +6591,7 @@ template<class ForwardIterator1, class Diff2, class Type, class BinaryPredicate>
 
 *val* 검색 대상 시퀀스의 요소 값입니다.
 
-*comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*Comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -6608,7 +6605,7 @@ template<class ForwardIterator1, class Diff2, class Type, class BinaryPredicate>
 
 복잡성은 검색 결과의 크기와 관련하여 선형입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_search_n.cpp
@@ -6624,7 +6621,7 @@ bool one_half ( int elem1, int elem2 )
    return elem1 == 2 * elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1, v2;
@@ -6698,11 +6695,11 @@ There is a match of a sequence ( 5 5 5 ) under the equivalence
 ```cpp
 template<class InputIterator1, class InputIterator2, class OutputIterator>
 OutputIterator set_difference(
-     InputIterator1  first1,
-     InputIterator1  last1,
-     InputIterator2  first2,
-     InputIterator2  last2,
-     OutputIterator  result );
+    InputIterator1  first1,
+    InputIterator1  last1,
+    InputIterator2  first2,
+    InputIterator2  last2,
+    OutputIterator  result );
 
 template<class InputIterator1, class InputIterator2, class OutputIterator, class BinaryPredicate>
 OutputIterator set_difference(
@@ -6746,7 +6743,7 @@ OutputIterator set_difference(
 
 알고리즘의 복잡성은 선형 이며 최대 2 \* (( *last1-first1*)-( *last2-first2*))-1 비어 있지 않은 소스 범위에 대해 비교 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_set_diff.cpp
@@ -6766,7 +6763,7 @@ bool mod_lesser (int elem1, int elem2 )
    return elem1 < elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1a, v1b, v1 ( 12 );
@@ -6793,50 +6790,50 @@ int main( )
 
    cout << "Original vector v1b with range sorted by the\n "
         <<  "binary predicate less than is  v1b = ( " ;
-   for ( Iter1b = v1b.begin ( ) ; Iter1b != v1b.end ( ) ; Iter1b++ )
+   for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
       cout << *Iter1b << " ";
    cout << ")." << endl;
 
    // Constructing vectors v2a & v2b with ranges sorted by greater
    vector <int> v2a ( v1a ) , v2b ( v1b ) ,  v2 ( v1 );
    vector <int>::iterator Iter2a, Iter2b, Iter2, Result2;
-   sort ( v2a.begin ( ) , v2a.end ( ) , greater<int> ( ) );
-   sort ( v2b.begin ( ) , v2b.end ( ) , greater<int> ( ) );
+   sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
+   sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
 
    cout << "Original vector v2a with range sorted by the\n "
         <<  "binary predicate greater is   v2a =  ( " ;
-   for ( Iter2a = v2a.begin ( ) ; Iter2a != v2a.end ( ) ; Iter2a++ )
+   for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
       cout << *Iter2a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v2b with range sorted by the\n "
         <<  "binary predicate greater is   v2b =  ( " ;
-   for ( Iter2b = v2b.begin ( ) ; Iter2b != v2b.end ( ) ; Iter2b++ )
+   for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
       cout << *Iter2b << " ";
    cout << ")." << endl;
 
    // Constructing vectors v3a & v3b with ranges sorted by mod_lesser
    vector <int> v3a ( v1a ), v3b ( v1b ) ,  v3 ( v1 );
    vector <int>::iterator Iter3a,  Iter3b, Iter3, Result3;
-   sort ( v3a.begin ( ) , v3a.end ( ) , mod_lesser );
-   sort ( v3b.begin ( ) , v3b.end ( ) , mod_lesser  );
+   sort ( v3a.begin( ), v3a.end( ), mod_lesser );
+   sort ( v3b.begin( ), v3b.end( ), mod_lesser  );
 
    cout << "Original vector v3a with range sorted by the\n "
         <<  "binary predicate mod_lesser is   v3a =  ( " ;
-   for ( Iter3a = v3a.begin ( ) ; Iter3a != v3a.end ( ) ; Iter3a++ )
+   for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
       cout << *Iter3a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v3b with range sorted by the\n "
         <<  "binary predicate mod_lesser is   v3b =  ( " ;
-   for ( Iter3b = v3b.begin ( ) ; Iter3b != v3b.end ( ) ; Iter3b++ )
+   for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
       cout << *Iter3b << " ";
    cout << ")." << endl;
 
    // To combine into a difference in asscending
-   // order with the default binary predicate less <int> ( )
-   Result1 = set_difference ( v1a.begin ( ) , v1a.end ( ) ,
-      v1b.begin ( ) , v1b.end ( ) , v1.begin ( ) );
+   // order with the default binary predicate less <int>( )
+   Result1 = set_difference ( v1a.begin( ), v1a.end( ),
+      v1b.begin( ), v1b.end( ), v1.begin( ) );
    cout << "Set_difference of source ranges with default order,"
         << "\n vector v1mod =  ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != Result1 ; Iter1++ )
@@ -6845,8 +6842,8 @@ int main( )
 
    // To combine into a difference in descending
    // order specify binary predicate greater<int>( )
-   Result2 = set_difference ( v2a.begin ( ) , v2a.end ( ) ,
-      v2b.begin ( ) , v2b.end ( ) ,v2.begin ( ) , greater <int> ( ) );
+   Result2 = set_difference ( v2a.begin( ), v2a.end( ),
+      v2b.begin( ), v2b.end( ),v2.begin( ), greater <int>( ) );
    cout << "Set_difference of source ranges with binary"
         << "predicate greater specified,\n vector v2mod  = ( " ;
    for ( Iter2 = v2.begin( ) ; Iter2 != Result2 ; Iter2++ )
@@ -6855,8 +6852,8 @@ int main( )
 
    // To combine into a difference applying a user
    // defined binary predicate mod_lesser
-   Result3 = set_difference (  v3a.begin ( ) , v3a.end ( ) ,
-      v3b.begin ( ) , v3b.end ( ) , v3.begin ( ) , mod_lesser );
+   Result3 = set_difference (  v3a.begin( ), v3a.end( ),
+      v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
    cout << "Set_difference of source ranges with binary "
         << "predicate mod_lesser specified,\n vector v3mod  = ( " ; ;
    for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; Iter3++ )
@@ -6920,7 +6917,7 @@ OutputIterator set_intersection(
 
 알고리즘의 복잡성은 선형 이며 최대 2 \* (( *last1-first1*) + ( *last2-first2*))-1 비어 있지 않은 소스 범위에 대해 비교 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_set_intersection.cpp
@@ -6961,50 +6958,50 @@ int main() {
 
    cout << "Original vector v1b with range sorted by the\n "
         <<  "binary predicate less than is  v1b = ( " ;
-   for ( Iter1b = v1b.begin ( ) ; Iter1b != v1b.end ( ) ; Iter1b++ )
+   for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
       cout << *Iter1b << " ";
    cout << ")." << endl;
 
    // Constructing vectors v2a & v2b with ranges sorted by greater
    vector <int> v2a ( v1a ) , v2b ( v1b ) , v2 ( v1 );
    vector <int>::iterator Iter2a, Iter2b, Iter2, Result2;
-   sort ( v2a.begin ( ) , v2a.end ( ) , greater<int> ( ) );
-   sort ( v2b.begin ( ) , v2b.end ( ) , greater<int> ( ) );
+   sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
+   sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
 
    cout << "Original vector v2a with range sorted by the\n "
         << "binary predicate greater is   v2a =  ( " ;
-   for ( Iter2a = v2a.begin ( ) ; Iter2a != v2a.end ( ) ; Iter2a++ )
+   for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
       cout << *Iter2a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v2b with range sorted by the\n "
         << "binary predicate greater is   v2b =  ( " ;
-   for ( Iter2b = v2b.begin ( ) ; Iter2b != v2b.end ( ) ; Iter2b++ )
+   for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
       cout << *Iter2b << " ";
    cout << ")." << endl;
 
    // Constructing vectors v3a & v3b with ranges sorted by mod_lesser
    vector <int> v3a ( v1a ), v3b ( v1b ) , v3 ( v1 );
    vector <int>::iterator Iter3a,  Iter3b, Iter3, Result3;
-   sort ( v3a.begin ( ) , v3a.end ( ) , mod_lesser );
-   sort ( v3b.begin ( ) , v3b.end ( ) , mod_lesser );
+   sort ( v3a.begin( ), v3a.end( ), mod_lesser );
+   sort ( v3b.begin( ), v3b.end( ), mod_lesser );
 
    cout << "Original vector v3a with range sorted by the\n "
         <<  "binary predicate mod_lesser is   v3a =  ( " ;
-   for ( Iter3a = v3a.begin ( ) ; Iter3a != v3a.end ( ) ; Iter3a++ )
+   for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
       cout << *Iter3a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v3b with range sorted by the\n "
            <<  "binary predicate mod_lesser is   v3b =  ( " ;
-   for ( Iter3b = v3b.begin ( ) ; Iter3b != v3b.end ( ) ; Iter3b++ )
+   for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
       cout << *Iter3b << " ";
    cout << ")." << endl;
 
    // To combine into an intersection in asscending order with the
-   // default binary predicate less <int> ( )
-   Result1 = set_intersection ( v1a.begin ( ) , v1a.end ( ) ,
-      v1b.begin ( ) , v1b.end ( ) , v1.begin ( ) );
+   // default binary predicate less <int>( )
+   Result1 = set_intersection ( v1a.begin( ), v1a.end( ),
+      v1b.begin( ), v1b.end( ), v1.begin( ) );
    cout << "Intersection of source ranges with default order,"
         << "\n vector v1mod =  ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != Result1 ; ++Iter1 )
@@ -7013,8 +7010,8 @@ int main() {
 
    // To combine into an intersection in descending order, specify
    // binary predicate greater<int>( )
-   Result2 = set_intersection ( v2a.begin ( ) , v2a.end ( ) ,
-      v2b.begin ( ) , v2b.end ( ) ,v2.begin ( ) , greater <int> ( ) );
+   Result2 = set_intersection ( v2a.begin( ), v2a.end( ),
+      v2b.begin( ), v2b.end( ),v2.begin( ), greater <int>( ) );
    cout << "Intersection of source ranges with binary predicate"
         << " greater specified,\n vector v2mod  = ( " ;
    for ( Iter2 = v2.begin( ) ; Iter2 != Result2 ; ++Iter2 )
@@ -7023,8 +7020,8 @@ int main() {
 
    // To combine into an intersection applying a user-defined
    // binary predicate mod_lesser
-   Result3 = set_intersection ( v3a.begin ( ) , v3a.end ( ) ,
-      v3b.begin ( ) , v3b.end ( ) , v3.begin ( ) , mod_lesser );
+   Result3 = set_intersection ( v3a.begin( ), v3a.end( ),
+      v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
    cout << "Intersection of source ranges with binary predicate "
         << "mod_lesser specified,\n vector v3mod  = ( " ; ;
    for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; ++Iter3 )
@@ -7089,7 +7086,7 @@ OutputIterator set_symmetric_difference(
 
 알고리즘의 복잡성은 선형 이며 최대 2 \* ((*last1-first1*)-(*last2-first2*))-1 비어 있지 않은 소스 범위에 대해 비교 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_set_sym_diff.cpp
@@ -7109,7 +7106,7 @@ bool mod_lesser (int elem1, int elem2 )
    return elem1 < elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1a, v1b, v1 ( 12 );
@@ -7136,50 +7133,50 @@ int main( )
 
    cout << "Original vector v1b with range sorted by the\n "
         <<  "binary predicate less than is  v1b = ( " ;
-   for ( Iter1b = v1b.begin ( ) ; Iter1b != v1b.end ( ) ; Iter1b++ )
+   for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
       cout << *Iter1b << " ";
    cout << ")." << endl;
 
    // Constructing vectors v2a & v2b with ranges sorted by greater
    vector <int> v2a ( v1a ) , v2b ( v1b ) ,  v2 ( v1 );
    vector <int>::iterator Iter2a, Iter2b, Iter2, Result2;
-   sort ( v2a.begin ( ) , v2a.end ( ) , greater<int> ( ) );
-   sort ( v2b.begin ( ) , v2b.end ( ) , greater<int> ( ) );
+   sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
+   sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
 
    cout << "Original vector v2a with range sorted by the\n "
         <<  "binary predicate greater is   v2a =  ( " ;
-   for ( Iter2a = v2a.begin ( ) ; Iter2a != v2a.end ( ) ; Iter2a++ )
+   for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
       cout << *Iter2a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v2b with range sorted by the\n "
         <<  "binary predicate greater is   v2b =  ( " ;
-   for ( Iter2b = v2b.begin ( ) ; Iter2b != v2b.end ( ) ; Iter2b++ )
+   for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
       cout << *Iter2b << " ";
    cout << ")." << endl;
 
    // Constructing vectors v3a & v3b with ranges sorted by mod_lesser
    vector <int> v3a ( v1a ), v3b ( v1b ) ,  v3 ( v1 );
    vector <int>::iterator Iter3a, Iter3b, Iter3, Result3;
-   sort ( v3a.begin ( ) , v3a.end ( ) , mod_lesser );
-   sort ( v3b.begin ( ) , v3b.end ( ) , mod_lesser  );
+   sort ( v3a.begin( ), v3a.end( ), mod_lesser );
+   sort ( v3b.begin( ), v3b.end( ), mod_lesser  );
 
    cout << "Original vector v3a with range sorted by the\n "
         <<  "binary predicate mod_lesser is   v3a =  ( " ;
-   for ( Iter3a = v3a.begin ( ) ; Iter3a != v3a.end ( ) ; Iter3a++ )
+   for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
       cout << *Iter3a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v3b with range sorted by the\n "
         <<  "binary predicate mod_lesser is   v3b =  ( " ;
-   for ( Iter3b = v3b.begin ( ) ; Iter3b != v3b.end ( ) ; Iter3b++ )
+   for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
       cout << *Iter3b << " ";
    cout << ")." << endl;
 
    // To combine into a symmetric difference in ascending
-   // order with the default binary predicate less <int> ( )
-   Result1 = set_symmetric_difference ( v1a.begin ( ) , v1a.end ( ) ,
-      v1b.begin ( ) , v1b.end ( ) , v1.begin ( ) );
+   // order with the default binary predicate less <int>( )
+   Result1 = set_symmetric_difference ( v1a.begin( ), v1a.end( ),
+      v1b.begin( ), v1b.end( ), v1.begin( ) );
    cout << "Set_symmetric_difference of source ranges with default order,"
         << "\n vector v1mod =  ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != Result1 ; Iter1++ )
@@ -7188,8 +7185,8 @@ int main( )
 
    // To combine into a symmetric difference in descending
    // order, specify binary predicate greater<int>( )
-   Result2 = set_symmetric_difference ( v2a.begin ( ) , v2a.end ( ) ,
-      v2b.begin ( ) , v2b.end ( ) ,v2.begin ( ) , greater <int> ( ) );
+   Result2 = set_symmetric_difference ( v2a.begin( ), v2a.end( ),
+      v2b.begin( ), v2b.end( ),v2.begin( ), greater <int>( ) );
    cout << "Set_symmetric_difference of source ranges with binary"
         << "predicate greater specified,\n vector v2mod  = ( " ;
    for ( Iter2 = v2.begin( ) ; Iter2 != Result2 ; Iter2++ )
@@ -7198,8 +7195,8 @@ int main( )
 
    // To combine into a symmetric difference applying a user
    // defined binary predicate mod_lesser
-   Result3 = set_symmetric_difference ( v3a.begin ( ) , v3a.end ( ) ,
-      v3b.begin ( ) , v3b.end ( ) , v3.begin ( ) , mod_lesser );
+   Result3 = set_symmetric_difference ( v3a.begin( ), v3a.end( ),
+      v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
    cout << "Set_symmetric_difference of source ranges with binary "
         << "predicate mod_lesser specified,\n vector v3mod  = ( " ; ;
    for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; Iter3++ )
@@ -7263,7 +7260,7 @@ OutputIterator set_union(
 
 알고리즘의 복잡성은 선형 이며 최대 2 \* (( *last1-first1*)-( *last2-first2*))-1 비교 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_set_union.cpp
@@ -7283,7 +7280,7 @@ bool mod_lesser ( int elem1, int elem2 )
    return elem1 < elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1a, v1b, v1 ( 12 );
@@ -7310,50 +7307,50 @@ int main( )
 
    cout << "Original vector v1b with range sorted by the\n "
         <<  "binary predicate less than is  v1b = ( " ;
-   for ( Iter1b = v1b.begin ( ) ; Iter1b != v1b.end ( ) ; Iter1b++ )
+   for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
       cout << *Iter1b << " ";
    cout << ")." << endl;
 
    // Constructing vectors v2a & v2b with ranges sorted by greater
    vector <int> v2a ( v1a ) , v2b ( v1b ) , v2 ( v1 );
    vector <int>::iterator Iter2a,  Iter2b, Iter2, Result2;
-   sort ( v2a.begin ( ) , v2a.end ( ) , greater<int> ( ) );
-   sort ( v2b.begin ( ) , v2b.end ( ) , greater<int> ( ) );
+   sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
+   sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
 
    cout << "Original vector v2a with range sorted by the\n "
         <<  "binary predicate greater is   v2a =  ( " ;
-   for ( Iter2a = v2a.begin ( ) ; Iter2a != v2a.end ( ) ; Iter2a++ )
+   for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
       cout << *Iter2a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v2b with range sorted by the\n "
         <<  "binary predicate greater is   v2b =  ( " ;
-   for ( Iter2b = v2b.begin ( ) ; Iter2b != v2b.end ( ) ; Iter2b++ )
+   for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
       cout << *Iter2b << " ";
    cout << ")." << endl;
 
    // Constructing vectors v3a & v3b with ranges sorted by mod_lesser
    vector <int> v3a ( v1a ), v3b ( v1b ) ,  v3 ( v1 );
    vector <int>::iterator Iter3a, Iter3b, Iter3, Result3;
-   sort ( v3a.begin ( ) , v3a.end ( ) , mod_lesser );
-   sort ( v3b.begin ( ) , v3b.end ( ) , mod_lesser  );
+   sort ( v3a.begin( ), v3a.end( ), mod_lesser );
+   sort ( v3b.begin( ), v3b.end( ), mod_lesser  );
 
    cout << "Original vector v3a with range sorted by the\n "
         <<  "binary predicate mod_lesser is   v3a =  ( " ;
-   for ( Iter3a = v3a.begin ( ) ; Iter3a != v3a.end ( ) ; Iter3a++ )
+   for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
       cout << *Iter3a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v3b with range sorted by the\n "
         <<  "binary predicate mod_lesser is   v3b =  ( " ;
-   for ( Iter3b = v3b.begin ( ) ; Iter3b != v3b.end ( ) ; Iter3b++ )
+   for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
       cout << *Iter3b << " ";
    cout << ")." << endl;
 
    // To combine into a union in ascending order with the default
-    // binary predicate less <int> ( )
-   Result1 = set_union ( v1a.begin ( ) , v1a.end ( ) ,
-      v1b.begin ( ) , v1b.end ( ) , v1.begin ( ) );
+    // binary predicate less <int>( )
+   Result1 = set_union ( v1a.begin( ), v1a.end( ),
+      v1b.begin( ), v1b.end( ), v1.begin( ) );
    cout << "Union of source ranges with default order,"
         << "\n vector v1mod =  ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != Result1 ; Iter1++ )
@@ -7362,8 +7359,8 @@ int main( )
 
    // To combine into a union in descending order, specify binary
    // predicate greater<int>( )
-   Result2 = set_union (  v2a.begin ( ) , v2a.end ( ) ,
-      v2b.begin ( ) , v2b.end ( ) ,v2.begin ( ) , greater <int> ( ) );
+   Result2 = set_union (  v2a.begin( ), v2a.end( ),
+      v2b.begin( ), v2b.end( ),v2.begin( ), greater <int>( ) );
    cout << "Union of source ranges with binary predicate greater "
         << "specified,\n vector v2mod  = ( " ;
    for ( Iter2 = v2.begin( ) ; Iter2 != Result2 ; Iter2++ )
@@ -7372,8 +7369,8 @@ int main( )
 
    // To combine into a union applying a user-defined
    // binary predicate mod_lesser
-   Result3 = set_union ( v3a.begin ( ) , v3a.end ( ) ,
-      v3b.begin ( ) , v3b.end ( ) , v3.begin ( ) , mod_lesser );
+   Result3 = set_union ( v3a.begin( ), v3a.end( ),
+      v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
    cout << "Union of source ranges with binary predicate "
         << "mod_lesser specified,\n vector v3mod  = ( " ; ;
    for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; Iter3++ )
@@ -7441,7 +7438,7 @@ template<class RandomAccessIterator, class Predicate>
 
 정렬 복잡성의 평균은 *O*( *N* 로그 *N*), 여기서 *N* =  *마지막-첫 번째*.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_sort.cpp
@@ -7457,7 +7454,7 @@ bool UDgreater ( int elem1, int elem2 )
    return elem1 > elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1;
@@ -7552,7 +7549,7 @@ template<class RandomAccessIterator, class Predicate>
 
 복잡성은 많아야 *N* 로그 *N*여기서 *N* = ( *성-*).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_sort_heap.cpp
@@ -7633,7 +7630,7 @@ BidirectionalIterator stable_partition(
 
 *Pr* ( *a*,  *b*)가 false이고 *Pr* ( *b*,  *a*)도 false인 경우 *a*와 *b* 요소는 등가이지만 반드시 같음은 아닙니다. 여기서 *Pr*은 매개 변수로 지정된 조건자입니다. `stable_ partition` 알고리즘은 안정적 이며 등가 요소의 상대적인 순서가 유지 것임을 보증 됩니다. 알고리즘 `partition` 반드시 유지 이렇게 원래 순서를 지정 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_stable_partition.cpp
@@ -7643,10 +7640,10 @@ BidirectionalIterator stable_partition(
 #include <iostream>
 
 bool greater5 ( int value ) {
-   return value >5;
+   return value > 5;
 }
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1, v2;
    vector <int>::iterator Iter1, Iter2, result;
@@ -7710,7 +7707,7 @@ void stable_sort(
 
 런타임 복잡성 `stable_sort` 사용 가능한 메모리의 양에 따라 달라 집니다 (메모리가 충분 한) 모범 사례 이지만 *O*( *N* log *N*) 및 최악의 경우 됩니다 *O*( *N* (log *N* ) 2) 여기서 *N* =  *성-이름입니다.* 일반적으로 `sort` 알고리즘은 보다 훨씬 빠릅니다 `stable_sort`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_stable_sort.cpp
@@ -7726,7 +7723,7 @@ bool UDgreater (int elem1, int elem2 )
    return elem1 > elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1;
@@ -7803,7 +7800,7 @@ template<class Type, size_t N>
 
 첫 번째 오버로드는 개별 개체에서 작동하도록 설계되었습니다. 두 번째 오버로드는 두 배열 간에 개체의 내용을 교환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_swap.cpp
@@ -7812,7 +7809,7 @@ template<class Type, size_t N>
 #include <algorithm>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1, v2;
@@ -7890,7 +7887,7 @@ ForwardIterator2 swap_ranges(
 
 복잡성은 선형 이며 *last1* - *first1* 개의 교환이 수행 합니다. 멤버 함수는 일반적으로 일관된 복잡성을 가지고 있기 때문에, 동일한 유형의 컨테이너에서 요소를 교환하는 경우 해당 컨테이너의 `swap` 멤버 함수를 사용해야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_swap_ranges.cpp
@@ -7900,7 +7897,7 @@ ForwardIterator2 swap_ranges(
 #include <algorithm>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1;
@@ -7930,7 +7927,7 @@ int main( )
       cout << *d1Iter1  << " ";
    cout << ")." << endl;
 
-   swap_ranges ( v1.begin ( ) , v1.end ( ) , d1.begin ( ) );
+   swap_ranges ( v1.begin( ), v1.end( ), d1.begin( ) );
 
    cout << "After the swap_range, vector v1 is ( " ;
    for ( v1Iter1 = v1.begin( ) ; v1Iter1 != v1.end( ) ;v1Iter1 ++ )
@@ -7961,7 +7958,7 @@ OutputIterator transform(
     InputIterator first1,
     InputIterator last1,
     OutputIterator result,
-    UnaryFunction _Func );
+    UnaryFunction func );
 
 template<class InputIterator1, class InputIterator2, class OutputIterator, class BinaryFunction>
 OutputIterator transform(
@@ -7969,7 +7966,7 @@ OutputIterator transform(
     InputIterator1 last1,
     InputIterator2 first2,
     OutputIterator result,
-    BinaryFunction _Func );
+    BinaryFunction func );
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -7996,7 +7993,7 @@ OutputIterator transform(
 
 복잡성은 선형 이며 최대 (`last1` - `first1`) 비교 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_transform.cpp
@@ -8018,13 +8015,13 @@ class MultValue
       }
 
       // The function call for the element to be multiplied
-      Type operator ( ) ( Type& elem ) const
+      Type operator( ) ( Type& elem ) const
       {
          return elem * Factor;
       }
 };
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1, v2 ( 7 ), v3 ( 7 );
@@ -8043,7 +8040,7 @@ int main( )
    cout << ")." << endl;
 
    // Modifying the vector v1 in place
-   transform (v1.begin ( ) , v1.end ( ) , v1.begin ( ) , MultValue<int> ( 2 ) );
+   transform (v1.begin( ), v1.end( ), v1.begin( ), MultValue<int> ( 2 ) );
    cout << "The elements of the vector v1 multiplied by 2 in place gives:"
         << "\n v1mod = ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
@@ -8051,7 +8048,7 @@ int main( )
    cout << ")." << endl;
 
    // Using transform to multiply each element by a factor of 5
-   transform ( v1.begin ( ) , v1.end ( ) , v2.begin ( ) , MultValue<int> ( 5 ) );
+   transform ( v1.begin( ), v1.end( ), v2.begin( ), MultValue<int> ( 5 ) );
 
    cout << "Multiplying the elements of the vector v1mod\n "
         <<  "by the factor 5 & copying to v2 gives:\n v2 = ( " ;
@@ -8061,8 +8058,8 @@ int main( )
 
    // The second version of transform used to multiply the
    // elements of the vectors v1mod & v2 pairwise
-   transform ( v1.begin ( ) , v1.end ( ) ,  v2.begin ( ) , v3.begin ( ) ,
-      multiplies <int> ( ) );
+   transform ( v1.begin( ), v1.end( ),  v2.begin( ), v3.begin( ),
+      multiplies <int>( ) );
 
    cout << "Multiplying elements of the vectors v1mod and v2 pairwise "
         <<  "gives:\n v3 = ( " ;
@@ -8107,7 +8104,7 @@ template<class ForwardIterator, class Predicate>
 
 *마지막* 하나 다음 위치의 마지막 요소를 검색 하 여 중복 제거에 대 한 범위에서 주소를 지정 하는 정방향 반복기입니다.
 
-*comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*Comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -8127,7 +8124,7 @@ List는 성능이 더 뛰어나고 좀 더 효과적인 멤버 함수인 "unique
 
 이러한 알고리즘은 연관 컨테이너에서 사용할 수 없습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_unique.cpp
@@ -8150,7 +8147,7 @@ bool mod_equal ( int elem1, int elem2 )
    return elem1 == elem2;
 };
 
-int main( )
+int main()
 {
    vector <int> v1;
    vector <int>::iterator v1_Iter1, v1_Iter2, v1_Iter3,
@@ -8176,7 +8173,7 @@ int main( )
    cout << ")." << endl;
 
    // Remove consecutive duplicates
-   v1_NewEnd1 = unique ( v1.begin ( ) , v1.end ( ) );
+   v1_NewEnd1 = unique ( v1.begin( ), v1.end( ) );
 
    cout << "Removing adjacent duplicates from vector v1 gives\n ( " ;
    for ( v1_Iter1 = v1.begin( ) ; v1_Iter1 != v1_NewEnd1 ; v1_Iter1++ )
@@ -8184,7 +8181,7 @@ int main( )
    cout << ")." << endl;
 
    // Remove consecutive duplicates under the binary prediate mod_equals
-   v1_NewEnd2 = unique ( v1.begin ( ) , v1_NewEnd1 , mod_equal );
+   v1_NewEnd2 = unique ( v1.begin( ), v1_NewEnd1 , mod_equal );
 
    cout << "Removing adjacent duplicates from vector v1 under the\n "
         << " binary predicate mod_equal gives\n ( " ;
@@ -8193,7 +8190,7 @@ int main( )
    cout << ")." << endl;
 
    // Remove elements if preceded by an element that was greater
-   v1_NewEnd3 = unique ( v1.begin ( ) , v1_NewEnd2, greater<int>( ) );
+   v1_NewEnd3 = unique ( v1.begin( ), v1_NewEnd2, greater<int>( ) );
 
    cout << "Removing adjacent elements satisfying the binary\n "
         << " predicate mod_equal from vector v1 gives ( " ;
@@ -8239,7 +8236,7 @@ OutputIterator unique_copy( InputIterator first,
 
 *결과* 제거 연속 중복 된 복사본을 수신 하는 대상 범위에서 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기입니다.
 
-*comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*Comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -8255,7 +8252,7 @@ OutputIterator unique_copy( InputIterator first,
 
 복잡성은 선형 이며 요구 (`last` - `first`) 비교 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_unique_copy.cpp
@@ -8303,7 +8300,7 @@ int main() {
    cout << ")." << endl;
 
    // Copy first half to second, removing consecutive duplicates
-   v1_NewEnd1 = unique_copy ( v1.begin ( ) , v1.begin ( ) + 8, v1.begin ( ) + 8 );
+   v1_NewEnd1 = unique_copy ( v1.begin( ), v1.begin( ) + 8, v1.begin( ) + 8 );
 
    cout << "Copying the first half of the vector to the second half\n "
         << "while removing adjacent duplicates gives\n ( " ;
@@ -8316,8 +8313,8 @@ int main() {
       v1.push_back( 10 );
 
    // Remove consecutive duplicates under the binary prediate mod_equals
-   v1_NewEnd2 = unique_copy ( v1.begin ( ) , v1.begin ( ) + 14,
-      v1.begin ( ) + 14 , mod_equal );
+   v1_NewEnd2 = unique_copy ( v1.begin( ), v1.begin( ) + 14,
+      v1.begin( ) + 14 , mod_equal );
 
    cout << "Copying the first half of the vector to the second half\n "
         << " removing adjacent duplicates under mod_equals gives\n ( " ;
@@ -8373,7 +8370,7 @@ template<class ForwardIterator, class Type, class Predicate>
 
 알고리즘의 복잡성은 임의 액세스 반복기에 대 한 로그 및 선형 비례 하는 단계 수 이며 그렇지 않은 경우 (`last - first`).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // alg_upper_bound.cpp
@@ -8393,7 +8390,7 @@ bool mod_lesser( int elem1, int elem2 )
     return elem1 < elem2;
 }
 
-int main( )
+int main()
 {
     using namespace std;
 

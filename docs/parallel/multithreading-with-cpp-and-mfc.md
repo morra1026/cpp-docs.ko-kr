@@ -1,7 +1,7 @@
 ---
 title: C + + 및 MFC에서 다중 스레딩 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-parallel
 ms.topic: conceptual
@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5fd5a60908d52bf0ccdf0c0e76e076cb244e3e31
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a1f5f1ea1d8d6578b631da772522a0a852d11c89
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596099"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43132196"
 ---
 # <a name="multithreading-with-c-and-mfc"></a>C++ 및 MFC에서 다중 스레딩
 Microsoft Foundation 클래스 (MFC) 라이브러리는 다중 스레드 응용 프로그램에 대 한 지원을 제공합니다. 이 항목에서는 프로세스 및 스레드 및 MFC의 접근 방식 다중 스레딩에 있습니다.  
@@ -41,26 +41,26 @@ Microsoft Foundation 클래스 (MFC) 라이브러리는 다중 스레드 응용 
   
 두 가지 유형의 스레드를 구분 하는 MFC: 사용자 인터페이스 스레드와 작업자 스레드입니다. 사용자 인터페이스 스레드 이벤트와 사용자에 의해 생성 된 메시지에 응답 하 고 사용자 입력을 처리 하려면 일반적으로 사용 됩니다. 작업자 스레드 등의 작업을 다시 계산을 사용자 입력 하지 않아도 되는 데 자주 사용 됩니다. 스레드; 유형의 Win32 API를 구분 하지 않습니다. 방금 스레드를 실행할 수 있도록 스레드의 시작 주소를 알고 있어야 합니다. MFC는 사용자 인터페이스에서 이벤트에 대 한 메시지 펌프를 제공 하 여 특별히 사용자 인터페이스 스레드를 처리 합니다. `CWinApp` 파생 되므로 사용자 인터페이스 스레드 개체의 예로 `CWinThread` 이벤트 및 사용자가 생성 하는 메시지를 처리 합니다.  
   
-둘 이상의 스레드가 동일한 개체에 액세스 해야 하는 상황에 특별히 주의 해야 합니다. [다중 스레딩: 프로그래밍 팁](../parallel/multithreading-programming-tips.md) 이러한 상황에서 발생할 수 있는 문제를 해결할 때 사용할 수 있는 기술에 설명 합니다. [다중 스레딩: 동기화 클래스 사용 방법](../parallel/multithreading-how-to-use-the-synchronization-classes.md) 단일 개체에 여러 스레드의 액세스를에서 동기화에 사용할 수 있는 클래스를 사용 하는 방법에 설명 합니다.  
+둘 이상의 스레드가 동일한 개체에 액세스 해야 하는 상황에 특별히 주의 해야 합니다. [다중 스레딩: 프로그래밍 팁](multithreading-programming-tips.md) 이러한 상황에서 발생할 수 있는 문제를 해결할 때 사용할 수 있는 기술에 설명 합니다. [다중 스레딩: 동기화 클래스 사용 방법](multithreading-how-to-use-the-synchronization-classes.md) 단일 개체에 여러 스레드의 액세스를에서 동기화에 사용할 수 있는 클래스를 사용 하는 방법에 설명 합니다.  
   
 다중 스레드 프로그래밍 작성 및 디버깅 이므로 기본적으로 복잡 하 고 힘든 작업 개체는에 액세스 하지 않도록 둘 이상의 스레드에서 한 번 확인 해야 합니다. 다중 스레딩 항목에서는 다중 스레드 프로그램에서 MFC를 사용 하는 방법만 다중 스레드 프로그래밍의 기본 사항을 대해서도 설명 하지 않습니다. Visual c + +에서에 포함 된 다중 스레드 MFC 샘플 추가 기능 및 MFC;에 포함 되지 않은 Win32 Api에 대 한 몇 가지 다중 스레드 설명 그러나 이러한는 에서만 시작 지점으로 합니다.  
   
-운영 체제 프로세스 및 스레드를 처리 하는 방법에 대 한 자세한 내용은 참조 하세요. [프로세스 및 스레드](http://msdn.microsoft.com/library/windows/desktop/ms684841) Windows SDK에 있습니다.  
+운영 체제 프로세스 및 스레드를 처리 하는 방법에 대 한 자세한 내용은 참조 하세요. [프로세스 및 스레드](/windows/desktop/ProcThread/processes-and-threads) Windows SDK에 있습니다.  
   
 MFC 다중 스레딩 지원에 대 한 자세한 내용은 다음 항목을 참조 하세요.  
   
-- [다중 스레딩: 사용자 인터페이스 스레드 만들기](../parallel/multithreading-creating-user-interface-threads.md)  
+- [다중 스레딩: 사용자 인터페이스 스레드 만들기](multithreading-creating-user-interface-threads.md)  
   
-- [다중 스레딩: 작업자 스레드 만들기](../parallel/multithreading-creating-worker-threads.md)  
+- [다중 스레딩: 작업자 스레드 만들기](multithreading-creating-worker-threads.md)  
   
-- [다중 스레딩: 동기화 클래스 사용 방법](../parallel/multithreading-how-to-use-the-synchronization-classes.md)  
+- [다중 스레딩: 동기화 클래스 사용 방법](multithreading-how-to-use-the-synchronization-classes.md)  
   
-- [다중 스레딩: 스레드 종료](../parallel/multithreading-terminating-threads.md)  
+- [다중 스레딩: 스레드 종료](multithreading-terminating-threads.md)  
   
-- [다중 스레딩: 프로그래밍 팁](../parallel/multithreading-programming-tips.md)  
+- [다중 스레딩: 프로그래밍 팁](multithreading-programming-tips.md)  
   
-- [다중 스레딩: 동기화 클래스 사용 시기](../parallel/multithreading-when-to-use-the-synchronization-classes.md)  
+- [다중 스레딩: 동기화 클래스 사용 시기](multithreading-when-to-use-the-synchronization-classes.md)  
   
 ## <a name="see-also"></a>참고 항목  
  
-[이전 코드를 위한 다중 스레드 지원(Visual C++)](../parallel/multithreading-support-for-older-code-visual-cpp.md)
+[이전 코드를 위한 다중 스레드 지원(Visual C++)](multithreading-support-for-older-code-visual-cpp.md)

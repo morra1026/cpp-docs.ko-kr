@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f60ba71a82bf09361e55f8c6b7cab82f49d47bd
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: d90a3f4b2cbacb3071dcd552fd88f6cb11bb5d43
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42571773"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131844"
 ---
 # <a name="constructors-c"></a>생성자 (C++)
 
@@ -598,7 +598,7 @@ public:
 
 ## <a name="inheriting_constructors"></a> 상속 생성자 (C + + 11)
 
-파생 클래스는 다음 예제와 같이 using 선언을 사용하여 직접 기본 클래스에서 생성자를 상속할 수 있습니다.
+파생된 클래스를 사용 하 여 직접 기본 클래스에서 생성자를 상속할 수를 **를 사용 하 여** 다음 예제에서와 같이 선언 합니다.
 
 ```cpp
 #include <iostream>
@@ -647,7 +647,7 @@ Derived d3 = d2 calls: Base(Base&)
 Derived d4 calls: Base()*/
 ```
 
-using 문은 파생 클래스의 생성자와 동일한 서명을 사용하는 생성자를 제외하고 모든 생성자를 기본 클래스에서 범위로 가져옵니다. 일반적으로 파생 클래스에서 새 데이터 멤버나 생성자를 선언하지 않는 경우 상속 생성자를 사용하는 것이 가장 좋습니다.
+**Visual Studio 2017 버전 15.7 이상의**: 합니다 **사용 하 여** 문에서 **/std: c + + 17** 모든 생성자와 동일한 서명을 사용 하는 것을 제외 하 고 기본 클래스에서 범위로 가져옵니다 모드 파생된 클래스의 생성자입니다. 일반적으로 파생 클래스에서 새 데이터 멤버나 생성자를 선언하지 않는 경우 상속 생성자를 사용하는 것이 가장 좋습니다. 참고 항목 [Visual Studio 2017 버전 15.7의에서 개선 사항](../cpp-conformance-improvements-2017.md#improvements_157)합니다.
 
 클래스 템플릿은 해당 형식이 기본 클래스를 지정하는 경우 형식 인수에서 모든 생성자를 상속할 수 있습니다.
 
