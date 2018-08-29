@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a71ed98e550d9db43a42289cfb26e3daaaf68027
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 43abbae434c21557a83463e1691e344123a940db
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42539528"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43132078"
 ---
 # <a name="thread-local-storage-tls"></a>TLS(스레드 로컬 저장소)
 TLS(스레드 로컬 저장소)는 지정된 다중 스레드 프로세스의 각 스레드에서 스레드별 데이터를 저장하는 위치를 할당하는 방법입니다. 동적으로 바인딩 (런타임) 스레드별 데이터 TLS API를 통해 지원 됩니다 ([TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc)합니다.  Win32 및 Visual C++ 컴파일러는 이제 기존 API 구현 외에도 정적으로 바인딩된(로드 타임) 스레드별 데이터도 지원합니다.  
@@ -117,4 +117,4 @@ __declspec( thread ) int tls_i = 1;
   
 ## <a name="see-also"></a>참고 항목  
  
-[C 및 Win32를 사용한 다중 스레딩](../parallel/multithreading-with-c-and-win32.md)   
+[C 및 Win32를 사용한 다중 스레딩](multithreading-with-c-and-win32.md)   

@@ -1,5 +1,5 @@
 ---
-title: '다중 스레딩: 작업자 스레드 만들기 | Microsoft Docs'
+title: '다중 스레딩: MFC에서 작업자 스레드를 만드는 | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,14 +20,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0fb5828947524c9cbeeabb47f9f6b174ac8115a8
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 90e0af6a1b11b114e56e6c1d87cb293ab83dd768
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590602"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131191"
 ---
-# <a name="multithreading-creating-worker-threads"></a>다중 스레딩: 작업자 스레드 만들기
+# <a name="multithreading-creating-worker-threads-in-mfc"></a>MFC에서 다중 스레딩: 작업자 스레드를 만들기
 작업자 스레드가 사용자 응용 프로그램을 사용 하 여 계속 되도록 기다릴 필요가 없습니다 백그라운드 작업 처리에 주로 사용 됩니다. 다시 계산 또는 백그라운드 인쇄 등의 작업은 작업자 스레드의 좋은 예입니다. 이 항목에서는 작업자 스레드를 만드는 데 필요한 단계를 자세히 설명 합니다. 다음과 같은 내용을 다룹니다.  
   
 - [스레드 시작 하기](#_core_starting_the_thread)  
@@ -64,11 +64,11 @@ ms.locfileid: "42590602"
 UINT MyControllingFunction( LPVOID pParam );  
 ```  
   
-매개 변수는 단일 값입니다. 함수가이 매개 변수에서 받는 값에는 스레드 개체가 만들어졌을 때 생성자에 전달 된 값이입니다. 제어 함수는 선택한 모든 방법에서이 값을 해석할 수 있습니다. 스칼라 값 또는 여러 매개 변수를 포함 하는 구조체에 대 한 포인터를 처리할 수 있습니다 하거나 무시할 수 있습니다. 매개 변수는 구조체를 가리키는 경우 호출자에서 스레드로 데이터를 전달 하 고 스레드에서 다시 호출자에 게 데이터를 전달 하는 뿐만 구조를 사용할 수 있습니다. 이러한 구조체를 사용 하 여 호출자에 게 데이터를 전달할 경우 스레드가 결과가 준비 되 면 호출자에 게 알림 해야 합니다. 작업자 스레드에서 호출자에 게 통신 하는 방법에 대 한 내용은 [다중 스레딩: 프로그래밍 팁](../parallel/multithreading-programming-tips.md)합니다.  
+매개 변수는 단일 값입니다. 함수가이 매개 변수에서 받는 값에는 스레드 개체가 만들어졌을 때 생성자에 전달 된 값이입니다. 제어 함수는 선택한 모든 방법에서이 값을 해석할 수 있습니다. 스칼라 값 또는 여러 매개 변수를 포함 하는 구조체에 대 한 포인터를 처리할 수 있습니다 하거나 무시할 수 있습니다. 매개 변수는 구조체를 가리키는 경우 호출자에서 스레드로 데이터를 전달 하 고 스레드에서 다시 호출자에 게 데이터를 전달 하는 뿐만 구조를 사용할 수 있습니다. 이러한 구조체를 사용 하 여 호출자에 게 데이터를 전달할 경우 스레드가 결과가 준비 되 면 호출자에 게 알림 해야 합니다. 작업자 스레드에서 호출자에 게 통신 하는 방법에 대 한 내용은 [다중 스레딩: 프로그래밍 팁](multithreading-programming-tips.md)합니다.  
   
-함수 종료 되 면 종료 이유를 나타내는 UINT 값을 반환 해야 합니다. 일반적으로이 종료 코드는 다양 한 유형의 오류를 나타내는 다른 값을 사용 하 여 성공을 나타내기 위해 0. 이것은 종속 구현 합니다. 일부 스레드는 개체의 사용 횟수를 유지 관리 하 고 사용 하 여 해당 개체의 현재 수를 반환할 수 있습니다. 응용 프로그램에서이 값을 검색 하는 방법을 참조 하세요 [다중 스레딩: 스레드 종료](../parallel/multithreading-terminating-threads.md)합니다.  
+함수 종료 되 면 종료 이유를 나타내는 UINT 값을 반환 해야 합니다. 일반적으로이 종료 코드는 다양 한 유형의 오류를 나타내는 다른 값을 사용 하 여 성공을 나타내기 위해 0. 이것은 종속 구현 합니다. 일부 스레드는 개체의 사용 횟수를 유지 관리 하 고 사용 하 여 해당 개체의 현재 수를 반환할 수 있습니다. 응용 프로그램에서이 값을 검색 하는 방법을 참조 하세요 [다중 스레딩: 스레드 종료](multithreading-terminating-threads.md)합니다.  
   
-MFC 라이브러리를 사용 하 여 작성 된 다중 스레드 프로그램에서 수행할 수 있는 몇 가지 제한이 있습니다. 이러한 제한 및 기타 팁 스레드를 사용 하는 방법에 대 한 설명을 보려면 [다중 스레딩: 프로그래밍 팁](../parallel/multithreading-programming-tips.md)합니다.  
+MFC 라이브러리를 사용 하 여 작성 된 다중 스레드 프로그램에서 수행할 수 있는 몇 가지 제한이 있습니다. 이러한 제한 및 기타 팁 스레드를 사용 하는 방법에 대 한 설명을 보려면 [다중 스레딩: 프로그래밍 팁](multithreading-programming-tips.md)합니다.  
   
 ##  <a name="_core_controlling_function_example"></a> 제어 함수 예제  
  
@@ -101,8 +101,8 @@ AfxBeginThread(MyThreadProc, pNewObject);
   
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보  
   
-- [다중 스레딩: 사용자 인터페이스 스레드 만들기](../parallel/multithreading-creating-user-interface-threads.md)  
+- [다중 스레딩: 사용자 인터페이스 스레드 만들기](multithreading-creating-user-interface-threads.md)  
   
 ## <a name="see-also"></a>참고 항목  
  
-[C++ 및 MFC에서 다중 스레딩](../parallel/multithreading-with-cpp-and-mfc.md)
+[C++ 및 MFC에서 다중 스레딩](multithreading-with-cpp-and-mfc.md)

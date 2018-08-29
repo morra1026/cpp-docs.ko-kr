@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf48881b3baeb7dc5ab48483ae9b075a9c048a38
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 0698dbcb27e471218c39517676654156634aa022
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883569"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131388"
 ---
 # <a name="date-and-time-systemtime-support"></a>날짜 및 시간: SYSTEMTIME 지원
 합니다 [CTime](../atl-mfc-shared/reference/ctime-class.md) 클래스에는 Win32에서 시스템 및 파일 시간을 허용 하는 생성자가 있습니다. 이러한 용도로 `CTime` 개체를 사용하는 경우 이 문서에서 설명하는 대로 해당 초기화를 적절하게 수정해야 합니다.  
@@ -52,8 +52,6 @@ ms.locfileid: "37883569"
 -   [일반 날짜 및 시간 프로그래밍 MFC의](../atl-mfc-shared/date-and-time.md)  
   
 -   [날짜 및 시간 프로그래밍 자동화 지원](../atl-mfc-shared/date-and-time-automation-support.md)  
-  
--   [날짜 및 시간 프로그래밍을 위한 범용 클래스](../atl-mfc-shared/date-and-time-general-purpose-classes.md)  
   
 ## <a name="see-also"></a>참고 항목  
  [날짜 및 시간](../atl-mfc-shared/date-and-time.md)

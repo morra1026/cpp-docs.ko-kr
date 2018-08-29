@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a74c6c7c2ee7aab175d7e136e5cf02a8d9f8bfc
-ms.sourcegitcommit: bad2441d1930275ff506d44759d283d94cccd1c0
+ms.openlocfilehash: ec3509b71d78221c3e15607d34f674fc38d9f635
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39375879"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43130991"
 ---
 # <a name="qspectre"></a>/Qspectre
 
@@ -32,7 +32,7 @@ ms.locfileid: "39375879"
 
 ## <a name="remarks"></a>설명
 
-합니다 **/Qspectre** 옵션을 사용 하면 특정 완화 하기 위해 명령을 삽입 [스펙터 보안 취약점으로 인 한](https://spectreattack.com/spectre.pdf)합니다. 호출에 이러한 취약성 *투기적 실행 사이드 채널 공격*많은 운영 체제 및 Intel, AMD 프로세서를 포함 하 여 최신 프로세서에 영향을 줄 고 ARM입니다.
+합니다 **/Qspectre** 옵션은 이상 Visual Studio 2017 버전 15.7에서에서 사용할 수 있습니다. 컴파일러가 특정 완화 하는 지침을 삽입할 [스펙터 보안 취약점으로 인 한](https://spectreattack.com/spectre.pdf)합니다. 호출에 이러한 취약성 *투기적 실행 사이드 채널 공격*많은 운영 체제 및 Intel, AMD 프로세서를 포함 하 여 최신 프로세서에 영향을 줄 고 ARM입니다.
 
 합니다 **/Qspectre** 옵션은 기본적으로 해제 되어 있습니다.
 
