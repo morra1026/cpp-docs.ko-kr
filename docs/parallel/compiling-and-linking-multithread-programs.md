@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5df81fa3d47005fc80bdb3b1c78cba050775cda6
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 4ab667e372c8118a83b7a93444abbfbc5c19b6e0
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42539869"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131520"
 ---
 # <a name="compiling-and-linking-multithread-programs"></a>다중 스레드 프로그램 컴파일 및 링크
-Bounce.c 프로그램에 도입 되어 [샘플 다중 스레드 C 프로그램](../parallel/sample-multithread-c-program.md)합니다.  
+Bounce.c 프로그램에 도입 되어 [샘플 다중 스레드 C 프로그램](sample-multithread-c-program.md)합니다.  
   
 프로그램을 컴파일되지 기본적으로 다중 스레드입니다.  
   
@@ -54,4 +54,4 @@ Bounce.c 프로그램에 도입 되어 [샘플 다중 스레드 C 프로그램](
   
 ## <a name="see-also"></a>참고 항목
 
-[C 및 Win32를 사용한 다중 스레딩](../parallel/multithreading-with-c-and-win32.md)
+[C 및 Win32를 사용한 다중 스레딩](multithreading-with-c-and-win32.md)

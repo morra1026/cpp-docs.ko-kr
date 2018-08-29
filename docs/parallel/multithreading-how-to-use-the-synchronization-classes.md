@@ -1,7 +1,7 @@
 ---
-title: '다중 스레딩: 동기화 클래스 사용 방법 | Microsoft Docs'
+title: '다중 스레딩: MFC 동기화 클래스 사용 방법 | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-parallel
 ms.topic: conceptual
@@ -23,14 +23,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cec2f873f1fc46ebac2e0f1714c8f46ebc10eac4
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e36f63f74a0edc1f6cbcf28b85adceed954cce3d
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597891"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131264"
 ---
-# <a name="multithreading-how-to-use-the-synchronization-classes"></a>다중 스레딩: 동기화 클래스 사용 방법
+# <a name="multithreading-how-to-use-the-mfc-synchronization-classes"></a>다중 스레딩: MFC 동기화 클래스 사용 방법
 다중 스레드 응용 프로그램을 작성할 때 일반적인 문제는 스레드 간에 리소스 액세스를 동기화 합니다. 두 개 이상 있는 스레드가 동시에 액세스 동일한 데이터를 원치 않는 및 예기치 않은 결과가 발생할 수 있습니다. 예를 들어, 하나의 스레드를 업데이트할 수 있습니다 구조체의 내용을 다른 스레드가 동일한 구조체의 내용을 읽는 동안. 이 알 수 없는 데이터 읽기 스레드에 받을: 이전 데이터를 새로 작성된 된 데이터 또는 둘 모두 수 있습니다. MFC는 다양 한 동기화 및이 문제를 해결 하기 위해 동기화 액세스 클래스를 제공 합니다. 이 항목에서는 사용할 수 있는 클래스 및 클래스를 만드는 스레드 안전 일반적인 다중 스레드 응용 프로그램에서 사용 하는 방법을 설명 합니다.  
   
 일반적인 다중 스레드 응용 프로그램에 스레드 간에 공유 되는 리소스를 나타내는 클래스입니다. 올바르게 설계 된 완벽 하 게 스레드로부터 안전한 클래스를 모든 동기화 함수를 호출할 필요가 없습니다. 모든 작업은 손상 가져올 수 있습니다 하는 방법에 대 한 하지는 클래스를 효율적으로 사용 하는 방법에 집중할 수 있도록 클래스를 내부적으로 처리 됩니다. 완전 한 스레드 안전 클래스 만들기에 대 한 효율적인 방법은 리소스 클래스에는 동기화 클래스를 병합 하는 것입니다. 동기화 클래스는 공유 클래스로 병합 프로세스는 매우 간단 합니다.  
@@ -63,8 +63,8 @@ singleLock.Unlock();
   
 이 방식의 단점은 클래스 되도록 동일한 클래스 보다 약간 느리지만 추가 동기화 개체가 없는 경우 또한 둘 이상의 스레드가 개체를 삭제할 수 있습니다 수 있으면 병합된 방법이 될 수 있습니다 항상 작동 하지. 이 경우 별도 동기화 개체를 유지 하는 것이 좋습니다.  
   
-다양 한 상황에서 사용 하 여 동기화 클래스를 결정 하는 방법에 대 한 내용은 [다중 스레딩: 동기화 클래스를 사용 하는 경우](../parallel/multithreading-when-to-use-the-synchronization-classes.md)합니다. 동기화에 대 한 자세한 내용은 참조 하세요. [동기화](http://msdn.microsoft.com/library/windows/desktop/ms686353) Windows SDK에 있습니다. MFC에서 다중 스레드 지원에 대 한 자세한 내용은 참조 하세요. [c + + 및 MFC 다중 스레딩](../parallel/multithreading-with-cpp-and-mfc.md)합니다.  
+다양 한 상황에서 사용 하 여 동기화 클래스를 결정 하는 방법에 대 한 내용은 [다중 스레딩: 동기화 클래스를 사용 하는 경우](multithreading-when-to-use-the-synchronization-classes.md)합니다. 동기화에 대 한 자세한 내용은 참조 하세요. [동기화](/windows/desktop/Sync/synchronization) Windows SDK에 있습니다. MFC에서 다중 스레드 지원에 대 한 자세한 내용은 참조 하세요. [c + + 및 MFC 다중 스레딩](multithreading-with-cpp-and-mfc.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  
-[C++ 및 MFC에서 다중 스레딩](../parallel/multithreading-with-cpp-and-mfc.md)
+[C++ 및 MFC에서 다중 스레딩](multithreading-with-cpp-and-mfc.md)

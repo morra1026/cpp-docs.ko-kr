@@ -17,15 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49c5e624b437f39270fb880fe526d55e7ed83e5d
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 97a69c52adb5094c7c7841a93b73b1a83cd786d9
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42541477"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131064"
 ---
 # <a name="avoiding-problem-areas-with-multithread-programs"></a>다중 스레드 프로그램으로 문제 영역 방지
-만들기, 링크 또는 다중 스레드 C 프로그램을 실행할 때 발생할 수 있는 몇 가지 문제가 있습니다. 다음 표에 일반적인 문제 설명 되어 있습니다. (MFC의 관점에서 유사한 내용은 참조 하세요. [다중 스레딩: 프로그래밍 팁](../parallel/multithreading-programming-tips.md).)  
+만들기, 링크 또는 다중 스레드 C 프로그램을 실행할 때 발생할 수 있는 몇 가지 문제가 있습니다. 다음 표에 일반적인 문제 설명 되어 있습니다. (MFC의 관점에서 유사한 내용은 참조 하세요. [다중 스레딩: 프로그래밍 팁](multithreading-programming-tips.md).)  
   
 |문제점|가능한 원인|  
 |-------------|--------------------|  
@@ -34,4 +34,4 @@ ms.locfileid: "42541477"
   
 ## <a name="see-also"></a>참고 항목  
 
-[C 및 Win32를 사용한 다중 스레딩](../parallel/multithreading-with-c-and-win32.md)
+[C 및 Win32를 사용한 다중 스레딩](multithreading-with-c-and-win32.md)
