@@ -1,5 +1,5 @@
 ---
-title: -진단 (컴파일러 진단 옵션) | Microsoft Docs
+title: -diagnostics (컴파일러 진단 옵션) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/11/2016
 ms.technology:
@@ -19,16 +19,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d874e26a922a7f9cce7223b574d525d37733598
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3f1dce7c7c48e7c7c94da95ca187e0388b3f5d4d
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371774"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131643"
 ---
 # <a name="diagnostics-compiler-diagnostic-options"></a>/diagnostics (컴파일러 진단 옵션)  
   
-사용 하 여는 **/diagnostics** 컴파일러 옵션을 한 위치 정보를 오류 및 경고 표시를 지정 합니다.  
+사용 된 **/diagnostics** 컴파일러 오류 및 경고 위치 정보를 표시할을 지정 하는 옵션입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,25 +37,28 @@ ms.locfileid: "32371774"
 ```  
 
 ## <a name="remarks"></a>설명  
-**/diagnostics** 컴파일러 옵션의 오류 및 경고 정보 표시를 제어 합니다.  
+
+이 옵션은 Visual Studio 2017 이상에 지원 됩니다.
+
+합니다 **/diagnostics** 컴파일러 옵션의 오류 및 경고 정보 표시를 제어 합니다.  
   
-**/diagnostics:classic** 옵션은 기본적으로만 문제가 발견 된 줄 번호를 보고 합니다.  
+합니다 **/diagnostics:classic** 옵션이 문제가 발견 된 줄 번호를 보고 하는 기본 옵션입니다.  
   
-**/diagnostics:column** 옵션은 또한 문제가 발견 된 열을 포함 합니다. 이 특정 언어 구문이 포함 되었거나 문제를 일으키는 문자를 확인할 수 있습니다.  
+합니다 **/diagnostics:column** 옵션 문제가 발견 된 열에도 포함 되어 있습니다. 이 문제를 발생 시키는 문자를 특정 언어 구문을 식별할 수 있습니다.  
   
-**/diagnostics:caret** 옵션에 있는 문제를 찾았으며 캐럿 (^) 위치에 있는 코드 줄에서 문제가 검색 된 배치 열이 포함 되어 있습니다.  
+합니다 **/diagnostics:caret** 옵션 문제를 찾을 수 및 캐럿 (^) 코드 줄에서 문제가 발견 된 위치에서 배치 위치 열을 포함 합니다.  
   
-경우에 따라를 컴파일러에 문제가 발생 한 위치를 검색 하지 않습니다. 예를 들어, 누락 된 세미콜론, 예기치 않은 기호 있었을 때까지 검색 되지 않습니다. 열 보고 되 하 고 컴파일러는 값이 잘못 되었습니다,이 프로그램을 수정 해야 하는 발견 했습니다 캐럿 배치 됩니다.  
+일부 경우에서, 컴파일러는 문제가 발생 한 위치를 검색 하지 않습니다. 예를 들어, 다른, 예기치 않은 기호 발생 될 때까지 누락 된 세미콜론 검색 되지 않을 수 있습니다. 열을 보고 하 고 컴파일러는 잘못 된 사항,이 프로그램을 수정 해야 하는 검색 된 캐럿 배치 됩니다.  
   
-**/diagnostics** 옵션은 Visual Studio 2017부터 사용할 수 있습니다.  
+합니다 **/diagnostics** 옵션은 Visual Studio 2017부터 사용할 수 있습니다.  
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면  
   
-1. 프로젝트의를 열고 **속성 페이지** 대화 상자.   
+1. 프로젝트를 엽니다 **속성 페이지** 대화 상자.   
   
-2. **구성 속성**, 확장 하 고는 **C/c + +** 폴더를 선택 하 고는 **일반** 속성 페이지.  
+2. 아래 **구성 속성**를 확장 합니다 **C/c + +** 폴더 선택한를 **일반** 속성 페이지.  
   
-3. 드롭다운 컨트롤에서 사용 하 여는 **진단 형식** 필드를 한 진단 선택 옵션을 표시 합니다. 선택 **확인** 또는 **적용** 변경 내용을 저장 합니다.  
+3. 드롭다운 컨트롤을 사용 합니다 **진단 형식** 필드를 진단을 선택 옵션이 표시 됩니다. 선택 **확인** 하거나 **적용** 변경 내용을 저장 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [컴파일러 옵션](../../build/reference/compiler-options.md)   

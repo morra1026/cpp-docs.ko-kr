@@ -9,31 +9,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fc79d438b61fce90faf1f8548671ec882c5099a
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 6d3a3ec1fec213cc6fa1bb5dc0ebfdadbe7d22b2
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34569697"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131722"
 ---
-# <a name="whats-new-for-visual-c-in-includevsdev15mdmiscincludesvsdev15mdmd"></a>[!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]의 Visual C++에 대한 새로운 기능
+# <a name="whats-new-for-visual-c-in-visual-studio-2017"></a>Visual Studio 2017의 Visual C++에 대한 새로운 기능
 
-[!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]에는 Visual C++ 환경에 대한 많은 업데이트와 수정이 포함되어 있습니다. 대부분 **사용자 의견 보내기** 아래의 [문제 보고](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) 및 [제안하기](https://visualstudio.uservoice.com/) 옵션을 통해 고객이 제출한 250개 이상의 버그와 보고된 문제를 해결했습니다. 버그를 알려 주셔서 감사합니다. 모든 Visual Studio의 새로운 기능에 대한 자세한 내용은 [[!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]의 새로운 기능](https://go.microsoft.com/fwlink/p/?linkid=834481)을 참조하세요.
+Visual Studio 2017에는 Visual C++ 환경에 대한 많은 업데이트와 수정이 포함되었습니다. 대부분 **사용자 의견 보내기** 아래의 [문제 보고](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) 및 [제안하기](https://visualstudio.uservoice.com/) 옵션을 통해 고객이 제출한 250개 이상의 버그와 보고된 문제를 해결했습니다. 버그를 알려 주셔서 감사합니다. 모든 Visual Studio의 새로운 기능에 대한 자세한 내용은 [Visual Studio 2017의 새로운 기능](https://go.microsoft.com/fwlink/p/?linkid=834481)을 참조하세요.
 
-<!--The compiler and tools version number in [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] is 14.10.24629. -->
+<!--The compiler and tools version number in Visual Studio 2017 is 14.10.24629. -->
 
 ## <a name="c-compiler"></a>C++ 컴파일러
 
 ### <a name="c-conformance-improvements"></a>C++ 규칙 향상
 
 이 릴리스에서는 C++ 컴파일러 및 표준 라이브러리를 C++11 및 C++14 기능에 대한 강화된 지원 기능과, C++17 표준에서 선보일 것으로 예상되는 특정 기능에 대한 임시 지원 기능으로 업데이트했습니다. 자세한 내용은 [Visual Studio 2017의 C++ 규칙 향상](cpp-conformance-improvements-2017.md)을 참조하세요.
-**Visual Studio 2017 버전 15.5**:  
 
-   컴파일러는 구조적 바인딩, `constexpr` 람다, `if constexpr`, 인라인 변수, fold 식 및 형식 시스템에 `noexcept` 추가 등 C++17에 새롭게 추가된 기능의 약 75%를 지원합니다. 이는 **/std:c++17** 옵션하에서 사용할 수 있습니다. 자세한 내용은 [Visual Studio 2017의 C++ 규칙 향상](cpp-conformance-improvements-2017.md)을 참조하세요.
+**Visual Studio 2017 버전 15.5**: 컴파일러는 구조적 바인딩, `constexpr` 람다, `if constexpr`, 인라인 변수, fold 식 및 형식 시스템에 `noexcept` 추가 등 C++17에 새롭게 추가된 기능의 약 75%를 지원합니다. 이는 **/std:c++17** 옵션에서 사용할 수 있습니다. 자세한 내용은 [Visual Studio 2017의 C++ 규칙 향상](cpp-conformance-improvements-2017.md)을 참조하세요.
 
-**Visual Studio 2017 버전 15.7**:  
-
-Visual Studio 버전 15.7의 MSVC 컴파일러 도구 집합은 이제 C++ 표준을 준수합니다. 자세한 내용은 [알림: MSVC의 C++ 표준 준수](https://blogs.msdn.microsoft.com/vcblog/2018/05/07/announcing-msvc-conforms-to-the-c-standard/) 및 [Visual C++ 언어 규칙](visual-cpp-language-conformance.md)을 참조하세요.
+**Visual Studio 2017 버전 15.7**: Visual Studio 버전 15.7의 MSVC 컴파일러 도구 집합은 이제 C++ 표준을 준수합니다. 자세한 내용은 [알림: MSVC의 C++ 표준 준수](https://blogs.msdn.microsoft.com/vcblog/2018/05/07/announcing-msvc-conforms-to-the-c-standard/) 및 [Visual C++ 언어 규칙](visual-cpp-language-conformance.md)을 참조하세요.
 
 ### <a name="new-compiler-options"></a>새로운 컴파일러 옵션
 
@@ -43,7 +40,7 @@ Visual Studio 버전 15.7의 MSVC 컴파일러 도구 집합은 이제 C++ 표�
 
 - [/debug:fastlink](build/reference/debug-generate-debug-info.md): 모든 디버그 정보를 PDB 파일에 복사하지 않음으로써 최대 30%까지 빠른 증분 연결 시간(Visual Studio 2015 대비)을 사용합니다. 대신, PDB 파일은 실행 파일을 만드는 데 사용된 개체 및 라이브러리 파일에 대한 디버그 정보를 가리킵니다. [Faster C++ build cycle in VS "15" with /Debug:fastlink](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-build-cycle-in-vs-15-with-debugfastlink/)(/Debug:fastlink를 사용하는 VS "15"의 더 빠른 C++ 빌드 주기) 및 [Recommendations to speed C++ builds in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2016/10/26/recommendations-to-speed-c-builds-in-visual-studio/)(Visual Studio에서 C++ 빌드 속도를 향상하기 위한 권장 사항)를 참조하세요.
 
-- [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]에서는 [/sdl](build/reference/sdl-enable-additional-security-checks.md)과 함께 [/await](build/reference/await-enable-coroutine-support.md)를 사용할 수 있습니다. 코루틴에서 [/RTC](build/reference/rtc-run-time-error-checks.md) 제한이 제거되었습니다.
+- Visual Studio 2017에서는 [/sdl](build/reference/sdl-enable-additional-security-checks.md)과 함께 [/await](build/reference/await-enable-coroutine-support.md)를 사용할 수 있습니다. 코루틴에서 [/RTC](build/reference/rtc-run-time-error-checks.md) 제한이 제거되었습니다.
 
    **Visual Studio 2017 버전 15.3**:  
 - [/std:c++14 및 /std:c++latest](build/reference/std-specify-language-standard-version.md): 이러한 컴파일러 옵션을 사용하면 프로젝트에서 특정 버전의 ISO C++ 프로그래밍 언어를 옵트인할 수 있습니다. **/std:c++latest** 옵션은 대부분의 새 초안 표준 기능을 보호합니다.
@@ -406,7 +403,7 @@ C++는 유니버설 Windows 앱 워크로드에 대한 선택적 구성 요소�
 
 ## <a name="clangc2-platform-toolset"></a>Clang/C2 플랫폼 도구 집합
 
-[!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]와 함께 제공되는 Clang/C2 도구 집합이 대규모 프로젝트를 빌드하는 데 중요한 **/bigobj** 스위치를 지원합니다. 또한 컴파일러의 프런트 엔드와 백 엔드에서 몇몇 중요한 버그 수정이 있었습니다.
+이제 Visual Studio 2017과 함께 제공되는 Clang/C2 도구 집합이 대규모 프로젝트를 빌드하는 데 중요한 **/bigobj** 스위치를 지원합니다. 또한 컴파일러의 프런트 엔드와 백 엔드에서 몇몇 중요한 버그 수정이 있었습니다.
 
 ## <a name="c-code-analysis"></a>C++ 코드 분석
 

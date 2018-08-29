@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 643347915e97f1c803047f91b72311c5642e6eef
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 5eadb13e71e65e07c807812ad00fc1989c3a19f9
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37879561"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43132209"
 ---
 # <a name="date-and-time"></a>날짜 및 시간
 MFC는 여러 가지 날짜 및 시간을 사용 하 여 작업을 지원합니다. 여기에는 다음이 포함됩니다.  
@@ -34,8 +34,6 @@ MFC는 여러 가지 날짜 및 시간을 사용 하 여 작업을 지원합니�
 -   [DATE 데이터 형식](../atl-mfc-shared/date-type.md)에 대한 자동화를 지원합니다. 날짜 지원 날짜, 시간 및 날짜/시간 값입니다. [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) 및 [COleDateTimeSpan](../atl-mfc-shared/reference/coledatetimespan-class.md)는 이 기능을 캡슐화하는 클래스입니다. 이 클래스들은 자동화 지원을 사용한 [COleVariant](../mfc/reference/colevariant-class.md) 클래스로 작업합니다.  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
-  
--   [날짜 및 시간: 범용 클래스](../atl-mfc-shared/date-and-time-general-purpose-classes.md)  
   
 -   [날짜 및 시간: SYSTEMTIME 지원](../atl-mfc-shared/date-and-time-systemtime-support.md)  
   

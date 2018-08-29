@@ -1,7 +1,7 @@
 ---
 title: Visual Studio의 Visual C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 1/02/2018
+ms.date: 08/22/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -17,21 +17,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b43f9ac9edb0d19af4002bb839f857ae71ad4a11
-ms.sourcegitcommit: 0bc67d40aa283be42f3e1c7190d6a5d9250ecb9b
+ms.openlocfilehash: b4d4005479c1808ba2d396dfe8807f8a415f9322
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34762053"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131778"
 ---
 # <a name="visual-c-in-visual-studio"></a>Visual Studio의 Visual C++
 
+> [!NOTE]  
+> 이 개발자 설명서는 Visual Studio 2015 및 Visual Studio 2017에 적용됩니다. 
+
+> 프로그램을 실행할 수 있도록 Visual C++ 재배포 가능 패키지를 찾고 있다면 [Microsoft 다운로드 센터](http://www.microsoft.com/en-us/download/)로 이동하여 검색 상자에 **Visual C++** 를 입력합니다.  
+  
+
 일반적으로 Visual C++ 또는 MSVC라고 줄여부르는 Microsoft Visual C++는 C++, C 및 어셈블리 언어 개발 도구 및 Windows에서 Visual Studio의 일부로 사용할 수 있는 라이브러리의 이름입니다. 이러한 도구 및 라이브러리를 통해 UWP(유니버설 Windows 플랫폼) 앱, 네이티브 Windows 데스크톱 및 서버 응용 프로그램, Windows, Linux, Android 및 iOS에서 실행되는 플랫폼 간 라이브러리 및 앱뿐만 아니라 .NET Framework를 사용하는 관리 앱 및 라이브러리를 만들 수 있습니다. Visual C++를 사용하여 간단한 콘솔 앱 항목부터 Windows 데스크톱용 가장 정교하고 복잡한 앱, 장치 드라이버 및 운영 체제 구성 요소부터 모바일 장치용 플랫폼 간 게임, 가장 작은 IoT 장치부터 Azure 클라우드의 다중 서버 성능 컴퓨팅 기능을 작성할 수 있습니다.
 
-## <a name="general-information-about-visual-c"></a>Visual C++에 대한 일반 정보
+## <a name="whats-new-and-conformance-history"></a>새로운 기능 및 규칙 기록
 
-[Visual C++의 새로운 기능](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
-Visual C++의 새로운 기능을 알아봅니다.
+[Visual Studio 2017의 새로운 C++ 기능](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
+Visual Studio 2017의 새로운 기능을 알아봅니다.
+
+[Visual Studio 2003 - 2015의 새로운 C++ 기능](porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
+2003 - 2015에서 Visual Studio의 각 버전용 C++의 새로운 기능에 대해 알아봅니다.
 
 [Visual Studio 2017의 C++ 규칙 향상](cpp-conformance-improvements-2017.md)<br/>
 Visual Studio 2017의 C++ 규칙 향상에 대해 알아봅니다.
@@ -42,20 +51,13 @@ MSVC C++ 컴파일러의 기능별 규칙 상태 목록입니다.
 [Visual C++ 변경 기록 2003 - 2015](porting/visual-cpp-change-history-2003-2015.md)<br/>
 이전 버전의 주요 변경 내용에 대해 알아봅니다.
 
-[C++의 진화](cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
-코드를 빠르고 안전하게 작성하고 C 스타일 프로그래밍에서 흔히 저지르는 많은 실수를 피할 수 있도록 C++11 및 C++14를 기반으로 C++ 프로그래밍 방법에 대해 자세히 알아봅니다.
+## <a name="install-visual-studio-and-upgrade-from-earlier-versions"></a>Visual Studio 설치 및 이전 버전에서 업그레이드
 
-[Visual C++ 도구 집합의 문제를 보고하는 방법](how-to-report-a-problem-with-the-visual-cpp-toolset.md)<br/>
-Visual C++ 도구 집합(컴파일러, 링커 및 기타 도구)과 대조하여 효과적인 오류 보고서를 만드는 방법과 보고서를 전송하는 방법을 알아봅니다.
+[Visual Studio에서 C++ 지원 설치](build/vscpp-step-0-installation.md)<br/>
+Visual Studio 2015 또는 Visual Studio 2017을 다운로드하고 Visual C++ 도구 집합을 설치합니다.
 
 [Visual C++ 포팅 및 업그레이드 가이드](porting/visual-cpp-porting-and-upgrading-guide.md)<br/>
-C++ 코드를 Windows 10 및 유니버설 Windows 플랫폼으로 포팅하는 작업을 포함하여 코드를 포팅하고 프로젝트를 Visual Studio 2017로 업그레이드하기 위한 지침입니다.
-
-[Visual C++ 팀 블로그](http://blogs.msdn.com/b/vcblog/)<br/>
-새로운 기능과 [!INCLUDE[vcprvc](build/includes/vcprvc_md.md)]의 개발자가 제공하는 최신 정보를 더 자세히 알아봅니다.
-
-[Visual Studio 다운로드](http://go.microsoft.com/fwlink/p/?linkid=235233)<br/>
-Visual Studio 다운로드
+C++ 코드를 Windows 10 및 유니버설 Windows 플랫폼으로 포팅하는 작업을 포함하여 Visual Studio 2015 또는 Visual Studio 2017로 코드를 포팅하고 프로젝트를 업그레이드하기 위한 지침입니다.
 
 [Visual Studio 버전의 Visual C++ 도구 및 기능](ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)<br/>
 여러 버전의 Visual Studio에 대해 알아봅니다.
@@ -63,19 +65,38 @@ Visual Studio 다운로드
 [지원되는 플랫폼](supported-platforms-visual-cpp.md)<br/>
 지원되는 플랫폼에 대해 알아봅니다.
 
+## <a name="learn-c"></a>C++ 알아보기
+
+[C++의 진화](cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+코드를 빠르고 안전하게 작성하고 C 스타일 프로그래밍에서 흔히 저지르는 많은 실수를 피할 수 있도록 C++11 및 C++14를 기반으로 C++ 프로그래밍 방법에 대해 자세히 알아봅니다.
+
+[표준 C++](http://isocpp.org/)<br/>
+C++에 대해 알아보기, 최신 C++ 개요 살펴보기, 서적, 문서, 토론 및 이벤트 링크 찾기
+
+[Visual C++ 살펴보기](build/vscpp-step-1-create.md)<br/>
+C++를 배우기 시작합니다.
+
 [Visual C++ 샘플](visual-cpp-samples.md)<br/>
 샘플에 대한 내용입니다.
 
-[Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/)<br/>
-Visual Studio에 대한 도움말을 보고 버그를 제출하고 제안을 하는 방법에 대해 알아봅니다.
+## <a name="c-development-tools"></a>C++ 개발 도구
 
-## <a name="writing-applications-in-c"></a>C++에서 응용 프로그램 작성
+[IDE 및 개발 도구](ide/ide-and-tools-for-visual-cpp-development.md)
+Visual Studio IDE를 사용하여 프로젝트 만들기, 소스 코드 파일 사용, 라이브러리에 연결, 컴파일, 디버그, 단위 테스트 만들기, 정적 분석 수행, 배포 등의 작업을 수행하는 방법
+
+[컴파일러 및 빌드 도구](build/building-c-cpp-programs.md) Microsoft C++ 컴파일러 및 링커 옵션, 오류 메시지, 명령줄 예제, 다양한 플랫폼 구성 및 참조 항목 빌드 
+
+## <a name="write-applications-in-c"></a>C++에서 응용 프로그램 작성
 
 [유니버설 Windows 앱](windows/universal-windows-apps-cpp.md)<br/>
 Windows 개발자 센터의 가이드 및 참조 내용을 알아봅니다. UWP 앱 개발에 대한 자세한 내용은 [유니버설 Windows 플랫폼 소개](/windows/uwp/get-started/universal-application-platform-guide) 및 [C++을 사용하여 첫 번째 UWP 앱 만들기](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)를 참조하세요.
 
 [데스크톱 응용 프로그램(C++)](windows/desktop-applications-visual-cpp.md)<br/>
-메시지 루프 및 호출이 있는 데스크톱 응용 프로그램을 만드는 방법에 대해 알아봅니다.
+Windows용 기존 네이티브 C++ 데스크톱 응용 프로그램을 만드는 방법을 알아봅니다.
+
+[C++/CLI를 사용하여 .NET 프로그래밍](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md) C# 또는 Visual Basic과 같은 언어로 작성된 네이티브 C++ 및 .NET 프로그램 간의 상호 운용성을 활성화하는 DLL을 만드는 방법을 알아봅니다.
+
+[Linux 프로그래밍](linux/index.md) Visual Studio IDE를 사용하여 GCC로 컴파일을 위해 원격 Linux 머신으로 코딩 및 배포합니다.
 
 [Visual C++의 DLL](build/dlls-in-visual-cpp.md)<br/>
 Win32, ATL 및 MFC를 사용하여 Windows 데스크톱 DLL을 만드는 방법을 설명하고 DLL을 컴파일 및 등록하는 방법에 대해 알아봅니다.
@@ -94,10 +115,6 @@ ODBC 및 기타 데이터베이스 액세스 기술을 사용하여 데이터베
 
 [텍스트 및 문자열](text/text-and-strings-in-visual-cpp.md)<br/>
 현지 및 국제적 개발을 위한 다양한 텍스트 및 문자열 형식과 인코딩을 사용하는 방법을 알아봅니다.
-
-## <a name="c-development-tools"></a>C++ 개발 도구
-
-프로젝트 만들기, 소스 코드 파일 사용, 라이브러리에 연결, 컴파일, 디버그, 프로파일링, 배포 등을 수행하는 방법을 알아보려면 [IDE 및 개발 도구](ide/ide-and-tools-for-visual-cpp-development.md)를 참조하세요.
 
 ## <a name="c-language-reference"></a>C++ 언어 참조
 
@@ -133,19 +150,20 @@ UWP(유니버설 Windows 플랫폼) 앱 및 구성 요소
 [C++/CLI를 사용한 .NET 프로그래밍](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
 CLR(공용 언어 런타임)에 대한 프로그래밍입니다.
 
-[STL/CLR](dotnet/stl-clr-library-reference.md) 설명서 및 [C++ Support Library](dotnet/cpp-support-library.md)를 참조하세요.
+## <a name="third-party-open-source-c-libraries"></a>타사 오픈 소스 C++ 라이브러리
 
-## <a name="other-c-libraries"></a>기타 C++ 라이브러리
+플랫폼 간 **vcpkg** 명령줄 도구는 900개가 넘는 C++ 오픈 소스 라이브러리를 검색 및 설치하는 작업을 상당히 간소화합니다. [vcpkg: Windows용 C++ 패키지 관리자](vcpkg.md)를 참조하세요.
 
-vcpkg 명령줄 도구를 사용하여 600개가 넘는 C++ 오픈 소스 라이브러리를 검색 및 설치하는 작업을 상당히 간소화할 수 있습니다. [vcpkg: Windows용 C++ 패키지 관리자](vcpkg.md)를 참조하세요.
+## <a name="feedback-and-community"></a>사용자 의견 및 커뮤니티
 
-## <a name="more-resources"></a>추가 리소스
+[Visual C++ 도구 집합의 문제를 보고하는 방법](how-to-report-a-problem-with-the-visual-cpp-toolset.md)<br/>
+Visual C++ 도구 집합(컴파일러, 링커 및 기타 도구)과 대조하여 효과적인 오류 보고서를 만드는 방법과 보고서를 전송하는 방법을 알아봅니다.
 
-[표준 C++](http://isocpp.org/)<br/>
-C++에 대해 알아보기, 최신 C++ 개요 살펴보기, 서적, 문서, 토론 및 이벤트 링크 찾기
+[Visual C++ 팀 블로그](http://blogs.msdn.com/b/vcblog/)<br/>
+새로운 기능과 [!INCLUDE[vcprvc](build/includes/vcprvc_md.md)]의 개발자가 제공하는 최신 정보를 더 자세히 알아봅니다.
 
-[Visual C++ 살펴보기](build/vscpp-step-1-create.md)<br/>
-C++를 배우기 시작합니다.
+[Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/)<br/>
+Visual Studio에 대한 도움말을 보고 버그를 제출하고 제안을 하는 방법에 대해 알아봅니다.
 
 ## <a name="see-also"></a>참고 항목
 

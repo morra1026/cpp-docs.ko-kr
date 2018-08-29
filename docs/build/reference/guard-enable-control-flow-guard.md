@@ -1,5 +1,5 @@
 ---
-title: -가드 (사용 제어 흐름 보호) | Microsoft Docs
+title: -guard (제어 흐름 보호 사용) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5c60ff444189e9e6b7919b43649b75722ee7249
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6c65bafc14f5ef29db89ddc0a4647193231f7e19
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377406"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131672"
 ---
 # <a name="guard-enable-control-flow-guard"></a>/guard(제어 흐름 보호 사용)
 제어 흐름 보호 보안 검사의 컴파일러 생성을 사용하도록 설정합니다.  
@@ -32,7 +32,9 @@ ms.locfileid: "32377406"
 ```  
   
 ## <a name="remarks"></a>설명  
- **/guard:cf** 옵션은 컴파일러가 컴파일 시간에 간접 호출 대상에 대한 제어 흐름을 분석한 다음 런타임에 대상을 확인하는 코드를 삽입하게 합니다. 기본적으로, **/guard:cf** 는 해제되어 있으며, 명시적으로 설정해야 합니다. 이 옵션을 명시적으로 사용하지 않도록 설정하려면 **/guard:cf-** 를 사용합니다.  
+ **/guard:cf** 옵션은 컴파일러가 컴파일 시간에 간접 호출 대상에 대한 제어 흐름을 분석한 다음 런타임에 대상을 확인하는 코드를 삽입하게 합니다. 기본적으로, **/guard:cf** 는 해제되어 있으며, 명시적으로 설정해야 합니다. 이 옵션을 명시적으로 사용하지 않도록 설정하려면 **/guard:cf-** 를 사용합니다. 
+
+**Visual Studio 2017 이상**:이 옵션에 대 한 보호를 추가 **전환** 문을 생성 하는 테이블을 이동 합니다.
   
  **/guard:cf** CFG(제어 흐름 보호) 옵션이 지정된 경우 컴파일러 및 링커는 추가 런타임 보안 검사를 삽입하여 코드를 손상시키려는 시도를 감지합니다. 컴파일 및 연결 중에 코드의 모든 간접 호출이 분석되어 코드를 올바르게 실행할 경우 코드가 도달할 수 있는 모든 위치를 찾습니다. 이 정보는 이진 파일의 헤더에 추가 구조로 저장됩니다. 또한 컴파일러는 코드의 모든 간접 호출 앞에 대상이 검증된 위치 중 하나인지 확인하는 검사를 삽입합니다. CFG 인식 운영 체제에서 런타임에 검사가 실패하면 운영 체제에서 프로그램을 닫습니다.  
   
@@ -46,7 +48,7 @@ ms.locfileid: "32377406"
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면  
   
-1.  프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)합니다.  
+1.  프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.  
   
 2.  **구성 속성**, **C/C++**, **코드 생성**을 차례로 선택합니다.  
   

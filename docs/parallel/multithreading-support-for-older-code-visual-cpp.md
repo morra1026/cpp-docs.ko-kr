@@ -1,7 +1,7 @@
 ---
 title: 이전 코드 (Visual c + +)를 위한 다중 스레드 지원 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-parallel
 ms.topic: conceptual
@@ -20,25 +20,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c911ff2f0dcd43a6f07144f893b91f3a97c6708b
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 7b1b301186036460acc07a526267503da8b97678
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42538337"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43132104"
 ---
 # <a name="multithreading-support-for-older-code-visual-c"></a>이전 코드를 위한 다중 스레드 지원(Visual C++)
 Visual c + +를 사용 하면 여러 동시 실행 스레드를 동시에 실행할 수 있습니다. 사용 하 여 다중 스레딩, 백그라운드 작업 분리 시키고 동시 입력 스트림을 관리, 사용자 인터페이스 등을 관리할 수 있습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  
-[C 및 Win32를 사용한 다중 스레딩](../parallel/multithreading-with-c-and-win32.md)  
+[C 및 Win32를 사용한 다중 스레딩](multithreading-with-c-and-win32.md)  
 Microsoft Windows를 사용 하 여 다중 스레드 응용 프로그램 만들기에 대 한 지원 제공  
   
-[C++ 및 MFC에서 다중 스레딩](../parallel/multithreading-with-cpp-and-mfc.md)  
+[C++ 및 MFC에서 다중 스레딩](multithreading-with-cpp-and-mfc.md)  
 프로세스 및 스레드 이란 무엇 이며 MFC에 접근 하는 방법에 대해 설명 합니다. 다중 스레딩 됩니다.  
   
-[다중 스레딩 및 로캘](../parallel/multithreading-and-locales.md)  
+[다중 스레딩 및 로캘](multithreading-and-locales.md)  
 C 런타임 라이브러리와 다중 스레드 응용 프로그램에서 c + + 표준 라이브러리의 로캘 기능을 사용 하는 경우 발생 하는 문제를 설명 합니다.  
   
 ## <a name="related-sections"></a>관련 단원  

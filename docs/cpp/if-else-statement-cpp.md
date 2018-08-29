@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15748249a39813edc4446fa25511d20361b0706c
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: e4aea3a0125e2712203eb668197d42bd850aef5e
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39405112"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131893"
 ---
 # <a name="if-else-statement-c"></a>if-else 문 (C++)
 조건부 분기를 제어 합니다. 문에서 *경우 블록* 실행 된 경우에 합니다 *if 식은* 0이 아닌 값 (또는 TRUE)으로 계산 되. 경우 값 *식* 는 0이 아니면 *문 1* 블록에 있는 다른 문이 실행 되 고 다른-블록에 있는 경우를 건너뜁니다. 경우 값 *식* 가 0 이면 다음 경우 블록을 생략 되 고 다른-블록이 있으면 실행 됩니다. 0이 아닌 값으로 계산 되는 식은
@@ -72,7 +72,7 @@ else  // optional
 } 
 ```  
 
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
 
 ```cpp  
 // if_else_statement.cpp  
@@ -119,7 +119,8 @@ int main()
     }
 }
 ```  
-## <a name="if-statement-with-an-initializer"></a>경우는 이니셜라이저를 사용 하 여 문을
+## <a name="if_with_init"></a> 경우는 이니셜라이저를 사용 하 여 문을
+
 **Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)):는 **경우** 문에 선언 하 고 명명 된 변수를 초기화 하는 식을 포함 될 수도 있습니다. 변수의 경우 블록의 범위 안에서 필요한 경우 if 문이 이러한 형식의 사용 합니다. 
 
 ```cpp
@@ -169,8 +170,8 @@ int main()
   
  **다른** 절을 `if...else` 문은 가장 가까운 연관 된 이전 **하는 경우** 해당 없는 동일한 범위에서 문을 **다른** 문입니다.   
 
-## <a name="constexpr-if-statements"></a>constexpr 경우 문
-**Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 함수 템플릿을 사용할 수 있습니다는 `constexpr if` 문을 여러에 의존 하지 않고 컴파일 타임 분기 결정 함수 오버 로드 합니다. 예를 들어, 해당 핸들 매개 변수 압축 해제 (0-매개 변수 오버 로드가 없는 필요) 단일 함수를 작성할 수 있습니다. 
+## <a name="a-nameifconstexpr-if-constexpr-statements"></a><a name="if_constexpr"> 경우 constexpr 문
+**Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 함수 템플릿을 사용할 수 있습니다는 **경우 constexpr** 문 없이 컴파일 타임 분기 결정을 내릴 수 여러 함수 오버 로드에 의존 하지 않아도 됩니다. 예를 들어, 해당 핸들 매개 변수 압축 해제 (0-매개 변수 오버 로드가 없는 필요) 단일 함수를 작성할 수 있습니다. 
 
 ```cpp
 template <class T, class... Rest>
@@ -180,9 +181,8 @@ void f(T&& t, Rest&&... r)
    do_something(t);
 
    // handle r conditionally
-   constexpr if (sizeof...(r)) 
+   if constexpr (sizeof...(r)) 
    {
-      
       f(r...); 
    }
    else

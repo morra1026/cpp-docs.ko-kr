@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f775cbb78ff81ba6f1c2761d7969feabd932bd7
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: b433befdec72b000bc83d2087bc5eb15e2d00496
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42539044"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131921"
 ---
 # <a name="library-support-for-multithreading"></a>다중 스레딩을 위한 라이브러리 지원
 이제 모든 버전의 CRT는 일부 함수의 비잠금 버전을 제외 하 고 다중 스레딩 지원 합니다. 참조 [다중 스레드 라이브러리 성능](../c-runtime-library/multithreaded-libraries-performance.md) 자세한 내용은 합니다.  
@@ -29,4 +29,4 @@ ms.locfileid: "42539044"
   
 ## <a name="see-also"></a>참고 항목  
 
-[C 및 Win32를 사용한 다중 스레딩](../parallel/multithreading-with-c-and-win32.md)
+[C 및 Win32를 사용한 다중 스레딩](multithreading-with-c-and-win32.md)
