@@ -10,12 +10,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43bb06a4ef2229b2b9e98bf7acabbe757744fc73
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 3708bce00b01ee796067bf91d99645cb61f19a53
+ms.sourcegitcommit: f923f667065cd6c4203d10ca9520600ee40e5f84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42571532"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900702"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158"></a>Visual Studio 2017 버전 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158)의 C++ 규칙 향상입니다.
 
@@ -1680,6 +1680,8 @@ struct S : Base<T> {
 ```
 
 이 오류를 해결하려면 `return` 문을 `return this->base_value;`로 변경합니다.
+
+**참고:** Boost python 라이브러리에는 오랫동안 [unwind_type.hpp](https://github.com/boostorg/python/blame/develop/include/boost/python/detail/unwind_type.hpp)의 템플릿 정방향 선언에 대한 MSVC 관련 해결 방법이 있었습니다. Visual Studio 2017 버전 15.8(_MSC_VER=1915)부터 [/permissive-](build/reference/permissive-standards-conformance.md) 모드에서 MSVC 컴파일러가 ADL(인수 종속성 이름 조회)을 올바로 수행하고 다른 컴파일러와 일치하므로 이 해결 방법 보호가 필요 없어졌습니다. ‘C3861: ‘unwind_type’: 식별자를 찾을 수 없습니다.’ 오류를 방지하려면 Boostorg 리포지토리에서 [PR 229](https://github.com/boostorg/python/pull/229)를 참조하여 헤더 파일을 업데이트하세요. [vcpkg](vcpkg.md) Boost 패키지를 이미 패치했으므로 vcpkg에서 Boost 소스를 가져오거나 업그레이드한 경우 패치를 별도로 적용할 필요가 없습니다.
 
 ### <a name="forward-declarations-and-definitions-in-namespace-std"></a>std 네임스페이스에서 정방향 선언 및 정의
 
