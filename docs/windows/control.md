@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 18a53f75f783f5843e3bdf603d21dbacf6746e2b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 06261ba87806bd5eada0d7daaa955b8ec395f3ea
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591783"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222848"
 ---
 # <a name="control"></a>컨트롤
 
@@ -36,9 +36,9 @@ ms.locfileid: "42591783"
 
 ## <a name="remarks"></a>설명
 
-**제어** 특성을 의미 합니다 [coclass](../windows/coclass.md) 특성입니다. **제어** c + + 특성에 동일한 기능을 합니다 [컨트롤](http://msdn.microsoft.com/library/windows/desktop/aa366764) MIDL 특성입니다.
+**제어** 특성을 의미 합니다 [coclass](../windows/coclass.md) 특성입니다. **제어** c + + 특성에 동일한 기능을 합니다 [컨트롤](/windows/desktop/Midl/control) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // cpp_attr_ref_control.cpp

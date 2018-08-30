@@ -1,7 +1,7 @@
 ---
 title: 컴파일러 경고 (수준 4) C4565 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,23 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d3c4249783686c1fabb44395d3c092eca0d9230a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c25f2f1fc16c6d45a7d1eddec8d3efe62db142f2
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293366"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211264"
 ---
 # <a name="compiler-warning-level-4-c4565"></a>컴파일러 경고(수준 4) C4565
-'function': 재정의. 기호는 __declspec(modifier)와 이전에 선언 되었으므로  
-  
- 기호가 재정의 되거나 다시 선언 하 고 두 번째 정의 나 첫 번째 정의 또는 선언 달리 선언 되지 않았습니다는 `__declspec` 한정자 (***한정자***). 이 경고는 정보 제공용입니다. 이 경고를 해결 하려면 정의 중 하나를 삭제 합니다.  
-  
- 다음 샘플에서는 C4565 오류가 생성 됩니다.  
-  
-```  
-// C4565.cpp  
-// compile with: /W4 /LD  
-__declspec(noalias) void f();  
-void f();   // C4565  
+
+> '*함수*': 재정의; 기호를 __declspec를 사용 하 여 이전에 선언 되었습니다 (*한정자*)
+
+## <a name="remarks"></a>설명
+
+두 번째 달리 정의 또는 선언에서 첫 번째 정의 또는 선언 하지 않은 및 기호를 다시 정의 되었거나 다시 선언 된 `__declspec` 한정자 (*한정자*). 이 경고는 정보 제공용입니다. 이 경고를 해결 하려면 정의 중 하나를 삭제 합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C4565 오류가 생성 됩니다.
+
+```cpp
+// C4565.cpp
+// compile with: /W4 /LD
+__declspec(noalias) void f();
+void f();   // C4565
 ```

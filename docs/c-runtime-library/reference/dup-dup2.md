@@ -38,12 +38,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad477dc09ce6c8bee2d69e479f8e1615639cb14d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 820172e1e6ab4ad007c89b2b40f03512134f0f0d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399805"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215955"
 ---
 # <a name="dup-dup2"></a>_dup, _dup2
 
@@ -66,15 +66,15 @@ int _dup2( int fd1, int fd2 );
 
 ## <a name="return-value"></a>반환 값
 
-**_dup** 새 파일 설명자를 반환 합니다. **_dup2** 성공을 나타내는 0을 반환 합니다. 각 함수는-1 반환 하 고 설정 오류가 발생 하면 **errno** 를 **EBADF** 파일 설명자에 유효 하지 않을 경우 또는 **EMFILE** 더 이상 파일 설명자를 사용할 수 있는 경우. 잘못된 파일 설명자의 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 이 함수는 잘못된 매개 변수 처리기를 호출합니다.
+**_dup** 새 파일 설명자를 반환 합니다. **_dup2** 성공을 나타내기 위해 0을 반환 합니다. 오류가 발생 하는 각 함수는-1 반환 하 고 설정 하는 경우 **errno** 하 **EBADF** 파일 설명자가 올바르지 않은 경우 또는 **EMFILE** 없습니다 더 이상 파일 설명자를 사용할 수 있는 경우. 잘못된 파일 설명자의 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 이 함수는 잘못된 매개 변수 처리기를 호출합니다.
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하십시오.
 
 ## <a name="remarks"></a>설명
 
-**_dup** 및 **_dup2** 함수 현재 열려 있는 파일에는 두 번째 파일 설명자를 연결 합니다. 에 대 한 것과 같은 미리 정의 된 파일 설명자를 연결 하는 이러한 함수를 사용할 수 있습니다 **stdout**, 다른 파일을 사용 합니다. 파일 설명자 중 하나를 사용하여 파일 작업을 수행할 수 있습니다. 파일에 허용된 액세스 형식은 새 설명자 만들기의 영향을 받지 않습니다. **_dup** 지정된 된 파일에 대 한 다음 사용 가능한 파일 설명자를 반환 합니다. **_dup2** 강제로 *fd2* 으로 동일한 파일을 참조 하도록 *fd1*합니다. 경우 *fd2* 연결 된 메서드를 호출할 때에 열려 있는 파일와 해당 파일이 닫힙니다.
+합니다 **_dup** 하 고 **_dup2** 함수는 현재 열려 있는 파일을 사용 하 여 두 번째 파일 설명자를 연결 합니다. 이러한 함수에 대 한 것과 같은 미리 정의 된 파일 설명자를 연결 하려면 사용할 수 있습니다 **stdout**, 다른 파일을 사용 하 여 합니다. 파일 설명자 중 하나를 사용하여 파일 작업을 수행할 수 있습니다. 파일에 허용된 액세스 형식은 새 설명자 만들기의 영향을 받지 않습니다. **_dup** 지정된 된 파일에 대 한 다음 사용 가능한 파일 설명자를 반환 합니다. **_dup2** 강제로 *fd2* 와 동일한 파일을 가리키도록 *fd1*합니다. 하는 경우 *fd2* 관련이 호출 시 열려 있는 파일을 사용 하 여 해당 파일이 닫힙니다.
 
-둘 다 **_dup** 및 **_dup2** 파일 설명자를 매개 변수로 허용 합니다. 스트림 전달 하려면 (**파일 \*** ) 이러한 함수 중 하나를 사용 하 여 [_fileno](fileno.md)합니다. **fileno** 루틴은 지정 된 스트림과 현재 연결 된 파일 설명자를 반환 합니다. 다음 예제에서는 연결 하는 방법을 보여 줍니다. **stderr** (으로 정의 **파일 \***  Stdio.h에) 파일 설명자를 사용 합니다.
+둘 다 **_dup** 하 고 **_dup2** 파일 설명자 매개 변수로 수락 합니다. 스트림을 전달할 (`FILE *`) 이러한 함수 중 하나를 사용 하 여 [_fileno](fileno.md)합니다. 합니다 **fileno** 루틴은 지정 된 스트림과 현재 연결 된 파일 설명자를 반환 합니다. 다음 예제에서는 연결 하는 방법을 보여 줍니다 **stderr** (으로 정의 `FILE *` Stdio.h에) 파일 설명자를 사용 합니다.
 
 ```C
 int cstderr = _dup( _fileno( stderr ));
@@ -82,12 +82,12 @@ int cstderr = _dup( _fileno( stderr ));
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_dup**|\<io.h>|
 |**_dup2**|\<io.h>|
 
-콘솔 유니버설 Windows 플랫폼 (UWP) 응용 프로그램에서 지원 되지 않습니다. 콘솔을 사용 하는 연결 된 표준 스트림 핸들 **stdin**, **stdout**, 및 **stderr**, C 런타임 함수 UWP 앱에서 사용할 수 있는 전에 리디렉션되어야 . 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+콘솔 유니버설 Windows 플랫폼 (UWP) 앱에서 지원 되지 않습니다. 콘솔을 사용 하 여 연결 된 표준 스트림 핸들 **stdin**하십시오 **stdout**, 및 **stderr**, C 런타임 함수 UWP 앱에서 사용할 수 있는 되기 전에 리디렉션되어야 . 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

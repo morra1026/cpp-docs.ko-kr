@@ -23,15 +23,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7e0bd440e2e4bd8d32525fe4be6aaad2c401f6a
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 9d67f00b88be88e1cb2691414b0666bd298977dd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880623"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220182"
 ---
 # <a name="iprovideclassinfo2impl-class"></a>IProvideClassInfo2Impl 클래스
-이 클래스의 기본 구현을 제공 합니다 [IProvideClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms687303) 하 고 [IProvideClassInfo2](http://msdn.microsoft.com/library/windows/desktop/ms693764) 메서드.  
+이 클래스의 기본 구현을 제공 합니다 [IProvideClassInfo](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo) 하 고 [IProvideClassInfo2](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo2) 메서드.  
   
 ## <a name="syntax"></a>구문  
   
@@ -85,7 +85,7 @@ class ATL_NO_VTABLE IProvideClassInfo2Impl : public IProvideClassInfo2
 |[IProvideClassInfo2Impl::_tih](#_tih)|Coclass의 형식 정보를 관리합니다.|  
   
 ## <a name="remarks"></a>설명  
- 합니다 [IProvideClassInfo2](http://msdn.microsoft.com/library/windows/desktop/ms693764) 인터페이스를 확장 [IProvideClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms687303) 추가 하 여는 `GetGUID` 메서드. 이 메서드는 클라이언트를 기본 이벤트 집합에 대 한 개체의 송신 인터페이스 IID를 검색할 수 있습니다. 클래스 `IProvideClassInfo2Impl` 의 기본 구현을 제공 합니다 `IProvideClassInfo` 고 `IProvideClassInfo2` 메서드.  
+ 합니다 [IProvideClassInfo2](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo2) 인터페이스를 확장 [IProvideClassInfo](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo) 추가 하 여는 `GetGUID` 메서드. 이 메서드는 클라이언트를 기본 이벤트 집합에 대 한 개체의 송신 인터페이스 IID를 검색할 수 있습니다. 클래스 `IProvideClassInfo2Impl` 의 기본 구현을 제공 합니다 `IProvideClassInfo` 고 `IProvideClassInfo2` 메서드.  
   
  `IProvideClassInfo2Impl` 포함 형식의 정적 멤버로 `CComTypeInfoHolder` coclass에 대 한 형식 정보를 관리 하는 합니다.  
   
@@ -105,7 +105,7 @@ STDMETHOD(GetClassInfo)(ITypeInfo** pptinfo);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IProvideClassInfo::GetClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms690192) Windows SDK에에서 있습니다.  
+ 참조 [IProvideClassInfo::GetClassInfo](/windows/desktop/api/ocidl/nf-ocidl-iprovideclassinfo-getclassinfo) Windows SDK에에서 있습니다.  
   
 ##  <a name="getguid"></a>  IProvideClassInfo2Impl::GetGUID  
  개체의 나가는 dispinterface의 GUID를 검색합니다.  
@@ -117,7 +117,7 @@ STDMETHOD(GetGUID)(
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IProvideClassInfo2::GetGUID](http://msdn.microsoft.com/library/windows/desktop/ms679721) Windows SDK에에서 있습니다.  
+ 참조 [IProvideClassInfo2::GetGUID](/windows/desktop/api/ocidl/nf-ocidl-iprovideclassinfo2-getguid) Windows SDK에에서 있습니다.  
   
 ##  <a name="iprovideclassinfo2impl"></a>  IProvideClassInfo2Impl::IProvideClassInfo2Impl  
  생성자입니다.  
@@ -138,7 +138,7 @@ static  tihclass
 ```     
   
 ### <a name="remarks"></a>설명  
- `_tih` coclass의 형식 정보를 관리합니다.  
+ `_tih` Coclass의 형식 정보를 관리합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [클래스 개요](../../atl/atl-class-overview.md)

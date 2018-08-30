@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85fe930ba0616e27b06aee863285638613f7e31d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 3b90a96816855e08610d0f63f3ab5c237d564453
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858931"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217951"
 ---
 # <a name="ltmemorygt"></a>&lt;memory&gt;
 
@@ -40,7 +40,7 @@ ms.locfileid: "33858931"
 
 ### <a name="functions"></a>함수
 
-|함수|설명|
+|기능|설명|
 |-|-|
 |[addressof](../standard-library/memory-functions.md#addressof)|개체의 실제 주소를 가져옵니다.|
 |[align](../standard-library/memory-functions.md#align)|제공된 정렬 및 시작 주소를 기준으로 지정된 크기 범위에 포인터를 반환합니다.|
@@ -85,7 +85,7 @@ ms.locfileid: "33858931"
 |-|-|
 |[allocator](../standard-library/allocator-class.md)|템플릿 클래스는 **형식** 형식의 개체 배열에 대한 저장소 할당 및 해제를 관리하는 개체를 설명합니다.|
 |[allocator_traits](../standard-library/allocator-traits-class.md)|할당자를 사용할 수 있는 컨테이너에 필요한 모든 정보를 확인하는 개체에 대해 설명합니다.|
-|[auto_ptr](../standard-library/auto-ptr-class.md)|템플릿 클래스는 바깥쪽 auto_ptr이 삭제될 때 가리키는 개체가 삭제되도록 하는 **Type \*** 형식의 할당된 개체에 대한 포인터를 저장하는 개체를 설명합니다.|
+|[auto_ptr](../standard-library/auto-ptr-class.md)|형식의 할당 된 개체에 대 한 포인터를 저장 하는 개체를 설명 하는 템플릿 클래스 **형식** <strong>\*</strong> 하는 요소는 바깥쪽 auto_ptr 때 삭제 되는 개체를 확인 하는 소멸 됩니다.|
 |[bad_weak_ptr](../standard-library/bad-weak-ptr-class.md)|불량 weak_ptr 예외를 보고합니다.|
 |[enabled_shared_from_this](../standard-library/enable-shared-from-this-class.md)|`shared_ptr`을 생성할 수 있습니다.|
 |[pointer_traits](../standard-library/pointer-traits-struct.md)|포인터 형식 `allocator_traits`를 사용하여 할당자를 설명하기 위해 템플릿 클래스 `Ptr`의 개체에 필요한 정보를 제공합니다.|

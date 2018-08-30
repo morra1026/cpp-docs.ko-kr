@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd841b6bc3c55ed58db101c6226bbc24819b248f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1226584d52d9f09b34e9dae8d00095fc923396fd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33353686"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206877"
 ---
 # <a name="controls-mfc"></a>컨트롤(MFC)
 컨트롤은 사용자가 데이터를 입력하거나 조작하기 위해 상호 작용할 수 있는 개체입니다. 일반적으로 대화 상자 또는 도구 모음에 나타납니다. 이 항목 군에서는 다음 세 가지 주요 컨트롤 종류를 설명합니다.  
@@ -107,7 +107,7 @@ ms.locfileid: "33353686"
   
 -   [샘플](../mfc/common-control-sample-list.md)  
   
- Windows SDK의 Windows 공용 컨트롤에 대 한 정보를 참조 하십시오. [공용 컨트롤](http://msdn.microsoft.com/library/windows/desktop/bb775493)합니다.  
+ Windows SDK의 Windows 공용 컨트롤에 대 한 정보를 참조 하세요 [공용 컨트롤](/windows/desktop/Controls/common-controls-intro)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)   

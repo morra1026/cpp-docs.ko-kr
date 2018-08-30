@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fc70734867b0b6b7c1d9ebc5e66c45893cf1db1e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 93a7adbca8c659a757e0e8fbb05b8fb926b237d2
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602093"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210312"
 ---
 # <a name="readonly-c"></a>readonly(C++)
 
@@ -36,11 +36,11 @@ ms.locfileid: "42602093"
 
 ## <a name="remarks"></a>설명
 
-**readonly** C++ 특성에는 [readonly](http://msdn.microsoft.com/library/windows/desktop/aa367152) MIDL 특성과 동일한 기능이 있습니다.
+**읽기 전용** c + + 특성에 동일한 기능을 합니다 [readonly](/windows/desktop/Midl/readonly) MIDL 특성입니다.
 
 메서드 매개 변수의 수정을 금지하려면 [in](../windows/in-cpp.md) 특성을 사용합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에서는 **readonly** 특성의 사용을 보여줍니다.
 

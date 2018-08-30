@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e7e77238478e32fd5b45f96cdd8a86c2205eef7
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 94468f2499a349847f62ed65a03e88cf776536ce
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882847"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207198"
 ---
 # <a name="ccontainedwindowt-class"></a>CContainedWindowT 클래스
 이 클래스는 다른 개체 내에 포함 된 창을 구현 합니다.  
@@ -115,7 +115,7 @@ class CContainedWindowT : public TBase
 |컨트롤 만들기|[ATL 자습서](../../atl/active-template-library-atl-tutorial.md)|  
 |ATL에서 창 사용하기|[ATL 창 클래스](../../atl/atl-window-classes.md)|  
 |ATL 프로젝트 마법사|[ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)|  
-|Windows|[Windows](http://msdn.microsoft.com/library/windows/desktop/ms632595) 및 Windows SDK의 후속 항목|  
+|Windows|[Windows](https://msdn.microsoft.com/library/windows/desktop/ms632595) 및 Windows SDK의 후속 항목|  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  `TBase`  
@@ -214,22 +214,22 @@ HWND Create(
  [in] 부모 또는 소유자 창에 대 한 핸들입니다.  
   
  *rect*  
- [in] A [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 창의 위치를 지정 하는 구조입니다. `RECT` 포인터 또는 참조로 전달할 수 있습니다.  
+ [in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 창의 위치를 지정 하는 구조입니다. `RECT` 포인터 또는 참조로 전달할 수 있습니다.  
   
  *szWindowName*  
  [in] 창의 이름을 지정합니다. 기본값은 NULL입니다.  
   
  *dwStyle*  
- [in] 창 스타일입니다. 기본값은 WS_CHILD &#124; WS_VISIBLE 합니다. 가능한 값 목록을 참조 하세요 [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK에 있습니다.  
+ [in] 창 스타일입니다. 기본값은 WS_CHILD &#124; WS_VISIBLE 합니다. 가능한 값 목록을 참조 하세요 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK에 있습니다.  
   
  *dwExStyle*  
- [in] 확장된 창 스타일입니다. 기본값은 0, 확장 된 스타일이 없습니다. 가능한 값 목록을 참조 하세요 [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK에 있습니다.  
+ [in] 확장된 창 스타일입니다. 기본값은 0, 확장 된 스타일이 없습니다. 가능한 값 목록을 참조 하세요 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK에 있습니다.  
   
  *MenuOrID*  
  [in] 자식 창의 창 식별자입니다. 최상위 창에 대 한 메뉴 창에 대 한 처리 합니다. 기본값은 **0U**합니다.  
   
  *lpCreateParam*  
- [in] 창 만들기 데이터에 대 한 포인터입니다. 에 마지막 매개 변수에 대 한 설명을 참조 [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680)합니다.  
+ [in] 창 만들기 데이터에 대 한 포인터입니다. 에 마지막 매개 변수에 대 한 설명을 참조 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680)합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 새로 만든된 창에 대 한 핸들 그렇지 않으면 NULL입니다.  
@@ -268,7 +268,7 @@ LRESULT DefWindowProc(
  메시지 처리의 결과입니다.  
   
 ### <a name="remarks"></a>설명  
- 기본적으로 `DefWindowProc` 호출을 [CallWindowProc](http://msdn.microsoft.com/library/windows/desktop/ms633571) Win32 함수에 지정 된 창 프로시저 메시지 정보를 보낼 [m_pfnSuperWindowProc](#m_pfnsuperwindowproc)합니다.  
+ 기본적으로 `DefWindowProc` 호출을 [CallWindowProc](https://msdn.microsoft.com/library/windows/desktop/ms633571) Win32 함수에 지정 된 창 프로시저 메시지 정보를 보낼 [m_pfnSuperWindowProc](#m_pfnsuperwindowproc)합니다.  
   
 ##  <a name="getcurrentmessage"></a>  CContainedWindowT::GetCurrentMessage  
  현재 메시지를 반환 합니다 (`m_pCurrentMsg`).  

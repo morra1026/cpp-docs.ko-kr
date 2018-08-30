@@ -1,5 +1,5 @@
 ---
-title: CFrameWnd에서 파생 되지 않은 도구 설명 | Microsoft Docs
+title: CFrameWnd에서 파생 되지 않은 Windows에 도구 팁 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,17 +19,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f187ae7e3d5d9dbe6441aa8e2ba0f7631fd5072
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 380435001bdcfacdc22c80d25d5ef228b67e3127
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36956540"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207591"
 ---
 # <a name="tool-tips-in-windows-not-derived-from-cframewnd"></a>CFrameWnd에서 파생되지 않은 창의 도구 설명
-이 문서에서는 설명에서 파생 되지 않은 창에 포함 된 컨트롤에 대 한 도구 설명을 사용할 수 있도록 [CFrameWnd](../mfc/reference/cframewnd-class.md)합니다. 문서 [도구 모음 도구 설명](../mfc/toolbar-tool-tips.md) 컨트롤에 대 한 도구 설명에 대 한 정보를 제공는 `CFrameWnd`합니다.  
+이 문서에서는 설명에서 파생 되지 않은 창에서 포함 된 컨트롤에 사용 하도록 설정 하면 도구 설명 [CFrameWnd](../mfc/reference/cframewnd-class.md)합니다. 이 문서 [도구 모음 도구 설명](../mfc/toolbar-tool-tips.md) 컨트롤에 대 한 도구 설명에 대 한 정보를 제공는 `CFrameWnd`합니다.  
   
- 이 문서에서는에서 다루는 항목은 다음과 같습니다.  
+ 이 문서에서는 제품군에서 다루는 항목은 다음과 같습니다.  
   
 -   [도구 설명을 사용하도록 설정](../mfc/enabling-tool-tips.md)  
   
@@ -37,11 +37,11 @@ ms.locfileid: "36956540"
   
 -   [TOOLTIPTEXT 구조체](../mfc/tooltiptext-structure.md)  
   
- 단추에 대 한 도구 설명을 자동으로 표시 되 고 부모 창에 포함 된 다른 컨트롤에서 파생 된 `CFrameWnd`합니다. ¿¡´ `CFrameWnd` 에 대 한 기본 처리기는 [TTN_GETDISPINFO](http://msdn.microsoft.com/library/windows/desktop/bb760269) 알림을 처리 하 **TTN_NEEDTEXT** 도구에서 보내는 알림 컨트롤 컨트롤과 관련 된 팁입니다.  
+ 도구 설명은 단추에 대 한 자동으로 표시 되 고 부모 창에 포함 된 다른 컨트롤에서 파생 된 `CFrameWnd`합니다. 왜냐하면 `CFrameWnd` 에 대 한 기본 처리기가 합니다 [TTN_GETDISPINFO](/windows/desktop/Controls/ttn-getdispinfo) 알림을 처리 하는 **TTN_NEEDTEXT** 도구에서 알림 팁 컨트롤과 연결 된 컨트롤입니다.  
   
- 그러나이 기본 처리기가 호출 되지 시기는 **TTN_NEEDTEXT** 없는 창에 컨트롤에 연결 된 도구 설명 컨트롤에서 알림이 전송 됩니다는 `CFrameWnd`, 대화 상자나 폼 보기를 컨트롤 처럼 합니다. 따라서에 대 한 처리기 함수를 제공 하는 데 필요한는 **TTN_NEEDTEXT** 자식 컨트롤에 대 한 도구 설명을 표시 하려면 알림 메시지입니다.  
+ 그러나이 기본 처리기가 호출 되지 경우는 **TTN_NEEDTEXT** 하지 않은 창에서 컨트롤에 연결 된 도구 설명 컨트롤에서 알림이 전송 됩니다는 `CFrameWnd`, 대화 상자나 폼 보기에서 컨트롤과 같은 합니다. 따라서 것에 대 한 처리기 함수를 제공 하는 데 필요한 합니다 **TTN_NEEDTEXT** 자식 컨트롤에 대 한 도구 설명을 표시 하려면 알림 메시지입니다.  
   
- 기본 도구 설명 하 여 창에 대해 제공 된 [CWnd::EnableToolTips](../mfc/reference/cwnd-class.md#enabletooltips) 연결 된 텍스트 필요가 없습니다. 표시할 도구 설명에 대 한 텍스트를 검색 하는 **TTN_NEEDTEXT** 도구 설명 창이 표시 되기 직전에 도구 설명 컨트롤의 부모 창에 알림이 전송 됩니다. 일부 값을 할당할이 메시지에 대 한 처리기가 없는 경우는 *pszText* 의 멤버는 **TOOLTIPTEXT** 구조, 텍스트가 도구 설명에 대해 표시 됩니다.  
+ 제공 하 여 windows에 대 한 기본 도구 설명을 [CWnd::EnableToolTips](../mfc/reference/cwnd-class.md#enabletooltips) 연결 된 텍스트에 있지 않습니다. 표시할 도구 설명에 대 한 텍스트를 검색 하는 **TTN_NEEDTEXT** 도구 설명 창이 표시 되기 직전에 도구 설명 컨트롤의 부모 창에 알림이 전송 됩니다. 일부 값을 할당할이 메시지에 대 한 처리기가 합니다 *pszText* 의 멤버는 **TOOLTIPTEXT** 구조에 없는 텍스트 도구 설명에 표시 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [도구 설명](../mfc/tool-tips.md)

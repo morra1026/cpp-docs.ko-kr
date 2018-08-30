@@ -242,12 +242,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ac1ae7ba40ead2217fd2404a243f0e02664177a
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 41b5a9f936dc47852c766370d330576dc16ca58a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028397"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213664"
 ---
 # <a name="cmfcribbonbaseelement-class"></a>CMFCRibbonBaseElement 클래스
 합니다 `CMFCRibbonBaseElement` 클래스는 추가할 수 있는 모든 요소에 대 한 기본 클래스를 [리본 표시줄](../../mfc/reference/cmfcribbonbar-class.md)합니다. 리본 요소의 예를 들면 리본 단추, 리본 확인란 및 리본 콤보 상자가 있습니다.  
@@ -400,7 +400,7 @@ class CMFCRibbonBaseElement : public CObject
   
  해당 크기에 따라 리본 요소 중 소규모 또는 대규모 이미지를 표시합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `CMFCRibbonBaseElement` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 이 예제에서는 가져오는 방법을 보여 줍니다.는 `CMFCRibbonBaseElement` 에서 개체를 `CMFCRibbonStatusBar` 클래스, 리본 요소에 대 한 설명을 설정, 텍스트를 설정, keytip, 설정 및 리본 요소에 대 한 도구 설명 텍스트를 설정 합니다. 이 코드 조각은 [클라이언트 그리기 샘플](../../visual-cpp-samples.md)의 일부입니다.  
   
  [!code-cpp[NVC_MFC_DrawClient#8](../../mfc/reference/codesnippet/cpp/cmfcribbonbaseelement-class_1.cpp)]  
@@ -921,7 +921,7 @@ virtual CWnd* GetParentWnd() const;
  메서드가 성공 하면 리본 요소에 대 한 부모 창에 대 한 포인터 그렇지 않으면 NULL입니다.  
   
 ### <a name="remarks"></a>설명  
- 리본 요소에 대 한 부모 창에 [CMFCRibbonBar 클래스](../../mfc/reference/cmfcribbonbar-class.md) 또는 [CMFCRibbonPanelMenuBar](http://msdn.microsoft.com/7bd4b986-8b7b-493e-9746-bd3161b78581)합니다.  
+ 리본 요소에 대 한 부모 창에 [CMFCRibbonBar 클래스](../../mfc/reference/cmfcribbonbar-class.md) 또는 [CMFCRibbonPanelMenuBar](https://msdn.microsoft.com/7bd4b986-8b7b-493e-9746-bd3161b78581)합니다.  
   
 ##  <a name="getpressed"></a>  CMFCRibbonBaseElement::GetPressed  
  사용자가 현재 누를 경우에 리본 요소에 대 한 포인터를 검색 합니다.  
@@ -1686,7 +1686,7 @@ virtual void Redraw();
 ```  
   
 ### <a name="remarks"></a>설명  
- 이 메서드를 호출 하 여 리본 요소에 대 한 표시 사각형을 다시 그리면 [CWnd::RedrawWindow](http://msdn.microsoft.com/library/windows/desktop/dd162911) RDW_INVALIDATE, RDW_ERASE, 및 RDW_UPDATENOW 플래그를 사용 하 여 설정 합니다.  
+ 이 메서드를 호출 하 여 리본 요소에 대 한 표시 사각형을 다시 그리면 [CWnd::RedrawWindow](/windows/desktop/api/winuser/nf-winuser-redrawwindow) RDW_INVALIDATE, RDW_ERASE, 및 RDW_UPDATENOW 플래그를 사용 하 여 설정 합니다.  
   
 ##  <a name="setaccdata"></a>  Cmfcribbonbaseelement:: Setaccdata  
  리본 요소에 대한 내게 필요한 옵션 데이터를 설정합니다.  
@@ -1891,7 +1891,7 @@ virtual void SetText(LPCTSTR lpszText);
 ### <a name="remarks"></a>설명  
  리본 요소에 대 한 keytip을 설정 하려면 추가 keytip 문자를 뒤에 줄 바꿈 이스케이프 시퀀스 *lpszText*합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```  
 //Set the text for the ribbon element  

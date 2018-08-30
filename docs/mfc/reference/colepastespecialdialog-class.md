@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42f4a45dc2b49b784f74175203e892c253ea1f5e
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 9c3dff52e3607125493c956d46e1bd38c399565e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851435"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213341"
 ---
 # <a name="colepastespecialdialog-class"></a>COlePasteSpecialDialog 클래스
 OLE 선택하여 붙여넣기 대화 상자에 사용합니다.  
@@ -85,7 +85,7 @@ class COlePasteSpecialDialog : public COleDialog
 ## <a name="remarks"></a>설명  
  클래스의 개체를 만들려면 `COlePasteSpecialDialog` 이 대화 상자를 호출 하려는 경우. 후는 `COlePasteSpecialDialog` 생성 된 개체를 사용할 수 있습니다 합니다 [AddFormat](#addformat) 및 [AddStandardFormats](#addstandardformats) 대화 상자에 클립보드 형식을 추가 하는 멤버 함수입니다. 사용할 수도 있습니다는 [m_ps](#m_ps) 구조 값 또는 대화 상자에서 컨트롤의 상태를 초기화 합니다. `m_ps` OLEUIPASTESPECIAL 형식의 구조입니다.  
   
- 자세한 내용은 참조는 [OLEUIPASTESPECIAL](http://msdn.microsoft.com/library/windows/desktop/ms692434) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [OLEUIPASTESPECIAL](/windows/desktop/api/oledlg/ns-oledlg-tagoleuipastespeciala) Windows SDK에는 구조입니다.  
   
  OLE 관련 대화 상자에 대 한 자세한 내용은 문서 참조 [OLE의 대화 상자](../../mfc/dialog-boxes-in-ole.md)합니다.  
   
@@ -157,9 +157,9 @@ void AddFormat(
 ### <a name="remarks"></a>설명  
  CF_TEXT 또는 CF_TIFF와 같은 표준 형식 또는 사용자 지정 형식 시스템을 사용 하 여 응용 프로그램 등록을 추가 하려면이 함수를 호출할 수 있습니다. 응용 프로그램에 데이터 개체를 붙여 넣는 방법에 대 한 자세한 내용은 문서 참조 [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.  
   
- 자세한 내용은 참조는 [TYMED](http://msdn.microsoft.com/library/windows/desktop/ms691227) 열거형 및 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK의 구조입니다.  
+ 자세한 내용은 참조는 [TYMED](/windows/desktop/api/objidl/ne-objidl-tagtymed) 열거형 및 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK의 구조입니다.  
   
- 자세한 내용은 참조 하세요. 합니다 [OLEUIPASTEFLAG](http://msdn.microsoft.com/library/windows/desktop/ms682172) Windows SDK의 유형을 열거 합니다.  
+ 자세한 내용은 참조 하세요. 합니다 [OLEUIPASTEFLAG](/windows/desktop/api/oledlg/ne-oledlg-tagoleuipasteflag) Windows SDK의 유형을 열거 합니다.  
   
 ##  <a name="addlinkentry"></a>  COlePasteSpecialDialog::AddLinkEntry  
  지원 되는 클립보드 형식의 목록에 새 항목을 추가 합니다.  
@@ -173,7 +173,7 @@ OLEUIPASTEFLAG AddLinkEntry(UINT cf);
  추가할 클립보드 형식입니다.  
   
 ### <a name="return-value"></a>반환 값  
- [OLEUIPASTEFLAG](http://msdn.microsoft.com/library/windows/desktop/ms682172) 새 링크 항목에 대 한 정보가 포함 된 구조입니다.  
+ [OLEUIPASTEFLAG](/windows/desktop/api/oledlg/ne-oledlg-tagoleuipasteflag) 새 링크 항목에 대 한 정보가 포함 된 구조입니다.  
   
 ##  <a name="addstandardformats"></a>  COlePasteSpecialDialog::AddStandardFormats  
  응용 프로그램에서 붙여넣기 작업을 지원할 수 있습니다 하는 형식 목록에 다음 클립보드 형식을 추가 하려면이 함수를 호출 합니다.  
@@ -231,7 +231,7 @@ COlePasteSpecialDialog(
 ### <a name="remarks"></a>설명  
  이 함수 에서만 생성을 `COlePasteSpecialDialog` 개체입니다. 대화 상자를 표시 하려면 호출을 [DoModal](#domodal) 함수입니다.  
   
- 자세한 내용은 참조 하세요. 합니다 [OLEUIPASTEFLAG](http://msdn.microsoft.com/library/windows/desktop/ms682172) Windows SDK의 유형을 열거 합니다.  
+ 자세한 내용은 참조 하세요. 합니다 [OLEUIPASTEFLAG](/windows/desktop/api/oledlg/ne-oledlg-tagoleuipasteflag) Windows SDK의 유형을 열거 합니다.  
   
 ##  <a name="createitem"></a>  COlePasteSpecialDialog::CreateItem  
  선택 하 여 붙여넣기 대화 상자에서 선택 된 새 항목을 만듭니다.  
@@ -264,7 +264,7 @@ virtual INT_PTR DoModal();
   
 - 사용자가 대화 상자를 취소 하는 경우 IDCANCEL 합니다.  
   
-- IDABORT 오류가 발생 합니다. IDABORT 반환 되 면 호출 된 `COleDialog::GetLastError` 발생 한 오류 유형에 대 한 자세한 정보를 보려면 멤버 함수입니다. 목록을 가능한 오류에 대 한 참조를 [OleUIPasteSpecial](http://msdn.microsoft.com/library/windows/desktop/ms694512) Windows SDK에는 함수입니다.  
+- IDABORT 오류가 발생 합니다. IDABORT 반환 되 면 호출 된 `COleDialog::GetLastError` 발생 한 오류 유형에 대 한 자세한 정보를 보려면 멤버 함수입니다. 목록을 가능한 오류에 대 한 참조를 [OleUIPasteSpecial](/windows/desktop/api/oledlg/nf-oledlg-oleuipastespeciala) Windows SDK에는 함수입니다.  
   
 ### <a name="remarks"></a>설명  
  멤버를 설정 하 여 다양 한 대화 상자 컨트롤을 초기화 하려는 경우는 [m_ps](#m_ps) 구조를 호출 하기 전에이 작업을 수행 해야 `DoModal`, 대화 상자 개체에서 생성 된 후 있지만.  
@@ -288,7 +288,7 @@ DVASPECT GetDrawAspect() const;
 ### <a name="remarks"></a>설명  
  후이 함수를 호출한 [DoModal](#domodal) IDOK를 반환 합니다.  
   
- 그리기 측면에 대 한 자세한 내용은 참조는 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK의 구조입니다.  
+ 그리기 측면에 대 한 자세한 내용은 참조는 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK의 구조입니다.  
   
 ##  <a name="geticonicmetafile"></a>  COlePasteSpecialDialog::GetIconicMetafile  
  사용자가 선택한 항목에 연결 된 메타 파일을 가져옵니다.  
@@ -311,7 +311,7 @@ int GetPasteIndex() const;
  배열의 인덱스 `OLEUIPASTEENTRY` 사용자가 선택 된 구조입니다. 선택한 인덱스에 해당 하는 형식 붙여넣기 작업을 수행할 때 사용할 해야 합니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 참조는 [OLEUIPASTEENTRY](http://msdn.microsoft.com/library/windows/desktop/ms690165) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [OLEUIPASTEENTRY](/windows/desktop/api/oledlg/ns-oledlg-tagoleuipasteentrya) Windows SDK에는 구조입니다.  
   
 ##  <a name="getselectiontype"></a>  COlePasteSpecialDialog::GetSelectionType  
  사용자 선택 항목의 유형을 결정 합니다.  
@@ -355,7 +355,7 @@ OLEUIPASTESPECIAL m_ps;
 ### <a name="remarks"></a>설명  
  이 구조체의 멤버는 직접 또는 멤버 함수를 통해 수정할 수 있습니다.  
   
- 자세한 내용은 참조는 [OLEUIPASTESPECIAL](http://msdn.microsoft.com/library/windows/desktop/ms692434) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [OLEUIPASTESPECIAL](/windows/desktop/api/oledlg/ns-oledlg-tagoleuipastespeciala) Windows SDK에는 구조입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [MFC 샘플 OCLIENT](../../visual-cpp-samples.md)   

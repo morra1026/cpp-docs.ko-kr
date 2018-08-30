@@ -68,12 +68,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 69a96cf199e7ce131e91f750cdd83ebc915c38d8
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 984bdabb9d67b157468287fa64f9f21ddabdd5d1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42572975"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217231"
 ---
 # <a name="cdatasource-class"></a>CDataSource 클래스
 데이터 원본에 공급자를 통해 연결을 나타내는 OLE DB 데이터 원본 개체에 해당 합니다.  
@@ -271,11 +271,11 @@ HRESULT Open(LPCSTR szProgID,
  표준 HRESULT입니다.  
   
 ### <a name="remarks"></a>설명  
- 사용 하 여 메서드 오버 로드 된 *hWnd* 매개 변수는 oledb32.dll에서 서비스 구성 요소를 사용 하 여 데이터 원본 개체를 엽니다;이 DLL에는 리소스 풀링, 자동 같은 서비스 구성 요소 기능의 구현이 포함 되어 있습니다. 트랜잭션 참여 등과 합니다. 자세한 내용은 "OLE DB 서비스"의 OLE DB 프로그래머 참조에서 참조 하세요 [ http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true)합니다.  
+ 사용 하 여 메서드 오버 로드 된 *hWnd* 매개 변수는 oledb32.dll에서 서비스 구성 요소를 사용 하 여 데이터 원본 개체를 엽니다;이 DLL에는 리소스 풀링, 자동 같은 서비스 구성 요소 기능의 구현이 포함 되어 있습니다. 트랜잭션 참여 등과 합니다. 자세한 내용은 "OLE DB 서비스"의 OLE DB 프로그래머 참조에서 참조 하세요 [ https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true)합니다.  
   
  사용 하지 않는 메서드 오버 로드 된 *hWnd* 매개 변수는 oledb32.dll에서 서비스 구성 요소를 사용 하지 않고 데이터 원본 개체를 엽니다. A [CDataSource](../../data/oledb/cdatasource-class.md) 이러한 함수 오버 로드를 사용 하 여 열린 개체 구성 요소 서비스의 기능 중 하나를 사용할 수 있게 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드에서는 OLE DB 템플릿을 사용하여 Jet 4.0 데이터 소스를 여는 방법을 보여 줍니다. Jet 데이터 소스를 OLE DB 데이터 소스로 처리합니다. 그러나를 호출 하 여 `Open` 두 속성 집합을 필요: DBPROPSET_DBINIT 및 DBPROPSET_JETOLEDB_DBINIT, 다른 하나 DBPROP_JETOLEDB_DATABASEPASSWORD 설정할 수 있도록 합니다.  
   
  [!code-cpp[NVC_OLEDB_Consumer#7](../../data/oledb/codesnippet/cpp/cdatasource-open_1.cpp)]  
@@ -299,7 +299,7 @@ HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();
  표준 HRESULT입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 oledb32.dll에 있는 서비스 구성 요소를 사용하여 데이터 원본 개체를 엽니다. 이 DLL에는 리소스 풀링, 자동 트랜잭션 참여 등과 같은 서비스 구성 요소 기능의 구현이 들어 있습니다. 자세한 내용은 "OLE DB 서비스"의 OLE DB 프로그래머 참조에서 참조 하세요 [ http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true)합니다.  
+ 이 메서드는 oledb32.dll에 있는 서비스 구성 요소를 사용하여 데이터 원본 개체를 엽니다. 이 DLL에는 리소스 풀링, 자동 트랜잭션 참여 등과 같은 서비스 구성 요소 기능의 구현이 들어 있습니다. 자세한 내용은 "OLE DB 서비스"의 OLE DB 프로그래머 참조에서 참조 하세요 [ https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true)합니다.  
 
 ## <a name="openfrominitializationstring"></a> Cdatasource:: Openfrominitializationstring
 사용자가 제공한 초기화 문자열에 지정 된 데이터 소스를 엽니다.  
@@ -351,7 +351,7 @@ HRESULT OpenWithPromptFileName(HWND hWnd = GetActiveWindow(   ),
  표준 HRESULT입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 oledb32.dll에 있는 서비스 구성 요소를 사용하여 데이터 원본 개체를 엽니다. 이 DLL에는 리소스 풀링, 자동 트랜잭션 참여 등과 같은 서비스 구성 요소 기능의 구현이 들어 있습니다. 자세한 내용은 "OLE DB 서비스"의 OLE DB 프로그래머 참조에서 참조 하세요 [ http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true)합니다.
+ 이 메서드는 oledb32.dll에 있는 서비스 구성 요소를 사용하여 데이터 원본 개체를 엽니다. 이 DLL에는 리소스 풀링, 자동 트랜잭션 참여 등과 같은 서비스 구성 요소 기능의 구현이 들어 있습니다. 자세한 내용은 "OLE DB 서비스"의 OLE DB 프로그래머 참조에서 참조 하세요 [ https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true)합니다.
 
 ## <a name="openwithservicecomponents"></a> Cdatasource:: Openwithservicecomponents
 oledb32.dll에서 서비스 구성 요소를 사용하여 데이터 원본 개체를 엽니다.  
@@ -385,7 +385,7 @@ HRESULT OpenWithServiceComponents (LPCSTR szProgID,
  표준 HRESULT입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 oledb32.dll에 있는 서비스 구성 요소를 사용하여 데이터 원본 개체를 엽니다. 이 DLL에는 리소스 풀링, 자동 트랜잭션 참여 등과 같은 서비스 구성 요소 기능의 구현이 들어 있습니다. 자세한 내용은 "OLE DB 서비스"의 OLE DB 프로그래머 참조에서 참조 하세요 [ http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true)합니다.    
+ 이 메서드는 oledb32.dll에 있는 서비스 구성 요소를 사용하여 데이터 원본 개체를 엽니다. 이 DLL에는 리소스 풀링, 자동 트랜잭션 참여 등과 같은 서비스 구성 요소 기능의 구현이 들어 있습니다. 자세한 내용은 "OLE DB 서비스"의 OLE DB 프로그래머 참조에서 참조 하세요 [ https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true)합니다.    
 
 ## <a name="see-also"></a>참고 항목  
  [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)   

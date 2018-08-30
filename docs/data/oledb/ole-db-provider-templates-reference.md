@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7832985c6095aecae5098461d36947ff4268d262
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 04ee2d36d269d3bc9324b10dffd8840f9f68a8ab
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42572682"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220889"
 ---
 # <a name="ole-db-provider-templates-reference"></a>OLE DB 공급자 템플릿 참조
 클래스 및 OLE DB 공급자 템플릿에 대 한 인터페이스는 다음 범주로 그룹화 할 수 있습니다. 또한 참조 자료에 대 한 정보를 포함 합니다 [OLE DB 공급자 템플릿 매크로](../../data/oledb/macros-for-ole-db-provider-templates.md)합니다.  
@@ -63,7 +63,7 @@ ms.locfileid: "42572682"
  OLE DB 구현 [IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\)) 행을 삭제 하 고 새 행을 삽입의 기존 행에 있는 열의 값으로 업데이트할 수 있도록 하는 인터페이스입니다.  
   
  [IRowsetCreatorImpl](../../data/oledb/irowsetcreatorimpl-class.md)  
- 이 클래스에서 상속 [IObjectWithSite](http://msdn.microsoft.com/library/windows/desktop/ms693765) 재정의 [IObjectWithSite::SetSite](http://msdn.microsoft.com/library/windows/desktop/ms683869)합니다. `IRowsetCreatorImpl` 동일한 기능을 수행 `IObjectWithSite` 또한 OLE DB 속성을 사용 하지만 `DBPROPCANSCROLLBACKWARDS` 고 `DBPROPCANFETCHBACKWARDS`입니다.  
+ 이 클래스에서 상속 [IObjectWithSite](/windows/desktop/api/ocidl/nn-ocidl-iobjectwithsite) 재정의 [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite)합니다. `IRowsetCreatorImpl` 동일한 기능을 수행 `IObjectWithSite` 또한 OLE DB 속성을 사용 하지만 `DBPROPCANSCROLLBACKWARDS` 고 `DBPROPCANFETCHBACKWARDS`입니다.  
   
  [IRowsetIdentityImpl](../../data/oledb/irowsetidentityimpl-class.md)  
  구현 된 `IRowsetIdentity` 인터페이스를 통해 두 개의 데이터 행 동일한 지 여부를 비교할 수 있습니다.  

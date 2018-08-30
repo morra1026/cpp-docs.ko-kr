@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe649a3ca8ef0fb5e0091136fc9160ac89c248a1
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 4d31392a59707e5a7d072615ed7c930eaf1e14b9
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338664"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207630"
 ---
 # <a name="cmdichildwnd-class"></a>CMDIChildWnd 클래스
 창 관리 멤버와 함께 Windows MDI(다중 문서 인터페이스) 자식 창 기능을 제공합니다.  
@@ -125,7 +125,7 @@ CMDIChildWnd();
 ### <a name="remarks"></a>설명  
  호출 `Create` 표시 창을 만들 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CMDIChildWnd::Create](#create)합니다.  
   
 ##  <a name="create"></a>  CMDIChildWnd::Create  
@@ -143,7 +143,7 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>매개 변수  
  *lpszClassName*  
- Windows 클래스의 이름을 지정 하는 null로 끝나는 문자열을 가리키는 (한 [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) 구조). 클래스 이름을 사용 하 여 등록 된 모든 이름 수는 [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) 전역 함수입니다. 표준 NULL 이어야 합니다 `CMDIChildWnd`합니다.  
+ Windows 클래스의 이름을 지정 하는 null로 끝나는 문자열을 가리키는 (한 [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) 구조). 클래스 이름을 사용 하 여 등록 된 모든 이름 수는 [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) 전역 함수입니다. 표준 NULL 이어야 합니다 `CMDIChildWnd`합니다.  
   
  *lpszWindowName*  
  창 이름을 나타내는 null로 끝나는 문자열을 가리킵니다. 제목 표시줄에 대 한 텍스트로 사용 합니다.  
@@ -168,12 +168,12 @@ virtual BOOL Create(
   
  자식 창에 만들려는 사용자 명령에 대 한 응답에서이 멤버 함수를 호출 하는 프레임 워크 및 프레임 워크를 사용 하는 *pContext* 자식 창에는 응용 프로그램에 연결 하도록 매개 변수입니다. 호출 하는 경우 `Create`하십시오 *pContext* NULL 일 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예제 1:  
   
  [!code-cpp[NVC_MFCWindowing#7](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_1.cpp)]  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예제 2:  
   
  [!code-cpp[NVC_MFCWindowing#8](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_2.cpp)]  
@@ -193,7 +193,7 @@ CMDIFrameWnd* GetMDIFrame();
 ### <a name="remarks"></a>설명  
  반환 하는 프레임은 두 명의 부모에서 제거 합니다 `CMDIChildWnd` MDICLIENT 관리 하는 형식의 창의 부모 이며는 `CMDIChildWnd` 개체입니다. 호출 된 [GetParent](../../mfc/reference/cwnd-class.md#getparent) 반환할 멤버 함수는 `CMDIChildWnd` 임시도 즉시 MDICLIENT 부모 개체의 `CWnd` 포인터.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CMDIFrameWnd::MDISetMenu](../../mfc/reference/cmdiframewnd-class.md#mdisetmenu)합니다.  
   
 ##  <a name="mdiactivate"></a>  CMDIChildWnd::MDIActivate  
@@ -206,7 +206,7 @@ void MDIActivate();
 ### <a name="remarks"></a>설명  
  프레임을 활성화 하는 경우 한 자식 창이 마지막으로 활성화에 활성화 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CMDIFrameWnd::GetWindowMenuPopup](../../mfc/reference/cmdiframewnd-class.md#getwindowmenupopup)합니다.  
   
 ##  <a name="mdidestroy"></a>  CMDIChildWnd::MDIDestroy  
@@ -219,7 +219,7 @@ void MDIDestroy();
 ### <a name="remarks"></a>설명  
  멤버 함수는 프레임 창에서 자식 창의 제목을 제거 하 고 자식 창이 비활성화.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCWindowing#10](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_4.cpp)]  
   
 ##  <a name="mdimaximize"></a>  CMDIChildWnd::MDIMaximize  
@@ -232,7 +232,7 @@ void MDIMaximize();
 ### <a name="remarks"></a>설명  
  자식 창을 최대화 하는 경우 Windows 프레임 창의 클라이언트 영역을 채우는 해당 클라이언트 영역을 확인 하도록 크기가 조정 됩니다. 사용자 복원 또는 자식 창을 닫을 수 있도록 Windows 프레임의 메뉴 모음에서 자식 창의 컨트롤 메뉴를 배치 하 고 자식 창의 제목을 프레임 창 제목에 추가 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCWindowing#11](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_5.cpp)]  
   
 ##  <a name="mdirestore"></a>  CMDIChildWnd::MDIRestore  
@@ -242,7 +242,7 @@ void MDIMaximize();
 void MDIRestore();
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCWindowing#12](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_6.cpp)]  
   
 ##  <a name="sethandles"></a>  CMDIChildWnd::SetHandles  

@@ -39,12 +39,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49e07fd632459e1d668d0201c821065bfaeea72c
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: e4bdae31c3a2f84dd959baf49fae7e43a6cc9eb0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42572610"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206399"
 ---
 # <a name="beginthread-beginthreadex"></a>_beginthread, _beginthreadex
 
@@ -93,7 +93,7 @@ uintptr_t _beginthreadex( // MANAGED CODE
 새 스레드에 전달할 인수 목록 또는 **NULL**합니다.
 
 *보안*<br/>
-반환된 핸들이 자식 프로세스에 의해 상속되는지 여부를 결정하는 [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) 구조에 대한 포인터입니다. 하는 경우 *보안* 됩니다 **NULL**, 핸들을 상속할 수 없습니다. 여야 **NULL** Windows 95 응용 프로그램에 대 한 합니다.
+반환된 핸들이 자식 프로세스에 의해 상속되는지 여부를 결정하는 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) 구조에 대한 포인터입니다. 하는 경우 *보안* 됩니다 **NULL**, 핸들을 상속할 수 없습니다. 여야 **NULL** Windows 95 응용 프로그램에 대 한 합니다.
 
 *initflag*<br/>
 새 스레드의 초기 상태를 제어하는 플래그입니다. 설정 *initflag* 즉시 실행 하는 0 또는 **CREATE_SUSPENDED** 스레드를 만들지는 일시 중단 된 상태에서 사용 하 여 [ResumeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-resumethread) 스레드를 실행 하려면. 설정 *initflag* 하 **STACK_SIZE_PARAM_IS_A_RESERVATION** 플래그를 사용 하 여 *stack_size* 초기 예약 크기 (바이트)에서 스택의 경우이 플래그를 지정 하지 않으면 대로*stack_size* 커밋 크기를 지정 합니다.
@@ -131,7 +131,7 @@ uintptr_t _beginthreadex( // MANAGED CODE
 
 호출할 수 있습니다 [_endthread](endthread-endthreadex.md) 또는 **_endthreadex** 명시적으로 스레드를 종료할; 그러나 **_endthread** 하거나 **_endthreadex** 라고 자동으로 반환 될 때 스레드가 매개 변수로 전달 된 루틴에서. 호출 하 여 스레드를 종료 **_endthread** 하거나 **_endthreadex** 스레드에 대 한 할당 되는 리소스의 올바른 복구 보장 합니다.
 
-**_endthread** 스레드 핸들을 자동으로 닫지만 **_endthreadex** 하지 않습니다. 따라서 사용 하는 경우 **_beginthread** 하 고 **_endthread**를 명시적으로 닫지 마세요 스레드 핸들을 Win32를 호출 하 여 [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API. 이 동작은 Win32 [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) API와 다릅니다.
+**_endthread** 스레드 핸들을 자동으로 닫지만 **_endthreadex** 하지 않습니다. 따라서 사용 하는 경우 **_beginthread** 하 고 **_endthread**를 명시적으로 닫지 마세요 스레드 핸들을 Win32를 호출 하 여 [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API. 이 동작은 Win32 [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) API와 다릅니다.
 
 > [!NOTE]
 > Libcmt.lib로 연결 된 실행 파일에 대 한 Win32을 호출 하지 마세요 **ExitThread** API 런타임 시스템에서 회수 하지 없도록 할당 된 리소스입니다. **_endthread** 하 고 **_endthreadex** 할당 된 스레드 리소스를 회수 하 고 호출 **ExitThread**합니다.
@@ -159,7 +159,7 @@ uintptr_t _beginthreadex( // MANAGED CODE
 
 사용 하도록 **_beginthread** 하거나 **_beginthreadex**, 응용 프로그램은 다중 스레드 C 런타임 라이브러리 중 하나를 사용 하 여 연결 해야 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 **_beginthread** 하 고 **_endthread**합니다.
 
@@ -279,7 +279,7 @@ void Bounce( void * parg )
 
 아무 키나 눌러 샘플 응용 프로그램을 종료합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 샘플 코드에서 반환 되는 스레드 핸들을 사용 하는 방법을 보여 줍니다 **_beginthreadex** 동기화 API 사용 하 여 [WaitForSingleObject](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject)합니다. 주 스레드는 두 번째 스레드가 종료할 때까지 기다린 다음 계속합니다. 두 번째 스레드가 호출 하는 경우 **_endthreadex**, 스레드 개체가 신호를 받은 상태로 이동 하면 됩니다. 그러면 기본 스레드를 계속 실행할 수 있습니다. 사용 하 여이 작업을 수행할 수 없습니다 **_beginthread** 하 고 **_endthread**이므로 **_endthread** 호출 **CloseHandle**, 스레드를 소멸 하는 전에 개체를 신호 받음 상태로 설정할 수 있습니다.
 
@@ -335,4 +335,4 @@ Counter should be 1000000; it is-> 1000000
 - [_endthread, _endthreadex](endthread-endthreadex.md)
 - [abort](abort.md)
 - [exit, _Exit, _exit](exit-exit-exit.md)
-- [GetExitCodeThread](http://msdn.microsoft.com/library/windows/desktop/ms683190)
+- [GetExitCodeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodethread)

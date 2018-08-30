@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c58362b46050a7e2a504a4cd78085975e1c5e1a6
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 9b352d3f99ccee103f7f08e54fb96634bad4a32a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39025772"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216489"
 ---
 # <a name="mfc-dll-wizard"></a>MFC DLL 마법사
 MFC DLL 마법사를 사용 하 여 MFC DLL 프로젝트를 만들 때 하면 작업 시작 응용 프로그램을 기본 제공 기능을 사용 하 여를 컴파일하는 경우의 기본 기능을 구현 합니다는 [DLL](../../build/dlls-in-visual-cpp.md)합니다. MFC 스타터 프로그램에는 c + + 소스 (.cpp) 파일, 리소스 (.rc) 파일 및 프로젝트 (.vcxproj) 파일을 포함합니다. 이 기초 파일에서 생성 된 코드는 MFC를 기반으로 합니다. 자세한 내용은 Visual Studio에서 프로젝트에 대해 생성 된 Readme.txt 파일 세부 정보를 보려면 및 [클래스와 MFC DLL 마법사에서 생성 된 함수](../../mfc/reference/classes-and-functions-generated-by-the-mfc-dll-wizard.md)  
@@ -50,7 +50,7 @@ MFC DLL 마법사를 사용 하 여 MFC DLL 프로젝트를 만들 때 하면 �
  [Visual C++ 프로젝트 만들기 및 관리](../../ide/creating-and-managing-visual-cpp-projects.md)   
  [속성 페이지](../../ide/property-pages-visual-cpp.md)   
  [프로젝트 속성 사용](../../ide/working-with-project-properties.md)   
- [응용 프로그램 배포](http://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)   
+ [응용 프로그램 배포](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)   
  [MFC 클래스](../../mfc/reference/adding-an-mfc-class.md)   
  [멤버 함수 추가](../../ide/adding-a-member-function-visual-cpp.md)   
  [인터페이스 구현](../../ide/implementing-an-interface-visual-cpp.md)   

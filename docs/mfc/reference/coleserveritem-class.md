@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1da24273decbee296bfa19a5c8306cb0512e3fc
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: b4c5dad276db338b5efa0d15786b090779fcf41a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850250"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207507"
 ---
 # <a name="coleserveritem-class"></a>COleServerItem 클래스
 OLE 항목에 대한 서버 인터페이스를 제공합니다.  
@@ -263,7 +263,7 @@ DROPEFFECT DoDragDrop(
   
 -   Windows 95/98 끌어서 지연 시간 WIN의 캐시 된 버전에 저장 됩니다. INI 합니다.  
   
- 지연 정보 중 하나는 레지스트리에 저장 된 방법에 대 한 자세한 내용은 끌어에 대 한 또는 합니다. INI 파일을 참조 하세요 [WriteProfileString](http://msdn.microsoft.com/library/windows/desktop/ms725504) Windows SDK에 있습니다.  
+ 지연 정보 중 하나는 레지스트리에 저장 된 방법에 대 한 자세한 내용은 끌어에 대 한 또는 합니다. INI 파일을 참조 하세요 [WriteProfileString](/windows/desktop/api/winbase/nf-winbase-writeprofilestringa) Windows SDK에 있습니다.  
   
 ##  <a name="getclipboarddata"></a>  COleServerItem::GetClipboardData  
  지정 된 입력 하려면이 함수를 호출 [COleDataSource](../../mfc/reference/coledatasource-class.md) 개체를 호출 하면 클립보드에 복사 하는 모든 데이터로 [CopyToClipboard](#copytoclipboard) (경우에 동일한 데이터를 전송는 있습니다 호출 [DoDragDrop](#dodragdrop)).  
@@ -329,14 +329,14 @@ void GetEmbedSourceData(LPSTGMEDIUM lpStgMedium);
   
 ### <a name="parameters"></a>매개 변수  
  *lpStgMedium*  
- 에 대 한 포인터를 [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) OLE 항목에 대 한 CF_EMBEDSOURCE 데이터를 받을 구조입니다.  
+ 에 대 한 포인터를 [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) OLE 항목에 대 한 CF_EMBEDSOURCE 데이터를 받을 구조입니다.  
   
 ### <a name="remarks"></a>설명  
  이 형식 항목의 기본 데이터를 포함합니다. 구현 해야 합니다는 `Serialize` 제대로 작동 하려면이 함수에 대 한 멤버 함수입니다.  
   
  결과 수를 사용 하 여 다음 데이터 원본에 추가 하는 수 [COleDataSource::CacheData](../../mfc/reference/coledatasource-class.md#cachedata)합니다. 이 함수에서 자동으로 호출 됩니다 [COleServerItem::OnGetClipboardData](#ongetclipboarddata)합니다.  
   
- 자세한 내용은 [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) Windows SDK에 있습니다.  
+ 자세한 내용은 [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) Windows SDK에 있습니다.  
   
 ##  <a name="getitemname"></a>  COleServerItem::GetItemName  
  항목의 이름을 가져오려면이 함수를 호출 합니다.  
@@ -360,7 +360,7 @@ BOOL GetLinkSourceData(LPSTGMEDIUM lpStgMedium);
   
 ### <a name="parameters"></a>매개 변수  
  *lpStgMedium*  
- 에 대 한 포인터를 [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) OLE 항목에 대 한 CF_LINKSOURCE 데이터를 받을 구조입니다.  
+ 에 대 한 포인터를 [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) OLE 항목에 대 한 CF_LINKSOURCE 데이터를 받을 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -370,7 +370,7 @@ BOOL GetLinkSourceData(LPSTGMEDIUM lpStgMedium);
   
  결과 사용 하 여 데이터 원본에 추가할 수 있습니다 [COleDataSource::CacheData](../../mfc/reference/coledatasource-class.md#cachedata)합니다. 이 함수에서 자동으로 호출 됩니다 [OnGetClipboardData](#ongetclipboarddata)합니다.  
   
- 자세한 내용은 [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) Windows SDK에 있습니다.  
+ 자세한 내용은 [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) Windows SDK에 있습니다.  
   
 ##  <a name="getobjectdescriptordata"></a>  COleServerItem::GetObjectDescriptorData  
  OLE 항목에 대 한 CF_OBJECTDESCRIPTOR 데이터를 가져오려면이 함수를 호출 합니다.  
@@ -390,12 +390,12 @@ void GetObjectDescriptorData(
  OLE 항목의 크기입니다. NULL 일 수 있습니다.  
   
  *lpStgMedium*  
- 에 대 한 포인터를 [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) OLE 항목에 대 한 CF_OBJECTDESCRIPTOR 데이터를 받을 구조입니다.  
+ 에 대 한 포인터를 [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) OLE 항목에 대 한 CF_OBJECTDESCRIPTOR 데이터를 받을 구조입니다.  
   
 ### <a name="remarks"></a>설명  
  정보를에 복사 됩니다는 `STGMEDIUM` 가리키는 구조 *lpStgMedium*합니다. 이 형식을 선택 하 여 붙여넣기 대화에 필요한 정보를 포함 합니다.  
   
- 자세한 내용은 [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) Windows SDK에 있습니다.  
+ 자세한 내용은 [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) Windows SDK에 있습니다.  
   
 ##  <a name="isconnected"></a>  COleServerItem::IsConnected  
  OLE 항목이 연결 되어 있는지 확인 하려면이 함수를 호출 합니다.  
@@ -476,14 +476,14 @@ virtual void OnDoVerb(LONG iVerb);
 |- 2|별도 창에서 항목 편집|OLEIVERB_OPEN|  
 |- 3|항목 숨기기|OLEIVERB_HIDE|  
   
- 일반적으로-1 값은 다른 동사에 대 한 별칭입니다. 열린 편집 지원 되지 않는 경우-2는 것과 동일한 효과가-1입니다. 추가 값을 참조 하세요 [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508) Windows SDK에 있습니다.  
+ 일반적으로-1 값은 다른 동사에 대 한 별칭입니다. 열린 편집 지원 되지 않는 경우-2는 것과 동일한 효과가-1입니다. 추가 값을 참조 하세요 [IOleObject::DoVerb](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb) Windows SDK에 있습니다.  
   
 ### <a name="remarks"></a>설명  
  Microsoft Foundation Class 라이브러리를 사용 하 여 컨테이너 응용 프로그램으로 작성 된 경우 경우이 함수는 호출 될 때를 [COleClientItem::Activate](../../mfc/reference/coleclientitem-class.md#activate) 멤버 함수는 해당 `COleClientItem` 개체 라고 합니다. 기본 구현 호출 합니다 [은 OnShow](#onshow) OLEIVERB_SHOW를 기본 동사를 지정 하는 경우 멤버 함수 [OnOpen](#onopen) 보조 동사 또는 OLEIVERB_OPEN를 지정 하는 경우 및 [OnHide ](#onhide) OLEIVERB_HIDE를 지정 합니다. 기본 구현 호출 `OnShow` 하는 경우 *iVerb* 위에 나열 된 동사 중 하나가 아닙니다.  
   
  기본 동사에 항목이 표시 되지 않는 경우이 함수를 재정의 합니다. 예를 들어, 항목은 소리 녹음 하는 경우 해당 기본 동사는 재생 되지 해야 항목을 재생 하려면 서버 응용 프로그램을 표시 합니다.  
   
- 자세한 내용은 [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508) Windows SDK에 있습니다.  
+ 자세한 내용은 [IOleObject::DoVerb](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb) Windows SDK에 있습니다.  
   
 ##  <a name="ondraw"></a>  Coleserveritem:: Ondraw  
  OLE 항목을 메타 파일로 렌더링 하기 위해 프레임 워크에서 호출 됩니다.  
@@ -631,7 +631,7 @@ virtual BOOL OnInitFromData(
 ### <a name="remarks"></a>설명  
  하는 경우 *bCreation* 가 TRUE 인 컨테이너는 현재 선택에 따라 새 개체 삽입을 구현 하는 경우이 함수를 호출 합니다. 선택한 데이터는 새 OLE 항목을 만들 때 사용 됩니다. 예를 들어 경우 스프레드시트 프로그램에서 셀 범위를 선택한 다음 차트를 만드는 새 개체 삽입을 사용 하는 값에에서 따라 선택한 범위. 기본 구현은 아무 작업도 수행하지 않습니다. 허용 되는 형식에서 제공 하는 것에서 선택 하려면이 함수를 재정의할 *pDataObject* 및 제공 되는 데이터에 따라 OLE 항목을 초기화 합니다. 이 고급 재정의할 수 있습니다.  
   
- 자세한 내용은 [IOleObject::InitFromData](http://msdn.microsoft.com/library/windows/desktop/ms688510) Windows SDK에 있습니다.  
+ 자세한 내용은 [IOleObject::InitFromData](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-initfromdata) Windows SDK에 있습니다.  
   
 ##  <a name="onopen"></a>  COleServerItem::OnOpen  
  서버 응용 프로그램의 개별 인스턴스 대신 내부 OLE 항목을 표시 하기 위해 프레임 워크에서 호출 됩니다.  
@@ -645,7 +645,7 @@ virtual void OnOpen();
   
  OLE 항목을 열 때 특수 한 처리를 수행 하려는 경우이 함수를 재정의 합니다. 특히 열릴 때 링크를 선택 영역을 설정 하려는 연결 된 항목을 사용 하 여 공통 됩니다.  
   
- 자세한 내용은 [IOleClientSite::OnShowWindow](http://msdn.microsoft.com/library/windows/desktop/ms688658) Windows SDK에 있습니다.  
+ 자세한 내용은 [IOleClientSite::OnShowWindow](/windows/desktop/api/oleidl/nf-oleidl-ioleclientsite-onshowwindow) Windows SDK에 있습니다.  
   
 ##  <a name="onqueryupdateitems"></a>  COleServerItem::OnQueryUpdateItems  
  현재 서버 문서의 연결된 된 항목이 만료 되는지 여부를 확인 하기 위해 프레임 워크에서 호출 됩니다.  
@@ -671,10 +671,10 @@ virtual BOOL OnRenderData(
   
 ### <a name="parameters"></a>매개 변수  
  *lpFormatEtc*  
- 가리키는 합니다 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 정보가 요청 된 형식을 지정 하는 구조입니다.  
+ 가리키는 합니다 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 정보가 요청 된 형식을 지정 하는 구조입니다.  
   
  *lpStgMedium*  
- 가리키는 [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) 구조는 데이터가 반환 됩니다.  
+ 가리키는 [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) 구조는 데이터가 반환 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -686,7 +686,7 @@ virtual BOOL OnRenderData(
   
  이 고급 재정의할 수 있습니다. 요청 된 형식 및 미디어 데이터를 제공 하려면이 함수를 재정의 합니다. 데이터에 따라 대신이 함수의 다른 버전 중 하나를 재정의 하는 것이 좋습니다. 데이터가 작고 크기가 고정 되어 있으면 재정의 `OnRenderGlobalData`합니다. 데이터 파일에는 가변 크기의 경우 재정의 `OnRenderFileData`합니다.  
   
- 자세한 내용은 [있음](http://msdn.microsoft.com/library/windows/desktop/ms678431), [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812)를 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177), 및 [TYMED](http://msdn.microsoft.com/library/windows/desktop/ms691227) Windows SDK의 합니다.  
+ 자세한 내용은 [있음](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata), [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium)를 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc), 및 [TYMED](/windows/desktop/api/objidl/ne-objidl-tagtymed) Windows SDK의 합니다.  
   
 ##  <a name="onrenderfiledata"></a>  COleServerItem::OnRenderFileData  
  저장소 매체 파일인 경우 지정 된 형식의 데이터를 검색 하기 위해 프레임 워크에서 호출 됩니다.  
@@ -699,7 +699,7 @@ virtual BOOL OnRenderFileData(
   
 ### <a name="parameters"></a>매개 변수  
  *lpFormatEtc*  
- 가리키는 합니다 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 정보가 요청 된 형식을 지정 하는 구조입니다.  
+ 가리키는 합니다 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 정보가 요청 된 형식을 지정 하는 구조입니다.  
   
  *pFile*  
  가리키는 `CFile` 개체는 데이터를 렌더링할 수 있습니다.  
@@ -712,7 +712,7 @@ virtual BOOL OnRenderFileData(
   
  이 고급 재정의할 수 있습니다. 요청 된 형식 및 미디어 데이터를 제공 하려면이 함수를 재정의 합니다. 데이터에 따라 대신이 함수의 다른 버전 중 하나를 재정의 하는 것이 좋습니다. 여러 저장소 미디어를 처리 하려는 경우 재정의할 [OnRenderData](#onrenderdata)합니다. 데이터 파일에는 가변 크기의 경우 재정의 [OnRenderFileData](#onrenderfiledata)합니다.  
   
- 자세한 내용은 [있음](http://msdn.microsoft.com/library/windows/desktop/ms678431) 하 고 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK의 합니다.  
+ 자세한 내용은 [있음](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) 하 고 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK의 합니다.  
   
 ##  <a name="onrenderglobaldata"></a>  COleServerItem::OnRenderGlobalData  
  지정 된 저장소 미디어가 전역 메모리 때 지정 된 형식의 데이터를 검색 하기 위해 프레임 워크에서 호출 됩니다.  
@@ -725,7 +725,7 @@ virtual BOOL OnRenderGlobalData(
   
 ### <a name="parameters"></a>매개 변수  
  *lpFormatEtc*  
- 가리키는 합니다 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 정보가 요청 된 형식을 지정 하는 구조입니다.  
+ 가리키는 합니다 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 정보가 요청 된 형식을 지정 하는 구조입니다.  
   
  *phGlobal*  
  반환 될 데이터는 전역 메모리 핸들을 가리킵니다. 메모리가 없습니다.이 할당 된 경우이 매개 변수는 NULL 일 수 있습니다.  
@@ -740,7 +740,7 @@ virtual BOOL OnRenderGlobalData(
   
  이 고급 재정의할 수 있습니다. 요청 된 형식 및 미디어 데이터를 제공 하려면이 함수를 재정의 합니다. 데이터에 따라 대신이 함수의 다른 버전 중 하나를 재정의 하는 것이 좋습니다. 여러 저장소 미디어를 처리 하려는 경우 재정의할 [OnRenderData](#onrenderdata)합니다. 데이터 파일에는 가변 크기의 경우 재정의 [OnRenderFileData](#onrenderfiledata)합니다.  
   
- 자세한 내용은 [있음](http://msdn.microsoft.com/library/windows/desktop/ms678431) 하 고 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK의 합니다.  
+ 자세한 내용은 [있음](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) 하 고 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK의 합니다.  
   
 ##  <a name="onsetcolorscheme"></a>  COleServerItem::OnSetColorScheme  
  OLE 항목을 편집할 때 사용할 색상표를 지정 하기 위해 프레임 워크에서 호출 됩니다.  
@@ -751,15 +751,15 @@ virtual BOOL OnSetColorScheme(const LOGPALETTE* lpLogPalette);
   
 ### <a name="parameters"></a>매개 변수  
  *lpLogPalette*  
- Windows에 대 한 포인터 [LOGPALETTE](http://msdn.microsoft.com/library/windows/desktop/dd145040) 구조입니다.  
+ Windows에 대 한 포인터 [LOGPALETTE](/windows/desktop/api/wingdi/ns-wingdi-taglogpalette) 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  색상표 사용 될 경우 0이 아닌 값 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- Microsoft Foundation Class 라이브러리를 사용 하 여 컨테이너 응용 프로그램을 작성 하는 경우이 함수는 호출 될 때 합니다 [IOleObject::SetColorScheme](http://msdn.microsoft.com/library/windows/desktop/ms683971) 함수는 해당 `COleClientItem` 개체 라고 합니다. 기본 구현은 FALSE를 반환합니다. 권장 되는 색상표를 사용 하려는 경우이 함수를 재정의 합니다. 서버 응용 프로그램은 제안 된 색상표를 사용 하 여 필요가 없습니다.  
+ Microsoft Foundation Class 라이브러리를 사용 하 여 컨테이너 응용 프로그램을 작성 하는 경우이 함수는 호출 될 때 합니다 [IOleObject::SetColorScheme](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-setcolorscheme) 함수는 해당 `COleClientItem` 개체 라고 합니다. 기본 구현은 FALSE를 반환합니다. 권장 되는 색상표를 사용 하려는 경우이 함수를 재정의 합니다. 서버 응용 프로그램은 제안 된 색상표를 사용 하 여 필요가 없습니다.  
   
- 자세한 내용은 [IOleObject::SetColorScheme](http://msdn.microsoft.com/library/windows/desktop/ms683971) Windows SDK에 있습니다.  
+ 자세한 내용은 [IOleObject::SetColorScheme](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-setcolorscheme) Windows SDK에 있습니다.  
   
 ##  <a name="onsetdata"></a>  COleServerItem::OnSetData  
  지정된 된 데이터를 사용 하 여 OLE 항목의 데이터를 대체 하기 위해 프레임 워크에서 호출 됩니다.  
@@ -773,10 +773,10 @@ virtual BOOL OnSetData(
   
 ### <a name="parameters"></a>매개 변수  
  *lpFormatEtc*  
- 에 대 한 포인터를 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 구조 데이터의 형식을 지정 합니다.  
+ 에 대 한 포인터를 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 구조 데이터의 형식을 지정 합니다.  
   
  *lpStgMedium*  
- 에 대 한 포인터를 [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) 데이터 상주 하는 구조체입니다.  
+ 에 대 한 포인터를 [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) 데이터 상주 하는 구조체입니다.  
   
  *bRelease*  
  함수 호출을 완료 한 후 저장소 미디어의 소유권을 권한이 있는 사용자를 나타냅니다. 호출자가 저장소 매체를 대신 하 여 할당 된 리소스를 해제 하기 위해 담당자 결정 합니다. 호출자에 게가 작업을 설정 하 여 수행 *bRelease*합니다. 하는 경우 *bRelease* 는 0이 아닌 경우 서버 항목 소유권을 사용 하 여를 마쳤을 때 미디어를 해제 합니다. 때 *bRelease* 이 0 이면 호출자에 게 소유권을 갖고 이며 서버 항목은 호출 기간에만 저장 미디어를 사용할 수 있습니다.  
@@ -785,11 +785,11 @@ virtual BOOL OnSetData(
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 성공적으로 가져온이 될 때까지 서버 항목은 데이터의 소유권을 사용 하지 않습니다. 즉, 고려 하지 않습니다 소유권 0을 반환 하는 경우. 호출 하 여 저장소 매체 소유권을 사용 하는 데이터 원본의 경우 해제 합니다 [ReleaseStgMedium](http://msdn.microsoft.com/library/windows/desktop/ms693491) 함수입니다.  
+ 성공적으로 가져온이 될 때까지 서버 항목은 데이터의 소유권을 사용 하지 않습니다. 즉, 고려 하지 않습니다 소유권 0을 반환 하는 경우. 호출 하 여 저장소 매체 소유권을 사용 하는 데이터 원본의 경우 해제 합니다 [ReleaseStgMedium](/windows/desktop/api/ole2/nf-ole2-releasestgmedium) 함수입니다.  
   
  기본 구현은 아무 작업도 수행하지 않습니다. 지정된 된 데이터를 사용 하 여 OLE 항목의 데이터를 대체 하려면이 함수를 재정의 합니다. 이 고급 재정의할 수 있습니다.  
   
- 자세한 내용은 [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812), [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177), 및 [ReleaseStgMedium](http://msdn.microsoft.com/library/windows/desktop/ms693491) Windows sdk에서입니다.  
+ 자세한 내용은 [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium), [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc), 및 [ReleaseStgMedium](/windows/desktop/api/ole2/nf-ole2-releasestgmedium) Windows sdk에서입니다.  
   
 ##  <a name="onsetextent"></a>  COleServerItem::OnSetExtent  
  컨테이너 문서에 사용 가능한 공간을 OLE 항목을 설명 하기 위해 프레임 워크에서 호출 됩니다.  

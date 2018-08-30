@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48bc0f76ce5b8b3c1bafe3fcd0d6d793a217ae63
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 1731c32506ec0e9c4c392ff9429e28e5b71b3c7c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849697"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221134"
 ---
 # <a name="csettingsstore-class"></a>CSettingsStore Class
 Windows API 함수를 래핑하여 레지스트리에 액세스하는 데 사용할 수 있는 개체 지향 인터페이스를 제공합니다.  
@@ -71,7 +71,7 @@ class CSettingsStore : public CObject
 ## <a name="remarks"></a>설명  
  멤버 함수 `CreateKey` 고 `Open` 매우 비슷합니다. 레지스트리 키가 이미 있는 경우 `CreateKey` 고 `Open` 동일한 방식으로 함수입니다. 그러나, 레지스트리 키가 없으면 `CreateKey` 반면 만듭니다 `Open` 오류 값을 반환 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 열기 및 읽기 메서드를 사용 하는 방법에 설명 합니다 `CSettingsStore` 클래스입니다. 이 코드 조각은의 일부인 합니다 [도구 팁 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_ToolTipDemo#1](../../mfc/reference/codesnippet/cpp/csettingsstore-class_1.cpp)]  
@@ -112,8 +112,7 @@ virtual BOOL CreateKey(LPCTSTR pszPath);
  `CreateKey` 사용 하 여 `m_hKey` 레지스트리 질문의 루트 라고 합니다. 검색할 *pszPath* 의 하위 키로 `m_hKey`합니다. 키가 없으면 `CreateKey` 만듭니다. 그렇지 않으면 키를 엽니다. `CreateKey` 설정한 `m_hKey` 만들거나 열린 키입니다.  
   
 ##  <a name="csettingsstore"></a>  CSettingsStore::CSettingsStore  
- 
-          `CSettngsStore` 개체를 만듭니다.  
+ `CSettngsStore` 개체를 만듭니다.  
   
 ```  
 CSettingsStore(
@@ -131,7 +130,7 @@ CSettingsStore(
 ### <a name="remarks"></a>설명  
  경우 *bAdmin* TRUE로 설정 되는 `m_hKey` 멤버 변수를로 **HKEY_LOCAL_MACHINE**합니다. 설정 하는 경우 *bAdmin* FALSE로 `m_hKey` 로 설정 되어 **HKEY_CURRENT_USER**합니다.  
   
- 액세스 보안에 따라 달라 집니다 합니다 *bReadOnly* 매개 변수입니다. 하는 경우 *bReadonly* 은 FALSE 보안 액세스로 설정 됩니다 **KEY_ALL_ACCESS**합니다. 하는 경우 *bReadyOnly* 가 TRUE 인 액세스 보안의 조합으로 설정 됩니다 **이, KEY_NOTIFY** 하 고 **KEY_ENUMERATE_SUB_KEYS**합니다. 레지스트리 함께 보안 액세스에 대 한 자세한 내용은 참조 하세요. [레지스트리 키 보안 액세스 권한과](http://msdn.microsoft.com/library/windows/desktop/ms724878)합니다.  
+ 액세스 보안에 따라 달라 집니다 합니다 *bReadOnly* 매개 변수입니다. 하는 경우 *bReadonly* 은 FALSE 보안 액세스로 설정 됩니다 **KEY_ALL_ACCESS**합니다. 하는 경우 *bReadyOnly* 가 TRUE 인 액세스 보안의 조합으로 설정 됩니다 **이, KEY_NOTIFY** 하 고 **KEY_ENUMERATE_SUB_KEYS**합니다. 레지스트리 함께 보안 액세스에 대 한 자세한 내용은 참조 하세요. [레지스트리 키 보안 액세스 권한과](/windows/desktop/SysInfo/registry-key-security-and-access-rights)합니다.  
   
  에 대 한 소멸자 `CSettingsStore` 해제 `m_hKey` 자동으로 합니다.  
   

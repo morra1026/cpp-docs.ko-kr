@@ -9,15 +9,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c0bca9d1f60820b7ceeba633eead0aa9e572be5
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8530a3c896d5c1dfa6568e166b9a0a43c0f0b0fc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42612912"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208089"
 ---
 # <a name="operator-type"></a>연산자 Type^
-[Windows::UI::Xaml::Interop::TypeName](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) 을 `Platform::Type`으로 변환할 수 있습니다.  
+변환할 수 있습니다 [Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) 에 `Platform::Type`입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -26,16 +26,16 @@ Operator Type^(Windows::UI::Xaml::Interop::TypeName typeName)
 ```  
   
 ### <a name="return-value"></a>반환 값  
- `Platform::Type` Windows::UI::Xaml::Interop::TypeName [이 제공되면](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx)을 반환합니다.  
+ 반환 된 `Platform::Type` 주어 지 면을 [Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx)합니다.  
   
 ### <a name="remarks"></a>설명  
- `TypeName` 은 형식 정보를 나타내기 위한 언어 중립 Windows 런타임 구조체입니다. [Platform::Type](../cppcx/platform-type-class.md) 은 C++에서만 사용되며 ABI(응용 프로그램 이진 인터페이스) 전반에서 전달될 수 없습니다. 다음은 `TypeName`Navigate [함수에서](http://msdn.microsoft.com/library/windows/apps/hh702394.aspx) 을 사용하는 한 가지 방법입니다.  
+ `TypeName` 은 형식 정보를 나타내기 위한 언어 중립 Windows 런타임 구조체입니다. [Platform::Type](../cppcx/platform-type-class.md) 은 C++에서만 사용되며 ABI(응용 프로그램 이진 인터페이스) 전반에서 전달될 수 없습니다. 사용 하 여 다음과 같습니다 `TypeName`를 [탐색](https://msdn.microsoft.com/library/windows/apps/hh702394.aspx) 함수:  
   
 ```  
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);  
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 `TypeName` 과 `Type`간을 변환하는 방법을 보여 줍니다.  
   
 ```  

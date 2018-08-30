@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3227ebd4767bd7639bb5e5d8d5a1c73e26079dc
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 5a0f00e9ad0a94aaa96afb3031b57e1c7da703dc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953423"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208191"
 ---
 # <a name="queryinterface"></a>QueryInterface
-기본 COM 메커니즘을 사용 하는 것 메커니즘 개체는 정적으로 (해당 되 고 인스턴스화되기 전에)를 제공 하는 기능이 표현할 수 있지만, 합니다 `IUnknown` 메서드 호출 [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521)합니다.  
+기본 COM 메커니즘을 사용 하는 것 메커니즘 개체는 정적으로 (해당 되 고 인스턴스화되기 전에)를 제공 하는 기능이 표현할 수 있지만, 합니다 `IUnknown` 메서드 호출 [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_))합니다.  
   
  모든 인터페이스에서 파생 됩니다 `IUnknown`이므로 모든 인터페이스의 구현에 `QueryInterface`입니다. 구현에 관계 없이이 메서드는 호출자가 포인터 인터페이스의 IID를 사용 하 여 개체를 쿼리 합니다. 개체가 해당 인터페이스를 지원 하면 `QueryInterface` 인터페이스에 대 한 포인터도 호출 하는 동안 검색 `AddRef`합니다. 그렇지 않으면 E_NOINTERFACE 오류 코드를 반환합니다.  
   
@@ -34,5 +34,5 @@ ms.locfileid: "38953423"
   
 ## <a name="see-also"></a>참고 항목  
  [COM 소개](../atl/introduction-to-com.md)   
- [개체에서 QueryInterface: 탐색](http://msdn.microsoft.com/library/windows/desktop/ms687230)
+ [개체에서 QueryInterface: 탐색](/windows/desktop/com/queryinterface--navigating-in-an-object)
 

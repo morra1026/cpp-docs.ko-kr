@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 873527b76e9194fb4b38ee2f5598cf07028e0449
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6a98c9016281a67211a41d1c63fcb9886a0b3c35
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591513"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222512"
 ---
 # <a name="dispinterface"></a>dispinterface
 
@@ -40,7 +40,7 @@ ms.locfileid: "42591513"
 
 기본 클래스를 지정하지 않으면 디스패치 인터페이스가 `IDispatch`에서 파생됩니다. 디스패치 인터페이스의 멤버에 대한 [id](../windows/id.md) 를 지정해야 합니다.
 
-MIDL 문서에 있는 [dispinterface](http://msdn.microsoft.com/library/windows/desktop/aa366802) 의 사용 예:
+사용 예 [dispinterface](/windows/desktop/Midl/dispinterface) MIDL 설명서에서:
 
 ```cpp
 dispinterface helloPro
@@ -49,7 +49,7 @@ dispinterface helloPro
 
 **dispinterface** 특성에 대해 유효하지 않습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 [dispinterface](../windows/bindable.md) 사용법에 대한 예는 **bindable**의 예를 참조하세요.
 

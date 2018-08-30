@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f4e8a20ef31f4379e7ddf6b7425fd7ecc70294a
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 7c5f66975d8d9904d1a4a8f2d26d4fe98ecfdd40
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42572858"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223027"
 ---
 # <a name="localeconv"></a>localeconv
 
@@ -79,7 +79,7 @@ n_sep_by_space|통화 기호가 음수 서식이 지정된 통화 수량에 대�
 p_sign_posn|음수가 아닌 서식이 지정된 통화 수량에서 양수 부호의 위치입니다.
 n_sign_posn|음수 서식이 지정된 통화 수량에서 양수 부호의 위치입니다.
 
-지정 된 멤버를 제외 하 고는 **lconv** 있는 구조 `char *` 고 `wchar_t *` 버전은 문자열에 대 한 포인터입니다. 해당 하는 이러한 **""** (또는 **L ""** 에 대 한 **wchar_t \*** ) 길이가 0 인 중 하나 이거나 현재 로캘에서 지원 되지 않습니다. 사실은 **decimal_point** 하 고 **_W_decimal_point** 는 항상 지원 되며 0이 아닌 길이의 합니다.
+지정 된 멤버를 제외 하 고는 **lconv** 있는 구조 `char *` 고 `wchar_t *` 버전은 문자열에 대 한 포인터입니다. 해당 하는 이러한 **""** (또는 **L ""** 에 대 한 **wchar_t** <strong>\*</strong>)은 길이가 0 또는 현재에서 지원 되지 않습니다 로캘입니다. 사실은 **decimal_point** 하 고 **_W_decimal_point** 는 항상 지원 되며 0이 아닌 길이의 합니다.
 
 합니다 **char** 구조체의 멤버는 음수가 아닌 작은 숫자 이며 문자가 아닙니다. **CHAR_MAX**와 동일한 이러한 멤버는 현재 로캘에서 지원되지 않습니다.
 

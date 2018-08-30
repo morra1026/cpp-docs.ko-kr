@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c6194addc8ae950cf5cdcb8b7946ab4f5f6c042
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 1f99f79e0e5f4f53356ed96528e310465b3ed2f0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39460712"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220092"
 ---
 # <a name="scope-c"></a>범위 (C++)
 
@@ -41,7 +41,7 @@ ms.locfileid: "39460712"
 
 - **로컬 범위** 함수 또는 람다, 매개 변수 이름을 포함 하 여 내에서 선언 된 이름은 지역 범위를 갖습니다. 이러한는 "지역" 라고도 합니다. 만 함수나 람다 본문의 끝에 선언 된 지점에서 표시 됩니다. 로컬 범위는이 문서의 뒷부분에서 설명 하는 블록 범위 종류입니다.
 
-- **클래스 범위** 클래스 멤버 이름 정의 전체에서 클래스 선언 시점에 관계 없이 확장 하는 클래스 범위를 갖습니다. 클래스 멤버 액세스 가능성은 향후에 의해 제어 합니다 **공개**를 **개인**, 및 **보호** 키워드입니다. Public 또는 protected 멤버는 멤버 선택 연산자를 사용해 서만 액세스할 수 있습니다 (**합니다.** 또는 **->**) 또는 멤버 포인터 연산자 (**.\***  나 **-> \***).
+- **클래스 범위** 클래스 멤버 이름 정의 전체에서 클래스 선언 시점에 관계 없이 확장 하는 클래스 범위를 갖습니다. 클래스 멤버 액세스 가능성은 향후에 의해 제어 합니다 **공개**를 **개인**, 및 **보호** 키워드입니다. Public 또는 protected 멤버는 멤버 선택 연산자를 사용해 서만 액세스할 수 있습니다 (**합니다.** 또는 **->**) 또는 멤버 포인터 연산자 (**.** <strong>\*</strong> 하거나 **->** <strong>\*</strong>).
 
 - **문 범위의** 에 선언 된 이름은 **에 대 한**, **경우**를 **하는 동안**, 또는 **전환** 문이 끝날 때까지 표시 됩니다.는 문 블록입니다.
 
@@ -114,7 +114,7 @@ class Account *Checking = new class Account( Account );
 > [!NOTE]
 > 이 예제와 같이 식별자 이름을 다시 사용하는 것은 좋지 않은 프로그래밍 스타일로 간주됩니다.
 
- 포인터에 대 한 자세한 내용은 참조 하세요. [파생 형식](http://msdn.microsoft.com/aa14183c-02fe-4d81-95fe-beddb0c01c7c)합니다. 클래스 개체의 선언 및 초기화에 대 한 정보를 참조 하세요 [클래스, 구조체 및 공용 구조체](../cpp/classes-and-structs-cpp.md)합니다. 사용에 관한 정보를 **새** 및 **삭제** 사용 가능한 저장소 연산자를 참조 하십시오 [새 및 delete 연산자](new-and-delete-operators.md)합니다.
+ 포인터에 대 한 자세한 내용은 참조 하세요. [파생 형식](https://msdn.microsoft.com/aa14183c-02fe-4d81-95fe-beddb0c01c7c)합니다. 클래스 개체의 선언 및 초기화에 대 한 정보를 참조 하세요 [클래스, 구조체 및 공용 구조체](../cpp/classes-and-structs-cpp.md)합니다. 사용에 관한 정보를 **새** 및 **삭제** 사용 가능한 저장소 연산자를 참조 하십시오 [새 및 delete 연산자](new-and-delete-operators.md)합니다.
 
 ## <a name="hiding-names-with-global-scope"></a>전역 범위가 있는 이름 숨기기
 

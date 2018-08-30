@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c85c19e4f23f7c6e9454793ac86a574614ec2fae
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 81046c8472a2a741d5e59622986326ab4b399871
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33847249"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207925"
 ---
 # <a name="ltfilesystemgt"></a>&lt;filesystem&gt;
 
@@ -39,7 +39,7 @@ using namespace std::experimental::filesystem::v1;
 ```
 
 > [!IMPORTANT]
-> 현재 Visual Studio 2017 릴리스에서 \<파일 시스템 > 머리글을 아직 c + + 표준입니다. Visual C++ 2017에서는 [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)에 있는 최종 초안 표준을 구현합니다.
+> 현재 Visual Studio 2017 릴리스에서 \<파일 시스템 > 헤더를 아직 c + + 표준입니다. Visual C++ 2017에서는 [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)에 있는 최종 초안 표준을 구현합니다.
 
 이 헤더는 Microsoft Windows 및 Posix의 광범위한 두 호스트 운영 체제 클래스 중 하나에 대해 파일 시스템을 지원합니다.
 
@@ -126,9 +126,9 @@ using namespace std::experimental::filesystem::v1;
 
 ## <a name="enumerations"></a>열거형
 
-|이름|설명|
+|name|설명|
 |----------|-----------------|
-|[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|[copy_file](http://msdn.microsoft.com/4af7a9b0-8861-45ed-b84e-0307f0669d60)과 함께 사용되는 열거형이며 대상 파일이 이미 있는 경우의 동작을 결정합니다.|
+|[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|[copy_file](https://msdn.microsoft.com/4af7a9b0-8861-45ed-b84e-0307f0669d60)과 함께 사용되는 열거형이며 대상 파일이 이미 있는 경우의 동작을 결정합니다.|
 |[directory_options](../standard-library/filesystem-enumerations.md#directory_options)|디렉터리 반복기에 대한 옵션을 지정하는 열거형입니다.|
 |[file_type](../standard-library/filesystem-enumerations.md#file_type)|파일 형식에 대한 열거형입니다.|
 |[perms](../standard-library/filesystem-enumerations.md#perms)|사용 권한 및 사용 권한에 대한 옵션을 전달하는 데 사용되는 비트 마스크 형식입니다.|

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 661735e91084bad45553de71e80a599afd674028
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: f07efa6ebbea70f83803238bf73e2d3e806ea457
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336828"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204571"
 ---
 # <a name="persistence-of-ole-controls"></a>OLE 컨트롤의 지속성
 OLE 컨트롤의 한 가지 기능은 속성 지 속성 (또는 serialization)는 OLE 컨트롤을 읽거나을 파일 또는 스트림에서 속성 값을 쓸 수 있습니다. 컨테이너 응용 프로그램을 serialization을 사용 응용 프로그램에 컨트롤을 삭제 한 후에 컨트롤의 속성 값을 저장할 수 있습니다. OLE 컨트롤의 속성 값을 파일에서 읽을 수 또는 나중에 스트림이 때 컨트롤의 새 인스턴스를 생성 합니다.  
@@ -93,7 +93,7 @@ hBlobDefault
   
 -   블록 실제 이진 데이터를 포함 하는 메모리입니다.  
   
- 사실은 `PX_Blob` 는 Windows를 사용 하 여 메모리를 할당 [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) API, BLOB 형식의 속성을 로드 하는 경우. 이 메모리를 해제 책임이 있습니다. 컨트롤의 소멸자를 호출 해야 하므로 [GlobalFree](http://msdn.microsoft.com/library/windows/desktop/aa366579) 무료에 대 한 핸들 BLOB 유형의 속성에 컨트롤에 할당 된 메모리를 설정 합니다.  
+ 사실은 `PX_Blob` 는 Windows를 사용 하 여 메모리를 할당 [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) API, BLOB 형식의 속성을 로드 하는 경우. 이 메모리를 해제 책임이 있습니다. 컨트롤의 소멸자를 호출 해야 하므로 [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree) 무료에 대 한 핸들 BLOB 유형의 속성에 컨트롤에 할당 된 메모리를 설정 합니다.  
   
 ##  <a name="px_bool"></a>  PX_Bool  
  사용자 컨트롤 내에서이 함수를 호출 `DoPropExchange` 멤버 함수를 serialize 또는 BOOL 형식의 속성을 초기화 합니다.  

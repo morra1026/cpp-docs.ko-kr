@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 731ec7b359995fc8ecbfdeae89595442d8186eeb
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 7a472de31695ab6038cab9ba0158580f3d305194
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851394"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212490"
 ---
 # <a name="coleexception-class"></a>COleException 클래스
 OLE 작업과 관련된 예외 조건을 나타냅니다.  
@@ -77,9 +77,9 @@ SCODE m_sc;
 ### <a name="remarks"></a>설명  
  이 변수의 값을 설정한 [AfxThrowOleException](exception-processing.md#afxthrowoleexception)합니다.  
   
- SCODE에 대 한 자세한 내용은 참조 하세요. [COM 오류 코드 구조](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK에 있습니다.  
+ SCODE에 대 한 자세한 내용은 참조 하세요. [COM 오류 코드 구조](/windows/desktop/com/structure-of-com-error-codes) Windows SDK에 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCOleContainer#22](../../mfc/codesnippet/cpp/coleexception-class_1.cpp)]  
   
 ##  <a name="process"></a>  COleException::Process  
@@ -101,9 +101,9 @@ static SCODE PASCAL Process(const CException* pAnyException);
 > [!NOTE]
 >  이 함수는 **정적**합니다.  
   
- SCODE에 대 한 자세한 내용은 참조 하세요. [COM 오류 코드 구조](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK에 있습니다.  
+ SCODE에 대 한 자세한 내용은 참조 하세요. [COM 오류 코드 구조](/windows/desktop/com/structure-of-com-error-codes) Windows SDK에 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [coledispatchdriver:: Createdispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch)합니다.  
   
 ## <a name="see-also"></a>참고 항목  

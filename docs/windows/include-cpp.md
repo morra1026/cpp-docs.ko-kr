@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8fe604074b843e7c0b76c2e671e0abd9e40770a7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 232dfb803e9327b857d26a4294786c2742a1143c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598462"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215970"
 ---
 # <a name="include-c"></a>include(C++)
 
@@ -45,9 +45,9 @@ ms.locfileid: "42598462"
 
 **포함** c + + 특성을 사용 하면는 `#include` 문 아래에 배치 하는 `import "docobj.idl"` 생성 된.idl 파일의 문.
 
-합니다 **포함** c + + 특성에 동일한 기능을 합니다 [포함](http://msdn.microsoft.com/library/windows/desktop/aa367052) MIDL 특성입니다.
+합니다 **포함** c + + 특성에 동일한 기능을 합니다 [포함](/windows/desktop/Midl/include) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드를 사용 하는 방법의 예를 보여 줍니다 **포함**합니다. 예를 들어 파일 include.h만 포함 된 `#include` 문입니다.
 

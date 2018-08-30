@@ -13,16 +13,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a4967be81e45e52ce7c321ceb552b13a1dc59bd0
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2775e0348f6bfe1e7fe960a105ebf0c31fcaae96
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604892"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214833"
 ---
 # <a name="walkthrough-creating-a-uwp-app-using-wrl-and-media-foundation"></a>연습: WRL 및 Media Foundation을 사용 하 여 UWP 앱 만들기
 
-사용 하는 유니버설 Windows 플랫폼 (UWP) 앱을 만들려면 Windows 런타임 c + + 템플릿 라이브러리 (WRL)를 사용 하는 방법을 알아봅니다 [Microsoft 미디어 파운데이션](http://msdn.microsoft.com/library/windows/apps/ms694197)합니다.
+사용 하는 유니버설 Windows 플랫폼 (UWP) 앱을 만들려면 Windows 런타임 c + + 템플릿 라이브러리 (WRL)를 사용 하는 방법을 알아봅니다 [Microsoft 미디어 파운데이션](/windows/desktop/medfound/microsoft-media-foundation-sdk)합니다.
 
 이 예제에서는 웹캠에서 캡처된 이미지에 회색조 효과를 적용하는 사용자 지정 Media Foundation 변형을 만듭니다. 앱에서는 C++를 사용하여 사용자 지정 변환을 정의하고, C#을 사용하여 구성 요소를 통해 캡처된 이미지를 변환합니다.
 
@@ -36,7 +36,7 @@ ms.locfileid: "42604892"
 
 ## <a name="prerequisites"></a>전제 조건
 
-- 경험이 합니다 [Windows 런타임](http://msdn.microsoft.com/library/windows/apps/br211377.aspx)합니다.
+- 경험이 합니다 [Windows 런타임](https://msdn.microsoft.com/library/windows/apps/br211377.aspx)합니다.
 
 - COM 경험
 
@@ -52,7 +52,7 @@ ms.locfileid: "42604892"
 
 - 합니다 [InspectableClass](../windows/inspectableclass-macro.md) 매크로 참조 계산과 같은 기본 COM 기능을 구현 하며 `QueryInterface` 메서드 및 런타임 클래스 이름 및 신뢰 수준을 설정 합니다.
 
-- microsoft:: wrl을 사용 하 여::[모듈 클래스](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/b4acf5de-2f4c-4c8b-b5ff-9140d023ecbe/locales/en-US) 과 같은 DLL 진입점 함수를 구현 하려면 [DllGetActivationFactory](http://msdn.microsoft.com/library/br205771.aspx)를 [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), 및 [ DllGetClassObject](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject)합니다.
+- microsoft:: wrl을 사용 하 여::[모듈 클래스](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/b4acf5de-2f4c-4c8b-b5ff-9140d023ecbe/locales/en-US) 과 같은 DLL 진입점 함수를 구현 하려면 [DllGetActivationFactory](https://msdn.microsoft.com/library/br205771.aspx)를 [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), 및 [ DllGetClassObject](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject)합니다.
 
 - 구성 요소 DLL을 runtimeobject.lib에 연결합니다. 또한 지정할 [/WINMD](../cppcx/compiler-and-linker-options-c-cx.md) Windows 메타 데이터를 생성할 링커 줄에 있습니다.
 
@@ -113,7 +113,7 @@ ms.locfileid: "42604892"
 
 3. `Package.appxmanifest`에 **기능** 탭을 선택 **마이크** 하 고 **웹캠**. 두 기능 모두 웹캠에서 사진을 캡처하는 데 필요합니다.
 
-4. `MainPage.xaml`, 루트에이 코드를 추가 [Grid](http://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.grid.aspx) 요소:
+4. `MainPage.xaml`, 루트에이 코드를 추가 [Grid](https://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.grid.aspx) 요소:
 
    [!code-xml[wrl-media-capture#7](../windows/codesnippet/Xaml/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_7.xaml)]
 
@@ -132,5 +132,5 @@ ms.locfileid: "42604892"
 ## <a name="see-also"></a>참고 항목
 
 [Windows 런타임 C++ 템플릿 라이브러리(WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)  
-[Microsoft 미디어 파운데이션](http://msdn.microsoft.com/library/windows/apps/ms694197)  
+[Microsoft 미디어 파운데이션](/windows/desktop/medfound/microsoft-media-foundation-sdk)  
 [미디어 확장명 샘플](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)

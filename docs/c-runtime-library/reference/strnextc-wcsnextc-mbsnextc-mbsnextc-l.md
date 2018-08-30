@@ -54,19 +54,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f759ce9a4617ab0ca8e97ef308508d836b53b742
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4ede89a5290bca14c39aa16c68071edefd0ebd08
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414248"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222431"
 ---
 # <a name="strnextc-wcsnextc-mbsnextc-mbsnextcl"></a>_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l
 
 문자열에서 다음 문자를 찾습니다.
 
 > [!IMPORTANT]
-> **_mbsnextc** 및 **_mbsnextc_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbsnextc** 하 고 **_mbsnextc_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -97,29 +97,29 @@ unsigned int _mbsnextc_l(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수에 다음 문자 중 정수 값을 반환 *str*합니다.
+이러한 각 함수에서 다음 문자의 정수값을 반환 *str*합니다.
 
 ## <a name="remarks"></a>설명
 
-**_mbsnextc** 함수에 다음 멀티 바이트 문자의 정수 값을 반환 *str*, 문자열 포인터를 이동 하지 않고 있습니다. **_mbsnextc** 에 따라 멀티 바이트 문자 시퀀스를 인식 된 [멀티 바이트 코드 페이지](../../c-runtime-library/code-pages.md) 에서 현재 사용 합니다.
+합니다 **_mbsnextc** 함수에서 다음 멀티 바이트 문자의 정수값을 반환 *str*, 문자열 포인터를 이동 하지 않고 있습니다. **_mbsnextc** 에 따라 멀티 바이트 문자 시퀀스를 인식 합니다 [멀티 바이트 코드 페이지](../../c-runtime-library/code-pages.md) 에서 현재 사용 합니다.
 
-경우 *str* 은 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수가 0을 반환 합니다.
+하는 경우 *str* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수가 0을 반환 합니다.
 
-**보안 정보** 이 API는 버퍼 오버런 문제로 인해 발생하는 잠재적인 위협을 일으킵니다. 버퍼 오버런 문제는 자주 사용되는 시스템 공격 방법으로, 불필요한 권한 상승을 초래합니다. 자세한 내용은 [버퍼 오버런 방지](http://msdn.microsoft.com/library/windows/desktop/ms717795)를 참조하세요.
+**보안 정보** 이 API는 버퍼 오버런 문제로 인해 발생하는 잠재적인 위협을 일으킵니다. 버퍼 오버런 문제는 자주 사용되는 시스템 공격 방법으로, 불필요한 권한 상승을 초래합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tcsnextc**|**_strnextc**|**_mbsnextc**|**_wcsnextc**|
 
-**_strnextc** 및 **_wcsnextc** 단일 바이트 문자 문자열 및 버전의 와이드 문자 문자열 **_mbsnextc**합니다. **_wcsnextc** 에 다음 와이드 문자가의 정수 값을 반환 *str*; **_strnextc** 다음 단일 바이트 문자에서의 정수 값을 반환 *str*합니다. **_strnextc** 및 **_wcsnextc** 이러한 매핑을 위해서만 제공 되 고 그렇지 않으면 사용할 수 없습니다. 자세한 내용은 [일반 텍스트 매핑 사용](../../c-runtime-library/using-generic-text-mappings.md) 및 [일반 텍스트 매핑](../../c-runtime-library/generic-text-mappings.md)을 참조하세요.
+**_strnextc** 하 고 **_wcsnextc** 싱글바이트 문자 문자열과 와이드 문자열 버전은 **_mbsnextc**합니다. **_wcsnextc** 에 있는 다음 와이드 문자의 정수값을 반환 *str*; **_strnextc** 에서 다음 싱글바이트 문자의 정수값을 반환 *str*합니다. **_strnextc** 하 고 **_wcsnextc** 이러한 매핑을 위해서만 제공 되 고 그렇지 않으면 사용할 수 없습니다. 자세한 내용은 [일반 텍스트 매핑 사용](../../c-runtime-library/using-generic-text-mappings.md) 및 [일반 텍스트 매핑](../../c-runtime-library/generic-text-mappings.md)을 참조하세요.
 
-**_mbsnextc_l** 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_mbsnextc_l** 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_mbsnextc**|\<mbstring.h>|
 |**_mbsnextc_l**|\<mbstring.h>|

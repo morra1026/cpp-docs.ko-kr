@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 928f4fe5200d9ea03541976664d472d9e99e1147
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ae2d5121e17a9325ec45143e7e90e7d2a211f380
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42575692"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223100"
 ---
 # <a name="helpstring"></a>helpstring
 
@@ -43,9 +43,9 @@ ms.locfileid: "42575692"
 
 ## <a name="remarks"></a>설명
 
-합니다 **helpstring** c + + 특성에 동일한 기능을 합니다 [helpstring](http://msdn.microsoft.com/library/windows/desktop/aa366856) MIDL 특성입니다.
+합니다 **helpstring** c + + 특성에 동일한 기능을 합니다 [helpstring](/windows/desktop/Midl/helpstring) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 예를 참조 하세요 [defaultvalue](../windows/defaultvalue.md) 사용 하는 방법의 예제 **helpstring**합니다.
 

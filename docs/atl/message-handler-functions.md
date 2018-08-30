@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c247874f96fa3b91af8f5b03840f716b6eb6516
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 6440ad59218f4c69eb3421176ebdfdc7a36e9531
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963974"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218835"
 ---
 # <a name="message-handler-functions"></a>메시지 처리기 함수
 ATL은 세 가지 유형의 메시지 처리기 함수를 제공 합니다.  
@@ -42,5 +42,5 @@ ATL은 세 가지 유형의 메시지 처리기 함수를 제공 합니다.
 ## <a name="see-also"></a>참고 항목  
  [창 구현](../atl/implementing-a-window.md)   
  [메시지 맵](../atl/message-maps-atl.md)   
- [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583)
+ [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)
 

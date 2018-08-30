@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6043277eff17340cd57d0a6ee1bb8e84625f45b9
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 693a0e63e5fe67b1a3837ae71945ccc60b5fb247
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42571514"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204345"
 ---
 # <a name="ccomcoclass-class"></a>CComCoClass 클래스
 이 클래스는 클래스의 인스턴스를 만들고 해당 속성을 가져오는 메서드를 제공 합니다.  
@@ -58,7 +58,7 @@ class CComCoClass
 |[CComCoClass::GetObjectDescription](#getobjectdescription)|(정적) 개체의 설명을 반환 하려면 재정의 합니다.|  
   
 ## <a name="remarks"></a>설명  
- `CComCoClass` 개체의 CLSID를 검색, 오류 정보를 설정 하 고, 클래스의 인스턴스를 만드는 메서드를 제공 합니다. 모든 클래스에 등록 합니다 [개체 맵의](http://msdn.microsoft.com/b57619cc-534f-4b8f-bfd4-0c12f937202f) 에서 파생 되는 `CComCoClass`합니다.  
+ `CComCoClass` 개체의 CLSID를 검색, 오류 정보를 설정 하 고, 클래스의 인스턴스를 만드는 메서드를 제공 합니다. 모든 클래스에 등록 합니다 [개체 맵의](https://msdn.microsoft.com/b57619cc-534f-4b8f-bfd4-0c12f937202f) 에서 파생 되는 `CComCoClass`합니다.  
   
  `CComCoClass` 또한 개체에 대 한 기본 클래스 팩터리 및 집계 모델을 정의합니다. `CComCoClass` 다음 두 매크로 사용합니다.  
   
@@ -106,7 +106,7 @@ static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
   
  인터페이스 *Q* 사용 하 여 검색할 수 있는 IID 연결 되어 있어야 합니다. 합니다 [__uuidof](../../cpp/uuidof-operator.md) 연산자입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서 `CDocument` ATL 마법사에서 생성 된 클래스에서 파생 `CComCoClass` 구현 하는 `IDocument` 인터페이스입니다. 클래스는 OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO 매크로 사용 하 여 개체 맵에 등록 클라이언트에서 사용 하 여 문서 인스턴스를 만들 수 없습니다 [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)합니다. `CApplication` 문서 클래스의 인스턴스를 만드는 고유한 COM 인터페이스 중 하나에서 메서드를 제공 하는 CoClass를입니다. 얼마나 쉬운지 아래 코드를 사용 하 여 문서 클래스의 인스턴스를 만들 수는 `CreateInstance` 에서 상속 된 멤버는 `CComCoClass` 기본 클래스입니다.  
   
  [!code-cpp[NVC_ATL_COM#11](../../atl/codesnippet/cpp/ccomcoclass-class_2.cpp)]  

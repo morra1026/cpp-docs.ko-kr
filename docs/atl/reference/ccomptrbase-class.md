@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 686dbe540301508bd95563b7eafc466a5821a9f6
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: ae23f641becea5a7bdb47eefbdee59e18c2f27a4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42572984"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205597"
 ---
 # <a name="ccomptrbase-class"></a>CComPtrBase 클래스
 이 클래스는 COM 기반 메모리 루틴을 사용 하 여 스마트 포인터 클래스에 대 한 기반을 제공 합니다.  
@@ -173,10 +173,10 @@ HRESULT CoCreateInstance(
  데이터 및 개체를 만드는 데 사용할 코드와 연관 된 CLSID입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 실패 시 또는 REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING 성공 하면 E_NOINTERFACE S_OK를 반환합니다. 참조 [CoCreateClassInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) 하 고 [CLSIDFromProgID](http://msdn.microsoft.com/library/windows/desktop/ms688386) 이러한 오류에 대 한 합니다.  
+ 실패 시 또는 REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING 성공 하면 E_NOINTERFACE S_OK를 반환합니다. 참조 [CoCreateClassInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) 하 고 [CLSIDFromProgID](/windows/desktop/api/combaseapi/nf-combaseapi-clsidfromprogid) 이러한 오류에 대 한 합니다.  
   
 ### <a name="remarks"></a>설명  
- 메서드의 첫 번째 형태를 호출 하면 [CLSIDFromProgID](http://msdn.microsoft.com/library/windows/desktop/ms688386) CLSID를 복구 하는 데 사용 됩니다. 두 형태 모두 다음 호출 [CoCreateClassInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)합니다.  
+ 메서드의 첫 번째 형태를 호출 하면 [CLSIDFromProgID](/windows/desktop/api/combaseapi/nf-combaseapi-clsidfromprogid) CLSID를 복구 하는 데 사용 됩니다. 두 형태 모두 다음 호출 [CoCreateClassInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)합니다.  
   
  디버그 빌드에서 어설션 오류가 발생 하는 경우 [CComPtrBase::p](#p) NULL와 같지 않습니다.  
   
@@ -339,7 +339,7 @@ template <class Q> HRESULT QueryInterface(Q
  실패 시 E_NOINTERFACE 성공 시 S_OK를 반환합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드를 호출 [iunknown:: Queryinterface](http://msdn.microsoft.com/library/windows/desktop/ms682521)합니다.  
+ 이 메서드를 호출 [iunknown:: Queryinterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_))합니다.  
   
  디버그 빌드에서 어설션 오류가 발생 하는 경우 *pp* NULL와 같지 않습니다.  
   

@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86e4d51687f1f005ad6c6e655e243275508d1529
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: bebc146994e440d4dbfbd0bd3a5e29f597140d8d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849778"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216332"
 ---
 # <a name="coledocobjectitem-class"></a>COleDocObjectItem 클래스
 액티브 문서 포함을 구현합니다.  
@@ -142,7 +142,7 @@ HRESULT ExecCommand(
  실행할 명령의 식별자입니다. 로 식별 된 그룹에 있어야 *pguidCmdGroup*합니다.  
   
  *nCmdExecOpt*  
- 명령 실행 옵션을 지정합니다. 기본적으로 사용자 프롬프트 없이 명령을 실행 하려면 설정 합니다. 참조 [OLECMDEXECOPT](http://msdn.microsoft.com/library/windows/desktop/ms683930) 값의 목록에 대 한 합니다.  
+ 명령 실행 옵션을 지정합니다. 기본적으로 사용자 프롬프트 없이 명령을 실행 하려면 설정 합니다. 참조 [OLECMDEXECOPT](/windows/desktop/api/docobj/ne-docobj-olecmdexecopt) 값의 목록에 대 한 합니다.  
   
  *pguidCmdGroup*  
  명령 그룹의 고유 식별자입니다. 기본적으로 NULL 이며이 표준 그룹을 지정 합니다. 전달 된 명령을 *nCmdID* 그룹에 속해야 합니다.  
@@ -172,7 +172,7 @@ LPOLEDOCUMENTVIEW GetActiveView() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 에 대 한 포인터를 [IOleDocumentView](http://msdn.microsoft.com/library/windows/desktop/ms678455) 현재 뷰의 인터페이스입니다. 현재 뷰가 없는 경우 NULL을 반환 합니다.  
+ 에 대 한 포인터를 [IOleDocumentView](/windows/desktop/api/docobj/nn-docobj-ioledocumentview) 현재 뷰의 인터페이스입니다. 현재 뷰가 없는 경우 NULL을 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
  반환 된 참조 횟수를 `IOleDocumentView` 포인터는이 함수에서 반환 되기 전에 증가 하지 않습니다.  
@@ -255,19 +255,19 @@ HRESULT QueryCommand(
  에 대 한 쿼리 중인 명령의 식별자입니다.  
   
  *pdwStatus*  
- 이 쿼리의 결과로 반환 하는 플래그에 대 한 포인터입니다. 가능한 값 목록을 참조 하세요 [OLECMDF](http://msdn.microsoft.com/library/windows/desktop/ms695237)합니다.  
+ 이 쿼리의 결과로 반환 하는 플래그에 대 한 포인터입니다. 가능한 값 목록을 참조 하세요 [OLECMDF](/windows/desktop/api/docobj/ne-docobj-olecmdf)합니다.  
   
  *pCmdText*  
- 에 대 한 포인터를 [OLECMDTEXT](http://msdn.microsoft.com/library/windows/desktop/ms693314) 단일 명령에 대 한 이름 및 상태 정보를 반환 하는 구조입니다. 호출자가이 정보를 필요로 하지 않음을 나타내는 NULL을 수 있습니다.  
+ 에 대 한 포인터를 [OLECMDTEXT](/windows/desktop/api/docobj/ns-docobj-_tagolecmdtext) 단일 명령에 대 한 이름 및 상태 정보를 반환 하는 구조입니다. 호출자가이 정보를 필요로 하지 않음을 나타내는 NULL을 수 있습니다.  
   
  *pguidCmdGroup*  
  명령 그룹의 고유 식별자 표준 그룹을 지정 하려면 NULL이 될 수 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
- 반환 값의 전체 목록을 보려면 [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) Windows SDK에 있습니다.  
+ 반환 값의 전체 목록을 보려면 [IOleCommandTarget::QueryStatus](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-querystatus) Windows SDK에 있습니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는의 기능을 에뮬레이션 합니다 [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) 메서드를 Windows SDK에 설명 된 대로 합니다.  
+ 이 멤버 함수는의 기능을 에뮬레이션 합니다 [IOleCommandTarget::QueryStatus](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-querystatus) 메서드를 Windows SDK에 설명 된 대로 합니다.  
   
 ##  <a name="release"></a>  COleDocObjectItem::Release  
  OLE 링크 된 항목에 대 한 연결을 해제 하 고 열려 있었던 경우 닫습니다. 클라이언트 항목을 제거 하지 않습니다.  

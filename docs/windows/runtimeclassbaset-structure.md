@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4b0bae186a0c4d4e9a6c7eec8553c296428b3a59
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0d137281d7f573275b216eecaea9e4f09564b9f6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597193"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206553"
 ---
 # <a name="runtimeclassbaset-structure"></a>RuntimeClassBaseT 구조체
 
@@ -58,5 +58,5 @@ friend struct Details::RuntimeClassBaseT;
 
 ## <a name="see-also"></a>참고 항목
 
-[참조 (Windows 런타임 라이브러리)](http://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)  
+[참조 (Windows 런타임 라이브러리)](https://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)  
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

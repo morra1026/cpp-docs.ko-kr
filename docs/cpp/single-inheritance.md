@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4f0f2a82c02bcb58f89d604978d31eb01ebd1fd
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 5c4acddaeac8e63ecd09860ffc9c56c97b212506
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39465693"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219730"
 ---
 # <a name="single-inheritance"></a>단일 상속
 일반적인 상속 형식인 "단일 상속"에서 클래스에는 기본 클래스가 하나만 포함됩니다. 다음 그림에 나와 있는 관계를 살펴보십시오.  
@@ -63,7 +63,7 @@ class PaperbackBook : public Book {};
  위의 다이어그램에 나와 있는 "DAG"("방향이 있는 비순환 그래프")에서 일부 클래스는 파생 클래스 두 개 이상의 기본 클래스입니다. 그러나 그 반대의 경우는 성립하지 않습니다. 즉, 지정된 파생 클래스의 직접 기본 클래스는 하나뿐입니다. 그림의 그래프는 "단일 상속" 구조체를 나타냅니다.  
   
 > [!NOTE]
->  방향이 있는 비순환 그래프는 단일 상속만을 고유하게 나타내지 않습니다. 즉, 다중 상속 그래프를 나타내는 데 사용되기도 합니다. 이 항목에서 다룹니다 [다중 상속](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)합니다.  
+>  방향이 있는 비순환 그래프는 단일 상속만을 고유하게 나타내지 않습니다. 즉, 다중 상속 그래프를 나타내는 데 사용되기도 합니다. 이 항목에서 다룹니다 [다중 상속](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)합니다.  
   
  상속에서 파생 클래스는 기본 클래스의 멤버와 새로 추가하는 멤버를 포함합니다. 따라서 파생 클래스는 기본 클래스의 멤버를 참조할 수 있습니다(해당 멤버가 파생 클래스에서 다시 정의되는 경우는 제외). 이러한 멤버가 파생 클래스에서 다시 정의된 경우에는 범위 결정 연산자(`::`)를 사용하여 직접 또는 간접 기본 클래스의 멤버를 참조할 수 있습니다. 다음 예제를 고려해 보세요.  
   

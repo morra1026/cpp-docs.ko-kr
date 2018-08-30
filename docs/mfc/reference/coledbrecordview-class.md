@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 623ba901d1998a899a443d235d65c6b205cfea4f
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 424ee48e683bc22870900805aacd32f31fb12949
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853695"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218230"
 ---
 # <a name="coledbrecordview-class"></a>COleDBRecordView 클래스
 컨트롤에 데이터베이스 레코드를 표시하는 뷰입니다.  
@@ -56,7 +56,7 @@ class COleDBRecordView : public CFormView
 ## <a name="remarks"></a>설명  
  뷰는 폼 보기에 직접 연결을 `CRowset` 개체입니다. 보기 대화 상자 템플릿 리소스에서 생성 되 고 필드를 표시 합니다 `CRowset` 대화 상자 템플릿의 컨트롤에는 개체입니다. 합니다 `COleDBRecordView` 대화 상자 데이터 교환 (DDX)을 사용 하 여 개체 및 탐색 기능에 기본 제공 `CRowset`를 폼에 컨트롤 및 행 집합의 필드 간의 데이터 이동을 자동화할 합니다. `COleDBRecordView` 또한 이동에 대 한 기본 구현을 제공 하면 첫 번째 다음, 이전 또는 마지막 레코드 및 view에 현재 레코드를 업데이트 하기 위한 인터페이스입니다.  
   
- DDX 함수를 사용할 수 있습니다 `COleDbRecordView` 데이터베이스 레코드 집합에서 직접 데이터 가져오기 및 대화 상자 컨트롤에 표시 합니다. 사용 해야 합니다 **DDX_\***  메서드 (같은 `DDX_Text`) 아니라를 **DDX_Field\***  함수 (같은 `DDX_FieldText`) 사용 하 여 `COleDbRecordView`합니다. `DDX_FieldText` 작동 하지 것입니다 `COleDbRecordView` 하므로 `DDX_FieldText` 형식의 추가 인수 **CRecordset\***  (에 대 한 `CRecordView`) 또는 **CDaoRecordset\***  ( `CDaoRecordView`).  
+ DDX 함수를 사용할 수 있습니다 `COleDbRecordView` 데이터베이스 레코드 집합에서 직접 데이터 가져오기 및 대화 상자 컨트롤에 표시 합니다. 사용 해야 합니다 `DDX_*` 메서드 (같은 `DDX_Text`) 아니라를 `DDX_Field*` 함수 (같은 `DDX_FieldText`) 사용 하 여 `COleDbRecordView`합니다. `DDX_FieldText` 작동 하지 것입니다 `COleDbRecordView` 하므로 `DDX_FieldText` 형식의 추가 인수 `CRecordset*` (에 대 한 `CRecordView`) 또는 `CDaoRecordset*` (에 대 한 `CDaoRecordView`).  
   
 > [!NOTE]
 >  클래스를 사용 하 여 OLE DB 소비자 템플릿 클래스 보다는 데이터 액세스 개체 (DAO) 클래스를 사용 하 여 작업 하는 경우 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 대신 합니다. 자세한 내용은 문서 참조 [개요: 데이터베이스 프로그래밍](../../data/data-access-programming-mfc-atl.md)합니다.  
@@ -121,7 +121,7 @@ virtual CRowset<>* OnGetRowset() = 0;
 > [!NOTE]
 >  MFC 7.0 이전의 `OnGetRowset` 에 대 한 포인터를 반환 `CRowset`합니다. 호출 하는 코드가 있다면 `OnGetRowset`, 템플릿 화 된 클래스에 반환 형식을 변경 해야 **CRowset <>** 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDatabase#38](../../mfc/codesnippet/cpp/coledbrecordview-class_1.cpp)]  
   
  자세한 내용 및 예제에 대 한 문서를 참조 [레코드 뷰: 레코드 뷰를 사용 하 여](../../data/using-a-record-view-mfc-data-access.md)입니다.  

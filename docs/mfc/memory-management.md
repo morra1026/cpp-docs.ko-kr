@@ -18,19 +18,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 928a954be6a96f5026a98f724a77bebd51be27f0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 28191191572e508828a23f0e719a57d63163b08d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345080"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222353"
 ---
 # <a name="memory-management"></a>메모리 관리
-다음이 문서에는의 MFC Microsoft Foundation 클래스 라이브러리 ()에 메모리 관리와 관련 된 일반적인 서비스를 활용 하는 방법을 설명 합니다. 메모리 할당은 두 가지 주요 범주로 나눌 수 있습니다: 프레임 할당과 힙 할당.  
+문서의이 그룹의 Microsoft Foundation 클래스 라이브러리 (MFC) 메모리 관리와 관련 된 일반적인 서비스를 활용 하는 방법을 설명 합니다. 메모리 할당 두 범주로 나눌 수 있습니다: 프레임 할당 및 힙 할당 합니다.  
   
- 두 할당 방식의 주요 차이점 중 하나는 일반적으로 실제 메모리를 사용 하 여 작업할 프레임 할당 블록 자체를 힙 할당을 통해 항상 제공 됩니다 포인터 메모리 블록에 있는 동안은 합니다. 두 가지 구성표의 또 다른 주요 차이점은 된 프레임 개체는 자동으로 삭제, 프로그래머가 힙 개체를 명시적으로 삭제 해야 하는 동안 합니다.  
+ 두 할당 기술 간의 주요 차이점 중 하나는 일반적으로 실제 메모리를 사용 하 여 작업할 프레임 할당을 사용 하 여 블록 자체를 힙 할당을 사용 하 여 항상 제공 됩니다에 대 한 포인터는 메모리 블록에 있지만 됩니다. 두 스키마의 또 다른 주요 차이점은 된 프레임 개체는 자동으로 삭제, 프로그래머가 힙 개체를 명시적으로 삭제 해야 하는 동안.  
   
- Windows 용 프로그램에서 메모리 관리에 대 한 비 MFC 내용은 [메모리 관리](http://msdn.microsoft.com/library/windows/desktop/aa366779) Windows SDK에서 합니다.  
+ Windows의 프로그램에서 메모리 관리에 대 한 비 MFC 정보를 참조 하세요 [메모리 관리](https://msdn.microsoft.com/library/windows/desktop/aa366779) Windows SDK에 있습니다.  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목  
   

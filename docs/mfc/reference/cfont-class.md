@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a598a05c31c36c7defd5fe2441031d3bccdf20f
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 2781a41ddadc6932e1c5797f098407b7dd5e4f29
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336792"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221230"
 ---
 # <a name="cfont-class"></a>CFont 클래스
 Windows GDI(그래픽 장치 인터페이스) 글꼴을 캡슐화하고 글꼴 조작을 위한 멤버 함수를 제공합니다.  
@@ -98,7 +98,7 @@ CFont();
 ### <a name="remarks"></a>설명  
  결과 개체를 사용 하 여 초기화 `CreateFont`, `CreateFontIndirect`를 `CreatePointFont`, 또는 `CreatePointFontIndirect` 사용할 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#70](../../mfc/codesnippet/cpp/cfont-class_1.cpp)]  
   
 ##  <a name="createfont"></a>  CFont::CreateFont  
@@ -124,7 +124,7 @@ BOOL CreateFont(
   
 ### <a name="parameters"></a>매개 변수  
  *nHeight*  
- 원하는 높이 (논리 단위)의 글꼴을 지정합니다. 참조를 `lfHeight` 의 멤버는 [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037)구조에 대 한 Windows sdk입니다. 절대값 *nHeight* 변환 된 후 16,384 장치 단위를 초과 하지 않아야 합니다. 모든 높이 비교의 경우 요청 된 크기를 초과 하는 모든 글꼴 요청 된 크기를 초과 하지 않는 가장 큰 글꼴 또는 가장 작은 글꼴 크기에 대 한 글꼴 매퍼가 찾습니다.  
+ 원하는 높이 (논리 단위)의 글꼴을 지정합니다. 참조를 `lfHeight` 의 멤버는 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta)구조에 대 한 Windows sdk입니다. 절대값 *nHeight* 변환 된 후 16,384 장치 단위를 초과 하지 않아야 합니다. 모든 높이 비교의 경우 요청 된 크기를 초과 하는 모든 글꼴 요청 된 크기를 초과 하지 않는 가장 큰 글꼴 또는 가장 작은 글꼴 크기에 대 한 글꼴 매퍼가 찾습니다.  
   
  *nWidth*  
  글꼴에서 문자의 평균 너비 (논리 단위)에 지정합니다. 하는 경우 *nWidth* 가 0 이면 장치의 가로 세로 비율 차이의 절대값에 의해 결정 되는 가장 가까운 일치 항목을 찾을 사용 가능한 글꼴 디지털화 가로 세로 비율과 일치 합니다.  
@@ -173,7 +173,7 @@ BOOL CreateFont(
  폭 및 글꼴 패밀리를 지정합니다. 참조를 `lfPitchAndFamily` 의 멤버는 `LOGFONT` 값 목록과 자세한 정보에 대 한 Windows SDK에는 구조입니다.  
   
  *lpszFacename*  
- `CString` 또는 글꼴의 서체 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다. 이 문자열의 길이 30 자를 초과할 수 없습니다. Windows [EnumFontFamilies](http://msdn.microsoft.com/library/windows/desktop/dd162619) 현재 사용 가능한 모든 글꼴을 열거 하는 함수를 사용할 수 있습니다. 하는 경우 *lpszFacename* 가 null 인 경우 GDI 장치 독립적인 서체를 사용 합니다.  
+ `CString` 또는 글꼴의 서체 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다. 이 문자열의 길이 30 자를 초과할 수 없습니다. Windows [EnumFontFamilies](/windows/desktop/api/wingdi/nf-wingdi-enumfontfamiliesa) 현재 사용 가능한 모든 글꼴을 열거 하는 함수를 사용할 수 있습니다. 하는 경우 *lpszFacename* 가 null 인 경우 GDI 장치 독립적인 서체를 사용 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -187,11 +187,11 @@ BOOL CreateFont(
   
  사용을 완료 하면 합니다 `CFont` 하 여 만든 개체를 `CreateFont` 함수를 사용 하 여 `CDC::SelectObject` 다른 글꼴로 그려지거나 장치 컨텍스트로 선택 하려면 삭제는 `CFont` 더 이상 필요 없는 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#71](../../mfc/codesnippet/cpp/cfont-class_2.cpp)]  
   
 ##  <a name="createfontindirect"></a>  CFont::CreateFontIndirect  
- 초기화를 `CFont` 에 지정 된 특성을 가진 개체를 [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037)구조입니다.  
+ 초기화를 `CFont` 에 지정 된 특성을 가진 개체를 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta)구조입니다.  
   
 ```  
 BOOL CreateFontIndirect(const LOGFONT* lpLogFont);
@@ -207,11 +207,11 @@ BOOL CreateFontIndirect(const LOGFONT* lpLogFont);
 ### <a name="remarks"></a>설명  
  이후에 모든 장치에 대 한 현재 글꼴과 글꼴을 선택할 수 있습니다.  
   
- 이 글꼴에 지정 된 특성에는 [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) 구조입니다. 사용 하 여는 글꼴을 선택 하는 경우는 [cdc:: selectobject](../../mfc/reference/cdc-class.md#selectobject) 멤버 함수는 GDI 글꼴 매퍼 일치 시 키 려는 기존 실제 글꼴을 사용 하 여 논리 글꼴입니다. 글꼴 매퍼를 하지 못한 경우 논리 글꼴에 대 한 정확한 일치 특성을 가진 여러 가지 가능한 요청 된 특성으로 일치 하는 대체 글꼴을 제공 합니다.  
+ 이 글꼴에 지정 된 특성에는 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 구조입니다. 사용 하 여는 글꼴을 선택 하는 경우는 [cdc:: selectobject](../../mfc/reference/cdc-class.md#selectobject) 멤버 함수는 GDI 글꼴 매퍼 일치 시 키 려는 기존 실제 글꼴을 사용 하 여 논리 글꼴입니다. 글꼴 매퍼를 하지 못한 경우 논리 글꼴에 대 한 정확한 일치 특성을 가진 여러 가지 가능한 요청 된 특성으로 일치 하는 대체 글꼴을 제공 합니다.  
   
  더 이상 필요 합니다 `CFont` 하 여 만든 개체를 `CreateFontIndirect` 함수를 사용 하 여 `CDC::SelectObject` 다른 글꼴로 그려지거나 장치 컨텍스트로 선택 하려면 삭제는 `CFont` 더 이상 필요 없는 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#72](../../mfc/codesnippet/cpp/cfont-class_3.cpp)]  
   
 ##  <a name="createpointfont"></a>  CFont::CreatePointFont  
@@ -242,7 +242,7 @@ BOOL CreatePointFont(
   
  사용을 완료 하면 합니다 `CFont` 하 여 만든 개체를 `CreatePointFont` 함수를 먼저 장치 컨텍스트에서 글꼴을 선택한 다음 삭제를 `CFont` 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#73](../../mfc/codesnippet/cpp/cfont-class_4.cpp)]  
   
 ##  <a name="createpointfontindirect"></a>  CFont::CreatePointFontIndirect  
@@ -256,7 +256,7 @@ BOOL CreatePointFontIndirect(
   
 ### <a name="parameters"></a>매개 변수  
  *lpLogFont*  
- 가리키는 [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) 논리 글꼴의 특징을 정의 하는 구조입니다. 합니다 `lfHeight` 의 멤버는 `LOGFONT` 구조 논리 단위 보다는 지점의 1/10 초 단위로 측정 됩니다. (예를 들어 설정 `lfHeight` 120 12 포인트 글꼴을 요청 합니다.)  
+ 가리키는 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 논리 글꼴의 특징을 정의 하는 구조입니다. 합니다 `lfHeight` 의 멤버는 `LOGFONT` 구조 논리 단위 보다는 지점의 1/10 초 단위로 측정 됩니다. (예를 들어 설정 `lfHeight` 120 12 포인트 글꼴을 요청 합니다.)  
   
  *pDC*  
  에 대 한 포인터를 [CDC](../../mfc/reference/cdc-class.md) 개체의 높이 변환 하는 데 사용할 `lfHeight` 논리 단위입니다. NULL 인 경우 화면 장치 컨텍스트 변환 하는 데 사용 됩니다.  
@@ -269,7 +269,7 @@ BOOL CreatePointFontIndirect(
   
  사용을 완료 하면 합니다 `CFont` 하 여 만든 개체를 `CreatePointFontIndirect` 함수를 먼저 장치 컨텍스트에서 글꼴을 선택한 다음 삭제를 `CFont` 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#74](../../mfc/codesnippet/cpp/cfont-class_5.cpp)]  
   
 ##  <a name="fromhandle"></a>  CFont::FromHandle  
@@ -289,7 +289,7 @@ static CFont* PASCAL FromHandle(HFONT hFont);
 ### <a name="remarks"></a>설명  
  경우는 `CFont` 개체가 이미 임시 핸들에 연결 되지 않은 `CFont` 개체를 만들어 연결 합니다. 이 임시 `CFont` 개체는 다음에 응용 프로그램에 유휴 시간 이벤트 루프에서 될 때까지 모든 임시 그래픽 시간이 개체는 삭제만 유효 합니다. 또 다른 방법은 한 창 메시지를 처리 하는 동안에 임시 개체가 올바른지 것입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#75](../../mfc/codesnippet/cpp/cfont-class_6.cpp)]  
   
 ##  <a name="getlogfont"></a>  CFont::GetLogFont  
@@ -301,12 +301,12 @@ int GetLogFont(LOGFONT* pLogFont);
   
 ### <a name="parameters"></a>매개 변수  
  *pLogFont*  
- 에 대 한 포인터를 [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) 글꼴 정보를 받는 구조체입니다.  
+ 에 대 한 포인터를 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 글꼴 정보를 받는 구조체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  함수가 성공 하면 0이 고 그렇지 하는 경우에 0이 아닙니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#76](../../mfc/codesnippet/cpp/cfont-class_7.cpp)]  
   
 ##  <a name="operator_hfont"></a>  HFONT CFont::operator  
@@ -320,11 +320,11 @@ operator HFONT() const;
  Windows GDI 글꼴 개체의 핸들에 연결 된 `CFont` 성공 하면 NULL입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 연산자에서 변환에 대 한 자동으로 사용 되므로 `CFont` 에 [글꼴 및 텍스트](http://msdn.microsoft.com/library/windows/desktop/dd144819)를 전달할 수 있습니다 `CFont` HFONTs 예상 하는 함수 개체입니다.  
+ 이 연산자에서 변환에 대 한 자동으로 사용 되므로 `CFont` 에 [글꼴 및 텍스트](/windows/desktop/gdi/fonts-and-text)를 전달할 수 있습니다 `CFont` HFONTs 예상 하는 함수 개체입니다.  
   
- 그래픽 개체를 사용 하는 방법에 대 한 자세한 내용은 참조 하십시오 [그래픽 개체](http://msdn.microsoft.com/library/windows/desktop/dd144962) Windows SDK에 있습니다.  
+ 그래픽 개체를 사용 하는 방법에 대 한 자세한 내용은 참조 하십시오 [그래픽 개체](/windows/desktop/gdi/graphic-objects) Windows SDK에 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#77](../../mfc/codesnippet/cpp/cfont-class_8.cpp)]  
   
 ## <a name="see-also"></a>참고 항목  

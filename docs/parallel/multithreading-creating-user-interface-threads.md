@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 625518a76bb22c60a41175e649af7ae650161494
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: ad16b4955cf8128d4f54edceeadd4b6551bc6f14
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131562"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206516"
 ---
 # <a name="multithreading-creating-mfc-user-interface-threads"></a>다중 스레딩: MFC 사용자 인터페이스 스레드 만들기
 사용자 인터페이스 스레드를 응용 프로그램의 다른 부분을 실행 하는 스레드 독립적으로 사용자 이벤트에 응답 하 고 사용자 입력을 처리 하려면 일반적으로 사용 됩니다. 주 응용 프로그램 스레드 (나오는 `CWinApp`-파생 클래스) 이미 생성 되어 시작 합니다. 이 항목에서는 추가 사용자 인터페이스 스레드를 만드는 데 필요한 단계를 설명 합니다.  
@@ -49,13 +49,13 @@ MFC는 매개 변수 오버로드를 통해 `AfxBeginThread`의 두 가지 버�
   
 - 합니다 [RUNTIME_CLASS](../mfc/reference/run-time-object-model-services.md#runtime_class) 에서 파생 된 클래스의 `CWinThread`합니다.  
   
-- (선택 사항) 원하는 우선 순위 수준입니다. 기본값은 보통 우선 순위입니다. 사용 가능한 우선 순위 수준에 대 한 자세한 내용은 참조 하세요. [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) Windows SDK에 있습니다.  
+- (선택 사항) 원하는 우선 순위 수준입니다. 기본값은 보통 우선 순위입니다. 사용 가능한 우선 순위 수준에 대 한 자세한 내용은 참조 하세요. [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) Windows SDK에 있습니다.  
   
 - (선택 사항) 스레드의 원하는 스택 크기입니다. 기본값은 만드는 스레드와 스택의 동일한 크기가 있습니다.  
   
 - (선택 사항) CREATE_SUSPENDED 스레드를 일시 중단 된 상태로 만들 수 하려는 경우. 기본값은 0 또는 스레드를 정상적으로 시작 합니다.  
   
-- (선택 사항) 원하는 보안 특성입니다. 기본값은 부모 스레드와 동일한 액세스 합니다. 이 보안 정보를 형식에 대 한 자세한 내용은 참조 [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK에 있습니다.  
+- (선택 사항) 원하는 보안 특성입니다. 기본값은 부모 스레드와 동일한 액세스 합니다. 이 보안 정보를 형식에 대 한 자세한 내용은 참조 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK에 있습니다.  
   
 `AfxBeginThread` 대부분의 작업을 수행 합니다. 클래스의 새 개체를 만들고, 사용자가 제공한 정보 및 호출을 사용 하 여 초기화 [CWinThread::CreateThread](../mfc/reference/cwinthread-class.md#createthread) 스레드 실행을 시작 하도록 합니다. 검사가 모든 개체가 제대로 할당 해제 생성 부분이 실패 했는지를 전체 프로시저에서 수행 됩니다.  
   

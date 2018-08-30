@@ -38,12 +38,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 972d8e3f1798a7498173c3d8b0677bb57231b990
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: f10422d8efcebec62e77a495a6fb04c980da6060
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451541"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215163"
 ---
 # <a name="wctomb-wctombl"></a>wctomb, _wctomb_l
 
@@ -73,17 +73,17 @@ int _wctomb_l(
 
 ## <a name="return-value"></a>반환 값
 
-경우 **wctomb** 와이드 문자 변환 멀티 바이트 문자 바이트의 수를 반환 (보다 큰는 **MB_CUR_MAX**) 와이드 문자에서입니다. 경우 *wchar* 와이드 null 문자 (L'\ \0')은 **wctomb** 1을 반환 합니다. 하는 경우 대상 포인터 *mbchar* 은 **NULL**, **wctomb** 0을 반환 합니다. 현재 로캘 변환이 가져올 수 없으면 **wctomb** -1을 반환 하 고 **errno** 로 설정 된 **EILSEQ**합니다.
+하는 경우 **wctomb** 와이드 문자 변환 멀티 바이트 문자를 바이트 수를 반환 (초과 하지 않는 것 **MB_CUR_MAX**) 와이드 문자에서. 하는 경우 *wchar* 와이드 문자 null 문자 (L'\ \0')은 **wctomb** 1을 반환 합니다. 하는 경우 대상 포인터 *mbchar* 됩니다 **NULL**합니다 **wctomb** 0을 반환 합니다. 현재 로캘에서 변환이 불가능 **wctomb** -1을 반환 하 고 **errno** 로 설정 되어 **EILSEQ**합니다.
 
 ## <a name="remarks"></a>설명
 
-**wctomb** 변환 함수는 *wchar* 인수를 해당 멀티 바이트 문자로에서 결과 저장 하 고 *mbchar*합니다. 모든 프로그램에서 언제든지 이 함수를 호출할 수 있습니다. **wctomb** 모든 로캘 종속 동작에 대 한 현재 로캘을 사용 **_wctomb_l** 동일 **wctomb** 대신 전달 된 로캘을 사용 하 여 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+합니다 **wctomb** 변환 함수 해당 *wchar* 인수를 해당 멀티 바이트 문자로의 결과 가져와 *mbchar*합니다. 모든 프로그램에서 언제든지 이 함수를 호출할 수 있습니다. **wctomb** 모든 로캘 종속 동작에 현재 로캘을 사용 **_wctomb_l** 동일 **wctomb** 는 전달 된 로캘을 사용 한다는 점을 제외 하 고 있습니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-**wctomb** 해당 매개 변수의 유효성을 검사 합니다. 경우 *mbchar* 은 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수가-1을 반환 합니다.
+**wctomb** 해당 매개 변수 유효성을 검사 합니다. 하는 경우 *mbchar* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수-1을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**wctomb**|\<stdlib.h>|
 
@@ -127,4 +127,4 @@ Convert a wide character:
 [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
 [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>
-[WideCharToMultiByte](http://msdn.microsoft.com/library/windows/desktop/dd374130)<br/>
+[WideCharToMultiByte](/windows/desktop/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>

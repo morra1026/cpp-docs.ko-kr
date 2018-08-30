@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c0903c4d6165ec511d35f7aac13deca06a704c31
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b0b36342b7760eea074fe15506386bb3d7ce6764
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42571278"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221244"
 ---
 # <a name="propputref"></a>propputref
 
@@ -36,9 +36,9 @@ ms.locfileid: "42571278"
 
 ## <a name="remarks"></a>설명
 
-합니다 **propputref** c + + 특성에 동일한 기능을 합니다 [propputref](http://msdn.microsoft.com/library/windows/desktop/aa367147) MIDL 특성입니다.
+합니다 **propputref** c + + 특성에 동일한 기능을 합니다 [propputref](/windows/desktop/Midl/propputref) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 예를 참조 하세요 [bindable](../windows/bindable.md) 의 샘플 사용에 대 한 **propputref**합니다.
 

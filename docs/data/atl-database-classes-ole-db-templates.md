@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 083ac7485ce2056ab97ca32142be3e88094573f9
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 91cd06ea1d8ff697da6c4959fff34fdc3798dcfd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337887"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218990"
 ---
 # <a name="atl-database-classes-ole-db-templates"></a>ATL 데이터베이스 클래스(OLE DB 템플릿)
 Microsoft OLE DB 데이터를 다양 한 소스 및 형식에 대 한 균일 한 액세스를 제공 하는 COM 인터페이스 집합의 몇 가지 구현을 제공 합니다.  OLE DB는 공식적으로 사용 되지 않습니다. 이 설명서는 레거시 코드를 유지 하는 개발자입니다. 새 응용 프로그램은 SQL 데이터 원본에 연결할 ODBC를 사용 해야 합니다.
@@ -46,4 +46,4 @@ Microsoft OLE DB 데이터를 다양 한 소스 및 형식에 대 한 균일 한
  [OLE DB 공급자 만들기](../data/oledb/creating-an-ole-db-provider.md)   
  [OLE DB 소비자 템플릿 참조](../data/oledb/ole-db-consumer-templates-reference.md)   
  [OLE DB 공급자 템플릿 참조](../data/oledb/ole-db-provider-templates-reference.md)   
- [OLE DB 템플릿 샘플](http://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c)
+ [OLE DB 템플릿 샘플](https://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c)

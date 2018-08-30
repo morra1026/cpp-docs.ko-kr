@@ -62,12 +62,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 747f54e4ae37fe31eeea7540c1531b988d692427
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: e2456eed4f55fe5a5f68552cfe91e5785fc99cf5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42571794"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209023"
 ---
 # <a name="macros-for-ole-db-provider-templates"></a>OLE DB 공급자 템플릿에 대한 매크로
 OLE DB 템플릿 공급자 매크로 다음 범주에서 기능을 제공합니다.  
@@ -124,7 +124,7 @@ BEGIN_PROPERTY_SET(guid)
  *guid*  
  [in] GUID 속성입니다.  
   
-#### <a name="example"></a>예  
+#### <a name="example"></a>예제  
  [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md)을 참조하세요.  
 
 ### <a name="begin_property_set_ex"></a> BEGIN_PROPERTY_SET_EX
@@ -143,7 +143,7 @@ BEGIN_PROPERTY_SET_EX(guid, flags)
  *flags*  
  [in] 를 노출 하려면 원하지 않는 모든 속성 집합 또는 공급자의 범위 외부에 정의 된 속성을 노출 하는 공급자에 대 한 UPROPSET_PASSTHROUGH UPROPSET_HIDDEN 합니다.  
   
-#### <a name="example"></a>예  
+#### <a name="example"></a>예제  
  [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md)을 참조하세요.  
 
 ### <a name="begin_propset_map"></a> BEGIN_PROPSET_MAP
@@ -165,7 +165,7 @@ BEGIN_PROPSET_MAP(Class)
   
 -   [명령](/previous-versions/windows/desktop/ms724608\(v=vs.85\))  
   
-#### <a name="example"></a>예  
+#### <a name="example"></a>예제  
  샘플 속성 집합 지도 다음과 같습니다.  
   
  [!code-cpp[NVC_OLEDB_Provider#3](../../data/oledb/codesnippet/cpp/begin-propset-map_1.h)]  
@@ -202,7 +202,7 @@ END_PROPERTY_SET(guid)
  *guid*  
  [in] GUID 속성입니다.  
   
-#### <a name="example"></a>예  
+#### <a name="example"></a>예제  
  [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md)을 참조하세요.  
 
 ### <a name="end_propset_map"></a> END_PROPSET_MAP
@@ -214,7 +214,7 @@ END_PROPERTY_SET(guid)
 END_PROPSET_MAP()  
 ```  
   
-#### <a name="example"></a>예  
+#### <a name="example"></a>예제  
  [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md)을 참조하세요.  
 
 ### <a name="property_info_entry"></a> PROPERTY_INFO_ENTRY
@@ -231,9 +231,9 @@ PROPERTY_INFO_ENTRY(dwPropID)
  [in] A [DBPROPID](/previous-versions/windows/desktop/ms723882\(v=vs.85\)) 를 속성과 함께에서 사용할 수 있는 값 속성을 식별 하는 GUID를 설정 합니다.  
   
 #### <a name="remarks"></a>설명  
- 이 매크로는 `DWORD` 형식의 속성 값을 ATLDB.H에 정의된 기본값으로 설정합니다. 속성을 선택한 값으로 설정하려면 [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md)를 사용합니다. 설정 하는 [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) 하 고 [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342\(v=vs.85\)) 동시 속성에 대 한 사용 [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md)합니다.  
+ 이 매크로는 `DWORD` 형식의 속성 값을 ATLDB.H에 정의된 기본값으로 설정합니다. 속성을 선택한 값으로 설정하려면 [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md)를 사용합니다. 설정 하는 [VARTYPE](https://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) 하 고 [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342\(v=vs.85\)) 동시 속성에 대 한 사용 [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md)합니다.  
   
-#### <a name="example"></a>예  
+#### <a name="example"></a>예제  
  [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md)을 참조하세요.  
 
 ### <a name="property_info_entry_ex"></a> PROPERTY_INFO_ENTRY_EX
@@ -250,7 +250,7 @@ PROPERTY_INFO_ENTRY_EX(dwPropID, vt, dwFlags, value, options)
  [in] A [DBPROPID](/previous-versions/windows/desktop/ms723882\(v=vs.85\)) 를 속성과 함께에서 사용할 수 있는 값 속성을 식별 하는 GUID를 설정 합니다.  
   
  *vt*  
- [in] 합니다 [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) 이 속성 항목의 합니다.  
+ [in] 합니다 [VARTYPE](https://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) 이 속성 항목의 합니다.  
   
  *dwFlags*  
  [in] A [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342\(v=vs.85\)) 이 속성 항목을 설명 하는 값입니다.  
@@ -264,7 +264,7 @@ PROPERTY_INFO_ENTRY_EX(dwPropID, vt, dwFlags, value, options)
 #### <a name="remarks"></a>설명  
  이 매크로를 사용하면 `DWORD` 형식의 속성 값뿐만 아니라 옵션 및 플래그를 직접 지정할 수 있습니다. 속성을 ATLDB.H에 정의된 기본값으로 설정하려면 [PROPERTY_INFO_ENTRY](../../data/oledb/property-info-entry.md)를 사용합니다. 옵션 또는 플래그를 설정하지 않고 선택한 값으로 속성을 설정하려면 [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md)를 사용합니다.  
   
-#### <a name="example"></a>예  
+#### <a name="example"></a>예제  
  [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md)을 참조하세요.  
 
 ### <a name="property_info_entry_value"></a> PROPERTY_INFO_ENTRY_VALUE
@@ -286,7 +286,7 @@ PROPERTY_INFO_ENTRY_VALUE(dwPropID, value)
 #### <a name="remarks"></a>설명  
  이 매크로 지정할 수 있습니다 직접 형식의 속성 값을 `DWORD`입니다. ATLDB에 정의 된 기본 값으로 속성을 설정 합니다. H를 사용 하 여 [PROPERTY_INFO_ENTRY](../../data/oledb/property-info-entry.md)합니다. 값, 플래그 및 속성에 대 한 옵션을 설정 하려면 [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md)합니다.  
   
-#### <a name="example"></a>예  
+#### <a name="example"></a>예제  
  [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md)을 참조하세요.  
 
 ### <a name="begin_provider_column_map"></a> BEGIN_PROVIDER_COLUMN_MAP
@@ -302,7 +302,7 @@ BEGIN_PROVIDER_COLUMN_MAP(theClass)
  *theClass*  
  [in] 이 맵은 속한 클래스의 이름입니다.  
   
-#### <a name="example"></a>예  
+#### <a name="example"></a>예제  
  샘플 공급자 열 지도 다음과 같습니다.  
   
  [!code-cpp[NVC_OLEDB_Provider#4](../../data/oledb/codesnippet/cpp/begin-provider-column-map_1.h)]  
@@ -316,7 +316,7 @@ BEGIN_PROVIDER_COLUMN_MAP(theClass)
 END_PROVIDER_COLUMN_MAP()  
 ```  
   
-#### <a name="example"></a>예  
+#### <a name="example"></a>예제  
  참조 [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md)합니다.  
 
 ### <a name="provider_column_entry"></a> PROVIDER_COLUMN_ENTRY
@@ -363,7 +363,7 @@ PROVIDER_COLUMN_ENTRY_FIXED(name, ordinal, dbtype, member)
 #### <a name="remarks"></a>설명  
  열 데이터 형식을 지정할 수 있습니다.  
   
-#### <a name="example"></a>예  
+#### <a name="example"></a>예제  
  참조 [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md)합니다.  
 
 ### <a name="provider_column_entry_gn"></a> PROVIDER_COLUMN_ENTRY_GN
@@ -428,7 +428,7 @@ PROVIDER_COLUMN_ENTRY_LENGTH(name, ordinal, size, member)
 #### <a name="remarks"></a>설명  
  열 크기를 지정할 수 있습니다.  
   
-#### <a name="example"></a>예  
+#### <a name="example"></a>예제  
  참조 [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md)합니다. 
 
 ### <a name="provider_column_entry_str"></a> PROVIDER_COLUMN_ENTRY_STR
@@ -453,7 +453,7 @@ PROVIDER_COLUMN_ENTRY_STR(name, ordinal, member)
 #### <a name="remarks"></a>설명  
  열 데이터는 것으로 간주 되는 경우이 매크로 사용 하 여 [DBTYPE_STR](/previous-versions/windows/desktop/ms711251\(v=vs.85\))합니다.  
   
-#### <a name="example"></a>예  
+#### <a name="example"></a>예제  
  참조 [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md)합니다.   
 
 ### <a name="provider_column_entry_type_length"></a> PROVIDER_COLUMN_ENTRY_TYPE_LENGTH

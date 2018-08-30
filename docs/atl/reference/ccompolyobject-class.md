@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b5cff88aab5a4b069d96808755ce92d61f32fff
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 9b739a2c4388877bc463a6345dcfe347d8638b27
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42575525"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206374"
 ---
 # <a name="ccompolyobject-class"></a>CComPolyObject 클래스
 이 클래스는 구현 `IUnknown` 집계 또는 집계 개체에 대 한 합니다.  
@@ -76,7 +76,7 @@ class CComPolyObject : public IUnknown,
 |[CComPolyObject::m_contained](#m_contained)|대리자 `IUnknown` 개체가 집계 되는 경우 또는 알 수 없는 외부 호출을 `IUnknown` 개체 집계 되지 않은 경우 개체의 합니다.|  
   
 ## <a name="remarks"></a>설명  
- `CComPolyObject` 구현 [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) 집계 또는 집계 개체에 대 한 합니다.  
+ `CComPolyObject` 구현 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 집계 또는 집계 개체에 대 한 합니다.  
   
  인스턴스가 `CComPolyObject` 만들어지면 외부의 값을 알 수 없는 확인란이 선택 되어 있습니다. 이 NULL 이면 `IUnknown` 집계 개체에 대 한 구현 됩니다. 알 수 없는 외부, NULL이 아닌 경우 `IUnknown` 집계 개체에 대해 구현 됩니다.  
   

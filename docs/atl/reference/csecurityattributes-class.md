@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4bc37dd8025009e4f904373fc8aa106c93dc8210
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 47b0058cba19ac804c2d996052e9a5ec2df68bc5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37879349"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208950"
 ---
 # <a name="csecurityattributes-class"></a>CSecurityAttributes 클래스
 이 클래스는 보안 특성 구조에 대 한 씬 래퍼입니다.  
@@ -53,9 +53,9 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
 |[Csecurityattributes:: Set](#set)|특성을 설정 하려면이 메서드는 `CSecurityAttributes` 개체입니다.|  
   
 ## <a name="remarks"></a>설명  
- 합니다 `SECURITY_ATTRIBUTES` 구조에 포함 된를 [보안 설명자](http://msdn.microsoft.com/library/windows/desktop/aa379561) 개체의 생성에 사용 되며이 구조를 지정 하 여 검색 핸들을 상속할 수 인지 여부를 지정 합니다.  
+ 합니다 `SECURITY_ATTRIBUTES` 구조에 포함 된를 [보안 설명자](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) 개체의 생성에 사용 되며이 구조를 지정 하 여 검색 핸들을 상속할 수 인지 여부를 지정 합니다.  
   
- Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK에 있습니다.  
+ Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](/windows/desktop/SecAuthZ/access-control) Windows SDK에 있습니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  `SECURITY_ATTRIBUTES`  
@@ -99,7 +99,7 @@ void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) 
   
 ## <a name="see-also"></a>참고 항목  
  [보안 샘플](../../visual-cpp-samples.md)   
- [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560)   
- [보안 설명자](http://msdn.microsoft.com/library/windows/desktop/aa379561)   
+ [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560)   
+ [보안 설명자](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)   
  [클래스 개요](../../atl/atl-class-overview.md)   
  [보안 전역 함수](../../atl/reference/security-global-functions.md)

@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88f431ab86762e50f91571a85f0fc60e41d8d711
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: f8b63de74a044a55362c2ebafc814fcf0136434d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849632"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216844"
 ---
 # <a name="cpropexchange-class"></a>CPropExchange 클래스
 OLE 컨트롤의 지속성 구현을 지원합니다.  
@@ -131,7 +131,7 @@ virtual BOOL ExchangeFontProp(
  에 대 한 참조를 [CFontHolder](../../mfc/reference/cfontholder-class.md) 글꼴 속성을 포함 하는 개체입니다.  
   
  *pFontDesc*  
- 에 대 한 포인터를 [FONTDESC](http://msdn.microsoft.com/library/windows/desktop/ms692782) font 속성의 기본 상태로 초기화에 대 한 값이 포함 된 구조 때 *pFontDispAmbient* NULL입니다.  
+ 에 대 한 포인터를 [FONTDESC](/windows/desktop/api/olectl/ns-olectl-tagfontdesc) font 속성의 기본 상태로 초기화에 대 한 값이 포함 된 구조 때 *pFontDispAmbient* NULL입니다.  
   
  *pFontDispAmbient*  
  에 대 한 포인터를 `IFontDisp` font 속성의 기본 상태로 초기화에 사용 되는 글꼴의 인터페이스입니다.  

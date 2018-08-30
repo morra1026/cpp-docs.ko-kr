@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65375b764c0d8d8673a59fcfb47b4eecaf730cb5
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 817875dd32457fa47eafca9d634bc2e7cc8e079d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37879958"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206572"
 ---
 # <a name="csacl-class"></a>CSacl 클래스
 이 클래스는 SACL (시스템 액세스 제어 목록) 구조에 대 한 래퍼입니다.  
@@ -72,7 +72,7 @@ class CSacl : public CAcl
   
  추가, 제거, 생성 및 삭제의 Ace를 제공 하는 클래스 메서드를 사용 하 여 `SACL` 개체입니다. 참고 항목 [AtlGetSacl](security-global-functions.md#atlgetsacl) 하 고 [AtlSetSacl](security-global-functions.md#atlsetsacl)합니다.  
   
- Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK에 있습니다.  
+ Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](/windows/desktop/SecAuthZ/access-control) Windows SDK에 있습니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  [CAcl](../../atl/reference/cacl-class.md)  
@@ -131,7 +131,7 @@ bool AddAuditAce(
 ### <a name="remarks"></a>설명  
  `CSacl` 보안 이벤트 로그에서 감사 레코드를 생성 하는 액세스 시도의 유형을 지정 하는 액세스 제어 항목 (Ace)을 포함 하는 개체입니다. 이 메서드를 추가 하려면 ACE를 `CSacl` 개체입니다.  
   
- 참조 [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) 에 대 한 설명은에서 설정할 수 있는 다양 한 플래그를 *AceFlags* 매개 변수입니다.  
+ 참조 [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) 에 대 한 설명은에서 설정할 수 있는 다양 한 플래그를 *AceFlags* 매개 변수입니다.  
   
 ##  <a name="csacl"></a>  CSacl::CSacl  
  생성자입니다.  
@@ -208,7 +208,7 @@ void RemoveAllAces() throw();
   
 ## <a name="see-also"></a>참고 항목  
  [CAcl 클래스](../../atl/reference/cacl-class.md)   
- [ACLs](http://msdn.microsoft.com/library/windows/desktop/aa374872)   
- [Ace](http://msdn.microsoft.com/library/windows/desktop/aa374868)   
+ [ACLs](/windows/desktop/SecAuthZ/access-control-lists)   
+ [Ace](/windows/desktop/SecAuthZ/access-control-entries)   
  [클래스 개요](../../atl/atl-class-overview.md)   
  [보안 전역 함수](../../atl/reference/security-global-functions.md)

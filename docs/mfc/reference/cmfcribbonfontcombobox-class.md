@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b9183f3ae58a7ba6b7746ae27f64ca17eede991
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 3a53dd239d2c6cdba77f977cc94642828c5e91b7
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42545892"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216476"
 ---
 # <a name="cmfcribbonfontcombobox-class"></a>CMFCRibbonFontComboBox 클래스
 글꼴 목록이 포함된 콤보 상자를 구현합니다. 콤보 상자를 리본 패널에 배치합니다.  
@@ -144,9 +144,9 @@ CMFCRibbonFontComboBox(
  콤보 상자의 픽셀 너비를 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
- 가능한 대 한 자세한 내용은 *nFontType* 매개 변수 값을 참조 하십시오 [EnumFontFamProc](http://msdn.microsoft.com/library/windows/desktop/dd162621) Windows SDK 설명서의 합니다.  
+ 가능한 대 한 자세한 내용은 *nFontType* 매개 변수 값을 참조 하십시오 [EnumFontFamProc](https://msdn.microsoft.com/library/windows/desktop/dd162621) Windows SDK 설명서의 합니다.  
   
- 에 할당할 수 있는 유효한 문자 집합에 대 한 자세한 *nCharSet*, 및 할당할 수 있는 유효한 값 *nPitchAndFamily*를 참조 하세요 [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) 에 Windows SDK 설명서입니다.  
+ 에 할당할 수 있는 유효한 문자 집합에 대 한 자세한 *nCharSet*, 및 할당할 수 있는 유효한 값 *nPitchAndFamily*를 참조 하세요 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 에 Windows SDK 설명서입니다.  
   
 ##  <a name="getfontdesc"></a>  CMFCRibbonFontComboBox::GetFontDesc  
  자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  

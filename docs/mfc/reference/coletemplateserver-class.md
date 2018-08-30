@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 980edf3b7e7f699b1fc870fda2e58f6422e3a1cb
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 424d98236b37dabe1c671a9890f049063a8e50a1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42541141"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212278"
 ---
 # <a name="coletemplateserver-class"></a>COleTemplateServer 클래스
 OLE 비주얼 편집 서버, 자동화 서버 및 링크 컨테이너(포함에 대한 링크를 지원하는 응용 프로그램)에 사용합니다.  
@@ -106,7 +106,7 @@ void ConnectTemplate(
  단일 인스턴스 응용 프로그램의 여러 인스턴스화를 지원할 수 있는지 여부를 나타냅니다. TRUE 이면 개체를 만드는 각 요청에 대 한 응용 프로그램의 여러 인스턴스가 시작 됩니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [CLSID 키](http://msdn.microsoft.com/library/windows/desktop/ms691424) Windows SDK에 있습니다.  
+ 자세한 내용은 [CLSID 키](/windows/desktop/com/clsid-key-hklm) Windows SDK에 있습니다.  
   
 ##  <a name="unregister"></a>  COleTemplateServer::Unregister  
  연결 된 문서 템플릿 등록을 취소 합니다.  

@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3a38f3320a507b8bd4ce3095ed2c7a02b7bf573
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: dbd258761bef7789e73fe61ac288b414902d2af8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883062"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214076"
 ---
 # <a name="ccomclassfactoryautothread-class"></a>CComClassFactoryAutoThread 클래스
-이 클래스에서 구현 된 [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) 인터페이스 및 개체를 여러 아파트에서 만들 수 있습니다.  
+이 클래스에서 구현 된 [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) 인터페이스 및 개체를 여러 아파트에서 만들 수 있습니다.  
   
 > [!IMPORTANT]
 >  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.  
@@ -114,7 +114,7 @@ STDMETHODIMP LockServer(BOOL fLock);
  호출 `LockServer` 클라이언트가 여러 개체를 신속 하 게 생성할 수 있도록 클래스 팩터리를 점유 하는 데 사용 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364)   
+ [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)   
  [CComClassFactory2 클래스](../../atl/reference/ccomclassfactory2-class.md)   
  [CComClassFactorySingleton 클래스](../../atl/reference/ccomclassfactorysingleton-class.md)   
  [CComObjectRootEx 클래스](../../atl/reference/ccomobjectrootex-class.md)   

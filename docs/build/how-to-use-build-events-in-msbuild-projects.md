@@ -16,19 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59863911072b491eb19a1296f3cb40d4f4ab4dce
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: cdc5ea4c2cd1e02e6894d2dedf8470641021f0b2
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613058"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214471"
 ---
 # <a name="how-to-use-build-events-in-msbuild-projects"></a>방법: MSBuild 프로젝트에서 빌드 이벤트 사용
 빌드 이벤트에는 MSBuild 빌드 프로세스의 특정 단계에서 수행 하는 명령입니다. *빌드 전* 이벤트는 빌드가 시작 되기 전에 발생, *링크 전* 이벤트는 링크 단계가 시작 되기 전에 발생 하며 *빌드 후* 빌드 후 이벤트 발생 성공적으로 종료 됩니다. 빌드 이벤트는 연관된 빌드 단계가 수행될 때만 발생합니다. 예를 들어 링크 전 이벤트 링크 단계가 실행 되지 않는 경우에 발생 하지 않습니다.  
   
  각각 세 개의 빌드 이벤트 명령 요소에 의해 항목 정의 그룹에 표시 됩니다 (`<Command>`) 실행 되는 및 메시지 요소 (`<Message>`)는 선택할 때 표시 된 **MSBuild** 빌드 이벤트를 수행 합니다. 각 요소에는 선택 사항이 며 동일한 요소를 여러 번 지정 하는 경우 마지막 우선적으로 적용 합니다.  
   
- 선택적인 *빌드에 사용 하 여* 요소 (`<`* 빌드-이벤트 ***UseInBuild**`>`) 빌드 이벤트 실행 되는지 여부를 나타내는 속성 그룹을 지정할 수 있습니다. 콘텐츠의 값을 *빌드에 사용 하 여* 요소는 `true` 또는 `false`합니다. 빌드 이벤트를 하지 않는 한 기본적으로 실행 하면 해당 *빌드에 사용 하 여* 로 설정 된 `false`합니다.  
+ 선택적인 *빌드에 사용 하 여* 요소 (`<`*빌드 이벤트*`UseInBuild>`) 빌드 이벤트 실행 되는지 여부를 나타내는 속성 그룹을 지정할 수 있습니다. 콘텐츠의 값을 *빌드에 사용 하 여* 요소는 `true` 또는 `false`합니다. 빌드 이벤트를 하지 않는 한 기본적으로 실행 하면 해당 *빌드에 사용 하 여* 로 설정 된 `false`합니다.  
   
  다음 표에서 각 빌드 이벤트 XML 요소를 나열합니다.  
   
@@ -46,7 +46,7 @@ ms.locfileid: "42613058"
 |`PreLinkEventUseInBuild`|실행할지 여부를 지정 합니다 *링크 전* 이벤트입니다.|  
 |`PostBuildEventUseInBuild`|실행할지 여부를 지정 합니다 *빌드 후* 이벤트입니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서 만든 myproject.vcxproj 파일의 프로젝트 요소 안에 추가할 수 있습니다 [연습: Visual c + + 프로젝트를 만들려면 MSBuild를 사용 하 여](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)입니다. A *빌드 전* 이벤트는 main.cpp 복사본에 있으며 *링크 전* main.obj; 복사본 및 이벤트는 *빌드 후* 이벤트 myproject.exe의 복사본을 만듭니다. 릴리스 구성을 사용 하 여 프로젝트를 빌드할 빌드 이벤트에 실행 됩니다. 프로젝트가 디버그 구성을 사용 하 여 빌드될, 빌드 이벤트는 실행 되지 않습니다.  
   
 ```  

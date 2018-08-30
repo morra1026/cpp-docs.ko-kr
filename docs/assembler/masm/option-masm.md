@@ -1,5 +1,5 @@
 ---
-title: 옵션 (MASM) | Microsoft Docs
+title: OPTION (MASM) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80291c805cad3ef041fffc58983ff399da07c9d9
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 4a2dcbc55d6a2d033cde3b6189618afd67bdc3fb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057723"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221511"
 ---
 # <a name="option-masm"></a>OPTION (MASM)
-사용 하도록 설정 하 고는 어셈블러의 기능을 해제 합니다.  
+있으며 어셈블러의 기능을 사용 하지 않도록 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -48,7 +48,7 @@ optionlist
 |**PROC**|**프롤로그**|**읽기 전용**|**NOREADONLY**|  
 |**SCOPED**|**NOSCOPED**|**SEGMENT**|**SETIF2**합니다.|  
   
- 언어에 대 한 구문은 **옵션 언어: * * * x*여기서 *x* C, SYSCALL, STDCALL, PASCAL, 포트란 또는 BASIC 중 하나입니다.  SYSCALL "," PASCAL "," FORTRAN, "및" BASIC 지원 되지 않습니다와 함께 사용할 [합니다. 모델](../../assembler/masm/dot-model.md) 평면입니다.  
+ 언어에 대 한 구문은 **언어 옵션:**<em>x</em>여기서 *x* C, SYSCALL, STDCALL, PASCAL, FORTRAN, 또는 BASIC 중 하나입니다.  SYSCALL, PASCAL, FORTRAN, 및 BASIC은 지원 되지 않습니다 사용한 [합니다. 모델](../../assembler/masm/dot-model.md) 평면입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [지시문 참조](../../assembler/masm/directives-reference.md)

@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 33fba76d39811b0fed777f057c5936a29f8c8a1a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e29b141ff89a37cee59f55624d7fecadbe6acc4c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595095"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215872"
 ---
 # <a name="classes-and-structs--c-component-extensions"></a>클래스 및 구조체(C++ 구성 요소 확장)
 
@@ -93,7 +93,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
 
 ### <a name="remarks"></a>설명
 
-참조 [Ref 클래스 및 구조체](../cppcx/ref-classes-and-structs-c-cx.md) 하 고 [값 클래스 및 구조체](http://msdn.microsoft.com/library/windows/apps/hh699861.aspx)합니다.
+참조 [Ref 클래스 및 구조체](../cppcx/ref-classes-and-structs-c-cx.md) 하 고 [값 클래스 및 구조체](https://msdn.microsoft.com/library/windows/apps/hh699861.aspx)합니다.
 
 ### <a name="parameters"></a>매개 변수
 

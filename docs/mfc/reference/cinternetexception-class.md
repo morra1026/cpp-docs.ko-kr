@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6db83d88eec06ce21258ed751c5e1b232f696836
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: f1439fc2a5d49a775f55c7c25e45f4faa9b9c99f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37037891"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211279"
 ---
 # <a name="cinternetexception-class"></a>CInternetException 클래스
 인터넷 작업과 관련된 예외 상태를 나타냅니다.  
@@ -50,13 +50,13 @@ class CInternetException : public CException
   
 |이름|설명|  
 |----------|-----------------|  
-|[CInternetException::m_dwContext](#m_dwcontext)|예외를 발생 시킨 작업에 연결 된 컨텍스트 값입니다.|  
+|[CInternetException::m_dwContext](#m_dwcontext)|예외를 발생 시킨 작업과 연결 된 컨텍스트 값입니다.|  
 |[CInternetException::m_dwError](#m_dwerror)|예외를 발생 시킨 오류입니다.|  
   
 ## <a name="remarks"></a>설명  
- `CInternetException` 두 공용 데이터 멤버를 포함 하는 클래스: 하나는 예외와 관련 된 오류 코드를 보유 하 고 다른 식이 오류와 관련 된 인터넷 응용 프로그램의 컨텍스트 식별자입니다.  
+ `CInternetException` 클래스는 두 명의 public 데이터 멤버를 포함: 예외와 관련 된 오류 코드를 포함 하는 하나 및 다른 오류와 연결 된 인터넷 응용 프로그램의 컨텍스트 식별자를 포함 합니다.  
   
- 인터넷 응용 프로그램에 대 한 컨텍스트 식별자에 대 한 자세한 내용은 문서 참조 [인터넷 WinInet를 사용한 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)합니다.  
+ 인터넷 응용 프로그램에 대 한 컨텍스트 식별자에 대 한 자세한 내용은 문서를 참조 하세요 [WinInet을 사용 하 여 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)합니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -83,14 +83,14 @@ CInternetException(DWORD dwError);
  CInternetException를 throw 하려면 MFC 전역 함수를 호출 [AfxThrowInternetException](internet-url-parsing-globals.md#afxthrowinternetexception)합니다.  
   
 ##  <a name="m_dwcontext"></a>  CInternetException::m_dwContext  
- 관련된 된 인터넷 작업과 관련 된 컨텍스트 값입니다.  
+ 인터넷 관련 작업과 연결 된 컨텍스트 값입니다.  
   
 ```  
 DWORD_PTR m_dwContext;  
 ```  
   
 ### <a name="remarks"></a>설명  
- 컨텍스트 식별자에 원래 지정 된 [CInternetSession](../../mfc/reference/cinternetsession-class.md) MFC에 의해 전달 및 [CInternetConnection](../../mfc/reference/cinternetconnection-class.md)-및 [CInternetFile](../../mfc/reference/cinternetfile-class.md)-파생 된 클래스입니다. 이 기본값을 재정의 하 고 할당 *dwContext* 매개 변수 값을 선택 합니다. *dwContext* 지정된 된 개체의 모든 작업과 연결 됩니다. *dwContext* 에서 반환한 작업의 상태 정보를 식별 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback)합니다.  
+ 컨텍스트 식별자에 원래 지정 된 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 및 MFC에서 전달한 [CInternetConnection](../../mfc/reference/cinternetconnection-class.md)-및 [CInternetFile](../../mfc/reference/cinternetfile-class.md)-클래스를 파생 합니다. 이 기본값을 재정의 하 고 할당할 수 있습니다 *dwContext* 매개 변수를 선택 해 값입니다. *dwContext* 지정된 된 개체의 모든 작업을 사용 하 여 연결 합니다. *dwContext* 반환한 작업의 상태 정보를 식별 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback)합니다.  
   
 ##  <a name="m_dwerror"></a>  CInternetException::m_dwError  
  예외를 발생 시킨 오류입니다.  
@@ -100,9 +100,9 @@ DWORD m_dwError;
 ```  
   
 ### <a name="remarks"></a>설명  
- 이 오류 값 시스템 일 수 WINERROR에서 발견 되는 오류 코드입니다. H 또는 WININET에서 오류 값입니다. 8.  
+ 오류 값이 시스템 수 WINERROR에 오류 코드입니다. H 또는 WININET에서 오류 값입니다. 8.  
   
- Win32 오류 코드 목록은 참조 하십시오. [오류 코드](http://msdn.microsoft.com/library/windows/desktop/ms681381)합니다. 인터넷 관련 오류 메시지 목록은 다음을 참조 하세요. 두 항목이 Windows SDK에 포함 되어 있습니다.  
+ Win32 오류 코드 목록은 참조 하세요 [오류 코드](/windows/desktop/Debug/system-error-codes)합니다. 인터넷 관련 오류 메시지 목록을 참조 하세요. 두 항목은 Windows sdk에서입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [CException 클래스](../../mfc/reference/cexception-class.md)   

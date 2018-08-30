@@ -21,15 +21,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0494b22d3166ebfd75a6aeaceba839f80b84bc1
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 9a74b7d759cd0ed7f576276f4c7948a07e161892
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884407"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220743"
 ---
 # <a name="csize-class"></a>CSize 클래스
-상대 좌표 또는 위치를 구현하는 Windows [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) 구조체와 유사합니다.  
+Windows 비슷합니다 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 상대 좌표 또는 위치를 구현 하는 구조입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -91,7 +91,7 @@ CSize( DWORD dwSize) throw();
  집합의 `cy` 에 대 한 멤버는 `CSize`합니다.  
   
  *initSize*  
- [크기](http://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 나 `CSize` 개체를 초기화 하는 데 `CSize`합니다.  
+ [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 나 `CSize` 개체를 초기화 하는 데 `CSize`합니다.  
   
  *initPt*  
  [지점](../../mfc/reference/point-structure1.md) 구조 나 `CPoint` 개체를 초기화 하는 데 `CSize`합니다.  
@@ -102,7 +102,7 @@ CSize( DWORD dwSize) throw();
 ### <a name="remarks"></a>설명  
  인수 없이 지정 된 경우 `cx` 고 `cy` 0으로 초기화 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#97](../../atl-mfc-shared/codesnippet/cpp/csize-class_1.cpp)]  
   
 ##  <a name="operator_eq_eq"></a>  CSize::operator = =  
@@ -115,7 +115,7 @@ BOOL operator==(SIZE size) const throw();
 ### <a name="remarks"></a>설명  
  크기가 같으면 0이 아닌 반환 하 고, otherwize 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#98](../../atl-mfc-shared/codesnippet/cpp/csize-class_2.cpp)]  
   
 ##  <a name="operator_neq"></a>  CSize::operator! =  
@@ -128,7 +128,7 @@ BOOL operator!=(SIZE size) const throw();
 ### <a name="remarks"></a>설명  
  크기가 같지 않은 경우 0이 아닌 반환 그렇지 않으면 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#99](../../atl-mfc-shared/codesnippet/cpp/csize-class_3.cpp)]  
   
 ##  <a name="operator_add_eq"></a>  CSize::operator + =  
@@ -138,7 +138,7 @@ BOOL operator!=(SIZE size) const throw();
 void operator+=(SIZE size) throw(); 
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#100](../../atl-mfc-shared/codesnippet/cpp/csize-class_4.cpp)]  
   
 ##  <a name="operator_-_eq"></a>  CSize::operator =  
@@ -148,7 +148,7 @@ void operator+=(SIZE size) throw();
 void operator-=(SIZE size) throw(); 
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#101](../../atl-mfc-shared/codesnippet/cpp/csize-class_5.cpp)]  
   
 ##  <a name="operator_add"></a>  CSize::operator +  
@@ -165,11 +165,11 @@ CRect operator+(const RECT* lpRect) const throw();
   
 - **operator + (** `size` **)** 이 작업은 두 개의 추가 `CSize` 값입니다.  
   
-- **연산자 + (** `point` **)** 오프셋 (이동)을이 작업을 [지점](http://msdn.microsoft.com/library/windows/desktop/dd162805) (또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md)) 값이 `CSize` 값입니다. **cx** 및 **cy** 이 멤버인 `CSize` 값에 추가 됩니다는 **x** 및 **y** 의 데이터 멤버는 **지점**  값입니다. 버전의 유사 [CPoint::operator +](../../atl-mfc-shared/reference/cpoint-class.md#operator_add) 를 사용 하는 한 [크기](http://msdn.microsoft.com/library/windows/desktop/dd145106) 매개 변수입니다.  
+- **연산자 + (** `point` **)** 오프셋 (이동)을이 작업을 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) (또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md)) 값이 `CSize` 값입니다. **cx** 및 **cy** 이 멤버인 `CSize` 값에 추가 됩니다는 **x** 및 **y** 의 데이터 멤버는 **지점**  값입니다. 버전의 유사 [CPoint::operator +](../../atl-mfc-shared/reference/cpoint-class.md#operator_add) 를 사용 하는 한 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 매개 변수입니다.  
   
-- **연산자 + (** `lpRect` **)** 오프셋 (이동)을이 작업을 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) (또는 [CRect](../../atl-mfc-shared/reference/crect-class.md)) 값이 `CSize` 값입니다. **cx** 및 **cy** 이 멤버 `CSize` 값에 추가 되는 **왼쪽**, **위쪽**, **오른쪽**, 및 **아래쪽** 데이터 멤버는 `RECT` 값입니다. 버전의 유사 [CRect::operator +](../../atl-mfc-shared/reference/crect-class.md#operator_add) 를 사용 하는 한 [크기](http://msdn.microsoft.com/library/windows/desktop/dd145106) 매개 변수입니다.  
+- **연산자 + (** `lpRect` **)** 오프셋 (이동)을이 작업을 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) (또는 [CRect](../../atl-mfc-shared/reference/crect-class.md)) 값이 `CSize` 값입니다. **cx** 및 **cy** 이 멤버 `CSize` 값에 추가 되는 **왼쪽**, **위쪽**, **오른쪽**, 및 **아래쪽** 데이터 멤버는 `RECT` 값입니다. 버전의 유사 [CRect::operator +](../../atl-mfc-shared/reference/crect-class.md#operator_add) 를 사용 하는 한 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 매개 변수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#102](../../atl-mfc-shared/codesnippet/cpp/csize-class_6.cpp)]  
   
 ##  <a name="operator_-"></a>  CSize::operator-  
@@ -187,13 +187,13 @@ CSize operator-() const throw();
   
 - **연산자-(** `size` **)** 이 작업을 뺍니다 두 `CSize` 값입니다.  
   
-- **연산자-(** `point` **)** 오프셋 (이동)을이 작업을 [지점](http://msdn.microsoft.com/library/windows/desktop/dd162805) 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 값이 덧셈 역 원을 `CSize` 값입니다. **cx** 및 **cy** 이 `CSize` 값에서 뺀 합니다 **x** 및 **y** 의 데이터 멤버는 **지점**  값입니다. 버전의 유사 [CPoint::operator-](../../atl-mfc-shared/reference/cpoint-class.md#operator_-) 를 사용 하는 한 [크기](http://msdn.microsoft.com/library/windows/desktop/dd145106) 매개 변수입니다.  
+- **연산자-(** `point` **)** 오프셋 (이동)을이 작업을 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 값이 덧셈 역 원을 `CSize` 값입니다. **cx** 및 **cy** 이 `CSize` 값에서 뺀 합니다 **x** 및 **y** 의 데이터 멤버는 **지점**  값입니다. 버전의 유사 [CPoint::operator-](../../atl-mfc-shared/reference/cpoint-class.md#operator_-) 를 사용 하는 한 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 매개 변수입니다.  
   
-- **연산자-(** `lpRect` **)** 오프셋 (이동)을이 작업을 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 값이 덧셈 역으로 `CSize` 값입니다. **cx** 및 **cy** 이 멤버인 `CSize` 값에서 뺀 합니다 **왼쪽**, **위쪽**, **오른쪽**, 및 **아래쪽** 의 데이터 멤버는 `RECT` 값입니다. 버전의 유사 [CRect::operator-](../../atl-mfc-shared/reference/crect-class.md#operator_-) 를 사용 하는 한 [크기](http://msdn.microsoft.com/library/windows/desktop/dd145106) 매개 변수입니다.  
+- **연산자-(** `lpRect` **)** 오프셋 (이동)을이 작업을 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 값이 덧셈 역으로 `CSize` 값입니다. **cx** 및 **cy** 이 멤버인 `CSize` 값에서 뺀 합니다 **왼쪽**, **위쪽**, **오른쪽**, 및 **아래쪽** 의 데이터 멤버는 `RECT` 값입니다. 버전의 유사 [CRect::operator-](../../atl-mfc-shared/reference/crect-class.md#operator_-) 를 사용 하는 한 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 매개 변수입니다.  
   
 - **연산자-()** 이 작업의 덧셈 역 원을 반환 `CSize` 값입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#103](../../atl-mfc-shared/codesnippet/cpp/csize-class_7.cpp)]  
   
 ## <a name="see-also"></a>참고 항목  

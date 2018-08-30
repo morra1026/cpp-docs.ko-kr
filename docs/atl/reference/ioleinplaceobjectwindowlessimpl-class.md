@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c48670ca6e7dd38e94a2c57f0a0c0415f654f445
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: aae6e79ec776320e6562df611bc0c801983054c3
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881492"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207804"
 ---
 # <a name="ioleinplaceobjectwindowlessimpl-class"></a>IOleInPlaceObjectWindowlessImpl 클래스
 이 클래스는 구현 `IUnknown` 창 없는 컨트롤 창 메시지를 수신 하 고 끌어서 놓기 작업에 참여할 수 있도록 하는 메서드를 제공 합니다.  
@@ -70,7 +70,7 @@ class IOleInPlaceObjectWindowlessImpl
 |[IOleInPlaceObjectWindowlessImpl::UIDeactivate](#uideactivate)|비활성화 하 고 내부 활성화를 지 원하는 사용자 인터페이스를 제거 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 합니다 [위해서는](http://msdn.microsoft.com/library/windows/desktop/ms692646) 인터페이스 재 활성화를 관리 하 고 전체 비활성화 컨트롤과 컨트롤의 크기를 표시할지 결정 합니다. 합니다 [IOleInPlaceObjectWindowless](http://msdn.microsoft.com/library/windows/desktop/ms687304) 인터페이스에서 창 없는 컨트롤 창 메시지를 수신 하 고 끌어서 놓기 작업에 참여할 수 있습니다. 클래스 `IOleInPlaceObjectWindowlessImpl` 의 기본 구현을 제공 `IOleInPlaceObject` 하 고 `IOleInPlaceObjectWindowless` 구현 하 고 `IUnknown` 장치에서 디버그 덤프에 정보를 전송 하 여 작성 합니다.  
+ 합니다 [위해서는](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceobject) 인터페이스 재 활성화를 관리 하 고 전체 비활성화 컨트롤과 컨트롤의 크기를 표시할지 결정 합니다. 합니다 [IOleInPlaceObjectWindowless](/windows/desktop/api/ocidl/nn-ocidl-ioleinplaceobjectwindowless) 인터페이스에서 창 없는 컨트롤 창 메시지를 수신 하 고 끌어서 놓기 작업에 참여할 수 있습니다. 클래스 `IOleInPlaceObjectWindowlessImpl` 의 기본 구현을 제공 `IOleInPlaceObject` 하 고 `IOleInPlaceObjectWindowless` 구현 하 고 `IUnknown` 장치에서 디버그 덤프에 정보를 전송 하 여 작성 합니다.  
   
  **관련 문서** [ATL 자습서](../../atl/active-template-library-atl-tutorial.md), [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)  
   
@@ -90,7 +90,7 @@ HRESULT ContextSensitiveHelp(BOOL fEnterMode);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IOleWindow::ContextSensitiveHelp](http://msdn.microsoft.com/library/windows/desktop/ms680059) Windows SDK에에서 있습니다.  
+ 참조 [IOleWindow::ContextSensitiveHelp](/windows/desktop/api/oleidl/nf-oleidl-iolewindow-contextsensitivehelp) Windows SDK에에서 있습니다.  
   
 ##  <a name="getdroptarget"></a>  IOleInPlaceObjectWindowlessImpl::GetDropTarget  
  E_NOTIMPL 반환.  
@@ -100,7 +100,7 @@ HRESULT GetDropTarget(IDropTarget** ppDropTarget);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IOleInPlaceObjectWindowless::GetDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms678535) Windows SDK에에서 있습니다.  
+ 참조 [IOleInPlaceObjectWindowless::GetDropTarget](/windows/desktop/api/ocidl/nf-ocidl-ioleinplaceobjectwindowless-getdroptarget) Windows SDK에에서 있습니다.  
   
 ##  <a name="getwindow"></a>  IOleInPlaceObjectWindowlessImpl::GetWindow  
  컨테이너는 컨트롤의 창 핸들을 가져오려면이 함수를 호출 합니다.  
@@ -112,7 +112,7 @@ HRESULT GetWindow(HWND* phwnd);
 ### <a name="remarks"></a>설명  
  일부 컨테이너는 현재 기간 이동 하는 경우에, 창 없는 된 컨트롤을 사용 하 여 작동 하지 않습니다. ATL의 구현 하는 경우 컨트롤 클래스의 데이터 멤버 `m_bWasOnceWindowless` 가 TRUE 인 함수 E_FAIL을 반환 합니다. 그렇지 않고 *phwnd* NULL이 아니면 `GetWindow` 설정 \* *phwnd* control 클래스의 데이터 멤버에 `m_hWnd` S_OK를 반환 합니다.  
   
- 참조 [IOleWindow::GetWindow](http://msdn.microsoft.com/library/windows/desktop/ms687282) Windows SDK에에서 있습니다.  
+ 참조 [IOleWindow::GetWindow](/windows/desktop/api/oleidl/nf-oleidl-iolewindow-getwindow) Windows SDK에에서 있습니다.  
   
 ##  <a name="inplacedeactivate"></a>  IOleInPlaceObjectWindowlessImpl::InPlaceDeactivate  
  전체 활성 컨트롤을 비활성화 하려면 컨테이너에 의해 호출 됩니다.  
@@ -124,7 +124,7 @@ HRESULT InPlaceDeactivate(HWND* phwnd);
 ### <a name="remarks"></a>설명  
  이 메서드는 컨트롤의 상태에 따라 전체 또는 부분 비활성화를 수행합니다. 필요한 경우 컨트롤의 사용자 인터페이스가 비활성화 되 고 컨트롤의 창이 있는 경우 소멸 됩니다. 컨테이너는 컨트롤을 더 이상 활성 상태가 진행에서 하는 알림이 전송 됩니다. `IOleInPlaceUIWindow` 컨테이너 메뉴 협상 공간 테두리를 사용 하는 인터페이스 해제 됩니다.  
   
- 참조 [IOleInPlaceObject::InPlaceDeactivate](http://msdn.microsoft.com/library/windows/desktop/ms679700) Windows SDK에에서 있습니다.  
+ 참조 [IOleInPlaceObject::InPlaceDeactivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceobject-inplacedeactivate) Windows SDK에에서 있습니다.  
   
 ##  <a name="onwindowmessage"></a>  IOleInPlaceObjectWindowlessImpl::OnWindowMessage  
  내부 활성화 된 창 없는 컨트롤에는 컨테이너에서 메시지를 디스패치합니다.  
@@ -138,7 +138,7 @@ HRESULT OnWindowMessage(
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IOleInPlaceObjectWindowless::OnWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms693783) Windows SDK에에서 있습니다.  
+ 참조 [IOleInPlaceObjectWindowless::OnWindowMessage](/windows/desktop/api/ocidl/nf-ocidl-ioleinplaceobjectwindowless-onwindowmessage) Windows SDK에에서 있습니다.  
   
 ##  <a name="reactivateandundo"></a>  IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo  
  E_NOTIMPL 반환.  
@@ -148,7 +148,7 @@ HRESULT ReactivateAndUndo();
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IOleInPlaceObject::ReactivateAndUndo](http://msdn.microsoft.com/library/windows/desktop/ms691372) Windows SDK에에서 있습니다.  
+ 참조 [IOleInPlaceObject::ReactivateAndUndo](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceobject-reactivateandundo) Windows SDK에에서 있습니다.  
   
 ##  <a name="setobjectrects"></a>  IOleInPlaceObjectWindowlessImpl::SetObjectRects  
  컨트롤의 크기 및/또는 위치 변경 되었음을 알리기 위해 컨테이너에 의해 호출 됩니다.  
@@ -160,7 +160,7 @@ HRESULT SetObjectRects(LPCRECT prcPos, LPCRECT prcClip);
 ### <a name="remarks"></a>설명  
  컨트롤의 업데이트 `m_rcPos` 데이터 멤버 및 제어를 표시 합니다. 클립 영역을 교차 하는 컨트롤의 부분만 표시 됩니다. 컨트롤의 표시 된 이전에 잘립니다 하지만 클리핑을 제거 된 경우이 함수에 컨트롤의 전체 뷰를 다시 그리도록 호출할 수 있습니다.  
   
- 참조 [IOleInPlaceObject::SetObjectRects](http://msdn.microsoft.com/library/windows/desktop/ms683767) Windows SDK에에서 있습니다.  
+ 참조 [IOleInPlaceObject::SetObjectRects](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceobject-setobjectrects) Windows SDK에에서 있습니다.  
   
 ##  <a name="uideactivate"></a>  IOleInPlaceObjectWindowlessImpl::UIDeactivate  
  비활성화 하 고 내부 활성화를 지 원하는 컨트롤의 사용자 인터페이스를 제거 합니다.  
@@ -172,7 +172,7 @@ HRESULT UIDeactivate();
 ### <a name="remarks"></a>설명  
  컨트롤 클래스의 데이터 멤버를 설정 `m_bUIActive` FALSE로 합니다. 이 함수의 ATL 구현에서는 항상 S_OK를 반환합니다.  
   
- 참조 [IOleInPlaceObject::UIDeactivate](http://msdn.microsoft.com/library/windows/desktop/ms693348) Windows SDK에에서 있습니다.  
+ 참조 [IOleInPlaceObject::UIDeactivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceobject-uideactivate) Windows SDK에에서 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [CComControl 클래스](../../atl/reference/ccomcontrol-class.md)   

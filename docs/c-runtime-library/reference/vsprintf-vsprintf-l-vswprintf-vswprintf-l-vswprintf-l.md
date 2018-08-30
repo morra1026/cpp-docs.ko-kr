@@ -55,12 +55,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c1c4c22bb309516c751af66845acdb69b090797
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: baa34ae887e12a59785bafd0551fe383fac5f7b1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32417316"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220452"
 ---
 # <a name="vsprintf-vsprintfl-vswprintf-vswprintfl-vswprintfl"></a>vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l
 인수 목록에 대한 포인터를 사용하여 형식이 지정된 출력을 씁니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l](vsprintf-s-vsprintf-s-l-vswprintf-s-vswprintf-s-l.md)를 참조하세요.
@@ -132,7 +132,7 @@ int _vswprintf_l(
 출력을 위한 저장소 위치입니다.
 
 *count*<br/>
-이 함수의 와이드 문자 버전에 저장 되는 문자의 최대 수입니다.
+이 함수의 와이드 문자열 버전을 저장 하려면 문자의 최대 수입니다.
 
 *format*<br/>
 형식 사양입니다.
@@ -145,24 +145,24 @@ int _vswprintf_l(
 
 ## <a name="return-value"></a>반환 값
 
-**vsprintf** 및 **vswprintf** 는 출력 오류가 발생 하는 경우 종료 null 문자 또는 음수 값을 포함 하지 않고 작성 된 문자 수를 반환 합니다. 경우 *버퍼* 또는 *형식* 가 null 포인터 이면 이러한 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된, 하는 경우 이러한 함수가-1을 반환 하 고 설정 **errno** 를 **EINVAL**합니다.
+**vsprintf** 하 고 **vswprintf** 출력 오류가 발생 하면 null 종결 문자 또는 음수 값을 포함 하지 않고 작성 된 문자 수를 반환 합니다. 하는 경우 *버퍼* 또는 *형식* 가 null 포인터인 경우 이러한 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수가-1를 반환 하는 설정 **errno** 하 **EINVAL**합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 내용은 [_doserrno, errno, _sys_errlist, 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-이러한 각 함수는 인수 목록에 대 한 포인터 및 다음 기록 하 고 형식이 지정된 된 데이터가 가리키는 메모리에 *버퍼*합니다.
+이러한 함수는 각각 인수 목록에 대 한 포인터 형식을 하 고 가리키는 메모리에 지정된 된 데이터를 씁니다 *버퍼*합니다.
 
-있는 이러한 함수 버전은 **_l** 은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 점을 제외 하 고 접미사는 동일 합니다.
+포함 된 이러한 함수의 버전을 **_l** 접미사는 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
 
 > [!IMPORTANT]
-> 사용 하 여 **vsprintf**어는 문자 수를 제한할 방법이 없습니다 쓸이 함수를 사용 하 여 코드는 버퍼 오버런에 취약 합니다. 대신 [_vsnprintf](vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md)를 사용하거나 [_vscprintf](vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)를 호출하여 필요한 버퍼의 크기를 확인하세요. 또한 되도록 *형식* 사용자 정의 문자열이 아닌지 합니다. 자세한 내용은 [버퍼 오버런 방지](http://msdn.microsoft.com/library/windows/desktop/ms717795)를 참조하세요.
+> 사용 하 여 **vsprintf**로 문자의 수를 제한할 방법이 없습니다 기록, 즉,이 함수를 사용 하 여 코드 버퍼 오버런이 발생 하기 쉽습니다. 대신 [_vsnprintf](vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md)를 사용하거나 [_vscprintf](vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)를 호출하여 필요한 버퍼의 크기를 확인하세요. 또한 했는지 *형식* 사용자 정의 문자열이 아닙니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-**vswprintf** 두 번째 매개 변수를 필요로 하는 ISO C 표준을 따르는 *count*, 형식의 **size_t**합니다. 기존 비표준 동작을 강제로 표시 하려면 정의 **_CRT_NON_CONFORMING_SWPRINTFS**합니다. 새 준수 동작을 사용 하도록 코드를 변경 해야 하므로 이후 버전에서 이전 동작이 아닐 수 있습니다.
+**vswprintf** 두 번째 매개 변수를 필요로 하는 ISO C 표준에 맞는 *개수*, 형식의 **size_t**합니다. 이전의 비표준 동작을 강제로 정의할 **_CRT_NON_CONFORMING_SWPRINTFS**합니다. 이전 동작이 아닐 수도 이후 버전에서 있으므로 새 준수 동작을 사용 하도록 코드를 변경 해야 합니다.
 
 C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하는 템플릿 오버로드를 갖고 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -171,7 +171,7 @@ C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|선택적 헤더|
+|루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|----------------------|
 |**vsprintf**, **_vsprintf_l**|\<stdio.h> 및 \<stdarg.h>|\<varargs.h>*|
 |**vswprintf**, **_vswprintf_l**|\<stdio.h> 또는 \<wchar.h> 및 \<stdarg.h>|\<varargs.h>*|

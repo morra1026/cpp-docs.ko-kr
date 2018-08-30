@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81e76347e197469e4e4fa490d4ddfc42ef0fbd71
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: b76525c6e10284109952ede7f5e7c70132684d75
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338083"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210966"
 ---
 # <a name="carchive-class"></a>CArchive 클래스
 개체의 복잡 한 네트워크를 해당 개체를 삭제 한 후 유지 되는 영구 이진 형식 (일반적으로 디스크 저장소)에 저장할 수 있습니다.  
@@ -84,8 +84,7 @@ class CArchive
   
 |이름|설명|  
 |----------|-----------------|  
-|[CArchive::CArchive](#carchive)|
-          `CArchive` 개체를 만듭니다.|  
+|[CArchive::CArchive](#carchive)|`CArchive` 개체를 만듭니다.|  
   
 ### <a name="public-methods"></a>Public 메서드  
   
@@ -163,7 +162,7 @@ void Abort ();
   
  사용 하는 경우 **새** 할당할는 `CArchive` 힙에 개체 파일을 닫은 후 삭제 해야 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CArchive::WriteClass](#writeclass)합니다.  
   
 ##  <a name="carchive"></a>  CArchive::CArchive  
@@ -201,7 +200,7 @@ CArchive(
   
  사용할 수 없습니다 `CFile` 작업 상태를 변경할 파일의 보관 파일을 닫아야만 합니다. 이러한 작업은 보관 파일의 무결성을 손상 됩니다. 보관 파일의 파일 개체를 확보 하 여 파일 포인터의 위치를 직렬화 하는 동안 언제 든 액세스할 수 있습니다 합니다 [GetFile](#getfile) 멤버 함수 및 사용 하는 [CFile::GetPosition](../../mfc/reference/cfile-class.md#getposition) 함수 . 호출 해야 [CArchive::Flush](#flush) 파일 포인터의 위치를 가져오기 전에 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCSerialization#12](../../mfc/codesnippet/cpp/carchive-class_1.cpp)]  
   
 ##  <a name="close"></a>  CArchive::Close  
@@ -216,7 +215,7 @@ void Close();
   
  멤버 함수 `Close` 하면 모든 데이터가 보관 파일에서 파일을 전송 하는 보관 파일을 사용할 수 없습니다. 저장소 미디어에 파일을 전송할지를 완료 하려면 먼저 사용 해야 [CFile::Close](../../mfc/reference/cfile-class.md#close) 및 다음 제거를 `CFile` 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CArchive::WriteString](#writestring)합니다.  
   
 ##  <a name="flush"></a>  CArchive::Flush  
@@ -229,7 +228,7 @@ void Flush();
 ### <a name="remarks"></a>설명  
  멤버 함수 `Flush` 파일로 보관 파일에서 모든 데이터를 전송 하면 됩니다. 호출 해야 합니다 [CFile::Close](../../mfc/reference/cfile-class.md#close) 저장소 매체에서 파일 전송이 완료 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCSerialization#13](../../mfc/codesnippet/cpp/carchive-class_2.cpp)]  
   
 ##  <a name="getfile"></a>  CArchive::GetFile  
@@ -245,7 +244,7 @@ CFile* GetFile() const;
 ### <a name="remarks"></a>설명  
  보관 파일을 사용 하기 전에 플러시해야 `GetFile`합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCSerialization#14](../../mfc/codesnippet/cpp/carchive-class_3.cpp)]  
   
 ##  <a name="getobjectschema"></a>  CArchive::GetObjectSchema  
@@ -263,7 +262,7 @@ UINT GetObjectSchema();
   
  A `CObject`-파생된 클래스 VERSIONABLE_SCHEMA 결합을 사용할 수 있습니다 (비트를 사용 하 여 **또는**) (IMPLEMENT_SERIAL 매크로)의 스키마 버전이 자체를 사용 하 여 개체를 만들려면 "버전 관리가 가능한," 개체 즉, 해당 `Serialize` 멤버 함수는 여러 버전을 읽을 수 있습니다. VERSIONABLE_SCHEMA) (없이 기본 프레임 워크 기능 버전이 일치 하지 않는 경우 예외를 throw 하는 것입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCSerialization#15](../../mfc/codesnippet/cpp/carchive-class_4.cpp)]  
   
 ##  <a name="isbufferempty"></a>  CArchive::IsBufferEmpty  
@@ -296,7 +295,7 @@ BOOL IsLoading() const;
 ### <a name="remarks"></a>설명  
  이 구성원 함수가 호출 되는 `Serialize` 보관 된 클래스의 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCSerialization#16](../../mfc/codesnippet/cpp/carchive-class_5.cpp)]  
   
 ##  <a name="isstoring"></a>  CArchive::IsStoring  
@@ -314,7 +313,7 @@ BOOL IsStoring() const;
   
  경우는 `IsStoring` 보관 파일의 상태는 0이 아닌 경우 다음 해당 `IsLoading` status = 0, 또는 그 반대로 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCSerialization#17](../../mfc/codesnippet/cpp/carchive-class_6.cpp)]  
   
 ##  <a name="mapobject"></a>  CArchive::MapObject  
@@ -333,7 +332,7 @@ void MapObject(const CObject* pOb);
   
  호출할 수 있습니다 `MapObject` 에 저장 하 고 로드를 `CArchive` 개체입니다. `MapObject` 지정한 개체에서 유지 관리 하는 내부 데이터 구조를 추가 합니다 `CArchive` 개체 serialization 및 deserialization 중에 있지만 달리 [ReadObject](#readobject) 및 [WriteObject](#writeobject)를 호출 하지 않습니다 개체에 serialize 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCSerialization#18](../../mfc/codesnippet/cpp/carchive-class_7.h)]  
   
  [!code-cpp[NVC_MFCSerialization#19](../../mfc/codesnippet/cpp/carchive-class_8.cpp)]  
@@ -354,7 +353,7 @@ CDocument* m_pDocument;
   
  프레임 워크 집합 *m_pDocument* 사용자 파일을 실행 하면 serialize 되 고 문서를 열거나 저장 명령입니다. 파일 열기 또는 저장 아닌 다른 이유로 개체 연결 및 OLE 컨테이너 문서를 serialize 하는 경우 명시적으로 설정 해야 *m_pDocument*합니다. 예를 들어, 이렇게 하려면 컨테이너 문서를 클립보드에 직렬화 할 때입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCSerialization#35](../../mfc/codesnippet/cpp/carchive-class_11.cpp)]  
   
 ##  <a name="operator_lt_lt"></a>  CArchive::operator &lt;&lt;  
@@ -417,12 +416,12 @@ CArchive& operator<<(LONGLONG dwdw);
   
  합니다 [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) 삽입 연산자 (<<) 진단 덤프 및 보관에 저장을 지원 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  이 예제에서는 사용 합니다 `CArchive` 삽입 연산자 << 사용 하 여는 **int** 및 **긴** 형식.  
   
  [!code-cpp[NVC_MFCSerialization#31](../../mfc/codesnippet/cpp/carchive-class_12.cpp)]  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  이 예제에서는 2의 사용을 보여 줍니다.는 `CArchive` 삽입 연산자 <<와 `CStringT` 형식입니다.  
   
  [!code-cpp[NVC_MFCSerialization#32](../../mfc/codesnippet/cpp/carchive-class_13.cpp)]  
@@ -499,12 +498,12 @@ CArchive& operator>>(LONGLONG& dwdw);
   
  합니다 [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) 추출 연산자 (>>) 보관 파일에서 로드 하도록 지원 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  이 예제에서는 사용 합니다 `CArchive` 추출 연산자 >> 사용 하 여는 **int** 형식.  
   
  [!code-cpp[NVC_MFCSerialization#33](../../mfc/codesnippet/cpp/carchive-class_14.cpp)]  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  이 예제에서는 사용 합니다 `CArchive` 삽입 및 추출 연산자 <\< 및 >> 사용 하 여는 `CStringT` 형식.  
   
  [!code-cpp[NVC_MFCSerialization#34](../../mfc/codesnippet/cpp/carchive-class_15.cpp)]  
@@ -531,7 +530,7 @@ UINT Read(void* lpBuf, UINT nMax);
   
  사용할 수는 `Read` 내에서 멤버 함수에 `Serialize` 개체에 포함 된 일반 구조를 읽기 위한 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCSerialization#24](../../mfc/codesnippet/cpp/carchive-class_16.cpp)]  
   
 ##  <a name="readclass"></a>  CArchive::ReadClass  
@@ -562,11 +561,11 @@ CRuntimeClass* ReadClass(
   
  런타임 클래스를 사용 해야 합니다 [DECLARE_SERIAL](../../mfc/reference/run-time-object-model-services.md#declare_serial) 하 고 [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial)고, 그렇지 않으면 `ReadClass` 시킵니다를 [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)합니다.  
   
- 하는 경우 *pSchema* 가 null 인 경우 저장된 클래스의 스키마를 호출 하 여 검색할 수 있습니다 [CArchive::GetObjectSchema](#getobjectschema)이 고, 그렇지 않으면 **\** * * pSchema* 됩니다 이전에 저장 된 런타임 클래스의 스키마를 포함 합니다.  
+ 하는 경우 *pSchema* 가 null 인 경우 저장된 클래스의 스키마를 호출 하 여 검색할 수 있습니다 [CArchive::GetObjectSchema](#getobjectschema)이 고, 그렇지 않으면 <strong>\*</strong>  *pSchema* 이전에 저장 된 런타임 클래스의 스키마에 포함 됩니다.  
   
  사용할 수 있습니다 [SerializeClass](#serializeclass) 대신 `ReadClass`, 읽기 및 쓰기 클래스 참조를 모두 처리 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CArchive::WriteClass](#writeclass)합니다.  
   
 ##  <a name="readobject"></a>  CArchive::ReadObject  
@@ -588,7 +587,7 @@ CObject* ReadObject(const CRuntimeClass* pClass);
   
  0이 아닌 제공 하는 경우 *pClass* 으로 얻을 수 있는 매개 변수를 [RUNTIME_CLASS](../../mfc/reference/run-time-object-model-services.md#runtime_class) 매크로 이면 함수는 보관 된 개체의 런타임 클래스를 확인 합니다. 이 클래스의 구현에서 IMPLEMENT_SERIAL 매크로 사용한 가정 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CArchive::WriteObject](#writeobject)합니다.  
   
 ##  <a name="readstring"></a>  CArchive::ReadString  
@@ -619,7 +618,7 @@ LPTSTR ReadString(LPTSTR lpsz, UINT nMax);
   
  [CArchive::Read](#read) 캐리지 리턴-줄 바꿈 쌍에 텍스트 모드 입력 하지만 종료 하지 않는 한 사용할 수도 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CArchive::WriteString](#writestring)합니다.  
   
 ##  <a name="serializeclass"></a>  CArchive::SerializeClass  
@@ -642,7 +641,7 @@ void SerializeClass(const CRuntimeClass* pClassRef);
   
  사용 된 [RUNTIME_CLASS](../../mfc/reference/run-time-object-model-services.md#runtime_class) 매크로 대 한 값을 검색 하는 *pRuntimeClass* 매개 변수. 기본 클래스를 사용 해야 합니다 [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial) 매크로입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCSerialization#25](../../mfc/codesnippet/cpp/carchive-class_17.h)]  
   
 ##  <a name="setloadparams"></a>  CArchive::SetLoadParams  
@@ -661,7 +660,7 @@ void SetLoadParams(UINT nGrowBy = 1024);
   
  호출 해야 하면 `SetLoadParams` 개체 로드 되 면 이나 뒤 [MapObject](#mapobject) 하거나 [ReadObject](#readobject) 라고 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCSerialization#26](../../mfc/codesnippet/cpp/carchive-class_18.h)]  
   
 ##  <a name="setobjectschema"></a>  CArchive::SetObjectSchema  
@@ -680,7 +679,7 @@ void SetObjectSchema(UINT nSchema);
   
  사용 하 여 `SetObjectSchema` 고급 버전 관리;에 대 한 예를 들어, 하려는 경우 강제로 특정 버전을 읽을 수는 `Serialize` 파생된 클래스의 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCSerialization#27](../../mfc/codesnippet/cpp/carchive-class_19.cpp)]  
   
 ##  <a name="setstoreparams"></a>  CArchive::SetStoreParams  
@@ -702,7 +701,7 @@ void SetStoreParams(UINT nHashSize = 2053, UINT nBlockSize = 128);
   
  호출 해야 하면 `SetStoreParams` 개체를 저장 된 후 또는 한 후 [MapObject](#mapobject) 또는 [WriteObject](#writeobject) 라고 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCSerialization#26](../../mfc/codesnippet/cpp/carchive-class_18.h)]  
   
 ##  <a name="write"></a>  CArchive::Write  
@@ -724,7 +723,7 @@ void Write(const void* lpBuf, INT nMax);
   
  사용할 수는 `Write` 내에서 멤버 함수에 `Serialize` 일반적인 구조를 작성 하는 함수 개체에 포함 된 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCSerialization#23](../../mfc/codesnippet/cpp/carchive-class_20.cpp)]  
   
 ##  <a name="writeclass"></a>  CArchive::WriteClass  
@@ -747,7 +746,7 @@ void WriteClass(const CRuntimeClass* pClassRef);
   
  사용할 수 있습니다 [SerializeClass](#serializeclass) 대신 `WriteClass`, 읽기 및 쓰기 클래스 참조를 모두 처리 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCSerialization#28](../../mfc/codesnippet/cpp/carchive-class_21.cpp)]  
   
 ##  <a name="writeobject"></a>  CArchive::WriteObject  
@@ -771,7 +770,7 @@ void WriteObject(const CObject* pOb);
 > [!NOTE]
 >  만들기, 삭제 및 보관 하기 전에 개체를 모두 업데이트를 완료 합니다. 개체 수정 하 여 보관을 혼합 하면 보관 손상 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  클래스의 정의 대 한 `CAge`, 예를 참조 하세요 [CObList::CObList](../../mfc/reference/coblist-class.md#coblist)합니다.  
   
  [!code-cpp[NVC_MFCSerialization#29](../../mfc/codesnippet/cpp/carchive-class_22.cpp)]  
@@ -794,7 +793,7 @@ void WriteString(LPCTSTR lpsz);
   
  `Write` 사용할 수도 있습니다 하지만 null 문자에서 종료 하는 대신 파일에 요청된 된 바이트 수가 기록 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCSerialization#30](../../mfc/codesnippet/cpp/carchive-class_23.cpp)]  
   
 ## <a name="see-also"></a>참고 항목  

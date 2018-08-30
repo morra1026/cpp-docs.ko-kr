@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9837b42148062bdd2c44855c129f085ca47cdec0
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 00265d3ce0f8ea867021500777d93991d245be47
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848796"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204815"
 ---
 # <a name="atl-collections-and-enumerators"></a>ATL 컬렉션 및 열거자
 `collection` 그룹 (원시 데이터 또는 기타 개체) 데이터 항목에 대 한 액세스를 허용 하는 인터페이스를 제공 하는 COM 개체입니다. 개체의 그룹에 대 한 액세스를 제공 하 라고에 대 한 표준을 따르는 인터페이스는 *컬렉션 인터페이스*합니다.  
@@ -31,7 +31,7 @@ ms.locfileid: "37848796"
   
  `enumerator` 컬렉션의 항목을 반복 하는 것에 대 한 인터페이스를 제공 하는 COM 개체입니다. 네 가지 필수 메서드를 통해 컬렉션의 요소에 대 한 직렬 액세스를 제공 하는 열거자 인터페이스: `Next`, `Skip`를 `Reset`, 및 `Clone`합니다.  
   
- (그러나 완전히 허수) 전형적인 대 한 열거자 인터페이스에 대 한 자세히 알아보십시오 [IEnumXXXX](https://msdn.microsoft.com/library/ms680089.aspx) 인터페이스입니다.  
+ 와 같은 참조 하 여 열거자 인터페이스에 대 한 자세한 참조 콘텐츠에 대해 알아볼 수 있습니다 [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) 인터페이스입니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [ATL 컬렉션 및 열거자 클래스](../atl/atl-collection-and-enumerator-classes.md)  

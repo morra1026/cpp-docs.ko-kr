@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b51fd0f090eb53184572ac1ee26d30177fae1df
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: aa231a2f232c6c834e05edfbca5d6023e0326d54
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339295"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216738"
 ---
 # <a name="cgopherlocator-class"></a>CGopherLocator 클래스
 Gopher 서버에서 gopher "로케이터"를 가져옵니다 로케이터 형식을 확인 하 고 로케이터를 사용할 수 있게 [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md)합니다.  
@@ -102,7 +102,7 @@ BOOL GetLocatorType(DWORD& dwRef) const;
  Locator 유형의 받을 DWORD에 대 한 참조입니다. 참조 **주의** locator의 테이블에 대 한 합니다.  
   
 ### <a name="return-value"></a>반환 값  
- 성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.  
+ 성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.  
   
 ### <a name="remarks"></a>설명  
  가능한 형식은 아래와 같습니다.  

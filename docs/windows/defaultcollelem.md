@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3cf41a5d827bd3834cffdd7d229d01d4a4889c9b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 396043d78ae1b93f7089d1518c26e982d0ad3974
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610004"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205114"
 ---
 # <a name="defaultcollelem"></a>defaultcollelem
 
@@ -36,9 +36,9 @@ Visual Basic 코드 최적화를 위해 사용 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **defaultcollelem** c + + 특성에 동일한 기능을 합니다 [defaultcollelem](http://msdn.microsoft.com/library/windows/desktop/aa366792) MIDL 특성입니다.
+합니다 **defaultcollelem** c + + 특성에 동일한 기능을 합니다 [defaultcollelem](/windows/desktop/Midl/defaultcollelem) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드를 사용 하 여 인터페이스 메서드를 표시 합니다 **defaultcollelem** 특성:
 

@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2648d3628b8edd8b864dcf69dcfa7acb6d07339
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 3a1470c544e624de4ef9fb570859dca9b282edde
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406665"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208068"
 ---
 # <a name="new-and-delete-operators"></a>new 및 delete 연산자
 
@@ -55,7 +55,7 @@ char *pch = new char[BUFFER_SIZE];
 |**:: new 연산자**|Global|  
 |*클래스 이름을* **:: new 연산자**|클래스|  
   
- 첫 번째 인수 **new 연산자** 유형 이어야 `size_t` (에 정의 된 형식 \<stddef.h >), 하며 반환 형식은 항상 **void \*** 합니다.  
+ 첫 번째 인수 **new 연산자** 유형 이어야 `size_t` (에 정의 된 형식 \<stddef.h >), 하며 반환 형식은 항상 **void** <strong>\*</strong>.  
   
  전역 **new 연산자** 호출 될 때 합니다 **새** 연산자를 사용 하 여를 기본 제공 형식의 개체를 할당, 포함 하지 않는 클래스 형식의 개체가 사용자 정의 **new 연산자** 함수 및 모든 형식의 배열입니다. 때를 **새** 연산자 클래스 형식의 개체를 할당 하는 위치를 **new 연산자** 정의 된 해당 클래스의 **new 연산자** 라고 합니다.  
   

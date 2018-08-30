@@ -126,12 +126,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17a6d1e618dc9345266cb3c0d618fda1c4f78c44
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: b3a80cf072a4f95885ef0bc9a0b28a385fde085f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339464"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206085"
 ---
 # <a name="cdhtmldialog-class"></a>CDHtmlDialog 클래스
 HTML을 사용 하는 대화 상자를 만드는 데 사용 되는 사용자 인터페이스를 구현 하는 대화 상자 리소스 대신 합니다.  
@@ -171,7 +171,7 @@ class CDHtmlDialog : public CDialog, public CDHtmlEventSink
 |[CDHtmlDialog::GetControlProperty](#getcontrolproperty)|지정된 된 ActiveX 컨트롤의 요청된 된 속성을 검색합니다.|  
 |[CDHtmlDialog::GetCurrentUrl](#getcurrenturl)|현재 문서와 연결 된 Uniform Resource Locator (URL)를 검색 합니다.|  
 |[CDHtmlDialog::GetDHtmlDocument](#getdhtmldocument)|현재 로드 된 HTML 문서에서 IHTMLDocument2 인터페이스를 검색합니다.|  
-|[CDHtmlDialog::GetDropTarget](#getdroptarget)|대안을 제공 하는 대화 상자의 수 있도록 놓기 대상으로 사용 되는 경우 포함 된 WebBrowser 컨트롤을 호출한 [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679)합니다.|  
+|[CDHtmlDialog::GetDropTarget](#getdroptarget)|대안을 제공 하는 대화 상자의 수 있도록 놓기 대상으로 사용 되는 경우 포함 된 WebBrowser 컨트롤을 호출한 [IDropTarget](/windows/desktop/api/oleidl/nn-oleidl-idroptarget)합니다.|  
 |[CDHtmlDialog::GetElement](#getelement)|HTML 요소 인터페이스를 가져옵니다.|  
 |[CDHtmlDialog::GetElementHtml](#getelementhtml)|검색 된 `innerHTML` HTML 요소의 속성입니다.|  
 |[CDHtmlDialog::GetElementInterface](#getelementinterface)|HTML 요소에서 요청 된 인터페이스 포인터를 검색합니다.|  
@@ -374,7 +374,7 @@ void DDX_DHtml_AxControl(
  *var*  
  데이터 멤버 형식 변형 [COleVariant](../../mfc/reference/colevariant-class.md), 또는 [CComVariant](../../atl/reference/ccomvariant-class.md), ActiveX 컨트롤 속성을 사용 하 여 교환 하는 값을 보유 하는 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCHtmlHttp#1](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_1.cpp)]  
   
 ##  <a name="ddx_dhtml_checkbox"></a>  CDHtmlDialog::DDX_DHtml_CheckBox  
@@ -397,7 +397,7 @@ void DDX_DHtml_CheckBox(
  *값*  
  교환할 값입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCHtmlHttp#2](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_2.cpp)]  
   
 ##  <a name="ddx_dhtml_elementtext"></a>  CDHtmlDialog::DDX_DHtml_ElementText  
@@ -546,7 +546,7 @@ void DDX_DHtml_SelectValue(
  *값*  
  교환할 값입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCHtmlHttp#3](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_3.cpp)]  
   
 ##  <a name="destroymodeless"></a>  CDHtmlDialog::DestroyModeless  
@@ -678,7 +678,7 @@ HRESULT GetDHtmlDocument(IHTMLDocument2 **pphtmlDoc);
  표준 HRESULT입니다. 성공 하면 S_OK를 반환 합니다.  
   
 ##  <a name="getdroptarget"></a>  CDHtmlDialog::GetDropTarget  
- 대안을 제공 하는 대화 상자의 수 있도록 놓기 대상으로 사용 되는 경우 포함 된 WebBrowser 컨트롤을 호출한 [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679)합니다.  
+ 대안을 제공 하는 대화 상자의 수 있도록 놓기 대상으로 사용 되는 경우 포함 된 WebBrowser 컨트롤을 호출한 [IDropTarget](/windows/desktop/api/oleidl/nn-oleidl-idroptarget)합니다.  
   
 ```  
 STDMETHOD(GetDropTarget)(
@@ -777,7 +777,7 @@ HRESULT GetElementInterface(
 ### <a name="return-value"></a>반환 값  
  표준 HRESULT 값입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCHtmlHttp#4](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_4.cpp)]  
   
 ##  <a name="getelementproperty"></a>  CDHtmlDialog::GetElementProperty  
@@ -944,7 +944,7 @@ BOOL m_bUseHtmlTitle;
 UINT m_nHtmlResID;  
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCHtmlHttp#5](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_5.cpp)]  
   
 ##  <a name="m_pbrowserapp"></a>  CDHtmlDialog::m_pBrowserApp  
@@ -975,7 +975,7 @@ CString m_strCurrentUrl;
 LPTSTR m_szHtmlResID;  
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCHtmlHttp#6](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_6.cpp)]  
   
 ##  <a name="navigate"></a>  CDHtmlDialog::Navigate  

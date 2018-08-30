@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6414856aa893a9dba67dce5ffd9650fd03289ae
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 892cccea65b9e1b6f0c1eec21d3973e84a0fba03
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885249"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223261"
 ---
 # <a name="ccomcompositecontrol-class"></a>CComCompositeControl 클래스
 이 클래스는 복합 컨트롤을 구현 하는 데 필요한 메서드를 제공 합니다.  
@@ -91,7 +91,7 @@ class CComCompositeControl : public CComControl<T,CAxDialogImpl<T>>
 > [!NOTE]
 >  액셀러레이터 키가 제대로 작동 되려면를 `CComCompositeControl`에 컨트롤을 만들 때 액셀러레이터 키 테이블을 로드, 다시 액셀러레이터 키의 수와 핸들을 전달 하는 데 필요한 것 [IOleControlImpl::GetControlInfo](../../atl/reference/iolecontrolimpl-class.md#getcontrolinfo), 및 마지막으로 컨트롤에서 해제 될 때 테이블을 삭제 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_COM#14](../../atl/codesnippet/cpp/ccomcompositecontrol-class_2.h)]  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
@@ -174,7 +174,7 @@ HWND Create(
  예약됨.  
   
  *dwInitParam*  
- 컨트롤을 만드는 동안 컨트롤에 전달할 데이터입니다. 데이터를 전달 *dwInitParam* LPARAM 매개 변수로 표시 됩니다는 [WM_INITDIALOG](http://msdn.microsoft.com/library/windows/desktop/ms645428) 메시지를 생성 하는 경우 복합 컨트롤에 전송 됩니다.  
+ 컨트롤을 만드는 동안 컨트롤에 전달할 데이터입니다. 데이터를 전달 *dwInitParam* LPARAM 매개 변수로 표시 됩니다는 [WM_INITDIALOG](/windows/desktop/dlgbox/wm-initdialog) 메시지를 생성 하는 경우 복합 컨트롤에 전송 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  새로 만든된 복합 컨트롤 대화 상자에 대 한 핸들입니다.  

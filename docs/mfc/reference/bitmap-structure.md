@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ddc4868d7cc3c094ad2bb81b5d9706a2b749553d
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 2068f3a735a14662e10f00af3fc5f81efd037592
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339349"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220763"
 ---
 # <a name="bitmap-structure"></a>BITMAP 구조체
 합니다 **비트맵** 높이, 너비, 색상 형식 및 논리적 비트맵의 비트 값을 정의 하는 구조**합니다.**  
@@ -85,7 +85,7 @@ typedef struct tagBITMAP {  /* bm */
   
  모든 장치 집합 RC_BITBLT 비트의 RASTERCAPS 인덱스에 있는 비트맵을 지원 합니다 [CDC::GetDeviceCaps](../../mfc/reference/cdc-class.md#getdevicecaps) 멤버 함수입니다.  
   
- 각 장치는 고유한 색상 형식을 가집니다. 다른 장치로 비트맵을 전송 하기 위해 사용 합니다 [GetDIBits](http://msdn.microsoft.com/library/windows/desktop/dd144879) 하 고 [SetDIBits](http://msdn.microsoft.com/library/windows/desktop/dd162973) Windows 함수입니다.  
+ 각 장치는 고유한 색상 형식을 가집니다. 다른 장치로 비트맵을 전송 하기 위해 사용 합니다 [GetDIBits](/windows/desktop/api/wingdi/nf-wingdi-getdibits) 하 고 [SetDIBits](/windows/desktop/api/wingdi/nf-wingdi-setdibits) Windows 함수입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** wingdi.h  

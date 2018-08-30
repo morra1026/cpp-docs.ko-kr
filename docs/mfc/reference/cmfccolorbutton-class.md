@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43ee49dede1a71e8bd2a01e98a3bdd2dd53ef63d
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: fbabd502ca6d9d81c569831f9dcb0b344523bb3e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42543200"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215330"
 ---
 # <a name="cmfccolorbutton-class"></a>CMFCColorButton 클래스
 합니다 `CMFCColorButton` 하 고 [CMFCColorBar 클래스](../../mfc/reference/cmfccolorbar-class.md) 색 선택 컨트롤을 구현 하려면 클래스를 함께 사용 합니다.  
@@ -112,10 +112,10 @@ class CMFCColorButton : public CMFCButton
 |`m_bAltColorDlg`|부울입니다. True 이면 프레임 워크가 표시 합니다 [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) 색 대화 상자를 *다른* 단추를 클릭 FALSE 이면 시스템 색 대화 상자 또는. 기본값은 TRUE입니다. 자세한 내용은 [CMFCColorButton::EnableOtherButton](#enableotherbutton)합니다.|  
 |`m_bAutoSetFocus`|부울입니다. TRUE 인 경우 프레임 워크 메뉴 표시 되거나 FALSE 인 경우 포커스를 변경 하지 경우 색 메뉴에 포커스를 설정 합니다. 기본값은 TRUE입니다.|  
 |[CMFCColorButton::m_bEnabledInCustomizeMode](#m_benabledincustomizemode)|색 단추에 대 한 사용자 지정 모드를 사용 하는지 여부를 나타냅니다.|  
-|`m_Color`|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 값입니다. 현재 선택한 색을 포함합니다.|  
-|`m_ColorAutomatic`|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 값입니다. 현재 선택된 된 기본 색을 포함합니다.|  
-|`m_Colors`|A [CArray](../../mfc/reference/carray-class.md) 의 [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 값입니다. 현재 색을 포함합니다.|  
-|`m_lstDocColors`|A [CList](../../mfc/reference/clist-class.md) 의 [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 값입니다. 현재 문서 색을 포함합니다.|  
+|`m_Color`|A [COLORREF](/windows/desktop/gdi/colorref) 값입니다. 현재 선택한 색을 포함합니다.|  
+|`m_ColorAutomatic`|A [COLORREF](/windows/desktop/gdi/colorref) 값입니다. 현재 선택된 된 기본 색을 포함합니다.|  
+|`m_Colors`|A [CArray](../../mfc/reference/carray-class.md) 의 [COLORREF](/windows/desktop/gdi/colorref) 값입니다. 현재 색을 포함합니다.|  
+|`m_lstDocColors`|A [CList](../../mfc/reference/clist-class.md) 의 [COLORREF](/windows/desktop/gdi/colorref) 값입니다. 현재 문서 색을 포함합니다.|  
 |`m_nColumns`|정수입니다. 색 선택 메뉴에 색 눈금에 표시할 열의 수를 포함 합니다.|  
 |`m_pPalette`|에 대 한 포인터를 [CPalette](../../mfc/reference/cpalette-class.md)합니다. 현재 색 선택 메뉴에서 사용할 수 있는 색을 포함 합니다.|  
 |`m_pPopup`|에 대 한 포인터를 [CMFCColorPopupMenu 클래스](../../mfc/reference/cmfccolorpopupmenu-class.md) 개체입니다. 색 단추를 클릭할 때 표시 되는 색 선택 메뉴입니다.|  
@@ -132,7 +132,7 @@ class CMFCColorButton : public CMFCButton
   
  `CMFCColorButton` 개체 WM_COMMAND를 전송 하 여 색을 변경 하 고 있는 부모에 알립니다. | BN_CLICKED 알림입니다. 부모가 사용 합니다 [CMFCColorButton::GetColor](#getcolor) 현재 색을 검색 하는 방법입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서 다양 한 메서드를 사용 하 여 색 단추를 구성 하는 방법에 설명 합니다 `CMFCColorButton` 클래스입니다. 메서드 색 단추를 열 수의 색을 설정 하 고 자동 및 기타 단추를 사용 하도록 설정 합니다. 이 예제는의 일부를 [상태 표시줄 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_StatusBarDemo#10](../../mfc/reference/codesnippet/cpp/cmfccolorbutton-class_1.h)]  
@@ -439,7 +439,7 @@ virtual void UpdateColor(COLORREF color);
  [CMFCButton 클래스](../../mfc/reference/cmfcbutton-class.md)   
  [CMFCColorBar 클래스](../../mfc/reference/cmfccolorbar-class.md)   
  [CMFCColorButton::OnShowColorPopup](#onshowcolorpopup)   
- [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449)   
+ [COLORREF](/windows/desktop/gdi/colorref)   
  [CPalette 클래스](../../mfc/reference/cpalette-class.md)   
  [CArray 클래스](../../mfc/reference/carray-class.md)   
  [CList 클래스](../../mfc/reference/clist-class.md)   

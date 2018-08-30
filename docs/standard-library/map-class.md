@@ -98,12 +98,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40b84e3daac5a1e5574c09e656d39dc774b57031
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: bb157fb5c39dff7f4e06926ddd17ed38d7a5174a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027747"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218635"
 ---
 # <a name="map-class"></a>map 클래스
 
@@ -123,15 +123,19 @@ class map;
 
 ### <a name="parameters"></a>매개 변수
 
-*키* map에 저장할 키 데이터를 입력 합니다.
+*키*<br/>
+ map에 저장되는 키 데이터 형식입니다.
 
-*형식* map에 저장 되는 요소 데이터 형식입니다.
+*Type*<br/>
+ map에 저장되는 요소 데이터 형식입니다.
 
-*특성* 지도에서 상대적 순서를 결정 하는 정렬 키로 두 요소 값을 비교할 수 있는 함수 개체를 제공 하는 형식입니다. 이 인수는 선택 사항이며 기본값은 이진 조건자 `less<Key>`입니다.
+*특성*<br/>
+ 함수 개체를 제공하는 형식은 map 내에서의 상대적인 순서를 결정하는 정렬 키로 두 요소 값을 비교할 수 있습니다. 이 인수는 선택 사항이며 기본값은 이진 조건자 `less<Key>`입니다.
 
 C++14에서는 형식 매개 변수가 없는 std::less<> 조건자를 지정하여 유형이 다른 조회를 사용하도록 설정할 수 있습니다. 자세한 내용은 [연관 컨테이너의 유형이 다른 조회](../standard-library/stl-containers.md#sequence_containers)를 참조하세요
 
-*할당자* 지도의 할당 및 메모리 할당 취소 하는 방법에 대 한 세부 정보를 캡슐화 하는 저장 된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `allocator<pair<const Key, Type> >`입니다.
+*할당자*<br/>
+ map의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `allocator<pair<const Key, Type> >`입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -242,7 +246,7 @@ map 개체의 할당자 클래스를 나타내는 형식입니다.
 typedef Allocator allocator_type;
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `allocator_type`을 사용하는 예제는 [get_allocator](#get_allocator)의 예제를 참조하세요.
 
@@ -271,7 +275,7 @@ const Type& at(const Key& key) const;
 
 인수 키 값을 찾을 수 없는 경우 이 함수는 [out_of_range 클래스](../standard-library/out-of-range-class.md) 클래스의 개체를 throw합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_at.cpp
@@ -311,7 +315,7 @@ iterator begin();
 
 map의 첫 번째 요소 또는 빈 map 다음 위치의 주소를 지정하는 양방향 반복기입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_begin.cpp
@@ -414,7 +418,7 @@ map의 모든 요소를 지웁니다.
 void clear();
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서는 map::clear 멤버 함수의 사용을 보여 줍니다.
 
@@ -470,7 +474,7 @@ map에 의해 정의된 `const_iterator`는 `pair`\< **constKey**, **Type**> 형
 
 요소에 대한 매핑된 데이터의 값에 액세스하려면 `cIter` -> **second**를 사용합니다. 이 항목은 (\* `cIter`). **second**와 같습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `const_iterator`를 사용하는 예제는 [begin](#begin)에 대한 예제를 참조하세요.
 
@@ -496,7 +500,7 @@ typedef typename allocator_type::const_pointer const_pointer;
 typedef typename allocator_type::const_reference const_reference;
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_const_ref.cpp
@@ -558,7 +562,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 
 요소에 대 한 매핑된 데이텀의 값에 액세스 하려면 사용 하 여 `crIter`  ->  **두 번째**에 해당 하는 (\* `crIter`). **첫 번째**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `const_reverse_iterator`를 선언하고 사용하는 방법에 대한 예제는 [rend](#rend)에 대한 예제를 참조하세요.
 
@@ -572,7 +576,8 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*키* map에서 일치 하는지 확인할 요소의 키 값입니다.
+*key*<br/>
+ map에서 일치시킬 요소의 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -586,7 +591,7 @@ map에 정렬 키가 매개 변수 키와 일치하는 요소가 있는 경우 1
 
 고유한 결합형 컨테이너인 map의 경우 0 또는 1입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서는 map::count 멤버 함수의 사용을 보여 줍니다.
 
@@ -649,7 +654,7 @@ const_reverse_iterator crbegin() const;
 
 `crbegin`은 `map`을 역방향으로 반복할 때 사용할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_crbegin.cpp
@@ -701,7 +706,7 @@ const_reverse_iterator crend() const;
 
 `crend`에서 반환한 값은 역참조되지 않아야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_crend.cpp
@@ -746,7 +751,7 @@ typedef allocator_type::difference_type difference_type;
 
 입력 반복기 요구 사항을 충족하는 모든 반복기(set 등의 가역 컨테이너에서 지원하는 양방향 반복기 클래스 포함)에 대해 `difference_type`을 사용할 수는 있지만, 반복기 간의 빼기는 vector와 같은 임의 액세스 컨테이너가 제공하는 임의 액세스 반복기를 통해서만 지원됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_diff_type.cpp
@@ -820,7 +825,7 @@ A [쌍](../standard-library/pair-structure.md) 인 **bool** 구성 요소가 삽
 
 요소의 [value_type](#value_type)은 쌍이므로, 요소의 값은 첫 번째 구성 요소가 키 값과 동일하고 두 번째 구성 요소가 요소의 데이터 값과 동일한 정렬된 쌍입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_emplace.cpp
@@ -910,7 +915,7 @@ iterator emplace_hint(
 
 요소의 [value_type](#value_type)은 쌍이므로, 요소의 값은 첫 번째 구성 요소가 키 값과 동일하고 두 번째 구성 요소가 요소의 데이터 값과 동일한 정렬된 쌍입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_emplace.cpp
@@ -967,7 +972,7 @@ bool empty() const;
 
 map이 비어 있으면 **true**이고, 비어 있지 않으면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_empty.cpp
@@ -1035,13 +1040,14 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>매개 변수
 
-*키* 검색 중인 map에서 요소의 정렬 키와 비교할 인수 키 값입니다.
+*key*<br/>
+ 검색 중인 map에서 요소의 정렬 키와 비교할 인수 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
 구성원 함수가 반환하는 `pr` 쌍의 첫 번째 반복기에 액세스하려면 `pr`. **first**를 사용하고 하한 반복기를 역참조하려면 \*( `pr`. **first**)를 사용합니다. 구성원 함수가 반환하는 `pr` 쌍의 두 번째 반복기에 액세스하려면 `pr`. **second**를 사용하고 상한 반복기를 역참조하려면 \*( `pr`. **second**)를 사용합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_equal_range.cpp
@@ -1121,13 +1127,17 @@ size_type erase(
 
 ### <a name="parameters"></a>매개 변수
 
-*여기서* 제거할 요소의 위치입니다.
+*Where*<br/>
+ 제거할 요소의 위치입니다.
 
-*첫 번째* 제거할 첫 번째 요소의 위치입니다.
+*첫 번째*<br/>
+ 제거할 첫 번째 요소의 위치입니다.
 
-*마지막* 제거할 마지막 요소 바로 뒤의 위치입니다.
+*마지막*<br/>
+ 제거할 마지막 요소 바로 다음 위치입니다.
 
-*키* 제거할 요소의 키 값입니다.
+*키*<br/>
+ 제거할 요소의 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1135,7 +1145,7 @@ size_type erase(
 
 세 번째 멤버 함수의 경우 map에서 제거된 요소의 수를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_erase.cpp
@@ -1229,7 +1239,8 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*키* 검색 중인 map에서 요소의 정렬 키와 일치 하는지 확인할 키 값입니다.
+*key*<br/>
+ 검색 중인 맵에서 요소의 정렬 키와 일치 여부를 확인할 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1241,7 +1252,7 @@ const_iterator find(const Key& key) const;
 
 `find`의 반환 값이 `const_iterator`에 할당되는 경우에는 map 개체를 수정할 수 없습니다. 하는 경우의 반환 값 `find` 에 할당 되는 `iterator`, 맵 개체를 수정할 수 있습니다
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // compile with: /EHsc /W4 /MTd
@@ -1320,7 +1331,7 @@ map에서 사용되는 할당자입니다.
 
 map 클래스의 할당자는 클래스가 저장소를 관리하는 방법을 지정합니다. C++ 표준 라이브러리 컨테이너 클래스와 함께 제공되는 기본 할당자를 사용하면 대부분의 프로그래밍 요구 사항을 충족할 수 있습니다. 할당자 클래스를 직접 작성하고 사용하는 방법에 대해서는 고급 C++ 항목에서 다룹니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_get_allocator.cpp
@@ -1452,7 +1463,7 @@ IList);
 
 생성된 요소를 삽입하고 복사 또는 이동 작업은 수행하지 않으려면 [map::emplace](#emplace) 및 [map::emplace_hint](#emplace_hint)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_insert.cpp
@@ -1561,13 +1572,13 @@ typedef implementation-defined iterator;
 
 ### <a name="remarks"></a>설명
 
-`iterator` 의 개체는 요소에 대 한 지도 점 정의한 [value_type](#value_type)되는 형식의 `pair` * \< * **constKey**, * *형식 * * * >* 첫 번째 멤버는 요소에 한 키가 고 두 번째 멤버는 요소에 포함 된 매핑된 데이텀입니다.
+지도 점에의 개체는 요소에 의해 정의 된 반복기 [value_type](#value_type)되는 형식의 `pair<const Key, Type>`첫 번째 멤버는 요소에 한 키가 고 두 번째 멤버는 요소에 포함 된 매핑된 데이텀입니다.
 
-역참조에 **반복기** `Iter` 사용 하 여 map에서 요소를 가리키는 `->` 연산자입니다.
+반복기를 역참조 하려면 *Iter* 사용 하 여 map에서 요소를 가리키는 `->` 연산자입니다.
 
-요소에 대한 키의 값에 액세스하려면 `Iter` -> **first**를 사용합니다. 이 항목은 (\* `Iter`). **first**와 같습니다. 요소에 대한 매핑된 데이터의 값에 액세스하려면 `Iter` -> **second**를 사용합니다. 이 항목은 (\* `Iter`). **second**와 같습니다.
+요소에 대 한 키의 값에 액세스 하려면 사용 하 여 `Iter->first`, 값은 `(*Iter).first`합니다. 요소에 대 한 매핑된 데이텀의 값에 액세스 하려면 사용 하 여 `Iter->second`, 값은 `(*Iter).second`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 예를 참조 하세요 [시작할](#begin) 선언 하 고 사용 하는 방법의 예 `iterator`합니다.
 
@@ -1585,13 +1596,13 @@ map이 요소의 순서를 지정하는 데 사용하는 함수 개체를 반환
 
 ### <a name="remarks"></a>설명
 
-저장된 개체는 멤버 함수
+저장된 개체는 구성원 함수
 
-**bool operator**( **constKey&**`left`, **const Key&**`right`);를
+`bool operator(const Key& left, const Key& right);`
 
 정의합니다. 이 함수는 `left`이 앞에 오며 정렬 순서가 `right`과 같지 않으면 **true**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_key_comp.cpp
@@ -1656,7 +1667,7 @@ typedef Traits key_compare;
 
 에 대 한 자세한 *Traits* 참조를 [map 클래스](../standard-library/map-class.md) 항목입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `key_compare`를 선언하고 사용하는 방법에 대한 예제는 [key_comp](#key_comp)의 예제를 참조하세요.
 
@@ -1674,7 +1685,7 @@ typedef Key key_type;
 
 에 대 한 자세한 *키*의 주의 섹션을 참조 합니다 [map 클래스](../standard-library/map-class.md) 항목입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `key_type`을 선언하고 사용하는 방법에 대한 예제는 [value_type](#value_type)의 예제를 참조하세요.
 
@@ -1690,7 +1701,8 @@ const_iterator lower_bound(const Key& key) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*키* 검색 중인 map에서 요소의 정렬 키와 비교할 인수 키 값입니다.
+*key*<br/>
+ 검색 중인 map에서 요소의 정렬 키와 비교할 인수 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1698,7 +1710,7 @@ const_iterator lower_bound(const Key& key) const;
 
 `lower_bound`의 반환 값이 `const_iterator`에 할당되는 경우에는 map 개체를 수정할 수 없습니다. 하는 경우의 반환 값 `lower_bound` 에 할당 되는 `iterator`, map 개체를 수정할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_lower_bound.cpp
@@ -1829,7 +1841,7 @@ map(
 
 다음 세 생성자는 map의 범위 `[First, Last)`를 복사하여, `Traits` 클래스 및 할당자의 비교 함수 형식을 지정할 때 명시도가 향상됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_map.cpp
@@ -1960,7 +1972,7 @@ typedef Type mapped_type;
 
 대 한 자세한 내용은 *형식* 를 참조 합니다 [map 클래스](../standard-library/map-class.md) 항목입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `mapped_type`을 선언하고 사용하는 방법에 대한 예제는 [value_type](#value_type)의 예제를 참조하세요.
 
@@ -1976,7 +1988,7 @@ size_type max_size() const;
 
 map의 최대 허용 길이입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_max_size.cpp
@@ -2026,7 +2038,7 @@ Type& operator[](Key&& key);
 
 `operator[]`를 사용하여 요소를 삽입하는 경우 반환된 참조는 삽입이 기존 요소를 변경하는지 또는 새 요소를 생성하는지 여부를 나타내지 않습니다. 구성원 함수 [find](#find) 및 [insert](#insert)는 지정된 키가 포함된 요소가 삽입 전에 이미 있는지를 확인하는 데 사용할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_op_insert.cpp
@@ -2118,7 +2130,7 @@ map& operator=(map&& right);
 
 기존 요소를 지운 후는 `map`, `operator=` 복사 하거나 이동 내용의 *오른쪽* 맵에 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_operator_as.cpp
@@ -2191,7 +2203,7 @@ reverse_iterator rbegin();
 
 `rbegin`은 map을 역방향으로 반복할 때 사용할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_rbegin.cpp
@@ -2257,7 +2269,7 @@ map에 저장된 요소에 대한 참조를 제공하는 형식입니다.
 typedef typename allocator_type::reference reference;
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_reference.cpp
@@ -2330,7 +2342,7 @@ reverse_iterator rend();
 
 `rend`에서 반환한 값은 역참조되지 않아야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_rend.cpp
@@ -2402,13 +2414,13 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 
 `reverse_iterator` 형식은 요소 값을 수정할 수 없으며 map을 역방향으로 반복하는 데 사용됩니다.
 
-`reverse_iterator` 의 개체는 요소에 대 한 지도 점 정의한 [value_type](#value_type)되는 형식의 `pair` * \< * **constKey**, * *형식 * * * >* 첫 번째 멤버는 요소에 한 키가 고 두 번째 멤버는 요소에 포함 된 매핑된 데이텀입니다.
+`reverse_iterator` 지도 점 요소를 정의한 [value_type](#value_type)되는 형식의 `pair<const Key, Type>`첫 번째 멤버는 요소에 한 키가 고 두 번째 멤버는 요소에 포함 된 매핑된 데이텀입니다.
 
-역참조에 `reverse_iterator` `rIter` 사용 하 여 map에서 요소를 가리키는 `->` 연산자입니다.
+역참조에 `reverse_iterator` *rIter* 사용 하 여 map에서 요소를 가리키는 `->` 연산자입니다.
 
 요소에 대한 키의 값에 액세스하려면 `rIter` -> **first**를 사용합니다. 이 항목은 (\* `rIter`). **first**와 같습니다. 요소에 대한 매핑된 데이터의 값에 액세스하려면 `rIter` -> **second**를 사용합니다. 이 항목은 (\* `rIter`). **first**와 같습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `reverse_iterator`를 선언하고 사용하는 방법에 대한 예제는 [rbegin](#rbegin)의 예제를 참조하세요.
 
@@ -2424,7 +2436,7 @@ size_type size() const;
 
 map의 현재 길이입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서는 map::size 멤버 함수를 사용하는 방법을 보여 줍니다.
 
@@ -2464,7 +2476,7 @@ map에서 요소 수를 나타낼 수 있는 부호 없는 정수 형식입니�
 typedef typename allocator_type::size_type size_type;
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `size_type`을 선언하고 사용하는 방법에 대한 예제는 [size](#size)에 대한 예제를 참조하세요.
 
@@ -2479,13 +2491,14 @@ void swap(
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 대상 map과 교환할 요소를 제공 하는 인수 map입니다.
+*right*<br/>
+ 대상 map과 교환할 요소를 제공하는 인수 map입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 해당 요소를 교환할 두 map의 요소를 지정하는 참조, 포인터 또는 반복기를 무효화하지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_swap.cpp
@@ -2549,7 +2562,8 @@ const_iterator upper_bound(const Key& key) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*키* 검색 중인 map에서 요소의 정렬 키 값과 비교할 인수 키 값입니다.
+*key*<br/>
+ 검색 중인 map에서 요소의 정렬 키와 비교할 인수 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2557,7 +2571,7 @@ const_iterator upper_bound(const Key& key) const;
 
 반환 값이 `const_iterator`에 할당되는 경우에는 map 개체를 수정할 수 없습니다. 반환 값에 할당 된 경우는 `iterator`, 맵 개체를 수정할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_upper_bound.cpp
@@ -2628,7 +2642,7 @@ map *m*의 경우 두 요소 *e*1( *k*1, *d*1) 및 *e*2( *k*2, `d`2)가 `value_t
 
 정의합니다. 이 함수는 `left`의 키 값이 앞에 오고 정렬 순서의 `right` 키 값과 같지 않으면 **true**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_value_comp.cpp
@@ -2684,7 +2698,7 @@ map의 요소로 저장된 개체의 형식입니다.
 typedef pair<const Key, Type> value_type;
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_value_type.cpp
@@ -2738,7 +2752,7 @@ int main( )
 
 ## <a name="see-also"></a>참고자료
 
-[\<지도 > 멤버](http://msdn.microsoft.com/7e8f0bc2-6034-40f6-9d14-76d4cef86308)<br/>
+[\<지도 > 멤버](https://msdn.microsoft.com/7e8f0bc2-6034-40f6-9d14-76d4cef86308)<br/>
 [컨테이너](../cpp/containers-modern-cpp.md)<br/>
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
 [C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>

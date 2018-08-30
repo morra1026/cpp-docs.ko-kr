@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0be744b8f703bfdc6487995e4a082e5b4c1561c3
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 648b1084b978e4a7ab38775aefcdc7026fee1243
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606842"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206463"
 ---
 # <a name="event--c-component-extensions"></a>event(C++ 구성 요소 확장)
 
@@ -85,7 +85,7 @@ modifiereventdelegate^ event_name
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [이벤트 (C + + /cli CX)](http://msdn.microsoft.com/library/windows/apps/hh755799.aspx)합니다.
+자세한 내용은 [이벤트 (C + + /cli CX)](https://msdn.microsoft.com/library/windows/apps/hh755799.aspx)합니다.
 
 이벤트 처리기를 추가하고 나서 제거하려면 추가 작업에서 반환되는 EventRegistrationToken 구조체를 저장해야 합니다. 그다음에 제거 작업에서 저장된 EventRegistrationToken 구조체를 사용하여 제거할 이벤트 처리기를 식별해야 합니다.
 

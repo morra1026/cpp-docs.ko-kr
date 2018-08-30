@@ -41,12 +41,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98e385f965ab3036d6ccf2383fd4ae6f420eb548
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 4e5ddaf0f3368f9542fbbd04a8a16c56223aefd5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42538721"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219581"
 ---
 # <a name="concurrency-namespace-functions"></a>concurrency 네임 스페이스 함수
 ||||  
@@ -179,12 +179,12 @@ IResourceManager* __cdecl CreateResourceManager();
  `IResourceManager` 인터페이스입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드를 여러 후속 호출에는 리소스 관리자의 동일한 인스턴스를 반환 됩니다. 증분 메서드를 호출할 때마다 대 한 참조를 Resource Manager에 계산 및 호출 하 여 일치 해야 합니다는 [iresourcemanager:: Release](http://msdn.microsoft.com/en-us/5d1356ec-fbd3-4284-a361-1e9e20bbb522) 메서드 스케줄러 완료 되 면 리소스 관리자와 통신 합니다.  
+ 이 메서드를 여러 후속 호출에는 리소스 관리자의 동일한 인스턴스를 반환 됩니다. 증분 메서드를 호출할 때마다 대 한 참조를 Resource Manager에 계산 및 호출 하 여 일치 해야 합니다는 [iresourcemanager:: Release](https://msdn.microsoft.com/5d1356ec-fbd3-4284-a361-1e9e20bbb522) 메서드 스케줄러 완료 되 면 리소스 관리자와 통신 합니다.  
   
  [unsupported_os](unsupported-os-class.md) 운영 체제가 동시성 런타임에 의해 지원 되지 않는 경우 throw 됩니다.  
   
 ##  <a name="create_task"></a>  create_task  
- PPL을 만듭니다 [태스크](http://msdn.microsoft.com/en-us/5389e8a5-5038-40b6-844a-55e9b58ad35f) 개체입니다. 작업 생성자를 사용하는 곳이면 어디에나 `create_task`를 사용할 수 있습니다. 작업을 만드는 동안 `auto` 키워드 사용을 허용하기 때문에 주로 편의상 제공됩니다.  
+ PPL을 만듭니다 [태스크](https://msdn.microsoft.com/5389e8a5-5038-40b6-844a-55e9b58ad35f) 개체입니다. 작업 생성자를 사용하는 곳이면 어디에나 `create_task`를 사용할 수 있습니다. 작업을 만드는 동안 `auto` 키워드 사용을 허용하기 때문에 주로 편의상 제공됩니다.  
   
 ```
 template<typename T>

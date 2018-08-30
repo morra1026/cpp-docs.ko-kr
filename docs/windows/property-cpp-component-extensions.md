@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a48cb013ceb7e3269721cdef3c2f8982d98a0112
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6db0aa5801a8eca896282b65e4d9f156e9b38318
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595989"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212814"
 ---
 # <a name="property--c-component-extensions"></a>속성(C++ 구성 요소 확장)
 
@@ -96,7 +96,7 @@ set 또는 get 접근자의 속성 메서드 본문입니다. *property_body* �
 
 ## <a name="windows-runtime"></a>Windows 런타임
 
-자세한 내용은 [속성 (C + + /cli CX)](http://msdn.microsoft.com/library/windows/apps/hh755807.aspx)합니다.
+자세한 내용은 [속성 (C + + /cli CX)](https://msdn.microsoft.com/library/windows/apps/hh755807.aspx)합니다.
 
 ### <a name="requirements"></a>요구 사항
 

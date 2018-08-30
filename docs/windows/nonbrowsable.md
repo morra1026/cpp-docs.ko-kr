@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d2537ba803d27cc3cf90d111e69778e9d6970770
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d7a888ac987e8928a0e9667f2011ef7afe3075ca
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590147"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209055"
 ---
 # <a name="nonbrowsable"></a>nonbrowsable
 
@@ -36,9 +36,9 @@ ms.locfileid: "42590147"
 
 ## <a name="remarks"></a>설명
 
-합니다 **nonbrowsable** c + + 특성에 동일한 기능을 합니다 [nonbrowsable](http://msdn.microsoft.com/library/windows/desktop/aa367117) MIDL 특성입니다.
+합니다 **nonbrowsable** c + + 특성에 동일한 기능을 합니다 [nonbrowsable](/windows/desktop/Midl/nonbrowsable) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // cpp_attr_ref_nonbrowsable.cpp

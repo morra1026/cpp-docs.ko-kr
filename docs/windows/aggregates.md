@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e3a45aebf309f7b63da29732e7bc5043d2e51a3d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: bf6ca06ffbd3912ac3545bc3c014224412c01bc1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593723"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221172"
 ---
 # <a name="aggregates"></a>집계
 
@@ -64,7 +64,7 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(_m_spAttrXXX, clsid)
 
 두 번째로 [DECLARE_GET_CONTROLLING_UNKNOWN](../atl/reference/aggregation-and-class-factory-macros.md#declare_get_controlling_unknown) 매크로도 추가됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // cpp_attr_ref_aggregates.cpp
@@ -109,6 +109,6 @@ struct CObject : IObject
 [COM 특성](../windows/com-attributes.md)  
 [클래스 특성](../windows/class-attributes.md)  
 [Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  
-[집계](http://msdn.microsoft.com/library/windows/desktop/ms686558)  
-[집계할 수](http://msdn.microsoft.com/library/windows/desktop/aa366721)  
+[집계](/windows/desktop/com/aggregation)  
+[집계할 수](/windows/desktop/Midl/aggregatable)  
 [COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../atl/reference/com-interface-entry-macros.md#com_interface_entry_autoaggregate_blind)  

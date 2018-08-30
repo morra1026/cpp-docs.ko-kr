@@ -69,19 +69,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db6c1711931e7ac017e9d55a64e317e4e4520335
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 53096465b346403d62638e6e24a1609759a78d73
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414339"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206585"
 ---
 # <a name="strset-strsetl-wcsset-wcssetl-mbsset-mbssetl"></a>_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l
 
 문자열의 문자를 특정 문자로 설정합니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [_strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l](strset-s-strset-s-l-wcsset-s-wcsset-s-l-mbsset-s-mbsset-s-l.md)을 참조하세요.
 
 > [!IMPORTANT]
-> **_mbsset** 및 **_mbsset_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbsset** 하 고 **_mbsset_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -132,16 +132,16 @@ unsigned char *_mbsset_l(
 
 ## <a name="remarks"></a>설명
 
-**_strset** 함수 설정의 모든 문자 (null 종결 문자)를 제외한 *str* 를 *c*변환 **char**합니다. **_wcsset** 및 **_mbsset_l** 와이드 문자 및 멀티 바이트 문자 버전의 **_strset**, 하 고 인수 및 반환 값의 데이터 형식을 적절 하 게 변경 합니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
+합니다 **_strset** 함수입니다 (null 종결 문자)를 제외한 모든 문자를 설정 합니다. *str* 하 *c*변환 **char**합니다. **_wcsset** 하 고 **_mbsset_l** 와이드 문자 및 멀티 바이트 문자 버전입니다 **_strset**, 및 인수 및 반환 값의 데이터 형식에 따라 다릅니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
 
-**_mbsset** 해당 매개 변수의 유효성을 검사 합니다. 경우 *str* 가 null 포인터에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **_mbsset** 반환 **NULL** 설정 **errno** 를 **EINVAL**합니다. **_strset** 및 **_wcsset** 매개 변수를 확인 하지 않습니다.
+**_mbsset** 해당 매개 변수 유효성을 검사 합니다. 하는 경우 *str* 가 null 포인터인 경우에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **_mbsset** 반환 **NULL** 설정 하 고 **errno** 하 **EINVAL**합니다. **_strset** 하 고 **_wcsset** 해당 매개 변수를 확인 하지 않습니다.
 
-출력 값은의 설정에 영향을 **LC_CTYPE** 로캘 범주 설정; 참조 [setlocale, _wsetlocale](setlocale-wsetlocale.md) 자세한 정보에 대 한 합니다. 접미사가 한다는 점을 제외 하면 이러한 함수 버전은 동일가 **_l** 는 현재 로캘을 사용 접미사가 없는 **_l** 접미사가 로캘 매개 변수를 대신 사용을 전달합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값의 설정이 적용 됩니다는 **LC_CTYPE** 로캘 범주 설정; 참조 [setlocale, _wsetlocale](setlocale-wsetlocale.md) 자세한 내용은 합니다. 제외 하 고 이러한 함수의 버전은 동일가 **_l** 접미사가 없는 현재 로캘을 사용 합니다 **_l** 로캘 매개 변수를 대신 사용 하는 접미사는 에 전달 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 > [!IMPORTANT]
-> 이러한 함수는 버퍼 오버런 위협에 노출될 수 있습니다. 버퍼 오버런은 불필요한 권한 상승을 발생시킬 수 있으므로 시스템 공격에 사용될 수 있습니다. 자세한 내용은 [버퍼 오버런 방지](http://msdn.microsoft.com/library/windows/desktop/ms717795)를 참조하세요.
+> 이러한 함수는 버퍼 오버런 위협에 노출될 수 있습니다. 버퍼 오버런은 불필요한 권한 상승을 발생시킬 수 있으므로 시스템 공격에 사용될 수 있습니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -150,7 +150,7 @@ unsigned char *_mbsset_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_strset**|\<string.h>|
 |**_strset_l**|\<tchar.h>|

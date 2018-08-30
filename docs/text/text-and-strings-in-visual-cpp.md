@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed4232c73122e797a3b0e7aa17c43cde5ab47cf5
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: cf9133965a9009421c28f64c1f4157b4a6a6d6b3
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610716"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223297"
 ---
 # <a name="text-and-strings-in-visual-c"></a>Visual C++의 텍스트 및 문자열
 국제 시장 용 응용 프로그램 개발의 중요 한 측면에는 로컬 문자 집합의 적합 한 표현입니다. ASCII 문자 집합 0x00-0x7F 범위의 문자를 정의합니다. 주로 유럽 ASCII 문자 집합과 동일 하 게 0x00-0x7F 범위의 문자를 정의 하 고 또한 0xFF 뿐만 아니라 0x80에서로 확장된 된 문자를 정의 하는 다른 문자 집합입니다. 따라서 (SBCS)는 8 비트, 단일 바이트 문자 집합은 ASCII 문자 집합 뿐만 아니라 많은 유럽 언어에 대 한 문자 집합을 나타내는 데 충분 합니다. 그러나 한국어와 같은 일부 비 유럽 문자 집합에는 싱글바이트 코딩 구성표로 나타낼 수 있습니다 및 멀티 바이트 문자 집합 (MBCS) 인코딩이 필요 것 보다 많은 문자가 포함 합니다.  
@@ -64,7 +64,7 @@ ms.locfileid: "42610716"
  [국제화](../c-runtime-library/internationalization.md)  
  C 런타임 라이브러리의 다국어 기능 지원에 설명 합니다.  
   
- [국가별 샘플](http://msdn.microsoft.com/aa8d390c-cf4c-4dd8-9dea-74d81f93f2f8)  
+ [국가별 샘플](https://msdn.microsoft.com/aa8d390c-cf4c-4dd8-9dea-74d81f93f2f8)  
  Visual c + +에서 국제화를 보여 주는 예제에 대 한 링크를 제공 합니다.  
   
  [언어 및 국가/지역 문자열](../c-runtime-library/locale-names-languages-and-country-region-strings.md)  

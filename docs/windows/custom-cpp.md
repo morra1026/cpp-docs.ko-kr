@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cb5a3ebbf3ecf1454745d507fc2f2b6f792768ac
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 848ea415d0638b6135c69cd14e442f45dab40237
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600423"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220363"
 ---
 # <a name="custom-c"></a>custom(C++)
 
@@ -49,7 +49,7 @@ Variant로 입력할 수 있는 값입니다.
 
 합니다 **사용자 지정** c + + 특성 정보를 형식 라이브러리에 배치 하면 됩니다. 형식 라이브러리에서 사용자 지정 값을 읽는 도구를 해야 합니다.
 
-합니다 **사용자 지정** 특성이 동일한 기능을 합니다 [사용자 지정](http://msdn.microsoft.com/library/windows/desktop/aa366766) MIDL 특성입니다.
+합니다 **사용자 지정** 특성이 동일한 기능을 합니다 [사용자 지정](/windows/desktop/Midl/custom) MIDL 특성입니다.
 
 ## <a name="requirements"></a>요구 사항
 

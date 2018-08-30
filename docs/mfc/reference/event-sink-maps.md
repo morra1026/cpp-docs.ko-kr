@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0322d6b304366e598fc3db206d4c2e4b9b9d6315
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 114ccb875c1551528eb77edb9c2fae0ecb27edd6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336607"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212045"
 ---
 # <a name="event-sink-maps"></a>이벤트 싱크 맵
 포함 된 OLE 컨트롤에 이벤트가 발생 하는 경우 컨트롤의 컨테이너는 이벤트 싱크 맵"," MFC에서 제공 하 라고 하는 메커니즘을 사용 하 여 이벤트를 받습니다. 이 이벤트 싱크 맵과 해당 이벤트의 매개 변수 뿐만 아니라 각 특정 이벤트에 대 한 처리기 함수를 지정합니다. 이벤트 싱크 맵에 대 한 자세한 내용은 문서 참조 [ActiveX 컨트롤 컨테이너](../../mfc/activex-control-containers.md)합니다.  
@@ -157,7 +157,7 @@ ON_EVENT_RANGE(theClass, idFirst, idLast, dispid, pfnHandler,  vtsParams)
   
  목록은 합니다 **VTS_** 상수를 참조 하십시오 [EVENT_CUSTOM](event-maps.md#event_custom)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 세 가지 컨트롤에 대 한 구현 MouseDown 이벤트에 대 한 이벤트 처리기를 보여 줍니다 (IDC_MYCTRL1 IDC_MYCTRL3 통해). 이벤트 처리기 함수를 `OnRangeMouseDown`, 대화 상자 클래스의 헤더 파일에서 선언 됩니다 ( `CMyDlg`)으로:  
   
  [!code-cpp[NVC_MFCAutomation#12](../../mfc/codesnippet/cpp/event-sink-maps_2.h)]  
@@ -222,7 +222,7 @@ ON_PROPNOTIFY(theClass, id, dispid, pfnRequest, pfnChanged)
  알림 영역에서 관련 된 속성의 디스패치 ID입니다.  
   
  *pfnRequest*  
- 처리 하는 멤버 함수에 대 한 포인터를 `OnRequestEdit` 이 속성에 대 한 알림입니다. 이 함수는 BOOL 반환 형식이 있어야 합니다. 및 **BOOL\***  매개 변수입니다. 이 함수는 속성을 변경 하도록 허용 하려면 TRUE를 허용 하지 않으려면 FALSE 매개 변수를 설정 해야 합니다. 함수는 알림을 처리 된; 나타내려면 TRUE를 반환 해야 그렇지 않으면 FALSE입니다.  
+ 처리 하는 멤버 함수에 대 한 포인터를 `OnRequestEdit` 이 속성에 대 한 알림입니다. 이 함수는 BOOL 반환 형식이 있어야 합니다. 및 **BOOL** <strong>\*</strong> 매개 변수입니다. 이 함수는 속성을 변경 하도록 허용 하려면 TRUE를 허용 하지 않으려면 FALSE 매개 변수를 설정 해야 합니다. 함수는 알림을 처리 된; 나타내려면 TRUE를 반환 해야 그렇지 않으면 FALSE입니다.  
   
  *pfnChanged*  
  처리 하는 멤버 함수에 대 한 포인터를 `OnChanged` 이 속성에 대 한 알림입니다. 함수는 BOOL 유형 및 UINT 매개 변수를 반환 해야 합니다. 함수는 알림 처리 되었으면 TRUE를 반환 해야 그렇지 않으면 FALSE입니다.  
@@ -259,10 +259,10 @@ ON_PROPNOTIFY_RANGE(theClass, idFirst, idLast, dispid, pfnRequest, pfnChanged)
  알림 영역에서 관련 된 속성의 디스패치 ID입니다.  
   
  *pfnRequest*  
- 처리 하는 멤버 함수에 대 한 포인터를 `OnRequestEdit` 이 속성에 대 한 알림입니다. 이 함수는 BOOL 반환 형식 및 UINT 있어야 하 고 **BOOL\***  매개 변수입니다. 함수는 속성을 변경 하도록 허용 하려면 TRUE를 허용 하지 않으려면 FALSE 매개 변수를 설정 해야 합니다. 함수는 알림 처리 되었으면 TRUE를 반환 해야 그렇지 않으면 FALSE입니다.  
+ 처리 하는 멤버 함수에 대 한 포인터를 `OnRequestEdit` 이 속성에 대 한 알림입니다. 이 함수에 있어야 합니다는 `BOOL` 형식을 반환 하 고 `UINT` 및 `BOOL*` 매개 변수입니다. 함수는 속성을 변경 하도록 허용 하려면 TRUE를 허용 하지 않으려면 FALSE 매개 변수를 설정 해야 합니다. 함수는 알림 처리 되었으면 TRUE를 반환 해야 그렇지 않으면 FALSE입니다.  
   
  *pfnChanged*  
- 처리 하는 멤버 함수에 대 한 포인터를 `OnChanged` 이 속성에 대 한 알림입니다. 함수는 BOOL 유형 및 UINT 매개 변수를 반환 해야 합니다. 함수는 알림 처리 되었으면 TRUE를 반환 해야 그렇지 않으면 FALSE입니다.  
+ 처리 하는 멤버 함수에 대 한 포인터를 `OnChanged` 이 속성에 대 한 알림입니다. 함수에 있어야 합니다는 `BOOL` 반환 형식 및 `UINT` 매개 변수입니다. 함수는 알림 처리 되었으면 TRUE를 반환 해야 그렇지 않으면 FALSE입니다.  
   
 ### <a name="requirements"></a>요구 사항  
   **헤더** afxdisp.h  
@@ -284,7 +284,7 @@ ON_PROPNOTIFY_REFLECT(theClass, dispid, pfnRequest, pfnChanged)
  알림 영역에서 관련 된 속성의 디스패치 ID입니다.  
   
  *pfnRequest*  
- 처리 하는 멤버 함수에 대 한 포인터를 `OnRequestEdit` 이 속성에 대 한 알림입니다. 이 함수는 BOOL 반환 형식이 있어야 합니다. 및 **BOOL\***  매개 변수입니다. 이 함수는 속성을 변경 하도록 허용 하려면 TRUE를 허용 하지 않으려면 FALSE 매개 변수를 설정 해야 합니다. 함수는 알림을 처리 된; 나타내려면 TRUE를 반환 해야 그렇지 않으면 FALSE입니다.  
+ 처리 하는 멤버 함수에 대 한 포인터를 `OnRequestEdit` 이 속성에 대 한 알림입니다. 이 함수는 BOOL 반환 형식이 있어야 합니다. 및 **BOOL** <strong>\*</strong> 매개 변수입니다. 이 함수는 속성을 변경 하도록 허용 하려면 TRUE를 허용 하지 않으려면 FALSE 매개 변수를 설정 해야 합니다. 함수는 알림을 처리 된; 나타내려면 TRUE를 반환 해야 그렇지 않으면 FALSE입니다.  
   
  *pfnChanged*  
  처리 하는 멤버 함수에 대 한 포인터를 `OnChanged` 이 속성에 대 한 알림입니다. 함수 반환 형식 및 매개 변수 없이 BOOL 있어야 합니다. 함수는 알림을 처리 된; 나타내려면 TRUE를 반환 해야 그렇지 않으면 FALSE입니다.  

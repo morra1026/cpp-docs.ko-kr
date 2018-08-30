@@ -204,12 +204,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51beef03fe4e92f4eacd733b2d92b04675ed4242
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 1b7f83175e2bf3fe1e69ef02192749916e566edd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42543241"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215255"
 ---
 # <a name="cmfctaskspane-class"></a>CMFCTasksPane 클래스
 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
@@ -284,7 +284,7 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::IsToolBox](#istoolbox)||  
 |[CMFCTasksPane::IsWrapLabelsEnabled](#iswraplabelsenabled)|작업 창의 레이블이 자동 줄 바꿈되는지를 나타냅니다.|  
 |[CMFCTasksPane::IsWrapTasksEnabled](#iswraptasksenabled)|작업 창의 작업이 자동 줄 바꿈되는지를 나타냅니다.|  
-|[CMFCTasksPane::LoadState](#loadstate)|(재정의 [cdockablepane:: Loadstate](http://msdn.microsoft.com/96110136-4f46-4764-8a76-3b4abaf77917).)|  
+|[CMFCTasksPane::LoadState](#loadstate)|(재정의 [cdockablepane:: Loadstate](https://msdn.microsoft.com/96110136-4f46-4764-8a76-3b4abaf77917).)|  
 |[CMFCTasksPane::OnCancel](#oncancel)||  
 |[CMFCTasksPane::OnClickTask](#onclicktask)|사용자가 작업 창에서 항목을 클릭하면 프레임워크에서 호출됩니다.|  
 |[CMFCTasksPane::OnOK](#onok)||  
@@ -293,8 +293,8 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::OnPressHomeButton](#onpresshomebutton)|사용자가 홈 탐색 단추를 클릭하면 프레임워크에서 호출됩니다.|  
 |[CMFCTasksPane::OnPressOtherButton](#onpressotherbutton)||  
 |[CMFCTasksPane::OnSetAccData](#onsetaccdata)|(재정의 [cbasepane:: Onsetaccdata](../../mfc/reference/cbasepane-class.md#onsetaccdata).)|  
-|[CMFCTasksPane::OnUpdateCmdUI](#onupdatecmdui)|(재정의 [cdockablepane:: Onupdatecmdui](http://msdn.microsoft.com/5dd61606-1c12-40d4-b024-f3839aa5e2e0).)|  
-|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(재정의 [cdockablepane:: Pretranslatemessage](http://msdn.microsoft.com/49a242cc-b158-400e-9e01-0345ec9c3ffd).)|  
+|[CMFCTasksPane::OnUpdateCmdUI](#onupdatecmdui)|(재정의 [cdockablepane:: Onupdatecmdui](https://msdn.microsoft.com/5dd61606-1c12-40d4-b024-f3839aa5e2e0).)|  
+|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(재정의 [cdockablepane:: Pretranslatemessage](https://msdn.microsoft.com/49a242cc-b158-400e-9e01-0345ec9c3ffd).)|  
 |[CMFCTasksPane::RecalcLayout](#recalclayout)|(재정의 [cpane:: Recalclayout](../../mfc/reference/cpane-class.md#recalclayout).)|  
 |[CMFCTasksPane::RemoveAllGroups](#removeallgroups)|지정된 페이지에서 모든 그룹을 제거합니다.|  
 |[CMFCTasksPane::RemoveAllPages](#removeallpages)|기본(첫 번째) 페이지를 제외한 모든 페이지를 작업 창에서 제거합니다.|  
@@ -302,8 +302,8 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::RemoveGroup](#removegroup)|그룹을 제거합니다.|  
 |[CMFCTasksPane::RemovePage](#removepage)|작업 창에서 지정된 페이지를 제거합니다.|  
 |[CMFCTasksPane::RemoveTask](#removetask)|작업 그룹에서 작업을 제거합니다.|  
-|[CMFCTasksPane::SaveState](#savestate)|(재정의 [cdockablepane:: Savestate](http://msdn.microsoft.com/c5c24249-8d0d-46cb-96d9-9f5c6dc191db).)|  
-|[CMFCTasksPane::Serialize](#serialize)|(재정의 [cdockablepane:: Serialize](http://msdn.microsoft.com/09787e59-e446-4e76-894b-206d303dcfd6).)|  
+|[CMFCTasksPane::SaveState](#savestate)|(재정의 [cdockablepane:: Savestate](https://msdn.microsoft.com/c5c24249-8d0d-46cb-96d9-9f5c6dc191db).)|  
+|[CMFCTasksPane::Serialize](#serialize)|(재정의 [cdockablepane:: Serialize](https://msdn.microsoft.com/09787e59-e446-4e76-894b-206d303dcfd6).)|  
 |[CMFCTasksPane::SetActivePage](#setactivepage)|작업 창에서 지정된 페이지를 활성화합니다.|  
 |[CMFCTasksPane::SetCaption](#setcaption)|작업 창의 캡션 이름을 설정합니다.|  
 |[CMFCTasksPane::SetGroupCaptionHeight](#setgroupcaptionheight)|그룹 캡션의 높이를 설정합니다.|  
@@ -364,7 +364,7 @@ class CMFCTasksPane : public CDockablePane
   
  ![사용자 지정 작업 그룹](../../mfc/reference/media/nexttaskgrpcustom.png "nexttaskgrpcustom")  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `CMFCTasksPane` 개체를 생성하고 `CMFCTasksPane` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 이 예제에서는 작업 그룹의 축소를 사용 하도록 설정 하려면 드롭다운 메뉴에서 사용 하도록 설정 합니다 **다음** 및 **이전** 탐색 단추, 스크롤 막대 대신 스크롤 단추를 사용 하도록 설정, 단어를 사용 하도록 설정 레이블 텍스트에 줄 바꿈, 그룹 캡션에 대 한 텍스트 색을 설정 하 고 가로 및 세로 여백을 설정 작업 창의 캡션 이름을 설정 합니다.  
   
  [!code-cpp[NVC_MFC_RibbonApp#28](../../mfc/reference/codesnippet/cpp/cmfctaskspane-class_1.cpp)]  

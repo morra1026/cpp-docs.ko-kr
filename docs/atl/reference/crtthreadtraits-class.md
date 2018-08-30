@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c182840ed3592a229b8d6c7b98930ade57a18b25
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 676d14b1027cbc9df68e4be26a9a1451a29d8c37
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883023"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204314"
 ---
 # <a name="crtthreadtraits-class"></a>CRTThreadTraits 클래스
 이 클래스는 CRT 스레드에 대 한 생성 함수를 제공합니다. 스레드 CRT 함수를 사용 하면이 클래스를 사용 합니다.  
@@ -48,7 +48,7 @@ class CRTThreadTraits
 |[CRTThreadTraits::CreateThread](#createthread)|(정적) CRT 함수를 사용할 수 있는 스레드를 만드는 데이 함수를 호출 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 스레드 특성은 스레드의 특정 형식에 대 한 생성 함수를 제공 하는 클래스입니다. 생성 함수 동일한 서명 및 의미 체계는 Windows 갖습니다 [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453) 함수입니다.  
+ 스레드 특성은 스레드의 특정 형식에 대 한 생성 함수를 제공 하는 클래스입니다. 생성 함수 동일한 서명 및 의미 체계는 Windows 갖습니다 [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) 함수입니다.  
   
  스레드 특성은 다음 클래스로 사용 됩니다.  
   
@@ -94,10 +94,10 @@ static HANDLE CreateThread(
  [out] 성공 하면 새로 만든 스레드의 스레드 ID를 수신 하는 DWORD 변수의 주소입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 새로 만든된 스레드에 또는 NULL로 실패 시 핸들을 반환합니다. 호출 [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) 확장 오류 정보를 가져오려면.  
+ 새로 만든된 스레드에 또는 NULL로 실패 시 핸들을 반환합니다. 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 확장 오류 정보를 가져오려면.  
   
 ### <a name="remarks"></a>설명  
- 참조 [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453) 이 함수에 매개 변수에 대 한 자세한 내용은 합니다.  
+ 참조 [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) 이 함수에 매개 변수에 대 한 자세한 내용은 합니다.  
   
  이 함수 호출 [_beginthreadex](../../c-runtime-library/reference/beginthread-beginthreadex.md) 스레드를 만들려고 합니다.  
   

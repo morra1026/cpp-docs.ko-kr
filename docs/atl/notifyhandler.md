@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72c6c992f2ec92bc11d6dd009649d503d3c0bd02
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: e39b0b1ac94a759c4a8b30fce8c634ed49be4ff9
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848339"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209481"
 ---
 # <a name="notifyhandler"></a>NotifyHandler
 메시지 맵에서 NOTIFY_HANDLER 매크로의 세 번째 매개 변수로 식별 된 함수의 이름입니다.  
@@ -43,7 +43,7 @@ ms.locfileid: "37848339"
  메시지를 전송 하는 컨트롤의 식별자입니다.  
   
  *pnmh*  
- 주소는 [NMHDR](http://msdn.microsoft.com/library/windows/desktop/bb775514) 알림 코드 및 추가 정보를 포함 하는 구조입니다. 일부 알림 메시지의 경우이 매개 변수가 가리키는 있는 더 큰 구조체는 `NMHDR` 첫 번째 멤버로 구조체입니다.  
+ 주소는 [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) 알림 코드 및 추가 정보를 포함 하는 구조입니다. 일부 알림 메시지의 경우이 매개 변수가 가리키는 있는 더 큰 구조체는 `NMHDR` 첫 번째 멤버로 구조체입니다.  
   
  *bHandled*  
  메시지 맵 집합 *bHandled* 하기 전에 true *NotifyHandler* 라고 합니다. 경우 *NotifyHandler* 메시지를 완전히 처리 하지 않는 설정 해야 *bHandled* 에 **FALSE** 를 나타내는 메시지에 추가 처리가 필요 합니다.  
@@ -57,5 +57,5 @@ ms.locfileid: "37848339"
 ## <a name="see-also"></a>참고 항목  
  [창 구현](../atl/implementing-a-window.md)   
  [메시지 맵](../atl/message-maps-atl.md)   
- [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583)
+ [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)
 

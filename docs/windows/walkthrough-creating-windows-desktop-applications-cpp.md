@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 724772c0057d5defc8bfa3e2207df85d3a207f31
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e9a946689d563f1c681fee305ec05438bc5eb687
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590296"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204740"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (c + +)
 
@@ -219,7 +219,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    }
    ```
 
-   이 함수는 반환을 `HWND`, 창에 대 한 핸들 인 합니다. 핸들은 다소 열려 있는 창을 추적 하기 위해 Windows를 사용 하는 포인터입니다. 자세한 내용은 [Windows 데이터 형식](https://msdn.microsoft.com/library/windows/desktop/aa383751)합니다.
+   이 함수는 반환을 `HWND`, 창에 대 한 핸들 인 합니다. 핸들은 다소 열려 있는 창을 추적 하기 위해 Windows를 사용 하는 포인터입니다. 자세한 내용은 [Windows 데이터 형식](/windows/desktop/WinProg/windows-data-types)합니다.
 
 1. 이 시점에서 창, 만들어졌지만 표시 되도록 Windows 알 필요가 있습니다. 다음과 같습니다.이 코드의 용도
 
@@ -340,9 +340,9 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
 1. `WndProc` 함수에서 응용 프로그램이 받는 메시지를 처리하게 하려면 switch 문을 구현합니다.
 
-   하나의 중요 한 메시지를 처리 하는 합니다 [WM_PAINT](https://msdn.microsoft.com/library/windows/desktop/dd145213) 메시지입니다. 응용 프로그램은 표시된 창 일부를 업데이트해야 할 때 이 메시지를 받습니다. 이 이벤트는 사용자 창을 이동 하 여 사용자의 창 앞에 다음 이동 위치로 다시 발생할 수 있습니다. 응용 프로그램 같이 이벤트가 발생할 때; 알 수 없습니다. Windows만 알고 사용 하 여 알려 하므로 `WM_PAINT`합니다. 창이 처음 표시 되 면 모두 업데이트 되어야 합니다.
+   하나의 중요 한 메시지를 처리 하는 합니다 [WM_PAINT](/windows/desktop/gdi/wm-paint) 메시지입니다. 응용 프로그램은 표시된 창 일부를 업데이트해야 할 때 이 메시지를 받습니다. 이 이벤트는 사용자 창을 이동 하 여 사용자의 창 앞에 다음 이동 위치로 다시 발생할 수 있습니다. 응용 프로그램 같이 이벤트가 발생할 때; 알 수 없습니다. Windows만 알고 사용 하 여 알려 하므로 `WM_PAINT`합니다. 창이 처음 표시 되 면 모두 업데이트 되어야 합니다.
 
-   처리 하는 `WM_PAINT` 메시지를 첫 번째 호출 [BeginPaint](https://msdn.microsoft.com/library/windows/desktop/dd183362)고, 텍스트, 단추 및 창에서 다른 컨트롤의 레이아웃에 모든 논리를 처리 하는 다음 호출 하 [EndPaint](https://msdn.microsoft.com/library/windows/desktop/dd162598)합니다. 이 응용 프로그램에 대 한 시작 호출과 종료 호출 간의 논리 "Hello, Windows desktop!" 문자열을 표시 하는 것입니다. 다음 코드를 알 수 있듯이 [TextOut](https://msdn.microsoft.com/library/windows/desktop/dd145133) 함수를 사용 하는 문자열을 표시 합니다.
+   처리 하는 `WM_PAINT` 메시지를 첫 번째 호출 [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint)고, 텍스트, 단추 및 창에서 다른 컨트롤의 레이아웃에 모든 논리를 처리 하는 다음 호출 하 [EndPaint](/windows/desktop/api/winuser/nf-winuser-endpaint)합니다. 이 응용 프로그램에 대 한 시작 호출과 종료 호출 간의 논리 "Hello, Windows desktop!" 문자열을 표시 하는 것입니다. 다음 코드를 알 수 있듯이 [TextOut](/windows/desktop/api/wingdi/nf-wingdi-textouta) 함수를 사용 하는 문자열을 표시 합니다.
 
    ```cpp
    PAINTSTRUCT ps;
@@ -369,7 +369,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
    `HDC` 이 코드는 Windows 그래픽 하위 시스템을 사용 하 여 통신 하도록 응용 프로그램을 사용 하도록 설정 하는 데 사용 하는 데이터 구조는 장치 컨텍스트에 핸들이입니다. 합니다 `BeginPaint` 및 `EndPaint` 함수 응용 프로그램이 적합 처럼 동작 하 고 필요한 것 보다 더 이상에 대 한 장치 컨텍스트를 사용 하지 않도록 합니다. 이렇게 하면 그래픽 하위 시스템은 다른 응용 프로그램에서 사용할 수 있습니다.
 
-1. 응용 프로그램이 일반적으로 많은 기타 메시지를 처리 예를 들어 [WM_CREATE](https://msdn.microsoft.com/library/windows/desktop/ms632619) 창을 처음 만들어질 때와 [WM_DESTROY](https://msdn.microsoft.com/library/windows/desktop/ms632620) 창이 닫힐 때. 다음 코드에서는 기본적인 전체 `WndProc` 함수를 보여 줍니다.
+1. 응용 프로그램이 일반적으로 많은 기타 메시지를 처리 예를 들어 [WM_CREATE](/windows/desktop/winmsg/wm-create) 창을 처음 만들어질 때와 [WM_DESTROY](/windows/desktop/winmsg/wm-destroy) 창이 닫힐 때. 다음 코드에서는 기본적인 전체 `WndProc` 함수를 보여 줍니다.
 
    ```cpp
    LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)

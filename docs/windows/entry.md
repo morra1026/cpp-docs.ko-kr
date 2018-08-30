@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f9bc6a88ee7dca0bcd4ad2f87fd3aa4c318d8b9d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 95875eaea7206cbfb4ded271e329f10d7aee13fe
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604767"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221893"
 ---
 # <a name="entry"></a>entry
 
@@ -43,9 +43,9 @@ DLL의 진입점을 식별 하 여 모듈에는 내보낸된 함수 또는 상�
 
 ## <a name="remarks"></a>설명
 
-합니다 **항목** c + + 특성에 동일한 기능을 합니다 [항목](http://msdn.microsoft.com/library/windows/desktop/aa366815) MIDL 특성입니다.
+합니다 **항목** c + + 특성에 동일한 기능을 합니다 [항목](/windows/desktop/Midl/entry) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 예를 참조 하세요 [idl_module](../windows/idl-module.md) 의 사용 예에 대 한 **항목**합니다.
 

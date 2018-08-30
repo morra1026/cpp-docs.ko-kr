@@ -42,16 +42,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 316580b0c5f1f46ffa9f4a49ef759b347032fc09
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 17cbcb0313ac0a3e14b45d851ee6f4e98d5ec993
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404651"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206412"
 ---
 # <a name="mbsnbset-mbsnbsetl"></a>_mbsnbset, _mbsnbset_l
 
-설정 하는 첫 번째 **n** 바이트의 지정 된 문자를 멀티 바이트 문자 문자열입니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [_mbsnbset_s, _mbsnbset_s_l](mbsnbset-s-mbsnbset-s-l.md)을 참조하세요.
+첫 번째 설정 **n** 바이트의 지정된 된 문자를 멀티 바이트 문자 문자열입니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [_mbsnbset_s, _mbsnbset_s_l](mbsnbset-s-mbsnbset-s-l.md)을 참조하세요.
 
 > [!IMPORTANT]
 > 이 API는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
@@ -92,17 +92,17 @@ unsigned char *_mbsnbset_l(
 
 ## <a name="remarks"></a>설명
 
-**_mbsnbset** 및 **_mbsnbset_l** 기능 설정, 최대, 첫 번째 *count* 바이트의 *str* 를 *c*. 경우 *개수* 의 길이 보다 크면 *str*, 길이의 *str* 대신 사용 됩니다 *count*합니다. 경우 *c* 는 멀티 바이트 문자가 고로 지정 된 마지막 바이트에 전체가 들어 맞지 설정할 수 없습니다 *count*, 마지막 바이트 빈 문자로 채워집니다. **_mbsnbset** 및 **_mbsnbset_l** 종료 두지 않는의 끝에 null *str*합니다.
+**_mbsnbset** 하 고 **_mbsnbset_l** 함수 설정, 최대, 첫 번째 *개수* 바이트 *str* 를 *c*. 경우 *개수* 의 길이 보다 크면 *str*, 길이의 *str* 대신 사용 됩니다 *개수*. 하는 경우 *c* 는 멀티 바이트 문자가 고 지정 된 마지막 바이트에 전체가 들어 설정할 수 없습니다 *개수*, 마지막 바이트는 빈 문자로 채워집니다. **_mbsnbset** 하 고 **_mbsnbset_l** 종료를 설정 하지 않으며 끝에 null *str*합니다.
 
-**_mbsnbset** 및 **_mbsnbset_l** 비슷합니다 **_mbsnset**설정 한다는 점을 제외 하 고, *count* 바이트 보다는 *count* 문자 *c*합니다.
+**_mbsnbset** 하 고 **_mbsnbset_l** 비슷합니다 **_mbsnset**설정 한다는 점을 제외 하면, *개수* 바이트 대신 *개수* 자의 *c*합니다.
 
-경우 *str* 은 **NULL** 또는 *count* 0 이면이 함수에 설명 된 대로 잘못 된 매개 변수 예외를 생성 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md). 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수가 반환 하 고 **NULL**합니다. 또한 경우 *c* 은 유효한 멀티 바이트 문자가 아닙니다 **errno** 로 설정 된 **EINVAL** 공백을 대신 사용 됩니다.
+하는 경우 *str* 됩니다 **NULL** 또는 *count* 가 0 이면이 함수에 설명 된 대로 잘못 된 매개 변수 예외를 생성 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md). 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고 함수가 반환 **NULL**합니다. 또한 경우 *c* 유효한 멀티 바이트 문자가 아닙니다 **errno** 로 설정 되어 **EINVAL** 공간을 대신 사용 됩니다.
 
-출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_mbsnbset** 이 함수의 버전은이 로캘 종속 동작에 대 한 현재 로캘을 사용는 **_mbsnbset_l** 버전은 전달 된 로캘 매개 변수를 사용 하 여 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. 합니다 **_mbsnbset** 버전의이 함수가 로캘 종속 동작에 현재 로캘을 사용 합니다 **_mbsnbset_l** 버전은 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-**보안 정보** 이 API는 버퍼 오버런 문제로 인해 발생하는 잠재적인 위협을 일으킵니다. 버퍼 오버런 문제는 자주 사용되는 시스템 공격 방법으로, 불필요한 권한 상승을 초래합니다. 자세한 내용은 [버퍼 오버런 방지](http://msdn.microsoft.com/library/windows/desktop/ms717795)를 참조하세요.
+**보안 정보** 이 API는 버퍼 오버런 문제로 인해 발생하는 잠재적인 위협을 일으킵니다. 버퍼 오버런 문제는 자주 사용되는 시스템 공격 방법으로, 불필요한 권한 상승을 초래합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -111,7 +111,7 @@ unsigned char *_mbsnbset_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_mbsnbset**|\<mbstring.h>|
 |**_mbsnbset_l**|\<mbstring.h>|

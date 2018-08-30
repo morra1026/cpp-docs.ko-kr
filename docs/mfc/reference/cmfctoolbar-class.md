@@ -321,12 +321,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f2d01de9d2ee8fe585a55d89808bb76250c242b
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: a510d163075ccefbc61364cd7efa4003dfd0b8aa
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42538557"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208560"
 ---
 # <a name="cmfctoolbar-class"></a>CMFCToolBar 클래스
 합니다 `CMFCToolBar` 클래스와 유사 [CToolBar 클래스](../../mfc/reference/ctoolbar-class.md), 하지만 사용자 인터페이스 기능에 대 한 추가 지원을 제공 합니다. 여기에는 평면 도구 모음, 핫 이미지 포함 도구 모음, 큰 아이콘, 페이저 단추, 잠긴 도구 모음, rebar 컨트롤, 이미지 아래 텍스트, 배경 이미지, 탭 도구 모음이 포함됩니다. `CMFCToolBar` 클래스에는 기본 제공 사용자 지정 도구 모음과 메뉴, 메뉴 사이 끌어 놓기, 콤보 상자 단추, 편집 상자 단추, 색 선택 및 롤업 단추 도구 모음이 포함됩니다.
@@ -371,8 +371,7 @@ class CMFCToolBar : public CMFCBaseToolBar
 |[CMFCToolBar::CanFocus](#canfocus)|창에 포커스를 받을 수 있는지 여부를 지정 합니다. (재정의 [CBasePane::CanFocus](../../mfc/reference/cbasepane-class.md#canfocus).)|  
 |[CMFCToolBar::CanHandleSiblings](#canhandlesiblings)|도구 모음 및 해당 형제를 동일한 창에 배치할지를 결정합니다.|  
 |[CMFCToolBar::CommandToIndex](#commandtoindex)|지정 된 명령 ID 사용 하 여 도구 모음에서 단추의 인덱스를 반환합니다.|  
-|[CMFCToolBar::Create](#create)|
-          `CMFCToolBar` 개체를 만듭니다.|  
+|[CMFCToolBar::Create](#create)|`CMFCToolBar` 개체를 만듭니다.|  
 |[CMFCToolBar::CreateEx](#createex)|만듭니다는 `CMFCToolBar` 큰 아이콘과 같은 추가 스타일 옵션을 사용 하는 개체입니다.|  
 |[CMFCToolBar::Deactivate](#deactivate)|도구 모음을 비활성화합니다.|  
 |[Cmfctoolbar:: Enablecustomizebutton](#enablecustomizebutton)|사용 하거나 사용 하지 않도록 설정 합니다 **단추 추가 / 제거** 후 도구 모음에 나타나는 단추입니다.|  
@@ -532,7 +531,7 @@ class CMFCToolBar : public CMFCBaseToolBar
   
  `CMFCToolBar` MFC 라이브러리 클래스에 대 한 기본 클래스인 [CMFCMenuBar 클래스](../../mfc/reference/cmfcmenubar-class.md)를 [CMFCPopupMenuBar 클래스](../../mfc/reference/cmfcpopupmenubar-class.md), 및 [CMFCDropDownToolBar 클래스](../../mfc/reference/cmfcdropdowntoolbar-class.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `CMFCToolBar` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 도구 모음 창 레이블의 텍스트를 설정, 모음, 창의 스타일을 설정 및 사용 하도록 설정 하는 방법을 보여 합니다 **단추 추가 / 제거** 후 도구 모음에 나타나는 단추입니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]  
@@ -903,8 +902,7 @@ int CommandToIndex(
  하는 경우 *iIndex* 가 0 보다 크면이 메서드는 인덱스가 있는 도구 모음에서 단추를 무시 미만 *iIndex*합니다.  
   
 ##  <a name="create"></a>  CMFCToolBar::Create  
- 
-          `CMFCToolBar` 개체를 만듭니다.  
+ `CMFCToolBar` 개체를 만듭니다.  
   
 ```  
 virtual BOOL Create(
@@ -918,7 +916,7 @@ virtual BOOL Create(
  도구 모음의 부모 창에 대 한 포인터입니다.  
   
  [in] *dwStyle*  
- 도구 모음 스타일입니다. 참조 [도구 모음 컨트롤 및 단추 스타일](http://msdn.microsoft.com/library/windows/desktop/bb760439) 스타일의 목록은 Windows SDK에 있습니다.  
+ 도구 모음 스타일입니다. 참조 [도구 모음 컨트롤 및 단추 스타일](/windows/desktop/Controls/toolbar-control-and-button-styles) 스타일의 목록은 Windows SDK에 있습니다.  
   
  [in] *nID*  
  도구 모음의 자식 창 ID입니다.  
@@ -952,7 +950,7 @@ virtual BOOL CreateEx(
  포함 된 컨트롤 막대 개체를 만들기 위한 추가 스타일입니다.  
   
  [in] *dwStyle*  
- 도구 모음 스타일입니다. 참조 [도구 모음 컨트롤 및 단추 스타일](http://msdn.microsoft.com/library/windows/desktop/bb760439) 적절 한 스타일의 목록은 합니다.  
+ 도구 모음 스타일입니다. 참조 [도구 모음 컨트롤 및 단추 스타일](/windows/desktop/Controls/toolbar-control-and-button-styles) 적절 한 스타일의 목록은 합니다.  
   
  [in] *rcBorders*  
  `CRect` 도구 모음 창 테두리의 너비를 지정 하는 개체입니다.  
@@ -968,7 +966,7 @@ virtual BOOL CreateEx(
   
  대신이 메서드를 호출 [CMFCToolBar::Create](#create) 특정 스타일을 제공 하려는 경우. 예를 들어 설정할 *dwCtrlStyle* TBSTYLE_FLAT를 | Internet Explorer 4에서 사용 되는 도구 모음 유사한 도구 모음을 만들려면 TBSTYLE_TRANSPARENT 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `CreateEx` 메서드는 `CMFCToolBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]  
@@ -1495,7 +1493,7 @@ static COLORREF GetHotTextColor();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 현재 강조 표시 된 텍스트 색을 나타내는 값입니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) 현재 강조 표시 된 텍스트 색을 나타내는 값입니다.  
   
 ### <a name="remarks"></a>설명  
  호출 [CMFCToolBar::SetHotTextColor](#sethottextcolor) 강조 표시 된 도구 모음 단추에 대 한 새 텍스트 색을 설정할 수 있습니다.  
@@ -1617,7 +1615,7 @@ virtual void GetItemRect(
 ### <a name="remarks"></a>설명  
  합니다 `CRect` 개체입니다 *lpRect* 지점 단추 지정된 된 인덱스에 없는 경우 0으로 설정 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `GetItemRect` 메서드는 `CMFCToolBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]  
@@ -2224,7 +2222,7 @@ BOOL IsOneRowWithSibling();
  도구 모음 및 해당 형제 된 동일한 행에 배치 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 합니다 [cmfccustomizebutton:: Createpopupmenu](http://msdn.microsoft.com/e501083e-f78e-4d8d-900c-40bd6e2bb7f8) 표시 하는 방법을 확인 하려면이 메서드를 호출 합니다 **사용자 지정** 팝업 메뉴. 이 메서드가 TRUE를 반환 하는 경우 프레임 워크를 표시 합니다 **표시 단추를 한 줄** 단추입니다. 그렇지 않으면 프레임 워크가 표시는 **표시 단추를 두 줄** 단추.  
+ 합니다 [cmfccustomizebutton:: Createpopupmenu](https://msdn.microsoft.com/e501083e-f78e-4d8d-900c-40bd6e2bb7f8) 표시 하는 방법을 확인 하려면이 메서드를 호출 합니다 **사용자 지정** 팝업 메뉴. 이 메서드가 TRUE를 반환 하는 경우 프레임 워크를 표시 합니다 **표시 단추를 한 줄** 단추입니다. 그렇지 않으면 프레임 워크가 표시는 **표시 단추를 두 줄** 단추.  
   
  일반적으로 이 메서드를 사용할 필요가 없습니다. 사용 하도록 설정 합니다 **표시 단추를 한 줄** 또는 **표시 단추를 두 줄** 단추를 호출 [cmfctoolbar:: Setsiblingtoolbar](#setsiblingtoolbar)합니다.  
   
@@ -2418,7 +2416,7 @@ virtual BOOL LoadToolBar(
 ### <a name="remarks"></a>설명  
  프레임 워크 도구 모음을 사용 하 여 연결 된 이미지를 로드 하는 초기화 하는 동안이 메서드를 호출 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `LoadToolBar` 의 메서드는 `CMFCToolBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]  
@@ -2723,7 +2721,7 @@ int ReplaceButton(
 ### <a name="remarks"></a>설명  
  리소스에서 로드할 수 없는 도구 모음 단추를 추가 하려는 경우이 메서드를 호출 합니다. 디자인 타임에 자리 표시자 단추를 만들고 도구 모음을 초기화 하는 경우 사용자 지정 단추를 사용 하 여 해당 단추를 교체할 수 있습니다. 이 메서드를 사용 하는 예제 VisualStudioDemo 예제를 참조 하세요.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `ReplaceButton` 의 메서드는 `CMFCToolBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]  

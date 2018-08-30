@@ -16,20 +16,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2b8b82d5369aa536dab638efa379089325d10b1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ac4bb35d29d74f0e66337dc6c3999df66a63d254
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360102"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212693"
 ---
 # <a name="marshaling"></a>마샬링
-COM 기술은 마샬링 한 프로세스가 다른 프로세스에서 사용할 수의 개체에 의해 노출 되는 인터페이스 수 있습니다. 마샬링과 마찬가지로 COM 코드를 제공 (또는 인터페이스 구현 자가에서 제공 하는 코드를 사용 하 여)를 메서드의 매개 변수 프로세스 간에 (뿐만 아니라, 다른 컴퓨터에서 실행 중인 프로세스를 통해) 이동할 수 있는 형식으로 압축 하 고 압축을 푸는 이러한 매개 변수 다른 쪽 끝입니다. 마찬가지로, COM 호출에서 반환 된 값에도 이와 동일한 단계를 수행 해야 합니다.  
+마샬링 중 COM 기술은 다른 프로세스에 사용할 하나의 프로세스에서 개체에 의해 노출 되는 인터페이스를 허용 합니다. 마샬링 COM 코드를 제공 (또는 인터페이스 구현 자가 제공한 코드를 사용 하 여)에서 프로세스 간 (물론, 다른 컴퓨터에서 실행 중인 프로세스를 통해) 이동할 수 있는 형식으로 메서드의 매개 변수 팩과 해당 매개 변수를 압축 풀기 다른 쪽 끝입니다. 마찬가지로, COM 호출에서 반환 된 값에도 이와 동일한 단계를 수행 해야 합니다.  
   
 > [!NOTE]
->  마샬링 일반적으로 필요 하지 않으므로 개체와 동일한 프로세스에서 개체에 의해 제공 되는 인터페이스를 사용 하는 경우 그러나 마샬링 스레드 간 필요할 수 있습니다.  
+>  마샬링 일반적으로 필요 없는 개체와 동일한 프로세스에서 개체에서 제공 하는 인터페이스를 사용 하는 경우입니다. 그러나 마샬링 스레드 간에 필요할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [COM 소개](../atl/introduction-to-com.md)   
- [마샬링 정보](http://msdn.microsoft.com/library/windows/desktop/ms692621)
+ [마샬링 정보](/windows/desktop/com/marshaling-details)
 

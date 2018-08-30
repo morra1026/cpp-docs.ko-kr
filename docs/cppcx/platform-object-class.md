@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19c302f08485b6db89ea2a6b66106244ed95b48c
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: dd6f4eed4cefba16d95baabe38fc5268c0ae8512
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601740"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216441"
 ---
 # <a name="platformobject-class"></a>Platform::Object 클래스
 Ref 클래스 및 Windows 런타임 앱에서 ref 구조체에 대 한 일반적인 동작을 제공 합니다. 모든 ref 클래스 및 ref 구조체 인스턴스는 Platform::Object^로 암시적으로 변환될 수 있고 해당하는 가상 ToString 메서드를 재정의할 수 있습니다.  
@@ -119,7 +119,7 @@ Object::GetType()
 ### <a name="remarks"></a>설명  
  정적 [type:: gettypecode](../cppcx/platform-type-class.md#gettypecode) 가져오는 데 사용할 수는 [platform:: typecode 열거형](../cppcx/platform-typecode-enumeration.md) 현재 형식을 나타내는 값입니다. 대부분의 경우 이는 기본 제공 형식에 유용합니다. 형식 코드를 제외한 모든 ref 클래스에 대 한 [platform:: string](../cppcx/platform-string-class.md) 개체 (1).  
   
- 합니다 [Windows::UI::Xaml::Interop::TypeName](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) 클래스는 Windows 구성 요소와 앱 간에 형식 정보를 전달 하는 언어 독립적 방법으로 Windows Api에서 사용 됩니다. T[platform:: type 클래스](../cppcx/platform-type-class.md) 간의 변환에 대 한 연산자가 `Type` 고 `TypeName`입니다.  
+ 합니다 [Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) 클래스는 Windows 구성 요소와 앱 간에 형식 정보를 전달 하는 언어 독립적 방법으로 Windows Api에서 사용 됩니다. T[platform:: type 클래스](../cppcx/platform-type-class.md) 간의 변환에 대 한 연산자가 `Type` 고 `TypeName`입니다.  
   
  사용 된 [typeid](../windows/typeid-cpp-component-extensions.md) 반환 하도록 연산자는 `Platform::Type` 예를 들어 XAML 페이지 사이 탐색할 때 클래스 이름에 대 한 개체:  
   

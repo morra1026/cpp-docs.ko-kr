@@ -126,12 +126,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7458a82cce22830dd16525a5f33ed12c6c1b6e0d
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3c56cdcf59c6dad891029e21e14940598e0cfeae
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957976"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209086"
 ---
 # <a name="basicstring-class"></a>basic_string 클래스
 
@@ -255,7 +255,7 @@ typedef Allocator allocator_type;
 
 이 형식은 템플릿 매개 변수 `Allocator`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_allocator_type.cpp
@@ -336,7 +336,7 @@ basic_string<CharType, Traits, Allocator>& append(
 
 사용 하 여 문자열에 문자를 추가할 수 있습니다 합니다 [operator + =](#op_add_eq) 또는 멤버 함수 `append` 하거나 [push_back](#push_back)합니다. `operator+=` 여러 인수 하는 동안 단일 인수 값을 추가 `append` 멤버 함수는 문자열을 추가 지정할 수의 특정 부분을 허용 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_append.cpp
@@ -490,7 +490,7 @@ basic_string<CharType, Traits, Allocator>& assign(
 
 문자열에 새 문자 값을 할당할 수 있습니다. 새 값은 문자열과 C 문자열 또는 단일 문자일 수 있습니다. 합니다 [연산자 =](#op_eq) 새 값이 고 그렇지 않으면 단일 매개 변수로 설명할 수 있습니다 하는 경우에 사용할 수 있습니다 멤버 함수 `assign`, 여러 매개 변수가 있는 수를 대상으로 할당 하는 문자열의 어느 부분을 지정 하려면 문자열입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_assign.cpp
@@ -611,7 +611,7 @@ reference at(size_type _Off);
 
 반환된 참조는 문자열 재할당을 통해 또는 비 **const** 문자열에 대한 수정에 의해 무효화될 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_at.cpp
@@ -767,7 +767,7 @@ basic_string(
 
 제어되는 시퀀스는 나머지 피연산자에서 지정된 피연산자 시퀀스의 복사본으로 초기화됩니다. 피연산자 시퀀스가 없는 생성자는 제어되는 빈 초기 시퀀스를 지정합니다. 템플릿 생성자에서 `InputIterator`가 정수 형식인 경우 _F `irst,  last`는 `(size_type) first, (value_type) last`와 동일하게 동작합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_ctor.cpp
@@ -831,7 +831,7 @@ iterator begin();
 
 시퀀스의 첫 번째 요소(또는 빈 시퀀스의 끝 바로 다음)를 가리키는 임의 액세스 반복기입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_begin.cpp
@@ -881,11 +881,11 @@ const value_type *c_str() const;
 
 ### <a name="remarks"></a>설명
 
-C++ 템플릿 클래스 basic_string\<char>에 속하는 문자열 형식의 개체가 null로 종료될 필요는 없습니다. Null 문자 ' \0 '은 C 문자열에서 특수 문자로 사용되어 문자열의 끝을 표시하지만, 문자열 형식의 개체에서는 특별한 의미가 없으며 다른 문자와 마찬가지로 문자열의 일부가 될 수 있습니다. const **char\*** 은 문자열로 자동 변환되지만, 문자열 클래스는 C 스타일 문자열에서 **basic_string\<char>** 형식 개체로의 자동 변환을 제공하지 않습니다.
+C++ 템플릿 클래스 basic_string\<char>에 속하는 문자열 형식의 개체가 null로 종료될 필요는 없습니다. Null 문자 ' \0 '은 C 문자열에서 특수 문자로 사용되어 문자열의 끝을 표시하지만, 문자열 형식의 개체에서는 특별한 의미가 없으며 다른 문자와 마찬가지로 문자열의 일부가 될 수 있습니다. 변환이 자동 **const char** <strong>\*</strong> 문자열 되지만 문자열 클래스 형식의개체에C스타일문자열에서자동변환을제공하지않습니다**basic_string\<char >** 합니다.
 
 반환된 C 스타일 문자열은 수정해서는 안 됩니다. 문자열은 수명이 제한되어 있고 클래스 문자열의 소유여서, 문자열에 대한 포인터가 무효화되거나 삭제될 수 있기 때문입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_c_str.cpp
@@ -947,7 +947,7 @@ size_type capacity() const;
 
 멤버 함수는 제어된 시퀀스를 유지하기 위해 현재 할당된 저장소, 최소 [size](#size) 크기의 값을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_capacity.cpp
@@ -1067,7 +1067,7 @@ void clear();
 
 멤버 함수가 호출된 문자열은 비어 있게 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_clear.cpp
@@ -1172,7 +1172,7 @@ int compare(
 
 비교는 대/소문자를 구분하여 수행됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_compare.cpp
@@ -1377,7 +1377,7 @@ typedef implementation-defined const_iterator;
 
 `const_iterator` 형식은 문자의 값을 수정하는 데 사용할 수 없으며, 문자열을 정방향으로 반복하는 데 사용됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `const_iterator`를 선언하고 사용하는 방법에 대한 예제는 [begin](#begin)의 예제를 참조하세요.
 
@@ -1397,7 +1397,7 @@ typedef typename allocator_type::const_pointer const_pointer;
 
 const로 선언된 포인터는 선언할 때 초기화해야 합니다. Const 포인터는 항상 동일한 메모리 위치를 가리키며 상수 또는 비상수 데이터를 가리킬 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_const_ptr.cpp
@@ -1435,7 +1435,7 @@ typedef typename allocator_type::const_reference const_reference;
 
 이 형식은 `allocator_type::const_reference`의 동의어입니다. 문자열에 대 한 `type`, const 한 것과 동일 `char&`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `const_reference`를 선언하고 사용하는 방법에 대한 예제는 [at](#at)의 예제를 참조하세요.
 
@@ -1451,7 +1451,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 
 `const_reverse_iterator` 형식은 문자열 값을 수정할 수 없으며 문자열을 역방향으로 반복하는 데 사용됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `const_reverse_iterator`를 선언하고 사용하는 방법에 대한 예제는 [rbegin](#rbegin)의 예제를 참조하세요.
 
@@ -1484,7 +1484,7 @@ _ *개수* 복사할 최대 소스 문자열에서 문자의 수입니다.
 
 Null 문자는 복사본의 끝에 추가되지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_copy.cpp
@@ -1589,7 +1589,7 @@ _ *개수* 복사할 최대 소스 문자열에서 문자의 수입니다.
 
 Null 문자는 복사본의 끝에 추가되지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string__Copy_s.cpp
@@ -1652,11 +1652,11 @@ const value_type *data() const;
 
 C++ 템플릿 클래스 basic_string \<char>에 속하는 문자열 형식의 개체가 null로 종료될 필요는 없습니다. 반환 형식은 `data` null 문자가 추가 하기 때문에 유효한 C 문자열이 아닙니다. Null 문자 ' \0 '은 C 문자열에서 특수 문자로 사용되어 문자열의 끝을 표시하지만, 문자열 형식의 개체에서는 특별한 의미가 없으며 다른 문자와 마찬가지로 문자열 개체의 일부가 될 수 있습니다.
 
-const **char\*** 은 문자열로 자동 변환되지만, 문자열 클래스는 C 스타일 문자열에서 **basic_string \<char>** 형식 개체로의 자동 변환을 제공하지 않습니다.
+변환이 자동 **const char** <strong>\*</strong> 문자열 되지만 문자열 클래스 형식의개체에C스타일문자열에서자동변환을제공하지않습니다**basic_string \<char >** 합니다.
 
 반환된 문자열은 수정해서는 안 됩니다. 문자열은 수명이 제한되어 있고 클래스 문자열의 소유여서, 문자열에 대한 포인터가 무효화되거나 삭제될 수 있기 때문입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_data.cpp
@@ -1716,7 +1716,7 @@ typedef typename allocator_type::difference_type difference_type;
 
 형식에 대 한 `string`, 한 것과 동일 `ptrdiff_t`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_diff_type.cpp
@@ -1766,7 +1766,7 @@ bool empty() const;
 
 멤버 함수는 [size](#size) == 0과 등가입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_empty.cpp
@@ -1819,7 +1819,7 @@ iterator end();
 
 `end`의 반환 값이 `const_iterator`에 할당된 경우 문자열 개체를 수정할 수 없습니다. 하는 경우의 반환 값 `end` 에 할당 되는 `iterator`, 문자열 개체를 수정할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_end.cpp
@@ -1909,7 +1909,7 @@ basic_string<CharType, Traits, Allocator>& erase(
 
 세 번째 멤버 함수는 **\*this**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_erase.cpp
@@ -2012,7 +2012,7 @@ size_type find(
 
 성공하면 검색되는 부분 문자열의 첫 문자 인덱스이고, 그렇지 않으면 `npos`입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_find.cpp
@@ -2185,7 +2185,7 @@ size_type find_first_not_of(
 
 성공하면 검색되는 부분 문자열의 첫 문자 인덱스이고, 그렇지 않으면 `npos`입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_find_first_not_of.cpp
@@ -2371,7 +2371,7 @@ size_type find_first_of(
 
 성공하면 검색되는 부분 문자열의 첫 문자 인덱스이고, 그렇지 않으면 `npos`입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_find_first_of.cpp
@@ -2556,7 +2556,7 @@ size_type find_last_not_of(
 
 성공하면 검색되는 부분 문자열의 첫 문자 인덱스이고, 그렇지 않으면 `npos`입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_find_last_not_of.cpp
@@ -2743,7 +2743,7 @@ size_type find_last_of(
 
 성공 시 검색되는 부분 문자열의 마지막 문자 인덱스이고, 그렇지 않으면 `npos`입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_find_last_of.cpp
@@ -2908,7 +2908,7 @@ allocator_type get_allocator() const;
 
 문자열 클래스의 할당자는 클래스가 저장소를 관리하는 방법을 지정합니다. 컨테이너 클래스와 함께 제공되는 기본 할당자를 사용하면 대부분의 프로그래밍 요구 사항을 충족할 수 있습니다. 할당자 클래스를 직접 작성하고 사용하는 방법에 대해서는 고급 C++ 항목에서 다룹니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_get_allocator.cpp
@@ -3014,7 +3014,7 @@ void insert(
 
 멤버 함수에 의해 새 문자가 할당되는 문자열 개체에 대한 참조 또는 개별 문자 삽입의 경우 특정 멤버 함수에 따라 삽입된 문자의 위치를 주소 지정하는 반복기나 없음입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_insert.cpp
@@ -3115,7 +3115,7 @@ typedef implementation-defined iterator;
 
 형식 `iterator` 문자의 값을 수정 하려면 사용할 수 있으며, 문자열을 정방향에서 반복 하는 데 사용 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `iterator`를 선언하고 사용하는 방법에 대한 예제는 [begin](#begin)의 예제를 참조하세요.
 
@@ -3131,7 +3131,7 @@ size_type length() const;
 
 멤버 함수는 [size](#size)와 동일합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_length.cpp
@@ -3201,7 +3201,7 @@ size_type max_size() const;
 
 연산의 결과 최대 크기보다 긴 길이의 문자열이 생성되면 [length_error 클래스](../standard-library/length-error-class.md) 형식의 예외가 throw됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_max_size.cpp
@@ -3267,7 +3267,7 @@ static const size_type npos = -1;
 
 반환 값을 검사할 경우는 `npos` 값을 작동할 수 없습니다 형식의 반환 값이 아니라면 [size_type](#size_type) 아니고 **int** 또는 **부호 없는**합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `npos`를 선언하고 사용하는 방법에 대한 예제는 [find](#find)의 예제를 참조하세요.
 
@@ -3302,7 +3302,7 @@ basic_string<CharType, Traits, Allocator>& operator+=(
 
 `operator+=` 또는 멤버 함수 [append](#append)나 [push_back](#push_back)을 사용하여 문자열에 문자를 추가할 수 있습니다. `operator+=`을 사용하면 단일 인수 값을 추가할 수 있는 반면 다중 인수 append 멤버 함수를 사용하면 문자열의 특정 부분을 추가하도록 지정할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_op_app.cpp
@@ -3391,7 +3391,7 @@ basic_string<CharType, Traits, Allocator>& operator=(
 
 문자열에 새 문자 값을 할당할 수 있습니다. 새 값은 문자열과 C 문자열 또는 단일 문자일 수 있습니다. 새 값을 단일 매개 변수로 설명할 수 있는 경우 `operator=`을 사용할 수 있습니다. 아닌 경우 여러 매개 변수가 있는 멤버 함수 [assign](#assign)을 사용하여 문자열의 어느 부분을 대상 문자열에 할당할지를 지정할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_op_assign.cpp
@@ -3477,7 +3477,7 @@ reference operator[](size_type _Off);
 
 1 또는 2로 설정된 [\_ITERATOR\_DEBUG\_LEVEL](../standard-library/iterator-debug-level.md)로 컴파일하는 경우 문자열 경계 밖에서 요소에 액세스하려고 시도하면 런타임 오류가 발생합니다. 자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_op_ref.cpp
@@ -3528,9 +3528,9 @@ typedef typename allocator_type::pointer pointer;
 
 이 형식은 `allocator_type::pointer`의 동의어입니다.
 
-형식에 대 한 `string`, 한 것과 동일 **char\*** 합니다.
+형식에 대 한 `string`, 한 것과 동일 **char**<strong>\*</strong>합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_pointer.cpp
@@ -3581,7 +3581,7 @@ void push_back(value_type _Ch);
 
 멤버 함수는 실제로 [insert](#insert)( [end](#end), _ *Ch* )를 호출합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_push_back.cpp
@@ -3642,7 +3642,7 @@ reverse_iterator rbegin();
 
 `rbegin`은 문자열에서 역순으로 수행되는 반복을 초기화하는 데 사용할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_rbegin.cpp
@@ -3712,7 +3712,7 @@ typedef typename allocator_type::reference reference;
 
 형식에 대 한 `string`, 한 것과 동일 `chr&`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `reference`를 선언하고 사용하는 방법에 대한 예제는 [at](#at)의 예제를 참조하세요.
 
@@ -3741,7 +3741,7 @@ reverse_iterator rend();
 
 `rend`에서 반환한 값은 역참조되지 않아야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_rend.cpp
@@ -3901,7 +3901,7 @@ basic_string<CharType, Traits, Allocator>& replace(
 
 대체된 피연산자 문자열입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_replace.cpp
@@ -4100,7 +4100,7 @@ void reserve(size_type count = 0);
 
 `reserve`를 호출하는 것이 문자열의 용량을 줄이기 위한 유일한 방법입니다. 그러나 위에서 언급한 대로 이 요청은 강제성이 없으며, 발생할 수도 발생하지 않을 수도 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_reserve.cpp
@@ -4192,7 +4192,7 @@ void resize(
 
 결과 크기가 최대 문자 수를 초과하면 양식에서 `length_error`를 throw합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_resize.cpp
@@ -4289,7 +4289,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 
 `reverse_iterator` 형식은 문자열 값을 수정하는 데 사용할 수 있으며 문자열을 역방향으로 반복하는 데 사용됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `reverse_iterator`를 선언하고 사용하는 방법에 대한 예제는 [rbegin](#rbegin)의 예제를 참조하세요.
 
@@ -4335,7 +4335,7 @@ size_type rfind(
 
 성공할 경우 부분 문자열에서 첫 번째 문자의 마지막 발생(역방향으로 검색 시)의 인덱스입니다. 실패할 경우 `npos`입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_rfind.cpp
@@ -4490,7 +4490,7 @@ size_type size() const;
 
 문자열의 길이입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_size.cpp
@@ -4558,7 +4558,7 @@ typedef typename allocator_type::size_type size_type;
 
 형식에 대 한 `string`, 한 것과 동일 `size_t`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_size_type.cpp
@@ -4607,7 +4607,7 @@ basic_string<CharType, Traits, Allocator> substr(
 
 첫 번째 인수에 의해 지정된 위치에서 시작하는 문자열 피연산자 요소의 복사본인 부분 문자열 개체입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_substr.cpp
@@ -4669,7 +4669,7 @@ void swap(
 
 그렇지 않으면 두 개의 제어되는 시퀀스에 있는 요소 수에 비례하여 많은 요소 할당 및 생성자 호출을 수행합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_swap.cpp
@@ -4718,7 +4718,7 @@ typedef Traits traits_type;
 
 형식에 대 한 `string`, 한 것과 동일 **char_traits\<char >** 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `traits_type`을 선언하고 사용하는 방법에 대한 예제는 [copy](../standard-library/char-traits-struct.md#copy)의 예제를 참조하세요.
 
@@ -4734,7 +4734,7 @@ typedef typename allocator_type::value_type value_type;
 
 에 해당 하는 것 `traits_type::char_type` 와 같습니다 **char** 형식의 개체에 대 한 `string`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_string_value_type.cpp

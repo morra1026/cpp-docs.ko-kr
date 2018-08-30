@@ -1,5 +1,5 @@
 ---
-title: MFC의 사용자 정의 컨트롤을 형성 하는 Windows를 사용 하 여 | Microsoft Docs
+title: MFC의 사용자 정의 컨트롤을 구성 하는 Windows를 사용 하 여 | Microsoft Docs
 ms.custom: ''
 ms.date: 1/08/2018
 ms.technology:
@@ -20,36 +20,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 8ceb424d6c5061ac5ccafc62d8748be4de3ab3d4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 795c16a46356eb9599e02b43b51066b603b8b9ce
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33174315"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222110"
 ---
 # <a name="using-a-windows-form-user-control-in-mfc"></a>MFC에서 Windows Form 사용자 정의 컨트롤 사용
 
-MFC Windows Forms 지원 클래스를 사용 하 여 Windows Forms 컨트롤 MFC 응용 프로그램 내에서 ActiveX 컨트롤 뷰 또는 MFC 대화 상자 내에서 호스트할 수 있습니다. 또한 Windows Forms 폼을 MFC 대화 상자로 호스팅할 수 있습니다.
+MFC Windows Forms 지원 클래스를 사용 하 여, Windows Forms 컨트롤 MFC 응용 프로그램 내에서 MFC 대화 상자 또는 뷰 내에서 ActiveX 컨트롤을 호스트할 수 있습니다. 또한 MFC 대화 상자는 Windows Forms 폼을 호스트할 수 있습니다.
 
-다음 섹션에서는 설명 하는 방법:
+다음 섹션에서는 설명 하는 방법.
 
 - MFC 대화 상자에서 Windows Forms 컨트롤을 호스트 합니다.
 
 - Windows Forms 사용자 정의 컨트롤을 MFC 뷰로 호스트 합니다.
 
-- MFC 대화 상자도 Windows Forms 폼을 호스팅하십시오.
+- MFC 대화 상자로 Windows Forms 폼을 호스트 합니다.
 
 > [!NOTE]
-> MFC에 동적으로 연결 되는 프로젝트에만 작동 하는 MFC Windows Forms 통합 (기간이 `_AFXDLL` 정의).
+> MFC Windows Forms 통합 MFC를 사용 하 여 동적으로 연결 되는 프로젝트 에서만 작동 합니다 (프로젝트는 `_AFXDLL` 정의 됩니다).
 
 > [!NOTE]
-> MFC Windows Forms 인터페이스 (mfcmifc80.dll) DLL의 전용 (수정 된) 복사본을 사용 하 여 응용 프로그램을 빌드할 때 사용자 고유의 공급 업체 키로 Microsoft 키를 대체 하지 않는 한 GAC에 설치 되지 것입니다. 어셈블리 서명에 대 한 자세한 내용은 참조 하십시오. [어셈블리를 사용한 프로그래밍](/dotnet/framework/app-domains/programming-with-assemblies) 및 [강력한 이름 어셈블리 (어셈블리 서명) (C + + /cli CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md)합니다.
+> MFC Windows Forms 인터페이스 (mfcmifc80.dll) DLL의 개인 (수정된) 복사본을 사용 하 여 응용 프로그램을 빌드할 때 고유한 공급 업체 키를 사용 하 여 Microsoft 키를 대체 하지 않는 한 GAC에 설치 하지 못합니다. 어셈블리 서명에 대 한 자세한 내용은 참조 하세요. [어셈블리를 사용한 프로그래밍](/dotnet/framework/app-domains/programming-with-assemblies) 하 고 [강력한 이름 어셈블리 (어셈블리 서명) (C + + /cli CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md)합니다.
 
-Windows Forms를 사용 하는 샘플 응용 프로그램에 대 한 참조 [BirthdayPicker 샘플: Windows Forms를 사용 하 여.NET Framework 리소스에서는](http://msdn.microsoft.com/ac932aed-5502-4667-be29-709bca435317), [계산기 샘플: Windows Forms Pocket 계산기](http://msdn.microsoft.com/2283b516-3b7e-45f2-80c4-fdcfb366ce25), 및 [ Scribble 샘플: MDI 그리기 응용 프로그램](http://msdn.microsoft.com/f025da3e-659b-4222-b991-554a1b8b2358)합니다.
-
-MFC와 함께 사용 되는 Windows Forms를 보여 주는 샘플 응용 프로그램을 참조 하십시오. [MFC 및 Windows Forms 통합](http://www.microsoft.com/downloads/details.aspx?FamilyID=987021bc-e575-4fe3-baa9-15aa50b0f599&displaylang=en)합니다.
-
-Windows Forms을 사용 하 여 MFC 응용 프로그램에 응용 프로그램과 함께 mfcmifc80.dll를 재배포 해야 합니다. 자세한 내용은 참조 [MFC 라이브러리 재배포](../ide/redistributing-the-mfc-library.md)합니다.
+MFC 응용 프로그램에서는 Windows Forms 응용 프로그램을 사용 하 여 mfcmifc80.dll을 재배포 해야 합니다. 자세한 내용은 [MFC 라이브러리 재배포](../ide/redistributing-the-mfc-library.md)합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
@@ -90,4 +86,4 @@ Windows Forms을 사용 하 여 MFC 응용 프로그램에 응용 프로그램�
 ## <a name="see-also"></a>참고자료
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)  
-[폼 보기](../mfc/form-views-mfc.md)  
+[폼 뷰](../mfc/form-views-mfc.md)  

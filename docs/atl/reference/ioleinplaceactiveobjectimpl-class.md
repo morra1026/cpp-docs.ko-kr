@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1339f41a0764e44f46bed7ad24181ce406998c22
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 2f92408c8d8ee4ac1dd1309810ae6282f04ca315
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885603"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213325"
 ---
 # <a name="ioleinplaceactiveobjectimpl-class"></a>IOleInPlaceActiveObjectImpl 클래스
 이 클래스는 전체 컨트롤과 컨테이너 간의 통신을 지원 하기 위한 메서드를 제공 합니다.  
@@ -66,7 +66,7 @@ class IOleInPlaceActiveObjectImpl
   
   
 ## <a name="remarks"></a>설명  
- 합니다 [IOleInPlaceActiveObject](http://msdn.microsoft.com/library/windows/desktop/ms691299) 인터페이스는 전체 컨트롤과 컨테이너 간의 통신을 지 원하는; 예를 들어, 컨트롤과 컨테이너의 활성 상태를 통신 하 고 컨트롤을 알리는 크기를 조정 해야 자체입니다. 클래스 `IOleInPlaceActiveObjectImpl` 의 기본 구현을 제공 `IOleInPlaceActiveObject` 고 지 원하는 `IUnknown` 장치에서 디버그 덤프에 정보를 전송 하 여 작성 합니다.  
+ 합니다 [IOleInPlaceActiveObject](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceactiveobject) 인터페이스는 전체 컨트롤과 컨테이너 간의 통신을 지 원하는; 예를 들어, 컨트롤과 컨테이너의 활성 상태를 통신 하 고 컨트롤을 알리는 크기를 조정 해야 자체입니다. 클래스 `IOleInPlaceActiveObjectImpl` 의 기본 구현을 제공 `IOleInPlaceActiveObject` 고 지 원하는 `IUnknown` 장치에서 디버그 덤프에 정보를 전송 하 여 작성 합니다.  
   
  **관련 문서** [ATL 자습서](../../atl/active-template-library-atl-tutorial.md), [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)  
   
@@ -89,7 +89,7 @@ HRESULT ContextSensitiveHelp(BOOL fEnterMode);
  E_NOTIMPL 반환.  
   
 ### <a name="remarks"></a>설명  
- 참조 [IOleWindow::ContextSensitiveHelp](http://msdn.microsoft.com/library/windows/desktop/ms680059) Windows SDK에에서 있습니다.  
+ 참조 [IOleWindow::ContextSensitiveHelp](/windows/desktop/api/oleidl/nf-oleidl-iolewindow-contextsensitivehelp) Windows SDK에에서 있습니다.  
   
 ##  <a name="enablemodeless"></a>  IOleInPlaceActiveObjectImpl::EnableModeless  
  모덜리스 대화 상자를 사용 하도록 설정 합니다.  
@@ -102,7 +102,7 @@ HRESULT EnableModeless(BOOL fEnable);
  S_OK 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [IOleInPlaceActiveObject::EnableModeless](http://msdn.microsoft.com/library/windows/desktop/ms680115) Windows SDK에에서 있습니다.  
+ 참조 [IOleInPlaceActiveObject::EnableModeless](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-enablemodeless) Windows SDK에에서 있습니다.  
   
 ##  <a name="getwindow"></a>  IOleInPlaceActiveObjectImpl::GetWindow  
  컨테이너는 컨트롤의 창 핸들을 가져오려면이 함수를 호출 합니다.  
@@ -114,7 +114,7 @@ HRESULT GetWindow(HWND* phwnd);
 ### <a name="remarks"></a>설명  
  일부 컨테이너는 현재 기간 이동 하는 경우에, 창 없는 된 컨트롤을 사용 하 여 작동 하지 않습니다. ATL의 구현 하는 경우는 `CComControl::m_bWasOnceWindowless` 데이터 멤버는 TRUE가 함수 E_FAIL을 반환 합니다. 그렇지 않고 \* *phwnd* NULL이 아니면 `GetWindow` 할당 *phwnd* control 클래스의 데이터 멤버에 `m_hWnd` S_OK를 반환 합니다.  
   
- 참조 [IOleWindow::GetWindow](http://msdn.microsoft.com/library/windows/desktop/ms687282) Windows SDK에에서 있습니다.  
+ 참조 [IOleWindow::GetWindow](/windows/desktop/api/oleidl/nf-oleidl-iolewindow-getwindow) Windows SDK에에서 있습니다.  
   
 ##  <a name="ondocwindowactivate"></a>  IOleInPlaceActiveObjectImpl::OnDocWindowActivate  
  컨테이너의 문서 창이 활성화 또는 비활성화 하는 경우 컨트롤을 알립니다.  
@@ -127,7 +127,7 @@ HRESULT OnDocWindowActivate(BOOL fActivate);
  S_OK 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [IOleInPlaceActiveObject::OnDocWindowActivate](http://msdn.microsoft.com/library/windows/desktop/ms687281) Windows SDK에에서 있습니다.  
+ 참조 [IOleInPlaceActiveObject::OnDocWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate) Windows SDK에에서 있습니다.  
   
 ##  <a name="onframewindowactivate"></a>  IOleInPlaceActiveObjectImpl::OnFrameWindowActivate  
  컨테이너의 최상위 프레임 창이 활성화 또는 비활성화 하는 경우 컨트롤을 알립니다.  
@@ -140,7 +140,7 @@ HRESULT OnFrameWindowActivate(BOOL fActivate);
  S_OK 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [ioleinplaceactiveobject:: Onframewindowactivate](http://msdn.microsoft.com/library/windows/desktop/ms683969) Windows SDK에에서 있습니다.  
+ 참조 [ioleinplaceactiveobject:: Onframewindowactivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate) Windows SDK에에서 있습니다.  
   
 ##  <a name="resizeborder"></a>  IOleInPlaceActiveObjectImpl::ResizeBorder  
  테두리 크기를 조정 하는 데 필요한 컨트롤에 알립니다.  
@@ -156,7 +156,7 @@ HRESULT ResizeBorder(
  S_OK 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [IOleInPlaceActiveObject::ResizeBorder](http://msdn.microsoft.com/library/windows/desktop/ms680053) Windows SDK에에서 있습니다.  
+ 참조 [IOleInPlaceActiveObject::ResizeBorder](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder) Windows SDK에에서 있습니다.  
   
 ##  <a name="translateaccelerator"></a>  IOleInPlaceActiveObjectImpl::TranslateAccelerator  
  컨테이너에서 메뉴 바로 가기 키 메시지를 처리합니다.  
@@ -173,9 +173,9 @@ HRESULT TranslateAccelerator(LPMSG lpmsg);
  메시지를 변환할 수 없는 경우 S_FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [ioleinplaceactiveobject:: Translateaccelerator](http://msdn.microsoft.com/library/windows/desktop/ms693360) Windows SDK에에서 있습니다.  
+ 참조 [ioleinplaceactiveobject:: Translateaccelerator](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) Windows SDK에에서 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [CComControl 클래스](../../atl/reference/ccomcontrol-class.md)  
- [ActiveX 컨트롤 인터페이스](http://msdn.microsoft.com/library/windows/desktop/ms692724)  
+ [ActiveX 컨트롤 인터페이스](/windows/desktop/com/activex-controls-interfaces)  
  [클래스 개요](../../atl/atl-class-overview.md)

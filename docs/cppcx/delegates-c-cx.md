@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 050b11050cc280fc6d3aa8900487442bd723a57f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: fda9cab73088746ec64caf482f9e606d713eaa4f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592775"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222745"
 ---
 # <a name="delegates-ccx"></a>대리자(C++/CX)
 `delegate` 키워드 표준 c + +에서 함수 개체에 Windows 런타임 상응 하는 참조 형식을 선언 하는 데 사용 됩니다. 대리자 선언은 함수 서명과 유사하며, 래핑된 함수에 있어야 하는 반환 형식과 매개 변수 형식을 지정합니다. 다음은 사용자 정의 대리자 선언입니다.  
@@ -29,7 +29,7 @@ ms.locfileid: "42592775"
 event PrimeFoundHandler^ primeFoundEvent;  
 ```  
   
- Windows 런타임 응용 프로그램 이진 인터페이스에서 클라이언트에 노출 될 대리자를 선언, 사용 하 여 [Windows::Foundation::TypedEventHandler\<, TResult >](http://msdn.microsoft.com/library/windows/apps/br225997.aspx)합니다. 이 대리자에는 Javascript 클라이언트에서 대리자를 사용할 수 있게 하는 프록시 및 스텁 이진 파일이 미리 정의되어 있습니다.  
+ Windows 런타임 응용 프로그램 이진 인터페이스에서 클라이언트에 노출 될 대리자를 선언, 사용 하 여 [Windows::Foundation::TypedEventHandler\<, TResult >](https://msdn.microsoft.com/library/windows/apps/br225997.aspx)합니다. 이 대리자에는 Javascript 클라이언트에서 대리자를 사용할 수 있게 하는 프록시 및 스텁 이진 파일이 미리 정의되어 있습니다.  
   
 ## <a name="consuming-delegates"></a>대리자 사용  
  유니버설 Windows 플랫폼 앱을 만들 때 종종 Windows 런타임 클래스를 노출 하는 이벤트의 형식으로 대리자를 사용 하 여 작동 합니다. 이벤트를 구독하려면 대리자 시그니처와 일치하는 함수(또는 람다)를 지정하여 대리자 형식의 인스턴스를 만듭니다. 그런 다음 `+=` 연산자를 사용하여 클래스의 이벤트 멤버에 대리자 개체를 전달합니다. 이를 이벤트 구독이라고 합니다. 클래스 인스턴스가 이벤트를 "발생"시키면 개체 또는 다른 개체가 추가한 다른 모든 처리기와 함께 함수가 호출됩니다.  

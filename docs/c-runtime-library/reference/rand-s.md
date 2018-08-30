@@ -37,16 +37,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8407848db8f442324127df8d7267a5350c077b2f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c75b2988dd00d8141c25e67c29bcc0b082270ffe
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405759"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210164"
 ---
 # <a name="rands"></a>rand_s
 
-의사 난수를 생성합니다. 이 함수의 더 안전한 버전을는 [rand](rand.md)에 설명 된 대로 보안 향상 기능이 포함 된 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)합니다.
+의사 난수를 생성합니다. 함수의 더 안전한 버전을 이것이 [rand](rand.md)에 설명 된 대로 보안 기능이 향상 된 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -61,24 +61,24 @@ errno_t rand_s(unsigned int* randomValue);
 
 ## <a name="return-value"></a>반환 값
 
-정상적으로 실행되는 경우 0이고 그렇지 않으면 오류 코드입니다. 하는 경우 입력된 포인터 _randomValue_ 가 null 포인터의 설명 대로 잘못 된 매개 변수 처리기를 호출 하는 함수 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 계속 하려면 실행 허용 된 경우, 함수 반환 **EINVAL** 설정 **errno** 를 **EINVAL**합니다. 함수가 다른 이유로 실패 하는 경우 *_randomValue_ 0으로 설정 됩니다.
+정상적으로 실행되는 경우 0이고 그렇지 않으면 오류 코드입니다. 하는 경우 입력된 포인터 _했습니다_ 가 null 포인터인 경우 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 함수 반환 **EINVAL** 설정 **errno** 하 **EINVAL**합니다. 함수가 다른 이유로 실패 하면 *_했습니다_ 0으로 설정 됩니다.
 
 ## <a name="remarks"></a>설명
 
-**rand_s** 함수 범위 0에 있는 의사 난수 정수를 쓰고 **UINT_MAX** 입력된 포인터에 있습니다. **rand_s** 함수는 운영 체제를 사용 하 여 암호화 보안 난수를 생성 합니다. 에 의해 생성 된 초기값을 사용 하지 않습니다는 [srand](srand.md) 함수에 미치는 영향에서 사용 하는 난수 시퀀스 또는 [rand](rand.md)합니다.
+합니다 **rand_s** 함수는 범위는 0에 의사 난수 정수를 씁니다 **UINT_MAX** 입력된 포인터에 대 한 합니다. 합니다 **rand_s** 함수 운영 체제를 사용 하 여 암호화 보안 난수를 생성 합니다. 생성 한 시드를 사용 하지 않는 합니다 [srand](srand.md) 함수에서 사용 하는 난수 시퀀스 어떤 영향이 나 [rand](rand.md)합니다.
 
-**rand_s** 함수에는 해당 상수 필요 **_CRT_RAND_S** 다음 예제와 같이 선언 하려면 함수에 대해 포함 문 이전에 정의 합니다.
+합니다 **rand_s** 함수에는 상수 **_CRT_RAND_S** 다음 예제와 같이 선언 하려는 함수의 포함 문 이전에 정의 합니다.
 
 ```C
 #define _CRT_RAND_S
 #include <stdlib.h>
 ```
 
-**rand_s** 에 따라 달라 집니다는 [RtlGenRandom](http://msdn.microsoft.com/library/windows/desktop/aa387694) 에서만 이상에서 Windows XP에서 사용할 수 있는 API입니다.
+**rand_s** 에 따라 달라 집니다 합니다 [RtlGenRandom](/windows/desktop/api/ntsecapi/nf-ntsecapi-rtlgenrandom) API만 이상 Windows XP에서 사용할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**rand_s**|\<stdlib.h>|
 

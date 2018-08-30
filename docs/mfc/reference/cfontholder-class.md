@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c110c0addfe14ed8ba9018345eb1f4e61fd5182
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: e6991d7ca545eef671720a38907088dc6a534d1a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338622"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216810"
 ---
 # <a name="cfontholder-class"></a>CFontHolder 클래스
 스톡 글꼴 속성을 구현하고 Windows 글꼴 개체 및 `IFont` 인터페이스의 기능을 캡슐화합니다.  
@@ -171,7 +171,7 @@ void InitializeFont(
   
 ### <a name="parameters"></a>매개 변수  
  *pFontDesc*  
- 글꼴 설명 구조에 대 한 포인터 ( [FONTDESC](http://msdn.microsoft.com/library/windows/desktop/ms692782)) 글꼴 특성을 지정 하는 합니다.  
+ 글꼴 설명 구조에 대 한 포인터 ( [FONTDESC](/windows/desktop/api/olectl/ns-olectl-tagfontdesc)) 글꼴 특성을 지정 하는 합니다.  
   
  *pFontDispAmbient*  
  컨테이너의 앰비언트 글꼴 속성에 대 한 포인터입니다.  
@@ -199,7 +199,7 @@ void QueryTextMetrics(LPTEXTMETRIC lptm);
   
 ### <a name="parameters"></a>매개 변수  
  *lptm*  
- 에 대 한 포인터를 [TEXTMETRIC](http://msdn.microsoft.com/library/windows/desktop/dd145132) 구조는 정보를 받게 됩니다.  
+ 에 대 한 포인터를 [TEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) 구조는 정보를 받게 됩니다.  
   
 ##  <a name="releasefont"></a>  CFontHolder::ReleaseFont  
  연결을 끊습니다이 함수는 `CFontHolder` 개체에서 해당 `IFont` 인터페이스입니다.  

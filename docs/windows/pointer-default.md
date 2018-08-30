@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 391b30251235fdd15ec1e96304e956740cb58f1f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: aac6e0456bf8a63712c498114d403c05af5ccddb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610150"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212210"
 ---
 # <a name="pointerdefault"></a>pointer_default
 
@@ -43,9 +43,9 @@ ms.locfileid: "42610150"
 
 ## <a name="remarks"></a>설명
 
-합니다 **pointer_default** c + + 특성에 동일한 기능을 합니다 [pointer_default](http://msdn.microsoft.com/library/windows/desktop/aa367141) MIDL 특성입니다.
+합니다 **pointer_default** c + + 특성에 동일한 기능을 합니다 [pointer_default](/windows/desktop/Midl/pointer-default) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 예를 참조 하세요 [defaultvalue](../windows/defaultvalue.md) 의 샘플 사용에 대 한 **pointer_default**합니다.
 

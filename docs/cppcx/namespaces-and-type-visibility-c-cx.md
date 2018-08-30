@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d09d2f60f237439f208601fe8385cf7125e1ac20
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: c4bdccc14db423d7a47545c51b31ce472f0c4308
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600783"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219523"
 ---
 # <a name="namespaces-and-type-visibility-ccx-"></a>네임스페이스 및 형식 표시 유형(C++/CX)
 네임스페이스는 관련된 기능을 가진 형식을 그룹화하고 라이브러리의 이름 충돌을 방지하기 위한 표준 C++ 구조입니다. Windows 런타임 형식 시스템에 사용자 고유의 코드를 포함 하는 모든 공용 Windows 런타임 형식에 네임 스페이스 범위에서 네임 스페이스에서 선언 되어야 합니다는 필요 합니다. 전역 범위에서 선언되거나 다른 클래스 안에 중첩된 public 형식은 컴파일 타임 오류를 발생시킵니다.  
@@ -43,7 +43,7 @@ ms.locfileid: "42600783"
 |`internal` 또는 `private public`|멤버가 응용 프로그램 또는 구성 요소에서는 public이지만 메타데이터에서는 표시되지 않습니다.|아니요|  
   
 ## <a name="windows-runtime-namespaces"></a>Windows 런타임 네임 스페이스  
- Windows API는 Windows에서 선언 된 형식으로 구성 됩니다::\* 네임 스페이스입니다. 이러한 네임스페이스는 Windows용으로 예약되어 있으며 해당 네임스페이스에는 형식을 추가할 수 없습니다. **개체 브라우저**의 windows.winmd 파일에서 이러한 네임스페이스를 볼 수 있습니다. 이러한 네임스페이스에 대한 설명은 [Windows API](http://msdn.microsoft.com/library/windows/apps/br211377)를 참조하세요.  
+ Windows API는 Windows에서 선언 된 형식으로 구성 됩니다::\* 네임 스페이스입니다. 이러한 네임스페이스는 Windows용으로 예약되어 있으며 해당 네임스페이스에는 형식을 추가할 수 없습니다. **개체 브라우저**의 windows.winmd 파일에서 이러한 네임스페이스를 볼 수 있습니다. 이러한 네임 스페이스에 대 한 설명서를 참조 하세요 [Windows API](https://msdn.microsoft.com/library/windows/apps/br211377)합니다.  
   
 ## <a name="ccx-namespaces"></a>C++/CX 네임스페이스  
  C + + /cli CX 투영을 Windows 런타임 형식 시스템의 일부로 이러한 네임 스페이스의 특정 형식을 정의 합니다.  

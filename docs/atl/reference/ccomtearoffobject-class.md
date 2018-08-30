@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abc3721159dfa7470106e6935664f3119ae4d264
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: eb505ac53c6a8b3b05edfc99bad813ebe2c341d0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885041"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218567"
 ---
 # <a name="ccomtearoffobject-class"></a>CComTearOffObject 클래스
 이 클래스는 분리 인터페이스를 구현합니다.  
@@ -46,7 +46,7 @@ class CComTearOffObject : public Base
  *자료*  
  분리 막대가 클래스에서 파생 된 `CComTearOffObjectBase` 고 인터페이스를 지원 하기 위해 분리 개체입니다.  
   
- ATL 두 단계로 분리 인터페이스를 구현-는 `CComTearOffObjectBase` 메서드는 참조 횟수를 처리 하 고 `QueryInterface`, 하는 동안 `CComTearOffObject` 구현 [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509)합니다.  
+ ATL 두 단계로 분리 인터페이스를 구현-는 `CComTearOffObjectBase` 메서드는 참조 횟수를 처리 하 고 `QueryInterface`, 하는 동안 `CComTearOffObject` 구현 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown)합니다.  
   
 ## <a name="members"></a>멤버  
   

@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 938d0c45cae5ec9a2988f77f539af1a3d5513b83
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5a408ecb1a96aab284a4ac8c7cdd59909ed7c0ea
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32356177"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216525"
 ---
 # <a name="introduction-to-com"></a>COM 소개
 COM은 ActiveX 컨트롤과 OLE의 기반이 되는 "개체 모델"입니다.  COM을 이용하면 개체의 기능을 다른 구성요소나 응용 프로그램 호스팅으로 노출이 가능합니다. 이는 객체 자신을 노출시키는 것과 프로세스 및 네트워크를 통한 노출 작동 방식 모두를 정의 합니다. 또한 COM은 개체의 수명 주기를 정의합니다.  
@@ -40,5 +40,5 @@ COM은 ActiveX 컨트롤과 OLE의 기반이 되는 "개체 모델"입니다.  C
   
 ## <a name="see-also"></a>참고 항목  
  [COM 및 ATL 소개](../atl/introduction-to-com-and-atl.md)   
- [구성 요소 개체 모델](http://msdn.microsoft.com/library/windows/desktop/ms694363)
+ [구성 요소 개체 모델](/windows/desktop/com/the-component-object-model)
 

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1fa026ecb0b25c17a793c31c3f64dcd0186f0e1
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 92c3ece3ddef00161a769c0c45a4d31712d6f691
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880099"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208763"
 ---
 # <a name="options-atl-control-wizard"></a>옵션, ATL 컨트롤 마법사
 여기 "검색 결과" 요약을 삽입 합니다.  
@@ -78,7 +78,7 @@ ms.locfileid: "37880099"
   
 -   **사용자 지정**: VTBL 통해 직접 메서드를 노출 하는 인터페이스를 만듭니다.  
   
-     선택 하는 경우 **사용자 지정**, 컨트롤을 지정할 수 있습니다 **Automation 호환**합니다. 선택 하는 경우 **호환 되는 Automation**, 마법사 추가 합니다 [oleautomation](../../windows/oleautomation.md) 인터페이스는 IDL 특성 oleaut32.dll에서 유니버설 마샬러가 인터페이스를 마샬링할 수 및 합니다. 참조 [마샬링 정보](http://msdn.microsoft.com/library/windows/desktop/ms692621) 자세한 내용은 Windows SDK에 있습니다.  
+     선택 하는 경우 **사용자 지정**, 컨트롤을 지정할 수 있습니다 **Automation 호환**합니다. 선택 하는 경우 **호환 되는 Automation**, 마법사 추가 합니다 [oleautomation](../../windows/oleautomation.md) 인터페이스는 IDL 특성 oleaut32.dll에서 유니버설 마샬러가 인터페이스를 마샬링할 수 및 합니다. 참조 [마샬링 정보](/windows/desktop/com/marshaling-details) 자세한 내용은 Windows SDK에 있습니다.  
   
      또한 선택 하는 경우 **자동화 호환**, 컨트롤의 모든 메서드에 대 한 모든 매개 변수는 VARIANT 이어야 합니다. 호환입니다.  
   
@@ -87,7 +87,7 @@ ms.locfileid: "37880099"
   
 -   **연결점**: 사용자 개체의 클래스에서 파생 하 여 개체에 대 한 연결점을 사용 하도록 설정 [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) 원본 인터페이스를 노출 하도록 허용 합니다.  
   
--   **사용이 허가**: 컨트롤에 대 한 지원이 추가 되었습니다 [라이선스](http://msdn.microsoft.com/library/windows/desktop/ms690543)합니다. 사용이 허가 된 컨트롤 클라이언트 컴퓨터에 올바른 라이선스가 있는 경우에 호스팅할 수 있습니다.  
+-   **사용이 허가**: 컨트롤에 대 한 지원이 추가 되었습니다 [라이선스](/windows/desktop/com/licensing)합니다. 사용이 허가 된 컨트롤 클라이언트 컴퓨터에 올바른 라이선스가 있는 경우에 호스팅할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [ATL 컨트롤 마법사](../../atl/reference/atl-control-wizard.md)

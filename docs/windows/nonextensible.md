@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5dc2419cad0744ae3487f368b2238f80b96bd8fb
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9f24aa8b1aa6b4e2e996ec22062263f785d730d0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42612859"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222582"
 ---
 # <a name="nonextensible"></a>nonextensible
 
@@ -36,11 +36,11 @@ ms.locfileid: "42612859"
 
 ## <a name="remarks"></a>설명
 
-합니다 **nonextensible** c + + 특성에 동일한 기능을 합니다 [nonextensible](http://msdn.microsoft.com/library/windows/desktop/aa367120) MIDL 특성입니다.
+합니다 **nonextensible** c + + 특성에 동일한 기능을 합니다 [nonextensible](/windows/desktop/Midl/nonextensible) MIDL 특성입니다.
 
 이용 **nonextensible** 도 필요 합니다 [oleautomation](../windows/oleautomation.md) 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드와의 용도 중 하나는 **nonextensible** 특성:
 

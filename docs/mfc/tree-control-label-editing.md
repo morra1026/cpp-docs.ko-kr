@@ -17,21 +17,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d665ae37bfc843fc2ab0f24fe4489b76935e62d2
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 7f9ba5360ddce81061bf73839e1700fed57c9fa7
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36956267"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210405"
 ---
 # <a name="tree-control-label-editing"></a>트리 컨트롤 레이블 편집
-사용자는 트리 컨트롤에 항목의 레이블을 직접 편집할 수 ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) 올려진는 **TVS_EDITLABELS** 스타일입니다. 사용자 포커스가 있는 항목의 레이블을 클릭 하 여 편집을 시작 합니다. 응용 프로그램을 사용 하 여 편집 시작는 [EditLabel](../mfc/reference/ctreectrl-class.md#editlabel) 멤버 함수입니다. 트리 컨트롤 알림 편집할 때 시작 되 고 취소 하거나 완료 때 보냅니다. 편집이 완료 되 면 책임이 있습니다 항목의 레이블을 업데이트 해당 되는 경우입니다.  
+사용자를 직접 트리 컨트롤에서 항목의 레이블을 편집할 수 ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) 있는 합니다 **TVS_EDITLABELS** 스타일입니다. 사용자는 포커스가 있는 항목의 레이블을 클릭 하 여 편집을 시작 합니다. 응용 프로그램이 사용 하 여 편집을 시작 합니다 [EditLabel](../mfc/reference/ctreectrl-class.md#editlabel) 멤버 함수입니다. 트리 컨트롤을 편집할 때 알림이 시작 및 취소 또는 완료 된 경우를 보냅니다. 편집이 완료 되 면 책임이 있습니다 항목의 레이블을 업데이트에 대 한 적절 한 경우입니다.  
   
- 레이블 편집을 시작할 때, 트리 컨트롤에서 보냅니다는 [TVN_BEGINLABELEDIT](http://msdn.microsoft.com/library/windows/desktop/bb773506) 알림 메시지입니다. 이 알림 메시지를 처리 하 여 일부 레이블을 편집할 수 수 있으며 다른 사람이 편집을 방지할 수 있습니다. 편집을 사용 하면 0을 반환 하며, 되지 0이 아닌 값을 반환 합니다.  
+ 경우 레이블 편집을 시작 하면 트리 컨트롤 보냅니다를 [TVN_BEGINLABELEDIT](/windows/desktop/Controls/tvn-beginlabeledit) 알림 메시지입니다. 이 알림 메시지를 처리 하 여 일부 레이블을 편집할 수를 다른 편집할 수 없도록 합니다. 편집을 사용 하면 0을 반환 하 고 0이 아닌 반환 되지 합니다.  
   
- 레이블 편집 취소 되거나 완료 될, 트리 컨트롤 보냅니다는 [TVN_ENDLABELEDIT](http://msdn.microsoft.com/library/windows/desktop/bb773515) 알림 메시지입니다. *lParam* 매개 변수는의 주소는 [NMTVDISPINFO](http://msdn.microsoft.com/library/windows/desktop/bb773418) 구조입니다. **항목** 멤버는 한 [TVITEM](http://msdn.microsoft.com/library/windows/desktop/bb773456) 항목을 식별 하 고 편집 된 텍스트를 포함 하는 구조입니다. 항목의 레이블을 업데이트, 필요한 경우 아마도 편집된 된 문자열을 확인 한 후 책임이 있습니다. *pszText* 소속 `TV_ITEM` 편집이 취소 하는 경우 0입니다.  
+ 레이블 편집 취소 되었거나 완료할 경우 트리 컨트롤 보냅니다를 [TVN_ENDLABELEDIT](/windows/desktop/Controls/tvn-endlabeledit) 알림 메시지입니다. 합니다 *lParam* 매개 변수는의 주소를 [NMTVDISPINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtvdispinfoa) 구조입니다. 합니다 **항목** 멤버를 [TVITEM](/windows/desktop/api/commctrl/ns-commctrl-tagtvitema) 항목을 식별 하 고 편집된 된 텍스트를 포함 하는 구조입니다. 항목의 레이블을 업데이트를 적절 하 게 하는 경우 아마도 편집된 된 문자열을 확인 한 후 책임이 있습니다. 합니다 *pszText* 소속 `TV_ITEM` 편집이 취소 하는 경우 0입니다.  
   
- 레이블 편집, 일반적으로 응답 하는 동안는 [TVN_BEGINLABELEDIT](http://msdn.microsoft.com/library/windows/desktop/bb773506) 알림 메시지를 사용 하 여 레이블 편집에 사용 되는 편집 컨트롤에 대 한 포인터를 가져올 수 있습니다는 [GetEditControl](../mfc/reference/ctreectrl-class.md#geteditcontrol) 멤버 함수입니다. 편집 컨트롤을 호출할 수 있습니다 [SetLimitText](../mfc/reference/cedit-class.md#setlimittext) 멤버 함수를 입력할 수 있는 텍스트 또는 하위 클래스를 가로채 고 잘못 된 문자가 삭제 편집 컨트롤의 크기를 제한 합니다. 단, 편집 컨트롤이 표시 되도록 *후* **TVN_BEGINLABELEDIT** 전송 됩니다.  
+ 레이블 편집 중 일반적으로 응답 하는 [TVN_BEGINLABELEDIT](/windows/desktop/Controls/tvn-beginlabeledit) 알림 메시지를 사용 하 여 레이블 편집에 사용 되는 편집 컨트롤에 대 한 포인터를 가져올 수 있습니다 합니다 [GetEditControl](../mfc/reference/ctreectrl-class.md#geteditcontrol) 멤버 함수입니다. 편집 컨트롤을 호출할 수 있습니다 [SetLimitText](../mfc/reference/cedit-class.md#setlimittext) 멤버 함수를 입력할 수 있는 텍스트 또는 서브 클래스를 가로채 고 잘못 된 문자가 삭제 편집 컨트롤의 양을 제한 합니다. 단, 편집 컨트롤만 표시 됩니다 *한 후* **TVN_BEGINLABELEDIT** 보내집니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [CTreeCtrl 사용](../mfc/using-ctreectrl.md)   
