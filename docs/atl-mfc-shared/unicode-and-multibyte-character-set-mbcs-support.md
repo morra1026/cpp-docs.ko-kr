@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e9d212e74f77d21efa1b2ed030f8a1446d111fc
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 74f1f0f88828b5d6355c692aa8eaeecd5869bf57
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882951"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202936"
 ---
 # <a name="unicode-and-multibyte-character-set-mbcs-support"></a>유니코드 및 MBCS(멀티바이트 문자 집합) 지원
 
@@ -67,9 +67,9 @@ Microsoft가 새로운 개발에 대 한 유니코드 MFC 라이브러리를 권
 
    - TCHAR를 사용 하는 위치를 사용 하 여 **char**합니다.
 
-   - LPTSTR 사용 하는 위치를 사용 하 여 **char\*** 합니다.
+   - LPTSTR 사용 하는 위치를 사용 하 여 **char**<strong>\*</strong>합니다.
 
-   - LPCTSTR을 사용 하는 위치를 사용 하 여 **const char\*** 합니다. `CString` 연산자 간에 변환할 LPCTSTR `CString` 및 LPCTSTR 합니다.
+   - LPCTSTR을 사용 하는 위치를 사용 하 여 **const char**<strong>\*</strong>합니다. `CString` 연산자 간에 변환할 LPCTSTR `CString` 및 LPCTSTR 합니다.
 
 `CString` 또한 유니코드 인식 생성자, 대입 연산자 및 비교 연산자를 제공합니다.
 
@@ -101,7 +101,7 @@ Dbcs에서 지정 된 문자열은 싱글바이트 ANSI 문자만, 모든 더블
 
 에 설명 되어 모든 런타임 문자열 처리 루틴에 대 한 일반 텍스트 함수 매핑을 [C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)합니다. 목록에 대해서 [국제화](../c-runtime-library/internationalization.md)합니다.
 
-마찬가지로, `CString` 메서드는 제네릭 데이터 형식 매핑을 사용 하 여 구현 됩니다. MFC MBCS 및 유니코드를 사용 하려면에 대 한 TCHAR를 사용 **char** 또는 `wchar_t`에 대 한 LPTSTR **char\***  또는 `wchar_t*`, 및에 대 한 LPCTSTR **const char\***  또는 `const wchar_t*`합니다. 이러한 MBCS 또는 유니코드 중 하나에 대 한 올바른 매핑을 확인 하십시오.
+마찬가지로, `CString` 메서드는 제네릭 데이터 형식 매핑을 사용 하 여 구현 됩니다. 모두 MBCS 및 유니코드를 사용 하려면 MFC 사용에 대 한 TCHAR **char** 또는 `wchar_t`에 대 한 LPTSTR **char** <strong>\*</strong> 또는 `wchar_t*`, 및 LPCTSTR 에대한**const char** <strong>\*</strong> 또는 `const wchar_t*`합니다. 이러한 MBCS 또는 유니코드 중 하나에 대 한 올바른 매핑을 확인 하십시오.
 
 ## <a name="see-also"></a>참고 항목
 

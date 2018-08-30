@@ -104,12 +104,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ab94a9aadc40b4313995a71171d6712657e7ff0
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 6bacb90052b46b687349e9069fd7c47f825f0221
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964955"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202794"
 ---
 # <a name="basicstreambuf-class"></a>basic_streambuf 클래스
 
@@ -330,7 +330,7 @@ locale getloc() const;
 
 관련 내용은 [ios_base::getloc](../standard-library/ios-base-class.md#getloc)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_streambuf_getloc.cpp
@@ -392,7 +392,7 @@ streamsize in_avail();
 
 경우는 [읽기 위치](../standard-library/basic-streambuf-class.md) 가능 멤버 함수는 반환 [egptr](#egptr) - [gptr](#gptr)합니다. 아닌 경우 [showmanyc](#showmanyc)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_streambuf_in_avail.cpp
@@ -566,7 +566,7 @@ locale pubimbue(const locale& _Loc);
 
 멤버 함수는 로캘 개체에 _ *Loc*를 저장하고 [imbue](#imbue)를 호출합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `pubimbue`의 사용 예제는 [basic_ios::imbue](../standard-library/basic-ios-class.md#imbue)를 참조하세요.
 
@@ -664,9 +664,9 @@ int_type sbumpc();
 
 ### <a name="remarks"></a>설명
 
-읽기 위치가 사용 가능한 경우 멤버 함수는 **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( **\***[gptr](#gptr))을 반환하고 입력 버퍼에 대한 다음 포인터를 증가시킵니다. 아닌 경우 [uflow](#uflow)를 반환합니다.
+읽기 위치가 사용 가능한 경우 멤버 함수는 **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( <strong>\*</strong>[gptr](#gptr))을 반환하고 입력 버퍼에 대한 다음 포인터를 증가시킵니다. 아닌 경우 [uflow](#uflow)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_streambuf_sbumpc.cpp
@@ -829,7 +829,7 @@ int_type sgetc();
 
 읽기 위치가 사용 가능한 경우 멤버 함수는 **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `*`[gptr](#gptr))을 반환합니다. 아닌 경우 [underflow](#underflow)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_streambuf_sgetc.cpp
@@ -875,7 +875,7 @@ streamsize sgetn(
 
 멤버 함수는 [xsgetn](#xsgetn)( `ptr`, `count`)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_streambuf_sgetn.cpp
@@ -930,7 +930,7 @@ int_type snextc();
 
 멤버 함수는 [sbumpc](#sbumpc)를 반환합니다. 해당 함수가 **traits_type::**[eof](../standard-library/char-traits-struct.md#eof)를 반환하는 경우 **traits_type::eof**를 반환합니다. 아닌 경우 [sgetc](#sgetc)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_streambuf_snextc.cpp
@@ -977,7 +977,7 @@ int_type sputbackc(char_type _Ch);
 
 Putback 위치가 사용 가능한 경우 및 *_Ch* 비교 하 여 같은 멤버 함수 감소 해당 위치에 저장 된 문자를 입력된 버퍼와 반환의 다음 포인터로 **traits_type::** [ to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `_Ch`). 아닌 경우 [pbackfail](#pbackfail)( `_Ch`)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_streambuf_sputbackc.cpp
@@ -1024,7 +1024,7 @@ int_type sputc(char_type _Ch);
 
 경우는 `write position` 사용할 수 있는 멤버 함수는 *_Ch* 쓰기 위치에 출력 버퍼에 대 한 다음 포인터를 증가 시키고 반환 **traits_type::**[to_int_type ](../standard-library/char-traits-struct.md#to_int_type)( `_Ch`). 아닌 경우 [overflow](#overflow)( `_Ch`)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_streambuf_sputc.cpp
@@ -1068,7 +1068,7 @@ streamsize sputn(const char_type* ptr, streamsize count);
 
 멤버 함수는 [xsputn](#xsputn)( `ptr`, `count`)를 반환합니다. 자세한 내용은 이 멤버의 설명 섹션을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_streambuf_sputn.cpp
@@ -1102,7 +1102,7 @@ void stossc();
 
 멤버 함수는 [sbumpc](#sbumpc)를 호출합니다. 이 멤버 함수를 제공하는 데에는 구현이 필요하지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_streambuf_stossc.cpp
@@ -1137,7 +1137,7 @@ int_type sungetc();
 
 Putback 위치가 사용 가능한 경우 멤버 함수는 입력 버퍼에 대한 다음 포인터를 감소시키고 `traits_type::` [to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `*` [gptr](#gptr))을 반환합니다. 그러나 현재 버퍼의 상태에서 캡처될 수 있도록 마지막으로 읽은 문자를 확인하는 것이 항상 가능하지는 않습니다. 이것이 true인 경우 함수는 [pbackfail](#pbackfail)을 반환합니다. 이러한 상황을 방지하려면 다시 넣을 문자를 추적하고 `sputbackc(ch)`를 호출합니다. 스트림의 시작에서 호출하지 않거나 두 개 이상의 문자를 다시 넣으려고 시도하지 않는 한 실패하지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_streambuf_sungetc.cpp

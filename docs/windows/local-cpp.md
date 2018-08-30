@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a19e58e68b7f03269c002072859c2410a38c397b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b910ce2416dc345e2a36c9858f260ef5b42c2cc8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597620"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203324"
 ---
 # <a name="local-c"></a>local(C++)
 
@@ -36,9 +36,9 @@ ms.locfileid: "42597620"
 
 ## <a name="remarks"></a>설명
 
-합니다 **로컬** c + + 특성에 동일한 기능을 합니다 [로컬](http://msdn.microsoft.com/library/windows/desktop/aa367071) MIDL 특성입니다.
+합니다 **로컬** c + + 특성에 동일한 기능을 합니다 [로컬](/windows/desktop/Midl/local) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 참조 [call_as](../windows/call-as.md) 사용 하는 방법의 예제 **로컬**합니다.
 

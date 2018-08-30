@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 394cd0da74171e517086886a5c0c915fc77ba49c
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 96219173186b578e2469c769ade62c388d8c3c07
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42541893"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201478"
 ---
 # <a name="cmfcoutlookbarpane-class"></a>CMFCOutlookBarPane 클래스
 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
@@ -117,7 +117,7 @@ class CMFCOutlookBarPane : public CMFCToolBar
   
  Outlook 표시줄의 예로, OutlookDemo 샘플 프로젝트를 참조 하세요.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는의 다양 한 메서드를 사용 하는 방법에 설명 합니다 `CMFCOutlookBarPane` 클래스입니다. Outlook 표시줄 창을 만들, 페이지 스크롤 모드를 사용 하도록 설정, 도킹을 사용 하도록 설정 하 고 Outlook 표시줄의 배경색을 설정 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [Outlook 다중 뷰 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_OutlookMultiViews#3](../../mfc/reference/codesnippet/cpp/cmfcoutlookbarpane-class_1.h)]  
@@ -323,7 +323,7 @@ DECLARE_MESSAGE_MAPCOLORREF GetRegularColor() const;
  RGB 색 값으로 현재 텍스트 색입니다.  
   
 ### <a name="remarks"></a>설명  
- 사용 하 여 [CMFCOutlookBarPane::SetTextColor](#settextcolor) Outlook 표시줄의 현재 (일반 및 선택한) 텍스트 색을 설정 합니다. 호출 하 여 기본 텍스트 색을 가져올 수 있습니다 합니다 [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371) COLOR_WINDOW 인덱스를 사용 하 여 함수입니다.  
+ 사용 하 여 [CMFCOutlookBarPane::SetTextColor](#settextcolor) Outlook 표시줄의 현재 (일반 및 선택한) 텍스트 색을 설정 합니다. 호출 하 여 기본 텍스트 색을 가져올 수 있습니다 합니다 [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371) COLOR_WINDOW 인덱스를 사용 하 여 함수입니다.  
   
 ##  <a name="isbackgroundtexture"></a>  CMFCOutlookBarPane::IsBackgroundTexture  
  Outlook 표시줄 창에 대 한 로드 배경 이미지 인지 확인 합니다.  

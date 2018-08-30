@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a40cf81d0b00123692c9ea8b0e2f3111fb914fbb
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: ebfbd7e8cedd522c324743abc5c28c6ac3e9f2b0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42572210"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200390"
 ---
 # <a name="subsystem-specify-subsystem"></a>/SUBSYSTEM(하위 시스템 지정)
 ```  
@@ -37,7 +37,7 @@ ms.locfileid: "42572210"
 ```  
   
  BOOT_APPLICATION  
- Windows 부팅 환경에서 실행되는 응용 프로그램입니다. 부팅 응용 프로그램에 대 한 자세한 내용은 참조 하세요. [에 대 한 BCD](http://msdn.microsoft.com/library/windows/desktop/aa362639)합니다.  
+ Windows 부팅 환경에서 실행되는 응용 프로그램입니다. 부팅 응용 프로그램에 대 한 자세한 내용은 참조 하세요. [에 대 한 BCD](/previous-versions/windows/desktop/bcd/about-bcd)합니다.  
   
  CONSOLE  
  Win32 문자 모드 응용 프로그램입니다. 운영 체제는 콘솔 응용 프로그램에 콘솔을 제공합니다. 하는 경우 `main` 또는 `wmain` 네이티브 코드에 대해 정의 된 `int main(array<String ^> ^)` 관리 코드에 대해 정의 된 사용 하 여 완전히 응용 프로그램을 빌드 또는 `/clr:safe`, CONSOLE이 기본값입니다.  

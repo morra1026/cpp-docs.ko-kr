@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb6a75fe2d973b0330c66faaae6c4daede224c5e
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 25c9e21aa4b0f09db83632973d3a5046e3e2aa4a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880507"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206122"
 ---
 # <a name="ccommultithreadmodel-class"></a>CComMultiThreadModel 클래스
 `CComMultiThreadModel` 변수의 값 증가 및 감소 스레드로부터 안전한 메서드를 제공 합니다.  
@@ -90,7 +90,7 @@ typedef CComAutoCriticalSection AutoCriticalSection;
   
  외에 `AutoCriticalSection`를 사용할 수는 **typedef** 이름 [CriticalSection](#criticalsection)합니다. 지정 하지 않아야 `AutoCriticalSection` 전역 개체 또는 정적 클래스 멤버는 CRT 시작 코드를 제거 하려는 경우.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드는 기반으로 모델링 [CComObjectRootEx](ccomobjectrootex-class.md)를 보여 줍니다 `AutoCriticalSection` 스레딩 환경에서 사용 중인 합니다.  
   
 
@@ -154,11 +154,11 @@ typedef CComCriticalSection CriticalSection;
   
  외에 `CriticalSection`를 사용할 수는 **typedef** 이름 [AutoCriticalSection](#autocriticalsection)합니다. 지정 하지 않아야 `AutoCriticalSection` 전역 개체 또는 정적 클래스 멤버는 CRT 시작 코드를 제거 하려는 경우.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  참조 [CComMultiThreadModel::AutoCriticalSection](#autocriticalsection)합니다.  
   
 ##  <a name="decrement"></a>  CComMultiThreadModel::Decrement  
- Win32 함수를 호출 하는이 정적 함수 [InterlockedDecrement](http://msdn.microsoft.com/library/windows/desktop/ms683580)를 가리키는 변수의 값은 감소 *p*합니다.  
+ Win32 함수를 호출 하는이 정적 함수 [InterlockedDecrement](/windows/desktop/api/winbase/nf-winbase-interlockeddecrement)를 가리키는 변수의 값은 감소 *p*합니다.  
   
 ```
 static ULONG WINAPI Decrement(LPLONG p) throw ();
@@ -175,7 +175,7 @@ static ULONG WINAPI Decrement(LPLONG p) throw ();
  `InterlockedDecrement` 이 변수를 사용 하 여 동시에 둘 이상의 스레드를 방지 합니다.  
   
 ##  <a name="increment"></a>  CComMultiThreadModel::Increment  
- Win32 함수를 호출 하는이 정적 함수 [InterlockedIncrement](http://msdn.microsoft.com/library/windows/desktop/ms683614)를 가리키는 변수의 값이 증가 하는 *p*합니다.  
+ Win32 함수를 호출 하는이 정적 함수 [InterlockedIncrement](/windows/desktop/api/winbase/nf-winbase-interlockedincrement)를 가리키는 변수의 값이 증가 하는 *p*합니다.  
   
 ```
 static ULONG WINAPI Increment(LPLONG p) throw ();
@@ -209,7 +209,7 @@ typedef CComMultiThreadModelNoCS ThreadModelNoCS;
 |`CComSingleThreadModel`|`CComSingleThreadModel`|  
 |`CComMultiThreadModelNoCS`|`CComMultiThreadModelNoCS`|  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  참조 [CComMultiThreadModel::AutoCriticalSection](#autocriticalsection)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
