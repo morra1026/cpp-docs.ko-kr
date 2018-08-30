@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf5cf9438d2fcecb434802dc99aaa5c692ba108f
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 6cce467218b92f6d0827cff2b8ede56b735ab9af
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882899"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197148"
 ---
 # <a name="ipropertypage2impl-class"></a>IPropertyPage2Impl 클래스
 이 클래스는 구현 `IUnknown` 의 기본 구현을 상속 [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md)합니다.  
@@ -53,7 +53,7 @@ class IPropertyPage2Impl : public IPropertyPageImpl<T>
 |[IPropertyPage2Impl::EditProperty](#editproperty)|속성 페이지를 활성화할 때 속성 컨트롤에서 포커스를 수신 하도록 지정 합니다. ATL 구현 E_NOTIMPL을 반환합니다.|  
   
 ## <a name="remarks"></a>설명  
- 합니다 [IPropertyPage2](http://msdn.microsoft.com/library/windows/desktop/ms683996) 인터페이스를 확장 [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) 추가 하 여는 `EditProperty` 메서드. 이 메서드는 클라이언트가 속성 페이지 개체의 특정 속성을 선택 하는 데 사용 합니다.  
+ 합니다 [IPropertyPage2](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage2) 인터페이스를 확장 [IPropertyPage](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage) 추가 하 여는 `EditProperty` 메서드. 이 메서드는 클라이언트가 속성 페이지 개체의 특정 속성을 선택 하는 데 사용 합니다.  
   
  클래스 `IPropertyPage2Impl` 에 대 한 E_NOTIMPL을 반환 하기만 `IPropertyPage2::EditProperty`합니다. 하지만 기본 구현을 상속 [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md) 구현 및 `IUnknown` 장치에서 디버그 덤프에 정보를 전송 하 여 작성 합니다.  
   
@@ -82,7 +82,7 @@ HRESULT EditProperty(DISPID dispID);
  E_NOTIMPL 반환.  
   
 ### <a name="remarks"></a>설명  
- 참조 [IPropertyPage2::EditProperty](http://msdn.microsoft.com/library/windows/desktop/ms690353) Windows SDK에에서 있습니다.  
+ 참조 [IPropertyPage2::EditProperty](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage2-editproperty) Windows SDK에에서 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IPerPropertyBrowsingImpl 클래스](../../atl/reference/iperpropertybrowsingimpl-class.md)   

@@ -10,12 +10,12 @@ f1_keywords:
 ms.assetid: 2a338480-35e2-46f7-b223-52d4e84a5768
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 35cc0d25d16831ae5de61f04c4e66763278c10d8
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 93feda8c6359c5ec24fd4fd9dd38c632726b676b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42541504"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197027"
 ---
 # <a name="ltexceptiongt-typedefs"></a>&lt;exception&gt; 형식 정의
 
@@ -35,7 +35,7 @@ typedef unspecified exception_ptr;
 
 `exception_ptr` 형식을 구현하는 데 사용되는 지정되지 않은 내부 클래스입니다.
 
-`exception_ptr` 개체를 사용하여 현재 예외 또는 사용자 지정 예외의 인스턴스를 참조합니다. Microsoft 구현에서 예외가 [EXCEPTION_RECORD](http://msdn.microsoft.com/library/windows/desktop/aa363082) 구조체에 의해 표시됩니다. 각 `exception_ptr` 개체에는 예외를 나타내는 `EXCEPTION_RECORD` 구조체의 복사본을 가리키는 예외 참조 필드가 포함됩니다.
+`exception_ptr` 개체를 사용하여 현재 예외 또는 사용자 지정 예외의 인스턴스를 참조합니다. Microsoft 구현에서 예외가 [EXCEPTION_RECORD](/windows/desktop/api/winnt/ns-winnt-_exception_record) 구조체에 의해 표시됩니다. 각 `exception_ptr` 개체에는 예외를 나타내는 `EXCEPTION_RECORD` 구조체의 복사본을 가리키는 예외 참조 필드가 포함됩니다.
 
 `exception_ptr` 변수를 선언할 때 변수는 예외와 관련되지 않습니다. 즉, 해당 예외 참조 필드는 NULL입니다. 이러한 `exception_ptr` 개체를 *null exception_ptr*라고 합니다.
 
@@ -59,7 +59,7 @@ typedef void (*terminate_handler)();
 
 이 형식은 종료 처리기로 사용하는 데 적합한 함수의 포인터에 대해 설명합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `terminate_handler` 사용에 대한 예제는 [set_terminate](../standard-library/exception-functions.md#set_terminate)를 참조하세요.
 
@@ -71,7 +71,7 @@ typedef void (*terminate_handler)();
 typedef void (*unexpected_handler)();
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `unexpected_handler` 사용에 대한 예제는 [set_unexpected](../standard-library/exception-functions.md#set_unexpected)를 참조하세요.
 

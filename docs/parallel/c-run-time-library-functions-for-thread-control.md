@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2eaa1a0589cb001658b18144e06956eebd302287
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: 6a0e57931b7f2af3f6232f140fd38155cfa5b2f8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131856"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195237"
 ---
 # <a name="c-run-time-library-functions-for-thread-control"></a>스레드 컨트롤을 위한 C 런타임 라이브러리 함수
 모든 Win32 프로그램에 하나 이상의 스레드가 있습니다. 모든 스레드는 추가 스레드를 만들 수 있습니다. 스레드 수 신속 하 게 작업을 완료 한 다음 종료 또는 프로그램의 수명 동안 활성 상태로 유지 수 있습니다.  
@@ -40,7 +40,7 @@ ms.locfileid: "43131856"
  
 합니다 `_beginthread` 및 `_beginthreadex` 함수는 새 스레드를 만듭니다. 스레드는 프로세스의 다른 스레드를 사용 하 여 프로세스의 코드 및 데이터 세그먼트를 공유 하지만 자체 고유한 레지스터 값, 스택 공간 및 현재 명령 주소입니다. 시스템은 프로세스의 모든 스레드는 동시에 실행할 수 있도록 각 스레드를 CPU 시간을 제공 합니다.  
   
-`_beginthread` 및 `_beginthreadex` 비슷합니다는 [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453) Win32 api에서 함수에는 있지만 이러한 차이점이 있습니다.  
+`_beginthread` 및 `_beginthreadex` 비슷합니다는 [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) Win32 api에서 함수에는 있지만 이러한 차이점이 있습니다.  
   
 - 이러한 특정 C 런타임 라이브러리 변수를 초기화합니다. 이 스레드의 C 런타임 라이브러리를 사용 하는 경우에 중요 합니다.  
   

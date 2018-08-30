@@ -114,12 +114,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d843b3b491973c32d8fb5ff3160327a9e82223c8
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: eae771aed819577708d945cb2a62997f5b45e7fd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42541863"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199848"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl Class
 `CMFCTabCtrl` 클래스는 tab 컨트롤에 대 한 기능을 제공 합니다. 탭 컨트롤은 맨 위 또는 아래에 평면 또는 3차원 탭이 포함된 도킹 가능한 창을 표시합니다. 탭은 텍스트와 이미지를 표시하고 활성화된 경우 색을 변경할 수 있습니다.  
@@ -186,7 +186,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 |[CMFCTabCtrl::OnDragEnter](#ondragenter)|커서를 먼저 탭 컨트롤 창으로 끌 때 프레임 워크에서 호출 됩니다.|  
 |[CMFCTabCtrl::OnDragOver](#ondragover)|놓기 대상 창 위로 마우스를 이동 하는 경우 프레임 워크에서 끌기 작업 중 호출 합니다. (재정의 [CMFCBaseTabCtrl::OnDragOver](../../mfc/reference/cmfcbasetabctrl-class.md#ondragover).)|  
 |[CMFCTabCtrl::OnShowTabDocumentsMenu](#onshowtabdocumentsmenu)|사용자 탭을 선택 하 고 선택한 탭 활성 탭으로 설정 될 때까지 대기, 탭된 창이 팝업 메뉴를 표시 합니다.|  
-|`CMFCTabCtrl::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다. (재정의 [CMFCBaseTabCtrl::PreTranslateMessage](../../mfc/reference/cmfcbasetabctrl-class.md#pretranslatemessage).)|  
+|`CMFCTabCtrl::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다. (재정의 [CMFCBaseTabCtrl::PreTranslateMessage](../../mfc/reference/cmfcbasetabctrl-class.md#pretranslatemessage).)|  
 |`CMFCTabCtrl::RecalcLayout`|탭 컨트롤의 내부 레이아웃을 다시 계산 됩니다. (재정의 [CMFCBaseTabCtrl::RecalcLayout](../../mfc/reference/cmfcbasetabctrl-class.md#recalclayout).)|  
 |[CMFCTabCtrl::SetActiveInMDITabGroup](#setactiveinmditabgroup)|탭 컨트롤의 현재 탭 다중 문서 인터페이스 탭 그룹에 활성 탭으로 설정합니다.|  
 |[CMFCTabCtrl::SetActiveTab](#setactivetab)|탭을 활성화합니다. (재정의 [CMFCBaseTabCtrl::SetActiveTab](../../mfc/reference/cmfcbasetabctrl-class.md#setactivetab).)|  
@@ -248,7 +248,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
   
  [CMFCTabCtrl](../../mfc/reference/cmfctabctrl-class.md)  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서 다양 한 메서드를 사용 하는 방법에 설명 합니다 `CMFCTabCtrl` 구성 하는 클래스를 `CMFCTabCtrl` 개체입니다. 예제에 탭을 추가, 활성 탭에서 닫기 단추를 표시, 편집 가능한 탭 레이블에 사용 및 탭된 창 레이블의 팝업 메뉴를 표시 방법을 설명 합니다. 이 예제는의 일부를 [상태 컬렉션 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_StateCollection#1](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_1.h)]  
@@ -348,7 +348,7 @@ BOOL Create(
 |LOCATION_BOTTOM|탭은 탭 컨트롤의 아래쪽에 나와 있습니다.|  
 |LOCATION_TOP|탭은 탭 컨트롤의 위쪽에 있습니다.|  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `Create` 의 메서드는 `CMFCTabCtrl` 클래스입니다. 이 예제는의 일부를 [상태 컬렉션 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_StateCollection#1](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_1.h)]  
@@ -784,7 +784,7 @@ virtual DROPEFFECT OnDragEnter(
  사용자가 데이터를 포함 하는 데이터 개체를 가리킵니다.  
   
  [in] *dwKeyState*  
- 보조키의 상태를 포함합니다. 이 매개 변수는 다음 값의 비트 조합 (OR): MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다. 자세한 내용은 참조는 **메시지 매개 변수** 부분 [마우스 입력에 대 한](http://msdn.microsoft.com/library/windows/desktop/ms645601)합니다.  
+ 보조키의 상태를 포함합니다. 이 매개 변수는 다음 값의 비트 조합 (OR): MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다. 자세한 내용은 참조는 **메시지 매개 변수** 부분 [마우스 입력에 대 한](/windows/desktop/inputdev/about-mouse-input)합니다.  
   
  [in] *지점*  
  클라이언트 좌표에서 커서의 현재 위치를 포함합니다.  
@@ -812,7 +812,7 @@ virtual DROPEFFECT OnDragOver(
  에 대 한 포인터를 [COleDataObject](../../mfc/reference/coledataobject-class.md) 개체를 놓기 대상 위로 끄는입니다.  
   
  [in] *dwKeyState*  
- MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON의 비트 조합 (OR)는 보조 키의 상태입니다. 자세한 내용은 "메시지 Parameters"를 참조 [마우스 입력에 대 한](http://msdn.microsoft.com/library/windows/desktop/ms645601)합니다.  
+ MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON의 비트 조합 (OR)는 보조 키의 상태입니다. 자세한 내용은 "메시지 Parameters"를 참조 [마우스 입력에 대 한](/windows/desktop/inputdev/about-mouse-input)합니다.  
   
  [in] *지점*  
  현재 마우스 위치입니다.  
@@ -1000,7 +1000,7 @@ BOOL SynchronizeScrollBar(SCROLLINFO* pScrollInfo = NULL);
   
 ### <a name="parameters"></a>매개 변수  
  [out] *pScrollInfo*  
- 에 대 한 포인터를 [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) 구조 또는 NULL입니다. 이 메서드가 반환 하는 경우 및이 매개 변수가 NULL이 아닌 경우 구조는 스크롤 막대의 모든 매개 변수를 포함 합니다. 기본값은 NULL입니다.  
+ 에 대 한 포인터를 [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) 구조 또는 NULL입니다. 이 메서드가 반환 하는 경우 및이 매개 변수가 NULL이 아닌 경우 구조는 스크롤 막대의 모든 매개 변수를 포함 합니다. 기본값은 NULL입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  

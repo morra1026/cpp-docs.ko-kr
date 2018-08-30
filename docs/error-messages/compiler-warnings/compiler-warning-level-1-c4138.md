@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0865935c30c4934684c7a12e50ab26f3e8b12c4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cc3102f18021c16663bdf61dcde6df5e6893d46c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33277035"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197090"
 ---
 # <a name="compiler-warning-level-1-c4138"></a>컴파일러 경고(수준 1) C4138
 '*/'가 주석 외부에 있습니다.  
   
- 닫는 주석 구분 기호 앞에 여는 주석 구분 기호가 없습니다. 컴파일러는 별표(**\***)와 슬래시(/) 사이에 공백이 있다고 가정합니다.  
+ 닫는 주석 구분 기호 앞에 여는 주석 구분 기호가 없습니다. 컴파일러는 별표 사이 공백이 있다고 가정 (<strong>\*</strong>)와 슬래시 (/).  
   
 ## <a name="example"></a>예제  
   

@@ -170,12 +170,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 87fcaf93823e504f3631d50de4f981ae30e882e9
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: e61b6a9b967cc62bf8ba028783a019b8ecda7878
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027828"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200272"
 ---
 # <a name="cdockingmanager-class"></a>CDockingManager 클래스
 주 프레임 창에서 도킹 레이아웃을 제어하는 핵심 기능을 구현합니다.  
@@ -297,7 +297,7 @@ class CDockingManager : public CObject
   
 -   비 부동, 크기 조정이 불가능 창을 만들려는 경우 호출 된 [CDockingManager::AddPane](#addpane) 메서드. 이 메서드는 창의 레이아웃을 담당 하 고 도킹 관리자를 사용 하 여 창에 등록 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서 다양 한 메서드를 사용 하는 방법에 설명 합니다 `CDockingManager` 구성 하는 클래스를 `CDockingManager` 개체입니다. 이 예제에서는 모든 도킹 창의 캡션에 팝업 메뉴를 열고 추가 단추를 표시 하는 방법 및 개체의 도킹 모드를 설정 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [Visual Studio 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#24](../../mfc/codesnippet/cpp/cdockingmanager-class_1.cpp)]  
@@ -379,7 +379,7 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
   
 ### <a name="parameters"></a>매개 변수  
  [in] *hdwp*  
- 지연 된 창 위치 구조를 지정합니다. 자세한 내용은 [Windows 데이터 형식](http://msdn.microsoft.com/library/windows/desktop/aa383751)을 참조하세요.  
+ 지연 된 창 위치 구조를 지정합니다. 자세한 내용은 [Windows 데이터 형식](/windows/desktop/WinProg/windows-data-types)합니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -924,7 +924,7 @@ CSmartDockingManager* GetSmartDockingManager();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 에 대 한 포인터를 [스마트 도킹 관리자](http://msdn.microsoft.com/f537a1a6-fb9e-41d7-952f-0f25d5ee7534)합니다.  
+ 에 대 한 포인터를 [스마트 도킹 관리자](https://msdn.microsoft.com/f537a1a6-fb9e-41d7-952f-0f25d5ee7534)합니다.  
   
 ##  <a name="getsmartdockingmanagerpermanent"></a>  CDockingManager::GetSmartDockingManagerPermanent  
  스마트 도킹 관리자에 대 한 포인터를 검색합니다.  

@@ -54,12 +54,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 0f9566fb6e3117b10d0d6f4a2bccbe56fe33a28a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 10ddc04471c749aad217780e9a27494783f1e9b0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609351"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195635"
 ---
 # <a name="windows-operations-ccli"></a>Windows 작업(C++/CLI)
 Windows SDK를 사용 하 여 다양 한 Windows 관련 작업을 보여 줍니다.  
@@ -69,7 +69,7 @@ Windows SDK를 사용 하 여 다양 한 Windows 관련 작업을 보여 줍니�
 ## <a name="determine_shutdown"></a> 종료 프로세스 시작 확인
 다음 코드 예제에서는 응용 프로그램 또는.NET Framework는 현재 종료 여부를 결정 하는 방법에 설명 합니다. 종료 하는 동안 이러한 구문은 시스템에 의해 종료 되 고 안정적으로 사용할 수 없습니다 때문에.NET Framework의 정적 요소에 액세스 하기 위한 유용 합니다. 확인 하 여는 <xref:System.Environment.HasShutdownStarted%2A> 속성 먼저 이러한 요소에 액세스 하지 하 여 잠재적인 오류를 방지할 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // check_shutdown.cpp  
@@ -88,7 +88,7 @@ int main()
 ## <a name="determine_user"></a> 사용자 대화형 상태 확인
 다음 코드 예제에는 코드는 대화형 사용자 컨텍스트에서 실행 되는지 여부를 확인 하는 방법을 보여 줍니다. 경우 <xref:System.Environment.UserInteractive%2A> 가 false 이면 서비스 프로세스로 실행 중인 코드 또는에서 웹 응용 프로그램을 내부 경우 해서는 사용자와 상호 작용할 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // user_interactive.cpp  
@@ -108,7 +108,7 @@ int main()
 ## <a name="read_registry"></a> Windows 레지스트리에서 데이터 읽기
 다음 코드 예제에서는 <xref:Microsoft.Win32.Registry.CurrentUser> Windows 레지스트리에서 데이터 읽기에 대 한 키입니다. 먼저 하위 키를 사용 하 여 열거 됩니다는 <xref:Microsoft.Win32.RegistryKey.GetSubKeyNames%2A> 메서드를 Identities 하위 키를 사용 하 여을 열릴는 <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> 메서드. 각 하위 키가 나타내는 루트 키와 마찬가지로 <xref:Microsoft.Win32.RegistryKey> 클래스입니다. 마지막으로, 새 <xref:Microsoft.Win32.RegistryKey> 개체의 키/값 쌍을 열거 하는 데 사용 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // registry_read.cpp  
@@ -162,7 +162,7 @@ int main( )
 > [!NOTE]
 >  이 예제를 Windows Vista에서 실행하려면 관리 권한이 필요합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // processor_timer.cpp  
@@ -254,7 +254,7 @@ int main()
 ## <a name="retrieve_text"></a> 클립보드에서 텍스트 검색
 다음 코드 예제에서는 합니다 <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> 멤버 함수에 대 한 포인터를 반환 하는 <xref:System.Windows.Forms.IDataObject> 인터페이스입니다. 이 인터페이스 데이터 형식에 대 한 쿼리 고 실제 데이터를 검색 하는 데 사용 될 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // read_clipboard.cpp  
@@ -293,7 +293,7 @@ using namespace System::Windows::Forms;
 ## <a name="retrieve_current"></a> 현재 사용자 이름 검색
 다음 코드 예제에서는 현재 사용자 이름 (Windows 로그인 사용자 이름)를 검색 하는 방법을 보여 줍니다. 이름에 저장 됩니다는 <xref:System.Environment.UserName%2A> 에 정의 되어 있는 문자열을 <xref:System.Environment> 네임 스페이스입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // username.cpp  
@@ -310,7 +310,7 @@ int main()
 ## <a name="retrieve_dotnet"></a> .NET Framework 버전 검색
 다음 코드 예제에 사용 하 여 현재 설치 된.NET Framework의 버전을 확인 하는 방법을 보여 줍니다.는 <xref:System.Environment.Version%2A> 속성에 대 한 포인터에는 <xref:System.Version> 버전 정보를 포함 하는 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // dotnet_ver.cpp  
@@ -336,7 +336,7 @@ int main()
 ## <a name="retrieve_local"></a> 로컬 컴퓨터 이름 검색 
 다음 코드 예제에서는 로컬 컴퓨터 이름 검색 (네트워크에서 표시 되는 컴퓨터의 이름). 가져와서이 수행할 수 있습니다는 <xref:System.Environment.MachineName%2A> 에 정의 되어 있는 문자열을 <xref:System.Environment> 네임 스페이스입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // machine_name.cpp  
@@ -353,7 +353,7 @@ int main()
 ## <a name="retrieve_version"></a> Windows 버전 검색
 다음 코드 예제에서는 현재 운영 체제의 플랫폼 및 버전 정보를 검색 하는 방법에 설명 합니다. 이 정보에 저장 됩니다는 <xref:System.Environment.OSVersion%2A?displayProperty=fullName> 속성 넓은 의미에서 Windows의 버전을 설명 하는 열거형으로 구성 됩니다 및 <xref:System.Environment.Version%2A> 운영 체제의 정확한 빌드를 포함 하는 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // os_ver.cpp  
@@ -394,7 +394,7 @@ int main()
 ## <a name="retrieve_time"></a> 시작 후 경과한 시간 검색
 다음 코드 예제에는 틱 수를 결정 하는 방법을 보여 줍니다. 또는 Windows 이후 경과 된 시간 (밀리초) 시작 되었습니다. 이 값은 <xref:System.Environment.TickCount%2A?displayProperty=fullName> 멤버는 32 비트 값 이기 때문에 0으로 다시 설정은 및입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // startup_time.cpp  
@@ -422,7 +422,7 @@ int main( )
 ## <a name="store_text"></a> 클립보드에 텍스트 저장
 다음 코드 예제에서는 합니다 <xref:System.Windows.Forms.Clipboard> 에 정의 된 개체는 <xref:System.Windows.Forms> 네임 스페이스 문자열을 저장 합니다. 이 개체는 두 멤버 함수를 제공 합니다. <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> 고 <xref:System.Windows.Forms.Clipboard.GetDataObject%2A>입니다. 데이터에서 파생 된 개체를 전송 하 여 클립보드에 저장 됩니다 <xref:System.Object> 에 <xref:System.Windows.Forms.Clipboard.SetDataObject%2A>입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // store_clipboard.cpp  
@@ -452,7 +452,7 @@ using namespace System::Windows::Forms;
 ## <a name="write_data"></a> Windows 레지스트리에 데이터 쓰기
 다음 코드 예제에서는 합니다 <xref:Microsoft.Win32.Registry.CurrentUser> 의 쓰기 가능한 인스턴스를 만드는 키를 <xref:Microsoft.Win32.RegistryKey> 클래스에 해당 하는 **소프트웨어** 키입니다. <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A> 메서드는 다음 새 키 만들기 및 키/값 쌍으로 추가 하는 데 사용 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // registry_write.cpp  
@@ -499,7 +499,7 @@ int main()
 ```  
   
 ### <a name="remarks"></a>설명  
- .NET Framework를 사용 하 여 사용 하 여 레지스트리에 액세스 하는 <xref:Microsoft.Win32.Registry> 및 [RegistryKey](https://msdn.microsoft.com/en-us/library/microsoft.win32.registrykey.aspx) 에 정의 된 클래스 모두는 <xref:Microsoft.Win32> 네임 스페이스입니다. 합니다 **레지스트리** 클래스의 정적 인스턴스에 대 한 컨테이너인는 <xref:Microsoft.Win32.RegistryKey> 클래스입니다. 각 인스턴스는 루트 레지스트리 노드를 나타냅니다. 인스턴스가 <xref:Microsoft.Win32.Registry.ClassesRoot>, <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>합니다 <xref:Microsoft.Win32.Registry.LocalMachine>, 및 <xref:Microsoft.Win32.Registry.Users>합니다.  
+ .NET Framework를 사용 하 여 사용 하 여 레지스트리에 액세스 하는 <xref:Microsoft.Win32.Registry> 및 [RegistryKey](https://msdn.microsoft.com/library/microsoft.win32.registrykey.aspx) 에 정의 된 클래스 모두는 <xref:Microsoft.Win32> 네임 스페이스입니다. 합니다 **레지스트리** 클래스의 정적 인스턴스에 대 한 컨테이너인는 <xref:Microsoft.Win32.RegistryKey> 클래스입니다. 각 인스턴스는 루트 레지스트리 노드를 나타냅니다. 인스턴스가 <xref:Microsoft.Win32.Registry.ClassesRoot>, <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>합니다 <xref:Microsoft.Win32.Registry.LocalMachine>, 및 <xref:Microsoft.Win32.Registry.Users>합니다.  
 
 ## <a name="related-sections"></a>관련 단원  
  <xref:System.Environment>  
@@ -507,4 +507,4 @@ int main()
 ## <a name="see-also"></a>참고 항목  
  [C++/CLI를 사용한 .NET 프로그래밍(Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 
- [성능 모니터링 소개](http://msdn.microsoft.com/en-us/d40f10b9-e2b7-4ec8-a9b3-706929e5bf35) 
+ [성능 모니터링 소개](https://msdn.microsoft.com/d40f10b9-e2b7-4ec8-a9b3-706929e5bf35) 

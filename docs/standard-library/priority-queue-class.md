@@ -30,12 +30,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a53b865d054948d9ee22acbfbec0b6ddf807ec0c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: e63f13c07ceb6220ba3dc8e7932c7357ed649188
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954762"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199240"
 ---
 # <a name="priorityqueue-class"></a>priority_queue 클래스
 
@@ -50,11 +50,14 @@ class priority_queue
 
 ### <a name="parameters"></a>매개 변수
 
-*형식* priority_queue에 저장 되는 요소 데이터 형식입니다.
+*Type*<br/>
+ priority_queue에 저장되는 요소 데이터 형식입니다.
 
-*컨테이너* priority_queue를 구현 하는 데 사용 된 기본 컨테이너의 형식입니다.
+*컨테이너*<br/>
+ priority_queue를 구현하는 데 사용된 기본 컨테이너의 형식입니다.
 
-*비교* priority_queue에서 상대적인 순서를 결정 하는 정렬 키로 두 요소 값을 비교할 수 있는 함수 개체를 제공 하는 형식입니다. 이 인수는 선택적 이며 이진 조건자 **적은***\<*** typename** *컨테이너 ***:: value_type*** >* 기본값입니다.
+*Compare*<br/>
+ 두 요소값을 정렬 키로 비교하여 priority_queue에서 상대적인 순서를 결정할 수 있는 함수 개체를 제공하는 형식입니다. 이 인수는 선택 사항이며 기본값은 이진 조건자 `less<typename Container::value_type>`입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -118,7 +121,7 @@ typedef Container container_type;
 
 `Container`에 대한 자세한 내용은 [priority_queue 클래스](../standard-library/priority-queue-class.md) 항목의 설명 섹션을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `container_type`을 선언하고 사용하는 방법에 대한 예제는 [priority_queue](#priority_queue)의 예제를 참조하세요.
 
@@ -134,7 +137,7 @@ bool empty() const;
 
 priority_queue가 비어 있으면 **true**이고 비어 있지 않으면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // pqueue_empty.cpp
@@ -180,7 +183,7 @@ void pop();
 
 멤버 함수를 적용하려면 priority_queue는 비어 있지 않아야 합니다. priority_queue의 최상위 위치에는 항상 컨테이너에서 가장 큰 요소가 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // pqueue_pop.cpp
@@ -249,15 +252,20 @@ priority_queue(InputIterator first, InputIterator last, const Traits&_comp, cons
 
 ### <a name="parameters"></a>매개 변수
 
-*_ comp* 형식의 비교 함수로 **constTraits** 비교 함수는 기본 컨테이너의 기본값은 priority_queue에서 요소를 정렬 하는 데 사용 합니다.
+*_ comp*<br/>
+ priority_queue의 요소 순서를 지정하는 데 사용되는 **constTraits** 형식의 비교 함수로, 기본 컨테이너의 비교 함수를 기본값으로 사용합니다.
 
-*_Cont* 는 생성 된 priority_queue가 복사본이 되는 기본 컨테이너입니다.
+*_Cont*<br/>
+ 생성된 priority_queue가 복사본이 되는 기본 컨테이너입니다.
 
-*오른쪽* 의 복사본으로 생성 된 집합은 priority_queue입니다.
+*right*<br/>
+ 생성된 set가 복사본으로 지정될 priority_queue입니다.
 
-*첫 번째* 복사할 요소 범위에서 첫 번째 요소의 위치입니다.
+*first*<br/>
+ 복사할 요소의 범위에서 첫 번째 요소의 위치입니다.
 
-*마지막* 복사할 요소 범위를 벗어나는 첫 번째 요소의 위치입니다.
+*last*<br/>
+ 복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -267,7 +275,7 @@ priority_queue(InputIterator first, InputIterator last, const Traits&_comp, cons
 
 마지막 3 개 생성자는 범위를 복사 [* 먼저 마지막 *) 일부 컨테이너의 값을 사용 하 여 클래스의 비교 함수 형식을 지정할 때 명 시도가 향상 priority_queue를 초기화 **Traits** 및 `container_type`.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // pqueue_ctor.cpp
@@ -388,13 +396,14 @@ void push(const Type& val);
 
 ### <a name="parameters"></a>매개 변수
 
-*val* priority_queue의 맨 위에 추가 되는 요소입니다.
+*val*<br/>
+ priority_queue의 맨 위에 추가되는 개체입니다.
 
 ### <a name="remarks"></a>설명
 
 priority_queue의 최상위 위치에는 컨테이너에서 가장 큰 요소가 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // pqueue_push.cpp
@@ -438,7 +447,7 @@ size_type size() const;
 
 priority_queue의 현재 길이입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // pqueue_size.cpp
@@ -479,7 +488,7 @@ typedef typename Container::size_type size_type;
 
 이 형식은 priority_queue에 의해 조정되는 기본 컨테이너의 `size_type`과 동일한 의미입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `size_type`을 선언하고 사용하는 방법에 대한 예제는 [size](#size)에 대한 예제를 참조하세요.
 
@@ -499,7 +508,7 @@ const_reference top() const;
 
 멤버 함수를 적용하려면 priority_queue는 비어 있지 않아야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // pqueue_top.cpp
@@ -543,7 +552,7 @@ typedef typename Container::value_type value_type;
 
 이 형식은 priority_queue에 의해 조정되는 기본 컨테이너의 `value_type`과 동일한 의미입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // pqueue_value_type.cpp

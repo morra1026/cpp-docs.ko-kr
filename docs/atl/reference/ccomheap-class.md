@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d45a999f777a2d497542544c2d3c7f079b7a32b0
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: c456aaa6f3448cf4386e0556773f2a9839702ccd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881606"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202424"
 ---
 # <a name="ccomheap-class"></a>CComHeap 클래스
 이 클래스는 구현 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) COM 메모리 할당 함수를 사용 합니다.  
@@ -52,9 +52,9 @@ class CComHeap : public IAtlMemMgr
 |[Ccomheap:: Reallocate](#reallocate)|이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.|  
   
 ## <a name="remarks"></a>설명  
- `CComHeap` 메모리 할당 함수를 비롯 한 COM 할당 함수를 사용 하 여 구현 [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727), [CoTaskMemFree](http://msdn.microsoft.com/library/windows/desktop/ms680722)를 [IMalloc::GetSize](http://msdn.microsoft.com/library/windows/desktop/ms691226), 및 [CoTaskMemRealloc](http://msdn.microsoft.com/library/windows/desktop/ms687280)합니다. 할당 될 수 있는 메모리의 최대 크기는 INT_MAX (2147483647) 바이트와 같습니다.  
+ `CComHeap` 메모리 할당 함수를 비롯 한 COM 할당 함수를 사용 하 여 구현 [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc), [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)를 [IMalloc::GetSize](/windows/desktop/api/objidlbase/nf-objidlbase-imalloc-getsize), 및 [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc)합니다. 할당 될 수 있는 메모리의 최대 크기는 INT_MAX (2147483647) 바이트와 같습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  예를 참조 하세요 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md)합니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
@@ -82,7 +82,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ### <a name="remarks"></a>설명  
  호출 [ccomheap:: Free](#free) 하거나 [ccomheap:: Reallocate](#reallocate) 이 메서드에 의해 할당 된 메모리를 해제 합니다.  
   
- 사용 하 여 구현 [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727)합니다.  
+ 사용 하 여 구현 [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc)합니다.  
   
 ##  <a name="free"></a>  Ccomheap::  
  이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.  
@@ -96,7 +96,7 @@ virtual void Free(void* p) throw();
  이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다. NULL 유효한 값 이며 아무 작업도 수행 합니다.  
   
 ### <a name="remarks"></a>설명  
- 사용 하 여 구현 [CoTaskMemFree](http://msdn.microsoft.com/library/windows/desktop/ms680722)합니다.  
+ 사용 하 여 구현 [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)합니다.  
   
 ##  <a name="getsize"></a>  CComHeap::GetSize  
  이 메모리 관리자에 의해 할당 된 메모리 블록의 할당 된 크기를 가져오려면이 메서드를 호출 합니다.  
@@ -113,7 +113,7 @@ virtual size_t GetSize(void* p) throw();
  할당된 된 메모리 블록의 크기 (바이트)를 반환합니다.  
   
 ### <a name="remarks"></a>설명  
- 사용 하 여 구현 [IMalloc::GetSize](http://msdn.microsoft.com/library/windows/desktop/ms691226)합니다.  
+ 사용 하 여 구현 [IMalloc::GetSize](/windows/desktop/api/objidlbase/nf-objidlbase-imalloc-getsize)합니다.  
   
 ##  <a name="reallocate"></a>  Ccomheap:: Reallocate  
  이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.  
@@ -135,7 +135,7 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 ### <a name="remarks"></a>설명  
  호출 [ccomheap::](#free) 이 메서드에 의해 할당 된 메모리를 해제 합니다.  
   
- 사용 하 여 구현 [CoTaskMemRealloc](http://msdn.microsoft.com/library/windows/desktop/ms687280)합니다.  
+ 사용 하 여 구현 [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [DynamicConsumer 샘플](../../visual-cpp-samples.md)   

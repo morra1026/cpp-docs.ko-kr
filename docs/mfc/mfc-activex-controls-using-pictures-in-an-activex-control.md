@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX 컨트롤: ActiveX 컨트롤에서 그림 사용 | Microsoft Docs'
+title: 'MFC ActiveX 컨트롤: ActiveX 컨트롤에서 그림 사용 하기 | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 356d7acd67747f4310ed0e4f564df7d1533e88ed
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: ebe0c28f1f2d6ee2eab81d9de2af3c033ecd484a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36930650"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199676"
 ---
 # <a name="mfc-activex-controls-using-pictures-in-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤에서 그림 사용하기
 이 문서에서는 일반적인 그림 유형 및 ActiveX 컨트롤에서 구현하는 방법을 설명합니다. 다음과 같은 내용을 다룹니다.  
@@ -71,11 +71,11 @@ ms.locfileid: "36930650"
      ActiveX 컨트롤 그리기를 담당하는 여러 함수가 수정됩니다.  
   
 ##  <a name="_core_additions_to_your_control_project"></a> 컨트롤 프로젝트에 대한 추가  
- 표준 그림 속성 페이지에 대 한 속성 페이지 ID를 추가 하려면 컨트롤 구현 파일에 BEGIN_PROPPAGEIDS 매크로 뒤에 다음 줄에 삽입 (합니다. CPP):  
+ 표준 그림 속성 페이지에 대 한 속성 페이지 ID를 추가 하려면 컨트롤 구현 파일에서 BEGIN_PROPPAGEIDS 매크로 뒤에 다음 줄에 삽입 (합니다. CPP):  
   
  [!code-cpp[NVC_MFC_AxPic#1](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_1.cpp)]  
   
- 또한 BEGIN_PROPPAGEIDS 매크로의 count 매개 변수 1 씩 증가 시켜야 합니다. 다음 줄에서는 이 작업을 보여 줍니다.  
+ 또한 씩 BEGIN_PROPPAGEIDS 매크로의 count 매개 변수를 증가 시켜야 합니다. 다음 줄에서는 이 작업을 보여 줍니다.  
   
  [!code-cpp[NVC_MFC_AxPic#2](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_2.cpp)]  
   
@@ -83,7 +83,7 @@ ms.locfileid: "36930650"
   
  [!code-cpp[NVC_MFC_AxPic#3](../mfc/codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_3.h)]  
   
- 데이터 멤버 이름을 필요 없는 *m_pic*; 아무 이름이 나 지정 해도 됩니다.  
+ 데이터 멤버 이름을 지정 하는 데 필요한 아닙니다 *m_pic*; 모든 이름 만으로도 충분 합니다.  
   
  다음에는 그림 형식을 지원하는 사용자 지정 속성을 추가합니다.  
   
@@ -99,7 +99,7 @@ ms.locfileid: "36930650"
   
 5.  **속성 이름** 상자에 속성 이름을 입력합니다. 예제의 경우 이 절차에서 `ControlPicture` 를 사용합니다.  
   
-6.  에 **속성 형식** 상자 **IPictureDisp\***  속성 형식에 대 한 합니다.  
+6.  에 **속성 형식** 상자에서 **IPictureDisp** <strong>\*</strong> 속성 형식에 대 한 합니다.  
   
 7.  **구현 형식**에서 **Get/Set 메서드**를 클릭합니다.  
   
@@ -123,7 +123,7 @@ ms.locfileid: "36930650"
 >  사용자 컨트롤 클래스 및 함수 이름은 위의 예제와 다를 수 있습니다.  
   
 ###  <a name="_core_modifications_to_your_control_project"></a> 컨트롤 프로젝트 수정  
- 컨트롤 프로젝트에 필요한 항목을 추가한 후 ActiveX 컨트롤의 렌더링에 영향을 주는 여러 함수를 수정해야 합니다. 이러한 함수, `OnResetState`, `OnDraw`및 사용자 지정 그림 속성의 Get/Set 함수는 컨트롤 구현 파일에 있습니다. (이 예제에서 컨트롤 클래스 호출 됩니다 `CSampleCtrl`, `CPictureHolder` 데이터 멤버 라고 *m_pic*, 사용자 지정 그림 속성 이름은 `ControlPicture`.)  
+ 컨트롤 프로젝트에 필요한 항목을 추가한 후 ActiveX 컨트롤의 렌더링에 영향을 주는 여러 함수를 수정해야 합니다. 이러한 함수, `OnResetState`, `OnDraw`및 사용자 지정 그림 속성의 Get/Set 함수는 컨트롤 구현 파일에 있습니다. (이 예제에서 control 클래스 호출 됩니다 `CSampleCtrl`서 `CPictureHolder` 데이터 멤버 라고 *m_pic*, 사용자 지정 그림 속성 이름은 `ControlPicture`.)  
   
  컨트롤 `OnResetState` 함수에서 `COleControl::OnResetState`호출 뒤에 다음과 같은 선택적 줄을 추가합니다.  
   

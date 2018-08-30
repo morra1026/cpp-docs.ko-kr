@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7e43d5f528e85ea3233b9ea4a68e83ee0cfb7f3
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: d85f50889f75f387fc6455872a38396e7b9728dd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026409"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203280"
 ---
 # <a name="complex-class"></a>complex 클래스
 
@@ -134,7 +134,7 @@ complex(const complex& right);
 
 위 템플릿은 복사 생성자입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_complex.cpp
@@ -197,7 +197,7 @@ T imag(const T& right);
 
 복소수 *a + bi*의 경우 허수부 또는 성분은 *Im(a + bi) = b.* 입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_imag.cpp
@@ -253,7 +253,7 @@ complex<Type>& operator*=(const complex<Type>& right);
 
 연산이 오버로드되어 특정 형식으로 데이터를 변환하지 않고 단순한 산술 연산을 실행할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_op_me.cpp
@@ -336,7 +336,7 @@ complex<Type>& operator+=(const complex<Type>& right);
 
 연산이 오버로드되어 특정 형식으로 데이터를 변환하지 않고 단순한 산술 연산을 실행할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_op_pe.cpp
@@ -440,7 +440,7 @@ complex<Type>& operator-=(const complex<Type>& complexNum);
 
 연산이 오버로드되어 특정 형식으로 데이터를 변환하지 않고 단순한 산술 연산을 실행할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_op_se.cpp
@@ -546,7 +546,7 @@ complex<Type>& operator/=(const complex<Type>& complexNum);
 
 연산이 오버로드되어 특정 형식으로 데이터를 변환하지 않고 단순한 산술 연산을 실행할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_op_de.cpp
@@ -644,7 +644,7 @@ complex<Type>& operator=(const Type& right);
 
 연산이 오버로드되어 특정 형식으로 데이터를 변환하지 않고 단순한 산술 연산을 실행할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_op_as.cpp
@@ -721,7 +721,7 @@ T real(const T& right);
 
 복소수 *a + bi*의 경우 실수부 또는 성분은 *Re(a + bi) = a.* 입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_class_real.cpp
@@ -765,7 +765,7 @@ typedef Type value_type;
 
 `value_type` 동의어가 클래스에 대 한 복잡 한 `Type` 템플릿 매개 변수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_valuetype.cpp
@@ -792,5 +792,5 @@ of type value_type: c1 = (3,4).
 
 ## <a name="see-also"></a>참고자료
 
-[complex 멤버](http://msdn.microsoft.com/d5c4466c-43a0-4817-aca1-9a5d492dae28)<br/>
+[complex 멤버](https://msdn.microsoft.com/d5c4466c-43a0-4817-aca1-9a5d492dae28)<br/>
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

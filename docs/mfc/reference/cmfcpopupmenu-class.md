@@ -170,12 +170,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 04217a03defcecf990a943d5d99f8370a966a5f7
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 125b15062fc46850ad9b0d2512f9f7cc2e2095e1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42541874"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204214"
 ---
 # <a name="cmfcpopupmenu-class"></a>CMFCPopupMenu 클래스
 Windows 팝업 메뉴 기능을 구현하고 분리 메뉴, 도구 설명 같은 기능을 추가하여 확장합니다.
@@ -284,7 +284,7 @@ class CMFCPopupMenu : public CMiniFrameWnd
 ### <a name="remarks"></a>설명  
  일반적으로 MFC 팝업 메뉴가 자동으로 만듭니다. 생성 하려는 경우는 `CMFCPopupMenu` 수동으로 개체 힙에 각각 하나씩 할당 하 고, 호출 하 [CMFCPopupMenu::Create](#create)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 팝업 메뉴 개체를 구성 하는 방법에 설명 합니다. 로고 및 팝업 메뉴의 소리를 설정, 애니메이션 속도 및 형식 설정, 주 프레임 외부 팝업 메뉴가 나타나면 메뉴 그림자를 그릴, 최대 너비를 설정 및 팝업 메뉴의 오른쪽 메뉴 맞춤을 설정 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [사용자 지정 페이지 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_CustomPages#2](../../mfc/reference/codesnippet/cpp/cmfcpopupmenu-class_1.cpp)]  
@@ -442,7 +442,7 @@ virtual BOOL Create(
 ### <a name="remarks"></a>설명  
  하는 경우 *bOwnMessage* 가 TRUE 인 프레임 워크 경로 모든 메뉴 메시지가 *pWndParent*합니다. *pWndParent* 하는 경우 NULL이 아니어야 *bOwnMessage* 은 TRUE입니다. 하는 경우 *bOwnMessage* FALSE, 프레임 워크 경로 부모 팝업 메뉴로 메뉴 메시지 수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `Create` 메서드는 `CMFCPopuMenu` 클래스입니다. 이 코드 조각은의 일부인 합니다 [사용자 지정 페이지 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_CustomPages#1](../../mfc/reference/codesnippet/cpp/cmfcpopupmenu-class_2.cpp)]  
@@ -510,7 +510,7 @@ static void EnableMenuSound(BOOL bEnable = TRUE);
  FALSE이 고, 그렇지 소리를 사용 하려면 TRUE로 설정 합니다.  
   
 ### <a name="remarks"></a>설명  
- 프레임 워크를 호출 하는 소리를 사용 하는 경우는 [PlaySound](http://msdn.microsoft.com/library/windows/desktop/bb774426) 메서드 사용자가 팝업 메뉴를 열거나 메뉴 명령을 선택 합니다. 기본적으로이 기능을 사용 하는 사용 하도록 설정 합니다.  
+ 프레임 워크를 호출 하는 소리를 사용 하는 경우는 [PlaySound](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iusernotification-playsound) 메서드 사용자가 팝업 메뉴를 열거나 메뉴 명령을 선택 합니다. 기본적으로이 기능을 사용 하는 사용 하도록 설정 합니다.  
   
 ##  <a name="enableresize"></a>  CMFCPopupMenu::EnableResize  
 

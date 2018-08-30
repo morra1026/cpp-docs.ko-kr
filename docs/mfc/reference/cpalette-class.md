@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cdd8dd32b0f805e55e17d12428c045d64820196d
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: ff3a68e585cecb8affb0a5f4ffb7ff81929c955a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849407"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201105"
 ---
 # <a name="cpalette-class"></a>CPalette 클래스
 Windows 색상표를 캡슐화합니다.  
@@ -115,12 +115,12 @@ void AnimatePalette(
  애니메이션을 적용할 수 있도록 색상표에 항목 수를 지정 합니다.  
   
  *lpPaletteColors*  
- 배열의 첫 번째 멤버를 가리킵니다 [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) 구조에서 식별 된 색상표 항목을 바꾸려면 *nStartIndex* 하 고 *nNumEntries*합니다.  
+ 배열의 첫 번째 멤버를 가리킵니다 [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) 구조에서 식별 된 색상표 항목을 바꾸려면 *nStartIndex* 하 고 *nNumEntries*합니다.  
   
 ### <a name="remarks"></a>설명  
  응용 프로그램을 호출 하면 `AnimatePalette`, Windows 시스템 색상표에 새 항목을 즉시 매핑되기 때문에 해당 클라이언트 영역을 업데이트 필요가 없습니다.  
   
- `AnimatePalette` PC_RESERVED 플래그가 해당 설정 된 함수 항목에만 변경 됩니다 `palPaletteEntry` 의 멤버는 [LOGPALETTE](http://msdn.microsoft.com/library/windows/desktop/dd145040) 구조에 연결 된를 `CPalette` 개체입니다. 이 구조에 대 한 자세한 내용은 Windows SDK의 LOGPALETTE를 참조 하세요.  
+ `AnimatePalette` PC_RESERVED 플래그가 해당 설정 된 함수 항목에만 변경 됩니다 `palPaletteEntry` 의 멤버는 [LOGPALETTE](/windows/desktop/api/wingdi/ns-wingdi-taglogpalette) 구조에 연결 된를 `CPalette` 개체입니다. 이 구조에 대 한 자세한 내용은 Windows SDK의 LOGPALETTE를 참조 하세요.  
   
 ##  <a name="cpalette"></a>  CPalette::CPalette  
  `CPalette` 개체를 생성합니다.  
@@ -147,7 +147,7 @@ BOOL CreateHalftonePalette(CDC* pDC);
  함수가 성공하면 0이 아니고 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 응용 프로그램을 장치 컨텍스트에의 늘이기 모드 하프톤으로 설정 된 경우 하프톤 팔레트를 만들어야 합니다. 반환한 논리 하프톤 팔레트를 [CreateHalftonePalette](http://msdn.microsoft.com/library/windows/desktop/dd183503) 멤버 함수는 다음 선택 하 고 장치 컨텍스트를 실현 합니다 [CDC::StretchBlt](../../mfc/reference/cdc-class.md#stretchblt) 또는 [ StretchDIBits](http://msdn.microsoft.com/library/windows/desktop/dd145121) 함수를 호출 합니다.  
+ 응용 프로그램을 장치 컨텍스트에의 늘이기 모드 하프톤으로 설정 된 경우 하프톤 팔레트를 만들어야 합니다. 반환한 논리 하프톤 팔레트를 [CreateHalftonePalette](/windows/desktop/api/wingdi/nf-wingdi-createhalftonepalette) 멤버 함수는 다음 선택 하 고 장치 컨텍스트를 실현 합니다 [CDC::StretchBlt](../../mfc/reference/cdc-class.md#stretchblt) 또는 [ StretchDIBits](/windows/desktop/api/wingdi/nf-wingdi-stretchdibits) 함수를 호출 합니다.  
   
  에 대 한 자세한 내용은 Windows SDK를 참조 하세요 `CreateHalftonePalette` 고 `StretchDIBits`입니다.  
   
@@ -160,7 +160,7 @@ BOOL CreatePalette(LPLOGPALETTE lpLogPalette);
   
 ### <a name="parameters"></a>매개 변수  
  *lpLogPalette*  
- 가리키는 [LOGPALETTE](http://msdn.microsoft.com/library/windows/desktop/dd145040) 논리 색상표의 색에 대 한 정보를 포함 하는 구조입니다.  
+ 가리키는 [LOGPALETTE](/windows/desktop/api/wingdi/ns-wingdi-taglogpalette) 논리 색상표의 색에 대 한 정보를 포함 하는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -227,7 +227,7 @@ UINT GetPaletteEntries(
  검색할 논리 색상표의 항목 수를 지정 합니다.  
   
  *lpPaletteColors*  
- 배열을 가리킵니다 [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) 색상표 항목을 수신 하도록 데이터 구조입니다. 배열에 지정 된 대로 이상의 데이터 구조에 포함 되어야 *nNumEntries*합니다.  
+ 배열을 가리킵니다 [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) 색상표 항목을 수신 하도록 데이터 구조입니다. 배열에 지정 된 대로 이상의 데이터 구조에 포함 되어야 *nNumEntries*합니다.  
   
 ### <a name="return-value"></a>반환 값  
  논리 색상표;에서 검색 된 항목의 수 함수가 실패 하는 경우 0입니다.  
@@ -245,7 +245,7 @@ operator HPALETTE() const;
 ### <a name="remarks"></a>설명  
  이 연산자는 캐스팅 연산자를 HPALETTE 개체의 직접 사용을 지원 합니다.  
   
- 그래픽 개체를 사용 하는 방법에 대 한 자세한 내용은 문서 참조 [그래픽 개체](http://msdn.microsoft.com/library/windows/desktop/dd144962) Windows SDK에 있습니다.  
+ 그래픽 개체를 사용 하는 방법에 대 한 자세한 내용은 문서 참조 [그래픽 개체](/windows/desktop/gdi/graphic-objects) Windows SDK에 있습니다.  
   
 ##  <a name="resizepalette"></a>  CPalette::ResizePalette  
  연결할 논리 색상표의 크기를 변경 합니다 `CPalette` 개체를 지정 된 항목 수가 *nNumEntries*합니다.  
@@ -264,7 +264,7 @@ BOOL ResizePalette(UINT nNumEntries);
 ### <a name="remarks"></a>설명  
  응용 프로그램을 호출 하는 경우 `ResizePalette` 색상표의 크기를 줄이려면 크기가 조정 된 색상표에 남아 있는 항목은 변경 되지 않았습니다. 응용 프로그램을 호출 하는 경우 `ResizePalette` 색상표를 확대 하려면 추가 색상표 항목을 검정으로 (빨강, 녹색 및 파랑 값은 모든 0), 설정 및 모든 추가 항목에 대 한 플래그를 0으로 설정 됩니다.  
   
- Windows API에 대 한 자세한 내용은 `ResizePalette`를 참조 하세요 [ResizePalette](http://msdn.microsoft.com/library/windows/desktop/dd162928) Windows SDK에 있습니다.  
+ Windows API에 대 한 자세한 내용은 `ResizePalette`를 참조 하세요 [ResizePalette](/windows/desktop/api/wingdi/nf-wingdi-resizepalette) Windows SDK에 있습니다.  
   
 ##  <a name="setpaletteentries"></a>  CPalette::SetPaletteEntries  
  논리 색상표에 있는 항목의 범위에서 RGB 색상 값 및 플래그를 설정합니다.  
@@ -284,7 +284,7 @@ UINT SetPaletteEntries(
  설정할 논리 색상표의 항목 수를 지정 합니다.  
   
  *lpPaletteColors*  
- 배열을 가리킵니다 [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) 색상표 항목을 수신 하도록 데이터 구조입니다. 배열에 지정 된 대로 이상의 데이터 구조에 포함 되어야 *nNumEntries*합니다.  
+ 배열을 가리킵니다 [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) 색상표 항목을 수신 하도록 데이터 구조입니다. 배열에 지정 된 대로 이상의 데이터 구조에 포함 되어야 *nNumEntries*합니다.  
   
 ### <a name="return-value"></a>반환 값  
  항목 수가 설정에서 논리 팔레트; 함수가 실패 하는 경우 0입니다.  
@@ -292,7 +292,7 @@ UINT SetPaletteEntries(
 ### <a name="remarks"></a>설명  
  응용 프로그램을 호출할 때 논리 팔레트를 장치 컨텍스트로 선택 됩니다 `SetPaletteEntries`, 응용 프로그램이 호출 될 때까지 변경 내용이 적용 되지 것입니다 [CDC::RealizePalette](../../mfc/reference/cdc-class.md#realizepalette)합니다.  
   
- Windows 구조에 대 한 자세한 내용은 `PALETTEENTRY`를 참조 하세요 [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) Windows SDK에 있습니다.  
+ Windows 구조에 대 한 자세한 내용은 `PALETTEENTRY`를 참조 하세요 [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) Windows SDK에 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [MFC 샘플 DIBLOOK](../../visual-cpp-samples.md)   

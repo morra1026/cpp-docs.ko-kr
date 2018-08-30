@@ -67,19 +67,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d80ca39f4bb12fa28190c499d93ad4152831b4e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e689f29433712f2f8a2adc1730c803ab6c55ba82
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32417589"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202870"
 ---
 # <a name="strncat-strncatl-wcsncat-wcsncatl-mbsncat-mbsncatl"></a>strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
 
 문자열의 문자를 추가합니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md)을 참조하세요.
 
 > [!IMPORTANT]
-> **_mbsncat** 및 **_mbsncat_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbsncat** 하 고 **_mbsncat_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -152,18 +152,18 @@ Null 종료 소스 문자열입니다.
 
 ## <a name="remarks"></a>설명
 
-**strncat** 함수 추가, 최대, 첫 번째 *count* 자의 *strSource* 를 *strDest*합니다. 초기 문자 *strSource* 의 null 종결 문자를 덮어씁니다 *strDest*합니다. Null 문자에 표시 되 면 *strSource* 전에 *count* 문자가 추가 되 **strncat** 에서 모든 문자를 추가 *strSource*, null 문자입니다. 경우 *개수* 의 길이 보다 크면 *strSource*, 길이의 *strSource* 대신 사용 됩니다 *개수*합니다. 모든 경우 결과 문자열은 null 문자로 종료됩니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
+**strncat** 함수를 추가, 최대, 첫 번째 *개수* 자의 *strSource* 에 *strDest*합니다. 첫 문자의 *strSource* 의 종료 null 문자를 덮어씁니다 *strDest*합니다. 에 null 문자가 나타나는 경우 *strSource* 하기 전에 *개수* 문자가 추가 됩니다 **strncat** 에서 모든 문자를 추가 *strSource*를 null 문자까지 합니다. 경우 *개수* 의 길이 보다 크면 *strSource*, 길이의 *strSource* 대신 사용 됩니다 *개수*. 모든 경우 결과 문자열은 null 문자로 종료됩니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
 > [!IMPORTANT]
-> **strncat** 에 공간이 충분 한지 확인 하지 않습니다 *strDest*; 버퍼 오버런의 잠재적 원인이 되므로 합니다. *count* 수가 제한의 크기에 제한 하지 않으며 메서드가 문자 추가 *strDest*합니다. 아래 예제를 참조하십시오. 자세한 내용은 [버퍼 오버런 방지](http://msdn.microsoft.com/library/windows/desktop/ms717795)를 참조하세요.
+> **strncat** 에 공간이 충분 한지 확인 하지 않습니다 *strDest*; 버퍼 오버런의 잠재적 원인이 될 수 있으므로 것입니다. 에 유의 *개수* 수를 제한 문자 추가의 크기에 제한 되지 않습니다 *strDest*합니다. 아래 예제를 참조하십시오. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-**wcsncat** 및 **_mbsncat** 와이드 문자 및 멀티 바이트 문자 버전의 **strncat**합니다. 문자열 인수 및 반환 값이 **wcsncat** 은 와이드 문자열이 고 **_mbsncat** 는 멀티 바이트 문자 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**wcsncat** 하 고 **_mbsncat** 와이드 문자 및 멀티 바이트 문자 버전입니다 **strncat**합니다. 반환 값과 문자열 인수 **wcsncat** 은 와이드 문자열이 고 **_mbsncat** 는 멀티 바이트 문자 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 C++에서 이러한 함수에는 템플릿 오버로드가 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -171,11 +171,11 @@ C++에서 이러한 함수에는 템플릿 오버로드가 있습니다. 자세�
 |**_tcsncat_l**|**_strncat_l**|**_mbsnbcat_l**|**_wcsncat_l**|
 
 > [!NOTE]
-> **_strncat_l** 및 **_wcsncat_l** 로캘에 종속 되지 않습니다 있고 직접 호출할 수 있는 것은 아닙니다. 내부 사용을 위해 제공 되는 **_tcsncat_l**합니다.
+> **_strncat_l** 하 고 **_wcsncat_l** 은 로캘에 종속 되지 되지 않으며 직접 호출할 수 있습니다. 내부 용도로 제공 됩니다 **_tcsncat_l**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**strncat**|\<string.h>|
 |**wcsncat**|\<string.h> 또는 \<wchar.h>|
@@ -231,7 +231,7 @@ After BadAppend :  This is the initial string!Extra text to add to (47 chars)
 After GoodAppend:  This is the initial string!Extra text t (39 chars)
 ```
 
-**BadAppend** 버퍼 오버런이 발생 합니다.
+사실은 **BadAppend** 버퍼 오버런이 발생 합니다.
 
 ## <a name="see-also"></a>참고자료
 

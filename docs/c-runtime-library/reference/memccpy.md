@@ -32,12 +32,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ddb085fee2459abd4cdef8a400f291bea4f6313b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6addc369de344b40a616b2ee1efbe840e98cc6d4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401846"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199542"
 ---
 # <a name="memccpy"></a>_memccpy
 
@@ -70,17 +70,17 @@ void *_memccpy(
 
 ## <a name="return-value"></a>반환 값
 
-경우 문자 *c* 복사 **_memccpy** char에 대 한 포인터를 반환 *dest* 바로 다음에 오는 문자입니다. 경우 *c* 복사 하지 않으면 반환 **NULL**합니다.
+경우 문자 *c* 복사 **_memccpy** char에 대 한 포인터를 반환 합니다 *dest* 문자를 바로 다음에 오는 합니다. 하는 경우 *c* 복사 되지 반환 **NULL**합니다.
 
 ## <a name="remarks"></a>설명
 
-**_memccpy** 함수는 0 개 이상의 문자의 복사 *src* 를 *dest*, 중지 될 때 문자 *c* 복사 된 경우 또는 *count* 중 하나에 먼저, 문자가 복사 되었습니다.
+**_memccpy** 함수는 0 개 이상의 문자를 복사 *src* 에 *dest*를 중지 하는 경우 문자 *c* 복사 되었습니다 때나 *개수* 문자가 복사 된 경우 먼저 도달 합니다.
 
-**보안 정보** 대상 버퍼의 크기가 소스 버퍼의 크기보다 크거나 같아야 합니다. 자세한 내용은 [버퍼 오버런 방지](http://msdn.microsoft.com/library/windows/desktop/ms717795)를 참조하세요.
+**보안 정보** 대상 버퍼의 크기가 소스 버퍼의 크기보다 크거나 같아야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_memccpy**|\<memory.h> 또는 \<string.h>|
 

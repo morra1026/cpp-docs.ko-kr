@@ -22,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 81642132272b40229437c2be8bac32d160885600
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b3f29d5b2c4343ea156d1ccd1dfbf347026a127b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42578096"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202278"
 ---
 # <a name="accelerator-editor"></a>액셀러레이터 키 편집기
 
@@ -35,7 +35,7 @@ ms.locfileid: "42578096"
 
 일반적으로 액셀러레이터 키는 메뉴 또는 도구 모음에서도 사용할 수 있는 프로그램 명령에 대한 바로 가기 키로 사용됩니다. 그러나 연결된 사용자 인터페이스 개체가 없는 명령에 대한 키 조합을 정의하는 데 액셀러레이터 키 테이블을 사용할 수 있습니다.
 
-사용할 수 있습니다 [클래스 뷰](http://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925) 액셀러레이터 키 명령을 코드에 연결 합니다.
+사용할 수 있습니다 [클래스 뷰](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925) 액셀러레이터 키 명령을 코드에 연결 합니다.
 
 사용 하 여는 **가속기** 편집기를 할 수 있습니다.
 

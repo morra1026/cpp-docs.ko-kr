@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 468eb677a0073e25c9ef33182aea0d321cded352
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 4855ca5c461b7437345150f5d199521c48f0b253
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37335622"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196555"
 ---
 # <a name="registering-ole-controls"></a>OLE 컨트롤 등록
 OLE 컨트롤을 다른 OLE 서버 개체와 마찬가지로 다른 OLE 인식 응용 프로그램에서 액세스할 수 있습니다. 컨트롤의 형식 라이브러리 및 클래스를 등록 하 여 수행 됩니다.  
@@ -83,7 +83,7 @@ BOOL AFXAPI AfxOleRegisterControlClass(
   
 - `afxRegFreeThreading` ThreadingModel 레지스트리의 스레딩 모델을 설정 합니다. 무료 =.  
   
-     두 플래그를 조합할 수 있습니다 `afxRegApartmentThreading` 및 `afxRegFreeThreading` ThreadingModel 설정 = Both입니다. 참조 [InprocServer32](http://msdn.microsoft.com/library/windows/desktop/ms682390) 스레딩 모델 등록 대 한 자세한 내용은 Windows SDK에 있습니다.  
+     두 플래그를 조합할 수 있습니다 `afxRegApartmentThreading` 및 `afxRegFreeThreading` ThreadingModel 설정 = Both입니다. 참조 [InprocServer32](/windows/desktop/com/inprocserver32) 스레딩 모델 등록 대 한 자세한 내용은 Windows SDK에 있습니다.  
   
 > [!NOTE]
 >  MFC 4.2 이전 버전의 MFC에는 **int** *nRegFlags* 매개 변수를 부울 매개 변수를 *bInsertable*를 허용 하는 되거나 삽입에서 삽입할 제어를 허용 개체 대화 상자입니다.  
@@ -142,9 +142,9 @@ BOOL AFXAPI AfxOleRegisterControlClass(
  컨트롤 클래스 등록 된; 경우 0이 아닌 값 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 이렇게 하면 컨트롤을 OLE 컨트롤을 인식 하는 컨테이너에서 사용할 수 있습니다. `AfxOleRegisterControlClass` 컨트롤의 이름 및 시스템의 위치를 사용 하 여 레지스트리를 업데이트 하 고 또한 레지스트리의 컨트롤을 지 원하는 스레딩 모델을 설정 합니다. 자세한 내용은 [Technical Note 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "아파트 모델 스레딩에서 OLE 컨트롤" 및 [에 대 한 프로세스 및 스레드](http://msdn.microsoft.com/library/windows/desktop/ms681917) Windows SDK의 합니다.  
+ 이렇게 하면 컨트롤을 OLE 컨트롤을 인식 하는 컨테이너에서 사용할 수 있습니다. `AfxOleRegisterControlClass` 컨트롤의 이름 및 시스템의 위치를 사용 하 여 레지스트리를 업데이트 하 고 또한 레지스트리의 컨트롤을 지 원하는 스레딩 모델을 설정 합니다. 자세한 내용은 [Technical Note 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "아파트 모델 스레딩에서 OLE 컨트롤" 및 [에 대 한 프로세스 및 스레드](/windows/desktop/ProcThread/about-processes-and-threads) Windows SDK의 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCAxCtl#11](../../mfc/reference/codesnippet/cpp/registering-ole-controls_1.cpp)]  
   
  위의 예제에서는 어떻게 `AfxOleRegisterControlClass` 라고 하는 플래그를 사용 하 여 삽입 및 아파트에 대 한 플래그를 여섯 번째 매개 변수를 만드는 데는 ORed 모델:  
@@ -189,7 +189,7 @@ BOOL AFXAPI AfxOleRegisterPropertyPageClass(
  컨트롤 클래스 등록 된; 경우 0이 아닌 값 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 속성 페이지를 OLE 컨트롤을 인식 하는 컨테이너에서 사용할 수 있습니다. `AfxOleRegisterPropertyPageClass` 속성 페이지 이름 및 시스템의 해당 위치를 사용 하 여 레지스트리를 업데이트 하 고 또한 레지스트리의 컨트롤을 지 원하는 스레딩 모델을 설정 합니다. 자세한 내용은 [Technical Note 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "아파트 모델 스레딩에서 OLE 컨트롤" 및 [에 대 한 프로세스 및 스레드](http://msdn.microsoft.com/library/windows/desktop/ms681917) Windows SDK의 합니다.  
+ 이 속성 페이지를 OLE 컨트롤을 인식 하는 컨테이너에서 사용할 수 있습니다. `AfxOleRegisterPropertyPageClass` 속성 페이지 이름 및 시스템의 해당 위치를 사용 하 여 레지스트리를 업데이트 하 고 또한 레지스트리의 컨트롤을 지 원하는 스레딩 모델을 설정 합니다. 자세한 내용은 [Technical Note 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "아파트 모델 스레딩에서 OLE 컨트롤" 및 [에 대 한 프로세스 및 스레드](/windows/desktop/ProcThread/about-processes-and-threads) Windows SDK의 합니다.  
   
 ### <a name="requirements"></a>요구 사항  
   **헤더** afxctl.h  
@@ -224,7 +224,7 @@ BOOL AfxOleRegisterTypeLib(
 ### <a name="remarks"></a>설명  
  이 함수는 시스템에서 레지스트리를 형식 라이브러리 이름 및 해당 위치로 업데이트합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCAutomation#7](../../mfc/codesnippet/cpp/registering-ole-controls_3.cpp)]  
   
  [!code-cpp[NVC_MFCAutomation#8](../../mfc/codesnippet/cpp/registering-ole-controls_4.cpp)]  
@@ -266,7 +266,7 @@ BOOL AFXAPI AfxOleUnregisterTypeLib(REFGUID tlID);
 ### <a name="return-value"></a>반환 값  
  형식 라이브러리를 성공적으로 등록 된; 하지 않았으면 0이 아닌 값 그렇지 않으면 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCAxCtl#13](../../mfc/reference/codesnippet/cpp/registering-ole-controls_5.cpp)]  
 
 ### <a name="requirements"></a>요구 사항  

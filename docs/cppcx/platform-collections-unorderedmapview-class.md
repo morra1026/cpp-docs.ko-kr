@@ -11,12 +11,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a2d8668f0ed5d58ce3b8028fb02d572bb04f8bc
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: c463dbcb68b5a4b875dbb109eedc07a3b4b27c86
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613576"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203030"
 ---
 # <a name="platformcollectionsunorderedmapview-class"></a>Platform::Collections::UnorderedMapView 클래스
 읽기 전용 보기를 키/값 쌍의 컬렉션인 *맵*으로 나타냅니다.  
@@ -71,7 +71,7 @@ ref class UnorderedMapView sealed;
  **네임스페이스:** Platform::Collections  
 
 ## <a name="first"></a>  UnorderedMapView::First 메서드
-첫 번째를 지정 하는 반복기를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) unordered map의 요소입니다.  
+첫 번째를 지정 하는 반복기를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) unordered map의 요소입니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -126,7 +126,7 @@ V Lookup(K key);
 
 
 ## <a name="size"></a>  UnorderedMapView::Size 메서드
-개수를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) UnorderedMapView에 있는 요소입니다.  
+개수를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) UnorderedMapView에 있는 요소입니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -221,7 +221,7 @@ UnorderedMapView(
  UnorderedMapView의 형식 이름입니다.  
   
  `H`  
- 키에 해시 값을 사용할 수 있는 함수 개체입니다. 기본값으로 [std:: hash\<K >](http://msdn.microsoft.com/en-us/54f67435-af9d-4217-a29d-fa4d2491a104) 형식에는 `std::hash` 지원 합니다.  
+ 키에 해시 값을 사용할 수 있는 함수 개체입니다. 기본값으로 [std:: hash\<K >](https://msdn.microsoft.com/54f67435-af9d-4217-a29d-fa4d2491a104) 형식에는 `std::hash` 지원 합니다.  
   
  `P`  
  같은지 확인하기 위해 두 키를 비교할 수 있는 함수 개체를 제공하는 형식입니다. 기본값으로 [std:: equal_to\<K >](../standard-library/equal-to-struct.md)합니다.  

@@ -51,12 +51,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2da945addb975404a5ea6d1805a8f0abf5d5b9eb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 49dd74c679e451a658828fcacb55146e3f8d5d17
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32412907"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200296"
 ---
 # <a name="vscprintfp-vscprintfpl-vscwprintfp-vscwprintfpl"></a>_vscprintf_p, _vscprintf_p_l, _vscwprintf_p, _vscwprintf_p_l
 
@@ -100,20 +100,20 @@ int _vscwprintf_p _l(
 
 ## <a name="return-value"></a>반환 값
 
-**_vscprintf_p** 또는 지정 된 형식에서 사용 하 여 버퍼 코드 인쇄 되거나 파일에 보내진 인수 목록에서 가리키는 문자열이 경우 생성 될 문자 수를 반환 합니다. 반환된 값은 종료 null 문자를 포함하지 않습니다. **_vscwprintf_p** 와이드 문자에 대해 동일한 기능을 수행 합니다.
+**_vscprintf_p** 인수 목록이 문자열을 가리키는 경우 생성 될 문자 수를 인쇄 하거나 파일로 전송 또는 지정 된 형식에서 사용 하 여 버퍼에서 코드를 반환 합니다. 반환된 값은 종료 null 문자를 포함하지 않습니다. **_vscwprintf_p** 와이드 문자에 대 한 동일한 기능을 수행 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수에서 다른 **_vscprintf** 및 **_vscwprintf** 만 있다는 점에서 인수가 사용 되는 순서를 지정 하는 기능을 지원 합니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
+이러한 함수에서 다른 **_vscprintf** 하 고 **_vscwprintf** 인수 사용 되는 순서를 지정 하는 기능 지원에 합니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
 
-있는 이러한 함수 버전은 **_l** 은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 점을 제외 하 고 접미사는 동일 합니다.
+포함 된 이러한 함수의 버전을 **_l** 접미사는 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
 
-경우 *형식* 가 null 포인터에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 함수 실행을 계속 허용 된,-1을 반환 하 고 설정 **errno** 를 **EINVAL**합니다.
+하는 경우 *형식* 가 null 포인터인 경우에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 함수는 계속 실행 하도록 허용,-1을 반환 하 고 설정 **errno** 하 **EINVAL**합니다.
 
 > [!IMPORTANT]
-> 경우 *형식* 이 사용자 정의 문자열인 경우 null 종료 되 고 올바른 수와 형식의 매개 변수입니다. 자세한 내용은 [버퍼 오버런 방지](http://msdn.microsoft.com/library/windows/desktop/ms717795)를 참조하세요.
+> 게 *형식* 는 사용자 정의 문자열 종료 null 이며 올바른 수와 형식의 매개 변수가 있습니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -122,7 +122,7 @@ int _vscwprintf_p _l(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_vscprintf_p**, **_vscprintf_p_l**|\<stdio.h>|
 |**_vscwprintf_p**, **_vscwprintf_p_l**|\<stdio.h> 또는 \<wchar.h>|

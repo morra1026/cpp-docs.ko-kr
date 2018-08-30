@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1077a9567509d98b68a864d7478ab84b94d11054
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 46c12c29fcee310e8bd1d484743b754a830541d7
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42541336"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196114"
 ---
 # <a name="colecurrency-class"></a>COleCurrency 클래스
 OLE 자동화의 `CURRENCY` 데이터 형식을 캡슐화합니다.  
@@ -133,7 +133,7 @@ COleCurrency(
   
 - COleCurrency() 구문을 `COleCurrency` 0 (영)으로 초기화 하는 개체입니다.  
   
-- COleCurrency (`cySrc`)를 생성 한 `COleCurrency` 에서 개체를 [통화](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) 값입니다.  
+- COleCurrency (`cySrc`)를 생성 한 `COleCurrency` 에서 개체를 [통화](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) 값입니다.  
   
 - COleCurrency (`curSrc`)를 생성 한 `COleCurrency` 기존 개체 `COleCurrency` 개체입니다. 새 개체는 소스 개체와 동일한 상태입니다.  
   
@@ -141,9 +141,9 @@ COleCurrency(
   
 - `COleCurrency(`nUnits`, `nFractionalUnits`) Constructs a `COleCurrency' 개체에서 지정된 된 숫자 구성 요소입니다. 소수 부분의 절대값이 10,000 보다 크면 단위에 적절 한 조정이 이루어집니다. 참고 단위 및 소수 부분이 서명 된 long 값으로 지정 됩니다.  
   
- 자세한 내용은 참조는 [통화](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) 및 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.  
+ 자세한 내용은 참조는 [통화](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) 및 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 0이 매개 변수 및 매개 변수 2 생성자의 효과 보여 줍니다.  
   
  [!code-cpp[NVC_MFCOleContainer#10](../../mfc/codesnippet/cpp/colecurrency-class_1.cpp)]  
@@ -170,7 +170,7 @@ CString Format(DWORD  dwFlags = 0, LCID  lcid = LANG_USER_DEFAULT) const;
 ### <a name="remarks"></a>설명  
  로컬 언어 사양 (로캘 Id)를 사용 하 여 값 형식을 지정 합니다. 통화 기호는 반환 된 값에 포함 되지 않습니다. 하는 경우이 상태의 `COleCurrency` 개체가 null 이면 반환 값은 빈 문자열입니다. 상태가 올바르지 않은 경우 반환 문자열 IDS_INVALID_CURRENCY 문자열 리소스에 의해 지정 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCOleContainer#11](../../mfc/codesnippet/cpp/colecurrency-class_2.cpp)]  
   
 ##  <a name="getstatus"></a>  COleCurrency::GetStatus  
@@ -226,18 +226,18 @@ enum CurrencyStatus {
   
  - [연산자 * = 및 = /](#operator_star_div_eq)  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCOleContainer#12](../../mfc/codesnippet/cpp/colecurrency-class_3.cpp)]  
   
 ##  <a name="m_cur"></a>  COleCurrency::m_cur  
- 내부 [통화](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) 이 대 한 구조 `COleCurrency` 개체입니다.  
+ 내부 [통화](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) 이 대 한 구조 `COleCurrency` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
   
 > [!CAUTION]
 >  값을 변경 합니다 `CURRENCY` 이 함수에서 반환 된 포인터에 의해 액세스 되는 구조는이 값을 변경 `COleCurrency` 개체입니다. 이 상태는 변경 되지 않습니다 `COleCurrency` 개체입니다.  
   
- 자세한 내용은 참조는 [통화](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) Windows SDK에는 항목입니다.  
+ 자세한 내용은 참조는 [통화](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) Windows SDK에는 항목입니다.  
   
 ##  <a name="m_status"></a>  COleCurrency::m_status  
  이 데이터 멤버의 형식을 열거 형식인 `CurrencyStatus`, 내에서 정의 되는 `COleCurrency` 클래스.  
@@ -304,9 +304,9 @@ const COleCurrency& operator=(const COleCurrency& curSrc);
   
 - **연산자 = (** *varSrc* **)** 하는 경우 변환 된 `VARIANT` 값 (또는 [COleVariant](../../mfc/reference/colevariant-class.md) 개체) 통화로 ( `VT_CY`)는 성공 하면 변환 된 값이 복사 됩니다 `COleCurrency` 개체 및 해당 상태에 잘못 설정 됩니다. 변환이 성공적 이면 값은 `COleCurrency` 개체 0과를 잘못 됨 상태가로 설정 됩니다.  
   
- 자세한 내용은 참조는 [통화](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) 및 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.  
+ 자세한 내용은 참조는 [통화](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) 및 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCOleContainer#15](../../mfc/codesnippet/cpp/colecurrency-class_4.cpp)]  
   
 ##  <a name="operator_plus_minus"></a>  COleCurrency::operator +,-  
@@ -327,7 +327,7 @@ COleCurrency operator-() const;
   
  유효 하 고, 잘못 된 경우 null 상태 값에 대 한 자세한 내용은 참조는 [m_status](#m_status) 멤버 변수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCOleContainer#16](../../mfc/codesnippet/cpp/colecurrency-class_5.cpp)]  
   
 ##  <a name="operator_plus_minus_eq"></a>  COleCurrency::operator + =, =  
@@ -347,7 +347,7 @@ const COleCurrency& operator-=(const COleCurrency& cur);
   
  유효 하 고, 잘못 된 경우 null 상태 값에 대 한 자세한 내용은 참조는 [m_status](#m_status) 멤버 변수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCOleContainer#17](../../mfc/codesnippet/cpp/colecurrency-class_6.cpp)]  
   
 ##  <a name="operator_star"></a>  COleCurrency::operator \* 및 /  
@@ -367,7 +367,7 @@ COleCurrency operator/(long nOperand) const;
   
  유효 하 고, 잘못 된 경우 null 상태 값에 대 한 자세한 내용은 참조는 [m_status](#m_status) 멤버 변수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCOleContainer#18](../../mfc/codesnippet/cpp/colecurrency-class_7.cpp)]  
   
 ##  <a name="operator_star_div_eq"></a>  COleCurrency::operator \*=, / =  
@@ -387,7 +387,7 @@ const COleCurrency& operator/=(long nOperand);
   
  유효 하 고, 잘못 된 경우 null 상태 값에 대 한 자세한 내용은 참조는 [m_status](#m_status) 멤버 변수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCOleContainer#19](../../mfc/codesnippet/cpp/colecurrency-class_8.cpp)]  
   
 ##  <a name="operator_stream"></a>  COleCurrency::operator &lt; &lt;, &gt;&gt;  
@@ -458,7 +458,7 @@ throw(COleException*);
   
  메모리 할당 오류로 인해 문자열 변환이 실패 한 경우이 함수가 throw 된 [CMemoryException](../../mfc/reference/cmemoryexception-class.md)합니다. 이 함수의 다른 오류 상태에 있는 throw 된 [COleException](../../mfc/reference/coleexception-class.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCOleContainer#13](../../mfc/codesnippet/cpp/colecurrency-class_9.cpp)]  
   
 ##  <a name="colecurrency_relational_operators"></a>  COleCurrency 관계형 연산자  
@@ -478,7 +478,7 @@ BOOL operator>=(const COleCurrency& cur) const;
 > [!NOTE]
 >  정렬 작업의 반환 값 ( **<** 를 **\< =** 하십시오 **>**, **>=**) null 이거나 잘못 된 피연산자 중 하나가 상태가 정의 되지 않습니다. 같음 연산자 ( `==`, `!=`)는 피연산자의 상태는 것이 좋습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCOleContainer#20](../../mfc/codesnippet/cpp/colecurrency-class_10.cpp)]  
   
 ##  <a name="setcurrency"></a>  COleCurrency::SetCurrency  
@@ -499,7 +499,7 @@ void SetCurrency(
   
  참고 단위 및 소수 부분이 서명 된 long 값으로 지정 됩니다. 다음 예제에서는 네 번째 매개 변수를 부호가 다른 경우 어떻게 되는지 보여 줍니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCOleContainer#14](../../mfc/codesnippet/cpp/colecurrency-class_11.cpp)]  
   
 ##  <a name="setstatus"></a>  COleCurrency::SetStatus  

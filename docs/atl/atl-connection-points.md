@@ -16,19 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 179f4329d55261d71d3d122e6a2601ce7e805c0f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ec0e902f2b01e33ac460c6210d51c5e0637c3282
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32354670"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202922"
 ---
 # <a name="atl-connection-points"></a>ATL 연결 지점
 연결 가능 개체는 송신 인터페이스를 지원합니다. 송신 인터페이스에서는 개체가 클라이언트와 통신할 수 있습니다. 연결 가능 개체는 각 송신 인터페이스에 대해 연결 지점을 노출합니다. 각 송신 인터페이스는 싱크라는 개체에서 클라이언트에 의해 구현됩니다.  
   
  ![연결 지점](../atl/media/vc2zw31.gif "vc2zw31")  
   
- 각 연결 지점은 지원는 [IConnectionPoint](http://msdn.microsoft.com/library/windows/desktop/ms694318) 인터페이스입니다. 연결 가능 개체를 통해 클라이언트에 해당 연결 지점을 노출는 [IConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms683857) 인터페이스입니다.  
+ 각 연결 지점은 지원 합니다 [IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint) 인터페이스입니다. 연결 가능 개체를 통해 클라이언트에 해당 연결 지점을 노출 합니다 [IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer) 인터페이스입니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [ATL 연결 지점 클래스](../atl/atl-connection-point-classes.md)  

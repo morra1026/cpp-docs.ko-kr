@@ -47,12 +47,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 295fb6944c3c18c2e7794ca13ad5ab93b788a776
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 6d87a3b0e4ed9c5c558c90a2935c538b4fb826be
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883481"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201682"
 ---
 # <a name="message-map-macros-atl"></a>메시지 맵 매크로 (ATL)
 이러한 매크로 메시지 맵 및 항목을 정의 합니다.  
@@ -119,7 +119,7 @@ ALT_MSG_MAP(msgMapID)
   
  메시지 맵을 사용 하 여 ATL에 대 한 자세한 내용은 참조 하세요. [메시지 맵](../../atl/message-maps-atl.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 하나의 대체 메시지 맵을 각각 하나의 처리기 함수를 포함 하 고 기본 메시지 맵을 보여 줍니다.  
   
  [!code-cpp[NVC_ATL_Windowing#98](../../atl/codesnippet/cpp/message-map-macros-atl_1.h)]  
@@ -186,7 +186,7 @@ BEGIN_MSG_MAP(theClass)
 |[REFLECTED_NOTIFY_RANGE_HANDLER](#reflected_notify_range_handler)|컨트롤 식별자의 연속 범위를 기반으로 처리기 함수에 반영된 WM_NOTIFY 메시지를 매핑합니다.|  
 |[REFLECTED_NOTIFY_RANGE_CODE_HANDLER](#reflected_notify_range_code_handler)|리플 렉 트 된 WM_NOTIFY 메시지를 알림 코드 및 인접 한 범위의 컨트롤 식별자에 따라 처리기 함수에 매핑됩니다.|  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#102](../../atl/codesnippet/cpp/message-map-macros-atl_3.h)]  
   
  경우는 `CMyExtWindow` 개체에서 WM_PAINT 메시지를 수신, 메시지 전송 됩니다 `CMyExtWindow::OnPaint` 실제 처리에 대 한 합니다. 하는 경우 `OnPaint` 나타냅니다 메시지에 추가 처리를 메시지는 다음의 기본 메시지 맵에 리디렉션되어야 `CMyBaseWindow`합니다.  
@@ -275,7 +275,7 @@ CHAIN_MSG_MAP(theChainClass)
   
  메시지 맵을 사용 하 여 ATL에 대 한 자세한 내용은 참조 하세요. [메시지 맵](../../atl/message-maps-atl.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#107](../../atl/codesnippet/cpp/message-map-macros-atl_4.h)]  
   
  이 예제에서는 다음을 설명 합니다.  
@@ -331,7 +331,7 @@ CHAIN_MSG_MAP_MEMBER(theChainMember)
   
  메시지 맵을 사용 하 여 ATL에 대 한 자세한 내용은 참조 하세요. [메시지 맵](../../atl/message-maps-atl.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#108](../../atl/codesnippet/cpp/message-map-macros-atl_5.h)]  
   
  이 예제에서는 다음을 설명 합니다.  
@@ -346,7 +346,7 @@ CHAIN_MSG_MAP_MEMBER(theChainMember)
  **헤더:** atlwin.h   
   
 ##  <a name="command_code_handler"></a>  COMMAND_CODE_HANDLER  
- 비슷합니다 [COMMAND_HANDLER](#command_handler)에 속하지만 매핑되는 [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) 알림 코드 에서만 메시지 기반 합니다.  
+ 비슷합니다 [COMMAND_HANDLER](#command_handler)에 속하지만 매핑되는 [WM_COMMAND](/windows/desktop/menurc/wm-command) 알림 코드 에서만 메시지 기반 합니다.  
   
 ```
 COMMAND_CODE_HANDLER(code, func)
@@ -380,7 +380,7 @@ COMMAND_HANDLER(id, code, func)
  [in] 메시지-처리기 함수의 이름입니다.  
   
 ### <a name="remarks"></a>설명  
- COMMAND_HANDLER 매핑하는 [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) 알림 코드 및 컨트롤 식별자를 기반으로 지정 된 처리기 함수에 메시지입니다. 예를 들어:  
+ COMMAND_HANDLER 매핑하는 [WM_COMMAND](/windows/desktop/menurc/wm-command) 알림 코드 및 컨트롤 식별자를 기반으로 지정 된 처리기 함수에 메시지입니다. 예를 들어:  
   
  [!code-cpp[NVC_ATL_Windowing#119](../../atl/codesnippet/cpp/message-map-macros-atl_6.h)]  
   
@@ -401,7 +401,7 @@ COMMAND_HANDLER(id, code, func)
  **헤더:** atlwin.h   
   
 ##  <a name="command_id_handler"></a>  COMMAND_ID_HANDLER  
- 비슷합니다 [COMMAND_HANDLER](#command_handler)에 속하지만 매핑되는 [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) 메뉴 항목, 컨트롤 또는 액셀러레이터 키의 식별자에만 메시지 기반 합니다.  
+ 비슷합니다 [COMMAND_HANDLER](#command_handler)에 속하지만 매핑되는 [WM_COMMAND](/windows/desktop/menurc/wm-command) 메뉴 항목, 컨트롤 또는 액셀러레이터 키의 식별자에만 메시지 기반 합니다.  
   
 ```
 COMMAND_ID_HANDLER(id, func)
@@ -418,7 +418,7 @@ COMMAND_ID_HANDLER(id, func)
  **헤더:** atlwin.h   
   
 ##  <a name="command_range_code_handler"></a>  COMMAND_RANGE_CODE_HANDLER  
- 비슷합니다 [COMMAND_RANGE_HANDLER](#command_range_handler)에 속하지만 매핑되 [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) 단일 처리기 함수에 다양 한 컨트롤에서에서 특정 알림 코드를 사용 하 여 메시지입니다.  
+ 비슷합니다 [COMMAND_RANGE_HANDLER](#command_range_handler)에 속하지만 매핑되 [WM_COMMAND](/windows/desktop/menurc/wm-command) 단일 처리기 함수에 다양 한 컨트롤에서에서 특정 알림 코드를 사용 하 여 메시지입니다.  
   
 ```
 COMMAND_RANGE_CODE_HANDLER(idFirst, idLast, code, func)
@@ -444,7 +444,7 @@ COMMAND_RANGE_CODE_HANDLER(idFirst, idLast, code, func)
  **헤더:** atlwin.h   
   
 ##  <a name="command_range_handler"></a>  COMMAND_RANGE_HANDLER  
- 비슷합니다 [COMMAND_HANDLER](#command_handler)에 속하지만 매핑되 [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) 단일 처리기 함수에 다양 한 컨트롤에서에서 메시지입니다.  
+ 비슷합니다 [COMMAND_HANDLER](#command_handler)에 속하지만 매핑되 [WM_COMMAND](/windows/desktop/menurc/wm-command) 단일 처리기 함수에 다양 한 컨트롤에서에서 메시지입니다.  
   
 ```
 COMMAND_RANGE_HANDLER( idFirst, idLast, func)
@@ -502,7 +502,7 @@ END_MSG_MAP()
   
  메시지 맵을 사용 하 여 ATL에 대 한 자세한 내용은 참조 하세요. [메시지 맵](../../atl/message-maps-atl.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 하나의 대체 메시지 맵을 각각 하나의 처리기 함수를 포함 하 고 기본 메시지 맵을 보여 줍니다.  
   
  [!code-cpp[NVC_ATL_Windowing#98](../../atl/codesnippet/cpp/message-map-macros-atl_1.h)]  
@@ -553,11 +553,11 @@ MESSAGE_HANDLER( msg, func )
 > [!NOTE]
 >  항상 메시지 맵을 사용 하 여 시작 [BEGIN_MSG_MAP](#begin_msg_map)합니다. 후속 대체 메시지 맵을 사용 하 여 선언할 수 있습니다 [ALT_MSG_MAP](#alt_msg_map)합니다. 합니다 [END_MSG_MAP](#end_msg_map) 매크로 메시지 map의 끝을 표시 합니다. 모든 메시지 맵이 BEGIN_MSG_MAP 및 END_MSG_MAP 인스턴스가 하나만 있어야 합니다.  
   
- MESSAGE_HANDLER, 외에도 사용할 수 있습니다 [COMMAND_HANDLER](#command_handler) 하 고 [NOTIFY_HANDLER](#notify_handler) 매핑할 [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) 고 [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583) 메시지 각각.  
+ MESSAGE_HANDLER, 외에도 사용할 수 있습니다 [COMMAND_HANDLER](#command_handler) 하 고 [NOTIFY_HANDLER](#notify_handler) 매핑할 [WM_COMMAND](/windows/desktop/menurc/wm-command) 고 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) 메시지 각각.  
   
  메시지 맵을 사용 하 여 ATL에 대 한 자세한 내용은 참조 하세요. [메시지 맵](../../atl/message-maps-atl.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#129](../../atl/codesnippet/cpp/message-map-macros-atl_8.h)]  
   
 ### <a name="requirements"></a>요구 사항  
@@ -584,7 +584,7 @@ MESSAGE_RANGE_HANDLER( msgFirst, msgLast, func )
  **헤더:** atlwin.h   
   
 ##  <a name="notify_code_handler"></a>  NOTIFY_CODE_HANDLER  
- 비슷합니다 [NOTIFY_HANDLER](#notify_handler)에 속하지만 매핑되는 [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583) 알림 코드 에서만 메시지 기반 합니다.  
+ 비슷합니다 [NOTIFY_HANDLER](#notify_handler)에 속하지만 매핑되는 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) 알림 코드 에서만 메시지 기반 합니다.  
   
 ```
 NOTIFY_CODE_HANDLER(cd, func)
@@ -618,7 +618,7 @@ NOTIFY_HANDLER( id, cd, func )
  [in] 메시지-처리기 함수의 이름입니다.  
   
 ### <a name="remarks"></a>설명  
- NOTIFY_HANDLER 매핑하는 [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583) 알림 코드 및 컨트롤 식별자를 기반으로 지정 된 처리기 함수에 메시지입니다.  
+ NOTIFY_HANDLER 매핑하는 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) 알림 코드 및 컨트롤 식별자를 기반으로 지정 된 처리기 함수에 메시지입니다.  
   
  NOTIFY_HANDLER 매크로에 지정 된 모든 함수는 다음과 같이 정의 되어야 합니다.  
   
@@ -633,14 +633,14 @@ NOTIFY_HANDLER( id, cd, func )
   
  메시지 맵을 사용 하 여 ATL에 대 한 자세한 내용은 참조 하세요. [메시지 맵](../../atl/message-maps-atl.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#130](../../atl/codesnippet/cpp/message-map-macros-atl_9.h)]  
   
 ### <a name="requirements"></a>요구 사항  
  **헤더:** atlwin.h   
   
 ##  <a name="notify_id_handler"></a>  NOTIFY_ID_HANDLER  
- 비슷합니다 [NOTIFY_HANDLER](#notify_handler), 속하지만 매핑되는 [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583) 메시지 식별자를 기준만 제어 합니다.  
+ 비슷합니다 [NOTIFY_HANDLER](#notify_handler), 속하지만 매핑되는 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) 메시지 식별자를 기준만 제어 합니다.  
   
 ```
 NOTIFY_ID_HANDLER( id, func )
@@ -657,7 +657,7 @@ NOTIFY_ID_HANDLER( id, func )
  **헤더:** atlwin.h   
   
 ##  <a name="notify_range_code_handler"></a>  NOTIFY_RANGE_CODE_HANDLER  
- 비슷합니다 [NOTIFY_RANGE_HANDLER](#notify_range_handler)에 속하지만 매핑되 [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583) 단일 처리기 함수에 다양 한 컨트롤에서에서 특정 알림 코드를 사용 하 여 메시지입니다.  
+ 비슷합니다 [NOTIFY_RANGE_HANDLER](#notify_range_handler)에 속하지만 매핑되 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) 단일 처리기 함수에 다양 한 컨트롤에서에서 특정 알림 코드를 사용 하 여 메시지입니다.  
   
 ```
 NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
@@ -683,7 +683,7 @@ NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
  **헤더:** atlwin.h   
   
 ##  <a name="notify_range_handler"></a>  NOTIFY_RANGE_HANDLER  
- 비슷합니다 [NOTIFY_HANDLER](#notify_handler)에 속하지만 매핑되 [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583) 단일 처리기 함수에 다양 한 컨트롤에서에서 메시지입니다.  
+ 비슷합니다 [NOTIFY_HANDLER](#notify_handler)에 속하지만 매핑되 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) 단일 처리기 함수에 다양 한 컨트롤에서에서 메시지입니다.  
   
 ```
 NOTIFY_RANGE_HANDLER( idFirst, idLast, func )

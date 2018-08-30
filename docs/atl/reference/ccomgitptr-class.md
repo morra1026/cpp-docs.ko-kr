@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90da5e8394ea4f630a817b68edf60d4242b40be9
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: a45866226f06b20d0805b7c4e294ff6d2d65506e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884176"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197922"
 ---
 # <a name="ccomgitptr-class"></a>CComGITPtr 클래스
 이 클래스는 인터페이스 포인터를 처리 하기 위한 메서드 및 전역 인터페이스 테이블 (GIT)를 제공합니다.  
@@ -254,6 +254,6 @@ HRESULT Revoke() throw();
   
 ## <a name="see-also"></a>참고 항목  
  [자유 스레드된 마샬러](../../atl/atl-and-the-free-threaded-marshaler.md)   
- [아파트 간 인터페이스 액세스](http://msdn.microsoft.com/library/windows/desktop/ms682353)   
- [전역 인터페이스 테이블을 사용 하는 경우](http://msdn.microsoft.com/library/windows/desktop/ms693729)   
+ [아파트 간 인터페이스 액세스](/windows/desktop/com/accessing-interfaces-across-apartments)   
+ [전역 인터페이스 테이블을 사용 하는 경우](/windows/desktop/com/when-to-use-the-global-interface-table)   
  [클래스 개요](../../atl/atl-class-overview.md)

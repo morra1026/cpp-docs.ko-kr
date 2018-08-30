@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 236c7df60fc023710139c8975486428fd7cd7cfd
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 2dd920f3dd8d08d6ceb766b9c10969137b8bf03c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027127"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199266"
 ---
 # <a name="walkthrough-putting-controls-on-toolbars"></a>연습: 도구 모음에 컨트롤 배치
 이 항목에서는 Windows 컨트롤을 포함하는 도구 모음 단추를 도구 모음에 추가하는 방법을 설명합니다. MFC 도구 모음 단추 이어야 합니다는 [CMFCToolBarButton 클래스](../mfc/reference/cmfctoolbarbutton-class.md)-예를 들어 클래스를 파생 [CMFCToolBarComboBoxButton 클래스](../mfc/reference/cmfctoolbarcomboboxbutton-class.md)를 [CMFCToolBarEditBoxButton 클래스](../mfc/reference/cmfctoolbareditboxbutton-class.md), [CMFCDropDownToolbarButton 클래스](../mfc/reference/cmfcdropdowntoolbarbutton-class.md), 또는 [CMFCToolBarMenuButton 클래스](../mfc/reference/cmfctoolbarmenubutton-class.md)합니다.  
@@ -65,7 +65,7 @@ ms.locfileid: "39027127"
   
 2.  새 클래스를 만듭니다 `CFindComboBox`에서 파생 된 [CComboBox 클래스](../mfc/reference/ccombobox-class.md)합니다.  
   
-3.  `CFindComboBox` 클래스에서 `PreTranslateMessage` 가상 메서드를 재정의합니다. 이 메서드를 처리 하는 데 콤보 상자를 통해 합니다 [WM_KEYDOWN](http://msdn.microsoft.com/library/windows/desktop/ms646280) 메시지입니다. 사용자가 Esc 키를 누르면(`VK_ESCAPE`) 주 프레임 창으로 포커스를 반환합니다. 사용자가 Enter 키 (`VK_ENTER`)를 포함 하는 WM_COMMAND 메시지를 주 프레임 창에 게시 된 `ID_EDIT_FIND_COMBO` 명령 id입니다.  
+3.  `CFindComboBox` 클래스에서 `PreTranslateMessage` 가상 메서드를 재정의합니다. 이 메서드를 처리 하는 데 콤보 상자를 통해 합니다 [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) 메시지입니다. 사용자가 Esc 키를 누르면(`VK_ESCAPE`) 주 프레임 창으로 포커스를 반환합니다. 사용자가 Enter 키 (`VK_ENTER`)를 포함 하는 WM_COMMAND 메시지를 주 프레임 창에 게시 된 `ID_EDIT_FIND_COMBO` 명령 id입니다.  
   
 4.  클래스를 만듭니다는 **찾을** 에서 파생 되는 콤보 상자 단추 [CMFCToolBarComboBoxButton 클래스](../mfc/reference/cmfctoolbarcomboboxbutton-class.md)합니다. 이 예제에서는 `CFindComboButton`이라는 이름으로 지정됩니다.  
   
@@ -73,7 +73,7 @@ ms.locfileid: "39027127"
   
     1.  `ID_EDIT_FIND_COMBO`를 명령 ID로 전달합니다.  
   
-    2.  사용 하 여 [CCommandManager::GetCmdImage](http://msdn.microsoft.com/4094d08e-de74-4398-a483-76d27a742dca) 사용 하 여 `ID_EDIT_FIND` 이미지 인덱스를 가져오려고 합니다.  
+    2.  사용 하 여 [CCommandManager::GetCmdImage](https://msdn.microsoft.com/4094d08e-de74-4398-a483-76d27a742dca) 사용 하 여 `ID_EDIT_FIND` 이미지 인덱스를 가져오려고 합니다.  
   
     3.  사용 가능한 콤보 상자 스타일의 목록은 참조 하세요 [콤보 상자 스타일](../mfc/reference/styles-used-by-mfc.md#combo-box-styles)합니다.  
   

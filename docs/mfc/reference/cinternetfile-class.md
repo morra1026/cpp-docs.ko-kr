@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e16aa9377676e415f416dc4f7dae9cb9f2a40dab
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: ed85edeaf5400805d4628e10acab4cdf4af52082
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336568"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202732"
 ---
 # <a name="cinternetfile-class"></a>CInternetFile 클래스
 인터넷 프로토콜을 사용 하는 원격 시스템에서 파일에 액세스할 수 있습니다.  
@@ -258,7 +258,7 @@ virtual LPTSTR ReadString(
  에 대 한 참조를 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 읽기 줄을 받는 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 검색 하는 일반 데이터를 포함 하는 버퍼에 대 한 포인터를 [CInternetFile](../../mfc/reference/cinternetfile-class.md) 개체입니다. 이 메서드에 전달 된 버퍼의 데이터 형식에 관계 없이 모든 조작 데이터 (예: 유니코드로 변환) 수행 하지 않습니다, 반환된 된 데이터 구조에 매핑해야 하므로 예상 처럼 합니다 **void\***  형식을 반환 합니다.  
+ 검색 하는 일반 데이터를 포함 하는 버퍼에 대 한 포인터를 [CInternetFile](../../mfc/reference/cinternetfile-class.md) 개체입니다. 이 메서드에 전달 된 버퍼의 데이터 형식에 관계 없이 모든 조작 데이터 (예: 유니코드로 변환) 수행 하지 않습니다, 반환된 된 데이터 구조에 매핑해야 하므로 예상 처럼 합니다 **void** <strong>\*</strong> 형식을 반환 합니다.  
   
  모든 데이터를 읽지 않고 파일의 끝에 도달 했습니다 하는 경우 NULL 아니면, 모든 데이터를 읽지 않고 부울, FALSE 이면 파일의 끝에 도달 했습니다.  
   
@@ -302,7 +302,7 @@ virtual ULONGLONG Seek(
 > [!NOTE]
 >  사용 하 여 `Seek` 암시적 호출에 발생할 수 있습니다 [플러시](#flush)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   기본 클래스 구현에 대 한 예제를 참조 하세요 ( [CFile::Seek](../../mfc/reference/cfile-class.md#seek)).  
   
 ##  <a name="setreadbuffersize"></a>  CInternetFile::SetReadBufferSize  
@@ -317,7 +317,7 @@ BOOL SetReadBufferSize(UINT nReadSize);
  원하는 버퍼 크기(바이트)입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.  
+ 성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.  
   
 ### <a name="remarks"></a>설명  
  기본 WinInet Api 버퍼링을 수행 하지 않습니다 하므로 응용 프로그램이 읽을 데이터 양에 관계 없이 효율적으로 데이터를 읽을 수 있도록 하는 버퍼 크기를 선택 합니다. 호출할 때마다 하는 경우 [읽기](#read) 일반적으로 큰 aount 포함 됩니다 (예: 4 개 이상의 킬로바이트) 데이터 필요 하면 버퍼입니다. 그러나 호출 하는 경우 `Read` 적은 양의 데이터를 가져오려면 사용 하는 경우 또는 [ReadString](#readstring) 읽기 버퍼를 응용 프로그램 성능이 향상 됩니다. 다음 번에 개별 줄을 읽을 수 있습니다.  
@@ -338,7 +338,7 @@ BOOL SetWriteBufferSize(UINT nWriteSize);
  버퍼의 크기(바이트)입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.  
+ 성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.  
   
 ### <a name="remarks"></a>설명  
  WinInet Api 버퍼링을 수행 하지 않는 기본 쓸 데이터 양에 관계 없이 효율적으로 데이터를 작성 하도록 응용 프로그램을 허용 하는 버퍼 크기를 따라서 선택 합니다. 호출할 때마다 경우 [작성](#write) 일반적으로 많이 포함 됩니다 (예를 들어, 한 번에 4 개 이상의 킬로바이트) 데이터 필요 하면 버퍼입니다. 그러나 호출 하는 경우 [쓰기](#write) 쓰기 버퍼를 적은 양의 데이터를 작성 하려면 응용 프로그램의 성능을 향상 시킵니다.  

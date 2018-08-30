@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::inner_product [C++]
 - std::iota [C++]
 - std::partial_sum [C++]
-ms.openlocfilehash: 47ac885152b0fdfbb9ce1ab77f6597db00c5bc07
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 1060c5c02b0e599de5ca5a39970825fd5622ebf5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960254"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199190"
 ---
 # <a name="ltnumericgt-functions"></a>&lt;numeric&gt; 함수
 
@@ -62,9 +62,9 @@ Type accumulate(
 
 ### <a name="remarks"></a>설명
 
-초기값 것 잘 정의 된 결과 비어 있는 경우 범위, 이때 *val* 반환 됩니다. 이진 연산은 결합 법칙이나 교환 법칙이 성립하지 않아도 됩니다. 결과 초기 값으로 초기화 됩니다 *val* 차례로 *결과*  =  `binary_op` ( *결과*하십시오 **\*** `Iter`) 범위를 통해 반복적으로 계산 되는 `Iter` 은 범위의 연속 요소를 가리키는 반복기입니다. 범위는 유효해야 하며 복잡성은 범위의 크기에 비례해야 합니다. 반복 중에 닫기가 가능하도록 하려면 이진 연산자의 반환 형식을 **Type**으로 변환할 수 있어야 합니다.
+초기값 것 잘 정의 된 결과 비어 있는 경우 범위, 이때 *val* 반환 됩니다. 이진 연산은 결합 법칙이나 교환 법칙이 성립하지 않아도 됩니다. 결과 초기 값으로 초기화 됩니다 *val* 차례로 *결과*  =  `binary_op` ( *결과*하십시오 <strong>\*</strong> `Iter`) 범위를 통해 반복적으로 계산 되는 `Iter` 은 범위의 연속 요소를 가리키는 반복기입니다. 범위는 유효해야 하며 복잡성은 범위의 크기에 비례해야 합니다. 반복 중에 닫기가 가능하도록 하려면 이진 연산자의 반환 형식을 **Type**으로 변환할 수 있어야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // numeric_accum.cpp
@@ -206,7 +206,7 @@ OutputIterator adjacent_difference(
 
 이항 연산 `binary_op`는 적용 연산 순서가 완전히 적용되므로 결합성이 있거나 가환적일 필요가 없습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // numeric_adj_diff.cpp
@@ -321,7 +321,7 @@ Type inner_product(
 
 초기 값을 하면 것 잘 정의 된 결과 비어 있는 경우 범위, 이때 *val* 반환 됩니다. 이진 연산은 결합 법칙이나 교환 법칙이 성립하지 않아도 됩니다. 범위는 유효해야 하며 복잡성은 범위의 크기에 비례해야 합니다. 반복 중에 닫기가 가능하도록 하려면 이진 연산자의 반환 형식을 **Type**으로 변환할 수 있어야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // numeric_inner_prod.cpp
@@ -430,7 +430,7 @@ void iota(ForwardIterator first, ForwardIterator last, Type value);
 
 ### <a name="remarks"></a>설명
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서는 [random_shuffle](../standard-library/algorithm-functions.md#random_shuffle) 함수를 사용할 수 있도록 정수 [list](../standard-library/list.md)를 채운 다음 `list`로 [vector](../standard-library/vector.md)를 채우는 `iota` 함수의 몇 가지 사용 방법을 보여 줍니다.
 
@@ -515,7 +515,7 @@ OutputIterator partial_sum(
 
 이항 연산 *binary_op* 결합형 또는 가환 적 될 필요가 없습니다, 작업 순서에 적용 되기 때문에 완전히 지정 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // numeric_partial_sum.cpp

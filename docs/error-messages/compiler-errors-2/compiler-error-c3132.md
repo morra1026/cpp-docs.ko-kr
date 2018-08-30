@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb2ecc863bc06542e4bb2e78e71ce95279c004f8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bb32d65b119330e49773118e38e1c8b618d03cfc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252389"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204760"
 ---
 # <a name="compiler-error-c3132"></a>컴파일러 오류 C3132
-' 함수 매개 변수 ': 매개 변수 배열 '관리 되는 1 차원 배열' 형식의 형식 인수에만 적용 될 수 있습니다  
+' 함수 매개 변수 ': '관리 되는 1 차원 배열' 형식의 형식 인수에 매개 변수 배열만 적용할 수  
   
- [ParamArray](https://msdn.microsoft.com/en-us/library/system.paramarrayattribute.aspx) 특성이 1 차원 배열 되지 않은 매개 변수에 적용 되었습니다.  
+ 합니다 [ParamArray](https://msdn.microsoft.com/library/system.paramarrayattribute.aspx) 없는 1 차원 배열 매개 변수에 특성이 적용 되었습니다.  
   
  다음 샘플에서는 C3132 오류가 생성 됩니다.  
   

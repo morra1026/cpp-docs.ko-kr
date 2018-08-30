@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cff2dcb8d6b0ad3756a8a0047fcc9b982fb7bb8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 61d92c02c4410bdc01b76ac6307fb9bb2652880a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411447"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203610"
 ---
 # <a name="wctob"></a>wctob
 
@@ -59,17 +59,17 @@ int wctob(
 
 ## <a name="return-value"></a>반환 값
 
-경우 **wctob** 와이드 문자를 성공적으로 변환 멀티 바이트 문자는 1 바이트를 정확 하 게 하는 경우에 해당 멀티 바이트 문자 표현이 반환 합니다. 경우 **wctob** 발생할 멀티 바이트 문자 또는 멀티 바이트 문자 변환 될 수 없는 와이드 문자는 1 바이트 길이가-1이 반환 정확 하 게 합니다.
+하는 경우 **wctob** 성공적으로 변환 와이드 문자를 멀티 바이트 문자의 길이가 정확히 1 바이트 경우에 해당 멀티 바이트 문자 표현을 반환 합니다. 하는 경우 **wctob** 발견 하면 멀티 바이트 문자 또는 멀티 바이트 문자로 변환할 수 없는 와이드 문자는 1 바이트 길이가-1 반환 정확 하 게 합니다.
 
 ## <a name="remarks"></a>설명
 
-**wctob** 함수 변환에 포함 된 와이드 문자 *wchar* 반환 되는로 전달 하 여 해당 멀티 바이트 문자를 **int** 경우 값은 멀티 바이트 문자는 1 바이트를 정확 하 게 합니다.
+**wctob** 함수에 포함 된 와이드 문자 변환 *wchar* 를 반환 하 여 전달 된 해당 멀티 바이트 문자로 **int** 값, 멀티 바이트 문자는 길이가 정확히 1 바이트입니다.
 
-경우 **wctob** 실패 하 고 해당 멀티 바이트 문자가 발견 되었습니다 함수 설정 **errno** 를 **EILSEQ** 하 고-1을 반환 합니다.
+하는 경우 **wctob** 성공 하지 하 고 해당 멀티 바이트 문자가 없는 찾을 함수 설정 **errno** 하 **EILSEQ** -1을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**wctob**|\<wchar.h>|
 
@@ -118,4 +118,4 @@ Determined the corresponding multibyte character to be "A".
 [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
 [wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>
-[WideCharToMultiByte](http://msdn.microsoft.com/library/windows/desktop/dd374130)<br/>
+[WideCharToMultiByte](/windows/desktop/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>

@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a36aaddd5540fc9259178ba1686960c488b4d246
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 38c76d582a6bd30c5fa3f9285bc96853f7e9d162
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462299"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199481"
 ---
 # <a name="transporting-exceptions-between-threads"></a>스레드 간 예외 전송
 
@@ -106,7 +106,7 @@ C++ 표준 위원회 제안서에 대한 자세한 내용은 문서 번호 N2179
 
 ## <a name="exceptionptr-type"></a>exception_ptr 형식
 
-`exception_ptr` 개체를 사용하여 현재 예외 또는 사용자 지정 예외의 인스턴스를 참조합니다. Microsoft 구현에서 예외가 [EXCEPTION_RECORD](https://msdn.microsoft.com/library/windows/desktop/aa363082) 구조체에 의해 표시됩니다. 각 `exception_ptr` 개체에는 예외를 나타내는 `EXCEPTION_RECORD` 구조체의 복사본을 가리키는 예외 참조 필드가 포함됩니다.
+`exception_ptr` 개체를 사용하여 현재 예외 또는 사용자 지정 예외의 인스턴스를 참조합니다. Microsoft 구현에서 예외가 [EXCEPTION_RECORD](/windows/desktop/api/winnt/ns-winnt-_exception_record) 구조체에 의해 표시됩니다. 각 `exception_ptr` 개체에는 예외를 나타내는 `EXCEPTION_RECORD` 구조체의 복사본을 가리키는 예외 참조 필드가 포함됩니다.
 
 `exception_ptr` 변수를 선언할 때 변수는 예외와 관련되지 않습니다. 즉, 해당 예외 참조 필드는 NULL입니다. 이러한 `exception_ptr` 개체를 *null exception_ptr*라고 합니다.
 
@@ -156,7 +156,7 @@ SEH 예외를 catch하는 경우 `EXCEPTION_RECORD.ExceptionInformation` 데이�
 
 응용 프로그램에는 일반적으로 `make_exception_ptr` 함수가 필요하지 않으며 이 함수를 사용하지 않는 것이 좋습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 표준 C++ 예외와 사용자 지정 C++ 예외를 한 스레드에서 다른 스레드로 전송합니다.
 

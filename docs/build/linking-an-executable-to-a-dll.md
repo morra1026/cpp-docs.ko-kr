@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9641545721776530ccf09a5a1ea99485f510265
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 49973d203670eaa2aa0988d9de04784d13eaec09
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42573387"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196689"
 ---
 # <a name="link-an-executable-to-a-dll"></a>DLL에 실행 파일 링크  
   
@@ -76,7 +76,7 @@ ms.locfileid: "42573387"
   
 -   DLL에는 `DllMain` 진입점 함수, 운영 체제 함수를 호출한 스레드 컨텍스트에서 호출 `LoadLibrary`합니다. DLL은 이미 연결 된 경우 프로세스는 이전 호출으로 인해 진입점 함수가 호출 되지 않습니다 `LoadLibrary` 에 대 한 해당 호출이 했습니다는 `FreeLibrary` 함수입니다. 명시적 연결 문제가 발생할 수 있습니다 DLL을 사용 하는 경우는 `DllMain` 스레드는 이미 존재 하기 때문에 프로세스의 각 스레드에 대 한 초기화를 수행 하는 함수 때 `LoadLibrary` (또는 `AfxLoadLibrary`) 라고 초기화 되지 않습니다.  
   
--   DLL에 정적 범위 데이터를 선언 하면 `__declspec(thread)`를 명시적으로 연결 하는 경우 보호 오류가 발생할 수 있습니다. 호출 하 여 DLL이 로드 된 후 `LoadLibrary`, 코드는이 데이터를 참조할 때마다 보호 오류가 발생 합니다. (정적 범위 데이터는 전역 및 로컬 정적 항목을 포함 합니다.) 따라서 DLL을 만들면 스레드 로컬 저장소를 사용 하지 않도록 하거나 동적으로 DLL을 로드 하는 잠재적인 문제에 대 한 DLL 사용자에 게 알림. 자세한 내용은 [동적 연결 라이브러리 (Windows SDK)에 스레드 로컬 저장소를 사용 하 여](http://msdn.microsoft.com/library/windows/desktop/ms686997)입니다.  
+-   DLL에 정적 범위 데이터를 선언 하면 `__declspec(thread)`를 명시적으로 연결 하는 경우 보호 오류가 발생할 수 있습니다. 호출 하 여 DLL이 로드 된 후 `LoadLibrary`, 코드는이 데이터를 참조할 때마다 보호 오류가 발생 합니다. (정적 범위 데이터는 전역 및 로컬 정적 항목을 포함 합니다.) 따라서 DLL을 만들면 스레드 로컬 저장소를 사용 하지 않도록 하거나 동적으로 DLL을 로드 하는 잠재적인 문제에 대 한 DLL 사용자에 게 알림. 자세한 내용은 [동적 연결 라이브러리 (Windows SDK)에 스레드 로컬 저장소를 사용 하 여](https://msdn.microsoft.com/library/windows/desktop/ms686997)입니다.  
   
 <a name="linking-implicitly"></a>  
   

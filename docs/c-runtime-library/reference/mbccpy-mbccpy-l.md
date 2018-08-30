@@ -44,12 +44,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d79ab8362eaa911b7a4aa936d6351aa29f610fa8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8fca6772c00715722acecd810595a42c60f77d86
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403172"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201389"
 ---
 # <a name="mbccpy-mbccpyl"></a>_mbccpy, _mbccpy_l
 
@@ -82,15 +82,15 @@ void _mbccpy_l(
 
 ## <a name="remarks"></a>설명
 
-**_mbccpy** 함수에서 하나의 멀티 바이트 문자를 복사 *src* 를 *dest*합니다.
+합니다 **_mbccpy** 함수에서 하나의 멀티 바이트 문자를 복사 *src* 하 *dest*합니다.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 경우 **_mbccpy** null 포인터에 대 한 전달 *dest* 또는 *src*에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md). 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL**합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. 하는 경우 **_mbccpy** 에 대 한 null 포인터가 전달 됩니다 *dest* 하거나 *src*에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md). 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL**합니다.
 
-**_mbccpy** 모든 로캘 종속 동작에 대해 현재 로캘을 사용 합니다. **_mbccpy_l** 동일 **_mbccpy** 점을 제외 하 고 **_mbccpy_l** 모든 로캘 종속 동작에 대해 전달 된 로캘을 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_mbccpy** 모든 로캘 종속 동작에 현재 로캘을 사용 합니다. **_mbccpy_l** 동일 **_mbccpy** 한다는 **_mbccpy_l** 로캘 종속 동작에 대해 전달 된 로캘을 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-**보안 정보** null로 끝나는 문자열을 사용하세요. null로 끝나는 문자열은 대상 버퍼의 크기를 초과할 수 없습니다. 자세한 내용은 [버퍼 오버런 방지](http://msdn.microsoft.com/library/windows/desktop/ms717795)를 참조하세요. 버퍼 오버런 문제는 자주 사용되는 시스템 공격 방법으로, 불필요한 권한 상승을 초래합니다.
+**보안 정보** null로 끝나는 문자열을 사용하세요. null로 끝나는 문자열은 대상 버퍼의 크기를 초과할 수 없습니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요. 버퍼 오버런 문제는 자주 사용되는 시스템 공격 방법으로, 불필요한 권한 상승을 초래합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -99,7 +99,7 @@ void _mbccpy_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_mbccpy**|\<mbctype.h>|
 |**_mbccpy_l**|\<mbctype.h>|

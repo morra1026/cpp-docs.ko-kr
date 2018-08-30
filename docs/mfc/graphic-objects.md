@@ -51,18 +51,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2cf7e2c56094727c6956d0e2e21708dd81be4f10
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: dd8fc67f7cdc11328c4da9643f57b65a1cc6bfd0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36930848"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197187"
 ---
 # <a name="graphic-objects"></a>그래픽 개체
 Windows는 디바이스 컨텍스트에서 사용할 수 있는 다양한 그리기 도구를 제공합니다. 선을 그리는 펜, 내부를 채우는 브러시 및 텍스트를 그리는 글꼴을 제공합니다. MFC는 Windows의 그리기 도구에 해당하는 그래픽 개체 클래스를 제공합니다. 아래 표에서는 사용 가능한 클래스와 그에 해당하는 Windows GDI(그래픽 장치 인터페이스) 핸들 형식을 보여 줍니다.  
   
 > [!NOTE]
->  자세한 내용은 GDI + SDK 설명서를 참조: [ http://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/GDIPlus/GDIPlus.asp ](http://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/gdiplus/gdiplus.asp)합니다.  
+>  자세한 내용은 GDI + SDK 설명서를 참조 하세요. [ https://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/GDIPlus/GDIPlus.asp ](https://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/gdiplus/gdiplus.asp)합니다.  
   
  이 문서에서는 이러한 그래픽 개체 클래스의 사용에 대해 설명합니다.  
   
@@ -78,11 +78,11 @@ Windows는 디바이스 컨텍스트에서 사용할 수 있는 다양한 그리
 |[CRgn](../mfc/reference/crgn-class.md)|**HRGN**|  
   
 > [!NOTE]
->  클래스 [CImage](../atl-mfc-shared/reference/cimage-class.md) 향상 된 비트맵 지원 합니다.  
+>  클래스 [CImage](../atl-mfc-shared/reference/cimage-class.md) 비트맵 향상 된 지원을 제공 합니다.  
   
  클래스 라이브러리의 각 그래픽 개체 클래스에는 해당 클래스의 그래픽 개체를 만들 수 있는 생성자가 있으며, `CreatePen`과 같은 적절한 만들기 함수를 사용하여 초기화해야 합니다.  
   
- 클래스 라이브러리의 각 그래픽 개체 클래스에는 MFC 개체를 연결된 Windows 핸들에 캐스트하는 캐스트 연산자가 있습니다. 결과 핸들은 연결된 개체가 분리될 때까지 유효합니다. 개체의를 사용 하 여 `Detach` 핸들을 분리 하려면 멤버 함수입니다.  
+ 클래스 라이브러리의 각 그래픽 개체 클래스에는 MFC 개체를 연결된 Windows 핸들에 캐스트하는 캐스트 연산자가 있습니다. 결과 핸들은 연결된 개체가 분리될 때까지 유효합니다. 개체를 사용 하 여 `Detach` 핸들을 분리 하려면 멤버 함수입니다.  
   
  다음 코드에서는 `CPen` 개체를 Windows 핸들에 캐스트합니다.  
   
@@ -90,9 +90,9 @@ Windows는 디바이스 컨텍스트에서 사용할 수 있는 다양한 그리
   
 #### <a name="to-create-a-graphic-object-in-a-device-context"></a>디바이스 컨텍스트에서 그래픽 개체를 만들려면  
   
-1.  스택 프레임에 그래픽 개체를 정의합니다. `CreatePen`과 같은 형식별 만들기 함수를 사용하여 개체를 초기화합니다. 또는 생성자에서 개체를 초기화합니다. 설명을 참조 [1 단계 및 2 단계 만들기](../mfc/one-stage-and-two-stage-construction-of-objects.md), 예제 코드를 제공 하는 합니다.  
+1.  스택 프레임에 그래픽 개체를 정의합니다. `CreatePen`과 같은 형식별 만들기 함수를 사용하여 개체를 초기화합니다. 또는 생성자에서 개체를 초기화합니다. 설명을 참조 하세요 [1 단계 및 2 단계 만들기](../mfc/one-stage-and-two-stage-construction-of-objects.md), 예제 코드를 제공 하는 합니다.  
   
-2.  [개체의 현재 장치 컨텍스트로 선택](../mfc/selecting-a-graphic-object-into-a-device-context.md)를 하기 전에 선택한 이전 그래픽 개체를 저장 합니다.  
+2.  [개체를 현재 장치 컨텍스트로 선택](../mfc/selecting-a-graphic-object-into-a-device-context.md)를 하기 전에 선택한 이전 그래픽 개체를 저장 합니다.  
   
 3.  현재 그래픽 개체 작업이 완료되면 이전 그래픽 개체를 선택하여 디바이스 컨텍스트로 다시 넣고 해당 상태를 복원합니다.  
   

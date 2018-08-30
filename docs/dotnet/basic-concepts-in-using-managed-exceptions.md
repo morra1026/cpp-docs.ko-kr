@@ -21,31 +21,31 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 255a7d053228b73b2b0eb13f4732e9a7829549ba
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ad3b00367be086bfe6e011b0d3aa7b93805eb103
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33114486"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202048"
 ---
 # <a name="basic-concepts-in-using-managed-exceptions"></a>관리되는 예외 사용의 기본 개념
-이 항목에서는 관리 되는 응용 프로그램에서 예외 처리를 설명 합니다. 즉, 응용 프로그램을 사용 하 여 컴파일한는 **/clr** 컴파일러 옵션입니다.  
+이 항목에서는 관리 되는 응용 프로그램의 예외 처리를 설명 합니다. 즉, 응용 프로그램을 사용 하 여 컴파일된 합니다 **/clr** 컴파일러 옵션입니다.  
   
 ## <a name="in-this-topic"></a>항목 내용  
   
 -   [/Clr에서 예외를 throw합니다.](#vcconbasicconceptsinusingmanagedexceptionsanchor1)  
   
--   [Try/Catch 블록 CLR 확장에 대 한](#vcconbasicconceptsinusingmanagedexceptionsanchor2)  
+-   [Try/Catch 블록 CLR 확장](#vcconbasicconceptsinusingmanagedexceptionsanchor2)  
   
 ## <a name="remarks"></a>설명  
- 사용 하 여 컴파일하면는 **/clr** 옵션을 표준 뿐만 아니라 CLR 예외를 처리할 수 있습니다 [c + + 예외 처리](../cpp/cpp-exception-handling.md) 및 [구조적 예외 처리](../cpp/structured-exception-handling-c-cpp.md) (SEH). CLR 예외는 관리 되는 형식에서 throw 된 모든 예외입니다. [system:: exception](https://msdn.microsoft.com/en-us/library/system.exception.aspx) 클래스 CLR 예외 처리를 위한 많은 유용한 메서드를 제공 하 고 사용자 정의 예외 클래스에 대 한 기본 클래스로 사용 하는 것이 좋습니다.  
+ 로 컴파일하는 경우는 **/clr** 옵션을 표준 뿐만 아니라 CLR 예외를 처리할 수 있습니다 [c + + 예외 처리](../cpp/cpp-exception-handling.md) 하 고 [구조적 예외 처리](../cpp/structured-exception-handling-c-cpp.md) (SEH). CLR 예외는 관리 되는 형식에 의해 throw 된 예외입니다. 합니다 [system:: exception](https://msdn.microsoft.com/library/system.exception.aspx) 클래스 CLR 예외 처리를 위한 많은 유용한 메서드를 제공 하 고 사용자 정의 예외 클래스에 대 한 기본 클래스로 사용 하는 것이 좋습니다.  
   
- 인터페이스에서 파생 된 예외 형식을 catch 할에서 지원 되지 않습니다 **/clr**합니다. 또한 공용 언어 런타임 허용 하지 않습니다; 스택 오버플로 예외를 catch 할 수 스택 오버플로 예외는 프로세스가 종료 됩니다.  
+ 인터페이스에서 파생 된 예외 형식을 catch 할에서 지원 되지 않습니다 **/clr**합니다. 또한 공용 언어 런타임 허용 하지 않습니다 스택 오버플로 예외를 catch 합니다. 스택 오버플로 예외는 프로세스를 종료 합니다.  
   
- 관리 되는, 관리 되지 않는 응용 프로그램에서 예외 처리에서 차이점에 대 한 자세한 내용은 참조 [예외 처리 동작에서 Managed Extensions for c + +의에서 차이](../dotnet/differences-in-exception-handling-behavior-under-clr.md)합니다.  
+ 관리 및 관리 되지 않는 응용 프로그램에서 예외 처리의 차이점에 대 한 자세한 내용은 참조 하세요. [예외 처리 동작에서 Managed Extensions for c + +의에서 차이](../dotnet/differences-in-exception-handling-behavior-under-clr.md)합니다.  
   
 ##  <a name="vcconbasicconceptsinusingmanagedexceptionsanchor1"></a> /Clr에서 예외를 throw합니다.  
- CLR 형식에 대 한 핸들을 throw 하는 c + + throw 식 확장 됩니다. 다음 예제에서는 사용자 지정 예외 유형을 만들고 해당 형식의 인스턴스를 throw 합니다.  
+ C + + throw 식 CLR 형식에 대 한 핸들을 throw 하도록 확장 됩니다. 다음 예제에서는 사용자 지정 예외 형식을 만들고 해당 형식의 인스턴스가 throw 됩니다.  
   
 ```  
 // clr_exception_handling.cpp  
@@ -61,7 +61,7 @@ void GlobalFunction() {
 }  
 ```  
   
- 값 형식이 throw 하기 전에 boxed 해야 합니다.  
+ Throw 하기 전에 값 형식에 넣을 해야 합니다.  
   
 ```  
 // clr_exception_handling_2.cpp  
@@ -76,8 +76,8 @@ void GlobalFunction() {
 }  
 ```  
   
-##  <a name="vcconbasicconceptsinusingmanagedexceptionsanchor2"></a> Try/Catch 블록 CLR 확장에 대 한  
- 동일한 **시도**/**catch** CLR와 네이티브 예외를 catch 하기 위한 블록 구조를 사용할 수 있습니다.  
+##  <a name="vcconbasicconceptsinusingmanagedexceptionsanchor2"></a> Try/Catch 블록 CLR 확장  
+ 동일 **시도**/**catch** , CLR 및 네이티브 예외를 catch 하기 위한 블록 구조를 사용할 수 있습니다.  
   
 ```  
 // clr_exception_handling_3.cpp  
@@ -134,22 +134,22 @@ In 'catch(MyStruct^ catchException)'
 ```  
   
 ### <a name="order-of-unwinding-for-c-objects"></a>C + + 개체에 대 한 해제 순서  
- 해제 throw 함수 및 처리 함수 사이 실행 시간에 수 있는 소멸자가 있는 모든 c + + 개체에 대해 발생 합니다. CLR 형식은 힙에 할당 된, 때문에 해제 해도에 적용 되지 않습니다.  
+ 해제 throw 함수 사이의 처리 함수 런타임 스택에 수 있는 소멸자를 사용 하 여 c + + 개체에 발생 합니다. 힙에 할당 된 CLR 형식 때문에 해제 해도에 적용 되지 않습니다.  
   
  Throw 된 예외에 대 한 이벤트의 순서는 다음과 같습니다.  
   
-1.  런타임에 적절 한 catch 절에 대 한 또는 SEH를의 경우 스택 워크는 SEH 예외를 catch 하기에 대 한 필터를 제외 하 고 있습니다. Catch 절 어휘 순서로 먼저 검색 하 고 동적으로 우선 호출 스택.  
+1.  런타임에서 나 SEH를 적절 한 catch 절에 대해 원하는 스택을 예외를 catch 하 SEH에 대 한 필터를 제외 하 고 있습니다. Catch 절 어휘 순서로 먼저 검색 되 고 동적으로 아래로 호출 스택.  
   
-2.  올바른 처리기 발견 되 면 해당 지점에는 스택 해제 됩니다. 스택의 각 함수 호출에 대 한 로컬 개체 소멸 되 고 가장에서으로 블록이 실행 되는 __finally 바깥쪽 중첩 합니다.  
+2.  올바른 처리기 발견 되 면 해당 지점에는 스택 해제 됩니다. 스택의 각 함수 호출에 대 한 해당 로컬 개체는 소멸 됩니다 및 __finally 블록에서에서 실행 되는, 가장 바깥쪽 중첩 합니다.  
   
 3.  스택의 스택이 해제 되 면 catch 절이 실행 됩니다.  
   
-### <a name="catching-unmanaged-types"></a>관리 되지 않는 형식 찾기  
- 형식의 예외를 사용 하 여 래핑는 관리 되지 않는 개체 형식 발생 하면 [System::Runtime.InteropServices::SEHException](https://msdn.microsoft.com/en-us/library/system.runtime.interopservices.sehexception.aspx)합니다. 적절 한를 검색할 때 **catch** 절, 두 가지 가능성이 있습니다.  
+### <a name="catching-unmanaged-types"></a>관리 되지 않는 형식을 catch합니다.  
+ 관리 되지 않는 개체 유형을 throw 되 면 형식의 예외를 사용 하 여 래핑됩니다 [System::Runtime.InteropServices::SEHException](https://msdn.microsoft.com/library/system.runtime.interopservices.sehexception.aspx)합니다. 적절 한 검색 하는 경우 **catch** 절을 두 가지 방법이 있습니다.  
   
--   네이티브 c + + 형식 발생 하는 경우는 예외가 래핑이 해제 되 고 해당 형식과 비교 합니다. 이 비교는 네이티브 c + + 형식을를 일반적인 방법으로 찾아낼 수 있습니다.  
+-   네이티브 c + + 형식 발생 하는 경우 예외 래핑이 해제 되 고 해당 형식과 비교 합니다. 이 비교에는 네이티브 c + + 형식을를 일반적인 방법으로 발견할 수 있습니다.  
   
--   그러나 경우는 **catch** 형식의 절을 **SEHException** 또는 해당 기본 클래스 중 하나를 먼저 검사, 절은 예외를 가로챕니다. 따라서 모든 catch 절 CLR 형식의 전에 네이티브 c + + 형식을 먼저 catch 하는 모든 catch 절을 배치 해야 합니다.  
+-   그러나 경우에 **catch** 형식의 절 **SEHException** 또는 해당 기본 클래스 중 하나를 먼저 검사, 절은 예외를 가로챕니다. 따라서 모든 catch 절 CLR 형식의 전에 네이티브 c + + 형식을 먼저 catch 하는 모든 catch 절을 배치 해야 합니다.  
   
  다음 사항에 유의하십시오.  
   
@@ -163,11 +163,11 @@ catch(Object^)
 catch(...)  
 ```  
   
- SEH 예외를 포함 하 여 모든 throw 된 형식을 모두 catch 합니다.  
+ SEH 예외를 포함 한 모든 throw 된 형식이 모두 catch 합니다.  
   
- 관리 되지 않는 형식으로 catch(Object^) 들어갈, throw 된 개체는 제거 되지 않습니다.  
+ 관리 되지 않는 형식 catch(Object^)에서 포착 되, throw 된 개체를 삭제 하지 않습니다.  
   
- 관리 되지 않은 예외를 throw 또는 catch 할 때 사용 하는 것이 좋습니다는 [/EHsc](../build/reference/eh-exception-handling-model.md) 대신 컴파일러 옵션 **/EHs** 또는 **/EHa**합니다.  
+ 관리 되지 않은 예외를 throw 또는 catch 할 때 사용 하는 것이 좋습니다 합니다 [/EHsc](../build/reference/eh-exception-handling-model.md) 대신 컴파일러 옵션 **/EHs** 하거나 **/EHa**합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [예외 처리](../windows/exception-handling-cpp-component-extensions.md)   

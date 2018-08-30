@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26f6216d5e78ae8ee95eb9f43d70f13aeb5f4874
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: ba67a990b027ff4cd770a0583f6d857a0ee7c725
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881060"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201043"
 ---
 # <a name="ccomcontainedobject-class"></a>CComContainedObject 클래스
-이 클래스는 구현 [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) 소유자 개체에 위임 하 여 `IUnknown`입니다.  
+이 클래스는 구현 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 소유자 개체에 위임 하 여 `IUnknown`입니다.  
   
 > [!IMPORTANT]
 >  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.  
@@ -67,7 +67,7 @@ class CComContainedObject : public Base
 |[CComContainedObject::Release](#release)|소유자 개체의 참조 횟수를 감소 시킵니다.|  
   
 ## <a name="remarks"></a>설명  
- ATL 사용 `CComContainedObject` 클래스의 [CComAggObject](../../atl/reference/ccomaggobject-class.md)를 [CComPolyObject](../../atl/reference/ccompolyobject-class.md), 및 [CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md)합니다. `CComContainedObject` 구현 [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) 소유자 개체에 위임 하 여 `IUnknown`입니다. (소유자 개체 또는 집계의 외부 개체는 분리 인터페이스는 생성 되는 개체입니다.) `CComContainedObject` 호출 `CComObjectRootEx`의 `OuterQueryInterface`를 `OuterAddRef`, 및 `OuterRelease`를 통해 상속 된 모든, `Base`합니다.  
+ ATL 사용 `CComContainedObject` 클래스의 [CComAggObject](../../atl/reference/ccomaggobject-class.md)를 [CComPolyObject](../../atl/reference/ccompolyobject-class.md), 및 [CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md)합니다. `CComContainedObject` 구현 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 소유자 개체에 위임 하 여 `IUnknown`입니다. (소유자 개체 또는 집계의 외부 개체는 분리 인터페이스는 생성 되는 개체입니다.) `CComContainedObject` 호출 `CComObjectRootEx`의 `OuterQueryInterface`를 `OuterAddRef`, 및 `OuterRelease`를 통해 상속 된 모든, `Base`합니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  `Base`  

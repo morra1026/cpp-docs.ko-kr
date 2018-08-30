@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8414fb0e3478b5aae906db3e511757d5d7df71d3
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: d63a09dec74fc1b7b41f8029dcff285b62b017f1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39404098"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203229"
 ---
 # <a name="comptrt-extractors"></a>_com_ptr_t Extractors
 **Microsoft 전용**  
@@ -55,11 +55,11 @@ operator bool( ) const throw( );
   
 ## <a name="remarks"></a>설명  
   
--   **연산자 인터페이스\***  NULL 일 수 있는 캡슐화 된 인터페이스 포인터를 반환 합니다.  
+-   **연산자 인터페이스** <strong>\*</strong> NULL 일 수 있는 캡슐화 된 인터페이스 포인터를 반환 합니다.  
   
 -   **연산자 인터페이스 &** 캡슐화 된 인터페이스 포인터에 대 한 참조를 반환 하 고 포인터가 null 인 경우 오류가 발생 합니다.  
   
--   **연산자\***  는 스마트 포인터 개체가 역참조 시 실제로 캡슐화 된 인터페이스인 것 처럼 작동 하도록 허용 합니다.  
+-   **연산자** <strong>\*</strong> 는 스마트 포인터 개체가 역참조 시 실제로 캡슐화 된 인터페이스인 것 처럼 작동 하도록 허용 합니다.  
   
 -   **operator->** 는 스마트 포인터 개체가 역참조 시 실제로 캡슐화 된 인터페이스인 것 처럼 작동 하도록 허용 합니다.  
   

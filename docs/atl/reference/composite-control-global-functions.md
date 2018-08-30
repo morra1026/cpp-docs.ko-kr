@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75742b466b284a24d6771971a831dfc91303c834
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 1d433c76e054b16491ab7586d6107b4931dc2915
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882434"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203718"
 ---
 # <a name="composite-control-global-functions"></a>복합 컨트롤 전역 함수
 이러한 함수는 만들고 호스트 하 고 ActiveX 컨트롤 라이선스 획득 한 대화 상자 만들기에 대 한 지원을 제공 합니다.  
@@ -77,13 +77,13 @@ ATLAPI_(int) AtlAxDialogBox(
  [in] 해당 실행 파일 대화 상자 템플릿이 포함 된 모듈의 인스턴스를 식별 합니다.  
   
  *lpTemplateName*  
- [in] 대화 상자 템플릿을 식별합니다. 이 매개 변수는 대화 상자 템플릿의 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터 이거나 대화 상자 템플릿의 리소스 식별자를 지정 하는 정수 값입니다. 매개 변수는 리소스 식별자를 지정 하는 경우 경우 상위 워드가 0 이어야 합니다 하 고 해당 하위 단어는 식별자가 있어야 합니다. 사용할 수는 [MAKEINTRESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms648029) 매크로이 값을 생성 합니다.  
+ [in] 대화 상자 템플릿을 식별합니다. 이 매개 변수는 대화 상자 템플릿의 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터 이거나 대화 상자 템플릿의 리소스 식별자를 지정 하는 정수 값입니다. 매개 변수는 리소스 식별자를 지정 하는 경우 경우 상위 워드가 0 이어야 합니다 하 고 해당 하위 단어는 식별자가 있어야 합니다. 사용할 수는 [MAKEINTRESOURCE](https://msdn.microsoft.com/library/windows/desktop/ms648029) 매크로이 값을 생성 합니다.  
   
  *hWndParent*  
  [in] 대화 상자를 소유 하는 창을 식별 합니다.  
   
  *lpDialogProc*  
- [in] 대화 상자 프로시저를 가리킵니다. 대화 상자 프로시저에 대 한 자세한 내용은 참조 하세요. [DialogProc](http://msdn.microsoft.com/library/windows/desktop/ms645469)합니다.  
+ [in] 대화 상자 프로시저를 가리킵니다. 대화 상자 프로시저에 대 한 자세한 내용은 참조 하세요. [DialogProc](https://msdn.microsoft.com/library/windows/desktop/ms645469)합니다.  
   
  *dwInitParam*  
  [in] 대화 상자에 전달할 값을 지정 합니다 *lParam* WM_INITDIALOG 메시지의 매개 변수입니다.  
@@ -99,9 +99,9 @@ CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,
     "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100  
 ```  
   
- 리소스 스크립트 편집에 대 한 자세한 내용은 참조 하세요. [방법: 리소스 스크립트 파일을 텍스트 형식으로 열기](../../windows/how-to-open-a-resource-script-file-in-text-format.md)합니다. 컨트롤 리소스 정의 문에 대 한 자세한 내용은 참조 하세요. [공통 제어 매개 변수](http://msdn.microsoft.com/library/windows/desktop/aa380902) 에서 Windows SDK *: SDK Tools*합니다.  
+ 리소스 스크립트 편집에 대 한 자세한 내용은 참조 하세요. [방법: 리소스 스크립트 파일을 텍스트 형식으로 열기](../../windows/how-to-open-a-resource-script-file-in-text-format.md)합니다. 컨트롤 리소스 정의 문에 대 한 자세한 내용은 참조 하세요. [공통 제어 매개 변수](/windows/desktop/menurc/common-control-parameters) 에서 Windows SDK *: SDK Tools*합니다.  
   
- 일반 대화 상자에 대 한 자세한 내용은 참조 [DialogBox](http://msdn.microsoft.com/library/windows/desktop/ms645452) 하 고 [CreateDialogParam](http://msdn.microsoft.com/library/windows/desktop/ms645445) Windows SDK에 있습니다.  
+ 일반 대화 상자에 대 한 자세한 내용은 참조 [DialogBox](/windows/desktop/api/winuser/nf-winuser-dialogboxa) 하 고 [CreateDialogParam](/windows/desktop/api/winuser/nf-winuser-createdialogparama) Windows SDK에 있습니다.  
   
 ##  <a name="atlaxcreatedialog"></a>  AtlAxCreateDialog  
  사용자가 제공한 대화 상자 템플릿에서 모덜리스 대화 상자를 만듭니다.  
@@ -120,13 +120,13 @@ ATLAPI_(HWND) AtlAxCreateDialog(
  [in] 해당 실행 파일 대화 상자 템플릿이 포함 된 모듈의 인스턴스를 식별 합니다.  
   
  *lpTemplateName*  
- [in] 대화 상자 템플릿을 식별합니다. 이 매개 변수는 대화 상자 템플릿의 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터 이거나 대화 상자 템플릿의 리소스 식별자를 지정 하는 정수 값입니다. 매개 변수는 리소스 식별자를 지정 하는 경우 경우 상위 워드가 0 이어야 합니다 하 고 해당 하위 단어는 식별자가 있어야 합니다. 사용할 수는 [MAKEINTRESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms648029) 매크로이 값을 생성 합니다.  
+ [in] 대화 상자 템플릿을 식별합니다. 이 매개 변수는 대화 상자 템플릿의 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터 이거나 대화 상자 템플릿의 리소스 식별자를 지정 하는 정수 값입니다. 매개 변수는 리소스 식별자를 지정 하는 경우 경우 상위 워드가 0 이어야 합니다 하 고 해당 하위 단어는 식별자가 있어야 합니다. 사용할 수는 [MAKEINTRESOURCE](https://msdn.microsoft.com/library/windows/desktop/ms648029) 매크로이 값을 생성 합니다.  
   
  *hWndParent*  
  [in] 대화 상자를 소유 하는 창을 식별 합니다.  
   
  *lpDialogProc*  
- [in] 대화 상자 프로시저를 가리킵니다. 대화 상자 프로시저에 대 한 자세한 내용은 참조 하세요. [DialogProc](http://msdn.microsoft.com/library/windows/desktop/ms645469)합니다.  
+ [in] 대화 상자 프로시저를 가리킵니다. 대화 상자 프로시저에 대 한 자세한 내용은 참조 하세요. [DialogProc](https://msdn.microsoft.com/library/windows/desktop/ms645469)합니다.  
   
  *dwInitParam*  
  [in] 대화 상자에 전달할 값을 지정 합니다 *lParam* WM_INITDIALOG 메시지의 매개 변수입니다.  
@@ -137,7 +137,7 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 ### <a name="remarks"></a>설명  
  대화 상자가 열리면 ActiveX 컨트롤을 포함할 수 있습니다.  
   
- 참조 [CreateDialog](http://msdn.microsoft.com/library/windows/desktop/ms645434) 하 고 [CreateDialogParam](http://msdn.microsoft.com/library/windows/desktop/ms645445) Windows SDK에에서 있습니다.  
+ 참조 [CreateDialog](/windows/desktop/api/winuser/nf-winuser-createdialoga) 하 고 [CreateDialogParam](/windows/desktop/api/winuser/nf-winuser-createdialogparama) Windows SDK에에서 있습니다.  
   
 ##  <a name="atlaxcreatecontrol"></a>  AtlAxCreateControl  
  ActiveX 컨트롤을 만들고 초기화하며 지정한 창에 호스팅합니다.  
@@ -286,7 +286,7 @@ ATLAPI AtlAxCreateControlLic(
 ### <a name="return-value"></a>반환 값  
  HRESULT 값 중 하나입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  참조 [ActiveX 컨트롤 ATL 사용 하 여 AXHost 호스팅](../../atl/hosting-activex-controls-using-atl-axhost.md) 사용 하는 방법의 예는 `AtlAxCreateControlLic`합니다.  
   
 ##  <a name="atlaxcreatecontrollicex"></a>  AtlAxCreateControlLicEx  
@@ -348,7 +348,7 @@ ATLAPI AtlAxCreateControlLicEx(
 ### <a name="remarks"></a>설명  
  `AtlAxCreateControlLicEx` 비슷합니다 [AtlAxCreateControlLic](#atlaxcreatecontrollic) 하지만 새로 만든된 컨트롤에 대 한 인터페이스 포인터를 수신 하 고 컨트롤에서 발생 하는 이벤트를 수신할 이벤트 싱크를 설정 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  참조 [ActiveX 컨트롤 ATL 사용 하 여 AXHost 호스팅](../../atl/hosting-activex-controls-using-atl-axhost.md) 사용 하는 방법의 예는 `AtlAxCreateControlLicEx`합니다.  
   
 ##  <a name="atlaxattachcontrol"></a>  AtlAxAttachControl  
@@ -442,7 +442,7 @@ ATLAPI_(BOOL) AtlAxWinInit();
  컨트롤 호스팅 코드의 초기화에 성공 하면 0이 아닌 값 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- ATL 컨트롤 호스팅 API를 사용 하기 전에이 함수를 호출 해야 합니다. 이 함수를 호출 합니다 **"AtlAxWin"** 창 클래스에 대 한 호출에서 사용할 수 있습니다 [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) 또는 [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680)Windows SDK에 설명 된 대로 합니다.  
+ ATL 컨트롤 호스팅 API를 사용 하기 전에이 함수를 호출 해야 합니다. 이 함수를 호출 합니다 **"AtlAxWin"** 창 클래스에 대 한 호출에서 사용할 수 있습니다 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) 또는 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680)Windows SDK에 설명 된 대로 합니다.  
 
 ##  <a name="atlaxwinterm"></a>  AtlAxWinTerm  
  이 함수 ATL의 컨트롤 호스팅 코드의 등록을 취소 하 여 초기화를 취소 합니다 **"AtlAxWin80"** 하 고 **"AtlAxWinLic80"** 창 클래스입니다.  
@@ -455,7 +455,7 @@ inline BOOL AtlAxWinTerm();
  항상 TRUE를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 함수 호출 [UnregisterClass](http://msdn.microsoft.com/library/windows/desktop/ms644899) Windows SDK에 설명 된 대로 합니다.  
+ 이 함수 호출 [UnregisterClass](https://msdn.microsoft.com/library/windows/desktop/ms644899) Windows SDK에 설명 된 대로 합니다.  
   
  이 함수를 호출 하면 모든 기존 호스트 창을 제거 된 후 정리 하기 위해 호출 [AtlAxWinInit](#atlaxwininit) 및 호스트 창을 만들 필요가 없습니다. 이 함수를 호출 하지 않으면, 창 클래스를 등록 취소할 수 자동으로 프로세스가 종료 될 때.  
   
@@ -496,7 +496,7 @@ ATLAPI AtlGetObjectSourceInterface(
 > [!NOTE]
 >  가 나타내는 개체가 성공적으로 요청된 된 정보를 검색 하려면이 함수에 대 한 *punkObj* 구현 해야 `IDispatch` (통해 형식 정보를 반환 하 고 `IDispatch::GetTypeInfo`)와 어느 도구현해야합니다`IProvideClassInfo2` 또는 `IPersist`합니다. 소스 인터페이스의 형식 정보를 동일한 형식 라이브러리에 대 한 형식 정보를 묶어야 `IDispatch`합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  아래 예제에서는 이벤트 싱크 클래스를 정의 하는 방법을 보여 줍니다 `CEasySink`를 전달할 수 있는 템플릿 인수 개수를 줄여 주는 `IDispEventImpl` 완전 essentials. `EasyAdvise` 및 `EasyUnadvise` 사용 하 여 `AtlGetObjectSourceInterface` 초기화 하는 [IDispEventImpl](../../atl/reference/idispeventimpl-class.md) 호출 하기 전에 멤버 [DispEventAdvise](idispeventsimpleimpl-class.md#dispeventadvise) 또는 [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise)합니다.  
   
  [!code-cpp[NVC_ATL_Windowing#93](../../atl/codesnippet/cpp/composite-control-global-functions_1.h)]  

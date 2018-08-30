@@ -19,31 +19,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49acd19fcb25751ac9223b557b068383556f63f3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 289ff7ae7db1abd6a0a19577a2c567b462a2910e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32354337"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201402"
 ---
 # <a name="atl-connection-point-classes"></a>ATL 연결 지점 클래스
-ATL 연결 지점 지원 하기 위해 다음 클래스를 사용:  
+ATL 연결 포인트를 지원 하기 위해 다음 클래스를 사용 합니다.  
   
--   [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md) 연결 지점을 구현 합니다. 나타내는 보내기 인터페이스의 IID는 템플릿 매개 변수로 전달 됩니다.  
+-   [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md) 연결 지점을 구현 합니다. 나타내므로 송신 인터페이스의 IID는 템플릿 매개 변수로 전달 됩니다.  
   
--   [IConnectionPointContainerImpl](../atl/reference/iconnectionpointcontainerimpl-class.md) 연결 지점 컨테이너를 구현 하 고 목록을 관리 `IConnectionPointImpl` 개체입니다.  
+-   [IConnectionPointContainerImpl](../atl/reference/iconnectionpointcontainerimpl-class.md) 연결 지점 컨테이너를 관리 하 고 실행 목록 `IConnectionPointImpl` 개체입니다.  
   
--   [IPropertyNotifySinkCP](../atl/reference/ipropertynotifysinkcp-class.md) 나타내는 연결 지점을 구현 하는 [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638) 인터페이스입니다.  
+-   [IPropertyNotifySinkCP](../atl/reference/ipropertynotifysinkcp-class.md) 연결 지점을 나타내는 구현 합니다 [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) 인터페이스입니다.  
   
--   [CComDynamicUnkArray](../atl/reference/ccomdynamicunkarray-class.md) 임의 개수의 연결 지점과 싱크 간에 연결을 관리 합니다.  
+-   [CComDynamicUnkArray](../atl/reference/ccomdynamicunkarray-class.md) 임의 개수의 연결점 및 해당 싱크 간의 연결을 관리 합니다.  
   
--   [CComUnkArray](../atl/reference/ccomunkarray-class.md) 미리 정의 된 다양 한 템플릿 매개 변수로 지정 된 연결을 관리 합니다.  
+-   [CComUnkArray](../atl/reference/ccomunkarray-class.md) 미리 정의 된 수의 템플릿 매개 변수로 지정 된 대로 연결을 관리 합니다.  
   
--   [CFirePropNotifyEvent](../atl/reference/cfirepropnotifyevent-class.md) 개체 속성 변경 되거나 변경 되려고 하는 클라이언트의 싱크를에 알립니다.  
+-   [CFirePropNotifyEvent](../atl/reference/cfirepropnotifyevent-class.md) 개체 속성 변경 되었거나 변경 되려고 하는 클라이언트의 싱크를에 알립니다.  
   
--   [IDispEventImpl](../atl/reference/idispeventimpl-class.md) ATL COM 개체에 대 한 연결점에 대 한 지원을 제공 합니다. 이러한 연결점은 COM 개체에서 제공 되는 이벤트 싱크 맵이 매핑됩니다.  
+-   [IDispEventImpl](../atl/reference/idispeventimpl-class.md) ATL COM 개체에 대 한 연결 지점에 대 한 지원을 제공 합니다. 이러한 연결점은 COM 개체에서 제공 하는 이벤트 싱크 맵과 매핑됩니다.  
   
--   [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) 하려면 적절 한 처리기 함수에 경로 이벤트 클래스에서 이벤트 싱크 맵와 함께 작동 합니다.  
+-   [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) 에 적절 한 처리기 함수로 이벤트를 라우팅하도록 클래스에서 이벤트 싱크 맵과 함께 작동 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [연결 지점](../atl/atl-connection-points.md)
