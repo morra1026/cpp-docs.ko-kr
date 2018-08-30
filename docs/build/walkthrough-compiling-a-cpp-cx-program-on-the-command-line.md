@@ -12,15 +12,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b67d30ce301ec1a0b8952b780f52a5627e90df38
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: bc4e6dbf3023256a6a0db556c02e08453bb1a730
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42571519"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194277"
 ---
 # <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>연습: 명령줄에서 C++/CX 프로그램 컴파일
-Windows 런타임을 대상으로 하는 Visual C++ 프로그램을 만들어 명령줄에서 빌드할 수 있습니다. Visual C++는 Windows 런타임 프로그래밍 모델을 대상으로 하는 추가 형식 및 연산자가 있는 Visual C++ 구성 요소 확장명(C++/CX)을 지원합니다. 에서는 C + + 유니버설 Windows 플랫폼 (UWP), Windows Phone 8.1 및 Windows 데스크톱 앱을 빌드할 CX 합니다. 자세한 내용은 [는 C+ 둘러보기 + CX](http://msdn.microsoft.com/magazine/dn166929.aspx) 하 고 [런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)합니다.  
+Windows 런타임을 대상으로 하는 Visual C++ 프로그램을 만들어 명령줄에서 빌드할 수 있습니다. Visual C++는 Windows 런타임 프로그래밍 모델을 대상으로 하는 추가 형식 및 연산자가 있는 Visual C++ 구성 요소 확장명(C++/CX)을 지원합니다. 에서는 C + + 유니버설 Windows 플랫폼 (UWP), Windows Phone 8.1 및 Windows 데스크톱 앱을 빌드할 CX 합니다. 자세한 내용은 [는 C+ 둘러보기 + CX](https://msdn.microsoft.com/magazine/dn166929.aspx) 하 고 [런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)합니다.  
   
  이 연습에서는 텍스트 편집기를 사용하여 기본적인 C++/CX 프로그램을 만든 다음 명령줄에서 컴파일합니다. 여기에 나와 있는 내용을 입력하는 대신 C++/CX 프로그램을 직접 사용할 수도 있고 다른 도움말 문서의 C++/CX 코드 샘플을 사용할 수도 있습니다. 이 기술은 UI 요소가 없는 소형 모듈을 빌드하고 테스트하는 데 유용합니다.  
   

@@ -18,17 +18,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e0ce8b2cc412c576b0eded9662d8e70b34cf2ec
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 1469bef0ef41c72e2ff5e59017088cd63f0f9c79
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850815"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194600"
 ---
 # <a name="reference-counting"></a>참조 계산
 자체 COM 개체는 더 이상 사용 되지 않는 것이 생각 하는 경우 메모리에서 개체를 제거 하려면 자동으로 시도 하지 않습니다. 대신 개체 프로그래머는 사용 되지 않는 개체를 제거 해야 합니다. 프로그래머가 여부는 개체를 제거할 수 참조 횟수에 따라 결정 합니다.  
   
- COM 사용 합니다 `IUnknown` 메서드를 [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) 및 [릴리스](http://msdn.microsoft.com/library/windows/desktop/ms682317), 개체에 대 한 인터페이스의 참조 횟수를 관리 합니다. 이러한 메서드를 호출 하는 것에 대 한 일반 규칙은:  
+ COM 사용 합니다 `IUnknown` 메서드를 [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) 및 [릴리스](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release), 개체에 대 한 인터페이스의 참조 횟수를 관리 합니다. 이러한 메서드를 호출 하는 것에 대 한 일반 규칙은:  
   
 -   클라이언트 인터페이스 포인터를 수신할 때마다 `AddRef` 인터페이스에서 호출 해야 합니다.  
   
@@ -43,5 +43,5 @@ ms.locfileid: "37850815"
   
 ## <a name="see-also"></a>참고 항목  
  [COM 소개](../atl/introduction-to-com.md)   
- [참조 횟수를 통해 개체 수명 관리](http://msdn.microsoft.com/library/windows/desktop/ms687260)
+ [참조 횟수를 통해 개체 수명 관리](/windows/desktop/com/managing-object-lifetimes-through-reference-counting)
 

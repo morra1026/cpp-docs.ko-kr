@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 611fecad210b9297b6c7cd16c83dbd0c6c3e41a8
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 68283d8dc0e8b2152b28a2fe2990ddc22fafa6d3
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37886169"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196399"
 ---
 # <a name="ustringorid-class"></a>_U_STRINGorID 클래스
 이 인수 어댑터 클래스에는 리소스 이름 (LPCTSTRs) 또는 리소스 Id (UINTs) 호출자 ID MAKEINTRESOURCE 매크로 사용 하 여 문자열로 변환할 필요 없이 함수에 전달할 수 있습니다.  
@@ -53,7 +53,7 @@ class _U_STRINGorID
 |[_U_STRINGorID::m_lpstr](#_u_stringorid__m_lpstr)|리소스 식별자입니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 클래스는 같은 Windows 리소스 관리 API에 대 한 래퍼를 구현 하는 것에 대 한 설계 되었습니다 합니다 [FindResource](http://msdn.microsoft.com/library/windows/desktop/ms648042)를 [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072), 및 [LoadMenu](http://msdn.microsoft.com/library/windows/desktop/ms647990) 허용 하는 함수 리소스의 이름 또는 ID 수 있는 LPCTSTR 인수  
+ 이 클래스는 같은 Windows 리소스 관리 API에 대 한 래퍼를 구현 하는 것에 대 한 설계 되었습니다 합니다 [FindResource](/windows/desktop/api/winbase/nf-winbase-findresourcea)를 [LoadIcon](/windows/desktop/api/winuser/nf-winuser-loadicona), 및 [LoadMenu](/windows/desktop/api/winuser/nf-winuser-loadmenua) 허용 하는 함수 리소스의 이름 또는 ID 수 있는 LPCTSTR 인수  
   
  클래스는 두 개의 생성자 오버 로드를 정의 합니다: 하나 LPCTSTR 인수를 받아서 다른 UINT 인수를 수락 합니다. UINT 인수 MAKEINTRESOURCE 매크로 및 클래스의 단일 데이터 멤버에 저장 된 결과 사용 하 여 Windows 리소스 관리 함수를 사용 하 여 호환 가능한 리소스 형식으로 변환할 [m_lpstr](#_u_stringorid__m_lpstr)합니다. LPCTSTR 생성자의 인수는 변환 없이 직접 저장 됩니다.  
   

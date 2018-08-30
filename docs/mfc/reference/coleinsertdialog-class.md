@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 257573bad0650f7e721c2d584ed8f22ba7b2d31b
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 29e176742295b0e2f40e19c063aae38079ac3537
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026226"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196222"
 ---
 # <a name="coleinsertdialog-class"></a>COleInsertDialog 클래스
 OLE 개체 삽입 대화 상자에 사용합니다.  
@@ -82,7 +82,7 @@ class COleInsertDialog : public COleDialog
 > [!NOTE]
 >  응용 프로그램 컨테이너 마법사에서 생성 된 코드는이 클래스를 사용합니다.  
   
- 자세한 내용은 참조는 [OLEUIINSERTOBJECT](http://msdn.microsoft.com/library/windows/desktop/ms691316) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [OLEUIINSERTOBJECT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiinsertobjecta) Windows SDK에는 구조입니다.  
   
  OLE 관련 대화 상자에 대 한 자세한 내용은 문서 참조 [OLE의 대화 상자](../../mfc/dialog-boxes-in-ole.md)합니다.  
   
@@ -184,7 +184,7 @@ INT_PTR
   
 -   사용자가 대화 상자를 취소 하는 경우 IDCANCEL 합니다.  
   
--   IDABORT 오류가 발생 합니다. IDABORT 반환 되 면 호출 된 [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) 발생 한 오류 유형에 대 한 자세한 정보를 보려면 멤버 함수입니다. 목록을 가능한 오류에 대 한 참조를 [OleUIInsertObject](http://msdn.microsoft.com/library/windows/desktop/ms694325) Windows SDK에는 함수입니다.  
+-   IDABORT 오류가 발생 합니다. IDABORT 반환 되 면 호출 된 [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) 발생 한 오류 유형에 대 한 자세한 정보를 보려면 멤버 함수입니다. 목록을 가능한 오류에 대 한 참조를 [OleUIInsertObject](/windows/desktop/api/oledlg/nf-oledlg-oleuiinsertobjecta) Windows SDK에는 함수입니다.  
   
 ### <a name="remarks"></a>설명  
  멤버를 설정 하 여 다양 한 대화 상자 컨트롤을 초기화 하려는 경우는 [m_io](#m_io) 구조를 호출 하기 전에이 작업을 수행 해야 `DoModal`, 대화 상자 개체에서 생성 된 후 있지만.  
@@ -202,7 +202,7 @@ REFCLSID GetClassID() const;
  선택한 항목에 연결 된 CLSID를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [CLSID 키](http://msdn.microsoft.com/library/windows/desktop/ms691424) Windows SDK에 있습니다.  
+ 자세한 내용은 [CLSID 키](/windows/desktop/com/clsid-key-hklm) Windows SDK에 있습니다.  
   
 ##  <a name="getdrawaspect"></a>  COleInsertDialog::GetDrawAspect  
  사용자가 선택한 항목 아이콘으로 표시할 경우를 결정 하는이 함수를 호출 합니다.  
@@ -221,7 +221,7 @@ DVASPECT GetDrawAspect() const;
 ### <a name="remarks"></a>설명  
  경우에만이 함수를 호출 [DoModal](#domodal) IDOK를 반환 합니다.  
   
- 그리기 측면에 대 한 자세한 내용은 참조 하세요. [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK의 데이터 구조입니다.  
+ 그리기 측면에 대 한 자세한 내용은 참조 하세요. [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK의 데이터 구조입니다.  
   
 ##  <a name="geticonicmetafile"></a>  COleInsertDialog::GetIconicMetafile  
  선택한 항목의 아이콘 모양을 포함 하는 메타 파일에 대 한 핸들을 가져오려면이 함수를 호출 합니다.  
@@ -282,7 +282,7 @@ OLEUIINSERTOBJECT m_io;
 ### <a name="remarks"></a>설명  
  이 구조체의 멤버는 직접 또는 멤버 함수를 통해 수정할 수 있습니다.  
   
- 자세한 내용은 참조는 [OLEUIINSERTOBJECT](http://msdn.microsoft.com/library/windows/desktop/ms691316) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [OLEUIINSERTOBJECT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiinsertobjecta) Windows SDK에는 구조입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [MFC 샘플 OCLIENT](../../visual-cpp-samples.md)   

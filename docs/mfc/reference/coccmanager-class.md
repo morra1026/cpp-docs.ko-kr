@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cabf1cde43f11997de27b2b2f148482d4f024455
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 627fb8e1ad1341257e3064ee195952c37dd4a481
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852369"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195540"
 ---
 # <a name="coccmanager-class"></a>COccManager 클래스
 `COleControlContainer` 및 `COleControlSite` 개체로 구현된 다양한 사용자 지정 컨트롤 사이트를 관리합니다.  
@@ -336,7 +336,7 @@ static void AFX_CDECL SetDefaultButton(
 ### <a name="remarks"></a>설명  
   
 > [!NOTE]
->  컨트롤에 설정 된 상태 비트 OLEMISC_ACTSLIKEBUTTON 있어야 합니다. OLEMISC 플래그에 대 한 자세한 내용은 참조는 [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) Windows SDK에는 항목입니다.  
+>  컨트롤에 설정 된 상태 비트 OLEMISC_ACTSLIKEBUTTON 있어야 합니다. OLEMISC 플래그에 대 한 자세한 내용은 참조는 [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) Windows SDK에는 항목입니다.  
   
 ##  <a name="splitdialogtemplate"></a>  COccManager::SplitDialogTemplate  
  공용 대화 상자 컨트롤에서 ActiveX 컨트롤을 분할 하기 위해 프레임 워크에서 호출 됩니다.  

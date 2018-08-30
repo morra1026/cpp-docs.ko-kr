@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b75016c6c783ae19d8e0f6739adaa34b8da977db
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: ed0603482ffccf1bcb827d67b174768cfd3e3168
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338439"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196799"
 ---
 # <a name="clongbinary-class"></a>CLongBinary 클래스
 데이터베이스에서 매우 큰 이진 데이터 개체(BLOB 또는 "이진 대형 개체"라고도 함) 사용 작업을 간소화합니다.  
@@ -86,7 +86,7 @@ SQLULEN m_dwDataLength;
 ```  
   
 ### <a name="remarks"></a>설명  
- 이 크기는 데이터에 할당 된 메모리 블록의 크기 보다 작을 수 있습니다. Win32 호출 [GLobalSize](http://msdn.microsoft.com/library/windows/desktop/aa366593) 함수 할당 된 크기를 가져옵니다.  
+ 이 크기는 데이터에 할당 된 메모리 블록의 크기 보다 작을 수 있습니다. Win32 호출 [GLobalSize](/windows/desktop/api/winbase/nf-winbase-globalsize) 함수 할당 된 크기를 가져옵니다.  
   
 ##  <a name="m_hdata"></a>  CLongBinary::m_hData  
  실제 binary large object 데이터에 대 한 Windows HGLOBAL 핸들을 저장합니다.  

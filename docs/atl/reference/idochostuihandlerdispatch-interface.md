@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 936d9b30f18f5ef84c68c55a1607cfcd88d45525
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 57dbb9e5ed73ce8ed85d7c90d05705cefdd4ed9b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884615"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194769"
 ---
 # <a name="idochostuihandlerdispatch-interface"></a>IDocHostUIHandlerDispatch 인터페이스
 인터페이스는 Microsoft HTML 구문 분석 및 렌더링 엔진입니다.  
@@ -45,19 +45,19 @@ interface IDocHostUIHandlerDispatch : IDispatch
   
 |||  
 |-|-|  
-|[EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx)|MSHTML 구현에서 호출 [IOleInPlaceActiveObject::EnableModeless](http://msdn.microsoft.com/library/windows/desktop/ms680115)합니다. MSHTML 모달 UI를 표시 하는 경우 라고도 합니다.|  
+|[EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx)|MSHTML 구현에서 호출 [IOleInPlaceActiveObject::EnableModeless](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-enablemodeless)합니다. MSHTML 모달 UI를 표시 하는 경우 라고도 합니다.|  
 |[FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx)|호스트 MSHTML의 데이터 개체를 바꿀 수 있도록 MSHTML에 의해 호스트에서 호출 됩니다.|  
-|[GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx)|대안을 제공 하는 호스트 수 있도록 놓기 대상으로 사용 되는 경우 MSHTML 호출한 [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679)합니다.|  
+|[GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx)|대안을 제공 하는 호스트 수 있도록 놓기 대상으로 사용 되는 경우 MSHTML 호출한 [IDropTarget](/windows/desktop/api/oleidl/nn-oleidl-idroptarget)합니다.|  
 |[GetExternal](https://msdn.microsoft.com/library/aa753256.aspx)|호스트의 IDispatch 인터페이스를 가져올 MSHTML에 의해 호출 됩니다.|  
 |[GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx)|MSHTML 호스트의 UI 기능을 검색합니다.|  
 |[GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx)|MSHTML는 사용자 기본 설정을 저장 하는 레지스트리 키를 반환 합니다.|  
 |[HideUI](https://msdn.microsoft.com/library/aa753259.aspx)|해당 메뉴 및 도구 모음 MSHTML 제거 하는 경우 호출 됩니다.|  
-|[OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx)|MSHTML 구현에서 호출 [IOleInPlaceActiveObject::OnDocWindowActivate](http://msdn.microsoft.com/library/windows/desktop/ms687281)합니다.|  
-|[OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx)|MSHTML 구현에서 호출 [ioleinplaceactiveobject:: Onframewindowactivate](http://msdn.microsoft.com/library/windows/desktop/ms683969)합니다.|  
-|[ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx)|MSHTML 구현에서 호출 [IOleInPlaceActiveObject::ResizeBorder](http://msdn.microsoft.com/library/windows/desktop/ms680053)합니다.|  
+|[OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx)|MSHTML 구현에서 호출 [IOleInPlaceActiveObject::OnDocWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate)합니다.|  
+|[OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx)|MSHTML 구현에서 호출 [ioleinplaceactiveobject:: Onframewindowactivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate)합니다.|  
+|[ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx)|MSHTML 구현에서 호출 [IOleInPlaceActiveObject::ResizeBorder](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder)합니다.|  
 |[ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx)|상황에 맞는 메뉴를 표시할 MSHTML에서 호출 됩니다.|  
 |[ShowUI](https://msdn.microsoft.com/library/aa753265.aspx)|호스트를 MSHTML 메뉴 및 도구 모음을 교체할 수 있습니다.|  
-|[TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx)|MSHTML에 의해 호출 하면 [ioleinplaceactiveobject:: Translateaccelerator](http://msdn.microsoft.com/library/windows/desktop/ms693360) 하거나 [iolecontrolsite:: Translateaccelerator](http://msdn.microsoft.com/library/windows/desktop/ms693756) 라고 합니다.|  
+|[TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx)|MSHTML에 의해 호출 하면 [ioleinplaceactiveobject:: Translateaccelerator](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) 하거나 [iolecontrolsite:: Translateaccelerator](/windows/desktop/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) 라고 합니다.|  
 |[TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx)|호스트가 로드할 URL을 수정할 수 있도록 MSHTML에 의해 호출 됩니다.|  
 |[UpdateUI](https://msdn.microsoft.com/library/aa753268.aspx)|명령 상태가 변경되었음을 호스트에 알립니다.|  
   

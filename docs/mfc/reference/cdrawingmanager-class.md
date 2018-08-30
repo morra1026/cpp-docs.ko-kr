@@ -66,12 +66,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f19461b04f98ab06a2c828b0f61fb556f9a7d7d
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 52ded6eb4b6b757934bcdb62c280c6d57e1b171e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39209172"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196062"
 ---
 # <a name="cdrawingmanager-class"></a>CDrawingManager 클래스
 `CDrawingManager` 클래스는 복합 그리기 알고리즘을 구현 합니다.  
@@ -169,7 +169,7 @@ static HBITMAP __stdcall CreateBitmap_32(
  이 메서드가 성공할 경우 새로 만든된 DIB 비트맵에 대 한 핸들 그렇지 않으면 NULL입니다.  
   
 ### <a name="remarks"></a>설명  
- DIB 비트맵을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [CreateDIBSection](http://msdn.microsoft.com/library/windows/desktop/dd183491)합니다.  
+ DIB 비트맵을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibitmap)합니다.  
   
 ##  <a name="drawalpha"></a>  CDrawingManager::DrawAlpha  
  투명 하거나 반투명 픽셀로 있는 비트맵을 표시 합니다.  
@@ -196,7 +196,7 @@ void DrawAlpha(
  소스 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드가 두 비트맵의 알파 혼합을 수행합니다. 알파 혼합 하는 방법에 대 한 자세한 내용은 참조 하세요. [해 서 AlphaBlend](http://msdn.microsoft.com/library/windows/desktop/dd183351) Windows SDK에 있습니다.  
+ 이 메서드가 두 비트맵의 알파 혼합을 수행합니다. 알파 혼합 하는 방법에 대 한 자세한 내용은 참조 하세요. [해 서 AlphaBlend](/windows/desktop/api/wingdi/nf-wingdi-alphablend) Windows SDK에 있습니다.  
   
 ##  <a name="drawellipse"></a>  CDrawingManager::DrawEllipse  
  제공 된 테두리 및 채우기 색을 사용 하 여 타원을 그립니다.  
@@ -369,7 +369,7 @@ BOOL DrawShadow(
   
  설정 하는 경우 *bRightShadow* FALSE로 그림자를 그릴 사각형 영역의 왼쪽 아래 하 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `DrawShadow` 메서드는 `CDrawingManager` 클래스입니다. 이 코드 조각은의 일부인 합니다 [Prop 시트 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_PropSheetDemo#1](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_1.cpp)]  
@@ -447,7 +447,7 @@ void FillGradient(
  [in] *nEndFlatPercentage*  
  사각형의 백분율입니다 `FillGradient` 채웁니다 *colorFinish* 그라데이션의 완료 된 후입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `FillGradient` 메서드는 `CDrawingManager` 클래스입니다. 이 코드 조각은의 일부인 합니다 [MS Office 2007 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_MSOffice2007Demo#12](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_2.cpp)]  
@@ -479,7 +479,7 @@ void FillGradient2 (
 ### <a name="remarks"></a>설명  
  사용 하 여 *nAngle* 색 그라데이션의 방향을 지정 합니다. 색 그라데이션의 방향을 지정 하는 경우 또한 지정할 색 그라데이션의 시작 되는 위치입니다. 값이 0에 대 한 *nAngle* 그라데이션의 사각형의 위쪽에서 시작을 나타냅니다. 로 *nAngle* 증가 하면 시작 되는 위치 그라데이션의 각도에 따라 시계 반대 방향에서 이동에 대 한 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `FillGradient2` 메서드는 `CDrawingManager` 클래스입니다. 이 코드 조각은의 일부인 합니다 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_NewControls#37](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_3.cpp)]  

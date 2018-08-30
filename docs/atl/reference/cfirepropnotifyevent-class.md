@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 20fd9c660f036c04ea2ca7d06d04315391504e3e
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 3ec6fb0d54cd748b707c81b88e09fb7d846aaa2f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881531"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194426"
 ---
 # <a name="cfirepropnotifyevent-class"></a>CFirePropNotifyEvent 클래스
 이 클래스는 컨트롤 속성 변경에 대 한 컨테이너의 싱크를 알리기 위한 메서드를 제공 합니다.  
@@ -60,7 +60,7 @@ class CFirePropNotifyEvent
  **헤더:** atlctl.h  
   
 ##  <a name="fireonchanged"></a>  CFirePropNotifyEvent::FireOnChanged  
- 모든 알립니다 연결 [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638) (개체의 모든 연결 지점)에 지정 된 개체 속성 변경 된 인터페이스입니다.  
+ 모든 알립니다 연결 [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) (개체의 모든 연결 지점)에 지정 된 개체 속성 변경 된 인터페이스입니다.  
   
 ```
 static HRESULT FireOnChanged(IUnknown* pUnk, DISPID dispID);
@@ -80,7 +80,7 @@ static HRESULT FireOnChanged(IUnknown* pUnk, DISPID dispID);
  이 함수는 안전 컨트롤 연결 포인트를 지원 하지 않는 경우에 호출 합니다.  
   
 ##  <a name="fireonrequestedit"></a>  CFirePropNotifyEvent::FireOnRequestEdit  
- 모든 알립니다 연결 [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638) (개체의 모든 연결 지점)에 지정 된 개체 속성 변경 되려고 하는 인터페이스입니다.  
+ 모든 알립니다 연결 [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) (개체의 모든 연결 지점)에 지정 된 개체 속성 변경 되려고 하는 인터페이스입니다.  
   
 ```
 static HRESULT FireOnRequestEdit(IUnknown* pUnk, DISPID dispID);

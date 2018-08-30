@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9880bdbc608933a1b6cfffe3473a9b07f0252ae
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f75aa6a32277fda0796fe2433062f5062fdd47eb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405369"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196081"
 ---
 # <a name="memcpy-wmemcpy"></a>memcpy, wmemcpy
 
@@ -72,21 +72,21 @@ wchar_t *wmemcpy(
 
 ## <a name="return-value"></a>반환 값
 
-값 *dest*합니다.
+변수의 *dest*합니다.
 
 ## <a name="remarks"></a>설명
 
-**memcpy** 복사본 *count* 바이트 *src* 를 *dest*; **wmemcpy** 복사본 *count* 와이드 문자 (2 바이트)입니다. 소스와 대상이 겹치는 경우의 동작 **memcpy** 정의 되지 않습니다. 사용 하 여 **memmove** 하면 겹치는 영역을 처리 하도록 합니다.
+**memcpy** 복사본 *개수* 바이트 *src* 하 *dest*; **wmemcpy** 복사본 *개수* 와이드 문자 (2 바이트)입니다. 소스와 대상이 겹치는 경우의 동작은 **memcpy** 정의 되지 않습니다. 사용 하 여 **memmove** 겹치는 영역을 처리 하도록 합니다.
 
 > [!IMPORTANT]
-> 대상 버퍼의 크기가 소스 버퍼의 크기보다 크거나 같아야 합니다. 자세한 내용은 [버퍼 오버런 방지](http://msdn.microsoft.com/library/windows/desktop/ms717795)를 참조하세요.
+> 대상 버퍼의 크기가 소스 버퍼의 크기보다 크거나 같아야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
 > [!IMPORTANT]
-> 매우 많은 버퍼 오버런과 보안 악용 가능성이 되었습니다 추적의 부적절 한 사용 하기 때문에 **memcpy**,이 함수는 sdl "금지 된" 함수에서의 보안 개발 수명 주기 ().  일부 VC + + 라이브러리 클래스 계속 사용 하는 것을 확인할 수 **memcpy**합니다.  VC + + 컴파일러 최적화 프로그램에 대 한 호출을 내보내는 경우도 해질 수는 또한 **memcpy**합니다.  Visual C++ 제품은 SDL 프로세스에 따라 개발되었으므로 이처럼 금지된 함수의 사용이 철저하게 평가되었습니다.  라이브러리에서 이러한 함수를 사용하는 경우에는 이러한 호출을 통해 버퍼 오버런이 허용되지 않도록 호출을 면밀하게 검사했습니다.  컴파일러의 경우 때로는 특정 코드 패턴은 동일한 것으로 인식의 패턴 **memcpy**, 함수에 대 한 호출으로 바뀌는 합니다.  이러한 경우의 사용 **memcpy** 은 더 이상 원본 보다 안전 하지 않은 지침 되었을; 성능 튜닝에 대 한 호출 하도록 최적화 된 단순히가 **memcpy** 함수입니다.  "안전한" CRT 함수를 사용한다고 해서 보안이 보장되는 것은 아니듯이(위험 가능성만 낮아질 뿐임), "금지된" 함수를 사용한다고 해서 반드시 위험한 것도 아니며 보안을 유지하려면 더욱 철저한 확인이 필요할 뿐입니다.
+> 많은 버퍼 오버런와 보안 악용 가능성이 있는의 부적절 한 사용 현황 추적 하므로 **memcpy**,이 함수는 보안 개발 수명 주기 (SDL)에서 "금지 된" 함수 간의 나열 됩니다.  일부 VC + + 라이브러리 클래스 계속 사용 하는 것을 관찰할 수 있습니다 **memcpy**합니다.  VC + + 컴파일러 최적화 프로그램에 대 한 호출을 내보내는 경우도 많으며 게다가 **memcpy**합니다.  Visual C++ 제품은 SDL 프로세스에 따라 개발되었으므로 이처럼 금지된 함수의 사용이 철저하게 평가되었습니다.  라이브러리에서 이러한 함수를 사용하는 경우에는 이러한 호출을 통해 버퍼 오버런이 허용되지 않도록 호출을 면밀하게 검사했습니다.  컴파일러의 경우 경우에 따라 특정 코드 패턴은 동일한 것으로 인식 패턴 **memcpy**, 함수 호출으로 바뀌는 합니다.  이러한 경우 사용 **memcpy** 는 원본 보다 더 이상 안전 하지 않은 지침; 성능 튜닝에 대 한 호출에 최적화 된가 단순히 **memcpy** 함수입니다.  "안전한" CRT 함수를 사용한다고 해서 보안이 보장되는 것은 아니듯이(위험 가능성만 낮아질 뿐임), "금지된" 함수를 사용한다고 해서 반드시 위험한 것도 아니며 보안을 유지하려면 더욱 철저한 확인이 필요할 뿐입니다.
 >
-> 때문에 **memcpy** VC + + 컴파일러 및 라이브러리 사용 되므로 신중 하 게 방법이 필요 일반적으로 SDL과 호환 되는 코드 내에서 이러한 호출이 허용 됩니다.  **memcpy** 응용 프로그램 소스 코드의 호출은 보안 전문가가 해당 사용을 검토 한 된 경우에 SDL과 호환 됩니다.
+> 때문에 **memcpy** VC + + 컴파일러 및 라이브러리에서 사용 되므로 신중 하 게 방법이 필요, SDL과 호환 되는 코드 내에서 이러한 호출이 허용 됩니다.  **memcpy** 응용 프로그램 소스 코드에 도입 된 호출은 SDL과 호환 사용 하는 보안 전문가가 검토 된 경우.
 
-**memcpy** 및 **wmemcpy** 함수는 경우에 중단 될 상수 **_CRT_SECURE_DEPRECATE_MEMORY** 위해에서 포함 문 이전 정의 사용 되지 않는 경우, 아래 예제 처럼 함수:
+합니다 **memcpy** 하 고 **wmemcpy** 함수는 경우에 중단 될 상수 **_CRT_SECURE_DEPRECATE_MEMORY** 위해에서 포함 문 이전에 정의 된 사용 되지 않는 경우, 아래 예제와 같이 함수:
 
 ```C
 #define _CRT_SECURE_DEPRECATE_MEMORY
@@ -102,7 +102,7 @@ wchar_t *wmemcpy(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**memcpy**|\<memory.h> 또는 \<string.h>|
 |**wmemcpy**|\<wchar.h>|
@@ -111,7 +111,7 @@ wchar_t *wmemcpy(
 
 ## <a name="example"></a>예제
 
-참조 [memmove](memmove-wmemmove.md) 샘플을 사용 하는 방법에 대 한 **memcpy**합니다.
+참조 [memmove](memmove-wmemmove.md) 사용 하는 방법의 예제 **memcpy**합니다.
 
 ## <a name="see-also"></a>참고자료
 

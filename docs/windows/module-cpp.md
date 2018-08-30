@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6e25f33e882769219200e6b9a6f8a0949a01d661
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a119ebcccea3881d7b595e0581e23f53c656b91c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593359"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200220"
 ---
 # <a name="module-c"></a>module(C++)
 
@@ -73,7 +73,7 @@ ms.locfileid: "42593359"
 라이브러리에 대한 고유 ID입니다. 이 매개 변수를 생략하면 라이브러리에 대한 ID가 자동으로 생성됩니다. 검색 해야 합니다 *uuid* 의 라이브러리 블록의 식별자를 사용 하 여 수행할 수 있습니다 **__uuidof (** *libraryname* **)** 합니다.
 
 *lcid*  
-지역화 매개 변수입니다. 자세한 내용은 [lcid](http://msdn.microsoft.com/library/windows/desktop/aa367067) 를 참조하세요.
+지역화 매개 변수입니다. 참조 [lcid](/windows/desktop/Midl/lcid) 자세한 내용은 합니다.
 
 *컨트롤* (선택 사항)  
 라이브러리의 모든 coclass가 컨트롤임을 지정합니다.
@@ -82,7 +82,7 @@ ms.locfileid: "42593359"
 형식 라이브러리를 지정합니다.
 
 *helpstringdll* (선택 사항)  
-문서 문자열 조회를 수행하는 데 사용할 .dll 파일의 이름을 설정합니다. 자세한 내용은 [helpstringdll](http://msdn.microsoft.com/library/windows/desktop/aa366860) 을 참조하세요.
+문서 문자열 조회를 수행하는 데 사용할 .dll 파일의 이름을 설정합니다. 참조 [helpstringdll](/windows/desktop/Midl/helpstringdll) 자세한 내용은 합니다.
 
 *helpfile* (선택 사항)  
 이름을 합니다 **도움말** 형식 라이브러리 파일입니다.
@@ -94,10 +94,10 @@ ms.locfileid: "42593359"
 자세한 내용은 [helpstringcontext](../windows/helpstringcontext.md) 를 참조하세요.
 
 *숨겨진* (선택 사항)  
-전체 라이브러리가 표시되지 않도록 합니다. 이 사용법은 컨트롤과 함께 사용하기 위한 것입니다. 호스트는 확장된 속성을 사용하여 컨트롤을 래핑하는 새로운 형식 라이브러리를 만들어야 합니다. 자세한 내용은 [hidden](http://msdn.microsoft.com/library/windows/desktop/aa366861) MIDL 특성을 참조하세요.
+전체 라이브러리가 표시되지 않도록 합니다. 이 사용법은 컨트롤과 함께 사용하기 위한 것입니다. 호스트는 확장된 속성을 사용하여 컨트롤을 래핑하는 새로운 형식 라이브러리를 만들어야 합니다. 참조 된 [숨겨진](/windows/desktop/Midl/hidden) 자세한 MIDL 특성입니다.
 
 *제한 된* (선택 사항)  
-라이브러리의 멤버를 임의로 호출할 수 없습니다. 자세한 내용은 [restricted](http://msdn.microsoft.com/library/windows/desktop/aa367157) MIDL 특성을 참조하세요.
+라이브러리의 멤버를 임의로 호출할 수 없습니다. 참조 된 [제한](/windows/desktop/Midl/restricted) 자세한 MIDL 특성입니다.
 
 *사용자 지정* (선택 사항)  
 하나 이상의 특성입니다. [custom](../windows/custom-cpp.md) 특성과 비슷합니다. 첫 번째 매개 변수를 *사용자 지정* 특성의 GUID입니다. 예를 들어:
@@ -124,21 +124,21 @@ ATL을 사용하는 프로젝트 내에서 이 특성을 사용하는 경우 특
 
 - `type` = **dll**
 
-   [CAtlDllModuleT](../atl/reference/catldllmodulet-class.md) 는 COM 서버에 필요한 기본 클래스 및 표준 DLL 진입점으로 사용됩니다. 이러한 진입점은 [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583), [DllRegisterServer](http://msdn.microsoft.com/library/windows/desktop/ms682162), [DllUnRegisterServer](http://msdn.microsoft.com/library/windows/desktop/ms691457), [DllCanUnloadNow](http://msdn.microsoft.com/library/windows/desktop/ms690368)및 [DllGetClassObject](http://msdn.microsoft.com/library/windows/desktop/dd797891)입니다.
+   [CAtlDllModuleT](../atl/reference/catldllmodulet-class.md) 는 COM 서버에 필요한 기본 클래스 및 표준 DLL 진입점으로 사용됩니다. 이러한 진입점은 [DllMain](/windows/desktop/Dlls/dllmain), [DllRegisterServer](https://msdn.microsoft.com/library/windows/desktop/ms682162), [DllUnRegisterServer](https://msdn.microsoft.com/library/windows/desktop/ms691457)하십시오 [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), 및 [ DllGetClassObject](https://msdn.microsoft.com/library/windows/desktop/dd797891)합니다.
 
 - `type` = **exe**
 
-   [CAtlExeModuleT](../atl/reference/catlexemodulet-class.md) 는 기본 클래스 및 표준 실행 파일 진입점 [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559)으로 사용됩니다.
+   [CAtlExeModuleT](../atl/reference/catlexemodulet-class.md) 기본 클래스 및 표준 실행 파일 진입점으로 사용 됩니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559)합니다.
 
 - `type` = **service**
 
-   [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) 는 기본 클래스 및 표준 실행 파일 진입점 [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559)으로 사용됩니다.
+   [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) 기본 클래스 및 표준 실행 파일 진입점으로 사용 됩니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559)합니다.
 
 - `type` = **unspecified**
 
    모듈 특성과 관련된 ATL 코드의 삽입이 사용되지 않습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드는 생성된 .idl 파일의 라이브러리 블록을 만드는 방법을 보여 줍니다.
 
@@ -193,7 +193,7 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 [독립 실행형 특성](../windows/stand-alone-attributes.md)  
 [Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  
 [usesgetlasterror](../windows/usesgetlasterror.md)  
-[라이브러리](http://msdn.microsoft.com/library/windows/desktop/aa367069)  
+[라이브러리](/windows/desktop/Midl/library)  
 [helpcontext](../windows/helpcontext.md)  
 [helpstring](../windows/helpstring.md)  
 [helpfile](../windows/helpfile.md)  

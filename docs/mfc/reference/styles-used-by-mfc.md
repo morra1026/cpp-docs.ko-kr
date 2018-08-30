@@ -206,12 +206,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 318951b5216513c20cdb21ac4a4fcfff9c3e0ac7
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 6de4e448450aa346875bfef5e9455d713258b5d6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42543213"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199923"
 ---
 # <a name="styles-used-by-mfc"></a>MFC에서 사용하는 스타일  
   
@@ -308,7 +308,7 @@ ms.locfileid: "42543213"
   
 ## <a name="edit-styles"></a>  스타일 편집  
   
-편집 스타일을 적용할 [CEdit 클래스](../../mfc/reference/cedit-class.md) 개체입니다. 스타일의 조합을 지정 합니다 *dwStyle* 의 매개 변수 [CEdit::Create](../../mfc/reference/cedit-class.md#create)합니다. Windows의 편집 컨트롤 스타일에 대 한 자세한 내용은 참조 하세요. [컨트롤 스타일 편집 (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb775464)합니다.  
+편집 스타일을 적용할 [CEdit 클래스](../../mfc/reference/cedit-class.md) 개체입니다. 스타일의 조합을 지정 합니다 *dwStyle* 의 매개 변수 [CEdit::Create](../../mfc/reference/cedit-class.md#create)합니다. Windows의 편집 컨트롤 스타일에 대 한 자세한 내용은 참조 하세요. [컨트롤 스타일 편집 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775464)합니다.  
   
 |스타일|설명|  
 |-----------|-----------------|  
@@ -403,7 +403,7 @@ ms.locfileid: "42543213"
   
 ## <a name="scroll-bar-styles"></a> 스크롤 막대 스타일  
   
-스크롤 막대 스타일을 적용할 [CScrollBar 클래스](../../mfc/reference/cscrollbar-class.md) 개체입니다. 스타일의 조합을 지정 합니다 *dwStyle* 의 매개 변수 [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create)합니다. 스크롤 막대의 Windows에서 컨트롤 스타일에 대 한 자세한 내용은 참조 하세요. [스크롤 막대 컨트롤 스타일 (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb787533)합니다.  
+스크롤 막대 스타일을 적용할 [CScrollBar 클래스](../../mfc/reference/cscrollbar-class.md) 개체입니다. 스타일의 조합을 지정 합니다 *dwStyle* 의 매개 변수 [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create)합니다. 스크롤 막대의 Windows에서 컨트롤 스타일에 대 한 자세한 내용은 참조 하세요. [스크롤 막대 컨트롤 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb787533)합니다.  
   
 |스타일|설명|  
 |-----------|-----------------|  
@@ -420,7 +420,7 @@ ms.locfileid: "42543213"
   
 ## <a name="static-styles"></a> 정적 스타일  
   
-정적 스타일을 적용할 [CStatic 클래스](../../mfc/reference/cstatic-class.md) 개체입니다. 스타일의 조합을 지정 합니다 *dwStyle* 의 매개 변수 [CStatic::Create](../../mfc/reference/cstatic-class.md#create)합니다. Windows에서 정적 컨트롤 스타일에 대 한 자세한 내용은 참조 하세요. [정적 컨트롤 스타일 (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb760773)합니다.  
+정적 스타일을 적용할 [CStatic 클래스](../../mfc/reference/cstatic-class.md) 개체입니다. 스타일의 조합을 지정 합니다 *dwStyle* 의 매개 변수 [CStatic::Create](../../mfc/reference/cstatic-class.md#create)합니다. Windows에서 정적 컨트롤 스타일에 대 한 자세한 내용은 참조 하세요. [정적 컨트롤 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb760773)합니다.  
   
 |스타일|설명|  
 |-----------|-----------------|  
@@ -498,7 +498,7 @@ ms.locfileid: "42543213"
 |WS_EX_CONTEXTHELP|창의 제목 표시줄에 물음표를 포함합니다. 사용자가 물음표를 클릭하면 커서가 포인터가 있는 물음표로 변경됩니다. 자식 창을 클릭 한 다음, 하면 자식이 WM_HELP 메시지를 받습니다.|  
 |WS_EX_CONTROLPARENT|TAB 키를 사용 하 여 창의 자식 창 사이 이동할 수 있습니다.|  
 |WS_EX_DLGMODALFRAME|(선택 사항) 제목 표시줄에서 WS_CAPTION 스타일 플래그를 지정 하는 경우를 사용 하 여 만들 수 있는 이중 테두리가 있는 창을 지정 합니다 *dwStyle* 매개 변수입니다.|  
-|WS_EX_LAYERED|창이 [계층화 된 창](http://msdn.microsoft.com/library/ms632599.aspx#layered)합니다. 창에 있으면이 스타일을 사용할 수 없습니다는 [클래스 스타일](http://msdn.microsoft.com/library/ms633574.aspx#class_styles) CS_OWNDC 또는 있는 합니다. 그러나 Microsoft Windows 8 않습니다 WS_EX_LAYERED 스타일 자식 창에 있는 이전 Windows 버전 지원 최상위 창에 대해서만을 지원 합니다.|  
+|WS_EX_LAYERED|창이 [계층화 된 창](/windows/desktop/winmsg/window-features)합니다. 창에 있으면이 스타일을 사용할 수 없습니다는 [클래스 스타일](/windows/desktop/winmsg/about-window-classes) CS_OWNDC 또는 있는 합니다. 그러나 Microsoft Windows 8 않습니다 WS_EX_LAYERED 스타일 자식 창에 있는 이전 Windows 버전 지원 최상위 창에 대해서만을 지원 합니다.|  
 |WS_EX_LEFT|창 제네릭 왼쪽 맞춤 속성을 제공합니다. 이 값이 기본값입니다.|  
 |WS_EX_LEFTSCROLLBAR|클라이언트 영역의 왼쪽에 세로 스크롤 막대를 배치합니다.|  
 |WS_EX_LTRREADING|왼쪽에서 오른쪽을 사용 하 여 창 텍스트를 표시 읽기 순서 속성입니다. 이 값이 기본값입니다.|  
@@ -524,14 +524,14 @@ ms.locfileid: "42543213"
 [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create)  
 [CStatic::Create](../../mfc/reference/cstatic-class.md#create)  
 [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox)  
-[CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679)  
-[CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680)  
+[CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679)  
+[CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680)  
 [단추 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775951)  
 [콤보 상자 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775796)  
-[편집 컨트롤 스타일 (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb775464)  
+[편집 컨트롤 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775464)  
 [목록 상자 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775149) 
 [MessageBox 함수 (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms645505) 
-[스크롤 막대 컨트롤 스타일 (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb787533)  
-[정적 컨트롤 스타일 (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb760773)  
+[스크롤 막대 컨트롤 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb787533)  
+[정적 컨트롤 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb760773)  
 [창 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms632600)  
 [확장된 창 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/ff700543)  
