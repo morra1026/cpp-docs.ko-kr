@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f55f7d676988e43216adbf6e8a0b6c21afd958a3
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: d8371ec583bd8b9ee4962445e4c2b6f2fbfa6280
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884089"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196964"
 ---
 # <a name="cthreadpool-class"></a>CThreadPool 클래스
 이 클래스는 작업 항목의 큐를 처리 하는 작업자 스레드 풀을 제공 합니다.  
@@ -83,9 +83,9 @@ class CThreadPool : public IThreadPoolConfig
 ## <a name="remarks"></a>설명  
  풀의 스레드 생성 및 풀은 초기화, 크기 조정 또는 종료 될 때 소멸 됩니다. 클래스의 인스턴스이며 *작업자* 풀의 각 작업자 스레드의 스택에 생성 됩니다. 각 인스턴스는 스레드의 수명에 대 한 라이브 됩니다.  
   
- 스레드를 만든 직후 *작업자*:: `Initialize` 해당 스레드와 연결 된 개체에서 호출 됩니다. 스레드의 소멸 직전 *작업자*:: `Terminate` 호출 됩니다. 두 방법 모두 동의 해야 합니다는 **void\***  인수입니다. 이 인수 값의를 통해 스레드 풀으로 전달 합니다 *pvWorkerParam* 의 매개 변수 [CThreadPool::Initialize](#initialize)합니다.  
+ 스레드를 만든 직후 *작업자*::`Initialize` 해당 스레드와 연결 된 개체에서 호출 됩니다. 스레드의 소멸 직전 *작업자*::`Terminate` 호출 됩니다. 두 방법 모두 동의 해야 합니다는 **void** <strong>\*</strong> 인수입니다. 이 인수 값의를 통해 스레드 풀으로 전달 합니다 *pvWorkerParam* 의 매개 변수 [CThreadPool::Initialize](#initialize)합니다.  
   
- 작업자 스레드는 큐와 호출 항목을 가져올 작업 항목 큐 및 작업자 스레드에서 사용할 수 있을 때 작업에 대 한, 합니다 `Execute` 메서드를 *작업자* 해당 스레드에 대 한 개체입니다. 세 가지 항목은 메서드에 전달: 동일한 큐에서 항목 `pvWorkerParam` 전달할 *작업자*:: `Initialize` 하 고 *작업자*:: `Terminate`, 및에 대 한 포인터를 [OVERLAPPED](http://msdn.microsoft.com/library/windows/desktop/ms684342) IO 완료 포트 큐에 사용 된 구조입니다.  
+ 작업자 스레드는 큐와 호출 항목을 가져올 작업 항목 큐 및 작업자 스레드에서 사용할 수 있을 때 작업에 대 한, 합니다 `Execute` 메서드를 *작업자* 해당 스레드에 대 한 개체입니다. 세 가지 항목은 메서드에 전달: 동일한 큐에서 항목 `pvWorkerParam` 전달할 *작업자*:: `Initialize` 하 고 *작업자*:: `Terminate`, 및에 대 한 포인터를 [OVERLAPPED](/windows/desktop/api/minwinbase/ns-minwinbase-_overlapped) IO 완료 포트 큐에 사용 된 구조입니다.  
   
  합니다 *작업자* 클래스는 typedef에서 제공 하 여 스레드 풀에서 대기 하는 항목의 형식을 선언 *작업자*:: `RequestType`합니다. 이 형식은 ULONG_PTR에서 캐스팅 될 수 있어야 합니다.  
   
@@ -308,7 +308,7 @@ void Shutdown(DWORD dwMaxWait = 0) throw();
  스레드 풀 스레드 종료를 대기할 시간 (밀리초) 요청 된 최대 시간입니다. 이 메서드가 설정한 제한 시간을 사용할지 0 또는 값이 없는 경우 [CThreadPool::SetTimeout](#settimeout)합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 풀의 모든 스레드를 종료 요청을 게시합니다. 제한 시간이 만료 되 면이 메서드를 호출 합니다 [TerminateThread](http://msdn.microsoft.com/library/windows/desktop/ms686717) 스레드의 종료 되지 않았습니다. 이 메서드는 클래스의 소멸자에서 자동으로 호출 됩니다.  
+ 이 메서드는 풀의 모든 스레드를 종료 요청을 게시합니다. 제한 시간이 만료 되 면이 메서드를 호출 합니다 [TerminateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminatethread) 스레드의 종료 되지 않았습니다. 이 메서드는 클래스의 소멸자에서 자동으로 호출 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IThreadPoolConfig 인터페이스](../../atl/reference/ithreadpoolconfig-interface.md)   

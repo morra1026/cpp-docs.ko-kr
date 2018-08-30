@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a75d3f40ade42c25de51a3c65c98e8c448b03ed
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: aef6192218f5fae40bca6aa6fb8202a0d238091a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42538739"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195834"
 ---
 # <a name="cmfcshelllistctrl-class"></a>CMFCShellListCtrl 클래스
 `CMFCShellListCtrl` 클래스 Windows 목록 컨트롤 기능을 제공 하 고 셸 항목의 목록을 표시 하는 기능을 포함 하 여 확장 합니다.  
@@ -98,7 +98,7 @@ class CMFCShellListCtrl : public CMFCListCtrl
   
  A [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) 개체와 연결 될 수는 `CMFCShellListCtrl` 전체 탐색기 창을 만드는 개체입니다. 그런 다음에서 항목을 선택 합니다 `CMFCShellTreeCtrl` 하면는 `CMFCShellListCtrl` 선택한 항목의 콘텐츠를 나열 하는 개체입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 개체를 만드는 방법의 `CMFCShellListCtrl` 클래스 및 현재 표시 된 폴더의 상위 폴더를 표시 하는 방법입니다. 이 코드 조각은의 일부인 합니다 [탐색기 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_Explorer#1](../../mfc/reference/codesnippet/cpp/cmfcshelllistctrl-class_1.h)]  
@@ -212,7 +212,7 @@ const IShellFolder* GetCurrentShellFolder() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 에 대 한 포인터를 [IShellFolder 인터페이스](http://msdn.microsoft.com/library/windows/desktop/bb775075) 선택한 개체에 대 한 합니다.  
+ 에 대 한 포인터를 [IShellFolder 인터페이스](https://msdn.microsoft.com/library/windows/desktop/bb775075) 선택한 개체에 대 한 합니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 개체가 없습니다. 현재 선택 되어 있으면 NULL을 반환 합니다.  
@@ -247,7 +247,7 @@ SHCONTF GetItemTypes() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- A [SHCONTF](http://msdn.microsoft.com/library/windows/desktop/bb762539) 에 나열 된 항목의 형식을 포함 하는 값은 `CMFCShellListCtrl`합니다.  
+ A [SHCONTF](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-_shcontf) 에 나열 된 항목의 형식을 포함 하는 값은 `CMFCShellListCtrl`합니다.  
   
 ### <a name="remarks"></a>설명  
  에 나열 된 항목의 유형을 설정 하는 `CMFCShellListCtrl`, 호출 [CMFCShellListCtrl::SetItemTypes](#setitemtypes)합니다.  
@@ -406,7 +406,7 @@ void SetItemTypes(SHCONTF nTypes);
  목록 항목의 형식에 `CMFCShellListCtrl` 개체 지원 합니다.  
   
 ### <a name="remarks"></a>설명  
- 항목 형식 목록에 대 한 자세한 내용은 참조 [SHCONTF](http://msdn.microsoft.com/library/windows/desktop/bb762539)합니다.  
+ 항목 형식 목록에 대 한 자세한 내용은 참조 [SHCONTF](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-_shcontf)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [계층 구조 차트](../../mfc/hierarchy-chart.md)   

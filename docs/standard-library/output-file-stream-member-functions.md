@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b79700277486c43035bd7d448fc942f785f4cc8
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: ab1d229f2c1933025993aa1bc3a3a8b91b41a2cc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959940"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195817"
 ---
 # <a name="output-file-stream-member-functions"></a>Output File Stream Member 함수
 
@@ -96,7 +96,7 @@ int main( )
 }
 ```
 
-`write` 함수에는 되므로 전체 클래스 구조체가 기록 됩니다 null 문자에 도달할 때까지 중지 되지 않습니다. 함수는 두 개의 인수:는 **char** 포인터와 쓸 문자 수입니다. 구조체 개체의 주소 앞에는 **char\*** 로의 캐스팅이 필요합니다.
+`write` 함수에는 되므로 전체 클래스 구조체가 기록 됩니다 null 문자에 도달할 때까지 중지 되지 않습니다. 함수는 두 개의 인수:는 **char** 포인터와 쓸 문자 수입니다. 참고로 캐스팅이 필요 **char** <strong>\*</strong> 구조체 개체의 주소 앞입니다.
 
 ## <a name="the-seekp-and-tellp-functions"></a>seekp 및 tellp 함수
 
@@ -114,12 +114,12 @@ int main( )
 
 |기능|반환 값|
 |--------------|------------------|
-|[bad](http://msdn.microsoft.com/Library/4038d331-e9c9-48b0-bf49-c6505744469c)|복구할 수 없는 오류가 발생하는 경우 **true**를 반환합니다.|
-|[fail](http://msdn.microsoft.com/Library/619f1b36-1e72-4551-8b48-888ae4e370d2)|복구할 수 없는 오류 또는 "정상" 상황(예: 변환 오류)이 발생하거나 파일을 찾을 수 없는 경우 **true**를 반환합니다. 처리를 호출한 후 자주 다시 시작할 수 `clear` 0 인수를 사용 합니다.|
-|[good](http://msdn.microsoft.com/Library/77f0aa17-2ae1-48ae-8040-592d301e3972)|복구 가능 여부와 관계없이 오류 조건이 없으며 파일 끝 플래그가 설정되어 있지 않은 경우 **true**를 반환합니다.|
-|[eof](http://msdn.microsoft.com/Library/3087f631-1268-49cd-86cf-ff4108862329)|파일 끝 조건에서 **true**를 반환합니다.|
-|[clear](http://msdn.microsoft.com/Library/dc172694-1267-45f8-8f5c-e822e16fc271)|내부 오류 상태를 설정합니다. 기본 인수를 사용하여 호출된 경우에는 모든 오류 비트를 지웁니다.|
-|[rdstate](http://msdn.microsoft.com/Library/e235e4e2-7e95-4777-a160-3938d263dd9c)|현재 오류 상태를 반환합니다.|
+|[bad](basic-ios-class.md#bad)|복구할 수 없는 오류가 발생하는 경우 **true**를 반환합니다.|
+|[fail](basic-ios-class.md#fail)|복구할 수 없는 오류 또는 "정상" 상황(예: 변환 오류)이 발생하거나 파일을 찾을 수 없는 경우 **true**를 반환합니다. 처리를 호출한 후 자주 다시 시작할 수 `clear` 0 인수를 사용 합니다.|
+|[good](basic-ios-class.md#good)|복구 가능 여부와 관계없이 오류 조건이 없으며 파일 끝 플래그가 설정되어 있지 않은 경우 **true**를 반환합니다.|
+|[eof](basic-ios-class.md#eof)|파일 끝 조건에서 **true**를 반환합니다.|
+|[clear](basic-ios-class.md#clear)|내부 오류 상태를 설정합니다. 기본 인수를 사용하여 호출된 경우에는 모든 오류 비트를 지웁니다.|
+|[rdstate] (basic-ios-class.md #rdstate|현재 오류 상태를 반환합니다.|
 
 **!** 연산자는 동일한 기능을 수행 하도록 오버 로드는 `fail` 함수입니다. 따라서 다음 식은
 

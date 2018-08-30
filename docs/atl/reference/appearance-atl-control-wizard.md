@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bc6080bf66ad9bb9d436832b1066214f8cdbfb7
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 7b3db7fbcf190aa2dda05cabd2d1553824fb076e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42571713"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194729"
 ---
 # <a name="appearance-atl-control-wizard"></a>모양, ATL 컨트롤 마법사
 여기 "검색 결과" 요약을 삽입 합니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "42571713"
 **상태 보기**  
 컨테이너 내의 컨트롤의 모양을 설정합니다.  
   
- -   **불투명**: 비트 VIEWSTATUS_OPAQUE 설정 합니다 [VIEWSTATUS](http://msdn.microsoft.com/library/windows/desktop/ms687201) 열거 및에 전달 된 전체 컨트롤 사각형을 그립니다 합니다 [CComControlBase::OnDraw](../../atl/reference/ccomcontrolbase-class.md#ondraw) 메서드. 컨트롤 완전히 불투명 나타나고 컨트롤 경계 뒤 컨테이너 하나도 보여 줍니다.      
+ -   **불투명**: 비트 VIEWSTATUS_OPAQUE 설정 합니다 [VIEWSTATUS](/windows/desktop/api/ocidl/ne-ocidl-tagviewstatus) 열거 및에 전달 된 전체 컨트롤 사각형을 그립니다 합니다 [CComControlBase::OnDraw](../../atl/reference/ccomcontrolbase-class.md#ondraw) 메서드. 컨트롤 완전히 불투명 나타나고 컨트롤 경계 뒤 컨테이너 하나도 보여 줍니다.      
       
         이 컨테이너 컨트롤을 더 빠르게 그릴 수 있습니다. 이 옵션을 선택 하지 않으면 컨트롤이 투명 한 부분을 포함할 수 있습니다.  
       
@@ -82,7 +82,7 @@ ms.locfileid: "42571713"
   
  -   **런타임에 보이지 않는**: 런타임 시 표시 되지 않도록 하려면 컨트롤을 설정 합니다. 시간 제한 간격 이벤트를 발생 시키고 같은 백그라운드에서 작업을 수행할 보이지 않는 컨트롤을 사용할 수 있습니다.  
       
- -   **단추 처럼 작동**: 비트 OLEMISC_ACTSLIKEBUTTON를 설정 합니다 [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) 열거형 컨트롤 역할을 사용 하도록 설정 하려면 같은 단추. 컨테이너가 기본 단추 컨트롤의 클라이언트 사이트에 표시 하는 경우이 옵션을 선택 하면 두꺼운 프레임 그려지고 기본 단추로 표시 되도록 단추 컨트롤이 사용 하도록 설정 합니다. 참조 [CComControlBase::GetAmbientDisplayAsDefault](../../atl/reference/ccomcontrolbase-class.md#getambientdisplayasdefault) 자세한 내용은 합니다.  
+ -   **단추 처럼 작동**: 비트 OLEMISC_ACTSLIKEBUTTON를 설정 합니다 [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) 열거형 컨트롤 역할을 사용 하도록 설정 하려면 같은 단추. 컨테이너가 기본 단추 컨트롤의 클라이언트 사이트에 표시 하는 경우이 옵션을 선택 하면 두꺼운 프레임 그려지고 기본 단추로 표시 되도록 단추 컨트롤이 사용 하도록 설정 합니다. 참조 [CComControlBase::GetAmbientDisplayAsDefault](../../atl/reference/ccomcontrolbase-class.md#getambientdisplayasdefault) 자세한 내용은 합니다.  
       
   -   **레이블 처럼 작동**: 컨트롤 컨테이너의 기본 레이블을 바꿀 수 있도록 OLEMISC_ACTSLIKELABEL OLEMISC 열거형에서 비트를 설정 합니다. 컨테이너 경우 아무 것도이 플래그를 사용 하 여 수행할 작업을 결정 합니다.  
   

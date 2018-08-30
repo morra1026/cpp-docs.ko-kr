@@ -35,12 +35,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eeba73be12fdf8e068800d192cef7df9462aa4fe
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b6600706690dea3573f8eb1aa47f68b592b3bff1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402789"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200309"
 ---
 # <a name="mbtowc-mbtowcl"></a>mbtowc, _mbtowc_l
 
@@ -65,7 +65,7 @@ int _mbtowc_l(
 ### <a name="parameters"></a>매개 변수
 
 *wchar*<br/>
-와이드 문자 주소입니다 (형식 **wchar_t**).
+와이드 문자의 주소입니다 (형식 **wchar_t**).
 
 *mbchar*<br/>
 바이트 시퀀스(멀티바이트 문자)의 주소입니다.
@@ -78,15 +78,15 @@ int _mbtowc_l(
 
 ## <a name="return-value"></a>반환 값
 
-경우 **mbchar** 않습니다 **NULL** 경우 개체는 *mbchar* forms 유효한 멀티 바이트 문자를 가리키는 **mbtowc** 길이 반환 멀티 바이트 문자의 바이트 수입니다. 경우 *mbchar* 은 **NULL** 또는 가리키는 개체가 와이드 null 문자 (L'\ \0'), 함수가 0을 반환 합니다. 경우 개체는 *mbchar* 가리키는 첫 번째 내에서 유효한 멀티 바이트 문자를 형성 하지 않습니다 *count* 문자를-1을 반환 합니다.
+하는 경우 **mbchar** 아닙니다 **NULL** 경우에 개체는 *mbchar* forms 유효한 멀티 바이트 문자를 가리키는 **mbtowc** 길이 반환 합니다. 멀티 바이트 문자의 바이트입니다. 하는 경우 *mbchar* 됩니다 **NULL** 또는 가리키는 개체가 와이드 문자 null 문자 (L'\ \0'), 함수가 0을 반환 합니다. 하는 경우 개체는 *mbchar* 가리키는 첫 번째 내에서 유효한 멀티 바이트 문자를 구성 하지 않는 *개수* 문자를-1을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**mbtowc** 변환 함수 *count* 또는 더 적은 바이트에서 가리키는 *mbchar*경우 *mbchar* 않습니다 **NULL**를 해당 와이드 문자를 합니다. **mbtowc** 에 결과 와이드 문자가 저장 *wchar,* 경우 *wchar* 않습니다 **NULL**합니다. **mbtowc** 을 검사 하지 않습니다 이상 **MB_CUR_MAX** 바이트입니다. **mbtowc** 로캘 종속 동작에 대 한 현재 로캘을 사용 **_mbtowc_l** 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+합니다 **mbtowc** 변환 함수 *개수* 가리키는 바이트 *mbchar*이면 *mbchar* 아닙니다 **NULL**를 해당 와이드 문자로 합니다. **mbtowc** 결과 와이드 문자를 저장 *wchar* 하는 경우 *wchar* 아닙니다 **NULL**합니다. **mbtowc** 검사 하지 않습니다 둘 **MB_CUR_MAX** 바이트입니다. **mbtowc** 로캘 종속 동작에 현재 로캘을 사용 **_mbtowc_l** 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**mbtowc**|\<stdlib.h>|
 |**_mbtowc_l**|\<stdlib.h>|
@@ -156,7 +156,7 @@ Attempt to convert a NULL pointer to a wide character:
 ## <a name="see-also"></a>참고자료
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
-[MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072)<br/>
+[MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar)<br/>
 [로캘](../../c-runtime-library/locale.md)<br/>
 [멀티바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>

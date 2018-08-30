@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 66c85999e70e505176700ecaac69b75048ce2422
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a9d65f77126ceb4268d41610c6d5fe3a07968d02
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595244"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200570"
 ---
 # <a name="aggregatable"></a>aggregatable
 
@@ -49,7 +49,7 @@ ms.locfileid: "42595244"
 
 ## <a name="remarks"></a>설명
 
-**집계할 수** c + + 특성에 동일한 기능을 합니다 [집계할 수 있는](http://msdn.microsoft.com/library/windows/desktop/aa366721) MIDL 특성입니다. 즉, 컴파일러는 전달 된 **집계할 수 있는** 생성된 된.idl 파일을 통해 특성입니다.
+**집계할 수** c + + 특성에 동일한 기능을 합니다 [집계할 수 있는](/windows/desktop/Midl/aggregatable) MIDL 특성입니다. 즉, 컴파일러는 전달 된 **집계할 수 있는** 생성된 된.idl 파일을 통해 특성입니다.
 
 이 특성을 사용하려면 [coclass](../windows/coclass.md), [progid](../windows/progid.md)또는 [vi_progid](../windows/vi-progid.md) 특성(또는 이 중 하나를 암시하는 다른 특성)을 동일한 요소에 적용해야 합니다. 단일 특성을 사용하는 경우 다른 두 특성도 자동으로 적용됩니다. 예를 들어 있으면 `progid` 적용 됩니다 `vi_progid` 및 `coclass` 도 적용 됩니다.
 
@@ -63,7 +63,7 @@ ATL을 사용하는 프로젝트 내에서 이 특성을 사용하는 경우 특
 |`Allowed`|[DECLARE_POLY_AGGREGATABLE](../atl/reference/aggregation-and-class-factory-macros.md#declare_poly_aggregatable)|
 |`Always`|[DECLARE_ONLY_AGGREGATABLE](../atl/reference/aggregation-and-class-factory-macros.md#declare_only_aggregatable)|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // cpp_attr_ref_aggregatable.cpp
@@ -97,4 +97,4 @@ class CMyClass {};
 [IDL 특성](../windows/idl-attributes.md)  
 [클래스 특성](../windows/class-attributes.md)  
 [Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  
-[집계](http://msdn.microsoft.com/library/windows/desktop/ms686558)  
+[집계](/windows/desktop/com/aggregation)  
