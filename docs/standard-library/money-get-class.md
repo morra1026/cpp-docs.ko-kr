@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b6043da3945b36bd756714049b2bb6c91a32bd4
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 4cae819ccffae37ca27d1e062ae9a766e7acba1f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966552"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201753"
 ---
 # <a name="moneyget-class"></a>money_get 클래스
 
@@ -46,9 +46,11 @@ class money_get : public locale::facet;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType* 로캘의 문자를 인코딩하기 위해 프로그램 내에서 사용 되는 형식입니다.
+*CharType*<br/>
+ 로캘의 문자를 인코딩하기 위해 프로그램 내 사용하는 형식입니다.
 
-*InputIterator* 올 get 함수가 입력을 읽어올 반복기의 형식입니다.
+*InputIterator*<br/>
+ get 함수가 입력을 읽어올 반복기의 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -113,17 +115,23 @@ virtual iter_type do_get(iter_type first,
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 변환할 시퀀스의 시작 부분 주소를 지정 하는 입력 반복기입니다.
+*first*<br/>
+ 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
-*마지막* 변환할 시퀀스의 끝을 주소 지정 하는 입력 반복기입니다.
+*last*<br/>
+ 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
-*Intl* 시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값: **true** 경우 국제 **false** 국내의 경우.
+*Intl*<br/>
+ 시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값입니다. 국제의 경우 **true**이고 국내의 경우 **false**입니다.
 
-*Iosbase* 형식 플래그는 경우 필요한 것이 고, 그렇지 않으면 집합 통화 기호가 선택 사항임을 나타냅니다.
+*iosbase*<br/>
+ 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
-*상태* 여부는 작업의 성공 여부에 따라 스트림 상태에 대 한 적절 한 비트 마스크 요소를 설정 합니다.
+*상태*<br/>
+ 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
-*val* 변환된 된 시퀀스를 저장 하는 문자열입니다.
+*val*<br/>
+ 변환된 시퀀스를 저장하는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -163,7 +171,7 @@ virtual iter_type do_get(iter_type first,
 
 **money_base::space**와 동일한 요소가 형식 패턴에 나타나는 위치(해당 요소가 형식 패턴의 끝이 아닌 위치에 나타나는 경우)에서 임의의 공백 일치 여부를 확인합니다. 그렇지 않으면 내부 공백 일치 여부를 확인하지 않습니다. 요소 *ch*는 [use_facet](../standard-library/locale-functions.md#use_facet) < [ctype](../standard-library/ctype-class.md)\< **CharType**> >( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)). [is](../standard-library/ctype-class.md#is)( **ctype_base::space**, *ch*)가 **true**이면 공백으로 간주합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_get`을 호출하는 [get](#get)에 대한 예제를 참조하세요.
 
@@ -189,17 +197,23 @@ iter_type get(iter_type first,
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 변환할 시퀀스의 시작 부분 주소를 지정 하는 입력 반복기입니다.
+*first*<br/>
+ 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
-*마지막* 변환할 시퀀스의 끝을 주소 지정 하는 입력 반복기입니다.
+*last*<br/>
+ 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
-*Intl* 시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값: **true** 경우 국제 **false** 국내의 경우.
+*Intl*<br/>
+ 시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값입니다. 국제의 경우 **true**이고 국내의 경우 **false**입니다.
 
-*Iosbase* 형식 플래그는 경우 필요한 것이 고, 그렇지 않으면 집합 통화 기호가 선택 사항임을 나타냅니다
+*iosbase*<br/>
+ 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
-*상태* 작업의 성공 여부에 따라 스트림 상태에 대 한 적절 한 비트 마스크 요소를 설정 합니다.
+*상태*<br/>
+ 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
-*val* 변환된 된 시퀀스를 저장 하는 문자열입니다.
+*val*<br/>
+ 변환된 시퀀스를 저장하는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -209,7 +223,7 @@ iter_type get(iter_type first,
 
 두 멤버 함수는 반환 [do_get](#do_get)`(first, last, Intl, Iosbase, State, val)`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // money_get_get.cpp
@@ -280,7 +294,8 @@ explicit money_get(size_t _Refs = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Refs* 개체에 대 한 메모리 관리의 유형을 지정 하는 데 사용 하는 정수 값입니다.
+*_Refs*<br/>
+ 개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -294,7 +309,7 @@ explicit money_get(size_t _Refs = 0);
 
 소멸자는 보호되므로 직접적인 예제는 확인할 수 없습니다.
 
-생성자를 통해 해당 기준 개체를 초기화 **locale::**[패싯](../standard-library/locale-class.md#facet_class)(**_ * Refs*).
+생성자를 통해 해당 기준 개체를 초기화 **locale::**[패싯](../standard-library/locale-class.md#facet_class)(*_Refs*).
 
 ## <a name="string_type"></a>  money_get::string_type
 

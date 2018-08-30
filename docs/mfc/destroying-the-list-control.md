@@ -15,19 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: edb26671ba775cfa7daf98d39c7eccc9fd4111bd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 01cdbc0f404c34a8c5ebc3ae09adf30e0cea0851
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343284"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215044"
 ---
 # <a name="destroying-the-list-control"></a>목록 컨트롤 제거
-포함 한 경우 사용자 [CListCtrl](../mfc/reference/clistctrl-class.md) 뷰 또는 대화 상자 클래스의 데이터 멤버로 개체의 소유자가 소멸 될 때 소멸 됩니다. 사용 하는 경우는 [CListView](../mfc/reference/clistview-class.md), 보기를 제거 하는 경우 프레임 워크 컨트롤을 제거 합니다.  
+포함 하는 경우에 [CListCtrl](../mfc/reference/clistctrl-class.md) 개체 뷰 또는 대화 상자 클래스의 데이터 멤버와 해당 소유자가 제거 될 때 제거 됩니다. 사용 하는 경우는 [CListView](../mfc/reference/clistview-class.md), 프레임 워크 뷰를 제거 하는 경우 컨트롤을 제거 합니다.  
   
- 목록 컨트롤 아니라 응용 프로그램에 저장 될 목록 데이터 중 일부에 대해 정렬 하는 경우에 할당을 취소할 작업을 준비 해야 합니다. 자세한 내용은 참조 [콜백 항목 및 콜백 마스크](http://msdn.microsoft.com/library/windows/desktop/bb774736) Windows sdk에서입니다.  
+ 목록 컨트롤 보다는 응용 프로그램에서 저장할 목록 데이터 중 일부에 대해 정렬 하는 경우 해당 할당 취소에 대 한 정렬 해야 합니다. 자세한 내용은 [콜백 항목 및 콜백 마스크](/windows/desktop/Controls/using-list-view-controls) Windows SDK에 있습니다.  
   
- 또한 모든 이미지 목록을 만들고 list 컨트롤 개체와 연결 된 할당 해제 하는 일을 담당 하 합니다.  
+ 또한 모든 이미지 목록 컨트롤을 만들어 list 컨트롤 개체를 사용 하 여 연결을 할당 취소에 대 한 담당 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [CListCtrl 사용](../mfc/using-clistctrl.md)   

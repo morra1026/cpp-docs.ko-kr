@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7323dfa06e73342e956a9aacb1ad925b6fb022f2
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: bcc4af6f4aeb6c7a0df005d164729cf87065f613
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338498"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220832"
 ---
 # <a name="ceditview-class"></a>CEditView 클래스
 Windows 편집 컨트롤의 기능을 제공하고 간단한 텍스트 편집기 기능을 구현하는 데 사용할 수 있는 뷰 클래스의 유형입니다.  
@@ -120,7 +120,7 @@ class CEditView : public CCtrlView
   
  클래스의 기본 구현은 `CEditView` 다음 명령을 처리: ID_EDIT_SELECT_ALL "," ID_EDIT_FIND "," ID_EDIT_REPLACE "," ID_EDIT_REPEAT, "및" ID_FILE_PRINT 합니다.  
   
- 기본 문자 제한은 `CEditView` 은 (1024 \* 1024-1 = 1048575). 내부 편집 컨트롤의 EM_LIMITTEXT 함수를 호출 하 여 변경할 수 있습니다. 그러나 제한 운영 체제에 따라 서로 다르고 형식의 편집 컨트롤 (단일 또는 여러 줄). 이러한 제한에 대 한 자세한 내용은 참조 하세요. [EM_LIMITTEXT](http://msdn.microsoft.com/library/windows/desktop/bb761607)합니다.  
+ 기본 문자 제한은 `CEditView` 은 (1024 \* 1024-1 = 1048575). 내부 편집 컨트롤의 EM_LIMITTEXT 함수를 호출 하 여 변경할 수 있습니다. 그러나 제한 운영 체제에 따라 서로 다르고 형식의 편집 컨트롤 (단일 또는 여러 줄). 이러한 제한에 대 한 자세한 내용은 참조 하세요. [EM_LIMITTEXT](/windows/desktop/Controls/em-limittext)합니다.  
   
  컨트롤에서이 한도 변경 하려면 재정의 `OnCreate()` 에 대 한 함수에 `CEditView` 클래스 및 코드의 다음 줄을 삽입 합니다.  
   
@@ -226,7 +226,7 @@ CEdit& GetEditCtrl() const;
 > [!CAUTION]
 >  사용 하는 `CEdit` 개체 기본 Windows의 상태 변경 컨트롤을 편집할 수 있습니다. 예를 들어, 사용 하는 탭 설정 하지 변경 해야 합니다 [CEdit::SetTabStops](../../mfc/reference/cedit-class.md#settabstops) 때문에 함수 `CEditView` 인쇄 및 편집 컨트롤에서 모두 사용에 대 한 이러한 설정은 캐시 합니다. 대신 [CEditView::SetTabStops](#settabstops)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#66](../../mfc/codesnippet/cpp/ceditview-class_2.cpp)]  
   
 ##  <a name="getprinterfont"></a>  CEditView::GetPrinterFont  
@@ -433,7 +433,7 @@ void SetTabStops(int nTabStops);
   
  이 함수를 호출 하는 개체의 탭만 수정 합니다. 탭을 변경 하려면 각각에 대 한 중지 `CEditView` 응용 프로그램에서 개체를 각 개체의 호출 `SetTabStops` 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  이 코드 조각은 컨트롤에서 사용 되는 글꼴을 신중 하 게 측정 하 여 모든 네 번째 문자를 컨트롤의 탭 정지를 설정 합니다.  
   
  [!code-cpp[NVC_MFCDocView#67](../../mfc/codesnippet/cpp/ceditview-class_3.cpp)]  

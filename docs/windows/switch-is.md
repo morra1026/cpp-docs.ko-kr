@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a8c92bc8a0b7ac02bae85697eae047acf117652f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2aaf38745c02c5975eb2a46f135c51b6d7247610
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604966"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213758"
 ---
 # <a name="switchis"></a>switch_is
 
@@ -36,9 +36,9 @@ ms.locfileid: "42604966"
 
 ## <a name="remarks"></a>설명
 
-합니다 **switch_is** c + + 특성에 동일한 기능을 합니다 [switch_is](http://msdn.microsoft.com/library/windows/desktop/aa367275) MIDL 특성입니다.
+합니다 **switch_is** c + + 특성에 동일한 기능을 합니다 [switch_is](/windows/desktop/Midl/switch-is) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 참조 된 [사례](../windows/case-cpp.md) 의 샘플 사용에 대 한 예제 **switch_is**합니다.
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 700e8915535a38233b1cd1e55669c1e3c5f372dd
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 19f49951cad65d3dbf15c406af9ac78a28408d4b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591555"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221816"
 ---
 # <a name="threading-c"></a>threading(C++)
 
@@ -61,7 +61,7 @@ ATL 프로젝트의 경우는 [coclass](../windows/coclass.md) 특성이 있는�
 
 합니다 **스레딩** 특성에는 또한에 대 한 액세스 보호를 [event_source](../windows/event-source.md)합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 참조 된 [사용이 허가](../windows/licensed.md) 의 샘플 사용에 대 한 예제 **스레딩**합니다.
 
@@ -84,4 +84,4 @@ ATL 프로젝트의 경우는 [coclass](../windows/coclass.md) 특성이 있는�
 [Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  
 [클래스 특성](../windows/class-attributes.md)  
 [이전 코드를 위한 다중 스레드 지원(Visual C++)](../parallel/multithreading-support-for-older-code-visual-cpp.md)  
-[중립 아파트](http://msdn.microsoft.com/library/windows/desktop/ms681813)  
+[중립 아파트](/windows/desktop/cossdk/neutral-apartments)  

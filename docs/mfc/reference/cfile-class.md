@@ -70,12 +70,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 20a254e6d5a6e3e04dfd013c1f7ae3e8e2c9100e
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 1d3422923075f1c9546da1f8d2430e2e2f2c4bbc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337273"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203058"
 ---
 # <a name="cfile-class"></a>CFile 클래스
 MFC 파일 클래스의 기본 클래스입니다.  
@@ -174,7 +174,7 @@ virtual void Abort();
   
  사용 하는 경우 **새** 할당할는 `CFile` 힙에 개체 파일을 닫은 후 삭제 해야 합니다. `Abort` 설정 `m_hFile` 에 `CFile::hFileNull`입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#5](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_1.cpp)]  
   
 ##  <a name="cfile"></a>  CFile::CFile  
@@ -268,7 +268,7 @@ CAtlTransactionManager* pTM);
   
  `CFile` 개체가 지정한 파일을 정상적으로 열면 `CFile` 개체 제거 시 이 파일이 자동으로 닫힙니다. 그렇지 않으면 `CFile` 개체에서 파일 연결을 끊은 후 파일을 명시적으로 닫아야 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드에서는 `CFile` 사용 방법을 보여줍니다.  
   
  [!code-cpp[NVC_MFCFiles#4](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_2.cpp)]  
@@ -285,7 +285,7 @@ virtual void Close();
   
  사용 하는 경우 **새** 할당할는 `CFile` 힙에 개체 파일을 닫은 후 삭제 해야 합니다. `Close` 설정 `m_hFile` 에 `CFile::hFileNull`입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CFile::CFile](#cfile)합니다.  
   
 ##  <a name="duplicate"></a>  CFile::Duplicate  
@@ -311,7 +311,7 @@ virtual void Flush();
 ### <a name="remarks"></a>설명  
  사용 `Flush` 플러시하도록를 보장 하지는 않습니다 `CArchive` 버퍼입니다. 보관을 사용 하는 경우 호출 [CArchive::Flush](../../mfc/reference/carchive-class.md#flush) 첫 번째입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CFile::SetFilePath](#setfilepath)합니다.  
   
 ##  <a name="getfilename"></a>  CFile::GetFileName  
@@ -329,7 +329,7 @@ virtual CString GetFileName() const;
   
  이름을 포함 하는 파일의 전체 경로 반환 하려면 호출 [GetFilePath](#getfilepath)합니다. 파일의 제목에 반환할 ( `myfile`), 호출 [GetFileTitle](#getfiletitle)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  이 코드 조각은 시스템을 엽니다. WINDOWS 디렉터리에서 INI 파일입니다. 하는 경우, 예제 출력 됩니다 이름 및 경로, 제목, 출력에 표시 된 대로:  
   
  [!code-cpp[NVC_MFCFiles#6](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_3.cpp)]  
@@ -349,7 +349,7 @@ virtual CString GetFilePath() const;
   
  파일의 이름을 반환할 (`myfile.wri`), 호출 [GetFileName](#getfilename)합니다. 파일의 제목에 반환할 (`myfile`), 호출 [GetFileTitle](#getfiletitle)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [GetFileName](#getfilename)합니다.  
   
 ##  <a name="getfiletitle"></a>  CFile::GetFileTitle  
@@ -363,11 +363,11 @@ virtual CString GetFileTitle() const;
  기본 파일의 제목입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드를 호출 [GetFileTitle](http://msdn.microsoft.com/library/windows/desktop/ms646924) 검색할 파일의 제목입니다. 성공 하면 메서드는 시스템 사용자에 게 파일 이름을 표시 하는 데 사용할 문자열을 반환 합니다. 메서드를 호출 하는 고, 그렇지 [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589) 를 기본 파일의 파일 이름 (파일 확장명 포함)를 검색 합니다. 따라서 파일 확장명은 항상 수에 포함 되지 반환 되는 파일 제목 문자열. 자세한 내용은 [GetFileTitle](http://msdn.microsoft.com/library/windows/desktop/ms646924) 하 고 [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589) Windows SDK의 합니다.  
+ 이 메서드를 호출 [GetFileTitle](/windows/desktop/api/commdlg/nf-commdlg-getfiletitlea) 검색할 파일의 제목입니다. 성공 하면 메서드는 시스템 사용자에 게 파일 이름을 표시 하는 데 사용할 문자열을 반환 합니다. 메서드를 호출 하는 고, 그렇지 [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea) 를 기본 파일의 파일 이름 (파일 확장명 포함)를 검색 합니다. 따라서 파일 확장명은 항상 수에 포함 되지 반환 되는 파일 제목 문자열. 자세한 내용은 [GetFileTitle](/windows/desktop/api/commdlg/nf-commdlg-getfiletitlea) 하 고 [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea) Windows SDK의 합니다.  
   
  이름을 포함 하는 파일의 전체 경로 반환 하려면 호출 [GetFilePath](#getfilepath)합니다. 파일의 이름을 반환할 호출 [GetFileName](#getfilename)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [GetFileName](#getfilename)합니다.  
   
 ##  <a name="getlength"></a>  CFile::GetLength  
@@ -380,7 +380,7 @@ virtual ULONGLONG GetLength() const;
 ### <a name="return-value"></a>반환 값  
  파일의 길이입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#7](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_4.cpp)]  
   
 ##  <a name="getposition"></a>  CFile::GetPosition  
@@ -393,7 +393,7 @@ virtual ULONGLONG GetPosition() const;
 ### <a name="return-value"></a>반환 값  
  파일 포인터입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#8](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_5.cpp)]  
   
 ##  <a name="getstatus"></a>  CFile::GetStatus  
@@ -450,7 +450,7 @@ enum Attribute {
     };
 ```    
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#10](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_6.cpp)]  
   
 ##  <a name="hfilenull"></a>  CFile::hFileNull  
@@ -491,7 +491,7 @@ virtual void LockRange(
 > [!NOTE]
 >  이 함수를 사용할 수 없는 경우는 `CMemFile`-클래스를 파생 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#12](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_8.cpp)]  
   
 ##  <a name="m_hfile"></a>  CFile::m_hFile  
@@ -562,13 +562,13 @@ virtual BOOL Open(
 |NULL|예|false|N/A|  
 |에 ptr `CFileException`|예|false|오류 설명으로 초기화|  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#13](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_9.cpp)]  
   
  [!code-cpp[NVC_MFCFiles#14](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_10.cpp)]  
   
 ##  <a name="operator_handle"></a>  CFile::operator 핸들  
- 이 연산자를 사용 하 여에 대 한 핸들을 전달 하는 `CFile` 와 같은 함수 개체 [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) 및 [GetFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724320) 는 `HANDLE`합니다.  
+ 이 연산자를 사용 하 여에 대 한 핸들을 전달 하는 `CFile` 와 같은 함수 개체 [ReadFileEx](/windows/desktop/api/fileapi/nf-fileapi-readfileex) 및 [GetFileTime](/windows/desktop/api/fileapi/nf-fileapi-getfiletime) 는 `HANDLE`합니다.  
   
 ```  
 operator HANDLE() const;  
@@ -593,7 +593,7 @@ virtual UINT Read(
 ### <a name="return-value"></a>반환 값  
  버퍼로 전송된 바이트 수입니다. 모든 유의 `CFile` 클래스, 반환 값 수 미만 *nCount* 파일의 끝에 도달한 경우입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#15](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_11.cpp)]  
   
  다른 예제를 참조 하세요. [CFile::Open](#open)합니다.  
@@ -619,7 +619,7 @@ static void PASCAL Remove(
   
  `Remove` 멤버 함수는 열려 있는 연결 된 파일 또는 파일을 제거할 수 없는 경우 예외를 throw 합니다. DEL 명령을 하는 것과 같습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#17](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_12.cpp)]  
   
 ##  <a name="rename"></a>  CFile::Rename  
@@ -645,7 +645,7 @@ static void PASCAL Rename(
 ### <a name="remarks"></a>설명  
  디렉터리의 이름을 바꿀 수 없습니다. REN 명령에는 것과 같습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#18](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_13.cpp)]  
   
 ##  <a name="seek"></a>  CFile::Seek  
@@ -682,7 +682,7 @@ UINT nFrom);
   
  이 메서드에 대 한 예외 처리기는 예외 처리 된 후 예외 개체를 삭제 해야 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#9](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_14.cpp)]  
   
 ##  <a name="seektobegin"></a>  CFile::SeekToBegin  
@@ -695,7 +695,7 @@ void SeekToBegin();
 ### <a name="remarks"></a>설명  
  `SeekToBegin()`는 `Seek( 0L, CFile::begin )`와 같습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#19](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_15.cpp)]  
   
 ##  <a name="seektoend"></a>  CFile::SeekToEnd  
@@ -711,7 +711,7 @@ ULONGLONG SeekToEnd();
 ### <a name="remarks"></a>설명  
  `SeekToEnd()`는 `CFile::Seek( 0L, CFile::end )`와 같습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#19](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_15.cpp)]  
   
 ##  <a name="setfilepath"></a>  CFile::SetFilePath  
@@ -730,7 +730,7 @@ virtual void SetFilePath(LPCTSTR lpszNewName);
 > [!NOTE]
 > `SetFilePath` 파일을 열고 하지 않거나 파일 만들기 단순히 연결을 `CFile` 경로 이름으로 사용할 수 있는 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#20](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_16.cpp)]  
   
 ##  <a name="setlength"></a>  CFile::SetLength  
@@ -749,7 +749,7 @@ virtual void SetLength(ULONGLONG dwNewLen);
 > [!NOTE]
 >  사용 하 여 `CMemFile`,이 함수가 throw 할 수는 `CMemoryException` 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#11](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_17.cpp)]  
   
 ##  <a name="setstatus"></a>  CFile::SetStatus  
@@ -777,7 +777,7 @@ static void PASCAL SetStatus(
   
  유의 사항에 대 한 호출을 하는 경우 `SetStatus` 만 파일의 특성을 변경 하려고 하며 `m_mtime` 파일 상태 구조체의 멤버 이면 0이 아닌 특성을 영향을 받습니다 (-시간 스탬프에 부작용을 미칠 수를 변경 하는 중 특성)입니다. 만 파일의 특성을 변경 하려는 경우 먼저 설정 합니다 `m_mtime` 0 및 다음에 대 한 호출을 확인 하는 파일 상태 구조체의 멤버 `SetStatus`합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#21](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_18.cpp)]  
   
 ##  <a name="unlockrange"></a>  CFile::UnlockRange  
@@ -802,7 +802,7 @@ virtual void UnlockRange(
 > [!NOTE]
 >  이 함수를 사용할 수 없는 경우는 `CMemFile`-클래스를 파생 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#12](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_8.cpp)]  
   
 ##  <a name="write"></a>  CFile::Write  
@@ -824,7 +824,7 @@ virtual void Write(
 ### <a name="remarks"></a>설명  
  `Write` 디스크 꽉 참 조건을 포함 하 여 여러 조건에 대 한 응답에서 예외를 throw 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#16](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_19.cpp)]  
   
  또한 예제를 참조 하십시오 [CFile::CFile](#cfile) 하 고 [CFile::Open](#open)합니다.  

@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f945766283fa6e58b1eb3430cc780b1ae136e9f
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: b9853cbcecd691f0ea16358259c8a0ac7b213433
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884739"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211189"
 ---
 # <a name="umenuorid-class"></a>_U_MENUorID 클래스
 이 클래스에 대 한 래퍼를 제공 `CreateWindow` 고 `CreateWindowEx`입니다.  
@@ -55,7 +55,7 @@ class _U_MENUorID
 ## <a name="remarks"></a>설명  
  이 인수 어댑터 클래스 부분 호출자 Id (UINTs) 또는 메뉴 핸들의 명시적 캐스트가 필요 없이 함수에 전달할 (HMENUs)를 허용 합니다.  
   
- 이 클래스는 Windows API에 대 한 래퍼를 구현 하는 것에 대 한 설계 되었습니다 특히 [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) 하 고 [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) 자식 창이 될 수 있는 HMENU 인수를 사용할 모두 함수 식별자 (단위) 대신 메뉴 핸들입니다. 매개 변수로 사용 하 여가이 클래스를 볼 수는 예를 들어 [CWindowImpl::Create](cwindowimpl-class.md#create)합니다.  
+ 이 클래스는 Windows API에 대 한 래퍼를 구현 하는 것에 대 한 설계 되었습니다 특히 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) 하 고 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) 자식 창이 될 수 있는 HMENU 인수를 사용할 모두 함수 식별자 (단위) 대신 메뉴 핸들입니다. 매개 변수로 사용 하 여가이 클래스를 볼 수는 예를 들어 [CWindowImpl::Create](cwindowimpl-class.md#create)합니다.  
 
   
  클래스는 두 개의 생성자 오버 로드를 정의 합니다: 하나 UINT 인수를 받아서 다른 HMENU 인수를 허용 합니다. UINT 인수 생성자 및 클래스의 단일 데이터 멤버에 저장 된 결과 HMENU 캐스팅할 방금 [m_hMenu](#_u_menuorid__m_hmenu)합니다. HMENU 생성자의 인수는 변환 없이 직접 저장 됩니다.  

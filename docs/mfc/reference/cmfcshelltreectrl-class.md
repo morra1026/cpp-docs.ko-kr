@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3bd0aba0637101f7895be89b9d5531f77ee45b76
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 7fc8ef005eea61597eb316090e26af7e83718dd8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540509"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222778"
 ---
 # <a name="cmfcshelltreectrl-class"></a>CMFCShellTreeCtrl 클래스
 합니다 `CMFCShellTreeCtrl` 클래스를 확장 [CTreeCtrl 클래스](../../mfc/reference/ctreectrl-class.md) 셸 항목의 계층 구조를 표시 하 여 기능 합니다.  
@@ -62,7 +62,7 @@ class CMFCShellTreeCtrl : public CTreeCtrl
 |이름|설명|  
 |----------|-----------------|  
 |[CMFCShellTreeCtrl::EnableShellContextMenu](#enableshellcontextmenu)|사용 하거나 바로 가기 메뉴를 사용 하지 않도록 설정 합니다.|  
-|[CMFCShellTreeCtrl::GetFlags](#getflags)|에 전달 되는 플래그의 조합을 반환 [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066)합니다.|  
+|[CMFCShellTreeCtrl::GetFlags](#getflags)|에 전달 되는 플래그의 조합을 반환 [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066)합니다.|  
 |[CMFCShellTreeCtrl::GetItemPath](#getitempath)|항목에 대 한 경로 검색합니다.|  
 |[CMFCShellTreeCtrl::GetRelatedList](#getrelatedlist)|에 대 한 포인터를 반환 합니다는 [CMFCShellListCtrl 클래스](../../mfc/reference/cmfcshelllistctrl-class.md) 이 함께 사용 되는 개체 `CMFCShellTreeCtrl` 개체는 탐색기와 유사한 창을 만들 수 있습니다.|  
 |[CMFCShellTreeCtrl::OnChildNotify](#onchildnotify)|이 멤버 함수는이 창에 적용 되는 알림 메시지를 받으면이 창의 부모 창에서 호출 됩니다. (재정의 [cwnd:: Onchildnotify](../../mfc/reference/cwnd-class.md#onchildnotify).)|  
@@ -90,7 +90,7 @@ class CMFCShellTreeCtrl : public CTreeCtrl
 ## <a name="requirements"></a>요구 사항  
  **헤더:** afxshelltreeCtrl.h  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `CMFCShellTreeCtrl` 클래스의 개체를 만드는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [탐색기 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_Explorer#4](../../mfc/reference/codesnippet/cpp/cmfcshelltreectrl-class_1.h)]  
@@ -118,7 +118,7 @@ DWORD GetFlags() const;
  현재 플래그의 조합을 지정 하는 DWORD 값을 설정 합니다.  
   
 ### <a name="remarks"></a>설명  
- 플래그를 설정 합니다 `CMFCShellTreeCtrl` 메서드에 전송 됩니다 [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066) 때마다 개체가 새로 고쳐집니다. 플래그를 변경할 수 있습니다 합니다 [CMFCShellTreeCtrl::SetFlags](#setflags) 메서드.  
+ 플래그를 설정 합니다 `CMFCShellTreeCtrl` 메서드에 전송 됩니다 [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066) 때마다 개체가 새로 고쳐집니다. 플래그를 변경할 수 있습니다 합니다 [CMFCShellTreeCtrl::SetFlags](#setflags) 메서드.  
   
 ##  <a name="getitempath"></a>  CMFCShellTreeCtrl::GetItemPath  
  에 있는 항목의 경로 검색 합니다 [CMFCShellTreeCtrl 클래스](../../mfc/reference/cmfcshelltreectrl-class.md) 개체입니다.  
@@ -254,7 +254,7 @@ void SetFlags(
  지정 하는 부울 여부는 `CMFCShellTreeCtrl` 즉시 새로 고쳐져 야 합니다.  
   
 ### <a name="remarks"></a>설명  
- 합니다 `CMFCShellTreeCtrl` 플래그를 설정할 모든 패스 [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066)합니다. 다른 플래그의 값에 대 한 자세한 내용은 참조 [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066)합니다.  
+ 합니다 `CMFCShellTreeCtrl` 플래그를 설정할 모든 패스 [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066)합니다. 다른 플래그의 값에 대 한 자세한 내용은 참조 [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066)합니다.  
   
 ##  <a name="setrelatedlist"></a>  CMFCShellTreeCtrl::SetRelatedList  
  연결 된 [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) 개체를 [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) 개체입니다.  

@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: de3c7fe60432acfc3096ea19fc00cf371a7c4e92
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 4e3f7d59dd86aa15833134223854eb9ed01f6679
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610508"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216577"
 ---
 # <a name="hstringreference-class"></a>HStringReference 클래스
 
@@ -34,7 +34,7 @@ class HStringReference;
 
 ## <a name="remarks"></a>설명
 
-새 HSTRING의 백업 버퍼의 수명은 Windows 런타임에서 관리 되지 않습니다. 호출자에 게 힙 할당을 방지 하 고 메모리 누수의 위험을 제거 하려면 스택 프레임에 소스 문자열을 할당 합니다. 또한 호출자는 연결 된 HSTRING의 수명 동안 소스 문자열은 변경 되지 않은 것을 확인 해야 합니다. 자세한 내용은 [WindowsCreateStringReference 함수](http://msdn.microsoft.com/0361bb7e-da49-4289-a93e-de7aab8712ac)합니다.
+새 HSTRING의 백업 버퍼의 수명은 Windows 런타임에서 관리 되지 않습니다. 호출자에 게 힙 할당을 방지 하 고 메모리 누수의 위험을 제거 하려면 스택 프레임에 소스 문자열을 할당 합니다. 또한 호출자는 연결 된 HSTRING의 수명 동안 소스 문자열은 변경 되지 않은 것을 확인 해야 합니다. 자세한 내용은 [WindowsCreateStringReference 함수](https://msdn.microsoft.com/0361bb7e-da49-4289-a93e-de7aab8712ac)합니다.
 
 ## <a name="members"></a>멤버
 

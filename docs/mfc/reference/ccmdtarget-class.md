@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6630ad9721b7a58e7da2660337660cc7916db01
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: bb4d7a06d728bddfd4ba1ee355cb4d1e0b5b9fd6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42541899"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221712"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget 클래스
 Microsoft Foundation Class 라이브러리 메시지 맵 아키텍처에 대 한 기본 클래스입니다.  
@@ -137,7 +137,7 @@ void BeginWaitCursor();
   
  호출 `EndWaitCursor` 이전 커서를 복원 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/cpp/ccmdtarget-class_1.cpp)]  
   
 ##  <a name="ccmdtarget"></a>  CCmdTarget::CCmdTarget  
@@ -163,19 +163,19 @@ BOOL DoOleVerb(
  동사의 숫자 식별자입니다.  
   
  *lpMsg*  
- 에 대 한 포인터를 [MSG](http://msdn.microsoft.com/library/windows/desktop/ms644958) 동사를 호출한 이벤트 (예: 두 번 클릭)를 설명 하는 구조입니다.  
+ 에 대 한 포인터를 [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958) 동사를 호출한 이벤트 (예: 두 번 클릭)를 설명 하는 구조입니다.  
   
  *hWndParent*  
  개체가 포함된 문서 창의 핸들입니다.  
   
  *lpRect*  
- 에 대 한 포인터를 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 개체를 정의 하는 픽셀 단위의 좌표가 포함 된 구조체의 경계 사각형 *hwndParent*합니다.  
+ 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 개체를 정의 하는 픽셀 단위의 좌표가 포함 된 구조체의 경계 사각형 *hwndParent*합니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 성공적이 고, 그렇지 않으면 FALSE.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 기본적으로 구현의 [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508)합니다. 가능한 작업 열거 하는 [CCmdTarget::EnumOleVerbs](#enumoleverbs)합니다.  
+ 이 멤버 함수는 기본적으로 구현의 [IOleObject::DoVerb](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb)합니다. 가능한 작업 열거 하는 [CCmdTarget::EnumOleVerbs](#enumoleverbs)합니다.  
   
 ##  <a name="enableautomation"></a>  CCmdTarget::EnableAutomation  
  OLE automation 개체를 사용 하도록 설정 하려면이 함수를 호출 합니다.  
@@ -217,7 +217,7 @@ void EndWaitCursor();
 ### <a name="remarks"></a>설명  
  프레임 워크는 또한 모래 시계 커서를 호출한 후이 멤버 함수를 호출 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/cpp/ccmdtarget-class_1.cpp)]  
   
 ##  <a name="enumoleverbs"></a>  CCmdTarget::EnumOleVerbs  
@@ -229,13 +229,13 @@ BOOL EnumOleVerbs(LPENUMOLEVERB* ppenumOleVerb);
   
 ### <a name="parameters"></a>매개 변수  
  *ppenumOleVerb*  
- 에 대 한 포인터에 대 한 포인터를 [IEnumOLEVERB](http://msdn.microsoft.com/library/windows/desktop/ms695084) 인터페이스입니다.  
+ 에 대 한 포인터에 대 한 포인터를 [IEnumOLEVERB](/windows/desktop/api/oleidl/nn-oleidl-ienumoleverb) 인터페이스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  개체가 하나 이상의 OLE 동사를 지원 하면 TRUE (이때 \* *ppenumOleVerb* 가리키는 `IEnumOLEVERB` 열거자 인터페이스)이 고, 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 기본적으로 구현의 [ioleobject:: Enumverbs](http://msdn.microsoft.com/library/windows/desktop/ms692781)합니다.  
+ 이 멤버 함수는 기본적으로 구현의 [ioleobject:: Enumverbs](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-enumverbs)합니다.  
   
 ##  <a name="fromidispatch"></a>  CCmdTarget::FromIDispatch  
  매핑할이 함수를 호출을 `IDispatch` 클래스의 automation 멤버 함수에서 받은 포인터를 `CCmdTarget` 의 인터페이스를 구현 하는 개체는 `IDispatch` 개체입니다.  
@@ -263,7 +263,7 @@ virtual BOOL GetDispatchIID(IID* pIID);
   
 ### <a name="parameters"></a>매개 변수  
  *pIID*  
- 인터페이스 ID에 대 한 포인터 (한 [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931)).  
+ 인터페이스 ID에 대 한 포인터 (한 [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931)).  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 성공적이 고, 그렇지 않으면 FALSE. 성공 하면 \* *pIID* 기본 디스패치 인터페이스 ID로 설정 되어  
@@ -288,7 +288,7 @@ LPDISPATCH GetIDispatch(BOOL bAddRef);
  `IDispatch` 개체와 연결 된 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
- 에 대 한 호출 하는 개체 `EnableAutomation` 이 함수가 기본 클래스 구현에 포인터를 반환 해당 생성자의 경우 사용 하도록 설정 하는 자동화를 쉽게 `IDispatch` 을 통해 통신 하는 클라이언트에서 사용 되는 `IDispatch` 인터페이스입니다. 호출 하는 데 필요한 이므로 포인터에 대 한 참조를 추가이 함수를 자동으로 호출 [iunknown:: Addref](http://msdn.microsoft.com/library/windows/desktop/ms691379)합니다.  
+ 에 대 한 호출 하는 개체 `EnableAutomation` 이 함수가 기본 클래스 구현에 포인터를 반환 해당 생성자의 경우 사용 하도록 설정 하는 자동화를 쉽게 `IDispatch` 을 통해 통신 하는 클라이언트에서 사용 되는 `IDispatch` 인터페이스입니다. 호출 하는 데 필요한 이므로 포인터에 대 한 참조를 추가이 함수를 자동으로 호출 [iunknown:: Addref](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref)합니다.  
   
 ##  <a name="gettypeinfocount"></a>  CCmdTarget::GetTypeInfoCount  
  개체를 제공 하는 형식 정보 인터페이스의 수를 검색 합니다.  
@@ -320,7 +320,7 @@ HRESULT GetTypeInfoOfGuid(
  로캘 식별자 ( `LCID`).  
   
  *guid*  
- 합니다 [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931) 형식 설명입니다.  
+ 합니다 [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931) 형식 설명입니다.  
   
  *ppTypeInfo*  
  에 대 한 포인터에 대 한 포인터를 `ITypeInfo` 인터페이스입니다.  
@@ -443,7 +443,7 @@ virtual BOOL OnCmdMsg(
 |CN_OLECOMMAND|[COleCmdUI](../../mfc/reference/colecmdui-class.md)\*|  
 |CN_OLE_UNREGISTER|NULL|  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#44](../../mfc/codesnippet/cpp/ccmdtarget-class_2.cpp)]  
   
  [!code-cpp[NVC_MFCDocView#45](../../mfc/codesnippet/cpp/ccmdtarget-class_3.cpp)]  
@@ -465,7 +465,7 @@ virtual void OnFinalRelease();
 void RestoreWaitCursor();
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/cpp/ccmdtarget-class_1.cpp)]  
   
 ## <a name="see-also"></a>참고 항목  

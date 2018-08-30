@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5b09bbb831218c073b590233c572d5a5453659ed
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 85a27fceabcac9c5fa3b36fae4990da7dcd65deb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595334"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222928"
 ---
 # <a name="safecast-c-component-extensions"></a>safe_cast(C++ 구성 요소 확장명)
 
@@ -46,7 +46,7 @@ expression
 
 ## <a name="windows-runtime"></a>Windows 런타임
 
-**safe_cast** 지정 된 식의 형식을 변경할 수 있습니다. 경우에 완벽 하 게 필요한 위치 변수 또는 매개 변수를 특정 형식으로 변환할 수를 사용할 수 있습니다 **safe_cast** 없이 **try / catch** 개발 중 프로그래밍 오류를 검색 하는 블록입니다. 자세한 내용은 [캐스팅 (C + + /cli CX)](http://msdn.microsoft.com/library/windows/apps/hh755802.aspx)합니다.
+**safe_cast** 지정 된 식의 형식을 변경할 수 있습니다. 경우에 완벽 하 게 필요한 위치 변수 또는 매개 변수를 특정 형식으로 변환할 수를 사용할 수 있습니다 **safe_cast** 없이 **try / catch** 개발 중 프로그래밍 오류를 검색 하는 블록입니다. 자세한 내용은 [캐스팅 (C + + /cli CX)](https://msdn.microsoft.com/library/windows/apps/hh755802.aspx)합니다.
 
 ### <a name="syntax"></a>구문
 

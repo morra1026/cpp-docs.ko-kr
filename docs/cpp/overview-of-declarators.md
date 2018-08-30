@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f09df81587012703d8ba1fc883413d6d35929e8
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: dd815f1af5a6eced06eae99316b2ee137fa398c9
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39404940"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209363"
 ---
 # <a name="overview-of-declarators"></a>선언자 개요
 선언자는 개체 또는 함수 이름을 지정하는 선언의 구성 요소입니다. 선언자는 명명된 개체가 개체, 포인터, 참조 또는 배열인지 여부도 지정합니다.  선언자는 기본 형식을 지정하지는 않지만, 포인터, 참조 및 배열과 같은 파생 형식을 지정하는 기본 형식의 형식 정보를 수정합니다.  함수에 적용되는 선언자는 형식 지정자와 함께 작동하여 개체, 포인터 또는 참조가 될 함수의 반환 형식을 완전히 지정합니다. (에 설명 된 지정자 [선언 및 정의](declarations-and-definitions-cpp.md), 형식 및 저장소 클래스와 같은 속성을 전달 합니다. 이 섹션에서 설명 된 한정자 [Microsoft 전용 한정자](../cpp/microsoft-specific-modifiers.md), 선언 자를 수정 합니다.) 다음 그림에서는 `MyFunction`의 전체 선언과 선언의 구성 요소를 보여 줍니다.  
@@ -53,7 +53,7 @@ const char *pch, ch;
   
  **포인터, 참조 및 배열에 대 한 선언 자**  
   
- 이름 앞에 포인터 연산자가 삽입된 개체는 포인터 또는 참조가 됩니다.  **\*** 연산자는 이름을 포인터로, 선언는 **&** 연산자는 참조로 선언 합니다.  
+ 이름 앞에 포인터 연산자가 삽입된 개체는 포인터 또는 참조가 됩니다.  <strong>\*</strong> 연산자는 이름을 포인터로, 선언는 **&** 연산자는 참조로 선언 합니다.  
   
 ```cpp 
 int *i; // declarator is *i  

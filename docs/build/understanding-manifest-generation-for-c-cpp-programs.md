@@ -14,15 +14,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40dbc61009cdfaa5621335cfb78dd10eae2138ca
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 691a2adf5269be0047ee6eee474406b036cad200
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42572592"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222597"
 ---
 # <a name="understanding-manifest-generation-for-cc-programs"></a>C/C++ 프로그램의 매니페스트 생성 이해
-A [매니페스트](http://msdn.microsoft.com/library/aa375365) 외부 XML 파일 또는 리소스를 지정할 수 있는 XML 문서에 포함 된 응용 프로그램 또는 어셈블리입니다. 매니페스트를 [격리 된 응용 프로그램](http://msdn.microsoft.com/library/aa375190) 이름과는 응용 프로그램이 런타임에 바인딩해야 하는 공유 side-by-side-어셈블리의 버전을 관리 하는 데 사용 됩니다. Side-by-side-어셈블리의 매니페스트는 이름, 버전, 리소스 및 다른 어셈블리에서 해당 종속성을 지정합니다.  
+A [매니페스트](https://msdn.microsoft.com/library/aa375365) 외부 XML 파일 또는 리소스를 지정할 수 있는 XML 문서에 포함 된 응용 프로그램 또는 어셈블리입니다. 매니페스트를 [격리 된 응용 프로그램](/windows/desktop/SbsCs/isolated-applications) 이름과는 응용 프로그램이 런타임에 바인딩해야 하는 공유 side-by-side-어셈블리의 버전을 관리 하는 데 사용 됩니다. Side-by-side-어셈블리의 매니페스트는 이름, 버전, 리소스 및 다른 어셈블리에서 해당 종속성을 지정합니다.  
   
  격리 된 응용 프로그램 또는 side-by-side-어셈블리에 대 한 매니페스트를 만드는 두 가지가 있습니다. 먼저 어셈블리의 작성자는 규칙 및 명명 요구 사항에 매니페스트 파일을 수동으로 만들 수 있습니다. 또는 에서만 프로그램이 CRT, MFC, ATL 또는 다른 사용자와 같은 Visual c + + 어셈블리에 종속 하는 경우 다음 매니페스트를 생성할 수 있습니다 자동으로 링커에 의해.  
   

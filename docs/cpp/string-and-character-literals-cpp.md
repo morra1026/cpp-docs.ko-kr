@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a3a3fa5d6e9836f7de949d4c13ec19f90dbcb02
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: f0baf6eb87cd73293bc02b670e915bfd4a10cbfd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42572424"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219154"
 ---
 # <a name="string-and-character-literals--c"></a>문자열 및 문자 리터럴 (c + +)
 C++를 사용하면 다양한 문자열 및 문자 형식이 지원되며 이러한 각 형식의 리터럴 값을 표현할 수 있습니다. 소스 코드에서는 문자 집합을 사용하여 문자 및 문자열 리터럴의 내용을 표현합니다. 유니버설 문자 이름 및 이스케이프 문자를 사용하면 기본 소스 문자 집합만 사용하여 모든 문자열을 표현할 수 있습니다. 원시 문자열 리터럴을 사용하면 이스케이프 문자를 사용하지 않아도 되며 원시 문자열 리터럴을 사용하여 모든 유형의 문자열 리터럴을 표현할 수 있습니다. 또한 추가 생성이나 변환 단계를 수행하지 않고도 std:: string 리터럴을 만들 수 있습니다.  
@@ -206,7 +206,7 @@ char u5 = '\U00000041'; // \U UCN 'A'
   
  유니버설 문자 이름은 서로게이트 코드 포인트 범위 D800-DFFF의 값을 인코딩할 수 없습니다. 유니코드 서로게이트 쌍에 대해 `\UNNNNNNNN`을 사용하여 유니버설 문자 이름을 지정합니다. 여기서 NNNNNNNN은 문자에 대한 8자리 코드 포인트입니다. 컴파일러는 필요한 경우 서로게이트 쌍을 생성합니다.  
   
- C++03에서는 해당 유니버설 문자 이름을 사용해서만 문자 하위 집합을 나타낼 수 있으며 실제로 유효한 유니코드 문자를 나타내지 않는 일부 유니버설 문자 이름이 허용됩니다. C++11 표준에서 이것이 수정되었습니다. C++11에서는 문자 및 문자열 리터럴과 식별자 모두 유니버설 문자 이름을 사용할 수 있습니다.  유니버설 문자 이름에 대 한 자세한 내용은 참조 하세요. [문자 집합](../cpp/character-sets.md)합니다. 유니코드에 대한 자세한 내용은 [유니코드](http://msdn.microsoft.com/library/dd374081\(v=vs.85\).aspx)(영문)를 참조하세요. 서로게이트 쌍에 대 한 자세한 내용은 참조 하세요. [서로게이트 쌍 및 보충 문자](/windows/desktop/Intl/surrogates-and-supplementary-characters)합니다.  
+ C++03에서는 해당 유니버설 문자 이름을 사용해서만 문자 하위 집합을 나타낼 수 있으며 실제로 유효한 유니코드 문자를 나타내지 않는 일부 유니버설 문자 이름이 허용됩니다. C++11 표준에서 이것이 수정되었습니다. C++11에서는 문자 및 문자열 리터럴과 식별자 모두 유니버설 문자 이름을 사용할 수 있습니다.  유니버설 문자 이름에 대 한 자세한 내용은 참조 하세요. [문자 집합](../cpp/character-sets.md)합니다. 유니코드에 대 한 자세한 내용은 참조 하세요. [유니코드](https://msdn.microsoft.com/library/dd374081\(v=vs.85\).aspx)합니다. 서로게이트 쌍에 대 한 자세한 내용은 참조 하세요. [서로게이트 쌍 및 보충 문자](/windows/desktop/Intl/surrogates-and-supplementary-characters)합니다.  
   
 ## <a name="string-literals"></a>문자열 리터럴  
  문자열 리터럴은 함께 사용되어 null로 끝나는 문자열을 형성하는 문자 시퀀스를 나타냅니다. 문자를 큰따옴표로 묶어야 합니다. 다음과 같은 종류의 문자열 리터럴이 있습니다.  

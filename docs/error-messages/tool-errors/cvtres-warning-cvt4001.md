@@ -1,7 +1,7 @@
 ---
 title: CVTRES 경고 CVT4001 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,15 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 306c904fc30cae55f9312a6394fc453a966dd94e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d5d6985fa48a1646a52f46ffe0c436a7daa7be2b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299866"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202667"
 ---
 # <a name="cvtres-warning-cvt4001"></a>CVTRES 경고 CVT4001
-**컴퓨터 종류 지정 되지 않았습니다. 가정**   
- ***type***  
-  
- CVTRES는 시스템 사양을 찾을 수 없습니다. 지정 된 컴퓨터 종류를 가정 하 고 있습니다. 기본값은 /MACHINE 옵션을 사용 하 여 잘못 되었거나, 다시 실행 CVTRES 하는 경우.
+
+> 지정 되지 않은 컴퓨터 종류 가정 *형식*
+
+CVTRES는 시스템 사양을 찾을 수 없습니다. 이 지정 된 컴퓨터 종류를 가정합니다. 기본 /MACHINE 옵션을 사용 하 여 잘못 되었거나, 다시 실행 CVTRES 인 경우

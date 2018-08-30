@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee3fbc85ee6068c6e45f2847ae7ba45a425db8e8
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 5be60ff1f0aa8b2ceff7517a9af968e0b7690478
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540916"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214681"
 ---
 # <a name="diagnostic-services"></a>진단 서비스
 MFC 라이브러리는 프로그램을 더 쉽게 디버그할 수 있는 많은 진단 서비스를 제공합니다. 이러한 진단 서비스에는 매크로 및 전역 함수가 포함되며, 이러한 함수를 통해 프로그램의 메모리 할당을 추적하고 런타임 중 개체의 내용을 덤프하고 런타임 중 디버깅 메시지를 인쇄할 수 있습니다. 진단 서비스의 매크로 및 전역 함수는 다음과 같은 범주로 그룹화됩니다.  
@@ -109,7 +109,7 @@ MFC 라이브러리는 프로그램을 더 쉽게 디버그할 수 있는 많은
 ```  
 _AFX_SECURE_NO_WARNINGS  
 ```     
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  이 코드 샘플 _AFX_SECURE_NO_WARNINGS 정의 되지 않은 경우 컴파일러 경고가 발생 됩니다.  
   
  ```cpp
@@ -163,7 +163,7 @@ ASSERT(booleanExpression)
 > [!NOTE]
 >  이 함수는 MFC의 디버그 버전 에서만 사용할 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_Utilities#44](../../mfc/codesnippet/cpp/diagnostic-services_2.cpp)]  
 
 ### <a name="requirements"></a>요구 사항  
@@ -221,7 +221,7 @@ ASSERT_VALID(pObject)
   
  자세한 내용 및 예제를 참조 하세요 [MFC 응용 프로그램 디버깅](/visualstudio/debugger/mfc-debugging-techniques)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCCObjectSample#19](../../mfc/codesnippet/cpp/diagnostic-services_5.cpp)]  
 
 ### <a name="requirements"></a>요구 사항  
@@ -263,7 +263,7 @@ DEBUG_ONLY(expression)
   
  DEBUG_ONLY 매크로 주변 *식* 사용 하 여 `#ifdef _DEBUG` 고 `#endif`입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_Utilities#32](../../mfc/codesnippet/cpp/diagnostic-services_6.cpp)]  
 
 ### <a name="requirements"></a>요구 사항  
@@ -310,7 +310,7 @@ THIS_FILE
 ### <a name="remarks"></a>설명  
  정보를 확인 및 ASSERT 매크로에서 사용 됩니다. 응용 프로그램 마법사 및 코드 마법사 생성 되는 소스 코드 파일에 매크로 배치 합니다.  
    
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
 ```cpp
 #ifdef _DEBUG
 #undef THIS_FILE
@@ -370,7 +370,7 @@ VERIFY(booleanExpression)
   
  MFC의 릴리스 버전에서는 확인 식을 평가 합니다. 하지만 인쇄 되지 않거나에 프로그램을 중단 합니다. 예를 들어 식 함수를 호출할 경우는 전화를 걸 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#198](../../mfc/codesnippet/cpp/diagnostic-services_7.cpp)]  
 
 ### <a name="requirements"></a>요구 사항  
@@ -390,7 +390,7 @@ CDumpContext  afxDump;
   
  이 변수는 MFC의 디버그 버전에만 정의 됩니다. 에 대 한 자세한 `afxDump`를 참조 하세요 [MFC 응용 프로그램 디버깅](/visualstudio/debugger/mfc-debugging-techniques)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_Utilities#23](../../mfc/codesnippet/cpp/diagnostic-services_8.cpp)]  
 
 ### <a name="requirements"></a>요구 사항  
@@ -437,7 +437,7 @@ int  afxMemDF;
   
 - `checkAlwaysMemDF` 호출 `AfxCheckMemory` 될 때마다 메모리를 할당 하거나 해제 합니다. 크게 메모리 할당 및 할당 취소 속도가 느려집니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_Utilities#30](../../mfc/codesnippet/cpp/diagnostic-services_9.cpp)]  
 
 ### <a name="requirements"></a>요구 사항  
@@ -460,7 +460,7 @@ throw COleException*
 > [!NOTE]
 >  이 함수는과 동일한 효과가 디버그에서 하 고 디버그 이외 빌드합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCOleContainer#33](../../mfc/codesnippet/cpp/diagnostic-services_10.cpp)]  
 
 ### <a name="requirements"></a>요구 사항  
@@ -492,7 +492,7 @@ BOOL  AfxCheckMemory();
   
  이 함수는 MFC의 디버그 버전 에서만에서 작동합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCCObjectSample#26](../../mfc/codesnippet/cpp/diagnostic-services_11.cpp)]  
 
 ### <a name="requirements"></a>요구 사항  
@@ -605,7 +605,7 @@ void AFXAPI AfxDumpStack(DWORD dwTarget = AFX_STACK_DUMP_TARGET_DEFAULT);
   
  성공적으로이 함수를 사용 합니다.  
   
--   IMAGEHLP 파일입니다. DLL 경로에 있어야 합니다. 이 DLL이 없으면 함수는 오류 메시지가 표시 됩니다. 참조 [이미지 도움말 라이브러리](http://msdn.microsoft.com/library/windows/desktop/ms680321) IMAGEHLP에서 제공 하는 함수 집합에 대 한 정보에 대 한 합니다.  
+-   IMAGEHLP 파일입니다. DLL 경로에 있어야 합니다. 이 DLL이 없으면 함수는 오류 메시지가 표시 됩니다. 참조 [이미지 도움말 라이브러리](/windows/desktop/Debug/image-help-library) IMAGEHLP에서 제공 하는 함수 집합에 대 한 정보에 대 한 합니다.  
   
 -   스택 프레임에 있는 모듈 디버깅 정보를 포함 해야 합니다. 디버깅 정보를 포함 하지 않습니다 하는 경우 상태는 함수에서 스택 추적을 생성 하지만 추적 덜 자세하게 표시 됩니다.  
 ### <a name="requirements"></a>요구 사항  
@@ -658,7 +658,7 @@ BOOL AfxEnableMemoryTracking(BOOL bTrack);
 > [!NOTE]
 >  이 함수는 MFC의 디버그 버전 에서만에서 작동합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_Utilities#24](../../mfc/codesnippet/cpp/diagnostic-services_12.cpp)]  
   
 ### <a name="requirements"></a>요구 사항  
@@ -690,7 +690,7 @@ BOOL AfxIsMemoryBlock(
 ### <a name="remarks"></a>설명  
  또한 원래 할당 된 크기에 대해 지정된 된 크기를 확인합니다. 함수는 0이 아닌 반환 하는 경우에 할당 순서 번호가 반환 됩니다 *plRequestNumber*합니다. 이 숫자는 블록은 다른 모든 기준으로 할당 된 순서를 나타내는 **새** 할당 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_Utilities#27](../../mfc/codesnippet/cpp/diagnostic-services_13.cpp)]  
   
 ### <a name="requirements"></a>요구 사항  
@@ -724,7 +724,7 @@ BOOL AfxIsValidAddress(
 ### <a name="remarks"></a>설명  
  주소에서 할당 된 블록 제한 되지 않습니다 **새**합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_Utilities#28](../../mfc/codesnippet/cpp/diagnostic-services_14.cpp)]  
   
 ### <a name="requirements"></a>요구 사항  
@@ -751,7 +751,7 @@ BOOL  AfxIsValidString(
   
  디버그가 아닌 빌드에서 0이 아닌 경우 *lpsz* 0이 고, 그렇지 않으면 NULL입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_Utilities#29](../../mfc/codesnippet/cpp/diagnostic-services_15.cpp)]  
 
 ### <a name="requirements"></a>요구 사항  
@@ -813,7 +813,7 @@ AFXAPI AfxDoForAllClasses(
 > [!NOTE]
 >  이 함수는 MFC의 디버그 버전 에서만에서 작동합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCCollections#113](../../mfc/codesnippet/cpp/diagnostic-services_16.cpp)]  
   
  [!code-cpp[NVC_MFCCollections#114](../../mfc/codesnippet/cpp/diagnostic-services_17.cpp)]  
@@ -843,7 +843,7 @@ void AfxDoForAllObjects(
 > [!NOTE]
 >  이 함수는 MFC의 디버그 버전 에서만에서 작동합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCCollections#115](../../mfc/codesnippet/cpp/diagnostic-services_18.cpp)]  
   
  [!code-cpp[NVC_MFCCollections#116](../../mfc/codesnippet/cpp/diagnostic-services_19.cpp)]  

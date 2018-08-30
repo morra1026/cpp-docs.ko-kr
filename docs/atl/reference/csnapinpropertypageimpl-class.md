@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 56a57d3fe0eb1a016af9eee8539cd7f57a12ddf5
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: fd7f2c708dd3cfe63e40b62912a775fcc120c4ba
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880562"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223053"
 ---
 # <a name="csnapinpropertypageimpl-class"></a>CSnapInPropertyPageImpl 클래스
 이 클래스는 스냅인 속성 페이지 개체를 구현 하기 위한 메서드를 제공 합니다.  
@@ -146,7 +146,7 @@ PROPSHEETPAGE m_psp;
 ### <a name="remarks"></a>설명  
  이 구조를 사용 하 여 생성 된 후 속성 페이지의 모양을 초기화 합니다.  
   
- 해당 멤버의 목록을 포함 하 여이 구조에 대 한 자세한 내용은 참조 하세요 [PROPSHEETPAGE](http://msdn.microsoft.com/library/aa815151) Windows SDK에 있습니다.  
+ 해당 멤버의 목록을 포함 하 여이 구조에 대 한 자세한 내용은 참조 하세요 [PROPSHEETPAGE](https://msdn.microsoft.com/library/aa815151) Windows SDK에 있습니다.  
   
 ##  <a name="onapply"></a>  CSnapInPropertyPageImpl::OnApply  
  사용자가 클릭할 때이 구성원 함수가 호출 되는 **확인** 또는 **지금 적용** 단추입니다.  

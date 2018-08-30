@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01eb327458331ca457b7b7f23d8c69668fbf1fa7
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 6019f2bb3d425b8ebfa4c49c3b6623d331fa5534
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964160"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212570"
 ---
 # <a name="binaryfunction-struct"></a>binary_function 구조체
 
@@ -41,13 +41,11 @@ struct binary_function {
 
 템플릿 구조체는 다음 형식의 멤버 함수를 정의하는 클래스의 기준으로 사용됩니다.
 
-**result_type operator()**( **constfirst_argument_type&**,
+> *result_type* * * operator () (const * * <em>first_argument_type</em>**&, const** <em>second_argument_type</em>**&) const**
 
-**const second_argument_type&** ) **const**
+이러한 모든 이항 함수는 첫 번째 인수 형식을 *first_argument_type*, 두 번째 인수 형식을 *second_argument_type*, 반환 형식을 *result_type*으로 참조할 수 있습니다.
 
-이러한 모든 이항 함수는 첫 번째 인수 형식을 참조할 수 있습니다 `first_argument_type`, 해당 두 번째 인수 형식을 `second_argument_type`, 및 반환 형식을 ***result_type***합니다.
-
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // functional_binary_function.cpp

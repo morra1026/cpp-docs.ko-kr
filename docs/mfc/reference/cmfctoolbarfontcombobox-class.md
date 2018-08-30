@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2625316aa731e658d9d45e495809d2402a3cb4c5
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 12b6d0b0ccc21f4ab1f8b3d7116f098a532d0418
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849752"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216263"
 ---
 # <a name="cmfctoolbarfontcombobox-class"></a>CMFCToolBarFontComboBox 클래스
 사용자가 시스템 글꼴의 목록에서 글꼴을 선택할 수 있는 콤보 상자 컨트롤을 포함 하는 도구 모음 단추입니다.  
@@ -70,7 +70,7 @@ class CMFCToolBarFontComboBox : public CMFCToolBarComboBoxButton
   
  문서의 글꼴 콤보 상자에서 선택한 글꼴을 사용 하 여 동기화를 사용 하 여는 [CMFCToolBarFontComboBox::GetFontDesc](#getfontdesc) 메서드를 선택한 글꼴의 특성을 검색 하 고 해당 특성을 사용 하 여 만들기는 [ CFont 클래스](../../mfc/reference/cfont-class.md) 개체입니다.  
   
- Win32 함수를 호출 하는 글꼴 콤보 상자 단추 [EnumFontFamiliesEx](http://msdn.microsoft.com/library/windows/desktop/dd162620) 시스템에 사용할 수 있는 화면 및 프린터 글꼴을 확인 하려면.  
+ Win32 함수를 호출 하는 글꼴 콤보 상자 단추 [EnumFontFamiliesEx](/windows/desktop/api/wingdi/nf-wingdi-enumfontfamiliesexa) 시스템에 사용할 수 있는 화면 및 프린터 글꼴을 확인 하려면.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -126,7 +126,7 @@ CMFCToolBarFontComboBox();
  TRUETYPE_FONTTYPE  
   
  [in] *nCharSet*  
- DEFAULT_CHARSET, 콤보 상자로 포함 되어 있으면 모든 문자 집합의 모든 고유 하 게 명명 된 글꼴. (두 글꼴 이름이 같은 경우 콤보 상자 포함 그 중 하나입니다.) 유효한 문자 집합 값 콤보 상자로 포함 되어 있으면 지정된 된 문자 집합의 글꼴만. 참조 [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) 가능한 문자 목록을 설정 합니다.  
+ DEFAULT_CHARSET, 콤보 상자로 포함 되어 있으면 모든 문자 집합의 모든 고유 하 게 명명 된 글꼴. (두 글꼴 이름이 같은 경우 콤보 상자 포함 그 중 하나입니다.) 유효한 문자 집합 값 콤보 상자로 포함 되어 있으면 지정된 된 문자 집합의 글꼴만. 참조 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 가능한 문자 목록을 설정 합니다.  
   
  [in] *dwStyle*  
  콤보 상자의 스타일입니다. (참조 [콤보 상자 스타일](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles))  
@@ -143,7 +143,7 @@ CMFCToolBarFontComboBox();
 ### <a name="remarks"></a>설명  
  일반적으로 `CMFCToolBarFontComboBox` 개체에서 공유 되는 하나의 사용 가능한 글꼴 목록을 저장 `CObList` 개체입니다. 생성자의 두 번째 오버 로드를 사용 하 고에 대 한 유효한 포인터를 제공 하는 경우 *pLstFontsExternal*하 `CMFCToolBarFontComboBox` 개체를 채울 대신 합니다 `CObList` 하는 *pLstFontsExternal* 사용 가능한 글꼴을 사용 하 여를 가리킵니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 생성 하는 방법에 설명 된 `CMFCToolBarFontComboBox` 개체입니다. 이 코드 조각은 [워드 패드 샘플](../../visual-cpp-samples.md)의 일부입니다.  
   
  [!code-cpp[NVC_MFC_WordPad#7](../../mfc/reference/codesnippet/cpp/cmfctoolbarfontcombobox-class_1.cpp)]  

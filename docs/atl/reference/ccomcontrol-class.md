@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77b0c115dbd820ea715b739dd3e4d6eb2c5f4950
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 0a2652730c981313ee3e168aca4a36a91fadde47
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883452"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198457"
 ---
 # <a name="ccomcontrol-class"></a>CComControl 클래스
 이 클래스를 만들고 ATL 컨트롤을 관리 하기 위한 메서드를 제공 합니다.  
@@ -119,7 +119,7 @@ virtual HRESULT ControlQueryInterface(const IID& iid, void** ppv);
 ### <a name="remarks"></a>설명  
  COM 맵 테이블의 인터페이스만 처리 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_COM#15](../../atl/codesnippet/cpp/ccomcontrol-class_1.cpp)]  
   
 ##  <a name="createcontrolwindow"></a>  CComControl::CreateControlWindow  
@@ -139,7 +139,7 @@ virtual HWND CreateControlWindow(HWND hWndParent, RECT& rcPos);
 ### <a name="remarks"></a>설명  
  이 메서드를 재정의 하 여 작업을 수행 하려는 경우 아닌 단일 창을 만들고, 예를 들어 두 개의 창을 만들려면 중 하나는 도구 모음이 됩니다 컨트롤에 대 한 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_COM#16](../../atl/codesnippet/cpp/ccomcontrol-class_2.cpp)]  
   
 ##  <a name="fireonchanged"></a>  CComControl::FireOnChanged  
@@ -157,11 +157,11 @@ HRESULT FireOnChanged(DISPID dispID);
  HRESULT 값 중 하나입니다.  
   
 ### <a name="remarks"></a>설명  
- 컨트롤 클래스에서 파생 되는 경우 [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638),이 메서드를 호출 [CFirePropNotifyEvent::FireOnChanged](cfirepropnotifyevent-class.md#fireonchanged) 연결 된 모든 알림 `IPropertyNotifySink` 하는 인터페이스 지정된 된 컨트롤 속성이 변경 되었습니다. 컨트롤 클래스에서 파생 되지 않은 경우 `IPropertyNotifySink`,이 메서드는 S_OK를 반환 합니다. 
+ 컨트롤 클래스에서 파생 되는 경우 [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink),이 메서드를 호출 [CFirePropNotifyEvent::FireOnChanged](cfirepropnotifyevent-class.md#fireonchanged) 연결 된 모든 알림 `IPropertyNotifySink` 하는 인터페이스 지정된 된 컨트롤 속성이 변경 되었습니다. 컨트롤 클래스에서 파생 되지 않은 경우 `IPropertyNotifySink`,이 메서드는 S_OK를 반환 합니다. 
   
  이 메서드는 안전 컨트롤 연결점을 지원 하지 않습니다 하는 경우에 호출 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_COM#17](../../atl/codesnippet/cpp/ccomcontrol-class_3.cpp)]  
   
 ##  <a name="fireonrequestedit"></a>  CComControl::FireOnRequestEdit  
@@ -179,12 +179,12 @@ HRESULT FireOnRequestEdit(DISPID dispID);
  HRESULT 값 중 하나입니다.  
   
 ### <a name="remarks"></a>설명  
- 컨트롤 클래스에서 파생 되는 경우 [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638),이 메서드를 호출 [CFirePropNotifyEvent::FireOnRequestEdit](cfirepropnotifyevent-class.md#fireonrequestedit) 연결 된 모든 알림 `IPropertyNotifySink` 하는 인터페이스를 지정 된 컨트롤 속성 변경 되려고 합니다. 컨트롤 클래스에서 파생 되지 않은 경우 `IPropertyNotifySink`,이 메서드는 S_OK를 반환 합니다.  
+ 컨트롤 클래스에서 파생 되는 경우 [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink),이 메서드를 호출 [CFirePropNotifyEvent::FireOnRequestEdit](cfirepropnotifyevent-class.md#fireonrequestedit) 연결 된 모든 알림 `IPropertyNotifySink` 하는 인터페이스를 지정 된 컨트롤 속성 변경 되려고 합니다. 컨트롤 클래스에서 파생 되지 않은 경우 `IPropertyNotifySink`,이 메서드는 S_OK를 반환 합니다.  
 
   
  이 메서드는 안전 컨트롤 연결점을 지원 하지 않습니다 하는 경우에 호출 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_COM#18](../../atl/codesnippet/cpp/ccomcontrol-class_4.cpp)]  
   
 ##  <a name="messagebox"></a>  CComControl::MessageBox  
@@ -205,10 +205,10 @@ int MessageBox(
  대화 상자 제목입니다. 경우 NULL (기본값), "Error"는 제목입니다.  
   
  *n 형식*  
- 내용 및 대화 상자의 동작을 지정합니다. 참조 된 [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) 목록 사용할 수 있는 다양 한 메시지 상자는 Windows SDK 설명서의 항목입니다. 기본 제공 단순 **확인** 단추입니다.  
+ 내용 및 대화 상자의 동작을 지정합니다. 참조 된 [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) 목록 사용할 수 있는 다양 한 메시지 상자는 Windows SDK 설명서의 항목입니다. 기본 제공 단순 **확인** 단추입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 아래에 나열 된 메뉴 항목 값 중 하나를 지정 하는 정수 값 반환 [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) Windows SDK 설명서의 합니다.  
+ 아래에 나열 된 메뉴 항목 값 중 하나를 지정 하는 정수 값 반환 [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) Windows SDK 설명서의 합니다.  
   
 ### <a name="remarks"></a>설명  
  `MessageBox` 사용자에 게 오류 또는 경고 메시지를 표시 하는 쉬운 방법을 개발 중에 유용 합니다.  

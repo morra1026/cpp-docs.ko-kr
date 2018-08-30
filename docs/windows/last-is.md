@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b09b6c89a6dccd0b1cc78346838b79aacb7e9200
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e7b699f5b6aa023473416b822a94d9b3a91c2b07
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42594553"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221121"
 ---
 # <a name="lastis"></a>last_is
 
@@ -43,9 +43,9 @@ ms.locfileid: "42594553"
 
 ## <a name="remarks"></a>설명
 
-합니다 **last_is** c + + 특성에 동일한 기능을 합니다 [last_is](http://msdn.microsoft.com/library/windows/desktop/aa367066) MIDL 특성입니다.
+합니다 **last_is** c + + 특성에 동일한 기능을 합니다 [last_is](/windows/desktop/Midl/last-is) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 참조 [first_is](../windows/first-is.md) 배열 섹션을 지정 하는 방법의 예입니다.
 

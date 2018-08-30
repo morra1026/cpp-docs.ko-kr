@@ -122,12 +122,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 091c201b3b0b67879178d32f495410a1bbe22a53
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 4779b832eaff7a322184adf1734f69d266c05331
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42538952"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219111"
 ---
 # <a name="cmdichildwndex-class"></a>CMDIChildWndEx 클래스
 `CMDIChildWndEx` 클래스 여러 문서 MDI (인터페이스) 자식 창은 Windows의 기능을 제공 합니다. 기능을 확장 [CMDIChildWnd 클래스](../../mfc/reference/cmdichildwnd-class.md)합니다. MDI 응용 프로그램에서 특정 MFC 클래스를 사용하면 프레임워크에 이 클래스가 필요합니다.  
@@ -192,7 +192,7 @@ class CMDIChildWndEx : public CMDIChildWnd
 |[CMDIChildWndEx::OnTaskbarTabThumbnailStretch](#ontaskbartabthumbnailstretch)|Windows 7 작업 표시줄 탭 축소판 그림 미리 보기의 MDI 자식에 대 한 비트맵 확장 해야 할 때 프레임 워크에서 호출 됩니다.|  
 |[CMDIChildWndEx::OnUpdateFrameTitle](#onupdateframetitle)|프레임 제목을 업데이트 하기 위해 프레임 워크에서 호출 됩니다. (`CMDIChildWnd::OnUpdateFrameTitle`를 재정의합니다.)|  
 |[CMDIChildWndEx::PaneFromPoint](#panefrompoint)|지정된 된 점을 포함 하는 창을 반환 합니다.|  
-|`CMDIChildWndEx::PreTranslateMessage`|창 메시지가 [TranslateMessage](../../mfc/reference/cwinapp-class.md) 및 [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) Windows 함수로 디스패치되기 전에 [CWinApp](http://msdn.microsoft.com/library/windows/desktop/ms644934) 클래스가 이 메시지를 해석하는 데 사용됩니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|  
+|`CMDIChildWndEx::PreTranslateMessage`|클래스에서 사용 하는 [CWinApp](../../mfc/reference/cwinapp-class.md) 디스패치 되기 전에 창 메시지를 변환 하는 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|  
 |[CMDIChildWndEx::RecalcLayout](#recalclayout)|창 레이아웃 다시 계산 됩니다.|  
 |[CMDIChildWndEx::RegisterTaskbarTab](#registertaskbartab)|Windows 7 작업 표시줄 탭 MDI 자식에 등록합니다.|  
 |[CMDIChildWndEx::RemovePaneFromDockManager](#removepanefromdockmanager)|창을 도킹 관리자에서 제거합니다.|  
@@ -208,7 +208,7 @@ class CMDIChildWndEx : public CMDIChildWnd
 ## <a name="remarks"></a>설명  
  MDI 응용 프로그램에서 도킹 확장된 기능을 사용 하려면 응용 프로그램에서 MDI 자식 창 클래스를 파생 `CMDIChildWndEx` of [CMDIChildWnd](../../mfc/reference/cmdichildwnd-class.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 파생 클래스에서 `CMDIChildWndEx`합니다. 이 코드 조각에서 제공 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#3](../../mfc/codesnippet/cpp/cmdichildwndex-class_1.h)]  
@@ -410,7 +410,7 @@ virtual LPCTSTR GetDocumentName(CObject** pObj);
   
  프레임 워크는 상태를 복원할 때 나중에 문서 이름을 레지스트리에서 읽고 전달할 [CMDIFrameWndEx::CreateDocumentWindow](../../mfc/reference/cmdiframewndex-class.md#createdocumentwindow)합니다. 이 메서드를 재정의 하는 [CMDIFrameWndEx](../../mfc/reference/cmdiframewndex-class.md)-파생 클래스 또는이 이름이 있는 문서를 열고 만들고이 이름을 가진 파일을 읽어. 문서 파일을 기반으로 하지 않는 경우에 자체 문서 식별자를 기반으로 문서를 만듭니다. 저장 하 고 문서를 복원 하려는 경우에 이전 작업을 해야 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 `GetDocumentName` 메서드를 사용하는 방법을 보여 줍니다. 이 코드 조각에서 제공 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#17](../../mfc/codesnippet/cpp/cmdichildwndex-class_2.cpp)]  
@@ -557,7 +557,7 @@ virtual BOOL IsReadOnly();
 ### <a name="remarks"></a>설명  
  방지 하기 위해이 함수는 읽기 전용으로 문서를 저장 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 재정의 `IsReadOnly` 메서드. 이 코드 조각에서 제공 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#2](../../mfc/codesnippet/cpp/cmdichildwndex-class_3.cpp)]  

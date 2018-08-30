@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc862ee708239878229825c9aa050c2835222b95
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 5bfff86dd688ea5029a0c0971c3f8ad6c6aef3b5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42539144"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213194"
 ---
 # <a name="mfc-classes"></a>MFC 클래스
 다음 목록의 클래스는 MFC(Microsoft Foundation Class) 라이브러리에 포함되어 있습니다.  
@@ -93,7 +93,7 @@ ms.locfileid: "42539144"
  ActiveX 컨트롤(이전의 OLE 컨트롤)에서 비동기 모니커를 사용할 수 있도록 기능을 제공합니다.  
   
  [CAsyncSocket 클래스](../../mfc/reference/casyncsocket-class.md)  
- 네트워크 통신의 끝점인 Windows 소켓을 나타냅니다.  
+ 네트워크 통신의 엔드포인트인 Windows 소켓을 나타냅니다.  
   
  [CAutoHideDockSite 클래스](../../mfc/reference/cautohidedocksite-class.md)  
  [CDockSite Class](../../mfc/reference/cdocksite-class.md) 를 확장하여 자동 숨김 도킹 창을 구현합니다.  
@@ -135,7 +135,7 @@ ms.locfileid: "42539144"
  Windows 검사 목록 상자의 기능을 제공합니다.  
   
  [CClientDC 클래스](../../mfc/reference/cclientdc-class.md)  
- 생성 시 Windows 함수 [GetDC](http://msdn.microsoft.com/library/windows/desktop/dd144871) 의 호출과 소멸 시 [ReleaseDC](http://msdn.microsoft.com/library/windows/desktop/dd162920) 의 호출을 처리합니다.  
+ Windows 함수 호출을 처리 [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) 생성 시 및 [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) 소멸 시.  
   
  [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)  
  MFC 라이브러리 메시지 맵 아키텍처의 기본 클래스입니다.  
@@ -861,7 +861,7 @@ ms.locfileid: "42539144"
  일반적으로 부동 도구 모음에 있는 절반 높이의 프레임 창을 나타냅니다.  
   
  [CMonikerFile 클래스](../../mfc/reference/cmonikerfile-class.md)  
- [IMoniker](http://msdn.microsoft.com/library/windows/desktop/aa380034)에서 이름을 지정한 데이터 스트림( [IStream](http://msdn.microsoft.com/library/windows/desktop/ms679705))을 나타냅니다.  
+ 데이터 스트림을 나타냅니다 ([IStream](/windows/desktop/api/objidl/nn-objidl-istream))로 명명 한 [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker)합니다.  
   
  [CMonthCalCtrl 클래스](../../mfc/reference/cmonthcalctrl-class.md)  
  달력 컨트롤의 기능을 캡슐화합니다.  
@@ -930,7 +930,7 @@ ms.locfileid: "42539144"
  사용자 지정 클라이언트 측 컨트롤 인터페이스를 지원합니다.  
   
  [COleConvertDialog 클래스](../../mfc/reference/coleconvertdialog-class.md)  
- 자세한 내용은 참조는 [OLEUICONVERT](http://msdn.microsoft.com/library/windows/desktop/ms686657) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [OLEUICONVERT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiconverta) Windows SDK에는 구조입니다.  
   
  [COleCurrency 클래스](../../mfc/reference/colecurrency-class.md)  
  OLE 자동화의 `CURRENCY` 데이터 형식을 캡슐화합니다.  
@@ -1173,7 +1173,7 @@ ms.locfileid: "42539144"
  애니메이션 변수의 초기 속도에 의해 진폭이 결정되는 사인 곡선 속도 전환을 캡슐화합니다.  
   
  [CSize 클래스](../../atl-mfc-shared/reference/csize-class.md)  
- 상대 좌표 또는 위치를 구현하는 Windows [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) 구조체와 유사합니다.  
+ Windows 비슷합니다 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 상대 좌표 또는 위치를 구현 하는 구조입니다.  
   
  [CSliderCtrl 클래스](../../mfc/reference/csliderctrl-class.md)  
  Windows의 공용 슬라이더 컨트롤의 기능을 제공합니다.  

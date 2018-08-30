@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ee32e9c94f9bd9d1da4e3d3beaf9bfa0039b8cf
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 3824113c1cbf1edc15f4a060dfdcc50df8759c4d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39403828"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215925"
 ---
 # <a name="comptrtcomptrt"></a>_com_ptr_t::_com_ptr_t
 **Microsoft 전용**  
@@ -168,7 +168,7 @@ explicit _com_ptr_t(
  중 하나를 포함 하는 멀티 바이트 문자열을 `CLSID` (시작 "**{**") 또는 `ProgID`합니다.  
   
  *pOuter*  
- 에 대 한 알 수 없는 외부 [집계](http://msdn.microsoft.com/library/windows/desktop/ms686558)합니다.  
+ 에 대 한 알 수 없는 외부 [집계](/windows/desktop/com/aggregation)합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [_com_ptr_t 클래스](../cpp/com-ptr-t-class.md)

@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b192c0ee4bc7658fc39791545c4aa9334edd183
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: 1bd8abd7971c112f0d9e872df73b431c78259981
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131947"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205424"
 ---
 # <a name="multithreading-terminating-threads-in-mfc"></a>다중 스레딩: MFC에서 스레드 종료
 두 가지 일반적인 문제 때문 스레드가 종료: 제어 함수가 끝나거나 스레드 실행을 완료할 수 없습니다. 워드 프로세서 백그라운드 인쇄를 위해 스레드를 사용 하는 경우 제어 함수는 성공적으로 완료 된 인쇄 하는 경우 정상적으로 종료 됩니다. 그러나 사용자가 인쇄 작업을 취소 합니다는 백그라운드 인쇄 스레드가 완전 종료 되어야 합니다. 이 항목에서는 각 상황을 구현 하는 방법 및 종료 된 후 스레드의 종료 코드를 가져오는 방법을 모두 설명 합니다.  
@@ -43,7 +43,7 @@ ms.locfileid: "43131947"
  
 작업자 스레드의 경우 정상적인 스레드 종료는 간단 합니다: 제어 함수를 종료 하 고 종료 이유를 나타내는 값을 반환 합니다. 하나를 사용 합니다 [AfxEndThread](../mfc/reference/application-information-and-management.md#afxendthread) 함수 또는 **반환** 문입니다. 일반적으로 성공적으로 완료 되 면 0을 사용 하지만 사용자의 몫입니다.  
   
-사용자 인터페이스 스레드, 프로세스는 간단 합니다:에서 호출에 사용자 인터페이스 스레드 내에서 [PostQuitMessage](http://msdn.microsoft.com/library/windows/desktop/ms644945) Windows SDK에 있습니다. 유일한 매개 변수는 `PostQuitMessage` 는 스레드의 종료 코드입니다. 작업자 스레드와 마찬가지로 0을 사용 하 여 성공적으로 완료 된 경우를 나타냅니다.  
+사용자 인터페이스 스레드, 프로세스는 간단 합니다:에서 호출에 사용자 인터페이스 스레드 내에서 [PostQuitMessage](https://msdn.microsoft.com/library/windows/desktop/ms644945) Windows SDK에 있습니다. 유일한 매개 변수는 `PostQuitMessage` 는 스레드의 종료 코드입니다. 작업자 스레드와 마찬가지로 0을 사용 하 여 성공적으로 완료 된 경우를 나타냅니다.  
   
 ##  <a name="_core_premature_thread_termination"></a> 스레드 완전 종료  
  
@@ -53,7 +53,7 @@ ms.locfileid: "43131947"
   
 ##  <a name="_core_retrieving_the_exit_code_of_a_thread"></a> 스레드의 종료 코드를 검색합니다.  
  
-작업자 또는 사용자 인터페이스 스레드의 종료 코드를 가져오려면 호출 합니다 [GetExitCodeThread](http://msdn.microsoft.com/library/windows/desktop/ms683190) 함수입니다. 이 함수에 대 한 자세한 내용은 Windows SDK를 참조 하세요. 이 함수는 스레드에 핸들을 사용 (에 저장 합니다 `m_hThread` 데이터 멤버의 `CWinThread` 개체) 및 DWORD의 주소입니다.  
+작업자 또는 사용자 인터페이스 스레드의 종료 코드를 가져오려면 호출 합니다 [GetExitCodeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodethread) 함수입니다. 이 함수에 대 한 자세한 내용은 Windows SDK를 참조 하세요. 이 함수는 스레드에 핸들을 사용 (에 저장 합니다 `m_hThread` 데이터 멤버의 `CWinThread` 개체) 및 DWORD의 주소입니다.  
   
 스레드가 여전히 활성 상태 이면 `GetExitCodeThread` 제공 된 DWORD 주소; STILL_ACTIVE 배치 종료 코드는이 주소에 있는 고, 그렇지 합니다.  
   
@@ -70,4 +70,4 @@ ms.locfileid: "43131947"
 [C + + 및 MFC에서 다중 스레딩](multithreading-with-cpp-and-mfc.md)   
 [_endthread, _endthreadex](../c-runtime-library/reference/endthread-endthreadex.md)   
 [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)   
-[ExitThread](http://msdn.microsoft.com/library/windows/desktop/ms682659)
+[ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread)

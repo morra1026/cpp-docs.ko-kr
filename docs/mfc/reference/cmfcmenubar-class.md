@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4d8961cc929196c21838fd21132146deddabcc1
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 2933ed9fbb9a464b4458ce357ce196f2ae9df8f6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42539904"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196384"
 ---
 # <a name="cmfcmenubar-class"></a>CMFCMenuBar 클래스
 도킹을 구현하는 메뉴 모음입니다.  
@@ -197,7 +197,7 @@ class CMFCMenuBar : public CMFCToolbar
   
  사용 하는 `CMFCMenuBar` 개체, 주 창 프레임 개체에 포함 해야 합니다. 처리 하는 경우는 `WM_CREATE` 메시지, 호출 `CMFCMenuBar::Create` 또는 `CMFCMenuBar::CreateEx`합니다. 사용 하는 함수를 만드는 관계 없이 주 프레임 창에 대 한 포인터를 전달 합니다. 다음 호출 하 여 도킹을 사용 하도록 설정 [CFrameWndEx::EnableDocking](../../mfc/reference/cframewndex-class.md#enabledocking)합니다. 이 메뉴를 호출 하 여 도킹 [CFrameWndEx::DockPane](../../mfc/reference/cframewndex-class.md#dockpane)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `CMFCMenuBar` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 창의 스타일을 설정, 사용자 지정 단추를 사용 하도록 설정, 도움말 상자를 사용, 팝업 메뉴에 그림자를 사용 하도록 설정 및 메뉴 표시줄을 업데이트 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_IEDemo#1](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_1.h)]  
@@ -387,9 +387,9 @@ virtual BOOL CreateEx(
 ### <a name="remarks"></a>설명  
  이 함수 대신 사용 해야 [CMFCMenuBar::Create](#create) styl toolbar 외에도 스타일을 지정 하려는 경우. 일부 자주 사용 되는 추가 스타일은 TBSTYLE_TRANSPARENT 및 CBRS_TOP입니다.  
   
- 추가 스타일의 목록, 참조 [도구 모음 컨트롤 및 단추 스타일](http://msdn.microsoft.com/library/windows/desktop/bb760439), [공통 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb775498), 및 [공통 창 스타일](http://msdn.microsoft.com/library/windows/desktop/ms632600)합니다.  
+ 추가 스타일의 목록, 참조 [도구 모음 컨트롤 및 단추 스타일](/windows/desktop/Controls/toolbar-control-and-button-styles), [공통 컨트롤 스타일](/windows/desktop/Controls/common-control-styles), 및 [공통 창 스타일](https://msdn.microsoft.com/library/windows/desktop/ms632600)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `CreateEx` 메서드는 `CMFCMenuBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_IEDemo#1](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_1.h)]  
@@ -964,7 +964,7 @@ static BOOL SetMenuFont(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *lpLogFont*  
- 에 대 한 포인터를 [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/bb773327) 글꼴 집합을 정의 하는 구조입니다.  
+ 에 대 한 포인터를 [LOGFONT](/windows/desktop/api/dimm/ns-dimm-__midl___midl_itf_dimm_0000_0000_0003) 글꼴 집합을 정의 하는 구조입니다.  
   
  [in] *bHorz*  
  원하는 경우 TRUE를 *lpLogFont* 가로 글꼴에 사용할 수 있도록 하려는 경우 세로 방향 글꼴에서 FALSE에 사용할 매개 변수입니다.  

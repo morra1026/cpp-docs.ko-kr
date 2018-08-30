@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1da8f48fc993ec2b6c963bf3648359cc39dfc8ce
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: fb2fd794798f96cceca893df4a69dc888196d9a6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338862"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197005"
 ---
 # <a name="cmetafiledc-class"></a>CMetaFileDC 클래스
 원하는 이미지 또는 텍스트를 만들기 위해 재생할 수 있는 GDI(그래픽 장치 인터페이스) 명령 시퀀스가 포함된 Windows 메타파일을 구현합니다.  
@@ -66,9 +66,9 @@ class CMetaFileDC : public CDC
   
  메타 파일에 원하는 명령을 보낸 후에 호출 하 여 `Close` 메타 파일 장치 컨텍스트를 닫고 메타 파일 핸들을 반환 하는 멤버 함수입니다. 그런 다음 삭제를 `CMetaFileDC` 개체입니다.  
   
- [CDC::PlayMetaFile](../../mfc/reference/cdc-class.md#playmetafile) 메타 파일 핸들을 반복적으로 메타 파일을 재생 하는 데 사용할 수 있습니다. 메타 파일 조작할 수도 있습니다 Windows 함수에서와 같은 [CopyMetaFile](http://msdn.microsoft.com/library/windows/desktop/dd183480)를 디스크에 메타 파일을 복사 합니다.  
+ [CDC::PlayMetaFile](../../mfc/reference/cdc-class.md#playmetafile) 메타 파일 핸들을 반복적으로 메타 파일을 재생 하는 데 사용할 수 있습니다. 메타 파일 조작할 수도 있습니다 Windows 함수에서와 같은 [CopyMetaFile](/windows/desktop/api/wingdi/nf-wingdi-copymetafilea)를 디스크에 메타 파일을 복사 합니다.  
   
- 메타 파일은 더 이상 필요 없는 사용 하 여 메모리에서 삭제 합니다 [DeleteMetaFile](http://msdn.microsoft.com/library/windows/desktop/dd183537) Windows 함수입니다.  
+ 메타 파일은 더 이상 필요 없는 사용 하 여 메모리에서 삭제 합니다 [DeleteMetaFile](/windows/desktop/api/wingdi/nf-wingdi-deletemetafile) Windows 함수입니다.  
   
  구현할 수도 있습니다는 `CMetaFileDC` 개체를 처리할 수 있도록 둘 다 호출 출력 같은 GDI 호출 특성 `GetTextExtent`합니다. 이러한 메타 파일은 보다 유연 하 고 더 쉽게 다시 사용할 수 종종 출력 및 특성에 대 한 호출의 조합으로 구성 된 일반 GDI 코드입니다. 합니다 `CMetaFileDC` 클래스는 두 개의 장치 컨텍스트를 상속 `m_hDC` 고 `m_hAttribDC`, CDC에서. `m_hDC` 장치 컨텍스트 모두 처리 [CDC](../../mfc/reference/cdc-class.md) GDI 출력 호출 및 `m_hAttribDC` 장치 컨텍스트는 모든 CDC GDI 특성 호출을 처리 합니다. 일반적으로 이러한 두 장치 컨텍스트는 동일한 장치를 참조 하십시오. 경우 `CMetaFileDC`, DC 특성은 기본적으로 NULL로 설정 됩니다.  
   
@@ -97,9 +97,9 @@ HMETAFILE Close();
  함수가 성공할 경우에 유효한 HMETAFILE 그렇지 않으면 NULL입니다.  
   
 ### <a name="remarks"></a>설명  
- 와 같은 Windows 함수를 사용 하 여 메타 파일을 조작 하 Windows 메타 파일 핸들을 사용할 수도 있습니다 [CopyMetaFile](http://msdn.microsoft.com/library/windows/desktop/dd183480)합니다.  
+ 와 같은 Windows 함수를 사용 하 여 메타 파일을 조작 하 Windows 메타 파일 핸들을 사용할 수도 있습니다 [CopyMetaFile](/windows/desktop/api/wingdi/nf-wingdi-copymetafilea)합니다.  
   
- Windows를 호출 하 여 메타 파일 사용 후 삭제 [DeleteMetaFile](http://msdn.microsoft.com/library/windows/desktop/dd183537) 함수입니다.  
+ Windows를 호출 하 여 메타 파일 사용 후 삭제 [DeleteMetaFile](/windows/desktop/api/wingdi/nf-wingdi-deletemetafile) 함수입니다.  
   
 ##  <a name="closeenhanced"></a>  CMetaFileDC::CloseEnhanced  
  확장 메타 파일 장치 컨텍스트를 닫고 확장 형식 메타 파일을 식별 하는 핸들을 반환 합니다.  

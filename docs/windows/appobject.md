@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0d9f8cab758728be6683a008ea18ad8448668605
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8de7bbfb2f00f5e1a909a83a5399e2d564747962
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42583610"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213997"
 ---
 # <a name="appobject"></a>appobject
 
@@ -36,9 +36,9 @@ ms.locfileid: "42583610"
 
 ## <a name="remarks"></a>설명
 
-합니다 **appobject** c + + 특성에 동일한 기능을 합니다 [appobject](http://msdn.microsoft.com/library/windows/desktop/aa366726) MIDL 특성입니다.
+합니다 **appobject** c + + 특성에 동일한 기능을 합니다 [appobject](/windows/desktop/Midl/appobject) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드를 포함 하는 특성 블록 뒤에 간단한 클래스 정의 보여 줍니다 **appobject**:
 

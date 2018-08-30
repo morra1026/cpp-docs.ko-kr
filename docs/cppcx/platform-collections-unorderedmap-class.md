@@ -11,12 +11,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d86e5e36c7219a79b77d79fe02e6b2ae811ccabc
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b3e12028d91d488aed635adfeedc206eaffe08ae
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42612720"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205815"
 ---
 # <a name="platformcollectionsunorderedmap-class"></a>Platform::Collections::UnorderedMap 클래스
 
@@ -112,7 +112,7 @@ virtual void Clear();
 
 ## <a name="first"></a>  Unorderedmap:: First 메서드
 
-첫 번째를 지정 하는 반복기를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) unordered map의 요소입니다.
+첫 번째를 지정 하는 반복기를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) unordered map의 요소입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -223,7 +223,7 @@ event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
 
 ### <a name="property-valuereturn-value"></a>속성 값/반환 값
 
-A [MapChangedEventHandler\<K, V >](/uwp/api/windows.foundation.collections.mapchangedeventhandler) 발생 한 변경 내용 유형의 이벤트를 발생 시킨 개체에 대 한 정보를 포함 하는 합니다. 참고 항목 [IMapChangedEventArgs\<K >](http://msdn.microsoft.com/library/windows/apps/br226034.aspx) 하 고 [CollectionChange 열거형](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx)합니다.
+A [MapChangedEventHandler\<K, V >](/uwp/api/windows.foundation.collections.mapchangedeventhandler) 발생 한 변경 내용 유형의 이벤트를 발생 시킨 개체에 대 한 정보를 포함 하는 합니다. 참고 항목 [IMapChangedEventArgs\<K >](https://msdn.microsoft.com/library/windows/apps/br226034.aspx) 하 고 [CollectionChange 열거형](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx)합니다.
 
 ## <a name="net-framework-equivalent"></a>.NET Framework의 해당 값
 
@@ -247,7 +247,7 @@ virtual void Remove(
 
 ## <a name="size"></a>  Unorderedmap:: Size 메서드
 
-개수를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) UnorderedMap에 있는 요소입니다.
+개수를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) UnorderedMap에 있는 요소입니다.
 
 ### <a name="syntax"></a>구문
 

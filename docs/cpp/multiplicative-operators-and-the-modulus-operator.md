@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b238a496718088f0251faa49281fdc8939c01c7
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: a51544f1e367e1db0b5ae72948af68fbedfa7504
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408361"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209730"
 ---
 # <a name="multiplicative-operators-and-the-modulus-operator"></a>곱하기 연산자 및 나머지 연산자
 ## <a name="syntax"></a>구문  
@@ -44,15 +44,15 @@ expression % expression
 ## <a name="remarks"></a>설명  
  곱하기 연산자는 다음과 같습니다.  
   
--   곱하기 (**\****)  
+-   곱하기 (<strong>\**</strong>)  
   
 -   나누기 (**/**)  
   
--   모듈러스(나누기의 나머지)(`%`)  
+-   모듈러스 (나누기의 나머지) (**%**)  
   
  이 이항 연산자는 왼쪽에서 오른쪽으로 연결됩니다.  
   
- 곱하기 연산자는 산술 형식의 피연산자를 사용합니다. 모듈러스 연산자(`%`)에는 피연산자가 정수 계열 형식이어야 한다는 엄격한 요구 사항이 적용됩니다. (을 부동 소수점 나누기의 나머지 부분을 가져오려면 런타임 함수를 사용 하 여 [fmod](../c-runtime-library/reference/fmod-fmodf.md).) 설명 하는 변환은 [표준 변환](standard-conversions.md) 피연산자에 적용 되 고 결과 변환 된 형식입니다.  
+ 곱하기 연산자는 산술 형식의 피연산자를 사용합니다. 나머지 연산자 (**%**)에 보다 엄격한 요구 사항이 해당 피연산자는 정수 계열 형식 이어야 합니다. (을 부동 소수점 나누기의 나머지 부분을 가져오려면 런타임 함수를 사용 하 여 [fmod](../c-runtime-library/reference/fmod-fmodf.md).) 설명 하는 변환은 [표준 변환](standard-conversions.md) 피연산자에 적용 되 고 결과 변환 된 형식입니다.  
   
  곱하기 연산자는 첫 번째 피연산자와 두 번째 피연산자를 곱한 결과를 구합니다.  
   
@@ -80,7 +80,7 @@ f / 0.0
   
  곱셈 연산자 간의 관계를 지정 하 여 id (*e1* / *e2*) \* *e2*  +  *e1* % *e2* == *e1*합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 프로그램은 곱셈 연산자를 보여 줍니다. 두 피연산자 중 하나가 `10 / 3` 형식으로 명시적으로 캐스팅 해야 **float** 형식의 두 피연산자가 있도록 잘리지 않도록 하려면 **float** 나누기 앞입니다.  
   
 ```cpp 

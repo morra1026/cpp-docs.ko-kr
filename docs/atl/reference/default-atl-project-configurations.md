@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52f74ec15c6bc6d58f9f092a24faf66d0cef3740
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 0c6a7b077c66940f98ce37c0d4b07bbab3dfd9ae
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026474"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201943"
 ---
 # <a name="default-atl-project-configurations"></a>기본 ATL 프로젝트 구성
 ATL 프로젝트 마법사는 기본적으로 두 가지 프로젝트 구성을 만듭니다.  
@@ -35,6 +35,6 @@ ATL 프로젝트 마법사는 기본적으로 두 가지 프로젝트 구성을 
 ## <a name="see-also"></a>참고 항목  
  [ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)   
  [프로젝트 속성 사용](../../ide/working-with-project-properties.md)   
- [구성 관리자 대화 상자](http://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)   
+ [구성 관리자 대화 상자](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)   
  [컴파일 및 빌드](/visualstudio/ide/compiling-and-building-in-visual-studio)
 

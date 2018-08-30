@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 330701c4fcc75d40e782d25baa55044b88852f50
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 3e31e7e9a7a15c70c74193d77181122c022a938a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337798"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217313"
 ---
 # <a name="ole-initialization"></a>OLE 초기화
 응용 프로그램에서 OLE 시스템 서비스를 사용 하려면 먼저 OLE 시스템 Dll을 초기화 하 고 Dll을 올바른 버전 인지 확인 합니다. `AfxOleInit` 함수 OLE 시스템 Dll을 초기화 합니다.  
@@ -63,15 +63,15 @@ BOOL AFXAPI AfxOleInit();
 ### <a name="remarks"></a>설명  
  MFC 응용 프로그램에 대 한 OLE 지원 초기화 하려면이 함수를 호출 합니다. 이 함수를 호출 하는 경우에 다음 작업이 수행 됩니다.  
   
--   호출 응용 프로그램의 현재 아파트에서 COM 라이브러리를 초기화합니다. 자세한 내용은 [OleInitialize](http://msdn.microsoft.com/library/windows/desktop/ms690134)합니다.  
+-   호출 응용 프로그램의 현재 아파트에서 COM 라이브러리를 초기화합니다. 자세한 내용은 [OleInitialize](/windows/desktop/api/ole2/nf-ole2-oleinitialize)합니다.  
   
--   메시지 필터 개체를 구현 합니다 [IMessageFilter](http://msdn.microsoft.com/library/windows/desktop/ms693740) 인터페이스입니다. 이 메시지 필터에 대 한 호출을 사용 하 여 액세스할 수 있습니다 [AfxOleGetMessageFilter](application-control.md#afxolegetmessagefilter)합니다.  
+-   메시지 필터 개체를 구현 합니다 [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter) 인터페이스입니다. 이 메시지 필터에 대 한 호출을 사용 하 여 액세스할 수 있습니다 [AfxOleGetMessageFilter](application-control.md#afxolegetmessagefilter)합니다.  
   
 > [!NOTE]
 >  하는 경우 **AfxOleInit** 라고는 MFC DLL에서 호출이 실패 합니다. 오류 함수는 DLL에서 호출 되는 경우 OLE 시스템 이전에 초기화 된 호출 응용 프로그램에서 가정 하기 때문에 발생 합니다.  
   
 > [!NOTE]
->  MFC 응용 프로그램은 단일 스레드 아파트 (STA)로 초기화 되어야 합니다. 호출 하는 경우 [CoInitializeEx](http://msdn.microsoft.com/library/windows/desktop/ms695279) 에서 프로그램 `InitInstance` 재정의 COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED 아님)를 지정 합니다. 자세한 내용은 참조 PRB: MFC 응용 프로그램이 다른 이름으로 다중 스레드 아파트 (828643)에서 응용 프로그램을 초기화 하는 경우 응답 하지 [ http://support.microsoft.com/default.aspxscid=kb; en-우리; 828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643)합니다.  
+>  MFC 응용 프로그램은 단일 스레드 아파트 (STA)로 초기화 되어야 합니다. 호출 하는 경우 [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) 에서 프로그램 `InitInstance` 재정의 COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED 아님)를 지정 합니다. 자세한 내용은 참조 PRB: MFC 응용 프로그램이 다른 이름으로 다중 스레드 아파트 (828643)에서 응용 프로그램을 초기화 하는 경우 응답 하지 [ http://support.microsoft.com/default.aspxscid=kb; en-우리; 828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643)합니다.  
 
 ### <a name="requirements"></a>요구 사항  
  **헤더:** afxdisp.h

@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4459865bc2ba374048622167fadb7bcf8fb97c99
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 424bb8e7082432cea3f730bb0783c2c1912c293f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028176"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220508"
 ---
 # <a name="mfc-activex-controls-optimization"></a>MFC ActiveX 컨트롤: 최적화
 이 문서에는 성능 향상을 위해 ActiveX 컨트롤을 최적화 하 여 기술을 설명 합니다.  
@@ -53,7 +53,7 @@ ms.locfileid: "39028176"
 |**마우스 포인터 알림 비활성 상태일 때** 확인란|선택|[비활성 상태 중 마우스 상호 작용 제공](../mfc/providing-mouse-interaction-while-inactive.md)|  
 |**그리기 코드 최적화** 확인란|선택|[컨트롤 그리기 최적화](../mfc/optimizing-control-drawing.md)|  
   
- 이러한 최적화를 구현 하는 멤버 함수에 대 한 자세한 내용은 [COleControl](../mfc/reference/colecontrol-class.md)합니다. 멤버 함수를 사용 하 여 같은 나열 됩니다 [창 작업](http://msdn.microsoft.com/e9e28f79-9a70-4ae4-a5aa-b3e92f1904df) 하 고 [비활성 포인터 처리 함수](http://msdn.microsoft.com/e9e28f79-9a70-4ae4-a5aa-b3e92f1904df)합니다.  
+ 이러한 최적화를 구현 하는 멤버 함수에 대 한 자세한 내용은 [COleControl](../mfc/reference/colecontrol-class.md)합니다.  
   
  자세한 내용은 다음을 참조하세요.  
   

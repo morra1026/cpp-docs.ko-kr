@@ -41,12 +41,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eae4218d6c6446554d5fb45d680588127ec3e0ee
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: e1ee6ee76840774fd750df95f73c105c059cae59
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883094"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196523"
 ---
 # <a name="ccommodule-class"></a>CComModule 클래스
 ATL 7.0부터 `CComModule` 는 사용 되지 않습니다: 참조 [ATL 모듈 클래스](../../atl/atl-module-classes.md) 대 한 자세한 내용은 합니다.  
@@ -346,10 +346,10 @@ HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
   
 ### <a name="parameters"></a>매개 변수  
  *dwClsContext*  
- [in] 클래스 개체를 실행할의 컨텍스트를 지정 합니다. 가능한 값은 CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER, 또는 CLSCTX_LOCAL_SERVER입니다. 이러한 값에 대 한 참조 [CLSCTX](http://msdn.microsoft.com/library/windows/desktop/ms693716) Windows SDK에 있습니다.  
+ [in] 클래스 개체를 실행할의 컨텍스트를 지정 합니다. 가능한 값은 CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER, 또는 CLSCTX_LOCAL_SERVER입니다. 이러한 값에 대 한 참조 [CLSCTX](https://msdn.microsoft.com/library/windows/desktop/ms693716) Windows SDK에 있습니다.  
   
  *dwFlags*  
- [in] 클래스 개체에 연결 형식을 결정합니다. 가능한 값은 REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE, 또는 REGCLS_MULTI_SEPARATE입니다. 이러한 값에 대 한 참조 [REGCLS](http://msdn.microsoft.com/library/windows/desktop/ms679697) Windows SDK에 있습니다.  
+ [in] 클래스 개체에 연결 형식을 결정합니다. 가능한 값은 REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE, 또는 REGCLS_MULTI_SEPARATE입니다. 이러한 값에 대 한 참조 [REGCLS](/windows/desktop/api/combaseapi/ne-combaseapi-tagregcls) Windows SDK에 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
  표준 HRESULT 값입니다.  

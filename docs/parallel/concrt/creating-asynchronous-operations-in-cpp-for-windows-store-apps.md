@@ -15,17 +15,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3afe558ad5d17c7c9741a1c211bb838c615c8542
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: b83531c1452174403f3ead3c5bd3d1b59b0c7d4d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42543198"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213451"
 ---
 # <a name="creating-asynchronous-operations-in-c-for-uwp-apps"></a>C + + UWP 앱 용 비동기 작업 만들기
 이 문서의 작업 클래스를 사용 하 여 Windows 런타임 UWP (유니버설) 앱에서 Windows ThreadPool 기반 비동기 작업을 생성할 때 염두 할 주요 사항 중 일부를 설명 합니다.  
   
- 비동기 프로그래밍을 사용 하 여 Windows 런타임 앱 모델의 핵심 구성 요소 이므로 앱 사용자 입력에 응답을 유지할 수 있습니다. UI 스레드를 차단하지 않고 장기 실행 작업을 시작할 수 있으며 해당 작업의 결과를 나중에 받을 수 있습니다. 또한 작업을 취소하고 작업이 백그라운드에서 실행될 때 진행률 알림을 받을 수도 있습니다. 문서 [c + +의 비동기 프로그래밍](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps) Visual c + + UWP 앱을 만드는 데 사용할 수 있는 비동기 패턴의 개요를 제공 합니다. 해당 문서 모두 사용 하 고 비동기 Windows 런타임 작업의 체인을 만드는 방법에 설명 합니다. 이 섹션에서는 ppltasks.h의 형식을 사용 하 여 다른 Windows 런타임 구성 요소에서 사용할 수 있는 비동기 작업을 생성 하는 방법을 설명 하 고 비동기 작업을 제어 하는 방법을 실행 됩니다. 또한 [비동기 프로그래밍 패턴 및 팁 (c + + 및 XAML을 사용 하는 Windows 스토어 앱) Hilo의](http://msdn.microsoft.com/library/windows/apps/jj160321.aspx) 에 c + + 및 XAML을 사용 하는 Windows 런타임 앱 인 hilo에서 비동기 작업을 구현 하려면 작업 클래스를 사용 하는 방법에 대해 알아봅니다.  
+ 비동기 프로그래밍을 사용 하 여 Windows 런타임 앱 모델의 핵심 구성 요소 이므로 앱 사용자 입력에 응답을 유지할 수 있습니다. UI 스레드를 차단하지 않고 장기 실행 작업을 시작할 수 있으며 해당 작업의 결과를 나중에 받을 수 있습니다. 또한 작업을 취소하고 작업이 백그라운드에서 실행될 때 진행률 알림을 받을 수도 있습니다. 문서 [c + +의 비동기 프로그래밍](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps) Visual c + + UWP 앱을 만드는 데 사용할 수 있는 비동기 패턴의 개요를 제공 합니다. 해당 문서 모두 사용 하 고 비동기 Windows 런타임 작업의 체인을 만드는 방법에 설명 합니다. 이 섹션에서는 ppltasks.h의 형식을 사용 하 여 다른 Windows 런타임 구성 요소에서 사용할 수 있는 비동기 작업을 생성 하는 방법을 설명 하 고 비동기 작업을 제어 하는 방법을 실행 됩니다. 또한 [비동기 프로그래밍 패턴 및 팁 (c + + 및 XAML을 사용 하는 Windows 스토어 앱) Hilo의](https://msdn.microsoft.com/library/windows/apps/jj160321.aspx) 에 c + + 및 XAML을 사용 하는 Windows 런타임 앱 인 hilo에서 비동기 작업을 구현 하려면 작업 클래스를 사용 하는 방법에 대해 알아봅니다.  
   
 > [!NOTE]
 >  사용할 수는 [병렬 패턴 라이브러리](../../parallel/concrt/parallel-patterns-library-ppl.md) (PPL) 및 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md) UWP 앱에서. 그러나 작업 스케줄러 또는 리소스 관리자는 사용할 수 없습니다. 이 문서에서는 데스크톱 앱 아니라 UWP 앱에만 사용할 수 있는 PPL에서 제공 하는 추가 기능을 설명 합니다.  
@@ -61,16 +61,16 @@ ms.locfileid: "42543198"
   
  Windows 런타임을 사용 하 여 다양 한 프로그래밍 언어의 유용한 기능을 사용할 수 있으며 하나의 앱에 결합할 수 있습니다. 예를 들어 JavaScript에서 UI를 만들고 C++ 구성 요소에서 계산이 많은 앱 논리를 수행할 수 있습니다. 이러한 계산이 많은 작업을 백그라운드에서 수행하는 기능은 UI 응답 성능을 유지하는 데 핵심적인 요소입니다. 때문에 `task` 클래스는 c + + 비동기 작업 (c + + 이외의 언어로 작성 될 수 있습니다)는 다른 구성 요소에 전달할 Windows 런타임 인터페이스를 사용 해야 합니다. Windows 런타임 비동기 작업을 나타내는 데 사용할 수 있는 네 가지 인터페이스를 제공 합니다.  
   
- [Windows::Foundation::IAsyncAction](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iasyncaction.aspx)  
+ [Windows::Foundation::IAsyncAction](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iasyncaction.aspx)  
  비동기 동작을 나타냅니다.  
   
- [Windows::Foundation::IAsyncActionWithProgress\<TProgress>](http://msdn.microsoft.com/library/windows/apps/br206581.aspx)  
+ [Windows::Foundation::IAsyncActionWithProgress\<TProgress>](https://msdn.microsoft.com/library/windows/apps/br206581.aspx)  
  진행률을 보고하는 비동기 동작을 나타냅니다.  
   
- [Windows::Foundation::IAsyncOperation\<TResult>](http://msdn.microsoft.com/library/windows/apps/br206598.aspx)  
+ [Windows::Foundation::IAsyncOperation\<TResult>](https://msdn.microsoft.com/library/windows/apps/br206598.aspx)  
  결과를 반환하는 비동기 작업을 나타냅니다.  
   
- [Windows::Foundation::IAsyncOperationWithProgress\<TResult, TProgress>](http://msdn.microsoft.com/library/windows/apps/br206594.aspx)  
+ [Windows::Foundation::IAsyncOperationWithProgress\<TResult, TProgress>](https://msdn.microsoft.com/library/windows/apps/br206594.aspx)  
  결과를 반환하고 진행률을 보고하는 비동기 작업을 나타냅니다.  
   
  여기서 *동작(action)* 은 비동기 작업에서 값을 생성하지 않음을 의미하고( `void`를 반환하는 함수와 유사함), *작업(operation)* 은 비동기 작업에서 값을 생성함을 의미합니다. *진행률(progress)* 은 작업에서 진행률 메시지를 호출자에게 보고할 수 있음을 의미합니다. JavaScript, .NET Framework 및 Visual C++에서는 ABI 경계를 넘어 사용할 수 있도록 이러한 인터페이스의 인스턴스를 만드는 방법을 자체적으로 제공합니다. Visual C++의 경우 PPL에서 [concurrency:: create_async](reference/concurrency-namespace-functions.md#create_async) 함수를 제공합니다. 이 함수는 Windows 런타임 비동기 작업 또는 작업의 완료를 나타내는 작업을 만듭니다. 합니다 `create_async` 함수는 작업 함수 (일반적으로 람다 식)를 만들고 내부적으로 `task` 개체 및 해당 네 가지 비동기 Windows 런타임 인터페이스 중 하나에서 작업을 래핑합니다.  
@@ -102,7 +102,7 @@ ms.locfileid: "42543198"
  [!code-cpp[concrt-windowsstore-primes#100](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_1.cpp)]  
   
 ##  <a name="example-component"></a> 예: C++ Windows 런타임 구성 요소를 만들어 C#에서 이를 사용  
- XAML 및 C#을 사용 하 여 계산 집약적인 작업을 수행 하는 UI와 c + + Windows 런타임 구성 요소를 정의 하는 앱을 고려해 야 합니다. 이 예에서 C++ 구성 요소는 지정된 범위에서 소수인 수를 계산합니다. 네 가지 Windows 런타임 비동기 작업 인터페이스 간의 차이 보여 주기 위해, Visual Studio에서 만들어 시작을 **빈 솔루션** 이름을 지정 하 고 `Primes`입니다. 그런 다음 솔루션에 **Windows 런타임 구성 요소** 프로젝트를 추가하고 이름을 `PrimesLibrary`로 지정합니다. 생성된 C++ 헤더 파일에 다음 코드를 추가합니다(이 예에서는 Class1.h의 이름을 Primes.h로 변경). 각 `public` 메서드는 네 가지 비동기 인터페이스 중 하나를 정의합니다. 값을 반환 하는 메서드는 반환 된 [Windows::Foundation::Collections::IVector\<int >](http://msdn.microsoft.com/library/windows/apps/br206631.aspx) 개체입니다. 진행률을 보고하는 메서드는 완료된 전체 작업의 백분율을 정의하는 `double` 값을 생성합니다.  
+ XAML 및 C#을 사용 하 여 계산 집약적인 작업을 수행 하는 UI와 c + + Windows 런타임 구성 요소를 정의 하는 앱을 고려해 야 합니다. 이 예에서 C++ 구성 요소는 지정된 범위에서 소수인 수를 계산합니다. 네 가지 Windows 런타임 비동기 작업 인터페이스 간의 차이 보여 주기 위해, Visual Studio에서 만들어 시작을 **빈 솔루션** 이름을 지정 하 고 `Primes`입니다. 그런 다음 솔루션에 **Windows 런타임 구성 요소** 프로젝트를 추가하고 이름을 `PrimesLibrary`로 지정합니다. 생성된 C++ 헤더 파일에 다음 코드를 추가합니다(이 예에서는 Class1.h의 이름을 Primes.h로 변경). 각 `public` 메서드는 네 가지 비동기 인터페이스 중 하나를 정의합니다. 값을 반환 하는 메서드는 반환 된 [Windows::Foundation::Collections::IVector\<int >](https://msdn.microsoft.com/library/windows/apps/br206631.aspx) 개체입니다. 진행률을 보고하는 메서드는 완료된 전체 작업의 백분율을 정의하는 `double` 값을 생성합니다.  
   
  [!code-cpp[concrt-windowsstore-primes#1](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_2.h)]  
   
@@ -113,7 +113,7 @@ ms.locfileid: "42543198"
   
  [!code-cpp[concrt-windowsstore-primes#2](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_3.cpp)]  
   
- 각 메서드는 먼저 입력된 매개 변수는 음수가 아닌 수 있도록 유효성 검사를 수행 합니다. 입력 값이 음수이면 메서드에서 [Platform::InvalidArgumentException](http://msdn.microsoft.com/library/windows/apps/hh755794\(v=vs.110\).aspx)을 throw합니다. 오류 처리에 대해서는 이 섹션의 뒷부분에서 설명합니다.  
+ 각 메서드는 먼저 입력된 매개 변수는 음수가 아닌 수 있도록 유효성 검사를 수행 합니다. 입력된 값이 음수 이면 메서드에서 throw [platform:: invalidargumentexception](https://msdn.microsoft.com/library/windows/apps/hh755794\(v=vs.110\).aspx)합니다. 오류 처리에 대해서는 이 섹션의 뒷부분에서 설명합니다.  
   
  UWP 앱에서 이러한 메서드를 사용 하려면 다음을 사용 Visual C# **빈 앱 (XAML)** 템플릿을 Visual Studio 솔루션에 두 번째 프로젝트를 추가 합니다. 이 예에서는 프로젝트 이름을 `Primes`로 지정합니다. 그런 다음 `Primes` 프로젝트에서 `PrimesLibrary` 프로젝트에 대한 참조를 추가합니다.  
   
@@ -127,7 +127,7 @@ ms.locfileid: "42543198"
   
  이러한 메서드는 `async` 및 `await` 키워드를 사용하여 비동기 작업이 완료된 후 UI를 업데이트합니다. UWP 앱에서 비동기 코딩 하는 방법에 대 한 내용은 [스레딩 및 비동기 프로그래밍](/windows/uwp/threading-async)합니다.  
   
- `getPrimesCancellation` 및 `cancelGetPrimes` 메서드는 함께 작동하여 사용자가 작업을 취소할 수 있도록 합니다. 사용자가 선택 하는 경우는 **취소** 단추를 `cancelGetPrimes` 메서드 호출 [IAsyncOperationWithProgress\<TResult, TProgress >:: 취소](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iasyncinfo.cancel.aspx) 작업을 취소 하 합니다. 기본 비동기 작업을 관리 하는 동시성 런타임에서 취소가 완료 되었다고 통신 하기 위해 Windows 런타임에서 내부 예외 형식을 throw 합니다. 취소 모델에 대 한 자세한 내용은 참조 하세요. [취소](../../parallel/concrt/cancellation-in-the-ppl.md)합니다.  
+ `getPrimesCancellation` 및 `cancelGetPrimes` 메서드는 함께 작동하여 사용자가 작업을 취소할 수 있도록 합니다. 사용자가 선택 하는 경우는 **취소** 단추를 `cancelGetPrimes` 메서드 호출 [IAsyncOperationWithProgress\<TResult, TProgress >:: 취소](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iasyncinfo.cancel.aspx) 작업을 취소 하 합니다. 기본 비동기 작업을 관리 하는 동시성 런타임에서 취소가 완료 되었다고 통신 하기 위해 Windows 런타임에서 내부 예외 형식을 throw 합니다. 취소 모델에 대 한 자세한 내용은 참조 하세요. [취소](../../parallel/concrt/cancellation-in-the-ppl.md)합니다.  
   
 > [!IMPORTANT]
 >  에 올바르게 보고할 Windows 런타임 작업을 취소 했습니다는 PPL을 사용 하려면이 내부 예외 형식을 catch 하지 않습니다. 즉, 모든 예외도 catch하지 않아야 합니다(`catch (...)`). 모든 catch 해야 하는 경우 예외를 Windows 런타임에서 취소 작업을 완료할 수 있도록 하려면 예외를 다시 throw 합니다.  
@@ -136,7 +136,7 @@ ms.locfileid: "42543198"
   
  ![Windows 런타임 Primes 앱](../../parallel/concrt/media/concrt_windows_primes.png "concrt_windows_primes")  
   
- `create_async` 를 사용하여 다른 언어에서 사용할 수 있는 비동기 작업을 만드는 예는 [Bing 지도 여정 최적화 프로그램 샘플에서 C++ 사용](http://msdn.microsoft.com/library/windows/apps/hh699891\(v=vs.110\).aspx) 및 [PPL을 사용하는 C++의 Windows 8 비동기 작업](http://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d)을 참조하세요.  
+ 사용 하는 예제에 대 한 `create_async` 다른 언어에서 사용할 수 있는 비동기 작업을 만들려면 참조 [Bing Maps Trip Optimizer 샘플에서 c + +를 사용 하 여](https://msdn.microsoft.com/library/windows/apps/hh699891\(v=vs.110\).aspx) 고 [PPL사용하여c++의Windows8비동기작업](http://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d).  
   
 ##  <a name="exethread"></a> 실행 스레드 제어  
  Windows 런타임 COM 스레딩 모델을 사용 합니다. 이 모델에서 개체는 동기화를 처리하는 방식에 따라 서로 다른 아파트에 호스트됩니다. 스레드로부터 안전한 개체는 MTA(다중 스레드 아파트)에서 호스트됩니다. 단일 스레드에서 액세스해야 하는 개체는 STA(단일 스레드 아파트)에서 호스트됩니다.  
@@ -165,7 +165,7 @@ ms.locfileid: "42543198"
 >  STA에서 실행되는 연속의 본문에서 [concurrency::task::wait](reference/task-class.md#wait) 를 호출하지 마세요. 호출하는 경우 이 메서드가 현재 스레드를 차단하고 앱이 응답하지 않게 만들 수 있기 때문에 런타임에서 [concurrency::invalid_operation](../../parallel/concrt/reference/invalid-operation-class.md) 을 throw합니다. 그러나 [concurrency::task::get](reference/task-class.md#get) 메서드를 호출하여 작업 기반 연속에서 선행 작업의 결과를 받을 수 있습니다.  
   
 ##  <a name="example-app"></a> 예: c + + 및 XAML을 사용 하 여 Windows 런타임 앱에서 실행 제어  
- 디스크에서 파일을 읽고 해당 파일에서 가장 일반적인 단어를 찾은 다음 UI에 결과를 표시하는 C++ XAML 앱을 살펴보겠습니다. 이 앱을 만들려면, Visual Studio에서 만들어 시작을 **비어 있는 앱 (유니버설 Windows)** 프로젝트 이름을 지정 하 고 `CommonWords`입니다. 앱 매니페스트에서 **문서 라이브러리** 접근 권한을 지정하여 앱이 문서 폴더에 액세스할 수 있도록 합니다. 또한 텍스트(.txt) 파일 형식을 앱 매니페스트의 선언 섹션에 추가합니다. 앱 기능 및 선언에 대한 자세한 내용은 [앱 패키지 및 배포](http://msdn.microsoft.com/library/windows/apps/hh464929.aspx)를 참조하세요.  
+ 디스크에서 파일을 읽고 해당 파일에서 가장 일반적인 단어를 찾은 다음 UI에 결과를 표시하는 C++ XAML 앱을 살펴보겠습니다. 이 앱을 만들려면, Visual Studio에서 만들어 시작을 **비어 있는 앱 (유니버설 Windows)** 프로젝트 이름을 지정 하 고 `CommonWords`입니다. 앱 매니페스트에서 **문서 라이브러리** 접근 권한을 지정하여 앱이 문서 폴더에 액세스할 수 있도록 합니다. 또한 텍스트(.txt) 파일 형식을 앱 매니페스트의 선언 섹션에 추가합니다. 앱 기능 및 선언에 대 한 자세한 내용은 참조 하세요. [앱 패키지 및 배포](https://msdn.microsoft.com/library/windows/apps/hh464929.aspx)합니다.  
   
  MainPage.xaml에서 `Grid` 요소를 업데이트하여 `ProgressRing` 요소와 `TextBlock` 요소를 포함합니다. `ProgressRing` 은 작업이 진행 중임을 나타내고, `TextBlock` 은 계산의 결과를 보여 줍니다.  
   

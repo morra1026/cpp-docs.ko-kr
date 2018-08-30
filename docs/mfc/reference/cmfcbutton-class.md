@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e50f48ad935e74bff05fe41dd77a0b17c0bd26ed
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 155aa704efe0686fc03be6e2b12c076656fad7a1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337309"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217511"
 ---
 # <a name="cmfcbutton-class"></a>CMFCButton 클래스
 `CMFCButton` 클래스 기능을 추가 합니다 [CButton](../../mfc/reference/cbutton-class.md) 클래스 등 단추 텍스트 정렬, 단추 텍스트 및 이미지 결합, 커서 선택, 도구 설명 지정 합니다.  
@@ -137,7 +137,7 @@ class CMFCButton : public CButton
 |[CMFCButton::IsRadioButton](#isradiobutton)|단추는 라디오 단추 인지 여부를 나타냅니다.|  
 |[CMFCButton::IsWindowsThemingEnabled](#iswindowsthemingenabled)|단추 테두리 스타일을 현재 Windows 테마에 해당 하는지 여부를 나타냅니다.|  
 |`CMFCButton::OnDrawParentBackground`|지정된 된 영역에 단추의 부모 배경을 그립니다. (재정의 [afx_global_data:: drawparentbackground](../../mfc/reference/afx-global-data-structure.md)|  
-|`CMFCButton::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|  
+|`CMFCButton::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|  
 |[CMFCButton::SetAutorepeatMode](#setautorepeatmode)|단추 자동 반복 모드를 설정합니다.|  
 |[CMFCButton::SetCheckedImage](#setcheckedimage)|이미지 선택된 단추를 설정 합니다.|  
 |[CMFCButton::SetFaceColor](#setfacecolor)|단추 텍스트의 배경색을 설정합니다.|  
@@ -181,7 +181,7 @@ class CMFCButton : public CButton
   
  대화 상자 응용 프로그램에서 알림 메시지를 처리 하려면 메시지 맵 항목 및 각 알림에 대 한 이벤트 처리기를 추가 합니다. 보낸 알림의 `CMFCButton` 개체에서 보낸 것과 동일를 `CButton` 개체입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서 다양 한 메서드를 사용 하 여 단추의 속성을 구성 하는 방법에 설명 합니다 `CMFCButton` 클래스입니다. 일부인 예제는 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]  
@@ -456,7 +456,7 @@ FlatStyle  m_nFlatStyle;
   
  `CMFCButton` 생성자 BUTTONSTYLE_3D이이 멤버를 초기화 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 값을 설정 하는 방법에 설명 합니다 `m_nFlatStyle` 멤버 변수를 `CMFCButton` 클래스입니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]  
@@ -756,7 +756,7 @@ void SetImage(
   
 ### <a name="remarks"></a>설명  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 다양 한 버전을 사용 하는 방법에 설명 합니다 `SetImage` 의 메서드는 `CMFCButton` 클래스입니다. 일부인 예제는 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]  
@@ -776,7 +776,7 @@ void SetMouseCursor(HCURSOR hcursor);
 ### <a name="remarks"></a>설명  
  단추를 사용 하 여 손 모양 커서를 같은 커서 이미지를 연결 하려면이 메서드를 사용 합니다. 커서는 응용 프로그램 리소스에서 로드 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `SetMouseCursor` 의 메서드는 `CMFCButton` 클래스입니다. 이 예제에서는 코드의 일부인 합니다 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]  

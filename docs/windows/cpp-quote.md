@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8a1b9ba00c8728c86935b7c64105d03bb4f19b10
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: da9e378ff75ec67660b0c29a5765be88a2c06496
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610602"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205668"
 ---
 # <a name="cppquote"></a>cpp_quote
 
@@ -47,9 +47,9 @@ C 명령입니다.
 
 사용할 수도 있습니다 **cpp_quote** MIDL 컴파일의 일부로.h 파일을 생성 합니다. 예를 들어, c + + IDL 특성을 사용 하지만 일부 작업에 대 한이 파일을 사용할 수 없습니다는 c + + 헤더 파일에 있으면 다음 컴파일할 수 있습니다 하 여 사용할 수 있어야 하는.h 있으므로 MIDL 생성 파일을 만듭니다.
 
-합니다 **cpp_quote** 특성이 동일한 기능을 합니다 [cpp_quote](http://msdn.microsoft.com/library/windows/desktop/aa366765) MIDL 특성입니다.
+합니다 **cpp_quote** 특성이 동일한 기능을 합니다 [cpp_quote](/windows/desktop/Midl/cpp-quote) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 예를 참조 하세요 [이중](../windows/dual.md) 예로 사용 하는 방법을 사용 하 여 **cpp_quote**합니다.
 

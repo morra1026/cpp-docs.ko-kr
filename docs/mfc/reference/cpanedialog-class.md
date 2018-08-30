@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0edc3a255d3778711b2b8e74bde448dc34c814c
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 677518f45fdfb721027cc67b0210e9b437bed859
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849093"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213152"
 ---
 # <a name="cpanedialog-class"></a>CPaneDialog 클래스
 `CPaneDialog` 클래스는 도킹 가능한 모덜리스 대화 상자를 지원 합니다.  
@@ -54,12 +54,12 @@ class CPaneDialog : public CDockablePane
 |[CPaneDialog::Create](#create)|도킹 가능한 대화 상자를 만들고 연결 하는 `CPaneDialog` 개체입니다.|  
 |`CPaneDialog::CreateObject`|프레임워크에서 이 클래스 형식의 동적 인스턴스를 만드는 데 사용합니다.|  
 |`CPaneDialog::GetThisClass`|에 대 한 포인터를 가져오는 데 프레임 워크에 의해 합니다 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 이 클래스 형식과 연결 된 개체입니다.|  
-|[CPaneDialog::HandleInitDialog](#handleinitdialog)|처리를 [WM_INITDIALOG](http://msdn.microsoft.com/library/windows/desktop/ms645428) 메시지입니다. (재정의 `CBasePane::HandleInitDialog`.)|  
-|`CPaneDialog::OnEraseBkgnd`|처리를 [WM_ERASEBKGND](http://msdn.microsoft.com/library/windows/desktop/ms648055) 메시지입니다. (재정의 [CWnd::OnEraseBkgnd](../../mfc/reference/cwnd-class.md#onerasebkgnd).)|  
-|`CPaneDialog::OnLButtonDblClk`|처리를 [WM_LBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms645606) 메시지입니다. (재정의 [CWnd::OnLButtonDblClk](../../mfc/reference/cwnd-class.md#onlbuttondblclk).)|  
-|`CPaneDialog::OnLButtonDown`|처리를 [WM_LBUTTONDOWN](http://msdn.microsoft.com/library/windows/desktop/ms645607) 메시지입니다. (재정의 [CWnd::OnLButtonDown](../../mfc/reference/cwnd-class.md#onlbuttondown).)|  
-|`CPaneDialog::OnUpdateCmdUI`|대화 상자 창에 업데이트 하기 위해 프레임 워크에서 호출 됩니다. (재정의 [cdockablepane:: Onupdatecmdui](http://msdn.microsoft.com/5dd61606-1c12-40d4-b024-f3839aa5e2e0).)|  
-|`CPaneDialog::OnWindowPosChanging`|처리를 [WM_WINDOWPOSCHANGING](http://msdn.microsoft.com/library/windows/desktop/ms632653) 메시지입니다. (재정의 [CWnd::OnWindowPosChanging](../../mfc/reference/cwnd-class.md#onwindowposchanging).)|  
+|[CPaneDialog::HandleInitDialog](#handleinitdialog)|처리를 [WM_INITDIALOG](/windows/desktop/dlgbox/wm-initdialog) 메시지입니다. (재정의 `CBasePane::HandleInitDialog`.)|  
+|`CPaneDialog::OnEraseBkgnd`|처리를 [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) 메시지입니다. (재정의 [CWnd::OnEraseBkgnd](../../mfc/reference/cwnd-class.md#onerasebkgnd).)|  
+|`CPaneDialog::OnLButtonDblClk`|처리를 [WM_LBUTTONDBLCLK](/windows/desktop/inputdev/wm-lbuttondblclk) 메시지입니다. (재정의 [CWnd::OnLButtonDblClk](../../mfc/reference/cwnd-class.md#onlbuttondblclk).)|  
+|`CPaneDialog::OnLButtonDown`|처리를 [WM_LBUTTONDOWN](/windows/desktop/inputdev/wm-lbuttondown) 메시지입니다. (재정의 [CWnd::OnLButtonDown](../../mfc/reference/cwnd-class.md#onlbuttondown).)|  
+|`CPaneDialog::OnUpdateCmdUI`|대화 상자 창에 업데이트 하기 위해 프레임 워크에서 호출 됩니다. (재정의 [cdockablepane:: Onupdatecmdui](https://msdn.microsoft.com/5dd61606-1c12-40d4-b024-f3839aa5e2e0).)|  
+|`CPaneDialog::OnWindowPosChanging`|처리를 [WM_WINDOWPOSCHANGING](/windows/desktop/winmsg/wm-windowposchanging) 메시지입니다. (재정의 [CWnd::OnWindowPosChanging](../../mfc/reference/cwnd-class.md#onwindowposchanging).)|  
 |[CPaneDialog::SetOccDialogInfo](#setoccdialoginfo)|OLE 컨트롤 컨테이너의 대화 상자에 대 한 템플릿을 지정 합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -154,14 +154,14 @@ BOOL Create(
   
 ### <a name="remarks"></a>설명  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `Create` 의 메서드는 `CPaneDialog` 클래스입니다. 이 예제는의 일부를 [창 크기 설정 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_SetPaneSize#2](../../mfc/reference/codesnippet/cpp/cpanedialog-class_1.h)]  
 [!code-cpp[NVC_MFC_SetPaneSize#3](../../mfc/reference/codesnippet/cpp/cpanedialog-class_2.cpp)]  
   
 ##  <a name="handleinitdialog"></a>  CPaneDialog::HandleInitDialog  
- 처리를 [WM_INITDIALOG](http://msdn.microsoft.com/library/windows/desktop/ms645428) 메시지입니다.  
+ 처리를 [WM_INITDIALOG](/windows/desktop/dlgbox/wm-initdialog) 메시지입니다.  
   
 ```  
 afx_msg LRESULT HandleInitDialog(

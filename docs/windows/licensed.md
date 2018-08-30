@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b30a9a0e2d959725b5f5d94118493ef833a57579
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e57e0cd60ee1d07f29c3aba5540980cd5f4ae02b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604831"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209904"
 ---
 # <a name="licensed"></a>licensed
 
@@ -36,9 +36,9 @@ ms.locfileid: "42604831"
 
 ## <a name="remarks"></a>설명
 
-**사용이 허가** c + + 특성에 동일한 기능을 합니다 [사용이 허가 된](http://msdn.microsoft.com/library/windows/desktop/aa367070) MIDL 특성입니다.
+**사용이 허가** c + + 특성에 동일한 기능을 합니다 [사용이 허가 된](/windows/desktop/Midl/licensed) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // cpp_attr_ref_licensed.cpp

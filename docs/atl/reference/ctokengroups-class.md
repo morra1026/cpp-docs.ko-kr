@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6c186302c1c59e73e63e20ae29aa665f600fe23
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 72fd8530a05bb0b61af266ca78a1c2fa6716ee6b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880335"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206618"
 ---
 # <a name="ctokengroups-class"></a>CTokenGroups 클래스
 이 클래스는에 대 한 래퍼를 `TOKEN_GROUPS` 구조입니다.  
@@ -75,11 +75,11 @@ class CTokenGroups
 |[CTokenGroups::operator =](#operator_eq)|대입 연산자입니다.|  
   
 ## <a name="remarks"></a>설명  
- [액세스 토큰](http://msdn.microsoft.com/library/windows/desktop/aa374909) 개체인 프로세스 또는 스레드의 보안 컨텍스트를 설명 하는 Windows 시스템에 로그온 한 각 사용자에 게 할당 됩니다.  
+ [액세스 토큰](/windows/desktop/SecAuthZ/access-tokens) 개체인 프로세스 또는 스레드의 보안 컨텍스트를 설명 하는 Windows 시스템에 로그온 한 각 사용자에 게 할당 됩니다.  
   
- `CTokenGroups` 클래스에 대 한 래퍼인 합니다 [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) 그룹 보안 식별자 (Sid) 액세스 토큰에 대 한 정보가 포함 된 구조입니다.  
+ `CTokenGroups` 클래스에 대 한 래퍼인 합니다 [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) 그룹 보안 식별자 (Sid) 액세스 토큰에 대 한 정보가 포함 된 구조입니다.  
   
- Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK에 있습니다.  
+ Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](/windows/desktop/SecAuthZ/access-control) Windows SDK에 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** atlsecurity.h  
@@ -100,7 +100,7 @@ void Add(const TOKEN_GROUPS& rTokenGroups) throw(...);
  특성을 사용 하 여 연결 된 `CSid` 개체입니다.  
   
  *rTokenGroups*  
- A [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) 구조입니다.  
+ A [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) 구조입니다.  
   
 ### <a name="remarks"></a>설명  
  이러한 메서드는 하나 이상의 추가 `CSid` 개체와 연관 된 특성에는 `CTokenGroups` 개체입니다.  
@@ -116,7 +116,7 @@ CTokenGroups(const TOKEN_GROUPS& rhs) throw(...);
   
 ### <a name="parameters"></a>매개 변수  
  *rhs*  
- 합니다 `CTokenGroups` 개체 또는 [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) 생성 하는 구조를 `CTokenGroups` 개체입니다.  
+ 합니다 `CTokenGroups` 개체 또는 [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) 생성 하는 구조를 `CTokenGroups` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  합니다 `CTokenGroups` 를 사용 하 여 개체를 만들 수 있습니다를 `TOKEN_GROUPS` 구조 또는 이전에 정의한 `CTokenGroups` 개체입니다.  
@@ -180,7 +180,7 @@ const TOKEN_GROUPS* GetPTOKEN_GROUPS() const throw(...);
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 에 대 한 포인터를 검색 합니다 [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) 구조에 속하는 `CTokenGroups` 액세스 토큰 개체입니다.  
+ 에 대 한 포인터를 검색 합니다 [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) 구조에 속하는 `CTokenGroups` 액세스 토큰 개체입니다.  
   
 ##  <a name="getsidsandattributes"></a>  CTokenGroups::GetSidsAndAttributes  
  검색을 `CSid` 개체 및 (선택 사항)에 속한 특성을 `CTokenGroups` 개체입니다.  
@@ -233,7 +233,7 @@ CTokenGroups& operator= (const CTokenGroups& rhs) throw(...);
   
 ### <a name="parameters"></a>매개 변수  
  *rhs*  
- 합니다 `CTokenGroups` 개체 또는 [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) 할당할 구조는 `CTokenGroups` 개체입니다.  
+ 합니다 `CTokenGroups` 개체 또는 [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) 할당할 구조는 `CTokenGroups` 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  업데이트 된 반환 `CTokenGroups` 개체입니다.  
@@ -246,7 +246,7 @@ operator const TOKEN_GROUPS *() const throw(...);
 ```  
   
 ### <a name="remarks"></a>설명  
- 에 대 한 포인터에 값을 캐스팅 합니다 [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) 구조입니다.  
+ 에 대 한 포인터에 값을 캐스팅 합니다 [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) 구조입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [보안 샘플](../../visual-cpp-samples.md)   

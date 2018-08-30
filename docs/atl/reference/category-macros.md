@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1fff338bfce32f8233cd58aa7c0790508ce542c
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 4fdf98e41b552fa759f1aed3e67d531e02bc7f58
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882884"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206777"
 ---
 # <a name="category-macros"></a>범주 매크로
 이러한 매크로 범주 맵을 정의 합니다.  
@@ -76,9 +76,9 @@ BEGIN_CATEGORY_MAP(theClass)
 > [!NOTE]
 >  ATL 구성 요소 범주를 등록 하려면 표준 구성 요소 범주 관리자를 사용 합니다. 관리자는 없는 경우 시스템에서 모듈 등록 될 때, 등록 성공 하지만, 해당 클래스에 대 한 구성 요소 범주 등록 되지 않습니다.  
   
- 구성 요소 범주에 대 한 자세한 내용은 참조 하세요. [구성 요소 범주 이란 무엇 이며 어떻게 작동 합니까](http://msdn.microsoft.com/library/windows/desktop/ms694322) Windows SDK에 있습니다.  
+ 구성 요소 범주에 대 한 자세한 내용은 참조 하세요. [구성 요소 범주 이란 무엇 이며 어떻게 작동 합니까](/windows/desktop/com/component-categories-and-how-they-work) Windows SDK에 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/cpp/category-macros_1.h)]  
   
 ##  <a name="end_category_map"></a>  END_CATEGORY_MAP  
@@ -88,7 +88,7 @@ BEGIN_CATEGORY_MAP(theClass)
 END_CATEGORY_MAP()
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [BEGIN_CATEGORY_MAP](#begin_category_map)합니다.  
   
 ##  <a name="implemented_category"></a>  IMPLEMENTED_CATEGORY  
@@ -107,7 +107,7 @@ IMPLEMENTED_CATEGORY(catID)
   
  클라이언트의 인스턴스를 만들 필요 없이 해당 기능 및 요구 사항을 확인 하려면 클래스에 대해 등록 된 범주 정보를 사용할 수 있습니다.  
   
- 구성 요소 범주에 대 한 자세한 내용은 참조 하세요. [구성 요소 범주 이란 무엇 이며 어떻게 작동 합니까](http://msdn.microsoft.com/library/windows/desktop/ms694322) Windows SDK에 있습니다.  
+ 구성 요소 범주에 대 한 자세한 내용은 참조 하세요. [구성 요소 범주 이란 무엇 이며 어떻게 작동 합니까](/windows/desktop/com/component-categories-and-how-they-work) Windows SDK에 있습니다.  
   
 ### <a name="a-selection-of-stock-categories"></a>주식 범주 선택  
   
@@ -119,9 +119,9 @@ IMPLEMENTED_CATEGORY(catID)
 |단순 데이터 바인딩|CATID_PropertyNotifyControl|{157083E1-2368-11cf-87B9-00AA006C8166}|  
 |고급 데이터 바인딩|CATID_VBDataBound|{157083E2-2368-11cf-87B9-00AA006C8166}|  
 |창 없는 컨트롤|CATID_WindowlessObject|{1D06B600-3AE3-11cf-87B9-00AA006C8166}|  
-|인터넷 인식 개체|참조 [인터넷 인식 개체](http://msdn.microsoft.com/library/windows/desktop/ms690561) 샘플 목록은 Windows SDK에 있습니다.||  
+|인터넷 인식 개체|참조 [인터넷 인식 개체](/windows/desktop/com/internet-aware-objects) 샘플 목록은 Windows SDK에 있습니다.||  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/cpp/category-macros_1.h)]  
   
 ##  <a name="required_category"></a>  REQUIRED_CATEGORY  
@@ -140,7 +140,7 @@ REQUIRED_CATEGORY( catID )
   
  클라이언트의 인스턴스를 만들 필요 없이 해당 기능 및 요구 사항을 확인 하려면 클래스에 대해 등록 된 범주 정보를 사용할 수 있습니다. 예를 들어, 컨트롤 컨테이너에서 데이터 바인딩을 지원 해야 합니다. 컨테이너는 해당 컨트롤의 필수 범주에 대 한 범주 관리자를 쿼리하여 컨트롤을 호스트 하는 데 필요한 기능을 포함 하는 경우 찾을 수 있습니다. 컨테이너는 필요한 기능을 지원 하지 않으면, COM 개체를 호스트할를 거부할 수 있습니다.  
   
- 샘플 목록을 포함 하 여 구성 요소 범주에 대 한 자세한 내용은 참조 하세요 [구성 요소 범주 이란 무엇 이며 어떻게 작동 합니까](http://msdn.microsoft.com/library/windows/desktop/ms694322) Windows SDK에 있습니다.  
+ 샘플 목록을 포함 하 여 구성 요소 범주에 대 한 자세한 내용은 참조 하세요 [구성 요소 범주 이란 무엇 이며 어떻게 작동 합니까](/windows/desktop/com/component-categories-and-how-they-work) Windows SDK에 있습니다.  
   
 ### <a name="a-selection-of-stock-categories"></a>주식 범주 선택  
   
@@ -152,9 +152,9 @@ REQUIRED_CATEGORY( catID )
 |단순 데이터 바인딩|CATID_PropertyNotifyControl|{157083E1-2368-11cf-87B9-00AA006C8166}|  
 |고급 데이터 바인딩|CATID_VBDataBound|{157083E2-2368-11cf-87B9-00AA006C8166}|  
 |창 없는 컨트롤|CATID_WindowlessObject|{1D06B600-3AE3-11cf-87B9-00AA006C8166}|  
-|인터넷 인식 개체|참조 [인터넷 인식 개체](http://msdn.microsoft.com/library/windows/desktop/ms690561) 샘플 목록은 Windows SDK에 있습니다.||  
+|인터넷 인식 개체|참조 [인터넷 인식 개체](/windows/desktop/com/internet-aware-objects) 샘플 목록은 Windows SDK에 있습니다.||  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#135](../../atl/codesnippet/cpp/category-macros_2.h)]  
   
 ## <a name="see-also"></a>참고 항목  

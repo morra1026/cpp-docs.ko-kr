@@ -16,14 +16,14 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d7c18a81b2a7cf978ce056672cb318edca700fe
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 654996499c0fbee2c7410663fd7dfbbac3d145b2
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319041"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199098"
 ---
 # <a name="resource-compiler-warning-rc4214"></a>리소스 컴파일러 오류 RC4214
-유효 하지 않은 코드 페이지: 무시  
+코드 페이지 유효 하지 않습니다: 무시  
   
- .Rc 파일에 코드 페이지 인수가 포함 된 및 지정 된 코드 페이지가 올바르지 않습니다. 참조 [IsValidCodePage](http://msdn.microsoft.com/library/windows/desktop/dd318674) 자세한 정보에 대 한 합니다.
+ .Rc 파일에 코드 페이지 인수를 포함 하 고 지정 된 코드 페이지 유효 하지 않은 합니다. 참조 [IsValidCodePage](/windows/desktop/api/winnls/nf-winnls-isvalidcodepage) 자세한 내용은 합니다.

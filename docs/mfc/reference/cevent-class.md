@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f31d5d04638685b6d7636f40108b7e95bbd5d37
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 301549e26212448ae0392a356aa556358dcf6f47
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338827"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205465"
 ---
 # <a name="cevent-class"></a>CEvent 클래스
 한 스레드가 다른 이벤트가 발생 했음을 알릴 수 있도록 하는 동기화 개체인 이벤트를 나타냅니다.  
@@ -76,7 +76,7 @@ class CEvent : public CSyncObject
   
  사용 하는 방법에 대 한 자세한 내용은 `CEvent` 개체를 참조 하세요 [다중 스레딩: 동기화 클래스 사용 방법](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_Utilities#45](../../mfc/codesnippet/cpp/cevent-class_1.cpp)]  
   
  [!code-cpp[NVC_MFC_Utilities#46](../../mfc/codesnippet/cpp/cevent-class_2.cpp)]  
@@ -113,7 +113,7 @@ CEvent(
  `CEvent` 개체의 이름입니다. 프로세스 경계를 넘어 개체를 사용할 경우에 제공 되어야 합니다. 생성자 빌드 새 이름이 기존 이벤트와 일치 하는 경우 `CEvent` 해당 이름의 이벤트를 참조 하는 개체입니다. 이름이 일치 이벤트를 발생 하지 않은 기존 동기화 개체를 생성 하지 못합니다. NULL 인 경우 이름이 null이 됩니다.  
   
  *lpsaAttribute*  
- 이벤트 개체에 대 한 보안 특성입니다. 에 대 한 전체 설명은이 구조를 참조 하세요 [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK에 있습니다.  
+ 이벤트 개체에 대 한 보안 특성입니다. 에 대 한 전체 설명은이 구조를 참조 하세요 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK에 있습니다.  
   
 ### <a name="remarks"></a>설명  
  액세스 하거나 릴리스를 `CEvent` 개체를 만듭니다를 [CMultiLock](../../mfc/reference/cmultilock-class.md) 또는 [CSingleLock](../../mfc/reference/csinglelock-class.md) 개체와 호출 해당 [잠금](../../mfc/reference/csinglelock-class.md#lock) 하 고 [잠금 해제](../../mfc/reference/csinglelock-class.md#unlock) 멤버 함수입니다.  
@@ -121,7 +121,7 @@ CEvent(
  상태를 변경 하는 `CEvent` 개체가 신호를 (스레드가 없는 경우 대기), 호출 [SetEvent](#setevent) 또는 [PulseEvent](#pulseevent)합니다. 상태를 설정 하는 `CEvent` 신호를 개체 (스레드가 대기 해야 합니다), 호출 [ResetEvent](#resetevent)합니다.  
   
 > [!IMPORTANT]
->  만든 후는 `CEvent` 개체를 사용 하 여 [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) 뮤텍스 이미 존재 하지 않는지 확인 합니다. 뮤텍스 예기치 않게가 불량 프로세스 무단 점유 이며 뮤텍스를 악의적으로 사용 하려는 수 수를 나타낼 수 있습니다. 이 경우 권장 되는 보안에 민감한 프로시저 핸들을 닫고 개체를 만드는 오류가 발생 하는 경우에 따라 계속입니다.  
+>  만든 후는 `CEvent` 개체를 사용 하 여 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 뮤텍스 이미 존재 하지 않는지 확인 합니다. 뮤텍스 예기치 않게가 불량 프로세스 무단 점유 이며 뮤텍스를 악의적으로 사용 하려는 수 수를 나타낼 수 있습니다. 이 경우 권장 되는 보안에 민감한 프로시저 핸들을 닫고 개체를 만드는 오류가 발생 하는 경우에 따라 계속입니다.  
   
 ##  <a name="pulseevent"></a>  CEvent::PulseEvent  
  (사용 가능) 신호를 이벤트의 상태를 설정 하 고 모든 대기 스레드를 해제 하 고, nonsignaled (사용할 수 없음)를 자동으로 다시 설정 합니다.  
@@ -138,7 +138,7 @@ BOOL PulseEvent();
   
  대기 중인 스레드가 없는 경우 스레드가 즉시 해제할 수 `PulseEvent` 신호 이벤트의 상태를 설정 하 고 반환 합니다.  
   
- `PulseEvent` 기본 Win32를 사용 하 여 `PulseEvent` 함수는 커널 모드 비동기 프로시저 호출 하 여 대기 상태에서 일시적으로 제거할 수 있습니다. 따라서 `PulseEvent` 안정적이 지 않습니다 하 고 새 응용 프로그램으로 쓰일 수 없습니다. 자세한 내용은 참조는 [PulseEvent 함수](http://msdn.microsoft.com/library/windows/desktop/ms684914)합니다.  
+ `PulseEvent` 기본 Win32를 사용 하 여 `PulseEvent` 함수는 커널 모드 비동기 프로시저 호출 하 여 대기 상태에서 일시적으로 제거할 수 있습니다. 따라서 `PulseEvent` 안정적이 지 않습니다 하 고 새 응용 프로그램으로 쓰일 수 없습니다. 자세한 내용은 참조는 [PulseEvent 함수](/windows/desktop/api/winbase/nf-winbase-pulseevent)합니다.  
   
 ##  <a name="resetevent"></a>  CEvent::ResetEvent  
  설정 이벤트의 상태 신호 될 때까지 명시적으로 여를 신호 받음으로 설정할지를 [SetEvent](#setevent) 멤버 함수입니다.  

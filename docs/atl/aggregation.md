@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2457d6e94677c43985cadf8ca49a176a82566b6a
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 83d19e53b50791255b87cfa73a51761e2cdf5e1f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37847871"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196147"
 ---
 # <a name="aggregation"></a>집계
 경우는 개체의 구현 자가 하려는 다른, 미리 작성 된 개체에서 제공 하는 서비스를 활용 하는 경우가 있습니다. 또한이 두 번째 개체를 첫 번째의 일부로 표시 되도록 하려고 합니다. COM 달성 둘 다 포함 하 고 집계를 통해 이러한 목표입니다.  
@@ -31,5 +31,5 @@ ms.locfileid: "37847871"
   
 ## <a name="see-also"></a>참고 항목  
  [COM 소개](../atl/introduction-to-com.md)   
- [개체 다시 사용](http://msdn.microsoft.com/library/windows/desktop/ms678443)
+ [개체 다시 사용](/windows/desktop/com/reusing-objects)
 

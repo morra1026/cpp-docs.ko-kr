@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 935175f522dd0b41851763f7b76781228c1881c0
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 9b144e08e0f87165c284310afc86267f67b1c124
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880156"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222056"
 ---
 # <a name="ithreadpoolconfig-interface"></a>IThreadPoolConfig 인터페이스
 이 인터페이스는 스레드 풀을 구성 하기 위한 메서드를 제공 합니다.  
@@ -72,7 +72,7 @@ STDMETHOD(GetSize)(int* pnNumThreads);
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#134](../../atl/codesnippet/cpp/ithreadpoolconfig-interface_1.cpp)]  
   
 ##  <a name="gettimeout"></a>  IThreadPoolConfig::GetTimeout  
@@ -89,7 +89,7 @@ STDMETHOD(GetTimeout)(DWORD* pdwMaxWait);
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  참조 [IThreadPoolConfig::GetSize](#getsize)합니다.  
   
 ##  <a name="setsize"></a>  IThreadPoolConfig::SetSize  
@@ -105,12 +105,12 @@ STDMETHOD(SetSize)int nNumThreads);
   
  하는 경우 *nNumThreads* 가 음수 이면 절대 값에 곱합니다 스레드의 총 개수를 가져올 컴퓨터의 프로세서 수입니다.  
   
- 하는 경우 *nNumThreads* 가 0 이면 [ATLS_DEFAULT_THREADSPERPROC](http://msdn.microsoft.com/library/e0dcf107-72a9-4122-abb4-83c63aa7d571) 스레드의 총 개수를 가져올 컴퓨터의 프로세서 수를 곱한 수 됩니다.  
+ 하는 경우 *nNumThreads* 가 0 이면 [ATLS_DEFAULT_THREADSPERPROC](https://msdn.microsoft.com/library/e0dcf107-72a9-4122-abb4-83c63aa7d571) 스레드의 총 개수를 가져올 컴퓨터의 프로세서 수를 곱한 수 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  참조 [IThreadPoolConfig::GetSize](#getsize)합니다.  
   
 ##  <a name="settimeout"></a>  IThreadPoolConfig::SetTimeout  
@@ -127,7 +127,7 @@ STDMETHOD(SetTimeout)(DWORD dwMaxWait);
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  참조 [IThreadPoolConfig::GetSize](#getsize)합니다.  
   
 ## <a name="see-also"></a>참고 항목  

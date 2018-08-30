@@ -26,15 +26,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a98456d3d7d0d2e4600267a81151c44e38993c5
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 035d59d71dc7166b12b6e894803645aacda83887
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885590"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218700"
 ---
 # <a name="irunnableobjectimpl-class"></a>IRunnableObjectImpl 클래스
-이 클래스는 구현 `IUnknown` 의 기본 구현을 제공 합니다 [IRunnableObject](http://msdn.microsoft.com/library/windows/desktop/ms692783) 인터페이스입니다.  
+이 클래스는 구현 `IUnknown` 의 기본 구현을 제공 합니다 [IRunnableObject](/windows/desktop/api/objidl/nn-objidl-irunnableobject) 인터페이스입니다.  
   
 > [!IMPORTANT]
 >  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.  
@@ -63,7 +63,7 @@ class IRunnableObjectImpl
 |[IRunnableObjectImpl::SetContainedObject](#setcontainedobject)|컨트롤이 포함 되어 있음을 나타냅니다. ATL 구현은 S_OK를 반환 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 합니다 [IRunnableObject](http://msdn.microsoft.com/library/windows/desktop/ms692783) 인터페이스 컨트롤 실행 되 고 있는지 확인 하 고, 실행 또는 실행 중인 상태로 잠금 강제로 컨테이너를 사용 하도록 설정 합니다. 클래스 `IRunnableObjectImpl` 이 인터페이스의 기본 구현을 제공 하 고 구현 `IUnknown` 장치에서 디버그 덤프에 정보를 전송 하 여 작성 합니다.  
+ 합니다 [IRunnableObject](/windows/desktop/api/objidl/nn-objidl-irunnableobject) 인터페이스 컨트롤 실행 되 고 있는지 확인 하 고, 실행 또는 실행 중인 상태로 잠금 강제로 컨테이너를 사용 하도록 설정 합니다. 클래스 `IRunnableObjectImpl` 이 인터페이스의 기본 구현을 제공 하 고 구현 `IUnknown` 장치에서 디버그 덤프에 정보를 전송 하 여 작성 합니다.  
   
  **관련 문서** [ATL 자습서](../../atl/active-template-library-atl-tutorial.md), [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)  
   
@@ -86,7 +86,7 @@ HRESULT GetRunningClass(LPCLSID lpClsid);
  ATL 구현 집합 \* *lpClsid* GUID_NULL를 E_UNEXPECTED 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [IRunnableObject::GetRunningClass](http://msdn.microsoft.com/library/windows/desktop/ms693734) Windows SDK에에서 있습니다.  
+ 참조 [IRunnableObject::GetRunningClass](/windows/desktop/api/objidl/nf-objidl-irunnableobject-getrunningclass) Windows SDK에에서 있습니다.  
   
 ##  <a name="isrunning"></a>  IRunnableObjectImpl::IsRunning  
  컨트롤이 실행 되 고 있는지 확인 합니다.  
@@ -99,7 +99,7 @@ virtual BOOL IsRunning();
  ATL 구현 TRUE를 반환합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [IRunnableObject::IsRunning](http://msdn.microsoft.com/library/windows/desktop/ms678496) Windows SDK에에서 있습니다.  
+ 참조 [IRunnableObject::IsRunning](/windows/desktop/api/objidl/nf-objidl-irunnableobject-isrunning) Windows SDK에에서 있습니다.  
   
 ##  <a name="lockrunning"></a>  IRunnableObjectImpl::LockRunning  
  실행 중인 상태로 컨트롤을 잠급니다.  
@@ -112,7 +112,7 @@ HRESULT LockRunning(BOOL fLock, BOOL fLastUnlockCloses);
  ATL 구현은 S_OK를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [IRunnableObject::LockRunning](http://msdn.microsoft.com/library/windows/desktop/ms693361) Windows SDK에에서 있습니다.  
+ 참조 [IRunnableObject::LockRunning](/windows/desktop/api/objidl/nf-objidl-irunnableobject-lockrunning) Windows SDK에에서 있습니다.  
   
 ##  <a name="run"></a>  IRunnableObjectImpl::Run  
  강제로 실행 하도록 합니다.  
@@ -125,7 +125,7 @@ HRESULT Run(LPBINDCTX lpbc);
  ATL 구현은 S_OK를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [IRunnableObject::Run](http://msdn.microsoft.com/library/windows/desktop/ms694517) Windows SDK에에서 있습니다.  
+ 참조 [IRunnableObject::Run](/windows/desktop/api/objidl/nf-objidl-irunnableobject-run) Windows SDK에에서 있습니다.  
   
 ##  <a name="setcontainedobject"></a>  IRunnableObjectImpl::SetContainedObject  
  컨트롤이 포함 되어 있음을 나타냅니다.  
@@ -138,7 +138,7 @@ HRESULT SetContainedObject(BOOL fContained);
  ATL 구현은 S_OK를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [IRunnableObject::SetContainedObject](http://msdn.microsoft.com/library/windows/desktop/ms693710) Windows SDK에에서 있습니다.  
+ 참조 [IRunnableObject::SetContainedObject](/windows/desktop/api/objidl/nf-objidl-irunnableobject-setcontainedobject) Windows SDK에에서 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [CComControl 클래스](../../atl/reference/ccomcontrol-class.md)   

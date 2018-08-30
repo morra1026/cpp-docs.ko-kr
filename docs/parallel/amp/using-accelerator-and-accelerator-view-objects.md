@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2c53ceb50057e789856aa8e7f67c9f788aa5a0a
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: ebbb33a4f17f5b4d458c4add4d59040d698dd4b8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42539055"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222196"
 ---
 # <a name="using-accelerator-and-acceleratorview-objects"></a>accelerator 및 accelerator_view 개체 사용
 사용할 수는 [accelerator](../../parallel/amp/reference/accelerator-class.md) 하 고 [accelerator_view](../../parallel/amp/reference/accelerator-view-class.md) 장치 또는 에뮬레이터 c + + AMP 코드를 실행 하려면를 지정 하는 클래스입니다. 여러 장치 또는 에뮬레이터는 메모리 양, 공유 메모리 지원, 디버깅 지원 또는 배정밀도 지원 하 여 다른 시스템 있을 수 있습니다. C + + Accelerated Massive Parallelism (c + + AMP)는 사용 가능한 가속기를 검사 합니다. 하나를 기본값으로 설정에 여러 번 호출에 대 한 여러 accelerator_views를 지정 하 고 특수 디버깅 작업을 수행 하는 데 사용할 수 있는 Api를 제공 합니다.  
@@ -184,7 +184,7 @@ bool pick_accelerator()
   
 ## <a name="interoperability"></a>상호 운용성  
  
-C + + AMP 런타임 간의 상호 운용성을 지원 합니다 `accelerator_view` 클래스와 Direct3D [ID3D11Device 인터페이스](http://go.microsoft.com/fwlink/p/?linkId=248488)합니다. [create_accelerator_view](reference/concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view) 메서드는 `IUnknown` 인터페이스와 반환을 `accelerator_view` 개체입니다. 합니다 [get_device](http://msdn.microsoft.com/8194125e-8396-4d62-aa8a-65831dea8439) 메서드는 `accelerator_view` 개체를 반환 합니다는 `IUknown` 인터페이스입니다.  
+C + + AMP 런타임 간의 상호 운용성을 지원 합니다 `accelerator_view` 클래스와 Direct3D [ID3D11Device 인터페이스](http://go.microsoft.com/fwlink/p/?linkId=248488)합니다. [create_accelerator_view](reference/concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view) 메서드는 `IUnknown` 인터페이스와 반환을 `accelerator_view` 개체입니다. 합니다 [get_device](https://msdn.microsoft.com/8194125e-8396-4d62-aa8a-65831dea8439) 메서드는 `accelerator_view` 개체를 반환 합니다는 `IUknown` 인터페이스입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  

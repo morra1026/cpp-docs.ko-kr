@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45b0f46724dd552639c215093f74d8eb14d8afdd
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 17ca93348ab5535908ea8b2d035669f7e61cef55
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42540725"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221358"
 ---
 # <a name="cstatusbarctrl-class"></a>CStatusBarCtrl 클래스
 Windows의 공용 상태 표시줄 컨트롤의 기능을 제공합니다.  
@@ -133,10 +133,10 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>매개 변수  
  *dwStyle*  
- 상태 표시줄 컨트롤의 스타일을 지정합니다. 상태 표시줄 컨트롤 스타일에 나열 된 어떤 조합도 적용할 [공용 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb775498) Windows SDK에 있습니다. 이 매개 변수는 WS_CHILD 스타일을 포함 해야 합니다. WS_VISIBLE 스타일도 포함 됩니다.  
+ 상태 표시줄 컨트롤의 스타일을 지정합니다. 상태 표시줄 컨트롤 스타일에 나열 된 어떤 조합도 적용할 [공용 컨트롤 스타일](/windows/desktop/Controls/common-control-styles) Windows SDK에 있습니다. 이 매개 변수는 WS_CHILD 스타일을 포함 해야 합니다. WS_VISIBLE 스타일도 포함 됩니다.  
   
  *rect*  
- 상태 표시줄 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.  
+ 상태 표시줄 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.  
   
  *pParentWnd*  
  상태 표시줄 컨트롤의 부모 창에 일반적으로 지정 된 `CDialog`합니다. NULL이 아니어야 합니다.  
@@ -154,7 +154,7 @@ virtual BOOL Create(
   
  상태 표시줄 확장된 창 스타일을 만들려면 호출 [CStatusBarCtrl::CreateEx](#createex) 대신 `Create`합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#1](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_1.cpp)]  
   
 ##  <a name="createex"></a>  CStatusBarCtrl::CreateEx  
@@ -171,13 +171,13 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>매개 변수  
  *dwExStyle*  
- 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK의 합니다.  
+ 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK의 합니다.  
   
  *dwStyle*  
- 상태 표시줄 컨트롤의 스타일을 지정합니다. 상태 표시줄 컨트롤 스타일에 나열 된 어떤 조합도 적용할 [공용 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb775498) Windows SDK에 있습니다. 이 매개 변수는 WS_CHILD 스타일을 포함 해야 합니다. WS_VISIBLE 스타일도 포함 됩니다.  
+ 상태 표시줄 컨트롤의 스타일을 지정합니다. 상태 표시줄 컨트롤 스타일에 나열 된 어떤 조합도 적용할 [공용 컨트롤 스타일](/windows/desktop/Controls/common-control-styles) Windows SDK에 있습니다. 이 매개 변수는 WS_CHILD 스타일을 포함 해야 합니다. WS_VISIBLE 스타일도 포함 됩니다.  
   
  *rect*  
- 에 대 한 참조를 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.  
+ 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.  
   
  *pParentWnd*  
  컨트롤의 부모 창에 대 한 포인터입니다.  
@@ -207,7 +207,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
   
 ### <a name="parameters"></a>매개 변수  
  *lpDrawItemStruct*  
- 에 대 한 긴 포인터를 [DRAWITEMSTRUCT](http://msdn.microsoft.com/library/windows/desktop/bb775802) 필요한 드로잉의 종류에 대 한 정보를 포함 하는 구조입니다.  
+ 에 대 한 긴 포인터를 [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) 필요한 드로잉의 종류에 대 한 정보를 포함 하는 구조입니다.  
   
 ### <a name="remarks"></a>설명  
  합니다 `itemAction` 의 멤버는 `DRAWITEMSTRUCT` 구조 정의 그리기 작업 수행 수입니다.  
@@ -247,7 +247,7 @@ BOOL GetBorders(
 ### <a name="remarks"></a>설명  
  이러한 테두리는 컨트롤의 바깥쪽 가장자리와 텍스트를 포함 하는 컨트롤 내에서 사각형 사이의 간격을 결정 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#2](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_2.cpp)]  
   
 ##  <a name="geticon"></a>  CStatusBarCtrl::GetIcon  
@@ -267,16 +267,16 @@ HICON GetIcon(int iPart) const;
  아이콘에 대 한 핸들 경우 성공 메서드 그렇지 않으면 NULL입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 전송 된 [SB_GETICON](http://msdn.microsoft.com/library/windows/desktop/bb760744) Windows SDK에 설명 된 메시지입니다.  
+ 이 메서드는 전송 된 [SB_GETICON](/windows/desktop/Controls/sb-geticon) Windows SDK에 설명 된 메시지입니다.  
   
  상태 표시줄 컨트롤을 부분 이라고 하는 텍스트 출력 창의 행으로 구성 됩니다. 상태 표시줄에 대 한 자세한 내용은 참조 하세요. [MFC의 상태 표시줄 구현](../../mfc/status-bar-implementation-in-mfc.md) 하 고 [CStatusBarCtrl 개체의 모드 설정](../../mfc/setting-the-mode-of-a-cstatusbarctrl-object.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서는 변수를 정의 `m_statusBar`즉, 현재 상태 표시줄 컨트롤에 액세스 하는 데 사용 합니다. 이 변수는 다음 예제에서 사용됩니다.  
   
  [!code-cpp[NVC_MFC_CStatusBarCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_3.h)]  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제는 현재 상태 표시줄 컨트롤의 두 창에 아이콘을 복사합니다. 코드 예제에서는 이전 단원에서 세 개의 창이 사용 하 여 상태 표시줄 컨트롤을 만든 하 고 그런 다음 첫 번째 창에 아이콘을 추가 합니다. 이 예제는 첫 번째 창에서 아이콘을 검색 하 고 두 번째와 세 번째 창에 추가 합니다.  
   
  [!code-cpp[NVC_MFC_CStatusBarCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_4.cpp)]  
@@ -303,7 +303,7 @@ int GetParts(
 ### <a name="remarks"></a>설명  
  이 멤버 함수는 또한 파트의 지정된 된 숫자의 오른쪽 가장자리의 좌표를 검색 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#3](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_5.cpp)]  
   
 ##  <a name="getrect"></a>  CStatusBarCtrl::GetRect  
@@ -320,12 +320,12 @@ BOOL GetRect(
  해당 경계 사각형을 검색 해야 하는 파트의 0부터 시작 인덱스입니다.  
   
  *lpRect*  
- 주소를 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 경계 사각형을 수신 하는 구조입니다.  
+ 주소를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 경계 사각형을 수신 하는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#4](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_6.cpp)]  
   
 ##  <a name="gettext"></a>  Cstatusbarctrl:: Gettext  
@@ -363,7 +363,7 @@ int GetText(
 ### <a name="return-value"></a>반환 값  
  텍스트 문자에서 길이 또는 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 현재 텍스트를 포함 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#5](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_7.cpp)]  
   
 ##  <a name="gettextlength"></a>  Cstatusbarctrl:: Gettextlength  
@@ -393,7 +393,7 @@ int GetTextLength(
 ### <a name="return-value"></a>반환 값  
  텍스트의 문자에서 길이입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#6](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_8.cpp)]  
   
 ##  <a name="gettiptext"></a>  CStatusBarCtrl::GetTipText  
@@ -411,9 +411,9 @@ CString GetTipText(int nPane) const;
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) 도구 설명에 사용할 텍스트를 포함 하는 개체입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [SB_GETTIPTEXT](http://msdn.microsoft.com/library/windows/desktop/bb760751)Windows SDK에 설명 된 대로 합니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [SB_GETTIPTEXT](/windows/desktop/Controls/sb-gettiptext)Windows SDK에 설명 된 대로 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#7](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_9.cpp)]  
   
 ##  <a name="issimple"></a>  CStatusBarCtrl::IsSimple  
@@ -427,7 +427,7 @@ BOOL IsSimple() const;
  상태 창 컨트롤에는 단순 모드에 있으면 0이 아닌 값 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [SB_ISSIMPLE](http://msdn.microsoft.com/library/windows/desktop/bb760753)Windows SDK에 설명 된 대로 합니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [SB_ISSIMPLE](/windows/desktop/Controls/sb-issimple)Windows SDK에 설명 된 대로 합니다.  
   
 ##  <a name="setbkcolor"></a>  CStatusBarCtrl::SetBkColor  
  상태 표시줄의 배경색을 설정 합니다.  
@@ -441,12 +441,12 @@ COLORREF SetBkColor(COLORREF cr);
  새 배경색을 지정 하는 COLORREF 값입니다. 해당 기본 배경색을 사용 하 여 상태 표시줄 시킬 CLR_DEFAULT 값을 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 이전 기본 배경색을 나타내는 값입니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) 이전 기본 배경색을 나타내는 값입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [SB_SETBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760754)Windows SDK에 설명 된 대로 합니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [SB_SETBKCOLOR](/windows/desktop/Controls/sb-setbkcolor)Windows SDK에 설명 된 대로 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#8](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_10.cpp)]  
   
 ##  <a name="seticon"></a>  CStatusBarCtrl::SetIcon  
@@ -469,9 +469,9 @@ BOOL SetIcon(
  성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [SB_SETICON](http://msdn.microsoft.com/library/windows/desktop/bb760755)Windows SDK에 설명 된 대로 합니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [SB_SETICON](/windows/desktop/Controls/sb-seticon)Windows SDK에 설명 된 대로 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CStatusBarCtrl::SetBkColor](#setbkcolor)합니다.  
   
 ##  <a name="setminheight"></a>  CStatusBarCtrl::SetMinHeight  
@@ -488,7 +488,7 @@ void SetMinHeight(int nMin);
 ### <a name="remarks"></a>설명  
  최소 높이의 합계인 *nMin* 및 상태 표시줄 컨트롤의 세로 테두리의 픽셀에서 너비 두 번입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#9](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_11.cpp)]  
   
 ##  <a name="setparts"></a>  CStatusBarCtrl::SetParts  
@@ -510,7 +510,7 @@ BOOL SetParts(
 ### <a name="return-value"></a>반환 값  
  성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#10](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_12.cpp)]  
   
 ##  <a name="setsimple"></a>  CStatusBarCtrl::SetSimple  
@@ -556,7 +556,7 @@ BOOL SetText(
 ### <a name="remarks"></a>설명  
  컨트롤은 다음 WM_PAINT 메시지를 받을 경우 새 텍스트를 표시 하도록 변경 된 컨트롤의 부분을 무효화 하는 메시지입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#11](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_13.cpp)]  
   
 ##  <a name="settiptext"></a>  CStatusBarCtrl::SetTipText  
@@ -576,9 +576,9 @@ void SetTipText(
  도구 설명 텍스트를 포함 하는 문자열에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [SB_SETTIPTEXT](http://msdn.microsoft.com/library/windows/desktop/bb760759)Windows SDK에 설명 된 대로 합니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [SB_SETTIPTEXT](/windows/desktop/Controls/sb-settiptext)Windows SDK에 설명 된 대로 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#12](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_14.cpp)]  
   
 ## <a name="see-also"></a>참고 항목  

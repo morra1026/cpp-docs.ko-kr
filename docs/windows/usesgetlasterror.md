@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7921ff48adf2f987844557f9af3be5adcd6736de
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 39052024224b1a78a84b2d9503957b8fff09b96f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602764"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208293"
 ---
 # <a name="usesgetlasterror"></a>usesgetlasterror
 
@@ -36,9 +36,9 @@ ms.locfileid: "42602764"
 
 ## <a name="remarks"></a>설명
 
-합니다 **usesgetlasterror** c + + 특성에 동일한 기능을 합니다 [usesgetlasterror](http://msdn.microsoft.com/library/windows/desktop/aa367297) MIDL 특성입니다.
+합니다 **usesgetlasterror** c + + 특성에 동일한 기능을 합니다 [usesgetlasterror](/windows/desktop/Midl/usesgetlasterror) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 참조 된 [idl_module](../windows/idl-module.md) 사용 하는 방법의 샘플에 대 한 예제 **usesgetlasterror**합니다.
 

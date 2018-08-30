@@ -25,12 +25,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6606fd65f0f551ca9105c8f9810a75902802334d
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: d6475e2ea3ec7fe69325fd82671952dbe2c39620
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42571909"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217294"
 ---
 # <a name="dlls-and-visual-c-run-time-library-behavior"></a>Dll 및 Visual c + + 런타임 라이브러리 동작  
   
@@ -67,7 +67,7 @@ extern "C" BOOL WINAPI DllMain (
 일부 라이브러리를 래핑하는 `DllMain` 를 함수입니다. 예를 들어, 기본 MFC DLL에서 구현 된 `CWinApp` 개체의 `InitInstance` 및 `ExitInstance` 초기화 및 DLL에 필요한 종료를 수행 하는 멤버 함수입니다. 자세한 내용은 참조는 [일반적인 MFC Dll 초기화](#initializing-regular-dlls) 섹션.  
   
 > [!WARNING]
-> 수행할 수 있는 안전 하 게 한 DLL 진입점에서 중요 한 제한이 있습니다. 참조 [일반 모범 사례](https://msdn.microsoft.com/library/windows/desktop/dn633971#general_best_practices) 호출 안전 하지 않은 특정 Windows Api에 대 한 `DllMain`합니다. 필요 하다는 가장 간단한 초기화 한 다음 DLL에 대 한 초기화 함수에서 수행 합니다. 함수 호출 하 여 초기화 한 후 응용 프로그램을 요구할 수 있습니다 `DllMain` 에 실행 하 고 하기 전에 다른 함수를 호출할 dll에서입니다.  
+> 수행할 수 있는 안전 하 게 한 DLL 진입점에서 중요 한 제한이 있습니다. 참조 [일반 모범 사례](/windows/desktop/Dlls/dynamic-link-library-best-practices) 호출 안전 하지 않은 특정 Windows Api에 대 한 `DllMain`합니다. 필요 하다는 가장 간단한 초기화 한 다음 DLL에 대 한 초기화 함수에서 수행 합니다. 함수 호출 하 여 초기화 한 후 응용 프로그램을 요구할 수 있습니다 `DllMain` 에 실행 하 고 하기 전에 다른 함수를 호출할 dll에서입니다.  
   
 <a name="initializing-non-mfc-dlls"></a>  
   
@@ -116,7 +116,7 @@ extern "C" BOOL WINAPI DllMain (
   
 기본 MFC Dll 있으므로 `CWinApp` 개체에 MFC 응용 프로그램과 동일한 위치에서 초기화 및 종료 작업을 수행 해야 이러한:에 `InitInstance` 및 `ExitInstance` dll의 멤버 함수 `CWinApp`-파생 클래스입니다. MFC 제공 하기 때문에 `DllMain` 함수에서 호출한 `_DllMainCRTStartup` 에 대 한 `DLL_PROCESS_ATTACH` 및 `DLL_PROCESS_DETACH`를 작성 하지 말아야 고유한 `DllMain` 함수입니다. MFC에서 제공한 `DllMain` 함수 호출 `InitInstance` DLL이 로드 시간과 호출 `ExitInstance` DLL 언로드되기 전에 합니다.  
   
-기본 MFC DLL를 추적할 수 여러 스레드를 호출 하 여 [TlsAlloc](http://msdn.microsoft.com/library/windows/desktop/ms686801) 하 고 [TlsGetValue](http://msdn.microsoft.com/library/windows/desktop/ms686812) 에서 해당 `InitInstance` 함수입니다. 이러한 함수는 스레드 관련 데이터를 추적 하는 DLL을 허용 합니다.  
+기본 MFC DLL를 추적할 수 여러 스레드를 호출 하 여 [TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc) 하 고 [TlsGetValue](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue) 에서 해당 `InitInstance` 함수입니다. 이러한 함수는 스레드 관련 데이터를 추적 하는 DLL을 허용 합니다.  
   
 동적으로 MFC에 링크를 모든 MFC OLE, MFC 데이터베이스 (또는 DAO)를 사용 하는 경우 각각의 MFC 소켓 지원 MFC 확장명 Dll MFCO 디버그 하는 사용자가 기본 MFC DLL에서*버전*D.dll, MFCD*버전*D.dll을 및 MFCN*버전*D.dll (여기서 *버전* 은 버전 번호)에서 자동으로 연결 됩니다. 각 기본 MFC DLL에서 사용 중인이 Dll에 대 한 다음 미리 정의 된 초기화 함수 중 하나를 호출 해야 `CWinApp::InitInstance`합니다.  
   
@@ -179,14 +179,14 @@ MFC 확장 DLL에 실행 파일에 명시적으로 연결 되는 경우 (실행 
   
 MFCx0.dll는 시간을 기준으로 완전히 초기화 되기 때문에 `DllMain` 는 호출 메모리를 할당 하 MFC 함수 내에서 호출 `DllMain` (달리 16 비트 버전의 MFC).  
   
-확장명 Dll 처리할 수 있습니다 처리 하 여 다중 스레딩 합니다 `DLL_THREAD_ATTACH` 및 `DLL_THREAD_DETACH` 의 경우는 `DllMain` 함수입니다. 이러한 경우에 전달 됩니다 `DllMain` 스레드 연결 하 고 DLL에서 분리 하는 경우. 호출 [TlsAlloc](http://msdn.microsoft.com/library/windows/desktop/ms686801) 스레드 로컬 저장소 (TLS) DLL에 연결 된 모든 스레드에 대 한 인덱스를 유지 하기 위해 DLL을 사용 하면 DLL이 연결 하는 경우.  
+확장명 Dll 처리할 수 있습니다 처리 하 여 다중 스레딩 합니다 `DLL_THREAD_ATTACH` 및 `DLL_THREAD_DETACH` 의 경우는 `DllMain` 함수입니다. 이러한 경우에 전달 됩니다 `DllMain` 스레드 연결 하 고 DLL에서 분리 하는 경우. 호출 [TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc) 스레드 로컬 저장소 (TLS) DLL에 연결 된 모든 스레드에 대 한 인덱스를 유지 하기 위해 DLL을 사용 하면 DLL이 연결 하는 경우.  
   
 Afxdllx.h 헤더 파일에 대 한 정의 같은 MFC 확장명 Dll에서 사용 되는 구조에 대 한 특별 한 정의가 포함 되어 있습니다 `AFX_EXTENSION_MODULE` 고 `CDynLinkLibrary`입니다. MFC 확장 DLL에에서이 헤더 파일을 포함 해야 합니다.  
   
 > [!NOTE]
 >  정의 아니고 중 하나를 해제 하는 중요 한 것은 `_AFX_NO_XXX` Stdafx.h에서 매크로입니다. 이러한 매크로 여부는 특정 대상 플랫폼 기능을 지원 하는지 여부를 확인 하는 용도로 존재 합니다. 이러한 매크로 확인 하려면 프로그램을 작성할 수 있습니다 (예를 들어 `#ifndef _AFX_NO_OLE_SUPPORT`), 있지만 프로그램 해야 하지 정의 하거나 이러한 매크로 정의 합니다.  
   
-다중 스레딩을 처리에 포함 된 샘플 초기화 함수 [를 사용 하 여 스레드 로컬 저장소에는 동적 링크 라이브러리](http://msdn.microsoft.com/library/windows/desktop/ms686997) Windows SDK에 있습니다. 이 샘플 이라는 진입점 함수를 포함 하는 참고 `LibMain`,이 함수 이름을 지정 해야 하지만 `DllMain` MFC 및 C 런타임 라이브러리와 함께 작동 하도록 합니다.  
+다중 스레딩을 처리에 포함 된 샘플 초기화 함수 [를 사용 하 여 스레드 로컬 저장소에는 동적 링크 라이브러리](/windows/desktop/Dlls/using-thread-local-storage-in-a-dynamic-link-library) Windows SDK에 있습니다. 이 샘플 이라는 진입점 함수를 포함 하는 참고 `LibMain`,이 함수 이름을 지정 해야 하지만 `DllMain` MFC 및 C 런타임 라이브러리와 함께 작동 하도록 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
   

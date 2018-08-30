@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 23c3e1b42c228ea971bdedff952c01078735948e
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 422952ae459d6a6e4d9f768eb111c9c01cfbb5d0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337462"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219744"
 ---
 # <a name="chttpfile-class"></a>CHttpFile 클래스
 HTTP 서버에서 파일을 요청하고 읽는 기능을 제공합니다.  
@@ -58,8 +58,7 @@ class CHttpFile : public CInternetFile
   
 |이름|설명|  
 |----------|-----------------|  
-|[CHttpFile::CHttpFile](#chttpfile)|
-          `CHttpFile` 개체를 만듭니다.|  
+|[CHttpFile::CHttpFile](#chttpfile)|`CHttpFile` 개체를 만듭니다.|  
   
 ### <a name="public-methods"></a>Public 메서드  
   
@@ -131,7 +130,7 @@ BOOL AddRequestHeaders(
  에 대 한 참조를 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 요청 헤더를 추가할 헤더를 포함 하는 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.  
+ 성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.  
   
 ### <a name="remarks"></a>설명  
  `AddRequestHeaders` HTTP 요청 처리를 추가, 자유 형식 헤더를 추가합니다. HTTP 서버에 전송 된 정확한 요청 세부적된으로 제어 해야 하는 복잡 한 클라이언트에서 사용할 것입니다.  
@@ -198,10 +197,10 @@ BOOL EndRequest(
   
 ### <a name="parameters"></a>매개 변수  
  *dwFlags*  
- 작업을 설명 하는 플래그입니다. 적절 한 플래그 목록은 참조 하세요 [하며](http://msdn.microsoft.com/library/windows/desktop/aa384230) Windows SDK에 있습니다.  
+ 작업을 설명 하는 플래그입니다. 적절 한 플래그 목록은 참조 하세요 [하며](/windows/desktop/api/wininet/nf-wininet-httpendrequesta) Windows SDK에 있습니다.  
   
  *lpBuffIn*  
- 초기화에 대 한 포인터 [INTERNET_BUFFERS](http://msdn.microsoft.com/library/windows/desktop/aa385132) 하는 작업에 사용 되는 입력된 버퍼에 설명 합니다.  
+ 초기화에 대 한 포인터 [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-_internet_buffersa) 하는 작업에 사용 되는 입력된 버퍼에 설명 합니다.  
   
  *dwContext*  
  `CHttpFile` 작업에 대한 컨텍스트 식별자입니다. 이 매개 변수에 대 한 자세한 내용은 설명을 참조 하십시오.  
@@ -280,7 +279,7 @@ BOOL QueryInfo(
   
 - 응용 프로그램 응답 헤더를 쿼리 하는 대개 HTTP_QUERY_FLAG_REQUEST_HEADERS 하지만 응용 프로그램이이 플래그를 사용 하 여 요청 헤더를 쿼리할 수도 있습니다.  
   
-- 이러한 헤더는 "마지막 수정 시간," 등의 날짜/시간 문자열 값인 HTTP_QUERY_FLAG_SYSTEMTIME이이 플래그는 표준 Win32 헤더 값을 반환 합니다. [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) 응용 프로그램에 필요 하지 않은 구조체 데이터를 구문 분석 합니다. 사용 하려는 경우이 플래그를 사용 하 여 `SYSTEMTIME` 함수의 재정의 합니다.  
+- 이러한 헤더는 "마지막 수정 시간," 등의 날짜/시간 문자열 값인 HTTP_QUERY_FLAG_SYSTEMTIME이이 플래그는 표준 Win32 헤더 값을 반환 합니다. [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 응용 프로그램에 필요 하지 않은 구조체 데이터를 구문 분석 합니다. 사용 하려는 경우이 플래그를 사용 하 여 `SYSTEMTIME` 함수의 재정의 합니다.  
   
 - 이러한 헤더는 상태 코드와 같은 숫자 값인 HTTP_QUERY_FLAG_NUMBER이이 플래그는 32 비트 숫자로 데이터를 반환 합니다.  
   
@@ -302,10 +301,10 @@ BOOL QueryInfo(
  인덱스 값입니다. 참조 *lpdwIndex*합니다.  
   
  *pSysTime*  
- Win32 포인터로 [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) 구조입니다.  
+ Win32 포인터로 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.  
+ 성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.  
   
 ### <a name="remarks"></a>설명  
  이 멤버 함수를 사용 하 여 호출에 성공한 후에 [SendRequest](#sendrequest) 또는 `CHttpFile` 성공적으로 만든 개체 [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl)합니다.  
@@ -380,7 +379,7 @@ BOOL QueryInfoStatusCode(DWORD& dwStatusCode) const;
  상태 코드에 대 한 참조입니다. 상태 코드는 요청 된 이벤트의 성공 여부를 나타냅니다. 참조 **주의** 의 상태 코드 설명 선택 합니다.  
   
 ### <a name="return-value"></a>반환 값  
- 성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.  
+ 성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.  
   
 ### <a name="remarks"></a>설명  
  이 멤버 함수를 사용 하 여 호출에 성공한 후에 [SendRequest](#sendrequest) 또는 `CHttpFile` 성공적으로 만든 개체 [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl)합니다.  
@@ -463,13 +462,13 @@ BOOL SendRequestEx(
  요청에서 보낼 바이트 수입니다.  
   
  *dwFlags*  
- 작업을 설명 하는 플래그입니다. 적절 한 플래그 목록은 참조 하세요 [HttpSendRequestEx](http://msdn.microsoft.com/library/windows/desktop/aa384318) Windows SDK에 있습니다.  
+ 작업을 설명 하는 플래그입니다. 적절 한 플래그 목록은 참조 하세요 [HttpSendRequestEx](/windows/desktop/api/wininet/nf-wininet-httpsendrequestexa) Windows SDK에 있습니다.  
   
  *dwContext*  
  `CHttpFile` 작업에 대한 컨텍스트 식별자입니다. 이 매개 변수에 대 한 자세한 내용은 설명을 참조 하십시오.  
   
  *lpBuffIn*  
- 초기화에 대 한 포인터 [INTERNET_BUFFERS](http://msdn.microsoft.com/library/windows/desktop/aa385132) 하는 작업에 사용 되는 입력된 버퍼에 설명 합니다.  
+ 초기화에 대 한 포인터 [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-_internet_buffersa) 하는 작업에 사용 되는 입력된 버퍼에 설명 합니다.  
   
  *lpBuffOut*  
  작업에 사용 되는 출력 버퍼를 설명 하는 초기화 INTERNET_BUFFERS에 대 한 포인터입니다.  
@@ -484,7 +483,7 @@ BOOL SendRequestEx(
   
  기본값 *dwContext* MFC에서 전송한 합니다 `CHttpFile` 에서 개체를 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 만든 개체를 `CHttpFile` 개체입니다. 호출 하는 경우 [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) 하거나 [CHttpConnection](../../mfc/reference/chttpconnection-class.md) 생성 하는 `CHttpFile` 개체를 원하는 값으로 컨텍스트 식별자를 설정 하려면 기본값을 재정의할 수 있습니다. 컨텍스트 식별자에 반환 됩니다 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 개체의 상태를 제공 합니다. 문서를 참조 하세요 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  이 코드 조각은 MFCISAPI 라는 dll에 문자열의 콘텐츠를 보냅니다. 로컬 호스트 서버에 DLL입니다. 이 예제에서는 한 번만 호출 하는 동안 `WriteString`, 허용 되는 여러 호출을 사용 하 여 블록에서 데이터를 보내도록 합니다.  
   
  [!code-cpp[NVC_MFCWinInet#9](../../mfc/codesnippet/cpp/chttpfile-class_1.cpp)]  

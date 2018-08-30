@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8151b69b92566f45766c4ffa25d40bb5f077c606
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 4a7f5cee986ad82790870bfa7684a99c60dc462e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337260"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206268"
 ---
 # <a name="chotkeyctrl-class"></a>CHotKeyCtrl 클래스
 Windows의 공용 바로 가기 컨트롤의 기능을 제공합니다.  
@@ -75,7 +75,7 @@ class CHotKeyCtrl : public CWnd
   
  사용자가 키 조합의 선택한 경우 응용 프로그램 컨트롤에서 지정 된 키 조합을 검색 하 고 WM_SETHOTKEY 메시지를 사용 하 여 시스템에 바로 가기 키를 설정할 수 있습니다. 사용자를 누를 때마다 바로 가기 키 이후부터 시스템의 모든 부분에서 WM_SETHOTKEY 메시지에 지정 된 창의 SC_HOTKEY 지정 WM_SYSCOMMAND 메시지를 받습니다. 이 메시지에 수신 하는 창을 활성화 합니다. 바로 가기 키까지 WM_SETHOTKEY 종료를 호출 하는 응용 프로그램의 경우 유효 합니다.  
   
- 이 메커니즘은 WM_HOTKEY 메시지는 Windows에 따라 달라 지는 바로 가기 키 지원 다릅니다 [RegisterHotKey](http://msdn.microsoft.com/library/windows/desktop/ms646309) 하 고 [UnregisterHotKey](http://msdn.microsoft.com/library/windows/desktop/ms646327) 함수입니다.  
+ 이 메커니즘은 WM_HOTKEY 메시지는 Windows에 따라 달라 지는 바로 가기 키 지원 다릅니다 [RegisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646309) 하 고 [UnregisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646327) 함수입니다.  
   
  사용 하 여 대 한 자세한 내용은 `CHotKeyCtrl`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 하 고 [CHotKeyCtrl 사용 하 여](../../mfc/using-chotkeyctrl.md).  
   
@@ -111,7 +111,7 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>매개 변수  
  *dwStyle*  
- 바로 가기 키 컨트롤의 스타일을 지정합니다. 컨트롤 스타일의 조합을 적용 됩니다. 참조 [공용 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb775498) 자세한 내용은 Windows sdk입니다.  
+ 바로 가기 키 컨트롤의 스타일을 지정합니다. 컨트롤 스타일의 조합을 적용 됩니다. 참조 [공용 컨트롤 스타일](/windows/desktop/Controls/common-control-styles) 자세한 내용은 Windows sdk입니다.  
   
  *rect*  
  바로 가기 키 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT 구조체](../../mfc/reference/rect-structure1.md)합니다.  
@@ -144,13 +144,13 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>매개 변수  
  *dwExStyle*  
- 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK의 합니다.  
+ 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK의 합니다.  
   
  *dwStyle*  
- 바로 가기 키 컨트롤의 스타일을 지정합니다. 컨트롤 스타일의 조합을 적용 됩니다. 자세한 내용은 [공용 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb775498) Windows SDK의 합니다.  
+ 바로 가기 키 컨트롤의 스타일을 지정합니다. 컨트롤 스타일의 조합을 적용 됩니다. 자세한 내용은 [공용 컨트롤 스타일](/windows/desktop/Controls/common-control-styles) Windows SDK의 합니다.  
   
  *rect*  
- 에 대 한 참조를 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.  
+ 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.  
   
  *pParentWnd*  
  컨트롤의 부모 창에 대 한 포인터입니다.  
@@ -232,7 +232,7 @@ static CString GetKeyName(
 ### <a name="remarks"></a>설명  
  Windows에서의 지역화 된 버전의 지역화 되지 않은 키보드 드라이버를 설치할 수 있도록 키보드 드라이버에서 제공 되는이 함수가 반환 되는 키 이름 및 그 반대의 경우도 마찬가지입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCControlLadenDialog#69](../../mfc/codesnippet/cpp/chotkeyctrl-class_1.cpp)]  
   
 ##  <a name="sethotkey"></a>  CHotKeyCtrl::SetHotKey  

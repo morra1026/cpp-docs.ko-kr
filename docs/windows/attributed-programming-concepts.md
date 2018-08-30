@@ -17,18 +17,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2fe6616cd22ee9de9ffbb6b3a26620a7ccdebc63
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 223359e10ef0e64860a611079abf9e7e83a26fe1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598079"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222810"
 ---
 # <a name="attributed-programming-concepts"></a>특성을 사용하는 프로그래밍 개념
 
 Visual c + +에 다양을 한 프로그램에서 특성을 사용 하는 데는 자료가 포함 되어 있습니다. 특성을 Visual c + +의 새로운 기능은 COM 프로그래밍 및.NET Framework 공용 언어 런타임 개발을 간소화 하도록 설계 되었습니다. 소스 파일에서 특성을 포함 하는 경우 컴파일러가 공급자의 동적 연결 라이브러리 코드를 삽입 하거나 생성 된 개체 파일의 코드를 수정 (DLL)를 사용 하 여 작동 합니다. .idl 파일, 인터페이스, 형식 라이브러리 및 다른 COM 요소를 만드는 데 도움이 되는 특성이 있습니다. 통합된 개발 환경 (IDE), 마법사 및 속성 창에서 특성은 지원 됩니다.
 
-배경이 해야 특성 COM 개체를 작성 하는 데 필요한 자세한 코딩의 일부를 제거 하는 동안 [COM 기본 사항](http://msdn.microsoft.com/library/windows/desktop/ms694363) 가장 사용 합니다.
+배경이 해야 특성 COM 개체를 작성 하는 데 필요한 자세한 코딩의 일부를 제거 하는 동안 [COM 기본 사항](/windows/desktop/com/the-component-object-model) 가장 사용 합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 

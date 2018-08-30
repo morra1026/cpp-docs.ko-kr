@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10315395e9699e2a93c802001ba920dcac1440f6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ca5545f7ebf828a04321db999d74aaa0d8a42187
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345255"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214735"
 ---
 # <a name="making-owner-drawn-header-controls"></a>소유자가 그린 헤더 컨트롤 만들기
-헤더 컨트롤의 개별 항목을 정의할 수 있습니다 ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) 항목 소유자가 그린 되도록 합니다. 자세한 내용은 참조 [소유자가 그린 헤더 컨트롤](http://msdn.microsoft.com/library/windows/desktop/bb775238) Windows sdk에서입니다.  
+헤더 컨트롤의 개별 항목을 정의할 수 있습니다 ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) 항목 소유자가 그린 되도록 합니다. 자세한 내용은 [소유자가 그린 헤더 컨트롤](/windows/desktop/Controls/header-controls) Windows SDK에 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [CHeaderCtrl 사용](../mfc/using-cheaderctrl.md)   

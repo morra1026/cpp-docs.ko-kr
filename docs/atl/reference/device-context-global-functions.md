@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d45468674d274c5f20b5533d782390cf2a6cec6
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 8944ecdb4f9996800264986a7a687df6020b0591
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881398"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209935"
 ---
 # <a name="device-context-global-functions"></a>장치 컨텍스트 전역 함수
 이 함수는 지정된 된 장치에 대 한 장치 컨텍스트를 만듭니다.  
@@ -29,7 +29,7 @@ ms.locfileid: "37881398"
 |[AtlCreateTargetDC](#atlcreatetargetdc)|장치 컨텍스트를 만듭니다.|  
   
 ##  <a name="atlcreatetargetdc"></a>  AtlCreateTargetDC  
- 에 지정 된 장치에 대 한 장치 컨텍스트를 만듭니다.는 [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) 구조입니다.  
+ 에 지정 된 장치에 대 한 장치 컨텍스트를 만듭니다.는 [DVTARGETDEVICE](/windows/desktop/api/objidl/ns-objidl-tagdvtargetdevice) 구조입니다.  
   
 ```
 HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);

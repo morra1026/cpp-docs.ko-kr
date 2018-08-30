@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb41f9630e22d9067743b106aed49ea9c51ee4ae
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 6243bd4167ec640553a6cb55d7d6f67319315e19
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42539123"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217348"
 ---
 # <a name="parallel-diagnostic-tools-concurrency-runtime"></a>병렬 진단 도구(동시성 런타임)
 Visual Studio는 다중 스레드 응용 프로그램 디버깅 및 프로파일링에 대한 광범위한 지원을 제공합니다.  
@@ -31,7 +31,7 @@ Visual Studio는 다중 스레드 응용 프로그램 디버깅 및 프로파일
  프로 파일링 도구는 다중 스레드 응용 프로그램을 자신 및 다른 프로그램과 상호 작용 하는 방법에 대 한 그래픽, 테이블 형식 및 숫자 정보를 표시 하는 세 가지 데이터 뷰를 제공 합니다. 뷰는 관심 있는 영역을 신속 하 게 식별할 수 있도록 하 고 호출 스택, 그래픽 표시 지점에서 이동할 사이트 및 소스 코드를 호출 합니다. 자세한 내용은 [동시성 시각화 도우미](/visualstudio/profiling/concurrency-visualizer)를 참조하세요.  
   
 ## <a name="event-tracing"></a>이벤트 추적  
- 동시성 런타임을 사용 하 여 [Windows 이벤트 추적에 대 한](http://msdn.microsoft.com/library/windows/desktop/bb968803) (ETW)에 다양 한 이벤트가 발생할 때 프로파일러 등의 계측 도구에 알립니다. 이러한 이벤트는 병렬 알고리즘을 시작 하거나 끝날 때 스케줄러를 활성화 또는 비활성화 하는 경우, 컨텍스트를 시작, 종료, 차단, 차단 해제, 또는 생성 하는 경우 및 포함 됩니다.  
+ 동시성 런타임을 사용 하 여 [Windows 이벤트 추적에 대 한](/windows/desktop/ETW/event-tracing-portal) (ETW)에 다양 한 이벤트가 발생할 때 프로파일러 등의 계측 도구에 알립니다. 이러한 이벤트는 병렬 알고리즘을 시작 하거나 끝날 때 스케줄러를 활성화 또는 비활성화 하는 경우, 컨텍스트를 시작, 종료, 차단, 차단 해제, 또는 생성 하는 경우 및 포함 됩니다.  
   
  와 같은 도구를 [동시성 시각화 도우미](/visualstudio/profiling/concurrency-visualizer) 이 기능을 활용; 따라서 일반적으로 필요가 없습니다 이러한 이벤트를 사용 하 여 직접 작동 하도록 합니다. 그러나 이러한 이벤트는 사용자 지정 프로파일러를 개발할 때 또는 같은 이벤트 추적 도구를 사용 하면 유용 [Xperf](http://go.microsoft.com/fwlink/p/?linkid=160628)합니다.  
   

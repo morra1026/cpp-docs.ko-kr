@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af604ac6afce91dc865cfbb465e8c27acea8f775
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 9d4c752dc2a139d1e0bac38d9c307154cdc32fe6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885323"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196321"
 ---
 # <a name="cautorevertimpersonation-class"></a>CAutoRevertImpersonation 클래스
 이 클래스 되돌립니다 [CAccessToken](../../atl/reference/caccesstoken-class.md) 범위를 벗어나면 nonimpersonating 상태 개체입니다.  
@@ -55,11 +55,11 @@ class CAutoRevertImpersonation
 |[CAutoRevertImpersonation::GetAccessToken](#getaccesstoken)|이 개체와 연결 된 액세스 토큰 현재를 검색 합니다.|  
   
 ## <a name="remarks"></a>설명  
- [액세스 토큰](http://msdn.microsoft.com/library/windows/desktop/aa374909) 개체인 프로세스 또는 스레드의 보안 컨텍스트를 설명 하는 Windows NT 또는 Windows 2000 시스템에 로그온 한 각 사용자에 게 할당 됩니다. 이러한 액세스 토큰을 사용 하 여 나타낼 수는 `CAccessToken` 클래스입니다.  
+ [액세스 토큰](/windows/desktop/SecAuthZ/access-tokens) 개체인 프로세스 또는 스레드의 보안 컨텍스트를 설명 하는 Windows NT 또는 Windows 2000 시스템에 로그온 한 각 사용자에 게 할당 됩니다. 이러한 액세스 토큰을 사용 하 여 나타낼 수는 `CAccessToken` 클래스입니다.  
   
  액세스 토큰을 가장 하는 데 필요한 경우가 있습니다. 이 클래스는 편의상 제공 되지만 액세스 토큰의 가장을 수행 하지 않습니다. nonimpersonated 상태로 자동 되돌리기가 수행합니다. 즉, 여러 가지 방법으로 액세스 토큰 가장을 수행할 수 있습니다.  
   
- Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK에 있습니다.  
+ Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](/windows/desktop/SecAuthZ/access-control) Windows SDK에 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** atlsecurity.h  
@@ -130,5 +130,5 @@ const CAccessToken* GetAccessToken() throw();
   
 ## <a name="see-also"></a>참고 항목  
  [ATLSecurity 샘플](../../visual-cpp-samples.md)   
- [액세스 토큰](http://msdn.microsoft.com/library/windows/desktop/aa374909)   
+ [액세스 토큰](/windows/desktop/SecAuthZ/access-tokens)   
  [클래스 개요](../../atl/atl-class-overview.md)

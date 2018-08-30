@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4be126af9228312fa5fd4430e4f477f037d31df8
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 37c8140d3579fc5d629b10c8e3ae5459e6492920
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42571992"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198662"
 ---
 # <a name="ccomobject-class"></a>CComObject 클래스
 이 클래스는 구현 `IUnknown` 집계 개체에 대 한 합니다.  
@@ -62,7 +62,7 @@ class CComObject : public Base
 |[CComObject::Release](#release)|개체의 참조 횟수를 감소 시킵니다.|  
   
 ## <a name="remarks"></a>설명  
- `CComObject` 구현 [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) 집계 개체에 대 한 합니다. 그러나 호출 `QueryInterface`, `AddRef`, 및 `Release` 위임 됩니다 `CComObjectRootEx`합니다.  
+ `CComObject` 구현 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 집계 개체에 대 한 합니다. 그러나 호출 `QueryInterface`, `AddRef`, 및 `Release` 위임 됩니다 `CComObjectRootEx`합니다.  
   
  사용에 대 한 자세한 내용은 `CComObject`, 문서를 참조 하세요 [ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)합니다.  
   
@@ -92,8 +92,8 @@ CComObject(void* = NULL);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- **void\***  
- [in] 이 명명 되지 않은 매개 변수 사용 되지 않습니다. 대응 하 여 다른 있는 **CCom***XXX*`Object`*XXX* 생성자입니다.  
+ <em>void\*</em>  
+ [in] 이 명명 되지 않은 매개 변수 사용 되지 않습니다. 다른 대칭에 대 한 존재 `CComXXXObjectXXX` 생성자입니다.  
   
 ### <a name="remarks"></a>설명  
  소멸자 감소 것입니다.  
@@ -130,7 +130,7 @@ static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);
   
  개체에 대 한 액세스도 직접 필요한 수행 해도 여전히 오버 헤드 없이 새 개체를 만들려고 할 경우 `CoCreateInstance`를 사용 하 여 [CComCoClass::CreateInstance](../../atl/reference/ccomcoclass-class.md#createinstance) 대신 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_COM#38](../../atl/codesnippet/cpp/ccomobject-class_1.h)]  
   
  [!code-cpp[NVC_ATL_COM#39](../../atl/codesnippet/cpp/ccomobject-class_2.cpp)]  

@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b328cb869f971afb0251750d7847d6850688731
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 11f61e89ab888b678bf54f65b999c0fd4394dbea
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37879837"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201664"
 ---
 # <a name="cwndclassinfo-class"></a>CWndClassInfo 클래스
 이 클래스는 창 클래스에 대 한 정보를 등록 하기 위한 메서드를 제공 합니다.  
@@ -79,7 +79,7 @@ class CWndClassInfo
   
  [!code-cpp[NVC_ATL_Windowing#43](../../atl/codesnippet/cpp/cwndclassinfo-class_1.h)]  
   
- 창 클래스에 대 한 자세한 내용은 참조 하세요. [창 클래스](http://msdn.microsoft.com/library/windows/desktop/ms632596) Windows SDK에 있습니다.  
+ 창 클래스에 대 한 자세한 내용은 참조 하세요. [창 클래스](https://msdn.microsoft.com/library/windows/desktop/ms632596) Windows SDK에 있습니다.  
   
  ATL에서 창 사용 하는 방법에 대 한 자세한 내용은 문서 참조 [ATL 창 클래스](../../atl/atl-window-classes.md)합니다.  
   
@@ -138,7 +138,7 @@ TCHAR m_szAutoName[13];
  `CWndClassInfo` 사용 하 여 `m_szAutoName` 에 대 한 NULL이 전달 되는 경우에 합니다 `WndClassName` 매개 변수를 [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class)의 [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) 또는 [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) . ATL 창 클래스를 등록 하는 경우 이름을 생성 합니다.  
   
 ##  <a name="m_wc"></a>  CWndClassInfo::m_wc  
- 창 클래스 정보를 유지 관리를 [WNDCLASSEX](http://msdn.microsoft.com/library/windows/desktop/ms633577) 구조입니다.  
+ 창 클래스 정보를 유지 관리를 [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577) 구조입니다.  
   
 ```
 WNDCLASSEX m_wc;

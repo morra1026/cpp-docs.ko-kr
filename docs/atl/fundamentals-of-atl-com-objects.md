@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eaaad259fa0c864a72feaff3222f683563c8ca91
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 1b9dc87340d567f876d91abc4d8ebfa1d6353cad
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852319"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209989"
 ---
 # <a name="fundamentals-of-atl-com-objects"></a>ATL COM 개체의 기본 사항
 다음 그림에서는 클래스 및 ATL COM 개체를 정의 하는 데 사용 되는 인터페이스 간의 관계를 보여 줍니다.  
@@ -40,7 +40,7 @@ ms.locfileid: "37852319"
   
  클라이언트는 내부 개체와 상호 작용 하는 외부 개체를 통해 이동 하지 않아도, 때문에 집계 된 개체는 일반적으로 더 효율적입니다. 또한 외부 개체가 없습니다 집계 된 개체의 기능을 알아야 집계 된 개체의 인터페이스는 클라이언트에 직접 사용할 수 있습니다. 그러나 일부 개체를 집계할 수 있습니다. 집계 개체에 대 한 집계 고려에서 하 여 디자인 해야 합니다.  
   
- ATL 구현 [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) 두 단계로 진행에서 합니다.  
+ ATL 구현 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 두 단계로 진행에서 합니다.  
   
 -   [CComObject](../atl/reference/ccomobject-class.md), [CComAggObject](../atl/reference/ccomaggobject-class.md), 또는 [CComPolyObject](../atl/reference/ccompolyobject-class.md) 구현 하는 `IUnknown` 메서드.  
   

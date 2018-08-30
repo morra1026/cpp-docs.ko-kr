@@ -208,12 +208,12 @@ helpviewer_keywords:
 - std::swap [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3314921d528624e5f08d9053f44f171d5c45b7f2
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: f51bac0f5865a6f985436f3713d3a81abd44cddb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43132232"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203966"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algorithm&gt; 함수
 
@@ -2645,7 +2645,7 @@ bool is_sorted(
 
 ### <a name="remarks"></a>설명
 
-첫 번째 템플릿 함수 [is_sorted_until](http://msdn.microsoft.com/bbad99d0-deaa-4fe6-ae58-eb5b3e4dded0)`( first, last ) == last`합니다. `operator<` 함수는 순서 비교를 수행 합니다.
+첫 번째 템플릿 함수 [is_sorted_until](https://msdn.microsoft.com/bbad99d0-deaa-4fe6-ae58-eb5b3e4dded0)`( first, last ) == last`합니다. `operator<` 함수는 순서 비교를 수행 합니다.
 
 두 번째 템플릿 함수의 반환 `is_sorted_until( first, last , comp ) == last`합니다. 합니다 *comp* 조건자 함수는 순서 비교를 수행 합니다.
 
@@ -7392,11 +7392,9 @@ void shuffle(RandomAccessIterator first,
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 를 섞으 (포함) 범위의 첫 번째 요소에 대 한 반복기입니다. 
-          `RandomAccessIterator` 및 `ValueSwappable`의 요구 사항을 충족해야 합니다.
+*첫 번째* 를 섞으 (포함) 범위의 첫 번째 요소에 대 한 반복기입니다. `RandomAccessIterator` 및 `ValueSwappable`의 요구 사항을 충족해야 합니다.
 
-*마지막* 섞으, 배타적 범위에서 마지막 요소에 대 한 반복기입니다. 
-          `RandomAccessIterator` 및 `ValueSwappable`의 요구 사항을 충족해야 합니다.
+*마지막* 섞으, 배타적 범위에서 마지막 요소에 대 한 반복기입니다. `RandomAccessIterator` 및 `ValueSwappable`의 요구 사항을 충족해야 합니다.
 
 *gen* 난수 생성기는는 `shuffle()` 함수 작업에 사용 됩니다. `UniformRandomNumberGenerator`의 요구 사항을 충족해야 합니다.
 

@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 95dbd8003f95ee0c0e809d9017ec5093b782ae99
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 91a010c9ffe1f05780c25fc6d6ec96d2619a8019
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604663"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202765"
 ---
 # <a name="viewing-and-adding-activex-controls-to-a-dialog-box"></a>ActiveX 컨트롤 보기 및 대화 상자에 추가
 
@@ -47,12 +47,12 @@ Visual Studio에서는 ActiveX 컨트롤을 대화 상자에 삽입할 수 있�
    컨트롤이 대화 상자에 표시되고, 이 대화 상자에서 컨트롤을 편집하거나 다른 컨트롤처럼 컨트롤용 처리기를 만들 수 있습니다.
 
    > [!NOTE]
-   > ActiveX 컨트롤을 [도구 상자 창](/visualstudio/ide/reference/toolbox)에 추가할 수 있습니다. 자세한 내용은 [도구 상자에서 탭 및 항목 관리](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)합니다.
+   > ActiveX 컨트롤을 [도구 상자 창](/visualstudio/ide/reference/toolbox)에 추가할 수 있습니다. 자세한 내용은 [도구 상자에서 탭 및 항목 관리](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)합니다.
 
    > [!CAUTION]
    > 시스템에 일부 ActiveX 컨트롤을 배포하지 못할 수 있습니다. 컨트롤을 설치한 소프트웨어에 대한 사용권 계약을 참조하거나 소프트웨어 회사에 문의하세요.
 
-   컨트롤을 배치할 수 있습니다는 **도구 상자** 창에 쉽게 액세스할 수 있도록 합니다. 자세한 내용은 [도구 상자 사용자 지정 대화 상자](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)합니다.
+   컨트롤을 배치할 수 있습니다는 **도구 상자** 창에 쉽게 액세스할 수 있도록 합니다. 자세한 내용은 [도구 상자 사용자 지정 대화 상자](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)합니다.
 
 관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리 되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대 한 내용은 참조 하세요 [데스크톱 앱에 대 한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)합니다. 전역화 및 지역화 관리 되는 앱의 리소스에 대 한 내용은 참조 하세요 [Globalizing and Localizing.NET Framework Applications](/dotnet/standard/globalization-localization/index)합니다.
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cb1e8085810eea78d18a5ef68f18e4323ec9d3f4
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 936777adf9863c233303c4b78ffd9e45aa0f3b95
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605423"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209533"
 ---
 # <a name="lcid"></a>lcid
 
@@ -36,9 +36,9 @@ ms.locfileid: "42605423"
 
 ## <a name="remarks"></a>설명
 
-**lcid** 기능을 구현 하는 c + + 특성은 [lcid](http://msdn.microsoft.com/library/windows/desktop/aa367067) MIDL 특성입니다. 라이브러리 블록에 대 한 로캘을 구현 하려는 경우 사용 합니다 **lcid =** `lcid` 매개 변수를 [모듈](../windows/module-cpp.md) 특성.
+**lcid** 기능을 구현 하는 c + + 특성은 [lcid](/windows/desktop/Midl/lcid) MIDL 특성입니다. 라이브러리 블록에 대 한 로캘을 구현 하려는 경우 사용 합니다 **lcid =** `lcid` 매개 변수를 [모듈](../windows/module-cpp.md) 특성.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // cpp_attr_ref_lcid.cpp

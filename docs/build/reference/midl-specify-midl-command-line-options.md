@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b3f20fddd657d1e5e57caf65ecc8e2c52afbf12
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 7fc5e4b0b3e19f9a71e1ada445181bede68d65a5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42572086"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222683"
 ---
 # <a name="midl-specify-midl-command-line-options"></a>/MIDL(MIDL 명령줄 옵션 지정)
 ```  
@@ -37,7 +37,7 @@ ms.locfileid: "42572086"
  다음은 각 문자에 대한 설명입니다.  
   
  `file`  
- 포함 된 파일의 이름을 [MIDL 명령줄 옵션](http://msdn.microsoft.com/library/windows/desktop/aa366839)합니다.  
+ 포함 된 파일의 이름을 [MIDL 명령줄 옵션](/windows/desktop/Midl/general-midl-command-line-syntax)합니다.  
   
 ## <a name="remarks"></a>설명  
  IDL 파일을 TLB 파일로 변환에 대 한 모든 옵션을 지정 해야 `file`; MIDL 명령줄 옵션을 링커의 명령줄에서 지정할 수 없습니다. /MIDL 지정 하지 않으면, MIDL 컴파일러 IDL 파일 이름 및 다른 옵션 없이 사용 하 여 호출 됩니다.  

@@ -53,12 +53,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd54c27f4208dce317d9c09720cb63b65af4a54b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1e4e7776688fa95a81cd76e6db48f38f82bc076d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415743"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195296"
 ---
 # <a name="vfprintfp-vfprintfpl-vfwprintfp-vfwprintfpl"></a>_vfprintf_p, _vfprintf_p_l, _vfwprintf_p, _vfwprintf_p_l
 
@@ -109,22 +109,22 @@ int _vfwprintf_p_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_vfprintf_p** 및 **_vfwprintf_p** 는 출력 오류가 발생 하는 경우 종료 null 문자 또는 음수 값을 포함 하지 않고 작성 된 문자 수를 반환 합니다.
+**_vfprintf_p** 하 고 **_vfwprintf_p** 출력 오류가 발생 하면 null 종결 문자 또는 음수 값을 포함 하지 않고 작성 된 문자 수를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 각 함수는 인수 목록에 대 한 포인터 다음 기록 하 고 형식이 지정된 된 데이터를 *스트림*합니다. 다를 이러한 함수는 **_vfprint_s** 및 **_vfwprint_s** 버전만 있다는 점에서 위치 매개 변수를 지원 합니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
+이러한 함수는 각각 인수 목록에 대 한 포인터 형식을 지정 하 고 지정된 된 데이터를 씁니다 *스트림을*합니다. 이러한 함수에서 다른 합니다 **_vfprint_s** 하 고 **_vfwprint_s** 버전 위치 매개 변수 지원에 합니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
 
-**_vfwprintf_p** 의 와이드 문자 버전이 **_vprintf_p**; 스트림이 ANSI 모드에서 열리는 경우 두 함수는 동일 하 게 작동 합니다. **_vprintf_p** 현재 출력 유니코드 스트림을 지원 하지 않습니다.
+**_vfwprintf_p** 의 와이드 문자 버전이 **_vprintf_p**; 두 함수는 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 작동 합니다. **_vprintf_p** 유니코드 스트림으로 출력을 현재 지원 하지 않습니다.
 
-있는 이러한 함수 버전은 **_l** 은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 점을 제외 하 고 접미사는 동일 합니다.
+포함 된 이러한 함수의 버전을 **_l** 접미사는 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
 
 > [!IMPORTANT]
-> *format*이 사용자 정의 문자열이 아닌지 확인하세요. 자세한 내용은 [버퍼 오버런 방지](http://msdn.microsoft.com/library/windows/desktop/ms717795)를 참조하세요.
+> *format*이 사용자 정의 문자열이 아닌지 확인하세요. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-어느 경우 *스트림* 또는 *형식* 가 null 포인터 또는에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 형식 문자열에 잘못 된 서식 문자가 들어 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 함수 실행을 계속 허용 된,-1을 반환 하 고 설정 **errno** 를 **EINVAL**합니다.
+이면 *스트림을* 또는 *형식* 가 null 포인터인 경우 또는에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 형식 문자열이 잘못 된 서식 문자열을 포함 하는 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 함수는 계속 실행 하도록 허용,-1을 반환 하 고 설정 **errno** 하 **EINVAL**합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -133,7 +133,7 @@ int _vfwprintf_p_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|선택적 헤더|
+|루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|----------------------|
 |**_vfprintf_p**, **_vfprintf_p_l**|\<stdio.h> 및 \<stdarg.h>|\<varargs.h>*|
 |**_vfwprintf_p**, **_vfwprintf_p_l**|\<stdio.h> 또는 \<wchar.h> 및 \<stdarg.h>|\<varargs.h>*|

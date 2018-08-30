@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed6b5f46e20338bdb06c5c04599402dbbefa935e
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 561a82e2bea320e6230af84055716606d180e2c5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880052"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214277"
 ---
 # <a name="catlexemodulet-class"></a>CAtlExeModuleT 클래스
 이 클래스는 응용 프로그램에 대 한 모듈을 나타냅니다.  
@@ -259,7 +259,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
   
 ### <a name="parameters"></a>매개 변수  
  *nShowCmd*  
- 창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다. SW_HIDE 기본값은입니다.  
+ 창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다. SW_HIDE 기본값은입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
@@ -285,7 +285,7 @@ static void UninitializeCom() throw();
 ```  
   
 ### <a name="remarks"></a>설명  
- 기본적으로이 메서드를 호출 [CoUninitialize](http://msdn.microsoft.com/library/windows/desktop/ms688715) 소멸자에서 호출 됩니다. 이 메서드를 재정의 하는 경우 재정의 [CAtlExeModuleT::InitializeCom](#initializecom)합니다.  
+ 기본적으로이 메서드를 호출 [CoUninitialize](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize) 소멸자에서 호출 됩니다. 이 메서드를 재정의 하는 경우 재정의 [CAtlExeModuleT::InitializeCom](#initializecom)합니다.  
   
 ##  <a name="unlock"></a>  CAtlExeModuleT::Unlock  
  모듈의 잠금 횟수를 줄입니다.  
@@ -306,7 +306,7 @@ int WinMain(int nShowCmd) throw();
   
 ### <a name="parameters"></a>매개 변수  
  *nShowCmd*  
- 창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다.  
+ 창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다.  
   
 ### <a name="return-value"></a>반환 값  
  실행 파일의 반환 값을 반환합니다.  

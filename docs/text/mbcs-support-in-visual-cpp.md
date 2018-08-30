@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f595a048d9f2e5795f69b7d1da6c4c6cf4ca0fa2
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 51472ba9c0bc15d6b12ddcd3a3b88b65a3a2682b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608682"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205198"
 ---
 # <a name="mbcs-support-in-visual-c"></a>Visual C++에서 MBCS 지원
 MBCS 지원 버전의 Windows 실행 하는 경우 Visual c + + 개발 시스템 (통합된 소스 코드 편집기, 디버거 및 명령줄 도구 등)는 MBCS 지원, 메모리 창을 제외 하 고.  
@@ -47,7 +47,7 @@ MBCS 지원 버전의 Windows 실행 하는 경우 Visual c + + 개발 시스템
  이렇게 하려면 필요한 경우 언제나 visual c + + 더블 바이트 문자를 허용 합니다. Visual c + + 리소스 편집기 (예: 대화 상자 편집기에서 정적 텍스트)와 아이콘 편집기에 정적 텍스트 항목에서에서 텍스트 항목 대화 상자에 경로 및 파일 이름을 포함 됩니다. 전처리기는 일부 더블 바이트 지시문을 인식 하는 또한-예를 들어 파일의 이름을 `#include` 문 및에 대 한 인수로 합니다 `code_seg` 및 `data_seg` pragma입니다. 소스 코드 편집기에서 더블 바이트 문자 문자열 리터럴 및 주석에서는 아니지만 (예: 변수 이름은) C/c + + 언어 요소가 허용 됩니다.  
   
 ##  <a name="_core_support_for_the_input_method_editor_.28.ime.29"></a> 지원에 대 한 입력 방법 편집기를 IME)  
- 일반적으로 (예를 들어 일본) MBCS를 사용 하는 동아시아 시장 및 더블 바이트 문자를 모두 입력에 대 한 Windows IME 지원 용으로 작성 된 응용 프로그램입니다. Visual c + + 개발 환경에는 IME에 대 한 전체 지원을 포함합니다. 자세한 내용은 [IME 샘플: 컨트롤의 IME 모드 및 IME 수준 3 구현 방법 설명](http://msdn.microsoft.com/87ebdf65-cef0-451d-a6fc-d5fb64178b14)합니다.  
+ 일반적으로 (예를 들어 일본) MBCS를 사용 하는 동아시아 시장 및 더블 바이트 문자를 모두 입력에 대 한 Windows IME 지원 용으로 작성 된 응용 프로그램입니다. Visual c + + 개발 환경에는 IME에 대 한 전체 지원을 포함합니다. 자세한 내용은 [IME 샘플: 컨트롤의 IME 모드 및 IME 수준 3 구현 방법 설명](https://msdn.microsoft.com/87ebdf65-cef0-451d-a6fc-d5fb64178b14)합니다.  
   
  일본어 키보드 간지 문자를 직접 지원 하지 않습니다. IME 간지 표현 가능한에 다른 일본어 (로마지, 가타카나, 또는 히라가나) 중 하나에서 입력 음성 문자열을 변환 합니다. 모호성 인 경우에 여러 가지 대안 중에서 선택할 수 있습니다. IME 간지 문자를 선택한 경우 두 전달 `WM_CHAR` 제어 응용 프로그램에는 메시지입니다.  
   

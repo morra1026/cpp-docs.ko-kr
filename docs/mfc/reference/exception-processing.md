@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e77284d36a7290f5d9070bb355a8affae9ba864f
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 186a6705649cee7095d3d2e4c4bb237498fdcea0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336863"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221273"
 ---
 # <a name="exception-processing"></a>예외 처리
 프로그램을 실행 하는 경우 다양 한 비정상적인 상태 및 "예외" 라는 오류가 발생할 수 있습니다. 이러한 메모리, 리소스 할당 오류 및 파일을 찾는 데 실패의 부족을 포함할 수 있습니다.  
@@ -109,7 +109,7 @@ TRY
   
  자세한 내용은 문서 참조 [예외](../../mfc/exception-handling-in-mfc.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CATCH](#catch)합니다.  
 
 ### <a name="requirements"></a>요구 사항
@@ -142,7 +142,7 @@ CATCH(exception_class, exception_object_pointer_name)
   
  예외 CATCH 매크로에 대 한 자세한 내용은 문서 참조 [예외](../../mfc/exception-handling-in-mfc.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCExceptions#26](../../mfc/codesnippet/cpp/exception-processing_1.cpp)]  
   
 ##  <a name="catch_all"></a>  CATCH_ALL  
@@ -164,7 +164,7 @@ CATCH_ALL(exception_object_pointer_name)
   
  예외에 대 한 자세한 내용은 문서 참조 [예외](../../mfc/exception-handling-in-mfc.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [cfile:: Abort](../../mfc/reference/cfile-class.md#abort)합니다.  
   
 ### <a name="requirements"></a>요구 사항  
@@ -192,7 +192,7 @@ AND_CATCH(exception_class, exception_object_pointer_name)
 > [!NOTE]
 >  합니다 **AND_CATCH** 블록 (중괄호로 구분) c + + 범위로 정의 됩니다. 이 범위에서 변수를 선언 하는 경우 해당 범위 내 에서만 액세스할 수는 기억 합니다. 이에 적용 됩니다는 *exception_object_pointer_name* 변수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CATCH](#catch)합니다.  
   
 ### <a name="requirements"></a>요구 사항  
@@ -273,7 +273,7 @@ THROW_LAST()
   
  자세한 내용은 문서 참조 [예외](../../mfc/exception-handling-in-mfc.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [cfile:: Abort](../../mfc/reference/cfile-class.md#abort)합니다.  
   
 ### <a name="requirements"></a>요구 사항  
@@ -350,7 +350,7 @@ void AfxThrowMemoryException();
 ```  
   
 ### <a name="remarks"></a>설명  
- 경우이 함수를 호출할 기본 시스템 메모리 할당자에 대 한 호출 (같은 **malloc** 하며 [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) Windows 함수) 실패 합니다. 호출할 필요가 없습니다 **새** 있으므로 **새** 에서 예외를 throw 메모리 자동으로 메모리 할당이 실패 합니다.  
+ 경우이 함수를 호출할 기본 시스템 메모리 할당자에 대 한 호출 (같은 **malloc** 하며 [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) Windows 함수) 실패 합니다. 호출할 필요가 없습니다 **새** 있으므로 **새** 에서 예외를 throw 메모리 자동으로 메모리 할당이 실패 합니다.  
   
 ### <a name="requirements"></a>요구 사항  
   **헤더** afx.h  
@@ -422,7 +422,7 @@ void AFXAPI AfxThrowOleDispatchException(
 ### <a name="remarks"></a>설명  
  (Microsoft Visual Basic 또는 다른 OLE automation 클라이언트 응용 프로그램) 구동 응용 프로그램에서이 함수에 제공 된 정보를 표시할 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCExceptions#25](../../mfc/codesnippet/cpp/exception-processing_2.cpp)]  
   
 ### <a name="requirements"></a>요구 사항  
@@ -444,7 +444,7 @@ void AFXAPI AfxThrowOleException(HRESULT hr);
  예외에 대 한 이유를 나타내는 결과 코드에 대 한 핸들입니다.  
   
 ### <a name="remarks"></a>설명  
- 버전을 인수로 HRESULT를 사용 하는 결과 코드는 해당 SCODE 변환 합니다. SCODE HRESULT에 대 한 자세한 내용은 참조 하세요. [COM 오류 코드 구조](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK에 있습니다.  
+ 버전을 인수로 HRESULT를 사용 하는 결과 코드는 해당 SCODE 변환 합니다. SCODE HRESULT에 대 한 자세한 내용은 참조 하세요. [COM 오류 코드 구조](/windows/desktop/com/structure-of-com-error-codes) Windows SDK에 있습니다.  
   
 ### <a name="requirements"></a>요구 사항  
   **헤더** afxdao.h  
@@ -511,7 +511,7 @@ void  AfxAbort();
 ### <a name="remarks"></a>설명  
  `AfxAbort` 내부적으로 호출 됩니다 MFC 멤버 함수에 의해 처리할 수 없는 예외로 같은 심각한 오류가 발생 하는 경우. 호출할 수 있습니다 `AfxAbort` 복구할 수 없는 치명적인 오류가 발생 하는 경우 드문 경우에서입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CATCH](#catch)합니다.  
 
 ### <a name="requirements"></a>요구 사항  

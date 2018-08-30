@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9968a3601e366628b3539343dde34e956387356a
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: ea4bfc278e0912248c437123bd1510002a5c3829
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885766"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201629"
 ---
 # <a name="csecuritydesc-class"></a>CSecurityDesc 클래스
 이 클래스는에 대 한 래퍼를 `SECURITY_DESCRIPTOR` 구조입니다.  
@@ -115,7 +115,7 @@ class CSecurityDesc
   
  응용 프로그램을 수정 하지 않아야 합니다 `SECURITY_DESCRIPTOR` 구조를 직접 및 대신 클래스 메서드를 사용 해야 제공 합니다.  
   
- Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK에 있습니다.  
+ Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](/windows/desktop/SecAuthZ/access-control) Windows SDK에 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** atlsecurity.h  
@@ -155,7 +155,7 @@ bool FromString(LPCTSTR pstr) throw(...);
   
 ### <a name="parameters"></a>매개 변수  
  *pstr*  
- 포함 된 null로 끝나는 문자열에 대 한 포인터를 [문자열 형식 보안 설명자](http://msdn.microsoft.com/library/windows/desktop/aa379570) 변환할 수 있습니다.  
+ 포함 된 null로 끝나는 문자열에 대 한 포인터를 [문자열 형식 보안 설명자](/windows/desktop/SecAuthZ/security-descriptor-string-format) 변환할 수 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 시 true를 반환 합니다. 실패 시 예외를 throw 합니다.  
@@ -163,7 +163,7 @@ bool FromString(LPCTSTR pstr) throw(...);
 ### <a name="remarks"></a>설명  
  문자열을 사용 하 여 만들 수 있습니다 [CSecurityDesc::ToString](#tostring)합니다. 보안 설명자를 문자열로 변환 쉽게 저장 하 고 전송 합니다.  
   
- 이 메서드를 호출 [ConvertStringSecurityDescriptorToSecurityDescriptor](http://msdn.microsoft.com/library/windows/desktop/aa376401)합니다.  
+ 이 메서드를 호출 [ConvertStringSecurityDescriptorToSecurityDescriptor](/windows/desktop/api/sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora)합니다.  
   
 ##  <a name="getcontrol"></a>  CSecurityDesc::GetControl  
  검색 보안 설명자에서 정보를 제어합니다.  
@@ -180,7 +180,7 @@ bool GetControl(SECURITY_DESCRIPTOR_CONTROL* psdc) const throw();
  메서드가 성공 false 실패 한 경우 true를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드를 호출 [GetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa446647)합니다.  
+ 이 메서드를 호출 [GetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa446647)합니다.  
   
 ##  <a name="getdacl"></a>  CSecurityDesc::GetDacl  
  보안 설명자에서 임의 액세스 제어 목록 (DACL) 정보를 검색합니다.  
@@ -251,7 +251,7 @@ const SECURITY_DESCRIPTOR* GetPSECURITY_DESCRIPTOR() const throw();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 에 대 한 포인터를 반환 합니다 [SECURITY_DESCRIPTOR](http://msdn.microsoft.com/library/windows/desktop/aa379561) 구조입니다.  
+ 에 대 한 포인터를 반환 합니다 [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) 구조입니다.  
   
 ##  <a name="getsacl"></a>  CSecurityDesc::GetSacl  
  보안 설명자에서 시스템 액세스 제어 목록 (SACL) 정보를 검색합니다.  
@@ -428,7 +428,7 @@ bool IsSelfRelative() const throw();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 연속 된 메모리 블록에 있는 모든 보안 정보를 사용 하 여 상대적 형식의 보안 설명자가 true를 반환 합니다. 절대적 형식의 보안 설명자가 false를 반환 합니다. 자세한 내용은 [Absolute 및 Self-Relative 보안 설명자](http://msdn.microsoft.com/library/windows/desktop/aa374807)합니다.  
+ 연속 된 메모리 블록에 있는 모든 보안 정보를 사용 하 여 상대적 형식의 보안 설명자가 true를 반환 합니다. 절대적 형식의 보안 설명자가 false를 반환 합니다. 자세한 내용은 [Absolute 및 Self-Relative 보안 설명자](/windows/desktop/SecAuthZ/absolute-and-self-relative-security-descriptors)합니다.  
   
 ##  <a name="makeabsolute"></a>  CSecurityDesc::MakeAbsolute  
  보안 설명자를 절대 형식으로 변환 하려면이 메서드를 호출 합니다.  
@@ -441,7 +441,7 @@ bool MakeAbsolute() throw(...);
  메서드가 성공 false 그렇지 않으면 true를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 절대적 형식의 보안 설명자를 포함 하는 대신 정보 자체를 포함 하는 정보에 대 한 포인터입니다. 상대적 형식의 보안 설명자를 인접 한 메모리 블록의 정보를 포함합니다. 상대적 보안 설명자를에서 `SECURITY_DESCRIPTOR` 구조에는 항상 정보를 시작 하지만 보안 설명자의 또 다른 구성 요소는 순서에 관계 없이 구조를 따를 수 있습니다. 메모리 주소를 사용 하는 대신 상대적 보안 설명자의 구성 요소는 보안 설명자의 시작 부분에서 오프셋으로 식별 됩니다. 이 형식은 보안 설명자를 디스크에 저장 하거나 통신 프로토콜을 통해 전송 해야 하는 경우에 유용 합니다. 자세한 내용은 [Absolute 및 Self-Relative 보안 설명자](http://msdn.microsoft.com/library/windows/desktop/aa374807)합니다.  
+ 절대적 형식의 보안 설명자를 포함 하는 대신 정보 자체를 포함 하는 정보에 대 한 포인터입니다. 상대적 형식의 보안 설명자를 인접 한 메모리 블록의 정보를 포함합니다. 상대적 보안 설명자를에서 `SECURITY_DESCRIPTOR` 구조에는 항상 정보를 시작 하지만 보안 설명자의 또 다른 구성 요소는 순서에 관계 없이 구조를 따를 수 있습니다. 메모리 주소를 사용 하는 대신 상대적 보안 설명자의 구성 요소는 보안 설명자의 시작 부분에서 오프셋으로 식별 됩니다. 이 형식은 보안 설명자를 디스크에 저장 하거나 통신 프로토콜을 통해 전송 해야 하는 경우에 유용 합니다. 자세한 내용은 [Absolute 및 Self-Relative 보안 설명자](/windows/desktop/SecAuthZ/absolute-and-self-relative-security-descriptors)합니다.  
   
 ##  <a name="makeselfrelative"></a>  CSecurityDesc::MakeSelfRelative  
  보안 설명자를 자기 상대적 형식으로 변환 하려면이 메서드를 호출 합니다.  
@@ -454,7 +454,7 @@ bool MakeSelfRelative() throw(...);
  메서드가 성공 false 그렇지 않으면 true를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 절대적 형식의 보안 설명자 정보 자체를 포함 하는 것이 아니라에 포함 된 정보에 대 한 포인터를 포함 합니다. 상대적 형식의 보안 설명자를 인접 한 메모리 블록의 정보를 포함합니다. 상대적 보안 설명자를에서 `SECURITY_DESCRIPTOR` 구조에는 항상 정보를 시작 하지만 보안 설명자의 또 다른 구성 요소는 순서에 관계 없이 구조를 따를 수 있습니다. 메모리 주소를 사용 하는 대신 보안 설명자의 구성 요소는 보안 설명자의 시작 부분에서 오프셋으로 식별 됩니다. 이 형식은 보안 설명자를 디스크에 저장 하거나 통신 프로토콜을 통해 전송 해야 하는 경우에 유용 합니다. 자세한 내용은 [Absolute 및 Self-Relative 보안 설명자](http://msdn.microsoft.com/library/windows/desktop/aa374807)합니다.  
+ 절대적 형식의 보안 설명자 정보 자체를 포함 하는 것이 아니라에 포함 된 정보에 대 한 포인터를 포함 합니다. 상대적 형식의 보안 설명자를 인접 한 메모리 블록의 정보를 포함합니다. 상대적 보안 설명자를에서 `SECURITY_DESCRIPTOR` 구조에는 항상 정보를 시작 하지만 보안 설명자의 또 다른 구성 요소는 순서에 관계 없이 구조를 따를 수 있습니다. 메모리 주소를 사용 하는 대신 보안 설명자의 구성 요소는 보안 설명자의 시작 부분에서 오프셋으로 식별 됩니다. 이 형식은 보안 설명자를 디스크에 저장 하거나 통신 프로토콜을 통해 전송 해야 하는 경우에 유용 합니다. 자세한 내용은 [Absolute 및 Self-Relative 보안 설명자](/windows/desktop/SecAuthZ/absolute-and-self-relative-security-descriptors)합니다.  
   
 ##  <a name="operator_eq"></a>  CSecurityDesc::operator =  
  대입 연산자입니다.  
@@ -489,7 +489,7 @@ bool SetControl(
   
 ### <a name="parameters"></a>매개 변수  
  *ControlBitsOfInterest*  
- 설정 제어 비트를 나타내는 SECURITY_DESCRIPTOR_CONTROL 마스크입니다. 설정할 수 있는 플래그 목록은 참조 하세요 [SetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx)합니다.  
+ 설정 제어 비트를 나타내는 SECURITY_DESCRIPTOR_CONTROL 마스크입니다. 설정할 수 있는 플래그 목록은 참조 하세요 [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx)합니다.  
   
  *ControlBitsToSet*  
  지정 된 컨트롤 비트에 대 한 새 값을 나타내는 SECURITY_DESCRIPTOR_CONTROL 마스크를 *ControlBitsOfInterest* 마스크입니다. 이 매개 변수에 대해 나열 된 플래그의 조합 수를 *ControlBitsOfInterest* 매개 변수입니다.  
@@ -498,7 +498,7 @@ bool SetControl(
  성공하면 true를 반환하고, 실패하면 false를 반환합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드를 호출 [SetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx)합니다.  
+ 이 메서드를 호출 [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx)합니다.  
   
 ##  <a name="setdacl"></a>  CSecurityDesc::SetDacl  
  임의 액세스 제어 목록 (DACL) 정보를 설정합니다. 보안 설명자에서 DACL 이미 있으면 대체 됩니다.  
@@ -592,7 +592,7 @@ bool ToString(
   
 ### <a name="parameters"></a>매개 변수  
  *pstr*  
- 수신 하는 null로 끝나는 문자열에 대 한 포인터를 [문자열 형식 보안 설명자](http://msdn.microsoft.com/library/windows/desktop/aa379570)합니다.  
+ 수신 하는 null로 끝나는 문자열에 대 한 포인터를 [문자열 형식 보안 설명자](/windows/desktop/SecAuthZ/security-descriptor-string-format)합니다.  
   
  *si*  
  출력 문자열에 포함 하는 보안 설명자의 구성 요소를 표시 하기 위해 SECURITY_INFORMATION 비트 플래그의 조합을 지정 합니다.  
@@ -614,12 +614,12 @@ bool ToString(
   
  DACL은 NULL SE_DACL_PRESENT 컨트롤 비트가 입력된 보안 설명자에 설정 되 고 메서드가 실패 합니다.  
   
- DACL가 NULL이 고 SE_DACL_PRESENT 컨트롤 비트가 입력된 보안 설명자에 설정 되지 않으면, 경우의 결과 보안 설명자 문자열 d: 구성 요소가 없습니다. 참조 [보안 설명자 문자열 형식을](http://msdn.microsoft.com/library/windows/desktop/aa379570) 대 한 자세한 내용은 합니다.  
+ DACL가 NULL이 고 SE_DACL_PRESENT 컨트롤 비트가 입력된 보안 설명자에 설정 되지 않으면, 경우의 결과 보안 설명자 문자열 d: 구성 요소가 없습니다. 참조 [보안 설명자 문자열 형식을](/windows/desktop/SecAuthZ/security-descriptor-string-format) 대 한 자세한 내용은 합니다.  
   
- 이 메서드를 호출 [ConvertStringSecurityDescriptorToSecurityDescriptor](http://msdn.microsoft.com/library/windows/desktop/aa376401)합니다.  
+ 이 메서드를 호출 [ConvertStringSecurityDescriptorToSecurityDescriptor](/windows/desktop/api/sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [보안 샘플](../../visual-cpp-samples.md)   
- [SECURITY_DESCRIPTOR](http://msdn.microsoft.com/library/windows/desktop/aa379561)   
+ [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)   
  [클래스 개요](../../atl/atl-class-overview.md)   
  [보안 전역 함수](../../atl/reference/security-global-functions.md)

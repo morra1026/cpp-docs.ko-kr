@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 004da50bf8d688f1d7b0432e5196094b878870cf
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 43a8851d11e6113d52b2ad128b1ff41e66c1ad12
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955009"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223237"
 ---
 # <a name="sample-container-class"></a>Sample Container 클래스
 
@@ -34,7 +34,7 @@ ms.locfileid: "38955009"
 
 - 경우 식 `~Ty` 예외를 throw 하면 container 개체의 결과 상태는 정의 되지 않습니다.
 
-- 컨테이너가 allocator 개체를 저장 하는 경우 *al*, 및 *al* 에 대 한 호출의 결과로 다른 예외를 throw * al ***.allocate**, 컨테이너의 결과 상태 개체 정의 되지 않습니다.
+- 컨테이너가 allocator 개체를 저장 하는 경우 *al*, 및 *al* 에 대 한 호출의 결과로 다른 예외를 throw `al.allocate`, 컨테이너 개체의 결과 상태는 정의 되지 않습니다.
 
 - 컨테이너가 제어되는 시퀀스의 순서를 지정할 방법을 결정하기 위해 function 개체 *comp*를 저장하는 경우 *comp*가 종류와 관계없이 예외를 throw하면 container 개체의 결과 상태는 정의되지 않습니다.
 

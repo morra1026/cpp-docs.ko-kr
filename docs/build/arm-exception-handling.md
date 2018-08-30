@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2047938e25ed235d04b7a851a21a44090194660a
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: e4ce0ef6ba923332d03972e2bd8b7ebb1f1cfb9e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39209120"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205705"
 ---
 # <a name="arm-exception-handling"></a>ARM 예외 처리
 
@@ -25,7 +25,7 @@ Windows on ARM은 하드웨어에서 생성하는 비동기식 예외 및 소프
 
 ## <a name="arm-exception-handling"></a>ARM 예외 처리
 
-Windows ARM에서 사용 하 여 *해제 코드* 중의 스택 해제를 제어 하 [구조적 예외 처리](http://msdn.microsoft.com/library/windows/desktop/ms680657) (SEH). 해제 코드는 실행 가능 이미지의 .xdata 섹션에 저장되는 바이트 시퀀스로, 함수 프롤로그 및 에필로그 코드의 작동을 요약하여 설명하므로 호출자 스택 프레임 해제를 준비하기 위해 적용된 함수 프롤로그를 실행 취소할 수 있습니다.
+Windows ARM에서 사용 하 여 *해제 코드* 중의 스택 해제를 제어 하 [구조적 예외 처리](https://msdn.microsoft.com/library/windows/desktop/ms680657) (SEH). 해제 코드는 실행 가능 이미지의 .xdata 섹션에 저장되는 바이트 시퀀스로, 함수 프롤로그 및 에필로그 코드의 작동을 요약하여 설명하므로 호출자 스택 프레임 해제를 준비하기 위해 적용된 함수 프롤로그를 실행 취소할 수 있습니다.
 
 ARM EABI(포함된 응용 프로그램 이진 인터페이스)는 해제 코드를 사용하는 예외 해제 모델을 지정하지만 Windows의 SEH 해제에서는 프로세서가 함수의 프롤로그 또는 에필로그 중간에 포함된 비동기식 사례를 처리해야 하므로 이 모델만으로는 충분한 해제를 수행할 수 없습니다. 또한 Windows에서는 해제 제어를 함수 수준 해제와 언어별 범위 해제로 구분하는데, 이는 ARM EABI에서 통합됩니다. 따라서 Windows on ARM에서는 해제 데이터 및 프로시저에 대해 추가 세부 정보를 지정합니다.
 

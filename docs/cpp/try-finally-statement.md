@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 043c11a6255e3b80fde176f1b2525e8285bbff12
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 1fbdc6c2285042dc3529d837de3e4b4ffd3c4fd6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464862"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215533"
 ---
 # <a name="try-finally-statement"></a>try-finally 문
 **Microsoft 전용**  
@@ -90,7 +90,7 @@ __finally {
 ## <a name="abnormal-termination"></a>비정상적인 종료  
  종료를 **try finally** 문을 사용 하는 [longjmp](../c-runtime-library/reference/longjmp.md) 런타임 함수에는 비정상적인 종료 것으로 간주 됩니다. 으로 이동 하는 것이 올바르지를 **__try** 문과 비슷하지만 밖 하나입니다. 모든 **__finally** 출발 지점 간에 활성화 된 문 (의 정상 종료를 **__try** 블록) 및 대상 (합니다 **__except** 는 차단 예외 처리)를 실행 해야 합니다. 이것을 로컬 해제라고 합니다.  
   
- 경우는 **시도** 블록 중간에 종료 되는 블록 밖으로 점프를 포함 하 여 어떤 이유로, 연결 된 시스템 실행 **마지막으로** 스택 해제 과정의 일부로 차단 합니다. 이러한 경우에는 [AbnormalTermination](http://msdn.microsoft.com/library/windows/desktop/ms679265) 함수에서 반환 **true** 내에서 호출 하는 경우는 **마지막** ;를 반환 합니다 **false**.  
+ 경우는 **시도** 블록 중간에 종료 되는 블록 밖으로 점프를 포함 하 여 어떤 이유로, 연결 된 시스템 실행 **마지막으로** 스택 해제 과정의 일부로 차단 합니다. 이러한 경우에는 [AbnormalTermination](/windows/desktop/Debug/abnormaltermination) 함수에서 반환 **true** 내에서 호출 하는 경우는 **마지막** ;를 반환 합니다 **false**.  
   
  종료 처리기 실행 하는 도중에 프로세스가 종료 될 경우 라고는 **try-finally** 문.  
   
@@ -100,4 +100,4 @@ __finally {
  [종료 처리기 작성](../cpp/writing-a-termination-handler.md)   
  [구조적된 예외 처리 (C/c + +)](../cpp/structured-exception-handling-c-cpp.md)   
  [키워드](../cpp/keywords-cpp.md)   
- [종료 처리기 구문](http://msdn.microsoft.com/library/windows/desktop/ms681393)
+ [종료 처리기 구문](/windows/desktop/Debug/termination-handler-syntax)

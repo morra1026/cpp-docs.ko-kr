@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 70be45d1a7221590912ea71b38d3aa4404197df1
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 4df3f6f72ec7a83186cc3d96b2dda837bdd1cfff
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599130"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207998"
 ---
 # <a name="defaultvalue"></a>defaultvalue
 
@@ -41,9 +41,9 @@ ms.locfileid: "42599130"
 
 ## <a name="remarks"></a>설명
 
-합니다 **defaultvalue** c + + 특성에 동일한 기능을 합니다 [defaultvalue](http://msdn.microsoft.com/library/windows/desktop/aa366793) MIDL 특성입니다.
+합니다 **defaultvalue** c + + 특성에 동일한 기능을 합니다 [defaultvalue](/windows/desktop/Midl/defaultvalue) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드를 사용 하 여 인터페이스 메서드를 표시 합니다 **defaultvalue** 특성:
 

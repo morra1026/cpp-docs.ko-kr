@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2ba62d3dfc1f71ab61b5041ebbd884be8b5e39f6
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 78bfc20bd88aa9691c80483c8c315cd5305d7b96
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592666"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216593"
 ---
 # <a name="import"></a>import
 
@@ -43,11 +43,11 @@ ms.locfileid: "42592666"
 
 ## <a name="remarks"></a>설명
 
-**가져오기** c + + 특성을 사용 하면는 `#import` 문 아래에 배치 하는 `import "docobj.idl"` 생성 된.idl 파일의 문. **가져오기** 특성에 동일한 기능을 합니다 [가져오기](http://msdn.microsoft.com/library/windows/desktop/aa367047) MIDL 특성입니다.
+**가져오기** c + + 특성을 사용 하면는 `#import` 문 아래에 배치 하는 `import "docobj.idl"` 생성 된.idl 파일의 문. **가져오기** 특성에 동일한 기능을 합니다 [가져오기](/windows/desktop/Midl/import) MIDL 특성입니다.
 
 **가져올** 만 특성; 프로젝트에서 생성 되는.idl 파일에 지정된 된 파일을 배치 합니다 **가져오기** 특성 수 없다는 소스 코드에서 지정된 된 파일의 생성 호출 프로젝트입니다.  프로젝트의 소스 코드에서 지정된 된 파일의 구문을 호출을 사용 하거나 [#import](../preprocessor/hash-import-directive-cpp.md) 및 `embedded_idl` 특성 이거나.h 파일을 포함할 수 있습니다 합니다 *idl_file*.h 파일이 있는 경우, 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예를 참조하십시오.
 

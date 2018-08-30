@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c610d7f72c76e8c761de0cb01c42c8d6006e4b7
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: e137f0f41c94473d47985ceb848eeef7c7c9ca08
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39407782"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208518"
 ---
 # <a name="pointers-to-members"></a>pointers_to_members
 멤버에 대한 포인터 선언은 포인터 선언의 특별한 경우입니다.  이러한 함수는 다음 시퀀스를 사용하여 선언됩니다.  
@@ -45,7 +45,7 @@ ms.locfileid: "39407782"
   - 선택적 Microsoft 전용 한정자. 자세한 내용은 [Microsoft 전용 한정자](../cpp/microsoft-specific-modifiers.md)합니다.  
 1. 가리킬 멤버가 포함된 클래스의 정규화된 이름입니다.  
   - :: 연산자  
-  - 합니다 **\*** 연산자입니다.  
+  - 합니다 <strong>\*</strong> 연산자입니다.  
   - 선택적 **상수** 및/또는 **volatile** 지정자입니다.  
   - 멤버에 대한 포인터의 이름을 지정하는 식별자  
   
@@ -101,7 +101,7 @@ strcpy_s( pwChildWindow->*pwCaption, cUntitledLen, szUntitled );
 (pwChildWindow->*pwCaption)[cUntitledLen - 1] = '2'; //same as //pwChildWindow->szWinCaption[cUntitledLen - 1] = '2';  
 ```  
   
- 차이 **.\***  하 고 **-> \*** 는 연산자 (멤버 포인터 연산자)를 **.\***  멤버를 선택 하는 연산자 개체 또는 개체 참조를 지정 하는 동안 합니다 **-> \*** 연산자는 포인터를 통해 멤버를 선택 합니다. (이러한 연산자에 대 한 자세한 내용은 참조 하세요 [멤버 포인터 연산자가 있는 식](../cpp/pointer-to-member-operators-dot-star-and-star.md).)  
+ 차이 **.** <strong>\*</strong> 하 고 **->** <strong>\*</strong> 는 연산자 (멤버 포인터 연산자)를 **.** <strong>\*</strong> 멤버를 선택 하는 연산자 개체 또는 개체 참조를 지정 하는 동안 합니다 **->** <strong>\*</strong> 연산자 포인터를 통해 멤버를 선택합니다. (이러한 연산자에 대 한 자세한 내용은 참조 하세요 [멤버 포인터 연산자가 있는 식](../cpp/pointer-to-member-operators-dot-star-and-star.md).)  
   
  멤버 포인터 연산자의 결과 멤버의 형식,이 경우 `char *`합니다.  
   
@@ -123,7 +123,7 @@ strcat_s( szCaptionBase, sizeOfBuffer, " [View 1]" );
 ```  
   
 ## <a name="restrictions-on-pointers-to-members"></a>멤버에 대한 포인터 제한  
- 정적 멤버의 주소는 멤버에 대한 포인터가 아닙니다. 정적 멤버의 주소는 정적 멤버의 인스턴스 하나에 대한 일반적인 포인터입니다. 일반적인 주소 지정된 된 클래스의 모든 개체에 대 한 정적 멤버의 인스턴스가 하나만 있으므로 **(&)** 및 역참조 **(\*)** 연산자를 사용할 수 있습니다.  
+ 정적 멤버의 주소는 멤버에 대한 포인터가 아닙니다. 정적 멤버의 주소는 정적 멤버의 인스턴스 하나에 대한 일반적인 포인터입니다. 일반적인 주소 지정된 된 클래스의 모든 개체에 대 한 정적 멤버의 인스턴스가 하나만 존재 하기 때문에 (**&**) 및 역참조 (<strong>\*</strong>) 연산자를 사용할 수 있습니다.  
   
 ## <a name="pointers-to-members-and-virtual-functions"></a>멤버 및 가상 함수에 대한 포인터  
  멤버 포인터 함수를 통해 가상 함수를 호출하는 것은 함수가 직접 호출된 것과 같으며, v-table에서 올바른 함수가 조회된 다음 호출됩니다.  

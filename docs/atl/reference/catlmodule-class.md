@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5291ae4783e252341371844ca08e390958c3ff89
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 4412e30316bd2d5f43eac4dddb062adb11dc6f6e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882574"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210003"
 ---
 # <a name="catlmodule-class"></a>CAtlModule 클래스
 이 클래스는 여러 ATL 모듈 클래스에서 사용 되는 메서드를 제공 합니다.  
@@ -167,7 +167,7 @@ virtual HRESULT GetGITPtr(IGlobalInterfaceTable** ppGIT) throw();
   
  디버그 빌드에서 어설션 오류가 발생 하는 경우 *ppGIT* NULL로 같은지 아니면 전역 인터페이스 테이블 포인터를 가져올 수 없습니다.  
   
- 참조 [IGlobalInterfaceTable](http://msdn.microsoft.com/library/windows/desktop/ms678517) 전역 인터페이스 테이블에 대 한 정보에 대 한 합니다.  
+ 참조 [IGlobalInterfaceTable](/windows/desktop/api/objidl/nn-objidl-iglobalinterfacetable) 전역 인터페이스 테이블에 대 한 정보에 대 한 합니다.  
   
 ##  <a name="getlockcount"></a>  CAtlModule::GetLockCount  
  잠금 수를 반환합니다.  

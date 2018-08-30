@@ -23,53 +23,53 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 469e0429408e1b8afed65889539202650cd28413
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 2a48f34edec8a9f24f22d35be482d3b297215dbe
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704791"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210627"
 ---
 # <a name="mixed-native-and-managed-assemblies"></a>혼합형된 (네이티브 및 관리) 어셈블리
 
-혼합형된 어셈블리는 관리 되지 않는 컴퓨터 명령과 MSIL 명령이 포함 될 수 있습니다. 따라서 호출 하 고 완전히 관리 되지 않는 구성 요소와의 호환성을 유지 하는 동안에.NET 구성 요소에서 호출할 수 있습니다. 혼합형된 어셈블리를 사용 하 여 작성 하는 스레드와 관리 되지 않는 기능이 함께 사용 하 여 응용 프로그램입니다. 이렇게 하면 혼합형된 어셈블리를 기존 Visual c + + 응용 프로그램을.NET 플랫폼으로 마이그레이션하는 데 적합 합니다.
+혼합형된 어셈블리는 관리 되지 않는 컴퓨터 지침과 MSIL 명령이 포함 될 수 있습니다. 이 호출 하 고 완전히 관리 되지 않는 구성 요소를 사용 하 여 호환성을 유지 하면서.NET 구성 요소에서 호출할 수 있습니다. 혼합형된 어셈블리를 사용 하 여 개발자 관리 및 관리 되지 않는 기능이 함께 사용 하 여 응용 프로그램을 작성할 수 있습니다. 이렇게 하면 혼합된 어셈블리를 기존 Visual c + + 응용 프로그램을.NET 플랫폼으로 마이그레이션하는 데 적합 합니다.
 
-예를 들어 관리 되지 않는 함수 공백으로 구성 된 기존 응용 프로그램 기울일 수 있도록.NET 플랫폼 사용 하 여 하나의 모듈을 다시 컴파일하여는 **/clr** 컴파일러 스위치입니다. 이 모듈.NET 기능을 사용할 수 있지만 응용 프로그램의 나머지 부분에서는 호환성이 유지 됩니다. 이러한 방식으로 응용 프로그램 점진적이 고 하나씩 방식으로.NET 플랫폼으로 변환할 수 있습니다. 동일한 파일 내에서 각 함수에서 함수 별로 스레드와 관리 되지 않는 컴파일을 선택할 수도 (참조 [관리, 관리 되지 않는](../preprocessor/managed-unmanaged.md)).
+예를 들어 관리 되지 않는 함수로 구성 된 기존 응용 프로그램 제공 될 수 있습니다.NET 플랫폼을 사용 하 여 하나의 모듈을 다시 컴파일하여 합니다 **/clr** 컴파일러 스위치입니다. 이 모듈 다음.NET 기능을 사용할 수 있지만 나머지 응용 프로그램의 호환성이 유지 됩니다. 이러한 방식으로 점진적이 고 차례 대로 방식으로.NET 플랫폼에 응용 프로그램을 변환할 수 있습니다. 동일한 파일 내에서 함수에서 함수 별로 관리 및 비관리 컴파일을 선택할 수도 (참조 [관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md)).
 
-Visual c + +만 사용 하 여 혼합 된 관리 되는 어셈블리의 생성을 지원는 **/clr** 컴파일러 옵션입니다. **/clr: pure** 및 **/clr: safe** 컴파일러 옵션은 Visual Studio 2015에서는 사용 되지 않으며 Visual Studio 2017에서 지원 되지 않습니다. 순수 이미지나 확인할 수 있는 관리 되는 어셈블리를 필요로 하는 경우 C#을 사용 하 여 만들 수는 것이 좋습니다.
+Visual c + +만 사용 하 여 혼합 된 관리 되는 어셈블리의 생성을 지원 합니다 **/clr** 컴파일러 옵션입니다. **/clr: pure** 및 **/clr: safe** Visual Studio 2015에서 사용 되지 않고 Visual Studio 2017에서 지원 되지 않는 컴파일러 옵션입니다. 순수 이미지나 검증할 수 있는 관리 되는 어셈블리를 필요로 하는 경우에 C#을 사용 하 여 만든 것이 좋습니다.
 
-이전 버전 Visual c + + 컴파일러 도구 집합의 세 가지 형식의 관리 되는 어셈블리의 생성을 지원: 혼합형, 순수형 및 안정형 합니다. 후자 두에 대해서는 설명 [순수형 및 안정형 코드 (C + + /cli CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md)합니다.
+이전 버전 Visual c + + 컴파일러 도구 집합의 세 가지 유형의 관리 되는 어셈블리의 생성을 지원 합니다: 혼합형, 순수형 및 안정형 합니다. 후자의 두에 설명 되어 [순수형 및 안정형 코드 (C + + /cli CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md)합니다.
 
 ## <a name="in-this-section"></a>단원 내용
 
 [방법: /clr으로 마이그레이션](../dotnet/how-to-migrate-to-clr.md)<br/>
-도입 하거나 응용 프로그램에서.NET 기능 업그레이드에 대 한 권장 되는 단계를 설명 합니다.
+도입 하거나 응용 프로그램에서.NET 기능을 업그레이드 하는 권장된 단계를 설명 합니다.
 
 [방법: MFC 및 ATL 코드 사용 하 여 /clr 컴파일](../dotnet/how-to-compile-mfc-and-atl-code-by-using-clr.md)<br/>
-기존 MFC 및 ATL 프로그램을 공용 언어 런타임을 대상으로 컴파일하는 방법을 설명 합니다.
+공용 언어 런타임을 대상으로 기존 MFC 및 ATL 프로그램을 컴파일하는 방법에 설명 합니다.
 
 [혼합형 어셈블리 초기화](../dotnet/initialization-of-mixed-assemblies.md)<br/>
 "로더 잠금" 문제 및 해결 방법에 설명합니다.
 
 [혼합형 어셈블리에 대한 라이브러리 지원](../dotnet/library-support-for-mixed-assemblies.md)<br/>
-네이티브 라이브러리를 사용 하는 방법을 설명 **/clr** 컴파일 수입니다.
+네이티브 라이브러리를 사용 하는 방법에 설명 **/clr** 컴파일.
 
 [성능 고려 사항](../dotnet/performance-considerations-for-interop-cpp.md)<br/>
-혼합형된 어셈블리와 데이터 마샬링을의 성능에 미치는 영향에 설명합니다.
+혼합형된 어셈블리와 데이터 마샬링을의 성능에 미치는 영향을 설명합니다.
 
 [응용 프로그램 도메인 및 Visual C++](../dotnet/application-domains-and-visual-cpp.md)<br/>
 응용 프로그램 도메인에 대 한 Visual c + + 지원에 설명 합니다.
 
 [이중 썽킹](../dotnet/double-thunking-cpp.md)<br/>
-관리 되는 함수에 대 한 네이티브 진입점의 성능에 미치는 영향에 설명 합니다.
+관리 되는 함수에 대 한 기본 진입점의 성능에 미치는 영향에 설명 합니다.
 
-[/Clr을 사용한 CLR 종료를 사용해 COM 개체 작성 시 예외 방지](../dotnet/avoiding-exceptions-on-clr-shutdown-when-consuming-com-objects-built-with-clr.md)<br/>
-로 컴파일된 COM 개체를 사용 하는 관리 되는 응용 프로그램의 올바르게 종료 하는 방법에 설명 **/clr**합니다.
+[/Clr을 사용한 CLR 종료 하면 사용 빌드한 COM 개체에서 예외를 방지](../dotnet/avoiding-exceptions-on-clr-shutdown-when-consuming-com-objects-built-with-clr.md)<br/>
+사용 하 여 컴파일된 COM 개체를 사용 하는 관리 되는 응용 프로그램을 올바르게 종료 하는 방법에 설명 **/clr**합니다.
 
 [방법: CRT 라이브러리 DLL에 대한 종속성을 제거하여 부분적으로 신뢰할 수 있는 응용 프로그램 만들기](../dotnet/create-a-partially-trusted-application.md)<br/>
 Visual c + +를 사용 하 여 msvcm90.dll에 대 한 종속성을 제거 하 여 부분적으로 신뢰할 수 있는 공용 언어 런타임 응용 프로그램을 만드는 방법을 설명 합니다.
 
-혼합형된 어셈블리에 대 한 지침을 코딩 하는 방법에 대 한 자세한 내용은 MSDN 문서를 참조 하십시오. [는 개요의 관리 되 는/관리 되지 않는 코드 상호 운용성](https://msdn.microsoft.com/en-us/library/ms973872.aspx)합니다.
+혼합형된 어셈블리에 대 한 지침을 코딩 하는 방법에 대 한 자세한 내용은 MSDN 문서를 참조 하세요 [An 개요의 관리/비관리 코드 상호 운용성](https://msdn.microsoft.com/library/ms973872.aspx)합니다.
 
 ## <a name="see-also"></a>참고자료
 

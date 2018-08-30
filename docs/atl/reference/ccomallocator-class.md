@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9dbaa4631e50b14131418b902dd008e74060dbf6
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 94532b40bb44094290eab29a2b8a1f6095a225c5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881933"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221103"
 ---
 # <a name="ccomallocator-class"></a>CComAllocator 클래스
 이 클래스는 COM 메모리 루틴을 사용 하 여 메모리를 관리 하기 위한 메서드를 제공 합니다.  
@@ -67,7 +67,7 @@ static void* Allocate(size_t nBytes) throw();
  할당된 공간에 대한 void 포인터 또는 사용 가능한 메모리가 부족한 경우 NULL을 반환합니다.  
   
 ### <a name="remarks"></a>설명  
- 메모리를 할당합니다. 참조 [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727) 대 한 자세한 내용은 합니다.  
+ 메모리를 할당합니다. 참조 [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) 대 한 자세한 내용은 합니다.  
   
 ##  <a name="free"></a>  CComAllocator::Free  
  할당 된 메모리를 확보 하려면이 정적 함수를 호출 합니다.  
@@ -81,7 +81,7 @@ static void Free(void* p) throw();
  할당된 메모리에 대한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
- 할당된 된 메모리를 해제합니다. 참조 [CoTaskMemFree](http://msdn.microsoft.com/library/windows/desktop/ms680722) 대 한 자세한 내용은 합니다.  
+ 할당된 된 메모리를 해제합니다. 참조 [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) 대 한 자세한 내용은 합니다.  
   
 ##  <a name="reallocate"></a>  CComAllocator::Reallocate  
  메모리를 다시 할당하려면 이 정적 함수를 호출합니다.  
@@ -101,7 +101,7 @@ static void* Reallocate(void* p, size_t nBytes) throw();
  메모리가 부족 한 경우 NULL이 할당 된 공간에 대 한 void 포인터를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 할당된 메모리의 크기를 조정합니다. 참조 [CoTaskMemRealloc](http://msdn.microsoft.com/library/windows/desktop/ms687280) 대 한 자세한 내용은 합니다.  
+ 할당된 메모리의 크기를 조정합니다. 참조 [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc) 대 한 자세한 내용은 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [CComHeapPtr 클래스](../../atl/reference/ccomheapptr-class.md)   

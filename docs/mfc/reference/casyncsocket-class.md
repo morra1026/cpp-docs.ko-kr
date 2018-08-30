@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ffd2a8969b4cd0edb5845310300e3b42148f816
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: c74bc6a134ea31f3184912192ccbcb3908e64cd3
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337618"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221527"
 ---
 # <a name="casyncsocket-class"></a>CAsyncSocket 클래스
 Windows 소켓을 나타냅니다-네트워크 통신의 끝점입니다.  
@@ -173,7 +173,7 @@ class CAsyncSocket : public CObject
 > [!NOTE]
 >  정적으로 연결 된 MFC 응용 프로그램에서 보조 스레드에서 MFC 소켓을 사용 하는 경우 호출 해야 `AfxSocketInit` 소켓을 사용 하 여 소켓 라이브러리를 초기화 하는 각 스레드에서 합니다. 기본적으로 `AfxSocketInit` 기본 스레드에서만에서 호출 됩니다.  
   
- 자세한 내용은 [Windows 소켓: 클래스를 사용 하 여 CAsyncSocket](../../mfc/windows-sockets-using-class-casyncsocket.md) 및 관련 문서. 뿐만 [Windows 소켓 2 API](http://msdn.microsoft.com/library/windows/desktop/ms740673)합니다.  
+ 자세한 내용은 [Windows 소켓: 클래스를 사용 하 여 CAsyncSocket](../../mfc/windows-sockets-using-class-casyncsocket.md) 및 관련 문서. 뿐만 [Windows 소켓 2 API](/windows/desktop/WinSock/windows-sockets-start-page-2)합니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -515,7 +515,7 @@ BOOL Create(
 > [!IMPORTANT]
 > `Create` 됩니다 **되지** 스레드로부터 안전 합니다.  호출 하는 경우 해당 다중 스레드 환경에서 동시에 서로 다른 스레드에 의해 호출 될 수 없습니다, 뮤텍스 또는 다른 동기화 잠금을 사용 하 여 각 호출을 보호 해야 합니다.  
   
- 스트림 및 데이터 그램 소켓에 대 한 자세한 내용은 문서를 참조 하세요 [Windows 소켓: 백그라운드](../../mfc/windows-sockets-background.md) 하 고 [Windows 소켓: 포트 및 소켓 주소](../../mfc/windows-sockets-ports-and-socket-addresses.md) 및 [Windows 소켓 2 API](http://msdn.microsoft.com/library/windows/desktop/ms740673).  
+ 스트림 및 데이터 그램 소켓에 대 한 자세한 내용은 문서를 참조 하세요 [Windows 소켓: 백그라운드](../../mfc/windows-sockets-background.md) 하 고 [Windows 소켓: 포트 및 소켓 주소](../../mfc/windows-sockets-ports-and-socket-addresses.md) 및 [Windows 소켓 2 API](/windows/desktop/WinSock/windows-sockets-start-page-2).  
   
 ##  <a name="detach"></a>  CAsyncSocket::Detach  
  소켓 핸들을 분리 하려면이 멤버 함수를 호출 합니다 *m_hSocket* 에서 데이터 멤버는 `CAsyncSocket` 개체 및 설정 *m_hSocket* NULL로 합니다.  
@@ -554,7 +554,7 @@ static int PASCAL GetLastError();
 ### <a name="remarks"></a>설명  
  특정 멤버 함수는 오류가 발생을 나타내는 경우 `GetLastError` 적절 한 오류 코드 검색을 호출 해야 합니다. 해당 오류 코드의 목록에 대 한 개별 멤버 함수 설명을 참조 하십시오.  
   
- 오류 코드에 대 한 자세한 내용은 참조 하세요. [Windows 소켓 2 API](http://msdn.microsoft.com/library/windows/desktop/ms740673)합니다.  
+ 오류 코드에 대 한 자세한 내용은 참조 하세요. [Windows 소켓 2 API](/windows/desktop/WinSock/windows-sockets-start-page-2)합니다.  
   
 ##  <a name="getpeername"></a>  CAsyncSocket::GetPeerName  
  이 소켓 연결 되어 있는 피어 소켓의 주소를 가져오려면이 함수를 호출 합니다.  
@@ -968,7 +968,7 @@ virtual void OnConnect(int nErrorCode);
   
  자세한 내용은 [Windows 소켓: 소켓 알림](../../mfc/windows-sockets-socket-notifications.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCAsyncSocket#1](../../mfc/reference/codesnippet/cpp/casyncsocket-class_1.cpp)]  
   
 ##  <a name="onoutofbanddata"></a>  CAsyncSocket::OnOutOfBandData  
@@ -1009,7 +1009,7 @@ virtual void OnReceive(int nErrorCode);
 ### <a name="remarks"></a>설명  
  자세한 내용은 [Windows 소켓: 소켓 알림](../../mfc/windows-sockets-socket-notifications.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCAsyncSocket#2](../../mfc/reference/codesnippet/cpp/casyncsocket-class_2.cpp)]  
   
 ##  <a name="onsend"></a>  CAsyncSocket::OnSend  
@@ -1030,7 +1030,7 @@ virtual void OnSend(int nErrorCode);
 ### <a name="remarks"></a>설명  
  자세한 내용은 [Windows 소켓: 소켓 알림](../../mfc/windows-sockets-socket-notifications.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCAsyncSocket#3](../../mfc/reference/codesnippet/cpp/casyncsocket-class_3.cpp)]  
   
 ##  <a name="operator_eq"></a>  CAsyncSocket::operator =  
@@ -1122,7 +1122,7 @@ virtual int Receive(
   
  `Receive` 각 시간에 대 한 한 번만 호출 해야 [CAsyncSocket::OnReceive](#onreceive) 라고 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CAsyncSocket::OnReceive](#onreceive)합니다.  
   
 ##  <a name="receivefrom"></a>  CAsyncSocket::ReceiveFrom  
@@ -1353,7 +1353,7 @@ virtual int Send(
   
  `CAsyncSocket` SOCK_STREAM 형식의 개체에 쓴 바이트 수가-로컬 및 외부 호스트의 버퍼 가용성에 따라 요청된 된 길이 1 사이의 수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CAsyncSocket::OnSend](#onsend)합니다.  
   
 ##  <a name="sendto"></a>  CAsyncSocket::SendTo  
@@ -1672,7 +1672,7 @@ BOOL ShutDown(int nHow = sends);
   
  사실은 `ShutDown` 않습니다 하지 닫고 소켓 및 소켓에 연결 된 리소스를 해제 되지 것입니다까지 `Close` 라고 합니다. 응용 프로그램 종료 한 후 소켓을 재사용 하에 의존 하지 않아야 합니다. 특히 Windows 소켓 구현이 필요가 없습니다 사용 하 여 `Connect` 이러한 소켓입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CAsyncSocket::OnReceive](#onreceive)합니다.  
   
 ##  <a name="socket"></a>  CASyncSocket::Socket  

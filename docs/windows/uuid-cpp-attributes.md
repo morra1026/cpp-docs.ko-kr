@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8d18b323b255c8549ae275d3e6b88471f134c8b4
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 36b438662fb42cdeeb894906753a38168208f5ae
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606782"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218821"
 ---
 # <a name="uuid-c-attributes"></a>uuid(C++ 특성)
 
@@ -51,7 +51,7 @@ ms.locfileid: "42606782"
 
 또한 ATL을 사용 하지 않는 프로젝트를 사용 하는 경우를 지정 하는 **uuid** 특성이 지정 하는 것과 [uuid](../cpp/uuid-cpp.md) **__declspec** 한정자입니다. 검색 하는 **uuid** 클래스의 사용할 수 있습니다 [__uuidof](../cpp/uuidof-operator.md)
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 참조를 [bindable](../windows/bindable.md) 의 샘플 사용에 대 한 예제 **uuid**합니다.
 
@@ -74,4 +74,4 @@ ms.locfileid: "42606782"
 [인터페이스 특성](../windows/interface-attributes.md)  
 [클래스 특성](../windows/class-attributes.md)  
 [Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  
-[uuid](http://msdn.microsoft.com/library/windows/desktop/aa367302)  
+[uuid](/windows/desktop/Midl/uuid)  

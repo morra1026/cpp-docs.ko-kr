@@ -230,12 +230,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ee202defce08d30f36fb0002bd1477957dd76bc
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: d28eaff98d2af12d24fab91797182c99d33d317d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337569"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207964"
 ---
 # <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase 클래스
 HTML 편집 구성 요소를 나타냅니다.  
@@ -575,7 +575,7 @@ HRESULT ExecCommand(
  실행할 명령 ID입니다. 목록에 대해서 [MSHTML 명령 식별자](https://msdn.microsoft.com/library/aa741315.aspx)합니다.  
   
  *cmdExecOpt*  
- 가져온 값을 [OLECMDEXECOPT](http://msdn.microsoft.com/library/windows/desktop/ms683930) 개체 명령을 실행 해야 하는 방법을 설명 하는 열거형입니다.  
+ 가져온 값을 [OLECMDEXECOPT](/windows/desktop/api/docobj/ne-docobj-olecmdexecopt) 개체 명령을 실행 해야 하는 방법을 설명 하는 열거형입니다.  
   
  *pInVar*  
  입력된 인수입니다.  
@@ -590,7 +590,7 @@ HRESULT ExecCommand(
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는의 기능을 제공 [IOleCommandTarget::Exec](http://msdn.microsoft.com/library/windows/desktop/ms690300)합니다.  
+ 이 메서드는의 기능을 제공 [IOleCommandTarget::Exec](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-exec)합니다.  
   
 ##  <a name="font"></a>  CHtmlEditCtrlBase::Font  
  사용자가 텍스트 색, 글꼴 및 현재 선택 영역의 글꼴 크기를 변경할 수 있도록 글꼴 대화 상자를 엽니다.  
@@ -838,7 +838,7 @@ HRESULT GetIsDirty() const;
 ```  
   
 ### <a name="remarks"></a>설명  
- 문서 변경 되었는지 여부를 나타냅니다. `GetIsDirty` HRESULT를 반환 [IPersistStorage::IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms683910)합니다.  
+ 문서 변경 되었는지 여부를 나타냅니다. `GetIsDirty` HRESULT를 반환 [IPersistStorage::IsDirty](/windows/desktop/api/objidl/nf-objidl-ipersiststorage-isdirty)합니다.  
   
 ##  <a name="getshowalignedsitetags"></a>  CHtmlEditCtrlBase::GetShowAlignedSiteTags  
  있는 모든 요소에 대 한 문자 모양을 표시 되는지 여부를 반환 합니다.는 `styleFloat` 속성입니다.  
@@ -1469,7 +1469,7 @@ long QueryStatus(long cmdID) const;
  명령 ID입니다. 명령 식별자 CGID_MSHTML 명령 그룹에서 수행 됩니다. 이러한 명령은 Mshtmcid.h에서 정의 됩니다. 온라인에서 찾을 수도 있습니다 [MSHTML 명령 식별자](http://go.microsoft.com/fwlink/p/?linkid=149220)합니다.  
   
 ### <a name="return-value"></a>반환 값  
- 반환을 [OLECMDF](http://msdn.microsoft.com/library/windows/desktop/ms695237) 에 대 한 상태를 나타내는 *cmdID*, 또는 실패 한 경우 0입니다.  
+ 반환을 [OLECMDF](/windows/desktop/api/docobj/ne-docobj-olecmdf) 에 대 한 상태를 나타내는 *cmdID*, 또는 실패 한 경우 0입니다.  
   
 ##  <a name="radiobutton"></a>  CHtmlEditCtrlBase::RadioButton  
  현재 선택 영역에 있는 라디오 컨트롤이 덮어씁니다.  

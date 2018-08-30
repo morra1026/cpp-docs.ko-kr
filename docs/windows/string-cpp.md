@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: eb3a57cec78c0ea02e16edd890d2a66362bfc011
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 86a6437e7a30fb92d2af66c3d657150549273cd3
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42594871"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208451"
 ---
 # <a name="string-c"></a>string(C++)
 
@@ -36,9 +36,9 @@ ms.locfileid: "42594871"
 
 ## <a name="remarks"></a>설명
 
-합니다 **문자열** c + + 특성에 동일한 기능을 합니다 [문자열](http://msdn.microsoft.com/library/windows/desktop/aa367270) MIDL 특성입니다.
+합니다 **문자열** c + + 특성에 동일한 기능을 합니다 [문자열](/windows/desktop/Midl/string) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드를 사용 하는 방법을 보여 줍니다 **문자열** typedef 및 인터페이스에서:
 

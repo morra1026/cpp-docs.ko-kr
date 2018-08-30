@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb66d7435331124b4455c476c10986931b4c6e1d
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 95eea7434fdaa12a6178ebd9648e8088b24b4dc8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850058"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205950"
 ---
 # <a name="coledocument-class"></a>COleDocument 클래스
 비주얼 편집을 지원하는 OLE 문서에 대한 기본 클래스입니다.  
@@ -176,11 +176,11 @@ BOOL ApplyPrintDevice(const PRINTDLG* ppd);
 ### <a name="remarks"></a>설명  
  이 함수는 모든 항목에 대 한 인쇄 대상 장치를 업데이트 하지만 이러한 항목에 대 한 프레젠테이션 캐시를 새로 고치지 않습니다. 항목에 대 한 프레젠테이션 캐시를 업데이트 하려면 호출 [COleClientItem::UpdateLink](../../mfc/reference/coleclientitem-class.md#updatelink)합니다.  
   
- 이 함수에 인수 OLE 대상 장치를 식별 하는 데 사용 하는 정보를 포함 합니다. 합니다 [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) 구조 Windows 공용 인쇄 대화 상자를 초기화 하는 데 사용 하는 정보가 들어 있습니다. 사용자 대화 상자를 닫은 후 Windows는이 구조에서 사용자의 선택 항목에 대 한 정보를 반환 합니다. 합니다 `m_pd` 의 멤버를 [CPrintDialog](../../mfc/reference/cprintdialog-class.md) 개체가 `PRINTDLG` 구조입니다.  
+ 이 함수에 인수 OLE 대상 장치를 식별 하는 데 사용 하는 정보를 포함 합니다. 합니다 [PRINTDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpda) 구조 Windows 공용 인쇄 대화 상자를 초기화 하는 데 사용 하는 정보가 들어 있습니다. 사용자 대화 상자를 닫은 후 Windows는이 구조에서 사용자의 선택 항목에 대 한 정보를 반환 합니다. 합니다 `m_pd` 의 멤버를 [CPrintDialog](../../mfc/reference/cprintdialog-class.md) 개체가 `PRINTDLG` 구조입니다.  
   
- 자세한 내용은 참조는 [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [PRINTDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpda) Windows SDK에는 구조입니다.  
   
- 자세한 내용은 참조는 [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [DVTARGETDEVICE](/windows/desktop/api/objidl/ns-objidl-tagdvtargetdevice) Windows SDK에는 구조입니다.  
   
 ##  <a name="coledocument"></a>  COleDocument::COleDocument  
  `COleDocument` 개체를 생성합니다.  
@@ -238,7 +238,7 @@ COleClientItem* GetNextClientItem(POSITION& pos) const;
 ### <a name="remarks"></a>설명  
  값 각 호출 후 *pos* 클라이언트 항목이 아닐 수도 있고 문서에서 다음 항목에 대해 설정 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCOleContainer#1](../../mfc/codesnippet/cpp/coledocument-class_1.cpp)]  
   
 ##  <a name="getnextitem"></a>  COleDocument::GetNextItem  
@@ -258,7 +258,7 @@ virtual CDocItem* GetNextItem(POSITION& pos) const;
 ### <a name="remarks"></a>설명  
  값 각 호출 후 *pos* 문서에서 다음 항목의 위치 값으로 설정 됩니다. 검색된 된 요소는 문서를 새 값의 마지막 요소 이면 *pos* NULL입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCOleContainer#2](../../mfc/codesnippet/cpp/coledocument-class_2.cpp)]  
   
 ##  <a name="getnextserveritem"></a>  COleDocument::GetNextServerItem  
@@ -278,7 +278,7 @@ COleServerItem* GetNextServerItem(POSITION& pos) const;
 ### <a name="remarks"></a>설명  
  값 각 호출 후 *pos* 서버 항목이 아닐 수도 있고 문서에서 다음 항목에 대해 설정 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCOleServer#2](../../mfc/codesnippet/cpp/coledocument-class_3.cpp)]  
   
 ##  <a name="getprimaryselecteditem"></a>  COleDocument::GetPrimarySelectedItem  

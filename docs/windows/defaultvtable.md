@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5bbbc225e4fee1aba380694fc3b39a7f59e1a294
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 4cec0e02a6a61638f8aed1b4015fea065cbfd343
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611488"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207690"
 ---
 # <a name="defaultvtable"></a>defaultvtable
 
@@ -43,9 +43,9 @@ COM 개체에 대 한 기본 vtable 인터페이스와 인터페이스를 정의
 
 ## <a name="remarks"></a>설명
 
-합니다 **defaultvtable** c + + 특성에 동일한 기능을 합니다 [defaultvtable](http://msdn.microsoft.com/library/windows/desktop/aa366795) MIDL 특성입니다.
+합니다 **defaultvtable** c + + 특성에 동일한 기능을 합니다 [defaultvtable](/windows/desktop/Midl/defaultvtable) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드를 사용 하는 클래스에 특성을 보여 줍니다 **defaultvtable** 기본 인터페이스를 지정 합니다.
 

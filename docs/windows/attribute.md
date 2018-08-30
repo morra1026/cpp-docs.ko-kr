@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 69ec1c9e1b3e30e68bf7199f7a70cb7d329ee040
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 62eabc9eb9b2043fe3d66389d56b1995afcd57e7
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603643"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212249"
 ---
 # <a name="attribute"></a>특성
 
@@ -161,7 +161,7 @@ ref class MyAttr : System::Attribute   // OK, but redundant.
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // cpp_attr_ref_attribute_4.cpp
@@ -176,7 +176,7 @@ ref struct ABC {
 ref class MyClass {};
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 `Inherited` 명명 된 인수는 기본 클래스에 적용 된 사용자 지정 특성을 파생된 클래스의 리플렉션에 표시 됩니다 있는지 여부를 지정 합니다.
 
@@ -221,4 +221,4 @@ int main() {
 ## <a name="see-also"></a>참고 항목
 
 [특성 사전순 참조](../windows/attributes-alphabetical-reference.md)  
-[사용자 지정 특성](http://msdn.microsoft.com/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+[사용자 지정 특성](https://msdn.microsoft.com/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

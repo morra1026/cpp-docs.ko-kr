@@ -16,14 +16,14 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 21f6141bd921ce82feb9218baede59edfc58243f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 156315e0e1892d9ef92020e56992d6dec51356aa
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33244308"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220156"
 ---
 # <a name="compiler-error-c3157"></a>컴파일러 오류 C3157
 ParamArray 특성은 마지막 매개 변수에 적용할 수 있습니다.  
   
- [ParamArray](https://msdn.microsoft.com/en-us/library/system.paramarrayattribute.aspx) 특성이 잘못 된 매개 변수에 적용 되었습니다.
+ 합니다 [ParamArray](https://msdn.microsoft.com/library/system.paramarrayattribute.aspx) 특성이 잘못 된 매개 변수에 적용 되었습니다.

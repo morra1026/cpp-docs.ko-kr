@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f6fb0cc519b7c03b84122b24e23e4ea9b49bc71
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 09cc987b583bdddd78604f75bd07bc9e2743a1dc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880705"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206643"
 ---
 # <a name="cdialogimpl-class"></a>CDialogImpl 클래스
 이 클래스는 모달 또는 모덜리스 대화 상자 만들기에 대 한 메서드를 제공 합니다.  
@@ -102,7 +102,7 @@ template <class T,
 |컨트롤 만들기|[ATL 자습서](../../atl/active-template-library-atl-tutorial.md)|  
 |ATL 대화 상자를 사용 하 여|[ATL 창 클래스](../../atl/atl-window-classes.md)|  
 |ATL 프로젝트 마법사|[ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)|  
-|대화 상자|[대화 상자](http://msdn.microsoft.com/library/windows/desktop/ms632588) 및 Windows SDK의 후속 항목|  
+|대화 상자|[대화 상자](https://msdn.microsoft.com/library/windows/desktop/ms632588) 및 Windows SDK의 후속 항목|  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** atlwin.h  
@@ -126,7 +126,7 @@ HWND Create(
  [in] 소유자 창에 대 한 핸들입니다.  
   
  **RECT &** *rect*  
- [in] A [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 대화 상자의 크기와 위치를 지정 합니다.  
+ [in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 대화 상자의 크기와 위치를 지정 합니다.  
   
  *dwInitParam*  
  [in] 대화 상자에 전달할 값을 지정 합니다 *lParam* WM_INITDIALOG 메시지의 매개 변수입니다.  
@@ -199,7 +199,7 @@ INT_PTR DoModal(
   
 ### <a name="parameters"></a>매개 변수  
  *hWndParent*  
- [in] 소유자 창에 대 한 핸들입니다. 기본값은의 반환 값을 [GetActiveWindow](http://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 함수입니다.  
+ [in] 소유자 창에 대 한 핸들입니다. 기본값은의 반환 값을 [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 함수입니다.  
   
  *dwInitParam*  
  [in] 대화 상자에 전달할 값을 지정 합니다 *lParam* WM_INITDIALOG 메시지의 매개 변수입니다.  

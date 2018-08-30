@@ -38,12 +38,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2b0bcdc5ee6c4c2b71837f1cdd958f50d8d0b4a
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 5aa7efb7881b00933afab92a7157c09e0f769605
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42572893"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204425"
 ---
 # <a name="crtdbgreport-crtdbgreportw"></a>_CrtDbgReport, _CrtDbgReportW
 
@@ -108,8 +108,8 @@ int _CrtDbgReportW(
 
 |보고서 모드|보고서 파일|**_CrtDbgReport**하십시오 **_CrtDbgReportW** 동작|
 |-----------------|-----------------|------------------------------------------------|
-|**_CRTDBG_MODE_DEBUG**|적용할 수 없음|Windows [OutputDebugString](http://msdn.microsoft.com/library/windows/desktop/aa363362.aspx) API를 사용하여 메시지를 작성합니다.|
-|**_CRTDBG_MODE_WNDW**|적용할 수 없음|Windows [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) API를 호출하여 **중단**, **다시 시도** 및 **무시** 단추와 함께 메시지를 표시하는 메시지 상자를 만듭니다. 사용자가 **중단**를 **_CrtDbgReport** 하거나 **_CrtDbgReport** 즉시 중단 합니다. 사용자가 **다시 시도**를 클릭하면 1이 반환됩니다. 사용자가 **무시**, 실행이 계속 됩니다 및 **_CrtDbgReport** 하 고 **_CrtDbgReportW** 0을 반환 합니다. 오류 조건이 있을 때 **무시**를 클릭하면 종종 "정의되지 않은 동작"이 발생할 수 있습니다.|
+|**_CRTDBG_MODE_DEBUG**|적용할 수 없음|Windows [OutputDebugString](https://msdn.microsoft.com/library/windows/desktop/aa363362.aspx) API를 사용하여 메시지를 작성합니다.|
+|**_CRTDBG_MODE_WNDW**|적용할 수 없음|Windows [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) API를 호출하여 **중단**, **다시 시도** 및 **무시** 단추와 함께 메시지를 표시하는 메시지 상자를 만듭니다. 사용자가 **중단**를 **_CrtDbgReport** 하거나 **_CrtDbgReport** 즉시 중단 합니다. 사용자가 **다시 시도**를 클릭하면 1이 반환됩니다. 사용자가 **무시**, 실행이 계속 됩니다 및 **_CrtDbgReport** 하 고 **_CrtDbgReportW** 0을 반환 합니다. 오류 조건이 있을 때 **무시**를 클릭하면 종종 "정의되지 않은 동작"이 발생할 수 있습니다.|
 |**_CRTDBG_MODE_FILE**|**__HFILE**|사용자 제공 메시지를 작성 **처리할**에 Windows를 사용 하 여 [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-writefile) API 및 파일 핸들의 유효성을 검사 하지 않으면 응용 프로그램은 보고서 파일 열기 및 유효한 파일을 전달 하는 일을 담당 핸들입니다.|
 |**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDERR**|메시지를 작성 **stderr**합니다.|
 |**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDOUT**|메시지를 작성 **stdout**합니다.|
@@ -131,7 +131,7 @@ int _CrtDbgReportW(
 
 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)의 디버그 버전만 해당됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```C
 // crt_crtdbgreport.c

@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0bb96db2ff3a927885bdb914665147dc0e7ce8da
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 71025785fbc9eab2b962e0f9e48ba9170edf1de1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881294"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204192"
 ---
 # <a name="atl-classes-and-structs"></a>ATL 클래스 및 구조체
 액티브 템플릿 라이브러리 (ATL)는 다음 클래스 및 구조체를 포함합니다. 특정 클래스를 범주별으로 찾으려면 참조를 [ATL 클래스 개요](../../atl/atl-class-overview.md)합니다.  
@@ -71,20 +71,20 @@ ms.locfileid: "37881294"
 |[CAxWindow](../../atl/reference/caxwindow-class.md)|이 클래스는 ActiveX 컨트롤을 호스팅하는 창 조작 하기 위한 메서드를 제공 합니다.|atlwin.h|  
 |[CAxWindow2T](../../atl/reference/caxwindow2t-class.md)|이 클래스는 ActiveX 컨트롤을 호스트 하는 기능도 사용이 허가 된 ActiveX 컨트롤 호스팅에 대 한 지원 창 조작 하기 위한 메서드를 제공 합니다.|atlwin.h|  
 |[CBindStatusCallback](../../atl/reference/cbindstatuscallback-class.md)|이 클래스는 `IBindStatusCallback` 인터페이스를 구현합니다.|atlctl.h|  
-|[CComAggObject](../../atl/reference/ccomaggobject-class.md)|이 클래스는 구현 [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) 집계 개체에 대 한 합니다.|atlcom.h|  
+|[CComAggObject](../../atl/reference/ccomaggobject-class.md)|이 클래스는 구현 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 집계 개체에 대 한 합니다.|atlcom.h|  
 |[CComAllocator](../../atl/reference/ccomallocator-class.md)|이 클래스는 COM 메모리 루틴을 사용 하 여 메모리를 관리 하기 위한 메서드를 제공 합니다.|atlbase.h|  
 |[CComApartment](../../atl/reference/ccomapartment-class.md)|이 클래스는 스레드 풀링 EXE 모듈의 아파트를 관리 하기 위한 지원을 제공 합니다.|atlbase.h|  
 |[CComAutoCriticalSection](../../atl/reference/ccomautocriticalsection-class.md)|이 클래스는 가져오기 및 임계 영역 개체의 소유권을 해제 하기 위한 메서드를 제공 합니다.|atlcore.h|  
 |[CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md)|ATL 7.0부터 `CComAutoThreadModule` 는 사용 되지 않습니다: 참조 [ATL 모듈](../../atl/atl-module-classes.md) 대 한 자세한 내용은 합니다.|atlbase.h|  
 |[CComBSTR](../../atl/reference/ccombstr-class.md)|이 클래스는 Bstr에 대 한 래퍼입니다.|atlbase.h|  
-|[CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md)|이 클래스는 구현 [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) 분리 인터페이스입니다.|atlcom.h|  
-|[CComClassFactory](../../atl/reference/ccomclassfactory-class.md)|이 클래스에서 구현 된 [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) 인터페이스입니다.|atlcom.h|  
-|[CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md)|이 클래스에서 구현 된 [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) 인터페이스입니다.|atlcom.h|  
-|[CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md)|이 클래스에서 구현 된 [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) 인터페이스 및 개체를 여러 아파트에서 만들 수 있습니다.|atlcom.h|  
+|[CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md)|이 클래스는 구현 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 분리 인터페이스입니다.|atlcom.h|  
+|[CComClassFactory](../../atl/reference/ccomclassfactory-class.md)|이 클래스에서 구현 된 [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) 인터페이스입니다.|atlcom.h|  
+|[CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md)|이 클래스에서 구현 된 [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) 인터페이스입니다.|atlcom.h|  
+|[CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md)|이 클래스에서 구현 된 [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) 인터페이스 및 개체를 여러 아파트에서 만들 수 있습니다.|atlcom.h|  
 |[CComClassFactorySingleton](../../atl/reference/ccomclassfactorysingleton-class.md)|이 클래스에서 파생 됩니다 [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) 사용 하 여 [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) 단일 개체를 생성 하 합니다.|atlcom.h|  
 |[CComCoClass](../../atl/reference/ccomcoclass-class.md)|이 클래스는 클래스의 인스턴스를 만들고 해당 속성을 가져오는 메서드를 제공 합니다.|atlcom.h|  
 |[CComCompositeControl](../../atl/reference/ccomcompositecontrol-class.md)|이 클래스는 복합 컨트롤을 구현 하는 데 필요한 메서드를 제공 합니다.|atlctl.h|  
-|[CComContainedObject](../../atl/reference/ccomcontainedobject-class.md)|이 클래스는 구현 [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) 소유자 개체에 위임 하 여 `IUnknown`입니다.|atlcom.h|  
+|[CComContainedObject](../../atl/reference/ccomcontainedobject-class.md)|이 클래스는 구현 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 소유자 개체에 위임 하 여 `IUnknown`입니다.|atlcom.h|  
 |[CComControl](../../atl/reference/ccomcontrol-class.md)|이 클래스를 만들고 ATL 컨트롤을 관리 하기 위한 메서드를 제공 합니다.|atlctl.h|  
 |[CComControlBase](../../atl/reference/ccomcontrolbase-class.md)|이 클래스를 만들고 ATL 컨트롤을 관리 하기 위한 메서드를 제공 합니다.|atlctl.h|  
 |[CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md)|이 클래스는 가져오기 및 임계 영역 개체의 소유권을 해제 하기 위한 메서드를 제공 합니다.|atlcore.h|  
@@ -208,20 +208,20 @@ ms.locfileid: "37881294"
 |[IOleObjectImpl](../../atl/reference/ioleobjectimpl-class.md)|이 클래스는 구현 `IUnknown` 및 컨테이너 컨트롤과 통신 하는 주 인터페이스입니다.|atlctl.h|  
 |[IPerPropertyBrowsingImpl](../../atl/reference/iperpropertybrowsingimpl-class.md)|이 클래스는 구현 `IUnknown` 클라이언트 개체의 속성 페이지의 정보에 액세스할 수 있습니다.|atlctl.h|  
 |[IPersistPropertyBagImpl](../../atl/reference/ipersistpropertybagimpl-class.md)|이 클래스는 구현 `IUnknown` 클라이언트가 제공한 propertybag에 해당 속성을 저장 하는 개체를 허용 합니다.|atlcom.h|  
-|[IPersistStorageImpl](../../atl/reference/ipersiststorageimpl-class.md)|이 클래스에서 구현 된 [IPersistStorage](http://msdn.microsoft.com/library/windows/desktop/ms679731) 인터페이스입니다.|atlcom.h|  
-|[IPersistStreamInitImpl](../../atl/reference/ipersiststreaminitimpl-class.md)|이 클래스는 구현 `IUnknown` 의 기본 구현을 제공 합니다 [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) 인터페이스입니다.|atlcom.h|  
-|[IPointerInactiveImpl](../../atl/reference/ipointerinactiveimpl-class.md)|이 클래스는 구현 `IUnknown` 하며 [IPointerInactive](http://msdn.microsoft.com/library/windows/desktop/ms693712) 인터페이스 메서드.|atlctl.h|  
-|[IPropertyNotifySinkCP](../../atl/reference/ipropertynotifysinkcp-class.md)|이 클래스를 노출 합니다 [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638) 인터페이스로 연결 가능 개체의 나가는 인터페이스입니다.|atlctl.h|  
+|[IPersistStorageImpl](../../atl/reference/ipersiststorageimpl-class.md)|이 클래스에서 구현 된 [IPersistStorage](/windows/desktop/api/objidl/nn-objidl-ipersiststorage) 인터페이스입니다.|atlcom.h|  
+|[IPersistStreamInitImpl](../../atl/reference/ipersiststreaminitimpl-class.md)|이 클래스는 구현 `IUnknown` 의 기본 구현을 제공 합니다 [IPersistStreamInit](/windows/desktop/api/ocidl/nn-ocidl-ipersiststreaminit) 인터페이스입니다.|atlcom.h|  
+|[IPointerInactiveImpl](../../atl/reference/ipointerinactiveimpl-class.md)|이 클래스는 구현 `IUnknown` 하며 [IPointerInactive](/windows/desktop/api/ocidl/nn-ocidl-ipointerinactive) 인터페이스 메서드.|atlctl.h|  
+|[IPropertyNotifySinkCP](../../atl/reference/ipropertynotifysinkcp-class.md)|이 클래스를 노출 합니다 [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) 인터페이스로 연결 가능 개체의 나가는 인터페이스입니다.|atlctl.h|  
 |[IPropertyPage2Impl](../../atl/reference/ipropertypage2impl-class.md)|이 클래스는 구현 `IUnknown` 의 기본 구현을 상속 [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md)합니다.|atlctl.h|  
-|[IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md)|이 클래스는 구현 `IUnknown` 의 기본 구현을 제공 합니다 [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) 인터페이스입니다.|atlctl.h|  
-|[IProvideClassInfo2Impl](../../atl/reference/iprovideclassinfo2impl-class.md)|이 클래스의 기본 구현을 제공 합니다 [IProvideClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms687303) 하 고 [IProvideClassInfo2](http://msdn.microsoft.com/library/windows/desktop/ms693764) 메서드.|atlcom.h|  
+|[IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md)|이 클래스는 구현 `IUnknown` 의 기본 구현을 제공 합니다 [IPropertyPage](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage) 인터페이스입니다.|atlctl.h|  
+|[IProvideClassInfo2Impl](../../atl/reference/iprovideclassinfo2impl-class.md)|이 클래스의 기본 구현을 제공 합니다 [IProvideClassInfo](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo) 하 고 [IProvideClassInfo2](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo2) 메서드.|atlcom.h|  
 |[IQuickActivateImpl](../../atl/reference/iquickactivateimpl-class.md)|이 클래스는 컨테이너의 컨트롤 초기화를 단일 호출으로 결합합니다.|atlctl.h|  
-|[IRunnableObjectImpl](../../atl/reference/irunnableobjectimpl-class.md)|이 클래스는 구현 `IUnknown` 의 기본 구현을 제공 합니다 [IRunnableObject](http://msdn.microsoft.com/library/windows/desktop/ms692783) 인터페이스입니다.|atlctl.h|  
+|[IRunnableObjectImpl](../../atl/reference/irunnableobjectimpl-class.md)|이 클래스는 구현 `IUnknown` 의 기본 구현을 제공 합니다 [IRunnableObject](/windows/desktop/api/objidl/nn-objidl-irunnableobject) 인터페이스입니다.|atlctl.h|  
 |[IServiceProviderImpl](../../atl/reference/iserviceproviderimpl-class.md)|이 클래스의 기본 구현을 제공 합니다 `IServiceProvider` 인터페이스입니다.|atlcom.h|  
-|[ISpecifyPropertyPagesImpl](../../atl/reference/ispecifypropertypagesimpl-class.md)|이 클래스는 구현 `IUnknown` 의 기본 구현을 제공 합니다 [ISpecifyPropertyPages](http://msdn.microsoft.com/library/windows/desktop/ms695217) 인터페이스입니다.|atlcom.h|  
+|[ISpecifyPropertyPagesImpl](../../atl/reference/ispecifypropertypagesimpl-class.md)|이 클래스는 구현 `IUnknown` 의 기본 구현을 제공 합니다 [ISpecifyPropertyPages](/windows/desktop/api/ocidl/nn-ocidl-ispecifypropertypages) 인터페이스입니다.|atlcom.h|  
 |[ISupportErrorInfoImpl](../../atl/reference/isupporterrorinfoimpl-class.md)|이 클래스의 기본 구현을 제공 합니다 `ISupportErrorInfo Interface` 인터페이스 및 단일 인터페이스만 개체에서 오류를 생성 하는 경우 사용할 수 있습니다.|atlcom.h|  
 |[IThreadPoolConfig 인터페이스](../../atl/reference/ithreadpoolconfig-interface.md)|이 인터페이스는 스레드 풀을 구성 하기 위한 메서드를 제공 합니다.|와 atlutil.h|  
-|[IViewObjectExImpl](../../atl/reference/iviewobjecteximpl-class.md)|이 클래스는 구현 `IUnknown` 의 기본 구현을 제공 하 고는 [IViewObject](http://msdn.microsoft.com/library/windows/desktop/ms680763)를 [IViewObject2](http://msdn.microsoft.com/library/windows/desktop/ms691318), 및 [IViewObjectEx](http://msdn.microsoft.com/library/windows/desktop/ms682375) 인터페이스입니다.|atlctl.h|  
+|[IViewObjectExImpl](../../atl/reference/iviewobjecteximpl-class.md)|이 클래스는 구현 `IUnknown` 의 기본 구현을 제공 하 고는 [IViewObject](/windows/desktop/api/oleidl/nn-oleidl-iviewobject)를 [IViewObject2](/windows/desktop/api/oleidl/nn-oleidl-iviewobject2), 및 [IViewObjectEx](/windows/desktop/api/ocidl/nn-ocidl-iviewobjectex) 인터페이스입니다.|atlctl.h|  
 |[IWorkerThreadClient 인터페이스](../../atl/reference/iworkerthreadclient-interface.md)|`IWorkerThreadClient` 클라이언트에서 구현 된 인터페이스를 [CWorkerThread](../../atl/reference/cworkerthread-class.md) 클래스입니다.|와 atlutil.h|  
 |[_U_MENUorID](../../atl/reference/u-menuorid-class.md)|이 클래스에 대 한 래퍼를 제공 `CreateWindow` 고 `CreateWindowEx`입니다.|atlwin.h|  
 |[_U_RECT](../../atl/reference/u-rect-class.md)|이 인수 어댑터 클래스를 사용 하거나 `RECT` 포인터 또는 참조 포인터 측면에서 구현 되는 함수에 전달할 수 있습니다.|atlwin.h|  

@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b65bed61f864bc5515c2639be6afe5984702ae29
-ms.sourcegitcommit: f923f667065cd6c4203d10ca9520600ee40e5f84
+ms.openlocfilehash: d2e9e13f7b5838cb13497dd874f7f0cf42f34e98
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901090"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200148"
 ---
 # <a name="cpropertysheet-class"></a>CPropertySheet 클래스
 
@@ -117,13 +117,13 @@ class CPropertySheet : public CWnd
 
 |이름|설명|
 |----------|-----------------|
-|[CPropertySheet::m_psh](#m_psh)|Windows [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546) 구조입니다. 기본 속성 시트 매개 변수에 대 한 액세스를 제공합니다.|
+|[CPropertySheet::m_psh](#m_psh)|Windows [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-_propsheetheadera_v2) 구조입니다. 기본 속성 시트 매개 변수에 대 한 액세스를 제공합니다.|
 
 ## <a name="remarks"></a>설명
 
 구성 속성 시트를 `CPropertySheet` 개체와 하나 이상의 [CPropertyPage](../../mfc/reference/cpropertypage-class.md) 개체입니다. 프레임 워크는 속성 시트의 탭 인덱스와 현재 선택한 페이지를 포함 하는 영역 집합을 사용 하 여 창으로 표시 합니다. 사용자는 해당 탭을 사용 하 여 특정 페이지로 이동 합니다.
 
-`CPropertySheet` 확장 된에 지 [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546) Windows 98 및 Windows NT 2000에 도입 된 구조입니다. 구조 추가 플래그 및 "워터 마크" 배경 비트맵을 사용 하 여 지는 멤버를 포함 합니다.
+`CPropertySheet` 확장 된에 지 [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-_propsheetheadera_v2) Windows 98 및 Windows NT 2000에 도입 된 구조입니다. 구조 추가 플래그 및 "워터 마크" 배경 비트맵을 사용 하 여 지는 멤버를 포함 합니다.
 
 속성 시트 개체에서 이러한 새 이미지를 자동으로 표시, 색상표 및 비트맵 이미지에 대 한 유효한 값에 대 한 호출에 전달 [CPropertySheet::Construct](#construct) 또는 [CPropertySheet::CPropertySheet](#cpropertysheet).
 
@@ -196,7 +196,7 @@ void AddPage(CPropertyPage* pPage);
 
 호출 하는 경우 `AddPage` 탭 행의 속성 페이지를 표시 한 후 새로 추가한 페이지 반영 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCDocView#129](../../mfc/codesnippet/cpp/cpropertysheet-class_1.cpp)]
 
@@ -266,7 +266,7 @@ void Construct(
 
 세 번째 또는 네 번째 프로토타입을 사용 하는 경우 워터 마크 및/또는 헤더 이미지를 자동으로 표시할 수 있습니다 `Construct`위에 나열 된, 및에 대 한 유효한 값을 전달 합니다 *hbmWatermark*합니다 *hpalWatermark* 및/또는 *hbmHeader* 매개 변수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서 호출 하면 어떤 상황 `Construct`합니다.
 
@@ -341,7 +341,7 @@ CPropertySheet(
 
 세 번째 또는 네 번째 프로토타입을 사용 하는 경우 워터 마크 및/또는 헤더 이미지를 자동으로 표시할 수 있습니다 `CPropertySheet`위의에 대 한 유효한 값을 전달 합니다 *hbmWatermark*를 *hpalWatermark*, 및 / 또는 *hbmHeader* 매개 변수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCDocView#131](../../mfc/codesnippet/cpp/cpropertysheet-class_3.cpp)]
 
@@ -382,7 +382,7 @@ virtual BOOL Create(CWnd* pParentWnd = NULL,
 
 모달 속성 시트를 표시 하려면 호출 [DoModal](#domodal) 대신 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCDocView#132](../../mfc/codesnippet/cpp/cpropertysheet-class_4.cpp)]
 
@@ -431,7 +431,7 @@ IDOK 또는 함수에 성공 하면 IDCANCEL 그렇지 않으면 0 또는-1입�
 
 속성 시트에 호환 되지 않기 때문에 다른 모든 Windows 스타일을 사용 하지 않도록 설정 합니다. 이 권장 사항은 확장된 스타일에 적용 되지 않습니다. 이러한 표준 스타일을 적절 하 게 설정 속성 시트를 수정할 필요가 없습니다를 첫째 예외를 생성 하는 피해 야 할 보장 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 예를 참조 하세요 [CPropertySheet::AddPage](#addpage)합니다.
 
@@ -454,7 +454,7 @@ void EnableStackedTabs(BOOL bStacked);
 
 호출 해야 `EnableStackedTabs` 모달 또는 모덜리스 속성 시트를 만들 때. 이 스타일의 통합을 `CPropertySheet`-파생 클래스인 WM_CREATE 메시지 처리기를 작성 합니다. 재정의 된 버전의 [CWnd::OnCreate](../../mfc/reference/cwnd-class.md#oncreate)를 호출 `EnableStackedTabs( FALSE )` 기본 클래스 구현을 호출 하기 전에 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCDocView#134](../../mfc/codesnippet/cpp/cpropertysheet-class_6.cpp)]
 
@@ -477,7 +477,7 @@ void EndDialog(int nEndID);
 
 이 멤버 함수는 모달 대화 상자를 사용 하 여만 사용 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 예를 참조 하세요 [CPropertySheet::PressButton](#pressbutton)합니다.
 
@@ -493,7 +493,7 @@ int GetActiveIndex() const;
 
 현재 페이지의 인덱스 번호입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 예를 참조 하세요 [CPropertySheet::GetActivePage](#getactivepage)합니다.
 
@@ -513,7 +513,7 @@ CPropertyPage* GetActivePage() const;
 
 이 멤버 함수를 사용 하 여 현재 페이지의 일부 작업을 수행 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCDocView#135](../../mfc/codesnippet/cpp/cpropertysheet-class_7.cpp)]
 
@@ -534,7 +534,7 @@ CPropertyPage* GetPage(int nPage) const;
 
 에 해당 하는 페이지에 대 한 포인터를 *n 페이지* 매개 변수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 예를 참조 하세요 [CPropertyPage::OnWizardFinish](../../mfc/reference/cpropertypage-class.md#onwizardfinish)합니다.
 
@@ -550,7 +550,7 @@ int GetPageCount() const;
 
 속성 시트의 페이지 수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 예를 참조 하세요 [CPropertyPage::OnWizardFinish](../../mfc/reference/cpropertypage-class.md#onwizardfinish)합니다.
 
@@ -575,7 +575,7 @@ int GetPageIndex(CPropertyPage* pPage);
 
 사용 예를 들어 `GetPageIndex` 인덱스를 가져오려면 페이지를 사용 하려면 [SetActivePage](#setactivepage) 하거나 [GetPage](#getpage)합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 예를 참조 하세요 [CPropertySheet::GetActivePage](#getactivepage)합니다.
 
@@ -595,13 +595,13 @@ CTabCtrl* GetTabControl() const;
 
 예를 들어, 초기화 하는 동안 각 탭에 비트맵을 추가 하려는 경우이 멤버 함수를 호출 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCDocView#136](../../mfc/codesnippet/cpp/cpropertysheet-class_8.cpp)]
 
 ##  <a name="m_psh"></a>  CPropertySheet::m_psh
 
-해당 멤버의 특성을 저장 하는 구조체 [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546)합니다.
+해당 멤버의 특성을 저장 하는 구조체 [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-_propsheetheadera_v2)합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -609,7 +609,7 @@ CTabCtrl* GetTabControl() const;
 
 해당 멤버의 목록을 포함 하 여이 구조에 대 한 자세한 내용은 Windows SDK의 PROPSHEETHEADER를 참조 하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCDocView#143](../../mfc/codesnippet/cpp/cpropertysheet-class_9.cpp)]
 
@@ -624,13 +624,13 @@ void MapDialogRect(LPRECT lpRect) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*  
-가리키는 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 변환할 조정 대화 상자를 포함 하는 개체입니다.
+가리키는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 변환할 조정 대화 상자를 포함 하는 개체입니다.
 
 ### <a name="remarks"></a>설명
 
 대화 상자 단위 평균 너비와 높이 대화 상자의 텍스트에 사용 된 글꼴의 문자에서 파생 된 현재 대화 상자 기본 단위를 기준으로 명시 됩니다. 하나의 가로 단위는 1-4 대화 상자 기본 너비 단위 이며 세로 단위 대화 상자 기본 높이 단위의 1 / 8입니다.
 
-합니다 [GetDialogBaseUnits](http://msdn.microsoft.com/library/windows/desktop/ms645475) Windows 함수는 시스템 글꼴에 대 한 크기 정보를 반환 하지만 DS_SETFONT 스타일 리소스 정의 파일에서 사용 하는 경우에 각 속성 시트에 대 한 다른 글꼴을 지정할 수 있습니다. 합니다 [MapDialogRect](http://msdn.microsoft.com/library/windows/desktop/ms645502) Windows 함수를 Windows SDK에 설명 된이 대화 상자에 대 한 적절 한 글꼴을 사용 합니다.
+합니다 [GetDialogBaseUnits](/windows/desktop/api/winuser/nf-winuser-getdialogbaseunits) Windows 함수는 시스템 글꼴에 대 한 크기 정보를 반환 하지만 DS_SETFONT 스타일 리소스 정의 파일에서 사용 하는 경우에 각 속성 시트에 대 한 다른 글꼴을 지정할 수 있습니다. 합니다 [MapDialogRect](/windows/desktop/api/winuser/nf-winuser-mapdialogrect) Windows 함수를 Windows SDK에 설명 된이 대화 상자에 대 한 적절 한 글꼴을 사용 합니다.
 
 합니다 `MapDialogRect` 대화 상자 단위를 대체 하는 멤버 함수 *lpRect* 사용 하 여 사각형 상자 내에서 컨트롤을 배치 또는 만들기 대화 상자를 사용할 수 있도록 단위 (픽셀)를 화면.
 
@@ -683,11 +683,11 @@ n 단추: 단추를 누른 것을 식별 합니다. 이 매개 변수는 다음 
 
 ### <a name="remarks"></a>설명
 
-참조 [PSM_PRESSBUTTON](http://msdn.microsoft.com/library/windows/desktop/bb774597) Windows SDK Pressbutton 메시지에 대 한 자세한 내용은 합니다.
+참조 [PSM_PRESSBUTTON](/windows/desktop/Controls/psm-pressbutton) Windows SDK Pressbutton 메시지에 대 한 자세한 내용은 합니다.
 
-에 대 한 호출 `PressButton` 보내지 않습니다 합니다 [PSN_APPLY](http://msdn.microsoft.com/library/windows/desktop/bb774552) framework 속성 페이지에서 알림. 이 알림을 보내기 위해 호출할 [CPropertyPage::OnOK](../../mfc/reference/cpropertypage-class.md#onok)합니다.
+에 대 한 호출 `PressButton` 보내지 않습니다 합니다 [PSN_APPLY](/windows/desktop/Controls/psn-apply) framework 속성 페이지에서 알림. 이 알림을 보내기 위해 호출할 [CPropertyPage::OnOK](../../mfc/reference/cpropertypage-class.md#onok)합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCDocView#137](../../mfc/codesnippet/cpp/cpropertysheet-class_10.cpp)]
 
@@ -737,7 +737,7 @@ BOOL SetActivePage(CPropertyPage* pPage);
 
 예를 들어, 사용 하 여 `SetActivePage` 한 페이지에 사용자의 작업에는 활성 페이지가 되 다른 페이지 발생 해야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 예를 참조 하세요 [CPropertySheet::GetActivePage](#getactivepage)합니다.
 
@@ -758,7 +758,7 @@ void SetFinishText(LPCTSTR lpszText);
 
 호출 `SetFinishText` 마침 명령 단추에 텍스트를 표시 및 사용자가 마법사의 마지막 페이지에서 작업을 완료 한 후 다음 및 뒤로 단추를 숨깁니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCDocView#138](../../mfc/codesnippet/cpp/cpropertysheet-class_11.cpp)]
 
@@ -784,7 +784,7 @@ void SetTitle(
 
 기본적으로 속성 시트는 속성 시트 생성자에서 캡션 매개 변수를 사용 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCDocView#139](../../mfc/codesnippet/cpp/cpropertysheet-class_12.cpp)]
 
@@ -815,7 +815,7 @@ void SetWizardButtons(DWORD dwFlags);
 
 "마침" 단추 텍스트를 변경 하거나, 다음 숨길 하려는 경우 뒤로 단추를 한 번 호출 마법사 완료 [SetFinishText](#setfinishtext)합니다. 완료 한 다음에는 동일한 단추 공유 되는 note 합니다. 완료 된 후 또는 다음 단추 한 번에 하나만 표시할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 A `CPropertySheet` 세 개의 마법사 속성 페이지: `CStylePage`를 `CColorPage`, 및 `CShapePage`합니다.  아래 코드 조각에 설정 및 해제 하는 방법을 보여 줍니다 합니다 **다시** 하 고 **다음** 마법사 속성 페이지의 단추입니다.
 
@@ -841,7 +841,7 @@ void SetWizardMode();
 
 `SetWizardMode` PSH_WIZARD 플래그를 설정합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCDocView#142](../../mfc/codesnippet/cpp/cpropertysheet-class_15.cpp)]
 

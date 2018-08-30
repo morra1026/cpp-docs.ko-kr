@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fa450436bee52aa9cd13803e3bf51c6a500fa0e
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 43d6d1ace739c50d471c7e57b8670d010319ae1a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883377"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196049"
 ---
 # <a name="cominterfaceentry-macros"></a>COM_INTERFACE_ENTRY 매크로  
  이러한 매크로를 쿼리하면 COM 맵을 개체의 인터페이스에서 액세스할 수 있도록 입력 `QueryInterface`합니다. COM 맵에 순서가 순서 인터페이스를 확인 하는 동안 일치 하는 IID `QueryInterface`합니다.  
@@ -48,7 +48,7 @@ ms.locfileid: "37883377"
 |[COM_INTERFACE_ENTRY_AGGREGATE_BLIND](#com_interface_entry_aggregate_blind)|동일 [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)한다는 점을 제외 하는 쿼리를 전달 하면 모든 IID에 대 한 쿼리 *punk*합니다.|  
 |[COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)|동일 [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), 경우를 제외 하 고 *punk* 가 null 인 경우에서 설명 하는 집계를 자동으로 생성 합니다 *clsid*.|  
 |[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](#com_interface_entry_autoaggregate_blind)|동일 [COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)한다는 점을 제외 하는 쿼리를 전달 하면 모든 IID에 대 한 쿼리 *punk*, 경우에 *punk* 가 null 인 경우 자동으로 만들기 에 설명 된 집계를 *clsid*합니다.|  
-|[COM_INTERFACE_ENTRY_BREAK](#com_interface_entry_break)|프로그램이 호출 [DebugBreak](http://msdn.microsoft.com/library/windows/desktop/ms679297) 지정된 된 인터페이스에 대 한 쿼리 될 경우.|  
+|[COM_INTERFACE_ENTRY_BREAK](#com_interface_entry_break)|프로그램이 호출 [DebugBreak](https://msdn.microsoft.com/library/windows/desktop/ms679297) 지정된 된 인터페이스에 대 한 쿼리 될 경우.|  
 |[COM_INTERFACE_ENTRY_CACHED_TEAR_OFF](#com_interface_entry_cached_tear_off)|모든 인스턴스에 대 한 인터페이스 관련 데이터를 저장합니다.|  
 |[COM_INTERFACE_ENTRY_TEAR_OFF](#com_interface_entry_tear_off)|분리 인터페이스를 노출합니다.|  
 |[COM_INTERFACE_ENTRY_CHAIN](#com_interface_entry_chain)|처리 하는 COM 맵에이 항목에 도달할 때 기본 클래스의 COM 맵에 처리 합니다.|  
@@ -74,7 +74,7 @@ COM_INTERFACE_ENTRY( x )
 ### <a name="remarks"></a>설명
 일반적으로 가장 자주 사용 하는 항목 형식입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 ```cpp
 BEGIN_COM_MAP(CThisExample)
    COM_INTERFACE_ENTRY(IThisExample)
@@ -103,7 +103,7 @@ COM_INTERFACE_ENTRY2(x, x2)
  예를 들어 두 개의 이중 인터페이스에서 클래스 개체를 파생 하는 경우 노출 `IDispatch` COM_INTERFACE_ENTRY2 이후를 사용 하 여 `IDispatch` 인터페이스 중 하나에서 가져올 수 있습니다.  
   
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#118](../../atl/codesnippet/cpp/com-map-macros_2.h)]  
   
 ##  <a name="com_interface_entry_iid"></a>  COM_INTERFACE_ENTRY_IID  
@@ -121,7 +121,7 @@ COM_INTERFACE_ENTRY_IID(iid, x)
  [in] 로 식별 되는 인터페이스와 해당 vtable 노출 될 클래스의 이름을 *iid*합니다.  
   
  
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#117](../../atl/codesnippet/cpp/com-map-macros_3.h)]  
   
 ##  <a name="com_interface_entry2_iid"></a>  COM_INTERFACE_ENTRY2_IID  
@@ -160,7 +160,7 @@ COM_INTERFACE_ENTRY_AGGREGATE(iid, punk)
   
   
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#112](../../atl/codesnippet/cpp/com-map-macros_4.h)]  
   
 ##  <a name="com_interface_entry_aggregate_blind"></a>  COM_INTERFACE_ENTRY_AGGREGATE_BLIND  
@@ -179,7 +179,7 @@ COM_INTERFACE_ENTRY_AGGREGATE_BLIND(punk)
   
   
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#113](../../atl/codesnippet/cpp/com-map-macros_5.h)]  
   
 
@@ -203,7 +203,7 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid, punk, clsid)
 ### <a name="remarks"></a>설명  
   
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#114](../../atl/codesnippet/cpp/com-map-macros_6.h)]  
   
 ##  <a name="com_interface_entry_autoaggregate_blind"></a>  COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND  
@@ -225,11 +225,11 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(punk, clsid)
   
   
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#115](../../atl/codesnippet/cpp/com-map-macros_7.h)]  
   
 ##  <a name="com_interface_entry_break"></a>  COM_INTERFACE_ENTRY_BREAK  
- 프로그램이 호출 [DebugBreak](http://msdn.microsoft.com/library/windows/desktop/ms679297) 지정된 된 인터페이스에 대 한 쿼리 될 경우.  
+ 프로그램이 호출 [DebugBreak](https://msdn.microsoft.com/library/windows/desktop/ms679297) 지정된 된 인터페이스에 대 한 쿼리 될 경우.  
   
 ```
 COM_INTERFACE_ENTRY_BREAK(x)
@@ -266,7 +266,7 @@ COM_INTERFACE_ENTRY_CACHED_TEAR_OFF(iid, x, punk)
   
   
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_COM#54](../../atl/codesnippet/cpp/com-map-macros_8.h)]  
   
 ##  <a name="com_interface_entry_tear_off"></a>  COM_INTERFACE_ENTRY_TEAR_OFF  
@@ -288,7 +288,7 @@ COM_INTERFACE_ENTRY_TEAR_OFF(iid, x)
   
   
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_COM#1](../../atl/codesnippet/cpp/com-map-macros_1.h)]  
   
 ##  <a name="com_interface_entry_chain"></a>  COM_INTERFACE_ENTRY_CHAIN  

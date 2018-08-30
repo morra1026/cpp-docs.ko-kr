@@ -33,12 +33,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 025c6bc072f85a1075abdbd03f3567622c3fa40d
-ms.sourcegitcommit: 27be37ae07ee7b657a54d23ed34438220d977fdc
+ms.openlocfilehash: 3d87d41b97f587f2546df246044eaf8df3bba373
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39110288"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221980"
 ---
 # <a name="data-access-using-adonet-ccli"></a>ADO.NET을 사용하여 데이터 액세스(C++/CLI)
 ADO.NET은 데이터 액세스를 위한.NET Framework API 및 기능과 이전 데이터 액세스 솔루션에서 일치 하지 않는 사용 편의성을 제공 합니다. 이 섹션에서는 몇 가지 기본 형식 마샬링 등 Visual c + + 사용자에 게 고유한 ADO.NET 관련 문제를 설명 합니다.  
@@ -48,7 +48,7 @@ ADO.NET은 데이터 액세스를 위한.NET Framework API 및 기능과 이전 
 ## <a name="marshal_ansi"></a> ADO.NET 용 ANSI 문자열 마샬링
 기본 문자열을 추가 하는 방법을 보여 줍니다 (`char *`) 데이터베이스를 마샬링하는 방법을 <xref:System.String?displayProperty=fullName> 네이티브 문자열에 데이터베이스에서.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  이 예제에서는 클래스 DatabaseClass 만들어집니다 ADO.NET을 사용 하 여 상호 작용 하도록 <xref:System.Data.DataTable> 개체입니다. 이 클래스는 네이티브 c + + `class` (비교 했을 때를 `ref class` 또는 `value class`). 이 네이티브 코드에서이 클래스를 사용 하려고 하 고 네이티브 코드에서 관리 되는 형식을 사용할 수 없습니다 때문에 필요. 이 클래스는 표시 된 대로 CLR을 대상으로 컴파일될는 `#pragma managed` 클래스 선언 앞에 지시문입니다. 이 지시문에 대 한 자세한 내용은 참조 하세요. [관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md)합니다.  
   
  DatabaseClass 클래스의 private 멤버를 확인 합니다. `gcroot<DataTable ^> table`합니다. 네이티브 형식에는 관리 되는 형식이 포함 될 수 없습니다는 `gcroot` 키워드는 필요 합니다. 대 한 자세한 내용은 `gcroot`를 참조 하세요 [방법: 네이티브 형식에 처리 선언](../dotnet/how-to-declare-handles-in-native-types.md)합니다.  
@@ -172,7 +172,7 @@ StringCol: This is string 2.
 ## <a name="marshal_bstr"></a> ADO.NET 용 BSTR 문자열 마샬링
 COM 문자열을 추가 하는 방법을 보여 줍니다 (`BSTR`) 데이터베이스를 마샬링하는 방법을 <xref:System.String?displayProperty=fullName> 데이터베이스에서는 `BSTR`합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  이 예제에서는 클래스 DatabaseClass 만들어집니다 ADO.NET을 사용 하 여 상호 작용 하도록 <xref:System.Data.DataTable> 개체입니다. 이 클래스는 네이티브 c + + `class` (비교 했을 때를 `ref class` 또는 `value class`). 이 네이티브 코드에서이 클래스를 사용 하려고 하 고 네이티브 코드에서 관리 되는 형식을 사용할 수 없습니다 때문에 필요. 이 클래스는 표시 된 대로 CLR을 대상으로 컴파일될는 `#pragma managed` 클래스 선언 앞에 지시문입니다. 이 지시문에 대 한 자세한 내용은 참조 하세요. [관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md)합니다.  
   
  DatabaseClass 클래스의 private 멤버를 확인 합니다. `gcroot<DataTable ^> table`합니다. 네이티브 형식에는 관리 되는 형식이 포함 될 수 없습니다는 `gcroot` 키워드는 필요 합니다. 대 한 자세한 내용은 `gcroot`를 참조 하세요 [방법: 네이티브 형식에 처리 선언](../dotnet/how-to-declare-handles-in-native-types.md)합니다.  
@@ -304,7 +304,7 @@ StringCol: This is string 2.
 ## <a name="marshal_unicode"></a> ADO.NET 용 유니코드 문자열 마샬링
 네이티브 유니코드 문자열을 추가 하는 방법을 보여 줍니다 (`wchar_t *`)는 데이터베이스를 마샬링하는 방법을 <xref:System.String?displayProperty=fullName> 네이티브 유니코드 문자열에 데이터베이스에서.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  이 예제에서는 클래스 DatabaseClass 만들어집니다 ADO.NET을 사용 하 여 상호 작용 하도록 <xref:System.Data.DataTable> 개체입니다. 이 클래스는 네이티브 c + + `class` (비교 했을 때를 `ref class` 또는 `value class`). 이 네이티브 코드에서이 클래스를 사용 하려고 하 고 네이티브 코드에서 관리 되는 형식을 사용할 수 없습니다 때문에 필요. 이 클래스는 표시 된 대로 CLR을 대상으로 컴파일될는 `#pragma managed` 클래스 선언 앞에 지시문입니다. 이 지시문에 대 한 자세한 내용은 참조 하세요. [관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md)합니다.  
   
  DatabaseClass 클래스의 private 멤버를 확인 합니다. `gcroot<DataTable ^> table`합니다. 네이티브 형식에는 관리 되는 형식이 포함 될 수 없습니다는 `gcroot` 키워드는 필요 합니다. 대 한 자세한 내용은 `gcroot`를 참조 하세요 [방법: 네이티브 형식에 처리 선언](../dotnet/how-to-declare-handles-in-native-types.md)합니다.  
@@ -428,7 +428,7 @@ StringCol: This is string 2.
 ## <a name="marshal_variant"></a> ADO.NET 용 VARIANT 마샬링
 네이티브를 추가 하는 방법을 보여 줍니다 `VARIANT` 데이터베이스를 마샬링하는 방법을 <xref:System.Object?displayProperty=fullName> 네이티브 데이터베이스에서 `VARIANT`합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  이 예제에서는 클래스 DatabaseClass 만들어집니다 ADO.NET을 사용 하 여 상호 작용 하도록 <xref:System.Data.DataTable> 개체입니다. 이 클래스는 네이티브 c + + `class` (비교 했을 때를 `ref class` 또는 `value class`). 이 네이티브 코드에서이 클래스를 사용 하려고 하 고 네이티브 코드에서 관리 되는 형식을 사용할 수 없습니다 때문에 필요. 이 클래스는 표시 된 대로 CLR을 대상으로 컴파일될는 `#pragma managed` 클래스 선언 앞에 지시문입니다. 이 지시문에 대 한 자세한 내용은 참조 하세요. [관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md)합니다.  
   
  DatabaseClass 클래스의 private 멤버를 확인 합니다. `gcroot<DataTable ^> table`합니다. 네이티브 형식에는 관리 되는 형식이 포함 될 수 없습니다는 `gcroot` 키워드는 필요 합니다. 대 한 자세한 내용은 `gcroot`를 참조 하세요 [방법: 네이티브 형식에 처리 선언](../dotnet/how-to-declare-handles-in-native-types.md)합니다.  
@@ -567,7 +567,7 @@ ObjectCol: 42
 ## <a name="marshal_safearray"></a> ADO.NET 용 SAFEARRAY 마샬링
 네이티브를 추가 하는 방법을 보여 줍니다 `SAFEARRAY` 데이터베이스를 네이티브 데이터베이스에서 관리 되는 배열을 마샬링하는 방법을 `SAFEARRAY`합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  이 예제에서는 클래스 DatabaseClass 만들어집니다 ADO.NET을 사용 하 여 상호 작용 하도록 <xref:System.Data.DataTable> 개체입니다. 이 클래스는 네이티브 c + + `class` (비교 했을 때를 `ref class` 또는 `value class`). 이 네이티브 코드에서이 클래스를 사용 하려고 하 고 네이티브 코드에서 관리 되는 형식을 사용할 수 없습니다 때문에 필요. 이 클래스는 표시 된 대로 CLR을 대상으로 컴파일될는 `#pragma managed` 클래스 선언 앞에 지시문입니다. 이 지시문에 대 한 자세한 내용은 참조 하세요. [관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md)합니다.  
   
  DatabaseClass 클래스의 private 멤버를 확인 합니다. `gcroot<DataTable ^> table`합니다. 네이티브 형식에는 관리 되는 형식이 포함 될 수 없습니다는 `gcroot` 키워드는 필요 합니다. 대 한 자세한 내용은 `gcroot`를 참조 하세요 [방법: 네이티브 형식에 처리 선언](../dotnet/how-to-declare-handles-in-native-types.md)합니다.  
@@ -731,4 +731,4 @@ int main()
 
  <xref:System.Runtime.InteropServices>   
 
- [상호 운용성](http://msdn.microsoft.com/afcc2e7d-3f32-48d2-8141-1c42acf29084)   
+ [상호 운용성](https://msdn.microsoft.com/afcc2e7d-3f32-48d2-8141-1c42acf29084)   

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0e2e14309b7175b003fbab9214d9dffde63af63
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 0786ada9a9548fa4e3517cb74fe37e5b7f244be2
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026019"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218650"
 ---
 # <a name="object-map-macros"></a>개체 맵 매크로
 이러한 매크로 맵 개체 및 항목을 정의합니다.  
@@ -47,7 +47,7 @@ DECLARE_OBJECT_DESCRIPTION( x )
  [in] 클래스 개체의 설명입니다.  
   
 ### <a name="remarks"></a>설명  
- ATL을 통해 개체 맵에이 설명을 입력 합니다 [OBJECT_ENTRY](http://msdn.microsoft.com/abd10ee2-54f0-4f94-9ec2-ddf8f4c8c8cd) 매크로입니다.  
+ ATL을 통해 개체 맵에이 설명을 입력 합니다 [OBJECT_ENTRY](https://msdn.microsoft.com/abd10ee2-54f0-4f94-9ec2-ddf8f4c8c8cd) 매크로입니다.  
   
  DECLARE_OBJECT_DESCRIPTION 구현 하는 `GetObjectDescription` 함수를 재정의 하는 데 사용할 수 있는 합니다 [CComCoClass::GetObjectDescription](ccomcoclass-class.md#getobjectdescription) 메서드.  
 
@@ -56,7 +56,7 @@ DECLARE_OBJECT_DESCRIPTION( x )
   
  ATL 프로젝트 마법사에 대 한 자세한 내용은 문서 참조 [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#123](../../atl/codesnippet/cpp/object-map-macros_1.h)]  
   
 ##  <a name="object_entry_auto"></a>  OBJECT_ENTRY_AUTO  

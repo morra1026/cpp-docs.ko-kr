@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e3da35d2134daa20faf53336902ba6612f4b9904
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 663f8f3921788e64b26a57e95537ab44c757ea17
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42612105"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211422"
 ---
 # <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>연습: 사용자 인터페이스 스레드에서 작업 제거
 이 문서에는 작업자 스레드를 Microsoft Foundation 클래스 (MFC) 응용 프로그램의 사용자 인터페이스 (UI) 스레드에서 수행 되는 작업을 이동할 동시성 런타임을 사용 하는 방법을 보여 줍니다. 이 문서에는 긴 그리기 작업의 성능을 향상 하는 방법을 보여 줍니다.  
@@ -40,7 +40,7 @@ ms.locfileid: "42612105"
   
 -   [PPL에서의 취소](cancellation-in-the-ppl.md)  
   
- 이 연습을 시작 하기 전에 MFC 응용 프로그램 개발 및 GDI +의 기본을 이해 하는 것이 좋습니다. MFC에 대 한 자세한 내용은 참조 하세요. [MFC Desktop Applications](../../mfc/mfc-desktop-applications.md)합니다. GDI +에 대 한 자세한 내용은 참조 하세요. [GDI +](https://msdn.microsoft.com/en-us/library/windows/desktop/ms533798)합니다.  
+ 이 연습을 시작 하기 전에 MFC 응용 프로그램 개발 및 GDI +의 기본을 이해 하는 것이 좋습니다. MFC에 대 한 자세한 내용은 참조 하세요. [MFC Desktop Applications](../../mfc/mfc-desktop-applications.md)합니다. GDI +에 대 한 자세한 내용은 참조 하세요. [GDI +](https://msdn.microsoft.com/library/windows/desktop/ms533798)합니다.  
   
 ##  <a name="top"></a> 섹션  
  이 연습에는 다음과 같은 섹션이 있습니다.  

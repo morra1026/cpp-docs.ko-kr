@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 105a6310968844336ead5c787586d547f3952e57
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 82447c14209f2f47fb6224df7e1daeb18ed6048e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338992"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212893"
 ---
 # <a name="ckeyboardmanager-class"></a>CKeyboardManager 클래스
 주 프레임 창 및 자식 프레임 창에 대한 바로 가기 키 테이블을 관리합니다.  
@@ -87,7 +87,7 @@ class CKeyboardManager : public CObject
   
  만들어야 합니다를 `CKeyboardManager` 수동으로 개체입니다. 응용 프로그램의 프레임 워크에서 자동으로 만들 수 됩니다. 하지만 호출 해야 [CWinAppEx::InitKeyboardManager](../../mfc/reference/cwinappex-class.md#initkeyboardmanager) 응용 프로그램의 초기화 프로세스 동안. 응용 프로그램에 대 한 키보드 관리자에 대 한 포인터를 가져오려면, 호출 [CWinAppEx::GetKeyboardManager](../../mfc/reference/cwinappex-class.md#getkeyboardmanager)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에 대 한 포인터를 검색 하는 방법을 보여 줍니다는 `CKeyboardManager` 에서 개체를 `CWinAppEx` 클래스 및 메뉴 명령과 사용 하 여 연결 된 모든 바로 가기 키를 표시 하는 방법입니다. 이 코드 조각은의 일부인 합니다 [사용자 지정 페이지 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_CustomPages#5](../../mfc/reference/codesnippet/cpp/ckeyboardmanager-class_1.cpp)]  
@@ -169,7 +169,7 @@ static BOOL __stdcall IsKeyHandled(
 |-|-|  
 |매개 변수|설명|  
 |[in] *nKey*|확인할 키입니다.|  
-|[in] *fVirt*|바로 가기 키의 동작을 지정 합니다. 가능한 값 목록을 참조 하세요 [가속 구조](http://msdn.microsoft.com/library/windows/desktop/ms646340)합니다.|  
+|[in] *fVirt*|바로 가기 키의 동작을 지정 합니다. 가능한 값 목록을 참조 하세요 [가속 구조](/windows/desktop/api/winuser/ns-winuser-tagaccel)합니다.|  
 |[in] *pWndFrame*|프레임 창입니다. 이 메서드는이 프레임에서 바로 가기 키를 처리할지 여부를 결정 합니다.|  
 |[in] *bIsDefaultFrame*|나타내는 부울 매개 변수 여부 *pWndFrame* 기본 프레임 창입니다.|  
   
@@ -197,7 +197,7 @@ static BOOL __stdcall IsKeyPrintable(const UINT nChar);
  0이 아닌 인쇄 가능한 문자 이면이 없는 경우 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드를 호출 하는 경우 실패 [GetKeyboardState](http://msdn.microsoft.com/library/windows/desktop/ms646299) 실패 합니다.  
+ 이 메서드를 호출 하는 경우 실패 [GetKeyboardState](https://msdn.microsoft.com/library/windows/desktop/ms646299) 실패 합니다.  
   
 ##  <a name="isshowallaccelerators"></a>  CKeyboardManager::IsShowAllAccelerators  
  메뉴 명령과 사용 하 여 연결 된 모든 바로 가기 키 또는 기본 바로 가기 키만 메뉴가 표시 여부를 나타냅니다.  

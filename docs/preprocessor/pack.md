@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39d19749f44645d30d9a3826758f54737d3e68af
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 0bcbd8dcc64d26f124a7b6443a79f01aa4329414
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42543192"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207494"
 ---
 # <a name="pack"></a>pack
 구조체, 공용 구조체 및 클래스 멤버에 대한 압축 맞춤을 지정합니다.  
@@ -38,7 +38,7 @@ ms.locfileid: "42543192"
 
 클래스를 압축하는 것은 해당 멤버를 메모리에서 서로 바로 뒤에 두는 것입니다. 이는 일부 또는 모든 멤버가 대상 아키텍처의 기본 맞춤보다 작은 경계에 정렬될 수 있음을 의미할 수 있습니다. **팩** 데이터 선언 수준에서 제어할 수 있습니다. 컴파일러 옵션에서이 반해 [/Zp](../build/reference/zp-struct-member-alignment.md)에 제공 하는 모듈 수준 제어 합니다. **팩** 첫 번째에 적용 됩니다 **구조체**를 **union**, 또는 **클래스** 선언 후, pragma가 표시 합니다. **팩** 정의에 영향이 없습니다. 호출 **pack** 없습니다 인수 집합을 사용 하 여 *n* 컴파일러 옵션에 설정 된 값을 `/Zp`입니다. 컴파일러 옵션이 설정되지 않은 경우 기본값은 8입니다.  
   
-구조체의 맞춤을 변경하는 경우 메모리에서 그만큼의 공간을 사용하지 않을 수 있지만, 성능이 저하되거나 정렬되지 않은 액세스에 대해 하드웨어에서 생성된 예외가 발생할 수도 있습니다.  사용 하 여이 예외 동작을 수정할 수 있습니다 [SetErrorMode](http://msdn.microsoft.com/library/windows/desktop/ms680621)합니다.  
+구조체의 맞춤을 변경하는 경우 메모리에서 그만큼의 공간을 사용하지 않을 수 있지만, 성능이 저하되거나 정렬되지 않은 액세스에 대해 하드웨어에서 생성된 예외가 발생할 수도 있습니다.  사용 하 여이 예외 동작을 수정할 수 있습니다 [SetErrorMode](https://msdn.microsoft.com/library/windows/desktop/ms680621)합니다.  
   
 *표시* (선택 사항)  
 압축 맞춤에 대한 현재 바이트 값을 표시합니다. 경고 메시지에 값이 표시됩니다.  

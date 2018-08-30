@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6aa313252d2ba06cf0a912f31564dec3d65e0e8
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 265da6a072c1b33a0ebbe8f485af7588521bcdea
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42572517"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218030"
 ---
 # <a name="csid-class"></a>CSid 클래스
 이 클래스는에 대 한 래퍼를 `SID` (보안 식별자) 구조입니다.  
@@ -105,7 +105,7 @@ class CSid
   
  응용 프로그램을 수정 하지 않아야 합니다 `SID` 구조를 직접 사용 하 여이 래퍼 클래스에서 제공 하는 메서드. 참고 항목 [AtlGetOwnerSid](security-global-functions.md#atlgetownersid)를 [AtlSetGroupSid](security-global-functions.md#atlsetgroupsid)를 [AtlGetGroupSid](security-global-functions.md#atlgetgroupsid), 및 [AtlSetOwnerSid](security-global-functions.md#atlsetownersid)합니다.  
   
- Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK에 있습니다.  
+ Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](/windows/desktop/SecAuthZ/access-control) Windows SDK에 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** atlsecurity.h  
@@ -121,7 +121,7 @@ LPCTSTR AccountName() const throw(...);
  계정의 이름을 가리키는 LPCTSTR을 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 지정 된 이름을 찾으려고 `SID` (보안 식별자)입니다. 전체 세부 정보를 참조 하세요 [LookupAccountSid](http://msdn.microsoft.com/library/windows/desktop/aa379166)합니다.  
+ 이 메서드는 지정 된 이름을 찾으려고 `SID` (보안 식별자)입니다. 전체 세부 정보를 참조 하세요 [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida)합니다.  
   
  경우에 대 한 계정 이름이 합니다 `SID` 찾을 수 있습니다 `AccountName` 빈 문자열을 반환 합니다. 이 메서드 이름을 찾는 방지 네트워크 시간 제한 한 경우 발생할 수 있습니다. 이름이 없는 해당 계정에 로그온을 같은 보안 식별자에 발생 `SID` 로그온 세션을 식별 하는 합니다.  
   
@@ -202,7 +202,7 @@ LPCTSTR Domain() const throw(...);
  반환 된 `LPCTSTR` 도메인을 가리키는 합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 지정 된 이름을 찾으려고 `SID` (보안 식별자)입니다. 전체 세부 정보를 참조 하세요 [LookupAccountSid](http://msdn.microsoft.com/library/windows/desktop/aa379166)합니다.  
+ 이 메서드는 지정 된 이름을 찾으려고 `SID` (보안 식별자)입니다. 전체 세부 정보를 참조 하세요 [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida)합니다.  
   
  경우에 대 한 계정 이름이 합니다 `SID` 찾을 수 있습니다 `Domain` 도메인을 빈 문자열로 반환 합니다. 이 메서드 이름을 찾는 방지 네트워크 시간 제한 한 경우 발생할 수 있습니다. 이름이 없는 해당 계정에 로그온을 같은 보안 식별자에 발생 `SID` 로그온 세션을 식별 하는 합니다.  
   
@@ -222,7 +222,7 @@ bool EqualPrefix(const CSid& rhs) const throw();
  성공 하면 TRUE를 반환 합니다. 실패 한 경우 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [EqualPrefixSid](http://msdn.microsoft.com/library/windows/desktop/aa446621) 대 한 자세한 내용은 Windows SDK에 있습니다.  
+ 참조 [EqualPrefixSid](https://msdn.microsoft.com/library/windows/desktop/aa446621) 대 한 자세한 내용은 Windows SDK에 있습니다.  
   
 ##  <a name="getlength"></a>  CSid::GetLength  
  길이 반환 합니다 `CSid` 개체입니다.  
@@ -487,7 +487,7 @@ LPCTSTR Sid() const throw(...);
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 반환 된 `SID` 표시, 저장 또는 전송 하는 데 적합 한 형식에서 문자열로 구조입니다. 같음 [ConvertSidToStringSid](http://msdn.microsoft.com/library/windows/desktop/aa376399)합니다.  
+ 반환 된 `SID` 표시, 저장 또는 전송 하는 데 적합 한 형식에서 문자열로 구조입니다. 같음 [ConvertSidToStringSid](/windows/desktop/api/sddl/nf-sddl-convertsidtostringsida)합니다.  
   
 ##  <a name="sidnameuse"></a>  CSid::SidNameUse  
  상태 설명을 반환 합니다 `CSid` 개체입니다.  

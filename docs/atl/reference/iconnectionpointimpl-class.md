@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf1f012067c3a3b85dd5168cf93521e4b2024e00
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: d578aeea847ff04bf29fab11ecf7db2a1776b04f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884049"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217605"
 ---
 # <a name="iconnectionpointimpl-class"></a>IConnectionPointImpl 클래스
 이 클래스는 연결점을 구현합니다.  
@@ -96,7 +96,7 @@ STDMETHOD(Advise)(
 ### <a name="remarks"></a>설명  
  사용 하 여 [unadvise로](#unadvise) 연결 호출을 종료 합니다.  
   
- 참조 [IConnectionPoint::Advise](http://msdn.microsoft.com/library/windows/desktop/ms678815) Windows SDK에에서 있습니다.  
+ 참조 [IConnectionPoint::Advise](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-advise) Windows SDK에에서 있습니다.  
   
 ##  <a name="enumconnections"></a>  IConnectionPointImpl::EnumConnections  
  연결 지점에 대 한 연결을 통해 반복 하는 열거자를 만듭니다.  
@@ -106,7 +106,7 @@ STDMETHOD(EnumConnections)(IEnumConnections** ppEnum);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IConnectionPoint::EnumConnections](http://msdn.microsoft.com/library/windows/desktop/ms680755) Windows SDK에에서 있습니다.  
+ 참조 [IConnectionPoint::EnumConnections](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-enumconnections) Windows SDK에에서 있습니다.  
   
 ##  <a name="getconnectioninterface"></a>  IConnectionPointImpl::GetConnectionInterface  
  연결 지점에서이 나타내는 인터페이스의 IID를 검색 합니다.  
@@ -116,7 +116,7 @@ STDMETHOD(GetConnectionInterface)(IID* piid2);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IConnectionPoint::GetConnectionInterface](http://msdn.microsoft.com/library/windows/desktop/ms693468) Windows SDK에에서 있습니다.  
+ 참조 [IConnectionPoint::GetConnectionInterface](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-getconnectioninterface) Windows SDK에에서 있습니다.  
   
 ##  <a name="getconnectionpointcontainer"></a>  IConnectionPointImpl::GetConnectionPointContainer  
  연결 가능 개체에 대 한 인터페이스 포인터를 검색합니다.  
@@ -126,7 +126,7 @@ STDMETHOD(GetConnectionPointContainer)(IConnectionPointContainer** ppCPC);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IConnectionPoint::GetConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms679669) Windows SDK에에서 있습니다.  
+ 참조 [IConnectionPoint::GetConnectionPointContainer](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-getconnectionpointcontainer) Windows SDK에에서 있습니다.  
   
 ##  <a name="m_vec"></a>  IConnectionPointImpl::m_vec  
  연결 지점 개체와 싱크 간의 연결을 관리합니다.  
@@ -146,8 +146,8 @@ STDMETHOD(Unadvise)(DWORD dwCookie);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [iconnectionpoint:: Unadvise](http://msdn.microsoft.com/library/windows/desktop/ms686608) Windows SDK에에서 있습니다.  
+ 참조 [iconnectionpoint:: Unadvise](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-unadvise) Windows SDK에에서 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [IConnectionPoint](http://msdn.microsoft.com/library/windows/desktop/ms694318)   
+ [IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint)   
  [클래스 개요](../../atl/atl-class-overview.md)

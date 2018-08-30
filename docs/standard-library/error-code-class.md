@@ -29,12 +29,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e97ce9daf097e85dfc9b7b1b74bfcbf6a149fdd
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 38ceffd8a5f01cdc97ee162cc92fce319f771dbe
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027234"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221574"
 ---
 # <a name="errorcode-class"></a>error_code 클래스
 
@@ -172,7 +172,7 @@ error_code(_Enum _Errcode,
 
 첫 번째 생성자는 0 오류 코드 값 및 [generic_category](../standard-library/system-error-functions.md#generic_category)에 대한 포인터를 저장합니다.
 
-두 번째 생성자 저장소 *val* 오류 코드 값 및에 대 한 포인터 [error_category](http://msdn.microsoft.com/6fe57a15-63a1-4e79-8af4-6738e43e19c8)합니다.
+두 번째 생성자 저장소 *val* 오류 코드 값 및에 대 한 포인터 [error_category](https://msdn.microsoft.com/6fe57a15-63a1-4e79-8af4-6738e43e19c8)합니다.
 
 세 번째 생성자는 `(value_type)_Errcode`를 오류 코드 값 및 [generic_category](../standard-library/system-error-functions.md#generic_category)에 대한 포인터로 저장합니다.
 
@@ -238,7 +238,7 @@ bool operator!=(const error_code& right) const;
 
 ## <a name="op_lt"></a>  error_code::operator&lt;
 
-[error_code](http://msdn.microsoft.com/09c6ef90-b6f8-430a-b584-e168716c7e31) 개체가 비교를 위해 전달된 `error_code` 개체보다 작은지 테스트합니다.
+[error_code](https://msdn.microsoft.com/09c6ef90-b6f8-430a-b584-e168716c7e31) 개체가 비교를 위해 전달된 `error_code` 개체보다 작은지 테스트합니다.
 
 ```cpp
 bool operator<(const error_code& right) const;
@@ -260,7 +260,7 @@ bool operator<(const error_code& right) const;
 
 ## <a name="op_eq"></a>  error_code::operator=
 
-새 열거형 값을 [error_code](http://msdn.microsoft.com/09c6ef90-b6f8-430a-b584-e168716c7e31) 개체에 할당합니다.
+새 열거형 값을 [error_code](https://msdn.microsoft.com/09c6ef90-b6f8-430a-b584-e168716c7e31) 개체에 할당합니다.
 
 ```cpp
 template <class _Enum>

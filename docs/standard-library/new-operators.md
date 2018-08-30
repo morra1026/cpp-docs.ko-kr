@@ -9,12 +9,12 @@ f1_keywords:
 ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 327e37d1f13691eca049c98e8b1ab314b393a608
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 11c4f3d1c994ee7a29ee47e35881d533f8c8715a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42539529"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216190"
 ---
 # <a name="ltnewgt-operators"></a>&lt;new&gt; 연산자
 
@@ -45,13 +45,13 @@ void operator delete(void* ptr,
 
 값을 무효 처리 하기 위해 delete 식에서 첫 번째 함수를 호출 *ptr* 잘못 되었습니다. 프로그램은 C++ 표준 라이브러리를 통해 정의되는 기본 버전을 바꾸는 함수를 이 함수 시그니처로 정의할 수 있습니다. 필요한 동작은의 값을 허용 하는 것 *ptr* 즉는 반환 되었거나 null 이전 호출에 의해 [new 연산자](../standard-library/new-operators.md#op_new)(**size_t**).
 
-Null 값에 대 한 기본 동작 *ptr* 아무 작업도 수행 하는 것입니다. 다른 모든 값 *ptr* 앞에서 설명한 대로 호출 하 여 이전에 반환 된 값 이어야 합니다. null이 아닌 값에 대 한 기본 동작 *ptr* 이전 호출에 의해 할당 된 저장소를 회수 하는 것입니다. 이 지정 되지 않은 상황 처럼 회수 된 저장소의 전체 또는 일부에서 할당 하는 후속 호출을 `operator new`(**size_t**), 또는 중 하나 `calloc`( **size_t**), `malloc`( **size_t**), 또는 `realloc`( **void\*** 하십시오 **size_t**).
+Null 값에 대 한 기본 동작 *ptr* 아무 작업도 수행 하는 것입니다. 다른 모든 값 *ptr* 앞에서 설명한 대로 호출 하 여 이전에 반환 된 값 이어야 합니다. null이 아닌 값에 대 한 기본 동작 *ptr* 이전 호출에 의해 할당 된 저장소를 회수 하는 것입니다. 이 지정 되지 않은 상황 처럼 회수 된 저장소의 전체 또는 일부에서 할당 하는 후속 호출을 `operator new`(**size_t**), 또는 중 하나 `calloc`( **size_t**), `malloc`( **size_t**), 또는 `realloc`( **void**<strong>\*</strong>하십시오 **size_t**).
 
 두 번째 함수는 **new**( **std::size_t**) 형식의 new 식에 해당하는 placement delete 식에 의해 호출되며, 아무 작업도 수행하지 않습니다.
 
 세 번째 함수는 **new**( **std::size_t**, **conststd::nothrow_t&**) 형식의 new 식에 해당하는 placement delete 식에 의해 호출됩니다. 프로그램은 C++ 표준 라이브러리를 통해 정의되는 기본 버전을 바꾸는 함수를 이 함수 시그니처로 정의할 수 있습니다. 필요한 동작은 이전 `operator new`( **size_t**) 호출에 의해 반환되었거나 null인 `ptr`의 값을 허용하는 것입니다. 기본 동작을 평가 하는 것 **삭제할**(`ptr`).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 참조 [new 연산자](../standard-library/new-operators.md#op_new) 사용 하는 예로 **delete 연산자**합니다.
 
@@ -75,13 +75,13 @@ void operator delete[](void* ptr,
 
 ### <a name="remarks"></a>설명
 
-첫 번째 함수를 호출 하는 `delete[]` 의 값을 렌더링 하는 식 *ptr* 잘못 되었습니다. 프로그램은 C++ 표준 라이브러리를 통해 정의되는 기본 버전을 바꾸는 함수를 이 함수 시그니처로 정의할 수 있으므로 함수는 교체 가능합니다. 필요한 동작은의 값을 허용 하는 것 *ptr* 즉는 반환 되었거나 null 이전 호출에 의해 [new 연산자&#91;&#93;](../standard-library/new-operators.md#op_new_arr)(**size_t**). Null 값에 대 한 기본 동작 *ptr* 아무 작업도 수행 하는 것입니다. 다른 모든 값 *ptr* 앞에서 설명한 대로 호출 하 여 이전에 반환 된 값 이어야 합니다. null이 아닌 값에 대 한 기본 동작 *ptr* 이전 호출에 의해 할당 된 저장소를 회수 하는 것입니다. 이 지정 되지 않은 상황 처럼 회수 된 저장소의 전체 또는 일부에서 할당 하는 후속 호출 [new 연산자](../standard-library/new-operators.md#op_new)(**size_t**), 또는 `calloc`(**size_t**), `malloc`(**size_t**), 또는 `realloc`( **void\*** 하십시오 **size_t**).
+첫 번째 함수를 호출 하는 `delete[]` 의 값을 렌더링 하는 식 *ptr* 잘못 되었습니다. 프로그램은 C++ 표준 라이브러리를 통해 정의되는 기본 버전을 바꾸는 함수를 이 함수 시그니처로 정의할 수 있으므로 함수는 교체 가능합니다. 필요한 동작은의 값을 허용 하는 것 *ptr* 즉는 반환 되었거나 null 이전 호출에 의해 [new 연산자&#91;&#93;](../standard-library/new-operators.md#op_new_arr)(**size_t**). Null 값에 대 한 기본 동작 *ptr* 아무 작업도 수행 하는 것입니다. 다른 모든 값 *ptr* 앞에서 설명한 대로 호출 하 여 이전에 반환 된 값 이어야 합니다. 이러한 null이 아닌 값에 대 한 기본 동작 *ptr* 이전 호출에 의해 할당 된 저장소를 회수 하는 것입니다. 이 지정 되지 않은 상황 처럼 회수 된 저장소의 전체 또는 일부에서 할당 하는 후속 호출 [new 연산자](../standard-library/new-operators.md#op_new)(**size_t**), 또는 `calloc`(**size_t**), `malloc`(**size_t**), 또는 `realloc`( **void**<strong>\*</strong>하십시오 **size_t**) .
 
 배치 하 여 두 번째 함수를 호출 `delete[]` 식에 해당 하는 `new[]` 형식의 식을 `new[]`(**std:: size_t**). 아무 작업도 수행하지 않습니다.
 
 세 번째 함수는 `new[]`( **std::size_t**, **const std::nothrow_t&**) 형식의 `new[]` 식에 해당하는 placement delete 식에 의해 호출됩니다. 프로그램은 C++ 표준 라이브러리를 통해 정의되는 기본 버전을 바꾸는 함수를 이 함수 시그니처로 정의할 수 있습니다. 필요한 동작은 값에 적용할 *ptr* null 또는 연산자에 대 한 이전 호출에서 반환 된 즉 `new[]`(**size_t**). 기본 동작은 `delete[]`( `ptr`)를 평가하는 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `operator delete[]` 사용 방법의 예제는 [operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr)를 참조하세요.
 
@@ -139,7 +139,7 @@ void* operator new(std::size_t count,
 
 new의 throw 또는 비throw 동작에 대한 자세한 내용은 [new 및 delete 연산자](../cpp/new-and-delete-operators.md)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // new_op_new.cpp
@@ -218,7 +218,7 @@ void* operator new[](std::size_t count,
 
 new의 throw 또는 비throw 동작에 대한 자세한 내용은 [new 및 delete 연산자](../cpp/new-and-delete-operators.md)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // new_op_alloc.cpp

@@ -102,12 +102,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 83cf5f7cbe9b903f9cdc7a96b2fa046ff3f9eab5
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 07b582c8b785adb13acce86497d898c183b3128b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42541135"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205147"
 ---
 # <a name="cmfctoolbarmenubutton-class"></a>CMFCToolBarMenuButton 클래스
 팝업 메뉴를 포함하는 도구 모음 단추입니다.  
@@ -154,7 +154,7 @@ class CMFCToolBarMenuButton : public CMFCToolBarButton
 |[CMFCToolBarMenuButton::OnAfterCreatePopupMenu](#onaftercreatepopupmenu)||  
 |[CMFCToolBarMenuButton::OnBeforeDrag](#onbeforedrag)|단추를 놓을 수 있는지 여부를 지정 합니다. (재정의 [CMFCToolBarButton::OnBeforeDrag](../../mfc/reference/cmfctoolbarbutton-class.md#onbeforedrag).)|  
 |[CMFCToolBarMenuButton::OnCalculateSize](#oncalculatesize)|지정 된 디바이스 컨텍스트 및 도킹 상태에 대 한 단추의 크기를 계산 하기 위해 프레임 워크에서 호출 됩니다. (재정의 [CMFCToolBarButton::OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize).)|  
-|[CMFCToolBarMenuButton::OnCancelMode](#oncancelmode)|처리 하기 위해 프레임 워크에서 호출 된 [WM_CANCELMODE](http://msdn.microsoft.com/library/windows/desktop/ms632615) 메시지입니다. (재정의 [CMFCToolBarButton::OnCancelMode](../../mfc/reference/cmfctoolbarbutton-class.md#oncancelmode).)|  
+|[CMFCToolBarMenuButton::OnCancelMode](#oncancelmode)|처리 하기 위해 프레임 워크에서 호출 된 [WM_CANCELMODE](/windows/desktop/winmsg/wm-cancelmode) 메시지입니다. (재정의 [CMFCToolBarButton::OnCancelMode](../../mfc/reference/cmfctoolbarbutton-class.md#oncancelmode).)|  
 |[CMFCToolBarMenuButton::OnChangeParentWnd](#onchangeparentwnd)|새 도구 모음에 단추를 삽입할 때 프레임 워크에서 호출 됩니다. (재정의 [CMFCToolBarButton::OnChangeParentWnd](cmfctoolbarbutton-class.md#onchangeparentwnd).)|  
 |[CMFCToolBarMenuButton::OnClick](#onclick)|사용자가 마우스 단추를 클릭 하면 프레임 워크에서 호출 됩니다. (재정의 [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick).)|  
 |[CMFCToolBarMenuButton::OnClickMenuItem](#onclickmenuitem)|사용자가 팝업 메뉴에서 항목을 선택할 때 프레임 워크에서 호출 됩니다.|  
@@ -189,7 +189,7 @@ class CMFCToolBarMenuButton : public CMFCToolBarButton
   
  사용자 지정 클래스에서 파생 된 `CMFCToolbarMenuButton` 클래스를 사용 해야 합니다는 [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) 매크로입니다. 합니다 [DECLARE_DYNCREATE](run-time-object-model-services.md#declare_dyncreate) 매크로 응용 프로그램을 닫으면 오류를 생성 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 구성 하는 방법에 설명 된 `CMFCToolBarMenuButton` 개체입니다. 코드는 드롭다운 메뉴 색상표 모드 인지를 지정 하 고 메뉴 모음에서 메뉴 단추를 끌 때 생성 되는 분리 막대가 막대에 대 한 ID를 지정 하는 방법을 보여 줍니다. 이 코드 조각은 [워드 패드 샘플](../../visual-cpp-samples.md)의 일부입니다.  
   
  [!code-cpp[NVC_MFC_WordPad#10](../../mfc/reference/codesnippet/cpp/cmfctoolbarmenubutton-class_1.cpp)]  
@@ -241,7 +241,7 @@ CMFCToolBarMenuButton(
 ### <a name="remarks"></a>설명  
  하는 경우 *uiID* 유효한 명령 ID, 단추를 클릭할 때 해당 명령을 수행 합니다. 하는 경우 *hMenu* 핸들이 유효한 메뉴 단추를 메뉴에 나타나는 경우 도구 모음 또는 하위 메뉴에 표시 될 경우 드롭 다운 메뉴를 제공 합니다. 둘 다 *uiID* 하 고 *hMenu* 단추를 클릭할 때 명령을 수행 하는 부분과 드롭 다운 메뉴는 아래쪽 화살표를 사용 하 여 일부를 사용 하 여 분할 단추는 사용할 때 사용자 클릭합니다. 그러나 경우 *hMenu* 유효 사용자 메뉴에 단추를 삽입할 때 명령을 수행 하려면 단추를 클릭할 수 없습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는의 개체를 생성 하는 방법에 설명 합니다 `CMFCToolBarMenuButton` 클래스입니다. 이 코드 조각은 [워드 패드 샘플](../../visual-cpp-samples.md)의 일부입니다.  
   
  [!code-cpp[NVC_MFC_WordPad#9](../../mfc/reference/codesnippet/cpp/cmfctoolbarmenubutton-class_2.cpp)]  

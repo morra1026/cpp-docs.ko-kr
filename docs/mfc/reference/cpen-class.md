@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 132936805d948257f8d6579f0f840aaf2fd15a0d
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 60fb1c219068cc0c59f908688ea5c471946458ad
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849660"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204143"
 ---
 # <a name="cpen-class"></a>CPen 클래스
 Windows GDI(그래픽 장치 인터페이스) 펜을 캡슐화합니다.  
@@ -57,10 +57,10 @@ class CPen : public CGdiObject
 |이름|설명|  
 |----------|-----------------|  
 |[CPen::CreatePen](#createpen)|지정 된 스타일, 너비 및 브러시 특성을 사용 하 여 논리적 외관 또는 기하학적 펜을을 만들고에 연결 된 `CPen` 개체입니다.|  
-|[CPen::CreatePenIndirect](#createpenindirect)|펜 스타일, 두께 및 색에 지정 된을 만드는 데는 [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) 구조체와 연결 하는 `CPen` 개체입니다.|  
+|[CPen::CreatePenIndirect](#createpenindirect)|펜 스타일, 두께 및 색에 지정 된을 만드는 데는 [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen) 구조체와 연결 하는 `CPen` 개체입니다.|  
 |[CPen::FromHandle](#fromhandle)|에 대 한 포인터를 반환 합니다.는 `CPen` Windows HPEN 지정 되 면 개체입니다.|  
-|[CPen::GetExtLogPen](#getextlogpen)|가져옵니다는 [EXTLOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd162711) 기본 구조입니다.|  
-|[CPen::GetLogPen](#getlogpen)|가져옵니다를 [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) 기본 구조입니다.|  
+|[CPen::GetExtLogPen](#getextlogpen)|가져옵니다는 [EXTLOGPEN](/windows/desktop/api/wingdi/ns-wingdi-tagextlogpen) 기본 구조입니다.|  
+|[CPen::GetLogPen](#getlogpen)|가져옵니다를 [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen) 기본 구조입니다.|  
   
 ### <a name="public-operators"></a>Public 연산자  
   
@@ -144,7 +144,7 @@ CPen(
   
 - PS_JOIN_BEVEL 조인 경사진 됩니다.  
   
-- PS_JOIN_MITER 조인 된 각으로 설정 된 현재 제한 내에서 서로 [SetMiterLimit](http://msdn.microsoft.com/library/windows/desktop/dd145076) 함수입니다. 이 제한을 초과 하는 조인, 경사진 합니다.  
+- PS_JOIN_MITER 조인 된 각으로 설정 된 현재 제한 내에서 서로 [SetMiterLimit](/windows/desktop/api/wingdi/nf-wingdi-setmiterlimit) 함수입니다. 이 제한을 초과 하는 조인, 경사진 합니다.  
   
 - PS_JOIN_ROUND 조인 반올림 됩니다.  
   
@@ -172,7 +172,7 @@ CPen(
   
  인수를 받는 생성자를 사용 하면 추가 초기화가 필요 합니다. 오류가 발생 하는 경우 생성자는 인수 없이 항상 성공 하는 동안 인수를 사용 하 여 생성자에서 예외를 throw 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#99](../../mfc/codesnippet/cpp/cpen-class_1.cpp)]  
   
 ##  <a name="createpen"></a>  CPen::CreatePen  
@@ -208,7 +208,7 @@ BOOL CreatePen(
  펜에 대 한 RGB 색을 포함합니다.  
   
  *pLogBrush*  
- 가리키는 [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) 구조입니다. 경우 *nPenStyle* PS_COSMETIC는 `lbColor` 의 멤버는 `LOGBRUSH` 펜의 색을 지정 하는 구조 및 *lbStyle* 의 멤버는 `LOGBRUSH` 구조 BS_로 설정 되어야 합니다 실선입니다. NPenStyle PS_GEOMETRIC 이면 펜의 브러시 특성을 지정 하려면 모든 멤버를 사용 합니다.  
+ 가리키는 [LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush) 구조입니다. 경우 *nPenStyle* PS_COSMETIC는 `lbColor` 의 멤버는 `LOGBRUSH` 펜의 색을 지정 하는 구조 및 *lbStyle* 의 멤버는 `LOGBRUSH` 구조 BS_로 설정 되어야 합니다 실선입니다. NPenStyle PS_GEOMETRIC 이면 펜의 브러시 특성을 지정 하려면 모든 멤버를 사용 합니다.  
   
  *nStyleCount*  
  워드 단위에서 길이 지정 합니다 *lpStyle* 배열입니다. 이 값은 경우에는 0 이어야 *nPenStyle* PS_USERSTYLE 아닙니다.  
@@ -236,7 +236,7 @@ BOOL CreatePen(
   
  호출 해야 응용 프로그램 지정된 펜을 더 이상 필요한 경우는 [CGdiObject::DeleteObject](../../mfc/reference/cgdiobject-class.md#deleteobject) 멤버 함수 또는 삭제는 `CPen` 되므로 리소스를 사용에서 하지 않습니다. 개체입니다. 펜 장치 컨텍스트에서 선택 하면 응용 프로그램 펜을 삭제 안 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#100](../../mfc/codesnippet/cpp/cpen-class_2.cpp)]  
   
 ##  <a name="createpenindirect"></a>  CPen::CreatePenIndirect  
@@ -258,7 +258,7 @@ BOOL CreatePenIndirect(LPLOGPEN lpLogPen);
   
  펜 PS_INSIDEFRAME 스타일 및 색 논리 색상표에서 색을 일치 하지 않는 경우, 펜 디더링된 색으로 그려집니다. PS_INSIDEFRAME 스타일은 1 보다 작거나 펜 굵기 이면 PS_SOLID 동일 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#101](../../mfc/codesnippet/cpp/cpen-class_3.cpp)]  
   
 ##  <a name="fromhandle"></a>  CPen::FromHandle  
@@ -278,7 +278,7 @@ static CPen* PASCAL FromHandle(HPEN hPen);
 ### <a name="remarks"></a>설명  
  `CPen` 개체가 핸들에 연결되지 않은 경우 임시 `CPen` 개체를 만들어 연결합니다. 이 임시 `CPen` 개체는 다음에 응용 프로그램에 유휴 시간 이벤트 루프에서 될 때까지 모든 임시 그래픽 시간이 개체는 삭제만 유효 합니다. 즉, 임시 개체는 하나의 창 메시지를 처리 하는 동안에 유효 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#105](../../mfc/codesnippet/cpp/cpen-class_4.cpp)]  
   
 ##  <a name="getextlogpen"></a>  CPen::GetExtLogPen  
@@ -290,7 +290,7 @@ int GetExtLogPen(EXTLOGPEN* pLogPen);
   
 ### <a name="parameters"></a>매개 변수  
  *pLogPen*  
- 가리키는 [EXTLOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd162711) 펜에 대 한 정보를 포함 하는 구조입니다.  
+ 가리키는 [EXTLOGPEN](/windows/desktop/api/wingdi/ns-wingdi-tagextlogpen) 펜에 대 한 정보를 포함 하는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -300,15 +300,15 @@ int GetExtLogPen(EXTLOGPEN* pLogPen);
   
  펜 특성에 대 한 내용은 Windows SDK의 다음 항목을 참조 하세요.  
   
-- [GetObject](http://msdn.microsoft.com/library/windows/desktop/dd144904)  
+- [GetObject](/windows/desktop/api/wingdi/nf-wingdi-getobject)  
   
-- [EXTLOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd162711)  
+- [EXTLOGPEN](/windows/desktop/api/wingdi/ns-wingdi-tagextlogpen)  
   
-- [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041)  
+- [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen)  
   
-- [ExtCreatePen](http://msdn.microsoft.com/library/windows/desktop/dd162705)  
+- [ExtCreatePen](/windows/desktop/api/wingdi/nf-wingdi-extcreatepen)  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서는 호출 `GetExtLogPen` 펜의 특성을 검색 하 고 다음 같은 색을 사용 하 여 새, 표면적인 펜을 만들 합니다.  
   
  [!code-cpp[NVC_MFCDocView#102](../../mfc/codesnippet/cpp/cpen-class_5.cpp)]  
@@ -322,7 +322,7 @@ int GetLogPen(LOGPEN* pLogPen);
   
 ### <a name="parameters"></a>매개 변수  
  *pLogPen*  
- 가리키는 [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) 펜에 대 한 정보를 포함 하는 구조입니다.  
+ 가리키는 [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen) 펜에 대 한 정보를 포함 하는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -334,11 +334,11 @@ int GetLogPen(LOGPEN* pLogPen);
   
  펜 특성에 대 한 내용은 Windows SDK의 다음 항목을 참조 하세요.  
   
-- [GetObject](http://msdn.microsoft.com/library/windows/desktop/dd144904)  
+- [GetObject](/windows/desktop/api/wingdi/nf-wingdi-getobject)  
   
-- [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041)  
+- [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen)  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서는 호출 `GetLogPen` 펜의 문자를 검색 하 고 다음 같은 색을 사용 하 여 새, 단색 펜을 만들 합니다.  
   
  [!code-cpp[NVC_MFCDocView#103](../../mfc/codesnippet/cpp/cpen-class_6.cpp)]  
@@ -356,9 +356,9 @@ operator HPEN() const;
 ### <a name="remarks"></a>설명  
  이 연산자는 캐스팅 연산자를 HPEN 개체의 직접 사용을 지원 합니다.  
   
- 그래픽 개체를 사용 하는 방법에 대 한 자세한 내용은 문서 참조 [그래픽 개체](http://msdn.microsoft.com/library/windows/desktop/dd144962) Windows SDK에 있습니다.  
+ 그래픽 개체를 사용 하는 방법에 대 한 자세한 내용은 문서 참조 [그래픽 개체](/windows/desktop/gdi/graphic-objects) Windows SDK에 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#104](../../mfc/codesnippet/cpp/cpen-class_7.cpp)]  
   
 ## <a name="see-also"></a>참고 항목  

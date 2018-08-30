@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4c7329e7784fc5228bca5aa5b167d04ded51aaf
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 43ce702c1da30e6f624477b74e381576539ef9e0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852289"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214784"
 ---
 # <a name="example-implementing-a-property-page"></a>예: 속성 페이지 구현
 속성 페이지의 속성을 표시 (및 변경할 수 있습니다)를 빌드하는 방법을 보여 주는이 예제는 [문서 클래스](../mfc/document-classes.md) 인터페이스입니다.  
@@ -70,7 +70,7 @@ ms.locfileid: "37852289"
  이러한 컨트롤은 문서와 읽기 전용 상태가의 파일 이름을 표시 하도록 사용 됩니다.  
   
 > [!NOTE]
->  대화 상자 리소스는 프레임이 나 명령 단추를 다루지 않습니다 아니며 예상 된 탭된 형태 사용 하지 않습니다. 이러한 기능을 호출 하 여 만든 것과 같은 속성 페이지 프레임 제공 [OleCreatePropertyFrame](http://msdn.microsoft.com/library/windows/desktop/ms678437)합니다.  
+>  대화 상자 리소스는 프레임이 나 명령 단추를 다루지 않습니다 아니며 예상 된 탭된 형태 사용 하지 않습니다. 이러한 기능을 호출 하 여 만든 것과 같은 속성 페이지 프레임 제공 [OleCreatePropertyFrame](/windows/desktop/api/olectl/nf-olectl-olecreatepropertyframe)합니다.  
   
 ##  <a name="vcconadding_message_handlers"></a> 메시지 처리기 추가  
  위치에 컨트롤을 컨트롤 중 하나의 값이 변경 될 페이지의 변경 상태를 업데이트 하는 메시지 처리기를 추가할 수 있습니다.  

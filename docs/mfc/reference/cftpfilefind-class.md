@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b8cf828ab0373c3bd09d22af5f2ced702cc68aa
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 795261da81fbe8082e279bc3830f004d845e1ea7
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336021"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196938"
 ---
 # <a name="cftpfilefind-class"></a>CFtpFileFind 클래스
 FTP 서버의 인터넷 파일 검색에 유용합니다.  
@@ -63,7 +63,7 @@ class CFtpFileFind : public CFileFind
   
  사용 하는 방법에 대 한 자세한 내용은 `CFtpFileFind` 문서를 참조 하는 다른 WinInet 클래스 및 [WinInet을 사용 하 여 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드에는 FTP 서버의 현재 디렉터리의 모든 파일을 열거 하는 방법을 보여 줍니다.  
   
  [!code-cpp[NVC_MFCWinInet#8](../../mfc/codesnippet/cpp/cftpfilefind-class_1.cpp)]  
@@ -97,7 +97,7 @@ explicit CFtpFileFind(
 ### <a name="remarks"></a>설명  
  기본값 *dwContext* MFC에서 전송한 합니다 `CFtpFileFind` 에서 개체를 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 만든 개체를 `CFtpFileFind` 개체입니다. 원하는 값으로 컨텍스트 식별자를 설정 하려면 기본값을 재정의할 수 있습니다. 컨텍스트 식별자에 반환 됩니다 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 개체의 상태를 제공 합니다. 문서를 참조 하세요 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   이 항목의 앞부분에 있는 클래스 개요의 예제를 참조 하세요.  
   
 ##  <a name="findfile"></a>  :: Findfile  
@@ -120,19 +120,19 @@ virtual BOOL FindFile(
   
 -   로컬 또는 gateways에는 데이터를 캐시 하지 INTERNET_FLAG_DONT_CACHE 마십시오.  
   
--   INTERNET_FLAG_RAW_DATA 원시 데이터를 반환 하도록 기본값을 재정의 ( [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) FTP에 대 한 구조).  
+-   INTERNET_FLAG_RAW_DATA 원시 데이터를 반환 하도록 기본값을 재정의 ( [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) FTP에 대 한 구조).  
   
 -   Secure Sockets Layer 또는 pct.를 사용 하 여 통신 중에 트랜잭션을 INTERNET_FLAG_SECURE 보호 이 플래그는 HTTP 요청에만 적용 됩니다.  
   
 -   가능 하다 면 INTERNET_FLAG_EXISTING_CONNECT 새로운 서버로 기존 연결을 다시 사용 `FindFile` 각 요청에 대 한 새 세션을 만드는 대신 요청 합니다.  
   
 ### <a name="return-value"></a>반환 값  
- 성공하면 0이 아니고, 그렇지 않으면 0입니다. 확장 오류 정보를 가져오기, Win32 함수 호출 [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360)합니다.  
+ 성공하면 0이 아니고, 그렇지 않으면 0입니다. 확장 오류 정보를 가져오기, Win32 함수 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)합니다.  
   
 ### <a name="remarks"></a>설명  
  호출한 후 `FindFile` 첫 번째 FTP 파일을 검색 하려면 호출할 수 있습니다 [FindNextFile](#findnextfile) 후속 FTP 파일을 검색 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   이 항목의 이전 예제를 참조 하세요.  
   
 ##  <a name="findnextfile"></a>  :: Findnextfile  
@@ -143,14 +143,14 @@ virtual BOOL FindNextFile();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 더 많은 파일; 없으면 0이 아닌 값 파일을 찾을 수는 디렉터리에 마지막 또는 오류가 발생 한 경우 0입니다. 확장 오류 정보를 가져오기, Win32 함수 호출 [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360)합니다. 찾은 파일 디렉터리에 마지막 파일 되었거나 일치 하는 경우에 파일을 찾을 수 있습니다는 `GetLastError` ERROR_NO_MORE_FILES를 반환 합니다.  
+ 더 많은 파일; 없으면 0이 아닌 값 파일을 찾을 수는 디렉터리에 마지막 또는 오류가 발생 한 경우 0입니다. 확장 오류 정보를 가져오기, Win32 함수 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)합니다. 찾은 파일 디렉터리에 마지막 파일 되었거나 일치 하는 경우에 파일을 찾을 수 있습니다는 `GetLastError` ERROR_NO_MORE_FILES를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
  이 함수 특성 함수를 호출 하기 전에 한 번 이상 호출 해야 합니다 (참조 [CFileFind::FindNextFile](../../mfc/reference/cfilefind-class.md#findnextfile)).  
   
- `FindNextFile` Win32 함수를 래핑하고 [FindNextFile](http://msdn.microsoft.com/library/windows/desktop/aa364428)합니다.  
+ `FindNextFile` Win32 함수를 래핑하고 [FindNextFile](/windows/desktop/api/fileapi/nf-fileapi-findnextfilea)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   이 항목 앞부분에 나오는 예제를 참조 하세요.  
   
 ##  <a name="getfileurl"></a>  CFtpFileFind::GetFileURL  

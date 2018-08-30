@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: add135c353366ed54a24c63fcce2101c49d24fe7
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: c767b39874ff64082d8533f92a9e006f69835c97
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338583"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205937"
 ---
 # <a name="cclientdc-class"></a>CClientDC 클래스
-Windows 함수 호출을 맡고 [GetDC](http://msdn.microsoft.com/library/windows/desktop/dd144871) 생성 시 및 [ReleaseDC](http://msdn.microsoft.com/library/windows/desktop/dd162920) 소멸 시.  
+Windows 함수 호출을 맡고 [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) 생성 시 및 [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) 소멸 시.  
   
 ## <a name="syntax"></a>구문  
   
@@ -77,11 +77,11 @@ explicit CClientDC(CWnd* pWnd);
  창의 장치 컨텍스트 개체를 액세스 하는 클라이언트 영역입니다.  
   
 ### <a name="remarks"></a>설명  
- Windows 함수를 호출 하는 생성자 [GetDC](http://msdn.microsoft.com/library/windows/desktop/dd144871)합니다.  
+ Windows 함수를 호출 하는 생성자 [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc)합니다.  
   
  예외 (형식의 `CResourceException`) 하는 경우 throw 되는 Windows `GetDC` 호출이 실패 합니다. 장치 컨텍스트에 Windows에 이미 할당 모든 사용 가능한 장치 컨텍스트에서 사용할 수 있습니다. 응용 프로그램 Windows 아래에서 언제 든 지 사용할 수 있는 5 개의 일반적인 표시 컨텍스트에 대해 경합 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#42](../../mfc/codesnippet/cpp/cclientdc-class_1.cpp)]  
   
 ##  <a name="m_hwnd"></a>  CClientDC::m_hWnd  
@@ -94,7 +94,7 @@ HWND m_hWnd;
 ### <a name="remarks"></a>설명  
  *m_hWnd* 보호 된 변수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CClientDC::CClientDC](#cclientdc)합니다.  
   
 ## <a name="see-also"></a>참고 항목  

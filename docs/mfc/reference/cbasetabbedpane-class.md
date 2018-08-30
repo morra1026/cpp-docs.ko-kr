@@ -72,12 +72,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df130c2d5eee3e661f7ead2db156d2ac33349f68
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 412010f7e8599ab9a97ea5a4e5cab55fca6051a0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027760"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213858"
 ---
 # <a name="cbasetabbedpane-class"></a>CBaseTabbedPane 클래스
 [CDockablePane Class](../../mfc/reference/cdockablepane-class.md) 의 기능을 확장하여 탭 창 만들기를 지원합니다.  
@@ -128,7 +128,7 @@ class CBaseTabbedPane : public CDockablePane
 |[CBaseTabbedPane::RecalcLayout](#recalclayout)|창에 대 한 레이아웃 정보를 다시 계산합니다. (재정의 [cpane:: Recalclayout](../../mfc/reference/cpane-class.md#recalclayout).)|  
 |[CBaseTabbedPane::RemovePane](#removepane)|창이 탭된 창에서 제거합니다.|  
 |`CBaseTabbedPane::SaveSiblingBarIDs`|직렬화 하는 동안 내부적으로 사용 합니다.|  
-|`CBaseTabbedPane::Serialize`|(재정의 [cdockablepane:: Serialize](http://msdn.microsoft.com/09787e59-e446-4e76-894b-206d303dcfd6).)|  
+|`CBaseTabbedPane::Serialize`|(재정의 [cdockablepane:: Serialize](https://msdn.microsoft.com/09787e59-e446-4e76-894b-206d303dcfd6).)|  
 |`CBaseTabbedPane::SerializeTabWindow`|직렬화 하는 동안 내부적으로 사용 합니다.|  
 |[CBaseTabbedPane::SetAutoDestroy](#setautodestroy)|탭된 컨트롤 막대에는 자동으로 소멸 됩니다 있는지 여부를 결정 합니다.|  
 |[CBaseTabbedPane::SetAutoHideMode](#setautohidemode)|도킹 창 간에 표시 설정/해제 및 자동 숨기기 모드입니다. (재정의 [CDockablePane::SetAutoHideMode](../../mfc/reference/cdockablepane-class.md#setautohidemode).)|  

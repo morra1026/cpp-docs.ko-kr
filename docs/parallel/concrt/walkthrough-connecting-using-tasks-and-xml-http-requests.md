@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8333ffcb1de62f4af5ee0a3ec0412ad742af7192
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 42588b844158ebe995a9d07dc206679580db12fe
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42541902"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201170"
 ---
 # <a name="walkthrough-connecting-using-tasks-and-xml-http-requests"></a>연습: 작업 및 XML HTTP 요청을 사용하여 연결
 사용 하는 방법을 보여 주는이 예제는 [IXMLHTTPRequest2](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) 하 고 [IXMLHTTPRequest2Callback](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) 유니버설 Windows 플랫폼 (UWP에서 웹 서비스에 HTTP GET 및 POST 요청을 보내는 작업 함께 인터페이스 ) 앱입니다. `IXMLHTTPRequest2`를 작업과 함께 결합하여 다른 작업을 사용하여 구성되는 코드를 작성할 수 있습니다. 예를 들어 일련의 작업 중 일부로 다운로드 작업을 사용할 수 있습니다. 다운로드 작업은 작업이 취소되는 경우에도 응답할 수 있습니다.  
@@ -33,7 +33,7 @@ ms.locfileid: "42541902"
   
  이 문서에서는 먼저 `HttpRequest` 및 해당 지원 클래스를 만드는 방법을 보여 줍니다. 다음 c + + 및 XAML을 사용 하는 UWP 앱에서이 클래스를 사용 하는 방법을 보여 줍니다.  
   
- 사용 하는 자세한 예제는 `HttpReader` 이 문서에 설명 된 클래스 참조 [개발 Bing Maps Trip Optimizer, JavaScript 및 c + + Windows 스토어 앱을](http://msdn.microsoft.com/library/974cf025-de1a-4299-b7dd-c6c7bf0e5d30)합니다. 사용 하는 또 다른 예로 `IXMLHTTPRequest2` 는 작업을 사용 하 여을 제외한 참조 [빠른 시작: XML HTTP 요청 (IXMLHTTPRequest2)를 사용 하 여 연결](http://msdn.microsoft.com/en-us/cc7aed53-b2c5-4d83-b85d-cff2f5ba7b35)합니다.  
+ 사용 하는 자세한 예제는 `HttpReader` 이 문서에 설명 된 클래스 참조 [개발 Bing Maps Trip Optimizer, JavaScript 및 c + + Windows 스토어 앱을](https://msdn.microsoft.com/library/974cf025-de1a-4299-b7dd-c6c7bf0e5d30)합니다. 사용 하는 또 다른 예로 `IXMLHTTPRequest2` 는 작업을 사용 하 여을 제외한 참조 [빠른 시작: XML HTTP 요청 (IXMLHTTPRequest2)를 사용 하 여 연결](https://msdn.microsoft.com/cc7aed53-b2c5-4d83-b85d-cff2f5ba7b35)합니다.  
   
 > [!TIP]
 >  `IXMLHTTPRequest2` 및 `IXMLHTTPRequest2Callback` 은 UWP 앱에서 사용 하기 위해 권장 되는 인터페이스입니다. 데스크톱 응용 프로그램에서 사용할 수 있도록 이 예제를 조정할 수도 있습니다.  
@@ -72,7 +72,7 @@ ms.locfileid: "42541902"
   
 #### <a name="to-use-the-httprequest-class"></a>HttpRequest 클래스를 사용하려면  
   
-1.  MainPage.xaml을 정의 합니다 [StackPanel](http://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.stackpanel.aspx) 다음과 같은 요소입니다.  
+1.  MainPage.xaml을 정의 합니다 [StackPanel](https://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.stackpanel.aspx) 다음과 같은 요소입니다.  
   
      [!code-xml[concrt-using-ixhr2#A1](../../parallel/concrt/codesnippet/xaml/walkthrough-connecting-using-tasks-and-xml-http-requests_4.xaml)]  
   
@@ -121,6 +121,6 @@ ms.locfileid: "42541902"
  [PPL에서의 취소](cancellation-in-the-ppl.md)   
  [C + +의 비동기 프로그래밍](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps)   
  [C + + UWP 앱 용 비동기 작업 만들기](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)   
- [빠른 시작: XML HTTP 요청 (IXMLHTTPRequest2)를 사용 하 여 연결](http://msdn.microsoft.com/en-us/cc7aed53-b2c5-4d83-b85d-cff2f5ba7b35)   
+ [빠른 시작: XML HTTP 요청 (IXMLHTTPRequest2)를 사용 하 여 연결](https://msdn.microsoft.com/cc7aed53-b2c5-4d83-b85d-cff2f5ba7b35)   
  [task 클래스 (동시성 런타임)](../../parallel/concrt/reference/task-class.md)   
  [task_completion_event 클래스](../../parallel/concrt/reference/task-completion-event-class.md)

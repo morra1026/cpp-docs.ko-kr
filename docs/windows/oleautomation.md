@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a868d3a5b798b7ca237642d7f7d5e3acf6668926
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ea14cd3e8c1eebbdbcad3a21d64652acee635407
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609847"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219941"
 ---
 # <a name="oleautomation"></a>oleautomation
 
@@ -36,9 +36,9 @@ Automation 호환 인터페이스를 나타냅니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **oleautomation** c + + 특성에 동일한 기능을 합니다 [oleautomation](http://msdn.microsoft.com/library/windows/desktop/aa367129) MIDL 특성입니다.
+합니다 **oleautomation** c + + 특성에 동일한 기능을 합니다 [oleautomation](/windows/desktop/Midl/oleautomation) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 에 대 한 예제를 참조 하세요 [defaultvalue](../windows/defaultvalue.md) 하 고 [nonextensible](../windows/nonextensible.md) 의 샘플 사용에 대 한 **oleautomation**합니다.
 

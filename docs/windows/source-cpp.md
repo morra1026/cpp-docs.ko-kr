@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 921510a548f638f06953f95abe79f825e57e179b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ccd5f5220a49ddb63554b4c3b96533a3066d4d4b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42586860"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214595"
 ---
 # <a name="source-c"></a>source(C++)
 
@@ -43,11 +43,11 @@ ms.locfileid: "42586860"
 
 ## <a name="remarks"></a>설명
 
-합니다 **원본** c + + 특성에 동일한 기능을 합니다 [원본](http://msdn.microsoft.com/library/windows/desktop/aa367166) MIDL 특성입니다.
+합니다 **원본** c + + 특성에 동일한 기능을 합니다 [원본](/windows/desktop/Midl/source) MIDL 특성입니다.
 
 사용할 수는 [기본](../windows/default-cpp.md) 개체에 대 한 기본 소스 인터페이스를 지정 하는 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // cpp_attr_ref_source.cpp

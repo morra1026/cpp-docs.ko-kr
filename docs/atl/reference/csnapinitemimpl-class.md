@@ -37,12 +37,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77f92e2a0a5ea65fce361c19ae52745932f58deb
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: a2b120ab308e8d46ac4c874681d62bbeaaa86588
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884934"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205546"
 ---
 # <a name="csnapinitemimpl-class"></a>CSnapInItemImpl 클래스
 이 클래스는 스냅인 노드 개체를 구현 하기 위한 메서드를 제공 합니다.  
@@ -110,7 +110,7 @@ class ATL_NO_VTABLE CSnapInItemImpl : public CSnapInItem
  **헤더:** atlsnap.h  
   
 ##  <a name="addmenuitems"></a>  CSnapInItemImpl::AddMenuItems  
- 이 메서드 구현 Win32 함수 [IExtendContextMenu::AddMenuItems](http://msdn.microsoft.com/library/aa814841)합니다.  
+ 이 메서드 구현 Win32 함수 [IExtendContextMenu::AddMenuItems](https://msdn.microsoft.com/library/aa814841)합니다.  
   
 ```
 AddMenuItems(  
@@ -146,7 +146,7 @@ AddMenuItems(
 - CCT_UNINITIALIZED 데이터 개체 유형이 잘못 되었습니다.  
   
 ##  <a name="command"></a>  CSnapInItemImpl::Command  
- 이 메서드 구현 Win32 함수 [IExtendContextMenu::Command](http://msdn.microsoft.com/library/aa814842)합니다.  
+ 이 메서드 구현 Win32 함수 [IExtendContextMenu::Command](https://msdn.microsoft.com/library/aa814842)합니다.  
   
 ```
 Command(long lCommandID, DATA_OBJECT_TYPES type);
@@ -168,7 +168,7 @@ Command(long lCommandID, DATA_OBJECT_TYPES type);
 - CCT_UNINITIALIZED 데이터 개체 유형이 잘못 되었습니다.  
   
 ##  <a name="createpropertypages"></a>  CSnapInItemImpl::CreatePropertyPages  
- 이 메서드 구현 Win32 함수 [IExtendPropertySheet::CreatePropertyPages](http://msdn.microsoft.com/library/aa814846)합니다.  
+ 이 메서드 구현 Win32 함수 [IExtendPropertySheet::CreatePropertyPages](https://msdn.microsoft.com/library/aa814846)합니다.  
   
 ```
 CreatePropertyPages(  
@@ -280,7 +280,7 @@ SCOPEDATAITEM m_scopeDataItem;
 ```  
   
 ##  <a name="m_resultdataitem"></a>  CSnapInItemImpl::m_resultDataItem  
- 합니다 [RESULTDATAITEM](http://msdn.microsoft.com/library/aa815165) 스냅인 데이터 개체의 구조가 있습니다.  
+ 합니다 [RESULTDATAITEM](https://msdn.microsoft.com/library/aa815165) 스냅인 데이터 개체의 구조가 있습니다.  
   
 ```
 RESULTDATAITEM m_resultDataItem;

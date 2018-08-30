@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac3c020bbb5ff46f4684c9ed089a2fe327de252e
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 8de1f44b079b269d76054b1a221a8ec3e36daf5e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884365"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209327"
 ---
 # <a name="cdebugreporthook-class"></a>CDebugReportHook 클래스
 이 클래스를 사용 하 여 명명 된 파이프 디버그 보고서를 보내도록 합니다.  
@@ -61,7 +61,7 @@ class CDebugReportHook
 ## <a name="remarks"></a>설명  
  서비스 또는 명명 된 파이프 디버그 보고서를 보내도록 응용 프로그램의 디버그 빌드에서이 클래스의 인스턴스를 만듭니다. 디버그 보고서를 호출 하 여 생성 됩니다 [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md) 또는 같은이 함수에 대 한 래퍼를 사용 하는 [ATLTRACE](debugging-and-error-reporting-macros.md#atltrace) 하 고 [ATLASSERT](debugging-and-error-reporting-macros.md#atlassert) 매크로입니다.  
   
- 이 클래스의 사용을 사용 하면 대화형으로 비 대화형 데스크톱에서 실행 하는 구성 요소를 디버깅할 수 있습니다 [윈도우 스테이션](http://msdn.microsoft.com/library/windows/desktop/ms687096)합니다.  
+ 이 클래스의 사용을 사용 하면 대화형으로 비 대화형 데스크톱에서 실행 하는 구성 요소를 디버깅할 수 있습니다 [윈도우 스테이션](/windows/desktop/winstation/window-stations)합니다.  
   
  Note 스레드의 기본 보안 컨텍스트를 사용 하 여 디버그 보고서 전송 됩니다. 여기서 가장 낮은 권한의 사용자 수행 되 같은 웹 응용 프로그램의 경우에서 디버그 보고서를 볼 수 있도록 가장이 일시적으로 해제 됩니다.  
   

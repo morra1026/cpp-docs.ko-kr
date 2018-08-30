@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1ec2924fa62370bdc0267cd860a9e2d37c140580
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 58b275b74f9bf7f252fc2d26e9ce32fa7dc143dc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42588925"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208357"
 ---
 # <a name="defaultbind"></a>defaultbind
 
@@ -36,9 +36,9 @@ ms.locfileid: "42588925"
 
 ## <a name="remarks"></a>설명
 
-합니다 **defaultbind** c + + 특성에 동일한 기능을 합니다 [defaultbind](http://msdn.microsoft.com/library/windows/desktop/aa366790) MIDL 특성입니다.
+합니다 **defaultbind** c + + 특성에 동일한 기능을 합니다 [defaultbind](/windows/desktop/Midl/defaultbind) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 예를 참조 하세요 [바인딩 가능한](../windows/bindable.md) 사용 하는 방법의 예제 **defaultbind**합니다.
 

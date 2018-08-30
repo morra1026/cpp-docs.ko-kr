@@ -160,12 +160,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e1bf852b10ace3dca8014e54f2b0070328da64e
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 16bebe3beeecf48fb2601f0feee56e5168de83ac
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42538763"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205097"
 ---
 # <a name="cmfcpropertygridctrl-class"></a>CMFCPropertyGridCtrl 클래스
 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
@@ -246,7 +246,7 @@ class CMFCPropertyGridCtrl : public CWnd
 |[CMFCPropertyGridCtrl::IsShowDragContext](#isshowdragcontext)|사용자가 열 때 프레임 워크 다시 현재 속성 표 컨트롤의 이름 및 값 열을 그립니다 여부를 나타냅니다.|  
 |[CMFCPropertyGridCtrl::IsVSDotNetLook](#isvsdotnetlook)|속성 표 컨트롤의 모양 및.NET에서 사용 되는 스타일 인지 여부를 나타냅니다.|  
 |[CMFCPropertyGridCtrl::MarkModifiedProperties](#markmodifiedproperties)|수정 된 속성을 표시 하는 방법을 지정 합니다.|  
-|`CMFCPropertyGridCtrl::PreTranslateMessage`|창 메시지가 [TranslateMessage](../../mfc/reference/cwinapp-class.md) 및 [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) Windows 함수로 디스패치되기 전에 [CWinApp](http://msdn.microsoft.com/library/windows/desktop/ms644934) 클래스가 이 메시지를 해석하는 데 사용됩니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|  
+|`CMFCPropertyGridCtrl::PreTranslateMessage`|클래스에서 사용 하는 [CWinApp](../../mfc/reference/cwinapp-class.md) 디스패치 되기 전에 창 메시지를 변환 하는 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|  
 |[CMFCPropertyGridCtrl::RemoveAll](#removeall)|속성 표 컨트롤에서 모든 속성 개체를 제거합니다.|  
 |[CMFCPropertyGridCtrl::ResetOriginalValues](#resetoriginalvalues)|모든 속성의 원래 값을 복원합니다.|  
 |[CMFCPropertyGridCtrl::SetAlphabeticMode](#setalphabeticmode)|알파벳 모드인 다시 설정 하거나 설정 합니다.|  
@@ -301,7 +301,7 @@ class CMFCPropertyGridCtrl : public CWnd
   
  ![속성 목록 PropertySheet](../../mfc/reference/media/proplist.png "proplist")  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서 다양 한 메서드를 사용 하 여 속성 표 컨트롤 개체를 구성 하는 방법에 설명 합니다 `CMFCPropertyGridCtrl` 클래스입니다. 이 예제에서는 헤더 컨트롤을 사용 하도록 설정 설명 영역을 설정 하 고 속성 표 컨트롤의 모양을 설정 하는 방법을 보여 줍니다. 예제에는 또한 컨트롤의 정렬 여기서 컨트롤에 대 한 영문자 모드 속성 이름별으로 포함 된 모든 속성을 설정 하는 방법 및 속성 표 컨트롤의 다양 한 요소에 대 한 사용자 지정 색을 설정 하는 방법을 보여 줍니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_NewControls#14](../../mfc/reference/codesnippet/cpp/cmfcpropertygridctrl-class_1.h)]  
@@ -465,7 +465,7 @@ virtual BOOL Create(
 ### <a name="remarks"></a>설명  
  첫 번째 호출을 속성 표 컨트롤을 만들려면 [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridctrl) 속성 표에서 개체를 생성 하 합니다. 그런 다음 호출 `CMFCPropertyGridCtrl::Create`합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `Create` 의 메서드 `CMFCPropertyGridCtrl` 클래스입니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_NewControls#15](../../mfc/reference/codesnippet/cpp/cmfcpropertygridctrl-class_6.cpp)]  

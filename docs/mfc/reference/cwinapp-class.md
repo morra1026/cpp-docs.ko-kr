@@ -202,12 +202,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c756de90967b4c9178d5e6a584990cc53ad7786c
-ms.sourcegitcommit: f923f667065cd6c4203d10ca9520600ee40e5f84
+ms.openlocfilehash: 58509ec4f6a3773478e1bc544f28baf92d7e97b7
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42900940"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206894"
 ---
 # <a name="cwinapp-class"></a>CWinApp 클래스
 
@@ -270,7 +270,7 @@ class CWinApp : public CWinThread
 |[CWinApp::OnIdle](#onidle)|응용 프로그램별 유휴 시간 처리를 수행 하려면 재정의 합니다.|
 |[CWinApp::OpenDocumentFile](#opendocumentfile)|파일에서 문서를 열려고 프레임 워크에서 호출 됩니다.|
 |[CWinApp::ParseCommandLine](#parsecommandline)|개별 매개 변수 및 명령줄에서 플래그를 구문 분석합니다.|
-|[경우](#pretranslatemessage)|Windows 함수로 디스패치 되기 전에 메시지를 필터링 [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934)합니다.|
+|[경우](#pretranslatemessage)|Windows 함수로 디스패치 되기 전에 메시지를 필터링 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934)합니다.|
 |[CWinApp::ProcessMessageFilter](#processmessagefilter)|응용 프로그램에 도달 하기 전에 특정 메시지를 차단 합니다.|
 |[CWinApp::ProcessShellCommand](#processshellcommand)|명령줄 인수 및 플래그를 처리합니다.|
 |[CWinApp::ProcessWndProcException](#processwndprocexception)|응용 프로그램의 메시지 및 명령 처리기에 의해 throw 되는 모든 처리 되지 않은 예외를 가로챕니다.|
@@ -400,7 +400,7 @@ void AddDocTemplate(CDocTemplate* pTemplate);
 
 호출 하기 전에 모든 문서는 응용 프로그램에 템플릿을 추가 해야 [RegisterShellFileTypes](#registershellfiletypes)합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#35](../../mfc/reference/codesnippet/cpp/cwinapp-class_1.cpp)]
 
@@ -423,7 +423,7 @@ virtual void AddToRecentFileList(LPCTSTR lpszPathName);
 
 프레임 워크 파일을 열거나 새 이름으로 파일을 저장 하려면 다른 이름으로 저장 명령을 실행 하는 경우이 멤버 함수를 호출 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#36](../../mfc/reference/codesnippet/cpp/cwinapp-class_2.cpp)]
 
@@ -596,7 +596,7 @@ virtual void DoWaitCursor(int nCode);
 
 대기 커서를 구현 하는 보다 쉽게, 더 효율적인 방법은 사용 하 여 `CWaitCursor`입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#37](../../mfc/reference/codesnippet/cpp/cwinapp-class_3.cpp)]
 
@@ -646,7 +646,7 @@ void EnableShellOpen();
 
 호출 된 `RegisterShellFileTypes` 멤버 함수와 함께에서이 함수 또는 제공을 합니다. REG 파일은 응용 프로그램을 사용 하 여 문서 유형의 수동 등록에 대 한 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#38](../../mfc/reference/codesnippet/cpp/cwinapp-class_4.cpp)]
 
@@ -689,7 +689,7 @@ virtual int ExitInstance();
 
 이 함수의 기본 구현은 응용 프로그램의 프레임 워크 옵션을 씁니다. INI 파일입니다. 응용 프로그램이 종료 될 때 정리 하기 위해이 함수를 재정의 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#39](../../mfc/reference/codesnippet/cpp/cwinapp-class_5.cpp)]
 
@@ -860,7 +860,7 @@ BOOL GetPrinterDeviceDefaults(struct tagPDA* pPrintDlg);
 ### <a name="parameters"></a>매개 변수
 
 *pPrintDlg*  
-에 대 한 포인터를 [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) 구조입니다.
+에 대 한 포인터를 [PRINTDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpda) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -870,7 +870,7 @@ BOOL GetPrinterDeviceDefaults(struct tagPDA* pPrintDlg);
 
 Windows에서 현재 프린터 기본값을 검색합니다. INI 필요에 따라 파일 또는 인쇄 설정에서 사용자가 설정 된 마지막 프린터 구성을 사용 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#40](../../mfc/reference/codesnippet/cpp/cwinapp-class_6.cpp)]
 
@@ -912,9 +912,9 @@ BOOL GetProfileBinary(
 > `GetProfileBinary` 버퍼를 할당 하 고 해당 주소에서 반환 \* *ppData*합니다. 호출자가 사용 하 여 버퍼를 해제 하는 일을 담당 **delete**합니다.
 
 > [!IMPORTANT]
-> 이 함수에서 반환된 데이터는 NULL로 끝나지 않아도 되며 호출자는 유효성 검사를 수행해야 합니다. 자세한 내용은 [버퍼 오버런 방지](http://msdn.microsoft.com/library/windows/desktop/ms717795)를 참조하세요.
+> 이 함수에서 반환된 데이터는 NULL로 끝나지 않아도 되며 호출자는 유효성 검사를 수행해야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#41](../../mfc/reference/codesnippet/cpp/cwinapp-class_7.cpp)]
 
@@ -953,9 +953,9 @@ UINT GetProfileInt(
 이 멤버 함수는 따라서 대/소문자 구분 하지에서 문자열을 *lpszSection* 및 *lpszEntry* 매개 변수에서는 다를 수 있습니다.
 
 > [!IMPORTANT]
-> 이 함수에서 반환된 데이터는 NULL로 끝나지 않아도 되며 호출자는 유효성 검사를 수행해야 합니다. 자세한 내용은 [버퍼 오버런 방지](http://msdn.microsoft.com/library/windows/desktop/ms717795)를 참조하세요.
+> 이 함수에서 반환된 데이터는 NULL로 끝나지 않아도 되며 호출자는 유효성 검사를 수행해야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#42](../../mfc/reference/codesnippet/cpp/cwinapp-class_8.cpp)]
 
@@ -990,9 +990,9 @@ CString GetProfileString(
 ### <a name="remarks"></a>설명
 
 > [!IMPORTANT]
-> 이 함수에서 반환된 데이터는 NULL로 끝나지 않아도 되며 호출자는 유효성 검사를 수행해야 합니다. 자세한 내용은 [버퍼 오버런 방지](http://msdn.microsoft.com/library/windows/desktop/ms717795)를 참조하세요.
+> 이 함수에서 반환된 데이터는 NULL로 끝나지 않아도 되며 호출자는 유효성 검사를 수행해야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#43](../../mfc/reference/codesnippet/cpp/cwinapp-class_9.cpp)]
 
@@ -1073,9 +1073,9 @@ virtual BOOL InitInstance();
 재정의 `InitInstance` Windows에서 실행 중인 응용 프로그램의 각 새 인스턴스를 초기화 합니다. 재정의 하는 일반적으로 `InitInstance` 주 창 개체를 생성 하 고 설정 하 여 `CWinThread::m_pMainWnd` 창으로 가리키도록 데이터 멤버입니다. 이 멤버 함수를 재정의 하는 방법은 참조 하세요 [CWinApp: 응용 프로그램 클래스](../../mfc/cwinapp-the-application-class.md)합니다.
 
 > [!NOTE]
-> MFC 응용 프로그램은 단일 스레드 아파트 (STA)로 초기화 되어야 합니다. 호출 하는 경우 [CoInitializeEx](http://msdn.microsoft.com/library/windows/desktop/ms695279) 에서 프로그램 `InitInstance` 재정의 COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED 아님)를 지정 합니다. 자세한 내용은 참조 PRB: MFC 응용 프로그램이 다른 이름으로 다중 스레드 아파트 (828643)에서 응용 프로그램을 초기화 하는 경우 응답 하지 [ http://support.microsoft.com/default.aspxscid=kb; en-우리; 828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643)합니다.
+> MFC 응용 프로그램은 단일 스레드 아파트 (STA)로 초기화 되어야 합니다. 호출 하는 경우 [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) 에서 프로그램 `InitInstance` 재정의 COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED 아님)를 지정 합니다. 자세한 내용은 참조 PRB: MFC 응용 프로그램이 다른 이름으로 다중 스레드 아파트 (828643)에서 응용 프로그램을 초기화 하는 경우 응답 하지 [ http://support.microsoft.com/default.aspxscid=kb; en-우리; 828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643)합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCListView#9](../../atl/reference/codesnippet/cpp/cwinapp-class_10.cpp)]
 
@@ -1109,7 +1109,7 @@ HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nID
 커서 리소스의 이름이 포함 된 null로 끝나는 문자열을 가리킵니다. 사용할 수는 `CString` 이 인수에 대 한 합니다.
 
 *nIDResource*  
-커서 리소스의 ID입니다. 리소스의 목록을 참조 하세요 [LoadCursor](http://msdn.microsoft.com/library/windows/desktop/ms648391) Windows SDK에 있습니다.
+커서 리소스의 ID입니다. 리소스의 목록을 참조 하세요 [LoadCursor](/windows/desktop/api/winuser/nf-winuser-loadcursora) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1121,7 +1121,7 @@ HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nID
 
 사용 된 [LoadStandardCursor](#loadstandardcursor) 또는 [LoadOEMCursor](#loadoemcursor) 미리 정의 된 Windows 커서를 액세스 하는 멤버 함수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#44](../../mfc/reference/codesnippet/cpp/cwinapp-class_11.cpp)]
 
@@ -1152,7 +1152,7 @@ HICON LoadIcon(LPCTSTR lpszResourceName) const;  HICON LoadIcon(UINT nIDResource
 사용할 수는 [LoadStandardIcon](#loadstandardicon) 또는 [LoadOEMIcon](#loadoemicon) 멤버 함수를 미리 정의 된 Windows 아이콘에 액세스 합니다.
 
 > [!NOTE]
-> 이 멤버 함수는 Win32 API 함수를 호출 [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072)만 크기가 SM_CXICON 및 SM_CYICON 시스템 메트릭 값을 준수 하는 아이콘을 로드할 수는 있습니다.
+> 이 멤버 함수는 Win32 API 함수를 호출 [LoadIcon](/windows/desktop/api/winuser/nf-winuser-loadicona)만 크기가 SM_CXICON 및 SM_CYICON 시스템 메트릭 값을 준수 하는 아이콘을 로드할 수는 있습니다.
 
 ##  <a name="loadoemcursor"></a>  CWinApp::LoadOEMCursor
 
@@ -1175,7 +1175,7 @@ HCURSOR LoadOEMCursor(UINT nIDCursor) const;
 
 사용 된 `LoadOEMCursor` 또는 [LoadStandardCursor](#loadstandardcursor) 미리 정의 된 Windows 커서를 액세스 하는 멤버 함수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#45](../../mfc/reference/codesnippet/cpp/cwinapp-class_12.h)]
 
@@ -1247,7 +1247,7 @@ HCURSOR LoadStandardCursor(LPCTSTR lpszCursorName) const;
 
 사용 된 `LoadStandardCursor` 또는 [LoadOEMCursor](#loadoemcursor) 미리 정의 된 Windows 커서를 액세스 하는 멤버 함수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#47](../../mfc/reference/codesnippet/cpp/cwinapp-class_14.cpp)]
 
@@ -1262,7 +1262,7 @@ HICON LoadStandardIcon(LPCTSTR lpszIconName) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpszIconName*  
-미리 정의 된 Windows 아이콘을 지정 하는 매니페스트 상수 식별자입니다. 이러한 식별자는 WINDOWS에 정의 됩니다. 8. 가능한 미리 정의 된 값 및 해당 설명의 목록을 참조 하세요. 합니다 *lpIconName* 에 매개 변수 [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072) Windows SDK의 합니다.
+미리 정의 된 Windows 아이콘을 지정 하는 매니페스트 상수 식별자입니다. 이러한 식별자는 WINDOWS에 정의 됩니다. 8. 가능한 미리 정의 된 값 및 해당 설명의 목록을 참조 하세요. 합니다 *lpIconName* 에 매개 변수 [LoadIcon](/windows/desktop/api/winuser/nf-winuser-loadicona) Windows SDK의 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1362,7 +1362,7 @@ HINSTANCE m_hInstance;
 
 `m_hInstance` 데이터 멤버는 Windows에서 실행 중인 응용 프로그램의 현재 인스턴스에 대 한 핸들입니다. 전역 함수에 의해 반환 됩니다 [AfxGetInstanceHandle](application-information-and-management.md#afxgetinstancehandle)합니다. `m_hInstance` HINSTANCE 형식의 공용 변수가입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#55](../../mfc/reference/codesnippet/cpp/cwinapp-class_15.cpp)]
 
@@ -1378,7 +1378,7 @@ LPTSTR m_lpCmdLine;
 
 응용 프로그램에 대 한 명령줄을 지정 하는 null로 끝나는 문자열을 가리킵니다. 사용 하 여 `m_lpCmdLine` 사용자가 응용 프로그램 시작 했을 때 입력 한 명령줄 인수를 액세스할 수 있습니다. `m_lpCmdLine` LPTSTR 형식의 공용 변수가입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#52](../../mfc/reference/codesnippet/cpp/cwinapp-class_16.cpp)]
 
@@ -1406,7 +1406,7 @@ int m_nCmdShow;
 
 전달 해야 `m_nCmdShow` 호출할 때 인수로 [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow) 응용 프로그램의 주 창에 대 한 합니다. `m_nCmdShow` 형식의 공용 변수 **int**합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#56](../../mfc/reference/codesnippet/cpp/cwinapp-class_17.cpp)]
 
@@ -1444,14 +1444,14 @@ LPCTSTR m_pszAppName;
 
 응용 프로그램 이름에 전달 된 매개 변수에서 가져올 수 있습니다는 [CWinApp](#cwinapp) 생성자를 지정 하지 않으면 AFX_IDS_APP_TITLE ID를 사용 하 여 리소스 문자열입니다. 리소스에서 응용 프로그램 이름이 없으면 프로그램에서 제공 됩니다. EXE 파일 이름입니다.
 
-전역 함수에서 반환한 [AfxGetAppName](application-information-and-management.md#afxgetappname)합니다. `m_pszAppName` 형식의 공용 변수 **const char\*** 합니다.
+전역 함수에서 반환한 [AfxGetAppName](application-information-and-management.md#afxgetappname)합니다. `m_pszAppName` 형식의 공용 변수 **const char**<strong>\*</strong>합니다.
 
 > [!NOTE]
 > 값을 할당 하는 경우 `m_pszAppName`, 힙에 동적으로 할당 해야 합니다. 합니다 `CWinApp` 소멸자 호출 **무료**이 포인터를 사용 하 여 (). 사용 하려면 여러는 `_tcsdup`()에서 런타임 라이브러리 함수를 할당 합니다. 또한 새 값을 할당 하기 전에 현재 포인터를 사용 하 여 연결 된 메모리를 확보 합니다. 예를 들어:
 
 [!code-cpp[NVC_MFCWindowing#57](../../mfc/reference/codesnippet/cpp/cwinapp-class_18.cpp)]
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#65](../../mfc/reference/codesnippet/cpp/cwinapp-class_19.cpp)]
 
@@ -1465,7 +1465,7 @@ LPCTSTR m_pszExeName;
 
 ### <a name="remarks"></a>설명
 
-와 달리 [m_pszAppName](#m_pszappname),이 이름은 공백을 포함할 수 없습니다. `m_pszExeName` 형식의 공용 변수 **const char\*** 합니다.
+와 달리 [m_pszAppName](#m_pszappname),이 이름은 공백을 포함할 수 없습니다. `m_pszExeName` 형식의 공용 변수 **const char**<strong>\*</strong>합니다.
 
 > [!NOTE]
 > 값을 할당 하는 경우 `m_pszExeName`, 힙에 동적으로 할당 해야 합니다. 합니다 `CWinApp` 소멸자 호출 **무료**이 포인터를 사용 하 여 (). 사용 하려면 여러는 `_tcsdup`()에서 런타임 라이브러리 함수를 할당 합니다. 또한 새 값을 할당 하기 전에 현재 포인터를 사용 하 여 연결 된 메모리를 확보 합니다. 예를 들어:
@@ -1482,7 +1482,7 @@ LPCTSTR m_pszHelpFilePath;
 
 ### <a name="remarks"></a>설명
 
-기본적으로 프레임 워크는 다음과 같이 초기화 됩니다. `m_pszHelpFilePath` 사용 하 여 응용 프로그램의 이름으로 ". HLP "추가 합니다. 도움말 파일의 이름을 변경 하려면 설정 `m_pszHelpFilePath` 원하는 도움말 파일의 전체 이름을 포함 하는 문자열을 가리키도록 합니다. 응용 프로그램에서은이 작업을 수행 하는 편리한 장소 [InitInstance](#initinstance) 함수입니다. `m_pszHelpFilePath` 형식의 공용 변수 **const char\*** 합니다.
+기본적으로 프레임 워크는 다음과 같이 초기화 됩니다. `m_pszHelpFilePath` 사용 하 여 응용 프로그램의 이름으로 ". HLP "추가 합니다. 도움말 파일의 이름을 변경 하려면 설정 `m_pszHelpFilePath` 원하는 도움말 파일의 전체 이름을 포함 하는 문자열을 가리키도록 합니다. 응용 프로그램에서은이 작업을 수행 하는 편리한 장소 [InitInstance](#initinstance) 함수입니다. `m_pszHelpFilePath` 형식의 공용 변수 **const char**<strong>\*</strong>합니다.
 
 > [!NOTE]
 > 값을 할당 하는 경우 `m_pszHelpFilePath`, 힙에 동적으로 할당 해야 합니다. 합니다 `CWinApp` 소멸자 호출 **무료**이 포인터를 사용 하 여 (). 사용 하려면 여러는 `_tcsdup`()에서 런타임 라이브러리 함수를 할당 합니다. 또한 새 값을 할당 하기 전에 현재 포인터를 사용 하 여 연결 된 메모리를 확보 합니다. 예를 들어:
@@ -1499,7 +1499,7 @@ LPCTSTR m_pszProfileName;
 
 ### <a name="remarks"></a>설명
 
-`m_pszProfileName` 형식의 공용 변수 **const char\*** 합니다.
+`m_pszProfileName` 형식의 공용 변수 **const char**<strong>\*</strong>합니다.
 
 > [!NOTE]
 > 값을 할당 하는 경우 `m_pszProfileName`, 힙에 동적으로 할당 해야 합니다. 합니다 `CWinApp` 소멸자 호출 **무료**이 포인터를 사용 하 여 (). 사용 하려면 여러는 `_tcsdup`()에서 런타임 라이브러리 함수를 할당 합니다. 또한 새 값을 할당 하기 전에 현재 포인터를 사용 하 여 연결 된 메모리를 확보 합니다. 예를 들어:
@@ -1569,7 +1569,7 @@ virtual BOOL OnDDECommand(LPTSTR lpszCommand);
 
 기본 구현 여부를 명령 인지 확인 문서 열기 요청을, 그렇다면 지정 된 문서를 엽니다. 일반적으로 Windows 파일 관리자 데이터 파일을 두 번 클릭할 때 이러한 DDE 명령 문자열을 보냅니다. 재정의 다른 DDE 처리 하려면이 함수를 인쇄 하는 명령 같은 명령을 실행 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#48](../../mfc/reference/codesnippet/cpp/cwinapp-class_24.cpp)]
 
@@ -1587,7 +1587,7 @@ afx_msg void OnFileNew();
 
 참조 [Technical Note 22](../../mfc/tn022-standard-commands-implementation.md) 기본 동작과이 멤버 함수를 재정의 하는 방법에 대 한 자세한 내용은 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#49](../../mfc/reference/codesnippet/cpp/cwinapp-class_25.cpp)]
 
@@ -1607,7 +1607,7 @@ afx_msg void OnFileOpen();
 
 기본 동작에 대 한 내용은이 멤버 함수를 재정의 하는 방법에 대 한 지침을 참조 하세요 [Technical Note 22](../../mfc/tn022-standard-commands-implementation.md)합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#49](../../mfc/reference/codesnippet/cpp/cwinapp-class_25.cpp)]
 
@@ -1627,7 +1627,7 @@ afx_msg void OnFilePrintSetup();
 
 기본 동작에 대 한 내용은이 멤버 함수를 재정의 하는 방법에 대 한 지침을 참조 하세요 [Technical Note 22](../../mfc/tn022-standard-commands-implementation.md)합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#49](../../mfc/reference/codesnippet/cpp/cwinapp-class_25.cpp)]
 
@@ -1727,7 +1727,7 @@ virtual BOOL OnIdle(LONG lCount);
 
 원하지 않는 경우 `OnIdle` 재정의할 수 있습니다 메시지 큐에서 메시지를 검색할 때마다 호출 되도록 하는 [CWinThreadIsIdleMessage](../../mfc/reference/cwinthread-class.md#isidlemessage)합니다. 응용 프로그램에는 매우 간단한 타이머를 설정한 경우 또는 시스템 다음 WM_SYSTIMER 메시지를 보내는 경우 `OnIdle` 반복적으로 호출 되며 성능이 저하 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 두 예제에 사용 하는 방법을 보여 줍니다 `OnIdle`합니다. 사용 하 여 두 개의 유휴 작업을 처리 하는 첫 번째 예제는 *lCount* 인수 작업 우선 순위를 지정 합니다. 첫 번째 작업은 매우 중요 하 고 가능 하면 수행 해야 합니다. 두 번째 작업은 그 보다 중요 및 사용자 입력에 오랫동안 일시 중지 하는 경우에 수행 해야 합니다. 호출의 기본 클래스 버전을 `OnIdle`입니다. 두 번째 예제는 다른 우선 순위를 사용 하 여 유휴 작업 그룹을 관리합니다.
 
@@ -1759,7 +1759,7 @@ TRUE 이면 문서를 사용 하면 가장 최근의 파일 중 하나인 FALSE 
 
 해당 이름의 문서가 이미 열려 있으면 해당 문서를 포함 하는 첫 번째 프레임 창에 포커스를 받게 됩니다. 응용 프로그램에서 여러 문서 서식 파일을 지 원하는 경우 프레임 워크 파일 이름 확장명을 사용 하 여 문서를 로드 하려고 적절 한 문서 템플릿을 찾습니다. 성공 하면 프레임 창 및 문서에 대 한 보기를가 다음 문서 서식 파일에 만듭니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#52](../../mfc/reference/codesnippet/cpp/cwinapp-class_16.cpp)]
 
@@ -1794,7 +1794,7 @@ void ParseCommandLine(CCommandLineInfo& rCmdInfo);
 
 ##  <a name="pretranslatemessage"></a>  경우
 
-창 메시지를 필터링 하려면이 함수를 재정의 하 여 Windows 함수로 디스패치 되기 전에 [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) 액셀러레이터 키를 수행 하는 기본 구현 호출 해야 하므로 변환 된 `CWinApp::PreTranslateMessage` 재정의 된 버전에서 멤버 함수입니다.
+창 메시지를 필터링 하려면이 함수를 재정의 하 여 Windows 함수로 디스패치 되기 전에 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) 액셀러레이터 키를 수행 하는 기본 구현 호출 해야 하므로 변환 된 `CWinApp::PreTranslateMessage` 재정의 된 버전에서 멤버 함수입니다.
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -2131,7 +2131,7 @@ void SelectPrinter(
 에 대 한 핸들을 [DEVNAMES](../../mfc/reference/devnames-structure.md) 드라이버, 장치 및 특정 프린터의 출력 포트 이름을 식별 하는 구조입니다.
 
 *hDevMode*  
-에 대 한 핸들을 [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) 장치 초기화 및 프린터의 환경에 대 한 정보를 지정 하는 구조입니다.
+에 대 한 핸들을 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 장치 초기화 및 프린터의 환경에 대 한 정보를 지정 하는 구조입니다.
 
 *bFreeOld*  
 이전에 선택한 프린터를 해제합니다.
@@ -2270,7 +2270,7 @@ virtual void WinHelp(
 추가 데이터를 지정합니다. 값에 따라 사용 되는 값을 *nCmd* 매개 변수입니다.
 
 *nCmd*  
-요청한 도움말의 형식을 지정합니다. 가능한 값 목록과 미치는 영향에 대 한 합니다 *dwData* 매개 변수를 참조 합니다 [WinHelp](http://msdn.microsoft.com/library/windows/desktop/bb762267) Windows 함수입니다.
+요청한 도움말의 형식을 지정합니다. 가능한 값 목록과 미치는 영향에 대 한 합니다 *dwData* 매개 변수를 참조 합니다 [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows 함수입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2278,7 +2278,7 @@ virtual void WinHelp(
 
 프레임 워크를 자동으로 닫힙니다 WinHelp 응용 프로그램을 응용 프로그램을 종료 하는 경우.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#53](../../mfc/reference/codesnippet/cpp/cwinapp-class_28.cpp)]
 
@@ -2312,7 +2312,7 @@ BOOL WriteProfileBinary(
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 이 예제에서는 `CWinApp* pApp = AfxGetApp();` CWinApp 클래스가 더는 방법을 보여 주는 가져옵니다 하 `WriteProfileBinary` 및 `GetProfileBinary` MFC 응용 프로그램에서 모든 함수에서 사용할 수 있습니다.
 
@@ -2346,7 +2346,7 @@ BOOL WriteProfileInt(
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 이 예제에서는 `CWinApp* pApp = AfxGetApp();` CWinApp 클래스가 더는 방법을 보여 주는에서 하 `WriteProfileString`, `WriteProfileInt`, `GetProfileString`, 및 `GetProfileInt` MFC 응용 프로그램에서 모든 함수에서 사용할 수 있습니다.
 
@@ -2380,7 +2380,7 @@ BOOL WriteProfileString(
 
 성공하면 0이 아니고, 그렇지 않으면 0입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#43](../../mfc/reference/codesnippet/cpp/cwinapp-class_9.cpp)]
 

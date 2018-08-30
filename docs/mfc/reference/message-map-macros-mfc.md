@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e68cdc236759776fa327b4602343ec9ac73b9bba
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 61599d9080bf5cdce56f30ed38e6b20064032512
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338377"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216705"
 ---
 # <a name="message-map-macros-mfc"></a>메시지 맵 매크로(MFC)
 MFC는 메시지 맵을 지원 하기 위해 다음 매크로 제공 합니다.  
@@ -103,7 +103,7 @@ BEGIN_MESSAGE_MAP( theClass, baseClass )
   
  메시지 맵에 대 한 자세한 내용은 참조 하세요. [메시지 맵](message-maps-mfc.md)  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
 ```cpp  
 BEGIN_MESSAGE_MAP(CMainFrame, CMDIFrameWnd)
    ON_WM_CREATE()
@@ -155,7 +155,7 @@ DECLARE_MESSAGE_MAP( )
   
  메시지 맵 및 DECLARE_MESSAGE_MAP 매크로에 대 한 자세한 내용은 참조 하세요. [메시지 처리 및 매핑 항목](../../mfc/message-handling-and-mapping.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
 ```cpp  
 class CMainFrame : public CMDIFrameWnd
 {
@@ -206,7 +206,7 @@ ON_COMMAND( id, memberFxn )
   
  ON_COMMAND를 사용 하 여 멤버 함수에 명령 중 하나를 매핑합니다. 사용 하 여 [ON_COMMAND_RANGE](#on_command_range) 하나의 멤버 함수에 명령 id의 범위를 매핑합니다. 하나의 메시지 맵 항목에는 지정 된 명령 id와 일치 수 있습니다. 즉, 명령 둘 이상의 처리기에 매핑할 수 없습니다. 자세한 내용 및 예제를 참조 하세요 [메시지 처리 및 매핑 항목](../../mfc/message-handling-and-mapping.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
 ```cpp  
 BEGIN_MESSAGE_MAP(CMFCListViewDoc, CDocument)
    ON_COMMAND(ID_MYCOMMAND, &CMFCListViewDoc::OnMycommand)
@@ -307,7 +307,7 @@ ON_MESSAGE( message, memberFxn )
  함수 형식의 해야 `afx_msg LRESULT (CWnd::*)(WPARAM, LPARAM)`합니다.  
   
 ### <a name="remarks"></a>설명  
- 사용자 정의 메시지는 표준 Windows WM_MESSAGE 메시지 되지 않는 모든 메시지입니다. 메시지 ID를 선택할 때 0xBFFF를 0x7FFF WM_APP (0x8000)에 범위의 WM_USER (0x0400) 내에서 값을 사용 해야 합니다. 메시지 Id에 대 한 자세한 내용은 [WM_APP](http://msdn.microsoft.com/library/windows/desktop/ms644930)합니다.  
+ 사용자 정의 메시지는 표준 Windows WM_MESSAGE 메시지 되지 않는 모든 메시지입니다. 메시지 ID를 선택할 때 0xBFFF를 0x7FFF WM_APP (0x8000)에 범위의 WM_USER (0x0400) 내에서 값을 사용 해야 합니다. 메시지 Id에 대 한 자세한 내용은 [WM_APP](/windows/desktop/winmsg/wm-app)합니다.  
   
  메시지 처리기 함수에 매핑해야 하는 모든 사용자 정의 메시지에 대 한 메시지 맵에 ON_MESSAGE 매크로 문 하나만 있어야 합니다.  
   
@@ -316,7 +316,7 @@ ON_MESSAGE( message, memberFxn )
   
  자세한 내용 및 예제를 참조 하세요 [메시지를 처리 하 고 항목 매핑](../../mfc/message-handling-and-mapping.md) 고 [사용자 정의 처리기](user-defined-handlers.md)  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
 ```cpp  
 #define WM_MYMESSAGE (WM_USER + 100)
 
@@ -491,7 +491,7 @@ ON_REGISTERED_MESSAGE( nMessageVariable, memberFxn )
   
  자세한 내용 및 예제를 참조 하세요 [메시지 처리 및 매핑 항목](../../mfc/message-handling-and-mapping.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
 ```cpp  
 static UINT NEAR WM_FIND = RegisterWindowMessage(_T("COMMDLG_FIND"));
 
@@ -505,7 +505,7 @@ END_MESSAGE_MAP()
  **헤더:** afxmsg_.h  
   
 ### <a name="see-also"></a>참고 항목  
- [RegisterWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms644947)   
+ [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947)   
  [사용자 정의 처리기](user-defined-handlers.md)
 
 ## <a name="on_registered_thread_message"></a>  ON_REGISTERED_THREAD_MESSAGE    
@@ -605,7 +605,7 @@ ON_COMMAND_RANGE( id1, id2, memberFxn )
   
  있습니다 이므로 메시지 맵 범위에 대 한 자동 지원 되지 않습니다 매크로 직접 배치 해야 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
 ```cpp  
 // The code fragment below shows how to use ON_COMMAND_RANGE macro 
 // to map a contiguous range of command IDs to a single message  

@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c15dc3dc2b4c1fdf549ec90ae6d782b5f8a72509
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 928e2845321ad12a92e4ba3f42838b3f468dce70
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853814"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215517"
 ---
 # <a name="cmfctoolbareditboxbutton-class"></a>CMFCToolBarEditBoxButton 클래스
 편집 컨트롤을 포함 하는 도구 모음 단추 ( [CEdit 클래스](../../mfc/reference/cedit-class.md)).  
@@ -105,7 +105,7 @@ class CMFCToolBarEditBoxButton : public CMFCToolBarButton
 |`CMFCToolBarEditBoxButton::GetThisClass`|에 대 한 포인터를 가져오는 데 프레임 워크에 의해 합니다 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 이 클래스 형식과 연결 된 개체입니다.|  
 |[CMFCToolBarEditBoxButton::HaveHotBorder](#havehotborder)|사용자 단추를 클릭할 때 단추의 테두리가 표시 되는지 여부를 결정 합니다. (재정의 [CMFCToolBarButton::HaveHotBorder](../../mfc/reference/cmfctoolbarbutton-class.md#havehotborder).)|  
 |[CMFCToolBarEditBoxButton::IsFlatMode](#isflatmode)|편집 상자 단추를 평면 스타일 지 여부를 확인 합니다.|  
-|[CMFCToolBarEditBoxButton::NotifyCommand](#notifycommand)|단추를 처리 하는지 여부를 지정 합니다 [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) 메시지입니다. (재정의 [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand).)|  
+|[CMFCToolBarEditBoxButton::NotifyCommand](#notifycommand)|단추를 처리 하는지 여부를 지정 합니다 [WM_COMMAND](/windows/desktop/menurc/wm-command) 메시지입니다. (재정의 [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand).)|  
 |[CMFCToolBarEditBoxButton::OnAddToCustomizePage](#onaddtocustomizepage)|단추를 추가할 때 프레임 워크에서 호출을 **사용자 지정** 대화 상자. (재정의 [CMFCToolBarButton::OnAddToCustomizePage](../../mfc/reference/cmfctoolbarbutton-class.md#onaddtocustomizepage).)|  
 |`CMFCToolBarEditBoxButton::OnCalculateSize`|지정 된 디바이스 컨텍스트 및 도킹 상태에 대 한 단추의 크기를 계산 하기 위해 프레임 워크에서 호출 됩니다. (재정의 [CMFCToolBarButton::OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize).)|  
 |[CMFCToolBarEditBoxButton::OnChangeParentWnd](#onchangeparentwnd)|새 도구 모음에 단추를 삽입할 때 프레임 워크에서 호출 됩니다. (재정의 [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd).)|  
@@ -137,7 +137,7 @@ class CMFCToolBarEditBoxButton : public CMFCToolBarButton
   
  자세한 내용은 [연습: 도구 모음에 컨트롤 배치](../../mfc/walkthrough-putting-controls-on-toolbars.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `CMFCToolBarEditBoxButton` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 예제는 사용자 수 단추를 사용자 지정 하는 동안 확장 단추를 클릭할 때 단추의 테두리가 표시 되도록 지정, 텍스트 상자 컨트롤의 텍스트를 설정, 지정는 응용 편집 상자 단추의 평면 스타일 모양을 지정 하는 방법을 보여 줍니다. cation, 상자 컨트롤을 편집 하는 도구 모음의 스타일을 지정 합니다.  
   
  [!code-cpp[NVC_MFC_RibbonApp#40](../../mfc/reference/codesnippet/cpp/cmfctoolbareditboxbutton-class_1.cpp)]  
@@ -361,7 +361,7 @@ static BOOL __stdcall IsFlatMode();
  기본적으로 편집 상자 단추를 평면 스타일에 있습니다. 사용 된 [CMFCToolBarEditBoxButton::SetFlatMode](#setflatmode) 응용 프로그램에 대 한 평면 스타일 모양을 변경 하는 방법입니다.  
   
 ##  <a name="notifycommand"></a>  CMFCToolBarEditBoxButton::NotifyCommand  
- 단추를 처리 하는지 여부를 지정 합니다 [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) 메시지입니다.  
+ 단추를 처리 하는지 여부를 지정 합니다 [WM_COMMAND](/windows/desktop/menurc/wm-command) 메시지입니다.  
   
 ```  
 virtual BOOL NotifyCommand(int iNotifyCode);
@@ -375,9 +375,9 @@ virtual BOOL NotifyCommand(int iNotifyCode);
  WM_COMMAND 메시지 또는 FALSE 부모 도구 모음에서 메시지를 처리 해야을 나타내려면 단추를 처리 하는 경우 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
- 프레임 워크를 보내려는 경우이 메서드를 호출을 [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) 부모 창에는 메시지입니다.  
+ 프레임 워크를 보내려는 경우이 메서드를 호출을 [WM_COMMAND](/windows/desktop/menurc/wm-command) 부모 창에는 메시지입니다.  
   
- 이 메서드는 기본 클래스 구현을 확장 ( [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand))를 처리 하는 [EN_UPDATE](http://msdn.microsoft.com/library/windows/desktop/bb761687) 알림. 이 개체와 같은 명령 ID 사용 하 여 각 편집 상자에 대해이 개체의 텍스트 레이블에 텍스트 레이블을 설정합니다.  
+ 이 메서드는 기본 클래스 구현을 확장 ( [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand))를 처리 하는 [EN_UPDATE](/windows/desktop/Controls/en-update) 알림. 이 개체와 같은 명령 ID 사용 하 여 각 편집 상자에 대해이 개체의 텍스트 레이블에 텍스트 레이블을 설정합니다.  
   
 ##  <a name="onaddtocustomizepage"></a>  CMFCToolBarEditBoxButton::OnAddToCustomizePage  
  단추를 추가할 때 프레임 워크에서 호출을 **사용자 지정** 대화 상자.  

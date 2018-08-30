@@ -80,12 +80,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 70e980a33e88920afef9c6f19dcd8b2ecfca5071
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: cbcc47bf7b8eff276135bb5eb2f6206471fee524
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131440"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206477"
 ---
 # <a name="numericlimits-class"></a>numeric_limits 클래스
 
@@ -100,11 +100,12 @@ class numeric_limits
 
 ### <a name="parameters"></a>매개 변수
 
-*형식* 속성이 되는 기본 요소 데이터 형식 테스트, 쿼리 또는 설정 합니다.
+*Type*<br/>
+ 속성이 테스트, 쿼리 또는 설정되는 기본 요소 데이터 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-형식에 대 한 명시적 특수화를 정의 하는 헤더 **wchar_t**, **bool**를 **char**를 **char 서명**, **부호 없는 char**, **짧은**를 **unsigned short**를 **int**를 **부호 없는 int**, **장기**, **부호 없는 long**를 **float**를 **double**를 **long double *** **long long**하십시오 **부호 없는 long long**, `char16_t`, 및 `char32_t`합니다. 이러한 명시적 특수화의 경우 멤버에 대 한 [numeric_limits:: is_specialized](#is_specialized) 됩니다 **true**, 및 모든 관련 멤버에 의미 있는 값입니다. 프로그램에서 추가 명시적 특수화를 제공할 수 있습니다. 클래스의 대다수 멤버 함수에 설명 하거나 테스트의 가능한 구현을 **float**합니다.
+형식에 대 한 명시적 특수화를 정의 하는 헤더 **wchar_t**, **bool**를 **char**를 **char 서명**, **부호 없는 char**, **짧은**를 **unsigned short**를 **int**를 **부호 없는 int**, **장기**, **부호 없는 long**를 **float**를 **double**를 **long double**, **long long**하십시오 **부호 없는 long long**, **char16_t**, 및 **char32_t**. 이러한 명시적 특수화의 경우 멤버에 대 한 [numeric_limits:: is_specialized](#is_specialized) 됩니다 **true**, 및 모든 관련 멤버에 의미 있는 값입니다. 프로그램에서 추가 명시적 특수화를 제공할 수 있습니다. 클래스의 대다수 멤버 함수에 설명 하거나 테스트의 가능한 구현을 **float**합니다.
 
 임의 특수화의 경우 멤버에 의미 있는 값이 없습니다. 0을 저장 하는 의미 있는 값이 없는 멤버 개체 (또는 **false**)는 의미 있는 값을 반환 하지 않는 멤버 함수가 반환 하 고 `Type(0)`입니다.
 

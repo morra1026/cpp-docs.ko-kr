@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa48af82fb5b6119e1efc14081c6851eafb85fa5
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 23c8776e462c2b275b0c7620e01b4bc82e7ad7ed
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208704"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195746"
 ---
 # <a name="ctokenprivileges-class"></a>CTokenPrivileges 클래스
 이 클래스는에 대 한 래퍼를 `TOKEN_PRIVILEGES` 구조입니다.  
@@ -79,13 +79,13 @@ class CTokenPrivileges
 |[CTokenPrivileges::operator =](#operator_eq)|대입 연산자입니다.|  
   
 ## <a name="remarks"></a>설명  
- [액세스 토큰](http://msdn.microsoft.com/library/windows/desktop/aa374909) 개체인 프로세스 또는 스레드의 보안 컨텍스트를 설명 하는 Windows 시스템에 로그온 한 각 사용자에 게 할당 됩니다.  
+ [액세스 토큰](/windows/desktop/SecAuthZ/access-tokens) 개체인 프로세스 또는 스레드의 보안 컨텍스트를 설명 하는 Windows 시스템에 로그온 한 각 사용자에 게 할당 됩니다.  
   
- 액세스 토큰은 각 사용자에 게 부여 된 다양 한 보안 권한을 설명 하기 위해 사용 됩니다. 고유한 로컬 식별자 라고 하는 64 비트 숫자의 권한으로 구성 됩니다 ( [LUID](http://msdn.microsoft.com/library/windows/desktop/aa379261)) 및 설명자 문자열입니다.  
+ 액세스 토큰은 각 사용자에 게 부여 된 다양 한 보안 권한을 설명 하기 위해 사용 됩니다. 고유한 로컬 식별자 라고 하는 64 비트 숫자의 권한으로 구성 됩니다 ( [LUID](/windows/desktop/api/winnt/ns-winnt-_luid)) 및 설명자 문자열입니다.  
   
- 합니다 `CTokenPrivileges` 클래스에 대 한 래퍼인 합니다 [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) 구조체이 고 0 또는 더 많은 권한이 포함 되어 있습니다. 제공 된 클래스 메서드를 사용 하 여 쿼리 또는 삭제 권한은 추가할 수 있습니다.  
+ 합니다 `CTokenPrivileges` 클래스에 대 한 래퍼인 합니다 [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) 구조체이 고 0 또는 더 많은 권한이 포함 되어 있습니다. 제공 된 클래스 메서드를 사용 하 여 쿼리 또는 삭제 권한은 추가할 수 있습니다.  
   
- Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK에 있습니다.  
+ Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](/windows/desktop/SecAuthZ/access-control) Windows SDK에 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** atlsecurity.h  
@@ -106,7 +106,7 @@ void Add(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
  True 이면 권한이 사용 됩니다. False 이면 권한은 사용할 수 없습니다.  
   
  *rPrivileges*  
- 에 대 한 참조를 [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) 구조입니다. 권한 및 특성은이 구조에서 복사 하 고 추가 `CTokenPrivileges` 개체입니다.  
+ 에 대 한 참조를 [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) 구조입니다. 권한 및 특성은이 구조에서 복사 하 고 추가 `CTokenPrivileges` 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드의 첫 번째 폼 권한을 성공적으로 추가 되 면 false이 고, 그렇지 경우 true를 반환 합니다.  
@@ -125,7 +125,7 @@ CTokenPrivileges(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
  `CTokenPrivileges` 새 개체에 할당 하는 개체입니다.  
   
  *rPrivileges*  
- 합니다 [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) 구조에 새 할당할 `CTokenPrivileges` 개체입니다.  
+ 합니다 [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) 구조에 새 할당할 `CTokenPrivileges` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  합니다 `CTokenPrivileges` 를 사용 하 여 개체를 만들 수 있습니다를 `TOKEN_PRIVILEGES` 구조 또는 이전에 정의한 `CTokenPrivileges` 개체입니다.  
@@ -214,7 +214,7 @@ void GetLuidsAndAttributes(
   
 ### <a name="parameters"></a>매개 변수  
  *pPrivileges*  
- 배열에 대 한 포인터 [LUID](http://msdn.microsoft.com/library/windows/desktop/aa379261) 개체입니다. `CLUIDArray` 로 정의 된 typedef `CAtlArray<LUID> CLUIDArray`합니다.  
+ 배열에 대 한 포인터 [LUID](/windows/desktop/api/winnt/ns-winnt-_luid) 개체입니다. `CLUIDArray` 로 정의 된 typedef `CAtlArray<LUID> CLUIDArray`합니다.  
   
  *pAttributes*  
  DWORD 개체의 배열에 대 한 포인터입니다. 이 매개 변수가 생략 하거나 NULL 인 경우에 특성을 검색 하지 됩니다. `CAttributes` 로 정의 된 typedef `CAtlArray <DWORD> CAttributes`합니다.  
@@ -251,7 +251,7 @@ const TOKEN_PRIVILEGES* GetPTOKEN_PRIVILEGES() const throw(...);
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 에 대 한 포인터를 반환 합니다 [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) 구조입니다.  
+ 에 대 한 포인터를 반환 합니다 [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) 구조입니다.  
   
 ##  <a name="lookupprivilege"></a>  CTokenPrivileges::LookupPrivilege  
  지정 된 권한 이름과 연관 된 특성을 검색 합니다.  
@@ -282,7 +282,7 @@ CTokenPrivileges& operator= (const CTokenPrivileges& rhs) throw(...);
   
 ### <a name="parameters"></a>매개 변수  
  *rPrivileges*  
- 합니다 [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) 할당할 구조는 `CTokenPrivileges` 개체입니다.  
+ 합니다 [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) 할당할 구조는 `CTokenPrivileges` 개체입니다.  
   
  *rhs*  
  `CTokenPrivileges` 개체에 할당할 개체입니다.  
@@ -298,12 +298,12 @@ operator const TOKEN_PRIVILEGES *() const throw(...);
 ```  
   
 ### <a name="remarks"></a>설명  
- 에 대 한 포인터에 값을 캐스팅 합니다 [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) 구조입니다.  
+ 에 대 한 포인터에 값을 캐스팅 합니다 [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) 구조입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [보안 샘플](../../visual-cpp-samples.md)   
- [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630)   
- [LUID](http://msdn.microsoft.com/library/windows/desktop/aa379261)   
- [LUID_AND_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379263)   
+ [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges)   
+ [LUID](/windows/desktop/api/winnt/ns-winnt-_luid)   
+ [LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes)   
  [클래스 개요](../../atl/atl-class-overview.md)   
  [보안 전역 함수](../../atl/reference/security-global-functions.md)

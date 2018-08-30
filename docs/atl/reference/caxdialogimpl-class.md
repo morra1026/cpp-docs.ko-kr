@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd019112e846875bfa8e27faac5088fbcf1cdaef
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 88cb742464507fe7040b38d88355ab473b366bac
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881989"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196012"
 ---
 # <a name="caxdialogimpl-class"></a>CAxDialogImpl 클래스
 이 클래스는 대화 상자 (모달 또는 모덜리스) 호스트 하는 ActiveX 컨트롤을 구현합니다.  
@@ -170,7 +170,7 @@ INT_PTR DoModal(
   
 ### <a name="parameters"></a>매개 변수  
  *hWndParent*  
- [in] 소유자 창에 대 한 핸들입니다. 기본값은의 반환 값을 [GetActiveWindow](http://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 함수입니다.  
+ [in] 소유자 창에 대 한 핸들입니다. 기본값은의 반환 값을 [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 함수입니다.  
   
  *dwInitParam*  
  [in] 대화 상자에 전달할 값을 지정 합니다 *lParam* WM_INITDIALOG 메시지의 매개 변수입니다.  
@@ -235,7 +235,7 @@ BOOL IsDialogMessage(LPMSG pMsg);
   
 ### <a name="parameters"></a>매개 변수  
  *pMsg*  
- 에 대 한 포인터를 [MSG](http://msdn.microsoft.com/library/windows/desktop/ms644958) 검사할 메시지를 포함 하는 구조입니다.  
+ 에 대 한 포인터를 [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958) 검사할 메시지를 포함 하는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메시지 되었으면이 고, FALSE 처리 그렇지 않은 경우 TRUE를 반환 합니다.  

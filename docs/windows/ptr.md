@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 910652355706bd5397a60957d9243aa09501471a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 99d3938e2baa3beb7edc1147716b5feeaa319117
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597231"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219830"
 ---
 # <a name="ptr"></a>ptr
 
@@ -36,9 +36,9 @@ ms.locfileid: "42597231"
 
 ## <a name="remarks"></a>설명
 
-합니다 **ptr** c + + 특성에 동일한 기능을 합니다 [ptr](http://msdn.microsoft.com/library/windows/desktop/aa367149) MIDL 특성입니다.
+합니다 **ptr** c + + 특성에 동일한 기능을 합니다 [ptr](/windows/desktop/Midl/ptr) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 예를 참조 하세요 [defaultvalue](../windows/defaultvalue.md) 의 샘플 사용에 대 한 **ptr**합니다.
 

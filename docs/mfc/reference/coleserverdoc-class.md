@@ -92,12 +92,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67920590979c4b9bf3099e8c64c142aeb813b1ce
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: a02ade5beb9c3a8480672211fff4b9d23fe48562
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851660"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217591"
 ---
 # <a name="coleserverdoc-class"></a>COleServerDoc 클래스
 OLE 서버 문서의 기본 클래스입니다.  
@@ -296,7 +296,7 @@ LPOLECLIENTSITE GetClientSite() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 기본 포인터를 검색 [IOleClientSite](http://msdn.microsoft.com/library/windows/desktop/ms693706) 인터페이스입니다.  
+ 기본 포인터를 검색 [IOleClientSite](/windows/desktop/api/oleidl/nn-oleidl-ioleclientsite) 인터페이스입니다.  
   
 ##  <a name="getdocobjectserver"></a>  COleServerDoc::GetDocObjectServer  
  이 함수를 만들기 위한 재정의 `CDocObjectServer` 항목 및에 대 한 포인터를 반환 합니다.  
@@ -492,7 +492,7 @@ virtual void OnClose(OLECLOSE dwCloseOption);
 ### <a name="remarks"></a>설명  
  기본 구현 호출 `CDocument::OnCloseDocument`합니다.  
   
- 자세한 내용 및 추가 값을 참조 하세요 [OLECLOSE](http://msdn.microsoft.com/library/windows/desktop/ms680623) Windows SDK에 있습니다.  
+ 자세한 내용 및 추가 값을 참조 하세요 [OLECLOSE](/windows/desktop/api/oleidl/ne-oleidl-tagoleclose) Windows SDK에 있습니다.  
   
 ##  <a name="ondeactivate"></a>  COleServerDoc::OnDeactivate  
  사용자가 현재 내부 활성화 하는 포함 되거나 연결 된 항목이 비활성화 하면 프레임 워크에서 호출 됩니다.  
@@ -668,7 +668,7 @@ virtual void OnResizeBorder(
 ### <a name="remarks"></a>설명  
  이 함수는 크기를 조정 하 고 도구 모음 및 새 창 크기에 따라 다른 사용자 인터페이스 요소를 조정 합니다.  
   
- 자세한 내용은 [IOleInPlaceUIWindow](http://msdn.microsoft.com/library/windows/desktop/ms680716) Windows SDK에 있습니다.  
+ 자세한 내용은 [IOleInPlaceUIWindow](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceuiwindow) Windows SDK에 있습니다.  
   
  이 고급 재정의할 수 있습니다.  
   

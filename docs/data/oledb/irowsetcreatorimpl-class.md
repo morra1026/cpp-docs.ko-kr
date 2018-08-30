@@ -30,12 +30,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0c828708a088c8fe31075a8fe8504f3a1f8c14b4
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: f2fb70149c6f1c02d2b28d50e370480b027186bf
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337099"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222041"
 ---
 # <a name="irowsetcreatorimpl-class"></a>IRowsetCreatorImpl 클래스
 동일한 기능을 수행 `IObjectWithSite` 하지만 또한 OLE DB 속성을 사용 하면 `DBPROPCANSCROLLBACKWARDS DBPROPCANFETCHBACKWARDS`합니다.  
@@ -64,10 +64,10 @@ class ATL_NO_VTABLE IRowsetCreatorImpl
 |[SetSite](#setsite)|행 집합 개체를 포함 하는 사이트를 설정 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 클래스에서 상속 [IObjectWithSite](http://msdn.microsoft.com/library/windows/desktop/ms693765) 재정의 [IObjectWithSite::SetSite](http://msdn.microsoft.com/library/windows/desktop/ms683869)합니다. 공급자 명령 또는 세션 개체를 행 집합을 만들 때 호출 `QueryInterface` 행 집합 개체에서 `IObjectWithSite` 호출 `SetSite` 행 집합 개체를 전달 `IUnkown` 사이트 인터페이스와 인터페이스입니다.  
+ 이 클래스에서 상속 [IObjectWithSite](/windows/desktop/api/ocidl/nn-ocidl-iobjectwithsite) 재정의 [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite)합니다. 공급자 명령 또는 세션 개체를 행 집합을 만들 때 호출 `QueryInterface` 행 집합 개체에서 `IObjectWithSite` 호출 `SetSite` 행 집합 개체를 전달 `IUnkown` 사이트 인터페이스와 인터페이스입니다.  
 
 ## <a name="setsite"></a> Irowsetcreatorimpl:: Setsite
-행 집합 개체를 포함 하는 사이트를 설정 합니다. 자세한 내용은 [IObjectWithSite::SetSite](http://msdn.microsoft.com/library/windows/desktop/ms683869)합니다.  
+행 집합 개체를 포함 하는 사이트를 설정 합니다. 자세한 내용은 [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite)합니다.  
   
 ### <a name="syntax"></a>구문  
   

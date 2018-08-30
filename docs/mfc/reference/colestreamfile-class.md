@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9304c4e3dfd559b296c69b274c1462f2f973a04d
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: ab7b12c26854903379da0b67f9f64e2158195587
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852760"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211130"
 ---
 # <a name="colestreamfile-class"></a>COleStreamFile 클래스
 OLE 구조적 저장소의 일부로 복합 파일의 데이터 스트림(`IStream`)을 나타냅니다.  
@@ -72,7 +72,7 @@ class COleStreamFile : public CFile
   
  스트림 및 저장소를 조작 하는 방법에 대 한 자세한 내용은 문서 참조 [컨테이너: 복합 파일](../../mfc/containers-compound-files.md)...  
   
- 자세한 내용은 [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) 하 고 [IStorage](http://msdn.microsoft.com/library/windows/desktop/aa380015) Windows SDK의 합니다.  
+ 자세한 내용은 [IStream](/windows/desktop/api/objidl/nn-objidl-istream) 하 고 [IStorage](/windows/desktop/api/objidl/nn-objidl-istorage) Windows SDK의 합니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -98,11 +98,10 @@ void Attach(LPSTREAM lpStream);
 ### <a name="remarks"></a>설명  
  개체가 이미 아니어야 OLE 스트림과 함께 연결 합니다.  
   
- 자세한 내용은 [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) Windows SDK에 있습니다.  
+ 자세한 내용은 [IStream](/windows/desktop/api/objidl/nn-objidl-istream) Windows SDK에 있습니다.  
   
 ##  <a name="colestreamfile"></a>  COleStreamFile::COleStreamFile  
- 
-          `COleStreamFile` 개체를 만듭니다.  
+ `COleStreamFile` 개체를 만듭니다.  
   
 ```  
 COleStreamFile(LPSTREAM lpStream = NULL);
@@ -115,7 +114,7 @@ COleStreamFile(LPSTREAM lpStream = NULL);
 ### <a name="remarks"></a>설명  
  하는 경우 *lpStream* 가 null 인 경우 개체는 OLE 스트림과 연결 되지, 제공 된 OLE 스트림과 연결 된 개체가 고, 그렇지 합니다.  
   
- 자세한 내용은 [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) Windows SDK에 있습니다.  
+ 자세한 내용은 [IStream](/windows/desktop/api/objidl/nn-objidl-istream) Windows SDK에 있습니다.  
   
 ##  <a name="creatememorystream"></a>  COleStreamFile::CreateMemoryStream  
  안전 하 게 여기서 오류는 일반적으로 필요한 조건을 전역 공유 메모리에서 새 스트림을 만듭니다.  
@@ -134,7 +133,7 @@ BOOL CreateMemoryStream(CFileException* pError = NULL);
 ### <a name="remarks"></a>설명  
  메모리는 OLE 하위 시스템에 의해 할당 됩니다.  
   
- 자세한 내용은 [CreateStreamOnHGlobal](http://msdn.microsoft.com/library/windows/desktop/aa378980) Windows SDK에 있습니다.  
+ 자세한 내용은 [CreateStreamOnHGlobal](/windows/desktop/api/combaseapi/nf-combaseapi-createstreamonhglobal) Windows SDK에 있습니다.  
   
 ##  <a name="createstream"></a>  COleStreamFile::CreateStream  
  여기서 오류는 일반적으로 필요한 조건을 제공 되는 저장소 개체의 새 스트림을 안전 하 게 만듭니다.  
@@ -166,7 +165,7 @@ BOOL CreateStream(
 ### <a name="remarks"></a>설명  
  열기에 실패 하는 경우 파일 예외가 throw 됩니다 하 고 *pError* NULL이 아닙니다.  
   
- 자세한 내용은 [IStorage::CreateStream](http://msdn.microsoft.com/library/windows/desktop/aa380020) Windows SDK에 있습니다.  
+ 자세한 내용은 [IStorage::CreateStream](/windows/desktop/api/objidl/nf-objidl-istorage-createstream) Windows SDK에 있습니다.  
   
 ##  <a name="detach"></a>  COleStreamFile::Detach  
  스트림을 닫지 않고 스트림에 개체의 연결을 끊습니다.  
@@ -181,7 +180,7 @@ LPSTREAM Detach();
 ### <a name="remarks"></a>설명  
  프로그램을 종료 하기 전에 스트림은 다른 방식으로 닫아야 합니다.  
   
- 자세한 내용은 [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) Windows SDK에 있습니다.  
+ 자세한 내용은 [IStream](/windows/desktop/api/objidl/nn-objidl-istream) Windows SDK에 있습니다.  
   
 ##  <a name="getstream"></a>  COleStreamFile::GetStream  
  현재 스트림에 대 한 포인터를 반환 하려면이 함수를 호출 합니다.  
@@ -191,7 +190,7 @@ IStream* GetStream() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 현재 스트림 인터페이스에 대 한 포인터 ( [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034)).  
+ 현재 스트림 인터페이스에 대 한 포인터 ( [IStream](/windows/desktop/api/objidl/nn-objidl-istream)).  
   
 ##  <a name="openstream"></a>  COleStreamFile::OpenStream  
  기존 스트림을 엽니다.  
@@ -223,7 +222,7 @@ BOOL OpenStream(
 ### <a name="remarks"></a>설명  
  열기에 실패 하는 경우 파일 예외가 throw 됩니다 하 고 *pError* NULL이 아닙니다.  
   
- 자세한 내용은 [IStorage::OpenStream](http://msdn.microsoft.com/library/windows/desktop/aa380025) Windows SDK에 있습니다.  
+ 자세한 내용은 [IStorage::OpenStream](/windows/desktop/api/objidl/nf-objidl-istorage-openstream) Windows SDK에 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [CFile 클래스](../../mfc/reference/cfile-class.md)   

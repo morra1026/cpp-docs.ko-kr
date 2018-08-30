@@ -30,12 +30,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f5ed2a88e8963bae06e33835f3982d8651445929
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b5bc95e75cc9a58dd6f01b8a4ca537709941f6bf
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599522"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215942"
 ---
 # <a name="creating-transparent-or-inverse-regions-in-device-images-image-editor-for-icons"></a>장치 이미지에서 투명한 영역 또는 반전 영역 만들기(아이콘에 대한 이미지 편집기)
 
@@ -44,7 +44,7 @@ ms.locfileid: "42599522"
 아이콘의 화면 및 역 색을 적용 하 고 커서 셰이프 및 파생된 이미지 색 또는 반전 영역을 지정 합니다. 색은 해당 특성을 갖는 이미지 부분을 나타냅니다. 편집 화면색 및 반전색 특성을 나타내는 색을 변경할 수 있습니다. 이러한 변경 내용은 아이콘이 나 응용 프로그램에서 커서의 모양을 영향을 주지 않습니다.
 
 > [!NOTE]
-> 표시되는 대화 상자와 메뉴 명령은 활성 설정 또는 버전에 따라 **도움말**에 설명된 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정 또는 버전에 따라 **도움말**에 설명된 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.
 
 ### <a name="to-create-transparent-or-inverse-regions"></a>투명 또는 반전 영역을 만드는 데
 

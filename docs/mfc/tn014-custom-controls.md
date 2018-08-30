@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7ab10a6c0c53bd9aba87ddea594e689b3142b4c
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 67dab7c8e280f8fbbdcc66beef031d1e9430ac1f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027263"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215810"
 ---
 # <a name="tn014-custom-controls"></a>TN014: 사용자 지정 컨트롤
 
@@ -122,7 +122,7 @@ MFC 일반 샘플 [CTRLTEST](../visual-cpp-samples.md) 자체 그리기 메뉴 �
 
 일부 경우에는 이미 존재하는 개체의 기능을 변경해야 할 수 있습니다. 이전 예제에서는 컨트롤이 생성되기 전에 사용자가 컨트롤을 사용자 지정해야 했습니다. 동적 서브클래싱은 사용자가 이미 생성된 컨트롤을 사용자 지정할 수 있게 해줍니다.
 
-서브클래싱은 대체 하는 것에 대 한 Windows 용어는 [WndProc](http://msdn.microsoft.com/94ba8ffa-3c36-46d4-ac74-9bd10b1ffd26) 를 사용자 지정 된 창 `WndProc` 호출 하는 `WndProc` 기본 기능에 대 한 합니다.
+서브클래싱은 대체 하는 것에 대 한 Windows 용어는 [WndProc](https://msdn.microsoft.com/94ba8ffa-3c36-46d4-ac74-9bd10b1ffd26) 를 사용자 지정 된 창 `WndProc` 호출 하는 `WndProc` 기본 기능에 대 한 합니다.
 
 이 용어를 C++ 클래스 파생과 혼동해서는 안됩니다. 설명 하자면 c + + 용어인 *기본 클래스* 및 *클래스를 파생* 비슷합니다 *슈퍼 클래스* 및 *서브 클래스* 는 Windows에서 개체 모델입니다. MFC의 C++ 파생과 Windows의 서브클래싱은 기능적으로 비슷하지만 C++의 경우 동적 서브클래싱이 지원되지 않습니다.
 

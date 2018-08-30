@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05828283f560e73d4c5d2ddf2cbc05963cbb217f
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: e9e098890a90b76da8452fb2a2ca86222b49c296
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026119"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198257"
 ---
 # <a name="deriving-a-class-from-cobject"></a>CObject에서 클래스 파생시키기
 이 문서에서 클래스를 파생 하는 데 필요한 최소 단계를 설명 합니다. [CObject](../mfc/reference/cobject-class.md)합니다. 다른 `CObject` 특정 기능을 활용 하는 데 필요한 단계를 설명 하는 클래스 문서 `CObject` serialization 진단 디버깅 지원 등의 기능입니다.  
@@ -68,7 +68,7 @@ ms.locfileid: "39026119"
   
      [!code-cpp[NVC_MFCCObjectSample#1](../mfc/codesnippet/cpp/deriving-a-class-from-cobject_1.h)]  
   
- 일반적으로의 일부를 재정의할 수도 있지만 `CObject`의 새 클래스의 세부 정보를 처리 하는 멤버 함수입니다. 예를 들어 재정의 하려는 일반적으로 `Dump` 함수의 `CObject` 클래스의 내용에 대 한 디버깅 출력을 제공 하 합니다. 재정의 하는 방법에 대 한 내용은 `Dump`, 문서를 참조 하세요 [진단: 개체 내용을 덤프](http://msdn.microsoft.com/727855b1-5a83-44bd-9fe3-f1d535584b59)합니다. 재정의할 수도 있습니다는 `AssertValid` 함수의 `CObject` 클래스 개체의 데이터 멤버의 일관성을 검사할 사용자 지정 된 테스트를 제공 하 합니다. 재정의 하는 방법에 대 한 `AssertValid`를 참조 하세요 [MFC ASSERT_VALID 및 CObject::AssertValid](http://msdn.microsoft.com/7654fb75-9e9a-499a-8165-0a96faf2d5e6)합니다.  
+ 일반적으로의 일부를 재정의할 수도 있지만 `CObject`의 새 클래스의 세부 정보를 처리 하는 멤버 함수입니다. 예를 들어 재정의 하려는 일반적으로 `Dump` 함수의 `CObject` 클래스의 내용에 대 한 디버깅 출력을 제공 하 합니다. 재정의 하는 방법에 대 한 내용은 `Dump`, 문서를 참조 하세요 [진단: 개체 내용을 덤프](/previous-versions/visualstudio/visual-studio-2010/sc15kz85\(v=vs.100\))합니다. 재정의할 수도 있습니다는 `AssertValid` 함수의 `CObject` 클래스 개체의 데이터 멤버의 일관성을 검사할 사용자 지정 된 테스트를 제공 하 합니다. 재정의 하는 방법에 대 한 `AssertValid`를 참조 하세요 [MFC ASSERT_VALID 및 CObject::AssertValid](/previous-versions/visualstudio/visual-studio-2010/38z04tfa\(v=vs.100\))합니다.  
   
  이 문서 [기능 수준 지정](../mfc/specifying-levels-of-functionality.md) 다른 수준의 기능을 런타임 클래스 정보, 동적 개체 만들기 및 serialization 등을 지정 하는 방법에 설명 합니다.  
   

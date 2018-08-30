@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c3dc1743b0c0b795d7aaa10a7a47689de2336094
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ac5e03b7a9453b4b33c4a495842465b16a186543
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600397"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219194"
 ---
 # <a name="how-to-activate-and-use-a-windows-runtime-component-using-wrl"></a>방법: WRL을 사용하여 Windows 런타임 구성 요소 활성화 및 사용
 
@@ -46,7 +46,7 @@ Windows 런타임 사용을 간소화 하기 위해 Windows Runtime c + + 템플
 
    .cpp 파일의 `using namespace` 지시문을 활용하여 코드를 보다 읽기 쉽게 만드는 것이 좋습니다.
 
-2. 앱을 실행 하는 스레드를 초기화 합니다. 모든 앱은 해당 스레드 및 스레딩 모델을 초기화 해야 합니다. 이 예제에서는 합니다 [Microsoft::WRL::Wrappers::RoInitializeWrapper](../windows/roinitializewrapper-class.md) 클래스는 Windows 런타임을 초기화 하 고 지정 [RO_INIT_MULTITHREADED](http://msdn.microsoft.com/library/windows/apps/br224661.aspx) 스레딩 모델로 합니다. 합니다 `RoInitializeWrapper` 호출을 클래스 `Windows::Foundation::Initialize` 생성 시 및 `Windows::Foundation::Uninitialize` 소멸 되는 경우.
+2. 앱을 실행 하는 스레드를 초기화 합니다. 모든 앱은 해당 스레드 및 스레딩 모델을 초기화 해야 합니다. 이 예제에서는 합니다 [Microsoft::WRL::Wrappers::RoInitializeWrapper](../windows/roinitializewrapper-class.md) 클래스는 Windows 런타임을 초기화 하 고 지정 [RO_INIT_MULTITHREADED](https://msdn.microsoft.com/library/windows/apps/br224661.aspx) 스레딩 모델로 합니다. 합니다 `RoInitializeWrapper` 호출을 클래스 `Windows::Foundation::Initialize` 생성 시 및 `Windows::Foundation::Uninitialize` 소멸 되는 경우.
 
    [!code-cpp[wrl-consume-component#3](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_2.cpp)]
 
@@ -76,7 +76,7 @@ Windows 런타임 사용을 간소화 하기 위해 Windows Runtime c + + 템플
 
    [!code-cpp[wrl-consume-component#9](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_7.cpp)]
 
-   합니다 [WindowsGetStringRawBuffer](http://msdn.microsoft.com/library/windows/apps/br224636.aspx) 함수 기본 유니코드 형식의 URI 문자열을 검색 합니다.
+   합니다 [WindowsGetStringRawBuffer](https://msdn.microsoft.com/library/windows/apps/br224636.aspx) 함수 기본 유니코드 형식의 URI 문자열을 검색 합니다.
 
 전체 예제는 다음과 같습니다.
 

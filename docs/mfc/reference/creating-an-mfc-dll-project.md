@@ -19,18 +19,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0a5582c81bdc56861a549a2d17cd95ee238975a
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 5fa06417b93012c7d564a45c4e58f03edf1e2a39
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027994"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215680"
 ---
 # <a name="creating-an-mfc-dll-project"></a>MFC DLL 프로젝트 만들기
 MFC DLL은 동시에 여러 응용 프로그램에서 사용할 수 있는 함수의 공유 라이브러리로 사용 되는 이진 파일. MFC DLL 프로젝트를 만드는 가장 쉬운 방법은 MFC DLL 마법사를 사용 하는 것입니다.  
   
 > [!NOTE]
->  IDE의 기능이의 모양을 활성 설정이 나 버전에 따라 달라질 수 있습니다 및 도움말에 설명 된 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+>  IDE의 기능이의 모양을 활성 설정이 나 버전에 따라 달라질 수 있습니다 및 도움말에 설명 된 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
   
 ### <a name="to-create-an-mfc-dll-project-using-the-mfc-dll-wizard"></a>MFC DLL 마법사를 사용 하 여 MFC DLL 프로젝트를 만들려면  
   
@@ -51,5 +51,5 @@ MFC DLL은 동시에 여러 응용 프로그램에서 사용할 수 있는 함�
  [Visual C++ 프로젝트 형식](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)   
  [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)   
  [속성 페이지](../../ide/property-pages-visual-cpp.md)   
- [응용 프로그램 배포](http://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+ [응용 프로그램 배포](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)
 

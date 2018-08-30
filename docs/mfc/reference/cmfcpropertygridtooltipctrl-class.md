@@ -30,15 +30,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c284f5d5fdfee09349cc6eb9cbde38da21918d25
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 574da3d370a403aa74ba8c438b7c175bee19f198
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040963"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211967"
 ---
 # <a name="cmfcpropertygridtooltipctrl-class"></a>CMFCPropertyGridToolTipCtrl 클래스
-도구 설명에는 구현 하는 컨트롤의 [CMFCPropertyGridCtrl 클래스](../../mfc/reference/cmfcpropertygridctrl-class.md) 사용 하 여 도구 설명을 표시 합니다.  
+설명을 구현 하는 컨트롤을 합니다 [CMFCPropertyGridCtrl 클래스](../../mfc/reference/cmfcpropertygridctrl-class.md) 사용 하 여 도구 설명을 표시 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -65,17 +65,17 @@ class CMFCPropertyGridToolTipCtrl : public CWnd
 |[CMFCPropertyGridToolTipCtrl::Deactivate](#deactivate)|비활성화 하 고 도구 설명 컨트롤을 숨깁니다.|  
 |[CMFCPropertyGridToolTipCtrl::GetLastRect](#getlastrect)|도구 설명 컨트롤의 마지막 위치 좌표를 반환합니다.|  
 |[CMFCPropertyGridToolTipCtrl::Hide](#hide)|도구 설명 컨트롤을 숨깁니다.|  
-|`CMFCPropertyGridToolTipCtrl::PreTranslateMessage`|창 메시지가 [TranslateMessage](../../mfc/reference/cwinapp-class.md) 및 [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) Windows 함수로 디스패치되기 전에 [CWinApp](http://msdn.microsoft.com/library/windows/desktop/ms644934) 클래스가 이 메시지를 해석하는 데 사용됩니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|  
-|[CMFCPropertyGridToolTipCtrl::SetTextMargin](#settextmargin)|도구 설명 텍스트 및 도구 설명 창의 테두리 사이의 간격을 설정 합니다.|  
+|`CMFCPropertyGridToolTipCtrl::PreTranslateMessage`|클래스에서 사용 하는 [CWinApp](../../mfc/reference/cwinapp-class.md) 디스패치 되기 전에 창 메시지를 변환 하는 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|  
+|[CMFCPropertyGridToolTipCtrl::SetTextMargin](#settextmargin)|도구 설명 텍스트를 도구 설명 창의 테두리 사이의 간격을 설정합니다.|  
 |[CMFCPropertyGridToolTipCtrl::Track](#track)|도구 설명 컨트롤을 표시합니다.|  
   
 ## <a name="remarks"></a>설명  
- 속성 이름에는 포인터를 놓으면 도구 설명이 표시 됩니다. [CMFCPropertyGridToolTipCtrl](../../mfc/reference/cmfcpropertygridtooltipctrl-class.md) 구분 되는 사용자가 쉽게 읽을 수 있는 클래스는 도구 설명이 표시 됩니다. 일반적으로 도구 설명의 위치는 포인터의 위치에 따라 결정 됩니다. 이 클래스를 사용 하 여 도구 설명 속성 이름 위에 표시 되 고 속성 이름을 완벽 하 게 볼 수 있도록 자연 속성 확장와 비슷합니다.  
+ 속성 이름에는 포인터를 놓으면 도구 설명이 표시 됩니다. 합니다 [CMFCPropertyGridToolTipCtrl](../../mfc/reference/cmfcpropertygridtooltipctrl-class.md) 클래스는 사용자가 쉽게 읽을 수 있는 것을 도구 설명이 표시 됩니다. 일반적으로 도구 설명의 위치는 포인터의 위치에 따라 결정 됩니다. 이 클래스를 사용 하 여 도구 설명 속성 이름을 표시 되며 속성 이름을 완전히 표시 되도록 자연 스러운 속성 확장 비슷합니다.  
   
- 이 컨트롤을 만듭니다. 및에서 사용 하 여 자동으로 MFC는 [CMFCPropertyGridCtrl 클래스](../../mfc/reference/cmfcpropertygridctrl-class.md)합니다.  
+ MFC 자동으로이 컨트롤을 만들고에서 사용 하 여 [CMFCPropertyGridCtrl 클래스](../../mfc/reference/cmfcpropertygridctrl-class.md)합니다.  
   
-## <a name="example"></a>예  
- 다음 예제에서는의 개체를 생성 하는 `CMFCPropertyGridToolTipCtrl` 클래스 및 도구 설명 컨트롤을 표시 하는 방법입니다.  
+## <a name="example"></a>예제  
+ 다음 예제에서는의 개체를 생성 하는 방법에 설명 합니다 `CMFCPropertyGridToolTipCtrl` 클래스 및 도구 설명 컨트롤을 표시 하는 방법입니다.  
   
  [!code-cpp[NVC_MFC_RibbonApp#23](../../mfc/reference/codesnippet/cpp/cmfcpropertygridtooltipctrl-class_1.cpp)]  
   
@@ -110,7 +110,7 @@ BOOL Create(CWnd* pWndParent);
  부모 창에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
- TRUE 이면 창 성공적으로 만들었습니다. 그렇지 않으면 FALSE입니다.  
+ 창 성공적으로 만들어진 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ##  <a name="deactivate"></a>  CMFCPropertyGridToolTipCtrl::Deactivate  
  비활성화 하 고 도구 설명 컨트롤을 숨깁니다.  
@@ -120,7 +120,7 @@ void Deactivate();
 ```  
   
 ### <a name="remarks"></a>설명  
- 이 메서드 설정 마지막 위치 및 텍스트 빈 값에 대 한 이후 호출이 [CMFCPropertyGridToolTipCtrl::Track](#track) 도구 설명을 표시 합니다.  
+ 이 메서드를 설정 마지막 위치 및 텍스트를 빈 값을 나중에 호출 되도록 [CMFCPropertyGridToolTipCtrl::Track](#track) 도구 설명을 표시 합니다.  
   
 ##  <a name="getlastrect"></a>  CMFCPropertyGridToolTipCtrl::GetLastRect  
  도구 설명 컨트롤의 마지막 위치 좌표를 반환합니다.  
@@ -141,7 +141,7 @@ void Hide();
 ```  
   
 ##  <a name="settextmargin"></a>  CMFCPropertyGridToolTipCtrl::SetTextMargin  
- 도구 설명 텍스트 및 도구 설명 창의 테두리 사이의 간격을 설정 합니다.  
+ 도구 설명 텍스트를 도구 설명 창의 테두리 사이의 간격을 설정합니다.  
   
 ```  
 void SetTextMargin(int nTextMargin);
@@ -149,7 +149,7 @@ void SetTextMargin(int nTextMargin);
   
 ### <a name="parameters"></a>매개 변수  
  [in] *nTextMargin*  
- 도구 설명 컨트롤 텍스트 및 도구 설명 창의 테두리 사이의 간격을 지정 합니다. 기본값은 10 픽셀입니다.  
+ 도구 설명 컨트롤 텍스트를 도구 설명 창의 테두리 사이의 간격을 지정합니다. 기본값은 10 픽셀입니다.  
   
 ##  <a name="track"></a>  CMFCPropertyGridToolTipCtrl::Track  
  도구 설명 컨트롤을 표시합니다.  
@@ -162,13 +162,13 @@ void Track(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *rect*  
- Tooltip 컨트롤의 크기와 위치를 지정합니다.  
+ 도구 설명 컨트롤의 크기와 위치를 지정합니다.  
   
  [in] *strText*  
  도구 설명에 표시할 텍스트를 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 지정 된 크기와 위치에 도구 설명 컨트롤 표시 *rect*합니다. 이 메서드가 호출 된 마지막 시간 이후 위치, 크기 및 텍스트 변경 되지 않은 경우이 메서드는 영향을 주지 않습니다.  
+ 이 메서드는 지정 된 크기와 위치에 도구 설명 컨트롤을 표시 *rect*합니다. 마지막으로이 메서드를 호출한 후 위치, 크기 및 텍스트 변경 되지 않은 경우이 메서드는 영향을 주지 않습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [계층 구조 차트](../../mfc/hierarchy-chart.md)   

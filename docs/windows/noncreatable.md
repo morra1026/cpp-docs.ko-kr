@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a55daa9f8c742d847944ddb0459db208c7edf9cf
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b31ede898e2b1976bc16be7cf89c0223c3709193
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608126"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221545"
 ---
 # <a name="noncreatable"></a>noncreatable
 
@@ -36,11 +36,11 @@ ms.locfileid: "42608126"
 
 ## <a name="remarks"></a>설명
 
-합니다 **noncreatable** c + + 특성에 동일한 기능을 합니다 [noncreatable](http://msdn.microsoft.com/library/windows/desktop/aa367118) MIDL 특성과 생성 된 자동으로 전달 됩니다. 컴파일러에서 IDL 파일입니다.
+합니다 **noncreatable** c + + 특성에 동일한 기능을 합니다 [noncreatable](/windows/desktop/Midl/noncreatable) MIDL 특성과 생성 된 자동으로 전달 됩니다. 컴파일러에서 IDL 파일입니다.
 
 ATL을 사용 하는 프로젝트 내에서이 특성을 사용 하면 특성의 동작을 변경 합니다. 위 동작 외에도 특성도 삽입 합니다 [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto) 매크로입니다. ATL에 나타냅니다이 매크로 개체를 외부에서 만들 수 없습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // cpp_attr_ref_noncreatable.cpp

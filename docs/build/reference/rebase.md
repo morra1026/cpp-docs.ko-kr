@@ -1,5 +1,5 @@
 ---
-title: -REBASE | Microsoft Docs
+title: -다시 지정 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a5e2b68768b01d71532c358a14c53d8a033e1ed
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 686306316e6950ba62ea7c44522b95f4d935be0b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377091"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216176"
 ---
 # <a name="rebase"></a>/다시 지정
 ```  
@@ -34,15 +34,15 @@ ms.locfileid: "32377091"
 ```  
   
 ## <a name="remarks"></a>설명  
- 이 옵션의 기본 주소를 지정된 된 파일을 설정합니다. EDITBIN 가장 가까운 64 KB로 반올림 각 파일의 크기에 따라 연속적인 주소 공간에 새 기본 주소를 할당 합니다. 기본 주소에 대 한 세부 정보를 참조 하십시오.는 [기준 주소](../../build/reference/base-base-address.md) (/base) 링커 옵션입니다.  
+ 이 옵션에 지정된 된 파일에 대 한 기본 주소를 설정합니다. EDITBIN은 64KB까지 반올림 하는 각 파일의 크기에 따라 연속적인 주소 공간에서 새 기본 주소를 할당 합니다. 기본 주소에 대 한 자세한 내용은 참조는 [기본 주소](../../build/reference/base-base-address.md) (/ 기본) 링커 옵션입니다.  
   
- 프로그램의 실행 파일과 Dll에 지정 된 *파일* EDITBIN 명령줄을 사용 하려면 되는 순서에서에 인수입니다. 하나 이상의 선택적으로 지정할 수 *한정자*쉼표로 구분 하는, (**,**):  
+ 프로그램 실행 파일과 Dll을 지정 합니다 *파일* 기반 하는 순서로 EDITBIN 명령줄의 인수입니다. 하나 이상의 선택적으로 지정할 수 있습니다 *한정자*각각 쉼표로 구분 (**,**):  
   
 |한정자|작업|  
 |--------------|------------|  
-|기본 **= * * * 주소*|파일에 기본 주소를 다시 할당 하기 위해 시작 주소를 제공 합니다. 지정 *주소* 10 진수 또는 C 언어 표기법입니다. BASE를 지정 하지 않은 경우 기본적으로 시작 하는 기본 주소는 0x400000입니다. DOWN이 사용 되는, 기본 사람은 및 *주소* 의 기본 주소 범위의 끝을 설정 합니다.|  
-|BASEFILE|COFFBASE 라는 파일을 만듭니다. TXT 옵션 /base는 링크의 필요한 형식에 있는 텍스트 파일입니다.|  
-|아래로|끝 주소에서 아래쪽으로 기준 주소 다시 할당 하도록 EDITBIN 지시 합니다. 파일은 가능한 가장 높은 주소 주소 범위의 끝 부분 아래에 있는 첫 번째 파일이 지정 된 순서로 다시 할당 됩니다. BASE는 아래쪽에 있는 파일의 기준에 대 한 충분 한 주소 공간을 위해 사용 해야 합니다. 지정된 된 파일에 필요한 주소 공간을 확인 하려면 /REBASE EDITBIN 파일에 대해 실행 하 고 표시 된 전체 크기를 64KB를 추가 합니다.|  
+|**기본 =**<em>주소</em>|파일에 기본 주소 재할당에 대 한 시작 주소를 제공 합니다. 지정할 *주소* 10 진수 또는 C 언어 표기법으로 나타냅니다. BASE를 지정 하지 않은 경우 기본적으로 시작 하는 기본 주소는 0x400000입니다. DOWN이 사용 되는, 기본 지정 해야 하 고 *주소* 기본 주소 범위의 끝을 설정 합니다.|  
+|**BASEFILE**|COFFBASE 라는 파일을 만듭니다. TXT에 필요한 형식으로 링크의 텍스트 파일/기본 옵션입니다.|  
+|**아래로**|끝 주소에서 아래쪽으로 기본 주소를 할당할 EDITBIN 알려 줍니다. 아래 주소 범위의 가장 높은 가능한 주소에 있는 첫 번째 파일을 사용 하 여 지정 된 순서로 파일을 다시 할당 됩니다. 파일의 기준 주소 공간이 충분 하도록 아래쪽에 있는 BASE는 사용 해야 합니다. 지정된 된 파일에 필요한 주소 공간을 확인 하려면 EDITBIN /REBASE를 사용 하 여 파일을 실행 하 고 표시 된 전체 크기를 64KB를 추가 합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [EDITBIN 옵션](../../build/reference/editbin-options.md)

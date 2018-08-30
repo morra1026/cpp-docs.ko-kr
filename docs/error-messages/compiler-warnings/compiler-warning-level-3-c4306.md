@@ -1,7 +1,7 @@
 ---
 title: 컴파일러 경고 (수준 3) C4306 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,19 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99a490fc90ee9a977442548406ea2aec4baac3fd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ab5372213819375a6c1fec3cfc43970415b6486a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299005"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219996"
 ---
 # <a name="compiler-warning-level-3-c4306"></a>컴파일러 경고(수준 3) C4306
-**'**   
- ***식별자* ': 변환할 '**   
- ***type1* 'to'**   
- ***유형 2* ' 더 큰**  
-  
- 식별자 형식이 큰 포인터로 캐스팅 합니다. 새로운 유형의 채워지지 않은 상위 비트가 0으로 채워진 됩니다.  
-  
- 이 경고는 의도 하지 않은 변환을 나타낼 수 있습니다. 결과 포인터는 유효 하지 않게 될 수 있습니다.
+
+> '*식별자*': 변환할 '*type1*'to'*type2*' 큰 크기의
+
+식별자가 형식 보다 큰 포인터에 캐스팅 합니다. 새 형식의 채워지지 않은 상위 비트가 0으로 채워진 됩니다.
+
+이 경고는 의도 하지 않은 변환을 나타낼 수 있습니다. 결과 포인터는 유효 하지 않을 수 있습니다.

@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2ce93a17dd2666469b8e6d56e1a106d508855f7
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 4b30aa51f284d216332225664d07d7692bd042a1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42538753"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223067"
 ---
 # <a name="cdockablepane-class"></a>CDockablePane Class
 도킹 사이트에 도킹되거나 탭 창에 포함될 수 있는 창을 구현합니다.  
@@ -213,7 +213,7 @@ class CDockablePane : public CPane
 |[CDockablePane::IsTabLocationBottom](#istablocationbottom)|탭 창의 맨 위나 맨 아래에 있는지 여부를 지정 합니다.|  
 |[CDockablePane::IsTracked](#istracked)|사용자가 창을 끄는 동안 여부를 지정 합니다.|  
 |[CDockablePane::IsVisible](#isvisible)|현재 창에 표시 되는지 여부를 결정 합니다.|  
-|[Cdockablepane:: Loadstate](http://msdn.microsoft.com/96110136-4f46-4764-8a76-3b4abaf77917)|내부적으로 사용 합니다.|  
+|[Cdockablepane:: Loadstate](https://msdn.microsoft.com/96110136-4f46-4764-8a76-3b4abaf77917)|내부적으로 사용 합니다.|  
 |[CDockablePane::OnAfterChangeParent](#onafterchangeparent)|창의 부모 변경 되었을 때 프레임 워크에서 호출 됩니다. (재정의 [CPane::OnAfterChangeParent](../../mfc/reference/cpane-class.md#onafterchangeparent).)|  
 |[CDockablePane::OnAfterDockFromMiniFrame](#onafterdockfromminiframe)|부동 도킹 모음 프레임 창을 도킹 하는 경우 프레임 워크에서 호출 됩니다.|  
 |[CDockablePane::OnBeforeChangeParent](#onbeforechangeparent)|창의 부모 변경 되려고 할 때 프레임 워크에서 호출 됩니다. (재정의 [CPane::OnBeforeChangeParent](../../mfc/reference/cpane-class.md#onbeforechangeparent).)|  
@@ -295,7 +295,7 @@ class CDockablePane : public CPane
   
 -   자동 숨기기 애니메이션을 사용 하지 않도록 설정 하 여 수를 [CDockablePane::m_bDisableAnimation](#m_bdisableanimation) 멤버 변수를 TRUE입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 구성 하는 방법에 설명 된 `CDockablePane` 에서 다양 한 메서드를 사용 하 여 개체를 `CDockablePane` 클래스입니다. 이 예제에서는 자동 숨김 도킹 가능한 창에 대 한 모든 기능을 활성화, 캡션 또는 위치 조정 막대를 사용 하도록 설정, 자동 숨기기 모드를 사용 하도록 설정, 창을 표시 및 자동 숨기기 모드에 있는 창에 애니메이션 효과 주기 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [Visual Studio 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#27](../../mfc/codesnippet/cpp/cdockablepane-class_1.cpp)]  

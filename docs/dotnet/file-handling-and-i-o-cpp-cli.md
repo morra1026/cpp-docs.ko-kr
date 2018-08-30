@@ -35,12 +35,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 515d74b30e63fbc40411ec9cd62b2b1ab6d92591
-ms.sourcegitcommit: b8b1cba85ff423142d73c888be26baa8c33f3cdc
+ms.openlocfilehash: 1d04f918c9c92c2de8ff6b654a8a0d4ee43c2130
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39093009"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196027"
 ---
 # <a name="file-handling-and-io-ccli"></a>파일 처리 및 I/O(C++/CLI)
 .NET Framework를 사용 하 여 다양 한 파일 작업 방법을 보여 줍니다.  
@@ -50,7 +50,7 @@ ms.locfileid: "39093009"
 ## <a name="enumerate"></a> 디렉터리의 파일 열거
 다음 코드 예제에서는 디렉터리의 파일 목록을 검색 하는 방법에 설명 합니다. 또한 하위 디렉터리 열거 됩니다. 다음 코드 예제에서는 합니다 <xref:System.IO.Directory.GetFiles%2A> <xref:System.IO.Directory.GetFiles%2A> 고 <xref:System.IO.Directory.GetDirectories%2A> C:\Windows 디렉터리의 내용을 표시 하는 방법입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // enum_files.cpp  
@@ -78,7 +78,7 @@ int main()
 ## <a name="monitor"></a> 파일 시스템 변경 사항 모니터링
 다음 코드 예제에서는 <xref:System.IO.FileSystemWatcher> 생성, 변경, 삭제 또는 이름이 바뀐 파일에 해당 하는 이벤트에 대 한 등록 합니다. 파일 변경에 대 한 디렉터리를 주기적으로 폴링 대신 사용할 수 있습니다는 <xref:System.IO.FileSystemWatcher> 변경이 감지 될 때 이벤트를 발생 시키는 클래스입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // monitor_fs.cpp  
@@ -145,7 +145,7 @@ int main()
   
  코드 예제에서는 이름이 data.bin이 고 이진 형식의 정수를에서 포함 하는 파일을 읽습니다. 이런이 종류의 파일에 대 한 정보를 참조 하세요 [방법: 이진 파일 쓰기 (C + + /cli CLI)](../dotnet/how-to-write-a-binary-file-cpp-cli.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // binary_read.cpp  
@@ -184,7 +184,7 @@ int main()
   
  이 코드 예제에서는 텍스트가 포함 된 textfile.txt 라는 파일을 읽습니다. 이런이 종류의 파일에 대 한 정보를 참조 하세요 [방법: 텍스트 파일 쓰기 (C + + /cli CLI)](../dotnet/how-to-write-a-text-file-cpp-cli.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // text_read.cpp  
@@ -226,7 +226,7 @@ int main()
   
  이 코드는 Notepad.exe 파일 정보를 검색 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // file_info.cpp  
@@ -266,7 +266,7 @@ int main()
   
  다음 코드 예제에서는 이진 형식의 정수를에서 포함 하는 파일을 씁니다. 코드를 사용 하 여이 파일을 읽을 수 있습니다 [방법: 이진 파일 읽기 (C + + /cli CLI)](../dotnet/how-to-read-a-binary-file-cpp-cli.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // binary_write.cpp  
@@ -308,7 +308,7 @@ int main()
   
  파일을 사용 하 여 제출 후은 <xref:System.IO.StreamWriter.Write%2A> 및 <xref:System.IO.TextWriter.WriteLine%2A> 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // text_write.cpp  
@@ -337,6 +337,6 @@ int main()
 ## <a name="see-also"></a>참고 항목   
  [C++/CLI를 사용한 .NET 프로그래밍(Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 
- [파일 및 스트림 I/O](http://msdn.microsoft.com/Library/4f4a33a9-66b7-4cd7-a285-4ad3e4276cd2)
+ [파일 및 스트림 I/O](https://msdn.microsoft.com/Library/4f4a33a9-66b7-4cd7-a285-4ad3e4276cd2)
 
  [System.IO 네임 스페이스](https://msdn.microsoft.com/library/system.io.aspx)

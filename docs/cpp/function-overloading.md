@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f57ae6a7d084a497ec41c9b66b314ad1fdb3e7fc
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 16d9123125cc6cb01ee5dfb03f771e263d9915f2
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406573"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221442"
 ---
 # <a name="function-overloading"></a>함수 오버로드
 C++에서는 동일한 범위에서 이름이 같은 함수를 둘 이상 지정할 수 있습니다. 이러한 이라고 *오버 로드 된* 함수입니다. 오버 로드 된 함수를 사용 하면 함수의 경우, 형식 및 인수 개수에 따라 서로 다른 의미 체계를 제공할 수 있습니다. 
@@ -43,8 +43,9 @@ C++에서는 동일한 범위에서 이름이 같은 함수를 둘 이상 지정
 |**const** 또는 **volatile**|전체 함수에 적용 하는 경우 예|
 |[ref-qualifier](#ref-qualifier)|예|  
   
-## <a name="example"></a>예  
- 다음 예제에서는 오버로드 사용 방법을 보여 줍니다.  
+## <a name="example"></a>예제
+
+다음 예제에서는 오버로드 사용 방법을 보여 줍니다.  
   
 ```cpp 
 // function_overloading.cpp  
@@ -270,9 +271,9 @@ volatile Over&
   
 1.  정확한 일치. 함수가 호출되는 형식과 함수 프로토타입에서 선언된 형식 간 정확한 일치는 항상 가장 좋은 일치입니다. trivial 변환 시퀀스는 정확히 일치하는 항목으로 분류됩니다. 하지만 이러한 변환 중 어느 것도 수행하지 않는 시퀀스는 변환시키는 시퀀스보다 나은 것으로 간주됩니다.  
   
-    -   에 대 한 포인터에 대 한 포인터에서 **상수** (`type` **\*** 하 **const** `type` **\*** ).  
+    -   에 대 한 포인터에 대 한 포인터에서 **상수** (`type` <strong>\*</strong> 하 **const** `type` <strong>\*</strong> ).  
   
-    -   에 대 한 포인터에 대 한 포인터에서 **volatile** (`type` **\*** 하 **volatile** `type` **\***).  
+    -   에 대 한 포인터에 대 한 포인터에서 **volatile** (`type` <strong>\*</strong> 하 **volatile** `type` <strong>\*</strong>).  
   
     -   참조에 대 한 참조에서 **상수** (`type` **&** 하 **const** `type` **&**).  
   

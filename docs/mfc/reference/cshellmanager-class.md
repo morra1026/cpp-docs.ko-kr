@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0752d278f0459c3558021d02fbcddb6ba234df53
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 35f186822e00f74552e3bf8d52950f3c4bbe5b45
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852388"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207394"
 ---
 # <a name="cshellmanager-class"></a>CShellManager 클래스
 PIDL(식별자 포인터 목록)에 대한 포인터를 사용하여 작업할 수 있는 몇 가지 메서드를 구현합니다.  
@@ -117,7 +117,7 @@ BOOL BrowseForFolder(
  대화 상자의 제목입니다.  
   
  [in] *ulFlags*  
- 대화 상자에 대 한 옵션을 지정 하는 플래그입니다. 참조 [BROWSEINFO](http://msdn.microsoft.com/library/windows/desktop/bb773205) 자세한 설명입니다.  
+ 대화 상자에 대 한 옵션을 지정 하는 플래그입니다. 참조 [BROWSEINFO](/windows/desktop/api/shlobj_core/ns-shlobj_core-_browseinfoa) 자세한 설명입니다.  
   
  [out] *piFolderImage*  
  메서드를 선택한 폴더의 이미지 인덱스를 기록 하는 위치는 정수 값에 대 한 포인터입니다.  
@@ -128,7 +128,7 @@ BOOL BrowseForFolder(
 ### <a name="remarks"></a>설명  
  이 메서드를 호출할 때 응용 프로그램 만들고 사용자가 폴더를 선택할 수 있는 대화 상자를 표시 합니다. 메서드는 폴더의 경로 기록 합니다는 *strOutFolder* 매개 변수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에 대 한 참조를 검색 하는 방법에 설명를 `CShellManager` 사용 하 여 개체를 `CWinAppEx::GetShellManager` 메서드 및 사용 방법에는 `BrowseForFolder` 메서드. 이 코드 조각은의 일부인 합니다 [탐색기 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_Explorer#6](../../mfc/reference/codesnippet/cpp/cshellmanager-class_1.cpp)]  
@@ -153,7 +153,7 @@ LPITEMIDLIST ConcatenateItem(
  함수가 성공할 경우 새 항목 목록에 대 한 포인터를 그렇지 않으면 NULL입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드를 만듭니다 [ITEMIDLIST](http://msdn.microsoft.com/library/windows/desktop/bb773321) 둘 다를 포함할 만큼 충분히 큰지 *pidl1* 하 고 *pidl2*합니다. 그런 다음 복사 *pidl1* 하 고 *pidl2* 새 목록에 있습니다.  
+ 이 메서드를 만듭니다 [ITEMIDLIST](/windows/desktop/api/shtypes/ns-shtypes-_itemidlist) 둘 다를 포함할 만큼 충분히 큰지 *pidl1* 하 고 *pidl2*합니다. 그런 다음 복사 *pidl1* 하 고 *pidl2* 새 목록에 있습니다.  
   
 ##  <a name="copyitem"></a>  CShellManager::CopyItem  
  항목 목록에 복사합니다.  

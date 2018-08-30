@@ -51,12 +51,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03251c9f0442ffa3cda6b00b6528e424e1fe9007
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b0e2271093237fbfdbc7f5e0492b1db220c469d1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415636"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210363"
 ---
 # <a name="vcprintfp-vcprintfpl-vcwprintfp-vcwprintfpl"></a>_vcprintf_p, _vcprintf_p_l, _vcwprintf_p, _vcwprintf_p_l
 
@@ -103,24 +103,24 @@ int _vcwprintf_p_l(
 
 ## <a name="return-value"></a>반환 값
 
-기록된 문자 수 또는 출력 오류가 발생하는 경우 음수 값입니다. 경우 *형식* 가 null 포인터에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고-1이 반환 됩니다.
+기록된 문자 수 또는 출력 오류가 발생하는 경우 음수 값입니다. 하는 경우 *형식* 가 null 포인터인 경우에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고-1이 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 
-인수 목록에 대 한 포인터를 사용 하 고 다음 사용 하 여 이러한 각 함수는 **_putch** 서식을 지정 하 고 콘솔에 지정된 된 데이터를 작성 하는 함수입니다. (**_vcwprintf_p** 사용 하 여 **_putwch** 대신 **_putch**합니다. **_vcwprintf_p** 의 와이드 문자 버전이 **_vcprintf_p**합니다. 인수로 와이드 문자열이 필요합니다.)
+인수 목록에 대 한 포인터를 가져오고 사용 하 여 이러한 각 함수는 **_putch** 서식을 지정 하 고 콘솔에 지정된 된 데이터를 작성 하는 함수입니다. (**_vcwprintf_p** 사용 하 여 **_putwch** 대신 **_putch**합니다. **_vcwprintf_p** 의 와이드 문자 버전이 **_vcprintf_p**합니다. 인수로 와이드 문자열이 필요합니다.)
 
-있는 이러한 함수 버전은 **_l** 접미사는 동일 제외 하 고 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 합니다.
+접미사가 있는 이러한 함수 버전을 **_l** 접미사 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
 
 각 *인수* (있는 경우) 변환 되 고 해당 형식 사양에 따라 출력이 *형식*합니다. 형식 사양은 인수가 형식 문자열에서 사용되는 순서를 지정할 수 있도록 위치 매개 변수를 지원합니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
 
 이러한 함수는 출력될 때 줄 바꿈 문자를 CR-LF(캐리지 리턴 줄 바꿈) 조합으로 변환하지 않습니다.
 
 > [!IMPORTANT]
-> *format*이 사용자 정의 문자열이 아닌지 확인하세요. 자세한 내용은 [버퍼 오버런 방지](http://msdn.microsoft.com/library/windows/desktop/ms717795)를 참조하세요.
+> *format*이 사용자 정의 문자열이 아닌지 확인하세요. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-이 함수는 입력 포인터와 형식 문자열의 유효성을 검사합니다. 경우 *형식* 또는 *인수* 은 **NULL**, 이러한 함수 설명 된 대로 잘못 된 매개 변수 처리기를 호출 형식 문자열에 잘못 된 형식 지정 문자가 포함 되어 있는 경우 또는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된, 하는 경우 이러한 함수가-1을 반환 하 고 설정 **errno** 를 **EINVAL**합니다.
+이 함수는 입력 포인터와 형식 문자열의 유효성을 검사합니다. 하는 경우 *형식* 또는 *인수* 됩니다 **NULL**에 설명 된 대로 이러한 함수는 잘못 된 매개 변수 처리기를 호출 형식 문자열이 잘못 된 서식 문자열을 포함 하는 경우 또는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수가-1를 반환 하는 설정 **errno** 하 **EINVAL**합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -129,7 +129,7 @@ int _vcwprintf_p_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_vcprintf_p**, **_vcprintf_p_l**|\<conio.h> 및 \<stdarg.h>|
 |**_vcwprintf_p**, **_vcwprintf_p_l**|\<conio.h> 및 \<stdarg.h>|

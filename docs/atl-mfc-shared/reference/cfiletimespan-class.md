@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85415ee73b65619a2da0a3e7720250a3618a0fec
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: f6d17ec38820e82a97435e04f2126f87ef9208aa
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883520"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218438"
 ---
 # <a name="cfiletimespan-class"></a>CFileTimeSpan 클래스
 이 클래스는 상대 날짜 및 시간 값을 파일에 연결 된 관리 하기 위한 메서드를 제공 합니다.  
@@ -71,7 +71,7 @@ class CFileTimeSpan
 ## <a name="remarks"></a>설명  
  이 클래스는 상대 기간을 관리 하기 위한 메서드 제공 시기와 관련 된 작업을 수행할 때 자주 발생 하는 시간을 파일을, 마지막으로 액세스 만들거나 마지막으로 수정 합니다. 이 클래스의 메서드 함께에서 자주 [CFileTime 클래스](../../atl-mfc-shared/reference/cfiletime-class.md) 개체입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  예를 참조 하세요 [CFileTime::Millisecond](../../atl-mfc-shared/reference/cfiletime-class.md#millisecond)합니다.  
   
 ## <a name="requirements"></a>요구 사항  
@@ -272,7 +272,7 @@ void SetTimeSpan(LONGLONG nSpan) throw();
  밀리초 단위의 시간 범위에 대 한 새 값입니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284)   
+ [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)   
  [CFileTime 클래스](../../atl-mfc-shared/reference/cfiletime-class.md)   
  [계층 구조 차트](../../mfc/hierarchy-chart.md)   
  [ATL/MFC 공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)

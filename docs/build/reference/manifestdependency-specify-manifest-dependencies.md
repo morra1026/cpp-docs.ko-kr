@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f9b2de39f5b5340eff22c7e22244aca3d05af67
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d486047b708e0c3412aa63e0a0b026a2a4204f71
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376574"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213901"
 ---
 # <a name="manifestdependency-specify-manifest-dependencies"></a>/MANIFESTDEPENDENCY(매니페스트 종속성 지정)
 ```  
@@ -31,25 +31,25 @@ ms.locfileid: "32376574"
 ```  
   
 ## <a name="remarks"></a>설명  
- /MANIFESTDEPENDENCY를 사용 하면에 배치 하는 특성을 지정할 수는 \<종속성 > 매니페스트 파일의 섹션입니다.  
+ /MANIFESTDEPENDENCY에 배치 될 특성을 지정할 수는 \<종속성 > 매니페스트 파일의 섹션입니다.  
   
- 참조 [/MANIFEST (만들기-Side-by-side 어셈블리 매니페스트)](../../build/reference/manifest-create-side-by-side-assembly-manifest.md) 매니페스트 파일을 만드는 방법에 대 한 내용은 합니다.  
+ 참조 [/MANIFEST (만들기-Side-by-side 어셈블리 매니페스트)](../../build/reference/manifest-create-side-by-side-assembly-manifest.md) 매니페스트 파일을 만드는 방법에 대 한 정보에 대 한 합니다.  
   
- 대 한 자세한 내용은 \<종속성 > 섹션 매니페스트 파일의 참조 [게시자 구성 파일](http://msdn.microsoft.com/library/aa375682)합니다.  
+ 대 한 자세한 내용은 합니다 \<종속성 > 섹션에서는 매니페스트 파일 참조 [게시자 구성 파일](/windows/desktop/SbsCs/publisher-configuration-files)합니다.  
   
- /MANIFESTDEPENDENCY 정보 링커 두 가지 방법 중 하나에 전달 될 수 있습니다.  
+ /MANIFESTDEPENDENCY 정보 두 가지 방법 중 하나로 링커 전달할 수 있습니다.  
   
--   명령줄에서 직접 (또는 지시 파일에서) /MANIFESTDEPENDENCY를 사용 합니다.  
+-   명령줄에서 직접 (또는 응답 파일) /MANIFESTDEPENDENCY를 사용 하 여 합니다.  
   
--   통해는 [주석](../../preprocessor/comment-c-cpp.md) pragma입니다.  
+-   통해 합니다 [주석](../../preprocessor/comment-c-cpp.md) pragma입니다.  
   
- 다음 예제에서는 pragma를 통해 전달 /MANIFESTDEPENDENCY 주석  
+ 다음 예제에서는 /MANIFESTDEPENDENCY 주석 pragma를 통해 전달 합니다.  
   
 ```  
 #pragma comment(linker, "\"/manifestdependency:type='Win32' name='Test.Research.SampleAssembly' version='6.0.0.0' processorArchitecture='X86' publicKeyToken='0000000000000000' language='*'\"")  
 ```  
   
- 매니페스트 파일에 다음 항목에 발생합니다.  
+ 그러면 매니페스트 파일에서 다음 항목:  
   
 ```  
 <dependency>  
@@ -59,19 +59,19 @@ ms.locfileid: "32376574"
 </dependency>  
 ```  
   
- 같은 /MANIFESTDEPENDENCY 주석은 다음과 같이 명령줄에서 전달 될 수 있습니다.  
+ 동일한 /MANIFESTDEPENDENCY 주석은 다음과 같이 명령줄에서 전달할 수 있습니다.  
   
 ```  
 "/manifestdependency:type='Win32' name='Test.Research.SampleAssembly' version='6.0.0.0' processorArchitecture='X86' publicKeyToken='0000000000000000' language='*'\"  
 ```  
   
- 링커에서 /MANIFESTDEPENDENCY 의견을 수집 하 고 중복 항목이 제거 후 매니페스트 파일에 결과 XML 문자열을 추가 합니다.  링커가 충돌 하는 항목을 찾은, 매니페스트 파일이 손상 되 고 응용 프로그램이 시작 되지 것입니다 (항목에서 오류 원인을 나타내는 이벤트 로그에 추가 될 수 있습니다).  
+ 링커는 /MANIFESTDEPENDENCY 의견 수집 됩니다, 그리고 중복 항목이 제거 되 고 매니페스트 파일에 결과 XML 문자열을 추가 합니다.  링커 충돌 하는 항목을 찾습니다, 매니페스트 파일 손상 되 고 응용 프로그램 시작에 실패 하는 경우 (실패의 원인을 나타내는 이벤트 로그에 항목이 추가 될 수 있습니다).  
   
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면  
   
-1.  프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)합니다.  
+1.  프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.  
   
-2.  확장 된 **구성 속성** 노드.  
+2.  **구성 속성** 노드를 확장합니다.  
   
 3.  확장 된 **링커** 노드.  
   

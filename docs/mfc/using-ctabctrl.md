@@ -17,17 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3fd34d88a035e4180eff955238004a18d9af09a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9918bfa73249812a55ce2b8f5718a53ee9cec087
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33383684"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217924"
 ---
 # <a name="using-ctabctrl"></a>CTabCtrl 사용
-"탭 컨트롤"은 노트북의 구분선 또는 파일 캐비닛의 레이블이 지정 된 폴더와 비슷합니다. 클래스에 표시 탭 컨트롤을 사용 하 여 [CTabCtrl](../mfc/reference/ctabctrl-class.md), 피어 또는 각 페이지 간의 논리적 관계를 제안 하는 형식에서 한 번에 하나씩 사용자에 게 정보나 컨트롤의 여러 페이지를 표시 합니다.  
+"탭 컨트롤"은 노트북의 구분선 또는 파일 캐비닛의 레이블이 지정 된 폴더와 비슷합니다. 클래스에 의해 표시 되는 탭 컨트롤을 사용 하 여 [CTabCtrl](../mfc/reference/ctabctrl-class.md), 피어 또는 각 페이지 간의 논리적 관계를 제안 하는 형식에서 한 번에 하나씩 사용자에 게 정보나 컨트롤의 여러 페이지를 표시 합니다.  
   
- 탭 컨트롤에 대 한 자세한 내용은 참조 하십시오. [탭 컨트롤](http://msdn.microsoft.com/library/windows/desktop/bb760550) Windows sdk에서입니다.  
+ 탭 컨트롤에 대 한 자세한 내용은 참조 하세요. [탭 컨트롤](/windows/desktop/Controls/tab-controls) Windows SDK에 있습니다.  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목  
   

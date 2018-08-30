@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9162c515f4fd451f3e663895953e106bb4e65135
-ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
+ms.openlocfilehash: 061bfc2f083061d352fa7f93bb572456a5a23451
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42571914"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218374"
 ---
 # <a name="atl-text-encoding-functions"></a>ATL 텍스트 인코딩 함수
 이러한 함수는 텍스트 인코딩 및 디코딩을 지원 합니다.
@@ -98,7 +98,7 @@ ATLAPI_(DWORD) AtlGetVersion(void* pReserved);
 ### <a name="return-value"></a>반환 값  
  ATL 라이브러리 컴파일 또는 실행 중인 버전의 DWORD 정수 값을 반환 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  함수는 다음과 같이 호출 되어야 합니다.  
   
  [!code-cpp[NVC_ATL_Utilities#95](../../atl/codesnippet/cpp/atl-text-encoding-functions_1.cpp)]  
@@ -451,7 +451,7 @@ inline BOOL QPDecode(
  길이 (바이트) 포함 하는 변수에 대 한 포인터 *szDest*합니다. 함수가 성공 하면 변수는 버퍼에 쓴 바이트 수를 받습니다. 함수가 실패할 경우 변수 버퍼의 바이트 길이 받게 됩니다.  
   
  [in] *dwFlags*  
- 변환을 수행 하는 하는 방법을 설명 하는 플래그입니다. 참조 [ATLSMTP_QPENCODE 플래그](http://msdn.microsoft.com/library/6b15a3ab-8e57-49e4-8104-09b26ebb96c4)합니다.  
+ 변환을 수행 하는 하는 방법을 설명 하는 플래그입니다. 참조 [ATLSMTP_QPENCODE 플래그](https://msdn.microsoft.com/library/6b15a3ab-8e57-49e4-8104-09b26ebb96c4)합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 TRUE를 반환 합니다. 실패 한 경우 FALSE입니다.  

@@ -59,12 +59,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7b19cff6e4f90485946521824bb0fd2f6358372
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: a953f94e48f3093b1c61a1567252e04d98c1beb8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885238"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208545"
 ---
 # <a name="cpatht-class"></a>CPathT 클래스
 이 클래스는 경로 나타냅니다.  
@@ -176,7 +176,7 @@ void AddBackslash();
 ```  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathAddBackSlash](http://msdn.microsoft.com/library/windows/desktop/bb773561)합니다.  
+ 자세한 내용은 [PathAddBackSlash](/windows/desktop/api/shlwapi/nf-shlwapi-pathaddbackslasha)합니다.  
   
 ##  <a name="addextension"></a>  CPathT::AddExtension  
  경로에 파일 확장명을 추가 하려면이 메서드를 호출 합니다.  
@@ -193,7 +193,7 @@ BOOL AddExtension(PCXSTR pszExtension);
  성공 하면 TRUE를 반환 합니다. 실패 한 경우 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathAddExtension](http://msdn.microsoft.com/library/windows/desktop/bb773563)합니다.  
+ 자세한 내용은 [PathAddExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathaddextensiona)합니다.  
   
 ##  <a name="append"></a>  CPathT::Append  
  현재 경로에 문자열을 추가 하려면이 메서드를 호출 합니다.  
@@ -210,7 +210,7 @@ BOOL Append(PCXSTR pszMore);
  성공 하면 TRUE를 반환 합니다. 실패 한 경우 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathAppend](http://msdn.microsoft.com/library/windows/desktop/bb773565)합니다.  
+ 자세한 내용은 [PathAppend](/windows/desktop/api/shlwapi/nf-shlwapi-pathappenda)합니다.  
   
 ##  <a name="buildroot"></a>  CPathT::BuildRoot  
  지정 된 드라이브에서 루트 경로 만들려면이 메서드를 호출 합니다.  
@@ -224,7 +224,7 @@ void BuildRoot(int iDrive);
  드라이브 수 (0은 a:, 1은 b:, 및 등).  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathBuildRoot](http://msdn.microsoft.com/library/windows/desktop/bb773567)합니다.  
+ 자세한 내용은 [PathBuildRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathbuildroota)합니다.  
   
 ##  <a name="canonicalize"></a>  CPathT::Canonicalize  
  경로 정규 형식으로 변환 하려면이 메서드를 호출 합니다.  
@@ -234,7 +234,7 @@ void Canonicalize();
 ```  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathCanonicalize](http://msdn.microsoft.com/library/windows/desktop/bb773569)합니다.  
+ 자세한 내용은 [PathCanonicalize](/windows/desktop/api/shlwapi/nf-shlwapi-pathcanonicalizea)합니다.  
   
 ##  <a name="combine"></a>  CPathT::Combine  
  디렉터리 이름을 나타내는 문자열 및 하나의 경로에 파일 경로 이름을 나타내는 문자열을 연결 하려면이 메서드를 호출 합니다.  
@@ -251,7 +251,7 @@ void Combine(PCXSTR pszDir, PCXSTR  pszFile);
  파일 경로입니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathCombine](http://msdn.microsoft.com/library/windows/desktop/bb773571)합니다.  
+ 자세한 내용은 [PathCombine](/windows/desktop/api/shlwapi/nf-shlwapi-pathcombinea)합니다.  
   
 ##  <a name="commonprefix"></a>  CPathT::CommonPrefix  
  지정된 된 경로 현재 경로 사용 하 여 공통 접두사를 공유 하는지 여부를 확인 하려면이 메서드를 호출 합니다.  
@@ -268,7 +268,7 @@ CPathT<StringType> CommonPrefix(PCXSTR pszOther);
  공통 접두사를 반환합니다.  
   
 ### <a name="remarks"></a>설명  
- 접두사는 이러한 형식 중 하나: "c:\\\\",".","...","... \\\\". 자세한 내용은 [PathCommonPrefix](http://msdn.microsoft.com/library/windows/desktop/bb773574)합니다.  
+ 접두사는 이러한 형식 중 하나: "c:\\\\",".","...","... \\\\". 자세한 내용은 [PathCommonPrefix](/windows/desktop/api/shlwapi/nf-shlwapi-pathcommonprefixa)합니다.  
   
 ##  <a name="compactpath"></a>  CPathT::CompactPath  
  줄임표를 사용 하 여 경로 구성 요소를 대체 하 여 지정 된 픽셀 너비 안에 맞도록 파일 경로 자를이 메서드를 호출 합니다.  
@@ -288,7 +288,7 @@ BOOL CompactPath(HDC hDC, UINT nWidth);
  성공 하면 TRUE를 반환 합니다. 실패 한 경우 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathCompactPath](http://msdn.microsoft.com/library/windows/desktop/bb773575)합니다.  
+ 자세한 내용은 [PathCompactPath](/windows/desktop/api/shlwapi/nf-shlwapi-pathcompactpatha)합니다.  
   
 ##  <a name="compactpathex"></a>  CPathT::CompactPathEx  
  줄임표를 사용 하 여 경로 구성 요소를 대체 하 여 지정된 된 문자 수 내에 맞게 파일 경로 자를이 메서드를 호출 합니다.  
@@ -308,7 +308,7 @@ BOOL CompactPathEx(UINT nMaxChars, DWORD dwFlags = 0);
  성공 하면 TRUE를 반환 합니다. 실패 한 경우 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathCompactPathEx](http://msdn.microsoft.com/library/windows/desktop/bb773578)합니다.  
+ 자세한 내용은 [PathCompactPathEx](/windows/desktop/api/shlwapi/nf-shlwapi-pathcompactpathexa)합니다.  
   
 ##  <a name="cpatht"></a>  CPathT::CPathT  
  생성자입니다.  
@@ -337,7 +337,7 @@ BOOL FileExists() const;
  파일이 존재 하는지, FALSE 그렇지 않으면 TRUE를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathFileExists](http://msdn.microsoft.com/library/windows/desktop/bb773584)합니다.  
+ 자세한 내용은 [PathFileExists](/windows/desktop/api/shlwapi/nf-shlwapi-pathfileexistsa)합니다.  
   
 ##  <a name="findextension"></a>  CPathT::FindExtension  
  경로 내에서 파일 확장명의 위치를 찾으려면이 메서드를 호출 합니다.  
@@ -350,7 +350,7 @@ int FindExtension() const;
  위치를 반환 합니다 "." 앞에 확장 합니다. 확장명이 있으면-1을 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathFindExtension](http://msdn.microsoft.com/library/windows/desktop/bb773587)합니다.  
+ 자세한 내용은 [PathFindExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindextensiona)합니다.  
   
 ##  <a name="findfilename"></a>  CPathT::FindFileName  
  경로 내에서 파일 이름과 위치를 찾으려면이 메서드를 호출 합니다.  
@@ -363,7 +363,7 @@ int FindFileName() const;
  파일 이름과 위치를 반환합니다. 파일 이름이 없으면-1을 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589)합니다.  
+ 자세한 내용은 [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea)합니다.  
   
 ##  <a name="getdrivenumber"></a>  CPathT::GetDriveNumber  
  'A'-'Z' 범위에서 드라이브 문자에 대 한 경로 검색 하 고 해당 드라이브 수를 반환 하려면이 메서드를 호출 합니다.  
@@ -376,7 +376,7 @@ int GetDriveNumber() const;
  있으면 경로 드라이브 문자 또는-1이 고, 그렇지 0에서 25 (에 해당 하 'A'-'Z') 까지의 정수로 드라이브 수를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathGetDriveNumber](http://msdn.microsoft.com/library/windows/desktop/bb773612)합니다.  
+ 자세한 내용은 [PathGetDriveNumber](/windows/desktop/api/shlwapi/nf-shlwapi-pathgetdrivenumbera)합니다.  
   
 ##  <a name="getextension"></a>  CPathT::GetExtension  
  경로에서 파일 확장명을 가져오려면이 메서드를 호출 합니다.  
@@ -399,7 +399,7 @@ BOOL IsDirectory() const;
  경로 디렉터리의 경우 FALSE이 고, 그렇지 경우 0이 아닌 값 (16)를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathIsDirectory](http://msdn.microsoft.com/library/windows/desktop/bb773621)합니다.  
+ 자세한 내용은 [PathIsDirectory](/windows/desktop/api/shlwapi/nf-shlwapi-pathisdirectorya)합니다.  
   
 ##  <a name="isfilespec"></a>  CPathT::IsFileSpec  
  모든 경로 구분 문자에 대 한 경로 검색 하려면이 메서드를 호출 (예를 들어, ':' 또는 '\\'). 경로 구분 문자가 있는 경우 경로 파일 사양 경로일으로 간주 됩니다.  
@@ -412,7 +412,7 @@ BOOL IsFileSpec() const;
  경로 내에서 경로 구분 문자가 없는 경우에 TRUE 또는 경로 구분 문자가 없으면 FALSE를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathIsFileSpec](http://msdn.microsoft.com/library/windows/desktop/bb773627)합니다.  
+ 자세한 내용은 [PathIsFileSpec](/windows/desktop/api/shlwapi/nf-shlwapi-pathisfilespeca)합니다.  
   
 ##  <a name="isprefix"></a>  CPathT::IsPrefix  
  전달 된 형식의 올바른 접두사를 경로 포함 되는지 여부를 확인 하려면이 메서드를 호출 *pszPrefix*합니다.  
@@ -429,7 +429,7 @@ BOOL IsPrefix(PCXSTR pszPrefix) const;
  그렇지 않으면 경로 접두사 또는 FALSE 있으면 TRUE를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathIsPrefix](http://msdn.microsoft.com/library/windows/desktop/bb773650)합니다.  
+ 자세한 내용은 [PathIsPrefix](/windows/desktop/api/shlwapi/nf-shlwapi-pathisprefixa)합니다.  
   
 ##  <a name="isrelative"></a>  CPathT::IsRelative  
  상대 경로 인지 확인 하려면이 메서드를 호출 합니다.  
@@ -442,7 +442,7 @@ BOOL IsRelative() const;
  경로 상대 또는 FALSE 절대 이면 TRUE를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathIsRelative](http://msdn.microsoft.com/library/windows/desktop/bb773660)합니다.  
+ 자세한 내용은 [PathIsRelative](/windows/desktop/api/shlwapi/nf-shlwapi-pathisrelativea)합니다.  
   
 ##  <a name="isroot"></a>  CPathT::IsRoot  
  경로 디렉터리 루트 인지 확인 하려면이 메서드를 호출 합니다.  
@@ -455,7 +455,7 @@ BOOL IsRoot() const;
  경로 루트 또는 이면 FALSE이 고, 그렇지 TRUE를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathIsRoot](http://msdn.microsoft.com/library/windows/desktop/bb773674)합니다.  
+ 자세한 내용은 [PathIsRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathisroota)합니다.  
   
 ##  <a name="issameroot"></a>  CPathT::IsSameRoot  
  다른 경로 현재 경로 사용 하 여 공통 루트 구성 요소에 있는지 여부를 확인 하려면이 메서드를 호출 합니다.  
@@ -472,7 +472,7 @@ BOOL IsSameRoot(PCXSTR pszOther) const;
  두 문자열을 동일한 루트 구성 요소 또는 있으면 FALSE이 고, 그렇지 TRUE를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathIsSameRoot](http://msdn.microsoft.com/library/windows/desktop/bb773687)합니다.  
+ 자세한 내용은 [PathIsSameRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathissameroota)합니다.  
   
 ##  <a name="isunc"></a>  CPathT::IsUNC  
  경로 서버에 대 한 유효한 UNC (범용 명명 규칙) 경로 인지 여부를 확인 하려면이 메서드를 호출 하 고 공유 합니다.  
@@ -485,7 +485,7 @@ BOOL IsUNC() const;
  경로가 올바른 UNC 경로 또는 FALSE 그렇지 않은 경우 TRUE를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathIsUNC](http://msdn.microsoft.com/library/windows/desktop/bb773712)합니다.  
+ 자세한 내용은 [PathIsUNC](/windows/desktop/api/shlwapi/nf-shlwapi-pathisunca)합니다.  
   
 ##  <a name="isuncserver"></a>  CPathT::IsUNCServer  
  경로만 서버에 대 한 유효한 UNC (범용 명명 규칙) 경로 인지 여부를 확인 하려면이 메서드를 호출 합니다.  
@@ -498,7 +498,7 @@ BOOL IsUNCServer() const;
  않으면 문자열은 유효한 (공유 이름 없음)에 서버에 대 한 UNC 경로 또는 FALSE를 그렇지 않으면 TRUE를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathIsUNCServer](http://msdn.microsoft.com/library/windows/desktop/bb773722)합니다.  
+ 자세한 내용은 [PathIsUNCServer](/windows/desktop/api/shlwapi/nf-shlwapi-pathisuncservera)합니다.  
   
 ##  <a name="isuncservershare"></a>  CPathT::IsUNCServerShare  
  올바른 UNC (범용 명명 규칙) 공유 경로 경로 인지 확인 하려면이 메서드를 호출 \\ \  *server*\ *공유*합니다.  
@@ -511,7 +511,7 @@ BOOL IsUNCServerShare() const;
  형태로 경로 이면 TRUE를 반환 합니다 \\ \  *server*\ *공유*, FALSE 또는 그렇지 않은 경우.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathIsUNCServerShare](http://msdn.microsoft.com/library/windows/desktop/bb773723)합니다.  
+ 자세한 내용은 [PathIsUNCServerShare](/windows/desktop/api/shlwapi/nf-shlwapi-pathisuncserversharea)합니다.  
   
 ##  <a name="m_strpath"></a>  CPathT::m_strPath  
  경로입니다.  
@@ -534,7 +534,7 @@ BOOL MakePretty();
  그렇지 않으면 경로 변환 된 경우 TRUE 또는 FALSE를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathMakePretty](http://msdn.microsoft.com/library/windows/desktop/bb773725)합니다.  
+ 자세한 내용은 [PathMakePretty](/windows/desktop/api/shlwapi/nf-shlwapi-pathmakeprettya)합니다.  
   
 ##  <a name="matchspec"></a>  CPathT::MatchSpec  
  와일드 카드 일치 유형을 포함 하는 문자열에 대 한 경로 검색 하려면이 메서드를 호출 합니다.  
@@ -551,7 +551,7 @@ BOOL MatchSpec(PCXSTR pszSpec) const;
  그렇지 않으면 문자열 일치 하는 경우 TRUE 또는 FALSE를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathMatchSpec](http://msdn.microsoft.com/library/windows/desktop/bb773727)합니다.  
+ 자세한 내용은 [PathMatchSpec](/windows/desktop/api/shlwapi/nf-shlwapi-pathmatchspeca)합니다.  
   
 ##  <a name="operator_add_eq"></a>  CPathT::operator + =  
  이 연산자는 경로 문자열을 추가합니다.  
@@ -625,7 +625,7 @@ void QuoteSpaces();
 ```  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathQuoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773739)합니다.  
+ 자세한 내용은 [PathQuoteSpaces](/windows/desktop/api/shlwapi/nf-shlwapi-pathquotespacesa)합니다.  
   
 ##  <a name="relativepathto"></a>  CPathT::RelativePathTo  
  다른 하나의 파일 또는 폴더에서 상대 경로 만들려면이 메서드를 호출 합니다.  
@@ -655,7 +655,7 @@ BOOL RelativePathTo(
  성공 하면 TRUE를 반환 합니다. 실패 한 경우 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathRelativePathTo](http://msdn.microsoft.com/library/windows/desktop/bb773740)합니다.  
+ 자세한 내용은 [PathRelativePathTo](/windows/desktop/api/shlwapi/nf-shlwapi-pathrelativepathtoa)합니다.  
   
 ##  <a name="removeargs"></a>  CPathT::RemoveArgs  
  경로에서 명령줄 인수를 제거 하려면이 메서드를 호출 합니다.  
@@ -665,7 +665,7 @@ void RemoveArgs();
 ```  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathRemoveArgs](http://msdn.microsoft.com/library/windows/desktop/bb773742)합니다.  
+ 자세한 내용은 [PathRemoveArgs](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveargsa)합니다.  
   
 ##  <a name="removebackslash"></a>  CPathT::RemoveBackslash  
  경로 후행 백슬래시를 제거 하려면이 메서드를 호출 합니다.  
@@ -675,7 +675,7 @@ void RemoveBackslash();
 ```  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathRemoveBackslash](http://msdn.microsoft.com/library/windows/desktop/bb773743)합니다.  
+ 자세한 내용은 [PathRemoveBackslash](/windows/desktop/api/shlwapi/nf-shlwapi-pathremovebackslasha)합니다.  
   
 ##  <a name="removeblanks"></a>  CPathT::RemoveBlanks  
  경로에서 모든 선행 및 후행 공백을 제거 하려면이 메서드를 호출 합니다.  
@@ -685,7 +685,7 @@ void RemoveBlanks();
 ```  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathRemoveBlanks](http://msdn.microsoft.com/library/windows/desktop/bb773745)합니다.  
+ 자세한 내용은 [PathRemoveBlanks](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveblanksa)합니다.  
   
 ##  <a name="removeextension"></a>  CPathT::RemoveExtension  
  있는 경우 경로에서 파일 확장명을 제거 하려면이 메서드를 호출 합니다.  
@@ -695,7 +695,7 @@ void RemoveExtension();
 ```  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathRemoveExtension](http://msdn.microsoft.com/library/windows/desktop/bb773746)합니다.  
+ 자세한 내용은 [PathRemoveExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveextensiona)합니다.  
   
 ##  <a name="removefilespec"></a>  CPathT::RemoveFileSpec  
  에 해당 하는 경우 경로에서 후행 파일 이름과 백슬래시를 제거 하려면이 메서드를 호출 합니다.  
@@ -708,7 +708,7 @@ BOOL RemoveFileSpec();
  성공 하면 TRUE를 반환 합니다. 실패 한 경우 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathRemoveFileSpec](http://msdn.microsoft.com/library/windows/desktop/bb773748)합니다.  
+ 자세한 내용은 [PathRemoveFileSpec](/windows/desktop/api/shlwapi/nf-shlwapi-pathremovefilespeca)합니다.  
   
 ##  <a name="renameextension"></a>  CPathT::RenameExtension  
  새 확장을 사용 하 여 경로에 파일 이름 확장명을 바꾸려면이 메서드를 호출 합니다. 파일 이름 확장명이 없으면 확장 경로 끝에 연결 됩니다.  
@@ -725,7 +725,7 @@ BOOL RenameExtension(PCXSTR pszExtension);
  성공 하면 TRUE를 반환 합니다. 실패 한 경우 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathRenameExtension](http://msdn.microsoft.com/library/windows/desktop/bb773749)합니다.  
+ 자세한 내용은 [PathRenameExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathrenameextensiona)합니다.  
   
 ##  <a name="skiproot"></a>  CPathT::SkipRoot  
  드라이브 문자나 UNC (범용 명명 규칙) 서버/공유의 경로 부분을 무시 하는 경로 구문 분석 하려면이 메서드를 호출 합니다.  
@@ -738,7 +738,7 @@ int SkipRoot() const;
  루트 (드라이브 문자나 UNC 서버/공유) 뒤에 오는 하위 경로 부분에 대 한 위치를 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathSkipRoot](http://msdn.microsoft.com/library/windows/desktop/bb773754)합니다.  
+ 자세한 내용은 [PathSkipRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathskiproota)합니다.  
   
 ##  <a name="strippath"></a>  CPathT::StripPath  
  정규화 된 경로 및 파일 이름의 경로 부분을 제거 하려면이 메서드를 호출 합니다.  
@@ -748,7 +748,7 @@ void StripPath();
 ```  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathStripPath](http://msdn.microsoft.com/library/windows/desktop/bb773756)합니다.  
+ 자세한 내용은 [PathStripPath](/windows/desktop/api/shlwapi/nf-shlwapi-pathstrippatha)합니다.  
   
 ##  <a name="striptoroot"></a>  CPathT::StripToRoot  
  루트 정보를 제외 하 고 경로의 모든 부분을 제거 하려면이 메서드를 호출 합니다.  
@@ -761,7 +761,7 @@ BOOL StripToRoot();
  TRUE 이면 올바른 드라이브 문자로 반환 경로에 또는 FALSE를 그렇지 않으면 발견 되었습니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathStripToRoot](http://msdn.microsoft.com/library/windows/desktop/bb773757)합니다.  
+ 자세한 내용은 [PathStripToRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathstriptoroota)합니다.  
   
 ##  <a name="unquotespaces"></a>  CPathT::UnquoteSpaces  
  경로의 시작과 끝에서 따옴표를 제거 하려면이 메서드를 호출 합니다.  
@@ -771,7 +771,7 @@ void UnquoteSpaces();
 ```  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [PathUnquoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773763)합니다.  
+ 자세한 내용은 [PathUnquoteSpaces](/windows/desktop/api/shlwapi/nf-shlwapi-pathunquotespacesa)합니다.  
   
 ##  <a name="xchar"></a>  CPathT::XCHAR  
  문자 형식입니다.  

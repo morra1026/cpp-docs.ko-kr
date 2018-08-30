@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b66d6d3a7da6c9e3084ce2ef6fa18922e015a459
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 59c0a9701c1714e1d96829a28144c921e5c00e11
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604281"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206719"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++의 Windows 프로그래밍 개요
 
@@ -58,7 +58,7 @@ Windows 10에서는 태블릿, 휴대폰 및 데스크톱과 같은 모든 Windo
 
 ##  <a name="BK_Native"></a> 데스크톱 및 서버 응용 프로그램
 
-데스크톱용 Windows 클라이언트 응용 프로그램 작성의 기본 사항을 알아보려면 [C++에서 Windows 응용 프로그램 개발](http://msdn.microsoft.com/vstudio//hh304489) 및 [C++에서 Windows 프로그래밍 소개](http://msdn.microsoft.com/library/windows/desktop/ff381398\(v=vs.85\).aspx)를 참조하세요.
+데스크톱용 Windows 클라이언트 응용 프로그램 작성의 기본 사항에 알아보려면 [c + +에서 Windows 응용 프로그램 개발](https://msdn.microsoft.com/vstudio//hh304489) 하 고 [c + +에서 Windows 프로그래밍 소개](https://msdn.microsoft.com/library/windows/desktop/ff381398\(v=vs.85\).aspx)합니다.
 
 Windows 10에서 다양 한 데스크톱 프로그램을 만들려면 Visual c + +를 사용할 수 있습니다.
 

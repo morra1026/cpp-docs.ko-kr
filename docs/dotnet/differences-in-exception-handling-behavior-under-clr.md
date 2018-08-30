@@ -1,5 +1,5 @@
 ---
-title: 예외 처리와 CLR에서 동작의에서 차이점 | Microsoft Docs
+title: 예외 처리-CLR에서 동작의에서 차이점 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,18 +16,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: f54678de9f98f68f797cd247232a8e3786ff0112
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: df2f04e89175855db36790f22e8fd718288603b2
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33111834"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217434"
 ---
 # <a name="differences-in-exception-handling-behavior-under-clr"></a>/CLR을 지정하는 경우 예외 처리 동작의 차이점
-[관리 되는 예외 사용의 기본 개념과](../dotnet/basic-concepts-in-using-managed-exceptions.md) 관리 되는 응용 프로그램에서 예외 처리에 대해 설명 합니다. 이 항목에서는 몇 가지 제한 사항이 및 예외 처리의 표준 동작과에서 차이점을 자세히 설명 되어 있습니다. 자세한 내용은 참조 [_set_se_translator 함수](../c-runtime-library/reference/set-se-translator.md)합니다.  
+[관리 되는 예외 사용의 기본 개념](../dotnet/basic-concepts-in-using-managed-exceptions.md) 관리 되는 응용 프로그램의 예외 처리에 대해 설명 합니다. 이 항목에서는 예외 처리 및 몇 가지 제한 사항이의 표준 동작의 차이점을 자세히 설명 합니다. 자세한 내용은 [_set_se_translator 함수](../c-runtime-library/reference/set-se-translator.md)합니다.  
   
-##  <a name="vcconjumpingoutofafinallyblock"></a> 밖으로의 점프는 Finally 블록  
- 점프는 _ _에서 네이티브 C/c + + 코드에서**마지막** 경고를 생성 하지만, 구조적된 예외 처리 (SEH)를 사용 하 여 블록은 사용할 수 있습니다.  아래 [/clr](../build/reference/clr-common-language-runtime-compilation.md)의 점프는 **마지막** 블록에는 오류 발생:  
+##  <a name="vcconjumpingoutofafinallyblock"></a> 점프,는 Finally 블록  
+ _ _에서 이동 하는 네이티브 C/c + + 코드에서**마지막** 경고를 생성 하지만 구조적된 예외 처리 (SEH)를 사용 하 여 블록 허용 됩니다.  아래 [/clr](../build/reference/clr-common-language-runtime-compilation.md)부재 중 이동해 서는 **마지막으로** 블록에 오류가 발생:  
   
 ```  
 // clr_exception_handling_4.cpp  
@@ -43,7 +43,7 @@ int main() {
 ##  <a name="vcconraisingexceptionswithinanexceptionfilter"></a> 예외 필터 내에서 예외 발생  
  처리 하는 동안 예외가 발생 하는 경우는 [예외 필터](../cpp/writing-an-exception-filter.md) 관리 코드 내에서 예외를 포착 하 0을 반환 하는 필터 처럼 처리 합니다.  
   
- 이 동작은 동작의 중첩 된 예외를 발생 하는 네이티브 코드는 **ExceptionRecord** 필드에 **EXCEPTION_RECORD** 구조 (반환한 [ GetExceptionInformation](http://msdn.microsoft.com/library/windows/desktop/ms679357))을 설정 및 **ExceptionFlags** 필드 0x10 비트를 설정 합니다. 다음 예제에서는 동작의이 차이 보여 줍니다.  
+ 중첩 된 예외를 발생 하는 네이티브 코드의 동작과 대조적입니다 합니다 **ExceptionRecord** 필드를 **EXCEPTION_RECORD** 구조 (반환한 [ GetExceptionInformation](/windows/desktop/Debug/getexceptioninformation))을 설정 하며 **ExceptionFlags** 필드 0x10 비트를 설정 합니다. 다음 예제에서는 동작의이 차이 보여 줍니다.  
   
 ```  
 // clr_exception_handling_5.cpp  
@@ -103,10 +103,10 @@ Caught a nested exception
 We should execute this handler if compiled to native  
 ```  
   
-##  <a name="vccondisassociatedrethrows"></a> 끊어진 다시 Throw  
- **/clr** (끊어진된 rethrow 라고도 함) catch 처리기 외부에서 예외가 다시 throw 하는 것을 지원 하지 않습니다. 이러한 종류의 예외가 처리 되는 표준 c + + rethrow로 합니다. 끊어진된 rethrow 활성 관리 되는 예외가 있으면 발생 하는 경우는 c + + 예외로 예외 래핑되고 다시 throw 합니다. 이 유형의 예외 형식의 예외를 낼 수 있습니다 [System::SEHException](https://msdn.microsoft.com/en-us/library/system.runtime.interopservices.sehexception.aspx)합니다.  
+##  <a name="vccondisassociatedrethrows"></a> 연결이 끊긴 다시 Throw  
+ **/clr** (연결이 끊긴된 rethrow로 알려짐) catch 처리기 외부에서 예외를 다시 throw 하는 것을 지원 하지 않습니다. 이 형식의 예외가 처리 되는 표준 c + + rethrow로 합니다. 연결이 끊긴된 rethrow 관리 되는 활성 예외가 있을 때 발생 하는 경우 예외는 c + + 예외로 래핑되고 다시 throw 합니다. 이 유형의 예외 형식의 예외로 낼 수 있습니다 [System::SEHException](https://msdn.microsoft.com/library/system.runtime.interopservices.sehexception.aspx)합니다.  
   
- 다음 예제에서는 c + + 예외 다시 throw 하는 관리 되는 예외를 보여 줍니다.  
+ 다음 예제에서는 c + + 예외가 다시 throw 하는 관리 되는 예외를 보여 줍니다.  
   
 ```  
 // clr_exception_handling_6.cpp  
@@ -155,9 +155,9 @@ caught an SEH Exception
 ```  
   
 ##  <a name="vcconexceptionfiltersandexception_continue_execution"></a> 예외 필터 및 EXCEPTION_CONTINUE_EXECUTION  
- 필터를 반환 하는 경우 `EXCEPTION_CONTINUE_EXECUTION` 관리 되는 응용 프로그램에서 처리 됩니다 필터가 반환 하는 경우 `EXCEPTION_CONTINUE_SEARCH`합니다. 이러한 상수에 대 한 자세한 내용은 참조 하십시오. [시도-문을 제외 하 고](../cpp/try-except-statement.md)합니다.  
+ 필터를 반환 하는 경우 `EXCEPTION_CONTINUE_EXECUTION` 관리 되는 응용 프로그램에서 처리 됩니다 필터를 반환 하는 경우에 따라 `EXCEPTION_CONTINUE_SEARCH`합니다. 이러한 상수에 대 한 자세한 내용은 참조 하세요. [시도-문을 제외 하 고](../cpp/try-except-statement.md)입니다.  
   
- 다음 예제에서는 이러한 차이 보여 줍니다.  
+ 다음 예제에서는이 차이 보여 줍니다.  
   
 ```  
 // clr_exception_handling_7.cpp  
@@ -195,7 +195,7 @@ Counter=-3
 ```  
   
 ##  <a name="vcconthe_set_se_translatorfunction"></a> _Set_se_translator 함수  
- 변환기 함수를 호출 하 여 설정 `_set_se_translator`, 비관리 코드에서 catches만 영향을 줍니다. 다음 예제에서는 이러한 제한:  
+ 변환기 함수를 호출 하 여 설정 `_set_se_translator`, 비관리 코드에서 catch만 영향을 줍니다. 다음 예제에서는이 제한을 보여 줍니다.  
   
 ```  
 // clr_exception_handling_8.cpp  

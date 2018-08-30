@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 30031a4da36e4efdf91177c983691dda38b426f4
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 13b6531dd1299235a125b1c25b0b1d84781755ed
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882678"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217842"
 ---
 # <a name="cw2aex-class"></a>CW2AEX 클래스
 이 클래스는 문자열 변환 매크로 CT2AEX, CW2TEX, CW2CTEX, 및 CT2CAEX와 CW2A typedef에서 사용 됩니다.  
@@ -91,7 +91,7 @@ class CW2AEX
   
  이러한 텍스트 변환 매크로의 논의 참조 하세요 [ATL 및 MFC 문자열 변환 매크로](string-conversion-macros.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  참조 [ATL 및 MFC 문자열 변환 매크로](string-conversion-macros.md) 이러한 문자열 변환 매크로 사용의 예입니다.  
   
 ## <a name="requirements"></a>요구 사항  
@@ -110,7 +110,7 @@ CW2AEX(LPCWSTR psz) throw(...);
  변환할 텍스트 문자열입니다.  
   
  *nCodePage*  
- 코드 페이지 변환을 수행 하는 데 사용 합니다. Windows SDK 함수에 대 한 코드 페이지 매개 변수 설명을 참조 하세요 [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072) 대 한 자세한 내용은 합니다.  
+ 코드 페이지 변환을 수행 하는 데 사용 합니다. Windows SDK 함수에 대 한 코드 페이지 매개 변수 설명을 참조 하세요 [MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar) 대 한 자세한 내용은 합니다.  
   
 ### <a name="remarks"></a>설명  
  변환 프로세스에서 사용 되는 버퍼를 할당 합니다.  

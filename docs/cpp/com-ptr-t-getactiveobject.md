@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 392460cde35096bc1c61db4d7e6bd2143932838d
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 0555b050770d5fbd411e1720282e3fb50769385b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39403997"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208406"
 ---
 # <a name="comptrtgetactiveobject"></a>_com_ptr_t::GetActiveObject
 **Microsoft 전용**  
@@ -59,7 +59,7 @@ HRESULT GetActiveObject(
   
 -   **GetActiveObject (**`clsidString`**)** 중 하나를 포함 하는 유니코드 문자열을 지정 된 개체의 기존 인스턴스에 연결을 `CLSID` (부터는 "**{**") 또는 `ProgID`.  
   
--   **GetActiveObject (**`clsidStringA`**)** 보유 하는 멀티 바이트 문자열을 지정 된 개체의 기존 인스턴스에 연결 된 `CLSID` (부터는 "**{**") 또는 `ProgID`. 호출 [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072), OEM 코드 페이지가 아닌 ANSI 코드 페이지에서 해당 문자열은 가정 합니다.  
+-   **GetActiveObject (**`clsidStringA`**)** 보유 하는 멀티 바이트 문자열을 지정 된 개체의 기존 인스턴스에 연결 된 `CLSID` (부터는 "**{**") 또는 `ProgID`. 호출 [MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar), OEM 코드 페이지가 아닌 ANSI 코드 페이지에서 해당 문자열은 가정 합니다.  
   
  **Microsoft 전용 종료**  
   

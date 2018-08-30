@@ -16,19 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27059beb1cb587b9060da8c5cc5702ea966422f0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ea57a79fab92152824b7c9aaf0c5d50c14fee32e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249757"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211997"
 ---
 # <a name="compiler-error-c3099"></a>컴파일러 오류 C3099
 'keyword': 관리되는 특성에 대해 [System::AttributeUsageAttribute]를 사용하고, WinRT 특성에 대해 [Windows::Foundation::Metadata::AttributeUsageAttribute]를 사용합니다.  
   
- 사용 하 여 <xref:System.AttributeUsageAttribute> 선언 하려면 **/clr** 특성입니다. `Windows::Foundation::Metadata::AttributeUsageAttribute`를 사용하여 Windows 런타임 특성을 선언합니다.  
+ 사용 하 여 <xref:System.AttributeUsageAttribute> 선언 **/clr** 특성입니다. `Windows::Foundation::Metadata::AttributeUsageAttribute`를 사용하여 Windows 런타임 특성을 선언합니다.  
   
- /CLR 특성에 대 한 자세한 내용은 참조 [사용자 정의 특성](../../windows/user-defined-attributes-cpp-component-extensions.md)합니다. Windows 런타임에서 지원 되는 특성을 참조 하십시오. [Windows.Foundation.Metadata 네임 스페이스](http://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.aspx)  
+ /CLR 특성에 대 한 자세한 내용은 참조 하십시오 [사용자 정의 특성](../../windows/user-defined-attributes-cpp-component-extensions.md)합니다. Windows 런타임에서 지원 되는 특성을 참조 하세요. [Windows.Foundation.Metadata 네임 스페이스](https://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.aspx)  
   
 ## <a name="example"></a>예제  
  다음 샘플에서는 C3099 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.  

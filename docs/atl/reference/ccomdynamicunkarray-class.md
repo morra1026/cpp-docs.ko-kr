@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a83ab3aa6506e9ee620d3604149bfd181678a05
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 710dc1929662c5f5358912433be2df605bf87964
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37879811"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218183"
 ---
 # <a name="ccomdynamicunkarray-class"></a>CComDynamicUnkArray 클래스
 이 클래스의 배열을 저장 `IUnknown` 포인터입니다.  
@@ -160,7 +160,7 @@ IUnknown* GetAt(int nIndex);
  검색할 요소의 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 에 대 한 포인터를 [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) 인터페이스입니다.  
+ 에 대 한 포인터를 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 인터페이스입니다.  
   
 ##  <a name="getcookie"></a>  CComDynamicUnkArray::GetCookie  
  연결 된 쿠키를 가져오려면이 메서드를 호출 하는 지정 된 `IUnknown` 포인터입니다.  

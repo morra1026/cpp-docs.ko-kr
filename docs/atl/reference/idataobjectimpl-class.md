@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef7db05e8e8eb0a723354bcd6f53fb283aebe0c8
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 4a2684a3aab8480738d4d64a79681f1930113c71
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880887"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218929"
 ---
 # <a name="idataobjectimpl-class"></a>IDataObjectImpl 클래스
 이 클래스는 균일 한 데이터 전송 지원 하 고 연결을 관리 하기 위한 메서드를 제공 합니다.  
@@ -72,9 +72,9 @@ class IDataObjectImpl
 |[IDataObjectImpl::SetData](#setdata)|데이터 개체에는 클라이언트에서 데이터를 전송합니다. ATL 구현 E_NOTIMPL을 반환합니다.|  
   
 ## <a name="remarks"></a>설명  
- 합니다 [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) 인터페이스 단일형 데이터 전송 지원 하기 위해 메서드를 제공 합니다. `IDataObject` 표준 형식 구조를 사용 하 여 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 하 고 [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) 검색 하 고 데이터를 저장 합니다.  
+ 합니다 [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) 인터페이스 단일형 데이터 전송 지원 하기 위해 메서드를 제공 합니다. `IDataObject` 표준 형식 구조를 사용 하 여 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 하 고 [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) 검색 하 고 데이터를 저장 합니다.  
   
- `IDataObject` 또한 싱크 데이터 변경 알림을 처리 하는 것이 좋습니다에 대 한 연결을 관리 합니다. 데이터 개체에서 데이터 변경 알림을 수신 하려면 클라이언트에서 클라이언트 구현 해야 합니다는 [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513) advise 싱크 라는 개체에 대 한 인터페이스입니다. 클라이언트가 다음 호출 하면 `IDataObject::DAdvise`, 데이터 개체와 advise 싱크 간의 연결입니다.  
+ `IDataObject` 또한 싱크 데이터 변경 알림을 처리 하는 것이 좋습니다에 대 한 연결을 관리 합니다. 데이터 개체에서 데이터 변경 알림을 수신 하려면 클라이언트에서 클라이언트 구현 해야 합니다는 [IAdviseSink](/windows/desktop/api/objidl/nn-objidl-iadvisesink) advise 싱크 라는 개체에 대 한 인터페이스입니다. 클라이언트가 다음 호출 하면 `IDataObject::DAdvise`, 데이터 개체와 advise 싱크 간의 연결입니다.  
   
  클래스 `IDataObjectImpl` 의 기본 구현을 제공 `IDataObject` 구현 및 `IUnknown` 장치에서 디버그 덤프에 정보를 전송 하 여 작성 합니다.  
   
@@ -104,7 +104,7 @@ HRESULT DAdvise(
   
  연결을 종료 하려면 호출 [DUnadvise](#dunadvise)합니다.  
   
- 참조 [IDataObject::DAdvise](http://msdn.microsoft.com/library/windows/desktop/ms692579) Windows SDK에에서 있습니다.  
+ 참조 [IDataObject::DAdvise](/windows/desktop/api/objidl/nf-objidl-idataobject-dadvise) Windows SDK에에서 있습니다.  
   
 ##  <a name="dunadvise"></a>  IDataObjectImpl::DUnadvise  
  연결을 통해 이전에 종료 [DAdvise](#dadvise)합니다.  
@@ -114,7 +114,7 @@ HRESULT DUnadvise(DWORD dwConnection);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IDataObject::DUnadvise](http://msdn.microsoft.com/library/windows/desktop/ms692448) Windows SDK에에서 있습니다.  
+ 참조 [IDataObject::DUnadvise](/windows/desktop/api/objidl/nf-objidl-idataobject-dunadvise) Windows SDK에에서 있습니다.  
   
 ##  <a name="enumdadvise"></a>  IDataObjectImpl::EnumDAdvise  
  현재 자문 연결을 통해 반복 하는 열거자를 만듭니다.  
@@ -128,7 +128,7 @@ HRESULT DAdvise(
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IDataObject::EnumDAdvise](http://msdn.microsoft.com/library/windows/desktop/ms680127) Windows SDK에에서 있습니다.  
+ 참조 [IDataObject::EnumDAdvise](/windows/desktop/api/objidl/nf-objidl-idataobject-enumdadvise) Windows SDK에에서 있습니다.  
   
 ##  <a name="enumformatetc"></a>  IDataObjectImpl::EnumFormatEtc  
  반복 하는 열거자를 만듭니다는 `FORMATETC` 데이터 개체에 의해 지원 되는 구조입니다.  
@@ -140,7 +140,7 @@ HRESULT EnumFormatEtc(
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IDataObject::EnumFormatEtc](http://msdn.microsoft.com/library/windows/desktop/ms683979) Windows SDK에에서 있습니다.  
+ 참조 [IDataObject::EnumFormatEtc](/windows/desktop/api/objidl/nf-objidl-idataobject-enumformatetc) Windows SDK에에서 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
  E_NOTIMPL 반환.  
@@ -166,7 +166,7 @@ HRESULT GetCanonicalFormatEtc(FORMATETC* pformatetcIn, FORMATETC* pformatetcOut)
  E_NOTIMPL 반환.  
   
 ### <a name="remarks"></a>설명  
- 참조 [IDataObject::GetCanonicalFormatEtc](http://msdn.microsoft.com/library/windows/desktop/ms680685) Windows SDK에에서 있습니다.  
+ 참조 [IDataObject::GetCanonicalFormatEtc](/windows/desktop/api/objidl/nf-objidl-idataobject-getcanonicalformatetc) Windows SDK에에서 있습니다.  
   
 ##  <a name="getdata"></a>  IDataObjectImpl::GetData  
  클라이언트에 데이터 개체에서 데이터를 전송합니다.  
@@ -180,7 +180,7 @@ HRESULT GetData(
 ### <a name="remarks"></a>설명  
  합니다 *pformatetcIn* 매개 변수는 TYMED_MFPICT의 저장소 매체 형식 지정 해야 합니다.  
   
- 참조 [있음](http://msdn.microsoft.com/library/windows/desktop/ms678431) Windows SDK에에서 있습니다.  
+ 참조 [있음](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) Windows SDK에에서 있습니다.  
   
 ##  <a name="getdatahere"></a>  IDataObjectImpl::GetDataHere  
  비슷합니다 `GetData`클라이언트를 할당 해야 제외 하 고는 `STGMEDIUM` 구조입니다.  
@@ -195,7 +195,7 @@ HRESULT GetDataHere(
  E_NOTIMPL 반환.  
   
 ### <a name="remarks"></a>설명  
- 참조 [IDataObject::GetDataHere](http://msdn.microsoft.com/library/windows/desktop/ms687266) Windows SDK에에서 있습니다.  
+ 참조 [IDataObject::GetDataHere](/windows/desktop/api/objidl/nf-objidl-idataobject-getdatahere) Windows SDK에에서 있습니다.  
   
 ##  <a name="querygetdata"></a>  IDataObjectImpl::QueryGetData  
  데이터 개체에 특정 지원 하는지 여부를 결정 `FORMATETC` 구조 데이터를 전송 합니다.  
@@ -208,7 +208,7 @@ HRESULT QueryGetData(FORMATETC* pformatetc);
  E_NOTIMPL 반환.  
   
 ### <a name="remarks"></a>설명  
- 참조 [IDataObject::QueryGetData](http://msdn.microsoft.com/library/windows/desktop/ms680637) Windows SDK에에서 있습니다.  
+ 참조 [IDataObject::QueryGetData](/windows/desktop/api/objidl/nf-objidl-idataobject-querygetdata) Windows SDK에에서 있습니다.  
   
 ##  <a name="setdata"></a>  IDataObjectImpl::SetData  
  데이터 개체에는 클라이언트에서 데이터를 전송합니다.  
@@ -224,7 +224,7 @@ HRESULT SetData(
  E_NOTIMPL 반환.  
   
 ### <a name="remarks"></a>설명  
- 참조 [IDataObject::SetData](http://msdn.microsoft.com/library/windows/desktop/ms686626) Windows SDK에에서 있습니다.  
+ 참조 [IDataObject::SetData](/windows/desktop/api/objidl/nf-objidl-idataobject-setdata) Windows SDK에에서 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [클래스 개요](../../atl/atl-class-overview.md)

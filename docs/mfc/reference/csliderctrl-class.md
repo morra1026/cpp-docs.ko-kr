@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd58faa0cda2162f1abe906da8e38d4d62402db8
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: acf85412f6fde233d592f545b6611053a2f80e01
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850211"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215359"
 ---
 # <a name="csliderctrl-class"></a>CSliderCtrl 클래스
 Windows의 공용 슬라이더 컨트롤의 기능을 제공합니다.  
@@ -206,10 +206,10 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>매개 변수  
  *dwStyle*  
- 슬라이더 컨트롤의 스타일을 지정합니다. 어떤 조합도 적용할 [슬라이더 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb760147)컨트롤에 Windows SDK에서 설명 합니다.  
+ 슬라이더 컨트롤의 스타일을 지정합니다. 어떤 조합도 적용할 [슬라이더 컨트롤 스타일](/windows/desktop/Controls/trackbar-control-styles)컨트롤에 Windows SDK에서 설명 합니다.  
   
  *rect*  
- 슬라이더 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.  
+ 슬라이더 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.  
   
  *pParentWnd*  
  일반적으로 슬라이더 컨트롤의 부모 창 지정을 `CDialog`입니다. NULL이 아니어야 합니다.  
@@ -241,13 +241,13 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>매개 변수  
  *dwExStyle*  
- 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK의 합니다.  
+ 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK의 합니다.  
   
  *dwStyle*  
- 슬라이더 컨트롤의 스타일을 지정합니다. 어떤 조합도 적용할 [슬라이더 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb760147)컨트롤에 Windows SDK에서 설명 합니다.  
+ 슬라이더 컨트롤의 스타일을 지정합니다. 어떤 조합도 적용할 [슬라이더 컨트롤 스타일](/windows/desktop/Controls/trackbar-control-styles)컨트롤에 Windows SDK에서 설명 합니다.  
   
  *rect*  
- 에 대 한 참조를 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.  
+ 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.  
   
  *pParentWnd*  
  컨트롤의 부모 창에 대 한 포인터입니다.  
@@ -287,7 +287,7 @@ CWnd* GetBuddy(BOOL fLocation = TRUE) const;
  에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체에서 지정 된 위치의 버디 창입니다 *fLocation*, 해당 위치에 있는 버디 창 없는 경우 null입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [TBM_GETBUDDY](http://msdn.microsoft.com/library/windows/desktop/bb760178)Windows SDK에 설명 된 대로 합니다. 슬라이더 컨트롤 스타일에 대 한 참조 [Trackbar 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb760147) Windows SDK에 있습니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [TBM_GETBUDDY](/windows/desktop/Controls/tbm-getbuddy)Windows SDK에 설명 된 대로 합니다. 슬라이더 컨트롤 스타일에 대 한 참조 [Trackbar 컨트롤 스타일](/windows/desktop/Controls/trackbar-control-styles) Windows SDK에 있습니다.  
   
 ##  <a name="getchannelrect"></a>  CSliderCtrl::GetChannelRect  
  슬라이더 컨트롤의 채널에 대 한 경계 사각형의 위치와 크기를 검색합니다.  
@@ -415,7 +415,7 @@ int GetThumbLength() const;
  픽셀에서 슬라이더의 길이입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 전송 된 [TBM_GETTHUMBLENGTH](http://msdn.microsoft.com/library/windows/desktop/bb760201) Windows SDK에 설명 된 메시지입니다.  
+ 이 메서드는 전송 된 [TBM_GETTHUMBLENGTH](/windows/desktop/Controls/tbm-getthumblength) Windows SDK에 설명 된 메시지입니다.  
   
 ##  <a name="getthumbrect"></a>  CSliderCtrl::GetThumbRect  
  슬라이더 컨트롤에 있는 슬라이더 (엄지 단추)에 대 한 경계 사각형의 위치와 크기를 검색합니다.  
@@ -477,9 +477,9 @@ CToolTipCtrl* GetToolTips() const;
  에 대 한 포인터를 [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) 개체 또는 도구 설명을 사용 하지 않는 경우 NULL입니다. 슬라이더 컨트롤 TBS_TOOLTIPS 스타일을 사용 하지 않는 경우 반환 값은 NULL입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [TBM_GETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb760209)Windows SDK에 설명 된 대로 합니다. 이 멤버 함수를 반환 하는 참고를 `CToolTipCtrl` 컨트롤에 대 한 핸들 대신 개체입니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [TBM_GETTOOLTIPS](/windows/desktop/Controls/tbm-gettooltips)Windows SDK에 설명 된 대로 합니다. 이 멤버 함수를 반환 하는 참고를 `CToolTipCtrl` 컨트롤에 대 한 핸들 대신 개체입니다.  
   
- 슬라이더 컨트롤 스타일에 대 한 참조 [Trackbar 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb760147) Windows SDK에 있습니다.  
+ 슬라이더 컨트롤 스타일에 대 한 참조 [Trackbar 컨트롤 스타일](/windows/desktop/Controls/trackbar-control-styles) Windows SDK에 있습니다.  
   
 ##  <a name="setbuddy"></a>  CSliderCtrl::SetBuddy  
  슬라이더 컨트롤의 버디 창으로 창을 할당합니다.  
@@ -505,9 +505,9 @@ CWnd* SetBuddy(
  에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 이전에 해당 위치에 있는 슬라이더 컨트롤에 할당 된 개체입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [TBM_SETBUDDY](http://msdn.microsoft.com/library/windows/desktop/bb760213)Windows SDK에 설명 된 대로 합니다. 이 멤버 함수에 대 한 포인터는 `CWnd` 해당 반환 값 및 매개 변수 모두에 대 한 창 핸들 보다는 개체입니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [TBM_SETBUDDY](/windows/desktop/Controls/tbm-setbuddy)Windows SDK에 설명 된 대로 합니다. 이 멤버 함수에 대 한 포인터는 `CWnd` 해당 반환 값 및 매개 변수 모두에 대 한 창 핸들 보다는 개체입니다.  
   
- 슬라이더 컨트롤 스타일에 대 한 참조 [Trackbar 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb760147) Windows SDK에 있습니다.  
+ 슬라이더 컨트롤 스타일에 대 한 참조 [Trackbar 컨트롤 스타일](/windows/desktop/Controls/trackbar-control-styles) Windows SDK에 있습니다.  
   
 ##  <a name="setlinesize"></a>  CSliderCtrl::SetLineSize  
  슬라이더 컨트롤에 대 한 라인의 크기를 설정합니다.  
@@ -636,16 +636,16 @@ void SetThumbLength(int nLength);
 |[in] *nLength*|픽셀에서 슬라이더의 길이입니다.|  
   
 ### <a name="remarks"></a>설명  
- Trackbar 컨트롤을 설정할 수는이 메서드에 필요 [TBS_FIXEDLENGTH](http://msdn.microsoft.com/library/windows/desktop/bb760147) 스타일입니다.  
+ Trackbar 컨트롤을 설정할 수는이 메서드에 필요 [TBS_FIXEDLENGTH](/windows/desktop/Controls/trackbar-control-styles) 스타일입니다.  
   
- 이 메서드는 전송 된 [TBM_SETTHUMBLENGTH](http://msdn.microsoft.com/library/windows/desktop/bb760234) Windows SDK에 설명 된 메시지입니다.  
+ 이 메서드는 전송 된 [TBM_SETTHUMBLENGTH](/windows/desktop/Controls/tbm-setthumblength) Windows SDK에 설명 된 메시지입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서는 변수를 정의 `m_sliderCtrl`, 즉 현재 trackbar 컨트롤에 액세스 하는 데 사용 합니다. 이 예제에서는 변수를 정의 `thumbLength`, 즉 trackbar 컨트롤의 thumb 구성 요소의 기본 길이 저장 하는 데 사용 합니다. 이러한 변수는 다음 예제에서 사용 됩니다.  
   
  [!code-cpp[NVC_MFC_CSliderCtrl_s1#1](../../mfc/reference/codesnippet/cpp/csliderctrl-class_1.h)]  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서는 해당 기본 길이 두 번 trackbar 컨트롤의 스크롤 상자 구성 요소를 설정합니다.  
   
  [!code-cpp[NVC_MFC_CSliderCtrl_s1#2](../../mfc/reference/codesnippet/cpp/csliderctrl-class_2.cpp)]  
@@ -689,13 +689,13 @@ int SetTipSide(int nLocation);
   
 ### <a name="parameters"></a>매개 변수  
  *n 위치*  
- 도구 설명 컨트롤을 표시할 위치를 나타내는 값입니다. 가능한 값 목록을 Win32 메시지를 참조 하세요 [TBM_SETTIPSIDE](http://msdn.microsoft.com/library/windows/desktop/bb760240)Windows SDK에 설명 된 대로 합니다.  
+ 도구 설명 컨트롤을 표시할 위치를 나타내는 값입니다. 가능한 값 목록을 Win32 메시지를 참조 하세요 [TBM_SETTIPSIDE](/windows/desktop/Controls/tbm-settipside)Windows SDK에 설명 된 대로 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  도구 설명 컨트롤의 이전 위치를 나타내는 값입니다. 반환 값 같음의 가능한 값 중 하나 *n 위치*합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Windows SDK에 설명 된 대로 TBM_SETTIPSIDE, Win32 메시지의 동작을 구현 합니다. TBS_TOOLTIPS 스타일을 사용 하는 슬라이더 컨트롤에 도구 설명을 표시 합니다. 슬라이더 컨트롤 스타일에 대 한 참조 [Trackbar 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb760147) Windows SDK에 있습니다.  
+ 이 멤버 함수는 Windows SDK에 설명 된 대로 TBM_SETTIPSIDE, Win32 메시지의 동작을 구현 합니다. TBS_TOOLTIPS 스타일을 사용 하는 슬라이더 컨트롤에 도구 설명을 표시 합니다. 슬라이더 컨트롤 스타일에 대 한 참조 [Trackbar 컨트롤 스타일](/windows/desktop/Controls/trackbar-control-styles) Windows SDK에 있습니다.  
   
 ##  <a name="settooltips"></a>  CSliderCtrl::SetToolTips  
  슬라이더 컨트롤에 도구 설명 컨트롤을 할당합니다.  
@@ -709,7 +709,7 @@ void SetToolTips(CToolTipCtrl* pWndTip);
  에 대 한 포인터를 [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) 슬라이더 컨트롤을 사용 하는 도구 설명을 포함 하는 개체입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [TBM_SETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb760242)Windows SDK에 설명 된 대로 합니다. 슬라이더 컨트롤을 TBS_TOOLTIPS 스타일을 사용 하 여 만들어질 때 슬라이더의 현재 위치를 표시, 슬라이더 옆에 표시 되는 기본 도구 설명 컨트롤을 만듭니다. 슬라이더 컨트롤 스타일에 대 한 참조 [Trackbar 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb760147) Windows SDK에 있습니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [TBM_SETTOOLTIPS](/windows/desktop/Controls/tbm-settooltips)Windows SDK에 설명 된 대로 합니다. 슬라이더 컨트롤을 TBS_TOOLTIPS 스타일을 사용 하 여 만들어질 때 슬라이더의 현재 위치를 표시, 슬라이더 옆에 표시 되는 기본 도구 설명 컨트롤을 만듭니다. 슬라이더 컨트롤 스타일에 대 한 참조 [Trackbar 컨트롤 스타일](/windows/desktop/Controls/trackbar-control-styles) Windows SDK에 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [MFC 샘플 CMNCTRL2](../../visual-cpp-samples.md)   

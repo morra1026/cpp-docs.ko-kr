@@ -34,12 +34,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f8ab76252c355bb56a1e2157e0e025a4eddb0d8
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 18f26f9ac0cd00758d1259ac368b2408a7a2e8cf
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596538"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214623"
 ---
 # <a name="interlockedcompareexchangepointer-intrinsic-functions"></a>_InterlockedCompareExchangePointer Intrinsic Functions
 **Microsoft 전용**  
@@ -110,7 +110,7 @@ long _InterlockedCompareExchangePointer_rel (
 ## <a name="remarks"></a>설명  
  `_InterlockedCompareExchangePointer`는 `Destination` 주소와 `Comparand` 주소의 원자성 비교를 수행합니다. `Destination` 주소가 `Comparand` 주소와 같으면 `Exchange`으로 지정된 주소에 `Destination` 주소가 저장됩니다. 그렇지 않으면 작업이 수행되지 않습니다.  
   
- `_InterlockedCompareExchangePointer` Win32 Windows SDK에 대 한 컴파일러 내장 지원을 제공 [_InterlockedCompareExchangePointer](http://msdn.microsoft.com/library/ff547863.aspx) 함수입니다.  
+ `_InterlockedCompareExchangePointer` Win32 Windows SDK에 대 한 컴파일러 내장 지원을 제공 [_InterlockedCompareExchangePointer](https://msdn.microsoft.com/library/ff547863.aspx) 함수입니다.  
   
  사용 하는 방법의 예제 `_InterlockedCompareExchangePointer`를 참조 하세요 [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md)합니다.  
   

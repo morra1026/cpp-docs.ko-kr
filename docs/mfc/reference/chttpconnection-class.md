@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03e773e57b4cdaee09331dab651f41f1fa8db211
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: bbc42f1af6dab8c34c6092e604682669ab18b9bb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336064"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211579"
 ---
 # <a name="chttpconnection-class"></a>CHttpConnection 클래스
 HTTP 서버와의 연결을 관리합니다.  
@@ -42,8 +42,7 @@ class CHttpConnection : public CInternetConnection
   
 |이름|설명|  
 |----------|-----------------|  
-|[CHttpConnection::CHttpConnection](#chttpconnection)|
-          `CHttpConnection` 개체를 만듭니다.|  
+|[CHttpConnection::CHttpConnection](#chttpconnection)|`CHttpConnection` 개체를 만듭니다.|  
   
 ### <a name="public-methods"></a>Public 메서드  
   
@@ -130,7 +129,7 @@ CHttpConnection(
 |NULL이 아닌 문자열|NULL이 아닌 문자열|*pstrUserName*|*pstrPassword*|  
   
  *dwFlags*  
- 조합 된 **INTERNET_ FLAG_\***  플래그입니다. 표를 참조 합니다 **주의** 부분 [CHttpConnection::OpenRequest](#openrequest) 에 대 한 설명은 *dwFlags* 값입니다.  
+ 조합 된 `INTERNET_FLAG_*` 플래그입니다. 표를 참조 합니다 **주의** 부분 [CHttpConnection::OpenRequest](#openrequest) 에 대 한 설명은 *dwFlags* 값입니다.  
   
 ### <a name="remarks"></a>설명  
  되지 만들기는 `CHttpConnection` 직접. 대신, 호출 하 여 개체를 만들면 [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection)합니다.  

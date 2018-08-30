@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ef7551047449167ff60372da146618fbdc4e564
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 95b0931438afe8ff151d3c9f6c4727013df79478
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464164"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209344"
 ---
 # <a name="varianttvariantt"></a>_variant_t::_variant_t
 **Microsoft 전용**  
@@ -210,7 +210,7 @@ _variant_t(
   
 -   **_variant_t (VARIANT &***varSrc***)** 생성을 `_variant_t` 의 복사본에서 개체를 `VARIANT` 개체입니다.     변형 형식이 유지됩니다.  
   
--   **_variant_t (VARIANT\****pVarSrc***)** 생성 한 `_variant_t` 개체의 복사본에서는 `VARIANT` 개체입니다.     변형 형식이 유지됩니다.  
+-   **_variant_t (VARIANT**<strong>\*</strong>*pVarSrc***)** 생성을 `_variant_t` 개체의 복사본에서는 `VARIANT` 개체입니다.     변형 형식이 유지됩니다.  
   
 -   **_variant_t (_variant_t &***var_t_Src***)** 생성을 `_variant_t` 개체에서 다른 `_variant_t` 개체입니다.     변형 형식이 유지됩니다.  
   
@@ -228,15 +228,15 @@ _variant_t(
   
 -   **_variant_t (_bstr_t &**`bstrSrc`**)** 생성을 `_variant_t` 개체의 입력에서 VT_BSTR를 `_bstr_t` 개체입니다.     새 `BSTR`이 할당됩니다.  
   
--   **_variant_t (wchar_t \***  *wstrSrc***)** 생성 한 `_variant_t` 유니코드 문자열에서 VT_BSTR 형식의 개체입니다.   새 `BSTR`이 할당됩니다.  
+-   **_variant_t (wchar_t** <strong>\*</strong> *wstrSrc***)** 생성을 `_variant_t` 유니코드 문자열에서 VT_BSTR 형식의 개체입니다.   새 `BSTR`이 할당됩니다.  
   
--   **_variant_t (char\***`strSrc`**)** 생성을 `_variant_t` 문자열에서 VT_BSTR 형식의 개체입니다.     새 `BSTR`이 할당됩니다.  
+-   **_variant_t (char**<strong>\*</strong>`strSrc`**)** 생성을 `_variant_t` 문자열에서 VT_BSTR 형식의 개체입니다.     새 `BSTR`이 할당됩니다.  
   
 -   **_variant_t (bool**`bSrc`**)** 생성을 `_variant_t` 개체의 입력에서 VT_BOOL를 **bool** 값입니다.      
   
--   **_variant_t (IUnknown\***  `pIUknownSrc` **, bool**`fAddRef`**= true)** 생성을 `_variant_t` COM 인터페이스 포인터에서 VT_UNKNOWN 형식의 개체 .       경우 `fAddRef` 는 **true**, 다음 `AddRef` 에 대 한 호출에 맞게 제공 된 인터페이스 포인터 라고 `Release` 발생 하는 경우는 `_variant_t` 개체는 소멸 됩니다. 호출 하는 것 `Release` 제공 된 인터페이스 포인터에 대 한 합니다. 하는 경우 `fAddRef` 됩니다 **false**,이 생성자는 제공된 된 인터페이스 포인터의 소유권; 호출 하지 마십시오 `Release` 제공 된 인터페이스 포인터에 대 한 합니다.  
+-   **_variant_t (IUnknown** <strong>\*</strong> `pIUknownSrc` **, bool**`fAddRef`**= true)** 생성을 `_variant_t` 형식의 개체 COM 인터페이스 포인터에서 VT_UNKNOWN 합니다.       경우 `fAddRef` 는 **true**, 다음 `AddRef` 에 대 한 호출에 맞게 제공 된 인터페이스 포인터 라고 `Release` 발생 하는 경우는 `_variant_t` 개체는 소멸 됩니다. 호출 하는 것 `Release` 제공 된 인터페이스 포인터에 대 한 합니다. 하는 경우 `fAddRef` 됩니다 **false**,이 생성자는 제공된 된 인터페이스 포인터의 소유권; 호출 하지 마십시오 `Release` 제공 된 인터페이스 포인터에 대 한 합니다.  
   
--   **_variant_t (IDispatch\***  `pDispSrc` **, bool**`fAddRef`**= true)** 생성을 `_variant_t` COM 인터페이스에서 VT_DISPATCH 형식의 개체 포인터입니다.       경우 `fAddRef` 는 **true**, 다음 `AddRef` 에 대 한 호출에 맞게 제공 된 인터페이스 포인터 라고 `Release` 발생 하는 경우는 `_variant_t` 개체는 소멸 됩니다. 호출 하는 것 `Release` 제공 된 인터페이스 포인터에 대 한 합니다. 하는 경우 `fAddRef` 됩니다 **false**,이 생성자는 제공된 된 인터페이스 포인터의 소유권; 호출 하지 마십시오 `Release` 제공 된 인터페이스 포인터에 대 한 합니다.  
+-   **_variant_t (IDispatch** <strong>\*</strong> `pDispSrc` **, bool**`fAddRef`**= true)** 생성을 `_variant_t` 개체 COM 인터페이스 포인터에서 VT_DISPATCH를 입력 합니다.       경우 `fAddRef` 는 **true**, 다음 `AddRef` 에 대 한 호출에 맞게 제공 된 인터페이스 포인터 라고 `Release` 발생 하는 경우는 `_variant_t` 개체는 소멸 됩니다. 호출 하는 것 `Release` 제공 된 인터페이스 포인터에 대 한 합니다. 하는 경우 `fAddRef` 됩니다 **false**,이 생성자는 제공된 된 인터페이스 포인터의 소유권; 호출 하지 마십시오 `Release` 제공 된 인터페이스 포인터에 대 한 합니다.  
   
 -   **_variant_t (10 진수 &**`decSrc`**)** 생성을 `_variant_t` 개체의 입력에서 VT_DECIMAL는 `DECIMAL` 값입니다.      
   
