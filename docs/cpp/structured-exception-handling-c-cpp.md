@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db7dd23a1b68e4ea97eb837e009c380514230de8
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 122c9cc8f1500132f507eb3477e108c3a5c67768
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42571797"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217121"
 ---
 # <a name="structured-exception-handling-cc"></a>Structured Exception Handling (C/C++)
 
@@ -74,7 +74,7 @@ SEH 메커니즘에는 다음 두 가지가 있습니다.
 
 - [C + +에서 구조적된 예외 처리](../cpp/exception-handling-differences.md)
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 C + + 프로그램에서 SEH를 사용 하 고 사용 하 여 컴파일하는 경우 로컬 개체는 호출에 대 한 소멸자 이전에 설명한 대로 합니다 **/EHa** 하거나 **/EHsc** 옵션입니다. 그러나 C++ 예외도 사용하는 경우 실행 중의 동작은 예상과 다를 수 있습니다. 이 예제에서는 이러한 동작의 차이 보여 줍니다.
 
@@ -158,4 +158,4 @@ Executing SEH __except block
 [키워드](../cpp/keywords-cpp.md)  
 [\<exception>](../standard-library/exception.md)  
 [오류 및 예외 처리](../cpp/errors-and-exception-handling-modern-cpp.md)  
-[구조적된 예외 처리 (Windows)](http://msdn.microsoft.com/library/windows/desktop/ms680657.aspx)  
+[구조적된 예외 처리 (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms680657.aspx)  

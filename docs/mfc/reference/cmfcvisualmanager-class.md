@@ -354,12 +354,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e9ac21e909c8286ef6a7d1973837b0caf69b711c
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 0eb6e8da3caa9286e14072726488ad1c16f47b1e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42541696"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203644"
 ---
 # <a name="cmfcvisualmanager-class"></a>CMFCVisualManager 클래스
 응용 프로그램의 모양을 전역 수준에서 변경하는 기능을 지원합니다. `CMFCVisualManager` 클래스는 일관된 스타일을 사용하여 응용 프로그램의 GUI 컨트롤을 그리는 명령을 제공하는 클래스와 함께 작동합니다. 이러한 다른 클래스를 비주얼 관리자라고 하며 `CMFCBaseVisualManager`에서 상속됩니다.  
@@ -561,7 +561,7 @@ class CMFCVisualManager : public CMFCBaseVisualManager
   
  모든 그리기 메서드는 가상입니다. 이 옵션을 사용 하면 응용 프로그램의 GUI에 대 한 사용자 지정 비주얼 스타일을 만들 수 있습니다. 사용자 고유의 비주얼 스타일을 만들려는 경우 비주얼 관리자 클래스 중 하나에서 클래스를 파생 시키고 변경 하려는 그리기 메서드를 재정의 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 샘플에서는 표준 및 사용자 지정을 인스턴스화하는 방법을 보여 줍니다. `CMFCVisualManager` 개체입니다.  
   
 ```cpp
@@ -592,7 +592,7 @@ void CMFCSkinsApp::SetSkin (int iIndex)
 }  
 ```  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 기본 값을 검색 하는 방법에 설명 된 `CMFCVisualManager` 개체입니다. 이 코드 조각은의 일부인 합니다 [작업창 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_TasksPane#1](../../mfc/reference/codesnippet/cpp/cmfcvisualmanager-class_1.h)]  
@@ -790,7 +790,7 @@ virtual COLORREF GetAutoHideButtonTextColor(CMFCAutoHideButton* pButton);
  자동 숨기기 단추를 사용 하는 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 의 텍스트 색을 지정 하는 매개 변수 *pButton*합니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) 의 텍스트 색을 지정 하는 매개 변수 *pButton*합니다.  
   
 ### <a name="remarks"></a>설명  
  응용 프로그램에서 자동 숨기기 단추의 텍스트 색을 사용자 지정 파생된 클래스에서이 메서드를 재정의 합니다. 이 위해 텍스트 색으로 사용 하도록 응용 프로그램을 원하는 색을 반환 합니다.  
@@ -820,7 +820,7 @@ virtual COLORREF GetCaptionBarTextColor(CMFCCaptionBar* pBar);
  캡션 표시줄에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 에 있는 텍스트의 색을 나타내는 매개 변수 *pBar*합니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) 에 있는 텍스트의 색을 나타내는 매개 변수 *pBar*합니다.  
   
 ### <a name="remarks"></a>설명  
  캡션 표시줄에 대 한 텍스트 색을 사용자 지정 하려면 파생된 클래스에서이 메서드를 재정의 합니다. 재정의 된 메서드에서 원하는 색을 반환 합니다.  
@@ -998,7 +998,7 @@ virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
  프레임 워크는 그리기 속성 목록에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 의 배경색을 나타내는 매개 변수 *pPropList*합니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) 의 배경색을 나타내는 매개 변수 *pPropList*합니다.  
   
 ### <a name="remarks"></a>설명  
  응용 프로그램에서 속성 목록의 배경색을 사용자 지정 하려면이 함수를 재정의 합니다.  
@@ -1015,7 +1015,7 @@ virtual COLORREF GetPropertyGridGroupTextColor(CMFCPropertyGridCtrl* pPropList);
  속성 목록에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 속성 목록의 텍스트 색을 나타내는 매개 변수입니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) 속성 목록의 텍스트 색을 나타내는 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  응용 프로그램에서 속성 목록의 텍스트 색을 사용자 지정 하려면이 함수를 재정의 합니다.  
@@ -1214,7 +1214,7 @@ virtual void GetTabFrameColors(
  프레임 탭을 그릴 위치 탭된 창에 대 한 포인터입니다.  
   
  [out] *clrDark*  
- 에 대 한 참조를 [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 이 메서드는 탭의 어두운 테두리의 색을 저장 하는 위치 매개 변수입니다.  
+ 에 대 한 참조를 [COLORREF](/windows/desktop/gdi/colorref) 이 메서드는 탭의 어두운 테두리의 색을 저장 하는 위치 매개 변수입니다.  
   
  [out] *clrBlack*  
  이 메서드는 탭 창 테두리의 색을 저장 하는 위치 COLORREF 매개 변수 참조입니다. 테두리에 대 한 기본 색은 검정입니다.  
@@ -1778,7 +1778,7 @@ virtual BOOL OnDrawBrowseButton(
  단추의 상태를 지정 하는 열거형된 값입니다.  
   
  [out] *clrText*  
- 에 대 한 참조를 [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 매개 변수입니다. 예약 된 값 이며 현재 사용 되지 않습니다.  
+ 에 대 한 참조를 [COLORREF](/windows/desktop/gdi/colorref) 매개 변수입니다. 예약 된 값 이며 현재 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 TRUE이고, 실패하면 FALSE입니다.  
@@ -2578,7 +2578,7 @@ virtual COLORREF OnDrawPaneCaption(
  캡션 단추의 경계를 지정 하는 사각형입니다.  
   
 ### <a name="return-value"></a>반환 값  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 캡션의 텍스트 색을 나타내는 매개 변수입니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) 캡션의 텍스트 색을 나타내는 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  창 캡션의 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -2805,7 +2805,7 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
  캡션 표시줄에 대 한 포인터입니다. 이 visual manager 그립니다 [CMFCRibbonContextCaption 클래스](../../mfc/reference/cmfcribboncontextcaption-class.md) 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 캡션 표시줄에 텍스트의 색을 나타내는 매개 변수입니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) 캡션 표시줄에 텍스트의 색을 나타내는 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  리본 범주에 대 한 캡션 표시줄의 표시를 사용자 지정 파생된 클래스에서이 메서드를 재정의 합니다. 캡션 표시줄에 대 한 자세한 내용은 참조 하세요. [CMFCRibbonContextCaption 클래스](../../mfc/reference/cmfcribboncontextcaption-class.md)합니다.  
@@ -3590,7 +3590,7 @@ virtual void OnDrawStatusBarProgress(
  진행률 표시줄에 대 한 현재 진행률입니다.  
   
  [in] *clrBar*  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 진행률 표시줄의 초기 색을 나타내는 매개 변수입니다. 값은 색 그라데이션의 시작 또는 완료 진행률 표시줄의 색입니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) 진행률 표시줄의 초기 색을 나타내는 매개 변수입니다. 값은 색 그라데이션의 시작 또는 완료 진행률 표시줄의 색입니다.  
   
  [in] *clrProgressBarDest*  
  진행률 표시줄에 대 한 색 그라데이션의 끝을 나타내는 COLORREF 매개 변수입니다. 하는 경우 *clrProgressBarDest* -1은 프레임 워크 색 그라데이션으로 진행률 표시줄을 그리지 않습니다. 대신 지정 되는 색을 사용 하 여 전체 진행률 표시줄을 채우도록 *clrBar*합니다.  
@@ -4090,7 +4090,7 @@ virtual void OnFillBarBackground(
 ### <a name="remarks"></a>설명  
  이 메서드의 기본 구현은 전역 변수에서 3d 배경색을 사용 하 여 표시줄의 배경을 채우는 `afxGlobalData`합니다. 창의 배경에 맞게 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `OnFillBarBackground` 에 `CMFCVisualManager` 클래스입니다. 이 코드 조각은의 일부인 합니다 [Outlook 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_OutlookDemo#4](../../mfc/reference/codesnippet/cpp/cmfcvisualmanager-class_2.cpp)]  
@@ -4250,7 +4250,7 @@ virtual void OnFillOutlookBarCaption(
  캡션 표시줄의 경계를 지정 하는 사각형입니다.  
   
  [out] *clrText*  
- 에 대 한 참조를 [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 매개 변수입니다. 메서드는이 매개 변수를 캡션 표시줄에 텍스트의 색을 씁니다.  
+ 에 대 한 참조를 [COLORREF](/windows/desktop/gdi/colorref) 매개 변수입니다. 메서드는이 매개 변수를 캡션 표시줄에 텍스트의 색을 씁니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드의 기본 구현은 현재 스킨에 기반 하는 그림자의 색을 사용 하 여 캡션 표시줄을 채웁니다. Outlook 캡션 표시줄의 색을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -4281,7 +4281,7 @@ virtual void OnFillOutlookPageButton(
  단추를 눌렀는지 여부를 지정 하는 부울 매개 변수입니다.  
   
  [out] *clrText*  
- 에 대 한 참조를 [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 매개 변수입니다. 이 메서드는 outlook 페이지 단추 텍스트 색이이 매개 변수에 저장합니다.  
+ 에 대 한 참조를 [COLORREF](/windows/desktop/gdi/colorref) 매개 변수입니다. 이 메서드는 outlook 페이지 단추 텍스트 색이이 매개 변수에 저장합니다.  
   
 ### <a name="remarks"></a>설명  
  Outlook 페이지 단추의 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 함수를 재정의 합니다.  

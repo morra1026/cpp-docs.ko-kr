@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ab7207abac26d85faf27a0ed3d33dadadbdc9d27
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 4d302d625f0f87eaec39bc1de35885f6d6b6a9ce
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42583767"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198053"
 ---
 # <a name="requestedit"></a>requestedit
 
@@ -36,9 +36,9 @@ ms.locfileid: "42583767"
 
 ## <a name="remarks"></a>설명
 
-합니다 **requestedit** c + + 특성에 동일한 기능을 합니다 [requestedit](http://msdn.microsoft.com/library/windows/desktop/aa367155) MIDL 특성입니다.
+합니다 **requestedit** c + + 특성에 동일한 기능을 합니다 [requestedit](/windows/desktop/Midl/requestedit) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 예를 참조 하세요 [bindable](../windows/bindable.md) 의 샘플 사용에 대 한 **requestedit**합니다.
 

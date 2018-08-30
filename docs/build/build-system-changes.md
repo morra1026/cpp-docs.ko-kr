@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3d6dffb4a4b0b4f5ef3a373cf2dcd0d93d1bd12
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e29d664824a01c0e2a0c0e738368f8d025a239ee
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613203"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202159"
 ---
 # <a name="build-system-changes"></a>빌드 시스템 변경 사항
 MSBuild 시스템은 Visual C++ 프로젝트를 빌드하는 데 사용됩니다. 하지만 Visual Studio 2008 및 이전 버전에서는 VCBuild 시스템이 사용되었습니다. 특정 파일 형식 및 VCBuild에 의존 하는 개념 중 하나 존재 하지 않거나 현재 시스템에서 다르게 표현 됩니다. 이 문서는 현재 빌드 시스템의 차이점을 설명 합니다.  
@@ -55,7 +55,7 @@ MSBuild 시스템은 Visual C++ 프로젝트를 빌드하는 데 사용됩니다
   
  현재 릴리스에서 상속 하나 이상의 리터럴 값 및 속성 매크로의 연결 속성의 값을 지정 하 여 지원 됩니다. 합니다 **$ (inherit)** 하 고 **$ (noinherit)** 매크로 지원 되지 않습니다.  
   
- 다음 예제에서는 세미콜론으로 구분 된 목록 속성 페이지에서 속성에 할당 됩니다. 연결 목록으로 구성 됩니다 합니다  *\<값 >* 리터럴 및의 값을 `MyProperty` 매크로 표기법을 사용 하 여 액세스할 수 있는 속성을 **$(***MyProperty***)** .  
+ 다음 예제에서는 세미콜론으로 구분 된 목록 속성 페이지에서 속성에 할당 됩니다. 연결 목록으로 구성 됩니다 합니다  *\<값 >* 리터럴 및의 값을 `MyProperty` 매크로 표기법을 사용 하 여 액세스할 수 있는 속성을 **$(**  <em>MyProperty</em>**)** 합니다.  
   
 ```  
 Property=<value>;$(MyProperty)  

@@ -170,12 +170,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c79c2260b03d0530595100ba8f4c42a392900aa7
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: bb6cc740577dfcb5921332c24e3cec2d2d6cb100
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851381"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210852"
 ---
 # <a name="cmfctoolbarbutton-class"></a>CMFCToolBarButton 클래스
 도구 모음 단추 기능을 제공합니다.  
@@ -230,19 +230,19 @@ class CMFCToolBarButton : public CObject
 |[CMFCToolBarButton::IsOwnerOf](#isownerof)|단추를 제공 된 창 핸들의 소유자 인지 확인 합니다.|  
 |[CMFCToolBarButton::IsVisible](#isvisible)|도구 모음 단추가 표시 되는지 여부를 결정 합니다.|  
 |[CMFCToolBarButton::IsWindowVisible](#iswindowvisible)|단추의 내부 창 핸들이 표시 되는지 여부를 결정 합니다.|  
-|[CMFCToolBarButton::NotifyCommand](#notifycommand)|단추를 처리 하는지 여부를 지정 합니다 [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) 메시지입니다.|  
+|[CMFCToolBarButton::NotifyCommand](#notifycommand)|단추를 처리 하는지 여부를 지정 합니다 [WM_COMMAND](/windows/desktop/menurc/wm-command) 메시지입니다.|  
 |[CMFCToolBarButton::OnAddToCustomizePage](#onaddtocustomizepage)|단추를 추가할 때 프레임 워크에서 호출을 **사용자 지정** 대화 상자.|  
 |[CMFCToolBarButton::OnBeforeDrag](#onbeforedrag)|단추를 놓을 수 있는지 여부를 지정 합니다.|  
 |[CMFCToolBarButton::OnBeforeDrop](#onbeforedrop)|사용자를 대상 도구 모음 단추를 삭제할 수 있는지 여부를 지정 합니다.|  
 |[CMFCToolBarButton::OnCalculateSize](#oncalculatesize)|지정 된 디바이스 컨텍스트 및 도킹 상태에 대 한 단추의 크기를 계산 하기 위해 프레임 워크에서 호출 됩니다.|  
-|[CMFCToolBarButton::OnCancelMode](#oncancelmode)|처리 하기 위해 프레임 워크에서 호출 된 [WM_CANCELMODE](http://msdn.microsoft.com/library/windows/desktop/ms632615) 메시지입니다.|  
+|[CMFCToolBarButton::OnCancelMode](#oncancelmode)|처리 하기 위해 프레임 워크에서 호출 된 [WM_CANCELMODE](/windows/desktop/winmsg/wm-cancelmode) 메시지입니다.|  
 |[CMFCToolBarButton::OnChangeParentWnd](#onchangeparentwnd)|새 도구 모음에 단추를 삽입할 때 프레임 워크에서 호출 됩니다.|  
 |[CMFCToolBarButton::OnClick](#onclick)|사용자가 마우스 단추를 클릭 하면 프레임 워크에서 호출 됩니다.|  
 |[CMFCToolBarButton::OnClickUp](#onclickup)|사용자가 마우스 단추를 놓을 때 프레임 워크에서 호출 됩니다.|  
 |[CMFCToolBarButton::OnContextHelp](#oncontexthelp)|부모 도구 모음에서 WM_HELPHITTEST 메시지를 처리 하는 경우 프레임 워크에서 호출 됩니다.|  
 |[CMFCToolBarButton::OnCtlColor](#onctlcolor)|부모 도구 모음에서 WM_CTLCOLOR 메시지를 처리 하는 경우 프레임 워크에서 호출 됩니다.|  
 |[CMFCToolBarButton::OnCustomizeMenu](#oncustomizemenu)|응용 프로그램이 부모 도구 모음에서 바로 가기 메뉴를 표시 하는 경우 제공 된 메뉴를 수정 하려면 단추를 허용 합니다.|  
-|[CMFCToolBarButton::OnDblClk](#ondblclk)|부모 도구 모음에서 처리할 때 프레임 워크에서 호출을 [WM_LBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms645606) 메시지입니다.|  
+|[CMFCToolBarButton::OnDblClk](#ondblclk)|부모 도구 모음에서 처리할 때 프레임 워크에서 호출을 [WM_LBUTTONDBLCLK](/windows/desktop/inputdev/wm-lbuttondblclk) 메시지입니다.|  
 |[CMFCToolBarButton::OnDraw](#ondraw)|지정 된 스타일 및 옵션을 사용 하 여 단추를 그리기 위해 프레임 워크에서 호출 됩니다.|  
 |[CMFCToolBarButton::OnDrawOnCustomizeList](#ondrawoncustomizelist)|단추를 그리기 위해 프레임 워크에서 호출 합니다 **명령** 창 합니다 **사용자 지정** 대화 상자.|  
 |[CMFCToolBarButton::OnGetCustomToolTipText](#ongetcustomtooltiptext)|단추에 대 한 사용자 지정 도구 설명 텍스트를 검색 하기 위해 프레임 워크에서 호출 됩니다.|  
@@ -293,7 +293,7 @@ class CMFCToolBarButton : public CObject
   
  `CMFCToolBarButton` 클래스는 다른 도구 모음 단추 클래스에 대 한 기본 클래스와 같은 [CMFCToolBarMenuButton 클래스](../../mfc/reference/cmfctoolbarmenubutton-class.md)하십시오 [CMFCToolBarEditBoxButton 클래스](../../mfc/reference/cmfctoolbareditboxbutton-class.md), 및 [ CMFCToolBarComboBoxButton 클래스](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 구성 하는 방법에 설명 된 `CMFCToolBarButton` 에서 다양 한 메서드를 사용 하 여 개체를 `CMFCToolBarButton` 클래스입니다. 이 예제에서는 마우스를 사용 하도록 설정 하 고 키보드 입력을 단추의 image index, 단추의 경계 사각형을 설정 및 단추를 표시할 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [Tab 컨트롤 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_TabControl#1](../../mfc/reference/codesnippet/cpp/cmfctoolbarbutton-class_1.cpp)]  
@@ -446,7 +446,7 @@ virtual void EnableWindow(BOOL bEnable = TRUE);
  이 매개 변수를 입력을 사용 하려면 true로 설정 하거나 입력을 사용 하지 않도록 설정 하려면 FALSE로 설정 합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드를 호출 합니다 `EnableWindow` 함수를 사용 하도록 설정 하거나 입력을 사용 하지 않도록 설정 합니다. 자세한 내용은 [EnableWindow](http://msdn.microsoft.com/library/windows/desktop/ms646291) Windows SDK에 있습니다.  
+ 이 메서드를 호출 합니다 `EnableWindow` 함수를 사용 하도록 설정 하거나 입력을 사용 하지 않도록 설정 합니다. 자세한 내용은 [EnableWindow](https://msdn.microsoft.com/library/windows/desktop/ms646291) Windows SDK에 있습니다.  
   
 ##  <a name="exporttomenubutton"></a>  CMFCToolBarButton::ExportToMenuButton  
  도구 모음 단추에서 메뉴에 텍스트를 복사 합니다.  
@@ -884,7 +884,7 @@ CString m_strText;
  이 데이터 멤버에는 단추의 텍스트 레이블을 포함합니다. 텍스트 레이블을 비어 있을 수 있습니다.  
   
 ##  <a name="notifycommand"></a>  CMFCToolBarButton::NotifyCommand  
- 단추를 처리 하는지 여부를 지정 합니다 [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) 메시지입니다.  
+ 단추를 처리 하는지 여부를 지정 합니다 [WM_COMMAND](/windows/desktop/menurc/wm-command) 메시지입니다.  
   
 ```  
 virtual BOOL NotifyCommand(int iNotifyCode);
@@ -898,7 +898,7 @@ virtual BOOL NotifyCommand(int iNotifyCode);
  이 메서드는 FALSE를 반환합니다.  
   
 ### <a name="remarks"></a>설명  
- 프레임 워크를 보내려는 경우이 메서드를 호출을 [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) 부모 창에는 메시지입니다.  
+ 프레임 워크를 보내려는 경우이 메서드를 호출을 [WM_COMMAND](/windows/desktop/menurc/wm-command) 부모 창에는 메시지입니다.  
   
  기본적으로이 메서드는 FALSE를 반환합니다. WM_COMMAND 메시지 또는 FALSE를 나타내는 부모 도구 모음에서의 메시지를 처리 하는 처리 하려는 경우 TRUE를 반환 하려면이 메서드를 재정의 합니다.  
   
@@ -977,14 +977,14 @@ virtual SIZE OnCalculateSize(
  비표준 단추 (예를 들어 편집 상자 단추)의 크기를 제공 하려는 경우이 메서드를 재정의 합니다.  
   
 ##  <a name="oncancelmode"></a>  CMFCToolBarButton::OnCancelMode  
- 처리 하기 위해 프레임 워크에서 호출 된 [WM_CANCELMODE](http://msdn.microsoft.com/library/windows/desktop/ms632615) 메시지입니다.  
+ 처리 하기 위해 프레임 워크에서 호출 된 [WM_CANCELMODE](/windows/desktop/winmsg/wm-cancelmode) 메시지입니다.  
   
 ```  
 virtual void OnCancelMode();
 ```  
   
 ### <a name="remarks"></a>설명  
- 이 메서드의 기본 구현은 아무 작업도 수행합니다. 처리 하려는 경우이 메서드를 재정의 합니다 [WM_CANCELMODE](http://msdn.microsoft.com/library/windows/desktop/ms632615) 메시지입니다.  
+ 이 메서드의 기본 구현은 아무 작업도 수행합니다. 처리 하려는 경우이 메서드를 재정의 합니다 [WM_CANCELMODE](/windows/desktop/winmsg/wm-cancelmode) 메시지입니다.  
   
 ##  <a name="onchangeparentwnd"></a>  CMFCToolBarButton::OnChangeParentWnd  
  새 도구 모음에 단추를 삽입할 때 프레임 워크에서 호출 됩니다.  
@@ -1104,7 +1104,7 @@ virtual BOOL OnCustomizeMenu(CMenu* pMenu);
  기본 구현은 아무 작업도 수행 하지 하 고 FALSE를 반환 합니다. 이 메서드를 재정의 하 고 제공 된 메뉴의 내용을 수정 하려는 경우 0이 아닌 값을 반환 합니다.  
   
 ##  <a name="ondblclk"></a>  CMFCToolBarButton::OnDblClk  
- 부모 도구 모음에서 처리할 때 프레임 워크에서 호출을 [WM_LBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms645606) 메시지입니다.  
+ 부모 도구 모음에서 처리할 때 프레임 워크에서 호출을 [WM_LBUTTONDBLCLK](/windows/desktop/inputdev/wm-lbuttondblclk) 메시지입니다.  
   
 ```  
 virtual void OnDblClk(CWnd* pWnd);
@@ -1115,7 +1115,7 @@ virtual void OnDblClk(CWnd* pWnd);
  -   단추의 부모 창입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 합니다 `CMFCToolBar::OnLButtonDblClk` 부모 도구 모음에서 처리 하는 경우 메서드는 [WM_LBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms645606) 메시지입니다.  
+ 이 메서드는 합니다 `CMFCToolBar::OnLButtonDblClk` 부모 도구 모음에서 처리 하는 경우 메서드는 [WM_LBUTTONDBLCLK](/windows/desktop/inputdev/wm-lbuttondblclk) 메시지입니다.  
   
  이 메서드의 기본 구현은 아무 작업도 수행합니다.  
   

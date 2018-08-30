@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 175b64b40ab2fd242e3e430cf99d761f577835cb
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: ca5a5e4d7bda9fe14362696d44137273cc020c7f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026422"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203132"
 ---
 # <a name="upgrading-an-existing-activex-control"></a>기존 ActiveX 컨트롤 업그레이드
 기존 ActiveX 컨트롤 (이전의 OLE 컨트롤) 수정 하지 않고 인터넷에서 사용할 수 있습니다. 그러나 다음 성능 향상을 위해 컨트롤을 수정 하는 것이 좋습니다. 웹 페이지에 컨트롤을 사용할 경우 추가 고려 사항이 있습니다. .Ocx 파일 및 모든 지원 파일 대상 컴퓨터에 있어야 또는 인터넷을 통해 다운로드할 수 있습니다. 이렇게 하면 코드 크기와 다운로드 시간이 중요 한 고려 합니다. 서명 된.cab 파일의 다운로드를 패키지할 수 있습니다. 스크립트 및 초기화에 안전으로 컨트롤을 표시할 수 있습니다.  
@@ -89,7 +89,7 @@ CODEBASE="http://example.microsoft.com/acontrol.cab#version=1,
   
  캐비닛 파일에서 가리키는 `CODEBASE` ActiveX 컨트롤에 대 한.ocx 파일 및 해당 설치를 제어 하는.inf 파일을 포함 해야 합니다. 사용자 컨트롤 파일의 이름을 지정 하 여 캐비닛 파일 및.inf 파일을 만듭니다. 이 캐비닛 파일 시스템에 이미 있을 수 있는 종속 Dll을 포함 하지 않습니다. 예를 들어, MFC Dll 별도 캐비닛 파일에 패키지 되 고 제어.inf 파일에서 참조 합니다.  
   
- CAB 파일을 만드는 방법에 대 한 세부 정보를 참조 하세요 [CAB 파일을 만드는](http://msdn.microsoft.com/cc52fd09-bdf6-4410-a693-149a308f36a3)합니다.  
+ CAB 파일을 만드는 방법에 대 한 세부 정보를 참조 하세요 [CAB 파일을 만드는](https://msdn.microsoft.com/cc52fd09-bdf6-4410-a693-149a308f36a3)합니다.  
   
 ### <a name="the-inf-file"></a>INF 파일  
  다음 예제에서는, spindial.inf, 목록 버전 정보와 지원 파일이 필요한 MFC Spindial 제어 됩니다. MFC Dll의 위치는 Microsoft 웹 사이트에서 확인할 수 있습니다. mfc42.cab 제공 되 고 Microsoft에서 서명 됩니다.  
@@ -221,7 +221,7 @@ HKEY_CLASSES_ROOT\CLSID\{06889605-B8D0-101A-91F1-00608CEAD5B3}\Implemented Categ
 ##  <a name="_core_signing_code"></a> 코드 서명  
  코드의 원본을 확인은 코드 서명 및 서명 된 이후 코드는 변경 되지 않았는지를 보장 하기 위해. 브라우저 보안 설정에 따라 사용자 코드를 다운로드 하기 전에 경고가 표시 될 수 있습니다. 사용자는 특정 인증서 소유자 또는 회사에 있는 경우 코드 서명 된 신뢰할 수 있는 경고 없이 다운로드 됩니다 신뢰 하도록 선택할 수 있습니다. 코드는 변조를 방지 하려면 디지털로 서명 됩니다.  
   
- 최종 코드는 신뢰 경고 메시지를 표시 하지 않고 컨트롤을 자동으로 다운로드할 수 있도록 서명 되어 있는지 확인 합니다. 코드 서명 하는 방법에 대 한 내용은 Authenticode ActiveX SDK에 대 한 설명서를 확인 하 고 참조 [CAB 파일에 서명](http://msdn.microsoft.com/04d8b47a-8f1c-4b54-ab90-730fcdc03747)합니다.  
+ 최종 코드는 신뢰 경고 메시지를 표시 하지 않고 컨트롤을 자동으로 다운로드할 수 있도록 서명 되어 있는지 확인 합니다. 코드 서명 하는 방법에 대 한 내용은 Authenticode ActiveX SDK에 대 한 설명서를 확인 하 고 참조 [CAB 파일에 서명](https://msdn.microsoft.com/04d8b47a-8f1c-4b54-ab90-730fcdc03747)합니다.  
   
  트러스트 및 브라우저 보안 수준 설정에 따라 인증서를 서명 하는 개인 또는 회사를 식별 하 표시 될 수 있습니다. 보안 수준이 none, 또는 서명 된 컨트롤의 인증서 소유자를 신뢰 하는 경우 인증서 표시 되지 않습니다. 참조 [Internet Explorer 브라우저 보안 수준 및 동작을 제어](#_core_internet_explorer_browser_safety_levels_and_control_behavior) 컨트롤이 다운로드 되는 여부 및 표시 된 인증서 브라우저 보안 설정 결정 하는 방법에 대 한 내용은 합니다.  
   

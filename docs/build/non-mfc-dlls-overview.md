@@ -15,17 +15,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 037f6d7bc80956536a7098ee67275425c41a2f68
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8acb1db66e4f6cc78ca79403aea782a936bff494
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613221"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199467"
 ---
 # <a name="non-mfc-dlls-overview"></a>비 MFC DLL: 개요
 비 MFC DLL은 MFC를 내부적으로 사용 하지 않는 DLL 및 MFC 또는 비 MFC 실행 파일에서 DLL의 내보내기 함수를 호출할 수 있습니다. 함수는 표준 C 인터페이스를 사용 하 여 비 MFC DLL에서 일반적으로 내보내집니다.  
   
- 자세한 정보에 대 한 비 MFC Dll을 참조 하세요 [동적 연결 라이브러리](http://msdn.microsoft.com/library/windows/desktop/ms682589) Windows SDK에 있습니다.  
+ 자세한 정보에 대 한 비 MFC Dll을 참조 하세요 [동적 연결 라이브러리](https://msdn.microsoft.com/library/windows/desktop/ms682589) Windows SDK에 있습니다.  
   
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.  
   

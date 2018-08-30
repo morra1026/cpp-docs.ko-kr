@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ea43fefabe43bec8a5bf9b00404491a405e5416
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: d9e90570e783b2c42081da4854d54a65d1bdb9b6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852983"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208868"
 ---
 # <a name="cmfcpropertygridfontproperty-class"></a>CMFCPropertyGridFontProperty 클래스
 `CMFCPropertyGridFileProperty` 클래스 글꼴 선택 대화 상자를 여는 속성 목록 컨트롤 항목을 지원 합니다.  
@@ -90,7 +90,7 @@ CMFCPropertyGridFontProperty(
  글꼴의 특성을 지정 하는 논리 글꼴 구조입니다.  
   
  [in] *dwFontDialogFlags*  
- 속성 값 드롭다운 단추를 클릭할 때 표시 되는 글꼴 대화 상자에 적용 되는 스타일입니다. 기본값은 CF_EFFECTS 및 CF_SCREENFONTS의 비트 조합 (OR)입니다. 자세한 내용은 참조는 *플래그* 의 매개 변수를 [CHOOSEFONT 구조](http://msdn.microsoft.com/library/windows/desktop/ms646832)합니다.  
+ 속성 값 드롭다운 단추를 클릭할 때 표시 되는 글꼴 대화 상자에 적용 되는 스타일입니다. 기본값은 CF_EFFECTS 및 CF_SCREENFONTS의 비트 조합 (OR)입니다. 자세한 내용은 참조는 *플래그* 의 매개 변수를 [CHOOSEFONT 구조](/windows/desktop/api/commdlg/ns-commdlg-tagchoosefonta)합니다.  
   
  [in] *lpszDescr*  
  Font 속성의 설명입니다. 기본값은 NULL입니다.  
@@ -104,7 +104,7 @@ CMFCPropertyGridFontProperty(
 ### <a name="remarks"></a>설명  
  `CMFCPropertyGridFontProperty` 개체 속성 표 글꼴 컨트롤의 글꼴 속성을 나타냅니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 개체를 생성 하는 방법은 `CMFCPropertyGridFontProperty` 클래스입니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_NewControls#26](../../mfc/reference/codesnippet/cpp/cmfcpropertygridfontproperty-class_1.cpp)]  
@@ -129,7 +129,7 @@ LPLOGFONT GetLogFont();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 에 대 한 포인터를 [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) 선택한 글꼴을 설명 하는 구조입니다.  
+ 에 대 한 포인터를 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 선택한 글꼴을 설명 하는 구조입니다.  
   
 ### <a name="remarks"></a>설명  
   

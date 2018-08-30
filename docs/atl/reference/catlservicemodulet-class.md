@@ -45,12 +45,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 993bef01eb5468b837cc0b8a51ae4b08f76ee398
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 04c2717aa5ec59241d470737f99ce2ed5f9df714
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881073"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219412"
 ---
 # <a name="catlservicemodulet-class"></a>CAtlServiceModuleT 클래스
 이 클래스는 서비스를 구현합니다.  
@@ -233,7 +233,7 @@ void __cdecl LogEvent(LPCTSTR pszFormat, ...) throw();
  이벤트 로그를 쓸 수 있도록 선택적 추가 문자열입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드 함수를 사용 하 여 이벤트 로그에 세부 정보를 씁니다 [ReportEvent](http://msdn.microsoft.com/library/windows/desktop/aa363679)합니다. 서비스가 실행 중인 경우 문자열 콘솔로 전송 됩니다.  
+ 이 메서드 함수를 사용 하 여 이벤트 로그에 세부 정보를 씁니다 [ReportEvent](/windows/desktop/api/winbase/nf-winbase-reporteventa)합니다. 서비스가 실행 중인 경우 문자열 콘솔로 전송 됩니다.  
   
 ##  <a name="m_bservice"></a>  CAtlServiceModuleT::m_bService  
  서비스로 실행 되 고 프로그램을 나타내는 플래그입니다.  
@@ -263,7 +263,7 @@ SERVICE_STATUS_HANDLE m_hServiceStatus;
 ```  
   
 ### <a name="remarks"></a>설명  
- 합니다 [SERVICE_STATUS](http://msdn.microsoft.com/library/windows/desktop/ms685996) 구조는 서비스에 대 한 정보가 들어 있습니다.  
+ 합니다 [SERVICE_STATUS](/windows/desktop/api/winsvc/ns-winsvc-_service_status) 구조는 서비스에 대 한 정보가 들어 있습니다.  
   
 ##  <a name="m_status"></a>  CAtlServiceModuleT::m_status  
  현재 서비스에 대 한 상태 정보 구조를 저장 하는 멤버 변수입니다.  
@@ -273,7 +273,7 @@ SERVICE_STATUS m_status;
 ```  
   
 ### <a name="remarks"></a>설명  
- 합니다 [SERVICE_STATUS](http://msdn.microsoft.com/library/windows/desktop/ms685996) 구조는 서비스에 대 한 정보가 들어 있습니다.  
+ 합니다 [SERVICE_STATUS](/windows/desktop/api/winsvc/ns-winsvc-_service_status) 구조는 서비스에 대 한 정보가 들어 있습니다.  
   
 ##  <a name="m_szservicename"></a>  CAtlServiceModuleT::m_szServiceName  
  등록할 서비스의 이름입니다.  
@@ -391,7 +391,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
   
 ### <a name="parameters"></a>매개 변수  
  *nShowCmd*  
- 창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다. 기본값은 SW_HIDE 합니다.  
+ 창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다. 기본값은 SW_HIDE 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
@@ -427,7 +427,7 @@ void SetServiceStatus(DWORD dwState) throw();
   
 ### <a name="parameters"></a>매개 변수  
  *dwState*  
- 새 상태입니다. 참조 [SetServiceStatus](http://msdn.microsoft.com/library/windows/desktop/ms686241) 가능한 값에 대 한 합니다.  
+ 새 상태입니다. 참조 [SetServiceStatus](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) 가능한 값에 대 한 합니다.  
   
 ### <a name="remarks"></a>설명  
  서비스에 대 한 서비스 제어 관리자의 상태 정보를 업데이트합니다. 에 의해 호출 됩니다 [catlservicemodulet:: Run](#run)하십시오 [catlservicemodulet:: Servicemain](#servicemain) 및 기타 처리기 메서드. 상태는 멤버 변수에 저장 된 수도 [CAtlServiceModuleT::m_status](#m_status)합니다.  
@@ -441,7 +441,7 @@ HRESULT Start(int nShowCmd) throw();
   
 ### <a name="parameters"></a>매개 변수  
  *nShowCmd*  
- 창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다.  
+ 창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
@@ -491,7 +491,7 @@ int WinMain(int nShowCmd) throw();
   
 ### <a name="parameters"></a>매개 변수  
  *nShowCmd*  
- 창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다.  
+ 창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다.  
   
 ### <a name="return-value"></a>반환 값  
  서비스의 반환 값을 반환합니다.  

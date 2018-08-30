@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a1e7abe1fbbf3667999852dd1810a8a337cac79
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 3ab0e457f90f3130295d287ae9a32d18ab212d50
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208665"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202605"
 ---
 # <a name="cfiletime-class"></a>CFileTime 클래스
 이 클래스는 파일과 연결 된 날짜 및 시간 값을 관리 하기 위한 메서드를 제공 합니다.  
@@ -107,7 +107,7 @@ class CFileTime :  public FILETIME
 |Day|시간 \* 24|  
 |주|일 \* 7|  
   
- **참고** 일부 파일 시스템 만들기를 기록할 수 및 마지막 액세스 시간 및 모든 파일 시스템에 동일한 방식으로 기록 합니다. 예제에서는 Windows NT FAT 파일 시스템 만들기에 대 한 10 밀리초 해상도 포함 하는 시간, 쓰기 시간 2 초의 해상도 가진 및 액세스 시간 1 일 (액세스 날짜)의 해상도 합니다. NTFS 액세스 시간에 1 시간의 확인을 기능이 있습니다. 또한 FAT 현지 시간으로 디스크에 대 한 번이 기록 되지만 NTFS utc에서 시간 디스크에 기록 합니다. 자세한 내용은 [파일을 시간](http://msdn.microsoft.com/library/windows/desktop/ms724290)합니다.  
+ **참고** 일부 파일 시스템 만들기를 기록할 수 및 마지막 액세스 시간 및 모든 파일 시스템에 동일한 방식으로 기록 합니다. 예제에서는 Windows NT FAT 파일 시스템 만들기에 대 한 10 밀리초 해상도 포함 하는 시간, 쓰기 시간 2 초의 해상도 가진 및 액세스 시간 1 일 (액세스 날짜)의 해상도 합니다. NTFS 액세스 시간에 1 시간의 확인을 기능이 있습니다. 또한 FAT 현지 시간으로 디스크에 대 한 번이 기록 되지만 NTFS utc에서 시간 디스크에 기록 합니다. 자세한 내용은 [파일을 시간](/windows/desktop/SysInfo/file-times)합니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  `FILETIME`  
@@ -128,7 +128,7 @@ CFileTime(ULONGLONG nTime) throw();
   
 ### <a name="parameters"></a>매개 변수  
  *ft*  
- A [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) 구조입니다.  
+ A [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) 구조입니다.  
   
  *않았습니다*  
  날짜 및 64 비트 값으로 표현 된 시간입니다.  
@@ -143,7 +143,7 @@ CFileTime(ULONGLONG nTime) throw();
 static const ULONGLONG Day = Hour* 24;
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CFileTime::Millisecond](#millisecond)합니다.  
   
 ##  <a name="getcurrenttime"></a>  CFileTime::GetCurrentTime  
@@ -156,7 +156,7 @@ static CFileTime GetCurrentTime() throw();
 ### <a name="return-value"></a>반환 값  
  현재 시스템 날짜 및 시간을 utc (협정 세계시) 형식으로 반환합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#41](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_1.cpp)]  
   
 ##  <a name="gettime"></a>  CFileTime::GetTime  
@@ -176,7 +176,7 @@ ULONGLONG GetTime() const throw();
 static const ULONGLONG Hour = Minute* 60;
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CFileTime::Millisecond](#millisecond)합니다.  
   
 ##  <a name="localtoutc"></a>  CFileTime::LocalToUTC  
@@ -189,7 +189,7 @@ CFileTime LocalToUTC() const throw();
 ### <a name="return-value"></a>반환 값  
  반환 된 `CFileTime` UTC 형식의 시간을 포함 하는 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CFileTime::UTCToLocal](#utctolocal)합니다.  
   
 ##  <a name="millisecond"></a>  CFileTime::Millisecond  
@@ -199,7 +199,7 @@ CFileTime LocalToUTC() const throw();
 static const ULONGLONG Millisecond = 10000;
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#44](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_2.cpp)]  
   
 ##  <a name="minute"></a>  CFileTime::Minute  
@@ -209,7 +209,7 @@ static const ULONGLONG Millisecond = 10000;
 static const ULONGLONG Minute = Second* 60;
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CFileTime::Millisecond](#millisecond)합니다.  
   
 ##  <a name="operator_-"></a>  CFileTime::operator-  
@@ -286,7 +286,7 @@ bool operator<(CFileTime ft) const throw();
 ### <a name="return-value"></a>반환 값  
  첫 번째 개체 미만인 경우 (이전 시간)의 두 번째 FALSE 그렇지 않은 경우 TRUE를 반환 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#43](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_3.cpp)]  
   
 ##  <a name="operator_lt_eq"></a>  CFileTime::operator &lt;=  
@@ -380,7 +380,7 @@ bool operator>=(CFileTime ft) const throw();
 static const ULONGLONG Second = Millisecond* 1000;
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CFileTime::Millisecond](#millisecond)합니다.  
   
 ##  <a name="settime"></a>  CFileTime::SetTime  
@@ -404,7 +404,7 @@ CFileTime UTCToLocal() const throw();
 ### <a name="return-value"></a>반환 값  
  반환 된 `CFileTime` 로컬 파일 시간 형식의 시간을 포함 하는 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#42](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_4.cpp)]  
   
 ##  <a name="week"></a>  CFileTime::Week  
@@ -414,11 +414,11 @@ CFileTime UTCToLocal() const throw();
 static const ULONGLONG Week = Day* 7;
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CFileTime::Millisecond](#millisecond)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284)   
+ [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)   
  [CFileTimeSpan 클래스](../../atl-mfc-shared/reference/cfiletimespan-class.md)   
  [계층 구조 차트](../../mfc/hierarchy-chart.md)   
  [ATL/MFC 공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)

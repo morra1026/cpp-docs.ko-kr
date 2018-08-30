@@ -22,15 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42ee8ab5fe6e410cf812c7c147f4673803b81903
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: fe4ddaab8de2369c7cb1b31132f686bc6037676b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880192"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205527"
 ---
 # <a name="ccomclassfactory2-class"></a>CComClassFactory2 클래스
-이 클래스에서 구현 된 [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) 인터페이스입니다.  
+이 클래스에서 구현 된 [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -45,11 +45,11 @@ class CComClassFactory2 : public IClassFactory2,
  *라이선스*  
  다음 정적 함수를 구현 하는 클래스:  
   
-- **정적 BOOL VerifyLicenseKey (BSTR** `bstr` **);**  
+- `static BOOL VerifyLicenseKey( BSTR bstr );`  
   
-- **정적 BOOL GetLicenseKey (DWORD** `dwReserved` **, BSTR\***  `pBstr` **);**  
+- `static BOOL GetLicenseKey( DWORD dwReserved, BSTR * pBstr );`  
   
-- **정적 BOOL IsLicenseValid ();**  
+- `static BOOL IsLicenseValid( );`  
   
 ## <a name="members"></a>멤버  
   
@@ -64,7 +64,7 @@ class CComClassFactory2 : public IClassFactory2,
 |[CComClassFactory2::RequestLicKey](#requestlickey)|만들고 라이선스 키를 반환 합니다.|  
   
 ## <a name="remarks"></a>설명  
- `CComClassFactory2` 구현 된 [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) 인터페이스를 확장의 [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364)합니다. `IClassFactory2` 라이선스를 통해 개체 생성을 제어 합니다. 사용이 허가 된 컴퓨터에서 클래스 팩터리 실행 런타임 라이선스 키를 제공할 수 있습니다. 이 라이선스 키 개체를 인스턴스화하는 전체 컴퓨터 라이선스가 없는 경우 응용 프로그램을 수 있습니다.  
+ `CComClassFactory2` 구현 된 [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) 인터페이스를 확장의 [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)합니다. `IClassFactory2` 라이선스를 통해 개체 생성을 제어 합니다. 사용이 허가 된 컴퓨터에서 클래스 팩터리 실행 런타임 라이선스 키를 제공할 수 있습니다. 이 라이선스 키 개체를 인스턴스화하는 전체 컴퓨터 라이선스가 없는 경우 응용 프로그램을 수 있습니다.  
   
  ATL 개체에서 파생 하 여 일반적으로 클래스 팩터리를 획득 [CComCoClass](../../atl/reference/ccomcoclass-class.md)합니다. 이 클래스는 매크로 포함 [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory)를 선언 하는 [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) 기본 클래스 팩터리로 합니다. 사용 하 `CComClassFactory2`를 지정 합니다 [DECLARE_CLASSFACTORY2](aggregation-and-class-factory-macros.md#declare_classfactory2) 개체의 클래스 정의에 매크로입니다. 예를 들어:  
   
@@ -149,7 +149,7 @@ STDMETHOD(CreateInstanceLic)(
  사용 하는 라이선스 키를 가져올 수 있습니다 [RequestLicKey](#requestlickey)합니다. 허가 되지 않은 컴퓨터에서 개체를 만들기 위해 호출 해야 `CreateInstanceLic`합니다.  
   
 ##  <a name="getlicinfo"></a>  CComClassFactory2::GetLicInfo  
- 채웁니다를 [LICINFO](http://msdn.microsoft.com/library/windows/desktop/ms690590) 클래스 팩터리를 설명 하는 정보를 사용 하 여 구조 기능 라이선스의 합니다.  
+ 채웁니다를 [LICINFO](/windows/desktop/api/ocidl/ns-ocidl-taglicinfo) 클래스 팩터리를 설명 하는 정보를 사용 하 여 구조 기능 라이선스의 합니다.  
   
 ```
 STDMETHOD(GetLicInfo)(LICINFO* pLicInfo);
@@ -185,7 +185,7 @@ STDMETHOD(LockServer)(BOOL fLock);
  호출 `LockServer` 클라이언트가 여러 개체를 신속 하 게 생성할 수 있도록 클래스 팩터리를 점유 하는 데 사용 합니다.  
   
 ##  <a name="requestlickey"></a>  CComClassFactory2::RequestLicKey  
- 만들고 제공 하는 라이선스 키를 반환 합니다 `fRuntimeKeyAvail` 의 멤버는 [LICINFO](http://msdn.microsoft.com/library/windows/desktop/ms690590) 구조는 TRUE.  
+ 만들고 제공 하는 라이선스 키를 반환 합니다 `fRuntimeKeyAvail` 의 멤버는 [LICINFO](/windows/desktop/api/ocidl/ns-ocidl-taglicinfo) 구조는 TRUE.  
   
 ```
 STDMETHOD(RequestLicKey)(DWORD dwReserved, BSTR* pbstrKey);

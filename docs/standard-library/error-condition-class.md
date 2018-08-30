@@ -27,12 +27,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7305ff80c50c65e4b03a9879d39960e8c47786df
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 869eba484a5ffa4e9c57c9c65a9b74e0962114e3
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027341"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204042"
 ---
 # <a name="errorcondition-class"></a>error_condition 클래스
 
@@ -157,7 +157,7 @@ error_condition(_Enum _Errcode,
 
 첫 번째 생성자는 0 오류 코드 값 및 [generic_category](../standard-library/system-error-functions.md#generic_category)에 대한 포인터를 저장합니다.
 
-두 번째 생성자 저장소 *val* 오류 코드 값 및에 대 한 포인터 [error_category](http://msdn.microsoft.com/6fe57a15-63a1-4e79-8af4-6738e43e19c8)합니다.
+두 번째 생성자 저장소 *val* 오류 코드 값 및에 대 한 포인터 [error_category](https://msdn.microsoft.com/6fe57a15-63a1-4e79-8af4-6738e43e19c8)합니다.
 
 세 번째 생성자는 `(value_type)_Errcode`를 오류 코드 값 및 [generic_category](../standard-library/system-error-functions.md#generic_category)에 대한 포인터로 저장합니다.
 

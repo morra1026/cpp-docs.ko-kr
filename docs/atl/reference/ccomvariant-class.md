@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: edc0e098e1f3e80a80dabeda8c0a5f7a58e5e697
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 0be9c390b312cdd056c51474f202637dab16b3ff
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961144"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203898"
 ---
 # <a name="ccomvariant-class"></a>CComVariant 클래스
 이 클래스는 저장 된 데이터의 형식을 나타내는 멤버를 제공 하는 VARIANT 형식을 래핑합니다.  
@@ -401,7 +401,7 @@ HRESULT ReadFromStream(IStream* pStream);
   
 ### <a name="parameters"></a>매개 변수  
  *pStream*  
- [in] 에 대 한 포인터를 [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) 인터페이스에 데이터를 포함 하는 스트림입니다.  
+ [in] 에 대 한 포인터를 [IStream](/windows/desktop/api/objidl/nn-objidl-istream) 인터페이스에 데이터를 포함 하는 스트림입니다.  
   
 ### <a name="return-value"></a>반환 값  
  표준 HRESULT 값입니다.  
@@ -438,7 +438,7 @@ HRESULT WriteToStream(IStream* pStream);
   
 ### <a name="parameters"></a>매개 변수  
  *pStream*  
- [in] 에 대 한 포인터를 [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) 스트림에 대 한 인터페이스입니다.  
+ [in] 에 대 한 포인터를 [IStream](/windows/desktop/api/objidl/nn-objidl-istream) 스트림에 대 한 인터페이스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  표준 HRESULT 값입니다.  

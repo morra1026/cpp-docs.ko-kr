@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71cfea0f5dc62e9e7aee4ec5372464ed83bced15
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: c5a3746116679ba8cfee086b42359cce8003b282
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42545902"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198128"
 ---
 # <a name="advanced-features-mfc-application-wizard"></a>MFC 응용 프로그램 마법사, 고급 기능
 이 항목에서는 도움말, 인쇄 지원 등과 같은 응용 프로그램을 위한 추가 기능을 설정할 수 있는 옵션에 대해 설명합니다. 각 섹션에서 이 고급 기능에 추가 지원을 지정하세요.  
@@ -47,17 +47,17 @@ ms.locfileid: "42545902"
  TCP/IP 네트워크를 통해 통신하는 응용 프로그램을 작성할 때 사용할 수 있는 Windows 소켓을 지원합니다.  
   
  **Active Accessibility**  
- 에 대 한 지원이 추가 되었습니다 [IAccessible](http://msdn.microsoft.com/library/windows/desktop/dd318466) 하 [CWnd](../../mfc/reference/cwnd-class.md)-액세스 가능 클라이언트를 사용 하 여 더 나은 상호 작용에 대 한 사용자 인터페이스 사용자 지정 하는 데 사용할 수 있는 클래스를 파생 합니다.  
+ 에 대 한 지원이 추가 되었습니다 [IAccessible](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) 하 [CWnd](../../mfc/reference/cwnd-class.md)-액세스 가능 클라이언트를 사용 하 여 더 나은 상호 작용에 대 한 사용자 인터페이스 사용자 지정 하는 데 사용할 수 있는 클래스를 파생 합니다.  
   
  **공용 컨트롤 매니페스트**  
  기본적으로 활성화되어 있습니다. Microsoft Windows XP 및 새 운영 체제에 포함된 공용 컨트롤 DLL을 사용할 수 있도록 하는 응용 프로그램 매니페스트를 생성합니다.  
   
  공용 컨트롤 DLL의 버전 6에서는 기존 응용 프로그램에서 사용하는 이전 버전의 공용 컨트롤을 자동으로 업데이트하지 않습니다. 공용 컨트롤 DLL의 버전 6을 사용하려면 응용 프로그램에서 해당 DLL을 로드하도록 지시하는 응용 프로그램 매니페스트를 만들어야 합니다. 이 공용 컨트롤 DLL에서는 Windows XP 테마도 지원합니다.  
   
- 응용 프로그램 매니페스트에서는 응용 프로그램에 필요한 다른 DLL 및 버전도 지정할 수 있습니다. 응용 프로그램 매니페스트에 대 한 자세한 내용은 참조 하세요. [격리 된 응용 프로그램 및 Side-by-side-어셈블리](http://msdn.microsoft.com/library/dd408052) Windows SDK에 있습니다.  
+ 응용 프로그램 매니페스트에서는 응용 프로그램에 필요한 다른 DLL 및 버전도 지정할 수 있습니다. 응용 프로그램 매니페스트에 대 한 자세한 내용은 참조 하세요. [격리 된 응용 프로그램 및 Side-by-side-어셈블리](/windows/desktop/SbsCs/isolated-applications-and-side-by-side-assemblies-portal) Windows SDK에 있습니다.  
   
  **다시 시작 관리자 지원**  
- 에 대 한 지원을 추가 합니다 [Windows 다시 시작 관리자](/windows/desktop/RstMgr/using-restart-manager)합니다. 이 비디오에서는 MFC에서 다시 시작 관리자를 사용 하는 방법을 보여 줍니다. [i: 새로운 다시 시작 관리자 사용](http://msdn.microsoft.com/vstudio/ee886407)합니다.  
+ 에 대 한 지원을 추가 합니다 [Windows 다시 시작 관리자](/windows/desktop/RstMgr/using-restart-manager)합니다. 이 비디오에서는 MFC에서 다시 시작 관리자를 사용 하는 방법을 보여 줍니다. [i: 새로운 다시 시작 관리자 사용](https://msdn.microsoft.com/vstudio/ee886407)합니다.  
   
  **고급 프레임 창**  
  |옵션|설명|  

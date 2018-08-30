@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c12b23c2250f2b0d26b053410c864c8cf435469
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 9132df889f057696a08afe9a1ca6ad2277c46f10
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852876"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211054"
 ---
 # <a name="cmfctoolbarscustomizedialog-class"></a>CMFCToolBarsCustomizeDialog 클래스
 모덜리스 탭 대화 상자 ( [CPropertySheet 클래스](../../mfc/reference/cpropertysheet-class.md)) 사용자 도구 모음, 메뉴, 바로 가기 키, 사용자 정의 도구 및 응용 프로그램에서 비주얼 스타일을 지정할 수 있도록 합니다. 일반적으로 사용자가 **도구** 메뉴에서 **사용자 지정** 을 선택하여 이 대화 상자에 액세스합니다.  
@@ -102,7 +102,7 @@ class CMFCToolBarsCustomizeDialog : public CPropertySheet
   
  하지만 합니다 **사용자 지정** 대화 상자가 활성화 되어, 응용 프로그램이 사용자 지정 작업에 사용자를 제한 하는 특수 모드에서 작동 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `CMFCToolBarsCustomizeDialog` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 명령의 목록 상자에서 도구 모음 단추를 교체 하는 방법을 보여는 **명령** 페이지에서 사용 하 여 새 도구 모음을 만들 수 있도록 합니다 **사용자 지정** 대화 상자 및 표시를  **사용자 지정** 대화 상자. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_IEDemo#4](../../mfc/reference/codesnippet/cpp/cmfctoolbarscustomizedialog-class_1.cpp)]  
@@ -158,7 +158,7 @@ void AddButton(
   
  경우 `iInsertBefore` 가-1 이면 단추 범주 목록에 추가 됩니다; 그렇지 않으면 지정된 된 인덱스를 가진 항목 앞 삽입 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `AddButton` 메서드는 `CMFCToolBarsCustomizeDialog` 클래스입니다. 이 코드 조각은의 일부인 합니다 [슬라이더 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_Slider#1](../../mfc/reference/codesnippet/cpp/cmfctoolbarscustomizedialog-class_2.cpp)]  
@@ -235,7 +235,7 @@ BOOL AddToolBar(
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `AddToolBar` 의 메서드는 `CMFCToolBarsCustomizeDialog` 클래스입니다. 이 코드 조각은 [워드 패드 샘플](../../visual-cpp-samples.md)의 일부입니다.  
   
  [!code-cpp[NVC_MFC_WordPad#11](../../mfc/reference/codesnippet/cpp/cmfctoolbarscustomizedialog-class_3.cpp)]  
@@ -307,7 +307,7 @@ CMFCToolBarsCustomizeDialog(
   
  에 전달할 수 있는 값에 대 한 자세한 내용은 합니다 *uiFlags* 매개 변수를 참조 하세요 [CMFCToolBarsCustomizeDialog::GetFlags](#getflags)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는의 개체를 생성 하는 방법에 설명 합니다 `CMFCToolBarsCustomizeDialog` 클래스입니다. 이 코드 조각은의 일부인 합니다 [사용자 지정 페이지 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_CustomPages#3](../../mfc/reference/codesnippet/cpp/cmfctoolbarscustomizedialog-class_4.cpp)]  
@@ -507,7 +507,7 @@ virtual BOOL OnAssignKey(ACCEL* pAccel);
   
 ### <a name="parameters"></a>매개 변수  
  [out에서] *pAccel*  
- 로 표현 되는 제안 된 키보드 할당에 대 한 포인터를 [가속](http://msdn.microsoft.com/library/windows/desktop/ms646340) 구조체입니다.  
+ 로 표현 되는 제안 된 키보드 할당에 대 한 포인터를 [가속](/windows/desktop/api/winuser/ns-winuser-tagaccel) 구조체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 키를 할당할 수 없을 경우 키를 다시 할당 또는 FALSE를 수 있습니다. 기본 구현에서는 항상 TRUE를 반환합니다.  
@@ -660,7 +660,7 @@ void ReplaceButton(
 ### <a name="remarks"></a>설명  
  때 [CMFCToolBarsCustomizeDialog::AddMenu](#addmenu)하십시오 [CMFCToolBarsCustomizeDialog::AddMenuCommands](#addmenucommands), 또는 [CMFCToolBarsCustomizeDialog::AddToolBar](#addtoolbar) 추가 명령 합니다 **명령** 페이지의 형태로 명령 인지를 [CMFCToolBarButton 클래스](../../mfc/reference/cmfctoolbarbutton-class.md) 개체 (또는 [CMFCToolBarMenuButton 클래스](../../mfc/reference/cmfctoolbarmenubutton-class.md) 메뉴에 대 한 개체 항목으로 추가 하는 하위 메뉴가 있는 `AddMenuCommands`). 또한 프레임 워크 명령을 자동으로 추가 하려면 이러한 세 가지 메서드를 호출 합니다. 대신에 파생된 형식으로 표시 하는 명령을 호출 `ReplaceButton` 파생 형식의 단추에 전달 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `ReplaceButton` 의 메서드는 `CMFCToolBarsCustomizeDialog` 클래스입니다. 이 코드 조각은의 일부인 합니다 [Visual Studio 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#34](../../mfc/codesnippet/cpp/cmfctoolbarscustomizedialog-class_5.cpp)]  

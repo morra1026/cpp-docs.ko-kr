@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 892bf76a8480e573a71e768fbe24778e7e66f88b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c3b0198971064bec114e4665a499e070ddb61501
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291494"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197500"
 ---
 # <a name="compiler-warning-level-3-c4191"></a>컴파일러 경고(수준 3) C4191
 'operator/operation': '식 형식'에서 '필요한 형식'으로의 변환이 안전하지 않습니다.  
@@ -36,7 +36,7 @@ ms.locfileid: "33291494"
   
 -   다양한 인수 목록 길이( `__cdecl`에서 짧은 목록이 varargs인 경우에도 긴 목록에서 짧은 목록으로 캐스트할 때만)  
   
--   데이터에 대 한 포인터 (이외의 **void\***) 함수에 대 한 포인터에 대 한 별칭을 지정 합니다.  
+-   데이터에 대 한 포인터 (이외의 **void**<strong>\*</strong>) 함수에 대 한 포인터에 대 한 별칭을 지정 합니다.  
   
 -   `reinterpret_cast`에 오류 또는 경고를 생성하는 다른 형식 차이  
   

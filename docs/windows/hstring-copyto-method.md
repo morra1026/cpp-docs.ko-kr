@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4e2a4ce5a2952a990ee3a2d934d6207656a57376
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: da0e8e241aeb3f0eb5096d64cd63425ca2102fb0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592136"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211173"
 ---
 # <a name="hstringcopyto-method"></a>HString::CopyTo 메서드
 
@@ -39,7 +39,7 @@ HRESULT CopyTo(
 
 ## <a name="remarks"></a>설명
 
-이 메서드를 호출 합니다 [WindowsDuplicateString](http://msdn.microsoft.com/library/br224634.aspx) 함수입니다.
+이 메서드를 호출 합니다 [WindowsDuplicateString](https://msdn.microsoft.com/library/br224634.aspx) 함수입니다.
 
 ## <a name="requirements"></a>요구 사항
 

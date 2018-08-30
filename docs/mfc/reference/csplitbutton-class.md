@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7fd35c351639d4b7b5f3b9dbbbce1c5e7cbcb79
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 38a624aacc302812865a785c537eb906a0489379
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42538746"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207643"
 ---
 # <a name="csplitbutton-class"></a>CSplitButton 클래스
 `CSplitButton` 클래스는 분할 단추 컨트롤을 나타냅니다. 분할 단추 컨트롤은 사용자가 단추의 주요 부분을 클릭할 때 기본 동작을 수행하고 사용자가 단추의 드롭다운 화살표를 클릭하면 드롭다운 메뉴를 표시합니다.  
@@ -62,7 +62,7 @@ class CSplitButton : public CButton
 |[CSplitButton::OnDropDown](#ondropdown)|현재 분할 단추 컨트롤의 드롭다운 화살표를 클릭할 때 시스템에서 보내는 BCN_DROPDOWN 알림을 처리 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 합니다 `CSplitButton` 에서 파생 된 클래스를 [CButton](../../mfc/reference/cbutton-class.md) 클래스입니다. 분할 단추 컨트롤은 BS_SPLITBUTTON 스타일 단추 컨트롤입니다. 드롭다운 화살표를 클릭할 때 사용자 지정 메뉴를 표시 합니다. 자세한 내용은 BS_DEFSPLITBUTTON 및 BS_SPLITBUTTON 스타일을 참조 하세요 [단추 스타일](http://msdn.microsoft.com/library/windows/desktop/bb775951)합니다.  
+ 합니다 `CSplitButton` 에서 파생 된 클래스를 [CButton](../../mfc/reference/cbutton-class.md) 클래스입니다. 분할 단추 컨트롤은 BS_SPLITBUTTON 스타일 단추 컨트롤입니다. 드롭다운 화살표를 클릭할 때 사용자 지정 메뉴를 표시 합니다. 자세한 내용은 BS_DEFSPLITBUTTON 및 BS_SPLITBUTTON 스타일을 참조 하세요 [단추 스타일](/windows/desktop/Controls/button-styles)합니다.  
   
  다음 그림에서는 pager 컨트롤 및 (1) 분할 단추 컨트롤을 포함 하는 대화 상자를 보여 줍니다. (2)에서 드롭다운 화살표를 클릭 했는지 이미 및 (3) 하위 메뉴가 표시 됩니다.  
   
@@ -102,7 +102,7 @@ virtual BOOL Create(
 |매개 변수|설명|  
 |---------------|-----------------|  
 |[in] *dwStyle*|컨트롤에 적용 될 스타일의 비트 조합 (OR)입니다. 자세한 내용은 [단추 스타일](../../mfc/reference/styles-used-by-mfc.md#button-styles)합니다.|  
-|[in] *rect*|에 대 한 참조를 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 컨트롤의 크기와 위치를 포함 하는 구조입니다.|  
+|[in] *rect*|에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 컨트롤의 크기와 위치를 포함 하는 구조입니다.|  
 |[in] *pParentWnd*|에 대 한 null이 아닌 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 컨트롤의 부모 창입니다.|  
 |[in] *nID*|컨트롤의 ID입니다.|  
   
@@ -146,8 +146,8 @@ afx_msg void OnDropDown(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *pNMHDR*|에 대 한 포인터를 [NMHDR](http://msdn.microsoft.com/library/windows/desktop/bb775514) 구조에 대 한 정보를 포함 하는 [BCN_DROPDOWN](http://msdn.microsoft.com/library/windows/desktop/bb775983) 알림.|  
-|[out] *pResult*|(사용 되지 않습니다; 아무 값도 반환)입니다. 값을 반환 합니다 [BCN_DROPDOWN](http://msdn.microsoft.com/library/windows/desktop/bb775983) 알림.|  
+|[in] *pNMHDR*|에 대 한 포인터를 [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) 구조에 대 한 정보를 포함 하는 [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) 알림.|  
+|[out] *pResult*|(사용 되지 않습니다; 아무 값도 반환)입니다. 값을 반환 합니다 [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) 알림.|  
   
 ### <a name="remarks"></a>설명  
  시스템 보냅니다 BCN_DROPDOWN 알림 사용자가 분할 단추 컨트롤에 있는 드롭다운 화살표를 클릭 하는 메시지를 `OnDropDown` 메서드 핸들입니다. 그러나는 `CSplitButton` 개체 BCN_DROPDOWN 알림 분할 단추 컨트롤을 포함 하는 컨트롤을 전달 하지 않습니다. 따라서 포함 하는 컨트롤 알림에 대 한 응답으로 사용자 지정 작업을 지원할 수 없습니다.  
@@ -189,7 +189,7 @@ void SetDropDownMenu(CMenu* pMenu);
   
  ![Splitbutton 및 pager 컨트롤이 있는 대화 상자. ](../../mfc/reference/media/splitbutton_pager.png "splitbutton_pager")  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서 첫 번째 문과 합니다 [CSplitButton::SetDropDownMenu](#setdropdownmenu) 메서드. 메뉴 모음 ID IDR_MENU1 이름이 자동으로 지정 하는 편집기에서 메뉴는 Visual Studio 리소스를 사용 하 여 만든. 합니다 *nSubMenuId* 매개 변수인 0만 하위 메뉴의 메뉴 모음을 가리킵니다.  
   
  [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/csplitbutton-class_1.cpp)]  

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fdc9e12a72758129f19ccd515c705df76bfe47ad
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9f376c2294dde0cc2fe538d3896aa28a9d136627
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42594603"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221045"
 ---
 # <a name="odl"></a>odl
 
@@ -36,9 +36,9 @@ ms.locfileid: "42594603"
 
 ## <a name="remarks"></a>설명
 
-합니다 **odl** c + + 특성에 동일한 기능을 합니다 [odl](http://msdn.microsoft.com/library/windows/desktop/aa367126) MIDL 특성입니다.
+합니다 **odl** c + + 특성에 동일한 기능을 합니다 [odl](/windows/desktop/Midl/odl) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // cpp_attr_ref_odl.cpp

@@ -188,12 +188,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97548fca6b47e8d765eb7744a86ab0d4cfa27b17
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 50bb4061a13a9057a695b25ca32421c4dd7ed88b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337486"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207826"
 ---
 # <a name="cframewndex-class"></a>CFrameWndEx 클래스
 겹쳐진 Windows SDI(단일 문서 인터페이스) 또는 팝업 프레임 창의 기능을 구현하고 창 관리를 위한 멤버를 제공합니다. 확장 된 [CFrameWnd](../../mfc/reference/cframewnd-class.md) 클래스입니다.  
@@ -250,7 +250,7 @@ class CFrameWndEx : public CFrameWnd
 |[CFrameWndEx::OnCreate](#oncreate)|프레임이 생성 된 후에 프레임 워크에서 호출 됩니다.|  
 |[CFrameWndEx::OnDestroy](#ondestroy)|프레임 소멸 될 때 프레임 워크에서 호출 됩니다.|  
 |[CFrameWndEx::OnDrawMenuImage](#ondrawmenuimage)|응용 프로그램 메뉴 항목과 연결 된 이미지를 그릴 때 프레임 워크에서 호출 됩니다.|  
-|[CFrameWndEx::OnDrawMenuLogo](#ondrawmenulogo)|프레임 워크에서 호출 하면를 `CMFCPopupMenu` 프로세스 개체를 [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) 메시지입니다.|  
+|[CFrameWndEx::OnDrawMenuLogo](#ondrawmenulogo)|프레임 워크에서 호출 하면를 `CMFCPopupMenu` 프로세스 개체를 [WM_PAINT](/windows/desktop/gdi/wm-paint) 메시지입니다.|  
 |[CFrameWndEx::OnDWMCompositionChanged](#ondwmcompositionchanged)|데스크톱 창 관리자 (DWM) 컴퍼지션을 사용 하거나 사용 하지 않도록 설정 하는 경우 프레임 워크에서 호출 됩니다.|  
 |[CFrameWndEx::OnExitSizeMove](#onexitsizemove)|프레임을 이동 하거나 크기 조정 중지 될 때 프레임 워크에서 호출 됩니다.|  
 |[CFrameWndEx::OnGetMinMaxInfo](#ongetminmaxinfo)|프레임 창 차원 제한을 설정 하는 크기가 조정 되 면 프레임 워크에서 호출 됩니다.|  
@@ -298,7 +298,7 @@ class CFrameWndEx : public CFrameWnd
 |[CFrameWndEx::UpdateCaption](#updatecaption)|창 프레임 캡션을 업데이트 하기 위해 프레임 워크에서 호출 됩니다.|  
 |[CFrameWndEx::WinHelp](#winhelp)|중 하나를 호출 하 여 `WinHelp` 응용 프로그램이 나 컨텍스트 관련 도움말.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 클래스에서 상속 하는 방법에 설명 합니다 `CFrameWndEx` 클래스입니다. 예제는 서브 클래스에서 메서드 시그니처 및 재정의 하는 방법에는 `OnShowPopupMenu` 메서드. 이 코드 조각은 [워드 패드 샘플](../../visual-cpp-samples.md)의 일부입니다.  
   
  [!code-cpp[NVC_MFC_WordPad#3](../../mfc/reference/codesnippet/cpp/cframewndex-class_1.h)]  
@@ -358,7 +358,7 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
  여러 windows의 위치를 포함 하는 구조체에 대 한 핸들입니다. .  
   
 ### <a name="remarks"></a>설명  
- Hdwp 구조에서 초기화 되는 [BeginDeferWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms632672) 메서드.  
+ Hdwp 구조에서 초기화 되는 [BeginDeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632672) 메서드.  
   
 ##  <a name="delayupdateframemenu"></a>  CFrameWndEx::DelayUpdateFrameMenu  
  프레임 메뉴를 설정 하 고 명령 처리 유휴 상태일 때 업데이트 됩니다.  
@@ -1093,7 +1093,7 @@ afx_msg void OnGetMinMaxInfo(MINMAXINFO FAR* lpMMI);
   
 ### <a name="parameters"></a>매개 변수  
  [in] *lpMMI*  
- 에 대 한 포인터를 [MINMAXINFO](http://msdn.microsoft.com/library/windows/desktop/ms632605) 구조입니다.  
+ 에 대 한 포인터를 [MINMAXINFO](https://msdn.microsoft.com/library/windows/desktop/ms632605) 구조입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1129,7 +1129,7 @@ afx_msg void OnLButtonDown(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *nFlags*  
- 사용자 보조키를 눌렀는지 여부를 나타냅니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_LBUTTONDOWN 알림](http://msdn.microsoft.com/library/windows/desktop/ms645607)합니다.  
+ 사용자 보조키를 눌렀는지 여부를 나타냅니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_LBUTTONDOWN 알림](/windows/desktop/inputdev/wm-lbuttondown)합니다.  
   
  [in] *지점*  
  창의 왼쪽 위 모퉁이에 상대적인 x를 포인터의 y 좌표를 지정합니다.  
@@ -1147,7 +1147,7 @@ afx_msg void OnLButtonUp(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *nFlags*  
- 사용자 보조키를 눌렀는지 여부를 나타냅니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_LBUTTONUP 알림](http://msdn.microsoft.com/library/windows/desktop/ms645608)합니다.  
+ 사용자 보조키를 눌렀는지 여부를 나타냅니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_LBUTTONUP 알림](/windows/desktop/inputdev/wm-lbuttonup)합니다.  
   
  [in] *지점*  
  창의 왼쪽 위 모퉁이에 상대적인 x를 포인터의 y 좌표를 지정합니다.  
@@ -1221,7 +1221,7 @@ afx_msg void OnMouseMove(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *nFlags*  
- 사용자 보조키를 눌렀는지 여부를 나타냅니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_MOUSEMOVE 알림](http://msdn.microsoft.com/library/windows/desktop/ms645616)합니다.  
+ 사용자 보조키를 눌렀는지 여부를 나타냅니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_MOUSEMOVE 알림](/windows/desktop/inputdev/wm-mousemove)합니다.  
   
  [in] *지점*  
  X 및 y를 지정 된 창의 왼쪽 위 모퉁이 기준으로 포인터의 좌표입니다.  
@@ -1290,7 +1290,7 @@ afx_msg LRESULT OnNcHitTest(CPoint point);
  화면 좌표에서 포인터의 위치입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 포인터 적중 열거 값입니다. 가능한 값 목록을 참조 하세요 [WM_NCHITTEST 알림을](http://msdn.microsoft.com/library/windows/desktop/ms645618)합니다.  
+ 포인터 적중 열거 값입니다. 가능한 값 목록을 참조 하세요 [WM_NCHITTEST 알림을](/windows/desktop/inputdev/wm-nchittest)합니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1305,7 +1305,7 @@ afx_msg void OnNcMouseMove(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *nHitTest*  
- 포인터 적중 열거 값입니다. 가능한 값 목록을 참조 하세요 [WM_NCHITTEST 알림을](http://msdn.microsoft.com/library/windows/desktop/ms645618)합니다.  
+ 포인터 적중 열거 값입니다. 가능한 값 목록을 참조 하세요 [WM_NCHITTEST 알림을](/windows/desktop/inputdev/wm-nchittest)합니다.  
   
  [in] *지점*  
  화면 좌표에서 포인터의 위치입니다.  
@@ -1369,7 +1369,7 @@ afx_msg LRESULT OnPowerBroadcast(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *wp*  
- 전원 관리 이벤트입니다. 가능한 값 목록을 참조 하세요 [WM_POWERBROADCAST 메시지](http://msdn.microsoft.com/library/windows/desktop/aa373247)합니다.  
+ 전원 관리 이벤트입니다. 가능한 값 목록을 참조 하세요 [WM_POWERBROADCAST 메시지](/windows/desktop/Power/wm-powerbroadcast)합니다.  
   
  [in] *lp*  
  이 매개 변수는 사용되지 않습니다.  
@@ -1442,7 +1442,7 @@ afx_msg LRESULT OnSetText(
  창에 대 한 텍스트에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 에 대 한 호출에서 값 반환 [DefWindowProc](http://msdn.microsoft.com/library/windows/desktop/ms633572)합니다.  
+ 에 대 한 호출에서 값 반환 [DefWindowProc](https://msdn.microsoft.com/library/windows/desktop/ms633572)합니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1518,7 +1518,7 @@ afx_msg void OnSize(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *n 형식*  
- 크기 조정의 형식입니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_SIZE 알림을](http://msdn.microsoft.com/library/windows/desktop/ms632646)합니다.  
+ 크기 조정의 형식입니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_SIZE 알림을](/windows/desktop/winmsg/wm-size)합니다.  
   
  [in] *cx*  
  픽셀에서 프레임의 새 너비입니다.  
@@ -1539,7 +1539,7 @@ afx_msg void OnSizing(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *fwSide*  
- 이동 되는 프레임의 가장자리입니다. 매개 변수를 참조 하세요 *wParam* 에 [WM_SIZING 알림](http://msdn.microsoft.com/library/windows/desktop/ms632647)합니다.  
+ 이동 되는 프레임의 가장자리입니다. 매개 변수를 참조 하세요 *wParam* 에 [WM_SIZING 알림](/windows/desktop/winmsg/wm-sizing)합니다.  
   
  [out에서] *pRect*  
  에 대 한 포인터를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 하거나 [RECT](../../mfc/reference/rect-structure1.md) 프레임의 좌표를 포함 하는 구조입니다.  
@@ -1896,10 +1896,10 @@ virtual void WinHelp(
   
 ### <a name="parameters"></a>매개 변수  
  *dwData*  
- 종속 된 데이터를 *nCmd* 매개 변수입니다. 가능한 값 목록을 참조 하세요 [WinHelp](http://msdn.microsoft.com/library/windows/desktop/bb762267)합니다.  
+ 종속 된 데이터를 *nCmd* 매개 변수입니다. 가능한 값 목록을 참조 하세요 [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa)합니다.  
   
  *nCmd*  
- Help 명령입니다. 가능한 값 목록을 참조 하세요 [WinHelp](http://msdn.microsoft.com/library/windows/desktop/bb762267)합니다.  
+ Help 명령입니다. 가능한 값 목록을 참조 하세요 [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa)합니다.  
   
 ### <a name="remarks"></a>설명  
   

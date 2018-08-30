@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5c202ed5e4c7e58ab8c503cece3750f2dd606e3
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: c018b5c7ffa8e72ae9ce68fb23799d712a879df8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883107"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206678"
 ---
 # <a name="iperpropertybrowsingimpl-class"></a>IPerPropertyBrowsingImpl 클래스
 이 클래스는 구현 `IUnknown` 클라이언트 개체의 속성 페이지의 정보에 액세스할 수 있습니다.  
@@ -61,7 +61,7 @@ class ATL_NO_VTABLE IPerPropertyBrowsingImpl :
 |[IPerPropertyBrowsingImpl::MapPropertyToPage](#mappropertytopage)|지정된 된 속성을 사용 하 여 연결 속성 페이지의 CLSID를 검색 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 합니다 [IPerPropertyBrowsing](http://msdn.microsoft.com/library/windows/desktop/ms678432) 인터페이스 클라이언트가 개체의 속성 페이지의 정보에 액세스 하는 데 사용 합니다. 클래스 `IPerPropertyBrowsingImpl` 이 인터페이스의 기본 구현을 제공 하 고 구현 `IUnknown` 장치에서 디버그 덤프에 정보를 전송 하 여 작성 합니다.  
+ 합니다 [IPerPropertyBrowsing](/windows/desktop/api/ocidl/nn-ocidl-iperpropertybrowsing) 인터페이스 클라이언트가 개체의 속성 페이지의 정보에 액세스 하는 데 사용 합니다. 클래스 `IPerPropertyBrowsingImpl` 이 인터페이스의 기본 구현을 제공 하 고 구현 `IUnknown` 장치에서 디버그 덤프에 정보를 전송 하 여 작성 합니다.  
   
 > [!NOTE]
 >  클래스를 파생 되어야 합니다 Microsoft Access 컨테이너 응용 프로그램을 사용 하는 경우 `IPerPropertyBrowsingImpl`합니다. 그렇지 않으면 액세스 컨트롤을 로드 하지 않습니다.  
@@ -86,7 +86,7 @@ STDMETHOD(GetDisplayString)(
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IPerPropertyBrowsing::GetDisplayString](http://msdn.microsoft.com/library/windows/desktop/ms688734) Windows SDK에에서 있습니다.  
+ 참조 [IPerPropertyBrowsing::GetDisplayString](/windows/desktop/api/ocidl/nf-ocidl-iperpropertybrowsing-getdisplaystring) Windows SDK에에서 있습니다.  
   
 ##  <a name="getpredefinedstrings"></a>  IPerPropertyBrowsingImpl::GetPredefinedStrings  
  0 개 항목을 사용 하 여 각 배열을 채웁니다.  
@@ -102,7 +102,7 @@ STDMETHOD(GetPredefinedStrings)(
  ATL의 구현의 [GetPredefinedValue](#getpredefinedvalue) E_NOTIMPL을 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [IPerPropertyBrowsing::GetPredefinedStrings](http://msdn.microsoft.com/library/windows/desktop/ms679724) Windows SDK에에서 있습니다.  
+ 참조 [IPerPropertyBrowsing::GetPredefinedStrings](/windows/desktop/api/ocidl/nf-ocidl-iperpropertybrowsing-getpredefinedstrings) Windows SDK에에서 있습니다.  
   
 ##  <a name="getpredefinedvalue"></a>  IPerPropertyBrowsingImpl::GetPredefinedValue  
  지정 된 DISPID로 식별 되는 속성의 값을 포함 하는 VARIANT를 검색 합니다. 검색할 문자열 이름을 연결 된 DISPID `GetPredefinedStrings`합니다.  
@@ -120,7 +120,7 @@ STDMETHOD(GetPredefinedValue)(
 ### <a name="remarks"></a>설명  
  ATL의 구현의 [GetPredefinedStrings](#getpredefinedstrings) 없습니다 해당 문자열을 검색 합니다.  
   
- 참조 [IPerPropertyBrowsing::GetPredefinedValue](http://msdn.microsoft.com/library/windows/desktop/ms690401) Windows SDK에에서 있습니다.  
+ 참조 [IPerPropertyBrowsing::GetPredefinedValue](/windows/desktop/api/ocidl/nf-ocidl-iperpropertybrowsing-getpredefinedvalue) Windows SDK에에서 있습니다.  
   
 ##  <a name="mappropertytopage"></a>  IPerPropertyBrowsingImpl::MapPropertyToPage  
  지정 된 속성과 연결 된 속성 페이지의 CLSID를 검색 합니다.  
@@ -134,7 +134,7 @@ STDMETHOD(MapPropertyToPage)(
 ### <a name="remarks"></a>설명  
  ATL 개체의 속성 맵에 사용 하 여이 정보를 가져옵니다.  
   
- 참조 [IPerPropertyBrowsing::MapPropertyToPage](http://msdn.microsoft.com/library/windows/desktop/ms694476) Windows SDK에에서 있습니다.  
+ 참조 [IPerPropertyBrowsing::MapPropertyToPage](/windows/desktop/api/ocidl/nf-ocidl-iperpropertybrowsing-mappropertytopage) Windows SDK에에서 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IPropertyPageImpl 클래스](../../atl/reference/ipropertypageimpl-class.md)   

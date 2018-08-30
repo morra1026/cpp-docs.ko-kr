@@ -44,12 +44,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca0b25f5df6d4efb70e27fea6ef2323568134b2e
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 4250a2b13740b5aa71ca10300a90560ed615f68e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964472"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200030"
 ---
 # <a name="basicistream-class"></a>basic_istream 클래스
 
@@ -137,7 +137,7 @@ setstate(state);
 
 - 형식이 지정 되지 않은 마지막 입력된 작업에 대 한 추출 횟수 (호출 `count` 이전 코드에서).
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 입력 스트림에 대한 자세한 내용은 [basic_ifstream 클래스](../standard-library/basic-ifstream-class.md)에 대한 예제를 참조하세요.
 
@@ -205,7 +205,7 @@ basic_istream(basic_istream&& right);
 
 두 번째 생성자는 `move( right)`를 호출하여 기본 개체를 초기화합니다. 이 생성자는 또한 추출 개수에 _R `ight.gcount()`를 저장하고, _R `ight`에 대한 추출 개수에 0을 저장합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 입력 스트림에 대한 자세한 내용은 [basic_ifstream::basic_ifstream](../standard-library/basic-ifstream-class.md#basic_ifstream)에 대한 예제를 참조하세요.
 
@@ -225,7 +225,7 @@ streamsize gcount() const;
 
 형식이 지정되지 않은 문자를 읽으려면 [basic_istream::get](#get)을 사용하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_istream_gcount.cpp
@@ -313,7 +313,7 @@ basic_istream<Elem, Tr>& get(basic_streambuf<Elem, Tr>& strbuf, Elem Delim);
 
 여섯 번째 함수는 요소를 추출 하 고 삽입에 `strbuf`입니다. 추출되지 않은 _ *Delim*과 비교 시 같은 요소에서 또는 파일의 끝에서 추출이 중지됩니다. 또한 삽입이 실패하거나 예외를 throw하면(catch했지만 다시 throw되지 않음) 문제의 요소를 추출하지 않고 중단합니다. 요소를 추출하지 않는 경우 함수는 `setstate`( **failbit**)를 호출합니다. 어떤 경우든 함수는 **\*this**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_istream_get.cpp
@@ -380,7 +380,7 @@ basic_istream<Elem, Tr>& getline(
 
 함수 추출 요소가 없는 경우 또는 *개수* -1 요소를 호출한 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`). 어떤 경우든 함수는 **\*this**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_istream_getline.cpp
@@ -426,7 +426,7 @@ basic_istream<Elem, Tr>& ignore(
 
 형식이 지정 되지 않은 입력된 함수 추출 *개수* 요소 무시 합니다. 그러나 하는 경우 *개수* equals **numeric_limits\<int >:: max**, 임의로 큰 수로 간주 됩니다. 요소에서 또는 파일의 끝에서 추출이 조기에 중지 `Ch` 되도록 **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `Ch`) 비교 하 여 같은 *Delim* ( 또한 추출 됩니다). 함수는 **\*this**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_istream_ignore.cpp
@@ -521,7 +521,7 @@ basic_istream& operator>>(unsigned long long& val);
 basic_istream& operator>>(void *& val);
 ```
 
-각각 필드를 추출하고 다음을 호출하여 숫자 값으로 변환합니다. `use_facet`< `num_get`\< **Elem**, **InIt**>( `getloc`). [get](#get)( **InIt**( `rdbuf`), `Init`(0), **\*this**, `getloc`, `val`). 이때 **InIt** 로 정의 됩니다 `istreambuf_iterator` \< **Elem**를 **Tr**>, 및 `val` 형식이 **긴**,**부호 없는 long**, 또는 **void \***  필요에 따라 합니다.
+각각 필드를 추출하고 다음을 호출하여 숫자 값으로 변환합니다. `use_facet`< `num_get`\< **Elem**, **InIt**>( `getloc`). [get](#get)( **InIt**( `rdbuf`), `Init`(0), **\*this**, `getloc`, `val`). 이때 **InIt** 로 정의 됩니다 `istreambuf_iterator` \< **Elem**를 **Tr**>, 및 `val` 형식이 **긴**, **부호 없는 long**, 또는 **void** <strong>\*</strong> 필요에 따라 합니다.
 
 변환 된 값의 형식으로 나타낼 수 없는 경우 `val`, 함수 호출 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`). 어떤 경우든 함수는 **\*this**를 반환합니다.
 
@@ -537,7 +537,7 @@ basic_istream& operator>>(long double& val);
 
 변환된 값을 `val`의 형식으로 나타낼 수 없는 경우 함수는 `setstate`( **failbit**)를 호출합니다. 어떤 경우든 함수는 **\*this**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // istream_basic_istream_op_is.cpp
@@ -610,7 +610,7 @@ int_type peek();
 
 형식이 지정되지 않은 입력 함수는 가능한 경우 `rdbuf` -> [sgetc](../standard-library/basic-streambuf-class.md#sgetc)를 반환하여 요소를 추출합니다. 아닌 경우 **traits_type::**[eof](../standard-library/char-traits-struct.md#eof)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_istream_peek.cpp
@@ -663,7 +663,7 @@ basic_istream<Elem, Tr>& putback(
 
 합니다 [형식이 지정 되지 않은 입력된 함수](../standard-library/basic-istream-class.md) 돌려 놓습니다 *Ch*호출 하는 것 처럼 가능한 경우 [rdbuf](../standard-library/basic-ios-class.md#rdbuf)`->`[sputbackc](../standard-library/basic-streambuf-class.md#sputbackc)합니다. Rdbuf가 null 포인터인 경우 또는 경우에 대 한 호출 `sputbackc` 반환 **traits_type::**[eof](../standard-library/char-traits-struct.md#eof), 함수 호출 [setstate](../standard-library/basic-ios-class.md#setstate)(`badbit`). 어떤 경우든 함수는 **\*this**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_istream_putback.cpp
@@ -714,7 +714,7 @@ basic_istream<Elem, Tr>& read(
 
 형식이 지정 되지 않은 입력된 함수 추출 *개수* 요소 _ 시작 되는 배열에에서 저장 합니다 `Str`합니다. 추출이 파일의 끝에 있는 경우 함수 호출에서 조기에 중지 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`). 어떤 경우든 `*this`를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_istream_read.cpp
@@ -778,7 +778,7 @@ streamsize readsome(
 
 이 함수는 입력을 기다리지 않고, 읽을 수 있는 데이터는 무엇이든 읽습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_istream_readsome.cpp
@@ -840,7 +840,7 @@ basic_istream<Elem, Tr>& seekg(off_type off, ios_base::seekdir way);
 
 [fail](../standard-library/basic-ios-class.md#fail)이 true인 경우 멤버 함수는 아무 작업도 수행하지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_istream_seekg.cpp
@@ -921,7 +921,7 @@ pos_type tellg();
 
 [fail](../standard-library/basic-ios-class.md#fail)이 false인 경우 멤버 함수는 [rdbuf](../standard-library/basic-ios-class.md#rdbuf) -> [pubseekoff](../standard-library/basic-streambuf-class.md#pubseekoff)(0, `cur`, **in**)을 반환합니다. 아닌 경우 `pos_type`(-1)을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_istream_tellg.cpp
@@ -965,7 +965,7 @@ basic_istream<Elem, Tr>& unget();
 
 `unget`이 실패할 수 있는 방법에 대한 자세한 내용은 [basic_streambuf::sungetc](../standard-library/basic-streambuf-class.md#sungetc)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_istream_unget.cpp

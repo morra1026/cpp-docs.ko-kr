@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8af155401492e97be6a9e3a80b72c8c4e7fbd9e
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 8910a1742bf50f178c75b5c78f250b8c1f103b04
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540511"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217979"
 ---
 # <a name="cmfcrebar-class"></a>CMFCReBar 클래스
 `CMFCReBar` 개체 레이아웃, 지 속성 및 rebar 컨트롤에 대 한 상태 정보를 제공 하는 컨트롤 막대입니다.  
@@ -69,7 +69,7 @@ class CMFCReBar : public CPane
 |[CMFCReBar::GetReBarCtrl](#getrebarctrl)|내부에 직접 액세스할 [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) 공용 컨트롤입니다.|  
 |[CMFCReBar::OnShowControlBarMenu](#onshowcontrolbarmenu)|(재정의 [cpane:: Onshowcontrolbarmenu](../../mfc/reference/cpane-class.md#onshowcontrolbarmenu).)|  
 |[CMFCReBar::OnToolHitTest](#ontoolhittest)|(재정의 [CWnd::OnToolHitTest](../../mfc/reference/cwnd-class.md#ontoolhittest).)|  
-|[CMFCReBar::OnUpdateCmdUI](#onupdatecmdui)|(재정의 [CBasePane::OnUpdateCmdUI](http://msdn.microsoft.com/e139f06a-9793-4ee2-bc3d-517389368c77).)|  
+|[CMFCReBar::OnUpdateCmdUI](#onupdatecmdui)|(재정의 [CBasePane::OnUpdateCmdUI](https://msdn.microsoft.com/e139f06a-9793-4ee2-bc3d-517389368c77).)|  
 |[CMFCReBar::SetPaneAlignment](#setpanealignment)|(재정의 [CBasePane::SetPaneAlignment](../../mfc/reference/cbasepane-class.md#setpanealignment).)|  
   
 ## <a name="remarks"></a>설명  
@@ -77,7 +77,7 @@ class CMFCReBar : public CPane
   
  크기 조정 막대를 도구 모음 개체 비슷하게 작동합니다. Rebar 컨트롤에는 하나 이상의 밴드를 포함할 수 있습니다 하 고 각 밴드에는 그리퍼 막대, 비트맵, 텍스트 레이블 및 자식 창이 포함 될 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `CMFCReBar` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. Rebar 컨트롤을 만들고 밴드를 추가 하는 방법을 보여 줍니다. 밴드는 내부 도구 모음으로 작동합니다. 이 코드 조각은의 일부인 합니다 [Rebar 테스트 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_RebarTest#1](../../mfc/reference/codesnippet/cpp/cmfcrebar-class_1.h)]  
@@ -120,7 +120,7 @@ BOOL AddBar(
  Rebar 백그라운드에 표시할 비트맵을 지정 합니다.  
   
  [in] *dwStyle*  
- 밴드에 적용할 스타일을 포함 합니다. 대역 외 스타일의 전체 목록은에 대 한 설명을 참조 하세요 `fStyle` 에 [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) Windows SDK 설명서의 구조입니다.  
+ 밴드에 적용할 스타일을 포함 합니다. 대역 외 스타일의 전체 목록은에 대 한 설명을 참조 하세요 `fStyle` 에 [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) Windows SDK 설명서의 구조입니다.  
   
  [in] *clrFore*  
  Rebar의 전경색을 나타냅니다.  
@@ -147,7 +147,7 @@ BOOL Create(
  이 rebar 컨트롤의 부모 창에 대 한 포인터입니다.  
   
  [in] *dwCtrlStyle*  
- Rebar 컨트롤의 스타일을 지정합니다. 기본 스타일 값은 **RBS_BANDBORDERS**는 표시 좁힐 선으로 인접 한 rebar 컨트롤 밴드를 구분 합니다. 유효한 스타일의 목록은 참조 하세요 [Rebar 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb774377) Windows SDK 설명서의 합니다.  
+ Rebar 컨트롤의 스타일을 지정합니다. 기본 스타일 값은 **RBS_BANDBORDERS**는 표시 좁힐 선으로 인접 한 rebar 컨트롤 밴드를 구분 합니다. 유효한 스타일의 목록은 참조 하세요 [Rebar 컨트롤 스타일](/windows/desktop/Controls/rebar-control-styles) Windows SDK 설명서의 합니다.  
   
  [in] *dwStyle*  
  Rebar 컨트롤의 창 스타일입니다. 유효한 스타일의 목록은 참조 하세요 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  

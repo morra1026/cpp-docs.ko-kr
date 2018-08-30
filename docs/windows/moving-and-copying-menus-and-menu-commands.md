@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cc95eef2c3cca678ae291846c2ebe0e5c1e80997
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d7933aeb5b9b12e761c684a1a9b62c4201ef4bdb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609084"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204840"
 ---
 # <a name="moving-and-copying-menus-and-menu-commands"></a>메뉴와 메뉴 명령 이동 및 복사
 
@@ -54,7 +54,7 @@ ms.locfileid: "42609084"
    > [!NOTE]
    > 다른 메뉴 창에 있는 다른 메뉴로 끌거나 복사하고 붙여 넣을 수도 있습니다.
 
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 를 참조하세요. 관리되는 프로젝트에 리소스 파일 추가, 리소스 액세스, 정적 리소스 표시, 속성에 리소스 문자열 할당 등의 작업을 수동으로 수행하는 방법에 대한 자세한 내용은 [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6)를 선택합니다.
+관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 리소스에 액세스 하는 관리 되는 프로젝트에 리소스 파일을 수동으로 추가 하는 방법은 속성에 문자열, 정적 리소스 표시 및 리소스를 할당 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 220a4fc1b97c30be28554faf68d5338b2a8e4ea8
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: c134d2e1dc6f3782446afc57b8384279a615e86f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849983"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197459"
 ---
 # <a name="cpagesetupdialog-class"></a>CPageSetupDialog 클래스
 인쇄 여백 설정과 수정이 추가로 지원되는 Windows 공용 OLE 페이지 설정 대화 상자에서 제공하는, 서비스를 캡슐화합니다.  
@@ -146,7 +146,7 @@ CPageSetupDialog(
   
 - PSD_DISABLEORIENTATION은 페이지 방향 대화 상자 컨트롤을 비활성화합니다.  
   
-- PSD_RETURNDEFAULT 발생 `CPageSetupDialog` 반환할 [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) 하 고 [DEVNAMES](../../mfc/reference/devnames-structure.md) 대화 상자를 표시 하지 않고 시스템 기본 프린터에 대 한 초기화 되는 구조입니다. 가정 하는 두 `hDevNames` 고 `hDevMode` 함수는 오류를 반환 하는 고, 그렇지 않으면 null입니다. 시스템 기본 프린터는 이전 프린터 드라이버 (이전의 Windows 버전 3.0)에서 지원 되는 경우만 `hDevNames` 를 반환 합니다. `hDevMode` NULL입니다.  
+- PSD_RETURNDEFAULT 발생 `CPageSetupDialog` 반환할 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 하 고 [DEVNAMES](../../mfc/reference/devnames-structure.md) 대화 상자를 표시 하지 않고 시스템 기본 프린터에 대 한 초기화 되는 구조입니다. 가정 하는 두 `hDevNames` 고 `hDevMode` 함수는 오류를 반환 하는 고, 그렇지 않으면 null입니다. 시스템 기본 프린터는 이전 프린터 드라이버 (이전의 Windows 버전 3.0)에서 지원 되는 경우만 `hDevNames` 를 반환 합니다. `hDevMode` NULL입니다.  
   
 - PSD_DISABLEPAPER 문서 선택 컨트롤을 비활성화 합니다.  
   
@@ -168,11 +168,11 @@ CPageSetupDialog(
 ### <a name="remarks"></a>설명  
  사용 된 [DoModal](../../mfc/reference/cdialog-class.md#domodal) 대화 상자를 표시 하는 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#94](../../mfc/codesnippet/cpp/cpagesetupdialog-class_1.cpp)]  
   
 ##  <a name="createprinterdc"></a>  CPageSetupDialog::CreatePrinterDC  
- 프린터 장치 컨텍스트를 만듭니다.는 [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) 하 고 [DEVNAMES](../../mfc/reference/devnames-structure.md) 구조입니다.  
+ 프린터 장치 컨텍스트를 만듭니다.는 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 하 고 [DEVNAMES](../../mfc/reference/devnames-structure.md) 구조입니다.  
   
 ```  
 HDC CreatePrinterDC();
@@ -189,7 +189,7 @@ virtual INT_PTR DoModal();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- IDOK 또는 idcancel이 반환 됩니다. IDCANCEL이 반환 되는 Windows를 호출 [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) 오류가 발생 했는지 여부를 결정 하는 함수입니다.  
+ IDOK 또는 idcancel이 반환 됩니다. IDCANCEL이 반환 되는 Windows를 호출 [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) 오류가 발생 했는지 여부를 결정 하는 함수입니다.  
   
  IDOK 및 IDCANCEL는 사용자 확인 또는 취소 단추를 선택 하는지 여부를 나타내는 상수입니다.  
   
@@ -202,7 +202,7 @@ virtual INT_PTR DoModal();
   
  [!code-cpp[NVC_MFCDocView#95](../../mfc/codesnippet/cpp/cpagesetupdialog-class_2.cpp)]  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog)합니다.  
   
 ##  <a name="getdevicename"></a>  CPageSetupDialog::GetDeviceName  
@@ -223,7 +223,7 @@ LPDEVMODE GetDevMode() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 합니다 [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) 장치 초기화 및 인쇄 드라이버의 환경에 대 한 정보를 포함 하는 데이터 구조입니다. 이 구조는 Windows 사용 하 여 가져온 메모리가 잠금을 해제 해야 합니다 [GlobalUnlock](http://msdn.microsoft.com/library/windows/desktop/aa366595) Windows SDK에 설명 된 함수입니다.  
+ 합니다 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 장치 초기화 및 인쇄 드라이버의 환경에 대 한 정보를 포함 하는 데이터 구조입니다. 이 구조는 Windows 사용 하 여 가져온 메모리가 잠금을 해제 해야 합니다 [GlobalUnlock](/windows/desktop/api/winbase/nf-winbase-globalunlock) Windows SDK에 설명 된 함수입니다.  
   
 ##  <a name="getdrivername"></a>  CPageSetupDialog::GetDriverName  
  호출한 후이 함수를 호출 [DoModal](../../mfc/reference/cprintdialog-class.md#domodal) 시스템 정의 프린터 장치 드라이버의 이름을 검색 합니다.  
@@ -286,7 +286,7 @@ PAGESETUPDLG m_psd;
   
  수정 하는 경우는 `m_psd` 데이터 멤버는 기본 동작을 재정의 직접.  
   
- 에 대 한 자세한 합니다 [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842) 구조체를 Windows SDK를 참조 하세요.  
+ 에 대 한 자세한 합니다 [PAGESETUPDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpsda) 구조체를 Windows SDK를 참조 하세요.  
   
  예를 참조 하세요 [CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog)합니다.  
   
@@ -346,7 +346,7 @@ virtual UINT PreDrawPage(
   
 ### <a name="parameters"></a>매개 변수  
  *wPaper*  
- 용지 크기를 나타내는 값을 지정 합니다. 이 값 중 하나일 수 있습니다 합니다 **DMPAPER_** 의 설명에 나열 된 값을 [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) 구조입니다.  
+ 용지 크기를 나타내는 값을 지정 합니다. 이 값 중 하나일 수 있습니다 합니다 **DMPAPER_** 의 설명에 나열 된 값을 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 구조입니다.  
   
  *wflags에서*  
  용지 또는 봉투의 방향을 나타냅니다 및 프린터 도트 또는 HPPCL (Hewlett Packard 프린터 컨트롤 Language) 장치를 인지 합니다. 이 매개 변수는 다음 값 중 하나를 가질 수 있습니다.  
@@ -368,7 +368,7 @@ virtual UINT PreDrawPage(
 -   0x01f 세로 모드 (도트 매트릭스) 봉투 (envelope)  
   
  *pPSD*  
- `PAGESETUPDLG` 구조체에 대한 포인터입니다. 에 대 한 자세한 [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842), Windows SDK를 참조 하세요.  
+ `PAGESETUPDLG` 구조체에 대한 포인터입니다. 에 대 한 자세한 [PAGESETUPDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpsda), Windows SDK를 참조 하세요.  
   
 ### <a name="return-value"></a>반환 값  
  처리 하는 경우 0이 아닌 값 그렇지 않으면 0입니다.  

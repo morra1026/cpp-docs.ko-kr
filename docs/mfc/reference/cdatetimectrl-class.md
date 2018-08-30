@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91f9dfd76348859513875c2dfca98d5fd11c96d2
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: bdf2134b334c259a6543af279ee058b659cf21d6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338700"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210189"
 ---
 # <a name="cdatetimectrl-class"></a>CDateTimeCtrl 클래스
 날짜 및 시간 선택 컨트롤의 기능을 캡슐화합니다.  
@@ -98,7 +98,7 @@ class CDateTimeCtrl : public CWnd
 ## <a name="remarks"></a>설명  
  날짜 및 시간 선택 컨트롤 (DTP 컨트롤)는 사용자를 사용 하 여 날짜 및 시간 정보를 교환 하기 위한 간단한 인터페이스를 제공 합니다. 이 인터페이스는 컨트롤에 저장 된 날짜 및 시간 정보 중 일부를 표시 하는 각 필드를 포함 합니다. 사용자 지정된 필드의 문자열의 내용을 변경 하 여 컨트롤에 저장 된 정보를 변경할 수 있습니다. 사용자는 마우스 또는 키보드 필드를 사용 하 여 이동할 수 있습니다.  
   
- 만들 때 개체에 다양 한 스타일을 적용 하 여 날짜 및 시간 선택 컨트롤을 사용자 지정할 수 있습니다. 참조 [날짜 및 시간 선택 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb761728) 스타일 특정 날짜 및 시간 선택 컨트롤에 대 한 자세한 내용은 Windows SDK에 있습니다. 형식 스타일을 사용 하 여 DTP 컨트롤의 표시 형식을 설정할 수 있습니다. Windows SDK 항목에서 이러한 형식 스타일 "형식 스타일" 아래에서 설명 [날짜 및 시간 선택 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb761728)합니다.  
+ 만들 때 개체에 다양 한 스타일을 적용 하 여 날짜 및 시간 선택 컨트롤을 사용자 지정할 수 있습니다. 참조 [날짜 및 시간 선택 컨트롤 스타일](/windows/desktop/Controls/date-and-time-picker-control-styles) 스타일 특정 날짜 및 시간 선택 컨트롤에 대 한 자세한 내용은 Windows SDK에 있습니다. 형식 스타일을 사용 하 여 DTP 컨트롤의 표시 형식을 설정할 수 있습니다. Windows SDK 항목에서 이러한 형식 스타일 "형식 스타일" 아래에서 설명 [날짜 및 시간 선택 컨트롤 스타일](/windows/desktop/Controls/date-and-time-picker-control-styles)합니다.  
   
  날짜 및 시간 선택 컨트롤 또한 사용 하 여 알림 및 설명 하는 콜백을 [CDateTimeCtrl 사용 하 여](../../mfc/using-cdatetimectrl.md)입니다.  
   
@@ -129,14 +129,14 @@ void CloseMonthCal() const;
 ```  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 전송 된 [DTM_CLOSEMONTHCAL](http://msdn.microsoft.com/library/windows/desktop/bb761753) Windows SDK에 설명 된 메시지입니다.  
+ 이 메서드는 전송 된 [DTM_CLOSEMONTHCAL](/windows/desktop/Controls/dtm-closemonthcal) Windows SDK에 설명 된 메시지입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서는 변수를 정의 *m_dateTimeCtrl*즉, 날짜 및 시간 선택 컨트롤을 프로그래밍 방식으로 액세스 하는 데 사용 합니다. 이 변수는 다음 예제에서 사용됩니다.  
   
  [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서는 현재 날짜 및 시간 선택 컨트롤에 대 한 드롭다운 달력을 닫습니다.  
   
  [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#5](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_2.cpp)]  
@@ -154,10 +154,10 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>매개 변수  
  *dwStyle*  
- 날짜 시간 컨트롤 스타일의 조합을 지정합니다. 참조 [날짜 및 시간 선택 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb761728) 날짜 및 시간 선택 스타일에 대 한 자세한 내용은 Windows SDK에 있습니다.  
+ 날짜 시간 컨트롤 스타일의 조합을 지정합니다. 참조 [날짜 및 시간 선택 컨트롤 스타일](/windows/desktop/Controls/date-and-time-picker-control-styles) 날짜 및 시간 선택 스타일에 대 한 자세한 내용은 Windows SDK에 있습니다.  
   
  *rect*  
- 에 대 한 참조를 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 구조는 위치와 날짜 및 시간 선택 컨트롤의 크기입니다.  
+ 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조는 위치와 날짜 및 시간 선택 컨트롤의 크기입니다.  
   
  *pParentWnd*  
  에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체의 날짜 및 시간 선택 컨트롤의 부모 창입니다. NULL이 아니어야 합니다.  
@@ -178,7 +178,7 @@ virtual BOOL Create(
   
  호출 하는 경우 `Create`, 공용 컨트롤 초기화 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CDateTimeCtrl#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_3.cpp)]  
   
 ##  <a name="getdatetimepickerinfo"></a>  CDateTimeCtrl::GetDateTimePickerInfo  
@@ -192,20 +192,20 @@ BOOL GetDateTimePickerInfo(LPDATETIMEPICKERINFO pDateTimePickerInfo) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out] *pDateTimePickerInfo*|에 대 한 포인터를 [DATETIMEPICKERINFO](http://msdn.microsoft.com/library/windows/desktop/bb761729) 구조체의 현재 날짜 및 시간 선택 컨트롤의 설명입니다.<br /><br /> 호출자는이 구조를 할당 하는 일을 담당 합니다. 그러나이 메서드를 초기화 합니다 *cbSize* 구조체의 멤버입니다.|  
+|[out] *pDateTimePickerInfo*|에 대 한 포인터를 [DATETIMEPICKERINFO](/windows/desktop/api/commctrl/ns-commctrl-tagdatetimepickerinfo) 구조체의 현재 날짜 및 시간 선택 컨트롤의 설명입니다.<br /><br /> 호출자는이 구조를 할당 하는 일을 담당 합니다. 그러나이 메서드를 초기화 합니다 *cbSize* 구조체의 멤버입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 전송 된 [DTM_GETDATETIMEPICKERINFO](http://msdn.microsoft.com/library/windows/desktop/bb761755) Windows SDK에 설명 된 메시지입니다.  
+ 이 메서드는 전송 된 [DTM_GETDATETIMEPICKERINFO](/windows/desktop/Controls/dtm-getdatetimepickerinfo) Windows SDK에 설명 된 메시지입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서는 변수를 정의 *m_dateTimeCtrl*즉, 날짜 및 시간 선택 컨트롤을 프로그래밍 방식으로 액세스 하는 데 사용 합니다. 이 변수는 다음 예제에서 사용됩니다.  
   
  [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서는 현재 날짜 및 시간 선택 컨트롤에 대 한 정보 성공적으로 검색 하는지 여부를 나타냅니다.  
   
  [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#4](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_4.cpp)]  
@@ -225,9 +225,9 @@ COLORREF GetMonthCalColor(int iColor) const;
  성공할 경우 달력 컨트롤의 지정된 된 부분에 대 한 색 설정을 나타내는 COLORREF 값입니다. 실패 한 경우-1이 반환 됩니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [DTM_GETMCCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb761759)Windows SDK에 설명 된 대로 합니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [DTM_GETMCCOLOR](/windows/desktop/Controls/dtm-getmccolor)Windows SDK에 설명 된 대로 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CDateTimeCtrl#2](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_5.cpp)]  
   
 ##  <a name="getmonthcalctrl"></a>  CDateTimeCtrl::GetMonthCalCtrl  
@@ -243,7 +243,7 @@ CMonthCalCtrl* GetMonthCalCtrl() const;
 ### <a name="remarks"></a>설명  
  날짜 및 시간 선택 컨트롤에서 드롭다운 화살표를 클릭할 때 자식 monthcalendar 컨트롤을 만듭니다. 경우는 `CMonthCalCtrl` 제거 되기, 응용 프로그램 날짜 시간 선택 컨트롤의 자식 달력을 나타내는 개체를 저장에 사용할 수 있어야 하므로, 개체가 더 이상 필요 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CDateTimeCtrl#3](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_6.cpp)]  
   
 ##  <a name="getmonthcalfont"></a>  CDateTimeCtrl::GetMonthCalFont  
@@ -267,10 +267,10 @@ DWORD GetMonthCalStyle() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 드롭다운 달력 컨트롤, 비트 결합 된 (또는) 날짜 및 시간 선택 컨트롤 스타일의 스타일입니다. 자세한 내용은 [Month Calendar 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb760919)합니다.  
+ 드롭다운 달력 컨트롤, 비트 결합 된 (또는) 날짜 및 시간 선택 컨트롤 스타일의 스타일입니다. 자세한 내용은 [Month Calendar 컨트롤 스타일](/windows/desktop/Controls/month-calendar-control-styles)합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 전송 된 [DTM_GETMCSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb761763) Windows SDK에 설명 된 메시지입니다.  
+ 이 메서드는 전송 된 [DTM_GETMCSTYLE](/windows/desktop/Controls/dtm-getmcstyle) Windows SDK에 설명 된 메시지입니다.  
   
 ##  <a name="getrange"></a>  CDateTimeCtrl::GetRange  
  날짜 및 시간 선택 컨트롤에 대 한 시스템 시간을 허용 하는 현재 최소 및 최대 검색 합니다.  
@@ -304,9 +304,9 @@ DWORD GetRange(
  첫 번째 매개 변수는 유효 합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [DTM_GETRANGE](http://msdn.microsoft.com/library/windows/desktop/bb761767)Windows SDK에 설명 된 대로 합니다. MFC의 구현에 지정할 수 있습니다 `COleDateTime` 또는 `CTime` 사용 합니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [DTM_GETRANGE](/windows/desktop/Controls/dtm-getrange)Windows SDK에 설명 된 대로 합니다. MFC의 구현에 지정할 수 있습니다 `COleDateTime` 또는 `CTime` 사용 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CDateTimeCtrl#4](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_7.cpp)]  
   
 ##  <a name="gettime"></a>  CDateTimeCtrl::GetTime  
@@ -323,17 +323,17 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
  첫 번째 버전에서는에 대 한 참조를 [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) 시스템 시간 정보를 받게 될 개체입니다. 두 번째 버전에서는에 대 한 참조를 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 시스템 시간 정보를 받게 될 개체입니다.  
   
  *pTimeDest*  
- 에 대 한 포인터를 [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) 시스템 시간 정보를 받는 구조체입니다. NULL이 아니어야 합니다.  
+ 에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 시스템 시간 정보를 받는 구조체입니다. NULL이 아니어야 합니다.  
   
 ### <a name="return-value"></a>반환 값  
- 시간에 성공적으로 작성 되는 경우 0이 아닌 첫 번째 버전에서은 `COleDateTime` 개체 그렇지 않으면 0입니다. 두 번째와 세 번째 버전에서는 DWORD 값 같음 합니다 *dwFlag* 집합의 구성원을 [NMDATETIMECHANGE](http://msdn.microsoft.com/library/windows/desktop/bb761730) 구조입니다. 참조 된 **주의** 자세한 내용은 아래 섹션입니다.  
+ 시간에 성공적으로 작성 되는 경우 0이 아닌 첫 번째 버전에서은 `COleDateTime` 개체 그렇지 않으면 0입니다. 두 번째와 세 번째 버전에서는 DWORD 값 같음 합니다 *dwFlag* 집합의 구성원을 [NMDATETIMECHANGE](/windows/desktop/api/commctrl/ns-commctrl-tagnmdatetimechange) 구조입니다. 참조 된 **주의** 자세한 내용은 아래 섹션입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [DTM_GETSYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/bb761769)Windows SDK에 설명 된 대로 합니다. MFC 구현에서 `GetTime`를 사용할 수 있습니다 `COleDateTime` 또는 `CTime` 클래스를 사용할 수 있습니다를 `SYSTEMTIME` 시간 정보를 저장할 구조입니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [DTM_GETSYSTEMTIME](/windows/desktop/Controls/dtm-getsystemtime)Windows SDK에 설명 된 대로 합니다. MFC 구현에서 `GetTime`를 사용할 수 있습니다 `COleDateTime` 또는 `CTime` 클래스를 사용할 수 있습니다를 `SYSTEMTIME` 시간 정보를 저장할 구조입니다.  
   
- 반환 값은 DWORD 두 번째와 세 번째 버전에서는 위의 나타냅니다 "날짜 없음" 상태에 날짜 및 시간 선택 컨트롤을 설정할지 여부에 표시 된 대로 합니다 [NMDATETIMECHANGE](http://msdn.microsoft.com/library/windows/desktop/bb761730) 구조체 멤버 *dwFlags* . 반환 되는 값 같음 GDT_NONE, 컨트롤 "날짜 없음" 상태에 설정 되 고 DTS_SHOWNONE 스타일을 사용 합니다. 반환 된 값 GDT_VALID 같으면 시스템 시간 대상 위치에 성공적으로 저장 됩니다.  
+ 반환 값은 DWORD 두 번째와 세 번째 버전에서는 위의 나타냅니다 "날짜 없음" 상태에 날짜 및 시간 선택 컨트롤을 설정할지 여부에 표시 된 대로 합니다 [NMDATETIMECHANGE](/windows/desktop/api/commctrl/ns-commctrl-tagnmdatetimechange) 구조체 멤버 *dwFlags* . 반환 되는 값 같음 GDT_NONE, 컨트롤 "날짜 없음" 상태에 설정 되 고 DTS_SHOWNONE 스타일을 사용 합니다. 반환 된 값 GDT_VALID 같으면 시스템 시간 대상 위치에 성공적으로 저장 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CDateTimeCtrl#5](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_8.cpp)]  
   
 ##  <a name="getidealsize"></a>  CDateTimeCtrl::GetIdealSize  
@@ -347,20 +347,20 @@ BOOL GetIdealSize(LPSIZE psize) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out] *psize*|에 대 한 포인터를 [크기](http://msdn.microsoft.com/library/windows/desktop/dd145106) 컨트롤에 대 한 이상적인 크기를 포함 하는 구조입니다.|  
+|[out] *psize*|에 대 한 포인터를 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 컨트롤에 대 한 이상적인 크기를 포함 하는 구조입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  반환 값은 항상 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 전송 된 [DTM_GETIDEALSIZE](http://msdn.microsoft.com/library/windows/desktop/bb761757) Windows SDK에 설명 된 메시지입니다.  
+ 이 메서드는 전송 된 [DTM_GETIDEALSIZE](/windows/desktop/Controls/dtm-getidealsize) Windows SDK에 설명 된 메시지입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서는 변수를 정의 *m_dateTimeCtrl*즉, 날짜 및 시간 선택 컨트롤을 프로그래밍 방식으로 액세스 하는 데 사용 합니다. 이 변수는 다음 예제에서 사용됩니다.  
   
  [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서는 날짜 및 시간 선택 컨트롤을 표시 하 여 이상적인 크기를 검색 합니다.  
   
  [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_9.cpp)]  
@@ -383,9 +383,9 @@ BOOL SetFormat(LPCTSTR pstrFormat);
 >  사용자 입력이이 호출의 성공 또는 실패를 확인 하지 않습니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [DTM_SETFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb761771)Windows SDK에 설명 된 대로 합니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [DTM_SETFORMAT](/windows/desktop/Controls/dtm-setformat)Windows SDK에 설명 된 대로 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CDateTimeCtrl#6](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_10.cpp)]  
   
 ##  <a name="setmonthcalcolor"></a>  CDateTimeCtrl::SetMonthCalColor  
@@ -417,9 +417,9 @@ COLORREF SetMonthCalColor(
  성공할 경우 달력 컨트롤의 지정된 된 부분에 대 한 이전 색 설정을 나타내는 COLORREF 값입니다. 그렇지 않으면 메시지는-1을 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [DTM_SETMCCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb761773)Windows SDK에 설명 된 대로 합니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [DTM_SETMCCOLOR](/windows/desktop/Controls/dtm-setmccolor)Windows SDK에 설명 된 대로 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CDateTimeCtrl::GetMonthCalColor](#getmonthcalcolor)합니다.  
   
 ##  <a name="setmonthcalfont"></a>  CDateTimeCtrl::SetMonthCalFont  
@@ -439,9 +439,9 @@ void SetMonthCalFont(
  글꼴 설정 시 컨트롤을 즉시 그려야 하는지 여부를 지정 합니다. 이 매개 변수를 TRUE로 설정 하면 컨트롤을 다시 그리도록 합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [DTM_SETMCFONT](http://msdn.microsoft.com/library/windows/desktop/bb761775)Windows SDK에 설명 된 대로 합니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [DTM_SETMCFONT](/windows/desktop/Controls/dtm-setmcfont)Windows SDK에 설명 된 대로 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CDateTimeCtrl#7](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_11.cpp)]  
   
 > [!NOTE]
@@ -458,20 +458,20 @@ DWORD SetMonthCalStyle(DWORD dwStyle);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *dwStyle*|새로운 달 calendar month calendar 컨트롤 스타일의 비트 조합 (OR) 컨트롤 스타일입니다. 자세한 내용은 [Month Calendar 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb760919)합니다.|  
+|[in] *dwStyle*|새로운 달 calendar month calendar 컨트롤 스타일의 비트 조합 (OR) 컨트롤 스타일입니다. 자세한 내용은 [Month Calendar 컨트롤 스타일](/windows/desktop/Controls/month-calendar-control-styles)합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이전 스타일 드롭다운 달력 컨트롤입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 전송 된 [DTM_SETMCSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb761778) Windows SDK에 설명 된 메시지입니다.  
+ 이 메서드는 전송 된 [DTM_SETMCSTYLE](/windows/desktop/Controls/dtm-setmcstyle) Windows SDK에 설명 된 메시지입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서는 변수를 정의 *m_dateTimeCtrl*즉, 날짜 및 시간 선택 컨트롤을 프로그래밍 방식으로 액세스 하는 데 사용 합니다. 이 변수는 다음 예제에서 사용됩니다.  
   
  [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서는 주 번호, 요일, 그리고 없습니다 오늘 표시기의 약식된 이름을 표시할 날짜 및 시간 선택 컨트롤을 설정 합니다.  
   
  [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#3](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_12.cpp)]  
@@ -501,9 +501,9 @@ BOOL SetRange(
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [DTM_SETRANGE](http://msdn.microsoft.com/library/windows/desktop/bb761780)Windows SDK에 설명 된 대로 합니다. MFC의 구현에 지정할 수 있습니다 `COleDateTime` 또는 `CTime` 사용 합니다. 경우는 `COleDateTime` 개체에 NULL 상태, 범위 제거 됩니다. 경우는 `CTime` 포인터 또는 `COleDateTime` 포인터가 NULL 이면 범위 제거 됩니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [DTM_SETRANGE](/windows/desktop/Controls/dtm-setrange)Windows SDK에 설명 된 대로 합니다. MFC의 구현에 지정할 수 있습니다 `COleDateTime` 또는 `CTime` 사용 합니다. 경우는 `COleDateTime` 개체에 NULL 상태, 범위 제거 됩니다. 경우는 `CTime` 포인터 또는 `COleDateTime` 포인터가 NULL 이면 범위 제거 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CDateTimeCtrl::GetRange](#getrange)합니다.  
   
 ##  <a name="settime"></a>  CDateTimeCtrl::SetTime  
@@ -520,15 +520,15 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew = NULL);
  에 대 한 참조를 [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) 개체를 포함 하는 컨트롤을 설정 해야 합니다.  
   
  *pTimeNew*  
- 에 대 한 포인터 위의 두 번째 버전을 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 컨트롤은 설정할 시간을 포함 하는 개체입니다. 에 대 한 포인터 위의 세 번째 버전에는 [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) 컨트롤은 설정할 시간을 포함 하는 구조입니다.  
+ 에 대 한 포인터 위의 두 번째 버전을 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 컨트롤은 설정할 시간을 포함 하는 개체입니다. 에 대 한 포인터 위의 세 번째 버전에는 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 컨트롤은 설정할 시간을 포함 하는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [DTM_SETSYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/bb761782)Windows SDK에 설명 된 대로 합니다. MFC 구현에서 `SetTime`를 사용할 수는 `COleDateTime` 또는 `CTime` 클래스를 사용할 수 있습니다를 `SYSTEMTIME` 시간 정보를 설정 하려면 구조를 합니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [DTM_SETSYSTEMTIME](/windows/desktop/Controls/dtm-setsystemtime)Windows SDK에 설명 된 대로 합니다. MFC 구현에서 `SetTime`를 사용할 수는 `COleDateTime` 또는 `CTime` 클래스를 사용할 수 있습니다를 `SYSTEMTIME` 시간 정보를 설정 하려면 구조를 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CDateTimeCtrl#8](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_13.cpp)]  
   
 ## <a name="see-also"></a>참고 항목  

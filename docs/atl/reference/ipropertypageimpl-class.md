@@ -41,15 +41,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7692f60731c47f295630885c77e0e61e8bb5aac
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 7377a6b47df76190c4dc97b916590e53c7df8f9c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884752"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210113"
 ---
 # <a name="ipropertypageimpl-class"></a>IPropertyPageImpl 클래스
-이 클래스는 구현 `IUnknown` 의 기본 구현을 제공 합니다 [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) 인터페이스입니다.  
+이 클래스는 구현 `IUnknown` 의 기본 구현을 제공 합니다 [IPropertyPage](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage) 인터페이스입니다.  
   
 > [!IMPORTANT]
 >  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.  
@@ -105,7 +105,7 @@ class IPropertyPageImpl
 |[IPropertyPageImpl::m_size](#m_size)|속성 페이지 대화 상자의 너비와 높이 (픽셀)에서에 저장합니다.|  
   
 ## <a name="remarks"></a>설명  
- 합니다 [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) 인터페이스 속성 시트 내에서 특정 속성 페이지를 관리 하는 개체를 사용 합니다. 클래스 `IPropertyPageImpl` 이 인터페이스의 기본 구현을 제공 하 고 구현 `IUnknown` 장치에서 디버그 덤프에 정보를 전송 하 여 작성 합니다.  
+ 합니다 [IPropertyPage](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage) 인터페이스 속성 시트 내에서 특정 속성 페이지를 관리 하는 개체를 사용 합니다. 클래스 `IPropertyPageImpl` 이 인터페이스의 기본 구현을 제공 하 고 구현 `IUnknown` 장치에서 디버그 덤프에 정보를 전송 하 여 작성 합니다.  
   
  **관련 문서** [ATL 자습서](../../atl/active-template-library-atl-tutorial.md), [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)  
   
@@ -130,7 +130,7 @@ HRESULT Activate(
 ### <a name="remarks"></a>설명  
  기본적으로 대화 상자는 항상 값에 관계 없이 모덜리스 합니다 *bModal* 매개 변수입니다.  
   
- 참조 [IPropertyPage::Activate](http://msdn.microsoft.com/library/windows/desktop/ms682250) Windows SDK에에서 있습니다.  
+ 참조 [IPropertyPage::Activate](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-activate) Windows SDK에에서 있습니다.  
   
 ##  <a name="apply"></a>  IPropertyPageImpl::Apply  
  현재 속성 페이지 값을 통해 지정 된 기본 개체에 적용 됩니다. `SetObjects`합니다.  
@@ -143,7 +143,7 @@ HRESULT Apply();
  S_OK 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [IPropertyPage::Apply](http://msdn.microsoft.com/library/windows/desktop/ms691284) Windows SDK에에서 있습니다.  
+ 참조 [IPropertyPage::Apply](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-apply) Windows SDK에에서 있습니다.  
   
 ##  <a name="deactivate"></a>  IPropertyPageImpl::Deactivate  
  사용 하 여 만든 대화 상자 창을 [활성화](#activate)합니다.  
@@ -153,7 +153,7 @@ HRESULT Deactivate();
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IPropertyPage::Deactivate](http://msdn.microsoft.com/library/windows/desktop/ms682504) Windows SDK에에서 있습니다.  
+ 참조 [IPropertyPage::Deactivate](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-deactivate) Windows SDK에에서 있습니다.  
   
 ##  <a name="getpageinfo"></a>  IPropertyPageImpl::GetPageInfo  
  채웁니다 합니다 *pPageInfo* 데이터 멤버에 포함 된 정보를 사용 하 여 구조입니다.  
@@ -165,7 +165,7 @@ HRESULT GetPageInfo(PROPPAGEINFO* pPageInfo);
 ### <a name="remarks"></a>설명  
  `GetPageInfo` 연결 된 문자열 리소스를 로드 [m_dwDocString](#m_dwdocstring)를 [m_dwHelpFile](#m_dwhelpfile), 및 [m_dwTitle](#m_dwtitle)합니다.  
   
- 참조 [IPropertyPage::GetPageInfo](http://msdn.microsoft.com/library/windows/desktop/ms680714) Windows SDK에에서 있습니다.  
+ 참조 [IPropertyPage::GetPageInfo](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-getpageinfo) Windows SDK에에서 있습니다.  
   
 ##  <a name="help"></a>  IPropertyPageImpl::Help  
  속성 페이지에 대 한 Windows 도움말을 호출합니다.  
@@ -175,7 +175,7 @@ HRESULT Help(PROPPAGEINFO* pPageInfo);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IPropertyPage::Help](http://msdn.microsoft.com/library/windows/desktop/ms691504) Windows SDK에에서 있습니다.  
+ 참조 [IPropertyPage::Help](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-help) Windows SDK에에서 있습니다.  
   
 ##  <a name="ipropertypageimpl"></a>  IPropertyPageImpl::IPropertyPageImpl  
  생성자입니다.  
@@ -240,7 +240,7 @@ UINT m_dwTitle;
 ```  
   
 ##  <a name="m_ppagesite"></a>  IPropertyPageImpl::m_pPageSite  
- 가리키는 합니다 [IPropertyPageSite](http://msdn.microsoft.com/library/windows/desktop/ms690583) 속성 프레임을 사용 하 여 속성 페이지를 통신 하는 인터페이스입니다.  
+ 가리키는 합니다 [IPropertyPageSite](/windows/desktop/api/ocidl/nn-ocidl-ipropertypagesite) 속성 프레임을 사용 하 여 속성 페이지를 통신 하는 인터페이스입니다.  
   
 ```
 IPropertyPageSite* m_pPageSite;
@@ -268,7 +268,7 @@ HRESULT Move(LPCRECT pRect);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IPropertyPage::Move](http://msdn.microsoft.com/library/windows/desktop/ms680118) Windows SDK에에서 있습니다.  
+ 참조 [IPropertyPage::Move](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-move) Windows SDK에에서 있습니다.  
   
 ##  <a name="setdirty"></a>  IPropertyPageImpl::SetDirty  
  속성 페이지의 상태 변경 또는 값에 따라 변경 되지 않은 플래그 *bDirty*합니다.  
@@ -292,17 +292,17 @@ HRESULT SetObjects(ULONG nObjects, IUnknown** ppUnk);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IPropertyPage::SetObjects](http://msdn.microsoft.com/library/windows/desktop/ms678529) Windows SDK에에서 있습니다.  
+ 참조 [IPropertyPage::SetObjects](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-setobjects) Windows SDK에에서 있습니다.  
   
 ##  <a name="setpagesite"></a>  IPropertyPageImpl::SetPageSite  
- 제공 된 속성 페이지는 [IPropertyPageSite](http://msdn.microsoft.com/library/windows/desktop/ms690583) 속성 프레임을 사용 하 여 속성 페이지를 통신 하는 포인터입니다.  
+ 제공 된 속성 페이지는 [IPropertyPageSite](/windows/desktop/api/ocidl/nn-ocidl-ipropertypagesite) 속성 프레임을 사용 하 여 속성 페이지를 통신 하는 포인터입니다.  
   
 ```
 HRESULT SetPageSite(IPropertyPageSite* pPageSite);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IPropertyPage::SetPageSite](http://msdn.microsoft.com/library/windows/desktop/ms690413) Windows SDK에에서 있습니다.  
+ 참조 [IPropertyPage::SetPageSite](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-setpagesite) Windows SDK에에서 있습니다.  
   
 ##  <a name="show"></a>  IPropertyPageImpl::Show  
  표시 되거나 숨겨지도록 속성 페이지 대화 상자를 만듭니다.  
@@ -312,7 +312,7 @@ HRESULT Show(UINT nCmdShow);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IPropertyPage::Show](http://msdn.microsoft.com/library/windows/desktop/ms694467) Windows SDK에에서 있습니다.  
+ 참조 [IPropertyPage::Show](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-show) Windows SDK에에서 있습니다.  
   
 ##  <a name="translateaccelerator"></a>  IPropertyPageImpl::TranslateAccelerator  
  에 지정 된 키 입력을 처리 `pMsg`합니다.  
@@ -322,7 +322,7 @@ HRESULT TranslateAccelerator(MSG* pMsg);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IPropertyPage::TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms686603) Windows SDK에에서 있습니다.  
+ 참조 [IPropertyPage::TranslateAccelerator](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-translateaccelerator) Windows SDK에에서 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IPropertyPage2Impl 클래스](../../atl/reference/ipropertypage2impl-class.md)   

@@ -104,12 +104,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 436c99777f526cfa364241b4dc25e33be672d6ae
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: e2eb1695383e5bb1a700305fd0cc8487590afd7c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42539308"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217043"
 ---
 # <a name="coleipframewndex-class"></a>COleIPFrameWndEx 클래스
 `COleIPFrameWndEx` 클래스는 MFC를 지원하는 OLE 컨테이너를 구현합니다. 응용 프로그램에 대한 현재 위치의 프레임 창 클래스는 `COleIPFrameWndEx` COleIPFrameWnd [클래스에서 파생하는 대신](../../mfc/reference/coleipframewnd-class.md)클래스에서 파생해야 합니다. 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.   
@@ -176,7 +176,7 @@ class COleIPFrameWndEx : public COleIPFrameWnd
 |----------|-----------------|  
 |[COleIPFrameWndEx::InitUserToobars](#initusertoobars)|사용자 정의 도구 모음에 할당되는 컨트롤 ID의 범위를 초기화하도록 프레임워크에 지시합니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `COleIPFrameWndEx` 클래스의 인스턴스를 하위 클래스로 지정하고 해당 메서드를 재정의하는 방법을 보여 줍니다. 이 예제에서는 `OnDestory` 메서드, `RepositionFrame` 메서드, `RecalcLayout` 메서드 및 `CalcWindowRect` 메서드를 재정의하는 방법을 보여 줍니다. 이 코드 조각은 [워드 패드 샘플](../../visual-cpp-samples.md)의 일부입니다.  
   
  [!code-cpp[NVC_MFC_WordPad#1](../../mfc/reference/codesnippet/cpp/coleipframewndex-class_1.cpp)]  
@@ -929,7 +929,7 @@ virtual void WinHelp(
  지정 된 도움말 유형에 대 한 필요에 따라 데이터를 지정 *nCmd*합니다.  
   
  [in] *nCmd*  
- 요청한 도움말의 형식을 지정합니다. 가능한 값 목록과 미치는 영향에 대 한 합니다 *dwData* 매개 변수를 참조 합니다 [WinHelp 함수](http://msdn.microsoft.com/library/windows/desktop/bb762267) Windows SDK의 합니다.  
+ 요청한 도움말의 형식을 지정합니다. 가능한 값 목록과 미치는 영향에 대 한 합니다 *dwData* 매개 변수를 참조 합니다 [WinHelp 함수](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows SDK의 합니다.  
   
 ### <a name="remarks"></a>설명  
   

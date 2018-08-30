@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 63e6a7a45fc119309ce99640ab74006ae44a05bf
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: bed3e80534a651e1e5a3d7228d0746ef8f552a9a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339135"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208843"
 ---
 # <a name="cimagelist-class"></a>CImageList 클래스
 Windows의 공용 이미지 목록 컨트롤의 기능을 제공합니다.  
@@ -207,7 +207,7 @@ int Add(HICON hIcon);
 ### <a name="remarks"></a>설명  
  이 사용 하 여 완료 되 면 아이콘 핸들 해제 책임이 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#1](../../mfc/reference/codesnippet/cpp/cimagelist-class_1.cpp)]  
   
 ##  <a name="attach"></a>  CImageList::Attach  
@@ -224,7 +224,7 @@ BOOL Attach(HIMAGELIST hImageList);
 ### <a name="return-value"></a>반환 값  
  첨부 파일에 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#2](../../mfc/reference/codesnippet/cpp/cimagelist-class_2.cpp)]  
   
 ##  <a name="begindrag"></a>  CImageList::BeginDrag  
@@ -249,7 +249,7 @@ BOOL BeginDrag(
 ### <a name="remarks"></a>설명  
  이 함수는 끌어에 사용 되는 임시 이미지 목록을 만듭니다. 현재 커서를 사용 하 여 지정된 된 이미지 및 마스크를 결합 하는 이미지입니다. 후속 WM_MOUSEMOVE 메시지에 대 한 응답을 사용 하 여 끌기 이미지를 이동할 수는 `DragMove` 멤버 함수입니다. 끌기 작업을 종료 하려면 사용할 수는 `EndDrag` 멤버 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#3](../../mfc/reference/codesnippet/cpp/cimagelist-class_3.cpp)]  
   
 ##  <a name="cimagelist"></a>  CImageList::CImageList  
@@ -260,7 +260,7 @@ CImageList();
 ```  
   
 ##  <a name="copy"></a>  CImageList::Copy  
- 이 멤버 함수는 Win32 함수의 동작을 구현 [ImageList_Copy](http://msdn.microsoft.com/library/windows/desktop/bb761520)Windows SDK에 설명 된 대로 합니다.  
+ 이 멤버 함수는 Win32 함수의 동작을 구현 [ImageList_Copy](/windows/desktop/api/commctrl/nf-commctrl-imagelist_copy)Windows SDK에 설명 된 대로 합니다.  
   
 ```  
 BOOL Copy(
@@ -297,7 +297,7 @@ BOOL Copy(
 ### <a name="return-value"></a>반환 값  
  성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#6](../../mfc/reference/codesnippet/cpp/cimagelist-class_4.cpp)]  
   
 ##  <a name="create"></a>  CImageList::Create  
@@ -400,7 +400,7 @@ BOOL Create(CImageList* pImageList);
 ### <a name="remarks"></a>설명  
  생성 된 `CImageList` 두 단계에서. 먼저 생성자를 호출 하 고 호출 `Create`, 이미지 목록을 만들고 연결 하는 `CImageList` 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#7](../../mfc/reference/codesnippet/cpp/cimagelist-class_5.cpp)]  
   
 ##  <a name="deleteimagelist"></a>  CImageList::DeleteImageList  
@@ -413,7 +413,7 @@ BOOL DeleteImageList();
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#8](../../mfc/reference/codesnippet/cpp/cimagelist-class_6.cpp)]  
   
 ##  <a name="deletetempmap"></a>  CImageList::DeleteTempMap  
@@ -423,7 +423,7 @@ BOOL DeleteImageList();
 static void PASCAL DeleteTempMap();
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#9](../../mfc/reference/codesnippet/cpp/cimagelist-class_7.cpp)]  
   
 ##  <a name="detach"></a>  CImageList::Detach  
@@ -439,7 +439,7 @@ HIMAGELIST Detach();
 ### <a name="remarks"></a>설명  
  이 함수는 이미지 목록 개체에 대 한 핸들을 반환합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CImageList::Attach](#attach)합니다.  
   
 ##  <a name="dragenter"></a>  CImageList::DragEnter  
@@ -468,7 +468,7 @@ static BOOL PASCAL DragEnter(
   
  이 함수는 끌기 작업 중 지정된 된 창에 대 한 다른 모든 업데이트를 잠급니다. 끌어온된 이미지를 사용 하 여 일시적으로 숨길 수 끌어서 놓기 작업의 대상 강조 표시 하는 등의 끌기 작업을 하는 동안에 그리기를 수행 해야 할 경우는 [CImageList::DragLeave](#dragleave) 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CImageList::BeginDrag](#begindrag)합니다.  
   
 ##  <a name="dragleave"></a>  CImageList::DragLeave  
@@ -485,7 +485,7 @@ static BOOL PASCAL DragLeave(CWnd* pWndLock);
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CImageList::EndDrag](#enddrag)합니다.  
   
 ##  <a name="dragmove"></a>  CImageList::DragMove  
@@ -505,7 +505,7 @@ static BOOL PASCAL DragMove(CPoint pt);
 ### <a name="remarks"></a>설명  
  이 함수는 일반적으로 WM_MOUSEMOVE 메시지에 대 한 응답으로 호출 됩니다. 끌기 작업을 시작 하려면 사용 된 `BeginDrag` 멤버 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#4](../../mfc/reference/codesnippet/cpp/cimagelist-class_8.cpp)]  
   
 ##  <a name="dragshownolock"></a>  CImageList::DragShowNolock  
@@ -560,7 +560,7 @@ BOOL Draw(
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CImageList::SetOverlayImage](#setoverlayimage)합니다.  
   
 ##  <a name="drawex"></a>  CImageList::DrawEx  
@@ -588,16 +588,16 @@ BOOL DrawEx(
  지정 된 디바이스 컨텍스트 내에 그릴 위치입니다.  
   
  *sz*  
- 이미지의 왼쪽 위 모퉁이 기준으로 그릴 이미지의 부분의 크기입니다. 참조 *dx* 하 고 *dy* 에서 [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) Windows SDK에 있습니다.  
+ 이미지의 왼쪽 위 모퉁이 기준으로 그릴 이미지의 부분의 크기입니다. 참조 *dx* 하 고 *dy* 에서 [ImageList_DrawEx](/windows/desktop/api/commctrl/nf-commctrl-imagelist_drawex) Windows SDK에 있습니다.  
   
  *clrBk*  
- 이미지의 배경색입니다. 참조 *rgbBk* 에 [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) Windows SDK에 있습니다.  
+ 이미지의 배경색입니다. 참조 *rgbBk* 에 [ImageList_DrawEx](/windows/desktop/api/commctrl/nf-commctrl-imagelist_drawex) Windows SDK에 있습니다.  
   
  *clrFg*  
- 이미지의 전경색입니다. 참조 *rgbFg* 에 [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) Windows SDK에 있습니다.  
+ 이미지의 전경색입니다. 참조 *rgbFg* 에 [ImageList_DrawEx](/windows/desktop/api/commctrl/nf-commctrl-imagelist_drawex) Windows SDK에 있습니다.  
   
  *nStyle*  
- 그리기 스타일을 지정 하는 플래그입니다. 참조 *fStyle* 에 [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) Windows SDK에 있습니다.  
+ 그리기 스타일을 지정 하는 플래그입니다. 참조 *fStyle* 에 [ImageList_DrawEx](/windows/desktop/api/commctrl/nf-commctrl-imagelist_drawex) Windows SDK에 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -605,7 +605,7 @@ BOOL DrawEx(
 ### <a name="remarks"></a>설명  
  지정된 된 그리기 스타일을 사용 하 고 지정된 된 색을 사용 하 여 이미지를 혼합 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#10](../../mfc/reference/codesnippet/cpp/cimagelist-class_9.cpp)]  
   
 ##  <a name="drawindirect"></a>  CImageList::DrawIndirect  
@@ -632,7 +632,7 @@ BOOL DrawIndirect(
   
 ### <a name="parameters"></a>매개 변수  
  *pimldp*  
- 에 대 한 포인터를 [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) 그리기 작업에 대 한 정보를 포함 하는 구조입니다.  
+ 에 대 한 포인터를 [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-_imagelistdrawparams) 그리기 작업에 대 한 정보를 포함 하는 구조입니다.  
   
  *pDC*  
  대상 장치 컨텍스트에 대 한 포인터입니다. 이 삭제 해야 합니다 [CDC](../../mfc/reference/cdc-class.md) 되어 완료 되 면 개체입니다.  
@@ -641,23 +641,23 @@ BOOL DrawIndirect(
  그릴 이미지의 0부터 시작 하는 인덱스입니다.  
   
  *(태평양 표준시)*  
- A [지점](http://msdn.microsoft.com/library/windows/desktop/dd162805) 의 x 좌표와 y-이미지를 그릴 위치를 포함 하는 구조체.  
+ A [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 의 x 좌표와 y-이미지를 그릴 위치를 포함 하는 구조체.  
   
  *sz*  
- A [크기](http://msdn.microsoft.com/library/windows/desktop/dd145106) 그릴 이미지의 크기를 나타내는 구조입니다.  
+ A [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 그릴 이미지의 크기를 나타내는 구조입니다.  
   
  *ptOrigin*  
- A [지점](http://msdn.microsoft.com/library/windows/desktop/dd162805) 포함 된 x 및 y 좌표 이미지 자체와 관련 하 여 그리기 작업의 왼쪽된 위 모퉁이 지정 하는 구조입니다. 이미지의 픽셀에 대 한 x-좌표 이상에 대 한 y-좌표는 왼쪽에 그려집니다.  
+ A [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 포함 된 x 및 y 좌표 이미지 자체와 관련 하 여 그리기 작업의 왼쪽된 위 모퉁이 지정 하는 구조입니다. 이미지의 픽셀에 대 한 x-좌표 이상에 대 한 y-좌표는 왼쪽에 그려집니다.  
   
  *fStyle*  
  그리기 스타일을 필요에 따라 오버레이 이미지를 지정 하는 플래그입니다. 오버레이 이미지에 자세한 내용은 설명 섹션을 참조 합니다. MFC 기본 구현에서는 ILD_NORMAL, 이미지 목록에 대 한 배경색을 사용 하 여 이미지를 그립니다. 배경색 CLR_NONE 값 이면 이미지 투명 하 게 사용 되는 마스크를 사용 하 여 그려집니다.  
   
- 다른 가능한 스타일에 설명 되어는 *fStyle* 의 멤버는 [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) 구조입니다.  
+ 다른 가능한 스타일에 설명 되어는 *fStyle* 의 멤버는 [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-_imagelistdrawparams) 구조입니다.  
   
  *dwRop*  
  래스터 작업 코드를 지정 하는 값입니다. 이러한 코드는 최종 색을 달성 하기 위해 대상 사각형의 색 데이터를 사용 하 여 소스 사각형에 대 한 색 데이터를 결합 하는 방법을 정의 합니다. MFC의 기본 구현에서는 SRCCOPY, 대상 사각형에 직접 소스 사각형을 복사합니다. 이 매개 변수는 합니다 *fStyle* 매개 변수 ILD_ROP 플래그를 포함 되지 않습니다.  
   
- 다른 가능한 값은 아래 설명 되어는 *dwRop* 의 멤버는 [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) 구조입니다.  
+ 다른 가능한 값은 아래 설명 되어는 *dwRop* 의 멤버는 [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-_imagelistdrawparams) 구조입니다.  
   
  *rgbBack*  
  CLR_DEFAULT 기본적으로 표시 되는 이미지 배경 색입니다. 이 매개 변수는 응용 프로그램 정의 RGB 값 또는 다음 값 중 하나일 수 있습니다.  
@@ -688,7 +688,7 @@ BOOL DrawIndirect(
  ILS_APLHA를 사용 하는 경우이 멤버는 알파 채널 값을 보유 합니다. 이 값은 0에서 255 사이의 0는 완전히 투명 하 고 255 완전히 불투명 수 있습니다.  
   
  *crEffect*  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 광선 및 그림자 효과에 사용 되는 값입니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) 광선 및 그림자 효과에 사용 되는 값입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 성공적으로 이미지를 그릴; 그렇지 않으면 FALSE입니다.  
@@ -696,9 +696,9 @@ BOOL DrawIndirect(
 ### <a name="remarks"></a>설명  
  Win32 구조를 직접 입력 하려는 경우 첫 번째 버전을 사용 합니다. 하나 이상의 MFC의 기본 인수를 활용 하거나 구조를 관리 하지 않도록 하려는 경우 두 번째 버전을 사용 합니다.  
   
- 오버레이 이미지는 이미지에서이 멤버 함수에 지정 된 기본 이미지를 기반으로 그려지는 합니다 *nImage* 매개 변수입니다. 오버레이 마스크를 사용 하 여 그리기를 [그리기](#draw) 사용 하 여 지정 된 오버레이 마스크의 1부터 시작 인덱스를 사용 하 여 멤버 함수는 [INDEXTOOVERLAYMASK](http://msdn.microsoft.com/library/windows/desktop/bb761408) 매크로입니다.  
+ 오버레이 이미지는 이미지에서이 멤버 함수에 지정 된 기본 이미지를 기반으로 그려지는 합니다 *nImage* 매개 변수입니다. 오버레이 마스크를 사용 하 여 그리기를 [그리기](#draw) 사용 하 여 지정 된 오버레이 마스크의 1부터 시작 인덱스를 사용 하 여 멤버 함수는 [INDEXTOOVERLAYMASK](/windows/desktop/api/commctrl/nf-commctrl-indextooverlaymask) 매크로입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#11](../../mfc/reference/codesnippet/cpp/cimagelist-class_10.cpp)]  
   
 ##  <a name="enddrag"></a>  CImageList::EndDrag  
@@ -711,7 +711,7 @@ static void PASCAL EndDrag();
 ### <a name="remarks"></a>설명  
  끌기 작업을 시작 하려면 사용 된 `BeginDrag` 멤버 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#5](../../mfc/reference/codesnippet/cpp/cimagelist-class_11.cpp)]  
   
 ##  <a name="extracticon"></a>  CImageList::ExtractIcon  
@@ -729,9 +729,9 @@ HICON ExtractIcon(int nImage);
  성공할 경우 아이콘의 핸들 그렇지 않으면 NULL입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 방법은의 동작에 의존 합니다 [ImageList_ExtractIcon](http://msdn.microsoft.com/library/windows/desktop/bb761401) 아이콘을 만드는 매크로입니다. 참조 된 [ImageList_ExtractIcon](http://msdn.microsoft.com/library/windows/desktop/bb761401) 매크로 아이콘 만들기 및 정리에 대 한 자세한 내용은 합니다.  
+ 이 방법은의 동작에 의존 합니다 [ImageList_ExtractIcon](/windows/desktop/api/commctrl/nf-commctrl-imagelist_extracticon) 아이콘을 만드는 매크로입니다. 참조 된 [ImageList_ExtractIcon](/windows/desktop/api/commctrl/nf-commctrl-imagelist_extracticon) 매크로 아이콘 만들기 및 정리에 대 한 자세한 내용은 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#12](../../mfc/reference/codesnippet/cpp/cimagelist-class_12.cpp)]  
   
 ##  <a name="fromhandle"></a>  CImageList::FromHandle  
@@ -751,7 +751,7 @@ static CImageList* PASCAL FromHandle(HIMAGELIST hImageList);
 ### <a name="remarks"></a>설명  
  경우는 `CImageList` 임시 핸들에 이미 연결 되지 않은 `CImageList` 개체를 만들어 연결 합니다. 이 임시 `CImageList` 개체는 임시 개체를 모두 삭제 됩니다 이때 다음에 응용 프로그램에 유휴 시간 이벤트 루프에서 될 때까지 유효 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#13](../../mfc/reference/codesnippet/cpp/cimagelist-class_13.cpp)]  
   
 ##  <a name="fromhandlepermanent"></a>  CImageList::FromHandlePermanent  
@@ -771,7 +771,7 @@ static CImageList* PASCAL FromHandlePermanent(HIMAGELIST hImageList);
 ### <a name="remarks"></a>설명  
  경우는 `CImageList` 개체가 핸들에 연결 되지 않은, NULL이 반환 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#14](../../mfc/reference/codesnippet/cpp/cimagelist-class_14.cpp)]  
   
 ##  <a name="getbkcolor"></a>  CImageList::GetBkColor  
@@ -784,7 +784,7 @@ COLORREF GetBkColor() const;
 ### <a name="return-value"></a>반환 값  
  RGB 색 값을 `CImageList` 배경 색 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CImageList::SetBkColor](#setbkcolor)합니다.  
   
 ##  <a name="getdragimage"></a>  CImageList::GetDragImage  
@@ -798,7 +798,7 @@ static CImageList* PASCAL GetDragImage(
   
 ### <a name="parameters"></a>매개 변수  
  *lpPoint*  
- 주소를 [지점](http://msdn.microsoft.com/library/windows/desktop/dd162805) 끌어 위치를 현재 수신 하는 구조입니다.  
+ 주소를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 끌어 위치를 현재 수신 하는 구조입니다.  
   
  *lpPointHotSpot*  
  주소는 `POINT` 구조체 끌어서 위치를 기준으로 끌어 이미지의 오프셋입니다.  
@@ -816,7 +816,7 @@ int GetImageCount() const;
 ### <a name="return-value"></a>반환 값  
  이미지의 수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CImageList::ExtractIcon](#extracticon)합니다.  
   
 ##  <a name="getimageinfo"></a>  CImageList::GetImageInfo  
@@ -833,7 +833,7 @@ BOOL GetImageInfo(
  이미지의 인덱스 0부터 시작 합니다.  
   
  *pImageInfo*  
- 에 대 한 포인터를 [IMAGEINFO](http://msdn.microsoft.com/library/windows/desktop/bb761393) 이미지에 대 한 정보를 수신 하는 구조입니다. 이 구조에서 정보를 직접 이미지에 대 한 비트맵을 조작에 사용할 수 있습니다.  
+ 에 대 한 포인터를 [IMAGEINFO](/windows/desktop/api/commctrl/ns-commctrl-_imageinfo) 이미지에 대 한 정보를 수신 하는 구조입니다. 이 구조에서 정보를 직접 이미지에 대 한 비트맵을 조작에 사용할 수 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -851,7 +851,7 @@ HIMAGELIST GetSafeHandle() const;
 ### <a name="return-value"></a>반환 값  
  첨부 된 이미지 목록에 대 한 핸들 그렇지 않은 경우 연결 된 개체가 없는 경우 NULL입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#15](../../mfc/reference/codesnippet/cpp/cimagelist-class_15.cpp)]  
   
 ##  <a name="m_himagelist"></a>  CImageList::m_hImageList  
@@ -862,7 +862,7 @@ HIMAGELIST GetSafeHandle() const;
 ### <a name="remarks"></a>설명  
  `m_hImageList` 데이터 멤버는 HIMAGELIST 형식의 공용 변수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#23](../../mfc/reference/codesnippet/cpp/cimagelist-class_16.cpp)]  
   
 ##  <a name="operator_himagelist"></a>  CImageList::operator HIMAGELIST  
@@ -878,7 +878,7 @@ operator HIMAGELIST() const;
 ### <a name="remarks"></a>설명  
  이 연산자는 캐스팅 연산자를 HIMAGELIST 개체의 직접 사용을 지원 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#16](../../mfc/reference/codesnippet/cpp/cimagelist-class_17.cpp)]  
   
 ##  <a name="read"></a>  CImageList::Read  
@@ -895,7 +895,7 @@ BOOL Read(CArchive* pArchive);
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#18](../../mfc/reference/codesnippet/cpp/cimagelist-class_18.cpp)]  
   
 ##  <a name="remove"></a>  CImageList::Remove  
@@ -915,7 +915,7 @@ BOOL Remove(int nImage);
 ### <a name="remarks"></a>설명  
  다음 모든 항목 *nImage* 이제 한 단계 아래로 이동 합니다. 예를 들어 이미지 목록에 두 개의 항목이 포함 된 경우 첫 번째 항목을 삭제 하면 나머지 항목을 첫 번째 위치에 모두 포함 됩니다. *nImage*= 첫 번째 위치에서 항목의 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#19](../../mfc/reference/codesnippet/cpp/cimagelist-class_19.cpp)]  
   
 ##  <a name="replace"></a>  CImageList::Replace  
@@ -954,7 +954,7 @@ int Replace(
 ### <a name="remarks"></a>설명  
  이 멤버 함수를 호출한 후 호출 [SetImageCount](#setimagecount) 새에 할당 하려면 자리 표시자를 유효한 이미지 이미지 인덱스 번호입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CImageList::SetImageCount](#setimagecount)합니다.  
   
 ##  <a name="setbkcolor"></a>  CImageList::SetBkColor  
@@ -971,7 +971,7 @@ COLORREF SetBkColor(COLORREF cr);
 ### <a name="return-value"></a>반환 값  
  성공할 경우 이전 배경색 그렇지 않으면 CLR_NONE 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#20](../../mfc/reference/codesnippet/cpp/cimagelist-class_20.cpp)]  
   
 ##  <a name="setdragcursorimage"></a>  CImageList::SetDragCursorImage  
@@ -994,7 +994,7 @@ BOOL SetDragCursorImage(
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 끌기 작업 중 새 이미지를 사용 하는 끌어 놓고 함수, 있으므로 Windows를 사용 해야 [ShowCursor](http://msdn.microsoft.com/library/windows/desktop/ms648396) 함수를 호출한 후 실제 마우스 커서를 숨기려면 `CImageList::SetDragCursorImage`합니다. 이 고, 그렇지 시스템 끌기 작업의 기간에 대 한 두 마우스 커서를 표시할 수도 있습니다.  
+ 끌기 작업 중 새 이미지를 사용 하는 끌어 놓고 함수, 있으므로 Windows를 사용 해야 [ShowCursor](/windows/desktop/api/winuser/nf-winuser-showcursor) 함수를 호출한 후 실제 마우스 커서를 숨기려면 `CImageList::SetDragCursorImage`합니다. 이 고, 그렇지 시스템 끌기 작업의 기간에 대 한 두 마우스 커서를 표시할 수도 있습니다.  
   
 ##  <a name="setimagecount"></a>  CImageList::SetImageCount  
  에 이미지 개수를 다시 설정 하려면이 멤버 함수 호출을 `CImageList` 개체입니다.  
@@ -1015,7 +1015,7 @@ BOOL SetImageCount(UINT uNewCount);
   
  이 함수를 사용 하 여 이미지 목록의 크기를 줄이는 잘린된 이미지 해제 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#21](../../mfc/reference/codesnippet/cpp/cimagelist-class_21.cpp)]  
   
 ##  <a name="setoverlayimage"></a>  CImageList::SetOverlayImage  
@@ -1042,7 +1042,7 @@ BOOL SetOverlayImage(
   
  오버레이 마스크는 다른 이미지 위에 투명 하 게 그릴 이미지. 이미지 위에 오버레이 마스크를 사용 하 여 그리기를 [CImageList::Draw](#draw) INDEXTOOVERLAYMASK 매크로 사용 하 여 지정 된 오버레이 마스크의 1부터 시작 인덱스를 사용 하 여 멤버 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#22](../../mfc/reference/codesnippet/cpp/cimagelist-class_22.cpp)]  
   
 ##  <a name="write"></a>  CImageList::Write  
@@ -1059,7 +1059,7 @@ BOOL Write(CArchive* pArchive);
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CImageList#17](../../mfc/reference/codesnippet/cpp/cimagelist-class_23.cpp)]  
   
 ## <a name="see-also"></a>참고 항목  

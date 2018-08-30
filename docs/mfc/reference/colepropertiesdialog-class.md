@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c32aed9d50e0575893c99a9552c74e6e491ecb9
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 1c44abc596f5338ad82b49bc9761abfc5bb26a1a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853022"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216204"
 ---
 # <a name="colepropertiesdialog-class"></a>COlePropertiesDialog 클래스
 Windows 공용 OLE 개체 속성 대화 상자를 캡슐화합니다.  
@@ -101,8 +101,7 @@ class COlePropertiesDialog : public COleDialog
  **헤더:** afxodlgs.h  
   
 ##  <a name="colepropertiesdialog"></a>  COlePropertiesDialog::COlePropertiesDialog  
- 
-          `COlePropertiesDialog` 개체를 만듭니다.  
+ `COlePropertiesDialog` 개체를 만듭니다.  
   
 ```  
 COlePropertiesDialog(
@@ -154,10 +153,10 @@ virtual INT_PTR DoModal();
 ### <a name="return-value"></a>반환 값  
  IDOK 또는 IDCANCEL 성공할 경우 그렇지 않으면 0입니다. IDOK 및 IDCANCEL는 사용자 확인 또는 취소 단추를 선택 하는지 여부를 나타내는 상수입니다.  
   
- IDCANCEL이 반환 되는 Windows를 호출할 수 있습니다 [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) 오류가 발생 했는지 여부를 결정 하는 함수입니다.  
+ IDCANCEL이 반환 되는 Windows를 호출할 수 있습니다 [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) 오류가 발생 했는지 여부를 결정 하는 함수입니다.  
   
 ##  <a name="m_gp"></a>  COlePropertiesDialog::m_gp  
- 형식의 구조체 [OLEUIGNRLPROPS](http://msdn.microsoft.com/library/windows/desktop/ms687297)OLE 개체 속성 대화 상자의 일반 페이지를 초기화 하는 데 사용 합니다.  
+ 형식의 구조체 [OLEUIGNRLPROPS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuignrlpropsa)OLE 개체 속성 대화 상자의 일반 페이지를 초기화 하는 데 사용 합니다.  
   
 ```  
 OLEUIGNRLPROPS m_gp;  
@@ -169,7 +168,7 @@ OLEUIGNRLPROPS m_gp;
  에 대 한 자세한은 `OLEUIGNRLPROPS` 구조체를 Windows SDK를 참조 하세요.  
   
 ##  <a name="m_lp"></a>  COlePropertiesDialog::m_lp  
- 형식의 구조체 [OLEUILINKPROPS](http://msdn.microsoft.com/library/windows/desktop/ms680735)OLE 개체 속성 대화 상자의 링크 페이지를 초기화 하는 데 사용 합니다.  
+ 형식의 구조체 [OLEUILINKPROPS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuilinkpropsa)OLE 개체 속성 대화 상자의 링크 페이지를 초기화 하는 데 사용 합니다.  
   
 ```  
 OLEUILINKPROPS m_lp;  
@@ -181,7 +180,7 @@ OLEUILINKPROPS m_lp;
  에 대 한 자세한은 `OLEUILINKPROPS` 구조체를 Windows SDK를 참조 하세요.  
   
 ##  <a name="m_op"></a>  COlePropertiesDialog::m_op  
- 형식의 구조체 [OLEUIOBJECTPROPS](http://msdn.microsoft.com/library/windows/desktop/ms687199)공용 OLE 개체 속성 대화 상자를 초기화 하는 데 사용 합니다.  
+ 형식의 구조체 [OLEUIOBJECTPROPS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiobjectpropsa)공용 OLE 개체 속성 대화 상자를 초기화 하는 데 사용 합니다.  
   
 ```  
 OLEUIOBJECTPROPS m_op;  
@@ -190,10 +189,10 @@ OLEUIOBJECTPROPS m_op;
 ### <a name="remarks"></a>설명  
  이 구조는 일반, 링크 및 보기 페이지를 초기화 하는 데 사용 되는 멤버를 포함 합니다.  
   
- 자세한 내용은 참조는 OLEUIOBJECTPROPS 및 [OLEUILINKPROPS](http://msdn.microsoft.com/library/windows/desktop/ms680735) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 OLEUIOBJECTPROPS 및 [OLEUILINKPROPS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuilinkpropsa) Windows SDK에는 구조입니다.  
   
 ##  <a name="m_psh"></a>  COlePropertiesDialog::m_psh  
- 형식의 구조체 [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546), 멤버가 대화 상자 개체의 특성을 저장 합니다.  
+ 형식의 구조체 [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-_propsheetheadera_v2), 멤버가 대화 상자 개체의 특성을 저장 합니다.  
   
 ```  
 PROPSHEETHEADER m_psh;  
@@ -207,7 +206,7 @@ PROPSHEETHEADER m_psh;
  에 대 한 자세한은 `PROPSHEETHEADER` 구조체를 Windows SDK를 참조 하세요.  
   
 ##  <a name="m_vp"></a>  COlePropertiesDialog::m_vp  
- 형식의 구조체 [OLEUIVIEWPROPS](http://msdn.microsoft.com/library/windows/desktop/ms693751)OLE 개체 속성 대화 상자의 뷰 페이지를 초기화 하는 데 사용 합니다.  
+ 형식의 구조체 [OLEUIVIEWPROPS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiviewpropsa)OLE 개체 속성 대화 상자의 뷰 페이지를 초기화 하는 데 사용 합니다.  
   
 ```  
 OLEUIVIEWPROPS m_vp;  

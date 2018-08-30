@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9c939a2a96d0f8a34dbe9424ab7e07c5a60c2224
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7a8bb269f1d572fed2d7fc85ee33f07d22a98aae
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610207"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220584"
 ---
 # <a name="component-extensions-for-runtime-platforms"></a>런타임 플랫폼의 구성 요소 확장명
 
@@ -34,7 +34,7 @@ Visual C++에서는 런타임 플랫폼을 대상으로 프로그래밍할 수 �
 
 C + + /cli CX 하위 집합인 C + + /cli CLI입니다. C +에 공통적으로 적용 되는 확장 + /CX 및 C + + /cli CLI의 경우 의미 체계는 CLR (공용 언어 런타임) 또는 Windows 런타임 대상으로 하는지 여부에 따라 달라 집니다. Windows Runtime에서 실행 되도록 앱을 컴파일하려면 지정 된 `/ZW` 컴파일러 옵션입니다. CLR에서 실행되도록 컴파일하려면 `/clr` 컴파일러 옵션을 지정합니다. 이러한 스위치는 Visual Studio를 사용하여 프로젝트를 만들 때 자동으로 설정됩니다.
 
-C + +에서 유니버설 Windows 플랫폼 앱을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [c + +를 사용 하 여 로드맵에 대 한 Windows 런타임 앱](http://msdn.microsoft.com/library/windows/apps/hh700360.aspx)합니다.
+C + +에서 유니버설 Windows 플랫폼 앱을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [c + +를 사용 하 여 로드맵에 대 한 Windows 런타임 앱](https://msdn.microsoft.com/library/windows/apps/hh700360.aspx)합니다.
 
 C + + /cli CLI ISO/ANSI c + + 표준에서를 확장 하 고 정의 된 아래 Ecma C + + /cli 표준 CLI입니다. 자세한 내용은 [.NET 프로그래밍 C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)를 참조합니다.
 

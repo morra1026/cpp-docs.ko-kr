@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7619868e131476143c144e695e842708d1b54a6b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a1117ba3933d714486f314510d0288f0c63bf4b8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606447"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202378"
 ---
 # <a name="asyncuuid"></a>async_uuid
 
@@ -43,9 +43,9 @@ MIDL 컴파일러에 지시 합니다 COM 인터페이스의 동기 및 비동�
 
 ## <a name="remarks"></a>설명
 
-합니다 **async_uuid** c + + 특성에 동일한 기능을 합니다 [async_uuid](http://msdn.microsoft.com/library/windows/desktop/aa366735) MIDL 특성입니다.
+합니다 **async_uuid** c + + 특성에 동일한 기능을 합니다 [async_uuid](/windows/desktop/Midl/async-uuid) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // cpp_attr_ref_async_uuid.cpp

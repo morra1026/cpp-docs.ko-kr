@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb3a2bce257717c695c1458b12f3e6d4f11b9d7a
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: a4d6bf9d62ae1cb80041145903267d4af4d88eaa
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849739"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214154"
 ---
 # <a name="cmfccolordialog-class"></a>CMFCColorDialog 클래스
 `CMFCColorDialog` 클래스 색 선택 대화 상자를 나타냅니다.  
@@ -63,7 +63,7 @@ class CMFCColorDialog : public CDialogEx
 |----------|-----------------|  
 |[CMFCColorDialog::GetColor](#getcolor)|현재 선택한 색을 반환합니다.|  
 |[CMFCColorDialog::GetPalette](#getpalette)|색의 색상표를 반환합니다.|  
-|`CMFCColorDialog::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다. 구문 및 자세한 내용은 [cwnd:: Pretranslatemessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)합니다. (`CDialogEx::PreTranslateMessage`를 재정의합니다.)|  
+|`CMFCColorDialog::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다. 구문 및 자세한 내용은 [cwnd:: Pretranslatemessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)합니다. (`CDialogEx::PreTranslateMessage`를 재정의합니다.)|  
 |[CMFCColorDialog::RebuildPalette](#rebuildpalette)|색상표는 시스템 색상표에서 파생 됩니다.|  
 |[CMFCColorDialog::SetCurrentColor](#setcurrentcolor)|현재 선택한 색을 설정합니다.|  
 |[CMFCColorDialog::SetNewColor](#setnewcolor)|색 RGB 값을 지정된 하려면 해당 가장 설정합니다.|  
@@ -105,7 +105,7 @@ class CMFCColorDialog : public CDialogEx
   
  [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md)  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 색 대화 상자에서 다양 한 메서드를 사용 하 여 구성 하는 방법에 설명 합니다 `CMFCColorDialog` 클래스입니다. 이 예제에서는 현재 및 대화 상자의 새 색을 설정 하는 방법 및 색 대화의 두 속성 페이지에서 선택한 색의 빨강, 녹색 및 파랑 구성 요소를 설정 하는 방법을 보여 줍니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_NewControls#3](../../mfc/reference/codesnippet/cpp/cmfccolordialog-class_1.cpp)]  
@@ -149,7 +149,7 @@ COLORREF GetColor() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 색 대화 상자에서 선택한 색의 RGB 정보를 포함 하는 값입니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) 색 대화 상자에서 선택한 색의 RGB 정보를 포함 하는 값입니다.  
   
 ### <a name="remarks"></a>설명  
  이 함수를 호출한 후 호출 된 `DoModal` 메서드.  
@@ -196,7 +196,7 @@ void SetNewColor(COLORREF rgb);
   
 ### <a name="parameters"></a>매개 변수  
  [in] *rgb*  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) RGB 색을 지정 하는 합니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) RGB 색을 지정 하는 합니다.  
   
 ### <a name="remarks"></a>설명  
   

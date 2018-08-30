@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7cbfd0e8b9ef95aac083b367980571c5535e6a7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ca91e614438695a14c6c16c05c5d778b143657eb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599044"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219385"
 ---
 # <a name="c-amp-overview"></a>C++ AMP 개요
 C + + Accelerated Massive Parallelism (c + + AMP)는 개별 그래픽 카드의 그래픽 처리 장치 (GPU)와 같은 데이터 병렬 하드웨어를 활용 하 여 c + + 코드의 실행을 가속화 합니다. C + + AMP를 사용 하 여 다른 유형의 하드웨어에서 병렬 처리를 사용 하 여 실행을 촉진할 수 있도록 다차원 데이터 알고리즘을 코딩할 수 있습니다. C++ AMP 프로그래밍 모델에는 다차원 배열, 인덱싱, 메모리 전송, 바둑판식 배열 및 수학 함수 라이브러리가 포함됩니다. C + + AMP 언어 확장을 사용 하 여 성능을 향상 시킬 수 있도록 CPU에서 GPU로 백, 데이터를 이동 하는 방법을 제어할 수 있습니다.  
@@ -464,7 +464,7 @@ C + + AMP에는 가속 된 그래픽 프로그래밍을 위해 설계 된 그래
   
 - [writeonly_texture_view 클래스](../../parallel/amp/reference/writeonly-texture-view-class.md): 모든 질감에 대 한 쓰기 전용 액세스를 제공 합니다.  
   
-- [Short 벡터 라이브러리](http://msdn.microsoft.com/en-us/4c4f5bed-c396-493b-a238-c347563f645f): 2, 3 및 4에 기반한 길이의 short 벡터 형식 집합이 정의 **int**, `uint`를 **float**를 **double**, [norm](../../parallel/amp/reference/norm-class.md), 또는 [unorm](../../parallel/amp/reference/unorm-class.md)합니다.  
+- [Short 벡터 라이브러리](https://msdn.microsoft.com/4c4f5bed-c396-493b-a238-c347563f645f): 2, 3 및 4에 기반한 길이의 short 벡터 형식 집합이 정의 **int**, `uint`를 **float**를 **double**, [norm](../../parallel/amp/reference/norm-class.md), 또는 [unorm](../../parallel/amp/reference/unorm-class.md)합니다.  
   
 ## <a name="universal-windows-platform-uwp-apps"></a>유니버설 Windows 플랫폼 (UWP) 앱  
  

@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d58fc816bea6672309e60a09528b0727c64c6fd
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 866d556c06cc7f627c2f5108384704b737eb0330
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880026"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205214"
 ---
 # <a name="ccomclassfactory-class"></a>CComClassFactory 클래스
-이 클래스에서 구현 된 [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) 인터페이스입니다.  
+이 클래스에서 구현 된 [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,7 +47,7 @@ class CComClassFactory
 |[CComClassFactory::LockServer](#lockserver)|메모리의 클래스 팩터리를 잠급니다.|  
   
 ## <a name="remarks"></a>설명  
- `CComClassFactory` 구현 된 [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) 새 개체를 보다 신속 하 게 만들 수 있도록 메모리의 클래스 팩터리 잠금 수 있을 뿐만 아니라 특정 CLSID의 개체를 만드는 메서드를 포함 하는 인터페이스입니다. `IClassFactory` 시스템 레지스트리 및 CLSID에 할당 하는 등록 하는 모든 클래스에 대 한 구현 되어야 합니다.  
+ `CComClassFactory` 구현 된 [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) 새 개체를 보다 신속 하 게 만들 수 있도록 메모리의 클래스 팩터리 잠금 수 있을 뿐만 아니라 특정 CLSID의 개체를 만드는 메서드를 포함 하는 인터페이스입니다. `IClassFactory` 시스템 레지스트리 및 CLSID에 할당 하는 등록 하는 모든 클래스에 대 한 구현 되어야 합니다.  
   
  ATL 개체에서 파생 하 여 일반적으로 클래스 팩터리를 획득 [CComCoClass](../../atl/reference/ccomcoclass-class.md)합니다. 이 클래스는 매크로 포함 [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory)를 선언 하는 `CComClassFactory` 기본 클래스 팩터리로 합니다. 이 기본값을 재정의 하려면 중 하나를 지정 합니다 `DECLARE_CLASSFACTORY` *XXX* 클래스 정의에 매크로입니다. 예를 들어, 합니다 [DECLARE_CLASSFACTORY_EX](aggregation-and-class-factory-macros.md#declare_classfactory_ex) 매크로 클래스 팩터리에 대 한 지정된 된 클래스를 사용 합니다.  
   

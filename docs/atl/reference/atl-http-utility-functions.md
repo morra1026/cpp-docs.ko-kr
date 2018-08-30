@@ -8,12 +8,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36b0647863076661eb130da1cde694b128f49d47
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 224f4d78aec432a27b2a0258d0d6b3d4a8f2174d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026090"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209510"
 ---
 # <a name="atl-http-utility-functions"></a>ATL HTTP 유틸리티 함수
 
@@ -27,7 +27,7 @@ ms.locfileid: "39026090"
 |[AtlGetDefaultUrlPort](#atlgetdefaulturlport)|특정 인터넷 프로토콜 또는 체계를 사용 하 여 연결 된 기본 포트 번호를 가져옵니다.|  
 |[AtlIsUnsafeUrlChar](#atlisunsafeurlchar)|안전 하 게 URL에 사용할 문자 인지 확인 합니다.|  
 |[AtlUnescapeUrl](#atlunescapeurl)|이스케이프 된 문자를 원래 값으로 다시 변환 합니다.|  
-|[RGBToHtml](#rgbtohtml)|변환 된 [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 를 색 값에 해당 하는 HTML 텍스트 값입니다.|
+|[RGBToHtml](#rgbtohtml)|변환 된 [COLORREF](/windows/desktop/gdi/colorref) 를 색 값에 해당 하는 HTML 텍스트 값입니다.|
 |[SystemTimeToHttpDate](#systemtimetohttpdate)|시스템 시간을 HTTP 헤더에서 사용하기에 적합한 형식의 문자열로 변환하려면 이 함수를 호출합니다.|
 
 ## <a name="requirements"></a>요구 사항  
@@ -69,10 +69,10 @@ inline BOOL AtlCanonicalizeUrl(
  성공 하면 TRUE를 반환 합니다. 실패 한 경우 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 현재 버전 처럼 [InternetCanonicalizeUrl](http://msdn.microsoft.com/library/windows/desktop/aa384342) 하지만 WinInet 또는 Internet Explorer를 설치할 필요는 없습니다.  
+ 현재 버전 처럼 [InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla) 하지만 WinInet 또는 Internet Explorer를 설치할 필요는 없습니다.  
   
 ### <a name="see-also"></a>참고 항목  
- [InternetCanonicalizeUrl](http://msdn.microsoft.com/library/windows/desktop/aa384342)
+ [InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla)
 
  ## <a name="atlcombineurl"></a> AtlCombineUrl
  기본 URL과 상대 URL을 단일 정규 URL로 결합하려면 이 함수를 호출합니다.  
@@ -106,7 +106,7 @@ inline BOOL AtlCombineUrl(
  성공 하면 TRUE를 반환 합니다. 실패 한 경우 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 현재 버전 처럼 [InternetCombineUrl](http://msdn.microsoft.com/library/windows/desktop/aa384355) 하지만 WinInet 또는 Internet Explorer를 설치할 필요는 없습니다.  
+ 현재 버전 처럼 [InternetCombineUrl](/windows/desktop/api/wininet/nf-wininet-internetcombineurla) 하지만 WinInet 또는 Internet Explorer를 설치할 필요는 없습니다.  
   
 ## <a name="atlescapeurl"></a> AtlEscapeUrl
  모든 안전하지 않은 문자를 이스케이프 시퀀스로 변환하려면 이 함수를 호출합니다.  
@@ -214,7 +214,7 @@ inline BOOL AtlUnescapeUrl(
  적용 하 여 변환 프로세스를 반대로 [AtlEscapeUrl](#atlescapeurl)합니다.  
   
 ## <a name="rgbtohtml"></a> RGBToHtml
-변환 된 [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 를 색 값에 해당 하는 HTML 텍스트 값입니다.  
+변환 된 [COLORREF](/windows/desktop/gdi/colorref) 를 색 값에 해당 하는 HTML 텍스트 값입니다.  
   
 ```  
 bool inline RGBToHtml(  

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2704e39ffced414e84236302c9ad31586226dd8d
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 13e04c7f1ae9873ebf2d044dd8b6d6948e55a120
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027688"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197474"
 ---
 # <a name="run-time-object-model-services"></a>런타임 개체 모델 서비스
 클래스 [CObject](../../mfc/reference/cobject-class.md) 하 고 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 런타임 클래스 정보, serialization 및 동적 개체 만들기에 대 한 액세스를 포함 하 여 여러 개체 서비스를 캡슐화 합니다. 모든 클래스에서 파생 된 `CObject` 이 기능을 상속 합니다.  
@@ -87,7 +87,7 @@ AFX_COMCTL32_IF_EXISTS(  proc );
  함수 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터 또는 함수의 서 수 값을 지정 합니다. 하위 단어;에 있어야이 매개 변수 서 수 값 인 경우 상위 단어에는 0 이어야 합니다. 이 매개 변수는 유니코드 여야 합니다.  
    
 ### <a name="remarks"></a>설명  
- 이 매크로 사용 하 여 공용 컨트롤 라이브러리 함수가 지정 여부를 결정할 *proc* (호출 하는 대신 [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212)합니다.  
+ 이 매크로 사용 하 여 공용 컨트롤 라이브러리 함수가 지정 여부를 결정할 *proc* (호출 하는 대신 [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212)합니다.  
    
 ### <a name="requirements"></a>요구 사항  
  afxcomctl32.h, afxcomctl32.inl이  
@@ -107,7 +107,7 @@ AFX_COMCTL32_IF_EXISTS2( proc );
  함수 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터 또는 함수의 서 수 값을 지정 합니다. 하위 단어;에 있어야이 매개 변수 서 수 값 인 경우 상위 단어에는 0 이어야 합니다. 이 매개 변수는 유니코드 여야 합니다.  
    
 ### <a name="remarks"></a>설명  
- 이 매크로 사용 하 여 공용 컨트롤 라이브러리 함수가 지정 여부를 결정할 *proc* (호출 하는 대신 [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212)합니다. 이 매크로 AFX_COMCTL32_IF_EXISTS의 유니코드 버전입니다.  
+ 이 매크로 사용 하 여 공용 컨트롤 라이브러리 함수가 지정 여부를 결정할 *proc* (호출 하는 대신 [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212)합니다. 이 매크로 AFX_COMCTL32_IF_EXISTS의 유니코드 버전입니다.  
    
 ### <a name="requirements"></a>요구 사항  
  afxcomctl32.h, afxcomctl32.inl이  
@@ -137,7 +137,7 @@ DECLARE_DYNAMIC(class_name)
   
  DECLARE_DYNAMIC 매크로에 대 한 자세한 내용은 참조 하세요. [CObject 클래스 항목](../../mfc/using-cobject.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [IMPLEMENT_DYNAMIC](#implement_dynamic)합니다.  
 
 ### <a name="requirements"></a>요구 사항  
@@ -166,7 +166,7 @@ DECLARE_DYNCREATE(class_name)
 > [!NOTE]
 >  DECLARE_DYNCREATE 매크로 DECLARE_DYNAMIC의 모든 기능을 포함 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [IMPLEMENT_DYNCREATE](#implement_dyncreate)합니다.  
 
 ### <a name="requirements"></a>요구 사항  
@@ -243,7 +243,7 @@ DECLARE_SERIAL(class_name)
   
  DECLARE_SERIAL 매크로에 대 한 자세한 내용은 참조 하세요. [CObject 클래스 항목](../../mfc/using-cobject.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCCObjectSample#21](../../mfc/codesnippet/cpp/run-time-object-model-services_2.h)]  
   
 ### <a name="requirements"></a>요구 사항  
@@ -268,7 +268,7 @@ IMPLEMENT_DYNAMIC(class_name, base_class_name)
   
  자세한 내용은 [CObject 클래스 항목](../../mfc/using-cobject.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCCObjectSample#2](../../mfc/codesnippet/cpp/run-time-object-model-services_3.h)]  
   
  [!code-cpp[NVC_MFCCObjectSample#3](../../mfc/codesnippet/cpp/run-time-object-model-services_4.cpp)]  
@@ -299,7 +299,7 @@ IMPLEMENT_DYNCREATE(class_name, base_class_name)
   
  이 매크로 정의 클래스에 대 한 기본 생성자를 호출 하는 참고 합니다. Trivial이 아닌 생성자를 클래스에 의해 명시적으로 구현 되는 경우 명시적으로 기본 생성자도 구현 해야 합니다. 기본 생성자는 클래스에 추가할 수 있습니다 **사설** 하거나 **보호** 클래스 구현 외부에서 호출 되지 않도록 멤버 섹션.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCCObjectSample#22](../../mfc/codesnippet/cpp/run-time-object-model-services_5.h)]  
   
  [!code-cpp[NVC_MFCCObjectSample#23](../../mfc/codesnippet/cpp/run-time-object-model-services_6.cpp)]  
@@ -330,7 +330,7 @@ IMPLEMENT_OLECREATE_FLAGS( class_name, external_name, nFlags,
     -   `afxRegApartmentThreading` ThreadingModel 레지스트리의 스레딩 모델을 설정 하는 아파트 =.    
     -   `afxRegFreeThreading` ThreadingModel 레지스트리의 스레딩 모델을 설정 합니다. 무료 =.  
       
-         두 플래그를 조합할 수 있습니다 `afxRegApartmentThreading` 및 `afxRegFreeThreading` ThreadingModel 설정 = Both입니다. 참조 [InprocServer32](http://msdn.microsoft.com/library/windows/desktop/ms682390) 스레딩 모델 등록 대 한 자세한 내용은 Windows SDK에 있습니다. 
+         두 플래그를 조합할 수 있습니다 `afxRegApartmentThreading` 및 `afxRegFreeThreading` ThreadingModel 설정 = Both입니다. 참조 [InprocServer32](/windows/desktop/com/inprocserver32) 스레딩 모델 등록 대 한 자세한 내용은 Windows SDK에 있습니다. 
    
  *l*, *w1*를 *w2*를 *b1*를 *b2*를 *b3*, *b4* 를 *b5*, *b6*하십시오 *b7*, *b 8*  
  클래스의 CLSID의 구성 요소입니다.  
@@ -350,7 +350,7 @@ IMPLEMENT_OLECREATE_FLAGS( class_name, external_name, nFlags,
 ### <a name="see-also"></a>참고 항목  
  [매크로 및 전역](mfc-macros-and-globals.md)   
  [DECLARE_OLECREATE](#declare_olecreate)   
- [CLSID 키](http://msdn.microsoft.com/library/windows/desktop/ms691424)
+ [CLSID 키](/windows/desktop/com/clsid-key-hklm)
 
 
 ## <a name="implement_olecreate"></a> IMPLEMENT_OLECTLTYPE
@@ -368,12 +368,12 @@ DECLARE_OLECTLTYPE( class_name, idsUserTypeName, dwOleMisc )
  컨트롤의 외부 이름을 포함 하는 문자열의 리소스 ID입니다.  
   
  *dwOleMisc*  
- 하나 이상의 플래그를 포함 하는 열거형입니다. 이 열거형에 대 한 자세한 내용은 참조 하세요. [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) Windows SDK에 있습니다.  
+ 하나 이상의 플래그를 포함 하는 열거형입니다. 이 열거형에 대 한 자세한 내용은 참조 하세요. [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) Windows SDK에 있습니다.  
    
 ### <a name="remarks"></a>설명  
  IMPLEMENT_OLECTLTYPE, 외에도 DECLARE_OLECTLTYPE 매크로 컨트롤 클래스 선언에 추가 해야 합니다.  
   
- `GetUserTypeNameID` 멤버 함수는 사용자 컨트롤 클래스를 식별 하는 리소스 문자열을 반환 합니다. `GetMiscStatus` 컨트롤에 대 한 OLEMISC 비트를 반환합니다. 이 열거형 컨트롤의 기타 특성을 설명 하는 설정의 컬렉션을 지정 합니다. 에 대 한 전체 설명은 OLEMISC 설정을 참조 하세요 [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) Windows SDK에 있습니다.  
+ `GetUserTypeNameID` 멤버 함수는 사용자 컨트롤 클래스를 식별 하는 리소스 문자열을 반환 합니다. `GetMiscStatus` 컨트롤에 대 한 OLEMISC 비트를 반환합니다. 이 열거형 컨트롤의 기타 특성을 설명 하는 설정의 컬렉션을 지정 합니다. 에 대 한 전체 설명은 OLEMISC 설정을 참조 하세요 [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) Windows SDK에 있습니다.  
   
 > [!NOTE]
 >  ActiveX 컨트롤에서 사용 하는 기본 설정이: OLEMISC_ACTIVATEWHENVISIBLE "," OLEMISC_SETCLIENTSITEFIRST "," OLEMISC_INSIDEOUT "," OLEMISC_CANTLINKINSIDE, "및" OLEMISC_RECOMPOSEONRESIZE 합니다.  
@@ -411,7 +411,7 @@ IMPLEMENT_SERIAL(class_name, base_class_name, wSchema)
   
  자세한 내용은 참조는 [CObject 클래스 항목](../../mfc/using-cobject.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCCObjectSample#24](../../mfc/codesnippet/cpp/run-time-object-model-services_7.cpp)]  
 
 ### <a name="requirements"></a>요구 사항  
@@ -433,7 +433,7 @@ RUNTIME_CLASS(class_name)
   
  자세한 내용은 [CObject 클래스 항목](../../mfc/using-cobject.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCCObjectSample#25](../../mfc/codesnippet/cpp/run-time-object-model-services_8.cpp)]  
 
 ### <a name="requirements"></a>요구 사항  

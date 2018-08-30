@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: debb983c-382b-487b-8d42-7ea26dc158b8
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: ee594cb3cfef5ebc67b953b62d05b933b71f9f1d
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: c70347c7226df804acd894b6271c4673ec81f72d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884195"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201157"
 ---
 # <a name="ccomclassfactorysingleton-class"></a>CComClassFactorySingleton 클래스
 이 클래스에서 파생 됩니다 [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) 사용 하 여 [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) 단일 개체를 생성 하 합니다.  
@@ -109,7 +109,7 @@ CComPtr<IUnknown> m_spObj;
  현재 형태로 `m_spObj` 주요 변경 내용 방식에서 제공 하는 `CComClassFactorySingleton` ATL.의 이전 버전에서 작동 이전 버전에서의 `CComClassFactorySingleton` 클래스 팩터리로 동시에 서버를 초기화 하는 동안 개체를 만든 합니다. Visual c + +.NET 2003에서는 개체는 첫 번째 요청에 나중에 생성 됩니다. 이 변경에는 초기 초기화를 사용 하는 프로그램에서 오류가 발생할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364)   
+ [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)   
  [CComClassFactory2 클래스](../../atl/reference/ccomclassfactory2-class.md)   
  [CComClassFactoryAutoThread 클래스](../../atl/reference/ccomclassfactoryautothread-class.md)   
  [CComObjectRootEx 클래스](../../atl/reference/ccomobjectrootex-class.md)   

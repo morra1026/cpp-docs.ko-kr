@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e6a6c25367e2b978ac4a8c82f36c07907614bbc3
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 10acf2b69eaa6b49145e671d437f18dfaff8e499
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42584752"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195792"
 ---
 # <a name="dbcolumn"></a>db_column
 
@@ -74,9 +74,9 @@ OLE DB [유형 표시기](/previous-versions/windows/desktop/ms711251\(v=vs.85\)
 
 컴파일러는 클래스 이름을 소비자 특성 공급자가이 특성 클래스에 적용 될 때 \_ *YourClassName*접근자를 여기서 *YourClassName* 제공한 이름인는 클래스 및 컴파일러 라는 클래스를 만들 수도 됩니다 *YourClassName*에서 파생 되는 \_ *YourClassName*접근자입니다.  클래스 뷰에 두 클래스 모두 표시됩니다.
 
-응용 프로그램에서 사용 되는이 특성의 예제는 예제를 보려면 [AtlAgent](http://msdn.microsoft.com/52bef5da-c1a0-4223-b4e6-9e464b6db409), 및 [MultiRead](http://msdn.microsoft.com/5a2a915a-77dc-492f-94b2-1b809995dd5e)합니다.
+응용 프로그램에서 사용 되는이 특성의 예제는 예제를 보려면 [AtlAgent](https://github.com/Microsoft/VCSamples), 및 [MultiRead](https://github.com/Microsoft/VCSamples)합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 샘플 테이블의 열을 바인딩하는 **긴** 데이터 멤버 상태 및 길이 필드를 지정 합니다.
 
@@ -96,7 +96,7 @@ class CProducts {
 };
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 샘플에는 네 개의 열을 바인딩하는 **긴**, 문자열, 타임 스탬프를 및 `DB_NUMERIC` 순서 대로 정수입니다.
 

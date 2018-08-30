@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4d1911a8bd8a7f3079497ec66ea1de59aff480a0
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9d84eef4c91442eedc830fdee836dc5d950b5eae
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604052"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209592"
 ---
 # <a name="creating-new-symbols"></a>새 기호 만들기
 
@@ -45,7 +45,7 @@ ms.locfileid: "42604052"
 
 이미 있는 기호 이름을 입력하면 해당 이름을 사용하는 기호가 이미 정의되어 있다는 메시지 상자가 나타납니다. 이름이 같은 기호를 두 개 이상 정의할 수는 없지만 동일한 숫자 값을 사용하는 서로 다른 기호는 정의할 수 있습니다. 자세한 내용은 [기호 이름 제한](../windows/symbol-name-restrictions.md) 하 고 [기호 값 제한](../windows/symbol-value-restrictions.md)합니다.
 
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 를 참조하세요. 관리되는 프로젝트에 리소스 파일 추가, 리소스 액세스, 정적 리소스 표시, 속성에 리소스 문자열 할당 등의 작업을 수동으로 수행하는 방법에 대한 자세한 내용은 [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6)를 선택합니다.
+관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 리소스에 액세스 하는 관리 되는 프로젝트에 리소스 파일을 수동으로 추가 하는 방법은 속성에 문자열, 정적 리소스 표시 및 리소스를 할당 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

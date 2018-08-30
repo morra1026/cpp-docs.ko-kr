@@ -25,15 +25,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7aad2093ecc9511c3b15f68963b496130bf3c3f
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 62ed04d8e54e4bf107ae12b9a4165b663c9d10d8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882113"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203873"
 ---
 # <a name="ccomcachedtearoffobject-class"></a>CComCachedTearOffObject 클래스
-이 클래스는 구현 [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) 분리 인터페이스입니다.  
+이 클래스는 구현 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 분리 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -76,7 +76,7 @@ public CComObjectRootEx<contained
 |[CComCachedTearOffObject::m_contained](#m_contained)|A `CComContainedObject` 분리 클래스에서 파생 된 개체 (클래스 `contained`).|  
   
 ## <a name="remarks"></a>설명  
- `CComCachedTearOffObject` 구현 [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) 분리 인터페이스입니다. 이 클래스에서 다른 `CComTearOffObject` 한다는 점에서 `CComCachedTearOffObject` 에 자체 `IUnknown`소유자 개체와에서는 별도로 `IUnknown` (소유자는의 분리는 생성 되는 개체를가 하는 데 사용). `CComCachedTearOffObject` 자체 유지 관리 참조 횟수에 해당 `IUnknown` 참조 횟수가 0이 되 면 자체를 삭제 합니다. 그러나 해당 분리 중 하나에 대 한 쿼리 하는 경우 인터페이스를 소유자 개체의 참조 횟수 `IUnknown` 증가 됩니다.  
+ `CComCachedTearOffObject` 구현 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 분리 인터페이스입니다. 이 클래스에서 다른 `CComTearOffObject` 한다는 점에서 `CComCachedTearOffObject` 에 자체 `IUnknown`소유자 개체와에서는 별도로 `IUnknown` (소유자는의 분리는 생성 되는 개체를가 하는 데 사용). `CComCachedTearOffObject` 자체 유지 관리 참조 횟수에 해당 `IUnknown` 참조 횟수가 0이 되 면 자체를 삭제 합니다. 그러나 해당 분리 중 하나에 대 한 쿼리 하는 경우 인터페이스를 소유자 개체의 참조 횟수 `IUnknown` 증가 됩니다.  
   
  경우는 `CComCachedTearOffObject` 개체를 분리 구현 이미 인스턴스화된 분리 인터페이스를 쿼리 하는 마찬가지로 동일한 `CComCachedTearOffObject` 개체 다시 사용 됩니다. 반대로, 분리 인터페이스를 구현한 경우에 `CComTearOffObject` 다시 쿼리 하는 소유자 개체를 통해 다른 `CComTearOffObject` 인스턴스화됩니다.  
   

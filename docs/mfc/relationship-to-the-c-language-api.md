@@ -20,20 +20,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d06c4adfa5493929a24c233fa923451c7bf0f95
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8d0bb7aa4f647ceeb61c20cccd626d9da999b241
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33379231"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200114"
 ---
 # <a name="relationship-to-the-c-language-api"></a>C 언어 API와의 관계
-다른 클래스 라이브러리 외에도 Windows 용 Microsoft Foundation 클래스 (MFC) 라이브러리를 설정 하는 단일 특성은 C 언어로 작성 된 Windows API에 대 한 매우 가까운 매핑입니다. 또한 일반적으로 섞을 수 클래스 라이브러리에 대 한 호출 자유롭게 Windows API를 직접 호출 합니다. 그러나 이러한 직접 액세스, 뜻하지는지 않습니다는 클래스는 해당 API에 대 한 완전 한 대체 합니다. 개발자 해야 같은 일부 Windows 함수를 직접 호출을 수행할 가끔 여전히 [SetCursor](http://msdn.microsoft.com/library/windows/desktop/ms648393) 및 [GetSystemMetrics](http://msdn.microsoft.com/library/windows/desktop/ms724385), 예를 들어 있습니다. Windows 함수 분명 한 이점은 이렇게 하는 경우에 클래스 멤버 함수에 의해 래핑됩니다.  
+Windows에 대 한 다른 클래스 라이브러리 외에도 Microsoft Foundation 클래스 (MFC) 라이브러리를 설정 하는 단일 특성은 C 언어로 작성 된 Windows API에 근접 매핑은. 또한 혼합할 수 있습니다 일반적으로 클래스 라이브러리에 대 한 호출 자유롭게 Windows API를 직접 호출 합니다. 하지만 이러한 직접 액세스 의미 하지 않습니다, 해당 API에 대 한 완전 한 대체 클래스는. 개발자 해야 같은 일부 Windows 함수를 직접 호출을 수행할 종종 [SetCursor](/windows/desktop/api/winuser/nf-winuser-setcursor) 하 고 [GetSystemMetrics](https://msdn.microsoft.com/library/windows/desktop/ms724385)예를 들어 합니다. Windows 함수 분명 한 이점은 이렇게 하는 경우에 클래스 멤버 함수에 의해 래핑됩니다.  
   
- 때로는 네이티브 Windows 함수를 호출 해야 하기 때문에 C 언어 Windows API 설명서에 액세스할 수 있어야 합니다. 이 설명서는 Microsoft Visual c + +에 포함 되어 있습니다.  
+ 경우에 따라 네이티브 Windows 함수 호출을 수행 해야 하기 때문에 C 언어 Windows API 설명서에 대 한 액세스를 해야 합니다. 이 설명서는 Microsoft Visual c + +를 사용 하 여 포함 합니다.  
   
 > [!NOTE]
->  MFC 라이브러리 프레임 워크 작동 하는 방법의 개요를 참조 하십시오. [클래스를 사용 하 여 Windows 용 응용 프로그램을](../mfc/using-the-classes-to-write-applications-for-windows.md)합니다.  
+>  MFC 라이브러리 프레임 워크의 작동 방식 개요를 참조 하세요 [클래스를 사용 하 여 Windows에 대 한 응용 프로그램 작성을](../mfc/using-the-classes-to-write-applications-for-windows.md)입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [일반 클래스 디자인 원칙](../mfc/general-class-design-philosophy.md)

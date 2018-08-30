@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 677d3dcab98b9bff8df7a49ba584900bd0b72925
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: bde476af66ae0a5a560019db29d25385c718e517
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39407220"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201804"
 ---
 # <a name="comptrtcreateinstance"></a>_com_ptr_t::CreateInstance
 **Microsoft 전용**  
@@ -69,9 +69,9 @@ HRESULT CreateInstance(
   
 -   **CreateInstance (***rclsid* **하십시오***dwClsContext***)** 는지정된개체의새실행인스턴스만들기`CLSID`.  
   
--   **CreateInstance (***clsidString* **하십시오***dwClsContext***)** 지정 된 개체의 새 실행 인스턴스 만들기를 보유 하는 유니코드 문자열을 `CLSID` (시작 "**{**") 또는 `ProgID`합니다.        
+-   **CreateInstance (***clsidString* **하십시오***dwClsContext***)** 지정 된 개체의 새 실행 인스턴스 만들기를 보유 하는 유니코드 문자열을 `CLSID` (시작 "**{**") 또는 `ProgID`합니다.  
   
--   **CreateInstance (***clsidStringA* **하십시오***dwClsContext***)** 지정 된 개체의 새 실행 인스턴스 만들기를 중 하나를 포함 하는 멀티 바이트 문자열을 `CLSID` (시작 "**{**") 또는 `ProgID`합니다.       호출 [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072), OEM 코드 페이지가 아닌 ANSI 코드 페이지에서 해당 문자열은 가정 합니다.  
+-   **CreateInstance (***clsidStringA* **하십시오***dwClsContext***)** 지정 된 개체의 새 실행 인스턴스 만들기를 중 하나를 포함 하는 멀티 바이트 문자열을 `CLSID` (시작 "**{**") 또는 `ProgID`합니다. 호출 [MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar), OEM 코드 페이지가 아닌 ANSI 코드 페이지에서 해당 문자열은 가정 합니다.  
   
  **Microsoft 전용 종료**  
   

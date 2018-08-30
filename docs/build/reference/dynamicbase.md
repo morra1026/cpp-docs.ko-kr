@@ -1,7 +1,7 @@
 ---
 title: -DYNAMICBASE | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/12/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -18,29 +18,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d7a4cf7aa35d7ad6b41fc6d61f3f27662ae2c8d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 255123157da3f802eafaf26206598d54fea02335
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223442"
 ---
 # <a name="dynamicbase"></a>/DYNAMICBASE
-ASLR(주소 공간 레이아웃 불규칙화)를 사용해서 로드 시 실행 가능 이미지를 임의로 릴리스할 수 있는지 여부를 다시 지정합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-/DYNAMICBASE[:NO]  
-```  
-  
-## <a name="remarks"></a>설명  
- 기본적으로 링커는 설정의 **/DYNAMICBASE** 옵션입니다.  
-  
- 이 옵션은 실행 가능 이미지의 헤더를 수정해서 로드 시 로더가 이미지의 기준 주소를 임의로 다시 지정할 수 있는지 여부를 나타냅니다.  
-  
- ASLR은 Windows Vista, Windows Server 2008, Windows 7, Windows 8 및 Windows Server 2012에서 지원됩니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [EDITBIN 옵션](../../build/reference/editbin-options.md)   
- [Windows ISV 소프트웨어 보안 방어](http://msdn.microsoft.com/library/bb430720.aspx)
+
+먼저 Windows Vista에서 사용할 수 있는 Windows의 주소 공간 레이아웃 불규칙화 (ASLR) 기능을 사용 하 여 로드 시 임의로 지정할 수 있는 실행 가능 이미지를 생성할지 여부를 지정 합니다.
+
+## <a name="syntax"></a>구문
+
+> **/DYNAMICBASE**[**: NO**]
+
+## <a name="remarks"></a>설명
+
+합니다 **/DYNAMICBASE** 의 헤더를 수정 하는 옵션을 *실행 가능 이미지*, 응용 프로그램 로드 시 임의로 지정할 해야 하 고 가상 주소를 사용 하도록 설정 하는지 여부를 나타내기 위해.dll 또는.exe 파일 힙의 가상 메모리 위치에 영향을 미치는 할당 불규칙화를 스택 및 기타 운영 체제 할당 합니다. 합니다 **/DYNAMICBASE** 옵션은 32 비트 및 64 비트 이미지에 적용 됩니다. ASLR은 Windows Vista 이상의 운영 체제에서 지원 됩니다. 이전 운영 체제에서 무시 됩니다.
+
+기본적으로 **/DYNAMICBASE** 사용 가능 합니다. 이 옵션을 사용 하지 **/dynamicbase: no**합니다. 합니다 **/DYNAMICBASE** 옵션은 필요 합니다 [/HIGHENTROPYVA](highentropyva-support-64-bit-aslr.md) 영향을 줄 수 있습니다.
+
+## <a name="see-also"></a>참고자료
+
+- [EDITBIN 옵션](../../build/reference/editbin-options.md)
+- [Windows ISV 소프트웨어 보안 방어](https://msdn.microsoft.com/library/bb430720.aspx)

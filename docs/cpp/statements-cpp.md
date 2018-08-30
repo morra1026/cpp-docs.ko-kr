@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 87e2e48a7d923811e2c696f0ec8bee72e8327a13
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 9458e427c1954a351ffcedfa2fce0a39634d8369
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464404"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216367"
 ---
 # <a name="statements-c"></a>문 (C++)
 C++ 명령문은 개체 조작 방법과 순서를 제어하는 프로그램 요소입니다. 이 단원에는 다음이 포함됩니다.  
@@ -42,7 +42,7 @@ C++ 명령문은 개체 조작 방법과 순서를 제어하는 프로그램 요
   
     -   [점프 문](../cpp/jump-statements-cpp.md)합니다. 이 명령문은 함수의 다른 위치로 제어를 즉시 전달하거나 함수로부터의 제어를 반환합니다.  
   
-    -   [선언문](http://msdn.microsoft.com/14538558-356f-450e-9e1e-3cd62ba952b9)합니다. 선언은 프로그램에 이름을 제공합니다. ([선언 및 정의](declarations-and-definitions-cpp.md) 자세한 선언에 대 한 정보를 제공 합니다.)  
+    -   [선언문](https://msdn.microsoft.com/14538558-356f-450e-9e1e-3cd62ba952b9)합니다. 선언은 프로그램에 이름을 제공합니다. ([선언 및 정의](declarations-and-definitions-cpp.md) 자세한 선언에 대 한 정보를 제공 합니다.)  
   
  예외 처리문에 대 한 내용은 [예외 처리](../cpp/exception-handling-in-visual-cpp.md)합니다.  
   

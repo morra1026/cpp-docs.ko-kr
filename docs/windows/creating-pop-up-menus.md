@@ -20,18 +20,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 878f7b31d98a26a76b8466e7a93cd3d165ed145f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6b06fa02420b70538faa70b24137df634420dd8d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42583459"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222646"
 ---
 # <a name="creating-pop-up-menus"></a>팝업 메뉴 만들기
 
 [팝업 메뉴](../mfc/menus-mfc.md) 에는 자주 사용되는 명령이 표시됩니다. 포인터 위치에 대한 상황에 맞는 메뉴일 수 있습니다. 응용 프로그램에서 팝업 메뉴를 사용하려면 메뉴 자체를 빌드한 후 응용 프로그램 코드에 연결해야 합니다.
 
-메뉴 리소스를 만든 후에는 응용 프로그램 코드에서 메뉴 리소스를 로드하고 [TrackPopupMenu](http://msdn.microsoft.com/library/windows/desktop/ms648002) 를 사용하여 메뉴를 표시해야 합니다. 사용자가 팝업 메뉴 바깥쪽을 클릭하여 해제하거나 명령을 클릭한 경우 해당 함수가 반환됩니다. 사용자가 명령을 선택하는 경우 해당 명령 메시지가 핸들이 전달된 창으로 전송됩니다.
+메뉴 리소스를 만든 후에 응용 프로그램 코드 메뉴 리소스를 로드 하 여 사용 해야 [TrackPopupMenu](/windows/desktop/api/winuser/nf-winuser-trackpopupmenu) 를 메뉴를 표시 합니다. 사용자가 팝업 메뉴 바깥쪽을 클릭하여 해제하거나 명령을 클릭한 경우 해당 함수가 반환됩니다. 사용자가 명령을 선택하는 경우 해당 명령 메시지가 핸들이 전달된 창으로 전송됩니다.
 
 ### <a name="to-create-a-pop-up-menu"></a>팝업 메뉴를 만들려면
 

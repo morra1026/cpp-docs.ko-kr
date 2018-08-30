@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5dd17c0541b573cba40146c55b46d14143209c87
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 3db235771156380c5f1b22af225d7aacbc4989b3
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853880"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203507"
 ---
 # <a name="colelinksdialog-class"></a>COleLinksDialog 클래스
 OLE 링크 편집 대화 상자에 사용합니다.  
@@ -64,7 +64,7 @@ class COleLinksDialog : public COleDialog
 > [!NOTE]
 >  응용 프로그램 컨테이너 마법사에서 생성 된 코드는이 클래스를 사용합니다.  
   
- 자세한 내용은 참조는 [OLEUIEDITLINKS](http://msdn.microsoft.com/library/windows/desktop/ms678492) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [OLEUIEDITLINKS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuieditlinksa) Windows SDK에는 구조입니다.  
   
  OLE 관련 대화 상자에 대 한 자세한 내용은 문서 참조 [OLE의 대화 상자](../../mfc/dialog-boxes-in-ole.md)합니다.  
   
@@ -100,7 +100,7 @@ virtual INT_PTR DoModal();
   
 - 사용자가 대화 상자를 취소 하는 경우 IDCANCEL 합니다.  
   
-- IDABORT 오류가 발생 합니다. IDABORT 반환 되 면 호출 된 `COleDialog::GetLastError` 발생 한 오류 유형에 대 한 자세한 정보를 보려면 멤버 함수입니다. 목록을 가능한 오류에 대 한 참조를 [OleUIEditLinks](http://msdn.microsoft.com/library/windows/desktop/ms679703) Windows SDK에는 함수입니다.  
+- IDABORT 오류가 발생 합니다. IDABORT 반환 되 면 호출 된 `COleDialog::GetLastError` 발생 한 오류 유형에 대 한 자세한 정보를 보려면 멤버 함수입니다. 목록을 가능한 오류에 대 한 참조를 [OleUIEditLinks](/windows/desktop/api/oledlg/nf-oledlg-oleuieditlinksa) Windows SDK에는 함수입니다.  
   
 ### <a name="remarks"></a>설명  
  멤버를 설정 하 여 다양 한 대화 상자 컨트롤을 초기화 하려는 경우는 [m_el](#m_el) 구조를 수행 해야 호출 하기 전에 `DoModal`, 대화 상자 개체에서 생성 된 후 있지만.  
@@ -142,7 +142,7 @@ OLEUIEDITLINKS m_el;
 ### <a name="remarks"></a>설명  
  이 구조체의 멤버는 직접 또는 멤버 함수를 통해 수정할 수 있습니다.  
   
- 자세한 내용은 참조는 [OLEUIEDITLINKS](http://msdn.microsoft.com/library/windows/desktop/ms678492) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [OLEUIEDITLINKS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuieditlinksa) Windows SDK에는 구조입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [COleDialog 클래스](../../mfc/reference/coledialog-class.md)   

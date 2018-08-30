@@ -82,12 +82,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f33335e193997c0988cab0580c3eab612d0cc84
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: f278ffd3d3210f899e86787d0872180df2d91d98
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852305"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222861"
 ---
 # <a name="colecontrolcontainer-class"></a>COleControlContainer 클래스
 ActiveX 컨트롤의 컨트롤 컨테이너 역할을 합니다.  
@@ -149,7 +149,7 @@ class COleControlContainer : public CCmdTarget
 |[COleControlContainer::m_siteMap](#m_sitemap)|사이트 맵입니다.|  
   
 ## <a name="remarks"></a>설명  
- 하나 이상의 ActiveX 컨트롤 사이트에 대 한 지원을 제공 하면 됩니다 (구현한 `COleControlSite`). `COleControlContainer` 완벽 하 게 구현 합니다 [IOleInPlaceFrame](http://msdn.microsoft.com/library/windows/desktop/ms692770) 및 [IOleContainer](http://msdn.microsoft.com/library/windows/desktop/ms690103) 인터페이스를 포함 된 ActiveX 컨트롤에 있는 항목으로 해당 조건을 충족 합니다.  
+ 하나 이상의 ActiveX 컨트롤 사이트에 대 한 지원을 제공 하면 됩니다 (구현한 `COleControlSite`). `COleControlContainer` 완벽 하 게 구현 합니다 [IOleInPlaceFrame](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceframe) 및 [IOleContainer](/windows/desktop/api/oleidl/nn-oleidl-iolecontainer) 인터페이스를 포함 된 ActiveX 컨트롤에 있는 항목으로 해당 조건을 충족 합니다.  
   
  이 클래스와 함께 사용 되는 일반적으로 `COccManager` 및 `COleControlSite` 하나 이상의 ActiveX 컨트롤에 대 한 사용자 지정 사이트를 사용 하 여 사용자 지정 ActiveX 컨트롤 컨테이너를 구현 합니다.  
   
@@ -449,7 +449,7 @@ virtual UINT GetDlgItemInt(
  함수가 성공/실패 값을 수신 하는 부울 변수에 대 한 포인터 (성공한 TRUE, FALSE 이면 실패).  
   
  *bSigned*  
- 함수 시작 부분에 빼기 기호에 대 한 텍스트를 검토 하며 발견 되 면 부호 있는 정수 값을 반환 하는지 여부를 지정 합니다. 경우는 *bSigned* 매개 변수가 TRUE 이면 반환 값을 캐스팅 값을 검색할 수는 부호 있는 정수 인지를 지정 하는 **int** 형식입니다. 확장 오류 정보를 가져오기, 호출 [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360)합니다.  
+ 함수 시작 부분에 빼기 기호에 대 한 텍스트를 검토 하며 발견 되 면 부호 있는 정수 값을 반환 하는지 여부를 지정 합니다. 경우는 *bSigned* 매개 변수가 TRUE 이면 반환 값을 캐스팅 값을 검색할 수는 부호 있는 정수 인지를 지정 하는 **int** 형식입니다. 확장 오류 정보를 가져오기, 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)합니다.  
   
 ### <a name="return-value"></a>반환 값  
  경우 성공 하면 변수에서 가리키는 *lpTrans* TRUE로 설정 되 고 반환 값은 컨트롤 텍스트의 번역 된 값.  
@@ -486,7 +486,7 @@ virtual int GetDlgItemText(
 ### <a name="return-value"></a>반환 값  
  함수가 성공 하면 반환 값은 null 종결 문자를 포함 하지 않습니다, 버퍼에 복사 하는 문자 수를 지정 합니다.  
   
- 함수가 실패하면 반환 값은 0입니다. 확장 오류 정보를 가져오기, 호출 [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360)합니다.  
+ 함수가 실패하면 반환 값은 0입니다. 확장 오류 정보를 가져오기, 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)합니다.  
   
 ##  <a name="handlesetfocus"></a>  COleControlContainer::HandleSetFocus  
  컨테이너 WM_SETFOCUS 메시지를 처리 하는 경우를 결정 합니다.  

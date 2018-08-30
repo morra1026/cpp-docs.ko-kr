@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3f312267d83f73e30eecb569b50678e7cf5da5e7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 52fb779173565eaa35eec37da80c93ba0610c14f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607280"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199070"
 ---
 # <a name="public-c-attributes"></a>public(C++ 특성)
 
@@ -36,9 +36,9 @@ ms.locfileid: "42607280"
 
 ## <a name="remarks"></a>설명
 
-**공개** c + + 특성에 동일한 기능을 합니다 [공용](http://msdn.microsoft.com/library/windows/desktop/aa367150) MIDL 특성입니다.
+**공개** c + + 특성에 동일한 기능을 합니다 [공용](/windows/desktop/Midl/public) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에서는 사용 하 여 **공용** 특성:
 

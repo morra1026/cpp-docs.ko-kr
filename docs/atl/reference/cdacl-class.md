@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3cd66c7c0637b4874f6a40bd77b3387191f00d35
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 93427eb8e842687e9bba3dc1eef12bcd07e7e167
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881203"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208013"
 ---
 # <a name="cdacl-class"></a>CDacl 클래스
 이 클래스는 DACL (임의 액세스 제어 목록) 구조에 대 한 래퍼입니다.  
@@ -74,7 +74,7 @@ class CDacl : public CAcl
   
  만들기, 추가, 제거 및 삭제의 Ace를 제공 하는 클래스 메서드를 사용 하 여 `CDacl` 개체입니다. 참고 항목 [AtlGetDacl](security-global-functions.md#atlgetdacl) 하 고 [AtlSetDacl](security-global-functions.md#atlsetdacl)합니다.  
   
- Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK에 있습니다.  
+ Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](/windows/desktop/SecAuthZ/access-control) Windows SDK에 있습니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  [CAcl](../../atl/reference/cacl-class.md)  
@@ -123,7 +123,7 @@ bool AddAllowedAce(
 ### <a name="remarks"></a>설명  
  `CDacl` 0 개 이상의 Ace (액세스 제어 항목) 사용자 및 그룹 개체에 액세스할 수 있는 사용자를 식별 하는 개체에 포함 되어 있습니다. 이 메서드는 추가에 대 한 액세스를 허용 하는 ACE를 `CDacl` 개체입니다.  
   
- 참조 [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) 에 대 한 설명은에서 설정할 수 있는 다양 한 플래그를 `AceFlags` 매개 변수입니다.  
+ 참조 [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) 에 대 한 설명은에서 설정할 수 있는 다양 한 플래그를 `AceFlags` 매개 변수입니다.  
   
 ##  <a name="adddeniedace"></a>  CDacl::AddDeniedAce  
  에 거부 ACE (액세스 제어 항목)를 추가 합니다 `CDacl` 개체입니다.  
@@ -164,7 +164,7 @@ bool AddDeniedAce(
 ### <a name="remarks"></a>설명  
  `CDacl` 0 개 이상의 Ace (액세스 제어 항목) 사용자 및 그룹 개체에 액세스할 수 있는 사용자를 식별 하는 개체에 포함 되어 있습니다. 이 메서드는 추가 액세스를 거부 하는 ACE를 `CDacl` 개체입니다.  
   
- 참조 [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) 에 대 한 설명은에서 설정할 수 있는 다양 한 플래그를 `AceFlags` 매개 변수입니다.  
+ 참조 [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) 에 대 한 설명은에서 설정할 수 있는 다양 한 플래그를 `AceFlags` 매개 변수입니다.  
   
 ##  <a name="cdacl"></a>  CDacl::CDacl  
  생성자입니다.  
@@ -245,7 +245,7 @@ void RemoveAllAces() throw();
 ## <a name="see-also"></a>참고 항목  
  [보안 샘플](../../visual-cpp-samples.md)   
  [CAcl 클래스](../../atl/reference/cacl-class.md)   
- [ACLs](http://msdn.microsoft.com/library/windows/desktop/aa374872)   
- [Ace](http://msdn.microsoft.com/library/windows/desktop/aa374868)   
+ [ACLs](/windows/desktop/SecAuthZ/access-control-lists)   
+ [Ace](/windows/desktop/SecAuthZ/access-control-entries)   
  [클래스 개요](../../atl/atl-class-overview.md)   
  [보안 전역 함수](../../atl/reference/security-global-functions.md)

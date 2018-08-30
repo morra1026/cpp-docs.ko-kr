@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6749c62a5d8de0bd1da3a5d619a85a0ec874a21a
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: e72c7ea788085f25dc2a4ec1b2f8682df9e20b25
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338420"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209129"
 ---
 # <a name="cgdiobject-class"></a>CGdiObject 클래스
 비트맵, 영역, 브러시, 펜, 색상표와 글꼴 등 다양한 Windows GDI(그래픽 장치 인터페이스) 개체에 기본 클래스를 제공합니다.  
@@ -139,7 +139,7 @@ BOOL CreateStockObject(int nIndex);
   
 ### <a name="parameters"></a>매개 변수  
  *nIndex*  
- 원하는 주식 개체의 형식을 지정 하는 상수입니다. 매개 변수를 참조 하세요 *fnObject* 에 대 한 [GetStockObject](http://msdn.microsoft.com/library/windows/desktop/dd144925) 적절 한 값에 대 한 Windows SDK에 있습니다.  
+ 원하는 주식 개체의 형식을 지정 하는 상수입니다. 매개 변수를 참조 하세요 *fnObject* 에 대 한 [GetStockObject](/windows/desktop/api/wingdi/nf-wingdi-getstockobject) 적절 한 값에 대 한 Windows SDK에 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
  함수가 성공하면 0이 아니고 그렇지 않으면 0입니다.  
@@ -172,7 +172,7 @@ static void PASCAL DeleteTempMap();
 ### <a name="remarks"></a>설명  
  `DeleteTempMap` 임시 연결 하 고 Windows GDI 개체를 분리 `CGdiObject` 개체를 삭제 하기 전에 `CGdiObject` 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#175](../../mfc/codesnippet/cpp/cgdiobject-class_1.cpp)]  
   
 ##  <a name="detach"></a>  CGdiObject::Detach  
@@ -230,14 +230,14 @@ int GetObject(
 |------------|-----------------|  
 |`CPen`|[LOGPEN](../../mfc/reference/logpen-structure.md)|  
 |`CBrush`|[LOGBRUSH](../../mfc/reference/logbrush-structure.md)|  
-|`CFont`|[LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037)|  
+|`CFont`|[LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta)|  
 |`CBitmap`|[비트맵](../../mfc/reference/bitmap-structure.md)|  
 |`CPalette`|WORD|  
 |`CRgn`|지원 안 함|  
   
  개체가 있으면 한 `CBitmap` 개체를 `GetObject` 너비, 높이 및 비트맵의 색 형식 정보를 반환 합니다. 실제 비트를 사용 하 여 검색할 수 있습니다 [CBitmap::GetBitmapBits](../../mfc/reference/cbitmap-class.md#getbitmapbits)합니다.  
   
- 개체가 `CPalette` 개체를 `GetObject` 색상표의 항목 수를 지정 하는 단어를 검색 합니다. 함수를 검색 하지 않습니다 합니다 [LOGPALETTE](http://msdn.microsoft.com/library/windows/desktop/dd145040) 색상표를 정의 하는 구조입니다. 응용 프로그램 호출 하 여 색상표 항목에 대 한 정보를 가져올 수 있습니다 [CPalette::GetPaletteEntries](../../mfc/reference/cpalette-class.md#getpaletteentries)합니다.  
+ 개체가 `CPalette` 개체를 `GetObject` 색상표의 항목 수를 지정 하는 단어를 검색 합니다. 함수를 검색 하지 않습니다 합니다 [LOGPALETTE](/windows/desktop/api/wingdi/ns-wingdi-taglogpalette) 색상표를 정의 하는 구조입니다. 응용 프로그램 호출 하 여 색상표 항목에 대 한 정보를 가져올 수 있습니다 [CPalette::GetPaletteEntries](../../mfc/reference/cpalette-class.md#getpaletteentries)합니다.  
   
 ##  <a name="getobjecttype"></a>  CGdiObject::GetObjectType  
  GDI 개체의 형식을 검색합니다.  
@@ -288,7 +288,7 @@ HGDIOBJ GetSafeHandle() const;
 ### <a name="remarks"></a>설명  
  일반 핸들 인터페이스 패러다임의 일부 이며 NULL을 핸들에 대해 잘못 되었거나 특수 값으로 하는 경우에 유용 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CWnd::IsWindowEnabled](../../mfc/reference/cwnd-class.md#iswindowenabled)합니다.  
   
 ##  <a name="m_hobject"></a>  CGdiObject::m_hObject  

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ff446c22706fbcac8b14c8cb69df9a4163663c02
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: bbacec7644a05f0077c8d6ffbe3e7856c66dcc4f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599935"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222977"
 ---
 # <a name="v1enum"></a>v1_enum
 
@@ -36,9 +36,9 @@ ms.locfileid: "42599935"
 
 ## <a name="remarks"></a>설명
 
-합니다 **v1_enum** c + + 특성에 동일한 기능을 합니다 [v1_enum](http://msdn.microsoft.com/library/windows/desktop/aa367303) MIDL 특성입니다.
+합니다 **v1_enum** c + + 특성에 동일한 기능을 합니다 [v1_enum](/windows/desktop/Midl/v1-enum) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드는 사용 방법을 보여 줍니다 **v1_enum**:
 

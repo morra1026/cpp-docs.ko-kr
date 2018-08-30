@@ -74,12 +74,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: faa96bdb0471a4ff6a93006225a9492429d18bd2
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: f7edfe929a742e5ff33e76840fa1abdfd496908e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028280"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211556"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl 클래스
 Windows의 공용 헤더 컨트롤의 기능을 제공합니다.  
@@ -132,7 +132,7 @@ class CHeaderCtrl : public CWnd
 |[CHeaderCtrl::SetOrderArray](#setorderarray)|헤더 컨트롤에서 항목의 왼쪽에서 오른쪽 순서를 설정합니다.|  
   
 ## <a name="remarks"></a>설명  
- 헤더 컨트롤에는 일반적으로 텍스트 또는 숫자 열의 집합 위에 배치 되는 창입니다. 각 열 제목을 포함 하 고 부분으로 나눌 수 있습니다. 각 열의 너비를 설정 하려면 각 부분을 구분 하는 구분선을 끌 수 있습니다. 헤더 컨트롤의 그림을 참조 하세요 [헤더 컨트롤](http://msdn.microsoft.com/library/windows/desktop/bb775238)합니다.  
+ 헤더 컨트롤에는 일반적으로 텍스트 또는 숫자 열의 집합 위에 배치 되는 창입니다. 각 열 제목을 포함 하 고 부분으로 나눌 수 있습니다. 각 열의 너비를 설정 하려면 각 부분을 구분 하는 구분선을 끌 수 있습니다. 헤더 컨트롤의 그림을 참조 하세요 [헤더 컨트롤](/windows/desktop/Controls/header-controls)합니다.  
   
  이 컨트롤 (및 따라서는 `CHeaderCtrl` 클래스) 이상 Windows 95/98 및 Windows NT 버전 3.51에서 실행 되는 프로그램에만 사용할 수 있습니다.  
   
@@ -169,7 +169,7 @@ class CHeaderCtrl : public CWnd
 CHeaderCtrl();
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CHeaderCtrl#1](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_1.cpp)]  
   
 ##  <a name="clearallfilters"></a>  CHeaderCtrl::ClearAllFilters  
@@ -183,9 +183,9 @@ BOOL ClearAllFilters();
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- Win32 메시지의 동작을 구현 하는이 메서드입니다 [HDM_CLEARFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775306) 열 값이-1, Windows SDK에 설명 된 대로 사용 합니다.  
+ Win32 메시지의 동작을 구현 하는이 메서드입니다 [HDM_CLEARFILTER](/windows/desktop/Controls/hdm-clearfilter) 열 값이-1, Windows SDK에 설명 된 대로 사용 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CHeaderCtrl#2](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_2.cpp)]  
   
 ##  <a name="clearfilter"></a>  CHeaderCtrl::ClearFilter  
@@ -203,9 +203,9 @@ BOOL ClearFilter(int nColumn);
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 Win32 메시지의 동작을 구현 [HDM_CLEARFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775306)Windows SDK에 설명 된 대로 합니다.  
+ 이 메서드는 Win32 메시지의 동작을 구현 [HDM_CLEARFILTER](/windows/desktop/Controls/hdm-clearfilter)Windows SDK에 설명 된 대로 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CHeaderCtrl#3](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_3.cpp)]  
   
 ##  <a name="create"></a>  CHeaderCtrl::Create  
@@ -221,10 +221,10 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>매개 변수  
  *dwStyle*  
- 헤더 컨트롤의 스타일을 지정합니다. 헤더 컨트롤 스타일에 대 한 참조 [헤더 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb775241) Windows SDK에 있습니다.  
+ 헤더 컨트롤의 스타일을 지정합니다. 헤더 컨트롤 스타일에 대 한 참조 [헤더 컨트롤 스타일](/windows/desktop/Controls/header-control-styles) Windows SDK에 있습니다.  
   
  *rect*  
- 헤더 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.  
+ 헤더 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.  
   
  *pParentWnd*  
  일반적으로 헤더 컨트롤의 부모 창 지정을 `CDialog`입니다. NULL이 아니어야 합니다.  
@@ -238,7 +238,7 @@ virtual BOOL Create(
 ### <a name="remarks"></a>설명  
  생성 된 `CHeaderCtrl` 두 단계에서 개체입니다. 먼저 생성자를 호출 하 고 호출 `Create`, 헤더 컨트롤을 만들고 연결 하는 `CHeaderCtrl` 개체입니다.  
   
- 헤더 컨트롤 스타일 외에도 헤더 컨트롤 배치 하 고 크기를 조정 하는 방법을 확인 하려면 다음과 같은 일반적인 컨트롤 스타일을 사용할 수 있습니다 (참조 [공용 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb775498) 자세한):  
+ 헤더 컨트롤 스타일 외에도 헤더 컨트롤 배치 하 고 크기를 조정 하는 방법을 확인 하려면 다음과 같은 일반적인 컨트롤 스타일을 사용할 수 있습니다 (참조 [공용 컨트롤 스타일](/windows/desktop/Controls/common-control-styles) 자세한):  
   
 - 컨트롤이 부모 창의 클라이언트 영역의 맨 아래에 배치 하는 자체 창의 너비 부모와 동일한 너비를 설정 하는 CCS_BOTTOM 합니다.  
   
@@ -266,7 +266,7 @@ virtual BOOL Create(
   
  컨트롤을 사용 하 여 확장된 창 스타일을 사용 하려는 경우 호출할 [CreateEx](#createex) 대신 `Create`합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CHeaderCtrl#4](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_4.cpp)]  
   
 ##  <a name="createex"></a>  CHeaderCtrl::CreateEx  
@@ -283,13 +283,13 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>매개 변수  
  *dwExStyle*  
- 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK의 합니다.  
+ 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK의 합니다.  
   
  *dwStyle*  
- 헤더 컨트롤의 스타일입니다. 헤더 컨트롤 스타일에 대 한 참조 [헤더 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb775241) Windows SDK에 있습니다. 참조 [만들기](#create) 추가 스타일의 목록은 합니다.  
+ 헤더 컨트롤의 스타일입니다. 헤더 컨트롤 스타일에 대 한 참조 [헤더 컨트롤 스타일](/windows/desktop/Controls/header-control-styles) Windows SDK에 있습니다. 참조 [만들기](#create) 추가 스타일의 목록은 합니다.  
   
  *rect*  
- 에 대 한 참조를 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.  
+ 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.  
   
  *pParentWnd*  
  컨트롤의 부모 창에 대 한 포인터입니다.  
@@ -318,7 +318,7 @@ CImageList* CreateDragImage(int nIndex);
  에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 성공 하면 NULL 개체입니다. 반환된 된 목록에는 하나의 이미지만을 포함합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [HDM_CREATEDRAGIMAGE](http://msdn.microsoft.com/library/windows/desktop/bb775308)Windows SDK에 설명 된 대로 합니다. 헤더 항목 끌어서 놓기 지원 하기 위해 제공 됩니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [HDM_CREATEDRAGIMAGE](/windows/desktop/Controls/hdm-createdragimage)Windows SDK에 설명 된 대로 합니다. 헤더 항목 끌어서 놓기 지원 하기 위해 제공 됩니다.  
   
  `CImageList` 개체는 반환 된 포인터가 가리키는 임시 개체 이며 다음 유휴 시간 처리에서 삭제 됩니다.  
   
@@ -336,7 +336,7 @@ BOOL DeleteItem(int nPos);
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CHeaderCtrl#5](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_5.cpp)]  
   
 ##  <a name="drawitem"></a>  CHeaderCtrl::DrawItem  
@@ -348,7 +348,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
   
 ### <a name="parameters"></a>매개 변수  
  *lpDrawItemStruct*  
- 에 대 한 포인터를 [DRAWITEMSTRUCT](http://msdn.microsoft.com/library/windows/desktop/bb775802) 그릴 항목을 설명 하는 구조입니다.  
+ 에 대 한 포인터를 [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) 그릴 항목을 설명 하는 구조입니다.  
   
 ### <a name="remarks"></a>설명  
  합니다 `itemAction` 의 멤버는 `DRAWITEMSTRUCT` 구조 정의 그리기 작업 수행 수입니다.  
@@ -357,7 +357,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
   
  응용 프로그램에 제공 된 디스플레이 컨텍스트를 위해 선택한 모든 그래픽 장치 GDI (인터페이스) 개체를 복원 해야 *lpDrawItemStruct* 전에이 멤버 함수를 종료 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CHeaderCtrl#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_6.cpp)]  
   
 ##  <a name="editfilter"></a>  CHeaderCtrl::EditFilter  
@@ -374,7 +374,7 @@ BOOL EditFilter(
  열 편집입니다.  
   
  *bDiscardChanges*  
- 필터를 편집 하는 동안 사용자가 사용자를 처리 하는 방법을 지정 하는 값의 편집 변경 때 합니다 [HDM_EDITFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775312) 전송 됩니다.  
+ 필터를 편집 하는 동안 사용자가 사용자를 처리 하는 방법을 지정 하는 값의 편집 변경 때 합니다 [HDM_EDITFILTER](/windows/desktop/Controls/hdm-editfilter) 전송 됩니다.  
   
  지정 하는 경우 사용자가 변경한 내용을 적용 하려면 FALSE 또는 사용자가 변경한 내용을 무시합니다  
   
@@ -382,9 +382,9 @@ BOOL EditFilter(
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 Win32 메시지의 동작을 구현 [HDM_EDITFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775312)Windows SDK에 설명 된 대로 합니다.  
+ 이 메서드는 Win32 메시지의 동작을 구현 [HDM_EDITFILTER](/windows/desktop/Controls/hdm-editfilter)Windows SDK에 설명 된 대로 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CHeaderCtrl#7](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_7.cpp)]  
   
 ##  <a name="getbitmapmargin"></a>  CHeaderCtrl::GetBitmapMargin  
@@ -398,9 +398,9 @@ int GetBitmapMargin() const;
  픽셀에서 비트맵 여백의 너비입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [HDM_GETBITMAPMARGIN](http://msdn.microsoft.com/library/windows/desktop/bb775314)Windows SDK에 설명 된 대로 합니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [HDM_GETBITMAPMARGIN](/windows/desktop/Controls/hdm-getbitmapmargin)Windows SDK에 설명 된 대로 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CHeaderCtrl#8](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_8.cpp)]  
   
 ##  <a name="getfocuseditem"></a>  CHeaderCtrl::GetFocusedItem  
@@ -414,14 +414,14 @@ int GetFocusedItem() const;
  포커스가 있는 헤더 항목의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 전송 된 [HDM_GETFOCUSEDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775330) Windows SDK에 설명 된 메시지입니다.  
+ 이 메서드는 전송 된 [HDM_GETFOCUSEDITEM](/windows/desktop/Controls/hdm-getfocuseditem) Windows SDK에 설명 된 메시지입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서는 변수를 정의 `m_headerCtrl`, 즉 현재 헤더 컨트롤에 액세스 하는 데 사용 합니다. 이 변수는 다음 예제에서 사용됩니다.  
   
  [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제는 `SetFocusedItem` 고 `GetFocusedItem` 메서드. 코드의 이전 단원에서 다섯 개의 열을 사용 하 여 헤더 컨트롤을 생성 합니다. 그러나는 열에 표시 되지 않도록 열 구분 기호를 끌 수 있습니다. 다음 예제에서는 설정 하 고 포커스 항목으로 마지막 열 머리글을 확인 합니다.  
   
  [!code-cpp[NVC_MFC_CHeaderCtrl_s4#4](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_10.cpp)]  
@@ -437,9 +437,9 @@ CImageList* GetImageList() const;
  에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 개체입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [HDM_GETIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb775332)Windows SDK에 설명 된 대로 합니다. `CImageList` 개체는 반환 된 포인터가 가리키는 임시 개체 이며 다음 유휴 시간 처리에서 삭제 됩니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [HDM_GETIMAGELIST](/windows/desktop/Controls/hdm-getimagelist)Windows SDK에 설명 된 대로 합니다. `CImageList` 개체는 반환 된 포인터가 가리키는 임시 개체 이며 다음 유휴 시간 처리에서 삭제 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CHeaderCtrl#9](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_11.cpp)]  
   
 ##  <a name="getitem"></a>  CHeaderCtrl::GetItem  
@@ -456,12 +456,12 @@ BOOL GetItem(
  검색할 항목의 0부터 시작 인덱스를 지정 합니다.  
   
  *pHeaderItem*  
- 에 대 한 포인터를 [HDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775247) 새 항목을 수신 하는 구조입니다. 이 구조체를 사용 합니다 `InsertItem` 및 `SetItem` 멤버 함수입니다. 플래그 설정는 `mask` 요소 반환 될 때 해당 요소에 값을 제대로 입력을 확인 합니다. 경우는 `mask` 요소 0으로 설정 되 면 다른 구조 요소 값은 의미가 없습니다.  
+ 에 대 한 포인터를 [HDITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) 새 항목을 수신 하는 구조입니다. 이 구조체를 사용 합니다 `InsertItem` 및 `SetItem` 멤버 함수입니다. 플래그 설정는 `mask` 요소 반환 될 때 해당 요소에 값을 제대로 입력을 확인 합니다. 경우는 `mask` 요소 0으로 설정 되 면 다른 구조 요소 값은 의미가 없습니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CHeaderCtrl#10](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_12.cpp)]  
   
 ##  <a name="getitemcount"></a>  CHeaderCtrl::GetItemCount  
@@ -474,7 +474,7 @@ int GetItemCount() const;
 ### <a name="return-value"></a>반환 값  
  성공할 경우 헤더 컨트롤 항목의 수 그렇지 않으면-1입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CHeaderCtrl::DeleteItem](#deleteitem)합니다.  
   
 ##  <a name="getitemdropdownrect"></a>  CHeaderCtrl::GetItemDropDownRect  
@@ -490,21 +490,21 @@ BOOL GetItemDropDownRect(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iItem*|해당 스타일은 HDF_SPLITBUTTON 헤더 항목의 0부터 시작 인덱스입니다. 자세한 내용은 참조 하세요. 합니다 `fmt` 의 멤버는 [HDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775247) 구조입니다.|  
-|[out] *lpRect*|에 대 한 포인터를 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 경계 사각형 정보를 얻습니다.|  
+|[in] *iItem*|해당 스타일은 HDF_SPLITBUTTON 헤더 항목의 0부터 시작 인덱스입니다. 자세한 내용은 참조 하세요. 합니다 `fmt` 의 멤버는 [HDITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) 구조입니다.|  
+|[out] *lpRect*|에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 경계 사각형 정보를 얻습니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 함수에 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 전송 된 [HDM_GETITEMDROPDOWNRECT](http://msdn.microsoft.com/library/windows/desktop/bb775339) Windows SDK에 설명 된 메시지입니다.  
+ 이 메서드는 전송 된 [HDM_GETITEMDROPDOWNRECT](/windows/desktop/Controls/hdm-getitemdropdownrect) Windows SDK에 설명 된 메시지입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서는 변수를 정의 `m_headerCtrl`, 즉 현재 헤더 컨트롤에 액세스 하는 데 사용 합니다. 이 변수는 다음 예제에서 사용됩니다.  
   
  [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제는 `GetItemDropDownRect` 메서드. 코드의 이전 단원에서 다섯 개의 열을 사용 하 여 헤더 컨트롤을 생성 합니다. 다음 코드 예제에서는 헤더 드롭다운 단추에 대해 예약 된 첫 번째 열의 위치 주변 3 차원 사각형을 그립니다.  
   
  [!code-cpp[NVC_MFC_CHeaderCtrl_s4#2](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_13.cpp)]  
@@ -523,13 +523,13 @@ BOOL GetItemRect(
  헤더 컨트롤 항목의 0부터 시작 하는 인덱스입니다.  
   
  *lpRect*  
- 주소에 대 한 포인터를 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 경계 사각형 정보를 수신 하는 구조입니다.  
+ 주소에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 경계 사각형 정보를 수신 하는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 Win32 메시지의 동작을 구현 [HDM_GETITEMRECT](http://msdn.microsoft.com/library/windows/desktop/bb775341)Windows SDK에 설명 된 대로 합니다.  
+ 이 메서드는 Win32 메시지의 동작을 구현 [HDM_GETITEMRECT](/windows/desktop/Controls/hdm-getitemrect)Windows SDK에 설명 된 대로 합니다.  
   
 ##  <a name="getorderarray"></a>  CHeaderCtrl::GetOrderArray  
  헤더 컨트롤에서 항목의 왼쪽에서 오른쪽 순서를 검색합니다.  
@@ -551,9 +551,9 @@ BOOL GetOrderArray(
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [HDM_GETORDERARRAY](http://msdn.microsoft.com/library/windows/desktop/bb775343)Windows SDK에 설명 된 대로 합니다. 헤더 항목 순서 지정을 지원 하기 위해 제공 됩니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [HDM_GETORDERARRAY](/windows/desktop/Controls/hdm-getorderarray)Windows SDK에 설명 된 대로 합니다. 헤더 항목 순서 지정을 지원 하기 위해 제공 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CHeaderCtrl#11](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_14.cpp)]  
   
 ##  <a name="getoverflowrect"></a>  CHeaderCtrl::GetOverflowRect  
@@ -567,22 +567,22 @@ BOOL GetOverflowRect(LPRECT lpRect) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out] *lpRect*|에 대 한 포인터를 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 경계 사각형 정보를 수신 하는 구조입니다.|  
+|[out] *lpRect*|에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 경계 사각형 정보를 수신 하는 구조입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 함수에 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 헤더 컨트롤에 동시에 표시할 수 있는 것 보다 더 많은 항목이 있으면 컨트롤 표시 되지 않는 항목 스크롤 하는 오버플로 단추를 표시할 수 있습니다. 헤더 컨트롤에는 오버플로 단추를 표시 하려면 HDF_SPLITBUTTON 및 HDS_OVERFLOW 스타일 있어야 합니다. 경계 사각형을 오버플로 단추를 포함 하 고 오버플로 단추가 표시 하는 경우에 존재 합니다. 자세한 내용은 [헤더 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb775241)합니다.  
+ 헤더 컨트롤에 동시에 표시할 수 있는 것 보다 더 많은 항목이 있으면 컨트롤 표시 되지 않는 항목 스크롤 하는 오버플로 단추를 표시할 수 있습니다. 헤더 컨트롤에는 오버플로 단추를 표시 하려면 HDF_SPLITBUTTON 및 HDS_OVERFLOW 스타일 있어야 합니다. 경계 사각형을 오버플로 단추를 포함 하 고 오버플로 단추가 표시 하는 경우에 존재 합니다. 자세한 내용은 [헤더 컨트롤 스타일](/windows/desktop/Controls/header-control-styles)합니다.  
   
- 이 메서드는 전송 된 [HDM_GETOVERFLOWRECT](http://msdn.microsoft.com/library/windows/desktop/bb775345) Windows SDK에 설명 된 메시지입니다.  
+ 이 메서드는 전송 된 [HDM_GETOVERFLOWRECT](/windows/desktop/Controls/hdm-getoverflowrect) Windows SDK에 설명 된 메시지입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서는 변수를 정의 `m_headerCtrl`, 즉 현재 헤더 컨트롤에 액세스 하는 데 사용 합니다. 이 변수는 다음 예제에서 사용됩니다.  
   
  [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제는 `GetOverflowRect` 메서드. 코드의 이전 단원에서 다섯 개의 열을 사용 하 여 헤더 컨트롤을 생성 합니다. 그러나는 열에 표시 되지 않도록 열 구분 기호를 끌 수 있습니다. 일부 열이 표시 되지 않는 경우 오버플로 단추가 헤더 컨트롤을 그립니다. 다음 코드 예제에서는 오버플로 단추의 위치 주변 3 차원 사각형을 그립니다.  
   
  [!code-cpp[NVC_MFC_CHeaderCtrl_s4#3](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_15.cpp)]  
@@ -598,20 +598,20 @@ int HitTest(LPHDHITTESTINFO* phdhti);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out에서] *phdhti*|에 대 한 포인터를 [HDHITTESTINFO](http://msdn.microsoft.com/library/windows/desktop/bb775245) 테스트 하는 시점을 지정 하 고 테스트의 결과 받는 구조체입니다.|  
+|[out에서] *phdhti*|에 대 한 포인터를 [HDHITTESTINFO](/windows/desktop/api/commctrl/ns-commctrl-_hd_hittestinfo) 테스트 하는 시점을 지정 하 고 테스트의 결과 받는 구조체입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  지정 된 위치에 있는 경우 헤더 항목의 0부터 시작 인덱스 그렇지 않으면-1입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 전송 된 [HDM_HITTEST](http://msdn.microsoft.com/library/windows/desktop/bb775349) Windows SDK에 설명 된 메시지입니다.  
+ 이 메서드는 전송 된 [HDM_HITTEST](/windows/desktop/Controls/hdm-hittest) Windows SDK에 설명 된 메시지입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서는 변수를 정의 `m_headerCtrl`, 즉 현재 헤더 컨트롤에 액세스 하는 데 사용 합니다. 이 변수는 다음 예제에서 사용됩니다.  
   
  [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제는 `HitTest` 메서드. 이 코드 예제에서는 이전 단원에서 다섯 개의 열을 사용 하 여 헤더 컨트롤을 생성 합니다. 그러나는 열에 표시 되지 않도록 열 구분 기호를 끌 수 있습니다. 이 예제에서는 표시 된 경우 열의 인덱스를 보고 하 고 해당 열이 표시 되지 않으면-1입니다.  
   
  [!code-cpp[NVC_MFC_CHeaderCtrl_s4#1](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_16.cpp)]  
@@ -630,12 +630,12 @@ int InsertItem(
  삽입할 항목의 인덱스(0부터 시작)입니다. 값이 0 이면 항목 헤더 컨트롤의 시작 부분에 삽입 됩니다. 값이 최대값 보다 크면 항목 헤더 컨트롤의 끝에 삽입 됩니다.  
   
  *phdi*  
- 에 대 한 포인터를 [HDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775247) 삽입할 항목에 대 한 정보를 포함 하는 구조입니다.  
+ 에 대 한 포인터를 [HDITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) 삽입할 항목에 대 한 정보를 포함 하는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공할 경우 새 항목의 인덱스 그렇지 않으면-1입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CHeaderCtrl#12](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_17.cpp)]  
   
 ##  <a name="layout"></a>  CHeaderCtrl::Layout  
@@ -647,7 +647,7 @@ BOOL Layout(HDLAYOUT* pHeaderLayout);
   
 ### <a name="parameters"></a>매개 변수  
  *pHeaderLayout*  
- 에 대 한 포인터를 [HDLAYOUT](http://msdn.microsoft.com/library/windows/desktop/bb775249) 크기와 헤더 컨트롤의 위치를 설정 하는 데 사용 되는 정보가 포함 된 구조입니다.  
+ 에 대 한 포인터를 [HDLAYOUT](/windows/desktop/api/commctrl/ns-commctrl-_hd_layout) 크기와 헤더 컨트롤의 위치를 설정 하는 데 사용 되는 정보가 포함 된 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -655,7 +655,7 @@ BOOL Layout(HDLAYOUT* pHeaderLayout);
 ### <a name="remarks"></a>설명  
  이 함수는 지정된 된 사각형을 차지 하는 새 헤더 컨트롤에 대 한 적절 한 크기 결정에 사용 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CHeaderCtrl#13](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_18.cpp)]  
   
 ##  <a name="ordertoindex"></a>  CHeaderCtrl::OrderToIndex  
@@ -673,7 +673,7 @@ int OrderToIndex(int nOrder) const;
  헤더 컨트롤에서 해당 순서에 따라 항목의 인덱스입니다. 인덱스를 왼쪽에서 오른쪽으로 0부터 셉니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 매크로의 동작을 구현 [HDM_ORDERTOINDEX](http://msdn.microsoft.com/library/windows/desktop/bb775355)Windows SDK에 설명 된 대로 합니다. 헤더 항목 순서 지정을 지원 하기 위해 제공 됩니다.  
+ 이 멤버 함수는 Win32 매크로의 동작을 구현 [HDM_ORDERTOINDEX](https://msdn.microsoft.com/library/windows/desktop/bb775355)Windows SDK에 설명 된 대로 합니다. 헤더 항목 순서 지정을 지원 하기 위해 제공 됩니다.  
   
 ##  <a name="setbitmapmargin"></a>  CHeaderCtrl::SetBitmapMargin  
  헤더 컨트롤의 여백 비트맵의 너비를 설정합니다.  
@@ -690,13 +690,13 @@ int SetBitmapMargin(int nWidth);
  픽셀에서 비트맵 여백의 너비입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [HDM_SETBITMAPMARGIN](http://msdn.microsoft.com/library/windows/desktop/bb775357)Windows SDK에 설명 된 대로 합니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [HDM_SETBITMAPMARGIN](/windows/desktop/Controls/hdm-setbitmapmargin)Windows SDK에 설명 된 대로 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CHeaderCtrl#14](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_19.cpp)]  
   
 ##  <a name="setfilterchangetimeout"></a>  CHeaderCtrl::SetFilterChangeTimeout  
- 필터 특성의 변경 내용을 수행 시간 및 게시할 시간 제한 간격을 설정 합니다는 [HDN_FILTERCHANGE](http://msdn.microsoft.com/library/windows/desktop/bb775277) 알림.  
+ 필터 특성의 변경 내용을 수행 시간 및 게시할 시간 제한 간격을 설정 합니다는 [HDN_FILTERCHANGE](/windows/desktop/Controls/hdn-filterchange) 알림.  
   
 ```  
 int SetFilterChangeTimeout(DWORD dwTimeOut);
@@ -710,9 +710,9 @@ int SetFilterChangeTimeout(DWORD dwTimeOut);
  수정 중인 필터 컨트롤의 인덱스입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [HDM_SETFILTERCHANGETIMEOUT](http://msdn.microsoft.com/library/windows/desktop/bb775359)Windows SDK에 설명 된 대로 합니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [HDM_SETFILTERCHANGETIMEOUT](/windows/desktop/Controls/hdm-setfilterchangetimeout)Windows SDK에 설명 된 대로 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CHeaderCtrl#15](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_20.cpp)]  
   
 ##  <a name="setfocuseditem"></a>  CHeaderCtrl::SetFocusedItem  
@@ -732,14 +732,14 @@ BOOL SetFocusedItem(int iItem);
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 전송 된 [HDM_SETFOCUSEDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775361) Windows SDK에 설명 된 메시지입니다.  
+ 이 메서드는 전송 된 [HDM_SETFOCUSEDITEM](/windows/desktop/Controls/hdm-setfocuseditem) Windows SDK에 설명 된 메시지입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제에서는 변수를 정의 `m_headerCtrl`, 즉 현재 헤더 컨트롤에 액세스 하는 데 사용 합니다. 이 변수는 다음 예제에서 사용됩니다.  
   
  [!code-cpp[NVC_MFC_CHeaderCtrl_s4#6](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_9.h)]  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드 예제는 `SetFocusedItem` 고 `GetFocusedItem` 메서드. 코드의 이전 단원에서 다섯 개의 열을 사용 하 여 헤더 컨트롤을 생성 합니다. 그러나는 열에 표시 되지 않도록 열 구분 기호를 끌 수 있습니다. 다음 예제에서는 설정 하 고 포커스 항목으로 마지막 열 머리글을 확인 합니다.  
   
  [!code-cpp[NVC_MFC_CHeaderCtrl_s4#4](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_10.cpp)]  
@@ -763,9 +763,9 @@ int SetHotDivider(int nIndex);
  강조 표시 된 구분선의 인덱스입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [HDM_SETHOTDIVIDER](http://msdn.microsoft.com/library/windows/desktop/bb775363)Windows SDK에 설명 된 대로 합니다. 헤더 항목 끌어서 놓기 지원 하기 위해 제공 됩니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [HDM_SETHOTDIVIDER](/windows/desktop/Controls/hdm-sethotdivider)Windows SDK에 설명 된 대로 합니다. 헤더 항목 끌어서 놓기 지원 하기 위해 제공 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CHeaderCtrl#16](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_21.cpp)]  
   
 ##  <a name="setimagelist"></a>  CHeaderCtrl::SetImageList  
@@ -783,9 +783,9 @@ CImageList* SetImageList(CImageList* pImageList);
  에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 헤더 컨트롤에 이전에 할당 된 개체입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 메시지의 동작을 구현 [HDM_SETIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb775365)Windows SDK에 설명 된 대로 합니다. `CImageList` 개체는 반환 된 포인터가 가리키는 임시 개체 이며 다음 유휴 시간 처리에서 삭제 됩니다.  
+ 이 멤버 함수는 Win32 메시지의 동작을 구현 [HDM_SETIMAGELIST](/windows/desktop/Controls/hdm-setimagelist)Windows SDK에 설명 된 대로 합니다. `CImageList` 개체는 반환 된 포인터가 가리키는 임시 개체 이며 다음 유휴 시간 처리에서 삭제 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CHeaderCtrl::GetImageList](#getimagelist)합니다.  
   
 ##  <a name="setitem"></a>  CHeaderCtrl::SetItem  
@@ -802,12 +802,12 @@ BOOL SetItem(
  조작 될 항목의 0부터 시작 하는 인덱스입니다.  
   
  *pHeaderItem*  
- 에 대 한 포인터를 [HDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775247) 새 항목에 대 한 정보를 포함 하는 구조입니다.  
+ 에 대 한 포인터를 [HDITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) 새 항목에 대 한 정보를 포함 하는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CHeaderCtrl::GetItem](#getitem)합니다.  
   
 ##  <a name="setorderarray"></a>  CHeaderCtrl::SetOrderArray  
@@ -830,9 +830,9 @@ BOOL SetOrderArray(
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 멤버 함수는 Win32 매크로의 동작을 구현 [HDM_SETORDERARRAY](http://msdn.microsoft.com/library/windows/desktop/bb775369)Windows SDK에 설명 된 대로 합니다. 헤더 항목 순서 지정을 지원 하기 위해 제공 됩니다.  
+ 이 멤버 함수는 Win32 매크로의 동작을 구현 [HDM_SETORDERARRAY](/windows/desktop/Controls/hdm-setorderarray)Windows SDK에 설명 된 대로 합니다. 헤더 항목 순서 지정을 지원 하기 위해 제공 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CHeaderCtrl::GetOrderArray](#getorderarray)합니다.  
   
 ## <a name="see-also"></a>참고 항목  

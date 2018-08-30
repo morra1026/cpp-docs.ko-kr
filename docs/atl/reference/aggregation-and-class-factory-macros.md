@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4995779a7f5595eca9dc47a29ea11d875995e959
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: d964e844e8be4b741628397bf8a63bbd109820d0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881229"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210944"
 ---
 # <a name="aggregation-and-class-factory-macros"></a>집계 및 클래스 팩터리 매크로
 이러한 매크로의 집계를 제어 하 고 클래스 팩터리를 선언 하는 방법을 제공 합니다.  
@@ -69,7 +69,7 @@ DECLARE_AGGREGATABLE( x )
 ### <a name="remarks"></a>설명  
  [CComCoClass](../../atl/reference/ccomcoclass-class.md) 기본 집계 모델을 지정 하려면이 매크로 포함 합니다. 이 기본값을 재정의 하려면 하나를 지정 합니다 [DECLARE_NOT_AGGREGATABLE](#declare_not_aggregatable) 또는 [DECLARE_ONLY_AGGREGATABLE](#declare_only_aggregatable) 클래스 정의에 매크로입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#121](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_1.h)]  
   
 ##  <a name="declare_classfactory"></a>  DECLARE_CLASSFACTORY  
@@ -82,11 +82,11 @@ DECLARE_CLASSFACTORY()
 ### <a name="remarks"></a>설명  
  [CComCoClass](../../atl/reference/ccomcoclass-class.md) 이 매크로 사용 하 여 개체에 대 한 기본 클래스 팩터리를 선언 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_COM#55](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_2.h)]  
   
 ##  <a name="ccomclassfactory_class"></a>  CComClassFactory 클래스  
- 이 클래스에서 구현 된 [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) 인터페이스입니다.  
+ 이 클래스에서 구현 된 [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) 인터페이스입니다.  
   
 ```
 class CComClassFactory : public IClassFactory,
@@ -94,7 +94,7 @@ public CComObjectRootEx<CComGlobalsThreadModel>
 ```  
   
 ### <a name="remarks"></a>설명  
- `CComClassFactory` 구현 된 [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) 새 개체를 보다 신속 하 게 만들 수 있도록 메모리의 클래스 팩터리 잠금 수 있을 뿐만 아니라 특정 CLSID의 개체를 만드는 메서드를 포함 하는 인터페이스입니다. `IClassFactory` 시스템 레지스트리 및 CLSID에 할당 하는 등록 하는 모든 클래스에 대 한 구현 되어야 합니다.  
+ `CComClassFactory` 구현 된 [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) 새 개체를 보다 신속 하 게 만들 수 있도록 메모리의 클래스 팩터리 잠금 수 있을 뿐만 아니라 특정 CLSID의 개체를 만드는 메서드를 포함 하는 인터페이스입니다. `IClassFactory` 시스템 레지스트리 및 CLSID에 할당 하는 등록 하는 모든 클래스에 대 한 구현 되어야 합니다.  
   
  ATL 개체에서 파생 하 여 일반적으로 클래스 팩터리를 획득 [CComCoClass](../../atl/reference/ccomcoclass-class.md)합니다. 이 클래스는 매크로 포함 [DECLARE_CLASSFACTORY](#declare_classfactory)를 선언 하는 `CComClassFactory` 기본 클래스 팩터리로 합니다. 이 기본값을 재정의 하 여 DECLARE_CLASSFACTORY 중 하나를 지정*XXX* 클래스 정의에 매크로입니다. 예를 들어, 합니다 [DECLARE_CLASSFACTORY_EX](#declare_classfactory_ex) 매크로 클래스 팩터리에 대 한 지정된 된 클래스를 사용 합니다.  
   
@@ -126,7 +126,7 @@ DECLARE_CLASSFACTORY_EX( cf )
   
  [CComCoClass](../../atl/reference/ccomcoclass-class.md) 포함 된 [DECLARE_CLASSFACTORY](#declare_classfactory) 매크로 지정 하는 `CComClassFactory` 기본 클래스 팩터리로 합니다. 그러나 개체의 클래스 정의에 DECLARE_CLASSFACTORY_EX 매크로 넣어이 기본값을 재정의할 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_COM#8](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_3.h)]  
   
 ##  <a name="declare_classfactory2"></a>  DECLARE_CLASSFACTORY2  
@@ -143,11 +143,11 @@ DECLARE_CLASSFACTORY2( lic )
 ### <a name="remarks"></a>설명  
  [CComCoClass](../../atl/reference/ccomcoclass-class.md) 포함 된 [DECLARE_CLASSFACTORY](#declare_classfactory) 지정는 매크로 [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) 기본 클래스 팩터리로 합니다. 그러나 개체의 클래스 정의에 DECLARE_CLASSFACTORY2 매크로 넣어이 기본값을 재정의할 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_COM#2](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_4.h)]  
   
 ##  <a name="ccomclassfactory2_class"></a>  CComClassFactory2 클래스  
- 이 클래스에서 구현 된 [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) 인터페이스입니다.  
+ 이 클래스에서 구현 된 [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) 인터페이스입니다.  
   
 ```
 template <class license>
@@ -160,14 +160,14 @@ class  CComClassFactory2 : public IClassFactory2,
  *라이선스*  
  다음 정적 함수를 구현 하는 클래스:  
   
-- **정적 BOOL VerifyLicenseKey (BSTR** `bstr` **);**  
+- `static BOOL VerifyLicenseKey( BSTR bstr );`  
   
-- **정적 BOOL GetLicenseKey (DWORD** `dwReserved` **, BSTR\***  `pBstr` **);**  
+- `static BOOL GetLicenseKey( DWORD dwReserved, BSTR * pBstr );`  
   
-- **정적 BOOL IsLicenseValid ();**  
+- `static BOOL IsLicenseValid( );`  
   
 ### <a name="remarks"></a>설명  
- `CComClassFactory2` 구현 된 [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) 인터페이스를 확장의 [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364)합니다. `IClassFactory2` 라이선스를 통해 개체 생성을 제어 합니다. 사용이 허가 된 컴퓨터에서 클래스 팩터리 실행 런타임 라이선스 키를 제공할 수 있습니다. 이 라이선스 키 개체를 인스턴스화하는 전체 컴퓨터 라이선스가 없는 경우 응용 프로그램을 수 있습니다.  
+ `CComClassFactory2` 구현 된 [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) 인터페이스를 확장의 [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)합니다. `IClassFactory2` 라이선스를 통해 개체 생성을 제어 합니다. 사용이 허가 된 컴퓨터에서 클래스 팩터리 실행 런타임 라이선스 키를 제공할 수 있습니다. 이 라이선스 키 개체를 인스턴스화하는 전체 컴퓨터 라이선스가 없는 경우 응용 프로그램을 수 있습니다.  
   
  ATL 개체에서 파생 하 여 일반적으로 클래스 팩터리를 획득 [CComCoClass](../../atl/reference/ccomcoclass-class.md)합니다. 이 클래스는 매크로 포함 [DECLARE_CLASSFACTORY](#declare_classfactory)를 선언 하는 [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) 기본 클래스 팩터리로 합니다. 사용 하 `CComClassFactory2`를 지정 합니다 [DECLARE_CLASSFACTORY2](#declare_classfactory2) 개체의 클래스 정의에 매크로입니다. 예를 들어:  
   
@@ -191,11 +191,11 @@ DECLARE_CLASSFACTORY_AUTO_THREAD()
   
  (-의-out-proc 서버)에서 여러 아파트에서 개체를 만들 때 DECLARE_CLASSFACTORY_AUTO_THREAD 클래스에 추가 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_COM#9](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_6.h)]  
   
 ##  <a name="ccomclassfactoryautothread_class"></a>  CComClassFactoryAutoThread 클래스  
- 이 클래스에서 구현 된 [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) 인터페이스 및 개체를 여러 아파트에서 만들 수 있습니다.  
+ 이 클래스에서 구현 된 [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) 인터페이스 및 개체를 여러 아파트에서 만들 수 있습니다.  
   
 > [!IMPORTANT]
 >  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.  
@@ -226,7 +226,7 @@ DECLARE_CLASSFACTORY_SINGLETON( obj )
 ### <a name="remarks"></a>설명  
  [CComCoClass](../../atl/reference/ccomcoclass-class.md) 포함 된 [DECLARE_CLASSFACTORY](#declare_classfactory) 지정는 매크로 [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) 기본 클래스 팩터리로 합니다. 그러나 개체의 클래스 정의에 DECLARE_CLASSFACTORY_SINGLETON 매크로 넣어이 기본값을 재정의할 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_COM#10](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_7.h)]  
   
 ##  <a name="ccomclassfactorysingleton_class"></a>  CComClassFactorySingleton 클래스  
@@ -277,7 +277,7 @@ DECLARE_NOT_AGGREGATABLE( x )
   
  기본적으로 [CComCoClass](../../atl/reference/ccomcoclass-class.md) 포함 된 [DECLARE_AGGREGATABLE](#declare_aggregatable) 개체를 집계할 수 있도록 지정는 매크로입니다. 이 기본 동작을 재정의 하려면 DECLARE_NOT_AGGREGATABLE 클래스 정의에 포함 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#121](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_1.h)]  
   
 ##  <a name="declare_only_aggregatable"></a>  DECLARE_ONLY_AGGREGATABLE  
@@ -296,7 +296,7 @@ DECLARE_ONLY_AGGREGATABLE( x )
   
  기본적으로 [CComCoClass](../../atl/reference/ccomcoclass-class.md) 포함 된 [DECLARE_AGGREGATABLE](#declare_aggregatable) 개체를 집계할 수 있도록 지정는 매크로입니다. 이 기본 동작을 재정의 하려면 DECLARE_ONLY_AGGREGATABLE 클래스 정의에 포함 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#125](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_8.h)]  
   
 ##  <a name="declare_poly_aggregatable"></a>  DECLARE_POLY_AGGREGATABLE  
@@ -334,9 +334,9 @@ DECLARE_VIEW_STATUS( statusFlags )
   
 ### <a name="parameters"></a>매개 변수  
  *statusFlags*  
- [in] VIEWSTATUS 플래그입니다. 참조 [VIEWSTATUS](http://msdn.microsoft.com/library/windows/desktop/ms687201) 플래그의 목록은 합니다.  
+ [in] VIEWSTATUS 플래그입니다. 참조 [VIEWSTATUS](/windows/desktop/api/ocidl/ne-ocidl-tagviewstatus) 플래그의 목록은 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#126](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_9.h)]  
   
 ## <a name="see-also"></a>참고 항목  

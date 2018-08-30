@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dcd02396fa76e9e68fce628783fb17bc6adab36e
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 74a5e50eae425340bcb0f9a455422b43db0be0b2
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848404"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207112"
 ---
 # <a name="messagehandler"></a>MessageHandler
 `MessageHandler` 메시지 맵에서 MESSAGE_HANDLER 매크로의 두 번째 매개 변수로 식별 된 함수의 이름이입니다.  
@@ -61,5 +61,5 @@ ms.locfileid: "37848404"
 ## <a name="see-also"></a>참고 항목  
  [창 구현](../atl/implementing-a-window.md)   
  [메시지 맵](../atl/message-maps-atl.md)   
- [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583)
+ [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)
 

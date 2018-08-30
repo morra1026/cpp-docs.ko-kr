@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fbcabd0659e98d25cbe28ce233b89dccc3585d61
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 15719f93fbcfde8e6684373f99c924132af9d288
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336188"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215442"
 ---
 # <a name="cdaoexception-class"></a>CDaoException 클래스
 DAO(Data Access Objects)를 기반으로 하는 MFC 데이터베이스 클래스에서 발생하는 예외 상태를 나타냅니다.  
@@ -201,7 +201,7 @@ void GetErrorInfo(int nIndex);
 ### <a name="remarks"></a>설명  
  OLE 코드입니다. 거의 모든 경우에 보다 구체적인 MFC 또는 DAO 오류 정보는 다른 사용할 수 있으므로이 값을 사용 해야 거의 `CDaoException` 데이터 멤버입니다.  
   
- SCODE에 대 한 자세한 내용은 [OLE 오류 코드 구조](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK에 있습니다. SCODE 데이터 형식은 HRESULT 데이터 형식에 매핑됩니다.  
+ SCODE에 대 한 자세한 내용은 [OLE 오류 코드 구조](/windows/desktop/com/structure-of-com-error-codes) Windows SDK에 있습니다. SCODE 데이터 형식은 HRESULT 데이터 형식에 매핑됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [CException 클래스](../../mfc/reference/cexception-class.md)   

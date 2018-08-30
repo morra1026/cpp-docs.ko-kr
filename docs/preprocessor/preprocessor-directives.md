@@ -15,18 +15,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc392454a6c5b152411fe8f6a7d0c12457389794
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: a401cb74c07815f511ad37e53ac5be267029319c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42538707"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212223"
 ---
 # <a name="preprocessor-directives"></a>전처리기 지시문
 
 전처리기 지시문과 같은 `#define` 및 `#ifdef`는 일반적으로 변경 하 고 여러 실행 환경에서 컴파일하는 데 쉽습니다 소스 프로그램을 확인 하는 데 사용 됩니다. 소스 파일의 지시문은 특정 작업을 수행하도록 전처리기에 지시합니다. 예를 들어 전처리기는 텍스트에서 토큰을 바꾸거나, 다른 파일의 내용을 소스 파일에 삽입하거나, 텍스트 섹션을 제거하여 파일 일부의 컴파일을 억제할 수 있습니다. 전처리기 코드 줄은 매크로 확장 전에 인식되고 수행됩니다. 따라서 매크로가 전처리기 명령처럼 보이는 항목으로 확장되는 경우 해당 명령은 전처리기에서 인식되지 않습니다.
 
-전처리기 문은 이스케이프 시퀀스가 지원되지 않는 것을 제외하고 소스 파일 문과 동일한 문자 집합을 사용합니다. 전처리기 문에서 사용된 된 문자 집합은 동일 합니다 [실행 문자 집합](http://msdn.microsoft.com/a7901c61-524d-47c6-beb6-d9dacc2e72ed)합니다. 전처리기는 음수 문자 값도 인식합니다.
+전처리기 문은 이스케이프 시퀀스가 지원되지 않는 것을 제외하고 소스 파일 문과 동일한 문자 집합을 사용합니다. 전처리기 문에서 사용된 된 문자 집합은 동일 합니다 [실행 문자 집합](https://msdn.microsoft.com/a7901c61-524d-47c6-beb6-d9dacc2e72ed)합니다. 전처리기는 음수 문자 값도 인식합니다.
 
 전처리기는 다음 지시문을 인식합니다.
 
@@ -37,7 +37,7 @@ ms.locfileid: "42538707"
 |[#else](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|[#ifdef](../preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md)|[#line](../preprocessor/hash-line-directive-c-cpp.md)|[#endif](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|
 |[#ifndef](../preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md)|[#pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md)|||
 
-숫자 기호 (**#**) 해야 합니다; 지시문이 포함 된 줄에서 첫 번째 공백이 아닌 문자 수 공백 문자는 숫자 기호와 지시문의 첫 문자 사이 나타날 수 있습니다. 일부 지시문에는 인수 또는 값이 포함됩니다. 인수 또는 지시문의 일부인 값) (제외 지시문 뒤에 오는 모든 텍스트 줄으로 된 주석 구분 기호 뒤에 야 (**//**)로 묶여야 주석 구분 기호 ( __/ \*\*/__).   전처리기 지시문이 포함 된 줄 바로 앞에 백슬래시를 사용 하 여 줄의 끝 표식에서 계속할 수 있습니다 (**\\**).
+숫자 기호 (**#**) 해야 합니다; 지시문이 포함 된 줄에서 첫 번째 공백이 아닌 문자 수 공백 문자는 숫자 기호와 지시문의 첫 문자 사이 나타날 수 있습니다. 일부 지시문에는 인수 또는 값이 포함됩니다. 인수 또는 지시문의 일부인 값) (제외 지시문 뒤에 오는 모든 텍스트 줄으로 된 주석 구분 기호 뒤에 야 (**//**)로 묶여야 주석 구분 기호 ( __/ \*\*/__). 전처리기 지시문이 포함 된 줄 바로 앞에 백슬래시를 사용 하 여 줄의 끝 표식에서 계속할 수 있습니다 (**\\**).
 
 전처리기 지시문은 소스 파일의 어느 곳에나 나타날 수 있지만 소스 파일의 나머지 부분에만 적용됩니다.
 

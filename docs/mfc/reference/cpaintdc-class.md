@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 119a4e1b39d86ef2d12565fd593ce2124cef5bd5
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 49681f240d6cee257e48c2cf1c5d2479b3678135
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848917"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208372"
 ---
 # <a name="cpaintdc-class"></a>CPaintDC 클래스
 파생 된 디바이스 컨텍스트 클래스 [CDC](../../mfc/reference/cdc-class.md)합니다.  
@@ -61,7 +61,7 @@ class CPaintDC : public CDC
 ## <a name="remarks"></a>설명  
  수행 된 [cwnd:: Beginpaint](../../mfc/reference/cwnd-class.md#beginpaint) 생성 시 및 [CWnd::EndPaint](../../mfc/reference/cwnd-class.md#endpaint) 소멸 시.  
   
- `CPaintDC` 개체에 응답 하는 경우에 사용 수를 [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) 에 일반적으로 메시지에 `OnPaint` 메시지 처리기 멤버 함수입니다.  
+ `CPaintDC` 개체에 응답 하는 경우에 사용 수를 [WM_PAINT](/windows/desktop/gdi/wm-paint) 에 일반적으로 메시지에 `OnPaint` 메시지 처리기 멤버 함수입니다.  
   
  사용 하 여 대 한 자세한 내용은 `CPaintDC`를 참조 하세요 [장치 컨텍스트](../../mfc/device-contexts.md)합니다.  
   
@@ -87,9 +87,9 @@ explicit CPaintDC(CWnd* pWnd);
  가리키는 합니다 `CWnd` 개체를 `CPaintDC` 개체가 속한.  
   
 ### <a name="remarks"></a>설명  
- 예외 (형식의 `CResourceException`) 하는 경우 throw 되는 Windows [GetDC](http://msdn.microsoft.com/library/windows/desktop/dd144871) 호출이 실패 합니다. 장치 컨텍스트에 Windows에 이미 할당 모든 사용 가능한 장치 컨텍스트에서 사용할 수 있습니다. 응용 프로그램 Windows 아래에서 언제 든 지 사용할 수 있는 5 개의 일반적인 표시 컨텍스트에 대해 경합 합니다.  
+ 예외 (형식의 `CResourceException`) 하는 경우 throw 되는 Windows [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) 호출이 실패 합니다. 장치 컨텍스트에 Windows에 이미 할당 모든 사용 가능한 장치 컨텍스트에서 사용할 수 있습니다. 응용 프로그램 Windows 아래에서 언제 든 지 사용할 수 있는 5 개의 일반적인 표시 컨텍스트에 대해 경합 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#97](../../mfc/codesnippet/cpp/cpaintdc-class_1.cpp)]  
   
 ##  <a name="m_hwnd"></a>  CPaintDC::m_hWnd  
@@ -102,7 +102,7 @@ HWND m_hWnd;
 ### <a name="remarks"></a>설명  
  *m_hWnd* 보호 된 변수 형식 HWND입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#98](../../mfc/codesnippet/cpp/cpaintdc-class_2.cpp)]  
   
 ##  <a name="m_ps"></a>  CPaintDC::m_ps  
@@ -119,7 +119,7 @@ PAINTSTRUCT m_ps;
   
  통해 장치 컨텍스트 핸들에 액세스할 수 있는지 확인 합니다 `PAINTSTRUCT`합니다. 그러나 핸들을 통해 보다 직접 액세스할 수 있습니다 합니다 `m_hDC` 멤버 변수는 `CPaintDC` CDC에서 상속 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CPaintDC::m_hWnd](#m_hwnd)합니다.  
   
 ## <a name="see-also"></a>참고 항목  

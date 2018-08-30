@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b9522db579641d79b8b77cc870cd1df6f03c0413
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a790887f54e01cea835c6110e3d81e1c2d3afeaa
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607675"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206703"
 ---
 # <a name="importlib"></a>importlib
 
@@ -43,9 +43,9 @@ ms.locfileid: "42607675"
 
 ## <a name="remarks"></a>설명
 
-합니다 **importlib** c + + 특성을 사용 하면는 `importlib` 문이 생성된 된.idl 파일의 라이브러리 블록에 배치 합니다. 합니다 **importlib** 특성이 동일한 기능을 합니다 [importlib](http://msdn.microsoft.com/library/windows/desktop/aa367050) MIDL 특성입니다.
+합니다 **importlib** c + + 특성을 사용 하면는 `importlib` 문이 생성된 된.idl 파일의 라이브러리 블록에 배치 합니다. 합니다 **importlib** 특성이 동일한 기능을 합니다 [importlib](/windows/desktop/Midl/importlib) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드를 사용 하는 방법의 예를 보여 줍니다 **importlib**:
 

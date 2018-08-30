@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0252cc64a1d14a6d096a5c4ad6dd2e0d6c3c7ff
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 4c8cc3c6ad476f0a1d69c81dad4eabfed3cc34bd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36957034"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219908"
 ---
 # <a name="cdiscretetransition-class"></a>CDiscreteTransition 클래스
 불연속 전환을 캡슐화합니다.  
@@ -54,18 +54,18 @@ class CDiscreteTransition : public CBaseTransition;
   
 |이름|설명|  
 |----------|-----------------|  
-|[CDiscreteTransition::Create](#create)|캡슐화 된 전환 COM 개체를 만드는 전환 라이브러리를 호출 합니다. (재정의 [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#create).)|  
+|[CDiscreteTransition::Create](#create)|캡슐화 된 전환 COM 개체를 만들려면 전환 라이브러리를 호출 합니다. (재정의 [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#create).)|  
   
 ### <a name="public-data-members"></a>공용 데이터 멤버  
   
 |이름|설명|  
 |----------|-----------------|  
-|[CDiscreteTransition::m_dblFinalValue](#m_dblfinalvalue)|전환의 끝에서 애니메이션 변수의 값입니다.|  
-|[CDiscreteTransition::m_delay](#m_delay)|최종 값으로 인스턴스화 스위치를 지연 하는 기준인 시간의 양입니다.|  
-|[CDiscreteTransition::m_hold](#m_hold)|으로 최종 값에서 변수를 유지 하는 시간의 양입니다.|  
+|[CDiscreteTransition::m_dblFinalValue](#m_dblfinalvalue)|전환의 끝에 있는 애니메이션 변수의 값입니다.|  
+|[CDiscreteTransition::m_delay](#m_delay)|최종 값으로 즉시 전환 지연에 사용 되는 시간의 양입니다.|  
+|[CDiscreteTransition::m_hold](#m_hold)|최종 값에서 변수에 저장에 사용 되는 시간의 양입니다.|  
   
 ## <a name="remarks"></a>설명  
- 불연속 전환 하는 동안 애니메이션 변수는 초기 값은 지정 된 지연 시간 후 지정 된 최종 값과 해당 값 유지에 즉시 스위치에 대 한 지정된 된 대기 시간에 대 한 합니다. 모든 전환을 자동으로 취소 되므로 것이 좋습니다에 할당 된 새 연산자를 사용 합니다. 캡슐화 된 IUIAnimationTransition COM 개체는 NULL이 될 때까지 CAnimationController::AnimateGroup, 여 생성 됩니다. 이 COM 개체 만들기는 아무런 영향을 주지 후 멤버 변수를 변경 합니다.  
+ 불연속 전환 하는 동안 애니메이션 변수의 값으로 유지 됩니다 초기 지정 된 지연 시간을 최종 값을 지정된 하 고 해당 값 유지에 즉시 스위치에 지정된 된 대기 시간에 대 한 합니다. 모든 전환을 자동으로 취소 하므로 것이 좋습니다에 할당 된 새 연산자를 사용 합니다. 캡슐화 된 IUIAnimationTransition COM 개체는 NULL까지 CAnimationController::AnimateGroup에서 생성 됩니다. 이 COM 개체의 생성에 영향을 주지 않습니다 후 멤버 변수를 변경 합니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -89,16 +89,16 @@ CDiscreteTransition(
   
 ### <a name="parameters"></a>매개 변수  
  *지연*  
- 최종 값으로 인스턴스화 스위치를 지연 하는 기준인 시간의 양입니다.  
+ 최종 값으로 즉시 전환 지연에 사용 되는 시간의 양입니다.  
   
  *dblFinalValue*  
- 전환의 끝에서 애니메이션 변수의 값입니다.  
+ 전환의 끝에 있는 애니메이션 변수의 값입니다.  
   
- *보류*  
- 으로 최종 값에서 변수를 유지 하는 시간의 양입니다.  
+ *보류 중*  
+ 최종 값에서 변수에 저장에 사용 되는 시간의 양입니다.  
   
 ##  <a name="create"></a>  CDiscreteTransition::Create  
- 캡슐화 된 전환 COM 개체를 만드는 전환 라이브러리를 호출 합니다.  
+ 캡슐화 된 전환 COM 개체를 만들려면 전환 라이브러리를 호출 합니다.  
   
 ```  
 virtual BOOL Create(
@@ -107,28 +107,28 @@ virtual BOOL Create(
 ```  
   
 *pLibrary*  
- 에 대 한 포인터는 [IUIAnimationTransitionLibrary 인터페이스](https://msdn.microsoft.com/library/windows/desktop/dd371897), 표준 전환의 라이브러리를 정의 하는 합니다.  
+ 에 대 한 포인터를 [IUIAnimationTransitionLibrary 인터페이스](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), 표준 전환의 라이브러리를 정의 하는 합니다.  
 
   
 ### <a name="return-value"></a>반환 값  
- TRUE 이면 전환을 만들었습니다. 그렇지 않으면 FALSE입니다.  
+ 전환; 성공적으로 만들어졌을 경우 TRUE 그렇지 않으면 FALSE입니다.  
   
 ##  <a name="m_dblfinalvalue"></a>  CDiscreteTransition::m_dblFinalValue  
- 전환의 끝에서 애니메이션 변수의 값입니다.  
+ 전환의 끝에 있는 애니메이션 변수의 값입니다.  
   
 ```  
 DOUBLE m_dblFinalValue;  
 ```  
   
 ##  <a name="m_delay"></a>  CDiscreteTransition::m_delay  
- 최종 값으로 인스턴스화 스위치를 지연 하는 기준인 시간의 양입니다.  
+ 최종 값으로 즉시 전환 지연에 사용 되는 시간의 양입니다.  
   
 ```  
 UI_ANIMATION_SECONDS m_delay;  
 ```  
   
 ##  <a name="m_hold"></a>  CDiscreteTransition::m_hold  
- 으로 최종 값에서 변수를 유지 하는 시간의 양입니다.  
+ 최종 값에서 변수에 저장에 사용 되는 시간의 양입니다.  
   
 ```  
 UI_ANIMATION_SECONDS m_hold;  

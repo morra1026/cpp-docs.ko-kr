@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d5848581b26812f322782a73d8964deee1feefb9
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7c8924f7b22ed86adf7721018c4df3094a2069c1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606976"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200697"
 ---
 # <a name="viprogid"></a>vi_progid
 
@@ -53,7 +53,7 @@ Progid는 COM/ActiveX 개체를 식별 하는 데 클래스 식별자 (CLSID)의
 
 ATL 프로젝트의 경우는 [coclass](../windows/coclass.md) 특성도, 지정 된 ProgID를 사용 되는 `GetVersionIndependentProgID` 함수 (삽입을 `coclass` 특성).
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 참조 된 [coclass](../windows/coclass.md) 의 샘플 사용에 대 한 예제 **vi_progid**합니다.
 
@@ -75,4 +75,4 @@ ATL 프로젝트의 경우는 [coclass](../windows/coclass.md) 특성도, 지정
 [IDL 특성](../windows/idl-attributes.md)  
 [Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  
 [클래스 특성](../windows/class-attributes.md)  
-[ProgID 키](http://msdn.microsoft.com/library/windows/desktop/dd542719)  
+[ProgID 키](/windows/desktop/com/-progid--key)  

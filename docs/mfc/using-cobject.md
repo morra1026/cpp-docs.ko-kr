@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0fab92dddc10a66fe350d343f1fd280ce5c9a50
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 30906b3851357942873e3926151d5a195161a6e5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027153"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205185"
 ---
 # <a name="using-cobject"></a>CObject 사용
 [CObject](../mfc/reference/cobject-class.md) 대부분 Microsoft Foundation 클래스 라이브러리 (MFC)의 루트 기본 클래스입니다. `CObject` 클래스 serialization 지 원하는, 런타임 클래스 정보 및 개체 진단 출력을 포함 하 여 사용자 고유의 프로그램 개체를 통합할 수 있는 많은 유용한 기능을 포함 합니다. 클래스를 파생 하는 경우 `CObject`, 이러한 클래스를 이용할 수 있습니다 `CObject` 기능입니다.  
@@ -40,9 +40,9 @@ ms.locfileid: "39027153"
   
 -   [개체를 동적으로 만들기](../mfc/dynamic-object-creation.md)  
   
--   [진단 목적을 위해 개체의 데이터를 덤프](http://msdn.microsoft.com/727855b1-5a83-44bd-9fe3-f1d535584b59)  
+-   [진단 목적을 위해 개체의 데이터를 덤프](/previous-versions/visualstudio/visual-studio-2010/sc15kz85\(v=vs.100\))  
   
--   개체의 내부 상태 유효성 검사 (참조 [MFC ASSERT_VALID 및 CObject::AssertValid](http://msdn.microsoft.com/7654fb75-9e9a-499a-8165-0a96faf2d5e6))  
+-   개체의 내부 상태 유효성 검사 (참조 [MFC ASSERT_VALID 및 CObject::AssertValid](https://msdn.microsoft.com/7654fb75-9e9a-499a-8165-0a96faf2d5e6))  
   
 -   [영구적 저장소로 직렬화 하는 자체 클래스](../mfc/serialization-in-mfc.md)  
   

@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bf7567cfe9f21effda913606ca3af9a19464f9d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 70a0615debabb056110dd9d6f7a6aac86e9d464a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377208"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198317"
 ---
 # <a name="pgomgr"></a>pgomgr
 
@@ -37,20 +37,20 @@ ms.locfileid: "32377208"
 
 - **/help** 또는 **/?** 사용 가능한 표시 **pgomgr** 옵션입니다.
 
-- **/clear** 하면.pgd 파일의 모든 프로필 정보가 지워집니다. .pgc를 지정할 수 없습니다 있을 때 파일 **/clear** 지정 됩니다.
+- **지우기/** .pgd 파일을 지운 다음 모든 프로필 정보입니다. .pgc를 지정할 수 없습니다 경우 파일 **지우기/** 지정 됩니다.
 
-- **/detail** 선형 그래프 진행 정보를 포함 하 여 자세한 통계를 표시 합니다.
+- **/detail** 흐름 그래프 검사 정보를 포함 하 여 자세한 통계를 표시 합니다.
 
-- **요약/** 표시 기능별 통계.
+- **요약/** 표시 함수 통계.
 
-- **고유한 /** 와 함께 사용할 경우 **요약/**, 원인 데코레이팅된 함수 이름을 표시 합니다. 기본값, **고유 /** 표시할 데코 레이트 되지 않은 함수 이름에는 사용 되지 않습니다.
+- **고유 /** 와 함께 사용할 경우 **요약/**, 원인 데코레이팅된 함수 이름을 표시 합니다. 기본 면 **고유 /** 표시할 데코 레이트 되지 않은 함수 이름에는 사용 되지 않습니다.
 
-- **/병합**[**:***n*] 하면 데이터가.pgc 파일이 나.pgd 파일에 추가할 파일입니다. 선택적 매개 변수 *n*, 데이터를 추가 해야 함을 지정할 수 있습니다 *n* 시간입니다. 예를 들어 시나리오의 경우는 일반적으로 완료 6 번 고객에 의해 이루어진다는 얼마나 자주 반영 하기 위해, 테스트 실행에서 두 번 수행 추가 하는 것으로 6 번.pgd 파일에 **pgomgr /merge:6** 합니다.
+- **/ merge**\[**:**<em>n</em>].pgd 파일을 추가할 수는.pgc 파일에 데이터를 발생 합니다. 선택적 매개 변수 *n*에 데이터를 추가 해야 함을 지정할 수 있습니다 *n* 시간입니다. 예를 들어 시나리오의 경우는 일반적으로 완료 6 번 고객에 의해 이루어진다는 얼마나 자주 반영 하기 위해, 테스트 실행에서 두 번 수행 추가 하는 것으로 6 번.pgd 파일에 **pgomgr /merge:6** 합니다.
 
 *pgcfiles*<br/>
-하나 이상의.pgc 파일 프로필 데이터가.pgd 파일에 병합 합니다. 단일.pgc 파일이 나 여러.pgc 파일을 지정할 수 있습니다. .Pgc 파일을 지정 하지 않으면 **pgomgr** 해당 파일 이름이.pgd 파일로 같습니다 모든.pgc 파일을 병합 합니다.
+하나 이상의.pgc 파일.pgd 파일에 병합 하려는 프로필 데이터입니다. 단일.pgc 파일 또는 여러.pgc 파일을 지정할 수 있습니다. .Pgc 파일을 지정 하지 않는 경우 **pgomgr** 해당 파일 이름이.pgd 파일로 같습니다 모든.pgc 파일을 병합 합니다.
 
-*pgdfile* .pgd 파일을 병합 하는.pgc 파일 또는 파일의 데이터입니다.
+*pgdfile* .pgd 파일에 병합 하는.pgc 파일 또는 파일의 데이터입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -59,15 +59,15 @@ ms.locfileid: "32377208"
 
 ## <a name="example"></a>예제
 
-이 예제 명령을 myapp.pgd 파일 한 프로필 데이터를 지웁니다.
+이 예제 명령은 프로필 데이터의 myapp.pgd 파일을 지웁니다.
 
 `pgomgr /clear myapp.pgd`
 
-이 예제에서는 명령은 프로필 데이터의에서 추가 myapp1.pgc.pgd 파일을 세 번:
+이 예제 명령은 프로필 데이터의에서 추가 myapp1.pgc.pgd 파일을 세 번:
 
 `pgomgr /merge:3 myapp1.pgc myapp.pgd`
 
-이 예제에서는 모든 myapp #.pgc 파일에서 프로필 데이터는 myapp.pgd 파일에 추가 됩니다.
+이 예제에서는 모든 myapp #.pgc 파일의 프로필 데이터는 myapp.pgd 파일에 추가 됩니다.
 
 `pgomgr -merge myapp1.pgd`
 

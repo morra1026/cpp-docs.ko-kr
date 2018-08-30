@@ -102,12 +102,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8acf472d3727534bacd70664dc559b9d8f23d16
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: ef28bc57981868eaa1cadcbead3c11c8fade57e8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42539309"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217091"
 ---
 # <a name="cmfcvisualmanageroffice2003-class"></a>CMFCVisualManagerOffice2003 클래스
 `CMFCVisualManagerOffice2003` 응용 프로그램에 Microsoft Office 2003 모양을 제공 합니다.  
@@ -206,14 +206,14 @@ class CMFCVisualManagerOffice2003 : public CMFCVisualManagerOfficeXP
 |[CMFCVisualManagerOffice2003::OnHighlightQuickCustomizeMenuButton](#onhighlightquickcustomizemenubutton)|프레임 워크를 강조 표시 된을 그릴 때이 메서드가 빨리-사용자 지정 메뉴 단추를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnHighlightQuickCustomizeMenuButton`를 재정의합니다.)|  
 |[CMFCVisualManagerOffice2003::OnHighlightRarelyUsedMenuItems](#onhighlightrarelyusedmenuitems)|강조 표시 된 메뉴 명령을 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnHighlightRarelyUsedMenuItems`를 재정의합니다.)|  
 |[CMFCVisualManagerOffice2003::OnUpdateSystemColors](#onupdatesystemcolors)|시스템 색이 변경 하는 경우이 함수를 호출 하는 프레임 워크입니다. (`CMFCVisualManagerOfficeXP::OnUpdateSystemColors`를 재정의합니다.)|  
-|[CMFCVisualManagerOffice2003::SetDefaultWinXPColors](#setdefaultwinxpcolors)|비주얼 관리자 네이티브 Windows XP 테마 색을 사용할지 아니면 색에서 가져온 지정 [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371)합니다.|  
+|[CMFCVisualManagerOffice2003::SetDefaultWinXPColors](#setdefaultwinxpcolors)|비주얼 관리자 네이티브 Windows XP 테마 색을 사용할지 아니면 색에서 가져온 지정 [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371)합니다.|  
 |[CMFCVisualManagerOffice2003::SetStatusBarOfficeXPLook](#setstatusbarofficexplook)|Windows XP 전역 테마를 사용 해야 함을 지정 합니다.|  
 |[CMFCVisualManagerOffice2003::SetUseGlobalTheme](#setuseglobaltheme)|비주얼 관리자 전역 테마를 사용 하는지 여부를 지정 합니다.|  
   
 ## <a name="remarks"></a>설명  
  사용 된 `CMFCVisualManagerOffice2003` Microsoft Office 2003 유사 하 게 응용 프로그램의 시각적 모양을 변경 하는 클래스입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 office 2003 비주얼 관리자를 설정 하는 방법에 설명 합니다. 이 코드 조각은의 일부인 합니다 [바탕 화면 경고 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_DesktopAlertDemo#6](../../mfc/reference/codesnippet/cpp/cmfcvisualmanageroffice2003-class_1.cpp)]  
@@ -451,10 +451,10 @@ virtual void GetSmartDockingBaseGuideColors(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *clrBaseGroupBackground*  
- 에 대 한 참조를 [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 배경색으로 설정 합니다.  
+ 에 대 한 참조를 [COLORREF](/windows/desktop/gdi/colorref) 배경색으로 설정 합니다.  
   
  [in] *clrBaseGroupBorder*  
- 에 대 한 참조를 [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 테두리 색으로 설정 합니다.  
+ 에 대 한 참조를 [COLORREF](/windows/desktop/gdi/colorref) 테두리 색으로 설정 합니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -466,7 +466,7 @@ virtual COLORREF GetSmartDockingHighlightToneColor();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 반환 된 [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 강조색 어조를 포함 하는 합니다.  
+ 반환 된 [COLORREF](/windows/desktop/gdi/colorref) 강조색 어조를 포함 하는 합니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -491,7 +491,7 @@ virtual void GetTabFrameColors(
  프레임 탭을 그릴 위치 탭된 창에 대 한 포인터입니다.  
   
  [out] *clrDark*  
- 에 대 한 참조를 [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 이 메서드는 탭의 어두운 테두리의 색을 저장 하는 위치 매개 변수입니다.  
+ 에 대 한 참조를 [COLORREF](/windows/desktop/gdi/colorref) 이 메서드는 탭의 어두운 테두리의 색을 저장 하는 위치 매개 변수입니다.  
   
  [out] *clrBlack*  
  이 메서드는 탭 창 테두리의 색을 저장 하는 위치 COLORREF 매개 변수 참조입니다. 테두리에 대 한 기본 색은 검정입니다.  
@@ -536,7 +536,7 @@ virtual COLORREF GetToolbarDisabledColor() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 반환 된 [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 포함 하는 색 사용 안 함된.  
+ 반환 된 [COLORREF](/windows/desktop/gdi/colorref) 포함 하는 색 사용 안 함된.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1095,7 +1095,7 @@ virtual COLORREF OnDrawPaneCaption(
  캡션 단추의 경계를 지정 하는 사각형입니다.  
   
 ### <a name="return-value"></a>반환 값  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 캡션의 텍스트 색을 나타내는 매개 변수입니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) 캡션의 텍스트 색을 나타내는 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1208,7 +1208,7 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
  캡션 표시줄에 대 한 포인터입니다. 이 visual manager 그립니다 [CMFCRibbonContextCaption 클래스](../../mfc/reference/cmfcribboncontextcaption-class.md)합니다.  
   
 ### <a name="return-value"></a>반환 값  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 캡션 표시줄에 텍스트의 색을 나타내는 매개 변수입니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) 캡션 표시줄에 텍스트의 색을 나타내는 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  리본 범주에 대 한 캡션 표시줄의 표시를 사용자 지정 파생된 클래스에서이 메서드를 재정의 합니다.  
@@ -2231,7 +2231,7 @@ virtual void OnUpdateSystemColors();
  프레임 워크 WM_SYSCOLORCHANGE 메시지 처리의 일부분으로이 메서드를 호출 합니다. 응용 프로그램에서 색을 변경 하는 경우 사용자 지정 코드를 실행 하려는 경우에 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
   
 ##  <a name="setdefaultwinxpcolors"></a>  CMFCVisualManagerOffice2003::SetDefaultWinXPColors  
- 비주얼 관리자 네이티브 Windows XP 테마 색을 사용할지 아니면 색에서 가져온 지정 [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371)합니다.  
+ 비주얼 관리자 네이티브 Windows XP 테마 색을 사용할지 아니면 색에서 가져온 지정 [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371)합니다.  
   
 ```  
 static void SetDefaultWinXPColors(BOOL bDefaultWinXPColors = TRUE);

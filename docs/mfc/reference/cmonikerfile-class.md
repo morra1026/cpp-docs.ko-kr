@@ -28,15 +28,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 296e288f017373563b867b02ad26f25ec6bc6227
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: b3aab8fe3dac8cb58884861a83e41d09b493a375
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853649"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212119"
 ---
 # <a name="cmonikerfile-class"></a>CMonikerFile 클래스
-데이터 스트림을 나타냅니다 ( [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034))로 명명 한 [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705)합니다.  
+데이터 스트림을 나타냅니다 ( [IStream](/windows/desktop/api/objidl/nn-objidl-istream))로 명명 한 [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker)합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -74,7 +74,7 @@ class CMonikerFile : public COleStreamFile
   
  `CMonikerFile` 스트림 이외의 값으로 바인딩할 사용할 수 없습니다. 저장소 또는 개체에 바인딩할 경우 사용 해야는 `IMoniker` 직접 인터페이스입니다.  
   
- 모니커 및 스트림에 대 한 자세한 내용은 참조 하세요. [COleStreamFile](../../mfc/reference/colestreamfile-class.md) 에 *MFC 참조* 및 [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) 및 [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705) 에 Windows SDK입니다.  
+ 모니커 및 스트림에 대 한 자세한 내용은 참조 하세요. [COleStreamFile](../../mfc/reference/colestreamfile-class.md) 에 *MFC 참조* 및 [IStream](/windows/desktop/api/objidl/nn-objidl-istream) 및 [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker) 에 Windows SDK입니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -117,7 +117,7 @@ IBindCtx* CreateBindContext(CFileException* pError);
  파일 예외에 대 한 포인터입니다. 오류가 발생 한 원인에 설정 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
- 바인드 컨텍스트에 대 한 포인터로 [IBindCtx](http://msdn.microsoft.com/library/windows/desktop/ms693755) 바인딩할 성공 하면 NULL입니다. 인스턴스를 사용 하 여 열린 경우는 `IBindHost` 인터페이스를 바인드 컨텍스트에에서 검색 되는 `IBindHost`합니다. 없는 경우 없는 `IBindHost` 인터페이스 또는 인터페이스 반환 되지 않으면 바인딩 컨텍스트, 바인딩 컨텍스트가 만들어집니다. 에 대 한 설명은 합니다 [IBindHost](http://msdn.microsoft.com/library/ie/ms775076) 인터페이스, Windows SDK를 참조 하세요.  
+ 바인드 컨텍스트에 대 한 포인터로 [IBindCtx](/windows/desktop/api/objidl/nn-objidl-ibindctx) 바인딩할 성공 하면 NULL입니다. 인스턴스를 사용 하 여 열린 경우는 `IBindHost` 인터페이스를 바인드 컨텍스트에에서 검색 되는 `IBindHost`합니다. 없는 경우 없는 `IBindHost` 인터페이스 또는 인터페이스 반환 되지 않으면 바인딩 컨텍스트, 바인딩 컨텍스트가 만들어집니다. 에 대 한 설명은 합니다 [IBindHost](https://msdn.microsoft.com/library/ie/ms775076) 인터페이스, Windows SDK를 참조 하세요.  
   
 ### <a name="remarks"></a>설명  
  바인딩 컨텍스트는 특정 모니커 바인딩 작업에 대 한 정보를 저장 하는 개체입니다. 사용자 지정 바인딩 컨텍스트를 제공 하려면이 함수를 재정의할 수 있습니다.  
@@ -144,10 +144,10 @@ IMoniker* GetMoniker() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 현재 모니커 인터페이스에 대 한 포인터 ( [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705)).  
+ 현재 모니커 인터페이스에 대 한 포인터 ( [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker)).  
   
 ### <a name="remarks"></a>설명  
- 이후 `CMonikerFile` , 인터페이스가 아닙니다. 반환 된 포인터 참조 횟수를 증가 하지 않습니다 (통해 [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379)), 모니커를 놓으면 때는 `CMonikerFile` 개체가 해제 되는 합니다. 모니커를 점유 하거나 직접 해제 하려는 경우 해야 `AddRef` 것입니다.  
+ 이후 `CMonikerFile` , 인터페이스가 아닙니다. 반환 된 포인터 참조 횟수를 증가 하지 않습니다 (통해 [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref)), 모니커를 놓으면 때는 `CMonikerFile` 개체가 해제 되는 합니다. 모니커를 점유 하거나 직접 해제 하려는 경우 해야 `AddRef` 것입니다.  
   
 ##  <a name="open"></a>  CMonikerFile::Open  
  파일 또는 모니커 개체를이 멤버 함수를 호출 합니다.  

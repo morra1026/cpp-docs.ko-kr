@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 28501c0105ce9d62c72dc9013b881029f4bc8bfb
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: faa2a3be7260eecb16599db967336bcb7b774c99
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590668"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200128"
 ---
 # <a name="switchtype"></a>switch_type
 
@@ -43,9 +43,9 @@ type
 
 ## <a name="remarks"></a>설명
 
-합니다 **switch_type** c + + 특성에 동일한 기능을 합니다 [switch_type](http://msdn.microsoft.com/library/windows/desktop/aa367276) MIDL 특성입니다.
+합니다 **switch_type** c + + 특성에 동일한 기능을 합니다 [switch_type](/windows/desktop/Midl/switch-type) MIDL 특성입니다.
 
-C + + 특성을 지원 하지 않습니다 [공용 구조체를 캡슐화](http://msdn.microsoft.com/library/windows/desktop/aa366811)합니다. [공용 구조체 nonencapsulated](http://msdn.microsoft.com/library/windows/desktop/aa367119) 다음과 같은 형식 에서만 지원 됩니다.
+C + + 특성을 지원 하지 않습니다 [공용 구조체를 캡슐화](/windows/desktop/Midl/encapsulated-unions)합니다. [공용 구조체 nonencapsulated](/windows/desktop/Midl/nonencapsulated-unions) 다음과 같은 형식 에서만 지원 됩니다.
 
 ```cpp
 // cpp_attr_ref_switch_type.cpp
@@ -64,7 +64,7 @@ struct SizedValue2 {
 };
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 참조 된 [사례](../windows/case-cpp.md) 의 샘플 사용에 대 한 예제 **switch_type**합니다.
 

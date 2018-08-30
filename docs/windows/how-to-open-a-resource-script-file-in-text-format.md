@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5912d4bf38824c562055432f125cdc7e75192cc5
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: aae516aeecd90a46544d1e9e28e1352fc73f6e2c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610809"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221462"
 ---
 # <a name="how-to-open-a-resource-script-file-in-text-format"></a>방법: 리소스 스크립트 파일을 텍스트 형식으로 열기
 
@@ -33,7 +33,7 @@ ms.locfileid: "42610809"
 > [!NOTE]
 > 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.
 
-텍스트 형식으로 포함 된 모든 리소스를 볼 지 원하는 전역 작업을 수행 하는 리소스 파일을 쉽게 열 수 있습니다 합니다 [텍스트 편집기](http://msdn.microsoft.com/508e1f18-99d5-48ad-b5ad-d011b21c6ab1)합니다.
+텍스트 형식으로 포함 된 모든 리소스를 볼 지 원하는 전역 작업을 수행 하는 리소스 파일을 쉽게 열 수 있습니다 합니다 [텍스트 편집기](https://msdn.microsoft.com/508e1f18-99d5-48ad-b5ad-d011b21c6ab1)합니다.
 
 > [!NOTE]
 > 리소스 편집기에서.rc 직접 읽지 않습니다 또는 `resource.h` 파일입니다. 리소스 컴파일러는 리소스 편집기에서 사용되는 이러한 파일을 .aps 파일로 컴파일합니다. 이 파일은 컴파일 단계이며 기호화된 데이터만 저장합니다. 일반적인 컴파일 프로세스에서처럼 기호화되지 않은 정보(예: 주석)는 컴파일 프로세스 중에 삭제됩니다. .aps 파일이 .rc 파일과 동기화되지 않을 때마다 .rc 파일이 다시 생성됩니다. 예를 들어 저장하면 리소스 편집기에서 .rc 파일 및 resource.h 파일을 덮어씁니다. 리소스 자체의 모든 변경 내용은 .rc 파일에 통합된 상태로 유지되지만 주석은 .rc 파일을 덮어쓰면 항상 손실됩니다. 주석을 유지 하는 방법에 대 한 자세한 내용은 [컴파일 타임에 리소스 포함](../windows/how-to-include-resources-at-compile-time.md)합니다.

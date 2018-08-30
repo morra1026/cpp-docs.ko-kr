@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e1e400352a6eca09fd26ea1a1e2ba5cff60888bc
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: ae151d25af5ad1c77f2dcfc7af1902e562ffde51
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026103"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208310"
 ---
 # <a name="cwintraits-class"></a>CWinTraits 클래스
 이 클래스는 창 개체를 만들 때 사용 되는 스타일을 표준화 하는 방법을 제공 합니다.  
@@ -108,6 +108,6 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
  개체의 확장된 창 스타일입니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [클래스 멤버](http://msdn.microsoft.com/dbe6a147-3f01-4aea-a3fb-fe6ebadc31f8)   
+ [클래스 멤버](https://msdn.microsoft.com/dbe6a147-3f01-4aea-a3fb-fe6ebadc31f8)   
  [클래스 개요](../../atl/atl-class-overview.md)   
  [창 특성 이해](../../atl/understanding-window-traits.md)

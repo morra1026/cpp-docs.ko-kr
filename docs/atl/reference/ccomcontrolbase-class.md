@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ace66d9528534b382eda02160372bfc56aced0f5
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 4b505b9f6164566a1e196c601bdfe3eab4b4a991
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882997"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208584"
 ---
 # <a name="ccomcontrolbase-class"></a>CComControlBase 클래스
 이 클래스를 만들고 ATL 컨트롤을 관리 하기 위한 메서드를 제공 합니다.  
@@ -198,11 +198,11 @@ class ATL_NO_VTABLE CComControlBase
 |[CComControlBase::m_rcPos](#m_rcpos)|컨테이너의 좌표로 표시 되는 컨트롤의 위치 (픽셀)에서입니다.|  
 |[CComControlBase::m_sizeExtent](#m_sizeextent)|특정 디스플레이 HIMETRIC 단위 (단위당은 0.01 밀리미터)에서 컨트롤의 범위입니다.|  
 |[CComControlBase::m_sizeNatural](#m_sizenatural)|HIMETRIC 단위 (단위당은 0.01 밀리미터)에서 컨트롤의 실제 크기입니다.|  
-|[CComControlBase::m_spAdviseSink](#m_spadvisesink)|컨테이너에서 권장 하는 연결에 대 한 직접 포인터 (컨테이너의 [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513)).|  
+|[CComControlBase::m_spAdviseSink](#m_spadvisesink)|컨테이너에서 권장 하는 연결에 대 한 직접 포인터 (컨테이너의 [IAdviseSink](/windows/desktop/api/objidl/nn-objidl-iadvisesink)).|  
 |[CComControlBase::m_spAmbientDispatch](#m_spambientdispatch)|A `CComDispatchDriver` 를 검색 하 고 컨테이너의 속성을 설정할 수 있는 개체는 `IDispatch` 포인터입니다.|  
 |[CComControlBase::m_spClientSite](#m_spclientsite)|컨테이너 내에서 컨트롤의 클라이언트 사이트에 대 한 포인터입니다.|  
 |[CComControlBase::m_spDataAdviseHolder](#m_spdataadviseholder)|표준 의미를 데이터 개체 간의 자문 연결을 보유할 advise 싱크를 제공 합니다.|  
-|[CComControlBase::m_spInPlaceSite](#m_spinplacesite)|컨테이너의에 대 한 포인터 [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586)를 [IOleInPlaceSiteEx](http://msdn.microsoft.com/library/windows/desktop/ms693461), 또는 [IOleInPlaceSiteWindowless](http://msdn.microsoft.com/library/windows/desktop/ms682300) 인터페이스 포인터입니다.|  
+|[CComControlBase::m_spInPlaceSite](#m_spinplacesite)|컨테이너의에 대 한 포인터 [IOleInPlaceSite](/windows/desktop/api/oleidl/nn-oleidl-ioleinplacesite)를 [IOleInPlaceSiteEx](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesiteex), 또는 [IOleInPlaceSiteWindowless](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesitewindowless) 인터페이스 포인터입니다.|  
 |[CComControlBase::m_spOleAdviseHolder](#m_spoleadviseholder)|자문 연결을 보유 하는 방법은의 표준 구현을 제공 합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -245,7 +245,7 @@ CComControlBase(HWND& h);
 ```  
   
 ### <a name="remarks"></a>설명  
- 컨트롤이 창에 있으면 `~CComControlBase` 를 호출 하 여 소멸 [DestroyWindow](http://msdn.microsoft.com/library/windows/desktop/ms632682)합니다.  
+ 컨트롤이 창에 있으면 `~CComControlBase` 를 호출 하 여 소멸 [DestroyWindow](https://msdn.microsoft.com/library/windows/desktop/ms632682)합니다.  
   
 ##  <a name="controlqueryinterface"></a>  CComControlBase::ControlQueryInterface  
  요청된 인터페이스에 대한 포인터를 검색합니다.  
@@ -265,7 +265,7 @@ virtual HRESULT ControlQueryInterface(const IID& iid,
 ### <a name="remarks"></a>설명  
  COM 맵 테이블의 인터페이스만 처리 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_COM#15](../../atl/codesnippet/cpp/ccomcontrolbase-class_1.cpp)]  
   
 ##  <a name="doesverbactivate"></a>  CComControlBase::DoesVerbActivate  
@@ -316,7 +316,7 @@ HRESULT DoVerbProperties(LPCRECT /* prcPosRect */, HWND hwndParent);
 ### <a name="return-value"></a>반환 값  
  HRESULT 값 중 하나입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_COM#19](../../atl/codesnippet/cpp/ccomcontrolbase-class_2.cpp)]  
   
  [!code-cpp[NVC_ATL_COM#20](../../atl/codesnippet/cpp/ccomcontrolbase-class_3.h)]  
@@ -334,7 +334,7 @@ HRESULT FireViewChange();
 ### <a name="remarks"></a>설명  
  컨트롤이 활성화 된 경우 (컨트롤 클래스 데이터 멤버 [CComControlBase::m_bInPlaceActive](#m_binplaceactive) true), 전체 컨트롤을 다시 그리도록 하려면 컨테이너에 알립니다. 컨트롤에 현재 없는 경우 컨트롤의 등록 된 알립니다 싱크는 것이 좋습니다 (컨트롤 클래스 데이터 멤버를 통해 [CComControlBase::m_spAdviseSink](#m_spadvisesink)) 컨트롤의 뷰 변경 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_COM#21](../../atl/codesnippet/cpp/ccomcontrolbase-class_4.cpp)]  
   
 ##  <a name="getambientappearance"></a>  CComControlBase::GetAmbientAppearance  
@@ -351,7 +351,7 @@ HRESULT GetAmbientAppearance(short& nAppearance);
 ### <a name="return-value"></a>반환 값  
  HRESULT 값 중 하나입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_COM#22](../../atl/codesnippet/cpp/ccomcontrolbase-class_5.h)]  
   
 ##  <a name="getambientautoclip"></a>  CComControlBase::GetAmbientAutoClip  
@@ -447,7 +447,7 @@ HRESULT GetAmbientFont(IFont** ppFont);
   
 ### <a name="parameters"></a>매개 변수  
  *ppFont*  
- 컨테이너에 대 한 포인터의 앰비언트 [IFont](http://msdn.microsoft.com/library/windows/desktop/ms680673) 인터페이스입니다.  
+ 컨테이너에 대 한 포인터의 앰비언트 [IFont](/windows/desktop/api/ocidl/nn-ocidl-ifont) 인터페이스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  HRESULT 값 중 하나입니다.  
@@ -464,7 +464,7 @@ HRESULT GetAmbientFontDisp(IFontDisp** ppFont);
   
 ### <a name="parameters"></a>매개 변수  
  *ppFont*  
- 컨테이너에 대 한 포인터의 앰비언트 [IFontDisp](http://msdn.microsoft.com/library/windows/desktop/ms692695) 디스패치 인터페이스입니다.  
+ 컨테이너에 대 한 포인터의 앰비언트 [IFontDisp](https://msdn.microsoft.com/library/windows/desktop/ms692695) 디스패치 인터페이스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
@@ -762,7 +762,7 @@ unsigned m_bAutoSize:1;
 > [!NOTE]
 >  컨트롤 클래스 내에서이 데이터 멤버를 사용 하려면 컨트롤 클래스의 데이터 멤버로 선언 해야 있습니다. 컨트롤 클래스는 기본 클래스에 공용 구조체 내에서 선언 되어 있어이 데이터 멤버의 기본 클래스에서 상속 하지 않습니다.  
   
- 추가 하는 경우는 **자동 크기 조정** 옵션을 [스톡 속성](../../atl/reference/stock-properties-atl-control-wizard.md) ATL 컨트롤 마법사, 마법사의 탭 자동으로 컨트롤 클래스의이 데이터 멤버를 만들고, put 만들고 get 메서드와 속성에 대 한 를 지원 하 고 [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638) 속성이 변경 되 면 컨테이너를 자동으로 알립니다.  
+ 추가 하는 경우는 **자동 크기 조정** 옵션을 [스톡 속성](../../atl/reference/stock-properties-atl-control-wizard.md) ATL 컨트롤 마법사, 마법사의 탭 자동으로 컨트롤 클래스의이 데이터 멤버를 만들고, put 만들고 get 메서드와 속성에 대 한 를 지원 하 고 [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) 속성이 변경 되 면 컨테이너를 자동으로 알립니다.  
   
 ##  <a name="m_bdrawfromnatural"></a>  CComControlBase::m_bDrawFromNatural  
  플래그를 나타내는 `IDataObjectImpl::GetData` 하 고 `CComControlBase::GetZoomInfo` 에서 컨트롤 크기를 설정 해야 `m_sizeNatural` 아닌 `m_sizeExtent`합니다.  
@@ -814,7 +814,7 @@ unsigned m_bInPlaceSiteEx:1;
 > [!NOTE]
 >  컨트롤 클래스 내에서이 데이터 멤버를 사용 하려면 컨트롤 클래스의 데이터 멤버로 선언 해야 있습니다. 컨트롤 클래스는 기본 클래스에 공용 구조체 내에서 선언 되어 있어이 데이터 멤버의 기본 클래스에서 상속 하지 않습니다.  
   
- 데이터 멤버 `m_spInPlaceSite` 가리키는 [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586)를 [IOleInPlaceSiteEx](http://msdn.microsoft.com/library/windows/desktop/ms693461), 또는 [IOleInPlaceSiteWindowless](http://msdn.microsoft.com/library/windows/desktop/ms682300) 값에 따라 인터페이스는 `m_bWndLess` 고 `m_bInPlaceSiteEx` 플래그입니다. (데이터 멤버 `m_bNegotiatedWnd` TRUE 여야에 대 한는 `m_spInPlaceSite` 유효에 대 한 포인터입니다.)  
+ 데이터 멤버 `m_spInPlaceSite` 가리키는 [IOleInPlaceSite](/windows/desktop/api/oleidl/nn-oleidl-ioleinplacesite)를 [IOleInPlaceSiteEx](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesiteex), 또는 [IOleInPlaceSiteWindowless](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesitewindowless) 값에 따라 인터페이스는 `m_bWndLess` 고 `m_bInPlaceSiteEx` 플래그입니다. (데이터 멤버 `m_bNegotiatedWnd` TRUE 여야에 대 한는 `m_spInPlaceSite` 유효에 대 한 포인터입니다.)  
   
  하는 경우 `m_bWndLess` 가 FALSE 및 `m_bInPlaceSiteEx` 가 TRUE 인 `m_spInPlaceSite` 가 `IOleInPlaceSiteEx` 인터페이스 포인터입니다. 참조 [m_spInPlaceSite](#m_spinplacesite) 이러한 세 가지 데이터 멤버 간의 관계를 보여 주는 표입니다.  
   
@@ -844,7 +844,7 @@ unsigned m_bRecomposeOnResize:1;
 > [!NOTE]
 >  컨트롤 클래스 내에서이 데이터 멤버를 사용 하려면 컨트롤 클래스의 데이터 멤버로 선언 해야 있습니다. 컨트롤 클래스는 기본 클래스에 공용 구조체 내에서 선언 되어 있어이 데이터 멤버의 기본 클래스에서 상속 하지 않습니다.  
   
- 이 플래그는 확인자 [IOleObjectImpl::SetExtent](../../atl/reference/ioleobjectimpl-class.md#setextent) TRUE 인 경우 `SetExtent` 변경 내용 보기의 컨테이너에 알립니다. OLEMISC_RECOMPOSEONRESIZE 비트이 플래그를 설정 합니다 [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) 열거형 설정 해야 합니다.  
+ 이 플래그는 확인자 [IOleObjectImpl::SetExtent](../../atl/reference/ioleobjectimpl-class.md#setextent) TRUE 인 경우 `SetExtent` 변경 내용 보기의 컨테이너에 알립니다. OLEMISC_RECOMPOSEONRESIZE 비트이 플래그를 설정 합니다 [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) 열거형 설정 해야 합니다.  
   
 ##  <a name="m_brequiressave"></a>  CComControlBase::m_bRequiresSave  
  컨트롤은 마지막으로 저장 된 이후 변경 되었음을 나타내는 플래그입니다.  
@@ -935,7 +935,7 @@ unsigned m_bWndLess:1;
 > [!NOTE]
 >  컨트롤 클래스 내에서이 데이터 멤버를 사용 하려면 컨트롤 클래스의 데이터 멤버로 선언 해야 있습니다. 컨트롤 클래스는 기본 클래스에 공용 구조체 내에서 선언 되어 있어이 데이터 멤버의 기본 클래스에서 상속 하지 않습니다.  
   
- 데이터 멤버 `m_spInPlaceSite` 가리키는 [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586)를 [IOleInPlaceSiteEx](http://msdn.microsoft.com/library/windows/desktop/ms693461), 또는 [IOleInPlaceSiteWindowless](http://msdn.microsoft.com/library/windows/desktop/ms682300) 값에 따라 인터페이스는 `m_bWndLess` 하 고 [CComControlBase::m_bInPlaceSiteEx](#m_binplacesiteex) 플래그입니다. (데이터 멤버 [CComControlBase::m_bNegotiatedWnd](#m_bnegotiatedwnd) TRUE 여야에 대 한 합니다 [CComControlBase::m_spInPlaceSite](#m_spinplacesite) 유효에 대 한 포인터입니다.)  
+ 데이터 멤버 `m_spInPlaceSite` 가리키는 [IOleInPlaceSite](/windows/desktop/api/oleidl/nn-oleidl-ioleinplacesite)를 [IOleInPlaceSiteEx](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesiteex), 또는 [IOleInPlaceSiteWindowless](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesitewindowless) 값에 따라 인터페이스는 `m_bWndLess` 하 고 [CComControlBase::m_bInPlaceSiteEx](#m_binplacesiteex) 플래그입니다. (데이터 멤버 [CComControlBase::m_bNegotiatedWnd](#m_bnegotiatedwnd) TRUE 여야에 대 한 합니다 [CComControlBase::m_spInPlaceSite](#m_spinplacesite) 유효에 대 한 포인터입니다.)  
   
  하는 경우 `m_bWndLess` 가 TRUE 인 `m_spInPlaceSite` 되는 `IOleInPlaceSiteWindowless` 인터페이스 포인터입니다. 참조 [CComControlBase::m_spInPlaceSite](#m_spinplacesite) 이러한 데이터 멤버의 전체 관계를 보여 주는 표입니다.  
   
@@ -1008,7 +1008,7 @@ SIZE m_sizeNatural;
  전역 함수를 사용 하 여 픽셀 크기를 변환할 수 있습니다 [AtlHiMetricToPixel](pixel-himetric-conversion-global-functions.md#atlhimetrictopixel)합니다.  
   
 ##  <a name="m_spadvisesink"></a>  CComControlBase::m_spAdviseSink  
- 컨테이너에서 권장 하는 연결에 대 한 직접 포인터 (컨테이너의 [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513)).  
+ 컨테이너에서 권장 하는 연결에 대 한 직접 포인터 (컨테이너의 [IAdviseSink](/windows/desktop/api/objidl/nn-objidl-iadvisesink)).  
   
 ```
 CComPtr<IAdviseSink>
@@ -1058,12 +1058,12 @@ CComPtr<IDataAdviseHolder>
 > [!NOTE]
 >  컨트롤 클래스 내에서이 데이터 멤버를 사용 하려면 컨트롤 클래스의 데이터 멤버로 선언 해야 있습니다. 컨트롤 클래스는 기본 클래스에 공용 구조체 내에서 선언 되어 있어이 데이터 멤버의 기본 클래스에서 상속 하지 않습니다.  
   
- 데이터 개체는 구현 하는 데이터를 전송할 수 있는 컨트롤 [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421), 메서드가 데이터의 형식 및 전송 미디어를 지정 합니다.  
+ 데이터 개체는 구현 하는 데이터를 전송할 수 있는 컨트롤 [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject), 메서드가 데이터의 형식 및 전송 미디어를 지정 합니다.  
   
- 인터페이스 `m_spDataAdviseHolder` 구현 합니다 [IDataObject::DAdvise](http://msdn.microsoft.com/library/windows/desktop/ms692579) 및 [IDataObject::DUnadvise](http://msdn.microsoft.com/library/windows/desktop/ms692448) 메서드를 설정 하 고 컨테이너에 대 한 자문 연결을 삭제 합니다. 컨트롤의 컨테이너를 지원 하 여 advise 싱크를 구현 해야 합니다 [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513) 인터페이스입니다.  
+ 인터페이스 `m_spDataAdviseHolder` 구현 합니다 [IDataObject::DAdvise](/windows/desktop/api/objidl/nf-objidl-idataobject-dadvise) 및 [IDataObject::DUnadvise](/windows/desktop/api/objidl/nf-objidl-idataobject-dunadvise) 메서드를 설정 하 고 컨테이너에 대 한 자문 연결을 삭제 합니다. 컨트롤의 컨테이너를 지원 하 여 advise 싱크를 구현 해야 합니다 [IAdviseSink](/windows/desktop/api/objidl/nn-objidl-iadvisesink) 인터페이스입니다.  
   
 ##  <a name="m_spinplacesite"></a>  CComControlBase::m_spInPlaceSite  
- 컨테이너의에 대 한 포인터 [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586)를 [IOleInPlaceSiteEx](http://msdn.microsoft.com/library/windows/desktop/ms693461), 또는 [IOleInPlaceSiteWindowless](http://msdn.microsoft.com/library/windows/desktop/ms682300) 인터페이스 포인터입니다.  
+ 컨테이너의에 대 한 포인터 [IOleInPlaceSite](/windows/desktop/api/oleidl/nn-oleidl-ioleinplacesite)를 [IOleInPlaceSiteEx](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesiteex), 또는 [IOleInPlaceSiteWindowless](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesitewindowless) 인터페이스 포인터입니다.  
   
 ```
 CComPtr<IOleInPlaceSiteWindowless>
@@ -1098,7 +1098,7 @@ CComPtr<IOleAdviseHolder>
 > [!NOTE]
 >  컨트롤 클래스 내에서이 데이터 멤버를 사용 하려면 컨트롤 클래스의 데이터 멤버로 선언 해야 있습니다. 컨트롤 클래스는 기본 클래스에 공용 구조체 내에서 선언 되어 있어이 데이터 멤버의 기본 클래스에서 상속 하지 않습니다.  
   
- 인터페이스 `m_spOleAdviseHolder` 구현 합니다 [IOleObject::Advise](http://msdn.microsoft.com/library/windows/desktop/ms686573) 및 [IOleObject::Unadvise](http://msdn.microsoft.com/library/windows/desktop/ms693749) 메서드를 설정 하 고 컨테이너에 대 한 자문 연결을 삭제 합니다. 컨트롤의 컨테이너를 지원 하 여 advise 싱크를 구현 해야 합니다 [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513) 인터페이스입니다.  
+ 인터페이스 `m_spOleAdviseHolder` 구현 합니다 [IOleObject::Advise](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-advise) 및 [IOleObject::Unadvise](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-unadvise) 메서드를 설정 하 고 컨테이너에 대 한 자문 연결을 삭제 합니다. 컨트롤의 컨테이너를 지원 하 여 advise 싱크를 구현 해야 합니다 [IAdviseSink](/windows/desktop/api/objidl/nn-objidl-iadvisesink) 인터페이스입니다.  
   
 ##  <a name="ondraw"></a>  CComControlBase::OnDraw  
  컨트롤을 그리도록이 메서드를 재정의 합니다.  
@@ -1119,7 +1119,7 @@ virtual HRESULT OnDraw(ATL_DRAWINFO& di);
   
  `OnDraw` 메서드가 ATL 컨트롤 마법사를 사용 하 여 컨트롤을 만들 때 자동으로 컨트롤 클래스에 추가 됩니다. 마법사의 기본 `OnDraw` "ATL 8.0" 레이블이 있는 사각형을 그립니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CComControlBase::GetAmbientAppearance](#getambientappearance)합니다.  
   
 ##  <a name="ondrawadvanced"></a>  CComControlBase::OnDrawAdvanced  
@@ -1291,7 +1291,7 @@ HRESULT SendOnDataChange(DWORD advf = 0);
   
 ### <a name="parameters"></a>매개 변수  
  *advf*  
- 플래그를 지정 하는 것이 좋습니다 하는 방법에 대 한 호출 [IAdviseSink::OnDataChange](http://msdn.microsoft.com/library/windows/desktop/ms687283) 이루어집니다. 값은는 [ADVF](http://msdn.microsoft.com/library/windows/desktop/ms693742) 열거형입니다.  
+ 플래그를 지정 하는 것이 좋습니다 하는 방법에 대 한 호출 [IAdviseSink::OnDataChange](/windows/desktop/api/objidl/nf-objidl-iadvisesink-ondatachange) 이루어집니다. 값은는 [ADVF](/windows/desktop/api/objidl/ne-objidl-tagadvf) 열거형입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
@@ -1344,7 +1344,7 @@ HRESULT SendOnViewChange(DWORD dwAspect, LONG lindex = -1);
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
   
 ### <a name="remarks"></a>설명  
- `SendOnViewChange` 호출 [IAdviseSink::OnViewChange](http://msdn.microsoft.com/library/windows/desktop/ms694337)합니다. 유일한 값 *색인입니다.* 관심 전체 보기를 나타내는-1은 현재 지원 합니다.  
+ `SendOnViewChange` 호출 [IAdviseSink::OnViewChange](/windows/desktop/api/objidl/nf-objidl-iadvisesink-onviewchange)합니다. 유일한 값 *색인입니다.* 관심 전체 보기를 나타내는-1은 현재 지원 합니다.  
   
 ##  <a name="setcontrolfocus"></a>  CComControlBase::SetControlFocus  
  설정 하거나 또는 컨트롤에 키보드 포커스를 제거 합니다.  
@@ -1361,7 +1361,7 @@ BOOL SetControlFocus(BOOL bGrab);
  컨트롤이 포커스를 성공적으로 받는 경우 TRUE를 반환합니다 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- Windows API 함수를 창 컨트롤용 [SetFocus](http://msdn.microsoft.com/library/windows/desktop/ms646312) 라고 합니다. 창 없는 컨트롤에 대 한 [IOleInPlaceSiteWindowless::SetFocus](http://msdn.microsoft.com/library/windows/desktop/ms679745) 라고 합니다. 이 호출을 통해 창 없는 컨트롤에서 키보드 포커스 및 창 메시지에 응답할 수 있습니다.  
+ Windows API 함수를 창 컨트롤용 [SetFocus](https://msdn.microsoft.com/library/windows/desktop/ms646312) 라고 합니다. 창 없는 컨트롤에 대 한 [IOleInPlaceSiteWindowless::SetFocus](/windows/desktop/api/ocidl/nf-ocidl-ioleinplacesitewindowless-setfocus) 라고 합니다. 이 호출을 통해 창 없는 컨트롤에서 키보드 포커스 및 창 메시지에 응답할 수 있습니다.  
   
 ##  <a name="setdirty"></a>  CComControlBase::SetDirty  
  데이터 멤버를 설정 `m_bRequiresSave` 에 값 *bDirty*합니다.  

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7b7ac87241e9089cc8c0152a6d0c3966dc32fa08
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9b5250a730b0ce80cbbe9698b4b5e636a85986b6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600244"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223188"
 ---
 # <a name="id"></a>ID
 
@@ -43,9 +43,9 @@ ms.locfileid: "42600244"
 
 ## <a name="remarks"></a>설명
 
-합니다 **id** c + + 특성에 동일한 기능을 합니다 [id](http://msdn.microsoft.com/library/windows/desktop/aa367040) MIDL 특성입니다.
+합니다 **id** c + + 특성에 동일한 기능을 합니다 [id](/windows/desktop/Midl/id) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 예를 참조 하세요 [바인딩 가능한](../windows/bindable.md) 사용 하는 방법의 예제 **id**합니다.
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6e4ab4e209b53e33586346495715548cffd4df2e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0a7c3ee4f621e58e0ab7c01b409fdd80ed464051
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42587560"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197380"
 ---
 # <a name="creating-a-console-application"></a>콘솔 응용 프로그램 만들기
 
@@ -46,4 +46,4 @@ Win32 콘솔 응용 프로그램을 만드는 가장 쉬운 방법은 사용 하
 [콘솔 프로젝트](/visualstudio/debugger/debugging-preparation-console-projects)  
 [코드 마법사로 기능 추가](../ide/adding-functionality-with-code-wizards-cpp.md)  
 [속성 페이지](../ide/property-pages-visual-cpp.md)  
-[응용 프로그램 배포](http://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+[응용 프로그램 배포](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)

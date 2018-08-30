@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e786dc176558900223b2b482a7161abe5e0d84d
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 98b8f9f99b38d2878025546379a185aef53bb663
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336275"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213771"
 ---
 # <a name="canimatectrl-class"></a>CAnimateCtrl 클래스
 Windows 공용 애니메이션 컨트롤의 기능을 제공합니다.  
@@ -118,7 +118,7 @@ CAnimateCtrl();
 ### <a name="remarks"></a>설명  
  호출 해야 합니다 [만들기](#create) 만든 개체에서 다른 작업을 수행 하기 전에 멤버 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCControlLadenDialog#56](../../mfc/codesnippet/cpp/canimatectrl-class_1.cpp)]  
   
 ##  <a name="close"></a>  CAnimateCtrl::Close  
@@ -131,7 +131,7 @@ BOOL Close();
 ### <a name="return-value"></a>반환 값  
  성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CAnimateCtrl::CAnimateCtrl](#canimatectrl)합니다.  
   
 ##  <a name="create"></a>  CAnimateCtrl::Create  
@@ -147,7 +147,7 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>매개 변수  
  *dwStyle*  
- 애니메이션 컨트롤의 스타일을 지정합니다. 아래의 설명 섹션 및 애니메이션 컨트롤 스타일에 설명 하는 스타일에 설명 된 windows 어떤 조합도 적용할 [애니메이션 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb761886) Windows SDK에 있습니다.  
+ 애니메이션 컨트롤의 스타일을 지정합니다. 아래의 설명 섹션 및 애니메이션 컨트롤 스타일에 설명 하는 스타일에 설명 된 windows 어떤 조합도 적용할 [애니메이션 컨트롤 스타일](/windows/desktop/Controls/animation-control-styles) Windows SDK에 있습니다.  
   
  *rect*  
  애니메이션 컨트롤의 위치와 크기를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](../../mfc/reference/rect-structure1.md) 구조입니다.  
@@ -174,9 +174,9 @@ virtual BOOL Create(
   
  애니메이션 컨트롤을 사용 하 여 확장된 창 스타일을 사용 하려는 경우 호출할 [CreateEx](#createex) 대신 `Create`합니다.  
   
- 위에 나열 된 창 스타일, 외에도 애니메이션 컨트롤에 하나 이상의 애니메이션 컨트롤 스타일을 적용 하는 것이 좋습니다. 자세한 내용은 Windows SDK에서 참조 [애니메이션 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb761886)합니다.  
+ 위에 나열 된 창 스타일, 외에도 애니메이션 컨트롤에 하나 이상의 애니메이션 컨트롤 스타일을 적용 하는 것이 좋습니다. 자세한 내용은 Windows SDK에서 참조 [애니메이션 컨트롤 스타일](/windows/desktop/Controls/animation-control-styles)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CAnimateCtrl::CAnimateCtrl](#canimatectrl)합니다.  
   
 ##  <a name="createex"></a>  CAnimateCtrl::CreateEx  
@@ -193,13 +193,13 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>매개 변수  
  *dwExStyle*  
- 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK의 합니다.  
+ 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK의 합니다.  
   
  *dwStyle*  
- 애니메이션 컨트롤의 스타일을 지정합니다. 에 설명 된 애니메이션 컨트롤 스타일 및 창의 어떤 조합도 적용할 [애니메이션 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb761886) Windows SDK에 있습니다.  
+ 애니메이션 컨트롤의 스타일을 지정합니다. 에 설명 된 애니메이션 컨트롤 스타일 및 창의 어떤 조합도 적용할 [애니메이션 컨트롤 스타일](/windows/desktop/Controls/animation-control-styles) Windows SDK에 있습니다.  
   
  *rect*  
- 에 대 한 참조를 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.  
+ 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.  
   
  *pParentWnd*  
  컨트롤의 부모 창에 대 한 포인터입니다.  
@@ -224,7 +224,7 @@ BOOL IsPlaying() const;
  TRUE 이면 AVI 클립에서 재생 됩니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 전송 된 [ACM_ISPLAYING](http://msdn.microsoft.com/library/windows/desktop/bb761895) Windows SDK에 설명 된 메시지입니다.  
+ 이 메서드는 전송 된 [ACM_ISPLAYING](/windows/desktop/Controls/acm-isplaying) Windows SDK에 설명 된 메시지입니다.  
   
 ##  <a name="open"></a>  CAnimateCtrl::Open  
  AVI 클립을 열고 해당 첫 번째 프레임을 표시 하려면이 함수를 호출 합니다.  
@@ -255,7 +255,7 @@ BOOL Open(UINT nID);
   
  애니메이션 컨트롤에 있으면는 `ACS_TRANSPARENT` 스타일 투명 한 배경을 사용 하 여 첫 번째 프레임을 그릴지에 배경색을 지정 하지 않고 애니메이션 클립 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CAnimateCtrl::CAnimateCtrl](#canimatectrl)합니다.  
   
 ##  <a name="play"></a>  CAnimateCtrl::Play  
@@ -284,7 +284,7 @@ BOOL Play(
 ### <a name="remarks"></a>설명  
  애니메이션 컨트롤 스레드가 계속 실행 하는 동안 백그라운드에서 클립을 재생 됩니다. 애니메이션 컨트롤에 있으면 `ACS_TRANSPARENT` 스타일 AVI 클립 재생 될 애니메이션 클립에 지정 된 배경색 보다는 투명 한 배경을 사용 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CAnimateCtrl::CAnimateCtrl](#canimatectrl)합니다.  
   
 ##  <a name="seek"></a>  CAnimateCtrl::Seek  
@@ -304,7 +304,7 @@ BOOL Seek(UINT nTo);
 ### <a name="remarks"></a>설명  
  애니메이션 컨트롤에 있으면 `ACS_TRANSPARENT` 스타일 투명 한 배경을 사용 하 여 AVI 클립을 그릴에 배경색을 지정 하지 않고 애니메이션 클립 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CAnimateCtrl::CAnimateCtrl](#canimatectrl)합니다.  
   
 ##  <a name="stop"></a>  CAnimateCtrl::Stop  
@@ -317,7 +317,7 @@ BOOL Stop();
 ### <a name="return-value"></a>반환 값  
  성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CAnimateCtrl::CAnimateCtrl](#canimatectrl)합니다.  
   
 ## <a name="see-also"></a>참고 항목  

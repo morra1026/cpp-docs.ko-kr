@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4c529abb1ade786bf7ec0a2d5cff5c49f6197be7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2e0ce7cffb397aaa170f13bac9fc1f4c1693d25f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601591"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214854"
 ---
 # <a name="bindable"></a>bindable
 
@@ -36,17 +36,17 @@ ms.locfileid: "42601591"
 
 ## <a name="remarks"></a>설명
 
-**바인딩할 수 있는** c + + 특성에 동일한 기능을 합니다 [바인딩할 수 있는](http://msdn.microsoft.com/library/windows/desktop/aa366738) MIDL 특성입니다. 사용 하 여 정의 된 속성에 사용할 수 있습니다 합니다 [propget](../windows/propget.md)를 [propput](../windows/propput.md), 또는 [propputref](../windows/propputref.md) 특성 또는 정의할 수도 있습니다 수동으로 바인딩할 수 있는 메서드.
+**바인딩할 수 있는** c + + 특성에 동일한 기능을 합니다 [바인딩할 수 있는](/windows/desktop/Midl/bindable) MIDL 특성입니다. 사용 하 여 정의 된 속성에 사용할 수 있습니다 합니다 [propget](../windows/propget.md)를 [propput](../windows/propput.md), 또는 [propputref](../windows/propputref.md) 특성 또는 정의할 수도 있습니다 수동으로 바인딩할 수 있는 메서드.
 
 MFC 샘플은 다음의 사용을 보여 **바인딩 가능한**:
 
-- [컨트롤 샘플: MFC 기반 ActiveX 컨트롤](http://msdn.microsoft.com/a44adf86-0ba0-4504-bedb-512b6cba2e63)
+- [컨트롤 샘플: MFC 기반 ActiveX 컨트롤](https://msdn.microsoft.com/a44adf86-0ba0-4504-bedb-512b6cba2e63)
 
-- [CIRC 샘플: ActiveX 컨트롤](http://msdn.microsoft.com/9ba34d04-280e-49f4-90ae-41a6be44c95b)
+- [CIRC 샘플: ActiveX 컨트롤](https://msdn.microsoft.com/9ba34d04-280e-49f4-90ae-41a6be44c95b)
 
-- [도구 설명 및 도움말을 사용 하 여 TESTHELP 샘플: ActiveX 컨트롤](http://msdn.microsoft.com/d822861d-c6f0-4d0a-ad11-970eebb1e8cd)
+- [도구 설명 및 도움말을 사용 하 여 TESTHELP 샘플: ActiveX 컨트롤](https://msdn.microsoft.com/d822861d-c6f0-4d0a-ad11-970eebb1e8cd)
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드를 사용 하는 방법을 보여 줍니다 **바인딩 가능한** 속성:
 

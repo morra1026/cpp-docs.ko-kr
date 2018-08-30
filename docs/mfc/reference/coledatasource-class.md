@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 839068647a6f4d118e1536f5fb4e0852657d963f
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: d67165d3869ffdd60eff86fa8c33abf275e070b4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027783"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209779"
 ---
 # <a name="coledatasource-class"></a>COleDataSource 클래스
 응용 프로그램이 데이터를 넣어 두었다 클립보드 또는 끌어 놓기 작업과 같은 데이터 전송 작업에서 해당 데이터를 제공하는 캐시의 역할을 합니다.  
@@ -92,7 +92,7 @@ class COleDataSource : public CCmdTarget
 ## <a name="remarks"></a>설명  
  OLE 데이터 소스를 직접 만들 수 있습니다. 또는 합니다 [COleClientItem](../../mfc/reference/coleclientitem-class.md) 및 [COleServerItem](../../mfc/reference/coleserveritem-class.md) 클래스에 대 한 응답에서 OLE 데이터 원본을 만들고 해당 `CopyToClipboard` 및 `DoDragDrop` 멤버 함수입니다. 참조 [COleServerItem::CopyToClipboard](../../mfc/reference/coleserveritem-class.md#copytoclipboard) 에 대해 간략하게 설명 합니다. 재정의 `OnGetClipboardData` OLE 데이터 소스의 데이터에 추가 클립보드 형식을 추가 하려면 클라이언트 항목 또는 서버 항목 클래스의 멤버 함수에 대해 생성 된 `CopyToClipboard` 또는 `DoDragDrop` 멤버 함수입니다.  
   
- 전송 데이터를 준비 하려고 할 때마다이 클래스의 개체를 만들고 데이터에 대 한 가장 적절 한 메서드를 사용 하 여 데이터를 사용 하 여 입력 해야 합니다. 데이터 소스에 삽입 된 방식으로 데이터를 즉시 제공 했는지 여부를 직접적인 영향 (즉시 렌더링) 또는 요청 시 (지연 된 렌더링). 제공 하는 데이터 사용 되는 클립보드 형식을 전달 하 여 모든 클립보드 형식에 대 한 (및 선택적 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 구조)를 호출 [DelayRenderData](#delayrenderdata)합니다.  
+ 전송 데이터를 준비 하려고 할 때마다이 클래스의 개체를 만들고 데이터에 대 한 가장 적절 한 메서드를 사용 하 여 데이터를 사용 하 여 입력 해야 합니다. 데이터 소스에 삽입 된 방식으로 데이터를 즉시 제공 했는지 여부를 직접적인 영향 (즉시 렌더링) 또는 요청 시 (지연 된 렌더링). 제공 하는 데이터 사용 되는 클립보드 형식을 전달 하 여 모든 클립보드 형식에 대 한 (및 선택적 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 구조)를 호출 [DelayRenderData](#delayrenderdata)합니다.  
   
  데이터 원본 및 데이터 전송에 대 한 자세한 내용은 문서 참조 [데이터 개체 및 데이터 소스 (OLE)](../../mfc/data-objects-and-data-sources-ole.md)합니다. 또한이 문서 [클립보드 항목](../../mfc/clipboard.md) OLE 클립보드 메커니즘을 설명 합니다.  
   
@@ -118,26 +118,26 @@ void CacheData(
   
 ### <a name="parameters"></a>매개 변수  
  *cfFormat*  
- 데이터를 제공 하려면의 클립보드 형식입니다. 이 매개 변수는 미리 정의 된 클립보드 형식 또는 네이티브 Windows에서 반환한 값 중 하나일 수 있습니다 [됩니다](http://msdn.microsoft.com/library/windows/desktop/ms649049) 함수입니다.  
+ 데이터를 제공 하려면의 클립보드 형식입니다. 이 매개 변수는 미리 정의 된 클립보드 형식 또는 네이티브 Windows에서 반환한 값 중 하나일 수 있습니다 [됩니다](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) 함수입니다.  
   
  *lpStgMedium*  
- 가리키는 [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) 지정 된 형식의 데이터가 포함 된 구조입니다.  
+ 가리키는 [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) 지정 된 형식의 데이터가 포함 된 구조입니다.  
   
  *lpFormatEtc*  
- 가리키는 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 데이터 제공 해야 하는 형식을 설명 하는 구조입니다. 이 매개 변수 값을 제공 하 여 지정 된 클립보드 형식 이외의 추가 형식 정보를 지정 하려는 경우 *cfFormat*합니다. 다른 필드에 대 한 기본값이 사용 됩니다 NULL 인 경우는 `FORMATETC` 구조입니다.  
+ 가리키는 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 데이터 제공 해야 하는 형식을 설명 하는 구조입니다. 이 매개 변수 값을 제공 하 여 지정 된 클립보드 형식 이외의 추가 형식 정보를 지정 하려는 경우 *cfFormat*합니다. 다른 필드에 대 한 기본값이 사용 됩니다 NULL 인 경우는 `FORMATETC` 구조입니다.  
   
 ### <a name="remarks"></a>설명  
  이 함수는 즉시 렌더링을 사용 하 여 제공 하기 때문에 데이터를 제공 해야 합니다. 데이터는 필요할 때까지 캐시 됩니다.  
   
- 사용 하 여 데이터를 [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) 구조입니다. 사용할 수도 있습니다는 `CacheGlobalData` 데이터의 양을 제공 하는 경우 멤버 함수는는 HGLOBAL를 사용 하 여 효율적으로 전송할 수 있을 만큼 적습니다.  
+ 사용 하 여 데이터를 [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) 구조입니다. 사용할 수도 있습니다는 `CacheGlobalData` 데이터의 양을 제공 하는 경우 멤버 함수는는 HGLOBAL를 사용 하 여 효율적으로 전송할 수 있을 만큼 적습니다.  
   
  호출한 후 `CacheData` 를 `ptd` 소속 `lpFormatEtc` 의 내용과 *lpStgMedium* 호출자가 아니라 데이터 개체에 의해 소유 됩니다.  
   
  지연 된 렌더링을 사용 하려면 호출을 [DelayRenderData](#delayrenderdata) 하거나 [DelayRenderFileData](#delayrenderfiledata) 멤버 함수입니다. 자세한 내용은 지연 된 렌더링 MFC에서 처리 된 것으로 문서를 참조 [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.  
   
- 자세한 내용은 참조는 [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) 및 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) 및 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK에는 구조입니다.  
   
- 자세한 내용은 [됩니다](http://msdn.microsoft.com/library/windows/desktop/ms649049) Windows SDK에 있습니다.  
+ 자세한 내용은 [됩니다](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) Windows SDK에 있습니다.  
   
 ##  <a name="cacheglobaldata"></a>  COleDataSource::CacheGlobalData  
  데이터는 제공 되는 동안 데이터 전송 작업 형식을 지정 하려면이 함수를 호출 합니다.  
@@ -151,22 +151,22 @@ void CacheGlobalData(
   
 ### <a name="parameters"></a>매개 변수  
  *cfFormat*  
- 데이터를 제공 하려면의 클립보드 형식입니다. 이 매개 변수는 미리 정의 된 클립보드 형식 또는 네이티브 Windows에서 반환한 값 중 하나일 수 있습니다 [됩니다](http://msdn.microsoft.com/library/windows/desktop/ms649049) 함수입니다.  
+ 데이터를 제공 하려면의 클립보드 형식입니다. 이 매개 변수는 미리 정의 된 클립보드 형식 또는 네이티브 Windows에서 반환한 값 중 하나일 수 있습니다 [됩니다](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) 함수입니다.  
   
  *hGlobal*  
  지정 된 형식의 데이터가 포함 된 전역 메모리 블록에 대 한 핸들입니다.  
   
  *lpFormatEtc*  
- 가리키는 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 데이터 제공 해야 하는 형식을 설명 하는 구조입니다. 이 매개 변수 값을 제공 하 여 지정 된 클립보드 형식 이외의 추가 형식 정보를 지정 하려는 경우 *cfFormat*합니다. 다른 필드에 대 한 기본값이 사용 됩니다 NULL 인 경우는 `FORMATETC` 구조입니다.  
+ 가리키는 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 데이터 제공 해야 하는 형식을 설명 하는 구조입니다. 이 매개 변수 값을 제공 하 여 지정 된 클립보드 형식 이외의 추가 형식 정보를 지정 하려는 경우 *cfFormat*합니다. 다른 필드에 대 한 기본값이 사용 됩니다 NULL 인 경우는 `FORMATETC` 구조입니다.  
   
 ### <a name="remarks"></a>설명  
  이 함수를 사용 하 여 즉시 렌더링; 함수를 호출할 때 데이터를 제공 해야 하므로 데이터를 제공 합니다. 데이터는 필요할 때까지 캐시 됩니다. 사용 된 `CacheData` 멤버 함수는 많은 양의 데이터 또는 구조화 된 저장소 매체 필요한 경우 제공 하는 경우.  
   
  지연 된 렌더링을 사용 하려면 호출을 [DelayRenderData](#delayrenderdata) 하거나 [DelayRenderFileData](#delayrenderfiledata) 멤버 함수입니다. 자세한 내용은 지연 된 렌더링 MFC에서 처리 된 것으로 문서를 참조 [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.  
   
- 자세한 내용은 참조는 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK에는 구조입니다.  
   
- 자세한 내용은 [됩니다](http://msdn.microsoft.com/library/windows/desktop/ms649049) Windows SDK에 있습니다.  
+ 자세한 내용은 [됩니다](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) Windows SDK에 있습니다.  
   
 ##  <a name="coledatasource"></a>  COleDataSource::COleDataSource  
  `COleDataSource` 개체를 생성합니다.  
@@ -186,10 +186,10 @@ void DelayRenderData(
   
 ### <a name="parameters"></a>매개 변수  
  *cfFormat*  
- 데이터를 제공 하려면의 클립보드 형식입니다. 이 매개 변수는 미리 정의 된 클립보드 형식 또는 네이티브 Windows에서 반환한 값 중 하나일 수 있습니다 [됩니다](http://msdn.microsoft.com/library/windows/desktop/ms649049) 함수입니다.  
+ 데이터를 제공 하려면의 클립보드 형식입니다. 이 매개 변수는 미리 정의 된 클립보드 형식 또는 네이티브 Windows에서 반환한 값 중 하나일 수 있습니다 [됩니다](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) 함수입니다.  
   
  *lpFormatEtc*  
- 가리키는 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 데이터 제공 해야 하는 형식을 설명 하는 구조입니다. 이 매개 변수 값을 제공 하 여 지정 된 클립보드 형식 이외의 추가 형식 정보를 지정 하려는 경우 *cfFormat*합니다. 다른 필드에 대 한 기본값이 사용 됩니다 NULL 인 경우는 `FORMATETC` 구조입니다.  
+ 가리키는 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 데이터 제공 해야 하는 형식을 설명 하는 구조입니다. 이 매개 변수 값을 제공 하 여 지정 된 클립보드 형식 이외의 추가 형식 정보를 지정 하려는 경우 *cfFormat*합니다. 다른 필드에 대 한 기본값이 사용 됩니다 NULL 인 경우는 `FORMATETC` 구조입니다.  
   
 ### <a name="remarks"></a>설명  
  이 함수를 사용 하 여 지연 된 렌더링 데이터를 즉시 제공 되지 않은 데이터를 제공 합니다. 합니다 [OnRenderData](#onrenderdata) 하거나 [OnRenderGlobalData](#onrenderglobaldata) 멤버 함수가 호출 되어 데이터를 요청 합니다.  
@@ -198,9 +198,9 @@ void DelayRenderData(
   
  즉시 렌더링을 사용 하려면 호출을 [CacheData](#cachedata) 하거나 [CacheGlobalData](#cacheglobaldata) 멤버 함수입니다.  
   
- 자세한 내용은 참조는 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK에는 구조입니다.  
   
- 자세한 내용은 [됩니다](http://msdn.microsoft.com/library/windows/desktop/ms649049) Windows SDK에 있습니다.  
+ 자세한 내용은 [됩니다](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) Windows SDK에 있습니다.  
   
 ##  <a name="delayrenderfiledata"></a>  COleDataSource::DelayRenderFileData  
  데이터는 제공 되는 동안 데이터 전송 작업 형식을 지정 하려면이 함수를 호출 합니다.  
@@ -213,10 +213,10 @@ void DelayRenderFileData(
   
 ### <a name="parameters"></a>매개 변수  
  *cfFormat*  
- 데이터를 제공 하려면의 클립보드 형식입니다. 이 매개 변수는 미리 정의 된 클립보드 형식 또는 네이티브 Windows에서 반환한 값 중 하나일 수 있습니다 [됩니다](http://msdn.microsoft.com/library/windows/desktop/ms649049) 함수입니다.  
+ 데이터를 제공 하려면의 클립보드 형식입니다. 이 매개 변수는 미리 정의 된 클립보드 형식 또는 네이티브 Windows에서 반환한 값 중 하나일 수 있습니다 [됩니다](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) 함수입니다.  
   
  *lpFormatEtc*  
- 가리키는 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 데이터 제공 해야 하는 형식을 설명 하는 구조입니다. 이 매개 변수 값을 제공 하 여 지정 된 클립보드 형식 이외의 추가 형식 정보를 지정 하려는 경우 *cfFormat*합니다. 다른 필드에 대 한 기본값이 사용 됩니다 NULL 인 경우는 `FORMATETC` 구조입니다.  
+ 가리키는 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 데이터 제공 해야 하는 형식을 설명 하는 구조입니다. 이 매개 변수 값을 제공 하 여 지정 된 클립보드 형식 이외의 추가 형식 정보를 지정 하려는 경우 *cfFormat*합니다. 다른 필드에 대 한 기본값이 사용 됩니다 NULL 인 경우는 `FORMATETC` 구조입니다.  
   
 ### <a name="remarks"></a>설명  
  이 함수를 사용 하 여 지연 된 렌더링 데이터를 즉시 제공 되지 않은 데이터를 제공 합니다. 합니다 [OnRenderFileData](#onrenderfiledata) 멤버 함수가 호출 되어 데이터를 요청 합니다.  
@@ -225,9 +225,9 @@ void DelayRenderFileData(
   
  즉시 렌더링을 사용 하려면 호출을 [CacheData](#cachedata) 하거나 [CacheGlobalData](#cacheglobaldata) 멤버 함수입니다.  
   
- 자세한 내용은 참조는 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK에는 구조입니다.  
   
- 자세한 내용은 [됩니다](http://msdn.microsoft.com/library/windows/desktop/ms649049) Windows SDK에 있습니다.  
+ 자세한 내용은 [됩니다](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) Windows SDK에 있습니다.  
   
 ##  <a name="delaysetdata"></a>  COleDataSource::DelaySetData  
  데이터 원본의 내용을 변경 작업을 지원 하려면이 함수를 호출 합니다.  
@@ -240,17 +240,17 @@ void DelaySetData(
   
 ### <a name="parameters"></a>매개 변수  
  *cfFormat*  
- 데이터를 배치할의 클립보드 형식입니다. 이 매개 변수는 미리 정의 된 클립보드 형식 또는 네이티브 Windows에서 반환한 값 중 하나일 수 있습니다 [됩니다](http://msdn.microsoft.com/library/windows/desktop/ms649049) 함수입니다.  
+ 데이터를 배치할의 클립보드 형식입니다. 이 매개 변수는 미리 정의 된 클립보드 형식 또는 네이티브 Windows에서 반환한 값 중 하나일 수 있습니다 [됩니다](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) 함수입니다.  
   
  *lpFormatEtc*  
- 가리키는 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 데이터를 교체의 형식을 설명 하는 구조입니다. 이 매개 변수 값을 제공 하 여 지정 된 클립보드 형식 이외의 추가 형식 정보를 지정 하려는 경우 *cfFormat*합니다. 다른 필드에 대 한 기본값이 사용 됩니다 NULL 인 경우는 `FORMATETC` 구조입니다.  
+ 가리키는 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 데이터를 교체의 형식을 설명 하는 구조입니다. 이 매개 변수 값을 제공 하 여 지정 된 클립보드 형식 이외의 추가 형식 정보를 지정 하려는 경우 *cfFormat*합니다. 다른 필드에 대 한 기본값이 사용 됩니다 NULL 인 경우는 `FORMATETC` 구조입니다.  
   
 ### <a name="remarks"></a>설명  
  [OnSetData](#onsetdata) 이런 때 프레임 워크에서 호출 됩니다. 프레임 워크에서 데이터 원본을 반환 될 때만 사용 됩니다 [COleServerItem::GetDataSource](../../mfc/reference/coleserveritem-class.md#getdatasource)합니다. 하는 경우 `DelaySetData` 를 호출 하지 않으면 프로그램 `OnSetData` 함수 호출 되지 것입니다. `DelaySetData` 각 클립보드를 호출 해야 합니다 또는 `FORMATETC` 형식을 지원 합니다.  
   
- 자세한 내용은 참조는 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK에는 구조입니다.  
   
- 자세한 내용은 [됩니다](http://msdn.microsoft.com/library/windows/desktop/ms649049) Windows SDK에 있습니다.  
+ 자세한 내용은 [됩니다](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) Windows SDK에 있습니다.  
   
 ##  <a name="dodragdrop"></a>  Coledatasource:: Dodragdrop  
  호출 된 `DoDragDrop` 멤버 함수에서 일반적으로이 데이터 원본에 대 한 끌어서 놓기 작업을 수행 하는 [CWnd::OnLButtonDown](../../mfc/reference/cwnd-class.md#onlbuttondown) 처리기입니다.  
@@ -294,7 +294,7 @@ DROPEFFECT DoDragDrop(
   
 -   Windows 95/98 끌어서 지연 시간 WIN의 캐시 된 버전에 저장 됩니다. INI 합니다.  
   
- 지연 정보 중 하나는 레지스트리에 저장 된 방법에 대 한 자세한 내용은 끌어에 대 한 또는 합니다. INI 파일을 참조 하세요 [WriteProfileString](http://msdn.microsoft.com/library/windows/desktop/ms725504) Windows SDK에 있습니다.  
+ 지연 정보 중 하나는 레지스트리에 저장 된 방법에 대 한 자세한 내용은 끌어에 대 한 또는 합니다. INI 파일을 참조 하세요 [WriteProfileString](/windows/desktop/api/winbase/nf-winbase-writeprofilestringa) Windows SDK에 있습니다.  
   
  자세한 내용은 문서 참조 [끌어서 놓기: 놓기 소스 구현](../../mfc/drag-and-drop-implementing-a-drop-source.md)합니다.  
   
@@ -308,7 +308,7 @@ void Empty();
 ### <a name="remarks"></a>설명  
  둘 다가 캐시 하 고 지연 렌더링 형식을 다시 사용할 수 있도록 비워질 됩니다.  
   
- 자세한 내용은 [ReleaseStgMedium](http://msdn.microsoft.com/library/windows/desktop/ms693491) Windows SDK에 있습니다.  
+ 자세한 내용은 [ReleaseStgMedium](/windows/desktop/api/ole2/nf-ole2-releasestgmedium) Windows SDK에 있습니다.  
   
 ##  <a name="flushclipboard"></a>  COleDataSource::FlushClipboard  
  에 있는 클립보드를 사용 하면 응용 프로그램이 종료 된 후 클립보드의에서 데이터를 붙여 넣습니다. 데이터를 렌더링 합니다.  
@@ -341,10 +341,10 @@ virtual BOOL OnRenderData(
   
 ### <a name="parameters"></a>매개 변수  
  *lpFormatEtc*  
- 가리키는 합니다 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 정보가 요청 된 형식을 지정 하는 구조입니다.  
+ 가리키는 합니다 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 정보가 요청 된 형식을 지정 하는 구조입니다.  
   
  *lpStgMedium*  
- 가리키는 [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) 구조는 데이터가 반환 됩니다.  
+ 가리키는 [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) 구조는 데이터가 반환 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -356,7 +356,7 @@ virtual BOOL OnRenderData(
   
  이 고급 재정의할 수 있습니다. 요청 된 형식 및 미디어 데이터를 제공 하려면이 함수를 재정의 합니다. 데이터에 따라 대신이 함수의 다른 버전 중 하나를 재정의 하는 것이 좋습니다. 데이터가 작고 크기가 고정 되어 있으면 재정의 `OnRenderGlobalData`합니다. 데이터 파일에는 가변 크기의 경우 재정의 `OnRenderFileData`합니다.  
   
- 자세한 내용은 참조는 [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) 및 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 구조는 [TYMED](http://msdn.microsoft.com/library/windows/desktop/ms691227) 열거형 형식 및 [있음](http://msdn.microsoft.com/library/windows/desktop/ms678431) Windows SDK입니다.  
+ 자세한 내용은 참조는 [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) 및 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 구조는 [TYMED](/windows/desktop/api/objidl/ne-objidl-tagtymed) 열거형 형식 및 [있음](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) Windows SDK입니다.  
   
 ##  <a name="onrenderfiledata"></a>  COleDataSource::OnRenderFileData  
  지정 된 저장 미디어 파일인 경우 지정 된 형식의 데이터를 검색 하기 위해 프레임 워크에서 호출 됩니다.  
@@ -369,7 +369,7 @@ virtual BOOL OnRenderFileData(
   
 ### <a name="parameters"></a>매개 변수  
  *lpFormatEtc*  
- 가리키는 합니다 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 정보가 요청 된 형식을 지정 하는 구조입니다.  
+ 가리키는 합니다 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 정보가 요청 된 형식을 지정 하는 구조입니다.  
   
  *pFile*  
  가리키는 [CFile](../../mfc/reference/cfile-class.md) 개체는 데이터를 렌더링할 수 있습니다.  
@@ -382,7 +382,7 @@ virtual BOOL OnRenderFileData(
   
  이 고급 재정의할 수 있습니다. 요청 된 형식 및 미디어 데이터를 제공 하려면이 함수를 재정의 합니다. 데이터에 따라 대신이 함수의 다른 버전 중 하나를 재정의 하는 것이 좋습니다. 여러 저장소 미디어를 처리 하려는 경우 재정의할 [OnRenderData](#onrenderdata)합니다. 데이터 파일에는 가변 크기의 경우 재정의 `OnRenderFileData`합니다. 자세한 내용은 지연 된 렌더링 MFC에서 처리 된 것으로 문서를 참조 [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.  
   
- 자세한 내용은 참조는 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 구조 및 [있음](http://msdn.microsoft.com/library/windows/desktop/ms678431) Windows SDK의 합니다.  
+ 자세한 내용은 참조는 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 구조 및 [있음](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) Windows SDK의 합니다.  
   
 ##  <a name="onrenderglobaldata"></a>  COleDataSource::OnRenderGlobalData  
  지정 된 저장소 미디어가 전역 메모리 때 지정 된 형식의 데이터를 검색 하기 위해 프레임 워크에서 호출 됩니다.  
@@ -395,7 +395,7 @@ virtual BOOL OnRenderGlobalData(
   
 ### <a name="parameters"></a>매개 변수  
  *lpFormatEtc*  
- 가리키는 합니다 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 정보가 요청 된 형식을 지정 하는 구조입니다.  
+ 가리키는 합니다 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 정보가 요청 된 형식을 지정 하는 구조입니다.  
   
  *phGlobal*  
  반환 될 데이터는 전역 메모리 핸들을 가리킵니다. 하나는 아직 할당 되지 경우이 매개 변수는 NULL 일 수 있습니다.  
@@ -410,7 +410,7 @@ virtual BOOL OnRenderGlobalData(
   
  이 고급 재정의할 수 있습니다. 요청 된 형식 및 미디어 데이터를 제공 하려면이 함수를 재정의 합니다. 데이터에 따라 대신이 함수의 다른 버전 중 하나를 재정의 하는 것이 좋습니다. 여러 저장소 미디어를 처리 하려는 경우 재정의할 [OnRenderData](#onrenderdata)합니다. 데이터 파일에는 가변 크기의 경우 재정의 [OnRenderFileData](#onrenderfiledata)합니다. 자세한 내용은 지연 된 렌더링 MFC에서 처리 된 것으로 문서를 참조 [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.  
   
- 자세한 내용은 참조는 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 구조 및 [있음](http://msdn.microsoft.com/library/windows/desktop/ms678431) Windows SDK의 합니다.  
+ 자세한 내용은 참조는 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 구조 및 [있음](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) Windows SDK의 합니다.  
   
 ##  <a name="onsetdata"></a>  COleDataSource::OnSetData  
  설정 하거나 데이터를 바꾸기 위해 프레임 워크에서 호출 된 `COleDataSource` 지정 된 형식의 개체입니다.  
@@ -424,10 +424,10 @@ virtual BOOL OnSetData(
   
 ### <a name="parameters"></a>매개 변수  
  *lpFormatEtc*  
- 가리키는 합니다 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 구조 데이터를 대체 형식을 지정 합니다.  
+ 가리키는 합니다 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 구조 데이터를 대체 형식을 지정 합니다.  
   
  *lpStgMedium*  
- 가리키는 합니다 [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) 의 현재 내용을 대체 하는 데이터를 포함 하는 구조는 `COleDataSource` 개체입니다.  
+ 가리키는 합니다 [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) 의 현재 내용을 대체 하는 데이터를 포함 하는 구조는 `COleDataSource` 개체입니다.  
   
  *bRelease*  
  함수 호출을 완료 한 후 저장소 미디어의 소유권을 권한이 있는 사용자를 나타냅니다. 호출자가 저장소 매체를 대신 하 여 할당 된 리소스를 해제 하기 위해 담당자 결정 합니다. 호출자에 게가 작업을 설정 하 여 수행 *bRelease*합니다. 하는 경우 *bRelease* 는 0이 아닌 경우 데이터 소스는 소유권을 사용 하 여를 마쳤을 때 미디어를 해제 합니다. 때 *bRelease* 0 호출자에 게 소유권을 보유 하 고 데이터 원본을 호출 기간에만 저장 미디어를 사용할 수 있습니다.  
@@ -436,11 +436,11 @@ virtual BOOL OnSetData(
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 데이터 소스는 성공적으로 가져온이 될 때까지 데이터의 소유권을 사용 하지 않습니다. 즉,이 소유권을 가져올 경우 `OnSetData` 0을 반환 합니다. 호출 하 여 저장소 매체 소유권을 사용 하는 데이터 원본의 경우 해제 합니다 [ReleaseStgMedium](http://msdn.microsoft.com/library/windows/desktop/ms693491) 함수입니다.  
+ 데이터 소스는 성공적으로 가져온이 될 때까지 데이터의 소유권을 사용 하지 않습니다. 즉,이 소유권을 가져올 경우 `OnSetData` 0을 반환 합니다. 호출 하 여 저장소 매체 소유권을 사용 하는 데이터 원본의 경우 해제 합니다 [ReleaseStgMedium](/windows/desktop/api/ole2/nf-ole2-releasestgmedium) 함수입니다.  
   
  기본 구현은 아무 작업도 수행하지 않습니다. 지정 된 형식의 데이터를 대체 하려면이 함수를 재정의 합니다. 이 고급 재정의할 수 있습니다.  
   
- 자세한 내용은 참조는 [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) 하 고 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 구조 및 [ReleaseStgMedium](http://msdn.microsoft.com/library/windows/desktop/ms693491) 및 [있음](http://msdn.microsoft.com/library/windows/desktop/ms678431) Windows SDK의 함수입니다.  
+ 자세한 내용은 참조는 [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) 하 고 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 구조 및 [ReleaseStgMedium](/windows/desktop/api/ole2/nf-ole2-releasestgmedium) 및 [있음](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) Windows SDK의 함수입니다.  
   
 ##  <a name="setclipboard"></a>  COleDataSource::SetClipboard  
  포함 된 데이터를 저장 합니다 `COleDataSource` 개체는 다음 함수 중 하나를 호출한 후 클립보드에: [CacheData](#cachedata)를 [CacheGlobalData](#cacheglobaldata), [DelayRenderData](#delayrenderdata), 또는 [DelayRenderFileData](#delayrenderfiledata)합니다.  

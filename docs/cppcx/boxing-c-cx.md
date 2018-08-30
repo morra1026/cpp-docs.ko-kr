@@ -9,15 +9,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e70b908bddbf7034e1d60f16cb0e492c0a707586
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8ed67496189388b869d7d9491ac4baad3de810ca
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598882"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203594"
 ---
 # <a name="boxing-ccx"></a>Boxing(C++/CX)
-*boxing* 은 [Windows::Foundation::DateTime](http://msdn.microsoft.com/library/windows/apps/windows.foundation.datetime.aspx)과 같은 값 형식 변수 또는 `int`와 같은 기본 스칼라 형식이 [Platform::Object^](../cppcx/platform-object-class.md) 을 해당 입력 형식으로 사용하는 메서드에 전달될 때 해당 변수를 ref 클래스에 래핑합니다.  
+*Boxing* 와 같은 값 형식 변수 래핑하 [Windows::Foundation::DateTime](https://msdn.microsoft.com/library/windows/apps/windows.foundation.datetime.aspx)-또는와 같은 기본 스칼라 형식이 `int`-ref 클래스 변수를 사용 하는 메서드에 전달 되 면에서 [ Platform:: object ^](../cppcx/platform-object-class.md) 입력된 형식으로 합니다.  
   
 ## <a name="passing-a-value-type-to-an-object-parameter"></a>Object^ 매개 변수에 값 형식 전달  
  [Platform::Object^](../cppcx/platform-object-class.md)형식의 메서드 매개 변수에 전달하기 위해 명시적으로 변수를 boxing할 필요는 없지만 이전에 boxing된 값을 검색할 때는 명시적으로 원래 형식으로 캐스팅해야 합니다.  

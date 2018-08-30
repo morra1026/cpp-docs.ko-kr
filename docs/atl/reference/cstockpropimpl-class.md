@@ -74,12 +74,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b00d66c8d3842c03cc58e389bc308bc9515369b3
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: a3625667ccdbff85291d82ea519815bfc30c600f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882265"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219812"
 ---
 # <a name="cstockpropimpl-class"></a>CStockPropImpl 클래스
 이 클래스는 스톡 속성 값을 지원 하기 위한 메서드를 제공 합니다.  
@@ -502,7 +502,7 @@ HRESULT STDMETHODCALLTYPE get_Picture(IPictureDisp** ppPicture);
   
 ### <a name="parameters"></a>매개 변수  
  *ppPicture*  
- 그림의 속성에 대 한 포인터를 받는 변수입니다. 참조 [IPictureDisp](http://msdn.microsoft.com/library/windows/desktop/ms680762) 대 한 자세한 내용은 합니다.  
+ 그림의 속성에 대 한 포인터를 받는 변수입니다. 참조 [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) 대 한 자세한 내용은 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
@@ -869,7 +869,7 @@ HRESULT STDMETHODCALLTYPE put_Picture(IPictureDisp* pPicture);
   
 ### <a name="parameters"></a>매개 변수  
  *pPicture*  
- 그림의 속성에 대 한 포인터입니다. 참조 [IPictureDisp](http://msdn.microsoft.com/library/windows/desktop/ms680762) 대 한 자세한 내용은 합니다.  
+ 그림의 속성에 대 한 포인터입니다. 참조 [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) 대 한 자세한 내용은 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
@@ -990,7 +990,7 @@ HRESULT STDMETHODCALLTYPE putref_Picture(IPictureDisp* pPicture);
   
 ### <a name="parameters"></a>매개 변수  
  *pPicture*  
- 그림의 속성에 대 한 포인터입니다. 참조 [IPictureDisp](http://msdn.microsoft.com/library/windows/desktop/ms680762) 대 한 자세한 내용은 합니다.  
+ 그림의 속성에 대 한 포인터입니다. 참조 [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) 대 한 자세한 내용은 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  

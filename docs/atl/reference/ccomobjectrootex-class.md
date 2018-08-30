@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55da0705027d6625d4140691b1b91912fb94c555
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 4ca7cfb6a3d83e69c4b447a9e953581285ffaaf0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027529"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219175"
 ---
 # <a name="ccomobjectrootex-class"></a>CComObjectRootEx 클래스
 이 클래스에는 집계 및 집계 개체에 대 한 참조 수 관리 개체를 처리할 메서드를 제공 합니다.  
@@ -99,7 +99,7 @@ class CComObjectRootEx : public CComObjectRootBase
   
  사용 하는 이점은 `CComPolyObject` 는 둘 다 필요 하지 않는 `CComAggObject` 및 `CComObject` 집계 및 집계 경우를 처리 하 여 모듈에서. 단일 `CComPolyObject` 두 경우를 처리 하는 개체입니다. 따라서 vtable의 복사본이 하나만 및 하나의 복사본 함수 모듈에 존재 합니다. Vtable 큰 경우 현재 모듈 크기가 상당히 줄어들 수 있습니다이 합니다. Vtable이 작은 경우 사용 하는 반면 `CComPolyObject` 집계 또는 집계 개체에 대해 최적화 되어 있지 않으므로 약간 더 큰 모듈 크기를 발생할 수 있습니다는 `CComAggObject` 및 `CComObject`합니다.  
   
- 개체를 집계 하는 경우 [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) 에 의해 구현 되 `CComAggObject` 또는 `CComPolyObject`합니다. 이러한 클래스에 위임 `QueryInterface`, `AddRef`, 및 `Release` 호출 `CComObjectRootEx`의 `OuterQueryInterface`를 `OuterAddRef`, 및 `OuterRelease` 알 수 없는 외부에 전달 하도록 합니다. 재정의 하는 일반적으로 `CComObjectRootEx::FinalConstruct` 집계 된 모든 개체를 만들고를 재정의 하려면 클래스에서 `CComObjectRootEx::FinalRelease` 를 해제 하기 위해 개체를 집계 합니다.  
+ 개체를 집계 하는 경우 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 에 의해 구현 되 `CComAggObject` 또는 `CComPolyObject`합니다. 이러한 클래스에 위임 `QueryInterface`, `AddRef`, 및 `Release` 호출 `CComObjectRootEx`의 `OuterQueryInterface`를 `OuterAddRef`, 및 `OuterRelease` 알 수 없는 외부에 전달 하도록 합니다. 재정의 하는 일반적으로 `CComObjectRootEx::FinalConstruct` 집계 된 모든 개체를 만들고를 재정의 하려면 클래스에서 `CComObjectRootEx::FinalRelease` 를 해제 하기 위해 개체를 집계 합니다.  
   
  개체는 집계 되지 경우 `IUnknown` 구현한 `CComObject` 또는 `CComPolyObject`합니다. 이 경우 호출 `QueryInterface`, `AddRef`, 및 `Release` 위임 됩니다 `CComObjectRootEx`의 `InternalQueryInterface`를 `InternalAddRef`, 및 `InternalRelease` 실제 작업을 수행 하 합니다.  
   
@@ -136,7 +136,7 @@ HRESULT FinalConstruct();
   
      그러나 `FinalConstruct` 클래스가 가상 함수를 호출 하 고 ATL. 제공한 참조 횟수 구현을 사용할 수 있습니다 생성 완벽 하 게 될 가장 많이 파생 된 후 즉시 호출 됩니다  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  파생 된 클래스에서이 메서드를 재정의 하는 일반적으로 `CComObjectRootEx` 만들 개체를 집계 합니다. 예를 들어:  
   
  [!code-cpp[NVC_ATL_COM#40](../../atl/codesnippet/cpp/ccomobjectrootex-class_1.h)]  
@@ -222,7 +222,7 @@ ULONG InternalRelease();
  이면 스레드 모델 다중 스레드, `InterlockedDecrement` 둘 이상의 스레드가 동시에 참조 횟수를 변경 하지 못하도록 하는 데 사용 됩니다.  
   
 ##  <a name="lock"></a>  CComObjectRootEx::Lock  
- 이 메서드가 스레드 모델은 다중 스레드, 메시지가 표시 되 면 해당 Win32 API 함수를 호출 [EnterCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms682608), 전용 데이터 멤버를 통해 얻은 스레드가 임계 영역 개체의 소유권을 가져올 수 있는 대기 합니다.  
+ 이 메서드가 스레드 모델은 다중 스레드, 메시지가 표시 되 면 해당 Win32 API 함수를 호출 [EnterCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-entercriticalsection), 전용 데이터 멤버를 통해 얻은 스레드가 임계 영역 개체의 소유권을 가져올 수 있는 대기 합니다.  
   
 ```
 void Lock();
@@ -279,7 +279,7 @@ IUnknown*
  개체를 집계 하는 경우 알 수 없는 외부에 대 한 포인터에 저장 됩니다 `m_pOuterUnknown`합니다. 개체는 집계 되지 경우가 참조 횟수에 액세스할 `AddRef` 하 고 `Release` 에 저장 됩니다 [m_dwRef](#m_dwref)합니다.  
   
 ##  <a name="objectmain"></a>  CComObjectRootEx::ObjectMain  
- 에 나열 된 각 클래스에 대 한 합니다 [개체 맵의](http://msdn.microsoft.com/b57619cc-534f-4b8f-bfd4-0c12f937202f),이 함수는 모듈을 초기화 하는 경우 한 번 호출 됩니다 및 종료 시간에 다시 합니다.  
+ 에 나열 된 각 클래스에 대 한 합니다 [개체 맵의](https://msdn.microsoft.com/b57619cc-534f-4b8f-bfd4-0c12f937202f),이 함수는 모듈을 초기화 하는 경우 한 번 호출 됩니다 및 종료 시간에 다시 합니다.  
   
 ```
 static void WINAPI ObjectMain(bool bStarting);
@@ -292,9 +292,9 @@ static void WINAPI ObjectMain(bool bStarting);
 ### <a name="remarks"></a>설명  
  값을 *bStarting* 매개 변수는 모듈 되 고 있는지 여부를 나타냅니다 초기화 되거나 종료 합니다. 기본 구현을 `ObjectMain` 하지 않지만 초기화 하거나 클래스에 대 한 할당 하려는 리소스를 정리 하려면 클래스에서이 함수를 재정의할 수 있습니다. `ObjectMain` 클래스 인스턴스의 모든 요청 전에 호출 됩니다.  
   
- `ObjectMain` 진입점 함수를 수행할 수 있는 작업의 형식이 제한 되므로 DLL의 진입점에서 호출 됩니다. 이러한 제한 사항에 대 한 자세한 내용은 참조 하세요. [Dll 및 Visual c + + 런타임 라이브러리 동작](../../build/run-time-library-behavior.md) 하 고 [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583)합니다.  
+ `ObjectMain` 진입점 함수를 수행할 수 있는 작업의 형식이 제한 되므로 DLL의 진입점에서 호출 됩니다. 이러한 제한 사항에 대 한 자세한 내용은 참조 하세요. [Dll 및 Visual c + + 런타임 라이브러리 동작](../../build/run-time-library-behavior.md) 하 고 [DllMain](/windows/desktop/Dlls/dllmain)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_COM#41](../../atl/codesnippet/cpp/ccomobjectrootex-class_2.h)]  
   
 ##  <a name="outeraddref"></a>  CComObjectRootEx::OuterAddRef  
@@ -335,7 +335,7 @@ ULONG OuterRelease();
  디버그가 아닌 빌드에서 항상 0을 반환 합니다. 디버그 빌드에서 진단에 유용 하거나 테스트 수 있는 값을 반환 합니다.  
   
 ##  <a name="unlock"></a>  CComObjectRootEx::Unlock  
- 이 메서드가 스레드 모델은 다중 스레드, 메시지가 표시 되 면 해당 Win32 API 함수를 호출 [LeaveCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms684169), 전용 데이터 멤버를 통해 얻은 임계 영역 개체의 소유권을 해제 합니다.  
+ 이 메서드가 스레드 모델은 다중 스레드, 메시지가 표시 되 면 해당 Win32 API 함수를 호출 [LeaveCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-leavecriticalsection), 전용 데이터 멤버를 통해 얻은 임계 영역 개체의 소유권을 해제 합니다.  
   
 ```
 void Unlock();

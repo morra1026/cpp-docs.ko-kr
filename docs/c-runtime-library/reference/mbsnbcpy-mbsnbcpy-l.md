@@ -43,16 +43,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2fc3c849506401e44dfebcd4d0722953b557ae01
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8e0972b1584f4df92455bb17e0db8e577f988ae8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404749"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213113"
 ---
 # <a name="mbsnbcpy-mbsnbcpyl"></a>_mbsnbcpy, _mbsnbcpy_l
 
-복사본 **n** 바이트의 문자열을 대상 문자열입니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [_mbsnbcpy_s, _mbsnbcpy_s_l](mbsnbcpy-s-mbsnbcpy-s-l.md)을 참조하세요.
+복사본 **n** 바이트를 대상 문자열에는 문자열입니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [_mbsnbcpy_s, _mbsnbcpy_s_l](mbsnbcpy-s-mbsnbcpy-s-l.md)을 참조하세요.
 
 > [!IMPORTANT]
 > 이 API는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
@@ -106,18 +106,18 @@ unsigned char * _mbsnbcpy_l(
 
 ## <a name="remarks"></a>설명
 
-**_mbsnbcpy** 복사본 함수 *count* 바이트 *strSource* 를 *strDest*합니다. 경우 *count* 의 크기를 초과 *strDest* 소스 문자열과 대상 문자열이 겹치는 경우의 동작 또는 **_mbsnbcpy** 정의 되지 않습니다.
+**_mbsnbcpy** 복사본 함수 *개수* 바이트 *strSource* 하 *strDest*합니다. 하는 경우 *개수* 크기를 초과 *strDest* 또는 소스 문자열과 대상 문자열이 겹치는 동작 **_mbsnbcpy** 정의 되지 않습니다.
 
-경우 *strSource* 또는 *strDest* 가 null 포인터 이면이 함수에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 계속 하려면 실행 허용 된 경우, 함수 반환 **NULL** 설정 **errno** 를 **EINVAL**합니다.
+하는 경우 *strSource* 또는 *strDest* 가 null 포인터인 경우이 함수에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 함수 반환 **NULL** 설정 **errno** 하 **EINVAL**합니다.
 
-출력 값은의 설정에 영향을 **LC_CTYPE** 로캘 범주 설정; 참조 [setlocale, _wsetlocale](setlocale-wsetlocale.md) 자세한 정보에 대 한 합니다. 이러한 함수 버전은 제외 하 고 해당 하지 않는 동일는 **_l** 접미사가 있는 버전 현재 로캘을 사용는 **_l** 로캘 매개 변수를 대신 사용 하는 접미사는 전달합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값의 설정이 적용 됩니다는 **LC_CTYPE** 로캘 범주 설정; 참조 [setlocale, _wsetlocale](setlocale-wsetlocale.md) 자세한 내용은 합니다. 이러한 함수의 버전은 동일 점을 제외 되지 않은 합니다 **_l** 접미사가 있는 버전 현재 로캘을 사용 합니다 **_l** 로캘 매개 변수를 대신 사용 하는 접미사는 에 전달 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 > [!IMPORTANT]
-> 이러한 함수는 버퍼 오버런 위협에 노출될 수 있습니다. 버퍼 오버런은 보증되지 않은 권한 승격을 초래하거나 시스템을 위태롭게 하는 임의의 공격자 코드를 실행하기 위해 사용될 수 있습니다. 자세한 내용은 [버퍼 오버런 방지](http://msdn.microsoft.com/library/windows/desktop/ms717795)를 참조하세요.
+> 이러한 함수는 버퍼 오버런 위협에 노출될 수 있습니다. 버퍼 오버런은 보증되지 않은 권한 승격을 초래하거나 시스템을 위태롭게 하는 임의의 공격자 코드를 실행하기 위해 사용될 수 있습니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
 C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하는 템플릿 오버로드를 갖고 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -126,7 +126,7 @@ C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_mbsnbcpy**|\<mbstring.h>|
 |**_mbsnbcpy_l**|\<mbstring.h>|

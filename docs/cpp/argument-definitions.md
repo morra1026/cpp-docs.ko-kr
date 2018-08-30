@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 044c5df5ae0a51912893ccf306a5c93afceb7ab3
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 66c1e1eea44ee105176d8693cec95bcce3c18a1f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39407590"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200642"
 ---
 # <a name="argument-definitions"></a>인수 정의
 프로토타입의 인수를 사용하면  
@@ -44,7 +44,7 @@ int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
  첫 번째 명령줄 인수는 항상 `argv` **[1]** 마지막 이며 `argv` **[** `argc` -1 **]** 합니다.  
   
 > [!NOTE]
->  규칙에 따라 `argv`**[0]** 은 프로그램을 호출하는 데 사용하는 명령입니다.  사용 하 여 프로세스를 생성할 수는 있지만 [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms683197) 첫 번째 인수와 두 번째 인수를 사용 하는 경우 및 (*lpApplicationName* 하 고 *lpCommandLine*), `argv` **[0]** 실행 되지 않을 수 있습니다 이름을 사용 하십시오 [GetModuleFileName](http://msdn.microsoft.com/library/windows/desktop/ms683197) , 실행 파일 이름 및 정규화 된 경로를 검색 합니다.  
+>  규칙에 따라 `argv`**[0]** 은 프로그램을 호출하는 데 사용하는 명령입니다.  사용 하 여 프로세스를 생성할 수는 있지만 [CreateProcess](https://msdn.microsoft.com/library/windows/desktop/ms683197) 첫 번째 인수와 두 번째 인수를 사용 하는 경우 및 (*lpApplicationName* 하 고 *lpCommandLine*), `argv` **[0]** 실행 되지 않을 수 있습니다 이름을 사용 하십시오 [GetModuleFileName](https://msdn.microsoft.com/library/windows/desktop/ms683197) , 실행 파일 이름 및 정규화 된 경로를 검색 합니다.  
   
 ## <a name="microsoft-specific"></a>Microsoft 전용  
  *envp*  
@@ -52,7 +52,7 @@ int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
   
 **Microsoft 전용 종료**  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법을 보여 줍니다 합니다 *argc*를 *argv*, 및 *envp* 인수를 `main`:  
   
 ```cpp 

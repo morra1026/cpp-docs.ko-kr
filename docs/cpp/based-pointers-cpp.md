@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57dc254bab0acd875378dfd26ba3fe6e8d5650f4
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: afecaafc5a9d3c1eb9a9466cce303a493d355ce0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39407512"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196209"
 ---
 # <a name="based-pointers-c"></a>기반 포인터 (C++)
 **Microsoft 전용**  
@@ -56,13 +56,13 @@ struct llist_t {
  `vpBuffer` 포인터는 나중에 프로그램에 할당된 메모리 주소로 할당됩니다. 연결 목록은 `vpBuffer` 값을 기준으로 재배치됩니다.  
   
 > [!NOTE]
->  포인터가 포함 된 영구 식별자를 사용 하 여 수행할 수도 있습니다 [메모리 매핑된 파일](http://msdn.microsoft.com/library/windows/desktop/aa366556)합니다.  
+>  포인터가 포함 된 영구 식별자를 사용 하 여 수행할 수도 있습니다 [메모리 매핑된 파일](/windows/desktop/Memory/file-mapping)합니다.  
   
  기반 포인터를 역참조하는 경우 기반은 반드시 명시적으로 지정하거나 선언을 통해 암시적으로 알려야 합니다.  
   
  이전 버전과 호환성에 대 한 **_based** 에 대 한 동의어가 **__based**합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드는 기반 변경을 통한 기반 포인터 변경을 설명합니다.  
   
 ```cpp 

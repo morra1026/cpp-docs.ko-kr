@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de8b00f61a70e7c40f442173acace2e9f186d1d6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 84f301669e1aeead5a8c92f59fbaaaf87167fef4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225176"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203926"
 ---
 # <a name="fatal-error-c1108"></a>심각한 오류 C1108
-'dll' DLL을 찾을 수 없습니다.  
-  
- 경로에서 지정된 DLL(***dll***)을 찾을 수 없습니다.  
-  
- 이 오류를 해결하려면 Visual C++를 다시 설치하거나, 설치 CD에서 해당 .dll 파일을 컴퓨터로 복사합니다.
+
+> DLL을 찾을 수 없습니다. '*dll 이름*'
+
+지정 된 DLL (*dll 이름*) 경로에서 찾을 수 없습니다.
+
+이 오류를 해결 하려면 Visual c + +를 다시 설치 하거나 컴퓨터에 설치에서 해당.dll 파일을 복사 합니다.

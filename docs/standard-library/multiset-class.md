@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07e38d11ef25ebc2f1da888594ab84fe2261c53a
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: d32b6e61ab0dbac6010c6ed233f2cd822e73c2d5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028335"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220977"
 ---
 # <a name="multiset-class"></a>multiset 클래스
 
@@ -116,13 +116,16 @@ class multiset
 
 ### <a name="parameters"></a>매개 변수
 
-*키* multiset에 저장 되는 요소 데이터 형식입니다.
+*키*<br/>
+ multiset에 저장되는 요소 데이터 형식입니다.
 
-*비교* multiset에서 상대적 순서를 결정 하는 정렬 키로 두 요소 값을 비교할 수 있는 함수 개체를 제공 하는 형식입니다. 이진 조건자 **less**\<Key>가 기본값입니다.
+*Compare*<br/>
+ 함수 개체를 제공하는 이 형식은 multiset 내에서의 상대적인 순서를 결정하는 정렬 키로 두 요소 값을 비교할 수 있습니다. 이진 조건자 **less**\<Key>가 기본값입니다.
 
 C++14에서는 형식 매개 변수가 없는 `std::less<>` 또는 `std::greater<>` 조건자를 지정하여 유형이 다른 조회를 사용하도록 설정할 수 있습니다. 자세한 내용은 [연관 컨테이너의 유형이 다른 조회](../standard-library/stl-containers.md#sequence_containers)를 참조하세요
 
-*할당자* multiset의 할당 및 메모리 할당 취소 하는 방법에 대 한 세부 정보를 캡슐화 하는 저장 된 할당자 개체를 나타내는 형식입니다. 기본값은 **할당자 *\<키 >입니다.*
+*할당자*<br/>
+ multiset의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 기본값은 `allocator<Key>`입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -232,7 +235,7 @@ typedef Allocator allocator_type;
 
 `Allocator`에 대한 자세한 내용은 [multiset 클래스](../standard-library/multiset-class.md) 항목의 설명 섹션을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `allocator_type`을 사용하는 예제는 [get_allocator](#get_allocator)의 예제를 참조하세요.
 
@@ -250,7 +253,7 @@ iterator begin();
 
 multiset의 첫 번째 요소 또는 빈 multiset 다음의 위치 주소를 지정하는 양방향 반복기입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_begin.cpp
@@ -351,7 +354,7 @@ multiset의 모든 요소를 지웁니다.
 void clear();
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_clear.cpp
@@ -393,7 +396,7 @@ typedef implementation-defined const_iterator;
 
 `const_iterator` 형식을 사용하여 요소의 값을 수정할 수는 없습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `const_iterator`를 사용하는 예제는 [begin](#begin)의 예제를 참조하세요.
 
@@ -419,7 +422,7 @@ typedef typename allocator_type::const_pointer const_pointer;
 typedef typename allocator_type::const_reference const_reference;
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_const_ref.cpp
@@ -464,7 +467,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 
 `const_reverse_iterator` 형식은 요소값을 수정할 수 없으며 multiset를 역방향으로 반복하는 데 사용됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `const_reverse_iterator`를 선언하고 사용하는 방법에 대한 예제는 [rend](#rend)의 예제를 참조하세요.
 
@@ -478,7 +481,8 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*키* multiset에서 일치 하는지 확인할 요소의 키입니다.
+*key*<br/>
+ multiset에서 일치하는지 확인할 요소의 키입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -490,7 +494,7 @@ size_type count(const Key& key) const;
 
 [ `lower_bound` (_ *Key* ), `upper_bound` (\_ *Key* ) )
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서는 multiset::count 멤버 함수의 사용을 보여 줍니다.
 
@@ -552,7 +556,7 @@ const_reverse_iterator crbegin() const;
 
 `crbegin`은 multiset를 역방향으로 반복할 때 사용할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_crbegin.cpp
@@ -602,7 +606,7 @@ const_reverse_iterator crend() const;
 
 `crend`에서 반환한 값은 역참조되지 않아야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_crend.cpp
@@ -640,7 +644,7 @@ typedef typename allocator_type::difference_type difference_type;
 
 입력 반복기 요구 사항을 충족하는 모든 반복기(set 등의 가역 컨테이너에서 지원하는 양방향 반복기 클래스 포함)에 대해 `difference_type`을 사용할 수는 있지만, 반복기 간의 빼기는 vector와 같은 임의 액세스 컨테이너가 제공하는 임의 액세스 반복기를 통해서만 지원됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_diff_type.cpp
@@ -723,7 +727,7 @@ iterator emplace(Args&&... args);
 
 배치 중 예외가 throw되면 컨테이너의 상태가 수정되지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_emplace.cpp
@@ -807,7 +811,7 @@ bool empty() const;
 
 multiset가 비어 있으면 **true**이고 비어 있지 않으면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_empty.cpp
@@ -873,7 +877,8 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>매개 변수
 
-*키* 검색 중인 multiset에서 요소의 정렬 키와 비교할 인수 키입니다.
+*key*<br/>
+ 검색 중인 multiset에서 요소의 정렬 키와 비교할 인수 키입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -881,7 +886,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 구성원 함수가 반환하는 `pr` 쌍의 첫 번째 반복기에 액세스하려면 `pr`. **first**를 사용하고 하한 반복기를 역참조하려면 \*( `pr`. **first**)를 사용합니다. 구성원 함수가 반환하는 `pr` 쌍의 두 번째 반복기에 액세스하려면 `pr`. **second**를 사용하고 상한 반복기를 역참조하려면 \*( `pr`. **second**)를 사용합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_equal_range.cpp
@@ -957,13 +962,17 @@ size_type erase(
 
 ### <a name="parameters"></a>매개 변수
 
-*여기서* 제거할 요소의 위치입니다.
+*Where*<br/>
+ 제거할 요소의 위치입니다.
 
-*첫 번째* 제거할 첫 번째 요소의 위치입니다.
+*첫 번째*<br/>
+ 제거할 첫 번째 요소의 위치입니다.
 
-*마지막* 제거할 마지막 요소 바로 뒤의 위치입니다.
+*마지막*<br/>
+ 제거할 마지막 요소 바로 다음 위치입니다.
 
-*키* 제거할 요소의 키 값입니다.
+*키*<br/>
+ 제거할 요소의 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -988,7 +997,8 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*키* 검색 중인 multiset에서 요소의 정렬 키와 일치 하는지 확인할 키 값입니다.
+*key*<br/>
+ 검색 중인 multiset에서 요소의 정렬 키와 일치 여부를 확인할 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1000,7 +1010,7 @@ const_iterator find(const Key& key) const;
 
 하는 경우의 반환 값 `find` 에 할당 되는 `const_iterator`, multiset 개체를 수정할 수 없습니다. 하는 경우의 반환 값 `find` 에 할당 되는 `iterator`, multiset 개체를 수정할 수 있습니다
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // compile with: /EHsc /W4 /MTd
@@ -1077,7 +1087,7 @@ multiset에서 사용되는 할당자입니다.
 
 multiset 클래스의 할당자는 클래스가 저장소를 관리하는 방법을 지정합니다. C++ 표준 라이브러리 컨테이너 클래스와 함께 제공되는 기본 할당자를 사용하면 대부분의 프로그래밍 요구 사항을 충족할 수 있습니다. 할당자 클래스를 직접 작성하고 사용하는 방법에 대해서는 고급 C++ 항목에서 다룹니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_get_allocator.cpp
@@ -1204,7 +1214,7 @@ IList);
 
 생성된 요소를 제 위치에 삽입하려면, 즉 복사 또는 이동 작업을 수행하지 않으려면 [multiset::emplace](#emplace) 및 [multiset::emplace_hint](#emplace_hint)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_insert.cpp
@@ -1303,7 +1313,7 @@ multiset의 모든 요소를 읽을 수 있는 상수 [양방향 반복기](../s
 typedef implementation-defined iterator;
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 예를 참조 하세요 [시작할](#begin) 선언 하 고 사용 하는 방법의 예는 `iterator`합니다.
 
@@ -1331,7 +1341,7 @@ multiset가 요소의 순서를 지정하는 데 사용하는 함수 개체(템�
 
 [key_compare](#key_compare)와 [value_compare](#value_compare)는 둘 다 템플릿 매개 변수 `Compare`와 동일한 의미입니다. 두 형식 모두 set 및 multiset 클래스용으로 제공되며 이러한 클래스에 사용되는 경우에는 동일하지만, map 및 multimap 클래스와의 호환성을 위해 제공되는 경우에는 서로 다릅니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_key_comp.cpp
@@ -1396,7 +1406,7 @@ typedef Compare key_compare;
 
 `Compare`에 대한 자세한 내용은 [multiset 클래스](../standard-library/multiset-class.md) 항목의 설명 섹션을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `key_compare`를 선언하고 사용하는 방법에 대한 예제는 [key_comp](#key_comp)의 예제를 참조하세요.
 
@@ -1414,7 +1424,7 @@ typedef Key key_type;
 
 `Key`에 대한 자세한 내용은 [multiset 클래스](../standard-library/multiset-class.md) 항목의 설명 섹션을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `key_type`를 선언하고 사용하는 방법에 대한 예제는 [value_type](#value_type)의 예제를 참조하세요.
 
@@ -1430,13 +1440,14 @@ iterator lower_bound(const Key& key);
 
 ### <a name="parameters"></a>매개 변수
 
-*키* 검색 중인 multiset에서 요소의 정렬 키와 비교할 인수 키입니다.
+*key*<br/>
+ 검색 중인 multiset에서 요소의 정렬 키와 비교할 인수 키입니다.
 
 ### <a name="return-value"></a>반환 값
 
 `iterator` 또는 `const_iterator` 는 주소 일치 키 인수 키 보다 크거나 같은 이거나 없는 경우 multiset에서 마지막 요소 다음 위치의 주소를 사용 하 여는 multiset 내에서 요소의 위치가 키에 대 한 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_lower_bound.cpp
@@ -1497,7 +1508,7 @@ size_type max_size() const;
 
 multiset의 최대 허용 길이입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_max_size.cpp
@@ -1598,7 +1609,7 @@ multiset (
 
 다음 3개 생성자는 multiset의 범위 `[First, Last)`를 복사하며, 비교 함수 및 할당자 형식을 지정하는 명시도는 계속 높아집니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_ctor.cpp
@@ -1719,7 +1730,7 @@ multiset& operator=(multiset&& right);
 
 `operator=` 요소에서 이동 또는 복사 *오른쪽* 이 `multiset`사용 되는 참조 형식 (lvalue 또는 rvalue)에 따라 합니다. `operator=`가 실행되기 전에 이 `multiset`에 있는 요소가 삭제됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_operator_as.cpp
@@ -1792,7 +1803,7 @@ reverse_iterator rbegin();
 
 `rbegin`은 multiset를 역방향으로 반복할 때 사용할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_rbegin.cpp
@@ -1855,7 +1866,7 @@ multiset에 저장된 요소에 대한 참조를 제공하는 형식입니다.
 typedef typename allocator_type::reference reference;
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_ref.cpp
@@ -1907,7 +1918,7 @@ reverse_iterator rend();
 
 `rend`에서 반환한 값은 역참조되지 않아야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_rend.cpp
@@ -1968,7 +1979,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 
 `reverse_iterator` 형식은 multiset를 역방향으로 반복하는 데 사용됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `reverse_iterator`를 선언하고 사용하는 방법에 대한 예제는 [rbegin](#rbegin)의 예제를 참조하세요.
 
@@ -1984,7 +1995,7 @@ size_type size() const;
 
 multiset의 현재 길이입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_size.cpp
@@ -2021,7 +2032,7 @@ multiset에서 요소 수를 표현할 수 있는 부호 없는 정수 형식입
 typedef typename allocator_type::size_type size_type;
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `size_type`을 선언하고 사용하는 방법에 대한 예제는 [size](#size)의 예제를 참조하세요.
 
@@ -2036,13 +2047,14 @@ void swap(
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 대상 multiset와 교환할 요소를 제공 하는 인수 multiset입니다.
+*right*<br/>
+ 대상 multiset와 교환할 요소를 제공하는 인수 집합입니다.
 
 ### <a name="remarks"></a>설명
 
 구성원 함수는 해당 요소를 교환할 두 multiset의 요소를 지정하는 참조, 포인터 또는 반복기를 무효화하지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_swap.cpp
@@ -2104,13 +2116,14 @@ iterator upper_bound(const Key& key);
 
 ### <a name="parameters"></a>매개 변수
 
-*키* 검색 중인 multiset에서 요소의 정렬 키와 비교할 인수 키입니다.
+*key*<br/>
+ 검색 중인 multiset에서 요소의 정렬 키와 비교할 인수 키입니다.
 
 ### <a name="return-value"></a>반환 값
 
 인수 키보다 큰 키가 들어 있는 multiset 내 요소의 위치 주소를 지정하거나, 키와 일치하는 항목이 없는 경우 multiset에서 마지막 요소 다음 위치의 주소를 지정하는 **반복기** 또는 `const_iterator`입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_upper_bound.cpp
@@ -2183,7 +2196,7 @@ multiset가 요소의 순서를 지정하는 데 사용하는 함수 개체(템�
 
 [key_compare](#key_compare)와 [value_compare](#value_compare)는 둘 다 템플릿 매개 변수 `Compare`와 동일한 의미입니다. 두 형식 모두 set 및 multiset 클래스용으로 제공되며 이러한 클래스에 사용되는 경우에는 동일하지만, map 및 multimap 클래스와의 호환성을 위해 제공되는 경우에는 서로 다릅니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_value_comp.cpp
@@ -2250,7 +2263,7 @@ typedef key_compare value_compare;
 
 `Compare`에 대한 자세한 내용은 [multiset 클래스](../standard-library/multiset-class.md) 항목의 설명 섹션을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `value_compare`를 선언하고 사용하는 방법의 예제는 [value_comp](#value_comp)의 예제를 참조하세요.
 
@@ -2270,7 +2283,7 @@ typedef Key value_type;
 
 `Key`에 대한 자세한 내용은 이 항목의 설명 섹션을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multiset_value_type.cpp
@@ -2307,7 +2320,7 @@ The multiset has elements: 10 20.
 
 ## <a name="see-also"></a>참고자료
 
-[\<설정 > 멤버](http://msdn.microsoft.com/0c2d57c0-173f-4204-b579-c5f06aad8b95)<br/>
+[\<설정 > 멤버](https://msdn.microsoft.com/0c2d57c0-173f-4204-b579-c5f06aad8b95)<br/>
 [컨테이너](../cpp/containers-modern-cpp.md)<br/>
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
 [C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>

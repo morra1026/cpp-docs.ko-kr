@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d70989be8e8535336c831cb59fb9422c6e2c63e0
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 43f4405ad66ff2d6048056780ba7c1581f7b7497
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37886234"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212536"
 ---
 # <a name="iconnectionpointcontainerimpl-class"></a>IConnectionPointContainerImpl 클래스
 이 클래스는 컬렉션을 관리 하는 연결 지점 컨테이너를 구현 [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) 개체입니다.  
@@ -77,7 +77,7 @@ STDMETHOD(EnumConnectionPoints)(IEnumConnectionPoints** ppEnum);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IConnectionPointContainer::EnumConnectionPoints](http://msdn.microsoft.com/library/windows/desktop/ms682460) Windows SDK에에서 있습니다.  
+ 참조 [IConnectionPointContainer::EnumConnectionPoints](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpointcontainer-enumconnectionpoints) Windows SDK에에서 있습니다.  
   
 ##  <a name="findconnectionpoint"></a>  IConnectionPointContainerImpl::FindConnectionPoint  
  지정한 IID를 지 원하는 연결 지점에 대 한 인터페이스 포인터를 검색 합니다.  
@@ -87,8 +87,8 @@ STDMETHOD(FindConnectionPoint)(REFIID riid, IConnectionPoint** ppCP);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IConnectionPointContainer::FindConnectionPoint](http://msdn.microsoft.com/library/windows/desktop/ms692476) Windows SDK에에서 있습니다.  
+ 참조 [IConnectionPointContainer::FindConnectionPoint](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpointcontainer-findconnectionpoint) Windows SDK에에서 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [IConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms683857)   
+ [IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)   
  [클래스 개요](../../atl/atl-class-overview.md)

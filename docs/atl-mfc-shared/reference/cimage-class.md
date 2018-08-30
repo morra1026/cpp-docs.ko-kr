@@ -64,12 +64,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8217ee5bdcad15a2c0b89f95000360b979e094ea
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 3443c85ce7f3f12e334e074e1ce37c9cab2ce9d8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883621"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213616"
 ---
 # <a name="cimage-class"></a>CImage 클래스
 `CImage` 향상 된 비트맵 지원, 로드 및 JPEG, GIF, BMP, 및 PNG 이동식 네트워크 그래픽 () 형식 이미지를 저장 하는 기능을 포함 하 여 제공 합니다.  
@@ -168,7 +168,7 @@ class CImage
   
  `CImage` 새 선택할 수 없습니다 [CDC](../../mfc/reference/cdc-class.md)합니다. `CImage` 이미지에 대 한 자체 HDC를 만듭니다. HBITMAP 연관만 HBITMAP를 한 번에 하나의 HDC를 선택할 수 있습니다, 되므로 `CImage` 다른 HDC를 선택할 수 없습니다. CDC를 해야 하는 경우 검색에서 HDC는 `CImage` [CDC::FromHandle]에 게 제공 하 고 (... /.. /mfc/reference/cdc-class.md#cdc__fromhandle 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
 ```cpp  
 // Get a CDC for the image
 CDC* pDC = CDC::FromHandle(m_myImage.GetDC());
@@ -181,7 +181,7 @@ m_myImage.ReleaseDC();
  사용 하는 경우 `CImage` MFC 프로젝트에서 프로젝트의 멤버 함수는 예상에 대 한 포인터를 확인 한 [CBitmap](../../mfc/reference/cbitmap-class.md) 개체입니다. 사용 하려는 경우 `CImage` 이러한 함수를 사용 하 여 같은 [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#appendmenu)를 사용 하 여 [CBitmap::FromHandle](../../mfc/reference/cbitmap-class.md#fromhandle), 전달에 `CImage` HBITMAP를 사용 하 여 반환 된 `CBitmap*`합니다.  
 
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
 ```cpp  
 void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
 {
@@ -263,7 +263,7 @@ BOOL AlphaBlend(
  전체 소스 비트맵 및 소스 비트맵에 대 한 형식 정보에 적용할 전역 알파 값을 원본 및 대상 비트맵에는 알파 혼합 함수입니다. 원본 및 대상 blend 함수는 현재 AC_SRC_OVER로 제한 합니다.  
   
  *pointDest*  
- 에 대 한 참조를 [지점](http://msdn.microsoft.com/library/windows/desktop/dd162805) 논리 단위에서 대상 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.  
+ 에 대 한 참조를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 논리 단위에서 대상 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.  
   
  *nDestWidth*  
  논리 단위를 대상 사각형의 너비입니다.  
@@ -284,7 +284,7 @@ BOOL AlphaBlend(
  소스 사각형의 논리 단위에서 높이입니다.  
   
  *rectDest*  
- 에 대 한 참조를 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 구조, 대상을 식별 합니다.  
+ 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조, 대상을 식별 합니다.  
   
  *rectSrc*  
  에 대 한 참조를 `RECT` 구조, 소스를 식별 합니다.  
@@ -363,10 +363,10 @@ BOOL BitBlt(
  대상 사각형의 왼쪽된 위 모퉁이의 논리적 y 좌표입니다.  
   
  *dwROP*  
- 래스터 작업 수행 수입니다. 래스터 작업 코드를 대상 (현재 선택 된 브러시에 의해 정의 됨) 처럼 원본, 대상 및 패턴의 비트를 결합 하는 방법에 정확 하 게 정의 합니다. 참조 [BitBlt](http://msdn.microsoft.com/library/windows/desktop/dd183370) 다른 래스터 연산은 코드와 해당 설명의 목록을 Windows SDK에 있습니다.  
+ 래스터 작업 수행 수입니다. 래스터 작업 코드를 대상 (현재 선택 된 브러시에 의해 정의 됨) 처럼 원본, 대상 및 패턴의 비트를 결합 하는 방법에 정확 하 게 정의 합니다. 참조 [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) 다른 래스터 연산은 코드와 해당 설명의 목록을 Windows SDK에 있습니다.  
   
  *pointDest*  
- A [지점](http://msdn.microsoft.com/library/windows/desktop/dd162805) 대상 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.  
+ A [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 대상 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.  
   
  *nDestWidth*  
  논리 단위를 대상 사각형의 너비입니다.  
@@ -381,7 +381,7 @@ BOOL BitBlt(
  소스 사각형의 왼쪽된 위 모퉁이의 논리적 y 좌표입니다.  
   
  *rectDest*  
- A [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 대상 사각형을 나타내는 구조입니다.  
+ A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 대상 사각형을 나타내는 구조입니다.  
   
  *pointSrc*  
  `POINT` 소스 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.  
@@ -390,7 +390,7 @@ BOOL BitBlt(
  성공하는 경우 0이 아니고, 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [BitBlt](http://msdn.microsoft.com/library/windows/desktop/dd183370) Windows SDK에 있습니다.  
+ 자세한 내용은 [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) Windows SDK에 있습니다.  
   
 ##  <a name="cimage"></a>  CImage::CImage  
  `CImage` 개체를 생성합니다.  
@@ -469,7 +469,7 @@ BOOL CreateEx(
 - BI_BITFIELDS 형식으로 압축 되지 및 색상표의 각 픽셀의 각각 빨강, 녹색 및 파랑 구성 요소를 지정 하는 세 가지 DWORD 색 마스크 구성 됩니다. 16 및 32 bpp 비트맵을 사용 하는 경우에 유효 합니다.  
   
  *pdwBitfields*  
- 경우에 사용 *eCompression* 설정할지를 BI_BITFIELDS, 그렇지 않으면 NULL 이어야 합니다. 비트를 각 픽셀의 색의 빨강, 녹색 및 파랑 구성 요소에 대해 각각 사용 지정, 세 개의 DWORD 비트 마스크의 배열에 대 한 포인터입니다. 비트 필드에 대 한 제한 사항에 대 한 자세한 내용은 [BITMAPINFOHEADER](http://msdn.microsoft.com/library/windows/desktop/dd183376) Windows SDK에 있습니다.  
+ 경우에 사용 *eCompression* 설정할지를 BI_BITFIELDS, 그렇지 않으면 NULL 이어야 합니다. 비트를 각 픽셀의 색의 빨강, 녹색 및 파랑 구성 요소에 대해 각각 사용 지정, 세 개의 DWORD 비트 마스크의 배열에 대 한 포인터입니다. 비트 필드에 대 한 제한 사항에 대 한 자세한 내용은 [BITMAPINFOHEADER](https://msdn.microsoft.com/library/windows/desktop/dd183376) Windows SDK에 있습니다.  
   
  *dwFlags*  
  비트맵 개체에 알파 채널이 있는지를 지정 합니다. 0 개 이상의 다음 값의 조합일 수 있습니다.  
@@ -482,7 +482,7 @@ BOOL CreateEx(
 ### <a name="return-value"></a>반환 값  
  성공 하면 TRUE이 고 그렇지 않으면 FALSE입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 16 비트를 사용 하 여 각 픽셀을 인코딩할 100 x 100 픽셀 비트맵을 만듭니다. 지정된 된 16 비트 픽셀 0-3 비트 인코딩 빨강 구성 요소, 4 ~ 7 비트, 녹색, 인코딩 및 8 ~ 11 비트 인코딩 파란색입니다. 나머지 4 비트 사용 되지 않습니다.  
 
 ```cpp  
@@ -578,13 +578,13 @@ BOOL Draw(
  소스 사각형의 논리 단위에서 높이입니다.  
   
  *rectDest*  
- 에 대 한 참조를 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 구조, 대상을 식별 합니다.  
+ 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조, 대상을 식별 합니다.  
   
  *rectSrc*  
  에 대 한 참조를 `RECT` 구조, 소스를 식별 합니다.  
   
  *pointDest*  
- 에 대 한 참조를 [지점](http://msdn.microsoft.com/library/windows/desktop/dd162805) 논리 단위에서 대상 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.  
+ 에 대 한 참조를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 논리 단위에서 대상 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -623,7 +623,7 @@ int GetBPP() const throw();
 ### <a name="remarks"></a>설명  
  이 값이 각 픽셀을 정의 하는 비트 수 및 최대 수가 비트맵의 색을 결정 합니다.  
   
- 픽셀당 비트는 일반적으로 1, 4, 8, 16, 24 또는 32입니다. 참조를 `biBitCount` 소속 [BITMAPINFOHEADER](http://msdn.microsoft.com/library/windows/desktop/dd183376) 이 값에 대 한 자세한 내용은 Windows SDK에 있습니다.  
+ 픽셀당 비트는 일반적으로 1, 4, 8, 16, 24 또는 32입니다. 참조를 `biBitCount` 소속 [BITMAPINFOHEADER](https://msdn.microsoft.com/library/windows/desktop/dd183376) 이 값에 대 한 자세한 내용은 Windows SDK에 있습니다.  
   
 ##  <a name="getcolortable"></a>  CImage::GetColorTable  
  DIB 섹션의 색상표에 있는 항목의 범위에서 빨간색, 녹색, 파란색 (RGB) 색 값을 검색합니다.  
@@ -642,7 +642,7 @@ void GetColorTable(UINT iFirstColor,
  검색할 색 테이블 항목의 수입니다.  
   
  *prgbColors*  
- 배열에 대 한 포인터 [RGBQUAD](http://msdn.microsoft.com/library/windows/desktop/dd162938) 색을 검색 하는 구조 테이블 항목입니다.  
+ 배열에 대 한 포인터 [RGBQUAD](/windows/desktop/api/wingdi/ns-wingdi-tagrgbquad) 색을 검색 하는 구조 테이블 항목입니다.  
   
 ##  <a name="getdc"></a>  CImage::GetDC  
  현재에 선택한 이미지를가지고 있는 장치 컨텍스트를 검색 합니다.  
@@ -1179,10 +1179,10 @@ BOOL PlgBlt(
  흑백 비트맵의 왼쪽된 위 모퉁이의 y 좌표입니다.  
   
  *rectSrc*  
- 에 대 한 참조를 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 소스 사각형의 좌표를 지정 합니다.  
+ 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 소스 사각형의 좌표를 지정 합니다.  
   
  *pointMask*  
- A [지점](http://msdn.microsoft.com/library/windows/desktop/dd162805) 마스크 비트맵의 왼쪽된 위 모퉁이 나타내는 구조입니다.  
+ A [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 마스크 비트맵의 왼쪽된 위 모퉁이 나타내는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 0이 아니고 그렇지 않으면 0입니다.  
@@ -1190,7 +1190,7 @@ BOOL PlgBlt(
 ### <a name="remarks"></a>설명  
  하는 경우 *hbmMask* 유효한 단색 비트맵을 식별 `PlgBit` 이 비트맵을 사용 하 여 소스 사각형에서 색 데이터 비트 마스크입니다.  
   
- 이 메서드는 Windows NT 4.0 이상만 해당 버전에 적용 됩니다. 참조 [PlgBlt](http://msdn.microsoft.com/library/windows/desktop/dd162804) 자세한 내용을 보려면 Windows SDK에 있습니다.  
+ 이 메서드는 Windows NT 4.0 이상만 해당 버전에 적용 됩니다. 참조 [PlgBlt](/windows/desktop/api/wingdi/nf-wingdi-plgblt) 자세한 내용을 보려면 Windows SDK에 있습니다.  
   
 ##  <a name="releasedc"></a>  CImage::ReleaseDC  
  장치 컨텍스트를 해제 합니다.  
@@ -1268,7 +1268,7 @@ void SetColorTable(
  색 테이블 항목 집합의 수입니다.  
   
  *prgbColors*  
- 배열에 대 한 포인터 [RGBQUAD](http://msdn.microsoft.com/library/windows/desktop/dd162938) 색을 설정 하는 구조 테이블 항목입니다.  
+ 배열에 대 한 포인터 [RGBQUAD](/windows/desktop/api/wingdi/ns-wingdi-tagrgbquad) 색을 설정 하는 구조 테이블 항목입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 DIB 구역을 비트맵만 지원합니다.  
@@ -1408,10 +1408,10 @@ BOOL StretchBlt(
  대상 사각형의 논리 단위에서 높이입니다.  
   
  *dwROP*  
- 래스터 작업 수행 수입니다. 래스터 작업 코드를 대상 (현재 선택 된 브러시에 의해 정의 됨) 처럼 원본, 대상 및 패턴의 비트를 결합 하는 방법에 정확 하 게 정의 합니다. 참조 [BitBlt](http://msdn.microsoft.com/library/windows/desktop/dd183370) 다른 래스터 연산은 코드와 해당 설명의 목록을 Windows SDK에 있습니다.  
+ 래스터 작업 수행 수입니다. 래스터 작업 코드를 대상 (현재 선택 된 브러시에 의해 정의 됨) 처럼 원본, 대상 및 패턴의 비트를 결합 하는 방법에 정확 하 게 정의 합니다. 참조 [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) 다른 래스터 연산은 코드와 해당 설명의 목록을 Windows SDK에 있습니다.  
   
  *rectDest*  
- 에 대 한 참조를 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 구조, 대상을 식별 합니다.  
+ 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조, 대상을 식별 합니다.  
   
  *xSrc*  
  X 좌표를 소스 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.  
@@ -1432,7 +1432,7 @@ BOOL StretchBlt(
  성공 하면 0이 아니고 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [StretchBlt](http://msdn.microsoft.com/library/windows/desktop/dd145120) Windows SDK에 있습니다.  
+ 자세한 내용은 [StretchBlt](/windows/desktop/api/wingdi/nf-wingdi-stretchblt) Windows SDK에 있습니다.  
   
 ##  <a name="transparentblt"></a>  CImage::TransparentBlt  
  현재이 장치 컨텍스트를 원본 장치 컨텍스트에서 비트맵을 복사 합니다.  
@@ -1490,7 +1490,7 @@ BOOL TransparentBlt(
  소스 비트맵을 투명 하 게 처리할 색입니다. 기본적으로 CLR_INVALID, 현재 이미지의 투명 한 색으로 설정 된 색상을 사용 해야 함을 나타내는입니다.  
   
  *rectDest*  
- 에 대 한 참조를 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 구조, 대상을 식별 합니다.  
+ 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조, 대상을 식별 합니다.  
   
  *xSrc*  
  X 좌표를 소스 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.  
@@ -1514,7 +1514,7 @@ BOOL TransparentBlt(
  `TransparentBlt` 소스 비트맵 및 픽셀 당 8 비트 픽셀당 4 비트에 대 한 지원 됩니다. 사용 하 여 [CImage::AlphaBlend](#alphablend) 투명도 사용 하 여 32 비트 / 픽셀 비트맵을 지정 합니다.  
   
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
 
 ```cpp  
 // Performs a transparent blit from the source image to the destination 
@@ -1548,10 +1548,10 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage,
 ## <a name="see-also"></a>참고 항목  
  [MMXSwarm 샘플](../../visual-cpp-samples.md)   
  [SimpleImage 샘플](../../visual-cpp-samples.md)   
- [장치 독립적 비트맵](http://msdn.microsoft.com/library/windows/desktop/dd183562)   
- [CreateDIBSection](http://msdn.microsoft.com/library/windows/desktop/dd183494)   
- [ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md) [장치 독립적 비트맵](http://msdn.microsoft.com/library/windows/desktop/dd183562)   
- [CreateDIBSection](http://msdn.microsoft.com/library/windows/desktop/dd183494)   
+ [장치 독립적 비트맵](/windows/desktop/gdi/device-independent-bitmaps)   
+ [CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibsection)   
+ [ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md) [장치 독립적 비트맵](/windows/desktop/gdi/device-independent-bitmaps)   
+ [CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibsection)   
 
 
 

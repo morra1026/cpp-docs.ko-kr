@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fe924627b0b0f4f5d02fab0040a4037085d94738
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d1055c0865988edf9b54539c0d214cebcda13735
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595585"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220422"
 ---
 # <a name="default-c"></a>default(C++)
 
@@ -53,9 +53,9 @@ coclass 내에 정의된 custom 또는 dispinterface가 기본 프로그래밍 �
 
 ## <a name="remarks"></a>설명
 
-**default** C++ 특성에는 [default](http://msdn.microsoft.com/library/windows/desktop/aa366787) MIDL 특성과 동일한 기능이 있습니다. **default** 특성을 [case](../windows/case-cpp.md) 특성과 함께 사용할 수도 있습니다.
+합니다 **기본** c + + 특성에 동일한 기능을 합니다 [기본](/windows/desktop/Midl/default) MIDL 특성입니다. **default** 특성을 [case](../windows/case-cpp.md) 특성과 함께 사용할 수도 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에서는 어떻게 **기본** coclass 정의에서 지정 하는 데 사용 됩니다 `ICustomDispatch` 기본 프로그래밍 인터페이스로:
 

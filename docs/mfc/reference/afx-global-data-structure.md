@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9df970022ccc4f358864c3e3462ffea2b373cd00
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: fd4aadf875e16586286c97aa5bffe82d6faed31e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42540922"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222305"
 ---
 # <a name="afxglobaldata-structure"></a>AFX_GLOBAL_DATA 구조체
 `AFX_GLOBAL_DATA` 구조는 프레임워크를 관리하거나 응용 프로그램의 모양과 동작을 사용자 지정하는 데 사용되는 필드 및 메서드를 포함합니다.  
@@ -64,13 +64,13 @@ struct AFX_GLOBAL_DATA
 |[AFX_GLOBAL_DATA::IsD2DInitialized](#isd2dinitialized)|`D2D`, `DirectWrite`및 `WIC` 팩터리를 초기화합니다. 주 창이 초기화되기 전에 이 메서드를 호출합니다.|  
 |[AFX_GLOBAL_DATA::Is32BitIcons](#is32biticons)|미리 정의된 32비트 아이콘이 지원되는지 여부를 나타냅니다.|  
 |[AFX_GLOBAL_DATA::IsD2DInitialized](#isd2dinitialized)|`D2D` 의 초기화 여부를 확인합니다.|  
-|[Afx_global_data:: isdwmcompositionenabled](#isdwmcompositionenabled)|Windows [DwmIsCompositionEnabled](http://msdn.microsoft.com/library/windows/desktop/aa969518) 메서드를 호출하는 간단한 방법을 제공합니다.|  
+|[Afx_global_data:: isdwmcompositionenabled](#isdwmcompositionenabled)|Windows를 호출 하는 간단한 방법을 제공 [DwmIsCompositionEnabled](/windows/desktop/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) 메서드.|  
 |[Afx_global_data:: ishighcontrastmode](#ishighcontrastmode)|이미지가 현재 고대비로 표시되는지 여부를 나타냅니다.|  
 |[Afx_global_data:: onsettingchange](#onsettingchange)|데스크톱 메뉴 애니메이션의 현재 상태 및 작업 표시줄 자동 숨기기 기능을 탐지합니다.|  
 |[Afx_global_data:: registerwindowclass](#registerwindowclass)|지정된 MFC 창 클래스를 등록합니다.|  
 |[Afx_global_data:: releasetaskbarrefs](#releasetaskbarrefs)|GetITaskbarList 및 GetITaskbarList3 메서드를 통해 얻은 인터페이스를 해제합니다.|  
 |[Afx_global_data:: resume](#resume)|Windows를 지 원하는 메서드에 액세스 하는 내부 함수 포인터를 다시 초기화 [테마 및 비주얼 스타일](/windows/desktop/Controls/visual-styles-overview)합니다.|  
-|[Afx_global_data:: setlayeredattrib](#setlayeredattrib)|Windows [SetLayeredWindowAttributes](http://msdn.microsoft.com/library/windows/desktop/ms633540) 메서드를 호출하는 간단한 방법을 제공합니다.|  
+|[Afx_global_data:: setlayeredattrib](#setlayeredattrib)|Windows를 호출 하는 간단한 방법을 제공 [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540) 메서드.|  
 |[Afx_global_data:: setmenufont](#setmenufont)|지정된 논리 글꼴을 만듭니다.|  
 |[Afx_global_data:: shellcreateitemfromparsingname](#shellcreateitemfromparsingname)|구문 분석 이름에서 셸 항목 개체를 만들고 초기화합니다.|  
 |[Afx_global_data:: updatefonts](#updatefonts)|프레임워크에서 사용하는 논리 글꼴을 다시 초기화합니다.|  
@@ -205,16 +205,16 @@ BOOL DrawTextOnGlass(
  [in] *hTheme*  
  창의 테마 데이터를 처리 하 하거나 NULL 키를 누릅니다. 프레임 워크를 지정된 된 테마를 사용 하 여이 매개 변수가 NULL이 아니고 테마가 지원 되는 경우 텍스트를 그립니다. 그렇지 않으면 테마를 사용하여 텍스트를 그리지 않습니다.  
   
- 사용 된 [OpenThemeData](http://msdn.microsoft.com/library/windows/desktop/bb759821) HTHEME를 만드는 방법.  
+ 사용 된 [OpenThemeData](/windows/desktop/api/uxtheme/nf-uxtheme-openthemedata) HTHEME를 만드는 방법.  
   
  [in] *pDC*  
  장치 컨텍스트에 대한 포인터입니다.  
   
  [in] *iPartId*  
- 원하는 텍스트 모양이 있는 컨트롤 파트입니다. 자세한 내용은 [파트 및 상태](http://msdn.microsoft.com/library/windows/desktop/bb773210)에 설명된 표의 파트 열을 참조하세요. 이 값이 0이면 텍스트가 기본 글꼴로 그려지거나 장치 컨텍스트로 선택된 글꼴로 그려집니다.  
+ 원하는 텍스트 모양이 있는 컨트롤 파트입니다. 자세한 내용은 표의 파트 열을 참조 하세요 [파트 및 상태](https://msdn.microsoft.com/library/windows/desktop/bb773210)합니다. 이 값이 0이면 텍스트가 기본 글꼴로 그려지거나 장치 컨텍스트로 선택된 글꼴로 그려집니다.  
   
  [in] *iStateId*  
- 원하는 텍스트 모양이 있는 컨트롤 상태입니다. 자세한 내용은 [파트 및 상태](http://msdn.microsoft.com/library/windows/desktop/bb773210)에 설명된 표의 상태 열을 참조하세요.  
+ 원하는 텍스트 모양이 있는 컨트롤 상태입니다. 자세한 내용은 표의 상태 열을 참조 하세요 [파트 및 상태](https://msdn.microsoft.com/library/windows/desktop/bb773210)합니다.  
   
  [in] *strText*  
  그릴 텍스트입니다.  
@@ -225,7 +225,7 @@ BOOL DrawTextOnGlass(
  [in] *dwFlags*  
  지정된 텍스트가 그려지는 방식을 지정하는 플래그의 비트 조합(OR)입니다.  
   
- 경우는 *hTheme* 매개 변수가 `NULL` 테마는 지원 되지 않으며 사용 하도록 설정 된 경우 또는 *nFormat* 의 매개 변수는 [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) 메서드 유효한 설명 플래그입니다. 테마가 지원 되는 경우는 *dwFlags* 의 매개 변수를 [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) 메서드 유효한 플래그를 설명 합니다.  
+ 경우는 *hTheme* 매개 변수가 `NULL` 테마는 지원 되지 않으며 사용 하도록 설정 된 경우 또는 *nFormat* 의 매개 변수는 [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) 메서드 유효한 설명 플래그입니다. 테마가 지원 되는 경우는 *dwFlags* 의 매개 변수를 [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex) 메서드 유효한 플래그를 설명 합니다.  
   
  [in] *nGlowSize*  
  지정된 텍스트를 그리기 전에 배경에 그려지는 글로우 효과의 크기입니다. 기본값은 0입니다.  
@@ -237,16 +237,16 @@ BOOL DrawTextOnGlass(
  테마를 지정된 된 텍스트를 그리는 데 사용 되는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 테마는 응용 프로그램의 비주얼 스타일을 정의합니다. 텍스트를 그리는 경우에 테마가 사용 되지 않습니다는 *hTheme* 매개 변수는 NULL 이거나 합니다 [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) 메서드가 지원 되지 않습니다 이거나 [바탕 화면 창 관리자](http://msdn.microsoft.com/library/windows/desktop/aa969540) (DWM) 컴퍼지션을 사용 되지 않습니다.  
+ 테마는 응용 프로그램의 비주얼 스타일을 정의합니다. 텍스트를 그리는 경우에 테마가 사용 되지 않습니다는 *hTheme* 매개 변수는 NULL 이거나 합니다 [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex) 메서드가 지원 되지 않습니다 이거나 [바탕 화면 창 관리자](/windows/desktop/dwm/dwm-overview) (DWM) 컴퍼지션을 사용 되지 않습니다.  
   
 ### <a name="see-also"></a>참고 항목  
  [계층 구조 차트](../../mfc/hierarchy-chart.md)   
- [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449)   
- [파트 및 상태](http://msdn.microsoft.com/library/windows/desktop/bb773210)   
+ [COLORREF](/windows/desktop/gdi/colorref)   
+ [파트 및 상태](https://msdn.microsoft.com/library/windows/desktop/bb773210)   
  [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext)   
- [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317)   
- [바탕 화면 창 관리자](http://msdn.microsoft.com/library/windows/desktop/aa969540)   
- [DWM 컴퍼지션 설정 및 제어](http://msdn.microsoft.com/library/windows/desktop/aa969538)
+ [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex)   
+ [바탕 화면 창 관리자](/windows/desktop/dwm/dwm-overview)   
+ [DWM 컴퍼지션 설정 및 제어](/windows/desktop/dwm/composition-ovw)
 
 ## <a name="enableaccessibilitysupport"></a> Afx_global_data:: enableaccessibilitysupport
 Microsoft Active Accessibility 지원을 사용하거나 사용하지 않도록 설정합니다.  
@@ -323,19 +323,19 @@ COLORREF GetColor(int nColor);
   
 ### <a name="parameters"></a>매개 변수   
  [in] *nColor*  
- 색을 검색 하는 사용자 인터페이스 요소를 지정 하는 값입니다. 유효한 값 목록을 참조 하세요. 합니다 *nIndex* 의 매개 변수를 [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371) 메서드.  
+ 색을 검색 하는 사용자 인터페이스 요소를 지정 하는 값입니다. 유효한 값 목록을 참조 하세요. 합니다 *nIndex* 의 매개 변수를 [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371) 메서드.  
   
 ### <a name="return-value"></a>반환 값  
  지정 된 사용자 인터페이스 요소의 RGB 색 값입니다. 자세한 내용은 설명 부분을 참조하세요.  
   
 ### <a name="remarks"></a>설명  
- 경우는 *nColor* 매개 변수가 범위를 벗어나면 반환 값은 0입니다. 0이 유효한 RGB 값도 이기 때문에 시스템 색이 현재 운영 체제에서 지원 되는지 여부를 확인 하려면이 메서드를 사용할 수 없습니다. 대신 합니다 [GetSysColorBrush](http://msdn.microsoft.com/library/windows/desktop/dd144927) 색이 지원 되지 않는 경우 NULL을 반환 하는 메서드.  
+ 경우는 *nColor* 매개 변수가 범위를 벗어나면 반환 값은 0입니다. 0이 유효한 RGB 값도 이기 때문에 시스템 색이 현재 운영 체제에서 지원 되는지 여부를 확인 하려면이 메서드를 사용할 수 없습니다. 대신 합니다 [GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) 색이 지원 되지 않는 경우 NULL을 반환 하는 메서드.  
   
 ### <a name="see-also"></a>참고 항목  
 
- [GetSysColor 함수](http://msdn.microsoft.com/library/windows/desktop/ms724371)   
- [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449)   
- [GetSysColorBrush](http://msdn.microsoft.com/library/windows/desktop/dd144927)
+ [GetSysColor 함수](https://msdn.microsoft.com/library/windows/desktop/ms724371)   
+ [COLORREF](/windows/desktop/gdi/colorref)   
+ [GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush)
 
 ## <a name="getdirect2dfactory"></a> AFX_GLOBAL_DATA::GetDirect2dFactory
  글로벌 데이터에 저장 된 ID2D1Factory 인터페이스에 대 한 포인터를 반환 합니다. 인터페이스가 초기화되지 않은 경우 기본 매개 변수와 함께 인터페이스가 생성됩니다.  
@@ -369,14 +369,14 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
   
 ### <a name="parameters"></a>매개 변수   
  [out에서] *정보*  
- A [NONCLIENTMETRICS](http://msdn.microsoft.com/library/windows/desktop/ff729175) 최소화 되지 않은 창의 비클라이언트 영역을 사용 하 여 관련 확장성 메트릭을 포함 하는 구조입니다.  
+ A [NONCLIENTMETRICS](https://msdn.microsoft.com/library/windows/desktop/ff729175) 최소화 되지 않은 창의 비클라이언트 영역을 사용 하 여 관련 확장성 메트릭을 포함 하는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
  
   
 ### <a name="see-also"></a>참고 항목   
- [NONCLIENTMETRICS 구조](http://msdn.microsoft.com/library/windows/desktop/ff729175)
+ [NONCLIENTMETRICS 구조](https://msdn.microsoft.com/library/windows/desktop/ff729175)
 
 ## <a name="gettextheight"></a> Afx_global_data:: gettextheight
  현재 글꼴에서 텍스트 문자의 높이를 검색합니다.  
@@ -483,7 +483,7 @@ BOOL IsD2DInitialized() const;
  D2D 초기화 되었습니다. 그렇지 않으면 FALSE입니다.  
   
 ## <a name="isdwmcompositionenabled"></a> Afx_global_data:: isdwmcompositionenabled
-Windows [DwmIsCompositionEnabled](http://msdn.microsoft.com/library/windows/desktop/aa969518) 메서드를 호출하는 간단한 방법을 제공합니다.  
+Windows를 호출 하는 간단한 방법을 제공 [DwmIsCompositionEnabled](/windows/desktop/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) 메서드.  
   
   
 ```  
@@ -491,11 +491,11 @@ BOOL IsDwmCompositionEnabled();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- TRUE 이면 [바탕 화면 창 관리자](http://msdn.microsoft.com/library/windows/desktop/aa969540) (DWM) 컴퍼지션이 되 고, 그렇지 않으면 FALSE입니다.  
+ TRUE 이면 [바탕 화면 창 관리자](/windows/desktop/dwm/dwm-overview) (DWM) 컴퍼지션이 되 고, 그렇지 않으면 FALSE입니다.  
   
 ### <a name="see-also"></a>참고 항목    
- [바탕 화면 창 관리자](http://msdn.microsoft.com/library/windows/desktop/aa969540)   
- [DWM 컴퍼지션 설정 및 제어](http://msdn.microsoft.com/library/windows/desktop/aa969538)
+ [바탕 화면 창 관리자](/windows/desktop/dwm/dwm-overview)   
+ [DWM 컴퍼지션 설정 및 제어](/windows/desktop/dwm/composition-ovw)
 
 ## <a name="ishighcontrastmode"></a> Afx_global_data:: ishighcontrastmode
  이미지가 현재 고대비로 표시되는지 여부를 나타냅니다.    
@@ -649,7 +649,7 @@ CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
  등록 창 클래스의 이름입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 이 메서드가 성공 하면 등록 된 클래스의 정규화 된 이름 그렇지 않은 경우는 [리소스 예외](http://msdn.microsoft.com/library/ddd99292-819b-4fa4-8371-b1954ed5856d)합니다.  
+ 이 메서드가 성공 하면 등록 된 클래스의 정규화 된 이름 그렇지 않은 경우는 [리소스 예외](https://msdn.microsoft.com/library/ddd99292-819b-4fa4-8371-b1954ed5856d)합니다.  
   
 ### <a name="remarks"></a>설명  
  반환 값은 콜론으로 구분 된 목록을 합니다 *lpszClassNamePrefix* 매개 변수 문자열 및 현재 응용 프로그램 인스턴스의; 핸들의 16 진수 텍스트 표현을 화살표는 응용 프로그램 커서 식별자가 IDC_ARROW; 커서 및 배경 브러시입니다. MFC 창 클래스 등록에 대 한 자세한 내용은 참조 하십시오 [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass)합니다.  
@@ -670,10 +670,10 @@ BOOL Resume();
  이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다. 디버그 모드에서이 메서드는이 메서드가 성공한 경우 어설션 합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 프레임 워크를 받을 때 호출 되는 [WM_POWERBROADCAST](http://msdn.microsoft.com/library/windows/desktop/aa373247) 메시지입니다.  
+ 이 메서드는 프레임 워크를 받을 때 호출 되는 [WM_POWERBROADCAST](/windows/desktop/Power/wm-powerbroadcast) 메시지입니다.  
   
 ## <a name="setlayeredattrib"></a> Afx_global_data:: setlayeredattrib
-Windows [SetLayeredWindowAttributes](http://msdn.microsoft.com/library/windows/desktop/ms633540) 메서드를 호출하는 간단한 방법을 제공합니다.  
+Windows를 호출 하는 간단한 방법을 제공 [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540) 메서드.  
   
   
 ```  
@@ -689,7 +689,7 @@ BOOL SetLayeredAttrib(
  계층화된 창을 처리합니다.  
   
  [in] *crKey*  
- 투명색 키를 [바탕 화면 창 관리자](http://msdn.microsoft.com/library/windows/desktop/aa969540) 계층화 된 창을 구성를 사용 하 여 합니다.  
+ 투명색 키를 [바탕 화면 창 관리자](/windows/desktop/dwm/dwm-overview) 계층화 된 창을 구성를 사용 하 여 합니다.  
   
  [in] *bAlpha*  
  계층화된 창의 불투명도를 기술하는 데 사용되는 알파 값입니다.  
@@ -701,8 +701,8 @@ BOOL SetLayeredAttrib(
  이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.   
  
 ### <a name="see-also"></a>참고 항목   
- [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449)   
- [SetLayeredWindowAttributes](http://msdn.microsoft.com/library/windows/desktop/ms633540)
+ [COLORREF](/windows/desktop/gdi/colorref)   
+ [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540)
 
 ## <a name="setmenufont"></a> Afx_global_data:: setmenufont
 지정된 논리 글꼴을 만듭니다.  

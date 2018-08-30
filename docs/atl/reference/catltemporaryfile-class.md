@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3492f71ab119bb272576fe8c67bc6d05163785fb
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 6eee23ebbfc25d76ca255505322f609973f79f57
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883146"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222874"
 ---
 # <a name="catltemporaryfile-class"></a>CAtlTemporaryFile 클래스
 이 클래스는 만들고 임시 파일을 사용 하기 위한 메서드를 제공합니다.  
@@ -91,7 +91,7 @@ class CAtlTemporaryFile
 ## <a name="requirements"></a>요구 사항  
  **헤더:** atlfile.h  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  예를 참조 하세요 [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile)합니다.  
   
 ##  <a name="catltemporaryfile"></a>  CAtlTemporaryFile::CAtlTemporaryFile  
@@ -104,7 +104,7 @@ CAtlTemporaryFile() throw();
 ### <a name="remarks"></a>설명  
  파일을 실제로 열려 있지는 호출 될 때까지 [CAtlTemporaryFile::Create](#create)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#73](../../atl/codesnippet/cpp/catltemporaryfile-class_1.cpp)]  
   
 ##  <a name="dtor"></a>  CAtlTemporaryFile:: ~ CAtlTemporaryFile  
@@ -131,7 +131,7 @@ HRESULT Close(LPCTSTR szNewName = NULL) throw();
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile)합니다.  
   
 ##  <a name="create"></a>  CAtlTemporaryFile::Create  
@@ -143,15 +143,15 @@ HRESULT Create(LPCTSTR pszDir = NULL, DWORD dwDesiredAccess = GENERIC_WRITE) thr
   
 ### <a name="parameters"></a>매개 변수  
  *pszDir*  
- 임시 파일의 경로입니다. 이 NULL 이면 [GetTempPath](http://msdn.microsoft.com/library/windows/desktop/aa364992) 경로 할당 하도록 호출 됩니다.  
+ 임시 파일의 경로입니다. 이 NULL 이면 [GetTempPath](/windows/desktop/api/fileapi/nf-fileapi-gettemppatha) 경로 할당 하도록 호출 됩니다.  
   
  *dwDesiredAccess*  
- 원하는 액세스 합니다. 참조 *dwDesiredAccess* 에 [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) Windows SDK에 있습니다.  
+ 원하는 액세스 합니다. 참조 *dwDesiredAccess* 에 [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea) Windows SDK에 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile)합니다.  
   
 ##  <a name="flush"></a>  CAtlTemporaryFile::Flush  
@@ -167,7 +167,7 @@ HRESULT Flush() throw();
 ### <a name="remarks"></a>설명  
  비슷합니다 [CAtlTemporaryFile::HandsOff](#handsoff)를 제외 하 고 파일을 닫을 수 없습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile)합니다.  
   
 ##  <a name="getposition"></a>  CAtlTemporaryFile::GetPosition  
@@ -280,7 +280,7 @@ HRESULT Read(
 ### <a name="remarks"></a>설명  
  호출 [CAtlFile::Read](../../atl/reference/catlfile-class.md#read)합니다. 파일 포인터의 위치를 변경 하려면 호출 [CAtlTemporaryFile::Seek](#seek)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile)합니다.  
   
 ##  <a name="seek"></a>  CAtlTemporaryFile::Seek  
@@ -303,7 +303,7 @@ HRESULT Seek(LONGLONG nOffset, DWORD dwFrom = FILE_CURRENT) throw();
 ### <a name="remarks"></a>설명  
  호출 [CAtlFile::Seek](../../atl/reference/catlfile-class.md#seek)합니다. 현재 파일 포인터 위치를 가져오려면, 호출 [CAtlTemporaryFile::GetPosition](#getposition)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile)합니다.  
   
 ##  <a name="setsize"></a>  CAtlTemporaryFile::SetSize  
@@ -334,7 +334,7 @@ LPCTSTR TempFileName() throw();
  파일 이름을 가리키는 LPCTSTR을 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
- 파일 이름에서 생성 됩니다 [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile) 에 대 한 호출을 사용 하 여 합니다 [GetTempFile](http://msdn.microsoft.com/library/windows/desktop/aa364991)Windows SDK 함수입니다. 파일 확장명은 항상 "TFR" 임시 파일입니다.  
+ 파일 이름에서 생성 됩니다 [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile) 에 대 한 호출을 사용 하 여 합니다 [GetTempFile](/windows/desktop/api/fileapi/nf-fileapi-gettempfilenamea)Windows SDK 함수입니다. 파일 확장명은 항상 "TFR" 임시 파일입니다.  
   
 ##  <a name="unlockrange"></a>  CAtlTemporaryFile::UnlockRange  
  임시 파일의 영역을 잠금 해제 하려면이 메서드를 호출 합니다.  
@@ -382,7 +382,7 @@ HRESULT Write(
 ### <a name="remarks"></a>설명  
  호출 [CAtlFile::Write](../../atl/reference/catlfile-class.md#write)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile)합니다.  
   
 ## <a name="see-also"></a>참고 항목  

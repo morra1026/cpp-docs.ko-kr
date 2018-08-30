@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc5d51bfeb18b51be5a54c51046e3cd420fb1cb8
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 9f522635c170af784b5bd9f2bb7011fd51e345b3
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852109"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211610"
 ---
 # <a name="coleupdatedialog-class"></a>COleUpdateDialog 클래스
 OLE 편집 링크 대화 상자의 특별한 경우에 사용됩니다. 예를 들어, 문서에서 기존에 연결되거나 포함된 개체만 업데이트할 경우에 사용해야 합니다.  
@@ -114,7 +114,7 @@ virtual INT_PTR DoModal();
   
 - 현재 문서에서 연결 되거나 포함 된 항목이 없는 경우 IDCANCEL 업데이트 해야 합니다.  
   
-- IDABORT 오류가 발생 합니다. IDABORT 반환 되 면 호출 된 [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) 발생 한 오류 유형에 대 한 자세한 정보를 보려면 멤버 함수입니다. 목록을 가능한 오류에 대 한 참조를 [OleUIEditLinks](http://msdn.microsoft.com/library/windows/desktop/ms679703) Windows SDK에는 함수입니다.  
+- IDABORT 오류가 발생 합니다. IDABORT 반환 되 면 호출 된 [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) 발생 한 오류 유형에 대 한 자세한 정보를 보려면 멤버 함수입니다. 목록을 가능한 오류에 대 한 참조를 [OleUIEditLinks](/windows/desktop/api/oledlg/nf-oledlg-oleuieditlinksa) Windows SDK에는 함수입니다.  
   
 ### <a name="remarks"></a>설명  
  사용자가 취소 단추를 선택 하지 않는 한 모든 링크 및/또는 포함 업데이트 됩니다.  

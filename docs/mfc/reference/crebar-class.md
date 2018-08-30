@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1acc2d5918bea040e1f004e8a1d11ceee3146f89
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 61601baca7a91d76f473281184c335cc5277f815
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848621"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201856"
 ---
 # <a name="crebar-class"></a>CReBar 클래스
 rebar 컨트롤의 레이아웃, 지속성 및 상태 정보를 제공하는 컨트롤 막대입니다.  
@@ -105,7 +105,7 @@ BOOL AddBar(
  에 대 한 포인터를 `CBitmap` rebar 백그라운드에 표시 되는 개체입니다. 기본적으로 NULL입니다.  
   
  *dwStyle*  
- Rebar에 적용할 스타일을 포함 하 DWORD. 참조를 `fStyle` 함수는 Win32 구조의 설명 [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) 대역 외 스타일의 목록은 합니다.  
+ Rebar에 적용할 스타일을 포함 하 DWORD. 참조를 `fStyle` 함수는 Win32 구조의 설명 [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) 대역 외 스타일의 목록은 합니다.  
   
  *clrFore*  
  Rebar의 전경색을 나타내는 COLORREF 값입니다.  
@@ -116,7 +116,7 @@ BOOL AddBar(
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CReBarCtrl#1](../../mfc/reference/codesnippet/cpp/crebar-class_1.cpp)]  
   
 ##  <a name="create"></a>  CReBar::Create  
@@ -135,7 +135,7 @@ virtual BOOL Create(
  에 대 한 포인터를 `CWnd` 인 Windows 창 상태 표시줄의 부모인 개체입니다. 프레임 창 일반적으로입니다.  
   
  *dwCtrlStyle*  
- Rebar 컨트롤 스타일입니다. 기본적으로 RBS_BANDBORDERS 좁은 rebar 컨트롤 내에서 인접 한 밴드를 별도 줄을 표시 합니다. 참조 [Rebar 컨트롤 스타일](http://msdn.microsoft.com/library/windows/desktop/bb774377) 스타일의 목록은 Windows SDK에 있습니다.  
+ Rebar 컨트롤 스타일입니다. 기본적으로 RBS_BANDBORDERS 좁은 rebar 컨트롤 내에서 인접 한 밴드를 별도 줄을 표시 합니다. 참조 [Rebar 컨트롤 스타일](/windows/desktop/Controls/rebar-control-styles) 스타일의 목록은 Windows SDK에 있습니다.  
   
  *dwStyle*  
  Rebar 창 스타일입니다.  
@@ -146,7 +146,7 @@ virtual BOOL Create(
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CReBar::AddBar](#addbar)합니다.  
   
 ##  <a name="getrebarctrl"></a>  CReBar::GetReBarCtrl  
@@ -164,7 +164,7 @@ CReBarCtrl& GetReBarCtrl() const;
   
  사용에 대 한 자세한 내용은 `CReBarCtrl` 참조에 크기 조정 막대를 사용자 지정 하려면 [CReBarCtrl 사용 하 여](../../mfc/using-crebarctrl.md)입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CReBarCtrl#2](../../mfc/reference/codesnippet/cpp/crebar-class_2.cpp)]  
   
 ## <a name="see-also"></a>참고 항목  

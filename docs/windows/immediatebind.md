@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f2d5e0fac0d9ab89ef14a3bfafc78fe1c1138673
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: dd546f6d3eb3b2eae60b4bbc8c8fa9b0b4ed00f1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602009"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201027"
 ---
 # <a name="immediatebind"></a>immediatebind
 
@@ -36,9 +36,9 @@ ms.locfileid: "42602009"
 
 ## <a name="remarks"></a>설명
 
-합니다 **immediatebind** c + + 특성에 동일한 기능을 합니다 [immediatebind](http://msdn.microsoft.com/library/windows/desktop/aa367045) MIDL 특성입니다.
+합니다 **immediatebind** c + + 특성에 동일한 기능을 합니다 [immediatebind](/windows/desktop/Midl/immediatebind) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 참조 [bindable](../windows/bindable.md) 사용 하는 방법의 예 **immediatebind**합니다.
 

@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d2ac698466709931259f1df28d6c75aa38b30f2
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 656500e69f97481c90cdbea41b8c640f470e7b1c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850708"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210019"
 ---
 # <a name="coleobjectfactory-class"></a>COleObjectFactory 클래스
 서버, 자동화 개체, 문서와 같은 OLE 개체를 만드는 OLE 클래스 팩터리를 구현합니다.  
@@ -157,7 +157,7 @@ COleObjectFactory(
   
 - `afxRegFreeThreading` ThreadingModel 레지스트리의 스레딩 모델을 설정 합니다. 무료 =.  
   
-     두 플래그를 조합할 수 있습니다 `afxRegApartmentThreading` 및 `afxRegFreeThreading` ThreadingModel 설정 = Both입니다. 참조 [InprocServer32](http://msdn.microsoft.com/library/windows/desktop/ms682390) 스레딩 모델 등록 대 한 자세한 내용은 Windows SDK에 있습니다.  
+     두 플래그를 조합할 수 있습니다 `afxRegApartmentThreading` 및 `afxRegFreeThreading` ThreadingModel 설정 = Both입니다. 참조 [InprocServer32](/windows/desktop/com/inprocserver32) 스레딩 모델 등록 대 한 자세한 내용은 Windows SDK에 있습니다.  
   
  *lpszProgID*  
  "Microsoft Excel입니다."와 같은 구두 프로그램 식별자를 포함 하는 문자열에 대 한 포인터  
@@ -165,7 +165,7 @@ COleObjectFactory(
 ### <a name="remarks"></a>설명  
  그러나 개체를 사용 하려면 등록 해야 합니다.  
   
- 자세한 내용은 [CLSID 키](http://msdn.microsoft.com/library/windows/desktop/ms691424) Windows SDK에 있습니다.  
+ 자세한 내용은 [CLSID 키](/windows/desktop/com/clsid-key-hklm) Windows SDK에 있습니다.  
   
 ##  <a name="getclassid"></a>  COleObjectFactory::GetClassID  
  이 팩터리를 나타내는 OLE 클래스 ID에 대 한 참조를 반환 합니다.  
@@ -178,7 +178,7 @@ REFCLSID GetClassID() const;
  이 팩터리가 OLE 클래스 ID에 대 한 참조를 나타냅니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [CLSID 키](http://msdn.microsoft.com/library/windows/desktop/ms691424) Windows SDK에 있습니다.  
+ 자세한 내용은 [CLSID 키](/windows/desktop/com/clsid-key-hklm) Windows SDK에 있습니다.  
   
 ##  <a name="getlicensekey"></a>  COleObjectFactory::GetLicenseKey  
  컨트롤의 DLL에서 고유한 라이선스 키를 요청 하 고 가리키는 BSTR에 저장 *pbstrKey*합니다.  

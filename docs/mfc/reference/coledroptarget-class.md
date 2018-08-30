@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d54a22bd215a80f3e7cab3770a4ba12cd7baffb
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 218b03ed1e1c69dd7b365e9c2526aef5b1145aed
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027444"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218491"
 ---
 # <a name="coledroptarget-class"></a>COleDropTarget 클래스
 창과 OLE 라이브러리 사이의 통신 메커니즘을 제공합니다.  
@@ -138,7 +138,7 @@ virtual DROPEFFECT OnDragEnter(
 ### <a name="remarks"></a>설명  
  놓기 작업을 창에서 수행할 수 있도록이 함수를 재정의 합니다. 기본 구현 호출 [CView::OnDragEnter](../../mfc/reference/cview-class.md#ondragenter), 단순히 DROPEFFECT_NONE 기본적으로 반환 합니다.  
   
- 자세한 내용은 [IDropTarget::DragEnter](http://msdn.microsoft.com/library/windows/desktop/ms680106) Windows SDK에 있습니다.  
+ 자세한 내용은 [IDropTarget::DragEnter](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-dragenter) Windows SDK에 있습니다.  
   
 ##  <a name="ondragleave"></a>  COleDropTarget::OnDragLeave  
  커서 끌기 작업이 적용 되는 동안 창을 벗어날 때 프레임 워크에서 호출 됩니다.  
@@ -154,7 +154,7 @@ virtual void OnDragLeave(CWnd* pWnd);
 ### <a name="remarks"></a>설명  
  끌기 작업 지정된 된 기간을 벗어날 때 특별 한 동작을 원하는 경우이 함수를 재정의 합니다. 이 함수의 기본 구현이 호출 [CView::OnDragLeave](../../mfc/reference/cview-class.md#ondragleave)합니다.  
   
- 자세한 내용은 [IDropTarget::DragLeave](http://msdn.microsoft.com/library/windows/desktop/ms680110) Windows SDK에 있습니다.  
+ 자세한 내용은 [IDropTarget::DragLeave](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-dragleave) Windows SDK에 있습니다.  
   
 ##  <a name="ondragover"></a>  COleDropTarget::OnDragOver  
  커서를 창 위로 끌 때 프레임 워크에서 호출 됩니다.  
@@ -196,9 +196,9 @@ virtual DROPEFFECT OnDragOver(
 ### <a name="remarks"></a>설명  
  놓기 작업을 창에서 수행할 수 있도록이 함수를 재정의 해야 합니다. 이 함수의 기본 구현이 호출 [CView::OnDragOver](../../mfc/reference/cview-class.md#ondragover), DROPEFFECT_NONE 기본적으로 반환 합니다. 이 함수를 끌어서 놓기 작업 동안 자주 호출 했으므로 최적화 해야 최대한 많이 합니다.  
   
- 자세한 내용은 [IDropTarget::DragOver](http://msdn.microsoft.com/library/windows/desktop/ms680129) Windows SDK에 있습니다.  
+ 자세한 내용은 [IDropTarget::DragOver](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-dragover) Windows SDK에 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCOleContainer#21](../../mfc/codesnippet/cpp/coledroptarget-class_1.cpp)]  
   
 ##  <a name="ondragscroll"></a>  COleDropTarget::OnDragScroll  
@@ -275,7 +275,7 @@ Drop 작업에 대 한 사용자가 선택 하는 효과입니다. 다음 중 �
   
  기본 구현의 `COleDropTarget::OnDrop` 호출 [CView::OnDrop](../../mfc/reference/cview-class.md#ondrop), 단순히 기본적으로 FALSE 반환 합니다.  
   
- 자세한 내용은 [IDropTarget::Drop](http://msdn.microsoft.com/library/windows/desktop/ms687242) Windows SDK에 있습니다.  
+ 자세한 내용은 [IDropTarget::Drop](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-drop) Windows SDK에 있습니다.  
   
 ##  <a name="ondropex"></a>  COleDropTarget::OnDropEx  
  놓기 작업이 발생 하는 경우 프레임 워크에서 호출 됩니다.  
@@ -325,7 +325,7 @@ virtual DROPEFFECT OnDropEx(
   
  - DROPEFFECT_SCROLL 끌기 스크롤 작업을 수행 하려고 합니다. 또는 대상에서 발생 했음을 나타냅니다.  
   
- 자세한 내용은 [IDropTarget::Drop](http://msdn.microsoft.com/library/windows/desktop/ms687242) Windows SDK에 있습니다.  
+ 자세한 내용은 [IDropTarget::Drop](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-drop) Windows SDK에 있습니다.  
   
 ##  <a name="register"></a>  COleDropTarget::Register  
  창 OLE Dll 유효한 놓기 대상으로 등록 하려면이 함수를 호출 합니다.  
@@ -344,7 +344,7 @@ BOOL Register(CWnd* pWnd);
 ### <a name="remarks"></a>설명  
  허용할 놓기 작업에 대 한이 함수를 호출 해야 합니다.  
   
- 자세한 내용은 [RegisterDragDrop](http://msdn.microsoft.com/library/windows/desktop/ms678405) Windows SDK에 있습니다.  
+ 자세한 내용은 [RegisterDragDrop](/windows/desktop/api/ole2/nf-ole2-registerdragdrop) Windows SDK에 있습니다.  
   
 ##  <a name="revoke"></a>  COleDropTarget::Revoke  
  호출을 통해 놓기 대상으로 등록 된 모든 창을 제거 하기 전에이 함수를 호출 [등록](#register) 놓기 대상의 목록에서 제거 합니다.  
@@ -356,7 +356,7 @@ virtual void Revoke();
 ### <a name="remarks"></a>설명  
  이 함수를 자동으로 호출 합니다 [OnDestroy](../../mfc/reference/cwnd-class.md#ondestroy) 일반적으로 필요 없는이 함수를 명시적으로 호출 하도록 등록 된 창에 대 한 처리기입니다.  
   
- 자세한 내용은 [RevokeDragDrop](http://msdn.microsoft.com/library/windows/desktop/ms692643) Windows SDK에 있습니다.  
+ 자세한 내용은 [RevokeDragDrop](/windows/desktop/api/ole2/nf-ole2-revokedragdrop) Windows SDK에 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [MFC 샘플 HIERSVR](../../visual-cpp-samples.md)   

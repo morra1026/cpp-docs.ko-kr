@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 359a7ff75b2036960d8d8ffd40200f9175ccc21c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: c0fbc3914f10bacdd286fe89c3e82de78b726cfc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960702"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216863"
 ---
 # <a name="coledatetime-class"></a>COleDateTime 클래스
 캡슐화 된 `DATE` OLE 자동화에 사용 되는 데이터 형식입니다.  
@@ -74,7 +74,7 @@ class COleDateTime
 |----------|-----------------|  
 |[COleDateTime::Format](#format)|형식이 지정 된 문자열 표현을 생성 한 `COleDateTime` 개체입니다.|  
 |[COleDateTime::GetAsDBTIMESTAMP](#getasdbtimestamp)|시간을 얻기 위해이 메서드를 호출 합니다 `COleDateTime` 개체는 `DBTIMESTAMP` 데이터 구조입니다.|  
-|[COleDateTime::GetAsSystemTime](#getassystemtime)|시간을 얻기 위해이 메서드를 호출 합니다 `COleDateTime` 개체를 [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) 데이터 구조입니다.|  
+|[COleDateTime::GetAsSystemTime](#getassystemtime)|시간을 얻기 위해이 메서드를 호출 합니다 `COleDateTime` 개체를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 데이터 구조입니다.|  
 |[COleDateTime::GetAsUDATE](#getasudate)|시간을 얻기 위해이 메서드를 호출 합니다 `COleDateTime` 으로 `UDATE` 데이터 구조입니다.|  
 |[COleDateTime::GetCurrentTime](#getcurrenttime)|만듭니다는 `COleDateTime` 현재 (정적 멤버 함수)를 나타내는 개체입니다.|  
 |[COleDateTime::GetDay](#getday)|이 일을 반환 합니다 `COleDateTime` 개체 (1-31)을 나타냅니다.|  
@@ -168,10 +168,10 @@ bool operator>=(const COleDateTime& date) const throw();
 > [!NOTE]
 >  ATLASSERT 두 피연산자 중 하나가 유효 하지 않은 경우 발생 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#13](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_2.cpp)]  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  연산자 **>=**, **\< =** 하십시오 **>**, 및 **<**, 경우는 어설션는 `COleDateTime` 개체가 설정 된 null로 합니다.  
   
  [!code-cpp[NVC_ATLMFC_Utilities#170](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_3.cpp)]  
@@ -217,7 +217,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
  A `SYSTEMTIME` 날짜/시간 값으로 변환 되어 새 복사 구조 `COleDateTime` 개체입니다.  
   
  *filetimeSrc*  
- A `FILETIME` 날짜/시간 값으로 변환 되어 새 복사 구조 `COleDateTime` 개체입니다. `FILETIME` 협정 세계시 (UTC)를 사용 하 여 될 수 있으므로 구조의 현지 시간을 전달 하는 경우 결과 올바른 합니다. 참조 [파일 시간](http://msdn.microsoft.com/library/windows/desktop/ms724290) 자세한 내용은 Windows SDK에 있습니다.  
+ A `FILETIME` 날짜/시간 값으로 변환 되어 새 복사 구조 `COleDateTime` 개체입니다. `FILETIME` 협정 세계시 (UTC)를 사용 하 여 될 수 있으므로 구조의 현지 시간을 전달 하는 경우 결과 올바른 합니다. 참조 [파일 시간](/windows/desktop/SysInfo/file-times) 자세한 내용은 Windows SDK에 있습니다.  
   
  *nYear*, *nMonth*합니다 *발생 한 날짜*를 *n 시간*를 *nMin*, *nSec*  
  복사할 새 날짜 및 시간 값을 나타내며 `COleDateTime` 개체입니다.  
@@ -256,7 +256,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
   
 - `COleDateTime(` *systimeSrc* **)** 생성 한 `COleDateTime` 에서 개체를 `SYSTEMTIME` 값입니다.  
   
-- `COleDateTime(` `filetimeSrc` **)** 생성 된 `COleDateTime` 에서 개체를 `FILETIME` 값입니다. . `FILETIME` 협정 세계시 (UTC)를 사용 하 여 될 수 있으므로 구조의 현지 시간을 전달 하는 경우 결과 올바른 합니다. 참조 [파일 시간](http://msdn.microsoft.com/library/windows/desktop/ms724290) 자세한 내용은 Windows SDK에 있습니다.  
+- `COleDateTime(` `filetimeSrc` **)** 생성 된 `COleDateTime` 에서 개체를 `FILETIME` 값입니다. . `FILETIME` 협정 세계시 (UTC)를 사용 하 여 될 수 있으므로 구조의 현지 시간을 전달 하는 경우 결과 올바른 합니다. 참조 [파일 시간](/windows/desktop/SysInfo/file-times) 자세한 내용은 Windows SDK에 있습니다.  
   
 - `COleDateTime(` `nYear`를 `nMonth`, `nDay`, `nHour`, `nMin`를 `nSec` **)** 생성을 `COleDateTime` 개체는 지정 된 숫자 값에서입니다.  
   
@@ -264,14 +264,14 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
   
  대 한 자세한 내용은 합니다 `time_t` 참조 데이터 형식으로 [시간](../../c-runtime-library/reference/time-time32-time64.md) 함수를 *런타임 라이브러리 참조*합니다.  
   
- 자세한 내용은 참조는 [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) 및 [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 및 [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) Windows SDK에는 구조입니다.  
   
  에 대 한 범위에 대 한 자세한 내용은 `COleDateTime` 문서를 참조 하는 값을 [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)합니다.  
   
 > [!NOTE]
 >  생성자를 통해 `DBTIMESTAMP` OLEDB.h 포함 되는 경우 매개 변수는만 사용할 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#2](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_4.cpp)]  
   
 ##  <a name="format"></a>  COleDateTime::Format  
@@ -294,7 +294,7 @@ CString Format(UINT nFormatID) const;
 - VAR_DATEVALUEONLY 구문 분석 하는 동안 시간 부분을 무시 합니다.  
   
  *lcid*  
- 변환에 사용할 로캘 ID를 나타냅니다. 언어 식별자에 대 한 자세한 내용은 참조 하세요. [언어 식별자](http://msdn.microsoft.com/library/windows/desktop/dd318691)합니다.  
+ 변환에 사용할 로캘 ID를 나타냅니다. 언어 식별자에 대 한 자세한 내용은 참조 하세요. [언어 식별자](/windows/desktop/Intl/language-identifiers)합니다.  
   
  *lpszFormat*  
  유사한 문자열 서식의 `printf` 문자열 서식을 지정 합니다. 각 서식 코드를 앞에 백분율 ( `%`)에 서명, 해당 바뀝니다 `COleDateTime` 구성 요소입니다. 반환된 된 문자열에 형식 문자열에 다른 문자 변경 되지 않고 복사 됩니다. 런타임 함수를 참조 하세요 [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) 자세한 내용은 합니다. 값 및 서식 지정 코드의 의미를 `Format` 됩니다.  
@@ -327,7 +327,7 @@ CString Format(UINT nFormatID) const;
  `Format`( *nFormatID*)  
  이 폼에서와 같이 백분율 기호 (%) 뒤에 나오는 특별 한 서식 지정 코드를 포함 하는 형식 문자열을 사용 하 여 값 형식을 `printf`합니다. 서식 문자열 리소스입니다. 이 문자열 리소스의 ID 매개 변수로 전달 됩니다. 서식 지정 코드에 대 한 자세한 내용은 참조 하세요. [strftime, wcsftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) 에 *런타임 라이브러리 참조*합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#3](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_5.cpp)]  
   
 ##  <a name="getasdbtimestamp"></a>  COleDateTime::GetAsDBTIMESTAMP  
@@ -347,7 +347,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
 ### <a name="remarks"></a>설명  
  참조 된 결과 시간을 저장 *dbts* 구조입니다. 합니다 `DBTIMESTAMP` 이 함수에 의해 초기화 되는 데이터 구조를 갖습니다. 해당 `fraction` 멤버가 0으로 설정 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#4](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_6.cpp)]  
   
 ##  <a name="getassystemtime"></a>  COleDateTime::GetAsSystemTime  
@@ -359,7 +359,7 @@ bool GetAsSystemTime(SYSTEMTIME& sysTime) const throw();
   
 ### <a name="parameters"></a>매개 변수  
  *sysTime*  
- 에 대 한 참조를 [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) 에서 변환 된 날짜/시간 값을 받는 구조체는 `COleDateTime` 개체입니다.  
+ 에 대 한 참조를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 에서 변환 된 날짜/시간 값을 받는 구조체는 `COleDateTime` 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 TRUE를 반환 합니다. FALSE 경우 또는 변환에 실패 하는 경우는 `COleDateTime` 개체가 NULL 이거나 잘못 되었습니다.  
@@ -393,7 +393,7 @@ bool GetAsUDATE(UDATE& udate) const throw();
 static COleDateTime WINAPI GetCurrentTime() throw();
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#5](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_7.cpp)]  
   
 ##  <a name="getday"></a>  COleDateTime::GetDay  
@@ -425,7 +425,7 @@ int GetDay() const throw();
   
 - [GetDayOfYear](#getdayofyear)  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#6](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_8.cpp)]  
   
 ##  <a name="getdayofweek"></a>  COleDateTime::GetDayOfWeek  
@@ -457,7 +457,7 @@ int GetDayOfWeek() const throw();
   
 - [GetDayOfYear](#getdayofyear)  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#7](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_9.cpp)]  
   
 ##  <a name="getdayofyear"></a>  COleDateTime::GetDayOfYear  
@@ -489,7 +489,7 @@ int GetDayOfYear() const throw();
   
 - [GetDayOfWeek](#getdayofweek)  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#8](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_10.cpp)]  
   
 ##  <a name="gethour"></a>  COleDateTime::GetHour  
@@ -521,7 +521,7 @@ int GetHour() const throw();
   
 - [GetDayOfYear](#getdayofyear)  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#9](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_11.cpp)]  
   
 ##  <a name="getminute"></a>  COleDateTime::GetMinute  
@@ -553,7 +553,7 @@ int GetMinute() const throw();
   
 - [GetDayOfYear](#getdayofyear)  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [GetHour](#gethour)합니다.  
   
 ##  <a name="getmonth"></a>  COleDateTime::GetMonth  
@@ -585,7 +585,7 @@ int GetMonth() const throw();
   
 - [GetDayOfYear](#getdayofyear)  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [GetDay](#getday)합니다.  
   
 ##  <a name="getsecond"></a>  COleDateTime::GetSecond  
@@ -622,7 +622,7 @@ int GetSecond() const throw();
   
 - [GetDayOfYear](#getdayofyear)  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [GetHour](#gethour)합니다.  
   
 ##  <a name="getstatus"></a>  COleDateTime::GetStatus  
@@ -684,7 +684,7 @@ enum DateTimeStatus
   
  에 대 한 범위에 대 한 자세한 내용은 `COleDateTime` 문서를 참조 하는 값을 [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#10](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_12.cpp)]  
   
 ##  <a name="getyear"></a>  COleDateTime::GetYear  
@@ -718,7 +718,7 @@ int GetYear() const throw();
   
  에 대 한 범위에 대 한 자세한 내용은 `COleDateTime` 문서를 참조 하는 값을 [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [GetDay](#getday)합니다.  
   
 ##  <a name="m_dt"></a>  COleDateTime::m_dt  
@@ -772,17 +772,17 @@ COleDateTime& operator=(const UDATE& udate) throw();
   
 - **연산자 = (** `timeSrc` **)** 는 `time_t` 하거나 `__time64_t` 값이 변환 되 고이 복사 `COleDateTime` 개체입니다. 변환이 성공한 경우이 개체의 상태를로 잘못 되었습니다. 실패 하면 설정 된 경우를 잘못 됨.  
   
-- **operator = (** *systimeSrc* **)** 는 [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) 값 변환 되 고이 복사 `COleDateTime` 개체입니다. 변환이 성공한 경우이 개체의 상태를로 잘못 되었습니다. 실패 하면 설정 된 경우를 잘못 됨.  
+- **operator = (** *systimeSrc* **)** 는 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 값 변환 되 고이 복사 `COleDateTime` 개체입니다. 변환이 성공한 경우이 개체의 상태를로 잘못 되었습니다. 실패 하면 설정 된 경우를 잘못 됨.  
   
 - **operator = (** `udate` **)** 는 `UDATE` 값이 변환 되 고이 복사 `COleDateTime` 개체. 변환이 성공한 경우이 개체의 상태를로 잘못 되었습니다. 실패 하면 설정 된 경우를 잘못 됨. `UDATE` 구조 "압축 푼된" 날짜를 나타냅니다. 함수를 참조 하십시오 [VarDateFromUdate](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-vardatefromudate) 대 한 자세한 내용은 합니다.  
   
-- **operator = (** `filetimeSrc` **)** 는 [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) 값이 변환 되 고이 복사 `COleDateTime` 개체. 변환이 성공한 경우이 개체의 상태를로 잘못 되었습니다. 그렇지 않으면 설정에 잘못 된 합니다. `FILETIME` UTC 시간 구조에 전달 하면 결과를 현지 시간에서 UTC 시간 변환 됩니다 하 고 변형 시간으로 저장 됩니다 협정 세계시 (UTC)를 사용 합니다. 이 동작은 Visual c + + 6.0 및 Visual c + +.NET 2003 SP2 동일 합니다. 참조 [파일 시간](http://msdn.microsoft.com/library/windows/desktop/ms724290) 자세한 내용은 Windows SDK에 있습니다.  
+- **operator = (** `filetimeSrc` **)** 는 [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) 값이 변환 되 고이 복사 `COleDateTime` 개체. 변환이 성공한 경우이 개체의 상태를로 잘못 되었습니다. 그렇지 않으면 설정에 잘못 된 합니다. `FILETIME` UTC 시간 구조에 전달 하면 결과를 현지 시간에서 UTC 시간 변환 됩니다 하 고 변형 시간으로 저장 됩니다 협정 세계시 (UTC)를 사용 합니다. 이 동작은 Visual c + + 6.0 및 Visual c + +.NET 2003 SP2 동일 합니다. 참조 [파일 시간](/windows/desktop/SysInfo/file-times) 자세한 내용은 Windows SDK에 있습니다.  
   
  자세한 내용은 참조는 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.  
   
  대 한 자세한 내용은 합니다 `time_t` 참조 데이터 형식으로 [시간](../../c-runtime-library/reference/time-time32-time64.md) 함수를 *런타임 라이브러리 참조*합니다.  
   
- 자세한 내용은 참조는 [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) 및 [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 및 [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) Windows SDK에는 구조입니다.  
   
  에 대 한 범위에 대 한 자세한 내용은 `COleDateTime` 문서를 참조 하는 값을 [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)합니다.  
   
@@ -810,7 +810,7 @@ COleDateTimeSpan operator-(const COleDateTime& date) const throw();
   
  에 대 한 범위에 대 한 자세한 내용은 `COleDateTime` 문서를 참조 하는 값을 [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#12](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_13.cpp)]  
   
 ##  <a name="operator_add_eq_-_eq"></a>  COleDateTime::operator + =, =  
@@ -966,7 +966,7 @@ int SetDate(
   
  에 대 한 범위에 대 한 자세한 내용은 `COleDateTime` 문서를 참조 하는 값을 [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#11](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_14.cpp)]  
   
 ##  <a name="setdatetime"></a>  COleDateTime::SetDateTime  
@@ -1045,7 +1045,7 @@ int SetDateTime(
   
  에 대 한 범위에 대 한 자세한 내용은 `COleDateTime` 문서를 참조 하는 값을 [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [GetStatus](#getstatus)합니다.  
   
 ##  <a name="setstatus"></a>  COleDateTime::SetStatus  
@@ -1065,7 +1065,7 @@ void SetStatus(DateTimeStatus status) throw();
 > [!CAUTION]
 >  이 기능은 고급 프로그래밍 시나리오에 대 한 합니다. 이 함수는이 개체의 데이터를 변경 하지 않습니다. 상태를 설정 하는 데 사용 될 가장 자주 됩니다 **null** 하거나 **잘못 된**합니다. 대입 연산자 ( [연산자 =](#eq)) 및 [SetDateTime](#setdatetime) 원본 값에 따라 개체의 상태를 설정 하려면.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [GetStatus](#getstatus)합니다.  
   
 ##  <a name="settime"></a>  COleDateTime::SetTime  
@@ -1129,7 +1129,7 @@ int SetTime(
   
  에 대 한 범위에 대 한 자세한 내용은 `COleDateTime` 문서를 참조 하는 값을 [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [SetDate](#setdate)합니다.  
   
 ## <a name="see-also"></a>참고 항목  

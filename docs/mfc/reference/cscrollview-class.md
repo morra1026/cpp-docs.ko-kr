@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43ad1d1d047b9e44da27d1c9eb24dde39fd429ef
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: b1a4d3d44f7ce18486feab4096673970857a0907
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849918"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214979"
 ---
 # <a name="cscrollview-class"></a>CScrollView 클래스
 A [CView](../../mfc/reference/cview-class.md) 스크롤 기능이 있습니다.  
@@ -86,9 +86,9 @@ class CScrollView : public CView
   
 -   이 키보드, 스크롤되지 않는 마우스 또는 IntelliMouse 휠에서 메시지에 따라에서 자동으로 스크롤합니다.  
   
- 키보드에서 메시지에 따라에서 자동으로 스크롤할 WM_KEYDOWN 메시지를 추가 하 고 VK_DOWN, VK_PREV 및 호출에 대 한 테스트 [SetScrollPos](http://msdn.microsoft.com/library/windows/desktop/bb787597)합니다.  
+ 키보드에서 메시지에 따라에서 자동으로 스크롤할 WM_KEYDOWN 메시지를 추가 하 고 VK_DOWN, VK_PREV 및 호출에 대 한 테스트 [SetScrollPos](/windows/desktop/api/winuser/nf-winuser-setscrollpos)합니다.  
   
- 메시지 매핑 재정의 하 여 직접 스크롤 휠을 처리할 수 있습니다 [OnMouseWheel](../../mfc/reference/cwnd-class.md#onmousewheel) 하 고 [OnRegisteredMouseWheel](../../mfc/reference/cwnd-class.md#onregisteredmousewheel) 멤버 함수입니다. 에 않기 `CScrollView`, 이러한 멤버 함수에 대 한 권장 되는 동작을 지원 [WM_MOUSEWHEEL](http://msdn.microsoft.com/library/windows/desktop/ms645617), 휠 회전 메시지.  
+ 메시지 매핑 재정의 하 여 직접 스크롤 휠을 처리할 수 있습니다 [OnMouseWheel](../../mfc/reference/cwnd-class.md#onmousewheel) 하 고 [OnRegisteredMouseWheel](../../mfc/reference/cwnd-class.md#onregisteredmousewheel) 멤버 함수입니다. 에 않기 `CScrollView`, 이러한 멤버 함수에 대 한 권장 되는 동작을 지원 [WM_MOUSEWHEEL](/windows/desktop/inputdev/wm-mousewheel), 휠 회전 메시지.  
   
  자동 스크롤을 활용 하려면 보기에서 파생 `CScrollView` of에서 `CView`합니다. 뷰의 처음 만들어질 때, 호출 문서의 크기를 기준으로 스크롤할 수 있는 보기의 크기를 계산 하려는 경우는 `SetScrollSizes` 의 재정의에서 멤버 함수 [cview:: Oninitialupdate](../../mfc/reference/cview-class.md#oninitialupdate) 또는 [ CView::OnUpdate](../../mfc/reference/cview-class.md#onupdate)합니다. (문서 크기를 쿼리 하는 사용자 고유의 코드를 작성 해야 합니다. 예를 들어 참조 된 [Scribble 샘플](../../visual-cpp-samples.md).)  
   
@@ -171,7 +171,7 @@ void FillOutsideRect(
 ### <a name="remarks"></a>설명  
  사용 하 여 `FillOutsideRect` 스크롤 보기의 `OnEraseBkgnd` 과도 하 게 백그라운드 다시 표시 하지 않으려면 처리기 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#164](../../mfc/codesnippet/cpp/cscrollview-class_1.cpp)]  
   
 ##  <a name="getdevicescrollposition"></a>  CScrollView::GetDeviceScrollPosition  
@@ -343,7 +343,7 @@ void SetScrollSizes(
   
  MM_ISOTROPIC 또는 MM_ANISOTROPIC를 제외한 Windows 매핑 모드 중 하나를 매핑 모드를 설정 해야 합니다. 무제한 매핑 모드를 사용 하려는 경우 호출 된 `SetScaleToFitSize` 대신 멤버 함수 `SetScrollSizes`합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#168](../../mfc/codesnippet/cpp/cscrollview-class_5.cpp)]  
   
  [!code-cpp[NVC_MFCDocView#169](../../mfc/codesnippet/cpp/cscrollview-class_6.cpp)]  

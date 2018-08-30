@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6a81caaf62154d8bdcf1c357da2cc156e2da21f3
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2a01c319f8a93931539b8ba79cc9c9f554317bab
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42594405"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200171"
 ---
 # <a name="adding-files-to-an-empty-win32-applications"></a>빈 Win32 응용 프로그램에 파일 추가
 
@@ -45,4 +45,4 @@ ms.locfileid: "42594405"
 ## <a name="see-also"></a>참고 항목
 
 [빈 Windows 데스크톱 응용 프로그램 만들기](../windows/creating-an-empty-windows-desktop-application.md)  
-[응용 프로그램 배포](http://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+[응용 프로그램 배포](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)

@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d8eb030bb6827fd8df5a7f4826c4c1e4b3b47b5a
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 83ff74a460c7cb34a50d0fbdf338eccc3da27f98
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337172"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197441"
 ---
 # <a name="cinternetsession-class"></a>CInternetSession 클래스
 
@@ -174,7 +174,7 @@ CInternetSession(
 
 인터넷 연결을 열면 `CInternetSession` throw를 [AfxThrowInternetException](internet-url-parsing-globals.md#afxthrowinternetexception)합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 예를 참조 하세요 [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md)합니다.
 
@@ -186,7 +186,7 @@ CInternetSession(
 virtual void Close();
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 예를 참조 하세요 [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md)합니다.
 
@@ -237,7 +237,7 @@ DWORD_PTR GetContext() const;
 
 ## <a name="getcookie"></a>  CInternetSession::GetCookie
 
-이 멤버 함수는 Win32 함수의 동작을 구현 [InternetGetCookie](http://msdn.microsoft.com/library/windows/desktop/aa384710)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Win32 함수의 동작을 구현 [InternetGetCookie](/windows/desktop/api/wininet/nf-wininet-internetgetcookiea)Windows SDK에 설명 된 대로 합니다.
 
 ```cpp
 static BOOL GetCookie(
@@ -269,7 +269,7 @@ URL이 포함 된 문자열에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-그렇지 않은 경우 성공 하면 TRUE 또는 FALSE를 반환 합니다. 호출이 실패 하는 경우 Win32 함수 호출 [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 합니다. 다음 오류 값에는 다음이 적용 됩니다.
+그렇지 않은 경우 성공 하면 TRUE 또는 FALSE를 반환 합니다. 호출이 실패 하는 경우 Win32 함수 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 합니다. 다음 오류 값에는 다음이 적용 됩니다.
 
 - 지정된 된 URL에 대 한 없습니다 쿠키 및 모든 해당 부모는 ERROR_NO_MORE_ITEMS 있습니다.
 
@@ -350,7 +350,7 @@ FTP 서버 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
 `GetFtpConnection` FTP 서버에 연결 하 고 만들고에 대 한 포인터를 반환 합니다.는 `CFTPConnection` 개체입니다. 서버에서 특정 작업을 수행 하지는 않습니다. 읽기 또는 파일에 쓸 하려는 경우 예를 들어, 작업을 수행 해야 이러한 별도 단계로 합니다. 클래스를 참조 하세요 [CFtpConnection](../../mfc/reference/cftpconnection-class.md) 하 고 [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md) 파일을 검색 하는 방법에 대 한 정보를 열고 파일을 읽거나 파일에 쓸 수 있습니다. 문서를 참조 하세요 [WinInet을 사용 하 여 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md) 단계에서 일반적인 FTP 연결 작업을 수행 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 예를 참조 하세요 [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md)합니다.
 
@@ -476,7 +476,7 @@ virtual void OnStatusCallback(
 |INTERNET_STATUS_RESPONSE_RECEIVED|성공적으로 서버에서 응답을 받았습니다. 합니다 *lpvStatusInformation* 매개 변수는 NULL입니다.|
 |INTERNET_STATUS_CLOSING_CONNECTION|서버에 연결을 닫는 중입니다. 합니다 *lpvStatusInformation* 매개 변수는 NULL입니다.|
 |INTERNET_STATUS_CONNECTION_CLOSED|서버에 연결을 닫았습니다. 합니다 *lpvStatusInformation* 매개 변수는 NULL입니다.|
-|INTERNET_STATUS_HANDLE_CREATED|Win32 API 함수를 사용한 [InternetConnect](http://msdn.microsoft.com/library/windows/desktop/aa384363) 새 핸들을 만들었음을 나타냅니다. 이렇게 하면 응용 프로그램 호출 Win32 함수를 사용 하 고 있습니다 [InternetCloseHandle](http://msdn.microsoft.com/library/windows/desktop/aa384350) 다른 스레드에서 너무 오래 걸리면 연결 합니다. 이러한 함수에 대 한 자세한 내용은 Windows SDKfor를 참조 하세요.|
+|INTERNET_STATUS_HANDLE_CREATED|Win32 API 함수를 사용한 [InternetConnect](/windows/desktop/api/wininet/nf-wininet-internetconnecta) 새 핸들을 만들었음을 나타냅니다. 이렇게 하면 응용 프로그램 호출 Win32 함수를 사용 하 고 있습니다 [InternetCloseHandle](/windows/desktop/api/wininet/nf-wininet-internetclosehandle) 다른 스레드에서 너무 오래 걸리면 연결 합니다. 이러한 함수에 대 한 자세한 내용은 Windows SDKfor를 참조 하세요.|
 |INTERNET_STATUS_HANDLE_CLOSING|핸들 값이 종료 되었습니다.|
 
 상태 콜백 루틴을 수행 하기 전에 일부 작업을 요구 하려면이 멤버 함수를 재정의 합니다.
@@ -589,7 +589,7 @@ URL에 연결할 실제 문자열 데이터가 포함 된 문자열에 대 한 �
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [InternetSetCookie](http://msdn.microsoft.com/library/windows/desktop/aa385107)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Win32 메시지의 동작을 구현 [InternetSetCookie](/windows/desktop/api/wininet/nf-wininet-internetsetcookiea)Windows SDK에 설명 된 대로 합니다.
 
 ## <a name="setoption"></a>  CInternetSession::SetOption
 
@@ -612,7 +612,7 @@ BOOL SetOption(
 ### <a name="parameters"></a>매개 변수
 
 *dwOption*  
-인터넷 옵션 설정입니다. 참조 [옵션 플래그](http://msdn.microsoft.com/library/windows/desktop/aa385328) Windows SDKfor 가능한 옵션 목록에서에서.
+인터넷 옵션 설정입니다. 참조 [옵션 플래그](/windows/desktop/WinInet/option-flags) Windows SDKfor 가능한 옵션 목록에서에서.
 
 *lpBuffer*  
 옵션 설정을 포함 하는 버퍼입니다.
@@ -632,7 +632,7 @@ BOOL SetOption(
 
 ### <a name="return-value"></a>반환 값
 
-작업에 성공 하면 TRUE 값이 반환 됩니다. 오류가 발생 하는 경우 FALSE 값이 반환 됩니다. Win32 함수 호출이 실패 한 경우 [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.
+작업에 성공 하면 TRUE 값이 반환 됩니다. 오류가 발생 하는 경우 FALSE 값이 반환 됩니다. Win32 함수 호출이 실패 한 경우 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

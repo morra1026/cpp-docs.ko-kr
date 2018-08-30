@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45975354305323f2a3a4d4f8916b901110d91441
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 6d1e8ae445da8c69901c319665704e06895103d1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849586"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199511"
 ---
 # <a name="cprintdialogex-class"></a>CPrintDialogEx 클래스
 Windows 인쇄 속성 시트에서 제공 하는 서비스를 캡슐화 합니다.  
@@ -102,7 +102,7 @@ class CPrintDialogEx : public CCommonDialog
   
  프레임 워크의 개입 없이도 인쇄를 처리 하도록 응용 프로그램을 원하는 경우 사용할 수 있습니다는 `CPrintDialogEx` "있는 그대로" 제공 하는 생성자를 사용 하 여 클래스 또는 고유한 대화 상자 클래스에서 파생 될 수 있습니다 `CPrintDialogEx` 요구에 맞게 생성자를 작성 합니다. 두 경우 모두 이러한 대화 상자는 처럼 표준 MFC 대화 상자 클래스에서 파생 되므로 `CCommonDialog`합니다.  
   
- 사용 하는 `CPrintDialogEx` 개체를 처음 사용 하 여 개체를 만듭니다는 `CPrintDialogEx` 생성자입니다. 대화 상자 생성 되 면이 설정 하거나 모든 값을 수정할 수 있습니다 합니다 [m_pdex](#m_pdex) 대화 상자의 컨트롤의 값을 초기화 하는 구조입니다. 합니다 `m_pdex` 형식의 구조체가 [PRINTDLGEX](http://msdn.microsoft.com/library/windows/desktop/ms646844)합니다. 이 구조에 대 한 자세한 내용은 Windows SDK를 참조 하세요.  
+ 사용 하는 `CPrintDialogEx` 개체를 처음 사용 하 여 개체를 만듭니다는 `CPrintDialogEx` 생성자입니다. 대화 상자 생성 되 면이 설정 하거나 모든 값을 수정할 수 있습니다 합니다 [m_pdex](#m_pdex) 대화 상자의 컨트롤의 값을 초기화 하는 구조입니다. 합니다 `m_pdex` 형식의 구조체가 [PRINTDLGEX](/windows/desktop/api/commdlg/ns-commdlg-tagpdexa)합니다. 이 구조에 대 한 자세한 내용은 Windows SDK를 참조 하세요.  
   
  고유한 핸들을 제공 하지 않는 경우 `m_pdex` 에 대 한 합니다 `hDevMode` 및 `hDevNames` 멤버를 Windows 함수를 호출 해야 `GlobalFree` 대화 상자를 사용 하 여 완료 되 면 이러한 핸들에 대 한 합니다.  
   
@@ -147,7 +147,7 @@ CPrintDialogEx(
   
 ### <a name="parameters"></a>매개 변수  
  *dwFlags*  
- 비트 OR 연산자를 사용 하 여 결합 대화 상자에서 설정을 사용자 지정 하 여 하나 이상의 플래그입니다. 예를 들어 PD_ALLPAGES 플래그 문서의 모든 페이지의 기본 인쇄 범위를 설정합니다. 참조 된 [PRINTDLGEX](http://msdn.microsoft.com/library/windows/desktop/ms646844) 이러한 플래그에 대 한 자세한 내용은 Windows SDK에는 구조입니다.  
+ 비트 OR 연산자를 사용 하 여 결합 대화 상자에서 설정을 사용자 지정 하 여 하나 이상의 플래그입니다. 예를 들어 PD_ALLPAGES 플래그 문서의 모든 페이지의 기본 인쇄 범위를 설정합니다. 참조 된 [PRINTDLGEX](/windows/desktop/api/commdlg/ns-commdlg-tagpdexa) 이러한 플래그에 대 한 자세한 내용은 Windows SDK에는 구조입니다.  
   
  *pParentWnd*  
  대화 상자의 부모 또는 소유자 창에 대 한 포인터입니다.  
@@ -156,7 +156,7 @@ CPrintDialogEx(
  이 멤버 함수는만 개체를 생성 합니다. 사용 된 `DoModal` 멤버 함수는 대화 상자를 표시 합니다.  
   
 ##  <a name="createprinterdc"></a>  CPrintDialogEx::CreatePrinterDC  
- 프린터 장치 컨텍스트 (DC)를 만듭니다.는 [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) 하 고 [DEVNAMES](../../mfc/reference/devnames-structure.md) 구조입니다.  
+ 프린터 장치 컨텍스트 (DC)를 만듭니다.는 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 하 고 [DEVNAMES](../../mfc/reference/devnames-structure.md) 구조입니다.  
   
 ```  
 HDC CreatePrinterDC();
@@ -178,14 +178,14 @@ virtual INT_PTR DoModal();
 ```  
   
 ### <a name="return-value"></a>반환 값  
- INT_PTR 값이 실제로 HRESULT를 반환 합니다. 반환 값 섹션을 참조 하세요 [PrintDlgEx](http://msdn.microsoft.com/library/windows/desktop/ms646942) Windows SDK에 있습니다.  
+ INT_PTR 값이 실제로 HRESULT를 반환 합니다. 반환 값 섹션을 참조 하세요 [PrintDlgEx](https://msdn.microsoft.com/library/windows/desktop/ms646942) Windows SDK에 있습니다.  
   
 ### <a name="remarks"></a>설명  
  멤버를 설정 하 여 다양 한 인쇄 대화 상자 옵션을 초기화 하려는 경우는 `m_pdex` 구조를 호출 하기 전에이 작업을 수행 해야 `DoModal`, 대화 상자 개체에서 생성 된 후 있지만.  
   
  호출 후 `DoModal`, 설정 또는 사용자가 정보 입력 대화 상자에 검색할 함수 다른 멤버를 호출할 수 있습니다.  
   
- 호출할 때 PD_RETURNDC 플래그를 사용 하는 경우 `DoModal`, 프린터 DC에서 반환될지를 `hDC` 소속 [m_pdex](#m_pdex)합니다. 이 DC에 대 한 호출을 사용 하 여 해제 해야 합니다 [DeleteDC](http://msdn.microsoft.com/library/windows/desktop/dd183533) 호출자가 `CPrintDialogEx`입니다.  
+ 호출할 때 PD_RETURNDC 플래그를 사용 하는 경우 `DoModal`, 프린터 DC에서 반환될지를 `hDC` 소속 [m_pdex](#m_pdex)합니다. 이 DC에 대 한 호출을 사용 하 여 해제 해야 합니다 [DeleteDC](/windows/desktop/api/wingdi/nf-wingdi-deletedc) 호출자가 `CPrintDialogEx`입니다.  
   
 ##  <a name="getcopies"></a>  CPrintDialogEx::GetCopies  
  호출한 후이 함수를 호출 `DoModal` 요청 복사본 수를 검색할 수 있습니다.  
@@ -208,11 +208,11 @@ BOOL GetDefaults();
  TRUE 이면 성공적이 고, 그렇지 않으면 FALSE.  
   
 ### <a name="remarks"></a>설명  
- 프린터 장치 컨텍스트 (DC)를 만듭니다.는 [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) 하 고 [DEVNAMES](../../mfc/reference/devnames-structure.md) 구조입니다.  
+ 프린터 장치 컨텍스트 (DC)를 만듭니다.는 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 하 고 [DEVNAMES](../../mfc/reference/devnames-structure.md) 구조입니다.  
   
- `GetDefaults` 인쇄 속성 시트를 표시 하지 않습니다. 설정 대신 합니다 `hDevNames` 및 `hDevMode` 멤버인 [m_pdex](#m_pdex) 에 대 한 핸들을는 [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) 및 [DEVNAMES](../../mfc/reference/devnames-structure.md) 구조에 대 한 초기화 되는 시스템 기본 프린터입니다. 둘 다 `hDevNames` 하 고 `hDevMode` 는 NULL 이어야 또는 `GetDefaults` 실패 합니다.  
+ `GetDefaults` 인쇄 속성 시트를 표시 하지 않습니다. 설정 대신 합니다 `hDevNames` 및 `hDevMode` 멤버인 [m_pdex](#m_pdex) 에 대 한 핸들을는 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 및 [DEVNAMES](../../mfc/reference/devnames-structure.md) 구조에 대 한 초기화 되는 시스템 기본 프린터입니다. 둘 다 `hDevNames` 하 고 `hDevMode` 는 NULL 이어야 또는 `GetDefaults` 실패 합니다.  
   
- PD_RETURNDC 플래그가 설정 된 경우이 함수는 반환 하지 않습니다만 `hDevNames` 하 고 `hDevMode` (에 있는 `m_pdex.hDevNames` 및 `m_pdex.hDevMode`) 호출자에 게에서 프린터 DC도 반환 됩니다 `m_pdex.hDC`합니다. DC 프린터를 삭제 하는 Windows를 호출 하는 호출자의 책임이 [GlobalFree](http://msdn.microsoft.com/library/windows/desktop/aa366579) 완료 했으면 핸들에 대해 함수를 `CPrintDialogEx` 개체입니다.  
+ PD_RETURNDC 플래그가 설정 된 경우이 함수는 반환 하지 않습니다만 `hDevNames` 하 고 `hDevMode` (에 있는 `m_pdex.hDevNames` 및 `m_pdex.hDevMode`) 호출자에 게에서 프린터 DC도 반환 됩니다 `m_pdex.hDC`합니다. DC 프린터를 삭제 하는 Windows를 호출 하는 호출자의 책임이 [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree) 완료 했으면 핸들에 대해 함수를 `CPrintDialogEx` 개체입니다.  
   
 ##  <a name="getdevicename"></a>  CPrintDialogEx::GetDeviceName  
  호출한 후이 함수를 호출 [DoModal](#domodal) 호출한 후 또는 현재 선택 된 프린터의 이름을 검색할 [GetDefaults](#getdefaults) 기본 프린터의 이름을 검색 합니다.  
@@ -235,7 +235,7 @@ LPDEVMODE GetDevMode() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 합니다 [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) 장치 초기화 및 인쇄 드라이버의 환경에 대 한 정보를 포함 하는 데이터 구조입니다. 이 구조는 Windows 사용 하 여 가져온 메모리가 잠금을 해제 해야 합니다 [GlobalUnlock](http://msdn.microsoft.com/library/windows/desktop/aa366595) Windows SDK에 설명 된 함수입니다.  
+ 합니다 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 장치 초기화 및 인쇄 드라이버의 환경에 대 한 정보를 포함 하는 데이터 구조입니다. 이 구조는 Windows 사용 하 여 가져온 메모리가 잠금을 해제 해야 합니다 [GlobalUnlock](/windows/desktop/api/winbase/nf-winbase-globalunlock) Windows SDK에 설명 된 함수입니다.  
   
 ##  <a name="getdrivername"></a>  CPrintDialogEx::GetDriverName  
  호출한 후이 함수를 호출 [DoModal](#domodal) 또는 [GetDefaults](#getdefaults) 시스템 정의 프린터 장치 드라이버의 이름을 검색 합니다.  
@@ -271,7 +271,7 @@ HDC GetPrinterDC() const;
  프린터 장치 컨텍스트 핸들입니다.  
   
 ### <a name="remarks"></a>설명  
- Windows를 호출 해야 합니다 [DeleteDC](http://msdn.microsoft.com/library/windows/desktop/dd183533) 함수 완료 되 면 장치 컨텍스트를 삭제 하려면 사용 합니다.  
+ Windows를 호출 해야 합니다 [DeleteDC](/windows/desktop/api/wingdi/nf-wingdi-deletedc) 함수 완료 되 면 장치 컨텍스트를 삭제 하려면 사용 합니다.  
   
 ##  <a name="m_pdex"></a>  CPrintDialogEx::m_pdex  
  대화 상자 개체의 특성을 저장 하는 멤버가 PRINTDLGEX 구조체입니다.  
@@ -281,7 +281,7 @@ PRINTDLGEX m_pdex;
 ```  
   
 ### <a name="remarks"></a>설명  
- 생성 한 후는 `CPrintDialogEx` 개체를 사용할 수 있습니다 `m_pdex` 호출 하기 전에 대화 상자의 다양 한 측면을 설정 하는 [DoModal](#domodal) 멤버 함수입니다. 대 한 자세한 내용은 합니다 `m_pdex` 구조체를 참조 하세요 [PRINTDLGEX](http://msdn.microsoft.com/library/windows/desktop/ms646844) Windows SDK에 있습니다.  
+ 생성 한 후는 `CPrintDialogEx` 개체를 사용할 수 있습니다 `m_pdex` 호출 하기 전에 대화 상자의 다양 한 측면을 설정 하는 [DoModal](#domodal) 멤버 함수입니다. 대 한 자세한 내용은 합니다 `m_pdex` 구조체를 참조 하세요 [PRINTDLGEX](/windows/desktop/api/commdlg/ns-commdlg-tagpdexa) Windows SDK에 있습니다.  
   
  수정 하는 경우는 `m_pdex` 데이터 멤버는 기본 동작을 재정의 직접.  
   
@@ -326,7 +326,7 @@ BOOL PrintRange() const;
  문서에서 페이지 범위 인쇄;만 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 지정한 페이지 범위를 확인할 수 있습니다 [m_pdex](#m_pdex) (참조 `nPageRanges`를 `nMaxPageRanges`, 및 `lpPageRanges` 에 [PRINTDLGEX](http://msdn.microsoft.com/library/windows/desktop/ms646844) Windows SDK의 구조).  
+ 지정한 페이지 범위를 확인할 수 있습니다 [m_pdex](#m_pdex) (참조 `nPageRanges`를 `nMaxPageRanges`, 및 `lpPageRanges` 에 [PRINTDLGEX](/windows/desktop/api/commdlg/ns-commdlg-tagpdexa) Windows SDK의 구조).  
   
 ##  <a name="printselection"></a>  CPrintDialogEx::PrintSelection  
  이 함수를 호출한 후 호출 `DoModal` 현재 선택한 항목만 인쇄 여부를 결정 합니다.  

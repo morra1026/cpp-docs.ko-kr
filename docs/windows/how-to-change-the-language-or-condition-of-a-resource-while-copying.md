@@ -18,18 +18,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 508655dbfeb2d06d936d2b73d5435cf04c860f4b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a4acb718d44a5abcf4413cbb7f026e4a8ea0f57b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598936"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218091"
 ---
 # <a name="how-to-change-the-language-or-condition-of-a-resource-while-copying"></a>방법: 복사할 때 리소스의 언어 또는 조건 변경
 
 리소스에서 복사하는 동안 언어 속성이나 조건 속성 또는 두 가지 모두를 변경할 수 있습니다.
 
-- 리소스의 언어는 말 그대로 리소스용 언어를 식별합니다. 이 사용 됩니다 [FindResource](http://msdn.microsoft.com/library/windows/desktop/ms648042) 를 찾고 있는 리소스를 식별 하는 데 있습니다. (그러나 언어별로 리소스에 텍스트와 관련 없는 차이점이 있을 수 있습니다. 예를 들어 액셀러레이터가 일본어 자판에서만 작동하거나 비트맵이 중국어로 지역화된 빌드에서만 적절하게 작동하는 경우가 있을 수 있습니다.)
+- 리소스의 언어는 말 그대로 리소스용 언어를 식별합니다. 이 사용 됩니다 [FindResource](/windows/desktop/api/winbase/nf-winbase-findresourcea) 를 찾고 있는 리소스를 식별 하는 데 있습니다. (그러나 언어별로 리소스에 텍스트와 관련 없는 차이점이 있을 수 있습니다. 예를 들어 액셀러레이터가 일본어 자판에서만 작동하거나 비트맵이 중국어로 지역화된 빌드에서만 적절하게 작동하는 경우가 있을 수 있습니다.)
 
 - 리소스의 조건은 리소스의 해당 특정 복사본이 사용되는 조건을 식별하는 정의된 기호입니다.
 

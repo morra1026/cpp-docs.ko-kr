@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 509395daef16e06c915190a80dc1b9c1c5e6494f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: bad61c157926fd417467afaa2d97d0db517430f6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598051"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201558"
 ---
 # <a name="dbsource"></a>db_source
 
@@ -61,9 +61,9 @@ ms.locfileid: "42598051"
 
 컴파일러는 클래스 이름을 소비자 특성 공급자가이 특성 클래스에 적용 될 때 \_ *YourClassName*접근자를 여기서 *YourClassName* 제공한 이름인는 클래스 및 컴파일러 라는 클래스를 만들 수도 됩니다 *YourClassName*에서 파생 되는 \_ *YourClassName*접근자입니다.  클래스 뷰에 두 클래스 모두 표시됩니다.
 
-응용 프로그램에서 사용 되는이 특성의 예로, 샘플을 참조 하세요 [AtlAgent](http://msdn.microsoft.com/52bef5da-c1a0-4223-b4e6-9e464b6db409) 하 고 [MultiRead](http://msdn.microsoft.com/5a2a915a-77dc-492f-94b2-1b809995dd5e)합니다.
+응용 프로그램에서 사용 되는이 특성의 예로, 샘플을 참조 하세요 [AtlAgent](https://github.com/Microsoft/VCSamples) 하 고 [MultiRead](https://github.com/Microsoft/VCSamples)합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 샘플에서는 호출 **db_source** 데이터 원본에 대 한 연결을 만들려면 클래스에 `ds` Northwind 데이터베이스를 사용 합니다. `ds` 내부적으로 사용할 수 있는 데이터 원본에 대 한 핸들을 `CMyCommand` 클래스입니다.
 

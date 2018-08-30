@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 177f3110b2bc782093a91ee9dfaa560843791b5c
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 2050a444ca228554cfbb3b6bba2693c55e53c4a2
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42572507"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217552"
 ---
 # <a name="rowset-object-interfaces"></a>행 집합 개체 인터페이스
 다음 표에서 행 집합 개체에 대 한 OLE DB에서 정의 된 필수 및 선택적 인터페이스를 보여 줍니다.  
@@ -39,7 +39,7 @@ ms.locfileid: "42572507"
 |[IChapteredRowset](/previous-versions/windows/desktop/ms718180\(v=vs.85\))|Optional|아니요|  
 |[IColumnsInfo2](/previous-versions/windows/desktop/ms712953\(v=vs.85\))|Optional|아니요|  
 |[IColumnsRowset](/previous-versions/windows/desktop/ms722657\(v=vs.85\))|Optional|아니요|  
-|[IConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms683857)|Optional|예 (ATL)|  
+|[IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)|Optional|예 (ATL)|  
 |[IDBAsynchStatus](/previous-versions/windows/desktop/ms709832\(v=vs.85\))|Optional|아니요|  
 |[IGetRow](/previous-versions/windows/desktop/ms718047\(v=vs.85\))|Optional|아니요|  
 |[IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\))|Optional|예|  

@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee4a9d3156a4d5efecd74406b92a1a7bcec48d1f
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 4ceba9da99585cb9a88b5fa7fa43d10c9fe02836
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849148"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218801"
 ---
 # <a name="coleipframewnd-class"></a>COleIPFrameWnd 클래스
 응용 프로그램의 내부 편집 창의 기준입니다.  
@@ -80,7 +80,7 @@ COleIPFrameWnd();
 ```  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [OLEINPLACEFRAMEINFO](http://msdn.microsoft.com/library/windows/desktop/ms693737) Windows SDK에 있습니다.  
+ 자세한 내용은 [OLEINPLACEFRAMEINFO](/windows/desktop/api/oleidl/ns-oleidl-tagoifi) Windows SDK에 있습니다.  
   
 ##  <a name="oncreatecontrolbars"></a>  COleIPFrameWnd::OnCreateControlBars  
  프레임 워크 호출을 `OnCreateControlBars` 항목이 내부 편집을 위해 활성화 될 때 작동 합니다.  

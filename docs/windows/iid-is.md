@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c0743a34b39a29843bf4a99c8d6f234c1c67a05b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 597d4c2e6fa9904906c2971c3c442a9f26779834
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605147"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215080"
 ---
 # <a name="iidis"></a>iid_is
 
@@ -43,9 +43,9 @@ ms.locfileid: "42605147"
 
 ## <a name="remarks"></a>설명
 
-합니다 **iid_is** c + + 특성에 동일한 기능을 합니다 [iid_is](http://msdn.microsoft.com/library/windows/desktop/aa367044) MIDL 특성입니다.
+합니다 **iid_is** c + + 특성에 동일한 기능을 합니다 [iid_is](/windows/desktop/Midl/iid-is) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드의 사용을 보여 줍니다 **iid_is**:
 

@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: adad70bfa069a43382c06f60dea53bc2e53ff187
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8b90e1f40a4de3331dfb712d8dd0f113df5e9f9e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606114"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203754"
 ---
 # <a name="array-and-writeonlyarray-ccx"></a>Array 및 WriteOnlyArray(C++/CX)
 일반 C 스타일 배열을 자유롭게 사용할 수 있습니다 또는 [std:: array](../standard-library/array-class-stl.md) C + + /CX 프로그램 (하지만 [std:: vector](../standard-library/vector-class.md) 는 종종 것이 좋습니다), 메타 데이터에 게시 된 모든 api에서 C 스타일 배열로 변환 해야 하지만 또는 벡터에 [platform:: array](../cppcx/platform-array-class.md) 또는 [platform:: writeonlyarray](../cppcx/platform-writeonlyarray-class.md) 사용 방법에 따라 형식입니다. [Platform::Array](../cppcx/platform-array-class.md) 형식은 [std::vector](../standard-library/vector-class.md)만큼 효율적이지도 않고 강력하지도 않으므로 배열 요소에 대한 많은 작업을 수행하는 내부 코드에서는 사용하지 않아야 합니다.  
@@ -82,12 +82,12 @@ ms.locfileid: "42606114"
 ## <a name="use-arrayreference-to-avoid-copying-data"></a>ArrayReference를 사용하여 데이터 복사 방지  
  데이터가 ABI 전반에서 [Platform::Array](../cppcx/platform-array-class.md)로 전달되고 효율성을 위해 C 스타일 배열에서 해당 데이터를 처리하려는 시나리오에서는 [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) 를 사용하여 추가 복사 작업을 방지할 수 있습니다. [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) 를 `Platform::Array`를 사용하는 매개 변수에 대한 인수로 전달하는 경우 `ArrayReference` 는 지정된 C 스타일 배열에 직접 데이터를 저장합니다. `ArrayReference` 에는 소스 데이터에 대한 잠금이 없으므로 호출이 완료되기 전에 다른 스레드에서 해당 데이터가 수정되거나 삭제되는 경우 결과가 정의되지 않습니다.  
   
- 다음 코드 조각은 [DataReader](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.datareader.aspx) 작업의 결과를 `Platform::Array` (일반 패턴)에 복사한 다음 `ArrayReference` 를 대신 사용하여 C 스타일 배열에 직접 데이터를 복사하는 방법을 보여 줍니다.  
+ 다음 코드 조각은의 결과 복사 하는 방법을 보여 줍니다를 [DataReader](https://msdn.microsoft.com/library/windows/apps/windows.storage.streams.datareader.aspx) 작업을 `Platform::Array` (일반 패턴)에 및 대체 방법 다음 `ArrayReference` C 스타일 배열에 직접 데이터를 복사 하려면:  
   
  [!code-cpp[cx_arrays#07](../cppcx/codesnippet/CPP/js-array/class1.h#07)]  
   
 ## <a name="avoid-exposing-an-array-as-a-property"></a>속성으로 배열 노출 방지  
- 일반적으로 ref 클래스에서는 `Platform::Array` 형식을 속성으로 노출하지 않아야 합니다. 클라이언트 코드가 단일 요소에만 액세스하려고 하는 경우에도 전체 배열이 반환되기 때문입니다. public ref 클래스에서 시퀀스 컨테이너를 속성으로 노출해야 하는 경우 [Windows::Foundation::IVector](http://msdn.microsoft.com/library/windows/apps/br206631.aspx) 를 선택하는 것이 더 낫습니다. 메타데이터에 게시되지 않는 전용 또는 내부 API에서는 [std::vector](../standard-library/vector-class.md)와 같은 표준 C++ 컨테이너를 사용하는 것이 좋습니다.  
+ 일반적으로 ref 클래스에서는 `Platform::Array` 형식을 속성으로 노출하지 않아야 합니다. 클라이언트 코드가 단일 요소에만 액세스하려고 하는 경우에도 전체 배열이 반환되기 때문입니다. 시퀀스 컨테이너를 public ref 클래스에서 속성으로 노출 해야 할 때 [Windows::Foundation::IVector](https://msdn.microsoft.com/library/windows/apps/br206631.aspx) 는 것이 좋습니다. 메타데이터에 게시되지 않는 전용 또는 내부 API에서는 [std::vector](../standard-library/vector-class.md)와 같은 표준 C++ 컨테이너를 사용하는 것이 좋습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [형식 시스템](../cppcx/type-system-c-cx.md)   

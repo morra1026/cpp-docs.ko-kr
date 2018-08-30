@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 09b9e008b586b1a312770d7cdfc43dc500932158
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: da198a6a807413846fdc5b45552bb74252f8acc2
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611447"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221371"
 ---
 # <a name="threading-and-marshaling-ccx"></a>스레딩 및 마샬링(C++/CX)
 대부분의 경우에 표준 c + + 개체와 같은 Windows 런타임 클래스의 인스턴스는 모든 스레드에서 액세스할 수 있습니다. 이러한 클래스를 "agile"이라고 합니다. 그러나 소수의 Windows와 함께 제공 되는 Windows 런타임 클래스는 agile, 및 표준 c + + 개체 보다는 COM 개체 처럼 더 사용 해야 합니다. agile이 아닌 클래스를 사용하기 위해 COM 전문가일 필요는 없지만 클래스의 스레딩 모델과 마샬링 동작을 고려해야 합니다. 이 문서에서는 agile이 아닌 클래스의 인스턴스를 사용해야 하는 드문 경우에 대한 배경 정보와 지침을 제공합니다.  
@@ -100,7 +100,7 @@ ref class MyOptions
  Visual c + +에서 "None"의 마샬링 동작이 있는-in-proc Windows 런타임 클래스에 대 한 참조를 만들 때 컴파일러가 경고 C4451 있지만 사용을 고려해 야 제안 하지 않습니다 `Platform::Agile<T>`합니다.  컴파일러는 이러한 경고 이외에 다른 지원을 제공할 수 없으므로 클래스를 올바르게 사용하고 코드가 STA 구성 요소를 사용자 인터페이스 스레드에서만 호출하고, MTA 구성 요소를 백그라운드 스레드에서만 호출하도록 하는 것은 사용자의 책임입니다.  
   
 ## <a name="authoring-agile-windows-runtime-components"></a>Agile Windows 런타임 구성 요소 제작  
- C + ref 클래스를 정의 하는 경우 +는 기본적으로 agile CX,-즉,에 `ThreadingModel`= Both 및 `MarshallingType`= Agile 합니다.  Windows Runtime c + + 템플릿 라이브러리를 사용 하는 경우 가능 클래스 agile에서 파생 시켜 `FtmBase`를 사용 하는 `FreeThreadedMarshaller`합니다.  `ThreadingModel`=Both 또는 `ThreadingModel`=MTA가 있는 클래스를 작성하는 경우 클래스가 스레드로부터 안전한지 확인하세요. 자세한 내용은 [개체 만들기 및 사용(WRL)](http://msdn.microsoft.com/en-us/d5e42216-e888-4f1f-865a-b5ccd0def73e)을 참조하세요.  
+ C + ref 클래스를 정의 하는 경우 +는 기본적으로 agile CX,-즉,에 `ThreadingModel`= Both 및 `MarshallingType`= Agile 합니다.  Windows Runtime c + + 템플릿 라이브러리를 사용 하는 경우 가능 클래스 agile에서 파생 시켜 `FtmBase`를 사용 하는 `FreeThreadedMarshaller`합니다.  `ThreadingModel`=Both 또는 `ThreadingModel`=MTA가 있는 클래스를 작성하는 경우 클래스가 스레드로부터 안전한지 확인하세요. 자세한 내용은 [개체 만들기 및 사용 (WRL)](https://msdn.microsoft.com/d5e42216-e888-4f1f-865a-b5ccd0def73e)합니다.  
   
  사용자는 ref 클래스의 스레딩 모델 및 마샬링 동작을 수정할 수 있습니다. 그러나 클래스를 agile이 아닌 것으로 렌더링하는 변경 작업을 수행하는 경우 이러한 변경 사항과 관련된 영향을 알고 있어야 합니다.  
   
@@ -127,5 +127,5 @@ public ref class MySTAClass
  스레딩 및 마샬링 정보를 제 3 자 Windows 런타임 구성 요소에 필요한 구성 요소에 대 한 앱 매니페스트 등록 정보에 지정 됩니다. 확인 하는 모든 Windows 런타임 구성 요소 agile 하는 것이 좋습니다. 이렇게 하면 클라이언트 코드가 응용 프로그램의 모든 스레드에서 구성 요소를 호출할 수 있고 마샬링이 없는 직접 호출이므로 이러한 호출의 성능이 개선됩니다. 이와 같은 방식으로 클래스를 작성하면 클라이언트 코드가 `Platform::Agile<T>` 로 클래스를 사용할 필요가 없습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [ThreadingModel](http://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.threadingmodel.aspx)   
- [MarshallingBehavior](http://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.marshalingbehaviorattribute.aspx)
+ [ThreadingModel](https://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.threadingmodel.aspx)   
+ [MarshallingBehavior](https://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.marshalingbehaviorattribute.aspx)

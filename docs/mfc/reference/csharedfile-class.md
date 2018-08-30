@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d570204a997def3b295e7ba0fb3b08b9a15677b
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 38267ed5755b99bd97e4c923611d297673fcc41e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853730"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215585"
 ---
 # <a name="csharedfile-class"></a>CSharedFile 클래스
 합니다 [CMemFile](../../mfc/reference/cmemfile-class.md)-공유 메모리 파일을 지 원하는 클래스를 파생된 합니다.  
@@ -56,7 +56,7 @@ class CSharedFile : public CMemFile
 ## <a name="remarks"></a>설명  
  RAM 대신 디스크에 저장 되는 점을 제외 하 고 메모리 파일 디스크 파일 처럼 동작 합니다. 메모리 파일을 빠른 임시 저장소에 대 한 원시 바이트를 전송 하기 위한 유용한 되었거나 독립 프로세스 간에 개체를 직렬화 합니다.  
   
- 다른 메모리 파일에서 공유 메모리 파일 다를 사용 하 여 해당 메모리를 할당 하는 [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) Windows 함수입니다. 합니다 `CSharedFile` 전역적으로 할당 된 메모리 블록에 데이터를 저장 하는 클래스 (사용 하 여 만든 `GlobalAlloc`), 메모리 블록에이 공유 될 수 있습니다 다른 OLE/COM 단일형 데이터 전송 작업의 경우 예를 들어, DDE, 클립보드를 사용 하 여 사용 하 여 `IDataObject`입니다.  
+ 다른 메모리 파일에서 공유 메모리 파일 다를 사용 하 여 해당 메모리를 할당 하는 [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) Windows 함수입니다. 합니다 `CSharedFile` 전역적으로 할당 된 메모리 블록에 데이터를 저장 하는 클래스 (사용 하 여 만든 `GlobalAlloc`), 메모리 블록에이 공유 될 수 있습니다 다른 OLE/COM 단일형 데이터 전송 작업의 경우 예를 들어, DDE, 클립보드를 사용 하 여 사용 하 여 `IDataObject`입니다.  
   
  `GlobalAlloc` HGLOBAL 처리에서 반환 된 포인터와 같은 메모리에 대 한 포인터 대신 반환 [malloc](../../c-runtime-library/reference/malloc.md)합니다. HGLOBAL 핸들을 특정 응용 프로그램에 필요 합니다. 예를 들어, 클립보드에 데이터를 저장 하려면 HGLOBAL 핸들을 필요 합니다.  
   
@@ -89,7 +89,7 @@ CSharedFile(
   
 ### <a name="parameters"></a>매개 변수  
  *nAllocFlags*  
- 메모리 할당 되는 방식을 나타내는 플래그입니다. 참조 [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) 올바른 플래그 값의 목록은 합니다.  
+ 메모리 할당 되는 방식을 나타내는 플래그입니다. 참조 [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) 올바른 플래그 값의 목록은 합니다.  
   
  *nGrowBytes*  
  메모리 할당 바이트에서 증가 합니다.  

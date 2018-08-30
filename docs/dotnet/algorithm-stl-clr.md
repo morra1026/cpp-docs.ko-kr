@@ -151,12 +151,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 353044389b6be308eca2fae65f21eeae4e78532a
-ms.sourcegitcommit: bad2441d1930275ff506d44759d283d94cccd1c0
+ms.openlocfilehash: 93bbc86e32d75e81c342a0a0a71b823b87df62b0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39376152"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196767"
 ---
 # <a name="algorithm-stlclr"></a>algorithm(STL/CLR)
 알고리즘을 수행 하는 STL/CLR 컨테이너 템플릿 함수를 정의 합니다.  
@@ -287,7 +287,7 @@ template<class _InIt, class _OutIt> inline
 ```  
   
 ### <a name="remarks"></a>설명  
- 이 함수는 c + + 표준 라이브러리 함수와 동일 하 게 동작 `copy`합니다. 자세한 내용은 [복사](http://msdn.microsoft.com/Library/f1fec7da-e01b-40f1-b5bd-6b81e304cae1)합니다. 
+ 이 함수는 c + + 표준 라이브러리 함수와 동일 하 게 동작 `copy`합니다. 자세한 내용은 [복사](../standard-library/algorithm-functions.md#copy)합니다. 
 
 ## <a name="copy_backward"></a> copy_backward (STL/CLR)
 소스 범위의 요소를 대상 범위에 할당하여 요소의 소스 시퀀스 전체에서 반복하고 역방향으로 새 위치를 할당합니다.  
@@ -826,7 +826,7 @@ template<class _FwdIt, class _Ty> inline
 ```  
   
 ### <a name="remarks"></a>설명  
- 이 함수는 c + + 표준 라이브러리 함수와 동일 하 게 동작 `remove`합니다. 자세한 내용은 [제거](http://msdn.microsoft.com/Library/77e2585c-441e-448d-bd1d-c893d1356ed8)합니다.  
+ 이 함수는 c + + 표준 라이브러리 함수와 동일 하 게 동작 `remove`합니다. 자세한 내용은 [제거](../standard-library/algorithm-functions.md#remove)합니다.  
 
 ## <a name="remove_copy"></a> remove_copy (STL/CLR)
 소스 범위의 요소를 대상 범위로 복사합니다. 단, 나머지 요소의 순서를 변경하거나 새 대상 범위의 끝을 반환하지 않고 지정된 값의 요소는 복사하지 않습니다.  
@@ -1149,7 +1149,7 @@ template<class _BidIt, class _Pr> inline
 ```  
   
 ### <a name="remarks"></a>설명  
- 이 함수는 c + + 표준 라이브러리 함수와 동일 하 게 동작 `swap`합니다. 자세한 내용은 [스왑](http://msdn.microsoft.com/Library/b471a2de-035e-4aff-b1c7-345d85d93972)합니다.  
+ 이 함수는 c + + 표준 라이브러리 함수와 동일 하 게 동작 `swap`합니다. 자세한 내용은 [스왑](../standard-library/algorithm-functions.md#swap)합니다.  
 
 ## <a name="swap_ranges"></a> swap_ranges (STL/CLR)
 한 범위의 요소를 크기가 동일한 다른 범위의 요소로 교환합니다.  

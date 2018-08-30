@@ -14,18 +14,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb9307b68b5d664e477f0139824ff02d00b7c134
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 447f843bcc8f07d76084d1db68890237474ce200
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462120"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222154"
 ---
 # <a name="writing-an-exception-filter"></a>예외 필터 작성
 예외 처리기의 수준으로 이동하거나 계속 실행하여 예외를 처리할 수 있습니다. 예외 처리기 코드를 사용 하 여 참인 및 예외 처리를 대신 사용할 수 있습니다 *필터* 에 문제를 정리한 다음-1을 반환 하 여 스택을 삭제 하지 않고 정상 흐름 재개 합니다.  
   
 > [!NOTE]
->  일부 예외는 계속할 수 없습니다. 하는 경우 *필터* 평가 시스템을 이러한 예외에 대 한-1로 새 예외를 발생 시킵니다. 호출 하는 경우 [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552), 예외를 계속할지 여부를 결정 합니다.  
+>  일부 예외는 계속할 수 없습니다. 하는 경우 *필터* 평가 시스템을 이러한 예외에 대 한-1로 새 예외를 발생 시킵니다. 호출 하는 경우 [RaiseException](https://msdn.microsoft.com/library/windows/desktop/ms680552), 예외를 계속할지 여부를 결정 합니다.  
   
  다음 코드에서 함수 호출을 사용 하는 예를 들어 합니다 *필터* 식:이 함수는 문제를 처리 하 고 정상적인 제어 흐름을 다시 시작 하려면-1을 반환 합니다.  
   
@@ -56,7 +56,7 @@ int Eval_Exception ( int n_except ) {
   
  함수 호출을 사용 하는 것이 좋습니다 합니다 *필터* 식 때마다 *필터* 복잡 한 것을 수행 해야 합니다. 식을 계산하면 함수가 실행됩니다. 이 경우에는 `Eval_Exception`입니다.  
   
- 사용 하 여 [GetExceptionCode](http://msdn.microsoft.com/library/windows/desktop/ms679356) 에 예외를 확인 합니다. 필터 자체 내에서 이 함수를 호출해야 합니다. `Eval_Exception` 호출할 수 없습니다 `GetExceptionCode`, 있지만 전달 된 예외 코드를 포함 해야 합니다.  
+ 사용 하 여 [GetExceptionCode](/windows/desktop/Debug/getexceptioncode) 에 예외를 확인 합니다. 필터 자체 내에서 이 함수를 호출해야 합니다. `Eval_Exception` 호출할 수 없습니다 `GetExceptionCode`, 있지만 전달 된 예외 코드를 포함 해야 합니다.  
   
  이 처리기는 예외가 정수 또는 부동 소수점 오버플로가 아닌 경우 제어를 다른 처리기에 전달합니다. 그럴 경우 처리기는 함수(`ResetVars`가 유일한 예이며, API 함수가 아님)를 호출하여 일부 전역 변수를 다시 설정합니다. *문 블록 2*, 비어 있는 경우는이 예제에서는 실행 될 수 없습니다 때문에 `Eval_Exception` EXCEPTION_EXECUTE_HANDLER (1)을 반환 하지 않습니다.  
   

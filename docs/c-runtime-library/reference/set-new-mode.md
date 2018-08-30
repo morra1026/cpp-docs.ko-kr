@@ -34,16 +34,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b914e950fd94435768c355f327d3d48a653e0d5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 78e3d346bca087a6fd855e6428e6a53779cd7355
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407147"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202518"
 ---
 # <a name="setnewmode"></a>_set_new_mode
 
-에 대 한 새 처리기 모드 설정 **malloc**합니다.
+에 대 한 새 처리기 모드를 설정 **malloc**합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -54,15 +54,15 @@ int _set_new_mode( int newhandlermode );
 ### <a name="parameters"></a>매개 변수
 
 *newhandlermode*<br/>
-에 대 한 새 처리기 모드 **malloc**; 올바른 값은 0 또는 1입니다.
+에 대 한 새 처리기 모드 **malloc**; 유효한 값은 0 또는 1입니다.
 
 ## <a name="return-value"></a>반환 값
 
-이전 처리기에 대 한 모드 집합이 반환 **malloc**합니다. 반환 값이 1 이면, 메모리를 할당 실패 시 **malloc** 새 처리기 루틴; 이전에 호출 반환 값 0 나타냅니다 하지 않았습니다. 경우는 *newhandlermode* 인수는 0 또는 1 같지 않음,-1을 반환 합니다.
+이전 처리기 모드 설정에 대 한 반환 **malloc**합니다. 반환 값이 1 이면 메모리 할당이 실패 하는 **malloc** 이전에 새 처리기 루틴;를 호출 하지 않은 경우 반환 값 0 나타냅니다. 경우는 *newhandlermode* 인수 0 또는 1 같지 않고,-1을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-C++ **_set_new_mode** 함수는 [malloc](malloc.md)에 대한 새 처리기 모드를 설정합니다. 새 처리기 모드 나타냅니다 실패 여부 **malloc** 에서 설정한 대로 새 처리기 루틴을 호출 하는 것 [_set_new_handler](set-new-handler.md)합니다. 기본적으로 **malloc** 메모리 할당 실패 시 새 처리기 루틴을 호출 하지 않습니다. 이 기본 동작을 재정의할 수 있도록, **malloc** 가 메모리 할당에 실패 **malloc** 같은 새 처리기 루틴을 호출 방식으로 **새** 연산자는 때 이와 같은 이유로 실패 합니다. 자세한 내용은 *C++ 언어 참조*의 [new](../../cpp/new-operator-cpp.md) 및 [delete](../../cpp/delete-operator-cpp.md) 연산자를 참조하세요. 기본값을 재정의하려면 다음을
+C++ **_set_new_mode** 함수는 [malloc](malloc.md)에 대한 새 처리기 모드를 설정합니다. 새 처리기 모드를 나타내는 실패 하는지를 **malloc** 에서 설정한 대로 새 처리기 루틴을 호출 하는 것 [_set_new_handler](set-new-handler.md)합니다. 기본적으로 **malloc** 메모리 할당 실패 시 새 처리기 루틴을 호출 하지 않습니다. 이 기본 동작을 재정의할 수 있도록 때 **malloc** 메모리를 할당 하지 못했습니다 **malloc** 동일한 새 처리기 루틴을 호출 방식으로 **새** 연산자는 경우 이와 같은 이유로 실패 합니다. 자세한 내용은 *C++ 언어 참조*의 [new](../../cpp/new-operator-cpp.md) 및 [delete](../../cpp/delete-operator-cpp.md) 연산자를 참조하세요. 기본값을 재정의하려면 다음을
 
 ```cpp
 _set_new_mode(1);
@@ -70,11 +70,11 @@ _set_new_mode(1);
 
 프로그램에서 초기에 호출하거나, Newmode.obj를 사용하여 연결합니다([링크 옵션](../../c-runtime-library/link-options.md) 참조).
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 경우 *newhandlermode* 으로 잘못 된 매개 변수 처리기를 호출 0 또는 1에 함수가 아닌 다른 모든 항목에 명시 된 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **_ * * * set_new_mode** -1을 반환 하 고 설정 **errno** 를 **EINVAL**합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. 하는 경우 *newhandlermode* 잘못 된 매개 변수 처리기로 호출 하는 0 또는 1 인 함수 이외의 항목에 설명 되어 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 <strong>_set_new_mode</strong> -1을 반환 하 고 설정 **errno** 에 `EINVAL`입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_set_new_mode**|\<new.h>|
 

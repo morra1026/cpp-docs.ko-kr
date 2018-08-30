@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0b05b7f9cab2cf1f4244de7b0694e2069e87e4b
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: b9fe1bcce5290d7e977dc423f146bb3a5b66d484
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42538515"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216086"
 ---
 # <a name="concurrentunorderedmultimap-class"></a>concurrent_unordered_multimap 클래스
 `concurrent_unordered_multimap` 클래스는 `std::pair<const K, _Element_type>` 형식의 다양한 길이 요소 시퀀스를 제어하는 동시성으로부터 안전한 컨테이너입니다. 시퀀스는 동시성으로부터 안전한 추가, 요소 액세스, 반복기 액세스 및 반복기 통과 작업을 사용할 수 있는 방식으로 표시됩니다.  
@@ -305,7 +305,7 @@ std::pair<const_iterator,
  검색할 키 값입니다.  
   
 ### <a name="return-value"></a>반환 값  
- A [쌍](http://msdn.microsoft.com/en-us/32e72d66-3020-4cb9-92c3-f7a5fa7998ff) 여기서 첫 번째 요소를 시작 하는 반복기 이며 두 번째 요소 범위의 끝에 대 한 반복기입니다.  
+ A [쌍](https://msdn.microsoft.com/32e72d66-3020-4cb9-92c3-f7a5fa7998ff) 여기서 첫 번째 요소를 시작 하는 반복기 이며 두 번째 요소 범위의 끝에 대 한 반복기입니다.  
   
 ### <a name="remarks"></a>설명  
  동시 삽입이 발생할 시작 반복기와 끝 반복기를 삽입할 추가 키에 대 한 것 같습니다.  

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90e0af6a1b11b114e56e6c1d87cb293ab83dd768
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: 1057d8992f6554d4d5fbbfd93b383e2ddd9dab53
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131191"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211639"
 ---
 # <a name="multithreading-creating-worker-threads-in-mfc"></a>MFC에서 다중 스레딩: 작업자 스레드를 만들기
 작업자 스레드가 사용자 응용 프로그램을 사용 하 여 계속 되도록 기다릴 필요가 없습니다 백그라운드 작업 처리에 주로 사용 됩니다. 다시 계산 또는 백그라운드 인쇄 등의 작업은 작업자 스레드의 좋은 예입니다. 이 항목에서는 작업자 스레드를 만드는 데 필요한 단계를 자세히 설명 합니다. 다음과 같은 내용을 다룹니다.  
@@ -46,13 +46,13 @@ ms.locfileid: "43131191"
   
 - 제어 함수에 전달할 매개 변수입니다.  
   
-- (선택 사항) 스레드의 원하는 우선 순위입니다. 기본값은 보통 우선 순위입니다. 사용 가능한 우선 순위 수준에 대 한 자세한 내용은 참조 하세요. [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) Windows SDK에 있습니다.  
+- (선택 사항) 스레드의 원하는 우선 순위입니다. 기본값은 보통 우선 순위입니다. 사용 가능한 우선 순위 수준에 대 한 자세한 내용은 참조 하세요. [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) Windows SDK에 있습니다.  
   
 - (선택 사항) 스레드의 원하는 스택 크기입니다. 기본값은 만드는 스레드와 스택의 동일한 크기가 있습니다.  
   
 - (선택 사항) CREATE_SUSPENDED 스레드를 일시 중단 된 상태로 만들 수 하려는 경우. 기본값은 0 또는 스레드를 정상적으로 시작 합니다.  
   
-- (선택 사항) 원하는 보안 특성입니다. 기본값은 부모 스레드와 동일한 액세스 합니다. 이 보안 정보를 형식에 대 한 자세한 내용은 참조 [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK에 있습니다.  
+- (선택 사항) 원하는 보안 특성입니다. 기본값은 부모 스레드와 동일한 액세스 합니다. 이 보안 정보를 형식에 대 한 자세한 내용은 참조 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK에 있습니다.  
   
 `AfxBeginThread` 만들고 초기화는 `CWinThread` 개체를 시작 하며 나중에 참조할 수 있도록 주소를 반환 합니다. 검사가 모든 개체가 제대로 할당 해제 생성 부분이 실패 했는지를 전체 프로시저에서 수행 됩니다.  
   

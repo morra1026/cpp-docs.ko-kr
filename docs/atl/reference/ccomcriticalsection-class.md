@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5926f92ae636a13c1e5241792790151ee48ceddc
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: b5957d55ae75723331e35984b9ab3c8e34c4fa78
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884872"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204960"
 ---
 # <a name="ccomcriticalsection-class"></a>CComCriticalSection 클래스
 이 클래스는 가져오기 및 임계 영역 개체의 소유권을 해제 하기 위한 메서드를 제공 합니다.  
@@ -84,7 +84,7 @@ CComCriticalSection() throw();
  설정 된 [m_sec](#m_sec) NULL 데이터 멤버입니다.  
   
 ##  <a name="init"></a>  CComCriticalSection::Init  
- Win32 함수 호출 [InitializeCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms683472)에 포함 된 임계 영역 개체를 초기화 하는 합니다 [m_sec](#m_sec) 데이터 멤버입니다.  
+ Win32 함수 호출 [InitializeCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsection)에 포함 된 임계 영역 개체를 초기화 하는 합니다 [m_sec](#m_sec) 데이터 멤버입니다.  
   
 ```
 HRESULT Init() throw();
@@ -94,7 +94,7 @@ HRESULT Init() throw();
  성공 하면 E_OUTOFMEMORY 또는 실패 시 E_FAIL S_OK를 반환합니다.  
   
 ##  <a name="lock"></a>  CComCriticalSection::Lock  
- Win32 함수를 호출 [EnterCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms682608)에 대기 스레드가 있는 임계 영역 개체의 소유권을 가져올 수 있습니다 때까지 합니다 [m_sec](#m_sec) 데이터 멤버.  
+ Win32 함수를 호출 [EnterCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-entercriticalsection)에 대기 스레드가 있는 임계 영역 개체의 소유권을 가져올 수 있습니다 때까지 합니다 [m_sec](#m_sec) 데이터 멤버.  
   
 ```
 HRESULT Lock() throw();
@@ -114,7 +114,7 @@ CRITICAL_SECTION m_sec;
 ```  
   
 ##  <a name="term"></a>  CComCriticalSection::Term  
- Win32 함수를 호출 [DeleteCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms682552)에 포함 된 임계 영역 개체에서 사용 하는 모든 리소스를 해제 합니다 [m_sec](#m_sec) 데이터 멤버입니다.  
+ Win32 함수를 호출 [DeleteCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-deletecriticalsection)에 포함 된 임계 영역 개체에서 사용 하는 모든 리소스를 해제 합니다 [m_sec](#m_sec) 데이터 멤버입니다.  
   
 ```
 HRESULT Term() throw();
@@ -127,7 +127,7 @@ HRESULT Term() throw();
  한 번 `Term` 가 호출 된 중요 한 섹션 동기화에 더 이상 사용 될 수 없습니다.  
   
 ##  <a name="unlock"></a>  CComCriticalSection::Unlock  
- Win32 함수를 호출 [LeaveCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms684169)에 포함 된 임계 영역 개체의 소유권을 해제 하는 [m_sec](#m_sec) 데이터 멤버입니다.  
+ Win32 함수를 호출 [LeaveCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-leavecriticalsection)에 포함 된 임계 영역 개체의 소유권을 해제 하는 [m_sec](#m_sec) 데이터 멤버입니다.  
   
 ```
 HRESULT Unlock() throw();

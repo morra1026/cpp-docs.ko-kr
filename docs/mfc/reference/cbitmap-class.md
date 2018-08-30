@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dce8ac623337d6b1b1dafbe242a9d13979b81a01
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 4a0c6b9a9f01746788a01b6528a7508db141089e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337018"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195854"
 ---
 # <a name="cbitmap-class"></a>CBitmap 클래스
 Windows GDI(그래픽 장치 인터페이스) 비트맵을 캡슐화하고 비트맵을 조작하는 멤버 함수를 제공합니다.  
@@ -174,7 +174,7 @@ BOOL CreateBitmapIndirect(LPBITMAP lpBitmap);
 ### <a name="remarks"></a>설명  
  디스플레이 장치에 대 한 비트맵을 직접 선택할 수 없지만, 선택할 수 있습니다 메모리 장치 컨텍스트에 대 한 현재 비트맵을 사용 하 여 [cdc:: selectobject](../../mfc/reference/cdc-class.md#selectobject) 를사용하여모든호환되는장치컨텍스트에복사할[Cdc:: bitblt](../../mfc/reference/cdc-class.md#bitblt) 나 [CDC::StretchBlt](../../mfc/reference/cdc-class.md#stretchblt) 함수입니다. (합니다 [CDC::PatBlt](../../mfc/reference/cdc-class.md#patblt) 함수 디스플레이 장치 컨텍스트를 직접 현재 브러시에 대 한 비트맵을 복사할 수 있습니다.)  
   
- 경우는 `BITMAP` 가리키는 구조는 *lpBitmap* 매개 변수를 사용 하 여 채워진는 `GetObject` 함수 비트맵의 비트를 지정 하지 않으면 및 비트맵 초기화 되지 않았습니다. 비트맵을 초기화 하려면 응용 프로그램 함수를 사용할 수와 같은 [cdc:: bitblt](../../mfc/reference/cdc-class.md#bitblt) 하거나 [SetDIBits](http://msdn.microsoft.com/library/windows/desktop/dd162973) 의 첫 번째 매개 변수로 식별 된 비트맵 비트를 복사할 `CGdiObject::GetObject` 만든 비트맵 `CreateBitmapIndirect`.  
+ 경우는 `BITMAP` 가리키는 구조는 *lpBitmap* 매개 변수를 사용 하 여 채워진는 `GetObject` 함수 비트맵의 비트를 지정 하지 않으면 및 비트맵 초기화 되지 않았습니다. 비트맵을 초기화 하려면 응용 프로그램 함수를 사용할 수와 같은 [cdc:: bitblt](../../mfc/reference/cdc-class.md#bitblt) 하거나 [SetDIBits](/windows/desktop/api/wingdi/nf-wingdi-setdibits) 의 첫 번째 매개 변수로 식별 된 비트맵 비트를 복사할 `CGdiObject::GetObject` 만든 비트맵 `CreateBitmapIndirect`.  
   
  사용을 완료 하면 합니다 `CBitmap` 개체를 사용 하 여 만든 `CreateBitmapIndirect` 함수를 먼저 장치 컨텍스트에서 비트맵을 선택한 다음 삭제를 `CBitmap` 개체입니다.  
   
@@ -374,7 +374,7 @@ BOOL LoadMappedBitmap(
 ### <a name="remarks"></a>설명  
  기본적으로 `LoadMappedBitmap` 단추 문자 모양에서 일반적으로 사용 되는 색에 매핑됩니다.  
   
- 매핑된 비트맵을 만드는 방법에 대 한 자세한 내용은 Windows 함수를 참조 [CreateMappedBitmap](http://go.microsoft.com/fwlink/p/?linkid=230562) 하며 [COLORMAP](http://msdn.microsoft.com/library/windows/desktop/bb760448) Windows SDK에는 구조입니다.  
+ 매핑된 비트맵을 만드는 방법에 대 한 자세한 내용은 Windows 함수를 참조 [CreateMappedBitmap](http://go.microsoft.com/fwlink/p/?linkid=230562) 하며 [COLORMAP](/windows/desktop/api/commctrl/ns-commctrl-_colormap) Windows SDK에는 구조입니다.  
   
 ##  <a name="loadoembitmap"></a>  CBitmap::LoadOEMBitmap  
  Windows에서 사용 하는 미리 정의 된 비트맵을 로드 합니다.  
@@ -428,7 +428,7 @@ operator HBITMAP() const;
 ### <a name="remarks"></a>설명  
  이 연산자는 캐스팅 연산자를 직접 사용을 지는 `HBITMAP` 개체입니다.  
   
- 그래픽 개체를 사용 하는 방법에 대 한 자세한 내용은 참조 하십시오 [그래픽 개체](http://msdn.microsoft.com/library/windows/desktop/dd144962) Windows SDK에 있습니다.  
+ 그래픽 개체를 사용 하는 방법에 대 한 자세한 내용은 참조 하십시오 [그래픽 개체](/windows/desktop/gdi/graphic-objects) Windows SDK에 있습니다.  
   
 ##  <a name="setbitmapbits"></a>  CBitmap::SetBitmapBits  
  비트맵의 비트를 제공한 비트 값으로 설정 *lpBits*합니다.  

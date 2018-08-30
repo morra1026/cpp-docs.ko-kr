@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a10594391b0f3be490608f7dfa006b0c32aa2e0
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: acc43bc4175f42282014e94426717527143dc059
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609282"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197058"
 ---
 # <a name="integritycheck-require-signature-check"></a>/INTEGRITYCHECK(시그니처 확인 필요)
 로드 시 이진 이미지의 디지털 서명을 확인 해야 합니다는 나타냅니다.  
@@ -47,5 +47,5 @@ ms.locfileid: "42609282"
  [링커 옵션 설정](../../build/reference/setting-linker-options.md)   
  [링커 옵션](../../build/reference/linker-options.md)   
  [강제 무결성 서명의 PE (이식 가능) 파일](http://social.technet.microsoft.com/wiki/contents/articles/255.forced-integrity-signing-of-portable-executable-pe-files.aspx)   
- [커널 모드 코드 서명 연습](http://msdn.microsoft.com/windows/hardware/gg487328.aspx)   
- [Windows 7 및 Windows Server 2008의 AppInit Dll](http://msdn.microsoft.com/windows/hardware/gg463040.aspx)
+ [커널 모드 코드 서명 연습](https://msdn.microsoft.com/windows/hardware/gg487328.aspx)   
+ [Windows 7 및 Windows Server 2008의 AppInit Dll](https://msdn.microsoft.com/windows/hardware/gg463040.aspx)

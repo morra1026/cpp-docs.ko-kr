@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f271bff7c9516b92961131f424c1c77be29f644c
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 97bba578e2759d335c4ad51e541ef3fc336aa888
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601097"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205307"
 ---
 # <a name="optional-c"></a>optional(C++)
 
@@ -36,9 +36,9 @@ ms.locfileid: "42601097"
 
 ## <a name="remarks"></a>설명
 
-합니다 **선택적** c + + 특성에 동일한 기능을 합니다 [선택적](http://msdn.microsoft.com/library/windows/desktop/aa367132) MIDL 특성입니다.
+합니다 **선택적** c + + 특성에 동일한 기능을 합니다 [선택적](/windows/desktop/Midl/optional) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에서는 어떻게 **선택적** 사용 될 수 있습니다.
 

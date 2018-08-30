@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8e45320c1dd0a3358d19bf3bd0b83a56a841723
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: b4d5dcf640e46bfb3a0ac6e9b29dbaff36f4b868
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027052"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204409"
 ---
 # <a name="underflowerror-class"></a>underflow_error 클래스
 
@@ -43,7 +43,7 @@ public:
 
 [what](../standard-library/exception-class.md)에서 반환된 값은 **message**`.`[data](../standard-library/basic-string-class.md#data)의 복사본입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // underflow_error.cpp
@@ -77,6 +77,6 @@ Type: class std::underflow_error
 
 ## <a name="see-also"></a>참고자료
 
-[\<stdexcept > 멤버](http://msdn.microsoft.com/7b6b0a73-916e-44aa-9a3f-f5b6b3ce98e6)<br/>
+[\<stdexcept > 멤버](https://msdn.microsoft.com/7b6b0a73-916e-44aa-9a3f-f5b6b3ce98e6)<br/>
 [runtime_error 클래스](../standard-library/runtime-error-class.md)<br/>
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

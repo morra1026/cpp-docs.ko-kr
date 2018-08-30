@@ -38,12 +38,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0521d09f4f96c73c20022d88621671564e7ada78
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3294730f8f1cc835af49ee003d8f81830d64c9a6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965528"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198304"
 ---
 # <a name="valarray-class"></a>valarray 클래스
 
@@ -131,9 +131,11 @@ valarray<Type> apply(Type _Func(constType&)) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*_Func(Type)* 피연산자 valarray의 각 요소에 적용할 함수 개체입니다.
+*_Func(Type)*<br/>
+ 피연산자 valarray의 각 요소에 적용할 함수 개체입니다.
 
-*_Func(const Type&)* 피연산자 valarray의 각 요소에 적용할 const의 함수 개체입니다.
+*_Func(const Type&)*<br/>
+ 피연산자 valarray의 각 요소에 적용할 const의 함수 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -141,9 +143,9 @@ valarray<Type> apply(Type _Func(constType&)) const;
 
 ### <a name="remarks"></a>설명
 
-구성원 함수는 길이가 [size](#size)인 [valarray](../standard-library/valarray-class.md)**\<Type>** 클래스의 개체를 반환합니다. 각 개체의 요소 `I`는 **func**(( **\*this**)[ `I`])입니다.
+클래스의 개체를 반환 하는 멤버 함수 [valarray](../standard-library/valarray-class.md)**\<유형 >**, 길이의 [크기](#size), 각 요소가 *있습니까*는 `_Func((*this)[I])`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_apply.cpp
@@ -215,7 +217,7 @@ valarray<Type> cshift(int count) const;
 
 값이 음수 *개수* 주기적으로 오른쪽 요소 이동 *개수* 배치 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_cshift.cpp
@@ -304,7 +306,7 @@ Type max() const;
 
 멤버 함수를 적용 하 여 값을 비교 **연산자\<**  하거나 **연산자 >** 클래스의 요소 쌍 간에 `Type`, 연산자를 제공 해야 합니다 요소 `Type`.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_max.cpp
@@ -356,7 +358,7 @@ Type min() const;
 
 멤버 함수를 적용 하 여 값을 비교 **연산자\<**  하거나 **연산자 >** 클래스의 요소 쌍 간에 `Type`, 연산자를 제공 해야 합니다 요소 `Type`.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_min.cpp
@@ -410,7 +412,7 @@ valarray<bool> operator!() const;
 
 이기도 비트 **되지**[valarray:: operator ~](#op_dtor) 의 이진 표현 내에서 개별 비트 수준을 부정 하는 **char** 고 **int**  valarray의 요소입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_lognot.cpp
@@ -468,7 +470,7 @@ valarray<Type>& operator%=(const Type& right);
 
 해당 요소가 피연산자 valarray의 요소 전체 나누기에서 나머지 valarray에서 *오른쪽*
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_class_op_rem.cpp
@@ -539,7 +541,7 @@ valarray<Type>& operator&=(const Type& right);
 
 논리적으로 같은 진리표를 포함 하는 비트 AND `AND` 하지만 개별 비트 수준에서 데이터 형식에 적용 됩니다. 비트를 지정 된 *b*1 및 *b*2 *b*1 `AND` *b*2 **true** 양쪽 비트가 모두 true 이면 **false** 하나 이상이 false 인 경우.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_class_op_bitand.cpp
@@ -608,7 +610,7 @@ valarray<Type>& operator>>=(const Type& right);
 
 부호 있는 숫자의 부호는 유지됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_class_op_rs.cpp
@@ -677,7 +679,7 @@ valarray<Type>& operator<<=(const Type& right);
 
 부호 있는 숫자의 부호는 유지됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_class_op_ls.cpp
@@ -743,7 +745,7 @@ valarray<Type>& operator*=(const Type& right);
 
 요소가 피연산자 valarray의 요소 전체 곱 인 valarray 및 *오른쪽*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_emult.cpp
@@ -801,7 +803,7 @@ valarray<Type> operator+() const;
 
 해당 요소가 피연산자 배열 요소에 +가 적용된 valarray
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_eplus.cpp
@@ -859,7 +861,7 @@ valarray<Type>& operator+=(const Type& right);
 
 요소가 피연산자 valarray의 요소 전체 합 인 valarray 및 *오른쪽*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_eadd.cpp
@@ -917,7 +919,7 @@ valarray<Type> operator-() const;
 
 해당 요소가 피연산자 배열 요소에 -가 적용된 valarray
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_eminus.cpp
@@ -975,7 +977,7 @@ valarray<Type>& operator-=(const Type& right);
 
 요소가 피연산자 valarray의 요소 전체 차 인 valarray 및 *오른쪽*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_esub.cpp
@@ -1040,7 +1042,7 @@ valarray<Type>& operator/=(const Type& right);
 
 해당 요소가 피연산자 valarray의 요소 전체 몫인 valarray로 나눈 *오른쪽*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_ediv.cpp
@@ -1142,7 +1144,7 @@ valarray<Type>& operator=(const indirect_array<Type>& _Indarray);
 
 제어되는 시퀀스의 길이가 변경되면 대개 결과가 정의되지 않습니다. 그러나 이 구현에서는 단순히 제어되는 시퀀스의 요소에 대한 참조나 포인터만 무효화됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_assign.cpp
@@ -1247,11 +1249,11 @@ valarray<Type> operator[](const valarray<size_t>& _Indarray) const;
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자는 요소에 의해 제어 되는 순서를 선택 하는 여러 방법을 제공 하도록 오버 로드 *\****이**합니다. 첫 번째 5개 연산자 그룹은 [operator=](#op_eq) 및 기타 할당 연산자의 다양한 오버로드와 함께 작동하여 제어되는 시퀀스의 선택적 교체(조각화)를 허용합니다. 이 경우 선택한 요소가 있어야 합니다.
+멤버 연산자는 요소에 의해 제어 되는 순서를 선택 하는 여러 방법을 제공 하도록 오버 로드  <strong>\*이</strong>합니다. 첫 번째 5개 연산자 그룹은 [operator=](#op_eq) 및 기타 할당 연산자의 다양한 오버로드와 함께 작동하여 제어되는 시퀀스의 선택적 교체(조각화)를 허용합니다. 이 경우 선택한 요소가 있어야 합니다.
 
 1 또는 2로 정의된 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 사용하여 컴파일한 경우 valarray 범위를 벗어난 요소에 액세스하면 런타임 오류가 발생합니다.  자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 연산자를 선언하고 사용하는 방법의 예제는 [slice::slice](../standard-library/slice-class.md#slice) 및 [gslice::gslice](../standard-library/gslice-class.md#gslice)의 예제를 참조하세요.
 
@@ -1278,7 +1280,7 @@ valarray<Type>& operator|=(const Type& right);
 
 **XOR**로 지칭되는 배타적 논리 OR의 의미 체계에서는 *e*1 및 *e*2 요소가 지정되는 경우 *e*1 **XOR** *e*2는 요소 중 정확히 하나가 true이면 **true**이고 두 요소가 모두 false이거나 true이면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_exor.cpp
@@ -1353,7 +1355,7 @@ valarray<Type>& operator|=(const Type& right);
 
 비트 `OR`은 논리적 `OR`과 같은 진리표를 포함하지만 개별 비트 수준에서 데이터 형식에 적용됩니다. *b*1 및 *b*2가 지정되는 경우 *b*1 `OR` *b*2는 비트 중 하나 이상이 true이면 **true**이고 두 비트가 모두 false이면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_class_op_bitor.cpp
@@ -1424,7 +1426,7 @@ valarray<Type> operator~() const;
 
 비트 `NOT`은 논리적 `NOT`과 같은 진리표를 포함하지만 개별 비트 수준에서 데이터 형식에 적용됩니다. *b*를 지정하는 경우 ~ *b*는 *b*가 false이면 true이고 *b*가 true이면 false입니다. 논리적 **NOT**[operator!](#op_not)는 요소 수준에서 적용되어 0이 아닌 모든 값을 **true**로 계산하며, 결과는 부울 값의 valarray입니다. 비트 `NOToperator~`, 반면에 비트 연산의 결과 따라 1 이나 0이 아닌 값의 valarray 발생할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_bitnot.cpp
@@ -1527,7 +1529,7 @@ void resize(
 
 제어된 시퀀스의 요소에 대한 모든 포인터 또는 참조가 무효화됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서는 valarray::resize 멤버 함수의 사용을 보여 줍니다.
 
@@ -1599,7 +1601,7 @@ valarray<Type> shift(int count) const;
 
 값이 음수 *개수* 요소가 오른쪽으로 이동 *개수* 장소, 0이 채워집니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_shift.cpp
@@ -1662,7 +1664,7 @@ size_t size() const;
 
 피연산자 valarray에 있는 요소 수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서는 valarray:: size 멤버 함수의 사용을 보여 줍니다.
 
@@ -1743,7 +1745,7 @@ Type sum() const;
 
 길이가 1 보다 큰 경우 멤버 함수 추가 값 합계에 적용 하 여 `operator+=` 클래스의 요소 쌍 간에 `Type`, 형식 요소에 대해 제공 해야 따라서 어떤 운영자 `Type`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_sum.cpp
@@ -1877,7 +1879,7 @@ valarray(
 
 마지막 생성자도 그 앞의 생성자와 마찬가지이지만 [Rvalue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 사용합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_ctor.cpp
@@ -1939,7 +1941,7 @@ typedef Type value_type;
 
 이 형식은 템플릿 매개 변수 `Type`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_value_type.cpp

@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0519373a46e1c25feda7a3130b420c565a96eece
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: c52518bc2588188ea2990ddb3be1f7d79dd461d8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339545"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211899"
 ---
 # <a name="chtmleditview-class"></a>CHtmlEditView 클래스
 MFC의 문서/뷰 아키텍처 컨텍스트 내에서 WebBrowser 편집 플랫폼의 기능을 제공합니다.  
@@ -110,7 +110,7 @@ virtual BOOL Create(
  창 스타일 특성을 지정합니다. WS_VISIBLE 및 WS_CHILD Windows 스타일은 기본적으로 설정 됩니다.  
   
  *rect*  
- 에 대 한 참조를 [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 크기와 창의 위치를 지정 합니다. 합니다 *rectDefault* 값 크기와 새 창의 위치를 지정 하는 Windows를 허용 합니다.  
+ 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 크기와 창의 위치를 지정 합니다. 합니다 *rectDefault* 값 크기와 새 창의 위치를 지정 하는 Windows를 허용 합니다.  
   
  *pParentWnd*  
  컨트롤의 부모 창에 대 한 포인터입니다.  

@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75f9e974a2969fa817598556e3e043626a826970
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: fd9e665a83db3b824e03eb960baf54f296d15d4f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881307"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204856"
 ---
 # <a name="worker-archetype"></a>Worker 원형
 따르는 클래스를 *작업자* archetype 스레드 풀에서 대기 중인 작업 항목을 처리 하는 코드를 제공 합니다.  
@@ -31,8 +31,8 @@ ms.locfileid: "37881307"
 |메서드|설명|  
 |------------|-----------------|  
 |[Initialize](#initialize)|모든 요청에 전달 되기 전에 작업자 개체를 초기화 하기 위해 호출할 [Execute](#execute)합니다.|  
-|[실행](#execute)|작업 항목을 처리 하기 위해 호출 됩니다.|  
-|[종료](#terminate)|모든 요청에 전달 된 후 작업자 개체 초기화를 호출 [Execute](#execute)합니다.|  
+|[Execute](#execute)|작업 항목을 처리 하기 위해 호출 됩니다.|  
+|[Terminate](#terminate)|모든 요청에 전달 된 후 작업자 개체 초기화를 호출 [Execute](#execute)합니다.|  
   
 |Typedef|설명|  
 |-------------|-----------------|  
@@ -82,7 +82,7 @@ void Execute(
  작업자 클래스에 의해 인식 사용자 지정 매개 변수입니다. 또한 전달 `WorkerArchetype::Initialize` 고 `Terminate`입니다.  
   
  *pOverlapped*  
- 에 대 한 포인터를 [OVERLAPPED](http://msdn.microsoft.com/library/windows/desktop/ms684342) 구조는 작업 항목이 대기 중인 큐를 만드는 데 사용 합니다.  
+ 에 대 한 포인터를 [OVERLAPPED](/windows/desktop/api/minwinbase/ns-minwinbase-_overlapped) 구조는 작업 항목이 대기 중인 큐를 만드는 데 사용 합니다.  
   
 ## <a name="initialize"></a> WorkerArchetype::Initialize
 모든 요청에 전달 되기 전에 작업자 개체를 초기화 하기 위해 호출 `WorkerArchetype::Execute`합니다.  

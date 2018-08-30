@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b42f637c487e27b8658bcd09389eec940bb1df05
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: b4e82671973f2d841c6c0797fb73ad582ce203f1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880218"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214349"
 ---
 # <a name="string-data-management"></a>문자열 데이터 관리
 Visual c + + 문자열 데이터를 관리 하는 여러 방법을 제공 합니다.  
@@ -67,7 +67,7 @@ Visual c + + 문자열 데이터를 관리 하는 여러 방법을 제공 합니
  `CString` INT_MAX (2147483647) 자 개체 저장할 수 있습니다. TCHAR 데이터 형식을 가져오거나 안에 있는 개별 문자를 설정 하는 한 `CString` 개체입니다. 문자 배열과 달리는 `CString` 클래스에 기본 제공 메모리 할당 기능이 있습니다. 따라서 `CString` 필요에 따라 자동으로 증가 하는 개체 (즉, 증가에 대해 걱정할 필요가 없습니다를 `CString` 더 긴 문자열에 맞게 개체).  
   
 ##  <a name="_core_cstrings_and_const_char_pointers"></a> Cstring 및 const char 포인터  
- A `CString` 도 개체 리터럴 C 스타일 문자열 처럼 작동할 수 있습니다 (을 `PCXSTR`와 같습니다 **const char\***  유니코드에 포함 되지 않는 경우). 합니다 [CSimpleStringT::operator PCXSTR](../atl-mfc-shared/reference/csimplestringt-class.md#operator_pcxstr) 변환 연산자를 사용 하면 `CString` 자유롭게 함수 호출에서 문자 포인터에 대 한 대체 될 개체입니다. 합니다 **CString (LPCWSTR** `pszSrc` **)** 생성자를 대체할 문자 포인터를 사용 하면 `CString` 개체입니다.  
+ A `CString` 도 개체 리터럴 C 스타일 문자열 처럼 작동할 수 있습니다 (을 `PCXSTR`와 같습니다 **const char** <strong>\*</strong> 유니코드에 포함 되지 않는 경우). 합니다 [CSimpleStringT::operator PCXSTR](../atl-mfc-shared/reference/csimplestringt-class.md#operator_pcxstr) 변환 연산자를 사용 하면 `CString` 자유롭게 함수 호출에서 문자 포인터에 대 한 대체 될 개체입니다. 합니다 **CString (LPCWSTR** `pszSrc` **)** 생성자를 대체할 문자 포인터를 사용 하면 `CString` 개체입니다.  
   
  접기 하려고 하지 `CString` 개체입니다. 두 한다면 `CString` 포함 된 개체 `Chicago`, 예를 들어, 문자 `Chicago` 두 위치에 저장 됩니다. (이 아닐 수도 MFC의 이후 버전의 true 있으므로 사용 하지 않아야 합니다.)  
   

@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a23ed1283241d3582c0bd548553cb2fed9a47fa
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 532f1e060398b20d4714f461c2d687031756c910
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596797"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201124"
 ---
 # <a name="general-mbcs-programming-advice"></a>일반적인 MBCS 프로그래밍 팁
 다음 팁을 사용 합니다.  
@@ -41,7 +41,7 @@ ms.locfileid: "42596797"
   
 -   일부 글꼴 모든 시스템에서 사용할 수 없기 때문에 응용 프로그램에 대 한 글꼴을 선택할 때 주의 해야 하 고 합니다.  
   
--   사용 하 여 대화 상자에 대 한 글꼴을 선택할 때 [MS Shell Dlg](http://msdn.microsoft.com/library/windows/desktop/dd374112) MS Sans Serif 또는 Helvetica 대신 합니다. MS Shell Dlg는 대화 상자를 만들기 전에 시스템에서 올바른 글꼴을 사용 하 여 대체 됩니다. MS Shell Dlg 사용 하면이 글꼴을 사용 하 여 처리 하기 위해 운영 체제의 모든 변경 내용을 자동으로 사용할 수 있도록 합니다. (MFC 대체 MS Shell Dlg는 DEFAULT_GUI_FONT 또는 Windows 95, Windows 98 및 Windows NT 4의 시스템 글꼴을 사용 하 여 해당 시스템 MS Shell Dlg를 올바르게 처리 하지 않습니다.)  
+-   사용 하 여 대화 상자에 대 한 글꼴을 선택할 때 [MS Shell Dlg](/windows/desktop/Intl/using-ms-shell-dlg-and-ms-shell-dlg-2) MS Sans Serif 또는 Helvetica 대신 합니다. MS Shell Dlg는 대화 상자를 만들기 전에 시스템에서 올바른 글꼴을 사용 하 여 대체 됩니다. MS Shell Dlg 사용 하면이 글꼴을 사용 하 여 처리 하기 위해 운영 체제의 모든 변경 내용을 자동으로 사용할 수 있도록 합니다. (MFC 대체 MS Shell Dlg는 DEFAULT_GUI_FONT 또는 Windows 95, Windows 98 및 Windows NT 4의 시스템 글꼴을 사용 하 여 해당 시스템 MS Shell Dlg를 올바르게 처리 하지 않습니다.)  
   
 -   응용 프로그램을 디자인할 때에 문자열을 지역화할 수를 결정 합니다. 확실 하지 않은의 경우 지정 된 문자열을 지역화 될 예정을 가정 합니다. 따라서 작업만 사용 하 여 지역화할 수 있는 문자열을 혼합 하지 마십시오.  
   

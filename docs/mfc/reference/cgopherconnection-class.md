@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad48c78d46928a34a43fab5bbe660750928baf51
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 176dfc9027951f06f55dd04757b9acb7c7d8a2ec
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336763"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199627"
 ---
 # <a name="cgopherconnection-class"></a>CGopherConnection 클래스
 Gopher 인터넷 서버 연결을 관리합니다.  
@@ -158,7 +158,7 @@ static CGopherLocator CreateLocator(
  항목을 검색 하기 위해 gopher 서버로 보낼 선택기 문자열에 대 한 포인터입니다. *pstrSelectorString* NULL 일 수 있습니다.  
   
  *dwGopherType*  
- 지정 여부 *pstrSelectorString* 디렉터리 또는 문서를 참조 요청 인지 gopher gopher + 및 합니다. 구조에 대 한 특성을 참조 하세요 [GOPHER_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa384215) Windows SDK에 있습니다.  
+ 지정 여부 *pstrSelectorString* 디렉터리 또는 문서를 참조 요청 인지 gopher gopher + 및 합니다. 구조에 대 한 특성을 참조 하세요 [GOPHER_FIND_DATA](/windows/desktop/api/wininet/ns-wininet-gopher_find_dataa) Windows SDK에 있습니다.  
   
  *pstrLocator*  
  열려는 파일을 식별 하는 문자열에 대 한 포인터입니다. 이 문자열에 대 한 호출에서 반환 되는 일반적으로 [CGopherFileFind::GetLocator](../../mfc/reference/cgopherfilefind-class.md#getlocator)합니다.  
@@ -197,7 +197,7 @@ BOOL GetAttribute(
  에 대 한 참조를 [CString](../../atl-mfc-shared/reference/cstringt-class.md) locator 유형을 받는입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.  
+ 성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.  
   
 ##  <a name="openfile"></a>  CGopherConnection::OpenFile  
  Gopher 서버에서 파일을 열려면이 멤버 함수를 호출 합니다.  

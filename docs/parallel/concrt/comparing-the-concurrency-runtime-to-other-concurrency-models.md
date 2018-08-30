@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d3fa78ac5dbb5d3872c27db3c4ab3e8778fe1668
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: fb4a588f1b9c7f5bc1d9d4f82ca9f7de767ba7e3
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33694071"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207213"
 ---
 # <a name="comparing-the-concurrency-runtime-to-other-concurrency-models"></a>동시성 런타임과 기타 동시성 모델 비교
 이 문서에서는 동시성 런타임과 기타 기술의 기능 및 프로그래밍 모델 간 차이점에 대해 설명합니다. 동시성 런타임의 이점을 다른 프로그래밍 모델의 이점과 비교하는 방법을 이해하면 응용 프로그램 요구 사항에 가장 적합한 기술을 선택할 수 있습니다.  
@@ -64,7 +64,7 @@ ms.locfileid: "33694071"
  Windows API는 프로그래밍 모델을 노출하기 위해 C 프로그래밍 언어를 사용합니다. 동시성 런타임은 C++ 언어의 최신 기능을 활용하는 C++ 프로그래밍 인터페이스를 제공합니다. 예를 들어, 람다 함수는 병렬 작업 함수를 정의하기 위한 간결하고 형식이 안전한 메커니즘을 제공합니다. 동시성 런타임을 사용하는 최신 C++ 기능에 대한 자세한 내용은 [개요](../../parallel/concrt/asynchronous-message-blocks.md)를 참조하세요.  
   
 ### <a name="threads-and-thread-pools"></a>스레드 및 스레드 풀  
- Windows API의 중심적인 동시성 메커니즘은 스레드입니다. 일반적으로 [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453) 함수를 사용하여 스레드를 만듭니다. 스레드는 비교적 쉽게 만들고 사용할 수 있지만 운영 체제는 스레드 관리에 상당한 양의 시간과 기타 리소스를 할당합니다. 또한 각 스레드는 우선 순위 수준이 같은 다른 스레드와 동일한 실행 시간을 이용하도록 보장되지만, 관련된 오버헤드는 충분히 큰 작업을 만들도록 요구합니다. 더 작거나 더 세분화된 작업의 경우, 동시성과 관련된 오버헤드가 병렬 작업 실행의 이점보다 클 수 있습니다.  
+ Windows API의 중심적인 동시성 메커니즘은 스레드입니다. 일반적으로 [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) 함수를 사용하여 스레드를 만듭니다. 스레드는 비교적 쉽게 만들고 사용할 수 있지만 운영 체제는 스레드 관리에 상당한 양의 시간과 기타 리소스를 할당합니다. 또한 각 스레드는 우선 순위 수준이 같은 다른 스레드와 동일한 실행 시간을 이용하도록 보장되지만, 관련된 오버헤드는 충분히 큰 작업을 만들도록 요구합니다. 더 작거나 더 세분화된 작업의 경우, 동시성과 관련된 오버헤드가 병렬 작업 실행의 이점보다 클 수 있습니다.  
   
  스레드 풀은 스레드 관리의 비용을 줄이기 위한 한 가지 방법입니다. 사용자 지정 스레드 풀 및 Windows API에서 제공하는 스레드 풀 구현, 이 두 가지를 통해 작은 작업 항목들이 효율적으로 동시에 실행됩니다. Windows 스레드 풀은 FIFO(선입선출) 큐에서 작업 항목을 유지 관리합니다. 각 작업 항목은 풀에 추가된 순서로 시작됩니다.  
   
@@ -77,7 +77,7 @@ ms.locfileid: "33694071"
   
  Windows 7 및 Windows Server 2008 R2에서는 운영 체제가 동시성 및 확장성을 더 잘 지원합니다. 예를 들어, 이러한 운영 체제는 64개가 넘는 하드웨어 스레드가 있는 컴퓨터를 지원합니다. 이러한 새 기능을 활용하려면 Windows API를 사용하는 기존 응용 프로그램을 수정해야 합니다. 그러나 동시성 런타임을 사용하는 응용 프로그램은 자동으로 이러한 기능을 사용하므로 수정할 필요가 없습니다.  
   
- [base.user-mode_scheduling](http://msdn.microsoft.com/library/windows/desktop/dd627187)  
+ [base.user-mode_scheduling](https://msdn.microsoft.com/library/windows/desktop/dd627187)  
   
  [[맨 위로 이동](#top)]  
   

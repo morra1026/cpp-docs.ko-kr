@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5cc725907c93955777cd09b5745651855892e4cd
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: b1a15397ee74c94c0d3af088a7b6eb80bd21c66d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42572894"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195339"
 ---
 # <a name="cwin32heap-class"></a>CWin32Heap 클래스
 이 클래스는 구현 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) Win32 힙 할당 함수를 사용 합니다.  
@@ -73,9 +73,9 @@ class CWin32Heap : public IAtlMemMgr
 |[CWin32Heap::m_hHeap](#m_hheap)|힙 개체에 대 한 핸들입니다.|  
   
 ## <a name="remarks"></a>설명  
- `CWin32Heap` 포함 하 여 Win32 힙 할당 함수를 사용 하 여 메모리 할당 메서드를 구현 [HeapAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366597) 하 고 [HeapFree](http://msdn.microsoft.com/library/windows/desktop/aa366701)합니다. 다른 힙 클래스와 달리 `CWin32Heap` 필요한 메모리를 할당 하기 전에 제공에 유효한 힙 핸들: 프로세스 힙을 사용 하 여 다른 클래스 기본값입니다. 핸들 또는 생성자에 제공할 수 있습니다 합니다 [CWin32Heap::Attach](#attach) 메서드. 참조 된 [CWin32Heap::CWin32Heap](#cwin32heap) 메서드에 대 한 자세한 내용은 합니다.  
+ `CWin32Heap` 포함 하 여 Win32 힙 할당 함수를 사용 하 여 메모리 할당 메서드를 구현 [HeapAlloc](/windows/desktop/api/heapapi/nf-heapapi-heapalloc) 하 고 [HeapFree](/windows/desktop/api/heapapi/nf-heapapi-heapfree)합니다. 다른 힙 클래스와 달리 `CWin32Heap` 필요한 메모리를 할당 하기 전에 제공에 유효한 힙 핸들: 프로세스 힙을 사용 하 여 다른 클래스 기본값입니다. 핸들 또는 생성자에 제공할 수 있습니다 합니다 [CWin32Heap::Attach](#attach) 메서드. 참조 된 [CWin32Heap::CWin32Heap](#cwin32heap) 메서드에 대 한 자세한 내용은 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  예를 참조 하세요 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md)합니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
@@ -103,7 +103,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ### <a name="remarks"></a>설명  
  호출 [CWin32Heap::Free](#free) 하거나 [CWin32Heap::Reallocate](#reallocate) 이 메서드에 의해 할당 된 메모리를 해제 합니다.  
   
- 사용 하 여 구현 [HeapAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366597)합니다.  
+ 사용 하 여 구현 [HeapAlloc](/windows/desktop/api/heapapi/nf-heapapi-heapalloc)합니다.  
   
 ##  <a name="attach"></a>  CWin32Heap::Attach  
  기존 힙에 힙에서 개체를 연결합니다.  

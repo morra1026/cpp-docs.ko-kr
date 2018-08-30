@@ -16,22 +16,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ce28c5be7ff87d9ebad38d35bf19b7d182531ca
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 52ec0bcda66ec8f1a166351682b163a09ffb55d8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33382988"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210492"
 ---
 # <a name="using-clistctrl"></a>CListCtrl 사용
-파일 탐색기 또는 텍스트, 아이콘 유무 열 목록을 처럼 레이블과 함께 아이콘의 배열을 표시 하는 목록 컨트롤을 사용 합니다. 목록 컨트롤에 있는 수에 대 한 설명은 4 가지 가능한 "보기" (MFC 보기와 혼동 하지 않음)-아이콘 보기, 작은 아이콘 보기, 목록 보기 및 보고서 보기-설명은 [CListCtrl](../mfc/reference/clistctrl-class.md) 클래스 개요.  
+레이블, 텍스트, 아이콘 없이 열 목록 또는 파일 탐색기를 사용 하 여 아이콘의 배열을 표시 하는 목록 컨트롤을 사용 합니다. 4 가지 가능한 "보기" (MFC 보기와 혼동 하지 않음)에 대 한 목록 컨트롤에서 사용할 수 있습니다-아이콘 보기, 작은 아이콘 보기, 목록 뷰 및 보고서 보기-보기에 [CListCtrl](../mfc/reference/clistctrl-class.md) 클래스 개요입니다.  
   
- 일부 보기에서는 사용자 아이콘을 다른 위치로 끌어 또는 아이콘 레이블을 편집 합니다. 예를 들어 비 모달 창에서 목록 컨트롤을 사용 하는 파일 탐색기의 오른쪽 창을 참조 하십시오. 탐색기의 보기 메뉴에서 사용할 수 있는 보기를 테스트할 수 있습니다.  
+ 일부 보기에서는 사용자 아이콘을 다른 위치로 끌어 하거나 아이콘 레이블을 편집할 수 있습니다. 예를 들어, 목록 컨트롤을 사용 하 여 비 모달 창에 있는 파일 탐색기의 오른쪽 창을 참조 하십시오. 탐색기의 보기 메뉴에서 사용 가능한 보기를 사용 하 여 실험할 수 있습니다.  
   
- 관련된 정보를 참조 하십시오. [목록 뷰 컨트롤에 대 한](http://msdn.microsoft.com/library/windows/desktop/bb774735) Windows sdk에서입니다.  
+ 관련 정보를 참조 하세요 [목록 뷰 컨트롤에 대 한](/windows/desktop/Controls/list-view-controls-overview) Windows SDK에 있습니다.  
   
 > [!NOTE]
->  목록 컨트롤 "목록 뷰 컨트롤"로 Windows SDK 참조 이 사용 되는 "보기"를 참조 하지 않는 MFC 보기 클래스, 특히 `CListView`합니다. 자세한 내용은 참조 [목록 컨트롤 및 목록 뷰](../mfc/list-control-and-list-view.md)합니다.  
+>  Windows SDK에서는 목록 컨트롤과 "목록 뷰 컨트롤입니다." 라고 이 사용 되는 "보기"를 참조 하지 않는 MFC 뷰 클래스 특히 `CListView`합니다. 자세한 내용은 [목록 컨트롤 및 목록 뷰](../mfc/list-control-and-list-view.md)합니다.  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목  
   

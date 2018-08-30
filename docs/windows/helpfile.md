@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 37309f9170a1fe78c7db802ca13cc81112be9cbb
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 424c6b642bba04a22ee4dedd59e38761260ac8eb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607379"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221931"
 ---
 # <a name="helpfile"></a>helpfile
 
@@ -43,9 +43,9 @@ ms.locfileid: "42607379"
 
 ## <a name="remarks"></a>설명
 
-합니다 **helpfile** c + + 특성에 동일한 기능을 합니다 [helpfile](http://msdn.microsoft.com/library/windows/desktop/aa366853) MIDL 특성입니다.
+합니다 **helpfile** c + + 특성에 동일한 기능을 합니다 [helpfile](/windows/desktop/Midl/helpfile) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 예를 참조 하세요 [모듈](../windows/module-cpp.md) 사용 하는 방법의 예제 **helpfile**합니다.
 

@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40a5604a1b1c469272889aa7b4e283b3ee6f23bf
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: c2b2f8ab8828c994b729180805be0a51a83b3487
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882798"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203628"
 ---
 # <a name="ccomenumimpl-class"></a>CComEnumImpl 클래스
 이 클래스는 열거 되 고 있는 항목을 배열에 저장 되어 있는 COM 열거자 인터페이스에 대 한 구현을 제공 합니다.  
@@ -48,7 +48,7 @@ class ATL_NO_VTABLE CComEnumImpl : public Base
   
 #### <a name="parameters"></a>매개 변수  
  *자료*  
- COM 열거자를 ( [IEnumXXXX](https://msdn.microsoft.com/library/ms680089.aspx)) 인터페이스입니다.  
+ COM 열거자 인터페이스입니다. 참조 [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) 예입니다. 
   
  *piid*  
  열거자 인터페이스의 인터페이스 ID에 대 한 포인터입니다.  
@@ -72,11 +72,11 @@ class ATL_NO_VTABLE CComEnumImpl : public Base
   
 |이름|설명|  
 |----------|-----------------|  
-|[CComEnumImpl::Clone](#clone)|구현의 [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx)합니다.|  
+|[CComEnumImpl::Clone](#clone)|구현의 합니다 **복제** 열거형 인터페이스 메서드.|  
 |[CComEnumImpl::Init](#init)|열거자를 초기화합니다.|  
-|[CComEnumImpl::Next](#next)|구현의 [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx)합니다.|  
-|[CComEnumImpl::Reset](#reset)|구현의 [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx)합니다.|  
-|[CComEnumImpl::Skip](#skip)|구현의 [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx)합니다.|  
+|[CComEnumImpl::Next](#next)|구현의 **다음**합니다.|  
+|[CComEnumImpl::Reset](#reset)|구현의 **재설정**합니다.|  
+|[CComEnumImpl::Skip](#skip)|구현의 **Skip**합니다.|  
   
 ### <a name="public-data-members"></a>공용 데이터 멤버  
   
@@ -89,7 +89,7 @@ class ATL_NO_VTABLE CComEnumImpl : public Base
 |[CComEnumImpl::m_spUnk](#m_spunk)|`IUnknown` 열거 되는 컬렉션을 제공 하는 개체의 포인터입니다.|  
   
 ## <a name="remarks"></a>설명  
- `CComEnumImpl` 열거 되 고 있는 항목을 배열에 저장 되어 있는 COM 열거자 인터페이스에 대 한 구현을 제공 합니다. 이 클래스는 비슷합니다는 `IEnumOnSTLImpl` 열거자 인터페이스의 구현을 제공 하는 클래스 c + + 표준 라이브러리 컨테이너를 기반으로 합니다.  
+참조 [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) 메서드 구현의 예입니다. `CComEnumImpl` 열거 되 고 있는 항목을 배열에 저장 되어 있는 COM 열거자 인터페이스에 대 한 구현을 제공 합니다. 이 클래스는 비슷합니다는 `IEnumOnSTLImpl` 열거자 인터페이스의 구현을 제공 하는 클래스 c + + 표준 라이브러리 컨테이너를 기반으로 합니다.  
   
 > [!NOTE]
 >  간의 추가 차이점에 대 한 내용은 `CComEnumImpl` 하 고 `IEnumOnSTLImpl`를 참조 하세요 [CComEnumImpl::Init](#init)합니다.  
@@ -175,7 +175,7 @@ enum CComEnumFlags
 >  형식으로 배열 요소를 지정 하는이 메서드의 프로토타입을 `T`여기서 `T` 클래스 템플릿 매개 변수로 정의 되었습니다. COM 인터페이스 메서드를 사용 하 여 노출 되는 동일한 유형 [CComEnumImpl::Next](#next)합니다. 이 여기에 함축 된는 달리 [IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md),이 클래스는 다른 저장소를 지원 하지 않으며 데이터 형식을 노출 합니다. 배열에서 요소의 데이터 형식과 COM 인터페이스를 통해 노출 된 데이터 형식으로 동일 해야 합니다.  
   
 ##  <a name="clone"></a>  CComEnumImpl::Clone  
- 이 방법의 구현을 제공 합니다 [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx) 형식의 개체를 만들어 메서드 `CComEnum`, 동일한 배열 및 현재 개체에서 사용 하는 반복기를 사용 하 여 초기화 하 고 인터페이스에서 반환 합니다 개체를 새로 만들었습니다.  
+ 이 방법의 구현을 제공 합니다 **클론** 형식의 개체를 만들어 메서드 `CComEnum`, 같은 배열 및 현재 개체에서 사용 하는 반복기를 사용 하 여 초기화 하 고 새로 만든에서 인터페이스를 반환 개체입니다.  
   
 ```
 STDMETHOD(Clone)(Base** ppEnum);
@@ -227,7 +227,7 @@ DWORD m_dwFlags;
 ```  
   
 ##  <a name="next"></a>  CComEnumImpl::Next  
- 이 메서드는 구현을 제공 합니다 [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx) 메서드.  
+ 이 메서드는 구현을 제공 합니다 **다음** 메서드.  
   
 ```
 STDMETHOD(Next)(ULONG celt, T* rgelt, ULONG* pceltFetched);
@@ -247,7 +247,7 @@ STDMETHOD(Next)(ULONG celt, T* rgelt, ULONG* pceltFetched);
  표준 HRESULT 값입니다.  
   
 ##  <a name="reset"></a>  CComEnumImpl::Reset  
- 이 메서드는 구현을 제공 합니다 [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx) 메서드.  
+ 이 메서드는 구현을 제공 합니다 **재설정** 메서드.  
   
 ```
 STDMETHOD(Reset)(void);
@@ -257,7 +257,7 @@ STDMETHOD(Reset)(void);
  표준 HRESULT 값입니다.  
   
 ##  <a name="skip"></a>  CComEnumImpl::Skip  
- 이 메서드는 구현을 제공 합니다 [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx) 메서드.  
+ 이 메서드는 구현을 제공 합니다 **Skip** 메서드.  
   
 ```
 STDMETHOD(Skip)(ULONG celt);

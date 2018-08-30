@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7424581c277e7b20132fd5e667acb77a4a95789e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9fc3be9fb25b6593f4b69f846394544b7b7d756a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598652"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220467"
 ---
 # <a name="idlmodule"></a>idl_module
 
@@ -65,10 +65,10 @@ function declaration
 이 형식 라이브러리에 대한 도움말 ID입니다.
 
 *숨겨진* (선택 사항)  
-라이브러리 표시 되는 것을 방지 하는 매개 변수입니다. 자세한 내용은 [hidden](http://msdn.microsoft.com/library/windows/desktop/aa366861) MIDL 특성을 참조하세요.
+라이브러리 표시 되는 것을 방지 하는 매개 변수입니다. 참조 된 [숨겨진](/windows/desktop/Midl/hidden) 자세한 MIDL 특성입니다.
 
 *제한 된* (선택 사항)  
-라이브러리의 멤버를 임의로 호출할 수 없습니다. 자세한 내용은 [restricted](http://msdn.microsoft.com/library/windows/desktop/aa367157) MIDL 특성을 참조하세요.
+라이브러리의 멤버를 임의로 호출할 수 없습니다. 참조 된 [제한](/windows/desktop/Midl/restricted) 자세한 MIDL 특성입니다.
 
 *함수 선언*  
 함수 정의입니다.
@@ -77,13 +77,13 @@ function declaration
 
 합니다 **idl_module** c + + 특성.dll 파일 로부터 가져올 수 있게 하는.dll 파일에서 진입점을 지정할 수 있습니다.
 
-**idl_module** 특성에 유사한 기능을 [모듈](http://msdn.microsoft.com/library/windows/desktop/aa367099) MIDL 특성입니다.
+**idl_module** 특성에 유사한 기능을 [모듈](/windows/desktop/Midl/module) MIDL 특성입니다.
 
 DLL 진입점을.idl 파일의 라이브러리 블록에 배치 하 여.dll 파일에서 내보낼 수 있는 COM 개체에서 모든 항목을 내보낼 수 있습니다.
 
 에 사용 해야 합니다 **idl_module** 두 단계에서입니다. 먼저 이름/DLL 쌍을 정의 해야 합니다. 그런 다음 사용 하는 경우 **idl_module** 진입점을 지정 하려면 이름 및 추가 속성을 지정 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에서는 사용 하 여 **idl_module** 특성:
 

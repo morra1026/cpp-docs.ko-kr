@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40907720965647e076c6b516f1c2de9f1d3f9edb
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 089fe435c86b524acc41ba528452d93032d1b1a4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850568"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214495"
 ---
 # <a name="colechangeicondialog-class"></a>COleChangeIconDialog 클래스
 OLE 아이콘 변경 대화 상자에 사용합니다.  
@@ -67,7 +67,7 @@ class COleChangeIconDialog : public COleDialog
 ## <a name="remarks"></a>설명  
  클래스의 개체를 만들려면 `COleChangeIconDialog` 이 대화 상자를 호출 하려는 경우. 후는 `COleChangeIconDialog` 생성 된 개체를 사용할 수 있습니다 합니다 [m_ci](#m_ci) 값 또는 대화 상자에서 컨트롤의 상태를 초기화 하는 구조입니다. `m_ci` OLEUICHANGEICON 형식의 구조입니다. 이 대화 상자 클래스를 사용 하는 방법에 대 한 자세한 내용은 참조는 [DoModal](#domodal) 멤버 함수입니다.  
   
- 자세한 내용은 참조는 [OLEUICHANGEICON](http://msdn.microsoft.com/library/windows/desktop/ms680098) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [OLEUICHANGEICON](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangeicona) Windows SDK에는 구조입니다.  
   
  OLE 관련 대화 상자에 대 한 자세한 내용은 문서 참조 [OLE의 대화 상자](../../mfc/dialog-boxes-in-ole.md)합니다.  
   
@@ -122,7 +122,7 @@ explicit COleChangeIconDialog(
 ### <a name="remarks"></a>설명  
  대화 상자를 표시 하려면 호출을 [DoModal](#domodal) 함수입니다.  
   
- 자세한 내용은 참조는 [OLEUICHANGEICON](http://msdn.microsoft.com/library/windows/desktop/ms680098) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [OLEUICHANGEICON](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangeicona) Windows SDK에는 구조입니다.  
   
 ##  <a name="dochangeicon"></a>  COleChangeIconDialog::DoChangeIcon  
  한 후 대화 상자에서 선택한 항목을 나타내는 아이콘을 변경 하려면이 함수를 호출 [DoModal](#domodal) IDOK를 반환 합니다.  
@@ -152,7 +152,7 @@ virtual INT_PTR DoModal();
   
 - 사용자가 대화 상자를 취소 하는 경우 IDCANCEL 합니다.  
   
-- IDABORT 오류가 발생 합니다. IDABORT 반환 되 면 호출 된 `COleDialog::GetLastError` 발생 한 오류 유형에 대 한 자세한 정보를 보려면 멤버 함수입니다. 목록을 가능한 오류에 대 한 참조를 [OleUIChangeIcon](http://msdn.microsoft.com/library/windows/desktop/ms688307) Windows SDK에는 함수입니다.  
+- IDABORT 오류가 발생 합니다. IDABORT 반환 되 면 호출 된 `COleDialog::GetLastError` 발생 한 오류 유형에 대 한 자세한 정보를 보려면 멤버 함수입니다. 목록을 가능한 오류에 대 한 참조를 [OleUIChangeIcon](/windows/desktop/api/oledlg/nf-oledlg-oleuichangeicona) Windows SDK에는 함수입니다.  
   
 ### <a name="remarks"></a>설명  
  멤버를 설정 하 여 다양 한 대화 상자 컨트롤을 초기화 하려는 경우는 [m_ci](#m_ci) 구조를 호출 하기 전에이 작업을 수행 해야 `DoModal`, 대화 상자 개체에서 생성 된 후 있지만.  
@@ -179,7 +179,7 @@ OLEUICHANGEICON m_ci;
 ### <a name="remarks"></a>설명  
  이 구조체의 멤버는 직접 또는 멤버 함수를 통해 수정할 수 있습니다.  
   
- 자세한 내용은 참조는 [OLEUICHANGEICON](http://msdn.microsoft.com/library/windows/desktop/ms680098) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [OLEUICHANGEICON](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangeicona) Windows SDK에는 구조입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [COleDialog 클래스](../../mfc/reference/coledialog-class.md)   

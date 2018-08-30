@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 16f7be95c36970ce96d04ff357831294f3a3faf1
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 9a775370228691e47b1b9becca8e0769ea0f7367
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42571996"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221880"
 ---
 # <a name="ole-db-templates-attributes-and-other-implementations"></a>OLE DB 템플릿, 특성 및 기타 구현
 ## <a name="atl-ole-db-templates"></a>ATL OLE DB 템플릿  
@@ -44,7 +44,7 @@ ms.locfileid: "42571996"
   
 -   목록은 [OLE DB 소비자 클래스](../../data/oledb/ole-db-consumer-templates-reference.md) 하거나 [OLE DB 공급자 클래스](../../data/oledb/ole-db-provider-templates-reference.md)합니다.  
   
--   목록은 [OLE DB 템플릿 샘플](http://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c)합니다.  
+-   목록은 [OLE DB 템플릿 샘플](https://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c)합니다.  
   
 -   참조 [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643\(v=vs.85\)) (Windows SDK)에 있습니다.  
   

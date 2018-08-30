@@ -27,15 +27,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ea5da8b98c528eb6832c850e41b0a42c386f901
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 0259716bb1106dbc5c2da5a3738cd78e5c8c877f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42571861"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202477"
 ---
 # <a name="ccomaggobject-class"></a>CComAggObject 클래스
-이 클래스에서 구현 된 [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) 집계 개체에 대 한 인터페이스입니다. 정의 따라 집계 개체는 외부 개체에 포함 됩니다. 합니다 `CComAggObject` 클래스는 비슷합니다는 [CComObject 클래스](../../atl/reference/ccomobject-class.md)외부 클라이언트에 직접 액세스할 수 있는 인터페이스를 노출 하는 점을 제외 하 고 합니다.  
+이 클래스에서 구현 된 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 집계 개체에 대 한 인터페이스입니다. 정의 따라 집계 개체는 외부 개체에 포함 됩니다. 합니다 `CComAggObject` 클래스는 비슷합니다는 [CComObject 클래스](../../atl/reference/ccomobject-class.md)외부 클라이언트에 직접 액세스할 수 있는 인터페이스를 노출 하는 점을 제외 하 고 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -76,7 +76,7 @@ class CComAggObject : public IUnknown,
 |[CComAggObject::m_contained](#m_contained)|대리자 `IUnknown` 알 수 없는 외부 호출 합니다.|  
   
 ## <a name="remarks"></a>설명  
- `CComAggObject` 구현 [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) 집계 개체에 대 한 합니다. `CComAggObject` 에 자체 `IUnknown` 인터페이스를 외부 개체의 분리 `IUnknown` 인터페이스 및 자체 참조 횟수를 유지 관리 합니다.  
+ `CComAggObject` 구현 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 집계 개체에 대 한 합니다. `CComAggObject` 에 자체 `IUnknown` 인터페이스를 외부 개체의 분리 `IUnknown` 인터페이스 및 자체 참조 횟수를 유지 관리 합니다.  
   
  집계에 대 한 자세한 내용은 문서를 참조 하세요 [ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)합니다.  
   
@@ -139,7 +139,7 @@ static HRESULT WINAPI CreateInstance(
   
 ### <a name="parameters"></a>매개 변수  
  *pp*  
- [out] 에 대 한 포인터를 **CComAggObject\<* * * 포함* **>** 포인터입니다. 하는 경우 `CreateInstance` 정상적이 지 않습니다 *pp* NULL로 설정 됩니다.  
+ [out] 에 대 한 포인터를 **CComAggObject\<**<em>포함</em> **>** 포인터입니다. 하는 경우 `CreateInstance` 정상적이 지 않습니다 *pp* NULL로 설정 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  표준 HRESULT 값입니다.  

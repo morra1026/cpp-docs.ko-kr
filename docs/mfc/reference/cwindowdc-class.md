@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b692d974b5397d73f7e328330f71d8f9688be3e2
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 40566ab94c9708d7b31f88de0f96b4fc33675534
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42540122"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212523"
 ---
 # <a name="cwindowdc-class"></a>CWindowDC 클래스
 `CDC`에서 파생됩니다.  
@@ -77,11 +77,11 @@ explicit CWindowDC(CWnd* pWnd);
  창의 장치 컨텍스트 개체에 액세스 하는 클라이언트 영역입니다.  
   
 ### <a name="remarks"></a>설명  
- Windows 함수를 호출 하는 생성자 [GetWindowDC](http://msdn.microsoft.com/library/windows/desktop/dd144947)합니다.  
+ Windows 함수를 호출 하는 생성자 [GetWindowDC](/windows/desktop/api/winuser/nf-winuser-getwindowdc)합니다.  
   
  예외 (형식의 `CResourceException`) 하는 경우 throw 되는 Windows `GetWindowDC` 호출이 실패 합니다. 장치 컨텍스트에 Windows에 이미 할당 모든 사용 가능한 장치 컨텍스트에서 사용할 수 있습니다. 응용 프로그램 Windows 아래에서 언제 든 지 사용할 수 있는 5 개의 일반적인 표시 컨텍스트에 대해 경합 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#188](../../mfc/codesnippet/cpp/cwindowdc-class_1.cpp)]  
   
 ##  <a name="m_hwnd"></a>  CWindowDC::m_hWnd  
@@ -94,7 +94,7 @@ HWND m_hWnd;
 ### <a name="remarks"></a>설명  
  `m_hWnd` 보호 된 HWND 형식의 변수가입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CWindowDC::CWindowDC](#cwindowdc)합니다.  
   
 ## <a name="see-also"></a>참고 항목  

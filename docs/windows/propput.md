@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a4e67da1e77882f6bc2e7fd7b5df57b9f0fa97c0
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: f6adf0f2eaf61c3a280c8ca248cffea2f05bda6f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42612277"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213171"
 ---
 # <a name="propput"></a>propput
 
@@ -36,9 +36,9 @@ ms.locfileid: "42612277"
 
 ## <a name="remarks"></a>설명
 
-합니다 **propput** c + + 특성에 동일한 기능을 합니다 [propput](http://msdn.microsoft.com/library/windows/desktop/aa367146) MIDL 특성입니다.
+합니다 **propput** c + + 특성에 동일한 기능을 합니다 [propput](/windows/desktop/Midl/propput) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 예를 참조 하세요 [bindable](../windows/bindable.md) 의 샘플 사용에 대 한 **propput**합니다.
 

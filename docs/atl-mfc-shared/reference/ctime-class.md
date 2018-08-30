@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b68ebd20d449c11ac8c62a6a01c086dbe566811
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: ccfb9c8873ff7e954e4e8169fafb94c53e6a311e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027675"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205989"
 ---
 # <a name="ctime-class"></a>CTime 클래스
 절대 시간 및 날짜를 나타냅니다.  
@@ -66,7 +66,7 @@ class CTime
 |[CTime::Format](#format)|변환는 `CTime` 서식이 지정 된 문자열 개체로-현지 표준 시간대에 따라 합니다.|  
 |[CTime::FormatGmt](#formatgmt)|변환는 `CTime` 서식이 지정 된 문자열 개체로-UTC를 기반으로 합니다.|  
 |[CTime::GetAsDBTIMESTAMP](#getasdbtimestamp)|저장 된 시간 정보를 변환 합니다 `CTime` Win32 호환 DBTIMESTAMP 구조에는 개체입니다.|  
-|[CTime::GetAsSystemTime](#getassystemtime)|저장 된 시간 정보를 변환 합니다 `CTime` Win32 호환 개체 [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) 구조입니다.|  
+|[CTime::GetAsSystemTime](#getassystemtime)|저장 된 시간 정보를 변환 합니다 `CTime` Win32 호환 개체 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 구조입니다.|  
 |[CTime::GetCurrentTime](#getcurrenttime)|만듭니다는 `CTime` 현재 (정적 멤버 함수)를 나타내는 개체입니다.|  
 |[CTime::GetDay](#getday)|일 나타내는 반환 합니다 `CTime` 개체입니다.|  
 |[CTime::GetDayOfWeek](#getdayofweek)|나타내는 요일 반환을 `CTime` 개체입니다.|  
@@ -130,7 +130,7 @@ bool operator>=(CTime time) const throw();
 ### <a name="return-value"></a>반환 값  
  조건이 true 이면 두 절대 시간 및 TRUE가 반환 이러한 연산자 비교 그렇지 않으면 FALSE입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#161](../../atl-mfc-shared/codesnippet/cpp/ctime-class_1.cpp)]  
   
 ##  <a name="ctime"></a>  CTime::CTime  
@@ -210,9 +210,9 @@ CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
     > [!NOTE]
     >  생성자를 통해 `DBTIMESTAMP` OLEDB.h 포함 되는 경우 매개 변수는만 사용할 수 있습니다.  
   
- 자세한 내용은 참조는 [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) 및 [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) Windows SDK에는 구조입니다. 참조를 [MS-DOS 날짜 및 시간](http://msdn.microsoft.com/library/windows/desktop/ms724503) Windows SDK에는 항목입니다.  
+ 자세한 내용은 참조는 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 및 [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) Windows SDK에는 구조입니다. 참조를 [MS-DOS 날짜 및 시간](/windows/desktop/SysInfo/ms-dos-date-and-time) Windows SDK에는 항목입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#148](../../atl-mfc-shared/codesnippet/cpp/ctime-class_2.cpp)]  
   
 ##  <a name="format"></a>  CTime::Format  
@@ -238,7 +238,7 @@ CString Format(UINT nFormatID) const;
   
  이 메서드는 날짜-시간 값 형식을 지정 하려면 범위를 벗어난 3000 년 12 월 31 일을 통해 1970 년 1 월 1 일 자정에서 경우 예외를 throw 협정 세계시 (UTC)입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#149](../../atl-mfc-shared/codesnippet/cpp/ctime-class_3.cpp)]  
   
 ##  <a name="formatgmt"></a>  CTime::FormatGmt  
@@ -264,7 +264,7 @@ CString FormatGmt(UINT nFormatID) const;
   
  이 메서드는 날짜-시간 값 형식을 지정 하려면 범위를 벗어난 3000 년 12 월 31 일을 통해 1970 년 1 월 1 일 자정에서 경우 예외를 throw 협정 세계시 (UTC)입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CTime::Format](#format)합니다.  
   
 ##  <a name="getasdbtimestamp"></a>  CTime::GetAsDBTIMESTAMP  
@@ -284,11 +284,11 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
 ### <a name="remarks"></a>설명  
  참조 된 결과 시간을 저장 *dbts* 구조입니다. 합니다 `DBTIMESTAMP` 이 함수에 의해 초기화 되는 데이터 구조를 갖습니다. 해당 `fraction` 멤버가 0으로 설정 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#150](../../atl-mfc-shared/codesnippet/cpp/ctime-class_4.cpp)]  
   
 ##  <a name="getassystemtime"></a>  CTime::GetAsSystemTime  
- 저장 된 시간 정보를 변환 하려면이 멤버 함수를 호출 합니다 `CTime` Win32 호환 개체 [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) 구조입니다.  
+ 저장 된 시간 정보를 변환 하려면이 멤버 함수를 호출 합니다 `CTime` Win32 호환 개체 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 구조입니다.  
   
 ```  
 bool GetAsSystemTime(SYSTEMTIME& st) const throw();
@@ -296,7 +296,7 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
   
 ### <a name="parameters"></a>매개 변수  
  *timeDest*  
- 에 대 한 참조를 [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) 의 변환 된 날짜/시간 값을 포함 하는 구조는 `CTime` 개체입니다.  
+ 에 대 한 참조를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 의 변환 된 날짜/시간 값을 포함 하는 구조는 `CTime` 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 TRUE이고, 실패하면 FALSE입니다.  
@@ -304,7 +304,7 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
 ### <a name="remarks"></a>설명  
  `GetAsSystemTime` 참조 된 결과 시간을 저장 *timeDest* 구조입니다. 합니다 `SYSTEMTIME` 이 함수에 의해 초기화 되는 데이터 구조를 갖습니다. 해당 `wMilliseconds` 멤버가 0으로 설정 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#151](../../atl-mfc-shared/codesnippet/cpp/ctime-class_5.cpp)]  
   
 ##  <a name="getcurrenttime"></a>  CTime::GetCurrentTime  
@@ -317,7 +317,7 @@ static CTime WINAPI GetCurrentTime() throw();
 ### <a name="remarks"></a>설명  
  현재 시스템 날짜 및 시간을 utc (협정 세계시)로 반환합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#152](../../atl-mfc-shared/codesnippet/cpp/ctime-class_6.cpp)]  
   
 ##  <a name="getday"></a>  CTime::GetDay  
@@ -333,7 +333,7 @@ int GetDay() const throw();
 ### <a name="remarks"></a>설명  
  이 함수 호출 `GetLocalTm`, 내부, 정적으로 할당 된 버퍼를 사용 합니다. 이 버퍼의 데이터를 다른 호출으로 인해 덮어씁니다 `CTime` 멤버 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#153](../../atl-mfc-shared/codesnippet/cpp/ctime-class_7.cpp)]  
   
 ##  <a name="getdayofweek"></a>  CTime::GetDayOfWeek  
@@ -349,7 +349,7 @@ int GetDayOfWeek() const throw();
 ### <a name="remarks"></a>설명  
  이 함수 호출 `GetLocalTm`를 사용 하는 내부 정적 버퍼를 할당 합니다. 이 버퍼의 데이터를 다른 호출으로 인해 덮어씁니다 `CTime` 멤버 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#154](../../atl-mfc-shared/codesnippet/cpp/ctime-class_8.cpp)]  
   
 ##  <a name="getgmttm"></a>  CTime::GetGmtTm  
@@ -371,7 +371,7 @@ struct tm* GetGmtTm(struct tm* ptm) const;
   
  *ptm* NULL 일 수 없습니다. 이전 동작으로 되돌리려면 원하면 *ptm* _SECURE_ATL을 해제 한 다음, 정적으로 할당 된 버퍼를 사용할 내부 나타내기 위해 NULL이 될 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#155](../../atl-mfc-shared/codesnippet/cpp/ctime-class_9.cpp)]  
   
 ##  <a name="gethour"></a>  CTime::GetHour  
@@ -387,7 +387,7 @@ int GetHour() const throw();
 ### <a name="remarks"></a>설명  
  이 함수 호출 `GetLocalTm`를 사용 하는 내부 정적 버퍼를 할당 합니다. 이 버퍼의 데이터를 다른 호출으로 인해 덮어씁니다 `CTime` 멤버 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#156](../../atl-mfc-shared/codesnippet/cpp/ctime-class_10.cpp)]  
   
 ##  <a name="getlocaltm"></a>  CTime::GetLocalTm  
@@ -409,7 +409,7 @@ struct tm* GetLocalTm(struct tm* ptm) const;
   
  *ptm* NULL 일 수 없습니다. 이전 동작으로 되돌리려면 원하면 *ptm* _SECURE_ATL을 해제 한 다음, 정적으로 할당 된 버퍼를 사용할 내부 나타내기 위해 NULL이 될 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#157](../../atl-mfc-shared/codesnippet/cpp/ctime-class_11.cpp)]  
   
 ##  <a name="getminute"></a>  CTime::GetMinute  
@@ -425,7 +425,7 @@ int GetMinute() const throw();
 ### <a name="remarks"></a>설명  
  이 함수 호출 `GetLocalTm`를 사용 하는 내부 정적 버퍼를 할당 합니다. 이 버퍼의 데이터를 다른 호출으로 인해 덮어씁니다 `CTime` 멤버 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [GetHour](#gethour)합니다.  
   
 ##  <a name="getmonth"></a>  CTime::GetMonth  
@@ -441,7 +441,7 @@ int GetMonth() const throw();
 ### <a name="remarks"></a>설명  
  이 함수 호출 `GetLocalTm`를 사용 하는 내부 정적 버퍼를 할당 합니다. 이 버퍼의 데이터를 다른 호출으로 인해 덮어씁니다 `CTime` 멤버 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [GetDay](#getday)합니다.  
   
 ##  <a name="getsecond"></a>  CTime::GetSecond  
@@ -457,7 +457,7 @@ int GetSecond() const throw();
 ### <a name="remarks"></a>설명  
  이 함수 호출 `GetLocalTm`를 사용 하는 내부 정적 버퍼를 할당 합니다. 이 버퍼의 데이터를 다른 호출으로 인해 덮어씁니다 `CTime` 멤버 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [GetHour](#gethour)합니다.  
   
 ##  <a name="gettime"></a>  CTime::GetTime  
@@ -470,7 +470,7 @@ __time64_t GetTime() const throw();
 ### <a name="return-value"></a>반환 값  
  `GetTime` 현재 까지의 시간 (초) 수를 반환 `CTime` 개체와 1970 년 1 월 1 일입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#158](../../atl-mfc-shared/codesnippet/cpp/ctime-class_12.cpp)]  
   
 ##  <a name="getyear"></a>  CTime::GetYear  
@@ -486,7 +486,7 @@ int GetYear();
 ### <a name="remarks"></a>설명  
  이 함수 호출 `GetLocalTm`를 사용 하는 내부 정적 버퍼를 할당 합니다. 이 버퍼의 데이터를 다른 호출으로 인해 덮어씁니다 `CTime` 멤버 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [GetDay](#getday)합니다.  
   
 ##  <a name="operator_eq"></a>  CTime::operator =  
@@ -528,7 +528,7 @@ CTimeSpan operator-(CTime time) const throw();
 ### <a name="remarks"></a>설명  
  `CTime` 개체가 나타내는 절대 시간 `CTimeSpan` 개체 상대 시간을 나타냅니다. 처음 두 연산자 수 더하기 및 빼기 `CTimeSpan` 에서 개체 `CTime` 개체입니다. 세 번째 연산자를 사용 하면 하나를 뺄 `CTime` 개체를 생성 하기 위해 서로 `CTimeSpan` 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#159](../../atl-mfc-shared/codesnippet/cpp/ctime-class_13.cpp)]  
   
 ##  <a name="operator_add_eq_-_eq"></a>  CTime::operator + =, =  
@@ -549,7 +549,7 @@ CTime& operator-=(CTimeSpan span) throw();
 ### <a name="remarks"></a>설명  
  이러한 연산자를 사용 하면 더하기 및 빼기에 `CTimeSpan` 개체를이 `CTime` 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATLMFC_Utilities#160](../../atl-mfc-shared/codesnippet/cpp/ctime-class_14.cpp)]  
   
 ##  <a name="serialize64"></a>  CTime::Serialize64  

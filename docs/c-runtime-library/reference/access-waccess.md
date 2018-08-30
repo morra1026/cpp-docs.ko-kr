@@ -41,12 +41,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ada1377efea8bd05dea1fd59dbbe6cd4495e6ea2
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 77876aad65a06cd541949937898496f811375e58
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39404644"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209605"
 ---
 # <a name="access-waccess"></a>_access, _waccess
 
@@ -96,7 +96,7 @@ int _waccess(
 |04|읽기 전용|
 |06|읽기 및 쓰기|
 
-이 함수는 파일과 디렉터리가 읽기 전용인지 아닌지만 확인하고, 파일 시스템 보안 설정은 확인하지 않습니다. 이를 확인하려면 액세스 토큰이 필요합니다. 파일 시스템 보안에 대한 자세한 내용은 [액세스 토큰](http://msdn.microsoft.com/library/windows/desktop/aa374909)을 참조하세요. 이 기능을 제공하기 위해 ATL 클래스가 존재합니다. [CAccessToken 클래스](../../atl/reference/caccesstoken-class.md)를 참조하세요.
+이 함수는 파일과 디렉터리가 읽기 전용인지 아닌지만 확인하고, 파일 시스템 보안 설정은 확인하지 않습니다. 이를 확인하려면 액세스 토큰이 필요합니다. 파일 시스템 보안에 대한 자세한 내용은 [액세스 토큰](/windows/desktop/SecAuthZ/access-tokens)을 참조하세요. 이 기능을 제공하기 위해 ATL 클래스가 존재합니다. [CAccessToken 클래스](../../atl/reference/caccesstoken-class.md)를 참조하세요.
 
 **_waccess** 의 와이드 문자 버전이 **_access**; *경로* 인수를 **_waccess** 는 와이드 문자 문자열입니다. **_waccess** 하 고 **_access** 동일 하 게 작동 합니다.
 
@@ -115,7 +115,7 @@ int _waccess(
 |**_access**|\<io.h>|\<errno.h>|
 |**_waccess**|\<wchar.h> 또는 \<io.h>|\<errno.h>|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 **_access** crt_ACCESS 라는 파일을 확인 합니다. C 존재 하는지 여부 및 쓰기가 허용 되는지를 확인 합니다.
 

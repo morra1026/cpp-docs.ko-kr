@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17da583b770fcab1d682868c38c04e0aa97155dd
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 348f25718fe22e056da5097bca0d67013a56c4c8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026435"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203151"
 ---
 # <a name="cmemorystate-structure"></a>CMemoryState 구조체
 프로그램에서 메모리 누수 문제를 감지 하는 편리한 방법을 제공 합니다.  
@@ -91,7 +91,7 @@ void Checkpoint();
 ### <a name="remarks"></a>설명  
  `CMemoryState` 멤버 함수 [차이](#difference) 하 고 [DumpAllObjectsSince](#dumpallobjectssince) 이 스냅숏 데이터를 사용 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예제를 참조 합니다 [CMemoryState](#cmemorystate) 생성자입니다.  
   
 ##  <a name="cmemorystate"></a>  CMemoryState::CMemoryState  
@@ -101,7 +101,7 @@ void Checkpoint();
 CMemoryState();
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_Utilities#18](../../mfc/codesnippet/cpp/cmemorystate-structure_1.cpp)]  
   
 ##  <a name="difference"></a>  Cmemorystate:: Difference  
@@ -126,7 +126,7 @@ BOOL Difference(
 ### <a name="remarks"></a>설명  
  [검사점](#checkpoint) 각 두 메모리 상태 매개 변수에 대해 호출 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예제를 참조 합니다 [CMemoryState](#cmemorystate) 생성자입니다.  
   
 ##  <a name="dumpallobjectssince"></a>  Cmemorystate:: Dumpallobjectssince  
@@ -141,7 +141,7 @@ void DumpAllObjectsSince() const;
 ### <a name="remarks"></a>설명  
  호출 `DumpAllObjectsSince` 초기화 되지 않은 사용 하 여 `CMemoryState` 개체 현재 메모리에 있는 모든 개체를 덤프 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예제를 참조 합니다 [CMemoryState](#cmemorystate) 생성자입니다.  
   
 ##  <a name="dumpstatistics"></a>  Cmemorystate:: Dumpstatistics  
@@ -172,9 +172,9 @@ void DumpStatistics() const;
   
 -   총 메모리 (메가바이트) 프로그램에서 현재 사용  
   
- Free 블록은 해당 할당 취소 하는 경우 지연 된 블록 수가 `afxMemDF` 로 설정 된 `delayFreeMemDF`합니다. 자세한 내용은 [afxMemDF](diagnostic-services.md#afxmemdf), "MFC 매크로 및 전역 변수" 섹션에 있습니다. 참조 [블록 형식 디버그 힙의](http://msdn.microsoft.com/db2e7f62-0679-4b39-a23f-26f2c2f407c5) 자세한 내용은 블록 형식에 대 한 합니다.  
+ Free 블록은 해당 할당 취소 하는 경우 지연 된 블록 수가 `afxMemDF` 로 설정 된 `delayFreeMemDF`합니다. 자세한 내용은 [afxMemDF](diagnostic-services.md#afxmemdf), "MFC 매크로 및 전역 변수" 섹션에 있습니다. 참조 [블록 형식 디버그 힙의](https://msdn.microsoft.com/db2e7f62-0679-4b39-a23f-26f2c2f407c5) 자세한 내용은 블록 형식에 대 한 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   다음 코드를 배치할 *projname*App.cpp 합니다. 다음 전역 변수를 정의 합니다.  
   
  [!code-cpp[NVC_MFC_Utilities#40](../../mfc/codesnippet/cpp/cmemorystate-structure_2.cpp)]  

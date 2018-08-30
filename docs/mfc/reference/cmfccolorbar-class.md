@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3da308e92554bd573e9efccdd47aa6e6fd71e26a
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 08d7edc11584f7a7c6d2b218d9bfbbcf8d3020a4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850237"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212106"
 ---
 # <a name="cmfccolorbar-class"></a>CMFCColorBar 클래스
 `CMFCColorBar` 문서 또는 응용 프로그램에서 색을 선택할 수 있는 도킹 컨트롤 막대 클래스를 나타냅니다.  
@@ -161,11 +161,11 @@ class CMFCColorBar : public CMFCPopupMenuBar
 |`m_BoxSize`|A [CSize](../../atl-mfc-shared/reference/csize-class.md) 색 막대 표의 셀의 크기를 지정 하는 개체입니다.|  
 |`m_bShowDocColorsWhenDocked`|색 막대에 도킹 되 면 문서 색을 표시할지 여부를 나타내는 부울입니다. 자세한 내용은 [CMFCColorBar::SetDocumentColors](#setdocumentcolors)합니다.|  
 |`m_bStdColorDlg`|표준 시스템 색 대화 상자를 표시할지 여부를 나타내는 부울 값 또는 [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) 대화 상자. 자세한 내용은 [CMFCColorBar::EnableOtherButton](#enableotherbutton)합니다.|  
-|`m_ColorAutomatic`|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 현재 자동 색을 저장 합니다. 자세한 내용은 [CMFCColorBar::EnableOtherButton](#enableotherbutton)합니다.|  
+|`m_ColorAutomatic`|A [COLORREF](/windows/desktop/gdi/colorref) 현재 자동 색을 저장 합니다. 자세한 내용은 [CMFCColorBar::EnableOtherButton](#enableotherbutton)합니다.|  
 |`m_ColorNames`|[CMap](../../mfc/reference/cmap-class.md) 이름으로 색을 RGB 집합에 연결 하는 개체입니다.|  
-|`m_colors`|A [CArray](../../mfc/reference/carray-class.md) 의 [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 색 막대 컨트롤에 표시 되는 색이 포함 된 값입니다.|  
-|`m_ColorSelected`|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 사용자가 색 막대 컨트롤에서 현재 선택한 색 값입니다.|  
-|`m_lstDocColors`|A [CList](../../mfc/reference/clist-class.md) 의 [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 문서에서 현재 사용 되는 색이 포함 된 값입니다.|  
+|`m_colors`|A [CArray](../../mfc/reference/carray-class.md) 의 [COLORREF](/windows/desktop/gdi/colorref) 색 막대 컨트롤에 표시 되는 색이 포함 된 값입니다.|  
+|`m_ColorSelected`|A [COLORREF](/windows/desktop/gdi/colorref) 사용자가 색 막대 컨트롤에서 현재 선택한 색 값입니다.|  
+|`m_lstDocColors`|A [CList](../../mfc/reference/clist-class.md) 의 [COLORREF](/windows/desktop/gdi/colorref) 문서에서 현재 사용 되는 색이 포함 된 값입니다.|  
 |`m_nCommandID`|부호 없는 정수로 색 단추의 명령 ID입니다.|  
 |`m_nHorzMargin`|색 눈금에서 색 단추 사이의 가로 여백을 나타내는 정수입니다.|  
 |`m_nHorzOffset`|색 단추의 가운데에 가로 오프셋을 나타내는 정수입니다. 이 값은 텍스트 또는 색 외에도 이미지 단추를 표시 하는 경우에 중요 합니다.|  
@@ -208,7 +208,7 @@ class CMFCColorBar : public CMFCPopupMenuBar
   
  프레임 워크를 사용 하 여 사용자가 색 막대 컨트롤 단추를 클릭 합니다 `ON_COMMAND` 매크로를 색 막대 컨트롤의 부모에 게 알립니다. 매크로의 명령 ID 매개 변수 (이 예제의 ID_CHAR_COLOR) 1 단계에서 색 막대 단추 컨트롤에 할당 된 값입니다. 자세한 내용은 참조 하세요. 합니다 [CMFCColorMenuButton 클래스](../../mfc/reference/cmfccolormenubutton-class.md), [CMFCColorButton 클래스](../../mfc/reference/cmfccolorbutton-class.md), [CMFCColorPickerCtrl 클래스](../../mfc/reference/cmfccolorpickerctrl-class.md), [CFrameWndEx클래스](../../mfc/reference/cframewndex-class.md), 및 [CMFCToolBar 클래스](../../mfc/reference/cmfctoolbar-class.md) 클래스입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서 다양 한 메서드를 사용 하 여 색 막대를 구성 하는 방법에 설명 합니다 `CMFCColorBar` 클래스입니다. 메서드를 가로 및 세로 여백을 설정, 기타 단추를 사용 하도록 설정, 색 막대 컨트롤 창을 만들 및 현재 선택한 색을 설정 합니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_NewControls#1](../../mfc/reference/codesnippet/cpp/cmfccolorbar-class_1.h)]  

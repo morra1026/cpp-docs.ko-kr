@@ -50,12 +50,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9ea6f4a5770163ddaa34478f6630ed2a24ffbd6
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 4594e24ddf88292d311679b64371ac981642bc5d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954970"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222723"
 ---
 # <a name="basicfilebuf-class"></a>basic_filebuf 클래스
 
@@ -70,9 +70,11 @@ class basic_filebuf : public basic_streambuf<Elem, Tr>
 
 ### <a name="parameters"></a>매개 변수
 
-*Elem* 파일 버퍼의 기본 요소입니다.
+*Elem*<br/>
+ 파일 버퍼의 기본 요소입니다.
 
-*Tr* 파일 버퍼 기본 요소의 특성 (일반적으로 `char_traits` <  `Elem`>).
+*Tr*<br/>
+ 파일 버퍼 기본 요소의 특성(일반적으로 `char_traits`< `Elem`>)입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -83,7 +85,7 @@ class basic_filebuf : public basic_streambuf<Elem, Tr>
 
 `basic_filebuf`< `Elem`, `Tr`> 클래스의 개체는 열려 있는 파일과 연결된 스트림을 제어하는 `FILE` 개체를 지정하는 파일 포인터를 저장합니다. 또한 보호된 멤버 함수 [overflow](#overflow) 및 [underflow](#underflow)에서 사용하도록 두 가지 파일 변환 패싯에 대한 포인터를 저장합니다. 자세한 내용은 [basic_filebuf::open](#open)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 `basic_filebuf<wchar_t>` 형식의 개체가 `pubsetbuf()` 메서드를 호출하여 유니코드 문자열을 내부 버퍼에 강제로 저장하도록 하는 방법을 보여 줍니다.
 
@@ -283,7 +285,7 @@ basic_filebuf<Elem, Tr> *close();
 
 와이드 스트림의 경우 스트림이 열린 이후 또는 `streampos`에 대한 마지막 호출 이후 삽입이 발생하면 함수는 [overflow](#overflow)를 호출합니다. 또한 파일 변환 패싯을 사용 하 여, 초기 변환 상태를 복원 하는 데 필요한 시퀀스를 삽입 `fac` 호출할 `fac.unshift` 필요에 따라 합니다. 요소당 `byte` 형식의 **char** 따라서 생성 된 파일 포인터에 의해 지정 된 연결 된 스트림에 쓰여집니다 `fp` 형식의 연속 호출이 마치 `fputc`( **바이트**하십시오 **fp**). 경우에 대 한 호출 `fac.unshift` 또는 쓰기가 실패 하면, 함수 성공 하지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 샘플에서는 현재 디렉터리에 두 개의 파일, 즉 basic_filebuf_close.txt(내용: "테스트") 및 iotest.txt(내용: "ssss")가 있다고 가정합니다.
 
@@ -352,7 +354,7 @@ bool is_open() const;
 
 파일 포인터가 null 포인터가 아니면 **true**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_filebuf_is_open.cpp
@@ -410,11 +412,14 @@ basic_filebuf<Elem, Tr> *open(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Filename* 열려는 파일의 이름입니다.
+*_Filename*<br/>
+ 열어야 할 파일의 이름입니다.
 
-*모드 (_m)* 의 열거형 중 하나 [ios_base:: openmode](../standard-library/ios-base-class.md#openmode)합니다.
+*모드 (_m)*<br/>
+ [ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
-*_Prot* 기본 파일 열기 보호는 *shflag* 의 매개 변수에 [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)합니다.
+*_Prot*<br/>
+ 기본 파일 열기 보호 합니다 *shflag* 에 매개 변수 [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -442,7 +447,7 @@ basic_filebuf<Elem, Tr> *open(
 
 파일 포인터가 null 포인터인 경우 함수는 null 포인터를 반환합니다. 아닌 경우 **this**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `open`의 사용 예제는 [basic_filebuf::close](#close)를 참조하세요.
 
@@ -456,7 +461,8 @@ basic_filebuf& operator=(basic_filebuf&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* rvalue 참조를 [basic_filebuf](../standard-library/basic-filebuf-class.md) 개체입니다.
+*right*<br/>
+ [basic_filebuf](../standard-library/basic-filebuf-class.md) 개체에 대한 rvalue 참조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -476,7 +482,8 @@ virtual int_type overflow(int_type _Meta = traits_type::eof);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Meta* 버퍼에 삽입할 문자 또는 `traits_type::eof`합니다.
+*_Meta*<br/>
+ 버퍼에 삽입할 문자 또는 `traits_type::eof`합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -484,7 +491,7 @@ virtual int_type overflow(int_type _Meta = traits_type::eof);
 
 ### <a name="remarks"></a>설명
 
-경우 _ * 메타 ***! = traits_type::**[eof](../standard-library/char-traits-struct.md#eof), 보호 된 가상 구성원 함수는 요소를 삽입 하려고 **ch = traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type) (\_ *Meta*) 출력 버퍼에 있습니다. 수행할 수 있는 방법은 다양합니다.
+하는 경우 *_Meta* **! = traits_type::**[eof](../standard-library/char-traits-struct.md#eof), 보호 된 가상 구성원 함수는 요소를 삽입 하려고 **ch = traits_type::** [ to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*_Meta*) 출력 버퍼에 있습니다. 수행할 수 있는 방법은 다양합니다.
 
 - 쓰기 위치가 사용 가능한 경우 요소를 쓰기 위치에 저장하고 출력 버퍼에 대해 다음 포인터를 증분할 수 있습니다.
 
@@ -502,7 +509,8 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Meta* 버퍼에 삽입할 문자 또는 `traits_type::eof`합니다.
+*_Meta*<br/>
+ 버퍼에 삽입할 문자 또는 `traits_type::eof`입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -538,11 +546,14 @@ virtual pos_type seekoff(off_type _Off,
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off* 위치를 기준으로 찾을 *_Way*합니다.
+*_Off*<br/>
+ 위치를 기준으로 찾을 *_Way*합니다.
 
-*_Way* 오프셋된 작업에 대 한 시작점입니다. 가능한 값은 [seekdir](../standard-library/ios-base-class.md#seekdir)을 참조하세요.
+*_Way*<br/>
+ 오프셋 작업의 시작 지점입니다. 가능한 값은 [seekdir](../standard-library/ios-base-class.md#seekdir)을 참조하세요.
 
-*_Which* 포인터 위치에 대 한 모드를 지정 합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
+*_Which*<br/>
+ 포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -566,9 +577,11 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in 
 
 ### <a name="parameters"></a>매개 변수
 
-*_Sp* 를 위치에 대 한 검색입니다.
+*_Sp*<br/>
+ 찾을 위치입니다.
 
-*_Which* 포인터 위치에 대 한 모드를 지정 합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
+*_Which*<br/>
+ 포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -594,9 +607,11 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Buffer* 버퍼에 대 한 포인터입니다.
+*_Buffer*<br/>
+ 버퍼에 대한 포인터입니다.
 
-*개수* 버퍼의 크기입니다.
+*count*<br/>
+ 버퍼의 크기입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -604,8 +619,7 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
 
 ### <a name="remarks"></a>설명
 
-
-  `setbuf`는 `setvbuf`(**fp**, (`char`\*) `_Buffer`, `_IOFBF`, `count`\*`sizeof` (**Elem**))을 호출하여 _ *Buffer*에서 시작하는 `count` 요소의 배열을 스트림에 대한 버퍼로 제공합니다. 해당 함수가 0이 아닌 값을 반환하는 경우 이 함수는 null 포인터를 반환합니다. 아닌 경우 성공을 알리기 위해 **this**를 반환합니다.
+`setbuf`는 `setvbuf`(**fp**, (`char`\*) `_Buffer`, `_IOFBF`, `count`\*`sizeof` (**Elem**))을 호출하여 _ *Buffer*에서 시작하는 `count` 요소의 배열을 스트림에 대한 버퍼로 제공합니다. 해당 함수가 0이 아닌 값을 반환하는 경우 이 함수는 null 포인터를 반환합니다. 아닌 경우 성공을 알리기 위해 **this**를 반환합니다.
 
 ## <a name="swap"></a>  basic_filebuf::swap
 
@@ -617,7 +631,8 @@ void swap(basic_filebuf& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 는 `lvalue` 다른 참조 `basic_filebuf`합니다.
+*right*<br/>
+ 다른 `basic_filebuf`에 대한 `lvalue` 참조입니다.
 
 ## <a name="sync"></a>  basic_filebuf::sync
 

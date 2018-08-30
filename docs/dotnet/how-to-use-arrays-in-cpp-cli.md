@@ -15,18 +15,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 14eb98f485dc60974253e85086bb25531de7105d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 865416872855be19f4848587e51edf8bfbbdb299
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33138779"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213007"
 ---
 # <a name="how-to-use-arrays-in-ccli"></a>방법: C++/CLI에서 배열 사용
-이 문서에서는 배열을 사용 하 여 C + + /cli CLI 합니다.  
+이 문서에서는 배열을 사용 하 여 C + + /cli CLI입니다.  
   
 ## <a name="single-dimension-arrays"></a>1 차원 배열  
- 다음 샘플에는 참조, 값 및 네이티브 포인터 형식의 1 차원 배열을 만드는 방법을 보여 줍니다. 또한 단일 차원 배열이 함수에서 반환 하는 방법과 함수에는 1 차원 배열을 인수로 전달 하는 방법을 보여 줍니다.  
+ 다음 샘플에는 참조, 값 및 네이티브 포인터 형식의 1 차원 배열을 만드는 방법을 보여 줍니다. 또한 함수에서 1 차원 배열을 반환 하는 방법 및 함수에는 1 차원 배열을 인수로 전달 하는 방법을 보여 줍니다.  
   
 ```cpp  
 // mcppv2_sdarrays.cpp  
@@ -160,7 +160,7 @@ MyStruct1[0] = 40
 MyStruct1[1] = 41  
 ```  
   
- 다음 예제에는 관리 되는 1 차원 배열에 집합체 초기화를 수행 하는 방법을 보여 줍니다.  
+ 다음 샘플에는 관리 되는 1 차원 배열에서 집합체 초기화를 수행 하는 방법을 보여 줍니다.  
   
 ```cpp  
 // mcppv2_sdarrays_aggregate_init.cpp  
@@ -213,7 +213,7 @@ IntArray[1, 0] = 11
 IntArray[1, 1] = 11  
 ```  
   
- 이 예제에는 관리 되는 다차원 배열에서 집합체 초기화를 수행 하는 방법을 보여 줍니다.  
+ 이 예제에서 관리 되는 다차원 배열 집합체 초기화를 수행 하는 방법을 보여 줍니다.  
   
 ```cpp  
 // mcppv2_mdarrays_aggregate_initialization.cpp  
@@ -258,7 +258,7 @@ int main() {
 ```  
   
 ## <a name="jagged-arrays"></a>가변 배열  
- 이 섹션에는 관리 되는 배열 참조, 값 및 네이티브 포인터 형식의 1 차원 배열을 만드는 방법을 보여 줍니다. 또한 관리 되는 배열의 1 차원 배열 함수에서 반환 하는 방법과 함수에는 1 차원 배열을 인수로 전달 하는 방법을 보여 줍니다.  
+ 이 섹션에서는 관리 되는 배열 참조, 값 및 네이티브 포인터 형식의 1 차원 배열을 만드는 방법을 보여 줍니다. 또한 함수에서 관리 되는 배열의 1 차원 배열을 반환 하는 방법 및 함수에는 1 차원 배열을 인수로 전달 하는 방법을 보여 줍니다.  
   
 ```cpp  
 // mcppv2_array_of_arrays.cpp  
@@ -355,7 +355,7 @@ IntArray[1] = 11
 41  
 ```  
   
- 다음 샘플에서는 가변된 배열이 포함 된 집합체 초기화를 수행 하는 방법을 보여 줍니다.  
+ 다음 샘플에는 가변된 배열이 포함 된 집합체 초기화를 수행 하는 방법을 보여 줍니다.  
   
 ```cpp  
 // mcppv2_array_of_arrays_aggregate_init.cpp  
@@ -460,8 +460,8 @@ MyClass0[1] = 1
 [ g h ]  
 ```  
   
-## <a name="managed-arrays-as-template-type-parameters"></a>관리 되는 배열을 템플릿 형식 매개 변수  
- 이 예제에는 관리 되는 배열을 템플릿 매개 변수로 사용 하는 방법을 보여 줍니다.  
+## <a name="managed-arrays-as-template-type-parameters"></a>관리 되는 배열을 템플릿 형식 매개 변수로  
+ 이 예제에서는 템플릿에 매개 변수로 관리 되는 배열을 사용 하는 방법을 보여 줍니다.  
   
 ```cpp  
 // mcppv2_template_type_params.cpp  
@@ -489,8 +489,8 @@ int main() {
 Return Code: 0  
 ```  
   
-## <a name="typedefs-for-managed-arrays"></a>관리 되는 배열에 대 한 typedef  
- 이 예제에는 관리 되는 배열에 대 한 typedef를 확인 하는 방법을 보여 줍니다.  
+## <a name="typedefs-for-managed-arrays"></a>관리 되는 배열의 typedefs  
+ 이 예제에서는 관리 되는 배열에 대 한 형식 정의 확인 하는 방법을 보여 줍니다.  
   
 ```cpp  
 // mcppv2_typedef_arrays.cpp  
@@ -506,9 +506,9 @@ int main() {
 ```  
   
 ## <a name="sorting-arrays"></a>배열 정렬  
- 표준 c + + 배열과 달리, 관리 되는 배열 일반 동작을 상속 하는 배열의 기본 클래스에서 암시적으로 파생 됩니다. 예로 `Sort` 모든 배열에 있는 항목을 정렬 하는 데 사용할 수 있는 메서드.  
+ 표준 c + + 배열과 달리, 관리 되는 배열 있는 일반 동작의 상속 하는 배열의 기본 클래스에서 암시적으로 파생 됩니다. 예로 `Sort` 배열에서 항목을 주문 하는 메서드.  
   
- 기본 내장 형식을 포함 하는 배열에 대해 호출할 수 있습니다는 `Sort` 메서드. 정렬 조건을 재정의 하 고이 필요한 한 복합 형식의 배열에 대 한 정렬 하려는 경우 키를 누릅니다. 이 경우 배열 요소 형식은 구현 해야 합니다는 [IComparable::CompareTo](https://msdn.microsoft.com/en-us/library/system.icomparable.compareto.aspx) 메서드.  
+ 기본 내장 형식을 포함 하는 배열에 대해 호출할 수 있습니다는 `Sort` 메서드. 정렬 기준을 재정의 하 고 하는 것은 필요한 복합 형식의 배열에 대 한 정렬 하려고 할 때 키를 누릅니다. 이 경우 배열 요소 형식은 구현 해야 합니다 [IComparable::CompareTo](https://msdn.microsoft.com/library/system.icomparable.compareto.aspx) 메서드.  
   
 ```cpp  
 // array_sort.cpp  
@@ -524,9 +524,9 @@ int main() {
 ```  
   
 ## <a name="sorting-arrays-by-using-custom-criteria"></a>사용자 지정 조건을 사용 하 여 배열 정렬  
- 기본 내장 형식을 포함 하는 배열을 정렬 하려면 호출는 `Array::Sort` 메서드. 그러나 기본 정렬 조건을 재정의 하려면 재정의 또는 복합 형식을 포함 하는 정렬 배열에는 [IComparable::CompareTo](https://msdn.microsoft.com/en-us/library/system.icomparable.compareto.aspx) 메서드.  
+ 기본 내장 형식을 포함 하는 배열을 정렬 하려면 호출을 `Array::Sort` 메서드. 그러나 복잡 한 형식을 포함 하거나 기본 정렬 조건을 재정의 하려면 재정의 하는 정렬 배열에 합니다 [IComparable::CompareTo](https://msdn.microsoft.com/library/system.icomparable.compareto.aspx) 메서드.  
   
- 다음 예제에서는 구조체 이름이 `Element` 에서 파생 된 <xref:System.IComparable>, 하 게 작성 하 고는 <xref:System.IComparable.CompareTo%2A> 정렬 기준으로 두 정수의 평균을 사용 하는 메서드.  
+ 다음 예제에서는 구조체 이름이 `Element` 에서 파생 됩니다 <xref:System.IComparable>, 하 게 작성 하 고는 <xref:System.IComparable.CompareTo%2A> 정렬 기준으로 두 정수의 평균을 사용 하는 메서드.  
   
 ```cpp  
 using namespace System;  
@@ -570,8 +570,8 @@ int main() {
 }  
 ```  
   
-## <a name="array-covariance"></a>배열 공 분산  
- 직접 또는 간접 기본 클래스가 B 참조 클래스 D를 매개 변수로 받아 D 형식의 배열에 할당할 수 형식 B.의 배열 변수  
+## <a name="array-covariance"></a>배열 공변성 (covariance)  
+ 직접 또는 간접 기본 클래스 B를 가진 참조 클래스 D 들어 차원 형식 배열을 할당할 수 있습니다. 형식 배열 변수  
   
 ```cpp  
 // clr_array_covariance.cpp  
@@ -584,9 +584,9 @@ int main() {
 }  
 ```  
   
- 배열 요소에 할당 하는 할당 호환이 되어야 합니다. 동적 유형의 배열입니다. 호환 되지 않는 형식이 지정 된 배열 요소에 대 한 할당 하면 `System::ArrayTypeMismatchException` throw 됩니다.  
+ 배열 요소에 대 한 할당 대입과 호환 되어야 합니다. 동적 유형의 배열입니다. 호환 되지 않는 형식이 있는 배열 요소에 할당 하면 `System::ArrayTypeMismatchException` throw 됩니다.  
   
- 배열 공 분산 값 클래스 형식의 배열에 적용 되지 않습니다. 예를 들어 int32 배열 변환할 수 없습니다 개체 ^ 배열, boxing을 사용 하 여도 마찬가지입니다.  
+ 배열 공 분산 값 클래스 형식의 배열에 적용 되지 않습니다. 예를 들어 Int32의 배열 변환할 수 없습니다 개체 ^ 하더라도 boxing을 사용 하 여 배열 합니다.  
   
 ```cpp  
 // clr_array_covariance2.cpp  

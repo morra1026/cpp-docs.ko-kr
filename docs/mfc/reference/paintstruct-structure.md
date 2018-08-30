@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75a3db6c6beb18afe2303b464fcab290b2e132fc
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: dddf9c117f2366496609f8bdf4ffc2f069f66ace
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338212"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199575"
 ---
 # <a name="paintstruct-structure"></a>PAINTSTRUCT 구조체
 `PAINTSTRUCT` 구조 창의 클라이언트 영역을 그리는 데 사용할 수 있는 정보를 포함 합니다.  
@@ -44,7 +44,7 @@ typedef struct tagPAINTSTRUCT {
  그리기에 사용 되는 디스플레이 컨텍스트를 식별 합니다.  
   
  *fErase*  
- 배경을 그려야 해야 하는지 여부를 지정 합니다. 없는 응용 프로그램 배경을 그리면 0입니다. 응용 프로그램은 배경 브러시를 하지 않고 Windows 창을-클래스를 만들 경우 배경을 그리기 위한 (에 대 한 설명을 참조를 `hbrBackground` 의 멤버는 [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) Windows SDK의 구조).  
+ 배경을 그려야 해야 하는지 여부를 지정 합니다. 없는 응용 프로그램 배경을 그리면 0입니다. 응용 프로그램은 배경 브러시를 하지 않고 Windows 창을-클래스를 만들 경우 배경을 그리기 위한 (에 대 한 설명을 참조를 `hbrBackground` 의 멤버는 [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) Windows SDK의 구조).  
   
  *rcPaint*  
  왼쪽 위를 지정 하 고 그리기 요청은 사각형의 오른쪽 모퉁이 절감 합니다.  

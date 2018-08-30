@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c6f84f575edbcaf8ecc64f424f3225d969d6a7f
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: f79917e34a749048696f320a8311978acc2739f4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850357"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202857"
 ---
 # <a name="colecontrolsite-class"></a>COleControlSite 클래스
 사용자 지정 클라이언트 측 컨트롤 인터페이스를 지원합니다.  
@@ -205,7 +205,7 @@ class COleControlSite : public CCmdTarget
 |[COleControlSite::m_rect](#m_rect)|컨트롤 사이트의 크기입니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 지원은 방식과는 ActiveX 컨트롤이 포함된 된 위치와 해당 표시 사이트, 해당 모니커, 해당 사용자 인터페이스, 해당 앰비언트 속성 및 컨테이너에 의해 제공 되는 다른 리소스의 범위에 대 한 정보를 가져옵니다. `COleControlSite` 완벽 하 게 구현 합니다 [IOleControlSite](http://msdn.microsoft.com/library/windows/desktop/ms688502)를 [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586)를 [IOleClientSite](http://msdn.microsoft.com/library/windows/desktop/ms693706)를 [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638), `IBoundObjectSite`, `INotifyDBEvents`하십시오 [IRowSetNotify](../../data/oledb/irowsetnotifyimpl-class.md) 인터페이스입니다. 또한 (앰비언트 속성 및 이벤트 싱크에 대 한 지원 제공) IDispatch 인터페이스 구현 됩니다.  
+ 이 지원은 방식과는 ActiveX 컨트롤이 포함된 된 위치와 해당 표시 사이트, 해당 모니커, 해당 사용자 인터페이스, 해당 앰비언트 속성 및 컨테이너에 의해 제공 되는 다른 리소스의 범위에 대 한 정보를 가져옵니다. `COleControlSite` 완벽 하 게 구현 합니다 [IOleControlSite](/windows/desktop/api/ocidl/nn-ocidl-iolecontrolsite)를 [IOleInPlaceSite](/windows/desktop/api/oleidl/nn-oleidl-ioleinplacesite)를 [IOleClientSite](/windows/desktop/api/oleidl/nn-oleidl-ioleclientsite)를 [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink), `IBoundObjectSite`, `INotifyDBEvents`하십시오 [IRowSetNotify](../../data/oledb/irowsetnotifyimpl-class.md) 인터페이스입니다. 또한 (앰비언트 속성 및 이벤트 싱크에 대 한 지원 제공) IDispatch 인터페이스 구현 됩니다.  
   
  ActiveX 컨트롤 사이트를 사용 하 여 만들려는 `COleControlSite`에서 클래스를 파생 `COleControlSite`합니다. 사용자 `CWnd`-컨테이너 (예를 들어 대화 상자)에 대 한 파생된 클래스에서 재정의 된 `CWnd::CreateControlSite` 함수입니다.  
   
@@ -406,7 +406,7 @@ virtual HRESULT DoVerb(
 ### <a name="remarks"></a>설명  
  이 함수를 직접 컨트롤을 통해 호출 `IOleObject` 지정된 된 동사를 실행 하는 인터페이스입니다. 이 함수 호출의 결과로 예외가 throw 되 면 HRESULT 오류 코드 반환 됩니다.  
   
- 자세한 내용은 [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508) Windows SDK에 있습니다.  
+ 자세한 내용은 [IOleObject::DoVerb](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb) Windows SDK에 있습니다.  
   
 ##  <a name="enabledsc"></a>  COleControlSite::EnableDSC  
  컨트롤 사이트에 대 한 원본을 지정 하는 데이터를 사용 하도록 설정 합니다.  
@@ -676,7 +676,7 @@ CONTROLINFO m_ctlInfo;
 ```  
   
 ### <a name="remarks"></a>설명  
- 이 정보에 저장 되는 [한 채울 CONTROLINFO](http://msdn.microsoft.com/library/windows/desktop/ms680734) 구조입니다.  
+ 이 정보에 저장 되는 [한 채울 CONTROLINFO](/windows/desktop/api/ocidl/ns-ocidl-tagcontrolinfo) 구조입니다.  
   
 ##  <a name="m_dweventsink"></a>  COleControlSite::m_dwEventSink  
  컨트롤의 이벤트 싱크에서 연결 지점의 쿠키를 포함합니다.  
@@ -693,10 +693,10 @@ DWORD m_dwMiscStatus;
 ```  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497)Windows SDK에 있습니다.  
+ 자세한 내용은 [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc)Windows SDK에 있습니다.  
   
 ##  <a name="m_dwpropnotifysink"></a>  COleControlSite::m_dwPropNotifySink  
- 포함 된 [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638) 쿠키입니다.  
+ 포함 된 [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) 쿠키입니다.  
   
 ```  
 DWORD m_dwPropNotifySink;  
@@ -731,7 +731,7 @@ UINT m_nID;
 ```  
   
 ##  <a name="m_pactiveobject"></a>  COleControlSite::m_pActiveObject  
- 포함 된 [IOleInPlaceActiveObject](http://msdn.microsoft.com/library/windows/desktop/ms691299) 컨트롤의 인터페이스입니다.  
+ 포함 된 [IOleInPlaceActiveObject](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceactiveobject) 컨트롤의 인터페이스입니다.  
   
 ```  
 LPOLEINPLACEACTIVEOBJECT m_pActiveObject;  
@@ -745,7 +745,7 @@ COleControlContainer* m_pCtrlCont;
 ```  
   
 ##  <a name="m_pinplaceobject"></a>  COleControlSite::m_pInPlaceObject  
- 포함 된 `IOleInPlaceObject` [위해서는](http://msdn.microsoft.com/library/windows/desktop/ms692646) 컨트롤의 인터페이스입니다.  
+ 포함 된 `IOleInPlaceObject` [위해서는](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceobject) 컨트롤의 인터페이스입니다.  
   
 ```  
 LPOLEINPLACEOBJECT m_pInPlaceObject;  
@@ -759,7 +759,7 @@ LPOLEOBJECT m_pObject;
 ```  
   
 ##  <a name="m_pwindowlessobject"></a>  COleControlSite::m_pWindowlessObject  
- 포함 된 `IOleInPlaceObjectWindowless` [IOleInPlaceObjectWindowless](http://msdn.microsoft.com/library/windows/desktop/ms687304) 컨트롤의 인터페이스입니다.  
+ 포함 된 `IOleInPlaceObjectWindowless` [IOleInPlaceObjectWindowless](/windows/desktop/api/ocidl/nn-ocidl-ioleinplaceobjectwindowless) 컨트롤의 인터페이스입니다.  
   
 ```  
 IOleInPlaceObjectWindowless* m_pWindowlessObject;  
@@ -797,7 +797,7 @@ virtual BOOL ModifyStyle(
  현재 창 스타일에서 추가할 스타일입니다.  
   
  *nFlags*  
- 창 위치 플래그를 지정 합니다. 가능한 값 목록을 참조 하세요. 합니다 [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK에는 함수입니다.  
+ 창 위치 플래그를 지정 합니다. 가능한 값 목록을 참조 하세요. 합니다 [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK에는 함수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 속성을 0이 아닌 스타일을 변경 하는 경우, 그렇지 않으면 0입니다.  
@@ -805,7 +805,7 @@ virtual BOOL ModifyStyle(
 ### <a name="remarks"></a>설명  
  컨트롤의 재고 Enabled 속성 WS_DISABLED에 대 한 설정과 일치 하도록 수정 됩니다. 컨트롤의 테두리 스타일 속성 주식 WS_BORDER에 대 한 요청된 된 설정에 맞게 수정 됩니다. 있는 경우 다른 모든 스타일 컨트롤의 창 핸들에 직접 적용 됩니다.  
   
- 컨트롤의 창 스타일을 수정합니다. 비트 OR를 사용 하 여 추가 하거나 제거 하는 스타일을 결합할 수 있습니다 ( &#124; ) 연산자. 참조를 [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) 사용할 창 스타일에 대 한 내용은 Windows SDK에는 함수입니다.  
+ 컨트롤의 창 스타일을 수정합니다. 비트 OR를 사용 하 여 추가 하거나 제거 하는 스타일을 결합할 수 있습니다 ( &#124; ) 연산자. 참조를 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) 사용할 창 스타일에 대 한 내용은 Windows SDK에는 함수입니다.  
   
  하는 경우 *nFlags* 이 값은 0 `ModifyStyle` Win32 함수 호출 `SetWindowPos`를 결합 하 여 창을 다시 그립니다 *nFlags* 다음 네 가지 플래그를 사용 하 여:  
   
@@ -837,7 +837,7 @@ virtual BOOL ModifyStyleEx(
  현재 창 스타일에서 추가할 확장 된 스타일입니다.  
   
  *nFlags*  
- 창 위치 플래그를 지정 합니다. 가능한 값 목록을 참조 하세요. 합니다 [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK에는 함수입니다.  
+ 창 위치 플래그를 지정 합니다. 가능한 값 목록을 참조 하세요. 합니다 [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK에는 함수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 속성을 0이 아닌 스타일을 변경 하는 경우, 그렇지 않으면 0입니다.  
@@ -845,7 +845,7 @@ virtual BOOL ModifyStyleEx(
 ### <a name="remarks"></a>설명  
  컨트롤의 재고 Appearance 속성 WS_EX_CLIENTEDGE에 대 한 설정과 일치 하도록 수정 됩니다. 있는 경우 다른 모든 확장된 창 스타일 컨트롤의 창 핸들에 직접 적용 됩니다.  
   
- 창의 확장 스타일 컨트롤 사이트 개체를 수정 합니다. 비트 OR를 사용 하 여 추가 하거나 제거 하는 스타일을 결합할 수 있습니다 ( &#124; ) 연산자. 참조를 [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) 사용할 창 스타일에 대 한 내용은 Windows SDK에는 함수입니다.  
+ 창의 확장 스타일 컨트롤 사이트 개체를 수정 합니다. 비트 OR를 사용 하 여 추가 하거나 제거 하는 스타일을 결합할 수 있습니다 ( &#124; ) 연산자. 참조를 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) 사용할 창 스타일에 대 한 내용은 Windows SDK에는 함수입니다.  
   
  하는 경우 *nFlags* 이 값은 0 `ModifyStyleEx` Win32 함수 호출 `SetWindowPos`를 결합 하 여 창을 다시 그립니다 *nFlags* 다음 네 가지 플래그를 사용 하 여:  
   
@@ -1051,7 +1051,7 @@ virtual BOOL SetWindowPos(
  창의 새 높이입니다.  
   
  *nFlags*  
- 창 크기 및 위치 플래그를 지정 합니다. 가능한 값에 대 한 설명 섹션을 참조 하세요 [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK에 있습니다.  
+ 창 크기 및 위치 플래그를 지정 합니다. 가능한 값에 대 한 설명 섹션을 참조 하세요 [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK에 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
  0이 아닌 성공, 그렇지 않으면 0입니다.  

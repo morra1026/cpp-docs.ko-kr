@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 17c5742fccdc32396b36d058188f3609caf08791
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e3461f622e5146a9173e0a011fbec60a9674c545
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42586748"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223343"
 ---
 # <a name="propget"></a>propget
 
@@ -36,9 +36,9 @@ ms.locfileid: "42586748"
 
 ## <a name="remarks"></a>설명
 
-합니다 **propget** c + + 특성에 동일한 기능을 합니다 [propget](http://msdn.microsoft.com/library/windows/desktop/aa367145) MIDL 특성입니다.
+합니다 **propget** c + + 특성에 동일한 기능을 합니다 [propget](/windows/desktop/Midl/propget) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 예를 참조 하세요 [bindable](../windows/bindable.md) 의 샘플 사용에 대 한 **propget**합니다.
 

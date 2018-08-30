@@ -35,12 +35,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf610316c504e61d56556a20797f55d2906bca27
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ea9d028454c408492378c345fb6d6c6d9dfc23cb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406916"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199593"
 ---
 # <a name="rtcseterrorfuncw"></a>_RTC_SetErrorFuncW
 
@@ -61,41 +61,54 @@ _RTC_error_fnW _RTC_SetErrorFuncW(
 
 ## <a name="return-value"></a>반환 값
 
-이전에 정의 된 오류 독립적입니다. 또는 **NULL** 없는 이전에 정의 된 함수가 없는 경우.
+이전에 정의 된 오류 함수입니다. 또는 **NULL** 이전에 정의 된 함수가 없는 경우.
 
 ## <a name="remarks"></a>설명
 
 새 코드를 사용 하 여만 **_RTC_SetErrorFuncW**합니다. **_RTC_SetErrorFunc** 이전 버전과 호환성에 대 한 라이브러리에만 포함 되어 있습니다.
 
-**_RTC_SetErrorFuncW** 콜백, 연결 된 구성 요소에만 적용 됩니다 하지만 전역으로 사용 되지 않습니다.
+합니다 **_RTC_SetErrorFuncW** 콜백, 연결 된 구성 요소에만 적용 됩니다 있지만 전역적이 아닌 합니다.
 
-다음 사항을 확인 전달 하는 주소 **_RTC_SetErrorFuncW** 의 유효한 오류 처리 함수입니다.
+확인에 전달 하는 주소 **_RTC_SetErrorFuncW** 유효한 오류 처리 함수는 합니다.
 
-경우 오류가 여 할당 된-1의 형식을 사용 하 여 [_RTC_SetErrorType](rtc-seterrortype.md), 오류 처리 함수가 호출 되지 않습니다.
+오류가 발생 했습니다 된 형식을 할당 한 경우-1를 사용 하 여 [_RTC_SetErrorType](rtc-seterrortype.md), 오류 처리 함수가 호출 되지 않습니다.
 
 이 함수를 호출하려면 먼저 런타임 오류 검사 초기화 함수 중 하나를 호출해야 합니다. 자세한 내용은 [Using Run-Time Checks Without the C Run-Time Library](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library)을 참조하십시오.
 
 **_RTC_error_fnW** 는 다음과 같이 정의됩니다.
 
-> **typedef int (__cdecl \*_RTC_error_fnW) (int** *errorType* **, const wchar_t \***  *filename* **, int***linenumber* **, const wchar_t \***  *moduleName* **, const wchar_t \***  *형식* **,...);** 
+```cpp
+typedef int (__cdecl * _RTC_error_fnW)(
+    int errorType,
+    const wchar_t * filename,
+    int linenumber,
+    const wchar_t * moduleName,
+    const wchar_t * format,
+    ... );
+```
 
 다음은 각 문자에 대한 설명입니다.
 
-*errorType* 변수로 지정 된 오류의 유형을 [_RTC_SetErrorType](rtc-seterrortype.md)합니다.
+*ErrorType*<br/>
+[_RTC_SetErrorType](rtc-seterrortype.md)으로 지정된 오류 유형입니다.
 
-*filename* 오류가 발생 하는 소스 파일 또는 디버그 정보가 없는 경우 null입니다.
+*filename*<br/>
+오류가 발생한 원본 파일 또는 디버그 정보를 사용할 수 없는 경우 null입니다.
 
-*linenumber* 함수의 줄 *filename* 오류가 발생 하거나 디버그 정보가 없는 경우 0입니다.
+*linenumber*<br/>
+오류가 발생한 *filename* 의 줄 또는 디버그 정보를 사용할 수 없는 경우 0입니다.
 
-*moduleName* DLL 또는 실행 파일 이름이 오류가 발생 합니다.
+*moduleName*<br/>
+오류가 발생한 DLL 또는 실행 파일 이름입니다.
 
-*형식* 나머지 매개 변수를 사용 하 여 오류 메시지를 표시할 printf 스타일 문자열입니다. VA_ARGLIST의 첫 번째 인수는 발생한 RTC 오류 번호입니다.
+*format*<br/>
+나머지 매개 변수를 사용하여 오류 메시지를 표시할 printf 스타일 문자열입니다. VA_ARGLIST의 첫 번째 인수는 발생한 RTC 오류 번호입니다.
 
 **_RTC_error_fnW** 사용 방법을 보여 주는 예제는 [네이티브 런타임 검사 사용자 지정](/visualstudio/debugger/native-run-time-checks-customization)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_RTC_SetErrorFuncW**|\<rtcapi.h>|
 

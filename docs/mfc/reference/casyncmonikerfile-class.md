@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31d16279b4de6c0cca0d37161a37ce5e39b85b7b
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: b0e961ecf45458dc039b932bdcc96c3bcc6f7521
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339360"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196334"
 ---
 # <a name="casyncmonikerfile-class"></a>CAsyncMonikerFile 클래스
 ActiveX 컨트롤(이전의 OLE 컨트롤)에서 비동기 모니커를 사용할 수 있도록 기능을 제공합니다.  
@@ -89,7 +89,7 @@ class CAsyncMonikerFile : public CMonikerFile
 |[CAsyncMonikerFile::OnStopBinding](#onstopbinding)|비동기 전송 중지 되 면 호출 됩니다.|  
   
 ## <a name="remarks"></a>설명  
- 파생 된 [CMonikerFile](../../mfc/reference/cmonikerfile-class.md)를 차례로에서 파생 된 [COleStreamFile](../../mfc/reference/colestreamfile-class.md), `CAsyncMonikerFile` 사용 하는 [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705) 모든 데이터 스트림에 액세스 하는 인터페이스 비동기적으로 URL에서 파일을 비동기적으로 로드를 포함 합니다. 파일에는 ActiveX 컨트롤의 데이터 경로 속성 일 수 있습니다.  
+ 파생 된 [CMonikerFile](../../mfc/reference/cmonikerfile-class.md)를 차례로에서 파생 된 [COleStreamFile](../../mfc/reference/colestreamfile-class.md), `CAsyncMonikerFile` 사용 하는 [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker) 모든 데이터 스트림에 액세스 하는 인터페이스 비동기적으로 URL에서 파일을 비동기적으로 로드를 포함 합니다. 파일에는 ActiveX 컨트롤의 데이터 경로 속성 일 수 있습니다.  
   
  비동기 모니커는 파일을 전송 하는 동안 응답성이 뛰어난 사용자 인터페이스를 제공 ActiveX 컨트롤 그리고 인터넷 사용 응용 프로그램에 주로 사용 됩니다. 사용 하는 것이 대표적인 예로 [CDataPathProperty](../../mfc/reference/cdatapathproperty-class.md) ActiveX 컨트롤에 대 한 비동기 속성을 제공 합니다. `CDataPathProperty` 개체 반복적으로 긴 속성 exchange 과정 동안 새 데이터의 가용성을 나타내기 위해 콜백을 받습니다.  
   
@@ -156,7 +156,7 @@ virtual IUnknown* CreateBindStatusCallback(IUnknown* pUnkControlling);
   
  [CAsyncMonikerFile::Open](#open) 호출 `CreateBindStatusCallback`합니다.  
   
- 비동기 모니커 및 비동기 바인딩에 대 한 자세한 내용은 참조는 [IBindStatusCallback](http://msdn.microsoft.com/library/ie/ms775060) 인터페이스 및 [비동기 바인딩 방법 및 저장소](http://msdn.microsoft.com/library/windows/desktop/aa379152)합니다. 집계의 논의 참조 하세요 [집계](http://msdn.microsoft.com/library/windows/desktop/ms686558)합니다. Windows SDK의 모든 세 가지 항목은입니다.  
+ 비동기 모니커 및 비동기 바인딩에 대 한 자세한 내용은 참조는 [IBindStatusCallback](https://msdn.microsoft.com/library/ie/ms775060) 인터페이스 및 [비동기 바인딩 방법 및 저장소](/windows/desktop/Stg/how-asynchronous-binding-and-storage-work)합니다. 집계의 논의 참조 하세요 [집계](/windows/desktop/com/aggregation)합니다. Windows SDK의 모든 세 가지 항목은입니다.  
   
 ##  <a name="getbindinfo"></a>  CAsyncMonikerFile::GetBindInfo  
  바인딩할 좋 어떻게 비동기 모니커를 구별 하는 비동기 모니커 클라이언트에서 호출 됩니다.  
@@ -196,7 +196,7 @@ FORMATETC* GetFormatEtc() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- Windows 구조에 대 한 포인터 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) 현재 열린된 스트림에 대 한 합니다. 모니커 바인딩되지 않은, 비동기, 없는 경우 또는 비동기 작업이 아직 시작 되지 않은 경우 NULL을 반환 합니다.  
+ Windows 구조에 대 한 포인터 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 현재 열린된 스트림에 대 한 합니다. 모니커 바인딩되지 않은, 비동기, 없는 경우 또는 비동기 작업이 아직 시작 되지 않은 경우 NULL을 반환 합니다.  
   
 ##  <a name="getpriority"></a>  CAsyncMonikerFile::GetPriority  
  바인딩 프로세스 스레드에 대해 지정 되는 바인딩 작업에 대 한 우선 순위를 수신 하기 시작 하는 대로 비동기 모니커는 클라이언트에서 호출 합니다.  
@@ -206,7 +206,7 @@ virtual LONG GetPriority() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 우선 순위는 비동기 전송을 수행 됩니다. 표준 스레드 우선 순위 플래그 중 하나: THREAD_PRIORITY_ABOVE_NORMAL, THREAD_PRIORITY_BELOW_NORMAL, THREAD_PRIORITY_HIGHEST, THREAD_PRIORITY_IDLE, THREAD_PRIORITY_LOWEST, THREAD_PRIORITY_NORMAL, 및 THREAD_PRIORITY_TIME_CRITICAL 합니다. Windows 함수를 참조 하십시오 [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) 이러한 값에 대 한 합니다.  
+ 우선 순위는 비동기 전송을 수행 됩니다. 표준 스레드 우선 순위 플래그 중 하나: THREAD_PRIORITY_ABOVE_NORMAL, THREAD_PRIORITY_BELOW_NORMAL, THREAD_PRIORITY_HIGHEST, THREAD_PRIORITY_IDLE, THREAD_PRIORITY_LOWEST, THREAD_PRIORITY_NORMAL, 및 THREAD_PRIORITY_TIME_CRITICAL 합니다. Windows 함수를 참조 하십시오 [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) 이러한 값에 대 한 합니다.  
   
 ### <a name="remarks"></a>설명  
  `GetPriority` 해야 하지 직접 호출할 수 있습니다. THREAD_PRIORITY_NORMAL 기본 구현에 의해 반환 됩니다.  
@@ -234,7 +234,7 @@ virtual void OnDataAvailable(DWORD dwSize, DWORD bscfFlag);
 ### <a name="remarks"></a>설명  
  이 함수의 기본 구현은 아무 작업도 수행하지 않습니다. 샘플 구현에 대 한 다음 예제를 참조 하세요.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCWinInet#5](../../mfc/codesnippet/cpp/casyncmonikerfile-class_1.cpp)]  
   
 ##  <a name="onlowresource"></a>  CAsyncMonikerFile::OnLowResource  

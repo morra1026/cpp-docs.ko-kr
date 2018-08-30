@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e32312e8c6f3dc149f6e5e1f8dc37b1395732d02
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 52550df1ca89ec1252fc2910bf27598d51302495
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408192"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212263"
 ---
 # <a name="const-and-volatile-pointers"></a>const 및 volatile 포인터
 합니다 [상수](../cpp/const-cpp.md) 및 [volatile](../cpp/volatile-cpp.md) 키워드는 포인터 처리 방법을 변경 합니다. 합니다 **const** 키워드 포인터가 초기화 후 수정 될 수 없음을 지정 합니다. 즉 포인터 이후 수정 되지 않도록에서 보호 됩니다.  
@@ -96,7 +96,7 @@ errno_t strcpy_s( char *strDestination, size_t numberOfElements, const char *str
  위의 문은 함수를 선언 [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)형식의 포인터가 있는 두 개의 세 가지 인수를 **char**합니다. 하며 하기 때문에 참조로 인수 전달 하지 값으로 함수는 모두 자유롭게 수정할 `strDestination` 하 고 `strSource` 하는 경우 `strSource` 로 선언 되지 않은 **const**합니다. 선언의 `strSource` 으로 **const** 호출자에 게는 보장 `strSource` 호출된 함수에서 변경할 수 없습니다.  
   
 > [!NOTE]
->  표준 변환이 없으므로 *typename* **\*** 하 **const** *typename* **\***, 형식의 인수를 전달 하는 것이 유효 `char *` 하 [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)합니다. 그러나는 성립 되지; 제거 하는 암시적 변환이 존재 합니다 **const** 개체 또는 포인터의 특성입니다.  
+> 표준 변환이 없으므로 *typename* <strong>\*</strong> 하 **const** *typename* <strong>\*</strong>, 형식의 인수를 전달 하는 것이 유효 `char *` 하 [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)합니다. 그러나는 성립 되지; 제거 하는 암시적 변환이 존재 합니다 **const** 개체 또는 포인터의 특성입니다.  
   
  A **const** 동일한 형식의 포인터에 지정 된 형식의 대 한 포인터를 할당할 수 있습니다. 그러나 포인터 없는 **const** 할당할 수 없습니다는 **const** 포인터입니다. 다음 코드는 올바른 할당과 잘못된 할당을 보여 줍니다.  
   

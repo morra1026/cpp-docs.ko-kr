@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa45822d51d704022e773f6c8220db34b010a805
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 76f21f93bbd8386bbf0b4b63f3cf7c8b34057145
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885824"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210659"
 ---
 # <a name="atldrawinfo-structure"></a>ATL_DRAWINFO 구조체
 프린터, 메타 파일 또는 ActiveX 컨트롤 같은 다양 한 대상에 렌더링에 사용 되는 정보를 포함 합니다.  
@@ -53,13 +53,13 @@ struct ATL_DRAWINFO {
  크기 (바이트)에서 구조입니다.  
   
  `dwDrawAspect`  
- 대상 표시할 방법을 지정 합니다. 콘텐츠, 아이콘, 미리 보기, 또는 인쇄 된 문서 표현이 포함할 수 있습니다. 가능한 값 목록을 참조 하세요 [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) 하 고 [DVASPECT2](http://msdn.microsoft.com/library/windows/desktop/ms688644)합니다.  
+ 대상 표시할 방법을 지정 합니다. 콘텐츠, 아이콘, 미리 보기, 또는 인쇄 된 문서 표현이 포함할 수 있습니다. 가능한 값 목록을 참조 하세요 [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) 하 고 [DVASPECT2](/windows/desktop/api/ocidl/ne-ocidl-tagdvaspect2)합니다.  
   
  `lindex`  
  그리기 작업에 대 한 관심 있는 대상의 부분입니다. 값에 따라 해석이 달라는 `dwDrawAspect` 멤버입니다.  
   
  `ptd`  
- 에 대 한 포인터를 [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) 모양 지정에 따른 그리기 최적화를 사용 하도록 설정 하는 구조입니다. 참고는 최신 개체 및 최적화 된 그리기 인터페이스를 지 원하는 컨테이너 에서도이 멤버를 지원 합니다. 이전 개체 및 컨테이너 항상 최적화 된 그리기 인터페이스 지원 하지 않는이 멤버에 대해 NULL을 지정 합니다.  
+ 에 대 한 포인터를 [DVTARGETDEVICE](/windows/desktop/api/objidl/ns-objidl-tagdvtargetdevice) 모양 지정에 따른 그리기 최적화를 사용 하도록 설정 하는 구조입니다. 참고는 최신 개체 및 최적화 된 그리기 인터페이스를 지 원하는 컨테이너 에서도이 멤버를 지원 합니다. 이전 개체 및 컨테이너 항상 최적화 된 그리기 인터페이스 지원 하지 않는이 멤버에 대해 NULL을 지정 합니다.  
   
  `hicTargetDev`  
  가리키는 대상 장치에 대 한 컨텍스트 정보 `ptd` 개체가 장치 메트릭을 추출 하 고 장치의 기능을 테스트 하는 합니다. 하는 경우 `ptd` 가 null 인 경우 개체의 값을 무시할지를 `hicTargetDev` 멤버입니다.  
@@ -68,10 +68,10 @@ struct ATL_DRAWINFO {
  그릴 디바이스 컨텍스트입니다. 창 없는 개체에 대 한 합니다 `hdcDraw` 멤버가 `MM_TEXT` 포함 하는 창의 클라이언트 좌표에 일치 하는 논리적 좌표를 사용 하 여 매핑 모드입니다. 장치 컨텍스트를 일반적으로 전달한 것과 동일한 상태 여야 합니다 또한을 `WM_PAINT` 메시지입니다.  
   
  `prcBounds`  
- 에 대 한 포인터를 [RECTL](http://msdn.microsoft.com/library/windows/desktop/dd162907) 에 사각형을 지정 하는 구조 `hdcDraw` 및 개체를 그립니다. 이 멤버는 위치 및 개체의 늘이기를 제어 합니다. 이 멤버에는 창 전체 활성 개체를 그릴 NULL 이어야 합니다. 다른 모든 상황에서 NULL은 올바른 값이 아닙니다 및 개가 수신 되어야는 `E_INVALIDARG` 오류 코드입니다. 창 없는 개체에 NULL이 아닌 값을 전달 하는 컨테이너를 개체는 사각형에 지정 된 디바이스 컨텍스트 요청한 측면을 렌더링 해야 합니다. 컨테이너 개체의 두 번째, 비활성 뷰를 렌더링 하거나 개체를 인쇄 합니다. 창 없는 개체에서이 요청할 수 있습니다.  
+ 에 대 한 포인터를 [RECTL](https://msdn.microsoft.com/library/windows/desktop/dd162907) 에 사각형을 지정 하는 구조 `hdcDraw` 및 개체를 그립니다. 이 멤버는 위치 및 개체의 늘이기를 제어 합니다. 이 멤버에는 창 전체 활성 개체를 그릴 NULL 이어야 합니다. 다른 모든 상황에서 NULL은 올바른 값이 아닙니다 및 개가 수신 되어야는 `E_INVALIDARG` 오류 코드입니다. 창 없는 개체에 NULL이 아닌 값을 전달 하는 컨테이너를 개체는 사각형에 지정 된 디바이스 컨텍스트 요청한 측면을 렌더링 해야 합니다. 컨테이너 개체의 두 번째, 비활성 뷰를 렌더링 하거나 개체를 인쇄 합니다. 창 없는 개체에서이 요청할 수 있습니다.  
   
  `prcWBounds`  
- 하는 경우 `hdcDraw` 메타 파일 장치 컨텍스트는 (참조 [GetDeviceCaps](http://msdn.microsoft.com/library/windows/desktop/dd144877) Windows SDK에서),이에 대 한 포인터는를 `RECTL` 내부 메타 파일의 경계 사각형을 지정 하는 구조입니다. 창 크기와 창 원본 사각형 구조에 포함 되어 있습니다. 이러한 값은 메타 파일 그리기에 유용 합니다. 사각형에 나타난 `prcBounds` 이 중첩 `prcWBounds` 사각형의 동일한 좌표 공간에서.  
+ 하는 경우 `hdcDraw` 메타 파일 장치 컨텍스트는 (참조 [GetDeviceCaps](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) Windows SDK에서),이에 대 한 포인터는를 `RECTL` 내부 메타 파일의 경계 사각형을 지정 하는 구조입니다. 창 크기와 창 원본 사각형 구조에 포함 되어 있습니다. 이러한 값은 메타 파일 그리기에 유용 합니다. 사각형에 나타난 `prcBounds` 이 중첩 `prcWBounds` 사각형의 동일한 좌표 공간에서.  
   
  `bOptimize`  
  컨트롤의 그리기를 최적화 하 고 그렇지 않은 0 이면 0이 아닙니다. 완료 했으면 장치 컨텍스트의 상태는 자동으로 복원 그리기를 최적화 하는 경우 렌더링 합니다.  
@@ -97,7 +97,7 @@ struct ATL_DRAWINFO {
  **헤더:** atlctl.h  
   
 ## <a name="see-also"></a>참고 항목  
-  [클래스 및 구조체](../../atl/reference/atl-classes.md) [IViewObject::Draw](http://msdn.microsoft.com/library/windows/desktop/ms688655)   
+  [클래스 및 구조체](../../atl/reference/atl-classes.md) [IViewObject::Draw](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-draw)   
  [CComControlBase::OnDrawAdvanced](../../atl/reference/ccomcontrolbase-class.md#ondrawadvanced)
 
 

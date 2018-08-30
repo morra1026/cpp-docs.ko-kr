@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 3257d690ac949edff7958615656db052c3468c01
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 60804b3863a4b44bc963f289b1d6a8c2f2d5cbf7
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33132572"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211159"
 ---
 # <a name="how-to-create-clr-console-applications-ccli"></a>방법: CLR 콘솔 응용 프로그램 만들기(C++/CLI)
 콘솔 응용 프로그램 템플릿을 사용하여 이미 필수 프로젝트 참조 및 파일이 있는 콘솔 응용 프로그램 프로젝트를 만들 수 있습니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "33132572"
   
 -   이러한.NET Framework 네임스페이스에 대한 참조:  
   
-    -   [System](https://msdn.microsoft.com/en-us/library/system.appdomainmanager.appdomainmanager.aspx)- 일반적으로 사용되는 값과 참조 데이터 형식, 이벤트와 이벤트 처리기, 인터페이스, 특성 및 처리 예외 등을 정의하는 기본 클래스가 포함됩니다.  
+    -   [시스템](https://msdn.microsoft.com/library/system.appdomainmanager.appdomainmanager.aspx)-Contains 기본적인 클래스 및 일반적으로 정의 하는 기본 클래스 값 및 참조 데이터 형식, 이벤트 및 이벤트 처리기, 인터페이스, 특성 및 예외 처리를 사용 합니다.  
   
     -   mscorlib - .NET Framework 개발을 지원하는 DLL 어셈블리입니다.  
   
@@ -40,7 +40,7 @@ ms.locfileid: "33132572"
   
     -   콘솔(.cpp 파일) - 방금 만든 응용 프로그램에 대한 주 소스 파일과 진입점입니다. 프로젝트 .dll 파일과 프로젝트 네임스페이스를 식별합니다. 이 파일에 사용자 고유의 코드를 제공합니다.  
   
-    -   AssemblyInfo.cpp - 프로젝트의 어셈블리 메타데이터를 수정하는 데 사용할 수 있는 특성, 파일, 리소스, 형식, 버전 정보, 서명 정보 등을 포함합니다. 자세한 내용은 참조 [어셈블리 내용](/dotnet/framework/app-domains/assembly-contents)합니다.  
+    -   AssemblyInfo.cpp - 프로젝트의 어셈블리 메타데이터를 수정하는 데 사용할 수 있는 특성, 파일, 리소스, 형식, 버전 정보, 서명 정보 등을 포함합니다. 자세한 내용은 [어셈블리 콘텐츠](/dotnet/framework/app-domains/assembly-contents)합니다.  
   
     -   Stdafx.cpp - Win32.pch라는 미리 컴파일된 헤더 파일과 StdAfx.obj라는 미리 컴파일된 형식 파일을 빌드하는 데 사용됩니다.  
   

@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d623df9fcab776a42fda7ca13269554b9f38b56c
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: c8cdb3633b6f5b76e1918471132e7cdd142172fe
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880575"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208481"
 ---
 # <a name="iatlmemmgr-class"></a>IAtlMemMgr 클래스
 이 클래스는 메모리 관리자 인터페이스를 나타냅니다.  
@@ -54,9 +54,9 @@ __interface __declspec(uuid("654F7EF5-CFDF-4df9-A450-6C6A13C622C0")) IAtlMemMgr
  이 인터페이스에서 구현 됩니다 [CComHeap](../../atl/reference/ccomheap-class.md), [CCRTHeap](../../atl/reference/ccrtheap-class.md)합니다 [CLocalHeap](../../atl/reference/clocalheap-class.md)를 [CGlobalHeap](../../atl/reference/cglobalheap-class.md), 또는 [CWin32Heap](../../atl/reference/cwin32heap-class.md).  
   
 > [!NOTE]
->  로컬 및 전역 힙 함수를 다른 메모리 관리 함수를 사용 하 여 보다 느린 및 많은 기능을 제공 하지 않습니다. 따라서 새 응용 프로그램을 사용 해야 합니다 [힙 함수](http://msdn.microsoft.com/library/windows/desktop/aa366711)합니다. 사용할 수 있는 이러한 합니다 [CWin32Heap](../../atl/reference/cwin32heap-class.md) 클래스입니다.  
+>  로컬 및 전역 힙 함수를 다른 메모리 관리 함수를 사용 하 여 보다 느린 및 많은 기능을 제공 하지 않습니다. 따라서 새 응용 프로그램을 사용 해야 합니다 [힙 함수](/windows/desktop/Memory/heap-functions)합니다. 사용할 수 있는 이러한 합니다 [CWin32Heap](../../atl/reference/cwin32heap-class.md) 클래스입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#94](../../atl/codesnippet/cpp/iatlmemmgr-class_1.cpp)]  
   
 ## <a name="requirements"></a>요구 사항  
@@ -79,7 +79,7 @@ void* Allocate(size_t nBytes) throw();
 ### <a name="remarks"></a>설명  
  호출 [IAtlMemMgr::Free](#free) 하거나 [IAtlMemMgr::Reallocate](#reallocate) 이 메서드에 의해 할당 된 메모리를 해제 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 들어 참조 된 [IAtlMemMgr 개요](../../atl/reference/iatlmemmgr-class.md)합니다.  
   
 ##  <a name="free"></a>  IAtlMemMgr::Free  
@@ -96,7 +96,7 @@ void Free(void* p) throw();
 ### <a name="remarks"></a>설명  
  이 메서드를 사용 하 여 가져온 메모리를 확보 [IAtlMemMgr::Allocate](#allocate) 하거나 [IAtlMemMgr::Reallocate](#reallocate)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 들어 참조 된 [IAtlMemMgr 개요](../../atl/reference/iatlmemmgr-class.md)합니다.  
   
 ##  <a name="getsize"></a>  IAtlMemMgr::GetSize  
@@ -113,7 +113,7 @@ size_t GetSize(void* p) throw();
 ### <a name="return-value"></a>반환 값  
  메모리 블록의 크기 (바이트)를 반환합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 들어 참조 된 [IAtlMemMgr 개요](../../atl/reference/iatlmemmgr-class.md)합니다.  
   
 ##  <a name="reallocate"></a>  IAtlMemMgr::Reallocate  
@@ -138,7 +138,7 @@ void* Reallocate(void* p, size_t nBytes) throw();
   
  개념적으로이 메서드는 기존 메모리를 해제 하 고 새 메모리 블록을 할당 합니다. 실제로 기존 메모리를 확장 하거나 그렇지 않은 경우 다시 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 들어 참조 된 [IAtlMemMgr 개요](../../atl/reference/iatlmemmgr-class.md)합니다.  
   
 ##  <a name="get_allowcontextmenu"></a>  IAxWinAmbientDispatch::get_AllowContextMenu  
@@ -785,7 +785,7 @@ STDMETHOD(CreateControlLic)(
   
  이 메서드를 호출 하는 것 [IAxWinHostWindowLic::CreateControlLicEx](#createcontrollicex)  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  참조 [ActiveX 컨트롤 ATL 사용 하 여 AXHost 호스팅](../../atl/hosting-activex-controls-using-atl-axhost.md) 사용 하는 샘플에 대 한 `IAxWinHostWindowLic::CreateControlLic`합니다.  
   
 ##  <a name="createcontrollicex"></a>  IAxWinHostWindowLic::CreateControlLicEx  
@@ -809,7 +809,7 @@ STDMETHOD(CreateControlLicEx)(
 ### <a name="remarks"></a>설명  
  참조 [IAxWinHostWindow::CreateControlEx](#createcontrolex) 나머지 매개 변수 및 반환 값에 대 한 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  참조 [ActiveX 컨트롤 ATL 사용 하 여 AXHost 호스팅](../../atl/hosting-activex-controls-using-atl-axhost.md) 사용 하는 샘플에 대 한 `IAxWinHostWindowLic::CreateControlLicEx`합니다.  
   
 ## <a name="see-also"></a>참고 항목  

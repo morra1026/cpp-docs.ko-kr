@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a0566ef5eead5950f2b4de1f6e1a220f79bcfbe
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 17f50f5e4fb8b9330a09d4964aa99fbf01f4b34d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849329"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206973"
 ---
 # <a name="cricheditcntritem-class"></a>CRichEditCntrItem 클래스
 사용 하 여 [CRichEditView](../../mfc/reference/cricheditview-class.md) 하 고 [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md), MFC의 문서 뷰 아키텍처 컨텍스트 내에서 rich edit 컨트롤의 기능을 제공 합니다.  
@@ -84,7 +84,7 @@ CRichEditCntrItem(
   
 ### <a name="parameters"></a>매개 변수  
  *preo*  
- 에 대 한 포인터를 [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) OLE 항목을 설명 하는 구조입니다. 새 `CRichEditCntrItem` 이 OLE 항목 주위에 개체 생성 합니다. 하는 경우 *preo* 가 null 인 경우 클라이언트 항목이 비어 있습니다.  
+ 에 대 한 포인터를 [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) OLE 항목을 설명 하는 구조입니다. 새 `CRichEditCntrItem` 이 OLE 항목 주위에 개체 생성 합니다. 하는 경우 *preo* 가 null 인 경우 클라이언트 항목이 비어 있습니다.  
   
  *pContainer*  
  이 항목을 포함 하는 컨테이너 문서에 대 한 포인터입니다. 하는 경우 *pContainer* 가 null 인 경우 명시적으로 호출 해야 [COleDocument::AddItem](../../mfc/reference/coledocument-class.md#additem) 문서에이 클라이언트 항목을 추가 합니다.  
@@ -92,10 +92,10 @@ CRichEditCntrItem(
 ### <a name="remarks"></a>설명  
  이 함수는 모든 OLE 초기화를 수행 하지 않습니다.  
   
- 자세한 내용은 참조는 [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) Windows SDK에는 구조입니다.  
+ 자세한 내용은 참조는 [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) Windows SDK에는 구조입니다.  
   
 ##  <a name="synctoricheditobject"></a>  CRichEditCntrItem::SyncToRichEditObject  
- 장치 측면을 동기화 하려면이 함수를 호출 [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318),이 `CRichEditCntrltem` 에 지정 된 *reo*합니다.  
+ 장치 측면을 동기화 하려면이 함수를 호출 [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect),이 `CRichEditCntrltem` 에 지정 된 *reo*합니다.  
   
 ```  
 void SyncToRichEditObject(REOBJECT& reo);
@@ -103,10 +103,10 @@ void SyncToRichEditObject(REOBJECT& reo);
   
 ### <a name="parameters"></a>매개 변수  
  *reo*  
- 에 대 한 참조를 [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) OLE 항목을 설명 하는 구조입니다.  
+ 에 대 한 참조를 [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) OLE 항목을 설명 하는 구조입니다.  
   
 ### <a name="remarks"></a>설명  
- 자세한 내용은 [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) Windows SDK에 있습니다.  
+ 자세한 내용은 [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) Windows SDK에 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [MFC 샘플 워드 패드](../../visual-cpp-samples.md)   

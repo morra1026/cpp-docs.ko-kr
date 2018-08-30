@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 56fc61fa7dd7973a6ee1cc4c5a20311bf43b056f
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 4550d523a4410734c391e2e4d266ae536b4610b4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42572109"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218671"
 ---
 # <a name="troubleshooting-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ 격리된 응용 프로그램 및 side-by-side 어셈블리 문제 해결
 종속 라이브러리를 찾을 수 없는 경우 C/C++ 응용 프로그램을 로드하지 못할 수 있습니다. 이 문서에서는 C/C++ 응용 프로그램을 로드하지 못하는 몇 가지 일반적인 이유에 대해 설명하고 문제를 해결할 수 있는 단계를 제안합니다.  
@@ -46,16 +46,16 @@ ms.locfileid: "42572109"
   
 3.  응용 프로그램이 side-by-side 어셈블리에 종속된 경우 매니페스트가 없으면 링커에서 프로젝트에 대한 매니페스트를 생성하도록 해야 합니다. 링커 옵션을 확인 **매니페스트 생성** 에 **프로젝트 속성** 프로젝트에 대 한 대화 상자.  
   
-4.  매니페스트가 이진 파일에 포함된 경우 RT_MANIFEST의 ID가 이 형식의 이진 파일에 적합한지 확인합니다. 사용 하는 리소스 ID에 대 한 자세한 내용은 참조 하세요. [(Windows) 리소스로 사용 하 여 Side-by-side-어셈블리](http://msdn.microsoft.com/library/windows/desktop/aa376617.aspx)합니다. 매니페스트가 별도의 파일에 있는 경우 XML 편집기나 텍스트 편집기에서 엽니다. 매니페스트 및 배포에 대 한 규칙에 대 한 자세한 내용은 참조 하세요. [매니페스트](http://msdn.microsoft.com/library/aa375365)합니다.  
+4.  매니페스트가 이진 파일에 포함된 경우 RT_MANIFEST의 ID가 이 형식의 이진 파일에 적합한지 확인합니다. 사용 하는 리소스 ID에 대 한 자세한 내용은 참조 하세요. [(Windows) 리소스로 사용 하 여 Side-by-side-어셈블리](https://msdn.microsoft.com/library/windows/desktop/aa376617.aspx)합니다. 매니페스트가 별도의 파일에 있는 경우 XML 편집기나 텍스트 편집기에서 엽니다. 매니페스트 및 배포에 대 한 규칙에 대 한 자세한 내용은 참조 하세요. [매니페스트](https://msdn.microsoft.com/library/aa375365)합니다.  
   
     > [!NOTE]
     >  포함된 매니페스트와 별도의 매니페스트 파일이 둘 다 있는 경우 운영 체제 로더는 포함된 매니페스트를 사용하고 별도의 파일을 무시합니다. 그러나 Windows XP에서는 반대로 별도의 매니페스트 파일이 사용되고 포함된 매니페스트가 무시됩니다.  
   
-5.  DLL이 `LoadLibrary` 호출을 통해 로드될 경우 외부 매니페스트가 무시되므로 모든 DLL에 매니페스트를 포함하는 것이 좋습니다. 자세한 내용은 [어셈블리 매니페스트](http://msdn.microsoft.com/library/aa374219)합니다.  
+5.  DLL이 `LoadLibrary` 호출을 통해 로드될 경우 외부 매니페스트가 무시되므로 모든 DLL에 매니페스트를 포함하는 것이 좋습니다. 자세한 내용은 [어셈블리 매니페스트](/windows/desktop/SbsCs/assembly-manifests)합니다.  
   
-6.  매니페스트에 열거되는 모든 어셈블리가 컴퓨터에 올바르게 설치되어 있는지 확인합니다. 각 어셈블리는 이름, 버전 번호 및 프로세서 아키텍처별로 매니페스트에 지정됩니다. 응용 프로그램이 side-by-side-어셈블리에 의존 하는 경우 이러한 어셈블리 설치 되어 있는지 확인 올바르게 컴퓨터의 운영 체제 로더를 찾을 수 있도록에 설명 된 대로 [어셈블리 검색 시퀀스](http://msdn.microsoft.com/library/aa374224)합니다. 64비트 어셈블리는 32비트 프로세스에서 로드할 수 없으며 32비트 운영 체제에서 실행할 수 없습니다.  
+6.  매니페스트에 열거되는 모든 어셈블리가 컴퓨터에 올바르게 설치되어 있는지 확인합니다. 각 어셈블리는 이름, 버전 번호 및 프로세서 아키텍처별로 매니페스트에 지정됩니다. 응용 프로그램이 side-by-side-어셈블리에 의존 하는 경우 이러한 어셈블리 설치 되어 있는지 확인 올바르게 컴퓨터의 운영 체제 로더를 찾을 수 있도록에 설명 된 대로 [어셈블리 검색 시퀀스](/windows/desktop/SbsCs/assembly-searching-sequence)합니다. 64비트 어셈블리는 32비트 프로세스에서 로드할 수 없으며 32비트 운영 체제에서 실행할 수 없습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  Visual c + +를 사용 하 여 빌드되는 appl.exe 응용 프로그램이 있다고 가정 합니다. 응용 프로그램 매니페스트는 ID가 1인 이진 리소스 RT_MANIFEST로 appl.exe에 포함되거나 별도의 파일 appl.exe.manifest로 저장됩니다. 이 매니페스트의 콘텐츠는 다음과 같습니다.  
   
 ```  
@@ -82,7 +82,7 @@ ms.locfileid: "42572109"
 </assembly>  
 ```  
   
- Side-by-side-어셈블리를 사용할 수도 [게시자 구성 파일](http://msdn.microsoft.com/library/aa375682)-정책 파일이 라고도-전체적으로 동일한 다른 버전 대신 side-by-side-어셈블리의 버전을 사용 하도록 응용 프로그램 및 어셈블리를 리디렉션할 수 어셈블리입니다. %WINDIR%\WinSxS\Policies\ 폴더에서 공유 어셈블리에 대한 정책을 확인할 수 있습니다. 다음은 예제 정책 파일입니다.  
+ Side-by-side-어셈블리를 사용할 수도 [게시자 구성 파일](/windows/desktop/SbsCs/publisher-configuration-files)-정책 파일이 라고도-전체적으로 동일한 다른 버전 대신 side-by-side-어셈블리의 버전을 사용 하도록 응용 프로그램 및 어셈블리를 리디렉션할 수 어셈블리입니다. %WINDIR%\WinSxS\Policies\ 폴더에서 공유 어셈블리에 대한 정책을 확인할 수 있습니다. 다음은 예제 정책 파일입니다.  
   
 ```  
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
@@ -106,7 +106,7 @@ ms.locfileid: "42572109"
   
 2.  열려고 시도 합니다 \\< assemblyName\>\ appl.exe에 포함 된 폴더의 폴더 경우 \\< assemblyName\>\가 된 이름의 매니페스트 파일을 로드 하려고 \<assemblyName >. 이 폴더에서 매니페스트 합니다. 매니페스트에 있으면 로더에서 어셈블리를 로드 합니다 \\< assemblyName\>\ 폴더입니다. 어셈블리가 없으면 로드에 실패합니다.  
   
- 로더에서 종속 어셈블리를 검색 하는 방법에 대 한 자세한 내용은 참조 하세요. [어셈블리 검색 시퀀스](http://msdn.microsoft.com/library/aa374224)합니다. 로더에서 종속 어셈블리를 전용 어셈블리로 찾지 못하면 로드에 실패하고 "시스템이 지정된 프로그램을 실행할 수 없습니다."라는 메시지가 표시됩니다. 이 오류를 해결하려면 종속 어셈블리 및 해당 어셈블리의 일부인 DLL이 전용 또는 공유 어셈블리로 컴퓨터에 설치되어 있는지 확인하세요.  
+ 로더에서 종속 어셈블리를 검색 하는 방법에 대 한 자세한 내용은 참조 하세요. [어셈블리 검색 시퀀스](/windows/desktop/SbsCs/assembly-searching-sequence)합니다. 로더에서 종속 어셈블리를 전용 어셈블리로 찾지 못하면 로드에 실패하고 "시스템이 지정된 프로그램을 실행할 수 없습니다."라는 메시지가 표시됩니다. 이 오류를 해결하려면 종속 어셈블리 및 해당 어셈블리의 일부인 DLL이 전용 또는 공유 어셈블리로 컴퓨터에 설치되어 있는지 확인하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [격리 된 응용 프로그램 및 side-by-side-어셈블리의 개념](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)   

@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41e79ac918c1a549c7972d5feccf4f470473f98c
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: f0994eb1b0293bb31fdb1cd4659256b978ebd69d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852921"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219367"
 ---
 # <a name="coledropsource-class"></a>COleDropSource 클래스
 데이터를를 놓기 대상으로 끌어 놓을 수 있습니다.  
@@ -63,7 +63,7 @@ class COleDropSource : public CCmdTarget
   
  OLE를 사용 하 여 끌어서 놓기 작업에 대 한 자세한 내용은 문서 참조 [끌어서 놓기 (OLE)](../../mfc/drag-and-drop-ole.md)합니다.  
   
- 자세한 내용은 [IDropSource](http://msdn.microsoft.com/library/windows/desktop/ms690071) Windows SDK에 있습니다.  
+ 자세한 내용은 [IDropSource](/windows/desktop/api/oleidl/nn-oleidl-idropsource) Windows SDK에 있습니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -109,7 +109,7 @@ virtual SCODE GiveFeedback(DROPEFFECT dropEffect);
 ### <a name="remarks"></a>설명  
  드롭다운이 시점에서 발생 한 경우 어떻게 하는 방법에 대 한 사용자에 게 피드백을 제공 하려면이 함수를 재정의 합니다. 기본 구현은 OLE 기본 커서를 사용 합니다. OLE를 사용 하 여 끌어서 놓기 작업에 대 한 자세한 내용은 문서 참조 [끌어서 놓기 (OLE)](../../mfc/drag-and-drop-ole.md)합니다.  
   
- 자세한 내용은 [IDropSource::GiveFeedback](http://msdn.microsoft.com/library/windows/desktop/ms693723), [IDropTarget::DragOver](http://msdn.microsoft.com/library/windows/desktop/ms680129), 및 [IDropTarget::DragEnter](http://msdn.microsoft.com/library/windows/desktop/ms680106) Windows sdk에서입니다.  
+ 자세한 내용은 [IDropSource::GiveFeedback](/windows/desktop/api/oleidl/nf-oleidl-idropsource-givefeedback), [IDropTarget::DragOver](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-dragover), 및 [IDropTarget::DragEnter](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-dragenter) Windows sdk에서입니다.  
   
 ##  <a name="onbegindrag"></a>  COleDropSource::OnBeginDrag  
  에 의해 호출 프레임 워크는 이벤트가 발생 하는 경우에 마우스 왼쪽된 단추를 누르면 등의 끌기 작업을 시작할 수 있습니다.  

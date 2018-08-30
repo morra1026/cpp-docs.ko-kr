@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80e89573e67113900db7b35ffe3f1189de1c524a
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: fdcec255c7d2398e1bb0efa7f86a31fc5dd938e4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336334"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210205"
 ---
 # <a name="cctrlview-class"></a>CCtrlView 클래스
 문서 뷰 아키텍처를 Windows 98 및 Windows NT 버전 3.51 이상에서 지원하는 공통의 컨트롤에 맞게 변경합니다.  
@@ -140,7 +140,7 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
   
 ### <a name="parameters"></a>매개 변수  
  *cs*  
- A [CREATESTRUCT](http://msdn.microsoft.com/library/windows/desktop/ms632603) 구조입니다.  
+ A [CREATESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632603) 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  창 만들기를 계속 해야 하는 경우 0이 아닌 값 만들기 실패를 나타내는 0입니다.  

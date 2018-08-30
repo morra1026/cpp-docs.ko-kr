@@ -29,12 +29,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 505049d6580f41253a483dfe1c64608d0ea9ed3d
-ms.sourcegitcommit: 27be37ae07ee7b657a54d23ed34438220d977fdc
+ms.openlocfilehash: 0b5a352d10c1fd1f825cecbe3d6a1083f6efd425
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39110010"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212171"
 ---
 # <a name="reflection-ccli"></a>리플렉션(C++/CLI)
 
@@ -42,12 +42,12 @@ ms.locfileid: "39110010"
 
 어셈블리 이름을 제공 된 강력한 이름 (참조 [강력한 어셈블리 만들기 및 사용](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies)), 어셈블리 버전, 문화권 및 서명 정보를 포함 하는 합니다. 데이터 형식이 정의 되어 있는 네임 스페이스의 이름의 검색할 수 있는 기본 클래스의 이름과 함께 또한 note 합니다.
 
-리플렉션 기능에 액세스 하는 가장 일반적인 방법은 방법은 <xref:System.Object.GetType%2A> 메서드. 이 메서드는 제공한 [system:: object](https://msdn.microsoft.com/en-us/library/system.object.aspx), 가비지 수집 된 모든 클래스는 파생에서.
+리플렉션 기능에 액세스 하는 가장 일반적인 방법은 방법은 <xref:System.Object.GetType%2A> 메서드. 이 메서드는 제공한 [system:: object](https://msdn.microsoft.com/library/system.object.aspx), 가비지 수집 된 모든 클래스는 파생에서.
 
 > [!NOTE]
 > Visual c + + 컴파일러를 사용 하 여 빌드한.exe에서 리플렉션은.exe는 기반으로 하는 경우에 허용 됩니다는 **/clr: pure** 또는 **/clr: safe** 컴파일러 옵션입니다. **/clr: pure** 및 **/clr: safe** 컴파일러 옵션은 Visual Studio 2015에서 사용 되지 않는 및 Visual Studio 2017에서 사용할 수 없습니다. 참조 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md) 자세한 내용은 합니다.
 
-자세한 내용은 참조 하세요. [System.Reflection Namespace](https://msdn.microsoft.com/en-us/library/system.reflection.aspx)
+자세한 내용은 참조 하세요. [System.Reflection Namespace](https://msdn.microsoft.com/library/system.reflection.aspx)
 
 ## <a name="example-gettype"></a>예제: GetType
 
@@ -188,9 +188,9 @@ public:
 
 ## <a name="example-inspection-of-assemblies"></a>어셈블리의 예: 검사
 
-위의 코드를 vcpp_reflection_6.dll 라는 DLL로 컴파일된 경우이 어셈블리의 내용을 확인 하려면 다음 리플렉션을 사용할 수 있습니다. 정적 리플렉션 API 함수를 사용 하는 것이 [Assembly::Load](https://msdn.microsoft.com/en-us/library/system.reflection.assembly.load.aspx) 어셈블리를 로드 합니다. 주소를 반환 하는이 함수는 **어셈블리** 모듈 및 내의 형식에 대 한 다음 쿼리할 수 있는 개체입니다.
+위의 코드를 vcpp_reflection_6.dll 라는 DLL로 컴파일된 경우이 어셈블리의 내용을 확인 하려면 다음 리플렉션을 사용할 수 있습니다. 정적 리플렉션 API 함수를 사용 하는 것이 [Assembly::Load](https://msdn.microsoft.com/library/system.reflection.assembly.load.aspx) 어셈블리를 로드 합니다. 주소를 반환 하는이 함수는 **어셈블리** 모듈 및 내의 형식에 대 한 다음 쿼리할 수 있는 개체입니다.
 
-리플렉션 시스템 어셈블리의 배열을 성공적으로 로드 되 면 **형식** 사용 하 여 개체 검색은 합니다 [Assembly::GetTypes](https://msdn.microsoft.com/en-us/library/system.reflection.assembly.gettypes.aspx) 함수입니다. 각 배열 요소 하나만 클래스 정의이 예제의 경우 되지만 다른 형식에 대 한 정보를 포함 합니다. 루프를 사용 하 여 각 **형식** 사용 하 여 형식 멤버에 대 한 쿼리는이 배열에는 **Type::GetMembers** 함수입니다. 이 함수는 배열을 반환 **MethodInfo** 개체, 멤버 함수, 데이터 멤버 또는 형식의 속성에에서 대 한 정보가 포함 된 각 개체입니다.
+리플렉션 시스템 어셈블리의 배열을 성공적으로 로드 되 면 **형식** 사용 하 여 개체 검색은 합니다 [Assembly::GetTypes](https://msdn.microsoft.com/library/system.reflection.assembly.gettypes.aspx) 함수입니다. 각 배열 요소 하나만 클래스 정의이 예제의 경우 되지만 다른 형식에 대 한 정보를 포함 합니다. 루프를 사용 하 여 각 **형식** 사용 하 여 형식 멤버에 대 한 쿼리는이 배열에는 **Type::GetMembers** 함수입니다. 이 함수는 배열을 반환 **MethodInfo** 개체, 멤버 함수, 데이터 멤버 또는 형식의 속성에에서 대 한 정보가 포함 된 각 개체입니다.
 
 에 정의 된 메서드 목록을 함수를 명시적으로 포함 하는 참고 **TestClass** 함수에서 암시적으로 상속 합니다 **system:: object** 클래스입니다. .NET에서 대신 Visual c + + 구문에서 설명 하 고의 일환으로, get/set 함수에서 액세스 하는 기본 데이터 멤버와 속성이 표시 됩니다. Get/set 함수로 정규 메서드로이 목록에 나타납니다. 리플렉션 Visual c + + 컴파일러 아니라에서 공용 언어 런타임을 통해 지원 됩니다.
 
@@ -252,7 +252,7 @@ int main() {
   
  <xref:System.Reflection.Assembly.Load%2A> 메서드 파일 확장명을 포함 하는 어셈블리 이름을 허용 하지 않습니다. 다음 코드 예제에서는 두 경우 모두에서 작동 하므로 응용 프로그램의 main 함수 모든 제공 된 확장을 삭제 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드는 플러그 인을 허용 하는 응용 프로그램을 정의 합니다. 어셈블리 이름이 첫 번째 인수로 제공 되어야 합니다. 이 어셈블리에는 하나 이상의 공용 있어야 <xref:System.Windows.Forms.Form> 파생 형식입니다.  
   
 ```cpp
@@ -297,7 +297,7 @@ int main() {
 }  
 ```  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 코드는 세 가지 클래스에서 파생 된 정의 <xref:System.Windows.Forms.Form>합니다. 결과 어셈블리의 이름을 이전 목록에서 실행 파일에 전달 되 면 세 클래스는 각 검색 되며 불구 하는 호스팅 응용 프로그램 컴파일 타임에 알려진 모든 올바르지 않은 인스턴스화됩니다.  
   
 ```cpp  
@@ -355,7 +355,7 @@ protected:
   
  <xref:System.Reflection.Assembly.Load%2A?displayProperty=fullName> 에서는 파일 확장명이 없습니다 사용 됩니다. 따라서 "mscorlib.dll" 명령줄 인수로 사용 하 여 실패 합니다 "mscorlib"를 사용 하면.NET Framework 형식을 표시 하는 동안. 어셈블리 이름이 없습니다. 제공 하는 경우 코드를 감지 하 고 현재 어셈블리 내의 형식 (이 코드에서 결과 EXE)을 보고 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp  
 // self_reflection.cpp  

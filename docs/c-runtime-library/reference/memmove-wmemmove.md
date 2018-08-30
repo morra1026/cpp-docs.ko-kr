@@ -34,12 +34,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66ea555d08ecb92895e170c3088332a532149ad1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 11f474675d8ba5b370b1f13f048e989d9c283bde
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401115"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204630"
 ---
 # <a name="memmove-wmemmove"></a>memmove, wmemmove
 
@@ -69,19 +69,19 @@ wchar_t *wmemmove(
 소스 개체입니다.
 
 *count*<br/>
-바이트 수입니다 (**memmove**) 또는 문자 (**wmemmove**)에 복사 합니다.
+바이트 수 (**memmove**) 또는 문자 (**wmemmove**) 복사 합니다.
 
 ## <a name="return-value"></a>반환 값
 
-값 *dest*합니다.
+변수의 *dest*합니다.
 
 ## <a name="remarks"></a>설명
 
-복사본 *count* 바이트 (**memmove**) 또는 문자 (**wmemmove**)에서 *src* 를 *dest*합니다. 소스 영역과 대상의 일부 영역이 겹치는 경우 두 함수는 모두 겹치는 영역에서 원래 소스 바이트가 덮어쓰기 전에 복사되도록 합니다.
+복사본 *개수* 바이트 (**memmove**) 또는 문자 (**wmemmove**)에서 *src* 하 *dest*합니다. 소스 영역과 대상의 일부 영역이 겹치는 경우 두 함수는 모두 겹치는 영역에서 원래 소스 바이트가 덮어쓰기 전에 복사되도록 합니다.
 
-**보안 정보** 대상 버퍼의 크기가 소스 버퍼의 크기보다 크거나 같아야 합니다. 자세한 내용은 [버퍼 오버런 방지](http://msdn.microsoft.com/library/windows/desktop/ms717795)를 참조하세요.
+**보안 정보** 대상 버퍼의 크기가 소스 버퍼의 크기보다 크거나 같아야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-**memmove** 및 **wmemmove** 함수는 경우에 중단 될 상수 **_CRT_SECURE_DEPRECATE_MEMORY** 위해에서 포함 문 이전 정의 사용 되지 않는 경우, 아래 예제 처럼 함수:
+합니다 **memmove** 하 고 **wmemmove** 함수는 경우에 중단 될 상수 **_CRT_SECURE_DEPRECATE_MEMORY** 위해에서 포함 문 이전에 정의 된 사용 되지 않는 경우, 아래 예제와 같이 함수:
 
 ```C
 #define _CRT_SECURE_DEPRECATE_MEMORY
@@ -97,7 +97,7 @@ wchar_t *wmemmove(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**memmove**|\<string.h>|
 |**wmemmove**|\<wchar.h>|

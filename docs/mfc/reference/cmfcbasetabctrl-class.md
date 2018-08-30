@@ -248,12 +248,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a629f372058e3e6688a57043d73e29717f3601d
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 212637b55a422c11d82ae6ad9f548d9e429c41dd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540121"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198570"
 ---
 # <a name="cmfcbasetabctrl-class"></a>CMFCBaseTabCtrl Class
 탭 창의 기본 기능을 구현합니다.  
@@ -357,7 +357,7 @@ class CMFCBaseTabCtrl : public CWnd
 |[CMFCBaseTabCtrl::OnDragOver](#ondragover)||  
 |[CMFCBaseTabCtrl::OnDrop](#ondrop)||  
 |[CMFCBaseTabCtrl::OnRenameTab](#onrenametab)||  
-|[CMFCBaseTabCtrl::PreTranslateMessage](#pretranslatemessage)|창 메시지가 [TranslateMessage](../../mfc/reference/cwinapp-class.md) 및 [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) Windows 함수로 디스패치되기 전에 [CWinApp](http://msdn.microsoft.com/library/windows/desktop/ms644934) 클래스가 이 메시지를 해석하는 데 사용됩니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|  
+|[CMFCBaseTabCtrl::PreTranslateMessage](#pretranslatemessage)|클래스에서 사용 하는 [CWinApp](../../mfc/reference/cwinapp-class.md) 디스패치 되기 전에 창 메시지를 변환 하는 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|  
 |[CMFCBaseTabCtrl::RecalcLayout](#recalclayout)|탭 창의 내부 레이아웃을 다시 계산합니다.|  
 |[CMFCBaseTabCtrl::RemoveAllTabs](#removealltabs)|탭 창에서 모든 탭을 제거합니다.|  
 |[CMFCBaseTabCtrl::RemoveTab](#removetab)|탭 창에서 탭을 제거합니다.|  
@@ -776,7 +776,7 @@ virtual COLORREF GetActiveTabColor() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 활성 탭의 배경색을 지정 하는 값입니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) 활성 탭의 배경색을 지정 하는 값입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로 활성 탭의 배경색 COLOR_WINDOW 됩니다. 메서드를 사용 하 여 활성 탭의 배경색을 변경할 수 있습니다 [CMFCBaseTabCtrl::SetActiveTabColor](#setactivetabcolor)합니다.  
@@ -789,7 +789,7 @@ virtual COLORREF GetActiveTabTextColor() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 활성 탭의 텍스트 색을 지정 하는 값입니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) 활성 탭의 텍스트 색을 지정 하는 값입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로 활성 탭의 텍스트 색 COLOR_WINDOWTEXT 됩니다. 메서드를 사용 하 여 텍스트 색을 변경할 수 있습니다 [CMFCBaseTabCtrl::SetActiveTabTextColor](#setactivetabtextcolor)합니다.  
@@ -812,7 +812,7 @@ const CArray<COLORREF,COLORREF>& GetAutoColors() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 배열에 대 한 참조 [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 는 값을 [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) 탭 자동 색 지정에 대 한 개체 사용 합니다.  
+ 배열에 대 한 참조 [COLORREF](/windows/desktop/gdi/colorref) 는 값을 [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) 탭 자동 색 지정에 대 한 개체 사용 합니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로 프레임 워크 라이브러리 정의 색을 색 배열을 초기화합니다. 메서드를 호출 하 여 사용자 지정 하는 색 배열을 제공할 수 있습니다 [CMFCBaseTabCtrl::SetAutoColors](#setautocolors)합니다.  
@@ -958,7 +958,7 @@ virtual COLORREF GetTabBkColor(int iTab) const;
  탭의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) -1 하면 지정된 된 탭의 배경색을 나타내는 값 *iTab* 범위를 벗어났습니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) -1 하면 지정된 된 탭의 배경색을 나타내는 값 *iTab* 범위를 벗어났습니다.  
   
 ##  <a name="gettabbordersize"></a>  CMFCBaseTabCtrl::GetTabBorderSize  
  탭 컨트롤의 탭 테두리 크기를 검색합니다.  
@@ -1176,7 +1176,7 @@ virtual COLORREF GetTabTextColor(int iTab) const;
  탭의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) -1 하면 지정된 된 탭의 텍스트 색을 나타내는 매개 변수 *iTab* 범위를 벗어났습니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) -1 하면 지정된 된 탭의 텍스트 색을 나타내는 매개 변수 *iTab* 범위를 벗어났습니다.  
   
 ##  <a name="gettabwnd"></a>  CMFCBaseTabCtrl::GetTabWnd  
  지정된 된 탭에 있는 창에 대 한 포인터를 반환 합니다.  
@@ -1844,7 +1844,7 @@ virtual void SetActiveTabColor(COLORREF clr);
  새 배경색을 지정합니다.  
   
 ### <a name="remarks"></a>설명  
- 프레임 워크에서 활성 탭의 기본 배경색을 가져옵니다 합니다 [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371)메서드.  
+ 프레임 워크에서 활성 탭의 기본 배경색을 가져옵니다 합니다 [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371)메서드.  
   
 ##  <a name="setactivetabtextcolor"></a>  CMFCBaseTabCtrl::SetActiveTabTextColor  
  활성 탭의 텍스트 색을 설정합니다.  
@@ -1855,10 +1855,10 @@ virtual void SetActiveTabTextColor(COLORREF clr);
   
 ### <a name="parameters"></a>매개 변수  
  [in] *clr*  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 새 텍스트 색을 지정 하는 매개 변수입니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) 새 텍스트 색을 지정 하는 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
- 기본적으로 프레임 워크에서 텍스트 색을 가져옵니다 [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371)합니다. 사용 하 여이 기본 색을 재정의 합니다 `SetActiveTabTextColor` 메서드.  
+ 기본적으로 프레임 워크에서 텍스트 색을 가져옵니다 [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371)합니다. 사용 하 여이 기본 색을 재정의 합니다 `SetActiveTabTextColor` 메서드.  
   
 ##  <a name="setautocolors"></a>  CMFCBaseTabCtrl::SetAutoColors  
  자동 색 모드에서 프레임 워크를 사용 하는 탭 컨트롤의 색을 설정 합니다.  
@@ -1929,7 +1929,7 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
  픽셀의 각 이미지의 너비입니다.  
   
  [in] *clrTransp*  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 이미지의 투명 한 색을 나타내는 매개 변수입니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) 이미지의 투명 한 색을 나타내는 매개 변수입니다.  
   
  [in] *hImageList*  
  미리 로드 된 이미지 목록에 대 한 핸들입니다.  
@@ -2114,7 +2114,7 @@ virtual BOOL SetTabTextColor(
  탭의 0부터 시작 하는 인덱스입니다.  
   
  [in] *색*  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) 새 텍스트 색을 나타내는 매개 변수입니다.  
+ A [COLORREF](/windows/desktop/gdi/colorref) 새 텍스트 색을 나타내는 매개 변수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  

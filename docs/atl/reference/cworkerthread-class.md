@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e29bf1c8265a0d92200cda2704b750dfd8db3d6f
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 78d846db4080c780bfa72fca52b7c9f6868edc2f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885642"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195343"
 ---
 # <a name="cworkerthread-class"></a>CWorkerThread 클래스
 이 클래스 작업자 스레드를 만듭니다 또는 기존 항목을 사용 하 여, 하나 이상의 커널 개체 핸들에서 대기 및 핸들 중 하나에 신호가 전달 될 때 지정 된 클라이언트 함수를 실행 합니다.  
@@ -232,7 +232,7 @@ HRESULT RemoveHandle(HANDLE hObject) throw();
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
   
 ### <a name="remarks"></a>설명  
- 핸들 제거 되 면 [IWorkerThreadClient::CloseHandle](../../atl/reference/iworkerthreadclient-interface.md#closehandle) 에 전달 된 연결된 된 개체에서 호출 되는 [AddHandle](#addhandle)합니다. 이 호출이 실패 하면 `CWorkerThread` 는 Windows를 호출 하는 [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211) 핸들에는 함수입니다.  
+ 핸들 제거 되 면 [IWorkerThreadClient::CloseHandle](../../atl/reference/iworkerthreadclient-interface.md#closehandle) 에 전달 된 연결된 된 개체에서 호출 되는 [AddHandle](#addhandle)합니다. 이 호출이 실패 하면 `CWorkerThread` 는 Windows를 호출 하는 [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211) 핸들에는 함수입니다.  
   
 ##  <a name="shutdown"></a>  CWorkerThread::Shutdown  
  작업자 스레드를 종료 하려면이 메서드를 호출 합니다.  

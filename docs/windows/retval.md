@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d29d619f8e561f1c506b69ffd132c46276026e13
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7ff83b156054774a06a371e7832dc73dc95a579c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604592"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221260"
 ---
 # <a name="retval"></a>retval
 
@@ -36,11 +36,11 @@ ms.locfileid: "42604592"
 
 ## <a name="remarks"></a>설명
 
-합니다 **retval** c + + 특성에 동일한 기능을 합니다 [retval](http://msdn.microsoft.com/library/windows/desktop/aa367158) MIDL 특성입니다.
+합니다 **retval** c + + 특성에 동일한 기능을 합니다 [retval](/windows/desktop/Midl/retval) MIDL 특성입니다.
 
 **retval** 함수 선언에서 마지막 인수에 표시 되어야 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 예를 참조 하세요 [bindable](../windows/bindable.md) 의 샘플 사용에 대 한 **retval**합니다.
 

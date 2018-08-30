@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 338412780116201b40e51ff38c4805097add4e3c
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 770d110a5acd66b307e675d8c71a7de108bae6b5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885978"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198499"
 ---
 # <a name="standard-dialog-data-exchange-routines"></a>표준 대화 상자 데이터 교환 루틴
 이 항목에서는 일반적인 MFC 대화 상자 컨트롤에 사용 되는 표준 대화 상자 데이터 교환 (DDX) 루틴을 나열 합니다.  
@@ -159,7 +159,7 @@ void AFXAPI DDX_Check(
  대화 상자, 폼 뷰 또는 데이터를 교환할 컨트롤 뷰 개체의 멤버 변수 참조입니다.  
   
 ### <a name="remarks"></a>설명  
- 때 `DDX_Check` 가 호출 *값* check box 컨트롤의 현재 상태로 설정 됩니다. 가능한 상태 값의 목록을 참조 하세요 [BM_GETCHECK](http://msdn.microsoft.com/library/windows/desktop/bb775986) Windows SDK에 있습니다.  
+ 때 `DDX_Check` 가 호출 *값* check box 컨트롤의 현재 상태로 설정 됩니다. 가능한 상태 값의 목록을 참조 하세요 [BM_GETCHECK](/windows/desktop/Controls/bm-getcheck) Windows SDK에 있습니다.  
   
  DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.  
   
@@ -296,7 +296,7 @@ void AFXAPI DDX_IPAddress(
 |1|부터 23 까지의 16|  
 |0|부터 31 까지의 24|  
   
- Win32 [IPM_GETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761378) 값을 읽거나 사용할 [IPM_SETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761380) 채울 값입니다. 이러한 메시지는 Windows SDK에 설명 되어 있습니다.  
+ Win32 [IPM_GETADDRESS](/windows/desktop/Controls/ipm-getaddress) 값을 읽거나 사용할 [IPM_SETADDRESS](/windows/desktop/Controls/ipm-setaddress) 채울 값입니다. 이러한 메시지는 Windows SDK에 설명 되어 있습니다.  
   
 ### <a name="remarks"></a>설명  
  때 `DDX_IPAddress` 가 호출 *값* IP 주소 컨트롤에서 하거나 읽기 또는 *값* exchange의 방향에 따라 컨트롤에 기록 됩니다.  
@@ -488,7 +488,7 @@ void AFXAPI DDX_Scroll(
  데이터를 교환할 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 멤버 변수에 대한 참조입니다.  
   
 ### <a name="remarks"></a>설명  
- 때 `DDX_Scroll` 가 호출 *값* 컨트롤의 thumb의 현재 위치에 설정 됩니다. 컨트롤의 thumb의 현재 위치와 연결 된 값에 대 한 자세한 내용은 참조 하세요. [GetScrollPos](http://msdn.microsoft.com/library/windows/desktop/bb787585) Windows SDK에 있습니다.  
+ 때 `DDX_Scroll` 가 호출 *값* 컨트롤의 thumb의 현재 위치에 설정 됩니다. 컨트롤의 thumb의 현재 위치와 연결 된 값에 대 한 자세한 내용은 참조 하세요. [GetScrollPos](/windows/desktop/api/winuser/nf-winuser-getscrollpos) Windows SDK에 있습니다.  
   
  DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.  
   

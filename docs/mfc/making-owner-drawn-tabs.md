@@ -17,15 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72192bdfb47fecb1588c3a36e402795468d527be
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fb8e7566c16abdd4540426d0c56e24c648fd0bcd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33346505"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208695"
 ---
 # <a name="making-owner-drawn-tabs"></a>소유자가 그린 탭으로 정의
-탭 컨트롤의 개별 항목을 정의할 수 있습니다 ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) 항목 소유자가 그린 되도록 합니다. 자세한 내용은 참조 [소유자가 그린 탭](http://msdn.microsoft.com/library/windows/desktop/bb760550) Windows sdk에서입니다.  
+탭 컨트롤의 개별 항목을 정의할 수 있습니다 ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) 항목 소유자가 그린 되도록 합니다. 자세한 내용은 [소유자가 그린 탭](/windows/desktop/Controls/tab-controls) Windows SDK에 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [CTabCtrl 사용](../mfc/using-ctabctrl.md)   

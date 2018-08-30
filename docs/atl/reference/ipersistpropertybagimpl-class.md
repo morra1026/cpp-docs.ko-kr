@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f214a112c1baedd507a9eeeca02e955aeceedd3e
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 09b0acfc1fc1f9147a6acbe8bbfe66016dc0b54b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37879217"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201704"
 ---
 # <a name="ipersistpropertybagimpl-class"></a>IPersistPropertyBagImpl 클래스
 이 클래스는 구현 `IUnknown` 클라이언트가 제공한 propertybag에 해당 속성을 저장 하는 개체를 허용 합니다.  
@@ -79,7 +79,7 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [IPersist::GetClassID](http://msdn.microsoft.com/library/windows/desktop/ms688664) Windows SDK에에서 있습니다.  
+ 참조 [IPersist::GetClassID](/windows/desktop/api/objidl/nf-objidl-ipersist-getclassid) Windows SDK에에서 있습니다.  
   
 ##  <a name="initnew"></a>  IPersistPropertyBagImpl::InitNew  
  새로 만든된 개체를 초기화합니다.  

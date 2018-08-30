@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c87975e0b27934d091e896867620011a51b78d52
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 05486e4b75e631dcdc77855e850fe48c08d77326
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966526"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203853"
 ---
 # <a name="vectorltboolgtreference-class"></a>vector&lt;bool&gt;::reference 클래스
 
@@ -29,7 +29,7 @@ ms.locfileid: "38966526"
 
 ## <a name="remarks"></a>설명
 
-C++는 기본적으로 비트에 직접 참조를 허용하지 않으므로 시뮬레이션된 참조가 필요하지 않습니다. `vector<bool>`는 요소당 1비트만 사용하며, 이 프록시 클래스만 사용하여 참조할 수 있습니다. 하지만, 특정 할당은 유효하지 않으므로 참조 시뮬레이션이 완전하지 않습니다. 예를 들어 `vector<bool>::reference` 개체의 주소를 확인할 수 없으므로 [vector\<bool>::operator&#91;&#93;](http://msdn.microsoft.com/Library/97738633-690d-4069-b2d9-8c54104fbfdd)를 사용하는 다음 코드는 올바르지 않습니다.
+C++는 기본적으로 비트에 직접 참조를 허용하지 않으므로 시뮬레이션된 참조가 필요하지 않습니다. `vector<bool>`는 요소당 1비트만 사용하며, 이 프록시 클래스만 사용하여 참조할 수 있습니다. 하지만, 특정 할당은 유효하지 않으므로 참조 시뮬레이션이 완전하지 않습니다. 예를 들어 `vector<bool>::reference` 개체의 주소를 확인할 수 없으므로 [vector\<bool>::operator&#91;&#93;](https://msdn.microsoft.com/Library/97738633-690d-4069-b2d9-8c54104fbfdd)를 사용하는 다음 코드는 올바르지 않습니다.
 
 ```cpp
 vector<bool> vb;

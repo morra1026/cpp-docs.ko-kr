@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e6abf906d9fa0e5866b28a0c617e68edead8378
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 2772ec96558c4aa1d1f5fcb573166a37a31c0592
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852252"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201207"
 ---
 # <a name="cminiframewnd-class"></a>CMiniFrameWnd 클래스
 일반적으로 부동 도구 모음에 있는 절반 높이의 프레임 창을 나타냅니다.  
@@ -147,8 +147,7 @@ virtual BOOL Create(
  `Create` 창의 클래스 이름 및 창 이름을 초기화 하 고 해당 스타일 및 부모에 대 한 기본값을 등록 합니다.  
   
 ##  <a name="createex"></a>  CMiniFrameWnd::CreateEx  
- 
-          `CMiniFrameWnd` 개체를 만듭니다.  
+ `CMiniFrameWnd` 개체를 만듭니다.  
   
 ```  
 virtual BOOL CreateEx(
@@ -166,7 +165,7 @@ virtual BOOL CreateEx(
  확장된 스타일을 지정 합니다 `CMiniFrameWnd` 만들어지는 합니다. 적용 된 [확장 창 스타일](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) 창에 있습니다.  
   
  *lpClassName*  
- Windows 클래스의 이름을 지정 하는 null로 끝나는 문자열을 가리키는 (한 [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) 구조). 전역으로 등록 된 모든 이름 클래스 이름일 수 있습니다 [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) 함수 또는 미리 정의 된 컨트롤 클래스 이름입니다. NULL이 아니어야 합니다.  
+ Windows 클래스의 이름을 지정 하는 null로 끝나는 문자열을 가리키는 (한 [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) 구조). 전역으로 등록 된 모든 이름 클래스 이름일 수 있습니다 [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) 함수 또는 미리 정의 된 컨트롤 클래스 이름입니다. NULL이 아니어야 합니다.  
   
  *lpWindowName*  
  창 이름이 포함 된 null로 끝나는 문자열을 가리킵니다.  

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bed065eb959d959086133a757b7ca3594214719
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: a2cc139fa0aa933131e4e19b8efa397e4bddee50
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883282"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209230"
 ---
 # <a name="server-registration-global-functions"></a>서버 등록 전역 함수
 이러한 함수를 등록 하 고 개체 맵의 서버 개체를 등록 취소에 대 한 지원을 제공 합니다.  
@@ -113,10 +113,10 @@ ATLINLINE ATLAPI AtlComModuleRegisterClassObjects(
  COM 모듈에 대 한 포인터입니다.  
   
  *dwClsContext*  
- 클래스 개체를 실행할의 컨텍스트를 지정 합니다. 가능한 값은 CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER, 또는 CLSCTX_LOCAL_SERVER입니다. 참조 [CLSCTX](http://msdn.microsoft.com/library/windows/desktop/ms693716) 대 한 자세한 내용은 합니다.  
+ 클래스 개체를 실행할의 컨텍스트를 지정 합니다. 가능한 값은 CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER, 또는 CLSCTX_LOCAL_SERVER입니다. 참조 [CLSCTX](https://msdn.microsoft.com/library/windows/desktop/ms693716) 대 한 자세한 내용은 합니다.  
   
  *dwFlags*  
- 클래스 개체에 연결 형식을 결정합니다. 가능한 값은 REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE, 또는 REGCLS_MULTI_SEPARATE입니다. 참조 [REGCLS](http://msdn.microsoft.com/library/windows/desktop/ms679697) 대 한 자세한 내용은 합니다.  
+ 클래스 개체에 연결 형식을 결정합니다. 가능한 값은 REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE, 또는 REGCLS_MULTI_SEPARATE입니다. 참조 [REGCLS](/windows/desktop/api/combaseapi/ne-combaseapi-tagregcls) 대 한 자세한 내용은 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  

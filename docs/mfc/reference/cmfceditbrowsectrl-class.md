@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec3bfc550843675673782ea92ff7fad6eae2967b
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 9799021942cbb8a505cc993ff97f5f42e6d0f20f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42545903"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222370"
 ---
 # <a name="cmfceditbrowsectrl-class"></a>CMFCEditBrowseCtrl 클래스
 `CMFCEditBrowseCtrl` 클래스는 필요에 따라 찾아보기 단추를 포함 하는 편집 가능한 텍스트 상자 인 편집 찾아보기 컨트롤을 지원 합니다. 사용자가 찾아보기 단추를 클릭하면 컨트롤은 사용자 지정 작업을 수행하거나 파일 브라우저 또는 폴더 브라우저가 포함된 표준 대화 상자를 표시합니다.  
@@ -74,7 +74,7 @@ class CMFCEditBrowseCtrl : public CEdit
 |[CMFCEditBrowseCtrl::OnChangeLayout](#onchangelayout)|현재 편집 찾아보기 컨트롤을 다시 그립니다.|  
 |[CMFCEditBrowseCtrl::OnDrawBrowseButton](#ondrawbrowsebutton)|찾아보기 단추를 그리기 위해 프레임 워크에서 호출 됩니다.|  
 |[CMFCEditBrowseCtrl::OnIllegalFileName](#onillegalfilename)|편집 컨트롤에는 잘못 된 파일 이름을 입력 하는 경우 프레임 워크에서 호출 됩니다.|  
-|`CMFCEditBrowseCtrl::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다. 구문 및 자세한 내용은 [cwnd:: Pretranslatemessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)합니다.|  
+|`CMFCEditBrowseCtrl::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다. 구문 및 자세한 내용은 [cwnd:: Pretranslatemessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)합니다.|  
 |[CMFCEditBrowseCtrl::SetBrowseButtonImage](#setbrowsebuttonimage)|찾아보기 단추에 대 한 사용자 지정 이미지를 설정합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -121,7 +121,7 @@ class CMFCEditBrowseCtrl : public CEdit
   
  [CMFCEditBrowseCtrl](../../mfc/reference/cmfceditbrowsectrl-class.md)  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서 두 메서드를 사용 하는 방법에 설명 합니다 `CMFCEditBrowseCtrl` 클래스: `EnableFolderBrowseButton` 고 `EnableFileBrowseButton`입니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_NewControls#6](../../mfc/reference/codesnippet/cpp/cmfceditbrowsectrl-class_1.h)]  

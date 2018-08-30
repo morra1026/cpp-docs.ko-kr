@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea2c87a3ce87bbf15f99609a643a9a72f6d2058e
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: a8b2ca6ebbc0201a3c56c9239b665c55ccd9eb13
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853487"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202747"
 ---
 # <a name="colechangesourcedialog-class"></a>COleChangeSourceDialog 클래스
 OLE 소스 변경 대화 상자에 사용합니다.  
@@ -77,9 +77,9 @@ class COleChangeSourceDialog : public COleDialog
 |[COleChangeSourceDialog::m_cs](#m_cs)|대화 상자의 동작을 제어 하는 구조체입니다.|  
   
 ## <a name="remarks"></a>설명  
- 클래스의 개체를 만들려면 `COleChangeSourceDialog` 이 대화 상자를 호출 하려는 경우. 후는 `COleChangeSourceDialog` 생성 된 개체를 사용할 수 있습니다 합니다 [m_cs](#m_cs) 값 또는 대화 상자에서 컨트롤의 상태를 초기화 하는 구조입니다. 합니다 `m_cs` 형식의 구조체가 [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160)합니다. 이 대화 상자 클래스를 사용 하는 방법에 대 한 자세한 내용은 참조는 [DoModal](#domodal) 멤버 함수입니다.  
+ 클래스의 개체를 만들려면 `COleChangeSourceDialog` 이 대화 상자를 호출 하려는 경우. 후는 `COleChangeSourceDialog` 생성 된 개체를 사용할 수 있습니다 합니다 [m_cs](#m_cs) 값 또는 대화 상자에서 컨트롤의 상태를 초기화 하는 구조입니다. 합니다 `m_cs` 형식의 구조체가 [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea)합니다. 이 대화 상자 클래스를 사용 하는 방법에 대 한 자세한 내용은 참조는 [DoModal](#domodal) 멤버 함수입니다.  
   
- 자세한 내용은 참조는 [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) Windows SDK의 구조입니다.  
+ 자세한 내용은 참조는 [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) Windows SDK의 구조입니다.  
   
  OLE 관련 대화 상자에 대 한 자세한 내용은 문서 참조 [OLE의 대화 상자](../../mfc/dialog-boxes-in-ole.md)합니다.  
   
@@ -120,7 +120,7 @@ explicit COleChangeSourceDialog(
 ### <a name="remarks"></a>설명  
  대화 상자를 표시 하려면 호출을 [DoModal](#domodal) 함수입니다.  
   
- 자세한 내용은 참조는 [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) 구조 및 [OleUIChangeSource](http://msdn.microsoft.com/library/windows/desktop/ms682497) Windows SDK에는 함수입니다.  
+ 자세한 내용은 참조는 [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) 구조 및 [OleUIChangeSource](/windows/desktop/api/oledlg/nf-oledlg-oleuichangesourcea) Windows SDK에는 함수입니다.  
   
 ##  <a name="domodal"></a>  COleChangeSourceDialog::DoModal  
  OLE 소스 변경 대화 상자를 표시 하려면이 함수를 호출 합니다.  
@@ -136,7 +136,7 @@ virtual INT_PTR DoModal();
   
 - 사용자가 대화 상자를 취소 하는 경우 IDCANCEL 합니다.  
   
-- IDABORT 오류가 발생 합니다. IDABORT 반환 되 면 호출 된 [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) 발생 한 오류 유형에 대 한 자세한 정보를 보려면 멤버 함수입니다. 목록을 가능한 오류에 대 한 참조를 [OleUIChangeSource](http://msdn.microsoft.com/library/windows/desktop/ms682497) Windows SDK에는 함수입니다.  
+- IDABORT 오류가 발생 합니다. IDABORT 반환 되 면 호출 된 [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) 발생 한 오류 유형에 대 한 자세한 정보를 보려면 멤버 함수입니다. 목록을 가능한 오류에 대 한 참조를 [OleUIChangeSource](/windows/desktop/api/oledlg/nf-oledlg-oleuichangesourcea) Windows SDK에는 함수입니다.  
   
 ### <a name="remarks"></a>설명  
  멤버를 설정 하 여 다양 한 대화 상자 컨트롤을 초기화 하려는 경우는 [m_cs](#m_cs) 구조를 호출 하기 전에이 작업을 수행 해야 `DoModal`, 대화 상자 개체에서 생성 된 후 있지만.  
@@ -185,9 +185,9 @@ CString GetFromPrefix();
 ### <a name="remarks"></a>설명  
  한 후에이 함수 호출 [DoModal](#domodal) IDOK를 반환 합니다.  
   
- 직접이 값을 가져옵니다 합니다 `lpszFrom` 의 멤버는 [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) 구조입니다.  
+ 직접이 값을 가져옵니다 합니다 `lpszFrom` 의 멤버는 [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) 구조입니다.  
   
- 자세한 내용은 참조는 [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) Windows SDK의 구조입니다.  
+ 자세한 내용은 참조는 [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) Windows SDK의 구조입니다.  
   
 ##  <a name="getitemname"></a>  COleChangeSourceDialog::GetItemName  
  연결 된 클라이언트 항목에 대 한 표시 이름 항목 모니커 부분을 검색 하려면이 함수를 호출 합니다.  
@@ -215,12 +215,12 @@ CString GetToPrefix();
 ### <a name="remarks"></a>설명  
  한 후에이 함수 호출 [DoModal](#domodal) IDOK를 반환 합니다.  
   
- 직접이 값을 가져옵니다 합니다 `lpszTo` 의 멤버는 [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) 구조입니다.  
+ 직접이 값을 가져옵니다 합니다 `lpszTo` 의 멤버는 [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) 구조입니다.  
   
- 자세한 내용은 참조는 [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) Windows SDK의 구조입니다.  
+ 자세한 내용은 참조는 [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) Windows SDK의 구조입니다.  
   
 ##  <a name="m_cs"></a>  COleChangeSourceDialog::m_cs  
- 이 데이터 멤버는 형식의 구조체 [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160)합니다.  
+ 이 데이터 멤버는 형식의 구조체 [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea)합니다.  
   
 ```  
 OLEUICHANGESOURCE m_cs;  
@@ -229,7 +229,7 @@ OLEUICHANGESOURCE m_cs;
 ### <a name="remarks"></a>설명  
  `OLEUICHANGESOURCE` OLE 소스 변경 대화 상자의 동작을 제어 하는 데 사용 됩니다. 이 구조체의 멤버는 직접 수정할 수 있습니다.  
   
- 자세한 내용은 참조는 [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) Windows SDK의 구조입니다.  
+ 자세한 내용은 참조는 [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) Windows SDK의 구조입니다.  
   
 ##  <a name="isvalidsource"></a>  COleChangeSourceDialog::IsValidSource  
  새 원본 유효한 지 확인 하려면이 함수를 호출 합니다.  
@@ -244,7 +244,7 @@ BOOL IsValidSource();
 ### <a name="remarks"></a>설명  
  한 후에이 함수 호출 [DoModal](#domodal) IDOK를 반환 합니다.  
   
- 자세한 내용은 참조는 [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) Windows SDK의 구조입니다.  
+ 자세한 내용은 참조는 [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) Windows SDK의 구조입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [COleDialog 클래스](../../mfc/reference/coledialog-class.md)   
