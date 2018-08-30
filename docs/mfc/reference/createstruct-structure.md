@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6036490b21ccbd86dfed56ea90226cbb2db8d596
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 594f71d5166261dbb1bb08422a564157bfce2721
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848472"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203663"
 ---
 # <a name="createstruct-structure"></a>CREATESTRUCT 구조체
 `CREATESTRUCT` 구조는 응용 프로그램의 창 프로시저에 전달 된 초기화 매개 변수를 정의 합니다.  
@@ -77,7 +77,7 @@ typedef struct tagCREATESTRUCT {
  새 창의 이름을 지정 하는 null로 끝나는 문자열을 가리킵니다.  
   
  *lpszClass*  
- 새 창을 Windows 클래스 이름을 지정 하는 null로 끝나는 문자열을 가리키는 (한 [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) 구조체; 자세한 내용은 Windows SDK를 참조 하세요).  
+ 새 창을 Windows 클래스 이름을 지정 하는 null로 끝나는 문자열을 가리키는 (한 [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) 구조체; 자세한 내용은 Windows SDK를 참조 하세요).  
   
  *dwExStyle*  
  지정 된 [확장 스타일](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) 새 창에 대 한 합니다.  

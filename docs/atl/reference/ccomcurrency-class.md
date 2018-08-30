@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6c883ef9c0c5866db1edf60668efcea7e819fc5
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 60d3d845f51f59e6072bd0425f34c63e0049dd31
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208769"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202539"
 ---
 # <a name="ccomcurrency-class"></a>CComCurrency 클래스
 `CComCurrency`에는 CURRENCY 개체를 만들고 관리하는 메서드 및 연산자가 있습니다.  
@@ -184,7 +184,7 @@ SHORT GetFraction() const;
 ### <a name="remarks"></a>설명  
  소수 부분에는-9999 (CY_MIN_FRACTION)에서 + 9999 (CY_MAX_FRACTION) 사이의 4 자리 정수로 값입니다. `GetFraction` (CY_SCALE) 10000으로 조정 된이 값을 반환 합니다. CY_MIN_FRACTION, CY_MAX_FRACTION, CY_SCALE의 값은 atlcur.h에 정의 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#50](../../atl/codesnippet/cpp/ccomcurrency-class_1.cpp)]  
   
 ##  <a name="getinteger"></a>  CComCurrency::GetInteger  
@@ -197,7 +197,7 @@ LONGLONG GetInteger() const;
 ### <a name="return-value"></a>반환 값  
  정수 부분을 반환 합니다 `m_currency` 데이터 멤버입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#51](../../atl/codesnippet/cpp/ccomcurrency-class_2.cpp)]  
   
 ##  <a name="m_currency"></a>  CComCurrency::m_currency  
@@ -225,7 +225,7 @@ CComCurrency operator-(const CComCurrency& cur) const;
 ### <a name="return-value"></a>반환 값  
  반환 된 `CComCurrency` 뺄셈 결과 나타내는 개체입니다. 오버플로가 발생 하는 등의 오류가 발생 한 경우이 연산자는 다음과 같이 호출 됩니다. `AtlThrow` 오류를 설명 하는 HRESULT를 사용 하 여 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#55](../../atl/codesnippet/cpp/ccomcurrency-class_3.cpp)]  
   
 ##  <a name="operator_neq"></a>  CComCurrency::operator! =  
@@ -242,7 +242,7 @@ bool operator!= (const CComCurrency& cur) const;
 ### <a name="return-value"></a>반환 값  
  비교할 항목 같지 않은 경우 TRUE를 반환 합니다 `CComCurrency` 개체, 그렇지 않으면 FALSE입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#56](../../atl/codesnippet/cpp/ccomcurrency-class_4.cpp)]  
   
 ##  <a name="operator_star"></a>  CComCurrency::operator *  
@@ -263,7 +263,7 @@ CComCurrency operator*(const CComCurrency& cur) const;
 ### <a name="return-value"></a>반환 값  
  반환 된 `CComCurrency` 곱하기의 결과 나타내는 개체입니다. 오버플로가 발생 하는 등의 오류가 발생 한 경우이 연산자는 다음과 같이 호출 됩니다. `AtlThrow` 오류를 설명 하는 HRESULT를 사용 하 여 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#57](../../atl/codesnippet/cpp/ccomcurrency-class_5.cpp)]  
   
 ##  <a name="operator_star_eq"></a>  CComCurrency::operator \*=  
@@ -284,7 +284,7 @@ const CComCurrency& operator*= (const CComCurrency& cur);
 ### <a name="return-value"></a>반환 값  
  업데이트 된 반환 `CComCurrency` 개체입니다. 오버플로가 발생 하는 등의 오류가 발생 한 경우이 연산자는 다음과 같이 호출 됩니다. `AtlThrow` 오류를 설명 하는 HRESULT를 사용 하 여 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#58](../../atl/codesnippet/cpp/ccomcurrency-class_6.cpp)]  
   
 ##  <a name="operator_div"></a>  CComCurrency::operator /  
@@ -301,7 +301,7 @@ CComCurrency operator/(long nOperand) const;
 ### <a name="return-value"></a>반환 값  
  반환 된 `CComCurrency` 나누기의 결과 나타내는 개체입니다. 제 수 0 인 어설션 오류가 발생 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#59](../../atl/codesnippet/cpp/ccomcurrency-class_7.cpp)]  
   
 ##  <a name="operator_div_eq"></a>  CComCurrency::operator / =  
@@ -318,7 +318,7 @@ const CComCurrency& operator/= (long nOperand);
 ### <a name="return-value"></a>반환 값  
  업데이트 된 반환 `CComCurrency` 개체입니다. 제 수 0 인 어설션 오류가 발생 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#60](../../atl/codesnippet/cpp/ccomcurrency-class_8.cpp)]  
   
 ##  <a name="operator_add"></a>  CComCurrency::operator +  
@@ -335,7 +335,7 @@ CComCurrency operator+(const CComCurrency& cur) const;
 ### <a name="return-value"></a>반환 값  
  반환 된 `CComCurrency` 더하기의 결과 나타내는 개체입니다. 오버플로가 발생 하는 등의 오류가 발생 한 경우이 연산자는 다음과 같이 호출 됩니다. `AtlThrow` 오류를 설명 하는 HRESULT를 사용 하 여 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#61](../../atl/codesnippet/cpp/ccomcurrency-class_9.cpp)]  
   
 ##  <a name="operator_add_eq"></a>  CComCurrency::operator + =  
@@ -352,7 +352,7 @@ const CComCurrency& operator+= (const CComCurrency& cur);
 ### <a name="return-value"></a>반환 값  
  업데이트 된 반환 `CComCurrency` 개체입니다. 오버플로가 발생 하는 등의 오류가 발생 한 경우이 연산자는 다음과 같이 호출 됩니다. `AtlThrow` 오류를 설명 하는 HRESULT를 사용 하 여 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#62](../../atl/codesnippet/cpp/ccomcurrency-class_10.cpp)]  
   
 ##  <a name="operator_lt"></a>  CComCurrency::operator &lt;  
@@ -369,7 +369,7 @@ bool operator<(const CComCurrency& cur) const;
 ### <a name="return-value"></a>반환 값  
  첫 번째 개체가 작으면 TRUE를 반환 합니다. false 이면 두 번째 인스턴스보다 그렇지 않은 경우.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#63](../../atl/codesnippet/cpp/ccomcurrency-class_11.cpp)]  
   
 ##  <a name="operator_lt_eq"></a>  CComCurrency::operator &lt;=  
@@ -386,7 +386,7 @@ bool operator<= (const CComCurrency& cur) const;
 ### <a name="return-value"></a>반환 값  
  첫 번째 개체가 두 번째 보다 작거나 FALSE 그렇지 않은 경우 TRUE를 반환 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#64](../../atl/codesnippet/cpp/ccomcurrency-class_12.cpp)]  
   
 ##  <a name="operator_eq"></a>  CComCurrency::operator =  
@@ -419,7 +419,7 @@ const CComCurrency& operator= (DECIMAL dSrc);
 ### <a name="return-value"></a>반환 값  
  업데이트 된 반환 `CComCurrency` 개체입니다. 오버플로가 발생 하는 등의 오류가 발생 한 경우이 연산자는 다음과 같이 호출 됩니다. `AtlThrow` 오류를 설명 하는 HRESULT를 사용 하 여 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#65](../../atl/codesnippet/cpp/ccomcurrency-class_13.cpp)]  
   
 ##  <a name="operator_-_eq"></a>  CComCurrency::operator =  
@@ -436,7 +436,7 @@ const CComCurrency& operator-= (const CComCurrency& cur);
 ### <a name="return-value"></a>반환 값  
  업데이트 된 반환 `CComCurrency` 개체입니다. 오버플로가 발생 하는 등의 오류가 발생 한 경우이 연산자는 다음과 같이 호출 됩니다. `AtlThrow` 오류를 설명 하는 HRESULT를 사용 하 여 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#66](../../atl/codesnippet/cpp/ccomcurrency-class_14.cpp)]  
   
 ##  <a name="operator_eq_eq"></a>  CComCurrency::operator = =  
@@ -453,7 +453,7 @@ bool operator== (const CComCurrency& cur) const;
 ### <a name="return-value"></a>반환 값  
  개체가 같으면 TRUE를 반환 합니다 (즉,는 `m_currency` 데이터 멤버, 두 정수 둘 다에서 소수 자릿수 및 개체에 동일한 값)이 고, FALSE이 고, 그렇지 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#67](../../atl/codesnippet/cpp/ccomcurrency-class_15.cpp)]  
   
 ##  <a name="operator_gt"></a>  CComCurrency::operator &gt;  
@@ -470,7 +470,7 @@ bool operator>(const CComCurrency& cur) const;
 ### <a name="return-value"></a>반환 값  
  첫 번째 개체 보다 크면 두 번째 FALSE 그렇지 않은 경우 TRUE를 반환 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#68](../../atl/codesnippet/cpp/ccomcurrency-class_16.cpp)]  
   
 ##  <a name="operator_gt_eq"></a>  CComCurrency::operator &gt;=  
@@ -487,7 +487,7 @@ bool operator>= (const CComCurrency& cur) const;
 ### <a name="return-value"></a>반환 값  
  그렇지 않으면 첫 번째 개체는 두 번째 FALSE 보다 크거나 같은 경우 TRUE를 반환 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#69](../../atl/codesnippet/cpp/ccomcurrency-class_17.cpp)]  
   
 ##  <a name="operator_currency"></a>  CComCurrency::operator 통화  
@@ -501,7 +501,7 @@ operator const CURRENCY&() const throw();
 ### <a name="return-value"></a>반환 값  
  통화 개체에 대 한 참조를 반환합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#70](../../atl/codesnippet/cpp/ccomcurrency-class_18.cpp)]  
   
 ##  <a name="round"></a>  CComCurrency::Round  
@@ -518,7 +518,7 @@ HRESULT Roundint nDecimals);
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#52](../../atl/codesnippet/cpp/ccomcurrency-class_19.cpp)]  
   
 ##  <a name="setfraction"></a>  CComCurrency::SetFraction  
@@ -535,7 +535,7 @@ HRESULT SetFraction(SHORT nFraction);
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#53](../../atl/codesnippet/cpp/ccomcurrency-class_20.cpp)]  
   
 ##  <a name="setinteger"></a>  CComCurrency::SetInteger  
@@ -554,10 +554,10 @@ HRESULT SetInteger(LONGLONG nInteger);
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Utilities#54](../../atl/codesnippet/cpp/ccomcurrency-class_21.cpp)]  
   
 ## <a name="see-also"></a>참고 항목  
  [COleCurrency 클래스](../../mfc/reference/colecurrency-class.md)   
- [통화](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e)   
+ [통화](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e)   
  [클래스 개요](../../atl/atl-class-overview.md)

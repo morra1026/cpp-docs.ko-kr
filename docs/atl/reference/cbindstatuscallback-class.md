@@ -39,12 +39,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8df8ef2a0846f5ac90a2adfc53fa64da92930f3
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 8879c1d304e6d46b7ae3c8c2f1ed535526a5390e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881242"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202464"
 ---
 # <a name="cbindstatuscallback-class"></a>CBindStatusCallback 클래스
 이 클래스는 `IBindStatusCallback` 인터페이스를 구현합니다.  
@@ -101,10 +101,10 @@ class ATL_NO_VTABLE CBindStatusCallback : public CComObjectRootEx
 |[CBindStatusCallback::m_dwTotalRead](#m_dwtotalread)|총 읽은 바이트입니다.|  
 |[CBindStatusCallback::m_pFunc](#m_pfunc)|함수에 대 한 포인터에는 데이터를 사용할 때 호출 됩니다.|  
 |[CBindStatusCallback::m_pT](#m_pt)|비동기 데이터 전송 요청 하는 개체에 대 한 포인터입니다.|  
-|[CBindStatusCallback::m_spBindCtx](#m_spbindctx)|에 대 한 포인터를 [IBindCtx](http://msdn.microsoft.com/library/windows/desktop/ms693755) 현재 바인딩 작업에 대 한 인터페이스입니다.|  
+|[CBindStatusCallback::m_spBindCtx](#m_spbindctx)|에 대 한 포인터를 [IBindCtx](/windows/desktop/api/objidl/nn-objidl-ibindctx) 현재 바인딩 작업에 대 한 인터페이스입니다.|  
 |[CBindStatusCallback::m_spBinding](#m_spbinding)|에 대 한 포인터를 `IBinding` 현재 바인딩 작업에 대 한 인터페이스입니다.|  
-|[CBindStatusCallback::m_spMoniker](#m_spmoniker)|에 대 한 포인터를 [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705) 사용할 URL에 대 한 인터페이스입니다.|  
-|[CBindStatusCallback::m_spStream](#m_spstream)|에 대 한 포인터를 [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) 데이터 전송에 대 한 인터페이스입니다.|  
+|[CBindStatusCallback::m_spMoniker](#m_spmoniker)|에 대 한 포인터를 [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker) 사용할 URL에 대 한 인터페이스입니다.|  
+|[CBindStatusCallback::m_spStream](#m_spstream)|에 대 한 포인터를 [IStream](/windows/desktop/api/objidl/nn-objidl-istream) 데이터 전송에 대 한 인터페이스입니다.|  
   
 ## <a name="remarks"></a>설명  
  `CBindStatusCallback` 클래스는 `IBindStatusCallback` 인터페이스를 구현합니다. `IBindStatusCallback` 비동기 데이터 전송에서 알림을 받을 수 있도록 응용 프로그램에 의해 구현 되어야 합니다. 시스템에서 제공 하는 비동기 모니커를 사용 하 여 `IBindStatusCallback` 비동기 데이터에 대 한 정보를 수신 하는 메서드를 개체에서 전송 합니다.  
@@ -278,7 +278,7 @@ T* m_pT;
  `CBindStatusCallback` 개체는이 개체의이 클래스에 템플릿 화 됩니다.  
   
 ##  <a name="m_spbindctx"></a>  CBindStatusCallback::m_spBindCtx  
- 에 대 한 포인터를 [IBindCtx](http://msdn.microsoft.com/library/windows/desktop/ms693755) 바인드 컨텍스트에 (특정 모니커 바인딩 작업에 대 한 정보를 저장 하는 개체)에 대 한 액세스를 제공 하는 인터페이스입니다.  
+ 에 대 한 포인터를 [IBindCtx](/windows/desktop/api/objidl/nn-objidl-ibindctx) 바인드 컨텍스트에 (특정 모니커 바인딩 작업에 대 한 정보를 저장 하는 개체)에 대 한 액세스를 제공 하는 인터페이스입니다.  
   
 ```
 CComPtr<IBindCtx> m_spBindCtx;
@@ -298,7 +298,7 @@ CComPtr<IBinding> m_spBinding;
  초기화 `OnStartBinding` 에 출시 하 고 `OnStopBinding`입니다.  
   
 ##  <a name="m_spmoniker"></a>  CBindStatusCallback::m_spMoniker  
- 에 대 한 포인터를 [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705) 사용할 URL에 대 한 인터페이스입니다.  
+ 에 대 한 포인터를 [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker) 사용할 URL에 대 한 인터페이스입니다.  
   
 ```
 CComPtr<IMoniker> m_spMoniker;
@@ -308,7 +308,7 @@ CComPtr<IMoniker> m_spMoniker;
  초기화 `StartAsyncDownload`합니다.  
   
 ##  <a name="m_spstream"></a>  CBindStatusCallback::m_spStream  
- 에 대 한 포인터를 [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) 현재 바인딩 작업의 인터페이스입니다.  
+ 에 대 한 포인터를 [IStream](/windows/desktop/api/objidl/nn-objidl-istream) 현재 바인딩 작업의 인터페이스입니다.  
   
 ```
 CComPtr<IStream> m_spStream;
@@ -336,10 +336,10 @@ STDMETHOD(
  [in] 바인딩의 사용할 수 있는 데이터의 누적 양 (메가바이트)입니다. 데이터의 양을 관련 되지 않거나 특정 양이 없는 나왔을 있는지를 나타내는 0이 될 수 있습니다.  
   
  *pformatetc*  
- [in] 에 대 한 포인터를 [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682242) 사용 가능한 데이터의 형식을 포함 하는 구조입니다. 형식이 없습니다, 경우에 CF_NULL 수 있습니다.  
+ [in] 에 대 한 포인터를 [FORMATETC](/windows/desktop/com/the-formatetc-structure) 사용 가능한 데이터의 형식을 포함 하는 구조입니다. 형식이 없습니다, 경우에 CF_NULL 수 있습니다.  
   
  *pstgmed*  
- [in] 에 대 한 포인터를 [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms695269) 이제 사용 가능한 실제 데이터를 보유 하는 구조입니다.  
+ [in] 에 대 한 포인터를 [STGMEDIUM](/windows/desktop/com/the-stgmedium-structure) 이제 사용 가능한 실제 데이터를 보유 하는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  HRESULT 값 중 하나입니다.  
@@ -486,7 +486,7 @@ HRESULT StartAsyncDownload(
   
  다음 예제에서 (에서 가져온 합니다 [비동기](../../visual-cpp-samples.md) 샘플)를 함수 `OnData` 입력란에 수신된 된 데이터를 씁니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_ATL_Windowing#87](../../atl/codesnippet/cpp/cbindstatuscallback-class_2.h)]  
   
 ## <a name="see-also"></a>참고 항목  

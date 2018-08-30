@@ -35,12 +35,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0cbc05c0e337560982f69a5ca920340bc1b0de8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d6b26f0c200f19cab4bb2710be686b25a9dce014
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401245"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202012"
 ---
 # <a name="memset-wmemset"></a>memset, wmemset
 
@@ -74,17 +74,17 @@ wchar_t *wmemset(
 
 ## <a name="return-value"></a>반환 값
 
-값 *dest*합니다.
+변수의 *dest*합니다.
 
 ## <a name="remarks"></a>설명
 
-설정 하는 첫 번째 *count* 자의 *dest* 문자로 *c*합니다.
+첫 번째 설정 *개수* 자의 *dest* 문자로 *c*합니다.
 
-**보안 정보** 대상 버퍼에 충분 한 공간을 하나 이상 있는지 확인 *count* 문자입니다. 자세한 내용은 [버퍼 오버런 방지](http://msdn.microsoft.com/library/windows/desktop/ms717795)를 참조하세요.
+**보안 참고** 가지도록 대상 버퍼에 대 한 충분 한 공간이 적어도 *개수* 문자입니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**memset**|\<memory.h> 또는 \<string.h>|
 |**wmemset**|\<wchar.h>|

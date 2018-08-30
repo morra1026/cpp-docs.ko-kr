@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 449887e2424ce86fd97407b416e741c908910dfa
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e8d226f508f5f5e8c717bd671413f21377c0ae01
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592013"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202292"
 ---
 # <a name="restricted"></a>restricted
 
@@ -43,9 +43,9 @@ ms.locfileid: "42592013"
 
 ## <a name="remarks"></a>설명
 
-합니다 **제한** c + + 특성에 동일한 기능을 합니다 [제한](http://msdn.microsoft.com/library/windows/desktop/aa367157) MIDL 특성입니다.
+합니다 **제한** c + + 특성에 동일한 기능을 합니다 [제한](/windows/desktop/Midl/restricted) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에서는 사용 하 여 **제한** 특성:
 

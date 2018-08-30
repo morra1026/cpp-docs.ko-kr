@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51933ac5aeb3c14a25b3989809aab2e09686b9a3
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 90972e39bbad812f820452816ff3df982174539f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42541690"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202978"
 ---
 # <a name="cusertool-class"></a>CUserTool 클래스
 사용자 도구는 외부 응용 프로그램을 실행하는 메뉴 항목입니다. 합니다 **도구** 탭의 **사용자 지정** 대화 상자 ( [CMFCToolBarsCustomizeDialog 클래스](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)) 사용자가 사용자 도구를 추가 하 고 이름, 명령, 인수를 지정할 수 있도록 및 각 사용자 도구에 대 한 초기 디렉터리입니다.  
@@ -88,7 +88,7 @@ class CUserTool : public CObject
 ## <a name="remarks"></a>설명  
  응용 프로그램에서 사용자 도구를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [CUserToolsManager 클래스](../../mfc/reference/cusertoolsmanager-class.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서 도구를 만드는 방법을 보여 줍니다는 `CUserToolsManager` 개체, 설정 된 `m_strLabel` 멤버 변수와 사용자 도구를 실행 하는 응용 프로그램 집합입니다. 이 코드 조각은의 일부인 합니다 [Visual Studio 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#35](../../mfc/codesnippet/cpp/cusertool-class_1.cpp)]  
@@ -159,7 +159,7 @@ virtual BOOL Invoke();
  명령이 성공적으로 실행 된 경우 0이 아닌 값 그렇지 않으면 0입니다.  
   
 ### <a name="remarks"></a>설명  
- 호출 [ShellExecute](http://msdn.microsoft.com/library/windows/desktop/bb762153) 사용자 도구를 사용 하 여 연결 명령을 실행 합니다. 이 명령은 빈 되었는지 또는 함수가 실패 하면 [ShellExecute](http://msdn.microsoft.com/library/windows/desktop/bb762153) 실패 합니다.  
+ 호출 [ShellExecute](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) 사용자 도구를 사용 하 여 연결 명령을 실행 합니다. 이 명령은 빈 되었는지 또는 함수가 실패 하면 [ShellExecute](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) 실패 합니다.  
   
 ##  <a name="loaddefaulticon"></a>  CUserTool::LoadDefaultIcon  
  사용자 도구에 대 한 기본 아이콘을 로드합니다.  

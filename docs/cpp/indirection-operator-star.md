@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80fdbe14539c5b32c2da80a5de75fbe0a2b64241
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: a23951697a5f736305734c6d49044a2e33ac4783
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409128"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200495"
 ---
 # <a name="indirection-operator-"></a>간접 참조 연산자: *
 ## <a name="syntax"></a>구문  
@@ -32,7 +32,7 @@ ms.locfileid: "39409128"
 ```  
   
 ## <a name="remarks"></a>설명  
- 단항 간접 참조 연산자 (**\***)는 포인터를 역참조, 포인터 값 l-value를 변환 합니다. 간접 참조 연산자의 피연산자는 형식에 대한 포인터여야 합니다. 간접 참조의 결과는 포인터 형식이 파생된 형식입니다. 사용은 **\*** 이 컨텍스트에서 연산자는 곱셈 이항 연산자로 해당 의미와에서 다릅니다.  
+ 단항 간접 참조 연산자 (<strong>\*</strong>)는 포인터를 역참조, 포인터 값 l-value를 변환 합니다. 간접 참조 연산자의 피연산자는 형식에 대한 포인터여야 합니다. 간접 참조의 결과는 포인터 형식이 파생된 형식입니다. 사용은 <strong>\*</strong> 이 컨텍스트에서 연산자는 곱셈 이항 연산자로 해당 의미와에서 다릅니다.  
   
  피연산자가 함수를 가리키는 경우 결과는 함수 지정자입니다. 저장소 위치를 가리키는 경우 결과는 저장소 위치를 지정하는 l-value입니다.  
   

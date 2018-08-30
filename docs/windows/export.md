@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e696b3c141a83882af67e72039c164a0f917d446
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d5da3f03500ccaadb4cff3be0226592e36ed3160
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611202"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200891"
 ---
 # <a name="export"></a>내보내기
 
@@ -42,9 +42,9 @@ ms.locfileid: "42611202"
 
 명명 되지 않은 내보내면 **열거형** 또는 **구조체**를 시작 하는 이름이 지정 되 고 **__unnamed**<em>x</em>여기서 *x* 은 일련 번호입니다.
 
-Typedef 내보내기에 대 한 유효한 기본 형식, 구조체, 공용 구조체, 열거형 또는 형식 식별자.  참조 [typedef](http://msdn.microsoft.com/library/windows/desktop/aa367287) 자세한 내용은 합니다.
+Typedef 내보내기에 대 한 유효한 기본 형식, 구조체, 공용 구조체, 열거형 또는 형식 식별자.  참조 [typedef](/windows/desktop/Midl/typedef) 자세한 내용은 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에서는 사용 하 여 **내보내기** 특성:
 
