@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b962db5477294ad36997208f59265a284680fac5
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6fd13c3e94f6b42bd485c645233f84272c6eae91
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604942"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194835"
 ---
 # <a name="string--c-component-extensions"></a>문자열(C++ 구성 요소 확장)
 
@@ -48,7 +48,7 @@ using namespace default;
 
 ### <a name="remarks"></a>설명
 
-자세한 내용 및 문자열에 대 한 예제를 참조 하세요. [platform:: string, std:: wstring, 및 리터럴 (플랫폼)](http://msdn.microsoft.com/ec92fbc6-edf3-4137-a85e-8e29bdb857a8)
+자세한 내용 및 문자열에 대 한 예제를 참조 하세요. [platform:: string, std:: wstring, 및 리터럴 (플랫폼)](https://msdn.microsoft.com/ec92fbc6-edf3-4137-a85e-8e29bdb857a8)
 
 ### <a name="requirements"></a>요구 사항
 
