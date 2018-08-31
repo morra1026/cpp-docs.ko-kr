@@ -1,7 +1,7 @@
 ---
 title: NMAKE 심각한 오류 U1000 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a8d4e0f150d82482dd8391efa1f2251ac37bc8f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 69909c542a02baf8aa261c8ef78413a877a223a7
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33325268"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194890"
 ---
 # <a name="nmake-fatal-error-u1000"></a>NMAKE 심각한 오류 U1000
-구문 오류: ')' 매크로 호출에 없습니다.  
-  
- 왼쪽된 괄호 **(** 일치 하는 오른쪽 괄호 없이 나타난, **)**, 매크로 호출 합니다. 올바른 형식은 **$(***이름***)**; `$` *n* 한 문자로 된 이름을 사용할 수 있습니다.
+
+> 구문 오류: ')' 매크로 호출의 누락
+
+왼쪽된 괄호 **(** 는 일치 하는 오른쪽 괄호 없이 표시, **)** 를 매크로 호출 합니다. 올바른 형식은 **$(**<em>이름</em>**)**; **$** <em>n</em> 한 문자로 된 이름을 허용 됩니다.

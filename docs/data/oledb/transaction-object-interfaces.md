@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b2d84d9a072d3eeaa84246a6692487be5c71679c
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 758208de2ee27dba64808c60b1d94bed5bdeafa4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42573148"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194576"
 ---
 # <a name="transaction-object-interfaces"></a>트랜잭션 개체 인터페이스
 트랜잭션 개체를 데이터 원본에서 작업의 원자 단위를 정의 하 고 이러한 작업 단위가 서로 관계를 결정 합니다. 이 개체는 OLE DB 공급자 템플릿에 의해 직접 지원 되지 않습니다 (즉, 사용자 고유의 개체 만들어야).  
@@ -34,7 +34,7 @@ ms.locfileid: "42573148"
   
 |인터페이스|필수 여부|OLE DB 템플릿에서 구현 되었습니까?|  
 |---------------|---------------|--------------------------------------|  
-|[IConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms683857)|필수|아니요|  
+|[IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)|필수|아니요|  
 |[ITransaction](/previous-versions/windows/desktop/ms723053\(v=vs.85\))|필수|아니요|  
 |[ISupportErrorInfo](/previous-versions/windows/desktop/ms715816\(v=vs.85\))|Optional|아니요|  
   
