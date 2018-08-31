@@ -83,12 +83,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62a27548d51d3de1a27da0b765bd85439467c024
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 46d96d574fedf9af2fe7eb46c872819cf54a364e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850224"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216461"
 ---
 # <a name="cmfcribbonedit-class"></a>CMFCRibbonEdit 클래스
 리본 표시줄에 있는 편집 컨트롤을 구현 합니다.  
@@ -147,7 +147,7 @@ class CMFCRibbonEdit : public CMFCRibbonButton
   
 ## <a name="remarks"></a>설명  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 생성 하는 방법에 설명 된 `CMFCRibbonEdit` 개체 편집 컨트롤 옆에 있는 스핀 단추를 표시 하 고 편집 컨트롤의 텍스트를 설정 합니다. 이 코드 조각은의 일부인 합니다 [MS Office 2007 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_MSOffice2007Demo#7](../../mfc/reference/codesnippet/cpp/cmfcribbonedit-class_1.cpp)]  
@@ -224,7 +224,7 @@ virtual CMFCRibbonRichEditCtrl* CreateEdit(
  부모 창에 대 한 포인터를 `CMFCRibbonEdit` 개체입니다.  
   
  [in] *dwEditStyle*  
- 입력란의 스타일을 지정 합니다. 주의 섹션에서 나열 된 창 스타일을 결합할 수 있습니다 합니다 [컨트롤 스타일 편집](http://msdn.microsoft.com/library/windows/desktop/bb775464) Windows SDK에 나와 있는 합니다.  
+ 입력란의 스타일을 지정 합니다. 주의 섹션에서 나열 된 창 스타일을 결합할 수 있습니다 합니다 [컨트롤 스타일 편집](/windows/desktop/Controls/edit-control-styles) Windows SDK에 나와 있는 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 새 텍스트 상자에 대 한 포인터 그렇지 않으면 NULL입니다.  
@@ -345,7 +345,7 @@ int GetTextAlign() const;
   
 - **ES_RIGHT** 오른쪽 맞춤  
   
- 이러한 스타일에 대 한 자세한 내용은 참조 하세요. [컨트롤 스타일 편집](http://msdn.microsoft.com/library/windows/desktop/bb775464)합니다.  
+ 이러한 스타일에 대 한 자세한 내용은 참조 하세요. [컨트롤 스타일 편집](/windows/desktop/Controls/edit-control-styles)합니다.  
   
 ##  <a name="getwidth"></a>  CMFCRibbonEdit::GetWidth  
  너비 (픽셀) 검색 합니다 [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) 제어 합니다.  
@@ -601,7 +601,7 @@ virtual void Redraw();
 ```  
   
 ### <a name="remarks"></a>설명  
- 이 메서드가 다시에 대 한 표시 사각형을 그립니다. 합니다 `CMFCRibbonEdit` 개체를 직접 호출 하 여 [CWnd::RedrawWindow](http://msdn.microsoft.com/library/windows/desktop/dd162911) RDW_INVALIDATE, RDW_ERASE, 및 RDW_UPDATENOW 플래그를 사용 하 여 설정 합니다.  
+ 이 메서드가 다시에 대 한 표시 사각형을 그립니다. 합니다 `CMFCRibbonEdit` 개체를 직접 호출 하 여 [CWnd::RedrawWindow](/windows/desktop/api/winuser/nf-winuser-redrawwindow) RDW_INVALIDATE, RDW_ERASE, 및 RDW_UPDATENOW 플래그를 사용 하 여 설정 합니다.  
   
 ##  <a name="setaccdata"></a>  CMFCRibbonEdit::SetACCData  
  에 대 한 내게 필요한 옵션 데이터를 설정 합니다 [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) 개체입니다.  
@@ -655,7 +655,7 @@ void SetTextAlign(int nAlign);
   
 - 오른쪽 맞춤에 대 한 ES_RIGHT  
   
- 이러한 스타일에 대 한 자세한 내용은 참조 하세요. [컨트롤 스타일 편집](http://msdn.microsoft.com/library/windows/desktop/bb775464)합니다.  
+ 이러한 스타일에 대 한 자세한 내용은 참조 하세요. [컨트롤 스타일 편집](/windows/desktop/Controls/edit-control-styles)합니다.  
   
 ##  <a name="setwidth"></a>  CMFCRibbonEdit::SetWidth  
  입력란의 너비를 설정 합니다 [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) 제어 합니다.  
