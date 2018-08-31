@@ -1,7 +1,7 @@
 ---
 title: CMFCButton 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/28/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 155aa704efe0686fc03be6e2b12c076656fad7a1
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 8385320b51efedd214424385babc5f03d5559873
+ms.sourcegitcommit: 220fd4fda829f810e15fc1a1d98ab43c46201b47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217511"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43352718"
 ---
 # <a name="cmfcbutton-class"></a>CMFCButton 클래스
 `CMFCButton` 클래스 기능을 추가 합니다 [CButton](../../mfc/reference/cbutton-class.md) 클래스 등 단추 텍스트 정렬, 단추 텍스트 및 이미지 결합, 커서 선택, 도구 설명 지정 합니다.  
@@ -165,12 +165,17 @@ class CMFCButton : public CButton
   
 |name|설명|  
 |----------|-----------------|  
-|[CMFCButton::m_bDrawFocus](#m_bdrawfocus)|단추 주위에 포커스 사각형을 그릴 것인지를 나타냅니다.|  
-|[CMFCButton::m_bHighlightChecked](#m_bhighlightchecked)|커서 위로 가져가면 BS_CHECKBOX 스타일 단추를 강조 표시 여부를 나타냅니다.|  
-|[CMFCButton::m_bRightImage](#m_brightimage)|단추 오른쪽에 이미지를 표시할지 여부를 나타냅니다.|  
-|[CMFCButton::m_bTransparent](#m_btransparent)|단추 투명 한지 여부를 나타냅니다.|  
 |[CMFCButton::m_nAlignStyle](#m_nalignstyle)|단추 텍스트의 맞춤을 지정 합니다.|  
+|[CMFCButton::m_bDontUseWinXPTheme](#m_bDontUseWinXPTheme)|Windows XP 테마를 사용할지 여부를 지정 합니다.|
+|[CMFCButton::m_bDrawFocus](#m_bdrawfocus)|단추 주위에 포커스 사각형을 그릴 것인지를 나타냅니다.| 
 |[CMFCButton::m_nFlatStyle](#m_nflatstyle)|예: 여백 없는, 플랫 세미콜론 평면 또는 3D 단추 스타일을 지정합니다.|  
+|[CMFCButton::m_bGrayDisabled](#m_bGrayDisabled)|TRUE 인 경우에 비활성화 된 단추를 회색으로 그릴 수 있습니다.|
+|[CMFCButton::m_bHighlightChecked](#m_bhighlightchecked)|커서 위로 가져가면 BS_CHECKBOX 스타일 단추를 강조 표시 여부를 나타냅니다.|  
+|[CMFCButton::m_bResponseOnButtonDown](#m_bResponseOnButtonDown)|단추 누름 이벤트에 응답할 여부를 나타냅니다.|
+|[CMFCButton::m_bRightImage](#m_brightimage)|단추 오른쪽에 이미지를 표시할지 여부를 나타냅니다.|
+|[CMFCButton::m_bTopImage](#m_bTopImage)| 이미지 단추 위에 있는지 여부를 나타냅니다.|
+|[CMFCButton::m_bTransparent](#m_btransparent)|단추 투명 한지 여부를 나타냅니다.|  
+|[CMFCButton::m_bWasDblClk](#m_bWasDblClk)| 이벤트를 두 번 클릭 마지막 클릭 여부를 나타냅니다.|
   
 ## <a name="remarks"></a>설명  
  파생 된 다른 종류의 단추를 `CMFCButton` 클래스와 같은 [CMFCURLLinkButton](../../mfc/reference/cmfclinkctrl-class.md) 하이퍼링크를 지 원하는 클래스 및 `CMFCColorButton` 색 선택 대화 상자를 지 원하는 클래스.  
@@ -376,7 +381,16 @@ static BOOL IsWindowsThemingEnabled();
   
 ### <a name="return-value"></a>반환 값  
  단추 테두리 스타일을 현재 Windows 테마;에 해당 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
-  
+
+
+
+## <a name="a-namembdontusewinxptheme-cmfcbuttonmbdontusewinxptheme"></a><a name="m_bDontUseWinXPTheme"/> CMFCButton::m_bDontUseWinXPTheme
+단추를 그릴 때 Windows XP 테마를 사용할지 여부를 지정 합니다.
+
+```  
+BOOL m_bDontUseWinXPTheme;  
+```
+
 ##  <a name="m_bdrawfocus"></a>  CMFCButton::m_bDrawFocus  
  단추 주위에 포커스 사각형을 그릴 것인지를 나타냅니다.  
   
@@ -388,7 +402,15 @@ BOOL m_bDrawFocus;
  설정 된 `m_bDrawFocus` 지정 프레임 워크는 단추의 텍스트 주위에 포커스 사각형을 그릴 이미지 단추가 포커스를 받을 경우 TRUE로 멤버입니다.  
   
  `CMFCButton` 생성자로이 멤버를 초기화 합니다.  
-  
+
+##  <a name="m_bGrayDisabled"></a>  CMFCButton::m_bGrayDisabled
+TRUE 인 경우에 비활성화 된 단추를 회색으로 그릴 수 있습니다.
+
+
+```  
+BOOL m_bGrayDisabled;  
+```
+
 ##  <a name="m_bhighlightchecked"></a>  CMFCButton::m_bHighlightChecked  
  커서 위로 가져가면 BS_CHECKBOX 스타일 단추를 강조 표시 여부를 나타냅니다.  
   
@@ -398,14 +420,29 @@ BOOL m_bHighlightChecked;
   
 ### <a name="remarks"></a>설명  
  설정 된 `m_bHighlightChecked` 멤버 위로 마우스를 가져가면 프레임 워크 BS_CHECKBOX 스타일 단추 강조 표시를 지정 하려면 TRUE입니다.  
-  
+
+##  <a name="m_bResponseOnButtonDown"></a> CMFCButton::m_bResponseOnButtonDown
+단추 누름 이벤트에 응답할 여부를 나타냅니다.
+
+```  
+BOOL m_bResponseOnButtonDown;  
+```  
+
 ##  <a name="m_brightimage"></a>  CMFCButton::m_bRightImage  
  단추 오른쪽에 이미지를 표시할지 여부를 나타냅니다.  
   
 ```  
 BOOL m_bRightImage;  
 ```  
-  
+
+
+##  <a name="m_bTopImage"></a>  CMFCButton::m_bTopImage](#m_bTopImage)
+이미지 단추 위에 있는지 여부를 나타냅니다.
+
+```  
+BOOL m_bTopImage;  
+```
+
 ### <a name="remarks"></a>설명  
  설정 된 `m_bRightImage` 구성원을 TRUE로 지정 프레임 워크는 단추의 텍스트 레이블의 오른쪽 단추의 이미지에 표시 됩니다.  
   
@@ -436,7 +473,14 @@ AlignStyle m_nAlignStyle;
 |ALIGN_RIGHT|단추 텍스트를 단추 오른쪽에 맞춥니다.|  
   
  `CMFCButton` 생성자 ALIGN_CENTER이이 멤버를 초기화 합니다.  
-  
+
+##  <a name="m_bWasDblClk"></a>  CMFCButton::m_bWasDblClk](#m_bWasDblClk) | 
+이벤트를 두 번 클릭 마지막 클릭 여부를 나타냅니다. |
+
+```  
+BOOL m_bWasDblClk;  
+```  
+
 ##  <a name="m_nflatstyle"></a>  CMFCButton::m_nFlatStyle  
  예: 여백 없는, 플랫 세미콜론 평면 또는 3D 단추 스타일을 지정합니다.  
   
