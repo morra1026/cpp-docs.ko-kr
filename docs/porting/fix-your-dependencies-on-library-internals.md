@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 148db60c7a3b1ae3f71269feec8024f6ff22a118
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c80bad11a13c454d8b4025e5cc0745514696a0f7
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33839062"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42578386"
 ---
 # <a name="fix-your-dependencies-on-library-internals"></a>라이브러리 내부 요소에 대한 종속성 해결
 
@@ -34,9 +34,9 @@ Microsoft는 표준 라이브러리, 대부분의 C 런타임 라이브러리, �
   
 이 종속성을 제거하는 방법은 두 가지입니다.  
 
--   `basic_string`과 동일한 해시 코드 기계를 사용하여 순서가 지정되지 않은 컨테이너에 `const char *` 시퀀스를 설정하려면 `std::string_view`를 이용하는 `std::hash` 템플릿 오버로드를 사용하여 이동 가능한 방법으로 해당 해시 태그를 반환하면 됩니다. 문자열 라이브러리 코드는 향후 FNV-1a 해시 사용에 의존할 수도 있고 아닐 수도 있으므로 특정 해시 알고리즘에 대한 종속성을 피하는 것이 가장 좋은 방법입니다. 
+- `basic_string`과 동일한 해시 코드 기계를 사용하여 순서가 지정되지 않은 컨테이너에 `const char *` 시퀀스를 설정하려면 `std::string_view`를 이용하는 `std::hash` 템플릿 오버로드를 사용하여 이동 가능한 방법으로 해당 해시 태그를 반환하면 됩니다. 문자열 라이브러리 코드는 향후 FNV-1a 해시 사용에 의존할 수도 있고 아닐 수도 있으므로 특정 해시 알고리즘에 대한 종속성을 피하는 것이 가장 좋은 방법입니다. 
   
--   임의의 메모리에 대해 FNV-1a 해시를 생성하려는 사용자를 위해 [MIT 라이선스](https://github.com/Microsoft/VCSamples/blob/master/license.txt)에 따라 독립 실행형 헤더 파일 [fnv1a.hpp](https://github.com/Microsoft/VCSamples/tree/master/VC2015Samples/_Hash_seq)의 [VCSamples]( https://github.com/Microsoft/vcsamples) 리포지토리에 있는 GitHub에서 이 코드를 사용할 수 있도록 만들었습니다. 사용자 편의를 위해 여기에도 복사본을 넣었습니다. 이 코드를 헤더 파일에 복사하고 영향을 받는 모든 코드에 헤더를 추가한 다음 `_Hash_seq`를 찾아 `fnv1a_hash_bytes`로 바꿀 수 있습니다. 동일한 동작을 `_Hash_seq`에서 내부 구현으로 가져오게 됩니다. 
+- 임의의 메모리에 대해 FNV-1a 해시를 생성하려는 사용자를 위해 [MIT 라이선스](https://github.com/Microsoft/VCSamples/blob/master/license.txt)에 따라 독립 실행형 헤더 파일 [fnv1a.hpp](https://github.com/Microsoft/VCSamples/tree/master/VC2015Samples/_Hash_seq)의 [VCSamples]( https://github.com/Microsoft/vcsamples) 리포지토리에 있는 GitHub에서 이 코드를 사용할 수 있도록 만들었습니다. 사용자 편의를 위해 여기에도 복사본을 넣었습니다. 이 코드를 헤더 파일에 복사하고 영향을 받는 모든 코드에 헤더를 추가한 다음 `_Hash_seq`를 찾아 `fnv1a_hash_bytes`로 바꿀 수 있습니다. 동일한 동작을 `_Hash_seq`에서 내부 구현으로 가져오게 됩니다. 
 
 ```cpp  
 /*

@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33683ebe349fbfdcb3fd51179ed6bc3140510c00
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 3600e5541c095b3879fe60404c9a5994c2a91088
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33330299"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42578415"
 ---
 # <a name="preparing-a-test-machine-to-run-a-debug-executable"></a>디버그 실행 파일을 실행하기 위한 테스트 컴퓨터 준비
 Visual C++로 빌드한 응용 프로그램의 디버그 버전을 테스트하기 위해 컴퓨터를 준비하려면 응용 프로그램이 종속된 Visual C++ 라이브러리 DLL의 디버그 버전을 배포해야 합니다. 배포해야 할 DLL을 식별하려면 [Visual C++ 응용 프로그램의 종속성 이해](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md)의 단계를 수행합니다. Visual C++ 라이브러리 DLL의 디버그 버전에는 일반적으로 "d"로 끝나는 이름이 부여됩니다. 예를 들어 msvcr100.dll의 디버그 버전 이름은 msvcr100d.dll입니다.  
@@ -43,5 +43,5 @@ Visual C++로 빌드한 응용 프로그램의 디버그 버전을 테스트하�
 ## <a name="see-also"></a>참고 항목  
  
  [Visual C++에서 배포](../ide/deployment-in-visual-cpp.md)   
- [Windows Installer 명령줄 옵션](http://msdn.microsoft.com/library/windows/desktop/aa367988.aspx)   
+ [Windows Installer 명령줄 옵션](/windows/desktop/Msi/command-line-options)   
  [배포 예제](../ide/deployment-examples.md) [원격 디버깅](/visualstudio/debugger/remote-debugging.md)

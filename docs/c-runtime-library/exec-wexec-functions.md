@@ -63,12 +63,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 728c4878736d2e0cafc94660db3d9a709f87715f
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 1da7c4102f15bf4a9c8ec583cf39e621d6872cb0
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451526"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42578305"
 ---
 # <a name="exec-wexec-functions"></a>_exec, _wexec 함수
 이 패밀리의 다음 각 함수는 새 프로세스를 로드하고 실행합니다.  
@@ -90,7 +90,7 @@ ms.locfileid: "34451526"
 |`v`|명령줄 인수에 대한 포인터의 배열인 `argv`가 `_exec`로 전달됩니다. 새 프로세스의 매개 변수 개수가 가변적인 경우 일반적으로 사용됩니다.|  
   
 ## <a name="remarks"></a>설명  
- `_exec` 함수는 새 프로세스를 로드하고 실행합니다. 모든 `_exec` 함수는 동일한 운영 체제 함수([CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms682425.aspx))를 사용합니다. `_exec` 함수는 멀티바이트 문자열 인수를 적절하게 자동으로 처리하여 현재 사용 중인 멀티바이트 코드 페이지에 따라 멀티바이트 문자 시퀀스를 인식합니다. `_wexec` 함수는 `_exec` 함수의 와이드 문자 버전입니다. `_wexec` 함수는 멀티바이트 문자열을 처리하지 않는다는 점만 제외하면 자신의 `_exec` 패밀리 대응 함수와 동일하게 작동합니다.  
+ `_exec` 함수는 새 프로세스를 로드하고 실행합니다. 모든 `_exec` 함수는 동일한 운영 체제 함수([CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa))를 사용합니다. `_exec` 함수는 멀티바이트 문자열 인수를 적절하게 자동으로 처리하여 현재 사용 중인 멀티바이트 코드 페이지에 따라 멀티바이트 문자 시퀀스를 인식합니다. `_wexec` 함수는 `_exec` 함수의 와이드 문자 버전입니다. `_wexec` 함수는 멀티바이트 문자열을 처리하지 않는다는 점만 제외하면 자신의 `_exec` 패밀리 대응 함수와 동일하게 작동합니다.  
   
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑  
   
@@ -113,7 +113,7 @@ ms.locfileid: "34451526"
 >  문자열에 포함된 공백으로 인해 예기치 않은 동작이 발생할 수 있습니다. 예를 들어 `_exec`를 전달하면 문자열 `"hi there"`는 두 개의 인수 `"hi"` 및 `"there"`를 가져오는 새 프로세스가 됩니다. 새 프로세스에서 "hi there"라는 파일을 열도록 의도한 것이라면 이 프로세스는 실패한 것입니다. `"\"hi there\""`처럼 문자열을 따옴표로 묶으면 이러한 문제를 피할 수 있습니다.  
   
 > [!IMPORTANT]
->  내용을 명시적으로 확인하지 않고 사용자 입력을 `_exec`에 전달하지 마세요. `_exec`은 [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms682425.aspx)를 호출합니다. 따라서 정규화되지 않은 경로 이름을 사용하는 경우 보안 취약성이 발생할 수 있음을 기억해야 합니다.  
+>  내용을 명시적으로 확인하지 않고 사용자 입력을 `_exec`에 전달하지 마세요. `_exec`은 [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa)를 호출합니다. 따라서 정규화되지 않은 경로 이름을 사용하는 경우 보안 취약성이 발생할 수 있음을 기억해야 합니다.  
   
  `_exec` 함수는 자신의 매개 변수에 대한 유효성을 검사합니다. 예상 매개 변수가 null 포인터이거나 빈 문자열이거나 생략된 경우 `_exec` 함수는 [매개 변수 유효성 검사](../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기를 호출합니다. 계속해서 실행하도록 허용한 경우 이러한 함수는 `errno` 를 `EINVAL` 로 설정하고 -1을 반환합니다. 새로운 프로세스가 실행되지 않습니다.  
   
