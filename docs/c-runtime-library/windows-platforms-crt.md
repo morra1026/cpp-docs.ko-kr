@@ -21,19 +21,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d53e8020bbb7649d78232025ef9c63c1dc868fee
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f360cd075ac4a86c39f5c33391e974e62f481455
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409009"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42613484"
 ---
 # <a name="windows-platforms-crt"></a>Windows 플랫폼(CRT)
 
-Visual Studio용 C 런타임 라이브러리는 현재 버전의 Windows 및 Windows Server, [!INCLUDE[win8](../build/reference/includes/win8_md.md)], [!INCLUDE[winserver8](../build/reference/includes/winserver8_md.md)], [!INCLUDE[win7](../build/includes/win7_md.md)], [!INCLUDE[winsvr08](../build/reference/includes/winsvr08_md.md)] 및 Windows Vista를 지원하며 [!INCLUDE[winxp](../build/includes/winxp_md.md)] x86용 SP3(서비스 팩 3), [!INCLUDE[winxp](../build/includes/winxp_md.md)] x64용 SP2(서비스 팩 2) 및 [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)] x86 및 x64용 SP2(서비스 팩 2)를 선택적으로 지원합니다. 이 모든 운영 시스템은 Windows 데스크톱 API(Win32)를 지원하며 유니코드 지원을 제공합니다. 또한 모든 Win32 응용 프로그램에서 MBCS(멀티바이트 문자 집합)를 사용할 수 있습니다.
+Visual Studio용 C 런타임 라이브러리는 현재 버전의 Windows 및 Windows Server, Windows 8, Windows Server 2012, Windows 7, Windows Server 2008 및 Windows Vista를 지원하며 x86용 Windows XP SP3(서비스 팩 3), x64용 Windows XP SP2(서비스 팩 2) 및 x86 및 x64용 Windows Server 2003 SP2(서비스 팩 2)를 선택적으로 지원합니다. 이 모든 운영 시스템은 Windows 데스크톱 API(Win32)를 지원하며 유니코드 지원을 제공합니다. 또한 모든 Win32 응용 프로그램에서 MBCS(멀티바이트 문자 집합)를 사용할 수 있습니다.
 
 > [!NOTE]
-> Visual Studio 2017에서 **C++를 사용한 데스크톱 개발** 작업의 기본 설치에는 [!INCLUDE[winxp](../build/includes/winxp_md.md)] 및 [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)] 개발 지원이 포함되지 않습니다. Windows XP 플랫폼 도구 세트를 사용하려면 선택적 구성 요소인 **C++용 Windows XP 지원**을 설치해야 합니다.
+> Visual Studio 2017에서 **C++를 사용한 데스크톱 개발** 워크로드의 기본 설치에는Windows XP 및 Windows Server 2003 개발에 대한 지원이 포함되지 않습니다. Windows XP 플랫폼 도구 세트를 사용하려면 선택적 구성 요소인 **C++용 Windows XP 지원**을 설치해야 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,7 +1,7 @@
 ---
 title: CRT 라이브러리 기능 | Microsoft Docs
 ms.custom: ''
-ms.date: 03/13/2018
+ms.date: 08/20/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: conceptual
@@ -28,12 +28,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8ba56f0b4fa6d7d6ac56f3f118edeaad03643b5
-ms.sourcegitcommit: 0ce270566769cba76d763dd69b304a55eb375d01
+ms.openlocfilehash: 5785d06a09c823140362fa4afc6a8b12954e5ac3
+ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34799196"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "42578291"
 ---
 # <a name="crt-library-features"></a>CRT 라이브러리 기능
 
@@ -64,6 +64,8 @@ vcruntime 라이브러리에는 예외 처리 및 디버깅 지원, 런타임 �
 |libvcruntimed.lib|없음|정적 연결에 대한 디버그 버전입니다. 재배포할 수 없습니다.|**/MTd**|_MT, _DEBUG|
 |vcruntime.lib|vcruntime\<version>.dll|vcruntime에 대한 DLL 가져오기 라이브러리입니다.|**/MD**|_MT, _DLL|
 |vcruntimed.lib|vcruntime\<version>d.dll|디버그 vcruntime에 대한 DLL 가져오기 라이브러리입니다. 재배포할 수 없습니다.|**/MDd**|_DEBUG, _MT, _DLL|
+
+UCRT 리팩터링이 발생한 경우 동시성 런타임 함수는 C++ 재배포 가능 패키지의 일부인 concrt140.dll로 이동되었습니다. 이 DLL은 `concurrency::parallel_for`와 같은 C++ 병렬 컨테이너 및 알고리즘에 대해 필요합니다. 또한 Windows XP에 조건 변수가 없기 때문에 동기화 기본 형식을 지원하기 위해 C++ 표준 라이브러리에는 Windows XP에서 이 DLL이 필요합니다.
 
 CRT를 초기화하는 코드는 CRT 라이브러리가 정적으로 연결되었는지, 동적으로 연결되었는지, 네이티브, 관리 또는 혼합 코드인지에 따라 여러 라이브러리 중 하나입니다. 이 코드는 CRT 시작, 내부 스레드 단위 데이터 초기화 및 종료를 처리하며, 사용된 컴파일러 버전에 따라 다릅니다. 이 라이브러리는 동적으로 연결된 UCRT를 사용하는 경우에도 항상 정적으로 연결됩니다.
 

@@ -10,12 +10,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3708bce00b01ee796067bf91d99645cb61f19a53
-ms.sourcegitcommit: f923f667065cd6c4203d10ca9520600ee40e5f84
+ms.openlocfilehash: e12c8eeb162d93a41c2bad85fda3570f3ffc1127
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42900702"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220218"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158"></a>Visual Studio 2017 버전 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158)의 C++ 규칙 향상입니다.
 
@@ -55,19 +55,19 @@ Range-based for 루프에 더 이상 동일한 유형의 begin() 및 end() 반�
 
 ### <a name="constexpr-lambdas"></a>constexpr 람다
 
-이제 상수 식에서 람다 식을 사용할 수 있습니다. 자세한 내용은 [Constexpr 람다(영문)](http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4487.pdf)를 참조하세요.
+이제 상수 식에서 람다 식을 사용할 수 있습니다. 자세한 내용은 [C++의 constexpr 람다 식](cpp/lambda-expressions-constexpr.md)을 참조하세요.
 
 ### <a name="if-constexpr-in-function-templates"></a>함수 템플릿의 if constexpr
 
-함수 템플릿에 컴파일 시간 분기가 가능하도록 `if constexpr` 문이 포함될 수 있습니다. 자세한 내용은 [if constexpr(영문)](http://open-std.org/JTC1/SC22/WG21/docs/papers/2016/p0128r1.html)을 참조하세요.
+함수 템플릿에 컴파일 시간 분기가 가능하도록 `if constexpr` 문이 포함될 수 있습니다. 자세한 내용은 [if constexpr 문](cpp/if-else-statement-cpp.md#if_constexpr)을 참조하세요.
 
 ### <a name="selection-statements-with-initializers"></a>이니셜라이저를 사용하는 선택 문
 
-`if` 문은 문 자체 내의 블록 범위에서 변수를 소개하는 이니셜라이저를 포함할 수 있습니다. 자세한 내용은 [이니셜라이저가 있는 선택 문(영문)](http://www.open-std.org/JTC1/SC22/WG21/docs/papers/2016/p0305r1.html)을 참조하세요.
+`if` 문은 문 자체 내의 블록 범위에서 변수를 소개하는 이니셜라이저를 포함할 수 있습니다. 자세한 내용은 [이니셜라이저가 있는 if 문](cpp/if-else-statement-cpp.md#if_with_init)을 참조하세요.
 
 ### <a name="maybeunused-and-nodiscard-attributes"></a>[[maybe_unused]] 및 [[nodiscard]] 특성
 
-새 특성은 엔터티를 사용하지 않을 때 경고를 억제시키거나 함수 호출의 반환 값을 무시하는 경우 경고를 만듭니다. 자세한 내용은 [maybe_unused 특성에 대한 단어(영문)](http://open-std.org/JTC1/SC22/WG21/docs/papers/2016/p0212r0.pdf) 및 [unused, nodiscard 및 fallthrough 특성에 대한 제안(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0068r0.pdf)을 참조하세요.
+새 특성은 엔터티를 사용하지 않을 때 경고를 억제시키거나 함수 호출의 반환 값을 무시하는 경우 경고를 만듭니다. 자세한 내용은 [C++ 특성](cpp/attributes.md)을 참조하세요.
 
 ### <a name="using-attribute-namespaces-without-repetition"></a>반복 없이 특성 네임스페이스 사용
 
@@ -75,11 +75,11 @@ Range-based for 루프에 더 이상 동일한 유형의 begin() 및 end() 반�
 
 ### <a name="structured-bindings"></a>구조적 바인딩
 
-이제 단일 선언에서 값이 배열, std::tuple 또는 std::pair이거나 모든 공용 비정적 데이터 멤버가 있는 경우 구성 요소에 대한 개별 이름을 포함하는 값을 저장할 수 있습니다. 자세한 내용은 [구조적 바인딩(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0144r0.pdf)을 참조하세요.
+이제 단일 선언에서 값이 배열, std::tuple 또는 std::pair이거나 모든 공용 비정적 데이터 멤버가 있는 경우 구성 요소에 대한 개별 이름을 포함하는 값을 저장할 수 있습니다. 자세한 내용은 [구조적 바인딩](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0144r0.pdf) 및 [함수에서 여러 값 반환](cpp/functions-cpp.md#multi_val)을 참조하세요.
 
 ### <a name="construction-rules-for-enum-class-values"></a>enum 클래스 값에 대한 생성 규칙
 
-이제 해당 정의에서 열거형을 소개하지 않고 소스에서 목록 초기화 구문을 사용하는 경우 범위가 지정된 열거형의 기본 형식에서 열거형 자체로의 암시적/비축소 변환이 있습니다. 자세한 내용은 [enum 클래스 값의 생성 규칙(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0138r2.pdf)을 참조하세요.
+이제 해당 정의에서 열거형을 소개하지 않고 소스에서 목록 초기화 구문을 사용하는 경우 범위가 지정된 열거형의 기본 형식에서 열거형 자체로의 암시적/비축소 변환이 있습니다. 자세한 내용은 [enum 클래스 값의 생성 규칙](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0138r2.pdf) 및 [열거형](cpp/enumerations-cpp.md#no_enumerators)을 참조하세요.
 
 ### <a name="capturing-this-by-value"></a>값 기준 \*this 캡처
 
@@ -93,7 +93,7 @@ Range-based for 루프에 더 이상 동일한 유형의 begin() 및 end() 반�
 
 이전에 더 이상 사용되지 않고(컴파일러에서 무시된) `register` 키워드가 이제 언어에서 제거되었습니다. 자세한 내용은 [사용되지 않는 register 키워드 제거(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0001r1.html)를 참조하세요.
 
-Visual Studio 2015, 업데이트 3까지 규칙 향상의 전체 목록은 [Visual C++ What's New 2003 through 2015](https://msdn.microsoft.com/en-us/library/mt723604.aspx)(2003부터 2015까지 Visual C++의 새로운 기능)를 참조하세요.
+Visual Studio 2015, 업데이트 3까지 규칙 향상의 전체 목록은 [Visual C++ What's New 2003 through 2015](https://msdn.microsoft.com/library/mt723604.aspx)(2003부터 2015까지 Visual C++의 새로운 기능)를 참조하세요.
 
 ## <a name="improvements_155"></a>  Visual Studio 2017 버전 15.5의 개선 사항
 
@@ -212,6 +212,8 @@ struct B : A {
 
 B b(42L); // now calls B(int)
 ```
+
+자세한 내용은 [생성자](cpp/constructors-cpp.md#inheriting_constructors)를 참조하세요.
 
 ### <a name="c17-extended-aggregate-initialization"></a>C++17 확장된 집계 초기화
 

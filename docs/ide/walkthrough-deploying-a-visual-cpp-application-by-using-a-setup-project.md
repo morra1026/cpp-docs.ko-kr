@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 454507a3a3f33b43af0e50c25dab6703aa75a56b
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 36aad914fc9552cea06eabd0898fe33b9b09481e
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33332782"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42605833"
 ---
 # <a name="walkthrough-deploying-a-visual-c-application-by-using-a-setup-project"></a>연습: 설치 프로젝트를 사용하여 Visual C++ 응용 프로그램 배포
 설치 프로젝트를 사용하여 Visual C++ 응용 프로그램을 배포하는 방법을 설명합니다.  
@@ -27,9 +27,9 @@ ms.locfileid: "33332782"
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
   
--   [!INCLUDE[vs_dev11_long](../build/includes/vs_dev11_long_md.md)]가 설치된 컴퓨터  
+-   Visual Studio 2012를 설치한 컴퓨터.  
   
--   Visual C++ 라이브러리가 없는 추가 컴퓨터  
+-   Visual C++ 라이브러리가 없는 추가 컴퓨터.  
   
 ### <a name="to-deploy-an-application-by-using-a-setup-project"></a>설치 프로젝트를 사용하여 응용 프로그램을 배포하려면  
   

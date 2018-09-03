@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38bcd102e94ac98aba56a4eb98b69df6d3f16111
-ms.sourcegitcommit: d06966efce25c0e66286c8047726ffe743ea6be0
+ms.openlocfilehash: b0e7852ad3fbd88b815aea8266bafc2879494d8a
+ms.sourcegitcommit: f923f667065cd6c4203d10ca9520600ee40e5f84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238567"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900669"
 ---
 # <a name="cmake-projects-in-visual-c"></a>Visual C++의 CMake 프로젝트
 
@@ -221,6 +221,8 @@ Visual Studio 생성기를 지정하려면 주 메뉴에서 **CMake | CMake 설�
 1. **variables**: **-D**_이름_**=**_값_으로 CMake에 전달되는 CMake 변수의 이름-값 쌍이 포함됩니다. CMake 프로젝트 빌드 지침에서 CMake 캐시 파일에 변수를 직접 추가하도록 지정하는 경우 여기에 대신 추가하는 것이 좋습니다.
 1. **cmakeCommandArgs**: CMake.exe에 전달하려는 추가 스위치를 지정합니다.
 1. **configurationType**: 선택한 생성기에 대한 빌드 구성 형식을 정의합니다. 현재 지원되는 값은 "Debug", "MinSizeRel", "Release" 및 "RelWithDebInfo"입니다.
+1. **ctestCommandArgs**: 테스트 실행 시 CTest에 전달할 추가 스위치를 지정합니다.
+1. **buildCommandArgs**: 기본 빌드 시스템에 전달할 추가 스위치를 지정합니다. 예를 들어 Ninja 생성기를 사용하는 경우 -v를 전달하면 Ninja에서 명령줄을 출력하도록 강제합니다.
 
 ### <a name="environment-variables"></a>환경 변수
 

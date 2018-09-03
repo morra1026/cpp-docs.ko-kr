@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e6578486ada758482b270cd5505338e2acf3eb9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: eb8f7d4835fe50dba2cb7eb6d4e7cb6a54efdbba
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33841904"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42578162"
 ---
 # <a name="floating-point-migration-issues"></a>부동 소수점 마이그레이션 문제  
   
@@ -33,7 +33,7 @@ Visual Studio 2015에서 수학 함수를 유니버설 CRT로 이동하면서 �
   
 대부분의 부동 소수점 수학 라이브러리 함수에는 다양한 CPU 아키텍처에 대한 다양한 구현이 있습니다. 예를 들어 32비트 x86 CRT에는 64비트 x64 CRT와 다른 구현이 있을 수 있습니다. 또한 일부 함수에는 지정된 CPU 아키텍처에 대한 여러 구현이 있을 수 있습니다. 가장 효율적인 구현은 CPU에서 지원되는 명령 집합에 따라 런타임에 동적으로 선택됩니다. 예를 들어 32비트 x86 CRT에서 일부 함수에는 x87 구현 및 an SSE2 구현이 둘 다 있습니다. SSE2를 지원하는 CPU에서 실행될 경우 더 빠른 SSE2 구현이 사용됩니다. SSE2를 지원하지 않는 CPU에서 실행될 경우 더 느린 x87 구현이 사용됩니다. 기본 x86 컴파일러 아키텍처 옵션이 Visual Studio 2012에서 [/arch:SSE2](../build/reference/arch-x86.md)로 변경되었기 때문에 이전 코드를 마이그레이션할 때 이렇게 표시될 수 있습니다. 수학 라이브러리 함수의 구현에 따라 다른 CPU 명령 및 다른 알고리즘을 사용하여 결과를 생성할 수 있으므로 플랫폼에 따라 함수에서 다른 결과가 생성될 수 있습니다. 대부분은 결과가 올바르게 반올림된 결과의 +/-1 ulp 내에 있지만 실제 결과는 CPU에 따라 달라질 수 있습니다.  
   
-또한 Visual Studio에서 다른 부동 소수점 모드의 코드 생성 정확성이 향상되어 부동 소수점 연산 결과에 영향을 줄 수 있습니다. 이는 이전 코드와 새 코드에서 동일한 컴파일러 플래그를 사용하더라도 마찬가지입니다. 예를 들어 [/fp:precise](../build/reference/fp-specify-floating-point-behavior.md)(기본값) 또는 **/fp:strict**를 지정할 때 Visual Studio 2010에서 생성되는 코드는 식을 통해 중간 NaN(Not-a-Number) 값을 올바르게 전파하지 못할 수 있습니다. 따라서 이전 컴파일러에서 숫자 결과를 제공하는 일부 식에서 이제 올바른 NaN 결과를 생성할 수 있습니다. **/fp:fast**에 대해 활성화된 코드 최적화에서 이제 더 많은 프로세서 기능을 이용하기 때문에 차이가 나타날 수도 있습니다. 이러한 최적화로 더 적은 명령을 사용할 수 있지만 이전에 표시된 일부 중간 연산이 제거되었기 때문에 생성되는 결과에 영향을 줄 수 있습니다.  
+또한 Visual Studio에서 다른 부동 소수점 모드의 코드 생성 정확성이 향상되어 부동 소수점 연산 결과에 영향을 줄 수 있습니다. 이는 이전 코드와 새 코드에서 동일한 컴파일러 플래그를 사용하더라도 마찬가지입니다. 예를 들어 [/fp:precise](../build/reference/fp-specify-floating-point-behavior.md)(기본값) 또는 `/fp:strict`를 지정할 때 Visual Studio 2010에서 생성되는 코드는 식을 통해 중간 NaN(Not-a-Number) 값을 올바르게 전파하지 못할 수 있습니다. 따라서 이전 컴파일러에서 숫자 결과를 제공하는 일부 식에서 이제 올바른 NaN 결과를 생성할 수 있습니다. `/fp:fast`에 대해 활성화된 코드 최적화에서 이제 더 많은 프로세서 기능을 이용하기 때문에 차이가 나타날 수도 있습니다. 이러한 최적화로 더 적은 명령을 사용할 수 있지만 이전에 표시된 일부 중간 연산이 제거되었기 때문에 생성되는 결과에 영향을 줄 수 있습니다.  
   
 ## <a name="how-to-get-identical-results"></a>동일한 결과를 얻는 방법  
   

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5eace3ef3cfd07847c995151554ba70ca23f820
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 79814d96bac185e73cc1c42a98be6d7b35e9a75d
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33337251"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42578185"
 ---
 # <a name="visual-c-tools-and-features-in-visual-studio-editions"></a>Visual Studio 버전의 Visual C++ 도구 및 기능
 
@@ -45,8 +45,8 @@ ms.locfileid: "33337251"
 |--------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|
 |32비트 x86 컴파일러|X|X|X|X|
 |X86_arm 크로스 컴파일러|X||X|X|
-|64비트 [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] 컴파일러|||X|X|
-|X86_ [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] 크로스 컴파일러|X|X|X|X|
+|64비트 x64 컴파일러|||X|X|
+|X86_ x64 크로스 컴파일러|X|X|X|X|
 
 ## <a name="libraries-and-headers"></a>라이브러리 및 헤더
 

@@ -8,16 +8,16 @@ ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 6bc23c18-fcd9-47bc-bff2-17537700be4a
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2cac05b17d470cdb593f4d7e1e1943f812022906
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: d36f56161e352d67838bfaf68c8e2d1dcee0f33e
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33851638"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42583987"
 ---
 # <a name="visual-c-help-and-community"></a>Visual C++ 도움말 및 커뮤니티
 
@@ -34,7 +34,7 @@ ms.locfileid: "33851638"
 |제목|설명|
 |-----------|-----------------|
 |[Visual C++](visual-cpp-in-visual-studio.md)|Visual C++에 대한 참조 및 개념 설명서를 포함합니다. MSDN Library의 일부입니다.|
-|[Windows 개발자 센터](http://go.microsoft.com/fwlink/p/?LinkId=256534)|C++ 및 기타 언어를 사용하여 [!INCLUDE[win8](build/reference/includes/win8_md.md)]용 앱을 개발하는 방법에 대한 정보를 포함합니다. Windows 개발자 센터의 일부이며, C++ 콘텐츠는 문서 > 언어 참조 노드 아래에 있습니다.|
+|[Windows 개발자 센터](http://go.microsoft.com/fwlink/p/?LinkId=256534)|C++ 및 기타 언어를 사용하여 Windows 8용 앱을 개발하는 방법에 대한 정보를 포함합니다. Windows 개발자 센터의 일부이며, C++ 콘텐츠는 문서 > 언어 참조 노드 아래에 있습니다.|
 
 ### <a name="online-and-offline-documentation"></a>온라인 및 오프라인 설명서
 
