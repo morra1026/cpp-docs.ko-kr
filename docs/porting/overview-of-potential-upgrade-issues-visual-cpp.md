@@ -8,18 +8,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5cdded022a495b85570ba7f1ad86179b6210356
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2411c5deb3a14ee3eaebb76fc69b6f36fa3bed42
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33848517"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42578220"
 ---
 # <a name="overview-of-potential-upgrade-issues-visual-c"></a>잠재적인 업그레이드 문제 개요(Visual C++)
 
 지난 몇 년 동안 C++ 언어 자체, C++ 표준 라이브러리, C 런타임(CRT) 및 MFC, ATL 등의 기타 라이브러리의 변경과 함께 Microsoft Visual C++ 컴파일러에도 많은 변화가 있었습니다. 결과적으로, 이전 버전의 Visual Studio에서 응용 프로그램을 업그레이드할 때 이전에는 정상적으로 컴파일된 코드에서 컴파일러 및 링커 오류와 경고가 발생할 수 있습니다. 원래 코드베이스가 오래될수록 이러한 오류 가능성이 커집니다. 이 개요에서는 발생할 수 있는 가장 일반적인 문제 클래스를 요약하고 자세한 정보 링크를 제공합니다.
 
-참고: 과거에는 여러 버전의 Visual Studio에 걸친 업그레이드를 한 번에 하나씩 증분 방식으로 수행하도록 권장했습니다. 이 방법은 더 이상 권장되지 않습니다. 코드베이스가 아무리 오래되었다 해도 최신 버전의 Visual Studio로 업그레이드하는 것이 더 간단한 경우가 많았습니다.
+> [!NOTE] 
+> 과거에는 여러 버전의 Visual Studio에 걸친 업그레이드를 한 번에 하나씩 증분 방식으로 수행하도록 권장했습니다. 이 방법은 더 이상 권장되지 않습니다. 코드베이스가 아무리 오래되었다 해도 최신 버전의 Visual Studio로 업그레이드하는 것이 더 간단한 경우가 많았습니다.
 
 업그레이드 프로세스와 관련된 질문이나 의견이 있으면 vcupgrade@microsoft.com로 보내주시기 바랍니다.
 
@@ -29,7 +30,7 @@ ms.locfileid: "33848517"
 
 ### <a name="toolset"></a>도구 집합
 
-.obj 및 .lib 파일 형식은 잘 정의되어 있고 거의 변경되지 않습니다. 때때로 이러한 파일 형식이 추가되지만, 일반적으로 이러한 추가 항목은 최신 도구 집합이 이전 도구 집합에서 생성된 개체 파일 및 라이브러리를 사용하는 데 영향을 주지 않습니다. 여기서 한 가지 중요한 예외는 [/GL(전체 프로그램 최적화)](../build/reference/gl-whole-program-optimization.md)을 사용하여 컴파일하는 경우입니다. **/GL**을 사용하여 컴파일하는 경우 결과로 생성된 개체 파일은 이 파일을 생성하는 데 사용된 것과 동일한 도구 집합을 통해서만 연결할 수 있습니다. 따라서 **/GL** 및 Visual Studio 2017(v141) 컴파일러를 사용하여 개체 파일을 생성하는 경우 Visual Studio 2017(v141) 링커를 사용하여 연결해야 합니다. 개체 파일 내의 내부 데이터 구조가 도구 집합의 주 버전 간에 안정적이지 않으며 최신 도구 집합이 오래된 데이터 형식을 이해하지 못하기 때문입니다.
+.obj 및 .lib 파일 형식은 잘 정의되어 있고 거의 변경되지 않습니다. 때때로 이러한 파일 형식이 추가되지만, 일반적으로 이러한 추가 항목은 최신 도구 집합이 이전 도구 집합에서 생성된 개체 파일 및 라이브러리를 사용하는 데 영향을 주지 않습니다. 여기서 한 가지 중요한 예외는 [/GL(전체 프로그램 최적화)](../build/reference/gl-whole-program-optimization.md)을 사용하여 컴파일하는 경우입니다. `/GL`을 사용하여 컴파일하는 경우 결과로 생성된 개체 파일은 이 파일을 생성하는 데 사용된 것과 동일한 도구 집합을 통해서만 연결할 수 있습니다. 따라서 `/GL` 및 Visual Studio 2017(v141) 컴파일러를 사용하여 개체 파일을 생성하는 경우 Visual Studio 2017(v141) 링커를 사용하여 연결해야 합니다. 개체 파일 내의 내부 데이터 구조가 도구 집합의 주 버전 간에 안정적이지 않으며 최신 도구 집합이 오래된 데이터 형식을 이해하지 못하기 때문입니다.
 
 C++에는 안정적인 ABI(응용 프로그램 이진 인터페이스)가 없습니다. Visual Studio는 릴리스의 모든 부 버전에 대해 안정적인 C++ ABI를 유지 관리합니다. 예를 들어 Visual Studio 2017과 모든 업데이트는 이진 호환됩니다. 그러나 주 버전의 Visual Studio 간에는 ABI가 호환되지 않을 수 있습니다(단, 2015와 2017은 이진 호환_됨_). 즉, C++ 형식 레이아웃, 이름 데코레이션, 예외 처리 및 C++ ABI의 다른 부분에서 주요 변경이 수행될 수 있습니다. 따라서 C++ 연결이 있는 외부 기호를 포함하는 개체 파일은 다른 주 버전의 도구 집합을 사용하여 생성된 개체 파일에 제대로 연결하지 못할 수 있습니다. 여기서 "작동하지 않을 수 있음"에는 여러 가능한 결과가 있습니다. 즉, 연결이 완전히 실패하거나(예: 이름 데코레이션이 변경된 경우), 연결은 성공하지만 런타임 시 작업이 작동하지 않거나(예: 형식 레이아웃이 변경된 경우), 대부분의 경우 작업이 작동하고 오류가 전혀 발생하지 않을 수도 있습니다. 또한 C++ ABI는 불안정하지만 C ABI 및 COM에 필요한 C++ ABI의 하위 집합은 안정적입니다.
 
@@ -88,11 +89,11 @@ dumpbin.exe /LINKERMEMBER somelibrary.lib
 
 ### <a name="zcwchart-wchart-is-native-type"></a>/Zc:wchar_t(wchar_t를 네이티브 형식으로 인식)
 
-Microsoft Visual C++ 6.0 및 이전 버전에서는 `wchar_t`가 기본 제공 형식으로 구현되지 않고 wchar.h에서 unsigned short에 대한 typedef로 선언되었습니다. C++ 표준에서는 `wchar_t`가 기본 제공 형식이어야 합니다. typedef 버전을 사용하면 이식성 문제가 발생할 수 있습니다. 이전 버전의 Visual Studio에서 업그레이드하고 코드가 `wchar_t`를 `unsigned short`로 암시적으로 변환하려 하기 때문에 컴파일러 오류 C2664가 발생하는 경우 **/Zc:wchar_t-** 를 설정하는 대신 오류를 수정하기 위해 코드를 변경하는 것이 좋습니다. 자세한 내용은 [/Zc:wchar_t(wchar_t는 네이티브 형식임)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조하세요.
+Microsoft Visual C++ 6.0 및 이전 버전에서는 **wchar_t**가 기본 제공 형식으로 구현되지 않고 wchar.h에서 unsigned short에 대한 typedef로 선언되었습니다. C++ 표준에서는 **wchar_t**가 기본 제공 형식이어야 합니다. typedef 버전을 사용하면 이식성 문제가 발생할 수 있습니다. 이전 버전의 Visual Studio에서 업그레이드하고 코드가 **wchar_t**를 **unsigned short**로 암시적으로 변환하려 하기 때문에 컴파일러 오류 C2664가 발생하는 경우 `/Zc:wchar_t-`를 설정하는 대신 오류를 수정하기 위해 코드를 변경하는 것이 좋습니다. 자세한 내용은 [/Zc:wchar_t(wchar_t는 네이티브 형식임)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조하세요.
 
 ### <a name="upgrading-with-the-linker-options-nodefaultlib-entry-and-noentry"></a>/NODEFAULTLIB, /ENTRY 및 /NOENTRY 링커 옵션을 사용하여 업그레이드
 
-**/NODEFAULTLIB** 링커 옵션(또는 모든 기본 라이브러리 무시 링커 속성)은 CRT 등의 기본 라이브러리를 자동으로 연결하지 않도록 링커에 지시합니다. 즉, 각 라이브러리가 개별 입력으로 나타나야 합니다. 이 라이브러리 목록은 **프로젝트 속성** 대화 상자의 **링커** 섹션에 있는 **추가 종속성** 속성에서 제공됩니다.
+`/NODEFAULTLIB` 링커 옵션(또는 모든 기본 라이브러리 무시 링커 속성)은 CRT 등의 기본 라이브러리를 자동으로 연결하지 않도록 링커에 지시합니다. 즉, 각 라이브러리가 개별 입력으로 나타나야 합니다. 이 라이브러리 목록은 **프로젝트 속성** 대화 상자의 **링커** 섹션에 있는 **추가 종속성** 속성에서 제공됩니다.
 
 일부 기본 라이브러리의 이름이 변경되었기 때문에 이 옵션을 사용하는 프로젝트는 업그레이드 시 문제가 발생합니다. **추가 종속성 속성**이나 링커 명령줄에 각 라이브러리가 나열되어야 하기 때문에 현재 이름을 사용하도록 라이브러리 목록을 업데이트해야 합니다.
 
@@ -106,13 +107,13 @@ Microsoft Visual C++ 6.0 및 이전 버전에서는 `wchar_t`가 기본 제공 �
 |msvcrt.lib|ucrt.lib, vcruntime.lib|
 |msvcrtd.lib|ucrtd.lib, vcruntimed.lib|
 
-기본 라이브러리를 건너뛰는 효과가 있는 **/ENTRY** 옵션 또는 **/NOENTRY** 옵션을 사용하는 경우에도 같은 문제가 적용됩니다.
+기본 라이브러리를 건너뛰는 효과가 있는 `/ENTRY` 옵션 또는 `/NOENTRY` 옵션을 사용하는 경우에도 같은 문제가 적용됩니다.
 
 ## <a name="errors-due-to-improved-language-conformance"></a>향상된 언어 규칙으로 인한 오류
 
 Microsoft Visual C++ 컴파일러는 지난 몇 년 동안 C++ 표준에 대한 규칙을 지속적으로 향상시켜 왔습니다. 이전 버전에서 컴파일된 코드가 Visual Studio 2017에서는 컴파일되지 않을 수 있습니다. 컴파일러가 이전에 무시되었거나 명시적으로 허용된 오류에 올바르게 플래그를 지정하기 때문입니다.
 
-예를 들어 **/Zc:forScope** 스위치는 MSVC 기록의 초기에 도입되었습니다. 루프 변수에 대해 비준수 동작을 허용합니다. 해당 스위치는 이제 사용되지 않으며 이후 버전에서 제거될 수 있습니다. 코드를 업그레이드하는 경우 해당 스위치를 사용하지 않는 것이 좋습니다. 자세한 내용은 [/Zc:forScope-가 사용되지 않음](porting-guide-spy-increment.md#deprecated_forscope)을 참조하세요.
+예를 들어 `/Zc:forScope` 스위치는 MSVC 기록의 초기에 도입되었습니다. 루프 변수에 대해 비준수 동작을 허용합니다. 해당 스위치는 이제 사용되지 않으며 이후 버전에서 제거될 수 있습니다. 코드를 업그레이드하는 경우 해당 스위치를 사용하지 않는 것이 좋습니다. 자세한 내용은 [/Zc:forScope-가 사용되지 않음](porting-guide-spy-increment.md#deprecated_forscope)을 참조하세요.
 
 업그레이드할 때 표시될 수 있는 일반적인 컴파일러 오류 중 한 가지 예는 비 const 인수가 const 매개 변수에 전달되는 경우입니다. 이전 버전의 컴파일러는 때때로 이러한 경우에 오류 플래그를 지정하지 않았습니다. 자세한 내용은 [컴파일러의 보다 엄격한 변환](porting-guide-spy-increment.md#stricter_conversions)을 참조하세요.
 
@@ -122,17 +123,17 @@ Microsoft Visual C++ 컴파일러는 지난 몇 년 동안 C++ 표준에 대한 
 
 \<stdint.h> 헤더는 기본 제공 정수 계열 형식과 달리 모든 플랫폼에서 지정된 길이를 유지하는 typedef 및 매크로를 정의합니다. 예를 들면 `uint32_t` 및 `int64_t`입니다. \<stdint.h> 헤더는 Visual Studio 2010에 추가되었습니다. 2010 이전에 작성된 코드에서 해당 형식에 대해 개인 정의를 제공했을 수 있으며, 이러한 정의가 \<stdint.h> 정의와 일치하지 않을 수도 있습니다.
 
-오류가 C2371이고 stdint 형식이 관련된 경우 해당 형식이 코드 또는 타사 lib 파일의 헤더에서 정의된 것입니다. 업그레이드 시 \<stdint.h> 형식의 사용자 지정 정의를 모두 제거해야 하지만 먼저 사용자 지정 정의를 현재 표준 정의와 비교하여 새로운 문제가 도입되지 않도록 해야 합니다.
+오류가 C2371이고 `stdint` 형식이 관련된 경우 해당 형식이 코드 또는 타사 lib 파일의 헤더에서 정의된 것입니다. 업그레이드 시 \<stdint.h> 형식의 사용자 지정 정의를 모두 제거해야 하지만 먼저 사용자 지정 정의를 현재 표준 정의와 비교하여 새로운 문제가 도입되지 않도록 해야 합니다.
 
-F12 키, **정의로 이동**을 눌러 해당 형식이 정의된 위치를 확인할 수 있습니다.
+**F12**(**정의로 이동**) 키를 눌러 해당 형식이 정의된 위치를 확인할 수 있습니다.
 
-여기서는 [/showIncludes](../build/reference/showincludes-list-include-files.md) 컴파일러 옵션이 유용할 수 있습니다. 프로젝트에 대한 **속성 페이지** 대화 상자에서 **C/C++** > **고급** 페이지를 열고 **포함 표시**를 **예**로 설정합니다. 그런 다음 프로젝트를 다시 빌드하고 출력 창에서 #includes 목록을 확인합니다. 각 헤더는 포함하는 헤더 아래에 들여쓰기됩니다.
+여기서는 [/showIncludes](../build/reference/showincludes-list-include-files.md) 컴파일러 옵션이 유용할 수 있습니다. 프로젝트에 대한 **속성 페이지** 대화 상자에서 **C/C++** > **고급** 페이지를 열고 **포함 표시**를 **예**로 설정합니다. 그런 다음, 프로젝트를 다시 빌드하고 출력 창에서 `#include` 목록을 확인합니다. 각 헤더는 포함하는 헤더 아래에 들여쓰기됩니다.
 
 ## <a name="errors-involving-crt-functions"></a>CRT 함수와 관련된 오류
 
 지난 몇 년 동안 C 런타임에서 많은 변화가 있었습니다. 함수의 보안 버전이 많이 추가되었으며 일부는 제거되었습니다. 또한 이 문서의 앞부분에서 설명한 대로, Microsoft의 CRT 구현이 Visual Studio 2015에서 새로운 이진 파일 및 관련 .lib 파일에 리팩터링되었습니다.
 
-오류가 CRT 함수와 관련된 경우 [Visual C++ 변경 기록 2003 - 2015](visual-cpp-change-history-2003-2015.md) 또는 [Visual Studio 2017의 C++ 규칙 향상](../cpp-conformance-improvements-2017.md)을 검색하여 해당 항목에 추가 정보가 들어 있는지 확인합니다. 오류가 LNK2019, 확인할 수 없는 외부 참조인 경우 함수가 제거되지 않았는지 확인합니다. 또는 함수가 확실히 존재하고 호출 코드가 올바른 경우 프로젝트에서 **/NODEFAULTLIB**를 사용하는지 확인합니다. 사용하는 경우 프로젝트에서 새로운 유니버설(UCRT) 라이브러리를 사용하도록 라이브러리 목록을 업데이트해야 합니다. 자세한 내용은 라이브러리 및 종속성에 대한 위 섹션을 참조하세요.
+오류가 CRT 함수와 관련된 경우 [Visual C++ 변경 기록 2003 - 2015](visual-cpp-change-history-2003-2015.md) 또는 [Visual Studio 2017의 C++ 규칙 향상](../cpp-conformance-improvements-2017.md)을 검색하여 해당 항목에 추가 정보가 들어 있는지 확인합니다. 오류가 LNK2019, 확인할 수 없는 외부 참조인 경우 함수가 제거되지 않았는지 확인합니다. 또는 함수가 확실히 존재하고 호출 코드가 올바른 경우 프로젝트에서 `/NODEFAULTLIB`를 사용하는지 확인합니다. 사용하는 경우 프로젝트에서 새로운 유니버설(UCRT) 라이브러리를 사용하도록 라이브러리 목록을 업데이트해야 합니다. 자세한 내용은 라이브러리 및 종속성에 대한 위 섹션을 참조하세요.
 
 오류가 `printf` 또는 `scanf`와 관련된 경우 stdio.h를 포함하지 않고 개인적으로 함수를 정의하지 않았는지 확인합니다. 이 경우에 개별 정의를 제거하거나 legacy\_stdio\_definitions.lib에 연결합니다. **추가 종속성** 속성에 있는 **구성 속성** > **링커** > **입력** 아래의 **속성 페이지** 대화 상자에서 설정할 수 있습니다. Windows SDK 8.1 이전 버전에 연결하는 경우 legacy\_stdio\_definitions.lib를 추가합니다.
 
@@ -160,7 +161,7 @@ C++ 표준 자체가 이전 버전과 항상 호환되지는 않는 방식으로
 
 ### <a name="windows-version"></a>Windows 버전
 
-Windows API를 직접 또는 간접적으로 사용하는 프로그램을 업그레이드하는 경우 지원할 최소 Windows 버전을 결정해야 합니다. 대부분의 경우 Windows 7을 선택하는 것이 좋습니다. 자세한 내용은 [헤더 파일 문제](porting-guide-spy-increment.md#header_file_problems)를 참조하세요. WINVER 매크로는 프로그램이 실행되도록 설계된 가장 오래된 Windows 버전을 정의합니다. MFC 프로그램이 WINVER을 0x0501(Windows XP)로 설정하는 경우 MFC에서 XP를 더 이상 지원하기 않으므로 컴파일러 자체에 XP 모드가 있어도 경고가 발생합니다.  
+Windows API를 직접 또는 간접적으로 사용하는 프로그램을 업그레이드하는 경우 지원할 최소 Windows 버전을 결정해야 합니다. 대부분의 경우 Windows 7을 선택하는 것이 좋습니다. 자세한 내용은 [헤더 파일 문제](porting-guide-spy-increment.md#header_file_problems)를 참조하세요. `WINVER` 매크로는 프로그램이 실행되도록 설계된 가장 오래된 Windows 버전을 정의합니다. MFC 프로그램이 WINVER을 0x0501(Windows XP)로 설정하는 경우 MFC에서 XP를 더 이상 지원하기 않으므로 컴파일러 자체에 XP 모드가 있어도 경고가 발생합니다.  
 
 자세한 내용은 [대상 Windows 버전 업데이트](porting-guide-spy-increment.md#updating_winver) 및 [더 오래된 헤더 파일](porting-guide-spy-increment.md#outdated_header_files)을 참조하세요.
 
@@ -170,13 +171,13 @@ ATL 및 MFC는 비교적 안정된 API이지만 때때로 변경됩니다. 자�
 
 ### <a name="lnk-2005-dllmain12-already-defined-in-msvcrtdlib"></a>LNK 2005 _DllMain@12가 MSVCRTD.lib에 이미 정의되어 있습니다.
 
-이 오류는 MFC 응용 프로그램에서 발생할 수 있습니다. CRT 라이브러리와 MFC 라이브러리 간의 순서 지정 문제를 나타냅니다. MFC에서 new 및 delete 연산자를 제공하도록 연결해야 합니다. 오류를 해결하려면 /NODEFAULTLIB 스위치를 사용하여 기본 라이브러리 MSVCRTD.lib 및 mfcs140d.lib를 무시합니다. 그런 다음 동일한 라이브러리를 추가 종속성으로 추가합니다.
+이 오류는 MFC 응용 프로그램에서 발생할 수 있습니다. CRT 라이브러리와 MFC 라이브러리 간의 순서 지정 문제를 나타냅니다. MFC에서 new 및 delete 연산자를 제공하도록 연결해야 합니다. 오류를 해결하려면 `/NODEFAULTLIB` 스위치를 사용하여 기본 라이브러리 MSVCRTD.lib 및 mfcs140d.lib를 무시합니다. 그런 다음 동일한 라이브러리를 추가 종속성으로 추가합니다.
 
 ## <a name="32-vs-64-bit"></a>32비트 및 64비트
 
 원래 코드가 32비트 시스템용으로 컴파일된 경우 새로운 32비트 앱 대신(또는 추가로) 64비트 버전을 만들 수 있습니다. 일반적으로 먼저 32비트 모드로 프로그램을 컴파일한 다음 64비트를 시도해야 합니다. 64비트용 컴파일 작업은 간단하지만, 경우에 따라 32비트 빌드에서 숨겨진 버그가 나타날 수 있습니다.
 
-또한 printf 및 scanf 함수의 포인터 크기, 시간 및 크기 값, 형식 지정자와 관련된 가능한 컴파일 시간 및 런타임 문제에 주의해야 합니다. 자세한 내용은 [64비트용 Visual C++ 구성(x64 대상)](../build/configuring-programs-for-64-bit-visual-cpp.md) 및 [일반적인 Visual C++ 64비트 마이그레이션 문제](../build/common-visual-cpp-64-bit-migration-issues.md)를 참조하세요. 추가 마이그레이션 팁은 [64비트 Windows에 대한 프로그래밍 가이드](https://msdn.microsoft.com/library/windows/desktop/bb427430\(v=vs.85\).aspx)를 참조하세요.
+또한 printf 및 scanf 함수의 포인터 크기, 시간 및 크기 값, 형식 지정자와 관련된 가능한 컴파일 시간 및 런타임 문제에 주의해야 합니다. 자세한 내용은 [64비트용 Visual C++ 구성(x64 대상)](../build/configuring-programs-for-64-bit-visual-cpp.md) 및 [일반적인 Visual C++ 64비트 마이그레이션 문제](../build/common-visual-cpp-64-bit-migration-issues.md)를 참조하세요. 추가 마이그레이션 팁은 [64비트 Windows에 대한 프로그래밍 가이드](/windows/desktop/WinProg64/programming-guide-for-64-bit-windows)를 참조하세요.
 
 ## <a name="unicode-vs-mbcsascii"></a>유니코드 및 MBCS/ASCII
 

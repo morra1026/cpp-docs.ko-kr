@@ -17,18 +17,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e66d6e94e4938c72adc5aea1a478ce6c0658e56e
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 9aa8994ebbb9f00afa6858597fce17554f3c3dfc
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33327231"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42578618"
 ---
 # <a name="project-files"></a>프로젝트 파일
 Visual C++ 프로젝트 파일은 .vcxproj 파일 이름 확장명을 가진 XML 기반 파일이며 Visual C++ 프로젝트를 빌드하는 데 필요한 정보를 포함합니다.  
   
 ## <a name="example"></a>예  
- 다음 샘플.vcxproj 파일은 **새 프로젝트** 대화 상자에서 **Win32 콘솔 응용 프로그램**을 지정하여 생성되었습니다. 프로젝트 파일을 처리하려면 명령줄에서 Msbuild.exe 도구를 사용하거나, [!INCLUDE[TLA2#tla_ide](../build/includes/tla2sharptla_ide_md.md)]에서 **빌드** 명령을 사용합니다. (필요한 원본 및 헤더 파일이 제공되지 않았기 때문에 이 샘플을 처리할 수 없습니다.) 프로젝트 파일의 XML 요소에 대한 자세한 내용은 [프로젝트 파일 스키마 참조](/visualstudio/msbuild/msbuild-project-file-schema-reference)를 참조하세요.  
+ 다음 샘플.vcxproj 파일은 **새 프로젝트** 대화 상자에서 **Win32 콘솔 응용 프로그램**을 지정하여 생성되었습니다. 프로젝트 파일을 처리하려면 명령줄에서 Msbuild.exe 도구를 사용하거나 IDE에서 **빌드** 명령을 사용합니다. (필요한 원본 및 헤더 파일이 제공되지 않았기 때문에 이 샘플을 처리할 수 없습니다.) 프로젝트 파일의 XML 요소에 대한 자세한 내용은 [프로젝트 파일 스키마 참조](/visualstudio/msbuild/msbuild-project-file-schema-reference)를 참조하세요.  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  

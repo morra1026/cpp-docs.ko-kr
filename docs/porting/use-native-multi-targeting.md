@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2df0bee37a0bcf0e8162fa692be79bd57b16b3cf
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: bb9d7b950e4c38ea53db6e459edfa1a179eb971d
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846427"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42578135"
 ---
 # <a name="use-native-multi-targeting-in-visual-studio-to-build-old-projects"></a>Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드
 
@@ -28,13 +28,13 @@ ms.locfileid: "33846427"
 
 다행히도 Visual Studio 2017 및 Visual Studio 2015를 사용하여 이전 컴파일러 도구 집합 및 라이브러리를 대상으로 지정하는 프로젝트를 빌드할 수 있습니다. IDE에서 새 기능을 이용하기 위해 Visual Studio 2010, Visual Studio 2012, Visual Studio 2013 또는 Visual Studio 2015 프로젝트를 업그레이드할 필요가 없습니다.
 
- - 새 C++ 리팩터링 기능 및 편집기 실험 기능
- - 새로운 진단 도구 디버거 창 및 오류 목록 창
- - 새로운 중단점, 예외 창 및 새 PerfTips
- - 새 코드 탐색 및 검색 도구
- - 새 C++ 빠른 픽스 및 Productivity Power Tools 확장.
+  - 새 C++ 리팩터링 기능 및 편집기 실험 기능
+  - 새로운 진단 도구 디버거 창 및 오류 목록 창
+  - 새로운 중단점, 예외 창 및 새 PerfTips
+  - 새 코드 탐색 및 검색 도구
+  - 새 C++ 빠른 픽스 및 Productivity Power Tools 확장.
 
-Visual Studio 2008 프로젝트를 대상으로 지정할 수도 있지만 변경이 필요합니다. 자세한 내용은 Visual Studio 2008에 대한 지침 섹션을 참조하세요.
+Visual Studio 2008 프로젝트를 대상으로 지정할 수도 있지만 변경이 필요합니다. 자세한 내용은 **Visual Studio 2008에 대한 지침** 섹션을 참조하세요.
 
 최신 버전의 Visual Studio에서는 프로젝트의 네이티브 멀티 타기팅 및 라운드트립을 지원합니다. 네이티브 멀티 타기팅은 이전 버전의 Visual Studio에서 설치된 도구 집합을 사용하여 빌드되는 최신 IDE의 기능입니다. 라운드트립은 프로젝트를 변경하지 않고 이전 IDE 버전에서 만들어진 프로젝트를 로드하는 최신 IDE의 기능입니다. 기존 버전과 함께 최신 버전의 Visual Studio를 단계별로 설치할 경우 기존 버전의 컴파일러 및 도구와 함께 새 버전의 IDE를 사용하여 프로젝트를 빌드할 수 있습니다. 팀의 다른 구성원이 이전 버전의 Visual Studio에서 프로젝트를 계속 사용할 수 있습니다.
 
@@ -54,13 +54,13 @@ Visual Studio는 프로젝트를 지속적으로 업그레이드합니다. 프�
 
 ## <a name="instructions-for-visual-studio-2008"></a>Visual Studio 2008에 대한 지침  
   
-Visual Studio 2008에는 VCBuild라는 C++에 대한 자체 전용 빌드 시스템이 있었습니다. Visual Studio 2010부터 Visual C++ 프로젝트는 MSBuild를 사용하도록 변경되었습니다. 즉, 최신 버전의 Visual Studio에서 Visual Studio 2008 프로젝트를 빌드하려면 업데이트 단계를 거쳐야 합니다. 업데이트된 프로젝트는 Visual Studio 2008 IDE를 사용하여 만들어진 이진 파일과 완전히 호환되는 이진 파일을 생성합니다.
+Visual Studio 2008에는 **VCBuild**라는 C++에 대한 자체 전용 빌드 시스템이 있었습니다. Visual Studio 2010부터 Visual C++ 프로젝트는 **MSBuild**를 사용하도록 변경되었습니다. 즉, 최신 버전의 Visual Studio에서 Visual Studio 2008 프로젝트를 빌드하려면 업데이트 단계를 거쳐야 합니다. 업데이트된 프로젝트는 Visual Studio 2008 IDE를 사용하여 만들어진 이진 파일과 완전히 호환되는 이진 파일을 생성합니다.
 
-먼저 현재 버전의 Visual Studio 외에 Visual Studio 2010을 Visual Studio 2008과 같은 컴퓨터에 설치해야 합니다. Visual Studio 2008 프로젝트를 대상으로 지정하는 데 필요한 MSBuild 스크립트는 Visual Studio 2010에서만 설치합니다. 
+먼저 현재 버전의 Visual Studio 외에 Visual Studio 2010을 Visual Studio 2008과 같은 컴퓨터에 설치해야 합니다. Visual Studio 2008 프로젝트를 대상으로 지정하는 데 필요한 **MSBuild** 스크립트는 Visual Studio 2010에서만 설치합니다. 
 
 다음으로 Visual Studio 2008 솔루션 및 프로젝트를 현재 버전의 Visual Studio로 업데이트해야 합니다. 업그레이드하기 전에 프로젝트 및 솔루션 파일의 백업을 만드는 것이 좋습니다. 업그레이드 프로세스를 시작하려면 현재 버전의 Visual Studio에서 솔루션을 엽니다. 업그레이드 프롬프트가 표시되면 제공된 정보를 검토하고 **확인**을 선택하여 업그레이드를 시작합니다. 솔루션에 두 개 이상의 프로젝트가 있는 경우 이를 업데이트해야 합니다. 마법사에서 기존 .vcproj 파일과 함께 새 .vcxproj 프로젝트 파일을 단계별로 만듭니다. 원래 .sln 파일의 복사본이 있는 경우 업그레이드가 Visual Studio 2008 프로젝트에 다른 영향을 미치지 않습니다.
 
-업그레이드가 완료될 때 로그 보고서에 프로젝트에 대한 오류 또는 경고가 있으면 이를 주의해서 검토합니다. VCBuild에서 MSBuild로 변환하면 문제가 발생할 수 있습니다. 보고서에 나열된 작업 항목을 이해하고 구현해야 합니다. VCBuild에서 MSBuild로 변환할 때 발생할 수 있는 업그레이드 로그 보고서 및 문제에 대한 자세한 내용은 이 [C++ Native Multi-Targeting](https://blogs.msdn.microsoft.com/vcblog/2009/12/08/c-native-multi-targeting/)(C++ 네이티브 멀티 타기팅) 블로그 게시물을 참조하세요.
+업그레이드가 완료될 때 로그 보고서에 프로젝트에 대한 오류 또는 경고가 있으면 이를 주의해서 검토합니다. **VCBuild**에서 **MSBuild**로 변환하면 문제가 발생할 수 있습니다. 보고서에 나열된 작업 항목을 이해하고 구현해야 합니다. **VCBuild**에서 **MSBuild**로 변환할 때 발생할 수 있는 업그레이드 로그 보고서 및 문제에 대한 자세한 내용은 이 [C++ 네이티브 멀티 타기팅](https://blogs.msdn.microsoft.com/vcblog/2009/12/08/c-native-multi-targeting/) 블로그 게시물을 참조하세요.
 
 프로젝트 업그레이드가 완료되고 로그 파일에서 문제를 수정한 경우 솔루션은 실제로 최신 도구 집합을 대상으로 지정합니다. 마지막 단계로 Visual Studio 2008 도구 집합을 사용하도록 솔루션에서 각 프로젝트에 대한 속성을 변경합니다. 솔루션이 현재 버전의 Visual Studio에 로드된 경우 솔루션의 각 프로젝트에 대해 프로젝트 **속성 페이지** 대화 상자를 엽니다. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. **속성 페이지** 대화 상자에서 **구성** 드롭다운 값을 **모든 구성**으로 변경합니다. **구성 속성**에서 **일반**을 선택하고 **플랫폼 도구 집합**을 **Visual Studio 2008(v90)** 로 변경합니다.
 
@@ -72,12 +72,12 @@ Visual Studio 2008에는 VCBuild라는 C++에 대한 자체 전용 빌드 시스
 
 다음은 필요할 수 있는 일부 Visual Studio 다운로드입니다.
 
-  - [Microsoft Visual Studio Community 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48146)  
-  - [Microsoft Visual Studio Express 2013 for Windows Desktop with Update 5](https://www.microsoft.com/en-us/download/details.aspx?id=48131)(Microsoft Visual Studio Express 2013 for Windows Desktop 업데이트 5)  
-  - [Microsoft Visual Studio Express 2012 for Windows Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=34673)  
-  - [Visual Studio 2012 업데이트 5](https://www.microsoft.com/en-us/download/details.aspx?id=34673)  
+  - [Microsoft Visual Studio Community 2015](https://www.microsoft.com/download/details.aspx?id=48146)  
+  - [Microsoft Visual Studio Express 2013 for Windows Desktop with Update 5](https://www.microsoft.com/download/details.aspx?id=48131)(Microsoft Visual Studio Express 2013 for Windows Desktop 업데이트 5)  
+  - [Microsoft Visual Studio Express 2012 for Windows Desktop](https://www.microsoft.com/download/details.aspx?id=34673)  
+  - [Visual Studio 2012 업데이트 5](https://www.microsoft.com/download/details.aspx?id=34673)  
   - [Microsoft Visual C++ 2010 Express (Web Installer)](https://download.microsoft.com/download/1/D/9/1D9A6C0E-FC89-43EE-9658-B9F0E3A76983/vc_web.exe)(Microsoft Visual C++ 2010 Express(웹 설치 관리자))  
-  - [Microsoft Visual Studio 2010 서비스 팩 1(설치 관리자)](https://www.microsoft.com/en-us/download/details.aspx?id=23691)  
+  - [Microsoft Visual Studio 2010 서비스 팩 1(설치 관리자)](https://www.microsoft.com/download/details.aspx?id=23691)  
   - [Microsoft Visual C++ 2008 Express with SP1 (Web Installer)](https://go.microsoft.com/?linkid=7729279)(Microsoft Visual C++ 2008 Express SP1(웹 설치 관리자))  
 
 이러한 제품이 설치되면 **속성 페이지** 대화 상자의 **플랫폼 도구 집합** 속성 드롭다운이 사용 가능한 도구 집합을 표시하도록 자동으로 업데이트됩니다. 이제 최신 버전의 Visual Studio를 사용하여 이전 버전의 도구 집합을 위한 프로젝트를 변환하거나 업그레이드하지 않고 빌드할 수 있습니다.

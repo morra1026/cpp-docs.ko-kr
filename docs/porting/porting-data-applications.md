@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c148c805cb4ddc5e012e9de5e8e5f7e207f47dc3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: c20b9b6e8c1e96736485f302203156f627ef6794
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33839883"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42578251"
 ---
 # <a name="porting-data-applications"></a>데이터 응용 프로그램 이식
 수년에 걸쳐 Visual C++는 데이터베이스로 작업하는 여러 가지 방법을 제공했습니다. 2011년에 Microsoft는 네이티브 코드에서 SQL Server 제품에 액세스하기 위한 기본 기술로서 Visual C++가 ODBC에 정렬되어 있다고 발표했습니다. ODBC는 산업 표준으로, 이것을 사용하여 여러 플랫폼 및 데이터 소스에서 코드의 이식성을 극대화할 수 있습니다. 대부분의 SQL 데이터베이스 제품 및 많은 NoSQL 제품이 ODBC를 지원합니다. 하위 수준 ODBC API를 호출하여 ODBC를 직접 사용할 수도 있고, MFC ODBC 래퍼 클래스 또는 타사 C++ 래퍼 라이브러리를 사용할 수도 있습니다. 
@@ -36,11 +36,12 @@ OLE DB와 ODBC 드라이버가 단일 DLL에 포함된 SQL Native Client 구성 
 
 C++/CLI를 사용하는 경우에는 ADO.NET을 계속 사용할 수 있습니다. 자세한 내용은 [ADO.NET을 사용하여 데이터 액세스(C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md) 및 [Visual Studio에서 데이터 액세스](/visualstudio/data-tools/accessing-data-in-visual-studio)를 참조하세요.  
   
--   ODBC 래퍼 클래스 외에도 MFC는 Access 데이터베이스에 연결하기 위한 데이터 액세스 개체(DAO) 래퍼 클래스도 제공합니다.  그러나 DAO는 사용되지 않습니다. CDaoDatabase 또는 CDaoRecordset 기반의 모든 코드를 업그레이드해야 합니다. 
+- ODBC 래퍼 클래스 외에도 MFC는 Access 데이터베이스에 연결하기 위한 데이터 액세스 개체(DAO) 래퍼 클래스도 제공합니다.  그러나 DAO는 사용되지 않습니다. `CDaoDatabase` 또는 `CDaoRecordset`에 기반한 코드는 업그레이드되어야 합니다. 
 
 Microsoft Windows에서 데이터 액세스 기술의 기록에 대한 자세한 내용은 [Microsoft Data Access Components(Wikipedia)](https://en.wikipedia.org/wiki/Microsoft_Data_Access_Components)를 참조하세요.  
 
 ## <a name="see-also"></a>참고 항목  
- [Visual C++의 데이터 액세스](../data/data-access-in-cpp.md)  
- [Microsoft ODBC(Open Database Connectivity)](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc)  
- [데이터 액세스 기술 로드맵](https://msdn.microsoft.com/en-us/library/ms810810.aspx)  
+ 
+[Visual C++의 데이터 액세스](../data/data-access-in-cpp.md)  
+[Microsoft ODBC(Open Database Connectivity)](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc)  
+[데이터 액세스 기술 로드맵](https://msdn.microsoft.com/library/ms810810.aspx)  

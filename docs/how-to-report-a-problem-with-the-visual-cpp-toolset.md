@@ -10,12 +10,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1735f890c0f106d82884a5ad7d63a5a3f0f8920
-ms.sourcegitcommit: e013acba70aa29fed60ae7945162adee23e19c3b
+ms.openlocfilehash: 359c9d3f72ffa87abf49c6e3ca90743ad0fc80a3
+ms.sourcegitcommit: 9be4b66efa45dc132cef06eb3b258c2252ea23a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36322370"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42583897"
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ 도구 집합 또는 설명서의 문제를 보고하는 방법
 
@@ -335,7 +335,7 @@ C++ 컴파일러의 모듈 기능을 사용하는 경우 전처리된 재현을 
 
 1. **mkdir linkrepro**를 입력하여 링크 재현을 위한 디렉터리를 만듭니다.
 
-1. **set link\_repro=linkrepro** 명령을 입력하여 **link\_repro** 환경 변수를 방금 만든 디렉터리로 설정합니다.
+1. **set link\_repro=linkrepro** 명령을 입력하여 **link\_repro** 환경 변수를 방금 만든 디렉터리로 설정합니다. 다른 디렉터리에서 빌드가 실행된 경우 더 복잡한 프로젝트와 마찬가지로 대신 **link\_repro**를 linkrepro 디렉터리 전체 경로로 설정합니다.
 
 1. Visual Studio에서 재현 프로젝트를 빌드하려면 개발자 명령 프롬프트 콘솔 창에서 **devenv** 명령을 입력합니다. 이렇게 하면 **link\_repro** 환경 변수의 값이 Visual Studio에 표시됩니다. 명령줄에서 프로젝트를 빌드하려면 위에서 캡처한 명령줄 인수를 사용하여 재현 빌드를 복제합니다.
 
