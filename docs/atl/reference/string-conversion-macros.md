@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee63cf7f5ec2bd0d6ed76bf891ed82492c76560d
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 8d9c4c43098d7f0ca8a5e9588a69a47d6e98a066
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885157"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210057"
 ---
 # <a name="string-conversion-macros"></a>문자열 변환 매크로
 
@@ -38,7 +38,7 @@ ms.locfileid: "37885157"
 
 ##  <a name="devmode_and_textmetric_string_conversion_macros"></a>  DEVMODE 및 TEXTMETRIC 문자열 변환 매크로
 
-이러한 매크로의 복사본을 만듭니다는 [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) 하거나 [TEXTMETRIC](http://msdn.microsoft.com/library/windows/desktop/dd145132) 구조체이 고 새 구조 내에서 문자열을 새 문자열 형식으로 변환 합니다. 매크로 새 구조에 대 한 스택에 메모리를 할당 하 고 새 구조에 대 한 포인터를 반환 합니다.  
+이러한 매크로의 복사본을 만듭니다는 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 하거나 [TEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) 구조체이 고 새 구조 내에서 문자열을 새 문자열 형식으로 변환 합니다. 매크로 새 구조에 대 한 스택에 메모리를 할당 하 고 새 구조에 대 한 포인터를 반환 합니다.  
   
 ```cpp
 MACRONAME( address_of_structure )

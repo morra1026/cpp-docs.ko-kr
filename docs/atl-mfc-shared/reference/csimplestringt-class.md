@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd96c7028f5f37d617c86e412fa238ccf141cb58
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 0d548a5cf0384a59c3fa12d88268997f1e801704
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42571710"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196663"
 ---
 # <a name="csimplestringt-class"></a>CSimpleStringT 클래스
 이 클래스를 나타냅니다는 `CSimpleStringT` 개체입니다.  
@@ -158,7 +158,7 @@ void Append(PCXSTR pszSrc);
 ### <a name="remarks"></a>설명  
  기존 추가 하려면이 메서드를 호출 `CSimpleStringT` 개체를 다른 `CSimpleStringT` 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 `CSimpleStringT::Append`의 사용법을 보여줍니다.  
   
 ```cpp  
@@ -208,7 +208,7 @@ static void CopyChars(
 ### <a name="remarks"></a>설명  
  문자를 복사 하려면이 메서드를 호출 *pchSrc* 에 *pchDest* 문자열입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 `CSimpleStringT::CopyChars`의 사용법을 보여줍니다.  
   
 ```cpp  
@@ -243,7 +243,7 @@ static void CopyCharsOverlapped(
 ### <a name="remarks"></a>설명  
  문자를 복사 하려면이 메서드를 호출 *pchSrc* 에 *pchDest* 문자열입니다. 와 달리 `CopyChars`, `CopyCharsOverlapped` 겹칠 수 있습니다 하는 문자 버퍼에서 복사 하기 위한 안전한 방법을 제공 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [CSimpleStringT::CopyChars](#copychars), 또는 소스 코드에 대 한 `CSimpleStringT::SetString` (atlsimpstr.h에 있음).  
   
 ##  <a name="ctor"></a>  CSimpleStringT::CSimpleStringT  
@@ -276,7 +276,7 @@ explicit CSimpleStringT(IAtlStringMgr* pStringMgr) throw();
 ### <a name="remarks"></a>설명  
  새 `CSimpleStringT` 개체를 생성합니다. 생성자에 할당 된 새 저장소를 입력된 데이터를 복사 하기 때문에 메모리 예외가 발생할 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는의 사용을 보여 줍니다 `CSimpleStringT::CSimpleStringT` ATL을 사용 하 여 **typedef** `CSimpleString`합니다. `CSimpleString` 자주 사용 되는 클래스 템플릿의 특수화 인 `CSimpleStringT`합니다.  
   
 ```cpp  
@@ -306,7 +306,7 @@ void Empty() throw();
 ### <a name="remarks"></a>설명  
  자세한 내용은 [문자열: CString 예외 정리](../cstring-exception-cleanup.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 `CSimpleStringT::Empty`의 사용법을 보여줍니다.  
   
 ```cpp  
@@ -325,7 +325,7 @@ void FreeExtra();
 ### <a name="remarks"></a>설명  
  이 문자열 개체가 사용한 메모리 오버 헤드를 줄여야 합니다. 메서드를 다시 반환 하는 정확한 길이 버퍼를 할당 [GetLength](#getlength)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
 ```cpp  
 CAtlString basestr;
 IAtlStringMgr* pMgr;
@@ -392,7 +392,7 @@ XCHAR GetAt(int iChar) const;
 ### <a name="remarks"></a>설명  
  지정 된 하나의 문자를 반환 하려면이 메서드를 호출 *iChar*합니다. 오버 로드 된 첨자 (**[]**) 연산자에 대 한 편리한 별칭입니다 `GetAt`합니다. 사용 하 여 예외를 생성 하지 않고 null 종결자가 주소 지정 가능 `GetAt`합니다. 그러나 하 여 계산 되지 않습니다 `GetLength`, 반환 값은 0입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에 사용 하는 방법을 보여 줍니다. `CSimpleStringT::GetAt`합니다.  
   
 ```cpp  
@@ -431,7 +431,7 @@ PXSTR GetBuffer();
   
  충족 하기 위해 메모리가 부족 한 경우는 `GetBuffer` 이 메서드에서 throw CMemoryException *를 요청 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
 ```cpp  
 CSimpleString s(_T("abcd"), pMgr);
 LPTSTR pBuffer = s.GetBuffer(10);
@@ -471,13 +471,13 @@ PXSTR GetBufferSetLength(int nLength);
   
  참조 횟수에 대 한 자세한 내용은 다음 문서를 참조 합니다.  
   
-- [참조 횟수를 통해 개체 수명 관리](http://msdn.microsoft.com/library/windows/desktop/ms687260) Windows SDK에에서 있습니다. 
+- [참조 횟수를 통해 개체 수명 관리](/windows/desktop/com/managing-object-lifetimes-through-reference-counting) Windows SDK에에서 있습니다. 
   
-- [참조 카운팅 구현](http://msdn.microsoft.com/library/windows/desktop/ms693431) Windows SDK에에서 있습니다.
+- [참조 카운팅 구현](/windows/desktop/com/implementing-reference-counting) Windows SDK에에서 있습니다.
   
-- [참조 횟수를 관리 하는 것에 대 한 규칙](http://msdn.microsoft.com/library/windows/desktop/ms692481) Windows SDK에에서 있습니다.  
+- [참조 횟수를 관리 하는 것에 대 한 규칙](/windows/desktop/com/rules-for-managing-reference-counts) Windows SDK에에서 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 `CSimpleStringT::GetBufferSetLength`의 사용법을 보여줍니다.  
   
 ```cpp  
@@ -541,7 +541,7 @@ PCXSTR GetString() const throw();
 > [!NOTE]
 >  반환 된 `PCXSTR` 포인터가 **const** 직접 수정할 수 없도록 하 고 `CSimpleStringT` 내용입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 `CSimpleStringT::GetString`의 사용법을 보여줍니다.  
   
 ```cpp  
@@ -564,7 +564,7 @@ bool IsEmpty() const throw();
 ### <a name="remarks"></a>설명  
  개체가 비어 있는지 확인 하려면이 메서드를 호출 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 `CSimpleStringT::IsEmpty`의 사용법을 보여줍니다.  
   
 ```cpp  
@@ -599,13 +599,13 @@ PXSTR LockBuffer();
   
  참조 횟수에 대 한 자세한 내용은 다음 문서를 참조 합니다.  
   
-- [참조 횟수를 통해 개체 수명 관리](http://msdn.microsoft.com/library/windows/desktop/ms687260) Windows SDK에서  
+- [참조 횟수를 통해 개체 수명 관리](/windows/desktop/com/managing-object-lifetimes-through-reference-counting) Windows SDK에서  
   
-- [참조 카운팅 구현](http://msdn.microsoft.com/library/windows/desktop/ms693431) Windows SDK에서  
+- [참조 카운팅 구현](/windows/desktop/com/implementing-reference-counting) Windows SDK에서  
   
-- [참조 횟수를 관리 하는 것에 대 한 규칙](http://msdn.microsoft.com/library/windows/desktop/ms692481) Windows SDK에서  
+- [참조 횟수를 관리 하는 것에 대 한 규칙](/windows/desktop/com/rules-for-managing-reference-counts) Windows SDK에서  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 `CSimpleStringT::LockBuffer`의 사용법을 보여줍니다.  
   
 ```cpp  
@@ -636,7 +636,7 @@ XCHAR operator[](int iChar) const;
 > [!NOTE]
 >  첨자를 사용할 수 있습니다 (**[]**)에 있는 문자의 값을 검색할 연산자를 `CSimpleStringT`, 하지만 있는 문자의 값을 변경 하려면 사용할 수 없습니다를 `CSimpleStringT`입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 `CSimpleStringT::operator []`의 사용법을 보여줍니다.  
   
 ```cpp  
@@ -691,7 +691,7 @@ CSimpleStringT& operator +=(wchar_t ch);
 ### <a name="remarks"></a>설명  
  다른 연산자를 허용 `CSimpleStringT` 개체 또는 문자입니다. 메모리를 확인 합니다.이 추가 문자에 대 한 새 저장소를 할당할 수 있습니다 때문에이 연결 연산자를 사용할 때마다 예외가 발생할 수 있습니다 `CSimpleStringT` 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 `CSimpleStringT::operator +=`의 사용법을 보여줍니다.  
   
 ```cpp  
@@ -718,7 +718,7 @@ CSimpleStringT& operator =(const CSimpleStringT& strSrc);
 ### <a name="remarks"></a>설명  
  대상 문자열 (왼쪽)에 새 데이터를 저장 하기에 충분 이미 있으면 새 메모리 할당이 없습니다 수행 됩니다. 참고 해당 메모리 할당 연산자를 사용 하 여 결과 보유할 새 저장소 할당 종종 되므로 때마다 예외가 발생할 수 있습니다 `CSimpleStringT` 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 `CSimpleStringT::operator =`의 사용법을 보여줍니다.  
   
 ```cpp  
@@ -756,7 +756,7 @@ operator PCXSTR() const throw();
 ### <a name="remarks"></a>설명  
  문자가 복사 됩니다. 포인터에만 반환 됩니다. 이 연산자를 사용 하 여 주의 해야 합니다. 변경 하는 경우는 `CString` 개체 포인터를 무효화 하는 메모리를 재할당 하는 문자 포인터를 가져온 후 발생할 수 있습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 `CSimpleStringT::operator PCXSTR`의 사용법을 보여줍니다.  
   
 ```cpp  
@@ -814,7 +814,7 @@ void Preallocate( int nLength);
   
  `CSimpleStringT` 문자 버퍼에 대 한 공간을 할당할 수 없는 경우 STATUS_NO_MEMORY 예외를 생성 합니다. 기본적으로 메모리 할당은 WIN32 API 함수에 의해 수행 `HeapAlloc` 또는 `HeapReAlloc`합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 `CSimpleStringT::Preallocate`의 사용법을 보여줍니다.  
   
 ```cpp  
@@ -847,7 +847,7 @@ void ReleaseBuffer(int nNewLength = -1);
 ### <a name="remarks"></a>설명  
  다시 할당 하거나 문자열 개체의 버퍼를 확보 하려면이 메서드를 호출 합니다. 버퍼에서 문자열은 종료 null을 생략할 수를 알고 있는 경우는 *nNewLength* 인수입니다. 문자열에 null이 아닌 경우 종료를 사용 하 여 *nNewLength* 해당 길이를 지정 합니다. 반환 된 주소로 [GetBuffer](#getbuffer) 에 대 한 호출 후 유효 하지 `ReleaseBuffer` 또는 기타 `CSimpleStringT` 작업 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 `CSimpleStringT::ReleaseBuffer`의 사용법을 보여줍니다.  
   
 ```cpp  
@@ -902,7 +902,7 @@ void SetAt(int iChar, XCHAR ch);
 ### <a name="remarks"></a>설명  
  에 있는 문자를 덮어쓰려면이 메서드를 호출 *iChar*합니다. 이 메서드는 경우 문자열을 확대 하지 *iChar* 기존 문자열의 한계를 초과 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 `CSimpleStringT::SetAt`의 사용법을 보여줍니다.  
   
 ```cpp  
@@ -926,7 +926,7 @@ void SetManager(IAtlStringMgr* pStringMgr);
 ### <a name="remarks"></a>설명  
  새 메모리를 지정 하려면이 방법을 사용 하는 관리자를 호출 합니다 `CSimpleStringT` 개체입니다. 메모리 관리자 및 문자열 개체에 대 한 자세한 내용은 참조 하세요. [메모리 관리 및 CStringT](../memory-management-with-cstringt.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 `CSimpleStringT::SetManager`의 사용법을 보여줍니다.  
   
 ```cpp  
@@ -961,7 +961,7 @@ void SetString(PCXSTR pszSrc);
   
  두 매개 변수 버전 `SetString` 도 확인 여부를 *pszSrc* 에서 현재 버퍼의 위치를 가리키는 `CSimpleStringT`합니다. 이 특별 한 경우 `SetString` 문자열 데이터를 버퍼에 다시 복사 하는 대로 문자열 데이터를 덮어쓰지 않습니다 메모리 복사 함수를 사용 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 `CSimpleStringT::SetString`의 사용법을 보여줍니다.  
   
 ```cpp  
@@ -989,7 +989,7 @@ ATL_NOINLINE static int StringLength(PCXSTR psz) throw();
 ### <a name="remarks"></a>설명  
  가리키는 문자열의 문자 수를 검색 하려면이 메서드를 호출 *psz*합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 `CSimpleStringT::StringLength`의 사용법을 보여줍니다.  
   
 ```cpp  
@@ -1014,7 +1014,7 @@ void Truncate(int nNewLength);
 > [!NOTE]
 >  버퍼의 할당 된 길이는 영향을 주지 않습니다. 현재 버퍼를 늘리거나 줄일를 참조 하세요 [FreeExtra](#freeextra) 하 고 [Preallocate](#preallocate)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예에서는 `CSimpleStringT::Truncate`의 사용법을 보여줍니다.  
   
 ```cpp  
