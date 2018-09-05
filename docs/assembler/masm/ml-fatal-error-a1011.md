@@ -1,7 +1,7 @@
 ---
 title: ML 심각한 오류 A1011 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,31 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 843d676cba61e0da5f917a48408e56e79abb9efd
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 32949773b869d189516a381ca7df941760a1e4e4
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057210"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690810"
 ---
 # <a name="ml-fatal-error-a1011"></a>ML 심각한 오류 A1011
-**지시어는 제어 블록에 있어야 합니다.**  
-  
- 어셈블러 여기서 없어야 하는 높은 수준의 지시문을 찾을 수 있습니다. 지시문은 다음 중 하나를 찾을 수 있습니다.  
-  
--   [. 다른](../../assembler/masm/dot-else.md) 없이 [합니다. IF](../../assembler/masm/dot-if.md)  
-  
--   [. ENDIF](../../assembler/masm/dot-endif.md) 없이 [합니다. IF](../../assembler/masm/dot-if.md)  
-  
--   [. ENDW](../../assembler/masm/dot-endw.md) 없이 [합니다. WHILE](../../assembler/masm/dot-while.md)  
-  
--   [. UNTILCXZ](../../assembler/masm/dot-untilcxz.md) 없이 [합니다. 반복](../../assembler/masm/dot-repeat.md)  
-  
--   [. 계속](../../assembler/masm/dot-continue.md) 없이 [합니다. 반면](../../assembler/masm/dot-while.md) 또는 [합니다. 반복](../../assembler/masm/dot-repeat.md)  
-  
--   [. 중단](../../assembler/masm/dot-break.md) 없이 [합니다. 반면](../../assembler/masm/dot-while.md) 또는 [합니다. 반복](../../assembler/masm/dot-repeat.md)  
-  
--   [. 다른](../../assembler/masm/dot-else.md) 다음 `.ELSE`  
-  
-## <a name="see-also"></a>참고 항목  
- [ML 오류 메시지](../../assembler/masm/ml-error-messages.md)
+
+**지시문은 제어 블록에에 있어야 합니다.**
+
+어셈블러 찾을 상위 수준 지시문 여기서 하나를 사용할 수 없습니다. 다음 지시문 중 하나를 찾을 수 있습니다.
+
+- [. ELSE](../../assembler/masm/dot-else.md) 없이 [합니다. 경우에](../../assembler/masm/dot-if.md)
+
+- [. ENDIF](../../assembler/masm/dot-endif.md) 없이 [합니다. 경우에](../../assembler/masm/dot-if.md)
+
+- [. ENDW](../../assembler/masm/dot-endw.md) 없이 [합니다. WHILE](../../assembler/masm/dot-while.md)
+
+- [. UNTILCXZ](../../assembler/masm/dot-untilcxz.md) 없이 [합니다. 반복](../../assembler/masm/dot-repeat.md)
+
+- [. 계속 진행](../../assembler/masm/dot-continue.md) 없이 [합니다. 하는 동안](../../assembler/masm/dot-while.md) 또는 [합니다. 반복](../../assembler/masm/dot-repeat.md)
+
+- [. 중단](../../assembler/masm/dot-break.md) 없이 [합니다. 하는 동안](../../assembler/masm/dot-while.md) 또는 [합니다. 반복](../../assembler/masm/dot-repeat.md)
+
+- [. 다른](../../assembler/masm/dot-else.md) 다음 `.ELSE`
+
+## <a name="see-also"></a>참고자료
+
+[ML 오류 메시지](../../assembler/masm/ml-error-messages.md)<br/>

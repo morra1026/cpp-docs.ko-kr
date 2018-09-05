@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c3626fbdba9fcf34364237e8970e5b941ecce9d
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: cd480e7b1ffb0923e33361c545bca68202ec3f4f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201528"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687718"
 ---
 # <a name="ccomboboxex-class"></a>CComboBoxEx 클래스
 이미지 목록에 대한 지원을 제공하여 콤보 상자 컨트롤을 확장합니다.  
@@ -200,7 +200,7 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>매개 변수  
  *dwExStyle*  
- 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK의 합니다.  
+ 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK의 합니다.  
   
  *dwStyle*  
  콤보 상자 컨트롤의 스타일입니다. 참조 [만들기](#create) 스타일의 목록은 합니다.  
@@ -381,7 +381,7 @@ CImageList* SetImageList(CImageList* pImageList);
  에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 이전에 사용 되는 이미지가 포함 된 개체는 `CComboBoxEx` 제어 합니다. 이미지 목록이 없는 이전에 설정 된 경우 NULL입니다.  
   
 ### <a name="remarks"></a>설명  
- 메시지의 기능을 구현 하는이 멤버 함수 [CBEM_SETIMAGELIST](/windows/desktop/Controls/cbem-setimagelist)Windows SDK에 설명 된 대로 합니다. 기본 편집 컨트롤의 높이 변경 하는 경우 Win32 함수 호출 [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) 호출한 후 컨트롤 크기를 조정 하려면 `SetImageList`, 또는 제대로 표시 되지 것입니다.  
+ 메시지의 기능을 구현 하는이 멤버 함수 [CBEM_SETIMAGELIST](/windows/desktop/Controls/cbem-setimagelist)Windows SDK에 설명 된 대로 합니다. 기본 편집 컨트롤의 높이 변경 하는 경우 Win32 함수 호출 [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) 호출한 후 컨트롤 크기를 조정 하려면 `SetImageList`, 또는 제대로 표시 되지 것입니다.  
   
  `CImageList` 반환 값에서 가리키는 개체는 임시 개체 이며 다음 유휴 처리 시간 동안 제거 됩니다.  
   

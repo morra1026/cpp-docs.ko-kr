@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2542be130c75166f8716c76df547c72fad7c2250
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 220a02fca7a8de67d1f35743fa9f56e8499c88e0
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43196902"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690048"
 ---
 # <a name="ithreadproxy-structure"></a>IThreadProxy 구조체
 실행 스레드에 대한 추상화입니다. 직접 만든 스케줄러의 `SchedulerType` 정책 키에 따라 리소스 관리자는 일반 Win32 스레드 또는 UMS(사용자 모드 예약 가능) 스레드 중 하나에서 지원되는 스레드 프록시를 부여합니다. UMS 스레드는 Windows 7 이상 버전의 64비트 운영 체제에서 지원됩니다.  
@@ -83,7 +83,7 @@ virtual void SwitchOut(SwitchingProxyState switchState = Blocking) = 0;
 ### <a name="remarks"></a>설명  
  어떠한 이유로든 실행 중인 가상 프로세서 루트에서 컨텍스트 연결을 끊어야 할 경우 `SwitchOut`을 사용합니다. `switchState` 매개변수에 전달하는 값에 따라 그리고 가상 프로세서 루트에서 실행하는지 여부에 따라 이 호출은 해당 컨텍스트와 연결된 스레드 프록시를 즉시 반환하거나 차단합니다. 매개 변수를 `SwitchOut`로 설정하여 `Idle`을 호출하면 오류가 발생합니다. 이렇게 하면 프로그램 [invalid_argument](../../../standard-library/invalid-argument-class.md) 예외입니다.  
   
- `SwitchOut`은 리소스 관리자의 지시에 따라 또는 일시적으로 초과 구독된 가상 프로세서 루트를 요청했는데 그러한 요청이 처리되어 스케줄러의 가상 프로세서 루트 수를 줄이고자 할 때 유용합니다. 메서드를 호출 해야 하는 예제의 [IVirtualProcessorRoot::Remove](https://msdn.microsoft.com/ad699b4a-1972-4390-97ee-9c083ba7d9e4) 가상 프로세서 루트를 호출 하기 전에 `SwitchOut` 매개 변수를 사용 하 여 `switchState` 로 `Blocking`합니다. 이렇게 하면 스레드 프록시가 차단되고, 스케줄러의 다른 가상 프로세서 루트에서 실행할 수 있을 때 실행이 다시 시작됩니다. 함수를 호출 하 여 차단 스레드 프록시를 다시 시작할 수 있습니다 `SwitchTo` 이 스레드 프록시가 실행 컨텍스트를 전환할 수 있습니다. 또한 가상 프로세서 루트를 활성화 하려면 해당 연결 된 컨텍스트를 사용 하 여 스레드 프록시를 다시 시작할 수 있습니다. 이 작업을 수행 하는 방법에 대 한 자세한 내용은 참조 하세요. [ivirtualprocessorroot:: Activate](ivirtualprocessorroot-structure.md#activate)합니다.  
+ `SwitchOut`은 리소스 관리자의 지시에 따라 또는 일시적으로 초과 구독된 가상 프로세서 루트를 요청했는데 그러한 요청이 처리되어 스케줄러의 가상 프로세서 루트 수를 줄이고자 할 때 유용합니다. 메서드를 호출 해야 하는 예제의 [IVirtualProcessorRoot::Remove](iexecutionresource-structure.md#remove) 가상 프로세서 루트를 호출 하기 전에 `SwitchOut` 매개 변수를 사용 하 여 `switchState` 로 `Blocking`합니다. 이렇게 하면 스레드 프록시가 차단되고, 스케줄러의 다른 가상 프로세서 루트에서 실행할 수 있을 때 실행이 다시 시작됩니다. 함수를 호출 하 여 차단 스레드 프록시를 다시 시작할 수 있습니다 `SwitchTo` 이 스레드 프록시가 실행 컨텍스트를 전환할 수 있습니다. 또한 가상 프로세서 루트를 활성화 하려면 해당 연결 된 컨텍스트를 사용 하 여 스레드 프록시를 다시 시작할 수 있습니다. 이 작업을 수행 하는 방법에 대 한 자세한 내용은 참조 하세요. [ivirtualprocessorroot:: Activate](ivirtualprocessorroot-structure.md#activate)합니다.  
   
  또한 `SwitchOut`은 스레드 프록시를 차단하거나, 스레드 프록시가 실행 중인 가상 프로세서 루트와 스레드 프록시를 디스패칭하는 스케줄러에서 일시적으로 연결을 끊는 동안 나중에 활성화될 수 있도록 가상 프로세서를 다시 초기화하려 할 때도 사용할 수 있습니다. 스레드 프록시를 차단하려는 경우 `SwitchOut` 매개 변수를 `switchState`으로 설정하여 `Blocking`을 사용합니다. 위에서 언급했듯이 `SwitchTo` 또는 `IVirtualProcessorRoot::Activate`을 사용하여 나중에 다시 시작할 수 있습니다. 이 스레드 프록시가 실행 중인 가상 프로세서 루트 및 가상 프로세서가 연결된 스케줄러에서 일시적으로 스레드 프록시의 연결을 끊으려면 매개 변수를 `SwitchOut`으로 설정하여 `Nesting`을 사용합니다. 가상 프로세서 루트에서 실행 중일 때 `SwitchOut` 매개 변수를 `switchState`으로 설정하여 `Nesting`을 호출하면 루트가 다시 초기화되고 현재 스레드 프록시가 다른 루트를 필요로 하지 않고 계속 실행됩니다. 스레드 프록시 호출 될 때까지 스케줄러에 남아 있는 것으로 간주 됩니다 합니다 [ithreadproxy::](#switchout) 메서드를 `Blocking` 나중 시간에서입니다. 매개 변수를 `SwitchOut`으로 설정하여 `Blocking`을 두 번째로 호출하는 목적은, 컨텍스트를 차단된 상태로 돌려서 `SwitchTo` 또는 컨텍스트 연결을 끊은 스케줄러의 `IVirtualProcessorRoot::Activate`에 의해 다시 시작될 수 있도록 하는 것입니다. 컨텍스트는 가상 프로세서 루트에서 실행되고 있지 않았기 때문에 다시 초기화가 수행되지 않습니다.  
   

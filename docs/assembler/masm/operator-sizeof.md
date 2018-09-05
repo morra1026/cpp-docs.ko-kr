@@ -1,7 +1,7 @@
 ---
 title: 연산자 SIZEOF | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -17,22 +17,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e39bc76f8430cbecee35f855b7c954a48b769389
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: e13f04a6d41a2f5bc982dcb36a0eb4cdc1ca5f95
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051211"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689734"
 ---
 # <a name="operator-sizeof"></a>연산자 SIZEOF
-바이트 수를 반환 *변수* 또는 `type`합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-SIZEOF {variable | type}  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [연산자 참조](../../assembler/masm/operators-reference.md)
+
+바이트 수를 반환 *변수에* 또는 `type`합니다.
+
+## <a name="syntax"></a>구문
+
+> SIZEOF {변수 | 형식}
+
+## <a name="see-also"></a>참고자료
+
+[연산자 참조](../../assembler/masm/operators-reference.md)<br/>

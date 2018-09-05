@@ -1,7 +1,7 @@
 ---
 title: INCLUDELIB (MASM) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,25 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f69b241723c7c2c7bb0eb5c87835f3c3463ec664
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: aabceb1e30013052184ca4654df1fa5b19fd1412
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32050999"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687604"
 ---
 # <a name="includelib-masm"></a>INCLUDELIB (MASM)
-현재 모듈와 연결 되어야 하는 링커 알립니다 *libraryname*합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-INCLUDELIB libraryname  
-```  
-  
-## <a name="remarks"></a>설명  
- *libraryname* 세미콜론, 큰 백슬래시를 포함 하는 경우 꺾쇠 괄호로 묶어야 합니다-기호를 덜 보다-기호나 작은따옴표, 큰따옴표 보다 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+현재 모듈을 사용 하 여 연결 되어야 하는 링커 알립니다 *libraryname*합니다.
+
+## <a name="syntax"></a>구문
+
+> INCLUDELIB libraryname
+
+## <a name="remarks"></a>설명
+
+*libraryname* 세미콜론으로 큰 백슬래시를 포함 하는 경우 꺾쇠 괄호로 묶어야 합니다-기호 적은 보다-보다 기호, 작은따옴표, 큰따옴표를 표시 합니다.
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

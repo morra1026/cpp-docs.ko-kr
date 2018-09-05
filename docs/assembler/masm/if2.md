@@ -1,7 +1,7 @@
 ---
 title: IF2 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,27 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89108a115a01539f3a9ecd24d928c763a9ef0b3e
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 5550aea60af15f338639a70eec6f3ca36444fbbb
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051722"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692523"
 ---
 # <a name="if2"></a>IF2
-**IF** 블록 인 경우 모든 어셈블리 패스에서 계산 됩니다 **옵션: SETIF2** 은 **TRUE**합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-IF2   
-expression  
-  
-```  
-  
-## <a name="remarks"></a>설명  
- 참조 [IF](../../assembler/masm/if-masm.md) 전체 구문에 대 한 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+**IF** 블록 인 경우 모든 어셈블리 패스에서 계산 됩니다 **옵션: SETIF2** 됩니다 **TRUE**합니다.
+
+## <a name="syntax"></a>구문
+
+> IF2 *식*
+
+## <a name="remarks"></a>설명
+
+참조 [경우](../../assembler/masm/if-masm.md) 전체 구문에 대 한 합니다.
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

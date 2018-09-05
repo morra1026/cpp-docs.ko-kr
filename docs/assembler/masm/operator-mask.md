@@ -1,7 +1,7 @@
 ---
 title: 연산자 MASK | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,22 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6e7fe7b71fbb28be7cd99dc6fc7a6d437a4253c
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 22d1133257db825ac36beb8b83d5f170664472c2
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057928"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689694"
 ---
 # <a name="operator-mask"></a>연산자 MASK
-비트 마스크를 반환의 비트 *recordfieldname* 또는 *레코드* 설정 되 고 다른 모든 비트의 선택을 취소 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-MASK {recordfieldname | record}  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [연산자 참조](../../assembler/masm/operators-reference.md)
+
+비트 마스크를 반환 합니다의 비트 *recordfieldname* 또는 *레코드* 설정이 고 다른 비트가 모두이 지워집니다.
+
+## <a name="syntax"></a>구문
+
+> 마스크 {recordfieldname | 레코드}
+
+## <a name="see-also"></a>참고자료
+
+[연산자 참조](../../assembler/masm/operators-reference.md)<br/>

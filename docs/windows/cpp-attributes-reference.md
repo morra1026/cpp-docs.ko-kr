@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 782e0789268f55e254535434e39c3aeb9b0532cb
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: afa5d7e3297cd77d1c5d8362d005bd2a48aee4d5
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201930"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690199"
 ---
 # <a name="c-attributes-reference"></a>C++ 특성 참조
 
@@ -47,9 +47,3 @@ Microsoft은.NET Framework 공용 언어 런타임 개발 및 COM 프로그래�
 
 [특성 사용된 프로그래밍](../windows/attributed-programming-concepts.md)  
 특성에 대 한 개념적인 개요를 제공합니다.
-
-[참조](https://msdn.microsoft.com/1ba03b5c-8229-4f63-b08c-6c12141d6ab1)  
-C 및 C++ 언어 참조, Visual C++에서 제공하는 라이브러리, Visual C++ 확장성 개체 모델 및 MASM(Microsoft Macro Assembler)을 설명하는 항목에 대한 링크를 제공합니다.
-
-[Visual C++ 샘플](../visual-cpp-samples.md)  
-Visual C++ 및 Visual C++가 지원하는 라이브러리와 기술의 기능을 보여 주는 샘플 코드에 대한 링크를 제공합니다.

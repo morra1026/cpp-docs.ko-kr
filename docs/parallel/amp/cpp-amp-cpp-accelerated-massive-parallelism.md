@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a990acd8f27be476ce35d682a19912dcc85bbeed
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 340a21a3bbcb1853d66de01bddf9425fed0c8183
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42539866"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689846"
 ---
 # <a name="c-amp-c-accelerated-massive-parallelism"></a>C++ AMP(C++ Accelerated Massive Parallelism)
 C + + AMP (c + + Accelerated Massive Parallelism) 일반적으로 개별 그래픽 카드의 그래픽 처리 장치 (GPU)로 존재 하는 데이터 병렬 하드웨어를 활용 하 여 c + + 코드의 실행을 가속화 합니다. C + + AMP 프로그래밍 모델에서는 다차원 배열, 인덱싱, 메모리 전송 및 바둑판식 배열을 지원 합니다. 또한 수학 함수 라이브러리가 포함 됩니다. C + + AMP 언어 확장을 사용 하 여에 CPU에서 GPU로 데이터를 이동 하는 방법을 제어할 수 있으며 다시 수 있습니다.  
@@ -48,4 +48,4 @@ C + + AMP (c + + Accelerated Massive Parallelism) 일반적으로 개별 그래�
  
 [네이티브 코드 블로그의 병렬 프로그래밍](http://go.microsoft.com/fwlink/p/?linkid=238472)  
 [C + + AMP 샘플 프로젝트 다운로드](http://go.microsoft.com/fwlink/p/?linkid=248508)  
-[동시성 시각화 도우미를 사용 하 여 c + + AMP 코드 분석](http://go.microsoft.com/fwlink/p/?linkid=253987&clcid=0x409)
+[동시성 시각화 도우미를 사용 하 여 c + + AMP 코드 분석](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)

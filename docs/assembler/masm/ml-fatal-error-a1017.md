@@ -1,7 +1,7 @@
 ---
 title: ML 심각한 오류 A1017 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,21 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5fcb2d921a40b35c6022b2aca1e22adc2d8c45e
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: fb98eab68da417526a75beaa57870ce906c85a8d
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054685"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688561"
 ---
 # <a name="ml-fatal-error-a1017"></a>ML 심각한 오류 A1017
-**소스 파일 이름이 없습니다.**  
-  
- ML 조합 또는을 링커에 전달는 파일을 찾을 수 없습니다.  
-  
- 이 오류는 작업을 수행할 파일 이름을 지정 하지 않고 ML 명령줄 옵션을 제공할 때 생성 됩니다. .Asm 확장 하지 않는 파일을 구성 하려면 사용 된 **/Ta** 명령줄 옵션입니다.  
-  
- ML 환경 변수는 명령줄 옵션을 포함 하는 경우 매개 변수 없이 ML를 호출 하 여이 오류를 생성할 수도 있습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [ML 오류 메시지](../../assembler/masm/ml-error-messages.md)
+
+**소스 파일 이름이 없습니다.**
+
+ML 조합 하거나 링커에 전달 파일을 찾을 수 없습니다.
+
+동작을 수행할 파일 이름을 지정 하지 않고 ML 명령줄 옵션을 제공 하는 경우이 오류가 생성 됩니다. .Asm 확장 되지 않은 파일을 조합, 사용 된 **/Ta** 명령줄 옵션입니다.
+
+ML 환경 변수를 명령줄 옵션을 포함 하는 경우 ML 매개 변수 없이 호출 하 여이 오류를 생성할 수도 있습니다.
+
+## <a name="see-also"></a>참고자료
+
+[ML 오류 메시지](../../assembler/masm/ml-error-messages.md)<br/>

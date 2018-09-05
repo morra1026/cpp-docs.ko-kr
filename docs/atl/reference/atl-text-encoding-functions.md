@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 061bfc2f083061d352fa7f93bb572456a5a23451
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a63caaa23fa59356a5904740cf03b8c36a909930
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218374"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688574"
 ---
 # <a name="atl-text-encoding-functions"></a>ATL 텍스트 인코딩 함수
 이러한 함수는 텍스트 인코딩 및 디코딩을 지원 합니다.
@@ -451,7 +451,7 @@ inline BOOL QPDecode(
  길이 (바이트) 포함 하는 변수에 대 한 포인터 *szDest*합니다. 함수가 성공 하면 변수는 버퍼에 쓴 바이트 수를 받습니다. 함수가 실패할 경우 변수 버퍼의 바이트 길이 받게 됩니다.  
   
  [in] *dwFlags*  
- 변환을 수행 하는 하는 방법을 설명 하는 플래그입니다. 참조 [ATLSMTP_QPENCODE 플래그](https://msdn.microsoft.com/library/6b15a3ab-8e57-49e4-8104-09b26ebb96c4)합니다.  
+ 변환을 수행 하는 하는 방법을 설명 하는 ATLSMTP_QPENCODE 플래그입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 TRUE를 반환 합니다. 실패 한 경우 FALSE입니다.  

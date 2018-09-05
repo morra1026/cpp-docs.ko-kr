@@ -1,7 +1,7 @@
 ---
-title: . IF | Microsoft Docs
+title: . 경우 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,31 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ab0e2fc510b4be8c5a9a8c0c3d0fb1c4347f0b9
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: f7bd5ba5821b4dcfb2d088e31816f50540445018
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32053118"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691546"
 ---
 # <a name="if"></a>.IF
-테스트 하는 코드를 생성 `condition1` (예를 들어 > 7 AX,)를 실행 하 고는 *문을* 해당 조건이 true 인 경우.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-   .IF condition1   
-statements  
-[[.ELSEIF condition2   
-   statements]]  
-[[.ELSE  
-   statements]]  
-.ENDIF  
-```  
-  
-## <a name="remarks"></a>설명  
- 경우는 [합니다. 다른](../../assembler/masm/dot-else.md) 원래 상태로 되었으면 false 다음과, 해당 문이 실행 됩니다. 참고 조건이 런타임에 평가 됩니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+테스트는 코드를 생성 `condition1` (예를 들어 AX > 7) 하 고 실행 합니다 *문을* 해당 조건이 true 인 경우.
+
+## <a name="syntax"></a>구문
+
+> . IF 조건 1<br/>
+> 문<br/>
+> [[. ELSEIF condition2<br/>
+> 문]]<br/>
+> [[. 다른<br/>
+> 문]]<br/>
+> .ENDIF
+
+## <a name="remarks"></a>설명
+
+경우는 [합니다. 다른](../../assembler/masm/dot-else.md) 원래 조건이 false 되었으면 같이 해당 문이 실행 됩니다. 조건을 런타임 시 계산 되는 참고 합니다.
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

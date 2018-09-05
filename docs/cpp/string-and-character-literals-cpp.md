@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0baf6eb87cd73293bc02b670e915bfd4a10cbfd
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a05eddd4f0ed75db4e122b1544b0347ad922eba3
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219154"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688762"
 ---
 # <a name="string-and-character-literals--c"></a>문자열 및 문자 리터럴 (c + +)
 C++를 사용하면 다양한 문자열 및 문자 형식이 지원되며 이러한 각 형식의 리터럴 값을 표현할 수 있습니다. 소스 코드에서는 문자 집합을 사용하여 문자 및 문자열 리터럴의 내용을 표현합니다. 유니버설 문자 이름 및 이스케이프 문자를 사용하면 기본 소스 문자 집합만 사용하여 모든 문자열을 표현할 수 있습니다. 원시 문자열 리터럴을 사용하면 이스케이프 문자를 사용하지 않아도 되며 원시 문자열 리터럴을 사용하여 모든 유형의 문자열 리터럴을 표현할 수 있습니다. 또한 추가 생성이나 변환 단계를 수행하지 않고도 std:: string 리터럴을 만들 수 있습니다.  
@@ -248,7 +248,7 @@ auto s4 = U"hello"; // const char32_t*
 ```  
   
 ### <a name="raw-string-literals-c11"></a>원시 문자열 리터럴(C++11)  
- 원시 문자열 리터럴은 null로 끝나는 배열-모든 문자 형식-큰따옴표 ("), 백슬래시를 포함 하 여 모든 그래픽 문자를 포함 하는 (\\), 또는 줄 바꿈 문자입니다. 원시 문자열 리터럴은 문자 클래스를 사용하는 정규식과 HTML 문자열 및 XML 문자열에 종종 사용됩니다. 예를 들어 다음 문서를 참조 합니다. [c++11에서 Bjarne Stroustrup의 FAQ](http://go.microsoft.com/fwlink/p/?linkid=401172)합니다.  
+ 원시 문자열 리터럴은 null로 끝나는 배열-모든 문자 형식-큰따옴표 ("), 백슬래시를 포함 하 여 모든 그래픽 문자를 포함 하는 (\\), 또는 줄 바꿈 문자입니다. 원시 문자열 리터럴은 문자 클래스를 사용하는 정규식과 HTML 문자열 및 XML 문자열에 종종 사용됩니다. 예를 들어 다음 문서를 참조 합니다. [c++11에서 Bjarne Stroustrup의 FAQ](http://www.stroustrup.com/C++11FAQ.html)합니다.  
   
 ```cpp  
 // represents the string: An unescaped \ character  

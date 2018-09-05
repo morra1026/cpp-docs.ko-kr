@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f6735cddf401ba09d3743b178357fb740b873c21
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 76167793f7252540dbe9feedbb2d83678ebdcacb
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336509"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688388"
 ---
 # <a name="cfieldexchange-class"></a>CFieldExchange 클래스
 데이터베이스 클래스에서 사용되는 RFX(레코드 필드 교환) 및 대량 RFX(레코드 필드 교환) 루틴을 지원합니다.  
@@ -117,7 +117,7 @@ void SetFieldType(UINT nFieldType);
 |SetFieldType 매개 변수 값|형식의 매개 변수 데이터 멤버|  
 |----------------------------------|-----------------------------------|  
 |`CFieldExchange::inputParam`|입력된 매개 변수입니다. 레코드 집합의 쿼리 또는 저장된 프로시저에 전달 되는 값입니다.|  
-|' ieldExchange::param * *`ame as **CFieldExchange::inputParam`합니다.|  
+|`CFieldExchange::param` | 동일 `CFieldExchange::inputParam`합니다.|  
 |`CFieldExchange::outputParam`|출력 매개 변수입니다. 레코드 집합의 저장된 프로시저의 반환 값입니다.|  
 |`CFieldExchange::inoutParam`|입/출력 매개 변수입니다. 에 전달 되 고 레코드 집합의 저장된 프로시저에서 반환 되는 값입니다.|  
   
@@ -125,7 +125,7 @@ void SetFieldType(UINT nFieldType);
   
  출력 및 입/출력 매개 변수를 처리 하는 방법에 대 한 자세한 내용은 참조는 `CRecordset` 멤버 함수 [FlushResultSet](../../mfc/reference/crecordset-class.md#flushresultset)합니다. RFX 및 대량 RFX 함수에 대 한 자세한 내용은 항목을 참조 하세요 [레코드 필드 교환 함수](../../mfc/reference/record-field-exchange-functions.md)합니다. 대량 행 페치에 대 한 관련된 정보에 대 한 문서를 참조 [레코드 집합: 레코드 페치 대량 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  이 예제에 대 한 호출을 함께 제공 되는 RFX 함수에 대 한 여러 호출을 보여 줍니다 `SetFieldType`합니다. 유의 `SetFieldType` 를 통해 호출 되는 `pFX` 에 대 한 포인터를 `CFieldExchange` 개체입니다.  
   
  [!code-cpp[NVC_MFCDatabase#33](../../mfc/codesnippet/cpp/cfieldexchange-class_1.cpp)]  

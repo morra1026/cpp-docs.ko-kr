@@ -20,16 +20,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03815ac535033d9b0fdf0146c0200be16e5ae91a
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: e24a86ead18cde836fd52df4e0c279f69b4c67a1
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42573280"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687937"
 ---
 # <a name="loadlibrary-and-afxloadlibrary"></a>LoadLibrary 및 AfxLoadLibrary
 
-호출 처리 [LoadLibrary](https://go.microsoft.com/fwlink/p/?LinkID=259187) (또는 [AfxLoadLibrary](../mfc/reference/application-information-and-management.md#afxloadlibrary)) DLL에 명시적으로 연결 합니다. 함수가 성공 하는 경우 호출 프로세스의 주소 공간에 지정된 된 DLL을 매핑합니다 및 명시적 링크의 다른 함수와 함께 사용할 수 있는 DLL에 대 한 핸들을 반환 합니다.-예를 들어 `GetProcAddress` 고 `FreeLibrary`합니다.
+호출 처리 [LoadLibraryExA](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa) 하거나 [LoadLibraryExW](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexw)(또는 [AfxLoadLibrary](../mfc/reference/application-information-and-management.md#afxloadlibrary)) DLL에 명시적으로 연결 합니다. 함수가 성공 하는 경우 호출 프로세스의 주소 공간에 지정된 된 DLL을 매핑합니다 및 명시적 링크의 다른 함수와 함께 사용할 수 있는 DLL에 대 한 핸들을 반환 합니다.-예를 들어 `GetProcAddress` 고 `FreeLibrary`합니다.
 
 `LoadLibrary` 암시적 링크에 사용 되는 동일한 검색 시퀀스를 사용 하 여 DLL을 찾으려고 시도 합니다. 시스템 DLL을 찾을 수 없거나 진입점 함수가 FALSE를 반환 하는 경우 `LoadLibrary` NULL을 반환 합니다. 경우에 대 한 호출 `LoadLibrary` 호출 하는 프로세스의 주소 공간에 이미 매핑된 DLL 모듈 지정 함수 모듈의 참조 횟수 증가 고 DLL의 핸들을 반환 합니다.
 
@@ -59,5 +59,3 @@ Windows에서 DLL을 로드할 수 없는 경우 프로세스 오류 로부터 �
 ## <a name="see-also"></a>참고자료
 
 - [Visual C++의 DLL](../build/dlls-in-visual-cpp.md)
-- [LoadLibrary](https://go.microsoft.com/fwlink/p/?LinkID=259187)
-- [AfxLoadLibrary](../mfc/reference/application-information-and-management.md#afxloadlibrary)

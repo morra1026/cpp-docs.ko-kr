@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8385320b51efedd214424385babc5f03d5559873
-ms.sourcegitcommit: 220fd4fda829f810e15fc1a1d98ab43c46201b47
+ms.openlocfilehash: 23b830ca8a7fb7f2e799cae17209a9fa089d1881
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43352718"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690877"
 ---
 # <a name="cmfcbutton-class"></a>CMFCButton 클래스
 `CMFCButton` 클래스 기능을 추가 합니다 [CButton](../../mfc/reference/cbutton-class.md) 클래스 등 단추 텍스트 정렬, 단추 텍스트 및 이미지 결합, 커서 선택, 도구 설명 지정 합니다.  
@@ -137,7 +137,7 @@ class CMFCButton : public CButton
 |[CMFCButton::IsRadioButton](#isradiobutton)|단추는 라디오 단추 인지 여부를 나타냅니다.|  
 |[CMFCButton::IsWindowsThemingEnabled](#iswindowsthemingenabled)|단추 테두리 스타일을 현재 Windows 테마에 해당 하는지 여부를 나타냅니다.|  
 |`CMFCButton::OnDrawParentBackground`|지정된 된 영역에 단추의 부모 배경을 그립니다. (재정의 [afx_global_data:: drawparentbackground](../../mfc/reference/afx-global-data-structure.md)|  
-|`CMFCButton::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|  
+|`CMFCButton::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수입니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|  
 |[CMFCButton::SetAutorepeatMode](#setautorepeatmode)|단추 자동 반복 모드를 설정합니다.|  
 |[CMFCButton::SetCheckedImage](#setcheckedimage)|이미지 선택된 단추를 설정 합니다.|  
 |[CMFCButton::SetFaceColor](#setfacecolor)|단추 텍스트의 배경색을 설정합니다.|  
@@ -163,7 +163,7 @@ class CMFCButton : public CButton
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CMFCButton::m_nAlignStyle](#m_nalignstyle)|단추 텍스트의 맞춤을 지정 합니다.|  
 |[CMFCButton::m_bDontUseWinXPTheme](#m_bDontUseWinXPTheme)|Windows XP 테마를 사용할지 여부를 지정 합니다.|

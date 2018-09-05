@@ -1,7 +1,7 @@
 ---
 title: ML 심각 하지 않은 오류 A2083 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,17 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c3474c806932f4e943a0d2569c4095b15e39a38c
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: adeb6f43aba36ae7e6ccaf4cc31c6407a3c41622
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32053902"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691861"
 ---
 # <a name="ml-nonfatal-error-a2083"></a>ML 심각하지 않은 오류 A2083
-**잘못 된 크기 값**  
-  
- 레지스터 크기 조정 되지 않은 1, 2, 4 또는 8 지정 되었습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [ML 오류 메시지](../../assembler/masm/ml-error-messages.md)
+
+**잘못 된 크기 조정 값**
+
+등록 확장 되지 않은 1, 2, 4 또는 8 지정 되었습니다.
+
+## <a name="see-also"></a>참고자료
+
+[ML 오류 메시지](../../assembler/masm/ml-error-messages.md)<br/>

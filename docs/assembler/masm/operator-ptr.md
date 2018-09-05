@@ -1,7 +1,7 @@
 ---
 title: 연산자 PTR | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,23 +18,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cedfe542228edbe4367f98b169b4562a2ca2cc81
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 07fcb86eb6b1a9a084f985cb5192491a7c487703
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32055380"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692792"
 ---
 # <a name="operator-ptr"></a>연산자 PTR
-첫 번째 연산자 강제로 *식* 지정 된 것으로 간주 `type`합니다. 에 대 한 포인터를 지정 하는 두 번째 연산자 `type`합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-      type PTR expression  
-[[distance]] PTR type  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [연산자 참조](../../assembler/masm/operators-reference.md)
+
+첫 번째 연산자 힘 합니다 *식을* 지정 된 것으로 간주 *형식*합니다. 에 대 한 포인터를 지정 하는 두 번째 연산자 *형식*합니다.
+
+## <a name="syntax"></a>구문
+
+> *형식* PTR *식*
+
+> [[*거리*]] PTR *형식*
+
+## <a name="see-also"></a>참고자료
+
+[연산자 참조](../../assembler/masm/operators-reference.md)<br/>

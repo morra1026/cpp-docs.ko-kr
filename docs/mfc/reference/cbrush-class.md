@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9a4827900f30dba168f9f5b1b6a93c2aa7e331b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e835da146cb609abc873e7e53eb617b8635af0e5
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215737"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689109"
 ---
 # <a name="cbrush-class"></a>CBrush 클래스
 Windows GDI(그래픽 장치 인터페이스) 브러시를 캡슐화합니다.  
@@ -313,7 +313,7 @@ BOOL CreateSysColorBrush(int nIndex);
   
 ### <a name="parameters"></a>매개 변수  
  *nIndex*  
- 색 인덱스를 지정합니다. 이 값은 21 창 요소 중 하나를 그리는 데 사용 된 색에 해당 합니다. 참조 [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371) 값의 목록을 Windows SDK에 있습니다.  
+ 색 인덱스를 지정합니다. 이 값은 21 창 요소 중 하나를 그리는 데 사용 된 색에 해당 합니다. 참조 [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor) 값의 목록을 Windows SDK에 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  

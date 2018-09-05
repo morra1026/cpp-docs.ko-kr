@@ -1,7 +1,7 @@
 ---
 title: . LISTMACROALL | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,26 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 027e95431a1e81ae05ef8ac4b949059eb8256db0
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 11aee7bacca77ac0838956c18acc8a8a0598ed02
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051890"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690988"
 ---
 # <a name="listmacroall"></a>.LISTMACROALL
-매크로의 모든 문 나열을 시작 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-.LISTMACROALL  
-  
-```  
-  
-## <a name="remarks"></a>설명  
- 와 동일 [합니다. LALL](../../assembler/masm/dot-lall.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+매크로의 모든 문이의 나열을 시작 합니다.
+
+## <a name="syntax"></a>구문
+
+> .LISTMACROALL
+
+## <a name="remarks"></a>설명
+
+동일 [합니다. LALL](../../assembler/masm/dot-lall.md)합니다.
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

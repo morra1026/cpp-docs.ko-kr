@@ -15,18 +15,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 495f5b415aac2a59eeae45720944a03251b0faa5
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: db5fac0bc8900d15968639e8ed3909417353d596
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43210699"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690749"
 ---
 # <a name="walkthrough-creating-a-ribbon-application-by-using-mfc"></a>연습: MFC를 사용하여 리본 응용 프로그램 만들기
 이 연습에서는 사용 하는 **MFC 응용 프로그램 마법사** 기본적으로 리본 메뉴가 있는 응용 프로그램을 만들려면. 추가 하 여 리본 메뉴를 확장 한 다음 수를 **사용자 지정** 된 리본 범주를 **즐겨찾기** 리본 패널 및 자주 사용 되는 일부 패널에 명령을 추가 합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
- 이 연습에서는 Visual Studio를 사용 하 여 설정한 가정 **일반 개발 설정**합니다. 다른 설정을 사용할 경우, 다음 지침에서 참조되는 UI(사용자 인터페이스) 요소 중 일부가 표시되지 않을 수도 있습니다. 설정을 변경 하는 방법에 대 한 자세한 내용은 [방법: 사용자 설정 재설정](https://msdn.microsoft.com/c95c51be-e609-4769-abba-65e6beedec76)합니다.  
+ 이 연습에서는 Visual Studio를 사용 하 여 설정한 가정 **일반 개발 설정**합니다. 다른 설정을 사용할 경우, 다음 지침에서 참조되는 UI(사용자 인터페이스) 요소 중 일부가 표시되지 않을 수도 있습니다.  
   
 ### <a name="to-create-an-mfc-application-that-has-a-ribbon"></a>리본 메뉴를 포함하고 있는 MFC 응용 프로그램을 만들려면  
   

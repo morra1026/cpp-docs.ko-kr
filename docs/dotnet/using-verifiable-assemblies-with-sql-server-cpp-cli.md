@@ -15,15 +15,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: dfe64e627fd3ca37ab1e1d2d820cafaf3a6a4258
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 65a3c4da1664e34e40e0961655c130f320efb17b
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199967"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690705"
 ---
 # <a name="using-verifiable-assemblies-with-sql-server-ccli"></a>SQL Server에 안정형 어셈블리 사용(C++/CLI)
-동적 연결 라이브러리 (Dll)로 패키지 된 확장된 저장된 프로시저를 Visual c + +를 사용 하 여 개발 하는 함수를 통해 SQL Server 기능을 확장 하는 방법을 제공 합니다. 확장된 저장된 프로시저 Dll 내의 함수로 구현 됩니다. 함수 외에 확장된 저장된 프로시저를 정의할 수도 [사용자 정의 형식](../cpp/classes-and-structs-cpp.md) 하 고 [집계 함수](https://msdn.microsoft.com/de255454-f45e-4281-81f9-bc61893ac5da) (예: SUM 또는 AVG).  
+동적 연결 라이브러리 (Dll)로 패키지 된 확장된 저장된 프로시저를 Visual c + +를 사용 하 여 개발 하는 함수를 통해 SQL Server 기능을 확장 하는 방법을 제공 합니다. 확장된 저장된 프로시저 Dll 내의 함수로 구현 됩니다. 함수 외에 확장된 저장된 프로시저를 정의할 수도 [사용자 정의 형식](../cpp/classes-and-structs-cpp.md) 와 집계 함수 (예: SUM 또는 AVG).  
   
  클라이언트는 확장된 저장된 프로시저를 실행 하는 경우 DLL에 대 한 SQL Server 검색 확장된 저장된 프로시저를 사용 하 여 연결 하 고 DLL을 로드 합니다. 요청 된 확장된 저장된 프로시저를 호출 하 고 지정 된 보안 컨텍스트에서 실행 하는 SQL Server입니다. 확장 저장 프로시저는 전달 결과 설정 하 고 서버에 다시 매개 변수를 반환 합니다.  
   

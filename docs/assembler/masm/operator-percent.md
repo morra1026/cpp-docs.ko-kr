@@ -1,7 +1,7 @@
 ---
 title: operator %| Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,24 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 762cc5412bb2a7b1cc4c2f800410ab19d2e2c56a
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: a1f169db569b216757acae3ca55ac3c1c0373e6f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32055702"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692541"
 ---
 # <a name="operator-"></a>연산자 %
-값을 처리 *식* 텍스트로 매크로 인수에 있습니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-%  
-expression  
-  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [연산자 참조](../../assembler/masm/operators-reference.md)
+
+값을 처리 *식* 텍스트로 매크로 인수입니다.
+
+## <a name="syntax"></a>구문
+
+> % *식*
+
+## <a name="see-also"></a>참고자료
+
+[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
