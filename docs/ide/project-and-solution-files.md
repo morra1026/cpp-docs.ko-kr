@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08cf1386ef177823c37bc285392309ec47f3c464
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 282fd41602b70f743926b0fe5322346e9cdfd3fc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33340699"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203297"
 ---
 # <a name="project-and-solution-files"></a>프로젝트 및 솔루션 파일
 다음 파일은 Visual Studio에서 프로젝트를 만들 때 생성됩니다. 이러한 파일은 솔루션에서 프로젝트 파일을 관리하는 데 사용됩니다.  
@@ -40,7 +40,7 @@ ms.locfileid: "33340699"
 |*Projname*.sdf|*Projname*|솔루션 탐색기에 표시 안 됨|*데이터베이스 탐색* 파일입니다. **정의로 이동**, **모든 참조 찾기** 및 **클래스 뷰** 등의 찾아보기 및 탐색 기능을 지원합니다. 헤더 파일을 구문 분석하여 생성됩니다.|  
 |*Projname.* vcxproj.filters|*Projname*|솔루션 탐색기에 표시 안 됨|*필터* 파일입니다. 솔루션에 추가된 파일을 저장할 위치를 지정합니다. 예를 들어, .h 파일은 **헤더 파일** 노드에 저장됩니다.|  
 |*Projname.* vcxproj.user|*Projname*|솔루션 탐색기에 표시 안 됨|*마이그레이션 사용자* 파일입니다. 프로젝트를 Visual Studio 2008에서 마이그레이션한 후 이 파일은 모든 .vsprops 파일에서 변환된 정보가 들어 있습니다.|  
-|*Projname*.idl|*Projname*|소스|(프로젝트에 따라 다름) 컨트롤 형식 라이브러리의 IDL(인터페이스 설명 언어) 소스 코드가 포함되어 있습니다. 이 파일은 Visual C++에 의해 형식 라이브러리를 생성하는 데 사용됩니다. 생성된 라이브러리는 다른 자동화 클라이언트에 컨트롤 인터페이스를 제공합니다. 자세한 내용은 Windows SDK의 [인터페이스 정의(IDL) 파일](http://msdn.microsoft.com/library/windows/desktop/aa378712)을 참조하세요.|  
+|*Projname*.idl|*Projname*|소스|(프로젝트에 따라 다름) 컨트롤 형식 라이브러리의 IDL(인터페이스 설명 언어) 소스 코드가 포함되어 있습니다. 이 파일은 Visual C++에 의해 형식 라이브러리를 생성하는 데 사용됩니다. 생성된 라이브러리는 다른 자동화 클라이언트에 컨트롤 인터페이스를 제공합니다. 자세한 내용은 Windows SDK의 [인터페이스 정의(IDL) 파일](https://msdn.microsoft.com/library/windows/desktop/aa378712)을 참조하세요.|  
 |ReadMe.txt|*Projname*|프로젝트|*추가 정보* 파일입니다. 응용 프로그램 마법사에서 생성되며 프로젝트의 파일에 대해 설명합니다.|  
   
 ## <a name="see-also"></a>참고 항목  

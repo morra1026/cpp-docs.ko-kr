@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 309ae9dc576f93574836ab4916e87c5232b37a6c
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 1f7d7bed9725e4ec1cc8ad0fc66673ce5c6212e1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33332769"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211214"
 ---
 # <a name="implementing-an-interface-visual-c"></a>인터페이스 구현(Visual C++)
 인터페이스를 구현하려면 ATL COM 응용 프로그램 또는 ATL 지원이 포함된 MFC 응용 프로그램으로 프로젝트를 만들어야 합니다. [ATL 프로젝트 마법사](../atl/reference/atl-project-wizard.md)를 사용하여 ATL 응용 프로그램을 만들거나 [MFC 응용 프로그램에 ATL 개체를 추가](../mfc/reference/adding-atl-support-to-your-mfc-project.md)하여 MFC 응용 프로그램용 ATL 지원을 구현할 수 있습니다.  
@@ -46,7 +46,7 @@ ms.locfileid: "33332769"
 4.  클래스 뷰에서 개체의 기본 및 인터페이스 노드를 확장하여 구현한 인터페이스를 확인한 다음, 인터페이스의 노드를 확장하여 사용 가능한 속성, 메서드 및 이벤트를 확인합니다.  
   
     > [!NOTE]
-    >  [개체 브라우저](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470)를 사용하여 인터페이스의 멤버를 검사할 수도 있습니다.  
+    >  [개체 브라우저](https://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470)를 사용하여 인터페이스의 멤버를 검사할 수도 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [COM 인터페이스 만들기](../ide/creating-a-com-interface-visual-cpp.md)   

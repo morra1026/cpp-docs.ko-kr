@@ -1,7 +1,7 @@
 ---
 title: '@Cpu | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,23 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9bb0f4a96bc2f4c03c8ad16072754943126bcaad
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: a46f5f02b64164670f152d79f92d8fdc59d78c1d
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051867"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683341"
 ---
 # <a name="cpu"></a>@Cpu
-비트 마스크를 프로세서 모드 지정 (숫자와 같습니다.).  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-@Cpu  
-  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [기호 참조](../../assembler/masm/symbols-reference.md)
+
+프로세서 모드를 지정 하는 비트 마스크를 (숫자와 같습니다.).
+
+## <a name="syntax"></a>구문
+
+> @Cpu
+
+## <a name="see-also"></a>참고자료
+
+[기호 참조](../../assembler/masm/symbols-reference.md)<br/>

@@ -16,15 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e85ec0dfc011aab4d2b3ac835bbe71782b055000
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 59649aeee3b0f63b496b967722205001a3de1619
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33332327"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213535"
 ---
 # <a name="clickonce-deployment-for-visual-c-applications"></a>Visual C++ 응용 프로그램의 ClickOnce 배포
-Visual Studio는 Windows 응용 프로그램을 배포하기 위한 두 가지 기술인 ClickOnce 배포 및 [Windows Installer](http://msdn.microsoft.com/library/cc185688) 배포를 제공합니다.  
+Visual Studio는 Windows 응용 프로그램을 배포하기 위한 두 가지 기술인 ClickOnce 배포 및 [Windows Installer](/windows/desktop/Msi/windows-installer-portal) 배포를 제공합니다.  
   
 ## <a name="clickonce-deployment-in-c"></a>C++의 ClickOnce 배포  
  Visual C++ 배포 환경에서는 ClickOnce를 사용한 Visual C++ 프로젝트 배포를 직접 지원하지 않지만 적절한 도구를 사용하면 이 방식으로 배포할 수 있습니다.  
@@ -53,7 +53,7 @@ Visual Studio는 Windows 응용 프로그램을 배포하기 위한 두 가지 �
  [Makecert.exe(인증서 작성 도구)](https://msdn.microsoft.com/library/windows/desktop/aa386968)   
  [데스크톱 응용 프로그램 배포](../ide/deploying-native-desktop-applications-visual-cpp.md)   
  [응용 프로그램, 서비스 및 구성 요소 배포](/visualstudio/deployment/deploying-applications-services-and-components)   
- [Windows Installer 배포](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)   
+ [Windows Installer 배포](https://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)   
  [ClickOnce 보안 및 배포](/visualstudio/deployment/clickonce-security-and-deployment)   
  [부트스트래퍼 패키지 만들기](/visualstudio/deployment/creating-bootstrapper-packages)   
  [C++/CLI를 사용한 .NET 프로그래밍 (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)   

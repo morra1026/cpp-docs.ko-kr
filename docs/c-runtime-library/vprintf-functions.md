@@ -25,12 +25,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d63e5da79b0f78e701f3ababaf54bef41fbf88a1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 127cf8683d4d2627bdc19bef4a9ddfa93e3d7387
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32418382"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216936"
 ---
 # <a name="vprintf-functions"></a>vprintf 함수
 이러한 `vprintf` 함수는 각각 인수 목록에 대한 포인터를 가져오며 지정된 데이터의 형식을 지정하고 특정 대상에 지정된 데이터를 씁니다. 이러한 함수는 수행되는 매개 변수 유효성 검사, 함수가 와이드 문자를 사용하는지 또는 싱글바이트 문자열을 사용하는지, 출력 대상 및 형식 문자열에 매개 변수가 사용되는 순서를 지정하는 기능에 대한 지원 측면에서 다릅니다.  
@@ -89,7 +89,7 @@ ms.locfileid: "32418382"
  **vsprintf**, `vswprintf`, `_vsnprintf` 및 `_vsnwprintf`의 경우 중복되는 문자열 간에 복사가 진행되면 이 동작은 정의되지 않습니다.  
   
 > [!IMPORTANT]
->  *format*이 사용자 정의 문자열이 아닌지 확인하세요. 자세한 내용은 [버퍼 오버런 방지](http://msdn.microsoft.com/library/windows/desktop/ms717795)를 참조하세요. 이러한 함수의 보안 버전을 사용하는 경우(**_s** 또는 **_p** 접미사) 사용자 제공 형식 문자열은 사용자 제공 문자열에 잘못된 형식 지정 문자가 포함되어 있으면 잘못된 매개 변수 예외를 트리거할 수 있습니다.  
+>  *format*이 사용자 정의 문자열이 아닌지 확인하세요. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요. 이러한 함수의 보안 버전을 사용하는 경우(**_s** 또는 **_p** 접미사) 사용자 제공 형식 문자열은 사용자 제공 문자열에 잘못된 형식 지정 문자가 포함되어 있으면 잘못된 매개 변수 예외를 트리거할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [스트림 I/O](../c-runtime-library/stream-i-o.md)   

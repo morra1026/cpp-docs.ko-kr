@@ -26,37 +26,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b99dae277fec7618c2e7caeb76229edce7a78c2
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: ed9d6ba12e65eac325008cb2a448abdab087ee46
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207762"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197962"
 ---
 # <a name="midl-property-pages-advanced"></a>MIDL 속성 페이지: 고급
 **MIDL** 폴더의 **고급** 속성 페이지에서 다음 MIDL 컴파일러 옵션을 지정합니다.  
   
--   오류 검사 사용([/error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
+-   오류 검사 사용([/error](https://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   할당 검사([/error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
+-   할당 검사([/error](https://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   경계 검사([/error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
+-   경계 검사([/error](https://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   열거형 범위 검사([/error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
+-   열거형 범위 검사([/error](https://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   참조 포인터 검사([/error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
+-   참조 포인터 검사([/error](https://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   스텁 데이터 검사([/error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
+-   스텁 데이터 검사([/error](https://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   매개 변수 유효성 검사([/robust](http://msdn.microsoft.com/library/windows/desktop/aa367363)) \*  
+-   매개 변수 유효성 검사([/robust](https://msdn.microsoft.com/library/windows/desktop/aa367363)) \*  
   
--   구조체 멤버 맞춤([/Zp](http://msdn.microsoft.com/library/windows/desktop/aa367388))  
+-   구조체 멤버 맞춤([/Zp](https://msdn.microsoft.com/library/windows/desktop/aa367388))  
   
--   출력 리디렉션([/o](http://msdn.microsoft.com/library/windows/desktop/aa367351))  
+-   출력 리디렉션([/o](https://msdn.microsoft.com/library/windows/desktop/aa367351))  
   
--   C 전처리 옵션([/cpp_opt](http://msdn.microsoft.com/library/windows/desktop/aa367318))  
+-   C 전처리 옵션([/cpp_opt](https://msdn.microsoft.com/library/windows/desktop/aa367318))  
   
--   전처리기 정의 해제([/U](http://msdn.microsoft.com/library/windows/desktop/aa367373))  
+-   전처리기 정의 해제([/U](https://msdn.microsoft.com/library/windows/desktop/aa367373))  
   
  \* /robust는 Windows 2000 이상의 컴퓨터용으로 빌드할 때만 사용합니다. ATL 프로젝트를 빌드하고 /robust를 사용하려면 dlldatax.c 파일에서 이 줄을 변경합니다.  
   

@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 793adf38da33808371a0df71f671c3e29da75326
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: b676e35dcf98ef7ae1f41e4a91922d689bd40409
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33322408"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202141"
 ---
 # <a name="adding-a-class-from-an-activex-control-visual-c"></a>ActiveX 컨트롤의 클래스 추가(Visual C++)
 이 마법사를 사용하여 사용 가능한 ActiveX 컨트롤의 인터페이스에서 MFC 클래스를 만듭니다. MFC 클래스를 [MFC 응용 프로그램](../mfc/reference/creating-an-mfc-application.md), [MFC DLL](../mfc/reference/creating-an-mfc-dll-project.md) 또는 [MFC ActiveX 컨트롤](../mfc/reference/creating-an-mfc-activex-control.md)에 추가할 수 있습니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "33322408"
   
 ### <a name="to-add-an-mfc-class-from-an-activex-control"></a>ActiveX 컨트롤에서 MFC 클래스를 추가하려면  
   
-1.  **솔루션 탐색기** 또는 [클래스 뷰](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925)에서 ActiveX 컨트롤 클래스를 추가할 프로젝트의 이름을 마우스 오른쪽 단추로 클릭합니다.  
+1.  **솔루션 탐색기** 또는 [클래스 뷰](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925)에서 ActiveX 컨트롤 클래스를 추가할 프로젝트의 이름을 마우스 오른쪽 단추로 클릭합니다.  
   
 2.  바로 가기 메뉴에서 **추가**를 클릭한 다음, **클래스 추가**를 클릭합니다.  
   

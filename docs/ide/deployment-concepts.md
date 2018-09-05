@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0960e94acdbe660474efbeeddd0f72fa4f0606f6
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 16f135011f7b67debdf51f6ddbde00a79d130602
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34257064"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199694"
 ---
 # <a name="deployment-concepts"></a>배포 개념
 
@@ -61,4 +61,4 @@ Visual C++ 라이브러리는 DLL로 패키지되며, Visual Studio에서 C/C++ 
 
 - [데스크톱 응용 프로그램 배포](../ide/deploying-native-desktop-applications-visual-cpp.md)
 - [Visual C++ 응용 프로그램의 종속성 이해](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md)
-- [Windows Installer 배포](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)
+- [Windows Installer 배포](https://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)

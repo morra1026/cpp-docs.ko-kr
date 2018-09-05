@@ -15,15 +15,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4295c0fbd0542ad6c7c819b6ef7024b2384304d5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8a9465a51646dae16ae2a487a77206c712fef681
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32382892"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204452"
 ---
 # <a name="default-signals"></a>기본 신호
-**ANSI 4.7.1.1** **signal(***sig***, SIG_DFL)** 에 해당하는 함수가 신호 처리기를 호출하기 전에 실행되지 않는 경우 수행되는 신호의 차단  
+**ANSI 4.7.1.1** **signal(**<em>sig</em>**, SIG_DFL)** 에 해당하는 함수가 신호 처리기를 호출하기 전에 실행되지 않는 경우 수행되는 신호의 차단  
   
  신호는 프로그램이 실행을 시작할 때 기본 상태로 설정됩니다.  
   

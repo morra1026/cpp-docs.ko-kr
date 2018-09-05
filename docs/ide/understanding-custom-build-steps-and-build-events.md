@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a50c0cf224104f720a73a4830405e7114cda74ed
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 16c1bdf088e0545292a672458c066364b5a47ff4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33338769"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206297"
 ---
 # <a name="understanding-custom-build-steps-and-build-events"></a>사용자 지정 빌드 단계 및 빌드 이벤트 이해
 Visual C++ 개발 환경 내에서 빌드 프로세스를 사용자 지정하는 세 가지 기본 방법은 다음과 같습니다.  
@@ -73,4 +73,4 @@ Visual C++ 개발 환경 내에서 빌드 프로세스를 사용자 지정하는
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio에서 C++ 프로젝트 빌드](../ide/building-cpp-projects-in-visual-studio.md)   
  [빌드 명령 및 속성에 대한 일반 매크로](../ide/common-macros-for-build-commands-and-properties.md)   
- [도구 빌드 순서 대화 상자](http://msdn.microsoft.com/en-us/6204c5b1-7ce9-4948-9ff6-0268642ee14c)
+ [도구 빌드 순서 대화 상자](https://msdn.microsoft.com/6204c5b1-7ce9-4948-9ff6-0268642ee14c)

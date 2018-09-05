@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3586fb33c30148c870b096d0d49a41d7ad8c6c8
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 4a9b2aa4389d693cfc6734a29f3a744e955ca3ea
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33335444"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213795"
 ---
 # <a name="stock-properties"></a>스톡 속성
 [속성 추가 마법사](../ide/idl-attributes-add-property-wizard.md)를 사용하여 MFC dispinterface에 속성을 추가하는 경우 마법사의 [이름](../ide/names-add-property-wizard.md) 페이지에 있는 **속성 이름** 목록에서 스톡 속성을 선택할 수 있습니다. 속성은 다음과 같습니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "33335444"
 |**글꼴**|컨트롤의 앰비언트 글꼴을 반환하거나 설정합니다. 컨트롤에 글꼴이 없으면 Null입니다.|  
 |`ForeColor`|컨트롤의 앰비언트 `ForeColor` 속성을 반환하거나 설정합니다.|  
 |**hWnd**|컨트롤의 **hWnd** 속성을 반환하거나 설정합니다. **hWnd**에는 **멤버 변수** 구현 형식이 없습니다.|  
-|**ReadyState**|컨트롤의 **ReadyState** 속성을 반환하거나 설정합니다. 컨트롤이는 초기화되지 않거나, 초기화되거나, 로드되거나, 대화형이거나, 완료될 수 있습니다. 자세한 정보는 *인터넷 SDK*에서 [READYSTATE](https://msdn.microsoft.com/en-us/library/aa768362.aspx)를 참조하세요.|  
+|**ReadyState**|컨트롤의 **ReadyState** 속성을 반환하거나 설정합니다. 컨트롤이는 초기화되지 않거나, 초기화되거나, 로드되거나, 대화형이거나, 완료될 수 있습니다. 자세한 정보는 *인터넷 SDK*에서 [READYSTATE](https://msdn.microsoft.com/library/aa768362.aspx)를 참조하세요.|  
 |**텍스트**|컨트롤에 포함된 텍스트를 반환하거나 설정합니다. **텍스트**에는 **멤버 변수** 구현 형식이 없습니다.|  
   
 ## <a name="see-also"></a>참고 항목  

@@ -16,17 +16,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf2ddf83b7a03f8d4e01b61f82e46e0d26a5547b
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: c43619fcb1d684d7e0d2d6645b7a5feaac61e472
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33340543"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195197"
 ---
 # <a name="implement-interface-wizard"></a>인터페이스 구현 마법사
 COM 개체의 인터페이스를 구현합니다. 많은 인터페이스의 구현은 Visual Studio 및 Windows와 함께 사용할 수 있는 COM 라이브러리에 포함되어 있습니다. 인터페이스 구현은 해당 개체의 인스턴스를 만들고 개체에서 제공하는 서비스를 제공하는 경우 개체와 연결됩니다.  
   
- 인터페이스 및 구현 설명은 Windows SDK에서 [인터페이스 및 인터페이스 구현](http://msdn.microsoft.com/library/windows/desktop/ms694356)을 참조합니다.  
+ 인터페이스 및 구현 설명은 Windows SDK에서 [인터페이스 및 인터페이스 구현](/windows/desktop/com/interfaces-and-interface-implementations)을 참조합니다.  
   
  **구현할 인터페이스 위치**  
  인터페이스를 만들었으므로 형식 라이브러리의 위치를 지정합니다.  

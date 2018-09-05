@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2922a0a92a121d6838478daaf2c32f1c7a630d21
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: a2fe0896a8fbd8b8c0a8f68847ee138017eaa36b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33340361"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215503"
 ---
 # <a name="managed-resources-property-page"></a>관리되는 리소스 속성 페이지
 리소스 컴파일러에 대한 설정을 사용하도록 설정합니다.  
@@ -42,6 +42,6 @@ ms.locfileid: "33340361"
  **관리되는 리소스** 속성 페이지에 액세스하는 방법에 대한 자세한 내용은 [프로젝트 속성 작업](../ide/working-with-project-properties.md)을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
- [RC(RC 명령줄) 사용](http://msdn.microsoft.com/library/windows/desktop/aa381055)   
+ [RC(RC 명령줄) 사용](https://msdn.microsoft.com/library/windows/desktop/aa381055)   
  [속성 페이지](../ide/property-pages-visual-cpp.md)   
  [/ASSEMBLYRESOURCE(관리되는 리소스 포함)](../build/reference/assemblyresource-embed-a-managed-resource.md)

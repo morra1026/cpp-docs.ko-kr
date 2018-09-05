@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2844e9051c5e6adf14085bcd7bfcd8096c6f8f7
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: b69c2318ec5b1dd986a71bc684e1c9adc0f4ef0f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33332584"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194966"
 ---
 # <a name="creating-a-com-interface-visual-c"></a>COM 인터페이스 만들기(Visual C++)
 Visual C++는 COM 개체 및 자동화 클래스에 대한 COM 정의 인터페이스 및 dispinterface를 사용하는 프로젝트를 만드는 마법사와 템플릿을 제공합니다.  
@@ -67,7 +67,7 @@ interface IMyInterface {
   
  자세한 내용은 [인터페이스 구현](../ide/implementing-an-interface-visual-cpp.md) 및 [ATL 프로젝트에 개체 및 컨트롤 추가](../atl/reference/adding-objects-and-controls-to-an-atl-project.md)를 참조하세요.  
   
- Visual C++에서는 프로젝트에 정의된 [COM 인터페이스 편집](../ide/editing-a-com-interface.md) 및 확인을 위한 몇 가지 방법을 제공합니다. [클래스 뷰](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925)는 C++ 프로젝트의 .idl 파일에 정의된 모든 인터페이스 또는 dispinterface 아이콘을 표시합니다.  
+ Visual C++에서는 프로젝트에 정의된 [COM 인터페이스 편집](../ide/editing-a-com-interface.md) 및 확인을 위한 몇 가지 방법을 제공합니다. [클래스 뷰](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925)는 C++ 프로젝트의 .idl 파일에 정의된 모든 인터페이스 또는 dispinterface 아이콘을 표시합니다.  
   
  ATL 기반 COM 개체 클래스의 경우, 클래스 뷰는 ATL 클래스의 COM 맵을 읽고 ATL 클래스와 이 클래스가 구현하는 모든 인터페이스 간의 관계를 표시합니다.  
   

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01add77f68ac35b4c669391504461dd516b55d3d
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 1f8fae2d8af1b7121290bfbd42b2668afc50034c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33325385"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217255"
 ---
 # <a name="ltparamgt-visual-c"></a>&lt;param&gt;(Visual C++)
 \<param> 태그는 메서드의 매개 변수 중 하나를 설명하기 위해 메서드 선언에 대한 주석에 사용해야 합니다.  
@@ -42,7 +42,7 @@ ms.locfileid: "33325385"
  매개 변수에 대한 설명입니다.  
   
 ## <a name="remarks"></a>설명  
- \<param> 태그에 대한 텍스트는 IntelliSense, [개체 브라우저](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470) 및 코드 주석 웹 보고서에 표시됩니다.  
+ \<param> 태그에 대한 텍스트는 IntelliSense, [개체 브라우저](https://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470) 및 코드 주석 웹 보고서에 표시됩니다.  
   
  [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.  
   

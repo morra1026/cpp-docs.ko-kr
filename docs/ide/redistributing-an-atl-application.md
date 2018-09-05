@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c824dd4ae174a4418c6744e592dd62dc54b9595
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: a2e0309c420754c0da8f09bb38e088e473362de0
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33326386"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676751"
 ---
 # <a name="redistributing-an-atl-application"></a>ATL 응용 프로그램 재배포
 Visual Studio 2012부터 ATL(액티브 템플릿 라이브러리)은 헤더 전용 라이브러리입니다. ATL 프로젝트에는 ATL에 동적 링크 옵션이 없습니다. 재배포 가능한 ATL 라이브러리가 필요하지 않습니다.  
@@ -50,8 +50,6 @@ filename /regserver
 ```  
   
  여기서 `filename`은 실행 파일의 이름입니다.  
-  
- OLE DB 템플릿 응용 프로그램의 경우에는 대상 컴퓨터에 최신 버전의 MDAC(Microsoft Data Access Components) 파일이 있어야 합니다. 자세한 내용은 [데이터베이스 지원 파일 재배포](../ide/redistributing-database-support-files.md)를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [Visual C++ 파일 재배포](../ide/redistributing-visual-cpp-files.md)

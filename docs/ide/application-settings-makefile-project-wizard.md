@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07459cd4971ea6aec95b632e5c03618248cca401
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 53d87c6f0109708023f57e2d30ae38fa4f4f574b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33330741"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222662"
 ---
 # <a name="application-settings-makefile-project-wizard"></a>메이크파일 프로젝트 마법사, 응용 프로그램 설정
 프로젝트에 대한 정보를 제공합니다. 지정한 옵션은 프로젝트의 [속성 페이지](../ide/working-with-project-properties.md)에 반영됩니다. 프로젝트를 만든 후에 프로젝트의 속성 페이지의 **Nmake** 페이지에서 다음 옵션을 각각 보고 편집할 수 있습니다.  
@@ -44,4 +44,4 @@ ms.locfileid: "33330741"
  [Visual C++ 프로젝트 형식](../ide/visual-cpp-project-types.md)   
  [응용 프로그램 마법사를 사용하여 데스크톱 프로젝트 만들기](../ide/creating-desktop-projects-by-using-application-wizards.md)   
  [속성 페이지](../ide/property-pages-visual-cpp.md)   
- [응용 프로그램 배포](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+ [응용 프로그램 배포](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)

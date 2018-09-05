@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55a2bb282d19a48cfd510056e327e7abca4de4ad
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 13d163ad8de9ef3ee6c8c1375c234a412c70de7d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33337043"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213138"
 ---
 # <a name="adding-functionality-with-code-wizards-c"></a>코드 마법사로 기능 추가(C++)
 프로젝트가 만들어졌으면 프로젝트의 기능을 변경하거나 추가하려고 합니다. 이러한 작업에는 새 클래스 만들기, 새 멤버 함수 및 변수 추가, 자동화 메서드 및 속성 추가 등이 포함됩니다. 코드 마법사는 이러한 모든 작업을 수행할 수 있도록 설계되었습니다.  
@@ -56,7 +56,7 @@ ms.locfileid: "33337043"
   
 -   **솔루션 탐색기**에서 폴더를 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **추가**를 클릭하면, 새 파일이나 기존 파일, 더 많은 폴더, 항목, 클래스, 리소스 및 웹 참조를 프로젝트에 추가할 수 있습니다.  
   
--   [클래스 뷰 창](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925)에서 적절한 노드를 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **추가**를 클릭하면, 함수, 변수, 클래스, 속성, 메서드, 이벤트, 인터페이스, 연결 지점 또는 다른 코드를 프로젝트에 추가할 수 있습니다.  
+-   [클래스 뷰 창](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925)에서 적절한 노드를 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **추가**를 클릭하면, 함수, 변수, 클래스, 속성, 메서드, 이벤트, 인터페이스, 연결 지점 또는 다른 코드를 프로젝트에 추가할 수 있습니다.  
   
     > [!NOTE]
     >  Visual Studio에서는 프로젝트에 인터페이스를 추가하는 마법사를 제공하지 않습니다. [ATL 단순 개체 마법사](../atl/reference/atl-simple-object-wizard.md)로 간단한 개체를 추가하여 ATL 프로젝트에 인터페이스를 추가하거나 [MFC 프로젝트에 ATL 지원을 추가](../mfc/reference/adding-atl-support-to-your-mfc-project.md)할 수 있습니다. 또는 프로젝트의.idl 파일을 열고 다음을 입력하여 인터페이스를 만듭니다.  
