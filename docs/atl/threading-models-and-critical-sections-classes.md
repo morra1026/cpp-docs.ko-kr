@@ -19,40 +19,42 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37172c0080664f496bdf5d5c7c0ebecbd8f77898
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b87fdac5220ede47f1acf19088e952fde408a413
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32359920"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43755959"
 ---
 # <a name="threading-models-and-critical-sections-classes"></a>스레딩 모델 및 임계 영역 클래스
-다음 클래스 정의 스레딩 모델 및 임계 영역:  
-  
--   [CAtlAutoThreadModule](../atl/reference/catlautothreadmodule-class.md) 스레드 풀링, 아파트 모델 COM 서버를 구현 합니다.  
-  
--   [CAtlAutoThreadModuleT](../atl/reference/catlautothreadmodulet-class.md) 스레드 풀링, 아파트 모델 COM 서버를 구현 하기 위한 메서드를 제공 합니다.  
-  
--   [CComMultiThreadModel](../atl/reference/ccommultithreadmodel-class.md) 변수 증가 및 감소 위한 스레드로부터 안전한 메서드를 제공 합니다. 임계 영역을 제공합니다.  
-  
--   [CComMultiThreadModelNoCS](../atl/reference/ccommultithreadmodelnocs-class.md) 변수 증가 및 감소 위한 스레드로부터 안전한 메서드를 제공 합니다. 임계 영역을 제공 하지 않습니다.  
-  
--   [CComSingleThreadModel](../atl/reference/ccomsinglethreadmodel-class.md) 변수 증가 및 감소에 대 한 메서드를 제공 합니다. 임계 영역을 제공 하지 않습니다.  
-  
--   [CComObjectThreadModel](../atl/reference/atl-typedefs.md#ccomobjectthreadmodel) 단일 개체 클래스에 대 한 적절 한 스레딩 모델 클래스를 결정 합니다.  
-  
--   [CComGlobalsThreadModel](../atl/reference/atl-typedefs.md#ccomglobalsthreadmodel) 전체적으로 사용할 수 있는 개체에 대 한 적절 한 스레딩 모델 클래스를 결정 합니다.  
-  
--   [CComAutoCriticalSection](../atl/reference/ccomautocriticalsection-class.md) 구하고 해제는 임계 영역에 대 한 메서드가 포함 되어 있습니다. 임계 영역 자동으로 초기화 됩니다.  
-  
--   [클래스](../atl/reference/ccomcriticalsection-class.md) 구하고 해제는 임계 영역에 대 한 메서드가 포함 되어 있습니다. 임계 영역을 명시적으로 초기화 되어야 합니다.  
-  
--   [CComFakeCriticalSection](../atl/reference/ccomfakecriticalsection-class.md) 에서 메서드를 반영 `CComCriticalSection` 임계 영역을 제공 하지 않고 있습니다. 메서드는 `CComFakeCriticalSection` 아무 작업도 수행 합니다.  
-  
--   [CRTThreadTraits](../atl/reference/crtthreadtraits-class.md) CRT 스레드에 대 한 만들기 함수를 제공 합니다. 스레드 CRT 함수를 사용 하는 경우에이 클래스를 사용 합니다.  
-  
--   [Win32ThreadTraits](../atl/reference/win32threadtraits-class.md) Windows 스레드에 대 한 만들기 함수를 제공 합니다. 스레드 CRT 함수를 사용 하지 않는 경우에이 클래스를 사용 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [클래스 개요](../atl/atl-class-overview.md)
+
+다음 클래스 정의 스레딩 모델 및 임계 영역:
+
+- [CAtlAutoThreadModule](../atl/reference/catlautothreadmodule-class.md) 스레드 풀링, 아파트 모델 COM 서버를 구현 합니다.
+
+- [CAtlAutoThreadModuleT](../atl/reference/catlautothreadmodulet-class.md) 스레드 풀링, 아파트 모델 COM 서버 구현에 대 한 메서드를 제공 합니다.
+
+- [CComMultiThreadModel](../atl/reference/ccommultithreadmodel-class.md) 변수 증가 및 감소 스레드로부터 안전한 메서드를 제공 합니다. 임계 영역을 제공합니다.
+
+- [CComMultiThreadModelNoCS](../atl/reference/ccommultithreadmodelnocs-class.md) 변수 증가 및 감소 스레드로부터 안전한 메서드를 제공 합니다. 임계 영역을 제공 하지 않습니다.
+
+- [CComSingleThreadModel](../atl/reference/ccomsinglethreadmodel-class.md) 변수 증가 및 감소에 대 한 메서드를 제공 합니다. 임계 영역을 제공 하지 않습니다.
+
+- [CComObjectThreadModel](../atl/reference/atl-typedefs.md#ccomobjectthreadmodel) 단일 개체 클래스에 대 한 적절 한 스레딩 모델 클래스를 결정 합니다.
+
+- [CComGlobalsThreadModel](../atl/reference/atl-typedefs.md#ccomglobalsthreadmodel) 전역적으로 사용할 수 있는 개체에 대 한 적절 한 스레딩 모델 클래스를 결정 합니다.
+
+- [CComAutoCriticalSection](../atl/reference/ccomautocriticalsection-class.md) 가져오기 및 해제는 임계 영역에 대 한 메서드가 포함 되어 있습니다. 중요 섹션은 자동으로 초기화 됩니다.
+
+- [CComCriticalSection](../atl/reference/ccomcriticalsection-class.md) 가져오기 및 해제는 임계 영역에 대 한 메서드가 포함 되어 있습니다. 중요 섹션을 명시적으로 초기화 되어야 합니다.
+
+- [CComFakeCriticalSection](../atl/reference/ccomfakecriticalsection-class.md) 의 메서드를 미러링 `CComCriticalSection` 임계 영역을 제공 하지 않고 있습니다. 메서드에서 `CComFakeCriticalSection` 아무 작업도 수행 합니다.
+
+- [CRTThreadTraits](../atl/reference/crtthreadtraits-class.md) CRT 스레드에 대 한 생성 함수를 제공 합니다. 스레드 CRT 함수를 사용 하면이 클래스를 사용 합니다.
+
+- [Win32ThreadTraits](../atl/reference/win32threadtraits-class.md) Windows 스레드 생성 기능을 제공 합니다. 스레드 CRT 함수를 사용 하지 않는 경우이 클래스를 사용 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[클래스 개요](../atl/atl-class-overview.md)
 

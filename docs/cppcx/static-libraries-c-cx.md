@@ -10,11 +10,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5bb69b65d78b6369d872fd6f953f6ddde382c21b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602291"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43759446"
 ---
 # <a name="static-libraries-ccx"></a>정적 라이브러리(C++/CX)
 유니버설 Windows 플랫폼 (UWP) 앱에 사용 되는 정적 라이브러리 STL 형식, 그리고 Windows 런타임 앱 플랫폼에서 제외 되지 않은 Win32 Api에 대 한 호출을 포함 하 여 ISO 표준 c + + 코드를 포함할 수 있습니다. 정적 라이브러리 Windows 런타임 구성 요소를 사용 하 고 특정 제한 사항이 Windows 런타임 구성 요소를 만들 수 있습니다.  

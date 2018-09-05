@@ -21,127 +21,148 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c456aaa6f3448cf4386e0556773f2a9839702ccd
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: cf09696f6a13c11fbb37fa6e89ccb9b1241cadd0
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202424"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43751545"
 ---
 # <a name="ccomheap-class"></a>CComHeap 클래스
-이 클래스는 구현 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) COM 메모리 할당 함수를 사용 합니다.  
-  
+
+이 클래스는 구현 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) COM 메모리 할당 함수를 사용 합니다.
+
 > [!IMPORTANT]
->  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.  
-  
-## <a name="syntax"></a>구문  
-  
+>  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
+
+## <a name="syntax"></a>구문
+
 ```
 class CComHeap : public IAtlMemMgr
-```  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="public-methods"></a>Public 메서드  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[CComHeap::Allocate](#allocate)|메모리 블록을 할당하려면 이 메서드를 호출합니다.|  
-|[Ccomheap::](#free)|이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.|  
-|[CComHeap::GetSize](#getsize)|이 메모리 관리자에 의해 할당 된 메모리 블록의 할당 된 크기를 가져오려면이 메서드를 호출 합니다.|  
-|[Ccomheap:: Reallocate](#reallocate)|이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.|  
-  
-## <a name="remarks"></a>설명  
- `CComHeap` 메모리 할당 함수를 비롯 한 COM 할당 함수를 사용 하 여 구현 [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc), [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)를 [IMalloc::GetSize](/windows/desktop/api/objidlbase/nf-objidlbase-imalloc-getsize), 및 [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc)합니다. 할당 될 수 있는 메모리의 최대 크기는 INT_MAX (2147483647) 바이트와 같습니다.  
-  
-## <a name="example"></a>예제  
- 예를 참조 하세요 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md)합니다.  
-  
-## <a name="inheritance-hierarchy"></a>상속 계층  
- `IAtlMemMgr`  
-  
- `CComHeap`  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** ATLComMem.h  
-  
-##  <a name="allocate"></a>  CComHeap::Allocate  
- 메모리 블록을 할당하려면 이 메서드를 호출합니다.  
-  
+```
+
+## <a name="members"></a>멤버
+
+### <a name="public-methods"></a>Public 메서드
+
+|이름|설명|
+|----------|-----------------|
+|[CComHeap::Allocate](#allocate)|메모리 블록을 할당하려면 이 메서드를 호출합니다.|
+|[Ccomheap::](#free)|이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.|
+|[CComHeap::GetSize](#getsize)|이 메모리 관리자에 의해 할당 된 메모리 블록의 할당 된 크기를 가져오려면이 메서드를 호출 합니다.|
+|[Ccomheap:: Reallocate](#reallocate)|이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.|
+
+## <a name="remarks"></a>설명
+
+`CComHeap` 메모리 할당 함수를 비롯 한 COM 할당 함수를 사용 하 여 구현 [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc), [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)를 [IMalloc::GetSize](/windows/desktop/api/objidlbase/nf-objidlbase-imalloc-getsize), 및 [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc)합니다. 할당 될 수 있는 메모리의 최대 크기는 INT_MAX (2147483647) 바이트와 같습니다.
+
+## <a name="example"></a>예제
+
+예를 참조 하세요 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md)합니다.
+
+## <a name="inheritance-hierarchy"></a>상속 계층
+
+`IAtlMemMgr`
+
+`CComHeap`
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** ATLComMem.h
+
+##  <a name="allocate"></a>  CComHeap::Allocate
+
+메모리 블록을 할당하려면 이 메서드를 호출합니다.
+
 ```
 virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *nBytes*  
- 새 메모리 블록의 요청된 바이트 수입니다.  
-  
-### <a name="return-value"></a>반환 값  
- 새로 할당된 메모리 블록의 시작 부분에 대한 포인터를 반환합니다.  
-  
-### <a name="remarks"></a>설명  
- 호출 [ccomheap:: Free](#free) 하거나 [ccomheap:: Reallocate](#reallocate) 이 메서드에 의해 할당 된 메모리를 해제 합니다.  
-  
- 사용 하 여 구현 [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc)합니다.  
-  
-##  <a name="free"></a>  Ccomheap::  
- 이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.  
-  
+```
+
+### <a name="parameters"></a>매개 변수
+
+*nBytes*  
+새 메모리 블록의 요청된 바이트 수입니다.
+
+### <a name="return-value"></a>반환 값
+
+새로 할당된 메모리 블록의 시작 부분에 대한 포인터를 반환합니다.
+
+### <a name="remarks"></a>설명
+
+호출 [ccomheap:: Free](#free) 하거나 [ccomheap:: Reallocate](#reallocate) 이 메서드에 의해 할당 된 메모리를 해제 합니다.
+
+사용 하 여 구현 [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc)합니다.
+
+##  <a name="free"></a>  Ccomheap::
+
+이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.
+
 ```
 virtual void Free(void* p) throw();
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *p*  
- 이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다. NULL 유효한 값 이며 아무 작업도 수행 합니다.  
-  
-### <a name="remarks"></a>설명  
- 사용 하 여 구현 [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)합니다.  
-  
-##  <a name="getsize"></a>  CComHeap::GetSize  
- 이 메모리 관리자에 의해 할당 된 메모리 블록의 할당 된 크기를 가져오려면이 메서드를 호출 합니다.  
-  
+```
+
+### <a name="parameters"></a>매개 변수
+
+*p*  
+이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다. NULL 유효한 값 이며 아무 작업도 수행 합니다.
+
+### <a name="remarks"></a>설명
+
+사용 하 여 구현 [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)합니다.
+
+##  <a name="getsize"></a>  CComHeap::GetSize
+
+이 메모리 관리자에 의해 할당 된 메모리 블록의 할당 된 크기를 가져오려면이 메서드를 호출 합니다.
+
 ```
 virtual size_t GetSize(void* p) throw();
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *p*  
- 이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다.  
-  
-### <a name="return-value"></a>반환 값  
- 할당된 된 메모리 블록의 크기 (바이트)를 반환합니다.  
-  
-### <a name="remarks"></a>설명  
- 사용 하 여 구현 [IMalloc::GetSize](/windows/desktop/api/objidlbase/nf-objidlbase-imalloc-getsize)합니다.  
-  
-##  <a name="reallocate"></a>  Ccomheap:: Reallocate  
- 이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.  
-  
+```
+
+### <a name="parameters"></a>매개 변수
+
+*p*  
+이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다.
+
+### <a name="return-value"></a>반환 값
+
+할당된 된 메모리 블록의 크기 (바이트)를 반환합니다.
+
+### <a name="remarks"></a>설명
+
+사용 하 여 구현 [IMalloc::GetSize](/windows/desktop/api/objidlbase/nf-objidlbase-imalloc-getsize)합니다.
+
+##  <a name="reallocate"></a>  Ccomheap:: Reallocate
+
+이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.
+
 ```
 virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *p*  
- 이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다.  
-  
- *nBytes*  
- 새 메모리 블록의 요청된 바이트 수입니다.  
-  
-### <a name="return-value"></a>반환 값  
- 새로 할당된 메모리 블록의 시작 부분에 대한 포인터를 반환합니다.  
-  
-### <a name="remarks"></a>설명  
- 호출 [ccomheap::](#free) 이 메서드에 의해 할당 된 메모리를 해제 합니다.  
-  
- 사용 하 여 구현 [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [DynamicConsumer 샘플](../../visual-cpp-samples.md)   
- [클래스 개요](../../atl/atl-class-overview.md)   
- [CWin32Heap 클래스](../../atl/reference/cwin32heap-class.md)   
- [CLocalHeap 클래스](../../atl/reference/clocalheap-class.md)   
- [CGlobalHeap 클래스](../../atl/reference/cglobalheap-class.md)   
- [CCRTHeap 클래스](../../atl/reference/ccrtheap-class.md)   
- [IAtlMemMgr 클래스](../../atl/reference/iatlmemmgr-class.md)
+```
+
+### <a name="parameters"></a>매개 변수
+
+*p*  
+이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다.
+
+*nBytes*  
+새 메모리 블록의 요청된 바이트 수입니다.
+
+### <a name="return-value"></a>반환 값
+
+새로 할당된 메모리 블록의 시작 부분에 대한 포인터를 반환합니다.
+
+### <a name="remarks"></a>설명
+
+호출 [ccomheap::](#free) 이 메서드에 의해 할당 된 메모리를 해제 합니다.
+
+사용 하 여 구현 [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc)합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[DynamicConsumer 샘플](../../visual-cpp-samples.md)   
+[클래스 개요](../../atl/atl-class-overview.md)   
+[CWin32Heap 클래스](../../atl/reference/cwin32heap-class.md)   
+[CLocalHeap 클래스](../../atl/reference/clocalheap-class.md)   
+[CGlobalHeap 클래스](../../atl/reference/cglobalheap-class.md)   
+[CCRTHeap 클래스](../../atl/reference/ccrtheap-class.md)   
+[IAtlMemMgr 클래스](../../atl/reference/iatlmemmgr-class.md)

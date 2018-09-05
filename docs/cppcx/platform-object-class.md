@@ -21,11 +21,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: dd6f4eed4cefba16d95baabe38fc5268c0ae8512
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216441"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43752328"
 ---
 # <a name="platformobject-class"></a>Platform::Object 클래스
 Ref 클래스 및 Windows 런타임 앱에서 ref 구조체에 대 한 일반적인 동작을 제공 합니다. 모든 ref 클래스 및 ref 구조체 인스턴스는 Platform::Object^로 암시적으로 변환될 수 있고 해당하는 가상 ToString 메서드를 재정의할 수 있습니다.  

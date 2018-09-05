@@ -12,11 +12,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 77cd035b6cf84b16f4f6d5d92f3dd247f1251509
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601563"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43751285"
 ---
 # <a name="platformweakreference-class"></a>Platform::WeakReference 클래스
 ref 클래스 인스턴스에 대한 약한 참조를 나타냅니다.  
@@ -93,7 +93,7 @@ T^ Resolve() const
 ### <a name="property-valuereturn-value"></a>속성 값/반환 값  
  WeakReference 개체가 이전에 연결되었던 ref 클래스에 대한 핸들 또는 nullptr입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  코드 예제에 대한 설명입니다.  
   
 ```  
@@ -123,7 +123,7 @@ WeakReference(const WeakReference& otherArg);
 WeakReference(WeakReference&& otherArg);  
 explicit WeakReference(const volatile ::Platform::Object^ const otherArg);  
 ```  
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   
 ```cpp    
 MyClass^ mc = ref new MyClass();  

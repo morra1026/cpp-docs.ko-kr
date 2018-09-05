@@ -1,5 +1,5 @@
 ---
-title: ATL 프로젝트를 수정 합니다. | Microsoft Docs
+title: ATL 프로젝트 수정 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,21 +16,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a8594c2d98b05750d6e43138101894fb8fc4b72
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8f94a698d9e23d0481daf940fc55fa99616104aa
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355035"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43763460"
 ---
-# <a name="modifying-the-atl-project"></a>ATL 프로젝트
-이 시점에서 합성 컨트롤 프로젝트 복합 컨트롤에 대 한 필요한 개체를 구현합니다. 다음 단계는 합성 컨트롤 포함 되며 필요한 이벤트를 처리 하는 컨트롤을 추가할 것입니다.  
-  
- 추가 Windows 또는 ActiveX 컨트롤을 추가 하려면 새 리소스 스크립트를 추가 하 고 대화 상자 편집기를 사용 하 여 키를 누릅니다. 컨트롤 (및 관련 된 작업)를 추가 합니다. 자세한 내용은 참조 [대화 상자 편집기](../windows/dialog-editor.md)합니다.  
-  
- 참조 된 ActiveX 컨트롤에서 필요한 이벤트를 처리 하려면 [합성 컨트롤에 기능 추가](../atl/adding-functionality-to-the-composite-control.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [합성 컨트롤 기본 사항](../atl/atl-composite-control-fundamentals.md)   
- [방법: 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)
+# <a name="modifying-the-atl-project"></a>ATL 프로젝트 수정
+
+이 시점에서 복합 컨트롤 프로젝트에는 복합 컨트롤에 대 한 필요한 개체를 구현합니다. 다음 단계는 복합 컨트롤 포함 되며 필요한 이벤트를 처리는 컨트롤을 추가 합니다.
+
+추가 Windows 또는 ActiveX 컨트롤을 추가 하려면 새 리소스 스크립트를 추가 하 고 대화 상자 편집기를 사용 합니다. 컨트롤 (및 관련된 작업)을 추가 하는 방법은 참조 하세요 [대화 상자 편집기](../windows/dialog-editor.md)합니다.
+
+참조 된 ActiveX 컨트롤에서 필요한 이벤트를 처리 하려면 [복합 컨트롤에 기능 추가](../atl/adding-functionality-to-the-composite-control.md)합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[합성 컨트롤 기본 사항](../atl/atl-composite-control-fundamentals.md)   
+[방법: 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)
 

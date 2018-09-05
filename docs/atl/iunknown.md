@@ -17,17 +17,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acabc38b115429c88ac9bed0e509cbcadd78a5aa
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 5903cebe5de87ab528dbcfe1769047b7b7ace3ef
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217498"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43761916"
 ---
 # <a name="iunknown"></a>IUnknown
-[IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 마다 다른 COM 인터페이스의 기본 인터페이스입니다.  이 인터페이스는 세 가지 메서드를 정의 합니다. [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)), [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref), 및 [릴리스](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release). [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) 인터페이스 사용자가 다른 인터페이스에 대 한 포인터에 대 한 개체를 요청할 수 있습니다. [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) 하 고 [릴리스](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) 인터페이스의 참조 횟수를 구현 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [COM 소개](../atl/introduction-to-com.md)   
- [IUnknown 및 인터페이스 상속](/windows/desktop/com/iunknown-and-interface-inheritance)
+
+[IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 마다 다른 COM 인터페이스의 기본 인터페이스입니다.  이 인터페이스는 세 가지 메서드를 정의 합니다. [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)), [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref), 및 [릴리스](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release). [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) 인터페이스 사용자가 다른 인터페이스에 대 한 포인터에 대 한 개체를 요청할 수 있습니다. [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) 하 고 [릴리스](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) 인터페이스의 참조 횟수를 구현 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[COM 소개](../atl/introduction-to-com.md)   
+[IUnknown 및 인터페이스 상속](/windows/desktop/com/iunknown-and-interface-inheritance)
 

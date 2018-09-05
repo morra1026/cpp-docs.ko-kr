@@ -17,27 +17,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 197e9d538b51ec69c0d2b2ab5dd7395f98bee7e5
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 41068a81d52c0e30ef95cf364d759f35a39140c9
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958493"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43760018"
 ---
 # <a name="class-factories-classes"></a>클래스 팩터리 클래스
-다음 클래스를 구현 하거나 클래스 팩터리를 지원 합니다.  
-  
--   [CComClassFactory](../atl/reference/ccomclassfactory-class.md) 개체 만들기에 대 한 기본 클래스 팩터리를 제공 합니다.  
-  
--   [CComClassFactory2](../atl/reference/ccomclassfactory2-class.md) 라이선스를 통해 개체 생성을 제어 합니다.  
-  
--   [CComClassFactoryAutoThread](../atl/reference/ccomclassfactoryautothread-class.md) 개체를 여러 스레드 풀 아파트에서 만들 수 있습니다.  
-  
--   [CComClassFactorySingleton](../atl/reference/ccomclassfactorysingleton-class.md) 단일 개체를 만듭니다.  
-  
--   [CComCoClass](../atl/reference/ccomcoclass-class.md) 개체에 대 한 클래스 팩터리를 정의 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [클래스 개요](../atl/atl-class-overview.md)   
- [집계 및 클래스 팩터리 매크로](../atl/reference/aggregation-and-class-factory-macros.md)
+
+다음 클래스를 구현 하거나 클래스 팩터리를 지원 합니다.
+
+- [CComClassFactory](../atl/reference/ccomclassfactory-class.md) 개체 만들기에 대 한 기본 클래스 팩터리를 제공 합니다.
+
+- [CComClassFactory2](../atl/reference/ccomclassfactory2-class.md) 라이선스를 통해 개체 생성을 제어 합니다.
+
+- [CComClassFactoryAutoThread](../atl/reference/ccomclassfactoryautothread-class.md) 개체를 여러 스레드 풀 아파트에서 만들 수 있습니다.
+
+- [CComClassFactorySingleton](../atl/reference/ccomclassfactorysingleton-class.md) 단일 개체를 만듭니다.
+
+- [CComCoClass](../atl/reference/ccomcoclass-class.md) 개체에 대 한 클래스 팩터리를 정의 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[클래스 개요](../atl/atl-class-overview.md)   
+[집계 및 클래스 팩터리 매크로](../atl/reference/aggregation-and-class-factory-macros.md)
 

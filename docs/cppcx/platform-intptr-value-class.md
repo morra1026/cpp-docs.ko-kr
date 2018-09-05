@@ -18,11 +18,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: a97d77f0b84366c83f09f6a6c72afe1bbb25dc6d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42612131"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43758832"
 ---
 # <a name="platformintptr-value-class"></a>Platform::IntPtr 값 클래스
 플랫폼(32비트 또는 64비트)에 맞는 크기의 부호 있는 포인터 또는 핸들을 나타냅니다.  

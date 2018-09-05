@@ -10,11 +10,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: b8a36573e72b173180e89b48403829a9387d4ee8
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212507"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43757025"
 ---
 # <a name="obtaining-pointers-to-data-buffers-ccx"></a>데이터 버퍼에 대한 포인터 얻기(C++/CX)
 Windows 런타임에서 [Windows::Storage::Streams::IBuffer](https://msdn.microsoft.com/library/windows/apps/windows.storage.streams.ibuffer.aspx) 인터페이스를 언어 중립적인 스트림 기반 방법을 데이터 버퍼에 액세스할 수를 제공 합니다. C++에서는 robuffer.h에 정의되어 있는 Windows 런타임 라이브러리 IBufferByteAccess 인터페이스를 사용하여 내부 바이트 배열에 대한 원시 포인터를 가져올 수 있습니다. 이 방법을 사용하여 데이터의 불필요한 복사본을 만들지 않고 바이트 배열을 내부에서 수정할 수 있습니다.  

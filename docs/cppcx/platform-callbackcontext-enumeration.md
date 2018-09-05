@@ -16,11 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 4b80fe7749fdb2f91e300cff007c01001edfa557
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603040"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43755114"
 ---
 # <a name="platformcallbackcontext-enumeration"></a>Platform::CallbackContext 열거형
 콜백 함수(이벤트 처리기)가 실행되는 스레드 컨텍스트를 지정합니다.  

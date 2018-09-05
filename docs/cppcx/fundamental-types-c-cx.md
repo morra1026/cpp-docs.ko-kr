@@ -10,11 +10,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1e30e7ced4f4e761f7342811c533c1f361d0b1df
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597875"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43754197"
 ---
 # <a name="fundamental-types-ccx"></a>기본 형식(C++/CX)
 표준 c + + 기본 제공 유형과 더불어, C + + /cli CX 기본 Windows 런타임 표준 c + + 형식에 매핑되는 형식에 대 한 형식 정의 제공 하 여 Windows 런타임 아키텍처에서 정의 된 형식 시스템을 지 원하는... C + + /cli CX 부울, 문자 및 숫자 기본 형식 구현입니다. 이러한 형식 정의는 명시적으로 지정할 필요가 없는 `default` 네임스페이스에서 정의됩니다. 또한 C + + /cli CX 특정 Windows 런타임 형식 및 인터페이스에 대 한 래퍼 및 구체적 구현을 제공 합니다.  
@@ -46,7 +46,7 @@ ms.locfileid: "42597875"
 ## <a name="windows-runtime-types"></a>Windows 런타임 형식  
  다음 표에서 Windows 런타임 아키텍처에서 정의 되 고 C +에 빌드되는 몇 가지 추가 형식을 + CX 합니다. 개체 및 문자열은 참조 형식입니다. 기타 항목은 값 형식입니다. 이러한 형식은 모두 `Platform` 네임스페이스에서 선언됩니다. 전체 목록은 [Platform namespace](../cppcx/platform-namespace-c-cx.md)를 참조하세요.  
   
-|name|정의|  
+|이름|정의|  
 |----------|----------------|  
 |Object|모든 Windows 런타임 형식을 나타냅니다.|  
 |문자열|텍스트를 나타내는 일련의 문자입니다.|  

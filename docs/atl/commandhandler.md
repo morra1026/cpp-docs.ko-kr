@@ -16,50 +16,52 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ad124f0819dbfd9cfd0117cb91fbcffba05a400
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 4799d0b9c36ade8b1e203ca106605db75752b02f
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201278"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43752817"
 ---
 # <a name="commandhandler"></a>CommandHandler
-`CommandHandler` 메시지 맵에 COMMAND_HANDLER 매크로의 세 번째 매개 변수로 식별 된 함수입니다.  
-  
-## <a name="syntax"></a>구문  
-  
+
+`CommandHandler` 메시지 맵에 COMMAND_HANDLER 매크로의 세 번째 매개 변수로 식별 된 함수입니다.
+
+## <a name="syntax"></a>구문
+
 ```  
- 
-    LRESULT 
-    CommandHandler 
- (
+LRESULT CommandHandler(
     WORD wNotifyCode,  
     WORD wID,  
     HWND hWndCtl,  
     BOOL& bHandled);
-```  
-  
-#### <a name="parameters"></a>매개 변수  
- *wNotifyCode*  
- 알림 코드입니다.  
-  
- *wID*  
- 메뉴 항목, 컨트롤 또는 액셀러레이터 키의 식별자입니다.  
-  
- *hWndCtl*  
- 창 컨트롤에 대 한 핸들입니다.  
-  
- *bHandled*  
- 메시지 맵 집합 *bHandled* 하기 전에 true `CommandHandler` 라고 합니다. 경우 `CommandHandler` 메시지를 완전히 처리 하지 않는 설정 해야 *bHandled* 에 FALSE를 메시지에 추가 처리가 필요 합니다.  
-  
-## <a name="return-value"></a>반환 값  
- 메시지 처리의 결과입니다. 성공한 경우 0입니다.  
-  
-## <a name="remarks"></a>설명  
- 메시지 맵에서이 메시지 처리기를 사용 하 여 예제를 참조 하세요 [COMMAND_HANDLER](reference/message-map-macros-atl.md#command_handler)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [창 구현](../atl/implementing-a-window.md)   
- [메시지 맵](../atl/message-maps-atl.md)   
- [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)
+```
+
+#### <a name="parameters"></a>매개 변수
+
+*wNotifyCode*  
+알림 코드입니다.
+
+*wID*  
+메뉴 항목, 컨트롤 또는 액셀러레이터 키의 식별자입니다.
+
+*hWndCtl*  
+창 컨트롤에 대 한 핸들입니다.
+
+*bHandled*  
+메시지 맵 집합 *bHandled* 하기 전에 true `CommandHandler` 라고 합니다. 경우 `CommandHandler` 메시지를 완전히 처리 하지 않는 설정 해야 *bHandled* 에 FALSE를 메시지에 추가 처리가 필요 합니다.
+
+## <a name="return-value"></a>반환 값
+
+메시지 처리의 결과입니다. 성공한 경우 0입니다.
+
+## <a name="remarks"></a>설명
+
+메시지 맵에서이 메시지 처리기를 사용 하 여 예제를 참조 하세요 [COMMAND_HANDLER](reference/message-map-macros-atl.md#command_handler)합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[창 구현](../atl/implementing-a-window.md)   
+[메시지 맵](../atl/message-maps-atl.md)   
+[WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)
 

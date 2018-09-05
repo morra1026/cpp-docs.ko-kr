@@ -10,11 +10,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 4ef64ac81e36a298d89078997992343d92b7dbdc
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609187"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43756872"
 ---
 # <a name="crt-functions-not-supported-in-universal-windows-platform-apps"></a>유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수
 UWP(유니버설 Windows 플랫폼) 앱을 빌드할 때는 대부분 CRT(C 런타임) 함수를 사용할 수 없습니다. 경우에 따라 해결 방법을 사용할--예를 들어, Windows 런타임 또는 Win32 Api를 사용할 수 있습니다. 그러나 지원 API 또는 CRT 함수에 해당하는 기능을 UWP 앱에 적용할 수 없으므로 다른 경우에는 CRT 함수가 금지되었습니다. Windows 런타임에 대 한 지원 되는 다른 방법을 찾아보려면, 참조 [UWP 앱에서 Windows Api에 대 한 대안](/uwp/win32-and-com/alternatives-to-windows-apis-uwp)합니다.  

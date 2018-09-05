@@ -17,11 +17,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 029242a466b7fbac0d967596c114eb0ad45aa569
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603214"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43760671"
 ---
 # <a name="platformchangedstateexception-class"></a>Platform::ChangedStateException 클래스
 개체의 내부 상태가 변경되어 메서드의 결과가 무효화될 때 throw됩니다.  

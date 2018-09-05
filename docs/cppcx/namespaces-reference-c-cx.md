@@ -14,11 +14,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d74eb59fa1c8c8f53591c8452cb6940bc9ae1743
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601272"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43753112"
 ---
 # <a name="namespaces-reference-ccx"></a>네임스페이스 참조(C++/CX)
 설명서의이 섹션의 문서 설명 네임 스페이스 컴파일러를 지 원하는 C + + /cli CX 합니다.  

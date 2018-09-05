@@ -19,79 +19,90 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d629806582d7ad9902ef5ca0d9425d6f1ecd7d7
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 1670ff7ed53d05b1dfc09e6953650892b0335f61
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37879697"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43761471"
 ---
 # <a name="csimplemapequalhelper-class"></a>CSimpleMapEqualHelper 클래스
-이 클래스는에 대 한 도우미는 [CSimpleMap](../../atl/reference/csimplemap-class.md) 클래스입니다.  
-  
-## <a name="syntax"></a>구문  
-  
+
+이 클래스는에 대 한 도우미는 [CSimpleMap](../../atl/reference/csimplemap-class.md) 클래스입니다.
+
+## <a name="syntax"></a>구문
+
 ```
 template <class TKey, class TVal>  
 class CSimpleMapEqualHelper
-```  
-  
-#### <a name="parameters"></a>매개 변수  
- *TKey*  
- 주요 요소입니다.  
-  
- *TVal*  
- 값 요소입니다.  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="public-methods"></a>Public 메서드  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[CSimpleMapEqualHelper::IsEqualKey](#isequalkey)|(정적) 두 키가 같은지 테스트합니다.|  
-|[CSimpleMapEqualHelper::IsEqualValue](#isequalvalue)|(정적) 두 값이 같은지를 테스트합니다.|  
-  
-## <a name="remarks"></a>설명  
- 이 특성 클래스는 보완을 `CSimpleMap` 클래스입니다. 두 비교 하기 위한 메서드를 제공 `CSimpleMap` 개체 같음에 대 한 요소 (특히, 키 및 값 구성 요소). 기본적으로 키와 값 비교에 사용할 **operator==()**, 없지만 지도 자체 같음 연산자를 없는 복잡 한 데이터 형식에 있으면 필요한 추가 기능을 제공 하기이 클래스를 재정의할 수 있습니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** atlsimpcoll.h  
-  
-##  <a name="isequalkey"></a>  CSimpleMapEqualHelper::IsEqualKey  
- 두 키가 같은지 테스트합니다.  
-  
+```
+
+#### <a name="parameters"></a>매개 변수
+
+*TKey*  
+주요 요소입니다.
+
+*TVal*  
+값 요소입니다.
+
+## <a name="members"></a>멤버
+
+### <a name="public-methods"></a>Public 메서드
+
+|이름|설명|
+|----------|-----------------|
+|[CSimpleMapEqualHelper::IsEqualKey](#isequalkey)|(정적) 두 키가 같은지 테스트합니다.|
+|[CSimpleMapEqualHelper::IsEqualValue](#isequalvalue)|(정적) 두 값이 같은지를 테스트합니다.|
+
+## <a name="remarks"></a>설명
+
+이 특성 클래스는 보완을 `CSimpleMap` 클래스입니다. 두 비교 하기 위한 메서드를 제공 `CSimpleMap` 개체 같음에 대 한 요소 (특히, 키 및 값 구성 요소). 기본적으로 키와 값 비교에 사용할 **operator==()**, 없지만 지도 자체 같음 연산자를 없는 복잡 한 데이터 형식에 있으면 필요한 추가 기능을 제공 하기이 클래스를 재정의할 수 있습니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** atlsimpcoll.h
+
+##  <a name="isequalkey"></a>  CSimpleMapEqualHelper::IsEqualKey
+
+두 키가 같은지 테스트합니다.
+
 ```
 static bool IsEqualKey(const TKey& k1, const TKey& k2);
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *k1*  
- 첫 번째 키입니다.  
-  
- *k2*  
- 두 번째 키입니다.  
-  
-### <a name="return-value"></a>반환 값  
- 키가 같으면 false이 고, 그렇지 true를 반환 합니다.  
-  
-##  <a name="isequalvalue"></a>  CSimpleMapEqualHelper::IsEqualValue  
- 두 값이 같은지를 테스트합니다.  
-  
+```
+
+### <a name="parameters"></a>매개 변수
+
+*k1*  
+첫 번째 키입니다.
+
+*k2*  
+두 번째 키입니다.
+
+### <a name="return-value"></a>반환 값
+
+키가 같으면 false이 고, 그렇지 true를 반환 합니다.
+
+##  <a name="isequalvalue"></a>  CSimpleMapEqualHelper::IsEqualValue
+
+두 값이 같은지를 테스트합니다.
+
 ```
 static bool IsEqualValue(const TVal& v1, const TVal& v2);
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *v1*  
- 첫 번째 값입니다.  
-  
- *v2*  
- 두 번째 값입니다.  
-  
-### <a name="return-value"></a>반환 값  
- 값이 같으면 false이 고, 그렇지 true를 반환 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [CSimpleMapEqualHelperFalse 클래스](../../atl/reference/csimplemapequalhelperfalse-class.md)   
- [클래스 개요](../../atl/atl-class-overview.md)
+```
+
+### <a name="parameters"></a>매개 변수
+
+*v1*  
+첫 번째 값입니다.
+
+*v2*  
+두 번째 값입니다.
+
+### <a name="return-value"></a>반환 값
+
+값이 같으면 false이 고, 그렇지 true를 반환 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[CSimpleMapEqualHelperFalse 클래스](../../atl/reference/csimplemapequalhelperfalse-class.md)   
+[클래스 개요](../../atl/atl-class-overview.md)

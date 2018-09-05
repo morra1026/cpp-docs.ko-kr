@@ -29,11 +29,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: a63d72d9744928ca0871ed251cfaea254d0acb14
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42544521"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43751697"
 ---
 # <a name="cmfcribbongallerymenubutton-class"></a>CMFCRibbonGalleryMenuButton 클래스
 리본 갤러리가 포함된 리본 메뉴 단추를 구현합니다.  
@@ -66,7 +66,7 @@ class CMFCRibbonGalleryMenuButton : public CMFCToolBarMenuButton
 ### <a name="remarks"></a>설명  
  갤러리 메뉴 단추가 팝업 메뉴로 화살표와 함께 표시됩니다. 사용자가 이 단추를 클릭하면 이미지 갤러리가 표시됩니다. 갤러리 메뉴 단추를 생성하는 경우 이러한 이미지를 포함하는 이미지 목록을 지정해야 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 메뉴 단추에 글머리 기호 갤러리를 표시하는 방법을 보여 줍니다.  
   
 ```  
@@ -153,7 +153,7 @@ CMFCRibbonGalleryMenuButton(
 ### <a name="remarks"></a>설명  
  화살표가 있는 팝업 메뉴로 갤러리 메뉴 단추가 표시 됩니다. 사용자가 이 단추를 클릭하면 이미지 갤러리가 표시됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는의 생성자를 사용 하는 방법에 설명 합니다 `CMFCRibbonGalleryMenuButton` 클래스입니다. 이 코드 조각은의 일부인 합니다 [MS Office 2007 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_MSOffice2007Demo#8](../../mfc/reference/codesnippet/cpp/cmfcribbongallerymenubutton-class_1.cpp)]  

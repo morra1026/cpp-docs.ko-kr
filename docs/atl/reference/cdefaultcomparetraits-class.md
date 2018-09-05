@@ -19,89 +19,102 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ed197cc1f18821b65c249ee15a7e75f54fc7a32
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: f4983984c8bf1cad2996818625091b60cdb732a9
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884768"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43758559"
 ---
 # <a name="cdefaultcomparetraits-class"></a>CDefaultCompareTraits 클래스
-이 클래스는 기본 요소 비교 함수를 제공 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
+
+이 클래스는 기본 요소 비교 함수를 제공 합니다.
+
+## <a name="syntax"></a>구문
+
 ```
 template<typename T>  
 class CDefaultCompareTraits
-```  
-  
-#### <a name="parameters"></a>매개 변수  
- *T*  
- 컬렉션에 저장할 데이터의 형식입니다.  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="public-methods"></a>Public 메서드  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[CDefaultCompareTraits::CompareElements](#compareelements)|(정적) 두 요소가 같은지를 비교 하려면이 함수를 호출 합니다.|  
-|[CDefaultCompareTraits::CompareElementsOrdered](#compareelementsordered)|(정적) 크고 작은 요소를 확인 하려면이 함수를 호출 합니다.|  
-  
-## <a name="remarks"></a>설명  
- 이 클래스에는 컬렉션 클래스 개체에 저장 된 요소를 비교 하기 위한 두 가지 정적 함수가 포함 됩니다. 이 클래스에서 사용 되는 [CDefaultElementTraits 클래스](../../atl/reference/cdefaultelementtraits-class.md)합니다.  
-  
- 자세한 내용은 [ATL 컬렉션 클래스](../../atl/atl-collection-classes.md)합니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** atlcoll.h  
-  
-##  <a name="compareelements"></a>  CDefaultCompareTraits::CompareElements  
- 두 요소가 같은지를 비교 하려면이 함수를 호출 합니다.  
-  
+```
+
+#### <a name="parameters"></a>매개 변수
+
+*T*  
+컬렉션에 저장할 데이터의 형식입니다.
+
+## <a name="members"></a>멤버
+
+### <a name="public-methods"></a>Public 메서드
+
+|이름|설명|
+|----------|-----------------|
+|[CDefaultCompareTraits::CompareElements](#compareelements)|(정적) 두 요소가 같은지를 비교 하려면이 함수를 호출 합니다.|
+|[CDefaultCompareTraits::CompareElementsOrdered](#compareelementsordered)|(정적) 크고 작은 요소를 확인 하려면이 함수를 호출 합니다.|
+
+## <a name="remarks"></a>설명
+
+이 클래스에는 컬렉션 클래스 개체에 저장 된 요소를 비교 하기 위한 두 가지 정적 함수가 포함 됩니다. 이 클래스에서 사용 되는 [CDefaultElementTraits 클래스](../../atl/reference/cdefaultelementtraits-class.md)합니다.
+
+자세한 내용은 [ATL 컬렉션 클래스](../../atl/atl-collection-classes.md)합니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** atlcoll.h
+
+##  <a name="compareelements"></a>  CDefaultCompareTraits::CompareElements
+
+두 요소가 같은지를 비교 하려면이 함수를 호출 합니다.
+
 ```
 static bool CompareElements(const T& element1, const T& element2);
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *element1*  
- 첫 번째 요소입니다.  
-  
- *element2 요소*  
- 두 번째 요소입니다.  
-  
-### <a name="return-value"></a>반환 값  
- 요소가 같으면 false이 고, 그렇지 true를 반환 합니다.  
-  
-### <a name="remarks"></a>설명  
- 이 함수의 기본 구현은 같음 (**==**) 연산자. 단순 데이터 형식 이외의 개체에 대 한이 함수를 재정의할 수 해야 합니다.  
-  
-##  <a name="compareelementsordered"></a>  CDefaultCompareTraits::CompareElementsOrdered  
- 크고 작은 요소를 확인 하려면이 함수를 호출 합니다.  
-  
+```
+
+### <a name="parameters"></a>매개 변수
+
+*element1*  
+첫 번째 요소입니다.
+
+*element2 요소*  
+두 번째 요소입니다.
+
+### <a name="return-value"></a>반환 값
+
+요소가 같으면 false이 고, 그렇지 true를 반환 합니다.
+
+### <a name="remarks"></a>설명
+
+이 함수의 기본 구현은 같음 (**==**) 연산자. 단순 데이터 형식 이외의 개체에 대 한이 함수를 재정의할 수 해야 합니다.
+
+##  <a name="compareelementsordered"></a>  CDefaultCompareTraits::CompareElementsOrdered
+
+크고 작은 요소를 확인 하려면이 함수를 호출 합니다.
+
 ```
 static int CompareElementsOrdered(const T& element1, const T& element2);
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *element1*  
- 첫 번째 요소입니다.  
-  
- *element2 요소*  
- 두 번째 요소입니다.  
-  
-### <a name="return-value"></a>반환 값  
- 다음 테이블을 기반으로 하는 정수를 반환 합니다.  
-  
-|조건|반환 값|  
-|---------------|------------------|  
-|*element1* < *element2 요소*|<0|  
-|*element1* == *element2 요소*|0|  
-|*element1* > *element2 요소*|>0|  
-  
-### <a name="remarks"></a>설명  
- 기본 구현은이 함수를 사용 합니다 **==** 를 **\<**, 및 **>** 연산자입니다. 단순 데이터 형식 이외의 개체에 대 한이 함수를 재정의할 수 해야 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [클래스 개요](../../atl/atl-class-overview.md)
+```
+
+### <a name="parameters"></a>매개 변수
+
+*element1*  
+첫 번째 요소입니다.
+
+*element2 요소*  
+두 번째 요소입니다.
+
+### <a name="return-value"></a>반환 값
+
+다음 테이블을 기반으로 하는 정수를 반환 합니다.
+
+|조건|반환 값|
+|---------------|------------------|
+|*element1* < *element2 요소*|<0|
+|*element1* == *element2 요소*|0|
+|*element1* > *element2 요소*|>0|
+
+### <a name="remarks"></a>설명
+
+기본 구현은이 함수를 사용 합니다 **==** 를 **\<**, 및 **>** 연산자입니다. 단순 데이터 형식 이외의 개체에 대 한이 함수를 재정의할 수 해야 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[클래스 개요](../../atl/atl-class-overview.md)

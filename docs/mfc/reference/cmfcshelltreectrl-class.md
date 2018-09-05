@@ -39,11 +39,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7fc8ef005eea61597eb316090e26af7e83718dd8
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222778"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43760847"
 ---
 # <a name="cmfcshelltreectrl-class"></a>CMFCShellTreeCtrl 클래스
 합니다 `CMFCShellTreeCtrl` 클래스를 확장 [CTreeCtrl 클래스](../../mfc/reference/ctreectrl-class.md) 셸 항목의 계층 구조를 표시 하 여 기능 합니다.  

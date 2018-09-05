@@ -14,11 +14,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7def63199666a9dba0a1628031129ce584e0fcec
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605961"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43753531"
 ---
 # <a name="platformbox-class"></a>Platform::Box 클래스
 `Windows::Foundation::DateTime` 등의 값 형식 또는 `int` 등의 스칼라 형식을 `Platform::Object` 형식에 저장할 수 있습니다. 값 형식을 `Box` 으로 캐스팅할 때 boxing이 암시적으로 발생하므로 일반적으로 `Object^`를 명시적으로 사용할 필요가 없습니다.  
