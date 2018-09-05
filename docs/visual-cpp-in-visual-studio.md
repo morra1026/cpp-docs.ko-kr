@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb826c89106358c338230d46dc8743e1ee4d60f4
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6116a1b27595c6400edfcb79daafb362fb7aec5f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200454"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684493"
 ---
 # <a name="visual-c-in-visual-studio"></a>Visual Studio의 Visual C++
 
@@ -144,7 +144,7 @@ CPU에서 실행되는 비동기 및 병렬 알고리즘입니다.
 [C++ AMP(C++ Accelerated Massive Parallelism)](parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 GPU에서 실행되는 대규모 병렬 알고리즘입니다.
 
-[WRL(Windows 런타임 템플릿 라이브러리)](https://msdn.microsoft.com/library/windows/apps/hh438466.aspx)<br/>
+[WRL(Windows 런타임 템플릿 라이브러리)](windows/windows-runtime-cpp-template-library-wrl.md)<br/>
 UWP(유니버설 Windows 플랫폼) 앱 및 구성 요소
 
 [C++/CLI를 사용한 .NET 프로그래밍](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>

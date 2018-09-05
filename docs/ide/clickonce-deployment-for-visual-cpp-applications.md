@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59649aeee3b0f63b496b967722205001a3de1619
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 82a290eb7695bbcd7c03cda0351445519352e80a
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43213535"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677726"
 ---
 # <a name="clickonce-deployment-for-visual-c-applications"></a>Visual C++ 응용 프로그램의 ClickOnce 배포
 Visual Studio는 Windows 응용 프로그램을 배포하기 위한 두 가지 기술인 ClickOnce 배포 및 [Windows Installer](/windows/desktop/Msi/windows-installer-portal) 배포를 제공합니다.  
@@ -53,7 +53,6 @@ Visual Studio는 Windows 응용 프로그램을 배포하기 위한 두 가지 �
  [Makecert.exe(인증서 작성 도구)](https://msdn.microsoft.com/library/windows/desktop/aa386968)   
  [데스크톱 응용 프로그램 배포](../ide/deploying-native-desktop-applications-visual-cpp.md)   
  [응용 프로그램, 서비스 및 구성 요소 배포](/visualstudio/deployment/deploying-applications-services-and-components)   
- [Windows Installer 배포](https://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)   
  [ClickOnce 보안 및 배포](/visualstudio/deployment/clickonce-security-and-deployment)   
  [부트스트래퍼 패키지 만들기](/visualstudio/deployment/creating-bootstrapper-packages)   
  [C++/CLI를 사용한 .NET 프로그래밍 (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)   

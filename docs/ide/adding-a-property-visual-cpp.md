@@ -15,19 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00b19fa7166e6edad05d729c5a738a2a827086ae
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e121cf9738910b105f5bb1933592e67d334f8937
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212797"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685328"
 ---
 # <a name="adding-a-property-visual-c"></a>속성 추가(Visual C++)
 [속성 추가 마법사](../ide/names-add-property-wizard.md)를 사용하여 프로젝트의 인터페이스에 메서드를 추가할 수 있습니다.  
   
 ### <a name="to-add-a-property-to-your-object"></a>개체에 속성을 추가하려면  
   
-1.  [클래스 뷰](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925)에서 속성을 추가할 인터페이스의 이름을 마우스 오른쪽 단추로 클릭합니다.  
+1.  [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)에서 속성을 추가할 인터페이스의 이름을 마우스 오른쪽 단추로 클릭합니다.  
   
     > [!NOTE]
     >  프로젝트에 특성이 지정되지 않은 경우 라이브러리 노드 내에 중첩된 dispinterface에 속성을 추가할 수도 있습니다.  

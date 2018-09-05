@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fc0bc1789e4fc4f11b9d0becfda656a42d0ec95
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 29ab603001405056626af0debbde7b6f8ef78704
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214198"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690577"
 ---
 # <a name="file-types-created-for-visual-c-projects"></a>Visual C++ 프로젝트용으로 만들어지는 파일 형식
 이 항목에서는 클래식 데스크톱 응용 프로그램용 Visual C++ 프로젝트와 관련된 파일의 모든 형식에 대해 설명합니다. 프로젝트 형식 및 마법사에서 선택한 옵션에 따라 프로젝트에 포함되는 실제 파일이 달라집니다.  
@@ -73,7 +73,7 @@ ms.locfileid: "43214198"
 |.HxC|프로젝트|도움말 프로젝트 파일|  
 |.ico|리소스|아이콘 비트맵 그래픽 파일|  
 |.idb|컴파일|소스 파일과 클래스 정의 간의 종속성 정보가 포함된 상태 파일. 최소 다시 빌드 및 증분 컴파일 중에 컴파일러에 의해 사용될 수 있습니다. .idb 이름을 지정하려면 [/Fd](../build/reference/fd-program-database-file-name.md) 컴파일러 옵션을 사용합니다. 자세한 내용은 [/Gm(최소 다시 빌드 가능)](../build/reference/gm-enable-minimal-rebuild.md) 을 참조하세요.|  
-|.idl|컴파일|IDL(Interface Definition Language) 파일. 자세한 내용은 Windows SDK의 [인터페이스 정의(IDL) 파일](https://msdn.microsoft.com/library/windows/desktop/aa378712)을 참조하세요.|  
+|.idl|컴파일|IDL(Interface Definition Language) 파일. 자세한 내용은 Windows SDK의 [인터페이스 정의(IDL) 파일](/windows/desktop/Rpc/the-interface-definition-language-idl-file)을 참조하세요.|  
 |.ilk|연결|증분 링크 파일. 자세한 내용은 [/INCREMENTAL](../build/reference/incremental-link-incrementally.md) 을 참조하세요.|  
 |.map|연결|링커 정보가 포함된 텍스트 파일. 맵 파일 이름을 지정하려면 [/Fm](../build/reference/fm-name-mapfile.md) 컴파일러 옵션을 사용합니다. 자세한 내용은 [/MAP](../build/reference/map-generate-mapfile.md) 을 참조하세요.|  
 |.mfcribbon-ms|리소스|리본의 단추, 컨트롤 및 특성을 정의하는 XML 코드가 포함된 리소스 파일. 자세한 내용은 [Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)을 참조하세요.|  
@@ -81,7 +81,7 @@ ms.locfileid: "43214198"
 |.pch|디버그|미리 컴파일된 헤더 파일|  
 |.rc, .rc2|리소스|리소스를 생성하는[리소스 스크립트 파일](../windows/working-with-resource-files.md) |  
 |.sbr|컴파일|소스 브라우저 중간 파일. [BSCMAKE](../build/reference/bscmake-options.md)의 입력 파일입니다.|  
-|.sln|솔루션|[솔루션](https://msdn.microsoft.com/a45c299d-69f5-4b67-879d-1383417df0a7) 파일입니다.|  
+|.sln|솔루션|[솔루션](/visualstudio/ide/solutions-and-projects-in-visual-studio) 파일입니다.|  
 |.suo|솔루션|솔루션 옵션 파일|  
 |.txt|리소스|텍스트 파일(일반적으로 "추가 정보" 파일)|  
 |.vap|프로젝트|Visual Studio Analyzer 프로젝트 파일|  
