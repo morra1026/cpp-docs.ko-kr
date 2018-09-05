@@ -1,7 +1,7 @@
 ---
 title: ML 심각 하지 않은 오류 A2066 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,19 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92cc0daf183f617767ff5ff119c5e95b8f34cd51
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 8cf5cbe7d5c77da7f129cbc40ffa97f4051afca6
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054265"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690254"
 ---
 # <a name="ml-nonfatal-error-a2066"></a>ML 심각하지 않은 오류 A2066
-**호환 되지 않는 CPU 모드와 세그먼트 크기**  
-  
- 세그먼트를 열려고 시도 **USE16**, **USE32**, 또는 **플랫** 32 비트에서 16 비트 CPU에 변경 또는 지정 된 CPU와 호환 되지 않은 특성 세그먼트입니다.  
-  
- **USE32** 및 **플랫** 는.386 또는 큰 프로세서 지시문 특성 뒤에 야 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [ML 오류 메시지](../../assembler/masm/ml-error-messages.md)
+
+**호환 되지 않는 CPU 모드 및 세그먼트 크기**
+
+사용 하 여 세그먼트를 열려는 시도가 있었습니다를 **USE16**를 **USE32**, 또는 **플랫** 지정 된 CPU를 사용 하 여 또는 32 비트에서 16 비트 CPU를 변경 하려면 호환 되지 않은 특성 세그먼트입니다.
+
+합니다 **USE32** 하 고 **플랫** 특성은.386 또는 큰 프로세서 지시문 뒤에 야 합니다.
+
+## <a name="see-also"></a>참고자료
+
+[ML 오류 메시지](../../assembler/masm/ml-error-messages.md)<br/>

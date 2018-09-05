@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c229a07d7d8dbf8d74e487c99e6f79b8203f04f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 4a12e5abcc02017acbd06c841cc9ab62a9d25bdf
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202647"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688002"
 ---
 # <a name="cspinbuttonctrl-class"></a>CSpinButtonCtrl 클래스
 Windows의 공용 스핀 단추 컨트롤의 기능을 제공합니다.  
@@ -154,7 +154,7 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>매개 변수  
  *dwExStyle*  
- 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 목록이 확장된 창 스타일에 대 한 참조를 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK의 합니다.  
+ 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 목록이 확장된 창 스타일에 대 한 참조를 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK의 합니다.  
   
  *dwStyle*  
  스핀 단추 컨트롤의 스타일을 지정합니다. 스핀 단추 컨트롤 스타일의 조합을 컨트롤에 적용 됩니다. 이러한 스타일에 설명 되어 있습니다 [Up-down 컨트롤 스타일](/windows/desktop/Controls/up-down-control-styles) Windows SDK에 있습니다.  

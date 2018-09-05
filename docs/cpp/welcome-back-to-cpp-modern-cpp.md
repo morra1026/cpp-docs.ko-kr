@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d626385523cb957b44589784c2e69539b5ed8fca
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 4c659262d11d929e94958cee687103648270db23
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42572218"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679283"
 ---
 # <a name="welcome-back-to-c-modern-c"></a>C++의 진화(최신 C++)
 C++는 전세계적으로 가장 널리 사용되는 프로그래밍 언어 중 하나입니다. 잘 작성된 C++ 프로그램은 빠르고 효율적입니다. 이 언어는 재미있고 흥미로운 게임에서 고성능 과학 소프트웨어, 장치 드라이버, 포함 프로그램 및 Windows 클라이언트 응용 프로그램에 이르기까지 다양한 응용 프로그램을 만드는 데 사용할 수 있으며 유연성이 다른 언어보다 훨씬 더 뛰어납니다. C++는 20년 이상 이러한 문제와 기타 문제를 해결하는 데 사용되었습니다. 여러분은 모르겠지만, 오래된 C 스타일 프로그래밍을 접고 대신 최신 C++를 사용하는 C++ 프로그래머의 수가 점점 증가하고 있습니다.  
@@ -133,7 +133,7 @@ void f()
   
 -   [ABI 경계의 이식성](../cpp/portability-at-abi-boundaries-modern-cpp.md)  
   
- 자세한 내용은 StackOverflow 문서를 참조 하세요. [어떤 c + + 관용구는 C + + 11에서 사용 되지 않습니다](http://go.microsoft.com/fwlink/p/?linkid=402836)  
+ 자세한 내용은 StackOverflow 문서를 참조 하세요 [c + + 관용구는 C + + 11에서 사용 되지 않는](https://stackoverflow.com/questions/9299101/which-c-idioms-are-deprecated-in-c11)합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [C++ 언어 참조](../cpp/cpp-language-reference.md)   

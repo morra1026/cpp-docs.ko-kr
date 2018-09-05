@@ -58,12 +58,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f311f7b73e72f47f363cfd5645c97b57eda5b480
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b7fd978390a2b991da2bddedbab1c05497709d67
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200878"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688145"
 ---
 # <a name="cpagerctrl-class"></a>CPagerCtrl 클래스
 `CPagerCtrl` 클래스는 윈도우에 맞지 않는 포함된 창을 보기로 스크롤할 수 있는 Windows 페이저 컨트롤을 래핑합니다.  
@@ -183,7 +183,7 @@ virtual BOOL CreateEx(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *dwExStyle*|컨트롤에 적용 될 확장된 스타일의 비트 조합입니다. 자세한 내용은 참조는 *dwExStyle* 의 매개 변수를 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) 함수입니다.|  
+|[in] *dwExStyle*|컨트롤에 적용 될 확장된 스타일의 비트 조합입니다. 자세한 내용은 참조는 *dwExStyle* 의 매개 변수를 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) 함수입니다.|  
 |[in] *dwStyle*|비트 조합 (OR) [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles) 하 고 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles) 컨트롤을 적용할 수 있습니다.|  
 |[in] *rect*|에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 클라이언트 좌표로 나타낸에서 컨트롤의 크기와 위치를 포함 하는 구조입니다.|  
 |[in] *pParentWnd*|에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 컨트롤의 부모 창입니다. 이 매개 변수는 NULL 일 수 없습니다.|  

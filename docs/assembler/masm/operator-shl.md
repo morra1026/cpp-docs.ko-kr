@@ -1,7 +1,7 @@
 ---
 title: 연산자 SHL | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,22 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b09d3a8704dcd1772dc6f0f48c2908101f8b43f
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 31f7c8dadd9f619ebdb53cd6279c4da68bc8af18
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32055933"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693382"
 ---
 # <a name="operator-shl"></a>연산자 SHL
-결과의 비트를 시프트를 반환 *식* 왼쪽 *count* 비트의 번호입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-expression SHL count  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [연산자 참조](../../assembler/masm/operators-reference.md)
+
+비트를 시프트 결과 반환 합니다 *식을* 왼쪽 *개수* 비트 수입니다.
+
+## <a name="syntax"></a>구문
+
+> 식 SHL 개수
+
+## <a name="see-also"></a>참고자료
+
+[연산자 참조](../../assembler/masm/operators-reference.md)<br/>

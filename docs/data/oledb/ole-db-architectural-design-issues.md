@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5b080945309732bec06c63eb665bbf6dd5f4acb5
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 2b0a5c568a774d0aed05d702454664e653989401
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39340565"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676838"
 ---
 # <a name="ole-db-architectural-design-issues"></a>OLE DB 아키텍처 설계 문제
 OLE DB 응용 프로그램을 시작 하기 전에 다음과 같은 문제를 고려해 야 합니다.  
@@ -39,15 +39,9 @@ OLE DB 응용 프로그램을 시작 하기 전에 다음과 같은 문제를 �
  **다른 데이터 액세스 기술 (예: ADO, ODBC 또는 DAO)를 사용 하 여 이전 코드 있습니까?**  
  기술 (예: ADO 구성 요소를 사용 하 여 OLE DB 구성 요소를 사용 하 여 및 ODBC 코드 OLE DB로 마이그레이션)의 가능한 조합 지정, Visual c + + 설명서의 범위를 벗어납니다 모든 상황을 포함 합니다. 그러나 다양 한 시나리오를 다루는 여러 문서 다음 Microsoft 웹 사이트에서 사용할 수 있습니다.  
   
--   [Microsoft 도움말 및 지원](http://go.microsoft.com/fwlink/p/?linkid=148218)  
+-   [Microsoft 도움말 및 지원](https://support.microsoft.com/)  
   
--   [Microsoft 데이터 액세스 기술 문서 개요](http://go.microsoft.com/fwlink/p/?linkid=148217)  
-  
--   [Visual Studio 솔루션 센터](http://go.microsoft.com/fwlink/p/?linkid=148215)  
-  
--   [Microsoft.com 검색](http://search.microsoft.com/)  
-  
- 검색을 수행 하는 경우 시나리오;에 가장 잘 맞는 키워드의 조합을 입력합니다 예를 들어: ADO 개체는 OLE DB 공급자를 사용 하는 경우에 부울 검색을 시도해 보세요 사용 하 여 **"OLE DB 및 ADO**합니다. 이전 DAO 코드 ODBC로 마이그레이션하려는 경우 "모든 단어"를 선택 하 고 같은 문자열을 지정할 **마이그레이션 DAO**합니다.  
+-   [Microsoft 데이터 액세스 기술 문서 개요](https://msdn.microsoft.com/en-us/library/ms810811.aspx)  
   
 ## <a name="see-also"></a>참고 항목  
  [OLE DB 프로그래밍](../../data/oledb/ole-db-programming.md)   

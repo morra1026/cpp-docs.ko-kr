@@ -1,7 +1,7 @@
 ---
 title: 연산자 LROFFSET | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,22 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 245dc24b56557c26134712ca28c75945bdd97f5a
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: dd04a306e85fbb3627729355dc05d55197d91134
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32056592"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678534"
 ---
 # <a name="operator-lroffset"></a>연산자 LROFFSET
-오프셋을 반환 *식*합니다. 와 동일 **오프셋**, 하지만 Windows 코드 세그먼트를 다시 할당할 수 있는 로더 해결된 오프셋을 생성 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-LROFFSET expression  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [연산자 참조](../../assembler/masm/operators-reference.md)
+
+오프셋을 반환 *식*합니다. 동일 **오프셋**, Windows 코드 세그먼트를 다시 할당할 수 있는 로더 해결된 오프셋을 생성 합니다.
+
+## <a name="syntax"></a>구문
+
+> LROFFSET 식
+
+## <a name="see-also"></a>참고자료
+
+[연산자 참조](../../assembler/masm/operators-reference.md)<br/>

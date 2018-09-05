@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 47914999a48b4d5924a25ad1688ee83c533398f3
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: cfdf224ed96484af52a84c270c93df87821a444f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218900"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684601"
 ---
 # <a name="how-to-migrate-to-clr"></a>방법: /clr로 마이그레이션
 이 항목에서는 네이티브 코드를 컴파일할 때 발생 하는 문제를 설명 **/clr** (참조 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md) 자세한). **/clr** Visual c + + 모듈을 호출 하 고 관리 되지 않는 모듈을 사용 하 여 호환성을 유지 하면서.NET 어셈블리에서 호출할 수 있습니다. 참조 [혼합형 (네이티브 및 관리) 어셈블리](../dotnet/mixed-native-and-managed-assemblies.md) 하 고 [네이티브 및.NET 상호 운용성](../dotnet/native-and-dotnet-interoperability.md) 사용 하 여 컴파일하면의 이점에 대 한 자세한 내용은 **/clr**합니다.  
@@ -90,7 +90,7 @@ COMObj2->Method(args);  // C++ equivalent
  새 프로젝트 구성에 대 한 프로젝트를 컴파일하고 Visual Studio 2010에서 실행 후 만들어야 **/clr** 기본 구성을 수정 대신 합니다. **/clr** 일부 컴파일러 옵션을 사용 하 여 호환 되지 않습니다 별도 구성이 만들면를 네이티브 또는 관리 되는 프로젝트를 빌드할 수 있습니다. 때 **/clr** 속성 페이지 대화 상자와 호환 되지 않는 프로젝트 설정에서에서 선택한 **/clr** 사용 하지 않도록 설정 됩니다 (사용 안 함된 옵션 경우 자동으로 복원 되지 않습니다 및 **/clr** 이후에 선택 하지 않은).  
   
 ### <a name="create-new-project-configurations"></a>새 프로젝트 구성 만들기  
- 사용할 수 있습니다 **에서 설정 복사** 옵션을 [새 프로젝트 구성 대화 상자](https://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be) 기존 프로젝트 설정에 따라 프로젝트 구성을 만들려면. 이렇게 하려면 한 번 및 한 번 릴리스 구성을 디버그 구성에 대 한 합니다. 후속 변경 내용에 적용할 수 있습니다 합니다 **/clr** -관련 구성만 원래 프로젝트 구성은 그대로입니다.  
+ 사용할 수 있습니다 **에서 설정 복사** 옵션을 **새 프로젝트 구성 대화 상자** (**빌드** > **ConfigurationManager**  >  **활성 솔루션 구성이** > **새**) 기존 프로젝트 설정에 따라 프로젝트 구성을 만들 수 있습니다. 이렇게 하려면 한 번 및 한 번 릴리스 구성을 디버그 구성에 대 한 합니다. 후속 변경 내용에 적용할 수 있습니다 합니다 **/clr** -관련 구성만 원래 프로젝트 구성은 그대로입니다.  
   
  사용자 지정 빌드 규칙을 사용 하는 프로젝트에 특별히 주의 해야 합니다.  
   

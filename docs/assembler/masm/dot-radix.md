@@ -1,7 +1,7 @@
 ---
 title: . 기 수 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,22 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7dba4fcfd3d589727cc4fc76ec9dd6a2890ae983
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 95617e9d99b2f07c8aadde94e0b1a74614d34efd
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32056664"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685647"
 ---
 # <a name="radix"></a>.RADIX
-값에 2-16 범위에 기본 기 수 설정 *식*합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-.RADIX expression  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+값으로 2 ~ 16 사이의 범위에 기본 기 수 설정 *식*합니다.
+
+## <a name="syntax"></a>구문
+
+> . 기 수 식
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

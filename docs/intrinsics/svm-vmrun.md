@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4711238c45955ee7067e3e418212bcdb0fae09ca
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 086fbbc2a25c4af2b09f40d83ac0b20399860ca1
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540505"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679808"
 ---
 # <a name="svmvmrun"></a>__svm_vmrun
 **Microsoft 전용**  
@@ -46,7 +46,7 @@ void __svm_vmrun(
 ## <a name="remarks"></a>설명  
  `__svm_vmrun` 함수를 사용 하 여 최소한의 정보는 VMCB에서 가상 컴퓨터 게스트 코드 실행을 시작 합니다. 사용 된 [__svm_vmsave](../intrinsics/svm-vmsave.md) 또는 [__svm_vmload](../intrinsics/svm-vmload.md) 을 복잡 한 인터럽트를 처리 하거나 다른 게스트도 전환 하는 자세한 정보가 필요한 경우 함수입니다.  
   
- 합니다 `__svm_vmrun` 함수는 동일 합니다 `VMRUN` 컴퓨터 명령입니다. 이 함수는 게스트 운영 체제 및 해당 응용 프로그램과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용은 문서를 검색 "AMD64 아키텍처 프로그래머 수동 볼륨 2: 시스템 프로그래밍" 문서 번호 24593, 3.11 이상에서 수정 합니다 [AMD corporation](http://go.microsoft.com/fwlink/p/?linkid=23746) 사이트입니다.  
+ 합니다 `__svm_vmrun` 함수는 동일 합니다 `VMRUN` 컴퓨터 명령입니다. 이 함수는 게스트 운영 체제 및 해당 응용 프로그램과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용은 문서를 검색 "AMD64 아키텍처 프로그래머 수동 볼륨 2: 시스템 프로그래밍" 문서 번호 24593, 3.11 이상에서 수정 합니다 [AMD corporation](https://developer.amd.com/resources/developer-guides-manuals/) 사이트입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   

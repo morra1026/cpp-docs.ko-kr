@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 677518f45fdfb721027cc67b0210e9b437bed859
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: cc74f89708132b0895c8980538b852c15087b5e6
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43213152"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682329"
 ---
 # <a name="cpanedialog-class"></a>CPaneDialog 클래스
 `CPaneDialog` 클래스는 도킹 가능한 모덜리스 대화 상자를 지원 합니다.  
@@ -58,7 +58,7 @@ class CPaneDialog : public CDockablePane
 |`CPaneDialog::OnEraseBkgnd`|처리를 [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) 메시지입니다. (재정의 [CWnd::OnEraseBkgnd](../../mfc/reference/cwnd-class.md#onerasebkgnd).)|  
 |`CPaneDialog::OnLButtonDblClk`|처리를 [WM_LBUTTONDBLCLK](/windows/desktop/inputdev/wm-lbuttondblclk) 메시지입니다. (재정의 [CWnd::OnLButtonDblClk](../../mfc/reference/cwnd-class.md#onlbuttondblclk).)|  
 |`CPaneDialog::OnLButtonDown`|처리를 [WM_LBUTTONDOWN](/windows/desktop/inputdev/wm-lbuttondown) 메시지입니다. (재정의 [CWnd::OnLButtonDown](../../mfc/reference/cwnd-class.md#onlbuttondown).)|  
-|`CPaneDialog::OnUpdateCmdUI`|대화 상자 창에 업데이트 하기 위해 프레임 워크에서 호출 됩니다. (재정의 [cdockablepane:: Onupdatecmdui](https://msdn.microsoft.com/5dd61606-1c12-40d4-b024-f3839aa5e2e0).)|  
+|`CPaneDialog::OnUpdateCmdUI`|대화 상자 창에 업데이트 하기 위해 프레임 워크에서 호출 됩니다. (재정의 [cdockablepane:: Onupdatecmdui](cdockablepane-class.md).)|  
 |`CPaneDialog::OnWindowPosChanging`|처리를 [WM_WINDOWPOSCHANGING](/windows/desktop/winmsg/wm-windowposchanging) 메시지입니다. (재정의 [CWnd::OnWindowPosChanging](../../mfc/reference/cwnd-class.md#onwindowposchanging).)|  
 |[CPaneDialog::SetOccDialogInfo](#setoccdialoginfo)|OLE 컨트롤 컨테이너의 대화 상자에 대 한 템플릿을 지정 합니다.|  
   

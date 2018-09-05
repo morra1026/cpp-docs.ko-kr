@@ -22,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2e9d9fc72791572d840b88f1d74eb736e3ad65c7
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d6397e6e8355e8361ea95f03fc9b67d2f3211478
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43213712"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685575"
 ---
 # <a name="commands-and-tables"></a>명령 및 테이블
 명령 및 테이블에 액세스할 수 있습니다; 행 집합 즉, 행 집합을 열고, 명령을 실행 및 열을 바인딩하십시오. 합니다 [CCommand](../../data/oledb/ccommand-class.md) 하 고 [CTable](../../data/oledb/ctable-class.md) 클래스 각각 명령 및 테이블 개체를 인스턴스화합니다. 이러한 클래스에서 파생 [CAccessorRowset](../../data/oledb/caccessorrowset-class.md) 다음 그림과 같습니다.  
@@ -43,7 +43,7 @@ ms.locfileid: "43213712"
   
 -   명령을 지 원하는 데이터 소스를 사용할 수 있습니다는 `CCommand` 클래스를 대신 합니다. 명령을 실행 하려면 호출 [열려](../../data/oledb/ccommand-open.md) 이 클래스에 있습니다. 호출할 수 있습니다 `Prepare` 를 두 번 이상 실행 하려는 명령을 준비를 합니다.  
   
-     `CCommand` 세 개의 템플릿 인수가:는 접근자 형식, 행 집합 형식 및 결과 형식 (`CNoMultipleResults`, 기본적으로 또는 `CMultipleResults`). 지정 하는 경우 `CMultipleResults`의 `CCommand` 지 원하는 클래스를 `IMultipleResults` 인터페이스 및 여러 행 집합을 처리 합니다. 합니다 [DBVIEWER](https://msdn.microsoft.com/07620f99-c347-4d09-9ebc-2459e8049832) 샘플에서는 여러 결과 처리 하는 방법을 보여 줍니다.  
+     `CCommand` 세 개의 템플릿 인수가:는 접근자 형식, 행 집합 형식 및 결과 형식 (`CNoMultipleResults`, 기본적으로 또는 `CMultipleResults`). 지정 하는 경우 `CMultipleResults`의 `CCommand` 지 원하는 클래스를 `IMultipleResults` 인터페이스 및 여러 행 집합을 처리 합니다. 합니다 [DBVIEWER](https://github.com/Microsoft/VCSamples) 샘플에서는 여러 결과 처리 하는 방법을 보여 줍니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)

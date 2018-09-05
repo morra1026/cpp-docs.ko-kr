@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e941c15d734ce85513696d60da13184cfbfd2355
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6cb76b2802b1f582621e3e0bacb565a974894d75
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610055"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693347"
 ---
 # <a name="security-best-practices-for-c"></a>C++의 최선의 보안 구현 방법
 
@@ -78,7 +78,8 @@ ms.locfileid: "42610055"
 -   보안  
   
 ## <a name="windows-application-verifier"></a>Windows 응용 프로그램 검증 도구  
- 응용 프로그램 검증 도구(AppVerifier)는 잠재적인 응용 프로그램 호환성, 안정성 및 보안 문제를 식별하는 데 도움이 될 수 있습니다.  
+ 합니다 [Application Verifier (AppVerifier)](/windows-hardware/drivers/debugger/application-verifier
+) 통해 잠재적인 응용 프로그램 호환성, 안정성 및 보안 문제를 식별할 수 있습니다.  
   
  AppVerifier는 응용 프로그램에서 운영 체제를 사용하는 방식을 모니터링합니다. 응용 프로그램이 실행되는 동안 파일 시스템, 레지스트리, 메모리 및 API를 감시하고 발견된 문제에 대한 소스 코드 수정을 권장합니다.  
   
@@ -89,8 +90,6 @@ ms.locfileid: "42610055"
 -   응용 프로그램에서 메모리 관련 문제를 검사합니다.  
 
 -   응용 프로그램에서 잠재적인 보안 문제를 식별합니다.  
-  
- AppVerifier에서 사용할 수 있는 응용 프로그램 호환성 도구 키트의 일부인 합니다 [응용 프로그램 호환성](http://go.microsoft.com/fwlink/p/?linkid=91277) TechNet 웹 사이트입니다.  
   
 
 ## <a name="windows-user-accounts"></a>Windows 사용자 계정  

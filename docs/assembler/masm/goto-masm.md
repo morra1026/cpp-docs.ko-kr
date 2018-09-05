@@ -1,7 +1,7 @@
 ---
 title: GOTO (MASM) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,26 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9eecdab2fe91de0aae656b37c6fddafe658e60c0
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: b0be678e2d39389cbc551c386c1890f799124b5b
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43694002"
 ---
 # <a name="goto-masm"></a>GOTO (MASM)
-표시 된 줄에 어셈블리를 전송 **: * * * macrolabel*합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-GOTO   
-macrolabel  
-  
-```  
-  
-## <a name="remarks"></a>설명  
- **GOTO** 안에서 허용 [매크로](../../assembler/masm/macro.md), [에 대 한](../../assembler/masm/for-masm.md), [FORC](../../assembler/masm/forc.md), [반복](../../assembler/masm/repeat.md), 및 **동안**블록입니다. 레이블 줄에서 유일한 지시문 및 선행 콜론으로와 야 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+표시 된 줄에 어셈블리를 전송할 **:**_macrolabel_합니다.
+
+## <a name="syntax"></a>구문
+
+> **GOTO** *macrolabel*
+
+## <a name="remarks"></a>설명
+
+**GOTO** 안에서 허용 됩니다 [매크로](macro.md)를 [에 대 한](for-masm.md)를 [FORC](forc.md)를 [반복](repeat.md), 및 [하는동안](while-masm.md)블록입니다. 합니다 *macrolabel* 대상 줄에서 유일한 지시문 이어야 하며 선행 콜론 뒤에 야 합니다.
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

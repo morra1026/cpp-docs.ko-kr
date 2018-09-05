@@ -1,7 +1,7 @@
 ---
 title: . 종료 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,25 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eade5df90a385c790587ee8d292703939d6f4d3a
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 02c60bfcb80a70779a54c8f3b194fdcf68408d17
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32053729"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693312"
 ---
 # <a name="exit"></a>.EXIT
-종료 코드를 생성합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-.EXIT [[expression]]  
-```  
-  
-## <a name="remarks"></a>설명  
- 선택적 반환 *식* 셸에 있습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+종료 코드를 생성합니다.
+
+## <a name="syntax"></a>구문
+
+> . 종료 [[expression]]
+
+## <a name="remarks"></a>설명
+
+선택적 반환 *식* 셸로입니다.
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

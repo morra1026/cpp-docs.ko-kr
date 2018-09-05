@@ -5,6 +5,6 @@ Visual Studio 컴파일러 및 빌드 도구를 다양 한 종류의 오류 및 
 > [!NOTE]
 > 모든 Visual Studio 오류 또는 경고 설명 되어 있습니다. 대부분의 경우 진단 메시지의 모든 사용할 수 있는 정보를 제공 합니다. 사용할 때이 페이지에 연결 하는 경우 **F1** 를 알려 주시면 및 생각 오류 또는 경고 메시지가 추가 설명이 필요 합니다. 이 페이지에서 피드백 양식을 사용을 의견 섹션에 주석을 추가 하거나 [GitHub에서 문제를 발생 시키는](https://github.com/MicrosoftDocs/cpp-docs/issues)합니다. 또한 사용자 의견 보내기 하 고 IDE에서 버그를 입력할 수 있습니다. Visual Studio에서 메뉴 모음으로 이동 하 고 선택 **도움말 > 사용자 의견 보내기 > 문제 보고**를 사용 하 여 제안을 제출 하거나 **도움말 > 사용자 의견 보내기 > 제안 사항 보내기**합니다.
 
-Microsoft의 공개 포럼에서 오류 및 경고에 대 한 추가 지원을 찾아볼 수도 있습니다. 오류 또는 경고 번호를 검색할 수 있습니다 합니다 [개발자 커뮤니티](https://go.microsoft.com/fwlink/p/?linkid=820594) 사이트입니다. 합니다 [Visual c + + 언어](http://go.microsoft.com/fwlink/p/?linkid=158195) 포럼 질문 및 토론 MSVC 컴파일러 및 c + + 언어 구문에 대 한입니다. 합니다 [Visual c + + 일반](http://go.microsoft.com/fwlink/p/?linkid=158194) 포럼은 다른 포럼에서 다루지 않는 Visual c + +에 대 한 질문입니다. 또한 오류와 경고를 검색 하 고에 대 한 질문 수 있습니다 [Stack Overflow](http://stackoverflow.com/) 솔루션을 찾으려고 합니다.
+Microsoft의 공개 포럼에서 오류 및 경고에 대 한 추가 지원을 찾아볼 수도 있습니다. 오류 또는 경고 번호를 검색할 수 있습니다 합니다 [개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/8/index.html) 사이트입니다. 또한 오류와 경고를 검색 하 고에 대 한 질문 수 있습니다 [Stack Overflow](http://stackoverflow.com/) 솔루션을 찾으려고 합니다.
 
 추가 도움말 및 커뮤니티 리소스에 대 한 링크를 참조 하세요 [Visual c + + 도움말 및 커뮤니티](../../visual-cpp-help-and-community.md)합니다.

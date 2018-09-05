@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b505b9f6164566a1e196c601bdfe3eab4b4a991
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 51f39d26e8998ab48c01961659a4da45de21ea9c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43208584"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679862"
 ---
 # <a name="ccomcontrolbase-class"></a>CComControlBase 클래스
 이 클래스를 만들고 ATL 컨트롤을 관리 하기 위한 메서드를 제공 합니다.  
@@ -245,7 +245,7 @@ CComControlBase(HWND& h);
 ```  
   
 ### <a name="remarks"></a>설명  
- 컨트롤이 창에 있으면 `~CComControlBase` 를 호출 하 여 소멸 [DestroyWindow](https://msdn.microsoft.com/library/windows/desktop/ms632682)합니다.  
+ 컨트롤이 창에 있으면 `~CComControlBase` 를 호출 하 여 소멸 [DestroyWindow](/windows/desktop/api/winuser/nf-winuser-destroywindow)합니다.  
   
 ##  <a name="controlqueryinterface"></a>  CComControlBase::ControlQueryInterface  
  요청된 인터페이스에 대한 포인터를 검색합니다.  

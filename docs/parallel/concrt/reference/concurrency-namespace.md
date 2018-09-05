@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 324acb33998246933b0c426357368247c6689c47
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 4d5e7499bb1734b2093a60039e28b6f9f85920df
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211319"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681187"
 ---
 # <a name="concurrency-namespace"></a>동시성 네임스페이스
 `Concurrency` 네임스페이스는 C++용 동시 프로그래밍 프레임워크인 동시성 런타임에 액세스하는 데 사용할 수 있는 클래스와 함수를 제공합니다. 자세한 내용은 [동시성 런타임](../../../parallel/concrt/concurrency-runtime.md)을 참조하세요.  
@@ -47,12 +47,6 @@ namespace concurrency;
 ```  
   
 ## <a name="members"></a>멤버  
-  
-### <a name="namespaces"></a>네임스페이스  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[concurrency:: extensibility Namespace](https://msdn.microsoft.com/16a86ff2-128e-4edf-89e4-38aac79c81f9)||  
   
 ### <a name="typedefs"></a>형식 정의  
   
@@ -135,7 +129,7 @@ namespace concurrency;
 |[structured_task_group 클래스](structured-task-group-class.md)|`structured_task_group` 클래스는 구조화된 병렬 작업 컬렉션을 나타냅니다. `task_handle` 개체를 사용하여 개별 병렬 작업을 `structured_task_group`에 대기시킨 다음 완료되기를 기다리거나 실행이 완료되기 전에 작업 그룹을 취소합니다. 이 경우 실행이 시작되지 않은 작업이 모두 중단됩니다.|  
 |[target_block 클래스](target-block-class.md)|`target_block` 클래스는 대상 전용 블록에 대해 기본 링크 관리 기능 및 오류 검사를 제공하는 추상 기본 클래스입니다.|  
 |[task 클래스(동시성 런타임)](task-class.md)|PPL(병렬 패턴 라이브러리) `task` 클래스입니다. `task` 개체는 비동기식으로 실행할 수 있으며 동시성 런타임의 병렬 알고리즘을 통해 생성되는 기타 작업 및 병렬 작업과 동시에 실행할 수 있는 작업을 나타냅니다. 이러한 작업이 정상적으로 완료되면 `_ResultType` 형식의 결과가 생성됩니다. `task<void>` 형식의 작업에서는 결과가 생성되지 않습니다. 작업은 다른 작업과 관계없이 대기 및 취소할 수 있으며 연속(`then`), 조인 (`when_all`) 및 선택(`when_any`) 패턴을 사용하여 다른 작업으로 구성될 수도 있습니다.|  
-|[task_canceled 클래스](task-canceled-class.md)|이 클래스는 현재 작업을 강제 취소하도록 PPL 작업 레이어에서 throw된 예외를 설명합니다. 이 throw 됩니다는 `get()` 메서드를 [태스크](https://msdn.microsoft.com/5389e8a5-5038-40b6-844a-55e9b58ad35f), 취소 된 작업에 대 한 합니다.|  
+|[task_canceled 클래스](task-canceled-class.md)|이 클래스는 현재 작업을 강제 취소하도록 PPL 작업 레이어에서 throw된 예외를 설명합니다. 이 throw 됩니다는 `get()` 메서드를 [태스크](task-class.md), 취소 된 작업에 대 한 합니다.|  
 |[task_completion_event 클래스](task-completion-event-class.md)|`task_completion_event` 클래스를 사용하면 조건이 충족될 때까지 작업 실행을 지연하거나 외부 이벤트에 대한 응답으로 작업을 시작할 수 있습니다.|  
 |[task_continuation_context 클래스](task-continuation-context-class.md)|`task_continuation_context` 클래스를 사용하면 연속 실행 위치를 지정할 수 있습니다. 만 UWP 앱에서이 클래스를 사용 하는 것이 유용 합니다. 비-Windows 런타임 앱에 대 한 작업 연속의 실행 컨텍스트는 런타임에 의해 결정 및 구성할 수 없습니다.|  
 |[task_group 클래스](task-group-class.md)|`task_group` 클래스는 대기하거나 취소할 수 있는 병렬 작업 컬렉션을 나타냅니다.|  
@@ -169,7 +163,7 @@ namespace concurrency;
   
 ### <a name="enumerations"></a>열거형  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[agent_status](concurrency-namespace-enums.md#agent_status)|`agent`에 유효한 상태입니다.|  
 |[Agents_EventType](concurrency-namespace-enums.md#agents_eventtype)|에이전트 라이브러리에서 제공하는 추적 기능을 사용하여 추적할 수 있는 이벤트 형식입니다.|  
@@ -194,7 +188,7 @@ namespace concurrency;
 |[asend 함수](concurrency-namespace-functions.md#asend)|오버로드됨. 대상 블록에 데이터를 전파하는 작업을 예약하는 비동기 전송 작업입니다.|  
 |[cancel_current_task 함수](concurrency-namespace-functions.md#cancel_current_task)|현재 실행 중인 작업을 취소합니다. 이 함수는 작업 실행을 중단하도록 작업 본문 내에서 호출될 수 있으며 `canceled` 상태로 들어가도록 할 수 있습니다.<br /><br /> `task`의 본문에 없는 경우에 이 함수를 호출하는 것은 지원되는 시나리오가 아닙니다. 그럴 경우 응용 프로그램의 충돌 또는 시스템 중단 같이 정의되지 않은 동작이 발생합니다.|  
 |[create_async 함수](concurrency-namespace-functions.md#create_async)|사용자가 제공한 람다 또는 함수 개체를 기준으로 Windows 런타임 비동기 구문을 만듭니다. `create_async`의 반환 형식은 메서드에 전달된 람다의 시그니처에 따라 `IAsyncAction^`, `IAsyncActionWithProgress<TProgress>^`, `IAsyncOperation<TResult>^` 또는 `IAsyncOperationWithProgress<TResult, TProgress>^` 중 하나입니다.|  
-|[create_task 함수](concurrency-namespace-functions.md#create_task)|오버로드됨. PPL을 만듭니다 [태스크](https://msdn.microsoft.com/5389e8a5-5038-40b6-844a-55e9b58ad35f) 개체입니다. 작업 생성자를 사용하는 곳이면 어디에나 `create_task`를 사용할 수 있습니다. 작업을 만드는 동안 `auto` 키워드 사용을 허용하기 때문에 주로 편의상 제공됩니다.|  
+|[create_task 함수](concurrency-namespace-functions.md#create_task)|오버로드됨. PPL을 만듭니다 [태스크](task-class.md) 개체입니다. 작업 생성자를 사용하는 곳이면 어디에나 `create_task`를 사용할 수 있습니다. 작업을 만드는 동안 `auto` 키워드 사용을 허용하기 때문에 주로 편의상 제공됩니다.|  
 |[CreateResourceManager 함수](concurrency-namespace-functions.md#createresourcemanager)|동시성 런타임 리소스 관리자의 singleton 인스턴스를 나타내는 인터페이스를 반환합니다. 리소스 관리자는 서로 협력하려는 스케줄러에 리소스를 할당해야 합니다.|  
 |[DisableTracing 함수](concurrency-namespace-functions.md#disabletracing)|동시성 런타임에서 추적을 사용하지 않도록 설정합니다. ETW 추적이 기본적으로 등록되지 않으므로 이 함수는 사용되지 않습니다.|  
 |[EnableTracing 함수](concurrency-namespace-functions.md#enabletracing)|동시성 런타임에서 추적을 사용하도록 설정합니다. 이제 ETW 추적이 기본적으로 설정되므로 이 함수는 사용되지 않습니다.|  

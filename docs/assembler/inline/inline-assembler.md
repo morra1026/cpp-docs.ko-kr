@@ -1,7 +1,7 @@
 ---
 title: 인라인 어셈블러 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: conceptual
@@ -18,47 +18,49 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b45c55fbba37d27aa005480789cb490b891b103
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 277ba0aab4f2e756fcf9b5eb1f3a9765b8da3a7b
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42571778"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683452"
 ---
 # <a name="inline-assembler"></a>인라인 어셈블러
-**Microsoft 전용**  
-  
- 어셈블리 언어는 프로그램 속도 향상, 메모리 요구 사항 감소, 하드웨어 제어 등의 다양한 용도로 사용됩니다. 인라인 어셈블러를 사용하여 추가 어셈블리 및 링크 단계 없이 C 및 C++ 소스 프로그램에 어셈블리 언어 명령을 직접 포함하도록 할 수 있습니다. 인라인 어셈블러가 컴파일러에 내장되어 있어 MASM(Microsoft Macro Assembler)과 같은 별도의 어셈블러는 필요하지 않습니다.  
-  
+
+**Microsoft 전용**
+
+어셈블리 언어는 프로그램 속도 향상, 메모리 요구 사항 감소, 하드웨어 제어 등의 다양한 용도로 사용됩니다. 인라인 어셈블러를 사용하여 추가 어셈블리 및 링크 단계 없이 C 및 C++ 소스 프로그램에 어셈블리 언어 명령을 직접 포함하도록 할 수 있습니다. 인라인 어셈블러가 컴파일러에 내장되어 있어 MASM(Microsoft Macro Assembler)과 같은 별도의 어셈블러는 필요하지 않습니다.
+
 > [!NOTE]
->  인라인 어셈블러 코드를 포함하는 프로그램은 다른 하드웨어 플랫폼에 완벽하게 이식할 수 없습니다. 이식성을 위해 디자인할 경우 인라인 어셈블러를 사용하지 마십시오.  
-  
- 인라인 어셈블리는 ARM 및 x64 지원 되지 않습니다 프로세서.  다음 항목에서는 x86 프로세서에서 Visual C/C++ 인라인 어셈블러를 사용하는 방법을 설명합니다.  
-  
--   [인라인 어셈블러 개요](../../assembler/inline/inline-assembler-overview.md)  
-  
--   [인라인 어셈블리의 장점](../../assembler/inline/advantages-of-inline-assembly.md)  
-  
--   [__asm](../../assembler/inline/asm.md)  
-  
--   [__asm 블록에서 어셈블리 언어 사용](../../assembler/inline/using-assembly-language-in-asm-blocks.md)  
-  
--   [__asm 블록에서 C 또는 C++ 사용](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)  
-  
--   [인라인 어셈블리에서 레지스터 사용 및 유지](../../assembler/inline/using-and-preserving-registers-in-inline-assembly.md)  
-  
--   [인라인 어셈블리에서 레이블로 점프](../../assembler/inline/jumping-to-labels-in-inline-assembly.md)  
-  
--   [인라인 어셈블리에서 C 함수 호출](../../assembler/inline/calling-c-functions-in-inline-assembly.md)  
-  
--   [인라인 어셈블리에서 C++ 함수 호출](../../assembler/inline/calling-cpp-functions-in-inline-assembly.md)  
-  
--   [__asm 블록을 C 매크로로 정의](../../assembler/inline/defining-asm-blocks-as-c-macros.md)  
-  
--   [인라인 어셈블리 최적화](../../assembler/inline/optimizing-inline-assembly.md)  
-  
- **Microsoft 전용 종료**  
-  
-## <a name="see-also"></a>참고 항목  
- [컴파일러 내장 및 어셈블리 언어](../../intrinsics/compiler-intrinsics-and-assembly-language.md)   
- [C++ 언어 참조](../../cpp/cpp-language-reference.md)
+>  인라인 어셈블러 코드를 포함하는 프로그램은 다른 하드웨어 플랫폼에 완벽하게 이식할 수 없습니다. 이식성을 위해 디자인할 경우 인라인 어셈블러를 사용하지 마십시오.
+
+인라인 어셈블리는 ARM 및 x64 지원 되지 않습니다 프로세서.  다음 항목에서는 x86 프로세서에서 Visual C/C++ 인라인 어셈블러를 사용하는 방법을 설명합니다.
+
+- [인라인 어셈블러 개요](../../assembler/inline/inline-assembler-overview.md)
+
+- [인라인 어셈블리의 장점](../../assembler/inline/advantages-of-inline-assembly.md)
+
+- [__asm](../../assembler/inline/asm.md)
+
+- [__asm 블록에서 어셈블리 언어 사용](../../assembler/inline/using-assembly-language-in-asm-blocks.md)
+
+- [__asm 블록에서 C 또는 C++ 사용](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)
+
+- [인라인 어셈블리에서 레지스터 사용 및 유지](../../assembler/inline/using-and-preserving-registers-in-inline-assembly.md)
+
+- [인라인 어셈블리에서 레이블로 점프](../../assembler/inline/jumping-to-labels-in-inline-assembly.md)
+
+- [인라인 어셈블리에서 C 함수 호출](../../assembler/inline/calling-c-functions-in-inline-assembly.md)
+
+- [인라인 어셈블리에서 C++ 함수 호출](../../assembler/inline/calling-cpp-functions-in-inline-assembly.md)
+
+- [__asm 블록을 C 매크로로 정의](../../assembler/inline/defining-asm-blocks-as-c-macros.md)
+
+- [인라인 어셈블리 최적화](../../assembler/inline/optimizing-inline-assembly.md)
+
+**Microsoft 전용 종료**
+
+## <a name="see-also"></a>참고자료
+
+[컴파일러 내장 및 어셈블리 언어](../../intrinsics/compiler-intrinsics-and-assembly-language.md)<br/>
+[C++ 언어 참조](../../cpp/cpp-language-reference.md)<br/>

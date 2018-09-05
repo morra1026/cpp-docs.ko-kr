@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 48a337ab82045543035c2612c707d8c47186ed2d
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c7fe0665db01d1a2cd7a1da10b495ba86bc17469
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43195454"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690864"
 ---
 # <a name="windows-formsmfc-programming-differences"></a>Windows Forms/MFC 프로그래밍의 차이점
 항목에서는 [MFC에서 Windows Form 사용자 정의 컨트롤을 사용 하 여](../dotnet/using-a-windows-form-user-control-in-mfc.md) Windows Forms에 대 한 MFC 지원을 설명 합니다. .NET Framework 또는 MFC 프로그래밍에 익숙한 경우이 항목에서는 두 간의 프로그래밍 차이점에 대 한 배경 정보를 제공 합니다.  
@@ -66,4 +66,3 @@ ms.locfileid: "43195454"
   
 ## <a name="see-also"></a>참고 항목  
  [MFC에서 Windows Form 사용자 정의 컨트롤 사용](../dotnet/using-a-windows-form-user-control-in-mfc.md)   
- [Windows Forms 연습](https://msdn.microsoft.com/fd44d13d-4733-416f-aefc-32592e59e5d9)

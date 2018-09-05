@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15a7f6ad0620591e51d1382cd1199c52dde222ac
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: b3776f95db1a1e6fad8f885e23bb0dc8836a31ff
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882769"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681660"
 ---
 # <a name="catltransactionmanager-class"></a>CAtlTransactionManager 클래스
 CAtlTransactionManager 클래스 Manager KTM (Kernel Transaction) 함수에 대 한 래퍼를 제공합니다.  
@@ -86,7 +86,7 @@ class CAtlTransactionManager;
   
 ### <a name="protected-data-members"></a>보호된 데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[m_bFallback](#m_bfallback)|대체 지원 되 면 TRUE입니다. FALSE이 고, 그렇지 합니다.|  
 |[m_hTransaction](#m_htransaction)|트랜잭션 핸들입니다.|  
@@ -467,7 +467,7 @@ inline BOOL SetFileAttributes(LPCTSTR lpFileName, DWORD dwAttributes);
  파일 또는 디렉터리의 이름입니다.  
   
  *dwAttributes*  
- 파일 특성을 파일에 대 한 설정입니다. 자세한 내용은 [SetFileAttributesTransacted](http://go.microsoft.com/fwlink/p/?linkid=158699)합니다.  
+ 파일 특성을 파일에 대 한 설정입니다. 자세한 내용은 [SetFileAttributesTransacted](/windows/desktop/api/winbase/nf-winbase-setfileattributestransacteda)합니다.  
   
 ### <a name="remarks"></a>설명  
  이 래퍼를 호출 합니다 `SetFileAttributesTransacted` 함수입니다.  

@@ -202,12 +202,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58509ec4f6a3773478e1bc544f28baf92d7e97b7
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c940ec56b0f522e90410b786d595f4cbf929ed89
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43206894"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688547"
 ---
 # <a name="cwinapp-class"></a>CWinApp 클래스
 
@@ -270,7 +270,7 @@ class CWinApp : public CWinThread
 |[CWinApp::OnIdle](#onidle)|응용 프로그램별 유휴 시간 처리를 수행 하려면 재정의 합니다.|
 |[CWinApp::OpenDocumentFile](#opendocumentfile)|파일에서 문서를 열려고 프레임 워크에서 호출 됩니다.|
 |[CWinApp::ParseCommandLine](#parsecommandline)|개별 매개 변수 및 명령줄에서 플래그를 구문 분석합니다.|
-|[경우](#pretranslatemessage)|Windows 함수로 디스패치 되기 전에 메시지를 필터링 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934)합니다.|
+|[경우](#pretranslatemessage)|Windows 함수로 디스패치 되기 전에 메시지를 필터링 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage)합니다.|
 |[CWinApp::ProcessMessageFilter](#processmessagefilter)|응용 프로그램에 도달 하기 전에 특정 메시지를 차단 합니다.|
 |[CWinApp::ProcessShellCommand](#processshellcommand)|명령줄 인수 및 플래그를 처리합니다.|
 |[CWinApp::ProcessWndProcException](#processwndprocexception)|응용 프로그램의 메시지 및 명령 처리기에 의해 throw 되는 모든 처리 되지 않은 예외를 가로챕니다.|
@@ -333,7 +333,7 @@ class CWinApp : public CWinThread
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CWinApp::m_dwRestartManagerSupportFlags](#m_dwrestartmanagersupportflags)|다시 시작 관리자가 동작 하는 방식을 결정 하는 플래그입니다.|
 |[CWinApp::m_nAutosaveInterval](#m_nautosaveinterval)|자동으로 저장 간격 (밀리초) 시간의 길이입니다.|
@@ -1794,7 +1794,7 @@ void ParseCommandLine(CCommandLineInfo& rCmdInfo);
 
 ##  <a name="pretranslatemessage"></a>  경우
 
-창 메시지를 필터링 하려면이 함수를 재정의 하 여 Windows 함수로 디스패치 되기 전에 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) 액셀러레이터 키를 수행 하는 기본 구현 호출 해야 하므로 변환 된 `CWinApp::PreTranslateMessage` 재정의 된 버전에서 멤버 함수입니다.
+창 메시지를 필터링 하려면이 함수를 재정의 하 여 Windows 함수로 디스패치 되기 전에 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) 액셀러레이터 키를 수행 하는 기본 구현 호출 해야 하므로 변환 된 `CWinApp::PreTranslateMessage` 재정의 된 버전에서 멤버 함수입니다.
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);

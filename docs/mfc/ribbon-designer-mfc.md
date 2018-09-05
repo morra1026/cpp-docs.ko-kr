@@ -17,15 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0886f020be80ae417cd44a5b5cb5116198ce6a1e
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: f0a812ff5304288a2a7c25edeb07d76a4d06ded8
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540510"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683017"
 ---
 # <a name="ribbon-designer-mfc"></a>리본 디자이너(MFC)
-리본 디자이너를 사용하여 MFC 응용 프로그램에서 리본을 만들고 사용자 지정할 수 있습니다. 리본은 명령을 논리 그룹으로 구성하는 UI(사용자 인터페이스) 요소입니다. 이러한 그룹은 창 위쪽을 가로지르는 스트립에 별도의 탭으로 나타납니다. 리본은 메뉴 모음 및 도구 모음을 대체합니다. 리본으로 응용 프로그램 사용 편의성을 크게 향상시킬 수 있습니다. 자세한 내용은 [리본](http://go.microsoft.com/fwlink/p/?linkid=129233)합니다. 다음 그림에서는 리본을 보여 줍니다.  
+리본 디자이너를 사용하여 MFC 응용 프로그램에서 리본을 만들고 사용자 지정할 수 있습니다. 리본은 명령을 논리 그룹으로 구성하는 UI(사용자 인터페이스) 요소입니다. 이러한 그룹은 창 위쪽을 가로지르는 스트립에 별도의 탭으로 나타납니다. 리본은 메뉴 모음 및 도구 모음을 대체합니다. 리본으로 응용 프로그램 사용 편의성을 크게 향상시킬 수 있습니다. 자세한 내용은 [리본](/windows/desktop/uxguide/cmd-ribbons)합니다. 다음 그림에서는 리본을 보여 줍니다.  
   
  ![MFC 리본 리소스 컨트롤](../mfc/media/ribbon_no_callouts.png "ribbon_no_callouts")  
   

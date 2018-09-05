@@ -1,7 +1,7 @@
 ---
-title: (MASM) 하는 동안 | Microsoft Docs
+title: WHILE (MASM) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,24 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c174872d6be33441159aa326d207a79804233a8e
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 91d79c6b2ad3db2dfa9fd7ddf9105afc21c92f2b
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32053469"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685459"
 ---
 # <a name="while-masm"></a>WHILE (MASM)
-블록의 어셈블리 반복 `statements` 으로 *식* true로 유지 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-   WHILE expression  
-statements  
-ENDM  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+블록의 어셈블리를 반복 *문* 하기만 *식* true로 유지 합니다.
+
+## <a name="syntax"></a>구문
+
+> 하지만 *식*<br/>
+> *문*<br/>
+> ENDM
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

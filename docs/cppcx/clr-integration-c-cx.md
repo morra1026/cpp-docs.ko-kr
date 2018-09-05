@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0c2acf17831e5cb3a2e0118ffe3606bc7beef25
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d75b8cb328ec69d5c322538a073fac5fc1761aed
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212990"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683680"
 ---
 # <a name="clr-integration-ccx"></a>CLR 통합(C++/CX)
 C +에서 특별 한 처리를 수신 하는 일부 Windows 런타임 형식 + CX 및는 CLR (공용 언어 런타임)을 기반으로 하는 언어입니다. 이 문서에서는 한 언어의 여러 형식을 다른 언어에 매핑하는 방법을 설명합니다. 예를 들어 CLR은 Windows.Foundation.IVector를 System.Collections.IList에 매핑하고, Windows.Foundation.IMap를 System.Collections.IDictionary에 매핑합니다. 마찬가지로, C + + /cli CX에는 특별히 platform:: delegate 및 platform:: string과 같은 형식을 매핑합니다.  
@@ -22,7 +22,7 @@ C +에서 특별 한 처리를 수신 하는 일부 Windows 런타임 형식 + C
 ## <a name="mapping-the-windows-runtime-to-ccx"></a>Windows 런타임 매핑할 C + + /cli CX  
  때 C + + /cli CX Windows 메타 데이터 (.winmd) 파일을 읽고, 컴파일러가 자동으로 매핑합니다 공통 Windows 런타임 네임 스페이스 및 형식 C + + /CX 네임 스페이스 및 형식입니다. 예를 들어 숫자 Windows 런타임 형식 `UInt32` 자동으로 매핑됩니다 `default::uint32`합니다.  
   
- C + + /cli CX 다른 여러 Windows 런타임 형식을에 매핑하는 **플랫폼** 네임 스페이스입니다. 예를 들어 합니다 **windows:: foundation** 는 읽기 전용 유니코드 텍스트 문자열을 나타내는 HSTRING 핸들에 매핑되는 C + + /cli CX `Platform::String` 클래스입니다. Windows 런타임 작업 오류 HRESULT를 반환 하는 경우 매핑되는 C + + /cli CX `Platform::Exception`합니다. 자세한 내용은 [기본 제공 형식](https://msdn.microsoft.com/acc196fd-09da-4882-b554-6c94685ec75f)합니다.  
+ C + + /cli CX 다른 여러 Windows 런타임 형식을에 매핑하는 **플랫폼** 네임 스페이스입니다. 예를 들어 합니다 **windows:: foundation** 는 읽기 전용 유니코드 텍스트 문자열을 나타내는 HSTRING 핸들에 매핑되는 C + + /cli CX `Platform::String` 클래스입니다. Windows 런타임 작업 오류 HRESULT를 반환 하는 경우 매핑되는 C + + /cli CX `Platform::Exception`합니다.   
   
  C + + /cli CX 형식의 기능 향상을 위해 Windows 런타임 네임 스페이스의 특정 형식을 매핑합니다. 이러한 유형의 C + + /cli CX 도우미 생성자 및 메서드는 c + + 및 형식의 표준.winmd 파일에서 사용할 수 없는 제공 합니다.  
   

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6bec76b407221fb9029662ba982a10edc4ca9c77
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 3a8c5affeaee73be7dd464ea44ea62db35257f7b
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604922"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689758"
 ---
 # <a name="walkthrough-debugging-a-c-amp-application"></a>연습: C++ AMP 응용 프로그램 디버깅
 이 항목에서는 c + + Accelerated Massive Parallelism (c + + AMP)를 사용 하 여 그래픽 처리 유닛 (GPU)를 활용 하는 응용 프로그램을 디버그 하는 방법에 설명 합니다. 큰 정수 배열을 합산 하는 병렬 감소 프로그램을 사용 합니다. 이 연습에서는 다음 작업을 수행합니다.  
@@ -398,4 +398,4 @@ GPU 스레드 창의 활성 스레드
 [GPU 코드 디버그](/visualstudio/debugger/debugging-gpu-code)   
 [방법: GPU 스레드 창 사용](/visualstudio/debugger/how-to-use-the-gpu-threads-window)   
 [방법: 병렬 조사식 창 사용](/visualstudio/debugger/how-to-use-the-parallel-watch-window)   
-[동시성 시각화 도우미를 사용 하 여 c + + AMP 코드 분석](http://go.microsoft.com/fwlink/p/?linkid=253987&clcid=0x409)
+[동시성 시각화 도우미를 사용 하 여 c + + AMP 코드 분석](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)

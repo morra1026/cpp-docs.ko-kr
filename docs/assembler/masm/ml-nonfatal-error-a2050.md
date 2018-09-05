@@ -1,7 +1,7 @@
 ---
 title: ML 심각 하지 않은 오류 A2050 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,25 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 159ed131c13166435114234b3b16a82cd4d41d1f
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: bd2e0e6c2fc818ef9286fd303c07a26bdd8b4e5a
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32056196"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43680673"
 ---
 # <a name="ml-nonfatal-error-a2050"></a>ML 심각하지 않은 오류 A2050
-**real 또는 BCD 번호를 사용할 수 없습니다**  
-  
- 부동 소수점 (실수) 또는 binary coded decimal (BCD) 상수 이외의 사용 데이터 이니셜라이저로 합니다.  
-  
- 다음 중 하나가 발생 했습니다.  
-  
--   숫자는 실수 또는 BCD 식에 사용 되었습니다.  
-  
--   숫자는 실수는 지시문을 이외의 초기화에 사용 된 [DWORD](../../assembler/masm/dword.md), [QWORD](../../assembler/masm/qword.md), 또는 [TBYTE](../../assembler/masm/tbyte.md)합니다.  
-  
--   BCD 지시문을 이외의 초기화에 사용 된 `TBYTE`합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [ML 오류 메시지](../../assembler/masm/ml-error-messages.md)
+
+**실시간 또는 BCD 수 없습니다**
+
+부동 소수점 (실수) 또는 binary coded decimal (BCD) 상수를 사용한 이외의 데이터 이니셜라이저로 합니다.
+
+다음 중 하나에 다음이 발생 했습니다.
+
+- 실수 또는 BCD를 식에서 사용 되었습니다.
+
+- 실수를 초기화 하는 데 지시문 이외의 [DWORD](../../assembler/masm/dword.md)를 [QWORD](../../assembler/masm/qword.md), 또는 [TBYTE](../../assembler/masm/tbyte.md)합니다.
+
+- BCD를 초기화 하는 데 지시문 이외의 `TBYTE`합니다.
+
+## <a name="see-also"></a>참고자료
+
+[ML 오류 메시지](../../assembler/masm/ml-error-messages.md)<br/>

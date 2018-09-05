@@ -1,7 +1,7 @@
 ---
 title: ML 심각 하지 않은 오류 A2107 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,17 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b0aa38e50c9cd1756865c1369357980a497edf7
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 0c121f45a2d5074d985ff3f81f3e8289d6e4d757
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32053963"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683606"
 ---
 # <a name="ml-nonfatal-error-a2107"></a>ML 심각하지 않은 오류 A2107
-**암시적 먼 점프 또는 레이블 근처에 호출을 사용할 수 없습니다.**  
-  
- 암시적까지 이동 하거나 다른 세그먼트에 가까운 레이블에 호출 하려고 했습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [ML 오류 메시지](../../assembler/masm/ml-error-messages.md)
+
+**암시적 먼 점프 또는 레이블 거의 호출 일 수 없습니다.**
+
+암시적 멀리 이동 하거나 다른 세그먼트에서 거의 레이블로 호출 하려고 했습니다.
+
+## <a name="see-also"></a>참고자료
+
+[ML 오류 메시지](../../assembler/masm/ml-error-messages.md)<br/>

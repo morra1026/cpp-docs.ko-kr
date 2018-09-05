@@ -1,7 +1,7 @@
 ---
-title: ELSE (MASM) | Microsoft Docs
+title: 다른 (MASM) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,26 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b9f74d0f2f9272987d4d56a1dcc16c11ab2ab4b
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 2cf048636b669586f93d12eeacf084c87a4139f1
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054096"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679091"
 ---
 # <a name="else-masm"></a>ELSE (MASM)
-조건부 블록 내에서 대체 된 블록의 시작을 표시 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-ELSE  
-  
-```  
-  
-## <a name="remarks"></a>설명  
- 참조 [IF](../../assembler/masm/if-masm.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+조건부 블록 내에서 대체 블록의 시작을 표시 합니다.
+
+## <a name="syntax"></a>구문
+
+> ELSE
+
+## <a name="remarks"></a>설명
+
+참조 [경우](../../assembler/masm/if-masm.md)합니다.
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

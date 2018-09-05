@@ -1,7 +1,7 @@
 ---
 title: XMMWORD | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,27 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8fd8e6c82a3275161e519eeead490473e8d64ab
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 7fbb578c5e168f53bc1b4e217713efa1ea329743
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32056420"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689216"
 ---
 # <a name="xmmword"></a>XMMWORD
-MMX와 SSE (XMM) 지침이 포함 된 128 비트 멀티미디어 피연산자에 사용 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-XMMWORD  
-```  
-  
-## <a name="remarks"></a>설명  
- `XMMWORD` 동일한 형식으로 표시 하기 위해 [__m128](../../cpp/m128.md)합니다.  
-  
-## <a name="example"></a>예제  
-  
-```  
-movdqa   xmm0, xmmword ptr [ebx]  
+
+MMX와 SSE (XMM) 지침을 사용 하 여 128 비트 멀티미디어 피연산자에 사용 됩니다.
+
+## <a name="syntax"></a>구문
+
+> XMMWORD
+
+## <a name="remarks"></a>설명
+
+`XMMWORD` 동일한 형식으로 표시 하기 위해 [__m128](../../cpp/m128.md)합니다.
+
+## <a name="example"></a>예제
+
+```asm
+    movdqa   xmm0, xmmword ptr [ebx]
 ```

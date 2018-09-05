@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 59c0a9701c1714e1d96829a28144c921e5c00e11
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 0ddfd6de46d6d0700265f5308f06458b3cdd984a
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43206719"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677829"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++의 Windows 프로그래밍 개요
 
@@ -76,7 +76,7 @@ Windows 10에서 다양 한 데스크톱 프로그램을 만들려면 Visual c +
 
 - Windows 서비스. 자세한 내용은 [Introduction to Windows Service Applications](/dotnet/framework/windows-services/introduction-to-windows-service-applications)을 참조하세요.
 
-Visual C++를 사용하여 C++ 응용 프로그램이나 C# 또는 Visual Basic과 같은 다른 언어로 작성된 앱이 소비할 수 있는 Win32 DLL 또는 COM DLL에서 거의 모든 종류의 사용자 지정 고성능 기능을 패키지할 수 있습니다. WIn32 DLL에 대한 자세한 내용은 [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)를 참조하세요. COM 개발에 대 한 자세한 내용은 참조 하세요. [구성 요소 개체 모델 (COM)](https://msdn.microsoft.com/library/windows/desktop/ms680573)합니다.
+Visual C++를 사용하여 C++ 응용 프로그램이나 C# 또는 Visual Basic과 같은 다른 언어로 작성된 앱이 소비할 수 있는 Win32 DLL 또는 COM DLL에서 거의 모든 종류의 사용자 지정 고성능 기능을 패키지할 수 있습니다. WIn32 DLL에 대한 자세한 내용은 [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)를 참조하세요. COM 개발에 대 한 자세한 내용은 참조 하세요. [구성 요소 개체 모델 (COM)](/windows/desktop/com/component-object-model--com--portal)합니다.
 
 ## <a name="games"></a>게임
 

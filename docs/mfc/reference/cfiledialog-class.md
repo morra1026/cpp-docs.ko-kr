@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8743619b1c47f085aacd569a7b90d716f175842
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 45b9b5bb5beae8599c360d35df878a38b591b1b4
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43210807"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685745"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog 클래스
 파일 열기 또는 저장 작업 파일에 사용 되는 일반 대화 상자를 캡슐화 합니다.  
@@ -1398,7 +1398,7 @@ BOOL SetProperties(LPCWSTR lpszPropList);
   
 ### <a name="parameters"></a>매개 변수  
  *lpszPropList*  
- ";"으로 구분되는 미리 정의된 속성의 목록입니다. 플래그 목록은 참조 하세요. 합니다 **플래그** 부분 [OPENFILENAME](https://msdn.microsoft.com/8cecfd45-f7c1-4f8d-81a0-4e7fecc3b104)합니다.  
+ ";"으로 구분되는 미리 정의된 속성의 목록입니다. 플래그 목록은 참조 하세요. 합니다 **플래그** 부분 [OPENFILENAME](/windows/desktop/api/commdlg/ns-commdlg-tagofna)합니다.  
   
 ### <a name="remarks"></a>설명  
   

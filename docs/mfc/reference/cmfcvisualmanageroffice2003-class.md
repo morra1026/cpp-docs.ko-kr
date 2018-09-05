@@ -102,12 +102,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef28bc57981868eaa1cadcbead3c11c8fade57e8
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 33054190e94ca7d136e319b2afc9e28c9080de05
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217091"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677978"
 ---
 # <a name="cmfcvisualmanageroffice2003-class"></a>CMFCVisualManagerOffice2003 클래스
 `CMFCVisualManagerOffice2003` 응용 프로그램에 Microsoft Office 2003 모양을 제공 합니다.  
@@ -206,7 +206,7 @@ class CMFCVisualManagerOffice2003 : public CMFCVisualManagerOfficeXP
 |[CMFCVisualManagerOffice2003::OnHighlightQuickCustomizeMenuButton](#onhighlightquickcustomizemenubutton)|프레임 워크를 강조 표시 된을 그릴 때이 메서드가 빨리-사용자 지정 메뉴 단추를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnHighlightQuickCustomizeMenuButton`를 재정의합니다.)|  
 |[CMFCVisualManagerOffice2003::OnHighlightRarelyUsedMenuItems](#onhighlightrarelyusedmenuitems)|강조 표시 된 메뉴 명령을 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnHighlightRarelyUsedMenuItems`를 재정의합니다.)|  
 |[CMFCVisualManagerOffice2003::OnUpdateSystemColors](#onupdatesystemcolors)|시스템 색이 변경 하는 경우이 함수를 호출 하는 프레임 워크입니다. (`CMFCVisualManagerOfficeXP::OnUpdateSystemColors`를 재정의합니다.)|  
-|[CMFCVisualManagerOffice2003::SetDefaultWinXPColors](#setdefaultwinxpcolors)|비주얼 관리자 네이티브 Windows XP 테마 색을 사용할지 아니면 색에서 가져온 지정 [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371)합니다.|  
+|[CMFCVisualManagerOffice2003::SetDefaultWinXPColors](#setdefaultwinxpcolors)|비주얼 관리자 네이티브 Windows XP 테마 색을 사용할지 아니면 색에서 가져온 지정 [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor)합니다.|  
 |[CMFCVisualManagerOffice2003::SetStatusBarOfficeXPLook](#setstatusbarofficexplook)|Windows XP 전역 테마를 사용 해야 함을 지정 합니다.|  
 |[CMFCVisualManagerOffice2003::SetUseGlobalTheme](#setuseglobaltheme)|비주얼 관리자 전역 테마를 사용 하는지 여부를 지정 합니다.|  
   
@@ -2231,7 +2231,7 @@ virtual void OnUpdateSystemColors();
  프레임 워크 WM_SYSCOLORCHANGE 메시지 처리의 일부분으로이 메서드를 호출 합니다. 응용 프로그램에서 색을 변경 하는 경우 사용자 지정 코드를 실행 하려는 경우에 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
   
 ##  <a name="setdefaultwinxpcolors"></a>  CMFCVisualManagerOffice2003::SetDefaultWinXPColors  
- 비주얼 관리자 네이티브 Windows XP 테마 색을 사용할지 아니면 색에서 가져온 지정 [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371)합니다.  
+ 비주얼 관리자 네이티브 Windows XP 테마 색을 사용할지 아니면 색에서 가져온 지정 [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor)합니다.  
   
 ```  
 static void SetDefaultWinXPColors(BOOL bDefaultWinXPColors = TRUE);

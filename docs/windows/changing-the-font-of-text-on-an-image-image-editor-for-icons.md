@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7a8f06ae0021a95e9b4ae40506cfc91d6a8ae99b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 0898d8a787c6d2c14f341a31e202738d666cdf86
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200816"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678466"
 ---
 # <a name="changing-the-font-of-text-on-an-image-image-editor-for-icons"></a>이미지의 텍스트 글꼴 변경(아이콘에 대한 이미지 편집기)
 
@@ -32,7 +32,7 @@ ms.locfileid: "43200816"
 
 ### <a name="to-change-the-font-of-text-on-an-image"></a>이미지의 텍스트의 글꼴을 변경 하려면
 
-1. C + + Windows Forms 응용 프로그램을 만듭니다. 자세한 내용은 참조 하세요 [Windows 응용 프로그램 프로젝트를 만드는](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5\(v=vs.100\))합니다. 합니다 [Windows Forms 응용 프로그램 템플릿을](https://msdn.microsoft.com/1babdebf-ab3f-4a64-a608-98499a5b9cea) 이라는 파일을 추가 `app.ico` 기본적으로 프로젝트에 있습니다.
+1. C + + Windows Forms 응용 프로그램을 만듭니다. 자세한 내용은 참조 하세요 [Windows 응용 프로그램 프로젝트를 만드는](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5\(v=vs.100\))합니다. `app.ico` 파일은 기본적으로 프로젝트에 추가 됩니다.
 
 2. **솔루션 탐색기**, app.ico 파일을 두 번 클릭 합니다. 합니다 [이미지 편집기](../windows/image-editor-for-icons.md) 열립니다.
 

@@ -1,7 +1,7 @@
 ---
-title: 레이블 (MASM) | Microsoft Docs
+title: LABEL (MASM) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,23 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4189d1ae5cf79d0ecf8cc07fa940e754fe314a6d
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: d7fe6e6b2297cac689ed5f179b3e299488dd99cc
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054070"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690592"
 ---
 # <a name="label-masm"></a>LABEL (MASM)
-현재 위치 카운터 값을 할당 하 여 새 레이블을 만듭니다와 주어진 `type` 를 *이름*합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-      name LABEL type  
-name LABEL [[NEAR | FAR | PROC]] PTR [[type]]   
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+현재 위치 카운터 값을 할당 하 여 새 레이블을 만듭니다 및 지정 된 *형식* 하 *이름*합니다.
+
+## <a name="syntax"></a>구문
+
+> *이름을* 레이블 *형식*
+
+> *이름* 레이블 [[NEAR | 지금까지 | PTR PROC]] [[*형식*]]
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 758862d5296cf0a51cc0e04d849b044b3694e087
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: e3385e68b7a5a112e5ff63b63afe5dd83603cf72
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39461890"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678199"
 ---
 # <a name="restrict-c-amp"></a>restrict (C++ AMP)
 제한 지정자는 함수 및 람다 선언에 적용할 수 있습니다. 제한 지정자는 C++ AMP(C++ Accelerated Massive Parallelism) 런타임을 사용하는 응용 프로그램의 함수 동작 및 함수의 코드에 제한을 적용합니다.  
@@ -87,9 +87,9 @@ ms.locfileid: "39461890"
   
     -   vararg  
   
- 함수 제한 사항 설명은 참조 하세요 [restrict (amp) 제한](http://go.microsoft.com/fwlink/p/?LinkId=251089)합니다.  
+ 함수 제한 사항 설명은 참조 하세요 [(amp) 제한 사항 제한](https://blogs.msdn.microsoft.com/nativeconcurrency/2011/12/19/restrictamp-restrictions-part-0-of-n-introduction/)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법의 `restrict(amp)`절.  
   
 ```cpp 

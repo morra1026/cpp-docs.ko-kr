@@ -1,7 +1,7 @@
 ---
 title: . NOCREF | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,25 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ee936ebbbd2136f14fecf51bfe0b7d69c61a476
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 9ad9e4d84d8d49b4d1b5c71cc695031da9cd878e
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32055081"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43680002"
 ---
 # <a name="nocref"></a>.NOCREF
-기호 테이블 및 브라우저 파일의 기호의 목록을 표시 하지 않습니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-.NOCREF [[name[[, name]]...]]  
-```  
-  
-## <a name="remarks"></a>설명  
- 이름을 지정할 경우 지정한 이름만 표시 되지 않습니다. 와 동일 [합니다. XCREF](../../assembler/masm/dot-xcref.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+기호 테이블 및 브라우저 파일에서 기호 목록을 표시 하지 않습니다.
+
+## <a name="syntax"></a>구문
+
+> . NOCREF [[이름 [[, name]]...]]
+
+## <a name="remarks"></a>설명
+
+이름이 지정 된 경우 지정 된 이름만 표시 되지 않습니다. 동일 [합니다. XCREF](../../assembler/masm/dot-xcref.md)합니다.
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

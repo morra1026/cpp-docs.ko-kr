@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 550a1e40d3fee80b4c9666457a60772ed49b580a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: aeaed487db1063efd14dddbca28480a169b13522
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590237"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686656"
 ---
 # <a name="platformcollectionsvector-class"></a>Platform::Collections::Vector 클래스
 
@@ -103,8 +103,8 @@ Vector 개체에 포함된 요소의 형식입니다.
 
 |||
 |-|-|
-|name|설명|
-|이벤트 [Windows::Foundation::Collection::VectorChangedEventHandler\<T > ^ VectorChanged](http://go.microsoft.com/fwlink/p/?LinkId=262644)|Vector가 변경될 때 발생합니다.|
+|이름|설명|
+|이벤트 [Windows::Foundation::Collection::VectorChangedEventHandler\<T > ^ VectorChanged](/uwp/api/windows.foundation.collections.vectorchangedeventhandler)|Vector가 변경될 때 발생합니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 

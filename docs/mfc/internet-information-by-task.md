@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5063081c219090486db64ce308411d12ec23cb7e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 87cca4472ebc0cf5f6b31d377fd82f2c51d25946
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209976"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677549"
 ---
 # <a name="internet-information-by-task"></a>작업별 인터넷 정보
 이 항목에 나열 된 작업을 수행 하려는 작업에 따라 정렬 됩니다.  
@@ -43,8 +43,6 @@ ms.locfileid: "43209976"
 -   [인터넷 컨텍스트에서 활성 문서에 알아봅니다](../mfc/active-documents-on-the-internet.md)  
   
 -   [ActiveX 컨트롤 최적화](../mfc/mfc-activex-controls-optimization.md)  
-  
--   [MFC 및 ATL 컨트롤에 대해 서명 된 CAB 파일 만들기](https://msdn.microsoft.com/14e50724-2505-4258-ae6b-326b706de409)  
   
 ###  <a name="_core_wininet_tasks"></a> WinInet 작업  
   

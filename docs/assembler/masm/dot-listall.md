@@ -1,7 +1,7 @@
 ---
 title: . LISTALL | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,26 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 525f7af2b4b0fe7dce2e4adacfa8b01f862c46bc
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: e5fa0f90abeaae6b0b24ec780de7108bec58dd66
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057292"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691177"
 ---
 # <a name="listall"></a>.LISTALL
-모든 문을 나열을 시작 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-.LISTALL  
-  
-```  
-  
-## <a name="remarks"></a>설명  
- 조합에 해당 [합니다. 목록](../../assembler/masm/dot-list.md), [합니다. 목록](../../assembler/masm/dot-listif.md), 및 [합니다. LISTMACROALL](../../assembler/masm/dot-listmacroall.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+나열 된 모든 문으로 시작 합니다.
+
+## <a name="syntax"></a>구문
+
+> .LISTALL
+
+## <a name="remarks"></a>설명
+
+조합에 해당 [합니다. 목록](../../assembler/masm/dot-list.md), [합니다. 목록](../../assembler/masm/dot-listif.md), 및 [합니다. LISTMACROALL](../../assembler/masm/dot-listmacroall.md)합니다.
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

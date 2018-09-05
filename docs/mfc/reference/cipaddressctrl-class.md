@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49362fa02005ce44100b0248d25ffc364a68da16
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 0177d350d37b7fb1afe27d8aa4aad98dd985ec13
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222340"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679180"
 ---
 # <a name="cipaddressctrl-class"></a>CIPAddressCtrl 클래스
 Windows의 공용 IP 주소 컨트롤의 기능을 제공합니다.  
@@ -120,7 +120,7 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>매개 변수  
  *dwStyle*  
- IP 주소 컨트롤의 스타일입니다. 창 스타일의 조합을 적용 됩니다. 컨트롤을 자식 창에 있어야 하므로 WS_CHILD 스타일을 포함 해야 합니다. 참조 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) windows 스타일의 목록은 Windows SDK에 있습니다.  
+ IP 주소 컨트롤의 스타일입니다. 창 스타일의 조합을 적용 됩니다. 컨트롤을 자식 창에 있어야 하므로 WS_CHILD 스타일을 포함 해야 합니다. 참조 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) windows 스타일의 목록은 Windows SDK에 있습니다.  
   
  *rect*  
  IP 주소 컨트롤의 크기와 위치에 대 한 참조입니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.  
@@ -157,10 +157,10 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>매개 변수  
  *dwExStyle*  
- 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK의 합니다.  
+ 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK의 합니다.  
   
  *dwStyle*  
- IP 주소 컨트롤의 스타일입니다. 창 스타일의 조합을 적용 됩니다. 컨트롤을 자식 창에 있어야 하므로 WS_CHILD 스타일을 포함 해야 합니다. 참조 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) windows 스타일의 목록은 Windows SDK에 있습니다.  
+ IP 주소 컨트롤의 스타일입니다. 창 스타일의 조합을 적용 됩니다. 컨트롤을 자식 창에 있어야 하므로 WS_CHILD 스타일을 포함 해야 합니다. 참조 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) windows 스타일의 목록은 Windows SDK에 있습니다.  
   
  *rect*  
  에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.  

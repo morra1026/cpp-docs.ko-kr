@@ -1,7 +1,7 @@
 ---
 title: 연산자 XOR | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,22 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c81b05f46f9be6bb84b7f853121d9d6129f33969
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: c4bf250821f2a04e5b1099f2f33dfe28c3ff916d
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057379"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677776"
 ---
 # <a name="operator-xor"></a>연산자 XOR
-비트의 결과 반환 **XOR** 에 대 한 작업이 *expression1* 및 *expression2*합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-expression1 XOR expression2  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [연산자 참조](../../assembler/masm/operators-reference.md)
+
+비트 결과 반환 합니다 **XOR** 에 대 한 작업 *expression1* 하 고 *expression2*합니다.
+
+## <a name="syntax"></a>구문
+
+> expression1 XOR expression2
+
+## <a name="see-also"></a>참고자료
+
+[연산자 참조](../../assembler/masm/operators-reference.md)<br/>

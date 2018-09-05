@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b63afd3c63fbcb05c7172a30a5a23b0418269eca
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 5b227f9d2fdd43b576f89b74f43e4cdce8476bf9
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201461"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692385"
 ---
 # <a name="cmfcdropdowntoolbar-class"></a>CMFCDropDownToolBar 클래스
 사용자가 최상위 도구 모음 단추를 누르고 있을 때 나타나는 도구 모음입니다.  
@@ -59,7 +59,7 @@ class CMFCDropDownToolBar : public CMFCToolBar
 |[CMFCDropDownToolBar::OnLButtonUp](#onlbuttonup)||  
 |[CMFCDropDownToolBar::OnMouseMove](#onmousemove)||  
 |[CMFCDropDownToolBar::OnSendCommand](#onsendcommand)|(`CMFCToolBar::OnSendCommand`를 재정의합니다.)|  
-|[CMFCDropDownToolBar::OnUpdateCmdUI](#onupdatecmdui)|(재정의 [CMFCToolBar::OnUpdateCmdUI](https://msdn.microsoft.com/571a38ab-2a56-4968-9796-273516126f80).)|  
+|[CMFCDropDownToolBar::OnUpdateCmdUI](#onupdatecmdui)|(재정의 [CMFCToolBar::OnUpdateCmdUI](cmfctoolbar-class.md)합니다.|  
   
 ### <a name="remarks"></a>설명  
  `CMFCDropDownToolBar` 팝업 메뉴의 동작을 사용 하 여 도구 모음의 시각적 모양을 결합 하는 개체입니다. 때 사용자를 누르고 드롭다운 도구 모음 단추 (참조 [CMFCDropDownToolbarButton 클래스](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md)), 드롭다운 도구 모음이 나타나고 사용자에 스크롤 및 마우스를 해제 하 여 드롭다운 도구 모음에서 단추에 선택할 수 단추입니다. 사용자가 드롭다운 도구 모음에서 단추를 선택, 최상위 도구 모음에서 현재 단추와 해당 단추가 표시 됩니다.  

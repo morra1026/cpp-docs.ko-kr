@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb4f8a91545a196bc92fdc0ec44e89a7d5680185
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9f6e2c3f1c297493b2af72f280ac5eabcb6f17ce
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374806"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690321"
 ---
 # <a name="nxcompat-compatible-with-data-execution-prevention"></a>/NXCOMPAT(데이터 실행 방지 기능과 호환)
 
@@ -36,23 +36,23 @@ ms.locfileid: "32374806"
 
 기본적으로 **/NXCOMPAT** 켜져 있습니다.
 
-**/Nxcompat: no** 명시적으로 데이터 실행 방지와 호환 되지 않는 실행 파일을 지정할 데 사용할 수 있습니다.
+**/Nxcompat: no** 명시적으로 데이터 실행 방지 기능과 호환 되지 않는 실행 파일을 지정할 수 있습니다.
 
-데이터 실행 방지에 대 한 자세한 내용은 다음이 문서를 참조 합니다.
+데이터 실행 방지에 대 한 자세한 내용은 다음이 문서를 참조 하세요.
 
-- [데이터 실행 방지 (DEP) 기능에 대 한 자세한 설명](http://go.microsoft.com/fwlink/p/?linkid=157771)
+- [데이터 실행 방지 (DEP) 기능에 대 한 자세한 설명](https://support.microsoft.com/en-us/help/875352/a-detailed-description-of-the-data-execution-prevention-dep-feature-in)
 
-- [데이터 실행 방지](http://go.microsoft.com/fwlink/p/?linkid=157770)
+- [데이터 실행 방지](/windows/desktop/Memory/data-execution-prevention)
 
-- [데이터 실행 방지 (포함 된 Windows)](http://go.microsoft.com/fwlink/p/?linkid=157768)
+- [데이터 실행 방지 (Windows Embedded)](/previous-versions/windows/embedded/ms913190\(v=winembedded.5\))
 
 ### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
 
 1. 선택 된 **구성 속성** > **링커** > **명령줄** 속성 페이지.
 
-1. 에 옵션을 입력에서 **추가 옵션** 상자입니다. 선택 **확인** 또는 **적용** 에 변경 내용을 적용 합니다.
+1. 옵션을 입력 합니다 **추가 옵션** 상자입니다. 선택 **확인** 하거나 **적용** 에 변경 내용을 적용 합니다.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면
 

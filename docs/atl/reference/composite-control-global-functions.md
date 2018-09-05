@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d433c76e054b16491ab7586d6107b4931dc2915
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: cf8c5bf4336df95caabd26d5ba4a395190c9591a
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43203718"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677850"
 ---
 # <a name="composite-control-global-functions"></a>복합 컨트롤 전역 함수
 이러한 함수는 만들고 호스트 하 고 ActiveX 컨트롤 라이선스 획득 한 대화 상자 만들기에 대 한 지원을 제공 합니다.  
@@ -442,7 +442,7 @@ ATLAPI_(BOOL) AtlAxWinInit();
  컨트롤 호스팅 코드의 초기화에 성공 하면 0이 아닌 값 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- ATL 컨트롤 호스팅 API를 사용 하기 전에이 함수를 호출 해야 합니다. 이 함수를 호출 합니다 **"AtlAxWin"** 창 클래스에 대 한 호출에서 사용할 수 있습니다 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) 또는 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680)Windows SDK에 설명 된 대로 합니다.  
+ ATL 컨트롤 호스팅 API를 사용 하기 전에이 함수를 호출 해야 합니다. 이 함수를 호출 합니다 **"AtlAxWin"** 창 클래스에 대 한 호출에서 사용할 수 있습니다 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) 또는 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa)Windows SDK에 설명 된 대로 합니다.  
 
 ##  <a name="atlaxwinterm"></a>  AtlAxWinTerm  
  이 함수 ATL의 컨트롤 호스팅 코드의 등록을 취소 하 여 초기화를 취소 합니다 **"AtlAxWin80"** 하 고 **"AtlAxWinLic80"** 창 클래스입니다.  

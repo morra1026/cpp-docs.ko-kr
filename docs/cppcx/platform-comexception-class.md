@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f67088d7e40f60922fa2fe03993a280284cbf76e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ef60fc542b38c7619ce7b65cc7f39db79ed1b228
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597002"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679026"
 ---
 # <a name="platformcomexception-class"></a>Platform::COMException 클래스
 응용 프로그램을 실행할 때 나타나는 COM 오류를 나타냅니다. COMException은 미리 정의된 표준 예외 집합의 기본 클래스입니다.  
@@ -60,7 +60,7 @@ public ref class COMException : Exception,    IException,    IPrintable,    IEqu
 ## <a name="derived-exceptions"></a>파생된 예외  
  다음과 같은 미리 정의된 예외는 COMException에서 파생됩니다. COMException과 이름, 생성자 이름 및 내부 HRESULT 값만 다릅니다.  
   
-|name|내부 HRESULT|설명|  
+|이름|내부 HRESULT|설명|  
 |----------|------------------------|-----------------|  
 |COMException|*사용자 정의 hresult*|COM 메서드 호출에서 인식할 수 없는 HRESULT가 반환되는 경우에 throw됩니다.|  
 |AccessDeniedException|E_ACCESSDENIED|리소스 또는 기능에 대한 액세스가 거부된 경우 throw됩니다.|  
@@ -113,7 +113,7 @@ public:property int HResult {    int get();}
  오류를 지정하는 HRESULT 값입니다.  
   
 ### <a name="remarks"></a>설명  
- HRESULT 값을 해석 하는 방법에 대 한 자세한 내용은 참조 하세요. [COM 오류 코드 구조](http://go.microsoft.com/fwlink/p/?LinkId=262045)합니다.  
+ HRESULT 값을 해석 하는 방법에 대 한 자세한 내용은 참조 하세요. [COM 오류 코드 구조](/windows/desktop/com/structure-of-com-error-codes)합니다.  
 
 ## <a name="message"></a> Comexception:: Message 속성
 예외를 설명하는 메시지입니다.  

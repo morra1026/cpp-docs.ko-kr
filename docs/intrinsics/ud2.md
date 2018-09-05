@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eeb63aa411278c2ca6b2217d9243331b57cd7624
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 3ac4213587137552fa51505b73edd7387a98c5cb
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42541676"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687555"
 ---
 # <a name="ud2"></a>__ud2
 **Microsoft 전용**  
@@ -38,7 +38,7 @@ void __ud2();
 ## <a name="remarks"></a>설명  
  프로세서 정의 되지 않은 명령을 실행 하는 경우 잘못 된 opcode가 예외를 발생 시킵니다.  
   
- 합니다 `__ud2` 함수는 동일 합니다 `UD2` 컴퓨터 명령 및 커널 모드 에서만 사용할 수 있습니다. 자세한 내용은 문서를 검색 "Intel 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조"에 [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) 사이트입니다.  
+ 합니다 `__ud2` 함수는 동일 합니다 `UD2` 컴퓨터 명령 및 커널 모드 에서만 사용할 수 있습니다. 자세한 내용은 문서를 검색 "Intel 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조"에 [Intel Corporation](https://software.intel.com/en-us/articles/intel-sdm) 사이트입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
@@ -50,7 +50,7 @@ void __ud2();
   
 **Microsoft 전용 종료**  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 예외가 발생 하는 정의 되지 않은 명령을 실행 합니다. 그런 다음 예외 처리기 하나는 0 개에서 반환 코드를 변경합니다.  
   
 ```  

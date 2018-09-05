@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e660144808c3e9abf8f8c090b9af5ff2eb73d9e9
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 985333deaeceeed594e11223c417f3217e8b0322
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211807"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682045"
 ---
 # <a name="cdocobjectserveritem-class"></a>CDocObjectServerItem 클래스
 DocObject 서버 전용 OLE 서버 동사를 구현합니다.  
@@ -58,11 +58,12 @@ class CDocObjectServerItem : public COleServerItem
   
 |이름|설명|  
 |----------|-----------------|  
+|[CDocObjectServerItem::OnDoVerb](#ondoverb)|DocObject 항목을 숨기려면 프레임 워크를 시도 하는 경우 예외가 throw 됩니다.|
 |[CDocObjectServerItem::OnHide](#onhide)|DocObject 항목을 숨기려면 프레임 워크를 시도 하는 경우 예외가 throw 됩니다.|  
 |[CDocObjectServerItem::OnShow](#onshow)|DocObject 항목 위치를 확인 하기 위해 프레임 워크에서 호출 활성화 합니다. 항목 DocObject 없으면 호출 [COleServerItem::OnShow](../../mfc/reference/coleserveritem-class.md#onshow)합니다.|  
   
 ## <a name="remarks"></a>설명  
- `CDocObjectServerItem` 재정의 가능한 멤버 함수를 정의 합니다. [OnHide](#onhide)를 [OnOpen](https://msdn.microsoft.com/7a9b1363-6ad8-4732-9959-4e35c07644fd), 및 [은 OnShow](#onshow)합니다.  
+ `CDocObjectServerItem` 재정의 가능한 멤버 함수를 정의 합니다. [OnHide](#onhide)를 [OnDoVerb](#ondoverb), 및 [은 OnShow](#onshow)합니다.  
   
  사용 하도록 `CDocObjectServerItem`, 속하는 합니다 [OnGetEmbeddedItem](../../mfc/reference/coleserverdoc-class.md#ongetembeddeditem) 에서 재정의 `COleServerDoc`-파생된 클래스는 새 반환 `CDocObjectServerItem` 개체. 항목의 모든 기능을 변경 해야 하는 경우 자신만의 새 인스턴스를 만들 수 있습니다 `CDocObjectServerItem`-클래스를 파생 합니다.  
   

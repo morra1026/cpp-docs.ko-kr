@@ -1,7 +1,7 @@
 ---
-title: 구조체 (MASM) | Microsoft Docs
+title: STRUCT (MASM) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,24 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cbe38ef328680c2a45ab6efb4ebd6b1420821174
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 949c641fa64e5b3b752f64496aa430f37dda6ec4
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32055530"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692645"
 ---
 # <a name="struct-masm"></a>STRUCT (MASM)
-지정 된 것 구조체 형식을 선언 *fielddeclarations*합니다. 각 필드에 올바른 데이터 정의 여야 합니다. 와 동일 [STRUC](../../assembler/masm/struc.md)합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-   name STRUCT [[alignment]] [[, NONUNIQUE]]  
-fielddeclarations  
-name ENDS  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+지정 된 것 구조체 형식 선언 *필드 선언*합니다. 각 필드에 유효한 데이터 정의 해야 합니다. 동일 [STRUC](../../assembler/masm/struc.md)합니다.
+
+## <a name="syntax"></a>구문
+
+> *이름을* 구조체 [[*맞춤*]] [[, 고유 하지 않은]]<br/>
+> *필드 선언*<br/>
+> *이름* 종료
+
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: ARM 어셈블리 지시문 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -12,103 +12,104 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f5ab97fb9ccdff19206b829383c622efd3f7921
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 282d8bbd55bec8053961c709eb3733a65972b187
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32053303"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693115"
 ---
 # <a name="arm-assembler-directives"></a>ARM 어셈블리 지시문
-Microsoft ARM 어셈블러의 7 장에에서 설명 되어 있는 ARM 어셈블리 언어를 사용 하는 대부분의 경우는 [ARM 어셈블러 도구 가이드](http://go.microsoft.com/fwlink/p/?linkid=246102)합니다. 그러나 일부 어셈블리 지시문의 Microsoft 구현 ARM 어셈블리 지시문에서 다릅니다. 이 문서에서는 차이점을 설명 합니다.  
-  
-## <a name="microsoft-implementations-of-arm-assembly-directives"></a>ARM 어셈블리 지시문의 Microsoft 구현  
- 영역  
- Microsoft ARM 어셈블러 이러한 영역 특성을 지원: 맞춤, 코드, CODEALIGN, 데이터, NOINIT, READONLY, READWRITE, 엄지 단추, ARM입니다.  
-  
- 에 설명 된 대로 작동 엄지와 ARM 제외한 모든 페이지는 [ARM 어셈블러 도구 가이드](http://go.microsoft.com/fwlink/p/?linkid=246102)합니다.  
-  
- Microsoft ARM 어셈블러 엄지 단추는 코드 섹션 Thumb 코드가 포함 되어 하는 코드 섹션에 대 한 기본값을 나타냅니다.  ARM은 ARM 코드 섹션에 포함 되어 있음을 나타냅니다.  
-  
- ATTR  
- 지원되지 않습니다.  
-  
- CODE16  
- Microsoft ARM 어셈블러에서 허용 하지 않는 이전 UAL Thumb 구문을 의미 하기 때문에 지원 되지 않습니다.  UAL 구문과 함께 THUMB 지시문을 대신 사용 합니다.  
-  
- 일반적인  
- 공통 영역에 대 한 맞춤의 사양을 지원 되지 않습니다.  
-  
- DCDO  
- 지원되지 않습니다.  
-  
- DN QN, SN  
- 형식 또는 레지스터 별칭에 레인의 사양을 지원 되지 않습니다.  
-  
- 항목  
- 지원되지 않습니다.  
-  
- EQU  
- 사양으로 정의 된 기호에 대 한 형식의 지원 되지 않습니다.  
-  
- 내보내기 및 전역  
- ```  
-EXPORTsym {[type]}  
-```  
-  
- `sym` 가 기호를 내보낼 수 있습니다.  `[type]`를 지정 수 있습니다 `[DATA]` 기호 데이터를 가리키는지 나타내기 위해 또는 `[FUNC]` 코드 가리키는 기호를 나타냅니다.  
-  
- 전역는 내보내기에 대 한 동의어입니다.  
-  
- EXPORTAS  
- 지원되지 않습니다.  
-  
- 프레임  
- 지원되지 않습니다.  
-  
- 함수 및 프로시저  
- Assembly 구문은 사용자 지정의 사양을 지원 하지만 있는 저장 호출자와 호출 수신자 저장 레지스터를 나열 하 여 프로시저에 대 한 호출 규칙 Microsoft ARM 어셈블러 구문 자격 레지스터 목록을 무시 합니다.  어셈블러에 의해 생성 된 디버그 정보는 기본 호출 규칙을 지원 합니다.  
-  
- 가져오기 및 EXTERN  
- ```  
-IMPORT sym{, WEAK alias{, TYPE t}}  
-```  
-  
- `sym` 가져올 기호 이름이입니다.  
-  
- 약한 경우 `alias` 의미 지정 된 `sym` 약한 external입니다. 에 대 한 정의가 없습니다. 링크 타임에 없는 경우 모든 참조를 바인딩할 대신 `alias`합니다.  
-  
- 경우 형식 `t` 을 지정할 경우 `t` 링커에서 확인을 시도 하는지는 어떻게 나타냅니다 `sym`합니다.  이러한 값에 대 한 `t` 가능 합니다.   
-1-라이브러리 검색을 수행 하지 않습니다 `sym`  
-2-라이브러리 검색 `sym`  
-3-`sym` 별칭인 `alias` (기본값)  
-  
- EXTERN는 점을 제외 하 고 가져오기에 대 한 동의어 `sym` 현재 어셈블리에서에 대 한 참조가 있는 경우에 가져올 합니다.  
-  
- MACRO  
- 매크로의 상태 코드를 보유할 변수를 사용 하는 지원 되지 않습니다. 매개 변수는 지원 되지 않습니다 매크로 대 한 기본 값입니다.  
-  
- NOFP  
- 지원되지 않습니다.  
-  
- 선택 하 고, TTL, SUBT  
- Microsoft ARM 어셈블러 목록을 생성 하지 않으므로 때문에 지원 되지 않습니다.  
-  
- PRESERVE8  
- 지원되지 않습니다.  
-  
- 재배치  
- `RELOC n` 명령 또는 데이터 정의 지침에 따라만 수 있습니다. "익명 기호가 없습니다" 된 배치할 수 있습니다.  
-  
- 필요  
- 지원되지 않습니다.  
-  
- REQUIRE8  
- 지원되지 않습니다.  
-  
- THUMBX  
- Microsoft ARM 어셈블러 Thumb 2EE 명령 집합을 지원 하지 않으므로 지원 되지 않습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [ARM 어셈블러 명령줄 참조](../../assembler/arm/arm-assembler-command-line-reference.md)   
- [ARM 어셈블러 진단 메시지](../../assembler/arm/arm-assembler-diagnostic-messages.md)
+
+Microsoft ARM 어셈블러에서 설명 하는 ARM 어셈블리 언어를 사용 하는 대부분의 경우는 [ARM 컴파일러 armasm 참조 가이드](http://infocenter.arm.com/help/topic/com.arm.doc.dui0802b/index.html)합니다. 그러나 일부 어셈블리 지시문의 Microsoft 구현이 매우 친숙 ARM 어셈블리 지시문에서 다릅니다. 이 문서에서는 차이점을 설명합니다.
+
+## <a name="microsoft-implementations-of-arm-assembly-directives"></a>ARM 어셈블리 지시문의 Microsoft 구현
+
+`AREA`<br/>
+Microsoft ARM 어셈블러에서 지 원하는 이러한 `AREA` 특성: `ALIGN`, `CODE`, `CODEALIGN`, `DATA`를 `NOINIT`, `READONLY`를 `READWRITE`를 `THUMB`, `ARM`합니다.
+
+제외한 모든 `THUMB` 하 고 `ARM` 에 설명 된 대로 작동 합니다 [ARM 컴파일러 armasm 참조 가이드](http://infocenter.arm.com/help/topic/com.arm.doc.dui0802b/index.html)합니다.
+
+Microsoft ARM 어셈블러에서 `THUMB` 나타냅니다는 `CODE` 섹션 Thumb 코드가 포함 되며에 대 한 기본 `CODE` 섹션입니다.  `ARM` 섹션 ARM 코드를 포함 됨을 나타냅니다.
+
+`ATTR`<br/>
+지원되지 않습니다.
+
+`CODE16`<br/>
+Microsoft ARM 어셈블러 허용 하지 않는 이전 UAL Thumb 구문 의미 하기 때문에 지원 되지 않습니다.  사용 된 `THUMB` UAL 구문 대신 함께 지시문입니다.
+
+`COMMON`<br/>
+일반적인 영역에 대 한 맞춤 사양의 지원 되지 않습니다.
+
+`DCDO`<br/>
+지원되지 않습니다.
+
+`DN`, `QN`, `SN`<br/>
+형식 또는 별칭은 등록에서 레인 사양 지원 되지 않습니다.
+
+`ENTRY`<br/>
+지원되지 않습니다.
+
+`EQU`<br/>
+정의 된 기호에 대 한 형식의 사양 지원 되지 않습니다.
+
+`EXPORT` 및 `GLOBAL`
+
+> **내보낼** <em>sym</em>{0}**[**<em>형식</em>**]**}
+
+*기호* 내보낼 기호입니다.  [*형식*] 지정한 경우 일 수 있습니다 `[DATA]` 기호 데이터를 가리키는지 나타내려면 또는 `[FUNC]` 기호 코드를 가리키는지 나타냅니다.
+
+`GLOBAL` 에 대 한 동의어가 `EXPORT`합니다.
+
+`EXPORTAS`<br/>
+지원되지 않습니다.
+
+`FRAME`<br/>
+지원되지 않습니다.
+
+`FUNCTION` 및 `PROC`<br/>
+어셈블리 구문 사양 사용자 지정을 지원 하지만 레지스터는 호출자가 저장, 호출 수신자 저장 된 다른를 나열 하 여 프로시저에 대 한 호출 규칙 Microsoft ARM 어셈블러 구문을 허용 하지만 무시 등록 목록입니다.  어셈블러에 의해 생성 된 디버그 정보를 기본 호출 규칙을 지원 합니다.
+
+`IMPORT` 및 `EXTERN`
+
+> **가져오기** *sym*{0}**약한** *별칭*{**, 형식** *t*}}
+
+*기호* 가져올 기호의 이름입니다.
+
+하는 경우 `WEAK` *별칭* 을 지정 함을 나타냅니다 *sym* 약한 external입니다. 링크 타임에 대 한 정의가 없습니다가 경우에 대 한 모든 참조에 대신 바인딩합니다 *별칭*합니다.
+
+하는 경우 `TYPE` *t* 을 지정한 경우 *t* 링커를 해결 하려면 시도해 야 하는 방법을 나타냅니다 *sym*합니다.  이러한 값에 대 한 *t* 가능 합니다.<br/>
+1-라이브러리 검색을 수행 하지 않습니다 *기호*<br/>
+2-의 라이브러리를 검색 *기호*<br/>
+3 —*sym* 별칭인 *별칭* (기본값)
+
+`EXTERN` 에 대 한 동의어가 `IMPORT`점을 제외 하 고 *sym* 현재 어셈블리에서에 대 한 참조가 필요한 경우에 가져올 합니다.
+
+`MACRO`<br/>
+매크로의 상태 코드를 보유할 변수를 사용이 지원 되지 않습니다. 기본값은 매크로 매개 변수는 지원 되지 않습니다.
+
+`NOFP`<br/>
+지원되지 않습니다.
+
+`OPT`, `TTL`, `SUBT`<br/>
+Microsoft ARM 어셈블러 목록 생성 하지 때문에 지원 되지 않습니다.
+
+`PRESERVE8`<br/>
+지원되지 않습니다.
+
+`RELOC`<br/>
+`RELOC n` 명령 또는 데이터 정의 지시문을 따를 수 있습니다. "익명 기호가 없습니다" 수를 옮겨야 하는 경우
+
+`REQUIRE`<br/>
+지원되지 않습니다.
+
+`REQUIRE8`<br/>
+지원되지 않습니다.
+
+`THUMBX`<br/>
+Microsoft ARM 어셈블러 Thumb 2EE 명령 집합을 지원 하지 않으므로 지원 되지 않습니다.
+
+## <a name="see-also"></a>참고자료
+
+[ARM 어셈블러 명령줄 참조](../../assembler/arm/arm-assembler-command-line-reference.md)<br/>
+[ARM 어셈블러 진단 메시지](../../assembler/arm/arm-assembler-diagnostic-messages.md)<br/>

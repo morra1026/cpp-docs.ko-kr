@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7dbd74a8f216efb64d220747155a619d2084b3b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b022c4c42a7373f9bfc23c1fff5be2c1317709de
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211764"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692450"
 ---
 # <a name="tn003-mapping-of-windows-handles-to-objects"></a>TN003: Windows 핸들을 개체로 매핑
 이 MFC를 설명 합니다. Windows 매핑 지 루틴 개체 c + + 개체에 대 한 핸들입니다.  
@@ -74,7 +74,7 @@ CWnd myWnd;
 myWnd.Attach(hWnd);
 ```  
   
- 이렇게 하면 항목의 영구 맵에 연결 *myWnd* 하 고 *hWnd*합니다. 호출 `CWnd::FromHandle(hWnd)` 반환에 대 한 포인터 *myWnd*합니다. 때 *myWnd* 는 삭제 소멸자가 자동으로 파괴 *hWnd* 는 Windows를 호출 하 여 [DestroyWindow](https://msdn.microsoft.com/library/windows/desktop/ms632682) 함수입니다. 이 원하지 않는 경우 *hWnd* 에서 분리 해야 *myWnd* 하기 전에 *myWnd* 소멸 됩니다 (범위를 종료 하는 경우에 일반적으로 *myWnd*정의한). `Detach` 메서드가이 수행 합니다.  
+ 이렇게 하면 항목의 영구 맵에 연결 *myWnd* 하 고 *hWnd*합니다. 호출 `CWnd::FromHandle(hWnd)` 반환에 대 한 포인터 *myWnd*합니다. 때 *myWnd* 는 삭제 소멸자가 자동으로 파괴 *hWnd* 는 Windows를 호출 하 여 [DestroyWindow](/windows/desktop/api/winuser/nf-winuser-destroywindow) 함수입니다. 이 원하지 않는 경우 *hWnd* 에서 분리 해야 *myWnd* 하기 전에 *myWnd* 소멸 됩니다 (범위를 종료 하는 경우에 일반적으로 *myWnd*정의한). `Detach` 메서드가이 수행 합니다.  
   
 ```  
 myWnd.Detach();

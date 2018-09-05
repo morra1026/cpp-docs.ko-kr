@@ -828,12 +828,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cecde0bfd829cd55fb15e53fb07aa8b6645fce0e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 5cb6010d47be6fe2c771ac407bff26729c772f14
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218341"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678409"
 ---
 # <a name="cwnd-class"></a>CWnd 클래스
 
@@ -1234,8 +1234,8 @@ class CWnd : public CCmdTarget
 |[CWnd::OnSizeClipboard](#onsizeclipboard)|클립보드 뷰어 창의 클라이언트 영역 크기가 변경된 경우 호출됩니다.|
 |[CWnd::OnSizing](#onsizing)|사용자가 사각형의 크기를 조정하고 있음을 나타냅니다.|
 |[CWnd::OnSpoolerStatus](#onspoolerstatus)|인쇄 관리자 큐에서 작업이 추가되거나 제거될 때마다 인쇄 관리자에서 호출됩니다.|
-|[CWnd::OnStyleChanged](#onstylechanged)|나타내는 합니다 [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) Windows 함수는 하나 이상의 창 스타일 변경 되었습니다.|
-|[CWnd::OnStyleChanging](#onstylechanging)|나타내는 합니다 [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) Windows 함수를 하나 이상의 창 스타일 변경 하려고 합니다.|
+|[CWnd::OnStyleChanged](#onstylechanged)|나타내는 합니다 [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) Windows 함수는 하나 이상의 창 스타일 변경 되었습니다.|
+|[CWnd::OnStyleChanging](#onstylechanging)|나타내는 합니다 [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) Windows 함수를 하나 이상의 창 스타일 변경 하려고 합니다.|
 |[CWnd::OnSysChar](#onsyschar)|키 입력이 시스템 문자로 변환될 때 호출됩니다.|
 |[CWnd::OnSysColorChange](#onsyscolorchange)|시스템 색 설정이 변경될 때 모든 최상위 창에 대해 호출됩니다.|
 |[CWnd::OnSysCommand](#onsyscommand)|사용자가 컨트롤 메뉴에서 명령을 선택할 때 또는 사용자가 최대화 또는 최소화 단추를 선택할 때 호출됩니다.|
@@ -1247,7 +1247,7 @@ class CWnd : public CCmdTarget
 |[CWnd::OnTimer](#ontimer)|에 지정 된 간격 후에 호출 [SetTimer](#settimer)합니다.|
 |[CWnd::OnTouchInput](#ontouchinput)|Windows Touch에서 단일 입력을 처리합니다.|
 |[CWnd::OnTouchInputs](#ontouchinputs)|Windows Touch에서 입력을 처리합니다.|
-|[CWnd::OnUniChar](#onunichar)|키를 누를 때 호출됩니다. 즉, 현재 창에 키보드 포커스와 [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) 메시지 변환 되는 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 함수입니다.|
+|[CWnd::OnUniChar](#onunichar)|키를 누를 때 호출됩니다. 즉, 현재 창에 키보드 포커스와 [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) 메시지 변환 되는 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 함수입니다.|
 |[CWnd::OnUnInitMenuPopup](#onuninitmenupopup)|드롭다운 메뉴나 하위 메뉴가 제거될 때 호출됩니다.|
 |[CWnd::OnUpdateUIState](#onupdateuistate)|지정된 창 및 모든 자식 창에 대한 UI(사용자 인터페이스) 상태를 변경하기 위해 호출됩니다.|
 |[CWnd::OnUserChanged](#onuserchanged)|사용자가 로그온하거나 로드오프한 후에 호출됩니다.|
@@ -2244,7 +2244,7 @@ void CreateGrayCaret(
 
 매개 변수 *nWidth* 하 고 *nHeight* 캐럿의 너비와 높이 (논리 단위)를 지정 하며 매핑 모드에 따라 달라 집니다 정확한 너비와 높이 (픽셀)입니다.
 
-시스템의 창 테두리 너비 또는 높이에서 검색할 수는 [GetSystemMetrics](https://msdn.microsoft.com/library/windows/desktop/ms724385) SM_CXBORDER 및 SM_CYBORDER 인덱스를 사용 하 여 Windows 함수입니다. 창 테두리 너비 또는 높이 사용 하 여 캐럿 고해상도 디스플레이에 표시 되도록 보장 합니다.
+시스템의 창 테두리 너비 또는 높이에서 검색할 수는 [GetSystemMetrics](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) SM_CXBORDER 및 SM_CYBORDER 인덱스를 사용 하 여 Windows 함수입니다. 창 테두리 너비 또는 높이 사용 하 여 캐럿 고해상도 디스플레이에 표시 되도록 보장 합니다.
 
 `CreateGrayCaret` 캐럿을 소유 하는 기간에 관계 없이 모든 경우 자동으로 멤버 함수 이전 캐럿 셰이프를 제거 합니다. 를 만든 후 캐럿 처음에 숨겨져 있습니다. 캐럿을 표시 합니다 [ShowCaret](#showcaret) 멤버 함수를 호출 해야 합니다.
 
@@ -2278,7 +2278,7 @@ void CreateSolidCaret(
 
 매개 변수 *nWidth* 하 고 *nHeight* 캐럿의 너비와 높이 (논리 단위)를 지정 하며 매핑 모드에 따라 달라 집니다 정확한 너비와 높이 (픽셀)입니다.
 
-시스템의 창 테두리 너비 또는 높이에서 검색할 수는 [GetSystemMetrics](https://msdn.microsoft.com/library/windows/desktop/ms724385) SM_CXBORDER 및 SM_CYBORDER 인덱스를 사용 하 여 Windows 함수입니다. 창 테두리 너비 또는 높이 사용 하 여 캐럿 고해상도 디스플레이에 표시 되도록 보장 합니다.
+시스템의 창 테두리 너비 또는 높이에서 검색할 수는 [GetSystemMetrics](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) SM_CXBORDER 및 SM_CYBORDER 인덱스를 사용 하 여 Windows 함수입니다. 창 테두리 너비 또는 높이 사용 하 여 캐럿 고해상도 디스플레이에 표시 되도록 보장 합니다.
 
 `CreateSolidCaret` 캐럿을 소유 하는 기간에 관계 없이 모든 경우 자동으로 멤버 함수 이전 캐럿 셰이프를 제거 합니다. 를 만든 후 캐럿 처음에 숨겨져 있습니다. 캐럿을 표시 합니다 [ShowCaret](#showcaret) 멤버 함수를 호출 해야 합니다.
 
@@ -2767,7 +2767,7 @@ void EnableActiveAccessibility();
 
 ### <a name="remarks"></a>설명
 
-표준 windows 및 ActiveX 컨트롤;를 비롯 하 여 컨트롤에 대 한 MFC의 기본 Active Accessibility 지원이 부족 그러나 경우에 `CWnd`-nonwindowed 사용자 인터페이스 요소를 포함 하는 파생된 클래스에 MFC에 대 한 알 수 없습니다. 이 경우 해당 재정의 해야 합니다 [Active Accessibility 멤버 함수](https://msdn.microsoft.com/68af04ac-4eb9-4b7d-b33f-c45512097a74) 클래스에서 호출 해야 하 고 `EnableActiveAccessibility` 클래스의 생성자에서.
+표준 windows 및 ActiveX 컨트롤;를 비롯 하 여 컨트롤에 대 한 MFC의 기본 Active Accessibility 지원이 부족 그러나 경우에 `CWnd`-nonwindowed 사용자 인터페이스 요소를 포함 하는 파생된 클래스에 MFC에 대 한 알 수 없습니다. 이 경우 해당 재정의 해야 합니다 [Active Accessibility 멤버 함수](/windows/desktop/winauto/sdk-components) 클래스에서 호출 해야 하 고 `EnableActiveAccessibility` 클래스의 생성자에서.
 
 ##  <a name="enabledynamiclayout"></a>  CWnd::EnableDynamicLayout
 
@@ -5011,7 +5011,7 @@ CDC* GetWindowDC();
 
 `GetWindowDC` 내에서 특별 한 그리기 효과에 사용 되는 것은 `CWnd` 비클라이언트 영역입니다. 모든 창의 비클라이언트 영역에서 그리기 권장 되지 않습니다.
 
-합니다 [GetSystemMetrics](https://msdn.microsoft.com/library/windows/desktop/ms724385) 비클라이언트 영역의 캡션 표시줄, 메뉴 및 스크롤 막대와 같은 다양 한 파트의 크기를 검색할 Windows 함수를 사용할 수 있습니다.
+합니다 [GetSystemMetrics](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) 비클라이언트 영역의 캡션 표시줄, 메뉴 및 스크롤 막대와 같은 다양 한 파트의 크기를 검색할 Windows 함수를 사용할 수 있습니다.
 
 그리기를 완료 한 후 합니다 [ReleaseDC](#releasedc) 디스플레이 컨텍스트를 해제 하려면 멤버 함수를 호출 해야 합니다. 디스플레이 컨텍스트를 해제 하지 못하면 동시에 열 수 있는 장치 컨텍스트의 수에 대 한 제한으로 인해 응용 프로그램이 요청 하는 그리기에 영향을 심각 하 게 됩니다.
 
@@ -5441,7 +5441,7 @@ BOOL IsDialogMessage(LPMSG lpMsg);
 
 경우는 `IsDialogMessage` 함수는 메시지를 처리 하는 경우이 확인 키보드 메시지 및 해당 대화 상자에 대 한 선택 명령으로 변환 합니다. 예를 들어, 다음 컨트롤이 나 컨트롤의 그룹 TAB 키 선택 하 고 아래쪽 화살표 키를 그룹에 다음 컨트롤을 선택 합니다.
 
-처리 하는 메시지 전달 하면 안 `IsDialogMessage` 에 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 또는 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수를 이미 처리 되었습니다.
+처리 하는 메시지 전달 하면 안 `IsDialogMessage` 에 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 또는 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수를 이미 처리 되었습니다.
 
 ##  <a name="isdlgbuttonchecked"></a>  CWnd::IsDlgButtonChecked
 
@@ -5738,9 +5738,9 @@ BOOL ModifyStyle(
 
 ### <a name="remarks"></a>설명
 
-비트 OR를 사용 하 여 추가 하거나 제거 하는 스타일을 결합할 수 있습니다 (&#124;) 연산자. 항목을 참조 하세요 [창 스타일](https://msdn.microsoft.com/library/windows/desktop/ms632600) 하 고 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) 사용할 창 스타일에 대 한 내용은 Windows SDK의 합니다.
+비트 OR를 사용 하 여 추가 하거나 제거 하는 스타일을 결합할 수 있습니다 (&#124;) 연산자. 항목을 참조 하세요 [창 스타일](https://msdn.microsoft.com/library/windows/desktop/ms632600) 하 고 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) 사용할 창 스타일에 대 한 내용은 Windows SDK의 합니다.
 
-하는 경우 *nFlags* 이 값은 0 `ModifyStyle` Windows API 함수를 호출 [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) 결합 하 여 창을 다시 그립니다 *nFlags* 다음 4 개를 사용 하 여 미리 설정 플래그:
+하는 경우 *nFlags* 이 값은 0 `ModifyStyle` Windows API 함수를 호출 [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) 결합 하 여 창을 다시 그립니다 *nFlags* 다음 4 개를 사용 하 여 미리 설정 플래그:
 
 - SWP_NOSIZE 현재 크기를 유지합니다.
 
@@ -5787,9 +5787,9 @@ BOOL ModifyStyleEx(
 
 ### <a name="remarks"></a>설명
 
-비트 OR를 사용 하 여 추가 하거나 제거 하는 스타일을 결합할 수 있습니다 (&#124;) 연산자. 항목을 참조 하세요 [확장 창 스타일](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) 이 가이드의 및 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) 사용 가능한 항목에 대 한 내용은 Windows SDK의 확장 스타일
+비트 OR를 사용 하 여 추가 하거나 제거 하는 스타일을 결합할 수 있습니다 (&#124;) 연산자. 항목을 참조 하세요 [확장 창 스타일](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) 이 가이드의 및 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) 사용 가능한 항목에 대 한 내용은 Windows SDK의 확장 스타일
 
-하는 경우 *nFlags* 이 값은 0 `ModifyStyleEx` Windows API 함수를 호출 [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) 결합 하 여 창을 다시 그립니다 *nFlags* 다음 4 개를 사용 하 여 미리 설정 플래그:
+하는 경우 *nFlags* 이 값은 0 `ModifyStyleEx` Windows API 함수를 호출 [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) 결합 하 여 창을 다시 그립니다 *nFlags* 다음 4 개를 사용 하 여 미리 설정 플래그:
 
 - SWP_NOSIZE 현재 크기를 유지합니다.
 
@@ -8113,7 +8113,7 @@ afx_msg BOOL OnMouseWheel(
 
 ### <a name="remarks"></a>설명
 
-재정의 되지 않으면 `OnMouseWheel` 기본값인 호출 [WM_MOUSEWHEEL](/windows/desktop/inputdev/wm-mousewheel)합니다. Windows는 자동으로 포커스가 있는 컨트롤이 나 자식 창에 메시지를 라우팅합니다. Win32 함수 [DefWindowProc](https://msdn.microsoft.com/library/windows/desktop/ms633572) 처리 하는 창에 부모 체인은 메시지를 전파 합니다.
+재정의 되지 않으면 `OnMouseWheel` 기본값인 호출 [WM_MOUSEWHEEL](/windows/desktop/inputdev/wm-mousewheel)합니다. Windows는 자동으로 포커스가 있는 컨트롤이 나 자식 창에 메시지를 라우팅합니다. Win32 함수 [DefWindowProc](/windows/desktop/api/winuser/nf-winuser-defwindowproca) 처리 하는 창에 부모 체인은 메시지를 전파 합니다.
 
 합니다 *zDelta* 매개 변수는 120으로 설정 된 WHEEL_DELTA의 배수입니다. 이 값은 수행할 작업에 대 한 임계값 및 이러한 하나의 작업 (예를 들어, 스크롤 정방향으로 한 단계) 각 델타에 대해 수행 되어야 합니다.
 
@@ -9464,7 +9464,7 @@ SP_JOBSTATUS 플래그를 지정합니다.
 
 ##  <a name="onstylechanged"></a>  CWnd::OnStyleChanged
 
-프레임 워크가 후이 멤버 함수를 호출 합니다 [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) 함수는 하나 이상의 창 스타일 변경 되었습니다.
+프레임 워크가 후이 멤버 함수를 호출 합니다 [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) 함수는 하나 이상의 창 스타일 변경 되었습니다.
 
 ```
 afx_msg void OnStyleChanged(
@@ -9491,7 +9491,7 @@ afx_msg void OnStyleChanged(
 
 ##  <a name="onstylechanging"></a>  CWnd::OnStyleChanging
 
-이 멤버 함수를 호출 하는 프레임 워크 때 합니다 [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) 함수는 하나 이상의 창 스타일을 변경 하려고 합니다.
+이 멤버 함수를 호출 하는 프레임 워크 때 합니다 [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) 함수는 하나 이상의 창 스타일을 변경 하려고 합니다.
 
 ```
 afx_msg void OnStyleChanging(
@@ -9853,7 +9853,7 @@ afx_msg void OnTimer(UINT_PTR nIDEvent);
 
 ### <a name="remarks"></a>설명
 
-[DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 보냅니다 함수는 [WM_TIMER](/windows/desktop/winmsg/wm-timer) 메시지가 다른 메시지는 응용 프로그램의 메시지 큐입니다.
+[DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 보냅니다 함수는 [WM_TIMER](/windows/desktop/winmsg/wm-timer) 메시지가 다른 메시지는 응용 프로그램의 메시지 큐입니다.
 
 > [!NOTE]
 > 이 멤버 함수는 응용프로그램에서 Windows 메시지를 처리할 수 있도록 프레임워크에서 호출됩니다. 함수에 전달되는 매개 변수는 해당 메시지가 수신되었을 때 프레임워크에서 받았던 매개 변수를 반영합니다. 이 함수의 기본 클래스 구현을 호출하는 경우, 해당 구현은 해당 함수에 공급한 매개변수가 아닌, 메시지와 함께 전달 받았던 원래의 매개 변수를 사용할 것입니다.
@@ -9960,7 +9960,7 @@ TRUE 이면 응용 프로그램 프로세스 Windows 터치 입력이 있습니�
 
 ##  <a name="onunichar"></a>  CWnd::OnUniChar
 
-키를 누를 때 프레임 워크에서이 멤버 함수를 호출 합니다. 즉, 현재 창에 키보드 포커스와 [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) 메시지 변환 되는 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 함수입니다.
+키를 누를 때 프레임 워크에서이 멤버 함수를 호출 합니다. 즉, 현재 창에 키보드 포커스와 [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) 메시지 변환 되는 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 함수입니다.
 
 ```
 afx_msg void OnUniChar(
@@ -10207,7 +10207,7 @@ afx_msg void OnWindowMaximizedChanged(BOOL bIsMaximized);
 
 ##  <a name="onwindowposchanged"></a>  CWnd::OnWindowPosChanged
 
-프레임 워크에 대 한 호출의 결과로 크기, 위치 또는 Z 순서가 변경 될 때이 멤버 함수를 호출 합니다 [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) 멤버 함수 또는 다른 창 관리 함수입니다.
+프레임 워크에 대 한 호출의 결과로 크기, 위치 또는 Z 순서가 변경 될 때이 멤버 함수를 호출 합니다 [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) 멤버 함수 또는 다른 창 관리 함수입니다.
 
 ```
 afx_msg void OnWindowPosChanged(WINDOWPOS* lpwndpos);
@@ -10227,7 +10227,7 @@ afx_msg void OnWindowPosChanged(WINDOWPOS* lpwndpos);
 
 ##  <a name="onwindowposchanging"></a>  CWnd::OnWindowPosChanging
 
-크기, 위치 또는 Z 순서에 대 한 호출의 결과로 변경 하려고 할 때 프레임 워크에서이 멤버 함수를 호출 합니다 [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) 멤버 함수 또는 다른 창 관리 함수입니다.
+크기, 위치 또는 Z 순서에 대 한 호출의 결과로 변경 하려고 할 때 프레임 워크에서이 멤버 함수를 호출 합니다 [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) 멤버 함수 또는 다른 창 관리 함수입니다.
 
 ```
 afx_msg void OnWindowPosChanging(WINDOWPOS* lpwndpos);
@@ -10602,7 +10602,7 @@ virtual void PreSubclassWindow();
 
 ##  <a name="pretranslatemessage"></a>  CWnd::PreTranslateMessage
 
-클래스에서 사용 하는 [CWinApp](../../mfc/reference/cwinapp-class.md) 디스패치 되기 전에 창 메시지를 변환 하는 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다.
+클래스에서 사용 하는 [CWinApp](../../mfc/reference/cwinapp-class.md) 디스패치 되기 전에 창 메시지를 변환 하는 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수입니다.
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -11056,7 +11056,7 @@ SIMPLEREGION (사각형 무효화 지역), COMPLEXREGION (사각형이 아닌 �
 
 하는 경우 [SW_INVALIDATE](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) 하 고 [SW_ERASE](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) 지정 되지 않은 경우는 `ScrollWindowEx` 멤버 함수에서 스크롤 된 영역을 무효화 하지 않습니다. 이러한 플래그 중으로 설정 된 경우 `ScrollWindowEx` 이 영역을 무효화 합니다. 영역 응용 프로그램이 호출 될 때까지 업데이트 되지 않습니다는 [UpdateWindow](/windows/desktop/api/winuser/nf-winuser-updatewindow) 멤버 함수를 호출 합니다 [RedrawWindow](/windows/desktop/api/winuser/nf-winuser-redrawwindow) 멤버 함수 (지정 [RDW_UPDATENOW](/windows/desktop/api/winuser/nf-winuser-redrawwindow) 또는[ RDW_ERASENOW](/windows/desktop/api/winuser/nf-winuser-redrawwindow)), 검색 또는 합니다 [WM_PAINT](/windows/desktop/gdi/wm-paint) 응용 프로그램 큐에서 메시지입니다.
 
-창에 있으면 합니다 [WS_CLIPCHILDREN](https://msdn.microsoft.com/library/windows/desktop/ms632679) 스타일을 지정 하 여 반환 된 영역 *prgnUpdate* 하 고 *lpRectUpdate* 는 스크롤 창의 전체 영역을 나타내는 업데이트할 영역 업데이트 해야 하는 자식 창에 포함 합니다.
+창에 있으면 합니다 [WS_CLIPCHILDREN](/windows/desktop/api/winuser/nf-winuser-createwindowa) 스타일을 지정 하 여 반환 된 영역 *prgnUpdate* 하 고 *lpRectUpdate* 는 스크롤 창의 전체 영역을 나타내는 업데이트할 영역 업데이트 해야 하는 자식 창에 포함 합니다.
 
 경우는 [SW_SCROLLCHILDREN](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) 플래그가 지정 된, Windows 업데이트 되지 것입니다 제대로 화면 자식 창에 일부 스크롤됩니다. 소스 사각형 밖에 있는 특정 스크롤된 자식 창의 부분 지워지지 및 비활성 제대로 새 대상에서. 사용 된 [DeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632681) 없는 완전히 내 이동 자식 창에 대 한 Windows 함수를 *lpRectScroll* 사각형입니다. SW_SCROLLCHILDREN 플래그가 설정 되어 있고 캐럿 사각형이 스크롤 사각형 교차 하는 경우에 커서 위치가 변경 되 면 합니다.
 
@@ -11497,7 +11497,7 @@ BOOL SetLayeredWindowAttributes(
 계층화 된 창의 불투명도 설명 하는 데는 알파 값입니다. 자세한 내용은 참조 하세요. 합니다 `SourceConstantAlpha` 의 멤버는 [BLENDFUNCTION](/windows/desktop/api/wingdi/ns-wingdi-_blendfunction) 구조입니다. 때 *bAlpha* 0 인 창이 완전히 투명 하 게 됩니다. 때 *bAlpha* 255 이면 창은 불투명 합니다.
 
 *dwFlags*  
-수행할 동작을 지정 합니다. 이 매개 변수는 다음 값 중 하나 이상의 수 있습니다. 가능한 값 목록을 참조 하세요 [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540)합니다.
+수행할 동작을 지정 합니다. 이 매개 변수는 다음 값 중 하나 이상의 수 있습니다. 가능한 값 목록을 참조 하세요 [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes)합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -11505,7 +11505,7 @@ BOOL SetLayeredWindowAttributes(
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 함수의 기능을 에뮬레이트합니다 [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 함수의 기능을 에뮬레이트합니다 [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes)Windows SDK에 설명 된 대로 합니다.
 
 ##  <a name="setmenu"></a>  CWnd::SetMenu
 

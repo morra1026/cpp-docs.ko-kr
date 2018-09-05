@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71312a1dfa70ca3fd83242f6f706654c08a4973c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 290861abef11b922601ea455390f1d997749ad0e
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217669"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686774"
 ---
 # <a name="creating-a-web-browser-style-mfc-application"></a>웹 브라우저 스타일 MFC 응용 프로그램 만들기
 네트워크 및 로컬 파일 시스템에서 웹 브라우저 스타일 응용 프로그램 폴더 뿐 아니라 (예: HTML 또는 액티브 문서)는 인터넷 또는 인트라넷에서 정보에 액세스할 수 있습니다. 응용 프로그램의 뷰 클래스를 파생 시켜 [CHtmlView](../../mfc/reference/chtmlview-class.md), 효과적으로 WebBrowser 컨트롤을 사용 하 여 뷰를 제공 하 여 응용 프로그램 웹 브라우저를 확인 합니다.  
@@ -77,10 +77,10 @@ void CWebView::OnInitialUpdate()
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [MFC 샘플 MFCIE](https://msdn.microsoft.com/7391aa0c-fca8-4994-a6c9-6c5c7470fba0)   
+ [MFC 샘플 MFCIE](https://github.com/Microsoft/VCSamples)   
  [MFC 응용 프로그램 마법사](../../mfc/reference/mfc-application-wizard.md)   
  [프로젝트 속성 사용](../../ide/working-with-project-properties.md)   
  [속성 페이지](../../ide/property-pages-visual-cpp.md)   
  [프로젝트 속성 사용](../../ide/working-with-project-properties.md)   
- [응용 프로그램 배포](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+
 

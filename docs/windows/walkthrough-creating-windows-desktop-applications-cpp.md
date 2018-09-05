@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e9a946689d563f1c681fee305ec05438bc5eb687
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 34342fbca00a127d1fdee13d29626bc2a3dfe53f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204740"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679207"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (c + +)
 
@@ -181,7 +181,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    }
    ```
 
-1. 이제 창을 만들 수 있습니다. 사용 된 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) 함수입니다.
+1. 이제 창을 만들 수 있습니다. 사용 된 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) 함수입니다.
 
    ```cpp
    static TCHAR szWindowClass[] = _T("DesktopApp");
@@ -247,7 +247,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    return (int) msg.wParam;
    ```
 
-   구조 및 메시지 루프의 함수에 대 한 자세한 내용은 참조 하세요. [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958)를 [GetMessage](https://msdn.microsoft.com/library/windows/desktop/ms644936)합니다 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955), 및 [DispatchMessage ](https://msdn.microsoft.com/library/windows/desktop/ms644934).
+   구조 및 메시지 루프의 함수에 대 한 자세한 내용은 참조 하세요. [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958)를 [GetMessage](https://msdn.microsoft.com/library/windows/desktop/ms644936)합니다 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage), 및 [DispatchMessage ](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).
 
    이때 `WinMain` 함수는 다음 코드와 유사합니다.
 

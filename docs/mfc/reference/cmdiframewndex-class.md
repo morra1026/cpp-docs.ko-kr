@@ -166,12 +166,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9644882f537285b27fa376afa65581d6d4c3c9f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 1015d35bea25ceaf23a822c9edea4da121583c61
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216290"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678816"
 ---
 # <a name="cmdiframewndex-class"></a>CMDIFrameWndEx 클래스
 기능을 확장 [CMDIFrameWnd](../../mfc/reference/cframewnd-class.md), Windows 인터페이스 MDI (다중 문서) 프레임 창입니다.  
@@ -252,7 +252,7 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 |[CMDIFrameWndEx::OnTearOffMenu](#ontearoffmenu)|분리 막대가 있는 메뉴가 활성화될 때 프레임워크에서 호출됩니다.|  
 |[CMDIFrameWndEx::OnUpdateFrameMenu](#onupdateframemenu)|프레임 메뉴를 업데이트 하기 위해 프레임 워크에서 호출 됩니다. (`CMDIFrameWnd::OnUpdateFrameMenu`를 재정의합니다.)|  
 |[CMDIFrameWndEx::PaneFromPoint](#panefrompoint)|지정 된 위치를 포함 하는 도킹 창을 반환 합니다.|  
-|`CMDIFrameWndEx::PreTranslateMessage`|클래스에서 사용 하는 [CWinApp](../../mfc/reference/cwinapp-class.md) 디스패치 되기 전에 창 메시지를 변환 하는 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다.  (`CMDIFrameWnd::PreTranslateMessage`를 재정의합니다.)|  
+|`CMDIFrameWndEx::PreTranslateMessage`|클래스에서 사용 하는 [CWinApp](../../mfc/reference/cwinapp-class.md) 디스패치 되기 전에 창 메시지를 변환 하는 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수입니다.  (`CMDIFrameWnd::PreTranslateMessage`를 재정의합니다.)|  
 |[CMDIFrameWndEx::RecalcLayout](#recalclayout)|프레임 창의 레이아웃을 다시 계산 하기 위해 프레임 워크에서 호출 됩니다. (재정의 [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout).)|  
 |[CMDIFrameWndEx::RemovePaneFromDockManager](#removepanefromdockmanager)|창을 등록을 취소 하 고 도킹 관리자에서 제거 합니다.|  
 |[CMDIFrameWndEx::SaveMDIState](#savemdistate)|MDI 탭 그룹의 현재 레이아웃 및 이전에 열린된 문서의 목록을 저장합니다.|  
@@ -268,7 +268,7 @@ class CMDIFrameWndEx : public CMDIFrameWnd
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CMDIFrameWndEx::m_bCanCovertControlBarToMDIChild](#m_bcancovertcontrolbartomdichild)|MDI 자식 창에 도킹 창 변환할 수 있는지 여부를 결정 합니다.|  
 |[CMDIFrameWndEx::m_bDisableSetRedraw](#m_bdisablesetredraw)|MDI 자식 창에 대 한 다시 그리기 최적화를 사용할지 설정 합니다.|  

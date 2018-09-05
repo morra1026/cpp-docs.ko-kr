@@ -19,16 +19,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a285cc8c0d24e36d6c00f336d0b3724a31c7af82
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3c8cca379b9b9ba6498908469761acefce189117
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211302"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686990"
 ---
 # <a name="typedef-enum-union-and-struct-attributes"></a>Typedef, Enum, Union 및 Struct 특성
 
-다음 특성을 적용 합니다 [typedef](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1), [구조체](../cpp/struct-cpp.md), 및 [열거형](../cpp/enumerations-cpp.md) c + + 키워드입니다.
+다음 특성을 적용 합니다 [typedef](../cpp/aliases-and-typedefs-cpp.md), [구조체](../cpp/struct-cpp.md), 및 [열거형](../cpp/enumerations-cpp.md) c + + 키워드입니다.
 
 ### <a name="typedef"></a>형식 정의
 

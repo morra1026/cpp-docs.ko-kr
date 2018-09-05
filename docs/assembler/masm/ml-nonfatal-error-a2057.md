@@ -1,7 +1,7 @@
 ---
 title: ML 심각 하지 않은 오류 A2057 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,17 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b397b47e3761613e1a412af2d5a82ff56f10aac0
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 8f90298295e7ee68cbdaed9cd12a0865c413333d
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054512"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685268"
 ---
 # <a name="ml-nonfatal-error-a2057"></a>ML 심각하지 않은 오류 A2057
-**오류 강제: 빈 문자열**  
-  
- 조건부 error 지시문 [합니다. ERRB](../../assembler/masm/dot-errb.md) 이 오류를 생성 하는 데 사용 되었습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [ML 오류 메시지](../../assembler/masm/ml-error-messages.md)
+
+**오류를 강제: 빈 문자열**
+
+오류 조건부 지시문 [합니다. ERRB](../../assembler/masm/dot-errb.md) 이 오류를 생성 하는 데 사용 되었습니다.
+
+## <a name="see-also"></a>참고자료
+
+[ML 오류 메시지](../../assembler/masm/ml-error-messages.md)<br/>
