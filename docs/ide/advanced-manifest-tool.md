@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47d4dc3ab325a7346d0e787a15d69d646896827d
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 1b12c53f2793f7ac083ca06143be18aa6234f1de
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33326939"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201586"
 ---
 # <a name="advanced-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>고급, 매니페스트 도구, 구성 속성, &lt;Projectname&gt; 속성 페이지 대화 상자
-이 대화 상자를 사용하여 [Mt.exe](http://msdn.microsoft.com/library/aa375649)에 대한 고급 옵션을 지정합니다.  
+이 대화 상자를 사용하여 [Mt.exe](https://msdn.microsoft.com/library/aa375649)에 대한 고급 옵션을 지정합니다.  
   
  이 속성 페이지 대화 상자에 액세스하려면 프로젝트 또는 속성 시트의 속성 페이지를 엽니다. **구성 속성**에서 **매니페스트 도구** 노드를 확장한 다음, **고급**을 선택합니다.  
   

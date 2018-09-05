@@ -9,16 +9,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d3a3ec1fec213cc6fa1bb5dc0ebfdadbe7d22b2
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: 996a891d62ee254fe2ce769483d34941ffb300b6
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131722"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43680541"
 ---
 # <a name="whats-new-for-visual-c-in-visual-studio-2017"></a>Visual Studio 2017의 Visual C++에 대한 새로운 기능
 
-Visual Studio 2017에는 Visual C++ 환경에 대한 많은 업데이트와 수정이 포함되었습니다. 대부분 **사용자 의견 보내기** 아래의 [문제 보고](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) 및 [제안하기](https://visualstudio.uservoice.com/) 옵션을 통해 고객이 제출한 250개 이상의 버그와 보고된 문제를 해결했습니다. 버그를 알려 주셔서 감사합니다. 모든 Visual Studio의 새로운 기능에 대한 자세한 내용은 [Visual Studio 2017의 새로운 기능](https://go.microsoft.com/fwlink/p/?linkid=834481)을 참조하세요.
+Visual Studio 2017에는 Visual C++ 환경에 대한 많은 업데이트와 수정이 포함되었습니다. 대부분 **사용자 의견 보내기** 아래의 [문제 보고](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) 및 [제안하기](https://visualstudio.uservoice.com/) 옵션을 통해 고객이 제출한 250개 이상의 버그와 보고된 문제를 해결했습니다. 버그를 알려 주셔서 감사합니다. 모든 Visual Studio의 새로운 기능에 대한 자세한 내용은 [Visual Studio 2017의 새로운 기능](/visualstudio/ide/whats-new-in-visual-studio)을 참조하세요.
 
 <!--The compiler and tools version number in Visual Studio 2017 is 14.10.24629. -->
 
@@ -28,7 +28,7 @@ Visual Studio 2017에는 Visual C++ 환경에 대한 많은 업데이트와 수�
 
 이 릴리스에서는 C++ 컴파일러 및 표준 라이브러리를 C++11 및 C++14 기능에 대한 강화된 지원 기능과, C++17 표준에서 선보일 것으로 예상되는 특정 기능에 대한 임시 지원 기능으로 업데이트했습니다. 자세한 내용은 [Visual Studio 2017의 C++ 규칙 향상](cpp-conformance-improvements-2017.md)을 참조하세요.
 
-**Visual Studio 2017 버전 15.5**: 컴파일러는 구조적 바인딩, `constexpr` 람다, `if constexpr`, 인라인 변수, fold 식 및 형식 시스템에 `noexcept` 추가 등 C++17에 새롭게 추가된 기능의 약 75%를 지원합니다. 이는 **/std:c++17** 옵션에서 사용할 수 있습니다. 자세한 내용은 [Visual Studio 2017의 C++ 규칙 향상](cpp-conformance-improvements-2017.md)을 참조하세요.
+**Visual Studio 2017 버전 15.5**: 컴파일러는 구조적 바인딩, `constexpr` 람다, `if constexpr`, 인라인 변수, fold 식 및 형식 시스템에 `noexcept` 추가 등 C++17에 새롭게 추가된 기능의 약 75%를 지원합니다. 이는 **/std:c++17** 옵션하에서 사용할 수 있습니다. 자세한 내용은 [Visual Studio 2017의 C++ 규칙 향상](cpp-conformance-improvements-2017.md)을 참조하세요.
 
 **Visual Studio 2017 버전 15.7**: Visual Studio 버전 15.7의 MSVC 컴파일러 도구 집합은 이제 C++ 표준을 준수합니다. 자세한 내용은 [알림: MSVC의 C++ 표준 준수](https://blogs.msdn.microsoft.com/vcblog/2018/05/07/announcing-msvc-conforms-to-the-c-standard/) 및 [Visual C++ 언어 규칙](visual-cpp-language-conformance.md)을 참조하세요.
 

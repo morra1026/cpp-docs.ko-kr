@@ -21,15 +21,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ccce0633ca9dad6b4754db2fb6b10aa32dcbdaaa
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 1b5160061233f9d0a474385bccd324333ed9549a
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33322876"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686289"
 ---
 # <a name="resources-property-pages"></a>리소스 속성 페이지
-리소스 컴파일러를 사용하는 방법에 대한 자세한 내용은 [RC(RC 명령줄) 사용](http://msdn.microsoft.com/library/windows/desktop/aa381055)을 참조하세요.  
+리소스 컴파일러를 사용하는 방법에 대한 자세한 내용은 [RC(RC 명령줄) 사용](/windows/desktop/menurc/using-rc-the-rc-command-line-)을 참조하세요.  
   
  **리소스** 속성 페이지에 액세스하는 방법에 대한 자세한 내용은 [프로젝트 속성 작업](../ide/working-with-project-properties.md)을 참조하세요.  
   

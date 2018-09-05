@@ -22,29 +22,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ff30460ad68e6efb1abc3d84925b362cf03f551
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 927ab1004336787131c8f92c247512d1c66caf69
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33325775"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212758"
 ---
 # <a name="midl-property-pages-output"></a>MIDL 속성 페이지: 출력
 **MIDL** 폴더의 **출력** 속성 페이지에서 다음 MIDL 컴파일러 옵션을 지정합니다.  
   
--   출력 디렉터리([/out](http://msdn.microsoft.com/library/windows/desktop/aa367358))  
+-   출력 디렉터리([/out](https://msdn.microsoft.com/library/windows/desktop/aa367358))  
   
--   헤더 파일([/h](http://msdn.microsoft.com/library/windows/desktop/aa367325))  
+-   헤더 파일([/h](https://msdn.microsoft.com/library/windows/desktop/aa367325))  
   
--   DLL 데이터 파일([/dlldata](http://msdn.microsoft.com/library/windows/desktop/aa367322))  
+-   DLL 데이터 파일([/dlldata](https://msdn.microsoft.com/library/windows/desktop/aa367322))  
   
--   IID 파일([/iid](http://msdn.microsoft.com/library/windows/desktop/aa367329))  
+-   IID 파일([/iid](https://msdn.microsoft.com/library/windows/desktop/aa367329))  
   
--   프록시 파일([/proxy](http://msdn.microsoft.com/library/windows/desktop/aa367362))  
+-   프록시 파일([/proxy](https://msdn.microsoft.com/library/windows/desktop/aa367362))  
   
--   형식 라이브러리 생성([/notlb](http://msdn.microsoft.com/library/windows/desktop/aa367343))  
+-   형식 라이브러리 생성([/notlb](https://msdn.microsoft.com/library/windows/desktop/aa367343))  
   
--   형식 라이브러리([/tlb](http://msdn.microsoft.com/library/windows/desktop/aa367372))  
+-   형식 라이브러리([/tlb](https://msdn.microsoft.com/library/windows/desktop/aa367372))  
   
  **MIDL** 폴더에서 **출력** 속성 페이지에 액세스하는 방법에 대한 자세한 내용은 [프로젝트 속성 작업](../ide/working-with-project-properties.md)을 참조하세요.  
   

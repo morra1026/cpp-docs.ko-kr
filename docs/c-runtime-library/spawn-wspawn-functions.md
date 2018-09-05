@@ -55,12 +55,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0abf64c95e4293710226b2f4f38bc1fcf481b287
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 0e5a71faae381bc17b92d6b23047b9632913c2fe
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451773"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201265"
 ---
 # <a name="spawn-wspawn-functions"></a>_spawn, _wspawn 함수
 각 `_spawn` 함수는 새로운 프로세스를 만들고 실행합니다.  
@@ -134,7 +134,7 @@ ms.locfileid: "34451773"
 >  문자열에 포함된 공백으로 인해 예기치 않은 동작이 발생할 수 있습니다. 예를 들어 `_spawn`를 전달하면 문자열 `"hi there"`는 두 개의 인수 `"hi"` 및 `"there"`를 가져오는 새 프로세스가 됩니다. 새 프로세스에서 "hi there"라는 파일을 열도록 의도한 것이라면 이 프로세스는 실패한 것입니다. `"\"hi there\""`처럼 문자열을 따옴표로 묶으면 이러한 문제를 피할 수 있습니다.  
   
 > [!IMPORTANT]
->  내용을 명시적으로 확인하지 않고 사용자 입력을 `_spawn`에 전달하지 마세요. `_spawn`은 [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms682425)를 호출합니다. 따라서 정규화되지 않은 경로 이름을 사용하는 경우 보안 취약성이 발생할 수 있음을 기억해야 합니다.  
+>  내용을 명시적으로 확인하지 않고 사용자 입력을 `_spawn`에 전달하지 마세요. `_spawn`은 [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa)를 호출합니다. 따라서 정규화되지 않은 경로 이름을 사용하는 경우 보안 취약성이 발생할 수 있음을 기억해야 합니다.  
   
  인수 포인터를 별도의 인수(`_spawnl`, `_spawnle`, `_spawnlp` 및 `_spawnlpe`) 또는 포인터 배열(`_spawnv`, `_spawnve`, `_spawnvp` 및 `_spawnvpe`)로 전달할 수 있습니다. 생성된 프로세스에 `arg0` 또는 `argv`[0] 중 하나 이상의 인수를 전달해야 합니다. 규칙에 따라 이 인수는 명령줄에 입력하는 것과 같은 프로그램의 이름입니다. 다른 값은 오류를 발생시키지 않습니다.  
   
@@ -154,7 +154,7 @@ ms.locfileid: "34451773"
 ## <a name="redirecting-output"></a>출력 리디렉션  
  DLL 또는 GUI 응용 프로그램에서 `_spawn`을 호출하며 출력을 파이프로 리디렉션하려는 경우 두 가지 옵션이 있습니다.  
   
--   Win32 API를 사용하여 파이프를 만든 다음 [AllocConsole](http://msdn.microsoft.com/library/windows/desktop/ms681944)을 호출하고, 시작 구조에서 핸들 값을 설정하고, [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms682425)를 호출합니다.  
+-   Win32 API를 사용하여 파이프를 만든 다음 [AllocConsole](https://msdn.microsoft.com/library/windows/desktop/ms681944)을 호출하고, 시작 구조에서 핸들 값을 설정하고, [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa)를 호출합니다.  
   
 -   그런 다음 [_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md)을 호출합니다. 이 함수는 **cmd.exe /c** 또는 **command.exe /c**를 사용하여 파이프를 만들고 앱을 호출합니다.  
   

@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3afbd2019965d859895462cfdad57292bc2e0b3
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: f56ee748738cd67199348c93272a9cd2ed564e2c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33332425"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685701"
 ---
 # <a name="creating-and-managing-msbuild-based-visual-c-projects"></a>MSBuild 기반 Visual C++ 프로젝트 만들기 및 관리
 MSBuild는 Visual C++의 원시 빌드 시스템으로, 일반적으로 UWP 앱과 MFC 또는 ATL 라이브러리를 사용하는 데스크톱 응용 프로그램에 사용할 수 있는 최상의 빌드 시스템입니다. MSBuild는 Visual Studio IDE 및 프로젝트 시스템과 긴밀하게 통합되어 있지만, 명령줄에서도 사용할 수도 있습니다. Visual Studio 2017부터 Visual C++는 [폴더 열기 기능을 통해 CMake 및 기타 비MSBuild 시스템](non-msbuild-projects.md)을 지원합니다.
@@ -68,8 +68,5 @@ MSBuild 기반 프로젝트에는 프로그램을 컴파일하는 데 필요한 
  [C/C++ 프로그램 빌드](../build/building-c-cpp-programs.md)  
  명령줄 또는 Visual Studio의 통합 개발 환경에서 프로그램 빌드를 설명하는 항목에 대한 링크를 제공합니다.  
   
- [Visual C++ 참조](http://msdn.microsoft.com/en-us/1ba03b5c-8229-4f63-b08c-6c12141d6ab1)  
- C 및 C++ 언어 참조, Visual C++에서 제공하는 라이브러리, Visual C++ 확장성 개체 모델 및 MASM(Microsoft Macro Assembler)을 설명하는 항목에 대한 링크를 제공합니다.  
-  
 ## <a name="see-also"></a>참고 항목  
- [Visual Studio SDK](http://msdn.microsoft.com/vstudio/extend)
+ [Visual Studio SDK](https://msdn.microsoft.com/vstudio/extend)

@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4007f8b07b78618f4fdd8031d0f6dab5f1c12916
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 6593168e87f8a0dde1dd996aeadf2d225adbbe72
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33912643"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194181"
 ---
 # <a name="modifying-winver-and-win32winnt"></a>WINVER 및 _WIN32_WINNT 수정
 
@@ -59,11 +59,11 @@ Visual C++에서는 더 이상 Windows 95, Windows 98, Windows ME, Windows NT �
 찾고 있는 SDKDDKVer.h의 복사본에 나열된 이러한 모든 Windows 버전이 표시되지 않는 경우 이전 버전의 Windows SDK를 사용하고 있을 수 있습니다. 기본적으로 Visual Studio 2017의 Win32 프로젝트는 Windows 10 SDK를 사용합니다.   
   
 > [!NOTE]
->  내부 MFC 헤더를 응용 프로그램에 포함하는 경우에는 값 작동 여부가 보장되지 않습니다.  
+> 내부 MFC 헤더를 응용 프로그램에 포함하는 경우에는 값 작동 여부가 보장되지 않습니다.  
   
-**/D** 컴파일러 옵션을 사용하여 이 매크로를 정의할 수도 있습니다. 자세한 내용은 [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md)을 참조하세요.  
+`/D` 컴파일러 옵션을 사용하여 이 매크로를 정의할 수도 있습니다. 자세한 내용은 [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md)을 참조하세요.  
   
-이러한 매크로의 의미에 대한 자세한 내용은 [Windows 헤더 사용](https://msdn.microsoft.com/library/windows/desktop/aa383745)을 참조하세요.  
+이러한 매크로의 의미에 대한 자세한 내용은 [Windows 헤더 사용](/windows/desktop/WinProg/using-the-windows-headers)을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
 

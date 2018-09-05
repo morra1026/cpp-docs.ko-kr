@@ -15,17 +15,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f5709ef6fdcaaceecc79cd635374ee77d537100
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: eeb1f8e08fbb1d4f30517485c9296febab5a0de0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387390"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198758"
 ---
 # <a name="octal-and-hexadecimal-character-specifications"></a>8진 및 16진 문자 사양
-**\\***ooo* 시퀀스는 ASCII 문자 집합의 문자를 세 자리 8진수 문자 코드로 지정할 수 있음을 의미합니다. 8진수 정수의 숫자 값은 원하는 문자 또는 와이드 문자의 값을 지정합니다.  
+**\\**<em>ooo</em> 시퀀스는 ASCII 문자 집합의 문자를 세 자리 8진수 문자 코드로 지정할 수 있음을 의미합니다. 8진수 정수의 숫자 값은 원하는 문자 또는 와이드 문자의 값을 지정합니다.  
   
- 마찬가지로 **\x***hhh* 시퀀스를 사용하면 ASCII 문자를 16진수 문자 코드로 지정할 수 있습니다. 예를 들어, ASCII 백스페이스 문자를 표준 C 이스케이프 시퀀스(**\b**)로 지정하거나 **\010**(8진수) 또는 **\x008**(16진수)로 코딩할 수 있습니다.  
+ 마찬가지로 **\x**<em>hhh</em> 시퀀스를 사용하면 ASCII 문자를 16진수 문자 코드로 지정할 수 있습니다. 예를 들어, ASCII 백스페이스 문자를 표준 C 이스케이프 시퀀스(**\b**)로 지정하거나 **\010**(8진수) 또는 **\x008**(16진수)로 코딩할 수 있습니다.  
   
  8진수 이스케이프 시퀀스에 0부터 7까지의 숫자만 사용할 수 있습니다. 8진수 이스케이프 시퀀스는 길이가 3자리 이내여야 하며 8진수가 아닌 첫 번째 문자로 끝납니다. 3자리 숫자를 모두 사용할 필요는 없지만 하나 이상 사용해야 합니다. 예를 들어, 8진수 표현은 ASCII 차트에 지정된 대로 ASCII 백스페이스 문자에 대해 **\10**이고 문자 A에 대해 **\101**입니다.  
   

@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 310f462414ce5e579ea16b40c44ce543bd74b107
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 468ce7d65e31a70192e1a48bf21126dd96a1936e
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337520"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678914"
 ---
 # <a name="deployment-in-visual-c"></a>Visual C++의 개발
 
@@ -58,7 +58,7 @@ Microsoft는 로컬 배포된 Visual C++ 라이브러리를 자동으로 업데�
 
 ## <a name="troubleshooting-deployment-issues"></a>배포 문제 해결
 
-Visual C++ 라이브러리의 로드 순서는 시스템에 따라 다릅니다. 로더 문제를 진단하려면 depends.exe 또는 where.exe를 사용합니다. 자세한 내용은 [동적 연결 라이브러리 순서(Windows)](http://msdn.microsoft.com/library/windows/desktop/ms682586.aspx)를 참조하십시오.
+Visual C++ 라이브러리의 로드 순서는 시스템에 따라 다릅니다. 로더 문제를 진단하려면 depends.exe 또는 where.exe를 사용합니다. 자세한 내용은 [동적 연결 라이브러리 순서(Windows)](/windows/desktop/Dlls/dynamic-link-library-search-order)를 참조하십시오.
 
 ## <a name="see-also"></a>참고 항목
 
