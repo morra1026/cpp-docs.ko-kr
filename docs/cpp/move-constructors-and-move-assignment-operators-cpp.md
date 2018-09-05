@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f414871477e8d263546833cb71496f5795dd4671
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ec9dd48a8e46bfb7d65901fdcc0a3f682139cfd6
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204989"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676405"
 ---
 # <a name="move-constructors-and-move-assignment-operators-c"></a>이동 생성자 및 이동 할당 연산자(C++)
 이 항목에서는 작성 하는 방법에 설명 합니다는 *이동 생성자* 와 c + + 클래스에 대 한 이동 할당 연산자입니다. 이동 생성자는 rvalue lvalue로 복사 하지 않고 이동 될 개체를 소유한 리소스 수 있습니다. 이동 의미 체계에 대 한 자세한 내용은 참조 하세요. [Rvalue 참조 선언 자: & &](../cpp/rvalue-reference-declarator-amp-amp.md)합니다.  
@@ -317,4 +317,4 @@ MemoryBlock(MemoryBlock&& other)
   
 ## <a name="see-also"></a>참고자료  
  [Rvalue 참조 선언 자: & &](../cpp/rvalue-reference-declarator-amp-amp.md)   
- [\<유틸리티 > 이동](https://msdn.microsoft.com/abef7e85-9dd6-4724-85da-d7f7fe95dca9)
+ [std:: move](../standard-library/utility-functions.md#move)

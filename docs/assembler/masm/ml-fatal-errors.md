@@ -1,7 +1,7 @@
 ---
 title: ML 심각한 오류 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -12,15 +12,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd59432aab40b9168bde387ad484dd3c00d56638
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 1acd2dcc77272c1fe90e27bc06b2ea6abb6e0de4
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32053690"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681323"
 ---
 # <a name="ml-fatal-errors"></a>ML 심각한 오류
-ML 심각한 오류에 대 한 자세한 내용은 참조 [ML 오류 메시지](../../assembler/masm/ml-error-messages.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [ML 오류 메시지](../../assembler/masm/ml-error-messages.md)
+
+ML 심각한 오류에 대 한 자세한 내용은 참조 하세요. [ML 오류 메시지](../../assembler/masm/ml-error-messages.md)합니다.
+
+## <a name="see-also"></a>참고자료
+
+[ML 오류 메시지](../../assembler/masm/ml-error-messages.md)<br/>

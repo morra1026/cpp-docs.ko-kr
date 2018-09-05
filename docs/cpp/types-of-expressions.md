@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0827aa34a0812281b3aa4f70b78a14a0336b8921
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 68920a47971f260cbdd11224edd5d8e8b70a0f07
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204724"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686324"
 ---
 # <a name="types-of-expressions"></a>식의 형식
 C++ 식은 여러 범주로 나뉩니다.  
@@ -36,7 +36,7 @@ C++ 식은 여러 범주로 나뉩니다.
   
 -   [상수 식](../cpp/cpp-constant-expressions.md)합니다. 상수 식은 상수 데이터로만 구성됩니다.  
   
--   [명시적 형식 변환이 있는 식](https://msdn.microsoft.com/060ad6b4-9592-4f3e-8509-a20ac84a85ae)합니다. 명시적 형식 변환, 즉 "캐스트"를 식에서 사용할 수 있습니다.  
+-   [명시적 형식 변환이 있는 식](explicit-type-conversion-operator-parens.md)합니다. 명시적 형식 변환, 즉 "캐스트"를 식에서 사용할 수 있습니다.  
   
 -   [멤버 포인터 연산자가 있는 식](../cpp/pointer-to-member-operators-dot-star-and-star.md)합니다.  
   

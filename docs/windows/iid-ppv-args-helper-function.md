@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a6131cea7a7684036fd7183a79214c7c6936540b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 32970c9d30e1804071190ee5a57c42fd4b6334af
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218750"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677253"
 ---
 # <a name="iidppvargshelper-function"></a>IID_PPV_ARGS_Helper 함수
 
@@ -60,6 +60,3 @@ void** IID_PPV_ARGS_Helper(
 
 **헤더:** client.h
 
-## <a name="see-also"></a>참고 항목
-
-[참조 (Windows 런타임 라이브러리)](https://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)

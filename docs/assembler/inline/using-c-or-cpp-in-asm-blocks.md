@@ -1,7 +1,7 @@
 ---
 title: __Asm 블록에서 C 또는 c + +를 사용 하 여 | Microsoft Docs
 ms.custom: ''
-ms.date: 06/25/2018
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: conceptual
@@ -24,12 +24,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 96ed46cdf44ccacee806dd03bf7eacca26eec32d
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 14b91a7925089f6a6ab747a9fd6a5813f9a14693
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120952"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687101"
 ---
 # <a name="using-c-or-c-in-asm-blocks"></a>__asm 블록에서 C 또는 C++ 사용
 
@@ -45,11 +45,11 @@ ms.locfileid: "37120952"
 
 - 매크로 및 전처리기 지시문
 
-- 주석 (둘 다 __/ \* \* /__ 및 __//__ )
+- 주석 (둘 다 __/ \* \* /__ 고 __//__ )
 
 - 형식 이름(MASM 형식이 올바를 때마다)
 
-- `typedef` 일반적으로 사용 되는 연산자와 같은 이름 **PTR** 및 **형식** 또는 구조체 또는 공용 구조체 멤버를 지정 하려면
+- `typedef` 일반적으로 사용 되는 연산자를 사용 하 여 같은 이름 **PTR** 하 고 **형식** 또는 구조체 또는 공용 구조체 멤버를 지정 하려면
 
 `__asm` 블록 내에서 C 표기법 또는 어셈블러 기수 표기법과 함께 정수 상수(예: 0x100 및 100h는 동일)를 지정할 수 있습니다. 이를 통해 C에서 (`#define`을 사용하여) 상수를 정의한 다음 C 또는 C++ 모두와 프로그램의 어셈블리 부분에서 사용할 수 있습니다. a 0과 함께 이전 상수에 의해 8진수에서 상수를 지정할 수도 있습니다. 예를 들어, 0777은 8진수 상수를 지정합니다.
 
@@ -67,4 +67,4 @@ ms.locfileid: "37120952"
 
 ## <a name="see-also"></a>참고자료
 
-[인라인 어셈블러](../../assembler/inline/inline-assembler.md)
+[인라인 어셈블러](../../assembler/inline/inline-assembler.md)<br/>

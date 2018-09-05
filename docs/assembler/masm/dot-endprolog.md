@@ -1,7 +1,7 @@
 ---
 title: . 프롤로그 끝 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa74b469dba3bee1b4fa0a5c1e066f93826c3477
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 370db59c6be4b3f53c9596c1ca443374acd2d2c8
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051653"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685424"
 ---
 # <a name="endprolog"></a>.ENDPROLOG
-프롤로그 선언의 끝 신호를 보냅니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-.ENDPROLOG  
-```  
-  
-## <a name="remarks"></a>설명  
- 사이의 영역 밖에 서 프롤로그 선언 중 하나를 사용 하 여 오류가 발생 [PROC](../../assembler/masm/proc.md) 프레임 및 합니다. 프롤로그 끝입니다.  
-  
- 자세한 내용은 참조 [MASM (ml64.exe) x64](../../assembler/masm/masm-for-x64-ml64-exe.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+프롤로그 선언의 끝 신호를 보냅니다.
+
+## <a name="syntax"></a>구문
+
+> .ENDPROLOG
+
+## <a name="remarks"></a>설명
+
+간의 지역 외부에서 프롤로그 선언 중 하나를 사용 하는 것 [PROC](../../assembler/masm/proc.md) 프레임 및 합니다. 프롤로그 끝입니다.
+
+자세한 내용은 [MASM (ml64.exe) x64](../../assembler/masm/masm-for-x64-ml64-exe.md)합니다.
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

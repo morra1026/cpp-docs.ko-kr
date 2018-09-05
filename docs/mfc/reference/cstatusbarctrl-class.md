@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17ca93348ab5535908ea8b2d035669f7e61cef55
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a555cc26e8857899690852743fa177a706afa0f2
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221358"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677747"
 ---
 # <a name="cstatusbarctrl-class"></a>CStatusBarCtrl 클래스
 Windows의 공용 상태 표시줄 컨트롤의 기능을 제공합니다.  
@@ -171,7 +171,7 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>매개 변수  
  *dwExStyle*  
- 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK의 합니다.  
+ 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK의 합니다.  
   
  *dwStyle*  
  상태 표시줄 컨트롤의 스타일을 지정합니다. 상태 표시줄 컨트롤 스타일에 나열 된 어떤 조합도 적용할 [공용 컨트롤 스타일](/windows/desktop/Controls/common-control-styles) Windows SDK에 있습니다. 이 매개 변수는 WS_CHILD 스타일을 포함 해야 합니다. WS_VISIBLE 스타일도 포함 됩니다.  

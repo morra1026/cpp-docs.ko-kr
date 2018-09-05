@@ -1,7 +1,7 @@
 ---
 title: 실시간 연산자 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -12,15 +12,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd671af5b72f9edcf78e5a674e6604f5687197f7
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: f8bacc7f86500d96e64db392dc26486c497a425b
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32056050"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43675980"
 ---
 # <a name="run-time-operators"></a>실시간 연산자
-Microsoft 매크로 어셈블러 언어에서 실행 시간 연산자에 대 한 자세한 내용은 참조 [연산자 참조](../../assembler/masm/operators-reference.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [연산자 참조](../../assembler/masm/operators-reference.md)
+
+Microsoft 매크로 어셈블러 언어에서 런타임 연산자에 대 한 자세한 내용은 참조 하세요. [연산자 참조](../../assembler/masm/operators-reference.md)합니다.
+
+## <a name="see-also"></a>참고자료
+
+[연산자 참조](../../assembler/masm/operators-reference.md)<br/>

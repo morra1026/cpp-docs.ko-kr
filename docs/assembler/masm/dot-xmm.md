@@ -1,7 +1,7 @@
 ---
 title: . XMM | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,23 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 896f4db1190f2ae2ad04e5fb491031fa58908acc
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 5948f8d3a8d58d5cc59293811722245d99ed728c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32050131"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43680887"
 ---
 # <a name="xmm"></a>.XMM
-스트리밍 SIMD 확장 인터넷 지침의 어셈블리를 수 있습니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-.XMM  
-  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+Internet 스트리밍 SIMD 확장 지침의 어셈블리를 사용 하도록 설정 합니다.
+
+## <a name="syntax"></a>구문
+
+> .XMM
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

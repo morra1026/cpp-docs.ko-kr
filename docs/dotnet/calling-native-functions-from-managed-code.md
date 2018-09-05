@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: a220f0dc2c979676ad2e28fd504ef80e0925f74d
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3ef47e3aeb8cfb18dd1eb6497c593d8cec26081b
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43195690"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678452"
 ---
 # <a name="calling-native-functions-from-managed-code"></a>관리 코드에서 네이티브 함수 호출
 공용 언어 런타임 Platform Invocation Services 또는 PInvoke를는 관리 되는 네이티브 동적 연결 라이브러리 (Dll)의 C 스타일 함수를 호출 하는 코드를 제공 합니다. COM 상호 운용성 It Just Works, "ijw 메커니즘은 런타임에서 동일한 데이터 마샬링이 사용 됩니다.  
@@ -35,8 +35,6 @@ ms.locfileid: "43195690"
 -   [C++에서 명시적 PInvoke 사용(DllImport 특성)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)  
   
 -   [C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)  
-  
--   [플랫폼 호출 자세히 보기](https://msdn.microsoft.com/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243)  
   
  이 단원의 샘플에서는 대해서만 설명 하는 방법을 `PInvoke` 사용할 수 있습니다. `PInvoke` 프로시저 마샬링 코드를 작성 하는 대신 특성에 선언적으로 마샬링 정보를 제공할 수 있으므로 사용자 지정된 데이터 마샬링을 간소화할 수 있습니다.  
   

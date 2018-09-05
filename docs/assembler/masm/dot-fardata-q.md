@@ -1,7 +1,7 @@
 ---
 title: .FARDATA? | Microsoft 문서
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,22 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55c859356aa3c4f4a1c07cd7902b75dacd8afcf4
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 28e6f26459a6c1513969c6f1d51e070f672b2647
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051666"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683147"
 ---
 # <a name="fardata"></a>.FARDATA?
-와 함께 사용할 경우 [합니다. 모델](../../assembler/masm/dot-model.md), 먼 데이터 세그먼트 초기화 되지 않은 데이터에 대 한 시작 (세그먼트 이름 FAR_BSS 또는 *이름*).  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-.FARDATA? [[name]]  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+와 함께 사용할 경우 [합니다. 모델](../../assembler/masm/dot-model.md), 초기화 되지 않은 데이터에 대 한 끝 데이터 세그먼트를 시작 (FAR_BSS 세그먼트 이름 또는 *이름을*).
+
+## <a name="syntax"></a>구문
+
+> .FARDATA? [[name]]
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c52f2a17e347e7b37152a3d7a78423f0523b5679
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e0b655713a378c859bb017f661022f86aa687ab6
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220600"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676434"
 ---
 # <a name="how-to-specify-include-directories-for-resources"></a>방법: 리소스 포함 디렉터리 지정
 
@@ -32,7 +32,7 @@ ms.locfileid: "43220600"
 
 2. 에 **속성 페이지** 대화 상자에서 클릭 합니다 **리소스** 왼쪽된 창에서 노드 추가 포함 디렉터리를 지정 합니다 합니다 **추가 포함 디렉터리** 속성입니다.
 
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) .NET Framework Developer's Guide에 있습니다. 수동으로 관리 되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대 한 내용은 참조 [연습: Using Resources for Localization with ASP.NET](https://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).
+관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) .NET Framework Developer's Guide에 있습니다. 
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,7 +1,7 @@
 ---
 title: '? | Microsoft 문서'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,23 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5da9acac486af61393a33f99224f610ac6ee36b
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 3857769c9c362d3332f749c6ad3c6cf3f9054f0d
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054155"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679223"
 ---
 # <a name=""></a>?
-어셈블러 할당 하지만 초기화 하지 않는 하는 값의 데이터 선언 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-?  
-  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [기호 참조](../../assembler/masm/symbols-reference.md)
+
+데이터 선언, 어셈블러 할당 하지만 초기화 하지 않습니다 하는 값입니다.
+
+## <a name="syntax"></a>구문
+
+> ?
+
+## <a name="see-also"></a>참고자료
+
+[기호 참조](../../assembler/masm/symbols-reference.md)<br/>

@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 453eb66fd062aa3e4df510925d2c9b0e6732b98b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 946c82d4f558974d548a40af0b14e63f7ccebf4e
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212401"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43680582"
 ---
 # <a name="cvslistbox-class"></a>CVSListBox 클래스
 `CVSListBox` 클래스는 편집할 수 있는 목록 컨트롤을 지원 합니다.  
@@ -73,7 +73,7 @@ class CVSListBox : public CVSListBoxBase
 |[CVSListBox::GetItemData](#getitemdata)|편집할 수 있는 목록 컨트롤 항목을 사용 하 여 연결 하는 응용 프로그램별 32 비트 값을 검색 합니다. (`CVSListBoxBase::GetItemData`를 재정의합니다.)|  
 |[CVSListBox::GetItemText](#getitemtext)|편집할 수 있는 목록 컨트롤 항목의 텍스트를 검색합니다. (`CVSListBoxBase::GetItemText`를 재정의합니다.)|  
 |[CVSListBox::GetSelItem](#getselitem)|편집할 수 있는 목록 컨트롤에서 현재 선택된 된 항목의 인덱스를 검색합니다. (`CVSListBoxBase::GetSelItem`를 재정의합니다.)|  
-|`CVSListBox::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다. 자세한 내용 및 메서드 구문 참조 [cwnd:: Pretranslatemessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)합니다. (`CVSListBoxBase::PreTranslateMessage`를 재정의합니다.)|  
+|`CVSListBox::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수입니다. 자세한 내용 및 메서드 구문 참조 [cwnd:: Pretranslatemessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)합니다. (`CVSListBoxBase::PreTranslateMessage`를 재정의합니다.)|  
 |[CVSListBox::RemoveItem](#removeitem)|편집할 수 있는 목록 컨트롤에서 항목을 제거 합니다. (`CVSListBoxBase::RemoveItem`를 재정의합니다.)|  
 |[CVSListBox::SelectItem](#selectitem)|편집할 수 있는 목록 제어 문자열을 선택합니다. (`CVSListBoxBase::SelectItem`를 재정의합니다.)|  
 |[CVSListBox::SetItemData](#setitemdata)|응용 프로그램별 32 비트 값을 편집할 수 있는 목록 컨트롤 항목을 사용 하 여 연결합니다. (`CVSListBoxBase::SetItemData`를 재정의합니다.)|  

@@ -33,12 +33,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 3d87d41b97f587f2546df246044eaf8df3bba373
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 48d0836ff119a29198cf9255e8557a99b50e8a02
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221980"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681812"
 ---
 # <a name="data-access-using-adonet-ccli"></a>ADO.NET을 사용하여 데이터 액세스(C++/CLI)
 ADO.NET은 데이터 액세스를 위한.NET Framework API 및 기능과 이전 데이터 액세스 솔루션에서 일치 하지 않는 사용 편의성을 제공 합니다. 이 섹션에서는 몇 가지 기본 형식 마샬링 등 Visual c + + 사용자에 게 고유한 ADO.NET 관련 문제를 설명 합니다.  
@@ -731,4 +731,4 @@ int main()
 
  <xref:System.Runtime.InteropServices>   
 
- [상호 운용성](https://msdn.microsoft.com/afcc2e7d-3f32-48d2-8141-1c42acf29084)   
+ [상호 운용성](/dotnet/framework/interop/index)   

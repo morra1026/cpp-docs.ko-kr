@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4d6bf9d62ae1cb80041145903267d4af4d88eaa
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6a1d5c2d7bb2da2ba293ac29a59948f80c1bed59
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214154"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43680612"
 ---
 # <a name="cmfccolordialog-class"></a>CMFCColorDialog 클래스
 `CMFCColorDialog` 클래스 색 선택 대화 상자를 나타냅니다.  
@@ -63,7 +63,7 @@ class CMFCColorDialog : public CDialogEx
 |----------|-----------------|  
 |[CMFCColorDialog::GetColor](#getcolor)|현재 선택한 색을 반환합니다.|  
 |[CMFCColorDialog::GetPalette](#getpalette)|색의 색상표를 반환합니다.|  
-|`CMFCColorDialog::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다. 구문 및 자세한 내용은 [cwnd:: Pretranslatemessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)합니다. (`CDialogEx::PreTranslateMessage`를 재정의합니다.)|  
+|`CMFCColorDialog::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수입니다. 구문 및 자세한 내용은 [cwnd:: Pretranslatemessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)합니다. (`CDialogEx::PreTranslateMessage`를 재정의합니다.)|  
 |[CMFCColorDialog::RebuildPalette](#rebuildpalette)|색상표는 시스템 색상표에서 파생 됩니다.|  
 |[CMFCColorDialog::SetCurrentColor](#setcurrentcolor)|현재 선택한 색을 설정합니다.|  
 |[CMFCColorDialog::SetNewColor](#setnewcolor)|색 RGB 값을 지정된 하려면 해당 가장 설정합니다.|  
@@ -72,7 +72,7 @@ class CMFCColorDialog : public CDialogEx
   
 ### <a name="protected-data-members"></a>보호된 데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |`m_bIsMyPalette`|색 선택 대화 상자 자체 색상표를 사용 하는 경우 TRUE 또는 FALSE 대화 상자에 지정 된 색상표를 사용 하는 경우는 `CMFCColorDialog` 생성자입니다.|  
 |`m_bPickerMode`|사용자는 선택 대화 상자에서 색을 선택 하는 동안 TRUE 그렇지 않으면 FALSE입니다.|  

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: dceca7ead0910474b2277538066d3cbae4bc791e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c732bcf45f2dfbd4927366670aed6bfbdcfb4721
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43213830"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679989"
 ---
 # <a name="using-manual-accessors"></a>수동 접근자 사용
 알 수 없는 명령을 처리 하는 경우 수행할 작업에 다음과 같은 4 가지 있습니다.  
@@ -53,7 +53,7 @@ ms.locfileid: "43213830"
   
 6.  호출 `GetNextResult` 행 집합이 더 이상 사용할 수 있는 되는지 확인할 수 있습니다. 2 ~ 5 단계를 반복 합니다.  
   
- 수동 접근자의 예제를 보려면 `CDBListView::CallProcedure` 에 [DBVIEWER](https://msdn.microsoft.com/07620f99-c347-4d09-9ebc-2459e8049832) 샘플입니다.  
+ 수동 접근자의 예제를 보려면 `CDBListView::CallProcedure` 에 [DBVIEWER](https://github.com/Microsoft/VCSamples) 샘플입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [접근자 사용](../../data/oledb/using-accessors.md)

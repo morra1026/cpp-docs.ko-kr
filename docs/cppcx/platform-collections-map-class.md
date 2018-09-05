@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2192786a9ebb14061e31655fd63e0f7c67b5100
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e199df62aa6bc0c3dc670bd2951a7af2667e7faa
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218425"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687588"
 ---
 # <a name="platformcollectionsmap-class"></a>Platform::Collections::Map 클래스
 
@@ -72,7 +72,7 @@ ref class Map sealed;
 
 - public enum 클래스
 
-Map은 기본적으로 [std::map](../standard-library/map-class.md)에 대한 래퍼입니다. 구체적인 c + + 구현 된 [Windows::Foundation::Collections::IMap < Windows::Foundation::Collections::IKeyValuePair\<K, V >>](http://go.microsoft.com/fwlink/p/?LinkId=262408) 하 고 [IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) Windows 런타임 인터페이스를 공용 전반에서 전달 되는 형식입니다. 공용 반환 값 또는 매개 변수에서 `Platform::Collections::Map` 형식을 사용하려고 하면 컴파일러 오류 C3986이 발생합니다. 매개 변수 또는 반환 값의 형식을 변경 하 여 오류를 해결할 수 있습니다 [Windows::Foundation::Collections::IMap\<K, V >](http://go.microsoft.com/fwlink/p/?LinkId=262408)합니다.
+Map은 기본적으로 [std::map](../standard-library/map-class.md)에 대한 래퍼입니다. 구체적인 c + + 구현 된 [Windows::Foundation::Collections::IMap < Windows::Foundation::Collections::IKeyValuePair\<K, V >>](/uwp/api/Windows.Foundation.Collections.IMap_K_V_) 하 고 [IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) Windows 런타임 인터페이스를 공용 전반에서 전달 되는 형식입니다. 공용 반환 값 또는 매개 변수에서 `Platform::Collections::Map` 형식을 사용하려고 하면 컴파일러 오류 C3986이 발생합니다. 매개 변수 또는 반환 값의 형식을 변경 하 여 오류를 해결할 수 있습니다 [Windows::Foundation::Collections::IMap\<K, V >](/uwp/api/Windows.Foundation.Collections.IMap_K_V_)합니다.
 
 자세한 내용은 [컬렉션](../cppcx/collections-c-cx.md)합니다.
 
@@ -101,7 +101,7 @@ Map은 기본적으로 [std::map](../standard-library/map-class.md)에 대한 �
 
 |||
 |-|-|
-|name|설명|
+|이름|설명|
 |[Map::MapChanged](#mapchanged-event.md) `event`|Map이 변경될 때 발생합니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층

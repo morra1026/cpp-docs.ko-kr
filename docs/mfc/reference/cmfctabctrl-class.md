@@ -114,12 +114,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eae771aed819577708d945cb2a62997f5b45e7fd
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 758b2039168825ec95a14b84b1c4c589618e7c24
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199848"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43680106"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl Class
 `CMFCTabCtrl` 클래스는 tab 컨트롤에 대 한 기능을 제공 합니다. 탭 컨트롤은 맨 위 또는 아래에 평면 또는 3차원 탭이 포함된 도킹 가능한 창을 표시합니다. 탭은 텍스트와 이미지를 표시하고 활성화된 경우 색을 변경할 수 있습니다.  
@@ -186,7 +186,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 |[CMFCTabCtrl::OnDragEnter](#ondragenter)|커서를 먼저 탭 컨트롤 창으로 끌 때 프레임 워크에서 호출 됩니다.|  
 |[CMFCTabCtrl::OnDragOver](#ondragover)|놓기 대상 창 위로 마우스를 이동 하는 경우 프레임 워크에서 끌기 작업 중 호출 합니다. (재정의 [CMFCBaseTabCtrl::OnDragOver](../../mfc/reference/cmfcbasetabctrl-class.md#ondragover).)|  
 |[CMFCTabCtrl::OnShowTabDocumentsMenu](#onshowtabdocumentsmenu)|사용자 탭을 선택 하 고 선택한 탭 활성 탭으로 설정 될 때까지 대기, 탭된 창이 팝업 메뉴를 표시 합니다.|  
-|`CMFCTabCtrl::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다. (재정의 [CMFCBaseTabCtrl::PreTranslateMessage](../../mfc/reference/cmfcbasetabctrl-class.md#pretranslatemessage).)|  
+|`CMFCTabCtrl::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수입니다. (재정의 [CMFCBaseTabCtrl::PreTranslateMessage](../../mfc/reference/cmfcbasetabctrl-class.md#pretranslatemessage).)|  
 |`CMFCTabCtrl::RecalcLayout`|탭 컨트롤의 내부 레이아웃을 다시 계산 됩니다. (재정의 [CMFCBaseTabCtrl::RecalcLayout](../../mfc/reference/cmfcbasetabctrl-class.md#recalclayout).)|  
 |[CMFCTabCtrl::SetActiveInMDITabGroup](#setactiveinmditabgroup)|탭 컨트롤의 현재 탭 다중 문서 인터페이스 탭 그룹에 활성 탭으로 설정합니다.|  
 |[CMFCTabCtrl::SetActiveTab](#setactivetab)|탭을 활성화합니다. (재정의 [CMFCBaseTabCtrl::SetActiveTab](../../mfc/reference/cmfcbasetabctrl-class.md#setactivetab).)|  
@@ -202,7 +202,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CMFCTabCtrl::m_bEnableActivate](#m_benableactivate)|현재 보기를에서 새 탭을 삽입 하 고 사용 포커스를 잃을 수 없습니다.|  
   
@@ -758,7 +758,7 @@ BOOL ModifyTabStyle(Style style);
 ### <a name="remarks"></a>설명  
  값을 *스타일* 매개 변수는 다음 중 하나일 수 있습니다 `CMFCTabCtrl::Style` 열거형입니다.  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |STYLE_3D|모서리가 둥근 사각형, 3 차원 탭이 표시 됩니다.|  
 |STYLE_3D_ONENOTE|세로 한쪽 및 기울어진된 한쪽 있으며 모서리가 둥근가 3 차원 탭이 표시 됩니다.|  
@@ -960,7 +960,7 @@ void SetResizeMode(ResizeMode resizeMode);
 ### <a name="remarks"></a>설명  
  합니다 *resizeMode* 매개 변수는 다음 중 하나일 수 있습니다 `ResizeMode` 열거형 값입니다.  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |RESIZE_NO|탭 컨트롤의 크기를 조정할 수 없습니다.|  
 |RESIZE_VERT|탭 컨트롤이 세로로 하지만 하지 가로로 조정할 수 있습니다.|  

@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bcc4ec99ea8dc7dfc0706237e274b6b96f437829
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: fe0d8b5b0679e8770bda715d3d0da0eaa3b5cce3
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214993"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682858"
 ---
 # <a name="cpaneframewnd-class"></a>CPaneFrameWnd 클래스
 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
@@ -210,7 +210,7 @@ class CPaneFrameWnd : public CWnd
 |[CPaneFrameWnd::OnShowPane](#onshowpane)|미니 프레임 창의 창이 숨겨지거나 표시될 때 프레임워크에서 호출됩니다.|  
 |[CPaneFrameWnd::PaneFromPoint](#panefrompoint)|미니 프레임 창 안에 사용자가 제공한 지점을 포함하는 경우 창을 반환합니다.|  
 |[CPaneFrameWnd::Pin](#pin)||  
-|`CPaneFrameWnd::PreTranslateMessage`|클래스에서 사용 하는 [CWinApp](../../mfc/reference/cwinapp-class.md) 디스패치 되기 전에 창 메시지를 변환 하는 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수입니다.|  
+|`CPaneFrameWnd::PreTranslateMessage`|클래스에서 사용 하는 [CWinApp](../../mfc/reference/cwinapp-class.md) 디스패치 되기 전에 창 메시지를 변환 하는 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수입니다.|  
 |[CPaneFrameWnd::RedrawAll](#redrawall)|모든 미니 프레임 창을 다시 그립니다.|  
 |[CPaneFrameWnd::RemoveNonValidPanes](#removenonvalidpanes)|잘못된 창을 제거하기 위해 프레임워크에서 호출됩니다.|  
 |[CPaneFrameWnd::RemovePane](#removepane)|미니 프레임 창에서 창을 제거합니다.|  
@@ -238,7 +238,7 @@ class CPaneFrameWnd : public CWnd
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CPaneFrameWnd::m_bUseSaveBits](#m_busesavebits)|CS_SAVEBITS 클래스 스타일을 사용 하 여 창 클래스를 등록할지 여부를 지정 합니다.|  
   
@@ -532,7 +532,7 @@ virtual int GetCaptionHeight() const;
  미니 프레임 창의 픽셀 높이입니다.  
   
 ### <a name="remarks"></a>설명  
- 미니 프레임 창의 높이 확인 하려면이 메서드를 호출 합니다. 기본적으로 높이 SM_CYSMCAPTION에 설정 됩니다. 자세한 내용은 [GetSystemMetrics 함수](https://msdn.microsoft.com/library/windows/desktop/ms724385)합니다.  
+ 미니 프레임 창의 높이 확인 하려면이 메서드를 호출 합니다. 기본적으로 높이 SM_CYSMCAPTION에 설정 됩니다. 자세한 내용은 [GetSystemMetrics 함수](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics)합니다.  
   
 ##  <a name="getcaptionrect"></a>  CPaneFrameWnd::GetCaptionRect  
  미니 프레임 창 캡션의 경계 사각형을 계산합니다.  

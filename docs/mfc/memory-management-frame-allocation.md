@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e3f3adabdd1d5345fa9f5d3c24e6cde86ddb3fb
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 56eff6cede20508ea59463039b4f0e41d416cac1
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219706"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686354"
 ---
 # <a name="memory-management-frame-allocation"></a>메모리 관리: 프레임 할당
 프레임 할당 설정 된 "스택 프레임"의 이름을 가져옵니다 때마다 함수를 호출 합니다. 스택 프레임에 임시로 보관 하는 인수를 함수 뿐만 아니라 정의 된 모든 변수가 함수에 로컬 메모리 영역입니다. 프레임 변수가 컴파일러에 자동으로 공간을 할당 하기 때문에 "automatic" 변수 라고도 합니다.  
@@ -46,7 +46,7 @@ ms.locfileid: "43219706"
   
  프레임 변수 개체를 정의할 때 해당 생성자 정의 발생 지점에 자동으로 호출 됩니다. 개체가 범위를 벗어나면 개체에 대 한 메모리를 회수 하기 전에 해당 소멸자가 자동으로 호출 됩니다. 자동 생성 및 소멸이 매우 유용한 수 있지만 특히 소멸자를 자동 호출을 알고 있어야 합니다.  
   
- 자동으로 삭제는 하는 프레임에서 개체를 할당 하는 이점이 있습니다. 프레임에서 개체를 할당 하면 메모리 누수를 일으키는 잊어버린된 개체에 걱정할 필요가 없습니다. (메모리 누수에 대 한 내용은 문서 참조 [MFC의 메모리 누수 탐지](https://msdn.microsoft.com/29ee8909-96e9-4246-9332-d3a8aa8d4658).) 프레임 할당의 단점은 범위 밖 프레임 변수를 사용할 수 없습니다. 프레임 할당과 힙 할당을 선택 하는 다른 요소 있다는 것 큰 구조와 개체에 대 한 자주 스택 공간이 제한 된 경우가 있으므로 저장소에 대 한 힙의 스택 대신 사용 하 여 합니다.  
+ 자동으로 삭제는 하는 프레임에서 개체를 할당 하는 이점이 있습니다. 프레임에서 개체를 할당 하면 메모리 누수를 일으키는 잊어버린된 개체에 걱정할 필요가 없습니다. (메모리 누수에 대 한 내용은 문서 참조 [MFC의 메모리 누수 탐지](/previous-versions/visualstudio/visual-studio-2010/c99kz476\(v=vs.100\)).) 프레임 할당의 단점은 범위 밖 프레임 변수를 사용할 수 없습니다. 프레임 할당과 힙 할당을 선택 하는 다른 요소 있다는 것 큰 구조와 개체에 대 한 자주 스택 공간이 제한 된 경우가 있으므로 저장소에 대 한 힙의 스택 대신 사용 하 여 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [메모리 관리](../mfc/memory-management.md)

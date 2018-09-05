@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 348f25718fe22e056da5097bca0d67013a56c4c8
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 55ebdfacdee7f7b8db1b2d361034a92ab7f798b2
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43203151"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678355"
 ---
 # <a name="cmemorystate-structure"></a>CMemoryState 구조체
 프로그램에서 메모리 누수 문제를 감지 하는 편리한 방법을 제공 합니다.  
@@ -172,7 +172,7 @@ void DumpStatistics() const;
   
 -   총 메모리 (메가바이트) 프로그램에서 현재 사용  
   
- Free 블록은 해당 할당 취소 하는 경우 지연 된 블록 수가 `afxMemDF` 로 설정 된 `delayFreeMemDF`합니다. 자세한 내용은 [afxMemDF](diagnostic-services.md#afxmemdf), "MFC 매크로 및 전역 변수" 섹션에 있습니다. 참조 [블록 형식 디버그 힙의](https://msdn.microsoft.com/db2e7f62-0679-4b39-a23f-26f2c2f407c5) 자세한 내용은 블록 형식에 대 한 합니다.  
+ Free 블록은 해당 할당 취소 하는 경우 지연 된 블록 수가 `afxMemDF` 로 설정 된 `delayFreeMemDF`합니다. 자세한 내용은 [afxMemDF](diagnostic-services.md#afxmemdf), "MFC 매크로 및 전역 변수" 섹션에 있습니다.  
   
 ### <a name="example"></a>예제  
   다음 코드를 배치할 *projname*App.cpp 합니다. 다음 전역 변수를 정의 합니다.  

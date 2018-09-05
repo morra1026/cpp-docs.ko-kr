@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60d3d845f51f59e6072bd0425f34c63e0049dd31
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 1b556e724e75bb6eabc832893350126a27ad511a
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202539"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678436"
 ---
 # <a name="ccomcurrency-class"></a>CComCurrency 클래스
 `CComCurrency`에는 CURRENCY 개체를 만들고 관리하는 메서드 및 연산자가 있습니다.  
@@ -559,5 +559,5 @@ HRESULT SetInteger(LONGLONG nInteger);
   
 ## <a name="see-also"></a>참고 항목  
  [COleCurrency 클래스](../../mfc/reference/colecurrency-class.md)   
- [통화](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e)   
+ [통화](/windows/desktop/api/wtypes/ns-wtypes-tagcy)   
  [클래스 개요](../../atl/atl-class-overview.md)

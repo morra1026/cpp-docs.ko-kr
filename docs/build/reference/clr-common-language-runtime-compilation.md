@@ -23,12 +23,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b7ec520d27d52bb3e50a58780d822363016ef76
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ff46958afea8825f29941d9f3cbead20c533c76c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606865"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676987"
 ---
 # <a name="clr-common-language-runtime-compilation"></a>/clr(공용 언어 런타임 컴파일)
 응용 프로그램 및 구성 요소가 CLR(공용 언어 런타임)의 기능을 사용할 수 있게 합니다.  
@@ -68,9 +68,7 @@ ms.locfileid: "42606865"
  Visual C++ 2005 이전은, **/clr:noAssembly** 에 **/LD**가 필요합니다. **/clr:noAssembly** 를 지정할 때 **/LD**가 암시됩니다.  
   
  **/clr:initialAppDomain**  
- CLR 버전 1에서 실행 하려면 Visual c + + 응용 프로그램을 사용 하도록 설정 합니다. 사용 하는 경우 **initialAppDomain**에서 설명 하는 문제 중 일부에 나타날 수 있습니다 [버그: 관리 Visual c + + 구성 요소에 대 한 확장을 사용할 때의 AppDomainUnloaded 예외](http://go.microsoft.com/fwlink/p/?linkid=169465) microsoft 웹 사이트를 지원 합니다.  
-  
- **initialAppDomain** 을 사용하여 컴파일된 응용 프로그램은 CLR 버전 1에서 지원되지 않으므로 ASP.NET을 사용하는 응용 프로그램에서 사용하면 안됩니다.  
+ CLR 버전 1에서 실행 하려면 Visual c + + 응용 프로그램을 사용 하도록 설정 합니다.  **initialAppDomain** 을 사용하여 컴파일된 응용 프로그램은 CLR 버전 1에서 지원되지 않으므로 ASP.NET을 사용하는 응용 프로그램에서 사용하면 안됩니다.  
   
  **/clr:nostdlib**  
  기본 \clr 디렉터리를 무시하도록 컴파일러에 지시합니다. System.dll과 같은 DLL의 여러 버전을 포함하는 경우 컴파일러에서 오류가 발생합니다. 이 옵션을 사용하면 컴파일하는 동안 사용할 특정 프레임워크를 지정할 수 있습니다.  

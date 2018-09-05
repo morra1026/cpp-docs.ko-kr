@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f946a0e24790fd894e4eb908e77163306130e46a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: bcdbc8012edbe17ce9fcc8298da68f45acad4b8b
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214638"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683367"
 ---
 # <a name="cloud-and-web-programming-in-visual-c"></a>Visual C++의 클라우드 및 웹 프로그래밍
 
@@ -62,7 +62,7 @@ C++에는 웹 및 클라우드에 연결하기 위한 다양한 옵션이 있습
 
    HTTP를 통해 인터넷에 연결할 Windows 런타임 앱 이나 Windows 데스크톱 앱에서 사용할 수 있으며 문제 GET, PUT 및 기타 HTTP 명령을 네이티브 COM 인터페이스를 제공 합니다. 자세한 내용은 [연습:를 사용 하 여 작업 연결 및 XML HTTP 요청](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)합니다.
 
-- [Windows 인터넷 (WinInet)](https://msdn.microsoft.com/library/windows/desktop/aa385331\(v=vs.85\).aspx)
+- [Windows 인터넷 (WinInet)](/windows/desktop/WinInet/portal)
 
    인터넷에 연결할 Windows 데스크톱 앱에서 사용할 수 있는 Windows API입니다.
 

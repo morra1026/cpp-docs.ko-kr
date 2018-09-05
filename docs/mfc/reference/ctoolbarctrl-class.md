@@ -192,12 +192,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac4a2c7bafc25aaaf8591f38cad47df199e74c30
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 0801fab2ef5cec0da42cb40e28cd5124141c1007
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43196593"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686087"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl 클래스
 Windows의 도구 모음 공용 컨트롤의 기능을 제공합니다.  
@@ -622,7 +622,7 @@ virtual BOOL Create(
   
 - WS_DISABLED 거의  
   
- 참조 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) 창 스타일에 대 한 Windows SDK에 있습니다.  
+ 참조 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) 창 스타일에 대 한 Windows SDK에 있습니다.  
   
  필요에 따라 조합을 적용할 [공용 컨트롤 스타일](/windows/desktop/Controls/common-control-styles)Windows SDK에 설명 된 대로 합니다.  
   
@@ -646,7 +646,7 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>매개 변수  
  *dwExStyle*  
- 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK의 합니다.  
+ 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK의 합니다.  
   
  *dwStyle*  
  도구 모음 컨트롤의 스타일을 지정합니다. 도구 모음 WS_CHILD 스타일 항상 있어야 합니다. 또한에 설명 된 대로 toolbar 스타일 및 창 스타일의 조합을 지정할 수 있습니다 합니다 **주의** 부분 [만들기](#create)합니다.  

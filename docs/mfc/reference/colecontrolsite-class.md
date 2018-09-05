@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f79917e34a749048696f320a8311978acc2739f4
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 1c1d483f6ba532a6d8eeee1a8ec831cfd1d94b62
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202857"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678011"
 ---
 # <a name="colecontrolsite-class"></a>COleControlSite 클래스
 사용자 지정 클라이언트 측 컨트롤 인터페이스를 지원합니다.  
@@ -797,7 +797,7 @@ virtual BOOL ModifyStyle(
  현재 창 스타일에서 추가할 스타일입니다.  
   
  *nFlags*  
- 창 위치 플래그를 지정 합니다. 가능한 값 목록을 참조 하세요. 합니다 [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK에는 함수입니다.  
+ 창 위치 플래그를 지정 합니다. 가능한 값 목록을 참조 하세요. 합니다 [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) Windows SDK에는 함수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 속성을 0이 아닌 스타일을 변경 하는 경우, 그렇지 않으면 0입니다.  
@@ -805,7 +805,7 @@ virtual BOOL ModifyStyle(
 ### <a name="remarks"></a>설명  
  컨트롤의 재고 Enabled 속성 WS_DISABLED에 대 한 설정과 일치 하도록 수정 됩니다. 컨트롤의 테두리 스타일 속성 주식 WS_BORDER에 대 한 요청된 된 설정에 맞게 수정 됩니다. 있는 경우 다른 모든 스타일 컨트롤의 창 핸들에 직접 적용 됩니다.  
   
- 컨트롤의 창 스타일을 수정합니다. 비트 OR를 사용 하 여 추가 하거나 제거 하는 스타일을 결합할 수 있습니다 ( &#124; ) 연산자. 참조를 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) 사용할 창 스타일에 대 한 내용은 Windows SDK에는 함수입니다.  
+ 컨트롤의 창 스타일을 수정합니다. 비트 OR를 사용 하 여 추가 하거나 제거 하는 스타일을 결합할 수 있습니다 ( &#124; ) 연산자. 참조를 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) 사용할 창 스타일에 대 한 내용은 Windows SDK에는 함수입니다.  
   
  하는 경우 *nFlags* 이 값은 0 `ModifyStyle` Win32 함수 호출 `SetWindowPos`를 결합 하 여 창을 다시 그립니다 *nFlags* 다음 네 가지 플래그를 사용 하 여:  
   
@@ -837,7 +837,7 @@ virtual BOOL ModifyStyleEx(
  현재 창 스타일에서 추가할 확장 된 스타일입니다.  
   
  *nFlags*  
- 창 위치 플래그를 지정 합니다. 가능한 값 목록을 참조 하세요. 합니다 [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK에는 함수입니다.  
+ 창 위치 플래그를 지정 합니다. 가능한 값 목록을 참조 하세요. 합니다 [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) Windows SDK에는 함수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 속성을 0이 아닌 스타일을 변경 하는 경우, 그렇지 않으면 0입니다.  
@@ -845,7 +845,7 @@ virtual BOOL ModifyStyleEx(
 ### <a name="remarks"></a>설명  
  컨트롤의 재고 Appearance 속성 WS_EX_CLIENTEDGE에 대 한 설정과 일치 하도록 수정 됩니다. 있는 경우 다른 모든 확장된 창 스타일 컨트롤의 창 핸들에 직접 적용 됩니다.  
   
- 창의 확장 스타일 컨트롤 사이트 개체를 수정 합니다. 비트 OR를 사용 하 여 추가 하거나 제거 하는 스타일을 결합할 수 있습니다 ( &#124; ) 연산자. 참조를 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) 사용할 창 스타일에 대 한 내용은 Windows SDK에는 함수입니다.  
+ 창의 확장 스타일 컨트롤 사이트 개체를 수정 합니다. 비트 OR를 사용 하 여 추가 하거나 제거 하는 스타일을 결합할 수 있습니다 ( &#124; ) 연산자. 참조를 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) 사용할 창 스타일에 대 한 내용은 Windows SDK에는 함수입니다.  
   
  하는 경우 *nFlags* 이 값은 0 `ModifyStyleEx` Win32 함수 호출 `SetWindowPos`를 결합 하 여 창을 다시 그립니다 *nFlags* 다음 네 가지 플래그를 사용 하 여:  
   
@@ -1051,7 +1051,7 @@ virtual BOOL SetWindowPos(
  창의 새 높이입니다.  
   
  *nFlags*  
- 창 크기 및 위치 플래그를 지정 합니다. 가능한 값에 대 한 설명 섹션을 참조 하세요 [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK에 있습니다.  
+ 창 크기 및 위치 플래그를 지정 합니다. 가능한 값에 대 한 설명 섹션을 참조 하세요 [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) Windows SDK에 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
  0이 아닌 성공, 그렇지 않으면 0입니다.  

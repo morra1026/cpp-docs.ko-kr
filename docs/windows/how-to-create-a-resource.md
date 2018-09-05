@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 771b7d91c4c5cfdb66908870675ab5cf53f2fdd4
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b7c82a55d2cbfba20b80a02dbcf000c85ed10e83
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221022"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679795"
 ---
 # <a name="how-to-create-a-resource"></a>방법: 리소스 파일 만들기
 
@@ -48,7 +48,7 @@ ms.locfileid: "43221022"
 
 ### <a name="to-create-a-new-resource-in-class-view"></a>클래스 뷰에서 새 리소스를 만들려면
 
-1. [클래스 뷰](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925)클래스를 마우스 오른쪽 단추로 클릭 하 고 선택 **추가**, 클릭 **리소스 추가** 바로 가기 메뉴에서.
+1. [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)클래스를 마우스 오른쪽 단추로 클릭 하 고 선택 **추가**, 클릭 **리소스 추가** 바로 가기 메뉴에서.
 
 2. [리소스 추가 대화 상자](../windows/add-resource-dialog-box.md)에서 프로젝트에 추가할 리소스 형식을 선택합니다.
 

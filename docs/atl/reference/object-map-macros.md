@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0786ada9a9548fa4e3517cb74fe37e5b7f244be2
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 4810113158673002f20e36b7b17e93df6e68c3e6
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218650"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679041"
 ---
 # <a name="object-map-macros"></a>개체 맵 매크로
 이러한 매크로 맵 개체 및 항목을 정의합니다.  
@@ -47,7 +47,7 @@ DECLARE_OBJECT_DESCRIPTION( x )
  [in] 클래스 개체의 설명입니다.  
   
 ### <a name="remarks"></a>설명  
- ATL을 통해 개체 맵에이 설명을 입력 합니다 [OBJECT_ENTRY](https://msdn.microsoft.com/abd10ee2-54f0-4f94-9ec2-ddf8f4c8c8cd) 매크로입니다.  
+ ATL을 통해 개체 맵에이 설명을 입력 합니다 [OBJECT_ENTRY_AUTO](#object_entry_auto) 매크로입니다.  
   
  DECLARE_OBJECT_DESCRIPTION 구현 하는 `GetObjectDescription` 함수를 재정의 하는 데 사용할 수 있는 합니다 [CComCoClass::GetObjectDescription](ccomcoclass-class.md#getobjectdescription) 메서드.  
 

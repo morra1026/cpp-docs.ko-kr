@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3871b6ad3aead88c32c906726f689d949eb945ba
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 44beeca9b860e2010b092739d8c39044ad0bb5b1
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603348"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43680927"
 ---
 # <a name="platformwriteonlyarray-class"></a>Platform::WriteOnlyArray 클래스
 호출자가 채울 메서드에 대해 배열을 전달할 때 입력 매개 변수로 사용되는 1차원 배열을 나타냅니다.  
@@ -43,7 +43,7 @@ private ref class WriteOnlyArray<T, 1>
 ### <a name="public-methods"></a>Public 메서드  
  이러한 메서드의 액세스 가능성은 internal이므로 C++ 앱 또는 구성 요소 내에서만 액세스할 수 있습니다.  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 
 |[Writeonlyarray:: Begin](#begin)| 배열의 첫 번째 요소를 가리키는 반복기입니다. |  
@@ -187,7 +187,7 @@ T& set(
 
   
 ### <a name="remarks"></a>설명  
- HRESULT 값을 해석 하는 방법에 대 한 자세한 내용은 참조 하세요. [COM 오류 코드 구조](http://go.microsoft.com/fwlink/p/?LinkId=262045)합니다.  
+ HRESULT 값을 해석 하는 방법에 대 한 자세한 내용은 참조 하세요. [COM 오류 코드 구조](/windows/desktop/com/structure-of-com-error-codes)합니다.  
   
   
 ## <a name="see-also"></a>참고 항목  

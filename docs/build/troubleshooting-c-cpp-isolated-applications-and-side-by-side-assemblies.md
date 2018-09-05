@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4550d523a4410734c391e2e4d266ae536b4610b4
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3768056a240bb8ad647287b4ca2b60f8e7ede484
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218671"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681387"
 ---
 # <a name="troubleshooting-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ 격리된 응용 프로그램 및 side-by-side 어셈블리 문제 해결
 종속 라이브러리를 찾을 수 없는 경우 C/C++ 응용 프로그램을 로드하지 못할 수 있습니다. 이 문서에서는 C/C++ 응용 프로그램을 로드하지 못하는 몇 가지 일반적인 이유에 대해 설명하고 문제를 해결할 수 있는 단계를 제안합니다.  
@@ -46,7 +46,7 @@ ms.locfileid: "43218671"
   
 3.  응용 프로그램이 side-by-side 어셈블리에 종속된 경우 매니페스트가 없으면 링커에서 프로젝트에 대한 매니페스트를 생성하도록 해야 합니다. 링커 옵션을 확인 **매니페스트 생성** 에 **프로젝트 속성** 프로젝트에 대 한 대화 상자.  
   
-4.  매니페스트가 이진 파일에 포함된 경우 RT_MANIFEST의 ID가 이 형식의 이진 파일에 적합한지 확인합니다. 사용 하는 리소스 ID에 대 한 자세한 내용은 참조 하세요. [(Windows) 리소스로 사용 하 여 Side-by-side-어셈블리](https://msdn.microsoft.com/library/windows/desktop/aa376617.aspx)합니다. 매니페스트가 별도의 파일에 있는 경우 XML 편집기나 텍스트 편집기에서 엽니다. 매니페스트 및 배포에 대 한 규칙에 대 한 자세한 내용은 참조 하세요. [매니페스트](https://msdn.microsoft.com/library/aa375365)합니다.  
+4.  매니페스트가 이진 파일에 포함된 경우 RT_MANIFEST의 ID가 이 형식의 이진 파일에 적합한지 확인합니다. 사용 하는 리소스 ID에 대 한 자세한 내용은 참조 하세요. [(Windows) 리소스로 사용 하 여 Side-by-side-어셈블리](/windows/desktop/SbsCs/using-side-by-side-assemblies-as-a-resource)합니다. 매니페스트가 별도의 파일에 있는 경우 XML 편집기나 텍스트 편집기에서 엽니다. 매니페스트 및 배포에 대 한 규칙에 대 한 자세한 내용은 참조 하세요. [매니페스트](https://msdn.microsoft.com/library/aa375365)합니다.  
   
     > [!NOTE]
     >  포함된 매니페스트와 별도의 매니페스트 파일이 둘 다 있는 경우 운영 체제 로더는 포함된 매니페스트를 사용하고 별도의 파일을 무시합니다. 그러나 Windows XP에서는 반대로 별도의 매니페스트 파일이 사용되고 포함된 매니페스트가 무시됩니다.  

@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eee9c82487159b9233999d17ff36c4aad3ef6445
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: d6f03ea1ea39b9202d4bb7b850bb81354a4a47f1
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42541494"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677382"
 ---
 # <a name="vmxvmread"></a>__vmx_vmread
 **Microsoft 전용**  
@@ -54,7 +54,7 @@ unsigned char __vmx_vmread(
 |2|사용 가능한 상태 없이 작업이 실패했습니다.|  
   
 ## <a name="remarks"></a>설명  
- 합니다 `__vmx_vmread` 함수는 동일 합니다 `VMREAD` 컴퓨터 명령입니다. 값을 `Field` 매개 변수는 Intel 설명서에 설명 된 인코딩된 필드 인덱스입니다. 자세한 내용은 "Intel 가상화 기술 사양에 대 한는 IA-32 Intel 아키텍처" 문서를 검색에서 숫자 C97063-002, 문서를 [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) 사이트를 다음 문서의 부록 C를 참조 하세요. .  
+ 합니다 `__vmx_vmread` 함수는 동일 합니다 `VMREAD` 컴퓨터 명령입니다. 값을 `Field` 매개 변수는 Intel 설명서에 설명 된 인코딩된 필드 인덱스입니다. 자세한 내용은 "Intel 가상화 기술 사양에 대 한는 IA-32 Intel 아키텍처" 문서를 검색에서 숫자 C97063-002, 문서를 [Intel Corporation](https://software.intel.com/en-us/articles/intel-sdm) 사이트를 다음 문서의 부록 C를 참조 하세요. .  
   
 ## <a name="requirements"></a>요구 사항  
   

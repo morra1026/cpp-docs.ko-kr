@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46c12c29fcee310e8bd1d484743b754a830541d7
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a26bae54e267dfa46b0ec8e6770b3643cc0b7ebb
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43196114"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681774"
 ---
 # <a name="colecurrency-class"></a>COleCurrency 클래스
 OLE 자동화의 `CURRENCY` 데이터 형식을 캡슐화합니다.  
@@ -133,7 +133,7 @@ COleCurrency(
   
 - COleCurrency() 구문을 `COleCurrency` 0 (영)으로 초기화 하는 개체입니다.  
   
-- COleCurrency (`cySrc`)를 생성 한 `COleCurrency` 에서 개체를 [통화](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) 값입니다.  
+- COleCurrency (`cySrc`)를 생성 한 `COleCurrency` 에서 개체를 [통화](/windows/desktop/api/wtypes/ns-wtypes-tagcy) 값입니다.  
   
 - COleCurrency (`curSrc`)를 생성 한 `COleCurrency` 기존 개체 `COleCurrency` 개체입니다. 새 개체는 소스 개체와 동일한 상태입니다.  
   
@@ -141,7 +141,7 @@ COleCurrency(
   
 - `COleCurrency(`nUnits`, `nFractionalUnits`) Constructs a `COleCurrency' 개체에서 지정된 된 숫자 구성 요소입니다. 소수 부분의 절대값이 10,000 보다 크면 단위에 적절 한 조정이 이루어집니다. 참고 단위 및 소수 부분이 서명 된 long 값으로 지정 됩니다.  
   
- 자세한 내용은 참조는 [통화](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) 및 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.  
+ 자세한 내용은 참조는 [통화](/windows/desktop/api/wtypes/ns-wtypes-tagcy) 및 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.  
   
 ### <a name="example"></a>예제  
  다음 예에서는 0이 매개 변수 및 매개 변수 2 생성자의 효과 보여 줍니다.  
@@ -230,14 +230,14 @@ enum CurrencyStatus {
  [!code-cpp[NVC_MFCOleContainer#12](../../mfc/codesnippet/cpp/colecurrency-class_3.cpp)]  
   
 ##  <a name="m_cur"></a>  COleCurrency::m_cur  
- 내부 [통화](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) 이 대 한 구조 `COleCurrency` 개체입니다.  
+ 내부 [통화](/windows/desktop/api/wtypes/ns-wtypes-tagcy) 이 대 한 구조 `COleCurrency` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
   
 > [!CAUTION]
 >  값을 변경 합니다 `CURRENCY` 이 함수에서 반환 된 포인터에 의해 액세스 되는 구조는이 값을 변경 `COleCurrency` 개체입니다. 이 상태는 변경 되지 않습니다 `COleCurrency` 개체입니다.  
   
- 자세한 내용은 참조는 [통화](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) Windows SDK에는 항목입니다.  
+ 자세한 내용은 참조는 [통화](/windows/desktop/api/wtypes/ns-wtypes-tagcy) Windows SDK에는 항목입니다.  
   
 ##  <a name="m_status"></a>  COleCurrency::m_status  
  이 데이터 멤버의 형식을 열거 형식인 `CurrencyStatus`, 내에서 정의 되는 `COleCurrency` 클래스.  
@@ -304,7 +304,7 @@ const COleCurrency& operator=(const COleCurrency& curSrc);
   
 - **연산자 = (** *varSrc* **)** 하는 경우 변환 된 `VARIANT` 값 (또는 [COleVariant](../../mfc/reference/colevariant-class.md) 개체) 통화로 ( `VT_CY`)는 성공 하면 변환 된 값이 복사 됩니다 `COleCurrency` 개체 및 해당 상태에 잘못 설정 됩니다. 변환이 성공적 이면 값은 `COleCurrency` 개체 0과를 잘못 됨 상태가로 설정 됩니다.  
   
- 자세한 내용은 참조는 [통화](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) 및 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.  
+ 자세한 내용은 참조는 [통화](/windows/desktop/api/wtypes/ns-wtypes-tagcy) 및 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.  
   
 ### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCOleContainer#15](../../mfc/codesnippet/cpp/colecurrency-class_4.cpp)]  

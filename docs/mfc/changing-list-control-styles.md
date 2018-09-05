@@ -16,17 +16,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4919d9fd947a489ee9535abd5aa57d7861ba5a37
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2fdb2bbb3681fab2bae42866df40d0ca363b7935
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197996"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676769"
 ---
 # <a name="changing-list-control-styles"></a>목록 컨트롤 스타일 변경
 목록 컨트롤의 창 스타일을 변경할 수 있습니다 ([CListCtrl](../mfc/reference/clistctrl-class.md)) 만든 후 언제 든 지 합니다. 창 스타일을 변경 하 여 컨트롤에서 사용 하는 보기의 종류를 변경 합니다. 예를 들어, 탐색기를 에뮬레이션할 제공할 수도 있습니다 메뉴 항목이 나 도구 모음 단추 컨트롤 여러 뷰 사이 전환: 아이콘 보기, 목록 뷰 및 등입니다.  
   
- 예를 들어 사용자가 메뉴 항목을 선택 하면 호출을 만들 수 [GetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633584) 컨트롤의 현재 스타일을 검색 한 다음 호출 하 [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) 를 스타일 다시 설정 합니다. 자세한 내용은 [를 사용 하 여 목록 뷰 컨트롤](/windows/desktop/Controls/using-list-view-controls) Windows SDK의 합니다.  
+ 예를 들어 사용자가 메뉴 항목을 선택 하면 호출을 만들 수 [GetWindowLong](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) 컨트롤의 현재 스타일을 검색 한 다음 호출 하 [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) 를 스타일 다시 설정 합니다. 자세한 내용은 [를 사용 하 여 목록 뷰 컨트롤](/windows/desktop/Controls/using-list-view-controls) Windows SDK의 합니다.  
   
  사용 가능한 스타일에 나와 [만들기](../mfc/reference/clistctrl-class.md#create)합니다. 스타일 **LVS_ICON**를 **LVS_SMALLICON**를 **LVS_LIST**, 및 **LVS_REPORT** 4 목록 컨트롤 뷰를 지정 합니다.  
   

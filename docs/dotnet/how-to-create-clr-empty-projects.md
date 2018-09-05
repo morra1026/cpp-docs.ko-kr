@@ -16,18 +16,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: bcb104b5265d79c6eac41b7632a12d99a8ec236b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c46aacc776c60b7deb03495187d08a3227f43aa4
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212711"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677369"
 ---
 # <a name="how-to-create-clr-empty-projects"></a>방법: CLR 빈 프로젝트 만들기
 CLR 빈 프로젝트를 만들려면 사용 합니다 **CLR 빈 프로젝트** 에서 사용할 수 있는 템플릿을 합니다 **새 프로젝트** 대화 상자.  
   
 > [!NOTE]
->  IDE의 기능이의 모양을 활성 설정이 나 버전에 따라 달라질 수 있습니다 및 도움말에 설명 된 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+>  IDE의 기능이의 모양을 활성 설정이 나 버전에 따라 달라질 수 있습니다 및 도움말에 설명 된 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](/visualstudio/ide/personalizing-the-visual-studio-ide)을 참조하세요.  
   
 ### <a name="to-create-a-clr-empty-project"></a>CLR 빈 프로젝트를 만들려면  
   

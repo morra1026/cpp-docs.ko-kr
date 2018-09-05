@@ -1,7 +1,7 @@
 ---
 title: __Asm 블록에서 C 또는 c + + 기호를 사용 하 여 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: conceptual
@@ -18,28 +18,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 746614de653649747bf20ae4c223e5687ee53f5c
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 8ba8426e2a7ae1152a41fafa0c239498801c6e4d
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32049429"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678895"
 ---
 # <a name="using-c-or-c-symbols-in-asm-blocks"></a>__asm 블록에서 C 또는 C++ 기호 사용
-## <a name="microsoft-specific"></a>Microsoft 전용  
- `__asm` 블록은 표시되는 범위에서 모든 C 또는 C++ 기호를 참조할 수 있습니다. C 및 C++ 기호는 변수 이름/함수 이름/레이블, 즉 기호화된 상수나 `enum` 멤버가 아닌 이름입니다. C++ 멤버 함수는 호출할 수 없습니다.  
-  
- C 및 C++ 기호를 사용할 때는 몇 가지 제한이 적용됩니다.  
-  
--   각 어셈블리 언어 문에는 C 또는 C++ 기호를 하나만 포함할 수 있습니다. 여러 기호에만 같은 어셈블리 명령에 표시 될 수 **길이**, **형식**, 및 **크기** 식입니다.  
-  
--   `__asm` 블록에서 참조되는 함수는 프로그램 앞부분에서 선언(프로토타입화)해야 합니다. 그러지 않으면 컴파일러가 `__asm` 블록의 함수 이름과 레이블을 구분할 수 없습니다.  
-  
--   `__asm` 블록은 대/소문자에 관계없이 MASM 예약어와 철자가 같은 C 또는 C++ 기호는 사용할 수 없습니다. Masm 예약어와 같은 명령 이름과 포함할 **푸시** SI와 같은 이름을 등록 하 고 있습니다.  
-  
--   구조체 및 공용 구조체 태그는 `__asm` 블록에서 인식되지 않습니다.  
-  
- **Microsoft 전용 종료**  
-  
-## <a name="see-also"></a>참고 항목  
- [__asm 블록에서 C 또는 C++ 사용](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)
+
+**Microsoft 전용**
+
+`__asm` 블록은 표시되는 범위에서 모든 C 또는 C++ 기호를 참조할 수 있습니다. C 및 C++ 기호는 변수 이름/함수 이름/레이블, 즉 기호화된 상수나 `enum` 멤버가 아닌 이름입니다. C++ 멤버 함수는 호출할 수 없습니다.
+
+C 및 C++ 기호를 사용할 때는 몇 가지 제한이 적용됩니다.
+
+- 각 어셈블리 언어 문에는 C 또는 C++ 기호를 하나만 포함할 수 있습니다. 에 같은 어셈블리 명령에 여러 기호가 나타날 수 있습니다 **길이**를 **유형**, 및 **크기** 식입니다.
+
+- `__asm` 블록에서 참조되는 함수는 프로그램 앞부분에서 선언(프로토타입화)해야 합니다. 그러지 않으면 컴파일러가 `__asm` 블록의 함수 이름과 레이블을 구분할 수 없습니다.
+
+- `__asm` 블록은 대/소문자에 관계없이 MASM 예약어와 철자가 같은 C 또는 C++ 기호는 사용할 수 없습니다. Masm 예약어와 같은 명령 이름이 포함 됩니다 **푸시** 및 SI와 같은 이름을 등록 합니다.
+
+- 구조체 및 공용 구조체 태그는 `__asm` 블록에서 인식되지 않습니다.
+
+**Microsoft 전용 종료**
+
+## <a name="see-also"></a>참고자료
+
+[__asm 블록에서 C 또는 C++ 사용](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)<br/>

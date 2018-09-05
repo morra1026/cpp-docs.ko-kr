@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b40576e1b5613bfda19987167e7e43353e6b5802
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3c758226935151bd11faec12aed459aeb2606ca9
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211706"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684826"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows 런타임 C++ 템플릿 라이브러리(WRL)
 
@@ -157,5 +157,5 @@ Windows Runtime c + + 템플릿 라이브러리에는 몇 가지 기본 개념�
 |-|-|
 |[범주별 키 Api](../windows/key-wrl-apis-by-category.md)|기본 Windows Runtime c + + 템플릿 라이브러리 형식, 함수 및 매크로 강조 표시합니다.|
 |[참조](../windows/wrl-reference.md)|Windows Runtime c + + 템플릿 라이브러리에 대 한 참조 정보를 포함합니다.|
-|[빠른 참조 (Windows 런타임 및 Visual c + +)](http://go.microsoft.com/fwlink/p/?linkid=229180)|간략하게 설명 하는 C + + Windows 런타임 지 CX 기능입니다.|
-|[Visual c + +에서 Windows 런타임 구성 요소를 사용 하 여](http://go.microsoft.com/fwlink/p/?linkid=229155)|에서는 C + + /CX 기본적인 Windows 런타임 구성 요소를 합니다.|
+|[빠른 참조 (Windows 런타임 및 Visual c + +)](../cppcx/quick-reference-c-cx.md)|간략하게 설명 하는 C + + Windows 런타임 지 CX 기능입니다.|
+|[Visual c + +에서 Windows 런타임 구성 요소를 사용 하 여](/windows/uwp/winrt-components/walkthrough-creating-a-basic-windows-runtime-component-in-cpp-and-calling-it-from-javascript-or-csharp)|에서는 C + + /CX 기본적인 Windows 런타임 구성 요소를 합니다.|

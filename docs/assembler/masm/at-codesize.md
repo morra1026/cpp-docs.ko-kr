@@ -1,7 +1,7 @@
 ---
 title: '@CodeSize | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,23 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5fc47441079e05acc7a053cd5af78b5b5a096e1
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: b2fd953b996a7b8edf8362ba633cad280930d8a6
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32049140"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677523"
 ---
 # <a name="codesize"></a>@CodeSize
-에 대 한 0 **아주 작음**, **작은**, **COMPACT**, 및 **플랫** 모델 및에 대 한 1 **보통**,  **큰**, 및 **가장 크게** 모델 (숫자와 같습니다.).  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-@CodeSize  
-  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [기호 참조](../../assembler/masm/symbols-reference.md)
+
+0 **작습니다**를 **작은**를 **COMPACT**, 및 **플랫** 모델과 1 **보통**,  **대규모**, 및 **가장 크게** 모델 (숫자와 같습니다.).
+
+## <a name="syntax"></a>구문
+
+> @CodeSize
+
+## <a name="see-also"></a>참고자료
+
+[기호 참조](../../assembler/masm/symbols-reference.md)<br/>

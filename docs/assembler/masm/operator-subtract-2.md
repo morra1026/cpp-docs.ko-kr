@@ -1,7 +1,7 @@
 ---
-title: 연산자-2 | Microsoft Docs
+title: 연산자-| Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -19,22 +19,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d1969484a4a27652f00b45adce33ce8edb7b3af
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 2c388770032d8caff3aaf261e534beb19aa8ccf2
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057587"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677183"
 ---
-# <a name="operator--"></a>-연산자
-반환 *expression1* 뺀 *expression2*합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-expression1 - expression2  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [연산자 참조](../../assembler/masm/operators-reference.md)
+# <a name="operator--"></a>연산자-
+
+반환 *expression1* 빼기 *expression2*합니다. 두 번째 연산자의 부호를 반대로 뒤바꿉니다 *식*합니다.
+
+## <a name="syntax"></a>구문
+
+> expression1-expression2
+
+> -*식*
+
+## <a name="see-also"></a>참고자료
+
+[연산자 참조](../../assembler/masm/operators-reference.md)<br/>

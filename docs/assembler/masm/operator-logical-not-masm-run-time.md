@@ -1,7 +1,7 @@
 ---
-title: operator ! (MASM 실행 시간) | Microsoft Docs
+title: operator ! (MASM 시간을 실행 하는 데 사용) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -17,24 +17,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b72f808bd17dc61334e7be84af902f5956efd1b8
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: bb03955ab5c0bf50531b26c21b28b47083e7dbe4
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057330"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682401"
 ---
 # <a name="operator--masm-run-time"></a>operator ! (MASM 런타임)
-논리 부정입니다. 내부 에서만 사용 [합니다. IF](../../assembler/masm/dot-if.md), [합니다. 반면](../../assembler/masm/dot-while.md), 또는 [합니다. 반복](../../assembler/masm/dot-repeat.md) 차단 하 고 어셈블리 때가 아니라 런타임에 계산 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-!  
-expression  
-  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [연산자 참조](../../assembler/masm/operators-reference.md)
+
+논리 부정입니다. 내부 에서만 사용 [합니다. IF](../../assembler/masm/dot-if.md), [합니다. 하는 동안](../../assembler/masm/dot-while.md), 또는 [합니다. 반복](../../assembler/masm/dot-repeat.md) 어셈블리 때가 아니라 런타임 시 평가 차단 합니다.
+
+## <a name="syntax"></a>구문
+
+> ! *식*
+
+## <a name="see-also"></a>참고자료
+
+[연산자 참조](../../assembler/masm/operators-reference.md)<br/>

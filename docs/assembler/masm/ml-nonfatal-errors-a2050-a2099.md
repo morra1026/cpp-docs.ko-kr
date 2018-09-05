@@ -1,7 +1,7 @@
 ---
-title: ML 심각 하지 않은 오류 A2050 A2099 | Microsoft Docs
+title: ML 심각 하지 않은 오류 A2050-A2099 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -12,15 +12,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f549cad3bff99821e59952126cbabc6bf7e0de3a
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 34d8b3182eccb6f96be4aad8362e669cd320b470
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054168"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681848"
 ---
 # <a name="ml-nonfatal-errors-a2050-a2099"></a>ML 심각하지 않은 오류 A2050-A2099
-ML 심각 하지 않은 오류에 대 한 자세한 내용은 참조 [ML 오류 메시지](../../assembler/masm/ml-error-messages.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [ML 심각하지 않은 오류](../../assembler/masm/ml-nonfatal-errors.md)
+
+ML 심각 하지 않은 오류에 대 한 자세한 내용은 참조 하십시오 [ML 오류 메시지](../../assembler/masm/ml-error-messages.md)합니다.
+
+## <a name="see-also"></a>참고자료
+
+[ML 심각하지 않은 오류](../../assembler/masm/ml-nonfatal-errors.md)<br/>

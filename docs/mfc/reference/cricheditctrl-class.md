@@ -162,12 +162,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2847bf32a51a63e39d80839fed1b46fac18f29dc
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3ad17396a9c82532d46ea04f88b637828fe6f460
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215793"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678499"
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl 클래스
 Rich Edit 컨트롤의 기능을 제공합니다.  
@@ -443,7 +443,7 @@ virtual BOOL Create(
   
 - WS_TABSTOP에 탭 이동 순서에 편집 컨트롤을 포함 합니다.  
   
- 창 스타일에 대 한 자세한 내용은 참조 하세요. [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK에 있습니다.  
+ 창 스타일에 대 한 자세한 내용은 참조 하세요. [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK에 있습니다.  
   
 ### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CRichEditCtrl#5](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_5.cpp)]  
@@ -462,7 +462,7 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>매개 변수  
  *dwExStyle*  
- 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK의 합니다.  
+ 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK의 합니다.  
   
  *dwStyle*  
  편집 컨트롤의 스타일을 지정합니다. 에 나열 된 창 스타일의 조합을 적용를 **주의** 부분 [만들기](#create) 및 [컨트롤 스타일 편집](/windows/desktop/Controls/edit-control-styles)Windows SDK에서 설명 합니다.  

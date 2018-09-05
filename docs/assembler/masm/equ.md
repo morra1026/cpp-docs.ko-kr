@@ -1,7 +1,7 @@
 ---
-title: 같음 | Microsoft Docs
+title: EQU | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d7678cac4c480934fe9f6dd9816e636481c2d64
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 37509a39d2247649c2971932f402a18f3ac667d4
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32050752"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681309"
 ---
 # <a name="equ"></a>EQU
-첫 번째 지시문의 숫자 값을 할당 *식* 를 *이름*합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-      name EQU expression  
-name EQU <text>  
-```  
-  
-## <a name="remarks"></a>설명  
- *이름* 나중에 다시 정의할 수 없습니다.  
-  
- 지정 된 두 번째 지시문 할당 하는 *텍스트* 를 *이름*합니다. *이름* 다른 지정할 수 있는 *텍스트* 나중입니다. 참조 [TEXTEQU](../../assembler/masm/textequ.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+첫 번째 지시문의 숫자 값을 할당 *식을* 하 *이름*합니다.
+
+## <a name="syntax"></a>구문
+
+> *이름을* EQU *식*
+
+> *이름을* EQU \< *텍스트*>
+
+## <a name="remarks"></a>설명
+
+합니다 *이름을* 나중에 다시 정의할 수 없습니다.
+
+지정 된 두 번째 지시문 할당 *텍스트* 하 *이름*합니다. 합니다 *이름을* 다른 할당 될 수 있습니다 *텍스트* 나중입니다. 참조 [TEXTEQU](../../assembler/masm/textequ.md)합니다.
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

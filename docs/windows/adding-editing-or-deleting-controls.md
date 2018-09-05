@@ -17,18 +17,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 61caccd2a4511faf937f73e3ee17efe8f1b0bb2f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b28736e4e9c4b4f327f80a97b5b7ed3b6d1c7c40
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219438"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686274"
 ---
 # <a name="adding-editing-or-deleting-controls"></a>컨트롤 추가, 편집 및 삭제
 
 사용 하는 **대화** 편집기에 추가 하려면 크기 조정, 편집 및 대화 상자에서 컨트롤을 삭제 합니다. 해당 ID와 같은 컨트롤의 속성을 편집할 수도 있습니다 여부를 런타임에 처음 표시 되 나 합니다.
 
-바로 가기 메뉴를 사용할 수는 **대화 상자** 신속 하 게 추가할 편집기 대화 상자에 ActiveX 컨트롤을 등록 하 고 ActiveX 컨트롤을 추가할 수 있습니다 합니다 **도구 상자** 빠른 액세스를 위해 (자세한 내용은 참조 [사용자 지정 도구 상자 대화 상자](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)).
+바로 가기 메뉴를 사용할 수는 **대화 상자** 신속 하 게 추가할 편집기 대화 상자에 ActiveX 컨트롤을 등록 하 고 ActiveX 컨트롤을 추가할 수 있습니다 합니다 **도구 상자** 빠른 액세스를 위해 (자세한 내용은 참조 [도구 상자](/visualstudio/ide/reference/toolbox)).
 
 - [대화 상자에 컨트롤 추가](adding-a-control-to-a-dialog-box.md)
 

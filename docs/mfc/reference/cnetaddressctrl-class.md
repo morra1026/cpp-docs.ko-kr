@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d1e9a04a660da44f1c447dcd6ec388ba791958c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 07581805edd92e5b577889c8dfb12c5cf08ac20b
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214923"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43680761"
 ---
 # <a name="cnetaddressctrl-class"></a>CNetAddressCtrl 클래스
 `CNetAddressCtrl` 클래스에 입력 한 IPv4, IPv6 및 DNS 주소를 이름이 지정된 형식의 유효성을 검사하는 데 사용할 수 있는 네트워크 주소 컨트롤을 나타냅니다.  
@@ -151,7 +151,7 @@ virtual BOOL CreateEx(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *dwExStyle*|컨트롤에 적용 될 확장된 스타일의 비트 조합 (OR)입니다. 자세한 내용은 참조는 *dwExStyle* 의 매개 변수를 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) 함수입니다.|  
+|[in] *dwExStyle*|컨트롤에 적용 될 확장된 스타일의 비트 조합 (OR)입니다. 자세한 내용은 참조는 *dwExStyle* 의 매개 변수를 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) 함수입니다.|  
 |[in] *dwStyle*|컨트롤에 적용 될 스타일의 비트 조합 (OR)입니다. 자세한 내용은 [스타일 편집](../../mfc/reference/styles-used-by-mfc.md#edit-styles)합니다.|  
 |[in] *rect*|에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 컨트롤의 크기와 위치를 포함 하는 구조입니다.|  
 |[in] *pParentWnd*|에 대 한 null이 아닌 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 컨트롤의 부모 창입니다.|  

@@ -18,15 +18,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c47154d7a5eddd26573612708462c0352da30ae
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ea6f08a141d48183d96dba6cb02fcf31909af0ae
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368436"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686255"
 ---
 # <a name="appcontainer"></a>/APPCONTAINER
-앱 컨테이너에서 실행 해야 하는 실행 파일이 표시-예를 들어 Microsoft 스토어 또는 유니버설 Windows 앱.  
+앱 컨테이너에서 실행 해야 하는 실행 파일을 표시 합니다.-예를 들어 Microsoft Store 또는 유니버설 Windows 앱.  
   
 ```  
   
@@ -34,8 +34,8 @@ ms.locfileid: "32368436"
 ```  
   
 ## <a name="remarks"></a>설명  
- **/APPCONTAINER** 옵션이 설정된 실행 파일은 Windows 8에서 도입된 프로세스 격리 환경인 앱 컨테이너에서만 실행할 수 있습니다. Microsoft 저장소 및 유니버설 Windows 앱의 경우이 옵션을 설정 해야 합니다.  
+ **/APPCONTAINER** 옵션이 설정된 실행 파일은 Windows 8에서 도입된 프로세스 격리 환경인 앱 컨테이너에서만 실행할 수 있습니다. Microsoft Store 및 범용 Windows 앱에 대해이 옵션을 설정 해야 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [EDITBIN 옵션](../../build/reference/editbin-options.md)   
- [유니버설 Windows 앱 이란 무엇 인가요?](http://go.microsoft.com/fwlink/p/?LinkID=522074)
+ [유니버설 Windows 앱 이란?](/windows/uwp/get-started/universal-application-platform-guide)

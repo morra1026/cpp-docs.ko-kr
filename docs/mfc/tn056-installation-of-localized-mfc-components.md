@@ -26,17 +26,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4618efd8ad79a4f9b27bd3845aec20c5264788b6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: f9c157dee9e1c8b604822d81fb87e2aef25ef97c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43194523"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682286"
 ---
 # <a name="tn056-installation-of-localized-mfc-components"></a>TN056: 지역화된 MFC 구성 요소 설치
 지역화된 MFC 구성 요소의 설치와 관련된 이 기술 설명은 이제 더 이상 사용되지 않습니다.  
   
- **참조**[응용 프로그램 배포](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4) 에 대 한 추가 **Visual c + + 응용 프로그램 재배포에 대 한 정보입니다. 도 참조 하세요** [TechNote 57](../mfc/tn057-localization-of-mfc-components.md) MFC 응용 프로그램 지역화에 대 한 자세한 내용은 합니다.  
+ **참조** [TechNote 57](../mfc/tn057-localization-of-mfc-components.md) MFC 응용 프로그램 지역화에 대 한 자세한 내용은 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)   

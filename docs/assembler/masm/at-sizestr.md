@@ -1,7 +1,7 @@
 ---
 title: '@SizeStr | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,22 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 460931e733c26fc5d46d6c491875165b7cd3cd6d
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: d4c1472c32bd4d03698b9ca75049f3395916bae9
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32055058"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686175"
 ---
 # <a name="sizestr"></a>@SizeStr
-지정된 된 문자열의 길이 반환 하는 매크로 함수입니다. 정수를 반환 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-@SizeStr( string )  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [기호 참조](../../assembler/masm/symbols-reference.md)
+
+지정된 된 문자열의 길이 반환 하는 매크로 함수입니다. 정수를 반환 합니다.
+
+## <a name="syntax"></a>구문
+
+> @SizeStr(string)
+
+## <a name="see-also"></a>참고자료
+
+[기호 참조](../../assembler/masm/symbols-reference.md)<br/>

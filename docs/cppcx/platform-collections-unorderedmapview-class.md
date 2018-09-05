@@ -11,12 +11,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c463dbcb68b5a4b875dbb109eedc07a3b4b27c86
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2251703307c5f6ed5787227a4def42dfbcd3fc18
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43203030"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684011"
 ---
 # <a name="platformcollectionsunorderedmapview-class"></a>Platform::Collections::UnorderedMapView 클래스
 읽기 전용 보기를 키/값 쌍의 컬렉션인 *맵*으로 나타냅니다.  
@@ -42,7 +42,7 @@ ref class UnorderedMapView sealed;
  같은지 확인하기 위해 두 키 값을 비교할 수 있는 함수 개체를 제공하는 형식입니다. 기본적으로 [std:: equal_to\<K >](../standard-library/equal-to-struct.md)  
   
 ### <a name="remarks"></a>설명  
- UnorderedMapView의 구체적인 c + + 구현입니다 합니다 [Windows::Foundation::Collections::IMapView\<K, V >](http://go.microsoft.com/fwlink/p/?LinkId=262409) 응용 프로그램 이진 인터페이스 ABI ()를 통해 전달 되는 인터페이스입니다. 자세한 내용은 [컬렉션(C++/CX)](../cppcx/collections-c-cx.md)을 참조하세요.  
+ UnorderedMapView의 구체적인 c + + 구현입니다 합니다 [Windows::Foundation::Collections::IMapView\<K, V >](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) 응용 프로그램 이진 인터페이스 ABI ()를 통해 전달 되는 인터페이스입니다. 자세한 내용은 [컬렉션(C++/CX)](../cppcx/collections-c-cx.md)을 참조하세요.  
   
 ### <a name="members"></a>멤버  
   
@@ -221,7 +221,7 @@ UnorderedMapView(
  UnorderedMapView의 형식 이름입니다.  
   
  `H`  
- 키에 해시 값을 사용할 수 있는 함수 개체입니다. 기본값으로 [std:: hash\<K >](https://msdn.microsoft.com/54f67435-af9d-4217-a29d-fa4d2491a104) 형식에는 `std::hash` 지원 합니다.  
+ 키에 해시 값을 사용할 수 있는 함수 개체입니다. 기본값으로 [std:: hash\<K >](../standard-library/hash-class.md) 형식에는 `std::hash` 지원 합니다.  
   
  `P`  
  같은지 확인하기 위해 두 키를 비교할 수 있는 함수 개체를 제공하는 형식입니다. 기본값으로 [std:: equal_to\<K >](../standard-library/equal-to-struct.md)합니다.  
@@ -237,4 +237,4 @@ UnorderedMapView(
    
 ## <a name="see-also"></a>참고 항목  
  [Platform:: collections Namespace](../cppcx/platform-collections-namespace.md)   
- [Windows::Foundation::IMapView](http://go.microsoft.com/fwlink/p/?LinkId=262409)
+ [Windows::Foundation::IMapView](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_)
