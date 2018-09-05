@@ -1,7 +1,7 @@
 ---
 title: ML 심각 하지 않은 오류 A2019 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,19 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 829ec55616dad97d9cbaabadbb16559aa73fd56e
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 1991e32a3ae0e4bb67f698b25aece643dc53d39c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057567"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681793"
 ---
 # <a name="ml-nonfatal-error-a2019"></a>ML 심각하지 않은 오류 A2019
-**피연산자는 필드 또는 레코드 형식 이어야 합니다.**  
-  
- 피연산자 다음은 [너비](../../assembler/masm/operator-width.md) 또는 [마스크](../../assembler/masm/operator-mask.md) 연산자 올바르지 않습니다.  
-  
- [너비](../../assembler/masm/operator-width.md) 연산자는 피연산자를 필드 또는 레코드의 이름입니다. [마스크](../../assembler/masm/operator-mask.md) 연산자는 피연산자를 필드 또는 레코드 종류의 이름입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [ML 오류 메시지](../../assembler/masm/ml-error-messages.md)
+
+**피연산자는 필드 또는 레코드 형식 이어야 합니다.**
+
+피연산자 다음 합니다 [너비](../../assembler/masm/operator-width.md) 하거나 [마스크](../../assembler/masm/operator-mask.md) 연산자 올바르지 않습니다.
+
+합니다 [너비](../../assembler/masm/operator-width.md) 필드 또는 레코드의 이름에 해당 피연산자를 사용 하는 연산자입니다. 합니다 [마스크](../../assembler/masm/operator-mask.md) 이름 필드 또는 레코드 형식의 피연산자를 사용 하는 연산자입니다.
+
+## <a name="see-also"></a>참고자료
+
+[ML 오류 메시지](../../assembler/masm/ml-error-messages.md)<br/>

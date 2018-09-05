@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c174c904dfb43ff3fa3c032bae30da8c1e139c3
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 0be29ed74b2c5abf8bc3c781900caa61ada3713f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222902"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693080"
 ---
 # <a name="collections-ccx"></a>컬렉션(C++/CX)
 C + + /CX 프로그램 가능 표준 템플릿 라이브러리 (STL) 컨테이너 또는 다른 모든 사용자 정의 컬렉션 형식을 자유롭게 사용할 합니다. 그러나 전달 하는 경우 컬렉션 앞뒤로 전체 Windows 런타임 응용 프로그램 이진 인터페이스 (ABI)에서, 예를 들어 XAML 컨트롤 또는 JavaScript 클라이언트로-Windows 런타임 컬렉션 형식을 사용 해야 합니다.  
@@ -145,6 +145,5 @@ void FindButton(UIElementCollection^ col)
   
 ## <a name="see-also"></a>참고 항목  
  [형식 시스템](../cppcx/type-system-c-cx.md)   
- [기본 제공 형식](https://msdn.microsoft.com/acc196fd-09da-4882-b554-6c94685ec75f)   
  [Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)   
  [네임 스페이스 참조](../cppcx/namespaces-reference-c-cx.md)

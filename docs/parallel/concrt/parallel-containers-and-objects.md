@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8256a6d49166b5a002a400892f0808706c66eba9
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 0e0bade8cc233b438f98c3b73b04bf644bb37cbf
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212464"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692291"
 ---
 # <a name="parallel-containers-and-objects"></a>병렬 컨테이너 및 개체
 병렬 패턴 라이브러리 (PPL) 여러 컨테이너 및 해당 요소에 스레드로부터 안전한 액세스를 제공 하는 개체를 포함 합니다.  
@@ -186,14 +186,14 @@ ms.locfileid: "43212464"
   
 |연산자|설명|  
 |--------------|-----------------|  
-|[operator++](https://msdn.microsoft.com/4cfdd07e-927a-42f8-aaa0-d6881687f413)|큐의 다음 항목으로 이동 합니다. 이 연산자는 사전 증가 및 사후 증가 모두 의미 체계를 제공 하도록 오버 로드 합니다.|  
-|[operator*](https://msdn.microsoft.com/a0e671fc-76e6-4fb4-b95c-ced4dd2b2017)|현재 항목에 대 한 참조를 검색합니다.|  
-|[operator->](https://msdn.microsoft.com/41fa393d-ae1e-4a38-bb4b-19e8df709ca9)|현재 항목에 대 한 포인터를 검색합니다.|  
+|`operator++`|큐의 다음 항목으로 이동 합니다. 이 연산자는 사전 증가 및 사후 증가 모두 의미 체계를 제공 하도록 오버 로드 합니다.|  
+|`operator*`|현재 항목에 대 한 참조를 검색합니다.|  
+|`operator->`|현재 항목에 대 한 포인터를 검색합니다.|  
   
  [[맨 위로 이동](#top)]  
   
 ##  <a name="unordered_map"></a> concurrent_unordered_map 클래스  
- 합니다 [HYPERLINK "file:///C:\\\Users\\\thompet\\\AppData\\\Local\\\Temp\\\DxEditor\\\DduePreview\\\Default \\\798d7037-df37-4310-858b-6f590bbf6ebf\\\HTM\\\html\\\a217b4ac-af2b-4d41-94eb-09a75ee28622 "concurrency:: concurrent_unordered_map](../../parallel/concrt/reference/concurrent-unordered-map-class.md) 클래스는 마찬가지로 하는 결합형 컨테이너 클래스는 [std:: unordered_map](../../standard-library/unordered-map-class.md) 클래스에서 다양 한 길이의 형식의 요소 시퀀스를 제어 [std:: pair\<const Key, Ty >](../../standard-library/pair-structure.md)합니다. 에 키 / 값 쌍을 추가 하거나 키로 값을 조회할 수 있는 사전으로 순서가 지정 되지 않은 맵의 생각 합니다. 이 클래스는 여러 스레드 또는 동시에 공유 컨테이너에 액세스, 삽입, 또는 업데이트 하는 작업이 있는 경우에 유용 합니다.  
+ 합니다 [concurrency:: concurrent_unordered_map](../../parallel/concrt/reference/concurrent-unordered-map-class.md) 클래스는 마찬가지로 하는 결합형 컨테이너 클래스는 [std:: unordered_map](../../standard-library/unordered-map-class.md) 클래스, 다양 한 길이의 형식의요소시퀀스를제어[std:: pair\<const Key, Ty >](../../standard-library/pair-structure.md)합니다. 에 키 / 값 쌍을 추가 하거나 키로 값을 조회할 수 있는 사전으로 순서가 지정 되지 않은 맵의 생각 합니다. 이 클래스는 여러 스레드 또는 동시에 공유 컨테이너에 액세스, 삽입, 또는 업데이트 하는 작업이 있는 경우에 유용 합니다.  
   
  다음 예제에서는 사용에 대 한 기본 구조를 보여 줍니다. `concurrent_unordered_map`합니다. 이 예제에서는 ['a', ' i'] 범위의 문자 키를 삽입 합니다. 작업의 순서를 알 수 없는 때문에 각 키에 대 한 최종 값은도 결정 합니다. 그러나 동시에 삽입 하는 데 안전 합니다.  
   

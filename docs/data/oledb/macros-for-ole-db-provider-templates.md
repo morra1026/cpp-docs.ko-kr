@@ -62,12 +62,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e2456eed4f55fe5a5f68552cfe91e5785fc99cf5
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b2728c88e320fab192563f21ebcdde934be9da84
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209023"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687114"
 ---
 # <a name="macros-for-ole-db-provider-templates"></a>OLE DB 공급자 템플릿에 대한 매크로
 OLE DB 템플릿 공급자 매크로 다음 범주에서 기능을 제공합니다.  
@@ -231,7 +231,7 @@ PROPERTY_INFO_ENTRY(dwPropID)
  [in] A [DBPROPID](/previous-versions/windows/desktop/ms723882\(v=vs.85\)) 를 속성과 함께에서 사용할 수 있는 값 속성을 식별 하는 GUID를 설정 합니다.  
   
 #### <a name="remarks"></a>설명  
- 이 매크로는 `DWORD` 형식의 속성 값을 ATLDB.H에 정의된 기본값으로 설정합니다. 속성을 선택한 값으로 설정하려면 [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md)를 사용합니다. 설정 하는 [VARTYPE](https://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) 하 고 [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342\(v=vs.85\)) 동시 속성에 대 한 사용 [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md)합니다.  
+ 이 매크로는 `DWORD` 형식의 속성 값을 ATLDB.H에 정의된 기본값으로 설정합니다. 속성을 선택한 값으로 설정하려면 [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md)를 사용합니다. 설정 하는 `VARTYPE` 하 고 [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342\(v=vs.85\)) 동시 속성에 대 한 사용 [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md)합니다.  
   
 #### <a name="example"></a>예제  
  [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md)을 참조하세요.  
@@ -250,7 +250,7 @@ PROPERTY_INFO_ENTRY_EX(dwPropID, vt, dwFlags, value, options)
  [in] A [DBPROPID](/previous-versions/windows/desktop/ms723882\(v=vs.85\)) 를 속성과 함께에서 사용할 수 있는 값 속성을 식별 하는 GUID를 설정 합니다.  
   
  *vt*  
- [in] 합니다 [VARTYPE](https://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) 이 속성 항목의 합니다.  
+ [in] `VARTYPE` 이 속성 항목의 합니다. (Wtypes.h에 정의 됨)  
   
  *dwFlags*  
  [in] A [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342\(v=vs.85\)) 이 속성 항목을 설명 하는 값입니다.  

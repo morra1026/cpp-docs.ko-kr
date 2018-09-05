@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb99d0cb37fff5abe5a7eb54d3ba9c4226e5fd1c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 27ce284bee21d17101c9e93627841f2dcd6c00d4
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197203"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678630"
 ---
 # <a name="cwindowimpl-class"></a>CWindowImpl 클래스
 창을 만들거나 서브클래싱하기 위한 메서드를 제공합니다.  
@@ -156,16 +156,16 @@ HWND Create(
  [in] 창의 이름을 지정합니다. 기본값은 NULL입니다.  
   
  *dwStyle*  
- [in] 창 스타일입니다. 이 값은 창에 대 한 특성 클래스에서 제공 하는 스타일을 사용 하 여 결합 됩니다. 기본 값을 특성 클래스를 완전히 제어할 스타일을 제공합니다. 가능한 값 목록을 참조 하세요 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK에 있습니다.  
+ [in] 창 스타일입니다. 이 값은 창에 대 한 특성 클래스에서 제공 하는 스타일을 사용 하 여 결합 됩니다. 기본 값을 특성 클래스를 완전히 제어할 스타일을 제공합니다. 가능한 값 목록을 참조 하세요 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK에 있습니다.  
   
  *dwExStyle*  
- [in] 확장된 창 스타일입니다. 이 값은 창에 대 한 특성 클래스에서 제공 하는 스타일을 사용 하 여 결합 됩니다. 기본 값을 특성 클래스를 완전히 제어할 스타일을 제공합니다. 가능한 값 목록을 참조 하세요 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK에 있습니다.  
+ [in] 확장된 창 스타일입니다. 이 값은 창에 대 한 특성 클래스에서 제공 하는 스타일을 사용 하 여 결합 됩니다. 기본 값을 특성 클래스를 완전히 제어할 스타일을 제공합니다. 가능한 값 목록을 참조 하세요 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK에 있습니다.  
   
  *MenuOrID*  
  [in] 자식 창의 창 식별자입니다. 최상위 창에 대 한 메뉴 창에 대 한 처리 합니다. 기본값은 **0U**합니다.  
   
  *lpCreateParam*  
- [in] 창 만들기 데이터에 대 한 포인터입니다. 에 마지막 매개 변수에 대 한 설명을 참조 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680)합니다.  
+ [in] 창 만들기 데이터에 대 한 포인터입니다. 에 마지막 매개 변수에 대 한 설명을 참조 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa)합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 새로 만든된 창에 대 한 핸들입니다. 그렇지 않으면 NULL입니다.  
@@ -262,7 +262,7 @@ WNDPROC m_pfnSuperWindowProc;
   
 |창 유형|창 프로시저|  
 |--------------------|----------------------|  
-|통해 지정 된 새 창 클래스를 기반으로 창을 합니다 [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) 매크로입니다.|합니다 [DefWindowProc](https://msdn.microsoft.com/library/windows/desktop/ms633572) Win32 함수입니다.|  
+|통해 지정 된 새 창 클래스를 기반으로 창을 합니다 [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) 매크로입니다.|합니다 [DefWindowProc](/windows/desktop/api/winuser/nf-winuser-defwindowproca) Win32 함수입니다.|  
 |통해 지정 된 기존 클래스를 수정 하는 창 클래스를 기반으로 창을 합니다 [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) 매크로입니다.|기존 창 클래스의 창 프로시저입니다.|  
 |서브클래싱된 창입니다.|서브클래싱된 창의 원래 창 프로시저입니다.|  
   

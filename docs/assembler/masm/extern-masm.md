@@ -1,7 +1,7 @@
 ---
 title: EXTERN (MASM) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,26 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7528ea78270e4976ed3b926e83fe4f9977148498
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 0a9008e8c1153c0a9b06530b14e661436f7e62a9
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054031"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693672"
 ---
 # <a name="extern-masm"></a>EXTERN (MASM)
-하나 이상의 외부 변수, 레이블 또는 이라는 기호 정의 *이름* 형식이 변수인 `type`합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-   EXTERN [[langtype]] name [[(altid)]] :  
-type [[, [[langtype]] name [[(altid)]] :type]]...  
-```  
-  
-## <a name="remarks"></a>설명  
- `type` 수 [ABS](../../assembler/masm/operator-abs.md)를 가져오는 *이름* 상수입니다. 와 동일 [EXTRN](../../assembler/masm/extrn.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+하나 이상의 외부 변수, 레이블 또는 이라는 기호를 정의 *이름을* 형식인 *형식*합니다.
+
+## <a name="syntax"></a>구문
+
+> EXTERN [[*langtype*]] *이름* [[(*않으므로 altid*)]]: *형식* [[, [[*langtype*]]  *이름을* [[(*않으므로 altid*)]]: *형식*]]...
+
+## <a name="remarks"></a>설명
+
+합니다 *형식* 될 수 있습니다 [ABS](../../assembler/masm/operator-abs.md), 가져오는 *이름* 상수입니다. 동일 [EXTRN](../../assembler/masm/extrn.md)합니다.
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

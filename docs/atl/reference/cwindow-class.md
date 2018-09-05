@@ -163,12 +163,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a0ef98a17cdbc262ac8db90eba089601d8f8841
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b989cc55a76c1a982e0739a15d91544e5aeb4ddf
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216724"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678664"
 ---
 # <a name="cwindow-class"></a>CWindow 클래스
 이 클래스는 창 조작 하기 위한 메서드를 제공 합니다.  
@@ -547,10 +547,10 @@ HWND Create(
  [in] 창의 이름을 지정합니다. 기본값은 NULL입니다.  
   
  *dwStyle*  
- [in] 창 스타일입니다. 기본값은 0, 의미 없는 스타일 지정 됩니다. 가능한 값 목록을 참조 하세요 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK에 있습니다.  
+ [in] 창 스타일입니다. 기본값은 0, 의미 없는 스타일 지정 됩니다. 가능한 값 목록을 참조 하세요 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK에 있습니다.  
   
  *dwExStyle*  
- [in] 확장된 창 스타일입니다. 기본값은 0, 의미 없는 확장된 스타일 지정 됩니다. 가능한 값 목록을 참조 하세요 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK에 있습니다.  
+ [in] 확장된 창 스타일입니다. 기본값은 0, 의미 없는 확장된 스타일 지정 됩니다. 가능한 값 목록을 참조 하세요 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK에 있습니다.  
   
  *MenuOrID*  
  [in] 형식 변수의 [_U_MENUorID](../../atl/reference/u-menuorid-class.md) 메뉴 또는 창 식별자에 대 한 핸들을 지정 합니다. 기본값은 0U 합니다.  
@@ -564,7 +564,7 @@ HWND Create(
 ### <a name="remarks"></a>설명  
  `CWindow::rcDefault` 로 정의 된 `__declspec(selectany) RECT CWindow::rcDefault = {CW_USEDEFAULT, CW_USEDEFAULT, 0, 0};`합니다.  
   
- 참조 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) 자세한 내용은 Windows SDK에 있습니다.  
+ 참조 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) 자세한 내용은 Windows SDK에 있습니다.  
   
  **참고** 0 값으로 사용 되는 경우는 *MenuOrID* 매개 변수를 0U로 지정 되어야 합니다 (기본값) 컴파일러 오류를 방지 하려면.  
   
@@ -617,7 +617,7 @@ CWindow(HWND hWnd = NULL) throw();
  초기화 된 [m_hWnd](#m_hwnd) 멤버 *hWnd*, 기본적으로이 NULL입니다.  
   
 > [!NOTE]
-> `CWindow::CWindow` 창을 만들지 않습니다. 클래스 [CWindowImpl](../../atl/reference/cwindowimpl-class.md)를 [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md), 및 [CDialogImpl](../../atl/reference/cdialogimpl-class.md) (에서 파생 되는 모든 `CWindow`) 되는 창 또는 대화 상자를 만드는 메서드를 제공 합니다. 그런 다음에 할당 `CWindow::m_hWnd`합니다. 사용할 수도 있습니다는 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) Win32 함수입니다.  
+> `CWindow::CWindow` 창을 만들지 않습니다. 클래스 [CWindowImpl](../../atl/reference/cwindowimpl-class.md)를 [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md), 및 [CDialogImpl](../../atl/reference/cdialogimpl-class.md) (에서 파생 되는 모든 `CWindow`) 되는 창 또는 대화 상자를 만드는 메서드를 제공 합니다. 그런 다음에 할당 `CWindow::m_hWnd`합니다. 사용할 수도 있습니다는 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Win32 함수입니다.  
   
 ##  <a name="deferwindowpos"></a>  CWindow::DeferWindowPos  
  지정된 된 기간에 대 한 지정된 된 여러 창 위치 구조를 업데이트합니다.  
@@ -644,7 +644,7 @@ BOOL DestroyWindow() throw();
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [DestroyWindow](https://msdn.microsoft.com/library/windows/desktop/ms632682) Windows SDK에에서 있습니다.  
+ 참조 [DestroyWindow](/windows/desktop/api/winuser/nf-winuser-destroywindow) Windows SDK에에서 있습니다.  
   
  제거 하지 않습니다는 `CWindow` 개체 자체입니다.  
   
@@ -1201,7 +1201,7 @@ LONG GetWindowLong(int nIndex) const throw();
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [GetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633584) Windows SDK에에서 있습니다.  
+ 참조 [GetWindowLong](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) Windows SDK에에서 있습니다.  
   
 > [!NOTE]
 >  32 비트 및 64 비트 버전 Windows의 호환 되는 코드를 작성 하려면 사용할 [CWindow::GetWindowLongPtr](#getwindowlongptr)합니다.  
@@ -1328,7 +1328,7 @@ WORD GetWindowWord(int nIndex) const throw();
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [GetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633584) Windows SDK에에서 있습니다.  
+ 참조 [GetWindowLong](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) Windows SDK에에서 있습니다.  
   
 ##  <a name="gotodlgctrl"></a>  CWindow::GotoDlgCtrl  
  대화 상자에서 컨트롤에 키보드 포커스를 설정 합니다.  
@@ -1606,13 +1606,13 @@ BOOL ModifyStyle(
  [in] 스타일 수정 하는 동안 추가할 창 스타일을 지정 합니다.  
   
  *nFlags*  
- [in] 창 위치 지정 플래그입니다. 가능한 값 목록을 참조 하세요. 합니다 [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK에는 함수입니다.  
+ [in] 창 위치 지정 플래그입니다. 가능한 값 목록을 참조 하세요. 합니다 [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) Windows SDK에는 함수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  창 스타일을 수정 된 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 비트 OR를 사용 하 여 추가 하거나 제거 하는 스타일을 결합할 수 있습니다 ( &#124; ) 연산자. 참조 된 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) 함수를 사용할 수 있는 창 스타일에 대 한 Windows SDKfor 정보입니다.  
+ 비트 OR를 사용 하 여 추가 하거나 제거 하는 스타일을 결합할 수 있습니다 ( &#124; ) 연산자. 참조 된 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) 함수를 사용할 수 있는 창 스타일에 대 한 Windows SDKfor 정보입니다.  
   
  하는 경우 *nFlags* 이 값은 0 `ModifyStyle` Win32 함수 호출 `SetWindowPos`를 결합 하 여 창을 다시 그립니다 *nFlags* 다음 네 가지 플래그를 사용 하 여:  
   
@@ -1647,13 +1647,13 @@ BOOL ModifyStyleEx(
  [in] 스타일 수정 하는 동안 추가할 확장된 스타일을 지정 합니다.  
   
  *nFlags*  
- [in] 창 위치 지정 플래그입니다. 가능한 값 목록을 참조 하세요. 합니다 [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK에는 함수입니다.  
+ [in] 창 위치 지정 플래그입니다. 가능한 값 목록을 참조 하세요. 합니다 [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) Windows SDK에는 함수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  확장된 창 스타일을 수정 된 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 비트 OR를 사용 하 여 추가 하거나 제거 하는 스타일을 결합할 수 있습니다 ( &#124; ) 연산자. 참조를 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) 사용 가능한 확장 스타일에 대 한 Windows SDKfor 정보는 함수입니다.  
+ 비트 OR를 사용 하 여 추가 하거나 제거 하는 스타일을 결합할 수 있습니다 ( &#124; ) 연산자. 참조를 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) 사용 가능한 확장 스타일에 대 한 Windows SDKfor 정보는 함수입니다.  
   
  하는 경우 *nFlags* 이 값은 0 `ModifyStyleEx` Win32 함수 호출 `SetWindowPos`를 결합 하 여 창을 다시 그립니다 *nFlags* 다음 네 가지 플래그를 사용 하 여:  
   
@@ -2230,7 +2230,7 @@ LONG SetWindowLong(int nIndex, LONG dwNewLong) throw();
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) Windows SDK에에서 있습니다.  
+ 참조 [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) Windows SDK에에서 있습니다.  
   
 > [!NOTE]
 >  32 비트 및 64 비트 버전 Windows의 호환 되는 코드를 작성 하려면 사용할 [CWindow::SetWindowLongPtr](#setwindowlongptr)합니다.  
@@ -2276,7 +2276,7 @@ BOOL SetWindowPos(
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK에에서 있습니다.  
+ 참조 [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) Windows SDK에에서 있습니다.  
   
  이 메서드의 두 번째 버전에서 사용 된 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 창의 새 위치, 너비 및 높이 설정 하는 구조입니다.  
   
@@ -2311,7 +2311,7 @@ WORD SetWindowWord(int nIndex, WORD wNewWord) throw();
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) Windows SDK에에서 있습니다.  
+ 참조 [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) Windows SDK에에서 있습니다.  
   
 ##  <a name="showcaret"></a>  CWindow::ShowCaret  
  시스템 캐럿을 표시합니다.  

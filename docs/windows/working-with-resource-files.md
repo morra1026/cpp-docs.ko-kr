@@ -17,17 +17,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d96b9430cd5a6a4a9f3d65ab60c49a38b0530db7
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c0cbc2e88bc123b4de82ca69a41a17a41729bb4a
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211099"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691194"
 ---
 # <a name="working-with-resource-files"></a>리소스 파일에 대한 작업
 
 > [!WARNING]
-> 이 섹션의 내용은 C++로 작성된 Windows 데스크톱 응용 프로그램에 적용됩니다. C + +로 작성 된 유니버설 Windows 플랫폼 앱의 리소스에 대 한 자세한 내용은 [앱 리소스 정의](https://msdn.microsoft.com/476ea844-632c-4467-9ce3-966be1350dd4)합니다.
+> 이 섹션의 내용은 C++로 작성된 Windows 데스크톱 응용 프로그램에 적용됩니다. C + +로 작성 된 유니버설 Windows 플랫폼 앱의 리소스에 대 한 자세한 내용은 [앱 리소스 정의](/windows/uwp/app-resources/)합니다.
 >
 > C + 리소스를 추가 하는 방법은 + CLI 프로젝트를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다.
 
@@ -52,9 +52,6 @@ Visual Studio에서 제공되는 리소스 편집기와 각 편집기로 수정�
 
 [Visual C++](../visual-cpp-in-visual-studio.md)  
 Visual C++ 설명서에 대한 링크를 제공합니다.
-
-[Visual Studio 소개](https://msdn.microsoft.com/99997089-56ff-4d60-81a9-447062dc98ac)  
-모두 동일한 IDE(통합 개발 환경)를 사용하므로 도구를 공유할 수 있으며 혼합 언어 솔루션을 쉽게 작성할 수 있도록 하는 전체 개발 도구 집합에 대해 설명합니다.
 
 [의견 보내기](/visualstudio/ide/talk-to-us)  
 설명서 집합을 사용하고 기술 지원에 문의하고 액세스 가능성 기능을 적용하는 방법에 대한 정보를 확인할 수 있는 링크를 제공합니다.

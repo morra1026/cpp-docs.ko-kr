@@ -1,7 +1,7 @@
 ---
 title: ML 심각 하지 않은 오류 A2070 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,17 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8e0b92f47e7b533ff84c4b27748de835ba9ef5a
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 3217408a86741f97c92213ccf7370ddf734604aa
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32053547"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677937"
 ---
 # <a name="ml-nonfatal-error-a2070"></a>ML 심각하지 않은 오류 A2070
-**잘못 된 명령 피연산자**  
-  
- 하나 이상의 피연산자는 지정 된 명령에 대해 잘못 되었습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [ML 오류 메시지](../../assembler/masm/ml-error-messages.md)
+
+**잘못 된 명령 피연산자**
+
+하나 이상의 피연산자가 지정 된 된 명령에 대해 잘못 되었습니다.
+
+## <a name="see-also"></a>참고자료
+
+[ML 오류 메시지](../../assembler/masm/ml-error-messages.md)<br/>

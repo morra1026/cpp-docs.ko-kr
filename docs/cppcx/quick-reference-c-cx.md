@@ -9,15 +9,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a54774193c0274c2ee9e4f79c389cee3ffe5c49
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 272921d0a9ac00ec5ee69fb50a17a34e257b1725
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608335"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692590"
 ---
 # <a name="quick-reference-ccx"></a>빠른 참조(C++/CX)
-Windows 런타임에서 신뢰할 수 있는 운영 체제 환경 에서만에서 실행 하 고 권한 있는 함수, 데이터 형식 및 장치를 사용 하 여 Microsoft Store 통해 배포 되는 유니버설 Windows 플랫폼 (UWP) 앱을 지원 합니다. C + + /cli CX Windows 런타임에 대 한 앱의 작성을 단순화 합니다. 이 문서는 빠른 참조입니다. 전체 설명서를 참조 하세요. [형식 시스템](../cppcx/type-system-c-cx.md) 하 고 [런타임 플랫폼용 구성 요소 확장명](http://go.microsoft.com/fwlink/p/?linkid=228720)합니다.  
+Windows 런타임에서 신뢰할 수 있는 운영 체제 환경 에서만에서 실행 하 고 권한 있는 함수, 데이터 형식 및 장치를 사용 하 여 Microsoft Store 통해 배포 되는 유니버설 Windows 플랫폼 (UWP) 앱을 지원 합니다. C + + /cli CX Windows 런타임에 대 한 앱의 작성을 단순화 합니다. 이 문서는 빠른 참조입니다. 전체 설명서를 참조 하세요. [형식 시스템](../cppcx/type-system-c-cx.md)입니다.  
   
  명령줄에서 빌드할 때 사용 합니다 **/ZW** 컴파일러 옵션을 사용 하는 UWP 앱 또는 Windows 런타임 구성 요소를 작성 합니다. Windows 런타임 메타 데이터 (.winmd) 파일에 정의 된, Windows 런타임 선언에 액세스 하려면 지정 된 `#using` 지시문 또는 **/FU** 컴파일러 옵션입니다. UWP 앱 용 프로젝트를 만들면 Visual Studio는 기본적으로 이러한 옵션을 설정 하 고 모든 Windows 런타임 라이브러리에 대 한 참조를 추가 합니다.  
   

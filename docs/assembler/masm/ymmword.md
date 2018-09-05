@@ -1,7 +1,7 @@
 ---
 title: YMMWORD | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f82d9c8066334ff0d8765e1aa4da41a253d3064
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 67ea3d2319f6c89abccc3acbba4e1fea94197210
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057112"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682185"
 ---
 # <a name="ymmword"></a>YMMWORD
-Intel 고급 벡터 확장명 (AVX) 지침이 포함 된 256 비트 멀티미디어 피연산자에 사용 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-YMMWORD  
-```  
-  
-## <a name="remarks"></a>설명  
- `YMMWORD` 동일한 형식으로 표시 하기 위해 `__m256` AVX 내장 함수에 대 한 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+Intel 고급 벡터 확장 (avx)를 사용 하 여 256 비트 멀티미디어 피연산자에 사용 됩니다.
+
+## <a name="syntax"></a>구문
+
+> YMMWORD
+
+## <a name="remarks"></a>설명
+
+`YMMWORD` 동일한 형식으로 표시 하기 위해 `__m256` AVX 내장 함수에 대 한 합니다.
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

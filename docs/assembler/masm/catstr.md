@@ -1,7 +1,7 @@
 ---
 title: CATSTR | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,25 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d0fbe41d81671b509eef6d0724fd8a4b6880484
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 975d3a0776a6b2228dedba54cbd47a18d363921b
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32049639"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689382"
 ---
 # <a name="catstr"></a>CATSTR
-텍스트 항목을 연결합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-name CATSTR [[textitem1 [[, textitem2]] ...]]  
-```  
-  
-## <a name="remarks"></a>설명  
- 각 텍스트 항목을 앞에 상수는 리터럴 문자열 수는 `%`, 또는 매크로 함수에 의해 반환 되는 문자열입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+텍스트 항목을 연결합니다.
+
+## <a name="syntax"></a>구문
+
+> CATSTR 이름을 [[textitem1 [[, textitem2]]...]]
+
+## <a name="remarks"></a>설명
+
+각 텍스트 항목 앞에 상수 리터럴 문자열을이 수는 `%`, 또는 매크로 함수에 의해 반환 되는 문자열입니다.
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

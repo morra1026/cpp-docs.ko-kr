@@ -1,7 +1,7 @@
 ---
 title: 연산자 THIS | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,22 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37304563b1a986b81eec05778c420a002e75fa9f
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: ae20d8f2abc7740d1716155f626c6a69316ca3fd
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057125"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692575"
 ---
 # <a name="operator-this"></a>연산자 THIS
-피연산자에 지정 된 반환 `type` 오프셋과 세그먼트 값은 현재 위치 카운터 값으로 동일 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-THIS type  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [연산자 참조](../../assembler/masm/operators-reference.md)
+
+피연산자에 지정 된 반환 `type` 오프셋과 세그먼트 값은 현재 위치 카운터 값으로 동일 합니다.
+
+## <a name="syntax"></a>구문
+
+> 이 유형
+
+## <a name="see-also"></a>참고자료
+
+[연산자 참조](../../assembler/masm/operators-reference.md)<br/>

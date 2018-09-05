@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd12bff6638ef86205b1037a8a7c7e348767ae9a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 287e540f73b202229c0355aec55aa0d8f5e0421f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221757"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690451"
 ---
 # <a name="cancellation-in-the-ppl"></a>PPL에서의 취소
 이 문서에서는 PPL(병렬 패턴 라이브러리)에서 취소의 역할, 병렬 작업을 취소하는 방법 및 병렬 작업이 취소될 경우를 확인하는 방법에 대해 설명합니다.  
@@ -150,7 +150,7 @@ ms.locfileid: "43221757"
   
 #### <a name="cancellation-tokens-and-task-composition"></a>취소 토큰 및 작업 컴퍼지션  
 
- 합니다 [동시성:: HYPERLINK "https://msdn.microsoft.com/library/system.threading.tasks.task.whenall(v=VS.110).aspx" when_all](reference/concurrency-namespace-functions.md#when_all) 하 고 [concurrency:: when_any](reference/concurrency-namespace-functions.md#when_all) 함수 일반적인 패턴을 구현 하는 여러 태스크를 작성할 수 있습니다. 이 섹션에서는 이들 함수에서 취소 토큰을 사용하는 방법을 보여 줍니다.  
+ 합니다 [concurrency:: when_all](reference/concurrency-namespace-functions.md#when_all) 하 고 [concurrency:: when_any](reference/concurrency-namespace-functions.md#when_all) 함수 일반적인 패턴을 구현 하는 여러 태스크를 작성할 수 있습니다. 이 섹션에서는 이들 함수에서 취소 토큰을 사용하는 방법을 보여 줍니다.  
   
  `when_all` 및 `when_any` 함수의 하나에 취소 토큰을 제공하면 취소 토큰이 취소되는 경우나 참가 작업의 하나가 취소됨 상태로 끝나거나 예외를 throw할 경우에만 해당 함수가 취소됩니다.  
   

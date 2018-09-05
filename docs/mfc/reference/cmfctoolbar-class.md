@@ -321,12 +321,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a510d163075ccefbc61364cd7efa4003dfd0b8aa
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 43eb3f239f50b59245714069c70655a997882c64
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43208560"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689234"
 ---
 # <a name="cmfctoolbar-class"></a>CMFCToolBar 클래스
 합니다 `CMFCToolBar` 클래스와 유사 [CToolBar 클래스](../../mfc/reference/ctoolbar-class.md), 하지만 사용자 인터페이스 기능에 대 한 추가 지원을 제공 합니다. 여기에는 평면 도구 모음, 핫 이미지 포함 도구 모음, 큰 아이콘, 페이저 단추, 잠긴 도구 모음, rebar 컨트롤, 이미지 아래 텍스트, 배경 이미지, 탭 도구 모음이 포함됩니다. `CMFCToolBar` 클래스에는 기본 제공 사용자 지정 도구 모음과 메뉴, 메뉴 사이 끌어 놓기, 콤보 상자 단추, 편집 상자 단추, 색 선택 및 롤업 단추 도구 모음이 포함됩니다.
@@ -513,7 +513,7 @@ class CMFCToolBar : public CMFCBaseToolBar
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CMFCToolBar::m_bDontScaleImages](#m_bdontscaleimages)|높은 DPI 모드로 확장할 것인지 또는 하지 도구 모음 이미지를 지정 합니다.|  
 |[CMFCToolBar::m_dblLargeImageRatio](#m_dbllargeimageratio)|큰 이미지의 크기 (높이 또는 너비) 및 일반 이미지 차원 간의 비율을 지정합니다.|  
@@ -2222,7 +2222,7 @@ BOOL IsOneRowWithSibling();
  도구 모음 및 해당 형제 된 동일한 행에 배치 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 합니다 [cmfccustomizebutton:: Createpopupmenu](https://msdn.microsoft.com/e501083e-f78e-4d8d-900c-40bd6e2bb7f8) 표시 하는 방법을 확인 하려면이 메서드를 호출 합니다 **사용자 지정** 팝업 메뉴. 이 메서드가 TRUE를 반환 하는 경우 프레임 워크를 표시 합니다 **표시 단추를 한 줄** 단추입니다. 그렇지 않으면 프레임 워크가 표시는 **표시 단추를 두 줄** 단추.  
+ 합니다 [cmfccustomizebutton:: Createpopupmenu](internal-classes.md) 표시 하는 방법을 확인 하려면이 메서드를 호출 합니다 **사용자 지정** 팝업 메뉴. 이 메서드가 TRUE를 반환 하는 경우 프레임 워크를 표시 합니다 **표시 단추를 한 줄** 단추입니다. 그렇지 않으면 프레임 워크가 표시는 **표시 단추를 두 줄** 단추.  
   
  일반적으로 이 메서드를 사용할 필요가 없습니다. 사용 하도록 설정 합니다 **표시 단추를 한 줄** 또는 **표시 단추를 두 줄** 단추를 호출 [cmfctoolbar:: Setsiblingtoolbar](#setsiblingtoolbar)합니다.  
   

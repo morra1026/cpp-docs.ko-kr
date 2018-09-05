@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2e0ce7cffb397aaa170f13bac9fc1f4c1693d25f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ace2b62197b652baeb7e287a582b521252270f6d
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214854"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691238"
 ---
 # <a name="bindable"></a>bindable
 
@@ -40,11 +40,11 @@ ms.locfileid: "43214854"
 
 MFC 샘플은 다음의 사용을 보여 **바인딩 가능한**:
 
-- [컨트롤 샘플: MFC 기반 ActiveX 컨트롤](https://msdn.microsoft.com/a44adf86-0ba0-4504-bedb-512b6cba2e63)
+- [컨트롤 샘플: MFC 기반 ActiveX 컨트롤](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
 
-- [CIRC 샘플: ActiveX 컨트롤](https://msdn.microsoft.com/9ba34d04-280e-49f4-90ae-41a6be44c95b)
+- [CIRC 샘플: ActiveX 컨트롤](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
 
-- [도구 설명 및 도움말을 사용 하 여 TESTHELP 샘플: ActiveX 컨트롤](https://msdn.microsoft.com/d822861d-c6f0-4d0a-ad11-970eebb1e8cd)
+- [도구 설명 및 도움말을 사용 하 여 TESTHELP 샘플: ActiveX 컨트롤](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
 
 ## <a name="example"></a>예제
 

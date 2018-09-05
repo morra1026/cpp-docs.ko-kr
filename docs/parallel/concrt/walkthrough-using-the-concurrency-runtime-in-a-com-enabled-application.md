@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12081cbc34182fc4c974bd96fd0ce7bbc78cca5f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ed404bcbbdd62c051b0f93e2607d1278bfbf0204
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220231"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691837"
 ---
 # <a name="walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application"></a>연습: COM 사용 응용 프로그램에서 동시성 런타임 사용
 이 문서에는 구성 요소 개체 모델 (COM)를 사용 하는 응용 프로그램에서 동시성 런타임을 사용 하는 방법을 보여 줍니다.  
@@ -36,7 +36,7 @@ ms.locfileid: "43220231"
   
 - [예외 처리](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)  
   
- COM에 대 한 자세한 내용은 참조 하세요. [구성 요소 개체 모델 (COM)](https://msdn.microsoft.com/library/windows/desktop/ms680573)합니다.  
+ COM에 대 한 자세한 내용은 참조 하세요. [구성 요소 개체 모델 (COM)](/windows/desktop/com/component-object-model--com--portal)합니다.  
   
 ## <a name="managing-the-lifetime-of-the-com-library"></a>COM 라이브러리의 수명 관리  
  동시성 런타임과 함께 COM 사용할 다른 동시성 메커니즘으로 동일한 원칙을 따릅니다를 있지만 효과적으로 이러한 라이브러리를 함께 사용 하 여 다음 지침 도움이 됩니다.  

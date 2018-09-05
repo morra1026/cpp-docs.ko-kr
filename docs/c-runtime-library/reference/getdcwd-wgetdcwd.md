@@ -43,12 +43,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0ccc526b196982402ca3b795276df8c790ad35a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 45c03ed2c057781c082988ac15e838249db0f28a
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404258"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689717"
 ---
 # <a name="getdcwd-wgetdcwd"></a>_getdcwd, _wgetdcwd
 
@@ -79,30 +79,30 @@ wchar_t *_wgetdcwd(
 *buffer*<br/>
 경로에 대한 저장소 위치 또는 **NULL**입니다.
 
-경우 **NULL** 지정,이 함수에서의 버퍼를 적어도 할당 *maxlen* 크기를 사용 하 여 **malloc**의 반환 값과 **_getdcwd**할당된 된 버퍼에 대 한 포인터입니다. 호출 하 여 버퍼를 해제할 수 **무료** 는 포인터에 전달 합니다.
+하는 경우 **NULL** 지정 된 경우이 함수에서의 버퍼를 하나 이상 할당 *maxlen* 사용 하 여 크기 **malloc**, 및의 반환 값 **_getdcwd**할당된 된 버퍼에 대 한 포인터입니다. 호출 하 여 버퍼를 해제할 수 있습니다 **무료** 포인터를 전달 합니다.
 
 *maxlen*<br/>
-문자에서는 경로의 최대 길이 지정 하는 0이 아닌 양의 정수: **char** 에 대 한 **_getdcwd** 및 **wchar_t** 에 대 한 **_wgetdcwd**.
+문자에서는 경로의 최대 길이 지정 하는 0이 아닌 양의 정수: **char** 에 대 한 **_getdcwd** 하 고 **wchar_t** 에 대 한 **_wgetdcwd**.
 
-경우 *maxlen* 에 설명 된 잘못 된 매개 변수 처리기를 0 보다 크지 않은 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md), 호출 됩니다.
+하는 경우 *maxlen* 에서 설명 하는 잘못 된 매개 변수 처리기를 0 보다 크지 않습니다 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 호출 됩니다.
 
 ## <a name="return-value"></a>반환 값
 
 지정된 된 드라이브의 현재 작업 디렉터리의 전체 경로 나타내는 문자열에 대 한 포인터 또는 **NULL**, 오류가 나타냅니다.
 
-경우 *버퍼* 로 지정 된 **NULL** 를 할당할 메모리가 부족 하 고 *maxlen* 문자 오류가 발생 하 고 **errno** 은 로 설정 **ENOMEM**합니다. Null 종결 문자를 포함 하는 경로의 길이가 초과 하는 경우 *maxlen*, 오류가 발생 하 고 **errno** 로 설정 된 **ERANGE**합니다. 이러한 오류 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
+하는 경우 *버퍼* 로 지정 됩니다 **NULL** 할당할 메모리가 부족 하 고 *maxlen* 문자, 오류가 발생 하 고 **errno** 는 로 **ENOMEM**합니다. Null 종결 문자를 포함 하는 경로의 길이 초과 하는 경우 *maxlen*, 오류가 발생 하 고 **errno** 로 설정 되어 **ERANGE**합니다. 이러한 오류 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**_getdcwd** 함수는 지정 된 드라이브에는 현재 작업 디렉터리의 전체 경로 가져오고에 저장 *버퍼*합니다. 현재 작업 디렉터리가 루트로 설정되는 경우 문자열이 백슬래시(\\)로 끝납니다. 현재 작업 디렉터리가 루트 이외의 디렉터리로 설정되는 경우 문자열은 백슬래시가 아닌 디렉터리의 이름으로 끝납니다.
+합니다 **_getdcwd** 함수가 지정된 된 드라이브의 현재 작업 디렉터리의 전체 경로 가져오고에 저장 *버퍼*합니다. 현재 작업 디렉터리가 루트로 설정되는 경우 문자열이 백슬래시(\\)로 끝납니다. 현재 작업 디렉터리가 루트 이외의 디렉터리로 설정되는 경우 문자열은 백슬래시가 아닌 디렉터리의 이름으로 끝납니다.
 
-**_wgetdcwd** 의 와이드 문자 버전이 **_getdcwd**, 및 해당 *버퍼* 매개 변수 및 반환 값은 와이드 문자 문자열입니다. 그렇지 않으면 **_wgetdcwd** 및 **_getdcwd** 동일 하 게 작동 합니다.
+**_wgetdcwd** 의 와이드 문자 버전이 **_getdcwd**, 및 해당 *버퍼* 매개 변수 및 반환 값은 와이드 문자 문자열입니다. 그렇지 않으면 **_wgetdcwd** 하 고 **_getdcwd** 동일 하 게 작동 합니다.
 
-이 함수는 자체적으로 스레드로부터 안전하지 않는 **GetFullPathName**에 의존하지만 스레드로부터 안전합니다. 그러나 다중 스레드 응용 프로그램에서 이 함수와 **GetFullPathName**을 모두 호출하는 경우 스레드 안전성을 위반할 수 있습니다. 자세한 내용을 보려면 [MSDN 라이브러리](http://go.microsoft.com/fwlink/p/?linkid=150542)로 이동한 다음 **GetFullPathName**을 검색하세요.
+이 함수는 자체적으로 스레드로부터 안전하지 않는 **GetFullPathName**에 의존하지만 스레드로부터 안전합니다. 다중 스레드 응용 프로그램 모두이 함수를 호출 하는 경우 스레드 안전성을 위반할 수는 있지만 및 [GetFullPathNameA](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea)합니다.
 
-이 함수의 버전은 **_nolock** 접미사 하 게 작동 동일 하 게이 함수를 제외 하 고 스레드로부터 안전 하지 않은 다른 스레드의 간섭 으로부터 보호 받지 않습니다. 자세한 내용은 [_getdcwd_nolock, _wgetdcwd_nolock](getdcwd-nolock-wgetdcwd-nolock.md)을 참조하세요.
+이 함수의 버전은는 **_nolock** 접미사 동일 하 게 동작이 함수는 스레드로부터 안전 하지 않습니다 하 고 다른 스레드의 간섭 으로부터 보호 되지 한다는 합니다. 자세한 내용은 [_getdcwd_nolock, _wgetdcwd_nolock](getdcwd-nolock-wgetdcwd-nolock.md)을 참조하세요.
 
-때 **_DEBUG** 및 **_CRTDBG_MAP_ALLOC** 정의에 대 한 호출이 **_getdcwd** 및 **_wgetdcwd** 를호출하여대체 **_getdcwd_dbg** 및 **_wgetdcwd_dbg** 메모리 할당을 디버그할 수 있도록 합니다. 자세한 내용은[_getdcwd_dbg, _wgetdcwd_dbg](getdcwd-dbg-wgetdcwd-dbg.md)를 참조하세요.
+때 **_DEBUG** 하 고 **_CRTDBG_MAP_ALLOC** 정의 된, 호출 하는 **_getdcwd** 하 고 **_wgetdcwd** 를호출하여대체됩니다 **_getdcwd_dbg** 하 고 **_wgetdcwd_dbg** 메모리 할당을 디버그할 수 있도록 합니다. 자세한 내용은[_getdcwd_dbg, _wgetdcwd_dbg](getdcwd-dbg-wgetdcwd-dbg.md)를 참조하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -112,7 +112,7 @@ wchar_t *_wgetdcwd(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_getdcwd**|\<direct.h>|
 |**_wgetdcwd**|\<direct.h> 또는 \<wchar.h>|

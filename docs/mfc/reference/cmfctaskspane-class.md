@@ -204,12 +204,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b7f83175e2bf3fe1e69ef02192749916e566edd
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c0477bb2dfa60b8a3803c6aff2502de7fd0ad15c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215255"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686459"
 ---
 # <a name="cmfctaskspane-class"></a>CMFCTasksPane 클래스
 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
@@ -284,7 +284,7 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::IsToolBox](#istoolbox)||  
 |[CMFCTasksPane::IsWrapLabelsEnabled](#iswraplabelsenabled)|작업 창의 레이블이 자동 줄 바꿈되는지를 나타냅니다.|  
 |[CMFCTasksPane::IsWrapTasksEnabled](#iswraptasksenabled)|작업 창의 작업이 자동 줄 바꿈되는지를 나타냅니다.|  
-|[CMFCTasksPane::LoadState](#loadstate)|(재정의 [cdockablepane:: Loadstate](https://msdn.microsoft.com/96110136-4f46-4764-8a76-3b4abaf77917).)|  
+|[CMFCTasksPane::LoadState](#loadstate)|(재정의 [cdockablepane:: Loadstate](cdockablepane-class.md#loadstate).)|  
 |[CMFCTasksPane::OnCancel](#oncancel)||  
 |[CMFCTasksPane::OnClickTask](#onclicktask)|사용자가 작업 창에서 항목을 클릭하면 프레임워크에서 호출됩니다.|  
 |[CMFCTasksPane::OnOK](#onok)||  
@@ -293,17 +293,17 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::OnPressHomeButton](#onpresshomebutton)|사용자가 홈 탐색 단추를 클릭하면 프레임워크에서 호출됩니다.|  
 |[CMFCTasksPane::OnPressOtherButton](#onpressotherbutton)||  
 |[CMFCTasksPane::OnSetAccData](#onsetaccdata)|(재정의 [cbasepane:: Onsetaccdata](../../mfc/reference/cbasepane-class.md#onsetaccdata).)|  
-|[CMFCTasksPane::OnUpdateCmdUI](#onupdatecmdui)|(재정의 [cdockablepane:: Onupdatecmdui](https://msdn.microsoft.com/5dd61606-1c12-40d4-b024-f3839aa5e2e0).)|  
-|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(재정의 [cdockablepane:: Pretranslatemessage](https://msdn.microsoft.com/49a242cc-b158-400e-9e01-0345ec9c3ffd).)|  
+|[CMFCTasksPane::OnUpdateCmdUI](#onupdatecmdui)|(재정의 [cdockablepane:: Onupdatecmdui](cdockablepane-class.md).)|  
+|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(재정의 [cdockablepane:: Pretranslatemessage](cdockablepane-class.md).)|  
 |[CMFCTasksPane::RecalcLayout](#recalclayout)|(재정의 [cpane:: Recalclayout](../../mfc/reference/cpane-class.md#recalclayout).)|  
 |[CMFCTasksPane::RemoveAllGroups](#removeallgroups)|지정된 페이지에서 모든 그룹을 제거합니다.|  
 |[CMFCTasksPane::RemoveAllPages](#removeallpages)|기본(첫 번째) 페이지를 제외한 모든 페이지를 작업 창에서 제거합니다.|  
 |[CMFCTasksPane::RemoveAllTasks](#removealltasks)|그룹에서 모든 작업을 제거합니다.|  
 |[CMFCTasksPane::RemoveGroup](#removegroup)|그룹을 제거합니다.|  
-|[CMFCTasksPane::RemovePage](#removepage)|작업 창에서 지정된 페이지를 제거합니다.|  
+|[CMFCTasksPane::RemovePage](#removepage)|작업 창에서 지정된 페이지를 제거합니다.|
 |[CMFCTasksPane::RemoveTask](#removetask)|작업 그룹에서 작업을 제거합니다.|  
-|[CMFCTasksPane::SaveState](#savestate)|(재정의 [cdockablepane:: Savestate](https://msdn.microsoft.com/c5c24249-8d0d-46cb-96d9-9f5c6dc191db).)|  
-|[CMFCTasksPane::Serialize](#serialize)|(재정의 [cdockablepane:: Serialize](https://msdn.microsoft.com/09787e59-e446-4e76-894b-206d303dcfd6).)|  
+|[CMFCTasksPane::SaveState](#savestate)|(재정의 [cdockablepane:: Savestate](cdockablepane-class.md).)|  
+|[CMFCTasksPane::Serialize](#serialize)|(재정의 [cdockablepane:: Serialize]().)|  
 |[CMFCTasksPane::SetActivePage](#setactivepage)|작업 창에서 지정된 페이지를 활성화합니다.|  
 |[CMFCTasksPane::SetCaption](#setcaption)|작업 창의 캡션 이름을 설정합니다.|  
 |[CMFCTasksPane::SetGroupCaptionHeight](#setgroupcaptionheight)|그룹 캡션의 높이를 설정합니다.|  
@@ -318,7 +318,7 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::SetTaskName](#settaskname)|작업에 대한 이름을 설정합니다.|  
 |[CMFCTasksPane::SetTasksIconHorzOffset](#settasksiconhorzoffset)||  
 |[CMFCTasksPane::SetTasksIconVertOffset](#settasksiconvertoffset)||  
-|[CMFCTasksPane::SetTaskTextColor](#settasktextcolor)|작업에 대한 텍스트 색을 설정합니다.|  
+|[CMFCTasksPane::SetTaskTextColor](#settasktextcolor)|작업에 대한 텍스트 색을 설정합니다.| 
 |[CMFCTasksPane::SetTasksHorzOffset](#settaskshorzoffset)|해당 부모 그룹의 왼쪽 및 오른쪽 가장자리부터 작업의 가로 오프셋을 설정합니다.|  
 |[CMFCTasksPane::SetVertMargin](#setvertmargin)|작업 창과 클라이언트 영역 가장자리 사이의 세로 간격을 설정합니다.|  
 |[CMFCTasksPane::SetWindowHeight](#setwindowheight)|창의 높이 설정합니다.|  

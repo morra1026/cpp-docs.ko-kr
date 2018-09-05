@@ -1,7 +1,7 @@
 ---
 title: . CREF | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,23 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef70402499b79d4068d5ff54ed2156fd5871c5bc
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 225379a1d28f525823dd22d4e7cef8fa6e06b802
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051509"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684139"
 ---
 # <a name="cref"></a>.CREF
-사용 목록 기호 테이블 및 브라우저 파일의 기호 부분에는 기호입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-.CREF  
-  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+기호 테이블 및 브라우저 파일의 기호 부분에 있는 기호의 수 있도록 목록입니다.
+
+## <a name="syntax"></a>구문
+
+> .CREF
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

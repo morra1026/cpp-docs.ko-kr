@@ -1,7 +1,7 @@
 ---
 title: . 중단 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,22 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ab2f921452d46546bd8ed48b87bf053aaf64dc8
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 4d9521c9771452d435a93248afd0e968e4cce734
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051558"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691968"
 ---
 # <a name="break"></a>.BREAK
-종료 코드를 생성 한 [합니다. 반면](../../assembler/masm/dot-while.md) 또는 [합니다. 반복](../../assembler/masm/dot-repeat.md) 경우 차단 *조건* 그렇습니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-.BREAK [[.IF condition]]   
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+종료 코드를 생성 한 [합니다. 하는 동안](../../assembler/masm/dot-while.md) 또는 [합니다. 반복](../../assembler/masm/dot-repeat.md) 되 면 차단 *조건* 그렇습니다.
+
+## <a name="syntax"></a>구문
+
+> . 중단 [[합니다. IF 조건]]
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

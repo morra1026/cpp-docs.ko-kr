@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: bace26273ea05874efc18ecfa5087d17a6e07055
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6403e9a40adcac5cd9a4dc1a3fbe8a1028d11f99
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43195387"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692807"
 ---
 # <a name="working-with-ole-db-consumer-templates"></a>OLE DB 소비자 템플릿 작업
 다음 항목에서는 일반적인 시나리오에서 OLE DB 소비자 템플릿 사용 방법의 몇 가지 예제를 제공 합니다.  
@@ -62,11 +62,11 @@ ms.locfileid: "43195387"
   
  또한 다음 샘플의 OLE DB 소비자 템플릿 사용 방법의 예제를 찾을 수 있습니다.  
   
--   [CatDB](https://msdn.microsoft.com/003d516b-2bf6-444e-8be5-4ebaa0b66046)  
+-   [CatDB](https://github.com/Microsoft/VCSamples)  
   
--   [DBViewer](https://msdn.microsoft.com/07620f99-c347-4d09-9ebc-2459e8049832)  
+-   [DBViewer](https://github.com/Microsoft/VCSamples)  
   
--   [MultiRead](https://msdn.microsoft.com/21459014-4409-413c-b826-a41f0413be61)  
+-   [MultiRead](https://github.com/Microsoft/VCSamples)  
   
 ## <a name="see-also"></a>참고 항목  
  [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)

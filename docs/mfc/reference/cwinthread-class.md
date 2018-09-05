@@ -60,12 +60,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02bfbe474d30088c887e7a16b6dcea079dfd9821
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 784425246c3be99acde2942633ce5190807c59b4
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43213068"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689560"
 ---
 # <a name="cwinthread-class"></a>CWinThread 클래스
 응용 프로그램 내의 실행 스레드를 나타냅니다.  
@@ -96,7 +96,7 @@ class CWinThread : public CCmdTarget
 |[CWinThread::IsIdleMessage](#isidlemessage)|특별 한 메시지를 확인 합니다.|  
 |[CWinThread::OnIdle](#onidle)|스레드별 유휴 시간 처리를 수행 하려면 재정의 합니다.|  
 |[CWinThread::PostThreadMessage](#postthreadmessage)|다른 메시지를 게시 `CWinThread` 개체입니다.|  
-|[CWinThread::PreTranslateMessage](#pretranslatemessage)|Windows 함수로 디스패치 되기 전에 메시지를 필터링 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934)합니다.|  
+|[CWinThread::PreTranslateMessage](#pretranslatemessage)|Windows 함수로 디스패치 되기 전에 메시지를 필터링 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage)합니다.|  
 |[CWinThread::ProcessMessageFilter](#processmessagefilter)|응용 프로그램에 도달 하기 전에 특정 메시지를 차단 합니다.|  
 |[CWinThread::ProcessWndProcException](#processwndprocexception)|처리 되지 않은 모든 스레드의 메시지 및 명령 처리기에서 throw 된 예외를 가로챕니다.|  
 |[CWinThread::PumpMessage](#pumpmessage)|스레드의 메시지 루프를 포함합니다.|  
@@ -411,7 +411,7 @@ BOOL PostThreadMessage(
 >  Windows를 호출할 때 [PostThreadMessage](https://msdn.microsoft.com/library/windows/desktop/ms644946) 함수 MFC 응용 프로그램에서 MFC 메시지 처리기가 호출 되지 않습니다. 자세한 내용은 기술 자료 문서, "PRB:: MFC 메시지 처리기 하지 호출 된 PostThreadMessage()" (Q142415)을 참조 하세요.  
   
 ##  <a name="pretranslatemessage"></a>  CWinThread::PreTranslateMessage  
- 창 메시지를 필터링 하려면이 함수를 재정의 하 여 Windows 함수로 디스패치 되기 전에 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 하 고 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934)합니다.  
+ 창 메시지를 필터링 하려면이 함수를 재정의 하 여 Windows 함수로 디스패치 되기 전에 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage)합니다.  
   
 ```  
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -520,7 +520,7 @@ virtual int Run();
  **int** 스레드에 의해 반환 되는 값입니다. 이 값을 호출 하 여 검색할 수 있습니다 [GetExitCodeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodethread)합니다.  
   
 ### <a name="remarks"></a>설명  
- `Run` 획득 및 응용 프로그램에서 받을 때까지 Windows 메시지를 디스패치를 [WM_QUIT](/windows/desktop/winmsg/wm-quit) 메시지입니다. 스레드의 메시지 큐에 현재 없는 메시지를 포함 하는 경우 `Run` 호출 `OnIdle` 유휴 시간 처리를 수행 합니다. 들어오는 메시지를 [PreTranslateMessage](#pretranslatemessage) 특수 한 처리 한 다음 Windows 함수에 멤버 함수 [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) 표준 키보드 변환에 대 한 합니다. 마지막으로, 합니다 [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows 함수를 호출 합니다.  
+ `Run` 획득 및 응용 프로그램에서 받을 때까지 Windows 메시지를 디스패치를 [WM_QUIT](/windows/desktop/winmsg/wm-quit) 메시지입니다. 스레드의 메시지 큐에 현재 없는 메시지를 포함 하는 경우 `Run` 호출 `OnIdle` 유휴 시간 처리를 수행 합니다. 들어오는 메시지를 [PreTranslateMessage](#pretranslatemessage) 특수 한 처리 한 다음 Windows 함수에 멤버 함수 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 표준 키보드 변환에 대 한 합니다. 마지막으로, 합니다 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수를 호출 합니다.  
   
  `Run` 대부분 재정의 하지만 특수 동작을 구현 하도록 재정의할 수 있습니다.  
   

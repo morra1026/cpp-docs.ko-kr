@@ -242,12 +242,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41b5a9f936dc47852c766370d330576dc16ca58a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 8c5c2697c22384524234f90a48c396a91b3c3522
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43213664"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678100"
 ---
 # <a name="cmfcribbonbaseelement-class"></a>CMFCRibbonBaseElement 클래스
 합니다 `CMFCRibbonBaseElement` 클래스는 추가할 수 있는 모든 요소에 대 한 기본 클래스를 [리본 표시줄](../../mfc/reference/cmfcribbonbar-class.md)합니다. 리본 요소의 예를 들면 리본 단추, 리본 확인란 및 리본 콤보 상자가 있습니다.  
@@ -921,7 +921,7 @@ virtual CWnd* GetParentWnd() const;
  메서드가 성공 하면 리본 요소에 대 한 부모 창에 대 한 포인터 그렇지 않으면 NULL입니다.  
   
 ### <a name="remarks"></a>설명  
- 리본 요소에 대 한 부모 창에 [CMFCRibbonBar 클래스](../../mfc/reference/cmfcribbonbar-class.md) 또는 [CMFCRibbonPanelMenuBar](https://msdn.microsoft.com/7bd4b986-8b7b-493e-9746-bd3161b78581)합니다.  
+ 리본 요소에 대 한 부모 창에 [CMFCRibbonBar 클래스](../../mfc/reference/cmfcribbonbar-class.md) 또는 [CMFCRibbonPanelMenuBar](internal-classes.md)합니다.  
   
 ##  <a name="getpressed"></a>  CMFCRibbonBaseElement::GetPressed  
  사용자가 현재 누를 경우에 리본 요소에 대 한 포인터를 검색 합니다.  

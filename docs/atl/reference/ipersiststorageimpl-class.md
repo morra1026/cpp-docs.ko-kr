@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08cde95cf7ce680137aa932eb9642b9cd910318a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e7a337743ece9edfa71a052ee9d6e19728b0c051
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43223215"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693718"
 ---
 # <a name="ipersiststorageimpl-class"></a>IPersistStorageImpl 클래스
 이 클래스에서 구현 된 [IPersistStorage](/windows/desktop/api/objidl/nn-objidl-ipersiststorage) 인터페이스입니다.  
@@ -66,7 +66,7 @@ class ATL_NO_VTABLE IPersistStorageImpl : public IPersistStorage
 ## <a name="remarks"></a>설명  
  `IPersistStorageImpl` 구현 된 [IPersistStorage](/windows/desktop/api/objidl/nn-objidl-ipersiststorage) 개체 부하 클라이언트가 요청을 하는 데 사용 하는 인터페이스 및 저장소를 사용 하 여 영구 데이터를 저장 합니다.  
   
- 이 클래스의 구현 클래스에 필요 `T` 를 구현 하기 위해 합니다 `IPersistStreamInit` 인터페이스를 통해 사용할 수 있는 `QueryInterface`합니다. 클래스 즉, 일반적으로 `T` 에서 파생 되어야 [IPersistStreamInitImpl](../../atl/reference/ipersiststreaminitimpl-class.md)에 대 한 진입점을 제공 `IPersistStreamInit` 에 [COM 맵에](https://msdn.microsoft.com/library/ead2a1e3-334d-44ad-bb1f-b94bb14c2333)를 사용 하 여를 [속성 맵에](https://msdn.microsoft.com/library/bfe30be6-62c3-4dc2-bd49-21ef96f15427) 클래스의 영구 데이터를 설명 합니다.  
+ 이 클래스의 구현 클래스에 필요 `T` 를 구현 하기 위해 합니다 `IPersistStreamInit` 인터페이스를 통해 사용할 수 있는 `QueryInterface`합니다. 클래스 즉, 일반적으로 `T` 에서 파생 되어야 [IPersistStreamInitImpl](../../atl/reference/ipersiststreaminitimpl-class.md)에 대 한 진입점을 제공 `IPersistStreamInit` 에 [COM 맵에](com-map-macros.md)를 사용 하 여를 [속성 맵에](property-map-macros.md) 클래스의 영구 데이터를 설명 합니다.  
   
  **관련 문서** [ATL 자습서](../../atl/active-template-library-atl-tutorial.md), [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)  
   

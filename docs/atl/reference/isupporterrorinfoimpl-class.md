@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa9ee25403464a13418081abc8e8e150c7e03500
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b82299db31a7452a05cdfe709221facda09c3615
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217461"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676077"
 ---
 # <a name="isupporterrorinfoimpl-class"></a>ISupportErrorInfoImpl 클래스
 이 클래스의 기본 구현을 제공 합니다 [ISupportErrorInfo 인터페이스](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo) 는 단일 인터페이스만 개체에서 오류를 생성 하는 경우에 사용할 수 있습니다.  
@@ -125,7 +125,7 @@ STDMETHOD(SetSize)int nNumThreads);
   
  하는 경우 *nNumThreads* 가 음수 이면 절대 값에 곱합니다 스레드의 총 개수를 가져올 컴퓨터의 프로세서 수입니다.  
   
- 하는 경우 *nNumThreads* 가 0 이면 [ATLS_DEFAULT_THREADSPERPROC](https://msdn.microsoft.com/library/e0dcf107-72a9-4122-abb4-83c63aa7d571) 스레드의 총 개수를 가져올 컴퓨터의 프로세서 수를 곱한 수 됩니다.  
+ 하는 경우 *nNumThreads* 가 0 이면 ATLS_DEFAULT_THREADSPERPROC 스레드의 총 개수를 가져올 컴퓨터의 프로세서 수를 곱한 수 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  

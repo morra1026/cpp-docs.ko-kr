@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b5fffe1490587e36d39a959f75796093cbc32a0f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a5e5d5ddb831c5d4025e729cb27dd3a9e11b3688
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601996"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194755"
 ---
 # <a name="callas"></a>call_as
 
@@ -43,9 +43,9 @@ ms.locfileid: "42601996"
 
 ## <a name="remarks"></a>설명
 
-합니다 **call_as** c + + 특성에 동일한 기능을 합니다 [call_as](http://msdn.microsoft.com/library/windows/desktop/aa366748) MIDL 특성입니다.
+합니다 **call_as** c + + 특성에 동일한 기능을 합니다 [call_as](/windows/desktop/Midl/call-as) MIDL 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드를 사용 하는 방법을 보여 줍니다 **call_as** 사용 불가능 한 함수에 매핑할 (`f1`) 원격으로 사용 가능한 함수 (`Remf1`):
 

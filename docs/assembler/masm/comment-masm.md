@@ -1,7 +1,7 @@
 ---
 title: 주석 (MASM) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,24 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 417a6da629f030a65c54bffafb08144f182fd58a
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: c4530f938973053d40e1dbdaaefc0829a48329c1
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32049909"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677058"
 ---
 # <a name="comment-masm"></a>COMMENT (MASM)
-모든 처리 *텍스트* 사이 또는 같은 줄을 주석으로 구분 기호로 사용 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-      COMMENT delimiter [[text]]   
-[[text]]   
-[[text]] delimiter [[text]]  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+모든 처리 *텍스트* 사이 또는 같은 줄을 주석으로 구분 합니다.
+
+## <a name="syntax"></a>구문
+
+> 주석 구분 기호 [[텍스트]]<br/>
+> [[텍스트]]<br/>
+> 구분 기호 [[텍스트]] [[텍스트]]
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

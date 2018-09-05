@@ -1,7 +1,7 @@
 ---
 title: FORC | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,27 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e804083069243c333d3ac87dc701ada13afd739f
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: f4a16af6b8af984c887402669469e4ba9ea5ab28
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054473"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685052"
 ---
 # <a name="forc"></a>FORC
-각 문자에 대해 한 번씩 반복 되는 블록 표시 `string`, 현재 문자 대체 된 `parameter` 각 반복 시.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-   FORC  
-parameter, <string> statements  
-ENDM  
-```  
-  
-## <a name="remarks"></a>설명  
- 와 동일 [IRPC](../../assembler/masm/irpc.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+각 문자에 대해 한 번씩 반복 되는 블록 표시 *문자열*를 사용 하 여 현재 문자 대체 *매개 변수* 각 반복에서.
+
+## <a name="syntax"></a>구문
+
+> FORC *매개 변수*하십시오 \< *문자열*><br/>
+> *문*<br/>
+> ENDM
+
+## <a name="remarks"></a>설명
+
+동일 [IRPC](../../assembler/masm/irpc.md)합니다.
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

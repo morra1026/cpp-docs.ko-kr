@@ -206,12 +206,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6de4e448450aa346875bfef5e9455d713258b5d6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 043a046209d5e52439ed61165557cc6596db48e8
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199923"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689323"
 ---
 # <a name="styles-used-by-mfc"></a>MFC에서 사용하는 스타일  
   
@@ -219,7 +219,7 @@ ms.locfileid: "43199923"
   
 ## <a name="button-styles"></a> 단추 스타일  
   
-단추 스타일을 적용할 [CButton 클래스](../../mfc/reference/cbutton-class.md) 라디오 단추 등의 개체 확인란 누름 단추 및 합니다. 스타일의 조합을 지정 합니다 *dwStyle* 의 매개 변수 [CButton::Create](../../mfc/reference/cbutton-class.md#create)합니다. Windows에서 단추 스타일에 대 한 자세한 내용은 참조 하세요. [단추 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775951)합니다.  
+단추 스타일을 적용할 [CButton 클래스](../../mfc/reference/cbutton-class.md) 라디오 단추 등의 개체 확인란 누름 단추 및 합니다. 스타일의 조합을 지정 합니다 *dwStyle* 의 매개 변수 [CButton::Create](../../mfc/reference/cbutton-class.md#create)합니다. Windows에서 단추 스타일에 대 한 자세한 내용은 참조 하세요. [단추 스타일 (Windows)](/windows/desktop/Controls/button-styles)합니다.  
   
 ### <a name="button-types"></a>단추 종류  
   
@@ -288,7 +288,7 @@ ms.locfileid: "43199923"
   
 ## <a name="combo-box-styles"></a>  콤보 상자 스타일  
   
-다음 콤보 상자 스타일을 MFC에서 사용할 수 있습니다. Windows에서 콤보 상자 스타일에 대 한 자세한 내용은 참조 하세요. [콤보 상자 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775796)합니다.  
+다음 콤보 상자 스타일을 MFC에서 사용할 수 있습니다. Windows에서 콤보 상자 스타일에 대 한 자세한 내용은 참조 하세요. [콤보 상자 스타일 (Windows)](/windows/desktop/Controls/combo-box-styles)합니다.  
   
 |스타일|설명|  
 |-----------|-----------------|  
@@ -308,7 +308,7 @@ ms.locfileid: "43199923"
   
 ## <a name="edit-styles"></a>  스타일 편집  
   
-편집 스타일을 적용할 [CEdit 클래스](../../mfc/reference/cedit-class.md) 개체입니다. 스타일의 조합을 지정 합니다 *dwStyle* 의 매개 변수 [CEdit::Create](../../mfc/reference/cedit-class.md#create)합니다. Windows의 편집 컨트롤 스타일에 대 한 자세한 내용은 참조 하세요. [컨트롤 스타일 편집 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775464)합니다.  
+편집 스타일을 적용할 [CEdit 클래스](../../mfc/reference/cedit-class.md) 개체입니다. 스타일의 조합을 지정 합니다 *dwStyle* 의 매개 변수 [CEdit::Create](../../mfc/reference/cedit-class.md#create)합니다. Windows의 편집 컨트롤 스타일에 대 한 자세한 내용은 참조 하세요. [컨트롤 스타일 편집 (Windows)](/windows/desktop/Controls/edit-control-styles)합니다.  
   
 |스타일|설명|  
 |-----------|-----------------|  
@@ -339,7 +339,7 @@ ms.locfileid: "43199923"
   
 ## <a name="list-box-styles"></a> 목록 상자 스타일  
   
-목록 상자 스타일에 적용할 [CListBox 클래스](../../mfc/reference/clistbox-class.md) 개체입니다. 스타일의 조합을 지정 합니다 *dwStyle* 의 매개 변수 [CListBox::Create](../../mfc/reference/clistbox-class.md#create)합니다. Windows에서 목록 상자 스타일에 대 한 자세한 내용은 참조 하세요. [목록 상자 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775149)합니다.  
+목록 상자 스타일에 적용할 [CListBox 클래스](../../mfc/reference/clistbox-class.md) 개체입니다. 스타일의 조합을 지정 합니다 *dwStyle* 의 매개 변수 [CListBox::Create](../../mfc/reference/clistbox-class.md#create)합니다. Windows에서 목록 상자 스타일에 대 한 자세한 내용은 참조 하세요. [목록 상자 스타일 (Windows)](/windows/desktop/Controls/list-box-styles)합니다.  
   
 |스타일|설명|  
 |-----------|-----------------|  
@@ -362,7 +362,7 @@ ms.locfileid: "43199923"
   
 ##<a name="message-box-styles"></a>  메시지 상자 스타일  
   
-메시지 상자 스타일에 적용할 [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) 항목입니다. 스타일의 조합을 지정 합니다 *n 형식* 의 매개 변수 `AfxMessageBox`합니다. Windows 메시지 상자 스타일에 대 한 자세한 내용은 참조 하세요. [MessageBox 함수 (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms645505)합니다.  
+메시지 상자 스타일에 적용할 [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) 항목입니다. 스타일의 조합을 지정 합니다 *n 형식* 의 매개 변수 `AfxMessageBox`합니다. Windows 메시지 상자 스타일에 대 한 자세한 내용은 참조 하세요. [MessageBox 함수 (Windows)](/windows/desktop/api/winuser/nf-winuser-messagebox)합니다.  
   
 다음과 같은 메시지 상자 스타일을 사용할 수 있습니다.  
   
@@ -403,7 +403,7 @@ ms.locfileid: "43199923"
   
 ## <a name="scroll-bar-styles"></a> 스크롤 막대 스타일  
   
-스크롤 막대 스타일을 적용할 [CScrollBar 클래스](../../mfc/reference/cscrollbar-class.md) 개체입니다. 스타일의 조합을 지정 합니다 *dwStyle* 의 매개 변수 [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create)합니다. 스크롤 막대의 Windows에서 컨트롤 스타일에 대 한 자세한 내용은 참조 하세요. [스크롤 막대 컨트롤 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb787533)합니다.  
+스크롤 막대 스타일을 적용할 [CScrollBar 클래스](../../mfc/reference/cscrollbar-class.md) 개체입니다. 스타일의 조합을 지정 합니다 *dwStyle* 의 매개 변수 [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create)합니다. 스크롤 막대의 Windows에서 컨트롤 스타일에 대 한 자세한 내용은 참조 하세요. [스크롤 막대 컨트롤 스타일 (Windows)](/windows/desktop/Controls/scroll-bar-control-styles)합니다.  
   
 |스타일|설명|  
 |-----------|-----------------|  
@@ -420,7 +420,7 @@ ms.locfileid: "43199923"
   
 ## <a name="static-styles"></a> 정적 스타일  
   
-정적 스타일을 적용할 [CStatic 클래스](../../mfc/reference/cstatic-class.md) 개체입니다. 스타일의 조합을 지정 합니다 *dwStyle* 의 매개 변수 [CStatic::Create](../../mfc/reference/cstatic-class.md#create)합니다. Windows에서 정적 컨트롤 스타일에 대 한 자세한 내용은 참조 하세요. [정적 컨트롤 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb760773)합니다.  
+정적 스타일을 적용할 [CStatic 클래스](../../mfc/reference/cstatic-class.md) 개체입니다. 스타일의 조합을 지정 합니다 *dwStyle* 의 매개 변수 [CStatic::Create](../../mfc/reference/cstatic-class.md#create)합니다. Windows에서 정적 컨트롤 스타일에 대 한 자세한 내용은 참조 하세요. [정적 컨트롤 스타일 (Windows)](/windows/desktop/Controls/static-control-styles)합니다.  
   
 |스타일|설명|  
 |-----------|-----------------|  
@@ -488,7 +488,7 @@ ms.locfileid: "43199923"
   
 ## <a name="extended-window-styles"></a> 확장된 창 스타일  
   
-확장된 창 스타일을 적용할 [CWnd 클래스](../../mfc/reference/cwnd-class.md) 개체입니다. 스타일의 조합을 지정 합니다 *dwExStyle* 의 매개 변수 [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex)합니다. Windows에서 확장된 창 스타일에 대 한 자세한 내용은 참조 하세요. [확장 창 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/ff700543)합니다.  
+확장된 창 스타일을 적용할 [CWnd 클래스](../../mfc/reference/cwnd-class.md) 개체입니다. 스타일의 조합을 지정 합니다 *dwExStyle* 의 매개 변수 [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex)합니다. Windows에서 확장된 창 스타일에 대 한 자세한 내용은 참조 하세요. [확장 창 스타일 (Windows)](/windows/desktop/winmsg/extended-window-styles)합니다.  
   
 |스타일|설명|  
 |-----------|-----------------|  
@@ -524,14 +524,14 @@ ms.locfileid: "43199923"
 [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create)  
 [CStatic::Create](../../mfc/reference/cstatic-class.md#create)  
 [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox)  
-[CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679)  
-[CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680)  
-[단추 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775951)  
-[콤보 상자 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775796)  
-[편집 컨트롤 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775464)  
-[목록 상자 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775149) 
-[MessageBox 함수 (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms645505) 
-[스크롤 막대 컨트롤 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb787533)  
-[정적 컨트롤 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb760773)  
+[CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa)  
+[CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa)  
+[단추 스타일 (Windows)](/windows/desktop/Controls/button-styles)  
+[콤보 상자 스타일 (Windows)](/windows/desktop/Controls/combo-box-styles)  
+[편집 컨트롤 스타일 (Windows)](/windows/desktop/Controls/edit-control-styles)  
+[목록 상자 스타일 (Windows)](/windows/desktop/Controls/list-box-styles) 
+[MessageBox 함수 (Windows)](/windows/desktop/api/winuser/nf-winuser-messagebox) 
+[스크롤 막대 컨트롤 스타일 (Windows)](/windows/desktop/Controls/scroll-bar-control-styles)  
+[정적 컨트롤 스타일 (Windows)](/windows/desktop/Controls/static-control-styles)  
 [창 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms632600)  
-[확장된 창 스타일 (Windows)](https://msdn.microsoft.com/library/windows/desktop/ff700543)  
+[확장된 창 스타일 (Windows)](/windows/desktop/winmsg/extended-window-styles)  

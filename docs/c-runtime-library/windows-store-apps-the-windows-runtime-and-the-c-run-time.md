@@ -12,16 +12,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 29e1a67ce57e4ddf726ba64923bbe5a95b5b2f1c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 78f76b6f61eb5d8e7370e61e9cc1f466bdfb4c43
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410842"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42592721"
 ---
 # <a name="uwp-apps-the-windows-runtime-and-the-c-run-time"></a>UWP 앱, Windows 런타임 및 C 런타임
 
-UWP(유니버설 Windows 플랫폼) 앱은 [!INCLUDE[win8](../build/reference/includes/win8_md.md)]에서 실행되는 Windows 런타임에서 실행하는 프로그램입니다. Windows 런타임은 UWP 앱에서 사용할 수 있는 함수, 변수 및 리소스를 제어하는 신뢰할 수 있는 환경입니다. 그러나 기본적으로 Windows 런타임 제한 때문에 UWP 앱에서 대부분의 CRT(C 런타임 라이브러리) 기능을 사용할 수 없습니다.
+UWP(유니버설 Windows 플랫폼) 앱은 Windows 8에서 실행되는 Windows 런타임에서 실행하는 프로그램입니다. Windows 런타임은 UWP 앱에서 사용할 수 있는 함수, 변수 및 리소스를 제어하는 신뢰할 수 있는 환경입니다. 그러나 기본적으로 Windows 런타임 제한 때문에 UWP 앱에서 대부분의 CRT(C 런타임 라이브러리) 기능을 사용할 수 없습니다.
 
 Windows 런타임에서는 다음 CRT 기능을 지원하지 않습니다.
 

@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b651f4117cae6d3b4ed72d22ace5194e5d24446
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 4f6a71770afdb541efa76f85464d9aeef7b2fb91
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957674"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681010"
 ---
 # <a name="weibulldistribution-class"></a>weibull_distribution 클래스
 
@@ -103,9 +103,9 @@ class weibull_distribution
 
 분포 클래스 및 이러한 클래스의 구성원에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
 
-와이블 분포에 대한 자세한 내용은 Wolfram MathWorld 문서 [와이블 분포](http://go.microsoft.com/fwlink/p/?linkid=401115)를 참조하세요.
+와이블 분포에 대한 자세한 내용은 Wolfram MathWorld 문서 [와이블 분포](http://mathworld.wolfram.com/WeibullDistribution.html)를 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // compile with: /EHsc /W4

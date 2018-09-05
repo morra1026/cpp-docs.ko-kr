@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8530a3c896d5c1dfa6568e166b9a0a43c0f0b0fc
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 8abccf48219b70040ce728ba0dff9fa02b57bfc0
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43208089"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688467"
 ---
 # <a name="operator-type"></a>연산자 Type^
 변환할 수 있습니다 [Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) 에 `Platform::Type`입니다.  
@@ -49,7 +49,7 @@ Type^ tx2 = (Type^)(tn);
 ```  
   
 ## <a name="net-framework-equivalent"></a>.NET Framework의 해당 값  
- .NET Framework는 `TypeName` 프로젝트를 [System.Type](assetId:///System.Type?qualifyHint=False&autoUpgrade=True)으로 변환할 수 있습니다.  
+ .NET framework 프로젝트 `TypeName` 으로 <xref:System.Type>
   
 ### <a name="requirements"></a>요구 사항  
   

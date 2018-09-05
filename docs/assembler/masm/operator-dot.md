@@ -1,7 +1,7 @@
 ---
-title: 점 연산자 | Microsoft Docs
+title: 연산자 점 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,24 +18,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84eb11751d82b72b903a8dfa8196292b001646f5
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 8481d13472e41b94592d981622b5f9fd8551090b
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32058165"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689342"
 ---
 # <a name="operator-"></a>연산자 .
-첫 번째 연산자는 반환 *식* 의 오프셋 더하기 *필드* 해당 구조체 또는 공용 구조체 내에서. 가 가리키는 위치에 값을 반환 하는 두 번째 연산자 *등록* 의 오프셋 더하기 *필드* 해당 구조체 또는 공용 구조체 내에서.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-      expression  
-      . field [[. field]]...  
-[register]. field [[. field]]...  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [연산자 참조](../../assembler/masm/operators-reference.md)
+
+첫 번째 연산자 *식을* 의 오프셋을 더한 *필드* 해당 구조체 또는 공용 구조체 내에서. 두 번째 연산자에서 가리키는 위치에서 값 반환 *등록* 의 오프셋을 더한 *필드* 해당 구조체 또는 공용 구조체 내에서.
+
+## <a name="syntax"></a>구문
+
+> *식*<br/> . *필드* [[합니다. *필드*]]...
+
+> [*등록*]. *필드* [[합니다. *필드*]]...
+
+## <a name="see-also"></a>참고자료
+
+[연산자 참조](../../assembler/masm/operators-reference.md)<br/>

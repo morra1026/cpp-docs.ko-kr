@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b144e08e0f87165c284310afc86267f67b1c124
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 5f23e46f2ef8de61e6dccc16a24e8c4bcfaa8f2e
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222056"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677086"
 ---
 # <a name="ithreadpoolconfig-interface"></a>IThreadPoolConfig 인터페이스
 이 인터페이스는 스레드 풀을 구성 하기 위한 메서드를 제공 합니다.  
@@ -105,7 +105,7 @@ STDMETHOD(SetSize)int nNumThreads);
   
  하는 경우 *nNumThreads* 가 음수 이면 절대 값에 곱합니다 스레드의 총 개수를 가져올 컴퓨터의 프로세서 수입니다.  
   
- 하는 경우 *nNumThreads* 가 0 이면 [ATLS_DEFAULT_THREADSPERPROC](https://msdn.microsoft.com/library/e0dcf107-72a9-4122-abb4-83c63aa7d571) 스레드의 총 개수를 가져올 컴퓨터의 프로세서 수를 곱한 수 됩니다.  
+ 하는 경우 *nNumThreads* 가 0 이면 ATLS_DEFAULT_THREADSPERPROC 스레드의 총 개수를 가져올 컴퓨터의 프로세서 수를 곱한 수 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.  

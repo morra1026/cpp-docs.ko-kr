@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 693a0e63e5fe67b1a3837ae71945ccc60b5fb247
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 475a4f4d5f39f7fdfa569441fb2cb0fc72b745a0
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204345"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677884"
 ---
 # <a name="ccomcoclass-class"></a>CComCoClass 클래스
 이 클래스는 클래스의 인스턴스를 만들고 해당 속성을 가져오는 메서드를 제공 합니다.  
@@ -58,7 +58,7 @@ class CComCoClass
 |[CComCoClass::GetObjectDescription](#getobjectdescription)|(정적) 개체의 설명을 반환 하려면 재정의 합니다.|  
   
 ## <a name="remarks"></a>설명  
- `CComCoClass` 개체의 CLSID를 검색, 오류 정보를 설정 하 고, 클래스의 인스턴스를 만드는 메서드를 제공 합니다. 모든 클래스에 등록 합니다 [개체 맵의](https://msdn.microsoft.com/b57619cc-534f-4b8f-bfd4-0c12f937202f) 에서 파생 되는 `CComCoClass`합니다.  
+ `CComCoClass` 개체의 CLSID를 검색, 오류 정보를 설정 하 고, 클래스의 인스턴스를 만드는 메서드를 제공 합니다. 개체 맵의에 등록 된 모든 클래스에서 파생 되는 `CComCoClass`합니다.  
   
  `CComCoClass` 또한 개체에 대 한 기본 클래스 팩터리 및 집계 모델을 정의합니다. `CComCoClass` 다음 두 매크로 사용합니다.  
   

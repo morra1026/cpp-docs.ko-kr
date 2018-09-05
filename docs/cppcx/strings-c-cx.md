@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1c75c8821a04c0270a79800e77cd4b57bf49c00
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e427d6469df3a3b82f25a26a0f9ce70642b8514c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202350"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679554"
 ---
 # <a name="strings-ccx"></a>문자열(C++/CX)
 C + Windows 런타임에서 텍스트가 표시 됩니다 +에서 CX 합니다 [platform:: string 클래스](../cppcx/platform-string-class.md)합니다. 사용 된 `Platform::String Class` 때나 상호 작용 하는 다른 Windows 런타임 구성 요소를 사용 하 여 응용 프로그램 이진 인터페이스 (ABI) 경계를 넘어 Windows 런타임 클래스의 메서드에 문자열 앞뒤로 전달 하는 경우. `Platform::String Class` 는 몇 가지 일반적인 문자열 작업에 대한 메서드를 제공하지만 완전한 기능의 문자열 클래스로 설계되지 않았습니다. C++ 모듈에서는 중요한 텍스트 처리에 [wstring](../standard-library/basic-string-class.md) 과 같은 표준 C++ 문자열 형식을 사용한 다음 최종 결과를 공용 인터페이스로 전달하거나 공용 인터페이스로부터 전달받기 전에 [Platform::String^](../cppcx/platform-string-class.md) 으로 변환합니다. `wstring` 또는 `wchar_t*` 와 `Platform::String`간의 변환은 쉽고 효율적입니다.  
@@ -75,5 +75,3 @@ void GetDecodedStrings(std::vector<std::wstring> strings)
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [기본 제공 형식](https://msdn.microsoft.com/acc196fd-09da-4882-b554-6c94685ec75f)

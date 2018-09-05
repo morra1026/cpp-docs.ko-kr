@@ -1,7 +1,7 @@
 ---
-title: (MASM)에 대 한 | Microsoft Docs
+title: FOR (MASM) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,28 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ca67b886a0fd134b4d861a516b6726dae156c3b
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: dd349a38b1de317a01f07fdcf1ba1915f6d32a42
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051945"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681117"
 ---
 # <a name="for-masm"></a>FOR (MASM)
-각각에 대해 한 번씩 반복 되는 블록 표시 `argument`, 현재의 `argument` 교체 `parameter` 각 반복 시.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-   FOR   
-   parameter [[:REQ | :=default]] , <argument [[, argument]]...>  
-statements  
-ENDM  
-```  
-  
-## <a name="remarks"></a>설명  
- 와 동일 [IRP](../../assembler/masm/irp.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)
+
+각각에 대해 한 번씩 반복 되는 블록 표시 *인수*, 현재 *인수* 교체 *매개 변수* 각 반복에서.
+
+## <a name="syntax"></a>구문
+
+> 에 대 한 *매개 변수* [[: 요청 |: =*기본값*]]를 \< *인수* [[를 *인수*]]... ><br/>
+> *문*<br/>
+> ENDM
+
+## <a name="remarks"></a>설명
+
+동일 [IRP](../../assembler/masm/irp.md)합니다.
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>

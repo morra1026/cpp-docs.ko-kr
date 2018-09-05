@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b962db5477294ad36997208f59265a284680fac5
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5e37a3a934fbc66af62a30fd2fc2c23e1c659ef2
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604942"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692100"
 ---
 # <a name="string--c-component-extensions"></a>문자열(C++ 구성 요소 확장)
 
@@ -45,10 +45,6 @@ using namespace default;
    String^ MyString2 = "jumped over the lazy dog.";
    String^ MyString3 = "Hello, world!";
 ```
-
-### <a name="remarks"></a>설명
-
-자세한 내용 및 문자열에 대 한 예제를 참조 하세요. [platform:: string, std:: wstring, 및 리터럴 (플랫폼)](http://msdn.microsoft.com/ec92fbc6-edf3-4137-a85e-8e29bdb857a8)
 
 ### <a name="requirements"></a>요구 사항
 

@@ -34,12 +34,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f95169f62fa2eaf9c562bff463ad84c0827db9a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6b6d8d53ea3b7331de08ea2aa2a00e5fdfb106c8
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394424"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684325"
 ---
 # <a name="chdrive"></a>_chdrive
 
@@ -67,15 +67,15 @@ int _chdrive(
 
 ## <a name="remarks"></a>설명
 
-경우 *드라이브* 은 1부터 26 까지의 범위에서 벗어난 잘못 된 매개 변수 처리기가에 설명 된 대로 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 하는 경우는 **_chdrive** 함수가-1 반환 **errno** 로 설정 된 **EACCES**, 및 **_doserrno** 로설정되어 **ERROR_INVALID_DRIVE**합니다.
+하는 경우 *드라이브* 는 1부터 26 까지의 범위에 없는 잘못 된 매개 변수 처리기가에 설명 된 대로 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우는 **_chdrive** 함수가-1 반환 **errno** 로 설정 되어 **EACCES**, 및 **_doserrno** 로설정되어 **ERROR_INVALID_DRIVE**합니다.
 
-**_chdrive** 함수는 그 자체가 스레드로부터 안전하지 않은 **SetCurrentDirectory** 함수에 종속되므로 스레드로부터 안전하지 않습니다. 다중 스레드 응용 프로그램에서 **_chdrive**를 안전하게 사용하려면 고유한 스레드 동기화를 제공해야 합니다. 자세한 내용을 보려면 [MSDN 라이브러리](http://go.microsoft.com/fwlink/p/?linkid=150542)로 이동한 후 **SetCurrentDirectory**를 검색하세요.
+**_chdrive** 함수는 그 자체가 스레드로부터 안전하지 않은 **SetCurrentDirectory** 함수에 종속되므로 스레드로부터 안전하지 않습니다. 다중 스레드 응용 프로그램에서 **_chdrive**를 안전하게 사용하려면 고유한 스레드 동기화를 제공해야 합니다. 자세한 내용은 [SetCurrentDirectory](/windows/desktop/api/winbase/nf-winbase-setcurrentdirectory)합니다.
 
 **_chdrive** 함수는 현재 작업 드라이브만 변경합니다. **_chdir** 함수는 현재 작업 디렉터리를 변경합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_chdrive**|\<direct.h>|
 

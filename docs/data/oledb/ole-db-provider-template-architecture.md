@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: bc18599129ce5a17b3be4242eab11861213233fc
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ebebb7f69239b62cf276e955fd6e54ef0cf37ea4
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43210600"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684292"
 ---
 # <a name="ole-db-provider-template-architecture"></a>OLE DB 공급자 템플릿 구조
 ## <a name="data-sources-and-sessions"></a>데이터 소스 및 세션  
@@ -54,7 +54,7 @@ ms.locfileid: "43210600"
 |[데이터 원본](../../data/oledb/data-source-object-interfaces.md) ([CDataSource](../../data/oledb/cdatasource-class.md))|[필수] `IDBCreateSession`<br /><br /> [필수] `IDBInitialize`<br /><br /> [필수] `IDBProperties`<br /><br /> [필수] `IPersist`<br /><br /> [선택 사항] `IConnectionPointContainer`<br /><br /> [선택 사항] `IDBAsynchStatus`<br /><br /> [선택 사항] `IDBDataSourceAdmin`<br /><br /> [선택 사항] `IDBInfo`<br /><br /> [선택 사항] `IPersistFile`<br /><br /> [선택 사항] `ISupportErrorInfo`|연결에서 소비자 공급자입니다. 개체 속성을 지정 하려면 사용자 ID, 암호 및 데이터 원본 이름과 같은 연결에서 사용 됩니다. 개체 데이터 원본 관리를 사용할 수도 있습니다 (만들기, 업데이트, 삭제, 테이블 및 등).|  
 |[세션](../../data/oledb/session-object-interfaces.md) ([CSession](../../data/oledb/cdataconnection-operator-csession-amp.md))|[필수] `IGetDataSource`<br /><br /> [필수] `IOpenRowset`<br /><br /> [필수] `ISessionProperties`<br /><br /> [선택 사항] `IAlterIndex`<br /><br /> [선택 사항] `IAlterTable`<br /><br /> [선택 사항] `IBindResource`<br /><br /> [선택 사항] `ICreateRow`<br /><br /> [선택 사항] `IDBCreateCommand`<br /><br /> [선택 사항] `IDBSchemaRowset`<br /><br /> [선택 사항] `IIndexDefinition`<br /><br /> [선택 사항] `ISupportErrorInfo`<br /><br /> [선택 사항] `ITableCreation`<br /><br /> [선택 사항] `ITableDefinition`<br /><br /> [선택 사항] `ITableDefinitionWithConstraints`<br /><br /> [선택 사항] `ITransaction`<br /><br /> [선택 사항] `ITransactionJoin`<br /><br /> [선택 사항] `ITransactionLocal`<br /><br /> [선택 사항] `ITransactionObject`|세션 개체는 소비자와 공급자 간의 단일 대화를 나타냅니다. ODBC와 비슷한 것 `HSTMT` 는 여러 동시 세션이 활성화 될 수 있습니다.<br /><br /> 세션 개체는 OLE DB 기능 페이지로 이동 하는 기본 연결 합니다. 명령, 트랜잭션 또는 행 집합 개체를 이동 하려면 세션 개체를 통해 이동 합니다.|  
 |[행 집합](../../data/oledb/rowset-object-interfaces.md) ([CRowset](../../data/oledb/crowset-class.md))|[필수] `IAccessor`<br /><br /> [필수] `IColumnsInfo`<br /><br /> [필수] `IConvertType`<br /><br /> [필수] `IRowset`<br /><br /> [필수] `IRowsetInfo`<br /><br /> [선택 사항] `IChapteredRowset`<br /><br /> [선택 사항] `IColumnsInfo2`<br /><br /> [선택 사항] `IColumnsRowset`<br /><br /> [선택 사항] `IConnectionPointContainer`<br /><br /> [선택 사항] `IDBAsynchStatus`<br /><br /> [선택 사항] `IGetRow`<br /><br /> [선택 사항] `IRowsetChange`<br /><br /> [선택 사항] `IRowsetChapterMember`<br /><br /> [선택 사항] `IRowsetCurrentIndex`<br /><br /> [선택 사항] `IRowsetFind`<br /><br /> [선택 사항] `IRowsetIdentity`<br /><br /> [선택 사항] `IRowsetIndex`<br /><br /> [선택 사항] `IRowsetLocate`<br /><br /> [선택 사항] `IRowsetRefresh`<br /><br /> [선택 사항] `IRowsetScroll`<br /><br /> [선택 사항] `IRowsetUpdate`<br /><br /> [선택 사항] `IRowsetView`<br /><br /> [선택 사항] `ISupportErrorInfo`<br /><br /> [선택 사항] `IRowsetBookmark`|행 집합 개체는 데이터 원본에서 데이터를 나타냅니다. 개체는 데이터 및 데이터에 대해 기본 작업 (업데이트, fetch, 이동 및 기타)의 바인딩을 담당합니다. 항상 행 집합 개체를 포함 하 고 데이터를 조작 해야 합니다.|  
-|[명령](../../data/oledb/command-object-interfaces.md) ([CCommand](https://msdn.microsoft.com/52bef5da-c1a0-4223-b4e6-9e464b6db409))|[필수] `IAccessor`<br /><br /> [필수] `IColumnsInfo`<br /><br /> [필수] `ICommand`<br /><br /> [필수] `ICommandProperties`<br /><br /> [필수] `ICommandText`<br /><br /> [필수] `IConvertType`<br /><br /> [선택 사항] `IColumnsRowset`<br /><br /> [선택 사항] `ICommandPersist`<br /><br /> [선택 사항] `ICommandPrepare`<br /><br /> [선택 사항] `ICommandWithParameters`<br /><br /> [선택 사항] `ISupportErrorInfo`<br /><br /> [선택 사항] `ICommandStream`|명령 개체 쿼리와 같은 데이터에 대 한 작업을 처리합니다. 매개 변수가 있거나 매개 변수가 없는 문을 처리할 수 있습니다.<br /><br /> 명령 개체 매개 변수 및 출력 열에 대 한 바인딩을 처리를 담당 이기도 합니다. 바인딩에 행 집합에서 열을 검색 해야 하는 방법에 대 한 정보를 포함 하는 구조입니다. 서 수, 데이터 형식, 길이 및 상태와 같은 정보를 포함합니다.|  
+|[명령](../../data/oledb/command-object-interfaces.md) ([CCommand](ccommand-class.md))|[필수] `IAccessor`<br /><br /> [필수] `IColumnsInfo`<br /><br /> [필수] `ICommand`<br /><br /> [필수] `ICommandProperties`<br /><br /> [필수] `ICommandText`<br /><br /> [필수] `IConvertType`<br /><br /> [선택 사항] `IColumnsRowset`<br /><br /> [선택 사항] `ICommandPersist`<br /><br /> [선택 사항] `ICommandPrepare`<br /><br /> [선택 사항] `ICommandWithParameters`<br /><br /> [선택 사항] `ISupportErrorInfo`<br /><br /> [선택 사항] `ICommandStream`|명령 개체 쿼리와 같은 데이터에 대 한 작업을 처리합니다. 매개 변수가 있거나 매개 변수가 없는 문을 처리할 수 있습니다.<br /><br /> 명령 개체 매개 변수 및 출력 열에 대 한 바인딩을 처리를 담당 이기도 합니다. 바인딩에 행 집합에서 열을 검색 해야 하는 방법에 대 한 정보를 포함 하는 구조입니다. 서 수, 데이터 형식, 길이 및 상태와 같은 정보를 포함합니다.|  
 |[트랜잭션](../../data/oledb/transaction-object-interfaces.md) (선택 사항)|[필수] `IConnectionPointContainer`<br /><br /> [필수] `ITransaction`<br /><br /> [선택 사항] `ISupportErrorInfo`|트랜잭션 개체를 데이터 원본에서 작업의 원자 단위를 정의 하 고 이러한 작업 단위가 서로 관계를 결정 합니다. 이 개체는 OLE DB 공급자 템플릿에 의해 직접 지원 되지 않습니다 (즉, 사용자 고유의 개체 만듭니다).|  
   
  자세한 내용은 다음 항목을 참조하세요.  

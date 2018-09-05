@@ -29,12 +29,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a143badef2aec500b12d176e10c0a5eaf06b2cf4
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: a9897be9bbcae0a03ef67996bda6f3ffbe894b8f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339365"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43680454"
 ---
 # <a name="simplifying-data-access-with-database-attributes"></a>데이터베이스 특성을 사용하여 데이터 액세스 단순화
 이 항목에서는 데이터베이스 작업을 간소화 하기 위해 데이터베이스 특성을 사용 하는 방법을 보여 줍니다.  
@@ -208,4 +208,3 @@ HRESULT hr = Open(m_session, "Authors", pPropSet);
   
 ## <a name="see-also"></a>참고 항목  
  [OLE DB 소비자 특성](../../windows/ole-db-consumer-attributes.md)   
- [특성 연습](http://msdn.microsoft.com/73df1d5d-261a-4521-98fb-06dcbf5ec0d0)

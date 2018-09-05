@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ed19dd2a1b62a3682d96f8c9a596fa6a4b1b377
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 715fcc37c41251b0a42fd6508f8a358758105a1f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209435"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43680197"
 ---
 # <a name="tiledindex-class"></a>tiled_index 클래스
 인덱스를 제공 된 [tiled_extent](tiled-extent-class.md) 개체입니다. 이 클래스는 로컬 타일 원본에 상대적인 및 전역 원본과 요소에 액세스 하는 속성에 있습니다. 바둑판식된 공간에 대 한 자세한 내용은 참조 하세요. [를 사용 하 여 타일](../../../parallel/amp/using-tiles.md)합니다.  
@@ -94,7 +94,7 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
 |----------|-----------------|  
 |[barrier 상수](#tiled_index__barrier)|저장소를 [tile_barrier](tile-barrier-class.md) 스레드의 현재 타일에 장애물을 나타내는 개체입니다.|  
 |||  
-|[전역 상수](#tiled_index__global)|저장소를 [인덱스](index-class.md) 의 인덱스를 전역를 나타내는 차수 1, 2 또는 3의 개체를 [그리드](https://msdn.microsoft.com/f7d1b6a6-586c-4345-b09a-bfc26c492cb0) 개체입니다.|  
+|[전역 상수](#tiled_index__global)|저장소를 [인덱스](index-class.md) 모눈 개체의 전역 인덱스를 나타내는 차수 1, 2 또는 3의 개체입니다.|  
 |[지역 상수](#tiled_index__local)|저장소를 `index` 의 현재 타일의 상대를 나타내는 차수 1, 2 또는 3 인덱스의 개체를 [tiled_extent](tiled-extent-class.md) 개체입니다.|  
 |[rank 상수](#tiled_index__rank)|차수를 저장 합니다 `tiled_index` 개체입니다.|  
 |[tile 상수](#tiled_index__tile)|저장소를 `index` 차수 1, 2 또는 3의 현재 타일의 좌표를 나타내는 개체를 `tiled_extent` 개체입니다.|  
@@ -162,7 +162,7 @@ tiled_index(
   
 |||  
 |-|-|  
-|name|설명|  
+|이름|설명|  
 |`tiled_index(const index<rank>& _Global, const index<rank>& _Local, const index<rank>& _Tile, const index<rank>& _Tile_origin, const tile_barrier& _Barrier restrict(amp,cpu);`|새 인스턴스를 초기화 합니다 `tile_index` 전역 좌표의 타일 및 로컬 좌표의 타일의 상대 위치를 인덱스에서 클래스입니다. 합니다 `_Global` 고 `_Tile_origin` 매개 변수에서 계산 됩니다.|  
 |`tiled_index(    const tiled_index& _Other) restrict(amp,cpu);`|새 인스턴스를 초기화 합니다 `tile_index` 지정 된 복사 하 여 클래스 `tiled_index` 개체입니다.|  
 

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b41646dbde21f68c2cc23dfbcf977d9f5ad06c1e
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: ce106727fac6b3b9903a53fae64bee94441aa038
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39467841"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685078"
 ---
 # <a name="safebuffers"></a>safebuffer
 **Microsoft 전용**  
@@ -36,7 +36,7 @@ __declspec( safebuffers )
 ```  
   
 ## <a name="remarks"></a>설명  
- 합니다 **/GS** 컴파일러 옵션을 컴파일러 스택에 보안 검사를 삽입 하 여 버퍼 오버런에 대 한 테스트에 사용 하면 됩니다. 보안 검사에 사용할 수 있는 데이터 구조의 형식에 나와 [/GS (버퍼 보안 검사)](../build/reference/gs-buffer-security-check.md)합니다. 버퍼 오버런 탐지에 대 한 자세한 내용은 참조 하세요. [컴파일러 보안 심층 검사](http://go.microsoft.com/fwlink/p/?linkid=7260) MSDN 웹 사이트입니다.  
+ 합니다 **/GS** 컴파일러 옵션을 컴파일러 스택에 보안 검사를 삽입 하 여 버퍼 오버런에 대 한 테스트에 사용 하면 됩니다. 보안 검사에 사용할 수 있는 데이터 구조의 형식에 나와 [/GS (버퍼 보안 검사)](../build/reference/gs-buffer-security-check.md)합니다. 버퍼 오버런 탐지에 대 한 자세한 내용은 참조 하세요. [MSVC의 보안 기능](https://blogs.msdn.microsoft.com/vcblog/2017/06/28/security-features-in-microsoft-visual-c/)합니다.  
   
  전문가 수동 코드 검토 또는 외부 분석이 함수가 버퍼 오버런으로부터 안전한지 확인할 수 있습니다. 이런 경우 적용 하 여 함수에 대 한 보안 검사를 무시할 수 있습니다 합니다 **__declspec (safebuffers)** 함수 선언에는 키워드입니다.  
   
@@ -52,7 +52,7 @@ __declspec( safebuffers )
   
 -   보안 검사에 대 한 적합 한 보조 함수 이기 때문에 보안 검사에도 적용 됩니다 기본 함수를 지정 하는 경우에 합니다 **__declspec (safebuffers)** 키워드입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드에서는 사용 하 여 **__declspec (safebuffers)** 키워드입니다.  
   
 ```cpp 

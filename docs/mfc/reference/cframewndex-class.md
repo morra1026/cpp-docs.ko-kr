@@ -188,12 +188,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50bb4061a13a9057a695b25ca32421c4dd7ed88b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2854199796f5d75cc4b24016def3c63327a5d511
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43207826"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692044"
 ---
 # <a name="cframewndex-class"></a>CFrameWndEx 클래스
 겹쳐진 Windows SDI(단일 문서 인터페이스) 또는 팝업 프레임 창의 기능을 구현하고 창 관리를 위한 멤버를 제공합니다. 확장 된 [CFrameWnd](../../mfc/reference/cframewnd-class.md) 클래스입니다.  
@@ -1442,7 +1442,7 @@ afx_msg LRESULT OnSetText(
  창에 대 한 텍스트에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 에 대 한 호출에서 값 반환 [DefWindowProc](https://msdn.microsoft.com/library/windows/desktop/ms633572)합니다.  
+ 에 대 한 호출에서 값 반환 [DefWindowProc](/windows/desktop/api/winuser/nf-winuser-defwindowproca)합니다.  
   
 ### <a name="remarks"></a>설명  
   

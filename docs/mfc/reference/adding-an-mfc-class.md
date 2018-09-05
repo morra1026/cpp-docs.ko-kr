@@ -17,15 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c865fdce61af5b5bbce6e8b8b8658946ffbf5e48
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 39d6d1a1efc6f19662f9d809e3a353f61823a680
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204301"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682813"
 ---
 # <a name="adding-an-mfc-class"></a>MFC 클래스 추가
-프로젝트에 Microsoft Foundation 클래스 (MFC) 라이브러리 클래스에서 파생 된 클래스에 추가 하려면 사용 합니다 **클래스 추가** 명령에서 사용할 수 있습니다 [클래스 뷰](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925)합니다. 새 클래스의 이름을 지정 하 고 기본 클래스를 선택한 ID와 해당 관련 된 (있는 경우) 대화 상자를 선택 합니다. 코드 마법사 헤더 파일과 구현 파일을 만들고 프로젝트에 추가 합니다.  
+프로젝트에 Microsoft Foundation 클래스 (MFC) 라이브러리 클래스에서 파생 된 클래스에 추가 하려면 사용 합니다 **클래스 추가** 명령에서 사용할 수 있습니다 [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)합니다. 새 클래스의 이름을 지정 하 고 기본 클래스를 선택한 ID와 해당 관련 된 (있는 경우) 대화 상자를 선택 합니다. 코드 마법사 헤더 파일과 구현 파일을 만들고 프로젝트에 추가 합니다.  
   
 > [!NOTE]
 >  경우 ATL COM 응용 프로그램에는 MFC 클래스를 추가할 수 있습니다 처음 [MFC 지원을 통해 응용 프로그램을 만들](../../atl/reference/mfc-support-in-atl-projects.md)합니다. 또한 MFC를 지 원하는 Win32 프로젝트에 MFC 클래스를 추가할 수 있습니다.  

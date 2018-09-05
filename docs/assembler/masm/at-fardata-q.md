@@ -1,7 +1,7 @@
 ---
 title: '@fardata? | Microsoft 문서'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,23 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 751e8aec6eeb23c5ad8823052b00c8da5871517b
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 5f1663990a6534f38765d0f4e2eb0e89c0b95ccd
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32049507"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688661"
 ---
 # <a name="fardata"></a>@fardata?
-에 정의 된 세그먼트의 이름에서 [합니다. FARDATA? ](../../assembler/masm/dot-fardata-q.md) 지시문 (텍스트 매크로).  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-@fardata?  
-  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [기호 참조](../../assembler/masm/symbols-reference.md)
+
+정의한 세그먼트의 이름을 합니다 [합니다. FARDATA? ](../../assembler/masm/dot-fardata-q.md) 지시문 (text 매크로).
+
+## <a name="syntax"></a>구문
+
+> @fardata?
+
+## <a name="see-also"></a>참고자료
+
+[기호 참조](../../assembler/masm/symbols-reference.md)<br/>

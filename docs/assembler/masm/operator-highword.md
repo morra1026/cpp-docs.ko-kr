@@ -1,7 +1,7 @@
 ---
 title: 연산자 HIGHWORD | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,22 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab4c0904d3c7ad8156ae8e978bcfc73a236b949e
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 5810ee5751d4f4ea4101bef3e294921f1f0078e3
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057866"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677536"
 ---
 # <a name="operator-highword"></a>연산자 HIGHWORD
-하위 32 비트의 상위 16 비트 반환 *식*합니다. MASM 식은 64 비트 값입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-HIGHWORD expression  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [연산자 참조](../../assembler/masm/operators-reference.md)
+
+하위 32 비트의 상위 16 비트 반환 *식*합니다. MASM 식은 64 비트 값입니다.
+
+## <a name="syntax"></a>구문
+
+> HIGHWORD 식
+
+## <a name="see-also"></a>참고자료
+
+[연산자 참조](../../assembler/masm/operators-reference.md)<br/>

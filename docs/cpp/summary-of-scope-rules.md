@@ -18,18 +18,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4439ec167cca7a2e3314879faf4c65c842801e90
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: e85fc8207e9700f35b59bfaba62dcd699ee37dd5
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39465475"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676926"
 ---
 # <a name="summary-of-scope-rules"></a>범위 규칙의 요약
 이름은 그 범위 내(과부하가 결정되는 지점까지)에서 명확하게 사용해야 합니다. 이름이 함수를 표시할 경우 함수의 매개 변수 형식 및 숫자가 명확해야 합니다. 이름이 모호 하는 경우 [멤버 액세스](../cpp/member-access-control-cpp.md) 규칙이 적용 됩니다.  
   
 ## <a name="constructor-initializers"></a>생성자 이니셜라이저  
- 생성자 이니셜라이저 (에서 설명한 [초기화 기본 항목 및 멤버](http://msdn.microsoft.com/2f71377e-2b6b-49da-9a26-18e9b40226a1))는 지정 된 생성자의 가장 바깥쪽 블록의 범위에서 계산 됩니다. 따라서 생성자의 매개 변수 이름을 사용할 수 있습니다.  
+ [생성자 이니셜라이저](constructors-cpp.md#member_init_list) 는 지정 된 생성자의 가장 바깥쪽 블록의 범위에서 계산 됩니다. 따라서 생성자의 매개 변수 이름을 사용할 수 있습니다.  
   
 ## <a name="global-names"></a>전역 이름  
  개체, 함수 또는 열거자의 이름은 함수나 클래스 외부에 도입되었거나 전역 단항 범위 연산자(`::`)가 앞에 붙은 경우와 다음과 같은 이항 연산자와 함께 사용되지 않는 경우 전역입니다.  

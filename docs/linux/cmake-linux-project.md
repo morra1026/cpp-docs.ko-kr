@@ -15,12 +15,12 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 743f15cdb9fe8b0233f5b59ca399c0f47704d441
-ms.sourcegitcommit: b0d6777cf4b580d093eaf6104d80a888706e7578
+ms.openlocfilehash: bbc19b4c8e698c520be2283376ac5297cdae33df
+ms.sourcegitcommit: f923f667065cd6c4203d10ca9520600ee40e5f84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39269542"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900514"
 ---
 # <a name="configure-a-linux-cmake-project"></a>Linux CMake 프로젝트 구성
 
@@ -30,7 +30,7 @@ Visual Studio에 대한 Linux C++ 워크로드를 설치하면 Linux용 CMake �
 이 항목에서는 Visual Studio의 CMake 지원에 대한 기본 지식이 있다고 가정합니다. 자세한 내용은 [Visual C++용 CMake 도구](../ide/cmake-tools-for-visual-cpp.md)를 참조하세요. CMake 자체에 대한 자세한 내용은 [CMake를 사용하여 소프트웨어 빌드, 테스트 및 패키지](https://cmake.org/)를 참조하세요.
 
 > [!NOTE]  
-> Visual Studio에서 CMake가 지원되려면 CMake 3.8에 도입된 서버 모드 지원이 필요합니다. 패키지 관리자가 이전 버전의 CMake를 제공하는 경우 [소스로 CMake를 빌드](#build-a-supported-cmake release-from-source)하거나 공식 [CMake 다운로드 페이지](https://cmake.org/download/)에서 다운로드하여 해결할 수 있습니다. Visual Studio의 [CMake 대상 보기](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) 창에서 지원하는 Microsoft 제공 CMake 변형은 [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases)에서 미리 작성된 최신 이진 파일을 다운로드합니다.
+> Visual Studio에서 CMake가 지원되려면 CMake 3.8에 도입된 서버 모드 지원이 필요합니다. Visual Studio의 [CMake 대상 보기](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) 창에서 지원하는 Microsoft 제공 CMake 변형은 [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases)에서 미리 작성된 최신 이진 파일을 다운로드합니다. 패키지 관리자가 CMake 3.8보다 이전 버전을 제공하는 경우 [소스에서 CMake를 빌드](#build-a-supported-cmake-release-from-source)하여 해결할 수 있습니다. 또는 표준 CMake를 사용하는 것이 좋습니다. 공식 [CMake 다운로드 페이지](https://cmake.org/download/)에서 다운로드할 수 있습니다. 
 
 ## <a name="open-a-folder"></a>폴더 열기
 
@@ -87,10 +87,16 @@ Linux 대상을 지정하면 Linux 컴퓨터에 소스가 복사됩니다. 그�
       "remoteCMakeListsRoot": "/var/tmp/src/${workspaceHash}/${name}",
       "cmakeExecutable": "/usr/local/bin/cmake",
       "buildRoot": "${env.LOCALAPPDATA}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+      "installRoot": "${env.LOCALAPPDATA}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
       "remoteBuildRoot": "/var/tmp/build/${workspaceHash}/build/${name}",
+      "remoteInstallRoot": "/var/tmp/build/${workspaceHash}/install/${name}",
       "remoteCopySources": true,
       "remoteCopySourcesOutputVerbosity": "Normal",
       "remoteCopySourcesConcurrentCopies": "10",
+      "remoteCopySourcesMethod": "rsync",
+      "remoteCopySourcesExclusionList": [".vs", ".git"],
+      "rsyncCommandArgs" : "-t --delete --delete-excluded",
+      "remoteCopyBuildOutput" : "false",
       "cmakeCommandArgs": "",
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
@@ -98,7 +104,19 @@ Linux 대상을 지정하면 Linux 컴퓨터에 소스가 복사됩니다. 그�
 }
 ```
 
-`name` 값은 원하는 값으로 설정할 수 있습니다. `remoteMachineName` 값은 원격 시스템이 여러 개 있을 경우 대상으로 지정할 항목을 지정합니다. 이 필드에는 올바른 시스템을 선택할 수 있도록 IntelliSense가 활성화됩니다. `remoteCMakeListsRoot` 필드는 원격 시스템에서 프로젝트 소스가 복사될 위치를 지정합니다. `remoteBuildRoot` 필드는 원격 시스템에서 빌드 출력이 생성될 위치입니다. 또한 해당 출력은 `buildRoot`로 지정된 위치에 로컬로 복사됩니다.
+`name` 값은 원하는 값으로 설정할 수 있습니다. `remoteMachineName` 값은 원격 시스템이 여러 개 있을 경우 대상으로 지정할 항목을 지정합니다. 이 필드에는 올바른 시스템을 선택할 수 있도록 IntelliSense가 활성화됩니다. `remoteCMakeListsRoot` 필드는 원격 시스템에서 프로젝트 소스가 복사될 위치를 지정합니다. `remoteBuildRoot` 필드는 원격 시스템에서 빌드 출력이 생성될 위치입니다. 또한 해당 출력은 `buildRoot`로 지정된 위치에 로컬로 복사됩니다. `remoteInstallRoot` 및 `installRoot` 필드는 CMake 설치를 수행하는 경우 적용되는 것을 제외하고 `remoteBuildRoot` 및 `buildRoot`와 비슷합니다. `remoteCopySources` 항목은 로컬 소스가 원격 머신에 복사되는지 여부를 제어합니다. 많은 파일이 있고 이미 원본과 직접 동기화한 경우 이 항목을 false로 설정할 수 있습니다. `remoteCopyOutputVerbosity` 값은 오류를 진단해야 하는 경우 복사 단계의 자세한 정도를 제어합니다. `remoteCopySourcesConcurrentCopies` 항목은 복사를 수행하기 위해 생성된 프로세스 수를 제어합니다. `remoteCopySourcesMethod` 값은 rsync 또는 sftp 중 하나일 수 있습니다. `remoteCopySourcesExclusionList` 필드를 사용하면 원격 머신에 복사된 내용을 제어할 수 있습니다. `rsyncCommandArgs` 값을 통해 복사의 rsync 메서드를 제어할 수 있습니다. `remoteCopyBuildOutput` 필드는 원격 빌드 출력이 로컬 빌드 폴더에 복사되는지 여부를 제어합니다.
+
+추가 제어를 위해 사용할 수 있는 일부 선택적 설정이 있습니다.
+
+```json
+{
+      "remotePreBuildCommand": "",
+      "remotePreGenerateCommand": "",
+      "remotePostBuildCommand": "",
+}
+```
+
+이러한 옵션을 사용하면 빌드하기 전후 및 CMake 생성하기 전에 원격 상자에서 명령을 실행할 수 있습니다. 원격 상자에서 유효한 명령일 수 있습니다. 출력은 Visual Studio로 다시 파이핑됩니다.
 
 ## <a name="build-a-supported-cmake-release-from-source"></a>소스로 지원되는 CMake 릴리스 빌드
 

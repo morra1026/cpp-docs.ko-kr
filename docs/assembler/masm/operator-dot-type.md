@@ -1,7 +1,7 @@
 ---
 title: 연산자입니다. 형식 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,22 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77e77646cd5c2a2496f2a6a9e0c0dd1286e0cfc0
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: fe7fd7e78bfce428569d33f1f1a4c7e7d2c80773
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32053277"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686839"
 ---
 # <a name="operator-type"></a>연산자 .TYPE
-참조 [OPATTR](../../assembler/masm/operator-opattr.md)합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-  
-.TYPE expression  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [연산자 참조](../../assembler/masm/operators-reference.md)
+
+참조 [OPATTR](../../assembler/masm/operator-opattr.md)합니다.
+
+## <a name="syntax"></a>구문
+
+> . 유형 식
+
+## <a name="see-also"></a>참고자료
+
+[연산자 참조](../../assembler/masm/operators-reference.md)<br/>

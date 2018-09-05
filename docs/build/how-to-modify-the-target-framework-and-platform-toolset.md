@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c53960b7ef972d605902a260de9e7ef344a31274
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: eef4c0e7e32b85e26fbdc6adb7a2ebd26850b2ae
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42572602"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691737"
 ---
 # <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>방법: 대상 프레임워크 및 플랫폼 도구 집합 수정
 다른 버전의.NET Framework를 대상으로 하는 다른 플랫폼 도구 집합을 사용 하 여 Visual c + + 프로젝트 설정을 변경할 수 있습니다. 기본적으로 프로젝트 시스템에는 프로젝트를 만드는 데 사용하는 Visual Studio 버전에 해당하는 .NET Framework 버전 및 도구 집합 버전이 사용됩니다. 프로젝트 속성을 수정하여 대상 플랫폼 도구 집합을 변경할 수 있습니다. 프로젝트 파일(.vcxproj)을 수정하여 대상 프레임워크를 변경할 수 있습니다. 각 컴파일 대상에 대해 별도의 코드베이스를 유지 관리할 필요는 없습니다.  
@@ -34,7 +34,7 @@ ms.locfileid: "42572602"
 > [!NOTE]
 >  대상 플랫폼 도구 집합을 변경하려면 연관된 버전의 Visual Studio 또는 Windows 플랫폼 SDK가 설치되어 있어야 합니다. 예를 들어 **Windows7.1SDK** 플랫폼 도구 집합이 있는 Itanium 플랫폼을 대상으로 하려면 [Windows 7용 Microsoft Windows SDK 및 .NET Framework 4 SP1](http://www.microsoft.com/download/details.aspx?id=8279) 이 설치되어 있어야 합니다. 그러나 올바른 Framework 버전 및 플랫폼 도구 집합을 대상으로 한 경우 Visual Studio의 다른 호환 버전을 사용하여 개발 작업을 수행할 수 있습니다.  
   
- 사용자 지정 플랫폼 도구 집합을 만들어 대상 플랫폼을 추가로 확장할 수 있습니다. 자세한 내용은 [c + + 네이티브 멀티 타기 팅](http://go.microsoft.com/fwlink/p/?linkid=196619) Visual c + + 블로그.  
+ 사용자 지정 플랫폼 도구 집합을 만들어 대상 플랫폼을 추가로 확장할 수 있습니다. 자세한 내용은 [c + + 네이티브 멀티 타기 팅](https://blogs.msdn.microsoft.com/vcblog/2009/12/08/c-native-multi-targeting/) Visual c + + 블로그.  
   
 ### <a name="to-change-the-target-framework"></a>대상 프레임워크를 변경하려면  
   

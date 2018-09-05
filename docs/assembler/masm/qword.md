@@ -1,7 +1,7 @@
 ---
 title: QWORD | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,23 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9888a6d7d918df1c9a5d83a28fca002d2ab59cf4
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: b55691b9e91b8534b530059e95d856c11be7ea0c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32052914"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682012"
 ---
 # <a name="qword"></a>QWORD
-할당 및 필요에 따라 각각에 대해 8 바이트의 저장소를 초기화 `initializer`합니다. 또한 형식 지정자로 사용할 수 있습니다 형식이 법적 곳입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-[[name]] QWORD initializer [[, initializer]]...  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)   
- [SQWORD](../../assembler/masm/qword.md)   
- [DQ](../../assembler/masm/dq.md)
+
+할당 하 고 필요에 따라 각각에 대 한 8 바이트의 저장소를 초기화 `initializer`합니다. 또한 형식 지정자로 사용할 수 있습니다 어디서 나 형식이 유효 합니다.
+
+## <a name="syntax"></a>구문
+
+> [[name]] QWORD 이니셜라이저 [[, 이니셜라이저]]...
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[SQWORD](../../assembler/masm/qword.md)<br/>
+[DQ](../../assembler/masm/dq.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: . 코드 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,28 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59e376fc9c10ab8891b02e4da334341ae0534b73
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: ff2d66cfc79e84c8c4c7cf92e117c9ac8c84a555
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051239"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682489"
 ---
 # <a name="code"></a>.CODE
-와 함께 사용할 경우 [합니다. 모델](../../assembler/masm/dot-model.md), 코드 세그먼트의 시작을 나타냅니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-.CODE [[name]]  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
-  
-|매개 변수|설명|  
-|---------------|-----------------|  
-|`name`|코드 세그먼트의 이름을 지정 하는 선택적 매개 변수입니다. 기본 이름은 아주 작은, 작은 압축 및 플랫에 대 한 _TEXT [모델](../../assembler/masm/dot-model.md)합니다. 기본 이름은 *modulename*_TEXT 다른 모델에 대 한 합니다.|  
-  
-## <a name="see-also"></a>참고 항목  
- [지시문 참조](../../assembler/masm/directives-reference.md)   
- [.DATA](../../assembler/masm/dot-data.md)
+
+와 함께 사용할 경우 [합니다. 모델](../../assembler/masm/dot-model.md), 코드 세그먼트의 시작을 나타냅니다.
+
+## <a name="syntax"></a>구문
+
+> . 코드 [[name]]
+
+#### <a name="parameters"></a>매개 변수
+
+|매개 변수|설명|
+|---------------|-----------------|
+|`name`|코드 세그먼트의 이름을 지정 하는 선택적 매개 변수입니다. 기본 이름은 작은, 작음, compact 및 플랫 _TEXT [모델](../../assembler/masm/dot-model.md)합니다. 기본 이름은 *modulename*_TEXT 다른 모델에 대 한 합니다.|
+
+## <a name="see-also"></a>참고자료
+
+[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[.DATA](../../assembler/masm/dot-data.md)<br/>

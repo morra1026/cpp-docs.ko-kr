@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ca7cfb6a3d83e69c4b447a9e953581285ffaaf0
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c9ada8396f9d5473213f726acd27691a97a59847
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219175"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684795"
 ---
 # <a name="ccomobjectrootex-class"></a>CComObjectRootEx 클래스
 이 클래스에는 집계 및 집계 개체에 대 한 참조 수 관리 개체를 처리할 메서드를 제공 합니다.  
@@ -279,7 +279,7 @@ IUnknown*
  개체를 집계 하는 경우 알 수 없는 외부에 대 한 포인터에 저장 됩니다 `m_pOuterUnknown`합니다. 개체는 집계 되지 경우가 참조 횟수에 액세스할 `AddRef` 하 고 `Release` 에 저장 됩니다 [m_dwRef](#m_dwref)합니다.  
   
 ##  <a name="objectmain"></a>  CComObjectRootEx::ObjectMain  
- 에 나열 된 각 클래스에 대 한 합니다 [개체 맵의](https://msdn.microsoft.com/b57619cc-534f-4b8f-bfd4-0c12f937202f),이 함수는 모듈을 초기화 하는 경우 한 번 호출 됩니다 및 종료 시간에 다시 합니다.  
+ 개체 맵의에 나열 된 각 클래스에 대해이 함수는 모듈을 초기화 하는 경우 한 번 호출 됩니다 및 종료 시간에 다시 합니다.  
   
 ```
 static void WINAPI ObjectMain(bool bStarting);

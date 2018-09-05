@@ -172,12 +172,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60eed80d9f26ad33ce7f2af48cfca0a90c7d26b6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6ebae1828d102881d866e05d41f1831e35e01a51
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43210253"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679249"
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl Class
 Windows의 공용 트리 뷰 컨트롤의 기능을 제공합니다.  
@@ -318,7 +318,7 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>매개 변수  
  *dwStyle*  
- 트리 뷰 컨트롤의 스타일을 지정합니다. 에 설명 된 창 스타일을 적용 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679)와 원하는 조합의 [트리 뷰 컨트롤 스타일](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK에 설명 된 대로 합니다.  
+ 트리 뷰 컨트롤의 스타일을 지정합니다. 에 설명 된 창 스타일을 적용 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa)와 원하는 조합의 [트리 뷰 컨트롤 스타일](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK에 설명 된 대로 합니다.  
   
  *rect*  
  트리 뷰 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.  
@@ -356,10 +356,10 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>매개 변수  
  *dwExStyle*  
- 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK의 합니다.  
+ 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK의 합니다.  
   
  *dwStyle*  
- 트리 뷰 컨트롤의 스타일을 지정합니다. 에 설명 된 창 스타일을 적용 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679)와 원하는 조합의 [트리 뷰 컨트롤 스타일](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK에 설명 된 대로 합니다.  
+ 트리 뷰 컨트롤의 스타일을 지정합니다. 에 설명 된 창 스타일을 적용 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa)와 원하는 조합의 [트리 뷰 컨트롤 스타일](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK에 설명 된 대로 합니다.  
   
  *rect*  
  에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.  

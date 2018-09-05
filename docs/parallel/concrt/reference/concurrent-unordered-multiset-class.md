@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66c60db67450c3a3f46b8d434b7a8416ce85161c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 32f71ea2536c4cb9b2c9c42f5625a64c986497bb
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211460"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678512"
 ---
 # <a name="concurrentunorderedmultiset-class"></a>concurrent_unordered_multiset 클래스
 `concurrent_unordered_multiset` 클래스는 다양 한 길이의 K. 형식의 요소 시퀀스를 제어 하는 동시성 으로부터 안전한 컨테이너를 시퀀스는 동시성 으로부터 안전한 방식으로 표현 됩니다 추가, 요소 액세스, 반복기 액세스 및 반복기 통과 작업 합니다.  
@@ -293,7 +293,7 @@ std::pair<const_iterator,
  검색할 키 값입니다.  
   
 ### <a name="return-value"></a>반환 값  
- A [쌍](https://msdn.microsoft.com/32e72d66-3020-4cb9-92c3-f7a5fa7998ff) 여기서 첫 번째 요소를 시작 하는 반복기 이며 두 번째 요소 범위의 끝에 대 한 반복기입니다.  
+ A [쌍](../../../standard-library/pair-structure.md) 여기서 첫 번째 요소를 시작 하는 반복기 이며 두 번째 요소 범위의 끝에 대 한 반복기입니다.  
   
 ### <a name="remarks"></a>설명  
  동시 삽입이 발생할 시작 반복기와 끝 반복기를 삽입할 추가 키에 대 한 것 같습니다.  

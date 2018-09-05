@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94468f2499a349847f62ed65a03e88cf776536ce
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 78867405627a870f68e5411b7e577b563a605c75
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43207198"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690948"
 ---
 # <a name="ccontainedwindowt-class"></a>CContainedWindowT 클래스
 이 클래스는 다른 개체 내에 포함 된 창을 구현 합니다.  
@@ -220,16 +220,16 @@ HWND Create(
  [in] 창의 이름을 지정합니다. 기본값은 NULL입니다.  
   
  *dwStyle*  
- [in] 창 스타일입니다. 기본값은 WS_CHILD &#124; WS_VISIBLE 합니다. 가능한 값 목록을 참조 하세요 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK에 있습니다.  
+ [in] 창 스타일입니다. 기본값은 WS_CHILD &#124; WS_VISIBLE 합니다. 가능한 값 목록을 참조 하세요 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK에 있습니다.  
   
  *dwExStyle*  
- [in] 확장된 창 스타일입니다. 기본값은 0, 확장 된 스타일이 없습니다. 가능한 값 목록을 참조 하세요 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK에 있습니다.  
+ [in] 확장된 창 스타일입니다. 기본값은 0, 확장 된 스타일이 없습니다. 가능한 값 목록을 참조 하세요 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK에 있습니다.  
   
  *MenuOrID*  
  [in] 자식 창의 창 식별자입니다. 최상위 창에 대 한 메뉴 창에 대 한 처리 합니다. 기본값은 **0U**합니다.  
   
  *lpCreateParam*  
- [in] 창 만들기 데이터에 대 한 포인터입니다. 에 마지막 매개 변수에 대 한 설명을 참조 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680)합니다.  
+ [in] 창 만들기 데이터에 대 한 포인터입니다. 에 마지막 매개 변수에 대 한 설명을 참조 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa)합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 새로 만든된 창에 대 한 핸들 그렇지 않으면 NULL입니다.  

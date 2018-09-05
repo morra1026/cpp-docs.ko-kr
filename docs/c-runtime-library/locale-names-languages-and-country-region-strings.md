@@ -1,7 +1,7 @@
 ---
 title: 로캘 이름, 언어 및 국가-지역 문자열 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/13/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: conceptual
@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f28262a1402d81bd5dcd0933f943b420a37f044
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: c072074c24466458ebd19e1335f49169c5c22bd5
+ms.sourcegitcommit: 3b78ddea5fd3e22b7c5cd2d787ec71a518a52223
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39606737"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42578357"
 ---
 # <a name="locale-names-languages-and-countryregion-strings"></a>로캘 이름, 언어 및 국가/지역 문자열
 
@@ -44,9 +44,9 @@ ms.locfileid: "39606737"
 
 코드 페이지는 로캘과 연관된 ANSI/OEM 코드 페이지입니다. 언어 또는 언어와 국가/지역만으로 로캘을 지정하면 코드 페이지가 결정됩니다. 특수 값 `.ACP` 가 국가/지역에 대한 ANSI 코드 페이지를 지정합니다. 특수 값 `.OCP` 가 국가/지역에 대한 OEM 코드 페이지를 지정합니다. 예를 들어, `"Greek_Greece.ACP"` 를 로캘로 지정하는 경우 로캘이 `Greek_Greece.1253` (그리스어의 ANSI 코드 페이지)으로 저장되고, `"Greek_Greece.OCP"` 를 로캘로 지정하는 경우 로캘이 `Greek_Greece.737` (그리스어의 OEM 코드 페이지)로 저장됩니다. 코드 페이지에 대한 자세한 내용은 [Code Pages](../c-runtime-library/code-pages.md)를 참조하세요. Windows에서 지원되는 코드 페이지 목록을 보려면 [Code Page Identifiers(코드 페이지 식별자)](/windows/desktop/Intl/code-page-identifiers)를 참조하세요.
 
-로캘을 지정하는 데 코드 페이지만 사용하는 경우 시스템 기본 언어 및 국가/지역이 사용됩니다. 예를 들어, 영어(미국)로 구성된 시스템에서 `".1254"` (ANSI 터키어)를 로캘로 지정하는 경우 저장되는 로캘은 `English_United States.1254`입니다. 일관되지 않은 동작이 발생할 수 있으므로 이 양식을 사용하지 않는 것이 좋습니다.
+로캘을 지정하는 데 코드 페이지만 사용하는 경우 [GetUserDefaultLocaleName](/windows/desktop/api/winnls/nf-winnls-getuserdefaultlocalename)에서 보고한 대로 사용자의 기본 언어 및 국가/지역이 사용됩니다. 예를 들어, 영어(미국)로 구성된 사용자에게 `".1254"`(ANSI 터키어)를 로캘로 지정하는 경우 저장되는 로캘은 `English_United States.1254`입니다. 일관되지 않은 동작이 발생할 수 있으므로 이 양식을 사용하지 않는 것이 좋습니다.
 
-`C`의 *locale* 인수 값은 C 번역에 대한 최소 ANSI 표준에 맞는 환경을 지정합니다. `C` 로캘은 모든 `char` 데이터 형식이 1바이트이고, 해당 값이 항상 256보다 작은 것으로 간주합니다. *locale*에서 빈 문자열을 가리키면 로캘은 구현에서 정의된 네이티브 환경입니다.
+`C`의 *locale* 인수 값은 C 번역에 대한 최소 ANSI 표준에 맞는 환경을 지정합니다. `C` 로캘은 모든 **char** 데이터 형식이 1바이트이고, 해당 값이 항상 256보다 작은 것으로 간주합니다. *locale*에서 빈 문자열을 가리키면 로캘은 구현에서 정의된 네이티브 환경입니다.
 
 `setlocale` 범주를 사용하여 `_wsetlocale` 및 `LC_ALL` 함수에 대해 동시에 모든 로캘 범주를 지정할 수 있습니다. 범주를 모두 동일한 로캘로 설정하거나 이 양식을 사용하는 로캘 인수를 사용하여 범주를 각각 설정할 수 있습니다.
 

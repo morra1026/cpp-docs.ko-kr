@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0cf6c5efb0c7613c1332ce05483bd311b037a9b8
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ef8f2142f00b862ff198df9c75e142dc66a049b5
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43194484"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689966"
 ---
 # <a name="insert-activex-control-dialog-box"></a>ActiveX 컨트롤 삽입 대화 상자
 
@@ -31,13 +31,13 @@ ms.locfileid: "43194484"
 
 ### <a name="activex-control"></a>ActiveX 컨트롤
 
-Activex 컨트롤의 목록을 표시합니다. 이 대화 상자에서 컨트롤을 삽입 하는 래퍼 클래스를 생성 하지 않습니다. 래퍼 클래스를 해야 하는 경우 사용 하 여 [클래스 뷰](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925) 만들려면 (자세한 내용은 참조 하십시오 [클래스를 추가](../ide/adding-a-class-visual-cpp.md)). 이 대화 상자에서 Activex 컨트롤을 없으면 공급 업체의 지침에 따라 컨트롤을 설치 하십시오.
+Activex 컨트롤의 목록을 표시합니다. 이 대화 상자에서 컨트롤을 삽입 하는 래퍼 클래스를 생성 하지 않습니다. 래퍼 클래스를 해야 하는 경우 사용 하 여 [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code) 만들려면 (자세한 내용은 참조 하십시오 [클래스를 추가](../ide/adding-a-class-visual-cpp.md)). 이 대화 상자에서 Activex 컨트롤을 없으면 공급 업체의 지침에 따라 컨트롤을 설치 하십시오.
 
 ### <a name="path"></a>Path
 
 ActiveX 컨트롤은 찾을 수 있는 파일이 표시 됩니다.
 
-컨트롤을 배치할 수 있습니다는 **도구 상자** 창에 쉽게 액세스할 수 있도록 합니다. 자세한 내용은 [도구 상자 사용자 지정 대화 상자](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)합니다.
+컨트롤을 배치할 수 있습니다는 **도구 상자** 창에 쉽게 액세스할 수 있도록 합니다. 자세한 내용은 [도구 상자](/visualstudio/ide/reference/)를 참조하세요.
 
 관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리 되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대 한 내용은 참조 하세요 [데스크톱 앱에 대 한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)합니다. 전역화 및 지역화 관리 되는 앱의 리소스에 대 한 내용은 참조 하세요 [Globalizing and Localizing.NET Framework Applications](/dotnet/standard/globalization-localization/index)합니다.
 

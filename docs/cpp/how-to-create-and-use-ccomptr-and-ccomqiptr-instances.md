@@ -12,15 +12,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3cfdbff4d63197ca37976d5dcc242ac7b8ab8410
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 77a747b75f0b8c1d7d5fba6b43dd9a29f17fdc00
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43194134"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676941"
 ---
 # <a name="how-to-create-and-use-ccomptr-and-ccomqiptr-instances"></a>방법: CComPtr 및 CComQIPtr 인스턴스 만들기 및 사용
-클래식 Windows 프로그래밍에서 라이브러리는 종종 COM 개체(보다 정확하게는 COM 서버)로 구현됩니다. 많은 Windows 운영 체제 구성 요소가 COM 서버로 구현되므로 많은 참가자가 이 형식의 라이브러리를 제공합니다. COM의 기본 사항에 대 한 정보를 참조 하세요 [구성 요소 개체 모델 (COM)](https://msdn.microsoft.com/3578ca42-a4b6-44b3-ad5b-aeb5fa61f3f4)합니다.  
+클래식 Windows 프로그래밍에서 라이브러리는 종종 COM 개체(보다 정확하게는 COM 서버)로 구현됩니다. 많은 Windows 운영 체제 구성 요소가 COM 서버로 구현되므로 많은 참가자가 이 형식의 라이브러리를 제공합니다. COM의 기본 사항에 대 한 정보를 참조 하세요 [구성 요소 개체 모델 (COM)](/windows/desktop/com/component-object-model--com--portal)합니다.  
   
  COM(구성 요소 개체 모델) 개체를 인스턴스화할 때 소멸자에서 `AddRef` 및 `Release` 에 대한 호출을 사용하여 참조 계산을 수행하는 COM 스마트 포인터에 인터페이스 포인터를 저장합니다. ATL(액티브 템플릿 라이브러리) 또는 MFC 라이브러리를 사용하는 경우 `CComPtr` 스마트 포인터를 사용합니다. ATL 또는 MFC를 사용하지 않는 경우에는 `_com_ptr_t`를 사용합니다. `std::unique_ptr`에 해당하는 COM이 없기 때문에 단일 소유자 시나리오와 여러 소유자 시나리오 모두에 이러한 스마트 포인터를 사용합니다. `CComPtr` 과 `ComQIPtr` 둘 다 rvalue 참조가 있는 이동 작업을 지원합니다.  
   

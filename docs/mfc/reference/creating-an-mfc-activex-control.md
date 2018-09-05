@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c610e8dcd8cf5b06dfb22540c304e84446c75438
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 96ecae8445368357da3bc7b271156f961c1c1dca
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43198690"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687148"
 ---
 # <a name="creating-an-mfc-activex-control"></a>MFC ActiveX 컨트롤 만들기
 ActiveX 컨트롤 프로그램은 부모 응용 프로그램에 특정 종류의 기능을 제공 하도록 설계는 모듈식 프로그램입니다. 예를 들어 대화 상자에서 또는 웹 페이지에서 사용 하 여 도구 모음에서 사용할 단추와 같은 컨트롤을 만들면 됩니다.  
@@ -49,5 +49,5 @@ ActiveX 컨트롤 프로그램은 부모 응용 프로그램에 특정 종류의
 ## <a name="see-also"></a>참고 항목  
  [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)   
  [속성 페이지](../../ide/property-pages-visual-cpp.md)   
- [응용 프로그램 배포](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+
 

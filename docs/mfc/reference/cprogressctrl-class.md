@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05b259afe5c266db30ed31ed47e917f0ac1a5607
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7c4ea8cf95298918088f54c3099a8f41d9c16ca9
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43196192"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690154"
 ---
 # <a name="cprogressctrl-class"></a>CProgressCtrl 클래스
 Windows의 공용 진행률 표시줄 컨트롤의 기능을 제공합니다.  
@@ -143,7 +143,7 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>매개 변수  
  *dwStyle*  
- 진행률 표시줄 컨트롤의 스타일을 지정합니다. 창 stylesdescribed 어떤 조합도 적용할 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) 다음 진행률 표시줄 컨트롤 스타일, 컨트롤 외에도 Windows sdk에서:  
+ 진행률 표시줄 컨트롤의 스타일을 지정합니다. 창 stylesdescribed 어떤 조합도 적용할 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) 다음 진행률 표시줄 컨트롤 스타일, 컨트롤 외에도 Windows sdk에서:  
   
 - PBS_VERTICAL 표시 정보를 세로 방향으로 진행으로 위쪽에서 아래쪽입니다. 이 플래그가 없으면 진행률 표시줄 컨트롤에서 오른쪽으로 수평, 왼쪽 표시합니다.  
   
@@ -181,10 +181,10 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>매개 변수  
  *dwExStyle*  
- 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK의 합니다.  
+ 만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK의 합니다.  
   
  *dwStyle*  
- 진행률 표시줄 컨트롤의 스타일을 지정합니다. 에 설명 된 창 스타일의 조합을 적용 [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK에 있습니다.  
+ 진행률 표시줄 컨트롤의 스타일을 지정합니다. 에 설명 된 창 스타일의 조합을 적용 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK에 있습니다.  
   
  *rect*  
  에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.  

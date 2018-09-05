@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: a26394a906f40d6dc194118bb312cfe1a0ce834e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6719d7b104c5dd520a8c4e8a027ea47bd76a95bc
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219886"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689512"
 ---
 # <a name="how-to-marshal-structures-using-pinvoke"></a>방법: PInvoke를 사용하여 구조체 마샬링
 이 문서에서는 어떻게 네이티브 함수를 P/Invoke를 사용 하 여 관리 되는 함수에서 C 스타일 구조체를 호출할 수 있습니다. 대신 c + + Interop 기능을 사용 하는 것이 좋습니다 하지만 P/Invoke P/Invoke 거의 컴파일 타임 오류 보고를 제공 하기 때문에 형식이 안전한 아니며 관리 되지 않는 API는 DLL로 패키지 하 고 소스 코드에는 없는 경우 구현 되기 번거로울 수 있습니다. P/Invoke를 사용할 수 있는 유일한 옵션입니다. 다음 문서를 참조 하십시오.  
@@ -34,7 +34,7 @@ ms.locfileid: "43219886"
   
  기본적으로 네이티브 및 관리 되는 구조에에서 배치 되어 다르게 메모리 했습니다 데이터 무결성을 유지 하기 위해 추가 단계를 수행 해야 구조 관리 되 는/관리 경계를 넘어 전달 합니다.  
   
- 이 문서에서는 관리 되는 해당 하는 네이티브 구조체와 관리 되지 않는 함수에는 결과 구조체를 전달 하는 방법을 정의 하는 데 필요한 단계를 설명 합니다. 이 문서에서는 가정 하는 간단한 구조-문자열 또는 포인터를 포함 하지 않는 것 등 사용 됩니다. 비 blittable 상호 운용성에 대 한 정보를 참조 하세요 [c + + Interop 사용 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)합니다. P/Invoke는 비 blittable 형식 반환 값으로 사용할 수 없습니다. Blittable 형식은 관리 코드와 비관리 코드에서 표현이 동일한 합니다. 자세한 내용은 [Blittable 형식 및 비 Blittable 형식](https://msdn.microsoft.com/Library/d03b050e-2916-49a0-99ba-f19316e5c1b3)합니다.  
+ 이 문서에서는 관리 되는 해당 하는 네이티브 구조체와 관리 되지 않는 함수에는 결과 구조체를 전달 하는 방법을 정의 하는 데 필요한 단계를 설명 합니다. 이 문서에서는 가정 하는 간단한 구조-문자열 또는 포인터를 포함 하지 않는 것 등 사용 됩니다. 비 blittable 상호 운용성에 대 한 정보를 참조 하세요 [c + + Interop 사용 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)합니다. P/Invoke는 비 blittable 형식 반환 값으로 사용할 수 없습니다. Blittable 형식은 관리 코드와 비관리 코드에서 표현이 동일한 합니다. 자세한 내용은 [Blittable 형식 및 비 Blittable 형식](/dotnet/framework/interop/blittable-and-non-blittable-types)합니다.  
   
  간단한 마샬링 blittable 구조를 관리 되 는/관리 경계를 넘어 먼저 필요한 각 네이티브 구조체의 관리 되는 버전을 정의 하는 것입니다. 이러한 구조 이름에는 제한이 법적; 두 구조체는 데이터 레이아웃 이외의 네이티브 및 관리 되는 버전 간의 관계가 없습니다. 따라서 관리 되는 버전 크기 및 기본 버전으로 동일한 순서로 동일한 필드를 포함 하는 중요 한 것입니다. (방법이 구조체의 관리 및 네이티브 버전 되므로 해당 비 호환성 문제가 드러나지 않습니다 런타임까지 보장 하기 위한 메커니즘이 없습니다. 프로그래머의 두 구조체가 같은 데이터 레이아웃을 갖도록 합니다.)  
   

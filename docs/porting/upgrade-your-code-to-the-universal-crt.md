@@ -8,12 +8,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2057f3dc8abc3f661010300671b67ad5c37a87d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1091a28448aa6531aa909117e0284e19bbcc7cd8
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33850602"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42578499"
 ---
 # <a name="upgrade-your-code-to-the-universal-crt"></a>코드를 유니버설 CRT로 업그레이드
 
@@ -35,7 +35,7 @@ UCRT 정적 라이브러리 및 동적 링크 스텁 라이브러리는 Windows 
 
 C 및 C++ 컴파일러별 런타임 지원 라이브러리인 **vcruntime**에는 예외 처리 및 내장 함수와 같이 프로그램 시작 및 기능을 지원하는 데 필요한 코드가 포함됩니다. 라이브러리 및 해당 헤더 파일은 Program Files 또는 Program files (x86) 디렉터리의 버전별 Microsoft Visual Studio 폴더에 있습니다. Visual Studio 2017에서 헤더는 Microsoft Visual Studio\\2017\\_edition_\\VC\\Tools\\MSVC\\_lib-version_\\include 아래에 있고 링크 라이브러리는 Microsoft Visual Studio\\2017\\_edition_\\VC\\Tools\\MSVC\\_lib-version_\\lib\\_architecture_ 아래에 있습니다. 여기서 _edition_은 설치된 Visual Studio 버전이고, _lib-version_은 라이브러리 버전이고, _architecture_는 프로세서 아키텍처입니다. OneCore 및 Store에 대한 링크 라이브러리는 libraries 폴더에도 있습니다. 정적 라이브러리의 정품 및 디버그 버전은 libvcruntime.lib 및 libvcruntimed.lib입니다. 동적 링크 정품 및 디버그 스텁 라이브러리는 각각 vcruntime.lib 및 vcruntimed.lib입니다.  
   
-Visual C++ 프로젝트를 업데이트할 때 프로젝트의 **링커** 속성 **모든 기본 라이브러리 무시**를 **예**로 설정했거나 명령줄에서 /NODEFAULTLIB 링커 옵션을 사용할 경우에는 새로운 리팩터링된 라이브러리를 포함하도록 라이브러리 목록을 업데이트해야 합니다. 이전 CRT 라이브러리(예: libcmt.lib, libcmtd.lib, msvcrt.lib 또는 msvcrtd.lib)를 해당하는 리팩터링된 라이브러리로 바꿉니다. 사용할 특정 라이브러리에 대한 자세한 내용은 [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)을 참조하세요.  
+Visual C++ 프로젝트를 업데이트할 때 프로젝트의 **Linker** 속성 **모든 기본 라이브러리 무시**를 **예**로 설정했거나 명령줄에서 `/NODEFAULTLIB` 링커 옵션을 사용할 경우에는 새로운 리팩터링된 라이브러리를 포함하도록 라이브러리 목록을 업데이트해야 합니다. 이전 CRT 라이브러리(예: libcmt.lib, libcmtd.lib, msvcrt.lib 또는 msvcrtd.lib)를 해당하는 리팩터링된 라이브러리로 바꿉니다. 사용할 특정 라이브러리에 대한 자세한 내용은 [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)을 참조하세요.  
   
 ## <a name="deployment-and-redistribution-of-the-universal-crt"></a>유니버설 CRT의 배포 및 재배포
   

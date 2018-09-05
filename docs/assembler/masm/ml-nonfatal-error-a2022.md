@@ -1,7 +1,7 @@
 ---
 title: ML 심각 하지 않은 오류 A2022 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,17 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ae137f443996018dbfbc56adf7d4ce10ac7cdcc
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: f6d78a851126fd31576f14adad09c82f95082900
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32052796"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684406"
 ---
 # <a name="ml-nonfatal-error-a2022"></a>ML 심각하지 않은 오류 A2022
-**명령 피연산자는 크기가 같아야 합니다.**  
-  
- 피연산자를 명령으로 동일한 크기로 사용할 수 없습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [ML 오류 메시지](../../assembler/masm/ml-error-messages.md)
+
+**명령 피연산자 크기가 동일 해야 합니다.**
+
+명령으로 피연산자 크기가 없습니다.
+
+## <a name="see-also"></a>참고자료
+
+[ML 오류 메시지](../../assembler/masm/ml-error-messages.md)<br/>
