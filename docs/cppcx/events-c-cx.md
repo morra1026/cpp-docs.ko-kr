@@ -10,11 +10,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8465572cf5b921f56e357ae554ecdeaf9943b725
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606378"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43767580"
 ---
 # <a name="events-ccx"></a>이벤트(C++/CX)
 Windows 런타임 형식을 선언할 수 있습니다 (즉, 게시) 이벤트 및 동일한 구성 요소 또는 다른 구성 요소의 클라이언트 코드는 호출 된 메서드를 연결 하 여 이러한 이벤트를 구독할 수 있습니다 *이벤트 처리기* 이벤트를 사용 하 여 합니다. 여러 이벤트 처리기를 단일 이벤트에 연결할 수 있습니다. 게시 개체에서 이벤트가 발생하면 호출되는 모든 이벤트 처리기가 발생됩니다. 이 방법으로 구독 클래스에서는 게시자가 이벤트를 발생시킬 때 적절한 사용자 지정 작업은 무엇이든 수행할 수 있습니다. 이벤트에는 모든 이벤트 처리기에서 이벤트를 구독하기 위해 필요한 서명을 지정하는 대리자 형식이 있습니다.  

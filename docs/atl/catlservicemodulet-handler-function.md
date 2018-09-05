@@ -1,5 +1,5 @@
 ---
-title: CAtlServiceModuleT::Handler 함수 | Microsoft Docs
+title: 'Catlservicemodulet:: Handler 함수 | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,19 +18,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0c0386cd17e7a33628790520e356c706f9743b9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: dbc7c74e0fd6fdd34ba9a0c386c028469113c88e
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32354996"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43767087"
 ---
-# <a name="catlservicemodulethandler-function"></a>CAtlServiceModuleT::Handler 함수
-`CAtlServiceModuleT::Handler` 서비스 제어 관리자 (SCM) 호출 하는 서비스의 상태를 검색 하 고 (예: 중지 또는 일시 중지) 다양 한 지침을 제공 하는 루틴입니다. SCM가 작업 코드에 전달 `Handler` 를 나타내는 서비스에서 수행 해야 합니다. 기본 ATL 생성 서비스 stop 명령이 처리 됩니다. SCM stop 명령이 통과 되 면 서비스 지시 SCM 프로그램이 중지 되려고 합니다. 서비스 호출 `PostThreadMessage` 를 자신에 게 종료 메시지를 게시 합니다. 메시지 루프를 종료 하 고 서비스가 종료 됩니다.  
-  
- 자세한 지침을 처리 하려면 변경 해야는 `m_status` 데이터 멤버의 초기화는 `CAtlServiceModuleT` 생성자입니다. 이 데이터 멤버 SCM 서비스 제어판 응용 프로그램에서 서비스를 선택한 경우 사용할 수 있도록 단추를 알려 줍니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [서비스](../atl/atl-services.md)   
- [CAtlServiceModuleT::Handler](../atl/reference/catlservicemodulet-class.md#handler)
+# <a name="catlservicemodulethandler-function"></a>Catlservicemodulet:: Handler 함수
+
+`CAtlServiceModuleT::Handler` 서비스 제어 관리자 (SCM) 서비스의 상태를 검색 하 고 다양 한 지침 (예: 중지 또는 일시 중지)를 호출 하는 루틴입니다. SCM 전달 하기 위한 작업 코드 `Handler` 서비스가 수행할 동작을 나타냅니다. 기본 ATL 생성 서비스 중지 명령을 처리합니다. 중지 명령이 SCM를 통과 하면 서비스 인지 여부를 SCM는 프로그램을 중지 하려고 합니다. 서비스 호출 `PostThreadMessage` 자신에 게 종료 메시지를 게시 합니다. 메시지 루프를 종료 하 고 서비스를 궁극적으로 닫힙니다.
+
+자세한 지침을 처리 하려면 변경 해야 합니다 `m_status` 데이터 멤버의 초기화를 `CAtlServiceModuleT` 생성자입니다. 이 데이터 멤버 서비스 제어판 응용 프로그램에서 서비스를 선택한 경우 사용할 수 있도록 단추를 SCM에 지시 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[서비스](../atl/atl-services.md)   
+[Catlservicemodulet:: Handler](../atl/reference/catlservicemodulet-class.md#handler)
 

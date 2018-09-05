@@ -10,11 +10,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3b2f8ab1c52297a95c89f8ee00053d24baebe39d
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43205482"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43764412"
 ---
 # <a name="deprecating-types-and-members-ccx"></a>형식 및 멤버가 사용되지 않도록 지정(C++/CX)
 C + + /CX를 사용 하 여 생산자와 소비자에 대 한 Windows 런타임 형식 및 멤버의 사용 중단 된 [사용 되지 않는](/uwp/api/windows.foundation.metadata.deprecatedattribute) 특성은 지원 합니다. 이 속성이 적용된 API를 사용하는 경우 API가 더 이상 사용되지 않음을 나타내고 대체 API를 사용하도록 권장하는 컴파일 타임 경고 메시지가 나타납니다. public 형식 및 메서드에서 이 특성을 적용하고 사용자 지정 메시지를 제공할 수 있습니다.  
