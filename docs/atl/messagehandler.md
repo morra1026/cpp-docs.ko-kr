@@ -16,50 +16,51 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74a5e50eae425340bcb0f9a455422b43db0be0b2
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 37564920e2ffb4c2526631cd04864db1971a6f02
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43207112"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43757213"
 ---
 # <a name="messagehandler"></a>MessageHandler
-`MessageHandler` 메시지 맵에서 MESSAGE_HANDLER 매크로의 두 번째 매개 변수로 식별 된 함수의 이름이입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
- 
-    LRESULT 
-    MessageHandler 
- (
+
+`MessageHandler` 메시지 맵에서 MESSAGE_HANDLER 매크로의 두 번째 매개 변수로 식별 된 함수의 이름이입니다.
+
+## <a name="syntax"></a>구문
+
+```
+LRESULT MessageHandler(
     UINT uMsg,  
     WPARAM wParam,  
     LPARAM lParam,  
     BOOL& bHandled);
-```  
-  
-#### <a name="parameters"></a>매개 변수  
- *uMsg*  
- 메시지를 지정합니다.  
-  
- *wParam*  
- 추가 메시지 관련 정보입니다.  
-  
- *lParam*  
- 추가 메시지 관련 정보입니다.  
-  
- *bHandled*  
- 메시지 맵 집합 *bHandled* 하기 전에 true `MessageHandler` 라고 합니다. 경우 `MessageHandler` 메시지를 완전히 처리 하지 않는 설정 해야 *bHandled* 에 FALSE를 메시지에 추가 처리가 필요 합니다.  
-  
-## <a name="return-value"></a>반환 값  
- 메시지 처리의 결과입니다. 성공한 경우 0입니다.  
-  
-## <a name="remarks"></a>설명  
- 메시지 맵에서이 메시지 처리기를 사용 하 여 예제를 참조 하세요 [MESSAGE_HANDLER](reference/message-map-macros-atl.md#message_handler)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [창 구현](../atl/implementing-a-window.md)   
- [메시지 맵](../atl/message-maps-atl.md)   
- [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)
+```
 
+### <a name="parameters"></a>매개 변수
+
+*uMsg*  
+메시지를 지정합니다.
+
+*wParam*  
+추가 메시지 관련 정보입니다.
+
+*lParam*  
+추가 메시지 관련 정보입니다.
+
+*bHandled*  
+메시지 맵 집합 *bHandled* 하기 전에 true `MessageHandler` 라고 합니다. 경우 `MessageHandler` 메시지를 완전히 처리 하지 않는 설정 해야 *bHandled* 에 FALSE를 메시지에 추가 처리가 필요 합니다.
+
+## <a name="return-value"></a>반환 값
+
+메시지 처리의 결과입니다. 성공한 경우 0입니다.
+
+## <a name="remarks"></a>설명
+
+메시지 맵에서이 메시지 처리기를 사용 하 여 예제를 참조 하세요 [MESSAGE_HANDLER](reference/message-map-macros-atl.md#message_handler)합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[창 구현](../atl/implementing-a-window.md)   
+[메시지 맵](../atl/message-maps-atl.md)   
+[WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)

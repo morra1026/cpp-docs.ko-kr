@@ -18,19 +18,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e67ad87f1dce47f3d02dcbe907285cf0513a8ce9
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 09d65a19ecf573cc11d71fe49cdb40c1a748aafa
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33337550"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681919"
 ---
 # <a name="redistributing-visual-c-files"></a>Visual C++ 파일 재배포
 
 > [!NOTE]
 > Visual C++ 런타임 파일 중 하나의 다운로드를 찾고 있습니까? [Microsoft](http://www.microsoft.com/) 웹 사이트로 이동하여 검색 상자에 **Visual C++ 재배포 가능**을 입력합니다. 컴퓨터 아키텍처(예: 64비트 Windows를 실행하는 경우 x64) 및 필요한 Visual C++ 버전(예: 2015)의 재배포 가능 패키지를 다운로드하여 설치합니다.
 
-응용 프로그램을 배포할 때 이 응용 프로그램을 지원하는 데 필요한 파일도 배포해야 합니다. Microsoft에서 이러한 파일을 제공하는 경우 파일을 다시 배포할 수 있는지 여부를 확인합니다. Visual Studio 사용 조건을 검토하려면 IDE의 Microsoft Visual Studio 정보 대화 상자에서 사용 조건 연결을 참조하거나, [Microsoft 소프트웨어 사용 조건](http://go.microsoft.com/fwlink/p/?LinkId=831114) 파일을 다운로드합니다. 특정 버전의 Visual Studio에 대한 Microsoft 소프트웨어 사용 조건의 "배포 가능 코드" 섹션에서 언급된 "REDIST 목록"을 보려면 [Microsoft Visual Studio 2017 및 Microsoft Visual Studio 2017 SDK용 배포 가능 코드(유틸리티 및 BuildServer 파일 포함)](http://go.microsoft.com/fwlink/p/?LinkId=823098)를 참조하세요. Visual Studio 2015의 경우 [Microsoft Visual Studio 2015 및 Microsoft Visual Studio 2015 SDK용 배포 가능 코드](http://go.microsoft.com/fwlink/p/?LinkId=523763)를 참조하세요. 재배포 가능 파일에 대한 자세한 내용은 [재배포할 DLL 확인](../ide/determining-which-dlls-to-redistribute.md) 및 [배포 예제](../ide/deployment-examples.md)를 참조하세요.
+응용 프로그램을 배포할 때 이 응용 프로그램을 지원하는 데 필요한 파일도 배포해야 합니다. Microsoft에서 이러한 파일을 제공하는 경우 파일을 다시 배포할 수 있는지 여부를 확인합니다. Visual Studio 사용 조건을 검토하려면 IDE의 Microsoft Visual Studio 정보 대화 상자에서 사용 조건 연결을 참조하거나, [Microsoft 소프트웨어 사용 조건](https://visualstudio.microsoft.com/license-terms/mlt687465/) 파일을 다운로드합니다. 특정 버전의 Visual Studio에 대한 Microsoft 소프트웨어 사용 조건의 "배포 가능 코드" 섹션에서 언급된 "REDIST 목록"을 보려면 [Microsoft Visual Studio 2017 및 Microsoft Visual Studio 2017 SDK용 배포 가능 코드(유틸리티 및 BuildServer 파일 포함)](/visualstudio/productinfo/2017-redistribution-vs)를 참조하세요. Visual Studio 2015의 경우 [Microsoft Visual Studio 2015 및 Microsoft Visual Studio 2015 SDK용 배포 가능 코드](/visualstudio/productinfo/2015-redistribution-vs)를 참조하세요. 재배포 가능 파일에 대한 자세한 내용은 [재배포할 DLL 확인](../ide/determining-which-dlls-to-redistribute.md) 및 [배포 예제](../ide/deployment-examples.md)를 참조하세요.
 
 재배포 가능한 Visual C++ 파일을 배포하려면 Visual Studio에 포함된 Visual C++ 재배포 가능 패키지(VCRedist\_x86.exe, VCRedist\_x64.exe 또는 VCRedist\_arm.exe)를 사용할 수 있습니다. Visual Studio 2017에서 이러한 파일은 Program Files[(x86)]\\Microsoft Visual Studio\\2017\\_edition_\\VC\\Redist\\MSVC\\_lib-version_ 폴더에 있습니다. 여기서 _edition_은 설치된 Visual Studio 버전이고, _lib-version_은 재배포할 라이브러리 버전입니다. Visual Studio 2015에서 이러한 파일은 Program Files[(x86)]\Microsoft Visual Studio *version*\VC\redist\\*locale*\\의 Visual Studio 설치 디렉터리 아래에 있습니다. 다른 옵션은 Visual Studio 2017의 Program Files[(x86)]\\Microsoft Visual Studio\\2017\\_edition_\\ VC\\Redist\\MSVC\\_lib-version_\\MergeModules\\ 폴더에 있는 재배포 가능 병합 모듈(.msm 파일)을 사용하는 것입니다. Visual Studio 2015에서 이러한 파일은 Program Files[(x86)]\common Files\Merge Modules\\에 있습니다. 응용 프로그램 실행 파일이 들어 있는 폴더인 *응용 프로그램 로컬 폴더*에 재배포 가능한 Visual C++ DLL을 직접 설치할 수도 있습니다. 서비스 편의를 위해 이 설치 위치를 사용하지 않는 것이 좋습니다.
 
@@ -52,7 +52,6 @@ Windows에서 응용 프로그램에 필요한 재배포 가능 라이브러리 
 |-----------|-----------------|
 |[병합 모듈을 사용하여 재배포](../ide/redistributing-components-by-using-merge-modules.md)|Visual C++ 재배포 가능 병합 모듈을 사용하여 Visual C++ 런타임 라이브러리를 공유 DLL로 %windir%\system32\ 폴더에 설치하는 방법에 대해 설명합니다.|
 |[Visual C++ ActiveX 컨트롤 재배포](../ide/redistributing-visual-cpp-activex-controls.md)|ActiveX 컨트롤을 사용하는 응용 프로그램을 재배포하는 방법에 대해 설명합니다.|
-|[데이터베이스 지원 파일 재배포](../ide/redistributing-database-support-files.md)|DAO(Data Access Objects) 및 Microsoft Data Access SDK에 포함된 데이터베이스 기술을 위한 지원 파일을 다시 배포하는 방법에 대해 설명합니다.|
 |[MFC 라이브러리 재배포](../ide/redistributing-the-mfc-library.md)|MFC를 사용하는 응용 프로그램을 재배포하는 방법에 대해 설명합니다.|
 |[ATL 응용 프로그램 재배포](../ide/redistributing-an-atl-application.md)|ATL을 사용하는 응용 프로그램을 재배포하는 방법에 대해 설명합니다. Visual Studio 2012부터 ATL에 대한 재배포 가능 라이브러리가 필요하지 않습니다.|
 |[배포 예제](../ide/deployment-examples.md)|Visual C++ 응용 프로그램을 배포하는 방법을 보여 주는 예제에 대한 링크입니다.|

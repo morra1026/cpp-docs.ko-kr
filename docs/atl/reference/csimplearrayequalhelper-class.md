@@ -18,61 +18,69 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6660f72dbd91a41670b3c5f8772d21caf4b8abc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 87b23ba46ee4a8e25c15b4d9e51b87c444da67f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32362130"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43758217"
 ---
 # <a name="csimplearrayequalhelper-class"></a>CSimpleArrayEqualHelper 클래스
-이 클래스는에 대 한 도우미는 [CSimpleArray](../../atl/reference/csimplearray-class.md) 클래스입니다.  
-  
-## <a name="syntax"></a>구문  
-  
+
+이 클래스는에 대 한 도우미는 [CSimpleArray](../../atl/reference/csimplearray-class.md) 클래스입니다.
+
+## <a name="syntax"></a>구문
+
 ```
 template <class T>  
 class CSimpleArrayEqualHelper
-```  
-  
-#### <a name="parameters"></a>매개 변수  
- `T`  
- 파생된 클래스입니다.  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="public-methods"></a>Public 메서드  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[CSimpleArrayEqualHelper::IsEqual](#isequal)|(정적) 두 `CSimpleArray` 개체 같음에 대 한 요소입니다.|  
-  
-## <a name="remarks"></a>설명  
- 이 특성 클래스는 적용 하기 위해는 `CSimpleArray` 클래스입니다. 에 저장 된 두 요소를 비교에 대 한 메서드를 제공는 `CSimpleArray` 개체입니다. 사용 하는 요소를 비교 하는 기본적으로 **operator=()**, 배열 자체 같음 연산자를 없는 복잡 한 데이터 형식이 있으면이 클래스를 재정의 해야 합니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** atlsimpcoll.h  
-  
-##  <a name="isequal"></a>  CSimpleArrayEqualHelper::IsEqual  
- 두 `CSimpleArray` 개체 같음에 대 한 요소입니다.  
-  
+```
+
+#### <a name="parameters"></a>매개 변수
+
+`T`  
+파생된 클래스입니다.
+
+## <a name="members"></a>멤버
+
+### <a name="public-methods"></a>Public 메서드
+
+|이름|설명|
+|----------|-----------------|
+|[CSimpleArrayEqualHelper::IsEqual](#isequal)|(정적) 두 개의 테스트 `CSimpleArray` 개체 같음에 대 한 요소입니다.|
+
+## <a name="remarks"></a>설명
+
+이 특성 클래스는 보완을 `CSimpleArray` 클래스입니다. 에 저장 된 두 요소를 비교에 대 한 메서드를 제공 하는 `CSimpleArray` 개체입니다. 사용 하는 요소를 비교 하는 기본적으로 **operator=()**, 배열 자체 같음 연산자를 없는 복잡 한 데이터 형식에 있으면이 클래스를 재정의 해야 합니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** atlsimpcoll.h
+
+##  <a name="isequal"></a>  CSimpleArrayEqualHelper::IsEqual
+
+두 개의 테스트 `CSimpleArray` 개체 같음에 대 한 요소입니다.
+
 ```
 static bool IsEqual(
     const T& t1,
     const T& t2);
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *T1*  
- 화 형식의 개체  
-  
- *T2*  
- 화 형식의 개체  
-  
-### <a name="return-value"></a>반환 값  
- 요소가 같은지, false를 반환 하지 않으면 true를 반환 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [CSimpleArray 클래스](../../atl/reference/csimplearray-class.md)   
- [CSimpleArrayEqualHelperFalse 클래스](../../atl/reference/csimplearrayequalhelperfalse-class.md)   
- [클래스 개요](../../atl/atl-class-overview.md)
+```
+
+### <a name="parameters"></a>매개 변수
+
+*T1*  
+형식은 T 형식 개체
+
+*T2*  
+형식은 T 형식 개체
+
+### <a name="return-value"></a>반환 값
+
+요소가 같으면 false이 고, 그렇지 true를 반환 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[CSimpleArray 클래스](../../atl/reference/csimplearray-class.md)   
+[CSimpleArrayEqualHelperFalse 클래스](../../atl/reference/csimplearrayequalhelperfalse-class.md)   
+[클래스 개요](../../atl/atl-class-overview.md)

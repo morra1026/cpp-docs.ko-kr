@@ -14,17 +14,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2221430522329616dd19f32484b66dc957593c3a
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 16a5033a2656cea3f1cecea1e5b97f4ad9c117ad
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33321989"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222209"
 ---
 # <a name="manifest-tool-property-pages"></a>매니페스트 도구 속성 페이지
 **매니페스트 도구** 속성 페이지를 사용하여 mt.exe의 빌드 옵션을 설정합니다.  
   
- 매니페스트 도구에 대한 자세한 내용은 [Mt.exe](http://msdn.microsoft.com/library/aa375649)를 참조하세요.  
+ 매니페스트 도구에 대한 자세한 내용은 [Mt.exe](https://msdn.microsoft.com/library/aa375649)를 참조하세요.  
   
  [일반, 매니페스트 도구, 구성 속성, \<Projectname> 속성 페이지 대화 상자](../ide/general-manifest-tool-configuration-properties.md)  
   

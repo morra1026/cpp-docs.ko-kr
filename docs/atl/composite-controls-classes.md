@@ -17,23 +17,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acfbf8379512513e59528a6eb2855b9caed7d298
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 5d9f9359bb6dfa1204c32e6902e12c62423291db
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964199"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43765884"
 ---
 # <a name="composite-controls-classes"></a>복합 컨트롤 클래스
-다음 클래스는 복합 컨트롤 만들기에 대 한 지원 제공  
-  
--   [CComCompositeControl](../atl/reference/ccomcompositecontrol-class.md) ActiveX 컨트롤에서 파생 된 `CComCompositeControl` 표준 대화 상자를 통해 호스팅됩니다. 이러한 종류의 컨트롤을 다른 컨트롤 (네이티브 Windows 컨트롤 및 ActiveX 컨트롤)를 호스트할 수 있기 때문에 복합 컨트롤 이라고 합니다.  
-  
-## <a name="related-articles"></a>관련 문서  
- [복합 컨트롤 기본 사항](../atl/atl-composite-control-fundamentals.md)  
-  
-## <a name="see-also"></a>참고 항목  
- [클래스 개요](../atl/atl-class-overview.md)   
- [복합 컨트롤 매크로](../atl/reference/composite-control-macros.md)   
- [복합 컨트롤 전역 함수](../atl/reference/composite-control-global-functions.md)
+
+다음 클래스는 복합 컨트롤 만들기에 대 한 지원 제공
+
+- [CComCompositeControl](../atl/reference/ccomcompositecontrol-class.md) ActiveX 컨트롤에서 파생 된 `CComCompositeControl` 표준 대화 상자를 통해 호스팅됩니다. 이러한 종류의 컨트롤을 다른 컨트롤 (네이티브 Windows 컨트롤 및 ActiveX 컨트롤)를 호스트할 수 있기 때문에 복합 컨트롤 이라고 합니다.
+
+## <a name="related-articles"></a>관련 문서
+
+[복합 컨트롤 기본 사항](../atl/atl-composite-control-fundamentals.md)
+
+## <a name="see-also"></a>참고 항목
+
+[클래스 개요](../atl/atl-class-overview.md)   
+[복합 컨트롤 매크로](../atl/reference/composite-control-macros.md)   
+[복합 컨트롤 전역 함수](../atl/reference/composite-control-global-functions.md)
 

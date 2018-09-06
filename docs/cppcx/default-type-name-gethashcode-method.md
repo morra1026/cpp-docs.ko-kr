@@ -14,11 +14,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 9d6461e6c94a6889c956ac0319c55c9ee5d2a361
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608290"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43751382"
 ---
 # <a name="defaulttypenamegethashcode-method"></a>default::(type_name)::GetHashCode 메서드
 이 인스턴스의 해시 코드를 반환합니다.  

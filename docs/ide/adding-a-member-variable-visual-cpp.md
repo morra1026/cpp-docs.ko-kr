@@ -17,15 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa2a8ef8f7bcdc2d90893acdad98705c9588a5d5
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: dade9987358c1c160dffd0221b0421b4fab92c24
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33325733"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687644"
 ---
 # <a name="adding-a-member-variable--visual-c"></a>멤버 변수 추가(Visual C++)
-클래스 뷰를 사용하여 클래스에 멤버 변수를 추가할 수 있습니다. 멤버 변수는 [데이터 교환 및 유효성 검사](../mfc/dialog-data-exchange-and-validation.md)용일 수도 있고 일반적일 수도 있습니다. 데이터 멤버 변수 마법사는 관련 정보를 가져와 적절한 위치에 있는 원본 파일에 요소를 삽입하는 데 사용하도록 특별히 설계되었습니다. [대화 상자 편집기](../windows/dialog-editor.md)의 [리소스 뷰](../windows/resource-view-window.md) 또는 [클래스 뷰](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925)에서 멤버 변수를 추가할 수 있습니다.  
+클래스 뷰를 사용하여 클래스에 멤버 변수를 추가할 수 있습니다. 멤버 변수는 [데이터 교환 및 유효성 검사](../mfc/dialog-data-exchange-and-validation.md)용일 수도 있고 일반적일 수도 있습니다. 데이터 멤버 변수 마법사는 관련 정보를 가져와 적절한 위치에 있는 원본 파일에 요소를 삽입하는 데 사용하도록 특별히 설계되었습니다. [대화 상자 편집기](../windows/dialog-editor.md)의 [리소스 뷰](../windows/resource-view-window.md) 또는 [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)에서 멤버 변수를 추가할 수 있습니다.  
   
 > [!NOTE]
 >  대화 상자를 디자인하고 구현할 때 대화 상자 편집기를 사용하여 대화 상자 컨트롤을 추가한 다음, 컨트롤의 멤버 변수를 구현하는 것이 더 효율적일 수 있습니다.  
@@ -49,7 +49,7 @@ ms.locfileid: "33325733"
   
 ### <a name="to-add-a-member-variable-from-class-view-using-the-add-member-variable-wizard"></a>멤버 변수 추가 마법사를 사용하여 클래스 뷰에서 멤버 변수를 추가하려면  
   
-1.  [클래스 뷰](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925)에서 프로젝트 노드를 확장하여 프로젝트의 클래스를 표시합니다.  
+1.  [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)에서 프로젝트 노드를 확장하여 프로젝트의 클래스를 표시합니다.  
   
 2.  변수를 추가할 클래스를 마우스 오른쪽 단추로 클릭합니다.  
   

@@ -20,71 +20,80 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6cce467218b92f6d0827cff2b8ede56b735ab9af
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 9e0059c88d7aa99340568405150244152800684a
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197148"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43751838"
 ---
 # <a name="ipropertypage2impl-class"></a>IPropertyPage2Impl 클래스
-이 클래스는 구현 `IUnknown` 의 기본 구현을 상속 [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md)합니다.  
-  
+
+이 클래스는 구현 `IUnknown` 의 기본 구현을 상속 [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md)합니다.
+
 > [!IMPORTANT]
->  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.  
-  
-## <a name="syntax"></a>구문  
-  
+>  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
+
+## <a name="syntax"></a>구문
+
 ```
 template<class T>  
 class IPropertyPage2Impl : public IPropertyPageImpl<T>
-```  
-  
-#### <a name="parameters"></a>매개 변수  
- *T*  
- 클래스에서 파생 된 `IPropertyPage2Impl`합니다.  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="public-methods"></a>Public 메서드  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[IPropertyPage2Impl::EditProperty](#editproperty)|속성 페이지를 활성화할 때 속성 컨트롤에서 포커스를 수신 하도록 지정 합니다. ATL 구현 E_NOTIMPL을 반환합니다.|  
-  
-## <a name="remarks"></a>설명  
- 합니다 [IPropertyPage2](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage2) 인터페이스를 확장 [IPropertyPage](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage) 추가 하 여는 `EditProperty` 메서드. 이 메서드는 클라이언트가 속성 페이지 개체의 특정 속성을 선택 하는 데 사용 합니다.  
-  
- 클래스 `IPropertyPage2Impl` 에 대 한 E_NOTIMPL을 반환 하기만 `IPropertyPage2::EditProperty`합니다. 하지만 기본 구현을 상속 [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md) 구현 및 `IUnknown` 장치에서 디버그 덤프에 정보를 전송 하 여 작성 합니다.  
-  
- 클래스에서 파생 된 일반적으로 속성 페이지를 만들면 `IPropertyPageImpl`합니다. 추가 지원을 제공 하기 위해 `IPropertyPage2`클래스 정의 수정 하 고 재정의 `EditProperty` 메서드.  
-  
- **관련 문서** [ATL 자습서](../../atl/active-template-library-atl-tutorial.md), [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)  
-  
-## <a name="inheritance-hierarchy"></a>상속 계층  
- `IPropertyPage`  
-  
- [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md)  
-  
- `IPropertyPage2Impl`  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** atlctl.h  
-  
-##  <a name="editproperty"></a>  IPropertyPage2Impl::EditProperty  
- 속성 페이지를 활성화할 때 속성 컨트롤에서 포커스를 수신 하도록 지정 합니다.  
-  
+```
+
+#### <a name="parameters"></a>매개 변수
+
+*T*  
+클래스에서 파생 된 `IPropertyPage2Impl`합니다.
+
+## <a name="members"></a>멤버
+
+### <a name="public-methods"></a>Public 메서드
+
+|이름|설명|
+|----------|-----------------|
+|[IPropertyPage2Impl::EditProperty](#editproperty)|속성 페이지를 활성화할 때 속성 컨트롤에서 포커스를 수신 하도록 지정 합니다. ATL 구현 E_NOTIMPL을 반환합니다.|
+
+## <a name="remarks"></a>설명
+
+합니다 [IPropertyPage2](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage2) 인터페이스를 확장 [IPropertyPage](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage) 추가 하 여는 `EditProperty` 메서드. 이 메서드는 클라이언트가 속성 페이지 개체의 특정 속성을 선택 하는 데 사용 합니다.
+
+클래스 `IPropertyPage2Impl` 에 대 한 E_NOTIMPL을 반환 하기만 `IPropertyPage2::EditProperty`합니다. 하지만 기본 구현을 상속 [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md) 구현 및 `IUnknown` 장치에서 디버그 덤프에 정보를 전송 하 여 작성 합니다.
+
+클래스에서 파생 된 일반적으로 속성 페이지를 만들면 `IPropertyPageImpl`합니다. 추가 지원을 제공 하기 위해 `IPropertyPage2`클래스 정의 수정 하 고 재정의 `EditProperty` 메서드.
+
+**관련 문서** [ATL 자습서](../../atl/active-template-library-atl-tutorial.md), [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)
+
+## <a name="inheritance-hierarchy"></a>상속 계층
+
+`IPropertyPage`
+
+[IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md)
+
+`IPropertyPage2Impl`
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** atlctl.h
+
+##  <a name="editproperty"></a>  IPropertyPage2Impl::EditProperty
+
+속성 페이지를 활성화할 때 속성 컨트롤에서 포커스를 수신 하도록 지정 합니다.
+
 ```
 HRESULT EditProperty(DISPID dispID);
-```  
-  
-### <a name="return-value"></a>반환 값  
- E_NOTIMPL 반환.  
-  
-### <a name="remarks"></a>설명  
- 참조 [IPropertyPage2::EditProperty](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage2-editproperty) Windows SDK에에서 있습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [IPerPropertyBrowsingImpl 클래스](../../atl/reference/iperpropertybrowsingimpl-class.md)   
- [ISpecifyPropertyPagesImpl 클래스](../../atl/reference/ispecifypropertypagesimpl-class.md)   
- [클래스 개요](../../atl/atl-class-overview.md)
+```
+
+### <a name="return-value"></a>반환 값
+
+E_NOTIMPL 반환.
+
+### <a name="remarks"></a>설명
+
+참조 [IPropertyPage2::EditProperty](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage2-editproperty) Windows SDK에에서 있습니다.
+
+## <a name="see-also"></a>참고 항목
+
+[IPerPropertyBrowsingImpl 클래스](../../atl/reference/iperpropertybrowsingimpl-class.md)   
+[ISpecifyPropertyPagesImpl 클래스](../../atl/reference/ispecifypropertypagesimpl-class.md)   
+[클래스 개요](../../atl/atl-class-overview.md)

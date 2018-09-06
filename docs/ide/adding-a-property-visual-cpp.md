@@ -15,19 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45eda098202fdf9286905bdc967b6aa1d7bd7035
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: e121cf9738910b105f5bb1933592e67d334f8937
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33327582"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685328"
 ---
 # <a name="adding-a-property-visual-c"></a>속성 추가(Visual C++)
 [속성 추가 마법사](../ide/names-add-property-wizard.md)를 사용하여 프로젝트의 인터페이스에 메서드를 추가할 수 있습니다.  
   
 ### <a name="to-add-a-property-to-your-object"></a>개체에 속성을 추가하려면  
   
-1.  [클래스 뷰](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925)에서 속성을 추가할 인터페이스의 이름을 마우스 오른쪽 단추로 클릭합니다.  
+1.  [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)에서 속성을 추가할 인터페이스의 이름을 마우스 오른쪽 단추로 클릭합니다.  
   
     > [!NOTE]
     >  프로젝트에 특성이 지정되지 않은 경우 라이브러리 노드 내에 중첩된 dispinterface에 속성을 추가할 수도 있습니다.  
@@ -49,5 +49,5 @@ ms.locfileid: "33327582"
 ## <a name="see-also"></a>참고 항목  
  [COM 인터페이스 만들기](../ide/creating-a-com-interface-visual-cpp.md)   
  [COM 인터페이스 편집](../ide/editing-a-com-interface.md)   
- [구성 요소 개체 모델](http://msdn.microsoft.com/library/windows/desktop/ms694363)   
- [인터페이스 포인터 및 인터페이스](http://msdn.microsoft.com/library/windows/desktop/ms688484)
+ [구성 요소 개체 모델](/windows/desktop/com/the-component-object-model)   
+ [인터페이스 포인터 및 인터페이스](/windows/desktop/com/interface-pointers-and-interfaces)

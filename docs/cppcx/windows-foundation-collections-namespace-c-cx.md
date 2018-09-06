@@ -16,11 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: de406267a4c18cace88882b26f6b249fc5a0efa3
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42586713"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43761045"
 ---
 # <a name="windowsfoundationcollections-namespace-ccx"></a>Windows::Foundation::Collections 네임스페이스(C++/CX)
 C + + /cli CX Vector, VectorView, 지도 및 MapView 컬렉션 클래스를 사용 하 여 단순화 하는 함수를 사용 하 여 Windows::Foundation::Collections 네임 스페이스를 보완 합니다.  

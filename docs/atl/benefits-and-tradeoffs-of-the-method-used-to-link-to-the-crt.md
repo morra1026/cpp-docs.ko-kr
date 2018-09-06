@@ -1,5 +1,5 @@
 ---
-title: CRT에 대 한 링크에 사용 되는 방법의 장단점 및 이점 | Microsoft Docs
+title: CRT에 링크 하는 데 사용 하는 방법의 장단점 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2835e88da11b8d8332226080eb860afd41c0702
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4b90259a942ea785cfbfee4bfda803d9d7b568d4
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355389"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43753879"
 ---
-# <a name="benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt"></a>CRT에 대 한 링크에 사용 되는 방법의 장단점 및 이점
-프로젝트 CRT에 동적 또는 정적 링크 수입니다. 다음 표에서 장점과 단점을 사용할 방법을 선택과 관련 된 간략하게 설명 합니다.  
-  
-|메서드|이점|적절 한 균형을|  
-|------------|-------------|--------------|  
-|CRT에 정적으로 연결<br /><br /> (**런타임 라이브러리** 로 설정 **단일 스레드**)|CRT DLL 이미지가 실행 될 시스템에 필요 하지 않습니다.|약 25 K 시작 코드의 크기를 늘리지를 이미지에 추가 됩니다.|  
-|CRT에 동적으로 링크<br /><br /> (**런타임 라이브러리** 로 설정 **다중 스레드**)|이미지는 CRT 시작 코드가 필요 하지 않으므로 규모가 훨씬 작아집니다.|CRT DLL 이미지를 실행 하는 시스템에 있어야 합니다.|  
-  
- 항목 [Your ATL 프로젝트에서 CRT에 연결할](../atl/linking-to-the-crt-in-your-atl-project.md) CRT에 연결 하는 방식을 선택 하는 방법에 설명 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [ATL 및 C 런타임 코드를 사용한 프로그래밍](../atl/programming-with-atl-and-c-run-time-code.md)   
- [Dll 및 Visual c + + 런타임 라이브러리 동작](../build/run-time-library-behavior.md)   
- [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)
+# <a name="benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt"></a>CRT에 링크 하는 데 사용 하는 방법의 장단점
+
+프로젝트는 동적 또는 정적으로 CRT에 연결할 수 있습니다. 아래 테이블에는 장점과 단점을 사용할 방법을 선택과 관련 된 간략하게 설명 합니다.
+
+|메서드|이점|균형을 유지|
+|------------|-------------|--------------|
+|정적으로 CRT에 연결<br /><br /> (**런타임 라이브러리** 로 설정 **단일 스레드**)|CRT DLL 이미지가 실행 되는 시스템에 필요 하지 않습니다.|약 25 개 중 K 시작 코드는 해당 크기를 늘리지 이미지에 추가 됩니다.|
+|동적으로 CRT에 연결<br /><br /> (**런타임 라이브러리** 로 설정 **멀티스레드**)|이미지는 훨씬 더 작기 때문 이므로 CRT 시작 코드가 필요가 없습니다.|CRT DLL 이미지를 실행 하는 시스템에 있어야 합니다.|
+
+항목 [ATL 프로젝트에서 CRT에 연결할](../atl/linking-to-the-crt-in-your-atl-project.md) CRT에 연결 하는 방식을 선택 하는 방법에 설명 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[ATL 및 C 런타임 코드를 사용한 프로그래밍](../atl/programming-with-atl-and-c-run-time-code.md)   
+[Dll 및 Visual c + + 런타임 라이브러리 동작](../build/run-time-library-behavior.md)   
+[CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)
 

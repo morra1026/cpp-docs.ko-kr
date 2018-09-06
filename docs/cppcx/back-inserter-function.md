@@ -16,11 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 6142255c00d9764e4a1a18dab094899b5e9d9e1d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42589989"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43767249"
 ---
 # <a name="backinserter-function"></a>back_inserter 함수
 지정된 컬렉션 끝에 요소를 삽입하는 데 사용되는 반복기를 반환합니다.  

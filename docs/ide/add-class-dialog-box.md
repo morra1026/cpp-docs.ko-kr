@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f6c4f108b30babcc30ffc5f2fc4c63fe764db2e3
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 9d4e90ace469614d6d422e0b75445eae5696bc26
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33339776"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681604"
 ---
 # <a name="add-class-dialog-box"></a>클래스 추가 대화 상자
 **클래스 추가** 대화 상자에는 다음을 수행할 수 있는 템플릿이 있습니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "33339776"
   
 -   프로젝트에 적절한 파일 및 소스 코드를 추가하여 새 클래스를 자동으로 만듭니다.  
   
- **클래스 추가** 대화 상자는 **프로젝트** 메뉴, **솔루션 탐색기**또는 [클래스 뷰](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925)에서 액세스할 수 있습니다.  
+ **클래스 추가** 대화 상자는 **프로젝트** 메뉴, **솔루션 탐색기**또는 [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)에서 액세스할 수 있습니다.  
   
 > [!NOTE]
 >  현재 프로젝트에 적합하지 않은 클래스를 추가하려고 하면 오류 메시지가 표시됩니다. **확인** 을 클릭하여 **클래스 추가** 대화 상자로 돌아갑니다.  

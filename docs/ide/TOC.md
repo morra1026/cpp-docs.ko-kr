@@ -75,7 +75,6 @@
 ## [Visual C++ 파일 재배포](redistributing-visual-cpp-files.md)
 ### [병합 모듈을 사용하여 구성 요소 재배포](redistributing-components-by-using-merge-modules.md)
 ### [Visual C++ ActiveX 컨트롤 재배포](redistributing-visual-cpp-activex-controls.md)
-### [데이터베이스 지원 파일 재배포](redistributing-database-support-files.md)
 ### [MFC 라이브러리 재배포](redistributing-the-mfc-library.md)
 ### [ATL 응용 프로그램 재배포](redistributing-an-atl-application.md)
 ## [배포 예제](deployment-examples.md)

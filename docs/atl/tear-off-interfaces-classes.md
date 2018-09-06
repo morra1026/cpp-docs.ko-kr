@@ -17,20 +17,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb7fec440902652d8ab04f688488a00340ab41aa
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 8ea912ec843cdf91d45b2a6e588c25ffd7749546
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956981"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43762943"
 ---
 # <a name="tear-off-interfaces-classes"></a>분리 인터페이스 클래스
-분리 인터페이스에 대 한 지원을 제공 하는 다음 클래스:  
-  
--   [CComTearOffObject](../atl/reference/ccomtearoffobject-class.md) 구현 `IUnknown` 분리 인터페이스입니다.  
-  
--   [CComCachedTearOffObject](../atl/reference/ccomcachedtearoffobject-class.md) 구현 `IUnknown` "캐시" 분리 인터페이스에 대 한 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [클래스 개요](../atl/atl-class-overview.md)
+
+분리 인터페이스에 대 한 지원을 제공 하는 다음 클래스:
+
+- [CComTearOffObject](../atl/reference/ccomtearoffobject-class.md) 구현 `IUnknown` 분리 인터페이스입니다.
+
+- [CComCachedTearOffObject](../atl/reference/ccomcachedtearoffobject-class.md) 구현 `IUnknown` "캐시" 분리 인터페이스에 대 한 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[클래스 개요](../atl/atl-class-overview.md)
 

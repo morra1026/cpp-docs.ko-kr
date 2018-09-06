@@ -14,11 +14,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: e2f1e83c285274326be2501a8f9b006c8df05204
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613388"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43751529"
 ---
 # <a name="platformivaluetype-interface"></a>Platform::IValueType 인터페이스
 `Platform::IValueType` 은 값 클래스 및 값 구조체로 구현되는 인프라 인터페이스입니다. 코드에서 명시적으로 사용되지 않아야 합니다.  

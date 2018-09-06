@@ -10,11 +10,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ff2fc36582e6ffbff8f7608a5a26cc472687132e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598092"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43760980"
 ---
 # <a name="wrl-integration-ccx"></a>WRL 통합(C++/CX)
 
@@ -24,7 +24,7 @@ ms.locfileid: "42598092"
 
 작성 하 고 WRL 구성 요소를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [Windows 런타임 c + + 템플릿 라이브러리 (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 코드 조각은 WRL 및 WRL을 사용 하 여 Windows 런타임 클래스를 사용 하 고 메타 데이터 파일을 검사 하는 방법을 보여 줍니다.
 

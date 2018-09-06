@@ -10,11 +10,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ba5ce5b5cb2f55caf00ea6094cb4e14b2b08c236
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42584122"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43767609"
 ---
 # <a name="ref-classes-and-structs-ccx"></a>Ref 클래스 및 구조체(C++/CX)
 C + + 사용자 정의 CX 지원 *ref 클래스* 및 *ref struct*, 및 사용자 정의 *값 클래스* 및 *구조체 값*합니다. 이러한 데이터 구조는 기본 컨테이너는 C + + /cli CX Windows 런타임 형식 시스템을 지원 합니다. 해당 콘텐츠는 특정 규칙에 따라 메타 데이터로 내보내집니다 및 Windows 런타임 구성 요소와 c + + 또는 다른 언어로 작성 된 유니버설 Windows 플랫폼 응용 프로그램 간에 전달 될 수 있도록 합니다.  

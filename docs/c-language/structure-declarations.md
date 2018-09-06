@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7d305b2bc74455abd6fdbcfb29ed7ef4103bf19
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ffb239db12111f80e894c68cff568338bb3ed038
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391902"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207272"
 ---
 # <a name="structure-declarations"></a>구조체 선언
 "구조체 선언"은 형식의 이름을 지정하고 다른 형식이 포함될 수 있는 변수 값의 시퀀스(구조체의 "멤버" 또는 "필드")를 지정합니다. "태그"라는 선택적 식별자는 구조체 형식의 이름을 제공하며 구조체 형식에 대한 향후 참조에 사용될 수 있습니다. 해당 구조체 형식의 변수는 해당 형식으로 정의된 전체 시퀀스를 보유합니다. C의 구조체는 다른 언어에서 "레코드"로 알려진 형식과 비슷합니다.  
@@ -163,7 +163,7 @@ struct somestruct
   
  컴파일러는 크기가 지정되지 않았거나 크기가 0인 배열을 구조체의 마지막 멤버로 허용합니다. 이는 다양한 상황에서 사용할 때 상수 배열의 크기가 다를 경우 유용할 수 있습니다. 이러한 구조체의 선언은 다음과 같습니다.  
   
- `struct` *identifier***{** *set-of-declarations* *type array-name***[ ];};**  
+**struct** *identifier* **{** *set-of-declarations* *type* <em>array-name</em>**\[]; };**  
   
  크기가 지정되지 않은 배열은 구조체의 마지막 멤버로만 나타날 수 있습니다. 크기가 지정되지 않은 배열 선언을 포함하는 구조체는 바깥쪽 구조체에 멤버를 더 이상 선언하지 않는 한 다른 구조체 내에 중첩될 수 있습니다. 구조체에 멤버를 더 선언하는 경우 해당 배열은 허용되지 않습니다. `sizeof` 연산자는 이 형식의 배열이나 배열 자체에 적용될 경우 배열 크기가 0이라고 가정합니다.  
   

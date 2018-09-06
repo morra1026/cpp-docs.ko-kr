@@ -17,15 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c425a71f8bb8a7972ade29fb0d18cf3eab7debb5
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 59b19a35a70b3bdadd935f06ff7d9ae1ce7d7d95
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33330183"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216382"
 ---
 # <a name="isolated-com-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>격리 COM, 매니페스트 도구, 구성 속성, &lt;Projectname&gt; 속성 페이지 대화 상자
-이 대화 상자를 사용하여 [Mt.exe](http://msdn.microsoft.com/library/aa375649)에 대한 **격리 COM** 옵션을 지정합니다.  
+이 대화 상자를 사용하여 [Mt.exe](https://msdn.microsoft.com/library/aa375649)에 대한 **격리 COM** 옵션을 지정합니다.  
   
  이 속성 페이지 대화 상자에 액세스하려면 프로젝트 또는 속성 시트의 속성 페이지를 엽니다. **공용 속성**에서 **매니페스트 도구** 노드를 확장한 다음, **격리 COM**을 선택합니다.  
   
@@ -47,7 +47,7 @@ ms.locfileid: "33330183"
  /replacements 옵션을 사용하여 .rgs 파일에서 대체 가능한 문자열 값이 포함된 파일의 전체 경로를 지정합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [격리된 응용 프로그램](http://msdn.microsoft.com/library/aa375190)   
+ [격리된 응용 프로그램](/windows/desktop/SbsCs/isolated-applications)   
  [ClickOnce 응용 프로그램 매니페스트](/visualstudio/deployment/clickonce-application-manifest)   
  [매니페스트 도구 속성 페이지](../ide/manifest-tool-property-pages.md)   
  [프로젝트 속성 사용](../ide/working-with-project-properties.md)   

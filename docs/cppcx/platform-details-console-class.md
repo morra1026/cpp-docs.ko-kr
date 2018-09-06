@@ -16,11 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 904ca2920f1086aeb099290382402e7201e81b49
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601938"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43759014"
 ---
 # <a name="platformdetailsconsole-class"></a>Platform::Details::Console 클래스
 이 클래스는 내부 전용이며 개발용으로 사용되지 않아야 합니다.  

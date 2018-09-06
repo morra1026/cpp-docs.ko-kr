@@ -16,11 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ec2651ae44955a4adfa1319e5528b7fe948a15bf
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42581185"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43759408"
 ---
 # <a name="platformuintptr-value-class"></a>Platform::UIntPtr 값 클래스
 플랫폼(32비트 또는 64비트)에 맞는 크기의 부호 없는 포인터를 나타냅니다.  

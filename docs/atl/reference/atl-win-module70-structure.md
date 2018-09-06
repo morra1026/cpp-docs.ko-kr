@@ -19,18 +19,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e330beda4770f60d5358ed8baf8d3b2fae260d3a
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: e4c5d7ad570d9745e10107f0df09faccd9eb42e3
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883036"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43761555"
 ---
 # <a name="atlwinmodule70-structure"></a>_ATL_WIN_MODULE70 구조체
-Atl에서 창 작업 코드에서 사용  
-  
-## <a name="syntax"></a>구문  
-  
+
+Atl에서 창 작업 코드에서 사용
+
+## <a name="syntax"></a>구문
+
 ```
 struct _ATL_WIN_MODULE70 {
     UNIT cbSize; 
@@ -38,31 +39,31 @@ struct _ATL_WIN_MODULE70 {
     _AtlCreateWndData* m_pCreateWndList;
     CSimpleArray<ATOM> m_rgWindowClassAtoms;
 };
-```  
-  
-## <a name="members"></a>멤버  
- `cbSize`  
- 버전 관리에 사용 되는 구조체의 크기입니다.  
-  
- `m_csWindowCreate`  
- 등록 코드 창에 대 한 액세스를 serialize 하는 데 사용 합니다. ATL.에서 내부적으로 사용  
-  
- `m_pCreateWndList`  
- 해당 개체에 windows를 바인딩하는 데 사용 합니다. ATL.에서 내부적으로 사용  
-  
- `m_rgWindowClassAtoms`  
- 종료 시 제대로 등록 되지 않을 수도 있습니다 있도록 창 클래스 등록을 추적 하는 데 사용 합니다. ATL.에서 내부적으로 사용  
-  
-## <a name="remarks"></a>설명  
- [_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module) 의 typedef로 정의 된 `_ATL_WIN_MODULE70`합니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** atlbase.h  
-  
-## <a name="see-also"></a>참고 항목  
- [클래스 및 구조체](../../atl/reference/atl-classes.md)
+```
 
+## <a name="members"></a>멤버
 
+`cbSize`  
+버전 관리에 사용 되는 구조체의 크기입니다.
 
+`m_csWindowCreate`  
+등록 코드 창에 대 한 액세스를 serialize 하는 데 사용 합니다. ATL.에서 내부적으로 사용
 
+`m_pCreateWndList`  
+해당 개체에 windows를 바인딩하는 데 사용 합니다. ATL.에서 내부적으로 사용
+
+`m_rgWindowClassAtoms`  
+종료 시 제대로 등록 되지 않을 수도 있습니다 있도록 창 클래스 등록을 추적 하는 데 사용 합니다. ATL.에서 내부적으로 사용
+
+## <a name="remarks"></a>설명
+
+[_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module) 의 typedef로 정의 된 `_ATL_WIN_MODULE70`합니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** atlbase.h
+
+## <a name="see-also"></a>참고 항목
+
+[클래스 및 구조체](../../atl/reference/atl-classes.md)
 
