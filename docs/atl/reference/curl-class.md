@@ -45,12 +45,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0babb0932fc059a91fd8da79f649039bcaebc457
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 02453ae14ab6e8cd4a75a9f2d8725ce69e2b7f02
+ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753734"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43895294"
 ---
 # <a name="curl-class"></a>CUrl 클래스
 
@@ -116,11 +116,11 @@ class CUrl
 
 `CUrl` URL의 경로 또는 포트 번호 등의 필드를 조작할 수 있습니다. `CUrl` 다음 형식의 Url을 인식합니다.
 
-\<체계 >://\<사용자 이름 >:\<암호 > @\<호스트 이름 >:\<포트 번호 > /\<UrlPath >\<ExtraInfo >
+\<체계 >://\<사용자 이름 >:\<암호 >\@\<호스트 이름 >:\<포트 번호 > /\<UrlPath >\<ExtraInfo >
 
 (일부 필드는 선택 사항입니다.) 예를 들어,이 URL을 고려 합니다.
 
-http://someone:secret@www.microsoft.com:80/visualc/stuff.htm#contents
+`http://someone:secret@www.microsoft.com:80/visualc/stuff.htm#contents`
 
 [CUrl::CrackUrl](#crackurl) 다음과 같이 구문 분석:
 
@@ -130,7 +130,7 @@ http://someone:secret@www.microsoft.com:80/visualc/stuff.htm#contents
 
 - 암호: "암호"
 
-- 호스트 이름: "www.microsoft.com"
+- 호스트 이름: "`www.microsoft.com`"
 
 - PortNumber: 80
 
@@ -235,7 +235,7 @@ inline BOOL CreateUrl(
 
 이 메서드는 다음 형식을 사용 하 여 전체 URL 문자열을 생성 하기 위해 개별 필드를 추가 합니다.
 
-**\<체계 >://\<사용자 >:\<전달 > @\<도메인 >:\<포트 >\<경로 >\<추가 >**
+**\<체계 >://\<사용자 >:\<전달 >\@\<도메인 >:\<포트 >\<경로 >\<추가 >**
 
 이 메서드를 호출 하는 경우는 *pdwMaxLength* 매개 변수에서 참조 하는 문자열 버퍼의 최대 길이 처음에 포함 해야 합니다 *lpszUrl* 매개 변수입니다. 값을 *pdwMaxLength* 매개 변수는 URL 문자열의 실제 길이 사용 하 여 업데이트 됩니다.
 
