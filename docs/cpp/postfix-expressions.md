@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a951c45da8c5c6b672540c03bc1d97b5d54d9338
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: e7ab8ad911869cab56df12b08b9688b9912f2a63
+ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39403143"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43895164"
 ---
 # <a name="postfix-expressions"></a>후위 식
 후위 식은 기본 식 또는 후위 연산자가 기본 식 뒤에 오는 식으로 구성됩니다. 다음 표에서는 후위 연산자를 보여 줍니다.  
@@ -50,7 +50,7 @@ postfix-expression[expression]postfix-expression(expression-list)simple-type-nam
 func(1)->GetValue()++  
 ```  
   
- 위 식에서 `func` 은 기본 식 `func(1)` 는 함수 후 위 식 `func(1)->GetData` 클래스의 멤버를 지정 하는 후 위 식 `func(1)->GetData()` 다른 함수 후 위 식이 며 전체 식은은 GetData의 반환 값을 증가 하는 후 위 식이입니다.  이 식은 1을 인수로 전달하는 함수를 호출하거나 클래스의 포인터를 반환 값으로 가져오라는 의미입니다.  그런 다음 호출 `GetValue()` 해당 클래스를 반환 하는 값 증가 합니다.  
+ 위 식에서 `func` 은 기본 식 `func(1)` 는 함수 후 위 식 `func(1)->GetValue` 클래스의 멤버를 지정 하는 후 위 식 `func(1)->GetValue()` 다른 함수 후 위 식이 며 전체 식은은 GetValue의 반환 값을 증가 하는 후 위 식이입니다.  이 식은 1을 인수로 전달하는 함수를 호출하거나 클래스의 포인터를 반환 값으로 가져오라는 의미입니다.  그런 다음 호출 `GetValue()` 해당 클래스를 반환 하는 값 증가 합니다.  
   
  위에 나열된 식은 할당 식입니다. 이는 이 식의 결과가 r-value여야 한다는 의미입니다.  
   
