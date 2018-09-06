@@ -10,11 +10,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: fda9cab73088746ec64caf482f9e606d713eaa4f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222745"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43756979"
 ---
 # <a name="delegates-ccx"></a>대리자(C++/CX)
 `delegate` 키워드 표준 c + +에서 함수 개체에 Windows 런타임 상응 하는 참조 형식을 선언 하는 데 사용 됩니다. 대리자 선언은 함수 서명과 유사하며, 래핑된 함수에 있어야 하는 반환 형식과 매개 변수 형식을 지정합니다. 다음은 사용자 정의 대리자 선언입니다.  

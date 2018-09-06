@@ -15,11 +15,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 024d9d7dce234b07620a108b1f11c240bd842ac6
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592580"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43765490"
 ---
 # <a name="platformmetadataruntimeclassname"></a>Platform::Metadata::RuntimeClassName
 클래스 정의에 적용될 경우 private 클래스가 GetRuntimeClassName 함수에서 유효한 이름을 반환하는지 확인합니다.  
@@ -38,7 +38,7 @@ ms.locfileid: "42592580"
 ### <a name="remarks"></a>설명  
  이 특성을 private ref 클래스에 사용하여 사용자 지정 런타임 형식 및/또는 기존 이름이 요구 사항을 충족하지 않는 시기를 지정합니다. 클래스가 구현하는 공용 인터페이스를 이름으로 지정합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 이 특성을 사용하는 방법을 보여 줍니다. 이 예제에서는 HellowWorldImpl의 런타임 형식 이름이 Test::Native::MyComponent::IHelloWorld입니다.  
   
 ```  

@@ -103,11 +103,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 07b582c8b785adb13acce86497d898c183b3128b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43205147"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43765933"
 ---
 # <a name="cmfctoolbarmenubutton-class"></a>CMFCToolBarMenuButton 클래스
 팝업 메뉴를 포함하는 도구 모음 단추입니다.  
@@ -180,7 +180,7 @@ class CMFCToolBarMenuButton : public CMFCToolBarButton
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CMFCToolBarMenuButton::m_bAlwaysCallOwnerDraw](#m_balwayscallownerdraw)|프레임 워크를 항상 호출 true 이면 [CFrameWndEx::OnDrawMenuImage](../../mfc/reference/cframewndex-class.md#ondrawmenuimage) 단추를 그릴 때.|  
   

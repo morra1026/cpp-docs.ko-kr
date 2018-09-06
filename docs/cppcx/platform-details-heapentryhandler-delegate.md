@@ -16,11 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3526aed9f8acd4c1d385e5b5b0311200dcfd9b54
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42584492"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43766904"
 ---
 # <a name="platformdetailsheapentryhandler-delegate"></a>Platform::Details::HeapEntryHandler 대리자
 이 대리자는 내부 전용이며 개발용으로 사용되지 않아야 합니다.  

@@ -16,11 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 2a318b9608fdf57291444e7b6331e2c2c36f118b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609916"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43764344"
 ---
 # <a name="platformmetadataflagsattribute-attribute"></a>Platform::Metadata::FlagsAttribute 특성
 열거형을 비트 필드 즉, 플래그 집합으로 처리할 수 있음을 나타냅니다.  

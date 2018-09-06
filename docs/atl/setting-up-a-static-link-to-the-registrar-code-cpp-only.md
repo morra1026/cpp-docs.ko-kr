@@ -1,5 +1,5 @@
 ---
-title: 등록 기관 코드 (c + + 전용)에 대 한 정적 링크가 설정 | Microsoft Docs
+title: 등록자 코드 (c + + 전용)에 대 한 정적 링크 설정 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,24 +15,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dca93c8f0fcae578700a9d9970977179fbd142d3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7a66ca33aa95ea6ffd59860cf0a55e51266ef5cb
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360190"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43757700"
 ---
-# <a name="setting-up-a-static-link-to-the-registrar-code-c-only"></a>등록 기관 코드 (c + + 전용)에 대 한 정적 링크가 설정
-C + + 클라이언트 등록자의 코드에 정적 링크를 만들 수 있습니다. 릴리스 빌드로 5k 약 추가 등록자의 파서를 정적으로 연결 합니다.  
-  
- 정적 연결을 설정 하는 가장 간단한 방법은 사용자가 지정한 가정 [DECLARE_REGISTRY_RESOURCEID](reference/registry-macros.md#declare_registry_resourceid) 개체의 선언에 있습니다. (이 ATL에서 사용 되는 기본 사양은)  
-  
-### <a name="to-create-a-static-link-using-declareregistryresourceid"></a>DECLARE_REGISTRY_RESOURCEID를 사용 하 여 정적 링크를 만들려면  
-  
-1.  지정 [/D](../build/reference/d-preprocessor-definitions.md) `_ATL_STATIC_REGISTRY` /D 대신 **_ATL_DLL**합니다.  
-  
-2.  다시 컴파일하십시오.  
-  
-## <a name="see-also"></a>참고 항목  
- [레지스트리 구성 요소 (등록자)](../atl/atl-registry-component-registrar.md)
+# <a name="setting-up-a-static-link-to-the-registrar-code-c-only"></a>등록자 코드 (c + + 전용)에 대 한 정적 링크 설정
+
+C + + 클라이언트 등록자 코드에 정적 링크를 만들 수 있습니다. 릴리스 빌드를 약 5 K 추가 기관의 파서를 정적으로 연결 합니다.
+
+정적 연결을 설정 하는 가장 간단한 방법은 사용자가 지정한 가정 [DECLARE_REGISTRY_RESOURCEID](reference/registry-macros.md#declare_registry_resourceid) 개체의 선언입니다. (이 ATL을 사용한 기본 사양은)
+
+### <a name="to-create-a-static-link-using-declareregistryresourceid"></a>DECLARE_REGISTRY_RESOURCEID를 사용 하 여 정적 링크를 만들려면
+
+1. 지정할 [/D](../build/reference/d-preprocessor-definitions.md) `_ATL_STATIC_REGISTRY` /D 대신 **_ATL_DLL**합니다.
+
+2. 다시 컴파일하십시오.
+
+## <a name="see-also"></a>참고 항목
+
+[레지스트리 구성 요소 (등록자)](../atl/atl-registry-component-registrar.md)
 

@@ -16,11 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: a7b2a0fd8c4903852e88fa80f12bc05894625888
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42588313"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43762693"
 ---
 # <a name="platformarrayreference-class"></a>Platform::ArrayReference 클래스
 `ArrayReference` 는 C 스타일 배열을 입력 데이터로 채울 때 입력 매개 변수에서 [Platform::Array^](../cppcx/platform-array-class.md) 를 대체할 수 있는 최적화 형식입니다.  

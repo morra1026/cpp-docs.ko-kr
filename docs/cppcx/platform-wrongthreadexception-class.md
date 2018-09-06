@@ -17,11 +17,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: dbe88c460dfc3341832abdcda21698357a649570
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597427"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43759917"
 ---
 # <a name="platformwrongthreadexception-class"></a>Platform::WrongThreadException 클래스
 프록시 개체용 인터페이스 포인터를 통해 스레드의 아파트에 속하지 않는 스레드가 호출될 경우 throw됩니다.  

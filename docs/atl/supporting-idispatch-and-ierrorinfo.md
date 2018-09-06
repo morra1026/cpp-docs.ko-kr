@@ -20,18 +20,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94f4c99da3989cce84bd5b6bd3bbfee8df97ff43
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0d9c27dfe81c3bbd2978f418c8e942ac20190b30
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360951"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43753610"
 ---
-# <a name="supporting-idispatch-and-ierrorinfo"></a>IDispatch 및 IErrorInfo를 지원합니다.
-템플릿 클래스를 사용할 수 있습니다 [IDispatchImpl](../atl/reference/idispatchimpl-class.md) 의 기본 구현을 제공 하는 `IDispatch Interface` 개체에는 이중 인터페이스의 부분입니다.  
-  
- 개체가 사용 하는 경우는 `IErrorInfo` 오류를 다시 클라이언트에 사용자 개체가 지원 해야 하며 보고서에 대 한 인터페이스는 `ISupportErrorInfo Interface` 인터페이스입니다. 템플릿 클래스 [ISupportErrorInfoImpl](../atl/reference/isupporterrorinfoimpl-class.md) 개체에서 오류를 생성 하는 단일 인터페이스 하나만 있는 경우이 구현 하는 쉬운 방법을 제공 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [ATL COM 개체 기본 사항](../atl/fundamentals-of-atl-com-objects.md)
+# <a name="supporting-idispatch-and-ierrorinfo"></a>IDispatch 및 IErrorInfo 지원
+
+템플릿 클래스를 사용할 수 있습니다 [IDispatchImpl](../atl/reference/idispatchimpl-class.md) 의 기본 구현을 제공 하는 `IDispatch Interface` 개체에 이중 인터페이스의 일부입니다.
+
+개체를 사용 하는 경우는 `IErrorInfo` 오류를 클라이언트에 다시 개체를 지원 해야 보고서에 대 한 인터페이스를 `ISupportErrorInfo Interface` 인터페이스입니다. 템플릿 클래스 [ISupportErrorInfoImpl](../atl/reference/isupporterrorinfoimpl-class.md) 개체에서 오류를 생성 하는 단일 인터페이스 하나만 있는 경우이 구현 하는 쉬운 방법을 제공 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[ATL COM 개체 기본 사항](../atl/fundamentals-of-atl-com-objects.md)
 

@@ -16,46 +16,47 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e39b0b1ac94a759c4a8b30fce8c634ed49be4ff9
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: bdf9ad03df6a342d47919eb576227422f687d15b
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209481"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43755633"
 ---
 # <a name="notifyhandler"></a>NotifyHandler
-메시지 맵에서 NOTIFY_HANDLER 매크로의 세 번째 매개 변수로 식별 된 함수의 이름입니다.  
-  
-## <a name="syntax"></a>구문  
-  
+
+메시지 맵에서 NOTIFY_HANDLER 매크로의 세 번째 매개 변수로 식별 된 함수의 이름입니다.
+
+## <a name="syntax"></a>구문
+
 ```  
- 
-    LRESULT 
-    NotifyHandler 
- (
+LRESULT NotifyHandler(
     int idCtrl,  
     LPNMHDR pnmh,  
     BOOL& bHandled);
-```  
-  
-#### <a name="parameters"></a>매개 변수  
- *idCtrl*  
- 메시지를 전송 하는 컨트롤의 식별자입니다.  
-  
- *pnmh*  
- 주소는 [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) 알림 코드 및 추가 정보를 포함 하는 구조입니다. 일부 알림 메시지의 경우이 매개 변수가 가리키는 있는 더 큰 구조체는 `NMHDR` 첫 번째 멤버로 구조체입니다.  
-  
- *bHandled*  
- 메시지 맵 집합 *bHandled* 하기 전에 true *NotifyHandler* 라고 합니다. 경우 *NotifyHandler* 메시지를 완전히 처리 하지 않는 설정 해야 *bHandled* 에 **FALSE** 를 나타내는 메시지에 추가 처리가 필요 합니다.  
-  
-## <a name="return-value"></a>반환 값  
- 메시지 처리의 결과입니다. 성공한 경우 0입니다.  
-  
-## <a name="remarks"></a>설명  
- 메시지 맵에서이 메시지 처리기를 사용 하 여 예제를 참조 하세요 [NOTIFY_HANDLER](reference/message-map-macros-atl.md#notify_handler)).  
-  
-## <a name="see-also"></a>참고 항목  
- [창 구현](../atl/implementing-a-window.md)   
- [메시지 맵](../atl/message-maps-atl.md)   
- [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)
+```
 
+#### <a name="parameters"></a>매개 변수
+
+*idCtrl*  
+메시지를 전송 하는 컨트롤의 식별자입니다.
+
+*pnmh*  
+주소는 [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) 알림 코드 및 추가 정보를 포함 하는 구조입니다. 일부 알림 메시지의 경우이 매개 변수가 가리키는 있는 더 큰 구조체는 `NMHDR` 첫 번째 멤버로 구조체입니다.
+
+*bHandled*  
+메시지 맵 집합 *bHandled* 하기 전에 true *NotifyHandler* 라고 합니다. 경우 *NotifyHandler* 메시지를 완전히 처리 하지 않는 설정 해야 *bHandled* 에 **FALSE** 를 나타내는 메시지에 추가 처리가 필요 합니다.
+
+## <a name="return-value"></a>반환 값
+
+메시지 처리의 결과입니다. 성공한 경우 0입니다.
+
+## <a name="remarks"></a>설명
+
+메시지 맵에서이 메시지 처리기를 사용 하 여 예제를 참조 하세요 [NOTIFY_HANDLER](reference/message-map-macros-atl.md#notify_handler)).
+
+## <a name="see-also"></a>참고 항목
+
+[창 구현](../atl/implementing-a-window.md)   
+[메시지 맵](../atl/message-maps-atl.md)   
+[WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)

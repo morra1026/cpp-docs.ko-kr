@@ -16,21 +16,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 571cee9a309f1e980e62521215a717e6af432b08
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 995693a73fde41a3f5e31d81224b96d12edb2c46
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964116"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43763281"
 ---
 # <a name="mmc-snap-in-classes"></a>MMC 스냅인 클래스
-Microsoft Management Console (MMC) 스냅인에서 구성 요소를 개발에 대 한 지원을 제공 하는 다음 클래스:  
-  
--   [CSnapInItemImpl](../atl/reference/csnapinitemimpl-class.md) 메뉴 항목 및 도구 모음을 추가 하 고 적절 한 처리기 함수에 스냅인에서 노드에 대 한 명령을 전달 등 스냅인 노드 개체를 구현 합니다.  
-  
--   [CSnapInPropertyPageImpl](../atl/reference/csnapinpropertypageimpl-class.md) 스냅인 속성 페이지 개체를 구현 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [클래스 개요](../atl/atl-class-overview.md)   
- [스냅인 개체 매크로](../atl/reference/snap-in-object-macros.md)
+
+Microsoft Management Console (MMC) 스냅인에서 구성 요소를 개발에 대 한 지원을 제공 하는 다음 클래스:
+
+- [CSnapInItemImpl](../atl/reference/csnapinitemimpl-class.md) 메뉴 항목 및 도구 모음을 추가 하 고 적절 한 처리기 함수에 스냅인에서 노드에 대 한 명령을 전달 등 스냅인 노드 개체를 구현 합니다.
+
+- [CSnapInPropertyPageImpl](../atl/reference/csnapinpropertypageimpl-class.md) 스냅인 속성 페이지 개체를 구현 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[클래스 개요](../atl/atl-class-overview.md)   
+[스냅인 개체 매크로](../atl/reference/snap-in-object-macros.md)
 

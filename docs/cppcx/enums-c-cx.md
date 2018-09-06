@@ -10,11 +10,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 725e2b9edb7ba2a84418e900ffb1aafe4c5064af
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593966"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43758903"
 ---
 # <a name="enums-ccx"></a>열거형(C++/CX)
 C + + /cli CX 지원 합니다 `public enum class` 표준 c + +과 유사한 키워드를 `scoped  enum`입니다. `public enum class` 키워드를 사용하여 선언된 열거자를 사용할 경우 열거형 식별자를 사용하여 각 열거자 값의 범위를 지정해야 합니다.  

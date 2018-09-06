@@ -15,21 +15,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99dc173f3dde8ea81f6dc11d02298cd94673f999
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a482486be66811954602849c4bdde5b8955c887f
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32354069"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43763216"
 ---
 # <a name="dual-interfaces-and-events"></a>이중 인터페이스 및 이벤트
-이중으로는 이벤트 인터페이스를 디자인할 수 있지만 이렇게 하려면 하지 좋은 디자인 상의 이유로의 여러 가지가 있습니다. 기본 이유는 이벤트의 소스는 vtable 또는 통해 이벤트 발생만 `Invoke`하나만 있습니다. 이벤트 소스 직접 vtable 메서드 호출으로 이벤트를 발생 시키는 경우에 `IDispatch` 메서드를 사용 하지 않을 인터페이스 순수 vtable 인터페이스 되었는지가 명확 하 고 있습니다. 이벤트 소스에 대 한 호출으로 이벤트를 발생 시킨 경우 `Invoke`, vtable 메서드를 사용 하지 않을 있고 그것이 인터페이스는 dispinterface 되었는지가 명확 합니다. 이중 이벤트 인터페이스를 정의 하는 경우 일부 사용 되지 것입니다는 인터페이스를 구현 하는 클라이언트 필요 합니다.  
-  
+
+이중 이벤트 인터페이스를 디자인할 수 있지만, 여러 가지 좋은 디자인 이유로 이렇게 필요가 있습니다. 기본 원인은 이벤트의 원본 또는 vtable을 통해 이벤트를 발생만 됩니다 `Invoke`하나만 있습니다. 이벤트 소스를 직접 vtable 메서드 호출으로 이벤트를 실행 하는 경우는 `IDispatch` 메서드를 사용 하지 않을 인터페이스 해야 셨 기를 순수 vtable 인터페이스를 명확 합니다. 이벤트 소스에 대 한 호출으로 이벤트를 발생 하는 경우 `Invoke`, vtable 메서드를 사용 하지 않을 이며 인터페이스 해야 되었는지는 dispinterface의 선택을 취소 합니다. 이중 이벤트 인터페이스를 정의 하는 경우 일부 기본값이 사용 되지 것입니다 하는 인터페이스를 구현 하는 클라이언트 요구 됩니다.
+
 > [!NOTE]
->  이 인수 일반적으로 이중 인터페이스에 적용 되지 않습니다. 구현 측면에서 볼 때 이중은의 다양 한 클라이언트에 액세스할 수 있는 인터페이스를 구현 하는 빠르고 편리한, 완벽 하 게 지원 방법입니다.  
-  
- 이중 인터페이스; 방지 하는 이유 추가 됩니다. Internet Explorer 나 Visual Basic을 지원 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [이중 인터페이스 및 ATL](../atl/dual-interfaces-and-atl.md)
+>  이 인수에서 일반적으로 이중 인터페이스에 적용 되지 않습니다. 구현 측면에서 볼 때 이중 빠르고 편리 하 고 잘 지원 되는 다양 한 범위의 클라이언트에 액세스할 수 있는 인터페이스를 구현할 수는 있습니다.
+
+이중 이벤트 인터페이스를 방지 하는 이유 추가 됩니다. Visual Basic 아니고 Internet Explorer 지원 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[이중 인터페이스 및 ATL](../atl/dual-interfaces-and-atl.md)
 

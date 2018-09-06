@@ -19,11 +19,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 6774aa0d90e9903798cd2a77a480782b669fdc57
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42586637"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43758770"
 ---
 # <a name="platformexception-class"></a>Platform::Exception 클래스
 응용 프로그램을 실행할 때 나타나는 오류를 나타냅니다. 사용자 지정 예외 클래스는 `Platform::Exception`에서 파생될 수 없습니다. 사용자 지정 예외가 필요한 경우 `Platform::COMException` 을 사용하고 앱 관련 HRESULT를 지정할 수 있습니다.  

@@ -16,11 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 4cf37857e12eb795ebfa4c5c115bc80a1688d69e
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677154"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43756215"
 ---
 # <a name="threading-and-marshaling-ccx"></a>스레딩 및 마샬링(C++/CX)
 대부분의 경우에 표준 c + + 개체와 같은 Windows 런타임 클래스의 인스턴스는 모든 스레드에서 액세스할 수 있습니다. 이러한 클래스를 "agile"이라고 합니다. 그러나 소수의 Windows와 함께 제공 되는 Windows 런타임 클래스는 agile, 및 표준 c + + 개체 보다는 COM 개체 처럼 더 사용 해야 합니다. agile이 아닌 클래스를 사용하기 위해 COM 전문가일 필요는 없지만 클래스의 스레딩 모델과 마샬링 동작을 고려해야 합니다. 이 문서에서는 agile이 아닌 클래스의 인스턴스를 사용해야 하는 드문 경우에 대한 배경 정보와 지침을 제공합니다.  

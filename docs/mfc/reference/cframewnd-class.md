@@ -117,11 +117,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 991b8c55c02272613ce329be9a053ff0110f1926
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42538544"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43764877"
 ---
 # <a name="cframewnd-class"></a>CFrameWnd 클래스
 창 관리를 위한 멤버와 함께 겹쳐진 Windows SDI(단일 문서 인터페이스) 또는 팝업 프레임 창의 기능을 제공합니다.  
@@ -281,7 +281,7 @@ virtual void ActivateFrame(int nCmdShow = -1);
   
  프레임을 활성화 하는 방법을 변경 하려면이 멤버 함수를 재정의 합니다. 예를 들어 MDI 자식 창을 최대화 할 수 있습니다. 적절 한 기능을 추가한 다음 명시적 기본 클래스 버전을 호출 *nCmdShow*합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCWindowing#1](../../mfc/reference/codesnippet/cpp/cframewnd-class_1.cpp)]  
   
 ##  <a name="beginmodalstate"></a>  CFrameWnd::BeginModalState  
@@ -428,7 +428,7 @@ void EnableDocking(DWORD dwDockStyle);
 ### <a name="remarks"></a>설명  
  기본적으로 컨트롤 막대의 순서로 프레임 창의 쪽에 도킹 됩니다: 위쪽, 아래쪽, 왼쪽, 오른쪽입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   예를 참조 하세요 [CToolBar::Create](../../mfc/reference/ctoolbar-class.md#create)합니다.  
   
 ##  <a name="endmodalstate"></a>  CFrameWnd::EndModalState  
@@ -750,7 +750,7 @@ BOOL m_bAutoMenuEnable;
   
  이 데이터 멤버는 현재 선택 영역을 기반으로 하는 선택적 명령 구현을 간소화 하 고 활성화 및 비활성화 메뉴 항목에 대 한 ON_UPDATE_COMMAND_UI 처리기를 작성할 필요가 줄어듭니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCWindowing#3](../../mfc/reference/codesnippet/cpp/cframewnd-class_3.cpp)]  
   
 ##  <a name="negotiateborderspace"></a>  CFrameWnd::NegotiateBorderSpace  

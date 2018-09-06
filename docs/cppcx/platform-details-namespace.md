@@ -16,11 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 4c59120c0da1939ceb108493323b24d7a15d0730
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593400"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43766736"
 ---
 # <a name="platformdetails-namespace"></a>Platform::Details 네임스페이스
 이 네임스페이스는 내부 전용이며 개발용으로 사용되지 않아야 합니다.  
@@ -37,7 +37,7 @@ namespace Platform {
 ### <a name="members"></a>멤버  
  이 네임스페이스는 내부용으로 설계되었지만 브라우저에서 이 네임스페이스의 다음 멤버를 표시할 수 있습니다.  
   
-|name|설명|  
+|이름|설명|  
 |----------|------------|  
 |콘솔|클래스입니다. 단위 테스트의 출력을 표시합니다.|  
 |_GUID|구조체|  

@@ -117,11 +117,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1c1d483f6ba532a6d8eeee1a8ec831cfd1d94b62
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43678011"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43766167"
 ---
 # <a name="colecontrolsite-class"></a>COleControlSite 클래스
 사용자 지정 클라이언트 측 컨트롤 인터페이스를 지원합니다.  
