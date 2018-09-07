@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4cef7f0b51d9dc7a44e6dbc45c32f1296825ca30
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 5a1e4f530cbc0f8bd92e90edf549c8b05fdcb152
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961508"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108918"
 ---
 # <a name="logicalor-struct"></a>logical_or 구조체
 
@@ -35,7 +35,7 @@ template <class Type = void>
 struct logical_or : public binary_function<Type, Type, bool>
 {
     bool operator()(const Type& Left, const Type& Right) const;
- };
+};
 
 // specialized transparent functor for operator||
 template <>
@@ -44,16 +44,18 @@ struct logical_or<void>
   template <class T, class U>
   auto operator()(T&& Left, U&& Right) const`
     -> decltype(std::forward<T>(Left) || std::forward<U>(Right));
- };
+};
 ```
 
 ### <a name="parameters"></a>매개 변수
 
 *형식*, *T*합니다 *U* 지 원하는 모든 형식은 `operator||` 지정 되었거나 유추 된 형식의 피연산자를 사용 하는 합니다.
 
-*왼쪽* 논리합 연산의 왼쪽된 피연산자. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *T*합니다.
+*왼쪽*<br/>
+논리합 연산의 왼쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *T*합니다.
 
-*오른쪽* 논리합 연산의 오른쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *U*합니다.
+*오른쪽*<br/>
+논리합 연산의 오른쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *U*합니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -63,7 +65,7 @@ struct logical_or<void>
 
 사용자 정의 형식의 경우 피연산자 평가의 단락(short-circuiting)이 없습니다. 두 인수 모두 `operator||`로 평가됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // functional_logical_or.cpp
@@ -114,11 +116,11 @@ int main( )
 }
 \* Output:
 Original deque:
- d1 = ( true true false false true false false )
+d1 = ( true true false false true false false )
 Original deque:
- d2 = ( false false false true true true true )
+d2 = ( false false false true true true true )
 The deque which is the disjuction of d1 & d2 is:
- d3 = ( true true false true true true true )
+d3 = ( true true false true true true true )
 *\
 
 ```

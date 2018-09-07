@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::operator&lt;&lt; (bitset)
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d01a9ad5ef0b5cc3198231ae2b361e04856449f
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 83e6e1bc3d35f076d3a1b8fd2151ad4c94c060cb
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955022"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107658"
 ---
 # <a name="ltbitsetgt-operators"></a>&lt;bitset&gt; 연산자
 
@@ -48,15 +48,17 @@ operator&(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 해당 요소가와 비트 결합할 두 bitset 중 첫 번째 `AND`입니다.
+*left*<br/>
+각각의 요소를 비트 `AND`로 결합할 두 bitset 중 첫 번째입니다.
 
-*오른쪽* 해당 요소가와 비트 결합할 두 valarray 중 두 번째 `AND`입니다.
+*right*<br/>
+각각의 요소를 비트 `AND`로 결합할 두 valarray 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
 
 요소가 수행한 결과 bitset를 `AND` 의 해당 요소에 대 한 작업 *왼쪽* 하 고 *오른쪽*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // bitset_and.cpp
@@ -98,7 +100,8 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 형식의 개체 **bitset\<N >** 문자열로 출력 스트림에 삽입 될 하는 것입니다.
+*right*<br/>
+출력 스트림에 문자열로 삽입할 **bitset\<N>** 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -110,7 +113,7 @@ basic_ostream<CharType, Traits>& operator<<(
 
 **ostr** << _ *Right*. [to_string](bitset-class.md) < **CharType**, **Traits**, **allocator**\< **CharType**> > ( )
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // bitset_op_insert.cpp
@@ -157,9 +160,11 @@ _Istr,
 
 ### <a name="parameters"></a>매개 변수
 
-*_Istr* bitset에 삽입할 입력 스트림에 입력 되는 문자열입니다.
+*_Istr*<br/>
+bitset에 삽입할 입력 스트림에 입력되는 문자열입니다.
 
-*오른쪽* 입력 스트림에서 비트를 수신 하는 bitset입니다.
+*right*<br/>
+입력 스트림에서 비트를 수신하는 bitset입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -177,7 +182,7 @@ _Istr,
 
 - 0 또는 1이 아닌 입력 요소가 발견될 때까지
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <bitset>
@@ -240,15 +245,17 @@ operator^(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 해당 요소가와 비트 결합할 두 bitset 중 첫 번째 `EXCLUSIVE-OR`입니다.
+*left*<br/>
+각각의 요소를 비트 `EXCLUSIVE-OR`로 결합할 두 bitset 중 첫 번째입니다.
 
-*오른쪽* 해당 요소가와 비트 결합할 두 valarray 중 두 번째 `EXCLUSIVE-OR`입니다.
+*right*<br/>
+각각의 요소를 비트 `EXCLUSIVE-OR`로 결합할 두 valarray 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
 
 요소가 수행한 결과 bitset를 `EXCLUSIVE-OR` 의 해당 요소에 대 한 작업 *왼쪽* 하 고 *오른쪽*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // bitset_xor.cpp
@@ -290,15 +297,17 @@ operator|(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 해당 요소가와 비트 결합할 두 bitset 중 첫 번째 `OR`입니다.
+*left*<br/>
+각각의 요소를 비트 `OR`로 결합할 두 bitset 중 첫 번째입니다.
 
-*오른쪽* 해당 요소가와 비트 결합할 두 valarray 중 두 번째 `OR`입니다.
+*right*<br/>
+각각의 요소를 비트 `OR`로 결합할 두 valarray 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
 
 요소가 수행한 결과 bitset를 `OR` 의 해당 요소에 대 한 작업 *왼쪽* 하 고 *오른쪽*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // bitset_or.cpp

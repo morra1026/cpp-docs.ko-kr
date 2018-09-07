@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 70a0615debabb056110dd9d6f7a6aac86e9d464a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 217346a08f4dc800c3d335baa77c355e0f327336
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43198317"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105317"
 ---
 # <a name="pgomgr"></a>pgomgr
 
@@ -50,7 +50,8 @@ ms.locfileid: "43198317"
 *pgcfiles*<br/>
 하나 이상의.pgc 파일.pgd 파일에 병합 하려는 프로필 데이터입니다. 단일.pgc 파일 또는 여러.pgc 파일을 지정할 수 있습니다. .Pgc 파일을 지정 하지 않는 경우 **pgomgr** 해당 파일 이름이.pgd 파일로 같습니다 모든.pgc 파일을 병합 합니다.
 
-*pgdfile* .pgd 파일에 병합 하는.pgc 파일 또는 파일의 데이터입니다.
+*pgdfile*<br/>
+.Pgc 파일 또는 파일에서 데이터를 병합할.pgd 파일입니다.
 
 ## <a name="remarks"></a>설명
 

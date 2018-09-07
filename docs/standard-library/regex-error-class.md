@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7983857b3814f8ddd9c10ab37676bc2e87e9a59c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 6cdf1f5a3a8477e0af7d6bb04426599df590fffa
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964147"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102683"
 ---
 # <a name="regexerror-class"></a>regex_error 클래스
 
@@ -32,7 +32,7 @@ ms.locfileid: "38964147"
 
 ```cpp
 class regex_error
- : public std::runtime_error {
+: public std::runtime_error {
 public:
     explicit regex_error(regex_constants::error_code error);
 
@@ -64,7 +64,7 @@ regex_constants::error_code code() const;
 
 멤버 함수는 개체의 생성자에 전달된 값을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_error_code.cpp
@@ -111,13 +111,14 @@ regex_error(regex_constants::error_code error);
 
 ### <a name="parameters"></a>매개 변수
 
-*오류* 오류 코드입니다.
+*error*<br/>
+오류 코드입니다.
 
 ### <a name="remarks"></a>설명
 
 값을 보유 하는 개체를 생성 하는 생성자 *오류*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_error_construct.cpp

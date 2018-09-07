@@ -9,17 +9,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff2fc36582e6ffbff8f7608a5a26cc472687132e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1bd61fd12c555c42f3226d523a519c29f1d09c10
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760980"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102696"
 ---
 # <a name="wrl-integration-ccx"></a>WRL 통합(C++/CX)
 
 자유롭게 WRL 코드와 Windows 런타임 c + + 템플릿 라이브러리 (WRL) 코드를 혼합할 수 있습니다. 동일한 번역 단위에 WRL 개체 핸들을 사용 하 여 선언 된 개체를 사용할 수 있습니다 (`^`) 표기법 및 WRL 스마트 포인터 (`ComPtr<T>`) 표기법입니다. 그러나 반환 값 및 WRL HRESULT 오류 코드 및 WRL 예외 처리 수동으로 해야 합니다.
-  
+
 ## <a name="wrl-development"></a>WRL 개발
 
 작성 하 고 WRL 구성 요소를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [Windows 런타임 c + + 템플릿 라이브러리 (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)합니다.
@@ -115,9 +115,8 @@ IVector<String^>^ GetTypeMethods(Object^ instance)
     }
     return retVal;
 }
-
 ```
 
 ## <a name="see-also"></a>참고자료
 
-[다른 언어와 상호 운용](interoperating-with-other-languages-c-cx.md)  
+[다른 언어와 상호 운용](interoperating-with-other-languages-c-cx.md)

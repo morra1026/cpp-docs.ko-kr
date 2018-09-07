@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d3549d222ccfcf317b2621c2e2f8869b6634249
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: bdc179413b3e5d77646be4ccb98f23bcff407fb7
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959221"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110268"
 ---
 # <a name="ismemberpointer-class"></a>is_member_pointer 클래스
 
@@ -37,13 +37,14 @@ struct is_member_pointer;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty* 쿼리할 형식입니다.
+*Ty*<br/>
+형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
 형식 조건자의 인스턴스 형태인 경우 true 형식을 *Ty* 멤버 함수에 대 한 포인터 또는 멤버 개체에 대 한 포인터 또는 `cv-qualified` 형태의 그 중 하나, 그렇지 않으면 false입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // std__type_traits__is_member_pointer.cpp

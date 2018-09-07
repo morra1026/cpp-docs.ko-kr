@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 222aef46fb8080ba044904dbbedd5546cec51929
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: c9a9661bc61d59d6ca5b0aff1889a6bb736a1001
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963091"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103229"
 ---
 # <a name="uniformrealdistribution-class"></a>uniform_real_distribution 클래스
 
@@ -77,11 +77,12 @@ public:
    result_type min() const;
    result_type max() const;
 };
- ```
+```
 
 ### <a name="parameters"></a>매개 변수
 
-*RealType* 부동 소수점 결과 형식에 기본값이 **double**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*RealType*<br/>
+부동 소수점 결과 형식으로 기본값으로 **이중**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -104,7 +105,7 @@ public:
 
 분포 클래스 및 이러한 클래스의 구성원에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // compile with: /EHsc /W4

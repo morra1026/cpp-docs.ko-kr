@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18332f0c5d452c04079ff68bebbbdae19c4ed0d5
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: e3af150fc4b7af05f9650906d6b6596e8f9661cc
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953881"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108379"
 ---
 # <a name="removeallextents-class"></a>remove_all_extents 클래스
 
@@ -40,13 +40,14 @@ using remove_all_extents_t = typename remove_all_extents<T>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*T* 수정할 형식입니다.
+*T*<br/>
+수정할 형식입니다.
 
 ## <a name="remarks"></a>설명
 
 인스턴스의 `remove_all_extents<T>` 는 수정 된 형식인 배열 형식의 요소 형식인 *T* 모든 배열 차원이 제거를 사용 하 여 또는 *T* 하는 경우 *T* 배열 형식이 아닙니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 #include <type_traits>

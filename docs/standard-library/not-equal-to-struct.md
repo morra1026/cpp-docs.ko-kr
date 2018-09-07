@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e02a48fddfb2e5ff8f85b59b1ff241492461e521
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 8be70ac575d5459ea6f88ed19d60dbfe0ddfda14
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966357"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108787"
 ---
 # <a name="notequalto-struct"></a>not_equal_to 구조체
 
@@ -51,9 +51,11 @@ struct not_equal_to<void>
 
 *형식*, *T*합니다 *U* 지 원하는 모든 형식은 `operator!=` 지정 되었거나 유추 된 형식의 피연산자를 사용 하는 합니다.
 
-*왼쪽* 같지 않음 연산의 왼쪽된 피연산자. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *T*합니다.
+*왼쪽*<br/>
+같지 않음 연산의 왼쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *T*합니다.
 
-*오른쪽* 같지 않음 연산의 오른쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *U*합니다.
+*오른쪽*<br/>
+같지 않음 연산의 오른쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *U*합니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -63,7 +65,7 @@ struct not_equal_to<void>
 
 형식의 개체 *형식* 같은지 비교할 수 있어야 합니다. 이를 위해서는 개체 집합에서 정의된 `operator!=`가 동등 관계의 수학적 속성을 충족해야 합니다. 기본 제공되는 숫자 및 포인터 형식은 모두 이 요구 사항을 충족합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // functional_not_equal_to.cpp

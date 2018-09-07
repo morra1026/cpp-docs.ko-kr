@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cfc3f744da2deb804f1a3e3445fbed3da3fac0b5
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 55a97c1928babd32279253546ac53efd950d6c5e
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955788"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110333"
 ---
 # <a name="divides-struct"></a>divides 구조체
 
@@ -44,22 +44,24 @@ struct divides<void>
   template <class T, class U>
   auto operator()(T&& Left, U&& Right) const
     -> decltype(std::forward<T>(Left)*/ std::forward<U>(Right));
- };
+};
 ```
 
 ### <a name="parameters"></a>매개 변수
 
 *형식*, *T*합니다 *U* 지 원하는 형식은 `operator/` 지정 되었거나 유추 된 형식의 피연산자를 사용 하는 합니다.
 
-*왼쪽* 나누기 연산의 왼쪽된 피연산자. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *T*합니다.
+*왼쪽*<br/>
+나누기 연산의 왼쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *T*합니다.
 
-*오른쪽* 나누기 연산의 오른쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *U*합니다.
+*오른쪽*<br/>
+나누기 연산의 오른쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *U*합니다.
 
 ## <a name="return-value"></a>반환 값
 
 `Left / Right`의 결과입니다. 특수화된 템플릿은 `operator/`에 의해 반환되는 형식을 가지고 있는 결과를 완벽하게 전달합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // functional_divides.cpp

@@ -9,12 +9,12 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 403d8e4e-0b3f-43fb-bc5a-8100c4f331c5
-ms.openlocfilehash: ecc6640dd41fcc6a275de10becf1d9c03128f562
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: b9c6fe6b39b771b81b6508c10abd43c71774f9a7
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966656"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108260"
 ---
 # <a name="lthashsetgt-operators"></a>&lt;hash_set&gt; 연산자
 
@@ -36,9 +36,11 @@ bool operator!=(const hash_set <Key, Traits, Allocator>& left, const hash_set <K
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `hash_set`합니다.
+*left*<br/>
+`hash_set` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `hash_set`합니다.
+*right*<br/>
+`hash_set` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -50,7 +52,7 @@ hash_set 개체 간의 비교는 해당 요소 간의 쌍 비교를 기반으로
 
 멤버는 [< hash_map >](../standard-library/hash-map.md) 하 고 [< hash_set >](../standard-library/hash-set.md) 헤더 파일에는 [stdext Namespace](../standard-library/stdext-namespace.md).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // hash_set_op_ne.cpp
@@ -102,9 +104,11 @@ bool operator!==(const hash_set <Key, Traits, Allocator>& left, const hash_set <
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `hash_set`합니다.
+*left*<br/>
+`hash_set` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `hash_set`합니다.
+*right*<br/>
+`hash_set` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -114,7 +118,7 @@ bool operator!==(const hash_set <Key, Traits, Allocator>& left, const hash_set <
 
 hash_set 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 포함된 요소 수가 같고 개별 요소의 값이 같으면 두 hash_set은 같은 것이고 그렇지 않으면 목록은 같지 않은 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // hash_set_op_eq.cpp
@@ -166,9 +170,11 @@ bool operator!=(const hash_multiset <Key, Traits, Allocator>& left, const hash_m
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `hash_multiset`합니다.
+*left*<br/>
+`hash_multiset` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `hash_multiset`합니다.
+*right*<br/>
+`hash_multiset` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -178,7 +184,7 @@ hash_multiset이 같지 않으면 **true**이고, hash_multiset이 같으면 **f
 
 hash_multiset 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 포함된 요소 수가 같고 개별 요소의 값이 같으면 두 hash_multiset은 같은 것이고 그렇지 않으면 목록은 같지 않은 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // hashset_op_ne.cpp
@@ -230,9 +236,11 @@ bool operator!==(const hash_multiset <Key, Traits, Allocator>& left, const hash_
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `hash_multiset`합니다.
+*left*<br/>
+`hash_multiset` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `hash_multiset`합니다.
+*right*<br/>
+`hash_multiset` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -242,7 +250,7 @@ bool operator!==(const hash_multiset <Key, Traits, Allocator>& left, const hash_
 
 hash_multiset 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 포함된 요소 수가 같고 개별 요소의 값이 같으면 두 hash_multiset은 같은 것이고 그렇지 않으면 목록은 같지 않은 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // hash_multiset_op_eq.cpp

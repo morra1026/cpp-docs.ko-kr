@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de84f708957074878fba84ebfe3db600a1b6ed86
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 299d11ea29afa5331ef79c7947ccd2684713b29e
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954814"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108904"
 ---
 # <a name="moneyput-class"></a>money_put 클래스
 
@@ -47,9 +47,11 @@ class money_put : public locale::facet;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType* 로캘의 문자를 인코딩하기 위해 프로그램 내에서 사용 되는 형식입니다.
+*CharType*<br/>
+로캘의 문자를 인코딩하기 위해 프로그램 내 사용하는 형식입니다.
 
-*OutputIterator* 는 통화 put 함수가 반복기의 형식 출력을 작성 합니다.
+*OutputIterator*<br/>
+통화 put 함수가 출력을 쓰는 반복기의 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -117,15 +119,20 @@ virtual iter_type do_put(
 
 ### <a name="parameters"></a>매개 변수
 
-*다음* 삽입된 된 문자열의 첫 번째 요소를 지정 하는 반복기입니다.
+*next*<br/>
+삽입된 문자열의 첫 번째 요소 주소를 지정하는 반복기입니다.
 
-*_Intl* 시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값: **true** 경우 국제 **false** 국내의 경우.
+*_Intl*<br/>
+시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값입니다. 국제의 경우 **true**이고 국내의 경우 **false**입니다.
 
-*_Iosbase* 형식 플래그는 경우 필요한 것이 고, 그렇지 않으면 집합 통화 기호가 선택 사항임을 나타냅니다
+*_Iosbase*<br/>
+집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
-*_Fill* 간격에 사용 되는 문자입니다.
+*_Fill*<br/>
+간격에 사용되는 문자입니다.
 
-*val* 변환할 문자열 개체입니다.
+*val*<br/>
+변환할 문자열 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -169,7 +176,7 @@ virtual iter_type do_put(
 
 함수는 **iosbase**. **width**(0)을 호출하여 필드 너비를 0으로 다시 설정합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 **put**에 의해 가상 구성원 함수가 호출되는 [put](#put)의 예제를 참조하세요.
 
@@ -195,7 +202,8 @@ explicit money_put(size_t _Refs = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Refs* 개체에 대 한 메모리 관리의 유형을 지정 하는 데 사용 하는 정수 값입니다.
+*_Refs*<br/>
+개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -234,15 +242,20 @@ iter_type put(
 
 ### <a name="parameters"></a>매개 변수
 
-*다음* 삽입된 된 문자열의 첫 번째 요소를 지정 하는 반복기입니다.
+*next*<br/>
+삽입된 문자열의 첫 번째 요소 주소를 지정하는 반복기입니다.
 
-*_Intl* 시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값: **true** 경우 국제 **false** 국내의 경우.
+*_Intl*<br/>
+시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값입니다. 국제의 경우 **true**이고 국내의 경우 **false**입니다.
 
-*_Iosbase* 형식 플래그는 경우 필요한 것이 고, 그렇지 않으면 집합 통화 기호가 선택 사항임을 나타냅니다
+*_Iosbase*<br/>
+집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
-*_Fill* 간격에 사용 되는 문자입니다.
+*_Fill*<br/>
+간격에 사용되는 문자입니다.
 
-*val* 변환할 문자열 개체입니다.
+*val*<br/>
+변환할 문자열 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -252,7 +265,7 @@ iter_type put(
 
 두 구성원 함수는 모두 [do_put](#do_put)( `next`, `_Intl`, `_Iosbase`, `_Fill`, `val`)을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // money_put_put.cpp

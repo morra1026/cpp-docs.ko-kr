@@ -32,12 +32,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b7b604fd58c3f320b62c022e6b5d1749c1f3a87
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: f6b4faf2ac5f04a2dcc9e1e9112016038fa2fcec
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954892"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106453"
 ---
 # <a name="messages-class"></a>messages 클래스
 
@@ -54,7 +54,8 @@ class messages : public messages_base;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType* 로캘의 문자를 인코딩하기 위해 프로그램 내에서 사용 되는 형식입니다.
+*CharType*<br/>
+로캘의 문자를 인코딩하기 위해 프로그램 내 사용하는 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -114,7 +115,8 @@ void close(catalog _Catval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*_Catval* 닫을 카탈로그입니다.
+*_Catval*<br/>
+닫을 카탈로그입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -130,7 +132,8 @@ virtual void do_close(catalog _Catval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*_Catval* 닫을 카탈로그입니다.
+*_Catval*<br/>
+닫을 카탈로그입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -138,7 +141,7 @@ virtual void do_close(catalog _Catval) const;
 
 *_Catval*은 닫히지 않은 이전에 연 카탈로그에서 가져와야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_close`를 호출하는 [close](#close)에 대한 예제를 참조하세요.
 
@@ -156,13 +159,17 @@ virtual string_type do_get(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Catval* 검색할 메시지 카탈로그를 지정 하는 id 값입니다.
+*_Catval*<br/>
+검색할 메시지 카탈로그를 지정하는 ID 값입니다.
 
-*설정 (_s)* 첫 번째 식별자는 메시지 카탈로그에서 메시지를 찾는 데 사용 합니다.
+*설정 (_s)*<br/>
+메시지 카탈로그에서 메시지를 찾는 데 사용되는 첫 번째 식별자입니다.
 
-*메시지 (_m)* 두 번째 식별자는 메시지 카탈로그에서 메시지를 찾는 데 사용 합니다.
+*메시지 (_m)*<br/>
+메시지 카탈로그에서 메시지를 찾는 데 사용되는 두 번째 식별자입니다.
 
-*_Dfault* 실패 시 반환할 문자열입니다.
+*_Dfault*<br/>
+오류 시 반환할 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -172,7 +179,7 @@ virtual string_type do_get(
 
 보호 된 멤버 함수는 메시지 카탈로그에서 메시지 시퀀스를 가져오려고 시도 *_Catval*합니다. 만들 수 있습니다 사용 *설정 (_s)* 를 *(_m)*, 및 *_Dfault* 그렇게 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_get`을 호출하는 [get](#get)에 대한 예제를 참조하세요.
 
@@ -188,9 +195,11 @@ virtual catalog do_open(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Catname* 검색할 카탈로그의 이름입니다.
+*_Catname*<br/>
+검색할 카탈로그의 이름입니다.
 
-*_Loc* 카탈로그에 대 한 검색 되는 로캘입니다.
+*_Loc*<br/>
+카탈로그에서 검색되는 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -202,7 +211,7 @@ virtual catalog do_open(
 
 반환 값은 나중에 [close](#close)를 호출할 때 인수로 사용해야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_open`을 호출하는 [open](#open)에 대한 예제를 참조하세요.
 
@@ -220,13 +229,17 @@ string_type get(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Catval* 검색할 메시지 카탈로그를 지정 하는 id 값입니다.
+*_Catval*<br/>
+검색할 메시지 카탈로그를 지정하는 ID 값입니다.
 
-*설정 (_s)* 첫 번째 식별자는 메시지 카탈로그에서 메시지를 찾는 데 사용 합니다.
+*설정 (_s)*<br/>
+메시지 카탈로그에서 메시지를 찾는 데 사용되는 첫 번째 식별자입니다.
 
-*메시지 (_m)* 두 번째 식별자는 메시지 카탈로그에서 메시지를 찾는 데 사용 합니다.
+*메시지 (_m)*<br/>
+메시지 카탈로그에서 메시지를 찾는 데 사용되는 두 번째 식별자입니다.
 
-*_Dfault* 실패 시 반환할 문자열입니다.
+*_Dfault*<br/>
+오류 시 반환할 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -251,9 +264,11 @@ protected: messages(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Refs* 개체에 대 한 메모리 관리의 유형을 지정 하는 데 사용 하는 정수 값입니다.
+*_Refs*<br/>
+개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
-*_Locname* 는 로캘 이름입니다.
+*_Locname*<br/>
+로캘 이름입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -281,9 +296,11 @@ catalog open(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Catname* 검색할 카탈로그의 이름입니다.
+*_Catname*<br/>
+검색할 카탈로그의 이름입니다.
 
-*_Loc* 카탈로그에 대 한 검색 되는 로캘입니다.
+*_Loc*<br/>
+카탈로그에서 검색되는 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
 

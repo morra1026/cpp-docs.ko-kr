@@ -38,16 +38,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2b527561e312ce9c50dce106a243d7e49a1d303
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7972ddfe6ae9c1d591bdbd4cc5e208d78e826037
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406890"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107556"
 ---
 # <a name="srand"></a>srand
 
-사용 하는 의사 난수 생성기에 대 한 시작 시드 값을 설정 하는 **rand** 함수입니다.
+사용 하는 난수 생성기에 대 한 시작 시드 값을 설정 합니다 **rand** 함수입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -59,15 +59,16 @@ void srand(
 
 ### <a name="parameters"></a>매개 변수
 
-*시드* 의사 난수 생성에 대 한 초기값
+*seed*<br/>
+의사 난수 생성을 위한 시드
 
 ## <a name="remarks"></a>설명
 
-**srand** 함수는 현재 스레드의 의사 난수 정수 계열을 생성 하기 위한 시작 지점을 설정 합니다. 호출 결과의 동일한 시퀀스를 만드는 생성자를 다시 초기화 하려면는 **srand** 함수를 사용 하 여 동일한 *시드* 다시 인수입니다. 다른 모든 값에 대 한 *시드* 생성기 의사 난수 시퀀스에서 서로 다른 시작 지점으로 설정 합니다. **rand** 생성 되는 난수를 검색 합니다. 호출 **rand** 를 호출 하기 전에 **srand** 호출할 때와 동일한 시퀀스를 생성 **srand** 와 *시드* 1로 전달 합니다.
+합니다 **srand** 함수는 현재 스레드에서 일련의 의사 난수 정수 생성을 위한 시작 지점을 설정 합니다. 호출 결과의 순서를 만들도록 생성기를 다시 초기화 해야 합니다 **srand** 함수를 사용한 것과 동일한 *초기값* 인수를 다시 합니다. 에 대 한 다른 모든 값 *시드* 생성기 의사 난수 시퀀스에서 다른 시작 지점으로 설정 합니다. **rand** 생성 된 난수를 검색 합니다. 호출 **rand** 호출 하기 전에 **srand** 호출 하는 것 같은 시퀀스를 생성 **srand** 사용 하 여 *초기값* 1로 전달 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**srand**|\<stdlib.h>|
 

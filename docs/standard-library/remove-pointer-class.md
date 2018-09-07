@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9c8ddf5941394a8979832a753ed73cfda5f0876
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 5ba798b6e67f4813e780740bae27ade69df5c189
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959126"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104227"
 ---
 # <a name="removepointer-class"></a>remove_pointer 클래스
 
@@ -40,13 +40,14 @@ using remove_pointer_t = typename remove_pointer<T>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*T* 수정할 형식입니다.
+*T*<br/>
+수정할 형식입니다.
 
 ## <a name="remarks"></a>설명
 
 인스턴스의 `remove_pointer<T>` 는 형식인 수정 된 `T1` 때 *T* 의 형식은 `T1*`를 `T1* const`를 `T1* volatile`, 또는 `T1* const volatile`고, 그렇지 않으면 *T*합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 #include <type_traits>

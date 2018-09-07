@@ -11,12 +11,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3e12028d91d488aed635adfeedc206eaffe08ae
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2050be008f89ff2d125842d5919407dc292eed40
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43205815"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105837"
 ---
 # <a name="platformcollectionsunorderedmap-class"></a>Platform::Collections::UnorderedMap 클래스
 
@@ -35,13 +35,13 @@ ref class Map sealed;
 
 #### <a name="parameters"></a>매개 변수
 
-*K*  
+*K*<br/>
 키/값 쌍의 키 형식입니다.
 
-*V*  
+*V*<br/>
 키/값 쌍의 값 형식입니다.
 
-*C*  
+*C*<br/>
 두 요소 값을 정렬 키로 비교하여 맵에서 해당 상대 순서를 확인할 수 있는 함수 개체를 제공하는 형식입니다. 기본적으로 [std:: equal_to\<K >](../standard-library/equal-to-struct.md)합니다.
 
 ### <a name="remarks"></a>설명
@@ -87,7 +87,7 @@ ref class Map sealed;
 
 |||
 |-|-|
-|name|설명|
+|이름|설명|
 |[Map:: mapchanged](#mapchanged) 이벤트|Map이 변경될 때 발생합니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
@@ -118,7 +118,7 @@ virtual void Clear();
 
 ```cpp
 virtual Windows::Foundation::Collections::IIterator<
-   Windows::Foundation::Collections::IKeyValuePair<K, V>^>^ 
+   Windows::Foundation::Collections::IKeyValuePair<K, V>^>^
    First();
 ```
 
@@ -158,7 +158,7 @@ bool HasKey(
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 UnorderedMap 요소를 찾는 데 사용되는 키입니다. 유형의 *키* 형식 이름 *K*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -180,10 +180,10 @@ virtual bool Insert(
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 키-값 쌍의 키 부분입니다. 유형의 *키* 형식 이름 *K*합니다.
 
-*값*  
+*값*<br/>
 키-값 쌍의 값 부분입니다. 유형의 *값* 형식 이름 *V*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -204,7 +204,7 @@ V Lookup(
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 UnorderedMap에서 요소를 찾는 데 사용되는 키입니다. 유형의 *키* 형식 이름 *K*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -242,7 +242,7 @@ virtual void Remove(
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 키-값 쌍의 키 부분입니다. 유형의 *키* 형식 이름 *K*합니다.
 
 ## <a name="size"></a>  Unorderedmap:: Size 메서드
@@ -346,31 +346,32 @@ UnorderedMap(
 
 ### <a name="parameters"></a>매개 변수
 
-*InIt*  
+*InIt*<br/>
 현재 UnorderedMap의 형식 이름입니다.
 
-*P*  
+*P*<br/>
 같은지 여부를 확인하기 위해 두 키를 비교할 수 있는 함수 개체입니다. 이 매개 변수의 기본값은 [std:: equal_to\<K >](../standard-library/equal-to-struct.md)합니다.
 
-*H*  
+*H*<br/>
 키에 대한 해시 값을 생성하는 함수 개체입니다. 이 매개 변수의 기본값은 [해시 클래스 1](../standard-library/hash-class.md) 키 형식에 대 한 클래스를 지원 합니다.
 
-*m*  
+*m*<br/>
 참조 또는 [Lvalue 및 Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) 에 [std:: unordered_map](../standard-library/unordered-map-class.md) 현재 UnorderedMap을 초기화 하는 데 사용 되는 합니다.
 
-*il* A [std:: initializer_list](../standard-library/initializer-list-class.md) 의 [std:: pair](../standard-library/pair-structure.md) map를 초기화 하는 데 사용 되는 개체입니다.
+*il*<br/>
+A [std:: initializer_list](../standard-library/initializer-list-class.md) 의 [std:: pair](../standard-library/pair-structure.md) map를 초기화 하는 데 사용 되는 개체입니다.
 
-*first*  
+*first*<br/>
 현재 UnorderedMap을 초기화하는 데 사용되는 요소 범위에서 첫 번째 요소의 입력 반복기입니다.
 
-*last*  
+*last*<br/>
 현재 UnorderedMap을 초기화하는 데 사용되는 요소 범위 다음의 첫 번째 요소의 입력 반복기입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[플랫폼 Namespace](platform-namespace-c-cx.md)  
-[Platform::Collections 네임스페이스](../cppcx/platform-collections-namespace.md)  
-[Platform::Collections::Map 클래스](../cppcx/platform-collections-map-class.md)  
-[Platform::Collections::UnorderedMapView 클래스](../cppcx/platform-collections-unorderedmapview-class.md)  
-[컬렉션](../cppcx/collections-c-cx.md)  
-[C + + Windows 런타임 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)  
+[플랫폼 Namespace](platform-namespace-c-cx.md)<br/>
+[Platform::Collections 네임스페이스](../cppcx/platform-collections-namespace.md)<br/>
+[Platform::Collections::Map 클래스](../cppcx/platform-collections-map-class.md)<br/>
+[Platform::Collections::UnorderedMapView 클래스](../cppcx/platform-collections-unorderedmapview-class.md)<br/>
+[컬렉션](../cppcx/collections-c-cx.md)<br/>
+[C + + Windows 런타임 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

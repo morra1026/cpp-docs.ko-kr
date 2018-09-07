@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13a04f9ba199205d84d94b9b3792c4bafb570319
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 503ce18d5ffa966f6c216468b487851207313937
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766492"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105356"
 ---
 # <a name="cadapt-class"></a>CAdapt 클래스
 
@@ -169,9 +169,10 @@ CAdapt& operator= (CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 ### <a name="parameters"></a>매개 변수
 
 *rSrc*  
-복사할 조정 된 형식의 개체에 대 한 참조입니다. 
+복사할 조정 된 형식의 개체에 대 한 참조입니다.
 
-*rSrCA* 이동할 개체에 대 한 참조입니다.
+*rSrCA*  
+이동할 개체에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
 

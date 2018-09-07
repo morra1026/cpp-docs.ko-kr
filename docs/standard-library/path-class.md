@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ea20d43e2679addc10465cfc549a64fc210274f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4559bec84d7e6051155ad73f68a1ef8ae13ca6cc
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33861690"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104162"
 ---
 # <a name="path-class"></a>path 클래스
 
@@ -33,7 +33,88 @@ ms.locfileid: "33861690"
 class path;
 ```
 
-## <a name="pathappend"></a>path::append
+### <a name="constructors"></a>생성자
+
+|생성자|설명|
+|-|-|
+|[path](#path)|`path`를 생성합니다.|
+
+### <a name="typedefs"></a>형식 정의
+
+|형식 이름|설명|
+|-|-|
+|[const_iterator](#const_iterator)|`iterator`의 동의어입니다.|
+|[iterator](#iterator)|지정 하는 양방향 상수 반복기를 `path` 부분은 `myname`합니다.|
+|[string_type](#string_type)|이 형식은 `basic_string<value_type>`의 동의어입니다.|
+
+### <a name="member-functions"></a>멤버 함수
+
+|멤버 함수|설명|
+|-|-|
+|[append](#append)|지정된 된 시퀀스에 추가 `mypath`, 변환 및 필요에 따라를 preferred_separator를 삽입 합니다.|
+|[assign](#assign)|대체 `mypath` 지정된 된 시퀀스를 사용 하 여 필요에 따라 변환 합니다.|
+|[begin](#begin)|반환 된 `path::iterator` 있는 경우 경로 이름에서 첫 번째 경로 요소를 지정 합니다.|
+|[c_str](#c_str)|첫 번째 문자에 대 한 포인터를 반환 합니다. `mypath`합니다.|
+|[clear](#clear)|실행 `mypath.clear()`합니다.|
+|[compare](#compare)|비교 값을 반환합니다.|
+|[concat](#compare)|지정된 된 시퀀스에 추가 `mypath`, 변환 (그러나 구분 기호를 삽입 하지 않는) 필요에 따라 합니다.|
+|[empty](#empty)|`mypath.empty()`를 반환합니다.|
+|[end](#end)|형식의 시퀀스의 끝 반복기를 반환 `iterator`합니다.|
+|[extension](#extension)|접미사를 반환 `filename()`합니다.|
+|[filename](#filename)|myname의 루트 디렉터리 구성 요소(구체적으로는 `empty() path() : *--end()`)를 반환합니다. 구성 요소는 비어 있을 수 있습니다.|
+|[generic_string](#generic_string)|슬래시로 변환된 백슬래시와 함께 `this->string<Elem, Traits, Alloc>(al)` 를 반환합니다(Windows).|
+|[generic_u16string](#generic_u16string)|슬래시로 변환된 백슬래시와 함께 `u16string()`를 반환합니다(Windows).|
+|[generic_u32string](#generic_u32string)|슬래시로 변환된 백슬래시와 함께 `u32string()`를 반환합니다(Windows).|
+|[generic_u8string](#generic_u8string)|슬래시로 변환된 백슬래시와 함께 `u8string()`를 반환합니다(Windows).|
+|[generic_wstring](#generic_wstring)|슬래시로 변환된 백슬래시와 함께 `wstring()`를 반환합니다(Windows).|
+|[has_extension](#has_extension)|`!extension().empty()`를 반환합니다.|
+|[has_filename](#has_filename)|`!filename().empty()`를 반환합니다.|
+|[has_parent_path](#has_parent_path)|`!parent_path().empty()`를 반환합니다.|
+|[has_relative_path](#has_relative_path)|`!relative_path().empty()`를 반환합니다.|
+|[has_root_directory](#has_root_directory)|`!root_directory().empty()`를 반환합니다.|
+|[has_root_name](#has_root_name)|`!root_name().empty()`를 반환합니다.|
+|[has_root_path](#has_root_path)|`!root_path().empty()`를 반환합니다.|
+|[has_stem](#has_stem)|`!stem().empty()`를 반환합니다.|
+|[is_absolute](#is_absolute)|Windows, 함수 반환 `has_root_name() && has_root_directory()`합니다. Posix에서 함수 반환 `has_root_directory()`합니다.|
+|[is_relative](#is_relative)|`!is_absolute()`를 반환합니다.|
+|[make_preferred](#make_preferred)|필요에 따라 각 구분 기호를 preferred_separator 변환 합니다.|
+|[native](#native)|`myname`를 반환합니다.|
+|[parent_path](#parent_path)|부모 경로 구성 요소를 반환 합니다. `myname`합니다.|
+|[preferred_separator](#preferred_separator)|상수 개체는 호스트 운영 체제에 따라 경로 구성 요소를 구분하는 기본 문자를 제공합니다. |
+|[relative_path](#relative_path)|상대 경로 구성 요소를 반환 `myname`합니다. |
+|[remove_filename](#remove_filename)|파일을 제거합니다.|
+|[replace_extension](#replace_extension)|확장명을 바꿉니다 `myname`합니다. |
+|[replace_filename](#replace_filename)|RReplaces 파일 이름입니다.|
+|[root_directory](#root_directory)|루트 디렉터리 구성 요소를 반환 `myname`합니다. |
+|[root_name](#root_name)|루트 이름 구성 요소를 반환 `myname`합니다. |
+|[root_path](#root_path)|루트 경로 구성 요소를 반환 `myname`합니다.|
+|[stem](#stem)|반환 된 `stem` 구성 요소 `myname`합니다.|
+|[string](#string)|에 저장 된 시퀀스 변환 `mypath`합니다.|
+|[swap](#swap)|실행 `swap(mypath, right.mypath)`합니다.|
+|[u16string](#u16string)|에 저장 된 시퀀스를 변환 `mypath` u t F-16을 반환 형식의 개체에 저장 된 `u16string`합니다.|
+|[u32string](#u32string)|에 저장 된 시퀀스를 변환 `mypath` UTF-32를 반환 형식의 개체에 저장 된 `u32string`합니다.|
+|[u8string](#u8string)|에 저장 된 시퀀스를 변환 `mypath` u t F-8을 반환 형식의 개체에 저장 된 `u8string`합니다.|
+|[value_type](#value_type)|형식은 호스트 운영 체제에서 선호하는 경로 요소를 설명합니다.|
+|[wstring](#wstring)|에 저장 된 시퀀스를 변환 `mypath` 에 대해 호스트 시스템에서 선호 하는 인코딩으로 `wchar_t` 시퀀스 및 반환 형식의 개체에 저장 된 `wstring`합니다.|
+
+### <a name="operators"></a>연산자
+
+|연산자|설명|
+|-|-|
+|[operator=](#op_as)|경로 요소의 다른 경로의 복사본으로 바꿉니다.|
+|[operator+=](#op_add)|다양 한 `concat` 식입니다.|
+|[operator/=](#op_divide)|다양 한 `append` 식입니다.|
+|[string_type 연산자](#op_string)|`myname`를 반환합니다.|
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** \<파일 시스템 >
+
+**네임스페이스:** std::experimental::filesystem
+
+## <a name="append"></a> path:: append
+
+지정된 된 시퀀스에 추가 `mypath`, 변환 및 삽입을 `preferred_separator` 필요에 따라 합니다.
 
 ```cpp
 template <class Source>
@@ -43,9 +124,20 @@ template <class InIt>
 path& append(InIt first, InIt last);
 ```
 
-멤버 함수는 필요에 따라 변환되고 preferred_separator를 삽입하는 지정된 시퀀스를 mypath에 추가합니다.
+### <a name="parameters"></a>매개 변수
 
-## <a name="pathassign"></a>path::assign
+*source*<br/>
+지정 된 시퀀스입니다.
+
+*first*<br/>
+지정 된 시퀀스의 시작입니다.
+
+*last*<br/>
+지정 된 시퀀스의 끝입니다.
+
+## <a name="assign"></a> path:: assign
+
+대체 `mypath` 지정된 된 시퀀스를 사용 하 여 필요에 따라 변환 합니다.
 
 ```cpp
 template <class Source>
@@ -55,33 +147,44 @@ template <class InIt>
 path& assign(InIt first, InIt last);
 ```
 
-멤버 함수는 mypath를 필요에 따라 변환된 지정된 시퀀스로 바꿉니다.
+### <a name="parameters"></a>매개 변수
 
-## <a name="pathbegin"></a>path::begin
+*source*<br/>
+지정 된 시퀀스입니다.
+
+*first*<br/>
+지정 된 시퀀스의 시작입니다.
+
+*last*<br/>
+지정 된 시퀀스의 끝입니다.
+
+## <a name="begin"></a> path:: begin
+
+반환 된 `path::iterator` 있는 경우 경로 이름에서 첫 번째 경로 요소를 지정 합니다.
 
 ```cpp
 iterator begin() const;
 ```
 
-경로 이름에서 첫 번째 경로 요소를 지정하는 path::iterator(있는 경우)를 반환합니다.
+## <a name="c_str"></a> path::c_str
 
-## <a name="pathcstr"></a>path::c_str
+첫 번째 문자에 대 한 포인터를 반환 합니다. `mypath`합니다.
 
 ```cpp
 const value_type& *c_str() const noexcept;
 ```
 
-mypath의 첫 번째 문자에 대한 포인터를 반환합니다.
+## <a name="clear"></a> path:: clear
 
-## <a name="pathclear"></a>path::clear
+실행 `mypath.clear()`합니다.
 
 ```cpp
 void clear() noexcept;
 ```
 
-멤버 함수는 mypath.clear()를 실행합니다.
+## <a name="compare"></a> path:: compare
 
-## <a name="pathcompare"></a>path::compare
+첫 번째 함수는 `mypath.compare(pval.native())`를 반환합니다. 두 번째 함수는 `mypath.compare(str)`를 반환합니다. 세 번째 함수 반환 `mypath.compare(ptr)`합니다.
 
 ```cpp
 int compare(const path& pval) const noexcept;
@@ -89,9 +192,20 @@ int compare(const string_type& str) const;
 int compare(const value_type *ptr) const;
 ```
 
-첫 번째 함수는 mypath.compare(pval.native())를 반환합니다. 두 번째 함수는 mypath.compare(str)를 반환합니다. 세 번째 함수는 mypath.compare(ptr)를 반환합니다.
+### <a name="parameters"></a>매개 변수
 
-## <a name="pathconcat"></a>path::concat
+*pval*<br/>
+비교할 경로입니다.
+
+*str*<br/>
+비교할 문자열입니다.
+
+*ptr*<br/>
+비교에 대 한 포인터입니다.
+
+## <a name="concat"></a> path:: concat
+
+지정된 된 시퀀스에 추가 `mypath`, 변환 (그러나 구분 기호를 삽입 하지 않는) 필요에 따라 합니다.
 
 ```cpp
 template <class Source>
@@ -101,53 +215,68 @@ template <class InIt>
 path& concat(InIt first, InIt last);
 ```
 
-멤버 함수는 필요에 따라 변환되었지만 구분 기호를 삽입하지 않는 지정된 시퀀스를 mypath에 추가합니다.
+### <a name="parameters"></a>매개 변수
 
-## <a name="pathconstiterator"></a>path::const_iterator
+*source*<br/>
+지정 된 시퀀스입니다.
+
+*first*<br/>
+지정 된 시퀀스의 시작입니다.
+
+*last*<br/>
+지정 된 시퀀스의 끝입니다.
+
+## <a name="const_iterator"></a> path::const_iterator
+
+`iterator`의 동의어입니다.
 
 ```cpp
 typedef iterator const_iterator;
 ```
 
-형식은 iterator의 동의어입니다.
+## <a name="empty"></a> path:: empty
 
-## <a name="pathempty"></a>path::empty
+`mypath.empty()`를 반환합니다.
 
 ```cpp
 bool empty() const noexcept;
 ```
 
-mypath.empty()를 반환합니다.
+## <a name="end"></a> path:: end
 
-## <a name="pathend"></a>path::end
+형식의 시퀀스의 끝 반복기를 반환 `iterator`합니다.
 
 ```cpp
 iterator end() const;
 ```
 
-반복기 형식의 시퀀스의 끝 반복기를 반환합니다.
+## <a name="extension"></a> path:: extension
 
-## <a name="pathextension"></a>path::extension
+접미사를 반환 `filename()`합니다.
 
 ```cpp
 path extension() const;
 ```
 
-다음과 같이 filename() X의 접미사를 반환합니다.
+### <a name="remarks"></a>설명
 
-X == path(".") &#124;&#124; X == path("..")이거나 X에 점이 없는 경우 접미사가 비어 있습니다.
+접미사를 반환 `filename() X` 되도록 합니다.
+
+하는 경우 `X == path(".") || X == path("..")` 이거나 `X` 에 점이 없는 접미사가 비어 있습니다.
 
 그렇지 않은 경우 접미사가 맨 오른쪽 점으로 시작되고 해당 점을 포함합니다.
 
-## <a name="pathfilename"></a>path::filename
+## <a name="filename"></a> path:: filename
+
+myname의 루트 디렉터리 구성 요소(구체적으로는 `empty() path() : *--end()`)를 반환합니다. 구성 요소는 비어 있을 수 있습니다.
 
 ```cpp
 path filename() const;
 ```
 
-myname의 루트 디렉터리 구성 요소, 특히 `empty()  path() : *--end()`을 참조하세요. 구성 요소는 비어 있을 수 있습니다.
+## <a name="generic_string"></a> path::generic_string
 
-## <a name="pathgenericstring"></a>path::generic_string
+슬래시로 변환된 백슬래시와 함께 `this->string<Elem, Traits, Alloc>(al)` 를 반환합니다(Windows).
 
 ```cpp
 template <class Elem,
@@ -159,121 +288,121 @@ template <class Elem,
 string generic_string() const;
 ```
 
-슬래시로 변환된 백슬래시와 함께 `this->string<Elem, Traits, Alloc>(al)` 를 반환합니다(Windows).
+## <a name="generic_u16string"></a> path::generic_u16string
 
-## <a name="pathgenericu16string"></a>path::generic_u16string
+슬래시로 변환된 백슬래시와 함께 `u16string()`를 반환합니다(Windows).
 
 ```cpp
 u16string generic_u16string() const;
 ```
 
-슬래시로 변환된 백슬래시와 함께 u16string()을 반환합니다(Windows).
+## <a name="generic_u32string"></a> path::generic_u32string
 
-## <a name="pathgenericu32string"></a>path::generic_u32string
+슬래시로 변환된 백슬래시와 함께 `u32string()`를 반환합니다(Windows).
 
 ```cpp
 u32string generic_u32string() const;
 ```
 
-슬래시로 변환된 백슬래시와 함께 u32string()을 반환합니다(Windows).
+## <a name="generic_u8string"></a> path::generic_u8string
 
-## <a name="pathgenericu8string"></a>path::generic_u8string
+슬래시로 변환된 백슬래시와 함께 `u8string()`를 반환합니다(Windows).
 
 ```cpp
 string generic_u8string() const;
 ```
 
-슬래시로 변환된 백슬래시와 함께 u8string()을 반환합니다(Windows).
+## <a name="generic_wstring"></a> path::generic_wstring
 
-## <a name="pathgenericwstring"></a>path::generic_wstring
+슬래시로 변환된 백슬래시와 함께 `wstring()`를 반환합니다(Windows).
 
 ```cpp
 wstring generic_wstring() const;
 ```
 
-슬래시로 변환된 백슬래시와 함께 wstring()을 반환합니다(Windows).
+## <a name="has_extension"></a> path::has_extension
 
-## <a name="pathhasextension"></a>path::has_extension
+`!extension().empty()`를 반환합니다.
 
 ```cpp
 bool has_extension() const;
 ```
 
-!extension().empty()를 반환합니다.
+## <a name="has_filename"></a> path:: has_filename
 
-## <a name="pathhasfilename"></a>path::has_filename
+`!filename().empty()`를 반환합니다.
 
 ```cpp
 bool has_filename() const;
 ```
 
-!filename().empty()를 반환합니다.
+## <a name="has_parent_path"></a> path:: has_parent_path
 
-## <a name="pathhasparentpath"></a>path::has_parent_path
+`!parent_path().empty()`를 반환합니다.
 
 ```cpp
 bool has_parent_path() const;
 ```
 
-!parent_path().empty()를 반환합니다.
+## <a name="has_relative_path"></a> path:: has_relative_path
 
-## <a name="pathhasrelativepath"></a>path::has_relative_path
+`!relative_path().empty()`를 반환합니다.
 
 ```cpp
 bool has_relative_path() const;
 ```
 
-!relative_path().empty()를 반환합니다.
+## <a name="has_root_directory"></a> path:: has_root_directory
 
-## <a name="pathhasrootdirectory"></a>path::has_root_directory
+`!root_directory().empty()`를 반환합니다.
 
 ```cpp
 bool has_root_directory() const;
 ```
 
-!root_directory().empty()를 반환합니다.
+## <a name="has_root_name"></a> path:: has_root_name
 
-## <a name="pathhasrootname"></a>path::has_root_name
+`!root_name().empty()`를 반환합니다.
 
 ```cpp
 bool has_root_name() const;
 ```
 
-!root_name().empty()를 반환합니다.
+## <a name="has_root_path"></a> path:: has_root_path
 
-## <a name="pathhasrootpath"></a>path::has_root_path
+`!root_path().empty()`를 반환합니다.
 
 ```cpp
 bool has_root_path() const;
 ```
 
-!root_path().empty()를 반환합니다.
+## <a name="has_stem"></a> path::has_stem
 
-## <a name="pathhasstem"></a>path::has_stem
+`!stem().empty()`를 반환합니다.
 
 ```cpp
 bool has_stem() const;
 ```
 
-!stem().empty()를 반환합니다.
+## <a name="is_absolute"></a> path:: is_absolute
 
-## <a name="pathisabsolute"></a>path::is_absolute
+Windows, 함수 반환 `has_root_name() && has_root_directory()`합니다. Posix에서 함수 반환 `has_root_directory()`합니다.
 
 ```cpp
 bool is_absolute() const;
 ```
 
-Windows에서는 함수가 has_root_name() && has_root_directory()를 반환합니다. Posix에서는 함수가 has_root_directory()를 반환합니다.
+## <a name="is_relative"></a> path:: is_relative
 
-## <a name="pathisrelative"></a>path::is_relative
+`!is_absolute()`를 반환합니다.
 
 ```cpp
 bool is_relative() const;
 ```
 
-!is_absolute()를 반환합니다.
+## <a name="iterator"></a> path:: iterator
 
-## <a name="pathiterator"></a>path::iterator
+경로 구성 요소를 지정 하는 양방향 상수 반복기 `myname`합니다.
 
 ```cpp
 class iterator
@@ -288,45 +417,49 @@ class iterator
    };
 ```
 
-이 클래스는 시퀀스에서 myname의 경로 구성 요소를 지정하는 양방향 상수 반복기를 설명합니다.
+### <a name="remarks"></a>설명
+
+지정 하는 양방향 상수 반복기를 설명 하는 클래스를 `path` 부분은 `myname` 시퀀스에서:
 
 1. 루트 이름(있는 경우)
 
 1. 루트 디렉터리(있는 경우)
 
-1. 파일 이름(있는 경우)으로 끝나는 부모 경로(있는 경우)의 나머지 디렉터리 요소
+1. 나머지 디렉터리 요소 부모의 `path`있을 있는 경우, 파일 이름으로 끝나는 경우
 
-pval의 경우 경로 형식의 개체입니다.
+에 대 한 `pval` 형식의 개체 `path`:
 
-1. path::iterator X = pval.begin()은 경로 이름의 첫 번째 경로 요소(있는 경우)를 지정합니다.
+1. `path::iterator X = pval.begin()` 첫 번째 지정 `path` 요소에 있는 경우.
 
-1. X == pval.end()는 X가 구성 요소 시퀀스의 끝을 지나 가리키는 경우 true입니다.
+1. `X == pval.end()` 이면 true `X` 구성 요소 시퀀스의 끝을 바로 지난 지점입니다.
 
-3. *X는 현재 구성 요소와 일치하는 문자열을 반환합니다.
+3. `*X` 현재 구성 요소를 일치 하는 문자열을 반환 합니다.
 
-1. ++X는 시퀀스에서 다음 구성 요소(있는 경우)를 지정합니다.
+1. `++X`는 시퀀스에서 다음 구성 요소(있는 경우)를 지정합니다.
 
-1. --X는 시퀀스에서 이전 구성 요소(있는 경우)를 지정합니다.
+1. `--X`는 시퀀스에서 이전 구성 요소(있는 경우)를 지정합니다.
 
-1. myname을 변경하면 myname의 요소를 지정하는 모든 반복기가 무효화됩니다.
+1. 변경 `myname` 의 요소를 지정 하는 모든 반복기를 무효화 `myname`합니다.
 
-## <a name="pathmakepreferred"></a>path::make_preferred
+## <a name="make_preferred"></a> path:: make_preferred
+
+필요에 따라 각 구분 기호를 preferred_separator 변환 합니다.
 
 ```cpp
 path& make_preferred();
 ```
 
-멤버 함수는 필요에 따라 각 구분 기호를 preferred_separator로 변환합니다.
+## <a name="native"></a> path::native
 
-## <a name="pathnative"></a>path::native
+`myname`를 반환합니다.
 
 ```cpp
 const string_type& native() const noexcept;
 ```
 
-myname을 반환합니다.
+## <a name="op_as"></a> path:: operator =
 
-## <a name="pathoperator"></a>path::operator=
+경로 요소의 다른 경로의 복사본으로 바꿉니다.
 
 ```cpp
 path& operator=(const path& right);
@@ -336,9 +469,21 @@ template <class Source>
 path& operator=(const Source& source);
 ```
 
-첫 번째 멤버 연산자는 right.myname을 myname에 복사합니다. 두 번째 멤버 연산자는 right.myname을 myname으로 이동합니다. 세 번째 멤버 연산자는 *this = path(source)와 동일하게 작동합니다.
+### <a name="parameters"></a>매개 변수
 
-## <a name="pathoperator"></a>path::operator+=
+*right*<br/>
+합니다 [경로](../standard-library/path-class.md) 에 복사 되는 `path`합니다.
+
+*source*<br/>
+원본 경로입니다.
+
+### <a name="remarks"></a>설명
+
+첫 번째 멤버 연산자 복사본 `right.myname` 에 `myname`입니다. 두 번째 멤버 연산자 이동 `right.myname` 에 `myname`입니다. 세 번째 멤버 연산자와 동일 `*this = path(source)`합니다.
+
+## <a name="op_add"></a> path:: operator + =
+
+다양 한 `concat` 식입니다.
 
 ```cpp
 path& operator+=(const path& right);
@@ -353,21 +498,42 @@ template <class Elem>
 path& operator+=(Elem elem);
 ```
 
+### <a name="parameters"></a>매개 변수
+
+*right*<br/>
+추가 된 경로입니다.
+
+*str*<br/>
+추가 된 문자열입니다.
+
+*ptr*<br/>
+추가 포인터입니다.
+
+*Elem*<br/>
+추가 된 `value_type` 또는 `Elem`합니다.
+
+*source*<br/>
+추가 소스입니다.
+
+### <a name="remarks"></a>설명
+
 멤버 함수는 다음 해당 식과 동일하게 작동합니다.
 
-1. concat(right);
+1. `concat(right);`
 
-1. concat(path(str));
+1. `concat(path(str));`
 
-1. concat(ptr);
+1. `concat(ptr);`
 
-1. concat(string_type(1, elem));
+1. `concat(string_type(1, elem));`
 
-1. concat(source);
+1. `concat(source);`
 
-1. concat(path(basic_string\<Elem>(1, elem)));
+1. `concat(path(basic_string\<Elem>(1, elem)));`
 
-## <a name="pathoperator"></a>path::operator/=
+## <a name="op_divide"></a> path:: operator / =
+
+다양 한 `append` 식입니다.
 
 ```cpp
 path& operator/=(const path& right);
@@ -376,29 +542,45 @@ template <class Source>
 path& operator/=(const Source& source);
 ```
 
+### <a name="parameters"></a>매개 변수
+
+*right*<br/>
+추가 된 경로입니다.
+
+*source*<br/>
+추가 소스입니다.
+
+### <a name="remarks"></a>설명
+
 멤버 함수는 다음 해당 식과 동일하게 작동합니다.
 
-1. append(right);
+1. `append(right);`
 
-1. append(source);
+1. `append(source);`
 
-## <a name="pathoperator-stringtype"></a>path::operator string_type
+## <a name="op_string"></a> path:: operator string_type
+
+`myname`를 반환합니다.
 
 ```cpp
 operator string_type() const;
 ```
 
-멤버 연산자는 myname을 반환합니다.
+## <a name="parent_path"></a> path:: parent_path
 
-## <a name="pathparentpath"></a>path::parent_path
+부모 경로 구성 요소를 반환 합니다. `myname`합니다.
 
 ```cpp
 path parent_path() const;
 ```
 
-myname의 부모 경로 구성 요소, 특히 filename().native()를 제거한 후 myname의 접두사와 바로 앞의 디렉터리 구분 기호를 반환합니다. 동일하게 begin() != end()이면 operator/=를 연속적으로 적용하여 [begin(), --end()) 범위의 모든 요소를 결합합니다. 구성 요소는 비어 있을 수 있습니다.
+### <a name="remarks"></a>설명
 
-## <a name="pathpath"></a>path::path
+부모 경로 구성 요소를 반환 합니다. `myname`, 특히 접두사 `myname` 제거한 후 `filename().native()` 와 바로 앞 디렉터리 구분 기호입니다. (경우에 동일 하 게 `begin() != end()`, [begin (), 이면 operator / =를 연속적으로 적용 하 여. 범위에 있는 모든 요소 결합) 구성 요소는 비어 있을 수 있습니다.
+
+## <a name="path"></a> path:: path
+
+생성 된 `path` 다양 한 방식입니다.
 
 ```cpp
 path();
@@ -419,23 +601,44 @@ template <class InIt>
 path(InIt first, InIt last, const locale& loc);
 ```
 
-생성자는 모두 다양한 방식으로 myname을 생성합니다.
+### <a name="parameters"></a>매개 변수
 
-path()의 경우 myname()입니다.
+*right*<br/>
+복사본으로 생성 된 경로 경로입니다.
 
-path(const path& right)의 경우 myname(right.myname)입니다.
+*source*<br/>
+복사본으로 생성 된 경로 소스입니다.
 
-path(path&& right)의 경우 myname(right.myname)입니다.
+*Loc*<br/>
+지정 된 로캘입니다.
 
-template\<class Source> path(const Source& source)의 경우 myname(source)입니다.
+*first*<br/>
+복사할 첫 번째 요소의 위치입니다.
 
-template\<class Source> path(const Source& source, const locale& loc)의 경우 myname(source)이며, loc에서 필요한 codecvt 패싯을 가져옵니다.
+*last*<br/>
+복사할 마지막 요소 위치입니다.
 
-template\<class InIt> path(InIt first, InIt last)의 경우 myname(first, last)입니다.
+### <a name="remarks"></a>설명
 
-template\<class InIt> path(InIt first, InIt last, const locale& loc)의 경우 myname(first, last)이며, loc에서 필요한 codecvt 패싯을 가져옵니다.
+생성자 생성 모든 `myname` 다양 한 방법으로:
 
-## <a name="pathpreferredseparator"></a>path::preferred_separator
+에 대 한 `path()` 것이 `myname()`합니다.
+
+에 대 한 `path(const path& right`)는 `myname(right.myname)`합니다.
+
+에 대 한 `path(path&& right)` 것이 `myname(right.myname)`합니다.
+
+에 대 한 `template<class Source> path(const Source& source)` 것이 `myname(source)`합니다.
+
+에 대 한 `template<class Source> path(const Source& source, const locale& loc)` 것 `myname(source)`, 모든 가져오기에서 필요한 codecvt 패싯을 `loc`합니다.
+
+에 대 한 `template<class InIt> path(InIt first, InIt last)` 것이 `myname(first, last)`합니다.
+
+에 대 한 `template<class InIt> path(InIt first, InIt last, const locale& loc)` 것 `myname(first, last)`, 모든 가져오기에서 필요한 codecvt 패싯을 `loc`합니다.
+
+## <a name="preferred_separator"></a> path::preferred_separator
+
+상수 개체는 호스트 운영 체제에 따라 경로 구성 요소를 구분하는 기본 문자를 제공합니다. 
 
 ```cpp
 #if _WIN32_C_LIB
@@ -445,35 +648,61 @@ static constexpr value_type preferred_separator == '/';
 #endif // filesystem model now defined
 ```
 
-상수 개체는 호스트 운영 체제에 따라 경로 구성 요소를 구분하는 기본 문자를 제공합니다. 대부분의 Windows 컨텍스트에서는 L'/'을 대신 사용하여 동일하게 허용됩니다.
+### <a name="remarks"></a>설명
 
-## <a name="pathrelativepath"></a>path::relative_path
+대부분의 Windows 컨텍스트에서는 L'/'을 대신 사용하여 동일하게 허용됩니다.
+
+## <a name="relative_path"></a> path:: relative_path
+
+상대 경로 구성 요소를 반환 `myname`합니다. 
 
 ```cpp
 path relative_path() const;
 ```
 
-myname의 상대 경로 구성 요소, 특히 root_path().native()를 제거한 후 myname의 접미사와 바로 뒤의 중복 디렉터리 구분 기호를 반환합니다. 구성 요소는 비어 있을 수 있습니다.
+### <a name="remarks"></a>설명
 
-## <a name="pathremovefilename"></a>path::remove_filename
+상대 경로 구성 요소를 반환 `myname`, 특히 접미사가 `myname` 제거한 후 `root_path().native()` 와 바로 뒤의 중복 디렉터리 구분 기호입니다. 구성 요소는 비어 있을 수 있습니다.
+
+## <a name="remove_filename"></a> path:: remove_filename
+
+파일을 제거합니다.
 
 ```cpp
 path& remove_filename();
 ```
 
-## <a name="pathreplaceextension"></a>path::replace_extension
+## <a name="replace_extension"></a> path:: replace_extension
+
+확장명을 바꿉니다 `myname`합니다. 
 
 ```cpp
 path& replace_extension(const path& newext = path());
 ```
 
-멤버 함수는 먼저 myname에서 extension().native() 접미사를 제거합니다. 그런 다음 !newext.empty() && newext[0] != dot(여기서 dot은 *path(".").c_str()임)이면 myname에 dot이 추가됩니다. 그런 다음 myname에 newext가 추가됩니다.
+### <a name="parameters"></a>매개 변수
 
-## <a name="pathreplacefilename"></a>path::replace_filename
+*newext*<br/>
+새 확장입니다.
+
+### <a name="remarks"></a>설명
+
+먼저 접미사를 제거 `extension().native()` 에서 `myname`합니다. 경우 `!newext.empty() && newext[0] != dot` (여기서 `dot` 됩니다 `*path(".").c_str()`), 한 다음 `dot` 에 추가 됩니다 `myname`. 그런 다음 `newext` 에 추가 됩니다 `myname`합니다.
+
+## <a name="replace_filename"></a> path:: replace_filename
+
+파일 이름을으로 바꿉니다.
 
 ```cpp
 path& replace_filename(const path& pval);
 ```
+
+### <a name="parameters"></a>매개 변수
+
+*pval*<br/>
+파일의 경로입니다.
+
+### <a name="remarks"></a>설명
 
 멤버 함수에서 다음을 실행합니다.
 
@@ -484,39 +713,57 @@ remove_filename();
 return (*this);
 ```
 
-## <a name="pathrootdirectory"></a>path::root_directory
+## <a name="root_directory"></a> path:: root_directory
+
+루트 디렉터리 구성 요소를 반환 `myname`합니다. 
 
 ```cpp
 path root_directory() const;
 ```
 
-myname의 루트 디렉터리 구성 요소를 반환합니다. 구성 요소는 비어 있을 수 있습니다.
+### <a name="remarks"></a>설명
 
-## <a name="pathrootname"></a>path::root_name
+구성 요소는 비어 있을 수 있습니다.
+
+## <a name="root_name"></a> path:: root_name
+
+루트 이름 구성 요소를 반환 `myname`합니다. 
 
 ```cpp
 path root_name() const;
 ```
 
-myname의 루트 이름 구성 요소를 반환합니다. 구성 요소는 비어 있을 수 있습니다.
+### <a name="remarks"></a>설명
 
-## <a name="pathrootpath"></a>path::root_path
+구성 요소는 비어 있을 수 있습니다.
+
+## <a name="root_path"></a> path:: root_path
+
+루트 경로 구성 요소를 반환 `myname`합니다.
 
 ```cpp
 path root_path() const;
 ```
 
-myname의 루트 경로 구성 요소, 특히  root_name() / root_directory를 반환합니다. 구성 요소는 비어 있을 수 있습니다.
+### <a name="remarks"></a>설명
 
-## <a name="pathstem"></a>path::stem
+루트 경로 구성 요소를 반환 `myname`, 특히 root_name () / root_directory 합니다. 구성 요소는 비어 있을 수 있습니다.
+
+## <a name="stem"></a> path:: stem
+
+반환 된 `stem` 구성 요소 `myname`합니다.
 
 ```cpp
 path stem() const;
 ```
 
-myname의 어간 구성 요소, 특히 후행 extension().native()가 제거된 filename().native()를 반환합니다. 구성 요소는 비어 있을 수 있습니다.
+### <a name="remarks"></a>설명
 
-## <a name="pathstring"></a>path::string
+반환 된 `stem` 구성 요소 `myname`, 특히 `filename().native()` 모든 후행 `extension().native()` 제거 합니다. 구성 요소는 비어 있을 수 있습니다.
+
+## <a name="string"></a> path:: string
+
+에 저장 된 시퀀스 변환 `mypath`합니다.
 
 ```cpp
 template \<class Elem, class Traits = char_traits\<Elem>, class Alloc = allocator\<Elem>>
@@ -524,59 +771,63 @@ basic_string\<Elem, Traits, Alloc> string(const Alloc& al = Alloc()) const;
 string string() const;
 ```
 
+### <a name="remarks"></a>설명
+
 첫 번째(템플릿) 멤버 함수는 mypath에 저장된 시퀀스를 다음과 동일한 방식으로 변환합니다.
 
-1. string\<char, Traits, Alloc>()의 경우 string()
+1. `string<char, Traits, Alloc>()`에 대한 `string()`
 
-1. string\<wchar_t, Traits, Alloc>()의 경우 wstring()
+1. `string<wchar_t, Traits, Alloc>()`에 대한 `wstring()`
 
-1. string\<char16_t, Traits, Alloc>()의 경우 u16string()
+1. `string<char16_t, Traits, Alloc>()`에 대한 `u16string()`
 
-1. string\<char32_t, Traits, Alloc>()의 경우 u32string()
+1. `string<char32_t, Traits, Alloc>()`에 대한 `u32string()`
 
-두 번째 멤버 함수는 mypath에 저장된 시퀀스를 char 시퀀스에 대해 호스트 시스템에서 선호하는 인코딩으로 변환하고 string 형식의 개체에 저장된 대로 반환합니다.
+두 번째 멤버 함수 변환에 저장 된 시퀀스 `mypath` char 시퀀스 및 문자열 형식의 개체에 저장 된 반환에 대 한 호스트 시스템에서 선호 하는 인코딩으로 합니다.
 
-## <a name="pathstringtype"></a>path::string_type
+## <a name="string_type"></a> path::string_type
+
+이 형식은 `basic_string<value_type>`의 동의어입니다.
 
 ```cpp
 typedef basic_string<value_type> string_type;
 ```
 
-형식은 basic_string<value_type>의 동의어입니다.
+## <a name="swap"></a> path:: swap
 
-## <a name="pathswap"></a>path::swap
+실행 `swap(mypath, right.mypath)`합니다.
 
 ```cpp
 void swap(path& right) noexcept;
 ```
 
-swap(mypath, right.mypath)를 실행합니다.
+## <a name="u16string"></a> path::u16string
 
-## <a name="pathu16string"></a>path::u16string
+에 저장 된 시퀀스를 변환 `mypath` u t F-16을 반환 형식의 개체에 저장 된 `u16string`합니다.
 
 ```cpp
 u16string u16string() const;
 ```
 
-멤버 함수는 mypath에 저장된 시퀀스를 UTF-16으로 변환하고 u16string 형식의 개체에 저장된 대로 반환합니다.
+## <a name="u32string"></a> path::u32string
 
-## <a name="pathu32string"></a>path::u32string
+에 저장 된 시퀀스를 변환 `mypath` UTF-32를 반환 형식의 개체에 저장 된 `u32string`합니다.
 
 ```cpp
 u32string u32string() const;
 ```
 
-멤버 함수는 mypath에 저장된 시퀀스를 UTF-32로 변환하고 u32string 형식의 개체에 저장된 대로 반환합니다.
+## <a name="u8string"></a> path::u8string
 
-## <a name="pathu8string"></a>path::u8string
+에 저장 된 시퀀스를 변환 `mypath` u t F-8을 반환 형식의 개체에 저장 된 `u8string`합니다.
 
 ```cpp
 string u8string() const;
 ```
 
-멤버 함수는 mypath에 저장된 시퀀스를 UTF-8로 변환하고 u8string 형식의 개체에 저장된 대로 반환합니다.
+## <a name="value_type"></a> path::value_type
 
-## <a name="pathvaluetype"></a>path::value_type
+형식은 호스트 운영 체제에서 선호하는 경로 요소를 설명합니다.
 
 ```cpp
 #if _WIN32_C_LIB
@@ -586,21 +837,13 @@ typedef char value_type;
 #endif // filesystem model now defined
 ```
 
-형식은 호스트 운영 체제에서 선호하는 경로 요소를 설명합니다.
+## <a name="wstring"></a> path::wstring
 
-## <a name="pathwstring"></a>path::wstring
+에 저장 된 시퀀스를 변환 `mypath` 에 대해 호스트 시스템에서 선호 하는 인코딩으로 `wchar_t` 시퀀스 및 반환 형식의 개체에 저장 된 `wstring`합니다.
 
 ```cpp
 wstring wstring() const;
 ```
-
-mypath에 저장된 시퀀스를 wchar_t 시퀀스에 대해 호스트 시스템에서 선호하는 인코딩으로 변환하고 wstring 형식의 개체에 저장된 대로 반환합니다.
-
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<파일 시스템 >
-
-**네임스페이스:** std::experimental::filesystem
 
 ## <a name="see-also"></a>참고자료
 

@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bad7a0a5263d001d9dc77dd8d9e8cf0cf70100b4
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a7d1381e511bc98b446e3f58be4d2a1c5ac15070
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219641"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105707"
 ---
 # <a name="visual-c-language-reference-ccx"></a>Visual C++ 언어 참조(C++/CX)
 
@@ -24,7 +24,6 @@ C + + /cli CX는 가까운 최대한 최신 c + + Windows 런타임 구성 요�
 > C + + /cli WinRT 프로젝션인 새, 표준 C + + 17 개의 언어 Windows 런타임 Api에 대 한 합니다. 최신 Windows 10 sdk 부터는 버전 1803에서에서 제공 됩니다. C + + /cli WinRT 헤더 파일에서 완전히 구현 되 고 최신 Windows API에 대 한 최고 수준의 액세스를 제공 하도록 설계 되었습니다.
 
 > C + + /cli WinRT를 모두 사용 하는 모든 표준 호환 C + + 17 컴파일러를 사용 하 여 Windows 런타임 Api를 작성 합니다. C + + /cli WinRT에서 일반적으로 더 나은 성능을 제공 하 고 Windows 런타임에 대 한 다른 언어 옵션 보다 더 작은 이진 파일을 생성 합니다. 우리는 계속 지원 C + + /cli CX 및 WRL, 되지만 항상 권장 구성이 새 응용 프로그램에서 사용할 C + + WinRT 합니다. 자세한 내용은 [C + + /cli WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index)합니다.
-
 
 사용 하 여 C + + /CX를 만들면:
 

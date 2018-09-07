@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 256ca308160a2e34341c6156ee761473c13142e1
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 47efe412dc1e9eb1fa2e68b9f85baa3c7852e8ae
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964485"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102566"
 ---
 # <a name="matchresults-class"></a>match_results 클래스
 
@@ -69,9 +69,11 @@ class match_results {
 
 ### <a name="parameters"></a>매개 변수
 
-*BidIt* 부분 일치에 대 한 반복기 형식입니다.
+*BidIt*<br/>
+부분 일치에 대한 반복기 형식입니다.
 
-*Alloc* 저장소 관리를 위한 할당자의 형식입니다.
+*할당*<br/>
+저장소 관리를 위한 할당자의 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -95,7 +97,7 @@ typedef Alloc allocator_type;
 
 Typedef는 템플릿 인수에 대 한 동의어 *Alloc*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_allocator_type.cpp
@@ -153,7 +155,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -216,7 +218,7 @@ const_iterator begin() const;
 
 멤버 함수는 시퀀스의 첫 번째 요소(또는 빈 시퀀스의 끝 바로 다음)를 가리키는 임의 액세스 반복기를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_begin.cpp
@@ -274,7 +276,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -337,7 +339,7 @@ typedef typename iterator_traits<BidIt>::value_type char_type;
 
 typedef는 `iterator_traits<BidIt>::value_type`형식의 동의어로, 검색된 문자 시퀀스의 요소 형식입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_char_type.cpp
@@ -395,7 +397,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -458,7 +460,7 @@ typedef T0 const_iterator;
 
 typedef는 제어되는 시퀀스의 상수 임의 액세스 반복기로 사용될 수 있는 개체를 설명합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_const_iterator.cpp
@@ -516,7 +518,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -579,7 +581,7 @@ typedef const typename Alloc::const_reference const_reference;
 
 typedef는 제어되는 시퀀스의 요소에 대한 상수 참조로 사용될 수 있는 개체를 설명합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_const_reference.cpp
@@ -637,7 +639,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -700,7 +702,7 @@ typedef typename iterator_traits<BidIt>::difference_type difference_type;
 
 typedef는 `iterator_traits<BidIt>::difference_type`형식의 동의어이며, 제어되는 시퀀스의 요소를 가리키는 두 반복기 사이의 차이를 나타낼 수 있는 개체에 대해 설명합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_difference_type.cpp
@@ -758,7 +760,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -821,7 +823,7 @@ bool empty() const;
 
 멤버 함수는 정규식 검색에 실패한 경우에만 true를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_empty.cpp
@@ -879,7 +881,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -942,7 +944,7 @@ const_iterator end() const;
 
 멤버 함수는 시퀀스 끝의 바로 다음을 가리키는 반복기를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_end.cpp
@@ -1000,7 +1002,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -1066,13 +1068,17 @@ string_type format(const string_type& fmt, match_flag_type flags = format_defaul
 
 ### <a name="parameters"></a>매개 변수
 
-*OutIt* 출력 반복기 형식입니다.
+*OutIt*<br/>
+출력 반복기 형식입니다.
 
-*out* 쓸 출력 스트림입니다.
+*out*<br/>
+쓸 출력 스트림입니다.
 
-*fmt* 서식 문자열입니다.
+*fmt*<br/>
+서식 문자열입니다.
 
-*플래그* 서식 플래그입니다.
+*flags*<br/>
+서식 플래그입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1080,7 +1086,7 @@ string_type format(const string_type& fmt, match_flag_type flags = format_defaul
 
 서식 있는 텍스트를 생성하려면 서식 문자열의 리터럴 텍스트를 일반적으로 대상 시퀀스로 복사합니다. 서식 문자열의 각 이스케이프 시퀀스가 대표 텍스트로 대체됩니다. 복사 및 교체 정보는 함수에 전달된 서식 플래그에서 제어합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_format.cpp
@@ -1138,7 +1144,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -1201,7 +1207,7 @@ allocator_type get_allocator() const;
 
 멤버 함수는 `*this`에서 사용된 할당자 개체의 복사본을 반환하여 해당 `sub_match` 개체를 할당합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_get_allocator.cpp
@@ -1259,7 +1265,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -1322,7 +1328,7 @@ typedef const_iterator iterator;
 
 이 형식은 제어되는 시퀀스의 임의 액세스 반복기로 사용될 수 있는 개체를 설명합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_iterator.cpp
@@ -1380,7 +1386,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -1441,13 +1447,14 @@ difference_type length(size_type sub = 0) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*sub* 부분 일치 항목의 인덱스입니다.
+*sub*<br/>
+부분 일치 항목의 인덱스입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 `(*this)[sub].length()`를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_length.cpp
@@ -1505,7 +1512,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -1568,15 +1575,17 @@ match_results(const match_results& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*alloc* 저장 하는 할당자 개체입니다.
+*할당*<br/>
+저장할 할당자 개체입니다.
 
-*오른쪽* 복사 하 여 match_results 개체입니다.
+*right*<br/>
+복사할 match_results 개체입니다.
 
 ### <a name="remarks"></a>설명
 
 첫 번째 생성자는 부분 일치 항목을 보유하지 않는 `match_results` 개체를 구성합니다. 두 번째 생성자 구문 한 `match_results` 개체의 복사본 인 *오른쪽*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_construct.cpp
@@ -1634,7 +1643,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -1697,7 +1706,7 @@ size_type max_size() const;
 
 멤버 함수는 개체가 제어할 수 있는 가장 긴 시퀀스의 길이를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_max_size.cpp
@@ -1755,7 +1764,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -1816,13 +1825,14 @@ match_results& operator=(const match_results& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 복사 하 여 match_results 개체입니다.
+*right*<br/>
+복사할 match_results 개체입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 연산자는 제어 하는 시퀀스를 바꿉니다 `*this` 제어 하는 시퀀스의 복사본을 사용 하 여 *오른쪽*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_operator_as.cpp
@@ -1880,7 +1890,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -1941,13 +1951,14 @@ const_reference operator[](size_type n) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*n* 부분 일치 항목의 인덱스입니다.
+*n*<br/>
+부분 일치 항목의 인덱스입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 요소에 대 한 참조를 반환 *n* 제어 된 시퀀스 또는 빈에 대 한 참조 `sub_match` 하는 경우 개체 `size() <= n` 경우 또는 캡처 그룹 *n* 부분 일치 항목이 없습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_operator_br.cpp
@@ -2005,7 +2016,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -2066,13 +2077,14 @@ difference_type position(size_type sub = 0) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*sub* 부분 일치 항목의 인덱스입니다.
+*sub*<br/>
+부분 일치 항목의 인덱스입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 `std::distance(prefix().first, (*this)[sub].first)`, 즉 대상 시퀀스의 첫 번째 문자부터 제어되는 시퀀스의 `n` 요소가 가리키는 부분 일치의 첫 번째 문자까지 거리를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_position.cpp
@@ -2130,7 +2142,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -2193,7 +2205,7 @@ const_reference prefix() const;
 
 멤버 함수는 대상 시퀀스의 시작에서 시작되고 `sub_match<BidIt>` 에서 끝나는 문자 시퀀스 즉, 일치하는 하위 시퀀스 앞에 오는 텍스트를 가리키는 `(*this)[0].first`형식의 개체에 대한 참조를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_prefix.cpp
@@ -2251,7 +2263,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -2314,7 +2326,7 @@ typedef const_reference reference;
 
 이 형식은 `const_reference`형식의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_reference.cpp
@@ -2372,7 +2384,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -2435,7 +2447,7 @@ size_type size() const;
 
 멤버 함수는 검색에 사용된 정규식에서 캡처 그룹 수보다 1이 큰 수를 반환하고, 검색되지 않은 경우 0을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_size.cpp
@@ -2493,7 +2505,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -2556,7 +2568,7 @@ typedef typename Alloc::size_type size_type;
 
 이 형식은 `Alloc::size_type`형식의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_size_type.cpp
@@ -2614,7 +2626,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -2675,13 +2687,14 @@ string_type str(size_type sub = 0) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*sub* 부분 일치 항목의 인덱스입니다.
+*sub*<br/>
+부분 일치 항목의 인덱스입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 `string_type((*this)[sub])`를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_str.cpp
@@ -2739,7 +2752,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -2802,7 +2815,7 @@ typedef basic_string<char_type> string_type;
 
 이 형식은 `basic_string<char_type>`형식의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_string_type.cpp
@@ -2860,7 +2873,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -2923,7 +2936,7 @@ const_reference suffix() const;
 
 멤버 함수는 `sub_match<BidIt>` 에서 시작되고 대상 시퀀스의 끝에서 끝나는 문자 시퀀스 즉, 일치하는 하위 시퀀스 뒤에 오는 텍스트를 가리키는 `(*this)[size() - 1].second` 형식의 개체에 대한 참조를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_suffix.cpp
@@ -2981,7 +2994,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -3042,13 +3055,14 @@ void swap(const match_results& right) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 는 match_results 개체입니다.
+*right*<br/>
+바꾸려는 match_results 개체입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는의 내용을 바꿉니다 `*this` 하 고 *오른쪽* 분할 상수 시간에 예외를 throw 하지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_swap.cpp
@@ -3106,7 +3120,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -3169,7 +3183,7 @@ typedef sub_match<BidIt> value_type;
 
 typedef는 `sub_match<BidIt>`형식의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__match_results_value_type.cpp
@@ -3227,7 +3241,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 

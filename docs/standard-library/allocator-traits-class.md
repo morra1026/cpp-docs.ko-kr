@@ -50,12 +50,12 @@ helpviewer_keywords:
 - std::allocator_traits [C++], select_on_container_copy_construction
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9bae212ec3d8edfacc7cd3afb37ab3c13dc11aef
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: fb00f7205dcb470785c9682335341ca07935aae5
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962451"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110440"
 ---
 # <a name="allocatortraits-class"></a>allocator_traits 클래스
 
@@ -88,7 +88,7 @@ class allocator_traits;
 
 다음 정적 메서드는 지정된 할당자 매개 변수에서 해당 메서드를 호출합니다.
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[allocate](#allocate)|지정된 할당자 매개 변수를 사용하여 메모리를 할당하는 정적 메서드입니다.|
 |[construct](#construct)|지정된 할당자를 사용하여 개체를 생성하는 정적 메서드입니다.|
@@ -116,11 +116,14 @@ static pointer allocate(Alloc& al, size_type count,
 
 ### <a name="parameters"></a>매개 변수
 
-*al* 할당자 개체입니다.
+*Al*<br/>
+할당자 개체입니다.
 
-*개수* 할당할 요소의 수입니다.
+*count*<br/>
+할당할 요소의 수입니다.
 
-*힌트* 는 `const_pointer` 요청 하기 전에 할당된 된 개체의 주소를 찾음으로써 저장소에 대 한 요청을 충족 된 할당자 개체를 지원할 수입니다. Null 포인터는 힌트 없음으로 처리됩니다.
+*힌트*<br/>
+요청 이전에 할당된 개체의 주소를 찾음으로써 저장소에 대한 요청을 충족하여 할당자 개체를 지원할 수 있는 `const_pointer`입니다. Null 포인터는 힌트 없음으로 처리됩니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -141,11 +144,14 @@ static void construct(Alloc& al, Uty* ptr, Types&&... args);
 
 ### <a name="parameters"></a>매개 변수
 
-*al* 할당자 개체입니다.
+*Al*<br/>
+할당자 개체입니다.
 
-*ptr* 개체를 생성할 위치에 대 한 포인터입니다.
+*ptr*<br/>
+개체를 생성할 위치에 대한 포인터입니다.
 
-*args* 개체 생성자에 전달 되는 인수 목록입니다.
+*인수*<br/>
+개체 생성자에 전달되는 인수 목록입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -163,11 +169,14 @@ static void deallocate(Alloc al,
 
 ### <a name="parameters"></a>매개 변수
 
-*al* 할당자 개체입니다.
+*Al*<br/>
+할당자 개체입니다.
 
-*ptr* 할당을 취소할 개체의 시작 위치에 대 한 포인터입니다.
+*ptr*<br/>
+할당을 취소할 개체의 시작 위치에 대한 포인터입니다.
 
-*개수* 을 취소할 개체의 수입니다.
+*count*<br/>
+할당을 취소할 개체의 수입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -186,9 +195,11 @@ static void destroy(Alloc& al, Uty* ptr);
 
 ### <a name="parameters"></a>매개 변수
 
-*al* 할당자 개체입니다.
+*Al*<br/>
+할당자 개체입니다.
 
-*ptr* 개체의 위치에 대 한 포인터입니다.
+*ptr*<br/>
+개체의 위치에 대한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -204,7 +215,8 @@ static size_type max_size(const Alloc& al);
 
 ### <a name="parameters"></a>매개 변수
 
-*al* 할당자 개체입니다.
+*Al*<br/>
+할당자 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -220,7 +232,8 @@ static Alloc select_on_container_copy_construction(const Alloc& al);
 
 ### <a name="parameters"></a>매개 변수
 
-*al* 할당자 개체입니다.
+*Al*<br/>
+할당자 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 

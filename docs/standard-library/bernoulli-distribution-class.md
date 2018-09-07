@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d20a887c5fa056ef697b087fdaf91b94702d0c0f
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: cc8b144ab8cf619469723f6fd19a4ffdac085e6d
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953236"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105850"
 ---
 # <a name="bernoullidistribution-class"></a>bernoulli_distribution 클래스
 
@@ -76,7 +76,8 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*URNG* 균일 난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*URNG*<br/>
+균일 난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -101,7 +102,7 @@ public:
 
 베르누이 분포 이산 확률 함수에 대한 자세한 내용은 Wolfram MathWorld 문서 [베르누이 분포](http://go.microsoft.com/fwlink/p/?linkid=398467)를 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // compile with: /EHsc /W4
@@ -158,7 +159,7 @@ Enter an integer value for a sample count: 100
 p == 0.45
 Histogram for 100 samples:
 false :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- true :::::::::::::::::::::::::::::::::::::::::
+true :::::::::::::::::::::::::::::::::::::::::
 ```
 
 ## <a name="requirements"></a>요구 사항
@@ -178,9 +179,11 @@ explicit bernoulli_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*p* 저장 된 `p` 분포 매개 변수입니다.
+*p*<br/>
+저장된 `p` 분포 매개 변수입니다.
 
-*parm* 는 `param_type` 분포를 생성 하는 데 사용 되는 구조입니다.
+*parm*<br/>
+분포를 생성하는 데 사용되는 `param_type` 구조체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -200,7 +203,8 @@ explicit bernoulli_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*p* 저장 된 `p` 분포 매개 변수입니다.
+*p*<br/>
+저장된 `p` 분포 매개 변수입니다.
 
 ### <a name="remarks"></a>설명
 

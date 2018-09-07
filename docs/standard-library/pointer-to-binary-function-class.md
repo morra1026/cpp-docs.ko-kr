@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b632fabe8f596d46a0423d670ff57bb12de93cd
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: cdef0e68e50085513871d1fcacd9cfdb302e9f51
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953458"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107571"
 ---
 # <a name="pointertobinaryfunction-class"></a>pointer_to_binary_function 클래스
 
@@ -44,11 +44,14 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*pfunc* 변환할 이항 함수입니다.
+*pfunc*<br/>
+변환할 이진 함수입니다.
 
-*왼쪽* 왼쪽 개체를  *\*pfunc* 에서 호출 됩니다.
+*left*<br/>
+*\*pfunc*를 호출한 왼쪽 개체입니다.
 
-*오른쪽* 오른쪽 개체를  *\*pfunc* 에서 호출 됩니다.
+*right*<br/>
+*\*pfunc*를 호출한 오른쪽 개체입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -58,7 +61,7 @@ public:
 
 이진 함수 포인터는 함수 개체이며, 매개 변수로 이진 함수를 사용해야 하는 C++ 표준 라이브러리 알고리즘으로 전달할 수는 있지만 조정할 수는 없습니다. 같은 값을 바인딩하거나 정자와 함께 사용 하는 어댑터를 함께 사용 하 여 제공 해야 중첩 형식 `first_argument_type`, `second_argument_type`, 및 `result_type` 는 적응을 가능 하 게 합니다. `pointer_to_binary_function`을 사용하여 변환을 수행하면 함수 어댑터를 이진 함수 포인터와 함께 사용할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 `pointer_to_binary_function`의 생성자는 직접 사용되는 경우가 거의 없습니다. `pointer_to_binary_function` 어댑터 조건자를 선언하고 사용하는 방법의 예제는 도우미 함수 [ptr_fun](../standard-library/functional-functions.md#ptr_fun)을 참조하세요.
 

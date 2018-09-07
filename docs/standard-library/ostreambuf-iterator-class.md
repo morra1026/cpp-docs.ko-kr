@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6693fe0c4e34ce4749feef05bf0a1fe0213ac866
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: ba1a48fe9a4e7f0f8921861abeab2b76de3169c8
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207723"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107386"
 ---
 # <a name="ostreambufiterator-class"></a>ostreambuf_iterator 클래스
 
@@ -45,9 +45,11 @@ template <class CharType = char class Traits = char_traits <CharType>>
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType* ostreambuf_iterator의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이 며 기본값은 **char**합니다.
+*CharType*<br/>
+ostreambuf_iterator의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이 며 기본값은 **char**합니다.
 
-*특성* ostreambuf_iterator의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `char_traits`\< *CharType>입니다.*
+*특성*<br/>
+ostreambuf_iterator의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `char_traits`\< *CharType>입니다.*
 
 ## <a name="remarks"></a>설명
 
@@ -100,7 +102,7 @@ typedef CharType char_type;
 
 이 형식은 템플릿 매개 변수 `CharType`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ostreambuf_iterator_char_type.cpp
@@ -124,17 +126,17 @@ int main( )
    // elements to the output streambuf:
    cout << "The characters written to the output stream\n"
         << " by charOutBuf are: ";
- *charOutBuf = 'O';
+*charOutBuf = 'O';
    charOutBuf++;
- *charOutBuf = 'U';
+*charOutBuf = 'U';
    charOutBuf++;
- *charOutBuf = 'T';
+*charOutBuf = 'T';
    charOutBuf++;
    cout << "." << endl;
 }
 \* Output:
 The characters written to the output stream
- by charOutBuf are: OUT.
+by charOutBuf are: OUT.
 *\
 ```
 
@@ -154,7 +156,7 @@ bool failed() const throw();
 
 구성원 함수는 이전에 구성원 `operator=`를 사용할 때 **subf**_-> `sputc` 호출에서 **eof**가 반환된 경우 **true**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ostreambuf_iterator_failed.cpp
@@ -172,9 +174,9 @@ int main( )
 
 *charOut = 'a';
    charOut ++;
- *charOut  = 'b';
+*charOut  = 'b';
    charOut ++;
- *charOut = 'c';
+*charOut = 'c';
    cout << " are characters output individually." << endl;
 
    bool b1 = charOut.failed ( );
@@ -205,7 +207,7 @@ ostreambuf 반복기 개체입니다.
 
 이 연산자는 스트림 버퍼로 문자를 출력하기 위한 출력 반복기 식 \* *i* = *x*에서만 작동합니다. ostreambut 반복기에 적용하는 경우 반복기가 반환되며 **\*iter**에서는 **iter**을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ostreambuf_iterator_op_deref.cpp
@@ -225,10 +227,10 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
- *charOutBuf = 'O';
+*charOutBuf = 'O';
    charOutBuf++;   // no effect on iterator position
- *charOutBuf = 'U';
- *charOutBuf = 'T';
+*charOutBuf = 'U';
+*charOutBuf = 'T';
 }
 \* Output:
 Elements written to output stream:
@@ -253,7 +255,7 @@ ostreambuf_iterator<CharType, Traits>& operator++(int);
 
 연산자는 출력 반복기 식 \* *i* = *x*를 구현하는 데 사용됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ostreambuf_iterator_op_incr.cpp
@@ -273,10 +275,10 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
- *charOutBuf = 'O';
+*charOutBuf = 'O';
    charOutBuf++;      // No effect on iterator position
- *charOutBuf = 'U';
- *charOutBuf = 'T';
+*charOutBuf = 'U';
+*charOutBuf = 'T';
 }
 \* Output:
 Elements written to output stream:
@@ -294,7 +296,8 @@ ostreambuf_iterator<CharType, Traits>& operator=(CharType _Char);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Char* 스트림 버퍼에 삽입할 문자입니다.
+*_Char*<br/>
+스트림 버퍼에 삽입할 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -304,7 +307,7 @@ ostreambuf_iterator<CharType, Traits>& operator=(CharType _Char);
 
 출력 스트림에 쓰기 위해 출력 반복기 식 \* *i* = *x*를 구현하는 데 사용된 할당 연산자입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ostreambuf_iterator_op_assign.cpp
@@ -324,15 +327,15 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
- *charOutBuf = 'O';
+*charOutBuf = 'O';
    charOutBuf++;      // No effect on iterator position
- *charOutBuf = 'U';
- *charOutBuf = 'T';
+*charOutBuf = 'U';
+*charOutBuf = 'T';
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 OUT
-*\
+*/
 ```
 
 ## <a name="ostreambuf_iterator_ostreambuf_iterator"></a>  ostreambuf_iterator::ostreambuf_iterator
@@ -346,9 +349,11 @@ ostreambuf_iterator(ostream_type& Ostr) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*strbuf* 출력 스트림 버퍼 포인터를 초기화 하는 데는 출력 streambuf 개체입니다.
+*strbuf*<br/>
+출력 스트림 버퍼 포인터를 초기화하는 데 사용되는 출력 streambuf 개체입니다.
 
-*Ostr* 출력 스트림 버퍼 포인터를 초기화 하는 데 사용 하는 출력 스트림 개체입니다.
+*Ostr*<br/>
+출력 스트림 버퍼 포인터를 초기화하는 데 사용되는 출력 stream 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -356,7 +361,7 @@ ostreambuf_iterator(ostream_type& Ostr) throw();
 
 두 번째 생성자는 `Ostr`로 출력 스트림 버퍼 포인터를 초기화합니다. `rdbuf`. 저장된 포인터는 null 포인터가 아니어야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ostreambuf_iteratorOstreambuf_iterator.cpp
@@ -374,9 +379,9 @@ int main( )
 
 *charOut = 'O';
    charOut ++;
- *charOut  = 'U';
+*charOut  = 'U';
    charOut ++;
- *charOut = 'T';
+*charOut = 'T';
    cout << " are characters output individually." << endl;
 
    ostreambuf_iterator<char> strOut ( cout );
@@ -401,7 +406,7 @@ typedef basicOstream<CharType, Traits> ostream_type;
 
 이 형식은 `basicOstream`\< **CharType**, **Traits**>와 동일한 의미입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `ostream_type`을 선언하고 사용하는 방법의 예제는 [ostreambuf_iterator](#ostreambuf_iterator_ostreambuf_iterator)를 참조하세요.
 
@@ -417,7 +422,7 @@ typedef basic_streambuf<CharType, Traits> streambuf_type;
 
 형식에 대 한 동의어가 `basic_streambuf` \< **CharType**, **Traits**>, 되는 I/O 버퍼에 대 한 스트림 클래스인 `streambuf` 문자형식에특수화된경우**char**합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `streambuf_type`을 선언하고 사용하는 방법의 예제는 [ostreambuf_iterator](#ostreambuf_iterator_ostreambuf_iterator)를 참조하세요.
 
@@ -433,7 +438,7 @@ typedef Traits traits_type;
 
 이 형식은 템플릿 매개 변수 `Traits`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ostreambuf_iterator_traits_type.cpp
@@ -457,17 +462,17 @@ int main( )
    // elements to the output streambuf:
    cout << "The characters written to the output stream\n"
         << " by charOutBuf are: ";
- *charOutBuf = 'O';
+*charOutBuf = 'O';
    charOutBuf++;
- *charOutBuf = 'U';
+*charOutBuf = 'U';
    charOutBuf++;
- *charOutBuf = 'T';
+*charOutBuf = 'T';
    charOutBuf++;
    cout << "." << endl;
 }
 \* Output:
 The characters written to the output stream
- by charOutBuf are: OUT.
+by charOutBuf are: OUT.
 *\
 ```
 

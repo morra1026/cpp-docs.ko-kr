@@ -68,12 +68,12 @@ helpviewer_keywords:
 - std::kill_dependency [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b70f4df63b5a885403b91c1470c3066c33f5f123
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: c00f66eef11d2d26bbcaa07110e9d9e738fc7c2f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42538336"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110164"
 ---
 # <a name="ltatomicgt-functions"></a>&lt;atomic&gt; 함수
 
@@ -110,11 +110,14 @@ inline bool atomic_compare_exchange_strong(
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 *원자성* 형식의 값을 저장 하는 개체 `Ty`합니다.
+*Atom*<br/>
+에 대 한 포인터를 *원자성* 형식의 값을 저장 하는 개체 `Ty`합니다.
 
-*Exp* 형식의 값에 대 한 포인터 `Ty`합니다.
+*Exp*<br/>
+`Ty` 형식의 값에 대한 포인터입니다.
 
-*값* 형식의 값 `Ty`합니다.
+*Value*<br/>
+`Ty` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -148,15 +151,20 @@ inline bool atomic_compare_exchange_strong_explicit(
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 형식의 값을 저장 하는 개체 `Ty`합니다.
+*Atom*<br/>
+`Ty` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*Exp* 형식의 값에 대 한 포인터 `Ty`합니다.
+*Exp*<br/>
+`Ty` 형식의 값에 대한 포인터입니다.
 
-*값* 형식의 값 `Ty`합니다.
+*Value*<br/>
+`Ty` 형식의 값입니다.
 
-*(Diffgr:id="order1* 첫 번째 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 인수입니다.
+*(Diffgr:id="order1*<br/>
+첫 번째 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 인수입니다.
 
-*Order2* 두 번째 `memory_order` 인수입니다. 변수의 *Order2* 일 수 없습니다 `memory_order_release` 또는 `memory_order_acq_rel`, 해당 값 보다 강력 할 수 없습니다 *(diffgr:id="order1*합니다.
+*Order2*<br/>
+두 번째 `memory_order` 인수입니다. 변수의 *Order2* 일 수 없습니다 `memory_order_release` 또는 `memory_order_acq_rel`, 해당 값 보다 강력 할 수 없습니다 *(diffgr:id="order1*합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -186,11 +194,14 @@ inline bool atomic_compare_exchange_strong(
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 형식의 값을 저장 하는 개체 `Ty`합니다.
+*Atom*<br/>
+`Ty` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*Exp* 형식의 값에 대 한 포인터 `Ty`합니다.
+*Exp*<br/>
+`Ty` 형식의 값에 대한 포인터입니다.
 
-*값* 형식의 값 `Ty`합니다.
+*Value*<br/>
+`Ty` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -224,15 +235,20 @@ inline bool atomic_compare_exchange_weak_explicit(
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 형식의 값을 저장 하는 개체 `Ty`합니다.
+*Atom*<br/>
+`Ty` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*Exp* 형식의 값에 대 한 포인터 `Ty`합니다.
+*Exp*<br/>
+`Ty` 형식의 값에 대한 포인터입니다.
 
-*값* 형식의 값 `Ty`합니다.
+*Value*<br/>
+`Ty` 형식의 값입니다.
 
-*(Diffgr:id="order1* 첫 번째 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 인수입니다.
+*(Diffgr:id="order1*<br/>
+첫 번째 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 인수입니다.
 
-*Order2* 두 번째 `memory_order` 인수입니다. 값 *Order2* 일 수 없습니다 `memory_order_release` 또는 `memory_order_acq_rel`에 사용할 수 있는 최대 값 보다 더 강력한 *(diffgr:id="order1*.
+*Order2*<br/>
+두 번째 `memory_order` 인수입니다. 값 *Order2* 일 수 없습니다 `memory_order_release` 또는 `memory_order_acq_rel`에 사용할 수 있는 최대 값 보다 더 강력한 *(diffgr:id="order1*.
 
 ### <a name="return-value"></a>반환 값
 
@@ -256,9 +272,11 @@ inline T atomic_exchange(atomic<Ty>* Atom, Ty Value) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 형식의 값을 저장 하는 개체 `Ty`합니다.
+*Atom*<br/>
+`Ty` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*값* 형식의 값 `Ty`합니다.
+*Value*<br/>
+`Ty` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -288,11 +306,14 @@ inline Ty atomic_exchange_explicit(
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 형식의 값을 저장 하는 개체 `Ty`합니다.
+*Atom*<br/>
+`Ty` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*값* 형식의 값 `Ty`합니다.
+*Value*<br/>
+`Ty` 형식의 값입니다.
 
-*순서* A [memory_order](../standard-library/atomic-enums.md#memory_order_enum)합니다.
+*순서*<br/>
+[memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>반환 값
 
@@ -315,9 +336,11 @@ T* atomic_fetch_add(atomic<T*>* Atom, ptrdiff_t Value) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 입력에 대 한 포인터를 저장 하는 개체 `T`합니다.
+*Atom*<br/>
+`T` 형식에 대한 포인터를 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*값* 형식의 값 `ptrdiff_t`합니다.
+*Value*<br/>
+`ptrdiff_t` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -357,9 +380,11 @@ T* atomic_fetch_add_explicit(
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 입력에 대 한 포인터를 저장 하는 개체 `T`합니다.
+*Atom*<br/>
+`T` 형식에 대한 포인터를 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*값* 형식의 값 `ptrdiff_t`합니다.
+*Value*<br/>
+`ptrdiff_t` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -398,9 +423,11 @@ inline T atomic_fetch_and(volatile atomic<T>* Atom, T Value) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 형식의 값을 저장 하는 개체 `T`합니다.
+*Atom*<br/>
+`T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*값* 형식의 값 `T`합니다.
+*Value*<br/>
+`T` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -430,11 +457,14 @@ inline T atomic_fetch_and_explicit(
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 형식의 값을 저장 하는 개체 `T`합니다.
+*Atom*<br/>
+`T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*값* 형식의 값 `T`합니다.
+*Value*<br/>
+`T` 형식의 값입니다.
 
-*순서* A [memory_order](../standard-library/atomic-enums.md#memory_order_enum)합니다.
+*순서*<br/>
+[memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>반환 값
 
@@ -457,9 +487,11 @@ inline T atomic_fetch_or (volatile atomic<T>* Atom, T Value) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 형식의 값을 저장 하는 개체 `T`합니다.
+*Atom*<br/>
+`T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*값* 형식의 값 `T`합니다.
+*Value*<br/>
+`T` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -489,11 +521,14 @@ inline T atomic_fetch_or_explicit(
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 형식의 값을 저장 하는 개체 `T`합니다.
+*Atom*<br/>
+`T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*값* 형식의 값 `T`합니다.
+*Value*<br/>
+`T` 형식의 값입니다.
 
-*순서* A [memory_order](../standard-library/atomic-enums.md#memory_order_enum)합니다.
+*순서*<br/>
+[memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>반환 값
 
@@ -521,9 +556,11 @@ T* atomic_fetch_sub(
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 입력에 대 한 포인터를 저장 하는 개체 `T`합니다.
+*Atom*<br/>
+`T` 형식에 대한 포인터를 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*값* 형식의 값 `ptrdiff_t`합니다.
+*Value*<br/>
+`ptrdiff_t` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -561,9 +598,11 @@ T* atomic_fetch_sub_explicit(
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 입력에 대 한 포인터를 저장 하는 개체 `T`합니다.
+*Atom*<br/>
+`T` 형식에 대한 포인터를 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*값* 형식의 값 `ptrdiff_t`합니다.
+*Value*<br/>
+`ptrdiff_t` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -603,9 +642,11 @@ inline T atomic_fetch_xor(volatile atomic<T>* Atom, T Value) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 형식의 값을 저장 하는 개체 `T`합니다.
+*Atom*<br/>
+`T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*값* 형식의 값 `T`합니다.
+*Value*<br/>
+`T` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -635,11 +676,14 @@ inline T atomic_fetch_xor_explicit(
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 형식의 값을 저장 하는 개체 `T`합니다.
+*Atom*<br/>
+`T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*값* 형식의 값 `T`합니다.
+*Value*<br/>
+`T` 형식의 값입니다.
 
-*순서* A [memory_order](../standard-library/atomic-enums.md#memory_order_enum)합니다.
+*순서*<br/>
+[memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>반환 값
 
@@ -660,7 +704,8 @@ inline void atomic_flag_clear(atomic_flag* Flag) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*플래그* 에 대 한 포인터를 `atomic_flag` 개체입니다.
+*플래그*<br/>
+`atomic_flag` 개체에 대한 포인터입니다.
 
 ## <a name="atomic_flag_clear_explicit"></a>  atomic_flag_clear_explicit
 
@@ -673,9 +718,11 @@ inline void atomic_flag_clear_explicit(atomic_flag* Flag, memory_order Order) no
 
 ### <a name="parameters"></a>매개 변수
 
-*플래그* 에 대 한 포인터를 `atomic_flag` 개체입니다.
+*플래그*<br/>
+`atomic_flag` 개체에 대한 포인터입니다.
 
-*순서* A [memory_order](../standard-library/atomic-enums.md#memory_order_enum)합니다.
+*순서*<br/>
+[memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ## <a name="atomic_flag_test_and_set"></a>  atomic_flag_test_and_set
 
@@ -688,7 +735,8 @@ inline bool atomic_flag_test_and_set(atomic_flag* Flag,) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*플래그* 에 대 한 포인터를 `atomic_flag` 개체입니다.
+*플래그*<br/>
+`atomic_flag` 개체에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -705,9 +753,11 @@ inline bool atomic_flag_test_and_set_explicit(atomic_flag* Flag, memory_order Or
 
 ### <a name="parameters"></a>매개 변수
 
-*플래그* 에 대 한 포인터를 `atomic_flag` 개체입니다.
+*플래그*<br/>
+`atomic_flag` 개체에 대한 포인터입니다.
 
-*순서* A [memory_order](../standard-library/atomic-enums.md#memory_order_enum)합니다.
+*순서*<br/>
+[memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>반환 값
 
@@ -726,9 +776,11 @@ inline void atomic_init(atomic<Ty>* Atom, Ty Value) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 형식의 값을 저장 하는 개체 `Ty`합니다.
+*Atom*<br/>
+`Ty` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*값* 형식의 값 `Ty`합니다.
+*Value*<br/>
+`Ty` 형식의 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -747,7 +799,8 @@ inline bool atomic_is_lock_free(const atomic<T>* Atom) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 형식의 값을 저장 하는 개체 `T`합니다.
+*Atom*<br/>
+`T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -770,7 +823,8 @@ inline Ty atomic_load(const atomic<Ty>* Atom) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 형식의 값이 포함 된 개체 `Ty`합니다.
+*Atom*<br/>
+`Ty` 형식의 값을 포함하는 `atomic` 개체에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -793,9 +847,11 @@ inline Ty atomic_load_explicit(const atomic<Ty>* Atom, memory_order Order) noexc
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 형식의 값이 포함 된 개체 `Ty`합니다.
+*Atom*<br/>
+`Ty` 형식의 값을 포함하는 `atomic` 개체에 대한 포인터입니다.
 
-*순서* A [memory_order](../standard-library/atomic-enums.md#memory_order_enum)합니다. `memory_order_release` 또는 `memory_order_acq_rel`을 사용하지 마세요.
+*순서*<br/>
+[memory_order](../standard-library/atomic-enums.md#memory_order_enum). `memory_order_release` 또는 `memory_order_acq_rel`을 사용하지 마세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -811,7 +867,8 @@ inline void atomic_signal_fence(memory_order Order) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*순서* 메모리 순서 fence 형식을 결정 하는 제약 조건입니다.
+*순서*<br/>
+fence 형식을 결정하는 메모리 순서 제약 조건입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -839,9 +896,11 @@ inline Ty atomic_store_explicit(const atomic<Ty>* Atom, T Value) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 형식의 값을 포함 하는 원자 개체에 대 한 포인터 `Ty`합니다.
+*Atom*<br/>
+`Ty` 형식의 값을 포함하는 원자 개체에 대한 포인터입니다.
 
-*값* 형식의 값 `Ty`합니다.
+*Value*<br/>
+`Ty` 형식의 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -867,11 +926,14 @@ inline Ty atomic_store_explicit(
 
 ### <a name="parameters"></a>매개 변수
 
-*Atom* 에 대 한 포인터를 `atomic` 형식의 값이 포함 된 개체 `Ty`합니다.
+*Atom*<br/>
+`Ty` 형식의 값을 포함하는 `atomic` 개체에 대한 포인터입니다.
 
-*값* 형식의 값 `Ty`합니다.
+*Value*<br/>
+`Ty` 형식의 값입니다.
 
-*순서* A [memory_order](../standard-library/atomic-enums.md#memory_order_enum)합니다. `memory_order_consume`, `memory_order_acquire` 또는 `memory_order_acq_rel`을 사용하지 마세요.
+*순서*<br/>
+[memory_order](../standard-library/atomic-enums.md#memory_order_enum). `memory_order_consume`, `memory_order_acquire` 또는 `memory_order_acq_rel`을 사용하지 마세요.
 
 ### <a name="remarks"></a>설명
 
@@ -887,7 +949,8 @@ inline void atomic_thread_fence(memory_order Order) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*순서* 메모리 순서 fence 형식을 결정 하는 제약 조건입니다.
+*순서*<br/>
+fence 형식을 결정하는 메모리 순서 제약 조건입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -913,7 +976,8 @@ Ty kill_dependency(Ty Arg) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*Arg* 형식의 값 `Ty`합니다.
+*arg*<br/>
+`Ty` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 

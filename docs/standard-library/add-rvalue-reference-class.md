@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba90002bc16dee6def7f8de69314668204ff5466
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a20a637872c8c26433920da313d4e6c001736d06
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966623"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105759"
 ---
 # <a name="addrvaluereference-class"></a>add_rvalue_reference 클래스
 
@@ -39,7 +39,8 @@ using add_rvalue_reference_t = typename add_rvalue_reference<T>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*T* 수정할 형식입니다.
+*T*<br/>
+수정할 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -47,7 +48,7 @@ using add_rvalue_reference_t = typename add_rvalue_reference<T>::type;
 
 편의 위해 \<type_traits > 도우미 템플릿으로 정의 `add_rvalue_reference_t`, 해당 별칭을 `type` 소속 `add_rvalue_reference`합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 static_assert를 사용하는 이 코드 예제에서는 `add_rvalue_reference` 및 `add_rvalue_reference_t`를 사용하여 rvalue 참조 형식을 만드는 방법과 lvalue 참조 형식에 대한 `add_rvalue_reference`의 결과가 rvalue 참조가 아닌 lvalue 참조 형식으로 축소되는 방법을 보여 줍니다.
 
@@ -80,7 +81,8 @@ All static_assert tests of add_rvalue_reference passed.
 
 ## <a name="requirements"></a>요구 사항
 
-헤더: <type_traits> 네임스페이스: std
+헤더: \<type_traits >  
+Namespace: std
 
 ## <a name="see-also"></a>참고자료
 

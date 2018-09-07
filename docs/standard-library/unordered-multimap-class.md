@@ -147,12 +147,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd7a7489c07572a9e3865698dc02988768983669
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 0f455ce1f09822d4705a8c700e9dbc93d4a2e79c
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960579"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104608"
 ---
 # <a name="unorderedmultimap-class"></a>unordered_multimap 클래스
 
@@ -262,7 +262,7 @@ typedef Alloc allocator_type;
 
 이 형식은 템플릿 매개 변수 `Alloc`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_allocator_type.cpp
@@ -314,7 +314,7 @@ const_local_iterator begin(size_type nbucket) const;
 
 처음 두 개의 멤버 함수는 시퀀스의 첫 번째 요소(또는 빈 시퀀스의 끝 바로 다음)를 가리키는 정방향 반복기를 반환합니다. 마지막 두 멤버 함수는 버킷의 첫 번째 요소를 가리키는 정방향 반복기를 반환 *nbucket* (또는 빈 버킷의 끝 바로 다음).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_begin.cpp
@@ -370,13 +370,13 @@ size_type bucket(const Key& keyval) const;
 ### <a name="parameters"></a>매개 변수
 
 *keyval*  
- 매핑할 키 값입니다.
+매핑할 키 값입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 현재 키 값을 해당 버킷 번호를 반환 *keyval*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_bucket.cpp
@@ -411,7 +411,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 bucket('a') == 7
 bucket_size(7) == 1
 ```
@@ -428,7 +428,7 @@ size_type bucket_count() const;
 
 멤버 함수는 현재 버킷 수를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_bucket_count.cpp
@@ -486,7 +486,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 bucket_count() == 8
 load_factor() == 0.375
 max_bucket_count() == 8
@@ -515,13 +515,13 @@ size_type bucket_size(size_type nbucket) const;
 ### <a name="parameters"></a>매개 변수
 
 *nbucket*  
- 버킷 번호입니다.
+버킷 번호입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 버킷 번호의 크기를 반환 *nbucket*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_bucket_size.cpp
@@ -556,7 +556,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 bucket('a') == 7
 bucket_size(7) == 1
 ```
@@ -627,7 +627,7 @@ void clear();
 
 구성원 함수는 [unordered_multimap::erase](#erase)`(` [unordered_multimap::begin](#begin)`(),` [unordered_multimap::end](#end)`())`를 호출합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_clear.cpp
@@ -674,7 +674,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 size == 0
 empty() == true
 
@@ -695,7 +695,7 @@ typedef T1 const_iterator;
 
 이 형식은 제어되는 시퀀스의 상수 정방향 반복기로 사용될 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T1`의 동의어로 설명됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_const_iterator.cpp
@@ -739,7 +739,7 @@ typedef T5 const_local_iterator;
 
 형식은 버킷의 상수 정방향 반복기로 사용될 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T5`의 동의어로 설명됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_const_local_iterator.cpp
@@ -788,7 +788,7 @@ typedef Alloc::const_pointer const_pointer;
 
 이 형식은 제어되는 시퀀스의 요소에 대한 상수 포인터로 사용될 수 있는 개체를 설명합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_const_pointer.cpp
@@ -835,7 +835,7 @@ typedef Alloc::const_reference const_reference;
 
 이 형식은 제어되는 시퀀스의 요소에 대한 상수 참조로 사용될 수 있는 개체를 설명합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_const_reference.cpp
@@ -881,13 +881,13 @@ size_type count(const Key& keyval) const;
 ### <a name="parameters"></a>매개 변수
 
 *keyval*  
- 검색할 키 값입니다.
+검색할 키 값입니다.
 
 ### <a name="remarks"></a>설명
 
 구성원 함수는 [unordered_multimap::equal_range](#equal_range)`(keyval)`로 구분된 범위의 요소 수를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_count.cpp
@@ -920,7 +920,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 count('A') == 0
 count('b') == 1
 count('C') == 0
@@ -938,7 +938,7 @@ typedef T3 difference_type;
 
 부호 있는 정수 형식은 제어되는 시퀀스에서 두 요소의 주소 간 차이점을 나타낼 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T3`의 동의어로 설명됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_difference_type.cpp
@@ -981,7 +981,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 end()-begin() == 3
 begin()-end() == -3
 ```
@@ -1059,7 +1059,7 @@ bool empty() const;
 
 멤버 함수는 빈 제어되는 시퀀스에 대해 true를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_empty.cpp
@@ -1106,7 +1106,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 size == 0
 empty() == true
 
@@ -1140,7 +1140,7 @@ const_local_iterator end(size_type nbucket) const;
 
 처음 두 멤버 함수는 시퀀스 끝의 바로 다음을 가리키는 정방향 반복기를 반환합니다. 마지막 두 멤버 함수는 버킷의 끝 바로 다음을 가리키는 정방향 반복기를 반환 *nbucket*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_end.cpp
@@ -1202,13 +1202,13 @@ std::pair<const_iterator, const_iterator>
 ### <a name="parameters"></a>매개 변수
 
 *keyval*  
- 검색할 키 값입니다.
+검색할 키 값입니다.
 
 ### <a name="remarks"></a>설명
 
 반복기의 쌍을 반환 하는 멤버 함수 `X` 되도록 `[X.first, X.second)` 동일 하 게 정렬 된 제어 된 시퀀스의 해당 요소를 구분 *keyval*합니다. 이러한 요소가 없는 경우 두 반복기는 `end()`입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_equal_range.cpp
@@ -1254,7 +1254,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 equal_range('x'):
 equal_range('b'): [b, 2]
 ```
@@ -1278,16 +1278,16 @@ size_type erase(
 ### <a name="parameters"></a>매개 변수
 
 *Where*  
- 제거할 요소의 위치입니다.
+제거할 요소의 위치입니다.
 
 *첫 번째*  
- 제거할 첫 번째 요소의 위치입니다.
+제거할 첫 번째 요소의 위치입니다.
 
 *마지막*  
- 제거할 마지막 요소 바로 다음 위치입니다.
+제거할 마지막 요소 바로 다음 위치입니다.
 
 *키*  
- 제거할 요소의 키 값입니다.
+제거할 요소의 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1310,13 +1310,13 @@ const_iterator find(const Key& keyval) const;
 ### <a name="parameters"></a>매개 변수
 
 *keyval*  
- 검색할 키 값입니다.
+검색할 키 값입니다.
 
 ### <a name="remarks"></a>설명
 
 구성원 함수는 [unordered_multimap::equal_range](#equal_range)`(keyval).first`를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_find.cpp
@@ -1355,7 +1355,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 find('A') == false
 find('b') == true: [b, 2]
 ```
@@ -1372,7 +1372,7 @@ Alloc get_allocator() const;
 
 멤버 함수는 저장된 할당자 개체를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_get_allocator.cpp
@@ -1411,7 +1411,7 @@ Hash hash_function() const;
 
 멤버 함수는 저장된 해시 함수 개체를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_hash_function.cpp
@@ -1450,7 +1450,7 @@ typedef Hash hasher;
 
 이 형식은 템플릿 매개 변수 `Hash`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_hasher.cpp
@@ -1566,7 +1566,7 @@ typedef T0 iterator;
 
 이 형식은 제어되는 시퀀스의 정방향 반복기로 사용될 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T0`의 동의어로 설명됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_iterator.cpp
@@ -1610,7 +1610,7 @@ Pred key_eq() const;
 
 멤버 함수는 저장된 비교 함수 개체를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_key_eq.cpp
@@ -1651,7 +1651,7 @@ typedef Pred key_equal;
 
 이 형식은 템플릿 매개 변수 `Pred`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_key_equal.cpp
@@ -1692,7 +1692,7 @@ typedef Key key_type;
 
 이 형식은 템플릿 매개 변수 `Key`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_key_type.cpp
@@ -1748,7 +1748,7 @@ float load_factor() const;
 
 구성원 함수는 `(float)`[unordered_multimap::size](#size)`() / (float)`[unordered_multimap::bucket_count](#bucket_count)`()`(버킷당 평균 요소 수)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_load_factor.cpp
@@ -1817,7 +1817,7 @@ typedef T4 local_iterator;
 
 형식은 버킷의 정방향 반복기로 사용될 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T4`의 동의어로 설명됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_local_iterator.cpp
@@ -1866,7 +1866,7 @@ typedef Ty mapped_type;
 
 이 형식은 템플릿 매개 변수 `Ty`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_mapped_type.cpp
@@ -1922,7 +1922,7 @@ size_type max_bucket_count() const;
 
 멤버 함수는 현재 허용된 최대 버킷 개수를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_max_bucket_count.cpp
@@ -1980,7 +1980,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 bucket_count() == 8
 load_factor() == 0.375
 max_bucket_count() == 8
@@ -2012,13 +2012,13 @@ void max_load_factor(float factor);
 ### <a name="parameters"></a>매개 변수
 
 *factor*  
- 새로운 최대 로드 비율입니다.
+새로운 최대 로드 비율입니다.
 
 ### <a name="remarks"></a>설명
 
 첫 번째 멤버 함수는 저장된 최대 로드 비율을 반환합니다. 두 번째 멤버 함수는 사용 하 여 저장 된 최대 로드 비율을 대체 *비율*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_max_load_factor.cpp
@@ -2076,7 +2076,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 bucket_count() == 8
 load_factor() == 0.375
 max_bucket_count() == 8
@@ -2106,7 +2106,7 @@ size_type max_size() const;
 
 멤버 함수는 개체가 제어할 수 있는 가장 긴 시퀀스의 길이를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_max_size.cpp
@@ -2150,7 +2150,7 @@ unordered_multimap& operator=(unordered_multimap&& right);
 
 를 unordered_multimap의 기존 요소를 지운 후 `operator=` 복사 하거나 이동 내용의 *오른쪽* 를 unordered_multimap으로 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // unordered_multimap_operator_as.cpp
@@ -2199,7 +2199,7 @@ typedef Alloc::pointer pointer;
 
 이 형식은 제어되는 시퀀스의 요소에 대한 포인터로 사용될 수 있는 개체를 설명합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_pointer.cpp
@@ -2246,7 +2246,7 @@ typedef Alloc::reference reference;
 
 이 형식은 제어되는 시퀀스의 요소에 대한 참조로 사용될 수 있는 개체를 설명합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_reference.cpp
@@ -2292,13 +2292,13 @@ void rehash(size_type nbuckets);
 ### <a name="parameters"></a>매개 변수
 
 *nbuckets*  
- 요청된 버킷 수입니다.
+요청된 버킷 수입니다.
 
 ### <a name="remarks"></a>설명
 
 버킷 최소 수를 변경 하는 멤버 함수 *nbuckets* 필요에 따라 해시 테이블을 다시 빌드합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_rehash.cpp
@@ -2346,7 +2346,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 bucket_count() == 8
 load_factor() == 0.375
 max_load_factor() == 4
@@ -2372,7 +2372,7 @@ size_type size() const;
 
 멤버 함수는 제어되는 시퀀스의 길이를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_size.cpp
@@ -2419,7 +2419,7 @@ int main()
 ```
 
 ```Output
- [c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 size == 0
 empty() == true
 
@@ -2440,7 +2440,7 @@ typedef T2 size_type;
 
 부호 없는 정수 형식은 제어되는 시퀀스의 길이를 나타낼 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T2`의 동의어로 설명됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_size_type.cpp
@@ -2475,13 +2475,14 @@ void swap(unordered_multimap& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 와 바꿀 컨테이너입니다.
+*right*<br/>
+교환할 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수 간에 제어 된 시퀀스를 교환 `*this` 하 고 *오른쪽*합니다. [unordered_multimap::get_allocator](#get_allocator)`() == right.get_allocator()`인 경우 일정 시간에 이 작업을 수행하고 `Tr` 형식의 저장된 특성 개체를 복사한 결과로만 예외를 throw하며 두 개의 제어되는 시퀀스에서 요소를 지정하는 참조, 포인터 또는 반복기를 무효화하지 않습니다. 그렇지 않으면 두 개의 제어되는 시퀀스에 있는 요소 수에 비례하여 많은 요소 할당 및 생성자 호출을 수행합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_swap.cpp
@@ -2581,7 +2582,7 @@ unordered_multimap(
 
 template <class InputIterator>
 unordered_multimap(
- InputIterator first, InputIterator last,
+InputIterator first, InputIterator last,
     size_type Bucket_count = N0,
     const Hash& Hash = Hash(),
     const Comp& Comp = Pred(),
@@ -2614,7 +2615,7 @@ unordered_multimap(
 
 할당자 개체는 인수 *Al*에 있는, 그렇지 않으면 `Alloc()`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_construct.cpp
@@ -2733,9 +2734,9 @@ int main()
 
 ```Output
 [a, 1] [b, 2] [c, 3] [d, 4] [e, 5] [f, 6] [a, 1] [b, 2] [c, 3] [a, 1] [b, 2] [c, 3] [5, g] [6, h] [7, i] [8, j] [a, 1] [b, 2] [c, 3] [a, 1] [b, 2] [c, 3] [a, 1] [b, 2] [c, 3] [a, 1] [b, 2] [c, 3] [c, 3] [b, 2] [a, 1]
- [f, 6] [e, 5] [d, 4]
- [c, 3] [b, 2] [a, 1]
- [c, 3] [b, 2] [a, 1]
+[f, 6] [e, 5] [d, 4]
+[c, 3] [b, 2] [a, 1]
+[c, 3] [b, 2] [a, 1]
 ```
 
 ## <a name="value_type"></a>  unordered_multimap::value_type
@@ -2750,7 +2751,7 @@ typedef std::pair<const Key, Ty> value_type;
 
 형식은 제어되는 시퀀스의 요소를 설명합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__unordered_multimap_value_type.cpp

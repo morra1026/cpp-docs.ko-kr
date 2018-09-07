@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52f9c1335304cc3eefec76abde641e62932eb727
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 7d2035a1146c5e620d8f75dd6bba5095a7630e0a
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964410"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103999"
 ---
 # <a name="negativebinomialdistribution-class"></a>negative_binomial_distribution 클래스
 
@@ -81,7 +81,8 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*IntType* 정수 결과 형식으로 기본값으로 **int**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*IntType*<br/>
+정수 결과 형식으로 기본값으로 **int**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -106,7 +107,7 @@ public:
 
 음 이항 분포 이산 확률 함수에 대 한 자세한 내용은 Wolfram MathWorld 문서를 참조 하세요 [음 이항 분포](http://go.microsoft.com/fwlink/p/?linkid=400516)합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // compile with: /EHsc /W4
@@ -242,11 +243,14 @@ explicit negative_binomial_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*k* 는 `k` 분포 매개 변수입니다.
+*k*<br/>
+`k` 분포 매개 변수입니다.
 
-*p* 는 `p` 분포 매개 변수입니다.
+*p*<br/>
+`p` 분포 매개 변수입니다.
 
-*parm* 분포를 생성 하는 데 매개 변수 구조입니다.
+*parm*<br/>
+분포를 생성하는 데 사용되는 매개 변수 구조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -266,11 +270,14 @@ explicit negative_binomial_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*k* 는 `k` 분포 매개 변수입니다.
+*k*<br/>
+`k` 분포 매개 변수입니다.
 
-*p* 는 `p` 분포 매개 변수입니다.
+*p*<br/>
+`p` 분포 매개 변수입니다.
 
-*오른쪽* 는 `param_type` 구조 비교 하는 데 사용 합니다.
+*right*<br/>
+비교에 사용되는 `param_type` 구조체입니다.
 
 ### <a name="remarks"></a>설명
 

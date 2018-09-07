@@ -43,12 +43,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69123bfd07d992d96c504e538ded157c49991dab
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 46d29b55e215ce426bbfd465b3d54e1d267a1bb1
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221610"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103920"
 ---
 # <a name="splitpath-wsplitpath"></a>_splitpath, _wsplitpath
 
@@ -75,15 +75,20 @@ void _wsplitpath(
 
 ### <a name="parameters"></a>매개 변수
 
-*경로* 전체 경로입니다.
+*path*<br/>
+전체 경로입니다.
 
-*드라이브* 드라이브 문자 뒤에 콜론 (**:**). 전달할 수 있습니다 **NULL** 드라이브 문자 필요 하지 않은 경우이 매개 변수에 대 한 합니다.
+*드라이브*<br/>
+드라이브 문자를 뒤에 콜론 (**:**). 전달할 수 있습니다 **NULL** 드라이브 문자 필요 하지 않은 경우이 매개 변수에 대 한 합니다.
 
-*dir* 디렉터리 경로 후행 슬래시를 포함 합니다. 슬래시 ( **/** ), 백슬래시 ( **\\** ), 또는 둘 다 사용할 수 있습니다. 전달할 수 있습니다 **NULL** 디렉터리 경로 필요 하지 않은 경우이 매개 변수에 대 한 합니다.
+*dir*<br/>
+후행 슬래시를 포함한 디렉터리 경로입니다. 슬래시 ( **/** ), 백슬래시 ( **\\** ), 또는 둘 다 사용할 수 있습니다. 전달할 수 있습니다 **NULL** 디렉터리 경로 필요 하지 않은 경우이 매개 변수에 대 한 합니다.
 
-*fname* 기본 파일 이름 (확장명 없음). 전달할 수 있습니다 **NULL** 파일 이름이 필요 하지 않은 경우이 매개 변수에 대 한 합니다.
+*fname*<br/>
+기본 파일 이름(확장명 없음)입니다. 전달할 수 있습니다 **NULL** 파일 이름이 필요 하지 않은 경우이 매개 변수에 대 한 합니다.
 
-*ext* 선행 마침표를 포함 하 여 파일 확장명 (**.**). 전달할 수 있습니다 **NULL** 파일 이름 확장명이 필요 하지 않은 경우이 매개 변수에 대 한 합니다.
+*ext*<br/>
+선행 마침표를 포함 하 여 파일 확장명 (**.**). 전달할 수 있습니다 **NULL** 파일 이름 확장명이 필요 하지 않은 경우이 매개 변수에 대 한 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -103,7 +108,7 @@ void _wsplitpath(
 
 다음 표에는 매니페스트 상수의 값이 나와 있습니다.
 
-|name|값|
+|이름|값|
 |----------|-----------|
 |**_MAX_DRIVE**|3|
 |**_MAX_DIR**|256|

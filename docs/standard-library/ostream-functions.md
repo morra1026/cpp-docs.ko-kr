@@ -14,12 +14,12 @@ helpviewer_keywords:
 - std::endl [C++]
 - std::ends [C++]
 - std::flush [C++]
-ms.openlocfilehash: d30ad23956c978ee47ef447463a0d5422a94d4b9
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 494c750ec80000ef9090824e0436f6e443593847
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962324"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107616"
 ---
 # <a name="ltostreamgt-functions"></a>&lt;ostream&gt; 함수
 
@@ -42,11 +42,14 @@ basic_ostream<Elem, Tr>& endl(
 
 ### <a name="parameters"></a>매개 변수
 
-*Elem* 요소 형식입니다.
+*Elem*<br/>
+요소 형식입니다.
 
-*Ostr* 형식의 개체 **basic_ostream**합니다.
+*Ostr*<br/>
+형식의 개체 **basic_ostream**합니다.
 
-*Tr* 특성 문자입니다.
+*Tr*<br/>
+문자 특성입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -56,7 +59,7 @@ basic_ostream<Elem, Tr>& endl(
 
 조작자 *Ostr*.[ 배치](../standard-library/basic-ostream-class.md#put)(*Ostr*.[ widen](../standard-library/basic-ios-class.md#widen)('\n'))를 호출 하 고 *Ostr*.[ 플러시](../standard-library/basic-ostream-class.md#flush)합니다. 반환 *Ostr*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ostream_endl.cpp
@@ -86,11 +89,14 @@ basic_ostream<Elem, Tr>& ends(
 
 ### <a name="parameters"></a>매개 변수
 
-*Elem* 요소 형식입니다.
+*Elem*<br/>
+요소 형식입니다.
 
-*Ostr* 형식의 개체 `basic_ostream`합니다.
+*Ostr*<br/>
+`basic_ostream` 형식의 개체입니다.
 
-*Tr* 특성 문자입니다.
+*Tr*<br/>
+문자 특성입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -100,7 +106,7 @@ basic_ostream<Elem, Tr>& ends(
 
 조작자 *Ostr*.[ 배치](../standard-library/basic-ostream-class.md#put)(*Elem*('\0')). 반환 *Ostr*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ostream_ends.cpp
@@ -132,11 +138,14 @@ basic_ostream<Elem, Tr>& flush(
 
 ### <a name="parameters"></a>매개 변수
 
-*Elem* 요소 형식입니다.
+*Elem*<br/>
+요소 형식입니다.
 
-*Ostr* 형식의 개체 `basic_ostream`합니다.
+*Ostr*<br/>
+`basic_ostream` 형식의 개체입니다.
 
-*Tr* 특성 문자입니다.
+*Tr*<br/>
+문자 특성입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -146,7 +155,7 @@ basic_ostream<Elem, Tr>& flush(
 
 조작자 *Ostr*.[ 플러시](../standard-library/basic-ostream-class.md#flush)합니다. 반환 *Ostr*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ostream_flush.cpp
@@ -177,13 +186,17 @@ void swap(
 
 ### <a name="parameters"></a>매개 변수
 
-*Elem* 요소 형식입니다.
+*Elem*<br/>
+요소 형식입니다.
 
-*Tr* 특성 문자입니다.
+*Tr*<br/>
+문자 특성입니다.
 
-*왼쪽* 에 대 한 lvalue 참조를 `basic_ostream` 개체입니다.
+*left*<br/>
+`basic_ostream` 개체에 대한 lvalue 참조입니다.
 
-*오른쪽* 에 대 한 lvalue 참조를 `basic_ostream` 개체입니다.
+*right*<br/>
+`basic_ostream` 개체에 대한 lvalue 참조입니다.
 
 ### <a name="remarks"></a>설명
 

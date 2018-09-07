@@ -7,12 +7,12 @@ f1_keywords:
 - hash_set/std::swap
 - hash_set/std::swap (hash_multiset)
 ms.assetid: 557a0162-3728-4537-97dc-f9f6cc7ece94
-ms.openlocfilehash: ad8041ff6a4abab84272d2bbbdee290bfce4eff6
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 5c96ac897d870e1f8dc153847797379b6720dc7b
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961879"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103248"
 ---
 # <a name="lthashsetgt-functions"></a>&lt;hash_set&gt; 함수
 
@@ -35,9 +35,11 @@ void swap(
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 교환할 요소를 제공 하는 hash_set 또는 hash_set의와 교환할 요소가 들어 있는 hash_set *왼쪽*합니다.
+*right*<br/>
+교환할 요소를 제공 하는 hash_set 또는 hash_set의와 교환할 요소가 들어 있는 hash_set *왼쪽*합니다.
 
-*왼쪽* 요소를 교환할 hash_set의 hash_set *오른쪽*합니다.
+*left*<br/>
+해당 요소를 교환할 hash_set의 hash_set *오른쪽*합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -47,7 +49,7 @@ void swap(
 
 는 할당을 통해 작동하며 속도가 느린 작업입니다. 각 컨테이너의 특수화된 버전은 컨테이너 클래스의 내부 표현을 사용할 수 있으므로 속도가 훨씬 빠릅니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `swap`의 템플릿 버전 사용 예제를 보려면 멤버 클래스 [hash_set::swap](../standard-library/hash-set-class.md#swap)에 대한 코드 예제를 참조하세요.
 
@@ -64,9 +66,11 @@ void swap(hash_multiset <Key, Traits, Allocator>& left, hash_multiset <Key, Trai
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 교환할 요소를 제공 하는 hash_multiset 또는 hash_multiset과 교환할 요소가 들어 있는 hash_multiset *왼쪽*합니다.
+*right*<br/>
+교환할 요소를 제공 하는 hash_multiset 또는 hash_multiset과 교환할 요소가 들어 있는 hash_multiset *왼쪽*합니다.
 
-*왼쪽* 요소가 들어 있는 hash_multiset과 교환할 hash_multiset *오른쪽*합니다.
+*left*<br/>
+요소가 들어 있는 hash_multiset과 교환할 hash_multiset *오른쪽*합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -76,7 +80,7 @@ void swap(hash_multiset <Key, Traits, Allocator>& left, hash_multiset <Key, Trai
 
 는 할당을 통해 작동하며 속도가 느린 작업입니다. 각 컨테이너의 특수화된 버전은 컨테이너 클래스의 내부 표현을 사용할 수 있으므로 속도가 훨씬 빠릅니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `swap`의 템플릿 버전 사용 예제를 보려면 멤버 클래스 [hash_multiset::swap](../standard-library/hash-multiset-class.md#swap)에 대한 코드 예제를 참조하세요.
 

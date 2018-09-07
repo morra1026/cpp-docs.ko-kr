@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8b138424f3394c940307b422f590648c661d037d
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3ddab2c3dff6631b5cb775352a3bcb994d6abff3
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958145"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44109916"
 ---
 # <a name="addcv-class"></a>add_cv 클래스
 
@@ -40,7 +40,8 @@ using add_cv_t = typename add_cv<T>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*T* 수정할 형식입니다.
+*T*<br/>
+수정할 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -48,7 +49,7 @@ using add_cv_t = typename add_cv<T>::type;
 
 `add_cv_t<T>` 도우미 형식은 `add_cv<T>` 멤버 typedef `type`에 액세스하기 위한 바로 가기입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // add_cv.cpp

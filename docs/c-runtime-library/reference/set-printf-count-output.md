@@ -34,16 +34,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 96256f71a94f20f126f02b04511c57c831ad2a00
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 783225412b01430d1043dafd4761cb7432eaa1d7
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406643"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108321"
 ---
 # <a name="setprintfcountoutput"></a>_set_printf_count_output
 
-지원을 설정 또는 해제는 **%n** 에 서식을 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)-패밀리 함수입니다.
+지원을 설정 또는 해제 합니다 **%n** 형식의 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)-패밀리 함수입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -55,19 +55,20 @@ int _set_printf_count_output(
 
 ### <a name="parameters"></a>매개 변수
 
-*사용 하도록 설정* 사용 하도록 설정 하려면 0이 아닌 값 **%n** 를 지원 하지 않으려면 0 **%n** 지원 합니다.
+*enable*<br/>
+사용 하도록 설정 하려면 0이 아닌 값 **%n** 를 지원 하지 않으려면 0 **%n** 지원 합니다.
 
 ## <a name="property-valuereturn-value"></a>속성 값/반환 값
 
-상태 **%n** 이 함수를 호출 하기 전에 지원: 0이 아닌 경우 **%n** 지원이 활성화 된 경우 사용 하지 않도록 설정 된 경우 0입니다.
+상태의 **%n** 이 함수를 호출 하기 전에 지원할: 0이 아닌 경우 **%n** 지원이 활성화 된 경우 사용 하지 않도록 설정 된 경우에 0입니다.
 
 ## <a name="remarks"></a>설명
 
-보안상의 이유로 인해에 대 한 지원의 **%n** 형식 지정자에는 기본적으로 비활성화 되어 **printf** 및 모든 변형 합니다. 경우 **%n** 에서 발견 되는 **printf** 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 하는 형식 지정의 기본 동작은 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 호출 **_set_printf_count_output** 0이 아닌 인수를 사용 하면 **printf**-해석 패밀리 함수 **%n** 에 설명 된 대로 [형식 사양 구문: printf 및 wprintf 함수](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)합니다.
+보안상의 이유로 지원 합니다 **%n** 형식 지정자에는 기본적으로 비활성화 되어 **printf** 및 모든 해당 변형 항목입니다. 하는 경우 **%n** 에서 발견 되는 **printf** 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 하는 형식 지정, 기본 동작 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 호출 **_set_printf_count_output** 0이 아닌 인수를 사용 하면 **printf**-해석 패밀리 함수가 **%n** 에 설명 된 대로 [형식 사양 구문: printf 및 wprintf 함수](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_set_printf_count_output**|\<stdio.h>|
 

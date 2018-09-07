@@ -44,12 +44,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8fca6772c00715722acecd810595a42c60f77d86
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ebc03a459a190144217ca15a9ab13bef395d5128
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201389"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103725"
 ---
 # <a name="mbccpy-mbccpyl"></a>_mbccpy, _mbccpy_l
 
@@ -74,11 +74,14 @@ void _mbccpy_l(
 
 ### <a name="parameters"></a>매개 변수
 
-*dest* 복사 대상입니다.
+*dest*<br/>
+복사 대상입니다.
 
-*src* 복사할 멀티 바이트 문자입니다.
+*src*<br/>
+복사할 멀티바이트 문자입니다.
 
-*로캘* 사용할 로캘입니다.
+*locale*<br/>
+사용할 로캘입니다.
 
 ## <a name="remarks"></a>설명
 

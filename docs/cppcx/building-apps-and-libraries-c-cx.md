@@ -9,22 +9,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec156489b08d9f640187148b6284b5fd4763e6eb
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9dabdf719ab737afbc93fad75b127ec657a7b6ef
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751608"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103842"
 ---
 # <a name="building-apps-and-libraries-ccx"></a>응용 프로그램 및 라이브러리 빌드(C++/CX)
-이 섹션의에서 항목에서는 빌드 시스템을 사용 하 여 유니버설 Windows 플랫폼 앱 또는 Windows 런타임 구성 요소를 생성 하는 방법에 대 한 몇 가지 세부 정보를 제공 합니다.  
-  
-## <a name="in-this-section"></a>단원 내용  
-  
--   [컴파일러 및 링커 옵션](../cppcx/compiler-and-linker-options-c-cx.md)  
-  
--   [정적 라이브러리](../cppcx/static-libraries-c-cx.md)  
-  
--   [DLLs](../cppcx/dlls-c-cx.md)  
-  
- 참고: Visual c + + 없으므로 프로필 기반 최적화 유니버설 Windows 플랫폼에 대 한 합니다. IDE에서 이러한 옵션 설정을 사용하여 프로젝트를 빌드하려고 시도하면 빌드 오류가 발생합니다. 콘솔 응용 프로그램도 지원되지 않습니다.
+
+이 섹션의에서 항목에서는 빌드 시스템을 사용 하 여 유니버설 Windows 플랫폼 앱 또는 Windows 런타임 구성 요소를 생성 하는 방법에 대 한 몇 가지 세부 정보를 제공 합니다.
+
+## <a name="in-this-section"></a>단원 내용
+
+- [컴파일러 및 링커 옵션](../cppcx/compiler-and-linker-options-c-cx.md)
+
+- [정적 라이브러리](../cppcx/static-libraries-c-cx.md)
+
+- [DLLs](../cppcx/dlls-c-cx.md)
+
+참고: Visual c + + 없으므로 프로필 기반 최적화 유니버설 Windows 플랫폼에 대 한 합니다. IDE에서 이러한 옵션 설정을 사용하여 프로젝트를 빌드하려고 시도하면 빌드 오류가 발생합니다. 콘솔 응용 프로그램도 지원되지 않습니다.

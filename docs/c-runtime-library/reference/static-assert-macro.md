@@ -28,16 +28,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bbbab8314a038d796ebd1a13342f3054e59f3e68
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8eda76666679b133b2d5486d21cd4c8e24d1fdf3
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407368"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105085"
 ---
 # <a name="staticassert-macro"></a>_STATIC_ASSERT 매크로
 
-컴파일 시 식을 평가 하 고 결과 오류를 생성 **FALSE**합니다.
+컴파일 시 식을 계산 하 고 결과가 인 경우 오류를 생성 **FALSE**합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -49,15 +49,16 @@ _STATIC_ASSERT(
 
 ### <a name="parameters"></a>매개 변수
 
-*booleanExpression* 에 0이 아닌 계산 되는 식 (포인터 포함) (**TRUE**) 또는 0 (**FALSE**).
+*booleanExpression*<br/>
+0이 아닌 값으로 계산 되는 식 (포인터 포함) (**TRUE**) 또는 0 (**FALSE**).
 
 ## <a name="remarks"></a>설명
 
-이 매크로 유사한는 [_ASSERT 및 _ASSERTE 매크로](assert-asserte-assert-expr-macros.md)제외 하 고 *booleanExpression* 런타임 대신 컴파일 타임에 계산 됩니다. 경우 *booleanExpression* 계산 **FALSE** (0), [컴파일러 오류 C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) 생성 됩니다.
+이 매크로 유사 합니다 [_ASSERT 및 _ASSERTE 매크로](assert-asserte-assert-expr-macros.md)점을 제외 하 고 *booleanExpression* 런타임 대신 컴파일 시간에 평가 됩니다. 하는 경우 *booleanExpression* 로 평가 **FALSE** (0), [컴파일러 오류 C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) 생성 됩니다.
 
 ## <a name="example"></a>예제
 
-확인이 예제에서는 여부는 [sizeof](../../c-language/sizeof-operator-c.md) 는 **int** 2 바이트 보다 큰 크거나 여부와 [sizeof](../../c-language/sizeof-operator-c.md) 는 **긴** 는 1 바이트입니다. 프로그램이 컴파일되지 것입니다 및 기반인 [컴파일러 오류 C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) 때문에 **긴** 1 바이트 보다 큰 합니다.
+확인이 예제에서는 여부를 [sizeof](../../c-language/sizeof-operator-c.md) 는 **int** 2 바이트 보다 크거나 같은 경우는 여부에 관계 없이 [sizeof](../../c-language/sizeof-operator-c.md) 를 **긴** 1 바이트입니다. 프로그램을 컴파일되지 것입니다 및 생성 됩니다 [컴파일러 오류 C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) 때문에 **긴** 1 바이트 보다 큽니다.
 
 ```C
 // crt__static_assert.c

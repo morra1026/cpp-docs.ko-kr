@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7025e0d52aa882c26e2785279626959ca6b29ac1
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 62bdeeddf0e81cf017c49eac51ca0e2eaaf046c1
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962932"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104069"
 ---
 # <a name="scopedallocatoradaptor-class"></a>scoped_allocator_adaptor 클래스
 
@@ -75,7 +75,7 @@ class scoped_allocator_adaptor;
 
 ### <a name="constructors"></a>생성자
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[scoped_allocator_adaptor](#scoped_allocator_adaptor)|`scoped_allocator_adaptor` 개체를 생성합니다.|
 
@@ -131,9 +131,11 @@ pointer allocate(size_type count);pointer allocate(size_type count, const_void_p
 
 ### <a name="parameters"></a>매개 변수
 
-*개수* 충분 한 저장소가 할당 되는 요소의 수입니다.
+*count*<br/>
+충분한 저장소를 할당할 요소의 수입니다.
 
-*힌트* 요청 이전에 할당 된 개체의 주소를 찾아서 할당자 개체를 지원할 수 있는 포인터입니다.
+*힌트*<br/>
+요청 이전에 할당된 개체의 주소를 찾아서 할당자 개체를 지원할 수 있는 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -168,15 +170,20 @@ void construct(pair<Ty1, Ty2>* ptr, pair<Uy1, Uy2>&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr* 개체를 생성할 메모리 위치에 대 한 포인터입니다.
+*ptr*<br/>
+개체를 생성할 메모리 위치에 대한 포인터입니다.
 
-*args* 인수 목록입니다.
+*인수*<br/>
+인수 목록입니다.
 
-*첫 번째* 쌍의 첫 번째 형식의 개체입니다.
+*first*<br/>
+쌍에 포함된 첫 번째 형식의 개체입니다.
 
-*두 번째* 쌍의 두 번째 형식의 개체입니다.
+*second*<br/>
+쌍에 포함된 두 번째 형식의 개체입니다.
 
-*오른쪽* 기존 개체를 이동 하거나 복사할 수 있습니다.
+*right*<br/>
+이동하거나 복사할 기존 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -208,9 +215,11 @@ void deallocate(pointer ptr, size_type count);
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr* 할당을 취소할 개체의 시작 위치에 대 한 포인터입니다.
+*ptr*<br/>
+할당을 취소할 개체의 시작 위치에 대한 포인터입니다.
 
-*개수* 을 취소할 개체의 수입니다.
+*count*<br/>
+할당을 취소할 개체의 수입니다.
 
 ## <a name="destroy"></a>  scoped_allocator_adaptor::destroy
 
@@ -223,7 +232,8 @@ void destroy(Ty* ptr)
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr* 개체 소멸에 대 한 포인터입니다.
+*ptr*<br/>
+제거할 개체에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -283,10 +293,10 @@ scoped_allocator_adaptor();
 scoped_allocator_adaptor(const scoped_allocator_adaptor& right) noexcept;
 template <class Outer2>
 scoped_allocator_adaptor(
- const scoped_allocator_adaptor<Outer2, Inner...>& right) noexcept;
+const scoped_allocator_adaptor<Outer2, Inner...>& right) noexcept;
 template <class Outer2>
 scoped_allocator_adaptor(
- scoped_allocator_adaptor<Outer2, Inner...>&& right) noexcept;
+scoped_allocator_adaptor<Outer2, Inner...>&& right) noexcept;
 template <class Outer2>
 scoped_allocator_adaptor(Outer2&& al,
     const Inner&... rest) noexcept;
@@ -294,11 +304,14 @@ scoped_allocator_adaptor(Outer2&& al,
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 기존 `scoped_allocator_adaptor`합니다.
+*right*<br/>
+기존 `scoped_allocator_adaptor`입니다.
 
-*al* 외부 할당자로 사용할 기존 할당자입니다.
+*Al*<br/>
+외부 할당자로 사용할 기존 할당자입니다.
 
-*rest* 내부 할당자로 사용할 할당자의 목록입니다.
+*rest*<br/>
+내부 할당자로 사용할 할당자의 목록입니다.
 
 ### <a name="remarks"></a>설명
 

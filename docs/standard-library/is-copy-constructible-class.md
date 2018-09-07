@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 568eb077a2006bdb33eb08e0fa5618b7c38a6cb1
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a73527315b142bd8a650db67c1be29664e11be74
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962639"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105330"
 ---
 # <a name="iscopyconstructible-class"></a>is_copy_constructible 클래스
 
@@ -36,13 +36,14 @@ struct is_copy_constructible;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty* 쿼리할 형식입니다.
+*Ty*<br/>
+형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
 형식 조건자의 인스턴스 형태인 경우 true 형식을 *Ty* 는 클래스에 복사 생성자가 있는 그렇지 않으면 false입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 #include <type_traits>

@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51220aaf47056f63d37471c61857f8a128a67179
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: e18c02909c247af4066033fc3e3633db74327f55
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39402450"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102644"
 ---
 # <a name="alignedfree"></a>_aligned_free
 
@@ -54,7 +54,8 @@ void _aligned_free (
 
 ### <a name="parameters"></a>매개 변수
 
-*memblock* 반환 된 메모리 블록에 대 한 포인터를 `_aligned_malloc` 또는 `_aligned_offset_malloc` 함수입니다.
+*memblock*  
+`_aligned_malloc` 또는 `_aligned_offset_malloc` 함수로 반환된 메모리 블록에 대한 포인터입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -68,7 +69,7 @@ void _aligned_free (
 |-------------|---------------------|
 |**_aligned_free**|\<malloc.h>|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 자세한 내용은 [_aligned_malloc](aligned-malloc.md)를 참조하세요.
 

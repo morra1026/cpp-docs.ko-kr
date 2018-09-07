@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::operator&lt; (map)
 - std::operator&lt;= (map)
 - std::operator== (map)
-ms.openlocfilehash: 22d8d5d348dc4bf4bd50ee56db360e4490503b78
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 0113f792a20c1680ce931d43cbaf016e7bcfaf59
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959260"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108308"
 ---
 # <a name="ltmapgt-operators"></a>&lt;map&gt; 연산자
 
@@ -48,9 +48,11 @@ bool operator!=(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `map`합니다.
+*left*<br/>
+`map` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `map`합니다.
+*right*<br/>
+`map` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -60,7 +62,7 @@ map이 같지 않으면 **true**이고, map이 같으면 **false**입니다.
 
 map 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 포함된 요소 수가 같고 개별 요소의 값이 같으면 두 map은 같은 것입니다. 그렇지 않으면 목록은 같지 않은 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_op_ne.cpp
@@ -110,9 +112,11 @@ bool operator<(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `map`합니다.
+*left*<br/>
+`map` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `map`합니다.
+*right*<br/>
+`map` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -122,7 +126,7 @@ bool operator<(
 
 map 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 두 개체 간의 보다 작음 관계는 같지 않은 요소의 첫 번째 쌍 비교를 기반으로 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_op_lt.cpp
@@ -172,15 +176,17 @@ bool operator<=(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `map`합니다.
+*left*<br/>
+`map` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `map`합니다.
+*right*<br/>
+`map` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
 연산자 좌변의 map이 연산자 우변의 map보다 작거나 같으면 **true**이고 그렇지 않으면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_op_le.cpp
@@ -237,9 +243,11 @@ bool operator==(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `map`합니다.
+*left*<br/>
+`map` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `map`합니다.
+*right*<br/>
+`map` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -249,7 +257,7 @@ bool operator==(
 
 map 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 포함된 요소 수가 같고 개별 요소의 값이 같으면 두 map은 같은 것입니다. 그렇지 않으면 목록은 같지 않은 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_op_eq.cpp
@@ -299,9 +307,11 @@ bool operator>(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `map`합니다.
+*left*<br/>
+`map` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `map`합니다.
+*right*<br/>
+`map` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -311,7 +321,7 @@ bool operator>(
 
 map 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 두 개체 간의 보다 큼 관계는 같지 않은 요소의 첫 번째 쌍 비교를 기반으로 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_op_gt.cpp
@@ -361,15 +371,17 @@ bool operator>=(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `map`합니다.
+*left*<br/>
+`map` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `map`합니다.
+*right*<br/>
+`map` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
 연산자 좌변의 map이 연산자 우변의 map보다 크거나 같으면 **true**이고 그렇지 않으면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // map_op_ge.cpp
@@ -426,9 +438,11 @@ bool operator!=(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `multimap`합니다.
+*left*<br/>
+`multimap` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `multimap`합니다.
+*right*<br/>
+`multimap` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -438,7 +452,7 @@ multimap이 같지 않으면 **true**이고 multimap이 같으면 **false**입�
 
 multimap 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 포함된 요소 수가 같고 개별 요소의 값이 같으면 두 multimap은 같은 것입니다. 그렇지 않으면 목록은 같지 않은 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multimap_op_ne.cpp
@@ -488,9 +502,11 @@ bool operator<(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `multimap`합니다.
+*left*<br/>
+`multimap` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `multimap`합니다.
+*right*<br/>
+`multimap` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -500,7 +516,7 @@ bool operator<(
 
 multimap 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 두 개체 간의 보다 작음 관계는 같지 않은 요소의 첫 번째 쌍 비교를 기반으로 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multimap_op_lt.cpp
@@ -550,15 +566,17 @@ bool operator<=(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `multimap`합니다.
+*left*<br/>
+`multimap` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `multimap`합니다.
+*right*<br/>
+`multimap` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
 연산자 좌변의 multimap이 연산자 우변의 multimap보다 작거나 같으면 **true**이고 그렇지 않으면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multimap_op_le.cpp
@@ -615,9 +633,11 @@ bool operator==(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `multimap`합니다.
+*left*<br/>
+`multimap` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `multimap`합니다.
+*right*<br/>
+`multimap` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -627,7 +647,7 @@ bool operator==(
 
 multimap 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 포함된 요소 수가 같고 개별 요소의 값이 같으면 두 multimap은 같은 것입니다. 그렇지 않으면 목록은 같지 않은 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multimap_op_eq.cpp
@@ -677,9 +697,11 @@ bool operator>(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `multimap`합니다.
+*left*<br/>
+`multimap` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `multimap`합니다.
+*right*<br/>
+`multimap` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -689,7 +711,7 @@ bool operator>(
 
 multimap 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 두 개체 간의 보다 큼 관계는 같지 않은 요소의 첫 번째 쌍 비교를 기반으로 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multimap_op_gt.cpp
@@ -739,15 +761,17 @@ bool operator>=(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `multimap`합니다.
+*left*<br/>
+`multimap` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `multimap`합니다.
+*right*<br/>
+`multimap` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
 연산자 좌변의 multimap이 연산자 우변의 multimap보다 크거나 같으면 **true**이고 그렇지 않으면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // multimap_op_ge.cpp

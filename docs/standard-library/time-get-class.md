@@ -48,12 +48,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d0ab896860d1e759b5ad1df6bb23e93f42d28f9
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 9ff44c6352224b65d712161a62d34b34ee858ad6
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960133"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102748"
 ---
 # <a name="timeget-class"></a>time_get 클래스
 
@@ -70,10 +70,10 @@ class time_get : public time_base;
 ### <a name="parameters"></a>매개 변수
 
 *CharType*  
- 문자를 인코딩하기 위해 프로그램 내 사용하는 형식
+문자를 인코딩하기 위해 프로그램 내 사용하는 형식
 
 *InputIterator*  
- 시간 값을 읽어올 반복기입니다.
+시간 값을 읽어올 반복기입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -145,7 +145,7 @@ dateorder date_order() const;
 
 구성원 함수는 [do_date_order](#do_date_order)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // time_get_date_order.cpp
@@ -205,7 +205,7 @@ virtual dateorder do_date_order() const;
 
 보호된 가상 구성원 함수는 [do_get_date](#do_get_date)를 통해 날짜 구성 요소 일치를 확인하는 순서를 설명하는 **time_base::dateorder** 형식의 값을 반환합니다. 이 구현에서 값은 1979년 12월 2일 형식의 날짜에 해당하는 **time_base::mdy**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_date_order`를 호출하는 [date_order](#date_order)에 대한 예제를 참조하세요.
 
@@ -216,7 +216,7 @@ virtual dateorder do_date_order() const;
 ```cpp
 virtual iter_type
     do_get(
- iter_type first,
+iter_type first,
     iter_type last,
     ios_base& iosbase,
     ios_base::iostate& state,
@@ -227,19 +227,26 @@ virtual iter_type
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 변환할 시퀀스의 시작을 나타내는 입력 반복기입니다.
+*first*<br/>
+변환할 시퀀스의 시작을 나타내는 입력 반복기입니다.
 
-*마지막* 시퀀스의 끝을 나타내는 입력 반복기입니다.
+*last*<br/>
+시퀀스의 끝을 나타내는 입력 반복기입니다.
 
-*iosbase* 스트림 개체입니다.
+*iosbase*<br/>
+스트림 개체입니다.
 
-*상태* iosbase에서 오류를 나타내도록 적절 한 비트 마스크 요소가 설정 되어 있는 필드입니다.
+*state*<br/>
+Iosbase에서 오류를 나타내도록 적절 한 비트 마스크 요소가 설정 되어 있는 필드입니다.
 
-*ptm* 에 저장할 시간 구조에 대 한 포인터입니다.
+*ptm*<br/>
+시간이 저장되는 시간 구조에 대한 포인터입니다.
 
-*fmt* 변환 지정자 문자입니다.
+*fmt*<br/>
+변환 지정자 문자입니다.
 
-*mod* 선택적 한정자 문자입니다.
+*mod*<br/>
+선택적 한정자 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -314,19 +321,19 @@ virtual iter_type do_get_date(iter_type first,
 ### <a name="parameters"></a>매개 변수
 
 *first*  
- 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
 *last*  
- 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
 *iosbase*  
- 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
+집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
 *state*  
- 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
+작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
 *ptm*  
- 날짜 정보를 저장할 위치에 대한 포인터입니다.
+날짜 정보를 저장할 위치에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -346,7 +353,7 @@ virtual iter_type do_get_date(iter_type first,
 
 리터럴 공백 및 쉼표는 입력 시퀀스의 해당 요소와 일치해야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_get_date`를 호출하는 [get_date](#get_date)에 대한 예제를 참조하세요.
 
@@ -365,19 +372,19 @@ virtual iter_type do_get_monthname(iter_type first,
 ### <a name="parameters"></a>매개 변수
 
 *first*  
- 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
 *last*  
- 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
 *iosbase*  
- 사용되지 않습니다.
+사용되지 않습니다.
 
 *state*  
- 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정하는 출력 매개 변수입니다.
+작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정하는 출력 매개 변수입니다.
 
 *ptm*  
- 월 정보를 저장할 포인터입니다.
+월 정보를 저장할 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -389,7 +396,7 @@ virtual iter_type do_get_monthname(iter_type first,
 
 월 입력 필드는 1, 1월, 2, 2월 등의 로캘별 시퀀스 집합 중 가장 긴 항목과 일치하는 시퀀스입니다. 변환된 값은 1월 이후 지난 개월 수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_get_monthname`을 호출하는 [get_monthname](#get_monthname)에 대한 예제를 참조하세요.
 
@@ -408,19 +415,19 @@ virtual iter_type do_get_time(iter_type first,
 ### <a name="parameters"></a>매개 변수
 
 *first*  
- 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
 *last*  
- 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
 *iosbase*  
- 사용되지 않습니다.
+사용되지 않습니다.
 
 *state*  
- 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
+작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
 *ptm*  
- 날짜 정보를 저장할 위치에 대한 포인터입니다.
+날짜 정보를 저장할 위치에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -440,7 +447,7 @@ virtual iter_type do_get_time(iter_type first,
 
 리터럴 콜론은 입력 시퀀스의 해당 요소와 일치해야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_get_time`을 호출하는 [get_time](#get_time)에 대한 예제를 참조하세요.
 
@@ -459,19 +466,19 @@ virtual iter_type do_get_weekday(iter_type first,
 ### <a name="parameters"></a>매개 변수
 
 *first*  
- 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
 *last*  
- 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
 *iosbase*  
- 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
+집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
 *state*  
- 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
+작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
 *ptm*  
- 요일 정보를 저장할 포인터입니다.
+요일 정보를 저장할 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -483,7 +490,7 @@ virtual iter_type do_get_weekday(iter_type first,
 
 요일 입력 필드는 일, 일요일, 월, 월요일 등의 로캘별 시퀀스 집합 중 가장 긴 항목과 일치하는 시퀀스입니다. 변환된 값은 일요일 이후 지난 일 수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_get_weekday`를 호출하는 [get_weekday](#get_weekday)에 대한 예제를 참조하세요.
 
@@ -502,19 +509,19 @@ virtual iter_type do_get_year(iter_type first,
 ### <a name="parameters"></a>매개 변수
 
 *first*  
- 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
 *last*  
- 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
 *iosbase*  
- 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
+집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
 *state*  
- 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
+작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
 *ptm*  
- 연도 정보를 저장할 위치에 대한 포인터입니다.
+연도 정보를 저장할 위치에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -526,7 +533,7 @@ virtual iter_type do_get_year(iter_type first,
 
 연도 입력 필드는 해당하는 숫자 값이 [1900, 2036) 범위에 있어야 하는 10진수 시퀀스입니다. 이 값에서 1900을 뺀 값이 저장됩니다. 이 구현에서는 [69, 136) 범위의 값이 연도 범위 [1969, 2036)을 나타냅니다. [0, 69) 범위의 값도 사용 가능하지만 이 값은 특정 변환 환경에 따라 연도 범위 [1900, 1969) 또는 [2000, 2069)를 나타낼 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_get_year`를 호출하는 [get_year](#get_year)에 대한 예제를 참조하세요.
 
@@ -557,31 +564,31 @@ iter_type get(
 ### <a name="parameters"></a>매개 변수
 
 *first*  
- 변환할 시퀀스의 시작 위치를 나타내는 입력 반복기입니다.
+변환할 시퀀스의 시작 위치를 나타내는 입력 반복기입니다.
 
 *last*  
- 변환할 시퀀스의 끝 부분을 나타내는 입력 반복기입니다.
+변환할 시퀀스의 끝 부분을 나타내는 입력 반복기입니다.
 
 *iosbase*  
- 스트림입니다.
+스트림입니다.
 
 *state*  
- 적절한 비트 마스크 요소는 스트림 상태가 오류를 나타내도록 설정됩니다.
+적절한 비트 마스크 요소는 스트림 상태가 오류를 나타내도록 설정됩니다.
 
 *ptm*  
- 시간을 저장할 시간 구조에 대한 포인터입니다.
+시간을 저장할 시간 구조에 대한 포인터입니다.
 
 *fmt*  
- 변환 지정자 문자입니다.
+변환 지정자 문자입니다.
 
 *mod*  
- 선택적 한정자 문자입니다.
+선택적 한정자 문자입니다.
 
 *fmt_first*  
- 형식 지시문의 시작 위치를 가리킵니다.
+형식 지시문의 시작 위치를 가리킵니다.
 
 *fmt_last*  
- 형식 지시문의 끝을 가리킵니다.
+형식 지시문의 끝을 가리킵니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -614,19 +621,19 @@ iter_type get_date(iter_type first,
 ### <a name="parameters"></a>매개 변수
 
 *first*  
- 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
 *last*  
- 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
 *iosbase*  
- 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
+집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
 *state*  
- 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
+작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
 *ptm*  
- 날짜 정보를 저장할 위치에 대한 포인터입니다.
+날짜 정보를 저장할 위치에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -638,7 +645,7 @@ iter_type get_date(iter_type first,
 
 월은 0~11 범위로 계산됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // time_get_get_date.cpp
@@ -708,19 +715,19 @@ iter_type get_monthname(iter_type first,
 ### <a name="parameters"></a>매개 변수
 
 *first*  
- 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
 *last*  
- 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
 *iosbase*  
- 사용되지 않습니다.
+사용되지 않습니다.
 
 *state*  
- 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정하는 출력 매개 변수입니다.
+작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정하는 출력 매개 변수입니다.
 
 *ptm*  
- 월 정보를 저장할 포인터입니다.
+월 정보를 저장할 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -730,7 +737,7 @@ iter_type get_monthname(iter_type first,
 
 멤버 함수는 반환 [do_get_monthname](#do_get_monthname)(`first`, `last`에 `iosbase`를 `state`, `ptm`).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // time_get_get_monthname.cpp
@@ -800,19 +807,19 @@ iter_type get_time(iter_type first,
 ### <a name="parameters"></a>매개 변수
 
 *first*  
- 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
 *last*  
- 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
 *iosbase*  
- 사용되지 않습니다.
+사용되지 않습니다.
 
 *state*  
- 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
+작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
 *ptm*  
- 날짜 정보를 저장할 위치에 대한 포인터입니다.
+날짜 정보를 저장할 위치에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -822,7 +829,7 @@ iter_type get_time(iter_type first,
 
 멤버 함수는 반환 [do_get_time](#do_get_time)(`first`, `last`에 `iosbase`를 `state`, `ptm`).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // time_get_get_time.cpp
@@ -881,19 +888,19 @@ iter_type get_weekday(iter_type first,
 ### <a name="parameters"></a>매개 변수
 
 *first*  
- 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
 *last*  
- 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
 *iosbase*  
- 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
+집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
 *state*  
- 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
+작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
 *ptm*  
- 요일 정보를 저장할 포인터입니다.
+요일 정보를 저장할 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -903,7 +910,7 @@ iter_type get_weekday(iter_type first,
 
 멤버 함수는 반환 [do_get_weekday](#do_get_weekday)(`first`, `last`에 `iosbase`를 `state`, `ptm`).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // time_get_get_weekday.cpp
@@ -958,19 +965,19 @@ iter_type get_year(iter_type first,
 ### <a name="parameters"></a>매개 변수
 
 *first*  
- 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
 *last*  
- 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
 *iosbase*  
- 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
+집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
 *state*  
- 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
+작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
 *ptm*  
- 연도 정보를 저장할 위치에 대한 포인터입니다.
+연도 정보를 저장할 위치에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -980,7 +987,7 @@ iter_type get_year(iter_type first,
 
 멤버 함수는 반환 [do_get_year](#do_get_year)(`first`, `last`에 `iosbase`를 `state`, `ptm`).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // time_get_get_year.cpp
@@ -1044,7 +1051,7 @@ explicit time_get(size_t refs = 0);
 ### <a name="parameters"></a>매개 변수
 
 *refs*  
- 개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
+개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
 ### <a name="remarks"></a>설명
 

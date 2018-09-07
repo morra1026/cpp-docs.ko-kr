@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::make_error_code [C++]
 - std::make_error_condition [C++]
 - std::swap [C++]
-ms.openlocfilehash: bbb724747052c6dd636199fd1cabdf97d2bd4045
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 9b4a8b148dc8b72c7dcc1931802c503be783e9ea
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027399"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108605"
 ---
 # <a name="ltfuturegt-functions"></a>&lt;future&gt; 함수
 
@@ -46,7 +46,8 @@ future<typename result_of<Fn(ArgTypes...)>::type>
 
 ### <a name="parameters"></a>매개 변수
 
-*정책* A [시작](../standard-library/future-enums.md#launch) 값입니다.
+*정책*<br/>
+[launch](../standard-library/future-enums.md#launch) 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -93,7 +94,8 @@ inline error_code make_error_code(future_errc Errno) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*Errno* A [future_errc](../standard-library/future-enums.md#future_errc) 보고 된 오류를 식별 하는 값입니다.
+*errno*<br/>
+보고된 오류를 식별하는 [future_errc](../standard-library/future-enums.md#future_errc) 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -109,7 +111,8 @@ inline error_condition make_error_condition(future_errc Errno) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*Errno* A [future_errc](../standard-library/future-enums.md#future_errc) 보고 된 오류를 식별 하는 값입니다.
+*errno*<br/>
+보고된 오류를 식별하는 [future_errc](../standard-library/future-enums.md#future_errc) 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -129,9 +132,11 @@ void swap(packaged_task<Ty(ArgTypes...)>& Left, packaged_task<Ty(ArgTypes...)>& 
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 왼쪽 `promise` 개체입니다.
+*왼쪽*<br/>
+왼쪽 `promise` 개체입니다.
 
-*오른쪽* 오른쪽 `promise` 개체입니다.
+*오른쪽*<br/>
+오른쪽 `promise` 개체입니다.
 
 ## <a name="see-also"></a>참고자료
 

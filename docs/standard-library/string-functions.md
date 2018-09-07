@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::to_wstring [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6534d93b4f04826188fa13c942efd080e152aebe
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a80749e6eaffe02d748167f462580782a2755f89
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954905"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106745"
 ---
 # <a name="ltstringgt-functions"></a>&lt;string&gt; functions
 
@@ -85,11 +85,14 @@ basic_istream<Allocator, Traits>& getline(
 
 ### <a name="parameters"></a>매개 변수
 
- 를 추출할 문자열은 입력된 스트림 합니다.
+*is*<br/>
+문자열을 추출할 입력 스트림입니다.
 
-*str* 입력 스트림에서 문자 읽기 되는 문자열입니다.
+*str*<br/>
+입력 스트림에서 문자를 읽어들일 문자열입니다.
 
-*delim* 줄 구분 기호입니다.
+*Delim*<br/>
+줄 구분 기호입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -119,7 +122,7 @@ basic_istream<Allocator, Traits>& getline(
 
 예외가 throw 되 면 *은* 하 고 *str* 유효한 상태로 유지 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 코드에서는 `getline()`을 두 가지 모드에서 보여 줍니다. 첫 번째 모드에서는 기본 구분 기호(줄 바꿈 문자)를 사용하고 두 번째 모드에서는 공백을 구분 기호로 사용합니다. 파일의 끝 문자(키보드에서 CTRL+Z를 누름)를 사용하여 while 루프 종료를 제어합니다. 그러면 `cin`의 내부 상태 플래그가 `eofbit`로 설정되며, [basic_ios::clear()](../standard-library/basic-ios-class.md#clear)를 사용하여 이 상태를 해제해야 두 번째 while 루프가 정상적으로 작동합니다.
 
@@ -426,15 +429,17 @@ void swap(basic_string<CharType, Traits, Allocator>& left, basic_string<CharType
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 하나의 문자열을 다른 문자열와 교환할 요소입니다.
+*left*<br/>
+요소를 다른 문자열의 요소와 교환할 단일 문자열입니다.
 
-*오른쪽* 요소가 첫 번째 문자열과 교환 되는 다른 문자열입니다.
+*right*<br/>
+요소가 첫 번째 문자열과 교환되는 다른 문자열입니다.
 
 ### <a name="remarks"></a>설명
 
 특수 멤버 함수를 실행 하는 템플릿 함수 *왼쪽*.[ 스왑](../standard-library/basic-string-class.md#swap)(*오른쪽*) 고정적 복잡성을 보장 하는 문자열의 경우.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // string_swap.cpp

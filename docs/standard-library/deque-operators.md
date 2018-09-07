@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::operator&lt; (deque)
 - std::operator&lt;= (deque)
 - std::operator== (deque)
-ms.openlocfilehash: 21fdf5e624634a29d8ed32e004e7fb0d653b86f1
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a714fe6cb84697df9cd449cf79ff024671e75ba6
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955217"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110359"
 ---
 # <a name="ltdequegt-operators"></a>&lt;deque&gt; 연산자
 
@@ -44,9 +44,11 @@ bool operator!=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `deque`합니다.
+*left*<br/>
+`deque` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `deque`합니다.
+*right*<br/>
+`deque` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -56,7 +58,7 @@ deque 개체가 같지 않으면 **true**이고, deque 개체가 같으면 **fal
 
 deque 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 포함된 요소 수가 같고 개별 요소의 값이 같으면 두 deque 개체는 같은 것입니다. 그렇지 않으면 목록은 같지 않은 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // deque_op_ne.cpp
@@ -92,9 +94,11 @@ bool operator<(const deque<Type, Allocator>& left, const deque<Type, Allocator>&
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `deque`합니다.
+*left*<br/>
+`deque` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `deque`합니다.
+*right*<br/>
+`deque` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -104,7 +108,7 @@ bool operator<(const deque<Type, Allocator>& left, const deque<Type, Allocator>&
 
 deque 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 두 개체 간의 보다 작음 관계는 같지 않은 요소의 첫 번째 쌍 비교를 기반으로 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // deque_op_lt.cpp
@@ -144,9 +148,11 @@ bool operator<=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `deque`합니다.
+*left*<br/>
+`deque` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `deque`합니다.
+*right*<br/>
+`deque` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -156,7 +162,7 @@ bool operator<=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 deque 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 두 개체 간의 작거나 같음 관계는 같지 않은 첫 번째 요소 쌍의 비교를 기반으로 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // deque_op_le.cpp
@@ -197,9 +203,11 @@ bool operator==(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `deque`합니다.
+*left*<br/>
+`deque` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `deque`합니다.
+*right*<br/>
+`deque` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -209,7 +217,7 @@ bool operator==(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 deque 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 포함된 요소 수가 같고 개별 요소의 값이 같으면 두 deque는 같은 것입니다. 그렇지 않으면 목록은 같지 않은 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // deque_op_eq.cpp
@@ -253,9 +261,11 @@ bool operator>(const deque<Type, Allocator>& left, const deque<Type, Allocator>&
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `deque`합니다.
+*left*<br/>
+`deque` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `deque`합니다.
+*right*<br/>
+`deque` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -265,7 +275,7 @@ bool operator>(const deque<Type, Allocator>& left, const deque<Type, Allocator>&
 
 deque 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 두 개체 간의 보다 큼 관계는 같지 않은 요소의 첫 번째 쌍 비교를 기반으로 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // deque_op_gt.cpp
@@ -307,9 +317,11 @@ bool operator>=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `deque`합니다.
+*left*<br/>
+`deque` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `deque`합니다.
+*right*<br/>
+`deque` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -319,7 +331,7 @@ bool operator>=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 deque 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 두 개체 간의 크거나 같음 관계는 같지 않은 첫 번째 요소 쌍의 비교를 기반으로 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // deque_op_ge.cpp

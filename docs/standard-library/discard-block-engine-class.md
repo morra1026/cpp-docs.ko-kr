@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b65cfbe156ba462af9e87abf82d63023cfdc44b
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 2c9620003c1f57af966628dda2a5a0ab8352c6d2
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957440"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107330"
 ---
 # <a name="discardblockengine-class"></a>discard_block_engine 클래스
 
@@ -36,11 +36,14 @@ class discard_block_engine;
 
 ### <a name="parameters"></a>매개 변수
 
-*엔진* 기본 엔진 유형입니다.
+*엔진*<br/>
+기본 엔진 유형입니다.
 
-*P* **블록 크기**합니다. 각 블록에 있는 값의 수입니다.
+*P*<br/>
+**블록 크기**입니다. 각 블록에 있는 값의 수입니다.
 
-*R* **사용된 된 블록**합니다. 사용된 각 블록에 있는 값의 수입니다. 나머지는 버립니다 (`P` - `R`). **사전 조건**: `0 < R ≤ P`
+*R*<br/>
+**사용된 블록**입니다. 사용된 각 블록에 있는 값의 수입니다. 나머지는 버립니다 (`P` - `R`). **사전 조건**: `0 < R ≤ P`
 
 ## <a name="members"></a>멤버
 

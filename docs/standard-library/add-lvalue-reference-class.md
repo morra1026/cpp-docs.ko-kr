@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 710d7c154477320f7fb65f52f430f4c0666762c2
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 46ca75850aede04d54dc659e3f29166ab91abdbf
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956949"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102631"
 ---
 # <a name="addlvaluereference-class"></a>add_lvalue_reference 클래스
 
@@ -39,13 +39,14 @@ using add_lvalue_reference_t = typename add_lvalue_reference<T>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*T* 수정할 형식입니다.
+*T*<br/>
+수정할 형식입니다.
 
 ## <a name="remarks"></a>설명
 
 형식 수정자의 인스턴스는 수정 된 형식인 됩니다 *T* 하는 경우 *T* lvalue 참조 인 라인인 `T&`합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 #include <type_traits>

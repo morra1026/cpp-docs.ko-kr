@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b651d73db043388e1dc7bf33c085f07d3aabed33
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8f5027fa4b84d84bf07766c7ac4e75f140706f0c
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767945"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103712"
 ---
 # <a name="atl-operators"></a>ATL 연산자
 
@@ -43,15 +43,15 @@ ms.locfileid: "43767945"
 비교 `CSid` 개체 또는 `SID` 같은지 (보안 식별자) 구조입니다.
 
 ```   
-bool operator==(const CSid& lhs, const CSid& rhs) throw(); 
+bool operator==(const CSid& lhs, const CSid& rhs) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-`lhs`  
+*lhs*  
 첫 번째 `CSid` 개체 또는 `SID` 비교할 구조체입니다.
 
-`rhs`  
+*rhs*  
 두 번째 `CSid` 개체 또는 `SID` 비교할 구조체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -63,7 +63,7 @@ bool operator==(const CSid& lhs, const CSid& rhs) throw();
 비교 `CSid` 개체 또는 `SID` 구조체가 다른 지 (보안 식별자)입니다.
 
 ```   
-bool operator==(const CSid& lhs, const CSid& rhs) throw(); 
+bool operator==(const CSid& lhs, const CSid& rhs) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -83,7 +83,7 @@ bool operator==(const CSid& lhs, const CSid& rhs) throw();
 테스트를 `CSid` 개체 또는 `SID` 연산자의 좌 변에 있는 구조체가 보다 작은 `CSid` 개체 또는 `SID` (c + + 표준 라이브러리 호환성)에 대 한 오른쪽에 있는 구조체입니다.
 
 ```   
-bool operator<(const CSid& lhs, const CSid& rhs) throw(); 
+bool operator<(const CSid& lhs, const CSid& rhs) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -107,7 +107,7 @@ bool operator<(const CSid& lhs, const CSid& rhs) throw();
 테스트를 `CSid` 개체 또는 `SID` 연산자의 좌 변에 있는 구조 보다 큽니다.는 `CSid` 개체 또는 `SID` 구조체 (c + + 표준 라이브러리 호환성)에 대 한 오른쪽에 있습니다.
 
 ```   
-bool operator<(const CSid& lhs, const CSid& rhs) throw(); 
+bool operator<(const CSid& lhs, const CSid& rhs) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -131,7 +131,7 @@ bool operator<(const CSid& lhs, const CSid& rhs) throw();
 테스트를 `CSid` 개체 또는 `SID` 보다 작거나 같음 연산자의 좌 변에 있는 구조는는 `CSid` 개체 또는 `SID` 구조체 (c + + 표준 라이브러리 호환성)에 대 한 오른쪽에 있습니다.
 
 ```   
-bool operator<(const CSid& lhs, const CSid& rhs) throw(); 
+bool operator<(const CSid& lhs, const CSid& rhs) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -155,7 +155,7 @@ bool operator<(const CSid& lhs, const CSid& rhs) throw();
 테스트를 `CSid` 개체 또는 `SID` 보다 크거나 같음 연산자의 좌 변에 있는 구조는는 `CSid` 개체 또는 `SID` 구조체 (c + + 표준 라이브러리 호환성)에 대 한 오른쪽에 있습니다.
 
 ```   
-bool operator<(const CSid& lhs, const CSid& rhs) throw(); 
+bool operator<(const CSid& lhs, const CSid& rhs) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수

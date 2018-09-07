@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::operator&lt; (vector)
 - std::operator&lt;= (vector)
 - std::operator== (vector)
-ms.openlocfilehash: 4dac24b73e2b0a228f712453b124ff01e5c13c46
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 64e819863623f05eeb4c1642f2f43cb81efcdb5b
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959685"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108834"
 ---
 # <a name="ltvectorgt-operators"></a>&lt;vector&gt; 연산자
 
@@ -44,9 +44,11 @@ bool operator!=(const vector<Type, Allocator>& left, const vector<Type, Allocato
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `vector`합니다.
+*left*<br/>
+`vector` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `vector`합니다.
+*right*<br/>
+`vector` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -56,7 +58,7 @@ bool operator!=(const vector<Type, Allocator>& left, const vector<Type, Allocato
 
 포함된 요소 수가 같고 개별 요소의 값이 같으면 두 벡터는 같은 것이고 그렇지 않으면 목록은 같지 않은 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // vector_op_ne.cpp
@@ -94,16 +96,16 @@ bool operator<(const vector<Type, Allocator>& left, const vector<Type, Allocator
 ### <a name="parameters"></a>매개 변수
 
 *left*  
- `vector` 형식의 개체입니다.
+`vector` 형식의 개체입니다.
 
 *right*  
- `vector` 형식의 개체입니다.
+`vector` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
 연산자 좌변의 벡터가 연산자 우변의 벡터보다 작으면 **true**이고 그렇지 않으면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // vector_op_lt.cpp
@@ -145,16 +147,16 @@ bool operator<=(const vector<Type, Allocator>& left, const vector<Type, Allocato
 ### <a name="parameters"></a>매개 변수
 
 *left*  
- `vector` 형식의 개체입니다.
+`vector` 형식의 개체입니다.
 
 *right*  
- `vector` 형식의 개체입니다.
+`vector` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
 연산자 좌변의 벡터가 연산자 우변의 벡터보다 작거나 같으면 **true**이고 그렇지 않으면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // vector_op_le.cpp
@@ -196,10 +198,10 @@ bool operator==(const vector<Type, Allocator>& left, const vector<Type, Allocato
 ### <a name="parameters"></a>매개 변수
 
 *left*  
- `vector` 형식의 개체입니다.
+`vector` 형식의 개체입니다.
 
 *right*  
- `vector` 형식의 개체입니다.
+`vector` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -209,7 +211,7 @@ bool operator==(const vector<Type, Allocator>& left, const vector<Type, Allocato
 
 포함된 요소 수가 같고 개별 요소의 값이 같으면 두 벡터는 같은 것이고 그렇지 않으면 목록은 같지 않은 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // vector_op_eq.cpp
@@ -247,16 +249,16 @@ bool operator>(const vector<Type, Allocator>& left, const vector<Type, Allocator
 ### <a name="parameters"></a>매개 변수
 
 *left*  
- `vector` 형식의 개체입니다.
+`vector` 형식의 개체입니다.
 
 *right*  
- `vector` 형식의 개체입니다.
+`vector` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
 연산자 좌변의 벡터가 연산자 우변의 벡터보다 크면 **true**이고 그렇지 않으면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // vector_op_gt.cpp
@@ -299,16 +301,16 @@ bool operator>=(const vector<Type, Allocator>& left, const vector<Type, Allocato
 ### <a name="parameters"></a>매개 변수
 
 *left*  
- `vector` 형식의 개체입니다.
+`vector` 형식의 개체입니다.
 
 *right*  
- `vector` 형식의 개체입니다.
+`vector` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
 연산자 좌변의 벡터가 벡터 우변의 벡터보다 크거나 같으면 **true**이고 그렇지 않으면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // vector_op_ge.cpp

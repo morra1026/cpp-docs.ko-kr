@@ -44,12 +44,12 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_entry::operator&gt;=
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a55109683a18415638cacd9cd15dbcaa3164fc8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: bdb2962d2d1dc4e39d2528c89267a9cf8871937a
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846934"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105785"
 ---
 # <a name="directoryentry-class"></a>directory_entry 클래스
 
@@ -67,7 +67,44 @@ class directory_entry;
 
 자세한 내용 및 코드 예제를 보려면 [파일 시스템 탐색(C++)](../standard-library/file-system-navigation.md)을 참조하세요.
 
-## <a name="assign"></a>assign
+### <a name="constructors"></a>생성자
+
+|생성자|설명|
+|-|-|
+|[directory_entry](#directory_entry)|기본 생성자는 예상대로 작동합니다. 네 번째 생성자는 초기화 `mypath` 하 *pval*, `mystat` 에 *stat_arg로*, 및 `mysymstat` 에 *symstat_arg로*합니다.|
+
+### <a name="member-functions"></a>멤버 함수
+
+|멤버 함수|설명|
+|-|-|
+|[assign](#assign)|멤버 함수는 할당 *pval* 하 `mypath`, *stat* 에 `mystat`, 및 *symstat* 를 `mysymstat`합니다.|
+|[path](#path)|멤버 함수는 `mypath`를 반환합니다.|
+|[replace_filename](#replace_filename)|멤버 함수 `mypath` 사용 하 여 `mypath.parent_path()`  /  *pval*를 `mystat` 사용 하 여 *stat_arg로*, 및 `mysymstat` 사용 하 여 *symstat_arg로*|
+|[status](#status)|두 멤버 함수는 반환 `mystat` 먼저 변경 합니다.|
+|[symlink_status](#symlink_status)|두 멤버 함수는 반환 `mysymstat` 먼저 변경 합니다.|
+
+### <a name="operators"></a>연산자
+
+|연산자|설명|
+|-|-|
+|[operator!=](#op_neq)|목록의 요소를 다른 목록의 복사본으로 바꿉니다.|
+|[operator=](#op_as)|기본 멤버 대입 연산자가 예상대로 작동합니다.|
+|[operator==](#op_eq)|`mypath == right.mypath`를 반환합니다.|
+|[operator<](#op_lt)|`mypath < right.mypath`를 반환합니다.|
+|[operator<=](#op_lteq)|`!(right < *this)`를 반환합니다.|
+|[operator>](#op_gt)|`right < *this`를 반환합니다.|
+|[operator>=](#op_gteq)|`!(*this < right)`를 반환합니다.|
+|[const path_type 연산자 &](#path_type)|`mypath`를 반환합니다.|
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** \<실험적/파일 시스템&gt;
+
+**네임스페이스:** std::experimental::filesystem
+
+## <a name="assign"></a> 할당
+
+멤버 함수는 할당 *pval* 에 `mypath`, *stat_arg로* 에 `mystat`, 및 *symstat_arg* 에 `mysymstat`입니다.
 
 ```cpp
 void assign(const std::experimental::filesystem::path& pval,
@@ -75,9 +112,20 @@ void assign(const std::experimental::filesystem::path& pval,
     file_status symstat_arg = file_status());
 ```
 
-멤버 함수는 mypath에 pval을, mystat에 stat를, mysymstat에 symstat를 할당합니다.
+### <a name="parameters"></a>매개 변수
 
-## <a name="directoryentry"></a>directory_entry
+*pval*<br/>
+저장 된 파일 이름 경로입니다.  
+
+*stat_arg로*<br/>
+상태 저장된 된 파일 이름입니다.  
+
+*symstat_arg로*<br/>
+저장 된 파일 이름의 기호화 된 링크 상태입니다.  
+
+## <a name="directory_entry"></a> directory_entry
+
+기본 생성자는 예상대로 작동합니다. 네 번째 생성자는 초기화 `mypath` 하 *pval*, `mystat` 에 *stat_arg로*, 및 `mysymstat` 에 *symstat_arg로*합니다.
 
 ```cpp
 directory_entry() = default;
@@ -88,82 +136,128 @@ explicit directory_entry(const std::experimental::filesystem::path& pval,
     file_status symstat_arg = file_status());
 ```
 
-기본 생성자는 예상대로 작동합니다. 네 번째 생성자는 mypath를 pval로, mystat를 stat_arg로, mysymstat를 symstat_arg로 초기화합니다.
+### <a name="parameters"></a>매개 변수
 
-## <a name="operator"></a>operator!=
+*pval*<br/>
+저장 된 파일 이름 경로입니다.  
+
+*stat_arg로*<br/>
+상태 저장된 된 파일 이름입니다.  
+
+*symstat_arg로*<br/>
+저장 된 파일 이름의 기호화 된 링크 상태입니다.  
+
+## <a name="op_neq"></a> operator!=
+
+멤버 함수는 `!(*this == right)`를 반환합니다.
 
 ```cpp
 bool operator!=(const directory_entry& right) const noexcept;
 ```
 
-멤버 함수는 !(*this == right)를 반환합니다.
+### <a name="parameters"></a>매개 변수
 
-## <a name="operator"></a>operator=
+*right*<br/>
+합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.  
+
+## <a name="op_as"></a> 연산자 =
+
+기본 멤버 대입 연산자가 예상대로 작동합니다.
 
 ```cpp
 directory_entry& operator=(const directory_entry&) = default;
 directory_entry& operator=(directory_entry&&) noexcept = default;
 ```
 
-기본 멤버 대입 연산자가 예상대로 작동합니다.
+### <a name="parameters"></a>매개 변수
 
-## <a name="operator"></a>operator==
+*right*<br/>
+합니다 [directory_entry](../standard-library/directory-entry-class.md) 에 복사 되는 `directory_entry`합니다.  
+
+## <a name="op_eq"></a> 연산자 = =
+
+멤버 함수는 `mypath == right.mypath`를 반환합니다.
 
 ```cpp
 bool operator==(const directory_entry& right) const noexcept;
 ```
 
-멤버 함수는 mypath == right.mypath를 반환합니다.
+### <a name="parameters"></a>매개 변수
 
-## <a name="operatorlt"></a>연산자&lt;
+*right*<br/>
+합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.  
+
+## <a name="op_lt"></a> 연산자&lt;
+
+멤버 함수는 `mypath < right.mypath`를 반환합니다.
 
 ```cpp
 bool operator<(const directory_entry& right) const noexcept;
 ```
 
-멤버 함수는 mypath를 반환 합니다. &lt; right.mypath 합니다.
+### <a name="parameters"></a>매개 변수
 
-## <a name="operatorlt"></a>operator&lt;=
+*right*<br/>
+합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.  
+
+## <a name="op_lteq"></a> 연산자&lt;=
+
+멤버 함수는 `!(right < *this)`를 반환합니다.
 
 ```cpp
 bool operator&lt;=(const directory_entry& right) const noexcept;
 ```
 
-멤버 함수는 !(right \< *this)를 반환합니다.
+### <a name="parameters"></a>매개 변수
 
-## <a name="operatorgt"></a>연산자&gt;
+*right*<br/>
+합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.  
+
+## <a name="op_gt"></a> 연산자&gt;
+
+멤버 함수는 `right < *this`를 반환합니다.
 
 ```cpp
 bool operator&gt;(const directory_entry& right) const noexcept;
 ```
 
-멤버 함수는 right \< *this를 반환합니다.
+### <a name="parameters"></a>매개 변수
 
-## <a name="operatorgt"></a>operator&gt;=
+*right*<br/>
+합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.  
+
+## <a name="op_gteq"></a> 연산자&gt;=
+
+멤버 함수는 `!(*this < right)`를 반환합니다.
 
 ```cpp
 bool operator&gt;=(const directory_entry& right) const noexcept;
 ```
 
-멤버 함수가 반환 하는! (*이 \< 오른쪽)입니다.
+### <a name="parameters"></a>매개 변수
 
-## <a name="operator-const-pathtype"></a>operator const path_type&
+*right*<br/>
+합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.  
+
+## <a name="path_type"></a> const path_type 연산자 &
+
+멤버 연산자는 `mypath`을 반환합니다.
 
 ```cpp
 operator const std::experimental::filesystem::path&() const;
 ```
 
-멤버 연산자는 mypath를 반환합니다.
+## <a name="path"></a> 경로
 
-## <a name="path"></a>path
+멤버 함수는 `mypath`를 반환합니다.
 
 ```cpp
 const std::experimental::filesystem::path& path() const noexcept;
 ```
 
-멤버 함수는 mypath를 반환합니다.
+## <a name="replace_filename"></a> replace_filename
 
-## <a name="replacefilename"></a>replace_filename
+멤버 함수 `mypath` 사용 하 여 `mypath.parent_path()`  /  *pval*를 `mystat` 사용 하 여 *stat_arg로*, 및 `mysymstat` 사용 하 여 *symstat_arg로*
 
 ```cpp
 void replace_filename(
@@ -172,37 +266,50 @@ void replace_filename(
     file_status symstat_arg = file_status());
 ```
 
-멤버 함수는 mypath를 mypath.parent_path() / pval로, mystat를 stat_arg로, mysymstat를 symstat_arg로 바꿉니다.
+### <a name="parameters"></a>매개 변수
 
-## <a name="status"></a>status
+*pval*<br/>
+저장 된 파일 이름 경로입니다.  
+
+*stat_arg로*<br/>
+상태 저장된 된 파일 이름입니다.  
+
+*symstat_arg로*<br/>
+저장 된 파일 이름의 기호화 된 링크 상태입니다.  
+
+## <a name="status"></a> 상태
+
+두 멤버 함수는 반환 `mystat` 변경 될 수 있는 먼저 다음과 같이 합니다.
+
+1. 경우 `status_known(mystat)` 이면 아무 작업도 수행 합니다.
+
+1. 그렇지 않고 `!status_known(mysymstat) && !is_symlink(mysymstat)` 한 다음 `mystat = mysymstat`합니다.
 
 ```cpp
 file_status status() const;
 file_status status(error_code& ec) const noexcept;
 ```
 
-두 멤버 함수는 다음과 같이 먼저 변경될 수 있는 mystat를 반환합니다.
+### <a name="parameters"></a>매개 변수
 
-1. status_known(mystat)이면 아무 작업도 수행하지 않습니다.
+*ec*<br/>
+상태 오류 코드입니다.  
 
-1. 그렇지 않고 !status_known(mysymstat) && !is_symlink(mysymstat)이면 mystat = mysymstat입니다.
+## <a name="symlink_status"></a> symlink_status
 
-## <a name="symlinkstatus"></a>symlink_status
+두 멤버 함수는 반환 `mysymstat` 변경 될 수 있는 먼저 다음과 같이: 경우 `status_known(mysymstat)` 이면 아무 작업도 수행 합니다. 그렇지 않으면 `mysymstat = symlink_status(mypval)`입니다.
 
 ```cpp
 file_status symlink_status() const;
 file_status symlink_status(error_code& ec) const noexcept;
 ```
 
-두 멤버 함수는 다음과 같이 먼저 변경될 수 있는 mysymstat를 반환합니다. status_known(mysymstat)이면 아무 작업도 수행하지 않습니다. 그렇지 않으면  mysymstat = symlink_status(mypval)입니다.
+### <a name="parameters"></a>매개 변수
 
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<실험적/파일 시스템&gt;
-
-**네임스페이스:** std::experimental::filesystem
+*ec*<br/>
+상태 오류 코드입니다.  
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<filesystem&gt;](../standard-library/filesystem.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)  
+[\<filesystem&gt;](../standard-library/filesystem.md)  

@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d5b9ae4ae3b7d741624d220ba00006d51a61fd20
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 8b277a31eafafa4ae33066653b7a080bb3474408
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962164"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104123"
 ---
 # <a name="modulus-struct"></a>modulus 구조체
 
@@ -51,9 +51,11 @@ struct modulus<void>
 
 *형식*, *T*합니다 *U* 지 원하는 모든 형식은 `operator%` 지정 되었거나 유추 된 형식의 피연산자를 사용 하는 합니다.
 
-*왼쪽* 모듈러스 연산의 왼쪽된 피연산자. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *T*합니다.
+*왼쪽*<br/>
+모듈러스 연산의 왼쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *T*합니다.
 
-*오른쪽* 모듈러스 연산의 오른쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *U*합니다.
+*오른쪽*<br/>
+모듈러스 작업의 오른쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *U*합니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -63,7 +65,7 @@ struct modulus<void>
 
 `modulus` 함수는 기본 데이터 형식에 대한 필수 형식이나 `operator%`를 구현하는 사용자 정의 형식으로 제한됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // functional_modulus.cpp
@@ -115,8 +117,8 @@ int main( )
 The vector v1 = ( 5 10 15 20 25 30 )
 The vector v2 = ( 3 6 9 12 15 18 )
 The element-wise remainders of the modular division
- are: ( 2 4 6 8 10 12 )
- */
+are: ( 2 4 6 8 10 12 )
+*/
 ```
 
 ## <a name="requirements"></a>요구 사항

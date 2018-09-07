@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73a051eadaf06950e606f475b2bb418425e1b19f
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: aabd4a68e4ec9d9da96eff14dcf69c5bd667cc06
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958876"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107507"
 ---
 # <a name="alignedstorage-class"></a>aligned_storage 클래스
 
@@ -40,15 +40,17 @@ using aligned_storage_t = typename aligned_storage<Len, Align>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*Len* 개체 크기입니다.
+*Len 함수*<br/>
+개체 크기입니다.
 
-*맞춤* 개체 정렬 합니다.
+*맞춤*<br/>
+개체 정렬입니다.
 
 ## <a name="remarks"></a>설명
 
 템플릿 멤버 typedef `type` 맞춤을 사용 하 여 POD 형식에 대 한 동의어 *맞춤* 크기 *Len*합니다. *Align* 같아야 `alignment_of<T>::value` 일부 형식에 대 한 `T`, 또는 기본 맞춤 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 #include <type_traits>
