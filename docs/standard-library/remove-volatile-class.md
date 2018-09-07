@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e9a46294156c1f7beffecb997569221a388b3394
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: e12a6a16b8ec9c2d3564e78233da716585add1ca
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957313"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44099514"
 ---
 # <a name="removevolatile-class"></a>remove_volatile 클래스
 
@@ -40,13 +40,14 @@ using remove_volatile_t = typename remove_volatile<T>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*T* 수정할 형식입니다.
+*T*<br/>
+수정할 형식입니다.
 
 ## <a name="remarks"></a>설명
 
 인스턴스의 `remove_volatile<T>` 는 형식인 수정 된 `T1` 때 *T* 형식인 `volatile T1`고, 그렇지 않으면 *T*합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 #include <type_traits>

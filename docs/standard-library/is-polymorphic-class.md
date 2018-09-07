@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4eab6d6ce44655177d20073ca5c5cda3859cb8b3
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 0dcd4b578f0b498995dcd92e314f9dcc1bf63551
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966383"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101043"
 ---
 # <a name="ispolymorphic-class"></a>is_polymorphic 클래스
 
@@ -37,13 +37,14 @@ struct is_polymorphic;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty* 쿼리할 형식입니다.
+*Ty*<br/>
+형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
 형식 조건자의 인스턴스 형태인 경우 true 형식을 *Ty* 는 클래스를 선언 하거나 상속 가상 함수, 그렇지 않으면 false입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // std__type_traits__is_polymorphic.cpp

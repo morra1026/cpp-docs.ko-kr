@@ -9,12 +9,12 @@ f1_keywords:
 ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 11c4f3d1c994ee7a29ee47e35881d533f8c8715a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 31db26453efbecceb136b614b8eabf178a0cdfea
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216190"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100368"
 ---
 # <a name="ltnewgt-operators"></a>&lt;new&gt; 연산자
 
@@ -39,7 +39,8 @@ void operator delete(void* ptr,
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr* 포인터 값이 잘못 되었습니다. 삭제 하 여 렌더링 합니다.
+*ptr*<br/>
+삭제에 의해 값이 무효 처리되는 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -71,7 +72,8 @@ void operator delete[](void* ptr,
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr* 포인터 값이 잘못 되었습니다. 삭제 하 여 렌더링 합니다.
+*ptr*<br/>
+삭제에 의해 값이 무효 처리되는 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -101,9 +103,11 @@ void* operator new(std::size_t count,
 
 ### <a name="parameters"></a>매개 변수
 
-*개수* 할당할 저장소의 바이트 수입니다.
+*count*<br/>
+할당할 저장소의 바이트 수입니다.
 
-*ptr* 포인터를 반환 합니다.
+*ptr*<br/>
+반환할 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -198,9 +202,11 @@ void* operator new[](std::size_t count,
 
 ### <a name="parameters"></a>매개 변수
 
-*개수* 배열 개체에 대해 할당할 저장소의 바이트 수입니다.
+*count*<br/>
+배열 개체에 대해 할당할 저장소의 바이트 수입니다.
 
-*ptr* 포인터를 반환 합니다.
+*ptr*<br/>
+반환할 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 

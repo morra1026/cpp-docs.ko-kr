@@ -82,12 +82,12 @@ helpviewer_keywords:
 - std::uninitialized_fill_n [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d104d8a64dd60e5aaa7244e5bf5f535343f6e132
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 762cc70c40c2d6e201b42c0c10ed83c981c97ec7
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957427"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101666"
 ---
 # <a name="ltmemorygt-functions"></a>&lt;memory&gt; 함수
 
@@ -113,7 +113,8 @@ T* addressof(T& Val);
 
 ### <a name="parameters"></a>매개 변수
 
-*Val* 개체 또는 함수의 실제 주소를 가져오려고 합니다.
+*val*<br/>
+실제 주소를 가져올 개체 또는 함수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -136,13 +137,17 @@ void* align(
 
 ### <a name="parameters"></a>매개 변수
 
-*맞춤* 에 맞게 정렬 시도 합니다.
+*맞춤*<br/>
+시도에 맞게 정렬됩니다.
 
-*크기* 바이트 정렬된 된 저장소의 크기입니다.
+*Size*<br/>
+정렬된 저장소의 크기(바이트 단위)입니다.
 
-*Ptr* 사용 하 여 사용 가능한 인접 저장소 풀의 시작 주소입니다. 이 매개 변수는 출력 매개 변수 이기도 하 고 맞춤에 성공한 경우 새 시작 주소를 포함 하도록 설정 됩니다. `align()`이 성공하지 않을 경우 이 매개 변수는 수정되지 않습니다.
+*ptr*<br/>
+사용 가능한 인접 저장소 풀 중 사용할 저장소 풀의 시작 주소입니다. 이 매개 변수는 출력 매개 변수 이기도 하 고 맞춤에 성공한 경우 새 시작 주소를 포함 하도록 설정 됩니다. `align()`이 성공하지 않을 경우 이 매개 변수는 수정되지 않습니다.
 
-*공간이* 에 사용 가능한 총 공간 `align()` 정렬 된 저장소를 만드는 데 사용 합니다. 이 매개 변수는 출력 매개 변수이기도 하며, 정렬된 저장소 및 관련된 모든 연결된 오버헤드를 차감한 후 저장소 버퍼에 남아 있는 조정된 공간을 포함합니다.
+*스페이스바*<br/>
+정렬된 저장소를 만드는 데 사용하기 위해 `align()`에서 사용할 수 있는 총 공간입니다. 이 매개 변수는 출력 매개 변수이기도 하며, 정렬된 저장소 및 관련된 모든 연결된 오버헤드를 차감한 후 저장소 버퍼에 남아 있는 조정된 공간을 포함합니다.
 
 `align()`이 성공하지 않을 경우 이 매개 변수는 수정되지 않습니다.
 
@@ -189,9 +194,11 @@ allocate_shared(Allocator Alloc, Types&&... Args);
 
 ### <a name="parameters"></a>매개 변수
 
-*Alloc* 할당자 개체를 만드는 데 사용 합니다.
+*할당*<br/>
+개체를 만드는 데 사용된 할당자입니다.
 
-*Args* 개체가 되는 0 개 이상의 인수입니다.
+*Args*<br/>
+개체가 되는 0개 이상의 인수입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -209,17 +216,20 @@ const_pointer_cast(const shared_ptr<Other>& sp);
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty* 제어 반환 되는 형식 포인터를 공유 합니다.
+*Ty*<br/>
+반환된 공유 포인터에 의해 제어되는 형식입니다.
 
-*다른* 인수 공유 포인터에 의해 제어 되는 형식입니다.
+*기타*<br/>
+인수 공유 포인터에 의해 제어되는 형식입니다.
 
-*다른* 인수 공유 포인터입니다.
+*기타*<br/>
+인수 공유 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
 경우 템플릿 함수는 빈 shared_ptr 개체를 반환 `const_cast<Ty*>(sp.get())` null 포인터를 반환 합니다. 그렇지 않으면 반환을 [shared_ptr 클래스](../standard-library/shared-ptr-class.md)\<Ty >가 소유한 리소스를 소유 하는 개체 `sp`. `const_cast<Ty*>(sp.get())` 식이 유효해야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__memory__const_pointer_cast.cpp
@@ -275,7 +285,8 @@ void declare_reachable(void* ptr);
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr* 연결할 수 있는, 할당 된 유효한 저장소 영역에 대 한 포인터입니다.
+*ptr*<br/>
+연결할 수 있는 할당된 유효한 저장소 영역에 대한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -296,7 +307,8 @@ struct default_delete {
 
 ### <a name="parameters"></a>매개 변수
 
-*Ptr* 개체에 대 한 포인터를 삭제 합니다.
+*ptr*<br/>
+삭제할 개체에 대한 포인터입니다.
 
 다른 삭제할 배열의 요소 형식입니다.
 
@@ -316,17 +328,20 @@ dynamic_pointer_cast(const shared_ptr<Other>& sp);
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty* 제어 반환 되는 형식 포인터를 공유 합니다.
+*Ty*<br/>
+반환된 공유 포인터에 의해 제어되는 형식입니다.
 
-*다른* 인수 공유 포인터에 의해 제어 되는 형식입니다.
+*기타*<br/>
+인수 공유 포인터에 의해 제어되는 형식입니다.
 
-*sp* 인수 공유 포인터입니다.
+*sp*<br/>
+인수 공유 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
 경우 템플릿 함수는 빈 shared_ptr 개체를 반환 `dynamic_cast<Ty*>(sp.get())` null 포인터를 반환 합니다. 그렇지 않으면 반환을 [shared_ptr 클래스](../standard-library/shared-ptr-class.md)\<Ty >가 소유한 리소스를 소유 하는 개체 *sp* . `dynamic_cast<Ty*>(sp.get())` 식이 유효해야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__memory__dynamic_pointer_cast.cpp
@@ -373,17 +388,20 @@ D* get_deleter(const shared_ptr<Ty>& sp);
 
 ### <a name="parameters"></a>매개 변수
 
-*D* deleter의 형식입니다.
+*D*<br/>
+삭제자의 형식입니다.
 
-*Ty* 공유 포인터에 의해 제어 되는 형식입니다.
+*Ty*<br/>
+공유 포인터에 의해 제어되는 형식입니다.
 
-*sp* 공유 포인터입니다.
+*sp*<br/>
+공유 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
 형식의 삭제 자에 대 한 포인터를 반환 하는 템플릿 함수 *D* 속하는 합니다 [shared_ptr 클래스](../standard-library/shared-ptr-class.md) 개체 *sp*합니다. 하는 경우 *sp* 없는 형식의 자가 없는 경우 또는 *D* 함수가 0을 반환 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__memory__get_deleter.cpp
@@ -451,7 +469,8 @@ pair<Type *, ptrdiff_t> get_temporary_buffer(ptrdiff_t count);
 
 ### <a name="parameters"></a>매개 변수
 
-*개수* 할당할 요소는 메모리에 대 한 요청 최대 수는 있습니다.
+*count*<br/>
+메모리를 할당하도록 요청한 최대 요소 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -463,7 +482,7 @@ pair<Type *, ptrdiff_t> get_temporary_buffer(ptrdiff_t count);
 
 이 함수는 일시적인 메모리에만 사용해야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // memory_get_temp_buf.cpp
@@ -527,7 +546,7 @@ auto msp = std::make_shared<Example>(argument);
 
 다음 예에서는 특정 생성자 오버로드를 호출하여 형식에 대한 공유 포인터를 만드는 방법을 보여 줍니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // stl_make_shared.cpp
@@ -619,15 +638,20 @@ make_unique(Types&&...) = delete;
 
 ### <a name="parameters"></a>매개 변수
 
-*T* 개체의 형식입니다는 `unique_ptr` 를 가리키게 됩니다.
+*T*<br/>
+`unique_ptr`이 가리키는 개체의 형식입니다.
 
-*형식* 으로 지정 된 생성자 인수의 형식 *Args*합니다.
+*유형*<br/>
+지정 된 생성자 인수의 형식 *Args*합니다.
 
-*Args* 형식의 개체의 생성자에 전달할 인수 *T*합니다.
+*Args*<br/>
+형식의 개체의 생성자에 전달할 인수 *T*합니다.
 
-*Elem* 형식 요소의 배열 *T*합니다.
+*Elem*<br/>
+형식 요소의 배열 *T*합니다.
 
-*크기* 새 배열에 공간을 할당할 요소의 수입니다.
+*Size*<br/>
+새 배열에 공간을 할당할 수 있는 요소의 수입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -635,7 +659,7 @@ make_unique(Types&&...) = delete;
 
 `make_unique`는 예외 안전성을 위해 신중하게 구현되기 때문에 `make_unique` 생성자를 직접 호출하는 대신 `unique_ptr`를 사용할 것을 추천합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서는 `make_unique`을 사용하는 방법을 보여 줍니다. 더 많은 예제는 [방법: unique_ptr 인스턴스 만들기 및 사용](../cpp/how-to-create-and-use-unique-ptr-instances.md)을 참조하세요.
 
@@ -684,9 +708,11 @@ struct owner_less<weak_ptr<Type>>
 
 ### <a name="parameters"></a>매개 변수
 
-*_ 왼쪽* 공유 또는 약한 포인터입니다.
+*_ 왼쪽*<br/>
+공유 또는 약한 포인터입니다.
 
-*오른쪽* 공유 또는 약한 포인터입니다.
+*right*<br/>
+공유 또는 약한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -703,13 +729,14 @@ void return_temporary_buffer(Type* _Pbuf);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Pbuf* 취소할 메모리에 대 한 포인터입니다.
+*_Pbuf*<br/>
+할당을 취소할 메모리에 대한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
 이 함수는 일시적인 메모리에만 사용해야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // memory_ret_temp_buf.cpp
@@ -744,7 +771,7 @@ int main( )
 ```Output
 The number of integers in the array is: 7.
 The number of elements that the allocated memory
- could store is given by: resultPair.second = 7.
+could store is given by: resultPair.second = 7.
 ```
 
 ## <a name="static_pointer_cast"></a>  static_pointer_cast
@@ -759,17 +786,20 @@ static_pointer_cast(const shared_ptr<Other>& sp);
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty* 제어 반환 되는 형식 포인터를 공유 합니다.
+*Ty*<br/>
+반환된 공유 포인터에 의해 제어되는 형식입니다.
 
-*다른* 인수 공유 포인터에 의해 제어 되는 형식입니다.
+*기타*<br/>
+인수 공유 포인터에 의해 제어되는 형식입니다.
 
-*다른* 인수 공유 포인터입니다.
+*기타*<br/>
+인수 공유 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
 경우 템플릿 함수는 빈 shared_ptr 개체를 반환 `sp` 비어 있는 경우 `shared_ptr` 개체, 그렇지 않으면 반환 된 [shared_ptr 클래스](../standard-library/shared-ptr-class.md)\<Ty > 소유한리소스를소유하는개체`sp`. `static_cast<Ty*>(sp.get())` 식이 유효해야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__memory__static_pointer_cast.cpp
@@ -818,19 +848,23 @@ void swap(weak_ptr<Ty>& left, weak_ptr<Other>& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty* 왼쪽된 공유/약한 포인터에 의해 제어 되는 형식입니다.
+*Ty*<br/>
+왼쪽 공유/약한 포인터에 의해 제어되는 형식입니다.
 
-*다른* 오른쪽 공유/약한 포인터에 의해 제어 되는 형식입니다.
+*기타*<br/>
+오른쪽 공유/약한 포인터에 의해 제어되는 형식입니다.
 
-*왼쪽* 왼쪽된 공유/약한 포인터입니다.
+*left*<br/>
+왼쪽 공유/약한 포인터입니다.
 
-*오른쪽* 오른쪽 공유/약한 포인터입니다.
+*right*<br/>
+오른쪽 공유/약한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
 템플릿 함수는 `left.swap(right)`을 호출합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__memory__swap.cpp
@@ -927,11 +961,14 @@ ForwardIterator uninitialized_copy(InputIterator first, InputIterator last, Forw
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 소스 범위에서 첫 번째 요소를 지정 하는 입력된 반복기입니다.
+*first*<br/>
+소스 범위에 있는 첫 번째 요소를 주소 지정하는 입력 반복기입니다.
 
-*마지막* 소스 범위에서 마지막 요소의 주소를 지정 하는 입력된 반복기입니다.
+*last*<br/>
+소스 범위에 있는 마지막 요소를 주소 지정하는 입력 반복기입니다.
 
-*dest* 대상 범위에서 첫 번째 요소 주소를 지정 하는 정방향 반복기입니다.
+*dest*<br/>
+대상 범위에 있는 첫 번째 요소를 주소 지정하는 정방향 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -953,7 +990,7 @@ return dest;
 
 코드에서 예외를 throw하지 않는 경우 이 경우 생성된 모든 개체가 제거되고 예외가 다시 throw됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // memory_uninit_copy.cpp
@@ -1032,11 +1069,14 @@ ForwardIterator uninitialized_copy_n(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 복사할 개체를 가리키는 입력된 반복기입니다.
+*first*<br/>
+복사할 개체를 참조하는 입력 반복기입니다.
 
-*개수* 는 부호가 있거나 개체를 반복할 횟수를 지정 정수 형식입니다.
+*count*<br/>
+개체를 반복할 횟수를 지정하는 부호 있는 또는 부호 없는 정수 형식입니다.
 
-*dest* 새 복사본을 이동 하는 위치를 가리키는 정방향 반복기입니다.
+*dest*<br/>
+새 복사본의 위치를 참조하는 정방향 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1066,11 +1106,14 @@ void uninitialized_fill(ForwardIterator first, ForwardIterator last, const Type&
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 시작할 대상 범위에서 첫 번째 요소 주소를 지정 하는 정방향 반복기입니다.
+*first*<br/>
+시작할 대상 범위에 있는 첫 번째 요소의 주소를 지정하는 정방향 반복기입니다.
 
-*마지막* 시작할 대상 범위에서 마지막 요소의 주소를 지정 하는 정방향 반복기입니다.
+*last*<br/>
+시작할 대상 범위에 있는 마지막 요소의 주소를 지정하는 정방향 반복기입니다.
 
-*val* 대상 범위를 초기화 하는 데 사용할 값입니다.
+*val*<br/>
+대상 범위를 초기화하는 데 사용할 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1086,7 +1129,7 @@ while (first != last)
 
 코드에서 예외를 throw하지 않는 경우 이 경우 생성된 모든 개체가 제거되고 예외가 다시 throw됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // memory_uninit_fill.cpp
@@ -1135,11 +1178,14 @@ void uninitialized_fill_n(ForwardIterator first, Size count, const Type& val);
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 초기화할 대상 범위에서 첫 번째 요소 주소를 지정 하는 정방향 반복기입니다.
+*first*<br/>
+초기화할 대상 범위에 있는 첫 번째 요소를 주소 지정하는 정방향 반복기입니다.
 
-*개수* 초기화할 요소의 수입니다.
+*count*<br/>
+초기화할 요소의 수입니다.
 
-*val* 대상 범위를 초기화 하는 데 사용할 값입니다.
+*val*<br/>
+대상 범위를 초기화하는 데 사용할 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1155,7 +1201,7 @@ while (0 < count--)
 
 코드에서 예외를 throw하지 않는 경우 이 경우 생성된 모든 개체가 제거되고 예외가 다시 throw됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // memory_uninit_fill_n.cpp

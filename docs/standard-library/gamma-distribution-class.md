@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26386ebb5e2bbb20b952200869ccffb7677c59af
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 05442a0c590bcb66449aeae72d54cc6e988421bc
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962428"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44099898"
 ---
 # <a name="gammadistribution-class"></a>gamma_distribution 클래스
 
@@ -80,9 +80,11 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*RealType* 부동 소수점 결과 형식에 기본값이 **double**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*RealType*<br/>
+부동 소수점 결과 형식으로 기본값으로 **이중**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-*URNG* 균일 난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*URNG*<br/>
+균일 난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -107,7 +109,7 @@ public:
 
 감마 분포에 대한 자세한 내용은 Wolfram MathWorld 문서 [Gamma Distribution](http://go.microsoft.com/fwlink/p/?linkid=401111)(감마 분포)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // compile with: /EHsc /W4
@@ -207,11 +209,14 @@ explicit gamma_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*알파* 는 `alpha` 분포 매개 변수입니다.
+*alpha*<br/>
+`alpha` 분포 매개 변수입니다.
 
-*베타* 는 `beta` 분포 매개 변수입니다.
+*beta*<br/>
+`beta` 분포 매개 변수입니다.
 
-*parm* 분포를 생성 하는 데 매개 변수 구조입니다.
+*parm*<br/>
+분포를 생성하는 데 사용되는 매개 변수 구조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -239,11 +244,14 @@ struct param_type {
 
 ### <a name="parameters"></a>매개 변수
 
-*알파* 는 `alpha` 분포 매개 변수입니다.
+*alpha*<br/>
+`alpha` 분포 매개 변수입니다.
 
-*베타* 는 `beta` 분포 매개 변수입니다.
+*beta*<br/>
+`beta` 분포 매개 변수입니다.
 
-*오른쪽* 는 `param_type` 인스턴스를 비교 합니다.
+*right*<br/>
+이것과 비교할 `param_type` 인스턴스입니다.
 
 ### <a name="remarks"></a>설명
 

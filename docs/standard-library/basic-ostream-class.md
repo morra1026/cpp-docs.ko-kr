@@ -30,12 +30,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be74641b229fbf888504df72a97f8a5c025d9b7b
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: f30e2b226524e1d4a62c9f8cc950f4dd30846861
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963718"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100978"
 ---
 # <a name="basicostream-class"></a>basic_ostream 클래스
 
@@ -50,9 +50,11 @@ class basic_ostream : virtual public basic_ios<Elem, Tr>
 
 ### <a name="parameters"></a>매개 변수
 
-*Elem* 는 `char_type`합니다.
+*Elem*<br/>
+`char_type`
 
-*Tr* 문자 `traits_type`합니다.
+*Tr*<br/>
+문자 `traits_type`입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -63,16 +65,16 @@ iostate state = goodbit;
 const sentry ok(*this);
 
 if (ok)
- {try
- {<convert and insert elements
+{try
+{<convert and insert elements
     accumulate flags in state> }
     catch (...)
- {try
- {setstate(badbit);
+{try
+{setstate(badbit);
 
 }
     catch (...)
- {}
+{}
     if ((exceptions()& badbit) != 0)
     throw; }}
 width(0);
@@ -91,16 +93,16 @@ const sentry ok(*this);
 if (!ok)
     state |= badbit;
 else
- {try
- {<obtain and insert elements
+{try
+{<obtain and insert elements
     accumulate flags in state> }
     catch (...)
- {try
- {setstate(badbit);
+{try
+{setstate(badbit);
 
 }
     catch (...)
- {}
+{}
     if ((exceptions()& badbit) != 0)
     throw; }}
 setstate(state);
@@ -112,7 +114,7 @@ return (*this);
 
 basic_istream\< **Elem**, **Tr**> 클래스의 개체는 [basic_ios](../standard-library/basic-ios-class.md)**\<Elem**, **Tr>** 클래스의 가상 공용 기준 개체만 저장합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 출력 스트림에 대한 자세한 내용은 [basic_ofstream 클래스](../standard-library/basic-ofstream-class.md)에 대한 예제를 참조하세요.
 
@@ -161,17 +163,20 @@ basic_ostream(basic_ostream&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*strbuf* 형식의 개체 [basic_streambuf](../standard-library/basic-streambuf-class.md)합니다.
+*strbuf*<br/>
+[basic_streambuf](../standard-library/basic-streambuf-class.md) 형식의 개체입니다.
 
-*_Isstd* **true** 표준 스트림인 경우이 고, 그렇지 **false**합니다.
+*_Isstd*<br/>
+**true 이면** 표준 스트림인 경우이 고, 그렇지 **false**합니다.
 
-*오른쪽* 형식의 개체에 대 한 rvalue 참조 `basic_ostream`합니다.
+*right*<br/>
+`basic_ostream` 형식의 개체에 대한 rvalue 참조입니다.
 
 ### <a name="remarks"></a>설명
 
 첫 번째 생성자는 [init](../standard-library/basic-ios-class.md#init)(`strbuf`)를 호출하여 기본 개체를 초기화합니다. 두 번째 생성자는 [basic_ios::move](../standard-library/basic-ios-class.md#move)`(right)`를 호출하여 기본 개체를 초기화합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 출력 스트림에 대한 자세한 내용은 [basic_ofstream::basic_ofstream](../standard-library/basic-ofstream-class.md#basic_ofstream)에 대한 예제를 참조하세요.
 
@@ -191,7 +196,7 @@ Basic_ostream 개체에 대한 참조입니다.
 
 [rdbuf](../standard-library/basic-ios-class.md#rdbuf)가 null 포인터가 아닌 경우 함수는 **rdbuf->**[pubsync](../standard-library/basic-streambuf-class.md#pubsync)를 호출합니다. -1이 반환되는 경우 함수는 [setstate](../standard-library/basic-ios-class.md#setstate)(**badbit**)를 호출합니다. 그런 다음 **\*this**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ostream_flush.cpp
@@ -242,11 +247,14 @@ basic_ostream<Elem, Tr>& operator<<(const void* val);
 
 ### <a name="parameters"></a>매개 변수
 
-*Pfn* 함수 포인터입니다.
+*pfn*<br/>
+함수 포인터입니다.
 
-*strbuf* 에 대 한 포인터를 `stream_buf` 개체입니다.
+*strbuf*<br/>
+에 대 한 포인터를 `stream_buf` 개체입니다.
 
-*val* 스트림에 쓸 요소입니다.
+*val*<br/>
+스트림에 기록할 요소입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -300,7 +308,7 @@ basic_ostream<Elem, Tr>& operator<<(long double val);
 
 각 변환 *val* 숫자 필드를 호출 하 여 삽입 **use_facet < num_put\<Elem, OutIt >**(`getloc`)**입니다. put**(**OutIt**(`rdbuf`),  **\*이**하십시오 `getloc`를 **val**). 여기서 **OutIt**는 **ostreambuf_iterator\<Elem, Tr>** 로 정의됩니다. 함수는 **\*this**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ostream_op_write.cpp
@@ -360,7 +368,8 @@ basic_ostream& operator=(basic_ostream&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 는 `rvalue` 에 대 한 참조를 `basic_ostream` 개체입니다.
+*right*<br/>
+`basic_ostream` 개체에 대한 `rvalue` 참조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -376,7 +385,8 @@ basic_ostream<Elem, Tr>& put(char_type _Ch);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch* 문자입니다.
+*_Ch*<br/>
+단일 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -386,7 +396,7 @@ Basic_ostream 개체에 대한 참조입니다.
 
 형식이 지정 되지 않은 출력 함수는 요소를 삽입 *_Ch*합니다. 그런 다음 **\*this**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ostream_put.cpp
@@ -419,11 +429,14 @@ basic_ostream<Elem, Tr>& seekp(off_type _Off, ios_base::seekdir _Way);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Pos* 스트림 내의 위치입니다.
+*_Pos*<br/>
+스트림 내의 위치입니다.
 
-*_Off* 에 상대적인 오프셋 *_Way*합니다.
+*_Off*<br/>
+에 상대적인 오프셋 *_Way*합니다.
 
-*_Way* 중 하나는 [ios_base:: seekdir](../standard-library/ios-base-class.md#seekdir) 열거형입니다.
+*_Way*<br/>
+[ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) 열거형 중 하나입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -433,7 +446,7 @@ Basic_ostream 개체에 대한 참조입니다.
 
 하는 경우 [실패할](../standard-library/basic-ios-class.md#fail) 됩니다 **false**, 첫 번째 멤버 함수 호출 **newpos =** [rdbuf](../standard-library/basic-ios-class.md#rdbuf) **->** [pubseekpos](../standard-library/basic-streambuf-class.md#pubseekpos)(*_Pos*), 일부 `pos_type` 임시 개체 `newpos`합니다. 하는 경우 `fail` 이 false 인 경우 두 번째 함수 호출 **newpos = rdbuf->** [pubseekoff](../standard-library/basic-streambuf-class.md#pubseekoff)(*_Off, _Way*). 어떤 경우든 (`off_type`)**newpos ==** (`off_type`)(-1)(배치 작업 실패)이면 함수는 **istr.**[setstate](../standard-library/basic-ios-class.md#setstate)(**failbit**)를 호출합니다. 두 함수 모두 **\*this**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ostream_seekp.cpp
@@ -485,7 +498,8 @@ void swap(basic_ostream& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 에 대 한 참조를 `basic_ostream` 개체입니다.
+*right*<br/>
+`basic_ostream` 개체에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -507,7 +521,7 @@ pos_type tellp();
 
 [fail](../standard-library/basic-ios-class.md#fail)이 **false**인 경우 멤버 함수는 [rdbuf](../standard-library/basic-ios-class.md#rdbuf)**->** [pubseekoff](../standard-library/basic-streambuf-class.md#pubseekoff)(0, `cur`, **in**)을 반환합니다. 아닌 경우 `pos_type`(-1)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `tellp` 사용 예제는 [seekp](#seekp)를 참조하세요.
 
@@ -521,9 +535,11 @@ basic_ostream<Elem, Tr>& write(const char_type* str, streamsize count);
 
 ### <a name="parameters"></a>매개 변수
 
-*개수* 스트림에 넣을 문자의 수입니다.
+*count*<br/>
+스트림에 넣을 문자의 수입니다.
 
-*str* 스트림에 넣을 문자입니다.
+*str*<br/>
+스트림에 넣을 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -533,7 +549,7 @@ Basic_ostream 개체에 대한 참조입니다.
 
 합니다 [형식이 지정 되지 않은 출력 함수](../standard-library/basic-ostream-class.md) 의 시퀀스를 삽입 *개수* 부터 요소 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `write` 사용 예제는 [streamsize](../standard-library/ios-typedefs.md#streamsize)를 참조하세요.
 

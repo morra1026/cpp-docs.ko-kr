@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c82f54a365208c247e735e467157dfd29f9f271a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7e7514fdfc07fcbb4a1fff42d80fd138ab7d6043
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613411"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100250"
 ---
 # <a name="exceptions-ccx"></a>예외(C++/CX)
 
@@ -34,7 +34,7 @@ C + + /cli CX는 일반적인 HRESULT 오류를 나타내는 표준 예외 집�
 
 다음 표에서는 표준 예외를 보여 줍니다.
 
-|name|내부 HRESULT|설명|
+|이름|내부 HRESULT|설명|
 |----------|------------------------|-----------------|
 |COMException|*사용자 정의 hresult*|COM 메서드 호출에서 인식할 수 없는 HRESULT가 반환되는 경우에 throw됩니다.|
 |AccessDeniedException|E\_ACCESSDENIED|리소스 또는 기능에 대한 액세스가 거부된 경우 throw됩니다.|
@@ -91,7 +91,7 @@ void App::OnUnhandledException(Platform::Object^ sender, Windows::ApplicationMod
 
     if (!err->Handled) //Propagate has not been called on it yet.
 {
-     try
+    try
     {
         err->Propagate();
     }
@@ -101,7 +101,6 @@ void App::OnUnhandledException(Platform::Object^ sender, Windows::ApplicationMod
         // TODO: Log error and either take action to recover
         // or else re-throw exception to continue fail-fast
     }
-
 }
 ```
 
@@ -111,5 +110,5 @@ C + + /cli CX 사용 하지 않습니다는 `finally` 절.
 
 ## <a name="see-also"></a>참고자료
 
-[Visual c + + 언어 참조](visual-c-language-reference-c-cx.md)  
-[네임 스페이스 참조](namespaces-reference-c-cx.md)  
+[Visual c + + 언어 참조](visual-c-language-reference-c-cx.md)<br/>
+[네임 스페이스 참조](namespaces-reference-c-cx.md)

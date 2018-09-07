@@ -30,12 +30,12 @@ helpviewer_keywords:
 - std::promise [C++], swap
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a1ddfd30a1e061426f0a19ac1118aa5ade1de17
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a56e188e581ea5d9dcafaa222ab4367e0b4b33fe
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958566"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100302"
 ---
 # <a name="promise-class"></a>promise 클래스
 
@@ -75,7 +75,7 @@ class promise;
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
-`promise`
+*promise*<br/>
 
 ## <a name="requirements"></a>요구 사항
 
@@ -107,7 +107,8 @@ promise& operator=(promise&& Other) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*다른* 는 `promise` 개체입니다.
+*기타*<br/>
+`promise` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -130,9 +131,11 @@ promise(promise&& Other) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*Al* 메모리 할당자입니다. 자세한 내용은 [\<allocators>](../standard-library/allocators-header.md)를 참조하세요.
+*Al*<br/>
+메모리 할당자입니다. 자세한 내용은 [\<allocators>](../standard-library/allocators-header.md)를 참조하세요.
 
-*다른* 는 `promise` 개체입니다.
+*기타*<br/>
+`promise` 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -152,7 +155,8 @@ void set_exception(exception_ptr Exc);
 
 ### <a name="parameters"></a>매개 변수
 
-*전용* 는 [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) 이 메서드가 예외 결과로 저장입니다.
+*전용*<br/>
+이 메서드가 예외 결과로 저장한 [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr)입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -172,7 +176,8 @@ void set_exception_at_thread_exit(exception_ptr Exc);
 
 ### <a name="parameters"></a>매개 변수
 
-*전용* 는 [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) 이 메서드가 예외 결과로 저장입니다.
+*전용*<br/>
+이 메서드가 예외 결과로 저장한 [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr)입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -195,7 +200,8 @@ void promise<void>::set_value();
 
 ### <a name="parameters"></a>매개 변수
 
-*Val* 결과로 저장할 값입니다.
+*val*<br/>
+결과로 저장할 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -226,7 +232,8 @@ void promise<void>::set_value_at_thread_exit();
 
 ### <a name="parameters"></a>매개 변수
 
-*Val* 결과로 저장할 값입니다.
+*val*<br/>
+결과로 저장할 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -254,7 +261,8 @@ void swap(promise& Other) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*다른* 는 `promise` 개체입니다.
+*기타*<br/>
+`promise` 개체입니다.
 
 ## <a name="see-also"></a>참고자료
 

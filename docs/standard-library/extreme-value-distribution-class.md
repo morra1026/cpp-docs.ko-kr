@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec80db9282bc51106c6beedd42dd05a1ba636c74
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 10c93374a1ed9ed4fa875c78310d9ffa34406b83
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958021"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100847"
 ---
 # <a name="extremevaluedistribution-class"></a>extreme_value_distribution 클래스
 
@@ -81,9 +81,11 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*RealType* 부동 소수점 결과 형식에 기본값이 **double**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*RealType*<br/>
+부동 소수점 결과 형식으로 기본값으로 **이중**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-*URNG* 난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*URNG*<br/>
+임의의 수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -100,7 +102,7 @@ public:
 
 극단값 분포에 대한 자세한 내용은 Wolfram MathWorld 문서 [Extreme Value Distribution](http://go.microsoft.com/fwlink/p/?linkid=401110)(극단값 분포)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // compile with: /EHsc /W4
@@ -200,11 +202,14 @@ explicit extreme_value_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*a_value* 는 `a` 분포 매개 변수입니다.
+*a_value*<br/>
+`a` 분포 매개 변수입니다.
 
-*b_value* 는 `b` 분포 매개 변수입니다.
+*b_value*<br/>
+`b` 분포 매개 변수입니다.
 
-*parm* 는 `param_type` 분포를 생성 하는 데 사용 되는 구조입니다.
+*parm*<br/>
+분포를 생성하는 데 사용되는 `param_type` 구조체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -232,11 +237,14 @@ struct param_type {
 
 ### <a name="parameters"></a>매개 변수
 
-*a_value* 는 `a` 분포 매개 변수입니다.
+*a_value*<br/>
+`a` 분포 매개 변수입니다.
 
-*b_value* 는 `b` 분포 매개 변수입니다.
+*b_value*<br/>
+`b` 분포 매개 변수입니다.
 
-*오른쪽* 는 `param_type` 이 비교할 개체입니다.
+*right*<br/>
+이 매개 변수와 비교할 `param_type` 개체입니다.
 
 ### <a name="remarks"></a>설명
 

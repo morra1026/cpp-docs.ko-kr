@@ -208,12 +208,12 @@ helpviewer_keywords:
 - std::swap [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 334702a2c3e9a86becfb5a653b22154b5a4e197a
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 9e8ec44fcdd336786707bf809ce676d866df132e
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43691719"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101679"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algorithm&gt; 함수
 
@@ -268,11 +268,14 @@ ForwardIterator adjacent_find(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first*<br/>
+검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*마지막* 검색할 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
+*last*<br/>
+검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*comp* 검색 중인 범위에 있는 인접 요소의 값이 충족 되어야 하는 조건을 제공 하는 이진 조건자입니다.
+*comp*<br/>
+검색 중인 범위 내 인접 요소의 값이 충족하도록 할 조건을 제공하는 이진 조건자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -341,9 +344,9 @@ int main()
 ```Output
 L = ( 50 40 10 20 20 )
 There are two adjacent elements that are equal.
- They have a value of 20.
+They have a value of 20.
 There are two adjacent elements where the second is twice the first.
- They have values of 10 & 20.
+They have values of 10 & 20.
 ```
 
 ## <a name="all_of"></a>  all_of
@@ -360,11 +363,14 @@ bool all_of(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 조건 검사의 시작 위치를 나타내는 입력된 반복기입니다. 반복기는 요소 범위의 시작 위치를 표시합니다.
+*first*<br/>
+조건 검사의 시작 위치를 나타내는 입력 반복기입니다. 반복기는 요소 범위의 시작 위치를 표시합니다.
 
-*마지막* 조건을 검사할 요소 범위의 끝을 나타내는 입력된 반복기입니다.
+*last*<br/>
+조건을 검사할 요소 범위의 끝을 나타내는 입력 반복기입니다.
 
-*comp* 를 테스트할 조건입니다. 확인 중인 요소가 충족할 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
+*comp*<br/>
+테스트할 조건입니다. 확인 중인 요소가 충족할 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -388,11 +394,14 @@ bool any_of(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 요소를 조건에 대해 범위 검사를 시작 하는 위치를 나타내는 입력된 반복기입니다.
+*first*<br/>
+조건에 대한 요소 범위 확인의 시작 위치를 나타내는 입력 반복기입니다.
 
-*마지막* 조건을 검사할 요소 범위의 끝을 나타내는 입력된 반복기입니다.
+*last*<br/>
+조건을 검사할 요소 범위의 끝을 나타내는 입력 반복기입니다.
 
-*comp* 를 테스트할 조건입니다. 사용자 정의 조건자 함수 개체에 의해 제공됩니다. 조건자는 테스트 중인 요소가 충족해야 할 조건을 정의합니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
+*comp*<br/>
+테스트할 조건입니다. 사용자 정의 조건자 함수 개체에 의해 제공됩니다. 조건자는 테스트 중인 요소가 충족해야 할 조건을 정의합니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -426,13 +435,17 @@ bool binary_search(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first*<br/>
+검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*마지막* 검색할 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
+*last*<br/>
+검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*값* 값 또는 요소 값을 기준으로 일치 하는 데 필요한 요소 값이 이진 조건자에 의해 지정 된 조건을 충족 해야 합니다.
+*값*<br/>
+요소의 값과 일치해야 하는 값 또는 이진 조건자에 의해 지정된 요소 값의 조건을 충족해야 하는 값입니다.
 
-*comp* 정의 하는 사용자 정의 조건자 함수 개체는 하나의 요소에 다른 노드보다 작은지 감지 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+한 요소가 다른 요소보다 작다는 의미를 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -546,11 +559,14 @@ OutputIterator copy(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 소스 범위에서 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first*<br/>
+원본 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*마지막* 소스 범위에서 마지막 요소 하나 다음 위치의 주소를 지정 하는 입력된 반복기입니다.
+*last*<br/>
+소스 범위에 있는 마지막 요소의 하나 다음 위치를 가리키는 입력 반복기입니다.
 
-*destBeg* 대상 범위에서 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기입니다.
+*destBeg*<br/>
+대상 범위의 첫 번째 요소의 위치를 주소 지정하는 출력 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -636,11 +652,14 @@ BidirectionalIterator2 copy_backward(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 소스 범위에서 첫 번째 요소 위치의 주소를 지정 하는 양방향 반복기입니다.
+*first*<br/>
+소스 범위의 첫 번째 요소의 위치를 주소 지정하는 양방향 반복기입니다.
 
-*마지막* 소스 범위에서 마지막 요소 하나 다음 위치의 주소를 지정 하는 양방향 반복기입니다.
+*last*<br/>
+소스 범위에 있는 마지막 요소의 하나 다음 위치를 가리키는 양방향 반복기입니다.
 
-*destEnd* 대상 범위에서 마지막 요소 하나 다음 위치의 주소를 지정 하는 양방향 반복기입니다.
+*destEnd*<br/>
+대상 범위에 있는 마지막 요소의 하나 다음 위치를 가리키는 양방향 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -724,13 +743,17 @@ OutputIterator copy_if(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 조건을 검사할 범위의 시작을 나타내는 입력된 반복기입니다.
+*first*<br/>
+조건을 검사할 범위의 시작을 나타내는 입력 반복기입니다.
 
-*마지막* 범위의 끝을 나타내는 입력된 반복기입니다.
+*last*<br/>
+범위의 끝을 나타내는 입력 반복기입니다.
 
-*dest* 복사 된 요소에 대 한 대상을 나타내는 출력 반복기입니다.
+*dest*<br/>
+복사된 요소에 대한 대상을 나타내는 출력 반복기입니다.
 
-*_Pred* 범위에 있는 모든 요소가 테스트 되는 조건입니다. 이 조건은 사용자 정의 조건자 함수 개체에 의해 제공됩니다. 조건자는 하나의 인수를 반환 **true** 하거나 **false**합니다.
+*_Pred*<br/>
+범위의 모든 요소가 테스트되는 조건입니다. 이 조건은 사용자 정의 조건자 함수 개체에 의해 제공됩니다. 조건자는 하나의 인수를 반환 **true** 하거나 **false**합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -758,11 +781,14 @@ OutputIterator copy_n(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 요소를 복사할 원본 위치를 나타내는 입력된 반복기입니다.
+*first*<br/>
+요소를 복사할 원본 위치를 나타내는 입력 반복기입니다.
 
-*개수* 는 부호가 있거나 복사할 요소의 수를 지정 정수 형식입니다.
+*count*<br/>
+복사할 요소의 수를 지정하는 부호 있는/부호 없는 정수 형식입니다.
 
-*dest* 요소를 복사할 위치를 나타내는 출력 반복기입니다.
+*dest*<br/>
+요소를 복사할 위치를 나타내는 출력 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -786,11 +812,14 @@ typename iterator_traits<InputIterator>::difference_type count(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 트래버스할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first*<br/>
+트래버스할 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*마지막* 트래버스할 하나 다음 위치의 마지막 요소 범위에서를 지정 하는 입력된 반복기입니다.
+*last*<br/>
+트래버스할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*val* 계산할 요소의 값입니다.
+*val*<br/>
+계산할 요소의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -853,11 +882,14 @@ typename iterator_traits<InputIterator>::difference_type count_if(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first*<br/>
+검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*마지막* 검색할 하나 다음 위치의 마지막 요소 범위에서를 지정 하는 입력된 반복기입니다.
+*last*<br/>
+검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 입력 반복기입니다.
 
-*_Pred* 개수를 셀 요소가 충족할 조건을 정의 하는 사용자 정의 조건자 함수 개체입니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
+*_Pred*<br/>
+요소 개수를 세기 위한 일치 조건을 정의하는 사용자 정의 조건자 함수 개체. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -950,15 +982,20 @@ bool equal(
 
 ### <a name="parameters"></a>매개 변수
 
-*First1* 테스트할 첫 번째 범위의 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first1*<br/>
+테스트할 첫 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*Last1* 테스트할 첫 번째 범위에서 마지막 요소의 하나의 위치를 지정 하는 입력된 반복기입니다.
+*last1*<br/>
+테스트할 첫 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*First2* 테스트할 두 번째 범위에서 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first2*<br/>
+테스트할 두 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*First2* 테스트할 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first2*<br/>
+테스트할 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*Comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*구성 요소*<br/>
+두 요소가 같은 것으로 간주되려면 충족해야 하는 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1027,13 +1064,17 @@ pair<ForwardIterator, ForwardIterator> equal_range(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first*<br/>
+검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*마지막* 검색할 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
+*last*<br/>
+검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*val* 정렬된 된 범위에서 검색 되는 값입니다.
+*val*<br/>
+정렬된 범위에서 검색되는 값입니다.
 
-*comp* 는 하나의 요소가 다른 노드보다 작은지 의미를 정의 하는 사용자 정의 조건자 함수 개체입니다.
+*comp*<br/>
+한 요소가 다른 요소보다 작다는 의미를 정의하는 사용자 정의 조건자 함수 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1183,11 +1224,14 @@ void fill(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 트래버스할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first*<br/>
+트래버스할 범위 내 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*마지막* 트래버스할 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
+*last*<br/>
+트래버스할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*val* 범위의 요소에 할당할 값 [ *첫 번째*하십시오 *마지막*).
+*val*<br/>
+범위의 요소에 할당할 값 [ *첫 번째*하십시오 *마지막*).
 
 ### <a name="remarks"></a>설명
 
@@ -1248,11 +1292,14 @@ OutputIterator fill_n(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 범위에서 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기 값이 할당 됩니다 *Val*합니다.
+*첫 번째*<br/>
+범위에서 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기 값을 할당 받을 *Val*합니다.
 
-*개수* 는 부호가 있거나 값을 할당할 요소의 수를 지정 정수 형식입니다.
+*개수*<br/>
+값을 할당할 요소의 수를 지정하는 부호 있는/부호 없는 정수 형식입니다.
 
-*Val* 범위의 요소에 할당할 값 [ *첫 번째*하십시오 *First + Count*).
+*val*<br/>
+범위의 요소에 할당할 값 [ *첫 번째*하십시오 *First + Count*).
 
 ### <a name="return-value"></a>반환 값
 
@@ -1325,11 +1372,14 @@ InputIterator find(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 지정 된 값을 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first*<br/>
+지정된 값을 검색할 범위 내 첫 번째 요소의 위치 주소를 지정하는 입력 반복기입니다
 
-*마지막* 지정 된 값을 검색할 범위에서 마지막 요소 하나 위치의 주소를 지정 하는 입력된 반복기입니다.
+*last*<br/>
+지정된 값을 검색할 범위 내 마지막 요소 하나 다음의 위치 주소를 지정하는 입력 반복기입니다.
 
-*val* 검색할 값입니다.
+*val*<br/>
+검색할 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1364,15 +1414,20 @@ ForwardIterator1 find_end(
 
 ### <a name="parameters"></a>매개 변수
 
-*First1* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first1*<br/>
+검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*Last1* 검색할 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
+*last1*<br/>
+검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*First2* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first2*<br/>
+검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*Last2* 검색할 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
+*last2*<br/>
+검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*Comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*구성 요소*<br/>
+두 요소가 같은 것으로 간주되려면 충족해야 하는 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1477,7 +1532,7 @@ List L1 = ( 5 10 15 20 )
 Vector v2 = ( 20 30 40 )
 There is a match of L1 in v1 that begins at position 7.
 There is a sequence of elements in v1 that are equivalent to those
- in v2 under the binary predicate twice and that begins at position 8.
+in v2 under the binary predicate twice and that begins at position 8.
 ```
 
 ## <a name="find_first_of"></a>  find_first_of
@@ -1503,15 +1558,20 @@ ForwardIterator1 find_first_of(
 
 ### <a name="parameters"></a>매개 변수
 
-*First1* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first1*<br/>
+검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*last1* 검색할 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
+*last1*<br/>
+검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*first2* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first2*<br/>
+일치를 확인할 범위 내 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*last2* 일치 시킬 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
+*last2*<br/>
+일치를 확인할 범위 내 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*Comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+두 요소가 같은 것으로 간주되려면 충족해야 하는 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1616,10 +1676,10 @@ Vector v1 = ( 0 5 10 15 20 25 0 5 10 15 20 25 )
 List L1 = ( 15 20 )
 Vector v2 = ( 20 30 40 )
 There is at least one match of L1 in v1
- and the first one begins at position 3.
+and the first one begins at position 3.
 There is a sequence of elements in v1 that are equivalent
- to those in v2 under the binary predicate twice
- and the first one begins at position 2.
+to those in v2 under the binary predicate twice
+and the first one begins at position 2.
 ```
 
 ## <a name="find_if"></a>  find_if
@@ -1636,11 +1696,14 @@ InputIterator find_if(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first*<br/>
+검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*마지막* 검색할 하나 다음 위치의 마지막 요소 범위에서를 지정 하는 입력된 반복기입니다.
+*last*<br/>
+검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 입력 반복기입니다.
 
-*pred* 사용자 정의 조건자 함수 개체 또는 [람다 식](../cpp/lambda-expressions-in-cpp.md) 검색 중인 요소가 충족할 조건을 정의 하는 합니다. 조건자는 단일 인수를 반환 **true** (충족) 또는 **false** (미 충족). 서명의 *pred* 여야 `bool pred(const T& arg);`여기서 `T` 형식에 `InputIterator` 역참조 시 암시적으로 변환 될 수 있습니다. 합니다 **const** 키워드는 함수 개체 또는 람다 인수를 수정 하지 않아야 함을 나타내기 위한 용도로 에게만 표시 됩니다.
+*pred*<br/>
+검색 중인 요소가 충족하는 조건을 정의하는 [람다 식](../cpp/lambda-expressions-in-cpp.md) 또는 사용자 정의 조건자 함수 개체입니다. 조건자는 단일 인수를 반환 **true** (충족) 또는 **false** (미 충족). 서명의 *pred* 여야 `bool pred(const T& arg);`여기서 `T` 형식에 `InputIterator` 역참조 시 암시적으로 변환 될 수 있습니다. 합니다 **const** 키워드는 함수 개체 또는 람다 인수를 수정 하지 않아야 함을 나타내기 위한 용도로 에게만 표시 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1750,11 +1813,14 @@ InputIterator find_if_not(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first*<br/>
+검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*마지막* 검색할 하나 다음 위치의 마지막 요소 범위에서를 지정 하는 입력된 반복기입니다.
+*last*<br/>
+검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 입력 반복기입니다.
 
-*pred* 사용자 정의 조건자 함수 개체 또는 [람다 식](../cpp/lambda-expressions-in-cpp.md) 검색 중인 요소가 충족 하지 않는 조건을 정의 하는 합니다. 조건자는 단일 인수를 반환 **true** (충족) 또는 **false** (미 충족). 서명의 *pred* 여야 `bool pred(const T& arg);`여기서 `T` 형식에 `InputIterator` 역참조 시 암시적으로 변환 될 수 있습니다. 합니다 **const** 키워드는 함수 개체 또는 람다 인수를 수정 하지 않아야 함을 나타내기 위한 용도로 에게만 표시 됩니다.
+*pred*<br/>
+검색 중인 요소가 충족하지 않는 조건을 정의하는 [람다 식](../cpp/lambda-expressions-in-cpp.md) 또는 사용자 정의 조건자 함수 개체입니다. 조건자는 단일 인수를 반환 **true** (충족) 또는 **false** (미 충족). 서명의 *pred* 여야 `bool pred(const T& arg);`여기서 `T` 형식에 `InputIterator` 역참조 시 암시적으로 변환 될 수 있습니다. 합니다 **const** 키워드는 함수 개체 또는 람다 인수를 수정 하지 않아야 함을 나타내기 위한 용도로 에게만 표시 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1780,11 +1846,14 @@ Function for_each(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 작업을 수행할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first*<br/>
+작업을 수행할 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*마지막* 하나 다음 위치의 마지막 요소 범위에서 지정 하는 입력된 반복기에 연산을 수행 합니다.
+*last*<br/>
+작업을 수행할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*_Func* 범위의 각 요소에 적용 되는 사용자 정의 함수 개체입니다.
+*_Func*<br/>
+범위의 각 요소에 적용되는 사용자 정의 함수 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1902,13 +1971,13 @@ int main()
 ```Output
 Original vector  v1 = ( -4 -3 -2 -1 0 1 2 ).
 Multiplying the elements of the vector v1
- by the factor -2 gives:
- v1mod1 = ( 8 6 4 2 0 -2 -4 ).
+by the factor -2 gives:
+v1mod1 = ( 8 6 4 2 0 -2 -4 ).
 Multiplying the elements of the vector v1mod
- by the factor 5 gives:
- v1mod2 = ( 40 30 20 10 0 -10 -20 ).
+by the factor 5 gives:
+v1mod2 = ( 40 30 20 10 0 -10 -20 ).
 The average of the elements of v1 is:
- Average ( v1mod2 ) = 10.
+Average ( v1mod2 ) = 10.
 ```
 
 ## <a name="generate"></a>  generate
@@ -1925,11 +1994,14 @@ void generate(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 할당 되는 값 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first*<br/>
+값을 할당할 범위에서 첫 번째 요소의 주소를 지정하는 정방향 반복기입니다.
 
-*마지막* 할당 되는 값 범위에서 마지막 요소 하나 위치의 주소를 지정 하는 정방향 반복기입니다.
+*last*<br/>
+값을 할당할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*_Gen* 각 범위에 있는 요소에 할당할 값을 생성 하는 데 사용 되는 인수 없이 호출 되는 함수 개체입니다.
+*_Gen*<br/>
+인수 없이 호출되는 함수 개체로, 범위 내 각 요소에 할당되는 값을 생성하는 데 사용됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1996,11 +2068,14 @@ void generate_n(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 할당 되는 값 범위에서 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기입니다.
+*첫 번째*<br/>
+값이 할당된 범위 내 첫 번째 요소의 주소를 지정하는 출력 반복기입니다
 
-*개수* 는 부호가 있거나 생성기 함수를 통해 값을 할당할 요소의 수를 지정 정수 형식입니다.
+*개수*<br/>
+생성기 함수를 통해 값이 할당되는 요소 수를 지정하는 부호가 있거나 없는 정수 형식입니다.
 
-*범용* 각 범위에 있는 요소에 할당할 값을 생성 하는 데 사용 되는 인수 없이 호출 되는 함수 개체입니다.
+*범용*<br/>
+인수 없이 호출되는 함수 개체로, 범위 내 각 요소에 할당되는 값을 생성하는 데 사용됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2077,15 +2152,20 @@ bool includes(
 
 ### <a name="parameters"></a>매개 변수
 
-*first1* 두 번째의 모든 요소가 첫 번째에 포함 되는지를 테스트할 두 개의 정렬 된 소스 범위 중 첫 번째 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first1*<br/>
+두 번째의 모든 요소가 첫 번째에 포함되는지를 테스트할 두 개의 정렬된 소스 범위 중 첫 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last1* 두 번째의 모든 요소가 첫 번째에 포함 되는지를 테스트할 하나 다음 위치의 마지막 요소가 첫 번째에서 두 개의 정렬 된 소스 범위를 지정 하는 입력된 반복기입니다.
+*last1*<br/>
+두 번째의 모든 요소가 첫 번째에 포함되는지를 테스트할 두 개의 정렬된 소스 범위 중 첫 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*first2* 두 번째의 모든 요소가 첫 번째에 포함 되는지를 테스트할 첫 번째 정렬 된 요소에 두 개의 연속 중 두 번째 소스 범위의 위치를 지정 하는 입력된 반복기입니다.
+*first2*<br/>
+두 번째의 모든 요소가 첫 번째에 포함되는지를 테스트할 두 개의 정렬된 연속 소스 범위 중 두 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last2* 두 번째의 모든 요소가 첫 번째에 포함 되는지를 테스트할 하나 마지막 정렬 된 요소에 두 개의 연속 중 두 번째 소스 범위 다음의 위치를 지정 하는 입력된 반복기입니다.
+*last2*<br/>
+두 번째의 모든 요소가 첫 번째에 포함되는지를 테스트할 두 개의 정렬된 연속 소스 범위 중 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*comp* 정의 하는 사용자 정의 조건자 함수 개체는 하나의 요소에 다른 노드보다 작은지 감지 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+한 요소가 다른 요소보다 작다는 의미를 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2238,17 +2318,17 @@ int main()
 
 ```Output
 Original vector v1a with range sorted by the
- binary predicate less than is v1a = ( -2 -1 0 1 2 3 4 ).
+binary predicate less than is v1a = ( -2 -1 0 1 2 3 4 ).
 Original vector v1b with range sorted by the
- binary predicate less than is v1b = ( -2 -1 0 1 2 3 ).
+binary predicate less than is v1b = ( -2 -1 0 1 2 3 ).
 Original vector v2a with range sorted by the
- binary predicate greater is v2a = ( 4 3 2 1 0 -1 ).
+binary predicate greater is v2a = ( 4 3 2 1 0 -1 ).
 Original vector v2b with range sorted by the
- binary predicate greater is v2b = ( 3 2 1 0 -1 -2 ).
+binary predicate greater is v2b = ( 3 2 1 0 -1 -2 ).
 Original vector v3a with range sorted by the
- binary predicate mod_lesser is v3a = ( 0 1 2 3 4 ).
+binary predicate mod_lesser is v3a = ( 0 1 2 3 4 ).
 Original vector v3b with range sorted by the
- binary predicate mod_lesser is v3b = ( 0 -1 1 -2 2 3 ).
+binary predicate mod_lesser is v3b = ( 0 -1 1 -2 2 3 ).
 All the elements in vector v1b are contained in vector v1a.
 At least one of the elements in vector v2b is not contained in vector v2a.
 At least one of the elements in vector v3b is  not contained under mod_lesser in vector v3a.
@@ -2275,13 +2355,17 @@ void inplace_merge(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 결합 되어 단일 범위로 정렬 된 첫 번째 정렬 된 두 개의 연속 중 첫 번째에서 요소 범위의 주소를 지정 하는 양방향 반복기입니다.
+*first*<br/>
+단일 범위로 결합하고 정렬할 두 개의 정렬된 연속 소스 범위 중 첫 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 양방향 반복기입니다.
 
-*중간* 결합 되어 단일 범위로 정렬 첫 번째 정렬 된 요소에 두 개의 연속 중 두 번째 범위의 위치를 주소 지정 하는 양방향 반복기입니다.
+*중간*<br/>
+단일 범위로 결합하고 정렬할 두 개의 정렬된 연속 소스 범위 중 두 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 양방향 반복기입니다.
 
-*마지막* 하나 결합 되어 단일 범위로 정렬 마지막 두 개의 연속 중 두 번째 정렬 된 요소 범위 다음의 위치를 주소 지정 하는 양방향 반복기입니다.
+*last*<br/>
+단일 범위로 결합하고 정렬할 두 개의 정렬된 연속 소스 범위 중 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 양방향 반복기입니다.
 
-*comp* 하나의 요소가 다른 인스턴스보다 큰지를 의미를 정의 하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 가져와 첫 번째 요소가 두 번째 요소보다 작은 경우 **true** 를 반환하고, 그렇지 않은 경우 **false** 를 반환합니다.
+*comp*<br/>
+하나의 요소가 다른 요소보다 큰 의미를 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 가져와 첫 번째 요소가 두 번째 요소보다 작은 경우 **true** 를 반환하고, 그렇지 않은 경우 **false** 를 반환합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2389,17 +2473,17 @@ int main()
 
 ```Output
 Original vector v1 with subranges sorted by the
- binary predicate less than is  v1 = ( 0 1 2 3 4 5 -5 -4 -3 -2 -1 0 )
+binary predicate less than is  v1 = ( 0 1 2 3 4 5 -5 -4 -3 -2 -1 0 )
 Original vector v2 with subranges sorted by the
- binary predicate greater is v2 = ( 5 4 3 2 1 0 0 -1 -2 -3 -4 -5 )
+binary predicate greater is v2 = ( 5 4 3 2 1 0 0 -1 -2 -3 -4 -5 )
 Original vector v3 with subranges sorted by the
- binary predicate mod_lesser is v3 = ( 0 1 2 3 4 5 0 -1 -2 -3 -4 -5 )
+binary predicate mod_lesser is v3 = ( 0 1 2 3 4 5 0 -1 -2 -3 -4 -5 )
 Merged inplace with default order,
- vector v1mod = ( -5 -4 -3 -2 -1 0 0 1 2 3 4 5 )
+vector v1mod = ( -5 -4 -3 -2 -1 0 0 1 2 3 4 5 )
 Merged inplace with binary predicate greater specified,
- vector v2mod = ( 5 4 3 2 1 0 0 -1 -2 -3 -4 -5 )
+vector v2mod = ( 5 4 3 2 1 0 0 -1 -2 -3 -4 -5 )
 Merged inplace with binary predicate mod_lesser specified,
- vector v3mod = ( 0 0 1 -1 2 -2 3 -3 4 -4 5 -5 )
+vector v3mod = ( 0 0 1 -1 2 -2 3 -3 4 -4 5 -5 )
 ```
 
 ## <a name="is_heap"></a>  is_heap
@@ -2421,11 +2505,14 @@ bool is_heap(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 힙에 대해 확인할 범위의 시작을 나타내는 임의 액세스 반복기입니다.
+*first*<br/>
+힙을 검사할 범위의 시작을 나타내는 임의 액세스 반복기입니다.
 
-*마지막* 범위의 끝을 나타내는 임의 액세스 반복기입니다.
+*last*<br/>
+범위의 끝을 나타내는 임의 액세스 반복기입니다.
 
-*comp* 요소의 순서 지정에 테스트할 조건입니다. 이진 조건자는 단일 인수를 받아서 반환 **true** 하거나 **false**합니다.
+*comp*<br/>
+요소 순서를 테스트 하는 조건입니다. 이진 조건자는 단일 인수를 받아서 반환 **true** 하거나 **false**합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2458,11 +2545,14 @@ RandomAccessIterator is_heap_until(
 
 ### <a name="parameters"></a>매개 변수
 
-*시작* 힙에 대해 확인할 범위의 첫 번째 요소를 지정 하는 임의 액세스 반복기입니다.
+*begin*<br/>
+힙에 대해 확인할 범위의 첫 번째 요소를 지정하는 임의 액세스 반복기입니다.
 
-*최종* 힙에 대해 확인할 범위의 끝을 지정 하는 임의 액세스 반복기입니다.
+*end*<br/>
+힙에 대해 확인할 범위의 끝을 지정하는 임의 액세스 반복기입니다.
 
-*비교* 는 엄격한/약한 정렬 힙을 정의 하는 조건을 지정 하는 이진 조건자입니다. 경우의 기본 조건자 *비교* 지정 하지 않으면는 `std::less<>`합니다.
+*compare*<br/>
+힙을 정의하는 엄격한/약한 정렬 조건을 지정하는 이진 조건자입니다. 경우의 기본 조건자 *비교* 지정 하지 않으면는 `std::less<>`합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2488,11 +2578,14 @@ bool is_partitioned(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 조건을 검사할 범위가 시작 되는 위치를 나타내는 입력된 반복기입니다.
+*first*<br/>
+범위에서 조건 검사의 시작 위치를 나타내는 입력 반복기입니다.
 
-*마지막* 범위의 끝을 나타내는 입력된 반복기입니다.
+*last*<br/>
+범위의 끝을 나타내는 입력 반복기입니다.
 
-*comp* 조건에 대 한 테스트입니다. 검색 중인 요소가 충족할 조건을 정의하는 사용자 정의 조건자 함수 개체에 의해 제공됩니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
+*comp*<br/>
+테스트할 조건입니다. 검색 중인 요소가 충족할 조건을 정의하는 사용자 정의 조건자 함수 개체에 의해 제공됩니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2539,15 +2632,20 @@ bool is_permutation(
 
 ### <a name="parameters"></a>매개 변수
 
-*First1* 범위의 첫 번째 요소를 가리키는 정방향 반복기입니다.
+*first1*<br/>
+범위의 첫 번째 요소를 참조하는 정방향 반복기입니다.
 
-*Last1* 범위의 마지막 요소 하나 다음을 참조 하는 정방향 반복기입니다.
+*last1*<br/>
+범위의 마지막 요소를 지난 요소를 참조하는 정방향 반복기입니다.
 
-*First2* 비교에 사용 되는, 두 번째 범위의 첫 번째 요소를 가리키는 정방향 반복기입니다.
+*first2*<br/>
+비교에 사용되는, 두 번째 범위의 첫 번째 요소를 참조하는 정방향 반복기입니다.
 
-*Last2* 비교에 사용 되는, 두 번째 범위의 마지막 요소 하나 다음을 참조 하는 정방향 반복기입니다.
+*last2*<br/>
+비교에 사용되는, 두 번째 범위의 마지막 요소를 지난 요소를 참조하는 정방향 반복기입니다.
 
-*Pred* 동등성을 테스트 하 고 반환 하는 조건자를 **bool**합니다.
+*pred*<br/>
+동등성을 테스트 하 고 반환 하는 조건자를 **bool**합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2637,11 +2735,14 @@ bool is_sorted(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 검사할 범위의 시작 위치를 지정 하는 정방향 반복기입니다.
+*first*<br/>
+검사할 범위가 시작되는 위치를 나타내는 정방향 반복기입니다.
 
-*마지막* 범위의 끝을 나타내는 정방향 반복기입니다.
+*last*<br/>
+범위의 끝을 나타내는 정방향 반복기입니다.
 
-*comp* 두 요소 사이의 순서를 결정 하려면 테스트할 조건입니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다. `operator<`와 동일한 작업을 수행합니다.
+*comp*<br/>
+두 요소 사이의 순서를 결정하기 위해 테스트할 조건입니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다. `operator<`와 동일한 작업을 수행합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2659,21 +2760,24 @@ bool is_sorted(
 template<class ForwardIterator>
 ForwardIterator is_sorted_until(
     ForwardIterator first,
-    ForwardIterator last); 
+    ForwardIterator last);
 template<class ForwardIterator, class BinaryPredicate>
 ForwardIterator is_sorted_until(
     ForwardIterator first,
     ForwardIterator last,
-    BinaryPredicate comp); 
+    BinaryPredicate comp);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 정방향 반복기 검사할 범위의 시작 위치를 나타내는입니다.
+*first*<br/>
+검사할 범위가 시작되는 위치를 나타내는 정방향 반복기입니다.
 
-*마지막* 범위의 끝을 나타내는 정방향 반복기입니다.
+*last*<br/>
+범위의 끝을 나타내는 정방향 반복기입니다.
 
-*comp* 두 요소 사이의 순서를 결정 하려면 테스트할 조건입니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
+*comp*<br/>
+두 요소 사이의 순서를 결정하기 위해 테스트할 조건입니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2697,9 +2801,11 @@ void iter_swap( ForwardIterator1 left, ForwardIterator2 right );
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 은 값을 교환할 정방향 반복기 중 하나입니다.
+*left*<br/>
+값을 교환할 정방향 반복기 중 하나입니다.
 
-*오른쪽* 은 값을 교환할 정방향 반복기 중 두 번째 숫자입니다.
+*right*<br/>
+값을 교환할 정방향 반복기 중 두 번째입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2830,14 +2936,14 @@ int main()
 ```Output
 The original deque of CInts is deq1 = ( CInt(5), CInt(1), CInt(10) ).
 The deque of CInts with first & last elements swapped is:
- deq1 = ( CInt(10), CInt(1), CInt(5) ).
+deq1 = ( CInt(10), CInt(1), CInt(5) ).
 The deque of CInts with first & last elements swapped back is:
- deq1 = ( CInt(5), CInt(1), CInt(10) ).
+deq1 = ( CInt(5), CInt(1), CInt(10) ).
 Vector v1 is ( 0 1 2 3 ).
 Deque deq2 is ( 4 5 ).
 After exchanging first elements,
- vector v1 is: v1 = ( 4 1 2 3 ).
- & deque deq2 is: deq2 = ( 0 5 ).
+vector v1 is: v1 = ( 4 1 2 3 ).
+& deque deq2 is: deq2 = ( 0 5 ).
 ```
 
 ## <a name="lexicographical_compare"></a>  lexicographical_compare
@@ -2864,15 +2970,20 @@ bool lexicographical_compare(
 
 ### <a name="parameters"></a>매개 변수
 
-*first1* 비교할 첫 번째 범위의 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first1*<br/>
+비교할 첫 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last1* 비교할 첫 번째 범위의 마지막 요소 하나의 위치를 지정 하는 입력된 반복기입니다.
+*last1*<br/>
+비교할 첫 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*first2* 비교할 두 번째 범위에서 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first2*<br/>
+비교할 두 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last2* 비교할 두 번째 범위에서 마지막 요소 하나의 위치를 지정 하는 입력된 반복기입니다.
+*last2*<br/>
+비교할 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*comp* 정의 하는 사용자 정의 조건자 함수 개체는 하나의 요소에 다른 노드보다 작은지 감지 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+한 요소가 다른 요소보다 작다는 의미를 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3005,13 +3116,17 @@ ForwardIterator lower_bound(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first*<br/>
+검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*마지막* 검색할 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
+*last*<br/>
+검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*값* 인 첫 번째 위치 또는 가능한 첫 번째 위치는 검색 되는 값에 대 한 정렬된 된 범위에서.
+*값*<br/>
+정렬된 범위에서 첫 번째 위치 또는 가능한 첫 번째 위치가 검색되는 값입니다.
 
-*comp* 정의 하는 사용자 정의 조건자 함수 개체는 하나의 요소에 다른 노드보다 작은지 감지 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+한 요소가 다른 요소보다 작다는 의미를 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3140,11 +3255,14 @@ void make_heap(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 힙으로 변환할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 임의 액세스 반복기입니다.
+*first*<br/>
+힙으로 변환할 범위에서 첫 번째 요소 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*마지막* 힙으로 변환할 범위에서 마지막 요소 하나 위치의 주소를 지정 하는 임의 액세스 반복기입니다.
+*last*<br/>
+힙으로 변환할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*comp* 정의 하는 사용자 정의 조건자 함수 개체는 하나의 요소에 다른 노드보다 작은지 감지 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+한 요소가 다른 요소보다 작다는 의미를 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -3208,30 +3326,34 @@ int main() {
 template<class Type>
 constexpr Type& max(
     const Type& left,
-    const Type& right); 
+    const Type& right);
 template<class Type, class Pr>
 constexpr Type& max(
     const Type& left,
     const Type& right,
-    BinaryPredicate comp); 
+    BinaryPredicate comp);
 template<class Type>
 constexpr Type& max (
-    initializer_list<Type> ); 
+    initializer_list<Type> );
 template<class Type, class Pr>
 constexpr Type& max(
     initializer_list<Type> ,
-    BinaryPredicate comp); 
+    BinaryPredicate comp);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 비교 되는 두 개체 중 첫 번째 숫자입니다.
+*left*<br/>
+비교되는 두 개체 중 첫 번째입니다.
 
-*오른쪽* 비교할 두 번째 개체입니다.
+*right*<br/>
+비교되는 두 개체 중 두 번째입니다.
 
-*comp* 두 개체를 비교 하는 데 사용 되는 이진 조건자입니다.
+*comp*<br/>
+두 개체를 비교하는 데 사용되는 이진 조건자입니다.
 
-*_IList* 비교할 개체가 포함 된 이니셜라이저 목록입니다.
+*_IList*<br/>
+비교할 개체가 포함된 이니셜라이저 목록입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3424,11 +3546,14 @@ constexpr ForwardIterator max_element(ForwardIterator first, ForwardIterator las
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 가장 큰 요소에 대 한 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first*<br/>
+최대 요소를 검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*마지막* 가장 큰 요소에 대 한 검색할 범위에서 마지막 요소 하나 위치의 주소를 지정 하는 정방향 반복기입니다.
+*last*<br/>
+최대 요소를 검색할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*comp* 하나의 요소가 다른 인스턴스보다 큰지를 의미를 정의 하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 가져와 첫 번째 요소가 두 번째 요소보다 작은 경우 **true** 를 반환하고, 그렇지 않은 경우 **false** 를 반환합니다.
+*comp*<br/>
+하나의 요소가 다른 요소보다 큰 의미를 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 가져와 첫 번째 요소가 두 번째 요소보다 작은 경우 **true** 를 반환하고, 그렇지 않은 경우 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3566,17 +3691,23 @@ OutputIterator merge(
 
 ### <a name="parameters"></a>매개 변수
 
-*first1* 결합 하 고 정렬 된 단일 범위로 두 개의 정렬 된 소스 범위 중 첫 번째 범위에서 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first1*<br/>
+단일 범위로 결합하고 정렬할 두 개의 정렬된 소스 범위 중 첫 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last1* 하나 다음 위치의 마지막 요소가 첫 번째에서 결합 하 고 정렬 된 단일 범위로 두 개의 정렬 된 소스 범위를 지정 하는 입력된 반복기입니다.
+*last1*<br/>
+단일 범위로 결합하고 정렬할 두 개의 정렬된 소스 범위 중 첫 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*first2* 결합 되어 단일 범위로 정렬 된 첫 번째 정렬 된 요소에 두 개의 연속 중 두 번째 소스 범위의 위치를 지정 하는 입력된 반복기입니다.
+*first2*<br/>
+단일 범위로 결합하고 정렬할 두 개의 연속 정렬된 소스 범위 중 두 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last2* 결합 되어 단일 범위로 정렬 마지막 정렬 된 요소에 두 개의 연속 중 두 번째 소스 범위 지난 한 위치를 지정 하는 입력된 반복기입니다.
+*last2*<br/>
+단일 범위로 결합하고 정렬할 두 개의 연속 정렬된 소스 범위 중 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*결과* 단일 정렬 범위로 결합 되는 대상 범위는 두 소스 범위에서 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기입니다.
+*결과*<br/>
+두 개의 소스 범위가 정렬된 단일 범위로 결합되는 대상 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*comp* 하나의 요소가 다른 인스턴스보다 큰지를 의미를 정의 하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 가져와 첫 번째 요소가 두 번째 요소보다 작은 경우 **true** 를 반환하고, 그렇지 않은 경우 **false** 를 반환합니다.
+*comp*<br/>
+하나의 요소가 다른 요소보다 큰 의미를 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 가져와 첫 번째 요소가 두 번째 요소보다 작은 경우 **true** 를 반환하고, 그렇지 않은 경우 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3716,31 +3847,35 @@ int main() {
 template<class Type>
 constexpr const Type& min(
     const Type& left,
-    const Type& right); 
+    const Type& right);
 template<class Type, class Pr>
 constexpr const Type& min(
     const Type& left,
     const Type& right,
-    BinaryPredicate comp); 
+    BinaryPredicate comp);
 template<class Type>
 constexpr Type min( 
-    initializer_list<Type> ); 
+    initializer_list<Type> );
 template<class Type, class Pr>
 constexpr Type min(
     initializer_list<Type>,
-    BinaryPredicate comp); 
+    BinaryPredicate comp);
 
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 비교 되는 두 개체 중 첫 번째 숫자입니다.
+*left*<br/>
+비교되는 두 개체 중 첫 번째입니다.
 
-*오른쪽* 비교할 두 번째 개체입니다.
+*right*<br/>
+비교되는 두 개체 중 두 번째입니다.
 
-*comp* 두 개체를 비교 하는 데 사용 되는 이진 조건자입니다.
+*comp*<br/>
+두 개체를 비교하는 데 사용되는 이진 조건자입니다.
 
-*_IList* 비교할 멤버가 포함 된 initializer_list입니다.
+*_IList*<br/>
+비교할 멤버가 포함된 initializer_list입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3935,11 +4070,14 @@ constexpr ForwardIterator min_element(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 가장 작은 요소를 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first*<br/>
+최소 요소를 검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*마지막* 가장 작은 요소를 검색할 범위에서 마지막 요소 하나 위치의 주소를 지정 하는 정방향 반복기입니다.
+*last*<br/>
+최소 요소를 검색할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*comp* 하나의 요소가 다른 인스턴스보다 큰지를 의미를 정의 하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 가져와 첫 번째 요소가 두 번째 요소보다 작은 경우 **true** 를 반환하고, 그렇지 않은 경우 **false** 를 반환합니다.
+*comp*<br/>
+하나의 요소가 다른 요소보다 큰 의미를 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 가져와 첫 번째 요소가 두 번째 요소보다 작은 경우 **true** 를 반환하고, 그렇지 않은 경우 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -4058,7 +4196,7 @@ The smallest element in s1 is: CInt( -3 )
 Vector v1 is ( 0 1 2 3 -2 -4 -6 -8 ).
 The smallest element in v1 is: -8
 The smallest element in v1 under the mod_lesser
- binary predicate is: 0
+binary predicate is: 0
 ```
 
 ## <a name="minmax_element"></a>  minmax_element
@@ -4069,21 +4207,24 @@ The smallest element in v1 under the mod_lesser
 template<class ForwardIterator>
 constexpr pair<ForwardIterator, ForwardIterator> minmax_element(
     ForwardIterator first,
-    ForwardIterator Last); 
+    ForwardIterator Last);
 template<class ForwardIterator, class BinaryPredicate>
 constexpr pair<ForwardIterator, ForwardIterator> minmax_element(
     ForwardIterator  first,
     ForwardIterator Last,
-    BinaryPredicate  comp); 
+    BinaryPredicate  comp);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 범위의 시작을 나타내는 정방향 반복기입니다.
+*first*<br/>
+범위의 시작을 나타내는 정방향 반복기입니다.
 
-*마지막* 범위의 끝을 나타내는 정방향 반복기입니다.
+*last*<br/>
+범위의 끝을 나타내는 정방향 반복기입니다.
 
-*comp* 요소의 순서 지정에 사용 되는 선택적인 테스트입니다.
+*comp*<br/>
+요소의 순서 지정에 사용되는 선택적인 테스트입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -4113,31 +4254,35 @@ constexpr pair<ForwardIterator, ForwardIterator> minmax_element(
 template<class Type>
 constexpr pair<const Type&, const Type&> minmax(
     const Type& left,
-    const Type& right); 
+    const Type& right);
 template<class Type, class BinaryPredicate>
 constexpr pair<const Type&, const Type&> minmax(
     const Type& left,
     const Type& right,
-    BinaryPredicate comp); 
+    BinaryPredicate comp);
 template<class Type>
- constexpr pair<Type&, Type&> minmax(
-    initializer_list<Type> ); 
+constexpr pair<Type&, Type&> minmax(
+    initializer_list<Type> );
 template<class Type, class BinaryPredicate>
 constexpr pair<Type&, Type&> minmax(
     initializer_list<Type>,
-    BinaryPredicate comp); 
+    BinaryPredicate comp);
 
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 비교 되는 두 개체 중 첫 번째 숫자입니다.
+*left*<br/>
+비교되는 두 개체 중 첫 번째입니다.
 
-*오른쪽* 비교할 두 번째 개체입니다.
+*right*<br/>
+비교되는 두 개체 중 두 번째입니다.
 
-*comp* 두 개체를 비교 하는 데 사용 되는 이진 조건자입니다.
+*comp*<br/>
+두 개체를 비교하는 데 사용되는 이진 조건자입니다.
 
-*_IList* 비교할 멤버가 포함 된 initializer_list입니다.
+*_IList*<br/>
+비교할 멤버가 포함된 initializer_list입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4190,15 +4335,20 @@ mismatch(
 
 ### <a name="parameters"></a>매개 변수
 
-*First1* 테스트할 첫 번째 범위의 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first1*<br/>
+테스트할 첫 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*Last1* 테스트할 첫 번째 범위에서 마지막 요소의 하나의 위치를 지정 하는 입력된 반복기입니다.
+*last1*<br/>
+테스트할 첫 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*First2* 테스트할 두 번째 범위에서 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first2*<br/>
+테스트할 두 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*Last2* 테스트할 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정 하는 입력된 반복기입니다.
+*last2*<br/>
+테스트할 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*Comp* 각 범위에 있는 현재 요소를 비교 하 고 동일한 지 여부를 결정 하는 사용자 정의 조건자 함수 개체입니다. 조건이 충족되면 **true**를 반환하고, 충족되지 않으면 **false**를 반환합니다.
+*구성 요소*<br/>
+각 범위에 있는 현재 요소를 비교하고 동일한지 여부를 확인하는 사용자 정의 조건자 함수 개체입니다. 조건이 충족되면 **true**를 반환하고, 충족되지 않으면 **false**를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -4320,16 +4470,19 @@ template<class InputIterator, class OutputIterator>
 OutputIterator move(
     InputIterator first,
     InputIterator last,
-    OutputIterator dest); 
+    OutputIterator dest);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 이동할 요소 범위의 시작 위치를 나타내는 입력된 반복기입니다.
+*first*<br/>
+이동할 요소 범위의 시작 위치를 나타내는 입력 반복기입니다.
 
-*마지막* 이동할 요소 범위의 끝을 나타내는 입력된 반복기입니다.
+*last*<br/>
+이동할 요소 범위의 끝을 나타내는 입력 반복기입니다.
 
-*dest* 이동된 된 요소를 포함 하는 출력 반복기입니다.
+*dest*<br/>
+이동된 요소를 포함하는 출력 반복기입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4350,11 +4503,14 @@ template<class BidirectionalIterator1, class BidirectionalIterator2>
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 요소를 이동할 범위의 시작을 나타내는 반복기입니다.
+*first*<br/>
+요소를 이동할 범위의 시작을 나타내는 반복기입니다.
 
-*마지막* 요소를 이동할 범위의 끝을 나타내는 반복기입니다. 이 요소를 이동하지 않습니다.
+*last*<br/>
+요소를 이동할 범위의 끝을 나타내는 반복기입니다. 이 요소를 이동하지 않습니다.
 
-*destEnd* 대상 범위에서 마지막 요소 하나 다음 위치의 주소를 지정 하는 양방향 반복기입니다.
+*destEnd*<br/>
+대상 범위에 있는 마지막 요소의 하나 다음 위치를 가리키는 양방향 반복기입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4377,11 +4533,14 @@ bool next_permutation(BidirectionalIterator first, BidirectionalIterator last, B
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 순열 수 범위에서 첫 번째 요소의 위치를 가리키는 양방향 반복기입니다.
+*first*<br/>
+순열할 범위의 첫 번째 요소 위치의 주소를 가리키는 양방향 반복기입니다.
 
-*마지막* 순열 수 하나 마지막 요소 범위에서 위치를 가리키는 양방향 반복기입니다.
+*last*<br/>
+순열할 범위의 마지막 요소 하나 다음 위치의 주소를 가리키는 양방향 반복기입니다.
 
-*comp* 순서에 따라 연속적인 요소에 의해 충족 될 비교 조건을 정의 하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+순서에 따라 연속적인 요소에 대해 충족될 비교 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -4517,21 +4676,21 @@ The original deque of CInts is deq1 = ( CInt( 5 ), CInt( 1 ), CInt( 10 ) ).
 The lexicographically next permutation exists and has
 replaced the original ordering of the sequence in deq1.
 After one application of next_permutation,
- deq1 = ( CInt( 5 ), CInt( 10 ), CInt( 1 ) ).
+deq1 = ( CInt( 5 ), CInt( 10 ), CInt( 1 ) ).
 
 Vector v1 is ( -3 -2 -1 0 1 2 3 ).
 After the first next_permutation, vector v1 is:
- v1 = ( -3 -2 -1 0 1 3 2 ).
+v1 = ( -3 -2 -1 0 1 3 2 ).
 After another next_permutation of vector v1,
- v1 =   ( -3 -2 -1 0 2 1 3 ).
+v1 =   ( -3 -2 -1 0 2 1 3 ).
 After another next_permutation of vector v1,
- v1 =   ( -3 -2 -1 0 2 3 1 ).
+v1 =   ( -3 -2 -1 0 2 3 1 ).
 After another next_permutation of vector v1,
- v1 =   ( -3 -2 -1 0 3 1 2 ).
+v1 =   ( -3 -2 -1 0 3 1 2 ).
 After another next_permutation of vector v1,
- v1 =   ( -3 -2 -1 0 3 2 1 ).
+v1 =   ( -3 -2 -1 0 3 2 1 ).
 After another next_permutation of vector v1,
- v1 =   ( -3 -2 -1 1 0 2 3 ).
+v1 =   ( -3 -2 -1 1 0 2 3 ).
 ```
 
 ## <a name="nth_element"></a>  nth_element
@@ -4543,19 +4702,23 @@ template<class RandomAccessIterator>
 void nth_element( RandomAccessIterator first, RandomAccessIterator _Nth, RandomAccessIterator last);
 
 template<class RandomAccessIterator, class BinaryPredicate>
- void nth_element( RandomAccessIterator first, RandomAccessIterator _Nth, RandomAccessIterator last, BinaryPredicate comp);
+void nth_element( RandomAccessIterator first, RandomAccessIterator _Nth, RandomAccessIterator last, BinaryPredicate comp);
 
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 파티셔닝할 범위에서 첫 번째 요소 위치의 주소를 지정 임의 액세스 반복기입니다.
+*first*<br/>
+파티셔닝할 범위에서 첫 번째 요소 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*_Nth* 요소 위치의 주소를 지정 하는 임의 액세스 반복기 파티션 경계에 올바르게 정렬 됩니다.
+*_Nth*<br/>
+파티션 경계에서 올바른 정렬을 위해 요소 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*마지막* 파티셔닝할 범위에서 마지막 요소 하나의 위치를 주소 지정 임의 액세스 반복기입니다.
+*last*<br/>
+파티셔닝할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*comp* 순서에 따라 연속적인 요소에 의해 충족 될 비교 조건을 정의 하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+순서에 따라 연속적인 요소에 대해 충족될 비교 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4644,11 +4807,14 @@ bool none_of(InputIterator first, InputIterator last, BinaryPredicate comp);
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 요소를 조건에 대해 범위 검사를 시작 하는 위치를 나타내는 입력된 반복기입니다.
+*first*<br/>
+조건에 대한 요소 범위 확인의 시작 위치를 나타내는 입력 반복기입니다.
 
-*마지막* 요소 범위의 끝을 나타내는 입력된 반복기입니다.
+*last*<br/>
+요소 범위의 끝을 나타내는 입력 반복기입니다.
 
-*comp* 조건에 대 한 테스트입니다. 이 조건은 조건을 정의하는 사용자 정의 조건자 함수 개체에 의해 제공됩니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
+*comp*<br/>
+테스트할 조건입니다. 이 조건은 조건을 정의하는 사용자 정의 조건자 함수 개체에 의해 제공됩니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -4680,13 +4846,17 @@ void partial_sort(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 정렬할 범위에서 첫 번째 요소 위치의 주소를 지정 된 임의 액세스 반복기입니다.
+*first*<br/>
+저장할 범위의 첫 번째 요소 위치를 주소 지정하는 임의 액세스 반복기입니다.
 
-*sortEnd* 정렬할 하위 범위에서 마지막 요소 하나의 위치를 주소 지정을 임의 액세스 반복기입니다.
+*sortEnd*<br/>
+정렬할 하위 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*마지막* 부분적으로 정렬할 하나 다음 위치의 마지막 요소 범위에서 주소 지정을 임의 액세스 반복기입니다.
+*last*<br/>
+부분적으로 정렬할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*comp* 순서에 따라 연속적인 요소에 의해 충족 될 비교 조건을 정의 하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+순서에 따라 연속적인 요소에 대해 충족될 비교 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4750,7 +4920,7 @@ int main()
 
    // A user-defined (UD) binary predicate can also be used
    partial_sort(v1.begin( ), v1.begin( ) + 8, v1.end( ),
- UDgreater );
+UDgreater );
    cout << "Partially resorted (UDgreater) vector:\n v1 = ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
       cout << *Iter1 << " ";
@@ -4760,13 +4930,13 @@ int main()
 
 ```Output
 Original vector:
- v1 = ( 0 2 4 6 8 10 1 3 5 7 9 11 )
+v1 = ( 0 2 4 6 8 10 1 3 5 7 9 11 )
 Partially sorted vector:
- v1 = ( 0 1 2 3 4 5 10 8 6 7 9 11 )
+v1 = ( 0 1 2 3 4 5 10 8 6 7 9 11 )
 Partially resorted (greater) vector:
- v1 = ( 11 10 9 8 0 1 2 3 4 5 6 7 )
+v1 = ( 11 10 9 8 0 1 2 3 4 5 6 7 )
 Partially resorted (UDgreater) vector:
- v1 = ( 11 10 9 8 7 6 5 4 0 1 2 3 )
+v1 = ( 11 10 9 8 7 6 5 4 0 1 2 3 )
 ```
 
 ## <a name="partial_sort_copy"></a>  partial_sort_copy
@@ -4792,15 +4962,20 @@ RandomAccessIterator partial_sort_copy(
 
 ### <a name="parameters"></a>매개 변수
 
-*first1* 소스 범위에서 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first1*<br/>
+원본 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last1* 하나 다음 위치의 마지막 요소 소스 범위에서 지정 하는 입력된 반복기입니다.
+*last1*<br/>
+소스 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*first2* 정렬된 된 대상 범위에서 첫 번째 요소 위치의 주소를 지정 하는 임의 액세스 반복기입니다.
+*first2*<br/>
+정렬된 대상 범위에서 첫 번째 요소 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*last2* 하나 다음 위치의 마지막 요소 정렬된 된 대상 범위에서 주소를 지정 하는 임의 액세스 반복기입니다.
+*last2*<br/>
+정렬된 대상 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*Comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+두 요소가 같은 것으로 간주되려면 충족해야 하는 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -4903,11 +5078,14 @@ BidirectionalIterator partition(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 범위에서 첫 번째 요소 위치의 주소를 지정 하는 양방향 반복기 분할 되어야 합니다.
+*first*<br/>
+파티셔닝할 범위에서 첫 번째 요소 위치의 주소를 지정하는 양방향 반복기입니다.
 
-*마지막* 범위에서 마지막 요소 하나 위치의 주소를 지정 하는 양방향 반복기 분할 되어야 합니다.
+*last*<br/>
+파티셔닝할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 양방향 반복기입니다.
 
-*comp* 인 경우 요소를 분류를 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체입니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
+*comp*<br/>
+요소를 분류해야 할 경우 충족해야 할 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -4972,20 +5150,25 @@ pair<OutputIterator1, OutputIterator2>
     InputIterator last,
     OutputIterator1 dest1,
     OutputIterator2 dest2,
-    Predicate pred); 
+    Predicate pred);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 조건을 검사할 범위의 시작을 나타내는 입력된 반복기입니다.
+*first*<br/>
+조건을 검사할 범위의 시작을 나타내는 입력 반복기입니다.
 
-*마지막* 범위의 끝을 나타내는 입력된 반복기입니다.
+*last*<br/>
+범위의 끝을 나타내는 입력 반복기입니다.
 
-*dest1* 사용 하 여 테스트 조건에 대해 true를 반환 하는 요소를 복사 하는 데 사용 하는 출력 반복기 *_Pred*합니다.
+*dest1*<br/>
+출력 반복기를 조건에 대해 true를 반환 하는 요소를 복사 하는 데 사용 하 여 테스트할 *_Pred*합니다.
 
-*dest2* 사용 하 여 테스트 조건에 대해 false를 반환 하는 요소를 복사 하는 데 사용 하는 출력 반복기 *_Pred*합니다.
+*dest2*<br/>
+출력 반복기를 조건에 대해 false를 반환 하는 요소를 복사 하는 데 사용 하 여 테스트할 *_Pred*합니다.
 
-*_Pred* 조건에 대 한 테스트입니다. 이 조건은 테스트할 조건을 정의하는 사용자 정의 조건자 함수 개체에 의해 제공됩니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
+*_Pred*<br/>
+테스트할 조건입니다. 이 조건은 테스트할 조건을 정의하는 사용자 정의 조건자 함수 개체에 의해 제공됩니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -5000,16 +5183,19 @@ template<class ForwardIterator, class Predicate>
 ForwardIterator partition_point(
     ForwardIterator first,
     ForwardIterator last,
-    Predicate comp); 
+    Predicate comp);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 는 `ForwardIterator` 조건을 검사할 범위의 시작을 나타내는입니다.
+*first*<br/>
+조건을 검사할 범위의 시작을 나타내는 입력 `ForwardIterator`입니다.
 
-*마지막* 는 `ForwardIterator` 범위의 끝을 나타내는입니다.
+*last*<br/>
+범위의 끝을 나타내는 `ForwardIterator`입니다.
 
-*comp* 조건에 대 한 테스트입니다. 검색 중인 요소가 충족할 조건을 정의하는 사용자 정의 조건자 함수 개체에 의해 제공됩니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
+*comp*<br/>
+테스트할 조건입니다. 검색 중인 요소가 충족할 조건을 정의하는 사용자 정의 조건자 함수 개체에 의해 제공됩니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -5034,11 +5220,14 @@ void pop_heap(RandomAccessIterator first, RandomAccessIterator last, BinaryPredi
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 힙에서 첫 번째 요소 위치의 주소를 지정 하는 임의 액세스 반복기입니다.
+*first*<br/>
+힙에서 첫 번째 요소 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*마지막* 하나 다음 위치의 마지막 요소 힙에서 주소를 지정 하는 임의 액세스 반복기입니다.
+*last*<br/>
+힙의 마지막 요소 하나 다음 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*comp* 정의 하는 사용자 정의 조건자 함수 개체는 하나의 요소에 다른 노드보다 작은지 감지 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+한 요소가 다른 요소보다 작다는 의미를 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -5140,11 +5329,14 @@ bool prev_permutation(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 순열 수 범위에서 첫 번째 요소의 위치를 가리키는 양방향 반복기입니다.
+*first*<br/>
+순열할 범위의 첫 번째 요소 위치의 주소를 가리키는 양방향 반복기입니다.
 
-*마지막* 순열 수 하나 마지막 요소 범위에서 위치를 가리키는 양방향 반복기입니다.
+*last*<br/>
+순열할 범위의 마지막 요소 하나 다음 위치의 주소를 가리키는 양방향 반복기입니다.
 
-*comp* 순서에 따라 연속적인 요소에 의해 충족 될 비교 조건을 정의 하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+순서에 따라 연속적인 요소에 대해 충족될 비교 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -5272,24 +5464,24 @@ int main() {
 ```Output
 The original deque of CInts is deq1 = ( CInt( 1 ), CInt( 5 ), CInt( 10 ) ).
 The lexicographically previous permutation doesn't exist
- and the lexicographically smallest permutation
- has replaced the original ordering of the sequence in deq1.
+and the lexicographically smallest permutation
+has replaced the original ordering of the sequence in deq1.
 After one application of prev_permutation,
- deq1 = ( CInt( 10 ), CInt( 5 ), CInt( 1 ) ).
+deq1 = ( CInt( 10 ), CInt( 5 ), CInt( 1 ) ).
 
 Vector v1 is ( -3 -2 -1 0 1 2 3 ).
 After the first prev_permutation, vector v1 is:
- v1 = ( -3 -2 0 3 2 1 -1 ).
+v1 = ( -3 -2 0 3 2 1 -1 ).
 After another prev_permutation of vector v1,
- v1 =   ( -3 -2 0 3 -1 2 1 ).
+v1 =   ( -3 -2 0 3 -1 2 1 ).
 After another prev_permutation of vector v1,
- v1 =   ( -3 -2 0 3 -1 1 2 ).
+v1 =   ( -3 -2 0 3 -1 1 2 ).
 After another prev_permutation of vector v1,
- v1 =   ( -3 -2 0 2 3 1 -1 ).
+v1 =   ( -3 -2 0 2 3 1 -1 ).
 After another prev_permutation of vector v1,
- v1 =   ( -3 -2 0 2 -1 3 1 ).
+v1 =   ( -3 -2 0 2 -1 3 1 ).
 After another prev_permutation of vector v1,
- v1 =   ( -3 -2 0 2 -1 1 3 ).
+v1 =   ( -3 -2 0 2 -1 1 3 ).
 ```
 
 ## <a name="push_heap"></a>  push_heap
@@ -5307,11 +5499,14 @@ void push_heap( RandomAccessIterator first, RandomAccessIterator last, BinaryPre
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 힙에서 첫 번째 요소 위치의 주소를 지정 하는 임의 액세스 반복기입니다.
+*first*<br/>
+힙에서 첫 번째 요소 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*마지막* 힙으로 변환할 범위에서 마지막 요소 하나 위치의 주소를 지정 하는 임의 액세스 반복기입니다.
+*last*<br/>
+힙으로 변환할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*comp* 정의 하는 사용자 정의 조건자 함수 개체는 하나의 요소에 다른 노드보다 작은지 감지 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+한 요소가 다른 요소보다 작다는 의미를 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -5408,17 +5603,20 @@ Std::random_shuffle() 함수 되지 바뀝니다 [std:: shuffle](../standard-lib
 
 ```cpp
 template<class ForwardIterator, class Type>
- ForwardIterator remove(ForwardIterator first, ForwardIterator last, const Type& val);
+ForwardIterator remove(ForwardIterator first, ForwardIterator last, const Type& val);
 
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 요소가 제거 되는 범위의 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first*<br/>
+요소가 제거되는 범위의 첫 번째 요소 위치에 주소를 지정하는 정방향 반복기입니다.
 
-*마지막* 요소가 제거 되는 범위에서 마지막 요소 하나 위치의 주소를 지정 하는 정방향 반복기입니다.
+*last*<br/>
+요소가 제거되는 범위의 첫 번째 요소를 벗어난 위치에 주소를 지정하는 정방향 반복기입니다.
 
-*val* 값 범위에서 제거 하는 것입니다.
+*val*<br/>
+범위에서 제거될 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -5488,19 +5686,23 @@ int main() {
 
 ```cpp
 template<class InputIterator, class OutputIterator, class Type>
- OutputIterator remove_copy(InputIterator first, InputIterator last, OutputIterator result, const Type& val);
+OutputIterator remove_copy(InputIterator first, InputIterator last, OutputIterator result, const Type& val);
 
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 요소가 제거 되는 범위의 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first*<br/>
+요소가 제거되는 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*마지막* 요소가 제거 되는 범위에서 마지막 요소 하나의 위치를 지정 하는 입력된 반복기입니다.
+*last*<br/>
+요소가 제거되는 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*결과* 요소가 제거 되는 대상 범위에서 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기입니다.
+*결과*<br/>
+요소가 제거되는 대상 범위에서 첫 번째 요소 위치의 주소를 지정하는 출력 반복기입니다.
 
-*val* 값 범위에서 제거 하는 것입니다.
+*val*<br/>
+범위에서 제거될 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -5573,13 +5775,17 @@ OutputIterator remove_copy_if(InputIterator first, InputIterator Last, OutputIte
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 요소가 제거 되는 범위의 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first*<br/>
+요소가 제거되는 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*마지막* 요소가 제거 되는 범위에서 마지막 요소 하나의 위치를 지정 하는 입력된 반복기입니다.
+*last*<br/>
+요소가 제거되는 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*결과* 요소가 제거 되는 대상 범위에서 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기입니다.
+*결과*<br/>
+요소가 제거되는 대상 범위에서 첫 번째 요소 위치의 주소를 지정하는 출력 반복기입니다.
 
-*_Pred* 만족 해야 하는 단항 조건자는 대체할 요소의 값은입니다.
+*_Pred*<br/>
+충족해야 하는 단항 조건자는 대체할 요소의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -5664,11 +5870,14 @@ ForwardIterator remove_if(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 요소가 제거 되는 범위의 첫 번째 요소의 위치를 가리키는 정방향 반복기입니다.
+*first*<br/>
+요소가 제거되는 범위에서 첫 번째 요소의 위치를 가리키는 정방향 반복기입니다.
 
-*마지막* 요소가 제거 되는 범위에서 마지막 요소 다음 위치를 가리키는 정방향 반복기입니다.
+*last*<br/>
+요소가 제거되는 범위에서 마지막 요소 하나 다음의 위치를 가리키는 정방향 반복기입니다.
 
-*_Pred* 만족 해야 하는 단항 조건자는 대체할 요소의 값은입니다.
+*_Pred*<br/>
+충족해야 하는 단항 조건자는 대체할 요소의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -5751,13 +5960,17 @@ void replace(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 요소가 대체 되는 범위의 첫 번째 요소의 위치를 가리키는 정방향 반복기입니다.
+*first*<br/>
+요소가 대체되는 범위에서 첫 번째 요소의 위치를 가리키는 정방향 반복기입니다.
 
-*마지막* 요소가 대체 되는 범위에서 마지막 요소 다음 위치를 가리키는 정방향 반복기입니다.
+*last*<br/>
+요소가 대체되는 범위에서 마지막 요소 하나 다음의 위치를 가리키는 입력 반복기입니다.
 
-*_OldVal* 의 대체 되는 요소의 이전 값입니다.
+*_OldVal*<br/>
+대체되는 요소의 이전 값입니다.
 
-*_NewVal* 이전 값을 가진 요소에 할당 되는 새 값입니다.
+*_NewVal*<br/>
+이전 값을 가진 요소에 할당되는 새 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -5823,15 +6036,20 @@ OutputIterator replace_copy(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 요소가 대체 되는 범위의 첫 번째 요소의 위치를 가리키는 입력된 반복기입니다.
+*first*<br/>
+요소가 대체되는 범위의 첫 번째 요소에 대한 위치를 가리키는 입력 반복기입니다.
 
-*마지막* 하나 다음 위치의 마지막 요소에서 요소가 대체 되는 범위를 가리키는 입력된 반복기입니다.
+*last*<br/>
+요소가 대체되는 범위의 마지막 요소 하나 다음에 대한 위치를 가리키는 입력 반복기입니다.
 
-*결과* 변경된 요소 시퀀스를 복사할 대상 범위의 첫 번째 요소를 가리키는 출력 반복기입니다.
+*결과*<br/>
+변경된 요소 시퀀스를 복사할 대상 범위의 첫 번째 요소를 가리키는 출력 반복기입니다.
 
-*_OldVal* 의 대체 되는 요소의 이전 값입니다.
+*_OldVal*<br/>
+대체되는 요소의 이전 값입니다.
 
-*_NewVal* 이전 값을 가진 요소에 할당 되는 새 값입니다.
+*_NewVal*<br/>
+이전 값을 가진 요소에 할당되는 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -5921,15 +6139,20 @@ OutputIterator replace_copy_if(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 요소가 대체 되는 범위의 첫 번째 요소의 위치를 가리키는 입력된 반복기입니다.
+*first*<br/>
+요소가 대체되는 범위의 첫 번째 요소에 대한 위치를 가리키는 입력 반복기입니다.
 
-*마지막* 하나 다음 위치의 마지막 요소에서 요소가 대체 되는 범위를 가리키는 입력된 반복기입니다.
+*last*<br/>
+요소가 대체되는 범위의 마지막 요소 하나 다음에 대한 위치를 가리키는 입력 반복기입니다.
 
-*결과* 요소가 복사 되는 대상 범위에서 첫 번째 요소의 위치를 가리키는 출력 반복기입니다.
+*결과*<br/>
+요소가 복사되는 대상 범위에서 첫 번째 요소의 위치를 가리키는 출력 반복기입니다.
 
-*_Pred* 만족 해야 하는 단항 조건자는 대체할 요소의 값은입니다.
+*_Pred*<br/>
+충족해야 하는 단항 조건자는 대체할 요소의 값입니다.
 
-*val* 조건자를 충족 하는 이전 값을 갖는 요소에 할당 되는 새 값입니다.
+*val*<br/>
+이전 값이 조건자를 충족하는 요소에 할당되는 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -6025,13 +6248,17 @@ void replace_if(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 요소가 대체 되는 범위의 첫 번째 요소의 위치를 가리키는 정방향 반복기입니다.
+*first*<br/>
+요소가 대체되는 범위에서 첫 번째 요소의 위치를 가리키는 정방향 반복기입니다.
 
-*마지막* 요소가 대체 되는 범위에서 마지막 요소 다음 위치를 가리키는 반복기입니다.
+*last*<br/>
+요소가 대체되는 범위에서 마지막 요소 하나 다음의 위치를 가리키는 반복기입니다.
 
-*_Pred* 만족 해야 하는 단항 조건자는 대체할 요소의 값은입니다.
+*_Pred*<br/>
+충족해야 하는 단항 조건자는 대체할 요소의 값입니다.
 
-*val* 조건자를 충족 하는 이전 값을 갖는 요소에 할당 되는 새 값입니다.
+*val*<br/>
+이전 값이 조건자를 충족하는 요소에 할당되는 새 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -6101,9 +6328,11 @@ void reverse(BidirectionalIterator first, BidirectionalIterator last);
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 요소는 순열는 범위의 첫 번째 요소의 위치를 가리키는 양방향 반복기입니다.
+*first*<br/>
+요소가 순열되는 범위에서 첫 번째 요소의 위치를 가리키는 양방향 반복기입니다.
 
-*마지막* 하나 다음 위치의 마지막 요소는 요소는 순열 있는 범위의 가리키는 양방향 반복기입니다.
+*last*<br/>
+요소가 순열되는 범위에서 마지막 요소 하나 다음의 위치를 가리키는 양방향 반복기입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -6146,9 +6375,9 @@ int main() {
 
 ```Output
 The original vector v1 is:
- ( 0 1 2 3 4 5 6 7 8 9 ).
+( 0 1 2 3 4 5 6 7 8 9 ).
 The modified vector v1 with values reversed is:
- ( 9 8 7 6 5 4 3 2 1 0 ).
+( 9 8 7 6 5 4 3 2 1 0 ).
 ```
 
 ## <a name="reverse_copy"></a>  reverse_copy
@@ -6166,11 +6395,14 @@ OutputIterator reverse_copy(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 요소는 순열는 소스 범위에 있는 첫 번째 요소의 위치를 가리키는 양방향 반복기입니다.
+*first*<br/>
+요소가 순열되는 소스 범위의 첫 번째 요소 위치를 가리키는 양방향 반복기입니다.
 
-*마지막* 하나 다음 위치의 마지막 요소는 요소는 순열는 소스 범위에 있는 가리키는 양방향 반복기입니다.
+*last*<br/>
+요소가 순열되는 소스 범위의 마지막 요소 하나 다음 위치를 가리키는 양방향 반복기입니다.
 
-*결과* 요소가 복사 되는 대상 범위에서 첫 번째 요소의 위치를 가리키는 출력 반복기입니다.
+*결과*<br/>
+요소가 복사되는 대상 범위에서 첫 번째 요소의 위치를 가리키는 출력 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -6226,7 +6458,7 @@ int main() {
 
 ```cpp
 template<class ForwardIterator>
- void rotate(
+void rotate(
     ForwardIterator first,
     ForwardIterator middle,
     ForwardIterator last);
@@ -6235,11 +6467,14 @@ template<class ForwardIterator>
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 회전할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first*<br/>
+회전할 범위 내 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*중간* 범위의 첫 번째 부분에 있는와 교환할 요소가 들어 있는 범위의 두 번째 부분에서 첫 번째 요소의 위치 하는 범위 내 경계를 정의 하는 정방향 반복기입니다.
+*중간*<br/>
+해당 요소를 범위의 첫 번째 부분에 있는 요소와 교환해야 하는 범위의 두 번째 부분에서 첫 번째 요소의 위치를 지정하는 범위 내 경계를 정의하는 정방향 반복기입니다.
 
-*마지막* 회전할 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
+*마지막*<br/>
+회전할 범위 내 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -6309,17 +6544,17 @@ Vector v1 is ( -3 -2 -1 0 1 2 3 4 5 ).
 After rotating, vector v1 is ( 0 1 2 3 4 5 -3 -2 -1 ).
 The original deque d1 is ( 0 1 2 3 4 5 ).
 After the rotation of a single deque element to the back,
- d1 is   ( 1 2 3 4 5 0 ).
+d1 is   ( 1 2 3 4 5 0 ).
 After the rotation of a single deque element to the back,
- d1 is   ( 2 3 4 5 0 1 ).
+d1 is   ( 2 3 4 5 0 1 ).
 After the rotation of a single deque element to the back,
- d1 is   ( 3 4 5 0 1 2 ).
+d1 is   ( 3 4 5 0 1 2 ).
 After the rotation of a single deque element to the back,
- d1 is   ( 4 5 0 1 2 3 ).
+d1 is   ( 4 5 0 1 2 3 ).
 After the rotation of a single deque element to the back,
- d1 is   ( 5 0 1 2 3 4 ).
+d1 is   ( 5 0 1 2 3 4 ).
 After the rotation of a single deque element to the back,
- d1 is   ( 0 1 2 3 4 5 ).
+d1 is   ( 0 1 2 3 4 5 ).
 ```
 
 ## <a name="rotate_copy"></a>  rotate_copy
@@ -6338,13 +6573,16 @@ OutputIterator rotate_copy(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 회전할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first*<br/>
+회전할 범위 내 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*중간* 범위의 첫 번째 부분에 있는와 교환할 요소가 들어 있는 범위의 두 번째 부분에서 첫 번째 요소의 위치 하는 범위 내 경계를 정의 하는 정방향 반복기입니다.
+*중간*<br/>
+해당 요소를 범위의 첫 번째 부분에 있는 요소와 교환해야 하는 범위의 두 번째 부분에서 첫 번째 요소의 위치를 지정하는 범위 내 경계를 정의하는 정방향 반복기입니다.
 
 _ *마지막* 회전할 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
 
-*결과* 대상 범위에서 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기입니다.
+*결과*<br/>
+대상 범위의 첫 번째 요소의 위치를 주소 지정하는 출력 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -6439,15 +6677,20 @@ ForwardIterator1 search(
 
 ### <a name="parameters"></a>매개 변수
 
-*First1* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first1*<br/>
+검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*last1* 검색할 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
+*last1*<br/>
+검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*first2* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first2*<br/>
+일치를 확인할 범위 내 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*last2* 일치 시킬 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
+*last2*<br/>
+일치를 확인할 범위 내 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*Comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+두 요소가 같은 것으로 간주되려면 충족해야 하는 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -6553,10 +6796,10 @@ Vector v1 = ( 0 5 10 15 20 25 0 5 10 15 20 25 )
 List L1 = ( 20 25 )
 Vector v2 = ( 20 30 40 )
 There is at least one match of L1 in v1
- and the first one begins at position 4.
+and the first one begins at position 4.
 There is a sequence of elements in v1 that are equivalent
- to those in v2 under the binary predicate twice
- and the first one begins at position 2.
+to those in v2 under the binary predicate twice
+and the first one begins at position 2.
 ```
 
 ## <a name="search_n"></a>  search_n
@@ -6583,15 +6826,20 @@ ForwardIterator1 search_n(
 
 ### <a name="parameters"></a>매개 변수
 
-*First1* 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first1*<br/>
+검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*last1* 검색할 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
+*last1*<br/>
+검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*개수* 검색 하는 하위 시퀀스의 크기입니다.
+*count*<br/>
+검색하는 하위 시퀀스의 크기입니다.
 
-*val* 검색 대상 시퀀스의 요소 값입니다.
+*val*<br/>
+검색하는 시퀀스에서 요소의 값입니다.
 
-*Comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+두 요소가 같은 것으로 간주되려면 충족해야 하는 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -6683,9 +6931,9 @@ int main()
 ```Output
 Vector v1 = ( 0 5 10 15 20 25 5 5 5 0 5 10 15 20 25 10 10 10 )
 There is at least one match of a sequence ( 5 5 5 )
- in v1 and the first one begins at position 6.
+in v1 and the first one begins at position 6.
 There is a match of a sequence ( 5 5 5 ) under the equivalence
- predicate one_half in v1 and the first one begins at position 15.
+predicate one_half in v1 and the first one begins at position 15.
 ```
 
 ## <a name="set_difference"></a>  set_difference
@@ -6713,17 +6961,23 @@ OutputIterator set_difference(
 
 ### <a name="parameters"></a>매개 변수
 
-*first1* 통합 하 고 정렬 된 두 소스 범위의 차이 나타내는 단일 범위로 두 개의 정렬 된 소스 범위 중 첫 번째 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first1*<br/>
+두 소스 범위의 차이를 나타내는 단일 범위로 통합하고 정렬할 두 개의 정렬된 소스 범위 중 첫 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last1* 통합 하 고 두 소스 범위의 차이 나타내는 단일 범위로 정렬 하나 다음 위치의 마지막 요소가 첫 번째에서 두 개의 정렬 된 소스 범위를 지정 하는 입력된 반복기입니다.
+*last1*<br/>
+두 소스 범위의 차이를 나타내는 단일 범위로 통합하고 정렬할 두 개의 정렬된 소스 범위 중 첫 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*first2* 통합 하 고 두 소스 범위의 차이 나타내는 단일 범위로 정렬 위치 첫 번째 요소에서 두 개의 연속 중 두 번째 정렬 된 소스 범위를 지정 하는 입력된 반복기입니다.
+*first2*<br/>
+두 소스 범위의 차이를 나타내는 단일 범위로 통합하고 정렬할 두 개의 연속 정렬된 소스 범위 중 두 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last2* 통합 하 고 두 소스 범위의 차이 나타내는 단일 범위로 정렬에서 하나 다음 위치의 마지막 요소 두 개의 연속 중 두 번째 정렬 된 소스 범위를 지정 하는 입력된 반복기입니다.
+*last2*<br/>
+두 소스 범위의 차이를 나타내는 단일 범위로 통합하고 정렬할 두 개의 연속 정렬된 소스 범위 중 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*결과* 하며 대상 범위에 있는 두 소스 범위에서 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기는 두 소스 범위의 차이 나타내는 정렬 된 단일 범위로 통합 수입니다.
+*결과*<br/>
+두 소스 범위의 차이를 나타내는 정렬된 단일 범위로 두 개의 소스 범위를 통합할 대상 범위에서 첫 번째 요소 위치의 주소를 지정하는 출력 반복기입니다.
 
-*comp* 하나의 요소가 다른 인스턴스보다 큰지를 의미를 정의 하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 가져와 첫 번째 요소가 두 번째 요소보다 작은 경우 **true** 를 반환하고, 그렇지 않은 경우 **false** 를 반환합니다.
+*comp*<br/>
+하나의 요소가 다른 요소보다 큰 의미를 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 가져와 첫 번째 요소가 두 번째 요소보다 작은 경우 **true** 를 반환하고, 그렇지 않은 경우 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -6887,17 +7141,22 @@ OutputIterator set_intersection(
 
 ### <a name="parameters"></a>매개 변수
 
-*first1* 통합 하 고 정렬 된 두 소스 범위의 교집합을 나타내는 단일 범위로 두 개의 정렬 된 소스 범위 중 첫 번째 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first1*<br/>
+두 소스 범위의 교집합을 나타내는 단일 범위로 통합하고 정렬할 두 개의 정렬된 소스 범위 중 첫 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last1* 통합 하 고 두 소스 범위의 교집합을 나타내는 단일 범위로 정렬 하나 다음 위치의 마지막 요소가 첫 번째에서 두 개의 정렬 된 소스 범위를 지정 하는 입력된 반복기입니다.
+*last1*<br/>
+두 소스 범위의 교집합을 나타내는 단일 범위로 통합하고 정렬할 두 개의 정렬된 소스 범위 중 첫 번째 범위에서 마지막 요소 하나 다음의 주소를 지정하는 입력 반복기입니다.
 
-*first2* 통합 하 고 두 소스 범위의 교집합을 나타내는 단일 범위로 정렬 위치 첫 번째 요소에서 두 개의 연속 중 두 번째 정렬 된 소스 범위를 지정 하는 입력된 반복기입니다.
+*first2*<br/>
+두 소스 범위의 교집합을 나타내는 단일 범위로 통합하고 정렬할 두 개의 연속 정렬된 소스 범위 중 두 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last2* 통합 하 고 두 소스 범위의 교집합을 나타내는 단일 범위로 정렬에서 하나 다음 위치의 마지막 요소 두 개의 연속 중 두 번째 정렬 된 소스 범위를 지정 하는 입력된 반복기입니다.
+*last2*<br/>
+두 소스 범위의 교집합을 나타내는 단일 범위로 통합하고 정렬할 두 개의 연속 정렬된 소스 범위 중 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
 **_** *결과* 하며 대상 범위에 있는 두 소스 범위에서 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기는 두 원본의 교집합을 나타내는 정렬 된 단일 범위로 통합 수 범위입니다.
 
-*comp* 하나의 요소가 다른 인스턴스보다 큰지를 의미를 정의 하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 가져와 첫 번째 요소가 두 번째 요소보다 작은 경우 **true** 를 반환하고, 그렇지 않은 경우 **false** 를 반환합니다.
+*comp*<br/>
+하나의 요소가 다른 요소보다 큰 의미를 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 가져와 첫 번째 요소가 두 번째 요소보다 작은 경우 **true** 를 반환하고, 그렇지 않은 경우 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -7036,7 +7295,7 @@ int main() {
 
 ```cpp
 template<class InputIterator1, class InputIterator2, class OutputIterator>
- OutputIterator set_symmetric_difference(
+OutputIterator set_symmetric_difference(
     InputIterator1 first1,
     InputIterator1 last1,
     InputIterator2 first2,
@@ -7056,17 +7315,22 @@ OutputIterator set_symmetric_difference(
 
 ### <a name="parameters"></a>매개 변수
 
-*first1* 통합 하 고 정렬 된 두 소스 범위의 대칭 차를 나타내는 단일 범위로 두 개의 정렬 된 소스 범위 중 첫 번째 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first1*<br/>
+두 소스 범위의 대칭차를 나타내는 단일 범위로 통합하고 정렬할 두 개의 정렬된 소스 범위 중 첫 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last1* 통합 하 고 두 소스 범위의 대칭 차를 나타내는 단일 범위로 정렬 하나 다음 위치의 마지막 요소가 첫 번째에서 두 개의 정렬 된 소스 범위를 지정 하는 입력된 반복기입니다.
+*last1*<br/>
+두 소스 범위의 대칭차를 나타내는 단일 범위로 통합하고 정렬할 두 개의 정렬된 소스 범위 중 첫 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*first2* 통합 하 고 두 소스 범위의 대칭 차를 나타내는 단일 범위로 정렬 위치 첫 번째 요소에서 두 개의 연속 중 두 번째 정렬 된 소스 범위를 지정 하는 입력된 반복기입니다.
+*first2*<br/>
+두 소스 범위의 대칭차를 나타내는 단일 범위로 통합하고 정렬할 두 개의 연속 정렬된 소스 범위 중 두 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last2* 통합 하 고 두 소스 범위의 대칭 차를 나타내는 단일 범위로 정렬에서 하나 다음 위치의 마지막 요소 두 개의 연속 중 두 번째 정렬 된 소스 범위를 지정 하는 입력된 반복기입니다.
+*last2*<br/>
+두 소스 범위의 대칭차를 나타내는 단일 범위로 통합하고 정렬할 두 개의 연속 정렬된 소스 범위 중 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
 **_** *결과* 하며 대상 범위에 있는 두 소스 범위에서 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기는 두 대칭 차를 나타내는 정렬 된 단일 범위로 통합 수 원본 범위입니다.
 
-*comp* 하나의 요소가 다른 인스턴스보다 큰지를 의미를 정의 하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 가져와 첫 번째 요소가 두 번째 요소보다 작은 경우 **true** 를 반환하고, 그렇지 않은 경우 **false** 를 반환합니다.
+*comp*<br/>
+하나의 요소가 다른 요소보다 큰 의미를 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 가져와 첫 번째 요소가 두 번째 요소보다 작은 경우 **true** 를 반환하고, 그렇지 않은 경우 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -7230,17 +7494,22 @@ OutputIterator set_union(
 
 ### <a name="parameters"></a>매개 변수
 
-*first1* 통합 하 고 정렬 된 두 소스 범위의 합집합을 나타내는 단일 범위로 두 개의 정렬 된 소스 범위 중 첫 번째 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first1*<br/>
+두 소스 범위의 합집합을 나타내는 단일 범위로 통합하고 정렬할 두 개의 정렬된 소스 범위 중 첫 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last1* 통합 하 고 두 소스 범위의 합집합을 나타내는 단일 범위로 정렬 하나 다음 위치의 마지막 요소가 첫 번째에서 두 개의 정렬 된 소스 범위를 지정 하는 입력된 반복기입니다.
+*last1*<br/>
+두 소스 범위의 합집합을 나타내는 단일 범위로 통합하고 정렬할 두 개의 정렬된 소스 범위 중 첫 번째 범위에서 마지막 요소 하나 다음의 주소를 지정하는 입력 반복기입니다.
 
-*first2* 통합 하 고 두 소스 범위의 합집합을 나타내는 단일 범위로 정렬 위치 첫 번째 요소에서 두 개의 연속 중 두 번째 정렬 된 소스 범위를 지정 하는 입력된 반복기입니다.
+*first2*<br/>
+두 소스 범위의 합집합을 나타내는 단일 범위로 통합하고 정렬할 두 개의 연속 정렬된 소스 범위 중 두 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last2* 통합 하 고 두 소스 범위의 합집합을 나타내는 단일 범위로 정렬에서 하나 다음 위치의 마지막 요소 두 개의 연속 중 두 번째 정렬 된 소스 범위를 지정 하는 입력된 반복기입니다.
+*last2*<br/>
+두 소스 범위의 합집합을 나타내는 단일 범위로 통합하고 정렬할 두 개의 연속 정렬된 소스 범위 중 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
 **_** *결과* 하며 대상 범위에 있는 두 소스 범위에서 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기는 두 소스 범위의 합집합을 나타내는 정렬 된 단일 범위로 통합 수입니다.
 
-*comp* 하나의 요소가 다른 인스턴스보다 큰지를 의미를 정의 하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 가져와 첫 번째 요소가 두 번째 요소보다 작은 경우 **true** 를 반환하고, 그렇지 않은 경우 **false** 를 반환합니다.
+*comp*<br/>
+하나의 요소가 다른 요소보다 큰 의미를 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 가져와 첫 번째 요소가 두 번째 요소보다 작은 경우 **true** 를 반환하고, 그렇지 않은 경우 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -7392,11 +7661,14 @@ void shuffle(RandomAccessIterator first,
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 를 섞으 (포함) 범위의 첫 번째 요소에 대 한 반복기입니다. `RandomAccessIterator` 및 `ValueSwappable`의 요구 사항을 충족해야 합니다.
+*first*<br/>
+순서를 섞으려는 범위 내 첫 번째 요소에 대한 반복기로, 이 요소를 포함합니다. `RandomAccessIterator` 및 `ValueSwappable`의 요구 사항을 충족해야 합니다.
 
-*마지막* 섞으, 배타적 범위에서 마지막 요소에 대 한 반복기입니다. `RandomAccessIterator` 및 `ValueSwappable`의 요구 사항을 충족해야 합니다.
+*last*<br/>
+순서를 섞으려는 범위 내 마지막 요소에 대한 반복기로, 이 요소는 제외됩니다. `RandomAccessIterator` 및 `ValueSwappable`의 요구 사항을 충족해야 합니다.
 
-*gen* 난수 생성기는는 `shuffle()` 함수 작업에 사용 됩니다. `UniformRandomNumberGenerator`의 요구 사항을 충족해야 합니다.
+*범용*<br/>
+`shuffle()` 함수가 연산에 사용하는 난수 생성기입니다. `UniformRandomNumberGenerator`의 요구 사항을 충족해야 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -7422,11 +7694,14 @@ template<class RandomAccessIterator, class Predicate>
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 정렬할 범위에서 첫 번째 요소 위치의 주소를 지정 된 임의 액세스 반복기입니다.
+*first*<br/>
+저장할 범위의 첫 번째 요소 위치를 주소 지정하는 임의 액세스 반복기입니다.
 
-*마지막* 정렬할 범위에서 마지막 요소 하나의 위치를 주소 지정을 임의 액세스 반복기입니다.
+*last*<br/>
+저장할 범위의 마지막 요소 하나 다음 위치를 주소 지정하는 임의 액세스 반복기입니다.
 
-*comp* 순서에 따라 연속적인 요소에 의해 충족 될 비교 조건을 정의 하는 사용자 정의 조건자 함수 개체입니다. 이 이진 조건자가 두 개의 인수를 받아서 반환 **true** 두 인수가 순서 대로 되어 있으면 및 **false** 그렇지 않은 경우. 이 비교 함수는 시퀀스의 요소 쌍에 대해 엄밀히 약한 순서를 적용해야 합니다. 자세한 내용은 [알고리즘](../standard-library/algorithms.md)을 참조하세요.
+*comp*<br/>
+순서에 따라 연속적인 요소에 대해 충족될 비교 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이 이진 조건자가 두 개의 인수를 받아서 반환 **true** 두 인수가 순서 대로 되어 있으면 및 **false** 그렇지 않은 경우. 이 비교 함수는 시퀀스의 요소 쌍에 대해 엄밀히 약한 순서를 적용해야 합니다. 자세한 내용은 [알고리즘](../standard-library/algorithms.md)을 참조하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -7523,11 +7798,14 @@ template<class RandomAccessIterator, class Predicate>
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 대상 힙에서 첫 번째 요소 위치의 주소를 지정 하는 임의 액세스 반복기입니다.
+*first*<br/>
+대상 힙에서 첫 번째 요소 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*마지막* 대상 힙의 마지막 요소 하나 위치의 주소를 지정 하는 임의 액세스 반복기입니다.
+*last*<br/>
+대상 힙의 마지막 요소 하나 다음 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*comp* 정의 하는 사용자 정의 조건자 함수 개체는 하나의 요소에 다른 노드보다 작은지 감지 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+한 요소가 다른 요소보다 작다는 의미를 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -7612,11 +7890,14 @@ BidirectionalIterator stable_partition(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 범위에서 첫 번째 요소 위치의 주소를 지정 하는 양방향 반복기 분할 되어야 합니다.
+*first*<br/>
+파티셔닝할 범위에서 첫 번째 요소 위치의 주소를 지정하는 양방향 반복기입니다.
 
-*마지막* 범위에서 마지막 요소 하나 위치의 주소를 지정 하는 양방향 반복기 분할 되어야 합니다.
+*last*<br/>
+파티셔닝할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 양방향 반복기입니다.
 
-*_Pred* 인 경우 요소를 분류를 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체입니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
+*_Pred*<br/>
+요소를 분류해야 할 경우 충족해야 할 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 조건자는 단일 인수를 받아서 **true** 또는 **false**를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -7679,7 +7960,7 @@ int main() {
 
 ```cpp
 template<class BidirectionalIterator>
- void stable_sort( BidirectionalIterator first, BidirectionalIterator last );
+void stable_sort( BidirectionalIterator first, BidirectionalIterator last );
 
 template<class BidirectionalIterator, class BinaryPredicate>
 void stable_sort(
@@ -7691,11 +7972,14 @@ void stable_sort(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 범위에서 첫 번째 요소 위치의 주소를 지정 하는 양방향 반복기 정렬 되어야 합니다.
+*first*<br/>
+정렬할 범위에서 첫 번째 요소 위치의 주소를 지정하는 양방향 반복기입니다.
 
-*마지막* 범위에서 마지막 요소 하나 위치의 주소를 지정 하는 양방향 반복기 정렬 되어야 합니다.
+*last*<br/>
+정렬할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 양방향 반복기입니다.
 
-*comp* 순서에 따라 연속적인 요소에 의해 충족 될 비교 조건을 정의 하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+순서에 따라 연속적인 요소에 대해 충족될 비교 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -7790,9 +8074,11 @@ template<class Type, size_t N>
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 첫 번째 재정의에서는 교환 내용이 있는 첫 번째 개체입니다. 두 번째 재정의에서는 내용이 있는 첫 번째 개체 배열이 교환됩니다.
+*left*<br/>
+첫 번째 재정의에서는 내용이 있는 첫 번째 개체가 교환됩니다. 두 번째 재정의에서는 내용이 있는 첫 번째 개체 배열이 교환됩니다.
 
-*오른쪽* 첫 번째 재정의에서는 교환 내용이 있는 두 번째 개체입니다. 두 번째 재정의에서는 내용이 있는 두 번째 개체 배열이 교환됩니다.
+*right*<br/>
+첫 번째 재정의에서는 내용이 있는 두 번째 개체가 교환됩니다. 두 번째 재정의에서는 내용이 있는 두 번째 개체 배열이 교환됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -7869,11 +8155,14 @@ ForwardIterator2 swap_ranges(
 
 ### <a name="parameters"></a>매개 변수
 
-*first1* 범위의 첫 번째 요소를 교환할 첫 번째 위치를 가리키는 정방향 반복기입니다.
+*first1*<br/>
+요소를 교환할 첫 번째 범위의 첫 번째 위치를 가리키는 정방향 반복기입니다.
 
-*last1* 지난 요소를 교환할 요소가 들어 있는 첫 번째 범위의 마지막 위치를 가리키는 정방향 반복기입니다.
+*last1*<br/>
+요소를 교환할 첫 번째 범위의 마지막 위치 하나 다음을 가리키는 정방향 반복기입니다.
 
-*first2* 요소가를 교환할 두 번째 범위의 첫 번째 위치를 가리키는 정방향 반복기입니다.
+*first2*<br/>
+요소를 교환할 두 번째 범위의 첫 번째 위치를 가리키는 정방향 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -7969,15 +8258,20 @@ OutputIterator transform(
 
 ### <a name="parameters"></a>매개 변수
 
-*first1* 작업을 수행할 첫 번째 소스 범위에 있는 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first1*<br/>
+작업을 수행할 첫 번째 소스 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last1* 첫 번째 소스 범위에서 마지막 요소 하나의 위치를 지정 하는 입력된 반복기에 연산을 수행 합니다.
+*last1*<br/>
+작업을 수행할 첫 번째 소스 범위에서 최종 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*first2* 작업을 수행할 두 번째 소스 범위에 있는 첫 번째 요소 위치의 주소를 지정 하는 입력된 반복기입니다.
+*first2*<br/>
+작업을 수행할 두 번째 소스 범위에서 첫 번째 요소의 위치를 주소 지정하는 입력 반복기입니다.
 
-*결과* 대상 범위에서 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기입니다.
+*결과*<br/>
+대상 범위의 첫 번째 요소의 위치를 주소 지정하는 출력 반복기입니다.
 
-*_Func* 첫 번째 소스 범위 또는 적용 되는 알고리즘의 두 번째 버전에 사용 되는 사용자 정의 (UD) 이항 함수 개체의 각 요소에 적용 되는 알고리즘의 첫 번째 버전에서 사용 되는 사용자 정의 단항 함수 개체 쌍으로 정방향 순서로 두 소스 범위에 있습니다.
+*_Func*<br/>
+첫 번째 소스 범위의 각 요소에 적용되는 알고리즘의 첫 번째 버전에서 사용되는 사용자 정의 단항 함수 개체 또는 두 개의 소스 범위에 정방향으로 쌍으로 적용되는 알고리즘의 두 번째 버전에서 사용되는 UD(사용자 정의) 이항 함수 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -8070,12 +8364,12 @@ int main()
 ```Output
 Original vector  v1 = ( -4 -3 -2 -1 0 1 2 ).
 The elements of the vector v1 multiplied by 2 in place gives:
- v1mod = ( -8 -6 -4 -2 0 2 4 ).
+v1mod = ( -8 -6 -4 -2 0 2 4 ).
 Multiplying the elements of the vector v1mod
- by the factor 5 & copying to v2 gives:
- v2 = ( -40 -30 -20 -10 0 10 20 ).
+by the factor 5 & copying to v2 gives:
+v2 = ( -40 -30 -20 -10 0 10 20 ).
 Multiplying elements of the vectors v1mod and v2 pairwise gives:
- v3 = ( 320 180 80 20 0 20 80 ).
+v3 = ( 320 180 80 20 0 20 80 ).
 ```
 
 ## <a name="unique"></a>  unique
@@ -8098,11 +8392,14 @@ template<class ForwardIterator, class Predicate>
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 중복 제거를 위해 검색할 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first*<br/>
+중복 제거를 위해 검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*마지막* 하나 다음 위치의 마지막 요소를 검색 하 여 중복 제거에 대 한 범위에서 주소를 지정 하는 정방향 반복기입니다.
+*last*<br/>
+중복 제거를 위해 검색할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*Comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+두 요소가 같은 것으로 간주되려면 충족해야 하는 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -8201,10 +8498,10 @@ int main()
 ```Output
 Vector v1 is ( 5 -5 5 -5 5 -5 5 -5 4 4 4 4 7 ).
 Removing adjacent duplicates from vector v1 gives
- ( 5 -5 5 -5 5 -5 5 -5 4 7 ).
+( 5 -5 5 -5 5 -5 5 -5 4 7 ).
 Removing adjacent duplicates from vector v1 under the
   binary predicate mod_equal gives
- ( 5 4 7 ).
+( 5 4 7 ).
 Removing adjacent elements satisfying the binary
   predicate mod_equal from vector v1 gives ( 5 7 ).
 ```
@@ -8228,13 +8525,17 @@ OutputIterator unique_copy( InputIterator first,
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 복사할 소스 범위에서 첫 번째 요소 위치의 주소를 지정 하는 정방향 반복기입니다.
+*first*<br/>
+복사할 소스 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*마지막* 복사할 소스 범위에서 마지막 요소 하나 위치의 주소를 지정 하는 정방향 반복기입니다.
+*last*<br/>
+복사할 소스 범위 내 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*결과* 제거 연속 중복 된 복사본을 수신 하는 대상 범위에서 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기입니다.
+*결과*<br/>
+연속 중복 항목이 제거된 복사본을 수신하는 대상 범위에서 첫 번째 요소 위치의 주소 지정하는 출력 반복기입니다.
 
-*Comp* 두 요소에서 수행 하려는 경우 충족 해야 할 조건을 정의 하는 사용자 정의 조건자 함수 개체와 동일 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+두 요소가 같은 것으로 간주되려면 충족해야 하는 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -8344,13 +8645,17 @@ template<class ForwardIterator, class Type, class Predicate>
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 검색할 범위에서 첫 번째 요소의 위치입니다.
+*first*<br/>
+검색할 범위에서 첫 번째 요소의 위치입니다.
 
-*마지막* 하나 다음 위치의 마지막 요소를 검색할 범위에서.
+*last*<br/>
+검색할 범위에서 마지막 요소 하나 다음의 위치입니다.
 
-*값* 반복기가 주소를 지정 하는 요소 값을 기준으로 초과 해야 하는 정렬된 된 범위에서 값을 반환 합니다.
+*값*<br/>
+반환된 반복기로 주소가 지정된 요소의 값이 초과해야 하는 정렬된 범위의 값입니다.
 
-*comp* 정의 하는 사용자 정의 조건자 함수 개체는 하나의 요소에 다른 노드보다 작은지 감지 합니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
+*comp*<br/>
+한 요소가 다른 요소보다 작다는 의미를 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
 

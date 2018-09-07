@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb03b35ed792bda7c506fd06d6102dda83c768e6
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: f868a6f2ec63e38573d49a1dc4b3b7a122f4d8f2
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959273"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100224"
 ---
 # <a name="mersennetwisterengine-class"></a>mersenne_twister_engine 클래스
 
@@ -39,23 +39,32 @@ class mersenne_twister_engine;
 
 ### <a name="parameters"></a>매개 변수
 
-*UIntType* 부호 없는 정수 결과 형식입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*UIntType*<br/>
+부호가 없는 정수 결과 형식입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-*W* **단어 크기**합니다. 상태 시퀀스의 각 단어 크기입니다(비트). **사전 조건**: `2u < W ≤ numeric_limits<UIntType>::digits`
+*W*<br/>
+**단어 크기**. 상태 시퀀스의 각 단어 크기입니다(비트). **사전 조건**: `2u < W ≤ numeric_limits<UIntType>::digits`
 
-*N* **상태 크기**합니다. 상태 시퀀스의 요소(값) 수입니다.
+*N*<br/>
+**상태 크기**. 상태 시퀀스의 요소(값) 수입니다.
 
-*M* **시프트 크기**합니다. 각 트위스트 중 건너 뛸 요소의 수입니다. **사전 조건**: `0 < M ≤ N`
+*M*<br/>
+**시프트 크기**. 각 트위스트 중 건너 뛸 요소의 수입니다. **사전 조건**: `0 < M ≤ N`
 
-*R* **마스크 비트**합니다. **사전 조건**: `R ≤ W`
+*R*<br/>
+**마스크 비트**. **사전 조건**: `R ≤ W`
 
-*A* **XOR 마스크**합니다. **사전 조건**: `A ≤ (1u<<W) - 1u`
+*A*<br/>
+**XOR 마스크**. **사전 조건**: `A ≤ (1u<<W) - 1u`
 
-*U*, *S*합니다 *T*를 *L* **Tempering shift 매개 변수**합니다. 암호화(조작)할 때 시프트 값으로 사용됩니다. 사전 조건: `U,S,T,L ≤ W`
+*U*하십시오 *S*합니다 *T*, *L*<br/>
+**시프트 조작 매개 변수**. 암호화(조작)할 때 시프트 값으로 사용됩니다. 사전 조건: `U,S,T,L ≤ W`
 
-*D*하십시오 *B*를 *C* **Tempering 비트 마스크 매개 변수**합니다. 암호화(조작)할 때 비트 마스크 값으로 사용됩니다. 사전 조건: `D,B,C ≤ (1u<<W) - 1u`
+*D*하십시오 *B*, *C*<br/>
+**비트 마스크 조작 매개 변수**. 암호화(조작)할 때 비트 마스크 값으로 사용됩니다. 사전 조건: `D,B,C ≤ (1u<<W) - 1u`
 
-*F* **초기화 승수**합니다. 시퀀스 초기화를 지원하는 데 사용됩니다. 사전 조건: `F ≤ (1u<<W) - 1u`
+*F*<br/>
+**초기화 승수**. 시퀀스 초기화를 지원하는 데 사용됩니다. 사전 조건: `F ≤ (1u<<W) - 1u`
 
 ## <a name="members"></a>멤버
 
@@ -102,7 +111,7 @@ typedef mersenne_twister_engine<unsigned long long, 64, 312, 156,
 
 메르센 트위스터 알고리즘에 대한 자세한 내용은 Wikipedia 문서 [Mersenne twister](http://go.microsoft.com/fwlink/p/?linkid=402356)(메르센 트위스터)를 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 코드 예제는 [\<random>](../standard-library/random.md)을 참조하세요.
 

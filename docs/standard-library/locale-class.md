@@ -31,12 +31,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80cb3dd5d60665fbfb510fb2fddf94f17ef9f171
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 7fc38fe11fa267fe4f14d149d883da4ad5ec02e0
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963796"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100756"
 ---
 # <a name="locale-class"></a>locale 클래스
 
@@ -251,7 +251,7 @@ C 로캘에 대한 참조입니다.
 
 클래식 C 로캘은 국제화되지 않은 프로그램에서 암시적으로 사용되는 표준 C 라이브러리 내의 영어(미국) ASCII 로캘입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // locale_classic.cpp
@@ -301,13 +301,14 @@ locale combine(const locale& Loc) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*Loc* 대상 로캘에 삽입할 패싯을 포함 하는 로캘입니다.
+*Loc*<br/>
+대상 로캘에 삽입할 패싯을 포함하는 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
 
 대체 하거나 추가 하는 로캘 개체를 반환 하는 멤버 함수  **\*이** 패싯 `Facet` 나오는 *Loc*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // locale_combine.cpp
@@ -369,7 +370,8 @@ static locale global(const locale& Loc);
 
 ### <a name="parameters"></a>매개 변수
 
-*Loc* 프로그램에서 기본 로캘로 사용할 로캘입니다.
+*Loc*<br/>
+프로그램에서 기본 로캘로 사용할 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -379,7 +381,7 @@ static locale global(const locale& Loc);
 
 프로그램이 시작될 때는 전역 로캘이 클래식 로캘과 같습니다. `global()` 함수는 `setlocale( LC_ALL, loc.name. c_str())`을 호출하여 표준 C 라이브러리에서 일치하는 로캘을 설정합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // locale_global.cpp
@@ -436,15 +438,20 @@ locale(const locale& Loc, const Facet* Fac);
 
 ### <a name="parameters"></a>매개 변수
 
-*Locname* 로캘 이름입니다.
+*Locname*<br/>
+로캘 이름입니다.
 
-*Loc* 새 로캘을 생성할 때 복사 되는 로캘입니다.
+*Loc*<br/>
+새 로캘을 생성할 때 복사되는 로캘입니다.
 
-*다른* 범주를 선택할 로캘입니다.
+*기타*<br/>
+범주를 선택할 로캘입니다.
 
-*Cat* 생성 된 로캘로 대체 될 범주입니다.
+*Cat*<br/>
+생성된 로캘로 대체될 범주입니다.
 
-*Fac* 생성 된 로캘로 대체 될 패싯입니다.
+*Fac*<br/>
+생성된 로캘로 대체될 패싯입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -466,7 +473,7 @@ locale(const locale& Loc, const Facet* Fac);
 
 로캘 이름 *Locname* 가 null 포인터 또는 그렇지 않은 경우 잘못 된 경우 함수가 throw [runtime_error](../standard-library/runtime-error-class.md)합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // locale_locale.cpp
@@ -518,7 +525,7 @@ string name() const;
 
 로캘의 이름을 지정하는 문자열입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // locale_name.cpp
@@ -555,7 +562,8 @@ bool operator!=(const locale& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 같지 않음을 테스트할 로캘 중 하나입니다.
+*right*<br/>
+같지 않음을 테스트할 로캘 중 하나입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -565,7 +573,7 @@ bool operator!=(const locale& right) const;
 
 두 로캘은 두 로캘이 동일한 로캘이거나, 한 로캘이 다른 로캘의 복사본이거나, 이름이 동일한 경우 같습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // locale_op_ne.cpp
@@ -600,9 +608,9 @@ int main( )
 
 ```Output
 locales loc1 (German_Germany.1252) and
- loc2 (German_Germany.1252) are equal.
+loc2 (German_Germany.1252) are equal.
 locales loc1 (German_Germany.1252) and
- loc3 (English_United States.1252) are not equal.
+loc3 (English_United States.1252) are not equal.
 ```
 
 ## <a name="op_call"></a>  locale::operator()
@@ -618,9 +626,11 @@ bool operator()(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 왼쪽된 문자열입니다.
+*left*<br/>
+왼쪽 문자열입니다.
 
-*오른쪽* 오른쪽 문자열입니다.
+*right*<br/>
+오른쪽 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -644,7 +654,7 @@ return (fac.compare(left.begin(), left.end(), right.begin(), right.end()) < 0);
 
 따라서 로캘 개체를 함수 개체로 사용할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // locale_op_compare.cpp
@@ -685,7 +695,8 @@ bool operator==(const locale& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 같은지 테스트할 로캘 중 하나입니다.
+*right*<br/>
+같은지 여부를 테스트할 로캘 중 하나입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -695,7 +706,7 @@ bool operator==(const locale& right) const;
 
 두 로캘은 두 로캘이 동일한 로캘이거나, 한 로캘이 다른 로캘의 복사본이거나, 이름이 동일한 경우 같습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // locale_op_eq.cpp
@@ -734,9 +745,9 @@ int main( )
 
 ```Output
 locales loc1 (German_Germany.1252)
- and loc2 (German_Germany.1252) are equal.
+and loc2 (German_Germany.1252) are equal.
 locales loc1 (German_Germany.1252)
- and loc3 (English_United States.1252) are not equal.
+and loc3 (English_United States.1252) are not equal.
 ```
 
 ## <a name="see-also"></a>참고자료

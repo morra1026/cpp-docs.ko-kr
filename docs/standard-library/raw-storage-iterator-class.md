@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 470fb497bb52fa51fec06ac0edb3e1996aa1e5e8
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 527213eb8e696caa97e307c643929118dd954965
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208528"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101017"
 ---
 # <a name="rawstorageiterator-class"></a>raw_storage_iterator 클래스
 
@@ -40,9 +40,11 @@ class raw_storage_iterator
 
 ### <a name="parameters"></a>매개 변수
 
-*OutputIterator* 저장 되는 개체에 대 한 출력 반복기를 지정 합니다.
+*OutputIterator*<br/>
+저장되는 개체에 대한 출력 반복기를 지정합니다.
 
-*형식* 저장소가 할당 되는 개체의 형식입니다.
+*Type*<br/>
+저장소를 할당할 개체 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -119,7 +121,7 @@ raw_storage_iterator<ForwardIterator, Type>& operator*();
 
 에 대 한 요구 사항을 `ForwardIterator` 사항은 원시 저장소 반복기 식만 충족 해야 합니다 \* *ii* = *t* 잘못 사용할 수 있으며 한다는 **연산자** 또는 `operator=` 자체적으로 합니다. 이 구현의 구성원 연산자 반환  **\*이**되도록 [연산자 =](#op_eq)(**constType**&) 식에서 실제 저장을 수행할 수 있습니다 와 같은 \* *ptr* = `val`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // raw_storage_iterator_op_deref.cpp
@@ -159,9 +161,9 @@ int main( void)
 {
    Int *pInt = ( Int* ) malloc( sizeof( Int ) );
    memset( pInt, 0, sizeof( Int ) ); // Set bIsConstructed to false;
- *pInt = 5;
+*pInt = 5;
    raw_storage_iterator< Int*, Int > it( pInt );
- *it = 5;
+*it = 5;
 }
 \* Output:
 Not constructed.
@@ -181,7 +183,8 @@ raw_storage_iterator<ForwardIterator, Type>& operator=(
 
 ### <a name="parameters"></a>매개 변수
 
-`val` 형식의 개체의 값을 `Type` 메모리에 삽입 됩니다.
+*val*<br/>
+형식의 개체의 값을 `Type` 메모리에 삽입 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -193,7 +196,7 @@ raw_storage_iterator<ForwardIterator, Type>& operator=(
 
 대입 연산자는 placement new 식 **new** ( ( `void` \*)&\* **first**) **Type**( `val`)을 평가하여 저장된 반복기 값을 먼저 사용해 출력 시퀀스에서 다음 개체를 생성합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // raw_storage_iterator_op_assign.cpp
@@ -233,7 +236,7 @@ int main( void )
 *pInt = 5;
 
    raw_storage_iterator<Int*, Int> it( pInt );
- *it = 5;
+*it = 5;
 }
 \* Output:
 Not constructed.
@@ -266,7 +269,7 @@ raw_storage_iterator<ForwardIterator, Type> operator++(int);
 
 생성자 저장소 `first` 는 출력 반복기 개체로 반환 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // raw_storage_iterator_op_incr.cpp
@@ -282,7 +285,7 @@ int main( void )
    int *pInt = new int[5];
    std::raw_storage_iterator<int*,int> it( pInt );
    for ( int i = 0; i < 5; i++, it++ ) {
- *it = 2 * i;
+*it = 2 * i;
 };
 
    for ( int i = 0; i < 5; i++ ) cout << "array " << i << " = " << pInt[i] << endl;;
@@ -308,9 +311,10 @@ explicit raw_storage_iterator(ForwardIterator first);
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 기반이 되 하는 정방향 반복기를 `raw_storage_iterator` 생성 되 고 있는 개체입니다.
+*first*<br/>
+생성 중인 `raw_storage_iterator`의 기준으로 사용할 정방향 반복기입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // raw_storage_iterator_ctor.cpp
