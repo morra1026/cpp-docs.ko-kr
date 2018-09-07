@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e199df62aa6bc0c3dc670bd2951a7af2667e7faa
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9eccefff291dc509f846bce951cfe9508834876e
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758380"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103881"
 ---
 # <a name="platformcollectionsmap-class"></a>Platform::Collections::Map 클래스
 
@@ -46,17 +46,16 @@ ref class Map sealed;
 
 ### <a name="parameters"></a>매개 변수
 
-*K*  
- 키/값 쌍의 키 형식입니다.
+*K*<br/>
+키/값 쌍의 키 형식입니다.
 
-*V*  
+*V*<br/>
 키/값 쌍의 값 형식입니다.
 
-*C*  
+*C*<br/>
 두 요소 값을 정렬 키로 비교하여 맵에서 해당 상대 순서를 확인할 수 있는 함수 개체를 제공하는 형식입니다. 기본적으로 [std:: less\<K >](../standard-library/less-struct.md)합니다.
 
-*__is_valid_winrt_type()*  
-유형의 유효성을 검사 하는 컴파일러에서 생성 된 함수 *K* 하 고 *V* 형식을 Map에 저장할 수 없을 경우 친숙 한 오류 메시지를 제공 합니다.
+*__is_valid_winrt_type()* 형식의 유효성을 검사 하는 컴파일러에서 생성 된 함수 *K* 하 고 *V* 형식을 Map에 저장할 수 없을 경우 친숙 한 오류 메시지를 제공 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -169,7 +168,7 @@ bool HasKey(K key);
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 Map 요소를 찾는 데 사용되는 키입니다. 유형의 *키* 형식 이름 *K*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -188,10 +187,10 @@ virtual bool Insert(K key, V value);
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 키-값 쌍의 키 부분입니다. 유형의 *키* 형식 이름 *K*합니다.
 
-*값*  
+*값*<br/>
 키-값 쌍의 값 부분입니다. 유형의 *값* 형식 이름 *V*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -210,7 +209,7 @@ V Lookup(K key);
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 지도에서 요소를 찾는 데 사용되는 키입니다. 유형의 *키* 형식 이름 *K*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -240,19 +239,19 @@ Map(
 
 ### <a name="parameters"></a>매개 변수
 
-*InIt*  
+*InIt*<br/>
 현재 Map의 형식 이름입니다.
 
-*comp*  
+*comp*<br/>
 두 요소 값을 정렬 키로 비교하여 맵에서 해당 상대 순서를 확인할 수 있는 함수 개체를 제공하는 형식입니다.
 
-*m*  
+*m*<br/>
 참조 또는 [Lvalue 및 Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) 에 `map Class` 현재 Map를 초기화 하는 데 사용 되는 합니다.
 
-*first*  
+*first*<br/>
 현재 Map를 초기화하는 데 사용되는 요소 범위에서 첫 번째 요소의 입력 반복기입니다.
 
-*last*  
+*last*<br/>
 현재 Map를 초기화하는 데 사용되는 요소 범위 다음의 첫 번째 요소의 입력 반복기입니다.
 
 ## <a name="mapchanged"></a>  Map:: mapchanged 이벤트
@@ -285,7 +284,7 @@ virtual void Remove(K key);
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 키-값 쌍의 키 부분입니다. 유형의 *키* 형식 이름 *K*합니다.
 
 ## <a name="size"></a>  Map:: size 메서드
@@ -304,5 +303,5 @@ Map의 요소 수입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[플랫폼 Namespace](platform-namespace-c-cx.md)  
-[C + + Windows 런타임 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)  
+[플랫폼 Namespace](platform-namespace-c-cx.md)<br/>
+[C + + Windows 런타임 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

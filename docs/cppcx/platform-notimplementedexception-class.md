@@ -16,33 +16,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee6e30b4f55b5d87ee5b1f67d39d3cc96932f065
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8ac52615a9cc00a3fbfdb253e44c7ce5d239009a
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760762"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103689"
 ---
 # <a name="platformnotimplementedexception-class"></a>Platform::NotImplementedException 클래스
-인터페이스 멤버가 파생된 형식으로 구현되지 않은 경우 throw됩니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-public ref class NotImplementedException : COMException,    IException,    IPrintable,    IEquatable  
-```  
-  
-### <a name="remarks"></a>설명  
- 자세한 내용은 [COMException](../cppcx/platform-comexception-class.md) 클래스를 참조하세요.  
-  
-### <a name="requirements"></a>요구 사항  
- **지원 되는 최소 클라이언트:** Windows 8  
-  
- **지원 되는 최소 서버:** Windows Server 2012  
-  
- **네임스페이스:** Platform  
-  
- **메타데이터:** platform.winmd  
-  
-## <a name="see-also"></a>참고 항목  
- [Platform::COMException 클래스](../cppcx/platform-comexception-class.md)
+
+인터페이스 멤버가 파생된 형식으로 구현되지 않은 경우 throw됩니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+public ref class NotImplementedException : COMException,    IException,    IPrintable,    IEquatable
+```
+
+### <a name="remarks"></a>설명
+
+자세한 내용은 [COMException](../cppcx/platform-comexception-class.md) 클래스를 참조하세요.
+
+### <a name="requirements"></a>요구 사항
+
+**지원 되는 최소 클라이언트:** Windows 8
+
+**지원 되는 최소 서버:** Windows Server 2012
+
+**네임스페이스:** Platform
+
+**메타데이터:** platform.winmd
+
+## <a name="see-also"></a>참고 항목
+
+[Platform::COMException 클래스](../cppcx/platform-comexception-class.md)
