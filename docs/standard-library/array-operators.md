@@ -13,12 +13,12 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: c8f46282-f179-4909-9a01-639cb8e18c27
-ms.openlocfilehash: 782acd7fda671d84252ab226d095fe21c75645bf
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 4c4db60d3573629447bbf675c408586feec61f12
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965460"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107129"
 ---
 # <a name="ltarraygt-operators"></a>&lt;array&gt; 연산자
 
@@ -42,19 +42,23 @@ bool operator!=(
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty* 는 요소의 형식입니다.
+*Ty*<br/>
+요소의 형식입니다.
 
-*N* 배열의 크기입니다.
+*N*<br/>
+배열의 크기입니다.
 
-*왼쪽* 비교할 왼쪽된 컨테이너입니다.
+*left*<br/>
+비교할 왼쪽 컨테이너입니다.
 
-*오른쪽* 비교할 오른쪽 컨테이너입니다.
+*right*<br/>
+비교할 오른쪽 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
 
 템플릿 함수가 `!(left == right)`을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__array__operator_ne.cpp
@@ -111,19 +115,23 @@ bool operator<(
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty* 는 요소의 형식입니다.
+*Ty*<br/>
+요소의 형식입니다.
 
-*N* 배열의 크기입니다.
+*N*<br/>
+배열의 크기입니다.
 
-*왼쪽* 비교할 왼쪽된 컨테이너입니다.
+*left*<br/>
+비교할 왼쪽 컨테이너입니다.
 
-*오른쪽* 비교할 오른쪽 컨테이너입니다.
+*right*<br/>
+비교할 오른쪽 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
 
 [array 클래스](../standard-library/array-class-stl.md) 템플릿 클래스의 두 개체를 비교하기 위한 템플릿 함수 오버로드 `operator<`입니다. 함수에서 `lexicographical_compare(left.begin(), left.end(), right.begin())`을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__array__operator_lt.cpp
@@ -181,19 +189,23 @@ bool operator<=(
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty* 는 요소의 형식입니다.
+*Ty*<br/>
+요소의 형식입니다.
 
-*N* 배열의 크기입니다.
+*N*<br/>
+배열의 크기입니다.
 
-*왼쪽* 비교할 왼쪽된 컨테이너입니다.
+*left*<br/>
+비교할 왼쪽 컨테이너입니다.
 
-*오른쪽* 비교할 오른쪽 컨테이너입니다.
+*right*<br/>
+비교할 오른쪽 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
 
 템플릿 함수가 `!(right < left)`을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__array__operator_le.cpp
@@ -251,19 +263,23 @@ bool operator==(
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty* 는 요소의 형식입니다.
+*Ty*<br/>
+요소의 형식입니다.
 
-*N* 배열의 크기입니다.
+*N*<br/>
+배열의 크기입니다.
 
-*왼쪽* 비교할 왼쪽된 컨테이너입니다.
+*left*<br/>
+비교할 왼쪽 컨테이너입니다.
 
-*오른쪽* 비교할 오른쪽 컨테이너입니다.
+*right*<br/>
+비교할 오른쪽 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
 
 [array 클래스](../standard-library/array-class-stl.md) 템플릿 클래스의 두 개체를 비교하기 위한 템플릿 함수 오버로드 `operator==`입니다. 함수에서 `equal(left.begin(), left.end(), right.begin())`을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__array__operator_eq.cpp
@@ -321,19 +337,23 @@ bool operator>(
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty* 는 요소의 형식입니다.
+*Ty*<br/>
+요소의 형식입니다.
 
-*N* 배열의 크기입니다.
+*N*<br/>
+배열의 크기입니다.
 
-*왼쪽* 비교할 왼쪽된 컨테이너입니다.
+*left*<br/>
+비교할 왼쪽 컨테이너입니다.
 
-*오른쪽* 비교할 오른쪽 컨테이너입니다.
+*right*<br/>
+비교할 오른쪽 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
 
 템플릿 함수가 `(right < left)`을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__array__operator_gt.cpp
@@ -391,19 +411,23 @@ bool operator>=(
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty* 는 요소의 형식입니다.
+*Ty*<br/>
+요소의 형식입니다.
 
-*N* 배열의 크기입니다.
+*N*<br/>
+배열의 크기입니다.
 
-*왼쪽* 비교할 왼쪽된 컨테이너입니다.
+*left*<br/>
+비교할 왼쪽 컨테이너입니다.
 
-*오른쪽* 비교할 오른쪽 컨테이너입니다.
+*right*<br/>
+비교할 오른쪽 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
 
 템플릿 함수가 `!(left < right)`을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__array__operator_ge.cpp

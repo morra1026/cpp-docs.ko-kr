@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a76266714a462837ce8c919392abde8293af8d86
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: af4f0307823011e4c32ae6b08e18b4cef86e05db
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43684723"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103255"
 ---
 # <a name="complex-class"></a>complex 클래스
 
@@ -108,11 +108,14 @@ constexpr complex(
 
 ### <a name="parameters"></a>매개 변수
 
-*_RealVal* 생성 되 고 있는 복소수를 초기화 하는 데 사용 되는 실수부의 값입니다.
+*_RealVal*<br/>
+생성되고 있는 복소수를 초기화하는데 사용되는 실수 부분의 값입니다.
 
-*_ImagVal* 생성 되 고 있는 복소수를 초기화 하는 데 허수 부분의 값입니다.
+*_ImagVal*<br/>
+생성되고 있는 복소수를 초기화하는데 사용되는 허수 부분의 값입니다.
 
-*complexNum* 복소수의 실수부와 허수부은 생성 되 고 있는 복소수를 초기화 하는 데 사용 됩니다.
+*complexNum*<br/>
+해당 실수 및 허수 부분이 생성되고 있는 복소수를 초기화하는데 사용되는 복소수입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -187,7 +190,8 @@ T imag(const T& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 복소수의 허수 값이 추출 합니다.
+*right*<br/>
+허수 값을 추출할 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -243,7 +247,8 @@ complex<Type>& operator*=(const complex<Type>& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 복소수 이거나 대상 복소수의 매개 변수와 동일한 형식입니다.
+*right*<br/>
+복소수 또는 대상 복소수의 매개 변수와 같은 형식의 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -326,7 +331,8 @@ complex<Type>& operator+=(const complex<Type>& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 복소수 이거나 대상 복소수의 매개 변수와 동일한 형식입니다.
+*right*<br/>
+복소수 또는 대상 복소수의 매개 변수와 같은 형식의 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -400,7 +406,7 @@ The left-side complex number is cl1 = (3,4)
 The right-side complex number is cr1 = (2,-1)
 The sum of the two complex numbers is: cs1 = cl1 + cr1 = (5,3)
 The complex number cr1 added to the complex number cl1 is:
- cl1 += cr1 = (5,3)
+cl1 += cr1 = (5,3)
 The modulus of cl1 is: 5.83095
 The argument of cl1 is: 0.54042 radians, which is 30.9638 degrees.
 
@@ -408,7 +414,7 @@ The left-side complex number is cl2 = (-2,4)
 The right-side complex number is cr2 = 5
 The sum of the two complex numbers is: cs2 = cl2 + cr2 = (3,4)
 The complex number cr2 added to the complex number cl2 is:
- cl2 += cr2 = (3,4)
+cl2 += cr2 = (3,4)
 The modulus of cl2 is: 5
 The argument of cl2 is: 0.927295 radians, which is 53.1301 degrees.
 ```
@@ -428,9 +434,11 @@ complex<Type>& operator-=(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum* 대상 복소수에서 뺄 복소수입니다.
+*complexNum*<br/>
+대상 복소수에서 뺄 복소수입니다.
 
-*_RealPart* 대상 복소수에서 뺄 실수입니다.
+*_RealPart*<br/>
+대상 복소수에서 뺄 실수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -503,18 +511,18 @@ int main( )
 The left-side complex number is cl1 = (3,4)
 The right-side complex number is cr1 = (2,-1)
 The difference between the two complex numbers is:
- cs1 = cl1 - cr1 = (1,5)
+cs1 = cl1 - cr1 = (1,5)
 Complex number cr1 subtracted from complex number cl1 is:
- cl1 -= cr1 = (1,5)
+cl1 -= cr1 = (1,5)
 The modulus of cl1 is: 5.09902
 The argument of cl1 is: 1.3734 radians, which is 78.6901 degrees.
 
 The left-side complex number is cl2 = (2,4)
 The right-side complex number is cr2 = 5
 The difference between the two complex numbers is:
- cs2 = cl2 - cr2 = (-3,4)
+cs2 = cl2 - cr2 = (-3,4)
 Complex number cr2 subtracted from complex number cl2 is:
- cl2 -= cr2 = (-3,4)
+cl2 -= cr2 = (-3,4)
 The modulus of cl2 is: 5
 The argument of cl2 is: 2.2143 radians, which is 126.87 degrees.
 ```
@@ -534,9 +542,11 @@ complex<Type>& operator/=(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum* 대상 복소수에서 뺄 복소수입니다.
+*complexNum*<br/>
+대상 복소수에서 뺄 복소수입니다.
 
-*_RealPart* 대상 복소수에서 뺄 실수입니다.
+*_RealPart*<br/>
+대상 복소수에서 뺄 실수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -634,7 +644,8 @@ complex<Type>& operator=(const Type& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 복소수 이거나 대상 복소수의 매개 변수와 동일한 형식입니다.
+*right*<br/>
+복소수 또는 대상 복소수의 매개 변수와 같은 형식의 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -666,7 +677,7 @@ int main( )
 
    cl1  = cr1;
    cout << "The complex number cr1 assigned to the complex number cl1 is:"
-        << "\n cl1 = cr1 = " << cl1 << endl;
+        << "\ncl1 = cr1 = " << cl1 << endl;
 
    // Example of the second member function
    // type double assigned to type complex<double>
@@ -677,11 +688,11 @@ int main( )
 
    cl2 = cr2;
    cout << "The complex number cr2 assigned to the complex number cl2 is:"
-        << "\n cl2 = cr2 = " << cl2 << endl;
+        << "\ncl2 = cr2 = " << cl2 << endl;
 
    cl2 = complex<double>(3.0, 4.0);
    cout << "The complex number (3, 4) assigned to the complex number cl2 is:"
-        << "\n cl2 = " << cl2 << endl;
+        << "\ncl2 = " << cl2 << endl;
 }
 ```
 
@@ -689,13 +700,13 @@ int main( )
 The left-side complex number is cl1 = (3,4)
 The right-side complex number is cr1 = (2,-1)
 The complex number cr1 assigned to the complex number cl1 is:
- cl1 = cr1 = (2,-1)
+cl1 = cr1 = (2,-1)
 The left-side complex number is cl2 = (-2,4)
 The right-side complex number is cr2 = 5
 The complex number cr2 assigned to the complex number cl2 is:
- cl2 = cr2 = (5,0)
+cl2 = cr2 = (5,0)
 The complex number (3, 4) assigned to the complex number cl2 is:
- cl2 = (3,4)
+cl2 = (3,4)
 ```
 
 ## <a name="real"></a>  complex::real
@@ -711,7 +722,8 @@ T real(const T& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 복소수의 실제 값을 추출 합니다.
+*right*<br/>
+실수 값을 추출할 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 

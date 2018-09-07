@@ -28,12 +28,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ca8621067c851b5a1e107eb16800d546562fbb6
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3cfafc2c17ef804cb8d87c1189c8a7f3163d3c46
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959936"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104136"
 ---
 # <a name="function-class"></a>function 클래스
 
@@ -89,9 +89,11 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*Fty* 래핑할 함수 형식입니다.
+*Fty*<br/>
+래핑할 함수 형식입니다.
 
-*Ax* 할당자 함수입니다.
+*Ax*<br/>
+할당자 함수입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -164,11 +166,14 @@ template <class Fx, class Alloc>
 
 ### <a name="parameters"></a>매개 변수
 
-*_Func* 호출 가능 개체입니다.
+*_Func*<br/>
+호출 가능 개체입니다.
 
-*_Fnref* 호출 가능 개체가 포함 된 참조 래퍼입니다.
+*_Fnref*<br/>
+호출 가능 개체가 포함된 참조 래퍼입니다.
 
-*Ax* 할당자 개체입니다.
+*Ax*<br/>
+할당자 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -199,23 +204,29 @@ template <class Fx, class Alloc>
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 복사할 함수 개체입니다.
+*right*<br/>
+복사할 함수 개체입니다.
 
-*Fx* 호출 가능 개체의 형식입니다.
+*Fx*<br/>
+호출 가능 개체의 형식입니다.
 
-*_Func* 래핑할 호출 가능 개체입니다.
+*_Func*<br/>
+래핑할 호출 가능 개체입니다.
 
-*Alloc* 할당자 유형입니다.
+*할당*<br/>
+할당자 형식입니다.
 
-*Ax* 할당자입니다.
+*Ax*<br/>
+할당자입니다.
 
-*_Fnref* 래핑할 호출 가능 개체 참조입니다.
+*_Fnref*<br/>
+래핑할 호출 가능 개체 참조입니다.
 
 ### <a name="remarks"></a>설명
 
 처음 두 개의 생성자는 빈 `function` 개체를 생성합니다. 다음 세 개의 생성자는 피연산자로 전달된 호출 가능 개체를 포함하는 `function` 개체를 생성합니다. 마지막 두 개의 생성자는 할당자 개체 Ax를 사용하여 저장소를 할당합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__functional__function_function.cpp
@@ -297,7 +308,7 @@ operator unspecified();
 
 로 변환할 수 있는 값을 반환 하는 연산자 **bool** 개체가 비어 있지 않은 경우에 true 값을 사용 하 여 합니다. 이를 사용하여 개체가 비어 있는지 테스트합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__functional__function_operator_bool.cpp
@@ -340,15 +351,17 @@ result_type operator()(
 
 ### <a name="parameters"></a>매개 변수
 
-*TN* n 번째 호출 인수 형식입니다.
+*TN*<br/>
+N번째 인수의 형식입니다.
 
-*tN* 의 n 번째 호출 인수입니다.
+*TN*<br/>
+N번째 호출 인수입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 `INVOKE(fn, t1, t2, ..., tN, Ret)`를 반환합니다. 여기서 `fn`은 `*this`에 저장된 대상 개체입니다. 이를 사용하여 래핑된 호출 가능 개체를 호출합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__functional__function_operator_call.cpp
@@ -391,19 +404,23 @@ template <class Fty>
 
 ### <a name="parameters"></a>매개 변수
 
-*npc* null 포인터 상수입니다.
+*npc*<br/>
+null 포인터 상수입니다.
 
-*오른쪽* 복사할 함수 개체입니다.
+*right*<br/>
+복사할 함수 개체입니다.
 
-*fn* 래핑할 호출 가능 개체입니다.
+*fn*<br/>
+래핑할 호출 가능 개체입니다.
 
-*fnref* 래핑할 호출 가능 개체 참조입니다.
+*fnref*<br/>
+래핑할 호출 가능 개체 참조입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 각각 `*this`에 의해 포함된 호출 가능 개체를 피연산자로 전달된 호출 가능 개체로 바꿉니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__functional__function_operator_as.cpp
@@ -466,7 +483,7 @@ typedef Ret result_type;
 
 형식 정의는 템플릿의 호출 시그니처에서 `Ret` 형식의 동의어입니다. 이를 사용하여 래핑된 호출 가능 개체의 반환 형식을 결정합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__functional__function_result_type.cpp
@@ -506,13 +523,14 @@ void swap(function& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 함수 개체입니다.
+*right*<br/>
+바꿀 함수 개체입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수 사이 대상 개체를 바꿉니다 `*this` 하 고 *오른쪽*합니다. 일정한 시간에 이 작업을 수행하고 예외를 throw하지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__functional__function_swap.cpp
@@ -567,7 +585,8 @@ template <class Fty2>
 
 ### <a name="parameters"></a>매개 변수
 
-*Fty2* 테스트할 대상 호출 가능 개체 유형입니다.
+*Fty2*<br/>
+테스트할 대상 호출 가능 개체 형식입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -575,7 +594,7 @@ template <class Fty2>
 
 형식 *Fty2* 인수 형식에 대해 호출할 수 `T1, T2, ..., TN` 및 반환 형식 `Ret` 경우 lvalue `fn, t1, t2, ..., tN` 형식의 `Fty2, T1, T2, ..., TN`각각 `INVOKE(fn, t1, t2, ..., tN)` 올바른 형식이 있으면 `Ret`되지 **void**변환할, `Ret`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__functional__function_target.cpp
@@ -627,7 +646,7 @@ const std::type_info& target_type() const;
 
 멤버 함수는 `*this`가 비어 있으면 `typeid(void)`를 반환하고, 그렇지 않으면 `typeid(T)`를 반환합니다. 여기서 `T`는 대상 개체의 형식입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__functional__function_target_type.cpp

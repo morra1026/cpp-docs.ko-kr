@@ -24,12 +24,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2fc6fe93b3c7b798a53f6989d95e83c3be4b022
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 2cb6364a9f1cb74f9a002e37c278f3686b9916ca
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959822"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110125"
 ---
 # <a name="numget-class"></a>num_get 클래스
 
@@ -44,9 +44,11 @@ class num_get : public locale::facet;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType* 로캘의 문자를 인코딩하기 위해 프로그램 내에서 사용 되는 형식입니다.
+*CharType*<br/>
+로캘의 문자를 인코딩하기 위해 프로그램 내 사용하는 형식입니다.
 
-*InputIterator* 입력을 읽어올 반복기 숫자 get 함수가 있는 형식입니다.
+*InputIterator*<br/>
+숫자 get 함수가 입력을 읽어올 반복기의 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -175,15 +177,20 @@ virtual iter_type do_get(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 숫자를 읽을 문자 범위의 시작입니다.
+*first*<br/>
+숫자를 읽을 문자 범위의 시작 부분입니다.
 
-*마지막* 숫자를 읽을 문자 범위의 끝입니다.
+*last*<br/>
+숫자를 읽을 문자 범위의 끝부분입니다.
 
-*_Iosbase* 는 [ios_base](../standard-library/ios-base-class.md) 변환에서 사용 하는 플래그입니다.
+*_Iosbase*<br/>
+해당 플래그가 변환에 사용되는 [ios_base](../standard-library/ios-base-class.md)입니다.
 
-*_State* 상태는 failbit (참조 [ios_base:: iostate](../standard-library/ios-base-class.md#iostate)) 실패 시 추가 됩니다.
+*_State*<br/>
+오류 시 failbit가 추가되는 상태([ios_base::iostate](../standard-library/ios-base-class.md#iostate) 참조)입니다.
 
-*val* 읽은 값입니다.
+*val*<br/>
+읽은 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -328,7 +335,7 @@ virtual iter_type do_get(
 
 부울 입력 필드는 두 가지 형식 중 하나를 사용합니다. `iosbase.flags() & ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha)가 false인 경우 변환된 값이 0(false의 경우) 또는 1(true의 경우)이어야 한다는 점을 제외하면 정수 입력 필드와 동일합니다. 그렇지 않으면 시퀀스는 `fac.`[numpunct::falsename](../standard-library/numpunct-class.md#falsename)`()`(false의 경우) 또는 `fac.`[numpunct::truename](../standard-library/numpunct-class.md#truename)`()`(true의 경우)과 일치해야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_get`에 의해 가상 구성원 함수가 호출되는 [get](#get)의 예제를 참조하세요.
 
@@ -417,15 +424,20 @@ iter_type get(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 숫자를 읽을 문자 범위의 시작입니다.
+*first*<br/>
+숫자를 읽을 문자 범위의 시작 부분입니다.
 
-*마지막* 숫자를 읽을 문자 범위의 끝입니다.
+*last*<br/>
+숫자를 읽을 문자 범위의 끝부분입니다.
 
-*_Iosbase* 는 [ios_base](../standard-library/ios-base-class.md) 변환에서 사용 하는 플래그입니다.
+*_Iosbase*<br/>
+해당 플래그가 변환에 사용되는 [ios_base](../standard-library/ios-base-class.md)입니다.
 
-*_State* 상태는 failbit (참조 [ios_base:: iostate](../standard-library/ios-base-class.md#iostate)) 실패 시 추가 됩니다.
+*_State*<br/>
+오류 시 failbit가 추가되는 상태([ios_base::iostate](../standard-library/ios-base-class.md#iostate) 참조)입니다.
 
-*val* 읽은 값입니다.
+*val*<br/>
+읽은 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -517,7 +529,7 @@ virtual iter_type do_get(iter_type first,
 
 부울 입력 필드는 두 가지 형식 중 하나를 사용합니다. **iosbase**. **flags** & `ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha)가 **false**인 경우 변환된 값이 0(**false**의 경우) 또는 1(**true**의 경우)이어야 한다는 점을 제외하면 정수 입력 필드와 동일합니다. 그렇지 않으면 시퀀스는 **fac**. [falsename](../standard-library/numpunct-class.md#falsename)(**false**의 경우) 또는 **fac**. [truename](../standard-library/numpunct-class.md#truename)(**true**의 경우)입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // num_get_get.cpp
@@ -571,7 +583,8 @@ explicit num_get(size_t _Refs = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Refs* 개체에 대 한 메모리 관리의 유형을 지정 하는 데 사용 하는 정수 값입니다.
+*_Refs*<br/>
+개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
 ### <a name="remarks"></a>설명
 

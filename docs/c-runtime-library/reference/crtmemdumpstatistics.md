@@ -32,12 +32,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 688cef94721ac7ea3a36ccd375185b922b23a15f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 655d9be75fa031cc2cbebfd65c4634528f410e85
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395606"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110528"
 ---
 # <a name="crtmemdumpstatistics"></a>_CrtMemDumpStatistics
 
@@ -53,19 +53,20 @@ void _CrtMemDumpStatistics(
 
 ### <a name="parameters"></a>매개 변수
 
-*상태* 덤프할 힙 상태에 대 한 포인터입니다.
+*state*<br/>
+덤프할 힙 상태에 대한 포인터입니다.
 
 ## <a name="remarks"></a>설명
 
-**_CrtMemDumpStatistics** 함수는 지정 된 사용자가 읽을 수 있는 형태로 힙 상태에 대 한 디버그 헤더 정보를 덤프 합니다. 덤프 통계는 응용 프로그램에서 할당을 추적하고 메모리 문제를 감지하는 데 사용할 수 있습니다. 메모리 상태에는 특정 힙 상태나 두 상태 간의 차이가 포함될 수 있습니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 정의 되지 않은에 대 한 호출이 **_CrtMemDumpStatistics** 전처리 중 제거 됩니다.
+합니다 **_CrtMemDumpStatistics** 함수는 지정 된 힙 상태에 사용자를 읽을 수 있는 형식에 대 한 디버그 헤더 정보를 덤프 합니다. 덤프 통계는 응용 프로그램에서 할당을 추적하고 메모리 문제를 감지하는 데 사용할 수 있습니다. 메모리 상태에는 특정 힙 상태나 두 상태 간의 차이가 포함될 수 있습니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 가 정의 되지 않은, 호출 **_CrtMemDumpStatistics** 전처리 중 제거 됩니다.
 
-*상태* 매개 변수는에 대 한 포인터 여야 합니다는 **_CrtMemState** 으로 채워진 구조 [_CrtMemCheckpoint](crtmemcheckpoint.md) 반환한 또는 [_ CrtMemDifference](crtmemdifference.md) 전에 **_CrtMemDumpStatistics** 호출 됩니다. 경우 *상태* 은 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 및 아무 작업도 수행 합니다. 자세한 내용은 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
+합니다 *상태* 매개 변수는에 대 한 포인터 여야 합니다를 **_CrtMemState** 구조에서에서 채워진 [_CrtMemCheckpoint](crtmemcheckpoint.md) 반환한 또는 [_ CrtMemDifference](crtmemdifference.md) 하기 전에 **_CrtMemDumpStatistics** 라고 합니다. 하는 경우 *상태* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 조치가 수행 됩니다. 자세한 내용은 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
-힙 상태 함수에 대 한 자세한 내용은 및 **_CrtMemState** 구조, 참조 [힙 상태 보고 함수](/visualstudio/debugger/crt-debug-heap-details)합니다. 기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요.
+힙 상태 함수에 대 한 자세한 내용은 하며 **_CrtMemState** 구조체를 참조 하십시오 [힙 상태 보고 함수](/visualstudio/debugger/crt-debug-heap-details)합니다. 기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|선택적 헤더|
+|루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|----------------------|
 |**_CrtMemDumpStatistics**|\<crtdbg.h>|\<errno.h>|
 

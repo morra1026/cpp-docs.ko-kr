@@ -90,12 +90,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c85e1637691d602c63208cd180071c0f388c5893
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 017d5d5c2934fa687f91898b896a0ad6f1dcab6f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954957"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102579"
 ---
 # <a name="forwardlist-class"></a>forward_list 클래스
 
@@ -881,15 +881,20 @@ void splice_after(
 
 ### <a name="parameters"></a>매개 변수
 
-*여기서* 를 삽입할 대상 forward_list에 위치 합니다.
+*Where*<br/>
+대상 forward_list의 위치로, 이 위치 앞에서 삽입합니다.
 
-*원본* 대상 forward_list으로 삽입할 원본 forward_list입니다.
+*Source*<br/>
+대상 forward_list으로 삽입할 원본 forward_list입니다.
 
-*Iter* 원본 forward_list에서 삽입할 요소입니다.
+*Iter*<br/>
+원본 forward_list에서 삽입할 요소입니다.
 
-*첫 번째* 원본 forward_list에서 삽입할 범위에서 첫 번째 요소입니다.
+*첫 번째*<br/>
+원본 forward_list에서 삽입할 범위 내 첫 번째 요소입니다.
 
-*마지막* 원본 forward_list에서 삽입할 범위를 벗어나는 첫째 위치입니다.
+*마지막*<br/>
+원본 forward_list에서 삽입할 범위를 벗어난 첫 번째 위치입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -903,7 +908,7 @@ void splice_after(
 
 스플라이스된 요소를 지정하는 어떤 반복기, 포인터 또는 참조도 잘못되지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // forward_list_splice_after.cpp

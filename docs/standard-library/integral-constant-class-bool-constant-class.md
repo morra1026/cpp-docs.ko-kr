@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bff57549307eeaa9245c0bb4083b206471fe726
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 053816fcf18ec29b5e405f84b545432e848d2b59
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962535"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104012"
 ---
 # <a name="integralconstant-class-boolconstant-class"></a>integral_constant 클래스, bool_constant 클래스
 
@@ -46,9 +46,11 @@ struct integral_constant {
 
 ### <a name="parameters"></a>매개 변수
 
-*T* 상수의 형식입니다.
+*T*<br/>
+상수의 형식입니다.
 
-*v* 상수의 값입니다.
+*v*<br/>
+상수의 값입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -56,7 +58,7 @@ struct integral_constant {
 
 합니다 `bool_constant` 템플릿 클래스의 명시적 부분 특수화는 `integral_constant` 사용 하는 **bool** 으로 *T* 인수입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // std__type_traits__integral_constant.cpp

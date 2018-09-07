@@ -44,12 +44,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4250a2b13740b5aa71ca10300a90560ed615f68e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 51dc841efa3e9f64a106002945c07ce10bcf7565
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200030"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102618"
 ---
 # <a name="basicistream-class"></a>basic_istream 클래스
 
@@ -193,11 +193,14 @@ basic_istream(basic_istream&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*strbuf* 형식의 개체 [basic_streambuf](../standard-library/basic-streambuf-class.md)합니다.
+*strbuf*<br/>
+[basic_streambuf](../standard-library/basic-streambuf-class.md) 형식의 개체입니다.
 
-*_Isstd* **true** 표준 스트림인 경우이 고, 그렇지 **false**합니다.
+*_Isstd*<br/>
+**true 이면** 표준 스트림인 경우이 고, 그렇지 **false**합니다.
 
-*오른쪽* 는 `basic_istream` 복사할 개체입니다.
+*right*<br/>
+복사할 `basic_istream` 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -277,15 +280,20 @@ basic_istream<Elem, Tr>& get(basic_streambuf<Elem, Tr>& strbuf, Elem Delim);
 
 ### <a name="parameters"></a>매개 변수
 
-*개수* 에서 읽을 문자 수가 `strbuf`합니다.
+*count*<br/>
+`strbuf`에서 읽을 문자 수입니다.
 
-*Delim* 이전에 발견 될 경우 읽기를 종료 해야 하는 문자 *개수*합니다.
+*Delim*<br/>
+이전에 발견 될 경우 읽기를 종료 해야 하는 문자 *개수*합니다.
 
-*str* 를 쓸 수 있는 문자열입니다.
+*str*<br/>
+쓸 수 있는 문자열입니다.
 
-*Ch* 가져올 문자입니다.
+*ch*<br/>
+가져올 문자입니다.
 
-*strbuf* 쓸 버퍼입니다.
+*strbuf*<br/>
+쓸 수 있는 버퍼입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -356,11 +364,14 @@ basic_istream<Elem, Tr>& getline(
 
 ### <a name="parameters"></a>매개 변수
 
-*개수* 에서 읽을 문자 수가 `strbuf`합니다.
+*count*<br/>
+`strbuf`에서 읽을 문자 수입니다.
 
-*Delim* 이전에 발견 될 경우 읽기를 종료 해야 하는 문자 *개수*합니다.
+*Delim*<br/>
+이전에 발견 될 경우 읽기를 종료 해야 하는 문자 *개수*합니다.
 
-*str* 를 쓸 수 있는 문자열입니다.
+*str*<br/>
+쓸 수 있는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -414,9 +425,11 @@ basic_istream<Elem, Tr>& ignore(
 
 ### <a name="parameters"></a>매개 변수
 
-*개수* 수가 현재에서 건너뛸 요소의 읽기 위치 합니다.
+*count*<br/>
+현재 읽기 위치에서 건너뛸 요소의 수입니다.
 
-*Delim* 이전 개수, 발생 한 경우 발생 하는 요소 `ignore` 반환할 이후의 모든 요소와 *Delim* 를 읽을 수 있습니다.
+*Delim*<br/>
+이전 개수, 발생 한 경우 발생 하는 요소 `ignore` 반환할 이후의 모든 요소 및 *Delim* 를 읽을 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -474,11 +487,14 @@ basic_istream& operator>>(long double& val);
 
 ### <a name="parameters"></a>매개 변수
 
-*Pfn* 함수 포인터입니다.
+*pfn*<br/>
+함수 포인터입니다.
 
-*strbuf* 형식의 개체 `stream_buf`합니다.
+*strbuf*<br/>
+`stream_buf` 형식의 개체입니다.
 
-*val* 스트림에서 읽은 값입니다.
+*val*<br/>
+스트림에서 읽은 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -584,7 +600,8 @@ basic_istream& operator=(basic_istream&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 는 `rvalue` 에 대 한 참조를 `basic_ifstream` 개체입니다.
+*right*<br/>
+`basic_ifstream` 개체에 대한 `rvalue` 참조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -653,7 +670,8 @@ basic_istream<Elem, Tr>& putback(
 
 ### <a name="parameters"></a>매개 변수
 
-*Ch* 문자를 스트림에 다시 넣은입니다.
+*ch*<br/>
+스트림에 다시 배치할 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -702,9 +720,11 @@ basic_istream<Elem, Tr>& read(
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 읽을 문자 배열입니다.
+*str*<br/>
+문자를 읽을 배열입니다.
 
-*개수* 읽을 문자 수입니다.
+*count*<br/>
+읽을 문자 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -764,9 +784,11 @@ streamsize readsome(
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 는 배열 `readsome` 읽은 문자를 저장 합니다.
+*str*<br/>
+`readsome`이 읽은 문자를 저장하는 배열입니다.
 
-*개수* 읽을 문자 수입니다.
+*count*<br/>
+읽을 문자 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -819,11 +841,14 @@ basic_istream<Elem, Tr>& seekg(off_type off, ios_base::seekdir way);
 
 ### <a name="parameters"></a>매개 변수
 
-*pos* 읽기 포인터를 이동 하는 절대 위치입니다.
+*pos*<br/>
+읽기 포인터를 이동할 절대 위치입니다.
 
-*off* 기준으로 읽기 포인터를 이동할 오프셋 *방식으로*입니다.
+*해제*<br/>
+기준으로 읽기 포인터를 이동할 오프셋 *방식으로*입니다.
 
-*방법을* 중 하나는 [ios_base:: seekdir](../standard-library/ios-base-class.md#seekdir) 열거형입니다.
+*방법*<br/>
+[ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) 열거형 중 하나입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -887,7 +912,8 @@ void swap(basic_istream& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 에 대 한 lvalue 참조를 `basic_istream` 개체입니다.
+*right*<br/>
+`basic_istream` 개체에 대한 lvalue 참조입니다.
 
 ### <a name="remarks"></a>설명
 

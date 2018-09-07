@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 23a361362d574910d21b0031d5687331f8c11dda
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: c60732a374c7458cc9acedc8a8e5a880ebacbc1f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964257"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102670"
 ---
 # <a name="isdefaultconstructible-class"></a>is_default_constructible Class
 
@@ -36,13 +36,14 @@ struct is_default_constructible;
 
 ### <a name="parameters"></a>매개 변수
 
-*T* 쿼리할 형식입니다.
+*T*<br/>
+형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
 형식 조건자의 인스턴스 형태인 경우 true 형식을 *T* 는 클래스 형식에 기본 생성자, 그렇지 않으면 false입니다. 이것은 조건자 `is_constructible<T>`에 해당합니다. 형식 *T* 완전 한 형식 이어야 합니다 **void**, 또는 범위를 알 수 없는 배열입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 #include <type_traits>

@@ -34,16 +34,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a7be40c729faff78c75c4ee751737a7b53592aa
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 705210881faed70a32c1ddd52d7257b5b5e5f161
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400660"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107499"
 ---
 # <a name="lockfile"></a>_lock_file
 
-잠급니다는 **파일** 개체에 액세스 하는 스레드에 대 한 일관성을 유지 하는 **파일** 동시에 개체입니다.
+잠금를 **파일** 개체에 액세스 하는 스레드에 대 한 일관성을 유지 하는 **파일** 개체에 동시에 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -53,15 +53,16 @@ void _lock_file( FILE* file );
 
 ### <a name="parameters"></a>매개 변수
 
-*파일* 파일 핸들입니다.
+*file*<br/>
+파일 핸들입니다.
 
 ## <a name="remarks"></a>설명
 
-**_lock_file** 잠금을 함수는 **파일** 로 지정 된 개체 *파일*합니다. 기본 파일에 의해 잠겨 있지 않은지 **_lock_file**합니다. 파일에 대한 잠금을 해제하려면 [_unlock_file](unlock-file.md)을 사용합니다. 에 대 한 호출이 **_lock_file** 및 **_unlock_file** 스레드에서 일치 해야 합니다.
+합니다 **_lock_file** 잠금을 함수는 **파일** 로 지정 된 개체 *파일*합니다. 기본 파일에 의해 잠기지 **_lock_file**합니다. 파일에 대한 잠금을 해제하려면 [_unlock_file](unlock-file.md)을 사용합니다. 에 대 한 호출 **_lock_file** 하 고 **_unlock_file** 스레드에서 일치 해야 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_lock_file**|\<stdio.h>|
 

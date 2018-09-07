@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b475f497509249a29eb466c1a353111661b744e6
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 5efee5c6c867cf7b9b58e94f7475f365dee580ae
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959474"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102592"
 ---
 # <a name="piecewiselineardistribution-class"></a>piecewise_linear_distribution 클래스
 
@@ -90,7 +90,8 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*RealType* 부동 소수점 결과 형식, 기본값은 **double**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*RealType*<br/>
+부동 소수점 결과 형식, 기본값으로 **이중**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -117,7 +118,7 @@ public:
 
 분포 클래스 및 이러한 클래스의 구성원에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // compile with: /EHsc /W4
@@ -258,23 +259,32 @@ explicit piecewise_linear_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*firstI* 분포 범위의 첫 번째 요소의 입력된 반복기입니다.
+*firstI*<br/>
+대상 범위에 있는 첫 번째 요소의 입력 반복기입니다.
 
-*lastI* 배포 범위에서 마지막 요소의 입력된 반복기입니다.
+*lastI*<br/>
+대상 범위에 있는 마지막 요소의 입력 반복기입니다.
 
-*firstW* 가중치 범위에 있는 첫 번째 요소의 입력된 반복기입니다.
+*firstW*<br/>
+가중치 범위에 있는 첫 번째 요소의 입력 반복기입니다.
 
-*간격* 는 [initializer_list](../cpp/initializers.md) 분포의 간격이 있습니다.
+*intervals*<br/>
+분포의 간격이 있는 [initializer_list](../cpp/initializers.md)입니다.
 
-*개수* 분포 범위의 요소 수입니다.
+*count*<br/>
+분포 범위의 요소 수입니다.
 
-*xmin* 분포 범위의 가장 낮은 값입니다.
+*xmin*<br/>
+분포 범위의 가장 작은 값입니다.
 
-*xmax* 분포 범위의 가장 높은 값입니다. *xmin*보다 커야 합니다.
+*xmax*<br/>
+분포 범위의 가장 큰 값입니다. *xmin*보다 커야 합니다.
 
-*weightfunc* 분포에 대 한 확률 함수를 나타내는 개체입니다. 매개 변수 및 반환 값을 변환할 수 있어야 합니다 **이중**합니다.
+*weightfunc*<br/>
+분포의 확률 함수를 나타내는 개체입니다. 매개 변수 및 반환 값을 변환할 수 있어야 합니다 **이중**합니다.
 
-*parm* 분포를 생성 하는 데 매개 변수 구조입니다.
+*parm*<br/>
+분포를 생성하는 데 사용되는 매개 변수 구조입니다.
 
 ### <a name="remarks"></a>설명
 

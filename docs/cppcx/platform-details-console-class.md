@@ -15,33 +15,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 904ca2920f1086aeb099290382402e7201e81b49
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 789aa77c28fa5fc73b9f65ca70fcae77e5887e2d
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759014"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110833"
 ---
 # <a name="platformdetailsconsole-class"></a>Platform::Details::Console 클래스
-이 클래스는 내부 전용이며 개발용으로 사용되지 않아야 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-  
-ref class Console sealed;  
-```  
-  
-### <a name="remarks"></a>설명  
- 이 클래스는 브라우저에서 감사될 수 있으므로 보완용으로만 제공됩니다.  
-  
-## <a name="inheritance-hierarchy"></a>상속 계층  
- `Platform`  
-  
-### <a name="requirements"></a>요구 사항  
- **메타데이터:** platform.winmd  
-  
- **네임스페이스:** Platform::Details  
-  
-## <a name="see-also"></a>참고 항목  
- [플랫폼 Namespace](platform-namespace-c-cx.md)
+
+이 클래스는 내부 전용이며 개발용으로 사용되지 않아야 합니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+ref class Console sealed;
+```
+
+### <a name="remarks"></a>설명
+
+이 클래스는 브라우저에서 감사될 수 있으므로 보완용으로만 제공됩니다.
+
+## <a name="inheritance-hierarchy"></a>상속 계층
+
+`Platform`
+
+### <a name="requirements"></a>요구 사항
+
+**메타데이터:** platform.winmd
+
+**네임스페이스:** Platform::Details
+
+## <a name="see-also"></a>참고 항목
+
+[플랫폼 Namespace](platform-namespace-c-cx.md)

@@ -50,12 +50,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fac73456108669950f59f2399495526b8b319f07
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3198a2d3ef91df80429f7cd245e5616ebe7af43a
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956809"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110633"
 ---
 # <a name="codecvt-class"></a>codecvt 클래스
 
@@ -70,11 +70,14 @@ class codecvt : public locale::facet, codecvt_base;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType* 문자를 인코딩하기 위해 프로그램 내에서 사용 되는 형식입니다.
+*CharType*<br/>
+문자를 인코딩하기 위해 프로그램 내 사용하는 형식
 
-*바이트* 프로그램 밖의 문자를 인코딩하는 데 사용 되는 형식입니다.
+*Byte*<br/>
+프로그램 밖의 문자를 인코딩하는 데 사용되는 형식입니다.
 
-*StateType* 내부 및 외부 문자 표현 형식 사이의 변환 중간 상태를 나타내는 데 사용할 수 있는 형식입니다.
+*StateType*<br/>
+내부 및 외부 문자 표현 형식 사이의 변환의 중간 상태를 나타내는 데 사용할 수 있는 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -161,7 +164,7 @@ bool always_noconv() const throw();
 
 멤버 함수는 [do_always_noconv](#do_always_noconv)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // codecvt_always_noconv.cpp
@@ -206,7 +209,8 @@ explicit codecvt(size_t _Refs = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Refs* 개체에 대 한 메모리 관리의 유형을 지정 하는 데 사용 하는 정수 값입니다.
+*_Refs*<br/>
+개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -216,7 +220,7 @@ explicit codecvt(size_t _Refs = 0);
 
 - 1: 개체의 수명을 수동으로 관리해야 합니다.
 
-- \> 1: 이러한 값은 정의 되지 않습니다.
+- 2: 이러한 값은 정의 되지 않습니다.
 
 생성자는 초기화 해당 `locale::facet` 사용 하 여 기본 개체 **로캘::**[패싯](../standard-library/locale-class.md#facet_class)(`_Refs`).
 
@@ -234,7 +238,7 @@ virtual bool do_always_noconv() const throw();
 
 템플릿 버전은 항상 **true**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_always_noconv`를 호출하는 [always_noconv](#always_noconv)에 대한 예제를 참조하세요.
 
@@ -256,7 +260,7 @@ virtual int do_encoding() const throw();
 
 - *N*: 인코딩에 *N* 길이의 시퀀스만 포함된 경우
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_encoding`을 호출하는 [encoding](#encoding)에 대한 예제를 참조하세요.
 
@@ -277,19 +281,26 @@ virtual result do_in(
 
 ### <a name="parameters"></a>매개 변수
 
-*_State* 멤버 함수에는 호출 간에 유지 되는 변환 상태입니다.
+*_State*<br/>
+멤버 함수에 대한 호출 사이에 유지되는 변환 상태입니다.
 
-*first1* 변환할 시퀀스의 시작 부분에 대 한 포인터입니다.
+*first1*<br/>
+변환할 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last1* 변환할 시퀀스의 끝에 대 한 포인터입니다.
+*last1*<br/>
+변환할 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*next1* 포인터 변환 되지 않은 첫 번째 문자 변환된 된 시퀀스의 끝을 초과 합니다.
+*next1*<br/>
+변환된 시퀀스의 끝 너머에 있는 포인터로, 변환되지 않은 첫 번째 문자에 대한 포인터입니다.
 
-*first2* 변환된 된 시퀀스의 시작 부분에 대 한 포인터입니다.
+*first2*<br/>
+변환된 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last2* 변환된 된 시퀀스의 끝에 대 한 포인터입니다.
+*last2*<br/>
+변환된 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*next2* 에 대 한 포인터를 `CharType` 변환 된 마지막 뒤에 오는 `CharType`, 대상 시퀀스의 첫 번째 변경 되지 않은 문자입니다.
+*next2*<br/>
+에 대 한 포인터를 `CharType` 변환 된 마지막 뒤에 오는 `CharType`, 대상 시퀀스의 첫 번째 변경 되지 않은 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -307,7 +318,7 @@ virtual result do_in(
 
 *_State* 새 소스 시퀀스의 시작 부분에서 초기 변환 상태를 나타내야 합니다. 함수는 성공적인 변환의 현재 상태를 반영하기 위해 필요에 따라 해당 저장 값을 변경합니다. 저장 값은 달리 지정되지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_in`을 호출하는 [in](#in)에 대한 예제를 참조하세요.
 
@@ -325,13 +336,17 @@ virtual int do_length(
 
 ### <a name="parameters"></a>매개 변수
 
-*_State* 멤버 함수에는 호출 간에 유지 되는 변환 상태입니다.
+*_State*<br/>
+멤버 함수에 대한 호출 사이에 유지되는 변환 상태입니다.
 
-*first1* 외부 시퀀스의 시작 부분에 대 한 포인터입니다.
+*first1*<br/>
+외부 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last1* 외부 시퀀스의 끝에 대 한 포인터입니다.
+*last1*<br/>
+외부 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*_Len2* 최대 `Byte`멤버 함수에 의해 반환 될 수 있는 s입니다.
+*_Len2*<br/>
+최대 `Byte`멤버 함수에 의해 반환 될 수 있는 s입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -345,7 +360,7 @@ virtual int do_length(
 
 템플릿 버전은 항상 중 더 작은 값 반환 *last1* - *first1* 하 고 *_Len2*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 예를 참조 하세요 [길이](#length)를 호출 하는 `do_length`합니다.
 
@@ -365,7 +380,7 @@ virtual int do_max_length() const throw();
 
 보호 된 가상 멤버 함수에서 반환 될 수 있는 최대 허용 값을 반환 [do_length](#do_length)( `first1`합니다 `last1`, 1)의 유효한 임의 값에 대 한 *first1* 하고*last1*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_max_length`를 호출하는 [max_length](#max_length)에 대한 예제를 참조하세요.
 
@@ -386,19 +401,26 @@ virtual result do_out(
 
 ### <a name="parameters"></a>매개 변수
 
-*_State* 멤버 함수에는 호출 간에 유지 되는 변환 상태입니다.
+*_State*<br/>
+멤버 함수에 대한 호출 사이에 유지되는 변환 상태입니다.
 
-*first1* 변환할 시퀀스의 시작 부분에 대 한 포인터입니다.
+*first1*<br/>
+변환할 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last1* 변환할 시퀀스의 끝에 대 한 포인터입니다.
+*last1*<br/>
+변환할 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*next1* 첫 번째에 대 한 포인터에 대 한 참조 된 `CharType`, 마지막 `CharType` 변환 합니다.
+*next1*<br/>
+첫 번째에 대 한 포인터에 대 한 참조 된 `CharType`, 마지막 `CharType` 변환 합니다.
 
-*first2* 변환된 된 시퀀스의 시작 부분에 대 한 포인터입니다.
+*first2*<br/>
+변환된 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last2* 변환된 된 시퀀스의 끝에 대 한 포인터입니다.
+*last2*<br/>
+변환된 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*next2* 첫 번째에 대 한 포인터에 대 한 참조 된 `Byte`, 마지막 `Byte` 변환 합니다.
+*next2*<br/>
+첫 번째에 대 한 포인터에 대 한 참조 된 `Byte`, 마지막 `Byte` 변환 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -416,7 +438,7 @@ virtual result do_out(
 
 *_State* 새 소스 시퀀스의 시작 부분에서 초기 변환 상태를 나타내야 합니다. 함수는 성공적인 변환의 현재 상태를 반영하기 위해 필요에 따라 해당 저장 값을 변경합니다. 저장 값은 달리 지정되지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_out`을 호출하는 [out](#out)에 대한 예제를 참조하세요.
 
@@ -434,13 +456,17 @@ virtual result do_unshift(
 
 ### <a name="parameters"></a>매개 변수
 
-*_State* 멤버 함수에는 호출 간에 유지 되는 변환 상태입니다.
+*_State*<br/>
+멤버 함수에 대한 호출 사이에 유지되는 변환 상태입니다.
 
-*first2* 대상 범위에서 첫 번째 위치에 대 한 포인터입니다.
+*first2*<br/>
+대상 범위에서 첫 번째 위치에 대한 포인터입니다.
 
-*last2* 대상 범위에서 마지막 위치에 대 한 포인터입니다.
+*last2*<br/>
+대상 범위에서 마지막 위치에 대한 포인터입니다.
 
-*next2* 는 대상 시퀀스의 첫 번째 변경 되지 않은 요소에 대 한 포인터입니다.
+*next2*<br/>
+대상 시퀀스의 변경되지 않은 첫 번째 요소에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -460,7 +486,7 @@ virtual result do_unshift(
 
 _*State*는 새 소스 시퀀스의 시작 부분에 있는 초기 변환 상태를 나타내야 합니다. 함수는 성공적인 변환의 현재 상태를 반영하기 위해 필요에 따라 해당 저장 값을 변경합니다. 일반적으로 소스 요소를 변환 `CharType`(0) 현재 상태가 초기 변환 상태로 유지 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_unshift`를 호출하는 [unshift](#unshift)에 대한 예제를 참조하세요.
 
@@ -488,7 +514,7 @@ int encoding() const throw();
 
 멤버 함수는 [do_encoding](#do_encoding)을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // codecvt_encoding.cpp
@@ -544,19 +570,26 @@ result in(
 
 ### <a name="parameters"></a>매개 변수
 
-*_State* 멤버 함수에는 호출 간에 유지 되는 변환 상태입니다.
+*_State*<br/>
+멤버 함수에 대한 호출 사이에 유지되는 변환 상태입니다.
 
-*first1* 변환할 시퀀스의 시작 부분에 대 한 포인터입니다.
+*first1*<br/>
+변환할 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last1* 변환할 시퀀스의 끝에 대 한 포인터입니다.
+*last1*<br/>
+변환할 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*next1* 포인터 변환 되지 않은 첫 번째 문자 변환된 된 시퀀스의 끝을 초과 합니다.
+*next1*<br/>
+변환된 시퀀스의 끝 너머에 있는 포인터로, 변환되지 않은 첫 번째 문자에 대한 포인터입니다.
 
-*first2* 변환된 된 시퀀스의 시작 부분에 대 한 포인터입니다.
+*first2*<br/>
+변환된 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last2* 변환된 된 시퀀스의 끝에 대 한 포인터입니다.
+*last2*<br/>
+변환된 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*next2* 에 대 한 포인터를 `CharType` 변환 된 마지막 뒤에 오는 `Chartype` 는 대상 시퀀스의 첫 번째 변경 되지 않은 문자입니다.
+*next2*<br/>
+에 대 한 포인터를 `CharType` 변환 된 마지막 뒤에 오는 `Chartype` 는 대상 시퀀스의 첫 번째 변경 되지 않은 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -576,7 +609,7 @@ result in(
 
 멤버 함수가 [do_in](#do_in)(`_State`, _ *First1,  last1,  next1, First2, _Llast2,  next2*)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // codecvt_in.cpp
@@ -610,7 +643,7 @@ int main( )
 
 ```Output
 It worked! The converted string is:
- [This is the string to be converted!]
+[This is the string to be converted!]
 ```
 
 ## <a name="intern_type"></a>  codecvt::intern_type
@@ -639,13 +672,17 @@ int length(
 
 ### <a name="parameters"></a>매개 변수
 
-*_State* 멤버 함수에는 호출 간에 유지 되는 변환 상태입니다.
+*_State*<br/>
+멤버 함수에 대한 호출 사이에 유지되는 변환 상태입니다.
 
-*first1* 외부 시퀀스의 시작 부분에 대 한 포인터입니다.
+*first1*<br/>
+외부 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last1* 외부 시퀀스의 끝에 대 한 포인터입니다.
+*last1*<br/>
+외부 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*_Len2* 멤버 함수에 의해 반환 될 수 있는 바이트의 최대 수입니다.
+*_Len2*<br/>
+멤버 함수에서 반환할 수 있는 최대 바이트 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -655,7 +692,7 @@ int length(
 
 멤버 함수가 [do_length](#do_length)(*_State,  first1*, `last1`, `_Len2`)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // codecvt_length.cpp
@@ -700,7 +737,7 @@ int max_length() const throw();
 
 멤버 함수는 [do_max_length](#do_max_length)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // codecvt_max_length.cpp
@@ -740,19 +777,26 @@ result out(
 
 ### <a name="parameters"></a>매개 변수
 
-*_State* 멤버 함수에는 호출 간에 유지 되는 변환 상태입니다.
+*_State*<br/>
+멤버 함수에 대한 호출 사이에 유지되는 변환 상태입니다.
 
-*first1* 변환할 시퀀스의 시작 부분에 대 한 포인터입니다.
+*first1*<br/>
+변환할 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last1* 변환할 시퀀스의 끝에 대 한 포인터입니다.
+*last1*<br/>
+변환할 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*next1* 첫 번째에 대 한 포인터에 대 한 참조 된 `CharType` 마지막 `CharType` 변환 합니다.
+*next1*<br/>
+첫 번째에 대 한 포인터에 대 한 참조 된 `CharType` 마지막 `CharType` 변환 합니다.
 
-*first2* 변환된 된 시퀀스의 시작 부분에 대 한 포인터입니다.
+*first2*<br/>
+변환된 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last2* 변환된 된 시퀀스의 끝에 대 한 포인터입니다.
+*last2*<br/>
+변환된 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*next2* 첫 번째에 대 한 포인터에 대 한 참조 된 `Byte` 마지막 변환 후 `Byte`합니다.
+*next2*<br/>
+첫 번째에 대 한 포인터에 대 한 참조 된 `Byte` 마지막으로 변환한 후 `Byte`합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -762,7 +806,7 @@ result out(
 
 자세한 내용은 [codecvt::do_out](#do_out)을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // codecvt_out.cpp
@@ -796,7 +840,7 @@ int main( )
 
 ```Output
 It worked: The converted string is:
- [This is the wchar_t string to be converted.]
+[This is the wchar_t string to be converted.]
 ```
 
 ## <a name="state_type"></a>  codecvt::state_type
@@ -825,13 +869,17 @@ result unshift(
 
 ### <a name="parameters"></a>매개 변수
 
-*_State* 멤버 함수에는 호출 간에 유지 되는 변환 상태입니다.
+*_State*<br/>
+멤버 함수에 대한 호출 사이에 유지되는 변환 상태입니다.
 
-*first2* 대상 범위에서 첫 번째 위치에 대 한 포인터입니다.
+*first2*<br/>
+대상 범위에서 첫 번째 위치에 대한 포인터입니다.
 
-*last2* 대상 범위에서 마지막 위치에 대 한 포인터입니다.
+*last2*<br/>
+대상 범위에서 마지막 위치에 대한 포인터입니다.
 
-*next2* 는 대상 시퀀스의 첫 번째 변경 되지 않은 요소에 대 한 포인터입니다.
+*next2*<br/>
+대상 시퀀스의 변경되지 않은 첫 번째 요소에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 

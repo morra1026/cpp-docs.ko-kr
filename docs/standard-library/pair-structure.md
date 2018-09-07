@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ad86773fdc78f3cb8d5219ce14919a035755f3b
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: dcee56d93059e30bc07e3f964b581624f0bb555d
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955334"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108827"
 ---
 # <a name="pair-structure"></a>pair 구조체
 
@@ -54,11 +54,14 @@ struct pair
 
 ### <a name="parameters"></a>매개 변수
 
-*Val1* 의 첫 번째 요소를 초기화 하는 값 `pair`합니다.
+*Val1*<br/>
+`pair`의 첫 번째 요소를 초기화하는 값입니다.
 
-*Val2* 의 두 번째 요소를 초기화 하는 값 `pair`합니다.
+*Val2*<br/>
+`pair`의 두 번째 요소를 초기화하는 값입니다.
 
-*오른쪽* 다른 쌍의 요소를 초기화 하는 데 해당 값은 쌍입니다.
+*오른쪽*<br/>
+다른 쌍의 요소를 초기화하는 데 해당 값을 사용할 쌍입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -74,7 +77,7 @@ struct pair
 
 템플릿 구조체 형식의 개체 쌍을 저장 `T1` 고 `T2`, 각각. 형식 `first_type` 템플릿 매개 변수로 동일 `T1` 유형과 `second_type` 템플릿 매개 변수로 동일 `T2`합니다. `T1` 및 `T2` 각각 기본 생성자만, 단일 인수 생성자 및 소멸자를 제공 해야 합니다. `pair` 형식의 모든 구성원은 형식이 **class**가 아니라 `struct`로 선언되었으므로 공용입니다. 쌍을 사용하는 두 가지 가장 일반적인 방법은 두 값을 반환하는 함수에 대한 반환 형식으로 사용하거나, 각 요소에 키와 값 형식이 둘 다 연결되어 있는 결합형 컨테이너 클래스 [map 클래스](../standard-library/map-class.md) 및 [multimap 클래스](../standard-library/multimap-class.md)에 대한 요소로 사용하는 것입니다. 후자의 경우 쌍 결합형 컨테이너에 대한 요구 사항을 충족하고 `pair`< **const**`key_type`, `mapped_type`> 형태의 값 형식을 갖습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // utility_pair.cpp
@@ -158,8 +161,8 @@ The pair p3 is: ( 10, 0.011 ).
 The element pairs of the map m1 are: ( 1, 10 ) ( 2, 20 ) ( 3, 30 ).
 The element (4,40) was inserted successfully in m1.
 The element with a key value of
- ( (pr2.first) -> first ) = 1 is already in m1,
- so the insertion failed.
+( (pr2.first) -> first ) = 1 is already in m1,
+so the insertion failed.
 *\
 ```
 

@@ -44,12 +44,12 @@ helpviewer_keywords:
 - std::sqrt [C++]
 - std::tan [C++]
 - std::tanh [C++]
-ms.openlocfilehash: 6fd1712cb5d6c565b5ccea90050d2d4be6a1f7b0
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 12dd6d48b8d0e2012273ad122708d9a0d7ea11cd
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959994"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110177"
 ---
 # <a name="ltcomplexgt-functions"></a>&lt;complex&gt; 함수
 
@@ -73,7 +73,8 @@ Type abs(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum* 인 모듈러스 결정 해야 하는 복소수입니다.
+*complexNum*<br/>
+모듈러스를 결정해야 하는 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -83,7 +84,7 @@ Type abs(const complex<Type>& complexNum);
 
 복소수의 *모듈러스*는 복소수를 나타내는 벡터의 길이에 대한 측정입니다. 복소수의 모듈러스                         a + bi는 sqrt (a<sup>2</sup> + b<sup>2</sup>)이며, |a + bi|로 표기됩니다. 복소수의 *기준*                         a + bi는 (a<sup>2</sup> + b<sup>2</sup>)이므로 복소수의 모듈러스는 해당 기준의 제곱근입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_abs.cpp
@@ -141,10 +142,10 @@ c2 = polar ( 5.0 , pi / 6 ) = (4.33013,2.5)
 c3 = polar ( 5.0 , 13 * pi / 6 ) = (4.33013,2.5)
 The modulus of c1 is recovered from c1 using: abs ( c1 ) = 5
 Argument of c1 is recovered from c1 using:
- arg ( c1 ) = 0 radians, which is 0 degrees.
+arg ( c1 ) = 0 radians, which is 0 degrees.
 The modulus of c2 is recovered from c2 using: abs ( c2 ) = 5
 Argument of c2 is recovered from c2 using:
- arg ( c2 ) = 0.523599 radians, which is 30 degrees.
+arg ( c2 ) = 0.523599 radians, which is 30 degrees.
 The complex numbers c2 & c3 have the same principal arguments.
 ```
 
@@ -159,7 +160,8 @@ Type arg(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum* 인수가 결정 해야 하는 복소수입니다.
+*complexNum*<br/>
+인수를 결정해야 하는 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -169,7 +171,7 @@ Type arg(const complex<Type>& complexNum);
 
 합니다 *인수* 복소수 벡터가 복합 평면에서 양의 실수 축을 사용 하 여 각도입니다. 복소수 *a + bi*, 인수는 arctan (*b / a*). 각도는 양의 실수 축에서 시계 반대 방향으로 측정되는 경우 양을 나타내고, 시계 방향으로 측정되는 경우 음을 나타냅니다. 보안 주체 값은-pi 보다 작거나 큰 보다 또는 같음 + pi입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_arg.cpp
@@ -227,10 +229,10 @@ c2 = polar ( 5.0 , pi / 6 ) = (4.33013,2.5)
 c3 = polar ( 5.0 , 13 * pi / 6 ) = (4.33013,2.5)
 The modulus of c1 is recovered from c1 using: abs ( c1 ) = 5
 Argument of c1 is recovered from c1 using:
- arg ( c1 ) = 0 radians, which is 0 degrees.
+arg ( c1 ) = 0 radians, which is 0 degrees.
 The modulus of c2 is recovered from c2 using: abs ( c2 ) = 5
 Argument of c2 is recovered from c2 using:
- arg ( c2 ) = 0.523599 radians, which is 30 degrees.
+arg ( c2 ) = 0.523599 radians, which is 30 degrees.
 The complex numbers c2 & c3 have the same principal arguments.
 ```
 
@@ -245,7 +247,8 @@ complex<Type> conj(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum* 반환 되는 해당 복합 켤레 복소수입니다.
+*complexNum*<br/>
+켤레 복소수가 반환되는 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -255,7 +258,7 @@ complex<Type> conj(const complex<Type>& complexNum);
 
 복소수의 켤레 복소수 *a + bi* 됩니다 *-bi*합니다. 복소수와 켤레 복소수는 숫자 *a*2 + *b*2의 기준입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_conj.cpp
@@ -319,7 +322,8 @@ complex<Type> cos(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum* 코사인을 결정 하는 복소수입니다.
+*complexNum*<br/>
+코사인을 결정하는 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -333,7 +337,7 @@ cos ( *z*) = (1/2)\*( exp ( *iz*) + exp (- *iz*) )
 
 cos ( *z*) = cos ( *a* + *bi*) = cos ( *a*) cosh ( *b*) - isin ( *a*) sinh ( *b*)
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_cos.cpp
@@ -409,7 +413,8 @@ complex<Type> cosh(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum* 쌍 곡 코사인을 결정 하는 복소수입니다.
+*complexNum*<br/>
+쌍곡 코사인을 결정하는 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -423,7 +428,7 @@ cos ( *z*) = (1/2)\*( exp ( *z*) + exp (- *z*) )
 
 cos ( *z*) = cosh ( *a + bi*) = cosh ( *a*) cos ( *b*) + isinh ( *a*) sin ( *b*)
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_cosh.cpp
@@ -499,13 +504,14 @@ complex<Type> exp(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum* 복소수입니다 지 수를 결정 하는 합니다.
+*complexNum*<br/>
+지수를 결정하는 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
 입력 복소수의 지수인 복소수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_exp.cpp
@@ -569,7 +575,8 @@ Type imag(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum* 실수부는 추출할 복소수입니다.
+*complexNum*<br/>
+실수 부분을 추출할 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -579,7 +586,7 @@ Type imag(const complex<Type>& complexNum);
 
 이 템플릿 함수는 복소수의 실수 부분을 수정하는 데 사용할 수 없습니다. 실수 부분을 변경하려면 새 복소수에 구성 요소 값이 할당되어야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complexc_imag.cpp
@@ -620,7 +627,8 @@ complex<Type> log(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum* 된 자연 로그를 결정 하는 복소수입니다.
+*complexNum*<br/>
+자연 로그를 결정하고 있는 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -630,7 +638,7 @@ complex<Type> log(const complex<Type>& complexNum);
 
 분기는 음의 실수 축을 따릅니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_log.cpp
@@ -689,7 +697,8 @@ complex<Type> log10(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum* 인 밑수 10을 결정 하는 복소수입니다.
+*complexNum*<br/>
+상용 로그를 결정하는 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -699,7 +708,7 @@ complex<Type> log10(const complex<Type>& complexNum);
 
 분기는 음의 실수 축을 따릅니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_log10.cpp
@@ -758,7 +767,8 @@ Type norm(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum* 복소수 결정 해야 하는 복소수입니다.
+*complexNum*<br/>
+기준을 결정해야 하는 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -768,7 +778,7 @@ Type norm(const complex<Type>& complexNum);
 
 복소수 기준인 *a + bi*는 *(a*<sup>2</sup> *+ b*<sup>2</sup>*)입니다.* 복소수의 기준은 모듈러스의 제곱입니다. 복소수의 모듈러스는 복소수를 나타내는 벡터의 길이에 대한 측정입니다. 복소수의 모듈러스인 *a + bi*는 `sqrt`*(a*<sup>2</sup> *+ b*<sup>2</sup>*)이며,* *|a + bi|로 표기됩니다.*
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_norm.cpp
@@ -824,7 +834,7 @@ c3 = polar ( 5.0 , 13 * pi / 6 ) = (4.33013,2.5)
 The complex numbers c2 & c3 have the same principal arguments.
 The modulus of c2 is recovered from c2 using: abs ( c2 ) = 5
 Argument of c2 is recovered from c2 using:
- arg ( c2 ) = 0.523599 radians, which is 30 degrees.
+arg ( c2 ) = 0.523599 radians, which is 30 degrees.
 The norm of c2 given by: norm ( c2 ) = 25
 The modulus of c2 is the square root of the norm: sqrt ( normc2 ) = 5.
 ```
@@ -840,9 +850,11 @@ complex<Type> polar(const Type& _Modulus, const Type& _Argument = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Modulus* 입력 될 복소수의 모듈러스입니다.
+*_Modulus*<br/>
+입력될 복소수의 모듈러스입니다.
 
-*_Argument* 입력 될 복소수의 인수입니다.
+*_Argument*<br/>
+입력되는 복소수의 인수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -852,7 +864,7 @@ complex<Type> polar(const Type& _Modulus, const Type& _Argument = 0);
 
 복소수의 극좌표 형식은 모듈러스 제공 *r* 고 인수가 *p*실수 및 허수 직각 좌표 구성 요소에 이러한 매개 변수는 관련 된, *는* 및 *b* 방정식에서 *는* = r \* cos *p* 하 고 *b* = *r* \* sin *p*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_polar.cpp
@@ -901,7 +913,7 @@ c3 = polar ( 5.0 , 13 * pi / 6 ) = (4.33013,2.5)
 The complex numbers c2 & c3 have the same principal arguments.
 The modulus of c2 is recovered from c2 using: abs ( c2 ) = 5
 Argument of c2 is recovered from c2 using:
- arg ( c2 ) = 0.523599 radians, which is 30 degrees.
+arg ( c2 ) = 0.523599 radians, which is 30 degrees.
 ```
 
 ## <a name="pow"></a>  pow
@@ -924,9 +936,11 @@ complex<Type> pow(const Type& _Base, const complex<Type>& _Power);
 
 ### <a name="parameters"></a>매개 변수
 
-*(_B)* 복소수 이거나 멤버 함수에 의해 거듭제곱 수를 기반이 되는 복잡 한 수의 매개 변수 형식입니다.
+*(_B)*<br/>
+복소수이거나 멤버 함수에 의해 거듭제곱되는 밑인 복소수의 매개 변수 형식을 가진 숫자입니다.
 
-*(_P)* 정수 또는 복소수 이거나 멤버 함수에 의해 발생 하는 기본 기능에는 복소수에 대 한 매개 변수 형식입니다.
+*_Power*<br/>
+정수 또는 복소수이거나 멤버 함수에 의한 밑의 거듭제곱인 복소수의 매개 변수 형식을 가진 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -938,7 +952,7 @@ complex<Type> pow(const Type& _Base, const complex<Type>& _Power);
 
 분기는 음의 실수 축을 따릅니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_pow.cpp
@@ -1021,28 +1035,28 @@ int main( )
 Complex number for base cb1 = (3,4)
 Integer for power = 2
 Complex number returned from complex base and integer power:
- ce1 = cb1 ^ cp1 = (-7,24)
+ce1 = cb1 ^ cp1 = (-7,24)
 The modulus of ce1 is: 25
 The argument of ce1 is: 1.85459 radians, which is 106.26 degrees.
 
 Complex number for base cb2 = (3,4)
 Type double for power cp2 = pi = 3.14159
 Complex number returned from complex base and double power:
- ce2 = cb2 ^ cp2 = (-152.915,35.5475)
+ce2 = cb2 ^ cp2 = (-152.915,35.5475)
 The modulus of ce2 is: 156.993
 The argument of ce2 is: 2.91318 radians, which is 166.913 degrees.
 
 Complex number for base cb3 = (3,4)
 Complex number for power cp3= (-2,1)
 Complex number returned from complex base and complex power:
- ce3 = cb3 ^ cp3 = (0.0153517,-0.00384077)
+ce3 = cb3 ^ cp3 = (0.0153517,-0.00384077)
 The modulus of ce3 is: 0.0158249
 The argument of ce3 is: -0.245153 radians, which is -14.0462 degrees.
 
 Type double for base cb4 = pi = 3.14159
 Complex number for power cp4 = (2,-1)
 Complex number returned from double base and complex power:
- ce4 = cb4 ^ cp4 = (4.07903,-8.98725)
+ce4 = cb4 ^ cp4 = (4.07903,-8.98725)
 The modulus of ce4 is: 9.8696
 The argument of ce4 is: -1.14473 radians, which is -65.5882 degrees.
 ```
@@ -1058,7 +1072,8 @@ Type real(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum* 실수부는 추출할 복소수입니다.
+*complexNum*<br/>
+실수 부분을 추출할 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1068,7 +1083,7 @@ Type real(const complex<Type>& complexNum);
 
 이 템플릿 함수는 복소수의 실수 부분을 수정하는 데 사용할 수 없습니다. 실수 부분을 변경하려면 새 복소수에 구성 요소 값이 할당되어야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_real.cpp
@@ -1109,7 +1124,8 @@ complex<Type> sin(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum* 사인 값을 결정 하는 복소수입니다.
+*complexNum*<br/>
+사인을 결정하는 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1123,7 +1139,7 @@ sin ( *z*) = (1/2 *합니까*)\*(exp ( *iz*)-exp (- *iz*))
 
 sin ( *z*) = sin ( *a + bi*) = sin ( *a*) cosh ( *b*) + icos ( *a*) sinh ( *b*)
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_sin.cpp
@@ -1199,7 +1215,8 @@ complex<Type> sinh(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum* 쌍 곡 사인을 결정 하는 복소수입니다.
+*complexNum*<br/>
+쌍곡 사인을 결정하는 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1213,7 +1230,7 @@ sinh ( *z*) = (1/2)\*( exp ( *z*) - exp (- *z*) )
 
 sinh ( *z*) = sinh ( *a + bi*) = sinh ( *a*) cos ( *b*) + *i*cosh ( *a*) sin ( *b*)
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_sinh.cpp
@@ -1289,7 +1306,8 @@ complex<Type> sqrt(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum* 복소수의 제곱근을 구할 됩니다.
+*complexNum*<br/>
+제곱근을 구할 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1303,7 +1321,7 @@ complex<Type> sqrt(const complex<Type>& complexNum);
 
 복소수의 제곱근은 입력 숫자의 제곱근인 모듈러스와 입력 숫자의 1/2인 인수를 갖습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_sqrt.cpp
@@ -1348,10 +1366,10 @@ c1 = polar ( 5.0 ) = (-2.58529e-012,25)
 c2 = sqrt ( c1 ) = (3.53553,3.53553)
 The modulus of c2 is recovered from c2 using: abs ( c2 ) = 5
 Argument of c2 is recovered from c2 using:
- arg ( c2 ) = 0.785398 radians, which is 45 degrees.
+arg ( c2 ) = 0.785398 radians, which is 45 degrees.
 The modulus of c2 = sqrt( abs ( c1 ) ) =5
 The argument of c2 = ( 1 / 2 ) * arg ( c1 ) =0.785398 radians,
- which is 45 degrees.
+which is 45 degrees.
 ```
 
 ## <a name="tan"></a> tan
@@ -1365,7 +1383,8 @@ complex<Type> tan(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum* 탄젠트를 결정 하는 복소수입니다.
+*complexNum*<br/>
+탄젠트를 결정하는 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1377,7 +1396,7 @@ complex<Type> tan(const complex<Type>& complexNum);
 
 tan ( *z*) = sin ( *z*) cos / ( *z*) = (exp ( *iz*)-exp (- *iz*)) / *i*(exp ( *iz*) + exp (- *iz*))
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_tan.cpp
@@ -1453,7 +1472,8 @@ complex<Type> tanh(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum* 쌍 곡 탄젠트를 결정 하는 복소수입니다.
+*complexNum*<br/>
+쌍곡 탄젠트를 결정하는 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1465,7 +1485,7 @@ complex<Type> tanh(const complex<Type>& complexNum);
 
 tanh ( *z*) = sinh ( *z*) cosh / ( *z*) = (exp ( *z*)-exp (- *z*)) / (exp ( *z*) + exp (- *z*))
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_tanh.cpp

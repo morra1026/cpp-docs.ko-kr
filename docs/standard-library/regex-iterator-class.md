@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6f45f8a445420d85c539de2f5ba485c0a47127b
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 264f61ede0fb47e198459593b2eea154846cc7b9
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962558"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108293"
 ---
 # <a name="regexiterator-class"></a>regex_iterator 클래스
 
@@ -75,11 +75,14 @@ private:
 
 ### <a name="parameters"></a>매개 변수
 
-*BidIt* 부분 일치에 대 한 반복기 형식입니다.
+*BidIt*<br/>
+부분 일치에 대한 반복기 형식입니다.
 
-*Elem* 일치 하는 요소의 형식입니다.
+*Elem*<br/>
+일치 항목을 찾을 요소의 형식입니다.
 
-*RXtraits* 요소에 대 한 특성 클래스입니다.
+*RXtraits*<br/>
+요소에 대한 특성 클래스입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -115,7 +118,7 @@ typedef std::ptrdiff_t difference_type;
 
 이 형식은 `std::ptrdiff_t`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_iterator_difference_type.cpp
@@ -170,7 +173,7 @@ typedef std::forward_iterator_tag iterator_category;
 
 이 형식은 `std::forward_iterator_tag`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_iterator_iterator_category.cpp
@@ -223,13 +226,14 @@ bool operator!=(const regex_iterator& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 비교할 반복기입니다.
+*right*<br/>
+비교할 반복기입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 `!(*this == right)`를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_iterator_operator_ne.cpp
@@ -284,7 +288,7 @@ const match_results<BidIt>& operator*();
 
 이 멤버 함수는 저장된 값 `match`를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_iterator_operator_star.cpp
@@ -342,7 +346,7 @@ regex_iterator& operator++(int);
 
 두 번째 연산자는 개체의 복사본을 만들고 개체를 증가시킨 다음 복사본을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_iterator_operator_inc.cpp
@@ -395,13 +399,14 @@ bool operator==(const regex_iterator& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 비교할 반복기입니다.
+*right*<br/>
+비교할 반복기입니다.
 
 ### <a name="remarks"></a>설명
 
 경우 멤버 함수는 true 반환 `*this` 하 고 *오른쪽* 가 시퀀스의 끝 반복기 이거나 둘 다 시퀀스의 끝 반복기 경우 모두 및 `begin == right.begin`, `end == right.end`를 `pregex == right.pregex`, 및 `flags == right.flags`합니다. 그렇지 않으면 false를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_iterator_operator_as.cpp
@@ -456,7 +461,7 @@ const match_results<BidIt> * operator->();
 
 멤버 함수는 저장된 값 `match`의 주소를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_iterator_operator_arrow.cpp
@@ -511,7 +516,7 @@ typedef match_results<BidIt> *pointer;
 
 이 형식은 `match_results<BidIt>*`의 동의어로, 여기서 `BidIt` 는 템플릿 매개 변수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_iterator_pointer.cpp
@@ -566,7 +571,7 @@ typedef match_results<BidIt>& reference;
 
 이 형식은 `match_results<BidIt>&`의 동의어로, 여기서 `BidIt` 는 템플릿 매개 변수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_iterator_reference.cpp
@@ -625,19 +630,23 @@ regex_iterator(BidIt first,
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 일치 하는 시퀀스의 시작 합니다.
+*first*<br/>
+일치하는 시퀀스의 시작입니다.
 
-*마지막* 일치 하는 시퀀스의 끝입니다.
+*last*<br/>
+일치하는 시퀀스의 끝입니다.
 
-*다시* 정규식 일치 항목입니다.
+*re*<br/>
+일치 항목에 대한 정규식입니다.
 
-*f* 일치 항목에 대 한 플래그입니다.
+*f*<br/>
+일치 항목에 대한 플래그입니다.
 
 ### <a name="remarks"></a>설명
 
 첫 번째 생성자는 시퀀스의 끝 반복기를 생성합니다. 두 번째 생성자는 저장 된 값을 초기화 `begin` 사용 하 여 *첫 번째*의 값을 저장 `end` 사용 하 여 *마지막*의 값을 저장 `pregex` 사용 하 여 `&re`, 및 저장 된 값 `flags` 사용 하 여 *f*합니다. 그런 다음 `regex_search(begin, end, match, *pregex, flags)`를 호출합니다. 검색에 실패하면 생성자는 개체를 시퀀스의 끝 반복기로 설정합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_iterator_construct.cpp
@@ -693,7 +702,7 @@ typedef basic_regex<Elem, RXtraits> regex_type;
 
 typedef는 `basic_regex<Elem, RXtraits>`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_iterator_regex_type.cpp
@@ -749,7 +758,7 @@ typedef match_results<BidIt> value_type;
 
 이 형식은 `match_results<BidIt>`의 동의어로, 여기서 `BidIt` 는 템플릿 매개 변수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_iterator_value_type.cpp

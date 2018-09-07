@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f54f036c6e647c3f04bb202b68109e227061bf7a
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 58d71ef5d3b2b50ec9d51668e4420c99ef9f3b17
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961924"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108838"
 ---
 # <a name="binarynegate-class"></a>binary_negate 클래스
 
@@ -44,11 +44,14 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*Func* 부정할 이항 함수입니다.
+*Func*<br/>
+부정할 이항 함수입니다.
 
-*왼쪽* 부정할 이항 함수의 왼쪽된 피연산자.
+*left*<br/>
+부정할 이항 함수의 왼쪽 피연산자입니다.
 
-*오른쪽* 부정할 이항 함수의 오른쪽 피연산자입니다.
+*right*<br/>
+부정할 이항 함수의 오른쪽 피연산자입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -60,7 +63,7 @@ public:
 
 `binary_negate`의 생성자는 직접 사용되는 경우가 거의 없습니다. **binary_negator** 어댑터 조건자를 선언하고 사용하는 데 일반적으로 [not2](../standard-library/functional-functions.md#not2) 도우미 함수가 사용됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // functional_binary_negate.cpp

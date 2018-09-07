@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bbd2f2c652c619a954b789a3b765fc636a03c33e
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 040687a4218f24bb57f20ea3307dbf69ffa3f37d
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962726"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108399"
 ---
 # <a name="binder2nd-class"></a>binder2nd 클래스
 
@@ -53,11 +53,14 @@ protected:
 
 ### <a name="parameters"></a>매개 변수
 
-*func* 단항 함수 개체로 변환할 이항 함수 개체입니다.
+*Func*<br/>
+단항 함수 개체로 변환할 이항 함수 개체입니다.
 
-*오른쪽* 이항 함수 개체의 두 번째 인수 바인딩할 값입니다.
+*right*<br/>
+이항 함수 개체의 두 번째 인수가 바인딩되는 값입니다.
 
-*왼쪽* 두 번째 인수의 고정된 값으로 수정 된 이진 개체를 비교 하는 인수의 값입니다.
+*left*<br/>
+수정된 이진 개체를 두 번째 인수의 고정 값과 비교하는 인수의 값입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -69,7 +72,7 @@ protected:
 
 경우 `Func` 형식의 개체인 `Operation` c가 상수 이면 및 [bind2nd](../standard-library/functional-functions.md#bind2nd) ( `Func`를 `c` ) 해당 하는 `binder2nd` 클래스 생성자 `binder2nd` \<  **작업이**> ( `Func`, `c` )이 고 더 편리 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // functional_binder2nd.cpp

@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4c92b24dbd5ccfbd308cb1b52dee7347f1df1e4
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: ee9e6af44c77c16099dc5e30c78ac4a5f39aa54a
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959863"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108549"
 ---
 # <a name="normaldistribution-class"></a>normal_distribution 클래스
 
@@ -81,7 +81,8 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*RealType* 부동 소수점 결과 형식에 기본값이 **double**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*RealType*<br/>
+부동 소수점 결과 형식으로 기본값으로 **이중**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -106,7 +107,7 @@ public:
 
 정규 분포에 대한 자세한 내용은 Wolfram MathWorld 문서 [정규 분포](http://go.microsoft.com/fwlink/p/?linkid=400924)를 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // compile with: /EHsc /W4
@@ -208,11 +209,14 @@ explicit normal_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*의미* 는 `mean` 분포 매개 변수입니다.
+*mean*<br/>
+`mean` 분포 매개 변수입니다.
 
-*stddev* 는 `stddev` 분포 매개 변수입니다.
+*stddev*<br/>
+`stddev` 분포 매개 변수입니다.
 
-*parm* 분포를 생성 하는 데 매개 변수 구조입니다.
+*parm*<br/>
+분포를 생성하는 데 사용되는 매개 변수 구조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -239,11 +243,14 @@ struct param_type {
 ```
 ### <a name="parameters"></a>매개 변수
 
-*의미* 는 `mean` 분포 매개 변수입니다.
+*mean*<br/>
+`mean` 분포 매개 변수입니다.
 
-*stddev* 는 `stddev` 분포 매개 변수입니다.
+*stddev*<br/>
+`stddev` 분포 매개 변수입니다.
 
-*오른쪽* 는 `param_type` 구조 비교 하는 데 사용 합니다.
+*right*<br/>
+비교에 사용되는 `param_type` 구조체입니다.
 
 ### <a name="remarks"></a>설명
 

@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4819f5b5d5d6a16720bce29dd176fd0eb873014a
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 766ab6f9a93cc617c2a3ecb4c305775d670a9640
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955935"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108956"
 ---
 # <a name="ltostreamgt-operators"></a>&lt;ostream&gt; 연산자
 
@@ -88,17 +88,23 @@ basic_ostream <_Elem, _Tr>& operator<<(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch* 문자입니다.
+*_Ch*<br/>
+단일 문자입니다.
 
-*_Elem* 요소 형식입니다.
+*_Elem*<br/>
+요소 형식입니다.
 
-*_Ostr* 는 `basic_ostream` 개체입니다.
+*_Ostr*<br/>
+`basic_ostream` 개체입니다.
 
-*str* 문자열입니다.
+*str*<br/>
+문자열입니다.
 
-*_Tr* 특성 문자입니다.
+*_Tr*<br/>
+문자 특성입니다.
 
-*val* 형식
+*val*<br/>
+형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -265,7 +271,7 @@ basic_ostream<_Elem, _Tr>& operator<<(
 
 `_Ostr` `<<` `val`을 반환하고 [RValue 참조](../cpp/rvalue-reference-declarator-amp-amp.md)를 `_Ostr`(프로세스의 lvalue)로 변환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `operator<<`를 사용하는 방법의 예제를 보려면 [flush](../standard-library/ostream-functions.md#flush)를 참조하세요.
 

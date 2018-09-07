@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 662c4915753cc49534fa9f489eb61504907744c4
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 0ef4b993ec628771666ac3773b575ee518c18173
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954710"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106440"
 ---
 # <a name="basiciostream-class"></a>basic_iostream 클래스
 
@@ -85,9 +85,11 @@ basic_iostream();
 
 ### <a name="parameters"></a>매개 변수
 
-*strbuf* 기존 `basic_streambuf` 개체입니다.
+*strbuf*<br/>
+기존 `basic_streambuf` 개체입니다.
 
-*오른쪽* 기존 `basic_iostream` 새 생성 하는 데 사용 되는 개체 `basic_iostream`합니다.
+*right*<br/>
+새 `basic_iostream`을 생성하는 데 사용된 기존 `basic_iostream` 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -105,7 +107,8 @@ basic_iostream& operator=(basic_iostream&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 는 `rvalue` 에 대 한 참조를 `basic_iostream` 할당할 개체입니다.
+*right*<br/>
+할당할 `basic_iostream` 개체에 대한 `rvalue` 참조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -121,7 +124,8 @@ void swap(basic_iostream& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 는 `basic_iostream` 개체입니다.
+*right*<br/>
+스왑할 `basic_iostream` 개체입니다.
 
 ### <a name="remarks"></a>설명
 

@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdd2a8417f66c0e095f571c914d5a4624179fdb6
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 4017fceab100689847ea99df80016aaba2fbd10f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962115"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107668"
 ---
 # <a name="alignedunion-class"></a>aligned_union 클래스
 
@@ -39,15 +39,17 @@ using aligned_union_t = typename aligned_union<Len, Types...>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*Len* 합집합에서 가장 큰 형식의 맞춤 값입니다.
+*Len 함수*<br/>
+공용 구조체에서 가장 큰 형식의 맞춤 값입니다.
 
-*형식* 기본 공용 구조체의 고유 형식입니다.
+*유형*<br/>
+기본 공용 구조체의 고유 형식입니다.
 
 ## <a name="remarks"></a>설명
 
 초기화되지 않은 저장소에 공용 구조체를 저장하기 위해 필요한 맞춤과 크기를 가져오기 위해 템플릿 클래스를 사용합니다. 멤버 typedef `type` POD 유형의 이름을 저장소에 나열 된 모든 형식에 적합 한 *형식을*; 최소 크기가 *Len*합니다. 정적 멤버 `alignment_value` 형식의 `std::size_t` 에 나열 된 모든 형식에 필요한 가장 엄격한 맞춤 포함 *형식*합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 `aligned_union`을 사용하여 공용 구조체 배치를 위한 맞춤화된 스택 버퍼를 할당하는 방법을 보여줍니다.
 

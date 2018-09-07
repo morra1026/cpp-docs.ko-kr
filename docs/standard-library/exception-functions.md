@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::terminate [C++]
 - std::uncaught_exception [C++]
 - std::unexpected [C++]
-ms.openlocfilehash: 5734c745f19d22c562f68aa2b518c9b4315ba12e
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 9401772e35527c63f47dc10bbb0e501029558825
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962275"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105408"
 ---
 # <a name="ltexceptiongt-functions"></a>&lt;exception&gt; 함수
 
@@ -75,7 +75,8 @@ exception_ptr make_exception_ptr(E Except);
 
 ### <a name="parameters"></a>매개 변수
 
-*제외 하 고* 복사할 예외가 있는 클래스입니다. 모든 클래스 개체를 인수로 사용할 수 있지만, 일반적으로 [예외 클래스](../standard-library/exception-class.md) 개체를 `make_exception_ptr` 함수의 인수로 지정합니다.
+*제외 하*<br/>
+복사할 예외가 있는 클래스입니다. 모든 클래스 개체를 인수로 사용할 수 있지만, 일반적으로 [예외 클래스](../standard-library/exception-class.md) 개체를 `make_exception_ptr` 함수의 인수로 지정합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -97,7 +98,8 @@ void rethrow_exception(exception_ptr P);
 
 ### <a name="parameters"></a>매개 변수
 
-*P* 예외가 다시 throw 합니다. 하는 경우 *P* 은 null [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr)을 throw [std:: bad_exception](../standard-library/bad-exception-class.md)합니다.
+*P*<br/>
+다시 throw할 catch된 예외입니다. 하는 경우 *P* 은 null [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr)을 throw [std:: bad_exception](../standard-library/bad-exception-class.md)합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -121,7 +123,8 @@ terminate_handler set_terminate(terminate_handler fnew) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*fnew* 종료 시 호출할 함수입니다.
+*fnew*<br/>
+종료 시 호출할 함수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -131,7 +134,7 @@ terminate_handler set_terminate(terminate_handler fnew) throw();
 
 새 함수를 설정 [terminate_handler](../standard-library/exception-typedefs.md#terminate_handler) 함수로 * *fnew*합니다. 따라서 *fnew* null 포인터가 아니어야 합니다. 함수는 이전 terminate 처리기의 주소를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // exception_set_terminate.cpp
@@ -178,7 +181,8 @@ unexpected_handler set_unexpected(unexpected_handler fnew) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*fnew* 예기치 않은 예외가 발생할 때 호출할 함수입니다.
+*fnew*<br/>
+예기치 않은 예외가 발생할 경우를 호출할 함수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -190,7 +194,7 @@ unexpected_handler set_unexpected(unexpected_handler fnew) throw();
 
 C++ 표준의 경우 함수가 throw 목록에 없는 예외를 throw할 경우 `unexpected`가 호출되어야 합니다. 현재 구현은 이 기능을 지원하지 않습니다. 다음 예제에서는 `unexpected`를 직접 호출하고 나서 `unexpected_handler`를 호출합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // exception_set_unexpected.cpp
@@ -230,7 +234,7 @@ void terminate();
 
 terminate 처리기는 호출자로 반환되지 않을 수 있습니다. Terminate 처리기는 함수를 호출 하는 프로그램 시작 시 `abort`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `terminate` 사용에 대한 예제는 [set_unexpected](../standard-library/exception-functions.md#set_unexpected)를 참조하세요.
 
@@ -246,7 +250,7 @@ bool uncaught_exception();
 
 반환 **true** throw 식 및 일치 하는 처리기 또는 호출의 예외 선언 초기화를 완료 하기 전에 평가 완료 한 후 [예기치 않은](../standard-library/exception-functions.md#unexpected) 의 결과로 throw 식입니다. 특히 `uncaught_exception` 돌아갑니다 **true** 예외 해제 중에 호출 되는 소멸자에서 호출 합니다. 장치의 경우 `uncaught_exception`은 Windows Mobile 2005 플랫폼을 포함하여 Windows CE 5.00 이상 버전에서만 지원됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // exception_uncaught_exception.cpp
@@ -323,7 +327,7 @@ unexpected 처리기는 호출자로 반환되지 않을 수 있습니다. 다�
 
 프로그램 시작 시 [terminate](../standard-library/exception-functions.md#terminate)를 호출하는 함수가 unexpected 처리기입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `unexpected` 사용에 대한 예제는 [set_unexpected](../standard-library/exception-functions.md#set_unexpected)를 참조하세요.
 

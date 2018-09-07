@@ -56,12 +56,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ed808d8b28071978e89d873d0af9735167e4dbf
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3a3c45dc2762c85a2b0f191b8dcf858ccb33b24b
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957511"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110099"
 ---
 # <a name="moneypunct-class"></a>moneypunct 클래스
 
@@ -76,9 +76,11 @@ class moneypunct;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType* 문자를 인코딩하기 위해 프로그램 내에서 사용 되는 형식입니다.
+*CharType*<br/>
+문자를 인코딩하기 위해 프로그램 내 사용하는 형식
 
-*Intl* 국제 규약을 준수 하는지 여부를 지정 하는 플래그입니다.
+*Intl*<br/>
+국제 규약을 준수하는지 여부를 지정하는 플래그입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -156,7 +158,7 @@ string_type curr_symbol() const;
 
 구성원 함수는 [do_curr_symbol](#do_curr_symbol)을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // moneypunct_curr_symbol.cpp
@@ -193,7 +195,7 @@ CharType decimal_point() const;
 
 구성원 함수는 [do_decimal_point](#do_decimal_point)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // moneypunct_decimal_pt.cpp
@@ -235,7 +237,7 @@ virtual string_type do_curr_symbol() const;
 
 소수점 기호로 사용할 로캘별 요소 시퀀스입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `curr_symbol`에 의해 가상 구성원 함수가 호출되는 [curr_symbol](#curr_symbol)의 예제를 참조하세요.
 
@@ -251,7 +253,7 @@ virtual CharType do_decimal_point() const;
 
 소수점 기호로 사용할 로캘별 요소 시퀀스입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `decimal_point`에 의해 가상 구성원 함수가 호출되는 [decimal_point](#decimal_point)의 예제를 참조하세요.
 
@@ -267,7 +269,7 @@ virtual int do_frac_digits() const;
 
 소수점 오른쪽에 표시할 로캘별 자릿수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `frac_digits`에 의해 가상 구성원 함수가 호출되는 [frac_digits](#frac_digits)의 예제를 참조하세요.
 
@@ -283,7 +285,7 @@ virtual string do_grouping() const;
 
 소수점 왼쪽의 숫자를 그룹화할 방법을 결정하기 위한 로캘별 규칙입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 예를 참조 하세요 [그룹화](#grouping)에 의해 가상 구성원 함수가 호출 되는, `grouping`합니다.
 
@@ -313,7 +315,7 @@ virtual pattern do_neg_format() const;
 
 `moneypunct`\< **CharType**, **Intl**>의 템플릿 버전은 `{`**money_base::symbol**, **money_base::sign**, **money_base::value**, **money_base::none**`}`을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `neg_format`에 의해 가상 구성원 함수가 호출되는 [neg_format](#neg_format)의 예제를 참조하세요.
 
@@ -329,7 +331,7 @@ virtual string_type do_negative_sign() const;
 
 음수 부호로 사용할 로캘별 요소 시퀀스입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `negative_sign`에 의해 가상 구성원 함수가 호출되는 [negative_sign](#negative_sign)의 예제를 참조하세요.
 
@@ -347,7 +349,7 @@ virtual pattern do_pos_format() const;
 
 moneypunct\< **CharType**, **Inputlterator**>의 템플릿 버전은 `{`**money_base::symbol**, **money_base::sign**, **money_base::value**, **money_base::none**`}`을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `pos_format`에 의해 가상 구성원 함수가 호출되는 [pos_format](#pos_format)의 예제를 참조하세요.
 
@@ -363,7 +365,7 @@ virtual string_type do_positive_sign() const;
 
 양수 부호로 사용할 로캘별 요소 시퀀스입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `positive_sign`에 의해 가상 구성원 함수가 호출되는 [positive_sign](#positive_sign)의 예제를 참조하세요.
 
@@ -379,7 +381,7 @@ virtual CharType do_thousands_sep() const;
 
 소스점 왼쪽의 그룹 구분 기호로 사용할 로캘별 요소입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `thousands_sep`에 의해 가상 구성원 함수가 호출되는 [thousands_sep](#thousands_sep)의 예제를 참조하세요.
 
@@ -399,7 +401,7 @@ int frac_digits() const;
 
 구성원 함수는 [do_frac_digits](#do_frac_digits)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // moneypunct_frac_digits.cpp
@@ -442,14 +444,14 @@ int main( )
 
 ```Output
 German_Germany.1252 international grouping:
- the 0th group to the left of the radix character is of size 3
+the 0th group to the left of the radix character is of size 3
 German_Germany.1252 international frac_digits
- to the right of the radix character: 2
+to the right of the radix character: 2
 
 German_Germany.1252 domestic grouping:
- the 0th group to the left of the radix character is of size 3
+the 0th group to the left of the radix character is of size 3
 German_Germany.1252 domestic frac_digits
- to the right of the radix character: 2
+to the right of the radix character: 2
 ```
 
 ## <a name="grouping"></a>  moneypunct::grouping
@@ -468,7 +470,7 @@ string grouping() const;
 
 구성원 함수는 [do_grouping](#do_grouping)을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // moneypunct_grouping.cpp
@@ -511,14 +513,14 @@ int main( )
 
 ```Output
 German_Germany.1252 international grouping:
- the 0th group to the left of the radix character is of size 3
+the 0th group to the left of the radix character is of size 3
 German_Germany.1252 international frac_digits
- to the right of the radix character: 2
+to the right of the radix character: 2
 
 German_Germany.1252 domestic grouping:
- the 0th group to the left of the radix character is of size 3
+the 0th group to the left of the radix character is of size 3
 German_Germany.1252 domestic frac_digits
- to the right of the radix character: 2
+to the right of the radix character: 2
 ```
 
 ## <a name="moneypunct"></a>  moneypunct::moneypunct
@@ -531,7 +533,8 @@ explicit moneypunct(size_t _Refs = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Refs* 개체에 대 한 메모리 관리의 유형을 지정 하는 데 사용 하는 정수 값입니다.
+*_Refs*<br/>
+개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -563,7 +566,7 @@ pattern neg_format() const;
 
 구성원 함수는 [do_neg_format](#do_neg_format)을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // moneypunct_neg_format.cpp
@@ -611,7 +614,7 @@ string_type negative_sign() const;
 
 구성원 함수는 [do_negative_sign](#do_negative_sign)을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // moneypunct_neg_sign.cpp
@@ -673,7 +676,7 @@ pattern pos_format() const;
 
 구성원 함수는 [do_pos_format](#do_pos_format)을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // moneypunct_pos_format.cpp
@@ -721,7 +724,7 @@ string_type positive_sign() const;
 
 구성원 함수는 [do_positive_sign](#do_positive_sign)을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // moneypunct_pos_sign.cpp
@@ -795,7 +798,7 @@ CharType thousands_sep() const;
 
 구성원 함수는 [do_thousands_sep](#do_thousands_sep)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // moneypunct_thou_sep.cpp

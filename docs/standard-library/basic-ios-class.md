@@ -65,12 +65,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28854866824b1750fb1887d5e822d2165034f687
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3abc3c08b46577f7d59b2831a68ded812a5da60a
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956845"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110020"
 ---
 # <a name="basicios-class"></a>basic_ios 클래스
 
@@ -86,9 +86,11 @@ class basic_ios : public ios_base
 
 ### <a name="parameters"></a>매개 변수
 
-*Elem* 형식입니다.
+*Elem*<br/>
+형식입니다.
 
-*Traits* 형식 변수의 `char_traits`합니다.
+*특성*<br/>
+`char_traits` 형식의 변수입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -172,7 +174,7 @@ bool bad() const;
 
 `badbit`에 대한 자세한 내용은 [ios_base::iostate](../standard-library/ios-base-class.md#iostate)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ios_bad.cpp
@@ -202,7 +204,8 @@ basic_ios();
 
 ### <a name="parameters"></a>매개 변수
 
-*sb* 를 입력 또는 출력 요소를 저장할 표준 버퍼입니다.
+*sb*<br/>
+입력 또는 출력 요소를 저장할 표준 버퍼입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -241,7 +244,7 @@ void clear(io_state state);
 
 `state`**&**[exceptions](#exceptions)가 0이 아니면 [failure](../standard-library/ios-base-class.md#failure) 클래스 개체를 throw합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 참조 [rdstate](#rdstate) 하 고 [getline](../standard-library/string-functions.md#getline) 사용 하는 예제 `clear`합니다.
 
@@ -256,7 +259,8 @@ const basic_ios<Elem, Traits>& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 플래그를 복사 하려는 스트림입니다.
+*right*<br/>
+플래그를 복사하려는 스트림입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -266,7 +270,7 @@ const basic_ios<Elem, Traits>& right);
 
 멤버 함수는 콜백 이벤트를 보고 **지울\_이벤트**합니다. 그런 다음에서 복사 *오른쪽* 로  **\*이** 채움 문자, 동률 포인터 및 서식 지정 정보입니다. 콜백 이벤트는 예외 마스크를 변경 하기 전에 보고 `copyfmt_event`합니다. 복사가 완료되고 **state &**[exceptions](#exceptions)가 0이 아니면, 함수는 실제로 [rdstate](#rdstate) 인수와 함께 [clear](#clear)를 호출합니다. 그런 다음 **\*this**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ios_copyfmt.cpp
@@ -304,7 +308,7 @@ bool eof() const;
 
 멤버 함수는 반환 **true** 하는 경우 [rdstate](#rdstate) `& eofbit` 0이 아닌 합니다. `eofbit`에 대한 자세한 내용은 [ios_base::iostate](../standard-library/ios-base-class.md#iostate)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ios_eof.cpp
@@ -338,7 +342,8 @@ void exceptions(io_state Newexcept);
 
 ### <a name="parameters"></a>매개 변수
 
-*Newexcept* 예외를 throw 하려는 플래그입니다.
+*Newexcept*<br/>
+예외를 throw하려는 플래그입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -348,7 +353,7 @@ void exceptions(io_state Newexcept);
 
 첫 번째 멤버 함수는 저장된 예외 마스크를 반환합니다. 두 번째 멤버 함수는 예외 마스크에 *_Except*를 저장하고 전에 저장된 값을 반환합니다. 새 예외 마스크를 저장하면 [clear](#clear)( [rdstate](#rdstate) )와 같은 예외가 throw될 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ios_exceptions.cpp
@@ -398,7 +403,7 @@ bool fail() const;
 
 `failbit`에 대한 자세한 내용은 [ios_base::iostate](../standard-library/ios-base-class.md#iostate)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ios_fail.cpp
@@ -426,7 +431,8 @@ char_type fill(char_type Char);
 
 ### <a name="parameters"></a>매개 변수
 
-*Char* 채우기 문자로 사용할 문자입니다.
+*Char*<br/>
+채우기 문자로 사용할 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -436,7 +442,7 @@ char_type fill(char_type Char);
 
 첫 번째 멤버 함수는 저장된 채우기 문자를 반환합니다. 두 번째 멤버 함수는 *Char* 반환 채우기 문자를 이전에 저장 된 값입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ios_fill.cpp
@@ -475,7 +481,7 @@ bool good() const;
 
 `goodbit`에 대한 자세한 내용은 [ios_base::iostate](../standard-library/ios-base-class.md#iostate)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `good`을 사용하는 예는 [basic_ios::bad](#bad)를 참조하세요.
 
@@ -489,7 +495,8 @@ locale imbue(const locale& Loc);
 
 ### <a name="parameters"></a>매개 변수
 
-*Loc* 로캘 문자열입니다.
+*Loc*<br/>
+로캘 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -503,7 +510,7 @@ locale imbue(const locale& Loc);
 
 어느 경우든 [ios_base::imbue](../standard-library/ios-base-class.md#imbue)(_ *Loc*)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ios_imbue.cpp
@@ -531,9 +538,11 @@ void init(basic_streambuf<Elem,Traits>* _Sb, bool _Isstd = false);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Sb* 를 입력 또는 출력 요소를 저장할 표준 버퍼입니다.
+*_Sb*<br/>
+입력 또는 출력 요소를 저장할 표준 버퍼입니다.
 
-*_Isstd* 표준 스트림 인지 여부를 지정 합니다.
+*_Isstd*<br/>
+표준 스트림인지 여부를 지정합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -577,7 +586,8 @@ void move(basic_ios&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 는 `ios_base` 에서 값을 이동 하는 개체입니다.
+*right*<br/>
+값을 이동할 `ios_base` 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -593,9 +603,11 @@ char narrow(char_type Char, char Default = '\0') const;
 
 ### <a name="parameters"></a>매개 변수
 
-*Char* 는 **char** 변환 합니다.
+*Char*<br/>
+합니다 **char** 변환 합니다.
 
-*기본* 는 **char** 는 반환 하려는 등가가 없는 경우.
+*기본*<br/>
+합니다 **char** 는 반환 하려는 등가가 없는 경우.
 
 ### <a name="return-value"></a>반환 값
 
@@ -605,7 +617,7 @@ char narrow(char_type Char, char Default = '\0') const;
 
 멤버 함수는 반환 [use_facet](../standard-library/basic-filebuf-class.md#open)\<ctype\<E >> ( [getloc](../standard-library/ios-base-class.md#getloc)()).`narrow` ( `Char`, `Default`).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ios_narrow.cpp
@@ -646,7 +658,7 @@ operator void *() const;
 
 연산자는 [fail](#fail)인 경우에만 null 포인터를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ios_opgood.cpp
@@ -676,7 +688,7 @@ bool operator!() const;
 
 [fail](#fail)을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ios_opbad.cpp
@@ -726,7 +738,8 @@ basic_streambuf<Elem, Traits>* _Sb);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Sb* 스트림입니다.
+*_Sb*<br/>
+스트림입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -734,7 +747,7 @@ basic_streambuf<Elem, Traits>* _Sb);
 
 두 번째 멤버 함수는 *_Sb* 저장 된 스트림 버퍼 포인터에 이전에 저장 된 값을 반환 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ios_rdbuf.cpp
@@ -770,7 +783,7 @@ iostate rdstate() const;
 
 저장된 스트림 상태 정보입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ios_rdstate.cpp
@@ -817,13 +830,14 @@ void setstate(iostate _State);
 
 ### <a name="parameters"></a>매개 변수
 
-*_State* 설정할 추가 플래그입니다.
+*_State*<br/>
+설정할 추가 플래그입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 실제로 [clear](#clear)(_ *State* &#124; [rdstate](#rdstate))를 호출합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ios_setstate.cpp
@@ -866,7 +880,8 @@ basic_streambuf<Elem, Tr>* strbuf)
 
 ### <a name="parameters"></a>매개 변수
 
-*strbuf* 읽기 버퍼가 될 스트림 버퍼입니다.
+*strbuf*<br/>
+읽기 버퍼가 될 스트림 버퍼입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -884,7 +899,8 @@ basic_ostream<Elem, Traits>* str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 스트림입니다.
+*str*<br/>
+스트림입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -894,7 +910,7 @@ basic_ostream<Elem, Traits>* str);
 
 `tie`는 한 스트림의 작업이 완료된 후 다른 스트림의 작업이 발생하도록 두 스트림을 동기화합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 이 예에서 cin을 cout과 연결하면 숫자 자체가 cin에서 추출되기 전에 "Enter a number:" 문자열이 콘솔로 이동합니다. 이렇게 하면 숫자를 읽을 때 "Enter a number:" 문자열이 아직 버퍼에 남아 있으므로, 실제로 응답해야 할 메시지가 사용자에게 표시되도록 할 수 있습니다. 기본적으로 cin과 cout은 연결됩니다.
 
@@ -930,7 +946,8 @@ char_type widen(char Char) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*Char* 변환할 문자입니다.
+*Char*<br/>
+변환할 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -940,7 +957,7 @@ char_type widen(char Char) const;
 
 멤버 함수는 [use_facet](../standard-library/basic-filebuf-class.md#open)< **ctype**\< **E**> >( [getloc](../standard-library/ios-base-class.md#getloc)). `widen`( `Char`)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ios_widen.cpp
@@ -971,7 +988,8 @@ void swap(basic_ios&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 는 `basic_ios` 값을 교환 하는 데 사용 되는 개체입니다.
+*right*<br/>
+값을 교환하는 데 사용되는 `basic_ios` 개체입니다.
 
 ### <a name="remarks"></a>설명
 

@@ -24,12 +24,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b6c1c11a9c81123c518e3a0da3e56cc81d4cd5c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 02c4c537f1a420a096fbcd979580ff7b10076845
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958931"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106758"
 ---
 # <a name="timeput-class"></a>time_put 클래스
 
@@ -46,10 +46,10 @@ class time_put : public locale::facet;
 ### <a name="parameters"></a>매개 변수
 
 *CharType*  
- 문자를 인코딩하기 위해 프로그램 내 사용하는 형식
+문자를 인코딩하기 위해 프로그램 내 사용하는 형식
 
 *OutputIterator*  
- 시간 put 함수가 출력을 쓰는 반복기의 형식입니다.
+시간 put 함수가 출력을 쓰는 반복기의 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -109,19 +109,19 @@ virtual iter_type do_put(
 ### <a name="parameters"></a>매개 변수
 
 *next*  
- 시간과 날짜를 나타내는 문자 시퀀스를 삽입할 출력 반복기입니다.
+시간과 날짜를 나타내는 문자 시퀀스를 삽입할 출력 반복기입니다.
 
 *_Iosbase*  
- 사용되지 않습니다.
+사용되지 않습니다.
 
 *_Pt*  
- 출력되는 날짜 및 시간 정보입니다.
+출력되는 날짜 및 시간 정보입니다.
 
 *_Fmt*  
- 출력의 형식입니다. 유효한 값은 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)를 참조하세요.
+출력의 형식입니다. 유효한 값은 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)를 참조하세요.
 
 *_Mod*  
- 형식의 한정자입니다. 유효한 값은 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)를 참조하세요.
+형식의 한정자입니다. 유효한 값은 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)를 참조하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -133,7 +133,7 @@ virtual iter_type do_put(
 
 출력에서 사용 하는 동일한 규칙으로 생성 됩니다 `strftime`, 마지막 인수를 사용 하 여 *_Pt*, 일련의 생성에 대 한 **char** 배열 요소입니다. 이러한 각 **char** 요소에 형식의 동일 요소에 매핑된다고 가정은 `CharType` 간단한 일대일 매핑을 통해. 하는 경우 *_Mod* 가 0 인 유효한 형식은 "%F", F 바뀝니다 *_Fmt*합니다. 그렇지 않은 경우 유효 형식은 "%MF" 이며, M 바뀝니다 *_Mod*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_put`을 호출하는 [put](#put)에 대한 예제를 참조하세요.
 
@@ -172,28 +172,28 @@ iter_type put(iter_type next,
 ### <a name="parameters"></a>매개 변수
 
 *next*  
- 시간과 날짜를 나타내는 문자 시퀀스를 삽입할 출력 반복기입니다.
+시간과 날짜를 나타내는 문자 시퀀스를 삽입할 출력 반복기입니다.
 
 *_Iosbase*  
- 사용되지 않습니다.
+사용되지 않습니다.
 
 *_Fill*  
- 형식의 문자 `CharType` 간격에 사용 합니다.
+형식의 문자 `CharType` 간격에 사용 합니다.
 
 *_Pt*  
- 출력되는 날짜 및 시간 정보입니다.
+출력되는 날짜 및 시간 정보입니다.
 
 *_Fmt*  
- 출력의 형식입니다. 유효한 값은 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)를 참조하세요.
+출력의 형식입니다. 유효한 값은 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)를 참조하세요.
 
 *_Mod*  
- 형식의 한정자입니다. 유효한 값은 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)를 참조하세요.
+형식의 한정자입니다. 유효한 값은 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)를 참조하세요.
 
 *first*  
- 출력에 대한 서식 문자열의 시작 부분입니다. 유효한 값은 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)를 참조하세요.
+출력에 대한 서식 문자열의 시작 부분입니다. 유효한 값은 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)를 참조하세요.
 
 *last*  
- 출력에 대한 서식 문자열의 끝부분입니다. 유효한 값은 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)를 참조하세요.
+출력에 대한 서식 문자열의 끝부분입니다. 유효한 값은 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)를 참조하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -203,7 +203,7 @@ iter_type put(iter_type next,
 
 첫 번째 멤버 함수는 반환 [do_put](#do_put)(`next`, `_Iosbase`를 `_Fill`를 `_Pt`를 `_Fmt`, `_Mod`). 두 번째 구성원 함수는 퍼센트 기호(%)를 제외한 간격 [ `first`, `last`)의 모든 요소를 \* `next`에 복사합니다. 간격 [ `first`, `last`)에서 퍼센트 기호 뒤에 문자 *C*가 오는 경우 함수는 `next` = `do_put`(`next`, `_Iosbase`, `_Fill`, `_Pt`, *C*, 0)을 대신 계산하여 *C*를 지난 위치로 건너뜁니다. 그러나 *C*가 EOQ# 집합의 한정자 문자이고 간격 [ `first`, `last`)에서 뒤에 문자 `C2`가 오는 경우 함수는 `next` = `do_put`(`next`, `_Iosbase`, `_Fill`, `_Pt`, `C2`, *C*)를 대신 계산하여 `C2`를 지난 위치로 건너뜁니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // time_put_put.cpp
@@ -257,7 +257,8 @@ explicit time_put(size_t _Refs = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Refs* 개체에 대 한 메모리 관리의 유형을 지정 하는 데 사용 하는 정수 값입니다.
+*_Refs*<br/>
+개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
 ### <a name="remarks"></a>설명
 

@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e6df4526eea3b0b8b4e91fa4f3e6a89cdd8adb7
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 156ae11bcc63e5d19b816580bfce7bb24cfbc3d4
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964312"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106680"
 ---
 # <a name="extent-class"></a>extent 클래스
 
@@ -37,15 +37,17 @@ struct extent;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty* 쿼리할 형식입니다.
+*Ty*<br/>
+형식이 쿼리입니다.
 
-*I* 쿼리 바인딩되는 배열입니다.
+*I*<br/>
+쿼리에 바인딩되는 배열입니다.
 
 ## <a name="remarks"></a>설명
 
 경우 *Ty* 이상이 있는 배열 형식입니다 *합니까* 차원 형식 쿼리는 지정 된 차원의 요소 수가 보유 *I*합니다. 경우 *Ty* 배열 형식이 아니거나 순위가 보다 작거나 *있습니까*, 이거나 *합니까* 0 및 *Ty* 형식입니다 "의 경계를 알 수 없는 배열 `U` "에 형식 쿼리는 0 값을 보유 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // std__type_traits__extent.cpp

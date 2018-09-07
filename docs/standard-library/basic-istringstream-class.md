@@ -24,12 +24,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53760cd2d69067fd93a76a35b0ba29fcc82a4664
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 9580068474eba77bcf50067efefb98b5949d464f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960071"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44109892"
 ---
 # <a name="basicistringstream-class"></a>basic_istringstream 클래스
 
@@ -44,11 +44,14 @@ class basic_istringstream : public basic_istream<Elem, Tr>
 
 ### <a name="parameters"></a>매개 변수
 
-*Alloc* 할당자 클래스입니다.
+*할당*<br/>
+할당자 클래스입니다.
 
-*Elem* 문자열 기본 요소의 형식입니다.
+*Elem*<br/>
+문자열 기본 요소의 형식입니다.
 
-*Tr* 문자열의 기본 요소에서 특수화 된 문자 특성입니다.
+*Tr*<br/>
+문자열의 기본 요소에서 특수화된 문자 특성입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -112,11 +115,14 @@ basic_istringstream(
 
 ### <a name="parameters"></a>매개 변수
 
-*모드 (_m)* 의 열거형 중 하나 [ios_base:: openmode](../standard-library/ios-base-class.md#openmode)합니다.
+*모드 (_m)*<br/>
+[ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
-*str* 형식의 개체 `basic_string`합니다.
+*str*<br/>
+`basic_string` 형식의 개체입니다.
 
-*오른쪽* 의 rvalue 참조는 `basic_istringstream` 개체입니다.
+*right*<br/>
+`basic_istringstream` 개체에 대한 rvalue 참조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -136,7 +142,8 @@ basic_istringstream& operator=(basic_istringstream&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* rvalue 참조는 `basic_istringstream` 개체입니다.
+*right*<br/>
+`basic_istringstream` 개체에 대한 rvalue 참조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -154,7 +161,7 @@ basic_stringbuf<Elem, Tr, Alloc> *rdbuf() const;
 
 형식의 저장 된 스트림 버퍼 주소 `pointer` basic_stringbuf에 < **Elem**하십시오 **Tr**, `Alloc`>.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `rdbuf`의 사용 예제는 [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close)를 참조하세요.
 
@@ -172,7 +179,8 @@ void str(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Newstr* 새 문자열입니다.
+*_Newstr*<br/>
+새 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -182,7 +190,7 @@ void str(
 
 첫 번째 멤버 함수는 [rdbuf](#rdbuf) -> [str](../standard-library/basic-stringbuf-class.md#str)을 반환합니다. 두 번째 멤버 함수는 `rdbuf` -> **str**( `_Newstr`)을 호출합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 참조 [basic_stringbuf:: str](../standard-library/basic-stringbuf-class.md#str) 사용 하는 예제에 대 한 `str`합니다.
 

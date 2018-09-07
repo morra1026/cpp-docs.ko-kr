@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 875df2d76f10b1d8319df0e82541ddf73e9d8c2c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 2c2b4c93604a95b4c2d73c69a834ab6724bd9193
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963539"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103947"
 ---
 # <a name="piecewiseconstantdistribution-class"></a>piecewise_constant_distribution 클래스
 
@@ -90,7 +90,8 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*RealType* 부동 소수점 결과 형식, 기본값은 **double**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*RealType*<br/>
+부동 소수점 결과 형식, 기본값으로 **이중**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -117,7 +118,7 @@ public:
 
 분포 클래스 및 이러한 클래스의 구성원에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // compile with: /EHsc /W4
@@ -258,23 +259,32 @@ explicit piecewise_constant_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*firstI* 분포 범위의 첫 번째 요소의 입력된 반복기입니다.
+*firstI*<br/>
+대상 범위에 있는 첫 번째 요소의 입력 반복기입니다.
 
-*lastI* 배포 범위에서 마지막 요소의 입력된 반복기입니다.
+*lastI*<br/>
+대상 범위에 있는 마지막 요소의 입력 반복기입니다.
 
-*firstW* 가중치 범위에 있는 첫 번째 요소의 입력된 반복기입니다.
+*firstW*<br/>
+가중치 범위에 있는 첫 번째 요소의 입력 반복기입니다.
 
-*간격* 는 [initializer_list](../cpp/initializers.md) 분포의 간격이 있습니다.
+*intervals*<br/>
+분포의 간격이 있는 [initializer_list](../cpp/initializers.md)입니다.
 
-*개수* 분포 범위의 요소 수입니다.
+*count*<br/>
+분포 범위의 요소 수입니다.
 
-*xmin* 분포 범위의 가장 낮은 값입니다.
+*xmin*<br/>
+분포 범위의 가장 작은 값입니다.
 
-*xmax* 분포 범위의 가장 높은 값입니다. *xmin*보다 커야 합니다.
+*xmax*<br/>
+분포 범위의 가장 큰 값입니다. *xmin*보다 커야 합니다.
 
-*weightfunc* 분포에 대 한 확률 함수를 나타내는 개체입니다. 매개 변수 및 반환 값을 변환할 수 있어야 합니다 **이중**합니다.
+*weightfunc*<br/>
+분포의 확률 함수를 나타내는 개체입니다. 매개 변수 및 반환 값을 변환할 수 있어야 합니다 **이중**합니다.
 
-*parm* 분포를 생성 하는 데 매개 변수 구조입니다.
+*parm*<br/>
+분포를 생성하는 데 사용되는 매개 변수 구조입니다.
 
 ### <a name="remarks"></a>설명
 

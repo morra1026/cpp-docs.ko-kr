@@ -48,12 +48,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31f3f2a4c01645df17af8992cc7f6b92dd57966a
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: ab9674ffafbf6563f566778d11991f8aa95c44d8
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960933"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106472"
 ---
 # <a name="regextraits-class"></a>regex_traits 클래스
 
@@ -92,7 +92,8 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*Elem* 문자 요소 형식에 설명 합니다.
+*Elem*<br/>
+설명할 문자 요소 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -118,7 +119,7 @@ typedef T8 char_class_type;
 
 형식은 문자 클래스를 지정하는 지정되지 않은 형식의 동의어입니다. `|` 연산자를 사용하여 이 형식의 값을 결합하면 피연산자가 지정한 클래스의 합집합인 문자 클래스를 지정할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_traits_char_class_type.cpp
@@ -201,7 +202,7 @@ typedef Elem char_type;
 
 typedef는 템플릿 인수 `Elem`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_traits_char_type.cpp
@@ -284,7 +285,7 @@ locale_type getloc() const;
 
 멤버 함수는 저장된 `locale` 개체를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_traits_getloc.cpp
@@ -365,13 +366,14 @@ locale_type imbue(locale_type loc);
 
 ### <a name="parameters"></a>매개 변수
 
-*loc* 저장 하는 로캘 개체.
+*Loc*<br/>
+저장할 로캘 개체입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수 복사본 *loc* 저장 된 `locale` 개체 저장된 된 이전 값의 복사본을 반환 `locale` 개체입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_traits_imbue.cpp
@@ -452,15 +454,17 @@ bool isctype(char_type ch, char_class_type cls) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*ch* 테스트할 요소입니다.
+*ch*<br/>
+테스트할 요소입니다.
 
-*cls* 클래스를 테스트 합니다.
+*cls*<br/>
+테스트할 클래스입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수가 반환 하는 경우에 true 문자 *ch* 는 지정 된 문자 클래스 *cls*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_traits_isctype.cpp
@@ -541,7 +545,7 @@ static size_type length(const char_type *str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*
+*str*<br/>
 
 Null로 끝나는 시퀀스입니다.
 
@@ -549,7 +553,7 @@ Null로 끝나는 시퀀스입니다.
 
 정적 멤버 함수는 `std::char_traits<char_type>::length(str)`를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_traits_length.cpp
@@ -632,7 +636,7 @@ typedef T7 locale_type;
 
 typedef는 로캘을 캡슐화하는 형식의 동의어입니다. 특수화 `regex_traits<char>` 및 `regex_traits<wchar_t>` 에서 `std::locale`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_traits_locale_type.cpp
@@ -714,9 +718,11 @@ char_class_type lookup_classname(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 조회할 시퀀스의 시작 합니다.
+*first*<br/>
+조회할 시퀀스의 시작입니다.
 
-*마지막* 조회할 시퀀스의 끝입니다.
+*last*<br/>
+조회할 시퀀스의 끝입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -726,7 +732,7 @@ char_class_type lookup_classname(FwdIt first, FwdIt last) const;
 
 특수화 `regex_traits<wchar_t>`는 모두 대/소문자를 무시하고 `L"d"`, `L"s"`, `L"w"`, `L"alnum"`, `L"alpha"`, `L"blank"`, `L"cntrl"`, `L"digit"`, `L"graph"`, `L"lower"`, `L"print"`, `L"punct"`, `L"space"`, `L"upper"` 및 `L"xdigit"` 이름을 인식합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_traits_lookup_classname.cpp
@@ -808,15 +814,17 @@ string_type lookup_collatename(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 조회할 시퀀스의 시작 합니다.
+*first*<br/>
+조회할 시퀀스의 시작입니다.
 
-*마지막* 조회할 시퀀스의 끝입니다.
+*last*<br/>
+조회할 시퀀스의 끝입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 `[first, last)`시퀀스에 해당하는 데이터 정렬 요소를 포함하는 문자열 개체를 반환하거나, 시퀀스가 유효한 데이터 정렬 요소가 아닌 경우 빈 문자열을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_traits_lookup_collatename.cpp
@@ -899,7 +907,7 @@ regex_traits();
 
 생성자는 저장된 `locale` 개체가 기본 로캘로 초기화되는 개체를 생성합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_traits_construct.cpp
@@ -984,7 +992,7 @@ typedef는 부호 없는 정수 형식의 동의어입니다. 특수화 `regex_t
 
 typedef는 `std::size_t`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_traits_size_type.cpp
@@ -1067,7 +1075,7 @@ typedef basic_string<Elem> string_type;
 
 typedef는 `basic_string<Elem>`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_traits_string_type.cpp
@@ -1149,15 +1157,17 @@ string_type transform(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 변환할 시퀀스의 시작 합니다.
+*first*<br/>
+변환할 시퀀스의 시작입니다.
 
-*마지막* 변환할 시퀀스의 끝입니다.
+*last*<br/>
+변환할 시퀀스의 끝입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 저장된 `locale` 개체에 따라 달라지는 변환 규칙을 사용하여 생성하는 문자열을 반환합니다. 반복기 범위 `[first1, last1)` 및 `[first2, last2)`로 지정된 두 문자 시퀀스에 대해, 반복기 범위 `transform(first1, last1) < transform(first2, last2)` 로 지정된 문자 시퀀스가 반복기 범위 `[first1, last1)` 로 지정된 문자 시퀀스보다 먼저 정렬되면 `[first2, last2)`입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_traits_transform.cpp
@@ -1239,15 +1249,17 @@ string_type transform_primary(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 변환할 시퀀스의 시작 합니다.
+*first*<br/>
+변환할 시퀀스의 시작입니다.
 
-*마지막* 변환할 시퀀스의 끝입니다.
+*last*<br/>
+변환할 시퀀스의 끝입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 저장된 `locale` 개체에 따라 달라지는 변환 규칙을 사용하여 생성하는 문자열을 반환합니다. 반복기 범위 `[first1, last1)` 및 `[first2, last2)`로 지정된 두 문자 시퀀스에 대해, 반복기 범위 `transform_primary(first1, last1) < transform_primary(first2, last2)` 로 지정된 문자 시퀀스가 대/소문자 또는 악센트에 관계없이 반복기 범위 `[first1, last1)` 로 지정된 문자 시퀀스보다 먼저 정렬되면 `[first2, last2)` 입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_traits_transform_primary.cpp
@@ -1328,13 +1340,14 @@ char_type translate(char_type ch) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*ch* 변환할 요소입니다.
+*ch*<br/>
+변환할 요소입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 저장된 `locale` 개체에 따라 달라지는 변환 규칙을 사용하여 생성하는 문자를 반환합니다. 두 `char_type` 개체 `ch1` 및 `ch2`의 경우 하나는 정규식 정의에 나타나고 다른 하나는 대/소문자를 구분하는 일치에 대한 대상 시퀀스의 해당 위치에 나타날 때 `translate(ch1) == translate(ch2)` 및 `ch1` 가 일치해야 하는 경우에만 `ch2` 입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_traits_translate.cpp
@@ -1415,13 +1428,14 @@ char_type translate_nocase(char_type ch) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*ch* 변환할 요소입니다.
+*ch*<br/>
+변환할 요소입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 저장된 `locale` 개체에 따라 달라지는 변환 규칙을 사용하여 생성하는 문자를 반환합니다. 두 `char_type` 개체 `ch1` 및 `ch2`의 경우 하나는 정규식 정의에 나타나고 다른 하나는 대/소문자를 구분하지 않는 일치에 대한 대상 시퀀스의 해당 위치에 나타날 때 `translate_nocase(ch1) == translate_nocase(ch2)` 및 `ch1` 가 일치해야 하는 경우에만 `ch2` 입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_traits_translate_nocase.cpp
@@ -1502,15 +1516,17 @@ int value(Elem ch, int radix) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*ch* 변환할 요소입니다.
+*ch*<br/>
+변환할 요소입니다.
 
-*기 수* 기본 산술 사용입니다.
+*radix*<br/>
+사용할 기본 산술입니다.
 
 ### <a name="remarks"></a>설명
 
 문자를 나타내는 값을 반환 하는 멤버 함수 *ch* 자료의 *기 수*, 또는-1 이면 *ch* 밑에서 유효한 숫자가 아닙니다 *기수*. 함수는 호출할 수만 *기 수* 8, 10 또는 16의 인수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_traits_value.cpp

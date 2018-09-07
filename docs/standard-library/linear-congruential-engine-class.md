@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4069dc5151dd231773e926aadf17de7c03d3770
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a3b5ed9880a29e0738f67ca30695ea87c81de6b7
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958281"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110216"
 ---
 # <a name="linearcongruentialengine-class"></a>linear_congruential_engine 클래스
 
@@ -55,13 +55,17 @@ class linear_congruential_engine{
 
 ### <a name="parameters"></a>매개 변수
 
-*UIntType* 부호 없는 정수 결과 형식입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*UIntType*<br/>
+부호가 없는 정수 결과 형식입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-*A* **승수**합니다. **사전 조건**: 설명 섹션을 참조하세요.
+*A*<br/>
+**승수**. **사전 조건**: 설명 섹션을 참조하세요.
 
-*C* **증가**합니다. **사전 조건**: 설명 섹션을 참조하세요.
+*C*<br/>
+**증분**. **사전 조건**: 설명 섹션을 참조하세요.
 
-*M* **모듈러스**합니다. **사전 조건**: 설명을 참조하세요.
+*M*<br/>
+**모듈러스**. **사전 조건**: 설명을 참조하세요.
 
 ## <a name="members"></a>멤버
 

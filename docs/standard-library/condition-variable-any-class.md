@@ -28,12 +28,12 @@ helpviewer_keywords:
 - std::condition_variable_any::wait_until
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 56082c63ccc64e117d9962ff35dddc01969f403b
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 9acd5abc941c3cc3ab2f1c22486298d7cc7da16c
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959234"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106966"
 ---
 # <a name="conditionvariableany-class"></a>condition_variable_any 클래스
 
@@ -111,9 +111,11 @@ void wait(Lock& Lck, Predicate Pred);
 
 ### <a name="parameters"></a>매개 변수
 
-*Lck* 는 `mutex` 형식의 개체입니다.
+*Lck*<br/>
+모든 형식의 `mutex` 개체입니다.
 
-*Pred* 반환 하는 식 **true** 하거나 **false**합니다.
+*pred*<br/>
+반환 하는 식 **true** 하거나 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -140,11 +142,14 @@ bool wait_for(Lock& Lck, const chrono::duration<Rep, Period>& Rel_time, Predicat
 
 ### <a name="parameters"></a>매개 변수
 
-*Lck* 는 `mutex` 형식의 개체입니다.
+*Lck*<br/>
+모든 형식의 `mutex` 개체입니다.
 
-*Rel_time* 는 `chrono::duration` 절전 된 시간 전에 스레드를 지정 하는 개체입니다.
+*Rel_time*<br/>
+스레드가 대기 모드를 해제하기 전까지의 시간을 지정하는 `chrono::duration` 개체입니다.
 
-*Pred* 반환 하는 식 **true** 하거나 **false**합니다.
+*pred*<br/>
+반환 하는 식 **true** 하거나 **false**합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -192,11 +197,14 @@ void wait_until(
 
 ### <a name="parameters"></a>매개 변수
 
-*Lck* 뮤텍스 개체입니다.
+*Lck*<br/>
+뮤텍스 개체입니다.
 
-*Abs_time* A [chrono:: time_point](../standard-library/time-point-class.md) 개체입니다.
+*Abs_time*<br/>
+[chrono::time_point](../standard-library/time-point-class.md) 개체입니다.
 
-*Pred* 반환 하는 식 **true** 하거나 **false**합니다.
+*pred*<br/>
+반환 하는 식 **true** 하거나 **false**합니다.
 
 ### <a name="return-value"></a>반환 값
 

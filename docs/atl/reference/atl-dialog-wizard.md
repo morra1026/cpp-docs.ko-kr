@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe3311e46ea28424717a0274fbe9e956610cdc54
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3a6854a3b11d5c5850d790e749789e91a7cb986a
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767714"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110046"
 ---
 # <a name="atl-dialog-wizard"></a>ATL 대화 상자 마법사
 
@@ -35,7 +35,7 @@ ms.locfileid: "43767714"
 **짧은 이름**  
 ATL 대화 상자 개체에 대 한 약식된 이름을 설정합니다. 사용자가 제공한 이름을 개별적으로 해당 필드를 변경 하지 않는 한 클래스 이름 및 파일 (.cpp 파일과.h) 이름이 결정 합니다.
 
-`Class`  
+**클래스**  
 만들 클래스의 이름을 설정 합니다. 이 이름은 기반에 제공한 이름으로 **약식 이름**클래스 이름에 대 한 일반적인 접두사 'C'가 뒤에서 합니다.
 
 **.h 파일**  

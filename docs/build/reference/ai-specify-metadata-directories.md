@@ -21,42 +21,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bde5c93c8a211bb0fc66028932a0a7d50415236d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6f932e186630d1bc6c846c78af99f98262861068
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32369434"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110671"
 ---
 # <a name="ai-specify-metadata-directories"></a>/AI(메타데이터 디렉터리 지정)
-`#using` 지시문에 전달된 파일 참조를 확인하기 위해 컴파일러가 검색할 디렉터리를 지정합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-/AIdirectory  
-```  
-  
-## <a name="arguments"></a>인수  
- `directory`  
- 검색할 컴파일러의 디렉터리나 경로  
-  
-## <a name="remarks"></a>설명  
- 디렉터리를 하나만 전달할 수는 **/AI** 호출 합니다. 하나를 지정 **/AI** 컴파일러로 검색 하려는 각 경로 대 한 옵션입니다. 예를 들어에 대 한 컴파일러 검색 경로에 C:\Project\Meta와 C:\Common\Meta를 모두 추가 하려면 `#using` 지시문 추가 `/AI"C:\Project\Meta" /AI"C:\Common\Meta"` 컴파일러 명령줄에 각 디렉터리를 추가 하거나는 **추가 #using 디렉터리** Visual Studio의 속성입니다.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면  
-  
-1.  프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)합니다.  
-  
-2.  탐색 창에서 선택 **구성 속성**, **C/c + +**, **일반**합니다.  
-  
-3.  수정 된 **추가 #using 디렉터리** 속성입니다.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면  
-  
--   <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalUsingDirectories%2A>을 참조하세요.  
-  
-## <a name="see-also"></a>참고 항목  
- [컴파일러 옵션](../../build/reference/compiler-options.md)   
- [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)   
- [#using 지시문](../../preprocessor/hash-using-directive-cpp.md)
+
+`#using` 지시문에 전달된 파일 참조를 확인하기 위해 컴파일러가 검색할 디렉터리를 지정합니다.
+
+## <a name="syntax"></a>구문
+
+> **/AI**_디렉터리_
+
+## <a name="arguments"></a>인수
+
+*디렉터리*<br/>
+검색할 컴파일러의 디렉터리나 경로
+
+## <a name="remarks"></a>설명
+디렉터리를 하나만 전달할 수는 **/AI** 호출 합니다. 하나를 지정할 **/AI** 컴파일러로 검색 하려는 각 경로 대 한 옵션입니다. 예를 들어에 대 한 컴파일러 검색 경로에 C:\Project\Meta와 C:\Common\Meta를 모두 추가 하려면 `#using` 지시문을 추가 `/AI"C:\Project\Meta" /AI"C:\Common\Meta"` 컴파일러 명령줄에 각 디렉터리를 추가 하거나 합니다 **추가 #using 디렉터리** Visual Studio의 속성입니다.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
+
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+
+2. 선택 된 **구성 속성** > **C/c + +** > **일반** 속성 페이지.
+
+3. 수정 된 **추가 #using 디렉터리** 속성입니다.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
+
+- <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalUsingDirectories%2A>을 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+[컴파일러 옵션](../../build/reference/compiler-options.md)   
+[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)   
+[#using 지시문](../../preprocessor/hash-using-directive-cpp.md)
