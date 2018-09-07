@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1de239e408adf4f66e7868ce9b91d7da574fffde
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: e03cb627e7e9db40d56a69112977d87141626696
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958037"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100446"
 ---
 # <a name="messagesbyname-class"></a>messages_byname 클래스
 
@@ -49,9 +49,11 @@ protected:
 
 ### <a name="parameters"></a>매개 변수
 
-*_Locname* 명명 된 로캘입니다.
+*_Locname*<br/>
+명명된 로캘입니다.
 
-*_Refs* 초기 참조 개수입니다.
+*_Refs*<br/>
+초기 참조 개수입니다.
 
 ## <a name="remarks"></a>설명
 

@@ -32,12 +32,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc6dfd832d18dbabc1ebc10aec252cc8afe15346
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 35a1ae1a27b08db14673b125ecbc2978fd4738a3
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402519"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100485"
 ---
 # <a name="free"></a>free
 
@@ -53,25 +53,26 @@ void free(
 
 ### <a name="parameters"></a>매개 변수
 
-*memblock* 이전에 해제 될 메모리 블록을 할당 합니다.
+*memblock*<br/>
+해제할 이전에 할당된 메모리 블록입니다.
 
 ## <a name="remarks"></a>설명
 
-**무료** 함수는 메모리 블록 할당 취소 (*memblock*)를 호출 하 여 이전에 할당 된 **calloc**, **malloc**, 또는 **realloc**합니다. 해제 된 바이트 수는 블록이 할당 된 경우 요청 된 바이트 수에 해당 하는 (또는의 경우에 다시 할당 된 **realloc**). 경우 *memblock* 은 **NULL**, 포인터는 무시 됩니다. 및 **무료** 즉시 반환 합니다. 잘못 된 포인터를 해제 하려고 시도 (으로 할당 되지 않은 메모리 블록에 대 한 포인터 **calloc**, **malloc**, 또는 **realloc**) 후속 할당 요청에 영향을 줄 수 및 오류가 발생 합니다.
+**무료** 함수에는 메모리 블록을 할당 취소 (*memblock*)를 호출 하 여 이전에 할당 된 **calloc**하십시오 **malloc**, 또는 **realloc**합니다. 해제 된 바이트 수는 블록이 할당 된 경우 요청 된 바이트 수와 같습니다 (또는 다시 할당의 경우 **realloc**). 경우 *memblock* 은 **NULL**, 포인터가 무시 되 고 **무료** 즉시 반환 합니다. 잘못 된 포인터를 해제 하려고 (에서 할당 되지 않은 메모리 블록에 대 한 포인터 **calloc**하십시오 **malloc**, 또는 **realloc**) 후속 할당 요청에 영향을 줄 수 및 오류가 발생 합니다.
 
 메모리를 해제에서 오류가 발생 하는 경우 **errno** 오류의 성격에 운영 체제에서 정보를 사용 하 여 설정 합니다. 자세한 내용은 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 메모리 블록이 해제된 후 [_heapmin](heapmin.md)은 사용되지 않은 영역을 결합하고 다시 운영 체제로 릴리스하여 힙에 있는 사용 가능한 메모리 양을 최소화합니다. 운영 체제로 릴리스되지 않은 해제된 메모리는 사용 가능한 풀로 복원되고 다시 할당할 수 있습니다.
 
-응용 프로그램은 C 런타임 라이브러리의 디버그 버전과 연결 되어 있으면 **무료** 확인 [_free_dbg](free-dbg.md)합니다. 디버깅 프로세스 동안 힙을 관리하는 방법에 대한 자세한 내용은 [CRT 디버그 힙](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요.
+응용 프로그램이 C 런타임 라이브러리의 디버그 버전과 연결 됩니다 **무료** 로 확인 되 [_free_dbg](free-dbg.md)합니다. 디버깅 프로세스 동안 힙을 관리하는 방법에 대한 자세한 내용은 [CRT 디버그 힙](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요.
 
-**무료** 표시 되어 `__declspec(noalias)`, 함수 전역 변수를 수정할 수 없도록 보장을 의미 합니다. 자세한 내용은 [noalias](../../cpp/noalias.md)를 참조하세요.
+**사용 가능한** 표시 된 `__declspec(noalias)`는 함수가 전역 변수를 수정할 수 없도록 보장 되는 의미입니다. 자세한 내용은 [noalias](../../cpp/noalias.md)를 참조하세요.
 
 [_malloca](malloca.md)를 사용하여 할당된 메모리를 해제하려면 [_freea](freea.md)를 사용합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**free**|\<stdlib.h> 및 \<malloc.h>|
 

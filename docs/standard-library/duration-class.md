@@ -21,12 +21,12 @@ helpviewer_keywords:
 - std::chrono [C++], duration
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4b85fd369e82ceab0a6b5255267e32d864eab67
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: bb4d2c813b53a180f13d5047dc0d78dae98fe59f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956868"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100913"
 ---
 # <a name="duration-class"></a>duration 클래스
 
@@ -120,13 +120,17 @@ constexpr duration(const duration<Rep2, Period2>& Dur);
 
 ### <a name="parameters"></a>매개 변수
 
-*Rep2* 틱 수를 나타내는 산술 형식입니다.
+*Rep2*<br/>
+틱 수를 나타내는 산술 형식입니다.
 
-*Period2* 는 `std::ratio` 틱 기간 단위 시간 (초)을 나타내는 템플릿 특수화입니다.
+*Period2*<br/>
+틱 기간(초)을 나타내는 `std::ratio` 템플릿 특수화입니다.
 
-*R* 기본 기간의 틱 수입니다.
+*R*<br/>
+기본 기간의 틱 수입니다.
 
-*기간* 으로 지정 된 기간의 틱 수 *Period2*합니다.
+*기간*<br/>
+지정 된 기간의 틱 수 *Period2*합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -202,7 +206,8 @@ duration& operator%=(const duration& Div);
 
 ### <a name="parameters"></a>매개 변수
 
-*Div* 첫 번째 방법의 경우 *Div* 틱 수를 나타냅니다. 두 번째 방법의 경우 *Div* 되는 `duration` 틱 수를 포함 하는 개체입니다.
+*Div*<br/>
+첫 번째 방법의 경우 *Div* 틱 수를 나타냅니다. 두 번째 방법의 경우 *Div* 되는 `duration` 틱 수를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -218,7 +223,8 @@ duration& operator*=(const rep& Mult);
 
 ### <a name="parameters"></a>매개 변수
 
-*Mult* 으로 지정 된 형식의 값 `duration::rep`합니다.
+*Mult*<br/>
+`duration::rep`로 지정된 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -234,7 +240,8 @@ duration& operator/=(const rep& Div);
 
 ### <a name="parameters"></a>매개 변수
 
-*Div* 으로 지정 된 형식의 값 `duration::rep`합니다.
+*Div*<br/>
+`duration::rep`로 지정된 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -274,7 +281,8 @@ duration& operator+=(const duration& Dur);
 
 ### <a name="parameters"></a>매개 변수
 
-*기간* 는 `duration` 개체입니다.
+*기간*<br/>
+`duration` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -290,7 +298,8 @@ duration& operator-=(const duration& Dur);
 
 ### <a name="parameters"></a>매개 변수
 
-*기간* 는 `duration` 개체입니다.
+*기간*<br/>
+`duration` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -314,7 +323,8 @@ duration& operator%=(const rep& Div);duration& operator%=(const duration& Div);
 
 ### <a name="parameters"></a>매개 변수
 
-*Div* 기간 개체 또는 틱 수를 나타내는 값입니다. 제 수입니다.
+*Div*<br/>
+기간 개체 또는 틱 수를 나타내는 값인 제수입니다.
 
 ### <a name="remarks"></a>설명
 

@@ -32,12 +32,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 23e76c5fc4881f0689bf83ee96acd2a7cce8c948
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 34009ac94d35a377e1080ea674f58715e7a42aa2
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39401563"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101056"
 ---
 # <a name="alignedfreedbg"></a>_aligned_free_dbg
 
@@ -53,7 +53,8 @@ void _aligned_free_dbg(
 
 ### <a name="parameters"></a>매개 변수
 
-*memblock* 반환 된 메모리 블록에 대 한 포인터를 [_aligned_malloc](aligned-malloc.md) 하거나 [_aligned_offset_malloc](aligned-offset-malloc.md) 함수입니다.
+*memblock*  
+반환 된 메모리 블록에 대 한 포인터를 [_aligned_malloc](aligned-malloc.md) 하거나 [_aligned_offset_malloc](aligned-offset-malloc.md) 함수입니다.
 
 ## <a name="remarks"></a>설명
 

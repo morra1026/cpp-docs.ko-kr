@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aeedb217466262d8643a851b5f93cb9ac26fb0a2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2975e63f79818e5eac430056258b72b9c6641a49
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408448"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100276"
 ---
 # <a name="swab"></a>_swab
 
@@ -59,25 +59,28 @@ void _swab(
 
 ## <a name="parameters"></a>매개 변수
 
-*src* 데이터를 복사 하 고 교환 합니다.
+*src*<br/>
+복사하고 교환할 데이터입니다.
 
-*dest* 교환 된 데이터에 대 한 저장소 위치입니다.
+*dest*<br/>
+교환된 데이터에 대한 저장소 위치입니다.
 
-*n* 바이트 복사 하 고 교환할 수입니다.
+*n*<br/>
+복사되고 교환될 바이트 수입니다.
 
 ## <a name="return-value"></a>반환 값
 
-**swab** 함수 값을 반환 하지 않습니다. 함수 집합 **errno** 를 **EINVAL** 경우는 *src* 또는 *dest* 포인터가 null이 또는 *n* 작습니다 0이 고 잘못 된 매개 변수 보다 처리기가 호출에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다.
+합니다 **swab** 함수 값을 반환 하지 않습니다. 함수 집합 **errno** 하 **EINVAL** 경우는 *src* 또는 *dest* 포인터가 null 또는 *n* 작습니다. 0와 잘못 된 매개 변수 처리기가 호출에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다.
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-경우 *n* ,는 **_swab** 복사본 함수 *n* 바이트 *src*, 인접 한 바이트의 각 쌍을 교환 하 고 에서결과저장*dest*합니다. 경우 *n* 홀수 이면 **_swab** 복사 하 고 첫 번째 교환 *n*-1 바이트의 *src*, 마지막 바이트 복사 되지 않습니다. **_swab** 함수는 일반적으로 다른 바이트 순서를 사용 하는 컴퓨터에 전송할 이진 데이터를 준비 하는 데 사용 됩니다.
+경우 *n* 가 짝수인 합니다 **_swab** 복사본 함수 *n* 바이트 *src*, 각 바이트 쌍에 인접 한 교환 및 에서결과저장합니다.*dest*합니다. 하는 경우 *n* 홀수 이면 **_swab** 복사 하 고 첫 번째 교환 *n*-1 바이트 *src*, 최종 바이트가 복사 되지 않습니다. 합니다 **_swab** 함수는 일반적으로 다른 바이트 순서를 사용 하는 컴퓨터에 전송할 이진 데이터를 준비 하는 데 사용 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_swab**|C: \<stdlib.h> C++: \<cstdlib> 또는 \<stdlib.h>|
 

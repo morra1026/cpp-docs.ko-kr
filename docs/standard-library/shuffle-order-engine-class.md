@@ -25,12 +25,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13b46bcd29624d696ae22494c394fa028d58fa8a
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 7893f992fa19cdef8713ec4c9fd755c7cd1b465e
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961976"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100315"
 ---
 # <a name="shuffleorderengine-class"></a>shuffle_order_engine 클래스
 
@@ -45,9 +45,11 @@ class shuffle_order_engine;
 
 ### <a name="parameters"></a>매개 변수
 
-*엔진* 기본 엔진 유형입니다.
+*엔진*<br/>
+기본 엔진 유형입니다.
 
-*K* **테이블 크기**합니다. 버퍼(테이블)에 있는 요소의 수입니다. **사전 조건**: `0 < K`
+*K*<br/>
+**테이블 크기**. 버퍼(테이블)에 있는 요소의 수입니다. **사전 조건**: `0 < K`
 
 ## <a name="members"></a>멤버
 

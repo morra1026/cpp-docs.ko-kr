@@ -118,12 +118,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aec1d5291526360157b4e1a0b5b4eff9ae9fd454
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 66818710a1d5811f2ff52acf7f9785de09ba0c53
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956464"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101692"
 ---
 # <a name="iosbase-class"></a>ios_base 클래스
 
@@ -255,7 +255,7 @@ enum event {
 
 - `imbue_event`에 대 한 호출의 끝에 발생 하는 콜백을 식별 [imbue](#imbue)반환 되기 바로 전에 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 예제는 [register_callback](#register_callback)을 참조하세요.
 
@@ -272,17 +272,20 @@ typedef void (__cdecl *event_callback)(
 
 ### <a name="parameters"></a>매개 변수
 
-*(_E)* 는 [이벤트](#event)합니다.
+*_E*<br/>
+[이벤트](#event)입니다.
 
-*(_B)* 이벤트가 호출 된 스트림입니다.
+*(_B)*<br/>
+이벤트가 호출된 스트림입니다.
 
-*(_I).* 사용자 정의 숫자입니다.
+*_I*<br/>
+사용자 정의 숫자입니다.
 
 ### <a name="remarks"></a>설명
 
 이 형식은 [register_callback](#register_callback)에 등록할 수 있는 함수에 대한 포인터를 설명합니다. 이러한 형식의 함수는 예외를 throw하면 안 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `event_callback`을 사용하는 예제는 [register_call](#register_callback)을 참조하세요.
 
@@ -309,7 +312,7 @@ namespace std {
 
 `what()`에서 반환된 값은 `_Message`의 복사본이며, `_Code`에 기반한 테스트로 확대될 수 있습니다. `_Code`를 지정하지 않은 경우 `make_error_code(io_errc::stream)`가 기본값입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_base_failure.cpp
@@ -349,7 +352,8 @@ fmtflags flags(fmtflags fmtfl);
 
 ### <a name="parameters"></a>매개 변수
 
-*fmtfl* 새 `fmtflags` 설정 합니다.
+*fmtfl*<br/>
+새 `fmtflags` 설정입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -361,7 +365,7 @@ fmtflags flags(fmtflags fmtfl);
 
 첫 번째 멤버 함수는 저장된 형식 플래그를 반환합니다. 두 번째 멤버 함수는 *fmtfl* 반환 형식 플래그를 이전에 저장 된 값입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_base_flags.cpp
@@ -471,7 +475,7 @@ locale getloc() const;
 
 저장된 로캘 개체입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_base_getlock.cpp
@@ -499,7 +503,8 @@ locale imbue(const locale& _Loc);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Loc* 새 로캘 설정 합니다.
+*_Loc*<br/>
+새 로캘 설정입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -509,7 +514,7 @@ locale imbue(const locale& _Loc);
 
 멤버 함수는 *_Loc* 로캘 개체에 다음 콜백 이벤트를 보고 하 고 `imbue_event`입니다. 이전에 저장된 값을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 샘플은 [basic_ios:: imbue](../standard-library/basic-ios-class.md#imbue)를 참조하세요.
 
@@ -575,7 +580,8 @@ long& iword(int idx);
 
 ### <a name="parameters"></a>매개 변수
 
-*idx* 로 저장할 값의 인덱스는 `iword`합니다.
+*idx*<br/>
+`iword`로 저장할 값의 인덱스입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -585,7 +591,7 @@ long& iword(int idx);
 
 `ios_base` 형식의 모든 개체에서 사용하도록 고유 인덱스를 가져오려면 [xalloc](#xalloc)를 호출합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `iword`를 사용하는 방법에 대한 샘플은 [xalloc](#xalloc)를 참조하세요.
 
@@ -621,7 +627,7 @@ public:
 
 - `trunc`해당 제어 개체가 만들어지면 기존 파일의 내용을 삭제 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_base_openmode.cpp
@@ -649,7 +655,8 @@ ios_base& operator=(const ios_base& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 형식의 개체 `ios_base`합니다.
+*right*<br/>
+`ios_base` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -672,7 +679,8 @@ streamsize precision(streamsize _Prec);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Prec* 표시할 유효 자릿수 또는 고정된 표기법에서 소수점 뒤의 자릿수입니다.
+*_Prec*<br/>
+표시할 유효 자릿수 또는 고정 표기법에서 소수점 뒤의 자릿수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -682,7 +690,7 @@ streamsize precision(streamsize _Prec);
 
 부동 소수점 숫자는 [fixed](../standard-library/ios-functions.md#fixed)를 사용하여 고정 표기법으로 표시됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_base_precision.cpp
@@ -716,7 +724,8 @@ void *& pword(int _Idx);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Idx* 로 저장할 값의 인덱스를 `pword`입니다.
+*_Idx*<br/>
+`pword`로 저장할 값의 인덱스입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -726,7 +735,7 @@ _ *Idx*가 음수인 경우 또는 요소에 대해 고유한 저장소를 사�
 
 `ios_base` 형식의 모든 개체에서 사용하도록 고유 인덱스를 가져오려면 [xalloc](#xalloc)를 호출합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `pword` 사용 예제는 [xalloc](#xalloc)를 참조하세요.
 
@@ -741,15 +750,17 @@ void register_callback(
 
 ### <a name="parameters"></a>매개 변수
 
-*pfn* 콜백 함수에 대 한 포인터입니다.
+*pfn*<br/>
+콜백 함수에 대한 포인터입니다.
 
-*idx* 사용자 정의 숫자입니다.
+*idx*<br/>
+사용자 정의 숫자입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수 쌍 푸시합니다 `{pfn, idx}` 저장 된 콜백 스택에 [콜백 스택을](../standard-library/ios-base-class.md)합니다. 콜백 이벤트 **ev** 함수는 호출 레지스트리의 역순으로 식에서 보고 된 `(*pfn)(ev, *this, idx)`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_base_register_callback.cpp
@@ -863,7 +874,7 @@ namespace std {
 
 - `end`시퀀스의 끝을 기준으로 검색 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_base_seekdir.cpp
@@ -901,19 +912,21 @@ fmtflags setf(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Mask* 플래그를 설정 합니다.
+*마스크 (_m)*<br/>
+설정할 플래그입니다.
 
-*_Unset* 플래그를 해제 합니다.
+*_Unset*<br/>
+해제 하는 플래그입니다.
 
 ### <a name="return-value"></a>반환 값
 
-    The previous format flags
+이전 형식 플래그
 
 ### <a name="remarks"></a>설명
 
-    The first member function effectively calls [flags](#flags)(_ *Mask* &#124; \_ *Flags*) (set selected bits) and then returns the previous format flags. The second member function effectively calls **flags**(\_ *Mask* **& fmtfl, flags& ~**`_Mask`) (replace selected bits under a mask) and then returns the previous format flags.
+첫 번째 멤버 함수는 효과적으로 호출한 [플래그](#flags)(_ *마스크* &#124; \_ *플래그*) (선택한 비트 설정 됨) 한 다음 이전 서식 플래그를 반환 합니다. 두 번째 멤버 함수는 효과적으로 호출한 **플래그**(\_ *마스크* **& fmtfl, 플래그 & ~**`_Mask`) (선택 된 비트 마스크에서 바꾸기) 이전 서식 플래그를 반환 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_base_setf.cpp
@@ -949,15 +962,16 @@ static bool sync_with_stdio(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Sync* 모든 스트림을 사용 하 여 동기화 되는지 `stdio`합니다.
+*_Sync*<br/>
+모든 스트림을 사용 하 여 동기화 되는지 `stdio`합니다.
 
 ### <a name="return-value"></a>반환 값
 
-    Previous setting for this function.
+이 함수에 대 한 이전 설정입니다.
 
 ### <a name="remarks"></a>설명
 
-    The static member function stores a `stdio` sync flag, which is initially **true**. When **true**, this flag ensures that operations on the same file are properly synchronized between the [iostreams](../standard-library/iostreams-conventions.md) functions and those defined in the C++ Standard Library. Otherwise, synchronization may or may not be guaranteed, but performance may be improved. The function stores *_Sync* in the `stdio` sync flag and returns its previous stored value. You can call it reliably only before performing any operations on the standard streams.
+정적 멤버 함수는 한 `stdio` 플래그는 처음에 동기화 **true**합니다. 때 **true**,이 플래그 하면 동일한 파일에 대 한 작업 간의 적절 하 게 동기화 합니다 [iostreams](../standard-library/iostreams-conventions.md) 함수 및 c + + 표준 라이브러리에 정의 된 합니다. 이 고, 그렇지 동기화 보장할 수 수 있으 나 성능이 향상 될 수 있습니다. 함수 저장소 *_Sync* 에 `stdio` 플래그를 동기화 하 고 저장된 된 이전 값을 반환 합니다. 표준 스트림에서 작업을 수행 하기 전에 작업을 안정적으로 호출할 수 있습니다.
 
 ## <a name="unsetf"></a> ios_base::unsetf
 
@@ -971,15 +985,16 @@ void unsetf(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Mask* 해제 하려는 플래그입니다.
+*마스크 (_m)*<br/>
+해제하려는 플래그입니다.
 
 ### <a name="remarks"></a>설명
 
-    The member function effectively calls [flags](#flags)(`~`*_Mask* **& flags**) (clear selected bits).
+멤버 함수는 효과적으로 호출한 [플래그](#flags)(`~`*_Mask* **& 플래그**) (선택한 비트 지우기).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
-    See [ios_base::setf](#setf) for a sample of using `unsetf`.
+참조 [ios_base:: setf](#setf) 사용 하는 예제에 대 한 `unsetf`합니다.
 
 ## <a name="width"></a> ios_base::width
 
@@ -994,17 +1009,18 @@ streamsize width(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Wide* 출력 스트림의 원하는 크기입니다.
+*_Wide*<br/>
+출력 스트림의 원하는 크기입니다.
 
 ### <a name="return-value"></a>반환 값
 
-    The current width setting.
+현재 너비 설정입니다.
 
 ### <a name="remarks"></a>설명
 
-    The first member function returns the stored field width. The second member function stores *_Wide* in the field width and returns its previous stored value.
+첫 번째 멤버 함수는 저장된 필드 너비를 반환합니다. 두 번째 멤버 함수는 *_Wide* 반환 필드 너비를 이전에 저장 된 값입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_base_width.cpp
@@ -1027,7 +1043,7 @@ int main( ) {
 
 ## <a name="xalloc"></a> ios_base::xalloc
 
-    Specifies that a variable is part of the stream.
+변수 스트림의 일부로 임을 지정 합니다.
 
 ```cpp
 static int xalloc( );
@@ -1035,13 +1051,13 @@ static int xalloc( );
 
 ### <a name="return-value"></a>반환 값
 
-    The static member function returns a stored static value, which it increments on each call.
+정적 멤버 함수는 각 호출의 수를 늘리면 저장된 정적 값을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-    You can use the return value as a unique index argument when calling the member functions [iword](#iword) or [pword](#pword).
+멤버 함수를 호출할 때 고유 인덱스 인수로 반환 값을 사용할 수 있습니다 [iword](#iword) 하거나 [pword](#pword)합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_base_xalloc.cpp

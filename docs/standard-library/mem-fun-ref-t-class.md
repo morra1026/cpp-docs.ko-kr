@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc0684d51fd406f16588188555f67fcebb351fbf
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a2dffdb71b8121073775af52ed42cda205c70589
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956100"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100172"
 ---
 # <a name="memfunreft-class"></a>mem_fun_ref_t 클래스
 
@@ -42,9 +42,11 @@ class mem_fun_ref_t : public unary_function<Type, Result> {
 
 ### <a name="parameters"></a>매개 변수
 
-*_Pm* 클래스의 멤버 함수에 대 한 포인터 `Type` 함수 개체를 변환할 수 있습니다.
+*_Pm*<br/>
+함수 개체로 변환할 `Type` 클래스의 멤버 함수 포인터입니다.
 
-*왼쪽* 개체는 합니다 *_Pm* 멤버 함수가 호출 됩니다.
+*left*<br/>
+개체는 합니다 *_Pm* 멤버 함수가 호출 됩니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -54,7 +56,7 @@ class mem_fun_ref_t : public unary_function<Type, Result> {
 
 복사본을 저장 하는 템플릿 클래스 *_Pm*, 클래스의 멤버 함수에 대 한 포인터 여야 `Type`, 전용 멤버 개체에 있습니다. 또한 해당 멤버 함수 `operator()`를 ( **left**.* `_Pm`)( )을 반환하는 것으로 정의합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 `mem_fun_ref_t`의 생성자는 일반적으로 직접 사용되지 않습니다. 도우미 함수 `mem_fun_ref`은 멤버 함수를 적용하는 데 사용됩니다. 멤버 함수 어댑터를 사용하는 방법에 대한 예제는 [mem_fun_ref](../standard-library/functional-functions.md#mem_fun_ref)를 참조하세요.
 

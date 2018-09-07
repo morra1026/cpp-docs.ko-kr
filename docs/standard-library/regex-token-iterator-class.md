@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f5e02f1cfd7b35244c347ef0f07542e61938d7b
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 5d4dd1f7b428e3b19f86445bf0b191fb840ecdb9
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960969"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101004"
 ---
 # <a name="regextokeniterator-class"></a>regex_token_iterator 클래스
 
@@ -87,11 +87,14 @@ private:
 
 ### <a name="parameters"></a>매개 변수
 
-*BidIt* 부분 일치에 대 한 반복기 형식입니다.
+*BidIt*<br/>
+부분 일치에 대한 반복기 형식입니다.
 
-*Elem* 일치 하는 요소의 형식입니다.
+*Elem*<br/>
+일치 항목을 찾을 요소의 형식입니다.
 
-*RXtraits* 요소에 대 한 특성 클래스입니다.
+*RXtraits*<br/>
+요소에 대한 특성 클래스입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -117,7 +120,7 @@ typedef std::ptrdiff_t difference_type;
 
 이 형식은 `std::ptrdiff_t`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <regex>
@@ -225,7 +228,7 @@ typedef std::forward_iterator_tag iterator_category;
 
 이 형식은 `std::forward_iterator_tag`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_token_iterator_iterator_category.cpp
@@ -335,13 +338,14 @@ bool operator!=(const regex_token_iterator& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 비교할 반복기입니다.
+*right*<br/>
+비교할 반복기입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 `!(*this == right)`를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_token_iterator_operator_ne.cpp
@@ -453,7 +457,7 @@ const sub_match<BidIt>& operator*();
 
 멤버 함수는 `sub_match<BidIt>` 인덱스 값으로 식별된 캡처 그룹을 나타내는 `subs[pos]`개체를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_token_iterator_operator_star.cpp
@@ -569,7 +573,7 @@ regex_token_iterator& operator++(int);
 
 두 번째 연산자는 개체의 복사본을 만들고 개체를 증가시킨 다음 복사본을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_token_iterator_operator_inc.cpp
@@ -679,13 +683,14 @@ bool operator==(const regex_token_iterator& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 비교할 반복기입니다.
+*right*<br/>
+비교할 반복기입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 `it == right.it && subs == right.subs && pos == right.pos`를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_token_iterator_operator_eq.cpp
@@ -797,7 +802,7 @@ const sub_match<BidIt> * operator->();
 
 멤버 함수는 `sub_match<BidIt>` 인덱스 값으로 식별된 캡처 그룹을 나타내는 `subs[pos]`개체에 대한 포인터를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_token_iterator_operator_arrow.cpp
@@ -905,7 +910,7 @@ match == z
 typedef sub_match<BidIt> *pointer;
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_token_iterator_pointer.cpp
@@ -1021,7 +1026,7 @@ typedef sub_match<BidIt>& reference;
 
 이 형식은 `sub_match<BidIt>&`의 동의어로, 여기서 `BidIt` 는 템플릿 매개 변수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_token_iterator_reference.cpp
@@ -1144,13 +1149,17 @@ regex_token_iterator(BidIt first, BidIt last,
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 일치 하는 시퀀스의 시작 합니다.
+*first*<br/>
+일치하는 시퀀스의 시작입니다.
 
-*마지막* 일치 하는 시퀀스의 끝입니다.
+*last*<br/>
+일치하는 시퀀스의 끝입니다.
 
-*다시* 정규식 일치 항목입니다.
+*re*<br/>
+일치 항목에 대한 정규식입니다.
 
-*f* 일치 항목에 대 한 플래그입니다.
+*f*<br/>
+일치 항목에 대한 플래그입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1162,7 +1171,7 @@ regex_token_iterator(BidIt first, BidIt last,
 
 네 번째 생성자는 저장된 반복기 `it` 은 `regex_iterator<BidIt, Elem, RXtraits>(first, last, re, f)`로 초기화되고, 저장된 벡터 `subs` 는 생성자 인수 `N` 가 가리키는 `submatches`값을 보유하며, 저장된 값 `pos` 는 0인 개체를 생성합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_token_iterator_construct.cpp
@@ -1274,7 +1283,7 @@ typedef basic_regex<Elem, RXtraits> regex_type;
 
 typedef는 `basic_regex<Elem, RXtraits>`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_token_iterator_regex_type.cpp
@@ -1386,7 +1395,7 @@ typedef sub_match<BidIt> value_type;
 
 이 형식은 `sub_match<BidIt>`의 동의어로, 여기서 `BidIt` 는 템플릿 매개 변수입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__regex__regex_token_iterator_value_type.cpp

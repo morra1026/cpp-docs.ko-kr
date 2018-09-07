@@ -104,12 +104,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6bacb90052b46b687349e9069fd7c47f825f0221
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6bc4fa8da5d9fa2d15febc3c7b016622e614129a
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202794"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100965"
 ---
 # <a name="basicstreambuf-class"></a>basic_streambuf 클래스
 
@@ -124,9 +124,11 @@ class basic_streambuf;
 
 ### <a name="parameters"></a>매개 변수
 
-*Elem* A [char_type](#char_type)합니다.
+*Elem*<br/>
+[char_type](#char_type)입니다.
 
-*Tr* 문자 [traits_type](#traits_type)합니다.
+*Tr*<br/>
+[traits_type](#traits_type) 문자입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -250,7 +252,8 @@ basic_streambuf(const basic_streambuf& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* lvalue 참조에는 `basic_streambuf` 이 값을 설정 하는 데 사용 되는 개체 `basic_streambuf` 개체입니다.
+*right*<br/>
+이 `basic_streambuf` 개체에 값을 할당하는 데 사용되는 `basic_streambuf` 개체에 대한 lvalue 참조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -312,7 +315,8 @@ void gbump(int count);
 
 ### <a name="parameters"></a>매개 변수
 
-*개수* 포인터를 이동 시킬 양입니다.
+*count*<br/>
+포인터를 이동시킬 양입니다.
 
 ## <a name="getloc"></a>  basic_streambuf::getloc
 
@@ -370,7 +374,8 @@ virtual void imbue(const locale& _Loc);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Loc* 로캘에 대 한 참조입니다.
+*_Loc*<br/>
+로캘에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -436,7 +441,8 @@ basic_streambuf& operator=(const basic_streambuf& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 에 대 한 lvalue 참조를 `basic_streambuf` 이 개체에 값을 할당 하는 데 사용 되는 개체입니다.
+*right*<br/>
+이 개체에 값을 할당하는 데 사용되는 `basic_streambuf` 개체에 대한 lvalue 참조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -452,7 +458,8 @@ virtual int_type overflow(int_type _Meta = traits_type::eof());
 
 ### <a name="parameters"></a>매개 변수
 
-*_Meta* 버퍼에 삽입할 문자 또는 **traits_type::**[eof](../standard-library/char-traits-struct.md#eof)합니다.
+*_Meta*<br/>
+버퍼 또는 **traits_type::**[eof](../standard-library/char-traits-struct.md#eof)에 삽입할 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -486,7 +493,8 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof());
 
 ### <a name="parameters"></a>매개 변수
 
-*_Meta* 버퍼에 삽입할 문자 또는 **traits_type::**[eof](../standard-library/char-traits-struct.md#eof)합니다.
+*_Meta*<br/>
+버퍼 또는 **traits_type::**[eof](../standard-library/char-traits-struct.md#eof)에 삽입할 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -524,7 +532,8 @@ void pbump(int count);
 
 ### <a name="parameters"></a>매개 변수
 
-*개수* 위치를 앞으로 이동 쓰기에 사용 되는 문자 수입니다.
+*count*<br/>
+쓰기 위치를 앞으로 이동시킬 문자 수입니다.
 
 ## <a name="pos_type"></a>  basic_streambuf::pos_type
 
@@ -556,7 +565,8 @@ locale pubimbue(const locale& _Loc);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Loc* 로캘에 대 한 참조입니다.
+*_Loc*<br/>
+로캘에 대한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -582,11 +592,14 @@ pos_type pubseekoff(off_type _Off,
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off* 위치를 기준으로 찾을 *_Way*합니다.
+*_Off*<br/>
+위치를 기준으로 찾을 *_Way*합니다.
 
-*_Way* 오프셋된 작업에 대 한 시작점입니다. 가능한 값은 [seekdir](../standard-library/ios-base-class.md#seekdir)을 참조하세요.
+*_Way*<br/>
+오프셋 작업의 시작 지점입니다. 가능한 값은 [seekdir](../standard-library/ios-base-class.md#seekdir)을 참조하세요.
 
-*_Which* 포인터 위치에 대 한 모드를 지정 합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
+*_Which*<br/>
+포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -606,9 +619,11 @@ pos_type pubseekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in | ios
 
 ### <a name="parameters"></a>매개 변수
 
-*_Sp* 를 위치에 대 한 검색입니다.
+*_Sp*<br/>
+찾을 위치입니다.
 
-*_Which* 포인터 위치에 대 한 모드를 지정 합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
+*_Which*<br/>
+포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -630,9 +645,11 @@ basic_streambuf<Elem, Tr> *pubsetbuf(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Buffer* 에 대 한 포인터 `char_type` 이 인스턴스화에 대 한 합니다.
+*_Buffer*<br/>
+이 인스턴스화의 `char_type`에 대한 포인터입니다.
 
-*개수* 버퍼의 크기입니다.
+*count*<br/>
+버퍼의 크기입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -707,11 +724,14 @@ virtual pos_type seekoff(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off* 위치를 기준으로 찾을 *_Way*합니다.
+*_Off*<br/>
+위치를 기준으로 찾을 *_Way*합니다.
 
-*_Way* 오프셋된 작업에 대 한 시작점입니다. 가능한 값은 [seekdir](../standard-library/ios-base-class.md#seekdir)을 참조하세요.
+*_Way*<br/>
+오프셋 작업의 시작 지점입니다. 가능한 값은 [seekdir](../standard-library/ios-base-class.md#seekdir)을 참조하세요.
 
-*_Which* 포인터 위치에 대 한 모드를 지정 합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
+*_Which*<br/>
+포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -741,9 +761,11 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in 
 
 ### <a name="parameters"></a>매개 변수
 
-*_Sp* 를 위치에 대 한 검색입니다.
+*_Sp*<br/>
+찾을 위치입니다.
 
-*_Which* 포인터 위치에 대 한 모드를 지정 합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
+*_Which*<br/>
+포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -769,9 +791,11 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Buffer* 버퍼에 대 한 포인터입니다.
+*_Buffer*<br/>
+버퍼에 대한 포인터입니다.
 
-*개수* 버퍼의 크기입니다.
+*count*<br/>
+버퍼의 크기입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -793,11 +817,14 @@ void setg(char_type* _Gbeg,
 
 ### <a name="parameters"></a>매개 변수
 
-*_Gbeg* 버퍼의 시작 부분에 대 한 포인터입니다.
+*_Gbeg*<br/>
+버퍼의 시작에 대한 포인터입니다.
 
-*_Gnext* 위치에 대 한 포인터 버퍼의 중간입니다.
+*_Gnext*<br/>
+버퍼의 중간 부분에 대한 포인터입니다.
 
-*_Gend* 버퍼의 끝에 대 한 포인터입니다.
+*_Gend*<br/>
+버퍼의 끝에 대한 포인터입니다.
 
 ## <a name="setp"></a>  basic_streambuf::setp
 
@@ -809,9 +836,11 @@ void setp(char_type* _Pbeg, char_type* _Pend);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Pbeg* 버퍼의 시작 부분에 대 한 포인터입니다.
+*_Pbeg*<br/>
+버퍼의 시작에 대한 포인터입니다.
 
-*_Pend* 버퍼의 끝에 대 한 포인터입니다.
+*_Pend*<br/>
+버퍼의 끝에 대한 포인터입니다.
 
 ## <a name="sgetc"></a>  basic_streambuf::sgetc
 
@@ -863,9 +892,11 @@ streamsize sgetn(
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr* 추출 된 문자를 포함할 버퍼입니다.
+*ptr*<br/>
+추출된 문자를 포함할 버퍼입니다.
 
-*개수* 읽을 요소의 수입니다.
+*count*<br/>
+읽을 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -967,7 +998,8 @@ int_type sputbackc(char_type _Ch);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch* 문자입니다.
+*_Ch*<br/>
+문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1014,7 +1046,8 @@ int_type sputc(char_type _Ch);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch* 문자입니다.
+*_Ch*<br/>
+문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1056,9 +1089,11 @@ streamsize sputn(const char_type* ptr, streamsize count);
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr* 문자열입니다.
+*ptr*<br/>
+문자열입니다.
 
-*개수* 문자 개수입니다.
+*count*<br/>
+문자 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1281,9 +1316,11 @@ virtual streamsize xsgetn(
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr* 추출 된 문자를 포함할 버퍼입니다.
+*ptr*<br/>
+추출된 문자를 포함할 버퍼입니다.
 
-*개수* 추출할 요소의 수입니다.
+*count*<br/>
+추출할 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1303,9 +1340,11 @@ virtual streamsize xsputn(const char_type* ptr, streamsize count);
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr* 삽입할 요소에 대 한 포인터입니다.
+*ptr*<br/>
+삽입할 요소에 대한 포인터입니다.
 
-*개수* 삽입할 요소의 수입니다.
+*count*<br/>
+삽입할 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
 

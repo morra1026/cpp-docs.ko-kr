@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8775c681954799e2239da5ad429f9f8131ca25b1
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 39740894e9422c2aec90c3598b0e45965e8ddba7
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958892"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100743"
 ---
 # <a name="addvolatile-class"></a>add_volatile 클래스
 
@@ -40,13 +40,14 @@ using add_volatile_t = typename add_volatile<T>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*T* 수정할 형식입니다.
+*T*<br/>
+수정할 형식입니다.
 
 ## <a name="remarks"></a>설명
 
 인스턴스의 `add_volatile<T>` 멤버가 **typedef** `type` 즉 *T* 경우 *T* 대 한 참조, 함수 또는 휘발성 한정 형식인,이 고, 그렇지 **volatile** *T*합니다. 별칭 `add_volatile_t` 멤버에 액세스 하려면 바로 가기입니다 **typedef** `type`합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 #include <type_traits>

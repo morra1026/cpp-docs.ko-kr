@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2192ea954df1e7a63157d6deb04c7d34cd42337c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: c4cdc26c66c05cda821b43367b806ecc2a2a8168
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966487"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100808"
 ---
 # <a name="enableif-class"></a>enable_if 클래스
 
@@ -37,9 +37,11 @@ struct enable_if;
 
 ### <a name="parameters"></a>매개 변수
 
-*B* 결과 형식의 존재 여부를 결정 하는 값입니다.
+*B*<br/>
+결과 형식의 존재를 확인하는 값입니다.
 
-*T* 형식의 경우 인스턴스화할 *B* 그렇습니다.
+*T*<br/>
+형식의 경우 인스턴스화할 *B* 그렇습니다.
 
 ## <a name="remarks"></a>설명
 
@@ -64,12 +66,12 @@ C++에서 템플릿 매개 변수의 대체 실패는 그 자체만으로는 오
     template <your_stuff>
 typename enable_if<your_condition, your_return_type>::type
     yourfunction(args) {// ...
- }
+}
 // The alias template makes it more concise:
     template <your_stuff>
 enable_if_t<your_condition, your_return_type>
 yourfunction(args) {// ...
- }
+}
 ```
 
 - 시나리오 2: 기본 인수가 있는 함수 매개 변수 추가:
@@ -78,7 +80,7 @@ yourfunction(args) {// ...
     template <your_stuff>
 your_return_type_if_present
     yourfunction(args, enable_if_t<your condition, FOO> = BAR) {// ...
- }
+}
 ```
 
 - 시나리오 3: 기본 인수가 있는 템플릿 매개 변수 추가:
@@ -95,7 +97,7 @@ rest_of_function_declaration_goes_here
 void your_function(const T& t,
     enable_if_t<is_something<T>::value, const string&>
 s) {// ...
- }
+}
 ```
 
 생성자 및 변환 연산자에는 반환 형식이 없으므로 시나리오 1의 경우 생성자 및 변환 연산자를 사용하지 않습니다.
@@ -123,7 +125,7 @@ yourfunction(args, typename enable_if<your_condition, void **>::type = nullptr) 
 
 - 사용하지 않으면 좋은 코드를 모호하게 만드는 오버로드 집합이 있는 경우에는 `enable_if`를 사용합니다.  가장 일반적으로 이러한 경우는 생성자를 암시적으로 변환할 때 발생합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제는 C++ 표준 라이브러리 템플릿 함수 [std::make_pair()](../standard-library/utility-functions.md#make_pair)가 `enable_if`를 활용하는 방법을 보여 줍니다.
 

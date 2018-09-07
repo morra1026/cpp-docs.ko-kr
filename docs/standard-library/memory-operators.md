@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad33ff04c688ab79fa4a73234829d3e13fd1b44d
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: e37d1506fd713f90b793c6f3f9a04b39bf53f7a4
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954237"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100472"
 ---
 # <a name="ltmemorygt-operators"></a>&lt;memory&gt; 연산자
 
@@ -56,13 +56,17 @@ bool operator!=(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 같지 않은지 테스트할 개체 중 하나입니다.
+*left*<br/>
+같지 않음을 테스트할 개체 중 하나입니다.
 
-*오른쪽* 같지 않은지 테스트할 개체 중 하나입니다.
+*right*<br/>
+같지 않음을 테스트할 개체 중 하나입니다.
 
-*Ty1* 왼쪽에서 제어 되는 형식 포인터를 공유 합니다.
+*Ty1*<br/>
+왼쪽 공유 포인터로 제어되는 형식입니다.
 
-*Ty2* 오른쪽에서 제어 되는 형식 포인터를 공유 합니다.
+*Ty2*<br/>
+오른쪽 공유 포인터로 제어되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -74,7 +78,7 @@ bool operator!=(
 
 두 번째 및 세 번째 템플릿 연산자는 `!(left == right)`을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // memory_op_me.cpp
@@ -103,7 +107,7 @@ int main( )
 The allocator objects Alloc & v1Alloc are equal.
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__memory__operator_ne.cpp
@@ -154,13 +158,17 @@ bool operator==(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 같은지 테스트할 개체 중 하나입니다.
+*left*<br/>
+같은지 여부를 테스트할 개체 중 하나입니다.
 
-*오른쪽* 같은지 테스트할 개체 중 하나입니다.
+*right*<br/>
+같은지 여부를 테스트할 개체 중 하나입니다.
 
-*Ty1* 왼쪽에서 제어 되는 형식 포인터를 공유 합니다.
+*Ty1*<br/>
+왼쪽 공유 포인터로 제어되는 형식입니다.
 
-*Ty2* 오른쪽에서 제어 되는 형식 포인터를 공유 합니다.
+*Ty2*<br/>
+오른쪽 공유 포인터로 제어되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -172,7 +180,7 @@ bool operator==(
 
 두 번째 및 세 번째 템플릿 연산자는 `left.get() ==  right.get()`을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // memory_op_eq.cpp
@@ -212,7 +220,7 @@ The allocator objects cv1Alloc & v1Alloc are equal.
 The allocator objects cAlloc & Alloc are equal.
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__memory__operator_eq.cpp
@@ -258,13 +266,17 @@ bool operator>=(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 비교할 개체 중 하나입니다.
+*left*<br/>
+비교할 개체 중 하나입니다.
 
-*오른쪽* 비교할 개체 중 하나입니다.
+*right*<br/>
+비교할 개체 중 하나입니다.
 
-*Ty1* 왼쪽에서 제어 되는 형식 포인터를 공유 합니다.
+*Ty1*<br/>
+왼쪽 공유 포인터로 제어되는 형식입니다.
 
-*Ty2* 오른쪽에서 제어 되는 형식 포인터를 공유 합니다.
+*Ty2*<br/>
+오른쪽 공유 포인터로 제어되는 형식입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -288,13 +300,17 @@ bool operator<(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 비교할 개체 중 하나입니다.
+*left*<br/>
+비교할 개체 중 하나입니다.
 
-*오른쪽* 비교할 개체 중 하나입니다.
+*right*<br/>
+비교할 개체 중 하나입니다.
 
-*Ty1* 왼쪽된 포인터에 의해 제어 되는 형식입니다.
+*Ty1*<br/>
+왼쪽 포인터에 의해 제어되는 형식입니다.
 
-*Ty2* 오른쪽 포인터에 의해 제어 되는 형식입니다.
+*Ty2*<br/>
+오른쪽 포인터에 의해 제어되는 형식입니다.
 
 ## <a name="op_lt_eq"></a>  operator&lt;=
 
@@ -314,13 +330,17 @@ bool operator<=(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 비교할 개체 중 하나입니다.
+*left*<br/>
+비교할 개체 중 하나입니다.
 
-*오른쪽* 비교할 개체 중 하나입니다.
+*right*<br/>
+비교할 개체 중 하나입니다.
 
-*Ty1* 왼쪽에서 제어 되는 형식 포인터를 공유 합니다.
+*Ty1*<br/>
+왼쪽 공유 포인터로 제어되는 형식입니다.
 
-*Ty2* 오른쪽에서 제어 되는 형식 포인터를 공유 합니다.
+*Ty2*<br/>
+오른쪽 공유 포인터로 제어되는 형식입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -344,13 +364,17 @@ bool operator>(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 비교할 개체 중 하나입니다.
+*left*<br/>
+비교할 개체 중 하나입니다.
 
-*오른쪽* 비교할 개체 중 하나입니다.
+*right*<br/>
+비교할 개체 중 하나입니다.
 
-*Ty1* 왼쪽에서 제어 되는 형식 포인터를 공유 합니다.
+*Ty1*<br/>
+왼쪽 공유 포인터로 제어되는 형식입니다.
 
-*Ty2* 오른쪽에서 제어 되는 형식 포인터를 공유 합니다.
+*Ty2*<br/>
+오른쪽 공유 포인터로 제어되는 형식입니다.
 
 ## <a name="op_lt_lt"></a>  operator&lt;&lt;
 
@@ -364,21 +388,26 @@ std::basic_ostream<Elem, Tr>& operator<<(std::basic_ostream<Elem, Tr>& out,
 
 ### <a name="parameters"></a>매개 변수
 
-*Elem* 스트림 요소의 형식입니다.
+*Elem*<br/>
+스트림 요소의 형식입니다.
 
-*Tr* 형식을 스트림 요소 특성입니다.
+*Tr*<br/>
+스트림 요소 특성의 형식입니다.
 
-*Ty* 공유 포인터에 의해 제어 되는 형식입니다.
+*Ty*<br/>
+공유 포인터에 의해 제어되는 형식입니다.
 
-*out* 출력 스트림에 합니다.
+*out*<br/>
+출력 스트림입니다.
 
-*sp* 공유 포인터입니다.
+*sp*<br/>
+공유 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
 템플릿 함수가 `out << sp.get()`을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__memory__operator_sl.cpp

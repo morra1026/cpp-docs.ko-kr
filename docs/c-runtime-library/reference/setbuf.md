@@ -32,12 +32,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f8592e8008fa78402ced307b60188ea8610960a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ea1c979b261b81f80d95e4219f948dd2a3f5849e
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407316"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100355"
 ---
 # <a name="setbuf"></a>setbuf
 
@@ -54,19 +54,21 @@ void setbuf(
 
 ### <a name="parameters"></a>매개 변수
 
-*스트림* 에 대 한 포인터 **파일** 구조입니다.
+*스트림*<br/>
+**FILE** 구조체에 대한 포인터입니다.
 
-*버퍼* 사용자가 할당 한 버퍼입니다.
+*buffer*<br/>
+사용자가 할당한 버퍼입니다.
 
 ## <a name="remarks"></a>설명
 
-**setbuf** 함수에 대 한 버퍼링을 제어 *스트림*합니다. *스트림* 인수가 되지 읽거나 쓰지 않은 열려 있는 파일을 참조 해야 합니다. 경우는 *버퍼* 인수가 **NULL**, 스트림은 버퍼링 되지 않습니다. 버퍼의 길이 문자 배열 가리켜야 그렇지 않은 경우 **BUFSIZ**여기서 **BUFSIZ** STDIO에 정의 된 대로 버퍼 크기입니다. 8. 지정된 스트림에 대한 기본 시스템 할당 버퍼 대신 사용자 지정 버퍼가 I/O 버퍼링에 사용됩니다. **stderr** 기본적으로 스트림은 버퍼링 되지 않습니다 되지만 사용할 수 있습니다 **setbuf** 버퍼를 할당 하려면 **stderr**합니다.
+합니다 **setbuf** 함수에 대 한 버퍼링을 제어 *스트림*합니다. 합니다 *스트림을* 인수 하지 읽기 되거나 작성 된 열린 파일을 참조 해야 합니다. 경우는 *버퍼* 인수가 **NULL**, 스트림을 스트림은 아닙니다. 버퍼 길이 문자 배열 가리켜야 그렇지 않은 경우 **BUFSIZ**, 여기서 **BUFSIZ** STDIO에 정의 된 버퍼 크기입니다. 8. 지정된 스트림에 대한 기본 시스템 할당 버퍼 대신 사용자 지정 버퍼가 I/O 버퍼링에 사용됩니다. 합니다 **stderr** 스트림은 기본적으로 하지 않습니다 하지만 사용할 수 있습니다 **setbuf** 버퍼를 할당할 **stderr**합니다.
 
-**setbuf** 로 대체 되었습니다 [setvbuf](setvbuf.md), 새 코드에 대 한 기본 설정된 루틴인 변수인 합니다. **setbuf** 기존 코드와 호환성을 위해 유지 됩니다.
+**setbuf** 바뀌었습니다 [setvbuf](setvbuf.md), 새 코드에 대 한 기본 설정된 루틴인 인 합니다. **setbuf** 기존 코드와 호환성을 위해 유지 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**setbuf**|\<stdio.h>|
 

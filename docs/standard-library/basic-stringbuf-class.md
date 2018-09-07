@@ -40,12 +40,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58765b254069524f28b5edd171c10da92ab2f457
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 0b8bb688a0a79c82d4a8baa13ef2841956b5e331
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956151"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101718"
 ---
 # <a name="basicstringbuf-class"></a>basic_stringbuf 클래스
 
@@ -61,11 +61,14 @@ class basic_stringbuf : public basic_streambuf<Elem, Tr>
 
 ### <a name="parameters"></a>매개 변수
 
-*Alloc* 할당자 클래스입니다.
+*할당*<br/>
+할당자 클래스입니다.
 
-*Elem* 문자열 기본 요소의 형식입니다.
+*Elem*<br/>
+문자열 기본 요소의 형식입니다.
 
-*Tr* 문자열의 기본 요소에서 특수화 된 문자 특성입니다.
+*Tr*<br/>
+문자열의 기본 요소에서 특수화된 문자 특성입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -135,9 +138,11 @@ basic_stringbuf(
 
 ### <a name="parameters"></a>매개 변수
 
-*모드 (_m)* 의 열거형 중 하나 [ios_base:: openmode](../standard-library/ios-base-class.md#openmode)합니다.
+*모드 (_m)*<br/>
+[ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
-*str* 형식의 개체 [basic_string](../standard-library/basic-string-class.md)합니다.
+*str*<br/>
+[basic_string](../standard-library/basic-string-class.md) 형식의 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -179,7 +184,8 @@ virtual int_type overflow(int_type _Meta = traits_type::eof());
 
 ### <a name="parameters"></a>매개 변수
 
-*_Meta* 버퍼에 삽입할 문자 또는 `traits_type::eof`합니다.
+*_Meta*<br/>
+버퍼에 삽입할 문자 또는 `traits_type::eof`입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -203,7 +209,8 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof());
 
 ### <a name="parameters"></a>매개 변수
 
-*_Meta* 버퍼에 삽입할 문자 또는 `traits_type::eof`합니다.
+*_Meta*<br/>
+버퍼에 삽입할 문자 또는 `traits_type::eof`입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -238,11 +245,14 @@ virtual pos_type seekoff(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off* 위치를 기준으로 찾을 *_Way*합니다. 자세한 내용은 [basic_stringbuf::off_type](#off_type)을 참조하세요.
+*_Off*<br/>
+위치를 기준으로 찾을 *_Way*합니다. 자세한 내용은 [basic_stringbuf::off_type](#off_type)을 참조하세요.
 
-*_Way* 오프셋된 작업에 대 한 시작점입니다. 가능한 값은 [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir)을 참조하세요.
+*_Way*<br/>
+오프셋 작업의 시작 지점입니다. 가능한 값은 [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir)을 참조하세요.
 
-*모드 (_m)* 포인터 위치에 대 한 모드를 지정 합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다. 자세한 내용은 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)를 참조하세요.
+*모드 (_m)*<br/>
+포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다. 자세한 내용은 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)를 참조하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -274,9 +284,11 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Mode = ios_base::in |
 
 ### <a name="parameters"></a>매개 변수
 
-*_Sp* 를 위치에 대 한 검색입니다.
+*_Sp*<br/>
+찾을 위치입니다.
 
-*모드 (_m)* 포인터 위치에 대 한 모드를 지정 합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
+*모드 (_m)*<br/>
+포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -300,7 +312,8 @@ void str(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Newstr* 새 문자열입니다.
+*_Newstr*<br/>
+새 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -318,7 +331,7 @@ void str(
 
 두 번째 멤버 함수는 현재 **\*this**에 의해 제어되는 시퀀스의 할당을 취소합니다. 그런 다음 제어 하는 시퀀스의 복사본을 할당 *_Newstr*합니다. **mode & ios_base::in**이 0이 아닌 경우 시퀀스 시작 시 읽기를 시작하도록 입력 버퍼를 설정합니다. **mode & ios_base::out**이 0이 아닌 경우 시퀀스 시작 시 쓰기를 시작하도록 출력 버퍼를 설정합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_stringbuf_str.cpp
@@ -388,7 +401,8 @@ void basic_stringbuf<T>::swap(basic_stringbuf& other)
 
 ### <a name="parameters"></a>매개 변수
 
-*다른* 해당 내용이이 basic_stringbuf로 basic_stringbuf입니다.
+*other*<br/>
+해당 내용이 이 basic_stringbuf로 바뀌는 basic_stringbuf입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -402,7 +416,8 @@ basic_stringbuf& basic_stringbuf:: operator=(const basic_stringbuf& other)
 
 ### <a name="parameters"></a>매개 변수
 
-*다른* 는 basic_stringbuf입니다 로캘 특성을 포함 하 여 내용이 연산자의 좌 변에 있는 stringbuf에 할당 됩니다.
+*other*<br/>
+로캘 특성을 포함하여 해당 내용이 연산자 좌변의 stringbuf에 할당되는 basic_stringbuf입니다.
 
 ### <a name="remarks"></a>설명
 
