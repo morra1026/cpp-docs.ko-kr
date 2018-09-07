@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ea34ac38b70defc873278ce964ff10b8383dcc5
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 526ed4340446e78a723af97f43fbed401f574764
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966584"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106046"
 ---
 # <a name="ostrstream-class"></a>ostrstream 클래스
 
@@ -77,13 +77,14 @@ void freeze(bool _Freezeit = true);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Freezeit* A **bool** 스트림을 고정할지를 나타내는입니다.
+*_Freezeit*<br/>
+A **bool** 스트림을 고정할지를 나타내는입니다.
 
 ### <a name="remarks"></a>설명
 
 구성원 함수는 [rdbuf](#rdbuf) -> [freeze](../standard-library/strstreambuf-class.md#freeze)(_ *Freezeit*)를 호출합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 참조 [strstream:: freeze](../standard-library/strstreambuf-class.md#freeze) 사용 하는 예제에 대 한 `freeze`합니다.
 
@@ -101,11 +102,14 @@ ostrstream(char* ptr,
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr* 버퍼입니다.
+*ptr*<br/>
+버퍼입니다.
 
-*개수* 바이트 버퍼의 크기입니다.
+*count*<br/>
+버퍼의 크기(바이트)입니다.
 
-*모드 (_m)* 버퍼의 입력 및 출력 모드입니다. 자세한 내용은 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)를 참조하세요.
+*모드 (_m)*<br/>
+버퍼의 입력 및 출력 모드입니다. 자세한 내용은 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)를 참조하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -131,7 +135,7 @@ streamsize pcount() const;
 
 구성원 함수는 [rdbuf](#rdbuf) -> [pcount](../standard-library/strstreambuf-class.md#pcount)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `pcount`를 사용하는 샘플은 [strstream::pcount](../standard-library/strstreambuf-class.md#pcount)를 참조하세요.
 
@@ -151,7 +155,7 @@ strstreambuf *rdbuf() const
 
 형식의 저장 된 스트림 버퍼 주소를 반환 하는 멤버 함수 `pointer` 하 [strstreambuf](../standard-library/strstreambuf-class.md)합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `rdbuf`를 사용하는 샘플은 [strstreambuf::pcount](../standard-library/strstreambuf-class.md#pcount)를 참조하세요.
 
@@ -171,7 +175,7 @@ char *str();
 
 구성원 함수는 [rdbuf](#rdbuf) -> [str](../standard-library/strstreambuf-class.md#str)을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 참조 [strstream:: str](../standard-library/strstreambuf-class.md#str) 사용 하는 샘플에 대 한 `str`합니다.
 

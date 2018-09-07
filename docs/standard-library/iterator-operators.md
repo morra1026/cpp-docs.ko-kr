@@ -21,12 +21,12 @@ helpviewer_keywords:
 - std::operator&gt;= (iterator)
 - std::operator&lt; (iterator)
 - std::operator&lt;= (iterator), std::operator== (iterator)
-ms.openlocfilehash: e7dcd064216a9c1f1ba3f014b0f418b18b61193f
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 5ffd25e7289b4627b0b69e4cfd43b19c176d9e18
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954697"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110593"
 ---
 # <a name="ltiteratorgt-operators"></a>&lt;iterator&gt; 연산자
 
@@ -53,9 +53,11 @@ bool operator!=(const istreambuf_iterator<CharType, Traits>& left, const istream
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `iterator`합니다.
+*left*<br/>
+`iterator` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `iterator`합니다.
+*right*<br/>
+`iterator` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -65,7 +67,7 @@ bool operator!=(const istreambuf_iterator<CharType, Traits>& left, const istream
 
 반복기 개체가 컨테이너의 동일한 요소로 주소 지정되면 서로 같습니다. 두 반복기가 컨테이너의 다른 요소를 가리키면 반복기가 같지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // iterator_op_ne.cpp
@@ -120,10 +122,10 @@ int main( )
 ```Output
 The vector vec is: ( 1 2 3 4 5 6 7 8 ).
 The iterator rVPOS1 initially points to the first element
- in the reversed sequence: 8.
+in the reversed sequence: 8.
 The iterators are equal.
 The iterator rVPOS1 now points to the second element
- in the reversed sequence: 7.
+in the reversed sequence: 7.
 The iterators are not equal.
 ```
 
@@ -155,9 +157,11 @@ bool operator==(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체입니다.
+*left*<br/>
+iterator 형식의 개체입니다.
 
-*오른쪽* 형식의 개체입니다.
+*right*<br/>
+iterator 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -169,7 +173,7 @@ bool operator==(
 
 첫 번째 두 템플릿 연산자는 두 경우에 true를 반환 *왼쪽* 하 고 *오른쪽* 동일한 반복기를 저장 합니다. 세 번째 템플릿 연산자는 두 경우에 true를 반환 *왼쪽* 하 고 *오른쪽* 동일한 스트림 포인터를 저장 합니다. 네 번째 템플릿 연산자는 ` left.equal ( right)`를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // iterator_op_eq.cpp
@@ -224,10 +228,10 @@ int main( )
 ```Output
 The vector vec is: ( 2 4 6 8 10 ).
 The iterator rVPOS1 initially points to the first element
- in the reversed sequence: 10.
+in the reversed sequence: 10.
 The iterators are equal.
 The iterator rVPOS1 now points to the second element
- in the reversed sequence: 8.
+in the reversed sequence: 8.
 The iterators are not equal.
 ```
 
@@ -242,9 +246,11 @@ bool operator<(const reverse_iterator<RandomIterator>& left, const reverse_itera
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `iterator`합니다.
+*left*<br/>
+`iterator` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `iterator`합니다.
+*right*<br/>
+`iterator` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -254,7 +260,7 @@ bool operator<(const reverse_iterator<RandomIterator>& left, const reverse_itera
 
 한 반복기 개체가 컨테이너에서 다른 반복기 개체에 의해 주소가 지정된 요소보다 먼저 나타나는 요소의 주소를 지정하는 경우 다른 반복기 개체보다 작습니다. 한 반복기 개체가 다른 반복기 개체와 동일한 요소 또는 컨테이너에서 다른 반복기 개체에 의해 주소가 지정된 요소보다 나중에 나타나는 요소의 주소를 지정하는 경우 다른 반복기 개체보다 작지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // iterator_op_lt.cpp
@@ -313,10 +319,10 @@ int main( )
 ```Output
 The initial vector vec is: ( 0 2 4 6 8 10 ).
 The iterators rVPOS1& rVPOS2 initially point to the first element
- in the reversed sequence: 10.
+in the reversed sequence: 10.
 The iterator rVPOS1 is not less than the iterator rVPOS2.
 The iterator rVPOS2 now points to the second element
- in the reversed sequence: 8.
+in the reversed sequence: 8.
 The iterator rVPOS1 is less than the iterator rVPOS2.
 ```
 
@@ -331,9 +337,11 @@ bool operator<=(const reverse_iterator<RandomIterator>& left, const reverse_iter
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체입니다.
+*left*<br/>
+iterator 형식의 개체입니다.
 
-*오른쪽* 형식의 개체입니다.
+*right*<br/>
+iterator 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -343,7 +351,7 @@ bool operator<=(const reverse_iterator<RandomIterator>& left, const reverse_iter
 
 한 반복기 개체가 동일한 요소 또는 컨테이너에서 다른 반복기 개체에 의해 주소가 지정된 요소보다 먼저 나타나는 요소의 주소를 지정하는 경우 다른 반복기 개체보다 작거나 같습니다. 한 반복기 개체가 컨테이너에서 다른 반복기 개체에 의해 주소가 지정된 요소보다 나중에 나타나는 요소의 주소를 지정하는 경우 다른 반복기 개체보다 큽니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // iterator_op_le.cpp
@@ -404,12 +412,12 @@ int main( )
 ```Output
 The initial vector vec is: ( 0 2 4 6 8 10 ).
 The iterator rVPOS1 initially points to the second element
- in the reversed sequence: 8.
+in the reversed sequence: 8.
 The iterator rVPOS2 initially points to the first element
- in the reversed sequence: 10.
+in the reversed sequence: 10.
 The iterator rVPOS1 is greater than the iterator rVPOS2.
 The iterator rVPOS2 now points to the second element
- in the reversed sequence: 8.
+in the reversed sequence: 8.
 The iterator rVPOS1 is less than or equal to the iterator rVPOS2.
 ```
 
@@ -424,9 +432,11 @@ bool operator>(const reverse_iterator<RandomIterator>& left, const reverse_itera
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체입니다.
+*left*<br/>
+iterator 형식의 개체입니다.
 
-*오른쪽* 형식의 개체입니다.
+*right*<br/>
+iterator 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -436,7 +446,7 @@ bool operator>(const reverse_iterator<RandomIterator>& left, const reverse_itera
 
 한 반복기 개체가 컨테이너에서 다른 반복기 개체에 의해 주소가 지정된 요소보다 나중에 나타나는 요소의 주소를 지정하는 경우 다른 반복기 개체보다 큽니다. 한 반복기 개체가 다른 반복기 개체와 동일한 요소 또는 컨테이너에서 다른 반복기 개체에 의해 주소가 지정된 요소보다 먼저 나타나는 요소의 주소를 지정하는 경우 다른 반복기 개체보다 크지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // iterator_op_gt.cpp
@@ -493,10 +503,10 @@ int main( )
 ```Output
 The initial vector vec is: ( 0 2 4 6 8 10 ).
 The iterators rVPOS1 & rVPOS2 initially point to the first element
- in the reversed sequence: 10.
+in the reversed sequence: 10.
 The iterator rVPOS1 is less than or equal to the iterator rVPOS2.
 The iterator rVPOS1 now points to the second element
- in the reversed sequence: 8.
+in the reversed sequence: 8.
 The iterator rVPOS1 is greater than the iterator rVPOS2.
 ```
 
@@ -511,9 +521,11 @@ bool operator>=(const reverse_iterator<RandomIterator>& left, const reverse_iter
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체입니다.
+*left*<br/>
+iterator 형식의 개체입니다.
 
-*오른쪽* 형식의 개체입니다.
+*right*<br/>
+iterator 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -523,7 +535,7 @@ bool operator>=(const reverse_iterator<RandomIterator>& left, const reverse_iter
 
 한 반복기 개체가 동일한 요소 또는 컨테이너에서 다른 반복기 개체에 의해 주소가 지정된 요소보다 나중에 나타나는 요소의 주소를 지정하는 경우 다른 반복기 개체보다 큽니다. 한 반복기 개체가 컨테이너에서 다른 반복기 개체에 의해 주소가 지정된 요소보다 먼저 나타나는 요소의 주소를 지정하는 경우 다른 반복기 개체보다 작습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // iterator_op_ge.cpp
@@ -584,12 +596,12 @@ int main( )
 ```Output
 The initial vector vec is: ( 0 2 4 6 8 10 ).
 The iterator rVPOS1 initially points to the first element
- in the reversed sequence: 10.
+in the reversed sequence: 10.
 The iterator rVPOS2 initially points to the second element
- in the reversed sequence: 8.
+in the reversed sequence: 8.
 The iterator rVPOS1 is less than the iterator rVPOS2.
 The iterator rVPOS1 now points to the second element
- in the reversed sequence: 8.
+in the reversed sequence: 8.
 The iterator rVPOS1 is greater than or equal to the iterator rVPOS2.
 ```
 
@@ -613,15 +625,17 @@ operator+(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off* const move_iterator 또는 const reverse_iterator가 오프셋 되는 위치의 수입니다.
+*_Off*<br/>
+const move_iterator 또는 const reverse_iterator가 오프셋되는 위치의 수입니다.
 
-*오른쪽* 를 오프셋할 반복기입니다.
+*right*<br/>
+오프셋할 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
 
 합계를 반환 합니다 *오른쪽* + *_Off*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // iterator_op_insert.cpp
@@ -665,9 +679,9 @@ int main( )
 ```Output
 The initial vector vec is: ( 0 2 4 6 8 10 ).
 The iterator rVPOS1 initially points to the first element
- in the reversed sequence: 10.
+in the reversed sequence: 10.
 The iterator rVPOS1 now points to the fifth element
- in the reversed sequence: 2.
+in the reversed sequence: 2.
 ```
 
 ## <a name="operator-"></a>  operator-
@@ -688,9 +702,11 @@ Tdiff operator-(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 반복기입니다.
+*left*<br/>
+반복기입니다.
 
-*오른쪽* 반복기입니다.
+*right*<br/>
+반복기입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -704,7 +720,7 @@ Tdiff operator-(
 
 `Tdiff`는 반환된 식의 형식에 의해 결정됩니다. 그렇지 않으면 `RandomIterator1::difference_type`입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // iterator_op_sub.cpp
@@ -755,9 +771,9 @@ int main( )
 ```Output
 The initial vector vec is: ( 0 2 4 6 8 10 ).
 The iterators rVPOS1 & rVPOS2 initially point to the first element
- in the reversed sequence: 10.
+in the reversed sequence: 10.
 The iterator rVPOS2 now points to the fifth element
- in the reversed sequence: 2.
+in the reversed sequence: 2.
 The difference: rVPOS2 - rVPOS1= 4.
 ```
 

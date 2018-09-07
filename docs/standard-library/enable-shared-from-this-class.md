@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46e5b0b0c55c5a5dd0a48d2437fc83fa43226f5a
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: d74db7e9c88baec8aad7f966c0af3f2ec7840f0a
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956145"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110554"
 ---
 # <a name="enablesharedfromthis-class"></a>enable_shared_from_this 클래스
 
@@ -46,7 +46,8 @@ protected:
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty* 공유 포인터에 의해 제어 되는 형식입니다.
+*Ty*<br/>
+공유 포인터에 의해 제어되는 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -75,7 +76,7 @@ shared_ptr<const T> shared_from_this() const;
 
 개체가 `enable_shared_from_this` 기본 클래스에서 파생될 경우 `shared_from_this` 템플릿 멤버 함수는 이 인스턴스의 소유권을 기존 `shared_ptr` 소유자와 공유하는 [shared_ptr 클래스](../standard-library/shared-ptr-class.md) 개체를 반환합니다. 그렇지 않으면 새 `shared_ptr` 에서 **이**, 기존 다르므로 `shared_ptr` 소유자의 잘못 된 참조가 발생 하거나 개체가 두 번 이상 삭제 될 수 있습니다. `shared_ptr` 개체가 아직 소유하지 않은 인스턴스에서 `shared_from_this`를 호출하면 동작이 정의 해제됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std_memory_shared_from_this.cpp

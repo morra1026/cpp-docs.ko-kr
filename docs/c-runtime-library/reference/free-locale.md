@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b74725ddd7884bcc714e1048b28c53f201ebe4e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ce945499505b7efcaaf010585f27fbfaf42a06b8
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397134"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103321"
 ---
 # <a name="freelocale"></a>_free_locale
 
@@ -57,13 +57,14 @@ void _free_locale(
 
 ### <a name="parameters"></a>매개 변수
 
-*로캘* 해제할 로캘 개체입니다.
+*locale*<br/>
+해제할 로캘 개체입니다.
 
 ## <a name="remarks"></a>설명
 
-**_free_locale** 함수에 대 한 호출에서 얻은 로캘 개체를 해제 하는 데 사용 됩니다 **_get_current_locale** 또는 **_create_locale**합니다.
+합니다 **_free_locale** 함수에 대 한 호출에서 얻은 로캘 개체를 해제 하는 **_get_current_locale** 하거나 **_create_locale**합니다.
 
-이 함수의 이전 이름인 **__free_locale** (두 개의 선행 밑줄이)으로 사용 되지 않습니다.
+이 함수의 이전 이름인 **__free_locale** (사용 하 여 선행 밑줄이 두 개)가 사용 되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 

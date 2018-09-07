@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7882bdd68d6d35994752c8332329e6a92b74fbfa
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 9464e71757416e1a1efb7c185d11740bfc1da3c0
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959796"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105863"
 ---
 # <a name="isreference-class"></a>is_reference 클래스
 
@@ -37,13 +37,14 @@ struct is_reference;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty* 쿼리할 형식입니다.
+*Ty*<br/>
+형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
 형식 조건자의 인스턴스 형태인 경우 true 형식을 *Ty* 함수, 그렇지 않으면 false 또는 개체에 대 한 참조입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // std__type_traits__is_reference.cpp
