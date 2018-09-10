@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a0652ca867ba49243ca5c87caa1dec98da929cf
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8a08563396a77dec5f72ea35e10dd8a349095077
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764552"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314237"
 ---
 # <a name="modifying-the-atl-dhtml-control"></a>ATL DHTML 컨트롤 수정
 
@@ -51,7 +51,7 @@ ATL 컨트롤 마법사 빌드를 해당 컨트롤의 실행 및 메서드를 �
 
    사용할 수는 **IWebBrowser2** 메서드 ATL.h 파일에서 해당 인터페이스에 대 한 포인터를 제공 하기 때문입니다.
 
-그런 다음 만든 메서드를 호출 하는 HTML 리소스를 수정 합니다. 이러한 메서드를 호출 하는 것에 대 한 세 개의 단추를 추가 합니다.  
+그런 다음 만든 메서드를 호출 하는 HTML 리소스를 수정 합니다. 이러한 메서드를 호출 하는 것에 대 한 세 개의 단추를 추가 합니다.
 
 #### <a name="to-modify-the-html-resource"></a>HTML 리소스를 수정 하려면
 
@@ -72,9 +72,9 @@ ATL 컨트롤 마법사 빌드를 해당 컨트롤의 실행 및 메서드를 �
 3. 에 대 한 호출을 추가 합니다 `HelloHTML` 만든 메서드. 예를 들어:
 
     ```html
-    <br>  
-    <br>  
-    <BUTTON onclick='window.external.HelloHTML();'>HelloHTML</BUTTON>  
+    <br>
+    <br>
+    <BUTTON onclick='window.external.HelloHTML();'>HelloHTML</BUTTON>
     ```
 
    이 메서드는 레이블이 붙은 단추를 만듭니다 **HelloHTML**, 사용자가 클릭 하 여 표시할 수 있는 `HelloHTML` 메시지 상자입니다.

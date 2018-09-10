@@ -1,5 +1,5 @@
 ---
-title: 이미지 메뉴 (아이콘에 대 한 이미지 편집기) | Microsoft Docs
+title: 이미지 메뉴 (아이콘에 대 한 c + + 이미지 편집기) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,14 +17,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1729f98222d0f5c2d15ae907ac464367bc39a559
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: f99e743ccbb8e7eca65c092a85b0cc482226567d
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593950"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315946"
 ---
-# <a name="image-menu-image-editor-for-icons"></a>이미지 메뉴(아이콘에 대한 이미지 편집기)
+# <a name="image-menu-c-image-editor-for-icons"></a>이미지 메뉴 (아이콘에 대 한 c + + 이미지 편집기)
 
 합니다 **이미지** 경우에만 표시 되는 메뉴의 **이미지** 편집기를 활성화, 이미지를 편집 하 고, 색 색상표를 관리 하 고, 설정에 대 한 명령이 **이미지 편집기** 창 옵션. 또한 아이콘 및 커서를 사용 하 여 작업 하는 경우 장치 이미지를 사용 하기 위한 명령을 사용할 수 있습니다.
 

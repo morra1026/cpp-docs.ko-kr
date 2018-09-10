@@ -1,5 +1,5 @@
 ---
-title: 대화 상자 편집기 탭, 도구 상자 | Microsoft Docs
+title: 대화 상자 편집기 탭, 도구 상자 (c + +) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,10 +10,10 @@ dev_langs:
 helpviewer_keywords:
 - Toolbox [C++], Dialog Editor tab
 - controls [C++], types
-- syslink controls ino dialog boxes
-- custom controls [Visual Studio], dialog boxes
+- syslink controls in dialog boxes
+- custom controls [C++], dialog boxes
 - controls [C++], standard
-- Dialog editor, creating controls
+- Dialog Editor [C++], creating controls
 - controls [C++], adding to dialog boxes
 ms.assetid: 253885c2-dcb9-4d8e-ac9b-805ea31cbf5e
 author: mikeblome
@@ -21,14 +21,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a528ece23301f707b267ed7cefd30649b34c5e60
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2fa16a2cf15d5004ff80dda3188d79ffcba72ec1
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613514"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316213"
 ---
-# <a name="dialog-editor-tab-toolbox"></a>도구 상자, 대화 상자 편집기 탭
+# <a name="dialog-editor-tab-toolbox-c"></a>대화 상자 편집기 탭, 도구 상자 (c + +)
 
 합니다 **대화 상자 편집기** 탭에 표시 됩니다는 [도구 상자 창](/visualstudio/ide/reference/toolbox) 에서 작업 하는 경우는 **대화** 편집기입니다. 새 대화 상자에 컨트롤을 추가할 컨트롤을 끌어 옵니다 합니다 **도구 상자** 만들려는 대화 상자로 (자세한 내용은 참조 하세요. [대화 상자에 컨트롤 추가](adding-a-control-to-a-dialog-box.md)). 그런 다음 컨트롤을 주변으로 이동하거나 크기와 모양을 변경할 수 있습니다.
 

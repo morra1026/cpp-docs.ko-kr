@@ -255,12 +255,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1a157bcd3ecdce16a25d5bb6523ed6962a94a18
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 49677077761a11df93a540a749e140485fa9485f
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42539056"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44319073"
 ---
 # <a name="compiler-errors-c3500-through-c3999"></a>컴파일러 오류 C3500 ~ C3999
 
@@ -496,7 +496,7 @@ ms.locfileid: "42539056"
 |[컴파일러 오류 C3721](compiler-error-c3721.md)|'*서명을*': 이벤트에 대 한 호환 되지 않는 서명|
 |[컴파일러 오류 C3722](compiler-error-c3722.md)|일반 이벤트 허용 되지 않습니다.|
 |[컴파일러 오류 C3723](compiler-error-c3723.md)|'*함수*': 이벤트를 확인할 수 없습니다.|
-|[컴파일러 오류 C3724](compiler-error-c3724.md)|이벤트에 다중 스레딩을 사용하려면 #include <windows.h>를 사용해야 합니다.|
+|[컴파일러 오류 C3724](compiler-error-c3724.md)|해야 #include \<windows.h >를 사용 하 여 이벤트를 사용 하 여 다중 스레딩|
 |컴파일러 오류 C3725|사용되지 않습니다.|
 |컴파일러 오류 C3726|사용되지 않습니다.|
 |[컴파일러 오류 C3727](compiler-error-c3727.md)|'*이벤트*': 관리 되는 이벤트 대리자에 대 한 포인터는 데이터 멤버 또는 멤버 함수 여야 합니다.|

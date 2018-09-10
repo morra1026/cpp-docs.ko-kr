@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf6c2f46d3dedc80cb89e6776a82eee6ebe57026
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 91769b0982bcc92c1f300766250b3ca13d231706
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42539115"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313834"
 ---
 # <a name="rangeerror-class"></a>range_error 클래스
 
@@ -41,7 +41,7 @@ public:
 
 반환 된 값 [무엇입니까](../standard-library/exception-class.md) 복사본이 `message.data`합니다. 자세한 내용은 [basic_string:: data](../standard-library/basic-string-class.md#data)합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // range_error.cpp
@@ -60,10 +60,10 @@ int main()
       cerr << "Type: " << typeid( e ).name( ) << endl;
    };
 }
-\* Output:
+/* Output:
 Caught: The range is in error!
 Type: class std::range_error
-*\
+*/
 ```
 
 ## <a name="requirements"></a>요구 사항

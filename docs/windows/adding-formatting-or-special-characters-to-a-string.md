@@ -1,5 +1,5 @@
 ---
-title: 문자열에 형식 지정 또는 특수 문자를 추가 | Microsoft Docs
+title: 문자열 리소스 (c + +)에 형식 지정 또는 특수 문자 추가 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,14 +18,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1b4eda998d598e70fd687276a2d2941d224da4d7
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 8bf67723f516e0c5b1bf9931d7f53d36907fca86
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211680"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313392"
 ---
-# <a name="adding-formatting-or-special-characters-to-a-string"></a>문자열에 형식 지정 또는 특수 문자 추가
+# <a name="adding-formatting-or-special-characters-to-a-string-resource-c"></a>문자열 리소스 (c + +)에 형식 지정 또는 특수 문자 추가
 
 ### <a name="to-add-formatting-or-special-characters-to-a-string"></a>문자열에 형식 지정 또는 특수 문자를 추가 하려면
 

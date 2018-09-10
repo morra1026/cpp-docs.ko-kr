@@ -1,5 +1,5 @@
 ---
-title: 대화 상자의 컨트롤 | Microsoft Docs
+title: 컨트롤이 대화 상자 (c + +) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -9,7 +9,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - controls [C++], dialog boxes
-- dialog box controls, about dialog box controls
+- dialog box controls [C++], about dialog box controls
 - dialog box controls
 ms.assetid: e216c4f9-2fd4-429d-889a-8ebce7bad177
 author: mikeblome
@@ -17,14 +17,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 70e3bcfb644893f1dc8b41b9c11a3aee5c92103d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d8128859f2b136fb945376eeea8afa0d1ef8e6e1
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591960"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317110"
 ---
-# <a name="controls-in-dialog-boxes"></a>대화 상자의 컨트롤
+# <a name="controls-in-dialog-box-ces"></a>Es 대화 상자 (c + +)에서 제어
 
 사용 하 여 대화 상자 컨트롤을 추가할 수 있습니다 합니다 [대화 상자 편집기 탭](../windows/dialog-editor-tab-toolbox.md) 에 [도구 상자 창](/visualstudio/ide/reference/toolbox), 대화 상자를 끌어 원하는 컨트롤을 선택할 수 있습니다. 기본적으로 도구 상자 창 자동 숨기기로 설정 됩니다. 대화 상자 편집기가 열려 있으면 솔루션의 왼쪽된 여백에 탭으로 나타납니다. 고정할 수 있습니다 합니다 **도구 상자** 창을 클릭 하 여 위치에는 **자동 숨기기** 창의 오른쪽 위 모퉁이의 단추입니다. 이 창의 동작을 제어 하는 방법에 대 한 자세한 내용은 참조 하세요. [창 관리](/visualstudio/ide/customizing-window-layouts-in-visual-studio)합니다.
 

@@ -1,5 +1,5 @@
 ---
-title: 새 도구 모음 리소스 대화 상자 | Microsoft Docs
+title: 새 도구 모음 리소스 대화 상자 (c + +) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,23 +10,23 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- New Toolbar Resource dialog box
+- New Toolbar Resource dialog box [C++]
 ms.assetid: 52dd01ad-e748-4ab2-b3eb-59f5df990ca6
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6952fa51115d5bec9650ef6d6012e3c7aff2d127
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6ca09463a2934db0097c09d6a4f928f108fd0760
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602172"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316304"
 ---
-# <a name="new-toolbar-resource-dialog-box"></a>새 도구 모음 리소스 대화 상자
+# <a name="new-toolbar-resource-dialog-box-c"></a>새 도구 모음 리소스 대화 상자 (c + +)
 
-합니다 **새 도구 모음 리소스** 대화 상자를 사용 하면 도구 모음 리소스를 추가 하는 단추의 높이 너비를 지정할 수 있습니다. 기본값은 16 × 15 픽셀입니다.
+합니다 **새 도구 모음 리소스** 대화 상자를 사용 하면 c + + 프로젝트의 도구 모음 리소스를 추가 하는 단추의 높이 너비를 지정할 수 있습니다. 기본값은 16 × 15 픽셀입니다.
 
 도구 모음을 만드는 데 사용 되는 비트맵은 2048의 최대 너비입니다. 설정한 경우 합니다 **단추 너비** 단추 4 개를 하나만 사용할 수 있습니다, 512입니다. 513에 너비를 설정 하는 경우만 세 개의 단추가 있습니다.
 

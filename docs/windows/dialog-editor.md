@@ -1,5 +1,5 @@
 ---
-title: 대화 상자 편집기 | Microsoft Docs
+title: 대화 상자 편집기 (c + +) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,24 +11,24 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- resource editors, Dialog editor
+- resource editors [C++], Dialog editor
 - editors, dialog boxes
 - Dialog editor
-- dialog boxes, editing
+- dialog boxes [C++], editing
 ms.assetid: d94884ef-2cca-49d8-9b58-775f34848134
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 39c34487941ee45f91883ed91b1faa2c93973cfe
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6226b583b60bb458d75ba82ac1fd0b758028dca8
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601726"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315498"
 ---
-# <a name="dialog-editor"></a>대화 상자 편집기
+# <a name="dialog-editor-c"></a>대화 상자 편집기 (c + +)
 
 합니다 **대화 상자** 편집기를 만들거나 대화 상자 리소스를 편집할 수 있습니다. 대화 상자의.rc 파일에서 두 번 클릭 하 여 대화 상자 편집기를 열면 합니다 **리소스 뷰** 창 (**뷰** > **리소스 뷰**). 사실은 **리소스 뷰** 를 Express 버전에서는 사용할 수 없습니다.
 

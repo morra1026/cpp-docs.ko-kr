@@ -1,5 +1,5 @@
 ---
-title: 대화 상자 컨트롤과 코드 사이의 전환 | Microsoft Docs
+title: 대화 상자 (c + +) 컨트롤과 코드 사이의 전환 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,24 +11,24 @@ helpviewer_keywords:
 - events [C++], viewing for controls
 - Windows messages [C++], controls
 - messages [C++], viewing for dialog boxes
-- Dialog editor, accessing code
+- Dialog Editor [C++], accessing code
 - code [C++], switching from Dialog Editor
 - controls [C++], jumping to code
-- Dialog editor, switching between controls and code
+- Dialog Editor [C++], switching between controls and code
 ms.assetid: 7da73815-b853-4203-ba45-bbe570695122
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9aa603afdd6392f9dbe6082a76c1ae157bd008af
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0ef2bcd7dc6bf70f4d0486334d71bd5f7798c83f
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610858"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314393"
 ---
-# <a name="switching-between-dialog-box-controls-and-code"></a>대화 상자 컨트롤과 코드 사이의 전환
+# <a name="switching-between-dialog-box-c-controls-and-code"></a>대화 상자 (c + +) 컨트롤과 코드 사이의 전환
 
 MFC 응용 프로그램에서 대화 상자 컨트롤 처리기 코드로 이동할 또는 신속 하 게 만들 스텁 처리기 함수에 두 번 클릭 수 있습니다.
 

@@ -1,5 +1,5 @@
 ---
-title: 리소스 내용 대화 상자 | Microsoft Docs
+title: 리소스 내용 대화 상자 (c + +) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,29 +10,28 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- Resource Includes dialog box
-- rc files, changing storage
-- symbol header files, changing
-- compiling source code, including resources
-- .rc files, changing storage
-- symbol header files, read-only
-- symbols, symbol header files
+- Resource Includes dialog box [C++]
+- rc files [C++], changing storage
+- symbol header files [C++], changing
+- .rc files [C++], changing storage
+- symbol header files [C++], read-only
+- symbols [C++], symbol header files
 ms.assetid: 659a54e6-e416-4045-8411-798730ff4ce3
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 96ee92f1b21d67321b95a169cbc4c47eaca2de17
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 1ea89cdd21f4debfa23716a04630e34e3b9203c1
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610663"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313340"
 ---
-# <a name="resource-includes-dialog-box"></a>리소스 내용 대화 상자
+# <a name="resource-includes-dialog-box-c"></a>리소스 내용 대화 상자 (c + +)
 
-사용할 수는 **리소스 내용** 환경의 기본 수정할 작업에서 프로젝트.rc 파일 및 모든 리소스를 모두 저장 대화 상자 [기호](../windows/symbols-resource-identifiers.md) Resource.h에 있습니다.
+사용할 수는 **리소스 내용** 환경의 기본 작업 수정할에서 프로젝트.rc 파일 및 모든 리소스를 모두 저장 하는 c + + 프로젝트의 대화 상자 [기호](../windows/symbols-resource-identifiers.md) Resource.h에 있습니다.
 
 열려는 합니다 **리소스 내용** 대화 상자에서 마우스 오른쪽 단추로 클릭.rc 파일 [리소스 뷰](../windows/resource-view-window.md), 선택한 **리소스 내용** 바로 가기 메뉴에서.
 

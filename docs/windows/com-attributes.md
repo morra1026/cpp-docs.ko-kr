@@ -8,7 +8,7 @@ ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
-- attributes [C++], reference topics
+- attributes [C++/CLI], reference topics
 - attributes [COM]
 - COM, attributes
 ms.assetid: 52a5dd70-e8be-4bba-afd6-daf90fe689a0
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 857e032f02102a79747b79140207d07905f5b3d2
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8e18f64d48b357ed691f42fc900f68c8e8054776
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591593"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317253"
 ---
 # <a name="com-attributes"></a>COM 특성
 COM 특성에는 COM 및.NET Framework 공용 언어 런타임 개발의 다양 한 영역을 지 원하는 코드를 삽입 합니다. 이러한 영역 범위에서 사용자 지정 인터페이스 구현 및 지원을 기존 인터페이스의 스톡 속성, 메서드 및 이벤트를 지 원하는입니다. 또한 복합 및 ActiveX 컨트롤 구현을 위한 지원은 찾을 수 있습니다.

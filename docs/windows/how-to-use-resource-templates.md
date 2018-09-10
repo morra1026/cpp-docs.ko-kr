@@ -1,5 +1,5 @@
 ---
-title: '방법: 리소스 템플릿 사용 | Microsoft Docs'
+title: '방법: 리소스 템플릿 (c + +)를 사용 하 여 | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -8,27 +8,27 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- language-specific template files
+- language-specific template files [C++]
 - resource templates
-- resources [Visual Studio], creating
-- rct files
+- resources [C++], creating
+- rct files [C++]
 - templates, resource templates
-- resources [Visual Studio], templates
-- .rct files
+- resources [C++], templates
+- .rct files [C++]
 ms.assetid: bdfe7060-f98e-4859-8285-9c8570360e9d
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5bd85dd5c5b6468ca8246fdf11f4068eae928107
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 90c94e87693929c2ae33d65fe3f3a4b2dd55d48b
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602442"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313977"
 ---
-# <a name="how-to-use-resource-templates"></a>방법: 리소스 템플릿 사용
+# <a name="how-to-use-resource-templates-c"></a>방법: 리소스 템플릿 (c + +)를 사용 합니다.
 
 리소스 템플릿은 .rct 파일로 저장한 사용자 지정 리소스입니다. 리소스 템플릿을 다른 리소스를 만들기 위한 시작 지점으로 사용할 수 있습니다. 리소스 템플릿을 사용하면 표준 컨트롤 및 기타 반복 요소와 같이 기능을 공유하는 추가 리소스 또는 리소스 그룹을 개발하는 시간을 절약할 수 있습니다. 예를 들어 여러 대화 상자에 도움말 단추와 회사 로고 아이콘을 포함할 수 있습니다. 이 작업을 빠르게 하려면 새 대화 상자 템플릿을 만들고 로고와 도움말 단추를 사용하여 템플릿을 사용자 지정합니다.
 

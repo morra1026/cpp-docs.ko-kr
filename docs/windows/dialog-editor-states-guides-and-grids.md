@@ -1,5 +1,5 @@
 ---
-title: 대화 상자 편집기 상태 (안내선과 모눈) | Microsoft Docs
+title: 대화 상자 편집기 상태 (안내선과 모눈) (c + +) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -8,21 +8,21 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- Dialog editor, guides and margins
+- Dialog Editor [C++], guides and margins
 ms.assetid: dbacf9ef-e8b0-4125-a7ce-84911c482e98
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6386531e12bdeb75e51976ad2ed9798200ea2c6d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 22e27a5dddacf87a9768d7f6b8d27765d902b5ff
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602887"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318371"
 ---
-# <a name="dialog-editor-states-guides-and-grids"></a>대화 상자 편집기 상태(안내선과 모눈)
+# <a name="dialog-editor-states-guides-and-grids-c"></a>대화 상자 편집기 상태 (안내선과 모눈) (c + +) 
 
 사용 하 여 대화 상자에 컨트롤을 정렬할 수 있습니다 합니다 **대화 상자** 세 가지 상태 중 하나로 편집기:
 

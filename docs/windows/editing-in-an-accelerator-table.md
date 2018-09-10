@@ -1,5 +1,5 @@
 ---
-title: 액셀러레이터 키 테이블에서 편집 | Microsoft Docs
+title: 액셀러레이터 키 테이블 (c + +)를 사용한 편집 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ed8e2b630444c28675b4714b65676a049a8b285b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0fc9352993491c10599b0b7937561104b91ba76c
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611099"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314835"
 ---
-# <a name="editing-in-an-accelerator-table"></a>액셀러레이터 키 테이블에서 편집
+# <a name="editing-in-an-accelerator-table-c"></a>액셀러레이터 키 테이블 (c + +)를 사용한 편집
 
 ### <a name="to-edit-in-an-accelerator-table"></a>액셀러레이터 키 테이블에서 편집하려면
 

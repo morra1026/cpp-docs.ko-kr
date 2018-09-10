@@ -1,5 +1,5 @@
 ---
-title: 모눈 설정 대화 상자 (아이콘에 대 한 이미지 편집기) | Microsoft Docs
+title: 모눈 설정 대화 상자 (c + +) (아이콘에 대 한 이미지 편집기) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,21 +11,21 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- Grid Settings dialog box
+- Grid Settings dialog box [C++]
 ms.assetid: 59ce033a-ff10-48cd-b414-f9cb74da6789
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b9d312e7a2d13c13aefe3adaa51531af498fe638
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 52f6aea7bb934f3dd7b3c42c2c13ff7939a8b168
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42578733"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316226"
 ---
-# <a name="grid-settings-dialog-box-image-editor-for-icons"></a>모눈 설정 대화 상자(아이콘에 대한 이미지 편집기)
+# <a name="grid-settings-dialog-box-c-image-editor-for-icons"></a>모눈 설정 대화 상자 (c + +) (아이콘에 대 한 이미지 편집기)
 
 이미지에 대 한 눈금 설정을 지정할 수 있습니다 하 고 편집 이미지 눈금선을 표시 합니다. 줄은 이미지를 편집 하는 데 유용 하지만 이미지 자체의 일부로 저장 되지 않습니다.
 

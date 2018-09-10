@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: caae1a52c36c5d21e55e90a821b280f2face7ede
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 0ef090aec97308a6d423c18daab5ee540efdd8a1
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959776"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316324"
 ---
 # <a name="lthashmapgt"></a>&lt;hash_map&gt;
 
@@ -32,7 +32,7 @@ ms.locfileid: "38959776"
 
 ## <a name="syntax"></a>구문
 
-> #<a name="include-hashmap"></a>include <hash_map>
+> #<a name="include-hashmap"></a>포함 \<hash_map >
 
 ### <a name="operators"></a>연산자
 
@@ -64,6 +64,6 @@ ms.locfileid: "38959776"
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](cpp-standard-library-header-files.md)
-[c + + 표준 라이브러리의 스레드 보안](thread-safety-in-the-cpp-standard-library.md)
-[c + + 표준 라이브러리 참조](cpp-standard-library-reference.md)
+[헤더 파일 참조](cpp-standard-library-header-files.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ 표준 라이브러리 참조](cpp-standard-library-reference.md)

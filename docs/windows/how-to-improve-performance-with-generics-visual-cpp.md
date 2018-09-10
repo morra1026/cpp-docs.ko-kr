@@ -9,8 +9,8 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - performance, C++
-- Visual C++, performance
-- Visual C++, generics
+- C++, performance
+- C++, generics
 - generics [C++], performance
 ms.assetid: f14a175b-301f-46cc-86e4-c82d35f9aa3e
 author: mikeblome
@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 519d498f9ff62773171dbe14eef828899bb2f5c1
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9f946970f78b432774a5e4c7ba20fd15a00ae654
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42571249"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318528"
 ---
 # <a name="how-to-improve-performance-with-generics-visual-c"></a>방법: 제네릭을 사용하여 성능 개선(Visual C++)
 
@@ -31,7 +31,7 @@ ms.locfileid: "42571249"
 
 이 문서에서는 제네릭으로 컬렉션을 사용하는 응용 프로그램의 성능을 향상시키는 방법을 설명합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 .NET Framework에는 <xref:System.Collections?displayProperty=fullName> 네임스페이스의 여러 컬렉션 클래스가 제공됩니다. 이러한 컬렉션의 대부분은 <xref:System.Object?displayProperty=fullName> 형식의 개체에서 동작합니다. 그러면 값 형식까지 포함한 .NET Framework의 모든 형식이 <xref:System.Object?displayProperty=fullName>에서 파생되기 때문에 컬렉션에서 모든 형식을 저장할 수 있습니다. 그러나 이 방법에는 두 가지 단점이 있습니다.
 
@@ -88,7 +88,7 @@ Popped a String: Seven
 Popped an int: 7
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 새 <xref:System.Collections.Generic?displayProperty=fullName> 네임스페이스는 <xref:System.Collections?displayProperty=fullName> 네임스페이스에서 찾을 수 있는 여러 개의 동일한 컬렉션을 포함하고 있지만, 제네릭 형식 매개 변수를 받기 위해 수정되었습니다. 이렇게 하면 제네릭이 아닌 컬렉션의 두 가지 단점이 사라집니다. 값 형식의 boxing 및 unboxing과 컬렉션에 저장할 형식을 지정할 수 없는 것이 그 단점입니다. 두 컬렉션에 대한 작업은 동일합니다. 인스턴스화되는 방법만 다릅니다.
 

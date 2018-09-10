@@ -1,5 +1,5 @@
 ---
-title: 사용자 지정 색 선택 대화 상자 (아이콘에 대 한 이미지 편집기) | Microsoft Docs
+title: 사용자 지정 색 선택 대화 상자 (c + +) (아이콘에 대 한 이미지 편집기) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,22 +10,22 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- Custom Color Selector dialog box
-- colors, image
+- Custom Color Selector dialog box [C++]
+- colors [C++], image
 ms.assetid: 534d0c2a-b3f6-4f09-9346-3bbf85bb3dd7
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 254734bec6649c7181e67d4d2330493b0f22197b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ee1d2cac587db64451fbc3622351461d4651b2f8
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609439"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318916"
 ---
-# <a name="custom-color-selector-dialog-box-image-editor-for-icons"></a>사용자 지정 색 선택 대화 상자(아이콘에 대한 이미지 편집기)
+# <a name="custom-color-selector-dialog-box-c-image-editor-for-icons"></a>사용자 지정 색 선택 대화 상자 (c + +) (아이콘에 대 한 이미지 편집기)
 
 이 대화 상자를 사용 하면 이미지에 사용할 색을 사용자 지정할 수 있습니다. 자세한 내용은 [사용자 지정 또는 색 변경](../windows/customizing-or-changing-colors-image-editor-for-icons.md)합니다.
 

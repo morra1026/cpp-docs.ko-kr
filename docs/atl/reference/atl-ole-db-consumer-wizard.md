@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c83e644d8544b7919c0f61199197574d03b13ff8
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ec6c778c46998ba8e324fcf97c209598cc2f99dd
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763070"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315377"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB 소비자 마법사
 
@@ -106,23 +106,23 @@ ms.locfileid: "43763070"
 
    데이터 원본을 선택 하면이 상자는 테이블 또는 선택한 저장된 프로시저에 따라 기본 클래스 이름으로 채워집니다 (참조 **데이터 원본을 선택** 아래). 클래스 이름을 편집할 수 있습니다.
 
-- **.h 파일**  
+- **.h 파일**
 
    데이터 원본을 선택 하면이 상자는 테이블 또는 선택한 저장된 프로시저에 따라 기본 헤더 클래스 이름으로 채워집니다 (참조 **데이터 원본을 선택** 아래). 헤더 파일의 이름을 편집 하거나 기존 헤더 파일을 선택할 수 있습니다.
 
-- **특성 사용**  
+- **특성 사용**
 
    이 옵션은 특성 또는 템플릿 선언을 사용 하 여 소비자 클래스를 만들 여부를 지정 합니다. 이 옵션을 선택 하면 마법사 (이것이 기본 옵션) 템플릿 선언 대신 특성을 사용 합니다. 이 옵션의 선택을 취소 하면 특성 대신 템플릿 선언이 사용 합니다.
 
    - 소비자를 선택 하면 **형식** 의 **테이블**, 마법사를 사용 하는 `db_source` 및 `db_table` 특성을 클래스 선언에서 테이블 및 테이블 접근자를 만들기 및 사용 하 여 `db_column` 를 열 지도를 만듭니다. 예를 들어이 맵에서 생성 됩니다.
 
         ```cpp
-        // Inject table class and table accessor class declarations  
-        [db_source("<initialization_string>"), db_table("dbo.Orders")]  
-        ... 
-        // Column map  
-        [ db_column(1, status=m_dwOrderIDStatus, length=m_dwOrderIDLength) ] LONG m_OrderID;  
-        [ db_column(2, status=m_dwCustomerIDStatus, length=m_dwCustomerIDLength) ] TCHAR m_CustomerID[6];  
+        // Inject table class and table accessor class declarations
+        [db_source("<initialization_string>"), db_table("dbo.Orders")]
+        ...
+        // Column map
+        [ db_column(1, status=m_dwOrderIDStatus, length=m_dwOrderIDLength) ] LONG m_OrderID;
+        [ db_column(2, status=m_dwCustomerIDStatus, length=m_dwCustomerIDLength) ] TCHAR m_CustomerID[6];
         ...
         ```
 
@@ -133,20 +133,20 @@ ms.locfileid: "43763070"
             class COrdersAccessor; // Table class
             class COrders : public CTable<CAccessor<COrdersAccessor>>;
         // ...
-        // Column map  
+        // Column map
             BEGIN_COLUMN_MAP(COrderDetailsAccessor)
                 COLUMN_ENTRY_LENGTH_STATUS(1, m_OrderID, m_dwOrderIDLength, m_dwOrderIDStatus)
                 COLUMN_ENTRY_LENGTH_STATUS(2, m_CustomerID, m_dwCustomerIDLength, m_dwCustomerIDStatus)
-                // ...  
+                // ...
             END_COLUMN_MAP()
         ```
 
    - 소비자를 선택 하면 **형식** 의 **명령**, 마법사를 사용 하는 `db_source` 및 `db_command` 특성을 사용 하 여 `db_column` 열 지도를 만듭니다. 예를 들어이 맵에서 생성 됩니다.
 
         ```cpp
-        [db_source("<initialization_string>"), db_command("SQL_command")]  
-        ... 
-        // Column map using db_column is the same as for consumer type of 'table'  
+        [db_source("<initialization_string>"), db_command("SQL_command")]
+        ...
+        // Column map using db_column is the same as for consumer type of 'table'
         ```
 
       명령 및 명령 접근자를 사용 하는 대신 클래스 선언을 명령 클래스의.h 파일의 예를 들어:
@@ -193,6 +193,6 @@ ms.locfileid: "43763070"
 
 ## <a name="see-also"></a>참고자료
 
-[ATL OLE DB 소비자](../../atl/reference/adding-an-atl-ole-db-consumer.md)  
-[코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)  
+[ATL OLE DB 소비자](../../atl/reference/adding-an-atl-ole-db-consumer.md)
+[코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)
 [연결 문자열 및 데이터 링크 (OLE DB)](/previous-versions/windows/desktop/ms718376\(v=vs.85\))

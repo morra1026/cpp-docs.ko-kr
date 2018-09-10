@@ -1,5 +1,5 @@
 ---
-title: 미리 정의 된 액셀러레이터 키 | Microsoft Docs
+title: 미리 정의 된 액셀러레이터 키 (c + +) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,21 +12,21 @@ dev_langs:
 helpviewer_keywords:
 - accelerator keys
 - keyboard shortcuts
-- keyboard shortcuts, predefined
+- keyboard shortcuts [C++], predefined
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3f5ed6d95b48a4ecbe2fa23a377d8aac7a73feb9
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5e6498e0b0722b5de28b5569c5f3565b0f033ea9
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603795"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315680"
 ---
-# <a name="predefined-accelerator-keys"></a>사전 정의된 액셀러레이터 키
+# <a name="predefined-accelerator-keys-c"></a>미리 정의 된 액셀러레이터 키 (c + +)
 
 Windows 응용 프로그램 프로젝트에 포함될 수 있는 미리 정의된 많은 액셀러레이터 키가 있습니다. 이러한 가상 키 중 일부는 Windows 환경을 위한 것입니다. 기타 키는 브라우저 또는 유니코드 응용 프로그램을 지원합니다. 모든 액셀러레이터에 이러한 키 중 하나를 사용할 수 있습니다.
 

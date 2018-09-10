@@ -1,5 +1,5 @@
 ---
-title: 리소스 기호 대화 상자 | Microsoft Docs
+title: 리소스 기호 대화 상자 (c + +) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,25 +10,25 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- New Symbol dialog box
-- Resource Symbols dialog box
-- Change Symbol dialog box
+- New Symbol dialog box [C++]
+- Resource Symbols dialog box [C++]
+- Change Symbol dialog box [C++]
 ms.assetid: 9706cde3-1f48-4fcd-bedb-2b03b455e3c1
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fc4c6a749a5e3ef1835d959e7803ac6b6f4435ec
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 064fb9adce8b41c13709819f7ce0b7c515fea12a
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609821"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313171"
 ---
-# <a name="resource-symbols-dialog-box"></a>리소스 기호 대화 상자
+# <a name="resource-symbols-dialog-box-c"></a>리소스 기호 대화 상자 (c + +)
 
-합니다 **리소스 기호** 대화 상자를 사용 하면 새 리소스 기호 추가을 기호를 사용에서 하는 소스 코드의 위치를 건너뛸지 표시 되는 기호를 변경 합니다.
+합니다 **리소스 기호** c + + 대화 상자를 사용 하면 새 리소스 기호 추가을 기호를 사용에서 하는 소스 코드의 위치를 건너뛸지 표시 되는 기호를 변경 합니다.
 
 **이름**  
 기호의 이름을 표시합니다. 자세한 내용은 [기호 이름 제한](../windows/symbol-name-restrictions.md)합니다.

@@ -1,5 +1,5 @@
 ---
-title: 관리 되는 리소스 파일 편집 | Microsoft Docs
+title: 관리 되는 리소스 파일 (c + +)를 편집 합니다. | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,23 +10,23 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- .resx files, editing
-- resource files, editing
-- resx files, editing
+- .resx files [C++], editing
+- resource files [C++], editing
+- resx files [C++], editing
 ms.assetid: 42593030-7897-4bf3-920c-e0b2d11c5bbd
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4fe7dac220838841179096e8fe40d2c04dfcad1b
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: d17a4d1f9fa7cb80fc8fcb3cec5599fb572c0ea0
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677273"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318657"
 ---
-# <a name="editing-managed-resource-files"></a>관리되는 리소스 파일 편집
+# <a name="editing-managed-resource-files-c"></a>관리 되는 리소스 파일 (c + +) 편집
 
 관리 되는 리소스 (.resx) 파일에는 XML 파일입니다. 관리 되는 리소스 파일에서 프로젝트에 추가 되는 경우는 **새 항목 추가** 대화 상자를 **관리 되는 리소스 편집기** 기본적으로 열립니다.
 

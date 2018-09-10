@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6d8780c249fdf768c322e3026240642c4da43c4
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 538a376dd14eae32864b494b7e79db1c89686b84
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338723"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315017"
 ---
 # <a name="application-control"></a>응용 프로그램 컨트롤
 OLE 응용 프로그램 및 해당 개체를 통해 상당한 컨트롤에 필요합니다. OLE 시스템 Dll을 시작 하 고 응용 프로그램을 자동으로 릴리스, 프로덕션 및 개체의 수정 조정 및 등에 있어야 합니다. 이 항목에서는에 포함 된 함수에는 해당 요구 사항을 충족 합니다. OLE 시스템 Dll에 의해 호출 되는 것 외에도 이러한 함수 에서도 응용 프로그램에서 라고도 합니다. 
@@ -55,7 +55,7 @@ BOOL AFXAPI AfxOleCanExitApp();
 ### <a name="remarks"></a>설명  
  개체에 대해 해결되지 않은 참조가 있으면 응용 프로그램이 종료될 수 없습니다. 전역 함수 `AfxOleLockApp` 및 `AfxOleUnlockApp`은 각각 응용 프로그램의 개체에 대한 참조 수를 늘리거나 줄입니다. 이 카운터가 0이 아니면 응용 프로그램이 종료될 수 없습니다. 카운터가 0이 아니면 사용자가 시스템 메뉴에서 닫기를 선택하거나 파일 메뉴에서 종료를 선택할 때 응용 프로그램의 기본 창이 숨겨집니다(제거되지 않음). 이 함수를 호출 하는 프레임 워크 `CFrameWnd::OnClose`합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCAutomation#2](../../mfc/codesnippet/cpp/application-control_1.cpp)]  
 
 ## <a name="requirements"></a>요구 사항  
@@ -74,7 +74,7 @@ COleMessageFilter* AFXAPI AfxOleGetMessageFilter();
 ### <a name="remarks"></a>설명  
  현재 액세스 하려면이 함수를 호출 `COleMessageFilter`-파생 개체를 호출 하는 것 처럼 `AfxGetApp` 현재 응용 프로그램 개체에 액세스 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCAutomation#3](../../mfc/codesnippet/cpp/application-control_2.cpp)]  
   
  [!code-cpp[NVC_MFCAutomation#4](../../mfc/codesnippet/cpp/application-control_3.cpp)]  
@@ -131,7 +131,7 @@ void AFXAPI AfxOleLockApp();
   
  호출 `AfxOleLockApp` 에서 클라이언트 응용 프로그램에서 사용 되는 동안 제거할 해당 개체에 적합 하지 않을 수는 경우 OLE 인터페이스를 노출 하는 개체입니다. 호출할 수도 `AfxOleUnlockApp` 를 호출 하는 모든 개체의 소멸자에서 `AfxOleLockApp` 생성자에서. 기본적으로 `COleDocument` (및 파생 클래스) 자동으로 잠금 및 응용 프로그램을 잠금 해제 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCAutomation#5](../../mfc/codesnippet/cpp/application-control_4.cpp)]  
 
 ### <a name="requirements"></a>요구 사항  
@@ -149,7 +149,7 @@ void AFXAPI AfxOleUnlockApp();
   
  활성 개체 수가 0에 도달 하면 `AfxOleOnReleaseAllObjects` 라고 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  예를 참조 하세요 [AfxOleLockApp](#afxolelockapp)합니다.  
 
 ### <a name="requirements"></a>요구 사항  
@@ -176,7 +176,7 @@ BOOL AFXAPI AfxOleLockControl( LPCTSTR lpszProgID );
 ### <a name="remarks"></a>설명  
  이렇게 하면 컨트롤 표시 속도가 상당히 빨라질 수 있습니다. 예를 들어 대화 상자에서 컨트롤을 만들고 이 컨트롤을 `AfxOleLockControl`로 잠글 경우에는 대화 상자를 표시 또는 삭제할 때마다 대화 상자를 만들고 종료할 필요가 없습니다. 사용자가 대화 상자를 반복해서 열고 닫는 경우, 컨트롤을 잠그면 성능이 크게 향상될 수 있습니다. 컨트롤을 삭제할 준비가 되면 `AfxOleUnlockControl`을 호출합니다.  
    
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
 ```cpp
 // Starts and locks control's (Microsoft Calendar) class factory. 
 // Control will remain in memory for lifetime of
@@ -186,7 +186,7 @@ AfxOleLockControl(_T("MSCAL.Calendar"));
 ```
    
 ### <a name="requirements"></a>요구 사항  
- **헤더:** < afxwin.h >  
+ **헤더:** afxwin.h  
    
 ### <a name="see-also"></a>참고 항목  
  [매크로 및 전역](mfc-macros-and-globals.md)   
@@ -323,7 +323,7 @@ BOOL AFXAPI AfxOleUnlockControl( LPCTSTR lpszProgID );
 ### <a name="remarks"></a>설명  
  컨트롤을 사용 하 여 잠겨 `AfxOleLockControl`컨트롤과 연결 된 동적으로 생성된 된 데이터는 메모리에 남아 있도록 합니다. 크게 컨트롤을 만들고 제거 될 때마다 표시 되는 수 해야 하기 때문에 컨트롤의 표시 속도 높일 수이 있습니다. 컨트롤을 삭제할 준비가 되면 `AfxOleUnlockControl`을 호출합니다.  
    
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
 ```cpp
 // Unlock control's (Microsoft Calendar Control) class factory.
 
@@ -332,7 +332,7 @@ AfxOleUnlockControl(_T("MSCAL.Calendar"));
 ```
    
 ### <a name="requirements"></a>요구 사항  
- **헤더:** < afxwin.h >  
+ **헤더:** afxwin.h  
    
 ### <a name="see-also"></a>참고 항목  
  [매크로 및 전역](mfc-macros-and-globals.md)  

@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4eb91708545d2303304177093e79ea49e8fa9208
-ms.sourcegitcommit: 894b3b3a91fcd8894b582747b03135c0be450c1f
+ms.openlocfilehash: 6645bb81a1fd4a2b42eb7419a0d008b9ac7692ad
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37850422"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44319086"
 ---
 # <a name="compiler-warnings-by-compiler-version"></a>컴파일러 버전별 컴파일러 경고
 
@@ -404,7 +404,7 @@ C4694|'*형식*': 봉인된 추상 클래스는 기본 클래스 '를 사용할 
 C4720|인라인 어셈블러 보고서: '*설명을*'
 C4721|'*설명을*': 내장 함수로 사용할 수 없음
 C4722|'*설명을*': 소멸자가 반환 하지 않습니다 잠재적인 메모리 누수
-C4726|ARM arch4/4T 지원만 ' < r _ f > 또는 < spsr_f >' 즉 치 값을 사용 하 여
+C4726|Arch4/4T 지원만 ARM '\<r _ f > 또는 \<spsr_f >' 즉 치 값을 사용 하 여
 C4727|명명 된 PCH *이름* 있는 동일한 타임 스탬프를 사용 하 여 *이름* 하 고 *이름*합니다.  첫 번째 PCH를 사용합니다.
 C4729|선형 그래프 기반 경고에 사용하기에는 함수가 너무 큽니다.
 C4730|'*설명을*': _m64 혼합 및 부동 소수점 식이 잘못 된 코드에서 발생할 수 있습니다

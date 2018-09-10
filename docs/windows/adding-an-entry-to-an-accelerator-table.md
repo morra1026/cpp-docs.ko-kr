@@ -1,5 +1,5 @@
 ---
-title: 액셀러레이터 키 테이블에 항목 추가 | Microsoft Docs
+title: 액셀러레이터 키 테이블 (c + +)에 항목 추가 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,18 +16,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6d463dc59e88dbd5c302de632d5261f29d8a4aab
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7055c21a2b9e7d0e32f3dac56641513b19953e18
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595569"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315583"
 ---
-# <a name="adding-an-entry-to-an-accelerator-table"></a>액셀러레이터 키 테이블에 항목 추가
+# <a name="adding-an-entry-to-an-accelerator-table-c"></a>액셀러레이터 키 테이블 (c + +)에 항목 추가
 
 ### <a name="to-add-an-entry-to-an-accelerator-table"></a>액셀러레이터 키 테이블에 항목을 추가하려면
 
-1. 액셀러레이터 키 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](../windows/resource-view-window.md)합니다.
+1. C + + 프로젝트에서 액셀러레이터 키 테이블에서 해당 아이콘을 두 번 클릭 하 여 엽니다 [리소스 뷰](../windows/resource-view-window.md)합니다.
 
    > [!NOTE]
    > 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.

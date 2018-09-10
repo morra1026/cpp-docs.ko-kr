@@ -1,5 +1,5 @@
 ---
-title: 메뉴 명령에 대 한 액세스 키를 할당 | Microsoft Docs
+title: 메뉴 명령 (c + +)에 대 한 액세스 키를 할당 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -9,12 +9,12 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - access keys [C++], checking
-- menus, shortcut keys
+- menus [C++], shortcut keys
 - keyboard shortcuts [C++], command assignments
 - access keys [C++], assigning
-- mnemonics, adding to menus
+- mnemonics [C++], adding to menus
 - keyboard shortcuts [C++], uniqueness checking
-- mnemonics, uniqueness checking
+- mnemonics [C++], uniqueness checking
 - Check Mnemonics command
 ms.assetid: fbcf1a00-af6a-4171-805a-0ac01d4e8b0d
 author: mikeblome
@@ -22,16 +22,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ab8ebb204b30883894e04c5d5d8a90f12c63a29b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 80a3480039330e85f468cfd46ba3901dd1c15dee
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591470"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318774"
 ---
-# <a name="assigning-access-keys-to-menu-commands"></a>메뉴 명령에 대한 선택키 할당
+# <a name="assigning-access-keys-to-menu-commands-c"></a>메뉴 명령 (c + +)에 대 한 액세스 키 할당
 
-액세스 키(사용자가 키보드로 메뉴를 선택할 수 있게 하는 니모닉)를 메뉴 및 메뉴 명령에 할당할 수 있습니다.
+C + + 프로젝트에서 메뉴 및 메뉴 명령에 액세스 키 (사용자가 키보드를 사용 하 여 메뉴를 선택할 수 있도록 니모닉)를 할당할 수 있습니다.
 
 ### <a name="to-assign-an-access-shortcut-key-to-a-menu-command"></a>액세스(바로 가기) 키를 메뉴 명령에 할당하려면
 
