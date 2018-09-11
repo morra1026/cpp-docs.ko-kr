@@ -1,5 +1,5 @@
 ---
-title: 대화 상자에 라디오 단추 그룹화 | Microsoft Docs
+title: 대화 상자 (c + +) 라디오 단추 그룹화 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,23 +12,23 @@ dev_langs:
 helpviewer_keywords:
 - member variables, adding to radio button groups
 - variables, dialog box control member variables
-- dialog box controls, grouping radio buttons
+- dialog box controls [C++], grouping radio buttons
 - grouping controls
-- radio buttons, grouping on dialog boxes
+- radio buttons [C++], grouping on dialog boxes
 ms.assetid: 3cc43f9e-56c8-4faa-9930-ce81733c69de
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2d0846d87273920f72598a1ea5bc4bd83d4c952d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ad05e9448af9148965ca2f0137d3e0d666d48871
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599887"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315394"
 ---
-# <a name="grouping-radio-buttons-on-a-dialog-box"></a>대화 상자의 라디오 단추 그룹화
+# <a name="grouping-radio-buttons-on-a-dialog-box-c"></a>라디오 단추 그룹화 대화 상자 (c + +)
 
 대화 상자에 라디오 단추를 추가 하면 처리 그룹으로 설정 하 여는 **그룹** 속성에는 **속성** 그룹의 첫 번째 단추에 대 한 창. 그러면 해당 라디오 단추의 컨트롤 ID가 [멤버 변수 추가 마법사](../ide/add-member-variable-wizard.md)에 표시됩니다. 이 마법사를 통해 라디오 단추 그룹에 대한 멤버 변수를 추가할 수 있습니다.
 

@@ -24,12 +24,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81bdbd07e06ef2ec24a5f220fcd11a228b783888
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 19e08d1544a23ad1272bde5066a63f37b1e511fd
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965992"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100926"
 ---
 # <a name="numput-class"></a>num_put 클래스
 
@@ -45,9 +45,11 @@ class num_put : public locale::facet;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType* 로캘의 문자를 인코딩하기 위해 프로그램 내에서 사용 되는 형식입니다.
+*CharType*<br/>
+로캘의 문자를 인코딩하기 위해 프로그램 내 사용하는 형식입니다.
 
-*OutputIterator* 숫자 put 함수가 반복기의 형식 출력을 작성 합니다.
+*OutputIterator*<br/>
+숫자 put 함수가 출력을 쓰는 반복기의 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -153,13 +155,17 @@ virtual iter_type do_put(
 
 ### <a name="parameters"></a>매개 변수
 
-*다음* 삽입된 된 문자열의 첫 번째 요소를 지정 하는 반복기입니다.
+*next*<br/>
+삽입된 문자열의 첫 번째 요소 주소를 지정하는 반복기입니다.
 
-*_Iosbase* 출력 및 출력 서식 지정에 대 한 플래그를 문장 부호를 적용 하는 데는 numpunct 패싯이 들어 있는 로캘을 포함 하는 스트림을 지정 합니다.
+*_Iosbase*<br/>
+출력 및 출력 서식 지정을 위한 플래그에 문장 부호를 적용하는 데 사용되는 numpunct 패싯이 들어 있는 로캘을 포함하는 스트림을 지정합니다.
 
-*_Fill* 간격에 사용 되는 문자입니다.
+*_Fill*<br/>
+간격에 사용되는 문자입니다.
 
-*val* 숫자 또는 부울 형식 출력 되는 것입니다.
+*val*<br/>
+출력할 숫자 또는 부울 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -292,7 +298,7 @@ virtual iter_type do_put(iter_type next,
 
 이 함수는 `ld`의 변환 사양을 `llu`로 대체한다는 점을 제외하면 첫 번째 함수와 동일하게 동작합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_put`을 호출하는 [put](#put)에 대한 예제를 참조하세요.
 
@@ -318,7 +324,8 @@ explicit num_put(size_t _Refs = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Refs* 개체에 대 한 메모리 관리의 유형을 지정 하는 데 사용 하는 정수 값입니다.
+*_Refs*<br/>
+개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -397,13 +404,17 @@ iter_type put(
 
 ### <a name="parameters"></a>매개 변수
 
-*dest* 삽입된 된 문자열의 첫 번째 요소를 지정 하는 반복기입니다.
+*dest*<br/>
+삽입된 문자열의 첫 번째 요소 주소를 지정하는 반복기입니다.
 
-*_Iosbase* 출력 및 출력 서식 지정에 대 한 플래그를 문장 부호를 적용 하는 데는 numpunct 패싯이 들어 있는 로캘을 포함 하는 스트림을 지정 합니다.
+*_Iosbase*<br/>
+출력 및 출력 서식 지정을 위한 플래그에 문장 부호를 적용하는 데 사용되는 numpunct 패싯이 들어 있는 로캘을 포함하는 스트림을 지정합니다.
 
-*_Fill* 간격에 사용 되는 문자입니다.
+*_Fill*<br/>
+간격에 사용되는 문자입니다.
 
-*val* 숫자 또는 부울 형식 출력 되는 것입니다.
+*val*<br/>
+출력할 숫자 또는 부울 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -413,7 +424,7 @@ iter_type put(
 
 모든 구성원 함수는 [do_put](#do_put)( `next`, `_Iosbase`, `_Fill`, `val`)을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // num_put_put.cpp

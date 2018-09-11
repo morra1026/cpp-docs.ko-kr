@@ -32,12 +32,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d50b53f9c06c5edbd159e7e2bac112f6f30432df
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 20566e34200b5c0e89b532d7096821d58a5f564f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954918"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103705"
 ---
 # <a name="queue-class"></a>queue 클래스
 
@@ -52,9 +52,11 @@ class queue
 
 ### <a name="parameters"></a>매개 변수
 
-*형식* 큐에 저장 되는 요소 데이터 형식
+*Type*<br/>
+큐에 저장되는 요소 데이터 형식입니다.
 
-*컨테이너* 큐를 구현 하는 데 사용 된 기본 컨테이너의 형식입니다.
+*컨테이너*<br/>
+큐를 구현하는 데 사용된 기본 컨테이너의 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -123,7 +125,7 @@ queue의 마지막 요소입니다. queue가 비어 있으면 반환 값이 정�
 
 1 또는 2로 정의된 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 사용하여 컴파일한 경우 빈 queue의 요소에 액세스하면 런타임 오류가 발생합니다.  자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // queue_back.cpp
@@ -163,7 +165,7 @@ typedef Container container_type;
 
 `Container`에 대한 자세한 내용은 [queue 클래스](../standard-library/queue-class.md) 항목의 설명 섹션을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `container_type`을 선언하고 사용하는 방법에 대한 예제는 [queue](#queue)의 예제를 참조하세요.
 
@@ -179,7 +181,7 @@ bool empty() const;
 
 queue가 비어 있으면 **true**이고 비어 있지 않으면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // queue_empty.cpp
@@ -235,7 +237,7 @@ const_reference front() const;
 
 1 또는 2로 정의된 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 사용하여 컴파일한 경우 빈 queue의 요소에 액세스하면 런타임 오류가 발생합니다.  자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // queue_front.cpp
@@ -277,7 +279,7 @@ void pop();
 
 구성원 함수를 적용하려면 queue가 비어 있지 않아야 합니다. queue의 맨 위 위치에는 가장 최근에 추가한 요소가 배치되며, 이 요소가 컨테이너 끝의 마지막 요소가 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // queue_pop.cpp
@@ -331,13 +333,14 @@ void push(const Type& val);
 
 ### <a name="parameters"></a>매개 변수
 
-*val* queue 끝에 추가 된 요소입니다.
+*val*<br/>
+queue 끝에 추가되는 요소입니다.
 
 ### <a name="remarks"></a>설명
 
 queue의 뒤 위치에는 가장 최근에 추가한 요소가 배치되며, 이 요소가 컨테이너 끝의 마지막 요소가 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // queue_push.cpp
@@ -381,13 +384,14 @@ explicit queue(const container_type& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 는 **const** 복사본으로 생성 된 큐가 있는 컨테이너입니다.
+*right*<br/>
+생성된 queue가 복사본이 되는 **const** 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
 
 queue의 기본 컨테이너는 deque입니다. list는 기본 컨테이너로 지정할 수 있지만 vector는 필수 `pop_front` 구성원 함수를 포함하지 않으므로 기본 컨테이너로 지정할 수 없습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // queue_queue.cpp
@@ -447,7 +451,7 @@ size_type size() const;
 
 queue의 현재 길이입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // queue_size.cpp
@@ -488,7 +492,7 @@ typedef typename Container::size_type size_type;
 
 이 형식은 queue에 의해 조정되는 기본 컨테이너의 `size_type`과 동일한 의미입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `size_type`을 선언하고 사용하는 방법에 대한 예제는 [queue::front](#front)의 예제를 참조하세요.
 
@@ -504,7 +508,7 @@ typedef typename Container::value_type value_type;
 
 이 형식은 queue에 의해 조정되는 기본 컨테이너의 `value_type`과 동일한 의미입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // queue_value_type.cpp

@@ -1,5 +1,5 @@
 ---
-title: 리소스 편집기에서 리소스 보기 및 편집 | Microsoft Docs
+title: 리소스 편집기 (c + +)에서 리소스 보기 및 편집 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,28 +10,25 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- resources [Visual Studio], viewing
-- rc files, viewing resources
-- Resource View pane
+- resources [C++], viewing
 - layouts, previewing resource
-- code, viewing resources
-- resource editors, viewing resources
-- .rc files, viewing resources
-- resources [Visual Studio], editing
+- resource editors [C++], viewing resources
+- .rc files [C++], viewing resources
+- resources [C++], editing
 ms.assetid: ba8bdc07-3f60-43c7-aa5c-d5dd11f0966e
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 742bdd9d869d6a913315229bb6b5c896584a5269
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 4fd8ed4e1257c8f780f1b1ac733aa8dd2261685c
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593206"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316694"
 ---
-# <a name="viewing-and-editing-resources-in-a-resource-editor"></a>리소스 편집기에서 리소스 보기 및 편집
+# <a name="viewing-and-editing-resources-in-a-resource-editor-c"></a>리소스 편집기 (c + +)에서 리소스 보기 및 편집
 
 각 리소스 종류에는 **리소스** 리소스 유형에 특정 한 편집기입니다. 다시 정렬의 크기를 조정 하거나 컨트롤 및 기능을 추가 합니다. 그렇지 않으면 연결된 된 편집기를 사용 하 여 리소스의 기능을 수정할 수 있습니다. 리소스를 편집할 수도 있습니다 [텍스트 형식](../windows/how-to-open-a-resource-script-file-in-text-format.md) 하 고 [이진 형식](../windows/opening-a-resource-for-binary-editing.md)합니다.
 

@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58f3245e430ba1c74ea88f6262f14a4d38c1ca2c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: c44288c990f773984492f7c05b80423b17c1a37c
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954033"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110580"
 ---
 # <a name="isintegral-class"></a>is_integral 클래스
 
@@ -37,7 +37,8 @@ struct is_integral;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty* 쿼리할 형식입니다.
+*Ty*<br/>
+형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -45,7 +46,7 @@ struct is_integral;
 
 정수 계열 형식 중 하나인 **bool**를 **char**를 **unsigned char**를 **char 서명**를 **wchar_t**, **짧은**를 **unsigned short**를 **int**를 **부호 없는 int**를 **긴**, 및 **부호 없는 long**합니다. 또한 제공 하는 컴파일러를 사용 하 여 정수 계열 형식 중 하나일 수 있습니다 **long long**, **부호 없는 long long**하십시오 **__int64**, 및 **unsigned __int64**.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // std__type_traits__is_integral.cpp

@@ -40,12 +40,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 455bf63cdac425217c40068853b302edefb94f16
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1df9e064ac7af761a858c6e18d99526a9b3c7ffb
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404284"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103790"
 ---
 # <a name="perror-wperror"></a>perror, _wperror
 
@@ -64,29 +64,30 @@ void _wperror(
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지* 인쇄할 문자열 메시지입니다.
+*message*<br/>
+인쇄할 문자열 메시지입니다.
 
 ## <a name="remarks"></a>설명
 
-**perror** 함수는 오류 메시지를 인쇄 **stderr**합니다. **_wperror** 의 와이드 문자 버전이 **_perror**; *메시지* 인수를 **_wperror** 는 와이드 문자 문자열입니다. **_wperror** 및 **_perror** 동일 하 게 작동 합니다.
+합니다 **perror** 함수는 오류 메시지를 출력 **stderr**합니다. **_wperror** 의 와이드 문자 버전이 **_perror**; *메시지* 인수 **_wperror** 는 와이드 문자 문자열입니다. **_wperror** 하 고 **_perror** 동일 하 게 작동 합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tperror**|**perror**|**perror**|**_wperror**|
 
-*메시지* 인쇄 먼저 오류를 생성 한 마지막 라이브러리 호출에 대 한 시스템 오류 메시지에 콜론을 순서 대로 마지막으로 줄 바꿈 문자입니다. 경우 *메시지* 이 null 포인터 이거나 null 문자열에 대 한 포인터 **perror** 시스템 오류 메시지를 인쇄 합니다.
+*메시지* 인쇄 먼저 뒤에 콜론을 다음의 오류를 발생 시킨 마지막 라이브러리 호출에 대 한 시스템 오류 메시지에서 마지막에 줄 바꿈 문자입니다. 하는 경우 *메시지* 이 null 포인터 이거나 null 문자열에 대 한 포인터 **perror** 시스템 오류 메시지를 출력 합니다.
 
-오류 번호는 ERRNO.H에 정의되어 있는 [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) 변수에 저장됩니다. [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) 변수를 통해 시스템 오류 메시지에 액세스합니다. 이 변수는 오류 번호순으로 정렬된 메시지 배열입니다. **perror** 사용 하 여 적절 한 오류 메시지를 인쇄는 **errno** 값에 대 한 인덱스로 **_sys_errlist**합니다. 변수의 값 [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) 에 있는 요소의 최대 수로 정의 되는 **_sys_errlist** 배열입니다.
+오류 번호는 ERRNO.H에 정의되어 있는 [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) 변수에 저장됩니다. [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) 변수를 통해 시스템 오류 메시지에 액세스합니다. 이 변수는 오류 번호순으로 정렬된 메시지 배열입니다. **perror** 사용 하 여 적절 한 오류 메시지를 인쇄 합니다 **errno** 값에 대 한 인덱스로 **_sys_errlist**합니다. 변수 값 [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) 에 있는 요소의 최대 수로 정의 됩니다 합니다 **_sys_errlist** 배열입니다.
 
-정확한 결과 대 한 호출 **perror** 라이브러리 루틴이 오류와 함께 반환 된 후에 즉시 합니다. 그렇지 않으면 후속 호출을 덮어쓸 수는 **errno** 값입니다.
+정확한 결과 호출 **perror** 라이브러리 루틴이 오류와 함께 반환 된 직후입니다. 후속 호출을 덮어쓸 수이 고, 그렇지 합니다 **errno** 값입니다.
 
-Windows에서 운영 체제의 경우 일부 **errno** ERRNO에 나열 된 값입니다. H이 사용 되지 않습니다. 이러한 값은 UNIX 운영 체제에서 사용되도록 예약되어 있습니다. 참조 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) 목록은 **errno** Windows 운영 체제에 의해 사용 되는 값입니다. **perror** 에 대 한 빈 문자열을 인쇄 **errno** 이러한 플랫폼에서 사용 하지 않는 값입니다.
+에 Windows 운영 체제의 경우 일부 **errno** ERRNO에 나열 된 값입니다. H 사용 되지 않습니다. 이러한 값은 UNIX 운영 체제에서 사용되도록 예약되어 있습니다. 참조 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) 목록은 **errno** Windows 운영 체제에서 사용 되는 값입니다. **perror** 에 대 한 빈 문자열을 인쇄 **errno** 이러한 플랫폼이 지 사용 하지 않는 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**perror**|\<stdio.h> 또는 \<stdlib.h>|
 |**_wperror**|\<stdio.h> 또는 \<wchar.h>|

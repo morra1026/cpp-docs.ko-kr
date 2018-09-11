@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35a40b016fa8fb25782393ea462b5cff2a3c3fac
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a3690eab417f4c817e571026e501f36a19671da2
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963255"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100991"
 ---
 # <a name="isvoid-class"></a>is_void 클래스
 
@@ -37,13 +37,14 @@ struct is_void;
 
 ### <a name="parameters"></a>매개 변수
 
-*T* 쿼리할 형식입니다.
+*T*<br/>
+형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
 형식 조건자의 인스턴스 형태인 경우 true 형식을 *T* 됩니다 **void** 또는 cv 한정 된 형식으로 **void**, 그렇지 않으면 false입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // std__type_traits__is_void.cpp

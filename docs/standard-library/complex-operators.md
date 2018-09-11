@@ -19,12 +19,12 @@ helpviewer_keywords:
 - std::operator!= (complex)
 - std::operator&gt;&gt; (complex)
 - std::operator&lt;&lt; (complex), std::operator== (complex)
-ms.openlocfilehash: 2491cb859de8908bbe0710f03d12f836bbd80e2f
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: de26779c569326f46794ba76b7b886f994cd8b11
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208678"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110196"
 ---
 # <a name="ltcomplexgt-operators"></a>&lt;complex&gt; operators
 
@@ -58,9 +58,11 @@ bool operator!=(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 복소수 이거나 해당 매개 변수 형식의 같지 않은지 테스트할 개체입니다.
+*left*<br/>
+같지 않은지 테스트할 매개 변수 형식의 복소수 또는 개체입니다.
 
-*오른쪽* 복소수 이거나 해당 매개 변수 형식의 같지 않은지 테스트할 개체입니다.
+*right*<br/>
+같지 않은지 테스트할 매개 변수 형식의 복소수 또는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -72,7 +74,7 @@ bool operator!=(
 
 연산이 오버로드되어 특정 형식으로 데이터를 변환하지 않고 비교 테스트를 실행할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_op_NE.cpp
@@ -196,9 +198,11 @@ complex<Type> operator*(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 를 곱할 복소수의 매개 변수 형식을 개수나 두 복소수 중 첫 번째는 \* 작업 합니다.
+*left*<br/>
+두 복소수를 곱할 복소수의 매개 변수 형식이 된 숫자의 첫 번째는 \* 작업 합니다.
 
-*오른쪽* 를 곱할 복소수의 매개 변수 형식을 개수나 두 복소수 중 두 번째는 \* 작업 합니다.
+*right*<br/>
+두 복소수를 곱할 복소수의 매개 변수 형식을 수의 두 번째는 \* 작업 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -208,7 +212,7 @@ complex<Type> operator*(
 
 연산이 오버로드되어 특정 형식으로 데이터를 변환하지 않고 단순한 산술 연산을 실행할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_op_mult.cpp
@@ -295,9 +299,11 @@ complex<Type> operator+(const complex<Type>& left);
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 두 복소수 또는 매개 변수 형식을 추가할 수는 복소수는 숫자의 첫 번째는 + 작업 합니다.
+*left*<br/>
+두 복소수 중 첫 번째 복소수이거나 + 연산으로 더할 복소수의 매개 변수 형식을 가진 숫자입니다.
 
-*오른쪽* 두 복소수 또는 매개 변수 형식을 추가할 수는 복소수는 숫자의 두 번째는 + 작업 합니다.
+*right*<br/>
+두 복소수 중 두 번째 복소수이거나 + 연산으로 더할 복소수의 매개 변수 형식을 가진 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -307,7 +313,7 @@ complex<Type> operator+(const complex<Type>& left);
 
 연산이 오버로드되어 특정 형식으로 데이터를 변환하지 않고 단순한 산술 연산을 실행할 수 있습니다. 단항 연산자를 반환 합니다 *왼쪽*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_op_add.cpp
@@ -402,7 +408,7 @@ The argument of cs3 is: 0.463648 radians, which is 26.5651 degrees.
 
 The right-side complex number is cr4 = (3,4)
 The result of the unary application of + to the right-side
- complex number is: cs4 = (3,4)
+complex number is: cs4 = (3,4)
 The modulus of cs4 is: 5
 The argument of cs4 is: 0.927295 radians, which is 53.1301 degrees.
 ```
@@ -433,9 +439,11 @@ complex<Type> operator-(const complex<Type>& left);
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 는 연산으로 뺄 복소수의 매개 변수 형식을 개수나 두 복소수 중 첫 번째 숫자입니다.
+*left*<br/>
+두 복소수 중 첫 번째 복소수이거나 + 연산으로 뺄 복소수의 매개 변수 형식을 가진 숫자입니다.
 
-*오른쪽* 는 연산으로 뺄 복소수의 매개 변수 형식을 개수나 두 복소수 중 두 번째 숫자입니다.
+*right*<br/>
+두 복소수 중 두 번째 복소수이거나 + 연산으로 뺄 복소수의 매개 변수 형식을 가진 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -447,7 +455,7 @@ complex<Type> operator-(const complex<Type>& left);
 
 단항 연산자는 복소수의 부호를 변경하고, 실수부가 숫자 입력에서 음의 실수부이고 허수부가 숫자 입력에서 음의 허수부인 값을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_op_sub.cpp
@@ -542,7 +550,7 @@ The argument of cs3 is: -1.10715 radians, which is -63.4349 degrees.
 
 The right-side complex number is cr4 = (3,4)
 The result of the unary application of - to the right-side
- complex number is: cs4 = (-3,-4)
+complex number is: cs4 = (-3,-4)
 The modulus of cs4 is: 5
 The argument of cs4 is: -2.2143 radians, which is -126.87 degrees.
 ```
@@ -570,9 +578,11 @@ complex<Type> operator*(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 복소수 이거나는으로 나눌 분모인 복소수의 매개 변수 형식을의 수는 / 작업 합니다.
+*left*<br/>
+복소수이거나 / 연산으로 나눌 분모인 복소수의 매개 변수 형식을 가진 숫자입니다.
 
-*오른쪽* 복소수 이거나는으로 분자를 나누는 데 사용할 분모인 복소수의 매개 변수 형식을의 수는 / 작업 합니다.
+*right*<br/>
+복소수이거나 / 연산으로 분자를 나누는 데 사용할 분모인 복소수의 매개 변수 형식을 가진 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -582,7 +592,7 @@ complex<Type> operator*(
 
 연산이 오버로드되어 특정 형식으로 데이터를 변환하지 않고 단순한 산술 연산을 실행할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_op_div.cpp
@@ -678,9 +688,11 @@ basic_ostream<Elem, Traits>& operator<<(
 
 ### <a name="parameters"></a>매개 변수
 
-*Ostr* 출력 스트림에는 복소수를 입력 되 고 있습니다.
+*Ostr*<br/>
+복소수를 입력하는 출력 스트림입니다.
 
-*오른쪽* 입력을 출력 스트림에 복소수
+*right*<br/>
+출력 스트림에 입력하는 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -690,7 +702,7 @@ basic_ostream<Elem, Traits>& operator<<(
 
 출력 스트림이 오버로드어 모든 형태의 복소수를 허용하며 기본 출력 형식은 직각좌표 형식입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_op_insert.cpp
@@ -749,9 +761,11 @@ bool operator==(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 복소수 이거나 해당 매개 변수 형식의 같지 않은지 테스트할 개체입니다.
+*left*<br/>
+같지 않은지 테스트할 매개 변수 형식의 복소수 또는 개체입니다.
 
-*오른쪽* 복소수 이거나 해당 매개 변수 형식의 같지 않은지 테스트할 개체입니다.
+*right*<br/>
+같지 않은지 테스트할 매개 변수 형식의 복소수 또는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -763,7 +777,7 @@ bool operator==(
 
 연산이 오버로드되어 특정 형식으로 데이터를 변환하지 않고 비교 테스트를 실행할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_op_EQ.cpp
@@ -877,9 +891,11 @@ basic_istream<Elem, Traits>& operator>>(
 
 ### <a name="parameters"></a>매개 변수
 
-*Istr* 입력된 스트림에서 복소수를 추출 하는 중입니다.
+*Istr*<br/>
+복소수를 추출할 입력 스트림입니다.
 
-*오른쪽* 입력 스트림에서 추출 하는 복소수입니다.
+*right*<br/>
+입력 스트림에서 추출하는 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -895,7 +911,7 @@ basic_istream<Elem, Traits>& operator>>(
 
 - *실수부*
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // complex_op_extract.cpp

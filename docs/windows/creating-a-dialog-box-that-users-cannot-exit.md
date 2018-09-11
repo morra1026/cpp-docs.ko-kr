@@ -1,5 +1,5 @@
 ---
-title: 사용자가 종료할 수 없는 대화 상자 만들기 | Microsoft Docs
+title: 사용자가 종료할 수 없는 대화 상자 (c + +) 만들기 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -8,8 +8,8 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- dialog boxes, creating
-- modal dialog boxes, logon screens
+- dialog boxes [C++], creating
+- modal dialog boxes [C++], logon screens
 - logon screens
 ms.assetid: 54823c27-1658-4388-bd12-0a1ce8f3899e
 author: mikeblome
@@ -17,14 +17,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cd3e68d89ce0a2ece83876b6afcd6aa09e59ed93
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: f0b9c290cb8e5ced7537fb377d6e7ac52f20d089
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598222"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314549"
 ---
-# <a name="creating-a-dialog-box-that-users-cannot-exit"></a>사용자가 종료할 수 없는 대화 상자 만들기
+# <a name="creating-a-dialog-box-c-that-users-cannot-exit"></a>종료할 수 없는 사용자가 대화 상자 (c + +) 만들기
 
 사용자가 종료할 수 없는 런타임 대화 상자를 만들 수 있습니다. 이 종류의 대화 상자는 로그온에 유용하며, 응용 프로그램 또는 문서를 잠그는 데에도 유용합니다.
 

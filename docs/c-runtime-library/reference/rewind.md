@@ -34,12 +34,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58f8eddd2cae672f2a3677ebc9af87987889d166
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 37f54ff6b2c3738550c707887f2068986ca4abd6
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406835"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100289"
 ---
 # <a name="rewind"></a>rewind
 
@@ -55,25 +55,26 @@ void rewind(
 
 ### <a name="parameters"></a>매개 변수
 
-*스트림* 에 대 한 포인터 **파일** 구조입니다.
+*스트림*<br/>
+**FILE** 구조체에 대한 포인터입니다.
 
 ## <a name="remarks"></a>설명
 
-**되감기** 함수에 연결 된 파일 포인터의 위치를 조정 *스트림* 파일의 시작 부분에 있습니다. **rewind**에 대한 호출은 다음과 유사합니다.
+합니다 **rewind** 함수에 연결 된 파일 포인터 위치를 변경 *스트림* 파일의 시작 부분에 있습니다. **rewind**에 대한 호출은 다음과 유사합니다.
 
 **(void) fseek (** _스트림_**, 0 L, SEEK_SET);**
 
-그러나 달리 [fseek](fseek-fseeki64.md), **rewind** 스트림에 대 한 오류 표시기 뿐만 아니라 파일 끝 표시기를 지웁니다. 또한 달리 [fseek](fseek-fseeki64.md), **rewind** 포인터가 성공적으로 이동 하는지 여부를 나타내는 값을 반환 하지 않습니다.
+그러나와 달리 [fseek](fseek-fseeki64.md)하십시오 **rewind** 스트림에 대 한 오류 표시기는 물론 파일 끝 표시기도 지웁니다. 또한 달리 [fseek](fseek-fseeki64.md)를 **rewind** 포인터가 성공적으로 이동 하는지 여부를 나타내는 값을 반환 하지 않습니다.
 
-사용 하 여 키보드 버퍼를 지우려면 **되감기** 된 스트림을 **stdin**, 기본적으로 키보드와 연결 되어 있습니다.
+사용 하 여 키보드 버퍼를 지우려면 **rewind** 스트림을 사용 하 여 **stdin**, 기본적으로 키보드와 연결 되는 합니다.
 
-스트림이 **NULL** 에 설명 된 대로 포인터, 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된 경우이 함수를 반환 하 고 **errno** 로 설정 된 **EINVAL**합니다.
+스트림이 **NULL** 에 설명 된 대로 포인터인 경우 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우이 함수를 반환 하 고 **errno** 로 설정 된 **EINVAL**합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 내용은 [_doserrno, errno, _sys_errlist, 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**rewind**|\<stdio.h>|
 

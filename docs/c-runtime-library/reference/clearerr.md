@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c78355277fbb987d82bed46fb0b5f4ffd848b6a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c4bfc37a53e3b2b4e3c185c101685b7009d9d354
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395304"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105278"
 ---
 # <a name="clearerr"></a>clearerr
 
@@ -54,19 +54,20 @@ void clearerr(
 
 ### <a name="parameters"></a>매개 변수
 
-*스트림* 에 대 한 포인터 **파일** 구조입니다.
+*스트림*<br/>
+**FILE** 구조체에 대한 포인터입니다.
 
 ## <a name="remarks"></a>설명
 
-**clearerr** 함수에 대 한 파일 끝 표시기 및 오류 표시기 다시 설정 *스트림*합니다. 오류 표시기; 자동으로 제거 되지 않음 해당 스트림에서 작업을 계속 될 때까지 오류 값을 반환할 지정 된 스트림에 대 한 오류 표시기 설정 되 고 나면 **clearerr**, [fseek](fseek-fseeki64.md), **fsetpos**, 또는 [rewind](rewind.md) 호출 됩니다.
+합니다 **clearerr** 함수에 대 한 파일 끝 표시기 및 오류 표시기 다시 설정 *스트림*합니다. 오류 표시기가 자동으로 취소 되지 않습니다. 지정 된 스트림에 대 한 오류 표시기 설정 되 면 해당 스트림의 작업을 계속 반환 될 때까지 오류 값 **clearerr**, [fseek](fseek-fseeki64.md)하십시오 **fsetpos**, 또는 [rewind](rewind.md) 라고 합니다.
 
-경우 *스트림* 은 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 이 함수를 설정 하는 경우 실행을 계속 허용 된, **errno** 를 **EINVAL** 를 반환 합니다. 대 한 자세한 내용은 **errno** 오류 코드 참조와 [errno 상수](../../c-runtime-library/errno-constants.md)합니다.
+하는 경우 *스트림을* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 이 함수를 설정 하는 경우는 계속 실행 하도록 허용 합니다 **errno** 하 **EINVAL** 반환 합니다. 에 대 한 자세한 **errno** 오류 코드를 살펴보고 [errno 상수](../../c-runtime-library/errno-constants.md)합니다.
 
 이 함수의 더 안전한 버전을 사용할 수 있습니다. [clearerr_s](clearerr-s.md)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**clearerr**|\<stdio.h>|
 

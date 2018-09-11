@@ -1,5 +1,5 @@
 ---
-title: 액셀러레이터 키 형식 속성 | Microsoft Docs
+title: 액셀러레이터 키 형식 속성 (c + +) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 59fae6d0809e32883d5d56e43e64525e23643d91
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d38d5a78eb37a028f29da430a762604b2e50d632
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602328"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315693"
 ---
-# <a name="accelerator-type-property"></a>액셀러레이터 키 형식 속성
+# <a name="accelerator-type-property-c"></a>액셀러레이터 키 형식 속성 (c + +)
 
 액셀러레이터 **형식** 속성은 액셀러레이터 키 ID와 연결 된 바로 가기 키 조합이 가상 키 조합 또는 ASCII/ANSI 키 값을 인지를 확인 합니다.
 

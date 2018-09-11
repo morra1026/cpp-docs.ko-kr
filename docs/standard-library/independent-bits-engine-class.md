@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f802dc91c3429ba718778d122d1a787aad0dec87
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: eb76c477c54192dc6b6b969ecd4cdd32850c015f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964225"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110307"
 ---
 # <a name="independentbitsengine-class"></a>independent_bits_engine 클래스
 
@@ -36,11 +36,14 @@ class independent_bits_engine;
 
 ### <a name="parameters"></a>매개 변수
 
-*엔진* 기본 엔진 유형입니다.
+*엔진*<br/>
+기본 엔진 유형입니다.
 
-*W* **단어 크기**합니다. 생성된 각 수의 크기입니다(비트). **사전 조건**: `0 < W ≤ numeric_limits<UIntType>::digits`
+*W*<br/>
+**단어 크기**. 생성된 각 수의 크기입니다(비트). **사전 조건**: `0 < W ≤ numeric_limits<UIntType>::digits`
 
-*UIntType* 부호 없는 정수 결과 형식입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*UIntType*<br/>
+부호가 없는 정수 결과 형식입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="members"></a>멤버
 

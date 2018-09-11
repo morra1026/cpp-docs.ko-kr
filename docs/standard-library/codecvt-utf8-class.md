@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c0230c92a448eedf0cae7c80778c2bd4c48d077
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 58551874227bde5d158946c7df9c77bcc0ff3ef3
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963169"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108348"
 ---
 # <a name="codecvtutf8"></a>codecvt_utf8
 
@@ -34,9 +34,12 @@ class codecvt_utf8 : public std::codecvt<Elem, char, StateType>
 
 ## <a name="parameters"></a>매개 변수
 
-*Elem* 와이드 문자 요소 형식입니다.
-*Maxcode* 로캘 패싯에 대 한 문자의 최대 수입니다.
-*모드* 로캘 패싯에 대 한 구성 정보입니다.
+*Elem*<br/>
+와이드 문자 요소 형식입니다.
+*Maxcode*<br/>
+로캘 패싯에 대한 최대 문자 수입니다.
+*모드*<br/>
+로캘 패싯에 대한 구성 정보입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -44,4 +47,5 @@ class codecvt_utf8 : public std::codecvt<Elem, char, StateType>
 
 ## <a name="requirements"></a>요구 사항
 
-헤더: <codecvt> 네임스페이스: std
+헤더: \<codecvt > \
+Namespace: std

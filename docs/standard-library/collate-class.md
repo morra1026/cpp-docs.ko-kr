@@ -32,12 +32,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 604d8a2082d609e85e4c55f1d4ae3b6d15c4ce22
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 054246ce78601abf61f36d070500845275b61761
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966461"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110375"
 ---
 # <a name="collate-class"></a>collate 클래스
 
@@ -52,7 +52,8 @@ class collate : public locale::facet;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType* 문자를 인코딩하기 위해 프로그램 내에서 사용 되는 형식입니다.
+*CharType*<br/>
+문자를 인코딩하기 위해 프로그램 내 사용하는 형식
 
 ## <a name="remarks"></a>설명
 
@@ -111,15 +112,17 @@ public:
 
 protected:
     collate(
- const char* _Locname,
+const char* _Locname,
     size_t _Refs = 0);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*_Refs* 개체에 대 한 메모리 관리의 유형을 지정 하는 데 사용 하는 정수 값입니다.
+*_Refs*<br/>
+개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
-*_Locname* 는 로캘 이름입니다.
+*_Locname*<br/>
+로캘 이름입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -146,13 +149,17 @@ int compare(const CharType* first1,
 
 ### <a name="parameters"></a>매개 변수
 
-*first1* 비교할 첫 번째 시퀀스의 첫 번째 요소에 대 한 포인터입니다.
+*first1*<br/>
+비교할 첫 번째 시퀀스의 첫 번째 요소에 대한 포인터입니다.
 
-*last1* 비교할 첫 번째 시퀀스의 마지막 요소에 대 한 포인터입니다.
+*last1*<br/>
+비교할 첫 번째 시퀀스의 마지막 요소에 대한 포인터입니다.
 
-*first2* 비교할 두 번째 시퀀스의 첫 번째 요소에 대 한 포인터입니다.
+*first2*<br/>
+비교할 두 번째 시퀀스의 첫 번째 요소에 대한 포인터입니다.
 
-*last2* 비교할 두 번째 시퀀스의 마지막 요소에 대 한 포인터입니다.
+*last2*<br/>
+비교할 두 번째 시퀀스의 마지막 요소에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -170,7 +177,7 @@ int compare(const CharType* first1,
 
 멤버 함수는 [do_compare](#do_compare)(`first1`, `last1`, `first2`, `last2`)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // collate_compare.cpp
@@ -208,13 +215,17 @@ virtual int do_compare(const CharType* first1,
 
 ### <a name="parameters"></a>매개 변수
 
-*first1* 비교할 첫 번째 시퀀스의 첫 번째 요소에 대 한 포인터입니다.
+*first1*<br/>
+비교할 첫 번째 시퀀스의 첫 번째 요소에 대한 포인터입니다.
 
-*last1* 비교할 첫 번째 시퀀스의 마지막 요소에 대 한 포인터입니다.
+*last1*<br/>
+비교할 첫 번째 시퀀스의 마지막 요소에 대한 포인터입니다.
 
-*first2* 비교할 두 번째 시퀀스의 첫 번째 요소에 대 한 포인터입니다.
+*first2*<br/>
+비교할 두 번째 시퀀스의 첫 번째 요소에 대한 포인터입니다.
 
-*last2* 비교할 두 번째 시퀀스의 마지막 요소에 대 한 포인터입니다.
+*last2*<br/>
+비교할 두 번째 시퀀스의 마지막 요소에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -230,7 +241,7 @@ virtual int do_compare(const CharType* first1,
 
 보호 된 가상 멤버 함수에 순서 비교 [* first1, Last1) *의 시퀀스 *[first2, last2*). 적용 하 여 값을 비교 `operator<` 형식의 해당 요소 쌍 간에 `CharType`입니다. 시퀀스 내에서 가장 앞의 서로 다른 쌍에 더 작은 요소가 있는 경우 또는 서로 다른 쌍이 없지만 첫 번째 시퀀스가 더 짧은 경우 첫 번째 시퀀스는 더 작은 것으로 비교됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_compare`를 호출하는 [collate::compare](#compare)에 대한 예제를 참조하세요.
 
@@ -244,9 +255,11 @@ virtual long do_hash(const CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 결정 해야 하는 해당 값이 있는 시퀀스의 첫 번째 문자에 대 한 포인터입니다.
+*first*<br/>
+결정할 값이 있는 시퀀스의 첫 번째 문자에 대한 포인터입니다.
 
-*마지막* 결정 해야 하는 해당 값이 있는 시퀀스의 마지막 문자에 대 한 포인터입니다.
+*last*<br/>
+결정할 값이 있는 시퀀스의 마지막 문자에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -256,7 +269,7 @@ virtual long do_hash(const CharType* first, const CharType* last) const;
 
 해시 값은 목록의 배열에 의사(pseudo) 임의로 시퀀스를 분산하는 경우 등에 유용할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_hash`를 호출하는 [hash](#hash)에 대한 예제를 참조하세요.
 
@@ -270,9 +283,11 @@ virtual string_type do_transform(const CharType* first, const CharType* last) co
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 변환할 시퀀스의 첫 번째 문자에 대 한 포인터입니다.
+*first*<br/>
+변환할 시퀀스의 첫 번째 문자에 대한 포인터입니다.
 
-*마지막* 변환할 시퀀스의 마지막 문자에 대 한 포인터입니다.
+*last*<br/>
+변환할 시퀀스의 마지막 문자에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -282,7 +297,7 @@ virtual string_type do_transform(const CharType* first, const CharType* last) co
 
 보호된 가상 멤버 함수는 제어된 시퀀스가 시퀀스 [`first`, `last`)의 복사본인 [string_type](#string_type) 클래스의 개체를 반환합니다. collate\< **CharType**>에서 파생된 클래스가 [do_compare](#do_compare)를 재정의하는 경우 `do_transform`도 일치하도록 재정의해야 합니다. `collate::compare`에 전달된 경우 두 개의 변형된 문자열은 파생된 클래스에서 비교할 변환되지 않은 문자열을 전달하여 얻을 수 있는 것과 동일한 결과를 생성해야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `do_transform`을 호출하는 [transform](#transform)에 대한 예제를 참조하세요.
 
@@ -296,9 +311,11 @@ long hash(const CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 결정 해야 하는 해당 값이 있는 시퀀스의 첫 번째 문자에 대 한 포인터입니다.
+*first*<br/>
+결정할 값이 있는 시퀀스의 첫 번째 문자에 대한 포인터입니다.
 
-*마지막* 결정 해야 하는 해당 값이 있는 시퀀스의 마지막 문자에 대 한 포인터입니다.
+*last*<br/>
+결정할 값이 있는 시퀀스의 마지막 문자에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -310,7 +327,7 @@ long hash(const CharType* first, const CharType* last) const;
 
 해시 값은 목록의 배열에 의사(pseudo) 임의로 시퀀스를 분산하는 경우 등에 유용할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // collate_hash.cpp
@@ -350,7 +367,7 @@ typedef basic_string<CharType> string_type;
 
 이 형식은 개체가 소스 시퀀스의 복사본을 저장할 수 있는 템플릿 클래스 [basic_string](../standard-library/basic-string-class.md)의 특수화를 설명합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `string_type`의 선언 및 사용 방법의 예는 [transform](#transform)을 참조하세요.
 
@@ -364,9 +381,11 @@ string_type transform(const CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 변환할 시퀀스의 첫 번째 문자에 대 한 포인터입니다.
+*first*<br/>
+변환할 시퀀스의 첫 번째 문자에 대한 포인터입니다.
 
-*마지막* 변환할 시퀀스의 마지막 문자에 대 한 포인터입니다.
+*last*<br/>
+변환할 시퀀스의 마지막 문자에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -376,7 +395,7 @@ string_type transform(const CharType* first, const CharType* last) const;
 
 멤버 함수는 반환 [do_transform](#do_transform)(`first`, `last`).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // collate_transform.cpp

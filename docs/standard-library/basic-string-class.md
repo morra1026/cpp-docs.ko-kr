@@ -126,12 +126,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c56cdcf59c6dad891029e21e14940598e0cfeae
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 9a44cccd38d64f3e6b0c2b7af390d06292f70157
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209086"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105668"
 ---
 # <a name="basicstring-class"></a>basic_string 클래스
 
@@ -146,11 +146,14 @@ class basic_string;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType* 문자열에 저장할 단일 문자의 데이터 형식입니다. C + + 표준 라이브러리 형식 정의 사용 하 여이 템플릿 클래스의 특수화를 제공 [문자열](../standard-library/string-typedefs.md#string) 형식의 요소에 대 한 **char**하십시오 [wstring](../standard-library/string-typedefs.md#wstring), 에대한**wchar_t**하십시오 [u16string](../standard-library/string-typedefs.md#u16string) 에 대 한 `char16_t`, 및 [u32string](../standard-library/string-typedefs.md#u32string) 에 대 한 `char32_t`합니다.
+*CharType*<br/>
+문자열에 저장되는 단일 문자의 데이터 형식입니다. C + + 표준 라이브러리 형식 정의 사용 하 여이 템플릿 클래스의 특수화를 제공 [문자열](../standard-library/string-typedefs.md#string) 형식의 요소에 대 한 **char**하십시오 [wstring](../standard-library/string-typedefs.md#wstring), 에대한**wchar_t**하십시오 [u16string](../standard-library/string-typedefs.md#u16string) 에 대 한 `char16_t`, 및 [u32string](../standard-library/string-typedefs.md#u32string) 에 대 한 `char32_t`합니다.
 
-*특성* 의 여러 중요 속성을 `CharType` basic_string 특수화 내 요소를 클래스에 의해 설명 `Traits`합니다. 기본값은 `char_traits`< `CharType`>입니다.
+*특성*<br/>
+여러 중요 속성을 `CharType` basic_string 특수화 내 요소를 클래스에 의해 설명 `Traits`합니다. 기본값은 `char_traits`< `CharType`>입니다.
 
-*할당자* 문자열의 할당 및 메모리 할당 취소 하는 방법에 대 한 세부 정보를 캡슐화 하는 저장 된 할당자 개체를 나타내는 형식입니다. 기본값은 **allocator**< `CharType`>입니다.
+*할당자*<br/>
+문자열의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 기본값은 **allocator**< `CharType`>입니다.
 
 ### <a name="constructors"></a>생성자
 
@@ -314,19 +317,26 @@ basic_string<CharType, Traits, Allocator>& append(
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr* 추가할 C 문자열입니다.
+*ptr*<br/>
+추가할 C 문자열입니다.
 
-*str* 를 추가할 수 있는 문자는 문자열입니다.
+*str*<br/>
+문자를 추가하려고 하는 문자열입니다.
 
-*_Off* 추가 문자를 제공 합니다. 소스 문자열 부분의 인덱스입니다.
+*_Off*<br/>
+추가할 문자를 제공하는 소스 문자열 부분의 인덱스입니다.
 
-*개수* 추가할 최대 소스 문자열에서 문자의 수입니다.
+*count*<br/>
+소스 문자열에서 최대한 추가할 문자의 수입니다.
 
-*_Ch* 추가할 문자 값입니다.
+*_Ch*<br/>
+추가할 문자 값입니다.
 
-*첫 번째* 추가할 범위에서 첫 번째 요소를 지정 하는 입력된 반복기입니다.
+*first*<br/>
+추가될 범위에 있는 첫 번째 요소의 주소를 지정하는 입력 반복기입니다.
 
-*마지막* 는 입력된 반복기, const_pointer 또는 const_iterator 범위에서 마지막 요소 다음의 위치를 주소 지정을 추가할 수 있습니다.
+*last*<br/>
+추가할 범위에 있는 마지막 요소의 다음 요소 위치를 주소 지정하는 입력 반복기, const_pointer 또는 const_iterator입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -468,19 +478,26 @@ basic_string<CharType, Traits, Allocator>& assign(
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr* 대상 문자열에 할당 될 C 문자열의 문자에 대 한 포인터입니다.
+*ptr*<br/>
+대상 문자열에 할당할 C 문자열의 문자에 대한 포인터입니다.
 
-*개수* 문자 소스 문자열에서 할당 될 수 있습니다.
+*count*<br/>
+소스 문자열에서 할당 될 문자의 수입니다.
 
-*str* 문자가 대상 문자열에 할당할 소스 문자열입니다.
+*str*<br/>
+문자를 대상 문자열에 할당할 소스 문자열입니다.
 
-*_Ch* 할당할 문자 값입니다.
+*_Ch*<br/>
+할당할 문자 값입니다.
 
-*첫 번째* 는 입력된 반복기, const_pointer 또는 const_iterator 소스 문자열 범위에서 첫 번째 문자의 주소를 지정 대상 범위에 할당할 수 있습니다.
+*first*<br/>
+대상 범위에 할당할 소스 문자열 범위에서 첫 번째 문자의 주소를 지정하는 입력 반복기, const_pointer 또는 const_iterator입니다.
 
-*마지막* 는 입력된 반복기, const_pointer 또는 const_iterator 주소 범위에서 마지막 문자를 넘어가는 소스 문자열 중 하나를 대상 범위에 할당할 수 있습니다.
+*last*<br/>
+대상 범위에 할당할 소스 문자열 범위에서 마지막 문자 다음 문자의 주소를 지정하는 입력 반복기, const_pointer 또는 const_iterator입니다.
 
-*해제* 위치 할당할 새 문자 시작 됩니다.
+*해제*<br/>
+새 문자의 할당을 시작할 위치입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -595,7 +612,8 @@ reference at(size_type _Off);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off* 참조할 요소 위치의 인덱스입니다.
+*_Off*<br/>
+참조할 요소 위치의 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -721,12 +739,12 @@ basic_string(
 
 template <class InputIterator>
 basic_string(
- InputIterator first,
+InputIterator first,
     InputIterator last);
 
 template <class InputIterator>
 basic_string(
- InputIterator first,
+InputIterator first,
     InputIterator last,
     const allocator_type& _Al);
 
@@ -741,21 +759,29 @@ basic_string(
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr* 초기화 하는 데 해당 문자는 C 문자열의 `string` 생성 되 고 있는 합니다. 이 값은 null 포인터일 수 없습니다.
+*ptr*<br/>
+해당 문자가 생성되는 `string`을 초기화하는 데 사용되는 C 문자열입니다. 이 값은 null 포인터일 수 없습니다.
 
-*_Al* 생성 되는 문자열 개체에 대 한 저장소 할당자 클래스입니다.
+*_Al*<br/>
+생성되는 문자열 개체에 대한 저장소 할당자 클래스입니다.
 
-*개수* 초기화할 문자 수입니다.
+*count*<br/>
+초기화할 문자 수입니다.
 
-*오른쪽* 생성 되는 문자열을 초기화 하는 문자열입니다.
+*right*<br/>
+생성되는 문자열을 초기화할 문자열입니다.
 
-*_Roff* 생성 되는 문자열에 대 한 문자 값을 초기화 하는 데 사용할 첫 번째 문자열에서 문자의 인덱스입니다.
+*_Roff*<br/>
+생성되는 문자열에 대한 문자 값을 초기화하는 데 첫 번째로 사용할 문자열의 문자 인덱스입니다.
 
-*_Ch* 생성 되는 문자열에 복사할 문자 값입니다.
+*_Ch*<br/>
+생성되는 문자열에 복사할 문자 값입니다.
 
-*첫 번째* 는 입력된 반복기, const_pointer 또는 const_iterator 소스 범위에서 첫 번째 요소를 주소 지정 삽입 합니다.
+*first*<br/>
+삽입할 소스 범위에 있는 첫 번째 요소를 주소 지정하는 입력 반복기, const_pointer 또는 const_iterator입니다.
 
-*마지막* 는 입력된 반복기, const_pointer 또는 const_iterator 소스 범위에서 마지막 요소 다음의 위치를 주소 지정 삽입 합니다.
+*last*<br/>
+삽입할 소스 범위에 있는 마지막 요소의 다음 요소 위치를 주소 지정하는 입력 반복기, const_pointer 또는 const_iterator입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -851,7 +877,7 @@ int main( ) {
    cout << "The full original string str1 is: " << str1 << endl;
 
    // The dereferenced iterator can be used to modify a character
- *str1_Iter = 'G';
+*str1_Iter = 'G';
    cout << "The first character of the modified str1 is now: "
         << *str1_Iter << endl;
    cout << "The full modified string str1 is now: " << str1 << endl;
@@ -1148,19 +1174,26 @@ int compare(
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 문자열 피연산자 문자열과 비교할입니다.
+*str*<br/>
+피연산자 문자열과 비교할 문자열입니다.
 
-*_Pos1* 비교가 시작 될 피연산자 문자열의 인덱스입니다.
+*_Pos1*<br/>
+비교가 시작될 피연산자 문자열의 인덱스입니다.
 
-*_Num1* 비교할 피연산자 문자열에서 문자의 최대 수입니다.
+*_Num1*<br/>
+비교할 피연산자 문자열의 최대 문자 수입니다.
 
-*_Num2* 비교할 매개 변수 문자열에서 문자의 최대 수입니다.
+*_Num2*<br/>
+비교할 매개 변수 문자열의 최대 문자 수입니다.
 
-*_Off* 비교 하기 시작 하는 매개 변수 문자열의 인덱스입니다.
+*_Off*<br/>
+비교가 시작될 매개 변수 문자열의 인덱스입니다.
 
-*개수* 비교할 매개 변수 문자열에서 문자의 최대 수입니다.
+*count*<br/>
+비교할 매개 변수 문자열의 최대 문자 수입니다.
 
-*ptr* 피연산자 문자열과 비교할 C 문자열입니다.
+*ptr*<br/>
+피연산자 문자열과 비교할 C 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1341,14 +1374,14 @@ The operand string is equal to the parameter string.
 The operand string is: AACAB
 The parameter string is: CAB
 The last three characters of the operand string
- are equal to the parameter string.
+are equal to the parameter string.
 The first three characters of the operand string
- are less than the parameter string.
+are less than the parameter string.
 
 The operand string is: AACAB
 The parameter string is: DCABD
 The three characters from position 2 of the operand string are equal to
- the 3 characters parameter string from position 1.
+the 3 characters parameter string from position 1.
 
 The operand string is: ABC
 The parameter C-string is: DEF
@@ -1357,12 +1390,12 @@ The operand string is less than the parameter C-string.
 The operand string is: AACAB
 The parameter string is: CAB
 The last three characters of the operand string
- are equal to the parameter C-string.
+are equal to the parameter C-string.
 
 The operand string is: AACAB
 The parameter C-string is: ACAB
 The 3 characters from position 2 of the operand string are equal to
- the first 3 characters of the parameter C-string.
+the first 3 characters of the parameter C-string.
 ```
 
 ## <a name="const_iterator"></a>  basic_string::const_iterator
@@ -1470,11 +1503,13 @@ size_type copy(
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr* 요소가 복사 되는 대상 문자 배열입니다.
+*ptr*<br/>
+요소를 복사할 대상 문자 배열입니다.
 
 _ *개수* 복사할 최대 소스 문자열에서 문자의 수입니다.
 
-*_Off* 올 복사 되는 소스 문자열의 시작 위치입니다.
+*_Off*<br/>
+복사본을 만들 원본 문자열의 시작 위치입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1573,13 +1608,16 @@ size_type _Copy_s(
 
 ### <a name="parameters"></a>매개 변수
 
-*dest* 요소가 복사 되는 대상 문자 배열입니다.
+*dest*<br/>
+요소를 복사할 대상 문자 배열입니다.
 
-*dest_size* 크기인 *dest*합니다.
+*dest_size*<br/>
+크기인 *dest*합니다.
 
 _ *개수* 복사할 최대 소스 문자열에서 문자의 수입니다.
 
-*_Off* 올 복사 되는 소스 문자열의 시작 위치입니다.
+*_Off*<br/>
+복사본을 만들 원본 문자열의 시작 위치입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1847,7 +1885,7 @@ int main( )
    cout << endl;
 
    // The dereferenced iterator can be used to modify a character
- *str1_Iter = 'T';
+*str1_Iter = 'T';
    cout << "The last character-letter of the modified str1 is now: "
         << *str1_Iter << endl;
    cout << "The modified string str1 is now: " << str1 << endl;
@@ -1891,15 +1929,20 @@ basic_string<CharType, Traits, Allocator>& erase(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 지울 범위에서 첫 번째 요소 위치의 주소를 지정 하는 반복기입니다.
+*first*<br/>
+지울 범위에서 첫 번째 요소 위치의 주소를 지정하는 반복기입니다.
 
-*마지막* 지울 하나 다음 위치의 마지막 요소 범위에서 지정 하는 반복기입니다.
+*last*<br/>
+지울 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 반복기입니다.
 
-*_It* 지울 문자열에서 요소 위치의 주소를 지정 하는 반복기입니다.
+*_It*<br/>
+지울 문자열에서 요소 위치의 주소를 지정하는 반복기입니다.
 
-*_Pos* 제거할 문자열의 첫 번째 문자의 인덱스입니다.
+*_Pos*<br/>
+제거할 문자열에서 첫 번째 문자의 인덱스입니다.
 
-*개수* 만큼 시작 하는 문자열의 범위에 있는 경우 제거 하는 요소 수가 *_Pos*합니다.
+*count*<br/>
+*_Pos*로 시작하는 문자열의 범위 내에 많은 요소가 있는 경우 제거될 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1998,15 +2041,20 @@ size_type find(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch* 멤버 함수가 검색할 되는 문자 값입니다.
+*_Ch*<br/>
+멤버 함수가 검색할 문자 값입니다.
 
-*_Off* 하려면 검색 되는 위치의 인덱스입니다.
+*_Off*<br/>
+검색을 시작할 위치의 인덱스입니다.
 
-*ptr* 멤버 함수는 검색할 C 문자열입니다.
+*ptr*<br/>
+멤버 함수가 검색할 C 문자열입니다.
 
-*개수* 멤버 함수는 검색할 C 문자열에서 첫 번째 문자를 앞으로 계산 된 문자 수입니다.
+*count*<br/>
+멤버 함수가 검색할 C 문자열의 첫 문자부터 계산된 문자 수입니다.
 
-*str* 멤버 함수가 검색할 되는 문자열입니다.
+*str*<br/>
+멤버 함수가 검색할 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2130,7 +2178,7 @@ The Character 'x' was not found in str1.
 
 The original string str2 is: Let me make this perfectly clear.
 The index of the 1st element of 'perfect' after
- the 5th position in str2 is: 17
+the 5th position in str2 is: 17
 The substring 'imperfect' was not found in str2 .
 
 The original string str3 is: This is a sample string for this program
@@ -2139,7 +2187,7 @@ The index of the next occurrence of 'for' is in str3 begins at: 24
 
 The original string str4 is: clearly this perfectly unclear.
 The index of the 1st element of 'clear' after
- the 5th position in str4 is: 25
+the 5th position in str4 is: 25
 The index of the 1st element of 'clear' in str4 is: 0
 ```
 
@@ -2171,15 +2219,20 @@ size_type find_first_not_of(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch* 멤버 함수가 검색할 되는 문자 값입니다.
+*_Ch*<br/>
+멤버 함수가 검색할 문자 값입니다.
 
-*_Off* 하려면 검색 되는 위치의 인덱스입니다.
+*_Off*<br/>
+검색을 시작할 위치의 인덱스입니다.
 
-*ptr* 멤버 함수는 검색할 C 문자열입니다.
+*ptr*<br/>
+멤버 함수가 검색할 C 문자열입니다.
 
-*개수* 멤버 함수는 검색할 C 문자열에서 첫 번째 문자를 앞으로 계산 된 문자 수입니다.
+*count*<br/>
+멤버 함수가 검색할 C 문자열의 첫 문자부터 계산된 문자 수입니다.
 
-*str* 멤버 함수가 검색할 되는 문자열입니다.
+*str*<br/>
+멤버 함수가 검색할 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2312,21 +2365,21 @@ The index of the 'non x' found in str1 is: 1
 
 The original string str2 is: BBB-1111
 Elements of the substring 'B1' were not
- found in str2 after the 6th position.
+found in str2 after the 6th position.
 The index of the 1st element of 'B2' after
- the 0th position in str2 is: 3
+the 0th position in str2 is: 3
 
 The original string str3 is: 444-555-GGG
 The index of the 1st occurrence of an element in str3
- other than one of the characters in '45G' is: 3
+other than one of the characters in '45G' is: 3
 The index of the second occurrence of an element of '45G' in str3
- after the 0th position is: 7
+after the 0th position is: 7
 
 The original string str4 is: 12-ab-12-ab
 The index of the 1st non occurrence of an element of 'ba3' in str4 after
- the 5th position is: 5
+the 5th position is: 5
 The index of the 1st non occurrence of an element of '12' in str4 after
- the 0th position is: 2
+the 0th position is: 2
 ```
 
 ## <a name="find_first_of"></a>  basic_string::find_first_of
@@ -2357,15 +2410,20 @@ size_type find_first_of(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch* 멤버 함수가 검색할 되는 문자 값입니다.
+*_Ch*<br/>
+멤버 함수가 검색할 문자 값입니다.
 
-*_Off* 하려면 검색 되는 위치의 인덱스입니다.
+*_Off*<br/>
+검색을 시작할 위치의 인덱스입니다.
 
-*ptr* 멤버 함수는 검색할 C 문자열입니다.
+*ptr*<br/>
+멤버 함수가 검색할 C 문자열입니다.
 
-*개수* 멤버 함수는 검색할 C 문자열에서 첫 번째 문자를 앞으로 계산 된 문자 수입니다.
+*count*<br/>
+멤버 함수가 검색할 C 문자열의 첫 문자부터 계산된 문자 수입니다.
 
-*str* 멤버 함수가 검색할 되는 문자열입니다.
+*str*<br/>
+멤버 함수가 검색할 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2497,21 +2555,21 @@ The character 'x' was not found in str1.
 
 The original string str2 is: ABCD-1234-ABCD-1234
 The index of the 1st occurrence of an element of 'B1' in str2 after
- the 6th position is: 11
+the 6th position is: 11
 The index of the 1st element of 'D2' after
- the 0th position in str2 is: 3
+the 0th position in str2 is: 3
 
 The original string str3 is: 123-abc-123-abc-456-EFG-456-EFG
 The index of the 1st occurrence of an element of '5G' in str3 after
- the 0th position is: 17
+the 0th position is: 17
 The index of the second occurrence of an element of '5G' in str3
- after the 0th position is: 22
+after the 0th position is: 22
 
 The original string str4 is: 12-ab-12-ab
 The index of the 1st occurrence of an element of 'ba3' in str4 after
- the 5th position is: 9
+the 5th position is: 9
 The index of the 1st occurrence of an element of 'a2' in str4 after
- the 0th position is: 1
+the 0th position is: 1
 ```
 
 ## <a name="find_last_not_of"></a>  basic_string::find_last_not_of
@@ -2542,15 +2600,20 @@ size_type find_last_not_of(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch* 멤버 함수가 검색할 되는 문자 값입니다.
+*_Ch*<br/>
+멤버 함수가 검색할 문자 값입니다.
 
-*_Off* 검색이 완료 되는 위치의 인덱스입니다.
+*_Off*<br/>
+검색을 마칠 위치의 인덱스입니다.
 
-*ptr* 멤버 함수는 검색할 C 문자열입니다.
+*ptr*<br/>
+멤버 함수가 검색할 C 문자열입니다.
 
-*개수* 멤버 함수는 검색할 C 문자열에서 첫 번째 문자를 앞으로 계산 된 문자 수입니다.
+*count*<br/>
+멤버 함수가 검색할 C 문자열의 첫 문자부터 계산된 문자 수입니다.
 
-*str* 멤버 함수가 검색할 되는 문자열입니다.
+*str*<br/>
+멤버 함수가 검색할 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2680,25 +2743,25 @@ int main( )
 ```Output
 The original string str1 is: dddd-1dd4-abdd
 The index of the last non 'd'
- found before the 7th position in str1 is: 5
+found before the 7th position in str1 is: 5
 The index of the non 'd' found in str1 is: 11
 
 The original string str2 is: BBB-1111
 The index of the last occurrence of a element
- not of 'B1' in str2 before the 6th position is: 3
+not of 'B1' in str2 before the 6th position is: 3
 The elements of the substring 'B-1' were not found in str2 .
 
 The original string str3 is: 444-555-GGG
 The index of the last occurrence of an element in str3
- other than one of the characters in '45G' is: 7
+other than one of the characters in '45G' is: 7
 The index of the penultimate occurrence of an element
- not in '45G' in str3 is: 3
+not in '45G' in str3 is: 3
 
 The original string str4 is: 12-ab-12-ab
 The index of the last occurrence of an element not
- in 'b-a' in str4 before the 5th position is: 1
+in 'b-a' in str4 before the 5th position is: 1
 The index of the last occurrence of an element not in '12'
- in str4 before the end position is: 10
+in str4 before the end position is: 10
 ```
 
 ## <a name="find_last_of"></a>  basic_string::find_last_of
@@ -2729,15 +2792,20 @@ size_type find_last_of(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch* 멤버 함수가 검색할 되는 문자 값입니다.
+*_Ch*<br/>
+멤버 함수가 검색할 문자 값입니다.
 
-*_Off* 검색이 완료 되는 위치의 인덱스입니다.
+*_Off*<br/>
+검색을 마칠 위치의 인덱스입니다.
 
-*ptr* 멤버 함수는 검색할 C 문자열입니다.
+*ptr*<br/>
+멤버 함수가 검색할 C 문자열입니다.
 
-*개수* 멤버 함수는 검색할 C 문자열에서 첫 번째 문자를 앞으로 계산 된 문자 수입니다.
+*count*<br/>
+멤버 함수가 검색할 C 문자열의 첫 문자부터 계산된 문자 수입니다.
 
-*str* 멤버 함수가 검색할 되는 문자열입니다.
+*str*<br/>
+멤버 함수가 검색할 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2858,19 +2926,19 @@ The character 'x' was not found in str1.
 
 The original string str2 is: ABCD-1234-ABCD-1234
 The index of the last occurrence of an element of 'B1' in str2 before
- the 12th position is: 11
+the 12th position is: 11
 The index of the last element of 'D2' after
- the 0th position in str2 is: 16
+the 0th position in str2 is: 16
 
 The original string str3 is: 456-EFG-456-EFG
 The index of the last occurrence of an element of '5E' in str3 before
- the 8th position is: 4
+the 8th position is: 4
 
 The original string str4 is: 12-ab-12-ab
 The index of the last occurrence of an element of 'ba3' in str4 before
- the 8th position is: 4
+the 8th position is: 4
 The index of the last occurrence of an element of 'a2' in str4 before
- the 0th position is: 9
+the 0th position is: 9
 ```
 
 ## <a name="front"></a>  basic_string::front
@@ -2992,23 +3060,32 @@ void insert(
 
 ### <a name="parameters"></a>매개 변수
 
-*_P0* 삽입 지점 뒤 위치의 인덱스 새 문자입니다.
+*_P0*<br/>
+새 문자 삽입 지점 뒤 위치의 인덱스입니다.
 
-*ptr* C-문자열 전체 또는 부분적으로 삽입할 문자열입니다.
+*ptr*<br/>
+문자열에 전체 또는 부분적으로 삽입할 C 문자열입니다.
 
-*개수* 삽입할 문자 수입니다.
+*count*<br/>
+삽입할 문자 수입니다.
 
-*str* 문자열 전체 또는 부분적으로 삽입할 대상 문자열입니다.
+*str*<br/>
+대상 문자열에 전체 또는 부분적으로 삽입할 문자열입니다.
 
-*_Off* 추가 문자를 제공 합니다. 소스 문자열 부분의 인덱스입니다.
+*_Off*<br/>
+추가할 문자를 제공하는 소스 문자열 부분의 인덱스입니다.
 
-*_Ch* 문자 값을 삽입할 요소입니다.
+*_Ch*<br/>
+삽입할 요소의 문자 값입니다.
 
-*_It* 문자를 삽입할 위치 뒤를 지정 하는 반복기입니다.
+*_It*<br/>
+뒤에 문자를 삽입할 위치를 주소 지정하는 반복기입니다.
 
-*첫 번째* 는 입력된 반복기, const_pointer 또는 const_iterator 소스 범위에서 첫 번째 요소를 주소 지정 삽입 합니다.
+*first*<br/>
+삽입할 소스 범위에 있는 첫 번째 요소를 주소 지정하는 입력 반복기, const_pointer 또는 const_iterator입니다.
 
-*마지막* 는 입력된 반복기, const_pointer 또는 const_iterator 소스 범위에서 마지막 요소 다음의 위치를 주소 지정 삽입 합니다.
+*last*<br/>
+삽입할 소스 범위에 있는 마지막 요소의 다음 요소 위치를 주소 지정하는 입력 반복기, const_pointer 또는 const_iterator입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3288,11 +3365,14 @@ basic_string<CharType, Traits, Allocator>& operator+=(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch* 추가할 문자입니다.
+*_Ch*<br/>
+추가할 문자입니다.
 
-*ptr* 추가할 C 문자열의 문자입니다.
+*ptr*<br/>
+추가할 C 문자열의 문자입니다.
 
-*오른쪽* 추가할 문자열의 문자입니다.
+*right*<br/>
+추가할 문자열의 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3377,11 +3457,14 @@ basic_string<CharType, Traits, Allocator>& operator=(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch* 할당할 문자 값입니다.
+*_Ch*<br/>
+할당할 문자 값입니다.
 
-*ptr* 대상 문자열에 할당 될 C 문자열의 문자에 대 한 포인터입니다.
+*ptr*<br/>
+대상 문자열에 할당할 C 문자열의 문자에 대한 포인터입니다.
 
-*오른쪽* 문자가 대상 문자열에 할당할 소스 문자열입니다.
+*right*<br/>
+문자를 대상 문자열에 할당할 소스 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3459,7 +3542,8 @@ reference operator[](size_type _Off);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off* 참조할 요소 위치의 인덱스입니다.
+*_Off*<br/>
+참조할 요소 위치의 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3575,7 +3659,8 @@ void push_back(value_type _Ch);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch* 문자열의 끝에 추가할 문자입니다.
+*_Ch*<br/>
+문자열의 끝에 추가할 문자입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -3667,7 +3752,7 @@ int main( )
    cout << endl;
 
    // The dereferenced iterator can be used to modify a character
- *str1_rIter = 'A';
+*str1_rIter = 'A';
    cout << "The first character-letter of the modified str1 is now: "
         << *str1_rIter << endl;
    cout << "The full modified reversed string str1 is now:\n ";
@@ -3689,10 +3774,10 @@ int main( )
 ```Output
 The first character-letter of the reversed string str1 is: a
 The full reversed string str1 is:
- ablE was I ere I saw elbA
+ablE was I ere I saw elbA
 The first character-letter of the modified str1 is now: A
 The full modified reversed string str1 is now:
- AblE was I ere I saw elbA
+AblE was I ere I saw elbA
 The string str2 is empty.
 ```
 
@@ -3766,7 +3851,7 @@ int main( )
    cout << endl;
 
    // The dereferenced iterator can be used to modify a character
- *str1_rIter = 'o';
+*str1_rIter = 'o';
    cout << "The last character-letter of the modified str1 is now: "
         << *str1_rIter << endl;
    cout << "The full modified reversed string str1 is now:\n ";
@@ -3788,10 +3873,10 @@ int main( )
 ```Output
 The last character-letter of the reversed string str1 is: A
 The full reversed string str1 is:
- ablE was I ere I saw elbA
+ablE was I ere I saw elbA
 The last character-letter of the modified str1 is now: o
 The full modified reversed string str1 is now:
- ablE was I ere I saw elbo
+ablE was I ere I saw elbo
 The string str2 is empty.
 ```
 
@@ -3873,29 +3958,39 @@ basic_string<CharType, Traits, Allocator>& replace(
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 문자열 피연산자 문자열의 문자 소스가 될 수입니다.
+*str*<br/>
+피연산자 문자열의 문자 소스가 될 문자열입니다.
 
-*_Pos1* 교체가 시작 될 피연산자 문자열의 인덱스입니다.
+*_Pos1*<br/>
+교체가 시작될 피연산자 문자열의 인덱스입니다.
 
-*_Num1* 피연산자 문자열에서 대체 될 문자의 최대 수입니다.
+*_Num1*<br/>
+피연산자 문자열에서 교체할 최대 문자 수입니다.
 
-*_Pos2* 복사가 시작 되는 매개 변수 문자열의 인덱스입니다.
+*_Pos2*<br/>
+복사가 시작될 매개 변수 문자열의 인덱스입니다.
 
-*_Num2* 매개 변수 C 문자열에서에서 사용할 문자의 최대 수입니다.
+*_Num2*<br/>
+매개 변수 C 문자열에서 사용될 최대 문자 수입니다.
 
-*ptr* 의 피연산자 문자열의 문자 소스가 될 C 문자열입니다.
+*ptr*<br/>
+피연산자 문자열의 문자 소스가 될 C 문자열입니다.
 
-*_Ch* 피연산자 문자열에 복사 될 문자입니다.
+*_Ch*<br/>
+피연산자 문자열에 복사될 문자입니다.
 
 * first0 * 피연산자 문자열에서 제거 될 첫 번째 문자의 주소를 지정 하는 반복기를 합니다.
 
 * last0 * 피연산자 문자열에서 제거 될 마지막 문자의 주소를 지정 하는 반복기를 합니다.
 
-*첫 번째* 는 반복기, const_pointer 또는 const_iterator 첫 번째 문자의 주소를 지정 매개 변수 문자열에 복사 합니다.
+*first*<br/>
+매개 변수 문자열에서 복사될 첫 번째 문자의 주소를 지정하는 반복기, const_pointer 또는 const_iterator입니다.
 
-*마지막* 는 반복기, const_pointer 또는 const_iterator 마지막 문자의 주소를 지정 매개 변수 문자열에 복사 합니다.
+*last*<br/>
+매개 변수 문자열에서 복사될 마지막 문자의 주소를 지정하는 반복기, const_pointer 또는 const_iterator입니다.
 
-*개수* 횟수 *_Ch* 피연산자 문자열에 복사 됩니다.
+*count*<br/>
+횟수 *_Ch* 피연산자 문자열에 복사 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -4039,45 +4134,45 @@ The operand string s1o is: AAAAAAAA
 The parameter string s1p is: BBB
 The parameter C-string cs1p is: CCC
 The result of s1o.replace ( 1 , 3 , s1p )
- is the string: ABBBAAAA.
+is the string: ABBBAAAA.
 The result of s1o.replace ( 5 , 3 , cs1p )
- is the string: ABBBACCC.
+is the string: ABBBACCC.
 
 The operand string s2o is: AAAAAAAA
 The parameter string s1p is: BBB
 The parameter C-string cs2p is: CCC
 The result of s2o.replace (1, 3, s2p, 1, 2)
- is the string: ABBAAAA.
+is the string: ABBAAAA.
 The result of s2o.replace (4 ,3 ,cs2p)
- is the string: ABBAC.
+is the string: ABBAC.
 
 The operand string s3o is: AAAAAAAA
 The parameter character c1p is: C
 The result of s3o.replace(1, 3, 4, ch3p)
- is the string: ACCCCAAAA.
+is the string: ACCCCAAAA.
 
 The operand string s4o is: AAAAAAAA
 The parameter string s4p is: BBB
 The parameter C-string cs4p is: CCC
 The result of s1o.replace (IterF0, IterL0, s4p)
- is the string: BBBAAAAA.
+is the string: BBBAAAAA.
 The result of s4o.replace (IterF0, IterL0, cs4p)
- is the string: CCCAAAAA.
+is the string: CCCAAAAA.
 
 The operand string s5o is: AAAAAAAF
 The parameter C-string cs5p is: CCCBB
 The result of s5o.replace (IterF1, IterL1, cs4p ,4)
- is the string: CCCBAAAF.
+is the string: CCCBAAAF.
 
 The operand string s6o is: AAAAAAAG
 The parameter character ch6p is: q
 The result of s6o.replace (IterF1, IterL1, 4, ch6p)
- is the string: qqqqAAAAG.
+is the string: qqqqAAAAG.
 
 The operand string s7o is: OOOOOOO
 The parameter string s7p is: PPPP
 The result of s7o.replace (IterF3 ,IterL3 ,IterF4 ,IterL4)
- is the string: OPPOOOO.
+is the string: OPPOOOO.
 ```
 
 ## <a name="reserve"></a>  basic_string::reserve
@@ -4090,7 +4185,8 @@ void reserve(size_type count = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*개수* 메모리가 예약 되는 문자의 수입니다.
+*count*<br/>
+메모리가 예약되는 문자 수입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4184,9 +4280,11 @@ void resize(
 
 ### <a name="parameters"></a>매개 변수
 
-*개수* 문자열의 새 크기입니다.
+*count*<br/>
+문자열의 새 크기입니다.
 
-*_Ch* 추가 요소가 필요한 경우 문자를 추가 하는 값을 사용 하 여 초기화 됩니다.
+*_Ch*<br/>
+추가 요소가 필요한 경우 추가된 문자를 초기화할 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4321,15 +4419,20 @@ size_type rfind(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch* 멤버 함수가 검색할 되는 문자 값입니다.
+*_Ch*<br/>
+멤버 함수가 검색할 문자 값입니다.
 
-*_Off* 하려면 검색 되는 위치의 인덱스입니다.
+*_Off*<br/>
+검색을 시작할 위치의 인덱스입니다.
 
-*ptr* 멤버 함수는 검색할 C 문자열입니다.
+*ptr*<br/>
+멤버 함수가 검색할 C 문자열입니다.
 
-*개수* 멤버 함수는 검색할 C 문자열에서 첫 번째 문자를 앞으로 계산 된 문자 수입니다.
+*count*<br/>
+멤버 함수가 검색할 C 문자열의 첫 문자부터 계산된 문자 수입니다.
 
-*str* 멤버 함수가 검색할 되는 문자열입니다.
+*str*<br/>
+멤버 함수가 검색할 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -4454,7 +4557,7 @@ The character 'x' was not found in str1.
 
 The original string str2 is: Let me make this perfectly clear.
 The index of the 1st element of 'perfect' before
- the 30th position in str2 is: 17
+the 30th position in str2 is: 17
 The substring 'imperfect' was not found in str2 .
 
 The original string str3 is: It is a nice day. I am happy.
@@ -4599,9 +4702,11 @@ basic_string<CharType, Traits, Allocator> substr(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off* 문자열의 복사본 수행 된, 기본값은 0 사용 하 여 위치에 있는 요소를 배치 하는 인덱스입니다.
+*_Off*<br/>
+문자열의 복사본이 만들어지는 위치에 요소를 배치하는 인덱스이며 기본값은 0입니다.
 
-*개수* 존재할 경우 복사할 문자의 수입니다.
+*count*<br/>
+문자가 있는 경우 복사될 문자의 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -4635,13 +4740,13 @@ int main( )
 
 ```Output
 The original string str1 is:
- Heterological paradoxes are persistent.
+Heterological paradoxes are persistent.
 
 The substring str1 copied is: logical
 
 The default substring str3 is:
- Heterological paradoxes are persistent.
- which is the entire original string.
+Heterological paradoxes are persistent.
+which is the entire original string.
 ```
 
 ## <a name="swap"></a>  basic_string::swap
@@ -4655,7 +4760,8 @@ void swap(
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 를 대상 문자열의와 교환할 요소가 들어 있는 소스 문자열입니다.
+*str*<br/>
+대상 문자열의 요소와 교환할 요소가 있는 소스 문자열입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4697,11 +4803,11 @@ int main( )
 
 ```Output
 Before swapping string s1 and s2:
- The basic_string s1 = Tweedledee.
- The basic_string s2 = Tweedledum.
+The basic_string s1 = Tweedledee.
+The basic_string s2 = Tweedledum.
 After swapping string s1 and s2:
- The basic_string s1 = Tweedledum.
- The basic_string s2 = Tweedledee.
+The basic_string s1 = Tweedledum.
+The basic_string s2 = Tweedledee.
 ```
 
 ## <a name="traits_type"></a>  basic_string::traits_type

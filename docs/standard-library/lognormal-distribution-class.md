@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c2f2351d55a4b4f868021bd0c44a0b942633c68
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: fb8a30f8dde14801b89b1e2d36e349ea8e93a5c6
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958532"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107111"
 ---
 # <a name="lognormaldistribution-class"></a>lognormal_distribution 클래스
 
@@ -78,7 +78,8 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*RealType* 부동 소수점 결과 형식에 기본값이 **double**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*RealType*<br/>
+부동 소수점 결과 형식으로 기본값으로 **이중**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -103,7 +104,7 @@ public:
 
 로그 정규 분포에 대한 자세한 내용은 Wolfram MathWorld 문서 [LogNormal Distribution](http://go.microsoft.com/fwlink/p/?linkid=400917)(로그 정규 분포)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // compile with: /EHsc /W4
@@ -204,11 +205,14 @@ explicit lognormal_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*m* 는 `m` 분포 매개 변수입니다.
+*m*<br/>
+`m` 분포 매개 변수입니다.
 
-*s* 는 `s` 분포 매개 변수입니다.
+*s*<br/>
+`s` 분포 매개 변수입니다.
 
-*parm* 는 `param_type` 분포를 생성 하는 데 사용 되는 구조입니다.
+*parm*<br/>
+분포를 생성하는 데 사용되는 `param_type` 구조체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -236,11 +240,14 @@ struct param_type {
 
 ### <a name="parameters"></a>매개 변수
 
-*m* 는 `m` 분포 매개 변수입니다.
+*m*<br/>
+`m` 분포 매개 변수입니다.
 
-*s* 는 `s` 분포 매개 변수입니다.
+*s*<br/>
+`s` 분포 매개 변수입니다.
 
-*오른쪽* 는 `param_type` 구조 비교 하는 데 사용 합니다.
+*right*<br/>
+비교에 사용되는 `param_type` 구조체입니다.
 
 ### <a name="remarks"></a>설명
 

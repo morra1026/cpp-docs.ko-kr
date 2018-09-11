@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aeaed487db1063efd14dddbca28480a169b13522
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 36fe82bc5d17cd3c4951b008af28ba89b171c78f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761113"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103934"
 ---
 # <a name="platformcollectionsvector-class"></a>Platform::Collections::Vector 클래스
 
@@ -49,10 +49,10 @@ template <typename T, typename E>
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 Vector 개체에 포함된 요소의 형식입니다.
 
-*E*  
+*E*<br/>
 형식의 값을 사용 하 여 같음을 테스트 하기 위한 이진 조건자를 지정 *T*합니다. 기본값은 `std::equal_to<T>`입니다.
 
 ### <a name="remarks"></a>설명
@@ -128,7 +128,7 @@ virtual void Append(T item);
 
 ### <a name="parameters"></a>매개 변수
 
-*index*  
+*index*<br/>
 Vector에 삽입할 항목입니다. 유형의 *항목* 정의한 합니다 *T* typename입니다.
 
 ## <a name="clear"></a>  Vector:: clear 메서드
@@ -173,7 +173,7 @@ virtual T GetAt(unsigned int index);
 
 ### <a name="parameters"></a>매개 변수
 
-*index*  
+*index*<br/>
 Vector 개체의 특정 요소를 지정하는 0부터 시작하는 부호 없는 정수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -194,10 +194,10 @@ virtual unsigned int GetMany(
 
 ### <a name="parameters"></a>매개 변수
 
-*startIndex*  
+*startIndex*<br/>
 검색할 항목 시작 부분의 0부터 시작하는 인덱스입니다.
 
-*dest*  
+*dest*<br/>
 지정 하는 요소에서 시작 하는 항목의 호출자가 할당 한 배열 *startIndex* 벡터에서 마지막 요소에서 끝나는 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -234,10 +234,10 @@ virtual bool IndexOf(T value, unsigned int* index);
 
 ### <a name="parameters"></a>매개 변수
 
-*값*  
+*값*<br/>
 찾을 항목입니다.
 
-*index*  
+*index*<br/>
 항목의 인덱스 0부터 시작 하는 경우 매개 변수 *값* 이 고, 그렇지 않으면 0입니다.
 
 합니다 *인덱스* 매개 변수 0은 벡터의 첫 번째 요소인 항목 또는 항목을 찾을 수 없습니다. 반환 값이 `true`일 경우 항목을 찾았고 첫 번째 요소인 것이며, 그렇지 않으면 항목을 찾지 못한 것입니다.
@@ -262,10 +262,10 @@ virtual void InsertAt(unsigned int index, T item)
 
 ### <a name="parameters"></a>매개 변수
 
-*index*  
+*index*<br/>
 Vector 개체의 특정 요소를 지정하는 0부터 시작하는 부호 없는 정수입니다.
 
-*item*  
+*item*<br/>
 항목을 지정 하는 요소 뒤에 Vector에 삽입할 *인덱스*합니다. 유형의 *항목* 정의한 합니다 *T* typename입니다.
 
 ## <a name="removeat"></a>  Vector:: removeat 메서드
@@ -280,7 +280,7 @@ virtual void RemoveAt(unsigned int index);
 
 ### <a name="parameters"></a>매개 변수
 
-*index*  
+*index*<br/>
 Vector 개체의 특정 요소를 지정하는 0부터 시작하는 부호 없는 정수입니다.
 
 ## <a name="removeatend"></a>  Vector:: removeatend 메서드
@@ -305,7 +305,7 @@ virtual void ReplaceAll(const ::Platform::Array<T>^ arr);
 
 ### <a name="parameters"></a>매개 변수
 
-*arr*  
+*arr*<br/>
 형식이 정의한 개체의 배열을 합니다 *T* typename입니다.
 
 ## <a name="setat"></a>  Vector:: setat 메서드
@@ -320,10 +320,10 @@ virtual void SetAt(unsigned int index, T item);
 
 ### <a name="parameters"></a>매개 변수
 
-*index*  
+*index*<br/>
 Vector 개체의 특정 요소를 지정하는 0부터 시작하는 부호 없는 정수입니다.
 
-*item*  
+*item*<br/>
 지정된 요소에 할당할 값입니다. 유형의 *항목* 정의한 합니다 *T* typename입니다.
 
 ## <a name="size"></a>  Vector:: size 메서드
@@ -365,40 +365,40 @@ Vector(std::initializer_list<T> il);
 
 ### <a name="parameters"></a>매개 변수
 
-*a*  
+*a*<br/>
 A [std:: array](../standard-library/array-class-stl.md) Vector를 초기화 하는 데 수 있습니다.
 
-*arr*  
+*arr*<br/>
 A [platform:: array](../cppcx/platform-array-class.md) Vector를 초기화 하는 데 수 있습니다.
 
-*InIt*  
+*InIt*<br/>
 현재 Vector를 초기화하는 데 사용되는 개체 컬렉션의 형식입니다.
 
-*il*  
+*il*<br/>
 A [std:: initializer_list](../standard-library/initializer-list-class.md) 형식의 개체 *T* Vector를 초기화 하는 데 수 있습니다.
 
-*N*  
+*N*<br/>
 현재 Vector를 초기화하는 데 사용되는 개체 컬렉션의 요소 수입니다.
 
-*size*  
+*size*<br/>
 Vector의 요소 수입니다.
 
-*값*  
+*값*<br/>
 현재 Vector의 각 요소를 초기화하는 데 사용되는 값입니다.
 
-*v*  
+*v*<br/>
 [Lvalue 및 Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) 에 [std:: vector](../standard-library/vector-class.md) 현재 Vector를 초기화 하는 데 사용 되는 합니다.
 
-*ptr*  
+*ptr*<br/>
 현재 Vector를 초기화하는 데 사용되는 `std::vector`에 대한 포인터입니다.
 
-*first*  
+*first*<br/>
 현재 Vector를 초기화하는 데 사용되는 개체 시퀀스의 첫 번째 요소입니다. 유형의 *첫 번째* 이용 하 여 전달 됩니다 *전달을 완벽*합니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
 
-*last*  
+*last*<br/>
 현재 Vector를 초기화하는 데 사용되는 개체 시퀀스의 마지막 요소입니다. 유형의 *마지막* 이용 하 여 전달 됩니다 *전달을 완벽*합니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-[플랫폼 Namespace](platform-namespace-c-cx.md)  
-[C + + Windows 런타임 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)  
+[플랫폼 Namespace](platform-namespace-c-cx.md)<br/>
+[C + + Windows 런타임 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

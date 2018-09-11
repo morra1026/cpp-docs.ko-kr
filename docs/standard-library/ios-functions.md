@@ -52,12 +52,12 @@ helpviewer_keywords:
 - std::skipws [C++]
 - std::unitbuf [C++]
 - std::uppercase [C++]
-ms.openlocfilehash: 23689b7c7d6770816db02e4a463fd63080abbaf4
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a19d023400179e1e7e16541b7e3d7ef38ad963ba
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959094"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101095"
 ---
 # <a name="ltiosgt-functions"></a>&lt;ios&gt; 함수
 
@@ -82,7 +82,8 @@ ios_base& boolalpha(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -96,7 +97,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 [noboolalpha](../standard-library/ios-functions.md#noboolalpha)는 `boolalpha`의 결과를 되돌립니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_boolalpha.cpp
@@ -133,7 +134,8 @@ ios_base& dec(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -145,7 +147,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 `dec` 효과적으로 호출한 `str.` [setf](../standard-library/ios-base-class.md#setf)( `ios_base::dec`합니다 `ios_base::basefield`)를 반환 합니다 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_dec.cpp
@@ -185,7 +187,8 @@ ios_base& defaultfloat(ios_base& _Iosbase);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Iosbase* 는 `ios_base` 개체입니다.
+*_Iosbase*<br/>
+`ios_base` 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -201,7 +204,8 @@ ios_base& fixed(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -213,7 +217,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 조작자 * str.*[setf](../standard-library/ios-base-class.md#setf)( `ios_base::fixed`합니다 `ios_base::floatfield`)를 반환 합니다 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_fixed.cpp
@@ -248,7 +252,8 @@ ios_base& hex(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -260,7 +265,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 조작자 `str` **.** [setf](../standard-library/ios-base-class.md#setf)( `ios_base::hex`합니다 `ios_base::basefield`)를 반환 합니다 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 참조 [dec](../standard-library/ios-functions.md#dec) 사용 하는 방법의 예 `hex`합니다.
 
@@ -274,7 +279,8 @@ ios_base& internal(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -286,7 +292,7 @@ ios_base& internal(ios_base& str);
 
 조작자는 `str`. [setf](../standard-library/ios-base-class.md#setf)( [ios_base](../standard-library/ios-base-class.md#fmtflags)합니다 [ios_base:: adjustfield](../standard-library/ios-base-class.md#fmtflags))를 반환 합니다 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_internal.cpp
@@ -319,7 +325,8 @@ ios_base& left(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -329,7 +336,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 조작자 `str`.[ setf](../standard-library/ios-base-class.md#setf)( `ios_base::left`를 `ios_base::adjustfield`)를 반환 합니다 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_left.cpp
@@ -361,7 +368,8 @@ ios_base& noboolalpha(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -375,7 +383,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 [boolalpha](../standard-library/ios-functions.md#boolalpha)는 `noboolalpha`의 결과를 되돌립니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `noboolalpha` 사용 예제는 [boolalpha](../standard-library/ios-functions.md#boolalpha)를 참조하세요.
 
@@ -389,7 +397,8 @@ ios_base& noshowbase(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -401,7 +410,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 조작자 `str`.[ unsetf](../standard-library/ios-base-class.md#unsetf)( `ios_base::showbase`)를 반환 합니다 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `noshowbase`를 사용하는 방법에 대한 예제는 [showbase](../standard-library/ios-functions.md#showbase)를 참조하세요.
 
@@ -415,7 +424,8 @@ ios_base& noshowpoint(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -427,7 +437,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 조작자 `str`.[ unsetf](../standard-library/ios-base-class.md#unsetf)( `ios_base::showpoint`)를 반환 합니다 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_noshowpoint.cpp
@@ -461,7 +471,8 @@ ios_base& noshowpos(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -473,7 +484,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 조작자 `str`.[ unsetf](../standard-library/ios-base-class.md#unsetf)( `ios_base::showps`)를 반환 합니다 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `noshowpos` 사용 예제는 [showpos](../standard-library/ios-functions.md#showpos)를 참조하세요.
 
@@ -487,7 +498,8 @@ ios_base& noskipws(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -499,7 +511,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 조작자 `str`.[ unsetf](../standard-library/ios-base-class.md#unsetf)( `ios_base::skipws`)를 반환 합니다 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_noskipws.cpp
@@ -528,7 +540,8 @@ ios_base& nounitbuf(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -550,7 +563,8 @@ ios_base& nouppercase(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -560,7 +574,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 조작자 `str`.[ unsetf](../standard-library/ios-base-class.md#unsetf)( `ios_base::uppercase`)를 반환 합니다 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `nouppercase` 사용 예제는 [uppercase](../standard-library/ios-functions.md#uppercase)를 참조하세요.
 
@@ -574,7 +588,8 @@ ios_base& oct(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -586,7 +601,7 @@ ios_base& oct(ios_base& str);
 
 조작자 `str`.[ setf](../standard-library/ios-base-class.md#setf)( `ios_base::oct`를 `ios_base::basefield`)를 반환 합니다 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 참조 [dec](../standard-library/ios-functions.md#dec) 사용 하는 방법의 예 `oct`합니다.
 
@@ -600,7 +615,8 @@ ios_base& right(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -612,7 +628,7 @@ ios_base& right(ios_base& str);
 
 조작자 `str`.[ setf](../standard-library/ios-base-class.md#setf)( `ios_base::right`를 `ios_base::adjustfield`)를 반환 합니다 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_right.cpp
@@ -656,7 +672,8 @@ ios_base& scientific(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -668,7 +685,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 조작자 `str`.[ setf](../standard-library/ios-base-class.md#setf)( `ios_base::scientific`를 `ios_base::floatfield`)를 반환 합니다 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_scientific.cpp
@@ -700,7 +717,8 @@ ios_base& showbase(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -712,7 +730,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 조작자 `str`.[ setf](../standard-library/ios-base-class.md#setf)( `ios_base::showbase`)를 반환 합니다 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_showbase.cpp
@@ -753,7 +771,8 @@ ios_base& showpoint(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -765,7 +784,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 조작자 `str`.[ setf](../standard-library/ios-base-class.md#setf)( `ios_base::showpoint`)를 반환 합니다 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `showpoint` 사용 예제는 [noshowpoint](../standard-library/ios-functions.md#noshowpoint)를 참조하세요.
 
@@ -779,7 +798,8 @@ ios_base& showpos(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -791,7 +811,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 조작자 `str`.[ setf](../standard-library/ios-base-class.md#setf)( `ios_base::showpos`)를 반환 합니다 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_showpos.cpp
@@ -823,7 +843,8 @@ ios_base& skipws(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -835,7 +856,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 조작자 `str`.[ setf](../standard-library/ios-base-class.md#setf)( `ios_base::skipws`)를 반환 합니다 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <iostream>
@@ -876,7 +897,8 @@ ios_base& unitbuf(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -900,7 +922,8 @@ ios_base& uppercase(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 형식의 개체에 대 한 참조가 [ios_base](../standard-library/ios-base-class.md), 또는 형식에서 상속 되는 `ios_base`합니다.
+*str*<br/>
+[ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -912,7 +935,7 @@ ios_base& uppercase(ios_base& str);
 
 조작자 `str`.[ setf](../standard-library/ios-base-class.md#setf)( [ios_base:: uppercase](../standard-library/ios-base-class.md#fmtflags))를 반환 합니다 *str*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_uppercase.cpp

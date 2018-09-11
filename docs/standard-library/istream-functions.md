@@ -11,12 +11,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1193e7ab65c49f0f79aeae52ca6563310296116d
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 305b7c40e6fd6bc7b185854fedd0df81cf84ccbd
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953650"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101887"
 ---
 # <a name="ltistreamgt-functions"></a>&lt;istream&gt; 함수
 
@@ -42,9 +42,11 @@ void swap(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 스트림입니다.
+*left*<br/>
+스트림입니다.
 
-*오른쪽* 스트림입니다.
+*right*<br/>
+스트림입니다.
 
 ## <a name="ws"></a>  ws
 
@@ -56,7 +58,8 @@ template class<Elem, Tr> basic_istream<Elem, Tr>& ws(basic_istream<Elem, Tr>& _I
 
 ### <a name="parameters"></a>매개 변수
 
-*_Istr* 스트림입니다.
+*_Istr*<br/>
+스트림입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -68,7 +71,7 @@ template class<Elem, Tr> basic_istream<Elem, Tr>& ws(basic_istream<Elem, Tr>& _I
 
 함수는 요소를 추출하는 동안 파일 끝에 도달하면 [setstate](../standard-library/basic-ios-class.md#setstate)( **eofbit**)를 호출합니다. 반환 *_Istr*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `ws` 사용 예제는 [operator>>](../standard-library/istream-operators.md#op_gt_gt)를 참조하세요.
 

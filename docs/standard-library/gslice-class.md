@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5c47f91a3e029175d40bd1a762fb6e6ff527ee7
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 4ec465e9a829164201d61d3e60c678371cc8c3d3
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955816"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108529"
 ---
 # <a name="gslice-class"></a>gslice 클래스
 
@@ -84,11 +84,14 @@ gslice(
 
 ### <a name="parameters"></a>매개 변수
 
-*_StartIndex* 하위 집합에서 첫 번째 요소의 valarray 인덱스입니다.
+*_StartIndex*<br/>
+하위 집합에 있는 첫 번째 요소의 valarray 인덱스입니다.
 
-*_LenArray* 각 조각의 요소 수를 지정 하는 배열입니다.
+*_LenArray*<br/>
+각 조각의 요소 수를 지정하는 배열입니다.
 
-*_IncArray* 각 조각에 stride를 지정 하는 배열입니다.
+*_IncArray*<br/>
+각 조각에서 진행 속도를 지정하는 배열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -98,7 +101,7 @@ gslice(
 
 **gslice**는 각각 동일한 지정된 요소에서 시작되는 valarray의 여러 조각으로 구성된 valarray 하위 집합을 정의합니다. 배열을 사용하여 여러 조각을 정의하는 기능은 `gslice`와 [slice::slice](../standard-library/slice-class.md#slice) 간의 유일한 차이점입니다. 인덱스를 사용 하 여 첫 번째 요소가 첫 번째 조각은 *_StartIndex*의 첫 번째 요소에 의해 지정 된 요소 수가 *_LenArray*, 및의 첫 번째 요소가 제공한 진행 속도가 *_IncArray* . 직교 조각의 다음 set에는 첫 번째 조각이 제공한 첫 번째 요소가 있습니다. 두 번째는 요소의 *_LenArray* 요소 수를 지정 합니다. Stride의 두 번째 요소에 의해 제공 됩니다 *_IncArray*합니다. 조각의 세 번째 차원은 2차원 배열의 요소를 시작 요소로 사용하고 비슷하게 진행됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // gslice_ctor.cpp
@@ -161,7 +164,7 @@ valarray의 일반 조각 중 각 조각의 요소 수를 지정하는 valarray�
 
 멤버 함수는 저장된 조각 길이를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // gslice_size.cpp
@@ -214,13 +217,13 @@ int main( )
 
 ```Output
 The operand valarray va is:
- ( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ).
+( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ).
 The size of the valarray is: 20.
 
 The valarray for vaGSlice is vaResult:
- va[vaGSlice] = ( 0 4 8 12 7 11 15 19 ).
+va[vaGSlice] = ( 0 4 8 12 7 11 15 19 ).
 The size of vaResult is:
- vaGSlice.size ( ) = ( 4 4 ).
+vaGSlice.size ( ) = ( 4 4 ).
 ```
 
 ## <a name="start"></a>  gslice::start
@@ -235,7 +238,7 @@ size_t start() const;
 
 valarray의 일반 조각 시작 인덱스입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // gslice_start.cpp
@@ -280,9 +283,9 @@ int main( )
 
 ```Output
 The operand valarray va is:
- ( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ).
+( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ).
 The valarray for vaGSlice is vaResult:
- va[vaGSlice] = ( 0 4 8 12 7 11 15 19 ).
+va[vaGSlice] = ( 0 4 8 12 7 11 15 19 ).
 The index of the first element of vaResult is: 0.
 ```
 
@@ -298,7 +301,7 @@ valarray<size_t> stride() const;
 
 valarray의 일반 조각 중 각 조각의 요소 간 거리를 지정하는 valarray입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // gslice_stride.cpp
@@ -347,11 +350,11 @@ int main( )
 
 ```Output
 The operand valarray va is:
- ( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ).
+( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ).
 The valarray for vaGSlice is vaResult:
- va[vaGSlice] = ( 0 4 8 12 7 11 15 19 ).
+va[vaGSlice] = ( 0 4 8 12 7 11 15 19 ).
 The strides of vaResult are:
- vaGSlice.stride ( ) = ( 7 4 ).
+vaGSlice.stride ( ) = ( 7 4 ).
 ```
 
 ## <a name="see-also"></a>참고자료

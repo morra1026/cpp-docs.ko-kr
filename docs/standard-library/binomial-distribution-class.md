@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0266c33731bdbd70fe9c9fb26a33878fc5d1c495
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: f853ada608b2f70dc0a7c7e3fb78e5fb28d0fa83
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957687"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100874"
 ---
 # <a name="binomialdistribution-class"></a>binomial_distribution 클래스
 
@@ -81,9 +81,11 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*IntType* 정수 결과 형식으로 기본값으로 **int**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*IntType*<br/>
+정수 결과 형식으로 기본값으로 **int**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-*URNG* 균일 난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*URNG*<br/>
+균일 난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -108,7 +110,7 @@ public:
 
 이항 분포 이산 확률 함수에 대한 자세한 내용은 Wolfram MathWorld 문서 [이항 분포](http://go.microsoft.com/fwlink/p/?linkid=398469)를 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // compile with: /EHsc /W4
@@ -250,11 +252,14 @@ explicit binomial_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*t* 는 `t` 분포 매개 변수입니다.
+*t*<br/>
+`t` 분포 매개 변수입니다.
 
-*p* 는 `p` 분포 매개 변수입니다.
+*p*<br/>
+`p` 분포 매개 변수입니다.
 
-*parm* 는 `param_type` 분포를 생성 하는 데 사용 되는 구조입니다.
+*parm*<br/>
+분포를 생성하는 데 사용되는 `param_type` 구조체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -282,11 +287,14 @@ struct param_type {
 
 ### <a name="parameters"></a>매개 변수
 
-*t* 는 `t` 분포 매개 변수입니다.
+*t*<br/>
+`t` 분포 매개 변수입니다.
 
-*p* 는 `p` 분포 매개 변수입니다.
+*p*<br/>
+`p` 분포 매개 변수입니다.
 
-*오른쪽* 는 `param_type` 이 비교할 개체입니다.
+*right*<br/>
+이 매개 변수와 비교할 `param_type` 개체입니다.
 
 ### <a name="remarks"></a>설명
 

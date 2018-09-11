@@ -35,12 +35,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d000dce4c0009341c787a211ed8ef41d1728b51b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 63b0950aaea5520849f9a32b2b08ab138cd8099b
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407774"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107548"
 ---
 # <a name="unlockfile"></a>_unlock_file
 
@@ -56,15 +56,16 @@ void _unlock_file(
 
 ### <a name="parameters"></a>매개 변수
 
-*파일* 파일 핸들입니다.
+*file*<br/>
+파일 핸들입니다.
 
 ## <a name="remarks"></a>설명
 
-**_unlock_file** 함수에서 지정한 파일의 잠금을 해제 *파일*합니다. 파일의 잠금을 해제하면 다른 프로세스에서 파일에 액세스할 수 있습니다. 이 함수를 호출할 수 **_lock_file** 에서 이전에 호출 된는 *파일* 포인터입니다. 호출 **_unlock_file** 잠겨 있지 않습니다 하는 파일에는 교착 상태가 발생할 수 있습니다. 관련 예제는 [_lock_file](lock-file.md)을 참조하세요.
+합니다 **_unlock_file** 함수에서 지정한 파일의 잠금을 해제 *파일*합니다. 파일의 잠금을 해제하면 다른 프로세스에서 파일에 액세스할 수 있습니다. 경우가 아니면이 함수를 호출할 수 해야 **_lock_file** 에서 이전에 호출 된 합니다 *파일* 포인터입니다. 호출 **_unlock_file** 잠겨 있지 않은 파일에서 교착 상태가 발생할 수 있습니다. 관련 예제는 [_lock_file](lock-file.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_unlock_file**|\<stdio.h>|
 

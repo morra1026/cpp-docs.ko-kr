@@ -9,19 +9,19 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - standalone attributes
-- attributes [C++], standalone
+- attributes [C++/CLI], standalone
 ms.assetid: 0d72e84e-236c-43b3-ac9a-d9b91fcd6794
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6562a1de8baa9a5805f044233b97bf8dd8840638
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5d395053231f54570e1bf86ba79f6237b89681fc
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613760"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315550"
 ---
 # <a name="stand-alone-attributes"></a>독립 실행형 특성
 독립 실행형 특성을 c + + 키워드에서 작동 하지 않습니다 하지만 코드 줄에 비슷합니다. 독립 실행형 특성 문은 줄의 끝에 세미콜론이 필요합니다.

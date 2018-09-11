@@ -1,5 +1,5 @@
 ---
-title: 액셀러레이터 키 (아이콘에 대 한 이미지 편집기) | Microsoft Docs
+title: 액셀러레이터 키 (아이콘에 대 한 c + + 이미지 편집기) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,14 +19,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f211b15134ad292c9e7e4d3ed92d81ea59dd3b86
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 26818aaaec16e06553bde24ba7e5d6d350971cef
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43683302"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317747"
 ---
-# <a name="accelerator-keys-image-editor-for-icons"></a>액셀러레이터 키(아이콘에 대한 이미지 편집기)
+# <a name="accelerator-keys-c-image-editor-for-icons"></a>액셀러레이터 키 (아이콘에 대 한 c + + 이미지 편집기)
 
 다음은 기본적으로 키에 바인딩된 이미지 편집기 명령에 대 한 액셀러레이터 키입니다. 액셀러레이터 키를 변경 하려면 클릭 **옵션** 에 **도구** 메뉴를 선택한 후 **키보드** 아래를 **환경** 폴더. 자세한 내용은 [바로 가기 키 식별 및 사용자 지정](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)을 참조하세요.
 

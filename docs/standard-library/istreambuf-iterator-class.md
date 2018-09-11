@@ -28,12 +28,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f96fbe8525ee4eef44da70261bd62e079aa279a
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 16d22cef053dab691d74351aacf7380764861152
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960593"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314497"
 ---
 # <a name="istreambufiterator-class"></a>istreambuf_iterator 클래스
 
@@ -49,9 +49,11 @@ class istreambuf_iterator
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType* istreambuf_iterator의 문자 형식을 나타내는 형식입니다.
+*CharType*<br/>
+istreambuf_iterator의 문자 형식을 나타내는 형식입니다.
 
-*특성* istreambuf_iterator의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `char_traits`\< *CharType>입니다.*
+*특성*<br/>
+istreambuf_iterator의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `char_traits`\< *CharType>* 입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -107,7 +109,7 @@ typedef CharType char_type;
 
 이 형식은 템플릿 매개 변수 *CharType*의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // istreambuf_iterator_char_type.cpp
@@ -150,7 +152,8 @@ bool equal(const istreambuf_iterator<CharType, Traits>& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 같은지 확인할 반복기입니다.
+*right*<br/>
+같은지 확인할 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -160,7 +163,7 @@ bool equal(const istreambuf_iterator<CharType, Traits>& right) const;
 
 범위를 정의한 합니다 `istreambuf_iterator` 반복기에서 동일 하지만 모든 비-스트림의 끝이 현재 위치를 스트림의 끝 반복기를 `equal` 멤버 함수를 불가능를 사용 하 여 하위 범위를 정의 하 `istreambuf_iterator`s입니다. `==` 및 `!=` 연산자는 의미 체계가 동일합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // istreambuf_iterator_equal.cpp
@@ -200,7 +203,7 @@ typedef typename traits_type::int_type int_type;
 
 이 형식은 `Traits::int_type`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // istreambuf_iterator_int_type.cpp
@@ -214,9 +217,9 @@ int main( )
    istreambuf_iterator<char>::int_type inttype1 = 100;
    cout << "The inttype1 = " << inttype1 << "." << endl;
 }
-\* Output:
+/* Output:
 The inttype1 = 100.
-*\
+*/
 ```
 
 ## <a name="istream_type"></a>  istreambuf_iterator::istream_type
@@ -231,7 +234,7 @@ typedef basic_istream<CharType, Traits> istream_type;
 
 이 형식은 `basic_istream`\< **CharType**, **Traits**>의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `istream_type`을 선언하고 사용하는 방법에 대한 예제는 [istreambuf_iterator](#istreambuf_iterator)를 참조하세요.
 
@@ -246,15 +249,17 @@ istreambuf_iterator(istream_type& _Istr) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*strbuf* 는 입력된 스트림 버퍼를 `istreambuf_iterator` 연결 중인 합니다.
+*strbuf*<br/>
+`istreambuf_iterator`를 연결 중인 입력 스트림 버퍼입니다.
 
-*_Istr* 입력된 스트림에 `istreambuf_iterator` 연결 중인 합니다.
+*_Istr*<br/>
+`istreambuf_iterator`를 연결 중인 입력 스트림입니다.
 
 ### <a name="remarks"></a>설명
 
 첫 번째 생성자는 사용 하 여 입력된 스트림 버퍼 포인터를 초기화 *strbuf*합니다. 두 번째 생성자를 사용 하 여 입력된 스트림 버퍼 포인터를 초기화 *_Istr*합니다. `rdbuf`를 다음 최종적으로 추출 하 고 형식의 개체를 저장 하려고 시도 하 고 `CharType`입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // istreambuf_iterator_istreambuf_iterator.cpp
@@ -298,7 +303,7 @@ CharType operator*() const;
 
 스트림의 다음 문자입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // istreambuf_iterator_operator_deref.cpp
@@ -319,7 +324,7 @@ int main( )
    ostreambuf_iterator<char> outpos ( cout );
    while ( inpos != endpos )
    {
- *outpos = *inpos;   //Put value of outpos equal to inpos
+*outpos = *inpos;   //Put value of outpos equal to inpos
       ++inpos;
       ++outpos;
    }
@@ -343,7 +348,7 @@ istreambuf_iterator<CharType, Traits> operator++(int);
 
 첫 번째 연산자는 최종적으로 추출 하 고 형식의 개체를 저장 하려고 시도 `CharType` 는 연결 된 입력 스트림에서 합니다. 두 번째 연산자는 개체의 복사본을 만들고 개체를 증가시킨 다음 복사본을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // istreambuf_iterator_operator_incr.cpp
@@ -364,7 +369,7 @@ int main( )
    ostreambuf_iterator<char> outpos ( cout );
    while ( inpos != endpos )
    {
- *outpos = *inpos;
+*outpos = *inpos;
       ++inpos;   //Increment istreambuf_iterator
       ++outpos;
    }
@@ -395,7 +400,7 @@ typedef basic_streambuf<CharType, Traits> streambuf_type;
 
 이 형식은 `basic_streambuf`\< **CharType**, **Traits**>의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `istreambuf_type`을 선언하고 사용하는 방법에 대한 예제는 [istreambuf_iterator](#istreambuf_iterator)를 참조하세요.
 
@@ -411,7 +416,7 @@ typedef Traits traits_type;
 
 이 형식은 템플릿 매개 변수 *Traits*와 동일한 의미입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // istreambuf_iterator_traits_type.cpp

@@ -30,12 +30,12 @@ helpviewer_keywords:
 - std::condition_variable::wait_until
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca85765d6fed21938a61f52f25c1a377ec43c499
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 0e4d31a93ac8e0f7785ea567821c0ac6b0ad6a58
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965180"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44109838"
 ---
 # <a name="conditionvariable-class"></a>condition_variable 클래스
 
@@ -125,9 +125,11 @@ void wait(unique_lock<mutex>& Lck, Predicate Pred);
 
 ### <a name="parameters"></a>매개 변수
 
-*Lck* A [unique_lock\<뮤텍스 >](../standard-library/unique-lock-class.md) 개체입니다.
+*Lck*<br/>
+[unique_lock\<mutex>](../standard-library/unique-lock-class.md) 개체입니다.
 
-*Pred* 반환 하는 식 **true** 하거나 **false**합니다.
+*pred*<br/>
+반환 하는 식 **true** 하거나 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -159,11 +161,14 @@ bool wait_for(
 
 ### <a name="parameters"></a>매개 변수
 
-*Lck* A [unique_lock\<뮤텍스 >](../standard-library/unique-lock-class.md) 개체입니다.
+*Lck*<br/>
+[unique_lock\<mutex>](../standard-library/unique-lock-class.md) 개체입니다.
 
-*Rel_time* 는 `chrono::duration` 절전 된 시간 전에 스레드를 지정 하는 개체입니다.
+*Rel_time*<br/>
+스레드가 대기 모드를 해제하기 전까지의 시간을 지정하는 `chrono::duration` 개체입니다.
 
-*Pred* 반환 하는 식 **true** 하거나 **false**합니다.
+*pred*<br/>
+반환 하는 식 **true** 하거나 **false**합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -214,11 +219,14 @@ bool wait_until(
 
 ### <a name="parameters"></a>매개 변수
 
-*Lck* A [unique_lock\<뮤텍스 >](../standard-library/unique-lock-class.md) 개체입니다.
+*Lck*<br/>
+[unique_lock\<mutex>](../standard-library/unique-lock-class.md) 개체입니다.
 
-*Abs_time* A [chrono:: time_point](../standard-library/time-point-class.md) 개체입니다.
+*Abs_time*<br/>
+[chrono::time_point](../standard-library/time-point-class.md) 개체입니다.
 
-*Pred* 반환 하는 식 **true** 하거나 **false**합니다.
+*pred*<br/>
+반환 하는 식 **true** 하거나 **false**합니다.
 
 ### <a name="return-value"></a>반환 값
 

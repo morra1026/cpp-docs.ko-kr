@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::chrono [C++], time_point
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99209063e8856ffe9ea26ffaaf0917e1f6cd487b
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 72ce06a3f722bca0147d220fb8602ab9e30f8751
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954262"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44319021"
 ---
 # <a name="timepoint-class"></a>time_point 클래스
 
@@ -160,7 +160,7 @@ constexpr time_point(const time_point<clock, Duration2>& Tp);
 
 첫 번째 생성자는 저장된 `duration` 값이 [duration::zero](../standard-library/duration-class.md#zero)와 같은 개체를 생성합니다.
 
-두 번째 생성자는 저장된 된 duration 값 같음은 개체를 생성 *기간*합니다. `is_convertible<Duration2, duration>`*이 true*인 상황이 아니라면 두 번째 생성자는 오버로드 확인에 참여하지 않습니다. 자세한 내용은 [<type_traits>](../standard-library/type-traits.md)를 참조하세요.
+두 번째 생성자는 저장된 된 duration 값 같음은 개체를 생성 *기간*합니다. 경우가 아니면 `is_convertible<Duration2, duration>` 보유 true 이면 두 번째 생성자는 오버 로드 확인에 참여 하지 않습니다. 자세한 내용은 [<type_traits>](../standard-library/type-traits.md)를 참조하세요.
 
 세 번째 생성자는 `Tp.time_since_epoch()`를 사용하여 `duration` 값을 초기화합니다.
 

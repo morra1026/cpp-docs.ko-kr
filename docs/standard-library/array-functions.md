@@ -18,12 +18,12 @@ helpviewer_keywords:
 - std::swap [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d369ba9b2af313c27e96e9981129fe2cf1da3c8
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a67a22b8236646b549032e236006cd4855c3a43c
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961073"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108728"
 ---
 # <a name="ltarraygt-functions"></a>&lt;array&gt; 함수
 
@@ -50,15 +50,19 @@ constexpr T&& get(array<T, N>&& arr) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*인덱스* 요소 오프셋입니다.
+*Index*<br/>
+요소 오프셋입니다.
 
-*T* 는 요소의 형식입니다.
+*T*<br/>
+요소의 형식입니다.
 
-*N* 배열의 요소 수입니다.
+*N*<br/>
+배열의 요소 수입니다.
 
-*arr* 배열에서 선택 합니다.
+*arr*<br/>
+선택할 배열입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <array>
@@ -101,19 +105,23 @@ void swap(array<Ty, N>& left, array<Ty, N>& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty* 는 요소의 형식입니다.
+*Ty*<br/>
+요소의 형식입니다.
 
-*N* 배열의 크기입니다.
+*N*<br/>
+배열의 크기입니다.
 
-*왼쪽* 교환할 첫 번째 배열입니다.
+*left*<br/>
+교환할 첫 번째 배열입니다.
 
-*오른쪽* 교환 하려면 두 번째 배열입니다.
+*right*<br/>
+교환할 두 번째 배열입니다.
 
 ### <a name="remarks"></a>설명
 
 이 템플릿 함수는 `left.swap(right)`를 실행합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__array__swap.cpp

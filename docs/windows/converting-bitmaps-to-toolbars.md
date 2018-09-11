@@ -1,5 +1,5 @@
 ---
-title: 비트맵을 도구 모음으로 변환 | Microsoft Docs
+title: 비트맵을 도구 모음 (c + +)으로 변환 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -9,7 +9,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - bitmaps [C++], converting to toolbars
-- Toolbar editor, converting bitmaps
+- Toolbar editor [C++], converting bitmaps
 - toolbars [C++], converting bitmaps
 ms.assetid: 971c181b-40f5-44be-843d-677a7c235667
 author: mikeblome
@@ -17,16 +17,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d5524b1d5ecb3fa4de38f46706f26d2a318fe5ef
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ed77f1df88bb3f3572c3ea819ffac5cb9a1f45b1
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602402"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317230"
 ---
-# <a name="converting-bitmaps-to-toolbars"></a>비트맵을 도구 모음으로 변환
+# <a name="converting-bitmaps-to-toolbars-c"></a>비트맵을 도구 모음 (c + +)으로 변환
 
-비트맵을 변환 하 여 새 도구 모음을 만들 수 있습니다. 비트맵에서 그래픽 도구 모음 단추 이미지를 변환합니다. 일반적으로 비트맵 각 단추에 대 한 하나의 이미지를 사용 하 여 단일 비트맵에 여러 단추 이미지를 포함합니다. 모든 크기를 수 있는 이미지 기본값인 16 픽셀 너비 및 이미지의 높이입니다. 단추 이미지의 크기를 지정할 수 있습니다 합니다 [새 도구 모음 리소스 대화 상자](../windows/new-toolbar-resource-dialog-box.md) 선택 하면 **도구 모음 편집기** 에서 합니다 **이미지** 이미지 편집기의 메뉴.
+비트맵을 변환 하 여 c + + 프로젝트에서 새 도구 모음을 만들 수 있습니다. 비트맵에서 그래픽 도구 모음 단추 이미지를 변환합니다. 일반적으로 비트맵 각 단추에 대 한 하나의 이미지를 사용 하 여 단일 비트맵에 여러 단추 이미지를 포함합니다. 모든 크기를 수 있는 이미지 기본값인 16 픽셀 너비 및 이미지의 높이입니다. 단추 이미지의 크기를 지정할 수 있습니다 합니다 [새 도구 모음 리소스 대화 상자](../windows/new-toolbar-resource-dialog-box.md) 선택 하면 **도구 모음 편집기** 에서 합니다 **이미지** 이미지 편집기의 메뉴.
 
 ### <a name="to-convert-bitmaps-to-a-toolbar"></a>비트맵을 도구 모음을 변환 하려면
 

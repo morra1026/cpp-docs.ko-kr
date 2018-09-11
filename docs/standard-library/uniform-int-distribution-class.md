@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d982aee3f5542e8bfcff1da96ce3e70775ead5fe
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: b37279ef28073e758be2ebc849d6657168c22339
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961580"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104201"
 ---
 # <a name="uniformintdistribution-class"></a>uniform_int_distribution 클래스
 
@@ -81,7 +81,8 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*IntType* 정수 결과 형식으로 기본값으로 **int**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*IntType*<br/>
+정수 결과 형식으로 기본값으로 **int**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -104,7 +105,7 @@ public:
 
 분포 클래스 및 이러한 클래스의 구성원에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // compile with: /EHsc /W4

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15e872faab5beee296e4543c8404141428345842
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 1dfc9c50503fcd277f34e8f5dfc4a630d888eebf
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39402405"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318280"
 ---
 # <a name="exception-specifications-throw-noexcept-c"></a>예외 사양 (throw, noexcept) (c + +)
 
@@ -43,7 +43,7 @@ void MyFunction(int i) noexcept;
 
 |예외 사양|의미|
 |-----------------------------|-------------|
-|`noexcept`<br>`noexcept(true)`<br>`throw()`|이 함수는 예외를 throw하지 않습니다. [/std: c + + 14](../build/reference/std-specify-language-standard-version.md) 모드 (기본값), `noexcept` 고 `noexcept(true)` 동일 합니다. 선언 된 함수에서 예외가 throw 됩니다 때 `noexcept` 또는 `noexcept(true)`하십시오 [std:: terminate](../standard-library/exception-functions.md#terminate) 가 호출 됩니다. 로 선언 된 함수에서 예외가 throw 됩니다 때 `throw()` 에 **/std: c + + 14** 모드에서는 결과 정의 되지 않은 동작입니다. 특정 함수가 호출 됩니다. 이 컴파일러를 호출 하는 데 필요한 표준 C + + 14에서 확산 [std::unexpected](../standard-library/exception-functions.md#unexpected)합니다.  <br> **Visual Studio 2017 버전 15.5 이상**:에 **/std: c + + 17** 모드 `noexcept`에 `noexcept(true)`, 및 `throw()` 모두 동일 합니다. **/std: c + + 17** 모드 `throw()` 별칭인 `noexcept(true)`합니다. **/std: c + + 17** 모드에서는 이러한 사양 중 하나를 사용 하 여 선언 된 함수에서 예외가 throw 되 면 [std:: terminate](../standard-library/exception-functions.md#terminate) 가 호출 c++17 표준에서 필요에 따라 합니다.|
+|`noexcept`<br/>`noexcept(true)`<br/>`throw()`|이 함수는 예외를 throw하지 않습니다. [/std: c + + 14](../build/reference/std-specify-language-standard-version.md) 모드 (기본값), `noexcept` 고 `noexcept(true)` 동일 합니다. 선언 된 함수에서 예외가 throw 됩니다 때 `noexcept` 또는 `noexcept(true)`하십시오 [std:: terminate](../standard-library/exception-functions.md#terminate) 가 호출 됩니다. 로 선언 된 함수에서 예외가 throw 됩니다 때 `throw()` 에 **/std: c + + 14** 모드에서는 결과 정의 되지 않은 동작입니다. 특정 함수가 호출 됩니다. 이 컴파일러를 호출 하는 데 필요한 표준 C + + 14에서 확산 [std::unexpected](../standard-library/exception-functions.md#unexpected)합니다.  <br/> **Visual Studio 2017 버전 15.5 이상**:에 **/std: c + + 17** 모드 `noexcept`에 `noexcept(true)`, 및 `throw()` 모두 동일 합니다. **/std: c + + 17** 모드 `throw()` 별칭인 `noexcept(true)`합니다. **/std: c + + 17** 모드에서는 이러한 사양 중 하나를 사용 하 여 선언 된 함수에서 예외가 throw 되 면 [std:: terminate](../standard-library/exception-functions.md#terminate) 가 호출 c++17 표준에서 필요에 따라 합니다.|
 |`noexcept(false)`<br/>`throw(...)`<br/>사양이 없는|함수는 모든 형식의 예외를 throw 할 수 있습니다.|
 |`throw(type)`| (**C + + 14 및 이전 버전**) 형식의 예외를 throw 함수 `type`합니다. 컴파일러에서 구문을 허용 하지만로 해석 `noexcept(false)`합니다. **/std: c + + 17** 모드 컴파일러 경고 C5040을 실행 합니다.|
 
@@ -68,7 +68,7 @@ C 함수에서는 명시적 예외 사양이 허용되지 않습니다. C 함수
 |C + + 함수 `noexcept`하십시오 `noexcept(true)`, 또는 `throw()` 예외 사양|아니요|아니요|예|예|
 |C + + 함수 `noexcept(false)`하십시오 `throw(...)`, 또는 `throw(type)` 예외 사양|예|예|예|예|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // exception_specification.cpp

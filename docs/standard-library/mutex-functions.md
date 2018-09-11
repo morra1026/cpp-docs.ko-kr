@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::defer_lock [C++]
 - std::lock [C++]
 - std::try_to_lock [C++]
-ms.openlocfilehash: df52b5bdf9b7054fd838b1892c4e641cdf9d4dcc
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 9e352d43f4ff7c6fa655bd14d2c7f595cfed32ae
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962190"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106706"
 ---
 # <a name="ltmutexgt-functions-and-variables"></a>&lt;mutex&gt; 함수 및 변수
 
@@ -50,11 +50,14 @@ void call_once(once_flag& Flag,
 
 ### <a name="parameters"></a>매개 변수
 
-*플래그* A [once_flag](../standard-library/once-flag-structure.md) 개체는 호출 가능 개체는 한 번만 호출 되도록 합니다.
+*플래그*<br/>
+호출 가능 개체가 한 번만 호출되도록 하는 [once_flag](../standard-library/once-flag-structure.md) 개체입니다.
 
-*F* 호출 가능 개체입니다.
+*F*<br/>
+호출 가능 개체입니다.
 
- 인수 목록입니다.
+*A*<br/>
+인수 목록입니다.
 
 ### <a name="remarks"></a>설명
 

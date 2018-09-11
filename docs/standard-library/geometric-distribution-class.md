@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8468cb290b6845050943159aaa69b9cd000d2bc7
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 4ca6120a8cd649b1c4d3d5d662cb987d950b9b4e
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960296"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110388"
 ---
 # <a name="geometricdistribution-class"></a>geometric_distribution 클래스
 
@@ -76,9 +76,11 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*IntType* 정수 결과 형식으로 기본값으로 **int**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*IntType*<br/>
+정수 결과 형식으로 기본값으로 **int**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-*URNG* 균일 난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*URNG*<br/>
+균일 난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -103,7 +105,7 @@ public:
 
 카이 제곱 분포에 대한 자세한 내용은 Wolfram MathWorld 문서 [Geometric Distribution](http://go.microsoft.com/fwlink/p/?linkid=400529)(기하 분포)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // compile with: /EHsc /W4
@@ -228,9 +230,11 @@ explicit geometric_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*p* 는 `p` 분포 매개 변수입니다.
+*p*<br/>
+`p` 분포 매개 변수입니다.
 
-*parm* 분포를 생성 하는 데 매개 변수 구조입니다.
+*parm*<br/>
+분포를 생성하는 데 사용되는 매개 변수 구조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -257,9 +261,11 @@ struct param_type {
 
 ### <a name="parameters"></a>매개 변수
 
-*p* 는 `p` 분포 매개 변수입니다.
+*p*<br/>
+`p` 분포 매개 변수입니다.
 
-*오른쪽* 는 `param_type` 인스턴스를 비교 합니다.
+*right*<br/>
+이것과 비교할 `param_type` 인스턴스입니다.
 
 ### <a name="remarks"></a>설명
 

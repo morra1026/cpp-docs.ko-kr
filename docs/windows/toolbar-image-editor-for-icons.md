@@ -1,5 +1,5 @@
 ---
-title: 도구 모음 (아이콘에 대 한 이미지 편집기) | Microsoft Docs
+title: 도구 모음 (아이콘에 대 한 c + + 이미지 편집기) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -22,14 +22,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2fbad27020b18bafe2f9fc60ee08282d9101ea5a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9a454d067881a15f6d125430c304f4b5af71b5d1
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604138"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314406"
 ---
-# <a name="toolbar-image-editor-for-icons"></a>도구 모음(아이콘에 대한 이미지 편집기)
+# <a name="toolbar-c-image-editor-for-icons"></a>도구 모음 (아이콘에 대 한 c + + 이미지 편집기)
 
 합니다 **이미지 편집기** 도구 모음 그리기, 그리기, 텍스트 입력, 삭제 및 뷰를 조작에 대 한 도구를 포함 합니다. 또한 각 도구를 사용 하기 위한 옵션을 선택할 수 있는 옵션 선택기를 포함 합니다. 예를 들어, 다양 한 브러시 너비, 확대 비율 및 선 스타일에서 선택할 수 있습니다.
 

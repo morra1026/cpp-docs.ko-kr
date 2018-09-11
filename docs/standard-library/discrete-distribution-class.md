@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00c23cf21b8d9c5c46976f522f837dddb941f24f
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 97ac9d7e8e00e5f81d974aa84befaad99881391d
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964212"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108761"
 ---
 # <a name="discretedistribution-class"></a>discrete_distribution 클래스
 
@@ -82,7 +82,8 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*IntType* 정수 결과 형식으로 기본값으로 **int**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*IntType*<br/>
+정수 결과 형식으로 기본값으로 **int**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -99,7 +100,7 @@ public:
 
 분포 클래스 및 이러한 클래스의 구성원에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // compile with: /EHsc /W4
@@ -209,21 +210,29 @@ explicit discrete_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*firstW* 분포를 생성 하는 목록의 첫 번째 반복기입니다.
+*firstW*<br/>
+분포를 생성할 목록의 첫 번째 반복기입니다.
 
-*lastW* (비-하기 때문에 제외 끝에 빈 요소를 사용 하는 반복기) 분포를 생성 하는 목록의 마지막 반복기입니다.
+*lastW*<br/>
+분포를 생성할 목록의 마지막 반복기입니다(반복기는 끝에 빈 요소를 사용하기 때문에 제외됨).
 
-*weightlist* 는 [initializer_list](../cpp/initializers.md) 분포를 생성 하는 합니다.
+*weightlist*<br/>
+분포를 생성할 [initializer_list](../cpp/initializers.md)입니다.
 
-*개수* 분포 범위의 요소 수입니다. `count==0`이면 기본 생성자와 동일합니다(항상 0 생성).
+*count*<br/>
+분포 범위의 요소 수입니다. `count==0`이면 기본 생성자와 동일합니다(항상 0 생성).
 
-*낮은* 분포 범위의 가장 낮은 값입니다.
+*low*<br/>
+분포 범위의 가장 작은 값입니다.
 
-*높은* 분포 범위의 가장 높은 값입니다.
+*high*<br/>
+분포 범위의 가장 큰 값입니다.
 
-*weightfunc* 분포에 대 한 확률 함수를 나타내는 개체입니다. 매개 변수 및 반환 값을 변환할 수 있어야 합니다 **이중**합니다.
+*weightfunc*<br/>
+분포의 확률 함수를 나타내는 개체입니다. 매개 변수 및 반환 값을 변환할 수 있어야 합니다 **이중**합니다.
 
-*parm* 는 `param_type` 분포를 생성 하는 데 사용 되는 구조입니다.
+*parm*<br/>
+분포를 생성하는 데 사용되는 `param_type` 구조체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -269,21 +278,29 @@ struct param_type {
 
 ### <a name="parameters"></a>매개 변수
 
-*firstW* 분포를 생성 하는 목록의 첫 번째 반복기입니다.
+*firstW*<br/>
+분포를 생성할 목록의 첫 번째 반복기입니다.
 
-*lastW* (비-하기 때문에 제외 끝에 빈 요소를 사용 하는 반복기) 분포를 생성 하는 목록의 마지막 반복기입니다.
+*lastW*<br/>
+분포를 생성할 목록의 마지막 반복기입니다(반복기는 끝에 빈 요소를 사용하기 때문에 제외됨).
 
-*weightlist* 는 [initializer_list](../cpp/initializers.md) 분포를 생성 하는 합니다.
+*weightlist*<br/>
+분포를 생성할 [initializer_list](../cpp/initializers.md)입니다.
 
-*개수* 분포 범위의 요소 수입니다. *count*가 0이면 기본 생성자와 같습니다(항상 0 생성).
+*count*<br/>
+분포 범위의 요소 수입니다. *count*가 0이면 기본 생성자와 같습니다(항상 0 생성).
 
-*낮은* 분포 범위의 가장 낮은 값입니다.
+*low*<br/>
+분포 범위의 가장 작은 값입니다.
 
-*높은* 분포 범위의 가장 높은 값입니다.
+*high*<br/>
+분포 범위의 가장 큰 값입니다.
 
-*weightfunc* 분포에 대 한 확률 함수를 나타내는 개체입니다. 매개 변수 및 반환 값을 변환할 수 있어야 합니다 **이중**합니다.
+*weightfunc*<br/>
+분포의 확률 함수를 나타내는 개체입니다. 매개 변수 및 반환 값을 변환할 수 있어야 합니다 **이중**합니다.
 
-*오른쪽* 는 `param_type` 이 비교할 개체입니다.
+*right*<br/>
+이 매개 변수와 비교할 `param_type` 개체입니다.
 
 ### <a name="remarks"></a>설명
 

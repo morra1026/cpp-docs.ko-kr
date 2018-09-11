@@ -9,12 +9,12 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 24b9bb9e-e983-4060-bce5-2c7c8161ee61
-ms.openlocfilehash: 135922bb88b02c00849a577fb8d8457b6fb21989
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: bd140fed954c097fa73f179c92cbc64f3148e77c
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958239"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108463"
 ---
 # <a name="lthashmapgt-operators"></a>&lt;hash_map&gt; 연산자
 
@@ -36,9 +36,11 @@ bool operator!=(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `hash_map`합니다.
+*left*<br/>
+`hash_map` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `hash_map`합니다.
+*right*<br/>
+`hash_map` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -50,7 +52,7 @@ hash_map 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합
 
 멤버는 [< hash_map >](hash-map.md) 및 [< hash_set >](hash-set.md) 헤더 파일에 [ stdext Namespace](stdext-namespace.md)합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // hash_map_op_ne.cpp
@@ -103,9 +105,11 @@ bool operator==(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `hash_map`합니다.
+*left*<br/>
+`hash_map` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `hash_map`합니다.
+*right*<br/>
+`hash_map` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -115,7 +119,7 @@ bool operator==(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
 
 hash_map 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 포함된 요소 수가 같고 개별 요소의 값이 같으면 두 hash_map은 같은 것이고 그렇지 않으면 목록은 같지 않은 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // hash_map_op_eq.cpp
@@ -168,9 +172,11 @@ bool operator!=(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `hash_multimap`합니다.
+*left*<br/>
+`hash_multimap` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `hash_multimap`합니다.
+*right*<br/>
+`hash_multimap` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -180,7 +186,7 @@ hash_multimap이 같지 않으면 **true**이고, hash_multimap이 같으면 **f
 
 hash_multimap 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 포함된 요소 수가 같고 개별 요소의 값이 같으면 두 hash_multimap은 같은 것이고 그렇지 않으면 목록은 같지 않은 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // hash_multimap_op_ne.cpp
@@ -233,9 +239,11 @@ bool operator==(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* 형식의 개체 `hash_multimap`합니다.
+*left*<br/>
+`hash_multimap` 형식의 개체입니다.
 
-*오른쪽* 형식의 개체 `hash_multimap`합니다.
+*right*<br/>
+`hash_multimap` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -245,7 +253,7 @@ bool operator==(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
 
 hash_multimap 개체 간의 비교는 해당 요소의 쌍 비교를 기반으로 합니다. 포함된 요소 수가 같고 개별 요소의 값이 같으면 두 hash_multimap은 같은 것이고 그렇지 않으면 목록은 같지 않은 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // hash_multimap_op_eq.cpp

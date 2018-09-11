@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 308254fded0ac38a794233fb3f4eacd4d7d6fd19
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: e3f18f3d312adb00370d6dc51203542c259914ec
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207921"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314250"
 ---
 # <a name="ostreamiterator-class"></a>ostream_iterator 클래스
 
@@ -42,11 +42,14 @@ class ostream_iterator
 
 ### <a name="parameters"></a>매개 변수
 
-*형식* 출력 스트림에 삽입 될 개체의 형식입니다.
+*Type*<br/>
+출력 스트림에 삽입될 개체의 형식입니다.
 
-*CharType* 의 문자 형식을 나타내는 형식입니다는 `ostream_iterator`합니다. 이 인수는 선택 사항이 며 기본값은 **char**합니다.
+*CharType*<br/>
+`ostream_iterator`의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이 며 기본값은 **char**합니다.
 
-*Traits* 의 문자 형식을 나타내는 형식입니다는 `ostream_iterator`합니다. 이 인수는 선택 사항이며 기본값은 `char_traits`\< *CharType>입니다.*
+*특성*<br/>
+`ostream_iterator`의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `char_traits`\< *CharType>입니다.*
 
 ostream_iterator 클래스는 출력 반복기에 대한 요구 사항을 충족해야 합니다. 알고리즘은 `ostream_iterator`를 사용하여 출력 스트림에 직접 쓸 수 있습니다.
 
@@ -90,7 +93,7 @@ typedef CharType char_type;
 
 이 형식은 템플릿 매개 변수 `CharType`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ostream_iterator_char_type.cpp
@@ -114,17 +117,17 @@ int main( )
    // elements to the output stream:
    cout << "The integers written to the output stream\n"
         << "by intOut are:" << endl;
- *intOut = 10;
- *intOut = 20;
- *intOut = 30;
+*intOut = 10;
+*intOut = 20;
+*intOut = 30;
 }
-\* Output:
+/* Output:
 The integers written to the output stream
 by intOut are:
 10
 20
 30
-*\
+*/
 ```
 
 ## <a name="op_star"></a>  ostream_iterator::operator*
@@ -143,7 +146,7 @@ ostream_iterator<Type, CharType, Traits>& operator*();
 
 `ostream_iterator`가 충족해야 하는 출력 반복기에 대한 요구 사항은 \* *ii* = *t* 식만 유효해야 한다는 것과 해당 반복기 자체는 **operator** 또는 `operator=`에 대해 어떤 정보도 제공하지 않아야 한다는 것입니다. 이 구현에서는 구성원 연산자가 **\*this**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ostream_iterator_op_deref.cpp
@@ -163,17 +166,17 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
- *intOut = 10;
+*intOut = 10;
    intOut++;      // No effect on iterator position
- *intOut = 20;
- *intOut = 30;
+*intOut = 20;
+*intOut = 30;
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 10
 20
 30
-*\
+*/
 ```
 
 ## <a name="op_add_add"></a>  ostream_iterator::operator++
@@ -193,7 +196,7 @@ ostream_iterator<Type, CharType, Traits> operator++(int);
 
 이러한 구성원 연산자는 둘 다 **\*this**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ostream_iterator_op_incr.cpp
@@ -213,17 +216,17 @@ int main( )
    // standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
- *intOut = 10;
+*intOut = 10;
    intOut++;      // No effect on iterator position
- *intOut = 20;
- *intOut = 30;
+*intOut = 20;
+*intOut = 30;
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 10
 20
 30
-*\
+*/
 ```
 
 ## <a name="op_eq"></a>  ostream_iterator::operator=
@@ -236,17 +239,18 @@ ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
 
 ### <a name="parameters"></a>매개 변수
 
-*val* 형식의 개체의 값을 `Type` 출력 스트림에 삽입 수입니다.
+*val*<br/>
+출력 스트림에 삽입될 `Type` 형식의 개체 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
-연산자 삽입 *val* 뒤에 지정 된 구분 기호를 개체에 연결 된 출력 스트림에 [ostream_iterator 생성자](#ostream_iterator) (있는 경우), 다음을 에대한참조를반환합니다 `ostream_iterator`.
+연산자 삽입 *val* 뒤에 지정 된 구분 기호를 개체에 연결 된 출력 스트림에 [ostream_iterator 생성자](#ostream_iterator) (있는 경우), 다음을 에대한참조를반환합니다`ostream_iterator`.
 
 ### <a name="remarks"></a>설명
 
 출력 반복기에 대 한 요구 사항을 하는 `ostream_iterator` 충족 해야 합니다 식만 \* `ii`  =  `t` 유효 하 고 연산자 또는 연산자에 대해 아무런 언급이 자체적으로 =. 이 구성원 연산자는 `*this`를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ostream_iterator_op_assign.cpp
@@ -266,17 +270,17 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
- *intOut = 10;
+*intOut = 10;
    intOut++;      // No effect on iterator position
- *intOut = 20;
- *intOut = 30;
+*intOut = 20;
+*intOut = 30;
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 10
 20
 30
-*\
+*/
 ```
 
 ## <a name="ostream_iterator"></a>  ostream_iterator::ostream_iterator
@@ -294,9 +298,11 @@ ostream_iterator(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ostr* 형식의 출력 스트림에 [ostream_iterator:: ostream_type](#ostream_type) 반복 됩니다.
+*_Ostr*<br/>
+반복할 [ostream_iterator::ostream_type](#ostream_type) 형식의 출력 스트림입니다.
 
-*(_D)* 출력 스트림에서 값 사이 삽입 되는 구분 기호입니다.
+*(_D)*<br/>
+출력 스트림에서 값 사이에 삽입되는 구분 기호입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -304,7 +310,7 @@ ostream_iterator(
 
 두 번째 생성자는 출력 스트림 포인터를 사용 하 여 초기화 `&_Ostr` 하 고 사용 하 여 구분 기호 문자열 포인터 *(_d)* 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ostream_iterator_ostream_iterator.cpp
@@ -319,9 +325,9 @@ int main( )
 
    // ostream_iterator for stream cout
    ostream_iterator<int> intOut ( cout , "\n" );
- *intOut = 10;
+*intOut = 10;
    intOut++;
- *intOut = 20;
+*intOut = 20;
    intOut++;
 
    int i;
@@ -343,12 +349,12 @@ int main( )
           ostream_iterator<int> ( cout, " : " ) );
    cout << endl;
 }
-\* Output:
+/* Output:
 10
 20
 Elements output without delimiter: 123456
 Elements output with delimiter: 1 : 2 : 3 : 4 : 5 : 6 :
-*\
+*/
 ```
 
 ## <a name="ostream_type"></a>  ostream_iterator::ostream_type
@@ -363,7 +369,7 @@ typedef basic_ostream<CharType, Traits> ostream_type;
 
 이 형식은 쓰기에 사용할 수 있는 개체를 정의하는 iostream 계층의 스트림 클래스인 [basic_ostream](../standard-library/basic-ostream-class.md)< `CharType`, `Traits`>와 동일한 의미입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `ostream_type`을 선언하고 사용하는 방법의 예제는 [ostream_iterator](#ostream_iterator)를 참조하세요.
 
@@ -379,7 +385,7 @@ typedef Traits traits_type;
 
 이 형식은 템플릿 매개 변수 `Traits`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ostream_iterator_traits_type.cpp
@@ -404,17 +410,17 @@ int main( )
    // elements to the output stream:
    cout << "The integers written to output stream\n"
         << "by intOut are:" << endl;
- *intOut = 1;
- *intOut = 10;
- *intOut = 100;
+*intOut = 1;
+*intOut = 10;
+*intOut = 100;
 }
-\* Output:
+/* Output:
 The integers written to output stream
 by intOut are:
 1
 10
 100
-*\
+*/
 ```
 
 ## <a name="see-also"></a>참고자료

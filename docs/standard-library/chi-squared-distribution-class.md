@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5092107cc1af6327c5ab7d6e08f373f88dd56711
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 74b230aca540f03bf8c9e94fe65ede3ac4ae8681
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959247"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102787"
 ---
 # <a name="chisquareddistribution-class"></a>chi_squared_distribution 클래스
 
@@ -76,9 +76,11 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*RealType* 부동 소수점 결과 형식에 기본값이 **double**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*RealType*<br/>
+부동 소수점 결과 형식으로 기본값으로 **이중**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-*URNG* 균일 난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*URNG*<br/>
+균일 난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -103,7 +105,7 @@ public:
 
 카이 제곱 분포에 대한 자세한 내용은 Wolfram MathWorld 문서 [Chi-Squared Distribution](http://go.microsoft.com/fwlink/p/?linkid=400528)(카이 제곱 분포)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // compile with: /EHsc /W4
@@ -243,9 +245,11 @@ explicit chi_squared_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*n* 는 `n` 분포 매개 변수입니다.
+*n*<br/>
+`n` 분포 매개 변수입니다.
 
-*parm* 분포를 생성 하는 데 매개 변수 구조입니다.
+*parm*<br/>
+분포를 생성하는 데 사용되는 매개 변수 구조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -272,9 +276,11 @@ struct param_type {
 
 ### <a name="parameters"></a>매개 변수
 
-*n* 는 `n` 분포 매개 변수입니다.
+*n*<br/>
+`n` 분포 매개 변수입니다.
 
-*오른쪽* 는 `param_type` 이 비교할 개체입니다.
+*right*<br/>
+이 매개 변수와 비교할 `param_type` 개체입니다.
 
 ### <a name="remarks"></a>설명
 

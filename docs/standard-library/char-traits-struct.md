@@ -37,12 +37,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c2346ed8a7d9cc2359c0bdf984b52993a13b05a
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: bc8f906c4c084ef4cabef9b26ef9e6b48e9e33cd
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956884"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106085"
 ---
 # <a name="chartraits-struct"></a>char_traits 구조체
 
@@ -57,7 +57,8 @@ struct char_traits;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType* 는 요소 데이터 형식입니다.
+*CharType*<br/>
+요소 데이터 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -116,17 +117,19 @@ static char_type *assign(char_type* strTo,
 
 **_** *CharFrom* 값인 할당할 문자입니다.
 
-*_CharTo* 요소에 문자 값을 할당 하는 것입니다.
+*_CharTo*<br/>
+문자 값을 할당받을 요소입니다.
 
 * strTo * 초기 요소가 문자 값이 할당 되어야 하는 문자열 또는 문자 배열입니다.
 
-*_Num* 값을 할당 받을 예정인 요소의 수입니다.
+*_Num*<br/>
+값을 할당받을 예정인 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
 두 번째 멤버 함수 포인터를 반환 문자열을 첫 번째 *_Num* 요소 값의 할당 된 *_CharFrom*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // char_traits_assign.cpp
@@ -179,7 +182,7 @@ typedef CharType char_type;
 
 이 형식은 템플릿 매개 변수 `CharType`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `char_type`을 선언하고 사용하는 방법에 대한 예제는 [copy](#copy)의 예제를 참조하세요.
 
@@ -199,7 +202,8 @@ static int compare(const char_type* str1,
 
 * str2 * 서로 비교할 두 문자열의 두 번째입니다.
 
-*_Num* 비교할 문자열에 있는 요소의 수입니다.
+*_Num*<br/>
+비교할 문자열에 있는 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -211,7 +215,7 @@ static int compare(const char_type* str1,
 
 두 문자열이 범위에 대해 같은지 비교하되 하나가 다른 문자열보다 길면 두 문자열 중 짧은 문자열이 더 긴 문자열보다 작습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // char_traits_compare.cpp
@@ -258,11 +262,14 @@ static char_type *copy(char_type* _To,
 
 ### <a name="parameters"></a>매개 변수
 
-*위치 (_t)* 복사 된 문자 시퀀스를 수신 하도록 지정 된 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
+*위치 (_t)*<br/>
+복사된 문자 시퀀스를 수신하도록 지정된 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
 
-*기반 (_f)* 복사할 소스 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
+*기반 (_f)*<br/>
+복사할 소스 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
 
-*_Num* 복사할 요소의 수입니다.
+*_Num*<br/>
+복사할 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -272,7 +279,7 @@ static char_type *copy(char_type* _To,
 
 소스 및 대상 문자 시퀀스는 겹치지 않아야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // char_traits_copy.cpp
@@ -317,13 +324,17 @@ static char_type *_Copy_s(
 
 ### <a name="parameters"></a>매개 변수
 
-*dest* 복사 된 문자 시퀀스를 수신 하도록 지정 된 문자열 또는 문자 배열입니다.
+*dest*<br/>
+복사된 문자 시퀀스를 수신하도록 지정된 문자열 또는 문자 배열입니다.
 
-*dest_size* 크기인 *dest*합니다. 하는 경우 `char_type` 됩니다 **char**,이 크기는 바이트 단위입니다. 하는 경우 `char_type` 됩니다 **wchar_t**,이 크기는 단어 단위입니다.
+*dest_size*<br/>
+크기인 *dest*합니다. 하는 경우 `char_type` 됩니다 **char**,이 크기는 바이트 단위입니다. 하는 경우 `char_type` 됩니다 **wchar_t**,이 크기는 단어 단위입니다.
 
-*기반 (_f)* 복사할 소스 문자열 또는 문자 배열입니다.
+*기반 (_f)*<br/>
+복사할 소스 문자열 또는 문자 배열입니다.
 
-*개수* 복사할 요소의 수입니다.
+*count*<br/>
+복사할 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -333,7 +344,7 @@ static char_type *_Copy_s(
 
 소스 및 대상 문자 시퀀스는 겹치지 않아야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // char_traits__Copy_s.cpp
@@ -382,7 +393,7 @@ EOF 문자입니다.
 
 C++ 표준에서는 이 값이 유효한 `char_type` 값에 해당하면 안 됩니다. Visual c + + 컴파일러는 형식에 대 한이 제약 조건은 **char**, 형식이 아니라 **wchar_t**합니다. 아래 예제에서는 이 작업을 보여 줍니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // char_traits_eof.cpp
@@ -425,15 +436,17 @@ static bool eq(const char_type& _Ch1, const char_type& _Ch2);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch1* 같은지 테스트할 두 문자 중 첫 번째입니다.
+*_Ch1*<br/>
+같은지 테스트할 두 문자 중 첫 번째입니다.
 
-*_Ch2* 같은지 테스트할 두 문자 중 두 번째입니다.
+*_Ch2*<br/>
+같은지 테스트할 두 문자 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
 
 첫 번째 문자가 두 번째 문자와 같으면 **true**이고, 같지 않으면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // char_traits_eq.cpp
@@ -483,15 +496,17 @@ static bool eq_int_type(const int_type& _Ch1, const int_type& _Ch2);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch1* 같은지 테스트할 두 문자 중 첫 번째 `int_type`s입니다.
+*_Ch1*<br/>
+같은지 테스트할 두 문자 중 첫 번째 `int_type`s입니다.
 
-*_Ch2* 같은지 테스트할 두 문자 중 두 번째 `int_type`s입니다.
+*_Ch2*<br/>
+`int_type`이 같은지 테스트할 두 문자 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
 
 첫 번째 문자가 두 번째 문자와 같으면 **true**이고, 같지 않으면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // char_traits_eq_int_type.cpp
@@ -551,9 +566,9 @@ The char_types and corresponding int_types are:
     ch3 = x corresponding to int1 = 120.
 
 The int_type representation of character ch1
- is not equal to the int_type representation of ch2.
+is not equal to the int_type representation of ch2.
 The int_type representation of character ch1
- is equal to the int_type representation of ch3.
+is equal to the int_type representation of ch3.
 ```
 
 ## <a name="find"></a>  char_traits::find
@@ -568,17 +583,20 @@ static const char_type* find(const char_type* str,
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 검색할 문자열의 첫 번째 문자입니다.
+*str*<br/>
+검색할 문자열의 첫 번째 문자입니다.
 
-*_Num* 위치에는 첫 번째 계산 수를 검색할 범위에서.
+*_Num*<br/>
+검색할 범위에서의 위치 수입니다(첫 번째부터 계산).
 
-*_Ch* 문자 범위에서 검색 수입니다.
+*_Ch*<br/>
+범위에서 검색할 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
 일치 항목이 발견되는 경우 범위에서 지정된 문자 중 처음 나오는 문자에 대한 포인터입니다. 일치 항목이 발견되지 않으면 Null 포인터입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // char_traits_find.cpp
@@ -616,7 +634,7 @@ int main( )
 The string to be searched is: f2d-1234-abcd
 The character searched for in s1 is: d
 The string beginning with the first occurrence
- of the character 'd' is: d-1234-abcd
+of the character 'd' is: d-1234-abcd
 The result2 of the search is NULL.
 ```
 
@@ -632,7 +650,7 @@ typedef long int_type;
 
 형식 캐스트할 형식의 값 이어야 합니다 `CharType` 하 `int_type` 다시 다음 `CharType` 원래 값을 변경 하지 않고 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `int_type`을 선언하고 사용하는 방법에 대한 예제는 [eq_int_type](#eq_int_type)의 예제를 참조하세요.
 
@@ -646,13 +664,14 @@ static size_t length(const char_type* str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str* 길이 측정할 C 문자열입니다.
+*str*<br/>
+길이를 측정할 C 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
 측정되는 시퀀스의 요소 수입니다(Null 종결자를 포함하지 않음).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // char_traits_length.cpp
@@ -688,15 +707,17 @@ static bool lt(const char_type& _Ch1, const char_type& _Ch2);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch1* 테스트할 두 문자 중 첫 번째 미만입니다.
+*_Ch1*<br/>
+작은지 테스트할 두 문자 중 첫 번째입니다.
 
-*_Ch2* 테스트할 두 문자 중 두 번째 미만입니다.
+*_Ch2*<br/>
+작은지 테스트할 두 문자 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
 
 첫 번째 문자가 두 번째 문자보다 작으면 **true**이고, 작지 않으면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // char_traits_lt.cpp
@@ -749,11 +770,14 @@ static char_type *move(char_type* _To,
 
 ### <a name="parameters"></a>매개 변수
 
-*위치 (_t)* 복사 된 문자 시퀀스를 수신 하도록 지정 된 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
+*위치 (_t)*<br/>
+복사된 문자 시퀀스를 수신하도록 지정된 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
 
-*기반 (_f)* 복사할 소스 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
+*기반 (_f)*<br/>
+복사할 소스 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
 
-*_Num* 소스 문자열에서 복사할 요소의 수입니다.
+*_Num*<br/>
+소스 문자열에서 복사할 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -763,7 +787,7 @@ static char_type *move(char_type* _To,
 
 소스 및 대상이 겹칠 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // char_traits_move.cpp
@@ -823,13 +847,17 @@ static char_type *_Move_s(
 
 ### <a name="parameters"></a>매개 변수
 
-*dest* 복사 된 문자 시퀀스를 수신 하도록 지정 된 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
+*dest*<br/>
+복사된 문자 시퀀스를 수신하도록 지정된 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
 
-*dest_size* 크기인 *dest*합니다. 하는 경우 `char_type` 됩니다 **char**, (바이트)에서입니다. 하는 경우 `char_type` 됩니다 **wchar_t**, 단어에서입니다.
+*dest_size*<br/>
+크기인 *dest*합니다. 하는 경우 `char_type` 됩니다 **char**, (바이트)에서입니다. 하는 경우 `char_type` 됩니다 **wchar_t**, 단어에서입니다.
 
-*기반 (_f)* 복사할 소스 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
+*기반 (_f)*<br/>
+복사할 소스 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
 
-*개수* 소스 문자열에서 복사할 요소의 수입니다.
+*count*<br/>
+소스 문자열에서 복사할 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -839,7 +867,7 @@ static char_type *_Move_s(
 
 소스 및 대상이 겹칠 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // char_traits__Move_s.cpp
@@ -895,7 +923,8 @@ static int_type not_eof(const int_type& _Ch);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch* 으로 표시 된 문자를 `int_type` 것가 EOF 문자 인지 여부에 대 한 테스트 수입니다.
+*_Ch*<br/>
+EOF 문자인지 여부를 테스트할 `int_type`으로 표시된 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -903,7 +932,7 @@ static int_type not_eof(const int_type& _Ch);
 
 문자 `int_type` 값이 EOF `int_type` 값과 같으면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // char_traits_not_eof.cpp
@@ -1002,7 +1031,8 @@ static char_type to_char_type(const int_type& _Ch);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch* 는 `int_type` 로 나타낼 수 있는 문자는 `char_type`합니다.
+*_Ch*<br/>
+`char_type`으로 나타낼 `int_type` 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1022,7 +1052,7 @@ static char_type to_char_type(const int_type& _Ch);
 
 위의 식은 임의의 `char_type` *x*에 대해 적용됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // char_traits_to_char_type.cpp
@@ -1107,7 +1137,8 @@ static int_type to_int_type(const char_type& _Ch);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch* 는 `char_type` 로 나타낼 수 있는 문자는 `int_type`합니다.
+*_Ch*<br/>
+`int_type`으로 나타낼 `char_type` 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1125,7 +1156,7 @@ static int_type to_int_type(const char_type& _Ch);
 
 위의 식은 임의의 `char_type` *x*에 대해 적용됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // char_traits_to_int_type.cpp

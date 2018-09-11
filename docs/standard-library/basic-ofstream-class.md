@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d90cbfd5d1f239f05d19803c9ed89ad080667f2
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 31637c1c194754e193970a4ff5efef500228115b
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964816"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105252"
 ---
 # <a name="basicofstream-class"></a>basic_ofstream 클래스
 
@@ -46,9 +46,11 @@ class basic_ofstream : public basic_ostream<Elem, Tr>
 
 ### <a name="parameters"></a>매개 변수
 
-*Elem* 파일 버퍼의 기본 요소입니다.
+*Elem*<br/>
+파일 버퍼의 기본 요소입니다.
 
-*Tr* 파일 버퍼 기본 요소의 특성 (일반적으로 `char_traits` <  `Elem`>).
+*Tr*<br/>
+파일 버퍼 기본 요소의 특성(일반적으로 `char_traits`< `Elem`>)입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -56,7 +58,7 @@ class basic_ofstream : public basic_ostream<Elem, Tr>
 
 이 개체는 `basic_filebuf`< `Elem`, `Tr`> 클래스의 개체를 저장합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 `basic_ofstream` 개체를 만들고 거기에 텍스트를 쓰는 방법을 보여 줍니다.
 
@@ -129,13 +131,17 @@ basic_ofstream(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Filename* 열려는 파일의 이름입니다.
+*_Filename*<br/>
+열어야 할 파일의 이름입니다.
 
-*모드 (_m)* 의 열거형 중 하나 [ios_base:: openmode](../standard-library/ios-base-class.md#openmode)합니다.
+*모드 (_m)*<br/>
+[ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
-*_Prot* 기본 파일 열기 보호는 `shflag` 에 매개 변수 [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)합니다.
+*_Prot*<br/>
+[_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)의 `shflag` 매개 변수와 같은 기본 파일 열기 보호입니다.
 
-*오른쪽* 에 대 한 rvalue 참조를 `basic_ofstream` 이 초기화 하는 데 사용 되 고 개체 `basic_ofstream` 개체입니다.
+*right*<br/>
+이 `basic_ofstream` 개체를 초기화하는 데 사용되는 `basic_ofstream` 개체에 대한 rvalue 참조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -145,7 +151,7 @@ basic_ofstream(
 
 네 번째 생성자는 복사 함수입니다. 내용으로 개체를 초기화 *오른쪽*는 rvalue 참조로 처리 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서는 `basic_ofstream` 개체를 만들고 거기에 텍스트를 쓰는 방법을 보여 줍니다.
 
@@ -179,7 +185,7 @@ void close();
 
 멤버 함수 호출 [rdbuf](../standard-library/basic-ifstream-class.md#rdbuf)**->**[닫습니다](../standard-library/basic-filebuf-class.md#close)합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `close`의 사용 예제는 [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close)를 참조하세요.
 
@@ -199,7 +205,7 @@ bool is_open() const;
 
 멤버 함수는 반환 [rdbuf](#rdbuf) **->** [is_open](../standard-library/basic-filebuf-class.md#is_open)합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // basic_ofstream_is_open.cpp
@@ -247,17 +253,20 @@ void open(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Filename* 열려는 파일의 이름입니다.
+*_Filename*<br/>
+열어야 할 파일의 이름입니다.
 
-*모드 (_m)* 의 열거형 중 하나 [ios_base:: openmode](../standard-library/ios-base-class.md#openmode)합니다.
+*모드 (_m)*<br/>
+[ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
-*_Prot* 기본 파일 열기 보호는 `shflag` 에 매개 변수 [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)합니다.
+*_Prot*<br/>
+[_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)의 `shflag` 매개 변수와 같은 기본 파일 열기 보호입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 [rdbuf](#rdbuf) **->** [open](../standard-library/basic-filebuf-class.md#open)(_ *Filename*, `_Mode` &#124; `ios_base::out`)을 호출합니다. 이 함수를 호출 하는 해당 함수가 null 포인터를 반환 하면 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 참조 [basic_filebuf:: open](../standard-library/basic-filebuf-class.md#open) 사용 하는 예제에 대 한 `open`합니다.
 
@@ -271,7 +280,8 @@ basic_ofstream& operator=(basic_ofstream&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* rvalue 참조는 `basic_ofstream` 개체입니다.
+*right*<br/>
+`basic_ofstream` 개체에 대한 rvalue 참조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -293,7 +303,7 @@ basic_filebuf<Elem, Tr> *rdbuf() const
 
 저장된 스트림 버퍼 주소를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `rdbuf`의 사용 예제는 [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close)를 참조하세요.
 
@@ -307,7 +317,8 @@ void swap(basic_ofstream& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 는 `lvalue` 다른 참조 `basic_ofstream` 개체입니다.
+*right*<br/>
+다른 `basic_ofstream` 개체에 대한 `lvalue` 참조입니다.
 
 ### <a name="remarks"></a>설명
 

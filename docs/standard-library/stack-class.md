@@ -30,12 +30,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b933029f7180292e1c9e392bf2ab09e8dbcb204
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: e4f1f34e43f04d19efb38ba32488b43845d42260
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963227"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110414"
 ---
 # <a name="stack-class"></a>stack 클래스
 
@@ -50,9 +50,11 @@ class stack
 
 ### <a name="parameters"></a>매개 변수
 
-*형식* 스택에 저장 될 요소 데이터 형식입니다.
+*Type*<br/>
+스택에 저장되는 요소 데이터 형식입니다.
 
-*컨테이너* 스택을 구현 하는 데 사용 된 기본 컨테이너의 형식입니다. 기본값은 클래스 `deque`*\<Type>* 입니다.
+*컨테이너*<br/>
+스택을 구현하는 데 사용된 기본 컨테이너의 형식입니다. 기본값은 클래스 `deque`*\<Type>* 입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -112,7 +114,7 @@ typedef Container container_type;
 
 `Container`에 대한 자세한 내용은 [stack 클래스](../standard-library/stack-class.md) 항목의 설명 섹션을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `container_type`을 선언하고 사용하는 방법에 대한 예제는 [stack::stack](#stack)의 예제를 참조하세요.
 
@@ -128,7 +130,7 @@ bool empty() const;
 
 스택이 비어 있으면 **true**이고 비어 있지 않으면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // stack_empty.cpp
@@ -173,7 +175,7 @@ void pop();
 
 구성원 함수를 적용하려면 스택이 비어 있지 않아야 합니다. 스택 맨 위 위치에는 가장 최근에 추가한 요소가 배치되며, 이 요소가 컨테이너 끝의 마지막 요소가 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // stack_pop.cpp
@@ -227,13 +229,14 @@ void push(const Type& val);
 
 ### <a name="parameters"></a>매개 변수
 
-*val* 스택의 맨 위에 추가 되는 요소입니다.
+*val*<br/>
+스택의 맨 위에 추가되는 요소입니다.
 
 ### <a name="remarks"></a>설명
 
 스택 맨 위 위치에는 가장 최근에 추가한 요소가 배치되며, 이 요소가 컨테이너 끝의 마지막 요소가 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // stack_push.cpp
@@ -277,7 +280,7 @@ size_type size() const;
 
 스택의 현재 길이입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // stack_size.cpp
@@ -318,7 +321,7 @@ typedef typename Container::size_type size_type;
 
 이 형식은 스택에 의해 조정되는 기본 컨테이너의 `size_type`과 동일한 의미입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `size_type`을 선언하고 사용하는 방법에 대한 예제는 [size](#size)의 예제를 참조하세요.
 
@@ -334,9 +337,10 @@ explicit stack(const container_type& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 는 생성 된 스택 복사본이 되는 컨테이너입니다.
+*right*<br/>
+생성된 스택이 복사본이 되는 컨테이너입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // stack_stack.cpp
@@ -395,7 +399,7 @@ const_reference top() const;
 
 하는 경우의 반환 값 `top` 에 할당 되는 `const_reference`, 스택 개체를 수정할 수 없습니다. 하는 경우의 반환 값 `top` 에 할당 되는 `reference`, 스택 개체를 수정할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // stack_top.cpp
@@ -438,7 +442,7 @@ typedef typename Container::value_type value_type;
 
 이 형식은 스택에 의해 조정되는 기본 컨테이너의 `value_type`과 동일한 의미입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // stack_value_type.cpp

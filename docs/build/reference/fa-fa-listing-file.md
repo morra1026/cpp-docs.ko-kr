@@ -26,80 +26,87 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1840d2f2ff7d968fdcc19e2013a89af9cec32d24
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a4014c58a7e562aa632dba62dcac04c835352cbf
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32378953"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101731"
 ---
 # <a name="fa-fa-listing-file"></a>/FA, /Fa(목록 파일)
-어셈블러 코드가 포함 된 목록 파일을 만듭니다.  
-  
-## <a name="syntax"></a>구문  
-  
-> **/FA**[**c**\][**s**\][**u**]  
-> **/Fa**_경로 이름_  
-  
-## <a name="remarks"></a>설명  
-`/FA` 컴파일러 옵션 C 또는 c + + 소스 파일은 일반적으로 해당 컴파일에서 각 변환 단위에 대 한 어셈블러 목록 파일을 생성 합니다. 기본적으로만 어셈블러 ANSI로 인코딩 되는 목록 파일에 포함 됩니다. 선택적 `c`, `s`, 및 `u` 에 대 한 인수 `/FA` 제어 여부 기계어 코드 또는 소스 코드는 목록, 어셈블러 출력 및 목록 u t F-8로 인코딩 되는 여부입니다.  
-  
-기본적으로 각 목록 파일은 소스 파일과 동일한 기본 이름을 가져오고.asm 확장명이 합니다. 기계어 코드를 사용 하 여 포함 된 경우는 `c` 옵션을 목록 파일에.cod 확장 합니다. 이름 및 목록 파일을 사용 하 여 만들어진 디렉터리의 확장을 변경할 수 있습니다는 `/Fa` 옵션입니다.  
 
-### <a name="fa-arguments"></a>/FA 인수  
+어셈블러 코드가 포함 된 목록 파일을 만듭니다.
+
+## <a name="syntax"></a>구문
+
+> **/FA**[**c**\][**s**\][**u**] **/Fa**_경로 이름_
+
+## <a name="remarks"></a>설명
+
+합니다 **/FA** 컴파일러 옵션 컴파일할 때 일반적으로 C 또는 c + + 소스 파일에 해당 하는 각 변환 단위에 대 한 어셈블러 목록 파일을 생성 합니다. 기본적으로 어셈블러 ANSI로 인코딩 되는 목록 파일에 포함 되어 있습니다. 선택적 **c**를 **s**, 및 **u** 인수 **/FA** 여부 기계어 코드를 제어 하거나 소스 코드는 어셈블러와 함께 출력 목록은 목록 u t F-8로 인코딩 되는 여부 및 합니다.
+
+기본적으로 각 목록 파일 소스 파일과 동일한 기본 이름을 가져오고.asm 확장명이 합니다. 기계어 코드를 사용 하 여 포함 된 경우는 **c** .cod 확장명이 옵션을 나열 합니다. 이름 및 확장명이 목록 파일 및 디렉터리를 사용 하 여 만들어지는 위치를 변경할 수 있습니다 합니다 **/Fa** 옵션입니다.
+
+### <a name="fa-arguments"></a>/FA 인수
+
 없음  
-어셈블러 언어만 목록에 포함 되어 있습니다.  
-  
-`c`  
-선택 사항입니다. 기계어 코드 목록에 포함 되어 있습니다.  
-  
-`s`  
-선택 사항입니다. 목록에서 소스 코드를 포함 합니다.  
-  
-`u` 선택 사항입니다. 목록 파일에 utf-8 형식으로 인코딩하고 바이트 순서 마커를 포함 합니다. 기본적으로 파일은 ANSI로 인코딩됩니다. 사용 하 여 `u` 를 모든 시스템에 올바르게 표시 하는 목록 파일을 만드는 컴파일러에 대 한 입력으로 유니코드를 사용 하는 경우 또는 소스 코드 파일.  
-  
-두 `s` 및 `u` 지정 되 고 소스 코드 파일 경우 u t F-8로 다음 코드 줄.asm 파일에 올바르게 표시 되지 않을 이외의 유니코드 인코딩을 사용 합니다.  
-  
-### <a name="fa-argument"></a>/Fa 인수  
+어셈블러 언어만 목록에 포함 됩니다.
+
+**c**  
+선택 사항입니다. 목록에서 컴퓨터 코드를 포함합니다.
+
+**s**  
+선택 사항입니다. 목록에서 소스 코드를 포함합니다.
+
+**u**  
+선택 사항입니다. 목록 파일에 utf-8 형식으로 인코딩하고 바이트 순서 마커를 포함 합니다. 기본적으로 파일 ANSI로 인코딩됩니다. 사용 하 여 `u` 모든 시스템에 올바르게 표시 하는 한 목록 파일을 만들려면 컴파일러에 대 한 입력으로 유니코드를 사용 하는 경우 또는 소스 코드 파일.
+
+둘 다 **s** 하 고 **u** 를 지정 하 고 소스 코드 파일 경우 u t F-8을.asm 파일에 코드 줄을 올바르게 표시 되지 않을 이외의 유니코드 인코딩을 사용 합니다.
+
+### <a name="fa-argument"></a>/Fa 인수
+
 없음  
-하나의 *소스*컴파일할에서 각 소스 코드 파일에 대해.asm 파일이 만들어집니다.  
-  
-*filename* 라는 목록 파일 *filename*.asm 현재 디렉터리에 배치 됩니다. 이 단일 소스 코드 파일을 컴파일할 때에 유효 합니다.  
-  
+하나의 *원본*.asm 파일을 컴파일할 때 각 소스 코드 파일에 대 한 만들어집니다.
+
+*filename*  
+목록 파일인 *filename*.asm은 현재 디렉터리에 배치 합니다. 이 단일 소스 코드 파일을 컴파일할 때에 유효 합니다.
+
 *filename.extension*  
-목록 파일 이름이 *filename.extension* 현재 디렉터리에 배치 됩니다. 이 단일 소스 코드 파일을 컴파일할 때에 유효 합니다.  
-  
-*디렉터리*\  
-하나의 *source_file*.asm 파일을 만들고 지정 된 배치 *디렉터리* 컴파일할에서 각 소스 코드 파일에 대 한 합니다. Note 뒤의 백슬래시 필요 합니다. 현재 디스크에 경로만 허용 됩니다.  
-  
-*디렉터리*\\*filename* 라는 목록 파일 *filename*.asm 놓입니다 지정 된 *디렉터리*합니다. 이 단일 소스 코드 파일을 컴파일할 때에 유효 합니다.  
-  
-*디렉터리*\\*filename.extension*  
-목록 파일 이름이 *filename.extension* 놓입니다 지정 된 *디렉터리*합니다. 이 단일 소스 코드 파일을 컴파일할 때에 유효 합니다.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면  
-  
-1.  프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)합니다.  
-  
-2.  열기는 **C/c + +** 폴더를 선택은 **출력 파일** 속성 페이지.  
-  
-3.  수정 된 **어셈블러 출력** 속성을 설정 하려면는 `/FAc` 및 `/FAs` 어셈블러, 컴퓨터 및 소스 코드에 대 한 옵션입니다. 수정 된 **어셈블러 목록에 대 한 사용 하 여 유니코드** 속성을 설정 하려면는 `/FAu` ANSI 또는 u t F-8 출력에 대 한 옵션입니다. 수정 된 **ASM 목록 위치** 설정 하는 `/Fa` 파일 이름 및 위치를 나열 하기 위한 옵션입니다.  
-  
-둘 다 설정 **어셈블러 출력** 및 **어셈블러 목록에 대 한 사용 하 여 유니코드** 속성으로 지정 하면 [명령줄 경고 D9025](../../error-messages/tool-errors/command-line-warning-d9025.md)합니다. IDE에서 이러한 옵션을 결합 하려면 사용 하 여는 **추가 옵션** 필드에 **명령줄** 속성 페이지 대신 합니다.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면  
-  
--   <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AssemblerListingLocation%2A> 또는 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AssemblerOutput%2A>을 참조하십시오. 지정 하려면 `/FAu`, 참조 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>합니다.  
-  
-## <a name="example"></a>예제  
-다음 명령줄을 조합 된 소스를 생성 하 고 기계어 코드 hello.cod:  
-  
-```  
-CL /FAcs HELLO.CPP  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [출력 파일 (/ F) 옵션](../../build/reference/output-file-f-options.md)   
- [컴파일러 옵션](../../build/reference/compiler-options.md)   
- [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)   
- [경로 이름 지정](../../build/reference/specifying-the-pathname.md)
+목록 파일인 *filename.extension* 현재 디렉터리에 배치 됩니다. 이 단일 소스 코드 파일을 컴파일할 때에 유효 합니다.
+
+*디렉터리*__\\__  
+하나의 *source_file*.asm 파일을 만들고 지정 된 배치 *directory* 컴파일할 때 각 소스 코드 파일에 대 한 합니다. 필요한 후행 백슬래시를 note 합니다. 현재 디스크에 대 한 경로만 허용 됩니다.
+
+*디렉터리*__\\__*파일 이름*  
+목록 파일 이름이 *filename*.asm 위치한 지정 된 *디렉터리*합니다. 이 단일 소스 코드 파일을 컴파일할 때에 유효 합니다.
+
+*디렉터리*__\\__*filename.extension*  
+목록 파일 이름이 *filename.extension* 위치한 지정 된 *directory*합니다. 이 단일 소스 코드 파일을 컴파일할 때에 유효 합니다.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
+
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+
+2. 선택 된 **구성 속성** > **C/c + +** > **출력 파일** 속성 페이지.
+
+3. 수정 합니다 **어셈블러 출력** 속성을 설정 합니다 **/FAc** 및 **/FAs** assembler, 컴퓨터 및 소스 코드에 대 한 옵션입니다. 수정 합니다 **어셈블러 목록에 대 한 사용 하 여 유니코드** 속성을 설정 합니다 **하려면 /FAu** ANSI 또는 u t F-8 출력에 대 한 옵션입니다. 수정 합니다 **ASM 목록 위치** 설정 하는 **/Fa** 파일 이름과 위치를 나열 하기 위한 옵션입니다.
+
+모두 설정 **어셈블러 출력** 하 고 **어셈블러 목록에 대 한 사용 하 여 유니코드** 속성에서 발생할 수 있습니다 [명령줄 경고 D9025](../../error-messages/tool-errors/command-line-warning-d9025.md)합니다. IDE에서 이러한 옵션을 결합 하려면 사용 합니다 **추가 옵션** 필드에 **명령줄** 속성 페이지 대신 합니다.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
+
+- <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AssemblerListingLocation%2A> 또는 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AssemblerOutput%2A>을 참조하십시오. 지정할 **하려면 /FAu**를 참조 하세요 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>합니다.
+
+## <a name="example"></a>예제
+다음 명령줄을 결합 된 소스를 생성 하 고 기계어 코드로 hello.cod:
+
+```cmd
+CL /FAcs HELLO.CPP
+```
+
+## <a name="see-also"></a>참고 항목
+
+[출력 파일 (/ F) 옵션](../../build/reference/output-file-f-options.md)   
+[컴파일러 옵션](../../build/reference/compiler-options.md)   
+[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)   
+[경로 이름 지정](../../build/reference/specifying-the-pathname.md)

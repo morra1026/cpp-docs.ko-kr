@@ -1,5 +1,5 @@
 ---
-title: 지정된 된 기호에 대 한 리소스 편집기 열기 | Microsoft Docs
+title: 지정된 된 기호 (c + +)에 대 한 리소스 편집기 열기 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,21 +12,21 @@ dev_langs:
 helpviewer_keywords:
 - resource symbols
 - View Use button
-- resource editors, resource symbols
+- resource editors [C++], resource symbols
 ms.assetid: f715807b-5af2-4627-be25-be63b23fd097
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7f10b0e46fee7877a4fcf6f21f3c5c938cd33ab2
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b4b2c6f37a1e496310b1520754a90feb2facb163
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607961"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313184"
 ---
-# <a name="opening-the-resource-editor-for-a-given-symbol"></a>특정 기호에 대한 리소스 편집기 열기
+# <a name="opening-the-resource-editor-for-a-given-symbol-c"></a>지정된 된 기호 (c + +)에 대 한 리소스 편집기 열기
 
 기호를 찾는 경우 합니다 [리소스 기호 대화 상자](../windows/resource-symbols-dialog-box.md), 특정 기호를 사용 하는 방법에 대 한 자세한 내용은 확인할 수 있습니다. 합니다 **사용 리소스 보기** 단추에는이 정보를 얻으려면 빠른 방법을 제공 합니다.
 

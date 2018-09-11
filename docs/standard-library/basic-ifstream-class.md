@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2e641dbea0507c51987d67e78b3cd8ef8be0dc6
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 63712f6eb7efd9c52db5480b7f13babe9601dea2
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958506"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110229"
 ---
 # <a name="basicifstream-class"></a>basic_ifstream 클래스
 
@@ -46,15 +46,17 @@ class basic_ifstream : public basic_istream<Elem, Tr>
 
 ### <a name="parameters"></a>매개 변수
 
-*Elem* 파일 버퍼의 기본 요소입니다.
+*Elem*<br/>
+파일 버퍼의 기본 요소입니다.
 
-*Tr* 파일 버퍼 기본 요소의 특성 (일반적으로 `char_traits` <  `Elem`>).
+*Tr*<br/>
+파일 버퍼 기본 요소의 특성(일반적으로 `char_traits`< `Elem`>)입니다.
 
 ## <a name="remarks"></a>설명
 
 이 개체는 `basic_filebuf`< `Elem`, `Tr`> 클래스의 개체를 저장합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 파일에서 텍스트를 읽는 방법을 보여 줍니다.
 
@@ -141,11 +143,14 @@ basic_ifstream(basic_ifstream&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Filename* 열려는 파일의 이름입니다.
+*_Filename*<br/>
+열어야 할 파일의 이름입니다.
 
-*모드 (_m)* 의 열거형 중 하나 [ios_base:: openmode](../standard-library/ios-base-class.md#openmode)합니다.
+*모드 (_m)*<br/>
+[ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
-*_Prot* 기본 파일 열기 보호는 `shflag` 에 매개 변수 [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)합니다.
+*_Prot*<br/>
+[_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)의 `shflag` 매개 변수와 같은 기본 파일 열기 보호입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -155,7 +160,7 @@ basic_ifstream(basic_ifstream&& right);
 
 네 번째 생성자는 rvalue 참조로 처리되는 `right`의 내용으로 개체를 초기화합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서는 파일에서 텍스트를 읽는 방법을 보여 줍니다. 파일을 만들려면 [basic_ofstream::basic_ofstream](../standard-library/basic-ofstream-class.md#basic_ofstream)에 대한 예제를 참조하세요.
 
@@ -192,7 +197,7 @@ void close();
 
 멤버 함수 호출 [rdbuf](#rdbuf) **->** [닫습니다](../standard-library/basic-filebuf-class.md#close)합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `close`의 사용 예제는 [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close)를 참조하세요.
 
@@ -212,7 +217,7 @@ bool is_open() const;
 
 멤버 함수는 반환 [rdbuf](#rdbuf) **->** [is_open](../standard-library/basic-filebuf-class.md#is_open)합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `is_open`을 사용하는 방법의 예는 [basic_filebuf::is_open](../standard-library/basic-filebuf-class.md#is_open)을 참조하세요.
 
@@ -242,17 +247,20 @@ void open(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Filename* 열려는 파일의 이름입니다.
+*_Filename*<br/>
+열어야 할 파일의 이름입니다.
 
-*모드 (_m)* 의 열거형 중 하나 [ios_base:: openmode](../standard-library/ios-base-class.md#openmode)합니다.
+*모드 (_m)*<br/>
+[ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
-*_Prot* 기본 파일 열기 보호는 `shflag` 에 매개 변수 [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)합니다.
+*_Prot*<br/>
+[_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)의 `shflag` 매개 변수와 같은 기본 파일 열기 보호입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 [rdbuf](#rdbuf) **->** [open](../standard-library/basic-filebuf-class.md#open)(_ *Filename*, `_Mode` &#124; **ios_base::in**)을 호출합니다. 경우 열기에 실패 하면 함수 호출 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`)에 ios_base:: failure 예외가 throw 될 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 참조 [basic_filebuf:: open](../standard-library/basic-filebuf-class.md#open) 사용 하는 예제에 대 한 `open`합니다.
 
@@ -266,7 +274,8 @@ basic_ifstream& operator=(basic_ifstream&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* rvalue 참조는 `basic_ifstream` 개체입니다.
+*right*<br/>
+`basic_ifstream` 개체에 대한 rvalue 참조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -288,7 +297,7 @@ basic_filebuf<Elem, Tr> *rdbuf() const
 
 저장된 스트림 버퍼를 나타내는 [basic_filebuf](../standard-library/basic-filebuf-class.md) 개체에 대한 포인터입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `rdbuf`의 사용 예제는 [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close)를 참조하세요.
 
@@ -302,7 +311,8 @@ void swap(basic_ifstream& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 다른 스트림 버퍼에 대 한 참조입니다.
+*right*<br/>
+다른 스트림 버퍼에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
 

@@ -38,12 +38,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1d2bef607e80e2e972915bd8a8b0517b7c6e5eb
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 67fef1231d4488b1714cc2f0f2f0e892737e627d
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200669"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101939"
 ---
 # <a name="assert-macro-assert-wassert"></a>assert Macro, _assert, _wassert
 
@@ -69,13 +69,17 @@ void _wassert(
 
 ### <a name="parameters"></a>매개 변수
 
-*식을* 에 0이 아닌 값을 평가 하는 스칼라 식 (포인터 식 포함) (**true**) 또는 0 (**false**).
+*식*<br/>
+에 0이 아닌 값을 평가 하는 스칼라 식 (포인터 식 포함) (**true**) 또는 0 (**false**).
 
-*메시지* 표시할 메시지입니다.
+*message*<br/>
+표시할 메시지입니다.
 
-*filename* 원본의 이름을 파일에서 실패 한 어설션이 합니다.
+*filename*<br/>
+어설션이 실패한 소스 파일의 이름입니다.
 
-*줄* 실패 한 어설션의 소스 파일의 줄 번호입니다.
+*줄*<br/>
+실패한 어설션의 소스 파일에 있는 줄 번호입니다.
 
 ## <a name="remarks"></a>설명
 

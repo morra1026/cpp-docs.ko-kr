@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e41abbc4d7fa3cd18363982b806811b0698b44f4
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: e565d5f10bdb06bff6ad8c17047ed3e11070364d
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959870"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44099592"
 ---
 # <a name="istreamiterator-class"></a>istream_iterator 클래스
 
@@ -38,7 +38,7 @@ ms.locfileid: "38959870"
 ```cpp
 template <class Type, class CharType = char, class Traits = char_traits<CharType>, class Distance = ptrdiff_t,>
 class istream_iterator
- : public iterator<
+: public iterator<
     input_iterator_tag, Type, Distance,
     const Type *,
     const Type&>;
@@ -46,13 +46,17 @@ class istream_iterator
 
 ### <a name="parameters"></a>매개 변수
 
-*형식* 입력 스트림에서 추출할 개체의 형식입니다.
+*Type*<br/>
+입력 스트림에서 추출할 개체의 형식입니다.
 
-*CharType* 의 문자 형식을 나타내는 형식입니다는 `istream_iterator`합니다. 이 인수는 선택 사항이 며 기본값은 **char**합니다.
+*CharType*<br/>
+`istream_iterator`의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이 며 기본값은 **char**합니다.
 
-*Traits* 의 문자 형식을 나타내는 형식입니다는 `istream_iterator`합니다. 이 인수는 선택 사항이며 기본값은 `char_traits`< `CharType`>입니다.
+*특성*<br/>
+`istream_iterator`의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `char_traits`< `CharType`>입니다.
 
-*거리* 하는 부호 있는 정수 계열 형식에 대해 차이 형식을 나타내는 `istream_iterator`합니다. 이 인수는 선택 사항이며 기본값은 `ptrdiff_t`입니다.
+*Distance*<br/>
+`istream_iterator`에 대해 차이 형식을 나타내는 부호 있는 정수 계열 형식입니다. 이 인수는 선택 사항이며 기본값은 `ptrdiff_t`입니다.
 
 null이 아닌 저장된 포인터를 사용하여 istream_iterator 클래스를 구성 또는 증가한 이후 개체는 연결된 입력 스트림에서 `Type` 형식의 개체에 대해 효과적인 추출 및 저장을 시도합니다. 추출이 실패할 경우 개체는 저장된 포인터를 null 포인터로 대체하여 시퀀스 끝 표시기를 만듭니다.
 
@@ -96,7 +100,7 @@ typedef CharType char_type;
 
 이 형식은 템플릿 매개 변수 `Chartype`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // istream_iterator_char_type.cpp
@@ -144,7 +148,8 @@ istream_iterator(istream_type& _Istr);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Istr* 읽이 입력된 스트림을 초기화 하는 `istream_iterator`.
+*_Istr*<br/>
+`istream_iterator`를 초기화하기 위해 읽을 입력 스트림입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -152,7 +157,7 @@ istream_iterator(istream_type& _Istr);
 
 스트림의 끝 반복기를 사용하여 `istream_iterator`가 스트림의 끝에 도달했는지 테스트할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // istream_iterator_istream_iterator.cpp
@@ -198,7 +203,7 @@ typedef basic_istream<CharType, Traits> istream_type;
 
 이 형식은 `basic_istream`\< **CharType**, **Traits**>의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `istream_type`을 선언하고 사용하는 방법에 대한 예제는 [istream_iterator](#istream_iterator)를 참조하세요.
 
@@ -214,7 +219,7 @@ const Type& operator*() const;
 
 형식의 저장 된 개체 `Type`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // istream_iterator_operator.cpp
@@ -264,7 +269,7 @@ const Type* operator->() const;
 
 이 연산자는 **&\*\*this**를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // istream_iterator_operator_vm.cpp
@@ -310,7 +315,7 @@ istream_iterator<Type, CharType, Traits, Distance> operator++(int);
 
 형식의 증가 된 개체에 대 한 참조를 반환 하는 첫 번째 멤버 연산자 `Type` 입력 스트림과 두 번째 멤버 함수는 개체의 복사본에서 추출 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // istream_iterator_operator_incr.cpp
@@ -354,7 +359,7 @@ typedef Traits traits_type;
 
 이 형식은 템플릿 매개 변수 *Traits*와 동일한 의미입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // istream_iterator_traits_type.cpp

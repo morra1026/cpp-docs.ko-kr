@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22f96b81836a8c1a9daa971ff8fb1961edb60cfb
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 87eb15654be3f709da92d561d048b3a7961c985f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39209006"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44099618"
 ---
 # <a name="backinsertiterator-class"></a>back_insert_iterator 클래스
 
@@ -40,7 +40,8 @@ class back_insert_iterator;
 
 ### <a name="parameters"></a>매개 변수
 
-*컨테이너* 요소 뒤의 컨테이너 형식을 삽입 하려는 `back_insert_iterator`합니다.
+*컨테이너*<br/>
+`back_insert_iterator`가 뒤에 요소를 삽입할 컨테이너의 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -83,13 +84,14 @@ explicit back_insert_iterator(Container& _Cont);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Cont* 컨테이너는는 `back_insert_iterator` 에 요소를 삽입 하는 것입니다.
+*_Cont*<br/>
+`back_insert_iterator`가 요소를 삽입할 컨테이너입니다.
 
 ### <a name="return-value"></a>반환 값
 
 매개 변수 컨테이너에 대한 `back_insert_iterator`입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // back_insert_iterator_back_insert_iterator.cpp
@@ -121,9 +123,9 @@ int main( )
 
    // Alternatively, insertions can be done with template function
    back_insert_iterator<vector<int> > backiter ( vec );
- *backiter = 600;
+*backiter = 600;
    backiter++;
- *backiter = 700;
+*backiter = 700;
 
    cout << "After the insertions, the vector vec is: ( ";
    for ( vIter = vec.begin ( ) ; vIter != vec.end ( ); vIter++)
@@ -150,7 +152,7 @@ container_type;
 
 이 형식은 템플릿 매개 변수 **Container**의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // back_insert_iterator_container_type.cpp
@@ -207,7 +209,7 @@ back_insert_iterator<Container>& operator*();
 
 출력 반복기 식 **\*Iter** = **value**를 구현하는 데 사용됩니다. **Iter**이 시퀀스에서 요소의 주소를 지정하는 반복기인 경우 **\*Iter** = **value**는 해당 요소를 값과 바꾸며 시퀀스에서 총 요소 수를 변경하지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // back_insert_iterator_back_insert.cpp
@@ -234,9 +236,9 @@ int main( )
    cout << ")." << endl;
 
    back_insert_iterator<vector<int> > backiter ( vec );
- *backiter = 10;
+*backiter = 10;
    backiter++;      // Increment to the next element
- *backiter = 20;
+*backiter = 20;
    backiter++;
 
    cout << "After the insertions, the vector vec becomes: ( ";
@@ -268,7 +270,7 @@ back_insert_iterator<Container> operator++(int);
 
 preincrementation과 postincrementation 연산자는 둘 다 동일한 결과를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // back_insert_iterator_op_incre.cpp
@@ -295,9 +297,9 @@ int main( )
    cout << ")." << endl;
 
    back_insert_iterator<vector<int> > backiter ( vec );
- *backiter = 30;
+*backiter = 30;
    backiter++;      // Increment to the next element
- *backiter = 40;
+*backiter = 40;
    backiter++;
 
    cout << "After the insertions, the vector vec becomes: ( ";
@@ -323,7 +325,8 @@ back_insert_iterator<Container>& operator=(typename Container::value_type&& val)
 
 ### <a name="parameters"></a>매개 변수
 
-*val* 컨테이너에 삽입할 값입니다.
+*val*<br/>
+컨테이너에 삽입할 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -339,7 +342,7 @@ back_insert_iterator<Container>& operator=(typename Container::value_type&& val)
 
 그런 다음 `*this`를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // back_insert_iterator_op_assign.cpp
@@ -366,9 +369,9 @@ int main( )
    cout << ")." << endl;
 
    back_insert_iterator<vector<int> > backiter ( vec );
- *backiter = 10;
+*backiter = 10;
    backiter++;      // Increment to the next element
- *backiter = 20;
+*backiter = 20;
    backiter++;
 
    cout << "After the insertions, the vector vec becomes: ( ";
@@ -390,7 +393,7 @@ typedef typename Container::reference reference;
 
 이 형식은 연관 컨테이너에서 제어하는 시퀀스의 요소에 대한 참조를 제공합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // back_insert_iterator_reference.cpp

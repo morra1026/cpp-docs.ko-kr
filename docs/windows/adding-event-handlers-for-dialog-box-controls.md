@@ -1,5 +1,5 @@
 ---
-title: 대화 상자 컨트롤에 대 한 이벤트 처리기를 추가 합니다. | Microsoft Docs
+title: 대화 상자 컨트롤 (c + +)에 대 한 이벤트 처리기를 추가 합니다. | Microsoft Docs
 ms.custom: ''
 ms.date: 06/28/2018
 ms.technology:
@@ -8,9 +8,9 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- Dialog editor, adding event handlers to controls
+- Dialog Editor [C++], adding event handlers to controls
 - controls [C++], event handlers
-- dialog box controls, events
+- dialog box controls [C++], events
 - event handlers, for dialog box controls
 ms.assetid: f9c70f24-ea6f-44df-82eb-78a2deaee769
 author: mikeblome
@@ -18,14 +18,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ad7b007728d3de949fec678249edd56c7032d250
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5caec6d9d77d743fa1a8455819b813364bde27d0
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605739"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317058"
 ---
-# <a name="adding-event-handlers-for-dialog-box-controls"></a>대화 상자 컨트롤에 사용할 이벤트 처리기 추가
+# <a name="adding-event-handlers-for-dialog-box-controls-c"></a>대화 상자 컨트롤 (c + +)에 대 한 이벤트 처리기를 추가합니다.
 
 이미 클래스와 연결 되어 있는 프로젝트 대화 상자에 대 한 이벤트 처리기를 만들 때 일부 바로 가기 키는 활용을 걸릴 수 있습니다. 기본 컨트롤 알림 이벤트 또는 적용 가능한 모든 Windows 메시지에 대 한 처리기를 신속 하 게 만들 수 있습니다.
 

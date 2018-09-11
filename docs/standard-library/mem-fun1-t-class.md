@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d73beb5b935a729eb5e304eb03cbc37536c4d0e
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 0d9950d9198aec27ec3114d8a2b5151d105ee0b1
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963156"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110007"
 ---
 # <a name="memfun1t-class"></a>mem_fun1_t 클래스
 
@@ -44,11 +44,14 @@ class mem_fun1_t : public binary_function<Type *, Arg, Result> {
 
 ### <a name="parameters"></a>매개 변수
 
-*_Pm* 클래스의 멤버 함수에 대 한 포인터 `Type` 함수 개체를 변환할 수 있습니다.
+*_Pm*<br/>
+함수 개체로 변환할 `Type` 클래스의 멤버 함수 포인터입니다.
 
-*_Pleft* 개체는 합니다 *_Pm* 멤버 함수가 호출 됩니다.
+*_Pleft*<br/>
+개체는 합니다 *_Pm* 멤버 함수가 호출 됩니다.
 
-*오른쪽* 에 지정 되는 인수 *_Pm*합니다.
+*right*<br/>
+에 지정 되는 인수 *_Pm*합니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -58,7 +61,7 @@ class mem_fun1_t : public binary_function<Type *, Arg, Result> {
 
 복사본을 저장 하는 템플릿 클래스 *_Pm*, 클래스의 멤버 함수에 대 한 포인터 여야 `Type`, 전용 멤버 개체에 있습니다. 또한 해당 멤버 함수 `operator()`를 ( **_Pleft**->\* `_Pm`)( **right**)를 반환하는 것으로 정의합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 `mem_fun1_t`의 생성자는 일반적으로 직접 사용되지 않습니다. 도우미 함수 `mem_fun`은 멤버 함수를 적용하는 데 사용됩니다. 멤버 함수 어댑터를 사용하는 방법에 대한 예제는 [mem_fun](../standard-library/functional-functions.md#mem_fun)을 참조하세요.
 

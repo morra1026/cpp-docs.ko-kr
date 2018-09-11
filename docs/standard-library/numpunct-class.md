@@ -40,12 +40,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ae2acae1664656883f4f2eba85c57c8e7725b26
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 81a176bd911203d04797f3437539730042b8dbae
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965567"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108982"
 ---
 # <a name="numpunct-class"></a>numpunct 클래스
 
@@ -60,7 +60,8 @@ class numpunct : public locale::facet;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType* 로캘의 문자를 인코딩하기 위해 프로그램 내에서 사용 되는 형식입니다.
+*CharType*<br/>
+로캘의 문자를 인코딩하기 위해 프로그램 내 사용하는 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -128,7 +129,7 @@ CharType decimal_point() const;
 
 구성원 함수는 [do_decimal_point](#do_decimal_point)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // numpunct_decimal_point.cpp
@@ -167,7 +168,7 @@ virtual CharType do_decimal_point() const;
 
 소수점으로 사용할 로캘별 요소입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `decimal_point`에 의해 가상 구성원 함수가 호출되는 [decimal_point](#decimal_point)의 예제를 참조하세요.
 
@@ -187,7 +188,7 @@ virtual string_type do_falsename() const;
 
 구성원 함수는 모든 로캘에서 **false** 값을 나타내기 위해 "false" 문자열을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `falsename`에 의해 가상 구성원 함수가 호출되는 [falsename](#falsename)의 예제를 참조하세요.
 
@@ -207,7 +208,7 @@ virtual string do_grouping() const;
 
 보호된 가상 멤버 함수가 소수점 자리 왼쪽의 숫자를 그룹화하는 방법을 결정하는 로캘별 규칙을 반환합니다. 인코딩이 **lconv::grouping**과 동일합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 예를 참조 하세요 [그룹화](#grouping)에 의해 가상 구성원 함수가 호출 되는, `grouping`합니다.
 
@@ -227,7 +228,7 @@ virtual CharType do_thousands_sep() const;
 
 보호 된 가상 구성원 함수가 반환 형식의 로캘별 요소를 `CharType` 소수점의 왼쪽에 그룹 구분 기호로 사용 하도록 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `thousands_sep`에 의해 가상 구성원 함수가 호출되는 [thousands_sep](#thousands_sep)의 예제를 참조하세요.
 
@@ -245,7 +246,7 @@ virtual string_type do_truename() const;
 
 모든 로캘은 **true** 값을 나타내기 위한 문자열 "true"를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `truename`에 의해 가상 구성원 함수가 호출되는 [truename](#truename)의 예제를 참조하세요.
 
@@ -267,7 +268,7 @@ string_type falsename() const;
 
 구성원 함수는 [do_falsename](#do_falsename)을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // numpunct_falsename.cpp
@@ -314,7 +315,7 @@ string grouping() const;
 
 구성원 함수는 [do_grouping](#do_grouping)을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // numpunct_grouping.cpp
@@ -341,7 +342,7 @@ int main( )
 
 ```Output
 German_Germany.1252 international grouping:
- the 0th group to the left of the radix character is of size 3
+the 0th group to the left of the radix character is of size 3
 ```
 
 ## <a name="numpunct"></a>  numpunct::numpunct
@@ -354,7 +355,8 @@ explicit numpunct(size_t _Refs = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Refs* 개체에 대 한 메모리 관리의 유형을 지정 하는 데 사용 하는 정수 값입니다.
+*_Refs*<br/>
+개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -398,7 +400,7 @@ CharType thousands_sep() const;
 
 구성원 함수는 [do_thousands_sep](#do_thousands_sep)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // numpunct_thou_sep.cpp
@@ -443,7 +445,7 @@ string_type falsename() const;
 
 모든 로캘은 **true** 값을 나타내기 위한 문자열 "true"를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // numpunct_truename.cpp

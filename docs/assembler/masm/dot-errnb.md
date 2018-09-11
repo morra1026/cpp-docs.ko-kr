@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1954cbe81a928222a1639dfa498e67a59df2bc0
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 19ed43346a49025c43afbc4b0fd51f7a2f33b6c2
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686210"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313301"
 ---
 # <a name="errnb"></a>.ERRNB
 
@@ -29,7 +29,7 @@ ms.locfileid: "43686210"
 
 ## <a name="syntax"></a>구문
 
-> . ERRNB <textitem> [[, 메시지]]
+> . ERRNB *textitem* [[합니다 *메시지*]]
 
 ## <a name="see-also"></a>참고자료
 

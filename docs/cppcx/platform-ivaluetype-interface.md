@@ -13,21 +13,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2f1e83c285274326be2501a8f9b006c8df05204
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: fcf251a67e787f9cf935c9482d444031db96b879
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751529"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104214"
 ---
 # <a name="platformivaluetype-interface"></a>Platform::IValueType 인터페이스
-`Platform::IValueType` 은 값 클래스 및 값 구조체로 구현되는 인프라 인터페이스입니다. 코드에서 명시적으로 사용되지 않아야 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-interface class IValueType  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)
+
+`Platform::IValueType` 은 값 클래스 및 값 구조체로 구현되는 인프라 인터페이스입니다. 코드에서 명시적으로 사용되지 않아야 합니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+interface class IValueType
+```
+
+## <a name="see-also"></a>참고 항목
+
+[Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)

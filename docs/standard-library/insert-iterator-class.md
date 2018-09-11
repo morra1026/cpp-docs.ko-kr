@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2cc04a711e211c7dcc5f3491edc8b4646f73dbb
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 6011bd8f413a2e0a849e2ef9ba7c5bc229913c41
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960007"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318839"
 ---
 # <a name="insertiterator-class"></a>insert_iterator 클래스
 
@@ -40,7 +40,8 @@ class insert_iterator;
 
 ### <a name="parameters"></a>매개 변수
 
-`Container` 컨테이너에 요소를 삽입할 유형의 `insert_iterator`합니다.
+*컨테이너*<br/>
+`insert_iterator`가 요소를 삽입할 컨테이너의 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -85,7 +86,7 @@ typedef Container container_type;
 
 이 형식은 템플릿 매개 변수 *Container*의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // insert_iterator_container_type.cpp
@@ -110,9 +111,9 @@ int main( )
       cout << *vIter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The list L2 is: ( 40 20 10 ).
-*\
+*/
 ```
 
 ## <a name="insert_iterator"></a>  insert_iterator::insert_iterator
@@ -125,15 +126,17 @@ insert_iterator(Container& _Cont, typename Container::iterator _It);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Cont* 대상 컨테이너를 `insert_iterator` 요소를 삽입 하는 것입니다.
+*_Cont*<br/>
+`insert_iterator`에서 요소를 삽입할 대상 컨테이너입니다.
 
-*_It* 를 삽입할 위치입니다.
+*_It*<br/>
+삽입할 위치입니다.
 
 ### <a name="remarks"></a>설명
 
 모든 컨테이너에는 `insert_iterator`에서 호출하는 삽입 멤버 함수가 있습니다. 연관 컨테이너의 경우 위치 매개 변수는 단순히 제안입니다. inserter 함수는 값에 삽입하는 편리한 방법을 제공합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // insert_iterator_insert_iterator.cpp
@@ -164,19 +167,19 @@ int main( )
 
    // Alternatively, you may use the template version
    insert_iterator< list < int> > Iter(L, L.end ( ) );
- *Iter = 300;
+*Iter = 300;
 
    cout << "After the insertions, the list L is:\n ( ";
    for ( L_Iter = L.begin( ) ; L_Iter != L.end( ); L_Iter++ )
       cout << *L_Iter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The list L is:
- ( 10 20 30 ).
+( 10 20 30 ).
 After the insertions, the list L is:
- ( 2 10 20 30 300 ).
-*\
+( 2 10 20 30 300 ).
+*/
 ```
 
 ## <a name="op_star"></a>  insert_iterator::operator*
@@ -195,7 +198,7 @@ insert_iterator<Container>& operator*();
 
 출력 반복기 식 **\*Iter** = **value**를 구현하는 데 사용됩니다. 하는 경우 `Iter` 가 다음 시퀀스에서 요소를 해결 하는 반복기  **\*Iter** = **값** 값을 사용 하 여 해당 요소를 대체 하 고 총 변경 되지 않습니다 시퀀스의 요소입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // insert_iterator_op_deref.cpp
@@ -222,21 +225,21 @@ int main( )
    cout << ")." << endl;
 
    insert_iterator< list < int> > Iter(L, L.begin ( ) );
- *Iter = 10;
- *Iter = 20;
- *Iter = 30;
+*Iter = 10;
+*Iter = 20;
+*Iter = 30;
 
    cout << "After the insertions, the list L is:\n ( ";
    for ( L_Iter = L.begin( ) ; L_Iter != L.end( ); L_Iter++ )
       cout << *L_Iter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The original list L is:
- ( 0 2 4 6 ).
+( 0 2 4 6 ).
 After the insertions, the list L is:
- ( 10 20 30 0 2 4 6 ).
-*\
+( 10 20 30 0 2 4 6 ).
+*/
 ```
 
 ## <a name="op_add_add"></a>  insert_iterator::operator++
@@ -257,7 +260,7 @@ insert_iterator<Container> operator++(int);
 
 preincrementation과 postincrementation 연산자는 둘 다 동일한 결과를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // insert_iterator_op_incr.cpp
@@ -284,23 +287,23 @@ int main( )
    cout << ")." << endl;
 
    insert_iterator<vector<int> > ii ( vec, vec.begin ( ) );
- *ii = 30;
+*ii = 30;
    ii++;
- *ii = 40;
+*ii = 40;
    ii++;
- *ii = 50;
+*ii = 50;
 
    cout << "After the insertions, the vector vec becomes:\n ( ";
    for ( vIter = vec.begin ( ) ; vIter != vec.end ( ); vIter++ )
       cout << *vIter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The vector vec is:
- ( 1 2 3 4 ).
+( 1 2 3 4 ).
 After the insertions, the vector vec becomes:
- ( 30 40 50 1 2 3 4 ).
-*\
+( 30 40 50 1 2 3 4 ).
+*/
 ```
 
 ## <a name="op_eq"></a>  insert_iterator::operator=
@@ -317,7 +320,8 @@ insert_iterator<Container>& operator=(
 
 ### <a name="parameters"></a>매개 변수
 
-*val* 컨테이너에 할당할 값입니다.
+*val*<br/>
+컨테이너에 할당할 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -341,7 +345,7 @@ insert_iterator<Container>& operator=(
 
 그런 다음 `*this`를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // insert_iterator_op_assign.cpp
@@ -368,21 +372,21 @@ int main( )
    cout << ")." << endl;
 
    insert_iterator< list < int> > Iter(L, L.begin ( ) );
- *Iter = 10;
- *Iter = 20;
- *Iter = 30;
+*Iter = 10;
+*Iter = 20;
+*Iter = 30;
 
    cout << "After the insertions, the list L is:\n ( ";
    for ( L_Iter = L.begin( ) ; L_Iter != L.end( ); L_Iter++ )
       cout << *L_Iter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The original list L is:
- ( 0 2 4 6 ).
+( 0 2 4 6 ).
 After the insertions, the list L is:
- ( 10 20 30 0 2 4 6 ).
-*\
+( 10 20 30 0 2 4 6 ).
+*/
 ```
 
 ## <a name="reference"></a>  insert_iterator::reference
@@ -397,7 +401,7 @@ typedef typename Container::reference reference;
 
 이 형식은 연관 컨테이너에서 제어하는 시퀀스의 요소에 대한 참조를 제공합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // insert_iterator_container_reference.cpp
@@ -412,9 +416,9 @@ int main( )
 
    list<int> L;
    insert_iterator<list<int> > iivIter( L , L.begin ( ) );
- *iivIter = 10;
- *iivIter = 20;
- *iivIter = 30;
+*iivIter = 10;
+*iivIter = 20;
+*iivIter = 30;
 
    list<int>::iterator LIter;
    cout << "The list L is: ( ";
@@ -427,10 +431,10 @@ int main( )
    cout << "The first element in the list L is: "
         << RefFirst << "." << endl;
 }
-\* Output:
+/* Output:
 The list L is: ( 10 20 30 ).
 The first element in the list L is: 10.
-*\
+*/
 ```
 
 ## <a name="see-also"></a>참고자료

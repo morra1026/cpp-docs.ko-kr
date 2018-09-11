@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6484d70488da834d0acea79cbe9b02968e0e2a35
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: d979cab4dc25898b772c434f5a50682573ce4016
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957287"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44099540"
 ---
 # <a name="istrstream-class"></a>istrstream 클래스
 
@@ -82,9 +82,11 @@ istrstream(
 
 ### <a name="parameters"></a>매개 변수
 
-*개수* 버퍼의 길이 (*ptr*).
+*count*<br/>
+버퍼의 길이 (*ptr*).
 
-*ptr* 버퍼가 초기화 되는 내용입니다.
+*ptr*<br/>
+버퍼가 초기화되는 콘텐츠입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -106,7 +108,7 @@ strstreambuf *rdbuf() const
 
 멤버 함수는 pointer 형식의 저장된 스트림 버퍼 주소를 [strstreambuf](../standard-library/strstreambuf-class.md)에 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `rdbuf`를 사용하는 샘플은 [strstreambuf::pcount](../standard-library/strstreambuf-class.md#pcount)를 참조하세요.
 
@@ -126,7 +128,7 @@ char *str();
 
 구성원 함수는 [rdbuf](#rdbuf) -> [str](../standard-library/strstreambuf-class.md#str)을 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 참조 [strstream:: str](../standard-library/strstreambuf-class.md#str) 사용 하는 샘플에 대 한 `str`합니다.
 

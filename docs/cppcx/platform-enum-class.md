@@ -15,36 +15,41 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3d4f893099c129f82cfa08650c6f1f3fbbb2c46
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 0568fba448d6f6976df466c46569e5059fb11ddf
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764581"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105228"
 ---
 # <a name="platformenum-class"></a>Platform::Enum 클래스
-명명된 상수 집합을 나타내는 값 클래스입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-public class Enum  
-```  
-  
-### <a name="members"></a>멤버  
- Enum 클래스는 [Platform::Object Class](../cppcx/platform-object-class.md)의 Equals(), GetHashCode() 및 ToString() 메서드를 상속합니다.  
-  
-### <a name="remarks"></a>설명  
- [public enum 클래스](../windows/enum-class-cpp-component-extensions.md) 키워드를 사용하여 열거형을 만듭니다. Platform::Enum 형식을 명시적으로 사용하지 마세요. 자세한 내용은 [열거형](../cppcx/enums-c-cx.md)에 정의된 인터페이스의 private C++ 관련 구현입니다.  
-  
-### <a name="requirements"></a>요구 사항  
- **지원 되는 최소 클라이언트:** Windows 8  
-  
- **지원 되는 최소 서버:** Windows Server 2012  
-  
- **네임스페이스:** Platform  
-  
- **메타데이터:** platform.winmd  
-  
-## <a name="see-also"></a>참고 항목  
- [Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)
+
+명명된 상수 집합을 나타내는 값 클래스입니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+public class Enum
+```
+
+### <a name="members"></a>멤버
+
+Enum 클래스는 [Platform::Object Class](../cppcx/platform-object-class.md)의 Equals(), GetHashCode() 및 ToString() 메서드를 상속합니다.
+
+### <a name="remarks"></a>설명
+
+[public enum 클래스](../windows/enum-class-cpp-component-extensions.md) 키워드를 사용하여 열거형을 만듭니다. Platform::Enum 형식을 명시적으로 사용하지 마세요. 자세한 내용은 [열거형](../cppcx/enums-c-cx.md)에 정의된 인터페이스의 private C++ 관련 구현입니다.
+
+### <a name="requirements"></a>요구 사항
+
+**지원 되는 최소 클라이언트:** Windows 8
+
+**지원 되는 최소 서버:** Windows Server 2012
+
+**네임스페이스:** Platform
+
+**메타데이터:** platform.winmd
+
+## <a name="see-also"></a>참고 항목
+
+[Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)

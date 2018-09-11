@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b385d822c2f58d26938b3300207a790dc1193060
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 95ac984ad164c242dcd470ed4d31f3921fa7ec56
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953051"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103268"
 ---
 # <a name="resultof-class"></a>result_of 클래스
 
@@ -48,9 +48,11 @@ template<class T>
 
 ### <a name="parameters"></a>매개 변수
 
-*Fn* 쿼리할 호출 가능 형식입니다.
+*fn*<br/>
+쿼리할 호출 가능 형식입니다.
 
-*ArgTypes* 쿼리할 호출 가능 형식 인수 목록의 형식입니다.
+*ArgTypes*<br/>
+쿼리할 호출 가능 형식에 대한 인수 목록의 형식입니다.
 
 ## <a name="remarks"></a>설명
 

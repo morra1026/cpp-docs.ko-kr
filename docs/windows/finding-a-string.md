@@ -1,5 +1,5 @@
 ---
-title: 문자열 찾기 | Microsoft Docs
+title: 문자열 리소스 (c + +) 찾기 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,14 +18,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3e04caa4aa927bd24bc1a5cd86f5d390e1c376b7
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 1e331401a3a2a789b13bc21b76c9b1cbfcb30e33
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197537"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318502"
 ---
-# <a name="finding-a-string"></a>문자열 찾기
+# <a name="finding-a-string-resource-c"></a>문자열 리소스 (c + +) 찾기
 
 문자열 테이블에 하나 이상의 문자열을 검색 하 고 사용할 수 있습니다 [정규식](/visualstudio/ide/using-regular-expressions-in-visual-studio) 사용 하 여 합니다 **파일에서 찾기** 명령 (**편집** 메뉴) 문자열의 모든 인스턴스를 찾을 수 패턴을 일치 하는 합니다.
 

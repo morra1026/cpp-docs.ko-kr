@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58599777f3e680b7ea124d9e9dfa427fd55b4051
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: e43c47d5f5c3da22a5a0e0df11022d3b667149bd
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956936"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313899"
 ---
 # <a name="negate-struct"></a>negate 구조체
 
@@ -44,20 +44,22 @@ struct negate<void>
   template <class Type>
   auto operator()(Type&& Left) const`
     -> decltype(-std::forward<Type>(Left));
- };
+};
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*형식* 지 원하는 모든 형식은 `operator-` 지정 되었거나 유추 된 형식의 피연산자를 사용 하는 합니다.
+*Type*<br/>
+지정되었거나 유추된 형식의 피연산자를 사용하는 `operator-`를 지원하는 모든 형식입니다.
 
-*왼쪽* 부정할 피연산자입니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *형식*합니다.
+*왼쪽*<br/>
+부정할 피연산자입니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *형식*합니다.
 
 ## <a name="return-value"></a>반환 값
 
 `-Left.`의 결과. 특수화된 템플릿은 단항 `operator-`에 의해 반환되는 형식을 가지고 있는 결과를 완벽하게 전달합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // functional_negate.cpp
@@ -93,10 +95,10 @@ int main( )
       cout << *Iter2 << " ";
    cout << ")" << endl;
 }
-\* Output:
+/* Output:
 The vector v1 = ( -10 -5 0 5 10 15 20 25 )
 The negated elements of the vector = ( 10 5 0 -5 -10 -15 -20 -25 )
-*\
+*/
 ```
 
 ## <a name="requirements"></a>요구 사항

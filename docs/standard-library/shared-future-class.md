@@ -28,12 +28,12 @@ helpviewer_keywords:
 - std::shared_future [C++], wait_until
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f27162b1dfc96b4797184b3fefc1ad8ecc464f55
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: c3f59bcb792d17f031b7a8ce7363158630d87506
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954996"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100782"
 ---
 # <a name="sharedfuture-class"></a>shared_future 클래스
 
@@ -115,7 +115,8 @@ shared_future& operator=(const shared_future& Right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 는 `shared_future` 개체입니다.
+*오른쪽*<br/>
+`shared_future` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -140,7 +141,8 @@ shared_future(const shared_future& Right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* A [향후](../standard-library/future-class.md) 또는 `shared_future` 개체입니다.
+*오른쪽*<br/>
+[future](../standard-library/future-class.md) 또는 `shared_future` 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -186,7 +188,8 @@ future_status wait_for(
 
 ### <a name="parameters"></a>매개 변수
 
-*Rel_time* A [chrono::](../standard-library/duration-class.md) 최대 시간 간격을 지정 하는 개체는 해당 스레드는 차단 합니다.
+*Rel_time*<br/>
+스레드가 차단되는 최대 시간 간격을 지정하는 [chrono::duration](../standard-library/duration-class.md) 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -208,7 +211,8 @@ future_status wait_until(
 
 ### <a name="parameters"></a>매개 변수
 
-*Abs_time* A [chrono:: time_point](../standard-library/time-point-class.md) 지나면 스레드가 차단 해제할 수 시간을 지정 하는 개체입니다.
+*Abs_time*<br/>
+스레드 차단을 해제할 수 있는 시간을 지정하는 [chrono::time_point](../standard-library/time-point-class.md) 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 

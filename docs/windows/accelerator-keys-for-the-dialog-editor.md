@@ -1,5 +1,5 @@
 ---
-title: 액셀러레이터 키 대화 상자 편집기에 대 한 | Microsoft Docs
+title: 액셀러레이터 키 대화 상자 편집기 (c + +)에 대 한 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,21 +10,21 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- Dialog editor, shortcut keys
+- Dialog Editor [C++], shortcut keys
 ms.assetid: 940270e9-a974-425b-a681-dfeaba0adf66
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c5abfe45cc2f6e73dfe3c7bd8d38a0c783a15e05
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 6314d4333254957ea2d8116786128843dafef64a
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43685634"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313574"
 ---
-# <a name="accelerator-keys-for-the-dialog-editor"></a>대화 상자 편집기의 액셀러레이터 키
+# <a name="accelerator-keys-for-the-dialog-editor-c"></a>편집기의 액셀러레이터 키의 대화 상자 (c + +)
 
 다음은 기본 액셀러레이터 키 대화 상자 편집기 명령에 대 한 합니다. 바로 가기 키를 변경 하려면 클릭 **옵션** 에 **도구** 메뉴에서 선택한 **키보드** 아래를 **환경** 폴더입니다. 자세한 내용은 [바로 가기 키 식별 및 사용자 지정](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)을 참조하세요.
 

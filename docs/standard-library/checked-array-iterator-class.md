@@ -23,12 +23,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7091ba3c7f4d40a2b16c48afadfd5068bcd794bb
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: b7c8f9e29cc71cd12c04d4135e4f02d273ab4725
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961742"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44319034"
 ---
 # <a name="checkedarrayiterator-class"></a>checked_array_iterator 클래스
 
@@ -50,7 +50,7 @@ class checked_array_iterator;
 
 확인된 반복기 기능에 대한 자세한 내용 및 예제 코드는 [확인된 반복기](../standard-library/checked-iterators.md)를 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 샘플은 확인된 배열 반복기를 정의 및 사용하는 방법을 보여 줍니다.
 
@@ -95,13 +95,13 @@ int main() {
       cout << " " << b[i];
    cout << " )" << endl;
 }
-\* Output:
+/* Output:
 ( 0 1 2 3 4 )
 ( 0 1 2 3 4 )
-*\
+*/
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 C++ 표준 라이브러리 알고리즘을 사용할 경우 `checked_array_iterator` 클래스를 사용할 필요가 없도록 하려면 동적으로 할당된 배열 대신 `vector`를 사용해 보세요. 다음 예제에서는 이 작업을 수행하는 방법을 보여 줍니다.
 
@@ -144,9 +144,9 @@ int main()
 
     return 0;
 }
-\* Output:
- 0 1 2 3 4 5 6 7 8 9
-*\
+/* Output:
+0 1 2 3 4 5 6 7 8 9
+*/
 ```
 
 ### <a name="constructors"></a>생성자
@@ -207,7 +207,7 @@ _Iterator base() const;
 
 자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // checked_array_iterators_base.cpp
@@ -233,9 +233,9 @@ int main() {
    cout << "The iterator underlying rpos is bpos & it points to: "
         << *bpos << "." << endl;
 }
-\* Output:
+/* Output:
 The iterator underlying rpos is bpos & it points to: 1.
-*\
+*/
 ```
 
 ## <a name="checked_array_iterator"></a>  checked_array_iterator::checked_array_iterator
@@ -253,17 +253,20 @@ checked_array_iterator(
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr* 배열에 대 한 포인터입니다.
+*ptr*<br/>
+배열에 대한 포인터입니다.
 
-*크기* 배열의 크기입니다.
+*size*<br/>
+배열의 크기입니다.
 
-*인덱스* (선택 사항) 배열의 요소에 반복기를 초기화 합니다.  기본적으로 반복기는 배열의 첫 번째 요소로 초기화됩니다.
+*index*<br/>
+(선택 사항) 반복기를 초기화하는 배열의 요소입니다.  기본적으로 반복기는 배열의 첫 번째 요소로 초기화됩니다.
 
 ### <a name="remarks"></a>설명
 
 자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // checked_array_iterators_ctor.cpp
@@ -292,11 +295,11 @@ int main() {
    checked_array_iterator<int*> checked_output_iterator2(b,5,3);
    cout << *checked_output_iterator2 << endl;
 }
-\* Output:
+/* Output:
 0 1 2 3 4
 0 1 2 3 4
 3
-*\
+*/
 ```
 
 ## <a name="difference_type"></a>  checked_array_iterator::difference_type
@@ -325,13 +328,14 @@ bool operator==(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 는 `checked_array_iterator` 같은지 확인할입니다.
+*right*<br/>
+같은지 확인할 `checked_array_iterator`입니다.
 
 ### <a name="remarks"></a>설명
 
 자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // checked_array_iterators_opeq.cpp
@@ -364,10 +368,10 @@ int main() {
    else
       cout << "checked_array_iterators are not equal" << endl;
 }
-\* Output:
+/* Output:
 checked_array_iterators are equal
 checked_array_iterators are not equal
-*\
+*/
 ```
 
 ## <a name="op_neq"></a>  checked_array_iterator::operator!=
@@ -380,13 +384,14 @@ bool operator!=(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 는 `checked_array_iterator` 같지 않은지 확인할입니다.
+*right*<br/>
+같지 않은지 확인할 `checked_array_iterator`입니다.
 
 ### <a name="remarks"></a>설명
 
 자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // checked_array_iterators_opneq.cpp
@@ -419,10 +424,10 @@ int main() {
    else
       cout << "checked_array_iterators are equal" << endl;
 }
-\* Output:
+/* Output:
 checked_array_iterators are equal
 checked_array_iterators are not equal
-*\
+*/
 ```
 
 ## <a name="op_lt"></a>  checked_array_iterator::operator&lt;
@@ -435,13 +440,14 @@ bool operator<(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 는 `checked_array_iterator` 같지 않은지 확인할입니다.
+*right*<br/>
+같지 않은지 확인할 `checked_array_iterator`입니다.
 
 ### <a name="remarks"></a>설명
 
 자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // checked_array_iterators_oplt.cpp
@@ -474,10 +480,10 @@ int main() {
    else
       cout << "checked_output_iterator2 is not less than checked_output_iterator" << endl;
 }
-\* Output:
+/* Output:
 checked_output_iterator2 is not less than checked_output_iterator
 checked_output_iterator2 is less than checked_output_iterator
-*\
+*/
 ```
 
 ## <a name="op_gt"></a>  checked_array_iterator::operator&gt;
@@ -490,7 +496,8 @@ bool operator>(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 는 `checked_array_iterator` 비교할 합니다.
+*right*<br/>
+비교할 대상인 `checked_array_iterator`입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -508,7 +515,8 @@ bool operator<=(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 는 `checked_array_iterator` 비교할 합니다.
+*right*<br/>
+비교할 대상인 `checked_array_iterator`입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -526,13 +534,14 @@ bool operator>=(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 는 `checked_array_iterator` 비교할 합니다.
+*right*<br/>
+비교할 대상인 `checked_array_iterator`입니다.
 
 ### <a name="remarks"></a>설명
 
 자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // checked_array_iterators_opgteq.cpp
@@ -565,10 +574,10 @@ int main() {
    else
       cout << "checked_output_iterator2 is less than checked_output_iterator" << endl;
 }
-\* Output:
+/* Output:
 checked_output_iterator2 is greater than or equal to checked_output_iterator
 checked_output_iterator2 is less than checked_output_iterator
-*\
+*/
 ```
 
 ## <a name="op_star"></a>  checked_array_iterator::operator*
@@ -587,7 +596,7 @@ reference operator*() const;
 
 자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // checked_array_iterator_pointer.cpp
@@ -621,7 +630,7 @@ int main() {
    cout << "b[0] = " << *p << endl;
    cout << "c[0].first = " << p_c->first << endl;
 }
-\* Output:
+/* Output:
 0
 1
 2
@@ -629,7 +638,7 @@ int main() {
 4
 b[0] = 0
 c[0].first = 10
-*\
+*/
 ```
 
 ## <a name="op_arrow"></a>  checked_array_iterator::operator-&gt;
@@ -668,7 +677,7 @@ checked_array_iterator<_Iterator> operator++(int);
 
 자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // checked_array_iterators_op_plus_plus.cpp
@@ -691,11 +700,11 @@ int main() {
    checked_output_iterator++;
    cout << *checked_output_iterator << endl;
 }
-\* Output:
+/* Output:
 6
 3
 77
-*\
+*/
 ```
 
 ## <a name="checked_array_iterator__operator--"></a>  checked_array_iterator::operator--
@@ -716,7 +725,7 @@ checked_array_iterator<_Iterator> operator--(int);
 
 자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // checked_array_iterators_op_minus_minus.cpp
@@ -739,11 +748,11 @@ int main() {
    checked_output_iterator--;
    cout << *checked_output_iterator << endl;
 }
-\* Output:
+/* Output:
 6
 3
 6
-*\
+*/
 ```
 
 ## <a name="op_add_eq"></a>  checked_array_iterator::operator+=
@@ -756,7 +765,8 @@ checked_array_iterator<_Iterator>& operator+=(difference_type _Off);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off* 반복기를 증가 시킬 오프셋입니다.
+*_Off*<br/>
+반복기를 증가시킬 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -766,7 +776,7 @@ checked_array_iterator<_Iterator>& operator+=(difference_type _Off);
 
 자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // checked_array_iterators_op_plus_eq.cpp
@@ -787,10 +797,10 @@ int main() {
    checked_output_iterator += 3;
    cout << *checked_output_iterator << endl;
 }
-\* Output:
+/* Output:
 6
 199
-*\
+*/
 ```
 
 ## <a name="op_add"></a>  checked_array_iterator::operator+
@@ -803,7 +813,8 @@ checked_array_iterator<_Iterator> operator+(difference_type _Off) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off* 에 추가할 오프셋을 `checked_array_iterator`입니다.
+*_Off*<br/>
+`checked_array_iterator`에 추가할 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -813,7 +824,7 @@ checked_array_iterator<_Iterator> operator+(difference_type _Off) const;
 
 자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // checked_array_iterators_op_plus.cpp
@@ -834,10 +845,10 @@ int main() {
    checked_output_iterator = checked_output_iterator + 3;
    cout << *checked_output_iterator << endl;
 }
-\* Output:
+/* Output:
 6
 199
-*\
+*/
 ```
 
 ## <a name="checked_array_iterator__operator-_eq"></a>  checked_array_iterator::operator-=
@@ -850,7 +861,8 @@ checked_array_iterator<_Iterator>& operator-=(difference_type _Off);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off* 반복기를 증가 시킬 오프셋입니다.
+*_Off*<br/>
+반복기를 증가시킬 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -860,7 +872,7 @@ checked_array_iterator<_Iterator>& operator-=(difference_type _Off);
 
 자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // checked_array_iterators_op_minus_eq.cpp
@@ -882,10 +894,10 @@ int main() {
    checked_output_iterator -= 2;
    cout << *checked_output_iterator << endl;
 }
-\* Output:
+/* Output:
 199
 3
-*\
+*/
 ```
 
 ## <a name="checked_array_iterator__operator-"></a>  checked_array_iterator::operator-
@@ -900,7 +912,8 @@ difference_type operator-(const checked_array_iterator& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off* 에서 감소 될 오프셋을 `checked_array_iterator`입니다.
+*_Off*<br/>
+`checked_array_iterator`에서 감소될 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -922,7 +935,8 @@ reference operator[](difference_type _Off) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off* 오프셋을 `checked_array_iterator` 주소입니다.
+*_Off*<br/>
+`checked_array_iterator` 주소의 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -932,7 +946,7 @@ reference operator[](difference_type _Off) const;
 
 자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // checked_array_iterators_op_diff.cpp
@@ -956,9 +970,9 @@ int main() {
 
    cout << refrpos + 1 << endl;
 }
-\* Output:
+/* Output:
 3
-*\
+*/
 ```
 
 ## <a name="pointer"></a>  checked_array_iterator::pointer

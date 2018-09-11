@@ -108,12 +108,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b31f1562e5db85f0638dfd32ba6e2db0f6f70fea
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 86e1c74d3aa53dd64a48676e4fe9bdbc2065b9c5
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962919"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107490"
 ---
 # <a name="list-class"></a>list 클래스
 
@@ -128,9 +128,11 @@ class list
 
 ### <a name="parameters"></a>매개 변수
 
-*형식* 목록에 저장 되는 요소 데이터 형식입니다.
+*Type*<br/>
+목록에 저장되는 요소 데이터 형식입니다.
 
-*할당자* 목록의 할당 및 메모리 할당 취소 하는 방법에 대 한 세부 정보를 캡슐화 하는 저장 된 할당자 개체를 나타내는 형식입니다. 이 인수 선택 사항이 며 기본값은 **할당자**\<*형식*>.
+*할당자*<br/>
+목록의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수 선택 사항이 며 기본값은 **할당자**\<*형식*>.
 
 ## <a name="remarks"></a>설명
 
@@ -226,7 +228,7 @@ typedef Allocator allocator_type;
 
 `allocator_type` 템플릿 매개 변수에 대 한 동의어가 *할당자*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [get_allocator](#get_allocator)의 예제를 참조하세요.
 
@@ -250,21 +252,26 @@ void assign(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째* 인수 목록에서 복사할 요소 범위에서 첫 번째 요소의 위치입니다.
+*첫 번째*<br/>
+인수 목록에서 복사할 요소 범위에 있는 첫 번째 요소의 위치입니다.
 
-*마지막* 인수 목록에서 복사할 요소의 범위 밖에 있는 첫 번째 요소의 위치입니다.
+*마지막*<br/>
+인수 목록에서 복사할 요소의 범위 밖에 있는 첫 번째 요소의 위치입니다.
 
-*개수* 목록에 삽입 되는 요소의 복사본의 수입니다.
+*개수*<br/>
+목록에 삽입되는 요소의 복사본의 수입니다.
 
-*Val* 목록에 삽입 될 요소의 값입니다.
+*val*<br/>
+목록에 삽입되는 요소의 값입니다.
 
-*IList* 삽입할 요소를 포함 하는 initializer_list입니다.
+*IList*<br/>
+삽입할 요소를 포함하는 initializer_list입니다.
 
 ### <a name="remarks"></a>설명
 
 대상 목록에서 기존 요소를 지운 다음 원본 목록이나 일부 다른 목록에서 지정된 범위의 요소를 대상 목록에 삽입하거나, 지정한 값의 새 요소 복사본을 대상 목록에 삽입하도록 지정합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_assign.cpp
@@ -334,7 +341,7 @@ const_reference back() const;
 
 1 또는 2로 정의된 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 사용하여 컴파일한 경우 빈 목록의 요소에 액세스하려고 하면 런타임 오류가 발생합니다.  자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_back.cpp
@@ -382,7 +389,7 @@ iterator begin();
 
 하는 경우의 반환 값 `begin` 에 할당 되는 `const_iterator`, 목록 개체의 요소를 수정할 수 없습니다. 하는 경우의 반환 값 `begin` 에 할당 되는 `iterator`, 목록 개체의 요소를 수정할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_begin.cpp
@@ -479,7 +486,7 @@ auto i2 = Container.cend();
 void clear();
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_clear.cpp
@@ -518,7 +525,7 @@ typedef implementation-defined const_iterator;
 
 `const_iterator` 형식을 사용하여 요소의 값을 수정할 수는 없습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [back](#back)의 예제를 참조하세요.
 
@@ -548,7 +555,7 @@ typedef typename Allocator::const_reference const_reference;
 
 `const_reference` 형식을 사용하여 요소의 값을 수정할 수는 없습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_const_ref.cpp
@@ -592,7 +599,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 
 `const_reverse_iterator` 형식은 요소 값을 수정할 수 없으며 목록을 역방향으로 반복하는 데 사용됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [rbegin](#rbegin)에 대한 예제를 참조하세요.
 
@@ -614,7 +621,7 @@ const_reverse_iterator rbegin() const;
 
 반환 값이 `crbegin`이면 목록 개체를 수정할 수 없습니다. [list::rbegin](#rbegin)은 목록을 역방향으로 반복할 때 사용할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_crbegin.cpp
@@ -662,7 +669,7 @@ const_reverse_iterator rend() const;
 
 `crend`에서 반환한 값은 역참조되지 않아야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_crend.cpp
@@ -705,7 +712,7 @@ typedef typename Allocator::difference_type difference_type;
 
 입력 반복기 요구 사항을 충족하는 모든 반복기(set 등의 가역 컨테이너에서 지원하는 양방향 반복기 클래스 포함)에 대해 `difference_type`을 사용할 수는 있지만, 반복기 간의 빼기는 [vector 클래스](../standard-library/vector-class.md)와 같은 임의 액세스 컨테이너가 제공하는 임의 액세스 반복기를 통해서만 지원됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_diff_type.cpp
@@ -767,7 +774,7 @@ void emplace(iterator Where, Type&& val);
 
 예외가 throw되면 `list`는 변경되지 않은 상태로 유지되며 예외가 다시 throw됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_emplace.cpp
@@ -809,7 +816,7 @@ void emplace_back(Type&& val);
 
 예외가 throw되면 `list`는 변경되지 않은 상태로 유지되며 예외가 다시 throw됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_emplace_back.cpp
@@ -851,7 +858,7 @@ void emplace_front(Type&& val);
 
 예외가 throw되면 `list`는 변경되지 않은 상태로 유지되며 예외가 다시 throw됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_emplace_front.cpp
@@ -887,7 +894,7 @@ bool empty() const;
 
 목록이 비어 있으면 **true**이고 비어 있지 않으면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_empty.cpp
@@ -929,7 +936,7 @@ iterator end();
 
 `end` 반복기가 목록의 끝에 도달 했는지 여부를 테스트 하는 데 사용 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_end.cpp
@@ -952,7 +959,7 @@ int main( )
    cout << "The last integer of c1 is " << *c1_Iter << endl;
 
    c1_Iter--;
- *c1_Iter = 400;
+*c1_Iter = 400;
    cout << "The new next-to-last integer of c1 is "
         << *c1_Iter << endl;
 
@@ -983,11 +990,14 @@ iterator erase(iterator first, iterator last);
 
 ### <a name="parameters"></a>매개 변수
 
-*여기서* 목록에서 제거할 요소의 위치입니다.
+*Where*<br/>
+목록에서 제거할 요소의 위치입니다.
 
-*첫 번째* 목록에서 제거 하는 첫 번째 요소의 위치입니다.
+*first*<br/>
+목록에서 제거되는 첫 번째 요소의 위치입니다.
 
-*마지막* 목록에서 마지막 요소 바로 뒤의 위치를 제거 합니다.
+*last*<br/>
+목록에서 제거되는 마지막 요소 바로 뒤의 위치입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -999,7 +1009,7 @@ iterator erase(iterator first, iterator last);
 
 `erase`은 예외를 throw할 수 없습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_erase.cpp
@@ -1063,7 +1073,7 @@ const_reference front() const;
 
 1 또는 2로 정의된 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 사용하여 컴파일한 경우 빈 목록의 요소에 액세스하려고 하면 런타임 오류가 발생합니다.  자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)를 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_front.cpp
@@ -1107,7 +1117,7 @@ Allocator get_allocator() const;
 
 목록 클래스의 할당자는 클래스가 저장소를 관리하는 방법을 지정합니다. C++ 표준 라이브러리 컨테이너 클래스와 함께 제공되는 기본 할당자를 사용하면 대부분의 프로그래밍 요구 사항을 충족할 수 있습니다. 할당자 클래스를 직접 작성하고 사용하는 방법에 대해서는 고급 C++ 항목에서 다룹니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_get_allocator.cpp
@@ -1160,7 +1170,7 @@ void insert(iterator Where, InputIterator First, InputIterator Last);
 
 처음 두 insert 함수는 새 요소가 목록에 삽입된 위치를 가리키는 반복기를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_class_insert.cpp
@@ -1242,7 +1252,7 @@ typedef implementation-defined iterator;
 
 형식 `iterator` 요소의 값을 수정 하려면 사용할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [begin](#begin)의 예제를 참조하세요.
 
@@ -1302,7 +1312,7 @@ list(InputIterator First, InputIterator Last, const Allocator& Al);
 
 중간 다시 할당을 수행하는 생성자는 없습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_class_list.cpp
@@ -1405,7 +1415,7 @@ size_type max_size() const;
 
 목록의 최대 허용 길이입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_max_size.cpp
@@ -1437,9 +1447,11 @@ void merge(list<Type, Allocator>& right, Traits comp);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 대상 목록과 병합할 인수 목록입니다.
+*right*<br/>
+대상 목록과 병합할 인수 목록입니다.
 
-*comp* 대상 목록의 요소를 정렬 하는 데 사용 하는 비교 연산자입니다.
+*comp*<br/>
+대상 목록의 요소를 정렬하는 데 사용되는 비교 연산자입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1447,7 +1459,7 @@ void merge(list<Type, Allocator>& right, Traits comp);
 
 인수 목록과 대상 목록은 모두 결과 시퀀스 정렬의 기준으로 사용할 같은 비교 관계로 정렬되어야 합니다. 첫 번째 멤버 함수의 기본 순서는 오름차순입니다. 두 번째 멤버 함수는 사용자 지정 비교 연산 *comp* 클래스의 `Traits`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_merge.cpp
@@ -1525,7 +1537,7 @@ list& operator=(list&& right);
 
 기존 요소를 지운 후는 `list`, 연산자 복사 하거나 이동 내용의 *오른쪽* 에 `list`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_operator_as.cpp
@@ -1592,7 +1604,7 @@ void pop_back();
 
 마지막 요소는 비워 둘 수 없습니다. `pop_back`은 예외를 throw할 수 없습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_pop_back.cpp
@@ -1634,7 +1646,7 @@ void pop_front();
 
 첫 번째 요소는 비워 둘 수 없습니다. `pop_front`은 예외를 throw할 수 없습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_pop_front.cpp
@@ -1682,7 +1694,7 @@ void push_back(void push_back(Type&& val);
 
 예외가 throw되면 목록은 변경되지 않은 상태로 유지되며 예외가 다시 throw됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_push_back.cpp
@@ -1738,7 +1750,7 @@ void push_front(Type&& val);
 
 예외가 throw되면 목록은 변경되지 않은 상태로 유지되며 예외가 다시 throw됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_push_front.cpp
@@ -1796,7 +1808,7 @@ reverse_iterator rbegin();
 
 `rbegin`은 목록을 역방향으로 반복할 때 사용할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_rbegin.cpp
@@ -1834,7 +1846,7 @@ int main( )
    cout << endl;
 
    c1_rIter = c1.rbegin( );
- *c1_rIter = 40;
+*c1_rIter = 40;
    cout << "The last element in the list is now " << *c1_rIter << "." << endl;
 }
 ```
@@ -1854,7 +1866,7 @@ The last element in the list is now 40.
 typedef typename Allocator::reference reference;
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_ref.cpp
@@ -1892,13 +1904,14 @@ void remove(const Type& val);
 
 ### <a name="parameters"></a>매개 변수
 
-*val* 목록의 해당 요소가 제거 요소를 소유 하는 경우 발생 하는 값입니다.
+*val*<br/>
+요소에 값이 있는 경우 목록에서 해당 요소가 제거됩니다.
 
 ### <a name="remarks"></a>설명
 
 남은 요소의 순서에는 영향을 주지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_remove.cpp
@@ -1949,9 +1962,10 @@ void remove_if(Predicate pred)
 
 ### <a name="parameters"></a>매개 변수
 
-*pred* 요소를 충족 하는 경우 결과 목록에서 해당 요소가 삭제 되는 단항 조건자입니다.
+*pred*<br/>
+요소로 충족된 경우 목록에서 요소가 삭제되는 단항 조건자입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_remove_if.cpp
@@ -2025,7 +2039,7 @@ reverse_iterator rend();
 
 `rend`에서 반환한 값은 역참조되지 않아야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_rend.cpp
@@ -2099,9 +2113,11 @@ void resize(size_type _Newsize, Type val);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Newsize* 목록의 새 크기입니다.
+*_Newsize*<br/>
+목록의 새 크기입니다.
 
-*val* 새 크기가 클 경우 목록에 추가할 새 요소의 값을 원래 크기입니다. 값을 생략하면 새 요소에 클래스의 기본값이 할당됩니다.
+*val*<br/>
+새 크기가 원래 크기보다 클 경우 목록에 추가되는 새 요소의 값입니다. 값을 생략하면 새 요소에 클래스의 기본값이 할당됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2113,7 +2129,7 @@ void resize(size_type _Newsize, Type val);
 
 [size](#size)는 목록의 현재 크기를 반영합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_resize.cpp
@@ -2161,7 +2177,7 @@ The value of the last element is now 20
 void reverse();
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_reverse.cpp
@@ -2209,7 +2225,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 
 `reverse_iterator` 형식은 목록을 역방향으로 반복하는 데 사용됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [rbegin](#rbegin)에 대한 예제를 참조하세요.
 
@@ -2225,7 +2241,7 @@ size_type size() const;
 
 목록의 현재 길이입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_size.cpp
@@ -2262,7 +2278,7 @@ List length is now 2.
 typedef typename Allocator::size_type size_type;
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 [size](#size)의 예제를 참조하세요.
 
@@ -2279,7 +2295,8 @@ void sort(Traits comp);
 
 ### <a name="parameters"></a>매개 변수
 
-*comp* 연속 요소를 정렬 하는 데 사용 하는 비교 연산자입니다.
+*comp*<br/>
+연속된 요소를 정렬하는 데 사용되는 비교 연산자입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2287,7 +2304,7 @@ void sort(Traits comp);
 
 사용자 지정 비교 연산에 따라 요소를 정렬 하는 멤버 템플릿 함수 *comp* 클래스의 `Traits`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_sort.cpp
@@ -2350,15 +2367,20 @@ void splice(const_iterator Where, list<Type, Allocator>&& Source, const_iterator
 
 ### <a name="parameters"></a>매개 변수
 
-*여기서* 를 삽입할 대상 목록에 위치 합니다.
+*Where*<br/>
+대상 목록의 위치로, 이 위치 앞에서 삽입합니다.
 
-*원본* 대상 목록으로 삽입할 원본 목록입니다.
+*Source*<br/>
+대상 목록으로 삽입할 원본 목록입니다.
 
-*Iter* 원본 목록에서 삽입할 요소입니다.
+*Iter*<br/>
+원본 목록에서 삽입할 요소입니다.
 
-*첫 번째* 원본 목록에서 삽입할 범위에서 첫 번째 요소입니다.
+*첫 번째*<br/>
+원본 목록에서 삽입할 범위 내 첫 번째 요소입니다.
 
-*마지막* 원본 목록에서 삽입할 범위에서 마지막 요소를 벗어나는 첫째 위치입니다.
+*마지막*<br/>
+원본 목록에서 삽입할 범위 내 마지막 요소 다음의 첫 번째 위치입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2372,7 +2394,7 @@ void splice(const_iterator Where, list<Type, Allocator>&& Source, const_iterator
 
 모든 경우 스플라이스된 요소를 참조하는 반복기, 포인터 또는 참조는 유효하게 남아 있고 대상 컨테이너로 전송됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_splice.cpp
@@ -2460,11 +2482,13 @@ friend void swap(list<Type, Allocator>& left, list<Type, Allocator>& right)
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* 교환할 요소를 제공 하는 목록 또는 목록 요소를 교환할 목록입니다 *왼쪽*합니다.
+*right*<br/>
+교환할 요소를 제공 하는 목록 또는 목록 요소를 교환할 목록입니다 *왼쪽*합니다.
 
-*왼쪽* 교환할 목록에 요소가 들어 있는 목록을 *오른쪽*합니다.
+*left*<br/>
+목록의 교환할 요소가 들어 있는 목록을 *오른쪽*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_swap.cpp
@@ -2525,7 +2549,8 @@ void unique(BinaryPredicate pred);
 
 ### <a name="parameters"></a>매개 변수
 
-*pred* 연속 요소를 비교 하는 데 사용 되는 이진 조건자입니다.
+*pred*<br/>
+연속 요소를 비교하는 데 사용되는 이진 조건자입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2535,7 +2560,7 @@ void unique(BinaryPredicate pred);
 
 두 번째 멤버 함수는 조건자 함수를 충족 하는 모든 요소를 제거 *pred* 는 이전 요소와 비교 했을 때. 에 선언 된 이항 함수 개체 중 하나를 사용할 수 있습니다 합니다 \<기능 > 인수에 대 한 헤더 *pred* 하거나 직접 만들 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_unique.cpp
@@ -2596,7 +2621,7 @@ typedef typename Allocator::value_type value_type;
 
 `value_type`은 템플릿 매개 변수 *Type*의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // list_value_type.cpp
