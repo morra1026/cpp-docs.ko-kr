@@ -1,7 +1,7 @@
 ---
 title: regex_constants 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/10/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -92,14 +92,14 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f766df104df31ba2ba154c081338f7a6d1d4a05c
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 0e330cccb83ad702994b3d31d762cc0203e78de0
+ms.sourcegitcommit: 27b5712badd09a09c499d887e2e4cf2208a28603
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107528"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384997"
 ---
-# <a name="regexconstants-class"></a>regex_constants 클래스
+# <a name="regexconstants-namespace"></a>regex_constants 네임 스페이스
 
 정규식 플래그에 대한 네임스페이스입니다.
 
@@ -116,6 +116,12 @@ namespace regex_constants {
 ## <a name="remarks"></a>설명
 
 네임스페이스 `regex_constants`는 여러 플래그 형식과 관련 플래그 값을 캡슐화합니다.
+
+|||
+|-|-|
+|[error_type](#error_type)|정규식 구문 오류 보고에 대한 플래그입니다.|
+|[match_flag_type](#match_flag_type)|정규식 일치 옵션에 대한 플래그입니다.|
+|[syntax_option_type](#syntax_option_type)|구문 옵션을 선택하기 위한 플래그입니다.|
 
 ## <a name="requirements"></a>요구 사항
 

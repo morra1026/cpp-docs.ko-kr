@@ -14,16 +14,16 @@ helpviewer_keywords:
 - Spectre
 - CVE-2017-5753
 - Speculative Execution
-author: mamillmsft
+author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 378c6fe9a86cc44d80252f69367cf8c70234f469
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0800812e39d4d5240b87b24961585610814cd367
+ms.sourcegitcommit: 27b5712badd09a09c499d887e2e4cf2208a28603
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613248"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384958"
 ---
 # <a name="c-developer-guidance-for-speculative-execution-side-channels"></a>투기적 실행 쪽 채널에 대 한 c + + 개발자 지침
 
@@ -31,7 +31,7 @@ ms.locfileid: "42613248"
 
 이 문서에서 제공 하는 지침으로 표시 하는 취약성의 클래스는 관련이 있습니다.
 
-1. CVE-2017-5753, Spectre variant 1 라고도 합니다. 이 하드웨어 취약점으로 인 한 클래스는 조건부 분기 오측의 결과로 발생 하는 투기적 실행으로 인해 발생할 수 있는 쪽 채널 관련이 있습니다. Visual Studio 2017 (버전 15.5.5부터 시작)에서 Visual c + + 컴파일러에 대 한 지원을 포함 합니다 `/Qspectre` CVE 2017-5753에 관련 된 잠재적으로 취약 한 코딩 패턴의 제한 된 집합에 대 한 컴파일 시간 완화 조치를 제공 하는 스위치입니다. 에 대 한 설명서는 [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) 플래그 효과 및 사용에 자세한 정보를 제공 합니다. 
+1. CVE-2017-5753, Spectre variant 1 라고도 합니다. 이 하드웨어 취약점으로 인 한 클래스는 조건부 분기 오측의 결과로 발생 하는 투기적 실행으로 인해 발생할 수 있는 쪽 채널 관련이 있습니다. Visual Studio 2017 (버전 15.5.5부터 시작)에서 Visual c + + 컴파일러에 대 한 지원을 포함 합니다 `/Qspectre` CVE 2017-5753에 관련 된 잠재적으로 취약 한 코딩 패턴의 제한 된 집합에 대 한 컴파일 시간 완화 조치를 제공 하는 스위치입니다. 합니다 `/Qspectre` 스위치를 통해 Visual Studio 2015 업데이트 3에서 사용할 수 있는 이기도 [KB 4338871](https://support.microsoft.com/help/4338871)합니다. 에 대 한 설명서는 [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) 플래그 효과 및 사용에 자세한 정보를 제공 합니다. 
 
 2. CVE-2018-3639, 라고도 [잘못 된 저장소 사용 안 함 (SSB)](https://aka.ms/sescsrdssb)합니다. 이 하드웨어 취약점으로 인 한 클래스는 메모리 액세스 오측 결과로 종속 저장소를 미리 로드의 투기적 실행으로 인해 발생할 수 있는 쪽 채널 관련이 있습니다.
 
