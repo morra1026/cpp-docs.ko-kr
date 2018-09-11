@@ -1,5 +1,5 @@
 ---
-title: 그래픽 리소스 편집 (아이콘에 대 한 이미지 편집기) | Microsoft Docs
+title: 그래픽 리소스 편집 (아이콘에 대 한 c + + 이미지 편집기) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -22,14 +22,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d66345685dbb6780b0ecf11d91d699c8b6866c47
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: c46f8391f39d65c84860f8c0ca62f69288d834c8
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608863"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44312638"
 ---
-# <a name="editing-graphical-resources-image-editor-for-icons"></a>그래픽 리소스 편집(아이콘에 대한 이미지 편집기)
+# <a name="editing-graphical-resources-c-image-editor-for-icons"></a>그래픽 리소스 편집 (아이콘에 대 한 c + + 이미지 편집기)
 
 그래픽 리소스는 응용 프로그램에 대해 정의 하는 이미지입니다. 자유롭게 그릴 수도 있고 셰이프를 사용 하 여 그릴 수 있습니다. 편집, 대칭 이동 또는 크기 조정에 대 한 이미지의 일부를 선택할 수 있고 이미지의 선택한 부분에서 사용자 지정 브러시 만들기는 브러시를 사용 하 여 그리기 수도 있습니다. 이미지 속성을 정의 하 고, 서로 다른 형식으로 이미지를 저장 하 고, 다른 이미지를 한 형식에서에서 변환 수입니다.
 

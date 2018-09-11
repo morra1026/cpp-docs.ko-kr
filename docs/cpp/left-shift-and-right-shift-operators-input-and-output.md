@@ -23,16 +23,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6c89e2550c01db695aa513a98d6d1cc8f116ca0
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: dea292ad348a155c6acdf64352dae47e858140b0
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42572588"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314107"
 ---
 # <a name="left-shift-and-right-shift-operators-gtgt-and-ltlt"></a>왼쪽된 시프트 및 오른쪽 시프트 연산자 (&gt; &gt; 하 고 &lt; &lt;)
 
-비트 시프트 연산자는 오른쪽 시프트 연산자 (>>)의 비트를 이동 하는 *시프트 식* 오른쪽 및 왼쪽 시프트 연산자 (<<)의 비트를 이동 하는 *shift-식* 왼쪽에 있습니다. <sup>1</sup>
+비트 시프트 연산자는 오른쪽 시프트 연산자 (**&gt;&gt;**)의 비트를 이동 하는 *시프트 식* 오른쪽 및 왼쪽 시프트 연산자 (**&lt; &lt;**)의 비트를 이동 하는 *시프트 식* 왼쪽에 있습니다. <sup>1</sup>
 
 ## <a name="syntax"></a>구문
 

@@ -8,19 +8,19 @@ ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
-- attributes [C++], contexts
+- attributes [C++/CLI], contexts
 ms.assetid: 3086351f-77a8-4048-99e9-3b6b041b9437
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7635f49a494648f18bcd59eb8d212cc76d1f1539
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0e3935b168220b528afaecd2e1438cfe49496b1b
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600802"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313665"
 ---
 # <a name="attribute-contexts"></a>특성 컨텍스트
 네 가지 기본 필드를 사용 하 여 c + + 특성을 설명할 수 있습니다: 대상에 적용 될 수 있습니다 (**적용 대상**) 여부 반복 하는 경우 (**Repeatable**), 필요한 다른 특성이 ( **필수 특성**), 및 기타 특성을 사용 하 여 호환성 문제 (**잘못 된 특성이**). 이러한 필드는 각 특성의 참조 항목에서 해당 테이블에 나열 됩니다. 이러한 각 필드는 아래 설명 되어 있습니다.

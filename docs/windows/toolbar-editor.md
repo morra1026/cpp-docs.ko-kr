@@ -1,5 +1,5 @@
 ---
-title: 도구 모음 편집기 | Microsoft Docs
+title: 도구 모음 편집기 (c + +) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,7 +10,7 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- resource editors, Toolbar editor
+- resource editors [C++], Toolbar editor
 - editors, toolbars
 - toolbars [C++], editing
 - Toolbar editor
@@ -20,16 +20,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b0f9c4977ff82bd3f4af40af657a4bfed3a90568
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c51c8a5dc321d61b6167fb6a1e5b71d52145d81d
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197878"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316954"
 ---
-# <a name="toolbar-editor"></a>도구 모음 편집기
+# <a name="toolbar-editor-c"></a>도구 모음 편집기 (c + +)
 
-합니다 **도구 모음** 편집기 도구 모음 리소스를 만들고 비트맵을 도구 모음 리소스로 변환할 수 있습니다. 합니다 **도구 모음** 편집기 도구 모음과 비슷한 모양과 완성된 된 응용 프로그램에서 결과 생성 하는 단추를 표시 하도록 그래픽 표시를 사용 합니다.
+합니다 **도구 모음** 편집기를 사용 하면 c + + 도구 모음 리소스를 만들고 비트맵을 도구 모음 리소스로 변환할 수 있습니다. 합니다 **도구 모음** 편집기 도구 모음과 비슷한 모양과 완성된 된 응용 프로그램에서 결과 생성 하는 단추를 표시 하도록 그래픽 표시를 사용 합니다.
 
 사용 하 여 합니다 **도구 모음** 편집기를 할 수 있습니다.
 

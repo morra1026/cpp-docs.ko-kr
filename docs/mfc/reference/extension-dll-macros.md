@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee79ccad55d2fd360166b9d693f3d4757fe2049f
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: d3f34a6bc42f1c01783e21e1c3b0f9f04adad46f
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339230"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317760"
 ---
 # <a name="macros-and-functions-for-managing-dlls"></a>Dll을 관리 하기 위한 함수와 매크로
 
@@ -99,7 +99,7 @@ void AFXAPI AfxOleInitModule( );
  OLE 컨트롤을 빌드하는 하 고 사용 하는 경우 `COleControlModule`를 호출 하지 않아야 `AfxOleInitModule` 때문에 `InitInstance` 멤버 함수에 대 한 `COleControlModule` 호출 `AfxOleInitModule`합니다.  
    
 ### <a name="requirements"></a>요구 사항  
- **헤더**: < afxdll_.h >  
+ **헤더**: \<afxdll_.h >  
    
 ### <a name="see-also"></a>참고 항목  
  [매크로 및 전역](mfc-macros-and-globals.md)   
@@ -117,7 +117,7 @@ void AFXAPI AfxNetInitModule( );
  MFC 소켓 DLL이 MFC 확장 DLL; MFC 확장 DLL에 유선 가져오려면 하려면에서를 `CDynLinkLibrary` 체인을 생성 하도록 해야 합니다는 `CDynLinkLibrary` 은 사용 하는 모든 모듈의 컨텍스트에서 개체입니다. `AfxNetInitModule` 만듭니다는 `CDynLinkLibrary` 에 유선 가져옵니다 있도록 기본 MFC DLL의 컨텍스트에서 개체를 `CDynLinkLibrary` 기본 MFC DLL의 체인 개체입니다.  
    
 ### <a name="requirements"></a>요구 사항  
- **헤더:** < afxdll_.h >  
+ **헤더:** \<afxdll_.h >  
    
 ### <a name="see-also"></a>참고 항목  
  [매크로 및 전역](mfc-macros-and-globals.md)   
@@ -247,7 +247,7 @@ MFC의 WinSxS 동작에 영향을 주는 모듈별 상태 플래그를 설정 �
  플래그를 설정 하지 않으면 모듈의 컨텍스트 항목에 대해 활성화 되지 않았습니다.    
  모듈의 컨텍스트는 일반적으로 모듈 리소스에 포함 된 매니페스트에서에서 결정 됩니다.  
    
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  ```cpp
 BOOL CMFCListViewApp::InitInstance()
 {

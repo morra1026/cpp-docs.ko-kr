@@ -1,5 +1,5 @@
 ---
-title: 도구 모음 단추의 속성 변경 | Microsoft Docs
+title: (C + +) 도구 모음 단추의 속성 변경 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -9,8 +9,8 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - toolbar controls [MFC], command ID
-- toolbar buttons (in Toolbar editor), setting properties
-- Toolbar editor, toolbar button properties
+- toolbar buttons [C++], setting properties
+- Toolbar editor [C++], toolbar button properties
 - command IDs, toolbar buttons
 ms.assetid: b16a0635-e703-4156-acea-a54df279295a
 author: mikeblome
@@ -18,18 +18,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e1bf5ebd78e3e3b9083e8a4ad0898433d30422a7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: f554d6d3369f94c5f4e9409d9f6af9a65935fc42
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600543"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313536"
 ---
-# <a name="changing-the-properties-of-a-toolbar-button"></a>도구 모음 단추의 속성 변경
+# <a name="changing-the-properties-of-a-toolbar-button-c"></a>(C + +) 도구 모음 단추의 속성 변경
 
 ### <a name="to-change-the-properties-of-a-toolbar-button"></a>도구 모음 단추의 속성을 변경 하려면
 
-1. 도구 모음 단추를 선택 합니다.
+1. C + + 프로젝트의 도구 모음 단추를 선택 합니다.
 
 2. 에 새 ID를 입력 합니다 **ID** 속성에는 [속성 창](/visualstudio/ide/reference/properties-window), 드롭 다운 목록을 사용 하 여 새 선택 또는 **ID**합니다.
 

@@ -1,5 +1,5 @@
 ---
-title: 메뉴 명령 속성 | Microsoft Docs
+title: 메뉴 명령 속성 (c + +) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 34fa9944d1daa443850454560f8e5741e881f6f8
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 28426e2ca75638f5ad45188a8790d1c281afa99b
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598713"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317922"
 ---
-# <a name="menu-command-properties"></a>메뉴 명령 속성
+# <a name="menu-command-properties-c"></a>메뉴 명령 속성 (c + +)
 
 아래 정보에 따라 구성 됩니다는 **메뉴** 에 표시 되는 속성을 [속성 창](/visualstudio/ide/reference/properties-window) 메뉴 명령을 선택 하면 합니다. 이러한 항목은 사전순 이지만 합니다 **속성** 창도 이러한 속성을 범주별으로 볼 수 있습니다.
 

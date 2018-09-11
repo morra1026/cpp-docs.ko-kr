@@ -1,5 +1,5 @@
 ---
-title: 버전 정보 편집기 | Microsoft Docs
+title: 버전 정보 편집기 (c + +) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,23 +10,23 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- Version Information editor, about Version Information editor
+- Version Information editor [C++], about Version Information editor
 - editors, Version Information
-- resource editors, Version Information editor
+- resource editors [C++], Version Information editor
 ms.assetid: 772e6f19-f765-4cec-9521-0ad3eeb99f9b
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d7eb767d3969f964f2605aaebc8c4adb743cd1fc
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 1d8a4eb57996bcc2afd9ddc92a9eecf354f88116
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199768"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313705"
 ---
-# <a name="version-information-editor"></a>버전 정보 편집기
+# <a name="version-information-editor-c"></a>버전 정보 편집기 (c + +)
 
 버전 정보는 회사 및 제품 ID, 제품 릴리스 번호, 저작권 및 상표 알림 등으로 이루어져 있습니다. 사용 하 여 합니다 **버전 정보** 편집기를 만들고 버전 정보 리소스에 저장 되어 있는이 데이터를 유지 합니다. 버전 정보 리소스는 응용 프로그램에 필요하지 않지만 응용 프로그램을 식별하는 정보를 수집하기에 유용한 장소입니다. 버전 정보는 설치 API에도 사용됩니다.
 

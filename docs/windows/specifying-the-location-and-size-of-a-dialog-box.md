@@ -1,5 +1,5 @@
 ---
-title: 대화 상자의 크기와 위치를 지정 합니다. | Microsoft Docs
+title: 대화 상자 (c + +)의 크기와 위치를 지정 합니다. | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -8,24 +8,24 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- dialog boxes, size
-- dialog boxes, positioning
+- dialog boxes [C++], size
+- dialog boxes [C++], positioning
 ms.assetid: 2b7c495e-6595-4cfb-9664-80b2826d0851
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: be3db9c689b79edd17af567831d62071d79cad2d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 854e4df84bfc5f75eda8f98fa117c199ba054b3a
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604621"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316577"
 ---
-# <a name="specifying-the-location-and-size-of-a-dialog-box"></a>대화 상자의 위치와 크기 지정
+# <a name="specifying-the-location-and-size-of-a-dialog-box-c"></a>대화 상자 (c + +)의 크기와 위치를 지정합니다.
 
-위치와 크기는 대화 상자를과 같이 위치 및 안에 있는 컨트롤의 크기는 대화 단위로 측정 됩니다. 개별 컨트롤 및 대화 상자에 대 한 값은 Visual Studio 상태를 선택 하면 표시줄의 오른쪽 아래에 나타납니다.
+위치와 크기는 c + + 대화 상자를과 같이 위치 및 안에 있는 컨트롤의 크기는 대화 단위로 측정 됩니다. 개별 컨트롤 및 대화 상자에 대 한 값은 Visual Studio 상태를 선택 하면 표시줄의 오른쪽 아래에 나타납니다.
 
 세 가지 속성에 설정할 수 있는 합니다 [속성 창](/visualstudio/ide/reference/properties-window) 대화 상자가 화면 표시를 지정 합니다. 합니다 **Center** 속성은 부울; 값을 설정 하는 경우 **True**, 대화 상자 화면 중앙에 항상 표시 됩니다. 설정 하면 **False**를 설정할 수 있습니다 합니다 **XPos** 및 **YPos** 화면 대화 상자를 표시할 위치를 명시적으로 정의 하는 속성입니다. 위치 속성으로 정의 된 보기 영역의 왼쪽 위 모서리에서 오프셋된 값은 `{X=0, Y=0}`합니다. 위치를 기준으로 합니다 **Absolute Align** 속성: 경우 **True**, 좌표는 화면을 기준으로 하는 경우 **False**, 대화 상자를 기준으로 좌표는 소유자 창입니다.
 

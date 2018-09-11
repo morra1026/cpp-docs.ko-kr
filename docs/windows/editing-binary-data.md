@@ -1,5 +1,5 @@
 ---
-title: 이진 데이터 편집 | Microsoft Docs
+title: 이진 데이터 (c + +) 편집 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 96a4370d56e2f5d9758e97010965668bd08306c3
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 050f52dface260da77f7290f47a9cbb204caaafe
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593007"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315460"
 ---
 # <a name="editing-binary-data"></a>이진 데이터 편집
 

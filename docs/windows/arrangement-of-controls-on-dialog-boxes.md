@@ -1,5 +1,5 @@
 ---
-title: 대화 상자에 컨트롤 배치 | Microsoft Docs
+title: 대화 상자 (c + +)에 컨트롤 배치 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -9,22 +9,22 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - controls [C++], positioning
-- dialog box controls, placement
-- Dialog editor, arranging controls
+- dialog box controls [C++], placement
+- Dialog Editor [C++], arranging controls
 ms.assetid: 832491cf-98af-42e5-a854-2cb135fd45c6
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d47e3602e151f64fab0a543882c759225410f6dc
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 46bc2d627c9efbb49227e17c809d188aa3a8b5fc
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42583569"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315238"
 ---
-# <a name="arrangement-of-controls-on-dialog-boxes"></a>대화 상자에 컨트롤 배치
+# <a name="arrangement-of-controls-on-dialog-box-ces"></a>대화 상자에서 컨트롤 배열을 상자 es (c + +)
 
 합니다 **대화 상자** 편집기 컨트롤을 자동으로 크기 조정 및 정렬 하는 레이아웃 도구를 제공 합니다. 대부분의 작업을 사용 합니다 [대화 상자 편집기 도구 모음](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)합니다. 모든 **대화 상자 편집기** 도구 모음 명령에서 사용할 수 있습니다 합니다 **형식** 메뉴와 대부분 [바로 가기 키](../windows/accelerator-keys-for-the-dialog-editor.md)합니다.
 

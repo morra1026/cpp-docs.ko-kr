@@ -1,5 +1,5 @@
 ---
-title: 추가 또는 삭제 하는 문자열 | Microsoft Docs
+title: 추가 또는 삭제 문자열 리소스 (c + +) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,23 +11,23 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - strings [C++], adding to string tables
-- string tables, deleting strings
+- string tables [C++], deleting strings
 - strings [C++], deleting in string tables
-- string tables, adding strings
+- string tables [C++], adding strings
 ms.assetid: 077077b4-0f4b-4633-92d6-60b321164cab
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 952531a846fe48e9f093f016efd67d73c386d82c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 0c22990c504700ab82ae0d7542420a3f82db4d73
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204489"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314042"
 ---
-# <a name="adding-or-deleting-a-string"></a>문자열 추가 또는 삭제
+# <a name="adding-or-deleting-a-string-resource-c"></a>추가 또는 삭제 문자열 리소스 (c + +)
 
 사용 하 여 문자열 테이블에 새 항목을 신속 하 게 삽입할 수 있습니다 합니다 **문자열** 편집기입니다. 새 문자열 테이블의 끝에 배치 되 고 사용 가능한 식별자가 지정 됩니다. 편집할 수 있습니다 합니다 **ID**, **값**, 또는 **캡션** 속성에는 [속성 창](/visualstudio/ide/reference/properties-window) 필요에 따라 합니다.
 

@@ -1,5 +1,5 @@
 ---
-title: 더 이상 함수에는 대화 상자가 대화 상자에 컨트롤 추가 | Microsoft Docs
+title: 대화 상자에 컨트롤 추가 대화 상자에 상자가 더 이상 작동 (c + +) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -9,10 +9,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - controls [C++], troubleshooting
-- common controls, troubleshooting
-- troubleshooting controls
-- dialog boxes, troubleshooting
-- dialog box controls, troubleshooting
+- dialog boxes [C++], troubleshooting
 - InitCommonControls
 ms.assetid: b2dd4574-ea59-4343-8d65-b387cead5da6
 author: mikeblome
@@ -20,14 +17,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6d27c12b491fc5f05da58a84703ea13e84e9e9c6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 88990595fdf1f6cbb88efd40ec6247b70d90c586
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215372"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314901"
 ---
-# <a name="adding-controls-to-a-dialog-causes-the-dialog-to-no-longer-function"></a>대화 상자에 컨트롤을 추가하여 대화 상자가 작동하지 않는 경우
+# <a name="adding-controls-to-a-dialog-causes-the-dialog-to-no-longer-function-c"></a>대화 상자에 컨트롤 추가 대화 상자에 상자가 더 이상 작동 (c + +)
 
 공용 컨트롤 또는 서식 있는 편집 컨트롤을 대화 상자를 추가한 후 대화 상자를 테스트할 때나 자체 대화 상자가 나타나지는 표시 됩니다.
 

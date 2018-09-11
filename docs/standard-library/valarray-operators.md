@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::operator&lt; (valarray)
 - std::operator&lt;&lt; (valarray)
 - std::operator&lt;= (valarray), std::operator== (valarray)
-ms.openlocfilehash: 0c297ddf24c1ed357a0756c5e0e5631e7b3d1c02
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: b828081fea1f9886c1a661323e2d0e0c79d1ae96
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964836"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315030"
 ---
 # <a name="ltvalarraygt-operators"></a>&lt;valarray&gt; 연산자
 
@@ -100,7 +100,7 @@ operator!=(
 
 세 번째 템플릿 연산자는 요소에 저장 `I` `left != right[I]`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_ne.cpp
@@ -139,12 +139,12 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The element-by-element result of the not equal comparison test is the
  valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
-*\
+*/
 ```
 
 ## <a name="op_mod"></a>  operator%
@@ -183,7 +183,7 @@ operator%(
 
 요소가 요소 전체 나머지 인 valarray의 *왼쪽* 나눈 *오른쪽*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_rem.cpp
@@ -222,12 +222,12 @@ int main( )
          cout << vaREM [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is: ( 53 -67 53 -67 53 -67 ).
 The initial Right valarray is: ( 1 4 7 10 13 16 ).
 The remainders from the element-by-element division is the
  valarray: ( 0 -3 4 -7 1 -3 ).
-*\
+*/
 ```
 
 ## <a name="op_amp"></a>  operator&amp;
@@ -272,7 +272,7 @@ operator&(
 
 비트 `AND`은 논리적 `AND`과 같은 진리표를 포함하지만 개별 비트 수준에서 데이터 형식에 적용됩니다. [operator&&](../standard-library/valarray-operators.md#amp)는 요소 수준에서 적용되어 0이 아닌 모든 값을 true로 계산하며, 결과는 부울 값의 valarray입니다. 반면 비트 **ANDoperator&** 를 사용하는 경우에는 비트 연산의 결과에 따라 0이나 1이 아닌 값의 valarray가 생성될 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_bitand.cpp
@@ -311,12 +311,12 @@ int main( )
          cout << vaBWA [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is:  ( 0 2 0 4 0 6 0 8 0 10 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The element-by-element result of the bitwise operator & is the
  valarray: ( 0 0 0 0 0 4 0 0 0 8 ).
-*\
+*/
 ```
 
 ## <a name="op_amp_amp"></a>  operator&amp;&amp;
@@ -359,7 +359,7 @@ operator&&(
 
 논리적 `ANDoperator&&` 적용 되는 요소 수준에서 부울 값의 valarray가 true로 결과 0이 아닌 모든 값을 계산 합니다. 비트 버전 `AND`, [연산자 &,](../standard-library/valarray-operators.md#op_amp), 반면에 비트 연산의 결과 따라 1 이나 0이 아닌 값의 valarray 발생할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_logand.cpp
@@ -398,12 +398,12 @@ int main( )
          cout << vaLAA [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is:  ( 0 0 0 2 0 4 0 6 0 8 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The element-by-element result of the logical AND operator&& is the
  valarray: ( 0 0 0 1 0 1 0 1 0 1 ).
-*\
+*/
 ```
 
 ## <a name="op_gt"></a>  operator&gt;
@@ -450,7 +450,7 @@ operator>(
 
 두 valarray의 요소 수가 같지 않으면 결과는 정의되지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_gt.cpp
@@ -489,12 +489,12 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( -1 0 1 2 3 4 5 6 7 8 ).
 The element-by-element result of the greater than comparison test is the
  valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
-*\
+*/
 ```
 
 ## <a name="op_gt_eq"></a>  operator&gt;=
@@ -541,7 +541,7 @@ operator>=(
 
 두 valarray의 요소 수가 같지 않으면 결과는 정의되지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_ge.cpp
@@ -580,12 +580,12 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( -1 0 1 2 3 4 5 6 7 8 ).
 The element-by-element result of the greater than or equal test is the
  valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
-*\
+*/
 ```
 
 ## <a name="op_gt_gt"></a>  operator&gt;&gt;
@@ -628,7 +628,7 @@ operator>>(
 
 부호 있는 숫자의 부호는 유지됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_rs.cpp
@@ -667,12 +667,12 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is: ( 64 -64 64 -64 64 -64 64 -64 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the right shift is the
  valarray: ( 64 -32 16 -8 4 -2 1 -1 ).
-*\
+*/
 ```
 
 ## <a name="op_lt"></a>  operator&lt;
@@ -719,7 +719,7 @@ operator<(
 
 두 valarray의 요소 수가 같지 않으면 결과는 정의되지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_lt.cpp
@@ -758,12 +758,12 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The element-by-element result of the less-than comparson test is the
  valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
-*\
+*/
 ```
 
 ## <a name="op_lt_eq"></a>  operator&lt;=
@@ -810,7 +810,7 @@ operator<=(
 
 두 valarray의 요소 수가 같지 않으면 결과는 정의되지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_le.cpp
@@ -849,12 +849,12 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( -1 0 1 2 3 4 5 6 7 8 ).
 The element-by-element result of the less than or equal test is the
  valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
-*\
+*/
 ```
 
 ## <a name="op_lt_lt"></a>  operator&lt;&lt;
@@ -897,7 +897,7 @@ operator<<(
 
 부호 있는 숫자의 부호는 유지됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_ls.cpp
@@ -936,12 +936,12 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is: ( 1 -1 1 -1 1 -1 1 -1 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the left shift is the
  valarray: ( 1 -2 4 -8 16 -32 64 -128 ).
-*\
+*/
 ```
 
 ## <a name="op_star"></a>  operator*
@@ -980,7 +980,7 @@ operator*(
 
 요소가 요소 전체 곱 인 valarray의 *왼쪽* 하 고 *오른쪽*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_eprod.cpp
@@ -1019,12 +1019,12 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is: ( 2 -1 2 -1 2 -1 2 -1 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the multiplication is the
  valarray: ( 0 -1 4 -3 8 -5 12 -7 ).
-*\
+*/
 ```
 
 ## <a name="op_add"></a>  operator+
@@ -1063,7 +1063,7 @@ operator+(
 
 요소가 요소 전체 합 인 valarray의 *왼쪽* 하 고 *오른쪽*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_esum.cpp
@@ -1102,12 +1102,12 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is: ( 2 -1 2 -1 2 -1 2 -1 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the sum is the
  valarray: ( 2 0 4 2 6 4 8 6 ).
-*\
+*/
 ```
 
 ## <a name="operator-"></a>  operator-
@@ -1152,7 +1152,7 @@ operator-(
 
 차 = 피감수 - 감수
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_ediff.cpp
@@ -1191,12 +1191,12 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is: ( 10 0 10 0 10 0 10 0 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the difference is the
  valarray: ( 10 -1 8 -3 6 -5 4 -7 ).
-*\
+*/
 ```
 
 ## <a name="op_div"></a>  operator/
@@ -1241,7 +1241,7 @@ operator/(
 
 몫 = 피제수/제수
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_equo.cpp
@@ -1280,12 +1280,12 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is: ( 100 -100 100 -100 100 -100 ).
 The initial Right valarray is: ( 0 2 4 6 8 10 ).
 The element-by-element result of the quotient is the
  valarray: ( inf -50 25 -16.6667 12.5 -10 ).
-*\
+*/
 ```
 
 ## <a name="op_eq_eq"></a>  operator==
@@ -1332,7 +1332,7 @@ operator==(
 
 클래스의 개체를 반환 하는 첫 번째 템플릿 연산자 [valarray\<bool >](../standard-library/valarray-bool-class.md), 각 요소가 `I` 는 `left[I] == right[I]`합니다. 두 번째 템플릿 연산자는 요소에 저장 `I` `left[I] == right`합니다. 세 번째 템플릿 연산자는 요소에 저장 `I` `left == right[I]`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_eq.cpp
@@ -1371,12 +1371,12 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The element-by-element result of the equality comparison test is the
  valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
-*\
+*/
 ```
 
 ## <a name="op_xor"></a>  operator^
@@ -1421,7 +1421,7 @@ operator^(
 
 비트 배타적 `OR`(**XOR**)의 의미 체계에서 *b*1 및 *b*2 비트가 지정되는 경우 *b*1 **XOR** *b*2는 비트 중 정확히 하나가 true이면 **true**이고 두 비트가 모두 false이거나 true이면 **false**입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_xor.cpp
@@ -1464,12 +1464,12 @@ int main( )
          cout << vaLAA [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is:  ( 1 0 1 0 1 0 1 0 1 0 ).
 The initial Right valarray is: ( 0 0 1 3 3 4 6 6 7 9 ).
 The element-by-element result of the bitwise XOR operator^ is the
  valarray: ( 1 0 0 3 2 4 7 6 6 9 ).
-*\
+*/
 ```
 
 ## <a name="op_or"></a>  operator&#124;
@@ -1514,7 +1514,7 @@ operator|(
 
 비트 OR은 논리적 `OR`와 같은 진리표를 포함하지만 개별 비트 수준에서 데이터 형식에 적용됩니다. *b*1 및 *b*2가 지정되는 경우 *b*1 `OR` *b*2는 비트 중 하나 이상이 true이면 **true**이고 두 비트가 모두 false이면 **false**입니다. 논리적 `OR`[operator&#124;&#124;](../standard-library/valarray-operators.md#op_lor)는 요소 수준에서 적용되어 0이 아닌 모든 값을 **true**로 계산하며, 결과는 부울 값의 valarray입니다. 반면 비트 OR `operator|`를 사용하는 경우에는 비트 연산의 결과에 따라 0이나 1이 아닌 값의 valarray가 생성될 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_bitor.cpp
@@ -1557,12 +1557,12 @@ int main( )
          cout << vaLAA [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is:  ( 1 0 1 0 1 0 1 0 1 0 ).
 The initial Right valarray is: ( 0 0 1 3 3 4 6 6 7 9 ).
 The element-by-element result of the bitwise OR operator| is the
  valarray: ( 1 0 1 3 3 4 7 6 7 9 ).
-*\
+*/
 ```
 
 ## <a name="op_lor"></a>  operator&#124;&#124;
@@ -1605,7 +1605,7 @@ Valarray 요소 형식의 **bool** 되며 논리 OR 연산의 요소 전체 조�
 
 논리적 `OR` `operator||` 0이 아닌 모든 값을 계산 하는 요소 수준에서 적용 **true**, 결과 부울 값의 valarray입니다. 반면 비트 버전 `OR`, [operator&#124;](../standard-library/valarray-operators.md#op_or)를 사용하는 경우에는 비트 연산의 결과에 따라 0이나 1이 아닌 값의 valarray가 생성될 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_op_logor.cpp
@@ -1648,12 +1648,12 @@ int main( )
          cout << vaLOR [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is:  ( 0 0 0 2 0 4 0 6 0 8 ).
 The initial Right valarray is: ( 0 0 0 3 0 0 6 0 0 9 ).
 The element-by-element result of the logical OR operator|| is the
  valarray: ( 0 0 0 1 0 1 1 1 0 1 ).
-*\
+*/
 ```
 
 ## <a name="see-also"></a>참고자료

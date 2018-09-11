@@ -106,12 +106,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac07884d3ac7390bdb3aba4144c1c436041434f0
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: c52a68e87e29aaa827a61e657e04364acf6205b4
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110060"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318793"
 ---
 # <a name="array-class-c-standard-library"></a>array 클래스(C++ 표준 라이브러리)
 
@@ -1224,7 +1224,7 @@ int main()
 제어되는 시퀀스를 바꿉니다.
 
 ```cpp
-array <Value>%  operator=(array <Value>% right);
+array<Value> operator=(array<Value> right);
 ```
 
 ### <a name="parameters"></a>매개 변수

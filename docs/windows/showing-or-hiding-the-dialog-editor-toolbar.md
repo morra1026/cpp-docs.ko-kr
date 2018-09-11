@@ -1,5 +1,5 @@
 ---
-title: 표시 하거나 대화 상자 편집기 도구 모음을 숨기 | Microsoft Docs
+title: 표시 또는 숨기기 대화 상자 편집기 도구 모음 (c + +) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,23 +11,23 @@ helpviewer_keywords:
 - controls [C++], showing or hiding Dialog editor toolbar
 - toolbars [C++], showing
 - toolbars [C++], hiding
-- Dialog editor, showing or hiding toolbar
+- Dialog Editor [C++], showing or hiding toolbar
 ms.assetid: 93c255e1-90eb-48b6-8602-450acda75bed
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f1aa9e84e1f03f0299d25ec43b91c93531179ab6
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9b7b6c8b01665da1effb1b3bd056c99bd82163c0
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599414"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316018"
 ---
-# <a name="showing-or-hiding-the-dialog-editor-toolbar"></a>대화 상자 편집기 도구 모음 표시 또는 숨기기
+# <a name="showing-or-hiding-the-dialog-editor-toolbar-c"></a>표시 또는 숨기기 대화 상자 편집기 도구 모음 (c + +)
 
-열면 합니다 **대화 상자** 편집기는 **대화 상자 편집기** 솔루션의 맨 위에 있는 도구 모음이 자동으로 나타납니다.
+열면 합니다 **대화 상자** c + + 프로젝트, 편집기를 **대화 상자 편집기** 솔루션의 맨 위에 있는 도구 모음이 자동으로 나타납니다.
 
 ### <a name="dialog-editor-toolbar"></a>대화 상자 편집기 도구 모음
 
