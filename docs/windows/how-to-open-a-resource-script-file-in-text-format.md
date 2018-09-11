@@ -1,5 +1,5 @@
 ---
-title: '방법: 리소스 스크립트 파일을 텍스트 형식으로 열기 | Microsoft Docs'
+title: '방법: 리소스 스크립트 파일을 텍스트 형식 (c + +) 열기 | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,21 +10,21 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- resource script files, opening in text format
-- .rc files, opening in text format
-- rc files, opening in text format
+- resource script files [C++], opening in text format
+- .rc files [C++], opening in text format
+- rc files [C++], opening in text format
 ms.assetid: 0bc57527-f53b-40c9-99a9-4dcbc5c9af57
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e331966c44d19f2410a59505348bcc0a37c63912
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 2c2f73c77e86a2b23213b3b6aabdd0bc85f91586
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43676055"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317071"
 ---
 # <a name="how-to-open-a-resource-script-file-in-text-format"></a>방법: 리소스 스크립트 파일을 텍스트 형식으로 열기
 
