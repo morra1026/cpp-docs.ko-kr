@@ -21,60 +21,43 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7cf98987323b96c8b3977e9a6d2bc590e0b612b8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a5b497745177bce165277e3a6e4ece2a3c47f20a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392252"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194877"
 ---
 # <a name="structure-and-union-members"></a>구조체 및 공용 구조체 멤버
 "멤버 선택 식"은 구조체와 공용 구조체의 멤버를 참조합니다. 이러한 식은 선택한 멤버의 값과 형식을 갖게 됩니다.  
   
-```  
+> *postfix-expression* **.** *identifier*  
+> *postfix-expression* **->** *identifier*
   
-postfix-expression  
-.  
-identifier  
-postfix-expression  
-->  
-identifier  
+다음 목록에서는 멤버 선택 식의 두 가지 형태에 대해 설명합니다.  
   
-```  
-  
- 다음 목록에서는 멤버 선택 식의 두 가지 형태에 대해 설명합니다.  
-  
-1.  첫 번째 형태에서 *postfix-expression*은 `struct` 또는 **union** 형식의 값을 나타내며, *identifier*는 지정된 구조체 또는 공용 구조체의 멤버 이름을 지정합니다. 연산값은 *identifier*의 값이며 *postfix-expression*이 l-value인 경우 l-value입니다. 자세한 내용은 [L-Value 및 R-Value 식](../c-language/l-value-and-r-value-expressions.md)을 참조하세요.  
+1.  첫 번째 형태에서 *postfix-expression*은 **struct** 또는 **union** 형식의 값을 나타내며, *identifier*는 지정된 구조체 또는 공용 구조체의 멤버 이름을 지정합니다. 연산값은 *identifier*의 값이며 *postfix-expression*이 l-value인 경우 l-value입니다. 자세한 내용은 [L-Value 및 R-Value 식](../c-language/l-value-and-r-value-expressions.md)을 참조하세요.  
   
 2.  두 번째 형태에서 *postfix-expression*은 구조체 또는 공용 구조체에 대한 포인터를 나타내며, *identifier*는 지정된 구조체 또는 공용 구조체의 멤버 이름을 지정합니다. 값은 *identifier*의 값이며 l-value입니다.  
   
  두 가지 형태의 멤버 선택 식은 비슷한 효과가 있습니다.  
   
- 마침표(**.**) 앞의 식이 포인터 값에 적용된 간접 참조 연산자(**\***)로 구성된 경우 멤버 선택 연산자(**->**)를 포함하는 식은 마침표를 사용하는 식의 약식 버전입니다. 따라서  
-  
-```  
-  
-expression  
-->  
-identifier  
-  
-```  
-  
- 위의 식은 아래의 식과 동일합니다.  
-  
-```  
-  
-(*  
-expression  
-) .  
-identifier  
-  
-```  
-  
+ 마침표(**.**) 앞의 식이 포인터 값에 적용된 간접 참조 연산자(<strong>\*</strong>)로 구성된 경우 멤버 선택 연산자(**->**)를 포함하는 식은 마침표를 사용하는 식의 약식 버전입니다. 따라서  
+
+```cpp
+expression->identifier  
+```
+
+위의 식은 아래의 식과 동일합니다.  
+
+```cpp
+(*expression).identifier
+```
+
  여기서 *expression*은 포인터 값입니다.  
   
 ## <a name="examples"></a>예제  
- 다음 예제에서는 이 구조체 선언을 참조합니다. 이러한 예제에서 사용하는 간접 참조 연산자(**\***)에 대한 자세한 내용은 [간접 참조 및 주소 연산자](../c-language/indirection-and-address-of-operators.md)를 참조하세요.  
+ 다음 예제에서는 이 구조체 선언을 참조합니다. 이러한 예제에서 사용하는 간접 참조 연산자(<strong>\*</strong>)에 대한 자세한 내용은 [간접 참조 및 주소 연산자](../c-language/indirection-and-address-of-operators.md)를 참조하세요.  
   
 ```  
 struct pair   

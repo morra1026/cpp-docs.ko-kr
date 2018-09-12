@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 521e08b22abb40b6e1b1fedce2375a6e33cc7e73
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: 6453d718454f7cfef3bb0211d05eb26a712eaf0f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43130786"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218315"
 ---
 # <a name="supported-platforms-visual-c"></a>지원되는 플랫폼(Visual C++)
 
@@ -28,8 +28,8 @@ Visual Studio를 사용하여 빌드한 응용 프로그램은 다음과 같이 
 
 |운영 체제|x86|X64|ARM|
 |----------------------|---------|---------|---------|
-|Windows XP|X*|X*||
-|Windows Server 2003|X*|X*||
+|Windows XP|X\*|X\*||
+|Windows Server 2003|X\*|X\*||
 |Windows Vista|X|X||
 |Windows Server 2008|X|X||
 |Windows 7|X|X||
@@ -37,9 +37,9 @@ Visual Studio를 사용하여 빌드한 응용 프로그램은 다음과 같이 
 |Windows 8|X|X|X|
 |Windows 8.1|X|X|X|
 |Windows 10|X|X|X|
-|Android **|X|X|X|
-|iOS **|X|X|X|
-|Linux ***|X|X|X|
+|Android \*\*|X|X|X|
+|iOS \*\*|X|X|X|
+|Linux \*\*\*|X|X|X|
 
 \* Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 및 Visual Studio 2012 Update 1 이상 버전에 포함된 Windows XP 플랫폼 도구 집합을 사용하여 Windows XP 및 Windows Server 2003 프로젝트를 빌드할 수 있습니다. 이 플랫폼 도구 집합을 다운로드하고 사용하는 방법에 대한 자세한 내용은 [Windows XP용 프로그램 구성](build/configuring-programs-for-windows-xp.md)을 참조하세요. 플랫폼 도구 집합을 변경하는 방법에 대한 자세한 내용은 [방법: 대상 프레임워크 및 플랫폼 도구 집합 수정](build/how-to-modify-the-target-framework-and-platform-toolset.md)을 참조하세요.
 

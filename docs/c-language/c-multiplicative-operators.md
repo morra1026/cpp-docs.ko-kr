@@ -21,30 +21,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1810cc9dd7a991e302e0e9e2db69f65aebebc613
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0be97e271ce8b500274d0e2ab1f271183ef7c238
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387793"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199996"
 ---
 # <a name="c-multiplicative-operators"></a>곱하기 연산자
-곱하기 연산자는 곱하기(**\***), 나누기(**/**) 및 나머지(`%`) 연산을 수행합니다.  
+곱하기 연산자는 곱하기(<strong>\*</strong>), 나누기(**/**) 및 나머지(**%**) 연산을 수행합니다.  
   
- **구문**  
+## <a name="syntax"></a>구문
+
+*multiplicative-expression*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*cast-expression*  
+&nbsp;&nbsp;&nbsp;&nbsp;*multiplicative-expression* <strong>\*</strong> *cast-expression*  
+&nbsp;&nbsp;&nbsp;&nbsp;*multiplicative-expression* **/** *cast-expression*  
+&nbsp;&nbsp;&nbsp;&nbsp;*multiplicative-expression* **%** *cast-expression*
+
+나머지 연산자의 피연산자(**%**)는 정수여야 합니다. 곱하기(<strong>\*</strong>) 및 나누기(**/**) 연산자는 정수 계열 또는 부동 형식 피연산자를 사용할 수 있습니다. 따라서 피연산자의 형식은 다를 수도 있습니다.  
   
- *multiplicative-expression*:  
- *cast-expression*  
-  
- *multiplicative-expression*  **\***  *cast-expression*  
-  
- *multiplicative-expression*  **/**  *cast-expression*  
-  
- *multiplicative-expression*  **%**  *cast-expression*  
-  
- 나머지 연산자의 피연산자(`%`)는 정수 계열이어야 합니다. 곱하기(**\***) 및 나누기(**/**) 연산자는 정수 계열 또는 부동 형식 피연산자를 사용할 수 있습니다. 따라서 피연산자의 형식은 다를 수도 있습니다.  
-  
- 곱셈 연산자는 피연산자에 대한 일반적인 산술 변환을 수행합니다. 결과 형식은 변환 후의 피연산자 형식과 동일합니다.  
+곱셈 연산자는 피연산자에 대한 일반적인 산술 변환을 수행합니다. 결과 형식은 변환 후의 피연산자 형식과 동일합니다.  
   
 > [!NOTE]
 >  곱셈 연산자로 수행된 변환은 오버플로 또는 언더플로 조건을 제공하지 않으므로 변환 후 곱셈 연산 결과가 피연산자 형식으로 표현되지 않는 경우 정보가 손실될 수 있습니다.  
@@ -53,15 +50,9 @@ ms.locfileid: "32387793"
   
 |연산자|설명|  
 |--------------|-----------------|  
-|**\***|곱셈 연산자를 사용하면 두 개의 피연산자가 곱해집니다.|  
-|**/**|나누기 연산자를 사용하면 첫 번째 피연산자가 두 번째 피연산자로 나눠집니다. 두 정수 피연산자를 나눈 결과가 정수가 아닌 경우 다음과 같은 규칙에 따라 잘립니다.|  
-||-   0으로 나누기 결과는 ANSI C 표준에 따라 정의되지 않습니다. Microsoft C 컴파일러는 컴파일 타임이나 런타임에서 오류를 발생시킵니다.|  
-||-   두 피연산자 모두 양수 또는 부호 없는 피연산자인 경우 결과는 0으로 잘립니다.|  
-||-   피연산자 중 하나가 음수인 경우 연산 결과가 대수 몫보다 작거나 같은 최대 정수인지 또는 대수 몫보다 크거나 같은 최소 정수인지가 정의되는 구현입니다. (아래의 Microsoft 전용 섹션을 참조하십시오.)|  
-|`%`|나머지 연산자 결과는 첫 번째 피연산자를 두 번째 피연산자로 나눈 나머지입니다. 나누기가 정확하지 않은 경우 결과는 다음 규칙에 따라 결정됩니다.|  
-||-   오른쪽 피연산자가 0이면 결과가 정의되지 않습니다.|  
-||-   두 피연산자 모두 양수 또는 부호 없는 피연산자인 경우 결과는 양수입니다.|  
-||-   한 피연산자가 음수이고 결과가 정확하지 않은 경우 결과는 정의된 구현입니다. (아래의 Microsoft 전용 섹션을 참조하십시오.)|  
+|<strong>\*</strong>|곱셈 연산자를 사용하면 두 개의 피연산자가 곱해집니다.|  
+|**/**|나누기 연산자를 사용하면 첫 번째 피연산자가 두 번째 피연산자로 나눠집니다. 두 정수 피연산자를 나눈 결과가 정수가 아닌 경우 다음과 같은 규칙에 따라 잘립니다.<br/><br/>- 0으로 나누기 결과는 ANSI C Standard에 따라 정의되지 않습니다. Microsoft C 컴파일러는 컴파일 타임이나 런타임에서 오류를 발생시킵니다.<br/><br/>- 두 피연산자 모두 양수 또는 unsigned 피연산자인 경우 결과는 0으로 잘립니다.<br/><br/>- 피연산자 중 하나가 음수인 경우 연산 결과가 대수 몫보다 작거나 같은 최대 정수인지 또는 대수 몫보다 크거나 같은 최소 정수인지가 정의되는 구현입니다. (아래의 Microsoft 전용 섹션을 참조하십시오.)|  
+|**%**|나머지 연산자 결과는 첫 번째 피연산자를 두 번째 피연산자로 나눈 나머지입니다. 나누기가 정확하지 않은 경우 결과는 다음 규칙에 따라 결정됩니다.<br/><br/>- 오른쪽 피연산자가 0이면 결과가 정의되지 않습니다.<br/><br/>- 두 피연산자 모두 양수 또는 unsigned 피연산자인 경우 결과는 양수입니다.<br/><br/>- 한 피연산자가 음수이고 결과가 정확하지 않은 경우 결과는 정의된 구현입니다. (아래의 Microsoft 전용 섹션을 참조하십시오.)|  
   
  **Microsoft 전용**  
   

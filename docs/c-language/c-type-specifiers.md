@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e37ac421627d4c4503d75eaf65188bbe234af015
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f965481ae1d3abea40577680b1af72004f793123
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32388385"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197230"
 ---
 # <a name="c-type-specifiers"></a>C 형식 지정자
 
@@ -79,7 +79,7 @@ pi = pu;  /* Now generates warning */
 
 **void** 형식의 식은 파생 작업에 대해 평가됩니다. 어떤 방식으로든 **void** 형식인 식의 존재하지 않는 값을 사용할 수 없으며, **void** 식을 암시적 또는 명시적 변환을 통해 **void**를 제외한 형식으로 변환할 수 없습니다. **void** 식이 필요한 컨텍스트에서 다른 형식의 식을 사용하는 경우 해당 값은 무시됩니다.
 
-ANSI 사양을 따르려면 **void\*\*** 를 **int\*\*** 로 사용할 수 없습니다. **void\*** 만 지정되지 않은 형식에 대한 포인터로 사용할 수 있습니다.
+ANSI 사양을 따르려면 <strong>void\*\*</strong>를 <strong>int\*\*</strong>로 사용할 수 없습니다. **void**<strong>\*</strong>만 지정되지 않은 형식에 대한 포인터로 사용할 수 있습니다.
 
 **Microsoft 전용 종료**
 

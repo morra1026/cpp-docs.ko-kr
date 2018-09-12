@@ -17,44 +17,39 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d9600c27f40a43105ae9a8fc2fd1579907891cb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0f7e5f8933aabe36362938a23c28ed1cd562a579
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391915"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205395"
 ---
 # <a name="pointer-declarations"></a>포인터 선언
 "포인터 선언"은 포인터 변수의 이름을 지정하고 변수가 가리키는 개체의 형식을 지정합니다. 포인터로 선언된 변수는 메모리 주소를 갖습니다.  
   
-## <a name="syntax"></a>구문  
- *declarator*:  
- &nbsp;&nbsp;*pointer*<sub>opt</sub> *direct-declarator*  
-  
- *direct-declarator*:  
- &nbsp;&nbsp;*identifier*  
-  
- &nbsp;&nbsp;**(** *declarator* **)**  
-  
- &nbsp;&nbsp;*direct-declarator* **[** *constant-expression*<sub>opt</sub> **]**  
-  
- &nbsp;&nbsp;*direct-declarator* **(** *parameter-type-list* **)**  
-  
- &nbsp;&nbsp;*direct-declarator* **(** *identifier-list*<sub>opt</sub> **)**  
-  
- *pointer*:  
- &nbsp;&nbsp;**\*** *type-qualifier-list*<sub>opt</sub>  
-  
- &nbsp;&nbsp;**\*** *type-qualifier-list*<sub>opt</sub> *pointer*  
-  
- *type-qualifier-list*:  
- &nbsp;&nbsp;*type-qualifier*  
-  
- &nbsp;&nbsp;*type-qualifier-list* *type-qualifier*  
+## <a name="syntax"></a>구문
+
+*declarator*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*pointer*<sub>opt</sub> *direct-declarator*  
+
+*direct-declarator*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*identifier*  
+&nbsp;&nbsp;&nbsp;&nbsp;**(** *declarator* **)**  
+&nbsp;&nbsp;&nbsp;&nbsp;*direct-declarator* **[** *constant-expression*<sub>opt</sub> **]**  
+&nbsp;&nbsp;&nbsp;&nbsp;*direct-declarator* **(** *parameter-type-list* **)**  
+&nbsp;&nbsp;&nbsp;&nbsp;*direct-declarator* **(** *identifier-list*<sub>opt</sub> **)**  
+
+*pointer*:  
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>\*</strong> *type-qualifier-list*<sub>opt</sub>  
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>\*</strong> *type-qualifier-list*<sub>opt</sub> *pointer*  
+
+*type-qualifier-list*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*type-qualifier*  
+&nbsp;&nbsp;&nbsp;&nbsp;*type-qualifier-list* *type-qualifier*  
   
  *type-specifier*는 개체의 형식을 제공합니다. 개체 형식은 기본, 구조체 또는 공용 구조체 형식일 수 있습니다. 포인터 변수는 함수, 배열 및 다른 포인터를 가리킬 수도 있습니다. 더 복잡한 포인터 형식의 선언 및 해석에 대한 자세한 내용은 [더 복잡한 선언자 해석](../c-language/interpreting-more-complex-declarators.md)을 참조하세요.  
   
- *type-specifier*를 **void**로 만들면 포인터가 참조할 형식 지정이 지연됩니다. 그러한 항목이 "**void**에 대한 포인터"로 참조되고 `void *`로 작성됩니다. *void*에 대한 포인터로 선언된 변수를 사용하여 모든 형식의 개체를 가리킬 수 있습니다. 그러나 포인터나 포인터가 가리키는 개체에 대해 작업을 수행하려면 대개 포인터가 가리키는 형식이 각 작업에 대해 명시적으로 지정되어야 합니다. **char \*** 형식 및 **void \*** 형식의 변수는 형식 캐스팅 없이 대입과 호환됩니다. 형식 캐스팅을 사용하여 이러한 변환을 수행할 수 있습니다. 자세한 내용은 [형식 캐스팅 변환](../c-language/type-cast-conversions.md)을 참조하세요.  
+ *type-specifier*를 **void**로 만들면 포인터가 참조할 형식 지정이 지연됩니다. 그러한 항목이 "**void**에 대한 포인터"로 참조되고 `void *`로 작성됩니다. *void*에 대한 포인터로 선언된 변수를 사용하여 모든 형식의 개체를 가리킬 수 있습니다. 그러나 포인터나 포인터가 가리키는 개체에 대해 작업을 수행하려면 대개 포인터가 가리키는 형식이 각 작업에 대해 명시적으로 지정되어야 합니다. **char** <strong>\*</strong> 형식 및 **void** <strong>\*</strong> 형식의 변수는 형식 캐스팅 없이 대입과 호환됩니다. 형식 캐스팅을 사용하여 이러한 변환을 수행할 수 있습니다. 자세한 내용은 [형식 캐스팅 변환](../c-language/type-cast-conversions.md)을 참조하세요.  
   
  *type-qualifier*는 **const** 또는 **volatile**이거나 둘 다일 수 있습니다. 이 형식 한정자는 각각 프로그램 자체에서 포인터를 수정할 수 없거나(**const**), 프로그램 제어를 벗어나 일부 프로세스에서 포인터를 올바르게 수정할 수 있도록(**volatile**) 지정합니다. **const** 및 **volatile**에 대한 자세한 내용은 [형식 한정자](../c-language/type-qualifiers.md)를 참조하세요.  
   

@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95c2bff6aa96ad5c2eea127fa643641d268e3cd9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4aaf456e83968cf47573a9ea2e765f9e7d552625
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392577"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43760252"
 ---
 # <a name="ismbc-routines"></a>_ismbc 루틴
 각 **_ismbc** 루틴은 특정 조건에 대해 지정된 멀티바이트 문자 `c`를 테스트합니다.  
@@ -43,9 +43,9 @@ ms.locfileid: "32392577"
 |[_ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l](../c-runtime-library/reference/ismbchira-ismbchira-l-ismbckata-ismbckata-l.md)|[_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l](../c-runtime-library/reference/ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|  
   
 ## <a name="remarks"></a>설명  
- 각 **_ismbc** 루틴의 테스트 결과는 적용되는 멀티바이트 코드 페이지에 따라 다릅니다. 멀티바이트 코드 페이지는 싱글바이트 알파벳 문자를 포함합니다. 기본적으로 멀티바이트 코드 페이지는 프로그램 시작 시 운영 체제에서 가져온 system-default ANSI 코드 페이지로 설정됩니다. [_getmbcp](../c-runtime-library/reference/getmbcp.md) 또는 [_setmbcp](../c-runtime-library/reference/setmbcp.md)를 각각 사용하여 사용 중인 멀티바이트 코드 페이지를 변경하거나 쿼리할 수 있습니다.  
+각 **_ismbc** 루틴의 테스트 결과는 적용되는 멀티바이트 코드 페이지에 따라 다릅니다. 멀티바이트 코드 페이지는 싱글바이트 알파벳 문자를 포함합니다. 기본적으로 멀티바이트 코드 페이지는 프로그램 시작 시 운영 체제에서 가져온 system-default ANSI 코드 페이지로 설정됩니다. [_getmbcp](../c-runtime-library/reference/getmbcp.md) 또는 [_setmbcp](../c-runtime-library/reference/setmbcp.md)를 각각 사용하여 사용 중인 멀티바이트 코드 페이지를 변경하거나 쿼리할 수 있습니다.  
   
- 출력값은 로캘의 `LC_CTYPE` 범주 설정에 영향을 받습니다. 자세한 내용은 [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다.  
+출력값은 로캘의 `LC_CTYPE` 범주 설정에 영향을 받습니다. 자세한 내용은 [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다.  
   
 |루틴에서 반환된 값|테스트 조건|932 코드 페이지 예제|  
 |-------------|--------------------|---------------------------|  
@@ -62,9 +62,9 @@ ms.locfileid: "32392577"
 |[_ismbcsymbol, _ismbcsymbol_l](../c-runtime-library/reference/ismbclegal-ismbclegal-l-ismbcsymbol-ismbcsymbol-l.md)|멀티바이트 기호|0x8141<=`c`<=0x81AC인 경우에만 0이 아닌 값을 반환합니다.|  
 |[_ismbcupper, _ismbcupper_l](../c-runtime-library/reference/ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|대문자 영문자|`c`가 ASCII 영어 대문자(0x41<=`c`<=0x5A)의 싱글바이트 표현인 경우에만 0이 아닌 값을 반환합니다.|  
   
- **코드 페이지 932 관련**  
+**코드 페이지 932 관련**  
   
- 다음 루틴은 코드 페이지 932에만 해당합니다.  
+다음 루틴은 코드 페이지 932에만 해당합니다.  
   
 |루틴|테스트 조건(코드 페이지 932만 해당)|  
 |-------------|-------------------------------------------|  
@@ -74,11 +74,11 @@ ms.locfileid: "32392577"
 |[_ismbcl1, _ismbcl1_l](../c-runtime-library/reference/ismbcl0-ismbcl0-l-ismbcl1-ismbcl1-l-ismbcl2-ismbcl2-l.md)|JIS 수준 1: 0x889F<=`c`<=0x9872.|  
 |[_ismbcl2, _ismbcl2_l](../c-runtime-library/reference/ismbcl0-ismbcl0-l-ismbcl1-ismbcl1-l-ismbcl2-ismbcl2-l.md)|JIS 수준 2: 0x989F<=`c`<=0xEA9E.|  
   
- `_ismbcl0`, `_ismbcl1` 및 `_ismbcl2`는 지정된 값 `c`가 이전 테이블에 설명된 테스트 조건과 일치하는지 확인하지만 `c`가 유효한 멀티바이트 문자인지는 확인하지 않습니다. 하위 바이트 범위가 0x00 – 0x3F, 0x7F 또는 0xFD – 0xFF인 경우 이러한 함수는 0이 아닌 값을 반환하여 문자가 테스트 조건을 충족함을 나타냅니다. [_ismbbtrail, _ismbbtrail_l](../c-runtime-library/reference/ismbbtrail-ismbbtrail-l.md)을 사용하여 멀티바이트 문자가 정의되었는지 여부를 테스트합니다.  
+`_ismbcl0`, `_ismbcl1` 및 `_ismbcl2`는 지정된 값 `c`가 이전 테이블에 설명된 테스트 조건과 일치하는지 확인하지만 `c`가 유효한 멀티바이트 문자인지는 확인하지 않습니다. 하위 바이트 범위가 0x00 – 0x3F, 0x7F 또는 0xFD – 0xFF인 경우 이러한 함수는 0이 아닌 값을 반환하여 문자가 테스트 조건을 충족함을 나타냅니다. [_ismbbtrail, _ismbbtrail_l](../c-runtime-library/reference/ismbbtrail-ismbbtrail-l.md)을 사용하여 멀티바이트 문자가 정의되었는지 여부를 테스트합니다.  
   
- **최종 코드 페이지 932 관련**  
+**최종 코드 페이지 932 관련**  
   
 ## <a name="see-also"></a>참고 항목  
- [문자 분류](../c-runtime-library/character-classification.md)   
- [is, isw 루틴](../c-runtime-library/is-isw-routines.md)   
- [_ismbb 루틴](../c-runtime-library/ismbb-routines.md)
+[문자 분류](../c-runtime-library/character-classification.md)   
+[is, isw 루틴](../c-runtime-library/is-isw-routines.md)   
+[_ismbb 루틴](../c-runtime-library/ismbb-routines.md)

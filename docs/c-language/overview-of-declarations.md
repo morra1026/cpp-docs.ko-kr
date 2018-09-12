@@ -15,43 +15,40 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd8670815b908f66a6e2ed400bc87ca07c369ee4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ac843ef83d2de4f9cf84a44c67859becaead6ec6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392629"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218506"
 ---
 # <a name="overview-of-declarations"></a>선언자 개요
 "선언"은 식별자 집합에 대한 해석 및 특성을 지정합니다. 식별자에 의해 이름이 지정된 개체나 함수용으로 저장소를 예약하는 선언은 "정의"라고도 합니다. 변수, 함수 및 형식에 대한 C 선언에는 다음과 같은 구문이 사용됩니다.  
   
-## <a name="syntax"></a>구문  
- `declaration`:  
- *declaration-specifiers* *attribute-seq*opt*init-declarator-list*opt **;**  
-  
- /\* *attribute-seq*opt는 Microsoft 전용임 */  
-  
- *declaration-specifiers*:  
- *storage-class-specifier declaration-specifiers*opt  
-  
- *type-specifier declaration-specifiers*opt  
-  
- *type-qualifier declaration-specifiers*opt  
-  
- *init-declarator-list*:  
- *init-declarator*  
-  
- *init-declarator-list* , *init-declarator*  
-  
- *init-declarator*:  
- *declarator*  
-  
- *declarator*  **=**  *initializer*  
+## <a name="syntax"></a>구문
+
+*declaration*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers* *attribute-seq*<sub>opt</sub> *init-declarator-list*<sub>opt</sub>**;**
+
+/\* *attribute-seq*<sub>opt</sub>는 Microsoft 전용임 */
+
+*declaration-specifiers*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*storage-class-specifier* *declaration-specifiers*<sub>opt</sub>  
+&nbsp;&nbsp;&nbsp;&nbsp;*type-specifier* *declaration-specifiers*<sub>opt</sub>  
+&nbsp;&nbsp;&nbsp;&nbsp;*type-qualifier* *declaration-specifiers*<sub>opt</sub>  
+
+*init-declarator-list*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator*  
+&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator-list* **,** *init-declarator*  
+
+*init-declarator*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*declarator*  
+&nbsp;&nbsp;&nbsp;&nbsp;*declarator* **=** *initializer*  
   
 > [!NOTE]
->  이 `declaration` 구문은 후속 섹션에서 반복되지 않습니다. 일반적으로 후속 섹션의 구문은 `declarator` 비단말로 시작됩니다.  
+> 이 *declaration*의 구문은 후속 섹션에서 반복되지 않습니다. 일반적으로 후속 섹션의 구문은 *declarator* 비단말로 시작됩니다.  
   
- *init-declarator-list*의 선언에는 명명 중인 식별자가 포함됩니다. *init*는 이니셜라이저의 약어입니다. *init-declarator-list*는 쉼표로 구분된 일련의 선언자로서 각 선언자에는 추가 형식 정보나 이니셜라이저 또는 이 두 가지가 모두 있을 수 있습니다. `declarator`에는 선언 중인 식별자(있는 경우)가 포함됩니다. *declaration-specifiers* 비터미널은 일련의 형식 및 저장소 클래스 지정자로 구성됩니다. 이러한 지정자는 선언자가 나타내는 엔터티의 링크, 저장 기간 및 최소한의 형식 부분을 나타냅니다. 따라서 선언은 저장소 클래스 지정자, 형식 지정자, 형식 한정자, 선언자 및 이니셜라이저의 조합으로 구성됩니다.  
+ *init-declarator-list*의 선언에는 명명 중인 식별자가 포함됩니다. *init*는 이니셜라이저의 약어입니다. *init-declarator-list*는 쉼표로 구분된 일련의 선언자로서 각 선언자에는 추가 형식 정보나 이니셜라이저 또는 이 두 가지가 모두 있을 수 있습니다. *declarator*에는 선언 중인 식별자(있는 경우)가 포함됩니다. *declaration-specifiers* 비터미널은 일련의 형식 및 저장소 클래스 지정자로 구성됩니다. 이러한 지정자는 선언자가 나타내는 엔터티의 링크, 저장 기간 및 최소한의 형식 부분을 나타냅니다. 따라서 선언은 저장소 클래스 지정자, 형식 지정자, 형식 한정자, 선언자 및 이니셜라이저의 조합으로 구성됩니다.  
   
  선언에는 *attribute-seq*에 나열된 선택적 특성이 하나 이상 포함될 수 있습니다. *seq*는 시퀀스의 약어입니다. 이러한 Microsoft 전용 특성은 이 설명서 전반에 설명되어 있는 다양한 기능을 수행합니다.  
   
@@ -63,7 +60,7 @@ int const *fp;
   
  이 예제는 `fp`라는 이름의 변수를 수정할 수 없는 (**const**) `int` 값에 대한 포인터로 선언합니다. 쉼표로 구분된 여러 선언자를 사용하여 한 선언에서 둘 이상의 변수를 정의할 수 있습니다.  
   
- 선언에 선언자가 하나 이상 있거나 형식 지정자가 구조체 태그, 공용 구조체 태그 또는 열거형의 멤버를 선언해야 합니다. 선언자는 식별자에 대한 나머지 정보를 제공합니다. 선언자는 대괄호(**[ ]**), 별표(**\***) 또는 괄호( **( )** )로 수정하여 배열, 포인터 또는 함수 형식을 각각 선언할 수 있는 식별자입니다. 단순 변수(문자, 정수 및 부동 소수점 항목) 또는 단순 변수의 구조체 및 공용 구조체를 선언할 때 `declarator`는 식별자로만 사용됩니다. 선언자에 대한 자세한 내용은 [선언자 및 변수 선언](../c-language/declarators-and-variable-declarations.md)을 참조하세요.  
+ 선언에 선언자가 하나 이상 있거나 형식 지정자가 구조체 태그, 공용 구조체 태그 또는 열거형의 멤버를 선언해야 합니다. 선언자는 식별자에 대한 나머지 정보를 제공합니다. 선언자는 대괄호(**[ ]**), 별표(<strong>\*</strong>) 또는 괄호( **( )** )로 수정하여 배열, 포인터 또는 함수 형식을 각각 선언할 수 있는 식별자입니다. 단순 변수(문자, 정수 및 부동 소수점 항목) 또는 단순 변수의 구조체 및 공용 구조체를 선언할 때 `declarator`는 식별자로만 사용됩니다. 선언자에 대한 자세한 내용은 [선언자 및 변수 선언](../c-language/declarators-and-variable-declarations.md)을 참조하세요.  
   
  모든 정의는 암시적으로 선언이지만 모든 선언이 정의인 것은 아닙니다. 예를 들어 `extern` 저장소 클래스 지정자로 시작되는 변수 선언은 "정의" 선언이라기 보다는 "참조" 선언입니다. 외부 변수가 정의 전에 참조되거나 사용된 소스 파일과 다른 소스 파일에 정의된 경우 `extern` 선언이 필요합니다. 저장소는 "참조" 선언에 의해 할당되지 않으며 선언에서 변수를 초기화할 수도 없습니다.  
   

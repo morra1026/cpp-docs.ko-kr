@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ccdec81251589ba36209f878f1fa8b727d7d2b98
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8cd45a20557eb3a7b2af3b1c2ecba3cc858af503
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409279"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205262"
 ---
 # <a name="sbcs-and-mbcs-data-types"></a>SBCS 및 MBCS 데이터 형식
 
@@ -34,7 +34,7 @@ ms.locfileid: "32409279"
 
 따라서 멀티바이트 문자의 바이트를 8비트 `unsigned char`로 표현하는 것이 가장 좋습니다. 또는 음수 결과를 방지하기 위해 **char** 형식의 싱글바이트 문자를 먼저 `unsigned char`로 변환한 다음, **int** 또는 **long**으로 변환합니다.
 
-일부 SBCS 문자열 처리 함수는 (signed) **char\*** 매개 변수를 사용하기 때문에 **_MBCS**가 정의되면 형식 불일치 컴파일러 경고가 발생합니다. 이 경고를 피하기 위한 세 가지 방법이 유용성 순서대로 나열됩니다.
+일부 SBCS 문자열 처리 함수는 (signed) **char**<strong>\*</strong> 매개 변수를 사용하기 때문에 **_MBCS**가 정의되면 형식 불일치 컴파일러 경고가 발생합니다. 이 경고를 피하기 위한 세 가지 방법이 유용성 순서대로 나열됩니다.
 
 1. TCHAR.H에 형식이 안전한 인라인 함수를 사용합니다. 이것은 기본적인 동작입니다.
 
