@@ -1,7 +1,7 @@
 ---
 title: path 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/10/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -14,16 +14,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4559bec84d7e6051155ad73f68a1ef8ae13ca6cc
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: e47310a93a3901f072330a57619c2655aefb7ff5
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44104162"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44691512"
 ---
 # <a name="path-class"></a>path 클래스
 
-**path** 클래스는 string\_type 형식의 개체(여기서는 표시 편의상 이름이 myname으로 지정됨)를 저장하며 경로 이름으로 사용하는 데 적합합니다. string\_type은 basic\_string\<value_type>과 동일한 의미이며, 여기서 value\_type은 Windows에서는 char와, Posix에서는 wchar_t와 동일한 의미입니다.
+합니다 **경로** 형식의 개체를 저장 하는 클래스 `string_type`라는 `myname` 경로 이름으로 사용 하기 적합 한 표시를 위해 여기입니다. `string_type` 에 대 한 동의어 `basic_string<value_type>`, 여기서 `value_type` 의 동의어입니다 **char** Windows 아래에서 또는 **wchar_t** posix 합니다.
 
 자세한 내용 및 코드 예제를 보려면 [파일 시스템 탐색(C++)](../standard-library/file-system-navigation.md)을 참조하세요.
 
@@ -443,7 +443,7 @@ class iterator
 
 ## <a name="make_preferred"></a> path:: make_preferred
 
-필요에 따라 각 구분 기호를 preferred_separator 변환 합니다.
+각 구분 기호를 변환 된 `preferred_separator` 필요에 따라 합니다.
 
 ```cpp
 path& make_preferred();
@@ -529,7 +529,7 @@ path& operator+=(Elem elem);
 
 1. `concat(source);`
 
-1. `concat(path(basic_string\<Elem>(1, elem)));`
+1. `concat(path(basic_string<Elem>(1, elem)));`
 
 ## <a name="op_divide"></a> path:: operator / =
 
@@ -576,7 +576,7 @@ path parent_path() const;
 
 ### <a name="remarks"></a>설명
 
-부모 경로 구성 요소를 반환 합니다. `myname`, 특히 접두사 `myname` 제거한 후 `filename().native()` 와 바로 앞 디렉터리 구분 기호입니다. (경우에 동일 하 게 `begin() != end()`, [begin (), 이면 operator / =를 연속적으로 적용 하 여. 범위에 있는 모든 요소 결합) 구성 요소는 비어 있을 수 있습니다.
+부모 경로 구성 요소를 반환 합니다. `myname`, 특히 접두사 `myname` 제거한 후 `filename().native()` 와 바로 앞 디렉터리 구분 기호입니다. (경우에 동일 하 게 `begin() != end()`, 범위에 있는 모든 요소 결합 `[begin(), --end())` 연속적으로 적용 하 여 `operator/=`.) 구성 요소는 비어 있을 수 있습니다.
 
 ## <a name="path"></a> path:: path
 
@@ -687,7 +687,7 @@ path& replace_extension(const path& newext = path());
 
 ### <a name="remarks"></a>설명
 
-먼저 접미사를 제거 `extension().native()` 에서 `myname`합니다. 경우 `!newext.empty() && newext[0] != dot` (여기서 `dot` 됩니다 `*path(".").c_str()`), 한 다음 `dot` 에 추가 됩니다 `myname`. 그런 다음 `newext` 에 추가 됩니다 `myname`합니다.
+먼저 접미사를 제거 `extension().native()` 에서 `myname`합니다. 경우 `!newext.empty() && newext[0] != dot` (여기서 `dot` 됩니다 `*path(".").c_str()`), 한 다음 `dot` 에 추가 됩니다 `myname`. 그런 다음 *newext* 에 추가 됩니다 `myname`합니다.
 
 ## <a name="replace_filename"></a> path:: replace_filename
 
@@ -747,7 +747,7 @@ path root_path() const;
 
 ### <a name="remarks"></a>설명
 
-루트 경로 구성 요소를 반환 `myname`, 특히 root_name () / root_directory 합니다. 구성 요소는 비어 있을 수 있습니다.
+루트 경로 구성 요소를 반환 `myname`, 특히 `root_name()`  /  `root_directory`합니다. 구성 요소는 비어 있을 수 있습니다.
 
 ## <a name="stem"></a> path:: stem
 
@@ -773,7 +773,7 @@ string string() const;
 
 ### <a name="remarks"></a>설명
 
-첫 번째(템플릿) 멤버 함수는 mypath에 저장된 시퀀스를 다음과 동일한 방식으로 변환합니다.
+첫 번째 (템플릿) 멤버 함수 변환에 저장 된 시퀀스 `mypath` 동일한 방식으로:
 
 1. `string<char, Traits, Alloc>()`에 대한 `string()`
 
@@ -783,7 +783,7 @@ string string() const;
 
 1. `string<char32_t, Traits, Alloc>()`에 대한 `u32string()`
 
-두 번째 멤버 함수 변환에 저장 된 시퀀스 `mypath` char 시퀀스 및 문자열 형식의 개체에 저장 된 반환에 대 한 호스트 시스템에서 선호 하는 인코딩으로 합니다.
+두 번째 멤버 함수에 저장 된 시퀀스를 변환 `mypath` 에 대해 호스트 시스템에서 선호 하는 인코딩으로 **char** 시퀀스 및 반환 형식의 개체에 저장 된 `string`합니다.
 
 ## <a name="string_type"></a> path::string_type
 
@@ -827,7 +827,7 @@ string u8string() const;
 
 ## <a name="value_type"></a> path::value_type
 
-형식은 호스트 운영 체제에서 선호하는 경로 요소를 설명합니다.
+형식에 설명 합니다 `path` 호스트 운영 체제에서 선호 하는 요소입니다.
 
 ```cpp
 #if _WIN32_C_LIB
@@ -839,7 +839,7 @@ typedef char value_type;
 
 ## <a name="wstring"></a> path::wstring
 
-에 저장 된 시퀀스를 변환 `mypath` 에 대해 호스트 시스템에서 선호 하는 인코딩으로 `wchar_t` 시퀀스 및 반환 형식의 개체에 저장 된 `wstring`합니다.
+에 저장 된 시퀀스를 변환 `mypath` 에 대해 호스트 시스템에서 선호 하는 인코딩으로 **wchar_t** 시퀀스 및 반환 형식의 개체에 저장 된 `wstring`합니다.
 
 ```cpp
 wstring wstring() const;

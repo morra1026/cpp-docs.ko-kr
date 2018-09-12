@@ -1,7 +1,7 @@
 ---
 title: regex_traits&lt;wchar_t&gt; 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/10/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45710c4a1abca000b5cc8bca4a9db8032e874d9c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: ff84c0d8b3da721c5d5830be798e2ff03947a16a
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958960"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44691642"
 ---
 # <a name="regextraitsltwchartgt-class"></a>regex_traits&lt;wchar_t&gt; 클래스
 
-wchar_t에 대한 regex_traits의 특수화입니다.
+특수화 `regex_traits` 에 대 한 **wchar_t**합니다.
 
 ## <a name="syntax"></a>구문
 

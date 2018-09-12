@@ -1,7 +1,7 @@
 ---
 title: directory_iterator 클래스 | Microsoft 문서
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/10/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -35,24 +35,24 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_iterator::operator++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36cbf9e8d4ebdf62cbbfdc5a37ca1c49d7106a42
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 09970c0d3cf8771317c93670c0ec7f029e1ace2a
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105215"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44691590"
 ---
 # <a name="directoryiterator-class"></a>directory_iterator 클래스
 
-디렉터리에서 파일 이름을 통해 시퀀스되는 입력 반복기에 대해 설명합니다. 반복기 X에 대해 식 *X는 파일 이름과 상태에 대해 알려진 모든 항목을 래핑하는 directory_entry 클래스의 개체로 계산됩니다.
+디렉터리에서 파일 이름을 통해 시퀀스되는 입력 반복기에 대해 설명합니다. 반복기에 대 한 `X`, 식 `*X` 클래스의 개체로 계산 `directory_entry` 파일 이름 및 해당 상태에 대 한 알려진 모든 항목을 래핑하는 합니다.
 
-클래스는 이라는 경로 형식의 개체를 저장 `mydir` directory_entry 형식의 개체 호출 및 여기을 시퀀스 할 디렉터리의 이름을 나타내는 표시를 위해 `myentry` 현재 파일 이름을 나타내는 여기 디렉터리 시퀀스입니다. Directory_entry 형식의 기본 생성 개체에 빈 `mydir` pathname 시퀀스의 끝 반복기를 나타냅니다.
+클래스 형식의 개체를 저장 `path`라는 `mydir` 시퀀스 할 디렉터리의 이름을 나타내는 표시 및 형식의 개체에 대 한 여기 `directory_entry` 호출 `myentry` 현재 나타내는 여기 디렉터리 시퀀스에서 파일 이름입니다. 형식의 기본 생성 개체를 `directory_entry` 는 빈 `mydir` pathname 시퀀스의 끝 반복기를 나타냅니다.
 
-예를 들어 def 및 ghi 항목과 함께 디렉터리 abc를 지정할 경우 코드는 다음과 같습니다.
+예를 들어, 디렉터리를 지정 `abc` 항목과 `def` 고 `ghi`, 코드:
 
 `for (directory_iterator next(path("abc")), end; next != end; ++next)     visit(next->path());`
 
-호출 `visit` path("abc/ghi") 인수 path("abc/def")와 합니다.
+호출 `visit` 인수를 사용 하 여 `path("abc/def")` 고 `path("abc/ghi")`입니다.
 
 자세한 내용 및 코드 예제를 보려면 [파일 시스템 탐색(C++)](../standard-library/file-system-navigation.md)을 참조하세요.
 
@@ -72,7 +72,7 @@ class directory_iterator;
 
 |멤버 함수|설명|
 |-|-|
-|[increment](#increment)|함수는 디렉터리의 다음 파일 이름으로 이동하려고 합니다.|
+|[increment](#increment)|디렉터리에서 다음 파일 이름으로 이동 하려고 합니다.|
 
 ### <a name="operators"></a>연산자
 
