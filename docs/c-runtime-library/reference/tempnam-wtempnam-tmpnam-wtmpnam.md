@@ -50,12 +50,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdd853affc343a4f07c64d025cd73122fdb8d458
-ms.sourcegitcommit: 32fd693d092ea0b43c3916703364f494a5b502cf
+ms.openlocfilehash: ce1b0a495c2556b39a18937635d9109eaaeb2433
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44389486"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44691421"
 ---
 # <a name="tempnam-wtempnam-tmpnam-wtmpnam"></a>_tempnam, _wtempnam, tmpnam, _wtmpnam
 
@@ -100,7 +100,7 @@ TMP 환경 함수가 없는 경우 또는 TMP가 올바른 디렉터리가 아�
 
 ## <a name="remarks"></a>설명
 
-이러한 각 함수는 현재 없는 파일의 이름을 반환합니다. **tmpnam** 에서 반환 된 지정 된 Windows 임시 디렉터리에 고유한 이름을 반환 [GetTempPathW](/windows/desktop/api/fileapi/nf-fileapi-gettemppathw)합니다. **\_tempnam** 지정 된 것과 다른 디렉터리에 고유 이름을 생성 합니다. \fname21과 같이 파일 이름 앞에 백슬래시가 붙고 경로 정보는 없는 경우 현재 작업 디렉터리에 대해 해당 이름이 유효함을 나타냅니다. 
+이러한 각 함수는 현재 없는 파일의 이름을 반환합니다. **tmpnam** 에서 반환 된 지정 된 Windows 임시 디렉터리에 고유한 이름을 반환 [GetTempPathW](/windows/desktop/api/fileapi/nf-fileapi-gettemppathw)합니다. **\_tempnam** 지정 된 것과 다른 디렉터리에 고유 이름을 생성 합니다. \fname21과 같이 파일 이름 앞에 백슬래시가 붙고 경로 정보는 없는 경우 현재 작업 디렉터리에 대해 해당 이름이 유효함을 나타냅니다.
 
 에 대 한 **tmpnam**,이 생성 된 파일 이름에 저장할 수 있습니다 *str*합니다. 경우 *str* 됩니다 **NULL**, 한 다음 **tmpnam** 결과 내부 정적 버퍼에 유지 합니다. 따라서 모든 후속 호출에서는 이 값을 제거합니다. 생성 된 이름을 **tmpnam** 으로 구성 됩니다 프로그램에서 생성 된 파일 이름의 첫 번째 호출 후 **tmpnam**, 순차적 숫자의 파일 확장명 (.1-.vvu 경우 **TMP_MAX**  STDIO에서. H는 32,767 자).
 
@@ -141,44 +141,69 @@ TMP 환경 함수가 없는 경우 또는 TMP가 올바른 디렉터리가 아�
 // crt_tempnam.c
 // compile with: /W3
 // This program uses tmpnam to create a unique filename in the
-// current working directory, then uses _tempnam to create
-// a unique filename with a prefix of stq.
+// temporary directory, and _tempname to create a unique filename
+// in C:\\tmp.
 
 #include <stdio.h>
 #include <stdlib.h>
 
-int main( void )
+int main(void)
 {
-   char* name1 = NULL;
-   char* name2 = NULL;
+   char * name1 = NULL;
+   char * name2 = NULL;
+   char * name3 = NULL;
 
    // Create a temporary filename for the current working directory:
-   if( ( name1 = tmpnam( NULL ) ) != NULL ) // C4996
+   if ((name1 = tmpnam(NULL)) != NULL) { // C4996
    // Note: tmpnam is deprecated; consider using tmpnam_s instead
-      printf( "%s is safe to use as a temporary file.\n", name1 );
-   else
-      printf( "Cannot create a unique filename\n" );
+      printf("%s is safe to use as a temporary file.\n", name1);
+   } else {
+      printf("Cannot create a unique filename\n");
+   }
 
    // Create a temporary filename in temporary directory with the
    // prefix "stq". The actual destination directory may vary
    // depending on the state of the TMP environment variable and
    // the global variable P_tmpdir.
 
-   if( ( name2 = _tempnam( "c:\\tmp", "stq" ) ) != NULL )
-      printf( "%s is safe to use as a temporary file.\n", name2 );
-   else
-      printf( "Cannot create a unique filename\n" );
+   if ((name2 = _tempnam("c:\\tmp", "stq")) != NULL) {
+      printf("%s is safe to use as a temporary file.\n", name2);
+   } else {
+      printf("Cannot create a unique filename\n");
+   }
 
-   // When name2 is no longer needed :
-   if(name2)
-     free(name2);
+   // When name2 is no longer needed:
+   if (name2) {
+      free(name2);
+   }
 
+   // Unset TMP environment variable, then create a temporary filename in C:\tmp.
+   if (_putenv("TMP=") != 0) {
+      printf("Could not remove TMP environment variable.\n");
+   }
+
+   // With TMP unset, we will use C:\tmp as the temporary directory.
+   // Create a temporary filename in C:\tmp with prefix "stq".
+   if ((name3 = _tempnam("c:\\tmp", "stq")) != NULL) {
+      printf("%s is safe to use as a temporary file.\n", name3);
+   }
+   else {
+      printf("Cannot create a unique filename\n");
+   }
+
+   // When name3 is no longer needed:
+   if (name3) {
+      free(name3);
+   }
+
+   return 0;
 }
 ```
 
 ```Output
-\s1gk. is safe to use as a temporary file.
-C:\DOCUME~1\user\LOCALS~1\Temp\2\stq2 is safe to use as a temporary file.
+C:\Users\LocalUser\AppData\Local\Temp\sriw.0 is safe to use as a temporary file.
+C:\Users\LocalUser\AppData\Local\Temp\stq2 is safe to use as a temporary file.
+c:\tmp\stq3 is safe to use as a temporary file.
 ```
 
 ## <a name="see-also"></a>참고자료

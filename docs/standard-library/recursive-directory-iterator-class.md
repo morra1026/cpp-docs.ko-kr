@@ -1,7 +1,7 @@
 ---
 title: recursive_directory_iterator 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/10/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82df045c5a41767093e690ec35ffeb3d81032474
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 0d3765f57ee299a70a54e3b69dbaee0e0687a64c
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110658"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44691655"
 ---
 # <a name="recursivedirectoryiterator-class"></a>recursive_directory_iterator 클래스
 
@@ -41,7 +41,7 @@ class recursive_directory_iterator;
 
 1. 형식의 개체 `directory_entry` 호출 `myentry` 디렉터리 시퀀스에서 현재 파일 이름을 나타내는 여기
 
-1. 형식의 개체 `bool`라는 `no_push` 여기에 하위 디렉터리로 재귀적 상속이 비활성화 되었는지 여부를 기록 합니다.
+1. 형식의 개체 **bool**라는 `no_push` 여기에 하위 디렉터리로 재귀적 상속이 비활성화 되었는지 여부를 기록 합니다.
 
 1. 형식의 개체 `directory_options`라는 `myoptions` 생성 시 설정 된 옵션을 기록 하는 여기
 
