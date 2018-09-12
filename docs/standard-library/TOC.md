@@ -346,7 +346,7 @@
 #### [<regex> 형식 정의](regex-typedefs.md)
 #### [basic_regex 클래스](basic-regex-class.md)
 #### [match_results 클래스](match-results-class.md)
-#### [regex_constants 클래스](regex-constants-class.md)
+#### [regex_constants 네임스페이스](regex-constants-class.md)
 #### [regex_error 클래스](regex-error-class.md)
 #### [regex_iterator 클래스](regex-iterator-class.md)
 #### [regex_token_iterator 클래스](regex-token-iterator-class.md)
