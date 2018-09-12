@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46062043959c3ea525273e8bcf1a4112a0f42a67
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bb5ba3c26355917d993f1d82b945c77bde918b0f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391963"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206135"
 ---
 # <a name="is-isw-routines"></a>is, isw 루틴
 |||  
@@ -80,7 +80,7 @@ ms.locfileid: "32391963"
  `__iscsymf`  
  문자 또는 밑줄  
   
- **isdigit**  
+ `isdigit`  
  10진수(0-9)  
   
  `isgraph`  
@@ -121,17 +121,16 @@ ms.locfileid: "32391963"
  `iswcntrl`  
  제어 와이드 문자  
   
- **__iswcsym**  
- **isalnum**이 true인 경우 와이드 문자 또는 '_' 문자  
+ `__iswcsym`  
+ `isalnum`가 true인 경우 와이드 문자 또는 '_' 문자  
   
- **__iswcsymf**  
+ `__iswcsymf`  
  `iswalpha`가 true인 경우 와이드 문자 또는 '_' 문자  
   
  `iswctype`  
  문자에 `desc` 인수에 의해 지정된 속성이 있습니다. 다음 표에 표시된 것처럼, `iswctype`의 `desc` 인수에 유효한 각 값에 대해 해당하는 와이드 문자 분류 루틴이 있습니다.  
   
- **기타 isw 테스트 루틴에 대한 iswctype(**   
- ***c, desc*) 동등성**  
+ ### <a name="equivalence-of-iswctypec-desc-to-other-isw-testing-routines"></a>기타 isw 테스트 루틴에 대한 iswctype(c, desc) 동등성
   
 |*desc* 인수 값|해당 iswctype( *c, desc* )|  
 |------------------------------|----------------------------------------|  

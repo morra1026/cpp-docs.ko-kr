@@ -16,27 +16,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 25ca58d9818782b51e6c07bb6bb758948adab3ae
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d2257ff9be5988ed6a08dd5d152c83910c6edc88
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387962"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214721"
 ---
 # <a name="multidimensional-arrays-c"></a>다차원 배열 (C)
 첨자 식에는 다음과 같이 여러 첨자가 있을 수도 있습니다.  
   
 ```  
-  
-expression1  
-[  
-expression2  
-] [  
-expression3  
-]...  
+expression1 [ expression2 ] [ expression3 ] ...  
 ```  
   
- 첨자 식은 왼쪽에서 오른쪽으로 연결합니다. 맨 왼쪽 첨자 식인 *expression1 ***[*** expression2***]** 가 먼저 계산됩니다. *expression1* 및 *expression2*를 추가한 결과인 주소는 포인터 식을 형성합니다. 그런 다음 이 포인터 식에 *expression3*이 추가되어 새 포인터 식을 형성하고 마지막 첨자 식이 추가될 때까지 계속됩니다. 최종 포인터 값이 배열 형식의 주소를 지정하지 않으면 마지막 첨자 식이 계산된 후 간접 참조 연산자(**\***)가 적용됩니다(아래 예제 참조).  
+ 첨자 식은 왼쪽에서 오른쪽으로 연결합니다. 맨 왼쪽 첨자 식인 *expression1* **[** *expression2* **]** 가 먼저 계산됩니다. *expression1* 및 *expression2*를 추가한 결과인 주소는 포인터 식을 형성합니다. 그런 다음 이 포인터 식에 *expression3*이 추가되어 새 포인터 식을 형성하고 마지막 첨자 식이 추가될 때까지 계속됩니다. 최종 포인터 값이 배열 형식의 주소를 지정하지 않으면 마지막 첨자 식이 계산된 후 간접 참조 연산자(<strong>\*</strong>)가 적용됩니다(아래 예제 참조).  
   
  여러 첨자가 포함된 식은 "다차원 배열"의 요소를 참조합니다. 다차원 배열은 요소가 배열인 배열입니다. 예를 들어 3차원 배열의 첫 번째 요소는 2차원 배열입니다.  
   
