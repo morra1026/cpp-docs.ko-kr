@@ -1,7 +1,7 @@
 ---
 title: Visual Studio에서 C++ Linux 프로젝트 구성 | Microsoft Docs
 ms.custom: ''
-ms.date: 04/28/2018
+ms.date: 09/05/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -14,17 +14,19 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: b4e5bad5b0688a2f0deeb237335c26419e2d9cbe
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: fbc0674a7659ffccd5ab5c655f74167acebdca97
+ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207904"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43895203"
 ---
 # <a name="configure-a-linux-project"></a>Linux 프로젝트 구성
+
 이 항목에서는 Visual Studio에서 C++ Linux 프로젝트를 구성하는 방법을 설명합니다. Visual Studio에서 CMake Linux 프로젝트에 대한 자세한 내용은 [Linux CMake 프로젝트 구성](cmake-linux-project.md)을 참조하세요.
 
 ## <a name="general-settings"></a>일반 설정
+
 Visual Studio를 사용하여 Linux 프로젝트에 대해 다양한 옵션을 구성할 수 있습니다.  이러한 옵션을 보려면 **프로젝트 > 속성** 메뉴를 선택하거나 **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 상황에 맞는 메뉴에서 **속성**을 선택합니다. **일반 설정**이 나타납니다.
 
 ![일반 구성](media/settings_general.png)
@@ -32,13 +34,14 @@ Visual Studio를 사용하여 Linux 프로젝트에 대해 다양한 옵션을 �
 기본적으로는 실행 파일(.out)은 도구를 사용하여 빌드됩니다.  정적 또는 동적 라이브러리를 빌드하거나 기존 메이크파일을 사용하려면 **구성 형식** 선택을 사용합니다.
 
 ## <a name="remote-settings"></a>원격 설정
+
 원격 Linux 컴퓨터와 관련된 설정을 변경하려면 **일반** 설정에 표시되는 원격 옵션을 구성합니다.
 
-* 대상 Linux 컴퓨터를 변경하려면 **원격 빌드 컴퓨터** 항목을 사용합니다.  이렇게 하면 이전에 만든 연결 중 하나를 선택할 수 있습니다.  새 항목을 만들려면 [Connecting to Your Remote Linux Computer](connect-to-your-remote-linux-computer.md)(원격 Linux 컴퓨터에 연결) 섹션을 참조하세요.
+- 대상 Linux 컴퓨터를 변경하려면 **원격 빌드 컴퓨터** 항목을 사용합니다.  이렇게 하면 이전에 만든 연결 중 하나를 선택할 수 있습니다.  새 항목을 만들려면 [Connecting to Your Remote Linux Computer](connect-to-your-remote-linux-computer.md)(원격 Linux 컴퓨터에 연결) 섹션을 참조하세요.
 
-* **원격 빌드 루트 디렉터리**는 프로젝트가 원격 Linux 컴퓨터에서 빌드되는 루트 위치를 결정합니다.  달리 변경하지 않은 경우 기본값은 **~/projects**로 설정됩니다.
+- **원격 빌드 루트 디렉터리**는 프로젝트가 원격 Linux 컴퓨터에서 빌드되는 루트 위치를 결정합니다.  달리 변경하지 않은 경우 기본값은 **~/projects**로 설정됩니다.
 
-* **원격 빌드 프로젝트 디렉터리**는 원격 Linux 컴퓨터에서 이 특정 프로젝트가 빌드되는 위치입니다.  기본값은 **$(RemoteRootDir)/$(ProjectName)** 이며, 위에 설정된 루트 디렉터리 아래의 현재 프로젝트를 따라 명명된 디렉터리로 확장됩니다.
+- **원격 빌드 프로젝트 디렉터리**는 원격 Linux 컴퓨터에서 이 특정 프로젝트가 빌드되는 위치입니다.  기본값은 **$(RemoteRootDir)/$(ProjectName)** 이며, 위에 설정된 루트 디렉터리 아래의 현재 프로젝트를 따라 명명된 디렉터리로 확장됩니다.
 
 > [!NOTE]
 > 프로젝트를 빌드하는 데 사용되는 기본 C 및 C++ 컴파일러 또는 링커 및 보관기를 변경하려면 **C/C++ > 일반** 섹션 및 **링커 > 일반** 섹션에서 적절한 항목을 사용합니다.  예를 들어 이러한 항목은 GCC 또는 Clang 컴파일러의 특정 버전을 사용하여 설정할 수 있습니다.
@@ -61,17 +64,19 @@ Visual Studio를 사용하여 Linux 프로젝트에 대해 다양한 옵션을 �
 **Visual Studio 2017 버전 15.7 이상:** [IntelliSense용 원격 헤더 관리](#remote_intellisense)를 참조하세요.
 
 ## <a name="copy-sources"></a>소스 복사
+
 빌드할 때 개발 PC의 소스 파일이 Linux 컴퓨터에 복사되어 해당 컴퓨터에서 컴파일됩니다.  기본적으로 Visual Studio 프로젝트의 모든 소스가 위의 설정에 지정된 위치에 복사됩니다.  그러나 추가 소스가 목록에 추가되거나, 소스 복사가 완전히 꺼질 수 있습니다(메이크파일 프로젝트에 대한 기본값).
 
-* **복사할 소스**가 원격 컴퓨터에 복사되는 소스를 결정합니다.  기본적으로 **@(SourcesToCopyRemotely)** 는 프로젝트의 모든 소스 코드 파일로 설정되지만 이미지와 같은 자산/리소스 파일은 포함하지 않습니다.
+- **복사할 소스**가 원격 컴퓨터에 복사되는 소스를 결정합니다.  기본적으로 **\@(SourcesToCopyRemotely)** 는 프로젝트의 모든 소스 코드 파일로 설정되지만 이미지와 같은 자산/리소스 파일은 포함하지 않습니다.
 
-* **소스 복사**는 원격 컴퓨터에 소스 파일 복사를 사용하거나 사용하지 않기 위해 켜거나 끌 수 있습니다.
+- **소스 복사**는 원격 컴퓨터에 소스 파일 복사를 사용하거나 사용하지 않기 위해 켜거나 끌 수 있습니다.
 
-* **복사할 추가 소스**를 통해 원격 시스템에 복사되는 추가 소스 파일을 추가할 수 있습니다.  세미콜론으로 구분된 목록을 지정하거나 **:=** 구문으로 사용할 로컬 및 원격 이름을 지정할 수 있습니다.
+- **복사할 추가 소스**를 통해 원격 시스템에 복사되는 추가 소스 파일을 추가할 수 있습니다.  세미콜론으로 구분된 목록을 지정하거나 **:=** 구문으로 사용할 로컬 및 원격 이름을 지정할 수 있습니다.
 
-  `C:\Projects\ConsoleApplication1\MyFile.cpp:=~/projects/ConsoleApplication1/ADifferentName.cpp;C:\Projects\ConsoleApplication1\MyFile2.cpp:=~/projects/ConsoleApplication1/ADifferentName2.cpp;`
+`C:\Projects\ConsoleApplication1\MyFile.cpp:=~/projects/ConsoleApplication1/ADifferentName.cpp;C:\Projects\ConsoleApplication1\MyFile2.cpp:=~/projects/ConsoleApplication1/ADifferentName2.cpp;`
 
 ## <a name="build-events"></a>빌드 이벤트
+
 원격 컴퓨터에서 모든 컴파일이 수행된 후 몇 가지 추가 빌드 이벤트가 프로젝트 속성의 빌드 이벤트 섹션에 추가되었습니다.  이들은 **원격 빌드 전 이벤트**, **원격 링크 전 이벤트** 및 **빌드 후 이벤트 제거**이며, 프로세스의 개별 단계 전 또는 후에 원격 컴퓨터에서 발생합니다.
 
 ![빌드 이벤트](media/settings_buildevents.png)
@@ -91,6 +96,7 @@ apt install zip
 ![원격 헤더 IntelliSense](media/remote-header-intellisense.png)
 
 ## <a name="see-also"></a>참고 항목
+
 [프로젝트 속성 사용](../ide/working-with-project-properties.md)  
 [C++ 일반 속성(Linux C++)](../linux/prop-pages/general-linux.md)  
 [VC++ 디렉터리(Linux C++)](../linux/prop-pages/directories-linux.md)  
