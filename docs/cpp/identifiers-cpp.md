@@ -1,7 +1,7 @@
 ---
 title: 식별자 (c + +) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d112e7ca192e56ede21d06e7ff17a775d661d01
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: cad3c53be23d472a8ce40dae9056d73ab1de1c89
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39405232"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535147"
 ---
 # <a name="identifiers-c"></a>식별자 (c + +)
 식별자는 다음 중 하나를 나타내는 데 사용되는 문자 시퀀스입니다.  
@@ -104,7 +104,7 @@ int main() {
   
  식별자는 키워드와 정확히 동일한 철자와 대/소문자를 사용할 수 없습니다. 키워드가 포함된 식별자를 사용할 수 있습니다. 예를 들어 `Pint` 는 올바른 식별자를 포함 하는 경우에 **int**, 키워드는 합니다.  
   
- 식별자 앞에 오는 두 개의 연속 밑줄 문자( **__** ) 또는 대문자가 이어지는 단일 선행 밑줄은 모든 범위에서 C++ 구현을 위해 예약됩니다. 현재 또는 나중에 예약되는 식별자와 충돌할 수 있기 때문에 파일 범위가 있는 이름에 소문자가 뒤에 오는 단일 선행 밑줄을 사용하지 않도록 해야 합니다.  
+ 두 개의 연속 밑줄 문자 ( **__** ) 식별자 또는 단일 선행 밑줄 뒤에 대문자, 모든 범위에서 c + + 구현을 위해 예약 됩니다. 현재 또는 나중에 예약되는 식별자와 충돌할 수 있기 때문에 파일 범위가 있는 이름에 소문자가 뒤에 오는 단일 선행 밑줄을 사용하지 않도록 해야 합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [어휘 규칙](../cpp/lexical-conventions.md)

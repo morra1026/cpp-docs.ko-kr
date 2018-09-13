@@ -1,7 +1,7 @@
 ---
 title: MFC ActiveX 컨트롤 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -17,15 +17,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 96ecae8445368357da3bc7b271156f961c1c1dca
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 0278ce0349b24680252100704031645c995fef51
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43687148"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535082"
 ---
 # <a name="creating-an-mfc-activex-control"></a>MFC ActiveX 컨트롤 만들기
 ActiveX 컨트롤 프로그램은 부모 응용 프로그램에 특정 종류의 기능을 제공 하도록 설계는 모듈식 프로그램입니다. 예를 들어 대화 상자에서 또는 웹 페이지에서 사용 하 여 도구 모음에서 사용할 단추와 같은 컨트롤을 만들면 됩니다.  
+
+>[!IMPORTANT]
+> ActiveX는 새로운 개발에 사용 되지 해야 하는 레거시 기술입니다. 자세한 내용은 [ActiveX 컨트롤](../activex-controls.md)합니다.
   
  MFC ActiveX 컨트롤을 만드는 가장 쉬운 방법은 사용 하는 것은 [MFC ActiveX 컨트롤 마법사](../../mfc/reference/mfc-activex-control-wizard.md)합니다.  
   

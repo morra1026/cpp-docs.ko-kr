@@ -1,7 +1,7 @@
 ---
 title: MFC ActiveX 컨트롤 컨테이너 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -19,23 +19,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 322e7feba87b83802299a99ad36b16e35704f2ed
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7167f00e3abf74d4638bc79615d68ed81fafabf9
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372484"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535121"
 ---
 # <a name="creating-an-mfc-activex-control-container"></a>MFC ActiveX 컨트롤 컨테이너 만들기
-ActiveX 컨트롤 컨테이너는 실행 하기 위해 (이전의 OLE) ActiveX 컨트롤에 대 한 환경을 제공 하는 부모 프로그램. 상관 없이, MFC ActiveX 컨트롤을 포함할 수 있는 응용 프로그램을 만들 수 있지만 MFC로 수행할 작업을 훨씬 쉽습니다.  
+ActiveX 컨트롤 컨테이너는 실행 (이전의 OLE) ActiveX 컨트롤을 위한 환경을 제공 하는 부모 프로그램입니다. 없는 MFC ActiveX 컨트롤을 포함할 수 있는 응용 프로그램을 만들 수 있지만 MFC를 사용 하 여 작업을 수행 하는 것이 쉽습니다.
+
+>[!IMPORTANT]
+> ActiveX는 새로운 개발에 사용 되지 해야 하는 레거시 기술입니다. ActiveX를 대체 하는 최신 기술에 대 한 자세한 내용은 참조 하세요. [ActiveX 컨트롤](../activex-controls.md)합니다.  
   
- MFC 프로그램 사용 하 여 컨테이너 만들기는 [MFC 응용 프로그램 마법사](../../mfc/reference/mfc-application-wizard.md) MFC 및 ActiveX 클래스에서 구현 되는 ActiveX 컨트롤 및 자동화의 여러 기능에 액세스할 수 있습니다. 이러한 기능에는 컨트롤에 대 한 지원 및 시각적 편집, 자동화, 복합 파일 만들기, 포함 됩니다. 부모 프로그램에서 지 원하는 MFC 응용 프로그램 마법사 시각적 편집 옵션의 컨테이너, 미니 서버, 전체 서버 및 컨테이너와 서버 둘 다 있는 프로그램 만들기를 포함 합니다.  
+ MFC 프로그램 사용 하 여 컨테이너를 만드는 합니다 [MFC 응용 프로그램 마법사](../../mfc/reference/mfc-application-wizard.md) MFC 및 ActiveX 클래스에서 구현 되는 ActiveX 컨트롤 및 자동화의 많은 기능에 액세스할 수 있습니다. 이러한 기능 비주얼 편집, 자동화, 복합 파일 만들기, 포함 및 컨트롤에 대 한 지원. MFC 응용 프로그램 마법사 시각적 편집 옵션을 부모 프로그램에서 지원 되는 컨테이너, 미니 서버, 풀 서버 및 컨테이너와 서버는 프로그램 만들기를 포함 합니다.  
   
--   **새 MFC 응용 프로그램**합니다. 자동화를 포함 하는 새 MFC 프로그램을 만들려면 비주얼 편집 복합 파일 또는 제어 지원, MFC 응용 프로그램 마법사를 사용 하 고 적절 한 자동화 옵션 선택 합니다.  
+-   **새 MFC 응용 프로그램**합니다. 자동화를 포함 하는 새 MFC 프로그램을 만들려면 비주얼 편집 복합 파일 또는 지원을 제어, MFC 응용 프로그램 마법사를 사용 하 여 및 적절 한 자동화 옵션을 선택 합니다.  
   
--   **기존 MFC 응용 프로그램**합니다. 기존 MFC 응용 프로그램에 컨트롤 포함 기능을 추가 하는 경우 참조 [OLE 컨트롤 컨테이너: OLE 컨트롤 포함 기능 수동으로 활성화](../../mfc/activex-control-containers-manually-enabling-activex-control-containment.md)합니다.  
+-   **기존 MFC 응용 프로그램**합니다. 컨트롤 포함 하면 기존 MFC 응용 프로그램에 추가 하는 경우 참조 [OLE 컨트롤 컨테이너: OLE 컨트롤 포함 기능 수동으로 활성화](../../mfc/activex-control-containers-manually-enabling-activex-control-containment.md)합니다.  
   
-### <a name="to-create-an-activex-container-for-any-of-the-following-types-of-applications"></a>다음과 같은 종류의 응용 프로그램에 대 한 ActiveX 컨테이너를 만들려면  
+### <a name="to-create-an-activex-container-for-any-of-the-following-types-of-applications"></a>다음 유형의 응용 프로그램에 대 한 ActiveX 컨테이너를 만들려면  
   
 1.  [컨테이너](../../mfc/containers.md)  
   

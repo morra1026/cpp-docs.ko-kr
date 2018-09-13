@@ -1,7 +1,7 @@
 ---
-title: ActiveX 컨트롤에 대 한 컨테이너 | Microsoft Docs
+title: ActiveX 컨트롤 컨테이너 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -14,20 +14,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 008cf9ea24958cad0866e180d74a43fb031416c8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 00c40a158777622856942c4c436299470aba3e6f
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341448"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45534861"
 ---
 # <a name="containers-for-activex-controls"></a>ActiveX 컨트롤에 대한 컨테이너
-지 원하는 ActiveX 컨트롤 포함으로 다른 응용 프로그램에서 Visual c + +에서 개발 된 ActiveX 컨트롤을 사용할 수 있습니다. 다양 한 Microsoft 응용 프로그램을 나열 하는 버전 부터는 ActiveX 컨트롤 포함을 지원 합니다.  
+지 원하는 ActiveX 컨트롤 포함으로 다른 응용 프로그램에서 Visual c + +에서 개발 하는 ActiveX 컨트롤을 사용할 수 있습니다. 다양 한 Microsoft 응용 프로그램을 나열 하는 버전 부터는 ActiveX 컨트롤 포함을 지원 합니다.
+
+>[!IMPORTANT]
+> ActiveX는 새로운 개발에 사용 되지 해야 하는 레거시 기술입니다. ActiveX를 대체 하는 최신 기술에 대 한 자세한 내용은 참조 하세요. [ActiveX 컨트롤](activex-controls.md)합니다.  
   
 > [!NOTE]
->  다음 목록에는 ActiveX 컨트롤을 지원 하지만 테스트에서 가장 자주 사용 되는 집합을 나타내는 응용 프로그램의 전체 목록이 아닙니다.  
+>  다음은 ActiveX 컨트롤을 지원 하지만 테스트에서 가장 자주 사용 하는 집합을 나타내는 응용 프로그램의 전체 목록은 아닙니다.  
   
- ActiveX 컨트롤 포함을 지 원하는 응용 프로그램은 다음과 같습니다.  
+ ActiveX 컨트롤 포함을 지 원하는 응용 프로그램에는 다음이 포함 됩니다.  
   
 -   Internet Explorer 3.x 이상  
   
@@ -35,13 +38,13 @@ ms.locfileid: "33341448"
   
 -   Visual c + + 4.x 이상  
   
--   95 이상에 대 한 액세스  
+-   액세스 95 이상  
   
 -   Excel 97 이상  
   
 -   Word 97 이상  
   
--   97 이상에 대 한 액세스  
+-   Access 97 이상  
   
 -   FrontPage 97 이상  
   
@@ -53,7 +56,7 @@ ms.locfileid: "33341448"
   
 -   PowerBuilder  
   
--   Delphi로  
+-   Delphi  
   
 -   C + + 작성기  
   

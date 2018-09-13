@@ -141,7 +141,6 @@
 ### [MFC 응용 프로그램 작성](writing-mfc-applications.md)
 ### [인터넷의 ActiveX 컨트롤](activex-controls-on-the-internet.md)
 ### [기존 ActiveX 컨트롤 업그레이드](upgrading-an-existing-activex-control.md)
-### [인터넷의 액티브 문서](active-documents-on-the-internet.md)
 ### [인터넷의 비동기 모니커](asynchronous-monikers-on-the-internet.md)
 ### [인터넷 응용 프로그램 테스트](testing-internet-applications.md)
 ### [인터넷 보안(C++)](internet-security-cpp.md)

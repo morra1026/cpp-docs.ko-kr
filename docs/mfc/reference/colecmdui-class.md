@@ -1,7 +1,7 @@
 ---
 title: COleCmdUI 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b057620e0ea348559b9c37f55ba7658b7f5270c
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 4ece2d45bdce490d09c7195deec380728d79392d
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851485"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535244"
 ---
 # <a name="colecmdui-class"></a>COleCmdUI 클래스
 응용 프로그램의 `IOleCommandTarget`기반 기능과 관련된 사용자 인터페이스 개체의 상태를 업데이트하기 위한 MFC용 메서드를 구현합니다.  
@@ -61,7 +61,7 @@ class COleCmdUI : public CCmdUI
   
  `COleCmdUI` 해당 컨테이너의 사용자 인터페이스 (예: FileNew, 열기, 인쇄 및 등)에서 발생 하는 명령을 수신 하도록 DocObject을 DocObject의 사용자 인터페이스에서 발생 하는 명령을 수신 하는 컨테이너 수 있도록 합니다. 하지만 `IDispatch` 과 동일한 명령을 발송 하는 데 사용할 수 있습니다 `IOleCommandTarget` 쿼리하고 인수 없이 일반적으로 명령의 표준 집합을 사용 및 형식 정보가 없는 관련 되어 있으므로 실행 하는 간단한 방법을 제공 합니다. `COleCmdUI` 사용 하도록 설정, 업데이트 및 DocObject 사용자 인터페이스 명령의 기타 속성 설정에 사용할 수 있습니다. 명령을 호출 하려는 경우 호출할 [COleServerDoc::OnExecOleCmd](../../mfc/reference/coleserverdoc-class.md#onexecolecmd)합니다.  
   
- 참조에 대 한 자세한 내용은 DocObjects [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md) 하 고 [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md)합니다. 도 참조 하세요 [인터넷 첫 번째 단계: 활성 문서](../../mfc/active-documents-on-the-internet.md) 하 고 [액티브 문서](../../mfc/active-documents-on-the-internet.md)합니다.  
+ 참조에 대 한 자세한 내용은 DocObjects [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md) 하 고 [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md)합니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  [CCmdUI](../../mfc/reference/ccmdui-class.md)  

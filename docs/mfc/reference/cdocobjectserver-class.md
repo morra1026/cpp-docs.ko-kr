@@ -1,7 +1,7 @@
 ---
 title: CDocObjectServer 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 701cfc2f8a88f57a1c50c9c4310ecd21154ef09a
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 156480c05833b9d653a903986a37f77878c37671
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337868"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535290"
 ---
 # <a name="cdocobjectserver-class"></a>CDocObjectServer 클래스
 일반 `COleDocument` 서버를 전체 DocObject 서버로 만드는 데 필요한 추가 OLE 인터페이스( `IOleDocument`, `IOleDocumentView`, `IOleCommandTarget`, 및 `IPrint`)를 구현합니다.  
@@ -71,7 +71,7 @@ class CDocObjectServer : public CCmdTarget
   
  DocObject 서버를 사용자 지정 하려면에서 사용자 고유의 클래스를 파생 `CDocObjectServer` 해당 보기 설정 함수를 재정의 하 고 [OnActivateView](#onactivateview)하십시오 [OnApplyViewState](#onapplyviewstate), 및 [OnSaveViewState ](#onsaveviewstate). 프레임 워크 호출에 대 한 응답에서 클래스의 새 인스턴스를 제공 해야 합니다.  
   
- 참조에 대 한 자세한 내용은 DocObjects [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md) 및 [COleCmdUI](../../mfc/reference/colecmdui-class.md) 에 *MFC 참조*합니다. 도 참조 하세요 [인터넷 첫 번째 단계: 활성 문서](../../mfc/active-documents-on-the-internet.md) 하 고 [액티브 문서](../../mfc/active-documents-on-the-internet.md)합니다.  
+ 참조에 대 한 자세한 내용은 DocObjects [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md) 및 [COleCmdUI](../../mfc/reference/colecmdui-class.md) 에 *MFC 참조*합니다.  
   
  또한 다음 기술 자료 문서를 참조 하세요.  
   

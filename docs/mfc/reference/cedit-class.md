@@ -1,7 +1,7 @@
 ---
 title: CEdit 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -104,12 +104,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27ea5ccb0d15bd57a526c78cd3c57a4e83369ed0
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 4d3c7f9e1d638c547b2b340a610a52af9318c714
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757792"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535407"
 ---
 # <a name="cedit-class"></a>CEdit Class
 Windows 편집 컨트롤의 기능을 제공합니다.  
@@ -520,7 +520,7 @@ BOOL GetHighlight(
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 전송 된 [EM_GETHILITE](/windows/desktop/Controls/em-gethilite) Windows SDK에 설명 된 메시지입니다.  
+ 이 메서드는 전송 된 [EM_GETHILITE](/windows/desktop/Controls/em-gethilite) Windows SDK에 설명 된 메시지입니다. 둘 다 `SetHighlight` 고 `GetHighlight` 유니코드만 빌드에 대 한 현재 사용 하도록 설정 됩니다. 
   
 ##  <a name="getlimittext"></a>  CEdit::GetLimitText  
  이 텍스트 제한을 가져올를이 멤버 함수 호출 `CEdit` 개체입니다.  
@@ -985,7 +985,7 @@ void SetHighlight(
 |[in] *ichEnd*|강조 표시 하는 텍스트 범위에서 마지막 문자의 0부터 시작 인덱스입니다.|  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 전송 된 [EM_SETHILITE](/windows/desktop/Controls/em-sethilite) Windows SDK에 설명 된 메시지입니다.  
+ 이 메서드는 전송 된 [EM_SETHILITE](/windows/desktop/Controls/em-sethilite) Windows SDK에 설명 된 메시지입니다.  이 메서드는 전송 된 [EM_SETHILITE](/windows/desktop/Controls/em-sethilite) Windows SDK에 설명 된 메시지입니다. 둘 다 `SetHighlight` 및 `GetHighlight` 유니코드만 빌드에 대 한 활성화 됩니다. 
   
 ##  <a name="setlimittext"></a>  CEdit::SetLimitText  
  이 텍스트 제한을 설정 하려면이 멤버 함수 호출 `CEdit` 개체입니다.  

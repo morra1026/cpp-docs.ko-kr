@@ -1,7 +1,7 @@
 ---
 title: MFC ActiveX 컨트롤 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -25,15 +25,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f0f0d88274e6804d087f8acf905ba3181d57798
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 64b44afa6f9605c8c10d933b06fcec79b92f7c97
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43205844"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535199"
 ---
 # <a name="mfc-activex-controls"></a>MFC ActiveX 컨트롤
-ActiveX 컨트롤은 다양한 OLE 기능을 지원하고 많은 소프트웨어 요구 사항에 맞게 사용자 지정할 수 있는 COM(구성 요소 개체 모델)을 기반으로 재사용 가능한 소프트웨어 구성 요소입니다. ActiveX 컨트롤은 일반적인 ActiveX 컨트롤 컨테이너와 인터넷의 World Wide Web 웹 페이지 모두에 사용할 수 있도록 디자인되었습니다. ActiveX 컨트롤 또는 여기에서 사용 하 여 설명 된 MFC를 사용 하 여 만들 수는 [액티브 템플릿 라이브러리 (ATL)](../atl/active-template-library-atl-concepts.md)합니다.  
+
+ActiveX 컨트롤은 다양한 OLE 기능을 지원하고 많은 소프트웨어 요구 사항에 맞게 사용자 지정할 수 있는 COM(구성 요소 개체 모델)을 기반으로 재사용 가능한 소프트웨어 구성 요소입니다. 
+
+>[!IMPORTANT]
+> ActiveX는 새로운 개발에 사용 되지 해야 하는 레거시 기술입니다. 자세한 내용은 [ActiveX 컨트롤](activex-controls.md)합니다.
+
+ActiveX 컨트롤은 일반적인 ActiveX 컨트롤 컨테이너와 인터넷의 World Wide Web 웹 페이지 모두에 사용할 수 있도록 디자인되었습니다. ActiveX 컨트롤 또는 여기에서 사용 하 여 설명 된 MFC를 사용 하 여 만들 수는 [액티브 템플릿 라이브러리 (ATL)](../atl/active-template-library-atl-concepts.md)합니다.  
   
  고유한 창에서 ActiveX 컨트롤을 그리고, 이벤트(예: 마우스 클릭)에 응답하고, 자동화 개체와 유사한 속성과 메서드를 포함한 인터페이스를 통해 관리할 수 있습니다.  
   
