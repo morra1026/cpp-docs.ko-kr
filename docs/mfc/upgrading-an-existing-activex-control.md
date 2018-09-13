@@ -1,7 +1,7 @@
 ---
 title: 기존 ActiveX 컨트롤 업그레이드 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -22,15 +22,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d162aea1d000aa9e65aea253f974c38ffc85bcd
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 0bca0cca66f7f8b9c59dcea4911550abfc2024c8
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686188"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535277"
 ---
 # <a name="upgrading-an-existing-activex-control"></a>기존 ActiveX 컨트롤 업그레이드
-기존 ActiveX 컨트롤 (이전의 OLE 컨트롤) 수정 하지 않고 인터넷에서 사용할 수 있습니다. 그러나 다음 성능 향상을 위해 컨트롤을 수정 하는 것이 좋습니다. 웹 페이지에 컨트롤을 사용할 경우 추가 고려 사항이 있습니다. .Ocx 파일 및 모든 지원 파일 대상 컴퓨터에 있어야 또는 인터넷을 통해 다운로드할 수 있습니다. 이렇게 하면 코드 크기와 다운로드 시간이 중요 한 고려 합니다. 서명 된.cab 파일의 다운로드를 패키지할 수 있습니다. 스크립트 및 초기화에 안전으로 컨트롤을 표시할 수 있습니다.  
+기존 ActiveX 컨트롤 (이전의 OLE 컨트롤) 수정 하지 않고 인터넷에서 사용할 수 있습니다. 그러나 다음 성능 향상을 위해 컨트롤을 수정 하는 것이 좋습니다. 
+
+>[!IMPORTANT]
+> ActiveX는 새로운 개발에 사용 되지 해야 하는 레거시 기술입니다. ActiveX를 대체 하는 최신 기술에 대 한 자세한 내용은 참조 하세요. [ActiveX 컨트롤](activex-controls.md)합니다.
+
+웹 페이지에 컨트롤을 사용할 경우 추가 고려 사항이 있습니다. .Ocx 파일 및 모든 지원 파일 대상 컴퓨터에 있어야 또는 인터넷을 통해 다운로드할 수 있습니다. 이렇게 하면 코드 크기와 다운로드 시간이 중요 한 고려 합니다. 서명 된.cab 파일의 다운로드를 패키지할 수 있습니다. 스크립트 및 초기화에 안전으로 컨트롤을 표시할 수 있습니다.  
   
  이 문서에서는 다음 내용을 다룹니다.  
   
