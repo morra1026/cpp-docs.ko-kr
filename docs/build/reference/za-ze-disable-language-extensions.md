@@ -28,12 +28,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e30fb37be6738b7100b84a1898c02ab4230c41b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 63c4998ae0ff6efc6fa520c66a4cabff2476f0d0
+ms.sourcegitcommit: 6e479e33e8fd8e30ea32801edbff2e3415f31bf7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597575"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45556756"
 ---
 # <a name="za-ze-disable-language-extensions"></a>/Za, /Ze(언어 확장명 사용 안 함)
 합니다 **/Za** 컴파일러 옵션은 ANSI C89 또는 C + + 11 ISO와 호환 되지 않는 언어 구문에 대 한 오류를 생성 합니다. 합니다 **/Ze** 기본적으로 켜져 컴파일러 옵션에 대 한 Microsoft 확장 사용 하도록 설정 합니다.  
@@ -54,8 +54,8 @@ ms.locfileid: "42597575"
   
  언어 확장을 사용 하지 않도록 지정 하 여는 것이 좋습니다 합니다 **/Za** 프로그램의 다른 환경으로 이식 하려는 경우 옵션입니다. 때 **/Za** 를 지정 하면 컴파일러는 Microsoft 확장으로 단순 식별자는 키워드를 처리, 다른 Microsoft 확장을 사용 하지 않도록 설정 하 고 자동으로 정의 된 `__STDC__` C 프로그램에 대 한 미리 정의 된 매크로입니다.  
   
- 다른 컴파일러 옵션을 사용 하 여 사용 **/Za** 컴파일러에서 표준 규칙을 준수 하는 방법에 영향을 줄 수 있습니다. 예를 들어 **/Za** 하 고 [/fp (부동 소수점 동작 지정)](../../build/reference/fp-specify-floating-point-behavior.md) ISO C99 c++11 표준에 맞지 않는 부동 소수점 형식 승격 동작이 발생할 수 있습니다.  
-  
+ 다른 컴파일러 옵션을 사용 하 여 사용 **/Za** 컴파일러에서 표준 규칙을 준수 하는 방법에 영향을 줄 수 있습니다.
+
  특정 표준을 준수 하는 동작 설정을 지정 하는 방법에 대해서는 [/Zc](../../build/reference/zc-conformance.md) 컴파일러 옵션입니다.  
   
  Visual c + +를 사용 하 여 규칙과 관련 된 문제에 대 한 자세한 내용은 참조 하세요. [비표준 동작](../../cpp/nonstandard-behavior.md)합니다.  
