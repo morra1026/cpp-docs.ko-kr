@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c03c47502fdd9309b3d6553c3f46f9685d4eaa9
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 883e7bdefe4bc1424dfea343d8d473015e6387d6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958268"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700221"
 ---
 # <a name="tuplesize-class"></a>tuple_size 클래스
 
@@ -66,22 +66,22 @@ template <class Tuple>
 
 ### <a name="parameters"></a>매개 변수
 
-*Tuple*  
+*Tuple*<br/>
 튜플의 형식입니다.
 
-*Elem*  
+*Elem*<br/>
 배열 요소의 형식입니다.
 
-*Size*  
+*Size*<br/>
 배열의 크기입니다.
 
-*T1*  
+*T1*<br/>
 쌍의 첫 번째 구성원 형식입니다.
 
-*T2*  
+*T2*<br/>
 쌍의 두 번째 구성원 형식입니다.
 
-*유형*  
+*유형*<br/>
 튜플 요소의 형식입니다.
 
 ## <a name="remarks"></a>설명
@@ -92,7 +92,7 @@ template <class Tuple>
 
 쌍의 템플릿 특수화에는 해당 값이 2인 정수 계열 상수 식 `value` 구성원이 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 #include <tuple>

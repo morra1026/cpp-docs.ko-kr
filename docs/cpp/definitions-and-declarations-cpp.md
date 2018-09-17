@@ -12,15 +12,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d192234a2b3cd3d72bef15e11678ebc41ccede0
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 54754e465f3a153b769b7619ff2bfb70a1872907
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462890"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45699617"
 ---
 # <a name="definitions-and-declarations-c"></a>선언 및 정의 (C++)
-**Microsoft 전용** DLL 인터페이스 참조 시스템의 일부 프로그램에서 내보내지는 것으로 알려진 모든 항목 (함수 및 데이터)로 선언 되는 모든 항목, 즉 **dllimport** 또는 **dllexport** . DLL 인터페이스에 포함 된 모든 선언은 지정 해야 합니다는 **dllimport** 하거나 **dllexport** 특성입니다. 그러나 정의 지정 해야 합니다 **dllexport** 특성입니다. 예를 들어, 다음 함수 정의는 컴파일러 오류를 생성합니다.
+**Microsoft 전용**
+
+ DLL 인터페이스 시스템의 일부 프로그램에서 내보내지는 것으로 알려진 모든 항목 (함수 및 데이터)를 가리킵니다. 로 선언 되는 모든 항목, 즉 **dllimport** 하거나 **dllexport**합니다. DLL 인터페이스에 포함 된 모든 선언은 지정 해야 합니다는 **dllimport** 하거나 **dllexport** 특성입니다. 그러나 정의 지정 해야 합니다 **dllexport** 특성입니다. 예를 들어, 다음 함수 정의는 컴파일러 오류를 생성합니다.
 
 ```
 __declspec( dllimport ) int func() {   // Error; dllimport

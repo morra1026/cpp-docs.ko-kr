@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c00f9d40fedd084afa2da6e2e7bfaf0ee831b3a9
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 54529bed25fc60815f80ea8660bcf5786cb2887c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39401882"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700686"
 ---
 # <a name="overloading-unary-operators"></a>단항 연산자 오버로드
 오버로드할 수 있는 단항 연산자는 다음과 같습니다.  
@@ -55,15 +55,15 @@ ms.locfileid: "39401882"
   
  다음 규칙은 다른 모든 단항 연산자에 적용됩니다. 단항 연산자 함수를 비정적 멤버로 선언하려면 해당 함수를 다음 형식으로 선언해야 합니다.  
   
- `ret-type operator` `op` `()`  
+> *만료 유형* **연산자** *op* **)**  
   
- 여기서 `ret-type`은 반환 형식이고 `op`는 앞의 표에 나와 있는 연산자 중 하나입니다.  
+ 여기서 *ret 형식당* 반환 형식 및 *op* 연산자 중 하나 앞의 표에 나열 됩니다.  
   
  단항 연산자 함수를 전역 함수로 선언하려면 해당 함수를 다음 형식으로 선언해야 합니다.  
   
- `ret-type operator` `op` (`arg` )  
+> *만료 유형* **연산자** *op* **(** *arg* **)**  
   
- 여기서 `ret-type` 및 `op`는 멤버 연산자 함수로 설명되고 `arg`는 연산을 수행할 클래스 형식의 인수입니다.  
+ 여기서 *ret 형식* 및 *op* 는 멤버 연산자 함수로 설명 되는 *arg* 연산을 수행할 클래스 형식의 인수입니다.  
   
 > [!NOTE]
 >  단항 연산자의 반환 형식에 대한 제한은 없습니다. 예를 들어 논리 NOT(`!`)에서 정수 계열 값을 반환하는 것이 적합하지만 이는 적용되지 않습니다.  

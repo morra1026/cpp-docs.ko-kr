@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae300569c4aa04a313f44a23fe988f1de7b826a1
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: eb253ab776565339aeaeade26d6d355b4f6a742b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42543228"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700004"
 ---
 # <a name="mmcvtsi64xss"></a>_mm_cvtsi64x_ss
 **Microsoft 전용**  
@@ -39,11 +39,11 @@ __m128 _mm_cvtsi64x_ss(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `a`  
- `__m128` 네 개의 단 정밀도 부동 소수점 값이 포함 된 구조입니다.  
+*a*<br/>
+[in] `__m128` 네 개의 단 정밀도 부동 소수점 값이 포함 된 구조입니다.  
   
- [in] `b`  
- 부동 소수점 값으로 변환 하는 64 비트 정수입니다.  
+*b*<br/>
+[in] 부동 소수점 값으로 변환 하는 64 비트 정수입니다.  
   
 ## <a name="return-value"></a>반환 값  
  `__m128` 구조체 인 첫 번째 부동 소수점 값이 변환의 결과입니다. 다른 세 개의 값에서 변경 되지 않고 복사 됩니다 `a`합니다.  
@@ -61,7 +61,7 @@ __m128 _mm_cvtsi64x_ss(
   
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // _mm_cvtsi64x_ss.cpp  

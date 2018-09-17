@@ -18,15 +18,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e059b8144518f3d0cacdde5d7f438c04b7933a2
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: dc6625e9f9137bc6adbe10270ef7192d2f1672f0
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39467871"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700858"
 ---
 # <a name="sptr-uptr"></a>__sptr, __uptr
-**Microsoft 전용**  
+**Microsoft 전용**
+
  사용 된 **__sptr** 또는 **__uptr** 컴파일러가 64 비트 포인터에 대 한 32 비트 포인터를 변환 하는 방법을 지정 하는 32 비트 포인터 선언에서 한정자입니다. 예를 들어 32비트 포인터는 64비트 포인터 변수에 할당되거나 64비트 플랫폼에서 역참조될 때 변환됩니다.  
   
  64비트 플랫폼 지원에 대한 Microsoft 설명서에서는 경우에 따라 32비트 포인터의 최상위 비트를 부호 비트로 지칭합니다. 기본적으로 컴파일러는 부호 확장을 사용하여 32비트 포인터를 64비트 포인터로 변환합니다. 즉, 64비트 포인터의 최하위 32비트는 32비트 포인터의 값으로 설정되며 최상위 32비트는 32비트 포인터의 부호 비트 값으로 설정됩니다. 이 변환은 부호 비트가 0인 경우 올바른 결과를 생성하지만 부호 비트가 1인 경우에는 올바른 결과를 생성하지 않습니다. 예를 들어 32비트 주소 0x7FFFFFFF는 동일한 64비트 주소 0x000000007FFFFFFF를 생성하지만 32비트 주소 0x80000000은 0xFFFFFFFF80000000으로 올바르지 않게 변경됩니다.  
@@ -43,7 +44,7 @@ void MyFunction(char * __uptr __ptr32 myValue);
   
  사용 합니다 **__sptr** 하 고 **__uptr** 포인터 선언 사용 하 여 한정자입니다. 한정자를 사용 하 여 위치에는 [포인터 형식 한정자](../c-language/pointer-declarations.md), 즉, 한정자 별표를 수행 해야 합니다. 한정자와 함께 사용할 수 없습니다 [멤버에 대 한 포인터](../cpp/pointers-to-members.md)합니다. 한정자는 포인터 선언이 아닌 선언에 영향을 주지 않습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 사용 하는 32 비트 포인터를 선언 합니다 **__sptr** 하 고 **__uptr** 한정자를 각 32 비트 포인터는 64 비트 포인터 변수에 할당 한 다음 각 64-16 진수 값을 표시 비트 포인터입니다. 이 예제는 네이티브 64비트 컴파일러로 컴파일되며 64비트 플랫폼에서 실행됩니다.  
   
 ```cpp  
