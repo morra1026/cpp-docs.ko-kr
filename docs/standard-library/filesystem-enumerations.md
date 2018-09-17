@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22e4cf19ec3b85d14d346bd56697f4bcc4ff687b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ff655573f77b901725fe18c2346c46306c9b853a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43194470"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716809"
 ---
 # <a name="ltfilesystemgt-enumerations"></a>&lt;filesystem&gt; 열거형
 
@@ -34,7 +34,9 @@ ms.locfileid: "43194470"
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<실험적/파일 시스템 > **Namespace:** std::experimental::filesystem
+**헤더:** \<experimental/filesystem>
+
+**네임스페이스:** std::experimental::filesystem
 
 ## <a name="copy_options"></a>  copy_options
 

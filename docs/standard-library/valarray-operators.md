@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::operator&lt; (valarray)
 - std::operator&lt;&lt; (valarray)
 - std::operator&lt;= (valarray), std::operator== (valarray)
-ms.openlocfilehash: b828081fea1f9886c1a661323e2d0e0c79d1ae96
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 83958ee300143463a1da9b10d2edb6eb1707ec4f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315030"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703562"
 ---
 # <a name="ltvalarraygt-operators"></a>&lt;valarray&gt; 연산자
 
@@ -78,11 +78,11 @@ operator!=(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 해당 요소가 같지 않은지 테스트할 두 valarray 중 첫 번째 valarray입니다.
+*left*<br/>
+해당 요소가 같지 않은지 테스트할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*  
- 해당 요소가 같지 않은지 테스트할 두 valarray 중 두 번째 valarray입니다.
+*right*<br/>
+해당 요소가 같지 않은지 테스트할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -173,11 +173,11 @@ operator%(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 다른 값이나 valarray를 나눌 피제수로 사용되는 값 또는 valarray입니다.
+*left*<br/>
+다른 값이나 valarray를 나눌 피제수로 사용되는 값 또는 valarray입니다.
 
-*right*  
- 다른 값이나 valarray를 나누는 제수로 사용되는 값 또는 valarray입니다.
+*right*<br/>
+다른 값이나 valarray를 나누는 제수로 사용되는 값 또는 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -256,11 +256,11 @@ operator&(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 개별 요소를 비트 `AND`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 첫 번째 valarray입니다.
+*left*<br/>
+개별 요소를 비트 `AND`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*  
- 개별 요소를 비트 `AND`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 두 번째 valarray입니다.
+*right*<br/>
+개별 요소를 비트 `AND`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -345,11 +345,11 @@ operator&&(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 개별 요소를 논리적 `AND`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 결합할 두 valarray 중 첫 번째 valarray입니다.
+*left*<br/>
+개별 요소를 논리적 `AND`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 결합할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*  
- 개별 요소를 논리적 `AND`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 결합할 두 valarray 중 두 번째 valarray입니다.
+*right*<br/>
+개별 요소를 논리적 `AND`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 결합할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -432,11 +432,11 @@ operator>(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 첫 번째 valarray입니다.
+*left*<br/>
+해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*  
- 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 두 번째 valarray입니다.
+*right*<br/>
+해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -523,11 +523,11 @@ operator>=(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 첫 번째 valarray입니다.
+*left*<br/>
+해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*  
- 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 두 번째 valarray입니다.
+*right*<br/>
+해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -614,11 +614,11 @@ operator>>(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 이동할 값 또는 해당 요소를 이동할 valarray
+*left*<br/>
+이동할 값 또는 해당 요소를 이동할 valarray
 
-*right*  
- 오른쪽으로 이동할 크기를 나타내는 값 또는 해당 요소가 요소 전체 오른쪽 이동 크기를 나타내는 valarray
+*right*<br/>
+오른쪽으로 이동할 크기를 나타내는 값 또는 해당 요소가 요소 전체 오른쪽 이동 크기를 나타내는 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -701,11 +701,11 @@ operator<(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 첫 번째 valarray입니다.
+*left*<br/>
+해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*  
- 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 두 번째 valarray입니다.
+*right*<br/>
+해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -792,11 +792,11 @@ operator<=(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 첫 번째 valarray입니다.
+*left*<br/>
+해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*  
- 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 두 번째 valarray입니다.
+*right*<br/>
+해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -883,11 +883,11 @@ operator<<(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 이동할 값 또는 해당 요소를 이동할 valarray
+*left*<br/>
+이동할 값 또는 해당 요소를 이동할 valarray
 
-*right*  
- 왼쪽으로 이동할 크기를 나타내는 값 또는 해당 요소가 요소 전체 왼쪽 이동 크기를 나타내는 valarray
+*right*<br/>
+왼쪽으로 이동할 크기를 나타내는 값 또는 해당 요소가 요소 전체 왼쪽 이동 크기를 나타내는 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -970,11 +970,11 @@ operator*(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 해당 요소를 곱하거나 지정된 값을 valarray의 각 요소와 곱할 두 valarray 중 첫 번째 valarray입니다.
+*left*<br/>
+해당 요소를 곱하거나 지정된 값을 valarray의 각 요소와 곱할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*  
- 해당 요소를 곱하거나 지정된 값을 valarray의 각 요소와 곱할 두 valarray 중 두 번째 valarray입니다.
+*right*<br/>
+해당 요소를 곱하거나 지정된 값을 valarray의 각 요소와 곱할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1053,11 +1053,11 @@ operator+(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 해당 요소를 더하거나 지정된 값을 valarray의 각 요소와 더할 두 valarray 중 첫 번째 valarray입니다.
+*left*<br/>
+해당 요소를 더하거나 지정된 값을 valarray의 각 요소와 더할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*  
- 해당 요소를 더하거나 지정된 값을 valarray의 각 요소와 더할 두 valarray 중 두 번째 valarray입니다.
+*right*<br/>
+해당 요소를 더하거나 지정된 값을 valarray의 각 요소와 더할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1136,11 +1136,11 @@ operator-(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 차를 구하기 위해 다른 값이나 valarray를 뺄 피감수로 사용되는 값 또는 valarray
+*left*<br/>
+차를 구하기 위해 다른 값이나 valarray를 뺄 피감수로 사용되는 값 또는 valarray
 
-*right*  
- 차를 구하기 위해 다른 값이나 valarray에서 뺄 감수로 사용되는 값 또는 valarray
+*right*<br/>
+차를 구하기 위해 다른 값이나 valarray에서 뺄 감수로 사용되는 값 또는 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -1225,11 +1225,11 @@ operator/(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 몫을 구하기 위해 다른 값이나 valarray를 나눌 피제수로 사용되는 값 또는 valarray입니다.
+*left*<br/>
+몫을 구하기 위해 다른 값이나 valarray를 나눌 피제수로 사용되는 값 또는 valarray입니다.
 
-*right*  
- 몫을 구하기 위해 다른 값이나 valarray를 나누는 제수로 사용되는 값 또는 valarray입니다.
+*right*<br/>
+몫을 구하기 위해 다른 값이나 valarray를 나누는 제수로 사용되는 값 또는 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1314,11 +1314,11 @@ operator==(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 해당 요소가 같은지 테스트할 두 valarray 중 첫 번째 valarray입니다.
+*left*<br/>
+해당 요소가 같은지 테스트할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*  
- 해당 요소가 같은지 테스트할 두 valarray 중 두 번째 valarray입니다.
+*right*<br/>
+해당 요소가 같은지 테스트할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1405,11 +1405,11 @@ operator^(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 개별 요소를 비트 **XOR**로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 첫 번째 valarray입니다.
+*left*<br/>
+개별 요소를 비트 **XOR**로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*  
- 개별 요소를 비트 **XOR**로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 두 번째 valarray입니다.
+*right*<br/>
+개별 요소를 비트 **XOR**로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1498,11 +1498,11 @@ operator|(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 개별 요소를 비트 `OR`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 첫 번째 valarray입니다.
+*left*<br/>
+개별 요소를 비트 `OR`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*  
- 개별 요소를 비트 `OR`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 두 번째 valarray입니다.
+*right*<br/>
+개별 요소를 비트 `OR`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1591,11 +1591,11 @@ operator||(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 개별 요소를 논리적 `OR`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 결합할 두 valarray 중 첫 번째 valarray입니다.
+*left*<br/>
+개별 요소를 논리적 `OR`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 결합할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*  
- 개별 요소를 논리적 `OR`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 결합할 두 valarray 중 두 번째 valarray입니다.
+*right*<br/>
+개별 요소를 논리적 `OR`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 결합할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
 

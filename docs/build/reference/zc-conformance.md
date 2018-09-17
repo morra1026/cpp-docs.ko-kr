@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b89744235a5a2302a6550b2ffa7100511ad2e59c
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 3fd2ec208e872e05f8329bf5e077a74403d0c612
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704895"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716055"
 ---
 # <a name="zc-conformance"></a>/Zc(규칙)
 
@@ -32,38 +32,38 @@ ms.locfileid: "34704895"
 
 ## <a name="syntax"></a>구문
 
-> **/ Zc:**_옵션_{,_옵션_}
+> **/ Zc:**_옵션_{합니다_옵션_}
 
 ## <a name="remarks"></a>설명
 
-Visual Studio에서 C 또는 c + + 표준과 호환 되지 않는 확장 문제를 사용할 수 있습니다는 `/Zc` 표준 준수 또는 Microsoft 특정 동작을 지정 하는 규칙 옵션입니다. 일부 옵션 Microsoft 전용 동작이 대규모 주요 변경 내용이 기존 코드를 방지 하기 위해 기본값입니다. 다른 경우에는 기본값이 표준 동작 보안, 성능 또는 호환성의 향상 된 비용을 주요 변경 내용을 능가 하는 위치입니다. 최신 버전의 Visual Studio에서 각 규칙에 따라 옵션의 기본 설정은 변경할 수 있습니다. 각 규칙에 따라 옵션에 대 한 자세한 내용은 특정 옵션에 대 한 항목을 참조 합니다. [관대 한 /-](permissive-standards-conformance.md) 컴파일러 옵션을 준수 설정으로 기본적으로 설정 되지 않은 규칙 옵션을 암시적으로 설정 합니다.
+Visual Studio에서 C 또는 c + + 표준 호환 되지 않는 확장 구현에 사용할 수 있습니다는 `/Zc` 표준 준수 또는 Microsoft 전용 동작을 지정 하는 규칙 옵션입니다. 몇 가지 옵션을 Microsoft 특정 동작이 기존 코드에 대규모 주요 변경을 방지 하기 위해 기본값입니다. 다른 경우에 기본 동작은 표준, 향상 된 보안, 성능 또는 호환성에서 비용의 주요 변경 내용을 능가 하는 위치 합니다. 최신 버전의 Visual Studio에서 각 규칙 옵션의 기본 설정을 변경할 수 있습니다. 각 규칙 옵션에 대 한 자세한 내용은 해당 옵션에 대 한 항목을 참조 하세요. 합니다 [/ permissive-](permissive-standards-conformance.md) 컴파일러 옵션은 암시적으로 해당와 호환 되는 설정에는 기본적으로 설정 되지 않은 규칙 옵션을 설정 합니다.
 
 이들은 `/Zc` 컴파일러 옵션:
 
 |옵션|동작|
 |---|---|
-|[alignedNew\[-\]](zc-alignednew.md)|C + + 17 과잉 맞춤된 동적 할당을 사용 하도록 설정 (에 기본적으로 C + +에서 17).|
-|[auto\[-\]](zc-auto-deduce-variable-type.md)|에 대 한 새 표준 c + + 의미 적용 `auto` (에 기본적으로).|
-|[__cplusplus\[-\]](zc-cplusplus.md)|사용 하도록 설정 된 **__cplusplus** 매크로 지원 되는 표준 보고서를 (기본적으로 해제) 합니다.|
-|[externConstexpr\[-\]](zc-externconstexpr.md)|에 대 한 외부 링크를 사용 하도록 설정 `constexpr` 변수 (기본적으로 해제) 합니다.|
-|[forScope\[-\]](zc-forscope-force-conformance-in-for-loop-scope.md)|표준 c + + 적용 `for` 범위 지정 규칙 (에 기본적으로).|
-|[implicitNoexcept\[-\]](zc-implicitnoexcept-implicit-exception-specifiers.md)|암시적 사용 `noexcept` 에 필요한 기능 (에 기본적으로).|
-|[inline\[-\]](zc-inline-remove-unreferenced-comdat.md)|COMDAT 이거나 내부 링크만 경우 참조 되지 않은 함수 또는 데이터 제거 (기본적으로 해제) 합니다.|
-|[noexceptTypes\[-\]](zc-noexcepttypes.md)|C + + 17 noexcept 규칙 적용 (에 기본적으로 C + + 17에 또는 나중에).|
-|[referenceBinding\[-\]](zc-referencebinding-enforce-reference-binding-rules.md)|UDT 임시 비 const lvalue 참조에 바인딩되지 것입니다 (기본적으로 해제) 합니다.|
-|[rvalueCast\[-\]](zc-rvaluecast-enforce-type-conversion-rules.md)|표준 c + + 명시적 형식 변환 규칙 적용 (기본적으로 해제) 합니다.|
-|[sizedDealloc\[-\]](zc-sizeddealloc-enable-global-sized-dealloc-functions.md)|C + + 14 전역 크기 지정 된 할당 해제 함수를 사용 하도록 설정 (에 기본적으로).|
-|[strictStrings\[-\]](zc-strictstrings-disable-string-literal-type-conversion.md)|문자열 리터럴 사용 안 함 `char*` 또는 `wchar_t*` 변환 (기본적으로 해제) 합니다.|
-|[ternary\[-\]](zc-ternary.md)|피연산자 형식에 대 한 조건부 연산자 규칙을 적용 (기본적으로 해제) 합니다.|
-|[threadSafeInit\[-\]](zc-threadsafeinit-thread-safe-local-static-initialization.md)|스레드로부터 안전한 로컬 정적 초기화를 사용 하도록 설정 (에 기본적으로).|
-|[throwingNew\[-\]](zc-throwingnew-assume-operator-new-throws.md)|가정 `operator new` 실패 시 throw (기본적으로 해제) 합니다.|
-|[삼중 자\[-\]](zc-trigraphs-trigraphs-substitution.md)|삼중 자 (사용 되지 않음, off 기본적으로)을 사용 하도록 설정 합니다.|
-|[twoPhase-](zc-twophase.md)|맞지 않는 템플릿 구문 분석 동작 (기본적으로 준수)를 사용 합니다.|
-|[wchar_t\[-\]](zc-wchar-t-wchar-t-is-native-type.md)|`wchar_t` 네이티브 형식이 아닙니다 (에 기본적으로).|
+|[alignedNew\[-\]](zc-alignednew.md)|C + + 17 과다 정렬 된 동적 할당을 사용 하도록 설정 (에서 기본적으로 C + +에서 17).|
+|[auto\[-\]](zc-auto-deduce-variable-type.md)|새 표준 c + + 의미를 적용 `auto` (에서 기본적으로).|
+|[__cplusplus\[-\]](zc-cplusplus.md)|사용 하도록 설정 합니다 **__cplusplus** 매크로 지원 되는 표준 보고서를 (기본적으로 꺼져 있음).|
+|[externConstexpr\[-\]](zc-externconstexpr.md)|외부 링크를 사용 하도록 설정 `constexpr` 변수 (기본적으로 꺼져 있음).|
+|[forScope\[-\]](zc-forscope-force-conformance-in-for-loop-scope.md)|표준 c + +를 적용 `for` 범위 지정 규칙 (에서 기본적으로).|
+|[implicitNoexcept\[-\]](zc-implicitnoexcept-implicit-exception-specifiers.md)|암시적 사용 `noexcept` 필수 함수에서 (에서 기본적으로).|
+|[inline\[-\]](zc-inline-remove-unreferenced-comdat.md)|COMDAT 되었거나 내부 링크만 있는 참조 되지 않은 함수 또는 데이터를 제거 (기본적으로 꺼져 있음).|
+|[noexceptTypes\[-\]](zc-noexcepttypes.md)|C + + 17 noexcept 규칙 적용 (에서 C + + 17 이상 기본적으로).|
+|[referenceBinding\[-\]](zc-referencebinding-enforce-reference-binding-rules.md)|UDT 임시 비 const lvalue 참조에 바인딩되지 않습니다 (기본적으로 꺼져 있음).|
+|[rvalueCast\[-\]](zc-rvaluecast-enforce-type-conversion-rules.md)|표준 c + + 명시적 형식 변환 규칙 적용 (기본적으로 꺼져 있음).|
+|[sizedDealloc\[-\]](zc-sizeddealloc-enable-global-sized-dealloc-functions.md)|C + + 14 전역 크기가 지정 된 된 할당 해제 함수 사용 (에서 기본적으로).|
+|[strictStrings\[-\]](zc-strictstrings-disable-string-literal-type-conversion.md)|사용 하지 않도록 설정 하는 문자열 리터럴 `char*` 또는 `wchar_t*` 변환 (기본적으로 꺼져 있음).|
+|[ternary\[-\]](zc-ternary.md)|피연산자 형식에 대 한 조건부 연산자 규칙 적용 (기본적으로 꺼져 있음).|
+|[threadSafeInit\[-\]](zc-threadsafeinit-thread-safe-local-static-initialization.md)|스레드로부터 안전한 로컬 정적 초기화를 사용 하도록 설정 (에서 기본적으로).|
+|[throwingNew\[-\]](zc-throwingnew-assume-operator-new-throws.md)|가정 `operator new` 실패 시 throw (기본적으로 꺼져 있음).|
+|[삼중 자\[-\]](zc-trigraphs-trigraphs-substitution.md)|삼중 자 (사용 되지 않는 해제 기본적으로)을 사용 하도록 설정 합니다.|
+|[twoPhase-](zc-twophase.md)|비준수 템플릿 구문 분석 동작 (기본적으로 준수)를 사용 합니다.|
+|[wchar_t\[-\]](zc-wchar-t-wchar-t-is-native-type.md)|`wchar_t` 네이티브 형식, 형식 정의가 아닙니다. (에서 기본적으로).|
 
 Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstandard Behavior](../../cpp/nonstandard-behavior.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-[컴파일러 옵션](compiler-options.md)  
+[컴파일러 옵션](compiler-options.md)<br/>
 [컴파일러 옵션 설정](setting-compiler-options.md)

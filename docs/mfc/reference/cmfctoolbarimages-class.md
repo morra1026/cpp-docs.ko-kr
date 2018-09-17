@@ -150,12 +150,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 682f4ecbbc4d048f6353be6844bfef042efbc45f
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 95d9da94e2fa7a79db6696649854fafa989941f4
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42539131"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726273"
 ---
 # <a name="cmfctoolbarimages-class"></a>CMFCToolBarImages 클래스
 도구 모음에서 이미지입니다. `CMFCToolBarImages` 클래스 파일에서 응용 프로그램 리소스에서 로드 하는 도구 모음 이미지를 관리 합니다.  
@@ -251,14 +251,14 @@ class CMFCToolBarImages : public CObject
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CMFCToolBarImages::m_bDisableTrueColorAlpha](#m_bdisabletruecoloralpha)|Truecolor 알파 혼합 (32 비트 색상)를 사용 하지 않도록 설정 하는 경우 TRUE입니다.|  
   
 ## <a name="remarks"></a>설명  
  관리 하는 도구 모음 이미지의 전체 비트맵 `CMFCToolbarImages` 하나 이상의 작은 도구 모음 이미지 (단추)의 크기가 고정 되어 구성 됩니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 구성 하는 방법에 설명 된 `CMFCToolBarImages` 에서 다양 한 메서드를 사용 하 여 개체를 `CMFCToolBarImages` 클래스입니다. 도구 모음 이미지의 크기를 설정, 이미지, 로드 및 이미지의 투명 한 색을 설정 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [Visual Studio 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#32](../../mfc/codesnippet/cpp/cmfctoolbarimages-class_1.h)]  
@@ -282,8 +282,8 @@ void AdaptColors(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *clrBase*  
- [in] *clrTone*  
+*clrBase*<br/>
+[in] [in] *clrTone*  
   
 ### <a name="remarks"></a>설명  
   
@@ -297,11 +297,11 @@ int AddIcon(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hIcon*  
- 추가 될 아이콘에 대 한 핸들입니다.  
+*hIcon*<br/>
+[in] 추가 될 아이콘에 대 한 핸들입니다.  
   
- [in] *bAlphaBlend*  
- TRUE 이면이 아이콘은 알파 혼합; 사용 그렇지 않으면 FALSE입니다.  
+*bAlphaBlend*<br/>
+[in] TRUE 이면이 아이콘은 알파 혼합; 사용 그렇지 않으면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 추가 된 도구 모음 이미지의 0부터 시작 인덱스 그렇지 않으면-1입니다.  
@@ -320,17 +320,17 @@ int AddImage(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hbmp*  
- 추가할 비트맵에 대 한 핸들입니다.  
+*hbmp*<br/>
+[in] 추가할 비트맵에 대 한 핸들입니다.  
   
- [in] *bSetBitPerPixel*  
- True는 `CMFCToolBarImages` 개체가 새 이미지의 색 농도 (픽셀당 비트)를 사용 합니다. 경우에는 FALSE를 `CMFCToolbarImages` 개체는 현재 색 농도 유지 합니다.  
+*bSetBitPerPixel*<br/>
+[in] True는 `CMFCToolBarImages` 개체가 새 이미지의 색 농도 (픽셀당 비트)를 사용 합니다. 경우에는 FALSE를 `CMFCToolbarImages` 개체는 현재 색 농도 유지 합니다.  
   
- [in] *imageList*  
- 에 대 한 참조를 `CMFCToolbarImages` 추가할 이미지를 포함 하는 개체입니다.  
+*ImageList*<br/>
+[in] 에 대 한 참조를 `CMFCToolbarImages` 추가할 이미지를 포함 하는 개체입니다.  
   
- [in] *nIndex*  
- 소스의 인덱스 `CMFCToolbarImages` 추가할 이미지의 개체입니다.  
+*nIndex*<br/>
+[in] 소스의 인덱스 `CMFCToolbarImages` 추가할 이미지의 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  도구 모음 수 있는 이미지를 `CMFCToolBarImages` 새로운 비트맵을 성공적으로 추가 된 후 유지 관리 하는 개체 작업에 실패 하면-1입니다.  
@@ -397,8 +397,8 @@ BOOL CreateFromImageList(const CImageList& imageList);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *imageList*  
- 도구 모음 이미지에 대 한 원본으로 사용할 이미지 목록입니다.  
+*ImageList*<br/>
+[in] 도구 모음 이미지에 대 한 원본으로 사용할 이미지 목록입니다.  
   
 ### <a name="return-value"></a>반환 값  
  항상 TRUE를 반환 합니다.  
@@ -416,8 +416,8 @@ static HRGN __stdcall CreateRegionFromImage(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bmp*  
- [in] *clrTransparent*  
+*bmp*<br/>
+[in] [in] *clrTransparent*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -431,8 +431,8 @@ BOOL DeleteImage(int iImage);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iImage*  
- 삭제 하려면 이미지의 인덱스를 지정 합니다.  
+*iImage*<br/>
+[in] 삭제 하려면 이미지의 인덱스를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  이미지는 성공적으로 삭제 된 경우 TRUE입니다. 이미지 인덱스를 유효 하지 않은 경우 FALSE를 `CMFCToolbarImages` 개체는 일시적 이며는 `CMFCToolbarImages` 개체를 사용자 정의 이미지를 포함 하지 않거나 다른 경우 오류가 발생 합니다.  
@@ -455,35 +455,35 @@ BOOL Draw(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *x*  
- 그릴 이미지 인 사각형의 왼쪽의 X 좌표입니다.  
+*x*<br/>
+[in] 그릴 이미지 인 사각형의 왼쪽의 X 좌표입니다.  
   
- [in] *y*  
- 그릴 이미지 인 사각형 위쪽의 Y 좌표입니다.  
+*y*<br/>
+[in] 그릴 이미지 인 사각형 위쪽의 Y 좌표입니다.  
   
- [in] *iImageIndex*  
- 표시할 이미지의 0부터 시작 하는 인덱스입니다.  
+*iImageIndex*<br/>
+[in] 표시할 이미지의 0부터 시작 하는 인덱스입니다.  
   
- [in] *bHilite*  
- 이미지; 강조 표시 하는 경우 TRUE 그렇지 않으면 FALSE입니다.  
+*bHilite*<br/>
+[in] 이미지; 강조 표시 하는 경우 TRUE 그렇지 않으면 FALSE입니다.  
   
- [in] *사용 안 함*  
- 이미지를 사용할 수 없는 스타일에 그릴 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+*사용 안 함*<br/>
+[in] 이미지를 사용할 수 없는 스타일에 그릴 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
- [in] *bIndeterminate*  
- 이미지는 확정 되지 않은 상태 스타일;에 그릴 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+*bIndeterminate*<br/>
+[in] 이미지는 확정 되지 않은 상태 스타일;에 그릴 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
- [in] *bShadow*  
- 이미지가 그림자;를 사용 하 여 그릴 수 있으면 TRUE 그렇지 않으면 FALSE입니다.  
+*bShadow*<br/>
+[in] 이미지가 그림자;를 사용 하 여 그릴 수 있으면 TRUE 그렇지 않으면 FALSE입니다.  
   
- [in] *bInactive*  
- 이미지를 비활성 상태로 스타일에 그릴 경우 TRUE 그렇지 않으면 FALSE입니다.  
+*bInactive*<br/>
+[in] 이미지를 비활성 상태로 스타일에 그릴 경우 TRUE 그렇지 않으면 FALSE입니다.  
   
- [in] *alphaSrc*  
- 알파 채널 (불투명) 값입니다. 값이 255 이면 이미지가 그려지는 불투명 하 게 됩니다. 값이 0 이면 이미지를 그릴 투명 합니다. 이 값은 32 비트 컬러 이미지에 대해서만 및 Windows Vista 투명 스타일을 표시 하는 이미지를 사용 합니다.  
+*alphaSrc*<br/>
+[in] 알파 채널 (불투명) 값입니다. 값이 255 이면 이미지가 그려지는 불투명 하 게 됩니다. 값이 0 이면 이미지를 그릴 투명 합니다. 이 값은 32 비트 컬러 이미지에 대해서만 및 Windows Vista 투명 스타일을 표시 하는 이미지를 사용 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정된 된 이미지는 성공적으로 표시 된 경우 TRUE입니다. 이미지 인덱스를 잘못 되었거나 다른 오류가 발생 한 경우 FALSE입니다.  
@@ -506,14 +506,14 @@ BOOL DrawEx(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rect*  
- [in] *iImageIndex*  
- [in] *horzAlign*  
- [in] *vertAlign*  
- [in] *rectSrc*  
- [in] *0*  
- [in] *0)*  
+*pDC*<br/>
+[in] [in] *rect*  
+*iImageIndex*<br/>
+[in] [in] *horzAlign*  
+*vertAlign*<br/>
+[in] [in] *rectSrc*  
+*0*<br/>
+[in] [in] *0)*  
  [in] *alphaSrc*  
   
 ### <a name="return-value"></a>반환 값  
@@ -540,8 +540,8 @@ void EndDrawImage(CAfxDrawState& ds);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *ds*  
- 에 대 한 참조를 `CAfxDrawState` 에 전달 된 개체는 `PrepareDrawImage` 메서드.  
+*ds*<br/>
+[in] 에 대 한 참조를 `CAfxDrawState` 에 전달 된 개체는 `PrepareDrawImage` 메서드.  
   
 ##  <a name="extracticon"></a>  CMFCToolBarImages::ExtractIcon  
  도구 모음 이미지에서 지정 된 이미지 인덱스가 있는 아이콘을 반환 합니다.  
@@ -551,8 +551,8 @@ HICON ExtractIcon(int nIndex);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nIndex*  
- 이미지를 아이콘으로 추출할 수 있는 되는 이미지 목록에서 0부터 시작 하는 인덱스입니다.  
+*nIndex*<br/>
+[in] 이미지를 아이콘으로 추출할 수 있는 되는 이미지 목록에서 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  추출 된 아이콘에 대 한 핸들 또는 경우에 NULL *nIndex* 범위를 벗어났습니다.  
@@ -567,11 +567,11 @@ static void FillDitheredRect(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 채울 사각형의 좌표입니다.  
+*rect*<br/>
+[in] 채울 사각형의 좌표입니다.  
   
 ### <a name="remarks"></a>설명  
  평균 COLOR_BTNFACE 및 COLOR_BTNHIGHLIGHT 시스템 색의 색을 사용 하 여 사각형에 맞게이 메서드를 사용 합니다. 시스템이 256 색을 사용 하는 경우 사각형이 채워집니다 디더링된 패턴 이러한 두 가지 색을 대신 합니다.  
@@ -629,8 +629,8 @@ SIZE GetImageSize(BOOL bDest=FALSE) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bDest*  
- 대상 크기를 검색 하려면 true로 설정 False 이면 원본 이미지 크기를 검색 합니다.  
+*bDest*<br/>
+[in] 대상 크기를 검색 하려면 true로 설정 False 이면 원본 이미지 크기를 검색 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  `SIZE` 픽셀에서 이미지의 크기를 지정 하는 구조입니다.  
@@ -719,8 +719,8 @@ int GetResourceOffset(UINT uiResId) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiResId*  
- 이미지 리소스 id입니다.  
+*uiResId*<br/>
+[in] 이미지 리소스 id입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 이미지 인덱스 지정 된 리소스 ID 사용 하 여 이미지 없으면-1입니다.  
@@ -744,8 +744,8 @@ BOOL GrayImages(int nGrayImageLuminancePercentage);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nGrayImageLuminancePercentage*  
- 광도 비율입니다.  
+*nGrayImageLuminancePercentage*<br/>
+[in] 광도 비율입니다.  
   
 ### <a name="return-value"></a>반환 값  
  컬렉션에서 이미지 성공적으로 회색으로 표시 된 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -844,20 +844,20 @@ BOOL Load(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiResID*  
- 비트맵 리소스의 ID입니다.  
+*uiResID*<br/>
+[in] 비트맵 리소스의 ID입니다.  
   
- [in] *hinstRes*  
- 리소스 DLL의 인스턴스입니다.  
+*hinstRes*<br/>
+[in] 리소스 DLL의 인스턴스입니다.  
   
- [in] *추가*  
- 기존 비트맵 이미지의 이름을 바꾸려면 로드 비트맵 또는 FALSE로 기존 비트맵을 추가 하려면 TRUE입니다.  
+*추가*<br/>
+[in] 기존 비트맵 이미지의 이름을 바꾸려면 로드 비트맵 또는 FALSE로 기존 비트맵을 추가 하려면 TRUE입니다.  
   
- [in] *lpszBmpFileName*  
- 비트맵을 로드 하는 디스크 파일 경로입니다.  
+*lpszBmpFileName*<br/>
+[in] 비트맵을 로드 하는 디스크 파일 경로입니다.  
   
- [in] *nMaxFileSize*  
- 비트맵 파일의 바이트의 최대 수 또는 파일 크기에 관계 없이 비트맵을 로드 하는 0을 지정 합니다. 파일의 크기가이 최대 크기를 초과 하는 경우 메서드는 FALSE를 반환 하 고 비트맵을 로드 하지 않습니다.  
+*nMaxFileSize*<br/>
+[in] 비트맵 파일의 바이트의 최대 수 또는 파일 크기에 관계 없이 비트맵을 로드 하는 0을 지정 합니다. 파일의 크기가이 최대 크기를 초과 하는 경우 메서드는 FALSE를 반환 하 고 비트맵을 로드 하지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  비트맵을 성공적으로 로드 된 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -876,8 +876,8 @@ BOOL LoadStr(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszResourceName*  
- [in] *hinstRes*  
+*lpszResourceName*<br/>
+[in] [in] *hinstRes*  
  [in] *추가*  
   
 ### <a name="return-value"></a>반환 값  
@@ -894,8 +894,8 @@ static COLORREF __stdcall MapFromSysColor(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *색*  
- [in] *bUseRGBQUAD*  
+*색*<br/>
+[in] [in] *bUseRGBQUAD*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -912,8 +912,8 @@ BOOL MapTo3dColors(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bUseRGBQUAD*  
- [in] *clrSrc*  
+*bUseRGBQUAD*<br/>
+[in] [in] *clrSrc*  
  [in] *clrDest*  
   
 ### <a name="return-value"></a>반환 값  
@@ -930,8 +930,8 @@ static COLORREF __stdcall MapToSysColor(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *색*  
- [in] *bUseRGBQUAD*  
+*색*<br/>
+[in] [in] *bUseRGBQUAD*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -974,11 +974,11 @@ static BOOL MirrorBitmap(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out에서] *hbmp*  
- 미러 비트맵 핸들입니다.  
+*hbmp*<br/>
+[out에서] 미러 비트맵 핸들입니다.  
   
- [in] *cxImage*  
- 픽셀에서 이미지의 너비입니다.  
+*cxImage*<br/>
+[in] 픽셀에서 이미지의 너비입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이미지를 성공적으로 미러링 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -996,8 +996,8 @@ static BOOL __stdcall MirrorBitmapVert(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hbmp*  
- [in] *cyImage*  
+*hbmp*<br/>
+[in] [in] *cyImage*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -1035,8 +1035,8 @@ BOOL PreMultiplyAlpha(HBITMAP hbmp);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hbmp*  
- [in] *bAutoCheckPremlt*  
+*hbmp*<br/>
+[in] [in] *bAutoCheckPremlt*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -1066,14 +1066,14 @@ BOOL PrepareDrawImage(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *ds*  
- 에 대 한 참조 `CAfxDrawState` 이미지 렌더링 단계 간에 할당 된 리소스를 저장 하는 구조입니다.  
+*ds*<br/>
+[in] 에 대 한 참조 `CAfxDrawState` 이미지 렌더링 단계 간에 할당 된 리소스를 저장 하는 구조입니다.  
   
- [in] *sizeImageDest*  
- 대상 이미지의 크기를 지정합니다.  
+*sizeImageDest*<br/>
+[in] 대상 이미지의 크기를 지정합니다.  
   
- [in] *bFadeInactive*  
- 가리키더라도 그릴 비활성 이미지를 원하는 경우 TRUE입니다.  
+*bFadeInactive*<br/>
+[in] 가리키더라도 그릴 비활성 이미지를 원하는 경우 TRUE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  도구 모음 이미지를 그리는 데 필요한 리소스를 성공적으로 그렇지 않으면 FALSE 할당 된 경우 TRUE입니다.  
@@ -1118,8 +1118,8 @@ static void SetDisabledImageAlpha(BYTE nValue);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *n 값*  
- 알파 채널의 새 값입니다.  
+*n 값*<br/>
+[in] 알파 채널의 새 값입니다.  
   
 ### <a name="remarks"></a>설명  
  비활성된 이미지에 대 한 사용자 지정 알파 값을 설정 하려면이 메서드를 사용 합니다. 기본값은 반투명 하 비활성화 된 단추 이미지에 이르게 127입니다. 값이 0으로 설정한 경우에 비활성된 이미지 완전히 투명 하 게 됩니다. 값이 255로 설정 하면 비활성된 이미지를 완전히 불투명 하 게 됩니다.  
@@ -1146,8 +1146,8 @@ void SetImageSize(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *sizeImage*  
- 도구 모음 이미지의 새 크기입니다.  
+*sizeImage*<br/>
+[in] 도구 모음 이미지의 새 크기입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로 도구 모음 이미지의 크기는 16x15 픽셀입니다. 다른 크기의 도구 모음 이미지를 사용 하려는 경우이 메서드를 호출 합니다.  
@@ -1205,8 +1205,8 @@ COLORREF SetTransparentColor(COLORREF clrTransparent);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *clrTransparent*  
- RGB 값입니다.  
+*clrTransparent*<br/>
+[in] RGB 값입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이전 투명색입니다.  
@@ -1224,11 +1224,11 @@ BOOL UpdateImage(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iImage*  
- 업데이트할 이미지의 0부터 시작 하는 인덱스입니다.  
+*iImage*<br/>
+[in] 업데이트할 이미지의 0부터 시작 하는 인덱스입니다.  
   
- [in] *hbmp*  
- 이미지를 업데이트 하는 비트맵 핸들입니다.  
+*hbmp*<br/>
+[in] 이미지를 업데이트 하는 비트맵 핸들입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이미지는 성공적으로 업데이트 된 경우 TRUE입니다. 이미지 목록 또는 임시 사용자 정의 되지 않으면 FALSE로 지정 합니다.  

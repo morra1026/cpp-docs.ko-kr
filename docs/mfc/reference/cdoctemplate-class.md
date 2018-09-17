@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 243881a2ca18ba54e3a6c9cafee407f07746baca
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 5cbdb880c7165f314c004a7cbcad44dd3b76fd36
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336987"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709841"
 ---
 # <a name="cdoctemplate-class"></a>CDocTemplate 클래스
 문서 템플릿의 기본 기능을 정의하는 추상 기본 클래스입니다.  
@@ -431,11 +431,11 @@ virtual CDocument* OpenDocumentFile(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszPathName*  
- 문서를 열 수를 포함 하는 파일의 경로에 대 한 포인터입니다.  
+*lpszPathName*<br/>
+[in] 문서를 열 수를 포함 하는 파일의 경로에 대 한 포인터입니다.  
   
- [in] *baddtomru입니다*  
- TRUE 이면 문서를 사용 하면 가장 최근의 파일 중 하나인 FALSE 문서가 아닌 최신 파일 중 하나를 나타냅니다.  
+*baddtomru*<br/>
+[in] TRUE 이면 문서를 사용 하면 가장 최근의 파일 중 하나인 FALSE 문서가 아닌 최신 파일 중 하나를 나타냅니다.  
   
 ### <a name="return-value"></a>반환 값  
  해당 파일의 이름은 문서에 대 한 포인터 *lpszPathName*; 실패 한 경우 NULL입니다.  

@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7a04710d900aa9eb5889c19fbdc419a3b7f3cbc
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b3b697901ac564a88f48cdbc3154f29089c23acc
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204612"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706162"
 ---
 # <a name="set-class"></a>set 클래스
 
@@ -119,15 +119,15 @@ class set
 ### <a name="parameters"></a>매개 변수
 
 *키*<br/>
- set에 저장되는 요소 데이터 형식입니다.
+set에 저장되는 요소 데이터 형식입니다.
 
 *특성*<br/>
- 두 요소 값을 정렬 키로 비교하여 set에서 상대적인 순서를 결정할 수 있는 함수 개체를 제공하는 형식입니다. 이 인수는 선택적이며 이진 조건자 **less** *\<Key>* 가 기본값입니다.
+두 요소 값을 정렬 키로 비교하여 set에서 상대적인 순서를 결정할 수 있는 함수 개체를 제공하는 형식입니다. 이 인수는 선택적이며 이진 조건자 **less** *\<Key>* 가 기본값입니다.
 
 C++14에서는 형식 매개 변수가 없는 `std::less<>` 또는 `std::greater<>` 조건자를 지정하여 유형이 다른 조회를 사용하도록 설정할 수 있습니다. 자세한 내용은 [연관 컨테이너의 유형이 다른 조회](../standard-library/stl-containers.md#sequence_containers)를 참조하세요
 
 *할당자*<br/>
- set의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `allocator<Key>`입니다.
+set의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `allocator<Key>`입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -488,7 +488,7 @@ size_type count(const Key& key) const;
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- set에서 일치하는지 확인할 요소의 키입니다.
+set에서 일치하는지 확인할 요소의 키입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -934,7 +934,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- 검색 중인 set에서 요소의 정렬 키와 비교할 인수 키입니다.
+검색 중인 set에서 요소의 정렬 키와 비교할 인수 키입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1019,16 +1019,16 @@ size_type erase(
 ### <a name="parameters"></a>매개 변수
 
 *Where*<br/>
- 제거할 요소의 위치입니다.
+제거할 요소의 위치입니다.
 
 *첫 번째*<br/>
- 제거할 첫 번째 요소의 위치입니다.
+제거할 첫 번째 요소의 위치입니다.
 
 *마지막*<br/>
- 제거할 마지막 요소 바로 다음 위치입니다.
+제거할 마지막 요소 바로 다음 위치입니다.
 
 *키*<br/>
- 제거할 요소의 키 값입니다.
+제거할 요소의 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1131,7 +1131,7 @@ const_iterator find(const Key& key) const;
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- 검색 중인 집합에서 요소의 정렬 키와 일치하는지 확인할 키 값입니다.
+검색 중인 집합에서 요소의 정렬 키와 일치하는지 확인할 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1595,7 +1595,7 @@ iterator lower_bound(const Key& key);
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- 검색 중인 set에서 요소의 정렬 키와 비교할 인수 키입니다.
+검색 중인 set에서 요소의 정렬 키와 비교할 인수 키입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2215,7 +2215,7 @@ void swap(
 ### <a name="parameters"></a>매개 변수
 
 *right*<br/>
- 대상 set와 교환할 요소를 제공하는 인수 집합입니다.
+대상 set와 교환할 요소를 제공하는 인수 집합입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2284,7 +2284,7 @@ iterator upper_bound(const Key& key);
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- 검색 중인 set에서 요소의 정렬 키와 비교할 인수 키입니다.
+검색 중인 set에서 요소의 정렬 키와 비교할 인수 키입니다.
 
 ### <a name="return-value"></a>반환 값
 

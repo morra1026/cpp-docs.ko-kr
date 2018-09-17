@@ -18,17 +18,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b39a6889dfd8a28d65aebcab04881d4bc28ce1e
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: b86c2c4031e1257e2a8a8e0f7b504686ea1c4588
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39403669"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701691"
 ---
 # <a name="inline-functions-c"></a>인라인 함수(C++)
 클래스 선언의 본문에 정의된 함수는 인라인 함수입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 클래스 선언에서 `Account` 생성자는 인라인 함수입니다. 멤버 함수는 `GetBalance`, `Deposit`, 및 `Withdraw` 으로 지정 되지 않은 **인라인** 있지만 인라인 함수로 구현할 수 있습니다.  
   
 ```cpp 
@@ -156,7 +156,8 @@ private:
   
  재귀 함수는 지정 된 깊이까지 인라인으로 대체할된 수는 [inline_depth](../preprocessor/inline-depth.md) pragma에는 최대 16 번 호출 합니다. 해당 깊이 이후 재귀 함수 호출은 함수의 인스턴스 호출로 처리됩니다.  인라인 추론에서 재귀 함수를 검사하는 깊이는 16을 초과할 수 없습니다. 합니다 [inline_recursion](../preprocessor/inline-recursion.md) pragma 확장에서 현재 함수의 인라인 확장을 제어 합니다. 참조 된 [인라인 함수 확장](../build/reference/ob-inline-function-expansion.md) (/ Ob) 관련된 정보에 대 한 컴파일러 옵션입니다.  
   
-**Microsoft 전용 종료**  
+**Microsoft 전용 종료**
+
  사용 하 여 대 한 자세한 내용은 합니다 **인라인** 지정자를 참조 하세요.  
   
 -   [인라인 클래스 멤버 함수](../cpp/inline-functions-cpp.md)  

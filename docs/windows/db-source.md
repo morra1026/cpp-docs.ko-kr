@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bad61c157926fd417467afaa2d97d0db517430f6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c43139dd1d927d9e6173d9e78765d0fcdbddae6a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201558"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716016"
 ---
 # <a name="dbsource"></a>db_source
 
@@ -43,11 +43,11 @@ ms.locfileid: "43201558"
 *db_source*  
 데이터 원본에 연결할 때 사용할 연결 문자열입니다. 연결 문자열의 형식에 대해서 [연결 문자열 및 데이터 링크](/previous-versions/windows/desktop/ms718376\(v=vs.85\)) 에 Microsoft 데이터 액세스 구성 요소 (MDAC) SDK입니다.
 
-*name* (선택 사항)  
-사용 하는 경우 **db_source** 클래스에서 *이름* 있는 데이터 원본 개체의 인스턴스를 **db_source** 특성 (예 1 참조)를 적용 합니다. 사용 하는 경우 **db_source** 메서드 구현에서 인라인 *이름* 데이터 액세스에 사용할 수 있는 변수 (로컬 메서드에) 원본 (예 2 참조). 이 전달할 *이름* 에 *source_name* 의 매개 변수 `db_command` 명령을 사용 하 여 데이터 원본에 연결할 합니다.
+*name*  
+(선택 사항) 사용 하는 경우 **db_source** 클래스에서 *이름* 있는 데이터 원본 개체의 인스턴스를 **db_source** 특성 (예 1 참조)를 적용 합니다. 사용 하는 경우 **db_source** 메서드 구현에서 인라인 *이름* 데이터 액세스에 사용할 수 있는 변수 (로컬 메서드에) 원본 (예 2 참조). 이 전달할 *이름* 에 *source_name* 의 매개 변수 `db_command` 명령을 사용 하 여 데이터 원본에 연결할 합니다.
 
-*hresult* (선택 사항)  
-이 데이터베이스 명령의 HRESULT 받을 변수를 식별 합니다. 변수가 없으면 특성에 의해 자동으로 삽입됩니다.
+*hresult*  
+(선택 사항) 이 데이터베이스 명령의 HRESULT 받을 변수를 식별 합니다. 변수가 없으면 특성에 의해 자동으로 삽입됩니다.
 
 ## <a name="remarks"></a>설명
 

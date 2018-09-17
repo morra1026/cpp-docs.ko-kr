@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e09767927a91c61f564e2013bf1b3e0930821193
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: c0e42cd14c5707f728f5577a77b2dd613c5ef2a0
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42572382"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709620"
 ---
 # <a name="common-visual-c-arm-migration-issues"></a>일반적인 Visual C++ ARM 마이그레이션 문제
 
@@ -110,4 +110,4 @@ X86 및 x64 아키텍처에서 기본값은 **찾는데** 대부분의 MSVC를 �
 
 ## <a name="see-also"></a>참고자료
 
-[ARM 프로세서에 대한 Visual C++ 구성](../build/configuring-programs-for-arm-processors-visual-cpp.md)  
+[ARM 프로세서에 대한 Visual C++ 구성](../build/configuring-programs-for-arm-processors-visual-cpp.md)

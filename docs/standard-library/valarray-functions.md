@@ -40,12 +40,12 @@ helpviewer_keywords:
 - std::swap [C++]
 - std::tan [C++]
 - std::tanh [C++]
-ms.openlocfilehash: 855b58c9a970b569da533d84ffb21728bdf90157
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a770e240f28dbd8e904a288beb10a9a6abe7431c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962473"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715678"
 ---
 # <a name="ltvalarraygt-functions"></a>&lt;valarray&gt; 함수
 
@@ -69,14 +69,14 @@ valarray<Type> abs(const valarray<Type>& left);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
+*left*<br/>
+구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
 
 ### <a name="return-value"></a>반환 값
 
 해당 요소가 입력 valarray 요소의 절대값과 같은 valarray
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_abs.cpp
@@ -124,8 +124,8 @@ valarray<Type> acos(const valarray<Type>& left);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
+*left*<br/>
+구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -137,7 +137,7 @@ valarray<Type> acos(const valarray<Type>& left);
 
 반환 값은 코사인값 입력과 일치하는 0과 +pi 사이의 주요 값입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_acos.cpp
@@ -197,8 +197,8 @@ valarray<Type> asin(const valarray<Type>& left);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
+*left*<br/>
+구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -210,7 +210,7 @@ valarray<Type> asin(const valarray<Type>& left);
 
 반환 값은 보안 주체 간의 값 + pi/2와-pi/2 사인 값을 사용 하 여 일치 하는 입력 값입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_asin.cpp
@@ -270,8 +270,8 @@ valarray<Type> atan(const valarray<Type>& left);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
+*left*<br/>
+구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -283,7 +283,7 @@ valarray<Type> atan(const valarray<Type>& left);
 
 반환 값은 보안 주체 간의 값 + pi/2와-pi/2 탄젠트와 일치 하는 입력 값입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_atan.cpp
@@ -352,11 +352,11 @@ valarray<Type> atan2(const Type& left, const valarray<Type>& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 해당 요소가 아크탄젠트 인수의 y좌표 값을 제공하는 입력 valarray 또는 상수 숫자 데이터 형식
+*left*<br/>
+해당 요소가 아크탄젠트 인수의 y좌표 값을 제공하는 입력 valarray 또는 상수 숫자 데이터 형식
 
-*right*  
- 해당 요소가 아크탄젠트 인수의 x좌표 값을 제공하는 입력 valarray 또는 상수 숫자 데이터 형식
+*right*<br/>
+해당 요소가 아크탄젠트 인수의 x좌표 값을 제공하는 입력 valarray 또는 상수 숫자 데이터 형식
 
 ### <a name="return-value"></a>반환 값
 
@@ -376,7 +376,7 @@ valarray<Type> atan2(const Type& left, const valarray<Type>& right);
 
 하는 경우 *왼쪽* 하 고 *오른쪽* 요소 수가 다릅니다, 결과가 정의 되지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_atan2.cpp
@@ -440,14 +440,14 @@ valarray<Type> cos(const valarray<Type>& left);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
+*left*<br/>
+구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
 
 ### <a name="return-value"></a>반환 값
 
 해당 요소가 입력 valarray 요소의 절대값과 같은 valarray
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_cos.cpp
@@ -517,8 +517,8 @@ valarray<Type> cosh(const valarray<Type>& left);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
+*left*<br/>
+구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -530,7 +530,7 @@ valarray<Type> cosh(const valarray<Type>& left);
 
 cosh ( *z* ) = ( exp ( *z* ) + exp ( - *z* ) ) / 2
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_cosh.cpp
@@ -600,14 +600,14 @@ valarray<Type> exp(const valarray<Type>& left);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
+*left*<br/>
+구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
 
 ### <a name="return-value"></a>반환 값
 
 해당 요소가 입력 valarray 요소의 자연 지수와 같은 valarray
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_exp.cpp
@@ -663,14 +663,14 @@ valarray<Type> log(const valarray<Type>& left);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
+*left*<br/>
+구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
 
 ### <a name="return-value"></a>반환 값
 
 해당 요소가 입력 valarray 요소의 절대값과 같은 valarray
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_log.cpp
@@ -726,14 +726,14 @@ valarray<Type> log10(const valarray<Type>& left);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
+*left*<br/>
+구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
 
 ### <a name="return-value"></a>반환 값
 
 해당 요소가 입력 valarray 요소의 상용 로그와 같은 valarray
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_log10.cpp
@@ -806,11 +806,11 @@ pow(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 해당 요소가 지수화할 각 요소의 밑을 제공하는 입력 valarray
+*left*<br/>
+해당 요소가 지수화할 각 요소의 밑을 제공하는 입력 valarray
 
-*right*  
- 해당 요소가 지수화할 각 요소의 거듭제곱을 제공하는 입력 valarray
+*right*<br/>
+해당 요소가 지수화할 각 요소의 거듭제곱을 제공하는 입력 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -826,7 +826,7 @@ pow(
 
 하는 경우 *왼쪽* 하 고 *오른쪽* 요소 수가 다릅니다, 결과가 정의 되지 않습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <valarray>
@@ -888,14 +888,14 @@ valarray<Type> sin(const valarray<Type>& left);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
+*left*<br/>
+구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
 
 ### <a name="return-value"></a>반환 값
 
 해당 요소가 입력 valarray 요소의 사인과 같은 valarray
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_sin.cpp
@@ -965,8 +965,8 @@ valarray<Type> sinh(const valarray<Type>& left);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
+*left*<br/>
+구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -978,7 +978,7 @@ valarray<Type> sinh(const valarray<Type>& left);
 
 sinh ( *z* ) = ( exp ( *z* ) - exp ( - *z* ) ) / 2
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_sinh.cpp
@@ -1048,14 +1048,14 @@ valarray<Type> sqrt(const valarray<Type>& left);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
+*left*<br/>
+구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
 
 ### <a name="return-value"></a>반환 값
 
 해당 요소가 입력 valarray 요소의 제곱근과 같은 valarray
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_sqrt.cpp
@@ -1124,14 +1124,14 @@ valarray<Type> tan(const valarray<Type>& left);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
+*left*<br/>
+구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
 
 ### <a name="return-value"></a>반환 값
 
 해당 요소가 입력 valarray 요소의 탄젠트와 같은 valarray
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_tan.cpp
@@ -1201,8 +1201,8 @@ valarray<Type> tanh(const valarray<Type>& left);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- 구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
+*left*<br/>
+구성원 함수를 통해 해당 요소의 연산을 수행할 입력 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -1214,7 +1214,7 @@ valarray<Type> tanh(const valarray<Type>& left);
 
 tanh ( *z* ) = sinh ( *z* ) cosh / ( *z* ) = (exp ( *z* )-exp (- *z* )) / (exp ( *z* ) + exp (- *z* ))
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // valarray_tanh.cpp

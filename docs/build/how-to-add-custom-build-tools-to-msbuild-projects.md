@@ -16,48 +16,50 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3793e4223d00f219cc4f1d7b09e67453901bd6d1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4e06a2a545862c0fa9cfdcf6311334ecc86de2bf
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368332"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714404"
 ---
 # <a name="how-to-add-custom-build-tools-to-msbuild-projects"></a>방법: MSBuild 프로젝트에 사용자 지정 빌드 도구 추가
-사용자 지정 빌드 도구는 특정 파일에 연관 된 사용자 정의 명령줄 도구입니다.  
-  
- 특정 파일을 실행 하려면 프로젝트 파일 (.vcxproj) 명령줄, 추가 입력 또는 출력 파일 및 표시할 메시지를 지정 합니다. 경우 **MSBuild** 출력 파일은 해당 입력된 파일 보다 이전 버전임, 메시지를 표시 하 고 실행 명령줄 도구를 결정 합니다.  
-  
- 사용자 지정 빌드 도구 실행 될 때를 지정 하려면 하나 또는 둘 다의 사용은 `CustomBuildBeforeTargets` 및 `CustomBuildAfterTargets` 프로젝트 파일의 XML 요소입니다. 예를 들어 사용자 지정 빌드 도구 실행 MIDL 컴파일러와 C/c + + 컴파일러는 지정할 수 있습니다. 지정 된 `CustomBuildBeforeTargets` 특정 대상 실행 하기 전에 도구를 실행 하는 요소는 `CustomBuildAfterTargets` 특정 대상; 후 도구를 실행 하는 요소 또는 두 대상의 실행 간의 도구를 실행 하려면 두 요소입니다. 기본 위치를 앞에 있는 사용자 지정 빌드 도구 실행 두 요소를 지정 하는 경우는 **MIDL** 대상입니다.  
-  
- 사용자 지정 빌드 단계와 사용자 지정 빌드 도구에 지정 된 정보를 공유는 `CustomBuildBeforeTargets` 및 `CustomBuildAfterTargets` XML 요소입니다. 프로젝트 파일의 해당 대상으로 한 번만 지정 합니다.  
-  
-### <a name="to-add-a-custom-build-tool"></a>사용자 지정 빌드 도구를 추가 하려면  
-  
-1.  프로젝트 파일에 항목 그룹을 추가 하 고 각 입력된 파일에 대 한 항목을 추가 합니다. 다음과 같이 항목 메타 데이터와 명령을, 추가 입력, 출력 및 메시지를 지정 합니다. 이 예제에서는 "faq.txt" 파일을 프로젝트와 동일한 디렉터리에 있다고 가정 합니다.  
-  
-    ```  
-    <ItemGroup>  
-      <CustomBuild Include="faq.txt">  
-        <Message>Copying readme...</Message>  
-        <Command>copy %(Identity) $(OutDir)%(Identity)</Command>  
-        <Outputs>$(OutDir)%(Identity)</Outputs>  
-      </CustomBuild>  
-    </ItemGroup>  
-    ```  
-  
-### <a name="to-define-where-in-the-build-the-custom-build-tools-will-execute"></a>빌드에 사용자 지정 빌드 도구가 실행할 위치를 정의 하려면  
-  
-1.  프로젝트 파일에 다음 속성 그룹을 추가 합니다. 대상 중 하나 이상을 지정 해야 하지만 빌드 단계가 (전이나 후)를 실행 하려는 경우 다른 생략할 수는 특정 대상입니다. 이 예에서는 컴파일한 후 하지만 연결 하기 전에 사용자 지정 단계를 수행 합니다.  
-  
-    ```  
-    <PropertyGroup>  
-      <CustomBuildAfterTargets>ClCompile</CustomBuildAfterTargets>  
-      <CustomBuildBeforeTargets>Link</CustomBuildBeforeTargets>  
-    </PropertyGroup>  
-    ```  
-  
-## <a name="see-also"></a>참고 항목  
- [연습: MSBuild를 사용 하 여 Visual c + + 프로젝트 만들기](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)   
- [방법: MSBuild 프로젝트에서 빌드 이벤트 사용](../build/how-to-use-build-events-in-msbuild-projects.md)   
- [방법: MSBuild 프로젝트에 사용자 지정 빌드 단계 추가](../build/how-to-add-a-custom-build-step-to-msbuild-projects.md)
+
+사용자 지정 빌드 도구는 특정 파일을 사용 하 여 연결 된 사용자 정의 명령줄 도구입니다.
+
+특정 파일을 실행 하려면 프로젝트 파일 (.vcxproj) 명령줄, 모든 추가 입력 또는 출력 파일 및 표시할 메시지를 지정 합니다. 하는 경우 **MSBuild** 출력 파일이 입력된 파일 보다 이전 버전임을 메시지를 표시 하 고 실행 명령줄 도구를 결정 합니다.
+
+사용자 지정 빌드 도구를 실행 하는 경우를 지정 하려면 중 하나 또는 모두를 사용 합니다 `CustomBuildBeforeTargets` 고 `CustomBuildAfterTargets` 프로젝트 파일에서 XML 요소입니다. 예를 들어, 사용자 지정 빌드 도구 실행 MIDL 컴파일러와 C/c + + 컴파일러는 지정할 수 있습니다. 지정 된 `CustomBuildBeforeTargets` 특정 대상을 실행 하기 전에 도구를 실행 하는 요소는 `CustomBuildAfterTargets` 특정 대상; 후 도구를 실행 하는 요소 또는 두 요소 모두 두 대상 실행 간에 도구를 실행 하 합니다. 기본 위치를 앞에 사용자 지정 빌드 도구 실행 하지 않고 지정 된 경우는 **MIDL** 대상입니다.
+
+사용자 지정 빌드 단계 및 사용자 지정 빌드 도구에 지정 된 정보를 공유 합니다 `CustomBuildBeforeTargets` 고 `CustomBuildAfterTargets` XML 요소입니다. 프로젝트 파일에서 해당 대상으로 한 번만 지정 합니다.
+
+### <a name="to-add-a-custom-build-tool"></a>사용자 지정 빌드 도구 추가 하려면
+
+1. 프로젝트 파일에 항목 그룹을 추가 하 고 각 입력된 파일에 대 한 항목을 추가 합니다. 다음과 같이 항목 메타 데이터로 명령, 추가 입력, 출력 및 메시지를 지정 합니다. 이 예제에서는 "faq.txt" 파일을 프로젝트와 동일한 디렉터리에 있다고 가정 합니다.
+
+    ```
+    <ItemGroup>
+      <CustomBuild Include="faq.txt">
+        <Message>Copying readme...</Message>
+        <Command>copy %(Identity) $(OutDir)%(Identity)</Command>
+        <Outputs>$(OutDir)%(Identity)</Outputs>
+      </CustomBuild>
+    </ItemGroup>
+    ```
+
+### <a name="to-define-where-in-the-build-the-custom-build-tools-will-execute"></a>빌드에 사용자 지정 빌드 도구를 실행할 위치를 정의 하려면
+
+1. 프로젝트 파일에 다음 속성 그룹을 추가 합니다. 하나 이상의 대상을 지정할 수 있지만 빌드 단계가 (전후)를 실행 하려는 경우 다른를 생략할 수 있습니다 특정 대상입니다. 이 예제에서는 컴파일한 후 하지만 연결 하기 전에 사용자 지정 단계를 수행합니다.
+
+    ```
+    <PropertyGroup>
+      <CustomBuildAfterTargets>ClCompile</CustomBuildAfterTargets>
+      <CustomBuildBeforeTargets>Link</CustomBuildBeforeTargets>
+    </PropertyGroup>
+    ```
+
+## <a name="see-also"></a>참고 항목
+
+[연습: MSBuild를 사용하여 Visual C++ 프로젝트 만들기](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)<br/>
+[방법: MSBuild 프로젝트에서 빌드 이벤트 사용](../build/how-to-use-build-events-in-msbuild-projects.md)<br/>
+[방법: MSBuild 프로젝트에 사용자 지정 빌드 단계 추가](../build/how-to-add-a-custom-build-step-to-msbuild-projects.md)

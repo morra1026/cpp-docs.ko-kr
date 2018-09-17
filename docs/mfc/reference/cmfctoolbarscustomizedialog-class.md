@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9132df889f057696a08afe9a1ca6ad2277c46f10
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d796908504d746baee7863a6c6735bca3572d02b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211054"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702819"
 ---
 # <a name="cmfctoolbarscustomizedialog-class"></a>CMFCToolBarsCustomizeDialog 클래스
 모덜리스 탭 대화 상자 ( [CPropertySheet 클래스](../../mfc/reference/cpropertysheet-class.md)) 사용자 도구 모음, 메뉴, 바로 가기 키, 사용자 정의 도구 및 응용 프로그램에서 비주얼 스타일을 지정할 수 있도록 합니다. 일반적으로 사용자가 **도구** 메뉴에서 **사용자 지정** 을 선택하여 이 대화 상자에 액세스합니다.  
@@ -137,17 +137,17 @@ void AddButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCategoryId*  
- 단추를 삽입할 범주 ID를 지정 합니다.  
+*uiCategoryId*<br/>
+[in] 단추를 삽입할 범주 ID를 지정 합니다.  
   
- [in] *단추*  
- 삽입할 단추를 지정 합니다.  
+*단추*<br/>
+[in] 삽입할 단추를 지정 합니다.  
   
- [in] *iInsertBefore*  
- 전에 삽입 된 도구 모음 단추의 인덱스를 지정 합니다.  
+*iInsertBefore*<br/>
+[in] 전에 삽입 된 도구 모음 단추의 인덱스를 지정 합니다.  
   
- [in] *lpszCategory*  
- 단추를 삽입할 범주 문자열을 지정 합니다.  
+*lpszCategory*<br/>
+[in] 단추를 삽입할 범주 문자열을 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  `AddButton` 메서드 (예: ID_FILE_MRU_FILE1) 표준 명령 Id가 지정 된 단추를 무시, 허용 되지 않는 명령 (참조 [CMFCToolBar::IsCommandPermitted](../../mfc/reference/cmfctoolbar-class.md#iscommandpermitted)) 및 더미 단추입니다.  
@@ -171,8 +171,8 @@ BOOL AddMenu(UINT uiMenuResId);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiMenuResId*  
- 로드 하는 메뉴의 리소스 ID를 지정 합니다.  
+*uiMenuResId*<br/>
+[in] 로드 하는 메뉴의 리소스 ID를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 메뉴를 추가 했습니다. 그렇지 않으면 FALSE입니다.  
@@ -192,17 +192,17 @@ void AddMenuCommands(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMenu*  
- 추가할 CMenu 개체에 대 한 포인터입니다.  
+*pMenu*<br/>
+[in] 추가할 CMenu 개체에 대 한 포인터입니다.  
   
- [in] *bPopup*  
- 명령 목록에 팝업 메뉴 항목을 삽입할 것인지 지정 합니다.  
+*bPopup*<br/>
+[in] 명령 목록에 팝업 메뉴 항목을 삽입할 것인지 지정 합니다.  
   
- [in] *lpszCategory*  
- 메뉴에 삽입할 범주의 이름입니다.  
+*lpszCategory*<br/>
+[in] 메뉴에 삽입할 범주의 이름입니다.  
   
- [in] *lpszMenuPath*  
- 명령에 표시 될 때 이름에 추가 되는 접두사는 **모든 범주** 목록입니다.  
+*lpszMenuPath*<br/>
+[in] 명령에 표시 될 때 이름에 추가 되는 접두사는 **모든 범주** 목록입니다.  
   
 ### <a name="remarks"></a>설명  
  합니다 `AddMenuCommands` 메서드를 반복 하의 모든 메뉴 항목이 *pMenu*합니다. 이 메서드는 하위 메뉴를 포함 하지 않는 각 메뉴 항목을 만듭니다는 [CMFCToolBarButton 클래스](../../mfc/reference/cmfctoolbarbutton-class.md) 개체 및 호출 합니다 [CMFCToolBarsCustomizeDialog::AddButton](#addbutton) 도구 모음으로 메뉴 항목을 추가 하는 방법 단추 명령 목록에는 **명령** 페이지입니다. 이 프로세스에서 구분 기호는 무시 됩니다.  
@@ -223,14 +223,14 @@ BOOL AddToolBar(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCategoryId*  
- 도구 모음을 추가할 범주 리소스 ID를 지정 합니다.  
+*uiCategoryId*<br/>
+[in] 도구 모음을 추가할 범주 리소스 ID를 지정 합니다.  
   
- [in] *uiToolbarResId*  
- 해당 명령을 명령 목록에 삽입 되는 도구 모음의 리소스 ID를 지정 합니다.  
+*uiToolbarResId*<br/>
+[in] 해당 명령을 명령 목록에 삽입 되는 도구 모음의 리소스 ID를 지정 합니다.  
   
- [in] *lpszCategory*  
- 도구 모음을 추가 하는 범주의 이름을 지정 합니다.  
+*lpszCategory*<br/>
+[in] 도구 모음을 추가 하는 범주의 이름을 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -251,8 +251,8 @@ virtual BOOL CheckToolsValidity(const CObList& lstTools);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lstTools*  
- 목록 확인 하는 사용자 정의 도구입니다.  
+*lstTools*<br/>
+[in] 목록 확인 하는 사용자 정의 도구입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE를 반환 하는 경우 사용자 정의 도구 목록이 잘못 되었습니다. 그렇지 않으면 FALSE입니다. 기본 구현에서는 항상 TRUE를 반환합니다.  
@@ -274,14 +274,14 @@ CMFCToolBarsCustomizeDialog(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndParentFrame*  
- 상위 프레임 포인터입니다. 이 매개 변수가 NULL이 아니어야 합니다.  
+*pWndParentFrame*<br/>
+[in] 상위 프레임 포인터입니다. 이 매개 변수가 NULL이 아니어야 합니다.  
   
- [in] *bAutoSetFromMenus*  
- 모든 메뉴에서 메뉴 명령을 명령 목록을 추가할 것인지를 지정 하는 부울 값을 **명령** 페이지입니다. 이 매개 변수가 TRUE 이면 메뉴 명령이 추가 됩니다. 그렇지 않으면 메뉴 명령은 추가 되지 않습니다.  
+*bAutoSetFromMenus*<br/>
+[in] 모든 메뉴에서 메뉴 명령을 명령 목록을 추가할 것인지를 지정 하는 부울 값을 **명령** 페이지입니다. 이 매개 변수가 TRUE 이면 메뉴 명령이 추가 됩니다. 그렇지 않으면 메뉴 명령은 추가 되지 않습니다.  
   
- [in] *uiFlags*  
- 대화 상자의 동작에 영향을 주는 플래그의 조합입니다. 이 매개 변수는 다음 값 중 하나 이상의 수 있습니다.  
+*uiFlags*<br/>
+[in] 대화 상자의 동작에 영향을 주는 플래그의 조합입니다. 이 매개 변수는 다음 값 중 하나 이상의 수 있습니다.  
   
 - AFX_CUSTOMIZE_MENU_SHADOWS  
   
@@ -299,8 +299,8 @@ CMFCToolBarsCustomizeDialog(
   
 - AFX_CUSTOMIZE_NO_LARGE_ICONS  
   
- [in] *plistCustomPages*  
- 목록에 대 한 포인터 `CRuntimeClass` 추가 사용자 지정 페이지를 지정 하는 개체입니다.  
+*plistCustomPages*<br/>
+[in] 목록에 대 한 포인터 `CRuntimeClass` 추가 사용자 지정 페이지를 지정 하는 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  합니다 *plistCustomPages* 매개 변수 목록을 참조 `CRuntimeClass` 추가 사용자 지정 페이지를 지정 하는 개체입니다. 생성자를 사용 하 여 대화 상자에 더 많은 페이지를 추가 합니다 [CRuntimeClass::CreateObject](../../mfc/reference/cruntimeclass-structure.md#createobject) 메서드. 더 많은 페이지를 추가 하는 예제에 대 한 CustomPages 샘플을 참조 합니다 **사용자 지정** 대화 상자.  
@@ -333,8 +333,8 @@ void EnableUserDefinedToolbars(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 사용자 정의 도구 모음;를 사용 하도록 설정. 도구 모음을 사용 하지 않도록 설정 하려면 FALSE입니다.  
+*bEnable*<br/>
+[in] 사용자 정의 도구 모음;를 사용 하도록 설정. 도구 모음을 사용 하지 않도록 설정 하려면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  경우 *bEnable* 가 TRUE 인 합니다 **새로 만들기**를 **이름 바꾸기** 및 **삭제** 단추에 표시 되는 **도구 모음** 페이지입니다.  
@@ -349,8 +349,8 @@ virtual void FillAllCommandsList(CListBox& wndListOfCommands) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] `wndListOfCommands`  
- 에 대 한 참조를 `CListBox` 채울 개체입니다.  
+*wndListOfCommands*<br/>
+[out] 에 대 한 참조를 `CListBox` 채울 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  합니다 **명령도** 범주에는 모든 범주의 명령이 포함 됩니다. 합니다 [CMFCToolBarsCustomizeDialog::AddButton](#addbutton) 에 제공 된 단추와 연결 된 명령을 추가 하는 메서드는 **명령도** 범주를 합니다.  
@@ -369,11 +369,11 @@ void FillCategoriesComboBox(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *wndCategory*  
- 에 대 한 참조를 `CComboBox` 채울 개체입니다.  
+*wndCategory*<br/>
+[out] 에 대 한 참조를 `CComboBox` 채울 개체입니다.  
   
- [in] *bAddEmpty*  
- 명령에 있지 않은 콤보 상자에 범주를 추가할지 여부를 지정 하는 부울 값입니다. 이 매개 변수 이면 TRUE이 고, 빈 범주 콤보 상자에 추가 됩니다. 그렇지 않으면 빈 범주 추가 되지 않습니다.  
+*bAddEmpty*<br/>
+[in] 명령에 있지 않은 콤보 상자에 범주를 추가할지 여부를 지정 하는 부울 값입니다. 이 매개 변수 이면 TRUE이 고, 빈 범주 콤보 상자에 추가 됩니다. 그렇지 않으면 빈 범주 추가 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
  이 방법은 합니다 [CMFCToolBarsCustomizeDialog::FillCategoriesListBox](#fillcategorieslistbox) 메서드가이 방법은 작동 한다는 `CComboBox` 개체입니다.  
@@ -394,11 +394,11 @@ void FillCategoriesListBox(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *wndCategory*  
- 에 대 한 참조를 `CListBox` 채울 개체입니다.  
+*wndCategory*<br/>
+[out] 에 대 한 참조를 `CListBox` 채울 개체입니다.  
   
- [in] *bAddEmpty*  
- 명령이 되지 않은 목록 상자에 범주를 추가할지 여부를 지정 하는 부울 값입니다. 이 매개 변수 이면 TRUE이 고, 빈 범주 목록 상자에 추가 됩니다. 그렇지 않으면 빈 범주 추가 되지 않습니다.  
+*bAddEmpty*<br/>
+[in] 명령이 되지 않은 목록 상자에 범주를 추가할지 여부를 지정 하는 부울 값입니다. 이 매개 변수 이면 TRUE이 고, 빈 범주 목록 상자에 추가 됩니다. 그렇지 않으면 빈 범주 추가 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
  이 방법은 합니다 [CMFCToolBarsCustomizeDialog::FillCategoriesComboBox](#fillcategoriescombobox) 메서드가이 방법은 작동 한다는 `CListBox` 개체입니다.  
@@ -417,8 +417,8 @@ LPCTSTR GetCommandName(UINT uiCmd) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmd*  
- 검색할 명령의 ID입니다.  
+*uiCmd*<br/>
+[in] 검색할 명령의 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
  명령이 없으면 NULL을 지정 된 명령 ID와 연결 된 이름입니다.  
@@ -433,11 +433,11 @@ int GetCountInCategory(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszItemName*  
- 와 일치 하도록 텍스트 레이블입니다.  
+*lpszItemName*<br/>
+[in] 와 일치 하도록 텍스트 레이블입니다.  
   
- [in] *lstCommands*  
- 포함 하는 목록에 대 한 참조 `CMFCToolBarButton` 개체입니다.  
+*lstCommands*<br/>
+[in] 포함 하는 목록에 대 한 참조 `CMFCToolBarButton` 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  제공 된 항목 수가 나열 된 텍스트 레이블을 equals *lpszItemName*합니다.  
@@ -492,8 +492,8 @@ virtual void OnAfterChangeTool(CUserTool* pSelTool);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out에서] *pSelTool*  
- 변경 된 사용자 도구 개체에 대 한 포인터입니다.  
+*pSelTool*<br/>
+[out에서] 변경 된 사용자 도구 개체에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 사용자의 사용자 정의 도구를 사용 하는 속성을 변경 하는 경우 프레임 워크에서 호출 됩니다. 기본 구현은 아무 작업도 수행하지 않습니다. 파생 된 클래스에서이 메서드를 재정의 `CMFCToolBarsCustomizeDialog` 사용자 도구에 대 한 변경 후 처리를 수행 합니다.  
@@ -506,8 +506,8 @@ virtual BOOL OnAssignKey(ACCEL* pAccel);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out에서] *pAccel*  
- 로 표현 되는 제안 된 키보드 할당에 대 한 포인터를 [가속](/windows/desktop/api/winuser/ns-winuser-tagaccel) 구조체입니다.  
+*pAccel*<br/>
+[out에서] 로 표현 되는 제안 된 키보드 할당에 대 한 포인터를 [가속](/windows/desktop/api/winuser/ns-winuser-tagaccel) 구조체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 키를 할당할 수 없을 경우 키를 다시 할당 또는 FALSE를 수 있습니다. 기본 구현에서는 항상 TRUE를 반환합니다.  
@@ -523,8 +523,8 @@ virtual void OnBeforeChangeTool(CUserTool* pSelTool);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out에서] *pSelTool*  
- 교체 하려고 하는 사용자 도구 개체에 대 한 포인터입니다.  
+*pSelTool*<br/>
+[out에서] 교체 하려고 하는 사용자 도구 개체에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 사용자 정의 도구의 속성 변경 되려고 할 때 프레임 워크에서 호출 됩니다. 기본 구현은 아무 작업도 수행하지 않습니다. 재정의 `OnBeforeChangeTool` 에서 파생 된 클래스에서 메서드가 `CMFCToolBarsCustomizeDialog` 리소스 해제와 같이 사용자 도구에 대 한 변경 발생 하기 전에 처리를 수행 하려는 경우입니다 *pSelTool* 사용 합니다.  
@@ -540,14 +540,14 @@ virtual BOOL OnEditToolbarMenuImage(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndParent*  
- 부모 창에 대 한 포인터입니다.  
+*pWndParent*<br/>
+[in] 부모 창에 대 한 포인터입니다.  
   
- [in] *비트맵*  
- 비트맵 개체를 편집할 수에 대 한 참조입니다.  
+*비트맵*<br/>
+[in] 비트맵 개체를 편집할 수에 대 한 참조입니다.  
   
- [in] *nBitsPerPixel*  
- 픽셀당 비트에서 컬러 해상도 비트맵입니다.  
+*nBitsPerPixel*<br/>
+[in] 픽셀당 비트에서 컬러 해상도 비트맵입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 변경 내용이 커밋됩니다. 그렇지 않으면 FALSE입니다. 기본 구현은 대화 상자를 표시 하 고 클릭할 경우 TRUE를 반환 **확인**, 또는 사용자가 FALSE **취소** 또는 **닫기** 단추입니다.  
@@ -604,14 +604,14 @@ int RemoveButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCategoryId*  
- 단추를 제거 하는 범주 ID를 지정 합니다.  
+*uiCategoryId*<br/>
+[in] 단추를 제거 하는 범주 ID를 지정 합니다.  
   
- [in] *uiCmdId*  
- 단추의 명령 ID를 지정합니다.  
+*uiCmdId*<br/>
+[in] 단추의 명령 ID를 지정합니다.  
   
- [in] *lpszCategory*  
- 단추를 제거 하는 범주의 이름을 지정 합니다.  
+*lpszCategory*<br/>
+[in] 단추를 제거 하는 범주의 이름을 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  제거 단추 또는 지정한 범주에 지정된 된 명령 ID가 없는 경우-1의 0부터 시작 하는 인덱스입니다. 하는 경우 *uiCategoryId* 가-1 이면 반환 값은 0입니다.  
@@ -629,11 +629,11 @@ BOOL RenameCategory(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszCategoryOld*  
- 범주 이름 변경입니다.  
+*lpszCategoryOld*<br/>
+[in] 범주 이름 변경입니다.  
   
- [in] *lpszCategoryNew*  
- 새 범주 이름입니다.  
+*lpszCategoryNew*<br/>
+[in] 새 범주 이름입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -651,11 +651,11 @@ void ReplaceButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmd*  
- 교체 하는 단추 명령을 지정 합니다.  
+*uiCmd*<br/>
+[in] 교체 하는 단추 명령을 지정 합니다.  
   
- [in] *단추*  
- A **const** 이전 단추를 대체 하는 도구 모음 단추 개체에 대 한 참조입니다.  
+*단추*<br/>
+[in] A **const** 이전 단추를 대체 하는 도구 모음 단추 개체에 대 한 참조입니다.  
   
 ### <a name="remarks"></a>설명  
  때 [CMFCToolBarsCustomizeDialog::AddMenu](#addmenu)하십시오 [CMFCToolBarsCustomizeDialog::AddMenuCommands](#addmenucommands), 또는 [CMFCToolBarsCustomizeDialog::AddToolBar](#addtoolbar) 추가 명령 합니다 **명령** 페이지의 형태로 명령 인지를 [CMFCToolBarButton 클래스](../../mfc/reference/cmfctoolbarbutton-class.md) 개체 (또는 [CMFCToolBarMenuButton 클래스](../../mfc/reference/cmfctoolbarmenubutton-class.md) 메뉴에 대 한 개체 항목으로 추가 하는 하위 메뉴가 있는 `AddMenuCommands`). 또한 프레임 워크 명령을 자동으로 추가 하려면 이러한 세 가지 메서드를 호출 합니다. 대신에 파생된 형식으로 표시 하는 명령을 호출 `ReplaceButton` 파생 형식의 단추에 전달 합니다.  
@@ -673,8 +673,8 @@ BOOL SetUserCategory(LPCTSTR lpszCategory);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszCategory*  
- 범주 이름입니다.  
+*lpszCategory*<br/>
+[in] 범주의 이름입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  

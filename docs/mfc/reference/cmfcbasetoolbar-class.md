@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 597adf6d7a32b537f31f9a824049dc9ffedf899f
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 6cececaa0380f2e3806348e40debbf9b9ca2c351
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37037846"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705239"
 ---
 # <a name="cmfcbasetoolbar-class"></a>CMFCBaseToolBar 클래스
 도구 모음에 대 한 기본 클래스입니다.  
@@ -90,8 +90,8 @@ virtual void GetMinSize(CSize& size) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *크기*  
- 도구 모음의 최소 크기입니다.  
+*size*<br/>
+[out] 도구 모음의 최소 크기입니다.  
   
 ##  <a name="onafterchangeparent"></a>  CMFCBaseToolBar::OnAfterChangeParent  
  창의 부모 변경 된 후 프레임 워크에서 호출 됩니다.  
@@ -101,8 +101,8 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndOldParent*  
- 이전 부모 창에 대 한 포인터입니다.  
+*pWndOldParent*<br/>
+[in] 이전 부모 창에 대 한 포인터입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [계층 구조 차트](../../mfc/hierarchy-chart.md)   

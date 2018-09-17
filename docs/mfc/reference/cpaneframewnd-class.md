@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe0d8b5b0679e8770bda715d3d0da0eaa3b5cce3
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: a7a91920906d5693eafbbf79a4bdd00814c79108
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43682858"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703718"
 ---
 # <a name="cpaneframewnd-class"></a>CPaneFrameWnd 클래스
 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
@@ -271,8 +271,8 @@ virtual void AddPane(CBasePane* pWnd);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- 추가할 창입니다.  
+*pWnd*<br/>
+[in] 추가할 창입니다.  
   
 ##  <a name="addremovepanefromgloballist"></a>  CPaneFrameWnd::AddRemovePaneFromGlobalList  
  전역 목록에서 창을 추가하거나 제거합니다.  
@@ -284,11 +284,11 @@ static BOOL __stdcall AddRemovePaneFromGlobalList(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- 추가 하거나 제거 하려면 창입니다.  
+*pWnd*<br/>
+[in] 추가 하거나 제거 하려면 창입니다.  
   
- [in] *추가*  
- 0이 아닌 경우에 창에 추가 합니다. 0 인 경우 창을 제거 합니다.  
+*추가*<br/>
+[in] 0이 아닌 경우에 창에 추가 합니다. 0 인 경우 창을 제거 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -317,8 +317,8 @@ virtual void CalcBorderSize(CRect& rectBorderSize) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *rectBorderSize*  
- 미니 프레임 창의 테두리의 픽셀에서 크기를 포함합니다.  
+*rectBorderSize*<br/>
+[out] 미니 프레임 창의 테두리의 픽셀에서 크기를 포함합니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 미니 프레임 창의 테두리의 크기를 계산 하기 위해 프레임 워크에서 호출 됩니다. 미니 프레임 창 도구 모음 포함 여부는 반환 되는 크기에 따라 다릅니다 [CDockablePane](../../mfc/reference/cdockablepane-class.md)합니다.  
@@ -336,20 +336,20 @@ virtual void CalcExpectedDockedRect(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndToDock*  
- 창 도킹에 대 한 포인터입니다.  
+*pWndToDock*<br/>
+[in] 창 도킹에 대 한 포인터입니다.  
   
- [in] *ptMouse*  
- 마우스 위치입니다.  
+*ptMouse*<br/>
+[in] 마우스 위치입니다.  
   
- [out] *rectResult*  
- 계산 된 사각형입니다.  
+*rectResult*<br/>
+[out] 계산 된 사각형입니다.  
   
- [out] *bDrawTab*  
- TRUE 인 경우 탭을 그립니다. FALSE 인 경우 탭을 그리지 않습니다.  
+*bDrawTab*<br/>
+[out] TRUE 인 경우 탭을 그립니다. FALSE 인 경우 탭을 그리지 않습니다.  
   
- [out] *ppTargetBar*  
- 대상 창에 대 한 포인터입니다.  
+*ppTargetBar*<br/>
+[out] 대상 창에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드를 사용자 지정 된 지점에 창을 끌 경우 창이 차지 하는 사각형을 계산 *ptMouse* 있습니다 도킹 하 고 있습니다.  
@@ -372,8 +372,8 @@ virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDockingBar*  
- 창입니다.  
+*pDockingBar*<br/>
+[in] 창입니다.  
   
 ### <a name="return-value"></a>반환 값  
  미니 프레임에 도킹할 수 있는 경우 0이 아닌 *pDockingBar*그렇지 않으면 0입니다.  
@@ -407,14 +407,14 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszWindowName*  
- 미니 프레임 창에 표시할 텍스트를 지정 합니다.  
+*lpszWindowName*<br/>
+[in] 미니 프레임 창에 표시할 텍스트를 지정 합니다.  
   
- [in] *dwStyle*  
- 창 스타일을 지정합니다. 자세한 내용은 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  
+*dwStyle*<br/>
+[in] 창 스타일을 지정합니다. 자세한 내용은 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  
   
- [in] *rect*  
- 초기 크기와 미니 프레임 창의 위치를 지정 합니다.  
+*rect*<br/>
+[in] 초기 크기와 미니 프레임 창의 위치를 지정 합니다.  
   
  [in] [out] *pParentWnd*  
  미니 프레임 창의 부모 프레임을 지정합니다. 이 값에 NULL이 아니어야 합니다.  
@@ -442,17 +442,17 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwStyleEx*  
- 확장된 창 스타일을 지정합니다. 자세한 내용은 참조 하세요. [확장 창 스타일](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)  
+*dwStyleEx*<br/>
+[in] 확장된 창 스타일을 지정합니다. 자세한 내용은 참조 하세요. [확장 창 스타일](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)  
   
- [in] *lpszWindowName*  
- 미니 프레임 창에 표시할 텍스트를 지정 합니다.  
+*lpszWindowName*<br/>
+[in] 미니 프레임 창에 표시할 텍스트를 지정 합니다.  
   
- [in] *dwStyle*  
- 창 스타일을 지정합니다. 자세한 내용은 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  
+*dwStyle*<br/>
+[in] 창 스타일을 지정합니다. 자세한 내용은 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  
   
- [in] *rect*  
- 초기 크기와 미니 프레임 창의 위치를 지정 합니다.  
+*rect*<br/>
+[in] 초기 크기와 미니 프레임 창의 위치를 지정 합니다.  
   
  [in] [out] *pParentWnd*  
  미니 프레임 창의 부모 프레임을 지정합니다. 이 값에 NULL이 아니어야 합니다.  
@@ -474,8 +474,8 @@ virtual CDockablePane* DockPane(BOOL& bWasDocked);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *bWasDocked*  
- 창 도킹 되어 이미; 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+*bWasDocked*<br/>
+[out] 창 도킹 되어 이미; 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  작업이 성공한 경우의 `CDockablePane` 창에 도킹 된 되었으면 NULL는 합니다.  
@@ -488,8 +488,8 @@ static CBasePane* FindFloatingPaneByID(UINT nID);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 검색할 창의 컨트롤 ID를 나타냅니다.  
+*nID*<br/>
+[in] 검색할 창의 컨트롤 ID를 나타냅니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정 된 컨트롤 ID; 인 창 그렇지 않은 경우 NULL을 없는 창에 지정 된 컨트롤 id입니다.  
@@ -506,17 +506,17 @@ static CPaneFrameWnd* __stdcall FrameFromPoint(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *(태평양 표준시)*  
- 화면 좌표 지점입니다.  
+*(태평양 표준시)*<br/>
+[in] 화면 좌표 지점입니다.  
   
- [in] *nSensitivity*  
- 이 크기에 따라 미니 프레임 창의 검색 영역을 늘립니다. 미니 프레임 창을 지정 된 증가 된 영역에 해당 하는 경우 검색 조건을 충족 합니다.  
+*nSensitivity*<br/>
+[in] 이 크기에 따라 미니 프레임 창의 검색 영역을 늘립니다. 미니 프레임 창을 지정 된 증가 된 영역에 해당 하는 경우 검색 조건을 충족 합니다.  
   
- [in] *pFrameToExclude*  
- 검색에서 제외할 미니 프레임 창을 지정 합니다.  
+*pFrameToExclude*<br/>
+[in] 검색에서 제외할 미니 프레임 창을 지정 합니다.  
   
- [in] *bFloatMultiOnly*  
- TRUE 이면 CBRS_FLOAT_MULTI 스타일이 적용 된 미니 프레임 창을 검색 합니다. FALSE 이면 모든 미니 프레임 창을 검색 합니다.  
+*bFloatMultiOnly*<br/>
+[in] TRUE 이면 CBRS_FLOAT_MULTI 스타일이 적용 된 미니 프레임 창을 검색 합니다. FALSE 이면 모든 미니 프레임 창을 검색 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  포함 된 미니 프레임 창에 대 한 포인터 *pt*그렇지 않으면 NULL입니다.  
@@ -542,8 +542,8 @@ virtual void GetCaptionRect(CRect& rectCaption) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *rectCaption*  
- 화면 좌표에 미니 프레임 창 캡션의 위치와 크기를 포함합니다.  
+*rectCaption*<br/>
+[out] 화면 좌표에 미니 프레임 창 캡션의 위치와 크기를 포함합니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 미니 프레임 창 캡션의 경계 사각형을 계산 하기 위해 프레임 워크에서 호출 됩니다.  
@@ -688,11 +688,11 @@ virtual LRESULT HitTest(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 테스트할 점입니다.  
+*지점*<br/>
+[in] 테스트할 점입니다.  
   
- [in] *bDetectCaption*  
- TRUE 이면 캡션에 대해 시점을 확인 합니다. FALSE 이면 캡션을 무시 합니다.  
+*bDetectCaption*<br/>
+[in] TRUE 이면 캡션에 대해 시점을 확인 합니다. FALSE 이면 캡션을 무시 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  다음 값 중 하나입니다.  
@@ -780,11 +780,11 @@ virtual BOOL LoadState(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszProfileName*  
- 프로필 이름입니다.  
+*lpszProfileName*<br/>
+[in] 프로필 이름입니다.  
   
- [in] *uiID*  
- 창 ID  
+*uiID*<br/>
+[in] 창 ID  
   
 ### <a name="return-value"></a>반환 값  
  창 상태를 성공적으로 로드 된 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -836,8 +836,8 @@ virtual void OnDrawBorder(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 테두리를 그리는 데 디바이스 컨텍스트입니다.  
+*pDC*<br/>
+[in] 테두리를 그리는 데 디바이스 컨텍스트입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 미니 프레임 창의 테두리를 그리는 데 프레임 워크에서 호출 됩니다.  
@@ -859,11 +859,11 @@ virtual void OnMovePane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- 창 (무시 됨)에 대 한 포인터입니다.  
+*pBar*<br/>
+[in] 창 (무시 됨)에 대 한 포인터입니다.  
   
- [in] *ptOffset*  
- 창을 이동에 사용 되는 오프셋입니다.  
+*ptOffset*<br/>
+[in] 창을 이동에 사용 되는 오프셋입니다.  
   
 ##  <a name="onpanerecalclayout"></a>  CPaneFrameWnd::OnPaneRecalcLayout  
  미니 프레임 창 내에서 창 레이아웃을 조정합니다.  
@@ -894,11 +894,11 @@ virtual void OnShowPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- 되는 창 표시 또는 숨겨집니다.  
+*pBar*<br/>
+[in] 되는 창 표시 또는 숨겨집니다.  
   
- [in] *bShow*  
- 창으로 표시 되는 경우 TRUE입니다. 창에는 숨겨진 경우 FALSE입니다.  
+*bShow*<br/>
+[in] 창으로 표시 되는 경우 TRUE입니다. 창에는 숨겨진 경우 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  미니 프레임 창의 창이 표시 하거나 숨길 때 프레임 워크에서 호출 됩니다. 기본 구현은 아무 작업도 수행하지 않습니다.  
@@ -926,14 +926,14 @@ virtual CBasePane* PaneFromPoint(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 지점을 화면 좌표에서 사용자를 클릭 합니다.  
+*지점*<br/>
+[in] 지점을 화면 좌표에서 사용자를 클릭 합니다.  
   
- [in] *nSensitivity*  
- 이 매개 변수는 사용되지 않습니다.  
+*nSensitivity*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
- [in] *bCheckVisibility*  
- 표시 창만 반환 되어야 함을;을 지정 하려면 TRUE 그렇지 않으면 FALSE입니다.  
+*bCheckVisibility*<br/>
+[in] 표시 창만 반환 되어야 함을;을 지정 하려면 TRUE 그렇지 않으면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  사용자가 클릭 하 고 창 또는 없습니다 창의 해당 위치에 있는 경우 NULL입니다.  
@@ -969,14 +969,14 @@ virtual void RemovePane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- 제거할 창에 대 한 포인터입니다.  
+*pWnd*<br/>
+[in] 제거할 창에 대 한 포인터입니다.  
   
- [in] *bDestroy*  
- 미니 프레임 창을 처리 방식을 지정 합니다. 하는 경우 *bDestroy* 가 TRUE 이면이 메서드 즉시 미니 프레임 창을 소멸 시킵니다. FALSE 인 경우이 메서드를 특정 지연 후 미니 프레임 창을 소멸 시킵니다.  
+*bDestroy*<br/>
+[in] 미니 프레임 창을 처리 방식을 지정 합니다. 하는 경우 *bDestroy* 가 TRUE 이면이 메서드 즉시 미니 프레임 창을 소멸 시킵니다. FALSE 인 경우이 메서드를 특정 지연 후 미니 프레임 창을 소멸 시킵니다.  
   
- [in] *bNoDelayedDestroy*  
- TRUE 이면 지연된 소멸 비활성화 됩니다. FALSE 인 경우 지연 된 소멸 사용 됩니다.  
+*bNoDelayedDestroy*<br/>
+[in] TRUE 이면 지연된 소멸 비활성화 됩니다. FALSE 인 경우 지연 된 소멸 사용 됩니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 워크는 특정 지연 후 즉시 또는 미니 프레임 창을 손상 될 수 있습니다. 미니 프레임 창 소멸을 지연 하려는 경우 FALSE를 전달 합니다 *bNoDelayedDestroy* 매개 변수입니다. 지연 된 소멸 프레임 워크 AFX_WM_CHECKEMPTYMINIFRAME 메시지를 처리할 때 발생 합니다.  
@@ -991,11 +991,11 @@ virtual void ReplacePane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBarOrg*  
- 원래 창에 대 한 포인터입니다.  
+*pBarOrg*<br/>
+[in] 원래 창에 대 한 포인터입니다.  
   
- [in] *pBarReplaceWith*  
- 원래 창을 대체 하는 창에 대 한 포인터입니다.  
+*pBarReplaceWith*<br/>
+[in] 원래 창을 대체 하는 창에 대 한 포인터입니다.  
   
 ##  <a name="savestate"></a>  CPaneFrameWnd::SaveState  
  레지스트리에 창의 상태를 저장합니다.  
@@ -1007,11 +1007,11 @@ virtual BOOL SaveState(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszProfileName*  
- 프로필 이름입니다.  
+*lpszProfileName*<br/>
+[in] 프로필 이름입니다.  
   
- [in] *uiID*  
- 창 ID  
+*uiID*<br/>
+[in] 창 ID  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 창 상태를 저장 했습니다. 그렇지 않으면 FALSE입니다.  
@@ -1024,8 +1024,8 @@ virtual void SetCaptionButtons(DWORD dwButtons);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwButtons*  
- 다음 값의 비트 OR 조합 합니다.  
+*dwButtons*<br/>
+[in] 다음 값의 비트 OR 조합 합니다.  
   
 - AFX_CAPTION_BTN_CLOSE  
   
@@ -1067,8 +1067,8 @@ void SetDockingTimer(UINT nTimeOut);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nTimeOut*  
- 시간 제한 값 (밀리초)입니다.  
+*nTimeOut*<br/>
+[in] 시간 제한 값 (밀리초)입니다.  
   
 ##  <a name="setdockstate"></a>  CPaneFrameWnd::SetDockState  
  도킹 상태를 설정합니다.  
@@ -1078,8 +1078,8 @@ virtual void SetDockState(CDockingManager* pDockManager);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDockManager*  
- 도킹 관리자에 대 한 포인터입니다.  
+*pDockManager*<br/>
+[in] 도킹 관리자에 대 한 포인터입니다.  
   
 ##  <a name="sethotpoint"></a>  CPaneFrameWnd::SetHotPoint  
 
@@ -1104,8 +1104,8 @@ virtual BOOL SetPreDockState(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *preDockState*  
- 가능한 값:  
+*preDockState*<br/>
+[in] 가능한 값:  
   
 - PDS_NOTHING,  
   
@@ -1113,11 +1113,11 @@ virtual BOOL SetPreDockState(
   
 - PDS_DOCK_TO_TAB  
   
- [in] *pBarToDock*  
- 도킹 창에 대 한 포인터입니다.  
+*pBarToDock*<br/>
+[in] 도킹 창에 대 한 포인터입니다.  
   
- [in] *dockMethod*  
- 도킹 메서드입니다. (이 매개 변수가 무시 됩니다.)  
+*dockMethod*<br/>
+[in] 도킹 메서드입니다. (이 매개 변수가 무시 됩니다.)  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 미니 프레임 창을 도킹; 되지 않습니다. 고정 되어 있는 경우 FALSE입니다.  
@@ -1140,8 +1140,8 @@ BOOL StartTearOff(CMFCPopu* pMenu);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMenu*  
- 메뉴에 대 한 포인터입니다.  
+*pMenu*<br/>
+[in] 메뉴에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1168,8 +1168,8 @@ virtual void StoreRecentTabRelatedInfo(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDockingBar*  
- [in] *pTabbedBar*  
+*pDockingBar*<br/>
+[in] [in] *pTabbedBar*  
   
 ### <a name="remarks"></a>설명  
   

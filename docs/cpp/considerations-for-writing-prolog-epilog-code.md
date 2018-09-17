@@ -18,15 +18,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b581a57db7e66d1547ffd90509c62353d78d478b
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 063bbb74f0cb1b0a6396448ba7d6be7bf91dab85
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464124"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720423"
 ---
 # <a name="considerations-for-writing-prologepilog-code"></a>프롤로그/에필로그 코드 작성 시 고려 사항
- **Microsoft 전용**  
+ **Microsoft 전용**
+ 
  자신의 prolog 및 epilog 코드 시퀀스를 작성하기 전에 스택 프레임을 배치하는 방법을 이해하는 것이 중요합니다. 사용 하는 방법만 알면 유용 합니다 `__LOCAL_SIZE` 기호입니다.  
   
 ##  <a name="_pluslang_c.2b2b_.stack_frame_layout"></a> 스택 프레임 레이아웃  

@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9d3e54f13f6b165288402bbb1d783a2f1979f4ac
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: abad906c7fcc5c86a6901757ddfbb5dfeff2ec29
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607701"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704902"
 ---
 # <a name="generic-interfaces-visual-c"></a>제네릭 인터페이스(Visual C++)
 
@@ -42,8 +42,8 @@ ms.locfileid: "42607701"
 
 ## <a name="remarks"></a>설명
 
-*특성* (선택 사항)  
-추가 선언 정보입니다. 특성 및 특성 클래스에 대 한 자세한 내용은 참조 하세요. **특성**합니다.
+*특성*  
+(선택 사항) 추가 선언 정보입니다. 특성 및 특성 클래스에 대 한 자세한 내용은 참조 하세요. **특성**합니다.
 
 *클래스 키*  
 **클래스** 또는 **typename**
@@ -54,22 +54,22 @@ ms.locfileid: "42607701"
 *형식 매개 변수-제약 조건 절*  
 에 지정 된 형식은 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + /cli CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)
 
-*액세스 가능성 한정자* (선택 사항)  
-액세스 가능성 한정자 (예: **공개 / 개인**).
+*액세스 가능성 한정자*  
+(선택 사항) 액세스 가능성 한정자 (예: **공개 / 개인**).
 
 *identifier*  
 인터페이스 이름입니다.
 
-*기본-목록* (선택 사항)  
-하나 이상의 명시적 기본 인터페이스 쉼표로 구분 하 여 포함 된 목록입니다.
+*기본-목록*  
+(선택 사항) 하나 이상의 명시적 기본 인터페이스 쉼표로 구분 하 여 포함 된 목록입니다.
 
 *인터페이스 본문*  
 인터페이스 멤버를 선언 합니다.
 
-*선언 자* (선택 사항)  
-이 형식에 따라 변수를 선언 합니다.
+*선언 자*  
+(선택 사항) 이 형식에 따라 변수를 선언 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 선언 하 고 제네릭 인터페이스를 인스턴스화하는 방법을 보여 줍니다. 예제에서는 제네릭 인터페이스 `IList<ItemType>` 선언 됩니다. 다음 두 개의 제네릭 클래스에 의해 구현 됩니다 `List1<ItemType>` 및 `List2<ItemType>`, 다른 구현 합니다.
 
@@ -246,7 +246,7 @@ Array List
 List2
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 예제에서는 제네릭 인터페이스를 선언 `IMyGenIface`, 및 두 개의 제네릭이 아닌 인터페이스 `IMySpecializedInt` 하 고 `ImySpecializedString`, 특수화는 `IMyGenIface`합니다. 두 가지 특수화 된 인터페이스는 두 클래스에 의해 구현 됩니다 `MyIntClass` 고 `MyStringClass`입니다. 제네릭 인터페이스를 특수화 제네릭 및 제네릭이 아닌 인터페이스를 인스턴스화하고 인터페이스에서 명시적으로 구현 된 멤버를 호출 하는 방법을 보여 줍니다.
 

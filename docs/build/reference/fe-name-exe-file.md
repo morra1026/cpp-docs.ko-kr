@@ -20,42 +20,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0afd8a863c9b8482e2b7f3868047845818bd2923
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ad2683f79fdca845245fd266555e688aa8cf7374
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377059"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716237"
 ---
 # <a name="fe-name-exe-file"></a>/Fe(EXE 파일 이름 지정)
 
-이름 및.exe 파일 또는 컴파일러에서 만든 DLL에 대 한 디렉터리를 지정 합니다.
+이름 및.exe 파일 또는 컴파일러에서 생성 하는 DLL에 대 한 디렉터리를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **/Fe**[_pathname_]  
-> **/ Fe:** _경로 이름_  
+> **/Fe**[_pathname_] **/Fe:** _경로 이름_
 
 ### <a name="arguments"></a>인수
 
 *pathname*<br/>
-상대 또는 절대 경로 및 기본 파일 이름 또는 상대 또는 절대 경로 디렉터리 또는 생성된 된 실행 파일에 사용할 기본 파일 이름입니다.
+상대 또는 절대 경로 및 기본 파일 이름 또는 디렉터리, 또는 생성된 된 실행 파일에 사용할 기본 파일 이름에 상대 또는 절대 경로입니다.
 
 ## <a name="remarks"></a>설명
 
-**/Fe** 옵션을 사용 하면 출력 디렉터리, 출력 실행 파일 이름 또는 생성 된 실행 파일에 대 한 둘 다 지정할 수 있습니다. 경우 *pathname* 경로 구분 기호에 종료 (**&#92;**)만 출력 디렉터리를 지정 하는로 간주 됩니다. 그렇지 않은 경우의 마지막 구성 요소 *pathname* 출력 파일 기본 이름 및의 나머지 부분으로 사용 *pathname* 출력 디렉터리를 지정 합니다. 경우 *pathname* 경로 구분 기호를 없는 현재 디렉터리에 출력 파일 이름을 지정 하는로 간주 됩니다. *pathname* 큰따옴표로 묶어야 합니다 (**"**) 예: 공백, 짧은 경로에 사용할 수 없는 모든 문자가 포함 된 경우 확장 문자 또는 경로 구성 요소 8 자 보다 긴 시간입니다.
+합니다 **/Fe** 옵션을 사용 하면 출력 디렉터리, 출력 실행 파일 이름 또는 생성된 된 실행 파일에 둘 다 지정할 수 있습니다. 하는 경우 *pathname* 경로 구분 기호로 끝나는 (**&#92;**)에 출력 디렉터리를 지정 하는로 간주 됩니다. 이 고, 그렇지의 마지막 구성 요소 *pathname* 출력 파일 기본 이름 및의 나머지 부분으로 사용 됩니다 *pathname* 출력 디렉터리를 지정 합니다. 하는 경우 *pathname* 모든 경로 구분 기호가 없는 현재 디렉터리에 출력 파일 이름을 지정 하는로 간주 됩니다. 합니다 *pathname* 큰따옴표로 묶어야 합니다 (**"**) 공백과 같은 짧은 경로의 수 없는 문자가 포함 된 경우 확장 문자 또는 경로 구성 요소 8 자 보다 긴 합니다.
 
-경우는 **/Fe** 옵션을 지정 하지 않으면 또는에 기본 파일 이름을 지정 하지 않으면 *pathname*, 컴파일러에서는 출력 파일이 지정 된 첫 번째 소스 또는 개체 파일의 기본 이름을 사용 하 여 기본 이름 명령줄 및 확장명이.exe 또는.dll
+경우는 **/Fe** 옵션을 지정 하지 않으면 또는 기본 파일 이름에 지정 되지 않은 *pathname*, 컴파일러에서는 출력 파일의 지정 된 첫 번째 원본 또는 목적 물 파일 기본 이름을 사용 하는 기본 이름 명령줄 및 확장명이.exe 또는.dll입니다.
 
-지정 하는 경우는 [(컴파일 없이 링크 사용) /c](c-compile-without-linking.md) 옵션을 **/Fe** 영향을 주지 않습니다.
+지정 하는 경우는 [(컴파일 없이 링크 사용)는 /c](c-compile-without-linking.md) 옵션을 **/Fe** 영향을 주지 않습니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
 
-1. 열기는 **구성 속성** > **링커** > **일반** 속성 페이지.
+1. 엽니다는 **구성 속성** > **링커** > **일반** 속성 페이지.
 
-1. 수정 된 **출력 파일** 속성입니다. 선택 **확인** 변경 내용을 저장 합니다.
+1. 수정 된 **출력 파일** 속성입니다. 선택할 **확인** 변경 내용을 저장 합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
@@ -71,7 +70,7 @@ CL /Fe"C:\Users\User Name\repos\My Project\bin\PROCESS" *.C
 
 ## <a name="example"></a>예제
 
-다음 명령줄의 실행 파일을 만듭니다 `C:\BIN` 현재 디렉터리에 첫 번째 소스 파일과 동일한 기본 이름을 가진:
+다음 명령줄에서 실행 파일을 만듭니다 `C:\BIN` 현재 디렉터리의 첫 번째 소스 파일과 동일한 기본 이름을 사용 하 여:
 
 ```
 CL /FeC:\BIN\ *.C

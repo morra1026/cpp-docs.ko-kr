@@ -34,12 +34,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18f26f9ac0cd00758d1259ac368b2408a7a2e8cf
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a8ea3976a510817e183271921c6730692e5b0b3c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214623"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711074"
 ---
 # <a name="interlockedcompareexchangepointer-intrinsic-functions"></a>_InterlockedCompareExchangePointer Intrinsic Functions
 **Microsoft 전용**  
@@ -87,14 +87,14 @@ long _InterlockedCompareExchangePointer_rel (
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in, out] `Destination`  
- 대상 값에 대한 포인터의 포인터입니다. 부호는 무시됩니다.  
+*대상*<br/>
+[out에서] 대상 값에 대 한 포인터에 대 한 포인터입니다. 부호는 무시됩니다.  
   
- [in] `Exchange`  
- Exchange 포인터입니다. 부호는 무시됩니다.  
+*Exchange*<br/>
+[in] Exchange 포인터입니다. 부호는 무시됩니다.  
   
- [in] `Comparand`  
- 대상과 비교할 포인터입니다. 부호는 무시됩니다.  
+*비교 피연산자*<br/>
+[in] 대상과 비교할 포인터입니다. 부호는 무시됩니다.  
   
 ## <a name="return-value"></a>반환 값  
  반환 값은 대상의 초기 값입니다.  

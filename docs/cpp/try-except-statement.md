@@ -35,16 +35,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02d2f75a9abbba44bd1900e2410ff73cf75cbb72
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: c2780697c1a50e15e170f2096a2841e2c50d844a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39466301"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724687"
 ---
 # <a name="try-except-statement"></a>try-except 문
 
-**Microsoft 전용**  
+**Microsoft 전용**
+
 **시도-제외한** 문을 C에 대 한 Microsoft 확장 이며 지 원하는 c + + 언어 구조적 예외 처리 합니다.  
 
 ## <a name="syntax"></a>구문  
@@ -126,7 +127,7 @@ excpt.h 이러한 내장 함수에 대 한 일부 대체 이름을 정의합니�
 
  `AbnormalTermination` 해당 하는 `_abnormal_termination`
   
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // exceptions_try_except_Statement.cpp

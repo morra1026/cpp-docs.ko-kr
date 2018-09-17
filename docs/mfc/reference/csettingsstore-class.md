@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1731c32506ec0e9c4c392ff9429e28e5b71b3c7c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c1cd37ee2ad7fe09e2838d5e3cecb3488594d2c9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221134"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706630"
 ---
 # <a name="csettingsstore-class"></a>CSettingsStore Class
 Windows API 함수를 래핑하여 레지스트리에 액세스하는 데 사용할 수 있는 개체 지향 인터페이스를 제공합니다.  
@@ -102,8 +102,8 @@ virtual BOOL CreateKey(LPCTSTR pszPath);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pszPath*  
- 만들거나 열 수는 키의 이름을 지정 합니다.  
+*pszPath*<br/>
+[in] 만들거나 열 수는 키의 이름을 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공할 경우 0 그렇지 않으면 0이 아닌 값입니다.  
@@ -121,11 +121,11 @@ CSettingsStore(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bAdmin*  
- 지정 하는 부울 매개 변수 여부는 `CSettingsStore` 관리자 모드에서 작동 하는 개체입니다.  
+*bAdmin*<br/>
+[in] 지정 하는 부울 매개 변수 여부는 `CSettingsStore` 관리자 모드에서 작동 하는 개체입니다.  
   
- [in] *bReadOnly*  
- 지정 하는 부울 매개 변수 여부는 `CSettingsStore` 개체는 읽기 전용 모드에서 만들어집니다.  
+*bReadOnly*<br/>
+[in] 지정 하는 부울 매개 변수 여부는 `CSettingsStore` 개체는 읽기 전용 모드에서 만들어집니다.  
   
 ### <a name="remarks"></a>설명  
  경우 *bAdmin* TRUE로 설정 되는 `m_hKey` 멤버 변수를로 **HKEY_LOCAL_MACHINE**합니다. 설정 하는 경우 *bAdmin* FALSE로 `m_hKey` 로 설정 되어 **HKEY_CURRENT_USER**합니다.  
@@ -144,11 +144,11 @@ virtual BOOL DeleteKey(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pszPath*  
- 삭제할 키의 이름입니다.  
+*pszPath*<br/>
+[in] 삭제할 키의 이름입니다.  
   
- [in] *bAdmin*  
- 삭제할 키의 위치를 지정 하는 스위치입니다.  
+*bAdmin*<br/>
+[in] 삭제할 키의 위치를 지정 하는 스위치입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -166,8 +166,8 @@ virtual BOOL DeleteValue(LPCTSTR pszValue);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pszValue*  
- 제거할 값 필드를 지정 합니다.  
+*pszValue*<br/>
+[in] 제거할 값 필드를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -180,8 +180,8 @@ virtual BOOL Open(LPCTSTR pszPath);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pszPath*  
- 레지스트리 키의 이름입니다.  
+*pszPath*<br/>
+[in] 레지스트리 키의 이름입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -265,53 +265,53 @@ virtual BOOL Read(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pszKey*  
- 레지스트리에서 읽은 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.  
+*pszKey*<br/>
+[in] 레지스트리에서 읽은 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.  
   
- [out] *iVal*  
- 레지스트리 키에서 읽은 값을 받는 정수 변수에 대 한 참조입니다.  
+*iVal*<br/>
+[out] 레지스트리 키에서 읽은 값을 받는 정수 변수에 대 한 참조입니다.  
   
- [out] *dwVal*  
- 레지스트리 키에서 읽은 값을 수신 하는 32 비트 2 배 워드 변수에 대 한 참조입니다.  
+*dwVal*<br/>
+[out] 레지스트리 키에서 읽은 값을 수신 하는 32 비트 2 배 워드 변수에 대 한 참조입니다.  
   
- [out] *sVal*  
- 레지스트리 키에서 읽은 값을 수신 하는 문자열 변수에 대 한 참조입니다.  
+*sVal*<br/>
+[out] 레지스트리 키에서 읽은 값을 수신 하는 문자열 변수에 대 한 참조입니다.  
   
- [out] *scStringList*  
- 레지스트리 키에서 읽은 값을 수신 하는 문자열 목록 변수에 대 한 참조입니다.  
+*scStringList*<br/>
+[out] 레지스트리 키에서 읽은 값을 수신 하는 문자열 목록 변수에 대 한 참조입니다.  
   
- [out] *scArray*  
- 레지스트리 키에서 읽은 값을 수신 하는 문자열 배열 변수에 대 한 참조입니다.  
+*scArray*<br/>
+[out] 레지스트리 키에서 읽은 값을 수신 하는 문자열 배열 변수에 대 한 참조입니다.  
   
- [out] *dwcArray*  
- 레지스트리 키에서 읽은 값을 수신 하는 32 비트 2 배 워드 배열 변수에 대 한 참조입니다.  
+*dwcArray*<br/>
+[out] 레지스트리 키에서 읽은 값을 수신 하는 32 비트 2 배 워드 배열 변수에 대 한 참조입니다.  
   
- [out] *wcArray*  
- 레지스트리 키에서 읽은 값을 수신 하는 16 비트 단어 배열 변수에 대 한 참조입니다.  
+*wcArray*<br/>
+[out] 레지스트리 키에서 읽은 값을 수신 하는 16 비트 단어 배열 변수에 대 한 참조입니다.  
   
- [out] *bcArray*  
- 레지스트리 키에서 읽은 값을 수신 하는 바이트 배열 변수에 대 한 참조입니다.  
+*bcArray*<br/>
+[out] 레지스트리 키에서 읽은 값을 수신 하는 바이트 배열 변수에 대 한 참조입니다.  
   
- [out] *lpPoint*  
- 에 대 한 포인터에 대 한 참조를 `POINT` 레지스트리 키에서 읽은 값을 수신 하는 구조입니다.  
+*lpPoint*<br/>
+[out] 에 대 한 포인터에 대 한 참조를 `POINT` 레지스트리 키에서 읽은 값을 수신 하는 구조입니다.  
   
- [out] *rect*  
- 에 대 한 참조를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 레지스트리 키에서 읽은 값을 수신 하는 변수입니다.  
+*rect*<br/>
+[out] 에 대 한 참조를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 레지스트리 키에서 읽은 값을 수신 하는 변수입니다.  
   
- [out] *ppData*  
- 레지스트리 키에서 값을 받는 데이터에 대 한 포인터를 읽습니다.  
+*ppData*<br/>
+[out] 레지스트리 키에서 값을 받는 데이터에 대 한 포인터를 읽습니다.  
   
- [out] *pBytes*  
- 부호 없는 정수 변수에 대 한 포인터입니다. 이 변수는 버퍼의 크기를 받는입니다 *ppData* 가리킵니다.  
+*pBytes*<br/>
+[out] 부호 없는 정수 변수에 대 한 포인터입니다. 이 변수는 버퍼의 크기를 받는입니다 *ppData* 가리킵니다.  
   
- [out] *목록*  
- 에 대 한 참조를 [CObList](../../mfc/reference/coblist-class.md) 레지스트리 키에서 읽은 값을 수신 하는 변수입니다.  
+*list*<br/>
+[out] 에 대 한 참조를 [CObList](../../mfc/reference/coblist-class.md) 레지스트리 키에서 읽은 값을 수신 하는 변수입니다.  
   
- [out] *obj*  
- 에 대 한 참조를 [CObject](../../mfc/reference/cobject-class.md) 레지스트리 키에서 읽은 값을 수신 하는 변수입니다.  
+*obj*<br/>
+[out] 에 대 한 참조를 [CObject](../../mfc/reference/cobject-class.md) 레지스트리 키에서 읽은 값을 수신 하는 변수입니다.  
   
- [out] *pObj*  
- 에 대 한 포인터에 대 한 참조를 `CObject` 레지스트리 키에서 읽은 값을 수신 하는 변수입니다.  
+*pObj*<br/>
+[out] 에 대 한 포인터에 대 한 참조를 `CObject` 레지스트리 키에서 읽은 값을 수신 하는 변수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -395,53 +395,53 @@ virtual BOOL Write(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pszKey*  
- 설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다.  
+*pszKey*<br/>
+[in] 설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다.  
   
- [in] *iVal*  
- 저장할 데이터를 포함 하는 정수 변수에 대 한 참조입니다.  
+*iVal*<br/>
+[in] 저장할 데이터를 포함 하는 정수 변수에 대 한 참조입니다.  
   
- [in] *dwVal*  
- 저장할 데이터를 포함 하는 32 비트 2 배 워드 변수에 대 한 참조입니다.  
+*dwVal*<br/>
+[in] 저장할 데이터를 포함 하는 32 비트 2 배 워드 변수에 대 한 참조입니다.  
   
- [in] *pszVal*  
- 저장할 데이터를 포함 하는 null로 끝나는 문자열 변수에 대 한 포인터입니다.  
+*pszVal*<br/>
+[in] 저장할 데이터를 포함 하는 null로 끝나는 문자열 변수에 대 한 포인터입니다.  
   
- [in] *scStringList*  
- 에 대 한 참조를 [CStringList](../../mfc/reference/cstringlist-class.md) 저장할 데이터를 포함 하는 변수입니다.  
+*scStringList*<br/>
+[in] 에 대 한 참조를 [CStringList](../../mfc/reference/cstringlist-class.md) 저장할 데이터를 포함 하는 변수입니다.  
   
- [in] *bcArray*  
- 저장할 데이터를 포함 하는 바이트 배열 변수에 대 한 참조입니다.  
+*bcArray*<br/>
+[in] 저장할 데이터를 포함 하는 바이트 배열 변수에 대 한 참조입니다.  
   
- [in] *scArray*  
- 저장할 데이터를 포함 하는 문자열 배열 변수에 대 한 참조입니다.  
+*scArray*<br/>
+[in] 저장할 데이터를 포함 하는 문자열 배열 변수에 대 한 참조입니다.  
   
- [in] *dwcArray*  
- 저장할 데이터를 포함 하는 32 비트 2 배 워드 배열 변수에 대 한 참조입니다.  
+*dwcArray*<br/>
+[in] 저장할 데이터를 포함 하는 32 비트 2 배 워드 배열 변수에 대 한 참조입니다.  
   
- [in] *wcArray*  
- 저장할 데이터를 포함 하는 16 비트 단어 배열 변수에 대 한 참조입니다.  
+*wcArray*<br/>
+[in] 저장할 데이터를 포함 하는 16 비트 단어 배열 변수에 대 한 참조입니다.  
   
- [in] *rect*  
- 에 대 한 참조를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 저장할 데이터를 포함 하는 변수입니다.  
+*rect*<br/>
+[in] 에 대 한 참조를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 저장할 데이터를 포함 하는 변수입니다.  
   
- [in] *lpPoint*  
- 에 대 한 포인터에 대 한 참조를 `POINT` 저장할 데이터를 포함 하는 변수입니다.  
+*lpPoint*<br/>
+[in] 에 대 한 포인터에 대 한 참조를 `POINT` 저장할 데이터를 포함 하는 변수입니다.  
   
- [in] *pData*  
- 저장할 데이터를 포함 하는 버퍼에 대 한 포인터입니다.  
+*pData*<br/>
+[in] 저장할 데이터를 포함 하는 버퍼에 대 한 포인터입니다.  
   
- [in] *nBytes*  
- 데이터를 바이트 단위로 크기를 지정 합니다 *pData* 매개 변수가 가리키는 합니다.  
+*nBytes*<br/>
+[in] 데이터를 바이트 단위로 크기를 지정 합니다 *pData* 매개 변수가 가리키는 합니다.  
   
- [in] *목록*  
- 에 대 한 참조를 [CObList](../../mfc/reference/coblist-class.md) 저장할 데이터를 포함 하는 변수입니다.  
+*list*<br/>
+[in] 에 대 한 참조를 [CObList](../../mfc/reference/coblist-class.md) 저장할 데이터를 포함 하는 변수입니다.  
   
- [in] *obj*  
- 에 대 한 참조를 [CObject](../../mfc/reference/cobject-class.md) 저장할 데이터를 포함 하는 변수입니다.  
+*obj*<br/>
+[in] 에 대 한 참조를 [CObject](../../mfc/reference/cobject-class.md) 저장할 데이터를 포함 하는 변수입니다.  
   
- [in] *pObj*  
- 에 대 한 포인터에 대 한 포인터를 `CObject` 저장할 데이터를 포함 하는 변수입니다.  
+*pObj*<br/>
+[in] 에 대 한 포인터에 대 한 포인터를 `CObject` 저장할 데이터를 포함 하는 변수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 TRUE이고, 실패하면 FALSE입니다.  

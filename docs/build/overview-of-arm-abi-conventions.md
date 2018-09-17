@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e5ee2ddc29c2a014aceb8ac6356cae9e42a916d
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: def07f92cc05828c132ba7d34d3dcc06d4aecf50
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027325"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721450"
 ---
 # <a name="overview-of-arm32-abi-conventions"></a>ARM32 ABI 규칙 개요
 
@@ -64,16 +64,16 @@ Windows on ARM의 명령 집합은 Thumb-2로 엄격하게 제한됩니다. 이 
 - 대상 명령이 다음 중 하나여야 하는 경우
 
    |16비트 Opcode|클래스|제한|
-    |---------------------|-----------|------------------|
-    |MOV, MVN|이동|Rm != PC, Rd != PC|
-    |LDR, LDR[S]B, LDR[S]H|메모리에서 로드|LDR 리터럴 폼은 아님|
-    |STR, STRB, STRH|메모리에 저장||
-    |ADD, ADC, RSB, SBC, SUB|더하기 또는 빼기|ADD/SUB SP, SP, imm7 폼은 아님<br /><br /> Rm != PC, Rdn != PC, Rdm != PC|
-    |CMP, CMN|비교|Rm != PC, Rn != PC|
-    |MUL|곱하기||
-    |ASR, LSL, LSR, ROR|비트 시프트||
-    |AND, BIC, EOR, ORR, TST|비트 산술||
-    |BX|레지스터로 분기|Rm != PC|
+   |---------------------|-----------|------------------|
+   |MOV, MVN|이동|Rm != PC, Rd != PC|
+   |LDR, LDR[S]B, LDR[S]H|메모리에서 로드|LDR 리터럴 폼은 아님|
+   |STR, STRB, STRH|메모리에 저장||
+   |ADD, ADC, RSB, SBC, SUB|더하기 또는 빼기|ADD/SUB SP, SP, imm7 폼은 아님<br /><br /> Rm != PC, Rdn != PC, Rdm != PC|
+   |CMP, CMN|비교|Rm != PC, Rn != PC|
+   |MUL|곱하기||
+   |ASR, LSL, LSR, ROR|비트 시프트||
+   |AND, BIC, EOR, ORR, TST|비트 산술||
+   |BX|레지스터로 분기|Rm != PC|
 
 현재 ARMv7 CPU는 허용되지 않는 명령 폼을 사용을 보고할 수 없지만 이후 세대에서는 해당 보고 기능이 제공될 것으로 예상됩니다. 이러한 폼이 검색되면 해당 폼을 사용하는 프로그램은 종료되며 정의되지 않은 명령 예외가 발생합니다.
 
@@ -233,5 +233,5 @@ Windows를 실행하는 ARM 프로세서는 사이클 카운터를 지원해야 
 
 ## <a name="see-also"></a>참고자료
 
-[일반적인 Visual C++ ARM 마이그레이션 문제](../build/common-visual-cpp-arm-migration-issues.md)  
-[ARM 예외 처리](../build/arm-exception-handling.md)  
+[일반적인 Visual C++ ARM 마이그레이션 문제](../build/common-visual-cpp-arm-migration-issues.md)<br/>
+[ARM 예외 처리](../build/arm-exception-handling.md)

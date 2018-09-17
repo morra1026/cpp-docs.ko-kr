@@ -30,12 +30,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dfeb1453cffac6cfe338f42da8b8efe60e18c9f8
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: fa2aa8fb79a0590c437699bcf887f2a7e1c1bb21
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42541889"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705018"
 ---
 # <a name="interlockedexchangepointer-intrinsic-functions"></a>_InterlockedExchangePointer Intrinsic Functions
 **Microsoft 전용**  
@@ -72,11 +72,11 @@ void * _InterlockedExchangePointer_HLERelease(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in, out] `Target`  
- 교환할 값에 대한 포인터의 포인터입니다. 함수는 값을 `Value`로 설정하고 이전 값을 반환합니다.  
+*Target*<br/>
+[out에서] 교환할 값에 대 한 포인터에 대 한 포인터입니다. 함수는 값을 `Value`로 설정하고 이전 값을 반환합니다.  
   
- [in] `Value`  
- `Target`이 가리키는 값과 교환할 값입니다.  
+*Value*<br/>
+[in] 가리키는 값과 교환할 값 `Target`합니다.  
   
 ## <a name="return-value"></a>반환 값  
  함수는 `Target`이 가리키는 초기 값을 반환합니다.  

@@ -23,12 +23,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b0f4660e9221855c93835a0a5ba5e0557178a66
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: b46f61ef727c1b283137bb3d537d2dbad416c1d8
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44109864"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703822"
 ---
 # <a name="clr-common-language-runtime-compilation"></a>/clr(공용 언어 런타임 컴파일)
 
@@ -40,7 +40,7 @@ ms.locfileid: "44109864"
 
 ## <a name="arguments"></a>인수
 
-*options*  
+*options*<br/>
 다음 스위치가 하나 이상 쉼표로 구분되어 있습니다.
 
 - 없음
@@ -140,5 +140,5 @@ Managed Extensions for C++를 사용하는 코드가 있는 경우 C++/CLI 구�
 
 ## <a name="see-also"></a>참고 항목
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)   
+[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

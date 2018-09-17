@@ -30,12 +30,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e63f13c07ceb6220ba3dc8e7932c7357ed649188
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 8e431b09d0eab84bd6b58e64f71d5f5d98b728fa
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199240"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714365"
 ---
 # <a name="priorityqueue-class"></a>priority_queue 클래스
 
@@ -51,13 +51,13 @@ class priority_queue
 ### <a name="parameters"></a>매개 변수
 
 *Type*<br/>
- priority_queue에 저장되는 요소 데이터 형식입니다.
+priority_queue에 저장되는 요소 데이터 형식입니다.
 
 *컨테이너*<br/>
- priority_queue를 구현하는 데 사용된 기본 컨테이너의 형식입니다.
+priority_queue를 구현하는 데 사용된 기본 컨테이너의 형식입니다.
 
 *Compare*<br/>
- 두 요소값을 정렬 키로 비교하여 priority_queue에서 상대적인 순서를 결정할 수 있는 함수 개체를 제공하는 형식입니다. 이 인수는 선택 사항이며 기본값은 이진 조건자 `less<typename Container::value_type>`입니다.
+두 요소값을 정렬 키로 비교하여 priority_queue에서 상대적인 순서를 결정할 수 있는 함수 개체를 제공하는 형식입니다. 이 인수는 선택 사항이며 기본값은 이진 조건자 `less<typename Container::value_type>`입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -253,19 +253,19 @@ priority_queue(InputIterator first, InputIterator last, const Traits&_comp, cons
 ### <a name="parameters"></a>매개 변수
 
 *_ comp*<br/>
- priority_queue의 요소 순서를 지정하는 데 사용되는 **constTraits** 형식의 비교 함수로, 기본 컨테이너의 비교 함수를 기본값으로 사용합니다.
+priority_queue의 요소 순서를 지정하는 데 사용되는 **constTraits** 형식의 비교 함수로, 기본 컨테이너의 비교 함수를 기본값으로 사용합니다.
 
 *_Cont*<br/>
- 생성된 priority_queue가 복사본이 되는 기본 컨테이너입니다.
+생성된 priority_queue가 복사본이 되는 기본 컨테이너입니다.
 
 *right*<br/>
- 생성된 set가 복사본으로 지정될 priority_queue입니다.
+생성된 set가 복사본으로 지정될 priority_queue입니다.
 
 *first*<br/>
- 복사할 요소의 범위에서 첫 번째 요소의 위치입니다.
+복사할 요소의 범위에서 첫 번째 요소의 위치입니다.
 
 *last*<br/>
- 복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.
+복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -397,7 +397,7 @@ void push(const Type& val);
 ### <a name="parameters"></a>매개 변수
 
 *val*<br/>
- priority_queue의 맨 위에 추가되는 개체입니다.
+priority_queue의 맨 위에 추가되는 개체입니다.
 
 ### <a name="remarks"></a>설명
 

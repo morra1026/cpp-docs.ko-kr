@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90972e39bbad812f820452816ff3df982174539f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 577e4b4e7bf54742035c8b4333d345ca894501ac
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202978"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45708996"
 ---
 # <a name="cusertool-class"></a>CUserTool 클래스
 사용자 도구는 외부 응용 프로그램을 실행하는 메뉴 항목입니다. 합니다 **도구** 탭의 **사용자 지정** 대화 상자 ( [CMFCToolBarsCustomizeDialog 클래스](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)) 사용자가 사용자 도구를 추가 하 고 이름, 명령, 인수를 지정할 수 있도록 및 각 사용자 도구에 대 한 초기 디렉터리입니다.  
@@ -79,7 +79,7 @@ class CUserTool : public CObject
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CUserTool::m_strArguments](#m_strarguments)|사용자 도구에 대 한 명령줄 인수입니다.|  
 |[CUserTool::m_strInitialDirectory](#m_strinitialdirectory)|사용자 도구에 대 한 초기 디렉터리입니다.|  
@@ -122,11 +122,11 @@ void DrawToolIcon(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rectImage*  
- 아이콘을 표시 영역의 좌표를 지정 합니다.  
+*rectImage*<br/>
+[in] 아이콘을 표시 영역의 좌표를 지정 합니다.  
   
 ##  <a name="getcommand"></a>  CUserTool::GetCommand  
  사용자 도구를 사용 하 여 연결 된 명령 텍스트가 포함 된 문자열을 반환 합니다.  
@@ -223,8 +223,8 @@ void SetCommand(LPCTSTR lpszCmd);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszCmd*  
- 사용자 도구와 연결할 새 응용 프로그램을 지정 합니다.  
+*lpszCmd*<br/>
+[in] 사용자 도구와 연결할 새 응용 프로그램을 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  사용자 도구를 실행 하는 새 응용 프로그램을 설정 하려면이 메서드를 호출 합니다. 메서드는 이전 아이콘을 제거 하 고 지정된 된 응용 프로그램에서를 새 아이콘을 로드 합니다. 응용 프로그램에서 아이콘을 로드할 수 없는 것을 경우에 사용자 도구에 대 한 기본 아이콘을 호출 하 여 로드 [CUserTool::LoadDefaultIcon](#loaddefaulticon)합니다.  

@@ -18,22 +18,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3e21a8f4c2bfc38c16df1d24d78c3992a8169b0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f2b7a0645b5486f3a4291c78fad421c974314d94
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32369541"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703362"
 ---
 # <a name="exports"></a>/EXPORTS
-```  
-/EXPORTS  
-```  
-  
-## <a name="remarks"></a>설명  
- 이 옵션은 실행 파일 또는 DLL에서 내보낸 모든 정의 표시 합니다.  
-  
- 만 [/HEADERS](../../build/reference/headers.md) DUMPBIN 옵션은으로 생성 된 파일에서 사용 하기 위해 사용할 수는 [/GL](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [DUMPBIN 옵션](../../build/reference/dumpbin-options.md)
+
+```
+/EXPORTS
+```
+
+## <a name="remarks"></a>설명
+
+이 옵션은 실행 파일 또는 DLL에서 내보낸 모든 정의 표시 합니다.
+
+만 [/HEADERS](../../build/reference/headers.md) DUMPBIN 옵션을 사용 하 여 생성 된 파일에 사용할 수 있습니다 합니다 [/GL](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[DUMPBIN 옵션](../../build/reference/dumpbin-options.md)

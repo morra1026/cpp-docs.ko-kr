@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f40fbed217bde0cfe0e917100a18bbdea91f0a8f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 142b88cf58369f09be4e06ed47fef94b845dfe71
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200348"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726026"
 ---
 # <a name="hashset-class"></a>hash_set 클래스
 
@@ -122,13 +122,13 @@ class hash_set
 ### <a name="parameters"></a>매개 변수
 
 *키*<br/>
- hash_set에 저장되는 요소 데이터 형식입니다.
+hash_set에 저장되는 요소 데이터 형식입니다.
 
 *특성*<br/>
- 두 함수 개체를 포함 하는 형식에 비교 중 하 나와 클래스는 해당 상대 순서를 부호 없는 요소의 단항 조건자 매핑 키 값에는 해시 함수를 결정 하는 정렬 키로 두 요소 값을 비교할 수 있는 이진 조건자 정수 형식의 `size_t`합니다. 이 인수는 선택 사항이며 기본값은 `hash_compare<Key, less<Key> >`입니다.
+두 함수 개체를 포함 하는 형식에 비교 중 하 나와 클래스는 해당 상대 순서를 부호 없는 요소의 단항 조건자 매핑 키 값에는 해시 함수를 결정 하는 정렬 키로 두 요소 값을 비교할 수 있는 이진 조건자 정수 형식의 `size_t`합니다. 이 인수는 선택 사항이며 기본값은 `hash_compare<Key, less<Key> >`입니다.
 
 *할당자*<br/>
- hash_set의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `allocator<Key>`입니다.
+hash_set의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `allocator<Key>`입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -563,7 +563,7 @@ size_type count(const Key& key) const;
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- hash_set에서 일치하는지 확인할 요소의 키입니다.
+hash_set에서 일치하는지 확인할 요소의 키입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1030,7 +1030,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- 검색 중인 hash_set에서 요소의 정렬 키와 비교할 인수 키입니다.
+검색 중인 hash_set에서 요소의 정렬 키와 비교할 인수 키입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1117,16 +1117,16 @@ size_type erase(const key_type& key);
 ### <a name="parameters"></a>매개 변수
 
 *_Where*<br/>
- hash_set에서 제거할 요소의 위치입니다.
+hash_set에서 제거할 요소의 위치입니다.
 
 *first*<br/>
- hash_set에서 제거되는 첫 번째 요소의 위치입니다.
+hash_set에서 제거되는 첫 번째 요소의 위치입니다.
 
 *last*<br/>
- hash_set에서 제거되는 마지막 요소 바로 뒤의 위치입니다.
+hash_set에서 제거되는 마지막 요소 바로 뒤의 위치입니다.
 
 *key*<br/>
- hash_set에서 제거할 요소의 키입니다.
+hash_set에서 제거할 요소의 키입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1235,7 +1235,7 @@ const_iterator find(const Key& key) const;
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- 검색 중인 hash_set에서 요소의 정렬 키와 일치 여부를 확인할 인수 키입니다.
+검색 중인 hash_set에서 요소의 정렬 키와 일치 여부를 확인할 인수 키입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1661,7 +1661,7 @@ iterator lower_bound(const Key& key);
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- 검색 중인 hash_set에서 요소의 정렬 키와 비교할 인수 키입니다.
+검색 중인 hash_set에서 요소의 정렬 키와 비교할 인수 키입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2151,7 +2151,7 @@ void swap(hash_set& right);
 ### <a name="parameters"></a>매개 변수
 
 *right*<br/>
- 대상 hash_set과 교환할 요소를 제공하는 인수 hash_set입니다.
+대상 hash_set과 교환할 요소를 제공하는 인수 hash_set입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2227,7 +2227,7 @@ iterator upper_bound(const Key& key);
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- 검색 중인 hash_set에서 요소의 정렬 키와 비교할 인수 키입니다.
+검색 중인 hash_set에서 요소의 정렬 키와 비교할 인수 키입니다.
 
 ### <a name="return-value"></a>반환 값
 

@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dd5349331ac23998511a8f1b838d2cd13b01998
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 7ff1a255933b79d39b6eedbb9362ff76a34e0f8a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691861"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716991"
 ---
 # <a name="single"></a>단일
-코드의 섹션을 마스터 스레드에 반드시 단일 스레드에서 실행할지 지정할 수 있습니다.  
+코드의 섹션 마스터 스레드 반드시 단일 스레드에서 실행할지를 지정할 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,11 +36,12 @@ ms.locfileid: "33691861"
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `clause`(선택 사항)  
- 0 개 이상의 절입니다. 지 원하는 절을 목록에 대 한 설명 섹션을 참조 **단일**합니다.  
+
+`clause`  
+(선택 사항) 0 개 이상의 절입니다. 지 원하는 절의 목록 설명 섹션을 참조 하세요 **단일**합니다.  
   
 ## <a name="remarks"></a>설명  
- **단일** 지시문 다음 OpenMP 절을 지원 합니다.  
+ 합니다 **단일** 지시문 다음 OpenMP 절을 지원 합니다.  
   
 -   [copyprivate](../../../parallel/openmp/reference/copyprivate.md)  
   
@@ -50,9 +51,9 @@ ms.locfileid: "33691861"
   
 -   [private](../../../parallel/openmp/reference/private-openmp.md)  
   
- [마스터](../../../parallel/openmp/reference/master.md) 지시문을 사용 하면 코드의 섹션 마스터 스레드에 대해서만 실행 않아야 함을 지정할 수 있습니다.  
+ 합니다 [마스터](../../../parallel/openmp/reference/master.md) 지시어를 사용 하면 코드의 섹션은 마스터 스레드에서만 실행 되도록 지정 합니다.  
   
- 자세한 내용은 참조 [2.4.3 single 생성](../../../parallel/openmp/2-4-3-single-construct.md)합니다.  
+ 자세한 내용은 [2.4.3 single 생성](../../../parallel/openmp/2-4-3-single-construct.md)합니다.  
   
 ## <a name="example"></a>예제  
   

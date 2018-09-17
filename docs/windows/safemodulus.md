@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b807f24f03c5880b4b60708d6919052183ec564f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b3c1ec84569058b11b20270ea1006bfc438288cf
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605212"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717160"
 ---
 # <a name="safemodulus"></a>SafeModulus
 
@@ -41,14 +41,14 @@ inline bool SafeModulus (
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *t*  
-제수입니다. 이 형식 이어야 합니다 `T`합니다.
+*t*<br/>
+[in] 제 수입니다. 이 형식 이어야 합니다 `T`합니다.
 
-[in] *u*  
-피제수입니다. 이 형식 이어야 합니다 `U`합니다.
+*u*<br/>
+[in] 피제수입니다. 이 형식 이어야 합니다 `U`합니다.
 
-[out] *결과*  
-매개 변수가 있는 **SafeModulus** 결과 저장 합니다.
+*결과*<br/>
+[out] 매개 변수가 있는 **SafeModulus** 결과 저장 합니다.
 
 ## <a name="return-value"></a>반환 값
 

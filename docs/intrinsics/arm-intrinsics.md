@@ -1941,12 +1941,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 030ac6bb2e6fb7acd9745d4fa818e89d29ee1832
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 1a504df1dfb2826b5056b5feb5b13ac3555515ae
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208977"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712805"
 ---
 # <a name="arm-intrinsics"></a>ARM 내장 함수
 Visual C++ 컴파일러에서 다음 내장 함수를 ARM 아키텍처에서 사용 가능하도록 만듭니다. ARM에 대 한 자세한 내용은 참조는 [ARM 아키텍처 참조 설명서](http://go.microsoft.com/fwlink/p/?LinkId=522049) 하 고 [ARM 어셈블러 도구 가이드](http://go.microsoft.com/fwlink/p/?LinkId=246102) ARM Infocenter 웹 사이트에서 합니다.  
@@ -2165,8 +2165,8 @@ void __iso_volatile_store8(volatile __int8 * Location, __int8 Value)
  `Location`  
  읽거나 쓸 메모리 위치의 주소입니다.  
   
- `Value`(저장 내장 함수만 해당)  
- 특정 메모리 위치에 쓸 값입니다.  
+ `Value`  
+ 지정 된 메모리 위치 (저장 내장 함수만 해당)에 쓸 값입니다.  
   
  **반환 값 (로드 내장 함수만 해당)**  
   
@@ -2176,9 +2176,8 @@ void __iso_volatile_store8(volatile __int8 * Location, __int8 Value)
   
  `__iso_volatile_load8/16/32/64` 및 `__iso_volatile_store8/16/32/64` 내장 함수를 사용해 컴파일러 최적화가 적용되지 않은 메모리 액세스를 명시적으로 수행할 수 있습니다. 컴파일러는 이러한 작업의 상대적 순서를 제거, 통합 또는 변경할 수 없지만 암시적 하드웨어 메모리 장벽을 생성하지 않습니다. 따라서 하드웨어는 여러 스레드 간의 식별할 수 있는 메모리 액세스를 여전히 다시 정렬할 수 있습니다. 이러한 내장 함수에서 컴파일된 다음 식에 해당 하는 보다 정확 하 게 **/volatile:iso**합니다.  
   
-```  
-  
-      int a = __iso_volatile_load32(p);    // equivalent to: int a = *(const volatile __int32*)p;   
+```cpp
+int a = __iso_volatile_load32(p);    // equivalent to: int a = *(const volatile __int32*)p;   
 __iso_volatile_store32(p, a);        // equivalent to: *(volatile __int32*)p = a;  
 ```  
   

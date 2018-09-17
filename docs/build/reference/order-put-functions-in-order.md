@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 87fafb0f6eba5130524a373a065fb86ea7eacfc9
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: d8ea4df02e87a64d70ce773ed35d1a3cb0509f8b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894514"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717790"
 ---
 # <a name="order-put-functions-in-order"></a>/ORDER(함수에 순서 지정)
 
@@ -39,7 +39,7 @@ ms.locfileid: "43894514"
 
 ### <a name="parameters"></a>매개 변수
 
-*filename*  
+*filename*<br/>
 COMDAT 함수에 대 한 링크 순서를 지정 하는 텍스트 파일입니다.
 
 ## <a name="remarks"></a>설명
@@ -83,5 +83,5 @@ COMDAT 순서를 지정 하려면 만들기를 *응답 파일*를 이름별로 �
 
 ## <a name="see-also"></a>참고 항목
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)  
+[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

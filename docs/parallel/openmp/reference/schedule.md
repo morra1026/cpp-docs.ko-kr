@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d00db7daf5c2c9882c1d54ac054ee285de1fdac4
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 32c05f2c4740e978d58540727067ea0d76d95871
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691835"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712155"
 ---
 # <a name="schedule"></a>일정
 에 적용 된 [에 대 한](../../../parallel/openmp/reference/for-openmp.md) 지시문입니다.  
@@ -34,7 +34,7 @@ schedule(type[,size])
   
 #### <a name="parameters"></a>매개 변수  
  `type`  
- 일정의 종류:  
+ 예약의 종류:  
   
 -   `dynamic`  
   
@@ -44,11 +44,11 @@ schedule(type[,size])
   
 -   `static`  
   
- `size`(선택 사항)  
- 반복의 크기를 지정합니다. `size` 정수 여야 합니다. 경우에 유효 하지 않은 `type` 은 `runtime`합니다.  
+*size*<br/>
+(선택 사항) 반복의 크기를 지정합니다. `size` 정수 여야 합니다. 유효 하지 않은 경우 `type` 는 `runtime`합니다.  
   
 ## <a name="remarks"></a>설명  
- 자세한 내용은 참조 [2.4.1 for 구문](../../../parallel/openmp/2-4-1-for-construct.md)합니다.  
+ 자세한 내용은 [2.4.1 for 구문](../../../parallel/openmp/2-4-1-for-construct.md)합니다.  
   
 ## <a name="example"></a>예제  
   

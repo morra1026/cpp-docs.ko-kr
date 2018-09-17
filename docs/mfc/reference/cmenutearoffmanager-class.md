@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b05c93bbdfd09bc28288b27a55520c5ac664b723
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 0ca3af6aba4c208672038de2ca663efdb2cc9d9a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540102"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700936"
 ---
 # <a name="cmenutearoffmanager-class"></a>CMenuTearOffManager 클래스
 분리 메뉴를 관리합니다. 분리 메뉴는 메뉴 모음의 메뉴입니다. 사용자는 메뉴 모음에서 분리 메뉴를 제거하여 이동 가능한 상태로 만들 수 있습니다.  
@@ -76,7 +76,7 @@ class CMenuTearOffManager : public CObject
 ## <a name="remarks"></a>설명  
  응용 프로그램에서 분리 메뉴를 사용 하려면 있어야를 `CMenuTearOffManager` 개체입니다. 대부분의 경우에서 만들기 또는 초기화 하지 않습니다는 `CMenuTearOffManager` 직접 개체입니다. 이 처리를 호출 하는 경우는 [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus) 함수입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에는 생성 하 고 초기화 하는 방법을 보여 줍니다.는 `CMenuTearOffManager` 를 호출 하 여 개체를 `CWinAppEX::EnableTearOffMenus` 메서드. 이 코드 조각은 [워드 패드 샘플](../../visual-cpp-samples.md)의 일부입니다.  
   
  [!code-cpp[NVC_MFC_WordPad#12](../../mfc/reference/codesnippet/cpp/cmenutearoffmanager-class_1.cpp)]  
@@ -99,8 +99,8 @@ void Build(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiTearOffBarID*  
- [in] *strText*  
+*uiTearOffBarID*<br/>
+[in] [in] *strText*  
   
 ### <a name="remarks"></a>설명  
   
@@ -136,14 +136,14 @@ BOOL Initialize(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszRegEntry*  
- 레지스트리 항목의 경로 포함 하는 문자열입니다. 이 레지스트리 항목에서 분리 막대가 막대에 대 한 설정을 저장 하는 응용 프로그램.  
+*lpszRegEntry*<br/>
+[in] 레지스트리 항목의 경로 포함 하는 문자열입니다. 이 레지스트리 항목에서 분리 막대가 막대에 대 한 설정을 저장 하는 응용 프로그램.  
   
- [in] *uiTearOffMenuFirst*  
- 분리 메뉴에 대 한 첫 번째 메뉴 ID를 지정 합니다.  
+*uiTearOffMenuFirst*<br/>
+[in] 분리 메뉴에 대 한 첫 번째 메뉴 ID를 지정 합니다.  
   
- [in] *uiTearOffMenuLast*  
- 분리 메뉴에 대 한 마지막 메뉴 ID를 지정 합니다.  
+*uiTearOffMenuLast*<br/>
+[in] 분리 메뉴에 대 한 마지막 메뉴 ID를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -201,8 +201,8 @@ void SetInUse(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmdId*  
- [in] *b 사용*  
+*uiCmdId*<br/>
+[in] [in] *b 사용*  
   
 ### <a name="remarks"></a>설명  
   

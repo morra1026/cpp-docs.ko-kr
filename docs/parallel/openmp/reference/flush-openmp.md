@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e6933c5d74e1277b209d15aefb93a159d55f93dd
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 5ea89d4feb7a554c2495c11aa8acaeeaa8bc775f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33696242"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722061"
 ---
 # <a name="flush-openmp"></a>flush (OpenMP)
-모든 스레드가 공유 모든 개체에 대 한 메모리의 동일한 보기를 갖도록 지정 합니다.  
+모든 스레드 모든 공유 개체에 대 한 메모리의 동일한 보기를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -32,16 +32,15 @@ ms.locfileid: "33696242"
 #pragma omp flush [(var)]  
 ```  
   
+## <a name="arguments"></a>인수
+
+*var*<br/>
+(선택 사항) 동기화 할 개체를 나타내는 변수의 쉼표로 구분 된 목록입니다. 경우 `var` 지정 하지 않으면 모든 메모리는 플러시됩니다.  
+  
 ## <a name="remarks"></a>설명  
- 다음은 각 문자에 대한 설명입니다.  
+ 합니다 **플러시** 지시문 없는 OpenMP 절을 지원 합니다.  
   
- `var` (선택 사항)  
- 동기화 하려는 개체를 나타내는 변수의 쉼표로 구분 된 목록입니다. 경우 `var` 을 지정 하지 않으면 모든 메모리는 플러시됩니다.  
-  
-## <a name="remarks"></a>설명  
- **플러시** 지시문 OpenMP 절을 지원 합니다.  
-  
- 자세한 내용은 참조 [2.6.5 flush 지시문](../../../parallel/openmp/2-6-5-flush-directive.md)합니다.  
+ 자세한 내용은 [2.6.5 flush 지시문](../../../parallel/openmp/2-6-5-flush-directive.md)합니다.  
   
 ## <a name="example"></a>예제  
   

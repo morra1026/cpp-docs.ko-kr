@@ -54,12 +54,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6af43074e78ffb66299b9eeda97dd18f073d77fd
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a7a450d683bfa2c358e26a4109a2e8a75c04e233
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599401"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716224"
 ---
 # <a name="interlockedexchange-intrinsic-functions"></a>_InterlockedExchangePointer Intrinsic Functions
 **Microsoft 전용**  
@@ -152,11 +152,11 @@ __int64 _InterlockedExchange64_rel(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in, out] `Target`  
- 교환할 값에 대한 포인터입니다. 함수는 이 변수를 `Value`로 설정하고 이전 값을 반환합니다.  
+*Target*<br/>
+[out에서] 교환할 값에 대 한 포인터입니다. 함수는 이 변수를 `Value`로 설정하고 이전 값을 반환합니다.  
   
- [in] `Value`  
- `Target`이 가리키는 값과 교환할 값입니다.  
+*Value*<br/>
+[in] 가리키는 값과 교환할 값 `Target`합니다.  
   
 ## <a name="return-value"></a>반환 값  
  `Target`이 가리키는 초기 값을 반환합니다.  
@@ -182,7 +182,7 @@ __int64 _InterlockedExchange64_rel(
   
  이러한 루틴은 내장 함수로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  샘플을 사용 하는 방법에 대 한 `_InterlockedExchange`를 참조 하세요 [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md)합니다.  
   
 **Microsoft 전용 종료**  

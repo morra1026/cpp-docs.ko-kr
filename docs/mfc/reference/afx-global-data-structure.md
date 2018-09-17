@@ -65,12 +65,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60b38ae134d761ea186b50545f9886275700dbc3
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 0f5297b6764ba29805b842329403557ad2aa4c3b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677459"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701924"
 ---
 # <a name="afxglobaldata-structure"></a>AFX_GLOBAL_DATA 구조체
 `AFX_GLOBAL_DATA` 구조는 프레임워크를 관리하거나 응용 프로그램의 모양과 동작을 사용자 지정하는 데 사용되는 필드 및 메서드를 포함합니다.  
@@ -220,14 +220,14 @@ BOOL DrawParentBackground(
 ```  
   
 ### <a name="parameters"></a>매개 변수   
- [in] *pWnd*  
- 컨트롤의 창에 대한 포인터입니다.  
+*pWnd*<br/>
+[in] 컨트롤의 창에 대 한 포인터입니다.  
   
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *lpRect*  
- 그리는 영역 경계가 되는 사각형에 대한 포인터입니다. 기본값은 NULL입니다.  
+*lpRect*<br/>
+[in] 그릴 영역을 제한 하는 사각형에 대 한 포인터입니다. 기본값은 NULL입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -250,36 +250,36 @@ BOOL DrawTextOnGlass(
 ```  
   
 ### <a name="parameters"></a>매개 변수   
- [in] *hTheme*  
- 창의 테마 데이터를 처리 하 하거나 NULL 키를 누릅니다. 프레임 워크를 지정된 된 테마를 사용 하 여이 매개 변수가 NULL이 아니고 테마가 지원 되는 경우 텍스트를 그립니다. 그렇지 않으면 테마를 사용하여 텍스트를 그리지 않습니다.  
+*hTheme*<br/>
+[in] 창의 테마 데이터를 처리 하 하거나 NULL 키를 누릅니다. 프레임 워크를 지정된 된 테마를 사용 하 여이 매개 변수가 NULL이 아니고 테마가 지원 되는 경우 텍스트를 그립니다. 그렇지 않으면 테마를 사용하여 텍스트를 그리지 않습니다.  
   
  사용 된 [OpenThemeData](/windows/desktop/api/uxtheme/nf-uxtheme-openthemedata) HTHEME를 만드는 방법.  
   
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *iPartId*  
- 원하는 텍스트 모양이 있는 컨트롤 파트입니다. 자세한 내용은 표의 파트 열을 참조 하세요 [파트 및 상태](https://msdn.microsoft.com/library/windows/desktop/bb773210)합니다. 이 값이 0이면 텍스트가 기본 글꼴로 그려지거나 장치 컨텍스트로 선택된 글꼴로 그려집니다.  
+*iPartId*<br/>
+[in] 원하는 텍스트 모양이 있는 컨트롤 파트입니다. 자세한 내용은 표의 파트 열을 참조 하세요 [파트 및 상태](https://msdn.microsoft.com/library/windows/desktop/bb773210)합니다. 이 값이 0이면 텍스트가 기본 글꼴로 그려지거나 장치 컨텍스트로 선택된 글꼴로 그려집니다.  
   
- [in] *iStateId*  
- 원하는 텍스트 모양이 있는 컨트롤 상태입니다. 자세한 내용은 표의 상태 열을 참조 하세요 [파트 및 상태](https://msdn.microsoft.com/library/windows/desktop/bb773210)합니다.  
+*iStateId*<br/>
+[in] 원하는 텍스트 모양이 있는 컨트롤 상태입니다. 자세한 내용은 표의 상태 열을 참조 하세요 [파트 및 상태](https://msdn.microsoft.com/library/windows/desktop/bb773210)합니다.  
   
- [in] *strText*  
- 그릴 텍스트입니다.  
+*strText*<br/>
+[in] 그릴 텍스트입니다.  
   
- [in] *rect*  
- 지정된 텍스트가 그려지는 영역의 경계입니다.  
+*rect*<br/>
+[in] 지정된 된 텍스트가 그려지는 영역의 경계입니다.  
   
- [in] *dwFlags*  
- 지정된 텍스트가 그려지는 방식을 지정하는 플래그의 비트 조합(OR)입니다.  
+*dwFlags*<br/>
+[in] 지정된 된 텍스트를 그리는 방법을 지정 하는 플래그의 비트 조합 (OR)입니다.  
   
  경우는 *hTheme* 매개 변수가 `NULL` 테마는 지원 되지 않으며 사용 하도록 설정 된 경우 또는 *nFormat* 의 매개 변수는 [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) 메서드 유효한 설명 플래그입니다. 테마가 지원 되는 경우는 *dwFlags* 의 매개 변수를 [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex) 메서드 유효한 플래그를 설명 합니다.  
   
- [in] *nGlowSize*  
- 지정된 텍스트를 그리기 전에 배경에 그려지는 글로우 효과의 크기입니다. 기본값은 0입니다.  
+*nGlowSize*<br/>
+[in] 지정 된 텍스트를 그리기 전에 배경에 그려지는 글로우 효과의 크기입니다. 기본값은 0입니다.  
   
- [in] *clrText*  
- 지정된 텍스트가 그려지는 색입니다. 기본값은 기본 색입니다.  
+*clrText*<br/>
+[in] 지정된 된 텍스트가 그려지는 색입니다. 기본값은 기본 색입니다.  
   
 ### <a name="return-value"></a>반환 값  
  테마를 지정된 된 텍스트를 그리는 데 사용 되는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -305,8 +305,8 @@ void EnableAccessibilitySupport(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수   
- [in] *bEnable*  
- 내게 필요한 옵션 지원을 사용 하도록 설정 내게 필요한 옵션 지원 기능을 해제 하려면 FALSE입니다. 기본값은 TRUE입니다.  
+*bEnable*<br/>
+[in] 내게 필요한 옵션 지원을 사용 하도록 설정 내게 필요한 옵션 지원 기능을 해제 하려면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
  Active Accessibility는 프로그램의 방식을 향상시키는 COM 기반의 기술이고 Windows 운영 체제는 보조 기술 제품과 함께 작동합니다. 이는 사용자 인터페이스 요소에 대한 정보를 노출하기 위한 신뢰할 수 있는 메서드를 제공합니다. 그러나 이제부터 Microsoft UI 자동화라고 하는 새로운 내게 필요한 옵션 모델을 사용할 수 있습니다. 두 기술을 비교를 참조 하세요 [UI 자동화 및 Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility)합니다.  
@@ -331,17 +331,17 @@ BOOL ExcludeTag(
 ```  
   
 ### <a name="parameters"></a>매개 변수   
- [in] *strBuffer*  
- 텍스트 버퍼입니다.  
+*strBuffer*<br/>
+[in] 텍스트 버퍼입니다.  
   
- [in] *lpszTag*  
- 열고 닫는 XML 태그 쌍의 이름입니다.  
+*lpszTag*<br/>
+[in] 열고 닫는 XML 태그 쌍의 이름입니다.  
   
- [out] *strTag*  
- 이 메서드가 반환 하는 경우는 *strTag* 사이 있는 여는 태그와 닫는 XML 태그에서 이름이 지정 된 텍스트를 포함 하는 매개 변수를 *lpszTag* 매개 변수입니다. 결과에서 선행 또는 후행 공백이 잘립니다.  
+*strTag*<br/>
+[out] 이 메서드가 반환 하는 경우는 *strTag* 사이 있는 여는 태그와 닫는 XML 태그에서 이름이 지정 된 텍스트를 포함 하는 매개 변수를 *lpszTag* 매개 변수입니다. 결과에서 선행 또는 후행 공백이 잘립니다.  
   
- [in] *bIsCharsList*  
- 이스케이프 문자에 대 한 기호를 변환 하려면 true로 설정 합니다 *strTag* 실제 이스케이프 문자에 대 한 매개 변수 변환을 수행할 필요가 FALSE입니다. 기본값은 FALSE입니다. 자세한 내용은 설명 부분을 참조하세요.  
+*bIsCharsList*<br/>
+[in] 이스케이프 문자에 대 한 기호를 변환 하려면 true로 설정 합니다 *strTag* 실제 이스케이프 문자에 대 한 매개 변수 변환을 수행할 필요가 FALSE입니다. 기본값은 FALSE입니다. 자세한 내용은 설명 부분을 참조하세요.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -370,8 +370,8 @@ COLORREF GetColor(int nColor);
 ```  
   
 ### <a name="parameters"></a>매개 변수   
- [in] *nColor*  
- 색을 검색 하는 사용자 인터페이스 요소를 지정 하는 값입니다. 유효한 값 목록을 참조 하세요. 합니다 *nIndex* 의 매개 변수를 [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor) 메서드.  
+*nColor*<br/>
+[in] 색을 검색 하는 사용자 인터페이스 요소를 지정 하는 값입니다. 유효한 값 목록을 참조 하세요. 합니다 *nIndex* 의 매개 변수를 [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor) 메서드.  
   
 ### <a name="return-value"></a>반환 값  
  지정 된 사용자 인터페이스 요소의 RGB 색 값입니다. 자세한 내용은 설명 부분을 참조하세요.  
@@ -416,8 +416,8 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
 ```  
   
 ### <a name="parameters"></a>매개 변수   
- [out에서] *정보*  
- A [NONCLIENTMETRICS](https://msdn.microsoft.com/library/windows/desktop/ff729175) 최소화 되지 않은 창의 비클라이언트 영역을 사용 하 여 관련 확장성 메트릭을 포함 하는 구조입니다.  
+*정보*<br/>
+[out에서] A [NONCLIENTMETRICS](https://msdn.microsoft.com/library/windows/desktop/ff729175) 최소화 되지 않은 창의 비클라이언트 영역을 사용 하 여 관련 확장성 메트릭을 포함 하는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -435,8 +435,8 @@ int GetTextHeight(BOOL bHorz = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수   
- [in] *bHorz*  
- 텍스트를 가로로; 실행 될 때 문자의 높이 검색 하려면 TRUE 텍스트 세로 방향으로 실행 될 때 문자의 높이 검색 하려면 FALSE입니다. 기본값은 TRUE입니다.  
+*bHorz*<br/>
+[in] 텍스트를 가로로; 실행 될 때 문자의 높이 검색 하려면 TRUE 텍스트 세로 방향으로 실행 될 때 문자의 높이 검색 하려면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  해당 디센더를 해당 ascender에서 측정 된 현재 글꼴의 높이입니다.  
@@ -693,8 +693,8 @@ CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
 ```  
   
 ### <a name="parameters"></a>매개 변수   
- [in] *lpszClassNamePrefix*  
- 등록 창 클래스의 이름입니다.  
+*lpszClassNamePrefix*<br/>
+[in] 등록 창 클래스의 이름입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드가 성공 하면 등록 된 클래스의 정규화 된 이름 그렇지 않은 경우는 [리소스 예외](exception-processing.md#afxthrowresourceexception)합니다.  
@@ -733,17 +733,17 @@ BOOL SetLayeredAttrib(
 ```  
   
 ### <a name="parameters"></a>매개 변수   
- [in] *hwnd*  
- 계층화된 창을 처리합니다.  
+*hwnd*<br/>
+[in] 계층화 된 창으로 처리 합니다.  
   
- [in] *crKey*  
- 투명색 키를 [바탕 화면 창 관리자](/windows/desktop/dwm/dwm-overview) 계층화 된 창을 구성를 사용 하 여 합니다.  
+*crKey*<br/>
+[in] 투명색 키를 [바탕 화면 창 관리자](/windows/desktop/dwm/dwm-overview) 계층화 된 창을 구성를 사용 하 여 합니다.  
   
- [in] *bAlpha*  
- 계층화된 창의 불투명도를 기술하는 데 사용되는 알파 값입니다.  
+*bAlpha*<br/>
+[in] 계층화 된 창의 불투명도 설명 하는 데 사용 되는 알파 값입니다.  
   
- [in] *dwFlags*  
- 사용할 메서드 매개 변수를 지정하는 플래그의 비트 조합(OR)입니다. 사용 하려면 LWA_COLORKEY를 지정 합니다 *crKey* 투명 색상으로 매개 변수입니다. LWA_ALPHA를 지정 합니다 *bAlpha* 계층화 된 창의 불투명도 결정 하는 매개 변수입니다.  
+*dwFlags*<br/>
+[in] 사용 하는 메서드 매개 변수를 지정 하는 플래그의 비트 조합 (OR)입니다. 사용 하려면 LWA_COLORKEY를 지정 합니다 *crKey* 투명 색상으로 매개 변수입니다. LWA_ALPHA를 지정 합니다 *bAlpha* 계층화 된 창의 불투명도 결정 하는 매개 변수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.   
@@ -763,11 +763,11 @@ BOOL SetMenuFont(
 ```  
   
 ### <a name="parameters"></a>매개 변수   
- [in] *lpLogFont*  
- 글꼴의 특성을 포함 하는 구조체에 대 한 포인터입니다.  
+*lpLogFont*<br/>
+[in] 글꼴의 특성을 포함 하는 구조체에 대 한 포인터입니다.  
   
- [in] *bHorz*  
- 텍스트를 가로로; 실행 되도록 지정. 텍스트를 세로 방향으로 실행 되도록 지정 하려면 FALSE입니다.  
+*bHorz*<br/>
+[in] 텍스트를 가로로; 실행 되도록 지정. 텍스트를 세로 방향으로 실행 되도록 지정 하려면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다. 디버그 모드에서이 메서드는이 메서드가 성공한 경우 어설션 합니다.  

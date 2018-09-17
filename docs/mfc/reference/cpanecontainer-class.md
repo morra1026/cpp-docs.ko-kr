@@ -130,12 +130,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d69a5cefa1cb43ad4f6c585b3cb7f7e021ae9183
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: ec78ed92829f8a8ac33e796687f812dc7ad444a1
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42538539"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701573"
 ---
 # <a name="cpanecontainer-class"></a>CPaneContainer 클래스
 `CPaneContainer` 클래스는 MFC에서 구현한 도킹 모델의 기본 구성 요소입니다. 이 클래스의 개체는 도킹 창 두 개 또는 `CPaneContainer.` 인스턴스 두 개를 가리키며 창이나 컨테이너를 나누는 구분선의 포인터를 저장합니다. 컨테이너 안에 컨테이너를 중첩하면 프레임워크에서 복잡한 도킹 레이아웃을 나타내는 이진 트리를 빌드할 수 있습니다. 이진 트리의 루트에 저장 되는 [CPaneContainerManager](../../mfc/reference/cpanecontainermanager-class.md) 개체입니다.  
@@ -220,7 +220,7 @@ class CPaneContainer : public CObject
 ### <a name="remarks"></a>설명  
  `CPaneContainer` 개체는 프레임 워크에서 자동으로 생성 됩니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는의 인스턴스를 생성 하는 방법에 설명 합니다 `CPaneContainer` 클래스입니다. 이 코드 조각은의 일부인 합니다 [창 크기 설정 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_SetPaneSize#2](../../mfc/reference/codesnippet/cpp/cpanecontainer-class_1.h)]  
@@ -267,8 +267,8 @@ BOOL AddSubPaneContainer(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pContainer*  
- [in] *bRightNodeNew*  
+*pContainer*<br/>
+[in] [in] *bRightNodeNew*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -286,10 +286,10 @@ virtual int CalcAvailablePaneSpace(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nRequiredOffset*  
- [in] *pBar*  
- [in] *pContainer*  
- [in] *bLeftBar*  
+*nRequiredOffset*<br/>
+[in] [in] *pBar*  
+*pContainer*<br/>
+[in] [in] *bLeftBar*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -305,8 +305,8 @@ virtual CSize CalcAvailableSpace(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *sizeStretch*  
- [in] *bLeftBar*  
+*sizeStretch*<br/>
+[in] [in] *bLeftBar*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -356,10 +356,10 @@ CPaneContainer(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pManager*  
- [in] *pLeftBar*  
- [in] *pRightBar*  
- [in] *pSlider*  
+*pManager*<br/>
+[in] [in] *pLeftBar*  
+*pRightBar*<br/>
+[in] [in] *pSlider*  
   
 ### <a name="remarks"></a>설명  
   
@@ -373,8 +373,8 @@ virtual void DeletePane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- [in] *barType*  
+*pBar*<br/>
+[in] [in] *barType*  
   
 ### <a name="remarks"></a>설명  
   
@@ -388,8 +388,8 @@ CPaneContainer* FindSubPaneContainer(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pObject*  
- [in] *findCriteria*  
+*pObject*<br/>
+[in] [in] *findCriteria*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -612,8 +612,8 @@ virtual void GetWindowRect(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rect*  
- [in] *bIgnoreVisibility*  
+*rect*<br/>
+[in] [in] *bIgnoreVisibility*  
   
 ### <a name="remarks"></a>설명  
   
@@ -725,8 +725,8 @@ void OnDeleteHidePane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- [in] *bHide*  
+*pBar*<br/>
+[in] [in] *bHide*  
   
 ### <a name="remarks"></a>설명  
   
@@ -740,8 +740,8 @@ virtual int OnMoveInternalPaneDivider(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nOffset*  
- [in] *hdwp*  
+*nOffset*<br/>
+[in] [in] *hdwp*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -757,8 +757,8 @@ virtual void OnShowPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- [in] *bShow*  
+*pBar*<br/>
+[in] [in] *bShow*  
   
 ### <a name="remarks"></a>설명  
   
@@ -814,8 +814,8 @@ virtual void Resize(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rect*  
- [in] *hdwp*  
+*rect*<br/>
+[in] [in] *hdwp*  
  [in] *bRedraw*  
   
 ### <a name="remarks"></a>설명  
@@ -834,12 +834,12 @@ virtual void ResizePane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nOffset*  
- [in] *pBar*  
- [in] *pContainer*  
- [in] *bHorz*  
- [in] *bLeftBar*  
- [in] *hdwp*  
+*nOffset*<br/>
+[in] [in] *pBar*  
+*pContainer*<br/>
+[in] [in] *bHorz*  
+*bLeftBar*<br/>
+[in] [in] *hdwp*  
   
 ### <a name="remarks"></a>설명  
   
@@ -854,8 +854,8 @@ virtual void ResizePartOfPaneContainer(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nOffset*  
- [in] *bLeftPart*  
+*nOffset*<br/>
+[in] [in] *bLeftPart*  
  [in] *hdwp*  
   
 ### <a name="remarks"></a>설명  
@@ -882,8 +882,8 @@ void SetPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- [in] *bLeft*  
+*pBar*<br/>
+[in] [in] *bLeft*  
   
 ### <a name="remarks"></a>설명  
   
@@ -897,8 +897,8 @@ void SetPaneContainer(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pContainer*  
- [in] *bLeft*  
+*pContainer*<br/>
+[in] [in] *bLeft*  
   
 ### <a name="remarks"></a>설명  
   
@@ -948,8 +948,8 @@ BOOL SetUpByID(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- [in] *pBar*  
+*nID*<br/>
+[in] [in] *pBar*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -980,10 +980,10 @@ virtual int StretchPaneContainer(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nOffset*  
- [in] *bStretchHorz*  
- [in] *bLeftBar*  
- [in] *bMoveSlider*  
+*nOffset*<br/>
+[in] [in] *bStretchHorz*  
+*bLeftBar*<br/>
+[in] [in] *bMoveSlider*  
  [in] *hdwp*  
   
 ### <a name="return-value"></a>반환 값  

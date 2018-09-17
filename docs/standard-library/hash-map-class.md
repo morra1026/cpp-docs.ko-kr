@@ -98,12 +98,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08c16cd80828e973e4fff2d1a2c36e211e61f361
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 809391ea93c3baacd510df7d81f2000e1d6309b7
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211594"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702029"
 ---
 # <a name="hashmap-class"></a>hash_map 클래스
 
@@ -125,16 +125,16 @@ class hash_map
 ### <a name="parameters"></a>매개 변수
 
 *키*<br/>
- hash_map에 저장되는 키 데이터 형식입니다.
+hash_map에 저장되는 키 데이터 형식입니다.
 
 *Type*<br/>
- hash_map에 저장되는 요소 데이터 형식입니다.
+hash_map에 저장되는 요소 데이터 형식입니다.
 
 *특성*<br/>
- 두 요소 값을 정렬 키로 비교하여 상대 순서를 확인할 수 있는 클래스 비교 중 하나와 요소의 키 값을 `size_t` 형식의 부호 없는 정수에 매핑하는 단항 조건자인 해시 함수의 두 개체를 포함하는 형식입니다. 이 인수는 선택 사항이며 hash_compare<`Key`, less<`Key`> >가 기본값입니다.
+두 요소 값을 정렬 키로 비교하여 상대 순서를 확인할 수 있는 클래스 비교 중 하나와 요소의 키 값을 `size_t` 형식의 부호 없는 정수에 매핑하는 단항 조건자인 해시 함수의 두 개체를 포함하는 형식입니다. 이 인수는 선택 사항이며 hash_compare<`Key`, less<`Key`> >가 기본값입니다.
 
 *할당자*<br/>
- hash_map의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 allocator<pair <const `Key`, `Type`>>입니다.
+hash_map의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 allocator<pair <const `Key`, `Type`>>입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -649,7 +649,7 @@ size_type count(const Key& key) const;
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- hash_map에서 일치시킬 요소의 키 값입니다.
+hash_map에서 일치시킬 요소의 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -940,7 +940,7 @@ int main()
 
 ```Output
 After the emplace insertion, hm1 contains:
- 1 => a
+1 => a
 ```
 
 ## <a name="emplace_hint"></a>  hash_map::emplace_hint
@@ -1000,7 +1000,7 @@ int main()
 
 ```Output
 After the emplace insertion, hm1 contains:
- 1 => a
+1 => a
 ```
 
 ## <a name="empty"></a>  hash_map::empty
@@ -1141,7 +1141,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- 검색 중인 hash_map에서 요소의 정렬 키와 비교할 인수 키 값입니다.
+검색 중인 hash_map에서 요소의 정렬 키와 비교할 인수 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1188,7 +1188,7 @@ int main( )
 
    cout << "A direct call of upper_bound( 2 ) gives "
         << hm1_RcIter -> second << "," << endl
-        << " matching the 2nd element of the pair"
+        << "matching the 2nd element of the pair"
         << " returned by equal_range( 2 )." << endl;
 
    p2 = hm1.equal_range( 4 );
@@ -1208,7 +1208,7 @@ int main( )
 The lower bound of the element with a key of 2 in the hash_map hm1 is: 20.
 The upper bound of the element with a key of 2 in the hash_map hm1 is: 30.
 A direct call of upper_bound( 2 ) gives 30,
- matching the 2nd element of the pair returned by equal_range( 2 ).
+matching the 2nd element of the pair returned by equal_range( 2 ).
 The hash_map hm1 doesn't have an element with a key less than 40.
 ```
 
@@ -1230,16 +1230,16 @@ size_type erase(const key_type& key);
 ### <a name="parameters"></a>매개 변수
 
 *_Where*<br/>
- hash_map에서 제거할 요소의 위치입니다.
+hash_map에서 제거할 요소의 위치입니다.
 
 *first*<br/>
- hash_map에서 제거되는 첫 번째 요소의 위치입니다.
+hash_map에서 제거되는 첫 번째 요소의 위치입니다.
 
 *last*<br/>
- hash_map에서 제거되는 마지막 요소 바로 뒤의 위치입니다.
+hash_map에서 제거되는 마지막 요소 바로 뒤의 위치입니다.
 
 *key*<br/>
- hash_map에서 제거할 요소의 키 값입니다.
+hash_map에서 제거할 요소의 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1352,7 +1352,7 @@ const_iterator find(const Key& key) const;
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- 검색 중인 hash_map에서 요소의 정렬 키와 일치 여부를 확인할 키 값입니다.
+검색 중인 hash_map에서 요소의 정렬 키와 일치 여부를 확인할 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1525,18 +1525,18 @@ hash_map(
 
 template <class InputIterator>
 hash_map(
- InputIterator First,
+    InputIterator First,
     InputIterator Last);
 
 template <class InputIterator>
 hash_map(
- InputIterator First,
+    InputIterator First,
     InputIterator Last,
     const Traits& Comp);
 
 template <class InputIterator>
 hash_map(
- InputIterator First,
+    InputIterator First,
     InputIterator Last,
     const Traits& Comp,
     const Allocator& Al
@@ -1893,7 +1893,7 @@ const_iterator lower_bound(const Key& key) const;
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- 검색 중인 hash_map에서 요소의 정렬 키와 비교할 인수 키 값입니다.
+검색 중인 hash_map에서 요소의 정렬 키와 비교할 인수 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2532,7 +2532,7 @@ void swap(hash_map& right);
 ### <a name="parameters"></a>매개 변수
 
 *right*<br/>
- 대상 hash_map과 교환할 요소를 제공하는 인수 hash_map입니다.
+대상 hash_map과 교환할 요소를 제공하는 인수 hash_map입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2608,7 +2608,7 @@ const_iterator upper_bound(const Key& key) const;
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- 검색 중인 hash_map에서 요소의 정렬 키 값과 비교할 인수 키 값입니다.
+검색 중인 hash_map에서 요소의 정렬 키 값과 비교할 인수 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
 

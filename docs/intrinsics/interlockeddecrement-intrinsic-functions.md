@@ -54,12 +54,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a30a09b9feae0d5c7e0d24967c133f076286f2fc
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 2bf3f35b4de412125fcaf1c801a044c1b72e3233
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42541339"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716263"
 ---
 # <a name="interlockeddecrement-intrinsic-functions"></a>_InterlockedDecrement Intrinsic Functions
 **Microsoft 전용**  
@@ -108,8 +108,8 @@ __int64 _InterlockedDecrement64_nf(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in, out] `lpAddend`  
- 감소시킬 변수에 대한 포인터입니다.  
+*lpAddend*<br/>
+[out에서] 감소 시킬 변수에 대 한 포인터입니다.  
   
 ## <a name="return-value"></a>반환 값  
  반환 값은 감소된 결과 값입니다.  
@@ -134,7 +134,7 @@ __int64 _InterlockedDecrement64_nf(
   
  이러한 루틴은 내장 함수로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // compiler_intrinsics_interlocked.cpp  

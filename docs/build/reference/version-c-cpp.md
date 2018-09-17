@@ -16,24 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcaf4e113af6182a2d3d735e4c668b62336e2c79
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7330d979e841d952f7e800e52ae762256ede6808
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32375024"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718304"
 ---
 # <a name="version-cc"></a>VERSION(C/C++)
-.Exe 파일의 헤더에 숫자를 저장 하는 링크 또는 DLL에 지시 합니다.  
-  
-```  
-VERSION major[.minor]  
-```  
-  
-## <a name="remarks"></a>설명  
- *주요* 및 *부* 인수는 0-65535 범위의 10 진수 숫자입니다. 기본값은 0.0 버전입니다.  
-  
- 버전 번호를 지정 하는 해당 하는 방법은 [버전 정보](../../build/reference/version-version-information.md) (/ 버전) 옵션입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [모듈 정의 문의 규칙](../../build/reference/rules-for-module-definition-statements.md)
+
+.Exe 파일의 헤더에 숫자를 배치 하는 링크 또는 DLL을 알려 줍니다.
+
+```
+VERSION major[.minor]
+```
+
+## <a name="remarks"></a>설명
+
+합니다 *주요* 하 고 *부* 인수는 0 ~ 65535 범위의 10 진수입니다. 기본값은 0.0 버전입니다.
+
+버전 번호를 지정 하는 해당 하는 방법은 된 합니다 [버전 정보](../../build/reference/version-version-information.md) (/ 버전) 옵션입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[모듈 정의 문의 규칙](../../build/reference/rules-for-module-definition-statements.md)

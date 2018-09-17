@@ -100,12 +100,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14fbe2bf5f74a2d6d2f6ae3f394c2e6e74a4e76f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 8405c41f5235ecba580bbf453a1129a38b4d8421
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43206192"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719103"
 ---
 # <a name="cmonthcalctrl-class"></a>CMonthCalCtrl 클래스
 달력 컨트롤의 기능을 캡슐화합니다.  
@@ -297,7 +297,7 @@ BOOL GetCalendarGridInfo(PMCGRIDINFO pmcGridInfo) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out] *pmcGridInfo*|에 대 한 포인터를 [MCGRIDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagmcgridinfo) 현재 month calendar 컨트롤에 대 한 정보를 수신 하는 구조입니다. 호출자가 할당 하 고이 구조체를 초기화 합니다.|  
+|*pmcGridInfo*|[out] 에 대 한 포인터를 [MCGRIDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagmcgridinfo) 현재 month calendar 컨트롤에 대 한 정보를 수신 하는 구조입니다. 호출자가 할당 하 고이 구조체를 초기화 합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -733,7 +733,7 @@ void SetCalendarBorder(int cxyBorder);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *cxyBorder*|픽셀에서 테두리의 너비입니다.|  
+|*cxyBorder*|[in] 픽셀에서 테두리의 너비입니다.|  
   
 ### <a name="remarks"></a>설명  
  이 메서드가 성공 하면 테두리 너비를로 설정 됩니다는 *cxyBorder* 매개 변수입니다. 테두리 두께입니다. 현재 지정 된 기본 값으로 다시 설정 됩니다이 고, 그렇지 [테마](/windows/desktop/Controls/visual-styles-overview), 또는 테마 사용 되지 않는 경우 0입니다.  
@@ -773,7 +773,7 @@ BOOL SetCalID(CALID calid);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *calid*|중 하나는 [달력 식별자](/windows/desktop/Intl/calendar-identifiers) 상수입니다.|  
+|*calid*|[in] 중 하나는 [달력 식별자](/windows/desktop/Intl/calendar-identifiers) 상수입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -851,7 +851,7 @@ BOOL SetCurrentView(DWORD dwNewView);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *dwNewView*|월간, 연간, 10 년 동안 또는 세기 뷰를 지정 하는 다음 값 중 하나입니다.<br /><br /> 월별 보기 MCMV_MONTH:<br /><br /> MCMV_YEAR: 연간 보기<br /><br /> MCMV_DECADE: 10 년 동안 보기<br /><br /> MCMV_CENTURY: 세기 보기|  
+|*dwNewView*|[in] 월간, 연간, 10 년 동안 또는 세기 뷰를 지정 하는 다음 값 중 하나입니다.<br /><br /> 월별 보기 MCMV_MONTH:<br /><br /> MCMV_YEAR: 연간 보기<br /><br /> MCMV_DECADE: 10 년 동안 보기<br /><br /> MCMV_CENTURY: 세기 보기|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1137,7 +1137,7 @@ LPRECT SizeRectToMin(LPRECT lpRect);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *lpRect*|에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 원하는 일정 수를 포함 하는 사각형을 정의 하는 구조입니다.|  
+|*lpRect*|[in] 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 원하는 일정 수를 포함 하는 사각형을 정의 하는 구조입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 보다 작거나 사각형에 크기가 사각형을 정의 하는 구조를 정의한 합니다 *lpRect* 매개 변수입니다.  

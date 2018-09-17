@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7601913b3940de8e6ade2c76100f4d773281db7
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: ca2582e4c792e0ef60cb11d632c6f4e88891852d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42540270"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726052"
 ---
 # <a name="section"></a>section
 .obj 파일에서 섹션을 만듭니다.  
@@ -43,34 +43,21 @@ ms.locfileid: "42540270"
 *섹션 이름* 는 필수 매개 변수 섹션의 이름입니다. 이 이름은 모든 표준 섹션 이름과 충돌하지 않아야 합니다. 참조 [/section](../build/reference/section-specify-section-attributes.md) 섹션을 만들 때 사용 하지 않아야 하는 이름의 목록에 대 한 합니다.  
   
 *특성* 하나 이상의 쉼표로 구분 된 특성의 섹션에 할당 하려는 구성 되는 선택적 매개 변수입니다. 가능한 *특성* 됩니다.  
-  
-**read**  
-데이터에 대한 읽기 작업을 허용합니다.  
-  
-**write**  
-데이터에 대한 쓰기 작업을 허용합니다.  
-  
-**execute**  
-코드가 실행될 수 있도록 합니다.  
-  
-**shared**  
-이미지를 로드하는 모든 프로세스에서 섹션을 공유합니다.  
-  
-**nopage**  
-섹션을 페이징할 수 없는 것으로 표시합니다. Win32 장치 드라이버에 유용합니다.  
-  
-**nocache**  
-섹션을 캐시할 수 없는 것으로 표시합니다. Win32 장치 드라이버에 유용합니다.  
-  
-**discard**  
-섹션을 삭제할 수 있는 것으로 표시합니다. Win32 장치 드라이버에 유용합니다.  
-  
-**remove**  
-해당 섹션을 표시 하지 메모리 상주;로 가상 장치 드라이버 (V*x*D)만 합니다.  
+
+|특성|설명|
+|-|-|
+|**read**|데이터에 대한 읽기 작업을 허용합니다.|
+|**write**|데이터에 대한 쓰기 작업을 허용합니다.|
+|**execute**|코드가 실행될 수 있도록 합니다.|
+|**shared**|이미지를 로드하는 모든 프로세스에서 섹션을 공유합니다.|
+|**nopage**|섹션을 페이징할 수 없는 것으로 표시합니다. Win32 장치 드라이버에 유용합니다.|
+|**nocache**|섹션을 캐시할 수 없는 것으로 표시합니다. Win32 장치 드라이버에 유용합니다.|
+|**discard**|섹션을 삭제할 수 있는 것으로 표시합니다. Win32 장치 드라이버에 유용합니다.|
+|**remove**|해당 섹션을 표시 하지 메모리 상주;로 가상 장치 드라이버 (V*x*D)만 합니다.|
   
 특성을 지정하지 않으면 섹션이 read 및 write 특성을 갖게 됩니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  
 다음 예제에서 첫 번째 명령은 섹션과 해당 특성을 식별합니다. 정수 `j`는 `mysec` 로 선언되지 않았기 때문에 `__declspec(allocate)`에 삽입되지 않습니다. `j`는 데이터 섹션으로 이동합니다. 정수 `i`는 `mysec` 저장소 클래스 특성의 결과로 `__declspec(allocate)`로 이동합니다.  
   

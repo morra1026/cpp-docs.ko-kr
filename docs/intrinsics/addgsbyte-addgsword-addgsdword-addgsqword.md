@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50c0025e561c86fc18bbf5c4554c9f894fe32ec7
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: cd5341dc4d47740410df01feadbd9e6aa3926a23
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42541301"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721392"
 ---
 # <a name="addgsbyte-addgsword-addgsdword-addgsqword"></a>__addgsbyte, __addgsword, __addgsdword, __addgsqword
 **Microsoft 전용**  
@@ -60,11 +60,11 @@ void __addgsqword(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `Offset`  
- 시작 부분 으로부터의 오프셋 `GS`합니다.  
+*오프셋*<br/>
+[in] 시작 부분 으로부터의 오프셋 `GS`합니다.  
   
- [in] `Data`  
- 메모리 위치에 추가할 값입니다.  
+*Data*<br/>
+[in] 메모리 위치에 추가할 값입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   

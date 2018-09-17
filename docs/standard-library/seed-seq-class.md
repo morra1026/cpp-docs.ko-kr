@@ -24,12 +24,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e466d8a176d5c4c7fd1e2250373b42ee263a6d4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2c4e86ff5ad4e1ebdba728202904324d9dc9e66f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856334"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711752"
 ---
 # <a name="seedseq-class"></a>seed_seq 클래스
 
@@ -68,30 +68,63 @@ public:
 
 ## <a name="types"></a>유형
 
-`typedef unsigned int result_type;` 시드 시퀀스의 요소 형식입니다. 32비트 부호 없는 정수 형식입니다.
+```cpp
+typedef unsigned int result_type;
+```
+
+시드 시퀀스 요소의 형식입니다. 32비트 부호 없는 정수 형식입니다.
 
 ## <a name="constructors"></a>생성자
 
-`seed_seq();` 기본 생성자를 사용 하려면 빈 내부 시퀀스로 초기화 합니다.
+```cpp
+seed_seq();
+```
 
-`template<class T>` `seed_seq(initializer_list<T> initlist);` 사용 하 여 `initlist` 내부 시퀀스를 설정할 수 있습니다.
+기본 생성자로, 빈 내부 시퀀스를 포함하도록 초기화됩니다.
+
+```cpp
+template<class T>
+seed_seq(initializer_list<T> initlist);
+```
+
+`initlist`를 사용하여 내부 시퀀스를 설정합니다.
 `T`은 정수 유형이어야 합니다.
 
-`template<class InputIterator>` `seed_seq(InputIterator begin, InputIterator end);` 제공 된 입력된 반복기 범위에서 모든 요소를 사용 하 여 내부 시퀀스를 초기화 합니다.
+```cpp
+template<class InputIterator>
+seed_seq(InputIterator begin, InputIterator end);
+```
+
+제공된 입력 반복기 범위에 있는 모든 요소를 사용하여 내부 시퀀스를 초기화합니다.
 `iterator_traits<InputIterator>::value_type`은 정수 유형이어야 합니다.
 
 ## <a name="members"></a>멤버
 
 ### <a name="generating-functions"></a>생성 함수
 
-`template<class RandomAccessIterator> void generate(RandomAccessIterator begin,          RandomAccessIterator end);` 내부 알고리즘을 사용 하 여 제공된 된 시퀀스의 요소를 채웁니다. 이 알고리즘은 `seed_seq`를 초기화한 내부 시퀀스의 영향을 받습니다.
+```cpp
+template<class RandomAccessIterator>
+void generate(RandomAccessIterator begin,
+          RandomAccessIterator end);
+```
+
+내부 알고리즘을 사용하여 제공된 시퀀스의 요소를 채웁니다. 이 알고리즘은 `seed_seq`를 초기화한 내부 시퀀스의 영향을 받습니다.
 `begin == end`이면 아무 작업도 수행하지 않습니다.
 
 ### <a name="property-functions"></a>속성 함수
 
-`size_t size() const;` 에 있는 요소의 수를 반환 합니다.는 `seed_seq`합니다.
+```cpp
+size_t size() const;
+```
 
-`template<class OutputIterator> void param(OutputIterator dest) const;` 출력 반복기에 내부 시퀀스를 복사 `dest`합니다.
+`seed_seq`에 있는 요소 수를 반환합니다.
+
+```cpp
+template<class OutputIterator>
+void param(OutputIterator dest) const;
+```
+
+내부 시퀀스를 출력 반복기 `dest`에 복사합니다.
 
 ## <a name="example"></a>예제
 

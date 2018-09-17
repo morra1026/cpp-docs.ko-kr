@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a51544f1e367e1db0b5ae72948af68fbedfa7504
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: cc842aa40b732543c496bb209b4b163635a19bb1
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209730"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713860"
 ---
 # <a name="multiplicative-operators-and-the-modulus-operator"></a>곱하기 연산자 및 나머지 연산자
 ## <a name="syntax"></a>구문  
@@ -72,11 +72,13 @@ f / 0.0
 > [!NOTE]
 >  곱셈 연산자로 수행된 변환은 오버플로 또는 언더플로 조건을 제공하지 않으므로 변환 후 곱셈 연산 결과가 피연산자 형식으로 표현되지 않는 경우 정보가 손실될 수 있습니다.  
   
-## <a name="microsoft-specific"></a>Microsoft 전용  
- Microsoft C++에서 모듈러스 식의 결과가 항상 첫 번째 피연산자의 부호와 같습니다.  
-  
-**Microsoft 전용 종료**  
- 두 정수의 나누기 계산이 정확하지 않고 피연산자가 한 개만 음수일 경우 나누기 연산에서 구하는 정확한 값보다 작은 최대 정수(부호에 관계 없는 크기)가 결과가 됩니다. 예를 들어-11의 계산된 값-3.666666666 / 3입니다. 정수 나누기의 결과-3입니다.  
+**Microsoft 전용**
+
+Microsoft C++에서 모듈러스 식의 결과가 항상 첫 번째 피연산자의 부호와 같습니다.
+
+**Microsoft 전용 종료**
+
+두 정수의 나누기 계산이 정확하지 않고 피연산자가 한 개만 음수일 경우 나누기 연산에서 구하는 정확한 값보다 작은 최대 정수(부호에 관계 없는 크기)가 결과가 됩니다. 예를 들어-11의 계산된 값-3.666666666 / 3입니다. 정수 나누기의 결과-3입니다.  
   
  곱셈 연산자 간의 관계를 지정 하 여 id (*e1* / *e2*) \* *e2*  +  *e1* % *e2* == *e1*합니다.  
   

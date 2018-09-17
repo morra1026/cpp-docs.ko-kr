@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 09f086673ba015b168211261bed68db479ef77a9
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: efe15f53cda42089b35d620ae9965050595121c7
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42538738"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720228"
 ---
 # <a name="cmfcdesktopalertwnd-class"></a>CMFCDesktopAlertWnd Class
 `CMFCDesktopAlertWnd` 클래스는 이벤트에 대 한 사용자에 게 화면에 나타나는 모덜리스 대화 상자 기능을 구현 합니다.  
@@ -126,7 +126,7 @@ class CMFCDesktopAlertWnd : public CWnd
   
 -   호출 하 여 작은 캡션의 크기를 변경할 [CMFCDesktopAlertWnd::SetSmallCaption](#setsmallcaption)합니다. 작은 캡션은 높은 7 픽셀입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서 다양 한 메서드를 사용 하는 방법에는 `CMFCDesktopAlertWnd` 구성 하는 클래스를 `CMFCDesktopAlertWnd` 개체입니다. 애니메이션 유형입니다. 설정, 팝업 창의 투명도 설정, 작은 캡션, 경고 창에 표시 되는지 지정 하 고 경고 창이 자동으로 닫힙니다. 되기 전 까지의 경과 시간을 설정 하는 방법을 보여 줍니다. 이 예제에는 만들고 바탕 화면 경고 창이 초기화 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [바탕 화면 경고 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_DesktopAlertDemo#1](../../mfc/reference/codesnippet/cpp/cmfcdesktopalertwnd-class_1.cpp)]  
@@ -166,20 +166,20 @@ virtual BOOL Create(
  [in] [out] *pWndOwner*  
  경고 창의 소유자를 지정합니다. 해당 소유자는 바탕 화면 경고 창이 대 한 모든 알림을 받을 수 합니다. 이 값은 NULL 일 수 없습니다.  
   
- [in] *uiDlgResID*  
- 경고 창의 리소스 ID를 지정합니다.  
+*uiDlgResID*<br/>
+[in] 경고 창의 리소스 ID를 지정합니다.  
   
- [in] *hMenu*  
- 메뉴 단추를 클릭할 때 표시 되는 메뉴를 지정 합니다. NULL 인 경우에 메뉴 단추가 표시 되지 않습니다.  
+*hMenu*<br/>
+[in] 메뉴 단추를 클릭할 때 표시 되는 메뉴를 지정 합니다. NULL 인 경우에 메뉴 단추가 표시 되지 않습니다.  
   
- [in] *ptPos*  
- 화면 좌표를 사용 하 여, 알림 창에서 표시 되는 초기 위치를 지정 합니다. 이 매개 변수 (-1,-1) 인 경우 경고 창 화면의 오른쪽 아래 모서리에 표시 됩니다.  
+*ptPos*<br/>
+[in] 화면 좌표를 사용 하 여, 알림 창에서 표시 되는 초기 위치를 지정 합니다. 이 매개 변수 (-1,-1) 인 경우 경고 창 화면의 오른쪽 아래 모서리에 표시 됩니다.  
   
- [in] *pRTIDlgBar*  
- 경고 창의 클라이언트 영역을 포함 하는 사용자 지정 대화 상자 클래스에 대 한 런타임 클래스 정보입니다.  
+*pRTIDlgBar*<br/>
+[in] 경고 창의 클라이언트 영역을 포함 하는 사용자 지정 대화 상자 클래스에 대 한 런타임 클래스 정보입니다.  
   
- [in] *매개 변수*  
- 경고 창을 만드는 데 사용 되는 매개 변수를 지정 합니다.  
+*params*<br/>
+[in] 경고 창을 만드는 데 사용 되는 매개 변수를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  알림 창 성공적으로 만들어진 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -311,8 +311,8 @@ virtual BOOL OnClickLinkButton(UINT uiCmdID);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmdID*  
- 이 매개 변수는 사용되지 않습니다.  
+*uiCmdID*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  항상 FALSE입니다.  
@@ -330,8 +330,8 @@ virtual BOOL OnCommand(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *wParam*  
- [in] *lParam*  
+*wParam*<br/>
+[in] [in] *lParam*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -371,8 +371,8 @@ void SetAnimationSpeed(UINT nSpeed);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nSpeed*  
- 새 애니메이션 속도 밀리초 단위로 지정합니다.  
+*nSpeed*<br/>
+[in] 새 애니메이션 속도 밀리초 단위로 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  경고 창에 대 한 애니메이션 속도 설정 하려면이 메서드를 호출 합니다. 기본 애니메이션 속도 30 시간 (밀리초)입니다.  
@@ -385,8 +385,8 @@ void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *형식*  
- 애니메이션 형식을 지정합니다.  
+*type*<br/>
+[in] 애니메이션 형식을 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  애니메이션 형식을 설정 하려면이 메서드를 호출 합니다. 다음 값 중 하나를 지정할 수 있습니다.  
@@ -409,8 +409,8 @@ void SetAutoCloseTime(int nTime);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *않았습니다*  
- 시간 밀리초에서는 경과할 때까지 경고 창이 자동으로 닫힙니다.  
+*않았습니다*<br/>
+[in] 시간 밀리초에서는 경과할 때까지 경고 창이 자동으로 닫힙니다.  
   
 ### <a name="remarks"></a>설명  
  사용자 창 상호 작용 하지 않습니다 하는 경우 지정된 된 시간 이후에 경고 창이 자동으로 닫혀 있습니다.  
@@ -423,8 +423,8 @@ void SetSmallCaption(BOOL bSmallCaption = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bSmallCaption*  
- 작은 캡션; 경고 창에 표시 되는지 지정. 그렇지 않으면, 경고 창을 보통 크기로 캡션을 표시 되는지 지정 하려면 FALSE입니다.  
+*bSmallCaption*<br/>
+[in] 작은 캡션; 경고 창에 표시 되는지 지정. 그렇지 않으면, 경고 창을 보통 크기로 캡션을 표시 되는지 지정 하려면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  소규모 또는 보통 크기로 캡션을 표시 하려면이 메서드를 호출 합니다. 기본적으로 작은 캡션 7 픽셀인 됩니다. Windows API 함수를 호출 하 여 일반 캡션의 크기를 가져올 수 있습니다 `GetSystemMetrics(SM_CYCAPTION)`합니다.  
@@ -437,8 +437,8 @@ void SetTransparency(BYTE nTransparency);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nTransparency*  
- 투명도 수준을 지정합니다. 이 값은 0에서 255 (포함) 사이 여야 합니다. 값이 클수록, 불투명 창입니다.  
+*nTransparency*<br/>
+[in] 투명도 수준을 지정합니다. 이 값은 0에서 255 (포함) 사이 여야 합니다. 값이 클수록, 불투명 창입니다.  
   
 ### <a name="remarks"></a>설명  
  팝업 창의 투명도 수준을 설정 하려면이 함수를 호출 합니다.  

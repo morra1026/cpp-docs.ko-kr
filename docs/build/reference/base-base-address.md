@@ -30,12 +30,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c43e01a1417710751bf0604e5365beaf143a293
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 1f6f287f98b542a3d8eb24f9cc2b5e725e27dceb
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895216"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725974"
 ---
 # <a name="base-base-address"></a>/BASE(기준 주소)
 
@@ -60,11 +60,11 @@ ms.locfileid: "43895216"
 
 합니다 *키* 영숫자 문자의 문자열이 며 대/소문자입니다. 일반적으로 DLL의 이름 이지만 같이 필요는 없습니다. 합니다 *키* 기본 뒤 *주소* C 언어, 16 진수 또는 10 진수에 선택적 최대 *크기*합니다. 3 개 인수가 모두 공백이 나 탭으로 구분 됩니다. 링커에서 경고가 지정 된 *크기* 프로그램에 필요한 가상 주소 공간 보다 작습니다. A *주석* 세미콜론으로 지정 됩니다 (**;**) 및 동일 하거나 별도 줄에 있을 수 있습니다. 링커 줄의 끝에 세미콜론에서 모든 텍스트를 무시합니다. 이 예제에서는 이러한 파일의 일부를 보여 줍니다.
 
-```  
+```
 main   0x00010000    0x08000000    ; for PROJECT.exe
 one    0x28000000    0x00100000    ; for DLLONE.DLL
 two    0x28100000    0x00300000    ; for DLLTWO.DLL
-```  
+```
 
 이 줄이 포함 된 파일을 DLLS.txt 라고 하는 경우 다음 예제 명령은이 정보를 적용 합니다.
 
@@ -88,5 +88,5 @@ link dlltwo.obj /dll /base:@dlls.txt,two
 
 ## <a name="see-also"></a>참고 항목
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)  
+[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

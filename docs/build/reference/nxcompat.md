@@ -18,22 +18,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6eeeb0972c4aa44db49c7394a75c6ae113d809a2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 69f632ab6751c80fa63a1c57973d402eab2565ac
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371829"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722542"
 ---
 # <a name="nxcompat"></a>/NXCOMPAT
-```  
-/NXCOMPAT[:NO]  
-```  
-  
-## <a name="remarks"></a>설명  
- 실행 파일이 Windows 데이터 실행 방지 기능과 호환 되는지 테스트 되었음을 나타냅니다.  
-  
- 자세한 내용은 [/NXCOMPAT(데이터 실행 방지 기능과 호환)](../../build/reference/nxcompat-compatible-with-data-execution-prevention.md)를 참조하세요.  
-  
-## <a name="see-also"></a>참고 항목  
- [EDITBIN 옵션](../../build/reference/editbin-options.md)
+
+```
+/NXCOMPAT[:NO]
+```
+
+## <a name="remarks"></a>설명
+
+실행 파일이 Windows 데이터 실행 방지 기능과 호환 되는지 테스트 되었음을 나타냅니다.
+
+자세한 내용은 [/NXCOMPAT(데이터 실행 방지 기능과 호환)](../../build/reference/nxcompat-compatible-with-data-execution-prevention.md)를 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+[EDITBIN 옵션](../../build/reference/editbin-options.md)

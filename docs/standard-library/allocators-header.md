@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a1d2d710631c01a39b910e7d9b15f14179b3125
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: dcda07b5d2ab499a769c389538e8f272fd8441a6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965745"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713170"
 ---
 # <a name="ltallocatorsgt"></a>&lt;allocators&gt;
 
@@ -47,9 +47,10 @@ C++ 표준 라이브러리(std::list, std::set, std::multiset, std::map and std:
 
 할당자는 다음 형식의 모든 템플릿입니다.
 
-`template<class` `Type` `>`
-
-`class allocator;`
+```cpp
+template<class Type>
+class allocator;
+```
 
 여기서 템플릿 인수 `Type`은 할당자 인스턴스에 의해 관리되는 형식입니다. C++ 표준 라이브러리는 [\< memory>](../standard-library/memory.md)에 정의된 기본 할당자인 템플릿 클래스 [allocator](../standard-library/allocator-class.md)를 제공합니다. \<allocators> 헤더는 다음과 같은 할당자를 제공합니다.
 

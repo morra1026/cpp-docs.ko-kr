@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f2e88c7b4b19dd558a211327988dc68f81cc9d1
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 10acb6af23dffef0a7067883ac5dbac5abd9234f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42538936"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724255"
 ---
 # <a name="writecr3"></a>__writecr3
 **Microsoft 전용**  
@@ -37,8 +37,8 @@ void writecr3(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `Data`  
- CR3 레지스터에 쓸 값입니다.  
+*Data*<br/>
+[in] CR3 레지스터에 쓸 값입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   

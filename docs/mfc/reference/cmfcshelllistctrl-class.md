@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aef6192218f5fae40bca6aa6fb8202a0d238091a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b2ae5b321ce9de1e834119e764a65df638d97e10
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43195834"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721190"
 ---
 # <a name="cmfcshelllistctrl-class"></a>CMFCShellListCtrl 클래스
 `CMFCShellListCtrl` 클래스 Windows 목록 컨트롤 기능을 제공 하 고 셸 항목의 목록을 표시 하는 기능을 포함 하 여 확장 합니다.  
@@ -130,11 +130,11 @@ virtual HRESULT DisplayFolder(LPAFX_SHELLITEMINFO lpItemInfo);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszPath*  
- 폴더의 경로 포함 하는 문자열입니다.  
+*lpszPath*<br/>
+[in] 폴더의 경로 포함 하는 문자열입니다.  
   
- [in] *lpItemInfo*  
- 에 대 한 포인터를 `LPAFX_SHELLITEMINFO` 표시할 폴더를 설명 하는 구조입니다.  
+*lpItemInfo*<br/>
+[in] 에 대 한 포인터를 `LPAFX_SHELLITEMINFO` 표시할 폴더를 설명 하는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고 그렇지 않으면 E_FAIL입니다.  
@@ -157,8 +157,8 @@ void EnableShellContextMenu(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 프레임 워크 바로 가기 메뉴를 활성화 하는지 여부를 지정 하는 부울입니다.  
+*bEnable*<br/>
+[in] 프레임 워크 바로 가기 메뉴를 활성화 하는지 여부를 지정 하는 부울입니다.  
   
 ##  <a name="getcurrentfolder"></a>  CMFCShellListCtrl::GetCurrentFolder  
  현재 선택한 폴더의 경로 검색 합니다 [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) 개체입니다.  
@@ -168,8 +168,8 @@ BOOL GetCurrentFolder(CString& strPath) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *strPath*  
- 메서드는 경로 기록 하는 위치 문자열 매개 변수 참조입니다.  
+*strPath*<br/>
+[out] 메서드는 경로 기록 하는 위치 문자열 매개 변수 참조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -185,8 +185,8 @@ BOOL GetCurrentFolderName(CString& strName) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *strName*  
- 문자열 매개 변수는 메서드 이름을 기록 하는 위치에 대 한 참조입니다.  
+*strName*<br/>
+[out] 문자열 매개 변수는 메서드 이름을 기록 하는 위치에 대 한 참조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -227,11 +227,11 @@ BOOL GetItemPath(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *strPath*  
- 경로 수신 하는 문자열에 대 한 참조입니다.  
+*strPath*<br/>
+[out] 경로 수신 하는 문자열에 대 한 참조입니다.  
   
- [in] *iItem*  
- 목록 항목의 인덱스입니다.  
+*iItem*<br/>
+[in] 목록 항목의 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 FALSE이 고, 그렇지 합니다.  
@@ -273,8 +273,8 @@ virtual int OnCompareItems(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lParam1*  
- [in] *lParam2*  
+*lParam1*<br/>
+[in] [in] *lParam2*  
  [in] *iColumn*  
   
 ### <a name="return-value"></a>반환 값  
@@ -291,11 +291,11 @@ virtual void OnFormatFileDate(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *tmFile*  
- 파일과 연결 된 날짜입니다.  
+*tmFile*<br/>
+[in] 파일과 연결 된 날짜입니다.  
   
- [out] *str*  
- 서식이 지정 된 파일 날짜를 포함 하는 문자열입니다.  
+*str*<br/>
+[out] 서식이 지정 된 파일 날짜를 포함 하는 문자열입니다.  
   
 ### <a name="remarks"></a>설명  
  경우는 [CMFCShellListCtrl 클래스](../../mfc/reference/cmfcshelllistctrl-class.md) 파일과 연결 된 날짜를 표시 하는 개체, 해당 날짜를 문자열 형식으로 변환 해야 합니다. `CMFCShellListCtrl` 이 메서드를 사용 하 여 해당 변환을 수행 합니다. 기본적으로이 메서드는 날짜 문자열로 서식을 지정 하려면 현재 로캘을 사용 합니다.  
@@ -310,11 +310,11 @@ virtual void OnFormatFileSize(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lFileSize*  
- 프레임 워크를 표시 하는 파일의 크기입니다.  
+*lFileSize*<br/>
+[in] 프레임 워크를 표시 하는 파일의 크기입니다.  
   
- [out] *str*  
- 서식이 지정 된 파일 크기를 포함 하는 문자열입니다.  
+*str*<br/>
+[out] 서식이 지정 된 파일 크기를 포함 하는 문자열입니다.  
   
 ### <a name="remarks"></a>설명  
  경우는 [CMFCShellListCtrl 클래스](../../mfc/reference/cmfcshelllistctrl-class.md) 개체 파일의 크기를 표시 해야 하는 경우, 파일 크기를 문자열 형식으로 변환 해야 합니다. `CMFCShellListCtrl` 이 메서드를 사용 하 여 해당 변환을 수행 합니다. 기본적으로이 메서드 파일 크기를 킬로바이트 바이트에서 변환 하 고 현재 로캘을 사용 하 여 문자열로 크기를 지정 합니다.  
@@ -329,11 +329,11 @@ virtual int OnGetItemIcon(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iItem*  
- 항목 인덱스입니다.  
+*iItem*<br/>
+[in] 항목 인덱스입니다.  
   
- [in] *pItem*  
- 항목을 설명 하는 LPAFX_SHELLITEMINFO 매개 변수입니다.  
+*pItem*<br/>
+[in] 항목을 설명 하는 LPAFX_SHELLITEMINFO 매개 변수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공할 경우 아이콘 이미지의 인덱스 함수가 실패 한 경우-1입니다.  
@@ -354,14 +354,14 @@ virtual CString OnGetItemText(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iItem*  
- 항목 인덱스입니다.  
+*iItem*<br/>
+[in] 항목 인덱스입니다.  
   
- [in] *iColumn*  
- 관련 열입니다.  
+*iColumn*<br/>
+[in] 관련 열입니다.  
   
- [in] *pItem*  
- 항목을 설명 하는 LPAFX_SHELLITEMINFO 매개 변수입니다.  
+*pItem*<br/>
+[in] 항목을 설명 하는 LPAFX_SHELLITEMINFO 매개 변수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `CString` 항목과 연결 된 텍스트를 포함 하는 합니다.  
@@ -402,8 +402,8 @@ void SetItemTypes(SHCONTF nTypes);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nTypes*  
- 목록 항목의 형식에 `CMFCShellListCtrl` 개체 지원 합니다.  
+*nTypes*<br/>
+[in] 목록 항목의 형식에 `CMFCShellListCtrl` 개체 지원 합니다.  
   
 ### <a name="remarks"></a>설명  
  항목 형식 목록에 대 한 자세한 내용은 참조 [SHCONTF](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-_shcontf)합니다.  

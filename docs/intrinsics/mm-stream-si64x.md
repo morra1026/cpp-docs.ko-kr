@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0385f2812c58b65102780780a1b7a548b2b08429
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: cb647b164ad63a952141e70b9b72e3fab3fda3c3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42545871"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701183"
 ---
 # <a name="mmstreamsi64x"></a>_mm_stream_si64x  
   
@@ -41,11 +41,11 @@ void _mm_stream_si64x(
   
 #### <a name="parameters"></a>매개 변수  
   
- [out] `Dest`  
- 원본 데이터를 쓸 위치에 대 한 포인터입니다.  
+*대상*<br/>
+[out] 원본 데이터를 쓸 위치에 대 한 포인터입니다.  
   
- [in] `Source`  
- 쓸 데이터입니다.  
+*Source*<br/>
+[in] 쓸 데이터입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
@@ -59,7 +59,7 @@ void _mm_stream_si64x(
   
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```C  
 // _mm_stream_si64x.c  

@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b3254d61295e0cfe0fc398e4aa2a2f2a926dbb1
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: 80c501c74d0e36d7a1c564e107101782468708c3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43130912"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709074"
 ---
 # <a name="std-specify-language-standard-version"></a>/std (언어 표준 버전 지정)
 
@@ -46,27 +46,27 @@ ms.locfileid: "43130912"
 - [u8 문자 리터럴](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4267.html)
 
 추가 정보에 대 한 기능에 따라 C + + 14 및 C + + 17 설정 된 경우 **/std: c + + 14** 는 지정에서 정보를 참조 하십시오 [Visual c + + 언어 규칙](../../visual-cpp-language-conformance.md)합니다.
-  
-합니다 **/std: c + + 17** 옵션을 사용 하면 전체 C + + 17 기능 집합 Visual c + + 컴파일러에서 구현 합니다. 이 옵션에서는 C++17 이후의 C++표준 규격 초안(Working Draft) 및 결함 업데이트의 전에서 변경되거나 새로운 기능에 대한 컴파일러 및 표준 라이브러리 지원을 사용하지 않습니다.  
-  
-합니다 **/std: c + + 최신** 가장 추적 하려면 Visual c + +에서 구현 된 c + + 언어 및 라이브러리 기능 집합 옵션을 사용 하면 최신 C + + 20 초안 작업 및 결함 업데이트의 c + + 표준 C + + 17에 포함 되지 않은 합니다. 이 스위치를 사용 하 여 가져오기는 게시-컴파일러 및 표준 라이브러리를 지 원하는 C + + 17 개의 언어 기능입니다. 지원 되는 언어 및 라이브러리 기능 목록을 참조 하세요 [Visual c + +에 대 한 새로운](../../what-s-new-for-visual-cpp-in-visual-studio.md)합니다. 합니다 **/std: c + + 최신** 옵션에 의해 보호 기능 사용 되지 않습니다는 **실험적 /** 전환 합니다.  
-  
+
+합니다 **/std: c + + 17** 옵션을 사용 하면 전체 C + + 17 기능 집합 Visual c + + 컴파일러에서 구현 합니다. 이 옵션에서는 C++17 이후의 C++표준 규격 초안(Working Draft) 및 결함 업데이트의 전에서 변경되거나 새로운 기능에 대한 컴파일러 및 표준 라이브러리 지원을 사용하지 않습니다.
+
+합니다 **/std: c + + 최신** 가장 추적 하려면 Visual c + +에서 구현 된 c + + 언어 및 라이브러리 기능 집합 옵션을 사용 하면 최신 C + + 20 초안 작업 및 결함 업데이트의 c + + 표준 C + + 17에 포함 되지 않은 합니다. 이 스위치를 사용 하 여 가져오기는 게시-컴파일러 및 표준 라이브러리를 지 원하는 C + + 17 개의 언어 기능입니다. 지원 되는 언어 및 라이브러리 기능 목록을 참조 하세요 [Visual c + +에 대 한 새로운](../../what-s-new-for-visual-cpp-in-visual-studio.md)합니다. 합니다 **/std: c + + 최신** 옵션에 의해 보호 기능 사용 되지 않습니다는 **실험적 /** 전환 합니다.
+
 합니다 **/std** c + + 컴파일하는 동안 적용 옵션을 사용 하 여 검색할 수는 [ \_MSVC\_LANG](../../preprocessor/predefined-macros.md) 전처리기 매크로입니다. 자세한 내용은 [전처리기 매크로](../../preprocessor/predefined-macros.md)합니다.
 
 합니다 **/std: c + + 14** 하 고 **/std: c + + 최신** 옵션은 Visual c + + 2015 업데이트 3부터 사용할 수 있습니다. 합니다 **/std: c + + 17** 옵션은 Visual c + + 2017 버전 15.3부터 사용할 수 있습니다. 동작으로 활성화 되어 일부 c++17 표준 위에서 설명한 것 처럼 합니다 **/std: c + + 14** 옵션을 사용 하지만 다른 모든 C + + 17 기능으로 사용 됩니다 **/std: c + + 17**합니다.
-  
+
 > [!NOTE]
-> Visual c + + 컴파일러 버전 또는 업데이트 수준에 따라 특정 C + + 14 또는 C + + 17 기능 하지 구현 될 수 있습니다 완전히 또는 완전히와 호환 되는 지정 하는 경우는 **/std: c + + 14** 또는 **/std: c + + 17** 옵션입니다. 예를 들어, Visual c + + 2017 RTM 컴파일러가 C + + 14을 준수 하는 완벽 하 게 지원 하지 않습니다 `constexpr`, SFINAE 식 또는 2 단계 이름 조회 합니다. 릴리스 버전에서 Visual c + +에서 c + + 언어 규칙의 개요를 보려면 [Visual c + + 언어 규칙](../../visual-cpp-language-conformance.md)합니다. 
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면  
-  
-1.  프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.  
-  
-2.  선택 **구성 속성**를 **C/c + +** 하십시오 **언어**합니다.  
-  
-3.  **c + + 언어 표준을**를 선택 하기 위해 선택한 드롭다운 컨트롤에서 지 원하는 언어 표준을 **확인** 또는 **적용** 변경 내용을 저장 하려면.  
-  
-## <a name="see-also"></a>참고자료  
-  
-[컴파일러 옵션](../../build/reference/compiler-options.md)   
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)   
+> Visual c + + 컴파일러 버전 또는 업데이트 수준에 따라 특정 C + + 14 또는 C + + 17 기능 하지 구현 될 수 있습니다 완전히 또는 완전히와 호환 되는 지정 하는 경우는 **/std: c + + 14** 또는 **/std: c + + 17** 옵션입니다. 예를 들어, Visual c + + 2017 RTM 컴파일러가 C + + 14을 준수 하는 완벽 하 게 지원 하지 않습니다 `constexpr`, SFINAE 식 또는 2 단계 이름 조회 합니다. 릴리스 버전에서 Visual c + +에서 c + + 언어 규칙의 개요를 보려면 [Visual c + + 언어 규칙](../../visual-cpp-language-conformance.md)합니다.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
+
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+
+1. 선택 **구성 속성**를 **C/c + +** 하십시오 **언어**합니다.
+
+1. **c + + 언어 표준을**를 선택 하기 위해 선택한 드롭다운 컨트롤에서 지 원하는 언어 표준을 **확인** 또는 **적용** 변경 내용을 저장 하려면.
+
+## <a name="see-also"></a>참고자료
+
+[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
+[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

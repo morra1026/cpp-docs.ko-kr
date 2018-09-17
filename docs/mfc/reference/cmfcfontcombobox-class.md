@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ec8840e4a379ce50b9474c114f0a2879d2e7bca
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: e0294a16c13941d74ccd3955f78e22e33ef8fc7a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686159"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725183"
 ---
 # <a name="cmfcfontcombobox-class"></a>CMFCFontComboBox 클래스
 `CMFCFontComboBox` 클래스 글꼴 목록이 포함 된 콤보 상자 컨트롤을 만듭니다.  
@@ -132,14 +132,14 @@ BOOL SelectFont(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDesc*  
- 글꼴 설명 개체를 가리킵니다.  
+*pDesc*<br/>
+[in] 글꼴 설명 개체를 가리킵니다.  
   
- [in] *lpszName*  
- 글꼴 이름을 지정합니다.  
+*lpszName*<br/>
+[in] 글꼴 이름을 지정합니다.  
   
- [in] *nCharSet*  
- 문자 집합을 지정합니다. 기본값은 DEFAULT_CHARSET 합니다. 자세한 내용은 참조 하세요. 합니다 `lfCharSet` 의 멤버는 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 구조입니다.  
+*nCharSet*<br/>
+[in] 문자 집합을 지정합니다. 기본값은 DEFAULT_CHARSET 합니다. 자세한 내용은 참조 하세요. 합니다 `lfCharSet` 의 멤버는 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  글꼴 콤보 상자의 항목 설명 개체를 지정 된 글꼴 또는 글꼴 이름과 charset; 일치 하는 경우 TRUE 그렇지 않으면 FALSE입니다.  
@@ -164,14 +164,14 @@ BOOL Setup(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nFontType*  
- 글꼴 종류를 지정합니다. 기본값은 DEVICE_FONTTYPE, RASTER_FONTTYPE, TRUETYPE_FONTTYPE의 비트 조합 (OR)입니다.  
+*nFontType*<br/>
+[in] 글꼴 종류를 지정합니다. 기본값은 DEVICE_FONTTYPE, RASTER_FONTTYPE, TRUETYPE_FONTTYPE의 비트 조합 (OR)입니다.  
   
- [in] *nCharSet*  
- 글꼴 문자 집합을 지정 합니다. 기본값은 DEFAULT_CHARSET 합니다.  
+*nCharSet*<br/>
+[in] 글꼴 문자 집합을 지정 합니다. 기본값은 DEFAULT_CHARSET 합니다.  
   
- [in] *nPitchAndFamily*  
- 글꼴 피치 및 패밀리를 지정합니다. 기본값은 DEFAULT_PITCH 합니다.  
+*nPitchAndFamily*<br/>
+[in] 글꼴 피치 및 패밀리를 지정합니다. 기본값은 DEFAULT_PITCH 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  글꼴 콤보 상자 성공적으로 초기화 된 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  

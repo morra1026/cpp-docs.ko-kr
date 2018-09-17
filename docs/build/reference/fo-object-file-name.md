@@ -21,48 +21,52 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea552b149270b8e644140a4dd51f220648ef376e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d9ab671cbae276796ce89ec12cecbc16334e234e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374010"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724258"
 ---
 # <a name="fo-object-file-name"></a>/Fo(개체 파일 이름)
-기본값 대신 사용할 개체(.obj) 파일 이름 또는 디렉터리를 지정합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-/Fopathname  
-```  
-  
-## <a name="remarks"></a>설명  
- 이 옵션을 사용 하지 않는 경우 소스 파일 및.obj 확장의 기본 이름 개체 파일에 사용 합니다. 다른 이름 및 확장명을 사용할 수 있지만 권장 사용 하는 것입니다. obj.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면  
-  
-1.  프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)합니다.  
-  
-2.  **C/C++** 폴더를 클릭합니다.  
-  
-3.  **출력 파일** 속성 페이지를 클릭합니다.  
-  
-4.  수정 된 **개체 파일 이름** 속성입니다.  개발 환경에서 개체 파일의 확장 되어 있어야 합니다. obj.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면  
-  
--   <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ObjectFile%2A>을 참조하세요.  
-  
-## <a name="example"></a>예제  
- 다음 명령줄에 있는 기존 디렉터리를 \OBJECT, 2. 드라이브에서 THIS.obj 라는 개체 파일을 만듭니다.  
-  
-```  
-CL /FoB:\OBJECT\ THIS.C  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [출력 파일 (/ F) 옵션](../../build/reference/output-file-f-options.md)   
- [컴파일러 옵션](../../build/reference/compiler-options.md)   
- [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)   
- [경로 이름 지정](../../build/reference/specifying-the-pathname.md)
+
+기본값 대신 사용할 개체(.obj) 파일 이름 또는 디렉터리를 지정합니다.
+
+## <a name="syntax"></a>구문
+
+```
+/Fopathname
+```
+
+## <a name="remarks"></a>설명
+
+이 옵션을 사용 하지 않는 경우 개체 파일을 소스 파일 및.obj 확장의 기본 이름을 사용 합니다. 다른 이름 및 원하는 확장을 사용할 수 있지만 권장 되는 규칙을 사용 하는 것입니다. obj.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
+
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+
+1. **C/C++** 폴더를 클릭합니다.
+
+1. **출력 파일** 속성 페이지를 클릭합니다.
+
+1. 수정 된 **개체 파일 이름을** 속성입니다.  개발 환경 개체 파일의 확장명이 있어야 합니다. obj.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
+
+- <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ObjectFile%2A>을 참조하세요.
+
+## <a name="example"></a>예제
+
+다음 명령줄 프로그램 기존 디렉터리에 \OBJECT, B. 드라이브 THIS.obj 라는 개체 파일을 만듭니다.
+
+```
+CL /FoB:\OBJECT\ THIS.C
+```
+
+## <a name="see-also"></a>참고 항목
+
+[출력 파일 (/ F) 옵션](../../build/reference/output-file-f-options.md)
+[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
+[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
+[경로 이름 지정](../../build/reference/specifying-the-pathname.md)

@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f55be256ec7b400be6c46f928a2f2309d047ca2c
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 84965abc66bf3aa58dce550dfb5e1b820fb25d12
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42538733"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715737"
 ---
 # <a name="bittestandreset-bittestandreset64"></a>_bittestandreset, _bittestandreset64
 **Microsoft 전용**  
@@ -47,11 +47,11 @@ unsigned char _bittestandreset64(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in, out] `a`  
- 검사할 메모리에 대한 포인터입니다.  
+*a*<br/>
+[out에서] 검사할 메모리에 대 한 포인터입니다.  
   
- [in] `b`  
- 테스트할 비트 위치입니다.  
+*b*<br/>
+[in] 테스트할 비트 위치입니다.  
   
 ## <a name="return-value"></a>반환 값  
  지정한 위치에 있는 비트입니다.  
@@ -68,7 +68,7 @@ unsigned char _bittestandreset64(
 ## <a name="remarks"></a>설명  
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // bittestandreset.cpp  

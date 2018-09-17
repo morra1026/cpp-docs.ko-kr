@@ -94,12 +94,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d19ede21d90353f9741a5a1250eddf049de71aa6
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 6e4b62bdf31a88c0b8ea11198949de474b2a4eb2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42539120"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701547"
 ---
 # <a name="cpanedivider-class"></a>CPaneDivider 클래스
 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
@@ -168,7 +168,7 @@ class CPaneDivider : public CBasePane
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CPaneDivider::m_nDefaultWidth](#m_ndefaultwidth)|응용 프로그램의 모든 창 구분선의 픽셀에서의 기본 너비를 지정합니다.|  
 |[CPaneDivider::m_pSliderRTC](#m_psliderrtc)|에 대 한 런타임 클래스 정보에 대 한 포인터를 보유 한 `CPaneDivider`-파생 개체입니다.|  
@@ -182,7 +182,7 @@ class CPaneDivider : public CBasePane
   
 -   일반 창 구분선만 컨테이너에 두 개의 창이 나눕니다. 자세한 내용은 [CPaneContainer 클래스](../../mfc/reference/cpanecontainer-class.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `CWorkspaceBar` 개체에서 `CPaneDivider` 개체를 가져오는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [MDI 탭 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_MDITabsDemo#5](../../mfc/reference/codesnippet/cpp/cpanedivider-class_1.cpp)]  
@@ -247,10 +247,10 @@ virtual BOOL AddPaneContainer(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *barContainerManager*  
- [in] *bOuterEdge*  
- [in] *pTargetBar*  
- [in] *dwAlignment*  
+*barContainerManager*<br/>
+[in] [in] *bOuterEdge*  
+*pTargetBar*<br/>
+[in] [in] *dwAlignment*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -283,10 +283,10 @@ virtual void CalcExpectedDockedRect(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndToDock*  
- [in] *ptMouse*  
- [in] *rectResult*  
- [in] *bDrawTab*  
+*pWndToDock*<br/>
+[in] [in] *ptMouse*  
+*rectResult*<br/>
+[in] [in] *bDrawTab*  
  [in] *ppTargetBar*  
   
 ### <a name="remarks"></a>설명  
@@ -301,8 +301,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bStretch*  
- [in] *bHorz*  
+*bStretch*<br/>
+[in] [in] *bHorz*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -332,8 +332,8 @@ CPaneDivider(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bDefaultSlider*  
- [in] *pParent*  
+*bDefaultSlider*<br/>
+[in] [in] *pParent*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -353,12 +353,12 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwStyleEx*  
- [in] *dwStyle*  
- [in] *rect*  
- [in] *pParentWnd*  
- [in] *nID*  
- [in] *pContext*  
+*dwStyleEx*<br/>
+[in] [in] *dwStyle*  
+*rect*<br/>
+[in] [in] *pParentWnd*  
+*nID*<br/>
+[in] [in] *pContext*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -396,8 +396,8 @@ CPaneContainer* FindPaneContainer(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- [in] *bLeftBar*  
+*pBar*<br/>
+[in] [in] *bLeftBar*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -447,8 +447,8 @@ void GetPaneDividers(CObList& lstSliders);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *lstSliders*  
- 창 컨테이너에 있는 창 구분선의 목록을 포함 합니다.  
+*lstSliders*<br/>
+[out] 창 컨테이너에 있는 창 구분선의 목록을 포함 합니다.  
   
 ### <a name="remarks"></a>설명  
  기본 창 구분선만에 대 한이 메서드를 호출 해야 합니다. 기본 창 구분선 구분선 전체 창 컨테이너의 크기를 조정 하는 경우  
@@ -472,8 +472,8 @@ void GetPanes(CObList& lstBars);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *lstBars*  
- 창 컨테이너에 있는 창의 목록에 포함 되어 있습니다.  
+*lstBars*<br/>
+[out] 창 컨테이너에 있는 창의 목록에 포함 되어 있습니다.  
   
 ### <a name="remarks"></a>설명  
  기본 창 구분선만에 대 한이 메서드를 호출 해야 합니다. 기본 창 구분선 구분선 전체 창 컨테이너의 크기를 조정 하는 경우  
@@ -510,8 +510,8 @@ void Init(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bDefaultSlider*  
- [in] *pParent*  
+*bDefaultSlider*<br/>
+[in] [in] *pParent*  
   
 ### <a name="remarks"></a>설명  
   
@@ -527,10 +527,10 @@ virtual BOOL InsertPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBarToInsert*  
- [in] *pTargetBar*  
- [in] *dwAlignment*  
- [in] *lpRect*  
+*pBarToInsert*<br/>
+[in] [in] *pTargetBar*  
+*dwAlignment*<br/>
+[in] [in] *lpRect*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -586,8 +586,8 @@ virtual void Move(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *ptOffset*  
- [in] *bAdjustLayout*  
+*ptOffset*<br/>
+[in] [in] *bAdjustLayout*  
   
 ### <a name="remarks"></a>설명  
   
@@ -601,7 +601,7 @@ AFX_IMPORT_DATA static CRuntimeClass* m_pSliderRTC;
 ### <a name="remarks"></a>설명  
  사용자 지정 창 구분선을 만든 경우이 멤버 변수를 설정 합니다. 이렇게 하면 창을 그릴 때 프로그램 창 구분선을 만들기 위해 프레임 워크.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 설정 하는 방법의 `m_pSliderRTC` 멤버 변수:  
   
 ```  
@@ -632,8 +632,8 @@ virtual void OnShowPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- [in] *bShow*  
+*pBar*<br/>
+[in] [in] *bShow*  
   
 ### <a name="remarks"></a>설명  
   
@@ -668,8 +668,8 @@ virtual BOOL ReplacePane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBarToReplace*  
- [in] *pBarToReplaceWith*  
+*pBarToReplace*<br/>
+[in] [in] *pBarToReplaceWith*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -685,8 +685,8 @@ virtual void RepositionPanes(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rectNew*  
- [in] *hdwp*  
+*rectNew*<br/>
+[in] [in] *hdwp*  
   
 ### <a name="remarks"></a>설명  
   
@@ -736,8 +736,8 @@ void StoreRecentTabRelatedInfo(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDockingBar*  
- [in] *pTabbedBar*  
+*pDockingBar*<br/>
+[in] [in] *pTabbedBar*  
   
 ### <a name="remarks"></a>설명  
   

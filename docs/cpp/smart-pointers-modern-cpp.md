@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d78b37971cda2ca1bcf468a794abf69555efc3e
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: eb4af8f218a6040080cdf429b061205269cbc4dc
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462253"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703588"
 ---
 # <a name="smart-pointers-modern-c"></a>스마트 포인터(최신 C++)
 최신 c + + 프로그래밍에서 표준 라이브러리 포함 *스마트 포인터*, 프로그램이 수 있도록 하는 데 사용 되는 것은 메모리 및 리소스 누수 되며 예외 로부터 안전 합니다.  
@@ -69,8 +69,9 @@ ms.locfileid: "39462253"
 ## <a name="kinds-of-smart-pointers"></a>스마트 포인터의 종류  
  다음 섹션에서는 다양한 종류의 Windows 프로그래밍 환경에서 사용할 수 있는 스마트 포인터에 대한 정보를 요약하고 사용하는 경우에 대해 설명합니다.  
   
- **C + + 표준 라이브러리 스마트 포인터**  
- POCO(Plain Old C++ 개체)에 대한 포인터를 캡슐화하는 데 가장 먼저 스마트 포인터를 사용합니다.  
+### <a name="c-standard-library-smart-pointers"></a>C++ 표준 라이브러리 스마트 포인터
+
+POCO(Plain Old C++ 개체)에 대한 포인터를 캡슐화하는 데 가장 먼저 스마트 포인터를 사용합니다.  
   
 -   `unique_ptr`   
      기본 포인터로 한 명의 소유자만 허용합니다. `shared_ptr`이 필요하다는 점을 확실히 알 경우 POCO의 기본 선택으로 사용합니다. 새 소유자로 이동할 수 있지만 복사하거나 공유할 수 없습니다. 사용하지 않는 `auto_ptr`을 대체합니다. `boost::scoped_ptr`과 비교합니다. `unique_ptr` 작고 효율적 이며, 크기는 1 포인터 및 빠른 삽입 및 c + + 표준 라이브러리 컬렉션에서 검색에 대 한 rvalue 참조를 지원 합니다. 헤더 파일: `<memory>`. 자세한 내용은 [방법: unique_ptr 인스턴스 만들기 및 사용](../cpp/how-to-create-and-use-unique-ptr-instances.md) 하 고 [unique_ptr 클래스](../standard-library/unique-ptr-class.md)합니다.  
@@ -81,8 +82,9 @@ ms.locfileid: "39462253"
 -   `weak_ptr`   
     `shared_ptr`과 함께 사용할 수 있는 특별한 경우의 스마트 포인터입니다. `weak_ptr`은 하나 이상의 `shared_ptr` 인스턴스가 소유하는 개체에 대한 액세스를 제공하지만, 참조 수 계산에 참가하지 않습니다. 개체를 관찰하는 동시에 해당 개체를 활성 상태로 유지하지 않으려는 경우 사용합니다. `shared_ptr` 인스턴스 사이의 순환 참조를 차단하기 위해 필요한 경우도 있습니다. 헤더 파일: `<memory>`. 자세한 내용은 [방법: weak_ptr 인스턴스 만들기 및 사용](../cpp/how-to-create-and-use-weak-ptr-instances.md) 하 고 [weak_ptr 클래스](../standard-library/weak-ptr-class.md)합니다.  
   
- **COM 개체 (클래식 Windows 프로그래밍)에 대 한 스마트 포인터**  
- COM 개체를 사용하는 경우 인터페이스 포인터를 적절한 스마트 포인터 형식으로 래핑합니다. ATL(Active Template Library)은 다양한 목적을 위해 여러 스마트 포인터를 정의합니다. .tlb 파일에서 래퍼 클래스를 만들 때 컴파일러가 사용하는 `_com_ptr_t` 스마트 포인터 형식을 사용할 수도 있습니다. ATL 헤더 파일을 포함하지 않으려는 경우에 가장 좋습니다.  
+### <a name="smart-pointers-for-com-objects-classic-windows-programming"></a>COM 개체의 스마트 포인터(Windows 기본 프로그래밍)
+
+COM 개체를 사용하는 경우 인터페이스 포인터를 적절한 스마트 포인터 형식으로 래핑합니다. ATL(Active Template Library)은 다양한 목적을 위해 여러 스마트 포인터를 정의합니다. .tlb 파일에서 래퍼 클래스를 만들 때 컴파일러가 사용하는 `_com_ptr_t` 스마트 포인터 형식을 사용할 수도 있습니다. ATL 헤더 파일을 포함하지 않으려는 경우에 가장 좋습니다.  
   
  [CComPtr 클래스](../atl/reference/ccomptr-class.md)  
  ATL을 사용할 수 없는 이상 이 형식을 사용합니다. `AddRef` 및 `Release` 메서드를 사용하여 참조 수 계산을 수행합니다. 자세한 내용은 참조 하세요. [방법: 만들기 및 사용 하 여 CComPtr 및 CComQIPtr 인스턴스](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md)합니다.  
@@ -99,8 +101,9 @@ ms.locfileid: "39462253"
  [_com_ptr_t 클래스](../cpp/com-ptr-t-class.md)  
  기능 면에서 `CComQIPtr`과 유사하지만 ATL 헤더에 의존하지 않습니다.  
   
- **POCO 개체에 대 한 ATL 스마트 포인터**  
- ATL은 COM 개체에 대한 스마트 포인터뿐만 아니라 이전 일반 C++ 개체에 대한 스마트 포인터 및 스마트 포인터 컬렉션을 정의합니다. 클래식 Windows 프로그래밍에서 이러한 형식은 c + + 표준 라이브러리 컬렉션에 대 한 유용한 대안이 ATL. 고 c + + 표준 라이브러리의 프로그래밍 모델 혼합 하지 않으려는 경우 또는 특히 코드 이식성 필요 하지 않을 경우  
+### <a name="atl-smart-pointers-for-poco-objects"></a>POCO 개체에 대한 ATL 스마트 포인터
+
+ATL은 COM 개체에 대한 스마트 포인터뿐만 아니라 이전 일반 C++ 개체에 대한 스마트 포인터 및 스마트 포인터 컬렉션을 정의합니다. 클래식 Windows 프로그래밍에서 이러한 형식은 c + + 표준 라이브러리 컬렉션에 대 한 유용한 대안이 ATL. 고 c + + 표준 라이브러리의 프로그래밍 모델 혼합 하지 않으려는 경우 또는 특히 코드 이식성 필요 하지 않을 경우  
   
  [CAutoPtr 클래스](../atl/reference/cautoptr-class.md)  
  복사 소유권을 전송하여 고유 소유권을 적용하는 스마트 포인터입니다. 사용되지 않는 `std::auto_ptr` 클래스에 비교할 수 있습니다.  

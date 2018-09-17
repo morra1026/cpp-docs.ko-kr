@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 456772306c854d4450a7be3996285e90a1d5783f
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 1435d5fc286349efb2d44eeba65c3ee2231d111f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679466"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703900"
 ---
 # <a name="cdockablepane-class"></a>CDockablePane Class
 도킹 사이트에 도킹되거나 탭 창에 포함될 수 있는 창을 구현합니다.  
@@ -332,14 +332,14 @@ virtual CDockablePane* AttachToTabWnd(
  [in] [out] *pTabControlBarAttachTo*  
  현재 창에 연결 하는 대상 창을 지정 합니다. 대상 창 도킹 가능한 창 이어야 합니다.  
   
- [in] *dockMethod*  
- 도킹 메서드를 지정합니다.  
+*dockMethod*<br/>
+[in] 도킹 메서드를 지정합니다.  
   
- [in] *bSetActive*  
- 연결 작업 후 탭된 창 활성화. 그렇지 않으면 FALSE입니다.  
+*bSetActive*<br/>
+[in] 연결 작업 후 탭된 창 활성화. 그렇지 않으면 FALSE입니다.  
   
- [out] *ppTabbedControlBar*  
- 연결 작업에서 발생 하는 탭된 창에 포함 되어 있습니다.  
+*ppTabbedControlBar*<br/>
+[out] 연결 작업에서 발생 하는 탭된 창에 포함 되어 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
  탭된 창, 없는 경우 현재 창에 대 한 포인터 그렇지 않은 경우 연결 작업에서 발생 하는 탭된 창에 대 한 포인터입니다. 현재 창에 연결할 수 없습니다, 아니면 오류가 발생 한 경우 반환 값은 NULL입니다.  
@@ -375,11 +375,11 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bStretch*  
- 사용되지 않습니다.  
+*bStretch*<br/>
+[in] 사용 되지 않습니다.  
   
- [in] *bHorz*  
- 사용되지 않습니다.  
+*bHorz*<br/>
+[in] 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  `CSize` 창 사각형의 크기를 포함 하는 개체입니다.  
@@ -392,8 +392,8 @@ virtual BOOL CanAcceptMiniFrame(CPaneFrameWnd* pMiniFrame) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMiniFrame*  
- `CPaneFrameWnd` 개체에 대한 포인터입니다.  
+*pMiniFrame*<br/>
+[in] 에 대 한 포인터를 `CPaneFrameWnd` 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 *pMiniFrame* 수 창으로 도킹 고, 그렇지 않으면 FALSE입니다.  
@@ -406,8 +406,8 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- 현재 창에 도킹 창을 지정 합니다.  
+*pBar*<br/>
+[in] 현재 창에 도킹 창을 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정 된 창;이 창에 도킹할 수 있는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -469,8 +469,8 @@ virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bActiveTabOnly*  
- 변환 하는 경우는 `CTabbedPane`을 활성 탭만 변환 하려면 TRUE를 지정 합니다. 창의 모든 탭 변환 하려면 FALSE를 지정 합니다.  
+*bActiveTabOnly*<br/>
+[in] 변환 하는 경우는 `CTabbedPane`을 활성 탭만 변환 하려면 TRUE를 지정 합니다. 창의 모든 탭 변환 하려면 FALSE를 지정 합니다.  
   
 ##  <a name="checkautohidecondition"></a>  CDockablePane::CheckAutoHideCondition  
  도킹 창 (자동 숨기기 모드 라고도 함) 숨겨지는지 여부를 결정 합니다.  
@@ -495,8 +495,8 @@ virtual BOOL CheckStopSlideCondition(BOOL bDirection);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bDirection*  
- 창에 표시 되 면 TRUE입니다. FALSE 이면는 창이 사라집니다.  
+*bDirection*<br/>
+[in] 창에 표시 되 면 TRUE입니다. FALSE 이면는 창이 사라집니다.  
   
 ### <a name="return-value"></a>반환 값  
  중지 조건이 충족 될; 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -514,8 +514,8 @@ virtual void CopyState(CDockablePane* pOrgBar);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pOrgBar*  
- 도킹 가능한 창에 대 한 포인터입니다.  
+*pOrgBar*<br/>
+[in] 도킹 가능한 창에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  `CDockablePane::CopyState` 상태를 복사 *pOrgBar* 다음 메서드를 호출 하 여 현재 창:  
@@ -558,38 +558,38 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszCaption*  
- 창 이름을 지정합니다.  
+*lpszCaption*<br/>
+[in] 창 이름을 지정합니다.  
   
  [in] [out] *pParentWnd*  
  부모 창을 지정합니다.  
   
- [in] *rect*  
- 클라이언트 좌표에서 창의 위치와 크기 지정 *pParentWnd*합니다.  
+*rect*<br/>
+[in] 클라이언트 좌표에서 창의 위치와 크기 지정 *pParentWnd*합니다.  
   
- [in] *bHasGripper*  
- TRUE; 캡션을 사용 하 여 창을 만들려면 그렇지 않으면 FALSE입니다.  
+*bHasGripper*<br/>
+[in] TRUE; 캡션을 사용 하 여 창을 만들려면 그렇지 않으면 FALSE입니다.  
   
- [in] *nID*  
- 자식 창 ID를 지정합니다. 이 값이 도킹 창에 대 한 도킹 상태를 저장 하려는 경우에 고유 해야 합니다.  
+*nID*<br/>
+[in] 자식 창 ID를 지정합니다. 이 값이 도킹 창에 대 한 도킹 상태를 저장 하려는 경우에 고유 해야 합니다.  
   
- [in] *dwStyle*  
- 창 스타일 특성을 지정합니다.  
+*dwStyle*<br/>
+[in] 창 스타일 특성을 지정합니다.  
   
- [in] *dwTabbedStyle*  
- 사용자가이 창 캡션에 창을 끌 때 생성 되는 탭 창 탭된 스타일을 지정 합니다.  
+*dwTabbedStyle*<br/>
+[in] 사용자가이 창 캡션에 창을 끌 때 생성 되는 탭 창 탭된 스타일을 지정 합니다.  
   
- [in] *dwControlBarStyle*  
- 추가 스타일 특성을 지정합니다.  
+*dwControlBarStyle*<br/>
+[in] 추가 스타일 특성을 지정합니다.  
   
  [in] [out] *pContext*  
  창 만들기 컨텍스트를 지정 합니다.  
   
- [in] *lpszWindowName*  
- 창 이름을 지정합니다.  
+*lpszWindowName*<br/>
+[in] 창 이름을 지정합니다.  
   
- [in] *sizeDefault*  
- 창의 크기를 지정합니다.  
+*sizeDefault*<br/>
+[in] 창의 크기를 지정합니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 도킹 가능한 창 성공적으로 만들어집니다. 그렇지 않으면 FALSE입니다.  
@@ -612,14 +612,14 @@ static CPaneDivider* __stdcall CreateDefaultPaneDivider(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwAlignment*  
- 창 도킹 되는 주 프레임의 가장자리를 지정 합니다. 하는 경우 *dwAlignment* CBRS_ALIGN_LEFT 또는 CBRS_ALIGN_RIGHT 플래그를 포함 합니다.이 메서드가 만드는 세로 (`CPaneDivider::SS_VERT`) 구분선; 그렇지 않으면이 메서드가 만드는 가로 (`CPaneDivider::SS_HORZ`) 구분선입니다.  
+*dwAlignment*<br/>
+[in] 창 도킹 되는 주 프레임의 가장자리를 지정 합니다. 하는 경우 *dwAlignment* CBRS_ALIGN_LEFT 또는 CBRS_ALIGN_RIGHT 플래그를 포함 합니다.이 메서드가 만드는 세로 (`CPaneDivider::SS_VERT`) 구분선; 그렇지 않으면이 메서드가 만드는 가로 (`CPaneDivider::SS_HORZ`) 구분선입니다.  
   
- [in] *pParent*  
- 부모 프레임에 대 한 포인터입니다.  
+*pParent*<br/>
+[in] 부모 프레임에 대 한 포인터입니다.  
   
- [in] *pSliderRTC*  
- 사용되지 않습니다.  
+*pSliderRTC*<br/>
+[in] 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 구분선 만들기에 실패 하면 새로 만든 구분선 또는 NULL에 대 한 포인터를 반환 합니다.  
@@ -652,32 +652,32 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwStyleEx*  
- 새 창에 대 한 확장 된 스타일 특성을 지정합니다.  
+*dwStyleEx*<br/>
+[in] 새 창에 대 한 확장 된 스타일 특성을 지정합니다.  
   
- [in] *lpszCaption*  
- 창 이름을 지정합니다.  
+*lpszCaption*<br/>
+[in] 창 이름을 지정합니다.  
   
  [in] [out] *pParentWnd*  
  부모 창을 지정합니다.  
   
- [in] *rect*  
- 클라이언트 좌표에서 창의 위치와 크기 지정 *pParentWnd*합니다.  
+*rect*<br/>
+[in] 클라이언트 좌표에서 창의 위치와 크기 지정 *pParentWnd*합니다.  
   
- [in] *bHasGripper*  
- TRUE; 캡션을 사용 하 여 창을 만들려면 그렇지 않으면 FALSE입니다.  
+*bHasGripper*<br/>
+[in] TRUE; 캡션을 사용 하 여 창을 만들려면 그렇지 않으면 FALSE입니다.  
   
- [in] *nID*  
- 자식 창 ID를 지정합니다. 이 값이 도킹 창에 대 한 도킹 상태를 저장 하려는 경우에 고유 해야 합니다.  
+*nID*<br/>
+[in] 자식 창 ID를 지정합니다. 이 값이 도킹 창에 대 한 도킹 상태를 저장 하려는 경우에 고유 해야 합니다.  
   
- [in] *dwStyle*  
- 창 스타일 특성을 지정합니다.  
+*dwStyle*<br/>
+[in] 창 스타일 특성을 지정합니다.  
   
- [in] *dwTabbedStyle*  
- 사용자가이 창 캡션에 창을 끌 때 생성 되는 탭 창 탭된 스타일을 지정 합니다.  
+*dwTabbedStyle*<br/>
+[in] 사용자가이 창 캡션에 창을 끌 때 생성 되는 탭 창 탭된 스타일을 지정 합니다.  
   
- [in] *dwControlBarStyle*  
- 추가 스타일 특성을 지정합니다.  
+*dwControlBarStyle*<br/>
+[in] 추가 스타일 특성을 지정합니다.  
   
  [in] [out] *pContext*  
  창 만들기 컨텍스트를 지정 합니다.  
@@ -720,14 +720,14 @@ virtual BOOL DockPaneContainer(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *barContainerManager*  
- 도킹 되는 컨테이너의 컨테이너 관리자에 대 한 참조입니다.  
+*barContainerManager*<br/>
+[in] 도킹 되는 컨테이너의 컨테이너 관리자에 대 한 참조입니다.  
   
- [in] *dwAlignment*  
- 컨테이너는 도킹 창의 가장자리를 지정 하는 DWORD입니다.  
+*dwAlignment*<br/>
+[in] 컨테이너는 도킹 창의 가장자리를 지정 하는 DWORD입니다.  
   
- [in] *dockMethod*  
- 사용되지 않습니다.  
+*dockMethod*<br/>
+[in] 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  컨테이너 창, 도킹 되어 성공적으로 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -750,8 +750,8 @@ virtual CPane* DockPaneStandard(BOOL& bWasDocked);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bWasDocked*  
- 창 도킹 되어 성공적으로; 하는 경우이 값 TRUE 포함 메서드는 반환 될 때 그렇지 않으면 FALSE를 포함합니다.  
+*bWasDocked*<br/>
+[in] 창 도킹 되어 성공적으로; 하는 경우이 값 TRUE 포함 메서드는 반환 될 때 그렇지 않으면 FALSE를 포함합니다.  
   
 ### <a name="return-value"></a>반환 값  
  탭된 창, 창에 도킹 되어, 탭된 창을 도킹의 결과로 생성 된이 메서드는 탭된 창에 대 한 포인터를 반환 합니다. 이 메서드가 반환 하는 경우 창 부족 하 고, 성공적으로 도킹, 합니다 **이** 포인터입니다. 도킹 하는 작업에 실패 한 경우이 메서드는 NULL을 반환 합니다.  
@@ -783,11 +783,11 @@ virtual BOOL DockToWindow(
  [in] [out] *pTargetWindow*  
  이 창의 도킹 도킹 가능한 창을 지정 합니다.  
   
- [in] *dwAlignment*  
- 도킹 창에 맞춤을 지정합니다. CBRS_ALIGN_LEFT "," CBRS_ALIGN_TOP "," CBRS_ALIGN_RIGHT "," CBRS_ALIGN_BOTTOM "또는" CBRS_ALIGN_ANY 중 하나일 수 있습니다. (Afxres.h에 정의).  
+*dwAlignment*<br/>
+[in] 도킹 창에 맞춤을 지정합니다. CBRS_ALIGN_LEFT "," CBRS_ALIGN_TOP "," CBRS_ALIGN_RIGHT "," CBRS_ALIGN_BOTTOM "또는" CBRS_ALIGN_ANY 중 하나일 수 있습니다. (Afxres.h에 정의).  
   
- [in] *lpRect*  
- 창 도킹 사각형을 지정합니다.  
+*lpRect*<br/>
+[in] 창 도킹 사각형을 지정합니다.  
   
 ### <a name="return-value"></a>반환 값  
  창에 성공적으로 도킹 된 경우 TRUE 그렇지 않으면 FALSE입니다.  
@@ -805,11 +805,11 @@ virtual void DrawCaption(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 그리기에 사용 되는 장치 컨텍스트를 나타냅니다.  
+*pDC*<br/>
+[in] 그리기에 사용 되는 장치 컨텍스트를 나타냅니다.  
   
- [in] *rectCaption*  
- 창 캡션의 경계 사각형을 지정 합니다.  
+*rectCaption*<br/>
+[in] 창 캡션의 경계 사각형을 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 워크는 도킹 가능한 창 캡션에 그릴이 메서드를 호출 합니다.  
@@ -824,8 +824,8 @@ void EnableAutohideAll(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 도킹 가능한 창;에 대 한 모든 기능을 자동 숨기기를 사용 하도록 설정 하려면 TRUE 그렇지 않으면 FALSE입니다.  
+*bEnable*<br/>
+[in] 도킹 가능한 창;에 대 한 모든 기능을 자동 숨기기를 사용 하도록 설정 하려면 TRUE 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  사용자 보유 하는 경우는 **Ctrl** 키 및 클릭 창을 자동 숨기기 모드에서는 동일한 컨테이너에 있는 모든 다른 창으로 전환 핀 단추는 자동 숨기기 모드로 전환할 수도 있습니다.  
@@ -840,8 +840,8 @@ virtual void EnableGripper(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 캡션;를 사용 하도록 설정 그렇지 않으면 FALSE입니다.  
+*bEnable*<br/>
+[in] 캡션;를 사용 하도록 설정 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 워크를 도킹 가능한 창을 만들 때 없는 WS_STYLE 창 스타일을 지정 하는 경우에 합니다. 즉, 창의 캡션은 프레임 워크에 의해 제어 되는 비클라이언트 영역 있지만이 영역은 표준 창 캡션을에서 다릅니다.  
@@ -908,11 +908,11 @@ virtual AFX_CS_STATUS GetDockingStatus(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *(태평양 표준시)*  
- 화면 좌표에서 포인터의 위치입니다.  
+*(태평양 표준시)*<br/>
+[in] 화면 좌표에서 포인터의 위치입니다.  
   
- [in] *nSensitivity*  
- 거리를 픽셀 단위로 사각형의 가장자리에서 포인터 도킹을 사용 하도록 설정 하려면 이어야 합니다.  
+*nSensitivity*<br/>
+[in] 거리를 픽셀 단위로 사각형의 가장자리에서 포인터 도킹을 사용 하도록 설정 하려면 이어야 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  상태 값은 다음 중 하나입니다.  
@@ -964,11 +964,11 @@ virtual void GetTabArea(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rectTabAreaTop*  
- `GetTabArea` 탭 창의 위쪽에 있는 경우에 탭 영역을 사용 하 여이 변수를 채웁니다. 탭 창의 아래쪽에 있는 경우이 변수는 빈 사각형으로 채워집니다.  
+*rectTabAreaTop*<br/>
+[in] `GetTabArea` 탭 창의 위쪽에 있는 경우 탭 영역을 사용 하 여이 변수를 채웁니다. 탭 창의 아래쪽에 있는 경우이 변수는 빈 사각형으로 채워집니다.  
   
- [in] *rectTabAreaBottom*  
- `GetTabArea` 탭 창의 맨 아래에 있는 경우에 탭 영역을 사용 하 여이 변수를 채웁니다. 탭 창의 위쪽에 있는 경우이 변수는 빈 사각형으로 채워집니다.  
+*rectTabAreaBottom*<br/>
+[in] `GetTabArea` 탭 창의 맨 아래에 있는 경우 탭 영역을 사용 하 여이 변수를 채웁니다. 탭 창의 위쪽에 있는 경우이 변수는 빈 사각형으로 채워집니다.  
   
 ### <a name="remarks"></a>설명  
  파생 된 클래스 에서만에서이 메서드는 `CDockablePane` 있고 탭 합니다. 자세한 내용은 [CTabbedPane::GetTabArea](../../mfc/reference/ctabbedpane-class.md#gettabarea) 하 고 [CMFCOutlookBar::GetTabArea](../../mfc/reference/cmfcoutlookbar-class.md#gettabarea)합니다.  
@@ -1011,11 +1011,11 @@ virtual int HitTest(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 테스트할 지점을 지정 합니다.  
+*지점*<br/>
+[in] 테스트할 지점을 지정 합니다.  
   
- [in] *bDetectCaption*  
- 창의 캡션에 지점이 있으면 HTCAPTION 반환 되어야 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+*bDetectCaption*<br/>
+[in] 창의 캡션에 지점이 있으면 HTCAPTION 반환 되어야 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  다음 값 중 하나입니다.  
@@ -1228,11 +1228,11 @@ virtual void OnBeforeChangeParent(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndNewParent*  
- 새 부모 창에 대 한 포인터입니다.  
+*pWndNewParent*<br/>
+[in] 새 부모 창에 대 한 포인터입니다.  
   
- [in] *bDelay*  
- 이 창을 도킹 된 도킹 레이아웃에 다시 계산을 지연 여부를 지정 하는 부울 값입니다. 자세한 내용은 [CDockablePane::UndockPane](#undockpane)합니다.  
+*bDelay*<br/>
+[in] 이 창을 도킹 된 도킹 레이아웃에 다시 계산을 지연 여부를 지정 하는 부울 값입니다. 자세한 내용은 [CDockablePane::UndockPane](#undockpane)합니다.  
   
 ### <a name="remarks"></a>설명  
  창이 도킹 되어 있는 새 부모 도킹을 허용 하지 않는 경우이 메서드 창 도킹 해제 합니다.  
@@ -1249,11 +1249,11 @@ virtual BOOL OnBeforeFloat(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rectFloat*  
- 부동 상태에 있을 때 창의 크기와 위치를 지정 합니다.  
+*rectFloat*<br/>
+[in] 부동 상태에 있을 때 창의 크기와 위치를 지정 합니다.  
   
- [in] *dockMethod*  
- 도킹 메서드를 지정합니다. 참조 [CPane::DockPane](../../mfc/reference/cpane-class.md#dockpane) 가능한 값 목록은 합니다.  
+*dockMethod*<br/>
+[in] 도킹 메서드를 지정합니다. 참조 [CPane::DockPane](../../mfc/reference/cpane-class.md#dockpane) 가능한 값 목록은 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 창 놓을지 수 있습니다. 그렇지 않으면 FALSE입니다.  
@@ -1269,8 +1269,8 @@ virtual void OnPressButtons(UINT nHit);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nHit*  
- 이 매개 변수는 사용되지 않습니다.  
+*nHit*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
  도킹 가능한 창의 캡션에 사용자 지정 단추를 추가 하는 경우 사용자가 단추를 누를 때 알림을 받으려면이 메서드를 재정의 합니다.  
@@ -1283,8 +1283,8 @@ virtual void OnSlide(BOOL bSlideOut);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bSlideOut*  
- TRUE; 창을 표시 하려면 창을 숨기려면 FALSE입니다.  
+*bSlideOut*<br/>
+[in] TRUE; 창을 표시 하려면 창을 숨기려면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  사용자 지정 자동 숨기기 효과 구현 하는 파생된 클래스에서이 메서드를 재정의 합니다.  
@@ -1310,14 +1310,14 @@ BOOL ReplacePane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBarToReplaceWith*  
- 도킹 가능한 창에 대 한 포인터입니다.  
+*pBarToReplaceWith*<br/>
+[in] 도킹 가능한 창에 대 한 포인터입니다.  
   
- [in] *dockMethod*  
- 사용되지 않습니다.  
+*dockMethod*<br/>
+[in] 사용 되지 않습니다.  
   
- [in] *bRegisterWithFrame*  
- TRUE 이면 부모 항목의 이전 창 고 도킹 관리자를 사용 하 여 새 창 등록 됩니다. 새 창 도킹 관리자에 의해 유지 관리 되는 창의 목록에서 이전 창의 인덱스에 삽입 됩니다.  
+*bRegisterWithFrame*<br/>
+[in] TRUE 이면 부모 항목의 이전 창 고 도킹 관리자를 사용 하 여 새 창 등록 됩니다. 새 창 도킹 관리자에 의해 유지 관리 되는 창의 목록에서 이전 창의 인덱스에 삽입 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  교체에 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1344,17 +1344,17 @@ virtual CMFCAutoHideBar* SetAutoHideMode(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bMode*  
- 자동 숨기기 모드를 사용 하도록 설정 일반 도킹 모드를 사용 하도록 설정 하려면 FALSE입니다.  
+*bMode*<br/>
+[in] 자동 숨기기 모드를 사용 하도록 설정 일반 도킹 모드를 사용 하도록 설정 하려면 FALSE입니다.  
   
- [in] *dwAlignment*  
- 만들려는 자동 숨기기 창의 맞춤을 지정 합니다.  
+*dwAlignment*<br/>
+[in] 만들려는 자동 숨기기 창의 맞춤을 지정 합니다.  
   
  [in] [out] *pCurrAutoHideBar*  
  현재 자동 숨기기 도구 모음에 대 한 포인터입니다. NULL 일 수 있습니다.  
   
- [in] *bUseTimer*  
- 사용자가 창 자동 숨기기 모드로 전환할 때 자동 숨기기 효과 사용 하려면 또는 즉시 창을 숨기려면 여부를 지정 합니다.  
+*bUseTimer*<br/>
+[in] 사용자가 창 자동 숨기기 모드로 전환할 때 자동 숨기기 효과 사용 하려면 또는 즉시 창을 숨기려면 여부를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  자동 숨기기 모드 또는 NULL로 전환의 결과로 만들어진 자동 숨기기 도구 모음입니다.  
@@ -1374,11 +1374,11 @@ void SetAutoHideParents(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pToolBar*  
- 자동 숨기기 도구 모음에 대 한 포인터입니다.  
+*pToolBar*<br/>
+[in] 자동 숨기기 도구 모음에 대 한 포인터입니다.  
   
- [in] *pBtn*  
- 자동 숨기기 단추를 사용 하는 포인터입니다.  
+*pBtn*<br/>
+[in] 자동 숨기기 단추를 사용 하는 포인터입니다.  
   
 ##  <a name="setlastpercentinpanecontainer"></a>  CDockablePane::SetLastPercentInPaneContainer  
  해당 컨테이너의 창을 차지 하는 공간의 백분율을 설정 합니다.  
@@ -1388,8 +1388,8 @@ void SetLastPercentInPaneContainer(int n);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *n*  
- **int** 해당 컨테이너의 창 차지 하는 공간의 백분율을 지정 하는 합니다.  
+*n*<br/>
+[in] **int** 해당 컨테이너의 창 차지 하는 공간의 백분율을 지정 하는 합니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 워크의 창 레이아웃 다시 계산할 때 새 값을 사용 하 여 조정 합니다.  
@@ -1402,8 +1402,8 @@ void SetRestoredDefaultPaneDivider(HWND hRestoredSlider);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hRestoredSlider*  
- 창 구분선 (슬라이더)에 대 한 핸들입니다.  
+*hRestoredSlider*<br/>
+[in] 창 구분선 (슬라이더)에 대 한 핸들입니다.  
   
 ### <a name="remarks"></a>설명  
  창을 deserialize 되 면 복원 된 기본 창 구분선을 가져옵니다. 자세한 내용은 [CDockablePane::RestoreDefaultPaneDivider](#restoredefaultpanedivider)합니다.  
@@ -1416,8 +1416,8 @@ void SetTabbedPaneRTC(CRuntimeClass* pRTC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pRTC*  
- 탭된 창에 대 한 런타임 클래스 정보입니다.  
+*pRTC*<br/>
+[in] 탭된 창에 대 한 런타임 클래스 정보입니다.  
   
 ### <a name="remarks"></a>설명  
  동적으로 생성 된 탭된 창에 대 한 런타임 클래스 정보를 설정 하려면이 메서드를 호출 합니다. 사용자가 다른 창의 캡션을를 하나의 창을 끌 때 또는 호출 하는 경우 발생할 수 있습니다 합니다 [cdockablepane:: Attachtotabwnd](#attachtotabwnd) 메서드를 프로그래밍 방식으로 두 개의 도킹 가능한 창에서 탭된 창 만들기.  
@@ -1443,14 +1443,14 @@ virtual void ShowPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bShow*  
- TRUE; 창을 표시 하려면 창을 숨기려면 FALSE입니다.  
+*bShow*<br/>
+[in] TRUE; 창을 표시 하려면 창을 숨기려면 FALSE입니다.  
   
- [in] *bDelay*  
- 지연 하려면 true로 설정 된 도킹 레이아웃 조정 즉시 도킹 레이아웃을 조정 하려면 FALSE입니다.  
+*bDelay*<br/>
+[in] 지연 하려면 true로 설정 된 도킹 레이아웃 조정 즉시 도킹 레이아웃을 조정 하려면 FALSE입니다.  
   
- [in] *bActivate*  
- 창으로 표시 되는 경우를 활성화. 그렇지 않으면 FALSE입니다.  
+*bActivate*<br/>
+[in] 창으로 표시 되는 경우를 활성화. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  대신이 메서드를 호출 합니다 [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow) 표시 하거나 도킹 가능 창을 숨길 때.  
@@ -1465,11 +1465,11 @@ virtual void Slide(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bSlideOut*  
- TRUE; 창을 표시 하려면 창을 숨기려면 FALSE입니다.  
+*bSlideOut*<br/>
+[in] TRUE; 창을 표시 하려면 창을 숨기려면 FALSE입니다.  
   
- [in] *bUseTimer*  
- 자동 숨기기 효과;를 사용 하 여 창을 표시 하거나 숨기려면 TRUE 표시 하거나 즉시 창을 숨기려면 FALSE입니다.  
+*bUseTimer*<br/>
+[in] 자동 숨기기 효과;를 사용 하 여 창을 표시 하거나 숨기려면 TRUE 표시 하거나 즉시 창을 숨기려면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 워크는 자동 숨기기 모드에 있는 창 애니메이션을 적용 하려면이 메서드를 호출 합니다.  
@@ -1494,8 +1494,8 @@ virtual void UndockPane(BOOL bDelay = FALSE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bDelay*  
- 지연 하려면 true로 설정 된 도킹 레이아웃 계산 도킹 레이아웃을 즉시 다시 계산 하려면 FALSE입니다.  
+*bDelay*<br/>
+[in] 지연 하려면 true로 설정 된 도킹 레이아웃 계산 도킹 레이아웃을 즉시 다시 계산 하려면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  다중 미니 프레임 창 컨테이너 (다른 창 사용 하 여 단일 미니 프레임 창의 부동 창)에서 또는 주 프레임 창에서 창의 도킹을 해제 하려면이 메서드를 호출 합니다.  

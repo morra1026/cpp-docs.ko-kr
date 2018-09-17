@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6f932e186630d1bc6c846c78af99f98262861068
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 985ff4eb96b904dc9c5b4377b336109b00e06b40
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110671"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716594"
 ---
 # <a name="ai-specify-metadata-directories"></a>/AI(메타데이터 디렉터리 지정)
 
@@ -42,6 +42,7 @@ ms.locfileid: "44110671"
 검색할 컴파일러의 디렉터리나 경로
 
 ## <a name="remarks"></a>설명
+
 디렉터리를 하나만 전달할 수는 **/AI** 호출 합니다. 하나를 지정할 **/AI** 컴파일러로 검색 하려는 각 경로 대 한 옵션입니다. 예를 들어에 대 한 컴파일러 검색 경로에 C:\Project\Meta와 C:\Common\Meta를 모두 추가 하려면 `#using` 지시문을 추가 `/AI"C:\Project\Meta" /AI"C:\Common\Meta"` 컴파일러 명령줄에 각 디렉터리를 추가 하거나 합니다 **추가 #using 디렉터리** Visual Studio의 속성입니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
@@ -58,6 +59,6 @@ ms.locfileid: "44110671"
 
 ## <a name="see-also"></a>참고 항목
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)   
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)   
+[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
+[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
 [#using 지시문](../../preprocessor/hash-using-directive-cpp.md)

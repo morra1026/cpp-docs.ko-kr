@@ -80,12 +80,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cbcc47bf7b8eff276135bb5eb2f6206471fee524
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: f40635e3a3c4c00aa98a36ebddcdb5a29c2a66ab
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43206477"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705928"
 ---
 # <a name="numericlimits-class"></a>numeric_limits 클래스
 
@@ -101,7 +101,7 @@ class numeric_limits
 ### <a name="parameters"></a>매개 변수
 
 *Type*<br/>
- 속성이 테스트, 쿼리 또는 설정되는 기본 요소 데이터 형식입니다.
+속성이 테스트, 쿼리 또는 설정되는 기본 요소 데이터 형식입니다.
 
 ## <a name="remarks"></a>설명
 

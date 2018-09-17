@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd45e8919e7b1f0347511e2c3ad782975ecbe71a
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 1d5cabbd1d779de4c6c081b57b8f241d9fa92f62
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42543230"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709063"
 ---
 # <a name="readdr"></a>__readdr
 지정 된 디버그 레지스터의 값을 읽습니다.  
@@ -34,8 +34,8 @@ unsigned __int64 __readdr(unsigned int DebugRegister);
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `DebugRegister`  
- 디버그를 식별 하는 0 ~ 7에서에서 상수를 등록 합니다.  
+*DebugRegister*<br/>
+[in] 디버그를 식별 하는 0 ~ 7에서에서 상수를 등록 합니다.  
   
 ## <a name="return-value"></a>반환 값  
  지정 된 디버그 레지스터의 값입니다.  

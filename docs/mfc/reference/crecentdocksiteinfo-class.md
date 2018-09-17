@@ -40,15 +40,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01fec88a49852ba46c8feb68f18842d2a1de437f
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: 42fd0c5df1731ded5e48bda74cb280b282e6b0cb
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37079002"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702613"
 ---
 # <a name="crecentdocksiteinfo-class"></a>CRecentDockSiteInfo 클래스
-`CRecentDockSiteInfo` 클래스에 대 한 최신 상태 정보를 저장 하는 도우미 클래스는는 [CPane 클래스](../../mfc/reference/cpane-class.md)합니다.  
+합니다 `CRecentDockSiteInfo` 클래스는에 대 한 최신 상태 정보를 저장 하는 도우미 클래스를 [CPane 클래스](../../mfc/reference/cpane-class.md)합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -244,8 +244,8 @@ void SaveListOfRecentPanes(CList<HWND,
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *CList < HWND*  
- [in] *lstOrg*  
+*CList < HWND*<br/>
+[in] [in] *lstOrg*  
  [in] *bForSlider*  
   
 ### <a name="remarks"></a>설명  
@@ -260,8 +260,8 @@ virtual void SetInfo(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bForSlider*  
- [in] *srcInfo*  
+*bForSlider*<br/>
+[in] [in] *srcInfo*  
   
 ### <a name="remarks"></a>설명  
   
@@ -275,8 +275,8 @@ virtual void StoreDockInfo(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pRecentContainer*  
- [in] *pTabbedBar*  
+*pRecentContainer*<br/>
+[in] [in] *pTabbedBar*  
   
 ### <a name="remarks"></a>설명  
   

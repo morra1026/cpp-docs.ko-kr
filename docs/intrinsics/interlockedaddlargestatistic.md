@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 602cfb415c17c9e57d9fc1e932777cd1929e5f40
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ee14f187545e09bbdca81f760b85e771fba3936d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33331399"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703913"
 ---
 # <a name="interlockedaddlargestatistic"></a>_InterlockedAddLargeStatistic
 **Microsoft 전용**  
   
- 첫 번째 피연산자의 64 비트 값에 연관된 추가 수행 합니다.  
+ 첫 번째 피연산자가 64 비트 값 인 연관된 추가 수행 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,11 +40,11 @@ long _InterlockedAddLargeStatistic(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in, out] `Addend`  
- 추가 작업의 첫 번째 피연산자에 대 한 포인터입니다. 가리키는 값 수의 결과로 대체 됩니다.  
+*가 수*<br/>
+[out에서] 추가 작업의 첫 번째 피연산자에 대 한 포인터입니다. 가리킨 값을 더하기의 결과 의해 대체 됩니다.  
   
- [in] `Value`  
- 두 번째 피연산자입니다. 첫 번째 피연산자에 추가할 값입니다.  
+*Value*<br/>
+[in] 두 번째 피연산자입니다. 첫 번째 피연산자에 추가할 값입니다.  
   
 ## <a name="return-value"></a>반환 값  
  두 번째 피연산자의 값입니다.  
@@ -55,12 +55,12 @@ long _InterlockedAddLargeStatistic(
 |---------------|------------------|  
 |`_InterlockedAddLargeStatistic`|x86|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- 별도 두 잠긴된 지침으로 구현 되기 때문에 내장 함수는 원자성 되지 않습니다. 다른 스레드에서 실행 중에 발생이 내장 함수는 원자성 64 비트 읽기 읽혀질는 일관 되지 않은 값 될 수 있습니다.  
+ 별도 두 잠긴된 지침으로 구현 되므로 내장 함수는 원자성 없습니다. 다른 스레드에서 실행 중에 발생이 내장 함수는 원자성 64-bit 읽기를 읽고 일관 되지 않은 값을 될 수 있습니다.  
   
- 이 함수는 읽기 / 쓰기 장벽으로 작동합니다. 자세한 내용은 참조 [_ReadWriteBarrier](../intrinsics/readwritebarrier.md)합니다.  
+ 이 함수는 읽기 / 쓰기 장벽으로 작동합니다. 자세한 내용은 [_ReadWriteBarrier](../intrinsics/readwritebarrier.md)합니다.  
   
 **Microsoft 전용 종료**  
   

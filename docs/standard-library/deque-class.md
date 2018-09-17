@@ -98,12 +98,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c77b232fe87a722194a21d60457a01051827a7e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: afcf2528ba84edd90179ef6eb29d356466372633
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214168"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713308"
 ---
 # <a name="deque-class"></a>deque 클래스
 
@@ -119,10 +119,10 @@ class deque
 ### <a name="parameters"></a>매개 변수
 
 *Type*<br/>
- deque에 저장되는 요소 데이터 형식입니다.
+deque에 저장되는 요소 데이터 형식입니다.
 
 *할당자*<br/>
- deque의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수 선택 사항이 며 기본값은 **할당자\<유형 >** 합니다.
+deque의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수 선택 사항이 며 기본값은 **할당자\<유형 >** 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -246,19 +246,19 @@ void assign(initializer_list<Type> IList);
 ### <a name="parameters"></a>매개 변수
 
 *첫 번째*<br/>
- 인수 deque에서 복사할 요소 범위에 있는 첫 번째 요소의 위치입니다.
+인수 deque에서 복사할 요소 범위에 있는 첫 번째 요소의 위치입니다.
 
 *마지막*<br/>
- 인수 deque에서 복사할 요소 범위를 벗어난 첫 번째 요소의 위치입니다.
+인수 deque에서 복사할 요소 범위를 벗어난 첫 번째 요소의 위치입니다.
 
 *개수*<br/>
- deque에 삽입되는 요소의 복사본의 수입니다.
+deque에 삽입되는 요소의 복사본의 수입니다.
 
 *val*<br/>
- deque에 삽입되는 요소의 값입니다.
+deque에 삽입되는 요소의 값입니다.
 
 *IList*<br/>
- deque에 삽입되는 initializer_list입니다.
+deque에 삽입되는 initializer_list입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -333,7 +333,7 @@ const_reference at(size_type pos) const;
 ### <a name="parameters"></a>매개 변수
 
 *pos*<br/>
- deque에서 참조할 요소의 아래 첨자 또는 위치 번호입니다.
+deque에서 참조할 요소의 아래 첨자 또는 위치 번호입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1314,7 +1314,7 @@ int main( )
    cout << "The last integer of c1 is " << *c1_Iter << endl;
 
    c1_Iter--;
- *c1_Iter = 400;
+   *c1_Iter = 400;
    cout << "The new next-to-last integer of c1 is " << *c1_Iter << endl;
 
    // If a const iterator had been declared instead with the line:
@@ -1346,13 +1346,13 @@ iterator erase(iterator first, iterator last);
 ### <a name="parameters"></a>매개 변수
 
 *_Where*<br/>
- deque에서 제거할 요소의 위치입니다.
+deque에서 제거할 요소의 위치입니다.
 
 *first*<br/>
- deque에서 제거되는 첫 번째 요소의 위치입니다.
+deque에서 제거되는 첫 번째 요소의 위치입니다.
 
 *last*<br/>
- deque에서 제거되는 마지막 요소 바로 뒤의 위치입니다.
+deque에서 제거되는 마지막 요소 바로 뒤의 위치입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1603,7 +1603,7 @@ const_reference operator[](size_type pos) const;
 ### <a name="parameters"></a>매개 변수
 
 *pos*<br/>
- 참조할 deque 요소의 위치입니다.
+참조할 deque 요소의 위치입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1714,7 +1714,7 @@ int main( )
 
    cout << "     ";
    S<MyDeque&&>::show ( move< MyDeque& > (d1) );
- }
+}
 ```
 
 ## <a name="pointer"></a>  deque::pointer
@@ -1951,7 +1951,7 @@ int main( )
    cout << endl;
 
    c1_rIter = c1.rbegin( );
- *c1_rIter = 40;  // This would have caused an error if a
+   *c1_rIter = 40;  // This would have caused an error if a
                     // const_reverse iterator had been declared as
                     // noted above
    cout << "Last element in deque is now " << *c1_rIter << "." << endl;
@@ -2069,7 +2069,7 @@ int main( )
    c1_rIter = c1.rend( );
    c1_rIter--; // Decrementing the reverse iterator moves it backward
                // in the reversed deque (to the last element here)
- *c1_rIter = 40; // This modification of the last element would
+   *c1_rIter = 40; // This modification of the last element would
                    // have caused an error if a const_reverse
                    // iterator had been declared (as noted above)
    cout << "The modified reversed deque is: ";
@@ -2099,10 +2099,10 @@ void resize(size_type _Newsize, Type val);
 ### <a name="parameters"></a>매개 변수
 
 *_Newsize*<br/>
- deque의 새 크기입니다.
+deque의 새 크기입니다.
 
 *val*<br/>
- 새 크기가 원래 크기보다 클 경우 deque에 추가되는 새 요소의 값입니다. 값을 생략하면 새 요소에 클래스의 기본값이 할당됩니다.
+새 크기가 원래 크기보다 클 경우 deque에 추가되는 새 요소의 값입니다. 값을 생략하면 새 요소에 클래스의 기본값이 할당됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2278,10 +2278,10 @@ void swap(deque<Type, Allocator>& left, deque<Type, Allocator>& right);
 ### <a name="parameters"></a>매개 변수
 
 *right*<br/>
- 교환할 요소를 제공하는 deque 또는 `left` deque와 요소를 교환할 deque입니다.
+교환할 요소를 제공하는 deque 또는 `left` deque와 요소를 교환할 deque입니다.
 
 *left*<br/>
- Deque의와 교환할 요소가 deque *오른쪽*합니다.
+Deque의와 교환할 요소가 deque *오른쪽*합니다.
 
 ### <a name="example"></a>예제
 

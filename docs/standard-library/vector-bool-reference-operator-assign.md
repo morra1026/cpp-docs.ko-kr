@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 037c6cfb9360f85c1ffdf92dcce11a86a0c458d7
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 4eddd4ce677adfb51192302357dfbd72be36df3c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965617"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721502"
 ---
 # <a name="vectorltboolgtreferenceoperator"></a>vector&lt;bool&gt;::reference::operator=
 
@@ -41,13 +41,13 @@ reference& operator=(bool Val);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*  
- 해당 값을 비트에 할당할 요소 참조입니다.
+*오른쪽*<br/>
+해당 값을 비트에 할당할 요소 참조입니다.
 
-*val*  
- 비트에 할당될 부울 값입니다.
+*val*<br/>
+비트에 할당될 부울 값입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // vector_bool_ref_op_assign.cpp

@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 364ad39bfe47ff04c4a1eefb52b32ed4bddb7809
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 4bfb567774191edb86a9eb34a38be69344f19575
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42539139"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702080"
 ---
 # <a name="lllshift"></a>__ll_lshift
 **Microsoft 전용**  
@@ -40,11 +40,11 @@ unsigned __int64 __ll_lshift(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `Mask`  
- 시프트 레프트 64 비트 정수 값입니다.  
+*마스크*<br/>
+[in] 시프트 레프트 64 비트 정수 값입니다.  
   
- [in] `nBit`  
- 이동할 비트 수입니다.  
+*nBit*<br/>
+[in] 이동할 비트 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
  왼쪽으로 이동 하 여 마스크 `nBit` 비트입니다.  
@@ -62,7 +62,7 @@ unsigned __int64 __ll_lshift(
   
  합니다 `ll` 이름에서에 작업 임을 나타냅니다 `long long` (`__int64`).  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // ll_lshift.cpp  

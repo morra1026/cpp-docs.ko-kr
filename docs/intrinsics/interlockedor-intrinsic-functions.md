@@ -66,12 +66,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57f89b5f8488f3c89365e490f0bc81bac5816949
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 33ce6996d4435709edcc9d733b9500490dcfe34c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42541300"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709880"
 ---
 # <a name="interlockedor-intrinsic-functions"></a>_InterlockedOr Intrinsic Functions
 **Microsoft 전용**  
@@ -180,11 +180,11 @@ __int64 _InterlockedOr64_rel(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in, out] `Value`  
- 첫 번째 피연산자에 대한 포인터입니다(결과로 바뀜).  
+*Value*<br/>
+[out에서] 결과 교체 첫 번째 피연산자에 대 한 포인터입니다.  
   
- [in] `Mask`  
- 두 번째 피연산자입니다.  
+*마스크*<br/>
+[in] 두 번째 피연산자입니다.  
   
 ## <a name="return-value"></a>반환 값  
  첫 번째 매개 변수가 가리키는 원래 값입니다.  
@@ -207,7 +207,7 @@ __int64 _InterlockedOr64_rel(
   
  HLE(Hardware Lock Elision) 명령을 지원하는 Intel 플랫폼에서 `_HLEAcquire` 및 `_HLERelease` 접미사가 포함된 내장 함수는 하드웨어에서 잠금 쓰기 단계를 제거하여 성능을 향상시킬 수 있는 힌트를 프로세서에 포함합니다. HLE를 지원하지 않는 플랫폼에서 이러한 내장 함수를 호출하면 힌트는 무시됩니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // _InterlockedOr.cpp  

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 423cd4585fa6e9ae5a5fbb16cf7d5c43aaf7c152
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 00ef28954a686dac72c8b7f55b86c88313e74643
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605929"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719722"
 ---
 # <a name="rdx"></a>rdx
 
@@ -43,8 +43,8 @@ ms.locfileid: "42605929"
 *key*  
 이름 키를 만들거나 열 수입니다.
 
-*valuename* (선택 사항)  
-설정할 값 필드를 지정 합니다. 이 이름의 값 필드 없는 키에서에 추가 됩니다.
+*valuename*  
+(선택 사항) 설정할 값 필드를 지정 합니다. 이 이름의 값 필드 없는 키에서에 추가 됩니다.
 
 *regtype*  
 추가 되는 레지스트리 키의 형식입니다. 다음 중 하나일 수 있습니다: `text`, `dword`를 `binary`, 또는 `CString`합니다.
@@ -68,7 +68,7 @@ ms.locfileid: "42605929"
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드는 MyValue CMyClass COM 구성 요소를 설명 하는 시스템 이라는 레지스트리 키를 추가 합니다.
 

@@ -828,12 +828,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5cb6010d47be6fe2c771ac407bff26729c772f14
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: a35d65509de75e117bdbeef679618b8d49ef37a2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43678409"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711622"
 ---
 # <a name="cwnd-class"></a>CWnd 클래스
 
@@ -1680,11 +1680,11 @@ virtual void CalcWindowRect(
 
 ### <a name="parameters"></a>매개 변수
 
-[out에서] *lpClientRect*  
-사각형 구조에 대 한 포인터입니다. 이 구조는 입력에 대해 클라이언트 사각형을 포함합니다. 메서드가 완료 되 면이 구조는 지정된 된 클라이언트 사각형을 포함할 수 있는 창 사각형을 포함 합니다.
+*lpClientRect*<br/>
+[out에서] 사각형 구조에 대 한 포인터입니다. 이 구조는 입력에 대해 클라이언트 사각형을 포함합니다. 메서드가 완료 되 면이 구조는 지정된 된 클라이언트 사각형을 포함할 수 있는 창 사각형을 포함 합니다.
 
-[in] *nAdjustType*  
-사용 하 여 `CWnd::adjustBorder` WS_EX_CLIENTEDGE 스타일; 없이 창 좌표로 계산을 사용 하 여 `CWnd::adjustOutside`입니다.
+*nAdjustType*<br/>
+[in] 사용 하 여 `CWnd::adjustBorder` WS_EX_CLIENTEDGE 스타일; 없이 창 좌표로 계산을 사용 하 여 `CWnd::adjustOutside`입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1924,26 +1924,26 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *lpszClassName*  
-등록된 시스템 창 클래스의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터 또는 미리 정의 된 시스템 창 클래스의 이름입니다.
+*lpszClassName*<br/>
+[in] 등록된 시스템 창 클래스의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터 또는 미리 정의 된 시스템 창 클래스의 이름입니다.
 
-[in] *lpszWindowName*  
-창을 포함 하는 null로 끝나는 문자열에 대 한 포인터 표시 이름입니다. 그렇지 않으면 NULL이 없는 창에 대 한 표시 이름입니다.
+*lpszWindowName*<br/>
+[in] 창을 포함 하는 null로 끝나는 문자열에 대 한 포인터 표시 이름입니다. 그렇지 않으면 NULL이 없는 창에 대 한 표시 이름입니다.
 
-[in] *dwStyle*  
-비트 조합 (OR) [창 스타일](styles-used-by-mfc.md#window-styles)합니다. WS_POPUP 옵션 올바른 스타일이 아닙니다.
+*dwStyle*<br/>
+[in] 비트 조합 (OR) [창 스타일](styles-used-by-mfc.md#window-styles)합니다. WS_POPUP 옵션 올바른 스타일이 아닙니다.
 
-[in] *rect*  
-부모 창의 왼쪽 위 모퉁이 기준으로 창의 위치와 크기입니다.
+*rect*<br/>
+[in] 부모 창의 왼쪽 위 모퉁이 기준으로 창의 위치와 크기입니다.
 
-[in] *pParentWnd*  
-부모 창에 대 한 포인터입니다.
+*pParentWnd*<br/>
+[in] 부모 창에 대 한 포인터입니다.
 
-[in] *nID*  
-ID는 창입니다.
+*nID*<br/>
+[in] ID는 창입니다.
 
-[in] *pContext*  
-에 대 한 포인터를 [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) 응용 프로그램에 대 한 문서 뷰 아키텍처를 사용자 지정 하는 데 사용 되는 구조입니다.
+*pContext*<br/>
+[in] 에 대 한 포인터를 [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) 응용 프로그램에 대 한 문서 뷰 아키텍처를 사용자 지정 하는 데 사용 되는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -5985,10 +5985,10 @@ afx_msg void OnAppCommand(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *pWnd*|에 대 한 포인터를 `CWnd` 사용자 명령 단추를 클릭 하거나 명령 키를 누르면 위치 창을 나타내는 개체입니다. 이 창에 메시지를 받는 창의 자식 창 수 있습니다.|
-|[in] *nCmd*|응용 프로그램 명령을 나타냅니다. 에서 가능한 값 목록은 아래에 있는 명령의 참조 하세요.는 *cmd* 섹션을 *lParam* 의 매개 변수 [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand).|
-|[in] *nDevice*|입력된 이벤트를 생성 하는 입력된 장치입니다. 가능한 값 목록을 아래에서 장치를 참조 하세요.는 *uDevice* 섹션을 *lParam* 의 매개 변수 [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand).|
-|[in] *nKey*|CTRL 키 또는 마우스 왼쪽된 단추와 같은 축소 된 모든 가상 키를 나타냅니다. 에서 가능한 값 목록은 아래에 키를 참조 하세요.를 *dwKeys* 섹션을 *lParam* 의 매개 변수 [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand)합니다. 자세한 내용은 참조에서 "메시지 매개 변수" 부제목 [마우스 입력에 대 한](/windows/desktop/inputdev/about-mouse-input)합니다.|
+|*pWnd*|[in] 에 대 한 포인터를 `CWnd` 사용자 명령 단추를 클릭 하거나 명령 키를 누르면 위치 창을 나타내는 개체입니다. 이 창에 메시지를 받는 창의 자식 창 수 있습니다.|
+|*nCmd*|[in] 응용 프로그램 명령을 나타냅니다. 에서 가능한 값 목록은 아래에 있는 명령의 참조 하세요.는 *cmd* 섹션을 *lParam* 의 매개 변수 [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand).|
+|*nDevice*|[in] 입력된 이벤트를 생성 하는 입력된 장치입니다. 가능한 값 목록을 아래에서 장치를 참조 하세요.는 *uDevice* 섹션을 *lParam* 의 매개 변수 [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand).|
+|*nKey*|[in] CTRL 키 또는 마우스 왼쪽된 단추와 같은 축소 된 모든 가상 키를 나타냅니다. 에서 가능한 값 목록은 아래에 키를 참조 하세요.를 *dwKeys* 섹션을 *lParam* 의 매개 변수 [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand)합니다. 자세한 내용은 참조에서 "메시지 매개 변수" 부제목 [마우스 입력에 대 한](/windows/desktop/inputdev/about-mouse-input)합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -6273,8 +6273,8 @@ afx_msg void OnColorizationColorChanged(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *dwColorizationColor*|새 색 지정에서 색을 지정합니다.<br /><br /> 색 형식은 16 진수 형식 0xAARRGGBB입니다부터 0xff까지 0x00에서 범위 각 네 가지 구성 요소는 위치입니다. AA 구성 요소는 알파 값, RR은 빨강, GG은 녹색이 고 및 BB는 파란색입니다.|
-|[in] *bOpacity*|TRUE 이면 불투명도;를 사용 하 여 새 색이 배경색과 혼합 됩니다 없는 경우 FALSE입니다.|
+|*dwColorizationColor*|[in] 새 색 지정에서 색을 지정합니다.<br /><br /> 색 형식은 16 진수 형식 0xAARRGGBB입니다부터 0xff까지 0x00에서 범위 각 네 가지 구성 요소는 위치입니다. AA 구성 요소는 알파 값, RR은 빨강, GG은 녹색이 고 및 BB는 파란색입니다.|
+|*bOpacity*|[in] TRUE 이면 불투명도;를 사용 하 여 새 색이 배경색과 혼합 됩니다 없는 경우 FALSE입니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -7127,9 +7127,9 @@ afx_msg void OnHotKey(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nHotKeyId*|메시지를 생성 하는 바로 가기 키에 대 한 식별자입니다. 메시지 시스템에 정의 된 바로 가기 키로 생성 된 경우이 매개 변수는 다음 값 중 하나로 설정 됩니다.<br /><br /> -IDHOT_SNAPDESKTOP-스냅인 바탕 화면 바로 가기 키를 눌렀습니다.<br />-IDHOT_SNAPWINDOW-스냅인 창 바로 가기 키를 눌렀습니다.|
-|[in] *nKey1*|키에서 지정한 키와 함께에서 눌렀는지를 나타내는 플래그의 비트 조합 (OR)는 *nKey2* 매개 변수입니다. 가능한 값은 다음과 같습니다.<br /><br /> -MOD_ALT-ALT 키 중 하나 유지 합니다.<br />-MOD_CONTROL-하거나 CTRL 키를 누르고 되었습니다.<br />-MOD_SHIFT-하거나 SHIFT 키를 누르고 되었습니다.<br />-MOD_WIN-하거나 WINDOWS 키를 누르고 되었습니다. 이러한 키는 Microsoft Windows 로고를 사용 하 여 레이블이 지정 됩니다.|
-|[in] *nKey2*|바로 가기 키의 가상 키 코드입니다.|
+|*nHotKeyId*|[in] 메시지를 생성 하는 바로 가기 키에 대 한 식별자입니다. 메시지 시스템에 정의 된 바로 가기 키로 생성 된 경우이 매개 변수는 다음 값 중 하나로 설정 됩니다.<br /><br /> -IDHOT_SNAPDESKTOP-스냅인 바탕 화면 바로 가기 키를 눌렀습니다.<br />-IDHOT_SNAPWINDOW-스냅인 창 바로 가기 키를 눌렀습니다.|
+|*nKey1*|[in] 키에서 지정한 키와 함께에서 눌렀는지를 나타내는 플래그의 비트 조합 (OR)는 *nKey2* 매개 변수입니다. 가능한 값은 다음과 같습니다.<br /><br /> -MOD_ALT-ALT 키 중 하나 유지 합니다.<br />-MOD_CONTROL-하거나 CTRL 키를 누르고 되었습니다.<br />-MOD_SHIFT-하거나 SHIFT 키를 누르고 되었습니다.<br />-MOD_WIN-하거나 WINDOWS 키를 누르고 되었습니다. 이러한 키는 Microsoft Windows 로고를 사용 하 여 레이블이 지정 됩니다.|
+|*nKey2*|[in] 바로 가기 키의 가상 키 코드입니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -7321,7 +7321,7 @@ afx_msg void OnInputDeviceChange(unsigned short uFlag);
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *uFlag*|이 플래그는 다음 값을 포함할 수 있습니다.<br /><br /> -GIDC_ARRIVAL-새 장치 시스템에 추가 되었습니다.<br />장치-GIDC_REMOVAL-시스템에서 제거 되었습니다.|
+|*uFlag*|[in] 이 플래그는 다음 값을 포함할 수 있습니다.<br /><br /> -GIDC_ARRIVAL-새 장치 시스템에 추가 되었습니다.<br />장치-GIDC_REMOVAL-시스템에서 제거 되었습니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -7344,8 +7344,8 @@ afx_msg void OnInputLangChange(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nCharSet*|새 로캘의 문자 집합입니다. 자세한 내용은 참조는 *lfCharSet* 의 매개 변수를 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 구조입니다.|
-|[in] *nLocaleId*|입력된 로캘 식별자입니다. 자세한 내용은 [문자열과 언어 식별자 상수](/windows/desktop/Intl/language-identifier-constants-and-strings)합니다.|
+|*nCharSet*|[in] 새 로캘의 문자 집합입니다. 자세한 내용은 참조는 *lfCharSet* 의 매개 변수를 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 구조입니다.|
+|*nLocaleId*|[in] 입력된 로캘 식별자입니다. 자세한 내용은 [문자열과 언어 식별자 상수](/windows/desktop/Intl/language-identifier-constants-and-strings)합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -7368,8 +7368,8 @@ afx_msg void OnInputLangChangeRequest(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nFlags*|새 로캘을 로캘에서 설치 목록에서 이전 또는 다음 로캘을에서 선택 된 또는 시스템 문자 집합을 사용 하 여 새 입력된 로캘을 키보드 레이아웃을 사용할 수 있음을 나타내는 플래그의 비트 (OR) 조합입니다.<br /><br /> 가능한 값은 INPUTLANGCHANGE_BACKWARD, INPUTLANGCHANGE_FORWARD, 및 INPUTLANGCHANGE_SYSCHARSET입니다.|
-|[in] *nLocaleId*|입력된 로캘 식별자입니다. 자세한 내용은 [문자열과 언어 식별자 상수](/windows/desktop/Intl/language-identifier-constants-and-strings)합니다.|
+|*nFlags*|[in] 새 로캘을 로캘에서 설치 목록에서 이전 또는 다음 로캘을에서 선택 된 또는 시스템 문자 집합을 사용 하 여 새 입력된 로캘을 키보드 레이아웃을 사용할 수 있음을 나타내는 플래그의 비트 (OR) 조합입니다.<br /><br /> 가능한 값은 INPUTLANGCHANGE_BACKWARD, INPUTLANGCHANGE_FORWARD, 및 INPUTLANGCHANGE_SYSCHARSET입니다.|
+|*nLocaleId*|[in] 입력된 로캘 식별자입니다. 자세한 내용은 [문자열과 언어 식별자 상수](/windows/desktop/Intl/language-identifier-constants-and-strings)합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -7800,8 +7800,8 @@ afx_msg UINT OnMenuDrag(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nPos*|끌기 작업이 시작 될 때 메뉴 항목의 인덱스 위치입니다.|
-|[in] *pMenu*|에 대 한 포인터를 [CMenu](../../mfc/reference/cmenu-class.md) 메뉴 항목을 포함 하는 개체입니다.|
+|*nPos*|[in] 끌기 작업이 시작 될 때 메뉴 항목의 인덱스 위치입니다.|
+|*pMenu*|[in] 에 대 한 포인터를 [CMenu](../../mfc/reference/cmenu-class.md) 메뉴 항목을 포함 하는 개체입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -7829,7 +7829,7 @@ afx_msg UINT OnMenuGetObject(MENUGETOBJECTINFO* pMenuGetObjectInfo);
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *pMenu*|에 대 한 포인터를 [MENUGETOBJECTINFO](/windows/desktop/api/winuser/ns-winuser-tagmenugetobjectinfo) 끌어서 놓기 메뉴 마우스 커서에 대 한 정보를 포함 하는 구조 켜져 있습니다.|
+|*pMenu*|[in] 에 대 한 포인터를 [MENUGETOBJECTINFO](/windows/desktop/api/winuser/ns-winuser-tagmenugetobjectinfo) 끌어서 놓기 메뉴 마우스 커서에 대 한 정보를 포함 하는 구조 켜져 있습니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -7859,8 +7859,8 @@ afx_msg void OnMenuRButtonUp(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nPos*|마우스 오른쪽 단추를 놓았음을 때 메뉴 항목의 인덱스 위치입니다.|
-|[in] *pMenu*|에 대 한 포인터를 [CMenu](../../mfc/reference/cmenu-class.md) 메뉴 항목을 포함 하는 개체입니다.|
+|*nPos*|[in] 마우스 오른쪽 단추를 놓았음을 때 메뉴 항목의 인덱스 위치입니다.|
+|*pMenu*|[in] 에 대 한 포인터를 [CMenu](../../mfc/reference/cmenu-class.md) 메뉴 항목을 포함 하는 개체입니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -7977,8 +7977,8 @@ afx_msg void OnMouseHover(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nFlags*|한정자 키를 누르면 여부를 나타내는 플래그의 비트 조합 (OR)입니다. 예를 들어 MK_CONTROL 플래그 CTRL 키를 눌렀음을 나타냅니다.|
-|[in] *지점*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
+|*nFlags*|[in] 한정자 키를 누르면 여부를 나타내는 플래그의 비트 조합 (OR)입니다. 예를 들어 MK_CONTROL 플래그 CTRL 키를 눌렀음을 나타냅니다.|
+|*지점*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -8014,9 +8014,9 @@ afx_msg void OnMouseHWheel(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nFlags*|한정자 키를 누르면 여부를 나타내는 플래그의 비트 조합 (OR)입니다. 예를 들어 MK_CONTROL 플래그 CTRL 키를 눌렀음을 나타냅니다.<br /><br /> 플래그 목록은 참조에서 "메시지 매개 변수" 부제목 [마우스 입력에 대 한](/windows/desktop/inputdev/about-mouse-input)합니다.|
-|[in] *zDelta*|120 인 배수로 WHEEL_DELTA의 사업부에 표현 된 휠이 회전 되는 거리를 나타냅니다. 양수 값 이면 휠 오른쪽으로 회전 된는 음수 값 휠을 왼쪽 회전을 나타냅니다.|
-|[in] *(태평양 표준시)*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
+|*nFlags*|[in] 한정자 키를 누르면 여부를 나타내는 플래그의 비트 조합 (OR)입니다. 예를 들어 MK_CONTROL 플래그 CTRL 키를 눌렀음을 나타냅니다.<br /><br /> 플래그 목록은 참조에서 "메시지 매개 변수" 부제목 [마우스 입력에 대 한](/windows/desktop/inputdev/about-mouse-input)합니다.|
+|*zDelta*|[in] 120 인 배수로 WHEEL_DELTA의 사업부에 표현 된 휠이 회전 되는 거리를 나타냅니다. 양수 값 이면 휠 오른쪽으로 회전 된는 음수 값 휠을 왼쪽 회전을 나타냅니다.|
+|*(태평양 표준시)*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -8441,8 +8441,8 @@ afx_msg void OnNcMouseHover(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nHitTest*|적중 테스트 값을 반환 합니다 [CWnd::DefWindowProc](#defwindowproc) 처리의 결과로 함수는 [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) 메시지입니다.|
-|[in] *지점*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 화면의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
+|*nHitTest*|[in] 적중 테스트 값을 반환 합니다 [CWnd::DefWindowProc](#defwindowproc) 처리의 결과로 함수는 [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) 메시지입니다.|
+|*지점*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 화면의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -8586,7 +8586,7 @@ afx_msg void OnNcRenderingChanged(BOOL bIsRendering);
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *bIsRendering*|창의 비클라이언트 영역에 대 한 바탕 화면 창 관리자 (DWM) 렌더링을 사용 하는 경우 TRUE 렌더링 하지 않으면 FALSE입니다.|
+|*bIsRendering*|[in] 창의 비클라이언트 영역에 대 한 바탕 화면 창 관리자 (DWM) 렌더링을 사용 하는 경우 TRUE 렌더링 하지 않으면 FALSE입니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -8610,9 +8610,9 @@ void OnNcXButtonDblClk(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nHitTest*|적중 테스트 값을 반환 합니다 [CWnd::DefWindowProc](#defwindowproc) 처리의 결과로 함수는 [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) 메시지입니다.|
-|[in] *n 단추*|첫 번째 Microsoft Intellimouse X 단추를 두 번 경우 XBUTTON1 또는 xbutton2를 놓으면 값 경우 두 번째 X 단추를 두 번 클릭 합니다.|
-|[in] *지점*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
+|*nHitTest*|[in] 적중 테스트 값을 반환 합니다 [CWnd::DefWindowProc](#defwindowproc) 처리의 결과로 함수는 [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) 메시지입니다.|
+|*n 단추*|[in] 첫 번째 Microsoft Intellimouse X 단추를 두 번 경우 XBUTTON1 또는 xbutton2를 놓으면 값 경우 두 번째 X 단추를 두 번 클릭 합니다.|
+|*지점*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -8636,9 +8636,9 @@ afx_msg void OnNcXButtonDown(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nHitTest*|적중 테스트 값을 반환 합니다 [CWnd::DefWindowProc](#defwindowproc) 처리의 결과로 함수는 [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) 메시지입니다.|
-|[in] *n 단추*|값이 첫 번째 X 마우스 단추를 누르는 경우 XBUTTON1 또는 xbutton2를 놓으면 경우 두 번째 X 단추를 누르면 됩니다.|
-|[in] *지점*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 화면의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
+|*nHitTest*|[in] 적중 테스트 값을 반환 합니다 [CWnd::DefWindowProc](#defwindowproc) 처리의 결과로 함수는 [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) 메시지입니다.|
+|*n 단추*|[in] 값이 첫 번째 X 마우스 단추를 누르는 경우 XBUTTON1 또는 xbutton2를 놓으면 경우 두 번째 X 단추를 누르면 됩니다.|
+|*지점*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 화면의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -8662,9 +8662,9 @@ afx_msg void OnNcXButtonUp(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nHitTest*|적중 테스트 값을 반환 합니다 [CWnd::DefWindowProc](#defwindowproc) 처리의 결과로 함수는 [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) 메시지입니다.|
-|[in] *n 단추*|값이 첫 번째 X 마우스 단추를 놓을 경우 XBUTTON1 또는 xbutton2를 놓으면 경우 두 번째 X 단추를 놓으면 됩니다.|
-|[in] *지점*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 화면의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
+|*nHitTest*|[in] 적중 테스트 값을 반환 합니다 [CWnd::DefWindowProc](#defwindowproc) 처리의 결과로 함수는 [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) 메시지입니다.|
+|*n 단추*|[in] 값이 첫 번째 X 마우스 단추를 놓을 경우 XBUTTON1 또는 xbutton2를 놓으면 경우 두 번째 X 단추를 놓으면 됩니다.|
+|*지점*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 화면의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -8687,8 +8687,8 @@ afx_msg void OnNextMenu(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nKey*|한정자 키를 누르면 여부를 나타내는 플래그의 비트 조합 (OR)입니다. 예를 들어 MK_CONTROL 플래그 CTRL 키를 눌렀음을 나타냅니다.<br /><br /> 플래그 목록은 참조에서 "메시지 매개 변수" 부제목 [마우스 입력에 대 한](/windows/desktop/inputdev/about-mouse-input)합니다.|
-|[in] *lpMdiNextMenu*|에 대 한 포인터를 [MDINEXTMENU](/windows/desktop/api/winuser/ns-winuser-tagmdinextmenu) 활성화할 메뉴에 대 한 정보를 포함 하는 구조입니다.|
+|*nKey*|[in] 한정자 키를 누르면 여부를 나타내는 플래그의 비트 조합 (OR)입니다. 예를 들어 MK_CONTROL 플래그 CTRL 키를 눌렀음을 나타냅니다.<br /><br /> 플래그 목록은 참조에서 "메시지 매개 변수" 부제목 [마우스 입력에 대 한](/windows/desktop/inputdev/about-mouse-input)합니다.|
+|*lpMdiNextMenu*|[in] 에 대 한 포인터를 [MDINEXTMENU](/windows/desktop/api/winuser/ns-winuser-tagmdinextmenu) 활성화할 메뉴에 대 한 정보를 포함 하는 구조입니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -8745,8 +8745,8 @@ afx_msg UINT OnNotifyFormat(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *pWnd*|에 대 한 포인터를 `CWnd` 전송 창을 나타내는 개체를 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) 메시지입니다.<br /><br /> 경우이 매개 변수는 컨트롤에 대 한 포인터를 *된 명령* 매개 변수는 NF_QUERY, 또는 컨트롤의 부모 창에 대 한 포인터 경우 *된 명령* NF_REQUERY 됩니다.|
-|[in] *된 명령*|WM_NOTIFY 메시지를 전문으로 하는 명령 값입니다. 가능한 값은 다음과 같습니다.<br /><br /> -NF_QUERY-<br />     메시지는 WM_NOTIFY 메시지의 ANSI 또는 유니코드 구조를 사용할지 여부를 결정 하는 쿼리가입니다. 이 메시지는 컨트롤의 및 NF_REQUERY 형식의이 메시지에 대 한 응답에서을 만드는 동안 해당 부모 창으로 컨트롤에서 전송 됩니다.<br />-NF_REQUERY-<br />     메시지를 해당 부모 창 NF_QUERY 형식의이 메시지를 보내도록 컨트롤에 대 한 요청입니다. 이 요청 부모 창에서 전송 되 고 requery WM_NOTIFY 메시지에서 사용 하는 구조체의 형식에 대 한 부모 컨트롤을 요청 합니다. 경우는 *된 명령* 매개 변수는 NF_REQUERY, 반환 값은 다시 쿼리 작업의 결과입니다.|
+|*pWnd*|[in] 에 대 한 포인터를 `CWnd` 전송 창을 나타내는 개체를 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) 메시지입니다.<br /><br /> 경우이 매개 변수는 컨트롤에 대 한 포인터를 *된 명령* 매개 변수는 NF_QUERY, 또는 컨트롤의 부모 창에 대 한 포인터 경우 *된 명령* NF_REQUERY 됩니다.|
+|*된 명령*|[in] WM_NOTIFY 메시지를 전문으로 하는 명령 값입니다. 가능한 값은 다음과 같습니다.<br /><br /> -NF_QUERY-<br />     메시지는 WM_NOTIFY 메시지의 ANSI 또는 유니코드 구조를 사용할지 여부를 결정 하는 쿼리가입니다. 이 메시지는 컨트롤의 및 NF_REQUERY 형식의이 메시지에 대 한 응답에서을 만드는 동안 해당 부모 창으로 컨트롤에서 전송 됩니다.<br />-NF_REQUERY-<br />     메시지를 해당 부모 창 NF_QUERY 형식의이 메시지를 보내도록 컨트롤에 대 한 요청입니다. 이 요청 부모 창에서 전송 되 고 requery WM_NOTIFY 메시지에서 사용 하는 구조체의 형식에 대 한 부모 컨트롤을 요청 합니다. 경우는 *된 명령* 매개 변수는 NF_REQUERY, 반환 값은 다시 쿼리 작업의 결과입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -8910,8 +8910,8 @@ afx_msg UINT OnPowerBroadcast(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nPowerEvent*|전원 관리 이벤트입니다.|
-|[in] *nEventData*|이벤트 관련 데이터입니다.|
+|*nPowerEvent*|[in] 전원 관리 이벤트입니다.|
+|*nEventData*|[in] 이벤트 관련 데이터입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -9022,8 +9022,8 @@ afx_msg void OnRawInput(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nInputCode*|입력 응용 프로그램이 전경에 여부는 동안 발생 했는지 여부를 나타내는 입력된 코드입니다. 두 경우 모두 응용 프로그램 호출 해야 합니다 [CWnd::DefWindowProc](#defwindowproc) 시스템 정리 작업을 수행할 수 있도록 합니다.<br /><br /> 이 매개 변수는 다음 값 중 하나일 수 있습니다.<br /><br /> -RIM_INPUT-입력 응용 프로그램이 전경에 하는 동안에 발생 합니다.<br />-RIM_INPUTSINK-입력 응용 프로그램이 포그라운드에서 없습니다 하는 동안에 발생 합니다.|
-|[in] *hRawInput*|에 대 한 핸들을 [RAWINPUT](https://msdn.microsoft.com/library/windows/desktop/ms645562) 장치의 원시 입력을 포함 하는 구조입니다.|
+|*nInputCode*|[in] 입력 응용 프로그램이 전경에 여부는 동안 발생 했는지 여부를 나타내는 입력된 코드입니다. 두 경우 모두 응용 프로그램 호출 해야 합니다 [CWnd::DefWindowProc](#defwindowproc) 시스템 정리 작업을 수행할 수 있도록 합니다.<br /><br /> 이 매개 변수는 다음 값 중 하나일 수 있습니다.<br /><br /> -RIM_INPUT-입력 응용 프로그램이 전경에 하는 동안에 발생 합니다.<br />-RIM_INPUTSINK-입력 응용 프로그램이 포그라운드에서 없습니다 하는 동안에 발생 합니다.|
+|*hRawInput*|[in] 에 대 한 핸들을 [RAWINPUT](https://msdn.microsoft.com/library/windows/desktop/ms645562) 장치의 원시 입력을 포함 하는 구조입니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -9208,8 +9208,8 @@ afx_msg void OnSessionChange(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nSessionState*|상태 코드를 세션 상태 변경 내용을 설명 합니다.|
-|[in] *nId*|세션 식별자입니다.|
+|*nSessionState*|[in] 상태 코드를 세션 상태 변경 내용을 설명 합니다.|
+|*nId*|[in] 세션 식별자입니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -9973,9 +9973,9 @@ afx_msg void OnUniChar(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nChar*|누른된 키의 문자 코드를 지정합니다.|
-|[in] *nRepCnt*|현재 메시지의 반복 횟수를 지정합니다. 값을 사용 하면 키 입력은 autorepeated 사용자 키를 누른 횟수입니다. 했으면 하는 동안 충분 한 경우 여러 메시지가 전송 됩니다. 그러나 반복 횟수 누적 아닙니다.|
-|[in] *nFlags*|다음 표에 나와 있는 것 처럼 검색 코드, 확장 된 키, 상황에 맞는 코드, 이전 키 상태 및 전환 상태를 지정 하는 플래그:<br /><br /> **0-7:** 검색 코드를 지정 합니다. 값을 원래 장비 제조업체 (OEM)에 따라 달라 집니다.<br /><br /> **8:** 오른쪽 ALT CTRL 키 등 향상된 된 101 또는 102 키 키보드에 표시 되는 확장 된 키를 지정 합니다. 플래그는 1 키가 확장된 된 키입니다. 그렇지 않으면 0입니다.<br /><br /> **9-12:** Windows에서 내부적으로 사용 합니다.<br /><br /> **13:** 상황에 맞는 코드를 지정 합니다. 키가 눌러져; 동안 ALT 키를 누르고 있으면 플래그는 1 그렇지 않으면 값은 0입니다.<br /><br /> **14:** 이전 키 상태를 지정 합니다. 등록 키가 있으면 플래그가 메시지를 보내기 전에 키가 눌러져 있으면 1 또는 0입니다.<br /><br /> **15:** 전환 상태를 지정 합니다. 키를 누른 경우 플래그는 키를 해제 하 고, 1 또는 0입니다.|
+|*NChar*|[in] 누른된 키의 문자 코드를 지정합니다.|
+|*nRepCnt*|[in] 현재 메시지의 반복 횟수를 지정합니다. 값을 사용 하면 키 입력은 autorepeated 사용자 키를 누른 횟수입니다. 했으면 하는 동안 충분 한 경우 여러 메시지가 전송 됩니다. 그러나 반복 횟수 누적 아닙니다.|
+|*nFlags*|[in] 다음 표에 나와 있는 것 처럼 검색 코드, 확장 된 키, 상황에 맞는 코드, 이전 키 상태 및 전환 상태를 지정 하는 플래그:<br /><br /> **0-7:** 검색 코드를 지정 합니다. 값을 원래 장비 제조업체 (OEM)에 따라 달라 집니다.<br /><br /> **8:** 오른쪽 ALT CTRL 키 등 향상된 된 101 또는 102 키 키보드에 표시 되는 확장 된 키를 지정 합니다. 플래그는 1 키가 확장된 된 키입니다. 그렇지 않으면 0입니다.<br /><br /> **9-12:** Windows에서 내부적으로 사용 합니다.<br /><br /> **13:** 상황에 맞는 코드를 지정 합니다. 키가 눌러져; 동안 ALT 키를 누르고 있으면 플래그는 1 그렇지 않으면 값은 0입니다.<br /><br /> **14:** 이전 키 상태를 지정 합니다. 등록 키가 있으면 플래그가 메시지를 보내기 전에 키가 눌러져 있으면 1 또는 0입니다.<br /><br /> **15:** 전환 상태를 지정 합니다. 키를 누른 경우 플래그는 키를 해제 하 고, 1 또는 0입니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -9998,8 +9998,8 @@ afx_msg void OnUnInitMenuPopup(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *pMenu*|에 대 한 포인터를 [CMenu](../../mfc/reference/cmenu-class.md) 메뉴 또는 하위 메뉴를 나타내는 개체입니다.|
-|[in] *nFlags*|메뉴가 제거 되었습니다. 현재 창 메뉴 MF_SYSMENU 수만 있습니다.|
+|*pMenu*|[in] 에 대 한 포인터를 [CMenu](../../mfc/reference/cmenu-class.md) 메뉴 또는 하위 메뉴를 나타내는 개체입니다.|
+|*nFlags*|[in] 메뉴가 제거 되었습니다. 현재 창 메뉴 MF_SYSMENU 수만 있습니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -10196,7 +10196,7 @@ afx_msg void OnWindowMaximizedChanged(BOOL bIsMaximized);
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *bIsMaximized*|현재 창을 최대화 하 고 없으면 FALSE 이면 TRUE입니다.|
+|*bIsMaximized*|[in] 현재 창을 최대화 하 고 없으면 FALSE 이면 TRUE입니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -10324,9 +10324,9 @@ afx_msg void OnXButtonDblClk(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nFlags*|한정자 키를 누르면 여부를 나타내는 플래그의 비트 조합 (OR)입니다. 예를 들어 MK_CONTROL 플래그 CTRL 키를 눌렀음을 나타냅니다.|
-|[in] *n 단추*|첫 번째 Microsoft Intellimouse X 단추를 두 번 경우 XBUTTON1 또는 xbutton2를 놓으면 값 경우 두 번째 X 단추를 두 번 클릭 합니다.|
-|[in] *지점*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
+|*nFlags*|[in] 한정자 키를 누르면 여부를 나타내는 플래그의 비트 조합 (OR)입니다. 예를 들어 MK_CONTROL 플래그 CTRL 키를 눌렀음을 나타냅니다.|
+|*n 단추*|[in] 첫 번째 Microsoft Intellimouse X 단추를 두 번 경우 XBUTTON1 또는 xbutton2를 놓으면 값 경우 두 번째 X 단추를 두 번 클릭 합니다.|
+|*지점*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -10362,9 +10362,9 @@ afx_msg void OnXButtonDown(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nFlags*|한정자 키를 누르면 여부를 나타내는 플래그의 비트 조합 (OR)입니다. 예를 들어 MK_CONTROL 플래그 CTRL 키를 눌렀음을 나타냅니다.|
-|[in] *n 단추*|값이 첫 번째 Microsoft Intellimouse X 단추를 클릭 했을 경우 XBUTTON1 또는 xbutton2를 놓으면 경우 두 번째 X 단추를 클릭 합니다.|
-|[in] *지점*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
+|*nFlags*|[in] 한정자 키를 누르면 여부를 나타내는 플래그의 비트 조합 (OR)입니다. 예를 들어 MK_CONTROL 플래그 CTRL 키를 눌렀음을 나타냅니다.|
+|*n 단추*|[in] 값이 첫 번째 Microsoft Intellimouse X 단추를 클릭 했을 경우 XBUTTON1 또는 xbutton2를 놓으면 경우 두 번째 X 단추를 클릭 합니다.|
+|*지점*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -10400,9 +10400,9 @@ afx_msg void OnXButtonUp(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *nFlags*|한정자 키를 누르면 여부를 나타내는 플래그의 비트 조합 (OR)입니다. 예를 들어 MK_CONTROL 플래그 CTRL 키를 눌렀음을 나타냅니다.|
-|[in] *n 단추*|첫 번째 Microsoft Intellimouse X 단추를 두 번 클릭할 경우 XBUTTON1 또는 xbutton2를 놓으면 값 경우 두 번째 X 단추를 두 번 클릭 합니다.|
-|[in] *지점*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
+|*nFlags*|[in] 한정자 키를 누르면 여부를 나타내는 플래그의 비트 조합 (OR)입니다. 예를 들어 MK_CONTROL 플래그 CTRL 키를 눌렀음을 나타냅니다.|
+|*n 단추*|[in] 첫 번째 Microsoft Intellimouse X 단추를 두 번 클릭할 경우 XBUTTON1 또는 xbutton2를 놓으면 값 경우 두 번째 X 단추를 두 번 클릭 합니다.|
+|*지점*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
 
 ### <a name="remarks"></a>설명
 

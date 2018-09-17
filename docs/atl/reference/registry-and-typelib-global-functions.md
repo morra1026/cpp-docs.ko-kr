@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84e8a7e2cd3d05795e35b97069491f3fdc57c3f1
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c01adc1893d73840ecbec7a2e2251c8e55beb582
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753268"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701729"
 ---
 # <a name="registry-and-typelib-global-functions"></a>레지스트리 및 TypeLib 전역 함수
 
@@ -78,8 +78,8 @@ ATLINLINE ATLAPI AtlGetPerUserRegistration(bool* pEnabled);
 
 ### <a name="parameters"></a>매개 변수
 
-[out] *pEnabled*  
-TRUE 이면 레지스트리 정보를 이동 합니다 **HKCU** 노드 False로 기본 노드에 레지스트리 정보를 기록 하는 응용 프로그램을 나타냅니다. 기본 노드인 **HKEY_CLASSES_ROOT** (**HKCR**).
+*pEnabled*<br/>
+[out] TRUE 이면 레지스트리 정보를 이동 합니다 **HKCU** 노드 False로 기본 노드에 레지스트리 정보를 기록 하는 응용 프로그램을 나타냅니다. 기본 노드인 **HKEY_CLASSES_ROOT** (**HKCR**).
 
 ### <a name="return-value"></a>반환 값
 
@@ -309,8 +309,8 @@ ATLINLINE ATLAPI AtlSetPerUserRegistration(bool bEnable);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *bEnable*  
-TRUE 이면 레지스트리 정보를 이동 합니다 **HKCU** 노드 False로 기본 노드에 레지스트리 정보를 기록 하는 응용 프로그램을 나타냅니다. 기본 노드인 **HKEY_CLASSES_ROOT** (**HKCR**).
+*bEnable*  
+[in] TRUE 이면 레지스트리 정보를 이동 합니다 **HKCU** 노드 False로 기본 노드에 레지스트리 정보를 기록 하는 응용 프로그램을 나타냅니다. 기본 노드인 **HKEY_CLASSES_ROOT** (**HKCR**).
 
 ### <a name="return-value"></a>반환 값
 

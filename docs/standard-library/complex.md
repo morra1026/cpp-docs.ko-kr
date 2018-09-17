@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e6a8364c6f0491344eef7faf381d701944f66d9
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 84f94e4e7a3486f036af47f0444d85d0f2fe4446
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965671"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726702"
 ---
 # <a name="ltcomplexgt"></a>&lt;complex&gt;
 
@@ -54,11 +54,7 @@ ms.locfileid: "38965671"
 
 복소수를 나타내는 방법으로 *z* = (*는*를 *b*) 형태로 *z* = *를*  +  *bi*, 여기서 *합니까*<sup>2</sup> =-1, 규칙에 실수 집합의 대 수는 복소수 집합 및 해당 구성 요소에 적용할 수 있습니다. 예를 들어:
 
-   (1 + 2*i*) \* (2 + 3*i*)  
-   = 1 \* (2 + 3*i*) + 2*i* \* (2 + 3*i*)  
-   = (2 + 3*i*) + (4*i* + 6*i*<sup>2</sup>)  
-   = (2-6) + (3 + 4)*있나요*  
-   = -4 + 7*i*
+   (1 + 2*있습니까*) \* (2 + 3*합니까*) = 1 \* (2 + 3*있나요*) + 2*하나요* \* (2 + 3*i*) = (2 + 3*있나요*) + (4*있나요* + 6*합니까*<sup>2</sup>) (2-6) + (3 + 4) =*하나요* =-4 + 7*있나요*
 
 복소수 시스템은 필드이지만 순서가 지정된 필드가 아닙니다. 순서가 없다는 복소수의 실수는 복소수를 같지를 적용할 수 없습니다 있도록 실수 및 해당 하위 집합의 필드에 대 한 없기 때문에 있습니다.
 

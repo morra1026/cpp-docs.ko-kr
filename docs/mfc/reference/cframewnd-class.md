@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 991b8c55c02272613ce329be9a053ff0110f1926
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 817c828c56fe2e95756e517c3d930d365714ad99
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764877"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701716"
 ---
 # <a name="cframewnd-class"></a>CFrameWnd 클래스
 창 관리를 위한 멤버와 함께 겹쳐진 Windows SDI(단일 문서 인터페이스) 또는 팝업 프레임 창의 기능을 제공합니다.  
@@ -986,7 +986,7 @@ virtual BOOL SetMenuBarState(DWORD nState);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *nState*|메뉴의 표시 여부를 지정 합니다. 합니다 *nState* 매개 변수에 다음 값을 사용할 수 있습니다.<br /><br /> -AFX_MBS_VISIBLE (0x01)-숨겨져 있지만 표시 된 경우 효과가 없습니다 메뉴를 표시 합니다.<br />-AFX_MBS_HIDDEN (0x02)-표시 하지만 숨긴 경우 효과가 없습니다 경우 메뉴가 숨겨집니다.|  
+|*nState*|[in] 메뉴의 표시 여부를 지정 합니다. 합니다 *nState* 매개 변수에 다음 값을 사용할 수 있습니다.<br /><br /> -AFX_MBS_VISIBLE (0x01)-숨겨져 있지만 표시 된 경우 효과가 없습니다 메뉴를 표시 합니다.<br />-AFX_MBS_HIDDEN (0x02)-표시 하지만 숨긴 경우 효과가 없습니다 경우 메뉴가 숨겨집니다.|  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면이 메서드는 성공적으로 메뉴 상태 변경 그렇지 않으면 FALSE입니다.  
@@ -1005,7 +1005,7 @@ virtual void SetMenuBarVisibility(DWORD nStyle);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *nStyle*|여부를 메뉴 기본적으로 숨겨져 있는 경우 또는 표시 이며 지정 포커스를가지고 있습니다. 합니다 *nStyle* 매개 변수에 다음 값을 사용할 수 있습니다.<br /><br /> -AFX_MBV_KEEPVISIBLE (0X01)-<br />     메뉴 모든 시간에 표시 되 고 기본적으로는 포커스가 없습니다.<br />-AFX_MBV_DISPLAYONFOCUS (0X02)-<br />     메뉴는 기본적으로 숨겨져 있습니다. 메뉴에 숨겨진 경우 메뉴 표시에 포커스를 ALT 키를 누릅니다. 메뉴 표시 되지 않으면 메뉴를 숨기려면 alt 키 또는 ESC 키를 누릅니다.<br />-AFX_MBV_ DISPLAYONFOCUS (0x02) &#124; AFX_MBV_DISPLAYONF10 (0x04)<br />     (비트 조합 (OR))-메뉴는 기본적으로 숨겨져 있습니다. 메뉴에 숨겨진 경우 메뉴 표시에 포커스를 F10 키를 누릅니다. 메뉴 표시 되지 않으면 메뉴 켜거나 포커스를 전환 하려면 F10 키를 누릅니다. 메뉴 숨기려면 alt 키 또는 ESC 키를 누를 때까지 표시 됩니다.|  
+|*nStyle*|[in] 여부를 메뉴 기본적으로 숨겨져 있는 경우 또는 표시 이며 지정 포커스를가지고 있습니다. 합니다 *nStyle* 매개 변수에 다음 값을 사용할 수 있습니다.<br /><br /> -AFX_MBV_KEEPVISIBLE (0X01)-<br />     메뉴 모든 시간에 표시 되 고 기본적으로는 포커스가 없습니다.<br />-AFX_MBV_DISPLAYONFOCUS (0X02)-<br />     메뉴는 기본적으로 숨겨져 있습니다. 메뉴에 숨겨진 경우 메뉴 표시에 포커스를 ALT 키를 누릅니다. 메뉴 표시 되지 않으면 메뉴를 숨기려면 alt 키 또는 ESC 키를 누릅니다.<br />-AFX_MBV_ DISPLAYONFOCUS (0x02) &#124; AFX_MBV_DISPLAYONF10 (0x04)<br />     (비트 조합 (OR))-메뉴는 기본적으로 숨겨져 있습니다. 메뉴에 숨겨진 경우 메뉴 표시에 포커스를 F10 키를 누릅니다. 메뉴 표시 되지 않으면 메뉴 켜거나 포커스를 전환 하려면 F10 키를 누릅니다. 메뉴 숨기려면 alt 키 또는 ESC 키를 누를 때까지 표시 됩니다.|  
   
 ### <a name="remarks"></a>설명  
  하는 경우의 값을 *nStyle* 디버그 모드와 발생 어설션 매개 변수가 올바르지 않으면이 메서드 [CInvalidArgException](../../mfc/reference/cinvalidargexception-class.md) 릴리스 모드에서. 그 외 런타임 오류 발생 시이 디버그 모드에서 어설션을 메서드와에서 파생 된 예외가 발생 합니다 [CException](../../mfc/reference/cexception-class.md) 클래스입니다.  

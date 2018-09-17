@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 824bb7059e13c76af0c2f739676d32afc04aa0c7
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 41bc9c9771622b1778abc5bf86a8ebb6e67d3fbd
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42572204"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716908"
 ---
 # <a name="main-program-startup"></a>main: 프로그램 시작
 이라는 특수 함수 **주** 모든 C 및 c + + 프로그램에 대 한 실행의 시작 지점입니다. 유니코드 프로그래밍 모델을 따르는 코드를 작성 하는, 하는 경우 사용할 수 있습니다 `wmain`의 와이드 문자 버전인 **주**합니다.  
@@ -63,7 +63,8 @@ int wmain(int argc, wchar_t *argv[], wchar_t *envp[]);
   
  또는 합니다 **주** 하 고 `wmain` 반환 하도록 함수를 선언할 수 있습니다 **void** (반환 값 없음). 선언 하는 경우 **주** 또는 `wmain` 반환 **void**를 사용 하 여 부모 프로세스나 운영 체제 종료 코드를 반환할 수 없습니다는 [반환](../cpp/return-statement-in-program-termination-cpp.md) 문입니다. 경우는 종료 코드를 반환할 **주** 또는 `wmain` 로 선언 됩니다 **void**를 사용 해야 합니다는 [종료](../cpp/exit-function.md) 함수입니다.  
   
-**Microsoft 전용 종료**  
+**Microsoft 전용 종료**
+
  `argc` 및 `argv`의 형식은 언어에서 정의됩니다. `argc`, `argv` 및 `envp`라는 이름이 일반적으로 사용되지만 컴파일러에서 필요하지는 않습니다. 자세한 내용 및 예제를 참조 하세요 [인수 정의](../cpp/argument-definitions.md)합니다.  
   
 ## <a name="see-also"></a>참고자료  

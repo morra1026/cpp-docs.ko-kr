@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28342c71602409f3d62023e6d7923d49ca63a96f
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 25116b0750016fdbb4ffd792d0b16efb6c6c1793
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766245"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711951"
 ---
 # <a name="options-atl-control-wizard"></a>옵션, ATL 컨트롤 마법사
 
@@ -31,10 +31,11 @@ ms.locfileid: "43766245"
 
 ## <a name="uielement-list"></a>UI 요소 목록
 
-**컨트롤 형식**  
+### <a name="control-type"></a>컨트롤 형식
+
 만들려는 컨트롤의 종류입니다.
 
-- **표준 컨트롤:는 ActiveX 컨트롤입니다.**
+- **표준 컨트롤**:는 ActiveX 컨트롤입니다.
 
 - **복합 컨트롤**:는 ActiveX 컨트롤 (대화 상자와 유사)를 포함할 수 있는 다른 ActiveX 컨트롤 또는 Windows 컨트롤입니다. 복합 컨트롤에 다음이 포함 됩니다.
 
@@ -54,10 +55,12 @@ ms.locfileid: "43766245"
 
      자세한 내용은 [DHTML 컨트롤 프로젝트의 요소 식별](../../atl/identifying-the-elements-of-the-dhtml-control-project.md)합니다.
 
-**최소 컨트롤**  
+### <a name="minimal-control"></a>최소 컨트롤
+
 대부분의 컨테이너에 반드시 필요한 인터페이스만 지원 합니다. 설정할 수 있습니다 **최소 컨트롤** 컨트롤 형식에 대 한 합니다: 최소 표준 컨트롤, 최소 복합 컨트롤 또는 최소 DHTML 컨트롤을 만들 수 있습니다.
 
-**집계**  
+### <a name="aggregation"></a>집계
+
 만들려는 컨트롤에 대 한 집계 지원을 추가 합니다. 자세한 내용은 [집계](../../atl/aggregation.md)합니다.
 
 - **예**: 집계할 수 있는 컨트롤을 만듭니다.
@@ -66,25 +69,28 @@ ms.locfileid: "43766245"
 
 - **만**: 집계를 통해 인스턴스화할 수 있는 컨트롤을 만듭니다.
 
-**스레딩 모델**  
+### <a name="threading-model"></a>스레딩 모델
+
 컨트롤에서 사용 되는 스레딩 모델을 지정 합니다.
 
 - **단일**: 컨트롤은 기본 COM 스레드에서만에서 실행 됩니다.
 
 - **아파트**: 모든 단일 스레드 아파트에서 컨트롤을 만들 수 있습니다. 기본값입니다.
 
-**Interface**  
+### <a name="interface"></a>인터페이스
+
 이 컨트롤에서 컨테이너에 노출 하는 인터페이스의 형식입니다.
 
 - **이중**: 속성 및 메서드를 통해 노출 하는 인터페이스를 만들고 `IDispatch` 의 VTBL를 통해 직접.
 
 - **사용자 지정**: VTBL 통해 직접 메서드를 노출 하는 인터페이스를 만듭니다.
 
-     선택 하는 경우 **사용자 지정**, 컨트롤을 지정할 수 있습니다 **Automation 호환**합니다. 선택 하는 경우 **호환 되는 Automation**, 마법사 추가 합니다 [oleautomation](../../windows/oleautomation.md) 인터페이스는 IDL 특성 oleaut32.dll에서 유니버설 마샬러가 인터페이스를 마샬링할 수 및 합니다. 참조 [마샬링 정보](/windows/desktop/com/marshaling-details) 자세한 내용은 Windows SDK에 있습니다.
+   선택 하는 경우 **사용자 지정**, 컨트롤을 지정할 수 있습니다 **Automation 호환**합니다. 선택 하는 경우 **호환 되는 Automation**, 마법사 추가 합니다 [oleautomation](../../windows/oleautomation.md) 인터페이스는 IDL 특성 oleaut32.dll에서 유니버설 마샬러가 인터페이스를 마샬링할 수 및 합니다. 참조 [마샬링 정보](/windows/desktop/com/marshaling-details) 자세한 내용은 Windows SDK에 있습니다.
 
-     또한 선택 하는 경우 **자동화 호환**, 컨트롤의 모든 메서드에 대 한 모든 매개 변수는 VARIANT 이어야 합니다. 호환입니다.
+   또한 선택 하는 경우 **자동화 호환**, 컨트롤의 모든 메서드에 대 한 모든 매개 변수는 VARIANT 이어야 합니다. 호환입니다.
 
-**지원**  
+### <a name="support"></a>Support(지원)
+
 컨트롤에 대 한 기타 지원 추가 설정합니다.
 
 - **연결점**: 사용자 개체의 클래스에서 파생 하 여 개체에 대 한 연결점을 사용 하도록 설정 [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) 원본 인터페이스를 노출 하도록 허용 합니다.

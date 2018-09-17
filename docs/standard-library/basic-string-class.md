@@ -126,12 +126,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a44cccd38d64f3e6b0c2b7af390d06292f70157
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: e6c22d91bafc45699371dd40d317b66cf3d1ca11
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105668"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706617"
 ---
 # <a name="basicstring-class"></a>basic_string 클래스
 
@@ -3979,9 +3979,11 @@ basic_string<CharType, Traits, Allocator>& replace(
 *_Ch*<br/>
 피연산자 문자열에 복사될 문자입니다.
 
-* first0 * 피연산자 문자열에서 제거 될 첫 번째 문자의 주소를 지정 하는 반복기를 합니다.
+*first0*<br/>
+피연산자 문자열에서 제거될 첫 번째 문자의 주소를 지정하는 반복기입니다.
 
-* last0 * 피연산자 문자열에서 제거 될 마지막 문자의 주소를 지정 하는 반복기를 합니다.
+*last0*<br/>
+피연산자 문자열에서 제거될 마지막 문자의 주소를 지정하는 반복기입니다.
 
 *first*<br/>
 매개 변수 문자열에서 복사될 첫 번째 문자의 주소를 지정하는 반복기, const_pointer 또는 const_iterator입니다.

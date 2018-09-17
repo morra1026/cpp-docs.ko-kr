@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8fcf4f2cb2c619b2dfe3dae4b669f6139382b2b4
-ms.sourcegitcommit: f923f667065cd6c4203d10ca9520600ee40e5f84
+ms.openlocfilehash: 5a73d5bb3ef67469ad1cc12b2a2c2757cf1ce137
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901013"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712839"
 ---
 # <a name="ctabbedpane-class"></a>CTabbedPane 클래스
 
@@ -81,7 +81,7 @@ class CTabbedPane : public CBaseTabbedPane
 
 ### <a name="data-members"></a>데이터 멤버
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[CTabbedPane::m_bTabsAlwaysTop](#m_btabsalwaystop)|응용 프로그램에서 탭의 기본 위치입니다.|
 |[CTabbedPane::m_pTabWndRTC](#m_ptabwndrtc)|사용자 지정 `CMFCTabCtrl` 파생 개체에 대한 런타임 클래스 정보입니다.|
@@ -94,7 +94,7 @@ Outlook 스타일 탭 대신 일반 탭을 지정 하려면 AFX_CBRS_REGULAR_TAB
 
 분리 가능한 탭을 포함하는 탭 창을 만드는 경우 프레임워크에서 자동으로 창을 제거할 수 있으므로 포인터를 저장하면 안 됩니다. 탭 창에 대한 포인터를 가져오려면 `CBasePane::GetParentTabbedPane` 메서드를 호출합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 예제에서는 `CTabbedPane` 개체를 만듭니다. 다음을 사용 하 여 [cbasetabbedpane:: Addtab](../../mfc/reference/cbasetabbedpane-class.md#addtab) 추가 탭을 연결 합니다.
 
@@ -127,7 +127,7 @@ pTabbededBar->EnableDocking(CBRS_ALIGN_ANY);
 DockPane(pTabbededBar);
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 탭된 컨트롤 막대 개체를 만드는 또 다른 방법은 사용 하는 것 [cdockablepane:: Attachtotabwnd](../../mfc/reference/cdockablepane-class.md#attachtotabwnd)합니다. 합니다 `AttachToTabWnd` 메서드는 동적으로 설정한 런타임 클래스 정보를 사용 하 여 탭된 창 개체를 만듭니다 [cdockablepane:: Settabbedpanertc](../../mfc/reference/cdockablepane-class.md#settabbedpanertc)합니다.
 
@@ -201,8 +201,8 @@ static void EnableTabAutoColor(BOOL bEnable = TRUE);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *bEnable*  
-탭;의 자동 색 지정을 사용 하도록 설정. 그렇지 않으면 FALSE입니다.
+*bEnable*<br/>
+[in] 탭;의 자동 색 지정을 사용 하도록 설정. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -224,10 +224,10 @@ virtual BOOL FloatTab(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *pBar*  
-[in] *nTabID*  
-[in] *dockMethod*  
-[in] *bHide*  
+*pBar*<br/>
+[in] [in] *nTabID*  
+*dockMethod*<br/>
+[in] [in] *bHide*  
 
 ### <a name="return-value"></a>반환 값
 
@@ -245,11 +245,11 @@ virtual void GetTabArea(
 
 ### <a name="parameters"></a>매개 변수
 
-[out] *rectTabAreaTop*  
-크기와 화면 좌표에서 위쪽 탭 영역의 위치를 포함합니다.
+*rectTabAreaTop*<br/>
+[out] 크기와 화면 좌표에서 위쪽 탭 영역의 위치를 포함합니다.
 
-[out] *rectTabAreaBottom*  
-크기와 화면 좌표에서 아래쪽 탭 영역의 위치를 포함합니다.
+*rectTabAreaBottom*<br/>
+[out] 크기와 화면 좌표에서 아래쪽 탭 영역의 위치를 포함합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -340,8 +340,8 @@ static void SetTabAutoColors(const CArray<COLORREF, COLORREF>& arColors);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *arColors*  
-설정 하는 색 배열을에 포함 되어 있습니다.
+*arColors*<br/>
+[in] 설정 하는 색 배열을에 포함 되어 있습니다.
 
 ### <a name="remarks"></a>설명
 

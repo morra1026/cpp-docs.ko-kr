@@ -35,12 +35,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c832ee24d500eba28c14713d1c0a092baf90a440
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: c6a980a96198db80f0956895292d37f123d0351c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894618"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723309"
 ---
 # <a name="building-an-import-library-and-export-file"></a>가져오기 라이브러리 및 내보내기 파일 빌드
 
@@ -60,7 +60,7 @@ ms.locfileid: "43894618"
 
 다음 옵션은 가져오기 라이브러리를 빌드하는 데 적용 되며 파일을 내보냅니다.
 
-> **/ OUT:** *가져오기*  
+> **/ OUT:** *가져오기*
 
 에 대 한 기본 출력 파일 이름을 재정의 합니다 *가져올* 생성 되는 라이브러리입니다. /OUT 지정 되지 않은 경우 기본 이름은 첫 번째 개체 파일 또는 LIB 명령과 확장 라이브러리의 기본 이름입니다. lib 합니다. 내보내기 파일에는 가져오기 라이브러리 및 확장으로 동일한 기본 이름이 지정 됩니다. exp.
 

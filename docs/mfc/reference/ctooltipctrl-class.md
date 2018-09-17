@@ -82,12 +82,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 06f0b78938534f685f14757ca16e5ad2574412f2
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 4708f180a1a1f5e936a6b30650a6432d48878d53
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43684809"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726754"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl Class
 응용 프로그램 도구의 용도를 설명하는 텍스트 한 줄을 표시하는 작은 팝업 창인 "도구 설명 컨트롤"의 기능을 캡슐화합니다.  
@@ -374,7 +374,7 @@ BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out] *lpToolInfo*|에 대 한 포인터를 [TOOLINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) 현재 도구 설명 창에 대 한 정보를 수신 하는 구조입니다.|  
+|*lpToolInfo*|[out] 에 대 한 포인터를 [TOOLINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) 현재 도구 설명 창에 대 한 정보를 수신 하는 구조입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  정보를 성공적으로 검색 되 면 TRUE 그렇지 않으면 FALSE입니다.  
@@ -504,7 +504,7 @@ void GetTitle(PTTGETTITLE pttgt) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out] *pttgt*|에 대 한 포인터를 [TTGETTITLE](/windows/desktop/api/commctrl/ns-commctrl-_ttgettitle) 도구 설명 컨트롤에 대 한 정보를 포함 하는 구조입니다. 이 메서드가 반환 하는 경우는 *pszTitle* 의 멤버는 [TTGETTITLE](/windows/desktop/api/commctrl/ns-commctrl-_ttgettitle) 제목의 텍스트를 가리키는 구조체입니다.|  
+|*pttgt*|[out] 에 대 한 포인터를 [TTGETTITLE](/windows/desktop/api/commctrl/ns-commctrl-_ttgettitle) 도구 설명 컨트롤에 대 한 정보를 포함 하는 구조입니다. 이 메서드가 반환 하는 경우는 *pszTitle* 의 멤버는 [TTGETTITLE](/windows/desktop/api/commctrl/ns-commctrl-_ttgettitle) 제목의 텍스트를 가리키는 구조체입니다.|  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 전송 된 [TTM_GETTITLE](/windows/desktop/Controls/ttm-gettitle) Windows SDK에 설명 된 메시지입니다.  

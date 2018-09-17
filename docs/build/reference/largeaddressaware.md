@@ -18,20 +18,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fbb71d57142f571e521419654ffb2b9803ce7ed
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 174fa82b504d469da637724e91e9a2d6e8d1a424
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372557"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714433"
 ---
 # <a name="largeaddressaware"></a>/LARGEADDRESSAWARE
-```  
-/LARGEADDRESSAWARE  
-```  
-  
-## <a name="remarks"></a>설명  
- 이 옵션은 이미지를 편집 응용 프로그램이 2gb 이상인 주소에서 처리할 수 있습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [EDITBIN 옵션](../../build/reference/editbin-options.md)
+
+```
+/LARGEADDRESSAWARE
+```
+
+## <a name="remarks"></a>설명
+
+이 옵션은 이미지를 편집 응용 프로그램에서 2gb 보다 큰 주소 처리할 수 있습니다.
+
+## <a name="see-also"></a>참고 항목
+
+[EDITBIN 옵션](../../build/reference/editbin-options.md)

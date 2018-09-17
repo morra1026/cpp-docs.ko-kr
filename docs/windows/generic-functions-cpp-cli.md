@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 700c88fa71e82e35602efef768fc5753760a5e1a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: bc930fdc142dc7b044b4dbd60cfd459b7ce52aea
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593482"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709152"
 ---
 # <a name="generic-functions-ccli"></a>제네릭 함수(C++/CLI)
 
@@ -63,11 +63,11 @@ return-type identifier<type-parameter identifier(s)>
 
 ### <a name="parameters"></a>매개 변수
 
-*특성* (선택 사항)  
-추가 선언 정보입니다. 특성 및 특성 클래스에 대 한 자세한 내용은 특성을 참조 하세요.
+*특성*  
+(선택 사항) 추가 선언 정보입니다. 특성 및 특성 클래스에 대 한 자세한 내용은 특성을 참조 하세요.
 
-*한정자* (선택 사항)  
-정적 같은 함수에 대 한 한정자입니다.  **가상** 가상 메서드는 제네릭 수 있으므로 허용 되지 않습니다.
+*한정자*  
+(선택 사항) 정적 같은 함수에 대 한 한정자입니다.  **가상** 가상 메서드는 제네릭 수 있으므로 허용 되지 않습니다.
 
 *반환 형식*  
 메서드에서 반환하는 형식입니다. 반환 형식이 void 인 경우 반환 값이 없는 경우 필요
@@ -78,8 +78,8 @@ return-type identifier<type-parameter identifier(s)>
 *형식 매개 변수 식별자*  
 쉼표로 구분 된 식별자 목록입니다.
 
-*정식 매개 변수* (선택 사항)  
-매개 변수 목록입니다.
+*정식 매개 변수*  
+(선택 사항) 매개 변수 목록입니다.
 
 *형식 매개 변수-제약 조건 절*  
 이 형식 인수로 사용할 수 있는 형식에서 지정 하는 제한 하며에 지정 된 폼 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)합니다.

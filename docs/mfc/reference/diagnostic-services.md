@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5be60ff1f0aa8b2ceff7517a9af968e0b7690478
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6d3adeff7c0c242d9e83b2e71afff78ec130f950
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214681"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712960"
 ---
 # <a name="diagnostic-services"></a>진단 서비스
 MFC 라이브러리는 프로그램을 더 쉽게 디버그할 수 있는 많은 진단 서비스를 제공합니다. 이러한 진단 서비스에는 매크로 및 전역 함수가 포함되며, 이러한 함수를 통해 프로그램의 메모리 할당을 추적하고 런타임 중 개체의 내용을 덤프하고 런타임 중 디버깅 메시지를 인쇄할 수 있습니다. 진단 서비스의 매크로 및 전역 함수는 다음과 같은 범주로 그룹화됩니다.  
@@ -619,8 +619,8 @@ BOOL AFXAPI AfxEnableMemoryLeakDump(BOOL bDump);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bDump*  
- TRUE 이면 메모리 누수 덤프를 활성화 됩니다. FALSE 이면 메모리 누수 덤프를 사용할 수 없습니다.  
+*bDump*<br/>
+[in] TRUE 이면 메모리 누수 덤프를 활성화 됩니다. FALSE 이면 메모리 누수 덤프를 사용할 수 없습니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 플래그에 대한 이전 값입니다.  

@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e3ce4384ebce3140f8d3ccadf781f3d45b92340b
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: e9b2574010445f301a77d56adda11bff51f33267
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42541487"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705876"
 ---
 # <a name="cmfcvisualmanagervs2005-class"></a>CMFCVisualManagerVS2005 클래스
 `CMFCVisualManagerVS2005` 응용 프로그램에 Microsoft Visual Studio 2005 모양을 제공 합니다.  
@@ -92,7 +92,7 @@ class CMFCVisualManagerVS2005 : public CMFCVisualManagerOffice2003
   
  이 클래스의 멤버 모두이 클래스의 상위 항목에서 파생 되는 가상 함수 [CMFCVisualManager 클래스](../../mfc/reference/cmfcvisualmanager-class.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 VS 2005 비주얼 관리자를 사용 하는 방법에 설명 합니다. 이 코드 조각은의 일부인 합니다 [바탕 화면 경고 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_DesktopAlertDemo#9](../../mfc/reference/codesnippet/cpp/cmfcvisualmanagervs2005-class_1.cpp)]  
@@ -166,14 +166,14 @@ virtual void GetTabFrameColors(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pTabWnd*  
- [in] *clrDark*  
- [in] *clrBlack*  
- [in] *clrHighlight*  
- [in] *clrFace*  
- [in] *clrDarkShadow*  
- [in] *clrLight*  
- [in] *pbrFace*  
+*pTabWnd*<br/>
+[in] [in] *clrDark*  
+*clrBlack*<br/>
+[in] [in] *clrHighlight*  
+*clrFace*<br/>
+[in] [in] *clrDarkShadow*  
+*clrLight*<br/>
+[in] [in] *pbrFace*  
  [in] *pbrBlack*  
   
 ### <a name="remarks"></a>설명  
@@ -201,10 +201,10 @@ virtual void OnDrawAutoHideButtonBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rectBounds*  
- [in] *rectBorderSize*  
- [in] *pButton*  
+*pDC*<br/>
+[in] [in] *rectBounds*  
+*rectBorderSize*<br/>
+[in] [in] *pButton*  
   
 ### <a name="remarks"></a>설명  
   
@@ -223,12 +223,12 @@ virtual void OnDrawCaptionButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pButton*  
- [in] *bActive*  
- [in] *bHorz*  
- [in] *bMaximized*  
- [in] *사용 안 함*  
+*pDC*<br/>
+[in] [in] *pButton*  
+*bActive*<br/>
+[in] [in] *bHorz*  
+*bMaximized*<br/>
+[in] [in] *사용 안 함*  
  [in] *nImageID*  
   
 ### <a name="remarks"></a>설명  
@@ -246,10 +246,10 @@ virtual COLORREF OnDrawPaneCaption(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pBar*  
- [in] *bActive*  
- [in] *rectCaption*  
+*pDC*<br/>
+[in] [in] *pBar*  
+*bActive*<br/>
+[in] [in] *rectCaption*  
  [in] *rectButtons*  
   
 ### <a name="return-value"></a>반환 값  
@@ -268,10 +268,10 @@ virtual void OnDrawSeparator(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pBar*  
- [in] *rect*  
- [in] *bIsHoriz*  
+*pDC*<br/>
+[in] [in] *pBar*  
+*rect*<br/>
+[in] [in] *bIsHoriz*  
   
 ### <a name="remarks"></a>설명  
   
@@ -288,10 +288,10 @@ virtual void OnDrawTab(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rectTab*  
- [in] *iTab*  
- [in] *bIsActive*  
+*pDC*<br/>
+[in] [in] *rectTab*  
+*iTab*<br/>
+[in] [in] *bIsActive*  
  [in] *pTabWnd*  
   
 ### <a name="remarks"></a>설명  
@@ -306,8 +306,8 @@ virtual void OnDrawToolBoxFrame(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rect*  
+*pDC*<br/>
+[in] [in] *rect*  
   
 ### <a name="remarks"></a>설명  
   
@@ -322,8 +322,8 @@ virtual void OnEraseTabsArea(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rect*  
+*pDC*<br/>
+[in] [in] *rect*  
  [in] *pTabWnd*  
   
 ### <a name="remarks"></a>설명  
@@ -339,8 +339,8 @@ virtual void OnFillAutoHideButtonBackground(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rect*  
+*pDC*<br/>
+[in] [in] *rect*  
  [in] *pButton*  
   
 ### <a name="remarks"></a>설명  
@@ -357,10 +357,10 @@ virtual void OnFillHighlightedArea(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rect*  
- [in] *pBrush*  
- [in] *pButton*  
+*pDC*<br/>
+[in] [in] *rect*  
+*pBrush*<br/>
+[in] [in] *pButton*  
   
 ### <a name="remarks"></a>설명  
   
@@ -376,10 +376,10 @@ virtual COLORREF OnFillMiniFrameCaption(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rectCaption*  
- [in] *pFrameWnd*  
- [in] *bActive*  
+*pDC*<br/>
+[in] [in] *rectCaption*  
+*pFrameWnd*<br/>
+[in] [in] *bActive*  
   
 ### <a name="return-value"></a>반환 값  
   

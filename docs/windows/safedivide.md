@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bd7d581a632158154822f7ce51ac3dc5042b2a48
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e673d01aa5657d9ada9ae1ee84ad3d56483e2fc5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42589299"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723348"
 ---
 # <a name="safedivide"></a>SafeDivide
 
@@ -41,14 +41,14 @@ inline bool SafeDivide (
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *t*  
-제수입니다. T 형식이어야 합니다.
+*t*<br/>
+[in] 제 수입니다. T 형식이어야 합니다.
 
-[in] *u*  
-피제수입니다. U 형식이어야 합니다.
+*u*<br/>
+[in] 피제수입니다. U 형식이어야 합니다.
 
-[out] *결과*  
-매개 변수가 있는 **SafeDivide** 결과 저장 합니다.
+*결과*<br/>
+[out] 매개 변수가 있는 **SafeDivide** 결과 저장 합니다.
 
 ## <a name="return-value"></a>반환 값
 

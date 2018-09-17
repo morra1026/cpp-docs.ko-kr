@@ -26,17 +26,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85749ff1325c3535c265a445ce76d37522bc252a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 77791bdf33f38417d38ebdec3c73b83d96bde36f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33338304"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718473"
 ---
 # <a name="writefsbyte-writefsdword-writefsqword-writefsword"></a>__writefsbyte, __writefsdword, __writefsqword, __writefsword
 **Microsoft 전용**  
   
- FS 세그먼트의 시작 부분에 상대적인 오프셋으로 지정 된 위치에 메모리를 기록 합니다.  
+ FS 세그먼트의 시작을 기준으로 오프셋으로 지정 된 위치에 메모리를 작성 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -60,11 +60,11 @@ void __writefsqword(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `Offset`  
- 에 쓸 수는 FS의 시작 부분에서 오프셋입니다.  
+*오프셋*<br/>
+[in] 쓸 FS 시작 부분 으로부터의 오프셋입니다.  
   
- [in] `Data`  
- 작성할 값입니다.  
+*Data*<br/>
+[in] 쓸 값입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
@@ -75,7 +75,7 @@ void __writefsqword(
 |`__writefsdword`|x86|  
 |`__writefsqword`|x86|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
  이러한 루틴은 내장 함수로 사용할 수 있습니다.  

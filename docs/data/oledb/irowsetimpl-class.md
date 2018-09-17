@@ -102,12 +102,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: faf782f4386cf2b2640ed65f3a2b24bbf4c5d693
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: c339ffcf3fb32c7ff8ad45fca792a91c96848d9e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42572884"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703731"
 ---
 # <a name="irowsetimpl-class"></a>IRowsetImpl 클래스
 `IRowset` 인터페이스의 구현을 제공합니다.  
@@ -244,11 +244,11 @@ virtual DBSTATUS GetDBStatus(RowClass* currentRow,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] *currentRow*  
- 현재 행입니다.  
+*currentRow*<br/>
+[in] 현재 행입니다.  
   
- [in] *columnNames*  
- 상태 요청 되는 열입니다.  
+*columnNames*<br/>
+[in] 상태 요청 되는 열입니다.  
   
 ### <a name="return-value"></a>반환 값  
  합니다 [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) 열에 대 한 플래그입니다. 

@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fe9fc90556c15cdab13f68647f07b877aa15abf
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: ab174484cb305e26c23d1c1d6b5e573341c9035c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42541501"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716970"
 ---
 # <a name="bitscanreverse-bitscanreverse64"></a>_BitScanReverse, _BitScanReverse64
 **Microsoft 전용**  
@@ -47,11 +47,11 @@ unsigned char _BitScanReverse64(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [out] `Index`  
- 발견된 첫 번째 설정 비트(1)의 비트 위치를 사용하여 로드됩니다.  
+*Index*<br/>
+[out] 찾은 첫 번째 설정 비트 (1)의 비트 위치를 사용 하 여 로드 합니다.  
   
- [in] `Mask`  
- 검색할 32비트 또는 64비트 값입니다.  
+*마스크*<br/>
+[in] 검색할 32 비트 또는 64 비트 값입니다.  
   
 ## <a name="return-value"></a>반환 값  
  `Index`가 설정된 경우에는 0이 아니고 설정 비트가 발견되지 않은 경우에는 0입니다.  
@@ -63,7 +63,7 @@ unsigned char _BitScanReverse64(
 |`_BitScanReverse`|x86, ARM, x64|\<intrin.h>|  
 |`_BitScanReverse64`|ARM, x64||  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // BitScanReverse.cpp  

@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07581805edd92e5b577889c8dfb12c5cf08ac20b
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: b035f496a8daf34334d6e3a6690046c862795dc9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680761"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714560"
 ---
 # <a name="cnetaddressctrl-class"></a>CNetAddressCtrl 클래스
 `CNetAddressCtrl` 클래스에 입력 한 IPv4, IPv6 및 DNS 주소를 이름이 지정된 형식의 유효성을 검사하는 데 사용할 수 있는 네트워크 주소 컨트롤을 나타냅니다.  
@@ -127,10 +127,10 @@ virtual BOOL Create(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *dwStyle*|컨트롤에 적용 될 스타일의 비트 조합입니다. 자세한 내용은 [스타일 편집](../../mfc/reference/styles-used-by-mfc.md#edit-styles)합니다.|  
-|[in] *rect*|에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 컨트롤의 크기와 위치를 포함 하는 구조입니다.|  
-|[in] *pParentWnd*|에 대 한 null이 아닌 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 컨트롤의 부모 창입니다.|  
-|[in] *nID*|컨트롤의 ID입니다.|  
+|*dwStyle*|[in] 컨트롤에 적용 될 스타일의 비트 조합입니다. 자세한 내용은 [스타일 편집](../../mfc/reference/styles-used-by-mfc.md#edit-styles)합니다.|  
+|*rect*|[in] 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 컨트롤의 크기와 위치를 포함 하는 구조입니다.|  
+|*pParentWnd*|[in] 에 대 한 null이 아닌 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 컨트롤의 부모 창입니다.|  
+|*nID*|[in] 컨트롤의 ID입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -151,11 +151,11 @@ virtual BOOL CreateEx(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *dwExStyle*|컨트롤에 적용 될 확장된 스타일의 비트 조합 (OR)입니다. 자세한 내용은 참조는 *dwExStyle* 의 매개 변수를 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) 함수입니다.|  
-|[in] *dwStyle*|컨트롤에 적용 될 스타일의 비트 조합 (OR)입니다. 자세한 내용은 [스타일 편집](../../mfc/reference/styles-used-by-mfc.md#edit-styles)합니다.|  
-|[in] *rect*|에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 컨트롤의 크기와 위치를 포함 하는 구조입니다.|  
-|[in] *pParentWnd*|에 대 한 null이 아닌 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 컨트롤의 부모 창입니다.|  
-|[in] *nID*|컨트롤의 ID입니다.|  
+|*dwExStyle*|[in] 컨트롤에 적용 될 확장된 스타일의 비트 조합 (OR)입니다. 자세한 내용은 참조는 *dwExStyle* 의 매개 변수를 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) 함수입니다.|  
+|*dwStyle*|[in] 컨트롤에 적용 될 스타일의 비트 조합 (OR)입니다. 자세한 내용은 [스타일 편집](../../mfc/reference/styles-used-by-mfc.md#edit-styles)합니다.|  
+|*rect*|[in] 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 컨트롤의 크기와 위치를 포함 하는 구조입니다.|  
+|*pParentWnd*|[in] 에 대 한 null이 아닌 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 컨트롤의 부모 창입니다.|  
+|*nID*|[in] 컨트롤의 ID입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -183,10 +183,9 @@ HRESULT GetAddress(PNC_ADDRESS pAddress) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
-  
-|매개 변수|설명|  
-|---------------|-----------------|  
-|[out에서] *pAddress*|에 대 한 포인터를 [NC_ADDRESS](/windows/desktop/api/shellapi/ns-shellapi-tagnc_address) 구조입니다.  설정 된 *pAddrInfo* 주소로이 구조체의 멤버는 [NET_ADDRESS_INFO](https://msdn.microsoft.com/library/windows/desktop/bb773346) GetAddress 메서드를 호출 하기 전에 구조체입니다.|  
+
+*pAddress*<br/>
+[out에서] 에 대 한 포인터를 [NC_ADDRESS](/windows/desktop/api/shellapi/ns-shellapi-tagnc_address) 구조입니다.  설정 된 *pAddrInfo* 주소로이 구조체의 멤버는 [NET_ADDRESS_INFO](https://msdn.microsoft.com/library/windows/desktop/bb773346) GetAddress 메서드를 호출 하기 전에 구조체입니다.
   
 ### <a name="return-value"></a>반환 값  
  이 메서드가 성공 하면 s_ok이 고, 값 그렇지 않으면 COM 오류 코드입니다. 가능한 오류 코드에 대 한 자세한 내용은의 반환 값 섹션을 참조 합니다 [NetAddr_GetAddress](/windows/desktop/api/shellapi/nf-shellapi-netaddr_getaddress) 매크로입니다.  
@@ -222,7 +221,7 @@ HRESULT SetAllowType(DWORD dwAddrMask);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *dwAddrMask*|비트 조합 (OR) 플래그 주소의 형식을 지정 하는 네트워크 주소 컨트롤을 지원할 수 있습니다. 자세한 내용은 [NET_STRING](https://msdn.microsoft.com/library/windows/desktop/bb762586)합니다.|  
+|*dwAddrMask*|[in] 비트 조합 (OR) 플래그 주소의 형식을 지정 하는 네트워크 주소 컨트롤을 지원할 수 있습니다. 자세한 내용은 [NET_STRING](https://msdn.microsoft.com/library/windows/desktop/bb762586)합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드가 성공 하면 s_ok이 고 그렇지 않으면 COM 오류 코드입니다.  

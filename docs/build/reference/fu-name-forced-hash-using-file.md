@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acf4afebc7288a953a0f8785e1f18097c21d71e3
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 73edbed02a665d7e66478052c0fee13a227658aa
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107406"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720540"
 ---
 # <a name="fu-name-forced-using-file"></a>/FU(강제 #using 파일 이름 지정)
 
@@ -62,6 +62,6 @@ ms.locfileid: "44107406"
 
 ## <a name="see-also"></a>참고 항목
 
-[출력 파일 (/ F) 옵션](../../build/reference/output-file-f-options.md)   
-[컴파일러 옵션](../../build/reference/compiler-options.md)   
+[출력 파일 (/ F) 옵션](../../build/reference/output-file-f-options.md)
+[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d941b112047dc8f90a8cdc4686e422f028b6d7e
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: a3fa9720e519336b39299e84e3061860f34cf24a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37335960"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716307"
 ---
 # <a name="cdialogex-class"></a>CDialogEx 클래스
 `CDialogEx` 클래스는 대화 상자의 배경 색과 배경 이미지를 지정합니다.  
@@ -90,17 +90,17 @@ CDialogEx(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nIDTemplate*  
- 대화 상자 템플릿의 리소스 ID입니다.  
+*nIDTemplate*<br/>
+[in] 대화 상자 템플릿의 리소스 ID입니다.  
   
- [in] *lpszTemplateName*  
- 대화 상자 템플릿의 리소스 이름입니다.  
+*lpszTemplateName*<br/>
+[in] 대화 상자 템플릿의 리소스 이름입니다.  
   
- [in] *pParent*  
- 부모 창에 대 한 포인터입니다. 기본값은 NULL입니다.  
+*pParent*<br/>
+[in] 부모 창에 대 한 포인터입니다. 기본값은 NULL입니다.  
   
- [in] *pParentWnd*  
- 부모 창에 대 한 포인터입니다. 기본값은 NULL입니다.  
+*pParentWnd*<br/>
+[in] 부모 창에 대 한 포인터입니다. 기본값은 NULL입니다.  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -116,11 +116,11 @@ void SetBackgroundColor(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *색*  
- RGB 색 값입니다.  
+*색*<br/>
+[in] RGB 색 값입니다.  
   
- [in] *bRepaint*  
- 화면을 즉시 업데이트 하려면 TRUE 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
+*bRepaint*<br/>
+[in] 화면을 즉시 업데이트 하려면 TRUE 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -142,20 +142,20 @@ BOOL SetBackgroundImage(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hBitmap*  
- 배경 이미지에 대 한 핸들입니다.  
+*hBitmap*<br/>
+[in] 배경 이미지에 대 한 핸들입니다.  
   
- [in] *uiBmpResId*  
- 배경 이미지의 리소스 ID입니다.  
+*uiBmpResId*<br/>
+[in] 배경 이미지의 리소스 ID입니다.  
   
- [in] *위치*  
- 중 하나는 `CDialogEx::BackgroundLocation` 이미지의 위치를 지정 하는 값입니다. 유효한 값 BACKGR_TILE "," BACKGR_TOPLEFT "," BACKGR_TOPRIGHT "," BACKGR_BOTTOMLEFT, "및" BACKGR_BOTTOMRIGHT 같습니다. 기본값은 BACKGR_TILE 합니다.  
+*location*<br/>
+[in] 중 하나는 `CDialogEx::BackgroundLocation` 이미지의 위치를 지정 하는 값입니다. 유효한 값 BACKGR_TILE "," BACKGR_TOPLEFT "," BACKGR_TOPRIGHT "," BACKGR_BOTTOMLEFT, "및" BACKGR_BOTTOMRIGHT 같습니다. 기본값은 BACKGR_TILE 합니다.  
   
- [in] *bAutoDestroy*  
- 배경 이미지를 자동으로 삭제. 그렇지 않으면 FALSE입니다.  
+*bAutoDestroy*<br/>
+[in] 배경 이미지를 자동으로 삭제. 그렇지 않으면 FALSE입니다.  
   
- [in] *bRepaint*  
- 대화 상자를 즉시 다시 그리도록 하려면 TRUE 그렇지 않으면 FALSE입니다.  
+*bRepaint*<br/>
+[in] 대화 상자를 즉시 다시 그리도록 하려면 TRUE 그렇지 않으면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  두 번째 방법은 오버 로드 구문을 TRUE 메서드가 성공할 경우 그렇지 않으면 FALSE입니다.  

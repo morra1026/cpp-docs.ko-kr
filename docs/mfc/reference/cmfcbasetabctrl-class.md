@@ -248,12 +248,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dbd12c98014e2adfe9617f0bdaac891f33ebc600
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 866cdc59157aa39a3c6ecbece225d1789cfec789
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693928"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712579"
 ---
 # <a name="cmfcbasetabctrl-class"></a>CMFCBaseTabCtrl Class
 탭 창의 기본 기능을 구현합니다.  
@@ -436,11 +436,11 @@ void AddIcon(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hIcon*  
- 추가 될 아이콘에 대 한 핸들입니다.  
+*hIcon*<br/>
+[in] 추가 될 아이콘에 대 한 핸들입니다.  
   
- [in] *아이콘*  
- 보호 된 아이콘의 0 기반 인덱스 `CImageList m_Images` 멤버입니다.  
+*아이콘*<br/>
+[in] 보호 된 아이콘의 0 기반 인덱스 `CImageList m_Images` 멤버입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -463,20 +463,20 @@ virtual void AddTab(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pTabWnd*  
- 이 메서드는 새 탭으로 나타내는 창에 대 한 포인터입니다.  
+*pTabWnd*<br/>
+[in] 이 메서드는 새 탭으로 나타내는 창에 대 한 포인터입니다.  
   
- [in] *lpszTabLabel*  
- 새 탭의 레이블을 포함 하는 문자열입니다.  
+*lpszTabLabel*<br/>
+[in] 새 탭의 레이블을 포함 하는 문자열입니다.  
   
- [in] *uiImageId*  
- 이미지 목록의 이미지 ID입니다. 탭 컨트롤의 새 탭에 대 한 아이콘으로이 이미지를 사용합니다.  
+*uiImageId*<br/>
+[in] 이미지 목록의 이미지 ID입니다. 탭 컨트롤의 새 탭에 대 한 아이콘으로이 이미지를 사용합니다.  
   
- [in] *uiResTabLabel*  
- 레이블에 대 한 리소스 ID입니다.  
+*uiResTabLabel*<br/>
+[in] 레이블에 대 한 리소스 ID입니다.  
   
- [in] *bDetachable*  
- 새 탭 분리식 인지 여부를 결정 하는 부울 매개 변수입니다.  
+*bDetachable*<br/>
+[in] 새 탭 분리식 인지 여부를 결정 하는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  경우 *pTabWnd* 에서 파생 되지 않은 개체를 가리키는 합니다 [CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md) 경우에 *bDetachable* 가 TRUE 인 프레임 워크에 대 한 래퍼를 자동으로 만듭니다는 *pTabWnd* 개체입니다. 래퍼는 합니다 *pTabWnd* 개체를 분리 합니다. 기본적으로 래퍼는 인스턴스는 [CDockablePaneAdapter 클래스](../../mfc/reference/cdockablepaneadapter-class.md)합니다. 기본 래퍼를 제공 하는 기능을 적용할 수 있는 경우 사용 합니다 [cmfcbasetabctrl:: Setdockingbarwrapperrtc](#setdockingbarwrapperrtc) 다른 래퍼를 지정 하는 방법입니다.  
@@ -546,14 +546,14 @@ virtual CWnd* CreateWrapper(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndToWrap*  
- 래핑된 프레임 창에 대 한 포인터입니다.  
+*pWndToWrap*<br/>
+[in] 래핑된 프레임 창에 대 한 포인터입니다.  
   
- [in] *lpszTabLabel*  
- 창에 대 한 레이블이 포함 된 문자열입니다.  
+*lpszTabLabel*<br/>
+[in] 창에 대 한 레이블이 포함 된 문자열입니다.  
   
- [in] *bDetachable*  
- 창 분리식 인지 여부를 나타내는 부울 매개 변수입니다.  
+*bDetachable*<br/>
+[in] 창 분리식 인지 여부를 나타내는 부울 매개 변수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  래퍼에 대 한 포인터에서 파생 된 `CDockablePane` 클래스 `CreateWrapper` 성공적으로의 래퍼 클래스를 만듭니다 *pWndToWrap*합니다. 메서드가 실패 하는 경우 해당 반환 *pWndToWrap*합니다.  
@@ -576,14 +576,14 @@ virtual BOOL DetachTab(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dockMethod*  
- 제공 하는 열거형된 데이터 형식 합니다 [CBasePane 클래스](../../mfc/reference/cbasepane-class.md)합니다. 이 데이터 형식은 탭을 분리 하는 데 사용 된 메서드를 지정 합니다.  
+*dockMethod*<br/>
+[in] 제공 하는 열거형된 데이터 형식 합니다 [CBasePane 클래스](../../mfc/reference/cbasepane-class.md)합니다. 이 데이터 형식은 탭을 분리 하는 데 사용 된 메서드를 지정 합니다.  
   
- [in] *nTabNum*  
- 분리할 탭의 0부터 시작 하는 인덱스입니다.  
+*nTabNum*<br/>
+[in] 분리할 탭의 0부터 시작 하는 인덱스입니다.  
   
- [in] *bHide*  
- 프레임 워크의 분리 된 탭을 숨겨야 하는지 여부를 나타내는 부울 매개 변수입니다.  
+*bHide*<br/>
+[in] 프레임 워크의 분리 된 탭을 숨겨야 하는지 여부를 나타내는 부울 매개 변수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -611,8 +611,8 @@ void EnableAutoColor(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 프레임 워크 자동 색을 사용 하는지 여부를 결정 하는 부울 매개 변수입니다.  
+*bEnable*<br/>
+[in] 프레임 워크 자동 색을 사용 하는지 여부를 결정 하는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  탭 컨트롤에는 몇 가지 미리 정의 된 색의 배열이 있습니다. 프레임 워크에서 자동 색을 사용 하는 일련의 탭에서 각 탭이이 배열에서 다음 색을 할당 됩니다.  
@@ -627,8 +627,8 @@ BOOL EnableCustomToolTips(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 사용자 지정 도구 설명을 사용 여부를 결정 하는 부울입니다.  
+*bEnable*<br/>
+[in] 사용자 지정 도구 설명을 사용 여부를 결정 하는 부울입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 TRUE이고, 실패하면 FALSE입니다.  
@@ -644,8 +644,8 @@ virtual void EnableInPlaceEdit(BOOL bEnable) = 0;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 탭 레이블 직접 편집 사용 여부를 지정 하는 부울 매개 변수입니다.  
+*bEnable*<br/>
+[in] 탭 레이블 직접 편집 사용 여부를 지정 하는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로 탭 레이블 직접 편집 탭 컨트롤에 대 한 비활성화 됩니다.  
@@ -664,11 +664,11 @@ virtual BOOL EnableTabDetach(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 탭의 0부터 시작 하는 인덱스입니다.  
   
- [in] *bEnable*  
- 분리 가능한 탭을 할 것인지 여부를 나타내는 부울입니다.  
+*bEnable*<br/>
+[in] 분리 가능한 탭을 할 것인지 여부를 나타내는 부울입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 TRUE이고, 실패하면 FALSE입니다.  
@@ -681,8 +681,8 @@ void EnableTabSwap(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 탭 대체의 활성화 여부를 나타내는 부울입니다.  
+*bEnable*<br/>
+[in] 탭 대체의 활성화 여부를 나타내는 부울입니다.  
   
 ### <a name="remarks"></a>설명  
  교환 하는 탭을 사용 하면 사용자 탭을 끌어를 업데이트 하 고 탭 컨트롤에서의 상대 위치를 변경할 수 있습니다.  
@@ -695,8 +695,8 @@ virtual BOOL EnsureVisible(int iTab);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 탭의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -723,8 +723,8 @@ virtual CWnd* FindTargetWnd(const CPoint& pt) = 0;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *(태평양 표준시)*  
- 좌표를 클라이언트 영역을 사용 하 여 정의 된 지점 합니다 [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) 개체입니다.  
+*(태평양 표준시)*<br/>
+[in] 좌표를 클라이언트 영역을 사용 하 여 정의 된 지점 합니다 [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 성공 하면 NULL 개체입니다.  
@@ -830,11 +830,11 @@ virtual CWnd* GetFirstVisibleTab(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *iTabNum*  
- 정수에 대 한 참조입니다. 이 메서드는이 매개 변수를 첫 번째 표시 탭의 인덱스를 씁니다.  
+*iTabNum*<br/>
+[out] 정수에 대 한 참조입니다. 이 메서드는이 매개 변수를 첫 번째 표시 탭의 인덱스를 씁니다.  
   
- [in] *iStartFrom*  
- 검사할 첫 번째 탭의 0부터 시작 하는 인덱스입니다.  
+*iStartFrom*<br/>
+[in] 검사할 첫 번째 탭의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 첫 번째 표시 탭에 대 한 포인터 그렇지 않으면 NULL입니다.  
@@ -935,11 +935,11 @@ virtual void GetTabArea(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rectTabAreaTop*  
- `CRect` 개체에 대한 참조입니다. `GetTabArea` 이 개체를 사용 하 여 크기 및 위쪽 탭 영역의 위치를 저장 합니다.  
+*rectTabAreaTop*<br/>
+[in] 에 대 한 참조를 `CRect` 개체입니다. `GetTabArea` 이 개체를 사용 하 여 크기 및 위쪽 탭 영역의 위치를 저장 합니다.  
   
- [in] *rectTabAreaBottom*  
- `CRect` 개체에 대한 참조입니다. `GetTabArea` 이 개체를 사용 하 여 크기와 아래쪽 탭 영역의 위치를 저장 합니다.  
+*rectTabAreaBottom*<br/>
+[in] 에 대 한 참조를 `CRect` 개체입니다. `GetTabArea` 이 개체를 사용 하 여 크기와 아래쪽 탭 영역의 위치를 저장 합니다.  
   
 ### <a name="remarks"></a>설명  
  후 `GetTabArea` 반환 된 `CRect` 매개 변수 크기와 탭 컨트롤의 클라이언트 좌표에서 탭 영역의 위치를 포함 합니다. 위쪽 또는 아래쪽 탭 컨트롤의 탭 영역이 없는 경우 `rectTabAreaTop` 또는 `rectTabAreaBottom` 비어 있습니다.  
@@ -954,8 +954,8 @@ virtual COLORREF GetTabBkColor(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 탭의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  A [COLORREF](/windows/desktop/gdi/colorref) -1 하면 지정된 된 탭의 배경색을 나타내는 값 *iTab* 범위를 벗어났습니다.  
@@ -981,8 +981,8 @@ virtual int GetTabByID(int id) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *id*  
- 탭 ID  
+*ID*<br/>
+[in] 탭 ID  
   
 ### <a name="return-value"></a>반환 값  
  가 있으면; 탭의 0부터 시작 인덱스 탭의 ID가 없으면-1입니다.  
@@ -1009,8 +1009,8 @@ virtual int GetTabFromHwnd(HWND hwnd) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hwnd*  
- 창 핸들입니다.  
+*hwnd*<br/>
+[in] 창 핸들입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공할 경우 탭의 0부터 시작 인덱스 없는 탭이 있으면-1 *hwnd*합니다.  
@@ -1023,8 +1023,8 @@ virtual int GetTabFromPoint(CPoint& pt) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *(태평양 표준시)*  
- 탭 컨트롤의 클라이언트 좌표에서 지점입니다.  
+*(태평양 표준시)*<br/>
+[in] 탭 컨트롤의 클라이언트 좌표에서 지점입니다.  
   
 ### <a name="return-value"></a>반환 값  
  포함 된 탭의 인덱스 *pt*; 없는 탭이 있으면-1 *pt*합니다.  
@@ -1051,8 +1051,8 @@ virtual HICON GetTabHicon(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭에 대 한 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 탭에 대 한 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공할 경우 탭 레이블에 연결 된 HICON HICON 없는 경우 또는 메서드가 실패 하는 경우 NULL입니다.  
@@ -1065,8 +1065,8 @@ virtual UINT GetTabIcon(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 탭의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공할 경우 지정된 된 탭에 대 한 아이콘 ID 인덱스가 유효 하지 않은 경우-1입니다.  
@@ -1082,8 +1082,8 @@ int GetTabID(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 탭의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  ID 탭 또는-1 *iTab* 범위를 벗어났습니다.  
@@ -1098,11 +1098,11 @@ virtual BOOL GetTabLabel(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 탭의 0부터 시작 하는 인덱스입니다.  
   
- [out] *strLabel*  
- `CString` 개체에 대한 참조입니다. 이 메서드는 탭의 레이블을이 매개 변수에 저장합니다.  
+*strLabel*<br/>
+[out] 에 대 한 참조를 `CString` 개체입니다. 이 메서드는 탭의 레이블을이 매개 변수에 저장합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 FALSE이 고, 그렇지 합니다.  
@@ -1122,11 +1122,11 @@ virtual BOOL GetTabRect(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 탭의 0부터 시작 하는 인덱스입니다.  
   
- [out] *rect*  
- `CRect` 개체에 대한 참조입니다. 이 메서드는이 매개 변수에 크기와 탭의 위치를 저장합니다.  
+*rect*<br/>
+[out] 에 대 한 참조를 `CRect` 개체입니다. 이 메서드는이 매개 변수에 크기와 탭의 위치를 저장합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 탭 인덱스 유효 하지 않은 경우 FALSE입니다.  
@@ -1172,8 +1172,8 @@ virtual COLORREF GetTabTextColor(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 탭의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  A [COLORREF](/windows/desktop/gdi/colorref) -1 하면 지정된 된 탭의 텍스트 색을 나타내는 매개 변수 *iTab* 범위를 벗어났습니다.  
@@ -1186,8 +1186,8 @@ virtual CWnd* GetTabWnd(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 탭의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 탭에 있는 개체입니다 *iTab* 지정 합니다. 경우에는 NULL *iTab* 올바르지 않습니다.  
@@ -1205,8 +1205,8 @@ virtual CWnd* GetTabWndNoWrapper(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 탭의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) ; 지정된 된 탭에 있는 개체 경우에는 NULL *iTab* 올바르지 않습니다.  
@@ -1258,8 +1258,8 @@ virtual void HideSingleTab(BOOL bHide = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bHide*  
- 단일 탭 숨기기를 사용할지 여부를 지정 하는 부울입니다.  
+*bHide*<br/>
+[in] 단일 탭 숨기기를 사용할지 여부를 지정 하는 부울입니다.  
   
 ### <a name="remarks"></a>설명  
  응용 프로그램이 단일 탭을 숨기려는 구성 하는 경우 두 번째 탭은 탭 컨트롤에 추가 되 면 프레임 워크가 자동으로 탭 표시 합니다.  
@@ -1285,23 +1285,23 @@ virtual void InsertTab(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pNewWnd*  
- 이 메서드는 새 테이블로 추가 하는 창에 대 한 포인터입니다.  
+*pNewWnd*<br/>
+[in] 이 메서드는 새 테이블로 추가 하는 창에 대 한 포인터입니다.  
   
- [in] *lpszTabLabel*  
- 새 탭의 레이블을 포함 하는 문자열입니다.  
+*lpszTabLabel*<br/>
+[in] 새 탭의 레이블을 포함 하는 문자열입니다.  
   
- [in] *nInsertAt*  
- 새 탭의 0부터 시작 하는 인덱스입니다.  
+*nInsertAt*<br/>
+[in] 새 탭의 0부터 시작 하는 인덱스입니다.  
   
- [in] *uiImageId*  
- 이미지 목록의 이미지 ID입니다. 탭 컨트롤의 새 탭에 대 한 아이콘으로이 이미지를 사용합니다.  
+*uiImageId*<br/>
+[in] 이미지 목록의 이미지 ID입니다. 탭 컨트롤의 새 탭에 대 한 아이콘으로이 이미지를 사용합니다.  
   
- [in] *bDetachable*  
- 새 탭 분리식 인지 여부를 결정 하는 부울 매개 변수입니다.  
+*bDetachable*<br/>
+[in] 새 탭 분리식 인지 여부를 결정 하는 부울 매개 변수입니다.  
   
- [in] *uiResTabLabel*  
- 레이블에 대 한 리소스 ID입니다.  
+*uiResTabLabel*<br/>
+[in] 레이블에 대 한 리소스 ID입니다.  
   
 ### <a name="remarks"></a>설명  
  개체 표시 하는 경우 *pNewWnd* 에서 파생 되지 않은 합니다 [CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md) 경우에 *bDetachable* 매개 변수가 TRUE 이면 프레임 워크에 대 한 특별 한 래퍼를 만듭니다 새 탭입니다. 기본적으로 래퍼는 인스턴스는 [CDockablePaneAdapter 클래스](../../mfc/reference/cdockablepaneadapter-class.md)합니다. 사용 된 [cmfcbasetabctrl:: Setdockingbarwrapperrtc](#setdockingbarwrapperrtc) 다른 래퍼 클래스를 만드는 방법. 모든 사용자 지정 래퍼 클래스에서 파생 해야 `CDockablePaneAdapter`합니다.  
@@ -1435,8 +1435,8 @@ BOOL IsIconAdded(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hIcon*  
- [in] *아이콘*  
+*hIcon*<br/>
+[in] [in] *아이콘*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -1500,8 +1500,8 @@ virtual BOOL IsPtInTabArea(CPoint point) const = 0;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 테스트할 점입니다.  
+*지점*<br/>
+[in] 테스트할 점입니다.  
   
 ### <a name="return-value"></a>반환 값  
  탭 영역의; 지점이 있으면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -1539,8 +1539,8 @@ virtual BOOL IsTabDetachable(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 확인 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 확인 탭의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  탭 분리식; 이면 TRUE입니다. FALSE이 고, 그렇지 합니다.  
@@ -1556,8 +1556,8 @@ virtual BOOL IsTabIconOnly(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 탭의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  탭 레이블을 아이콘;만 있으면 TRUE입니다. FALSE이 고, 그렇지 합니다.  
@@ -1586,8 +1586,8 @@ virtual BOOL IsTabVisible(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 확인 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 확인 탭의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정된 된 탭 표시 되 면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -1633,8 +1633,8 @@ virtual void MoveTab(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *n 원본*  
- [in] *nDest*  
+*n 원본*<br/>
+[in] [in] *nDest*  
   
 ### <a name="remarks"></a>설명  
   
@@ -1660,8 +1660,8 @@ virtual BOOL OnDrop(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *COleDataObject**  
- [in] *DROPEFFECT*  
- [in] *CPoint*  
+*DROPEFFECT*<br/>
+[in] [in] *CPoint*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -1679,8 +1679,8 @@ virtual DROPEFFECT OnDragOver(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *COleDataObject**  
- [in] *DWORD*  
- [in] *CPoint*  
+*DWORD*<br/>
+[in] [in] *CPoint*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -1707,8 +1707,8 @@ virtual DROPEFFECT OnDragEnter(
   
 ### <a name="parameters"></a>매개 변수  
  [in] *COleDataObject**  
- [in] *DWORD*  
- [in] *CPoint*  
+*DWORD*<br/>
+[in] [in] *CPoint*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -1722,8 +1722,8 @@ virtual BOOL OnRenameTab(int, CString&);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *int*  
- [in] *CString &*  
+*int*<br/>
+[in] [in] *CString &*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -1773,11 +1773,11 @@ virtual BOOL RemoveTab(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 탭의 0부터 시작 하는 인덱스입니다.  
   
- [in] *bRecalcLayout*  
- 탭의 레이아웃을 다시 계산 여부를 지정 하는 부울 매개 변수입니다.  
+*bRecalcLayout*<br/>
+[in] 탭의 레이아웃을 다시 계산 여부를 지정 하는 부울 매개 변수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드는 탭이 성공적으로 제거 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1823,8 +1823,8 @@ virtual BOOL SetActiveTab(int iTab) = 0;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭의 0 기반 인덱스 `SetActiveTab` 이 인덱스를 사용 하 여 탭을 활성화 합니다.  
+*iTab*<br/>
+[in] 탭의 0 기반 인덱스 `SetActiveTab` 이 인덱스를 사용 하 여 탭을 활성화 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 TRUE이고, 실패하면 FALSE입니다.  
@@ -1840,8 +1840,8 @@ virtual void SetActiveTabColor(COLORREF clr);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *clr*  
- 새 배경색을 지정합니다.  
+*clr*<br/>
+[in] 새 배경색을 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 워크에서 활성 탭의 기본 배경색을 가져옵니다 합니다 [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor)메서드.  
@@ -1854,8 +1854,8 @@ virtual void SetActiveTabTextColor(COLORREF clr);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *clr*  
- A [COLORREF](/windows/desktop/gdi/colorref) 새 텍스트 색을 지정 하는 매개 변수입니다.  
+*clr*<br/>
+[in] A [COLORREF](/windows/desktop/gdi/colorref) 새 텍스트 색을 지정 하는 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로 프레임 워크에서 텍스트 색을 가져옵니다 [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor)합니다. 사용 하 여이 기본 색을 재정의 합니다 `SetActiveTabTextColor` 메서드.  
@@ -1868,8 +1868,8 @@ void SetAutoColors(const CArray<COLORREF,COLORREF>& arColors);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *arColors*  
- RGB 색의 배열입니다.  
+*arColors*<br/>
+[in] RGB 색의 배열입니다.  
   
 ### <a name="remarks"></a>설명  
  사용자 지정 하는 색 배열을 제공 하는 경우 기본 색 배열에는 무시 됩니다. 경우 매개 변수 *arColors* 는 색의 기본 배열에 비어 있는 경우 프레임 워크를 되돌립니다.  
@@ -1884,8 +1884,8 @@ void SetDockingBarWrapperRTC(CRuntimeClass* pRTC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pRTC*  
- 새 래퍼 클래스의 런타임 클래스 정보입니다.  
+*pRTC*<br/>
+[in] 새 래퍼 클래스의 런타임 클래스 정보입니다.  
   
 ### <a name="remarks"></a>설명  
  메서드를 사용 하 여 탭 컨트롤에 탭을 추가할 [cmfcbasetabctrl:: Addtab](#addtab) 하 고 [cmfcbasetabctrl:: Inserttab](#inserttab)합니다. 탭에 추가 하면 해당 탭에 있는 각 컨트롤 도킹 해야 합니다. 파생 되지 않은 모든 개체 `CDockablePane` 래핑되어야 합니다. `AddTab` 및 `InsertTab` 이러한 개체에 대 한 래퍼를 만듭니다. 기본 래퍼 클래스를 [CDockablePaneAdapter 클래스](../../mfc/reference/cdockablepaneadapter-class.md)합니다. 메서드가 `SetDockingBarWrapperRTC` 래퍼 클래스로 사용 되는 클래스를 변경할 수 있습니다. 제공 하는 래퍼 클래스를 파생 되어야 합니다 `CDockablePaneAdapter`합니다.  
@@ -1900,11 +1900,11 @@ void SetDrawNoPrefix(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bNoPrefix*  
- 접두사 문자를 처리 하려는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+*bNoPrefix*<br/>
+[in] 접두사 문자를 처리 하려는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
- [in] *bRedraw*  
- 탭된 창;를 다시 그리도록 하려면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+*bRedraw*<br/>
+[in] 탭된 창;를 다시 그리도록 하려면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  접두사 문자는 앰퍼샌드 앞에 오는 니모닉 문자 (&).  
@@ -1922,17 +1922,17 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiID*  
- 비트맵 리소스 id입니다. `SetImageList` 이 리소스에서 이미지 목록을 로드합니다.  
+*uiID*<br/>
+[in] 비트맵 리소스 id입니다. `SetImageList` 이 리소스에서 이미지 목록을 로드합니다.  
   
- [in] *cx*  
- 픽셀의 각 이미지의 너비입니다.  
+*cx*<br/>
+[in] 픽셀의 각 이미지의 너비입니다.  
   
- [in] *clrTransp*  
- A [COLORREF](/windows/desktop/gdi/colorref) 이미지의 투명 한 색을 나타내는 매개 변수입니다.  
+*clrTransp*<br/>
+[in] A [COLORREF](/windows/desktop/gdi/colorref) 이미지의 투명 한 색을 나타내는 매개 변수입니다.  
   
- [in] *hImageList*  
- 미리 로드 된 이미지 목록에 대 한 핸들입니다.  
+*hImageList*<br/>
+[in] 미리 로드 된 이미지 목록에 대 한 핸들입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -1966,11 +1966,11 @@ virtual BOOL SetTabBkColor(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 탭의 0부터 시작 하는 인덱스입니다.  
   
- [in] *색*  
- 색 집합입니다.  
+*색*<br/>
+[in] 색 집합입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 FALSE이 고, 그렇지 합니다.  
@@ -1985,11 +1985,11 @@ virtual void SetTabBorderSize(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nTabBorderSize*  
- 새 테두리 크기를 픽셀입니다.  
+*nTabBorderSize*<br/>
+[in] 새 테두리 크기를 픽셀입니다.  
   
- [in] *bRepaint*  
- 프레임 워크 컨트롤을 다시 그리면 여부를 나타내는 부울 매개 변수입니다.  
+*bRepaint*<br/>
+[in] 프레임 워크 컨트롤을 다시 그리면 여부를 나타내는 부울 매개 변수입니다.  
   
 ##  <a name="settabhicon"></a>  CMFCBaseTabCtrl::SetTabHicon  
  탭 레이블에 대 한 아이콘을 설정 합니다.  
@@ -2001,11 +2001,11 @@ virtual BOOL SetTabHicon(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭의 0부터 시작 하는 인덱스입니다. 이 메서드는이 탭에 대 한 아이콘을 변경합니다.  
+*iTab*<br/>
+[in] 탭의 0부터 시작 하는 인덱스입니다. 이 메서드는이 탭에 대 한 아이콘을 변경합니다.  
   
- [in] *hIcon*  
- 아이콘에 대 한 핸들입니다.  
+*hIcon*<br/>
+[in] 아이콘에 대 한 핸들입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 TRUE이고, 실패하면 FALSE입니다.  
@@ -2020,11 +2020,11 @@ virtual BOOL SetTabIcon(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 업데이트 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 업데이트 탭의 0부터 시작 하는 인덱스입니다.  
   
- [in] *uiIcon*  
- 새 아이콘에 대 한 아이콘 ID입니다. 이 ID는 내부 참조 [CImageList](../../mfc/reference/cimagelist-class.md) 개체입니다.  
+*uiIcon*<br/>
+[in] 새 아이콘에 대 한 아이콘 ID입니다. 이 ID는 내부 참조 [CImageList](../../mfc/reference/cimagelist-class.md) 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 TRUE이고, 실패하면 FALSE입니다.  
@@ -2040,14 +2040,14 @@ virtual BOOL SetTabIconOnly(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 변경 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 변경 탭의 0부터 시작 하는 인덱스입니다.  
   
- [in] *bIconOnly*  
- 아이콘만 표시 여부를 결정 하는 부울 매개 변수입니다.  
+*bIconOnly*<br/>
+[in] 아이콘만 표시 여부를 결정 하는 부울 매개 변수입니다.  
   
- [in] *bShowTooltipAlways*  
- 프레임 워크만 아이콘을 표시 하는 탭 레이블에 대 한 도구 설명 표시 되는지 여부를 결정 하는 부울 매개 변수입니다.  
+*bShowTooltipAlways*<br/>
+[in] 프레임 워크만 아이콘을 표시 하는 탭 레이블에 대 한 도구 설명 표시 되는지 여부를 결정 하는 부울 매개 변수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 TRUE이고, 실패하면 FALSE입니다.  
@@ -2065,11 +2065,11 @@ virtual BOOL SetTabLabel(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 업데이트 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 업데이트 탭의 0부터 시작 하는 인덱스입니다.  
   
- [in] *strLabel*  
- 탭 레이블에 대 한 새 텍스트를 포함 하는 문자열에 대 한 참조입니다.  
+*strLabel*<br/>
+[in] 탭 레이블에 대 한 새 텍스트를 포함 하는 문자열에 대 한 참조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -2091,8 +2091,8 @@ BOOL SetTabsOrder(const CArray<int,int>& arOrder);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *arOrder*  
- 새 탭 순서를 정의 하는 0부터 시작 하는 인덱스의 배열입니다.  
+*arOrder*<br/>
+[in] 새 탭 순서를 정의 하는 0부터 시작 하는 인덱스의 배열입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 그렇지 않으면 실패 합니다.  
@@ -2110,11 +2110,11 @@ virtual BOOL SetTabTextColor(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 탭의 0부터 시작 하는 인덱스입니다.  
   
- [in] *색*  
- A [COLORREF](/windows/desktop/gdi/colorref) 새 텍스트 색을 나타내는 매개 변수입니다.  
+*색*<br/>
+[in] A [COLORREF](/windows/desktop/gdi/colorref) 새 텍스트 색을 나타내는 매개 변수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -2131,17 +2131,17 @@ virtual BOOL ShowTab(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭의 인덱스는 `ShowTab` 표시 하거나 숨깁니다.  
+*iTab*<br/>
+[in] 탭의 인덱스는 `ShowTab` 표시 하거나 숨깁니다.  
   
- [in] *bShow*  
- 탭의 표시 여부를 나타내는 부울 매개 변수입니다.  
+*bShow*<br/>
+[in] 탭의 표시 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *bRecalcLayout*  
- 창 레이아웃을 즉시 다시 계산 여부를 나타내는 부울 매개 변수입니다.  
+*bRecalcLayout*<br/>
+[in] 창 레이아웃을 즉시 다시 계산 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *bActivate*  
- 지정 된 탭을 선택 여부를 나타내는 부울 매개 변수 *iTab*합니다.  
+*bActivate*<br/>
+[in] 지정 된 탭을 선택 여부를 나타내는 부울 매개 변수 *iTab*합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -2173,8 +2173,8 @@ virtual void SwapTabs(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nFisrtTabID*  
- [in] *nSecondTabID*  
+*nFisrtTabID*<br/>
+[in] [in] *nSecondTabID*  
   
 ### <a name="remarks"></a>설명  
   

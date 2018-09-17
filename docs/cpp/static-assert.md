@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6fa9b8fb7fe85aca21e90195534f33201bee59fc
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: ff616e767d47be06c61c1bddf9ffc336f5144bc4
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464936"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704607"
 ---
 # <a name="staticassert"></a>static_assert
 컴파일 시 소프트웨어 어설션을 테스트합니다. 지정 된 상수 식이 FALSE 인 경우 컴파일러가 하나를 제공 하 고 컴파일은 C2338; 오류로 인해 실패 하는 경우 지정된 된 메시지가 표시 하는 이 고, 그렇지 선언에 영향을 주지 않습니다.  
@@ -34,8 +34,7 @@ ms.locfileid: "39464936"
 ```   
 static_assert( constant-expression, string-literal );  
 
-**Visual Studio 2017 and later:**
-static_assert( constant-expression ); 
+static_assert( constant-expression ); // Visual Studio 2017 and later
 ```  
   
 #### <a name="parameters"></a>매개 변수  
@@ -66,7 +65,7 @@ static_assert(sizeof(void *) == 4, "64-bit code generation is not supported.");
 ## <a name="description"></a>설명  
  다음 예제에서는 **static_assert** 선언은 클래스 범위를 갖습니다. 합니다 **static_assert** 템플릿 매개 변수 인지 확인을 *일반 이전 데이터* (POD) 형식입니다. 컴파일러 검사를 **static_assert** 선언 되지만 평가 되지 않는 경우 선언 합니다 *상수-식* 까지 매개 변수는 `basic_string` 에서클래스템플릿이인스턴스화될`main()`.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```cpp 
 #include <type_traits>  
@@ -94,7 +93,7 @@ int main()
 ## <a name="description"></a>설명  
  다음 예제에서는 **static_assert** 선언은 블록 범위를 갖습니다. 합니다 **static_assert** VMPage 구조체의 크기는 시스템의 가상 메모리 pagesize 같음 인지 확인 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```cpp 
 #include <sys/param.h> // defines PAGESIZE  

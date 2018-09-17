@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ab2dd3b359806aa6b5d54e476ec3581f7bb31d02
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6e084a0f876d0b2598a5317e15057162c602474a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201781"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717121"
 ---
 # <a name="dbtable"></a>db_table
 
@@ -44,14 +44,14 @@ OLE DB 테이블을 엽니다.
 *db_table*  
 (예: "제품") 데이터베이스 테이블의 이름을 지정 하는 문자열입니다.
 
-*name* (선택 사항)  
-테이블 작업에 사용할 핸들의 이름입니다. 둘 이상의 결과 행을 반환 하려는 경우이 매개 변수를 지정 해야 합니다. **db_table** 지정 된 변수를 생성 *이름을* 행 집합을 이동 하거나 여러 작업 쿼리 실행에 사용할 수 있는 합니다.
+*name*  
+(선택 사항) 테이블 작업에 사용할 핸들의 이름입니다. 둘 이상의 결과 행을 반환 하려는 경우이 매개 변수를 지정 해야 합니다. **db_table** 지정 된 변수를 생성 *이름을* 행 집합을 이동 하거나 여러 작업 쿼리 실행에 사용할 수 있는 합니다.
 
-*source_name* (선택 사항)  
-`CSession` 특성이 적용되어 명령이 실행되는 클래스의 `db_source` 변수 또는 인스턴스. [db_source](../windows/db-source.md)를 참조하세요.
+*source_name*  
+(선택 사항) 합니다 `CSession` 변수나 있는 클래스의 인스턴스는 `db_source` 명령을 실행 하는 것에 적용 된 특성입니다. [db_source](../windows/db-source.md)를 참조하세요.
 
-*hresult* (선택 사항)  
-이 데이터베이스 명령의 HRESULT 받을 변수를 식별 합니다. 변수가 없으면 특성에 의해 자동으로 삽입됩니다.
+*hresult*  
+(선택 사항) 이 데이터베이스 명령의 HRESULT 받을 변수를 식별 합니다. 변수가 없으면 특성에 의해 자동으로 삽입됩니다.
 
 ## <a name="remarks"></a>설명
 

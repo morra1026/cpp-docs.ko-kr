@@ -16,24 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 385e073f877a938a3b73fa79036d27cf50c1e4ec
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 151d7b425a7f397a05e3a06e9d94489a0c76f899
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32375203"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725116"
 ---
 # <a name="stub"></a>STUB
-IMAGE_DOS_HEADER 구조 (WINNT에 정의 포함 된 파일 이름을 지정할 수 있습니다 (VxD) 가상 장치 드라이버를 작성 하는 모듈 정의 파일에서 사용 될 때 합니다. H) 기본 헤더 대신 가상 장치 드라이버 (VxD)에서 사용할 수 있습니다.  
-  
-```  
-STUB:filename  
-```  
-  
-## <a name="remarks"></a>설명  
- 지정 하는 해당 하는 방법 *filename* 사용 하는 것은 [스텁/](../../build/reference/stub-ms-dos-stub-file-name.md) 링커 옵션입니다.  
-  
- STUB은 VxD를 빌드할 때에 모듈 정의 파일에서 유효 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [모듈 정의 문의 규칙](../../build/reference/rules-for-module-definition-statements.md)
+
+(WINNT에 정의 된 IMAGE_DOS_HEADER 구조를 포함 하는 파일 이름을 지정할 수 있습니다 (VxD), 가상 장치 드라이버를 작성 하는 모듈 정의 파일에 사용 되는 경우. H) 기본 헤더 대신 가상 장치 드라이버 (VxD)에서 사용 되는 합니다.
+
+```
+STUB:filename
+```
+
+## <a name="remarks"></a>설명
+
+지정 하는 해당 하는 방법은 *filename* 사용 하는 것은 [스텁](../../build/reference/stub-ms-dos-stub-file-name.md) 링커 옵션입니다.
+
+STUB은 VxD를 빌드할 때에 모듈 정의 파일에서 유효 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[모듈 정의 문의 규칙](../../build/reference/rules-for-module-definition-statements.md)

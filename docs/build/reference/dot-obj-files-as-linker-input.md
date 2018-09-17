@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd1fbd635b1d3d3a5f9963edaa9f22e22472dad1
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: decd015a184b66fa5867435177c07fdf23ad53ae
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43691753"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704381"
 ---
 # <a name="obj-files-as-linker-input"></a>링커 입력 파일로 사용하는 .Obj 파일
 
@@ -42,9 +42,9 @@ Visual Studio 2005 부터는 Microsoft Visual c + + 컴파일러는 ISO/IEC C �
 
 ## <a name="see-also"></a>참고자료
 
-[LINK 입력 파일](../../build/reference/link-input-files.md)  
-[링커 옵션](../../build/reference/linker-options.md)  
-[유니코드 지원](../../text/support-for-unicode.md)  
-[컴파일러 및 링커에서의 유니코드 지원](../../build/reference/unicode-support-in-the-compiler-and-linker.md)  
-[유니코드 표준](http://www.unicode.org/)  
-[PE 형식](/windows/desktop/Debug/pe-format)  
+[LINK 입력 파일](../../build/reference/link-input-files.md)<br/>
+[링커 옵션](../../build/reference/linker-options.md)<br/>
+[유니코드 지원](../../text/support-for-unicode.md)<br/>
+[컴파일러 및 링커에서의 유니코드 지원](../../build/reference/unicode-support-in-the-compiler-and-linker.md)<br/>
+[유니코드 표준](http://www.unicode.org/)<br/>
+[PE 형식](/windows/desktop/Debug/pe-format)

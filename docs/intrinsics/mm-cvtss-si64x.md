@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 947c9bf0892da52b44a99486b3ff0f1d59bc6fee
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 1cba221f0944f840f9cdf76da86ec7ce37f37ca8
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42541307"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713780"
 ---
 # <a name="mmcvtsssi64x"></a>_mm_cvtss_si64x
 **Microsoft 전용**  
@@ -38,8 +38,8 @@ __int64 _mm_cvtss_si64x(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `value`  
- `__m128` 부동 소수점 값을 포함 하는 구조체.  
+*값*<br/>
+[in] `__m128` 부동 소수점 값을 포함 하는 구조체.  
   
 ## <a name="return-value"></a>반환 값  
  64 비트 정수를 첫 번째 부동 소수점 값을 정수로 변환의 결과입니다.  
@@ -57,7 +57,7 @@ __int64 _mm_cvtss_si64x(
   
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // _mm_cvtss_si64x.cpp  

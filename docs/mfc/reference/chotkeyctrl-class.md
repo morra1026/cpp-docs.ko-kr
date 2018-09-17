@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47acba5c5bb6164dc7a9ac73fa8f777c99226466
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 592deab171a8085e2260a27ae642b3cd5c4af810
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43681627"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722249"
 ---
 # <a name="chotkeyctrl-class"></a>CHotKeyCtrl 클래스
 Windows의 공용 바로 가기 컨트롤의 기능을 제공합니다.  
@@ -176,11 +176,11 @@ void GetHotKey(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *wVirtualKeyCode*  
- 바로 가기 키의 가상 키 코드입니다. 에서 표준 가상 키 코드 목록은 Winuser.h를 참조 하세요.  
+*wVirtualKeyCode*<br/>
+[out] 바로 가기 키의 가상 키 코드입니다. 에서 표준 가상 키 코드 목록은 Winuser.h를 참조 하세요.  
   
- [out] *wModifiers*  
- 바로 가기 키의 한정자 키를 나타내는 플래그의 비트 조합 (OR)입니다.  
+*wModifiers*<br/>
+[out] 바로 가기 키의 한정자 키를 나타내는 플래그의 비트 조합 (OR)입니다.  
   
  보조키 플래그는 다음과 같습니다.  
   
@@ -245,11 +245,11 @@ void SetHotKey(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *wVirtualKeyCode*  
- 바로 가기 키의 가상 키 코드입니다. 에서 표준 가상 키 코드 목록은 Winuser.h를 참조 하세요.  
+*wVirtualKeyCode*<br/>
+[in] 바로 가기 키의 가상 키 코드입니다. 에서 표준 가상 키 코드 목록은 Winuser.h를 참조 하세요.  
   
- [in] *wModifiers*  
- 바로 가기 키의 한정자 키를 나타내는 플래그의 비트 조합 (OR)입니다.  
+*wModifiers*<br/>
+[in] 바로 가기 키의 한정자 키를 나타내는 플래그의 비트 조합 (OR)입니다.  
   
  보조키 플래그는 다음과 같습니다.  
   

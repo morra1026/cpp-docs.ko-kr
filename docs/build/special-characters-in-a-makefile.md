@@ -17,18 +17,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40d9ad442e4838ee837c93ada0352f230fc0cbed
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 3ae77e769672dcc88a9dd41c901424c8c8150e6b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894436"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709365"
 ---
 # <a name="special-characters-in-a-makefile"></a>메이크파일의 특수 문자
 
 NMAKE 특수 문자를 리터럴 문자로 사용 하려면 앞에 캐럿 (^)를 배치 합니다. NMAKE 다른 문자 앞에 있는 캐럿을 무시 합니다. 특수 문자는 다음과 같습니다.
 
-`:  ;  #  (  )  $  ^  \  {  }  !  @  —`  
+`:  ;  #  (  )  $  ^  \  {  }  !  @  —`
 
 따옴표 붙은 문자열 안에 캐럿 (^)는 캐럿 리터럴 문자로 처리 됩니다. 줄의 끝에 캐럿 매크로 문자열에 리터럴 줄 바꿈 문자를 삽입합니다.
 

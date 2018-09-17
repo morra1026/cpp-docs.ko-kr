@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c448c551e7b800301e374fed9a8f6acb7aa7ab1b
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 780ccdb7f16ed79ef8205c07e1390e778bc33ef5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110138"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711388"
 ---
 # <a name="uniquelock-class"></a>unique_lock 클래스
 
@@ -130,7 +130,7 @@ unique_lock& operator=(unique_lock&& Other) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*기타*  
+*기타*<br/>
 `unique_lock` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -181,7 +181,7 @@ void swap(unique_lock& Other) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*기타*  
+*기타*<br/>
 `unique_lock` 개체입니다.
 
 ## <a name="try_lock"></a>  try_lock
@@ -214,7 +214,7 @@ bool try_lock_for(
 
 ### <a name="parameters"></a>매개 변수
 
-*Rel_time*  
+*Rel_time*<br/>
 메서드가 `mutex`의 소유권을 가져오려고 시도하는 최대 시간을 지정하는 [chrono::duration](../standard-library/duration-class.md) 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -240,7 +240,7 @@ bool try_lock_until(const xtime* Abs_time);
 
 ### <a name="parameters"></a>매개 변수
 
-*Abs_time*  
+*Abs_time*<br/>
 임계값을 지정하는 특정 시점으로, 이 시간 경과 후에는 메서드가 더 이상 `mutex`의 소유권을 가져오려고 시도하지 않습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -283,16 +283,16 @@ unique_lock(mutex_type& Mtx,
 
 ### <a name="parameters"></a>매개 변수
 
-*Mtx*  
+*Mtx*<br/>
 뮤텍스 형식 개체입니다.
 
-*Rel_time*  
+*Rel_time*<br/>
 메서드가 `mutex`의 소유권을 가져오려고 시도하는 최대 시간을 지정하는 [chrono::duration](../standard-library/duration-class.md) 개체입니다.
 
-*Abs_time*  
+*Abs_time*<br/>
 임계값을 지정하는 특정 시점으로, 이 시간 경과 후에는 메서드가 더 이상 `mutex`의 소유권을 가져오려고 시도하지 않습니다.
 
-*기타*  
+*기타*<br/>
 `unique_lock` 개체입니다.
 
 ### <a name="remarks"></a>설명

@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e0436dbbc75690d38b5930a491b7058ee095341
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 1c8b1466eae343b6c644b6ecfbd919c3241259bf
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692287"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705967"
 ---
 # <a name="parallel"></a>parallel
-여러 스레드에서 동시에 실행 되는 코드의 병렬 영역을 정의 합니다.  
+병렬로 여러 스레드에서 실행 될 코드는 병렬 영역을 정의 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,14 +35,13 @@ ms.locfileid: "33692287"
 }  
 ```  
   
-## <a name="remarks"></a>설명  
- 다음은 각 문자에 대한 설명입니다.  
+## <a name="arguments"></a>인수
+
+*절*<br/>
+(선택 사항) 0 개 이상의 절입니다.  지 원하는 절의 목록 설명 섹션을 참조 하세요 **병렬**합니다.  
   
- `clause`(선택 사항)  
- 0 개 이상의 절입니다.  지 원하는 절을 목록에 대 한 설명 섹션을 참조 **병렬**합니다.  
-  
 ## <a name="remarks"></a>설명  
- **병렬** 지시문 다음 OpenMP 절을 지원 합니다.  
+ 합니다 **병렬** 지시문 다음 OpenMP 절을 지원 합니다.  
   
 -   [copyin](../../../parallel/openmp/reference/copyin.md)  
   
@@ -60,12 +59,12 @@ ms.locfileid: "33692287"
   
 -   [shared](../../../parallel/openmp/reference/shared-openmp.md)  
   
- **병렬** 에 사용할 수는 [섹션](../../../parallel/openmp/reference/sections-openmp.md) 및 [에 대 한](../../../parallel/openmp/reference/for-openmp.md) 지시문입니다.  
+ **병렬** 사용 하 여 사용할 수도 있습니다는 [섹션](../../../parallel/openmp/reference/sections-openmp.md) 하 고 [에 대 한](../../../parallel/openmp/reference/for-openmp.md) 지시문입니다.  
   
- 자세한 내용은 참조 [2.3 parallel 구문](../../../parallel/openmp/2-3-parallel-construct.md)합니다.  
+ 자세한 내용은 [2.3 parallel 구문](../../../parallel/openmp/2-3-parallel-construct.md)합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에는 스레드 수를 설정 하 고 병렬 영역을 정의 하는 방법을 보여 줍니다. 기본적으로 스레드 수가 컴퓨터에 논리적 프로세서 수와 같습니다. 예를 들어, 하이퍼 스레딩을 사용 하도록 설정 된 하나의 실제 프로세서 컴퓨터를 설정한 경우은 두 개의 논리 프로세서와 따라서 두 개의 스레드입니다.  
+ 다음 샘플에는 스레드 수를 설정 하 고 병렬 영역을 정의 하는 방법을 보여 줍니다. 기본적으로 스레드 수가 컴퓨터의 논리 프로세서의 수와 같습니다. 예를 들어, 하이퍼 스레딩을 사용에 실제 프로세서가 있는 컴퓨터에 있는 경우 됩니다 것 두 개의 논리 프로세서 및 따라서 두 개의 스레드입니다.  
   
 ```  
 // omp_parallel.cpp  
@@ -90,7 +89,7 @@ Hello from thread 3
 ```  
   
 ## <a name="comment"></a>주석  
- 출력의 순서 서로 다른 컴퓨터에서 다를 수 있는 참고 합니다.  
+ 출력의 순서는 서로 다른 컴퓨터에서 달라질 수 있는 참고 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [지시문](../../../parallel/openmp/reference/openmp-directives.md)

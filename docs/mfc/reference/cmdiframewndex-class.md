@@ -166,12 +166,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1015d35bea25ceaf23a822c9edea4da121583c61
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 91ca6c6a2d00bb377fe5b4980ea821184627826f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43678816"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45708242"
 ---
 # <a name="cmdiframewndex-class"></a>CMDIFrameWndEx 클래스
 기능을 확장 [CMDIFrameWnd](../../mfc/reference/cframewnd-class.md), Windows 인터페이스 MDI (다중 문서) 프레임 창입니다.  
@@ -314,11 +314,11 @@ BOOL AddPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pControlBar*  
- 등록 창에 대 한 포인터입니다.  
+*pControlBar*<br/>
+[in] 등록 창에 대 한 포인터입니다.  
   
- [in] *bTail*  
- 이 창 목록의 끝에 추가할지 여부를 지정 합니다.  
+*bTail*<br/>
+[in] 이 창 목록의 끝에 추가할지 여부를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  창에 성공적으로 등록 되 면 0이 아닌 값을 반환 합니다. 창 고 도킹 관리자를 사용 하 여 이미 등록 되어 있으면 0을 반환 합니다.  
@@ -341,8 +341,8 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hdwp*  
- 여러 창 위치 구조를 식별합니다. 호출 하 여이 값을 가져올 수 있습니다 `BeginDeferWindowPos`합니다.  
+*hdwp*<br/>
+[in] 여러 창 위치 구조를 식별합니다. 호출 하 여이 값을 가져올 수 있습니다 `BeginDeferWindowPos`합니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 창에 도킹 되는 모든 창 레이아웃을 다시 계산 하려면이 멤버 함수를 호출 합니다.  
@@ -355,8 +355,8 @@ BOOL AreMDITabs(int* pnMDITabsType=NULL) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *pnMDITabsType*  
- 사용할 수 있는 기능을 표시 하는 정수 변수에 대 한 포인터:  
+*pnMDITabsType*<br/>
+[out] 사용할 수 있는 기능을 표시 하는 정수 변수에 대 한 포인터:  
   
 -   0: 모든 기능이 비활성화 됩니다.  
   
@@ -414,11 +414,11 @@ virtual CMDIChildWndEx* CreateDocumentWindow(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpcszDocName*  
- 문서 식별자가 포함 된 텍스트 문자열입니다. 일반적으로 문서 파일의 전체 경로입니다.  
+*lpcszDocName*<br/>
+[in] 문서 식별자가 포함 된 텍스트 문자열입니다. 일반적으로 문서 파일의 전체 경로입니다.  
   
- [in] *pObj*  
- 사용자 정의 개체에 대 한 포인터입니다. 예를 들어, 개발자 문서를 설명 하 고 시작 시 문서를 초기화 해야 하는 방법을 지시 하는 응용 프로그램별 데이터 구조를 만들 수 있습니다.  
+*pObj*<br/>
+[in] 사용자 정의 개체에 대 한 포인터입니다. 예를 들어, 개발자 문서를 설명 하 고 시작 시 문서를 초기화 해야 하는 방법을 지시 하는 응용 프로그램별 데이터 구조를 만들 수 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
  에 대 한 포인터 `CMDIChildWndEx`합니다.  
@@ -445,11 +445,11 @@ virtual CMDIChildWndEx* CreateNewWindow(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpcszDocName*  
- 문서 이름입니다.  
+*lpcszDocName*<br/>
+[in] 문서 이름입니다.  
   
- [in] *pObj*  
- 나중에 사용하기 위해 예약되어 있습니다.  
+*pObj*<br/>
+[in] 사용 하도록 예약 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  새 창에 대 한 포인터입니다.  
@@ -465,14 +465,14 @@ void DockPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- 도킹 창에 대 한 포인터입니다.  
+*pBar*<br/>
+[in] 도킹 창에 대 한 포인터입니다.  
   
- [in] *nDockBarID*  
- 프레임 창에 도킹 있는 쪽을 지정 합니다.  
+*nDockBarID*<br/>
+[in] 프레임 창에 도킹 있는 쪽을 지정 합니다.  
   
- [in] *lpRect*  
- 사용되지 않습니다.  
+*lpRect*<br/>
+[in] 사용 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 지정 된 도킹 된 프레임 창의 어느 한쪽 창 때 지정 된 [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking) 하 고 [CMDIFrameWndEx::EnableDocking](#enabledocking) 호출한.  
@@ -492,11 +492,11 @@ BOOL DockPaneLeftOf(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- 도킹 창에 대 한 포인터입니다.  
+*pBar*<br/>
+[in] 도킹 창에 대 한 포인터입니다.  
   
- [in] *pLeftOf*  
- 창으로 도킹 사이트에 대 한 포인터입니다. .  
+*pLeftOf*<br/>
+[in] 창으로 도킹 사이트에 대 한 포인터입니다. .  
   
 ### <a name="return-value"></a>반환 값  
  작업이 성공한 경우 TRUE를 반환 합니다. 그렇지 않으면 FALSE를 반환합니다.  
@@ -517,8 +517,8 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwDockStyle*  
- 주 프레임 창 사용 될 측면을 지정 합니다. 다음 플래그 중 하나 이상을 사용 합니다.  
+*dwDockStyle*<br/>
+[in] 주 프레임 창 사용 될 측면을 지정 합니다. 다음 플래그 중 하나 이상을 사용 합니다.  
   
 - CBRS_ALIGN_LEFT  
   
@@ -546,8 +546,8 @@ BOOL EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwDockStyle*  
- 적용 하려는 도킹 스타일을 지정 합니다.  
+*dwDockStyle*<br/>
+[in] 적용 하려는 도킹 스타일을 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -567,8 +567,8 @@ void EnableFullScreenMainMenu(BOOL bEnableMenu);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnableMenu*  
- 전체 화면 모드 또는 숨기려면 FALSE 주 메뉴를 표시 하려면 TRUE입니다.  
+*bEnableMenu*<br/>
+[in] 전체 화면 모드 또는 숨기려면 FALSE 주 메뉴를 표시 하려면 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -580,8 +580,8 @@ void EnableFullScreenMode(UINT uiFullScreenCmd);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiFullScreenCmd*  
- ID 또는 전체 화면 모드를 해제 하는 명령입니다.  
+*uiFullScreenCmd*<br/>
+[in] ID 또는 전체 화면 모드를 해제 하는 명령입니다.  
   
 ### <a name="remarks"></a>설명  
  전체 화면 모드에서 모든 도킹 컨트롤 막대, 도구 모음 및 메뉴는 숨겨져 있으며, 활성 뷰가 전체 화면을 차지 하도록 크기가 조정 됩니다. 전체 화면 모드를 사용 하도록 설정 하거나이 사용 하지 않도록 설정 하는 명령 ID를 지정 해야 합니다. 호출할 수 있습니다 `EnableFullScreenMode` 주 프레임에서 `OnCreate` 함수입니다. 지정한 명령 ID를 가진 단추 하나를 사용 하 여 프레임 워크 부동 도구 모음을 만드는 프레임 창을 전체 화면 모드로 전환 되는 경우 화면에서 주 메뉴를 유지 하려는 경우 호출할 [CMDIFrameWndEx::EnableFullScreenMainMenu](#enablefullscreenmainmenu)합니다.  
@@ -594,8 +594,8 @@ void EnableLoadDockState(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 도킹 상태를 로드 하는 사용 하지 않으려면 FALSE 도킹 상태를 로드를 사용 하려면 TRUE입니다.  
+*bEnable*<br/>
+[in] 도킹 상태를 로드 하는 사용 하지 않으려면 FALSE 도킹 상태를 로드를 사용 하려면 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -609,11 +609,11 @@ void EnableMDITabbedGroups(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- True 이면 MDI 탭된 그룹 기능을 사용 하도록 설정. FALSE 이면 MDI 탭된 그룹 기능을 사용할 수 없습니다.  
+*bEnable*<br/>
+[in] True 이면 MDI 탭된 그룹 기능을 사용 하도록 설정. FALSE 이면 MDI 탭된 그룹 기능을 사용할 수 없습니다.  
   
- [in] *매개 변수*  
- 프레임 워크 MDI 클라이언트 영역에서 만든 자식 창에 적용 되는 매개 변수를 지정 합니다.  
+*params*<br/>
+[in] 프레임 워크 MDI 클라이언트 영역에서 만든 자식 창에 적용 되는 매개 변수를 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  MDI 탭된 그룹 기능을 사용 하지 않도록 설정 하거나 사용 하려면이 메서드를 사용 합니다. 이 기능을 사용 하면 자식 창을 세로로 정렬 된 탭된 창으로 또는 MDI 클라이언트 영역 내에서 가로로 표시할 MDI 응용 프로그램입니다. 탭 창의 그룹은 분할자로 구분됩니다. 사용자는 분할자를 사용 하 여 탭된 그룹의 크기를 조정할 수 있습니다.  
@@ -695,8 +695,8 @@ void EnableMDITabsLastActiveActivation(BOOL bLastActiveTab=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bLastActiveTab*  
- TRUE 이면 마지막 활성 탭의 정품 인증을 사용 하도록 설정 합니다. FALSE 이면 마지막 활성 탭의 정품 인증을 사용 하지 않도록 설정 합니다.  
+*bLastActiveTab*<br/>
+[in] TRUE 이면 마지막 활성 탭의 정품 인증을 사용 하도록 설정 합니다. FALSE 이면 마지막 활성 탭의 정품 인증을 사용 하지 않도록 설정 합니다.  
   
 ### <a name="remarks"></a>설명  
  두 가지 방법으로 활성 탭을 닫으면는 탭이 열립니다.  
@@ -723,23 +723,23 @@ void EnablePaneMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- TRUE 이면 창 메뉴의 자동 처리를 사용할 수 있습니다. FALSE 이면 자동 처리를 사용할 수 있습니다.  
+*bEnable*<br/>
+[in] TRUE 이면 창 메뉴의 자동 처리를 사용할 수 있습니다. FALSE 이면 자동 처리를 사용할 수 있습니다.  
   
- [in] *uiCustomizeCmd*  
- 명령 ID를 합니다 **사용자 지정** 메뉴 항목입니다. 이 메뉴 항목은 일반적으로 창의 목록 끝에 추가 됩니다.  
+*uiCustomizeCmd*<br/>
+[in] 명령 ID를 합니다 **사용자 지정** 메뉴 항목입니다. 이 메뉴 항목은 일반적으로 창의 목록 끝에 추가 됩니다.  
   
- [in] *strCustomizeLabel*  
- 에 대해 표시할 텍스트를 **사용자 지정** 메뉴 항목 (지역화).  
+*strCustomizeLabel*<br/>
+[in] 에 대해 표시할 텍스트를 **사용자 지정** 메뉴 항목 (지역화).  
   
- [in] *uiViewToolbarsMenuEntryID*  
- 창 메뉴를 열고 도구 모음 메뉴 항목의 ID를 지정 합니다. 이 일반적으로 **도구 모음** 의 하위 메뉴의 **보기** 메뉴.  
+*uiViewToolbarsMenuEntryID*<br/>
+[in] 창 메뉴를 열고 도구 모음 메뉴 항목의 ID를 지정 합니다. 이 일반적으로 **도구 모음** 의 하위 메뉴의 **보기** 메뉴.  
   
- [in] *bContextMenuShowsToolbarsOnly*  
- True 이면 창 메뉴 도구 모음 목록만을 표시 합니다. FALSE 이면 메뉴 도구 모음 및 도킹 막대의 목록을 표시 합니다.  
+*bContextMenuShowsToolbarsOnly*<br/>
+[in] True 이면 창 메뉴 도구 모음 목록만을 표시 합니다. FALSE 이면 메뉴 도구 모음 및 도킹 막대의 목록을 표시 합니다.  
   
- [in] *bViewMenuShowsToolbarsOnly*  
- True 이면 창 메뉴 도구 모음 목록만을 표시 합니다. FALSE 이면 메뉴 도구 모음 및 도킹 막대의 목록을 표시 합니다.  
+*bViewMenuShowsToolbarsOnly*<br/>
+[in] True 이면 창 메뉴 도구 모음 목록만을 표시 합니다. FALSE 이면 메뉴 도구 모음 및 도킹 막대의 목록을 표시 합니다.  
   
 ### <a name="remarks"></a>설명  
  팝업 창 메뉴 응용 프로그램의 창 목록을 표시 하 고 사용자가 표시 하거나 창을 개별적으로 숨길 수 있습니다.  
@@ -768,17 +768,17 @@ void EnableWindowsDialog(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiMenuId*  
- 메뉴의 리소스 ID를 지정합니다.  
+*uiMenuId*<br/>
+[in] 메뉴의 리소스 ID를 지정합니다.  
   
- [in] *lpszMenuText*  
- 항목의 텍스트를 지정합니다.  
+*lpszMenuText*<br/>
+[in] 항목의 텍스트를 지정합니다.  
   
- [in] *bShowHelpButton*  
- 표시할지 여부를 지정 된 **도움말** windows 관리 대화 상자에서 단추.  
+*bShowHelpButton*<br/>
+[in] 표시할지 여부를 지정 된 **도움말** windows 관리 대화 상자에서 단추.  
   
- [in] *uiMenuTextResId*  
- 항목의 텍스트 문자열을 포함 하는 문자열 리소스 식별자입니다.  
+*uiMenuTextResId*<br/>
+[in] 항목의 텍스트 문자열을 포함 하는 문자열 리소스 식별자입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드를 사용 하 여 MDI 자식 창 관리 대화 상자를 호출 하는 해당 명령 메뉴 항목을 삽입 합니다 ( [CMFCWindowsManagerDialog 클래스](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)). 지정 된 메뉴에 새 항목이 삽입 되 *uiMenuId*합니다. 호출 `EnableWindowsDialog` WM_CREATE 메시지를 처리 하는 경우.  
@@ -884,8 +884,8 @@ CBasePane* GetPane(UINT nID);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 컨트롤 id입니다.  
+*nID*<br/>
+[in] 컨트롤 id입니다.  
   
 ### <a name="return-value"></a>반환 값  
  있는 경우 지정 된 컨트롤 ID를가지고 있는 창에 대 한 포인터입니다. 그렇지 않으면 NULL입니다.  
@@ -925,11 +925,11 @@ virtual BOOL GetToolbarButtonToolTipText(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pButton*  
- 도구 모음 단추에 대 한 포인터입니다.  
+*pButton*<br/>
+[in] 도구 모음 단추에 대 한 포인터입니다.  
   
- [in] *strTTText*  
- 단추에 대해 표시할 도구 설명 텍스트입니다.  
+*strTTText*<br/>
+[in] 단추에 대해 표시할 도구 설명 텍스트입니다.  
   
 ### <a name="return-value"></a>반환 값  
  도구 설명이 표시 되 면 TRUE입니다. FALSE이 고, 그렇지 합니다.  
@@ -947,14 +947,14 @@ BOOL InsertPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pControlBar*  
- 삽입할 창에 대 한 포인터입니다.  
+*pControlBar*<br/>
+[in] 삽입할 창에 대 한 포인터입니다.  
   
- [in] *pTarget*  
- 창에 삽입할 전후 창에 대 한 포인터입니다.  
+*pTarget*<br/>
+[in] 창에 삽입할 전후 창에 대 한 포인터입니다.  
   
- [in] *후에는*  
- TRUE 이면 *pControlBar* 뒤에 삽입 됩니다 *pTarget*합니다. FALSE 이면 *pControlBar* 앞에 삽입 됩니다 *pTarget*합니다.  
+*후에는*<br/>
+[in] TRUE 이면 *pControlBar* 뒤에 삽입 됩니다 *pTarget*합니다. FALSE 이면 *pControlBar* 앞에 삽입 됩니다 *pTarget*합니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드를 성공적으로 등록 창에 FALSE를 창 고 도킹 관리자를 사용 하 여 이미 등록 된 경우 TRUE입니다.  
@@ -996,8 +996,8 @@ BOOL IsMemberOfMDITabGroup(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- 탭된 창에 대 한 포인터입니다.  
+*pWnd*<br/>
+[in] 탭된 창에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정된 된 탭된 창을 MDI 탭 그룹을 형성 하는 탭된 창 목록을 이면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1023,14 +1023,14 @@ BOOL IsPointNearDockSite(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 화면 좌표에서 지정 된 지점입니다.  
+*지점*<br/>
+[in] 화면 좌표에서 지정 된 지점입니다.  
   
- [in] *dwBarAlignment*  
- 요점은 가까운 가장자리를 지정 합니다. 가능한 값은 CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT, CBRS_ALIGN_TOP, 및 CBRS_ALIGN_BOTTOM  
+*dwBarAlignment*<br/>
+[in] 요점은 가까운 가장자리를 지정 합니다. 가능한 값은 CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT, CBRS_ALIGN_TOP, 및 CBRS_ALIGN_BOTTOM  
   
- [in] *bOuterEdge*  
- TRUE 이면 포인터가 거의 도킹 사이트;의 바깥쪽 테두리 FALSE이 고, 그렇지 합니다.  
+*bOuterEdge*<br/>
+[in] TRUE 이면 포인터가 거의 도킹 사이트;의 바깥쪽 테두리 FALSE이 고, 그렇지 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  도킹 사이트; 가까운 지점이 있으면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1062,17 +1062,17 @@ virtual BOOL LoadFrame(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nIDResource*  
- 프레임 창에 연결 된 공유 리소스의 ID입니다.  
+*nIDResource*<br/>
+[in] 프레임 창에 연결 된 공유 리소스의 ID입니다.  
   
- [in] *dwDefaultStyle*  
- 프레임 창 스타일입니다.  
+*dwDefaultStyle*<br/>
+[in] 프레임 창 스타일입니다.  
   
- [in] *pParentWnd*  
- 프레임의 부모에 대 한 포인터입니다.  
+*pParentWnd*<br/>
+[in] 프레임의 부모에 대 한 포인터입니다.  
   
- [in] *pContext*  
- 에 대 한 포인터를 [CCreateContext 구조체](../../mfc/reference/ccreatecontext-structure.md)합니다. 이 매개 변수는 NULL 일 수 있습니다.  
+*pContext*<br/>
+[in] 에 대 한 포인터를 [CCreateContext 구조체](../../mfc/reference/ccreatecontext-structure.md)합니다. 이 매개 변수는 NULL 일 수 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE는 메서드가 성공 하면, 그렇지 않으면 FALSE입니다.  
@@ -1085,8 +1085,8 @@ virtual BOOL LoadMDIState(LPCTSTR lpszProfileName);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszProfileName*  
- 프로필 이름을 지정합니다.  
+*lpszProfileName*<br/>
+[in] 프로필 이름을 지정합니다.  
   
 ### <a name="return-value"></a>반환 값  
  로드가 성공 하면 TRUE입니다. FALSE 이면 로드 되지 않았거나 로드할 데이터가 없습니다.  
@@ -1115,8 +1115,8 @@ void MDITabMoveToNextGroup(BOOL bNext=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *다음*  
- TRUE 이면 다음 탭된 그룹으로 탭을 이동 합니다. FALSE 인 경우 이전 탭된 그룹으로 이동 합니다.  
+*다음*<br/>
+[in] TRUE 이면 다음 탭된 그룹으로 탭을 이동 합니다. FALSE 인 경우 이전 탭된 그룹으로 이동 합니다.  
   
 ##  <a name="mditabnewgroup"></a>  CMDIFrameWndEx::MDITabNewGroup  
  단일 창에는 새 탭된 그룹을 만듭니다.  
@@ -1126,8 +1126,8 @@ void MDITabNewGroup(BOOL bVert=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bVert*  
- 새 그룹 맞춤을 지정합니다. TRUE 이면 새 그룹을 세로로 맞춥니다. False 인 경우, 새 그룹을 가로로 맞춥니다.  
+*bVert*<br/>
+[in] 새 그룹 맞춤을 지정합니다. TRUE 이면 새 그룹을 세로로 맞춥니다. False 인 경우, 새 그룹을 가로로 맞춥니다.  
   
 ### <a name="remarks"></a>설명  
  이 함수를 사용 하 여 새 창 (새 탭된 그룹)를 탭 하 고 첫 번째 탭에 추가 합니다.  
@@ -1178,8 +1178,8 @@ virtual BOOL NegotiateBorderSpace(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nBorderCmd*  
- 열거형에서 다음 값 중 하나가 포함 되어 있습니다 `CFrameWnd::BorderCmd`:  
+*nBorderCmd*<br/>
+[in] 열거형에서 다음 값 중 하나가 포함 되어 있습니다 `CFrameWnd::BorderCmd`:  
   
 - `borderGet` = 1  
   
@@ -1187,8 +1187,8 @@ virtual BOOL NegotiateBorderSpace(
   
 - `borderSet` = 3  
   
- [out에서] *lpRectBorder*  
- 에 대 한 포인터를 [RECT 구조체](../../mfc/reference/rect-structure1.md) 또는 [CRect 클래스](../../atl-mfc-shared/reference/crect-class.md) 테두리 좌표를 지정 하는 개체입니다.  
+*lpRectBorder*<br/>
+[out에서] 에 대 한 포인터를 [RECT 구조체](../../mfc/reference/rect-structure1.md) 또는 [CRect 클래스](../../atl-mfc-shared/reference/crect-class.md) 테두리 좌표를 지정 하는 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -1204,8 +1204,8 @@ virtual BOOL OnCloseDockingPane(CDockablePane* pWnd);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- 닫히기 창에 대 한 포인터입니다.  
+*pWnd*<br/>
+[in] 닫히기 창에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  도킹 창을 닫을 수 있는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1223,8 +1223,8 @@ virtual BOOL OnCloseMiniFrame(CPaneFrameWnd*);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- 닫히기 미니 프레임 창에 대 한 포인터입니다.  
+*pWnd*<br/>
+[in] 닫히기 미니 프레임 창에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 부동 미니 프레임 창을 닫을 수 있습니다. 그렇지 않으면 FALSE입니다.  
@@ -1242,8 +1242,8 @@ virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMenuPopup*  
- 팝업 메뉴에 대 한 포인터입니다.  
+*pMenuPopup*<br/>
+[in] 팝업 메뉴에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  알림을 처리 하려는 경우이 메서드를 재정의 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md) 개체만 WM_DESTROY 메시지를 처리할 때 MDI 프레임 창에 속해 있는 개체입니다.  
@@ -1260,17 +1260,17 @@ virtual BOOL OnCmdMsg(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 명령 ID입니다.  
+*nID*<br/>
+[in] 명령 id입니다.  
   
- [in] *nCode*  
- 명령 알림 코드를 식별합니다. 참조 [CCmdTarget::OnCmdMsg](../../mfc/reference/ccmdtarget-class.md#oncmdmsg) 에 대 한 자세한 내용은 *nCode*합니다.  
+*nCode*<br/>
+[in] 명령 알림 코드를 식별합니다. 참조 [CCmdTarget::OnCmdMsg](../../mfc/reference/ccmdtarget-class.md#oncmdmsg) 에 대 한 자세한 내용은 *nCode*합니다.  
   
- [in] *pExtra*  
- 값에 따라 사용할 *nCode*합니다. 참조 [CCmdTarget::OnCmdMsg](../../mfc/reference/ccmdtarget-class.md#oncmdmsg) 에 대 한 자세한 내용은 *pExtra*합니다.  
+*pExtra*<br/>
+[in] 값에 따라 사용할 *nCode*합니다. 참조 [CCmdTarget::OnCmdMsg](../../mfc/reference/ccmdtarget-class.md#oncmdmsg) 에 대 한 자세한 내용은 *pExtra*합니다.  
   
- [out에서] *pHandlerInfo*  
- 일반적으로이 매개 변수는 NULL 이어야 합니다. NULL이 아닌 경우 `OnCmdMsg` 채웁니다 합니다 `pTarget` 및 `pmf` 의 멤버는 *pHandlerInfo* 명령 디스패치 하는 대신 구조입니다.  
+*pHandlerInfo*<br/>
+[out에서] 일반적으로이 매개 변수는 NULL 이어야 합니다. NULL이 아닌 경우 `OnCmdMsg` 채웁니다 합니다 `pTarget` 및 `pmf` 의 멤버는 *pHandlerInfo* 명령 디스패치 하는 대신 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  0이 아닌 메시지 처리 됩니다. 그렇지 않으면 0입니다.  
@@ -1286,14 +1286,14 @@ virtual BOOL OnDrawMenuImage(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pMenuButton*  
- 메뉴 단추에 대 한 포인터입니다.  
+*pMenuButton*<br/>
+[in] 메뉴 단추에 대 한 포인터입니다.  
   
- [in] *rectImage*  
- 이미지의 경계 사각형입니다.  
+*rectImage*<br/>
+[in] 이미지의 경계 사각형입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 메서드는 이미지를 그립니다. 기본 구현은 FALSE를 반환합니다.  
@@ -1337,11 +1337,11 @@ virtual BOOL OnMenuButtonToolHitTest(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pButton*  
- 도구 모음 단추입니다.  
+*pButton*<br/>
+[in] 도구 모음 단추입니다.  
   
- [out] *pTI*  
- 에 대 한 포인터를 [TOOLINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) 구조입니다.  
+*PTI*<br/>
+[out] 에 대 한 포인터를 [TOOLINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  응용 프로그램 가득 찬 경우 TRUE를 *pTI* 매개 변수입니다. 기본 구현은 FALSE를 반환합니다.  
@@ -1357,8 +1357,8 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pFrame*  
- 미니 프레임 창에 대 한 포인터입니다.  
+*pFrame*<br/>
+[in] 미니 프레임 창에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE는 메서드가 성공 하면, 그렇지 않으면 FALSE입니다.  
@@ -1373,11 +1373,11 @@ virtual void OnSetPreviewMode(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bPreview*  
- TRUE 이면 인쇄 미리 보기 모드를 설정 합니다. False 인 경우, 취소 미리 보기 모드로 합니다.  
+*bPreview*<br/>
+[in] TRUE 이면 인쇄 미리 보기 모드를 설정 합니다. False 인 경우, 취소 미리 보기 모드로 합니다.  
   
- [in] *pState*  
- 에 대 한 포인터를 `CPrintPreviewState` 구조입니다.  
+*pState*<br/>
+[in] 에 대 한 포인터를 `CPrintPreviewState` 구조입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드를 재정의 [cframewnd:: Onsetpreviewmode](../../mfc/reference/cframewnd-class.md#onsetpreviewmode)합니다.  
@@ -1392,11 +1392,11 @@ virtual BOOL OnShowCustomizePane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMenuPane*  
- 빠른 사용자 지정 창에 대 한 포인터입니다.  
+*pMenuPane*<br/>
+[in] 빠른 사용자 지정 창에 대 한 포인터입니다.  
   
- [in] *uiToolbarID*  
- 사용자 지정 하려면 도구 모음의 컨트롤 ID입니다.  
+*uiToolbarID*<br/>
+[in] 사용자 지정 하려면 도구 모음의 컨트롤 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 항상 TRUE를 반환 합니다.  
@@ -1417,11 +1417,11 @@ virtual BOOL OnShowMDITabContextMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 화면 좌표에서 메뉴의 위치입니다.  
+*지점*<br/>
+[in] 화면 좌표에서 메뉴의 위치입니다.  
   
- [in] *dwAllowedItems*  
- 현재 탭에 대 한 허용 되는 작업을 나타내는 플래그의 비트 OR 조합 합니다.  
+*dwAllowedItems*<br/>
+[in] 현재 탭에 대 한 허용 되는 작업을 나타내는 플래그의 비트 OR 조합 합니다.  
   
 - BCGP_MDI_CREATE_VERT_GROUP-세로 탭 그룹을 만들 수 있습니다.  
   
@@ -1433,8 +1433,8 @@ virtual BOOL OnShowMDITabContextMenu(
   
 - BCGP_MDI_CAN_BE_DOCKED-탭된 문서 (탭 문서에 해당) 도킹 된 상태로 전환 합니다.  
   
- [in] *bTabDrop*  
- 다른 탭된 그룹을 사용 하 여 탭을 끌어 결과로 메뉴를 표시 하려면 TRUE입니다. 현재 활성 탭의 바로 가기 메뉴로 메뉴를 표시 하려면 FALSE입니다.  
+*bTabDrop*<br/>
+[in] 다른 탭된 그룹을 사용 하 여 탭을 끌어 결과로 메뉴를 표시 하려면 TRUE입니다. 현재 활성 탭의 바로 가기 메뉴로 메뉴를 표시 하려면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드를 재정의 하는 [CBCGPMDIFrameWnd](../../mfc/reference/cmdiframewndex-class.md)-클래스를 파생 합니다.  
@@ -1455,8 +1455,8 @@ virtual BOOL OnShowPanes(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bShow*  
- 창을 숨기려면 FALSE 창 표시 하려면 TRUE입니다.  
+*bShow*<br/>
+[in] 창을 숨기려면 FALSE 창 표시 하려면 TRUE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  창의 상태 창에서 지정한 상태 이미 있는 경우이 메서드를 FALSE 호출의 결과로 변경 되 면 TRUE *bShow*합니다. 예를 들어 숨겨진 창 및 *bShow* 가 FALSE를 반환 값은 FALSE입니다.  
@@ -1491,11 +1491,11 @@ virtual void OnSizeMDIClient(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rectOld*  
- MDI 클라이언트 창의 현재 크기입니다.  
+*rectOld*<br/>
+[in] MDI 클라이언트 창의 현재 크기입니다.  
   
- [in] *rectNew*  
- MDI 클라이언트 창의 새 크기입니다.  
+*rectNew*<br/>
+[in] MDI 클라이언트 창의 새 크기입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1509,11 +1509,11 @@ virtual BOOL OnTearOffMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMenuPopup*  
- 팝업 메뉴에 대 한 포인터입니다.  
+*pMenuPopup*<br/>
+[in] 팝업 메뉴에 대 한 포인터입니다.  
   
- [in] *pBar*  
- 분리 막대가 막대에 대 한 포인터입니다.  
+*pBar*<br/>
+[in] 분리 막대가 막대에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  활성화; 수 분리 모음으로 팝업 메뉴에는 TRUE 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
@@ -1529,8 +1529,8 @@ virtual void OnUpdateFrameMenu(HMENU hMenuAlt);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hMenuAlt*  
- 메뉴 핸들입니다.  
+*hMenuAlt*<br/>
+[in] 메뉴 핸들입니다.  
   
 ##  <a name="panefrompoint"></a>  CMDIFrameWndEx::PaneFromPoint  
  지정 된 위치를 포함 하는 도킹 창을 반환 합니다.  
@@ -1550,20 +1550,20 @@ CBasePane* PaneFromPoint(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 화면 좌표로 나타낸 점입니다.  
+*지점*<br/>
+[in] 화면 좌표로 나타낸 점입니다.  
   
- [in] *nSensitivity*  
- 각 선택 창의 창 사각형을 모든 방향으로이 값으로 확대 됩니다.  
+*nSensitivity*<br/>
+[in] 각 선택 창의 창 사각형을 모든 방향으로이 값으로 확대 됩니다.  
   
- [in] *bExactBar*  
- TRUE 이면 합니다 *nSensitivity* 매개 변수가 무시 됩니다.  
+*bExactBar*<br/>
+[in] TRUE 이면 합니다 *nSensitivity* 매개 변수가 무시 됩니다.  
   
- [in] *pRTCBarType*  
- Null이 아닌 메서드는 지정 된 형식의 창만를 반복 합니다.  
+*pRTCBarType*<br/>
+[in] Null이 아닌 메서드는 지정 된 형식의 창만를 반복 합니다.  
   
- [out] *dwAlignment*  
- 창을 발견 되 면이 매개 변수는 창의 어느 쪽에 가장 가까운 지정 된 위치를 지정 합니다.  
+*dwAlignment*<br/>
+[out] 창을 발견 되 면이 매개 변수는 창의 어느 쪽에 가장 가까운 지정 된 위치를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  도킹 창 또는 컨트롤이 통해 지정한 점을 포함 하는 경우에 NULL에 대 한 포인터 *지점*합니다.  
@@ -1579,8 +1579,8 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bNotify*  
- 프레임 창에 대 한 활성 전체 항목의 레이아웃 변경의 알림을 받을지 여부를 결정 합니다. True 이면 항목이 알려집니다. 그렇지 않으면 FALSE입니다.  
+*bNotify*<br/>
+[in] 프레임 창에 대 한 활성 전체 항목의 레이아웃 변경의 알림을 받을지 여부를 결정 합니다. True 이면 항목이 알려집니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드를 재정의 [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout)합니다.  
@@ -1598,20 +1598,20 @@ void RemovePaneFromDockManager(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pControlBar*  
- 제거할 창에 대 한 포인터입니다.  
+*pControlBar*<br/>
+[in] 제거할 창에 대 한 포인터입니다.  
   
- [in] *bDestroy*  
- 제거 창을 삭제 하려면 TRUE입니다. False 이면 삭제 되지 않습니다.  
+*bDestroy*<br/>
+[in] 제거 창을 삭제 하려면 TRUE입니다. False 이면 삭제 되지 않습니다.  
   
- [in] *bAdjustLayout*  
- True 이면 즉시 도킹 레이아웃을 조정 합니다. FALSE 인 경우 조정만 다시 그리기 이벤트가 발생할 때 다른 이유로 발생 합니다 (사용자의 창 크기를 조정, 등을 주 프레임 끌).  
+*bAdjustLayout*<br/>
+[in] True 이면 즉시 도킹 레이아웃을 조정 합니다. FALSE 인 경우 조정만 다시 그리기 이벤트가 발생할 때 다른 이유로 발생 합니다 (사용자의 창 크기를 조정, 등을 주 프레임 끌).  
   
- [in] *bAutoHide*  
- 창 자동 숨기기 창 목록에서 제거 하려면 TRUE입니다. 창에 일반 창의 목록에서 제거 하려면 FALSE입니다.  
+*bAutoHide*<br/>
+[in] 창 자동 숨기기 창 목록에서 제거 하려면 TRUE입니다. 창에 일반 창의 목록에서 제거 하려면 FALSE입니다.  
   
- [in] *pBarReplacement*  
- 제거 창을 대체 하는 창에 대 한 포인터입니다.  
+*pBarReplacement*<br/>
+[in] 제거 창을 대체 하는 창에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  각 창 도킹 레이아웃에 참여 하 고 도킹 관리자를 사용 하 여 등록 해야 합니다. 사용 하 여 [CMDIFrameWndEx::AddPane](#addpane) 하거나 [CMDIFrameWndEx::InsertPane](#insertpane) 창을 등록 합니다.  
@@ -1626,8 +1626,8 @@ virtual BOOL SaveMDIState(LPCTSTR lpszProfileName);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszProfileName*  
- 프로필 이름을 지정합니다.  
+*lpszProfileName*<br/>
+[in] 프로필 이름을 지정합니다.  
   
 ### <a name="return-value"></a>반환 값  
  저장 성공 하면 TRUE입니다. FALSE 이면 저장 하지 못했습니다.  
@@ -1660,8 +1660,8 @@ void SetPrintPreviewFrame(CFrameWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- 인쇄 미리 보기 프레임 창에 대 한 포인터입니다.  
+*pWnd*<br/>
+[in] 인쇄 미리 보기 프레임 창에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1676,14 +1676,14 @@ void SetupToolbarMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *메뉴*  
- 에 대 한 참조를 [CMenu 클래스](../../mfc/reference/cmenu-class.md) 개체를 수정할 수 있습니다.  
+*메뉴*<br/>
+[in] 에 대 한 참조를 [CMenu 클래스](../../mfc/reference/cmenu-class.md) 개체를 수정할 수 있습니다.  
   
- [in] *uiViewUserToolbarCmdFirst*  
- 첫 번째 사용자 정의 명령을 지정합니다.  
+*uiViewUserToolbarCmdFirst*<br/>
+[in] 첫 번째 사용자 정의 명령을 지정합니다.  
   
- [in] *uiViewUserToolbarCmdLast*  
- 마지막 사용자 정의 명령을 지정합니다.  
+*uiViewUserToolbarCmdLast*<br/>
+[in] 마지막 사용자 정의 명령을 지정합니다.  
   
 ##  <a name="showfullscreen"></a>  CMDIFrameWndEx::ShowFullScreen  
  주 프레임 일반 모드에서 전체 화면 모드로 전환합니다.  
@@ -1706,17 +1706,17 @@ void ShowPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- 표시 하거나 숨길 수를 창에 대 한 포인터입니다.  
+*pBar*<br/>
+[in] 표시 하거나 숨길 수를 창에 대 한 포인터입니다.  
   
- [in] *bShow*  
- 창을 표시 하려면 TRUE입니다. 창을 숨기려면 FALSE입니다.  
+*bShow*<br/>
+[in] 창을 표시 하려면 TRUE입니다. 창을 숨기려면 FALSE입니다.  
   
- [in] *bDelay*  
- 도킹 레이아웃의 다시 계산을 지연 하려면 TRUE입니다. 도킹 레이아웃을 즉시 다시 계산 하려면 FALSE입니다.  
+*bDelay*<br/>
+[in] 도킹 레이아웃의 다시 계산을 지연 하려면 TRUE입니다. 도킹 레이아웃을 즉시 다시 계산 하려면 FALSE입니다.  
   
- [in] *bActivate*  
- Show true로 설정 하면 창에 활성으로 해야합니다. 비활성으로 창을 표시 하려면 FALSE입니다.  
+*bActivate*<br/>
+[in] Show true로 설정 하면 창에 활성으로 해야합니다. 비활성으로 창을 표시 하려면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 창 표시 / 숨기기를 호출 합니다. 사용 하지 않는 `ShowWindow` 도킹 창에 대 한 합니다.  
@@ -1786,11 +1786,11 @@ virtual void WinHelp(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwData*  
- 지정 된 도움말 유형에 대 한 필요에 따라 데이터를 지정 *nCmd*합니다.  
+*dwData*<br/>
+[in] 지정 된 도움말 유형에 대 한 필요에 따라 데이터를 지정 *nCmd*합니다.  
   
- [in] *nCmd*  
- 요청한 도움말의 형식을 지정합니다. 가능한 값 목록과 미치는 영향에 대 한 합니다 *dwData* 매개 변수를 참조 합니다 [WinHelp 함수](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows SDK의 합니다.  
+*nCmd*<br/>
+[in] 요청한 도움말의 형식을 지정 합니다. 가능한 값 목록과 미치는 영향에 대 한 합니다 *dwData* 매개 변수를 참조 합니다 [WinHelp 함수](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows SDK의 합니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드를 재정의 [cwnd:: Winhelp](../../mfc/reference/cwnd-class.md#winhelp)합니다.  

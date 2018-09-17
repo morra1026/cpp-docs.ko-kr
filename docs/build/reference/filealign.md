@@ -1,5 +1,5 @@
 ---
-title: / FILEALIGN (파일의 섹션 맞춤) | Microsoft Docs
+title: /-FILEALIGN (파일의 섹션 맞춤) | Microsoft Docs
 ms.date: 10/23/2017
 ms.technology:
 - cpp-tools
@@ -18,16 +18,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8a737801663a2c7c1e896166291a1635fbbe6c4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 630fe7014c87487a9b4df61de60ac8f5518593e0
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373272"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720020"
 ---
-# <a name="filealign-align-sections-in-files"></a>/ FILEALIGN (파일의 섹션 맞춤)
+# <a name="filealign-align-sections-in-files"></a>/FILEALIGN (파일의 섹션 맞춤)
 
-**/FILEALIGN** 링커 옵션을 사용 하면 지정 된 크기의 배수도 출력 파일에 기록 하는 섹션의 맞춤을 지정 합니다.
+합니다 **/FILEALIGN** 링커 옵션을 지정 된 크기의 배수 출력 파일에 기록 하는 섹션의 맞춤을 지정할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,22 +35,22 @@ ms.locfileid: "32373272"
 
 ### <a name="parameters"></a>매개 변수
 
-*size*  
+*size*<br/>
 섹션 맞춤 크기 바이트, 2의 거듭제곱 이어야 합니다.
 
 ## <a name="remarks"></a>설명
 
-**/FILEALIGN** 의 배수인 경계에 출력 파일의 각 섹션에 맞게 링커 옵션을 사용 하면는 *크기* 값입니다. 기본적으로 링커는 고정 된 맞춤 크기를 사용 하지 않습니다.
+**/FILEALIGN** 옵션을 사용 하면 링커의 배수인 경계에 출력 파일의 각 섹션에 맞게 합니다 *크기* 값입니다. 기본적으로 링커는 고정 된 맞춤 크기를 사용 하지 않습니다.
 
-**/FILEALIGN** 디스크 사용률을 더욱 효율적으로 지정 하려면 옵션을 사용할 수 있습니다 또는 페이지를 디스크에서 더 빠르게 로드할 수 있습니다. 더 작은 섹션 크기 다운로드가 더 작게 유지 하거나 소형 장치에서 실행 되는 앱에 대 한 유용할 수 있습니다. 섹션 맞춤 디스크에 메모리에서 맞춤의 영향을 주지 않습니다.
+합니다 **/FILEALIGN** 페이지를 디스크에서 빠르게 로드 또는 디스크 사용률을 더욱 효율적으로 확인 옵션을 사용할 수 있습니다. 더 작은 섹션 크기를 다운로드를 작게 유지 또는 소형 장치에서 실행 되는 앱에 대 한 유용할 수 있습니다. 섹션 맞춤 디스크에 메모리에서 맞춤 영향을 주지 않습니다.
 
 출력 파일의 섹션에 대한 정보를 확인하려면 [DUMPBIN](dumpbin-reference.md)을 사용하세요.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
 
-1. 선택 된 **명령줄** 속성 페이지에는 **링커** 폴더입니다.
+1. 선택 된 **명령줄** 속성 페이지에는 **링커** 폴더.
 
 1. 옵션 이름 입력 **/FILEALIGN:** 의 크기와는 **추가 옵션** 상자입니다.
 
@@ -60,5 +60,5 @@ ms.locfileid: "32373272"
 
 ## <a name="see-also"></a>참고 항목
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)   
+[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

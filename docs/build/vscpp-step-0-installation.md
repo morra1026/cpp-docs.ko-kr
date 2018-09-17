@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ee0763608edde0f7ceff81983a324190b605ff7
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: b3e0fef319fbe119118e3a915a66bea3546bbb9a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43130893"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702899"
 ---
 # <a name="install-c-support-in-visual-studio"></a>Visual Studio에서 c + + 지원 설치
 
@@ -37,9 +37,9 @@ ms.locfileid: "43130893"
 
 ## <a name="visual-studio-2015-installation"></a>Visual Studio 2015 설치
 
- Visual Studio 2015를 설치 하려면로 이동 [이전 버전의 Visual Studio 다운로드](https://www.visualstudio.com/vs/older-downloads/)합니다. 설치 프로그램을 실행 하 고 선택 **사용자 지정 설치** 를 c + + 구성 요소를 선택 합니다. 
+Visual Studio 2015를 설치하려면 [이전 버전의 Visual Studio 다운로드](https://www.visualstudio.com/vs/older-downloads/)로 이동합니다. 설치 프로그램을 실행하고 **사용자 지정 설치**를 선택한 다음, C++ 구성 요소를 선택합니다.
 
- 일반적으로 Visual Studio 2015 컴파일러를 사용 하 여 코드를 컴파일해야 하는 경우에 Visual Studio 2017을 사용 하는 것이 좋습니다. 자세한 내용은 [Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드](../porting/use-native-multi-targeting.md)를 참조하세요.
+일반적으로 Visual Studio 2015 컴파일러를 사용하여 코드를 컴파일해야 하는 경우에도 Visual Studio 2017을 사용하는 것이 좋습니다. 자세한 내용은 [Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드](../porting/use-native-multi-targeting.md)를 참조하세요.
 
 ## <a name="visual-studio-2017-installation"></a>Visual Studio 2017 설치
 
@@ -59,13 +59,13 @@ ms.locfileid: "43130893"
 
    ![C + +를 사용한 데스크톱 개발](../build/media/desktop-development-with-cpp.png "c + +를 사용한 데스크톱 개발")
 
-    C + +를 선택 합니다 **c + +를 사용한 데스크톱 개발** 워크 로드를 선택한 후 **설치**합니다.
+   C + +를 선택 합니다 **c + +를 사용한 데스크톱 개발** 워크 로드를 선택한 후 **설치**합니다.
 
    ![C + + 워크 로드를 사용 하 여 데스크톱 개발을 설치](../build/media/vscpp-concierge-choose-workload.gif "c + + 워크 로드를 사용 하 여 데스크톱 개발을 설치 합니다.")
 
 1. 설치가 완료 되 면 선택 합니다 **시작** Visual Studio를 시작 하는 단추입니다.
 
-   처음 Visual Studio를 실행 하면 Microsoft 계정으로 로그인 하 라는 메시지가 표시 됩니다. 사용자 계정이 없는 경우 무료로 만들 수 있습니다. 테마를 선택 해야 합니다. 작업을 하려는 경우 나중에 변경할 수 있습니다. 
+   처음 Visual Studio를 실행 하면 Microsoft 계정으로 로그인 하 라는 메시지가 표시 됩니다. 사용자 계정이 없는 경우 무료로 만들 수 있습니다. 테마를 선택 해야 합니다. 작업을 하려는 경우 나중에 변경할 수 있습니다.
 
    Visual Studio 여러 걸릴 수 있습니다 분을 처음 실행 하면 사용 합니다. 모양을 빠른 시간 경과에 다음과 같습니다.
 

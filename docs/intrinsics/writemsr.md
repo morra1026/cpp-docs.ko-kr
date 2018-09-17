@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9a3fdc9b094ebb81db1bfe841d7974c5df89ca0
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 627e6bfdb33561e3d4be55aebf07e831b6cdc035
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42539304"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705135"
 ---
 # <a name="writemsr"></a>__writemsr
 **Microsoft 전용**  
@@ -40,11 +40,11 @@ void __writemsr(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `Register`  
- 모델 특정 레지스터입니다.  
+*등록*<br/>
+[in] 모델 특정 레지스터입니다.  
   
- [in] `Value`  
- 작성할 값입니다.  
+*Value*<br/>
+[in] 쓸 값입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   

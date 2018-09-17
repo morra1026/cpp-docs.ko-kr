@@ -144,12 +144,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf2179666943dd5ad26f173368edd809fdf17bcd
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 2ce2228c5ee81fc6974f2a60ccbdf0a7e4d53901
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954840"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726689"
 ---
 # <a name="unorderedset-class"></a>unordered_set 클래스
 
@@ -257,7 +257,7 @@ typedef Alloc allocator_type;
 
 이 형식은 템플릿 매개 변수 `Alloc`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_allocator_type.cpp
@@ -307,7 +307,7 @@ const_local_iterator begin(size_type nbucket) const;
 
 처음 두 개의 멤버 함수는 시퀀스의 첫 번째 요소(또는 빈 시퀀스의 끝 바로 다음)를 가리키는 정방향 반복기를 반환합니다. 마지막 두 멤버 함수는 버킷의 첫 번째 요소를 가리키는 정방향 반복기를 반환 *nbucket* (또는 빈 버킷의 끝 바로 다음).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // unordered_set_begin.cpp
@@ -373,14 +373,14 @@ size_type bucket(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*Keyval*  
- 매핑할 키 값입니다.
+*keyval*<br/>
+매핑할 키 값입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 현재 키 값을 해당 버킷 번호를 반환 *keyval*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_bucket.cpp
@@ -430,7 +430,7 @@ size_type bucket_count() const;
 
 멤버 함수는 현재 버킷 수를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_bucket_count.cpp
@@ -513,14 +513,14 @@ size_type bucket_size(size_type nbucket) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*nbucket*  
- 버킷 번호입니다.
+*nbucket*<br/>
+버킷 번호입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 버킷 번호의 크기를 반환 *nbucket*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_bucket_size.cpp
@@ -624,7 +624,7 @@ void clear();
 
 구성원 함수는 [unordered_set::erase](#erase)`(` [unordered_set::begin](#begin)`(),` [unordered_set::end](#end)`())`를 호출합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_clear.cpp
@@ -688,7 +688,7 @@ typedef T1 const_iterator;
 
 이 형식은 제어되는 시퀀스의 상수 정방향 반복기로 사용될 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T1`의 동의어로 설명됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_const_iterator.cpp
@@ -730,7 +730,7 @@ typedef T5 const_local_iterator;
 
 형식은 버킷의 상수 정방향 반복기로 사용될 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T5`의 동의어로 설명됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_const_local_iterator.cpp
@@ -777,7 +777,7 @@ typedef Alloc::const_pointer const_pointer;
 
 이 형식은 제어되는 시퀀스의 요소에 대한 상수 포인터로 사용될 수 있는 개체를 설명합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_const_pointer.cpp
@@ -822,7 +822,7 @@ typedef Alloc::const_reference const_reference;
 
 이 형식은 제어되는 시퀀스의 요소에 대한 상수 참조로 사용될 수 있는 개체를 설명합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_const_reference.cpp
@@ -865,14 +865,14 @@ size_type count(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*Keyval*  
- 검색할 키 값입니다.
+*keyval*<br/>
+검색할 키 값입니다.
 
 ### <a name="remarks"></a>설명
 
 구성원 함수는 [unordered_set::equal_range](#equal_range)`(keyval)`로 구분된 범위의 요소 수를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_count.cpp
@@ -921,7 +921,7 @@ typedef T3 difference_type;
 
 부호 있는 정수 형식은 제어되는 시퀀스에서 두 요소의 주소 간 차이점을 나타낼 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T3`의 동의어로 설명됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_difference_type.cpp
@@ -1040,7 +1040,7 @@ bool empty() const;
 
 멤버 함수는 빈 제어되는 시퀀스에 대해 true를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_empty.cpp
@@ -1116,7 +1116,7 @@ const_local_iterator end(size_type nbucket) const;
 
 처음 두 멤버 함수는 시퀀스 끝의 바로 다음을 가리키는 정방향 반복기를 반환합니다. 마지막 두 멤버 함수는 버킷의 끝 바로 다음을 가리키는 정방향 반복기를 반환 *nbucket*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_end.cpp
@@ -1175,14 +1175,14 @@ equal_range(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*Keyval*  
- 검색할 키 값입니다.
+*keyval*<br/>
+검색할 키 값입니다.
 
 ### <a name="remarks"></a>설명
 
 반복기의 쌍을 반환 하는 멤버 함수 `X` 되도록`[X.first, X.second)` 동일 하 게 정렬 된 제어 된 시퀀스의 해당 요소를 구분 *keyval*합니다. 이러한 요소가 없는 경우 두 반복기는 `end()`입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_equal_range.cpp
@@ -1243,17 +1243,17 @@ size_type erase(const key_type& Key);
 
 ### <a name="parameters"></a>매개 변수
 
-*Where*  
- 제거할 요소의 위치입니다.
+*Where*<br/>
+제거할 요소의 위치입니다.
 
-*첫 번째*  
- 제거할 첫 번째 요소의 위치입니다.
+*첫 번째*<br/>
+제거할 첫 번째 요소의 위치입니다.
 
-*마지막*  
- 제거할 마지막 요소 바로 다음 위치입니다.
+*마지막*<br/>
+제거할 마지막 요소 바로 다음 위치입니다.
 
-*키*  
- 제거할 요소의 키 값입니다.
+*키*<br/>
+제거할 요소의 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1275,14 +1275,14 @@ const_iterator find(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*Keyval*  
- 검색할 키 값입니다.
+*keyval*<br/>
+검색할 키 값입니다.
 
 ### <a name="remarks"></a>설명
 
 구성원 함수는 [unordered_set::equal_range](#equal_range)`(keyval).first`를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_find.cpp
@@ -1336,7 +1336,7 @@ Alloc get_allocator() const;
 
 멤버 함수는 저장된 할당자 개체를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_get_allocator.cpp
@@ -1374,7 +1374,7 @@ Hash hash_function() const;
 
 멤버 함수는 저장된 해시 함수 개체를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_hash_function.cpp
@@ -1412,7 +1412,7 @@ typedef Hash hasher;
 
 이 형식은 템플릿 매개 변수 `Hash`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_hasher.cpp
@@ -1509,7 +1509,7 @@ unordered_set의 요소를 읽을 수 있는 상수 [정방향 반복기](../sta
 typedef implementation-defined iterator;
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 **반복기**를 선언하고 사용하는 방법에 대한 예제는 [begin](../standard-library/set-class.md#begin)의 예제를 참조하세요.
 
@@ -1525,7 +1525,7 @@ Pred key_eq() const;
 
 멤버 함수는 저장된 비교 함수 개체를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_key_eq.cpp
@@ -1565,7 +1565,7 @@ typedef Pred key_equal;
 
 이 형식은 템플릿 매개 변수 `Pred`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_key_equal.cpp
@@ -1605,7 +1605,7 @@ typedef Key key_type;
 
 이 형식은 템플릿 매개 변수 `Key`의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_key_type.cpp
@@ -1657,7 +1657,7 @@ float load_factor() const;
 
 구성원 함수는 `(float)`[unordered_set::size](#size)`() / (float)`[unordered_set::bucket_count](#bucket_count)`()`(버킷당 평균 요소 수)를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_load_factor.cpp
@@ -1742,7 +1742,7 @@ typedef T4 local_iterator;
 
 형식은 버킷의 정방향 반복기로 사용될 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T4`의 동의어로 설명됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_local_iterator.cpp
@@ -1789,7 +1789,7 @@ size_type max_bucket_count() const;
 
 멤버 함수는 현재 허용된 최대 버킷 개수를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_max_bucket_count.cpp
@@ -1874,14 +1874,14 @@ void max_load_factor(float factor);
 
 ### <a name="parameters"></a>매개 변수
 
-*factor*  
- 새로운 최대 로드 비율입니다.
+*factor*<br/>
+새로운 최대 로드 비율입니다.
 
 ### <a name="remarks"></a>설명
 
 첫 번째 멤버 함수는 저장된 최대 로드 비율을 반환합니다. 두 번째 멤버 함수는 사용 하 여 저장 된 최대 로드 비율을 대체 *비율*합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_max_load_factor.cpp
@@ -1966,7 +1966,7 @@ size_type max_size() const;
 
 멤버 함수는 개체가 제어할 수 있는 가장 긴 시퀀스의 길이를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_max_size.cpp
@@ -2009,7 +2009,7 @@ unordered_set& operator=(unordered_set&& right);
 
 기존 요소를 지운 후는 `unordered_set`, `operator=` 복사 하거나 이동 내용의 *오른쪽* 에 `unordered_set`합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // unordered_set_operator_as.cpp
@@ -2058,7 +2058,7 @@ typedef Alloc::pointer pointer;
 
 이 형식은 제어되는 시퀀스의 요소에 대한 포인터로 사용될 수 있는 개체를 설명합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_pointer.cpp
@@ -2104,7 +2104,7 @@ typedef Alloc::reference reference;
 
 이 형식은 제어되는 시퀀스의 요소에 대한 참조로 사용될 수 있는 개체를 설명합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_reference.cpp
@@ -2148,14 +2148,14 @@ void rehash(size_type nbuckets);
 
 ### <a name="parameters"></a>매개 변수
 
-*nbuckets*  
- 요청된 버킷 수입니다.
+*nbuckets*<br/>
+요청된 버킷 수입니다.
 
 ### <a name="remarks"></a>설명
 
 버킷 최소 수를 변경 하는 멤버 함수 *nbuckets* 필요에 따라 해시 테이블을 다시 빌드합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_rehash.cpp
@@ -2227,7 +2227,7 @@ size_type size() const;
 
 멤버 함수는 제어되는 시퀀스의 길이를 반환합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_size.cpp
@@ -2292,7 +2292,7 @@ typedef T2 size_type;
 
 부호 없는 정수 형식은 제어되는 시퀀스의 길이를 나타낼 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T2`의 동의어로 설명됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_size_type.cpp
@@ -2326,14 +2326,14 @@ void swap(unordered_set& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*  
- 교환할 컨테이너입니다.
+*right*<br/>
+교환할 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수 간에 제어 된 시퀀스를 교환 `*this` 하 고 *오른쪽*합니다. 경우 [get_allocator](#get_allocator)`() == right.get_allocator()`분할 상수 시간에, 형식의 저장 된 특성 개체를 복사한 결과로 예외를 throw `Tr`, 없습니다 참조, 포인터, 무효화 또는 두 개의 제어 된 시퀀스에서 요소를 지정 하는 반복기입니다. 그렇지 않으면 두 개의 제어되는 시퀀스에 있는 요소 수에 비례하여 많은 요소 할당 및 생성자 호출을 수행합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_swap.cpp
@@ -2470,7 +2470,7 @@ typedef Key value_type;
 
 형식은 제어되는 시퀀스의 요소를 설명합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_set__unordered_set_value_type.cpp

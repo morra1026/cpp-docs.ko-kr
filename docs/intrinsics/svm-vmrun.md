@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 086fbbc2a25c4af2b09f40d83ac0b20399860ca1
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 3777492212bbff368902acf589f0a3c46ea4ac18
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679808"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718681"
 ---
 # <a name="svmvmrun"></a>__svm_vmrun
 **Microsoft 전용**  
@@ -41,7 +41,7 @@ void __svm_vmrun(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] `VmcbPhysicalAddress`|실제 주소는 VMCB입니다.|  
+|*VmcbPhysicalAddress*|[in] 실제 주소는 VMCB입니다.|  
   
 ## <a name="remarks"></a>설명  
  `__svm_vmrun` 함수를 사용 하 여 최소한의 정보는 VMCB에서 가상 컴퓨터 게스트 코드 실행을 시작 합니다. 사용 된 [__svm_vmsave](../intrinsics/svm-vmsave.md) 또는 [__svm_vmload](../intrinsics/svm-vmload.md) 을 복잡 한 인터럽트를 처리 하거나 다른 게스트도 전환 하는 자세한 정보가 필요한 경우 함수입니다.  

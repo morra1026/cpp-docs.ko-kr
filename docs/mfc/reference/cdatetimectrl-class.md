@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdf2134b334c259a6543af279ee058b659cf21d6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 9eb3b70851cb5e51ef2ddc0e99347c81fe632b6d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43210189"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726663"
 ---
 # <a name="cdatetimectrl-class"></a>CDateTimeCtrl 클래스
 날짜 및 시간 선택 컨트롤의 기능을 캡슐화합니다.  
@@ -192,7 +192,7 @@ BOOL GetDateTimePickerInfo(LPDATETIMEPICKERINFO pDateTimePickerInfo) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out] *pDateTimePickerInfo*|에 대 한 포인터를 [DATETIMEPICKERINFO](/windows/desktop/api/commctrl/ns-commctrl-tagdatetimepickerinfo) 구조체의 현재 날짜 및 시간 선택 컨트롤의 설명입니다.<br /><br /> 호출자는이 구조를 할당 하는 일을 담당 합니다. 그러나이 메서드를 초기화 합니다 *cbSize* 구조체의 멤버입니다.|  
+|*pDateTimePickerInfo*|[out] 에 대 한 포인터를 [DATETIMEPICKERINFO](/windows/desktop/api/commctrl/ns-commctrl-tagdatetimepickerinfo) 구조체의 현재 날짜 및 시간 선택 컨트롤의 설명입니다.<br /><br /> 호출자는이 구조를 할당 하는 일을 담당 합니다. 그러나이 메서드를 초기화 합니다 *cbSize* 구조체의 멤버입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -347,7 +347,7 @@ BOOL GetIdealSize(LPSIZE psize) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out] *psize*|에 대 한 포인터를 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 컨트롤에 대 한 이상적인 크기를 포함 하는 구조입니다.|  
+|*psize*|[out] 에 대 한 포인터를 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 컨트롤에 대 한 이상적인 크기를 포함 하는 구조입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  반환 값은 항상 TRUE입니다.  
@@ -458,7 +458,7 @@ DWORD SetMonthCalStyle(DWORD dwStyle);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *dwStyle*|새로운 달 calendar month calendar 컨트롤 스타일의 비트 조합 (OR) 컨트롤 스타일입니다. 자세한 내용은 [Month Calendar 컨트롤 스타일](/windows/desktop/Controls/month-calendar-control-styles)합니다.|  
+|*dwStyle*|[in] 새로운 달 calendar month calendar 컨트롤 스타일의 비트 조합 (OR) 컨트롤 스타일입니다. 자세한 내용은 [Month Calendar 컨트롤 스타일](/windows/desktop/Controls/month-calendar-control-styles)합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이전 스타일 드롭다운 달력 컨트롤입니다.  

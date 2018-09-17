@@ -98,12 +98,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8265b8c179f9e317fa3e2a66df4797660528f444
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 60c2b85c3a5c1ca5e2da9b0ef3b42148510b59e1
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107432"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711062"
 ---
 # <a name="concurrencyprecisemath-namespace-functions"></a>Concurrency:: precise_math 네임 스페이스 함수
 ||||
@@ -1564,8 +1564,8 @@ inline double modf(
 `_X`  
 부동 소수점 값
 
-`_Iptr` (out 매개 변수)  
-정수 부분은 `_X`, 부동 소수점 값입니다.
+`_Iptr`  
+[out] 정수 부분은 `_X`, 부동 소수점 값입니다.
 
 ### <a name="return-value"></a>반환 값
 부호 있는 소수 부분을 `_X`입니다.
@@ -1891,8 +1891,8 @@ inline double remquo(
 `_Y`  
 두 번째 부동 소수점 인수입니다.
 
-`_Quo` (out 매개 변수)  
-소수 비트의 지 수를 반환 하는 데 사용 되는 정수의 주소 `_X` 의 소수 비트로 나눈 `_Y`합니다.
+`_Quo`  
+[out] 소수 비트의 지 수를 반환 하는 데 사용 되는 정수의 주소 `_X` 의 소수 비트로 나눈 `_Y`합니다.
 
 ### <a name="return-value"></a>반환 값
 나머지를 반환 합니다 `_X` 나눈 `_Y`합니다.
@@ -1914,8 +1914,8 @@ inline float remquof(
 `_Y`  
 두 번째 부동 소수점 인수입니다.
 
-`_Quo` (out 매개 변수)  
-소수 비트의 지 수를 반환 하는 데 사용 되는 정수의 주소 `_X` 의 소수 비트로 나눈 `_Y`합니다.
+`_Quo`  
+[out] 소수 비트의 지 수를 반환 하는 데 사용 되는 정수의 주소 `_X` 의 소수 비트로 나눈 `_Y`합니다.
 
 ### <a name="return-value"></a>반환 값
 나머지를 반환 합니다 `_X` 나눈 `_Y`합니다.

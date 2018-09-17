@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::swap (unordered_map/multimap)
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76210e9ae860f8a7de0f22db2b7108e90e09e5be
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3a6d8a925f493a8299cf1afd8e851456277a68e9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965554"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715522"
 ---
 # <a name="ltunorderedmapgt-functions"></a>&lt;unordered_map&gt; 함수
 
@@ -42,32 +42,32 @@ void swap(
 
 ### <a name="parameters"></a>매개 변수
 
-*키*  
- 키 형식입니다.
+*키*<br/>
+키 형식입니다.
 
-*Ty*  
- 매핑된 형식입니다.
+*Ty*<br/>
+매핑된 형식입니다.
 
-*해시*  
- 해시 함수 개체 형식입니다.
+*해시*<br/>
+해시 함수 개체 형식입니다.
 
-*pred*  
- 같음 비교 함수 개체 형식입니다.
+*pred*<br/>
+같음 비교 함수 개체 형식입니다.
 
-*할당*  
- 할당자 클래스입니다.
+*할당*<br/>
+할당자 클래스입니다.
 
-*left*  
- 교환할 첫 번째 컨테이너입니다.
+*left*<br/>
+교환할 첫 번째 컨테이너입니다.
 
-*right*  
- 교환할 두 번째 컨테이너입니다.
+*right*<br/>
+교환할 두 번째 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
 
 템플릿 함수는 `left.`[unordered_map::swap](../standard-library/unordered-map-class.md#swap)`(right)`을 실행합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__u_m_swap.cpp
@@ -136,32 +136,32 @@ void swap(
 
 ### <a name="parameters"></a>매개 변수
 
-*키*  
- 키 형식입니다.
+*키*<br/>
+키 형식입니다.
 
-*Ty*  
- 매핑된 형식입니다.
+*Ty*<br/>
+매핑된 형식입니다.
 
-*해시*  
- 해시 함수 개체 형식입니다.
+*해시*<br/>
+해시 함수 개체 형식입니다.
 
-*pred*  
- 같음 비교 함수 개체 형식입니다.
+*pred*<br/>
+같음 비교 함수 개체 형식입니다.
 
-*할당*  
- 할당자 클래스입니다.
+*할당*<br/>
+할당자 클래스입니다.
 
-*left*  
- 교환할 첫 번째 컨테이너입니다.
+*left*<br/>
+교환할 첫 번째 컨테이너입니다.
 
-*right*  
- 교환할 두 번째 컨테이너입니다.
+*right*<br/>
+교환할 두 번째 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
 
 템플릿 함수는 `left.`[unordered_multimap::swap](../standard-library/unordered-multimap-class.md#swap)`(right)`을 실행합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__unordered_map__u_mm_swap.cpp

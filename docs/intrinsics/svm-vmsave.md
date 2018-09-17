@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50be44d612f44586ff8e6c8e953efa0b1fa90948
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: bc66784a9f5b6c953516bb30271c973779340e09
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680639"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722854"
 ---
 # <a name="svmvmsave"></a>__svm_vmsave
 **Microsoft 전용**  
@@ -41,7 +41,7 @@ void __svm_vmsave(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] `VmcbPhysicalAddress`|실제 주소는 VMCB입니다.|  
+|*VmcbPhysicalAddress*|[in] 실제 주소는 VMCB입니다.|  
   
 ## <a name="remarks"></a>설명  
  합니다 `__svm_vmsave` 함수는 동일 합니다 `VMSAVE` 컴퓨터 명령입니다. 이 함수는 게스트 운영 체제 및 해당 응용 프로그램과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용은 문서를 검색 "AMD64 아키텍처 프로그래머 수동 볼륨 2: 시스템 프로그래밍" 문서 번호 24593, 3.11 이상에서 수정 합니다 [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) 사이트입니다.  

@@ -130,12 +130,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6822957abfa98dab737494bb2924c3ecf84090e
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 16f812fc941284122ce2a869786ae73447bff83a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337504"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722633"
 ---
 # <a name="cdocument-class"></a>CDocument 클래스
 사용자 정의 문서 클래스에 대한 기본 기능을 제공합니다.  
@@ -278,7 +278,7 @@ void AddView(CView* pView);
   
  수동으로 만들고 뷰를 연결 하는 경우에이 함수를 호출 합니다. 일반적으로 프레임 워크를 정의 하 여 문서 및 뷰를 연결 하면 한 [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) 문서 클래스, 클래스 뷰 및 프레임 창 클래스를 연결 하는 개체입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocViewSDI#12](../../mfc/codesnippet/cpp/cdocument-class_1.cpp)]  
   
 ##  <a name="beginreadchunks"></a>  CDocument::BeginReadChunks  
@@ -346,7 +346,7 @@ virtual void DeleteContents();
 ### <a name="remarks"></a>설명  
  문서가 소멸 되기 직전 호출 됩니다. 이 재사용 되기 전에 문서 비어 있는지 확인 하는 것이 라고도 합니다. 이 특히 중요 한 문서를 사용 하 여 SDI 응용 프로그램에 대 한 문서에는 사용자가 만들거나 다른 문서를 열 때마다 다시 사용 됩니다. "편집 모두 지우기" 또는 모든 문서의 데이터를 삭제 하는 유사한 명령을 구현 하려면이 함수를 호출 합니다. 이 함수의 기본 구현은 아무 작업도 수행하지 않습니다. 문서에서 데이터를 삭제 하려면이 함수를 재정의 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#57](../../mfc/codesnippet/cpp/cdocument-class_2.cpp)]  
   
 ##  <a name="findchunk"></a>  CDocument::FindChunk  
@@ -392,7 +392,7 @@ CDocTemplate* GetDocTemplate() const;
 ### <a name="return-value"></a>반환 값  
  이 문서 형식 또는 문서를 문서 템플릿에 의해 관리 되지 않는 경우 NULL에 대 한 서식 파일에 대 한 포인터입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#58](../../mfc/codesnippet/cpp/cdocument-class_3.cpp)]  
   
 ##  <a name="getfile"></a>  CDocument::GetFile  
@@ -428,7 +428,7 @@ virtual POSITION GetFirstViewPosition() const;
 ### <a name="return-value"></a>반환 값  
  반복에 대해 사용할 수 있는 위치 값을 [GetNextView](#getnextview) 멤버 함수입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#59](../../mfc/codesnippet/cpp/cdocument-class_4.cpp)]  
   
 ##  <a name="getnextview"></a>  CDocument::GetNextView  
@@ -448,7 +448,7 @@ virtual CView* GetNextView(POSITION& rPosition) const;
 ### <a name="remarks"></a>설명  
  로 식별 되는 뷰를 반환 하는 함수 *rPosition* 설정한 *rPosition* 목록의 다음 뷰의 위치 값입니다. 검색된 보기는 목록에서 마지막 *rPosition* NULL로 설정 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#59](../../mfc/codesnippet/cpp/cdocument-class_4.cpp)]  
   
 ##  <a name="getpathname"></a>  CDocument::GetPathName  
@@ -659,8 +659,8 @@ virtual void OnDocumentEvent(DocumentEvent deEvent);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *deEvent*  
- 이벤트의 형식을 설명 하는 열거형된 데이터 형식입니다.  
+*deEvent*<br/>
+[in] 이벤트의 형식을 설명 하는 열거형된 데이터 형식입니다.  
   
 ### <a name="remarks"></a>설명  
  문서 이벤트 여러 클래스에 영향을 줄 수 있습니다. 이 메서드는 이외의 클래스에 영향을 주는 문서 이벤트를 처리 하는 일을 담당 합니다 [CDocument 클래스](../../mfc/reference/cdocument-class.md)합니다. 현재 문서 이벤트에 응답 해야 하는 유일한 클래스는 합니다 [CDataRecoveryHandler 클래스](../../mfc/reference/cdatarecoveryhandler-class.md)합니다. 합니다 `CDocument` 클래스 메서드가 다른 재정의할 수 있습니다에 결과 처리 하는 일을 담당 합니다 `CDocument`합니다.  
@@ -744,7 +744,7 @@ virtual BOOL OnNewDocument();
   
  에서는 인 사례 `OnNewDocument` 두 번 호출 됩니다. 이 문서는 ActiveX 문서 서버로 포함 된 경우 발생 합니다. 함수를 먼저 호출한를 `CreateInstance` 메서드 (의해 노출 되는 `COleObjectFactory`-파생 클래스) 및 두 번째는 시간을 `InitNew` 메서드 (에 의해 노출는 `COleServerDoc`-파생 클래스).  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 document 개체를 초기화 하는 대체 메서드를 보여 줍니다.  
   
  [!code-cpp[NVC_MFCDocView#60](../../mfc/codesnippet/cpp/cdocument-class_5.cpp)]  
@@ -772,7 +772,7 @@ virtual BOOL OnOpenDocument(LPCTSTR lpszPathName);
   
  이 함수를 사용 하 여 기존 다시 초기화 하도록 프레임 워크 사용자 SDI 응용 프로그램에서 파일 열기 명령을 선택 하면 `CDocument` 새로 만들기 보다는 개체입니다. 프레임 워크가 생성 하는 새 사용자가 MDI 응용 프로그램에서 파일 열기 선택, `CDocument` 때마다 개체 다음 초기화 하는 데이 함수를 호출 합니다. SDI 응용 프로그램에 적용 되도록 파일 열기 명령에 대 한 생성자에서이 함수 대신에 초기화 코드를 배치 해야 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 document 개체를 초기화 하는 대체 메서드를 보여 줍니다.  
   
  [!code-cpp[NVC_MFCDocView#60](../../mfc/codesnippet/cpp/cdocument-class_5.cpp)]  
@@ -1112,7 +1112,7 @@ void UpdateAllViews(
   
  이 함수를 호출 합니다 [CView::OnUpdate](../../mfc/reference/cview-class.md#onupdate) 전달 전송을 제외한 문서 보기의 각 멤버 함수 보기 *pHint* 하 고 *lHint*. 이러한 매개 변수를 사용 하 여 문서를 수정 하는 방법에 대 한 보기에 정보를 전달. 사용 하 여 정보를 인코딩할 수 있습니다 *lHint* 정의할 수 있습니다 및/또는 [CObject](../../mfc/reference/cobject-class.md)-수정에 대 한 정보를 저장 하 고 사용 하 여 해당 클래스의 개체를 전달 하는 클래스를 파생 *pHint*. 재정의 된 `CView::OnUpdate` 멤버 함수에 [CView](../../mfc/reference/cview-class.md)-전달 된 정보를 기반으로 하는 보기의 디스플레이의 업데이트를 최적화 하는 클래스를 파생 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCDocView#64](../../mfc/codesnippet/cpp/cdocument-class_9.cpp)]  
   
 ## <a name="see-also"></a>참고 항목  

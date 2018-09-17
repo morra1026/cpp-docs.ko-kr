@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 75c5e4df92cf23198d7225dfe337a5c82ecf5596
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b765f6393b9bd2d632539abb5fb7cd17c29297b6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609206"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701755"
 ---
 # <a name="safeint-class"></a>SafeInt 클래스
 
@@ -45,9 +45,9 @@ class SafeInt;
 
 |매개 변수|설명|
 |---------------|-----------------|
-|[in] *rhs*|여러 독립 실행형 함수에 연산자의 오른쪽에 값을 나타내는 입력된 매개 변수입니다.|
-|[in] *있나요*|여러 독립 실행형 함수에 연산자의 오른쪽에 값을 나타내는 입력된 매개 변수입니다.|
-|[in] *비트*|여러 독립 실행형 함수에 연산자의 오른쪽에 값을 나타내는 입력된 매개 변수입니다.|
+|*rhs*|[in] 여러 독립 실행형 함수에 연산자의 오른쪽에 값을 나타내는 입력된 매개 변수입니다.|
+|*i*|[in] 여러 독립 실행형 함수에 연산자의 오른쪽에 값을 나타내는 입력된 매개 변수입니다.|
+|*비트*|[in] 여러 독립 실행형 함수에 연산자의 오른쪽에 값을 나타내는 입력된 매개 변수입니다.|
 
 ## <a name="members"></a>멤버
 
@@ -59,7 +59,7 @@ class SafeInt;
 
 ### <a name="assignment-operators"></a>할당 연산자
 
-|name|구문|
+|이름|구문|
 |----------|------------|
 |=|`template<typename U>`<br /><br /> `SafeInt<T,E>& operator= (const U& rhs)`|
 |=|`SafeInt<T,E>& operator= (const T& rhs) throw()`|
@@ -86,7 +86,7 @@ class SafeInt;
 
 ### <a name="comparison-operators"></a>비교 연산자
 
-|name|구문|
+|이름|구문|
 |----------|------------|
 |<|`template<typename U>`<br /><br /> `bool operator< (U rhs) const throw()`|
 |<|`bool operator< (SafeInt<T,E> rhs) const throw()`|
@@ -105,7 +105,7 @@ class SafeInt;
 
 ### <a name="arithmetic-operators"></a>산술 연산자
 
-|name|구문|
+|이름|구문|
 |----------|------------|
 |+|`const SafeInt<T,E>& operator+ () const throw()`|
 |-|`SafeInt<T,E> operator- () const`|

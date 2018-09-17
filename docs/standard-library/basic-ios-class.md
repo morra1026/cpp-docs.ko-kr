@@ -65,12 +65,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3abc3c08b46577f7d59b2831a68ded812a5da60a
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 175d7895331ec960244354870c6bd6845baf37d1
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110020"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725324"
 ---
 # <a name="basicios-class"></a>basic_ios 클래스
 
@@ -230,9 +230,11 @@ void clear(io_state state);
 
 ### <a name="parameters"></a>매개 변수
 
-*상태* (선택 사항) 모든 플래그를 지운 후에 설정 하려는 플래그입니다. 기본값은 `goodbit`입니다.
+*state*<br/>
+(선택 사항) 모든 플래그를 지운 후에 설정 하려는 플래그입니다. 기본값은 `goodbit`입니다.
 
-*reraise* (선택 사항) 지정 여부 예외가 다시 발생 해야 합니다. 기본값으로 **false** (다시 발생 하지는 예외).
+*reraise*<br/>
+(선택 사항) 예외가 다시 발생 해야 하는지 여부를 지정 합니다. 기본값으로 **false** (다시 발생 하지는 예외).
 
 ### <a name="remarks"></a>설명
 

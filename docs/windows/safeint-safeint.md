@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2ddb7092b1a5556485848d122e21ac54b6efe182
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: de318ab79638f63fae98856987340ad62534f695
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606957"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721347"
 ---
 # <a name="safeintsafeint"></a>SafeInt::SafeInt
 
@@ -56,15 +56,15 @@ SafeInt (
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *있나요*  
-새 값 **SafeInt** 개체입니다. 이 생성자에 따라 T 또는 U 형식의 매개 변수여야 합니다.
+*i*<br/>
+[in] 새 값 **SafeInt** 개체입니다. 이 생성자에 따라 T 또는 U 형식의 매개 변수여야 합니다.
 
 
-[in] *b*  
-새 부울 값을 **SafeInt** 개체입니다.
+*b*<br/>
+[in] 새 부울 값을 **SafeInt** 개체입니다.
 
-[in] *u*  
-A **SafeInt** 형식 u 새 **SafeInt** 개체와 동일한 값을 갖습니다 *u*, T. 형식일 수는 있지만
+*u*<br/>
+[in] A **SafeInt** 형식 u 새 **SafeInt** 개체와 동일한 값을 갖습니다 *u*, T. 형식일 수는 있지만
 
 U에 저장 된 데이터 유형의 합니다 **SafeInt**합니다. 부울, 문자 또는 정수 형식이 될 수 있습니다. 데이터 형식이 정수 형식인 경우 부호가 없거나 있을 수도 있으며 8비트에서 64비트 사이여야 합니다.
 

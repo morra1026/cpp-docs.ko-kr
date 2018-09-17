@@ -354,12 +354,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0eb6e8da3caa9286e14072726488ad1c16f47b1e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: fa578e3abdaeb070e32d950887443855c2af8ba9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43203644"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726832"
 ---
 # <a name="cmfcvisualmanager-class"></a>CMFCVisualManager 클래스
 응용 프로그램의 모양을 전역 수준에서 변경하는 기능을 지원합니다. `CMFCVisualManager` 클래스는 일관된 스타일을 사용하여 응용 프로그램의 GUI 컨트롤을 그리는 명령을 제공하는 클래스와 함께 작동합니다. 이러한 다른 클래스를 비주얼 관리자라고 하며 `CMFCBaseVisualManager`에서 상속됩니다.  
@@ -674,10 +674,10 @@ void DoDrawHeaderSortArrow(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rect*  
- [in] *bIsUp*  
- [in] *bDlgCtrl*  
+*pDC*<br/>
+[in] [in] *rect*  
+*bIsUp*<br/>
+[in] [in] *bDlgCtrl*  
   
 ### <a name="remarks"></a>설명  
   
@@ -694,8 +694,8 @@ virtual BOOL DrawComboBorderWinXP(CDC*,
   
 ### <a name="parameters"></a>매개 변수  
  [in] *CDC**  
- [in] *CRect*  
- [in] *BOOL*  
+*CRect*<br/>
+[in] [in] *BOOL*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -714,8 +714,8 @@ virtual BOOL DrawComboDropButtonWinXP(CDC*,
   
 ### <a name="parameters"></a>매개 변수  
  [in] *CDC**  
- [in] *CRect*  
- [in] *BOOL*  
+*CRect*<br/>
+[in] [in] *BOOL*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -733,8 +733,8 @@ virtual BOOL DrawPushButtonWinXP(CDC*,
   
 ### <a name="parameters"></a>매개 변수  
  [in] *CDC**  
- [in] *CRect*  
- [in] *CMFCButton**  
+*CRect*<br/>
+[in] [in] *CMFCButton**  
  [in] *UINT*  
   
 ### <a name="return-value"></a>반환 값  
@@ -755,12 +755,12 @@ virtual BOOL DrawTextOnGlass(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *strText*  
- [in] *rect*  
- [in] *dwFlags*  
- [in] *nGlowSize*  
- [in] *clrText*  
+*pDC*<br/>
+[in] [in] *strText*  
+*rect*<br/>
+[in] [in] *dwFlags*  
+*nGlowSize*<br/>
+[in] [in] *clrText*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -786,8 +786,8 @@ virtual COLORREF GetAutoHideButtonTextColor(CMFCAutoHideButton* pButton);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pButton*  
- 자동 숨기기 단추를 사용 하는 포인터입니다.  
+*pButton*<br/>
+[in] 자동 숨기기 단추를 사용 하는 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  A [COLORREF](/windows/desktop/gdi/colorref) 의 텍스트 색을 지정 하는 매개 변수 *pButton*합니다.  
@@ -816,8 +816,8 @@ virtual COLORREF GetCaptionBarTextColor(CMFCCaptionBar* pBar);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- 캡션 표시줄에 대 한 포인터입니다.  
+*pBar*<br/>
+[in] 캡션 표시줄에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  A [COLORREF](/windows/desktop/gdi/colorref) 에 있는 텍스트의 색을 나타내는 매개 변수 *pBar*합니다.  
@@ -924,8 +924,8 @@ virtual COLORREF GetMenuItemTextColor(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pButton*  
- [in] *bHighlighted*  
+*pButton*<br/>
+[in] [in] *bHighlighted*  
  [in] *사용 안 함*  
   
 ### <a name="return-value"></a>반환 값  
@@ -953,8 +953,8 @@ virtual CSize GetNcBtnSize(BOOL bSmall) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bSmall*  
- 나타내는 부울 매개 변수 여부 `GetNcBtnSize` 소규모 또는 대규모 시스템 단추의 크기를 검색 해야 합니다. 하는 경우 *bSmall* 가 TRUE 인 `GetNcBtnSize` 소규모 시스템 단추의 크기를 반환 합니다. 그렇지 않은 경우 대규모 시스템 단추의 크기를 반환합니다.  
+*bSmall*<br/>
+[in] 나타내는 부울 매개 변수 여부 `GetNcBtnSize` 소규모 또는 대규모 시스템 단추의 크기를 검색 해야 합니다. 하는 경우 *bSmall* 가 TRUE 인 `GetNcBtnSize` 소규모 시스템 단추의 크기를 반환 합니다. 그렇지 않은 경우 대규모 시스템 단추의 크기를 반환합니다.  
   
 ### <a name="return-value"></a>반환 값  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) 시스템 단추의 크기를 나타내는 매개 변수입니다.  
@@ -994,8 +994,8 @@ virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pPropList*  
- 프레임 워크는 그리기 속성 목록에 대 한 포인터입니다.  
+*pPropList*<br/>
+[in] 프레임 워크는 그리기 속성 목록에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  A [COLORREF](/windows/desktop/gdi/colorref) 의 배경색을 나타내는 매개 변수 *pPropList*합니다.  
@@ -1011,8 +1011,8 @@ virtual COLORREF GetPropertyGridGroupTextColor(CMFCPropertyGridCtrl* pPropList);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pPropList*  
- 속성 목록에 대 한 포인터입니다.  
+*pPropList*<br/>
+[in] 속성 목록에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  A [COLORREF](/windows/desktop/gdi/colorref) 속성 목록의 텍스트 색을 나타내는 매개 변수입니다.  
@@ -1098,12 +1098,12 @@ virtual void GetRibbonSliderColors(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pSlider*  
- [in] *bIsHighlighted*  
- [in] *bIsPressed*  
- [in] *bIsDisabled*  
- [in] *clrLine*  
- [in] *clrFill*  
+*pSlider*<br/>
+[in] [in] *bIsHighlighted*  
+*bIsPressed*<br/>
+[in] [in] *bIsDisabled*  
+*clrLine*<br/>
+[in] [in] *clrFill*  
   
 ### <a name="remarks"></a>설명  
   
@@ -1131,8 +1131,8 @@ virtual int GetShowAllMenuItemsHeight(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *sizeDefault*  
+*pDC*<br/>
+[in] [in] *sizeDefault*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -1148,8 +1148,8 @@ virtual void GetSmartDockingBaseGuideColors(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *clrBaseGroupBackground*  
- [in] *clrBaseGroupBorder*  
+*clrBaseGroupBackground*<br/>
+[in] [in] *clrBaseGroupBorder*  
   
 ### <a name="remarks"></a>설명  
   
@@ -1186,8 +1186,8 @@ virtual COLORREF GetStatusBarPaneTextColor(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pStatusBar*  
- [in] *pPane*  
+*pStatusBar*<br/>
+[in] [in] *pPane*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -1210,32 +1210,32 @@ virtual void GetTabFrameColors(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pTabWnd*  
- 프레임 탭을 그릴 위치 탭된 창에 대 한 포인터입니다.  
+*pTabWnd*<br/>
+[in] 프레임 탭을 그릴 위치 탭된 창에 대 한 포인터입니다.  
   
- [out] *clrDark*  
- 에 대 한 참조를 [COLORREF](/windows/desktop/gdi/colorref) 이 메서드는 탭의 어두운 테두리의 색을 저장 하는 위치 매개 변수입니다.  
+*clrDark*<br/>
+[out] 에 대 한 참조를 [COLORREF](/windows/desktop/gdi/colorref) 이 메서드는 탭의 어두운 테두리의 색을 저장 하는 위치 매개 변수입니다.  
   
- [out] *clrBlack*  
- 이 메서드는 탭 창 테두리의 색을 저장 하는 위치 COLORREF 매개 변수 참조입니다. 테두리에 대 한 기본 색은 검정입니다.  
+*clrBlack*<br/>
+[out] 이 메서드는 탭 창 테두리의 색을 저장 하는 위치 COLORREF 매개 변수 참조입니다. 테두리에 대 한 기본 색은 검정입니다.  
   
- [out] *clrHighlight*  
- 이 메서드는 탭 창에 강조 표시 상태에 대 한 색을 저장 하는 위치 COLORREF 매개 변수 참조입니다.  
+*clrHighlight*<br/>
+[out] 이 메서드는 탭 창에 강조 표시 상태에 대 한 색을 저장 하는 위치 COLORREF 매개 변수 참조입니다.  
   
- [out] *clrFace*  
- 이 메서드는 탭 창에 얼굴에 대 한 색을 저장 하는 위치 COLORREF 매개 변수 참조입니다.  
+*clrFace*<br/>
+[out] 이 메서드는 탭 창에 얼굴에 대 한 색을 저장 하는 위치 COLORREF 매개 변수 참조입니다.  
   
- [out] *clrDarkShadow*  
- 이 메서드 탭 창의 그림자의 색을 저장 하는 위치 COLORREF 매개 변수 참조입니다.  
+*clrDarkShadow*<br/>
+[out] 이 메서드 탭 창의 그림자의 색을 저장 하는 위치 COLORREF 매개 변수 참조입니다.  
   
- [out] *clrLight*  
- 이 메서드 탭 창에서 밝은 가장자리에 대 한 색을 저장 하는 위치 COLORREF 매개 변수 참조입니다.  
+*clrLight*<br/>
+[out] 이 메서드 탭 창에서 밝은 가장자리에 대 한 색을 저장 하는 위치 COLORREF 매개 변수 참조입니다.  
   
- [out] *pbrFace*  
- 브러시에 대 한 참조에 대 한 포인터입니다. 이 메서드는이 매개 변수 탭 창의 글꼴을 채우는 데 사용 하는 브러시를 저장 합니다.  
+*pbrFace*<br/>
+[out] 브러시에 대 한 참조에 대 한 포인터입니다. 이 메서드는이 매개 변수 탭 창의 글꼴을 채우는 데 사용 하는 브러시를 저장 합니다.  
   
- [out] *pbrBlack*  
- 브러시에 대 한 참조에 대 한 포인터입니다. 이 메서드는이 매개 변수에서 탭 창에서 검은색 가장자리에 맞게 사용 하 여 브러시를 저장 합니다.  
+*pbrBlack*<br/>
+[out] 브러시에 대 한 참조에 대 한 포인터입니다. 이 메서드는이 매개 변수에서 탭 창에서 검은색 가장자리에 맞게 사용 하 여 브러시를 저장 합니다.  
   
 ### <a name="remarks"></a>설명  
  탭 창 그릴 때 프레임 워크를 사용 하는 색 집합을 사용자 지정 하려는 경우에 파생된 클래스에서이 함수를 재정의 합니다.  
@@ -1265,8 +1265,8 @@ virtual COLORREF GetTabTextColor(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *CMFCBaseTabCtrl&#42;*  
- [in] *int*  
+*CMFCBaseTabCtrl&#42;*<br/>
+[in] [in] *int*  
  [in] *BOOL*  
   
 ### <a name="return-value"></a>반환 값  
@@ -1382,11 +1382,11 @@ virtual COLORREF GetToolbarButtonTextColor(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pButton*  
- 도구 모음 단추에 대 한 포인터입니다.  
+*pButton*<br/>
+[in] 도구 모음 단추에 대 한 포인터입니다.  
   
- [in] *상태*  
- 도구 모음 단추의 상태입니다.  
+*state*<br/>
+[in] 도구 모음 단추의 상태입니다.  
   
 ### <a name="return-value"></a>반환 값  
  텍스트 색 *pButton* 하 여 지정 된 상태 했을 때 *상태*합니다.  
@@ -1452,8 +1452,8 @@ virtual BOOL GetToolTipInfo(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *매개 변수*  
- [in] *n 형식*  
+*params*<br/>
+[in] [in] *n 형식*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -1691,8 +1691,8 @@ virtual void OnActivateApp(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- [in] *bActive*  
+*pWnd*<br/>
+[in] [in] *bActive*  
   
 ### <a name="remarks"></a>설명  
   
@@ -1708,17 +1708,17 @@ virtual void OnDrawAutoHideButtonBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rectBounds*  
- 자동 숨기기 단추의 위치와 크기입니다.  
+*rectBounds*<br/>
+[in] 자동 숨기기 단추의 위치와 크기입니다.  
   
- [in] *rectBorderSize*  
- A [CRect](../../atl-mfc-shared/reference/crect-class.md) 테두리의 크기를 포함 하는 매개 변수입니다.  
+*rectBorderSize*<br/>
+[in] A [CRect](../../atl-mfc-shared/reference/crect-class.md) 테두리의 크기를 포함 하는 매개 변수입니다.  
   
- [in] *pButton*  
- 자동 숨기기 단추에 대 한 포인터입니다. 프레임 워크는이 단추에 대 한 테두리를 그리기입니다.  
+*pButton*<br/>
+[in] 자동 숨기기 단추에 대 한 포인터입니다. 프레임 워크는이 단추에 대 한 테두리를 그리기입니다.  
   
 ### <a name="remarks"></a>설명  
  자동 숨기기 단추의 테두리의 모양을 사용자 지정 하려는 경우에 파생된 클래스에서이 메서드를 재정의 합니다. 기본적으로이 메서드는 응용 프로그램에 대 한 기본 그림자 색을 사용 하 여 플랫 테두리를 채웁니다.  
@@ -1737,17 +1737,17 @@ virtual void OnDrawBarGripper(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 컨트롤 막대에 대 한 장치 컨텍스트 포인터입니다.  
+*pDC*<br/>
+[in] 컨트롤 막대에 대 한 장치 컨텍스트 포인터입니다.  
   
- [in] *rectGripper*  
- 컨트롤 막대에 대 한 경계 사각형입니다.  
+*rectGripper*<br/>
+[in] 컨트롤 막대에 대 한 경계 사각형입니다.  
   
- [in] *bHorz*  
- 컨트롤 막대를 가로 또는 세로로 도킹 되는지 여부를 지정 하는 부울 매개 변수입니다.  
+*bHorz*<br/>
+[in] 컨트롤 막대를 가로 또는 세로로 도킹 되는지 여부를 지정 하는 부울 매개 변수입니다.  
   
- [in] *pBar*  
- 컨트롤 막대에 대 한 포인터입니다. 비주얼 관리자는이 컨트롤 막대의 위치 조정 막대를 그립니다.  
+*pBar*<br/>
+[in] 컨트롤 막대에 대 한 포인터입니다. 비주얼 관리자는이 컨트롤 막대의 위치 조정 막대를 그립니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드의 기본 구현은 표준 위치 조정 막대를 표시합니다. 위치 조정 막대의 모양을 사용자 지정 하려면이 메서드에서 파생 된 사용자 지정 클래스에서 재정의 된 `CMFCVisualManager` 클래스입니다.  
@@ -1765,20 +1765,20 @@ virtual BOOL OnDrawBrowseButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 찾아보기 단추에 대 한 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 찾아보기 단추에 대 한 경계를 지정 하는 사각형입니다.  
   
- [in] *pEdit*  
- 편집 컨트롤에 대 한 포인터입니다. 비주얼 관리자 편집 컨트롤에 대 한 찾아보기 단추를 그립니다.  
+*pEdit*<br/>
+[in] 편집 컨트롤에 대 한 포인터입니다. 비주얼 관리자 편집 컨트롤에 대 한 찾아보기 단추를 그립니다.  
   
- [in] *상태*  
- 단추의 상태를 지정 하는 열거형된 값입니다.  
+*state*<br/>
+[in] 단추의 상태를 지정 하는 열거형된 값입니다.  
   
- [out] *clrText*  
- 에 대 한 참조를 [COLORREF](/windows/desktop/gdi/colorref) 매개 변수입니다. 예약 된 값 이며 현재 사용 되지 않습니다.  
+*clrText*<br/>
+[out] 에 대 한 참조를 [COLORREF](/windows/desktop/gdi/colorref) 매개 변수입니다. 예약 된 값 이며 현재 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 TRUE이고, 실패하면 FALSE입니다.  
@@ -1798,17 +1798,17 @@ virtual void OnDrawButtonBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 도구 모음 단추의 장치 컨텍스트에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 도구 모음 단추의 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pButton*  
- 도구 모음 단추에 대 한 포인터입니다. 프레임 워크가 단추의 테두리를 그립니다.  
+*pButton*<br/>
+[in] 도구 모음 단추에 대 한 포인터입니다. 프레임 워크가 단추의 테두리를 그립니다.  
   
- [in] *rect*  
- 도구 모음 단추의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 도구 모음 단추의 경계를 지정 하는 사각형입니다.  
   
- [in] *상태*  
- 도구 모음 단추의 현재 상태를 지정 하는 열거형된 데이터 형식입니다.  
+*state*<br/>
+[in] 도구 모음 단추의 현재 상태를 지정 하는 열거형된 데이터 형식입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드의 기본 구현은 표준 테두리를 표시합니다. 도구 모음 단추의 테두리의 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -1828,10 +1828,10 @@ virtual void OnDrawButtonSeparator(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pButton*  
- [in] *rect*  
- [in] *상태*  
+*pDC*<br/>
+[in] [in] *pButton*  
+*rect*<br/>
+[in] [in] *상태*  
  [in] *bHorz*  
   
 ### <a name="remarks"></a>설명  
@@ -1849,20 +1849,20 @@ virtual void OnDrawCaptionBarBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pBar*  
- 에 대 한 포인터를 `CMFCCaptionBar` 개체입니다. 프레임 워크는 캡션 표시줄에이 그립니다.  
+*pBar*<br/>
+[in] 에 대 한 포인터를 `CMFCCaptionBar` 개체입니다. 프레임 워크는 캡션 표시줄에이 그립니다.  
   
- [in] *rect*  
- 캡션 표시줄의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 캡션 표시줄의 경계를 지정 하는 사각형입니다.  
   
- [in] *clrBarBorder*  
- 테두리의 색입니다.  
+*clrBarBorder*<br/>
+[in] 테두리의 색입니다.  
   
- [in] *bFlatBorder*  
- 테두리 플랫, 2D 모양에 있는지 여부를 지정 하는 부울 매개 변수입니다.  
+*bFlatBorder*<br/>
+[in] 테두리 플랫, 2D 모양에 있는지 여부를 지정 하는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  캡션 표시줄 테두리의 모양을 사용자 지정 파생된 클래스에서이 메서드를 재정의 합니다.  
@@ -1883,14 +1883,14 @@ virtual void OnDrawCaptionBarButtonBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pBar*  
- [in] *rect*  
- [in] *bIsPressed*  
- [in] *bIsHighlighted*  
- [in] *bIsDisabled*  
- [in] *bHasDropDownArrow*  
- [in] *bIsSysButton*  
+*pDC*<br/>
+[in] [in] *pBar*  
+*rect*<br/>
+[in] [in] *bIsPressed*  
+*bIsHighlighted*<br/>
+[in] [in] *bIsDisabled*  
+*bHasDropDownArrow*<br/>
+[in] [in] *bIsSysButton*  
   
 ### <a name="remarks"></a>설명  
   
@@ -1905,8 +1905,8 @@ virtual void OnDrawCaptionBarInfoArea(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pBar*  
+*pDC*<br/>
+[in] [in] *pBar*  
  [in] *rect*  
   
 ### <a name="remarks"></a>설명  
@@ -1926,26 +1926,26 @@ virtual void OnDrawCaptionButton (
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pButton*  
- 에 대 한 포인터를 `CMFCCaptionButton` 개체입니다. 프레임 워크가 캡션 단추를 그립니다.  
+*pButton*<br/>
+[in] 에 대 한 포인터를 `CMFCCaptionButton` 개체입니다. 프레임 워크가 캡션 단추를 그립니다.  
   
- [in] *bActive*  
- 단추가 활성 상태 인지 여부를 지정 하는 부울 매개 변수입니다.  
+*bActive*<br/>
+[in] 단추가 활성 상태 인지 여부를 지정 하는 부울 매개 변수입니다.  
   
- [in] *bHorz*  
- 캡션이 가로 인지 여부를 지정 하는 부울 매개 변수입니다.  
+*bHorz*<br/>
+[in] 캡션이 가로 인지 여부를 지정 하는 부울 매개 변수입니다.  
   
- [in] *bMaximized*  
- 부모 창 최대화 되었는지 여부를 지정 하는 부울 매개 변수입니다.  
+*bMaximized*<br/>
+[in] 부모 창 최대화 되었는지 여부를 지정 하는 부울 매개 변수입니다.  
   
- [in] *사용 안 함*  
- 캡션 단추를 사용할 수 있는지 여부를 지정 하는 부울 매개 변수입니다.  
+*사용 안 함*<br/>
+[in] 캡션 단추를 사용할 수 있는지 여부를 지정 하는 부울 매개 변수입니다.  
   
- [in] *nImageID*  
- 단추에 사용할 아이콘의 이미지 인덱스입니다. 하는 경우 *nImageID* 가-1 이면이 메서드는 이미지 인덱스에 기록 *pButton*합니다.  
+*nImageID*<br/>
+[in] 단추에 사용할 아이콘의 이미지 인덱스입니다. 하는 경우 *nImageID* 가-1 이면이 메서드는 이미지 인덱스에 기록 *pButton*합니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드의 기본 구현에서의 전역 인스턴스 작은 단추를 표시 합니다 `CMenuImages` 클래스입니다. 단추에 대 한 헤더 파일에 나열 됩니다 `CMenuImages`합니다. 몇 가지 예로 `CMenuImages::IdClose`, `CMenuImages::IdArowLeft`를 `CMenuImages::IdArowRight`를 `CMenuImages::IdArowDown`를 `CMenuImages::IdArowUp`, 및 `CMenuImages::IdPinHorz`합니다.  
@@ -1965,10 +1965,10 @@ virtual void OnDrawCheckBox(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rect*  
- [in] *bHighlighted*  
- [in] *bChecked*  
+*pDC*<br/>
+[in] [in] *rect*  
+*bHighlighted*<br/>
+[in] [in] *bChecked*  
  [in] *b 사용*  
   
 ### <a name="remarks"></a>설명  
@@ -1987,12 +1987,12 @@ virtual void OnDrawCheckBoxEx(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rect*  
- [in] *nState*  
- [in] *bHighlighted*  
- [in] *bPressed*  
- [in] *b 사용*  
+*pDC*<br/>
+[in] [in] *rect*  
+*nState*<br/>
+[in] [in] *bHighlighted*  
+*bPressed*<br/>
+[in] [in] *b 사용*  
   
 ### <a name="remarks"></a>설명  
   
@@ -2010,23 +2010,23 @@ virtual void OnDrawComboBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 콤보 상자 단추의 장치 컨텍스트에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 콤보 상자 단추의 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 콤보 상자 단추 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 콤보 상자 단추 경계를 지정 하는 사각형입니다.  
   
- [in] *사용 안 함*  
- 콤보 상자 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.  
+*사용 안 함*<br/>
+[in] 콤보 상자 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *bIsDropped*  
- 콤보 상자를 삭제할지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsDropped*<br/>
+[in] 콤보 상자를 삭제할지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *bIsHighlighted*  
- 콤보 상자 단추를 강조 표시 되는지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsHighlighted*<br/>
+[in] 콤보 상자 단추를 강조 표시 되는지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *pButton*  
- 에 대 한 포인터를 `CMFCToolBarComboBoxButton` 개체입니다. 프레임 워크가 콤보 상자 단추를 그립니다.  
+*pButton*<br/>
+[in] 에 대 한 포인터를 `CMFCToolBarComboBoxButton` 개체입니다. 프레임 워크가 콤보 상자 단추를 그립니다.  
   
 ### <a name="remarks"></a>설명  
  콤보 상자의 테두리의 모양을 사용자 지정할 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -2045,23 +2045,23 @@ virtual void OnDrawComboDropButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 드롭 단추의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 드롭 단추의 경계를 지정 하는 사각형입니다.  
   
- [in] *사용 안 함*  
- 드롭 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.  
+*사용 안 함*<br/>
+[in] 드롭 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *bIsDropped*  
- 콤보 상자를 삭제할지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsDropped*<br/>
+[in] 콤보 상자를 삭제할지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *bIsHighlighted*  
- 드롭 단추 강조 표시 되는지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsHighlighted*<br/>
+[in] 드롭 단추 강조 표시 되는지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *pButton*  
- 에 대 한 포인터를 `CMFCToolBarComboBoxButton` 개체입니다. 프레임 워크가 콤보 상자 단추에 대 한 삭제 단추를 그립니다.  
+*pButton*<br/>
+[in] 에 대 한 포인터를 `CMFCToolBarComboBoxButton` 개체입니다. 프레임 워크가 콤보 상자 단추에 대 한 삭제 단추를 그립니다.  
   
 ### <a name="remarks"></a>설명  
  콤보 상자 단추의 드롭다운 단추의 모양을 사용자 지정 하 여 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -2091,20 +2091,20 @@ virtual void OnDrawDefaultRibbonImage(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rectImage*  
- 기본 이미지의 경계를 지정 하는 사각형입니다.  
+*rectImage*<br/>
+[in] 기본 이미지의 경계를 지정 하는 사각형입니다.  
   
- [in] *bIsDisabled*  
- 리본 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsDisabled*<br/>
+[in] 리본 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *bIsPressed*  
- 리본 단추를 눌렀는지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsPressed*<br/>
+[in] 리본 단추를 눌렀는지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *bIsHighlighted*  
- 리본 단추를 강조 표시 되는지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsHighlighted*<br/>
+[in] 리본 단추를 강조 표시 되는지 여부를 나타내는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  리본 단추에 사용 되는 이미지를 사용자 지정 하려는 경우에 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -2122,20 +2122,20 @@ virtual void OnDrawEditBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 경계를 지정 하는 사각형을 `CMFCToolBarEditBoxButton` 개체입니다.  
+*rect*<br/>
+[in] 경계를 지정 하는 사각형을 `CMFCToolBarEditBoxButton` 개체입니다.  
   
- [in] *사용 안 함*  
- 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.  
+*사용 안 함*<br/>
+[in] 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *bIsHighlighted*  
- 단추를 강조 표시 되는지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsHighlighted*<br/>
+[in] 단추를 강조 표시 되는지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *pButton*  
- 에 대 한 포인터를 `CMFCToolBarEditBoxButton` 개체입니다. 프레임 워크가 편집 상자 단추의 테두리를 그립니다.  
+*pButton*<br/>
+[in] 에 대 한 포인터를 `CMFCToolBarEditBoxButton` 개체입니다. 프레임 워크가 편집 상자 단추의 테두리를 그립니다.  
   
 ### <a name="remarks"></a>설명  
  테두리를 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 한 `CMFCToolBarEditBoxButton` 개체입니다.  
@@ -2152,10 +2152,10 @@ virtual void OnDrawExpandingBox(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rect*  
- [in] *bIsOpened*  
- [in] *colorBox*  
+*pDC*<br/>
+[in] [in] *rect*  
+*bIsOpened*<br/>
+[in] [in] *colorBox*  
   
 ### <a name="remarks"></a>설명  
   
@@ -2171,17 +2171,17 @@ virtual void OnDrawFloatingToolbarBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pToolBar*  
- 부동 도구 모음에 대 한 포인터입니다.  
+*pToolBar*<br/>
+[in] 부동 도구 모음에 대 한 포인터입니다.  
   
- [in] *rectBorder*  
- 부동 도구 모음에서의 경계를 지정 하는 사각형입니다.  
+*rectBorder*<br/>
+[in] 부동 도구 모음에서의 경계를 지정 하는 사각형입니다.  
   
- [in] *rectBorderSize*  
- 도구 모음 테두리 크기를 지정 하는 사각형입니다.  
+*rectBorderSize*<br/>
+[in] 도구 모음 테두리 크기를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  부동 도구 모음은 미니 프레임 창으로 표시 되는 도구 모음이입니다. 일반적으로 더 이상 도킹 될 수 있도록 사용자가 도구 모음을 끌 때 발생 합니다.  
@@ -2203,20 +2203,20 @@ virtual void OnDrawHeaderCtrlBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pCtrl*  
- 에 대 한 포인터를 `CMFCHeaderCtrl` 개체입니다. 프레임 워크는이 헤더 컨트롤의 테두리를 그립니다.  
+*pCtrl*<br/>
+[in] 에 대 한 포인터를 `CMFCHeaderCtrl` 개체입니다. 프레임 워크는이 헤더 컨트롤의 테두리를 그립니다.  
   
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 헤더 컨트롤의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 헤더 컨트롤의 경계를 지정 하는 사각형입니다.  
   
- [in] *bIsPressed*  
- 헤더 컨트롤을 눌렀는지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsPressed*<br/>
+[in] 헤더 컨트롤을 눌렀는지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *bIsHighlighted*  
- 헤더 컨트롤 강조 표시 되는지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsHighlighted*<br/>
+[in] 헤더 컨트롤 강조 표시 되는지 여부를 나타내는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  헤더 컨트롤의 테두리를 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -2233,17 +2233,17 @@ virtual void OnDrawHeaderCtrlSortArrow(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pCtrl*  
- 헤더 컨트롤에 대 한 포인터입니다. 비주얼 관리자의 정렬 화살표를 그립니다 [CMFCHeaderCtrl 클래스](../../mfc/reference/cmfcheaderctrl-class.md) 개체입니다.  
+*pCtrl*<br/>
+[in] 헤더 컨트롤에 대 한 포인터입니다. 비주얼 관리자의 정렬 화살표를 그립니다 [CMFCHeaderCtrl 클래스](../../mfc/reference/cmfcheaderctrl-class.md) 개체입니다.  
   
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 정렬 화살표의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 정렬 화살표의 경계를 지정 하는 사각형입니다.  
   
- [in] *bIsUp*  
- 정렬 화살표의 방향을 지정 하는 부울입니다.  
+*bIsUp*<br/>
+[in] 정렬 화살표의 방향을 지정 하는 부울입니다.  
   
 ### <a name="remarks"></a>설명  
  하는 경우 *bIsUp* 가 TRUE 인 비주얼 관리자 위쪽 정렬 화살표를 그립니다. FALSE 인 경우 비주얼 관리자 아래쪽 정렬 화살표를 그립니다. 재정의 `OnDrawHeaderCtrlSortArrow` 정렬 단추의 모양을 사용자 지정 파생된 클래스에서.  
@@ -2259,8 +2259,8 @@ virtual void OnDrawMenuArrowOnCustomizeList(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rectCommand*  
+*pDC*<br/>
+[in] [in] *rectCommand*  
  [in] *bSelected*  
   
 ### <a name="remarks"></a>설명  
@@ -2276,14 +2276,14 @@ virtual void OnDrawMenuBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대 한 포인터를 `CMFCPopupMenu` 개체입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터를 `CMFCPopupMenu` 개체입니다.  
   
- [in] *pMenu*  
- 에 대 한 포인터를 `CMFCPopupMenu` 개체입니다. 프레임 워크가 팝업 메뉴 주위에 테두리를 그립니다.  
+*pMenu*<br/>
+[in] 에 대 한 포인터를 `CMFCPopupMenu` 개체입니다. 프레임 워크가 팝업 메뉴 주위에 테두리를 그립니다.  
   
- [in] *rect*  
- 팝업 메뉴의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 팝업 메뉴의 경계를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드의 기본 구현은 표준 메뉴 테두리를 표시합니다. 메뉴 테두리의 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -2301,10 +2301,10 @@ virtual void OnDrawMenuCheck(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pButton*  
- [in] *rect*  
- [in] *bHighlight*  
+*pDC*<br/>
+[in] [in] *pButton*  
+*rect*<br/>
+[in] [in] *bHighlight*  
  [in] *bIsRadio*  
   
 ### <a name="remarks"></a>설명  
@@ -2322,10 +2322,10 @@ virtual void OnDrawMenuItemButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pButton*  
- [in] *rectButton*  
- [in] *bHighlight*  
+*pDC*<br/>
+[in] [in] *pButton*  
+*rectButton*<br/>
+[in] [in] *bHighlight*  
  [in] *사용 안 함*  
   
 ### <a name="remarks"></a>설명  
@@ -2340,8 +2340,8 @@ virtual COLORREF OnDrawMenuLabel(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rect*  
+*pDC*<br/>
+[in] [in] *rect*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -2358,8 +2358,8 @@ virtual void OnDrawMenuResizeBar(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rect*  
+*pDC*<br/>
+[in] [in] *rect*  
  [in] *nResizeFlags*  
   
 ### <a name="remarks"></a>설명  
@@ -2378,23 +2378,23 @@ virtual void OnDrawMenuScrollButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 스크롤 단추의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 스크롤 단추의 경계를 지정 하는 사각형입니다.  
   
- [in] *bIsScrollDown*  
- 어떤 유형의 단추를 나타내는 부울 값을 비주얼 관리자를 그립니다. TRUE 값을 지정 비주얼 관리자 아래쪽 단추를 그립니다.  
+*bIsScrollDown*<br/>
+[in] 어떤 유형의 단추를 나타내는 부울 값을 비주얼 관리자를 그립니다. TRUE 값을 지정 비주얼 관리자 아래쪽 단추를 그립니다.  
   
- [in] *bIsHighlited*  
- 단추를 강조 표시 되는지 여부를 나타내는 부울입니다.  
+*bIsHighlited*<br/>
+[in] 단추를 강조 표시 되는지 여부를 나타내는 부울입니다.  
   
- [in] *bIsPressed*  
- 단추를 눌렀는지 여부를 나타내는 부울입니다.  
+*bIsPressed*<br/>
+[in] 단추를 눌렀는지 여부를 나타내는 부울입니다.  
   
- [in] *bIsDisabled*  
- 단추를 사용할 수 있는지 여부를 나타내는 부울입니다.  
+*bIsDisabled*<br/>
+[in] 단추를 사용할 수 있는지 여부를 나타내는 부울입니다.  
   
 ### <a name="remarks"></a>설명  
  메뉴 스크롤 단추의 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다. 스크롤 단추 메뉴는 메뉴 항목의 전체 높이 팝업 메뉴의 높이 초과 하는 경우 팝업 메뉴의 가장자리에 나타납니다.  
@@ -2416,14 +2416,14 @@ virtual void OnDrawMenuShadow(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rectClient*  
- [in] *rectExclude*  
- [in] *nDepth*  
- [in] *iMinBrightness*  
- [in] *iMaxBrightness*  
- [in] *pBmpSaveBottom*  
- [in] *pBmpSaveRight*  
+*pDC*<br/>
+[in] [in] *rectClient*  
+*rectExclude*<br/>
+[in] [in] *nDepth*  
+*iMinBrightness*<br/>
+[in] [in] *iMaxBrightness*  
+*pBmpSaveBottom*<br/>
+[in] [in] *pBmpSaveRight*  
  [in] *bRTL*  
   
 ### <a name="remarks"></a>설명  
@@ -2441,20 +2441,20 @@ virtual void OnDrawMenuSystemButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 단추의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 단추의 경계를 지정 하는 사각형입니다.  
   
- [in] *uiSystemCommand*  
- 시스템 명령을 지정 하는 플래그 단추를 사용 하 여 연결 됩니다. 가능한 값은 SC_CLOSE, SC_MINIMIZE, 및 SC_RESTORE입니다.  
+*uiSystemCommand*<br/>
+[in] 시스템 명령을 지정 하는 플래그 단추를 사용 하 여 연결 됩니다. 가능한 값은 SC_CLOSE, SC_MINIMIZE, 및 SC_RESTORE입니다.  
   
- [in] *nStyle*  
- 단추의 현재 스타일을 지정 하는 플래그입니다. 가능한 값은 TBBS_PRESSED, TBBS_DISABLED를 및 0입니다.  
+*nStyle*<br/>
+[in] 단추의 현재 스타일을 지정 하는 플래그입니다. 가능한 값은 TBBS_PRESSED, TBBS_DISABLED를 및 0입니다.  
   
- [in] *bHighlight*  
- 단추를 강조 표시 되어 있는지 여부를 지정 하는 부울 매개 변수입니다.  
+*bHighlight*<br/>
+[in] 단추를 강조 표시 되어 있는지 여부를 지정 하는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  메뉴 시스템 단추를 **닫기**, **최소화**를 **최대화**, 및 **복원** 제목 표시줄에 있는 단추입니다.  
@@ -2473,10 +2473,10 @@ virtual void OnDrawMiniFrameBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pFrameWnd*  
- [in] *rectBorder*  
- [in] *rectBorderSize*  
+*pDC*<br/>
+[in] [in] *pFrameWnd*  
+*rectBorder*<br/>
+[in] [in] *rectBorderSize*  
   
 ### <a name="remarks"></a>설명  
   
@@ -2490,11 +2490,11 @@ virtual void OnDrawOutlookBarSplitter(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rectSplitter*  
- 분할자의 경계를 지정 하는 사각형입니다.  
+*rectSplitter*<br/>
+[in] 분할자의 경계를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  Outlook 표시줄에서 분할자의 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -2511,17 +2511,17 @@ virtual void OnDrawOutlookPageButtonBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rectBtn*  
- Outlook 페이지 단추 경계를 지정 하는 사각형입니다.  
+*rectBtn*<br/>
+[in] Outlook 페이지 단추 경계를 지정 하는 사각형입니다.  
   
- [in] *bIsHighlighted*  
- 단추를 강조 표시 되어 있는지 여부를 지정 하는 부울입니다.  
+*bIsHighlighted*<br/>
+[in] 단추를 강조 표시 되어 있는지 여부를 지정 하는 부울입니다.  
   
- [in] *bIsPressed*  
- 단추를 눌렀는지 여부를 지정 하는 부울입니다.  
+*bIsPressed*<br/>
+[in] 단추를 눌렀는지 여부를 지정 하는 부울입니다.  
   
 ### <a name="remarks"></a>설명  
  Outlook 페이지 단추의 모양을 변경 하는 사용자 지정 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -2537,14 +2537,14 @@ virtual void OnDrawPaneBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트는 컨트롤 막대에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트는 컨트롤 막대에 대 한 포인터입니다.  
   
- [in] *pBar*  
- 창에 대 한 포인터입니다. 비주얼 관리자는이 창 테두리를 그립니다.  
+*pBar*<br/>
+[in] 창에 대 한 포인터입니다. 비주얼 관리자는이 창 테두리를 그립니다.  
   
- [in] *rect*  
- 창의 경계를 나타내는 사각형입니다.  
+*rect*<br/>
+[in] 창의 경계를 나타내는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드의 기본 구현은 표준 테두리를 표시합니다. 테두리의 모양을 사용자 지정 파생된 클래스에서이 메서드를 재정의 합니다.  
@@ -2562,20 +2562,20 @@ virtual COLORREF OnDrawPaneCaption(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pBar*  
- 에 대 한 포인터를 `CDockablePane` 개체입니다. 프레임 워크에는이 창에 대 한 캡션을 그립니다.  
+*pBar*<br/>
+[in] 에 대 한 포인터를 `CDockablePane` 개체입니다. 프레임 워크에는이 창에 대 한 캡션을 그립니다.  
   
- [in] *bActive*  
- 컨트롤 막대에 활성 상태 인지 여부를 나타내는 부울 매개 변수입니다.  
+*bActive*<br/>
+[in] 컨트롤 막대에 활성 상태 인지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *rectCaption*  
- 캡션의 경계를 지정 하는 사각형입니다.  
+*rectCaption*<br/>
+[in] 캡션의 경계를 지정 하는 사각형입니다.  
   
- [in] *rectButtons*  
- 캡션 단추의 경계를 지정 하는 사각형입니다.  
+*rectButtons*<br/>
+[in] 캡션 단추의 경계를 지정 하는 사각형입니다.  
   
 ### <a name="return-value"></a>반환 값  
  A [COLORREF](/windows/desktop/gdi/colorref) 캡션의 텍스트 색을 나타내는 매개 변수입니다.  
@@ -2595,10 +2595,10 @@ virtual void OnDrawPaneDivider(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pSlider*  
- [in] *rect*  
- [in] *bAutoHideMode*  
+*pDC*<br/>
+[in] [in] *pSlider*  
+*rect*<br/>
+[in] [in] *bAutoHideMode*  
   
 ### <a name="remarks"></a>설명  
   
@@ -2612,8 +2612,8 @@ virtual void OnDrawPopupWindowBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rect*  
+*pDC*<br/>
+[in] [in] *rect*  
   
 ### <a name="remarks"></a>설명  
   
@@ -2628,8 +2628,8 @@ virtual void OnDrawPopupWindowButtonBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rectClient*  
+*pDC*<br/>
+[in] [in] *rectClient*  
  [in] *pButton*  
   
 ### <a name="remarks"></a>설명  
@@ -2645,8 +2645,8 @@ virtual COLORREF OnDrawPopupWindowCaption(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rectCaption*  
+*pDC*<br/>
+[in] [in] *rectCaption*  
  [in] *pPopupWnd*  
   
 ### <a name="return-value"></a>반환 값  
@@ -2663,11 +2663,11 @@ virtual void OnDrawRibbonApplicationButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pButton*  
- 에 대 한 포인터를 **주 단추** 리본 메뉴에 있습니다.  
+*pButton*<br/>
+[in] 에 대 한 포인터를 **주 단추** 리본 메뉴에 있습니다.  
   
 ### <a name="remarks"></a>설명  
  모양을 사용자 지정 하려는 경우 파생된 비주얼 관리자에서이 메서드를 재정의 합니다 **주 단추**합니다.  
@@ -2682,11 +2682,11 @@ virtual void OnDrawRibbonButtonBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pButton*  
- 에 대 한 포인터를 [CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md) 개체입니다. 프레임 워크가 리본 단추에 대 한 테두리를 그립니다.  
+*pButton*<br/>
+[in] 에 대 한 포인터를 [CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md) 개체입니다. 프레임 워크가 리본 단추에 대 한 테두리를 그립니다.  
   
 ### <a name="remarks"></a>설명  
  모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 하는 `CMFCRibbonButton`합니다.  
@@ -2702,14 +2702,14 @@ virtual COLORREF OnDrawRibbonButtonsGroup(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pGroup*  
- 리본의 단추 그룹에 대 한 포인터입니다. 프레임 워크는이 그룹의 단추를 그립니다.  
+*pGroup*<br/>
+[in] 리본의 단추 그룹에 대 한 포인터입니다. 프레임 워크는이 그룹의 단추를 그립니다.  
   
- [in] *rectGroup*  
- 그룹의 경계를 지정 하는 사각형입니다.  
+*rectGroup*<br/>
+[in] 그룹의 경계를 지정 하는 사각형입니다.  
   
 ### <a name="return-value"></a>반환 값  
  예약 된 값입니다. 기본 구현된 경우에는 -1을 반환합니다.  
@@ -2729,17 +2729,17 @@ virtual void OnDrawRibbonCaption(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pBar*  
- 리본 표시줄에 대 한 포인터입니다. 비주얼 관리자는이 리본 표시줄을 그립니다.  
+*pBar*<br/>
+[in] 리본 표시줄에 대 한 포인터입니다. 비주얼 관리자는이 리본 표시줄을 그립니다.  
   
- [in] *rect*  
- 리본 표시줄의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 리본 표시줄의 경계를 지정 하는 사각형입니다.  
   
- [in] *rectText*  
- 캡션 표시줄의 텍스트에 대 한 경계를 지정 하는 사각형입니다.  
+*rectText*<br/>
+[in] 캡션 표시줄의 텍스트에 대 한 경계를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  캡션 표시줄의 표시를 사용자 지정 파생된 비주얼 관리자에서이 함수를 재정의 합니다. 이 메서드가 리본의 주 프레임 창으로 통합 하는 경우에 캡션 표시줄을 영향을 줍니다.  
@@ -2774,14 +2774,14 @@ virtual void OnDrawRibbonCategory(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pCategory*  
- 에 대 한 포인터를 `CMFCRibbonCategory` 개체입니다. 프레임 워크가 리본 범주를 그립니다.  
+*pCategory*<br/>
+[in] 에 대 한 포인터를 `CMFCRibbonCategory` 개체입니다. 프레임 워크가 리본 범주를 그립니다.  
   
- [in] *rectCategory*  
- 리본 메뉴에서 모든 범주 패널의 경계를 지정 하는 사각형입니다.  
+*rectCategory*<br/>
+[in] 리본 메뉴에서 모든 범주 패널의 경계를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  리본 범주는 메뉴 명령의 논리적 그룹화입니다. 리본 범주에 대 한 자세한 내용은 참조 하세요. [CMFCRibbonCategory 클래스](../../mfc/reference/cmfcribboncategory-class.md)합니다.  
@@ -2798,11 +2798,11 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 그리기 컨텍스트입니다.  
+*pDC*<br/>
+[in] 그리기 컨텍스트입니다.  
   
- [in] *pContextCaption*  
- 캡션 표시줄에 대 한 포인터입니다. 이 visual manager 그립니다 [CMFCRibbonContextCaption 클래스](../../mfc/reference/cmfcribboncontextcaption-class.md) 개체입니다.  
+*pContextCaption*<br/>
+[in] 캡션 표시줄에 대 한 포인터입니다. 이 visual manager 그립니다 [CMFCRibbonContextCaption 클래스](../../mfc/reference/cmfcribboncontextcaption-class.md) 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  A [COLORREF](/windows/desktop/gdi/colorref) 캡션 표시줄에 텍스트의 색을 나타내는 매개 변수입니다.  
@@ -2820,8 +2820,8 @@ virtual void OnDrawRibbonCategoryScroll(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pScroll*  
+*pDC*<br/>
+[in] [in] *pScroll*  
   
 ### <a name="remarks"></a>설명  
   
@@ -2836,14 +2836,14 @@ virtual COLORREF OnDrawRibbonCategoryTab(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pTab*  
- 인스턴스에 대 한 포인터를 `CMFCRibbonTab` 클래스입니다. 프레임 워크는이 탭을 그립니다.  
+*pTab*<br/>
+[in] 인스턴스에 대 한 포인터를 `CMFCRibbonTab` 클래스입니다. 프레임 워크는이 탭을 그립니다.  
   
- [in] *bIsActive*  
- 탭이 활성 상태 인지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsActive*<br/>
+[in] 탭이 활성 상태 인지 여부를 나타내는 부울 매개 변수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  리본 범주 탭의 텍스트에 사용 되는 색입니다.  
@@ -2864,10 +2864,10 @@ virtual void OnDrawRibbonCheckBoxOnList(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pCheckBox*  
- [in] *rect*  
- [in] *bIsSelected*  
+*pDC*<br/>
+[in] [in] *pCheckBox*  
+*rect*<br/>
+[in] [in] *bIsSelected*  
  [in] *bHighlighted*  
   
 ### <a name="remarks"></a>설명  
@@ -2890,16 +2890,16 @@ virtual void OnDrawRibbonColorPaletteBox(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pColorButton*  
- [in] *pIcon*  
- [in] *색*  
- [in] *rect*  
- [in] *bDrawTopEdge*  
- [in] *bDrawBottomEdge*  
- [in] *bIsHighlighted*  
- [in] *bIsChecked*  
- [in] *bIsDisabled*  
+*pDC*<br/>
+[in] [in] *pColorButton*  
+*pIcon*<br/>
+[in] [in] *색*  
+*rect*<br/>
+[in] [in] *bDrawTopEdge*  
+*bDrawBottomEdge*<br/>
+[in] [in] *bIsHighlighted*  
+*bIsChecked*<br/>
+[in] [in] *bIsDisabled*  
   
 ### <a name="remarks"></a>설명  
   
@@ -2913,11 +2913,11 @@ virtual void OnDrawRibbonDefaultPaneButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pButton*  
- 리본 창 기본 단추에 대 한 포인터입니다.  
+*pButton*<br/>
+[in] 리본 창 기본 단추에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 워크를 최소 크기로 사용 하는 리본 창에서 크기를 조정할 패널에 대 한 콘텐츠를 표시할 영역이 없는 경우 기본 단추를 표시 합니다. 사용자가 기본 단추를 클릭 하면 프레임 워크 드롭다운 패널의 내용이 들어 있는 메뉴를 표시 합니다.  
@@ -2934,8 +2934,8 @@ virtual void OnDrawRibbonDefaultPaneButtonContext(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pButton*  
+*pDC*<br/>
+[in] [in] *pButton*  
   
 ### <a name="remarks"></a>설명  
   
@@ -2952,10 +2952,10 @@ virtual void OnDrawRibbonDefaultPaneButtonIndicator(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pButton*  
- [in] *rect*  
- [in] *bIsSelected*  
+*pDC*<br/>
+[in] [in] *pButton*  
+*rect*<br/>
+[in] [in] *bIsSelected*  
  [in] *bHighlighted*  
   
 ### <a name="remarks"></a>설명  
@@ -2971,8 +2971,8 @@ virtual void OnDrawRibbonGalleryBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pButton*  
+*pDC*<br/>
+[in] [in] *pButton*  
  [in] *rectBorder*  
   
 ### <a name="remarks"></a>설명  
@@ -2987,8 +2987,8 @@ virtual void OnDrawRibbonGalleryButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pButton*  
+*pDC*<br/>
+[in] [in] *pButton*  
   
 ### <a name="remarks"></a>설명  
   
@@ -3004,10 +3004,10 @@ virtual void OnDrawRibbonKeyTip(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pElement*  
- [in] *rect*  
- [in] *str*  
+*pDC*<br/>
+[in] [in] *pElement*  
+*rect*<br/>
+[in] [in] *str*  
   
 ### <a name="remarks"></a>설명  
   
@@ -3022,14 +3022,14 @@ virtual void OnDrawRibbonLabel(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pLabel*  
- 에 대 한 포인터를 [CMFCRibbonLabel](../../mfc/reference/cmfcribbonlabel-class.md) 개체입니다. 프레임 워크에는이 리본 레이블입니다를 그립니다.  
+*pLabel*<br/>
+[in] 에 대 한 포인터를 [CMFCRibbonLabel](../../mfc/reference/cmfcribbonlabel-class.md) 개체입니다. 프레임 워크에는이 리본 레이블입니다를 그립니다.  
   
- [in] *rect*  
- 리본 패널의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 리본 패널의 경계를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  리본 레이블 사용자 지정 파생된 클래스에서이 메서드를 재정의 합니다.  
@@ -3044,11 +3044,11 @@ virtual void OnDrawRibbonMainPanelButtonBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pButton*  
- 에 대 한 포인터를 `CMFCRibbonButton` 리본의 주 패널에 있습니다. 프레임 워크는이 단추에 대 한 테두리를 그립니다.  
+*pButton*<br/>
+[in] 에 대 한 포인터를 `CMFCRibbonButton` 리본의 주 패널에 있습니다. 프레임 워크는이 단추에 대 한 테두리를 그립니다.  
   
 ### <a name="remarks"></a>설명  
  테두리 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 하는 `CMFCRibbonButton` 에 **Main** 패널.  
@@ -3064,14 +3064,14 @@ virtual void OnDrawRibbonMainPanelFrame(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pPanel*  
- 에 대 한 포인터를 `CMFCRibbonMainPanel`입니다.  
+*pPanel*<br/>
+[in] 에 대 한 포인터를 `CMFCRibbonMainPanel`입니다.  
   
- [in] *rect*  
- 경계를 지정 하는 사각형을 `CMFCRibbonMainPanel`입니다.  
+*rect*<br/>
+[in] 경계를 지정 하는 사각형을 `CMFCRibbonMainPanel`입니다.  
   
 ### <a name="remarks"></a>설명  
  프레임의 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다 `CMFCRibbonMainPanel`합니다.  
@@ -3087,8 +3087,8 @@ virtual void OnDrawRibbonMenuCheckFrame(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pButton*  
+*pDC*<br/>
+[in] [in] *pButton*  
  [in] *rect*  
   
 ### <a name="remarks"></a>설명  
@@ -3105,17 +3105,17 @@ virtual COLORREF OnDrawRibbonPanel(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pPanel*  
- 에 대 한 포인터를 `CMFCRibbonPanel` 개체입니다. 프레임 워크가 리본 패널을 그립니다.  
+*pPanel*<br/>
+[in] 에 대 한 포인터를 `CMFCRibbonPanel` 개체입니다. 프레임 워크가 리본 패널을 그립니다.  
   
- [in] *rectPanel*  
- 패널의 경계를 지정 하는 사각형입니다.  
+*rectPanel*<br/>
+[in] 패널의 경계를 지정 하는 사각형입니다.  
   
- [in] *rectCaption*  
- 패널에 대 한 캡션의 경계를 지정 하는 사각형입니다.  
+*rectCaption*<br/>
+[in] 패널에 대 한 캡션의 경계를 지정 하는 사각형입니다.  
   
 ### <a name="return-value"></a>반환 값  
  리본 패널의 텍스트 색입니다.  
@@ -3134,14 +3134,14 @@ virtual void OnDrawRibbonPanelCaption(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pPanel*  
- 에 대 한 포인터를 `CMFCRibbonPanel` 개체입니다. 프레임 워크에는이 리본 패널에 대 한 캡션을 그립니다.  
+*pPanel*<br/>
+[in] 에 대 한 포인터를 `CMFCRibbonPanel` 개체입니다. 프레임 워크에는이 리본 패널에 대 한 캡션을 그립니다.  
   
- [in] *rectCaption*  
- 리본 패널에 대 한 캡션의 경계를 지정 하는 사각형입니다.  
+*rectCaption*<br/>
+[in] 리본 패널에 대 한 캡션의 경계를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  리본 패널에 있는 캡션의 표시를 사용자 지정 파생된 클래스에서이 메서드를 재정의 합니다.  
@@ -3159,20 +3159,20 @@ virtual void OnDrawRibbonProgressBar(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pProgress*  
- 에 대 한 포인터를 `CMFCRibbonProgressBar` 개체입니다. 프레임 워크가 진행률 표시줄을 그립니다.  
+*pProgress*<br/>
+[in] 에 대 한 포인터를 `CMFCRibbonProgressBar` 개체입니다. 프레임 워크가 진행률 표시줄을 그립니다.  
   
- [in] *rectProgress*  
- 진행률 표시줄의 경계를 지정 하는 사각형입니다.  
+*rectProgress*<br/>
+[in] 진행률 표시줄의 경계를 지정 하는 사각형입니다.  
   
- [in] *rectChunk*  
- 진행률 표시줄을 둘러싼 영역의 경계를 지정 하는 사각형입니다.  
+*rectChunk*<br/>
+[in] 진행률 표시줄을 둘러싼 영역의 경계를 지정 하는 사각형입니다.  
   
- [in] *bInfiniteMode*  
- 진행률 표시줄의 모드를 나타내는 부울 매개 변수입니다. 값이 TRUE 이면 막대 무한 모드입니다. 기본 구현에서는이 매개 변수를 사용 하지 않습니다.  
+*bInfiniteMode*<br/>
+[in] 진행률 표시줄의 모드를 나타내는 부울 매개 변수입니다. 값이 TRUE 이면 막대 무한 모드입니다. 기본 구현에서는이 매개 변수를 사용 하지 않습니다.  
   
 ### <a name="remarks"></a>설명  
  진행률 표시줄의 표시를 사용자 지정 파생된 클래스에서이 메서드를 재정의 합니다.  
@@ -3188,14 +3188,14 @@ virtual void OnDrawRibbonQuickAccessToolBarSeparator(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pSeparator*  
- 에 대 한 포인터를 [CMFCRibbonSeparator](../../mfc/reference/cmfcribbonseparator-class.md) 개체입니다. 프레임 워크가 리본 구분 기호를 그립니다.  
+*pSeparator*<br/>
+[in] 에 대 한 포인터를 [CMFCRibbonSeparator](../../mfc/reference/cmfcribbonseparator-class.md) 개체입니다. 프레임 워크가 리본 구분 기호를 그립니다.  
   
- [in] *rect*  
- 구분선의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 구분선의 경계를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  리본 구분 기호 표시를 사용자 지정 파생된 클래스에서이 메서드를 재정의 합니다 **빠른 실행 도구 모음**합니다.  
@@ -3211,14 +3211,14 @@ virtual void OnDrawRibbonRecentFilesFrame(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pPanel*  
- 에 대 한 포인터를 **Main** 리본의 패널입니다.  
+*pPanel*<br/>
+[in] 에 대 한 포인터를 **Main** 리본의 패널입니다.  
   
- [in] *rect*  
- 최근에 사용한 파일 목록에 대 한 프레임의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 최근에 사용한 파일 목록에 대 한 프레임의 경계를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  최근에 사용한 파일 목록 표시를 사용자 지정 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -3234,14 +3234,14 @@ virtual void OnDrawRibbonSliderChannel(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pSlider*  
- CMFCRibbonSlider 개체에 대 한 포인터입니다. 프레임 워크가 리본 슬라이더에 대 한 채널을 그립니다.  
+*pSlider*<br/>
+[in] CMFCRibbonSlider 개체에 대 한 포인터입니다. 프레임 워크가 리본 슬라이더에 대 한 채널을 그립니다.  
   
- [in] *rect*  
- 리본 슬라이더의 채널에 대 한 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 리본 슬라이더의 채널에 대 한 경계를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  리본 슬라이더의 채널의 모양을 사용자 지정 파생된 클래스에서이 메서드를 재정의 합니다.  
@@ -3260,23 +3260,23 @@ virtual void OnDrawRibbonSliderThumb(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pSlider*  
- 에 대 한 포인터를 `CMFCRibbonSlider`입니다. 프레임 워크가 리본 슬라이더 위치 조정 컨트롤을 그립니다.  
+*pSlider*<br/>
+[in] 에 대 한 포인터를 `CMFCRibbonSlider`입니다. 프레임 워크가 리본 슬라이더 위치 조정 컨트롤을 그립니다.  
   
- [in] *rect*  
- 리본 슬라이더 위치 조정 컨트롤의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 리본 슬라이더 위치 조정 컨트롤의 경계를 지정 하는 사각형입니다.  
   
- [in] *bIsHighlighted*  
- Thumb을 강조 표시 된 경우를 나타내는 부울 매개 변수입니다.  
+*bIsHighlighted*<br/>
+[in] Thumb을 강조 표시 된 경우를 나타내는 부울 매개 변수입니다.  
   
- [in] *bIsPressed*  
- Thumb을 누를 경우를 나타내는 부울 매개 변수입니다.  
+*bIsPressed*<br/>
+[in] Thumb을 누를 경우를 나타내는 부울 매개 변수입니다.  
   
- [in] *bIsDisabled*  
- Thumb 사용할 수 없는 경우를 나타내는 부울 매개 변수입니다.  
+*bIsDisabled*<br/>
+[in] Thumb 사용할 수 없는 경우를 나타내는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  에 대 한 조정 컨트롤의 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 하는 `CMFCRibbonSlider`합니다.  
@@ -3296,26 +3296,26 @@ virtual void OnDrawRibbonSliderZoomButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pSlider*  
- 에 대 한 포인터를 `CMFCRibbonSlider` 개체입니다. 프레임 워크가 리본 슬라이더를 그립니다.  
+*pSlider*<br/>
+[in] 에 대 한 포인터를 `CMFCRibbonSlider` 개체입니다. 프레임 워크가 리본 슬라이더를 그립니다.  
   
- [in] *rect*  
- 리본 슬라이더에서 확대/축소 단추의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 리본 슬라이더에서 확대/축소 단추의 경계를 지정 하는 사각형입니다.  
   
- [in] *bIsZoomOut*  
- 단추를 나타내는 부울 매개 변수는 프레임 워크를 그립니다. TRUE 값을 사용 하 여 왼쪽된 단추를 "-" out 확대/축소에 대 한 합니다. FALSE 값에서 확대/축소에 대 한 "+"를 사용 하 여 오른쪽 단추를 나타냅니다.  
+*bIsZoomOut*<br/>
+[in] 단추를 나타내는 부울 매개 변수는 프레임 워크를 그립니다. TRUE 값을 사용 하 여 왼쪽된 단추를 "-" out 확대/축소에 대 한 합니다. FALSE 값에서 확대/축소에 대 한 "+"를 사용 하 여 오른쪽 단추를 나타냅니다.  
   
- [in] *bIsHighlighted*  
- 단추를 강조 표시 되는지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsHighlighted*<br/>
+[in] 단추를 강조 표시 되는지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *bIsPressed*  
- 단추를 눌렀는지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsPressed*<br/>
+[in] 단추를 눌렀는지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *bIsDisabled*  
- 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsDisabled*<br/>
+[in] 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로 리본 슬라이더에서 확대/축소 단추는 사용 하 여 원을 + 또는-가운데에 로그인 합니다. 확대/축소 단추의 모양을 사용자 지정 하려면 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -3331,14 +3331,14 @@ virtual COLORREF OnDrawRibbonStatusBarPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pBar*  
- 창을 포함 하는 상태 표시줄에 대 한 포인터입니다.  
+*pBar*<br/>
+[in] 창을 포함 하는 상태 표시줄에 대 한 포인터입니다.  
   
- [in] *pPane*  
- 상태 표시줄 창에 대 한 포인터입니다. 이 프레임 워크 그립니다 [CMFCRibbonStatusBarPane](../../mfc/reference/cmfcribbonstatusbarpane-class.md) 개체입니다.  
+*pPane*<br/>
+[in] 상태 표시줄 창에 대 한 포인터입니다. 이 프레임 워크 그립니다 [CMFCRibbonStatusBarPane](../../mfc/reference/cmfcribbonstatusbarpane-class.md) 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  예약 된 값입니다. 기본 구현된 경우에는 -1을 반환합니다.  
@@ -3385,10 +3385,10 @@ virtual void OnDrawScrollButtons(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rect*  
- [in] *nBorderSize*  
- [in] *iImage*  
+*pDC*<br/>
+[in] [in] *rect*  
+*nBorderSize*<br/>
+[in] [in] *iImage*  
  [in] *bHilited*  
   
 ### <a name="remarks"></a>설명  
@@ -3405,17 +3405,17 @@ virtual void OnDrawSeparator(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 컨트롤 막대에 대 한 장치 컨텍스트 포인터입니다.  
+*pDC*<br/>
+[in] 컨트롤 막대에 대 한 장치 컨텍스트 포인터입니다.  
   
- [in] *pBar*  
- 구분 기호를 포함 하는 창에 대 한 포인터입니다.  
+*pBar*<br/>
+[in] 구분 기호를 포함 하는 창에 대 한 포인터입니다.  
   
- [in] *rect*  
- 구분선의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 구분선의 경계를 지정 하는 사각형입니다.  
   
- [in] *bIsHoriz*  
- 도킹 창의 방향을 나타내는 부울 매개 변수입니다. TRUE 값 창에 가로로 도킹 됨을 나타냅니다. FALSE 값 창에 세로로 도킹 됨을 나타냅니다.  
+*bIsHoriz*<br/>
+[in] 도킹 창의 방향을 나타내는 부울 매개 변수입니다. TRUE 값 창에 가로로 도킹 됨을 나타냅니다. FALSE 값 창에 세로로 도킹 됨을 나타냅니다.  
   
 ### <a name="remarks"></a>설명  
  구분 기호는 별도의 관련된 아이콘의 그룹 컨트롤 막대에 사용 됩니다. 이 메서드의 기본 구현에서는 표준 구분 기호를 표시 합니다. 구분 기호의 표시를 사용자 지정 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -3431,8 +3431,8 @@ virtual void OnDrawShowAllMenuItems(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rect*  
+*pDC*<br/>
+[in] [in] *rect*  
  [in] *상태*  
   
 ### <a name="remarks"></a>설명  
@@ -3450,20 +3450,20 @@ virtual void OnDrawSpinButtons(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rectSpin*  
- Spin 컨트롤의 경계를 지정 하는 사각형입니다.  
+*rectSpin*<br/>
+[in] Spin 컨트롤의 경계를 지정 하는 사각형입니다.  
   
- [in] *nState*  
- Spin 컨트롤의 상태를 나타내는 플래그입니다. 자세한 내용은 설명 부분을 참조하세요.  
+*nState*<br/>
+[in] Spin 컨트롤의 상태를 나타내는 플래그입니다. 자세한 내용은 설명 부분을 참조하세요.  
   
- [in] *bOrientation*  
- Spin 컨트롤의 방향을 지정 하는 부울 매개 변수입니다. 값이 true 이면 spin 컨트롤은 가로 나타냅니다. 그렇지 않은 경우는 세로입니다.  
+*bOrientation*<br/>
+[in] Spin 컨트롤의 방향을 지정 하는 부울 매개 변수입니다. 값이 true 이면 spin 컨트롤은 가로 나타냅니다. 그렇지 않은 경우는 세로입니다.  
   
- [in] *pSpinCtrl*  
- 스핀 컨트롤에 대 한 포인터입니다. 프레임 워크는이 컨트롤에 대 한 단추를 그립니다.  
+*pSpinCtrl*<br/>
+[in] 스핀 컨트롤에 대 한 포인터입니다. 프레임 워크는이 컨트롤에 대 한 단추를 그립니다.  
   
 ### <a name="remarks"></a>설명  
  합니다 *nState* 매개 변수 spin 컨트롤의 상태를 나타냅니다. 매개 변수는 다음 값 중 하나입니다.  
@@ -3491,14 +3491,14 @@ virtual void OnDrawSplitterBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pSplitterWnd*  
- 분할기 창에 대 한 포인터입니다. 프레임 워크는이 창에 대 한 테두리를 그립니다.  
+*pSplitterWnd*<br/>
+[in] 분할기 창에 대 한 포인터입니다. 프레임 워크는이 창에 대 한 테두리를 그립니다.  
   
- [in] *rect*  
- 분할기 창 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 분할기 창 경계를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  분할기 창에 대 한 테두리의 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -3514,14 +3514,14 @@ virtual void OnDrawSplitterBox(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pSplitterWnd*  
- 분할기 창에 대 한 포인터입니다. 프레임 워크는 분할 창은이 대 한 상자를 그립니다.  
+*pSplitterWnd*<br/>
+[in] 분할기 창에 대 한 포인터입니다. 프레임 워크는 분할 창은이 대 한 상자를 그립니다.  
   
- [in] *rect*  
- 분할기 창 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 분할기 창 경계를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  분할기 창으로 끌어서 상자의 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -3539,20 +3539,20 @@ virtual void OnDrawStatusBarPaneBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pBar*  
- 에 대 한 포인터를 `CMFCStatusBar` 개체입니다. 프레임 워크는이 상태 모음 개체를 그립니다.  
+*pBar*<br/>
+[in] 에 대 한 포인터를 `CMFCStatusBar` 개체입니다. 프레임 워크는이 상태 모음 개체를 그립니다.  
   
- [in] *rectPane*  
- 상태 표시줄의 경계를 지정 하는 사각형입니다.  
+*rectPane*<br/>
+[in] 상태 표시줄의 경계를 지정 하는 사각형입니다.  
   
- [in] *uiID*  
- 상태 표시줄의 ID입니다.  
+*uiID*<br/>
+[in] 상태 표시줄의 ID입니다.  
   
- [in] *nStyle*  
- 상태 표시줄의 스타일입니다.  
+*nStyle*<br/>
+[in] 상태 표시줄의 스타일입니다.  
   
 ### <a name="remarks"></a>설명  
  에 대 한 테두리의 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 한 `CMFCStatusBar` 개체입니다.  
@@ -3574,32 +3574,32 @@ virtual void OnDrawStatusBarProgress(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 상태 표시줄에 대 한 장치 컨텍스트 포인터입니다.  
+*pDC*<br/>
+[in] 상태 표시줄에 대 한 장치 컨텍스트 포인터입니다.  
   
- [in] *pStatusBar*  
- `CMFCStatusBar` 진행률 표시줄을 포함 하는 개체입니다.  
+*pStatusBar*<br/>
+[in] `CMFCStatusBar` 진행률 표시줄을 포함 하는 개체입니다.  
   
- [in] *rectProgress*  
- 진행률 표시줄의 경계를 지정 하는 사각형입니다.  
+*rectProgress*<br/>
+[in] 진행률 표시줄의 경계를 지정 하는 사각형입니다.  
   
- [in] *nProgressTotal*  
- 진행률 표시줄에 대 한 총 수입니다.  
+*nProgressTotal*<br/>
+[in] 진행률 표시줄에 대 한 총 수입니다.  
   
- [in] *nProgressCurr*  
- 진행률 표시줄에 대 한 현재 진행률입니다.  
+*nProgressCurr*<br/>
+[in] 진행률 표시줄에 대 한 현재 진행률입니다.  
   
- [in] *clrBar*  
- A [COLORREF](/windows/desktop/gdi/colorref) 진행률 표시줄의 초기 색을 나타내는 매개 변수입니다. 값은 색 그라데이션의 시작 또는 완료 진행률 표시줄의 색입니다.  
+*clrBar*<br/>
+[in] A [COLORREF](/windows/desktop/gdi/colorref) 진행률 표시줄의 초기 색을 나타내는 매개 변수입니다. 값은 색 그라데이션의 시작 또는 완료 진행률 표시줄의 색입니다.  
   
- [in] *clrProgressBarDest*  
- 진행률 표시줄에 대 한 색 그라데이션의 끝을 나타내는 COLORREF 매개 변수입니다. 하는 경우 *clrProgressBarDest* -1은 프레임 워크 색 그라데이션으로 진행률 표시줄을 그리지 않습니다. 대신 지정 되는 색을 사용 하 여 전체 진행률 표시줄을 채우도록 *clrBar*합니다.  
+*clrProgressBarDest*<br/>
+[in] 진행률 표시줄에 대 한 색 그라데이션의 끝을 나타내는 COLORREF 매개 변수입니다. 하는 경우 *clrProgressBarDest* -1은 프레임 워크 색 그라데이션으로 진행률 표시줄을 그리지 않습니다. 대신 지정 되는 색을 사용 하 여 전체 진행률 표시줄을 채우도록 *clrBar*합니다.  
   
- [in] *clrProgressText*  
- 현재 진행률의 텍스트 표현에 대 한 텍스트 색을 나타내는 COLORREF 매개 변수입니다. 이 매개 변수가 무시 됩니다 *bProgressText* 가 FALSE로 설정 합니다.  
+*clrProgressText*<br/>
+[in] 현재 진행률의 텍스트 표현에 대 한 텍스트 색을 나타내는 COLORREF 매개 변수입니다. 이 매개 변수가 무시 됩니다 *bProgressText* 가 FALSE로 설정 합니다.  
   
- [in] *bProgressText*  
- 현재 진행률의 텍스트 표현을 표시 여부를 나타내는 부울 매개 변수입니다.  
+*bProgressText*<br/>
+[in] 현재 진행률의 텍스트 표현을 표시 여부를 나타내는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다 `CMFCStatusBar` 개체입니다.  
@@ -3615,14 +3615,14 @@ virtual void OnDrawStatusBarSizeBox(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pStatBar*  
- 상태 표시줄에 대 한 포인터입니다. 프레임 워크는이 상태 표시줄에 대 한 크기 상자를 그립니다.  
+*pStatBar*<br/>
+[in] 상태 표시줄에 대 한 포인터입니다. 프레임 워크는이 상태 표시줄에 대 한 크기 상자를 그립니다.  
   
- [in] *rectSizeBox*  
- 경계 상자의 크기를 지정 하는 사각형입니다.  
+*rectSizeBox*<br/>
+[in] 경계 상자의 크기를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  모양의 크기 상자에 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 하는 `CMFCStatusBar`합니다.  
@@ -3640,20 +3640,20 @@ virtual void OnDrawTab(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rectTab*  
- 탭 컨트롤의 경계를 지정 하는 사각형입니다.  
+*rectTab*<br/>
+[in] 탭 컨트롤의 경계를 지정 하는 사각형입니다.  
   
- [in] *iTab*  
- 프레임 워크를 그릴 수 있는 탭의 인덱스입니다.  
+*iTab*<br/>
+[in] 프레임 워크를 그릴 수 있는 탭의 인덱스입니다.  
   
- [in] *bIsActive*  
- 탭이 활성 상태 인지 여부를 지정 하는 부울 매개 변수입니다.  
+*bIsActive*<br/>
+[in] 탭이 활성 상태 인지 여부를 지정 하는 부울 매개 변수입니다.  
   
- [in] *pTabWnd*  
- 에 대 한 포인터를 `CMFCBaseTabCtrl` 개체입니다. 프레임 워크는이 탭 컨트롤을 그립니다.  
+*pTabWnd*<br/>
+[in] 에 대 한 포인터를 `CMFCBaseTabCtrl` 개체입니다. 프레임 워크는이 탭 컨트롤을 그립니다.  
   
 ### <a name="remarks"></a>설명  
  `CMFCBaseTabCtrl` 개체 WM_PAINT 메시지를 처리 하는 경우이 메서드를 호출 합니다.  
@@ -3674,23 +3674,23 @@ virtual void OnDrawTabCloseButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 사각형의 경계를 지정 하는 **닫기** 단추입니다.  
+*rect*<br/>
+[in] 사각형의 경계를 지정 하는 **닫기** 단추입니다.  
   
- [in] *pTabWnd*  
- 탭 컨트롤에 대 한 포인터입니다. 프레임 워크 그립니다 합니다 **닫기** 이 탭 컨트롤 단추입니다.  
+*pTabWnd*<br/>
+[in] 탭 컨트롤에 대 한 포인터입니다. 프레임 워크 그립니다 합니다 **닫기** 이 탭 컨트롤 단추입니다.  
   
- [in] *bIsHighlighted*  
- 나타내는 부울 매개 변수 여부는 **닫기** 단추가 강조 표시 합니다.  
+*bIsHighlighted*<br/>
+[in] 나타내는 부울 매개 변수 여부는 **닫기** 단추가 강조 표시 합니다.  
   
- [in] *bIsPressed*  
- 나타내는 부울 매개 변수 여부를 **닫기** 단추가 눌러져 있습니다.  
+*bIsPressed*<br/>
+[in] 나타내는 부울 매개 변수 여부를 **닫기** 단추가 눌러져 있습니다.  
   
- [in] *bIsDisabled*  
- 나타내는 부울 매개 변수 여부는 **닫기** 단추가 비활성화 됩니다.  
+*bIsDisabled*<br/>
+[in] 나타내는 부울 매개 변수 여부는 **닫기** 단추가 비활성화 됩니다.  
   
 ### <a name="remarks"></a>설명  
  모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다 **닫습니다** 활성 탭의 단추를 *pTabWnd*.  
@@ -3709,23 +3709,23 @@ virtual void OnDrawTabContent(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rectTab*  
- 탭 내부 경계를 지정 하는 사각형입니다.  
+*rectTab*<br/>
+[in] 탭 내부 경계를 지정 하는 사각형입니다.  
   
- [in] *iTab*  
- 탭의 0부터 시작 하는 인덱스입니다. 프레임 워크는이 탭의 내부를 그립니다.  
+*iTab*<br/>
+[in] 탭의 0부터 시작 하는 인덱스입니다. 프레임 워크는이 탭의 내부를 그립니다.  
   
- [in] *bIsActive*  
- 탭이 활성화 되어 있는지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsActive*<br/>
+[in] 탭이 활성화 되어 있는지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *pTabWnd*  
- 그리고 있는 탭을 포함 하는 탭된 컨트롤에 대 한 포인터입니다.  
+*pTabWnd*<br/>
+[in] 그리고 있는 탭을 포함 하는 탭된 컨트롤에 대 한 포인터입니다.  
   
- [in] *clrText*  
- 탭의 내부에 텍스트의 색입니다.  
+*clrText*<br/>
+[in] 탭의 내부에 텍스트의 색입니다.  
   
 ### <a name="remarks"></a>설명  
  탭의 내부 텍스트 및 탭의 아이콘을 포함합니다. 탭의 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -3743,20 +3743,20 @@ virtual void OnDrawTabsButtonBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 탭 단추의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 탭 단추의 경계를 지정 하는 사각형입니다.  
   
- [in] *pButton*  
- 에 대 한 포인터를 [CMFCButton](../../mfc/reference/cmfcbutton-class.md) 개체입니다. 이 프레임 워크에 테두리를 그리는 `CMFCButton` 인스턴스.  
+*pButton*<br/>
+[in] 에 대 한 포인터를 [CMFCButton](../../mfc/reference/cmfcbutton-class.md) 개체입니다. 이 프레임 워크에 테두리를 그리는 `CMFCButton` 인스턴스.  
   
- [in] *uiState*  
- 단추의 상태를 지정 하는 부호 없는 정수입니다.  
+*uiState*<br/>
+[in] 단추의 상태를 지정 하는 부호 없는 정수입니다.  
   
- [in] *pWndTab*  
- 부모 탭 창에 대 한 포인터입니다.  
+*pWndTab*<br/>
+[in] 부모 탭 창에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  탭 단추의 테두리의 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -3774,20 +3774,20 @@ virtual void OnDrawTask(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pTask*  
- 에 대 한 포인터를 [CMFCTasksPaneTask](../../mfc/reference/cmfctaskspanetask-class.md) 개체입니다. 프레임 워크는이 작업을 그립니다.  
+*pTask*<br/>
+[in] 에 대 한 포인터를 [CMFCTasksPaneTask](../../mfc/reference/cmfctaskspanetask-class.md) 개체입니다. 프레임 워크는이 작업을 그립니다.  
   
- [in] *pIcons*  
- 작업 창과 연결 된 이미지 목록에 대 한 포인터입니다. 각 태스크는이 목록에 이미지에 대 한 인덱스를 포함합니다.  
+*pIcons*<br/>
+[in] 작업 창과 연결 된 이미지 목록에 대 한 포인터입니다. 각 태스크는이 목록에 이미지에 대 한 인덱스를 포함합니다.  
   
- [in] *bIsHighlighted*  
- 표시 된 작업 강조 표시 되어 있는지 여부를 지정 하는 부울 매개 변수입니다.  
+*bIsHighlighted*<br/>
+[in] 표시 된 작업 강조 표시 되어 있는지 여부를 지정 하는 부울 매개 변수입니다.  
   
- [in] *bIsSelected*  
- 표시 된 작업이 선택 되어 있는지 여부를 지정 하는 부울 매개 변수입니다.  
+*bIsSelected*<br/>
+[in] 표시 된 작업이 선택 되어 있는지 여부를 지정 하는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  작업 아이콘 및 텍스트 모두로 작업 표시줄에서 표시 하는 프레임 워크입니다. 합니다 *pIcons* 매개 변수에 포함 하 여 해당 작업에 대 한 아이콘 *pTask*합니다.  
@@ -3806,17 +3806,17 @@ virtual void OnDrawTasksGroupAreaBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 작업 창에서 그룹 영역의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 작업 창에서 그룹 영역의 경계를 지정 하는 사각형입니다.  
   
- [in] *bSpecial*  
- 테두리는 강조 표시 하는 경우를 지정 하는 부울 매개 변수입니다. 값이 true 이면 테두리 강조 표시 되어 있는지를 나타냅니다.  
+*bSpecial*<br/>
+[in] 테두리는 강조 표시 하는 경우를 지정 하는 부울 매개 변수입니다. 값이 true 이면 테두리 강조 표시 되어 있는지를 나타냅니다.  
   
- [in] *bNoTitle*  
- 그룹 영역에 제목이 있는지 여부를 지정 하는 부울 매개 변수입니다. 값이 true 이면 그룹 영역에 제목이 없는지 나타냅니다.  
+*bNoTitle*<br/>
+[in] 그룹 영역에 제목이 있는지 여부를 지정 하는 부울 매개 변수입니다. 값이 true 이면 그룹 영역에 제목이 없는지 나타냅니다.  
   
 ### <a name="remarks"></a>설명  
  작업 창에 있는 그룹 영역 테두리를 사용자 지정 파생된 클래스에서이 함수를 재정의 합니다.  
@@ -3834,20 +3834,20 @@ virtual void OnDrawTasksGroupCaption(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pGroup*  
- 에 대 한 포인터를 `CMFCTasksPaneTaskGroup` 개체입니다. 프레임 워크에는이 그룹에 대 한 캡션을 그립니다.  
+*pGroup*<br/>
+[in] 에 대 한 포인터를 `CMFCTasksPaneTaskGroup` 개체입니다. 프레임 워크에는이 그룹에 대 한 캡션을 그립니다.  
   
- [in] *bIsHighlighted*  
- 그룹을 강조 표시 되는지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsHighlighted*<br/>
+[in] 그룹을 강조 표시 되는지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *bIsSelected*  
- 그룹을 현재 선택 되어 있는지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsSelected*<br/>
+[in] 그룹을 현재 선택 되어 있는지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *bCanCollapse*  
- 그룹을 축소할 수 있는지 여부를 나타내는 부울 매개 변수입니다.  
+*bCanCollapse*<br/>
+[in] 그룹을 축소할 수 있는지 여부를 나타내는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  작업 그룹에 표시 된 [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) 개체입니다.  
@@ -3868,12 +3868,12 @@ virtual void OnDrawTasksGroupIcon(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pGroup*  
- [in] *nIconHOffset*  
- [in] *bIsHighlighted*  
- [in] *bIsSelected*  
- [in] *bCanCollapse*  
+*pDC*<br/>
+[in] [in] *pGroup*  
+*nIconHOffset*<br/>
+[in] [in] *bIsHighlighted*  
+*bIsSelected*<br/>
+[in] [in] *bCanCollapse*  
   
 ### <a name="remarks"></a>설명  
   
@@ -3888,14 +3888,14 @@ virtual void OnDrawTearOffCaption(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 캡션의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 캡션의 경계를 지정 하는 사각형입니다.  
   
- [in] *bIsActive*  
- 캡션이 활성 상태 이면 TRUE입니다. FALSE이 고, 그렇지 합니다.  
+*bIsActive*<br/>
+[in] 캡션이 활성 상태 이면 TRUE입니다. FALSE이 고, 그렇지 합니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 워크에서이 함수가 호출 될 때를 `CMFCPopupMenu` 개체에서 WM_PAINT 메시지를 처리 및 분리 캡션을 그립니다 해야 합니다.  
@@ -3912,8 +3912,8 @@ virtual void OnDrawToolBoxFrame(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rect*  
+*pDC*<br/>
+[in] [in] *rect*  
   
 ### <a name="remarks"></a>설명  
   
@@ -3927,11 +3927,11 @@ virtual BOOL OnEraseMDIClientArea(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rectClient*  
- MDI 클라이언트 영역 경계를 지정 하는 사각형입니다.  
+*rectClient*<br/>
+[in] MDI 클라이언트 영역 경계를 지정 하는 사각형입니다.  
   
 ### <a name="return-value"></a>반환 값  
  예약 된 값입니다. 기본 구현은 FALSE를 반환합니다.  
@@ -3950,8 +3950,8 @@ virtual void OnErasePopupWindowButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rectClient*  
+*pDC*<br/>
+[in] [in] *rectClient*  
  [in] *pButton*  
   
 ### <a name="remarks"></a>설명  
@@ -3967,14 +3967,14 @@ virtual void OnEraseTabsArea(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 탭 영역의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 탭 영역의 경계를 지정 하는 사각형입니다.  
   
- [in] *pTabWnd*  
- 탭 창에 대 한 포인터입니다. 프레임 워크는 지정 된 탭 창에 대 한 탭 영역을 지웁니다.  
+*pTabWnd*<br/>
+[in] 탭 창에 대 한 포인터입니다. 프레임 워크는 지정 된 탭 창에 대 한 탭 영역을 지웁니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 워크에서이 함수가 호출 될 때를 [CMFCBaseTabCtrl 클래스](../../mfc/reference/cmfcbasetabctrl-class.md) 개체에서 WM_PAINT 메시지를 처리 및 탭 영역을 지웁니다.  
@@ -3993,17 +3993,17 @@ virtual void OnEraseTabsButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 탭 단추의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 탭 단추의 경계를 지정 하는 사각형입니다.  
   
- [in] *pButton*  
- 탭 단추에 대 한 포인터입니다. 프레임 워크가이 단추의 아이콘을 확인 하 고 텍스트를 지웁니다.  
+*pButton*<br/>
+[in] 탭 단추에 대 한 포인터입니다. 프레임 워크가이 단추의 아이콘을 확인 하 고 텍스트를 지웁니다.  
   
- [in] *pWndTab*  
- 탭 단추를 포함 하는 탭 컨트롤에 대 한 포인터입니다.  
+*pWndTab*<br/>
+[in] 탭 단추를 포함 하는 탭 컨트롤에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 워크는 텍스트와 단추의 아이콘 지웁니다 경우는 [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) WM_ERASEBKGND 메시지를 처리 하는 개체입니다.  
@@ -4021,14 +4021,14 @@ virtual BOOL OnEraseTabsFrame(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 탭 창의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 탭 창의 경계를 지정 하는 사각형입니다.  
   
- [in] *pTabWnd*  
- 탭 창에 대 한 포인터입니다. 프레임 워크가 프레임 지웁니다 `CMFCBaseTabCtrl`합니다.  
+*pTabWnd*<br/>
+[in] 탭 창에 대 한 포인터입니다. 프레임 워크가 프레임 지웁니다 `CMFCBaseTabCtrl`합니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. FALSE이 고, 그렇지 합니다.  
@@ -4047,14 +4047,14 @@ virtual void OnFillAutoHideButtonBackground(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 자동 숨기기 단추의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 자동 숨기기 단추의 경계를 지정 하는 사각형입니다.  
   
- [in] *pButton*  
- 에 대 한 포인터를 [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) 개체입니다. 프레임 워크에는이 자동 숨기기 단추의 배경을 채웁니다.  
+*pButton*<br/>
+[in] 에 대 한 포인터를 [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) 개체입니다. 프레임 워크에는이 자동 숨기기 단추의 배경을 채웁니다.  
   
 ### <a name="remarks"></a>설명  
  자동 숨기기 단추의 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -4072,20 +4072,20 @@ virtual void OnFillBarBackground(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 컨트롤 막대에 대 한 장치 컨텍스트 포인터입니다.  
+*pDC*<br/>
+[in] 컨트롤 막대에 대 한 장치 컨텍스트 포인터입니다.  
   
- [in] *pBar*  
- 에 대 한 포인터를 `CBasePane` 개체입니다. 프레임 워크에는이 창의 배경을 채웁니다.  
+*pBar*<br/>
+[in] 에 대 한 포인터를 `CBasePane` 개체입니다. 프레임 워크에는이 창의 배경을 채웁니다.  
   
- [in] *rectClient*  
- 창의 경계를 지정 하는 사각형입니다.  
+*rectClient*<br/>
+[in] 창의 경계를 지정 하는 사각형입니다.  
   
- [in] *rectClip*  
- 창의 클리핑 영역을 지정 하는 사각형입니다.  
+*rectClip*<br/>
+[in] 창의 클리핑 영역을 지정 하는 사각형입니다.  
   
- [in] *bNCArea*  
- 예약 된 값입니다.  
+*bNCArea*<br/>
+[in] 예약 된 값입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드의 기본 구현은 전역 변수에서 3d 배경색을 사용 하 여 표시줄의 배경을 채우는 `afxGlobalData`합니다. 창의 배경에 맞게 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -4107,17 +4107,17 @@ virtual void OnFillButtonInterior(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 도구 모음 단추의 장치 컨텍스트에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 도구 모음 단추의 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pButton*  
- 에 대 한 포인터를 [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)합니다. 프레임 워크는이 단추에 대 한 배경을 채웁니다.  
+*pButton*<br/>
+[in] 에 대 한 포인터를 [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)합니다. 프레임 워크는이 단추에 대 한 배경을 채웁니다.  
   
- [in] *rect*  
- 도구 모음 단추의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 도구 모음 단추의 경계를 지정 하는 사각형입니다.  
   
- [in] *상태*  
- 도구 모음 단추의 상태입니다.  
+*state*<br/>
+[in] 도구 모음 단추의 상태입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드의 기본 구현은 배경을 채우는 데 기본 색을 사용 합니다. 도구 모음 단추의 배경색을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -4140,14 +4140,14 @@ virtual COLORREF OnFillCaptionBarButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pBar*  
- [in] *rect*  
- [in] *bIsPressed*  
- [in] *bIsHighlighted*  
- [in] *bIsDisabled*  
- [in] *bHasDropDownArrow*  
- [in] *bIsSysButton*  
+*pDC*<br/>
+[in] [in] *pBar*  
+*rect*<br/>
+[in] [in] *bIsPressed*  
+*bIsHighlighted*<br/>
+[in] [in] *bIsDisabled*  
+*bHasDropDownArrow*<br/>
+[in] [in] *bIsSysButton*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -4164,14 +4164,14 @@ virtual COLORREF OnFillCommandsListBackground(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 단추의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 단추의 경계를 지정 하는 사각형입니다.  
   
- [in] *bIsSelected*  
- 단추가 선택 되어 있는지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsSelected*<br/>
+[in] 단추가 선택 되어 있는지 여부를 나타내는 부울 매개 변수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  도구 모음 단추의 텍스트 색입니다.  
@@ -4190,14 +4190,14 @@ virtual void OnFillHeaderCtrlBackground(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pCtrl*  
- 에 대 한 포인터를 [CMFCHeaderCtrl](../../mfc/reference/cmfcheaderctrl-class.md) 개체입니다. 프레임 워크에는이 헤더 컨트롤의 배경을 채웁니다.  
+*pCtrl*<br/>
+[in] 에 대 한 포인터를 [CMFCHeaderCtrl](../../mfc/reference/cmfcheaderctrl-class.md) 개체입니다. 프레임 워크에는이 헤더 컨트롤의 배경을 채웁니다.  
   
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 헤더 컨트롤의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 헤더 컨트롤의 경계를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  헤더 컨트롤의 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -4214,17 +4214,17 @@ virtual COLORREF OnFillMiniFrameCaption(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rectCaption*  
- 캡션 표시줄의 경계를 지정 하는 사각형입니다.  
+*rectCaption*<br/>
+[in] 캡션 표시줄의 경계를 지정 하는 사각형입니다.  
   
- [in] *pFrameWnd*  
- 미니 프레임 창에 대 한 포인터입니다. 프레임 워크는이 창에 대 한 캡션 표시줄을 그립니다.  
+*pFrameWnd*<br/>
+[in] 미니 프레임 창에 대 한 포인터입니다. 프레임 워크는이 창에 대 한 캡션 표시줄을 그립니다.  
   
- [in] *bActive*  
- 창이 활성 상태 인지 여부를 나타내는 부울 매개 변수입니다.  
+*bActive*<br/>
+[in] 창이 활성 상태 인지 여부를 나타내는 부울 매개 변수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  캡션 표시줄의 배경을 채우는 데 사용 되는 색입니다.  
@@ -4243,14 +4243,14 @@ virtual void OnFillOutlookBarCaption(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rectCaption*  
- 캡션 표시줄의 경계를 지정 하는 사각형입니다.  
+*rectCaption*<br/>
+[in] 캡션 표시줄의 경계를 지정 하는 사각형입니다.  
   
- [out] *clrText*  
- 에 대 한 참조를 [COLORREF](/windows/desktop/gdi/colorref) 매개 변수입니다. 메서드는이 매개 변수를 캡션 표시줄에 텍스트의 색을 씁니다.  
+*clrText*<br/>
+[out] 에 대 한 참조를 [COLORREF](/windows/desktop/gdi/colorref) 매개 변수입니다. 메서드는이 매개 변수를 캡션 표시줄에 텍스트의 색을 씁니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드의 기본 구현은 현재 스킨에 기반 하는 그림자의 색을 사용 하 여 캡션 표시줄을 채웁니다. Outlook 캡션 표시줄의 색을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -4268,20 +4268,20 @@ virtual void OnFillOutlookPageButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- Outlook 페이지 단추 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] Outlook 페이지 단추 경계를 지정 하는 사각형입니다.  
   
- [in] *bIsHighlighted*  
- 단추를 강조 표시 되어 있는지 여부를 지정 하는 부울 매개 변수입니다.  
+*bIsHighlighted*<br/>
+[in] 단추를 강조 표시 되어 있는지 여부를 지정 하는 부울 매개 변수입니다.  
   
- [in] *bIsPressed*  
- 단추를 눌렀는지 여부를 지정 하는 부울 매개 변수입니다.  
+*bIsPressed*<br/>
+[in] 단추를 눌렀는지 여부를 지정 하는 부울 매개 변수입니다.  
   
- [out] *clrText*  
- 에 대 한 참조를 [COLORREF](/windows/desktop/gdi/colorref) 매개 변수입니다. 이 메서드는 outlook 페이지 단추 텍스트 색이이 매개 변수에 저장합니다.  
+*clrText*<br/>
+[out] 에 대 한 참조를 [COLORREF](/windows/desktop/gdi/colorref) 매개 변수입니다. 이 메서드는 outlook 페이지 단추 텍스트 색이이 매개 변수에 저장합니다.  
   
 ### <a name="remarks"></a>설명  
  Outlook 페이지 단추의 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 함수를 재정의 합니다.  
@@ -4296,11 +4296,11 @@ virtual void OnFillPopupWindowBackground(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 팝업 창의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 팝업 창의 경계를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  팝업 창의 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -4315,11 +4315,11 @@ virtual COLORREF OnFillRibbonButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pButton*  
- 에 대 한 포인터를 [CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md) 개체입니다. 프레임 워크가 리본 단추의 내부를 채웁니다.  
+*pButton*<br/>
+[in] 에 대 한 포인터를 [CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md) 개체입니다. 프레임 워크가 리본 단추의 내부를 채웁니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정 된 리본 단추에 대 한 텍스트의 색 *pButton* 리본 단추에서 텍스트를 지원 합니다. 값 텍스트 리본 단추에 대해 유효 하지 않은 경우-1입니다.  
@@ -4344,32 +4344,32 @@ virtual void OnFillRibbonEdit(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pEdit*  
- 에 대 한 포인터를 `CMFCRibbonRichEditCtrl` 개체입니다. 프레임 워크 편집 컨트롤의 내부를 채웁니다.  
+*pEdit*<br/>
+[in] 에 대 한 포인터를 `CMFCRibbonRichEditCtrl` 개체입니다. 프레임 워크 편집 컨트롤의 내부를 채웁니다.  
   
- [in] *rect*  
- Edit 컨트롤의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] Edit 컨트롤의 경계를 지정 하는 사각형입니다.  
   
- [in] *bIsHighlighted*  
- 편집 컨트롤을 강조 표시 되는지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsHighlighted*<br/>
+[in] 편집 컨트롤을 강조 표시 되는지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *bIsPaneHighlighted*  
- 부모 창에 강조 표시 되는지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsPaneHighlighted*<br/>
+[in] 부모 창에 강조 표시 되는지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *bIsDisabled*  
- 편집 컨트롤을 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.  
+*bIsDisabled*<br/>
+[in] 편집 컨트롤을 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *clrText*  
- 편집 컨트롤의 텍스트 색에 대 한 참조입니다.  
+*clrText*<br/>
+[in] 편집 컨트롤의 텍스트 색에 대 한 참조입니다.  
   
- [in] *clrSelBackground*  
- 참조 강조 표시 될 때 편집 컨트롤의 배경색입니다.  
+*clrSelBackground*<br/>
+[in] 참조 강조 표시 될 때 편집 컨트롤의 배경색입니다.  
   
- [in] *clrSelText*  
- 편집 컨트롤에서 선택한 텍스트의 색에 대 한 참조입니다.  
+*clrSelText*<br/>
+[in] 편집 컨트롤에서 선택한 텍스트의 색에 대 한 참조입니다.  
   
 ### <a name="remarks"></a>설명  
  합니다 `CMFCRibbonRichEditCtrl` 나타난 *pEdit* 리본에서 콤보 상자 단추에 포함할 수 있습니다.  
@@ -4386,11 +4386,11 @@ virtual COLORREF OnFillRibbonMainPanelButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pButton*  
- 에 대 한 포인터를 [CMFCRibbonButton 클래스](../../mfc/reference/cmfcribbonbutton-class.md) 개체입니다. 프레임 워크가 리본 메뉴 단추를 채웁니다.  
+*pButton*<br/>
+[in] 에 대 한 포인터를 [CMFCRibbonButton 클래스](../../mfc/reference/cmfcribbonbutton-class.md) 개체입니다. 프레임 워크가 리본 메뉴 단추를 채웁니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정 된 리본 단추에 대 한 텍스트의 색 *pButton* 리본 단추에서 텍스트를 지원 합니다. 값 텍스트 리본 단추에 대해 유효 하지 않은 경우-1입니다.  
@@ -4409,14 +4409,14 @@ virtual void OnFillRibbonMenuFrame(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pPanel*  
- 인스턴스에 대 한 포인터를 [CMFCRibbonMainPanel 클래스](../../mfc/reference/cmfcribbonmainpanel-class.md)합니다. 프레임 워크가 리본 패널에 대 한 메뉴 프레임을 채웁니다.  
+*pPanel*<br/>
+[in] 인스턴스에 대 한 포인터를 [CMFCRibbonMainPanel 클래스](../../mfc/reference/cmfcribbonmainpanel-class.md)합니다. 프레임 워크가 리본 패널에 대 한 메뉴 프레임을 채웁니다.  
   
- [in] *rect*  
- 메뉴 프레임의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 메뉴 프레임의 경계를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  메뉴 모음에 대 한 표시를 사용자 지정 파생된 비주얼 관리자에서이 메서드를 재정의 하 여 `CMFCRibbonMainPanel`입니다.  
@@ -4432,8 +4432,8 @@ virtual void OnFillRibbonQuickAccessToolBarPopup(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *pMenuBar*  
+*pDC*<br/>
+[in] [in] *pMenuBar*  
  [in] *rect*  
   
 ### <a name="remarks"></a>설명  
@@ -4449,14 +4449,14 @@ virtual void OnFillSplitterBackground(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pSplitterWnd*  
- 인스턴스에 대 한 포인터를 [CSplitterWndEx 클래스](csplitterwndex-class.md)합니다. 프레임 워크가 분할기 창 배경을 채웁니다.  
+*pSplitterWnd*<br/>
+[in] 인스턴스에 대 한 포인터를 [CSplitterWndEx 클래스](csplitterwndex-class.md)합니다. 프레임 워크가 분할기 창 배경을 채웁니다.  
   
- [in] *rect*  
- 분할기 창 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 분할기 창 경계를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  분할자 창 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -4475,23 +4475,23 @@ virtual void OnFillTab(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rectFill*  
- 탭 창에 대 한 경계를 지정 하는 사각형입니다.  
+*rectFill*<br/>
+[in] 탭 창에 대 한 경계를 지정 하는 사각형입니다.  
   
- [in] *pbrFill*  
- 브러시에 대 한 포인터입니다. 이 브러시를 사용 하 여 탭 창에 맞게 프레임 워크입니다.  
+*pbrFill*<br/>
+[in] 브러시에 대 한 포인터입니다. 이 브러시를 사용 하 여 탭 창에 맞게 프레임 워크입니다.  
   
- [in] *iTab*  
- 프레임 워크는 배경을 채우는 탭의 0부터 시작 탭 인덱스입니다.  
+*iTab*<br/>
+[in] 프레임 워크는 배경을 채우는 탭의 0부터 시작 탭 인덱스입니다.  
   
- [in] *bIsActive*  
- 탭; 활성 상태 이면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+*bIsActive*<br/>
+[in] 탭; 활성 상태 이면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
- [in] *pTabWnd*  
- 부모 탭 컨트롤에 대 한 포인터입니다.  
+*pTabWnd*<br/>
+[in] 부모 탭 컨트롤에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  탭의 모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -4507,14 +4507,14 @@ virtual void OnFillTasksGroupInterior(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 작업 그룹의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 작업 그룹의 경계를 지정 하는 사각형입니다.  
   
- [in] *bSpecial*  
- 나타내는 부울 값을 내부 특별 한 색으로 채워집니다.  
+*bSpecial*<br/>
+[in] 나타내는 부울 값을 내부 특별 한 색으로 채워집니다.  
   
 ### <a name="remarks"></a>설명  
  작업 그룹의 표시를 사용자 지정 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -4529,11 +4529,11 @@ virtual void OnFillTasksPaneBackground(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rectWorkArea*  
- 작업 창의 경계를 지정 하는 사각형입니다.  
+*rectWorkArea*<br/>
+[in] 작업 창의 경계를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  모양을 사용자 지정 하는 파생된 비주얼 관리자에서이 메서드를 재정의 한 `CMFCTasksPane` 개체입니다.  
@@ -4550,17 +4550,17 @@ virtual void OnHighlightMenuItem(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 메뉴에 대 한 장치 컨텍스트 포인터입니다.  
+*pDC*<br/>
+[in] 메뉴에 대 한 장치 컨텍스트 포인터입니다.  
   
- [in] *pButton*  
- 에 대 한 포인터를 [CMFCToolBarMenuButton](../../mfc/reference/cmfctoolbarmenubutton-class.md) 표시할 개체입니다. 기본 구현에서는이 매개 변수를 사용 하지 않습니다.  
+*pButton*<br/>
+[in] 에 대 한 포인터를 [CMFCToolBarMenuButton](../../mfc/reference/cmfctoolbarmenubutton-class.md) 표시할 개체입니다. 기본 구현에서는이 매개 변수를 사용 하지 않습니다.  
   
- [in] *rect*  
- 메뉴 항목의 경계를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 메뉴 항목의 경계를 지정 하는 사각형입니다.  
   
- [in] *clrText*  
- 강조 표시 된 메뉴 항목의 현재 텍스트 색입니다. 기본 구현에서는이 매개 변수를 사용 하지 않습니다.  
+*clrText*<br/>
+[in] 강조 표시 된 메뉴 항목의 현재 텍스트 색입니다. 기본 구현에서는이 매개 변수를 사용 하지 않습니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드의 기본 구현은 매개 변수를 사용 하지 않습니다 *pButton* 하거나 *clrText*합니다. 지정 된 영역을 채우도록 *rect* 표준 배경색으로 합니다.  
@@ -4577,11 +4577,11 @@ virtual void OnHighlightRarelyUsedMenuItems(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rectRarelyUsed*  
- 강조 표시 된 명령의 경계를 지정 하는 사각형입니다.  
+*rectRarelyUsed*<br/>
+[in] 강조 표시 된 명령의 경계를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  강조 표시 된 메뉴 명령의 표시를 사용자 지정 파생된 비주얼 관리자에서이 메서드를 재정의 합니다.  
@@ -4596,8 +4596,8 @@ virtual BOOL OnNcActivate(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- [in] *bActive*  
+*pWnd*<br/>
+[in] [in] *bActive*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -4614,14 +4614,14 @@ virtual BOOL OnNcPaint(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- 창 프레임 워크 그립니다 비클라이언트 영역에 대 한 포인터입니다.  
+*pWnd*<br/>
+[in] 창 프레임 워크 그립니다 비클라이언트 영역에 대 한 포인터입니다.  
   
- [in] *lstSysButtons*  
- 목록 시스템 단추입니다. 이들은 캡션 단추 라고도 합니다.  
+*lstSysButtons*<br/>
+[in] 목록 시스템 단추입니다. 이들은 캡션 단추 라고도 합니다.  
   
- [in] *rectRedraw*  
- 비클라이언트 영역의 경계를 지정 하는 사각형입니다.  
+*rectRedraw*<br/>
+[in] 비클라이언트 영역의 경계를 지정 하는 사각형입니다.  
   
 ### <a name="return-value"></a>반환 값  
  예약 된 값입니다. 기본 구현은 FALSE를 반환합니다.  
@@ -4639,11 +4639,11 @@ virtual BOOL OnSetWindowRegion(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- 변경 된 지역 창에 대 한 포인터입니다.  
+*pWnd*<br/>
+[in] 변경 된 지역 창에 대 한 포인터입니다.  
   
- [in] *sizeWindow*  
- 창의 크기입니다.  
+*sizeWindow*<br/>
+[in] 창의 크기입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. FALSE이 고, 그렇지 합니다.  
@@ -4690,8 +4690,8 @@ static void SetDefaultManager(CRuntimeClass* pRTI);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pRTI*  
- 비주얼 관리자에 대 한 런타임 정보에 대 한 포인터입니다.  
+*pRTI*<br/>
+[in] 비주얼 관리자에 대 한 런타임 정보에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  사용 하 여는 `CMFCVisualManager` 클래스 및 파생 비주얼 관리자 응용 프로그램의 모양을 사용자 지정할 수 있습니다. 이 메서드를 기본 비주얼 관리자를 설정 하면 새 비주얼 관리자를 사용 하 여 응용 프로그램 다시 그립니다. 비주얼 관리자를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [시각화 관리자](../../mfc/visualization-manager.md)합니다.  
@@ -4706,8 +4706,8 @@ void SetEmbossDisabledImage (BOOL bEmboss = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEmboss*  
- 사용할 수 없는 도구 모음 이미지에 대 한 볼록된 모드를 사용할지 여부를 나타내는 부울 매개 변수입니다.  
+*bEmboss*<br/>
+[in] 사용할 수 없는 도구 모음 이미지에 대 한 볼록된 모드를 사용할지 여부를 나타내는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  함수를 사용 하 여 [CMFCVisualManager::IsEmbossDisabledImage](#isembossdisabledimage) 볼록된 모드가 사용될지 여부를 확인 하려면.  
@@ -4720,8 +4720,8 @@ void SetFadeInactiveImage(BOOL bFade = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bFade*  
- 조명 효과 사용 여부를 지정 하는 부울 매개 변수입니다.  
+*bFade*<br/>
+[in] 조명 효과 사용 여부를 지정 하는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  이 기능 메뉴 또는 도구 모음의 희미하게 비활성 이미지의 표시 여부를 제어 합니다. 메서드를 사용 하 여 [CMFCVisualManager::IsFadeInactiveImage](#isfadeinactiveimage) 에이 기능을 사용할 수 있는지 여부를 확인 합니다.  
@@ -4734,8 +4734,8 @@ void SetMenuFlatLook(BOOL bMenuFlatLook = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bMenuFlatLook*  
- 평면 메뉴 단추를 표시할지 여부를 나타내는 부울 매개 변수입니다.  
+*bMenuFlatLook*<br/>
+[in] 평면 메뉴 단추를 표시할지 여부를 나타내는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로이 기능은 사용 되지 않습니다.  
@@ -4748,8 +4748,8 @@ void SetMenuShadowDepth(int nDepth);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nDepth*  
- 메뉴 그림자의 깊이 픽셀 단위로 지정 하는 정수입니다.  
+*nDepth*<br/>
+[in] 메뉴 그림자의 깊이 픽셀 단위로 지정 하는 정수입니다.  
   
 ### <a name="remarks"></a>설명  
  메뉴 그림자의 너비와 높이가 동일 해야 합니다. 기본값은 7 픽셀입니다.  
@@ -4762,8 +4762,8 @@ void SetShadowHighlightedImage(BOOL bShadow = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bShadow*  
- 비주얼 관리자를 강조 표시 된 이미지에서 그림자를 표시 하는지 여부를 나타내는 부울 매개 변수입니다.  
+*bShadow*<br/>
+[in] 비주얼 관리자를 강조 표시 된 이미지에서 그림자를 표시 하는지 여부를 나타내는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로이 기능을 사용 하는 사용할 수 없습니다.  

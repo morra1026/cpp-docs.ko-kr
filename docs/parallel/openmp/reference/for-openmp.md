@@ -1,5 +1,5 @@
 ---
-title: (OpenMP)에 대 한 | Microsoft Docs
+title: for (OpenMP) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10f5aebaf586581446293147f56dfbce8bd3519a
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 73b840eba35ec4291ffb6e57b17c9002b6c501a2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33694864"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721658"
 ---
 # <a name="for-openmp"></a>for (OpenMP)
-수행 된 작업을 발생 한 스레드 간에 나눠집니다 병렬 영역 내부 루프에 대 한 합니다.  
+하면에서 수행 된 작업을 여러 스레드로 분배 하는 병렬 영역 내부 루프에 대 한 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -33,17 +33,16 @@ ms.locfileid: "33694864"
    for_statement  
 ```  
   
+## <a name="arguments"></a>인수
+
+*절*<br/>
+(선택 사항) 0 개 이상의 절입니다. 지 원하는 절의 목록 설명 섹션을 참조 하세요 **에 대 한**합니다.  
+  
+*for_statement*<br/>
+For 루프는 합니다. 사용자 코드에서 하는 경우 정의 되지 않은 동작이 발생할를 루프 인덱스 변수를 변경 합니다.  
+  
 ## <a name="remarks"></a>설명  
- 다음은 각 문자에 대한 설명입니다.  
-  
- `clause`(선택 사항)  
- 0 개 이상의 절입니다. 지 원하는 절을 목록에 대 한 설명 섹션을 참조 **에 대 한**합니다.  
-  
- `for_statement`  
- 루프에 대 한 A입니다. 사용자 코드에서 정의 되지 않은 동작이 발생 합니다는 루프 인덱스 변수를 변경 합니다.  
-  
-## <a name="remarks"></a>설명  
- **에 대 한** 지시문 다음 OpenMP 절을 지원 합니다.  
+ 합니다 **에 대 한** 지시문 다음 OpenMP 절을 지원 합니다.  
   
 -   [firstprivate](../../../parallel/openmp/reference/firstprivate.md)  
   
@@ -59,9 +58,9 @@ ms.locfileid: "33694864"
   
 -   [schedule](../../../parallel/openmp/reference/schedule.md)  
   
- 경우 **병렬** 도 지정 `clause` 모든 절에 허용 될 수는 **병렬** 또는 **에 대 한** 지시문을 제외 하 고 **nowait**.  
+ 경우 **병렬** 도 지정 되어 `clause` 절에서 사용할 수는 **병렬** 하거나 **에 대 한** 지시문을 제외 하 고 **nowait**.  
   
- 자세한 내용은 참조 [2.4.1 for 구문](../../../parallel/openmp/2-4-1-for-construct.md)합니다.  
+ 자세한 내용은 [2.4.1 for 구문](../../../parallel/openmp/2-4-1-for-construct.md)합니다.  
   
 ## <a name="example"></a>예제  
   

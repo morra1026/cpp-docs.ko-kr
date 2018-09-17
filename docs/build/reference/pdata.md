@@ -18,24 +18,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b507acdcdc299f0cb187d8e63decf079b1fc3eaf
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e64dbaeaa94e8705357bf75b4b80e55e830c6702
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372271"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720319"
 ---
 # <a name="pdata"></a>/PDATA
-```  
-/PDATA  
-```  
-  
-## <a name="remarks"></a>설명  
- RISC 프로세서에만 해당 합니다.  
-  
- 이 옵션은 이미지 또는 개체에서 예외 테이블 (.pdata)으로 덤프합니다.  
-  
- 만 [/HEADERS](../../build/reference/headers.md) DUMPBIN 옵션은으로 생성 된 파일에서 사용 하기 위해 사용할 수는 [/GL](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [DUMPBIN 옵션](../../build/reference/dumpbin-options.md)
+
+```
+/PDATA
+```
+
+## <a name="remarks"></a>설명
+
+RISC 프로세서에만 해당 합니다.
+
+이 옵션은 이미지 또는 개체에서 예외 테이블 (.pdata)를 덤프합니다.
+
+만 [/HEADERS](../../build/reference/headers.md) DUMPBIN 옵션을 사용 하 여 생성 된 파일에 사용할 수 있습니다 합니다 [/GL](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[DUMPBIN 옵션](../../build/reference/dumpbin-options.md)

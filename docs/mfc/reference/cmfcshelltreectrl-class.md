@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7fc8ef005eea61597eb316090e26af7e83718dd8
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 126e23064bdc599ba230efc5dde472cd05a1aa69
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760847"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720748"
 ---
 # <a name="cmfcshelltreectrl-class"></a>CMFCShellTreeCtrl 클래스
 합니다 `CMFCShellTreeCtrl` 클래스를 확장 [CTreeCtrl 클래스](../../mfc/reference/ctreectrl-class.md) 셸 항목의 계층 구조를 표시 하 여 기능 합니다.  
@@ -104,8 +104,8 @@ void EnableShellContextMenu(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 바로 가기 메뉴를 사용 하도록 설정 여부를 지정 하는 부울입니다.  
+*bEnable*<br/>
+[in] 바로 가기 메뉴를 사용 하도록 설정 여부를 지정 하는 부울입니다.  
   
 ##  <a name="getflags"></a>  CMFCShellTreeCtrl::GetFlags  
  에 대 한 설정 된 플래그를 반환 합니다 [CMFCShellTreeCtrl 클래스](../../mfc/reference/cmfcshelltreectrl-class.md) 개체입니다.  
@@ -130,11 +130,11 @@ BOOL GetItemPath(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *strPath*  
- 문자열 매개 변수 참조입니다. 메서드는이 매개 변수를 항목의 경로 씁니다.  
+*strPath*<br/>
+[out] 문자열 매개 변수 참조입니다. 메서드는이 매개 변수를 항목의 경로 씁니다.  
   
- [in] *htreeItem*  
- 메서드는이 트리 컨트롤 항목에 대 한 경로 검색합니다.  
+*htreeItem*<br/>
+[in] 메서드는이 트리 컨트롤 항목에 대 한 경로 검색합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -169,10 +169,10 @@ virtual BOOL OnChildNotify(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *메시지*  
- [in] *wParam*  
- [in] *lParam*  
- [in] *pLResult*  
+*message*<br/>
+[in] [in] *wParam*  
+*lParam*<br/>
+[in] [in] *pLResult*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -188,8 +188,8 @@ virtual int OnGetItemIcon(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pItem*  
- [in] *bSelected*  
+*pItem*<br/>
+[in] [in] *bSelected*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -228,11 +228,11 @@ BOOL SelectPath(LPCITEMIDLIST lpidl);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszPath*  
- 항목의 경로 지정 하는 문자열입니다.  
+*lpszPath*<br/>
+[in] 항목의 경로 지정 하는 문자열입니다.  
   
- [in] *lpidl*  
- 항목을 지정 하는 PIDL  
+*lpidl*<br/>
+[in] 항목을 지정 하는 PIDL  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 s_ok이 고 그렇지 않으면 E_FAIL입니다.  
@@ -247,11 +247,11 @@ void SetFlags(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwFlags*  
- 설정할 플래그입니다.  
+*dwFlags*<br/>
+[in] 플래그 설정입니다.  
   
- [in] *bRefresh*  
- 지정 하는 부울 여부는 `CMFCShellTreeCtrl` 즉시 새로 고쳐져 야 합니다.  
+*bRefresh*<br/>
+[in] 지정 하는 부울 여부는 `CMFCShellTreeCtrl` 즉시 새로 고쳐져 야 합니다.  
   
 ### <a name="remarks"></a>설명  
  합니다 `CMFCShellTreeCtrl` 플래그를 설정할 모든 패스 [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066)합니다. 다른 플래그의 값에 대 한 자세한 내용은 참조 [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066)합니다.  
@@ -264,8 +264,8 @@ void SetRelatedList(CMFCShellListCtrl* pShellList);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pShellList*  
- 에 대 한 포인터를 `CMFCShellListCtrl` 개체입니다.  
+*pShellList*<br/>
+[in] 에 대 한 포인터를 `CMFCShellListCtrl` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 `CMFCShellListCtrl` 사용 하 여는 `CMFCShellTreeCtrl`합니다. 이러한 개체는 탐색기와 유사한 창으로 표시 될 수 있습니다: 사용자의 개체를 선택 하는 경우는 `CMFCShellTreeCtrl`의 연결 된 항목에는 `CMFCShellListCtrl` 자동 업데이트 됩니다.  

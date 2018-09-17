@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5043b421d4ca63b22cde0f413e68b3a666a483b3
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a5147b8079d694e59141c244a860f12c59f42f7b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757473"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706838"
 ---
 # <a name="atl-text-encoding-functions"></a>ATL 텍스트 인코딩 함수
 
@@ -494,20 +494,20 @@ inline BOOL QPDecode(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *pbSrcData*  
-디코딩할 데이터를 포함 하는 버퍼입니다.
+*pbSrcData*<br/>
+[in] 디코딩할 데이터를 포함 하는 버퍼입니다.
 
-[in] *nSrcLen*  
-바이트 길이 *pbSrcData*합니다.
+*nSrcLen*<br/>
+[in] 바이트 길이 *pbSrcData*합니다.
 
-[out] *szDest*  
-디코딩된 데이터를 받는 호출자 할당 버퍼입니다.
+*szDest*<br/>
+[out] 디코딩된 데이터를 받는 호출자 할당 버퍼입니다.
 
-[out] *pnDestLen*  
-길이 (바이트) 포함 하는 변수에 대 한 포인터 *szDest*합니다. 함수가 성공 하면 변수는 버퍼에 쓴 바이트 수를 받습니다. 함수가 실패할 경우 변수 버퍼의 바이트 길이 받게 됩니다.
+*pnDestLen*<br/>
+[out] 길이 (바이트) 포함 하는 변수에 대 한 포인터 *szDest*합니다. 함수가 성공 하면 변수는 버퍼에 쓴 바이트 수를 받습니다. 함수가 실패할 경우 변수 버퍼의 바이트 길이 받게 됩니다.
 
-[in] *dwFlags*  
-변환을 수행 하는 하는 방법을 설명 하는 ATLSMTP_QPENCODE 플래그입니다.
+*dwFlags*<br/>
+[in] 변환을 수행 하는 하는 방법을 설명 하는 ATLSMTP_QPENCODE 플래그입니다.
 
 ### <a name="return-value"></a>반환 값
 

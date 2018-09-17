@@ -1,5 +1,5 @@
 ---
-title: 섹션 (OpenMP) | Microsoft Docs
+title: sections (OpenMP) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,15 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60bc94685a7e6128e22cc3545ae8702abe6d472e
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: d3b369cfbd68edd32b644c9a4ec0520329507b6e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692079"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45708034"
 ---
 # <a name="sections-openmp"></a>sections (OpenMP)
-모든 스레드가에서 나눌 수 있는 코드 섹션을 식별 합니다.  
+모든 스레드 간에 나눌 코드 섹션을 식별 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,16 +39,15 @@ ms.locfileid: "33692079"
 }  
 ```  
   
+## <a name="arguments"></a>인수
+
+*절*<br/>
+(선택 사항) 0 개 이상의 절입니다. 지 원하는 절의 목록 설명 섹션을 참조 하세요 **섹션에서는**합니다.
+
 ## <a name="remarks"></a>설명  
- 다음은 각 문자에 대한 설명입니다.  
+ 합니다 **섹션이** 지시문에는 0 개 이상 포함 될 수 있습니다 **섹션** 지시문입니다.  
   
- `clause`(선택 사항)  
- 0 개 이상의 절입니다. 지 원하는 절을 목록에 대 한 설명 섹션을 참조 **섹션**합니다.  
-  
-## <a name="remarks"></a>설명  
- **섹션** 지시문에는 0 또는 그 이상 포함 될 수 있습니다 **섹션** 지시문입니다.  
-  
- **섹션** 지시문 다음 OpenMP 절을 지원 합니다.  
+ 합니다 **섹션에서는** 지시문 다음 OpenMP 절을 지원 합니다.  
   
 -   [firstprivate](../../../parallel/openmp/reference/firstprivate.md)  
   
@@ -60,9 +59,9 @@ ms.locfileid: "33692079"
   
 -   [reduction](../../../parallel/openmp/reference/reduction.md)  
   
- 경우 **병렬** 도 지정 `clause` 모든 절에 허용 될 수는 **병렬** 또는 **섹션** 지시문을 제외 하 고 `nowait`합니다.  
+ 하는 경우 **병렬** 도 지정 되어 `clause` 절에서 사용할 수는 **병렬** 또는 **섹션** 지시문을 제외한 `nowait`합니다.  
   
- 자세한 내용은 참조 [2.4.2 sections 구문](../../../parallel/openmp/2-4-2-sections-construct.md)합니다.  
+ 자세한 내용은 [2.4.2 sections 구문](../../../parallel/openmp/2-4-2-sections-construct.md)합니다.  
   
 ## <a name="example"></a>예제  
   

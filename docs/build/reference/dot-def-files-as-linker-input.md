@@ -15,16 +15,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1e7828154501a067c6b236929a18c51724d3f6c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5afb165b33dfa7911e01c1c4368946fd91915a35
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32370529"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710276"
 ---
 # <a name="def-files-as-linker-input"></a>링커 입력 파일로 사용하는 .Def 파일
-참조 [모듈 정의 (.def) 파일](../../build/reference/module-definition-dot-def-files.md) 자세한 정보에 대 한 합니다. 사용 하 여 [/DEF](../../build/reference/def-specify-module-definition-file.md) .def 파일 이름을 지정 하는 옵션입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [LINK 입력된 파일](../../build/reference/link-input-files.md)   
- [링커 옵션](../../build/reference/linker-options.md)
+
+참조 [모듈 정의 (.def) 파일](../../build/reference/module-definition-dot-def-files.md) 자세한 내용은 합니다. 사용 된 [/DEF](../../build/reference/def-specify-module-definition-file.md) .def 파일 이름을 지정 하는 옵션입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[LINK 입력 파일](../../build/reference/link-input-files.md)<br/>
+[링커 옵션](../../build/reference/linker-options.md)

@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5782cf051fe680cb99dcd99c8e9c2d050c4184cc
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 7bfa501834102e37c14de11ee1af84a21e82c35f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758133"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703848"
 ---
 # <a name="ccomgitptr-class"></a>CComGITPtr 클래스
 
@@ -130,17 +130,17 @@ CComGITPtr(CComGITPtr&& rv);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *p*  
-(GIT) 전역 인터페이스 테이블에 저장 하는 인터페이스 포인터입니다.
+*p*<br/>
+[in] (GIT) 전역 인터페이스 테이블에 저장 하는 인터페이스 포인터입니다.
 
-[in] *git*  
-기존에 대 한 참조 `CComGITPtr` 개체입니다.
+*Git*<br/>
+[in] 기존에 대 한 참조 `CComGITPtr` 개체입니다.
 
-[in] *dwCookie*  
-인터페이스 포인터를 식별 하는 데 사용 되는 쿠키입니다.
+*dwCookie*<br/>
+[in] 인터페이스 포인터를 식별 하는 데 사용 되는 쿠키입니다.
 
-[in] *rv*  
-원본 `CComGITPtr` 개체 데이터를 이동 합니다.
+*rv*<br/>
+[in] 원본 `CComGITPtr` 개체 데이터를 이동 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -238,17 +238,17 @@ CComGITPtr& operator= (CComGITPtr&& rv);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *p*  
-인터페이스 포인터입니다.
+*p*<br/>
+[in] 인터페이스 포인터입니다.
 
-[in] *git*  
-`CComGITPtr` 개체에 대한 참조입니다.
+*Git*<br/>
+[in] 에 대 한 참조를 `CComGITPtr` 개체입니다.
 
-[in] *dwCookie*  
-인터페이스 포인터를 식별 하는 데 사용 되는 쿠키입니다.
+*dwCookie*<br/>
+[in] 인터페이스 포인터를 식별 하는 데 사용 되는 쿠키입니다.
 
-[in] *rv*  
-`CComGITPtr` 데이터를 이동 합니다.
+*rv*<br/>
+[in] `CComGITPtr` 데이터를 이동 합니다.
 
 ### <a name="return-value"></a>반환 값
 
