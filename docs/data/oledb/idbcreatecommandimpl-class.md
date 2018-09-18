@@ -23,14 +23,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8b67fc55a8af2bed554254732832cbd6486d2420
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: c6d8a07ded3da02c21c4ee8c528474efc6e52b6c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42571986"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021566"
 ---
 # <a name="idbcreatecommandimpl-class"></a>IDBCreateCommandImpl 클래스
+
 구현을 제공 합니다 [IDBCreateCommand](/previous-versions/windows/desktop/ms711625\(v=vs.85\)) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
@@ -42,14 +43,16 @@ class ATL_NO_VTABLE IDBCreateCommandImpl
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- *T*  
- 세션 개체에서 파생 된 `IDBCreateCommandImpl`합니다.  
+
+*T*<br/>
+세션 개체에서 파생 된 `IDBCreateCommandImpl`합니다.  
   
- *CommandClass*  
- 명령 클래스입니다.  
+*CommandClass*<br/>
+명령 클래스입니다.  
 
 ## <a name="requirements"></a>요구 사항  
- **헤더:** atldb.h  
+
+**헤더:** atldb.h  
   
 ## <a name="members"></a>멤버  
   
@@ -60,9 +63,11 @@ class ATL_NO_VTABLE IDBCreateCommandImpl
 |[CreateCommand](#createcommand)|새 명령을 만듭니다.|  
   
 ## <a name="remarks"></a>설명  
- 새 명령을 가져올 세션 개체의 선택적 인터페이스입니다.  
+
+새 명령을 가져올 세션 개체의 선택적 인터페이스입니다.  
 
 ## <a name="createcommand"></a> Idbcreatecommandimpl:: Createcommand
+
 새 명령을 만들고 요청된 된 인터페이스를 반환 합니다.  
   
 ### <a name="syntax"></a>구문  
@@ -74,14 +79,16 @@ STDMETHOD(CreateCommand)(IUnknown * pUnkOuter,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [idbcreatecommand:: Createcommand](/previous-versions/windows/desktop/ms709772\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+
+참조 [idbcreatecommand:: Createcommand](/previous-versions/windows/desktop/ms709772\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
- 에 해당 하는 일부 매개 변수 *OLE DB Programmer's Reference* 매개 변수에서 설명 하는 다른 이름의 `IDBCreateCommand::CreateCommand`:  
+에 해당 하는 일부 매개 변수 *OLE DB Programmer's Reference* 매개 변수에서 설명 하는 다른 이름의 `IDBCreateCommand::CreateCommand`:  
   
 |OLE DB 템플릿 매개 변수|*OLE DB Programmer's Reference* 매개 변수|  
 |--------------------------------|------------------------------------------------|  
 |*ppvCommand*|*ppCommand*|  
   
 ## <a name="see-also"></a>참고 항목  
- [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

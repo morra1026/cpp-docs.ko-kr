@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45824065a4ef190f509f003656b9d232ae287ca2
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: fda466ad45b5b91f02920d68eef8eab071010830
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45718031"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020136"
 ---
 # <a name="options-atl-active-server-page-component-wizard"></a>옵션, ATL Active Server Page 구성 요소 마법사
 
@@ -65,6 +65,6 @@ ATL 프로젝트가 ATL COM 클래스에 대 한 자세한 내용은 참조 하�
 
 ## <a name="see-also"></a>참고 항목
 
-[ATL Active Server Page 구성 요소 마법사](../../atl/reference/atl-active-server-page-component-wizard.md)   
+[ATL Active Server Page 구성 요소 마법사](../../atl/reference/atl-active-server-page-component-wizard.md)<br/>
 [ATL Active Server Page 구성 요소](../../atl/reference/adding-an-atl-active-server-page-component.md)
 

@@ -16,21 +16,22 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 06ec8f9aeca3b88b1c14c8dddfc625aae0b185d0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fcb464a676b47baa4589c17269819d3a84d058fe
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198809"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029914"
 ---
 # <a name="fatal-error-c1021"></a>심각한 오류 C1021
-'string' 전처리기 명령이 잘못되었습니다.  
-  
- `string` 은 유효하지 않은 [전처리기 지시문](../../preprocessor/preprocessor-directives.md)입니다. 오류를 해결하려면 `string`에 대해 올바른 전처리기 이름을 사용합니다.  
-  
- 다음 샘플에서는 C1021을 생성합니다.  
-  
-```  
-// C1021.cpp  
-#BadPreProcName    // C1021 delete line  
+
+'string' 전처리기 명령이 잘못되었습니다.
+
+`string` 은 유효하지 않은 [전처리기 지시문](../../preprocessor/preprocessor-directives.md)입니다. 오류를 해결하려면 `string`에 대해 올바른 전처리기 이름을 사용합니다.
+
+다음 샘플에서는 C1021을 생성합니다.
+
+```
+// C1021.cpp
+#BadPreProcName    // C1021 delete line
 ```

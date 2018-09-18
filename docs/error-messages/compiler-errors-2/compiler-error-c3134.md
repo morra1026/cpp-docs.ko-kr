@@ -16,17 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4aaf9ab8175e56615bf61b1c020e44cf20c10562
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c8eab51f41997eabf5999a976b178799fa750c4a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245675"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029808"
 ---
 # <a name="compiler-error-c3134"></a>컴파일러 오류 C3134
-'value': 특성 인수 '특성' 유효한 형식이 없는 'type' 값  
-  
- 값은 특성에 할당 된 구문 오류가 발생 했습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [용도별 특성](../../windows/attributes-by-usage.md)
+
+'value': '특성' 없는 유효한 ' type' 특성 인수의 값
+
+값 특성에 할당 된 구문 오류가 발생 했습니다.
+
+## <a name="see-also"></a>참고 항목
+
+[용도별 특성](../../windows/attributes-by-usage.md)

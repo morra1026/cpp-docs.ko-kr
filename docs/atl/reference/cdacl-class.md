@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e3ce384c2478359b3496aa2d816a30e9a240c998
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f96fe03288495eb109795e31c6dfd2bd3928d47c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760746"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036140"
 ---
 # <a name="cdacl-class"></a>CDacl 클래스
 
@@ -108,19 +108,19 @@ bool AddAllowedAce(
 
 ### <a name="parameters"></a>매개 변수
 
-*rSid*  
+*rSid*<br/>
 A [CSid](../../atl/reference/csid-class.md) 개체입니다.
 
-*AccessMask*  
+*AccessMask*<br/>
 허용 액세스 권한 마스크를 지정 된에 대 한 `CSid` 개체입니다.
 
-*AceFlags*  
+*AceFlags*<br/>
 ACE 상속을 제어 하는 비트 플래그 집합입니다.
 
-*pObjectType*  
+*pObjectType*<br/>
 개체 형식입니다.
 
-*pInheritedObjectType*  
+*pInheritedObjectType*<br/>
 상속 된 개체 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -153,19 +153,19 @@ bool AddDeniedAce(
 
 ### <a name="parameters"></a>매개 변수
 
-*rSid*  
+*rSid*<br/>
 `CSid` 개체입니다.
 
-*AccessMask*  
+*AccessMask*<br/>
 거부 될 액세스 권한 마스크를 지정 된 항목에 대 한 `CSid` 개체입니다.
 
-*AceFlags*  
+*AceFlags*<br/>
 ACE 상속을 제어 하는 비트 플래그 집합입니다. 기본값은 메서드의 첫 번째 형태는 0입니다.
 
-*pObjectType*  
+*pObjectType*<br/>
 개체 형식입니다.
 
-*pInheritedObjectType*  
+*pInheritedObjectType*<br/>
 상속 된 개체 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -183,13 +183,13 @@ ACE를 추가할 경우 TRUE를 반환 합니다 `CDacl` FALSE 실패 시 개체
 생성자입니다.
 
 ```
-CDacl (const ACL& rhs) throw(...);  
+CDacl (const ACL& rhs) throw(...);
 CDacl () throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*rhs*  
+*rhs*<br/>
 기존 `ACL` (액세스 제어 목록) 구조입니다.
 
 ### <a name="remarks"></a>설명
@@ -230,7 +230,7 @@ CDacl& operator= (const ACL& rhs) throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*rhs*  
+*rhs*<br/>
 기존 개체에 할당할 ACL (액세스 제어 목록).
 
 ### <a name="return-value"></a>반환 값
@@ -251,7 +251,7 @@ void RemoveAce(UINT nIndex) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nIndex*  
+*nIndex*<br/>
 제거할 ACE 항목 인덱스입니다.
 
 ### <a name="remarks"></a>설명
@@ -272,9 +272,9 @@ void RemoveAllAces() throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[보안 샘플](../../visual-cpp-samples.md)   
-[CAcl 클래스](../../atl/reference/cacl-class.md)   
-[ACLs](/windows/desktop/SecAuthZ/access-control-lists)   
-[Ace](/windows/desktop/SecAuthZ/access-control-entries)   
-[클래스 개요](../../atl/atl-class-overview.md)   
+[보안 샘플](../../visual-cpp-samples.md)<br/>
+[CAcl 클래스](../../atl/reference/cacl-class.md)<br/>
+[Acl](/windows/desktop/SecAuthZ/access-control-lists)<br/>
+[Ace](/windows/desktop/SecAuthZ/access-control-entries)<br/>
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [보안 전역 함수](../../atl/reference/security-global-functions.md)

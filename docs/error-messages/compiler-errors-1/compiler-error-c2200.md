@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82d9307efba9dcc6ebfef94b770a79b135515e12
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ecb7ac03ea6450b62d55bf2a6351eb994715e3c5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165833"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029379"
 ---
 # <a name="compiler-error-c2200"></a>컴파일러 오류 C2200
-'function': 함수를 이미 정의했습니다.  
-  
- `alloc_text` pragma가 이미 정의된 함수 이름을 사용합니다.
+
+'function': 함수를 이미 정의했습니다.
+
+`alloc_text` pragma가 이미 정의된 함수 이름을 사용합니다.

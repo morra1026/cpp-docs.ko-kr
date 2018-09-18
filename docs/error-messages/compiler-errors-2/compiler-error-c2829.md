@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 091e8ad9238b0f4281b3afc900663ca487d4eada
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 04798056b25d09ad78f5da0e85b47345db5608dd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245269"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46034995"
 ---
 # <a name="compiler-error-c2829"></a>컴파일러 오류 C2829
-'operator 연산자' 가변 매개 변수 목록을 사용할 수 없습니다.  
-  
- 두 연산자만 변수 매개 변수 목록을 사용할 수 있습니다.  
-  
--   함수 호출 `()`  
-  
--   `new`
+
+'operator o'는 가변 매개 변수 목록을 사용할 수 없습니다.
+
+두 연산자는 변수 매개 변수 목록을 사용할 수 있습니다.
+
+- 함수 호출 `()`
+
+- `new`

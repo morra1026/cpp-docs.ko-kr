@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10a57271c143a42f9bafaef5fa53f780fa03164f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 31ac9d8ab0200d8dd56bbca3c82eb0ebec32388b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700656"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46015974"
 ---
 # <a name="asp-atl-active-server-page-component-wizard"></a>ASP, ATL Active Server Page 구성 요소 마법사
 
@@ -49,6 +49,6 @@ ATL Active Server 페이지 구성 요소 마법사의이 페이지를 사용 �
 
 ## <a name="see-also"></a>참고 항목
 
-[ATL Active Server Page 구성 요소 마법사](../../atl/reference/atl-active-server-page-component-wizard.md)   
+[ATL Active Server Page 구성 요소 마법사](../../atl/reference/atl-active-server-page-component-wizard.md)<br/>
 [ATL Active Server Page 구성 요소](../../atl/reference/adding-an-atl-active-server-page-component.md)
 

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9412592ac177fb49f065975db469c9f77b98e8c8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 63ae3486b4db21a3aa241d5ebdbbfa0cdc6806f2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33265898"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026558"
 ---
 # <a name="compiler-error-c3715"></a>컴파일러 오류 C3715
-'pointer': 'class'에 대 한 포인터 여야 합니다  
-  
- 에 대 한 포인터를 지정한 [__hook](../../cpp/hook.md) 또는 [__unhook](../../cpp/unhook.md) 올바른 클래스를 가리키지 않습니다. 이 오류를 해결 하려면 하도록 프로그램 `__hook` 및 `__unhook` 호출이 올바른 클래스에 대 한 포인터를 지정 합니다.
+
+'pointer': 'class'에 대 한 포인터 여야 합니다
+
+에 대 한 포인터를 지정 [__hook](../../cpp/hook.md) 하거나 [__unhook](../../cpp/unhook.md) 올바른 클래스를 가리키지 않았습니다. 이 오류를 해결 하려면 사용자 `__hook` 고 `__unhook` 호출 올바른 클래스에 대 한 포인터를 지정 합니다.

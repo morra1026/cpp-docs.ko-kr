@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49e25fa8a730ea31caf747d07ce30a0622c4bd01
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 4cff60e5316202842b2ee22c5c6ba10813839b5d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714690"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035853"
 ---
 # <a name="application-settings-atl-project-wizard"></a>응용 프로그램 설정, ATL 프로젝트 마법사
 
@@ -68,7 +68,7 @@ ms.locfileid: "45714690"
 
 ## <a name="see-also"></a>참고 항목
 
-[ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)   
-[ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)   
+[ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)<br/>
+[ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)<br/>
 [기본 ATL 프로젝트 구성](../../atl/reference/default-atl-project-configurations.md)
 

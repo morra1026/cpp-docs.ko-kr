@@ -18,15 +18,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: bd6675f725e2a987a85cc73d6eec92f2b496df09
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0bddacec4e416173fc60ceb1c2c6ee71b3a198e7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103280"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029717"
 ---
 # <a name="autohandle-class"></a>auto_handle 클래스
-관리 되는 형식에 가상 핸들을 포함 하는 데 사용할 수 있는 자동 리소스 관리.  
+관리 되는 형식에 가상 핸들을 포함 하는 자동 리소스 관리.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,8 +36,8 @@ ref class auto_handle;
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `_element_type`  
- 포함할 관리 되는 형식입니다.  
+*_element_type*<br/>
+포함할 관리 되는 형식입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더 파일** \<msclr\auto_handle.h >  

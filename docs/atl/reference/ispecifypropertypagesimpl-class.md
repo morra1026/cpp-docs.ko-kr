@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d231f493fd2b2f2c492eec224a0ae041f175f53d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: eb4611c52f65595eb84248507dfb3a85d1ab26fa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767352"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035967"
 ---
 # <a name="ispecifypropertypagesimpl-class"></a>ISpecifyPropertyPagesImpl 클래스
 
@@ -37,14 +37,14 @@ ms.locfileid: "43767352"
 ## <a name="syntax"></a>구문
 
 ```
-template<class T>  
+template<class T>
 class ATL_NO_VTABLE ISpecifyPropertyPagesImpl 
    : public ISpecifyPropertyPages
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `ISpecifyPropertyPagesImpl`합니다.
 
 ## <a name="members"></a>멤버
@@ -90,6 +90,6 @@ ATL 개체의 속성 맵에 사용 하 여 각 CLSID를 검색 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[IPropertyPageImpl 클래스](../../atl/reference/ipropertypageimpl-class.md)   
-[IPerPropertyBrowsingImpl 클래스](../../atl/reference/iperpropertybrowsingimpl-class.md)   
+[IPropertyPageImpl 클래스](../../atl/reference/ipropertypageimpl-class.md)<br/>
+[IPerPropertyBrowsingImpl 클래스](../../atl/reference/iperpropertybrowsingimpl-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

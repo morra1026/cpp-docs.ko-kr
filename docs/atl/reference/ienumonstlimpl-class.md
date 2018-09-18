@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f2e448d5fa73c64e9abb66ef70e513bc9fa0728
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 0abc7e3b87ef23e6350b54c3f64b50fbcfdd5b07
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759248"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031147"
 ---
 # <a name="ienumonstlimpl-class"></a>IEnumOnSTLImpl 클래스
 
@@ -40,25 +40,25 @@ ms.locfileid: "43759248"
 
 ```
 template <class Base,
-    const IID* piid, class T, class Copy, class CollType>  
+    const IID* piid, class T, class Copy, class CollType>
 class ATL_NO_VTABLE IEnumOnSTLImpl : public Base
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*자료*  
+*자료*<br/>
 COM 열거자입니다. 참조 [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) 예입니다.
 
-*piid*  
+*piid*<br/>
 열거자 인터페이스의 인터페이스 ID에 대 한 포인터입니다.
 
-*T*  
+*T*<br/>
 열거자 인터페이스에 의해 노출 되는 항목의 형식입니다.
 
-*복사*  
+*복사*<br/>
 A [복사 정책 클래스](../../atl/atl-copy-policy-classes.md)합니다.
 
-*CollType*  
+*CollType*<br/>
 C + + 표준 라이브러리 컨테이너 클래스입니다.
 
 ## <a name="members"></a>멤버
@@ -114,10 +114,10 @@ HRESULT Init(
 
 ### <a name="parameters"></a>매개 변수
 
-*pUnkForRelease*  
+*pUnkForRelease*<br/>
 [in] `IUnknown` 유지 해야 하는 활성 열거자의 수명 동안 개체의 포인터입니다. 이러한 개체가 없는 경우 NULL을 전달 합니다.
 
-*collection*  
+*collection*<br/>
 열거할 항목을 포함 하는 c + + 표준 라이브러리 컨테이너에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -140,7 +140,7 @@ STDMETHOD(Clone)(Base** ppEnum);
 
 ### <a name="parameters"></a>매개 변수
 
-*ppEnum*  
+*ppEnum*<br/>
 [out] 현재 열거자에서 복제는 새로 만든된 개체에서 열거자 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -192,13 +192,13 @@ STDMETHOD(Next)(
 
 ### <a name="parameters"></a>매개 변수
 
-*celt*  
+*celt*<br/>
 [in] 요청 하는 요소의 수입니다.
 
-*rgelt*  
+*rgelt*<br/>
 [out] 요소로 채워질 배열입니다.
 
-*pceltFetched*  
+*pceltFetched*<br/>
 [out] 에 실제로 반환 된 요소 수가 *rgelt*합니다. 일 수 있습니다 보다 작은 *celt* 개 보다 적으면 *celt* 요소 목록에 남아 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -227,7 +227,7 @@ STDMETHOD(Skip)(ULONG celt);
 
 ### <a name="parameters"></a>매개 변수
 
-*celt*  
+*celt*<br/>
 [in] 건너뛸 요소 수입니다.
 
 ### <a name="return-value"></a>반환 값

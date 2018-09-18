@@ -17,20 +17,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 78c25c9c6bde27219f10e4047dc7a6ab416f55d5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c100b1edbd36f4384e8deb1abf5b36465e8da479
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297539"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024166"
 ---
 # <a name="expression-evaluator-error-cxx0065"></a>식 계산기 오류 CXX0065
-변수에 스택 프레임이 필요합니다.  
-  
- 현재 범위 내에 존재 하지만 아직 만들지 않은 변수 식에 포함 되어 있습니다.  
-  
- 이 오류는 프롤로그 함수 하지만 아직 함수에 대 한 스택 프레임 설정의 한 단계씩 또는 함수에 대 한 종료 코드를 실행 하는 경우에 발생할 수 있습니다.  
-  
- 식을 계산 하기 전에 스택 프레임 체결 될 때까지 프롤로그 코드를 단계별로 실행 합니다.  
-  
- 이 오류는 can0065와 동일 합니다.
+
+변수 스택 프레임이 필요합니다.
+
+식은 현재 범위 내에 존재 하지만 아직 만들지 않은 변수를 포함 합니다.
+
+아니면 함수에 대 한 종료 코드를 한 단계씩 함수 했지만 아직 함수에 대 한 스택 프레임 설정의 프롤로그를 실행 하는 경우이 오류가 발생할 수 있습니다.
+
+식을 계산 하기 전에 스택 프레임 설정 된 하기까지 프롤로그 코드를 단계별로 실행 합니다.
+
+이 오류는 can0065와 동일 합니다.

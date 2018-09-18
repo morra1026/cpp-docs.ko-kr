@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 70b2c6c831fde18f9054e139a120d834a75b6950
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cc0a49f8e6ab42f7e607cd5f4f7cc91f6895abe0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246218"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035170"
 ---
 # <a name="compiler-error-c2865"></a>컴파일러 오류 C2865
-'function': handle_or_pointer에 대 한 잘못 된 비교  
-  
- 에 대 한 참조를 비교할 수 [클래스 및 구조체](../../windows/classes-and-structs-cpp-component-extensions.md) 관리 되는 동일한 개체 (= =) 또는 서로 다른 개체를 참조 하는지 참조 같음에 대 한 참조 형식 또는 (! =) 합니다.  
-  
- 비교할 수 없으므로.NET 런타임에서 언제 든 지 관리 되는 개체를 이동할 수 있기 때문에 순서에 대 한 테스트의 결과 변경 합니다.
+
+'function': handle_or_pointer에 대 한 비교가 잘못 되었습니다
+
+에 대 한 참조를 비교할 수 있습니다 [클래스 및 구조체](../../windows/classes-and-structs-cpp-component-extensions.md) 관리 되는 동일한 개체 (= =) 또는 다른 개체를 참조 하는 경우 참조 같음에 대 한 참조 형식 또는 (! =) 합니다.
+
+비교할 수 없습니다 하.NET 런타임에서 언제 든 지 관리 되는 개체를 이동할 수 있기 때문에 순서 지정에 대 한 테스트의 결과 변경 합니다.

@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0934a3c6690b75ffa2eca18f1fd38662bc2a9fd9
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9e747386c37e760793ceaa0396f217304cbe621d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756992"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022684"
 ---
 # <a name="ccomautothreadmodule-class"></a>CComAutoThreadModule 클래스
 
@@ -44,13 +44,13 @@ ATL 7.0부터 `CComAutoThreadModule` 는 사용 되지 않습니다: 참조 [ATL
 ## <a name="syntax"></a>구문
 
 ```
-template <class ThreadAllocator = CComSimpleThreadAllocator>  
+template <class ThreadAllocator = CComSimpleThreadAllocator>
 class CComAutoThreadModule : public CComModule
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-`ThreadAllocator`  
+*ThreadAllocator*<br/>
 [in] 스레드 선택 영역을 관리 하는 클래스입니다. 기본값은 [CComSimpleThreadAllocator](../../atl/reference/ccomsimplethreadallocator-class.md)합니다.
 
 ## <a name="members"></a>멤버
@@ -122,13 +122,13 @@ HRESULT CreateInstance(
 
 ### <a name="parameters"></a>매개 변수
 
-*pfnCreateInstance*  
+*pfnCreateInstance*<br/>
 [in] 작성자 함수에 대 한 포인터입니다.
 
-*riid*  
+*riid*<br/>
 [in] 요청된 된 인터페이스의 IID입니다.
 
-*ppvObj*  
+*ppvObj*<br/>
 [out] 로 식별 되는 인터페이스 포인터에 대 한 포인터 *riid*합니다. 개체는이 인터페이스를 지원 하지 않는 경우 *ppvObj* NULL로 설정 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -181,16 +181,16 @@ HRESULT Init(
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 [in] 개체 맵 항목의 배열에 대 한 포인터입니다.
 
-*h*  
+*h*<br/>
 [in] 에 전달 된 HINSTANCE `DLLMain` 또는 `WinMain`합니다.
 
-*plibid*  
+*plibid*<br/>
 [in] 프로젝트에 연결 된 형식 라이브러리의 LIBID 포인터입니다.
 
-*nThreads*  
+*nThreads*<br/>
 [in] 만들 스레드의 수입니다. 기본적으로 *nThreads* 반환한 값인 [GetDefaultThreads](#getdefaultthreads)합니다.
 
 ### <a name="remarks"></a>설명
@@ -269,5 +269,5 @@ LONG Unlock();
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 개요](../../atl/atl-class-overview.md)   
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [모듈 클래스](../../atl/atl-module-classes.md)

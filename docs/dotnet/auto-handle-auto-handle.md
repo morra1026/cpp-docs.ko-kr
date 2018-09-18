@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: af9ca3d472aa3c942b86d338a6b6f8f25a573ca8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 67cc2393feff127e2b4278f5a5257ea2be102237
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33104434"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018602"
 ---
 # <a name="autohandleautohandle"></a>auto_handle::auto_handle
 `auto_handle` 생성자입니다.  
@@ -47,11 +47,11 @@ auto_handle(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `_ptr`  
- 소유 하는 개체입니다.  
+*_ptr*<br/>
+개체 자체입니다.  
   
- `_right`  
- 기존 `auto_handle`입니다.  
+*(_r)*<br/>
+기존 `auto_handle`입니다.  
   
 ## <a name="example"></a>예제  
   

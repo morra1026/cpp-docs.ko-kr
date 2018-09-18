@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb9c30ef9a2662a705b7fa9d3620f1d6d89edea8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8a426ffa92337b227a9f79c8d30f2890b639a056
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247141"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026428"
 ---
 # <a name="compiler-error-c3242"></a>컴파일러 오류 C3242
-'function': 가상 함수만 명시적으로 재정의할 수 있습니다.  
-  
- 비가상 메서드를 명시적으로 재정의하려고 했습니다.
+
+'function': 가상 함수만 명시적으로 재정의할 수 있습니다.
+
+비가상 메서드를 명시적으로 재정의하려고 했습니다.

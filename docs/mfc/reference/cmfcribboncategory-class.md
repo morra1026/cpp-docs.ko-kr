@@ -140,12 +140,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee097dd95a1a88b8cf2cb3dc48c4406499001443
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 73cf6b78475ca438c39e52263c4e91b10de60f8c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721399"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020422"
 ---
 # <a name="cmfcribboncategory-class"></a>CMFCRibbonCategory 클래스
 합니다 `CMFCRibbonCategory` 그룹을 포함 하는 리본 탭을 구현 하는 클래스 [리본 패널](../../mfc/reference/cmfcribbonpanel-class.md)합니다.  
@@ -237,23 +237,18 @@ class CMFCRibbonCategory : public CObject
   
  다음 예제에서는 리본 범주를 만들고 창을 추가 하는 방법을 보여 줍니다.  
   
- `// Create a new ribbon category and get a pointer to it`  
-  
- `CMFCRibbonCategory* pCategory = m_wndRibbonBar.AddCategory`  
-  
- `(_T("&Write"),           // Category name`  
-  
- `IDB_WRITE,              // Category small images (16 x 16)`  
-  
- `IDB_WRITE_LARGE);   // Category large images (32 x 32)`  
-  
- `// Add a panel to the new category`  
-  
- `CMFCRibbonPanel* pPanel = pCategory->AddPanel (`  
-  
- `_T("Clipboard"),                       // Panel name`  
-  
- `m_PanelIcons.ExtractIcon (0));  // Panel icon`  
+```cpp
+// Create a new ribbon category and get a pointer to it`  
+CMFCRibbonCategory* pCategory = m_wndRibbonBar.AddCategory
+    (_T("&Write"),           // Category name
+    IDB_WRITE,               // Category small images (16 x 16)
+    IDB_WRITE_LARGE);        // Category large images (32 x 32)
+
+// Add a panel to the new category
+CMFCRibbonPanel* pPanel = pCategory->AddPanel (
+    _T("Clipboard"),                // Panel name
+    m_PanelIcons.ExtractIcon (0));  // Panel icon
+```
   
  다음 다이어그램에서는 RibbonApp 샘플 응용 프로그램의 홈 범주의 그림을 보여 줍니다.  
   

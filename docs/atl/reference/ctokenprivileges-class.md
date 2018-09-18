@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98fb1c50b6bdd46cc6cf0efe7739e8ada60f3274
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9acbb55f09df3912ff61a54557cb013e86c48834
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762637"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036633"
 ---
 # <a name="ctokenprivileges-class"></a>CTokenPrivileges 클래스
 
@@ -98,19 +98,19 @@ Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access
 하나 이상의 권한을 추가 `CTokenPrivileges` 액세스 토큰 개체입니다.
 
 ```
-bool Add(LPCTSTR pszPrivilege, bool bEnable) throw(...);  
+bool Add(LPCTSTR pszPrivilege, bool bEnable) throw(...);
 void Add(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*pszPrivilege*  
+*pszPrivilege*<br/>
 WINNT에 정의 된 대로, 권한의 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다. H 헤더 파일입니다.
 
-*bEnable*  
+*bEnable*<br/>
 True 이면 권한이 사용 됩니다. False 이면 권한은 사용할 수 없습니다.
 
-*rPrivileges*  
+*rPrivileges*<br/>
 에 대 한 참조를 [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) 구조입니다. 권한 및 특성은이 구조에서 복사 하 고 추가 `CTokenPrivileges` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -123,16 +123,16 @@ True 이면 권한이 사용 됩니다. False 이면 권한은 사용할 수 없
 
 ```
 CTokenPrivileges() throw();
-CTokenPrivileges(const CTokenPrivileges& rhs) throw(... );  
+CTokenPrivileges(const CTokenPrivileges& rhs) throw(... );
 CTokenPrivileges(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*rhs*  
+*rhs*<br/>
 `CTokenPrivileges` 새 개체에 할당 하는 개체입니다.
 
-*rPrivileges*  
+*rPrivileges*<br/>
 합니다 [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) 구조에 새 할당할 `CTokenPrivileges` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -161,7 +161,7 @@ bool Delete(LPCTSTR pszPrivilege) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pszPrivilege*  
+*pszPrivilege*<br/>
 WINNT에 정의 된 대로, 권한의 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다. H 헤더 파일입니다. 이 매개 변수를 상수 SE_SECURITY_NAME, 또는 해당 문자열을 "SeSecurityPrivilege." 지정할 수는 예를 들어,
 
 ### <a name="return-value"></a>반환 값
@@ -194,7 +194,7 @@ void GetDisplayNames(CNames* pDisplayNames) const throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*pDisplayNames*  
+*pDisplayNames*<br/>
 `CString` 개체의 배열에 대한 포인터입니다. `CNames` typedef로 정의 됩니다. `CTokenPrivileges::CAtlArray<CString>`합니다.
 
 ### <a name="remarks"></a>설명
@@ -239,10 +239,10 @@ void GetLuidsAndAttributes(
 
 ### <a name="parameters"></a>매개 변수
 
-*pPrivileges*  
+*pPrivileges*<br/>
 배열에 대 한 포인터 [LUID](/windows/desktop/api/winnt/ns-winnt-_luid) 개체입니다. `CLUIDArray` 로 정의 된 typedef `CAtlArray<LUID> CLUIDArray`합니다.
 
-*pAttributes*  
+*pAttributes*<br/>
 DWORD 개체의 배열에 대 한 포인터입니다. 이 매개 변수가 생략 하거나 NULL 인 경우에 특성을 검색 하지 됩니다. `CAttributes` 로 정의 된 typedef `CAtlArray <DWORD> CAttributes`합니다.
 
 ### <a name="remarks"></a>설명
@@ -261,10 +261,10 @@ void GetNamesAndAttributes(
 
 ### <a name="parameters"></a>매개 변수
 
-*pNames*  
+*pNames*<br/>
 배열에 대 한 포인터 `CString` 개체입니다. `CNames` 로 정의 된 typedef `CAtlArray <CString> CNames`합니다.
 
-*pAttributes*  
+*pAttributes*<br/>
 DWORD 개체의 배열에 대 한 포인터입니다. 이 매개 변수가 생략 하거나 NULL 인 경우에 특성을 검색 하지 됩니다. `CAttributes` 로 정의 된 typedef `CAtlArray <DWORD> CAttributes`합니다.
 
 ### <a name="remarks"></a>설명
@@ -297,10 +297,10 @@ bool LookupPrivilege(
 
 ### <a name="parameters"></a>매개 변수
 
-*pszPrivilege*  
+*pszPrivilege*<br/>
 WINNT에 정의 된 대로, 권한의 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다. H 헤더 파일입니다. 이 매개 변수를 상수 SE_SECURITY_NAME, 또는 해당 문자열을 "SeSecurityPrivilege." 지정할 수는 예를 들어,
 
-*pdwAttributes*  
+*pdwAttributes*<br/>
 특성을 수신 하는 변수에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -312,16 +312,16 @@ WINNT에 정의 된 대로, 권한의 이름을 지정 하는 null로 끝나는 
 대입 연산자입니다.
 
 ```
-CTokenPrivileges& operator= (const TOKEN_PRIVILEGES& rPrivileges) throw(...);  
+CTokenPrivileges& operator= (const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 CTokenPrivileges& operator= (const CTokenPrivileges& rhs) throw(...);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*rPrivileges*  
+*rPrivileges*<br/>
 합니다 [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) 할당할 구조는 `CTokenPrivileges` 개체입니다.
 
-*rhs*  
+*rhs*<br/>
 `CTokenPrivileges` 개체에 할당할 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -332,7 +332,7 @@ CTokenPrivileges& operator= (const CTokenPrivileges& rhs) throw(...);
 
 에 대 한 포인터에 값을 캐스팅 합니다 `TOKEN_PRIVILEGES` 구조입니다.
 
-```  
+```
 operator const TOKEN_PRIVILEGES *() const throw(...);
 ```
 
@@ -342,9 +342,9 @@ operator const TOKEN_PRIVILEGES *() const throw(...);
 
 ## <a name="see-also"></a>참고 항목
 
-[보안 샘플](../../visual-cpp-samples.md)   
-[TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges)   
-[LUID](/windows/desktop/api/winnt/ns-winnt-_luid)   
-[LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes)   
-[클래스 개요](../../atl/atl-class-overview.md)   
+[보안 샘플](../../visual-cpp-samples.md)<br/>
+[TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges)<br/>
+[LUID](/windows/desktop/api/winnt/ns-winnt-_luid)<br/>
+[LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes)<br/>
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [보안 전역 함수](../../atl/reference/security-global-functions.md)

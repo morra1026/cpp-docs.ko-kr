@@ -16,28 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7dc7a84ff666fdc17f0abeec690a548f216ce975
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ef0920c98fe59fe5bca49bba4c62a486a61c0a55
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33170150"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024713"
 ---
 # <a name="compiler-error-c2150"></a>컴파일러 오류 C2150
-  
-> '*식별자*': 비트 필드 형식은 'int', 'signed int' 또는 'unsigned int' 해야 합니다.  
-  
- 비트 필드에 대 한 기본 형식 되어야 할 `int`, `signed int`, 또는 `unsigned int`합니다.  
-  
-## <a name="example"></a>예제  
-  
- 이 샘플에서는 c 2150을 발생할 수 있는 방법 및 해결 방법 보여 줍니다.  
-  
-```cpp  
-// C2150.cpp  
-// compile with: /c  
-struct A {  
-   float a : 8;    // C2150  
-   int i : 8;      // OK  
-};  
+
+> '*식별자*': 비트 필드 형식은 'int', 'signed int' 또는 'unsigned int' 있어야 합니다.
+
+비트 필드의 기본 형식 되어야 할 `int`, `signed int`, 또는 `unsigned int`합니다.
+
+## <a name="example"></a>예제
+
+이 샘플에서는 C2150을 발생할 수 있는 방법 및 해결 하는 방법을 보여 줍니다.
+
+```cpp
+// C2150.cpp
+// compile with: /c
+struct A {
+   float a : 8;    // C2150
+   int i : 8;      // OK
+};
 ```

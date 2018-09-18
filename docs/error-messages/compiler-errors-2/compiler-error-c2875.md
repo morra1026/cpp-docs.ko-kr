@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b52ba86dccf5451c80c389d5726d81e2511ab31
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c33813cbb6e6c6b0e7a386428414358709e0b0c9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243070"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030648"
 ---
 # <a name="compiler-error-c2875"></a>컴파일러 오류 C2875
-사용 하 여 선언 하면 'class::identifier'의 여러 선언  
-  
- 이 선언은 동일 항목을 두 번 정의 됩니다.  
-  
- 다음 샘플에서는 C2875 오류가 생성 됩니다.  
-  
-```  
-// C2875.cpp  
-struct A {  
-   void f(int*);  
-};  
-  
-struct B {  
-   void f(double*);  
-};  
-  
-struct AB : A, B {  
-   using A::f;  
-   using A::f;   // C2875  
-   using B::f;  
-};  
+
+using 선언 하면 'class::identifier'의 여러 선언
+
+선언 하면 동일한 항목을 두 번 정의 됩니다.
+
+다음 샘플에서는 C2875 오류가 생성 됩니다.
+
+```
+// C2875.cpp
+struct A {
+   void f(int*);
+};
+
+struct B {
+   void f(double*);
+};
+
+struct AB : A, B {
+   using A::f;
+   using A::f;   // C2875
+   using B::f;
+};
 ```

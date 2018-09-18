@@ -19,15 +19,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c2e588021b1600b1b3ac6e04f91ab07649755a2e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 67658f6edadd7723789288ab268b97cecdd611d2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33096830"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017356"
 ---
 # <a name="cnomultipleresults-class"></a>CNoMultipleResults 클래스
-템플릿 인수로 사용 (*TMultiple*)를 [CCommand](../../data/oledb/ccommand-class.md) 세트를 만들려면 단일 결과 처리 하는 최적화 된 명령입니다.  
+
+템플릿 인수를 받았던 (*TMultiple*)를 [CCommand](../../data/oledb/ccommand-class.md) 설정 단일 결과 처리 하는 최적화 된 명령을 만듭니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -36,11 +37,14 @@ class CNoMultipleResults
 ```  
   
 ## <a name="remarks"></a>설명  
- 여러 결과 집합을 처리 하는 명령을 사용 [CMultipleResults](../../data/oledb/cmultipleresults-class.md) 대신 합니다.  
+
+사용 하 여 여러 결과 집합을 처리 하는 명령을 싶다면 [CMultipleResults](../../data/oledb/cmultipleresults-class.md) 대신 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **헤더:** atldbcli.h  
+
+**헤더:** atldbcli.h  
   
 ## <a name="see-also"></a>참고 항목  
- [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)
+
+[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

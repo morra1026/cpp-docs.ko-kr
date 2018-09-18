@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8b4c8f4fcac08fa98064f6def6c04feb43b4b581
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2b8d081106435bba8465da2c99f40d62275f5a9b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33271746"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018446"
 ---
 # <a name="compiler-warning-level-1-c4022"></a>컴파일러 경고 (수준 1) C4022
-'function': 실제 매개 변수 'number'에 대 한 포인터가 일치 하지 않습니다.  
-  
- 포인터 형식의 실제 매개 변수에서 해당 형식 매개 변수의 포인터 형식이 달라 집니다. 실제 매개 변수가 변경 되지 않은 상태로 전달 됩니다.
+
+'function': 실제 매개 변수 'r'에 대 한 포인터가 일치 하지 않습니다.
+
+포인터 형식의 실제 매개 변수는 해당 형식 매개 변수의 포인터 형식에서 서로 다릅니다. 실제 매개 변수가 변경 되지 않은 상태로 전달 됩니다.

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8341d755f8830037ed8ec7b26f2905929ab4e8b2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f4fbb5199e626e98120661a47cbf13858b2d6a7f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33172433"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029002"
 ---
 # <a name="compiler-error-c2204"></a>컴파일러 오류 C2204
-'type': 괄호 안에 형식 정의가 있습니다.  
-  
- 형식은 피연산자 또는 프로토타입 범위로 정의됩니다.
+
+'type': 괄호 안에 형식 정의가 있습니다.
+
+형식은 피연산자 또는 프로토타입 범위로 정의됩니다.

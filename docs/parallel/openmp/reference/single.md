@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ff1a255933b79d39b6eedbb9362ff76a34e0f8a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8a57d93d8d2be84a470dd48d1ca6f9b04010182f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716991"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020981"
 ---
 # <a name="single"></a>단일
 코드의 섹션 마스터 스레드 반드시 단일 스레드에서 실행할지를 지정할 수 있습니다.  
@@ -37,7 +37,7 @@ ms.locfileid: "45716991"
   
 #### <a name="parameters"></a>매개 변수  
 
-`clause`  
+*절*<br/>
 (선택 사항) 0 개 이상의 절입니다. 지 원하는 절의 목록 설명 섹션을 참조 하세요 **단일**합니다.  
   
 ## <a name="remarks"></a>설명  
@@ -51,13 +51,13 @@ ms.locfileid: "45716991"
   
 -   [private](../../../parallel/openmp/reference/private-openmp.md)  
   
- 합니다 [마스터](../../../parallel/openmp/reference/master.md) 지시어를 사용 하면 코드의 섹션은 마스터 스레드에서만 실행 되도록 지정 합니다.  
+합니다 [마스터](../../../parallel/openmp/reference/master.md) 지시어를 사용 하면 코드의 섹션은 마스터 스레드에서만 실행 되도록 지정 합니다.  
   
  자세한 내용은 [2.4.3 single 생성](../../../parallel/openmp/2-4-3-single-construct.md)합니다.  
   
 ## <a name="example"></a>예제  
   
-```  
+```cpp  
 // omp_single.cpp  
 // compile with: /openmp   
 #include <stdio.h>  

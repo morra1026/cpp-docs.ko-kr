@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10ef1f6881504537169b3d7a9d2270a393edf5c9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d14c43d5319fecc4916f2db20f6e9bbed5721e9a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33318469"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025505"
 ---
 # <a name="resource-compiler-error-rc2164"></a>리소스 컴파일러 오류 RC2164
-RCDATA에 예기치 않은 값  
-  
- *RCDATA* 문의 **raw-data** 값은 각각 쉼표로 구분된 정수 또는 문자열이어야 합니다. 쉼표를 빠뜨렸거나 문자열 주위의 따옴표를 빠뜨리지 않았는지 확인합니다.
+
+RCDATA에 예기치 않은 값
+
+*RCDATA* 문의 **raw-data** 값은 각각 쉼표로 구분된 정수 또는 문자열이어야 합니다. 쉼표를 빠뜨렸거나 문자열 주위의 따옴표를 빠뜨리지 않았는지 확인합니다.

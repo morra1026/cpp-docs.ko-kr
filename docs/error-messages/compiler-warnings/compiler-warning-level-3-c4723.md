@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c5f91bbdc60ab1901c4afe4d5bea9f3258692ba
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9ca6715e26705632dc3187cb6db7deed8636cd82
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296616"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033149"
 ---
 # <a name="compiler-warning-level-3-c4723"></a>컴파일러 경고(수준 3) C4723
-0 나누기 연산이 발생할 수  
-  
- 컴파일 타임에는 0으로 계산 되지 않은 결과가 나누기 작업에서 두 번째 피연산자입니다.  
-  
- 이 경고를 사용 하는 경우에 [/Og](../../build/reference/og-global-optimizations.md) 또는 /Og 나타내는 최적화 옵션입니다.  
-  
- 컴파일러에서 0 피연산자를 생성 것일 수 있습니다.
+
+0으로 나누기 연산이 발생할 수
+
+컴파일 시간에 0으로 계산 정의 되지 않은 결과가 나누기 연산의 두 번째 피연산자입니다.
+
+이 경고를 사용 하는 경우에 [/Og](../../build/reference/og-global-optimizations.md) 또는 /Og 암시 하는 최적화 옵션입니다.
+
+컴파일러가 0 피연산자를 생성 될 수 있습니다.

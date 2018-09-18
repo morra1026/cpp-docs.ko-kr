@@ -16,19 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 063464fe58417cfce58160ccba12fbcd514c7320
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: fa493a886509a85cc45c14f003ff07886c435280
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894475"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036035"
 ---
 # <a name="name-decoration"></a>이름 데코레이션
 
 이름 장식은 대개 C++ 명명 체계를 지칭하지만 다른 여러 C 사례에도 적용될 수 있습니다. C++에서는 기본적으로 함수 이름, 매개 변수 및 반환 형식을 사용하여 함수의 링커 이름을 만듭니다. 다음 함수를 살펴보세요.
 
 ```
-void CALLTYPE test(void)  
+void CALLTYPE test(void)
 ```
 
 아래 표에는 여러 호출 규칙에 대한 링커 이름이 나와 있습니다.

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2068f3a735a14662e10f00af3fc5f81efd037592
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 56e93bf1485cefed9a44e0e6260358650ab8b296
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220763"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032590"
 ---
 # <a name="bitmap-structure"></a>BITMAP 구조체
 합니다 **비트맵** 높이, 너비, 색상 형식 및 논리적 비트맵의 비트 값을 정의 하는 구조**합니다.**  
@@ -67,19 +67,15 @@ typedef struct tagBITMAP {  /* bm */
   
  검색 높이의 흑백 비트맵에 대해 다음과 같이 구성 됩니다 *n*:  
   
- `Scan 0`  
-  
- `Scan 1`  
-  
- `.`  
-  
- `.`  
-  
- `.`  
-  
- `Scan n-2`  
-  
- `Scan n-1`  
+```
+Scan 0
+Scan 1
+.
+.
+.
+Scan n-2
+Scan n-1
+```
   
  흑백 장치에서 픽셀은 검정색 또는 흰색입니다. 비트맵에서 해당 비트가 1이면 픽셀이 켜집니다(흰색). 비트맵에서 해당 비트가 0이면 픽셀이 꺼집니다(검정색).  
   

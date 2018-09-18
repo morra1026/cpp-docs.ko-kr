@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab244578d7a44b1fd952ee441cd8cc51f1ca1fa1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5a331f5e696ffa368e17599df76577b9e3354435
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301488"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024868"
 ---
 # <a name="expression-evaluator-error-cxx0007"></a>식 계산기 오류 CXX0007
-오른쪽 괄호가 없습니다.  
-  
- 균형이 맞지 않는 괄호 식에서 발견 되었습니다. 분산 된 괄호가 있는 식 다시 입력 합니다.  
-  
- 이 오류는 can0007과 동일 합니다.
+
+누락 된 오른쪽 괄호
+
+불균형된 괄호는 식에서 찾을 수 없습니다. 분산 된 괄호가 있는 식에 다시 입력 합니다.
+
+이 오류는 can0007과 동일 합니다.

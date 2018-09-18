@@ -16,17 +16,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 837b155c1cbe3b8d6af730a4cb9fd65ea388a19c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a6338325a788ec0c0e672c2dc28fa8fea73c3ec9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197392"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032201"
 ---
 # <a name="fatal-error-c1033"></a>심각한 오류 C1033
-프로그램 데이터베이스 pdb를 열 수 없습니다.  
-  
- 이 오류는 디스크 오류로 인해 발생할 수 있습니다.  
-  
-  
- 자세한 내용은 참조 [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 246007](http://support.microsoft.com/default.aspx?scid=kb;en-us;246007)합니다.
+
+프로그램 데이터베이스 pdb를 열 수 없습니다.
+
+이 오류는 디스크 오류로 인해 발생할 수 있습니다.
+
+
+자세한 내용은 [ http://support.microsoft.com/default.aspx?scid=kb; en-우리; 246007](http://support.microsoft.com/default.aspx?scid=kb;en-us;246007)합니다.

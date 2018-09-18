@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22b15185977dfdaa6c6cad154889e95f59ab27c4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 22276d0b3189f93f57f8337b22b5d6070cd3db0c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297952"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46034475"
 ---
 # <a name="linker-tools-error-lnk1152"></a>링커 도구 오류 LNK1152
-하나 이상의 데코레이팅되지 않은 기호를 확인할 수 없습니다.  
-  
- 이 오류에는 하나의 경고 옵니다 [LNK4022](../../error-messages/tool-errors/linker-tools-warning-lnk4022.md) 각 데코레이팅되지 않은 확인할 수 없는 기호에 대 한와 두 개 이상의 경고 [LNK4002](../../error-messages/tool-errors/linker-tools-warning-lnk4002.md) 데코레이팅되지 않은 기호에 대 한 중복 된 기호에 대 한 합니다.
+
+하나 이상의 데코 레이트 되지 않은 기호를 확인할 수 없습니다.
+
+이 오류는 하나의 경고 뒤 [LNK4022](../../error-messages/tool-errors/linker-tools-warning-lnk4022.md) 확인할 수 없는 각 데코 레이트 되지 않은 기호에 대 한와 두 개 이상의 경고 [LNK4002](../../error-messages/tool-errors/linker-tools-warning-lnk4002.md) 데코 레이트 되지 않은 기호에 대해 발견 된 중복 기호에 대 한 합니다.

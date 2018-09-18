@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 324df7657be7f74cade6fc4b50b98d6790245ab4
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 69882f9b22d11de139951b6196b58729af70a36a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027091"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018147"
 ---
 # <a name="cwinformsdialog-class"></a>CWinFormsDialog 클래스
 Windows Forms 사용자 정의 컨트롤을 호스팅하는 MFC 대화 상자 클래스의 래퍼입니다.  
@@ -43,8 +43,8 @@ class CWinFormsDialog :
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `TManagedControl`  
- .NET Framework 사용자 정의 컨트롤에 MFC 응용 프로그램에 표시 합니다.  
+*TManagedControl*<br/>
+.NET Framework 사용자 정의 컨트롤에 MFC 응용 프로그램에 표시 합니다.  
   
 ## <a name="members"></a>멤버  
   
@@ -64,7 +64,7 @@ class CWinFormsDialog :
   
 ### <a name="public-operators"></a>Public 연산자  
   
-|name||  
+|이름||  
 |----------|-|  
 |[CWinFormsDialog::operator-&gt;](#operator_-_gt)|대체 [CWinFormsDialog::GetControl](#getcontrol) 식에 있습니다.|  
 |[CWinFormsDialog::operator TManagedControl ^](#operator_tmanagedcontrol)|Windows Forms 사용자 정의 컨트롤에 대 한 참조로 형식을 캐스팅합니다.|  

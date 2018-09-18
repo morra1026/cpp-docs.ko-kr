@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb78e658c0f56798fa0c23201889809d6c68d184
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3f25e3f9479b2555badbd079c3e2d939e91acbba
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33241914"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024413"
 ---
 # <a name="compiler-error-c3011"></a>컴파일러 오류 C3011
-병렬 영역 내부에서는 직접 인라인 어셈블리를 사용할 수 없습니다.  
-  
- `omp` 병렬 영역은 인라인 어셈블리 명령을 포함할 수 없습니다.  
-  
- 다음 샘플에서는 C3011을 생성합니다.  
-  
-```  
-// C3011.cpp  
-// compile with: /openmp  
-// processor: /x86  
-int main() {  
-   int   n = 0;  
-  
-   #pragma omp parallel  
-   {  
-      _asm mov eax, n   // Delete this line to resolve this error.  
-   }   // C3011  
-}  
+
+병렬 영역 내부에서는 직접 인라인 어셈블리를 사용할 수 없습니다.
+
+`omp` 병렬 영역은 인라인 어셈블리 명령을 포함할 수 없습니다.
+
+다음 샘플에서는 C3011을 생성합니다.
+
+```
+// C3011.cpp
+// compile with: /openmp
+// processor: /x86
+int main() {
+   int   n = 0;
+
+   #pragma omp parallel
+   {
+      _asm mov eax, n   // Delete this line to resolve this error.
+   }   // C3011
+}
 ```

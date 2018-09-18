@@ -1083,21 +1083,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 25a68bb459122ea83d9be2491cb5fadaaf8a00c0
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 1496fa844106b78e2a5dc735fad0cc33923aea53
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42572605"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035762"
 ---
 # <a name="schema-rowset-classes-and-typedef-classes"></a>스키마 행 집합 클래스 및 Typedef 클래스
+
 스키마를 소유 하거나 특정 사용자가 만든 데이터베이스 개체의 컬렉션인 합니다. 카탈로그를 하나 이상의 스키마를 포함할 수 있습니다 하지만 항상 호출 INFORMATION_SCHEMA 뷰 및 정보 스키마의 도메인을 포함 하는 스키마를 포함 해야 합니다. OLE DB의 스키마 정보는 미리 정의 된 스키마 행 집합을 사용 하 여 검색 하 고 형식, 테이블, 열, 인덱스, 뷰, 어설션 및 제약 조건, 통계, 문자 집합, 데이터 정렬 및 도메인을 포함 합니다.  
   
- 스키마 행 집합은 미리 정의 된 행 집합 메타 데이터를 나타내는입니다. 동적 프로그래밍에서 스키마 행 집합 일반적으로 사용 되므로 여기서 컴파일 시간에는 데이터베이스 구조 알려져 있지 않습니다. 런타임 시 데이터베이스에 대 한 정보를 가져오려면 이러한 스키마 행 집합을 사용할 수 있습니다.  
+스키마 행 집합은 미리 정의 된 행 집합 메타 데이터를 나타내는입니다. 동적 프로그래밍에서 스키마 행 집합 일반적으로 사용 되므로 여기서 컴파일 시간에는 데이터베이스 구조 알려져 있지 않습니다. 런타임 시 데이터베이스에 대 한 정보를 가져오려면 이러한 스키마 행 집합을 사용할 수 있습니다.  
   
- Typedef 클래스를 사용 하 여 스키마 행 집합을 인스턴스화합니다. 해당 형식 정의와 스키마 행 집합 클래스는 다음과 같습니다. 호출 해야 합니다 [crestrictions:: Open](../../data/oledb/crestrictions-open.md) 스키마 행 집합의 인스턴스를 만든 후 합니다. 이 메서드는 지정한 제한에 따라 결과 집합을 반환 합니다. 참조 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) 각 스키마 행 집합을 사용 하 여 연결 하는 제한 열에 대 한 정보에 대 한 합니다.  
+Typedef 클래스를 사용 하 여 스키마 행 집합을 인스턴스화합니다. 해당 형식 정의와 스키마 행 집합 클래스는 다음과 같습니다. 호출 해야 합니다 [crestrictions:: Open](../../data/oledb/crestrictions-open.md) 스키마 행 집합의 인스턴스를 만든 후 합니다. 이 메서드는 지정한 제한에 따라 결과 집합을 반환 합니다. 참조 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) 각 스키마 행 집합을 사용 하 여 연결 하는 제한 열에 대 한 정보에 대 한 합니다.  
   
- 다음 표에 각 OLE DB 스키마 행 집합 및 해당 OLE DB 템플릿에서 typedef 클래스 및 info 클래스입니다.  
+다음 표에 각 OLE DB 스키마 행 집합 및 해당 OLE DB 템플릿에서 typedef 클래스 및 info 클래스입니다.  
   
 |OLE DB 스키마 행 집합|Typedef 클래스|Info 클래스입니다.|  
 |--------------------------|-------------------|----------------|  
@@ -1133,14 +1134,16 @@ ms.locfileid: "42572605"
 |[VIEW_TABLE_USAGE](/previous-versions/windows/desktop/ms719727\(v=vs.85\))|[CViewTableUsage](#viewtable)|[CViewTableInfo](#viewtable)|  
   
 ## <a name="assertion"></a> CAssertions, CAssertionInfo
+
 Typedef 클래스를 호출 `CAssertions` 해당 매개 변수 클래스를 구현 하려면 `CAssertionInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 지정된 된 사용자가 소유 하는 카탈로그에 정의 된 어설션을 식별 합니다.  
+이 클래스는 지정된 된 사용자가 소유 하는 카탈로그에 정의 된 어설션을 식별 합니다.  
   
- 다음 표에 클래스 데이터 멤버에 대 한 `CAssertionInfo` 및 해당 OLE DB 열입니다. 참조 [어설션을 행 집합](/previous-versions/windows/desktop/ms719776\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에 클래스 데이터 멤버에 대 한 `CAssertionInfo` 및 해당 OLE DB 열입니다. 참조 [어설션을 행 집합](/previous-versions/windows/desktop/ms719776\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1152,14 +1155,16 @@ Typedef 클래스를 호출 `CAssertions` 해당 매개 변수 클래스를 구�
 |m_szDescription|설명|  
 
 ## <a name="catalog"></a> CCatalogs, CCatalogInfo
+
 Typedef 클래스를 호출 `CCatalogs` 해당 매개 변수 클래스를 구현 하려면 `CCatalogInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 DBMS에서 액세스 가능한 카탈로그와 연결 된 실제 특성을 식별 합니다.  
+이 클래스는 DBMS에서 액세스 가능한 카탈로그와 연결 된 실제 특성을 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [카탈로그 행 집합](/previous-versions/windows/desktop/ms721241\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [카탈로그 행 집합](/previous-versions/windows/desktop/ms721241\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1167,14 +1172,16 @@ Typedef 클래스를 호출 `CCatalogs` 해당 매개 변수 클래스를 구현
 |m_szDescription|설명|  
 
 ## <a name="characterset"></a> CCharacterSets, CCharacterSetInfo
+
 Typedef 클래스를 호출 `CCharacterSets` 해당 매개 변수 클래스를 구현 하려면 `CCharacterSetInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 지정된 사용자가 액세스할 수 있는 카탈로그에 정의된 문자 집합을 식별합니다.  
+이 클래스는 지정된 사용자가 액세스할 수 있는 카탈로그에 정의된 문자 집합을 식별합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [CHARACTER_SETS 행 집합](/previous-versions/windows/desktop/ms722638\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [CHARACTER_SETS 행 집합](/previous-versions/windows/desktop/ms722638\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1188,14 +1195,16 @@ Typedef 클래스를 호출 `CCharacterSets` 해당 매개 변수 클래스를 �
 |m_szCollateName|DEFAULT_COLLATE_NAME|  
 
 ## <a name="checkconstraint"></a> CCheckConstraints, CCheckConstraintInfo
+
 Typedef 클래스를 호출 `CCheckConstraints` 해당 매개 변수 클래스를 구현 하려면 `CCheckConstraintInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 check 제약 조건 카탈로그에 정의 된 지정된 된 사용자가 소유한를 식별 합니다. Check 제약 조건 데이터 값 또는 테이블에 하나 이상의 열에서 사용할 수 있는 형식을 지정 합니다.  
+이 클래스는 check 제약 조건 카탈로그에 정의 된 지정된 된 사용자가 소유한를 식별 합니다. Check 제약 조건 데이터 값 또는 테이블에 하나 이상의 열에서 사용할 수 있는 형식을 지정 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [CHECK_CONSTRAINTS 행 집합](/previous-versions/windows/desktop/ms712845\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [CHECK_CONSTRAINTS 행 집합](/previous-versions/windows/desktop/ms712845\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1206,14 +1215,16 @@ Typedef 클래스를 호출 `CCheckConstraints` 해당 매개 변수 클래스�
 |m_szDescription|설명|  
 
 ## <a name="collation"></a> CCollations, CCollationInfo
+
 Typedef 클래스를 호출 `CCollations` 해당 매개 변수 클래스를 구현 하려면 `CCollationInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 문자 데이터 정렬을 카탈로그에 정의 된 지정된 된 사용자에 액세스할 수 있는 식별 합니다.  
+이 클래스는 문자 데이터 정렬을 카탈로그에 정의 된 지정된 된 사용자에 액세스할 수 있는 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [데이터 정렬은 행 집합](/previous-versions/windows/desktop/ms715783\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [데이터 정렬은 행 집합](/previous-versions/windows/desktop/ms715783\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1226,14 +1237,16 @@ Typedef 클래스를 호출 `CCollations` 해당 매개 변수 클래스를 구�
 |m_szPadAttribute|PAD_ATTRIBUTE|  
 
 ## <a name="columndomainusage"></a> CColumnDomainUsage, CColumnDomainUsageInfo
+
 Typedef 클래스를 호출 `CColumnDomainUsage` 해당 매개 변수 클래스를 구현 하려면 `CColumnDomainUsageInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스에는 열 카탈로그에 정의 된 카탈로그에 정의 된 지정된 된 사용자가 소유 하 고 도메인에 종속 된 식별 합니다.  
+이 클래스에는 열 카탈로그에 정의 된 카탈로그에 정의 된 지정된 된 사용자가 소유 하 고 도메인에 종속 된 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [COLUMN_DOMAIN_USAGE 행 집합](/previous-versions/windows/desktop/ms711240\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [COLUMN_DOMAIN_USAGE 행 집합](/previous-versions/windows/desktop/ms711240\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1248,14 +1261,16 @@ Typedef 클래스를 호출 `CColumnDomainUsage` 해당 매개 변수 클래스�
 |m_nColumnPropID|COLUMN_PROPID|  
 
 ## <a name="columnprivilege"></a> CColumnPrivileges, CColumnPrivilegeInfo
+
 Typedef 클래스를 호출 `CColumnPrivileges` 해당 매개 변수 클래스를 구현 하려면 `CColumnPrivilegeInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스에는 카탈로그에 정의 사용할 수 있거나 지정된 된 사용자가 승인한 수 있는 테이블의 열에 대 한 권한을 식별 합니다.  
+이 클래스에는 카탈로그에 정의 사용할 수 있거나 지정된 된 사용자가 승인한 수 있는 테이블의 열에 대 한 권한을 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [COLUMN_PRIVILEGES 행 집합](/previous-versions/windows/desktop/ms715800\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [COLUMN_PRIVILEGES 행 집합](/previous-versions/windows/desktop/ms715800\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1271,14 +1286,16 @@ Typedef 클래스를 호출 `CColumnPrivileges` 해당 매개 변수 클래스�
 |m_bIsGrantable|IS_GRANTABLE|  
 
 ## <a name="columns"></a> CColumns, CColumnsInfo
+
 Typedef 클래스를 호출 `CColumns` 해당 매개 변수 클래스를 구현 하려면 `CColumnsInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 지정된 된 사용자에 액세스할 수 있는 카탈로그에 정의 된 테이블의 열을 식별 합니다.  
+이 클래스는 지정된 된 사용자에 액세스할 수 있는 카탈로그에 정의 된 테이블의 열을 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [COLUMNS 행 집합](/previous-versions/windows/desktop/ms723052\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [COLUMNS 행 집합](/previous-versions/windows/desktop/ms723052\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1312,14 +1329,16 @@ Typedef 클래스를 호출 `CColumns` 해당 매개 변수 클래스를 구현 
 |m_szDescription|설명|  
   
 ## <a name="constraintcolumnusage"></a> CConstraintColumnUsage, CConstraintColumnUsageInfo
+
 Typedef 클래스를 호출 `CConstraintColumnUsage` 해당 매개 변수 클래스를 구현 하려면 `CConstraintColumnUsageInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 참조 제약 조건, unique 제약 조건, check 제약 조건 및 어설션을 사용 하 고 카탈로그에 정의 된 지정된 된 사용자가 소유 하 고 열을 식별 합니다.  
+이 클래스는 참조 제약 조건, unique 제약 조건, check 제약 조건 및 어설션을 사용 하 고 카탈로그에 정의 된 지정된 된 사용자가 소유 하 고 열을 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [CONSTRAINT_COLUMN_USAGE 행 집합](/previous-versions/windows/desktop/ms724522\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [CONSTRAINT_COLUMN_USAGE 행 집합](/previous-versions/windows/desktop/ms724522\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1334,14 +1353,16 @@ Typedef 클래스를 호출 `CConstraintColumnUsage` 해당 매개 변수 클래
 |m_szConstraintName|CONSTRAINT_NAME|  
 
 ## <a name="constrainttableusage"></a> CConstraintTableUsage, CConstraintTableUsageInfo
+
 Typedef 클래스를 호출 `CConstraintTableUsage` 해당 매개 변수 클래스를 구현 하려면 `CConstraintTableUsageInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 참조 제약 조건, unique 제약 조건, check 제약 조건 및 어설션을 사용 하 고 카탈로그에 정의 된 지정된 된 사용자가 소유 하 고 테이블을 식별 합니다.  
+이 클래스는 참조 제약 조건, unique 제약 조건, check 제약 조건 및 어설션을 사용 하 고 카탈로그에 정의 된 지정된 된 사용자가 소유 하 고 테이블을 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [CONSTRAINT_TABLE_USAGE 행 집합](/previous-versions/windows/desktop/ms724522\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [CONSTRAINT_TABLE_USAGE 행 집합](/previous-versions/windows/desktop/ms724522\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1353,14 +1374,16 @@ Typedef 클래스를 호출 `CConstraintTableUsage` 해당 매개 변수 클래�
 |m_szConstraintName|CONSTRAINT_NAME|  
 
 ## <a name="foreignkeys"></a> CForeignKeys, CForeignKeysInfo
+
 Typedef 클래스를 호출 `CForeignKeys` 해당 매개 변수 클래스를 구현 하려면 `CForeignKeysInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 지정된 된 사용자가 카탈로그에 정의 된 외래 키 열을 식별 합니다.  
+이 클래스는 지정된 된 사용자가 카탈로그에 정의 된 외래 키 열을 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [FOREIGN_KEYS 행 집합](/previous-versions/windows/desktop/ms711276\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [FOREIGN_KEYS 행 집합](/previous-versions/windows/desktop/ms711276\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1381,14 +1404,16 @@ Typedef 클래스를 호출 `CForeignKeys` 해당 매개 변수 클래스를 구
 |m_szDeleteRule|DELETE_RULE|  
 
 ## <a name="index"></a> CIndexes, CIndexInfo
+
 Typedef 클래스를 호출 `CIndexes` 해당 매개 변수 클래스를 구현 하려면 `CIndexInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 인덱스, 카탈로그에 정의 된 지정된 된 사용자가 소유한를 식별 합니다.  
+이 클래스는 인덱스, 카탈로그에 정의 된 지정된 된 사용자가 소유한를 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [INDEXES 행 집합](/previous-versions/windows/desktop/ms709712\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [INDEXES 행 집합](/previous-versions/windows/desktop/ms709712\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1418,14 +1443,16 @@ Typedef 클래스를 호출 `CIndexes` 해당 매개 변수 클래스를 구현 
 |m_szFilterCondition|FILTER_CONDITION|  
   
 ## <a name="keycolumn"></a> CKeyColumns, CKeyColumnInfo
+
 Typedef 클래스를 호출 `CKeyColumns` 해당 매개 변수 클래스를 구현 하려면 `CKeyColumnInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스에는 열 카탈로그에 정의 된 지정된 된 사용자가 키로 제한 되는 식별 합니다.  
+이 클래스에는 열 카탈로그에 정의 된 지정된 된 사용자가 키로 제한 되는 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [KEY_COLUMN_USAGE 행 집합](/previous-versions/windows/desktop/ms712990\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [KEY_COLUMN_USAGE 행 집합](/previous-versions/windows/desktop/ms712990\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1441,14 +1468,16 @@ Typedef 클래스를 호출 `CKeyColumns` 해당 매개 변수 클래스를 구�
 |m_nOrdinalPosition|ORDINAL_POSITION|  
 
 ## <a name="primarykey"></a> CPrimaryKeys, CPrimaryKeyInfo
+
 Typedef 클래스를 호출 `CPrimaryKeys` 해당 매개 변수 클래스를 구현 하려면 `CPrimaryKeyInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 지정된 된 사용자가 카탈로그에 정의 된 기본 키 열을 식별 합니다.  
+이 클래스는 지정된 된 사용자가 카탈로그에 정의 된 기본 키 열을 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [PRIMARY_KEYS 행 집합](/previous-versions/windows/desktop/ms714362\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [PRIMARY_KEYS 행 집합](/previous-versions/windows/desktop/ms714362\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1461,14 +1490,16 @@ Typedef 클래스를 호출 `CPrimaryKeys` 해당 매개 변수 클래스를 구
 |m_nOrdinal|서 수|  
 
 ## <a name="procedurecolumn"></a> CProcedureColumns, CProcedureColumnInfo
+
 Typedef 클래스를 호출 `CProcedureColumns` 해당 매개 변수 클래스를 구현 하려면 `CProcedureColumnInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 프로시저에서 반환 된 행 집합의 열에 대 한 정보를 반환 합니다.  
+이 클래스는 프로시저에서 반환 된 행 집합의 열에 대 한 정보를 반환 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [PROCEDURE_COLUMNS 행 집합](/previous-versions/windows/desktop/ms723092\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [PROCEDURE_COLUMNS 행 집합](/previous-versions/windows/desktop/ms723092\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1490,14 +1521,16 @@ Typedef 클래스를 호출 `CProcedureColumns` 해당 매개 변수 클래스�
 |m_szDescription|설명|  
 
 ## <a name="procedureparam"></a> CProcedureParameters CProcedureParamInfo
+
 Typedef 클래스를 호출 `CProcedureParameters` 해당 매개 변수 클래스를 구현 하려면 `CProcedureParamInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 매개 변수와 프로시저 반환 코드에 대 한 정보를 반환합니다.  
+이 클래스는 매개 변수와 프로시저 반환 코드에 대 한 정보를 반환합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [PROCEDURE_PARAMETERS 행 집합](/previous-versions/windows/desktop/ms713623\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [PROCEDURE_PARAMETERS 행 집합](/previous-versions/windows/desktop/ms713623\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1518,14 +1551,16 @@ Typedef 클래스를 호출 `CProcedureParameters` 해당 매개 변수 클래�
 |m_szDescription|설명|  
 
 ## <a name="procedure"></a> CProcedures, CProcedureInfo
+
 Typedef 클래스를 호출 `CProcedures` 해당 매개 변수 클래스를 구현 하려면 `CProcedureInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스에 정의 된 프로시저 카탈로그에 지정된 된 사용자가 소유한를 식별 합니다.  
+이 클래스에 정의 된 프로시저 카탈로그에 지정된 된 사용자가 소유한를 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [프로시저 행 집합](/previous-versions/windows/desktop/ms724021\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [프로시저 행 집합](/previous-versions/windows/desktop/ms724021\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1537,14 +1572,16 @@ Typedef 클래스를 호출 `CProcedures` 해당 매개 변수 클래스를 구�
 |m_szDescription|설명|  
 
 ## <a name="provider"></a> CProviderTypes, CProviderInfo
+
 Typedef 클래스를 호출 `CProviderTypes` 해당 매개 변수 클래스를 구현 하려면 `CProviderInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 데이터 공급자를 지 원하는 기본 데이터 유형을 식별 합니다.  
+이 클래스는 데이터 공급자를 지 원하는 기본 데이터 유형을 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [PROVIDER_TYPES 행 집합](/previous-versions/windows/desktop/ms709785\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [PROVIDER_TYPES 행 집합](/previous-versions/windows/desktop/ms709785\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1570,14 +1607,16 @@ Typedef 클래스를 호출 `CProviderTypes` 해당 매개 변수 클래스를 �
 |m_bBestMatch|BEST_MATCH|  
 
 ## <a name="referentialconstraint"></a> CReferentialConstraints, CReferentialConstraintInfo
+
 Typedef 클래스를 호출 `CReferentialConstraints` 해당 매개 변수 클래스를 구현 하려면 `CReferentialConstraintInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 참조 제약 조건, 카탈로그에 정의 된 지정된 된 사용자가 소유한를 식별 합니다.  
+이 클래스는 참조 제약 조건, 카탈로그에 정의 된 지정된 된 사용자가 소유한를 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [REFERENTIAL_CONSTRAINTS 행 집합](/previous-versions/windows/desktop/ms719737\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [REFERENTIAL_CONSTRAINTS 행 집합](/previous-versions/windows/desktop/ms719737\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1593,14 +1632,16 @@ Typedef 클래스를 호출 `CReferentialConstraints` 해당 매개 변수 클�
 |m_szDescription|설명|  
 
 ## <a name="schemata"></a> CSchemata, CSchemataInfo
+
 Typedef 클래스를 호출 `CSchemata` 해당 매개 변수 클래스를 구현 하려면 `CSchemataInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 지정된 된 사용자가 소유한 스키마를 식별 합니다.  
+이 클래스는 지정된 된 사용자가 소유한 스키마를 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [스키마 행 집합](/previous-versions/windows/desktop/ms716887\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [스키마 행 집합](/previous-versions/windows/desktop/ms716887\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1612,14 +1653,16 @@ Typedef 클래스를 호출 `CSchemata` 해당 매개 변수 클래스를 구현
 |m_szCharName|DEFAULT_CHARACTER_SET_NAME|  
 
 ## <a name="sqllanguage"></a> CSQLLanguages, CSQLLanguageInfo
+
 Typedef 클래스를 호출 `CSQLLanguages` 해당 매개 변수 클래스를 구현 하려면 `CSQLLanguageInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 적합성 수준, 옵션 및 카탈로그에 정의 된 SQL 구현 처리 데이터에서 지 원하는 언어를 식별 합니다.  
+이 클래스는 적합성 수준, 옵션 및 카탈로그에 정의 된 SQL 구현 처리 데이터에서 지 원하는 언어를 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [SQL_LANGUAGES 행 집합](/previous-versions/windows/desktop/ms714374\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [SQL_LANGUAGES 행 집합](/previous-versions/windows/desktop/ms714374\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1632,14 +1675,16 @@ Typedef 클래스를 호출 `CSQLLanguages` 해당 매개 변수 클래스를 �
 |m_szProgrammingLanguage|SQL_LANGUAGE_PROGRAMMING_LANGUAGE|  
 
 ## <a name="statistic"></a> CStatistics, CStatisticInfo
+
 Typedef 클래스를 호출 `CStatistics` 해당 매개 변수 클래스를 구현 하려면 `CStatisticInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스에는 통계 카탈로그에 정의 된 지정된 된 사용자가 소유한 식별 합니다.  
+이 클래스에는 통계 카탈로그에 정의 된 지정된 된 사용자가 소유한 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [통계 행 집합](/previous-versions/windows/desktop/ms715957\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [통계 행 집합](/previous-versions/windows/desktop/ms715957\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1649,14 +1694,16 @@ Typedef 클래스를 호출 `CStatistics` 해당 매개 변수 클래스를 구�
 |m_nCardinality|CARDINALITY|  
 
 ## <a name="tableconstraint"></a> CTableConstraints, CTableConstraintInfo
+
 Typedef 클래스를 호출 `CTableConstraints` 해당 매개 변수 클래스를 구현 하려면 `CTableConstraintInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 테이블 제약 조건 카탈로그에 정의 된 지정된 된 사용자가 소유한를 식별 합니다.  
+이 클래스는 테이블 제약 조건 카탈로그에 정의 된 지정된 된 사용자가 소유한를 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [TABLE_CONSTRAINTS 행 집합](/previous-versions/windows/desktop/ms715921\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [TABLE_CONSTRAINTS 행 집합](/previous-versions/windows/desktop/ms715921\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1672,14 +1719,16 @@ Typedef 클래스를 호출 `CTableConstraints` 해당 매개 변수 클래스�
 |m_szDescription|설명|  
 
 ## <a name="tableprivilege"></a> CTablePrivileges, CTablePrivilegeInfo
+
 Typedef 클래스를 호출 `CTablePrivileges` 해당 매개 변수 클래스를 구현 하려면 `CTablePrivilegeInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 지정된 된 사용자에 액세스할 수 있는 카탈로그에 정의 된 테이블을 식별 합니다.  
+이 클래스는 지정된 된 사용자에 액세스할 수 있는 카탈로그에 정의 된 테이블을 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [TABLE_PRIVILEGES 행 집합](/previous-versions/windows/desktop/ms725428\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [TABLE_PRIVILEGES 행 집합](/previous-versions/windows/desktop/ms725428\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1692,14 +1741,16 @@ Typedef 클래스를 호출 `CTablePrivileges` 해당 매개 변수 클래스를
 |m_bIsGrantable|IS_GRANTABLE|  
 
 ## <a name="table"></a> CTables, CTableInfo
+
 Typedef 클래스를 호출 `CTables` 해당 매개 변수 클래스를 구현 하려면 `CTableInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스에는 카탈로그에 정의 된을 사용할 수 있거나 지정된 된 사용자가 부여 하는 테이블에 대 한 권한을 식별 합니다.  
+이 클래스에는 카탈로그에 정의 된을 사용할 수 있거나 지정된 된 사용자가 부여 하는 테이블에 대 한 권한을 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [TABLES 행 집합](/previous-versions/windows/desktop/ms716980\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [TABLES 행 집합](/previous-versions/windows/desktop/ms716980\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1711,14 +1762,16 @@ Typedef 클래스를 호출 `CTables` 해당 매개 변수 클래스를 구현 �
 |m_szDescription|설명|  
 
 ## <a name="translation"></a> CTranslations, CTranslationInfo
+
 Typedef 클래스를 호출 `CTranslations` 해당 매개 변수 클래스를 구현 하려면 `CTranslationInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스는 지정된 된 사용자에 액세스할 수 있는 카탈로그에 정의 된 문자 변환을 식별 합니다.  
+이 클래스는 지정된 된 사용자에 액세스할 수 있는 카탈로그에 정의 된 문자 변환을 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [번역 행 집합](/previous-versions/windows/desktop/ms725365\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [번역 행 집합](/previous-versions/windows/desktop/ms725365\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1733,14 +1786,16 @@ Typedef 클래스를 호출 `CTranslations` 해당 매개 변수 클래스를 �
 |m_szTargetName|TARGET_CHARACTER_SET_NAME|  
 
 ## <a name="usageprivilege"></a> CUsagePrivileges, CUsagePrivilegeInfo
+
 Typedef 클래스를 호출 `CUsagePrivileges` 해당 매개 변수 클래스를 구현 하려면 `CUsagePrivilegeInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스를 사용할 수 있거나 지정된 된 사용자가 부여 하는 카탈로그에 정의 된 개체에 대 한 사용 권한을 식별 합니다.  
+이 클래스를 사용할 수 있거나 지정된 된 사용자가 부여 하는 카탈로그에 정의 된 개체에 대 한 사용 권한을 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [USAGE_PRIVILEGES 행 집합](/previous-versions/windows/desktop/ms722743\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [USAGE_PRIVILEGES 행 집합](/previous-versions/windows/desktop/ms722743\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1754,14 +1809,16 @@ Typedef 클래스를 호출 `CUsagePrivileges` 해당 매개 변수 클래스를
 |m_bIsGrantable|IS_GRANTABLE|  
 
 ## <a name="viewcolumn"></a> CViewColumnUsage, CViewColumnInfo
+
 Typedef 클래스를 호출 `CViewColumnUsage` 해당 매개 변수 클래스를 구현 하려면 `CViewColumnInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스 열을 식별에 카탈로그에 정의 된 테이블을 보고 지정된 된 사용자가 소유한 다릅니다.  
+이 클래스 열을 식별에 카탈로그에 정의 된 테이블을 보고 지정된 된 사용자가 소유한 다릅니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [VIEW_COLUMN_USAGE 행 집합](/previous-versions/windows/desktop/ms714896\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [VIEW_COLUMN_USAGE 행 집합](/previous-versions/windows/desktop/ms714896\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1776,14 +1833,16 @@ Typedef 클래스를 호출 `CViewColumnUsage` 해당 매개 변수 클래스를
 |m_nColumnPropID|COLUMN_PROPID|  
 
 ## <a name="view"></a> CViews, CViewInfo
+
 Typedef 클래스를 호출 `CViews` 해당 매개 변수 클래스를 구현 하려면 `CViewInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스 테이블을 식별에 카탈로그에 정의 된 테이블을 보고 지정된 된 사용자가 소유한 다릅니다.  
+이 클래스 테이블을 식별에 카탈로그에 정의 된 테이블을 보고 지정된 된 사용자가 소유한 다릅니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [뷰 행 집합](/previous-versions/windows/desktop/ms723122\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [뷰 행 집합](/previous-versions/windows/desktop/ms723122\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1796,14 +1855,16 @@ Typedef 클래스를 호출 `CViews` 해당 매개 변수 클래스를 구현 �
 |m_szDescription|설명|  
 
 ## <a name="viewtable"></a> CViewTableUsage, CViewTableInfo
+
 Typedef 클래스를 호출 `CViewTableUsage` 해당 매개 변수 클래스를 구현 하려면 `CViewTableInfo`합니다.  
   
 ### <a name="remarks"></a>설명  
- 참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
+
+참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef 클래스를 사용 하 여 대 한 자세한 내용은 합니다.  
   
- 이 클래스에는 표시, 정의 된 테이블은 카탈로그에 지정된 된 사용자에 액세스할 수 있는 식별 합니다.  
+이 클래스에는 표시, 정의 된 테이블은 카탈로그에 지정된 된 사용자에 액세스할 수 있는 식별 합니다.  
   
- 다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [VIEW_TABLE_USAGE 행 집합](/previous-versions/windows/desktop/ms719727\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [VIEW_TABLE_USAGE 행 집합](/previous-versions/windows/desktop/ms719727\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.  
   
 |데이터 멤버|OLE DB 열|  
 |------------------|--------------------|  
@@ -1815,7 +1876,9 @@ Typedef 클래스를 호출 `CViewTableUsage` 해당 매개 변수 클래스를 
 |m_szTableName|TABLE_NAME|  
 
 ## <a name="requirements"></a>요구 사항  
- **헤더:** atldbsch.h  
+
+**헤더:** atldbsch.h  
   
 ## <a name="see-also"></a>참고 항목  
- [CRestrictions 클래스](../../data/oledb/crestrictions-class.md)
+
+[CRestrictions 클래스](../../data/oledb/crestrictions-class.md)

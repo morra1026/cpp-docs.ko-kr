@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f99681ff7219c46820da4c909a6f4eddccdabf6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 50103f7445096e553a510da6272dd4be1886b710
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320884"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017939"
 ---
 # <a name="nmake-fatal-error-u1055"></a>NMAKE 심각한 오류 U1055
-환경 공간이 부족 합니다.  
-  
- 운영 체제 환경 변수를 위한 공간이 부족합니다.  
-  
- 환경 공간이 증가 하거나 더 적은 수의 환경 변수를 설정 합니다.
+
+환경 공간이 부족 합니다.
+
+운영 체제 환경 변수에 대 한 공간이 부족합니다.
+
+환경 공간 늘리기 또는 더 적은 수의 환경 변수를 설정 합니다.

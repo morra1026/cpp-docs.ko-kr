@@ -16,30 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e1f7010ca6d98c4c27f85ecc858cf7703a87e90
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 94210350e0483b46eb86579b837501a5291bda4d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247102"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037257"
 ---
 # <a name="compiler-error-c2861"></a>컴파일러 오류 C2861
-'함수 name': 인터페이스 멤버 함수를 정의할 수 없습니다  
-  
- 컴파일러 인터페이스 키워드 발생 또는 인터페이스 구조체 추론 되었으나 멤버를 찾을 수 함수 정의 합니다.  인터페이스는 멤버 함수에 대 한 정의 포함할 수 없습니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C2861 오류가 생성 됩니다.  
-  
-```  
-// C2861.cpp  
-// compile with: /c  
-#include <objbase.h>   // required for IUnknown definition  
-[ object, uuid("00000000-0000-0000-0000-000000000001") ]  
-__interface IMyInterface : IUnknown {  
-   HRESULT mf(int a);  
-};  
-  
-HRESULT IMyInterface::mf(int a) {}   // C2861  
-  
+
+'함수 name': 인터페이스 멤버 함수를 정의할 수 없습니다
+
+컴파일러 인터페이스 키워드 발생 또는 인터페이스 구조체를 추론 하는데 다음 멤버 함수 정의 합니다.  인터페이스 멤버 함수에 대 한 정의 포함할 수 없습니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C2861 오류가 생성 됩니다.
+
+```
+// C2861.cpp
+// compile with: /c
+#include <objbase.h>   // required for IUnknown definition
+[ object, uuid("00000000-0000-0000-0000-000000000001") ]
+__interface IMyInterface : IUnknown {
+   HRESULT mf(int a);
+};
+
+HRESULT IMyInterface::mf(int a) {}   // C2861
+
 ```

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c63b354bfbdd3dbdfc7704effcbe6c0495cede27
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0bec5ed46b054002d1ae95e5e3f0b9b1c8ee4984
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33323289"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016158"
 ---
 # <a name="nmake-fatal-error-u1071"></a>NMAKE 심각한 오류 U1071
-'targetname' 대상에 대 한 종속 트리에서 순환  
-  
- 지정한 대상에 대 한 종속성 트리에서 순환 종속성이 있습니다. 지정한 대상은 지정된 된 대상의 종속 파일 중 하나에 의존 합니다. 순환 종속성이 유효 하지 않습니다.
+
+'targetname' 대상에 대 한 종속 트리에서 순환
+
+지정된 된 대상 위한 종속 트리에서 순환 종속성이 있습니다. 지정 된 대상이 지정된 된 대상의 종속 파일 중 하나에 의존 합니다. 순환 종속성이 유효 하지 않습니다.

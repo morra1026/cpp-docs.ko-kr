@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d30778524f692e19ffad205dc693dd5afd294c25
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 6fb3febbbaffc7c3a0de945fc9d30b544fd22188
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757990"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023308"
 ---
 # <a name="server-registration-global-functions"></a>서버 등록 전역 함수
 
@@ -57,13 +57,13 @@ ATLINLINE ATLAPI AtlComModuleRegisterServer(
 
 ### <a name="parameters"></a>매개 변수
 
-*pComModule*  
+*pComModule*<br/>
 COM 모듈에 대 한 포인터입니다.
 
-*bRegTypeLib*  
+*bRegTypeLib*<br/>
 TRUE 이면 형식 라이브러리 등록 됩니다.
 
-*하면*  
+*하면*<br/>
 등록할 개체의 CLSID 가리킵니다. NULL 인 경우 개체 맵의 모든 개체 등록 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -89,13 +89,13 @@ ATLINLINE ATLAPI AtlComModuleUnregisterServer(
 
 ### <a name="parameters"></a>매개 변수
 
-*pComModule*  
+*pComModule*<br/>
 COM 모듈에 대 한 포인터입니다.
 
-*bUnRegTypeLib*  
+*bUnRegTypeLib*<br/>
 TRUE 이면 형식 라이브러리 등록 됩니다.
 
-*하면*  
+*하면*<br/>
 등록을 취소할 개체의 CLSID 가리킵니다. Null 인 경우 개체 맵의 모든 개체를 등록 취소할 수 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -121,13 +121,13 @@ ATLINLINE ATLAPI AtlComModuleRegisterClassObjects(
 
 ### <a name="parameters"></a>매개 변수
 
-*pComModule*  
+*pComModule*<br/>
 COM 모듈에 대 한 포인터입니다.
 
-*dwClsContext*  
+*dwClsContext*<br/>
 클래스 개체를 실행할의 컨텍스트를 지정 합니다. 가능한 값은 CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER, 또는 CLSCTX_LOCAL_SERVER입니다. 참조 [CLSCTX](https://msdn.microsoft.com/library/windows/desktop/ms693716) 대 한 자세한 내용은 합니다.
 
-*dwFlags*  
+*dwFlags*<br/>
 클래스 개체에 연결 형식을 결정합니다. 가능한 값은 REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE, 또는 REGCLS_MULTI_SEPARATE입니다. 참조 [REGCLS](/windows/desktop/api/combaseapi/ne-combaseapi-tagregcls) 대 한 자세한 내용은 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -148,7 +148,7 @@ ATLINLINE ATLAPI AtlComModuleRevokeClassObjects(_ATL_COM_MODULE* pComModule);
 
 ### <a name="parameters"></a>매개 변수
 
-*pComModule*  
+*pComModule*<br/>
 COM 모듈에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -173,16 +173,16 @@ ATLINLINE ATLAPI AtlComModuleGetClassObject(
 
 ### <a name="parameters"></a>매개 변수
 
-*pComModule*  
+*pComModule*<br/>
 COM 모듈에 대 한 포인터입니다.
 
-*rclsid*  
+*rclsid*<br/>
 만들 개체의 CLSID입니다.
 
-*riid*  
+*riid*<br/>
 요청된 된 인터페이스의 IID입니다.
 
-*ppv*  
+*ppv*<br/>
 로 식별 되는 인터페이스 포인터에 대 한 포인터 *riid*합니다. 개체는이 인터페이스를 지원 하지 않는 경우 *ppv* NULL로 설정 됩니다.
 
 ### <a name="return-value"></a>반환 값

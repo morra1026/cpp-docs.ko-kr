@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 06d63ef93c4924e0ee5e8808c5783ee5a0fb7f79
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ac401381dffab11ddb59eb05a5cafe13373d7791
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247992"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026454"
 ---
 # <a name="compiler-error-c3139"></a>컴파일러 오류 C3139
-'struct': 멤버 없이 UDT를 내보낼 수 없습니다.  
-  
- 적용 하려고는 [내보내기](../../windows/export.md) 특성을 빈 UDT (사용자 정의 형식). 예를 들어:  
-  
-```  
-// C3139.cpp  
-#include "unknwn.h"  
-[emitidl];  
-[module(name=xx)];  
-  
-[export] struct MyStruct {   // C3139 empty type  
-};  
-int main(){}  
+
+'struct': 멤버 없이 UDT를 내보낼 수 없습니다.
+
+적용 하려고 합니다 [내보내기](../../windows/export.md) 특성을 빈 UDT (사용자 정의 형식)을 합니다. 예를 들어:
+
+```
+// C3139.cpp
+#include "unknwn.h"
+[emitidl];
+[module(name=xx)];
+
+[export] struct MyStruct {   // C3139 empty type
+};
+int main(){}
 ```

@@ -1,5 +1,5 @@
 ---
-title: 동시성 네임 스페이스 연산자 (AMP) | Microsoft Docs
+title: Concurrency 네임 스페이스 연산자 (AMP) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,14 +10,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d3bb77599fc81fa29f2c8155a6fd491ed2d639c
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: d6e8d2a198105e9cd63581dd8ed8445b681da2e0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33686710"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026935"
 ---
-# <a name="concurrency-namespace-operators-amp"></a>동시성 네임 스페이스 연산자 (AMP)
+# <a name="concurrency-namespace-operators-amp"></a>Concurrency 네임 스페이스 연산자 (AMP)
 ||||  
 |-|-|-|  
 |[operator!=](#operator_neq)|[operator%](#operator_mod)|[operator*](#operator_star)|  
@@ -25,7 +25,7 @@ ms.locfileid: "33686710"
 |[operator==](#operator_eq_eq)|  
   
 ##  <a name="operator_eq_eq"></a>  operator==   
- 지정된 된 인수 같은지 여부를 결정 합니다.  
+ 지정 된 인수를 같은지 여부를 결정 합니다.  
   
 ```  
 template <
@@ -38,20 +38,20 @@ bool operator== (
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Rank`  
- 튜플 인수의 순위를 지정 합니다.  
+*_Rank*<br/>
+튜플 인수의 순위입니다.  
   
- `_Lhs`  
- 비교할 튜플 중 하나입니다.  
+*_Lhs*<br/>
+비교할 튜플 중 하나입니다.  
   
- `_Rhs`  
- 비교할 튜플 중 하나입니다.  
+*_Rhs*<br/>
+비교할 튜플 중 하나입니다.  
   
 ### <a name="return-value"></a>반환 값  
- `true` 튜플을 동일 하면 그렇지 않으면 `false`합니다.  
+ `true` 튜플을 같으면 그렇지 않으면 `false`합니다.  
   
 ##  <a name="operator_neq"></a>  operator!=   
- 지정된 된 인수가 같은지 여부를 결정 합니다.  
+ 지정 된 인수를가 같은지 여부를 결정 합니다.  
   
 ```  
 template <
@@ -64,21 +64,21 @@ bool operator!= (
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Rank`  
- 튜플 인수의 순위를 지정 합니다.  
+*_Rank*<br/>
+튜플 인수의 순위입니다.  
   
- `_Lhs`  
- 비교할 튜플 중 하나입니다.  
+*_Lhs*<br/>
+비교할 튜플 중 하나입니다.  
   
- `_Rhs`  
- 비교할 튜플 중 하나입니다.  
+*_Rhs*<br/>
+비교할 튜플 중 하나입니다.  
   
 ### <a name="return-value"></a>반환 값  
- `true` 튜플을 같지 않으면 하는 경우 그렇지 않으면 `false`합니다.  
+ `true` 튜플이 서로 다르면; 그렇지 않으면 `false`합니다.  
   
 ##  <a name="operator_add"></a>  operator+   
 
- 지정된 된 인수의 component-wise 합을 계산 합니다.  
+ 지정한 인수의 구성 요소별 합을 계산합니다.  
   
 ```  
 template <
@@ -109,21 +109,21 @@ class _Tuple_type> _Tuple_type<_Rank>   operator+(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Rank`  
- 튜플 인수의 순위를 지정 합니다.  
+*_Rank*<br/>
+튜플 인수의 순위입니다.  
   
- `_Lhs`  
- 추가할 인수 중 하나입니다.  
+*_Lhs*<br/>
+추가할 인수 중 하나입니다.  
   
- `_Rhs`  
- 추가할 인수 중 하나입니다.  
+*_Rhs*<br/>
+추가할 인수 중 하나입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 지정된 된 인수의 component-wise 합입니다.  
+ 지정한 인수의 구성 요소별 합입니다.  
   
 ##  <a name="operator-"></a>  operator-   
 
- 지정된 된 인수 사이의 component-wise 차이 계산 합니다.  
+ 지정된 된 인수 사이의 구성 요소별 차이 계산합니다.  
   
 ```  
 template <
@@ -154,21 +154,21 @@ _Tuple_type<_Rank>   operator-(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Rank`  
- 튜플 인수의 순위를 지정 합니다.  
+*_Rank*<br/>
+튜플 인수의 순위입니다.  
   
- `_Lhs`  
- 인수에서 뺄입니다.  
+*_Lhs*<br/>
+뺄 인수입니다.  
   
- `_Rhs`  
- 뺄 인수입니다.  
+*_Rhs*<br/>
+뺄 인수입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 지정된 된 인수 component-wise 차이입니다.  
+ 지정된 된 인수 사이의 구성 요소별 차이입니다.  
   
 ##  <a name="operator_star"></a>  operator*   
 
- 지정된 된 인수의 component-wise 곱을 계산 합니다.  
+ 지정한 인수의 구성 요소별 곱을 계산합니다.  
   
 ```  
 template <
@@ -190,21 +190,21 @@ _Tuple_type<_Rank>   operator*(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Rank`  
- 튜플 인수의 순위를 지정 합니다.  
+*_Rank*<br/>
+튜플 인수의 순위입니다.  
   
- `_Lhs`  
- 곱할 튜플 중 하나입니다.  
+*_Lhs*<br/>
+곱할 튜플 중 하나입니다.  
   
- `_Rhs`  
- 곱할 튜플 중 하나입니다.  
+*_Rhs*<br/>
+곱할 튜플 중 하나입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 지정된 된 인수의 component-wise 곱입니다.  
+ 지정한 인수의 구성 요소별 곱입니다.  
   
 
 ##  <a name="operator_div"></a>  operator/   
- 지정된 된 인수 component-wise 몫을 계산합니다.  
+ 지정한 인수의 구성 요소별 몫을 계산합니다.  
   
 ```  
 template <
@@ -226,21 +226,21 @@ _Tuple_type<_Rank>   operator/(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Rank`  
- 튜플 인수의 순위를 지정 합니다.  
+*_Rank*<br/>
+튜플 인수의 순위입니다.  
   
- `_Lhs`  
- 나눌 튜플입니다.  
+*_Lhs*<br/>
+나누기 작업의 대상 튜플입니다.  
   
- `_Rhs`  
- 으로 나누려고 튜플입니다.  
+*_Rhs*<br/>
+나눌에 사용할 튜플입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 지정된 된 인수의 component-wise 몫입니다.  
+ 지정한 인수의 구성 요소별 몫입니다.  
   
 ##  <a name="operator_mod"></a>  operator%   
 
- 지정 된 두 번째 인수에 의해 지정 된 첫 번째 인수 모듈러스를 계산합니다.  
+ 지정 된 두 번째 인수에 의해 지정 된 첫 번째 인수의 모듈러스를 계산 합니다.  
   
 ```  
 template <
@@ -262,17 +262,17 @@ _Tuple_type<_Rank>   operator%(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Rank`  
- 튜플 인수의 순위를 지정 합니다.  
+*_Rank*<br/>
+튜플 인수의 순위입니다.  
   
- `_Lhs`  
- 튜플에 있는 모듈로 계산 됩니다.  
+*_Lhs*<br/>
+튜플의 나머지를 계산 합니다.  
   
- `_Rhs`  
- 튜플의를 모듈로 여 합니다.  
+*_Rhs*<br/>
+에 사용할 튜플 모듈로.  
   
 ### <a name="return-value"></a>반환 값  
- 결과 첫 번째 지정 된 인수 모듈러스 두 번째는 지정 된 인수입니다.  
+ 결과 첫 번째 지정 된 인수 모듈러스는 두 번째 지정 된 인수입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Namespace 동시성 ](concurrency-namespace-cpp-amp.md)

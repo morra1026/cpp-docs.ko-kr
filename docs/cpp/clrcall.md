@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27564ce9c3cf795d7999745e82c733092bccd719
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 9631ac9beb0e6263ac1cf7e60e11e498aa4c7667
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39401859"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019759"
 ---
 # <a name="clrcall"></a>__clrcall
 
@@ -43,7 +43,7 @@ ms.locfileid: "39401859"
 
 **__clrcall** 함수 포인터는 생성 된 응용 프로그램 도메인으로 사용 하려는 합니다.  전달 하는 대신 **__clrcall** 응용 프로그램 도메인 간에 대 한 포인터를 함수를 사용 하 여 <xref:System.CrossAppDomainDelegate>입니다. 자세한 내용은 [응용 프로그램 도메인 및 Visual c + +](../dotnet/application-domains-and-visual-cpp.md)합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 함수를 사용 하 여 선언 되 면 사용자에 게 유의 **__clrcall**, 필요할 때 코드를 생성할; 함수가 호출 될 때 예를 들어 있습니다.
 
@@ -82,7 +82,7 @@ in Func1
 in Func1
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 샘플에서는 함수 포인터를 정의하고 관리 코드에서만 함수 포인터를 호출할 수 있도록 선언합니다. 여기서는 컴파일러가 관리되는 함수를 직접 호출하고 네이티브 진입점(이중 썽크 문제)을 방지할 수 있습니다.
 
@@ -103,5 +103,6 @@ int main() {
 ```
 
 ## <a name="see-also"></a>참고자료
- [인수 전달 및 명명 규칙](../cpp/argument-passing-and-naming-conventions.md)  
- [키워드](../cpp/keywords-cpp.md)
+
+[인수 전달 및 명명 규칙](../cpp/argument-passing-and-naming-conventions.md)<br/>
+[키워드](../cpp/keywords-cpp.md)

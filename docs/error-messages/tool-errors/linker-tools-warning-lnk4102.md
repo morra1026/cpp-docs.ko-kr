@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16d13dcbc6d15efd7cf3a7ea0a310de4ab7b0c93
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9daaffc4ddfa9a869c2e60e2c05dc2b7e296d94b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302648"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031865"
 ---
 # <a name="linker-tools-warning-lnk4102"></a>링커 도구 경고 LNK4102
-내보내기 삭제 중인 소멸자 'name'; 이미지가 올바르게 실행 되지 않을 수 있습니다.  
-  
- 프로그램 삭제 중인 소멸자를 내보내려고 했습니다. 프로세스에서 소유 하지 않은 메모리를 비울 수 되도록 DLL 경계를 넘어 삭제가 발생할 수 있습니다. .Def 파일에 지정 된 기호 되지 나열 되어 있는지 확인 기호 인수로 표시 되지 않는 **가져오기/** 또는 **/내보내기** 링커 명령줄에서 옵션입니다.  
-  
- C 런타임 라이브러리를 다시 작성 하는 경우이 메시지를 무시할 수 있습니다.
+
+내보내기 삭제 중인 소멸자 'name'; 이미지가 올바르게 실행 되지 않을 수 있습니다.
+
+프로그램 삭제 소멸자 내보내기 하려고 했습니다. 결과 삭제 프로세스를 소유 하지 않은 메모리를 확보할 수 있도록 DLL 경계를 넘어 발생할 수 있습니다. 지정 된 기호는.def 파일에 없는 기호의 인수로 나타나지는 있는지 확인 합니다 **가져오기/** 또는 **/내보내기** 링커 명령줄에 옵션입니다.
+
+C 런타임 라이브러리를 다시 작성 하는 경우에이 메시지를 무시할 수 있습니다.

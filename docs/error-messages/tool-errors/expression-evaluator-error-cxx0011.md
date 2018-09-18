@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9840b805960f3ebb571dd9cb6a35895364099d3b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d6a9409728f5dbcbb003ecb8d2d9e4f98bc57ede
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294874"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026844"
 ---
 # <a name="expression-evaluator-error-cxx0011"></a>식 계산기 오류 CXX0011
-누락 된 오른쪽 대괄호  
-  
- 식 불균형된 대괄호에 포함 되어 있습니다. 대괄호의 짝된을 사용 하 여 식을 다시 입력 합니다.  
-  
- 이 오류는 CAN0011 합니다.
+
+누락 된 오른쪽 대괄호
+
+식 불균형된 대괄호를 포함합니다. 균형 있는 대괄호를 사용 하 여 식을 다시 입력 하십시오.
+
+이 오류는 CAN0011 동일 합니다.

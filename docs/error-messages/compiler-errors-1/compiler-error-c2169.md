@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bd0666f264d204c75fd74edbdffce17ecf2529a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e352d32193e6de287c845a451407927c29123fc2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33166321"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030601"
 ---
 # <a name="compiler-error-c2169"></a>컴파일러 오류 C2169
-'function': 내장 함수를 정의할 수 없습니다.  
-  
- 이미 선언 된 함수에 대 한 표시 되는 함수 정의가 `intrinsic`합니다.
+
+'function': 내장 함수를 정의할 수 없습니다
+
+이미 선언 된 함수에 대해 표시 되는 함수 정의 `intrinsic`합니다.

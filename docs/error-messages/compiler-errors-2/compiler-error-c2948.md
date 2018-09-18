@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8ee324ebbdbc1d9dc19c6a1323f2f47c370f08b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 052bfdb49e965b0d42a8af2c7cf2e57ee1af6f6c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243527"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020864"
 ---
 # <a name="compiler-error-c2948"></a>컴파일러 오류 C2948
-명시적 인스턴스화. 저장소 클래스 지정자 'specifier' 특수화에 사용할 수 없습니다  
-  
- 저장소 클래스 지정자를 사용할 수 없습니다 (예: `extern`) 이전에 명시적으로 인스턴스화한 하는 템플릿 클래스의 특수화에 있습니다.
+
+명시적 인스턴스화입니다. 저장소 클래스 지정자 'specifier' 특수화에서 허용 되지 않습니다
+
+저장소 클래스 지정자를 사용할 수 없습니다 (같은 `extern`)에서 이전에 명시적으로 인스턴스화된 하는 템플릿 클래스의 특수화입니다.

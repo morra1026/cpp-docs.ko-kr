@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6cb05f61d3cd90177fe5e44ce432430ba8f74dd5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: af215609ac9579a357539a0d2d0a85c78f6dbc13
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754815"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017965"
 ---
 # <a name="cdynamicchain-class"></a>CDynamicChain 클래스
 
@@ -104,22 +104,22 @@ BOOL CallChain(
 
 ### <a name="parameters"></a>매개 변수
 
-*dwChainID*  
+*dwChainID*<br/>
 [in] 연결 된 개체 및 자신의 메시지 맵을 사용 하 여 연결 된 고유 식별자입니다.
 
-*hWnd*  
+*hWnd*<br/>
 [in] 메시지를 받는 창에 대 한 핸들입니다.
 
-*uMsg*  
+*uMsg*<br/>
 [in] 창으로 전송 하는 메시지입니다.
 
-*wParam*  
+*wParam*<br/>
 [in] 추가 메시지 관련 정보입니다.
 
-*lParam*  
+*lParam*<br/>
 [in] 추가 메시지 관련 정보입니다.
 
-*lResult*  
+*lResult*<br/>
 [out] 메시지 처리의 결과입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -162,7 +162,7 @@ BOOL RemoveChainEntry(DWORD dwChainID);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwChainID*  
+*dwChainID*<br/>
 [in] 연결 된 개체 및 자신의 메시지 맵을 사용 하 여 연결 된 고유 식별자입니다. 호출 하 여이 값을 원래 정의한 [SetChainEntry](#setchainentry)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -182,13 +182,13 @@ BOOL SetChainEntry(
 
 ### <a name="parameters"></a>매개 변수
 
-*dwChainID*  
+*dwChainID*<br/>
 [in] 연결 된 개체 및 자신의 메시지 맵을 사용 하 여 연결 된 고유 식별자입니다.
 
-*pObject*  
+*pObject*<br/>
 [in] 메시지 맵에서 선언 하는 연결 된 개체에 대 한 포인터입니다. 이 개체에서 파생 되어야 합니다 [CMessageMap](../../atl/reference/cmessagemap-class.md)합니다.
 
-*dwMsgMapID*  
+*dwMsgMapID*<br/>
 [in] 메시지 맵에서 연결 된 개체에서의 식별자입니다. 기본값은 0으로, 사용 하 여 선언 된 기본 메시지 맵에서 식별 [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)합니다. 대체 메시지 맵을 지정을 사용 하 여 선언 [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), 전달 `msgMapID`합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -201,5 +201,5 @@ BOOL SetChainEntry(
 
 ## <a name="see-also"></a>참고 항목
 
-[CWindowImpl 클래스](../../atl/reference/cwindowimpl-class.md)   
+[CWindowImpl 클래스](../../atl/reference/cwindowimpl-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

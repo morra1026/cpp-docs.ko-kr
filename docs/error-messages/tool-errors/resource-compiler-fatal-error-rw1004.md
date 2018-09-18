@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8a4b5f25678f3bb3fa961ffe794cdb0cf57977c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 73f97c1ecf95adfe64cfa08967f4067f42fbae59
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33329725"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016237"
 ---
 # <a name="resource-compiler-fatal-error-rw1004"></a>리소스 컴파일러 심각한 오류 RW1004
-예기치 않은 파일의 끝  
-  
- 이 오류는 줄 바꿈 및 텍스트 파일의 마지막 줄에서 캐리지 리턴 문자가 없는 경우에 발생할 수 있습니다.
+
+예기치 않은 파일의 끝
+
+이 오류는 줄 바꿈 및 텍스트 파일의 마지막 줄에서 캐리지 리턴 문자가 없는 경우에 발생할 수 있습니다.

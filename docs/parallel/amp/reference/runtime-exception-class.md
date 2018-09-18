@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff10cb3958ffa82e3ef2bb70d8370d1a52c4a929
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 8f0cd5e025e8f8b442c47cb5e115766478ff1d4f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695748"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019907"
 ---
 # <a name="runtimeexception-class"></a>runtime_exception 클래스
 C++ AMP(C++ Accelerated Massive Parallelism) 라이브러리의 예외에 대한 기본 형식입니다.  
@@ -42,20 +42,20 @@ class runtime_exception : public std::exception;
 |이름|설명|  
 |----------|-----------------|  
 |[runtime_exception 생성자](#ctor)|`runtime_exception` 클래스의 새 인스턴스를 초기화합니다.|  
-|[~ runtime_exception 소멸자](#dtor)|소멸 된 `runtime_exception` 개체입니다.|  
+|[~ runtime_exception 소멸자](#dtor)|제거 된 `runtime_exception` 개체입니다.|  
   
 ### <a name="public-methods"></a>Public 메서드  
   
 |이름|설명|  
 |----------|-----------------|  
-|[get_error_code](#runtime_exception__get_error_code)|예외를 발생 시킨 오류 코드가 반환 됩니다.|  
+|[get_error_code](#runtime_exception__get_error_code)|예외를 발생 시킨 오류 코드를 반환 합니다.|  
 
   
 ### <a name="public-operators"></a>Public 연산자  
   
 |이름|설명|  
 |----------|-----------------|  
-|[operator=](#operator_eq)|지정 된의 내용을 복사 `runtime_exception` 을 여기에 개체입니다.|  
+|[operator=](#operator_eq)|지정 된 내용을 복사 `runtime_exception` 을 여기에 개체입니다.|  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  `exception`  
@@ -85,14 +85,14 @@ runtime_exception(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Message`  
- 예외를 발생 시킨 오류에 대 한 설명  
+*메시지 (_m)*<br/>
+예외를 발생 시킨 오류의 설명입니다.  
   
- `_Hresult`  
- 예외를 발생 시킨 오류의 HRESULT입니다.  
+*_Hresult*<br/>
+예외를 발생 시킨 오류의 HRESULT입니다.  
   
- `_Other`  
- `runtime_exception` 복사할 개체입니다.  
+*_Other*<br/>
+`runtime_exception` 복사할 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `runtime_exception` 개체  
@@ -107,7 +107,7 @@ virtual ~runtime_exception() throw();
 ```  
   
 ## <a name="runtime_exception__get_error_code"></a>  get_error_code   
-예외를 발생 시킨 오류 코드가 반환 됩니다.  
+예외를 발생 시킨 오류 코드를 반환 합니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -119,7 +119,7 @@ HRESULT get_error_code() const throw();
  예외를 발생 시킨 오류의 HRESULT입니다.  
   
 ## <a name="runtime_exception__operator_eq"></a>  operator=   
-  지정 된의 내용을 복사 `runtime_exception` 을 여기에 개체입니다.  
+  지정 된 내용을 복사 `runtime_exception` 을 여기에 개체입니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -128,8 +128,8 @@ runtime_exception & operator= (    const runtime_exception & _Other ) throw();
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Other`  
- `runtime_exception` 복사할 개체입니다.  
+*_Other*<br/>
+`runtime_exception` 복사할 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이에 대 한 참조 `runtime_exception` 개체입니다.  

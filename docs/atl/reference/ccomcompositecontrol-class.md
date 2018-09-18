@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a0622e939d1c0cb93579baeb5fa35e11be516e5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 5940461a16dcb86fbb062937fe7330c1b6e04f75
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756576"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021137"
 ---
 # <a name="ccomcompositecontrol-class"></a>CComCompositeControl 클래스
 
@@ -43,13 +43,13 @@ ms.locfileid: "43756576"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T>  
+template <class T>
 class CComCompositeControl : public CComControl<T,CAxDialogImpl<T>>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) 또는 [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)처럼 다른 인터페이스 에서도 잘 복합 컨트롤에 대 한 지원 하려고 합니다.
 
 ## <a name="members"></a>멤버
@@ -122,28 +122,19 @@ HRESULT AdviseSinkMap(bool bAdvise);
 
 ### <a name="parameters"></a>매개 변수
 
-*bAdvise*  
+*bAdvise*<br/>
 True 이면 모든 컨트롤은 알림을 받을 수 있습니다. 그렇지 않으면 false입니다.
 
 ### <a name="return-value"></a>반환 값
 
-S_OK  
-모든 컨트롤에서 이벤트 싱크 맵 또는 연결 된 해당 이벤트 소스에서 성공적으로 해제 합니다.
-
-E_FAIL  
-모든 이벤트 싱크 맵과 연결 되거나 해당 이벤트 소스에서 성공적으로 연결이 끊긴 수를 제어 합니다.
-
-E_POINTER  
-이 오류는 일반적으로 컨트롤의 이벤트 싱크 맵 항목을 사용 하 여 문제나에 사용 되는 템플릿 인수를 사용 하 여 문제가 나타냅니다는 `IDispEventImpl` 또는 `IDispEventSimpleImpl` 기본 클래스입니다.
-
-CONNECT_E_ADVISELIMIT  
-연결 지점에 이미 연결 한계에 도달 했습니다 및 더 이상 받아들일 수 없습니다.
-
-CONNECT_E_CANNOTCONNECT  
-싱크는 연결점이 필요한 인터페이스를 지원 하지 않습니다.
-
-CONNECT_E_NOCONNECTION  
-쿠키 값에 올바른 연결을 나타내지 않습니다. 이 오류는 일반적으로 컨트롤의 이벤트 싱크 맵 항목을 사용 하 여 문제나에 사용 되는 템플릿 인수를 사용 하 여 문제가 나타냅니다는 `IDispEventImpl` 또는 `IDispEventSimpleImpl` 기본 클래스입니다.
+|||
+|-|-|
+|S_OK  |모든 컨트롤에서 이벤트 싱크 맵 또는 연결 된 해당 이벤트 소스에서 성공적으로 해제 합니다.|
+|E_FAIL  |모든 이벤트 싱크 맵과 연결 되거나 해당 이벤트 소스에서 성공적으로 연결이 끊긴 수를 제어 합니다.|
+|E_POINTER  |이 오류는 일반적으로 컨트롤의 이벤트 싱크 맵 항목을 사용 하 여 문제나에 사용 되는 템플릿 인수를 사용 하 여 문제가 나타냅니다는 `IDispEventImpl` 또는 `IDispEventSimpleImpl` 기본 클래스입니다.|
+|CONNECT_E_ADVISELIMIT  |연결 지점에 이미 연결 한계에 도달 했습니다 및 더 이상 받아들일 수 없습니다.|
+|CONNECT_E_CANNOTCONNECT  |싱크는 연결점이 필요한 인터페이스를 지원 하지 않습니다.|
+|CONNECT_E_NOCONNECTION  |쿠키 값에 올바른 연결을 나타내지 않습니다. 이 오류는 일반적으로 컨트롤의 이벤트 싱크 맵 항목을 사용 하 여 문제나에 사용 되는 템플릿 인수를 사용 하 여 문제가 나타냅니다는 `IDispEventImpl` 또는 `IDispEventSimpleImpl` 기본 클래스입니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -159,7 +150,7 @@ BOOL CalcExtent(SIZE& size);
 
 ### <a name="parameters"></a>매개 변수
 
-*size*  
+*size*<br/>
 에 대 한 참조를 `SIZE` 구조를이 방법으로 채울 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -183,13 +174,13 @@ HWND Create(
 
 ### <a name="parameters"></a>매개 변수
 
-*hWndParent*  
+*hWndParent*<br/>
 컨트롤의 부모 창 핸들입니다.
 
-*rcPos*  
+*rcPos*<br/>
 예약됨.
 
-*dwInitParam*  
+*dwInitParam*<br/>
 컨트롤을 만드는 동안 컨트롤에 전달할 데이터입니다. 데이터를 전달 *dwInitParam* LPARAM 매개 변수로 표시 됩니다는 [WM_INITDIALOG](/windows/desktop/dlgbox/wm-initdialog) 메시지를 생성 하는 경우 복합 컨트롤에 전송 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -236,10 +227,10 @@ virtual HWND CreateControlWindow(
 
 ### <a name="parameters"></a>매개 변수
 
-*hWndParent*  
+*hWndParent*<br/>
 컨트롤의 부모 창 핸들입니다.
 
-*rcPos*  
+*rcPos*<br/>
 에 상대적인 좌표를 클라이언트에서 복합 컨트롤의 위치 사각형이 *hWndParent*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -280,6 +271,6 @@ HRESULT SetBackgroundColorFromAmbient();
 
 ## <a name="see-also"></a>참고 항목
 
-[CComControl 클래스](../../atl/reference/ccomcontrol-class.md)   
-[합성 컨트롤 기본 사항](../../atl/atl-composite-control-fundamentals.md)   
+[CComControl 클래스](../../atl/reference/ccomcontrol-class.md)<br/>
+[복합 컨트롤 기본 사항](../../atl/atl-composite-control-fundamentals.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

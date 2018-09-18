@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d70f065c8cff6154aa706203210973f67b82a73
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: af4a7c5cf4cf80595be0b21f3313dab1cf20acb2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245788"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027247"
 ---
 # <a name="compiler-error-c3008"></a>컴파일러 오류 C3008
-'arg': OpenMP 'directive' 지시문의 인수에 닫는 ')'가 없습니다.  
-  
- 인수를 사용하는 OpenMP 지시문에 닫는 괄호가 없습니다.  
-  
- 다음 샘플에서는 C3008을 생성합니다.  
-  
-```  
-// C3008.c  
-// compile with: /openmp  
-int main()  
-{  
-   int x, y, z;  
-   #pragma omp parallel shared(x   // C3008  
-   // Try the following line instead:  
-   #pragma omp parallel shared(x)  
-   {  
-   }  
-}  
+
+'arg': OpenMP 'directive' 지시문의 인수에 닫는 ')'가 없습니다.
+
+인수를 사용하는 OpenMP 지시문에 닫는 괄호가 없습니다.
+
+다음 샘플에서는 C3008을 생성합니다.
+
+```
+// C3008.c
+// compile with: /openmp
+int main()
+{
+   int x, y, z;
+   #pragma omp parallel shared(x   // C3008
+   // Try the following line instead:
+   #pragma omp parallel shared(x)
+   {
+   }
+}
 ```

@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2edfdc84ee38e20f7193d720eab0ccb58d30790b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6c22e3c33f9ef2409c02f0e651473d566b4d2a74
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294195"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022528"
 ---
 # <a name="compiler-warning-levels-1-and-4-c4115"></a>컴파일러 경고(수준 1 및 4) C4115
-'type': 괄호 안에 명명된 형식 정의가 있습니다.  
-  
- 지정된 기호가 괄호 식 안에서 구조체, 공용 구조체 또는 열거 형식을 정의하는 데 사용되었습니다. 예상치 못한 정의의 범위가 발생할 수 있습니다.  
-  
- C 함수 호출에서는 정의가 전역 범위입니다. C++ 호출에서는 정의의 범위가 호출되는 함수의 범위와 동일합니다.  
-  
- 이 경고는 괄호 식이 아닌 괄호 안의 선언자(예: 프로토타입)로 인해 발생할 수도 있습니다.  
-  
- 이는 ANSI 호환성(/Za)에서 컴파일된 C 프로그램 및 C++ 프로그램에서 수준 1 경고입니다. 그렇지 않으면 수준 3입니다.
+
+'type': 괄호 안에 명명된 형식 정의가 있습니다.
+
+지정된 기호가 괄호 식 안에서 구조체, 공용 구조체 또는 열거 형식을 정의하는 데 사용되었습니다. 예상치 못한 정의의 범위가 발생할 수 있습니다.
+
+C 함수 호출에서는 정의가 전역 범위입니다. C++ 호출에서는 정의의 범위가 호출되는 함수의 범위와 동일합니다.
+
+이 경고는 괄호 식이 아닌 괄호 안의 선언자(예: 프로토타입)로 인해 발생할 수도 있습니다.
+
+이는 ANSI 호환성(/Za)에서 컴파일된 C 프로그램 및 C++ 프로그램에서 수준 1 경고입니다. 그렇지 않으면 수준 3입니다.

@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35619d93200c2f0e61dbf903f56a70bbe0c48d73
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c13836c845e1efc33c409939bdbec49b25c84e63
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33233648"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027597"
 ---
 # <a name="compiler-error-c2683"></a>컴파일러 오류 C2683
-'cast': 'type' 다형 형식이 아닙니다  
-  
- 사용할 수 없습니다 [dynamic_cast](../../cpp/dynamic-cast-operator.md) 비 다형 클래스 (가상 함수가 없는 클래스)으로 변환할 수 있습니다.  
-  
- 사용할 수 있습니다 [static_cast](../../cpp/static-cast-operator.md) 을 비 다형 형식을 변환 합니다. 그러나 `static_cast` 런타임 검사를 수행 하지 않습니다.  
-  
- 다음 샘플에서는 C2683 오류가 생성 됩니다.  
-  
-```  
-// C2683.cpp  
-// compile with: /c  
-class B { };  
-class D : public B { };  
-  
-void f(B* pb) {  
-   D* pd1 = dynamic_cast<D*>(pb);  // C2683  
-   D* pd1 = static_cast<D*>(pb);   // OK  
-}  
+
+'cast': 'type' 다형 형식이 아닙니다.
+
+사용할 수 없습니다 [dynamic_cast](../../cpp/dynamic-cast-operator.md) 다형 클래스 (가상 함수가 없는 클래스)에서 변환 합니다.
+
+사용할 수 있습니다 [static_cast](../../cpp/static-cast-operator.md) 비 다형 형식의 변환을 수행할 수 있습니다. 그러나 `static_cast` 런타임 검사를 수행 하지 않습니다.
+
+다음 샘플에서는 C2683 오류가 생성 됩니다.
+
+```
+// C2683.cpp
+// compile with: /c
+class B { };
+class D : public B { };
+
+void f(B* pb) {
+   D* pd1 = dynamic_cast<D*>(pb);  // C2683
+   D* pd1 = static_cast<D*>(pb);   // OK
+}
 ```

@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f97918c38f896dd5fccd3abeae86a3104cf80694
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 333a6d9741d4ccaa5764e84fabd71f58788c1b6d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316058"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46015799"
 ---
 # <a name="math-error-m6110"></a>수학 오류 M6110
-스택 오버플로  
-  
- 부동 소수점 식 부동 소수점 스택 오버플로가 발생 했습니다.  
-  
- 부동 소수점 스택 오버플로 예외는 8087/287/387 보조 프로세서에서 일반적으로 지 원하는 8 개 수준 외에 7 개 수준까지 트랩 합니다.  
-  
- 프로그램은 138 종료 코드로 종료 됩니다.
+
+스택 오버플로
+
+부동 소수점 식 부동 소수점 스택 오버플로 발생 합니다.
+
+부동 소수점 스택 오버플로 예외는 7 가지 운영 수준 8087/287 387 보조 프로세서에서 일반적으로 지 원하는 8 개 수준 외에도 제한까지 트랩 됩니다.
+
+프로그램은 138 종료 코드로 종료 됩니다.

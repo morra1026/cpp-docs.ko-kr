@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1400478dc1bbef4ab435f96eaa75c9a6637b6bb5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fdd3ad247bcdbfa30213eba57cdbbbc411438e79
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225409"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029938"
 ---
 # <a name="fatal-error-c1080"></a>심각한 오류 C1080
-컴파일러 한계: 명령줄 숫자인 한계를 초과 하는 옵션  
-  
- 컴파일러에 전달 되는 인수에는 256 자를 초과 합니다.
+
+컴파일러 한계: 명령줄 번호 문자의 한계를 초과 하는 옵션
+
+컴파일러에 전달 된 인수에는 256 자를 초과 합니다.

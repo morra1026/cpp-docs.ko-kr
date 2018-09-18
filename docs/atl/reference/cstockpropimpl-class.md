@@ -74,12 +74,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 609216b38ab67076b454ac5adad3f331b235b580
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8de0378e34212649f7e1149bd038587f547e4eb2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45706032"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032031"
 ---
 # <a name="cstockpropimpl-class"></a>CStockPropImpl 클래스
 
@@ -95,7 +95,7 @@ template <class T, class InterfaceName,
     const IID* piid = &_ATL_IIDOF(InterfaceName),
     const GUID* plibid = &CComModule::m_libid,
     WORD wMajor = 1,
-    WORD wMinor = 0, class tihclass = CcomTypeInfoHolder>  
+    WORD wMinor = 0, class tihclass = CcomTypeInfoHolder>
 class ATL_NO_VTABLE CStockPropImpl : public IDispatchImpl<InterfaceName, piid,
 plibid,
     wMajor,
@@ -105,25 +105,25 @@ wMinor,
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 컨트롤을 구현 하 고에서 파생 되는 클래스 `CStockPropImpl`합니다.
 
-*InterfaceName*  
+*InterfaceName*<br/>
 스톡 속성을 노출 하는 이중 인터페이스입니다.
 
-*piid*  
+*piid*<br/>
 에 대 한 포인터의 IID `InterfaceName`합니다.
 
-*plibid*  
+*plibid*<br/>
 에 대 한 포인터의 정의 포함 하는 형식 라이브러리의 LIBID `InterfaceName`합니다.
 
-*wMajor*  
+*wMajor*<br/>
 형식 라이브러리의 주 버전입니다. 기본값은 1입니다.
 
-*wMinor*  
+*wMinor*<br/>
 형식 라이브러리의 부 버전입니다. 기본값은 0입니다.
 
-*tihclass*  
+*tihclass*<br/>
 클래스에 대 한 형식 정보를 관리 하는 데 *T*합니다. 기본값은 `CComTypeInfoHolder`입니다.
 
 ## <a name="members"></a>멤버
@@ -228,7 +228,7 @@ HRESULT STDMETHODCALLTYPE get_Appearance(SHORT pnAppearance);
 
 ### <a name="parameters"></a>매개 변수
 
-*pnAppearance*  
+*pnAppearance*<br/>
 컨트롤의 그리기 스타일을 수신 하는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -245,7 +245,7 @@ HRESULT STDMETHODCALLTYPE get_Autosize(VARIANT_BOOL* pbAutoSize);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbAutoSize*  
+*pbAutoSize*<br/>
 플래그 상태를 수신 하는 변수입니다. TRUE는 컨트롤에 다른 크기 일 수 없음을 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
@@ -262,7 +262,7 @@ HRESULT STDMETHODCALLTYPE get_BackColor(OLE_COLOR* pclrBackColor);
 
 ### <a name="parameters"></a>매개 변수
 
-*pclrBackColor*  
+*pclrBackColor*<br/>
 컨트롤의 배경색을 수신 하는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -279,7 +279,7 @@ HRESULT STDMETHODCALLTYPE get_BackStyle(LONG* pnBackStyle);
 
 ### <a name="parameters"></a>매개 변수
 
-*pnBackStyle*  
+*pnBackStyle*<br/>
 컨트롤의 배경 스타일을 수신 하는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -296,7 +296,7 @@ HRESULT STDMETHODCALLTYPE get_BorderColor(OLE_COLOR* pclrBorderColor);
 
 ### <a name="parameters"></a>매개 변수
 
-*pclrBorderColor*  
+*pclrBorderColor*<br/>
 컨트롤의 테두리 색을 수신 하는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -313,7 +313,7 @@ HRESULT STDMETHODCALLTYPE get_BorderStyle(LONG* pnBorderStyle);
 
 ### <a name="parameters"></a>매개 변수
 
-*pnBorderStyle*  
+*pnBorderStyle*<br/>
 컨트롤의 테두리 스타일을 수신 하는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -330,7 +330,7 @@ HRESULT STDMETHODCALLTYPE get_BorderVisible(VARIANT_BOOL* pbBorderVisible);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbBorderVisible*  
+*pbBorderVisible*<br/>
 플래그 상태를 수신 하는 변수입니다. TRUE는 컨트롤의 테두리 표시 되어 있는지를 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
@@ -347,7 +347,7 @@ HRESULT STDMETHODCALLTYPE get_BorderWidth(LONG* pnBorderWidth);
 
 ### <a name="parameters"></a>매개 변수
 
-*pnBorderWidth*  
+*pnBorderWidth*<br/>
 컨트롤의 테두리 두께 받는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -364,7 +364,7 @@ HRESULT STDMETHODCALLTYPE get_Caption(BSTR* pbstrCaption);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbstrCaption*  
+*pbstrCaption*<br/>
 컨트롤을 사용 하 여 표시할 텍스트입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -381,7 +381,7 @@ HRESULT STDMETHODCALLTYPE get_DrawMode(LONG* pnDrawMode);
 
 ### <a name="parameters"></a>매개 변수
 
-*pnDrawMode*  
+*pnDrawMode*<br/>
 컨트롤의 그리기 모드를 받는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -398,7 +398,7 @@ HRESULT STDMETHODCALLTYPE get_DrawStyle(LONG* pnDrawStyle);
 
 ### <a name="parameters"></a>매개 변수
 
-*pnDrawStyle*  
+*pnDrawStyle*<br/>
 컨트롤의 그리기 스타일을 수신 하는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -415,7 +415,7 @@ HRESULT STDMETHODCALLTYPE get_DrawWidth(LONG* pnDrawWidth);
 
 ### <a name="parameters"></a>매개 변수
 
-*pnDrawWidth*  
+*pnDrawWidth*<br/>
 픽셀 단위의 컨트롤의 너비 값을 수신 하는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -432,7 +432,7 @@ HRESULT STDMETHODCALLTYPE get_Enabled(VARIANT_BOOL* pbEnabled);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbEnabled*  
+*pbEnabled*<br/>
 플래그 상태를 수신 하는 변수입니다. TRUE는 컨트롤 사용 됨을 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
@@ -449,7 +449,7 @@ HRESULT STDMETHODCALLTYPE get_FillColor(OLE_COLOR* pclrFillColor);
 
 ### <a name="parameters"></a>매개 변수
 
-*pclrFillColor*  
+*pclrFillColor*<br/>
 컨트롤의 채우기 색을 수신 하는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -466,7 +466,7 @@ HRESULT STDMETHODCALLTYPE get_FillStyle(LONG* pnFillStyle);
 
 ### <a name="parameters"></a>매개 변수
 
-*pnFillStyle*  
+*pnFillStyle*<br/>
 컨트롤의 채우기 스타일을 수신 하는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -483,7 +483,7 @@ HRESULT STDMETHODCALLTYPE get_Font(IFontDisp** ppFont);
 
 ### <a name="parameters"></a>매개 변수
 
-*ppFont*  
+*ppFont*<br/>
 컨트롤의 글꼴 속성에 대 한 포인터를 받는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -500,7 +500,7 @@ HRESULT STDMETHODCALLTYPE get_ForeColor(OLE_COLOR* pclrForeColor);
 
 ### <a name="parameters"></a>매개 변수
 
-*pclrForeColor*  
+*pclrForeColor*<br/>
 변수를 받는 컨트롤 전경색입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -517,7 +517,7 @@ HRESULT STDMETHODCALLTYPE get_HWND(LONG_PTR* phWnd);
 
 ### <a name="parameters"></a>매개 변수
 
-*phWnd*  
+*phWnd*<br/>
 컨트롤과 연결 된 창 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -534,7 +534,7 @@ HRESULT STDMETHODCALLTYPE get_MouseIcon(IPictureDisp** ppPicture);
 
 ### <a name="parameters"></a>매개 변수
 
-*ppPicture*  
+*ppPicture*<br/>
 그래픽의 그림 속성에 대 한 포인터를 받는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -551,7 +551,7 @@ HRESULT STDMETHODCALLTYPE get_MousePointer(LONG* pnMousePointer);
 
 ### <a name="parameters"></a>매개 변수
 
-*pnMousePointer*  
+*pnMousePointer*<br/>
 마우스 포인터의 유형을 수신 하는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -568,7 +568,7 @@ HRESULT STDMETHODCALLTYPE get_Picture(IPictureDisp** ppPicture);
 
 ### <a name="parameters"></a>매개 변수
 
-*ppPicture*  
+*ppPicture*<br/>
 그림의 속성에 대 한 포인터를 받는 변수입니다. 참조 [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) 대 한 자세한 내용은 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -585,7 +585,7 @@ HRESULT STDMETHODCALLTYPE get_ReadyState(LONG* pnReadyState);
 
 ### <a name="parameters"></a>매개 변수
 
-*pnReadyState*  
+*pnReadyState*<br/>
 컨트롤의 준비 상태를 수신 하는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -602,7 +602,7 @@ HRESULT STDMETHODCALLTYPE get_TabStop(VARIANT_BOOL* pbTabStop);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbTabStop*  
+*pbTabStop*<br/>
 플래그 상태를 수신 하는 변수입니다. TRUE는 컨트롤 탭은 임을 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
@@ -619,7 +619,7 @@ HRESULT STDMETHODCALLTYPE get_Text(BSTR* pbstrText);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbstrText*  
+*pbstrText*<br/>
 컨트롤을 사용 하 여 표시 되는 텍스트입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -636,7 +636,7 @@ HRESULT STDMETHODCALLTYPE getvalid(VARIANT_BOOL* pbValid);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbValid*  
+*pbValid*<br/>
 플래그 상태를 수신 하는 변수입니다. TRUE는 컨트롤이 유효한 지를 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
@@ -653,7 +653,7 @@ HRESULT STDMETHODCALLTYPE get_Window(LONG_PTR* phWnd);
 
 ### <a name="parameters"></a>매개 변수
 
-*phWnd*  
+*phWnd*<br/>
 컨트롤과 연결 된 창 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -670,7 +670,7 @@ HRESULT STDMETHODCALLTYPE put_Appearance(SHORT nAppearance);
 
 ### <a name="parameters"></a>매개 변수
 
-*nAppearance*  
+*nAppearance*<br/>
 컨트롤에서 사용할 새 그리기 스타일입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -687,7 +687,7 @@ HRESULT STDMETHODCALLTYPE put_AutoSize(VARIANT_BOOL bAutoSize,);
 
 ### <a name="parameters"></a>매개 변수
 
-*bAutoSize*  
+*bAutoSize*<br/>
 컨트롤에는 다른 크기 수 없는 경우 TRUE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -704,7 +704,7 @@ HRESULT STDMETHODCALLTYPE put_BackColor(OLE_COLOR clrBackColor);
 
 ### <a name="parameters"></a>매개 변수
 
-*clrBackColor*  
+*clrBackColor*<br/>
 새 컨트롤 배경색입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -721,7 +721,7 @@ HRESULT STDMETHODCALLTYPE put_BackStyle(LONG nBackStyle);
 
 ### <a name="parameters"></a>매개 변수
 
-*nBackStyle*  
+*nBackStyle*<br/>
 새 컨트롤 배경 스타일입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -738,7 +738,7 @@ HRESULT STDMETHODCALLTYPE put_BorderColor(OLE_COLOR clrBorderColor);
 
 ### <a name="parameters"></a>매개 변수
 
-*clrBorderColor*  
+*clrBorderColor*<br/>
 새 테두리 색입니다. 내부적으로 32 비트 정수 OLE_COLOR 데이터 형식이 표시 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -755,7 +755,7 @@ HRESULT STDMETHODCALLTYPE put_BorderStyle(LONG nBorderStyle);
 
 ### <a name="parameters"></a>매개 변수
 
-*nBorderStyle*  
+*nBorderStyle*<br/>
 새 테두리 스타일입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -772,7 +772,7 @@ HRESULT STDMETHODCALLTYPE put_BorderVisible(VARIANT_BOOL bBorderVisible);
 
 ### <a name="parameters"></a>매개 변수
 
-*bBorderVisible*  
+*bBorderVisible*<br/>
 테두리 표시 되도록 이면 TRUE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -789,7 +789,7 @@ HRESULT STDMETHODCALLTYPE put_BorderWidth(LONG nBorderWidth);
 
 ### <a name="parameters"></a>매개 변수
 
-*nBorderWidth*  
+*nBorderWidth*<br/>
 컨트롤의 테두리의 새 너비입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -806,7 +806,7 @@ HRESULT STDMETHODCALLTYPE put_Caption(BSTR bstrCaption);
 
 ### <a name="parameters"></a>매개 변수
 
-*bstrCaption*  
+*bstrCaption*<br/>
 컨트롤을 사용 하 여 표시할 텍스트입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -823,7 +823,7 @@ HRESULT STDMETHODCALLTYPE put_DrawMode(LONG nDrawMode);
 
 ### <a name="parameters"></a>매개 변수
 
-*nDrawMode*  
+*nDrawMode*<br/>
 컨트롤에 대 한 새 그리기 모드입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -840,7 +840,7 @@ HRESULT STDMETHODCALLTYPE put_DrawStyle(LONG pnDrawStyle);
 
 ### <a name="parameters"></a>매개 변수
 
-*nDrawStyle*  
+*nDrawStyle*<br/>
 컨트롤에 대 한 새 그리기 스타일입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -857,7 +857,7 @@ HRESULT STDMETHODCALLTYPE put_DrawWidth(LONG nDrawWidth);
 
 ### <a name="parameters"></a>매개 변수
 
-*nDrawWidth*  
+*nDrawWidth*<br/>
 컨트롤에서 사용할 새 너비의 그리기 메서드.
 
 ### <a name="return-value"></a>반환 값
@@ -874,7 +874,7 @@ HRESULT STDMETHODCALLTYPE put_Enabled(VARIANT_BOOL bEnabled);
 
 ### <a name="parameters"></a>매개 변수
 
-*b 사용*  
+*b 사용*<br/>
 컨트롤을 사용 하는 경우 TRUE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -891,7 +891,7 @@ HRESULT STDMETHODCALLTYPE put_FillColor(OLE_COLOR clrFillColor);
 
 ### <a name="parameters"></a>매개 변수
 
-*clrFillColor*  
+*clrFillColor*<br/>
 컨트롤에 대 한 새 채우기 색입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -908,7 +908,7 @@ HRESULT STDMETHODCALLTYPE put_FillStyle(LONG nFillStyle);
 
 ### <a name="parameters"></a>매개 변수
 
-*nFillStyle*  
+*nFillStyle*<br/>
 컨트롤에 대 한 새 채우기 스타일입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -925,7 +925,7 @@ HRESULT STDMETHODCALLTYPE put_Font(IFontDisp* pFont);
 
 ### <a name="parameters"></a>매개 변수
 
-*pFont*  
+*pFont*<br/>
 컨트롤의 글꼴 속성에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -942,7 +942,7 @@ HRESULT STDMETHODCALLTYPE put_ForeColor(OLE_COLOR clrForeColor);
 
 ### <a name="parameters"></a>매개 변수
 
-*clrForeColor*  
+*clrForeColor*<br/>
 컨트롤의 새 전경색입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -959,7 +959,7 @@ HRESULT STDMETHODCALLTYPE put_HWND(LONG_PTR /* hWnd */);
 
 ### <a name="parameters"></a>매개 변수
 
-*/&ast; hWnd &ast;/*  
+*/&ast; hWnd &ast;/*<br/>
 예약됨.
 
 ### <a name="return-value"></a>반환 값
@@ -980,7 +980,7 @@ HRESULT STDMETHODCALLTYPE put_MouseIcon(IPictureDisp* pPicture);
 
 ### <a name="parameters"></a>매개 변수
 
-*pPicture*  
+*pPicture*<br/>
 그래픽의 그림 속성에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -997,7 +997,7 @@ HRESULT STDMETHODCALLTYPE put_MousePointer(LONG nMousePointer);
 
 ### <a name="parameters"></a>매개 변수
 
-*nMousePointer*  
+*nMousePointer*<br/>
 마우스 포인터의 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1014,7 +1014,7 @@ HRESULT STDMETHODCALLTYPE put_Picture(IPictureDisp* pPicture);
 
 ### <a name="parameters"></a>매개 변수
 
-*pPicture*  
+*pPicture*<br/>
 그림의 속성에 대 한 포인터입니다. 참조 [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) 대 한 자세한 내용은 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1031,7 +1031,7 @@ HRESULT STDMETHODCALLTYPE put_ReadyState(LONG nReadyState);
 
 ### <a name="parameters"></a>매개 변수
 
-*nReadyState*  
+*nReadyState*<br/>
 컨트롤의 준비 상태입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1048,7 +1048,7 @@ HRESULT STDMETHODCALLTYPE put_TabStop(VARIANT_BOOL bTabStop);
 
 ### <a name="parameters"></a>매개 변수
 
-*bTabStop*  
+*bTabStop*<br/>
 컨트롤에 탭 정지 이면 TRUE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1065,7 +1065,7 @@ HRESULT STDMETHODCALLTYPE put_Text(BSTR bstrText);
 
 ### <a name="parameters"></a>매개 변수
 
-*bstrText*  
+*bstrText*<br/>
 컨트롤을 사용 하 여 표시 되는 텍스트입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1082,7 +1082,7 @@ HRESULT STDMETHODCALLTYPE getvalid(VARIANT_BOOL bValid);
 
 ### <a name="parameters"></a>매개 변수
 
-*bValid*  
+*bValid*<br/>
 컨트롤이 유효한 경우 TRUE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1099,7 +1099,7 @@ HRESULT STDMETHODCALLTYPE put_Window(LONG_PTR hWnd);
 
 ### <a name="parameters"></a>매개 변수
 
-*hWnd*  
+*hWnd*<br/>
 창 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1120,7 +1120,7 @@ HRESULT STDMETHODCALLTYPE putref_Font(IFontDisp* pFont);
 
 ### <a name="parameters"></a>매개 변수
 
-*pFont*  
+*pFont*<br/>
 컨트롤의 글꼴 속성에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1141,7 +1141,7 @@ HRESULT STDMETHODCALLTYPE putref_MouseIcon(IPictureDisp* pPicture);
 
 ### <a name="parameters"></a>매개 변수
 
-*pPicture*  
+*pPicture*<br/>
 그래픽의 그림 속성에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1162,7 +1162,7 @@ HRESULT STDMETHODCALLTYPE putref_Picture(IPictureDisp* pPicture);
 
 ### <a name="parameters"></a>매개 변수
 
-*pPicture*  
+*pPicture*<br/>
 그림의 속성에 대 한 포인터입니다. 참조 [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) 대 한 자세한 내용은 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1175,5 +1175,5 @@ HRESULT STDMETHODCALLTYPE putref_Picture(IPictureDisp* pPicture);
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 개요](../../atl/atl-class-overview.md)   
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [IDispatchImpl 클래스](../../atl/reference/idispatchimpl-class.md)

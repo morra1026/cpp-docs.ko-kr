@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5cbdb880c7165f314c004a7cbcad44dd3b76fd36
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: cd7e80d3c01cf84080ba2b5851da99584122ec4c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45709841"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023945"
 ---
 # <a name="cdoctemplate-class"></a>CDocTemplate 클래스
 문서 템플릿의 기본 기능을 정의하는 추상 기본 클래스입니다.  
@@ -167,17 +167,15 @@ CDocTemplate (
  문서 형식을 사용 하 여 사용 하는 리소스의 ID를 지정 합니다. 이 메뉴, 아이콘, 액셀러레이터 키 테이블 및 문자열 리소스만 포함 될 수 있습니다.  
   
  하지만 문자열 리소스를 '\n' 문자로 구분 되는 최대 7 개의 부분으로 구성 됩니다 ('\n' 문자 자리 표시자로 필요한 부분 문자열이 포함 되어 있지 않으면; 후행 '\n' 문자가 필요 하지 않습니다); 이러한 부분 문자열에는 문서 유형에 대해 설명합니다. 부분 문자열에 대 한 내용은 참조 하세요 [GetDocString](#getdocstring)합니다. 이 문자열 리소스는 응용 프로그램의 리소스 파일에 있습니다. 예를 들어:  
-  
- `// MYCALC.RC`  
-  
- `STRINGTABLE PRELOAD DISCARDABLE`  
-  
- `BEGIN`  
-  
- `IDR_SHEETTYPE "\nSheet\nWorksheet\nWorksheets (*.myc)\n.myc\n MyCalcSheet\nMyCalc Worksheet"`  
-  
- `END`  
-  
+
+```RC
+// MYCALC.RC
+STRINGTABLE PRELOAD DISCARDABLE
+BEGIN
+  IDR_SHEETTYPE "\nSheet\nWorksheet\nWorksheets (*.myc)\n.myc\n MyCalcSheet\nMyCalc Worksheet"
+END
+```
+
  문자열 '\n' 문자로 시작 하는 참고 왜냐하면 첫 번째 부분 MDI 응용 프로그램에 대 한 사용 되지 않으며 따라서 포함 되지 않습니다. 문자열 편집기;를 사용 하 여이 문자열을 편집할 수 있습니다. 전체 문자열을 개별 항목 7 아니라 문자열 편집기에서 단일 항목으로 나타납니다.  
   
  *pDocClass*  

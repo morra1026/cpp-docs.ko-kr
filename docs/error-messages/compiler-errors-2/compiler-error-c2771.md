@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8b545e4f1a5654177f4fc787931b229f493d7826
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bfd6bc68b7081e4bf38fe02f54b632a141313c4c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33232928"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036529"
 ---
 # <a name="compiler-error-c2771"></a>컴파일러 오류 C2771
-\#가져오기 에서만 사용할 수 전역 또는 네임 스페이스 범위  
-  
- `#import` 지시문은 함수나 구조체 등에 사용할 수 없습니다.
+
+\#가져오기 에서만 허용 전역 또는 네임 스페이스 범위
+
+`#import` 지시문은 함수나 구조체 등에 사용할 수 없습니다.

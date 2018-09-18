@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9ac0528f383f1d379699c153a87507a1a292e21
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: eff9e2211d0ddf9cf2d9c4bb0c10040ae20a53e6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767506"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020263"
 ---
 # <a name="ca2wex-class"></a>CA2WEX 클래스
 
@@ -43,7 +43,7 @@ class CA2WEX
 
 #### <a name="parameters"></a>매개 변수
 
-*t_nBufferLength*  
+*t_nBufferLength*<br/>
 변환 프로세스에서 사용 되는 버퍼의 크기입니다. 기본 길이 128 바이트입니다.
 
 ## <a name="members"></a>멤버
@@ -113,10 +113,10 @@ CA2WEX(LPCSTR psz) throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*psz*  
+*psz*<br/>
 변환할 텍스트 문자열입니다.
 
-*nCodePage*  
+*nCodePage*<br/>
 코드 페이지 변환을 수행 하는 데 사용 합니다. Windows SDK 함수에 대 한 코드 페이지 매개 변수 설명을 참조 하세요 [MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar) 대 한 자세한 내용은 합니다.
 
 ### <a name="remarks"></a>설명
@@ -155,7 +155,7 @@ wchar_t m_szBuffer[t_nBufferLength];
 
 변환 연산자입니다.
 
-```  
+```
 operator LPWSTR() const throw();
 ```
 
@@ -165,9 +165,9 @@ LPWSTR 입력할 텍스트 문자열을 반환 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[CA2AEX 클래스](../../atl/reference/ca2aex-class.md)   
-[CA2CAEX 클래스](../../atl/reference/ca2caex-class.md)   
-[CW2AEX 클래스](../../atl/reference/cw2aex-class.md)   
-[CW2CWEX 클래스](../../atl/reference/cw2cwex-class.md)   
-[CW2WEX 클래스](../../atl/reference/cw2wex-class.md)   
+[CA2AEX 클래스](../../atl/reference/ca2aex-class.md)<br/>
+[CA2CAEX 클래스](../../atl/reference/ca2caex-class.md)<br/>
+[CW2AEX 클래스](../../atl/reference/cw2aex-class.md)<br/>
+[CW2CWEX 클래스](../../atl/reference/cw2cwex-class.md)<br/>
+[CW2WEX 클래스](../../atl/reference/cw2wex-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

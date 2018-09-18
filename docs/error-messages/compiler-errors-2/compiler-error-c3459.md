@@ -16,48 +16,50 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eec65ba8acf231a15c6cab15449cc306cdfad4fe
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: abde90828cac4f45685b7a21b50705474aedde72
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33255347"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026792"
 ---
 # <a name="compiler-error-c3459"></a>컴파일러 오류 C3459
-'attribute': 특성은 클래스 인덱서(인덱싱된 기본 속성)에만 사용할 수 있습니다.  
-  
-클래스 인덱서 속성에 적용하기 위한 특성을 잘못 사용했습니다.  
-  
-자세한 내용은 참조 [하는 방법: 사용 하 여 속성 C + + /cli CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md)합니다.  
-  
-## <a name="example"></a>예제  
-다음 샘플에서는 C3459를 생성합니다.  
-  
-```  
-// C3459.cpp  
-// compile with: /clr /c  
-public ref class MyString {  
-public:  
-   [System::Runtime::CompilerServices::IndexerName("Chars")]   // C3459  
-   property int Prop;  
-};  
-  
-// OK  
-public ref class MyString2 {  
-   array<int>^ MyArr;  
-public:  
-   MyString2() {  
-      MyArr = gcnew array<int>(5);  
-   }  
-  
-   [System::Runtime::CompilerServices::IndexerName("Chars")]   // OK  
-   property int default[int] {  
-      int get(int index) {  
-         return MyArr[index];  
-      }  
-      void set(int index, int value) {  
-         MyArr[index] = value;  
-      }  
-   }  
-};  
+
+'attribute': 특성은 클래스 인덱서(인덱싱된 기본 속성)에만 사용할 수 있습니다.
+
+클래스 인덱서 속성에 적용하기 위한 특성을 잘못 사용했습니다.
+
+자세한 내용은 [방법: 사용 하 여 속성 C + + CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md)합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C3459를 생성합니다.
+
+```
+// C3459.cpp
+// compile with: /clr /c
+public ref class MyString {
+public:
+   [System::Runtime::CompilerServices::IndexerName("Chars")]   // C3459
+   property int Prop;
+};
+
+// OK
+public ref class MyString2 {
+   array<int>^ MyArr;
+public:
+   MyString2() {
+      MyArr = gcnew array<int>(5);
+   }
+
+   [System::Runtime::CompilerServices::IndexerName("Chars")]   // OK
+   property int default[int] {
+      int get(int index) {
+         return MyArr[index];
+      }
+      void set(int index, int value) {
+         MyArr[index] = value;
+      }
+   }
+};
 ```

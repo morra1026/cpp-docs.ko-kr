@@ -16,28 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcb19652f6b9006783cea4cee687156a0c1fb4b7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 84b4ce32f6c4916e0e178d488bf725d257f4d887
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33267514"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020168"
 ---
 # <a name="compiler-error-c3869"></a>컴파일러 오류 C3869
-gcnew 제약 조건에 빈 매개 변수 목록 '(가 없습니다.  
-  
- `gcnew` 빈 매개 변수 목록을 사용 하지 않고 특수 제약 조건을 지정 했습니다. 참조 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + /cli CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md) 자세한 정보에 대 한 합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3869 오류가 발생 합니다.  
-  
-```  
-// C3869.cpp  
-// compile with: /c /clr  
-using namespace System;  
-generic <typename T>  
-where T : gcnew   // C3869  
-// try the following line instead  
-// where T : gcnew()  
-ref class List {};  
+
+gcnew 제약 조건에 빈 매개 변수 목록 '(가 없습니다.
+
+`gcnew` 빈 매개 변수 목록을 사용 하지 않고 특수 제약 조건을 지정 했습니다. 참조 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + /cli CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md) 자세한 내용은 합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플 C3869를 생성합니다.
+
+```
+// C3869.cpp
+// compile with: /c /clr
+using namespace System;
+generic <typename T>
+where T : gcnew   // C3869
+// try the following line instead
+// where T : gcnew()
+ref class List {};
 ```

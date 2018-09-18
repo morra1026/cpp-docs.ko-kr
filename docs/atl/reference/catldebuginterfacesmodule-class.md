@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dbac5c07f04725400423e72d1cc38eb0f25e48f
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b54fbb36a62627f6037ac1663037bffbe37232fe
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755528"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019395"
 ---
 # <a name="catldebuginterfacesmodule-class"></a>CAtlDebugInterfacesModule 클래스
 
@@ -45,5 +45,5 @@ class CAtlDebugInterfacesModule
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 개요](../../atl/atl-class-overview.md)   
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [모듈 클래스](../../atl/atl-module-classes.md)

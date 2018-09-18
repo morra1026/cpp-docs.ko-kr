@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3e0ac7cf3a5448a2963aa92c2e275be796c895d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c977ecc1094af37c5e2c2e3ed8f27a6f2bdf1c93
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758341"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033877"
 ---
 # <a name="iprovideclassinfo2impl-class"></a>IProvideClassInfo2Impl 클래스
 
@@ -41,28 +41,28 @@ template <const CLSID* pcoclsid,
     const IID* psrcid,
     const GUID* plibid = &CAtlModule::m_libid,
     WORD wMajor = 1,
-    WORD wMinor = 0, class tihclass = CComTypeInfoHolder>  
+    WORD wMinor = 0, class tihclass = CComTypeInfoHolder>
 class ATL_NO_VTABLE IProvideClassInfo2Impl : public IProvideClassInfo2
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*pcoclsid*  
+*pcoclsid*<br/>
 Coclass의 식별자에 대 한 포인터입니다.
 
-*psrcid*  
+*psrcid*<br/>
 Dispinterface를 나가는 coclass' 기본 식별자에 대 한 포인터입니다.
 
-*plibid*  
+*plibid*<br/>
 포인터를 인터페이스에 대 한 정보를 포함 하는 형식 라이브러리의 LIBID입니다. 서버 수준 형식 라이브러리는 기본적으로 전달 됩니다.
 
-*wMajor*  
+*wMajor*<br/>
 형식 라이브러리의 주 버전입니다. 기본값은 1입니다.
 
-*wMinor*  
+*wMinor*<br/>
 형식 라이브러리의 부 버전입니다. 기본값은 0입니다.
 
-*tihclass*  
+*tihclass*<br/>
 Coclass의 형식 정보를 관리 하는 데 사용 되는 클래스입니다. 기본값은 `CComTypeInfoHolder`입니다.
 
 ## <a name="members"></a>멤버

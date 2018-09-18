@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bfa501834102e37c14de11ee1af84a21e82c35f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 5707a7fd4ab83c8e3de3c4868ad41e3525621b07
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703848"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033955"
 ---
 # <a name="ccomgitptr-class"></a>CComGITPtr 클래스
 
@@ -38,13 +38,13 @@ ms.locfileid: "45703848"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T>  
+template <class T>
 class CComGITPtr
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-`T`  
+*T*<br/>
 GIT에 저장 될 인터페이스 포인터의 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -102,10 +102,10 @@ HRESULT Attach(DWORD dwCookie) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 GIT에 추가 될 인터페이스 포인터입니다.
 
-*dwCookie*  
+*dwCookie*<br/>
 인터페이스 포인터를 식별 하는 데 사용 되는 쿠키입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -170,7 +170,7 @@ HRESULT CopyTo(T** pp) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pp*  
+*pp*<br/>
 인터페이스를 수신 하는 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -262,7 +262,7 @@ CComGITPtr& operator= (CComGITPtr&& rv);
 
 연결 된 쿠키를 반환 합니다 `CComGITPtr` 개체입니다.
 
-```  
+```
 operator DWORD() const;
 ```
 
@@ -288,7 +288,7 @@ GIT에서 인터페이스를 제거합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[자유 스레드된 마샬러](../../atl/atl-and-the-free-threaded-marshaler.md)   
-[아파트 간 인터페이스 액세스](/windows/desktop/com/accessing-interfaces-across-apartments)   
-[전역 인터페이스 테이블을 사용 하는 경우](/windows/desktop/com/when-to-use-the-global-interface-table)   
+[자유 스레드된 마샬러](../../atl/atl-and-the-free-threaded-marshaler.md)<br/>
+[아파트 간 인터페이스 액세스](/windows/desktop/com/accessing-interfaces-across-apartments)<br/>
+[전역 인터페이스 테이블을 사용 하는 경우](/windows/desktop/com/when-to-use-the-global-interface-table)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

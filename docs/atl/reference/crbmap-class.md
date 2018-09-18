@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17f4ce858949aafe1a448fc51b8ecd5591270184
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e0ffdb791355aa40a33d80104af540b856cdf601
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764844"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019486"
 ---
 # <a name="crbmap-class"></a>CRBMap 클래스
 
@@ -38,22 +38,22 @@ ms.locfileid: "43764844"
 template <typename K,
           typename V, 
           class KTraits = CElementTraits<K>, 
-          class VTraits = CElementTraits<V>> 
+          class VTraits = CElementTraits<V>>
 class CRBMap : public CRBTree<K, V, KTraits, VTraits>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*K*  
+*K*<br/>
 Key 요소 형식입니다.
 
-*V*  
+*V*<br/>
 값 요소 형식입니다.
 
-*KTraits*  
+*KTraits*<br/>
 복사 하거나 주요 요소를 이동 하는 데 사용 되는 코드입니다. 참조 [CElementTraits 클래스](../../atl/reference/celementtraits-class.md) 대 한 자세한 내용은 합니다.
 
-*VTraits*  
+*VTraits*<br/>
 값 요소 이동 하거나 복사 하는 데 사용 되는 코드입니다.
 
 ## <a name="members"></a>멤버
@@ -107,7 +107,7 @@ explicit CRBMap(size_t nBlockSize = 10) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nBlockSize*  
+*nBlockSize*<br/>
 블록 크기입니다.
 
 ### <a name="remarks"></a>설명
@@ -146,10 +146,10 @@ CPair* Lookup(KINARGTYPE key) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 조회 요소를 식별 하는 키를 지정 합니다.
 
-*값*  
+*값*<br/>
 조회 값을 수신 하는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -174,7 +174,7 @@ bool RemoveKey(KINARGTYPE key) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 제거 하려는 키에 해당 하는 요소 쌍입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -201,10 +201,10 @@ POSITION SetAt(
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 추가할 키 값을 `CRBMap` 개체입니다.
 
-*값*  
+*값*<br/>
 에 추가할 값을 `CRBMap` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -223,7 +223,7 @@ POSITION SetAt(
 
 ## <a name="see-also"></a>참고 항목
 
-[CRBTree 클래스](../../atl/reference/crbtree-class.md)   
-[CAtlMap 클래스](../../atl/reference/catlmap-class.md)   
-[CRBMultiMap 클래스](../../atl/reference/crbmultimap-class.md)   
+[CRBTree 클래스](../../atl/reference/crbtree-class.md)<br/>
+[CAtlMap 클래스](../../atl/reference/catlmap-class.md)<br/>
+[CRBMultiMap 클래스](../../atl/reference/crbmultimap-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

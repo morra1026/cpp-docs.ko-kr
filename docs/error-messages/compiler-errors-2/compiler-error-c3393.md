@@ -16,30 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db8e60df6c6f8f1d19b55d78b527cca2755f4ca4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7ceb6875484a3afe1d13f13990334434a6c1b086
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33254136"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022658"
 ---
 # <a name="compiler-error-c3393"></a>컴파일러 오류 C3393
-제약 조건 절의 구문 오류: 'identifier'가 형식이 아닙니다.  
-  
- 제약 조건에 전달된 식별자가 형식이어야 하는 데 형식이 아닙니다.  자세한 내용은 참조 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + /cli CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md)합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3393을 생성합니다.  
-  
-```  
-// C3393.cpp  
-// compile with: /clr /c  
-void MyInterface() {}  
-interface class MyInterface2 {};  
-  
-generic<typename T>  
-where T : MyInterface   // C3393  
-// try the following line instead  
-// where T : MyInterface2  
-ref class R {};  
+
+제약 조건 절의 구문 오류: 'identifier'가 형식이 아닙니다.
+
+제약 조건에 전달된 식별자가 형식이어야 하는 데 형식이 아닙니다.  자세한 내용은 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md)합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C3393을 생성합니다.
+
+```
+// C3393.cpp
+// compile with: /clr /c
+void MyInterface() {}
+interface class MyInterface2 {};
+
+generic<typename T>
+where T : MyInterface   // C3393
+// try the following line instead
+// where T : MyInterface2
+ref class R {};
 ```

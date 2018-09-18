@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9acb054c7d991e2d9e98df3ce9bba8c7093f281a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e615068580bcc9078959cc6cdd7831d05b5a4acd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761484"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020877"
 ---
 # <a name="understanding-backus-nauer-form-bnf-syntax"></a>Backus Nauer BNF (Form) 구문 이해
 
@@ -54,56 +54,56 @@ ATL 등록자 사용 하는 스크립트는 다음 표에 나와 있는 표기�
 
 ### <a name="syntax-example-1"></a>구문 예제 1
 
-```  
-<registry expression> ::= <Add Key>  
+```
+<registry expression> ::= <Add Key>
 ```
 
 형식임 `registry expression` 같습니다 `Add Key`합니다.
 
 ### <a name="syntax-example-2"></a>구문 예제 2
 
-```  
-<registry expression> ::= <Add Key> | <Delete Key>  
+```
+<registry expression> ::= <Add Key> | <Delete Key>
 ```
 
 형식임 `registry expression` 동일 `Add Key` 또는 `Delete Key`합니다.
 
 ### <a name="syntax-example-3"></a>구문 예제 3
 
-```  
-<Key Name> ::= '<AlphaNumeric>+'  
+```
+<Key Name> ::= '<AlphaNumeric>+'
 ```
 
 형식임 `Key Name` 하나 이상의 해당 `AlphaNumerics`합니다.
 
 ### <a name="syntax-example-4"></a>구문 예제 4
 
-```  
-<Add Key> ::= [ForceRemove | NoRemove | val]<Key Name>  
+```
+<Add Key> ::= [ForceRemove | NoRemove | val]<Key Name>
 ```
 
 지정 `Add Key` 동일 `Key Name`, 및 문자열 리터럴 `ForceRemove`, `NoRemove`, 및 `val`는 선택 사항입니다.
 
 ### <a name="syntax-example-5"></a>구문 예제에서는 5
 
-```  
-<AlphaNumeric> ::= any character not NULL, that is, ASCII 0  
+```
+<AlphaNumeric> ::= any character not NULL, that is, ASCII 0
 ```
 
 지정 `AlphaNumeric` 모든 비 NULL 문자에 해당 합니다.
 
 ### <a name="syntax-example-6"></a>구문 예제 6
 
-```  
-val 'testmulti' = m 'String 1\0String 2\0'  
+```
+val 'testmulti' = m 'String 1\0String 2\0'
 ```
 
 지정 하는 키 이름을 `testmulti` 다중 값 이루어집니다 `String 1` 및 `String 2`합니다.
 
 ### <a name="syntax-example-7"></a>구문 예 7
 
-```  
-val 'testhex' = d '&H55'  
+```
+val 'testhex' = d '&H55'
 ```
 
 지정 하는 키 이름을 `testhex` DWORD 값은 16 진수 55 (10 진수 85)로 설정 합니다. 이 형식을 준수 하는 참고 합니다 **& H** 표기법으로 Visual Basic 사양에서 찾을 수 있습니다.

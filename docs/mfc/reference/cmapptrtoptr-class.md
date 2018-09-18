@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 284efeda739f3282bf0ae23f11f950971538645d
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 3d3e6ca79794eafe64ee2797c12ec8a82a3bb064
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37335720"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038222"
 ---
 # <a name="cmapptrtoptr-class"></a>CMapPtrToPtr 클래스
 void 포인터로 키가 지정된 void 포인터 맵을 지원합니다.  
@@ -63,9 +63,7 @@ class CMapPtrToPtr : public CObject
 ## <a name="members"></a>멤버  
  멤버 함수 `CMapPtrToPtr` 클래스의 멤버 함수와 비슷합니다 [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md)합니다. 이처럼 두 함수가 비슷하므로 `CMapStringToOb` 참조 설명서에서 멤버 함수 관련 사항을 확인할 수 있습니다. 표시 될 때마다를 `CObject` 포인터를 함수 매개 변수 또는 반환 값에 대 한 포인터를 대체할 **void**합니다. 표시 될 때마다를 `CString` 또는 **const** 에 대 한 포인터 **char** 함수 매개 변수 또는 반환 값에 대 한 포인터를 대체 **void**합니다.  
   
- `BOOL CMapStringToOb::Lookup( const char* <key>,`  
-  
- `CObject*& <rValue> ) const;`  
+ `BOOL CMapStringToOb::Lookup( const char* <key>, CObject*& <rValue> ) const;`  
   
  예를 들어 위의 코드는  
   

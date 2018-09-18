@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce88321173ee2c8cc286f18d8ab8f1bf5ec98e13
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1983fa0a18667d98f84dfe5049afd4e872d87d93
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198627"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021592"
 ---
 # <a name="fatal-error-c1047"></a>심각한 오류 C1047
-개체 또는 라이브러리 파일 'file'은 다른 개체에 사용한 컴파일러보다 이전 컴파일러로 만들어졌습니다. 해당 개체 및 라이브러리를 다시 빌드하세요.  
-  
- **/LTCG** 로 빌드되는 개체 파일 또는 라이브러리가 함께 연결되었지만 해당 개체 파일 또는 라이브러리가 다른 버전의 Visual C++ 도구 집합으로 빌드되는 경우 C1047이 발생합니다.  
-  
- 새 버전의 컴파일러를 사용하여 시작되지만 기존 개체 파일 또는 라이브러리를 완전히 다시 빌드하지 않는 경우 발생할 수 있습니다.  
-  
- C1047을 해결하려면 모든 개체 파일 또는 라이브러리를 다시 빌드합니다.
+
+개체 또는 라이브러리 파일 'file'은 다른 개체에 사용한 컴파일러보다 이전 컴파일러로 만들어졌습니다. 해당 개체 및 라이브러리를 다시 빌드하세요.
+
+**/LTCG** 로 빌드되는 개체 파일 또는 라이브러리가 함께 연결되었지만 해당 개체 파일 또는 라이브러리가 다른 버전의 Visual C++ 도구 집합으로 빌드되는 경우 C1047이 발생합니다.
+
+새 버전의 컴파일러를 사용하여 시작되지만 기존 개체 파일 또는 라이브러리를 완전히 다시 빌드하지 않는 경우 발생할 수 있습니다.
+
+C1047을 해결하려면 모든 개체 파일 또는 라이브러리를 다시 빌드합니다.

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca97885a64df3897bda59dd7f04b2306f31536aa
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 11c3e0fc08f8c2e0f4df9ac20df6260f64618ee3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692953"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029548"
 ---
 # <a name="ompinitnestlock"></a>omp_init_nest_lock
 잠금을 초기화합니다.  
@@ -34,16 +34,15 @@ void omp_init_nest_lock(
 );  
 ```  
   
-## <a name="remarks"></a>설명  
- 다음은 각 문자에 대한 설명입니다.  
+### <a name="parameters"></a>매개 변수 
   
- `lock`  
- 형식의 변수 [omp_nest_lock_t](../../../parallel/openmp/reference/omp-nest-lock-t.md)합니다.  
+*lock*<br/>
+형식 변수의 [omp_nest_lock_t](../../../parallel/openmp/reference/omp-nest-lock-t.md)합니다.  
   
 ## <a name="remarks"></a>설명  
  초기 중첩 카운트는 0입니다.  
   
- 자세한 내용은 참조 [3.2.1 omp_init_lock and omp_init_nest_lock 함수](../../../parallel/openmp/3-2-1-omp-init-lock-and-omp-init-nest-lock-functions.md)합니다.  
+ 자세한 내용은 [3.2.1 omp_init_lock and omp_init_nest_lock 함수](../../../parallel/openmp/3-2-1-omp-init-lock-and-omp-init-nest-lock-functions.md)합니다.  
   
 ## <a name="example"></a>예제  
   

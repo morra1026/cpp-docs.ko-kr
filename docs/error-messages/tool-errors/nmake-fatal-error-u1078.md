@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1a977a2e8f3b9f36832b5f96c6c911966cac7d0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b894579c56368e953c1d60aa5d2940d8c9c79f65
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316649"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019374"
 ---
 # <a name="nmake-fatal-error-u1078"></a>NMAKE 심각한 오류 U1078
-'expression'에서 상수가 오버플로  
-  
- 지정 된 식은 범위-2147483648과 2147483647 사이 초과 하는 상수를 포함 합니다. 상수는 다음과 같은 상황 중 하나에 나타납니다.  
-  
--   전처리 지시문으로 지정 된 식  
-  
--   대시로 지정 된 오류 수준 (**-**) 명령 한정자
+
+'expression'에서 상수가 오버플로 됩니다.
+
+지정된 된 식 범위-2147483648과 2147483647 사이 초과 하는 상수를 포함 합니다. 상수는 다음과 같은 상황 중 하나에 나타납니다.
+
+- 전처리 지시문을 사용 하 여 지정 된 식
+
+- 대시를 사용 하 여 지정 된 오류 수준 (**-**) 명령 한정자

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0f9636b593999695d145fe163c48a877e32ea25
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 54b1f76223f118a9a25dda6252fc74dbdc90f1a1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225763"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021969"
 ---
 # <a name="compiler-error-c2404"></a>컴파일러 오류 C2404
-'identifier': 'context'의 레지스터가 잘못되었습니다.  
-  
- 이 레지스터는 이 컨텍스트에서 사용할 수 없습니다.
+
+'identifier': 'context'의 레지스터가 잘못되었습니다.
+
+이 레지스터는 이 컨텍스트에서 사용할 수 없습니다.

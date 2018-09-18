@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd1df20ab022df9ce1321c2f6de77bf7591fec3d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a320fb08eaf19b5ed53000ffecd17d747e7a3000
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33304728"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019707"
 ---
 # <a name="expression-evaluator-error-cxx0032"></a>식 계산기 오류 CXX0032
-0으로 나누었습니다.  
-  
- 식에 0을 제 수입니다. 이 제수로 리터럴 숫자 0 이거나 0으로 계산 되는 식을 합니다.  
-  
- 이 오류는 can0032와 동일 합니다.
+
+0으로 나누었습니다.
+
+식이 유효 하지 않은 0 제 수를 포함 합니다. 이 제 리터럴 숫자 0 이거나 0으로 계산 되는 식입니다.
+
+이 오류는 can0032와 동일 합니다.

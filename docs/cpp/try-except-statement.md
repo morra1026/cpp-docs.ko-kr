@@ -35,29 +35,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2780697c1a50e15e170f2096a2841e2c50d844a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 107b759345e221ad8100f11d97b79c5bd9fd2b65
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724687"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031447"
 ---
 # <a name="try-except-statement"></a>try-except 문
 
 **Microsoft 전용**
 
-**시도-제외한** 문을 C에 대 한 Microsoft 확장 이며 지 원하는 c + + 언어 구조적 예외 처리 합니다.  
+**시도-제외한** 문을 C에 대 한 Microsoft 확장 이며 지 원하는 c + + 언어 구조적 예외 처리 합니다.
 
-## <a name="syntax"></a>구문  
-  
-> **__try**   
-> {  
->    보호 된 코드  
-> }  
-> **__except** ( *식* )  
-> {  
->    예외 처리기 코드  
-> }  
+## <a name="syntax"></a>구문
+
+> **__try** {/ / 코드 보호} **__except** ( *식* ) {/ / 예외 처리기 코드}
 
 ## <a name="remarks"></a>설명
 
@@ -74,7 +67,7 @@ ms.locfileid: "45724687"
 
 1. 보호된 섹션이 실행됩니다.
 
-2. 다음의 문에서 실행이 계속 보호 된 섹션이 실행 하는 동안 예외가 발생 하는 경우는 **__except** 절.  
+2. 다음의 문에서 실행이 계속 보호 된 섹션이 실행 하는 동안 예외가 발생 하는 경우는 **__except** 절.
 
 3. 보호 된 섹션이 실행 하는 동안 예외가 발생 하거나 임의의 루틴에서 보호 된 섹션이 호출에 **__except** *식* (호출 합니다 *필터* 식) 평가 값은 예외를 처리 하는 방법을 결정 합니다. 다음과 같은 세 가지 값이 있습니다.
 
@@ -88,10 +81,10 @@ ms.locfileid: "45724687"
 
 각 응용 프로그램에는 자체 예외 처리기를 사용할 수 있습니다.
 
-유효 하지 않은으로 이동 하는 **__try** 문을 하나 내부에서 외부로 점프할 수 있지만. 실행 하는 도중에 프로세스를 종료할 경우 예외 처리기가 호출 되지를 **시도-제외한** 문입니다.  
-  
-자세한 내용은 기술 자료 문서, "Q315937: 방법: Visual C++ 응용 프로그램에서 스택 오버플로 감지"를 참조하십시오.  
-  
+유효 하지 않은으로 이동 하는 **__try** 문을 하나 내부에서 외부로 점프할 수 있지만. 실행 하는 도중에 프로세스를 종료할 경우 예외 처리기가 호출 되지를 **시도-제외한** 문입니다.
+
+자세한 내용은 기술 자료 문서, "Q315937: 방법: Visual C++ 응용 프로그램에서 스택 오버플로 감지"를 참조하십시오.
+
 ## <a name="the-leave-keyword"></a>__leave 키워드
 
 합니다 **__leave** 키워드는 보호 된 섹션 내 에서만 사용할 수는 **시도-제외 하 고** 문과 미치는 보호 된 섹션의 끝으로 이동 하는 것입니다. 실행은 예외 처리기 뒤에 나오는 첫 번째 문에서 계속 됩니다.
@@ -106,12 +99,12 @@ ms.locfileid: "45724687"
 
 내장 함수 `GetExceptionInformation` 예외에 대 한 추가 정보가 포함 된 구조에 대 한 포인터를 반환 합니다. 이 포인터를 통하여, 하드웨어 예외 발생 시의 컴퓨터 상태에 액세스할 수 있습니다. 구조체는 다음과 같습니다.
 
-```cpp  
+```cpp
 typedef struct _EXCEPTION_POINTERS {
     PEXCEPTION_RECORD ExceptionRecord;
     PCONTEXT ContextRecord;
-} EXCEPTION_POINTERS, *PEXCEPTION_POINTERS; 
-```  
+} EXCEPTION_POINTERS, *PEXCEPTION_POINTERS;
+```
 
 포인터 형식 `PEXCEPTION_RECORD` 하 고 `PCONTEXT` 포함 파일에 정의 된 \<winnt.h >, 및 `_EXCEPTION_RECORD` 하 고 `_CONTEXT` 포함 파일에 정의 된 \<excpt.h >
 
@@ -123,10 +116,10 @@ excpt.h 이러한 내장 함수에 대 한 일부 대체 이름을 정의합니�
 
 `GetExceptionCode` 해당 하는 `_exception_code`
 
- `GetExceptionInformation` 해당 하는 `_exception_info`
+`GetExceptionInformation` 해당 하는 `_exception_info`
 
- `AbnormalTermination` 해당 하는 `_abnormal_termination`
-  
+`AbnormalTermination` 해당 하는 `_abnormal_termination`
+
 ## <a name="example"></a>예제
 
 ```cpp
@@ -176,24 +169,25 @@ int main()
     puts("world");
 }
 ```
-  
-## <a name="output"></a>출력  
-  
-```Output 
-hello  
-in try  
-in try  
-in filter.  
-caught AV as expected.  
-in finally. termination:  
-        abnormal  
-in except  
-world  
-```  
 
-**Microsoft 전용 종료**  
+## <a name="output"></a>출력
+
+```Output
+hello
+in try
+in try
+in filter.
+caught AV as expected.
+in finally. termination:
+        abnormal
+in except
+world
+```
+
+**Microsoft 전용 종료**
 
 ## <a name="see-also"></a>참고자료
- [예외 처리기 작성](../cpp/writing-an-exception-handler.md)   
- [구조적된 예외 처리 (C/c + +)](../cpp/structured-exception-handling-c-cpp.md)   
- [키워드](../cpp/keywords-cpp.md)
+
+[예외 처리기 작성](../cpp/writing-an-exception-handler.md)<br/>
+[구조적 예외 처리(C/C++)](../cpp/structured-exception-handling-c-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0261ed9d1e84849f408c3d764693cb95ac7019d2
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 65b8a0420bc996812eed5996757e05d50aafc030
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408068"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023529"
 ---
 # <a name="nothrow-c"></a>nothrow (C++)
 
@@ -30,8 +30,8 @@ ms.locfileid: "39408068"
 
 A **__declspec** 함수 선언에서 사용할 수 있는 확장 된 특성입니다.
 
-## <a name="syntax"></a>구문  
-  
+## <a name="syntax"></a>구문
+
 > *반환 형식은* __declspec (nothrow) [*호출 규칙*] *함수 이름* ([*인수 목록*])
 
 ## <a name="remarks"></a>설명
@@ -57,6 +57,7 @@ void __stdcall f3() throw();
 **Microsoft 전용 종료**
 
 ## <a name="see-also"></a>참고자료
- [__declspec](../cpp/declspec.md)  
- [noexcept](noexcept-cpp.md)  
- [키워드](../cpp/keywords-cpp.md)  
+
+[__declspec](../cpp/declspec.md)<br/>
+[noexcept](noexcept-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)

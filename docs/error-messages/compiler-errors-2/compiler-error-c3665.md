@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e55be277f5016be2440987864e67dfc54f4cd094
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 16d7f64bebfda41a958edf9759359bc38352c086
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33263910"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025258"
 ---
 # <a name="compiler-error-c3665"></a>컴파일러 오류 C3665
-'소멸자': 재정의 지정자는 'keyword' 소멸자/종료자에 사용할 수 없습니다  
-  
- 소멸자 또는 종료자에 허용 되지 않는 키워드를 사용 했습니다.  
-  
- 예를 들어, 소멸자 또는 종료자에는 새 슬롯을 요청할 수 없습니다.  자세한 내용은 참조 [명시적으로 재정의](../../windows/explicit-overrides-cpp-component-extensions.md) 및 [소멸자 및 종료자](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)합니다.  
-  
- 다음 샘플에서는 C3665 오류가 생성 됩니다.  
-  
-```  
-// C3665.cpp  
-// compile with: /clr  
-public ref struct R {  
-   virtual ~R() { }  
-   virtual void a() { }  
-};  
-  
-public ref struct S : R {  
-   virtual ~S() new {}   // C3665  
-   virtual void a() new {}   // OK  
-};  
+
+'소멸자': 재정의 지정자는 'keyword' 소멸자/종료자에서 허용 되지 않습니다
+
+키워드는 소멸자 또는 종료자에서 허용 되지 않는 사용 되었습니다.
+
+예를 들어, 소멸자 또는 종료자에는 새 슬롯을 요청할 수 없습니다.  자세한 내용은 [명시적으로 재정의](../../windows/explicit-overrides-cpp-component-extensions.md) 하 고 [소멸자 및 종료자](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)합니다.
+
+다음 샘플에서는 C3665 오류가 생성 됩니다.
+
+```
+// C3665.cpp
+// compile with: /clr
+public ref struct R {
+   virtual ~R() { }
+   virtual void a() { }
+};
+
+public ref struct S : R {
+   virtual ~S() new {}   // C3665
+   virtual void a() new {}   // OK
+};
 ```

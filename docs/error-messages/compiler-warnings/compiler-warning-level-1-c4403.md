@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33796737e8e9aef031a321364baf4896337c024a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 458e52b86b2ec0cd118343f33c0eede60a0d9ada
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33274476"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035631"
 ---
 # <a name="compiler-warning-level-1-c4403"></a>컴파일러 경고(수준 1) C4403
-PTR 연산자가 잘못 되었습니다  
-  
- PTR 연산자는 인라인 어셈블러 코드에 부적절 하 게 사용 됩니다.  
-  
- 컴파일러에서 PTR 연산자를 무시 합니다.
+
+PTR 연산자가 잘못 되었습니다
+
+PTR 연산자는 인라인 어셈블러 코드로에 부적절 하 게 사용 됩니다.
+
+컴파일러는 PTR 연산자를 무시 합니다.

@@ -1941,12 +1941,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a504df1dfb2826b5056b5feb5b13ac3555515ae
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e0c2138de2becc7afa9d2392c2fa5240b584b6d3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45712805"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018251"
 ---
 # <a name="arm-intrinsics"></a>ARM 내장 함수
 Visual C++ 컴파일러에서 다음 내장 함수를 ARM 아키텍처에서 사용 가능하도록 만듭니다. ARM에 대 한 자세한 내용은 참조는 [ARM 아키텍처 참조 설명서](http://go.microsoft.com/fwlink/p/?LinkId=522049) 하 고 [ARM 어셈블러 도구 가이드](http://go.microsoft.com/fwlink/p/?LinkId=246102) ARM Infocenter 웹 사이트에서 합니다.  
@@ -2162,11 +2162,11 @@ void __iso_volatile_store8(volatile __int8 * Location, __int8 Value)
   
  **매개 변수**  
   
- `Location`  
- 읽거나 쓸 메모리 위치의 주소입니다.  
+*위치*<br/>
+읽거나 쓸 메모리 위치의 주소입니다.  
   
- `Value`  
- 지정 된 메모리 위치 (저장 내장 함수만 해당)에 쓸 값입니다.  
+*Value*<br/>
+지정 된 메모리 위치 (저장 내장 함수만 해당)에 쓸 값입니다.  
   
  **반환 값 (로드 내장 함수만 해당)**  
   
@@ -2209,20 +2209,20 @@ int _MoveFromCoprocessor2(
   
  **매개 변수**  
   
- `coproc`  
- 보조 프로세서 번호의 범위는 0에서 15 사이입니다.  
+*coproc*<br/>
+보조 프로세서 번호의 범위는 0에서 15 사이입니다.  
   
- `opcode1`  
- 보조 프로세서 관련 opcode 범위는 0에서 7 사이입니다.  
+*opcode1*<br/>
+보조 프로세서 관련 opcode 범위는 0에서 7 사이입니다.  
   
- `crn`  
- 0에서 15 사이 범위의 보조 프로세서 레지스터 번호는 첫 번째 피연산자를 명령에 지정합니다.  
+*crn*<br/>
+0에서 15 사이 범위의 보조 프로세서 레지스터 번호는 첫 번째 피연산자를 명령에 지정합니다.  
   
- `crm`  
- 0에서 15 사이 범위의 보조 프로세서 등록 번호는 추가 소스 또는 대상 피연산자를 지정합니다.  
+*crm*<br/>
+0에서 15 사이 범위의 보조 프로세서 등록 번호는 추가 소스 또는 대상 피연산자를 지정합니다.  
   
- `opcode2`  
- 추가 보조 프로세서 관련 opcode 범위는 0에서 7 사이입니다.  
+*opcode2*<br/>
+추가 보조 프로세서 관련 opcode 범위는 0에서 7 사이입니다.  
   
  **반환 값**  
   
@@ -2248,14 +2248,14 @@ unsigned __int64 _MoveFromCoprocessor64(
   
  **매개 변수**  
   
- `coproc`  
- 보조 프로세서 번호의 범위는 0에서 15 사이입니다.  
+*coproc*<br/>
+보조 프로세서 번호의 범위는 0에서 15 사이입니다.  
   
- `opcode1`  
- 보조 프로세서 관련 opcode 범위는 0에서 15 사이입니다.  
+*opcode1*<br/>
+보조 프로세서 관련 opcode 범위는 0에서 15 사이입니다.  
   
- `crm`  
- 0에서 15 사이 범위의 보조 프로세서 등록 번호는 추가 소스 또는 대상 피연산자를 지정합니다.  
+*crm*<br/>
+0에서 15 사이 범위의 보조 프로세서 등록 번호는 추가 소스 또는 대상 피연산자를 지정합니다.  
   
  **값을 반환합니다.**  
   
@@ -2293,23 +2293,23 @@ void _MoveToCoprocessor2(
   
  **매개 변수**  
   
- `value`  
- 보조 프로세서에 쓸 값입니다.  
+*값*<br/>
+보조 프로세서에 쓸 값입니다.  
   
- `coproc`  
- 보조 프로세서 번호의 범위는 0에서 15 사이입니다.  
+*coproc*<br/>
+보조 프로세서 번호의 범위는 0에서 15 사이입니다.  
   
- `opcode1`  
- 보조 프로세서 관련 opcode 범위는 0에서 7 사이입니다.  
+*opcode1*<br/>
+보조 프로세서 관련 opcode 범위는 0에서 7 사이입니다.  
   
- `crn`  
- 0에서 15 사이 범위의 보조 프로세서 레지스터 번호는 첫 번째 피연산자를 명령에 지정합니다.  
+*crn*<br/>
+0에서 15 사이 범위의 보조 프로세서 레지스터 번호는 첫 번째 피연산자를 명령에 지정합니다.  
   
- `crm`  
- 0에서 15 사이 범위의 보조 프로세서 등록 번호는 추가 소스 또는 대상 피연산자를 지정합니다.  
+*crm*<br/>
+0에서 15 사이 범위의 보조 프로세서 등록 번호는 추가 소스 또는 대상 피연산자를 지정합니다.  
   
- `opcode2`  
- 추가 보조 프로세서 관련 opcode 범위는 0에서 7 사이입니다.  
+*opcode2*<br/>
+추가 보조 프로세서 관련 opcode 범위는 0에서 7 사이입니다.  
   
  **반환 값**  
   
@@ -2336,14 +2336,14 @@ void _MoveFromCoprocessor64(
   
  **매개 변수**  
   
- `coproc`  
- 보조 프로세서 번호의 범위는 0에서 15 사이입니다.  
+*coproc*<br/>
+보조 프로세서 번호의 범위는 0에서 15 사이입니다.  
   
- `opcode1`  
- 보조 프로세서 관련 opcode 범위는 0에서 15 사이입니다.  
+*opcode1*<br/>
+보조 프로세서 관련 opcode 범위는 0에서 15 사이입니다.  
   
- `crm`  
- 0에서 15 사이 범위의 보조 프로세서 등록 번호는 추가 소스 또는 대상 피연산자를 지정합니다.  
+*crm*<br/>
+0에서 15 사이 범위의 보조 프로세서 등록 번호는 추가 소스 또는 대상 피연산자를 지정합니다.  
   
  **반환 값**  
   

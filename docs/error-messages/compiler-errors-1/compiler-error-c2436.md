@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb7ca7d92a99092e6c0daf63378ff9bff89c4283
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f32b94f0e68de893897a5bdf48977a47417e6729
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198692"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032993"
 ---
 # <a name="compiler-error-c2436"></a>컴파일러 오류 C2436
-'identifier': 멤버 함수 또는 생성자 이니셜라이저 목록에서 중첩된 클래스  
-  
- 멤버 함수 또는 생성자 이니셜라이저 목록에는 지역 클래스를 초기화할 수 없습니다.  
-  
- 다음 샘플에서는 C2436 오류가 생성 됩니다.  
-  
-```  
-// C2436.cpp  
-struct S{  
-   int f();  
-   struct Inner{  
-      int i;  
-   };  
-   S():f(10), Inner(0){}   // C2436  
-};  
+
+'identifier': 멤버 함수 또는 생성자 이니셜라이저 목록에서 중첩된 클래스
+
+멤버 함수 또는 생성자 이니셜라이저 목록에서 로컬 클래스를 초기화할 수 없습니다.
+
+다음 샘플에서는 C2436 오류가 생성 됩니다.
+
+```
+// C2436.cpp
+struct S{
+   int f();
+   struct Inner{
+      int i;
+   };
+   S():f(10), Inner(0){}   // C2436
+};
 ```

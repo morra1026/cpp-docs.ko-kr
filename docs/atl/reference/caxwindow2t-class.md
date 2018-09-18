@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d45add5f2133191bc046d72e797a7f8374976d63
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 2cfb82cfa21d5cc69e66d7980c4878e1659a7a79
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757922"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036230"
 ---
 # <a name="caxwindow2t-class"></a>CAxWindow2T 클래스
 
@@ -46,7 +46,7 @@ template <class TBase = CWindow>
 
 #### <a name="parameters"></a>매개 변수
 
-*TBase*  
+*TBase*<br/>
 클래스 `CAxWindowT` 파생 됩니다.
 
 ## <a name="members"></a>멤버
@@ -107,7 +107,7 @@ CAxWindow2T(HWND  hWnd = NULL) : CAxWindowT<TBase>(hWnd)
 
 ### <a name="parameters"></a>매개 변수
 
-*hWnd*  
+*hWnd*<br/>
 기존 창 핸들입니다.
 
 ##  <a name="create"></a>  CAxWindow2T::Create
@@ -157,7 +157,7 @@ HRESULT CreateControlLic(
 
 ### <a name="parameters"></a>매개 변수
 
-*bstrLicKey*  
+*bstrLicKey*<br/>
 컨트롤에 대 한 라이선스 키 라이센스가 없는 컨트롤을 만드는 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
@@ -194,7 +194,7 @@ HRESULT CreateControlLicEx(
 
 ### <a name="parameters"></a>매개 변수
 
-*bstrLicKey*  
+*bstrLicKey*<br/>
 컨트롤에 대 한 라이선스 키 라이센스가 없는 컨트롤을 만드는 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
@@ -227,10 +227,10 @@ CAxWindow2T<TBase>& operator= (HWND hWnd);
 
 ### <a name="parameters"></a>매개 변수
 
-*hWnd*  
+*hWnd*<br/>
 기존 창 핸들입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 개요](../../atl/atl-class-overview.md)   
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [컨트롤 포함 FAQ](../../atl/atl-control-containment-faq.md)

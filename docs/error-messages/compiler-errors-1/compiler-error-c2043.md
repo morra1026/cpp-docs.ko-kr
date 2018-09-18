@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d23a71e00fa86b506b4b5dd5b059c778f5dc8749
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d29298a11e0984120a8902b08b96699724669f58
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33166704"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030549"
 ---
 # <a name="compiler-error-c2043"></a>컴파일러 오류 C2043
-break가 잘못되었습니다.  
-  
- [break](../../cpp/break-statement-cpp.md) 는 `do`, `for`, `while`또는 `switch` 문 내에서만 사용할 수 있습니다.
+
+break가 잘못되었습니다.
+
+[break](../../cpp/break-statement-cpp.md) 는 `do`, `for`, `while`또는 `switch` 문 내에서만 사용할 수 있습니다.

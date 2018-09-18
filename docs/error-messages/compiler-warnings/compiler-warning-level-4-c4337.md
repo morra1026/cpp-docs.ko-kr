@@ -16,64 +16,65 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75e77187f871373957ab68108a7fa14c0751a92a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d5b4e72f3dfda903a3d0f4563a730dc44411f79c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295157"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016457"
 ---
 # <a name="compiler-warning-level-4-c4337"></a>컴파일러 경고(수준 4) C4337
-'typelib2'에서 'typelib1' 상호 참조 형식 라이브러리는 자동으로 가져옵니다.  
-  
- Auto_search 특성의 [#import 지시문](../../preprocessor/hash-import-directive-cpp.md) 암시적으로 가져올 형식 라이브러리를 발생 합니다.  
-  
- 다음 두 파일 (midl.exe를 사용 하 여 컴파일된)에서 만든 디스크에 지정 된 두 개의 형식 라이브러리:  
-  
-```  
-// C4337a.idl  
-[  
-  uuid(F87070BA-C6D9-405C-A8E4-8CD9CA25C12B)  
-]  
-library C4337aLib  
-{  
-   [uuid(F87070BA-C6D9-405C-A8E4-8CD9CA25C12C)]  
-   enum E_C4337a  
-   {  
-      one = 0,  
-      two = 1,  
-      three = 2  
-    };  
-};  
-```  
-  
- 및 다음의 두 번째.idl 파일  
-  
-```  
-// C4337b.idl  
-[  
-   uuid(F87070BA-C6D9-405C-A8E4-8CD9CA25C12D)  
-]  
-  
-library C4337bLib  
-{  
-   importlib("c4337a.tlb");  
-  
-   [uuid(F87070BA-C6D9-405C-A8E4-8CD9CA25C12E)]  
-   struct S_C4337b  
-   {  
-      enum E_C4337a e;  
-   };  
-};  
-```  
-  
- 다음 샘플에서는 C4337 오류가 생성 됩니다.  
-  
-```  
-// C4337.cpp  
-// compile with: /W4 /LD  
-#import "c4337b.tlb" auto_search   // C4337  
-// explicitly #import all type libraries to resolve  
-// #import "C4337a.tlb"  
-// #import "C4337b.tlb"  
+
+'typelib2'에서 'typelib1' 상호 참조 된 형식 라이브러리는 자동으로 가져옵니다.
+
+Auto_search 특성 [#import 지시문](../../preprocessor/hash-import-directive-cpp.md) 가져올 암시적으로 형식 라이브러리를 발생 합니다.
+
+다음 두 파일 (midl.exe를 사용 하 여 컴파일된)에서 만들어진 디스크에서 지정 된 두 개의 형식 라이브러리:
+
+```
+// C4337a.idl
+[
+  uuid(F87070BA-C6D9-405C-A8E4-8CD9CA25C12B)
+]
+library C4337aLib
+{
+   [uuid(F87070BA-C6D9-405C-A8E4-8CD9CA25C12C)]
+   enum E_C4337a
+   {
+      one = 0,
+      two = 1,
+      three = 2
+    };
+};
+```
+
+및 다음의 두 번째.idl 파일
+
+```
+// C4337b.idl
+[
+   uuid(F87070BA-C6D9-405C-A8E4-8CD9CA25C12D)
+]
+
+library C4337bLib
+{
+   importlib("c4337a.tlb");
+
+   [uuid(F87070BA-C6D9-405C-A8E4-8CD9CA25C12E)]
+   struct S_C4337b
+   {
+      enum E_C4337a e;
+   };
+};
+```
+
+다음 샘플에서는 C4337 오류가 생성 됩니다.
+
+```
+// C4337.cpp
+// compile with: /W4 /LD
+#import "c4337b.tlb" auto_search   // C4337
+// explicitly #import all type libraries to resolve
+// #import "C4337a.tlb"
+// #import "C4337b.tlb"
 ```

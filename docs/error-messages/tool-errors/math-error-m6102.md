@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9dc1d1064e6ed18870d60e3a421ceec0c54ca855
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ae8ee21b8cb8f2a5bffe471019e65d32c8872af3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316763"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037504"
 ---
 # <a name="math-error-m6102"></a>수학 오류 M6102
-비정상적인  
-  
- 작업 생성 인해 올바르지 않게는 매우 작은 부동 소수점 숫자를 significance의 손실입니다. 비정상적인 부동 소수점 예외는 일반적으로 마스크 트래핑 해야 하며 작업이 수행 되도록 합니다.  
-  
- 프로그램은 130 종료 코드로 종료 됩니다.
+
+비정상
+
+작업 생성으로 인해 유효 하지 않게 하는 매우 작은 부동 소수점 숫자를 significance의 손실입니다. Denormal 부동 소수점 예외는 일반적으로 마스크 트래핑 되 고 작업할 수 있습니다.
+
+프로그램은 130 종료 코드로 종료 됩니다.
