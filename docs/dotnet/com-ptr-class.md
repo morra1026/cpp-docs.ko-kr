@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 27adaa2d91bac38c587ee7e4ec9c805c102d4883
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3cd5b4115d50f9e2db9b1e3dc8a03818e2c8252f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33108290"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066729"
 ---
 # <a name="comptr-class"></a>com::ptr 클래스
-CLR 클래스의 멤버로 사용할 수 있는 COM 개체에 대한 래퍼입니다.  이 래퍼는 또한 COM 개체의 수명 주기 관리를 자동화하여 소멸자가 호출될 때 개체에서 모든 소유 참조를 해제합니다. 유사 [CComPtr 클래스](../atl/reference/ccomptr-class.md)합니다.  
+CLR 클래스의 멤버로 사용할 수 있는 COM 개체에 대한 래퍼입니다.  이 래퍼는 또한 COM 개체의 수명 주기 관리를 자동화하여 소멸자가 호출될 때 개체에서 모든 소유 참조를 해제합니다. 비슷합니다 [CComPtr 클래스](../atl/reference/ccomptr-class.md)합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -38,13 +38,13 @@ ref class ptr;
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `_interface_type`  
- COM 인터페이스.  
+*_interface_type*<br/>
+COM 인터페이스.  
   
 ## <a name="remarks"></a>설명  
  또한 `com::ptr`은 로컬 함수 변수로 사용하여 여러 COM 작업을 간소화하고 수명 주기 관리를 자동화할 수 있습니다.  
   
- A `com::ptr` 함수 매개 변수로 직접 사용할 수 없습니다; 사용 된 [추적 참조 연산자](../windows/tracking-reference-operator-cpp-component-extensions.md) 또는 [개체 연산자 (^)에 대 한 핸들](../windows/handle-to-object-operator-hat-cpp-component-extensions.md) 대신 합니다.  
+ A `com::ptr` 함수 매개 변수로 직접 사용할 수 없습니다; 사용을 [추적 참조 연산자](../windows/tracking-reference-operator-cpp-component-extensions.md) 또는 [개체 연산자 (^)에 대 한 핸들](../windows/handle-to-object-operator-hat-cpp-component-extensions.md) 대신 합니다.  
   
  `com::ptr`은 함수로부터 직접 반환될 수 없습니다. 대신 핸들을 사용하십시오.  
   

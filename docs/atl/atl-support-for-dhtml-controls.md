@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5144a11f0b035822e6f729692569e5e861c44dcc
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 281b767151726f695e23c4cf2b2df26f8690c5c5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758312"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063998"
 ---
 # <a name="atl-support-for-dhtml-controls"></a>DHTML 컨트롤에 대한 ATL 지원
 
@@ -41,26 +41,26 @@ DHTML 컨트롤 DHTML 컨트롤에 추가 디스패치 인터페이스가 포함
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[DHTML 컨트롤 프로젝트의 요소 식별](../atl/identifying-the-elements-of-the-dhtml-control-project.md)  
+[DHTML 컨트롤 프로젝트의 요소 식별](../atl/identifying-the-elements-of-the-dhtml-control-project.md)<br/>
 DHTML 컨트롤 프로젝트의 요소를 설명합니다.
 
-[DHTML에서 C++ 코드 호출](../atl/calling-cpp-code-from-dhtml.md)  
+[DHTML에서 C++ 코드 호출](../atl/calling-cpp-code-from-dhtml.md)<br/>
 DHTML 컨트롤에서 c + + 코드를 호출 하는 예제를 제공 합니다.
 
-[ATL DHTML 컨트롤 만들기](../atl/creating-an-atl-dhtml-control.md)  
+[ATL DHTML 컨트롤 만들기](../atl/creating-an-atl-dhtml-control.md)<br/>
 DHTML 컨트롤을 만드는 단계를 나열 합니다.
 
-[ATL DHTML 컨트롤 테스트](../atl/testing-the-atl-dhtml-control.md)  
+[ATL DHTML 컨트롤 테스트](../atl/testing-the-atl-dhtml-control.md)<br/>
 초기 DHTML 컨트롤 프로젝트 빌드 및 테스트 하는 방법을 보여 줍니다.
 
-[ATL DHTML 컨트롤 수정](../atl/modifying-the-atl-dhtml-control.md)  
+[ATL DHTML 컨트롤 수정](../atl/modifying-the-atl-dhtml-control.md)<br/>
 컨트롤에 일부 기능을 추가 하는 방법을 보여 줍니다.
 
-[변경 된 ATL DHTML 컨트롤 테스트](../atl/testing-the-modified-atl-dhtml-control.md)  
+[변경 된 ATL DHTML 컨트롤 테스트](../atl/testing-the-modified-atl-dhtml-control.md)<br/>
 컨트롤의 추가 기능을 테스트 하는 방법을 보여 줍니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 액티브 템플릿 라이브러리를 사용하여 프로그래밍하는 방법에 대한 개념 항목의 링크를 제공합니다.
 

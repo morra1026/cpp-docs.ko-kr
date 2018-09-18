@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 96b1516970afb8729dc4e35c2226eb6ff00f5c2e
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 1f698114fc1f2285cdcdb91ec1e8317ad1585a6b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692940"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071135"
 ---
 # <a name="copyprivate"></a>copyprivate
-하나 이상의 변수 모든 스레드 간에 공유 되지 않아야 지정 합니다.  
+하나 이상의 변수는 모든 스레드 간에 공유 해야 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -32,16 +32,15 @@ ms.locfileid: "33692940"
 copyprivate(var)  
 ```  
   
-## <a name="remarks"></a>설명  
- 다음은 각 문자에 대한 설명입니다.  
+### <a name="parameters"></a>매개 변수
   
- `var`  
- 하나 이상의 변수를 공유 합니다. 둘 이상의 변수를 지정 하는 경우 변수 이름을 쉼표로 구분 합니다.  
+*var*<br/>
+하나 이상의 변수를 공유 합니다. 둘 이상의 변수를 지정할 경우 쉼표를 사용 하 여 변수 이름을 구분 합니다.  
   
 ## <a name="remarks"></a>설명  
  `copyprivate` 에 적용 된 [단일](../../../parallel/openmp/reference/single.md) 지시문입니다.  
   
- 자세한 내용은 참조 [2.7.2.8 copyprivate](../../../parallel/openmp/2-7-2-8-copyprivate.md)합니다.  
+ 자세한 내용은 [2.7.2.8 copyprivate](../../../parallel/openmp/2-7-2-8-copyprivate.md)합니다.  
   
 ## <a name="example"></a>예제  
   

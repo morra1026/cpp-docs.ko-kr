@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0bdea978fe5012a09325a39f706b40236ff60baa
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a663e1a433a7e2bf2ab0177a75c171aa67e12695
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33164712"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071305"
 ---
 # <a name="compiler-error-c2100"></a>컴파일러 오류 C2100
-잘못 된 간접 참조  
-  
- 간접 참조 연산자 ( `*` ) 포인터 값에 적용 됩니다.  
-  
- 다음 샘플에서는 C2100 오류가 생성 됩니다.  
-  
-```  
-// C2100.cpp  
-int main() {  
-   int r = 0, *s = 0;  
-   s = &r;  
-   *r = 200;   // C2100  
-   *s = 200;   // OK  
-}  
+
+간접 참조가 잘못 되었습니다
+
+간접 참조 연산자 ( `*` ) 포인터가 아닌 값에 적용 됩니다.
+
+다음 샘플에서는 C2100 오류가 생성 됩니다.
+
+```
+// C2100.cpp
+int main() {
+   int r = 0, *s = 0;
+   s = &r;
+   *r = 200;   // C2100
+   *s = 200;   // OK
+}
 ```

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb6a3c5bae4d973ba74155ab018ebea69b0e2b93
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f3853bbe90757563f6c7dc2c9003ed7c5f2a98dc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751402"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065441"
 ---
 # <a name="mfc-support-in-atl-projects"></a>ATL 프로젝트의 MFC 지원입니다.
 
@@ -29,40 +29,40 @@ ms.locfileid: "43751402"
 
 이 옵션은 하지 않는 ATL DLL 프로젝트에만 사용할 수 있습니다.
 
-```  
-class CProjNameApp : public CWinApp  
-{  
+```
+class CProjNameApp : public CWinApp
+{
 public:  
 
 // Overrides  
     virtual BOOL InitInstance();
 virtual int ExitInstance();
-DECLARE_MESSAGE_MAP() 
+DECLARE_MESSAGE_MAP()
 };  
 
-BEGIN_MESSAGE_MAP(CProjNameApp, CWinApp)  
+BEGIN_MESSAGE_MAP(CProjNameApp, CWinApp)
 END_MESSAGE_MAP()  
 
 CProjNameApp theApp;  
 
-BOOL CProjNameApp::InitInstance()  
+BOOL CProjNameApp::InitInstance()
 {  
     return CWinApp::InitInstance();
 
 }  
 
-int CProjNameApp::ExitInstance()  
+int CProjNameApp::ExitInstance()
 {  
     return CWinApp::ExitInstance();
 
-}  
+}
 ```
 
 응용 프로그램 개체 클래스를 볼 수 있습니다 및 해당 `InitInstance` 고 `ExitInstance` 클래스 뷰에서 함수입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 추가](../../ide/adding-a-class-visual-cpp.md)   
-[ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)   
+[클래스 추가](../../ide/adding-a-class-visual-cpp.md)<br/>
+[ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)<br/>
 [기본 ATL 프로젝트 구성](../../atl/reference/default-atl-project-configurations.md)
 

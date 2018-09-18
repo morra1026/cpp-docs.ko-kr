@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a9ee4c25932064ddb76078701a1a6606f27cb1a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a2cdeef97b92550731b06dcb4a1d425d77f5920a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766436"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075162"
 ---
 # <a name="security-global-functions"></a>보안 전역 함수
 
@@ -72,13 +72,13 @@ inline bool AtlGetDacl(
 
 ### <a name="parameters"></a>매개 변수
 
-*hObject*  
+*hObject*<br/>
 보안 정보를 검색 하는 개체에 대 한 핸들입니다.
 
-*ObjectType*  
+*ObjectType*<br/>
 값을 지정 합니다 [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) 식별 되는 개체의 형식을 나타내는 열거형입니다 합니다 *hObject* 매개 변수입니다.
 
-*pDacl*  
+*pDacl*<br/>
 검색된 된 보안 정보를 포함 하는 DACL 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -106,16 +106,16 @@ inline bool AtlSetDacl(
 
 ### <a name="parameters"></a>매개 변수
 
-*hObject*  
+*hObject*<br/>
 보안 정보를 설정 하는 개체에 대 한 핸들입니다.
 
-*ObjectType*  
+*ObjectType*<br/>
 값을 지정 합니다 [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) 식별 되는 개체의 형식을 나타내는 열거형입니다 합니다 *hObject* 매개 변수입니다.
 
-*rDacl*  
+*rDacl*<br/>
 새 보안 정보를 포함 하는 DACL입니다.
 
-*dwInheritanceFlowControl*  
+*dwInheritanceFlowControl*<br/>
 상속 흐름 제어 합니다. 이 값은 0 (기본값), PROTECTED_DACL_SECURITY_INFORMATION 또는 UNPROTECTED_DACL_SECURITY_INFORMATION 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -124,7 +124,7 @@ inline bool AtlSetDacl(
 
 ### <a name="remarks"></a>설명
 
-디버그 빌드에서 어설션 오류가 발생 하는 경우 *hObject* 유효 하지 않은 경우 *dwInheritanceFlowControl* 허용 되는 세 가지 값 중 하나가 아닙니다.  
+디버그 빌드에서 어설션 오류가 발생 하는 경우 *hObject* 유효 하지 않은 경우 *dwInheritanceFlowControl* 허용 되는 세 가지 값 중 하나가 아닙니다.
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** atlsecurity.h 
@@ -145,13 +145,13 @@ inline bool AtlGetGroupSid(
 
 ### <a name="parameters"></a>매개 변수
 
-*hObject*  
+*hObject*<br/>
 보안 정보를 검색 하는 개체에 대 한 핸들입니다.
 
-*ObjectType*  
+*ObjectType*<br/>
 값을 지정 합니다 [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) 식별 되는 개체의 형식을 나타내는 열거형입니다 합니다 *hObject* 매개 변수입니다.
 
-*pSid*  
+*pSid*<br/>
 에 대 한 포인터를 `CSid` 개체는 새 보안 정보가 포함 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -178,13 +178,13 @@ inline bool AtlSetGroupSid(
 
 ### <a name="parameters"></a>매개 변수
 
-*hObject*  
+*hObject*<br/>
 보안 정보를 설정 하는 개체에 대 한 핸들입니다.
 
-*ObjectType*  
+*ObjectType*<br/>
 값을 지정 합니다 [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) 식별 되는 개체의 형식을 나타내는 열거형입니다 합니다 *hObject* 매개 변수입니다.
 
-*rSid*  
+*rSid*<br/>
 `CSid` 새 보안 정보를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -211,13 +211,13 @@ inline bool AtlGetOwnerSid(
 
 ### <a name="parameters"></a>매개 변수
 
-*hObject*  
+*hObject*<br/>
 보안 정보를 검색 하는 개체에 대 한 핸들입니다.
 
-*ObjectType*  
+*ObjectType*<br/>
 값을 지정 합니다 [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) 식별 되는 개체의 형식을 나타내는 열거형입니다 합니다 *hObject* 매개 변수입니다.
 
-*pSid*  
+*pSid*<br/>
 에 대 한 포인터를 `CSid` 개체는 새 보안 정보가 포함 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -244,13 +244,13 @@ inline bool AtlSetOwnerSid(
 
 ### <a name="parameters"></a>매개 변수
 
-*hObject*  
+*hObject*<br/>
 보안 정보를 설정 하는 개체에 대 한 핸들입니다.
 
-*ObjectType*  
+*ObjectType*<br/>
 값을 지정 합니다 [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) 식별 되는 개체의 형식을 나타내는 열거형입니다 합니다 *hObject* 매개 변수입니다.
 
-*rSid*  
+*rSid*<br/>
 `CSid` 새 보안 정보를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -278,16 +278,16 @@ inline bool AtlGetSacl(
 
 ### <a name="parameters"></a>매개 변수
 
-*hObject*  
+*hObject*<br/>
 보안 정보를 검색 하는 개체에 대 한 핸들입니다.
 
-*ObjectType*  
+*ObjectType*<br/>
 값을 지정 합니다 [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) 식별 되는 개체의 형식을 나타내는 열거형입니다 합니다 *hObject* 매개 변수입니다.
 
-*pSacl*  
+*pSacl*<br/>
 검색된 된 보안 정보를 포함할 SACL 개체에 대 한 포인터입니다.
 
-*bRequestNeededPrivileges*  
+*bRequestNeededPrivileges*<br/>
 True 이면 함수는 SE_SECURITY_NAME 권한을 설정 하 고 완료 되 면 복원 하려고 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -320,19 +320,19 @@ inline bool AtlSetSacl(
 
 ### <a name="parameters"></a>매개 변수
 
-*hObject*  
+*hObject*<br/>
 보안 정보를 설정 하는 개체에 대 한 핸들입니다.
 
-*ObjectType*  
+*ObjectType*<br/>
 값을 지정 합니다 [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) 식별 되는 개체의 형식을 나타내는 열거형입니다 합니다 *hObject* 매개 변수입니다.
 
-*rSacl*  
+*rSacl*<br/>
 새 보안 정보를 포함 하는 SACL입니다.
 
-*dwInheritanceFlowControl*  
+*dwInheritanceFlowControl*<br/>
 상속 흐름 제어 합니다. 이 값은 0 (기본값), PROTECTED_SACL_SECURITY_INFORMATION 또는 UNPROTECTED_SACL_SECURITY_INFORMATION 수 있습니다.
 
-*bRequestNeededPrivileges*  
+*bRequestNeededPrivileges*<br/>
 True 이면 함수는 SE_SECURITY_NAME 권한을 설정 하 고 완료 되 면 복원 하려고 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -369,19 +369,19 @@ bool bRequestNeededPrivileges = true) throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*pszObjectName*  
+*pszObjectName*<br/>
 보안 정보를 검색할 개체의 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
-*ObjectType*  
+*ObjectType*<br/>
 값을 지정 합니다 [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) 식별 되는 개체의 형식을 나타내는 열거형입니다 합니다 *pszObjectName* 매개 변수입니다.
 
-*pSecurityDescriptor*  
+*pSecurityDescriptor*<br/>
 요청 된 보안 설명자를 수신 하는 개체입니다.
 
-*requestedInfo*  
+*requestedInfo*<br/>
 집합이 [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) 비트 보안 정보를 검색 하 형식을 나타내는 플래그입니다. 이 매개 변수는 다음 값의 조합일 수 있습니다.
 
-*bRequestNeededPrivileges*  
+*bRequestNeededPrivileges*<br/>
 True 이면 함수는 SE_SECURITY_NAME 권한을 설정 하 고 완료 되 면 복원 하려고 합니다.
 
 ### <a name="return-value"></a>반환 값

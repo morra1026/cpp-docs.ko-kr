@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a65ca2c53ba2801f861471c66f7e1f2ec8766345
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b271875173bf0e55d94989d60a1c8f7aaf408b2a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319080"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065584"
 ---
 # <a name="project-build-error-prj0034"></a>프로젝트 빌드 오류 PRJ0034
-프로젝트 수준의 사용자 지정에 대 한 ' 추가 종속성 ' 속성이 'macro_expansion'으로 계산 되는 포함 된 단계 '매크로를' 빌드합니다.  
-  
- 프로젝트에서 사용자 지정 빌드 단계에는 추가 종속성 매크로 확인 문제 때문에 오류가 있습니다. 이 오류는 경로가 잘못 되었습니다, 문자 또는 파일 경로에서 허용 하지 않는 문자 조합을 포함 된 의미할 수도 있습니다.  
-  
- 이 오류를 해결 하려면 매크로 수정 하거나 경로 지정을 수정 합니다. 확인 된 경로 프로젝트 디렉터리에서 절대 경로입니다.
+
+프로젝트 수준의 사용자 지정에 대 한 ' 추가 종속성 ' 속성에 포함 된 단계 '매크로를' out 'macro_expansion' 계산 되는 빌드합니다.
+
+프로젝트에서 사용자 지정 빌드 단계 추가 종속성 매크로 평가 문제 때문에 오류가 포함 되어 있습니다. 이 오류는 경로 잘못 구성 된 문자 또는 파일 경로에서 사용할 수 없는 문자 조합을 포함 하는 것을 의미할 수도 수 있습니다.
+
+이 오류를 해결 하려면 매크로 수정 하거나 경로 지정을 수정 합니다. 확인 된 경로가 프로젝트 디렉터리의 절대 경로 보여 줍니다.

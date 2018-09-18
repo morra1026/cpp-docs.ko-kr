@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1684c8fa380a7d17c802ad404c38c59f2257c979
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: eea09c8490bd2b34cc4c5cd99946d0d9dca7a44c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752029"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068216"
 ---
 # <a name="iobjectwithsiteimpl-class"></a>IObjectWithSiteImpl 클래스
 
@@ -42,7 +42,7 @@ template <class T>
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `IObjectWithSiteImpl`합니다.
 
 ## <a name="members"></a>멤버
@@ -117,7 +117,7 @@ HRESULT SetChildSite(IUnknown* pUnkSite);
 
 ### <a name="parameters"></a>매개 변수
 
-*pUnkSite*  
+*pUnkSite*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 이 개체를 관리 하는 사이트의 인터페이스 포인터입니다. NULL 인 경우 개체를 호출 해야 `IUnknown::Release` 이때 개체가 더 이상 인식 사이트 기존 사이트의.
 
 ### <a name="return-value"></a>반환 값

@@ -16,28 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ad7336834d38f7236b88debc28035d8f7d68e88
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 09b8284626a6af6851147dc36b67e25b76f8eb01
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236646"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069522"
 ---
-# <a name="compiler-error-c2823"></a>컴파일러 오류 C2823  
-  
-> typedef 템플릿이 잘못 되었습니다.  
-  
-서식 파일에서 허용 되지 않는 `typedef` 정의 합니다.  
-  
-## <a name="example"></a>예제  
-  
-다음 샘플에서는 C2823, 경고가 발생 하 고를 해결 하는 방법을 보여 줍니다.  
-  
-```cpp  
-// C2823.cpp  
-template<class T>  
-typedef struct x {  
-   T i;   // C2823 can't use T, specify data type and delete template  
-   int i;   // OK  
-} x1;  
+# <a name="compiler-error-c2823"></a>컴파일러 오류 C2823
+
+> typedef 템플릿이 잘못 되었습니다.
+
+서식 파일에서 허용 되지 않는 `typedef` 정의 합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플 C2823, 생성 및이 해결 하는 방법을 보여 줍니다.
+
+```cpp
+// C2823.cpp
+template<class T>
+typedef struct x {
+   T i;   // C2823 can't use T, specify data type and delete template
+   int i;   // OK
+} x1;
 ```

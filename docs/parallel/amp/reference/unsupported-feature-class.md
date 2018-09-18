@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ccc811e3459fe668b6a8dbd255007cb60bf0cf1
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 7472e8fa8932983569ad9e2a9c1fe6cdfc9318b7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33696138"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059685"
 ---
 # <a name="unsupportedfeature-class"></a>unsupported_feature 클래스
-지원 되지 않는 기능을 사용할 때 throw 되는 예외입니다.  
+지원 되지 않는 기능을 사용 하는 경우 throw 되는 예외입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,7 +40,7 @@ class unsupported_feature : public runtime_exception;
   
 |이름|설명|  
 |----------|-----------------|  
-|[unsupported_feature 생성자](#ctor)|새 인스턴스를 생성 된 `unsupported_feature` 예외입니다.|  
+|[unsupported_feature 생성자](#ctor)|새 인스턴스를 생성 합니다 `unsupported_feature` 예외입니다.|  
 
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
@@ -64,8 +64,8 @@ unsupported_feature() throw();
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Message`  
- 오류에 대한 설명입니다.  
+*메시지 (_m)*<br/>
+오류에 대한 설명입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `unsupported_feature` 개체  

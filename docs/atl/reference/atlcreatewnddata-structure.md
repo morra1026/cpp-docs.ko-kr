@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5751fa3c5c8bc20f287ca3c48d885fc41c60ba0
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 71c0fb14574aedb74d756e72a93cd0dc626ba086
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764331"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057381"
 ---
 # <a name="atlcreatewnddata-structure"></a>_AtlCreateWndData 구조체
 
@@ -42,13 +42,13 @@ ms.locfileid: "43764331"
 
 ## <a name="members"></a>멤버
 
-`m_pThis`  
+`m_pThis`<br/>
 합니다 **이** 창 프로시저에서 클래스 인스턴스에 대 한 액세스를 가져오는 데 대 한 포인터입니다.
 
-`m_dwThreadID`  
+`m_dwThreadID`<br/>
 현재 클래스 인스턴스의 스레드 ID입니다.
 
-`m_pNext`  
+`m_pNext`<br/>
 다음에 대 한 포인터 `_AtlCreateWndData` 개체입니다.
 
 ## <a name="requirements"></a>요구 사항

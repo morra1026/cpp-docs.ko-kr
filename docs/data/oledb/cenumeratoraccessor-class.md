@@ -48,14 +48,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0af12e1cd2f9925d5b7df8ccf16a7838a2e8c78b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d87bcf20957b69577e709c8fcbd2c6a5f3c9b770
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215613"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075925"
 ---
 # <a name="cenumeratoraccessor-class"></a>CEnumeratorAccessor 클래스
+
 사용한 [CEnumerator](../../data/oledb/cenumerator-class.md) 열거자 행 집합에서 데이터를 액세스할 수 있습니다.  
   
 ## <a name="syntax"></a>구문
@@ -65,7 +66,8 @@ class CEnumeratorAccessor
 ```  
 
 ## <a name="requirements"></a>요구 사항  
- **헤더:** atldbcli.h  
+
+**헤더:** atldbcli.h  
   
 ## <a name="members"></a>멤버  
   
@@ -80,9 +82,11 @@ class CEnumeratorAccessor
 |[m_szParseName](#szparsename)|에 전달할 문자열 [IParseDisplayName](/windows/desktop/api/oleidl/nn-oleidl-iparsedisplayname) 데이터 원본 또는 열거자에 대 한 모니커를 가져오려고 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 행 집합은 데이터 원본 및 현재 열거자에서 표시 되는 열거자 구성 됩니다.  
+
+이 행 집합은 데이터 원본 및 현재 열거자에서 표시 되는 열거자 구성 됩니다.  
   
 ## <a name="bisparent"></a> Cenumeratoraccessor:: M_bisparent
+
 있는지 여부를 나타내는 열거자 부모 열거자의 경우 행이 열거자는 변수입니다.  
   
 ### <a name="syntax"></a>구문  
@@ -92,9 +96,11 @@ VARIANT_BOOL m_bIsParent;
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다. 
+
+참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다. 
 
 ## <a name="ntype"></a> Cenumeratoraccessor:: M_ntype
+
 행이 데이터 원본 또는 열거자를 설명 하는지 여부를 나타내는 변수입니다.  
   
 ### <a name="syntax"></a>구문  
@@ -104,9 +110,11 @@ USHORT m_nType;
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
+
+참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
 
 ## <a name="szdescription"></a> Cenumeratoraccessor:: M_szdescription
+
 데이터 원본 또는 열거자의 설명입니다.  
   
 ### <a name="syntax"></a>구문  
@@ -116,9 +124,11 @@ WCHAR m_szDescription[129];
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
+
+참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
 
 ## <a name="szname"></a> Cenumeratoraccessor:: M_szname
+
 데이터 원본 또는 열거자의 이름입니다.  
   
 ### <a name="syntax"></a>구문  
@@ -128,9 +138,11 @@ WCHAR m_szName[129];
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.  
+
+참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.  
 
 ## <a name="szparsename"></a> Cenumeratoraccessor:: M_szparsename
+
 에 전달할 문자열 [IParseDisplayName](/windows/desktop/api/oleidl/nn-oleidl-iparsedisplayname) 데이터 원본 또는 열거자에 대 한 모니커를 가져오려고 합니다.  
   
 ### <a name="syntax"></a>구문  
@@ -140,8 +152,10 @@ WCHAR m_szParseName[129];
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.  
+
+참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)
+
+[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 715fcc37c41251b0a42fd6508f8a358758105a1f
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 47cd4cc765459acc6270c64b6cc37fe328f36757
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680197"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069419"
 ---
 # <a name="tiledindex-class"></a>tiled_index 클래스
 인덱스를 제공 된 [tiled_extent](tiled-extent-class.md) 개체입니다. 이 클래스는 로컬 타일 원본에 상대적인 및 전역 원본과 요소에 액세스 하는 속성에 있습니다. 바둑판식된 공간에 대 한 자세한 내용은 참조 하세요. [를 사용 하 여 타일](../../../parallel/amp/using-tiles.md)합니다.  
@@ -62,14 +62,14 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `_Dim0`  
- 최대 유효 치수의 길이입니다.  
+*_Dim0*<br/>
+최대 유효 치수의 길이입니다.  
   
- `_Dim1`  
- 다음 최대 유효 치수의 길이입니다.  
+*_Dim1*<br/>
+다음 최대 유효 치수의 길이입니다.  
   
- `_Dim2`  
- 최소 유효 치수의 길이입니다.  
+*_Dim2*<br/>
+최소 유효 치수의 길이입니다.  
   
 ## <a name="members"></a>멤버  
   
@@ -140,23 +140,23 @@ tiled_index(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `_Global`  
- 전역 [인덱스](index-class.md) 생성 된 `tiled_index`합니다.  
+*_Global*<br/>
+전역 [인덱스](index-class.md) 생성 된 `tiled_index`합니다.  
   
- `_Local`  
- 로컬 [인덱스](index-class.md) 생성 된 `tiled_index`  
+*(_L)*<br/>
+로컬 [인덱스](index-class.md) 생성 된 `tiled_index`  
   
- `_Tile`  
- 타일 [인덱스](index-class.md) 생성 된 `tiled_index`  
+*_Tile*<br/>
+타일 [인덱스](index-class.md) 생성 된 `tiled_index`  
   
- `_Tile_origin`  
- 타일 원본 [인덱스](index-class.md) 생성 된 `tiled_index`  
+*_Tile_origin*<br/>
+타일 원본 [인덱스](index-class.md) 생성 된 `tiled_index`  
   
- `_Barrier`  
- 합니다 [tile_barrier](tile-barrier-class.md) 생성 된 개체 `tiled_index`합니다.  
+*_Barrier*<br/>
+합니다 [tile_barrier](tile-barrier-class.md) 생성 된 개체 `tiled_index`합니다.  
   
- `_Other`  
- 합니다 `tile_index` 복사할 개체를 생성 된 `tiled_index`합니다.  
+*_Other*<br/>
+합니다 `tile_index` 복사할 개체를 생성 된 `tiled_index`합니다.  
   
 ## <a name="overloads"></a>Overloads  
   

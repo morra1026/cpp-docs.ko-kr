@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a1c25f87913de312ca766b05edbac39f7191ff0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c642c678c7db29b9826449731f07ad90bc865294
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33318989"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062061"
 ---
 # <a name="project-build-error-prj0027"></a>프로젝트 빌드 오류 PRJ0027
-사용자의 ANSI 코드 페이지로 변환할 수 없는 콘텐츠를 포함 하는 '콘텐츠' 유니코드 로그 메시지입니다.  
-  
- 일반적으로 일괄 처리 및/또는 응답 파일 만들기의 오류와 함께에서이 경고가 표시 됩니다.  
-  
- 이 오류에 대 한 정밀도를 ANSI 사용 하거나 코드 페이지를 컴퓨터에 설치 하 고 시스템 기본값으로 설정 하는 빌드 로그의 내용을 업데이트 하는입니다.
+
+유니코드 로그 메시지를 '콘텐츠' 사용자의 ANSI 코드 페이지로 변환할 수 없는 콘텐츠를 포함 합니다.
+
+일반적으로 batch 및/또는 응답 파일 만들기의 오류와 함께에서이 경고가 표시 됩니다.
+
+이 오류에 대 한 해결책은 ANSI를 사용 하도록 또는 코드 페이지가 컴퓨터에 설치 하 고 시스템 기본값으로 설정 하려면 빌드 로그의 내용을 업데이트 합니다.

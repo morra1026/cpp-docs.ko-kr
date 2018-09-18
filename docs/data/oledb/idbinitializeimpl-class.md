@@ -50,14 +50,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f59619db743d8f8d08b2a202e992cdfcd532e1e8
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 4f44d43d48f862ca2ca5465d5ea9ee44d0e9040e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42572789"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072422"
 ---
 # <a name="idbinitializeimpl-class"></a>IDBInitializeImpl 클래스
+
 에 대 한 구현을 제공 합니다 [IDBInitialize](/previous-versions/windows/desktop/ms713706\(v=vs.85\)) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
@@ -68,11 +69,13 @@ class ATL_NO_VTABLE IDBInitializeImpl : public IDBInitialize
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- *T*  
- 클래스에서 파생 된 `IDBInitializeImpl`합니다.  
+
+*T*<br/>
+클래스에서 파생 된 `IDBInitializeImpl`합니다.  
 
 ## <a name="requirements"></a>요구 사항  
- **헤더:** atldb.h  
+
+**헤더:** atldb.h  
   
 ## <a name="members"></a>멤버  
   
@@ -97,9 +100,11 @@ class ATL_NO_VTABLE IDBInitializeImpl : public IDBInitialize
 |[m_pCUtlPropInfo](#pcutlpropinfo)|DB 속성 정보는 구현에 대 한 포인터입니다.|  
   
 ## <a name="remarks"></a>설명  
- 데이터 원본 개체에서 열거자의 선택적 인터페이스에는 필수 인터페이스입니다.  
+
+데이터 원본 개체에서 열거자의 선택적 인터페이스에는 필수 인터페이스입니다.  
 
 ## <a name="idbinitializeimpl"></a> Idbinitializeimpl:: Idbinitializeimpl
+
 생성자입니다.  
   
 ### <a name="syntax"></a>구문  
@@ -109,9 +114,11 @@ IDBInitializeImpl();
 ```  
   
 ### <a name="remarks"></a>설명  
- 모든 데이터 멤버를 초기화합니다. 
+
+모든 데이터 멤버를 초기화합니다. 
   
 ## <a name="initialize"></a> Idbinitializeimpl:: Initialize
+
 속성 지원을 준비하여 데이터 소스 개체를 초기화합니다.  
   
 ### <a name="syntax"></a>구문  
@@ -121,9 +128,11 @@ STDMETHOD(Initialize)(void);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [idbinitialize:: Initialize](/previous-versions/windows/desktop/ms718026\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 
+
+참조 [idbinitialize:: Initialize](/previous-versions/windows/desktop/ms718026\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 
 
 ## <a name="uninitialize"></a> Idbinitializeimpl:: Uninitialize
+
 위치 데이터 원본 속성 지원과 같은 내부 리소스를 해제 하 여 초기화 되지 않은 상태로 개체입니다.  
   
 ### <a name="syntax"></a>구문  
@@ -133,9 +142,11 @@ STDMETHOD(Uninitialize)(void);
 ```  
   
 ### <a name="remarks"></a>설명  
- 참조 [idbinitialize:: Uninitialize](/previous-versions/windows/desktop/ms719648\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.
+
+참조 [idbinitialize:: Uninitialize](/previous-versions/windows/desktop/ms719648\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="dwstatus"></a> Idbinitializeimpl:: M_dwstatus
+
 데이터 원본 플래그입니다.  
   
 ### <a name="syntax"></a>구문  
@@ -145,7 +156,8 @@ DWORD m_dwStatus;
 ```  
   
 ### <a name="remarks"></a>설명  
- 이러한 플래그를 지정 하거나 데이터 원본 개체에 대 한 다양 한 특성의 상태를 나타냅니다. 다음 중 하나 이상 포함 **enum** 값:  
+
+이러한 플래그를 지정 하거나 데이터 원본 개체에 대 한 다양 한 특성의 상태를 나타냅니다. 다음 중 하나 이상 포함 **enum** 값:  
   
 ```cpp  
 enum DATASOURCE_FLAGS {  
@@ -162,6 +174,7 @@ enum DATASOURCE_FLAGS {
 |`DSF_INITIALIZED`|데이터 원본이 초기화 하는 경우 설정 합니다.|  
 
 ## <a name="pcutlpropinfo"></a> Idbinitializeimpl:: M_pcutlpropinfo
+
 DB 속성 정보에 대 한 구현 개체에 대 한 포인터입니다.  
   
 ### <a name="syntax"></a>구문  
@@ -171,5 +184,6 @@ CUtlPropInfo< T >* m_pCUtlPropInfo;
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

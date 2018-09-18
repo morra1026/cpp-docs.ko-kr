@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e35cf6effdbb5aaed5a898bf19a6b42c3df519e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7a0f0ab4b9c6a2dd2ae69f0370f808e32e496b97
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33234726"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059084"
 ---
 # <a name="compiler-error-c2681"></a>컴파일러 오류 C2681
-'type': 이름에 대 한 잘못 된 식 형식  
-  
- 캐스팅 연산자를 잘못 된 형식에서 변환 하려고 했습니다. 예를 들어, 사용 하는 경우는 [dynamic_cast](../../cpp/dynamic-cast-operator.md) 포인터 형식으로 소스 식은 식을 변환 연산자는 포인터 여야 합니다.  
-  
- 다음 샘플에서는 C2681 오류가 생성 됩니다.  
-  
-```  
-// C2681.cpp  
-class A { virtual void f(); };  
-  
-void g(int i) {  
-    A* pa;  
-    pa = dynamic_cast<A*>(i);  // C2681  
-}  
+
+'type': 이름에 대 한 잘못 된 식 형식
+
+캐스팅 연산자를 잘못 된 형식에서 변환 하려고 합니다. 예를 들어, 사용 하는 경우는 [dynamic_cast](../../cpp/dynamic-cast-operator.md) 포인터 형식, 원본 식으로 식을 변환 연산자는 포인터 여야 합니다.
+
+다음 샘플에서는 C2681 오류가 생성 됩니다.
+
+```
+// C2681.cpp
+class A { virtual void f(); };
+
+void g(int i) {
+    A* pa;
+    pa = dynamic_cast<A*>(i);  // C2681
+}
 ```

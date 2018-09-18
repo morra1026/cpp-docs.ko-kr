@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae5e16959597e16f25320778be4d4b45ca5950e0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 98f6fe881b2cdc46d4d2848d6faf850381f54c7b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226976"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062191"
 ---
 # <a name="fatal-error-c1383"></a>심각한 오류 C1383
-컴파일러 옵션 /GL은 설치된 공용 언어 런타임 버전과 호환되지 않습니다.  
-  
- 최신 컴파일러에서 이전 버전의 공용 언어 런타임을 사용하며 **/clr** 및 **/GL.** 으로 컴파일하는 경우 C1383이 발생합니다.  
-  
- 해결하려면 **/clr** 과 함께 **/GL** 을 사용하지 않거나, 컴파일러와 함께 제공된 공용 언어 런타임 버전을 설치합니다.  
-  
- 자세한 내용은 [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) 및 [/GL (Whole Program Optimization)](../../build/reference/gl-whole-program-optimization.md)를 참조하세요.
+
+컴파일러 옵션 /GL은 설치된 공용 언어 런타임 버전과 호환되지 않습니다.
+
+최신 컴파일러에서 이전 버전의 공용 언어 런타임을 사용하며 **/clr** 및 **/GL.** 으로 컴파일하는 경우 C1383이 발생합니다.
+
+해결하려면 **/clr** 과 함께 **/GL** 을 사용하지 않거나, 컴파일러와 함께 제공된 공용 언어 런타임 버전을 설치합니다.
+
+자세한 내용은 [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) 및 [/GL (Whole Program Optimization)](../../build/reference/gl-whole-program-optimization.md)를 참조하세요.

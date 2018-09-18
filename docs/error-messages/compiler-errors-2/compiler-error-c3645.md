@@ -16,24 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a711f37e3ab54de5e3cfad77b82fbd603edfaf6e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2d310ab3a9a4bd0b31b9e6295a93a571a54f585b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33263829"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068912"
 ---
 # <a name="compiler-error-c3645"></a>컴파일러 오류 C3645
-'function': __clrcall을 네이티브 코드로 컴파일된 함수에서 사용할 수 없습니다  
-  
- 함수에 일부 키워드의 존재 여부도 인해 네이티브로 컴파일하도록 함수 됩니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3645 오류가 발생 합니다.  
-  
-```  
-// C3645.cpp  
-// compile with: /clr /c  
-#pragma unmanaged   
-int __clrcall dog() {}   // C3645  
+
+'function': __clrcall을 네이티브 코드로 컴파일된 함수에 사용할 수 없습니다
+
+함수에서 일부 키워드의 현재 상태를 사용 하면 함수가를 네이티브로 컴파일하도록 합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플 C3645를 생성합니다.
+
+```
+// C3645.cpp
+// compile with: /clr /c
+#pragma unmanaged
+int __clrcall dog() {}   // C3645
 ```

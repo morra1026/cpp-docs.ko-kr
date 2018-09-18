@@ -17,18 +17,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dce01ecbc6913c844cadcf2d3f761cfe815f68a2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4ee5fc5467e656bd811c89f78ecf7d36f6df1b54
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301530"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066388"
 ---
 # <a name="expression-evaluator-error-cxx0055"></a>식 계산기 오류 CXX0055
-컨텍스트 연산자의 기호가 정확 하지 않습니다  
-  
- 컨텍스트 연산자의 기호가 (**{}**) 프로그램에서 둘 이상의 기호를 가리킵니다.  
-  
- 범위 결정 연산자 (`::`)는 모호성을 해결할 수 있습니다.  
-  
- 이 오류는 can0055와 동일 합니다.
+
+컨텍스트 연산자에서 모호한 기호
+
+컨텍스트 연산자에서 기호 (**{}**) 프로그램에 둘 이상의 기호를 가리킵니다.
+
+범위 결정 연산자 (`::`) 모호성을 해결 하는 일을 할 수 있습니다.
+
+이 오류는 can0055와 동일 합니다.

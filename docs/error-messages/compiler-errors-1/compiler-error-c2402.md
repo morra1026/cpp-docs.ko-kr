@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6e60d57942981aef6e613c1b4df36facfe27c71
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 74f61d7ca557ece5d15150022550288aa60eb922
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196220"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063270"
 ---
 # <a name="compiler-error-c2402"></a>컴파일러 오류 C2402
-'identifier': 레지스터는 'context'에서 인덱스여야 합니다.  
-  
- 간접 메모리 피연산자에 사용되는 레지스터는 이 컨텍스트에서 인덱스 레지스터여야 합니다.
+
+'identifier': 레지스터는 'context'에서 인덱스여야 합니다.
+
+간접 메모리 피연산자에 사용되는 레지스터는 이 컨텍스트에서 인덱스 레지스터여야 합니다.

@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 006e19565f6e7393bb081be72ef64aae03361a6d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1eb7743fed9f7269e3d81ddd7cefdd37c9a7b2a0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33256950"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075159"
 ---
 # <a name="compiler-error-c2958"></a>컴파일러 오류 C2958
-'위치'에서 찾이 왼쪽된 구분 기호 짝이 맞지 않습니다 올바르게  
-  
- 구분 기호는 일치 하지 않습니다.  
-  
- 이 오류는 짝이 맞지 않는 괄호 함수 템플릿 선언에서 발생할 수 있습니다.
+
+'location'에 있는 왼쪽된 구분 기호 짝이 맞지 않습니다 올바르게
+
+구분 기호를 제대로 일치 되지 됩니다.
+
+이 오류는 짝이 맞지 않는 괄호 함수 템플릿 선언에서 발생할 수 있습니다.

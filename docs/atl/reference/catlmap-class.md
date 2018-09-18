@@ -47,12 +47,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c1095df6caae94cac86e5e205507e0ed9eeb98e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 564ff010756a2afa9210fc71dd47fce2b72dcbca
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755088"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075724"
 ---
 # <a name="catlmap-class"></a>CAtlMap 클래스
 
@@ -70,15 +70,16 @@ class CAtlMap
 
 #### <a name="parameters"></a>매개 변수
 
-*K*  
+*K*<br/>
 Key 요소 형식입니다.
 
-*V* 값 요소 형식입니다.
+*V*<br/>
+값 요소 형식입니다.
 
-*KTraits*  
+*KTraits*<br/>
 복사 하거나 주요 요소를 이동 하는 데 사용 되는 코드입니다. 참조 [CElementTraits 클래스](../../atl/reference/celementtraits-class.md) 대 한 자세한 내용은 합니다.
 
-*VTraits*  
+*VTraits*<br/>
 값 요소 이동 하거나 복사 하는 데 사용 되는 코드입니다.
 
 ## <a name="members"></a>멤버
@@ -195,19 +196,19 @@ CAtlMap(
 
 ### <a name="parameters"></a>매개 변수
 
-*nBins*  
+*nBins*<br/>
 저장 된 요소에 대 한 포인터를 제공 하는 bin의 수입니다. Bin에 대 한 설명은이 항목의 뒷부분에 나오는 설명을 참조 하세요.
 
-*fOptimalLoad*  
+*fOptimalLoad*<br/>
 최적의 부하 비율입니다.
 
-*fLoThreshold*  
+*fLoThreshold*<br/>
 부하 비율에 대 한 임계값입니다.
 
-*fHiThreshold*  
+*fHiThreshold*<br/>
 부하 비율에 대 한 상한 임계값입니다.
 
-*nBlockSize*  
+*nBlockSize*<br/>
 블록 크기입니다.
 
 ### <a name="remarks"></a>설명
@@ -297,13 +298,13 @@ CPair* GetAt(POSITION& pos) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 에 대 한 이전 호출에서 반환 되는 위치 카운터 [CAtlMap::GetNextAssoc](#getnextassoc) 하거나 [CAtlMap::GetStartPosition](#getstartposition)합니다.
 
-*key*  
+*key*<br/>
 템플릿 매개 변수 맵의 키의 형식을 지정 합니다.
 
-*값*  
+*값*<br/>
 템플릿 매개 변수 맵의 값의 형식을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -352,7 +353,7 @@ const K& GetKeyAt(POSITION pos) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 에 대 한 이전 호출에서 반환 되는 위치 카운터 [CAtlMap::GetNextAssoc](#getnextassoc) 하거나 [CAtlMap::GetStartPosition](#getstartposition)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -374,7 +375,7 @@ const CPair* GetNext(POSITION& pos) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 에 대 한 이전 호출에서 반환 되는 위치 카운터 [CAtlMap::GetNextAssoc](#getnextassoc) 하거나 [CAtlMap::GetStartPosition](#getstartposition)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -394,13 +395,13 @@ void GetNextAssoc(
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 에 대 한 이전 호출에서 반환 되는 위치 카운터 [CAtlMap::GetNextAssoc](#getnextassoc) 하거나 [CAtlMap::GetStartPosition](#getstartposition)합니다.
 
-*key*  
+*key*<br/>
 템플릿 매개 변수 맵의 키의 형식을 지정 합니다.
 
-*값*  
+*값*<br/>
 템플릿 매개 변수 맵의 값의 형식을 지정 합니다.
 
 ### <a name="remarks"></a>설명
@@ -417,7 +418,7 @@ const K& GetNextKey(POSITION& pos) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 에 대 한 이전 호출에서 반환 되는 위치 카운터 [CAtlMap::GetNextAssoc](#getnextassoc) 하거나 [CAtlMap::GetStartPosition](#getstartposition)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -439,7 +440,7 @@ const V& GetNextValue(POSITION& pos) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 에 대 한 이전 호출에서 반환 되는 위치 카운터 [CAtlMap::GetNextAssoc](#getnextassoc) 하거나 [CAtlMap::GetStartPosition](#getstartposition)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -488,7 +489,7 @@ const V& GetValueAt(POSITION pos) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 에 대 한 이전 호출에서 반환 되는 위치 카운터 [CAtlMap::GetNextAssoc](#getnextassoc) 하거나 [CAtlMap::GetStartPosition](#getstartposition)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -507,10 +508,10 @@ bool InitHashTable(
 
 ### <a name="parameters"></a>매개 변수
 
-*nBins*  
+*nBins*<br/>
 해시 테이블에서 사용 하는 bin의 수입니다. 참조 [CAtlMap::CAtlMap](#catlmap) 설명 합니다.
 
-*bAllocNow*  
+*bAllocNow*<br/>
 메모리를 할당 해야 하는 경우 플래그 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
@@ -567,10 +568,10 @@ CPair* Lookup(KINARGTYPE key) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 조회 요소를 식별 하는 키를 지정 합니다.
 
-*값*  
+*값*<br/>
 조회 값을 수신 하는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -591,7 +592,7 @@ V& operator[](kinargtype key) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 키를 추가 하거나 바꿀 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -612,7 +613,7 @@ void Rehash(UINT nBins = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*nBins*  
+*nBins*<br/>
 새 해시 테이블에서 사용 하는 bin 수입니다. 참조 [CAtlMap::CAtlMap](#catlmap) 설명 합니다.
 
 ### <a name="remarks"></a>설명
@@ -641,7 +642,7 @@ void RemoveAtPos(POSITION pos) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 에 대 한 이전 호출에서 반환 되는 위치 카운터 [CAtlMap::GetNextAssoc](#getnextassoc) 하거나 [CAtlMap::GetStartPosition](#getstartposition)합니다.
 
 ### <a name="remarks"></a>설명
@@ -658,7 +659,7 @@ bool RemoveKey(KINARGTYPE key) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 제거 하려는 키에 해당 하는 요소 쌍입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -681,10 +682,10 @@ POSITION SetAt(
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 추가할 키 값을 `CAtlMap` 개체입니다.
 
-*값*  
+*값*<br/>
 에 추가할 값을 `CAtlMap` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -709,16 +710,16 @@ void SetOptimalLoad(
 
 ### <a name="parameters"></a>매개 변수
 
-*fOptimalLoad*  
+*fOptimalLoad*<br/>
 최적의 부하 비율입니다.
 
-*fLoThreshold*  
+*fLoThreshold*<br/>
 부하 비율에 대 한 임계값입니다.
 
-*fHiThreshold*  
+*fHiThreshold*<br/>
 부하 비율에 대 한 상한 임계값입니다.
 
-*bRehashNow*  
+*bRehashNow*<br/>
 해시 테이블을 다시 계산 해야 하는 경우를 나타내는 플래그입니다.
 
 ### <a name="remarks"></a>설명
@@ -737,10 +738,10 @@ void SetValueAt(
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 에 대 한 이전 호출에서 반환 되는 위치 카운터 [CAtlMap::GetNextAssoc](#getnextassoc) 하거나 [CAtlMap::GetStartPosition](#getstartposition)합니다.
 
-*값*  
+*값*<br/>
 에 추가할 값을 `CAtlMap` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -773,7 +774,7 @@ const K m_key;
 
 ### <a name="parameters"></a>매개 변수
 
-*K*  
+*K*<br/>
 Key 요소 형식입니다.
 
 ##  <a name="m_value"></a>  CAtlMap::CPair::m_value
@@ -786,11 +787,11 @@ V  m_value;
 
 ### <a name="parameters"></a>매개 변수
 
-*V*  
+*V*<br/>
 값 요소 형식입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[움직이는 텍스트 샘플](../../visual-cpp-samples.md)   
-[UpdatePV 샘플](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)   
+[움직이는 텍스트 샘플](../../visual-cpp-samples.md)<br/>
+[UpdatePV 샘플](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

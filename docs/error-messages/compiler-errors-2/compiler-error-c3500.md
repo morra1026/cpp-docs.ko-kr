@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 87d0bf7b7d7b773d89c9b5b6b1dd8e3b0eee4c86
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 996f13939f4c317424a8c577e2b3dc0ec8178c7d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248585"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069627"
 ---
 # <a name="compiler-error-c3500"></a>컴파일러 오류 C3500
-잘못 된 ProgID 'progid'  
-  
- 으로 지정 되었지만 잘못 된 progid는 `#import` 문. Windows 레지스트리를 지정 하 고 있는지 유효한 확인 검사 progid입니다.
+
+잘못 된 ProgID 'progid'
+
+잘못 된 progid와 지정 된는 `#import` 문입니다. 지정 하는 유효한 되도록 Windows 레지스트리를 확인 합니다. progid입니다.

@@ -278,15 +278,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9aca5b2b68daffac59ad77e5b2a4c4fb81e756a
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: a29ce2e9ec7b8401e2b9aaf499eabb5c0ceea2b9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33694487"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066182"
 ---
 # <a name="int4-class"></a>int_4 클래스
-정수 4 개의 짧은 벡터를 나타냅니다.  
+4 개 정수의 짧은 벡터를 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -306,7 +306,7 @@ class int_4;
   
 |이름|설명|  
 |----------|-----------------|  
-|[int_4 생성자](#ctor)|오버로드됨. 기본 생성자, 0 인 모든 요소를 초기화 합니다.|  
+|[int_4 생성자](#ctor)|오버로드됨. 기본 생성자가 0 인 모든 요소를 초기화 합니다.|  
   
 ### <a name="public-methods"></a>Public 메서드  
   
@@ -618,7 +618,7 @@ class int_4;
   
 ##  <a name="ctor"></a> int_4 
 
- 기본 생성자, 0 인 모든 요소를 초기화 합니다.  
+ 기본 생성자가 0 인 모든 요소를 초기화 합니다.  
   
 ```  
 int_4() restrict(amp,
@@ -669,23 +669,23 @@ explicit inline int_4(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_V0`  
- 값 초기화 요소 0입니다.  
+*_V0*<br/>
+요소 0 초기화 값입니다.  
   
- `_V1`  
- 1 요소를 초기화 값입니다.  
+*_V1*<br/>
+1 요소를 초기화할 값입니다.  
   
- `_V2`  
- 값 2 요소를 초기화 하는입니다.  
+*_V2*<br/>
+2 요소를 초기화할 값입니다.  
   
- `_V3`  
- 3 요소를 초기화 값입니다.  
+*_V3*<br/>
+3 요소를 초기화할 값입니다.  
   
- `_V`  
- 초기화에 대 한 값입니다.  
+*(_V)*<br/>
+초기화에 대 한 값입니다.  
   
- `_Other`  
- 초기화 하는 데 사용 되는 개체입니다.  
+*_Other*<br/>
+초기화 하는 데 사용 하는 개체입니다.  
   
 ##  <a name="int_4__size"></a> 크기 
 

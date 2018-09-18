@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f52a17357d869608b523b7e645d0d0898f364143
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 55e4a063fb0ea94acda43be8896e09ae028a0df9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196989"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062334"
 ---
 # <a name="fatal-error-c1035"></a>심각한 오류 C1035
-식이 너무 복잡합니다. 간단하게 만드세요.  
-  
- 컴파일러가 복잡한 식에 대한 코드를 생성하지 못했습니다. 식을 더 간단한 식으로 분할하고 다시 컴파일합니다.
+
+식이 너무 복잡합니다. 간단하게 만드세요.
+
+컴파일러가 복잡한 식에 대한 코드를 생성하지 못했습니다. 식을 더 간단한 식으로 분할하고 다시 컴파일합니다.

@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af0b27f449e61d6b80ad2d19eb09a3a55c5f3ad1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d304b3853986b54f9844f9e4968f7bb7d6a8af5a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33264196"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072747"
 ---
 # <a name="compiler-error-c3734"></a>컴파일러 오류 C3734
-'class': 관리되는 클래스 또는 WinRT 클래스에는 coclass를 사용할 수 없습니다.  
-  
- [coclass](../../windows/coclass.md) 특성은 함께 사용할 수 없습니다 관리 되는 또는 WinRT 클래스입니다.  
-  
- 다음 샘플에서는 C3734를 생성하고 해결 방법을 보여 줍니다.  
-  
-```  
-// C3734.cpp  
-// compile with: /clr /c  
-[module(name="x")];  
-  
-[coclass]  
-ref class CMyClass {   // C3734 remove the ref keyword to resolve  
-};  
-```  
+
+'class': 관리되는 클래스 또는 WinRT 클래스에는 coclass를 사용할 수 없습니다.
+
+합니다 [coclass](../../windows/coclass.md) 특성을 사용 하 여 사용할 수 없습니다 관리 되는 또는 WinRT 클래스입니다.
+
+다음 샘플에서는 C3734를 생성하고 해결 방법을 보여 줍니다.
+
+```
+// C3734.cpp
+// compile with: /clr /c
+[module(name="x")];
+
+[coclass]
+ref class CMyClass {   // C3734 remove the ref keyword to resolve
+};
+```

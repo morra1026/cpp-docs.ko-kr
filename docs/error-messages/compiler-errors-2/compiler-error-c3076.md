@@ -16,33 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 465dd45c4ddfc41e3ba7a059619028711d6f73e2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f2d507e13c6dde451e6693774f708333a9301f8b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247581"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064063"
 ---
 # <a name="compiler-error-c3076"></a>컴파일러 오류 C3076
-'instance': 네이티브 형식에 'type'는 참조 형식의 인스턴스를 포함할 수 없습니다  
-  
- 네이티브 형식은 CLR 형식의 인스턴스를 포함할 수 없습니다.  
-  
- 자세한 내용은 참조 [참조 형식에 대 한 c + + 스택 의미 체계](../../dotnet/cpp-stack-semantics-for-reference-types.md)합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3076 오류가 발생 합니다.  
-  
-```  
-// C3076.cpp  
-// compile with: /clr /c  
-ref struct U {};  
-  
-struct V {  
-   U y;   // C3076  
-};  
-  
-ref struct W {  
-   U y;   // OK  
-};  
+
+'instance': 'type', 참조 형식의 인스턴스를 네이티브 형식에 포함할 수 없습니다
+
+네이티브 형식은 CLR 형식의 인스턴스를 포함할 수 없습니다.
+
+자세한 내용은 [참조 형식에 대 한 c + + 스택 의미 체계](../../dotnet/cpp-stack-semantics-for-reference-types.md)합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플 C3076를 생성합니다.
+
+```
+// C3076.cpp
+// compile with: /clr /c
+ref struct U {};
+
+struct V {
+   U y;   // C3076
+};
+
+ref struct W {
+   U y;   // OK
+};
 ```

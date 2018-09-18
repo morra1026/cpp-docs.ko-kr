@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d28136c9fa131d525878fe0551f5ba2421576951
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b873a615e04bd92e08abb51a048f227f19fd9eec
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760086"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057498"
 ---
 # <a name="cheapptrelementtraits-class"></a>CHeapPtrElementTraits 클래스
 
@@ -36,17 +36,17 @@ ms.locfileid: "43760086"
 ## <a name="syntax"></a>구문
 
 ```
-template<typename T, class Allocator = ATL::CCRTAllocator>  
+template<typename T, class Allocator = ATL::CCRTAllocator>
 class CHeapPtrElementTraits : 
    public CDefaultElementTraits<ATL::CHeapPtr<T, Allocator>>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 컬렉션 클래스에 저장할 개체 형식입니다.
 
-*할당자*  
+*할당자*<br/>
 사용 하는 메모리 할당 클래스입니다. 기본값은 [CCRTAllocator](../../atl/reference/ccrtallocator-class.md)합니다.
 
 ## <a name="members"></a>멤버
@@ -98,6 +98,6 @@ typedef T *& OUTARGTYPE;
 
 ## <a name="see-also"></a>참고 항목
 
-[CDefaultElementTraits 클래스](../../atl/reference/cdefaultelementtraits-class.md)   
-[CComHeapPtr 클래스](../../atl/reference/ccomheapptr-class.md)   
+[CDefaultElementTraits 클래스](../../atl/reference/cdefaultelementtraits-class.md)<br/>
+[CComHeapPtr 클래스](../../atl/reference/ccomheapptr-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

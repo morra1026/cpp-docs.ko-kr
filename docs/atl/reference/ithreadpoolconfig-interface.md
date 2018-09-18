@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 747fe2cd742686a7fda1f5031224cf7ab1607fb2
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 156a0a827a67e80369ca8b834b62bcf0e431ab14
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754620"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076348"
 ---
 # <a name="ithreadpoolconfig-interface"></a>IThreadPoolConfig 인터페이스
 
@@ -71,7 +71,7 @@ STDMETHOD(GetSize)(int* pnNumThreads);
 
 ### <a name="parameters"></a>매개 변수
 
-*pnNumThreads*  
+*pnNumThreads*<br/>
 [out] 성공 하면 풀의 스레드 수를 수신 하는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -92,7 +92,7 @@ STDMETHOD(GetTimeout)(DWORD* pdwMaxWait);
 
 ### <a name="parameters"></a>매개 변수
 
-*pdwMaxWait*  
+*pdwMaxWait*<br/>
 [out] 성공 하면 스레드 풀 스레드 종료를 대기할 시간 (밀리초)에는 최대 시간을 수신 하는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -113,7 +113,7 @@ STDMETHOD(SetSize)int nNumThreads);
 
 ### <a name="parameters"></a>매개 변수
 
-*nNumThreads*  
+*nNumThreads*<br/>
 스레드 풀의 요청된 수입니다.
 
 하는 경우 *nNumThreads* 가 음수 이면 절대 값에 곱합니다 스레드의 총 개수를 가져올 컴퓨터의 프로세서 수입니다.
@@ -138,7 +138,7 @@ STDMETHOD(SetTimeout)(DWORD dwMaxWait);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwMaxWait*  
+*dwMaxWait*<br/>
 스레드 풀 스레드 종료를 대기할 시간 (밀리초) 요청 된 최대 시간입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -151,5 +151,5 @@ STDMETHOD(SetTimeout)(DWORD dwMaxWait);
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스](../../atl/reference/atl-classes.md)   
+[클래스](../../atl/reference/atl-classes.md)<br/>
 [CThreadPool 클래스](../../atl/reference/cthreadpool-class.md)

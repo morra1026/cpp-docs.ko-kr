@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 129bde75de99e979edd2bb5c7f23acd4ddbdb12f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4e46196bdf7b3fea7d5884c3805b7244b516271a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197262"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071876"
 ---
 # <a name="fatal-error-c1121"></a>심각한 오류 C1121
-CryptoAPI에 대한 호출이 실패했습니다.  
-  
- 컴파일러는 CryptoAPI에 대 한 호출 만들 호출이 실패 했습니다. Visual Studio를 다시 설치 하 고 가능한 운영 체제를 다시 설치 합니다.
+
+CryptoAPI에 대한 호출이 실패했습니다.
+
+컴파일러가는 CryptoAPI에 대 한 호출 및 호출이 실패 하도록 변경 합니다. Visual Studio를 다시 설치 하 고 가능한 경우 운영 체제를 다시 설치 합니다.

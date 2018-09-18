@@ -42,12 +42,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 864bba5b88c7e52b55bd86a61edaaac2d22b0346
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cdd7b68ac9e3bf55f64b9a68f7b8075eab640faa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402311"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056822"
 ---
 # <a name="futime-futime32-futime64"></a>_futime, _futime32, _futime64
 
@@ -80,17 +80,17 @@ int _futime64(
 
 ## <a name="return-value"></a>반환 값
 
-성공하면 0을 반환합니다. 오류가 발생하는 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 함수 실행을 계속 허용 된,-1을 반환 하 고 **errno** 로 설정 된 **EBADF**, 된 잘못 된 파일 설명자를 나타내는 또는 **EINVAL**, 잘못 된 나타내는 매개 변수입니다.
+성공하면 0을 반환합니다. 오류가 발생하는 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 함수는 계속 실행 하도록 허용,-1을 반환 하 고 **errno** 로 설정 됩니다 **EBADF**, 잘못 된 파일 설명자를 나타내는 또는 **EINVAL**를 나타내는 잘못 된 매개 변수입니다.
 
 ## <a name="remarks"></a>설명
 
-**_futime** 와 관련 된 열려 있는 파일에 액세스 시간 및 수정 날짜를 설정 하는 루틴 *fd*합니다. **_futime** 동일 [_utime](utime-utime32-utime64-wutime-wutime32-wutime64.md), 해당 인수는 파일에 대 한 경로 또는 파일의 이름이 아니라 열려 있는 파일의 파일 설명자입니다. **_utimbuf** 구조에 새 수정 날짜와 액세스 시간에 대 한 필드가 포함 되어 있습니다. 두 필드 모두 유효한 값을 포함합니다. **_utimbuf32** 및 **_utimbuf64** 동일 **_utimbuf** 각각 32 비트 및 64 비트 시간 형식 사용에 대 한 제외 하 고 있습니다. **_futime** 및 **_utimbuf** 64 비트 시간 형식을 사용 하 고 **_futime** 동작에 같고 **_futime64**합니다. 이전 동작을 강제 적용 해야 하는 경우 정의 **_USE_32BIT_TIME_T**합니다. 이렇게 하면이로 인해 **_futime** 동작을 같은 것으로 **_futime32** 하 고는 **_utimbuf** 에해당하는32비트시간형식을사용하는구조 **__utimbuf32**합니다.
+합니다 **_futime** 와 연결 된 열려 있는 파일에 액세스 시간과 수정 날짜를 설정 하는 루틴 *fd*합니다. **_futime** 동일 [_utime](utime-utime32-utime64-wutime-wutime32-wutime64.md)인수로 열려 있는 파일의 파일 설명자 아니라 파일 또는 파일에 대 한 경로 이름을 제외 하 고, 합니다. 합니다 **_utimbuf** 구조는 새 수정 날짜 및 액세스 시간에 대 한 필드를 포함 합니다. 두 필드 모두 유효한 값을 포함합니다. **_utimbuf32** 하 고 **_utimbuf64** 동일 **_utimbuf** 각각 32 비트 및 64 비트 시간 형식 사용에 대 한 제외 합니다. **_futime** 하 고 **_utimbuf** 64 비트 시간 형식을 사용 하 고 **_futime** 의 동작과 동일 **_futime64**합니다. 이전 동작을 강제 적용 해야 할 경우 정의할 **_USE_32BIT_TIME_T**합니다. 이렇게 하면 **_futime** 의 동작과 동일 하 게 **_futime32** 하 고는 **_utimbuf** 에해당하는32비트시간형식을사용하는구조체 **__utimbuf32**합니다.
 
-**_futime64**를 사용 하는 **__utimbuf64** 구조, 읽을 수 있으며 수정할 파일 날짜 23시 59분: 59 까지의 3000 년 12 월 31 일 UTC; 반면에 대 한 호출 **_futime32** 파일에 날짜 이면 실패 23시 59분: 59 2038 년 1 월 18 일 UTC 보다 나중입니다. 1970년 1월 1일 자정은 이러한 함수에 대한 날짜 범위의 하한입니다.
+**_futime64**를 사용 합니다 **__utimbuf64** 구조체 수 읽고 반면 23시 59분: 59 까지의 3000 년 12 월 31 일, UTC; 파일 날짜를 수정에 대 한 호출 **_futime32** 파일 날짜 이면 실패 23시 59분: 59 2038 년 1 월 18 일 UTC 보다 나중입니다. 1970년 1월 1일 자정은 이러한 함수에 대한 날짜 범위의 하한입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|선택적 헤더|
+|기능|필수 헤더|선택적 헤더|
 |--------------|---------------------|---------------------|
 |**_futime**|\<sys/utime.h>|\<errno.h>|
 |**_futime32**|\<sys/utime.h>|\<errno.h>|
@@ -143,20 +143,20 @@ Arbitrary file contents.
 ### <a name="sample-output"></a>샘플 출력
 
 ```Output
- Volume in drive Z has no label.
- Volume Serial Number is 5C68-57C1
+Volume in drive Z has no label.
+Volume Serial Number is 5C68-57C1
 
- Directory of Z:\crt
+Directory of Z:\crt
 
- 03/25/2004  10:40 AM                24 crt_futime.c_input
+03/25/2004  10:40 AM                24 crt_futime.c_input
                1 File(s)             24 bytes
                0 Dir(s)  24,268,476,416 bytes free
- Volume in drive Z has no label.
- Volume Serial Number is 5C68-57C1
+Volume in drive Z has no label.
+Volume Serial Number is 5C68-57C1
 
- Directory of Z:\crt
+Directory of Z:\crt
 
- 03/25/2004  10:41 AM                24 crt_futime.c_input
+03/25/2004  10:41 AM                24 crt_futime.c_input
                1 File(s)             24 bytes
                0 Dir(s)  24,268,476,416 bytes free
 File time modified

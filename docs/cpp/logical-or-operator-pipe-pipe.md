@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3c9b143ca2f156a534f7ab803974f24771b2652
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 37a7591e185b1436bb3cd0f8b56a625f71bf8ed2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39403081"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073650"
 ---
 # <a name="logical-or-operator-"></a>논리 OR 연산자: | |
 
@@ -52,7 +52,7 @@ printf( "%d" , (x == w || x == y || x == z) );
 
 합니다 **나** 연산자는 해당 하는 텍스트 **||** 합니다. 두 가지 방법으로 액세스 하는 **또는** 프로그램에서 연산자: 헤더 파일을 포함 \<iso646.h >,으로 컴파일하는 [/Za](../build/reference/za-ze-disable-language-extensions.md) (언어 확장명 사용 안 함) 컴파일러 옵션.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // expre_Logical_OR_Operator.cpp
@@ -73,6 +73,7 @@ int main() {
 ```
 
 ## <a name="see-also"></a>참고자료
- [C + + 기본 제공 연산자 우선순위 및 결합성](cpp-built-in-operators-precedence-and-associativity.md)  
- [C++ 기본 제공 연산자, 우선 순위 및 결합성](../cpp/cpp-built-in-operators-precedence-and-associativity.md)  
- [C 논리 연산자](../c-language/c-logical-operators.md)
+
+[C + + 기본 제공 연산자 우선순위 및 결합성](cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[C++ 기본 제공 연산자, 우선 순위 및 결합성](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[C 논리 연산자](../c-language/c-logical-operators.md)

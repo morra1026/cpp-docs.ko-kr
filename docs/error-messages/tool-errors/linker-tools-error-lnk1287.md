@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 944702897021f50ff1e7fea2931a9aa16c9d080a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 61f016c9fb8de12dd690dee7dbcd2aec1ecf3a97
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299294"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060774"
 ---
 # <a name="linker-tools-error-lnk1287"></a>링커 도구 오류 LNK1287
-잘못 된 관리 되는 진입점 함수  
-  
- 진입점 관리 되는 이미지에 대해 올바르지 않습니다. 관리 되는 진입점 함수의 반환 형식은 수 `void` 또는 `int`합니다. 관리 되는 진입점 함수의 매개 변수 형식은 수 `void` 또는 `String []`합니다.
+
+잘못 된 관리 되는 진입점 함수
+
+진입점 관리 되는 이미지에 적합 하지 않습니다. 관리 되는 진입점 함수의 반환 유형은 가능 `void` 또는 `int`합니다. 관리 되는 진입점 함수의 매개 변수 형식의 수만 `void` 또는 `String []`합니다.

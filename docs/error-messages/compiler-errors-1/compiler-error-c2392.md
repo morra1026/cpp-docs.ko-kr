@@ -16,55 +16,57 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ffb2ce4ef752d91eaadc66d17aadf3838ee560df
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c45c5b271235e4ada0945a79087186a213c75343
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197912"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064271"
 ---
 # <a name="compiler-error-c2392"></a>컴파일러 오류 C2392
-'method1': WinRTtypes, 2'가 재정의 또는 관리 되는 공변 (covariant) 반환 형식에서 지원 되지 않습니다  
-  
- 공변 (covariant) 반환 형식은 허용 되지 않습니다 또는 Windows 런타임 멤버 함수에 대 한로 컴파일하는 경우는 [/clr (공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md) 옵션입니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C2392 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.  
-  
-```  
-// C2392.cpp  
-// compile with: /clr  
-public ref struct B {  
-public:  
-   int i;  
-};  
-  
-public ref struct D: public B{};  
-  
-public ref struct B1 {  
-public:  
-   virtual B^ mf() {  
-      B^ pB = gcnew B;  
-      pB->i = 11;  
-      return pB;  
-   }  
-};  
-  
-public ref struct D1: public B1 {  
-public:  
-   virtual D^ mf() override {  // C2392  
-   // try the following line instead  
-   // virtual B^ mf() override {  
-   // return type D^ is covariant with B^, not allowed with CLR types  
-      D^ pD = gcnew D;  
-      pD->i = 12;  
-      return pD;  
-   }  
-};  
-  
-int main() {  
-   B1^ pB1 = gcnew D1;  
-   B^ pB = pB1->mf();  
-   D^ pD = dynamic_cast<D^>(pB);  
-}  
+
+'method1': 관리 되는 공변 (covariant) 반환 형식에서 지원 되지 않습니다 또는 WinRTtypes, 그렇지 않으면 'method2'를 재정의할 수는
+
+공변 (covariant) 반환 형식은 허용 되지 않습니다 Windows 런타임 멤버 함수 또는로 컴파일하는 경우는 [/clr (공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md) 옵션입니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C2392 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.
+
+```
+// C2392.cpp
+// compile with: /clr
+public ref struct B {
+public:
+   int i;
+};
+
+public ref struct D: public B{};
+
+public ref struct B1 {
+public:
+   virtual B^ mf() {
+      B^ pB = gcnew B;
+      pB->i = 11;
+      return pB;
+   }
+};
+
+public ref struct D1: public B1 {
+public:
+   virtual D^ mf() override {  // C2392
+   // try the following line instead
+   // virtual B^ mf() override {
+   // return type D^ is covariant with B^, not allowed with CLR types
+      D^ pD = gcnew D;
+      pD->i = 12;
+      return pD;
+   }
+};
+
+int main() {
+   B1^ pB1 = gcnew D1;
+   B^ pB = pB1->mf();
+   D^ pD = dynamic_cast<D^>(pB);
+}
 ```

@@ -16,41 +16,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99650b93819c4bc0192d612b0f1344e1b99671d4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e7e871b69bb189140a4001d574736a255eefaf61
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228181"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055626"
 ---
 # <a name="fatal-error-c1070"></a>심각한 오류 C1070
-'filename' 파일에서 #if/#endif 쌍이 짝이 맞지 않습니다.  
-  
- `#if`, `#ifdef`또는 `#ifndef` 지시문에 해당하는 `#endif`가 없습니다.  
-  
- 다음 샘플에서는 C1070을 생성합니다.  
-  
-```  
-// C1070.cpp  
-#define TEST  
-  
-#ifdef TEST  
-  
-#ifdef TEST  
-#endif  
-// C1070  
-```  
-  
- 해결 방법:  
-  
-```  
-// C1070b.cpp  
-// compile with: /c  
-#define TEST  
-  
-#ifdef TEST  
-#endif  
-  
-#ifdef TEST  
-#endif  
+
+'filename' 파일에서 #if/#endif 쌍이 짝이 맞지 않습니다.
+
+`#if`, `#ifdef`또는 `#ifndef` 지시문에 해당하는 `#endif`가 없습니다.
+
+다음 샘플에서는 C1070을 생성합니다.
+
+```
+// C1070.cpp
+#define TEST
+
+#ifdef TEST
+
+#ifdef TEST
+#endif
+// C1070
+```
+
+해결 방법:
+
+```
+// C1070b.cpp
+// compile with: /c
+#define TEST
+
+#ifdef TEST
+#endif
+
+#ifdef TEST
+#endif
 ```

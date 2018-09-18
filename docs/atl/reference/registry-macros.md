@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0cf941171ef992c677c619a1c6a45ab9868526a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 17040448771e4ca3c0f999e72a9c08f0e1fa28aa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767958"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46058499"
 ---
 # <a name="registry-macros"></a>레지스트리 매크로
 
@@ -71,7 +71,7 @@ DECLARE_LIBID( libid )
 
 ### <a name="parameters"></a>매개 변수
 
-*libid*  
+*libid*<br/>
 형식 라이브러리의 GUID입니다.
 
 ### <a name="remarks"></a>설명
@@ -105,19 +105,19 @@ DECLARE_REGISTRY(
 
 ### <a name="parameters"></a>매개 변수
 
-*class*  
+*class*<br/>
 [in] 이전 버전과 호환성을 위해 포함 되어 있습니다.
 
-*pid*  
+*pid*<br/>
 [in] 버전별 프로그램 식별자가는 LPCTSTR 합니다.
 
-*vpid*  
+*vpid*<br/>
 [in] 버전에 관계 없이 프로그램 식별자가는 LPCTSTR 합니다.
 
-*nid*  
+*nid*<br/>
 [in] UINT 프로그램 설명으로 사용 하도록 레지스트리를의 리소스 문자열의 인덱스입니다.
 
-*flags*  
+*flags*<br/>
 [in] 레지스트리에서 프로그램의 스레딩 모델을 포함 하는 DWORD. 다음 값 중 하나 여야 합니다: THREADFLAGS_APARTMENT, THREADFLAGS_BOTH, 또는 AUTPRXFLAG 합니다.
 
 ### <a name="remarks"></a>설명
@@ -138,10 +138,10 @@ DECLARE_REGISTRY_APPID_RESOURCEID(
 
 ### <a name="parameters"></a>매개 변수
 
-*resid*  
+*resid*<br/>
 에 대 한 정보를 포함 하는.rgs 파일의 리소스 id를 *appid*합니다.
 
-*appid*  
+*appid*<br/>
 GUID
 
 ### <a name="remarks"></a>설명
@@ -162,7 +162,7 @@ DECLARE_REGISTRY_RESOURCE( x )
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 [in] 리소스의 식별자는 문자열입니다.
 
 ### <a name="remarks"></a>설명
@@ -187,7 +187,7 @@ DECLARE_REGISTRY_RESOURCEID( x )
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 [in] 마법사에서 생성 한 리소스의 식별자입니다.
 
 ### <a name="remarks"></a>설명

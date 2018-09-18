@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8e38e06f2a32e9a95421ac113cdd0b5f1371334
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 53d7b895c25a847e8abe1b9db11b8b413d3342d0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33265209"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066119"
 ---
 # <a name="compiler-error-c3630"></a>컴파일러 오류 C3630
-'token' 토큰을 처리 하는 동안 오류가 발생 했습니다.  
-  
- 소스 코드의 토큰을 처리할 수 없습니다.
+
+'token' 토큰을 처리 하는 동안 오류가 발생 했습니다.
+
+소스 코드에서 토큰을 처리할 수 없습니다.

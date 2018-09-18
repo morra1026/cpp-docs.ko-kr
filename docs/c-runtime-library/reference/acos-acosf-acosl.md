@@ -41,12 +41,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5384d4e97ebb4f3f6152278e916c02bb350090ea
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 2b645d7ab779a7d8c3f655c84a33a8916563c47a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39401940"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059866"
 ---
 # <a name="acos-acosf-acosl"></a>acos, acosf, acosl
 
@@ -67,7 +67,7 @@ long double acos( long double x );   // C++ only
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 아크코사인 (역 코사인)을 계산 하는 1에서 1 사이의 값입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -92,7 +92,7 @@ C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니�
 |-------------|---------------------|----------------------|
 |**acos**하십시오 **acosf**, **acosl**|\<math.h>|\<errno.h>|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 프로그램에서 -1에서 1 사이 범위의 값을 묻는 메시지가 나타납니다. 이 범위를 벗어나는 입력 값은 `_DOMAIN` 오류 메시지를 생성합니다. 올바른 값을 입력하는 경우 프로그램에서 해당 값의 아크사인 및 아크코사인을 인쇄합니다.
 
@@ -144,10 +144,10 @@ Arccosine of 0.000000 = 1.570796
 
 ## <a name="see-also"></a>참고자료
 
-[부동 소수점 지원](../../c-runtime-library/floating-point-support.md)  
-[asin, asinf, asinl](asin-asinf-asinl.md)  
-[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)  
-[cos, cosf, cosl](cos-cosf-cosl.md)  
-[_matherr](matherr.md)  
-[sin, sinf, sinl](sin-sinf-sinl.md)  
-[tan, tanf, tanl](tan-tanf-tanl.md)  
+[부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
+[asin, asinf, asinl](asin-asinf-asinl.md)<br/>
+[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
+[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
+[_matherr](matherr.md)<br/>
+[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
+[tan, tanf, tanl](tan-tanf-tanl.md)

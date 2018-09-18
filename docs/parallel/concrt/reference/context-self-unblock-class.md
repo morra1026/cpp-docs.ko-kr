@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e1113abc814167912380b57ae7fc85d04284e77
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 90774b304a4649c72b6232b5908bf9ff14a4412d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33696164"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057355"
 ---
 # <a name="contextselfunblock-class"></a>context_self_unblock 클래스
 이 클래스는 동일한 컨텍스트에서 `Context` 개체의 `Unblock` 메서드를 호출하는 경우 발생하는 예외를 설명합니다. 자신을 차단 해제하려는 지정된 컨텍스트의 시도를 나타냅니다.  
@@ -64,8 +64,8 @@ context_self_unblock() throw();
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Message`  
- 오류 설명 메시지입니다.  
+*메시지 (_m)*<br/>
+오류 설명 메시지입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [concurrency 네임스페이스](concurrency-namespace.md)

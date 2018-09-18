@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5c47c83c75a9bdb62bf0cb6594399e5a551bb76
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e8e0e0f153b5eed21f906dd228072a4239dec63e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317131"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076452"
 ---
 # <a name="resource-compiler-error-rc2111"></a>리소스 컴파일러 오류 RC2111
-잘못 된 컨트롤 형식  
-  
- 각 컨트롤 문에 **대화** 문에 다음 중 하나 여야 합니다: 3STATE, AUTO3, 여, AUTORADIO, 편집, 확인란, 콤보 상자, 컨트롤, CTEXT, DEFPUSHBUTTON, EDITTEXT, GROUPBOX, HEDIT, 아이콘, IEDIT, 목록 상자, LTEXT, PUSHBOX, 누름 단추, 라디오 단추, RTEXT, 스크롤 막대, USERBUTTON 합니다.  
-  
- 이러한 제어 문의 철자가 맞는지 확인 합니다.
+
+잘못 된 컨트롤 형식
+
+각 컨트롤 문에 **대화** 문을 다음 중 하나 여야 합니다: 3STATE, AUTO3 여, AUTORADIO, 편집, 확인란, 콤보 상자, 컨트롤, CTEXT, DEFPUSHBUTTON, EDITTEXT, GROUPBOX, HEDIT, 아이콘, IEDIT, LISTBOX, LTEXT, PUSHBOX, 누름 단추, 라디오 단추, RTEXT, 스크롤 막대, USERBUTTON 합니다.
+
+이러한 제어 문을 제대로 입력 했는지 확인 합니다.

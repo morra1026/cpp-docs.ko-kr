@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2f01a3a4b6ccf1750ec3cd0df643c02b7678bac
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3f22878ebb7caa5549779d4c53b1f6b7068dc480
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291039"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056835"
 ---
 # <a name="compiler-warning-level-3-c4133"></a>컴파일러 경고 (수준 3) C4133
-'type': 'type1' 'type2' (으)에서 호환 되지 않는 유형-  
-  
- 이 경고는 서로 다른 형식의 두 포인터 빼기 하려는 경우에 발생할 수 있습니다.  
-  
- 이 경고를 방지 하려면 적절 한 형식 변환을 제공 합니다.
+
+'type': 'type2' 'type1'에서 호환 되지 않는 형식
+
+이 경고는 서로 다른 형식의 두 포인터를 뺄 시도 하 여 발생할 수 있습니다.
+
+이 경고를 방지 하려면 적절 한 형식 캐스트를 제공 합니다.

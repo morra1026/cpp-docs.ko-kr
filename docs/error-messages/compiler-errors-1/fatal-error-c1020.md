@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c70727b5e0d83b03099b637e0f768f65d271b05
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3ab0da342e575c0af452ec70d1759fe34188db9a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33224641"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066871"
 ---
 # <a name="fatal-error-c1020"></a>심각한 오류 C1020
-예기치 않은 #endif입니다.  
-  
- `#endif` 지시문에 일치하는 `#if`, `#ifdef`또는 `#ifndef` 지시문이 없습니다. 각 `#endif` 에 일치하는 지시문이 있어야 합니다.  
-  
- 다음 샘플에서는 C1020을 생성합니다.  
-  
-```  
-// C1020.cpp  
-#endif     // C1020  
-```  
-  
- 해결 방법:  
-  
-```  
-// C1020b.cpp  
-// compile with: /c  
-#if 1  
-#endif  
+
+예기치 않은 #endif입니다.
+
+`#endif` 지시문에 일치하는 `#if`, `#ifdef`또는 `#ifndef` 지시문이 없습니다. 각 `#endif` 에 일치하는 지시문이 있어야 합니다.
+
+다음 샘플에서는 C1020을 생성합니다.
+
+```
+// C1020.cpp
+#endif     // C1020
+```
+
+해결 방법:
+
+```
+// C1020b.cpp
+// compile with: /c
+#if 1
+#endif
 ```

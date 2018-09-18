@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3cf21a9379f7b0d07575dae54d9406eb5cf39094
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a85097f6383ddb788e1278aebf4732591fd38ec2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229371"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060412"
 ---
 # <a name="compiler-error-c2586"></a>컴파일러 오류 C2586
-잘못 된 사용자 정의 변환 구문이: 간접 참조가 잘못 되었습니다  
-  
- 변환 연산자의 간접 참조는 허용 되지 않습니다.  
-  
- 다음 샘플에서는 C2586 오류가 생성 됩니다.  
-  
-```  
-// c2586.cpp  
-// compile with: /c  
-struct C {  
-   * operator int();   // C2586  
-   operator char();   // OK  
-};  
+
+잘못 된 사용자 정의 변환 구문이: 잘못 된 간접 참조
+
+변환 연산자의 간접 참조는 허용 되지 않습니다.
+
+다음 샘플에서는 C2586 오류가 생성 됩니다.
+
+```
+// c2586.cpp
+// compile with: /c
+struct C {
+   * operator int();   // C2586
+   operator char();   // OK
+};
 ```

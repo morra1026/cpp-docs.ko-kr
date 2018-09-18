@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 740fef32484164e7439335686adce0a4aa8027f6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8ac9c1bfe01cee659ae8b637df23a86315b5310f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33257200"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072786"
 ---
 # <a name="compiler-error-c3519"></a>컴파일러 오류 C3519
-'invalid_param': embedded_idl 특성에 잘못 된 매개 변수  
-  
- 에 전달 된 매개 변수는 `embedded_idl` 특성 [#import](../../preprocessor/hash-import-directive-cpp.md), 하지만 컴파일러가 매개 변수를 인식 하지 않았습니다.  
-  
- 에 허용 되는 유일한 매개 변수 `embedded_idl` 는 `emitidl` 및 `no_emitidl`합니다.  
-  
- 다음 샘플에서는 C3519 오류가 생성 됩니다.  
-  
-```  
-// C3519.cpp  
-// compile with: /LD  
-[module(name="MyLib2")];  
-#import "C:\testdir\bin\importlib.tlb" embedded_idl("no_emitidcl")     
-// C3519  
-#import "C:\testdir\bin\importlib.tlb" embedded_idl("no_emitidl")     
-// OK  
+
+'invalid_param': embedded_idl 특성에 잘못 된 매개 변수
+
+에 전달 된 매개 변수를 `embedded_idl` 의 특성 [#import](../../preprocessor/hash-import-directive-cpp.md), 하지만 컴파일러에서 매개 변수를 인식할 수 없습니다.
+
+에 허용 되는 매개 변수만 `embedded_idl` 됩니다 `emitidl` 고 `no_emitidl`입니다.
+
+다음 샘플에서는 C3519 오류가 생성 됩니다.
+
+```
+// C3519.cpp
+// compile with: /LD
+[module(name="MyLib2")];
+#import "C:\testdir\bin\importlib.tlb" embedded_idl("no_emitidcl")
+// C3519
+#import "C:\testdir\bin\importlib.tlb" embedded_idl("no_emitidl")
+// OK
 ```

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2bcdb658c191d7386be8c35bd4eac13c760a6111
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0459d54764748f9c23bfa0ee3090f9d23f413423
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295888"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075503"
 ---
 # <a name="compiler-warning-level-3-c4283"></a>컴파일러 경고(수준 3) C4283
-'type' 형식을 통해 및  
-  
- 경고의이 연속 [C4281](../../error-messages/compiler-warnings/compiler-warning-level-3-c4281.md) 것을 보여 줍니다 **operator->** 통해 자신을 호출 `type`합니다.
+
+' type ' 및
+
+이 경고 [C4281](../../error-messages/compiler-warnings/compiler-warning-level-3-c4281.md) 따르면 **operator->** 를 통해 자신을 호출 `type`합니다.

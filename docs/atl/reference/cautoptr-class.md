@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a312ca8aa7afe39a301607e6b091341adbb89bc4
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c3066f4586d34c4742cc03511d7f8739b642ccbd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761084"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066247"
 ---
 # <a name="cautoptr-class"></a>CAutoPtr 클래스
 
@@ -39,13 +39,13 @@ ms.locfileid: "43761084"
 ## <a name="syntax"></a>구문
 
 ```
-template <typename T>  
+template <typename T>
 class CAutoPtr
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 포인터 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -109,7 +109,7 @@ void Attach(T* p) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 `CAutoPtr` 개체 this이 포인터의 소유권을 갖게 됩니다.
 
 ### <a name="remarks"></a>설명
@@ -133,16 +133,16 @@ explicit CAutoPtr(T* p) throw();
 template<typename TSrc>
 CAutoPtr(CAutoPtr<TSrc>& p) throw();
 
-template<> 
+template<>
 CAutoPtr(CAutoPtr<T>& p) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 기존 포인터입니다.
 
-*TSrc*  
+*TSrc*<br/>
 다른 관리 되는 형식 `CAutoPtr`현재 개체를 초기화 하는 데 사용 합니다.
 
 ### <a name="remarks"></a>설명
@@ -223,10 +223,10 @@ CAutoPtr<T>& operator= (CAutoPtr<TSrc>& p);
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 포인터입니다.
 
-*TSrc*  
+*TSrc*<br/>
 클래스 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -265,7 +265,7 @@ T* operator->() const throw();
 
 캐스트 연산자입니다.
 
-```  
+```
 operator T* () const throw();
 ```
 
@@ -279,6 +279,6 @@ operator T* () const throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[CHeapPtr 클래스](../../atl/reference/cheapptr-class.md)   
-[CAutoVectorPtr 클래스](../../atl/reference/cautovectorptr-class.md)   
+[CHeapPtr 클래스](../../atl/reference/cheapptr-class.md)<br/>
+[CAutoVectorPtr 클래스](../../atl/reference/cautovectorptr-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

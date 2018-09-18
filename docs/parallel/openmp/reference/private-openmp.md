@@ -1,5 +1,5 @@
 ---
-title: 개인 (OpenMP) | Microsoft Docs
+title: private (OpenMP) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4af88f450ce6c77a6b0753917516719331199dfd
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 7bd5b85e563f8160dd4490b650caf4f146a09410
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692680"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071239"
 ---
 # <a name="private-openmp"></a>private (OpenMP)
-각 스레드에 변수의 자체 인스턴스가 있어야 한다는 것을 지정 합니다.  
+각 스레드는 자체 인스턴스 변수를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -32,14 +32,13 @@ ms.locfileid: "33692680"
 private(var)  
 ```  
   
-## <a name="remarks"></a>설명  
- 다음은 각 문자에 대한 설명입니다.  
+### <a name="parameters"></a>매개 변수
   
- `var`  
- 각 스레드에서 인스턴스를 사용 하는 변수입니다.  
+*var*<br/>
+각 스레드에 인스턴스가 있는 변수입니다.  
   
 ## <a name="remarks"></a>설명  
- **개인** 다음과 같은 지시문에 적용 됩니다.  
+ **개인** 다음 지시문에 적용 됩니다.  
   
 -   [for](../../../parallel/openmp/reference/for-openmp.md)  
   
@@ -49,11 +48,11 @@ private(var)
   
 -   [single](../../../parallel/openmp/reference/single.md)  
   
- 자세한 내용은 참조 [개인 2.7.2.1](../../../parallel/openmp/2-7-2-1-private.md)합니다.  
+ 자세한 내용은 [2.7.2.1 개인](../../../parallel/openmp/2-7-2-1-private.md)합니다.  
   
 ## <a name="example"></a>예제  
   
-```  
+```C  
 // openmp_private.c  
 // compile with: /openmp  
 #include <windows.h>  

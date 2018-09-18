@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61099ba206269f13413fefe14ef02002968c65b0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8f028f53075aa540338e7abcce7f42fa132ad1af
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296265"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059124"
 ---
 # <a name="expression-evaluator-error-cxx0000"></a>식 계산기 오류 CXX0000
-오류 조건이 없습니다.  
-  
- 오류가 발생 했습니다. 일반적으로 디버깅을 계속할 수 있습니다.  
-  
- 환경을 기록 하 고 한 Microsoft 기술 지원 서비스에 알립니다.
+
+오류 조건이 없습니다.
+
+오류가 발생 했습니다. 일반적으로 디버깅을 계속할 수 있습니다.
+
+상황을 기록 하 고 Microsoft 기술 지원 서비스에 알립니다.

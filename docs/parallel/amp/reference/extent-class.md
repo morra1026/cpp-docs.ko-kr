@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8399eed2c047c10a0a78b1cd944dba7b2d1da97e
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 59600343a06a2c3c0d4f5b55efadaa09c43452d9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102107"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067703"
 ---
 # <a name="extent-class-c-amp"></a>extent 클래스(C++ AMP)
 벡터를 나타냅니다 *N* 의 범위를 지정 하는 정수 값을 *N*-원점이 0 차원 공간입니다. 벡터의 값은 최하위에서 최하위 순서로 정렬 합니다.
@@ -40,7 +40,7 @@ class extent;
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Rank`  
+*_Rank*<br/>
 순위를 `extent` 개체입니다.
 
 ## <a name="requirements"></a>요구 사항
@@ -102,7 +102,7 @@ bool contains(const index<rank>& _Index) const restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Index`  
+*_Index*<br/>
 `index` 테스트할 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -124,22 +124,22 @@ explicit extent(const int _Array[_Rank])restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Array`  
+*_Array*<br/>
 배열을 `_Rank` 새 만드는 데 사용 되는 정수 `extent` 개체입니다.
 
-`_I`  
+*_I*<br/>
 범위의 길이입니다.
 
-`_I0`  
+*_I0*<br/>
 최대 유효 치수의 길이입니다.
 
-`_I1`  
+*_I1*<br/>
 다음-에-가장 중요 한 차원의 길이입니다.
 
-`_I2`  
+*_I2*<br/>
 최소 유효 치수의 길이입니다.
 
-`_Other`  
+*_Other*<br/>
 `extent` 개체를 새 `extent` 개체를 기반으로 합니다.
 
 ## <a name="remarks"></a>설명
@@ -158,7 +158,7 @@ extent<_Rank>& operator%=(int _Rhs) restrict(cpu, direct3d);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Rhs`  
+*_Rhs*<br/>
 모듈러스를 찾기 위한 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -175,7 +175,7 @@ extent<_Rank>& operator*=(int _Rhs) restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Rhs`  
+*_Rhs*<br/>
 곱할 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -192,7 +192,7 @@ extent<_Rank> operator+(const index<_Rank>& _Rhs) restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Rhs`  
+*_Rhs*<br/>
 `index` 추가할 요소가 포함 된 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -225,7 +225,7 @@ extent<_Rank>& operator+=(int _Rhs) restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Rhs`  
+*_Rhs*<br/>
 번호, 인덱스 또는 범위 추가 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -242,7 +242,7 @@ extent<_Rank> operator-(const index<_Rank>& _Rhs) restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Rhs`  
+*_Rhs*<br/>
 `index` 뺄 요소가 포함 된 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -273,7 +273,7 @@ extent<_Rank>& operator/=(int _Rhs) restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Rhs`  
+*_Rhs*<br/>
 나눌 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -292,7 +292,7 @@ extent<_Rank>& operator-=(int _Rhs) restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Rhs`  
+*_Rhs*<br/>
 뺄 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -309,7 +309,7 @@ extent<_Rank>& operator=(const extent<_Rank>& _Other) restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Other`  
+*_Other*<br/>
 `extent` 복사할 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -326,7 +326,7 @@ int& operator[](unsigned int _Index) restrict(amp,cpu);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Index`  
+*_Index*<br/>
 0에서 1 뺀 순위 까지의 정수입니다.
 
 ### <a name="return-value"></a>반환 값

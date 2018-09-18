@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 504a6afb9815074efe0bda2b679d5ac6a720b220
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 5b40e5ab6cac64edbfdb5ab93c6864d0eacb9e63
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39401895"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073110"
 ---
 # <a name="c-built-in-operators-precedence-and-associativity"></a>C + + 기본 제공 연산자, 우선 순위 및 결합성
 
@@ -115,4 +115,5 @@ C++ 언어는 모든 C 연산자를 포함하며 몇 가지 새로운 연산자�
 |[쉼표](../cpp/comma-operator.md)|[,](../cpp/comma-operator.md)|
 
 ## <a name="see-also"></a>참고자료
- [연산자 오버로드](operator-overloading.md)
+
+[연산자 오버로드](operator-overloading.md)

@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e53f54aee2acdd163de0195c7475049fe2d6346
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 89e3cc7065ed5a0a91ad77ea5a6c44b38622b8e3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243972"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057888"
 ---
 # <a name="compiler-error-c2850"></a>컴파일러 오류 C2850
-'construct': 파일 범위 에서만 사용할 수 중첩된 된 구문에 사용할 수 없습니다.  
-  
- 구문 예: 일부 pragma는 전역 범위에만 사용할 수 있습니다.  
-  
- 다음 샘플에서는 C2850 오류가 생성 됩니다.  
-  
-```  
-// C2850.cpp  
-// compile with: /c /Yc  
-// try the following line instead  
-// #pragma hdrstop  
-namespace X {  
-   #pragma hdrstop   // C2850  
-};  
+
+'construct': 파일 범위에만 추가할 수 중첩된 된 구문에 사용할 수 없습니다.
+
+일부 pragma 등과 같은 구문을 전역 범위에만 나타날 수 있습니다.
+
+다음 샘플에서는 C2850 오류가 생성 됩니다.
+
+```
+// C2850.cpp
+// compile with: /c /Yc
+// try the following line instead
+// #pragma hdrstop
+namespace X {
+   #pragma hdrstop   // C2850
+};
 ```

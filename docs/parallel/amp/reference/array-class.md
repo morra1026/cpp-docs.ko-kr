@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13ce6a5f26cba69aff8ebb296a6f4a716adf1c46
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: abf907fe12f55b44e7f2e184b8752d2e09a326f8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107681"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071733"
 ---
 # <a name="array-class"></a>array 클래스
 액셀러레이터로 데이터를 이동 하는 데 데이터 컨테이너를 나타냅니다.
@@ -50,10 +50,10 @@ friend class array;
 ```  
 
 #### <a name="parameters"></a>매개 변수
-`value_type`  
+*value_type*<br/>
 데이터의 요소 형식입니다.
 
-`_Rank`  
+*_Rank*<br/>
 배열의 차수입니다.
 
 ## <a name="members"></a>멤버
@@ -404,46 +404,46 @@ array(array&& _Other) restrict(cpu);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Associated_Av`  
+*_Associated_Av*<br/>
 Accelerator_view는 배열의 기본 대상 위치를 지정 합니다.
 
-`_Av`  
+*_Av*<br/>
 [accelerator_view](accelerator-view-class.md) 배열의 위치를 지정 하는 개체입니다.
 
-`_Cpu_access_type`  
+*_Cpu_access_type*<br/>
 원하는 [access_type](concurrency-namespace-enums-amp.md#access_type) CPU에서 배열에 대 한 합니다. 이 매개 변수는 기본값은 `access_type_auto` 은 cpu `access_type` 런타임에 결정 합니다. 실제 CPU `access_type` 배열을 사용 하 여 쿼리할 수 있습니다에 대 한는 `get_cpu_access_type` 메서드.
 
-`_Extent`  
+*_Extent*<br/>
 배열의 각 차원의 범위입니다.
 
-`_E0`  
+*_E0*<br/>
 이 섹션의 범위의 가장 중요 한 구성 요소입니다.
 
-`_E1`  
+*_E1*<br/>
 이 섹션의 범위는 다음-에-가장 중요 한 구성 요소입니다.
 
-`_E2`  
+*_E2*<br/>
 이 섹션의 범위의 가장 중요 하지 않은 구성 요소입니다.
 
-`_InputIterator`  
+*_InputIterator*<br/>
 입력된 반복기의 형식입니다.
 
-`_Src`  
+*_Src*<br/>
 복사할 대상 개체입니다.
 
-`_Src_first`  
+*_Src_first*<br/>
 소스 컨테이너에는 시작 반복기입니다.
 
-`_Src_last`  
+*_Src_last*<br/>
 소스 컨테이너에 사용 되는 끝 반복기입니다.
 
-`_Other`  
+*_Other*<br/>
 다른 데이터 원본입니다.
 
-`_Rank`  
+*_Rank*<br/>
 섹션의 순위입니다.
 
-`value_type`  
+*value_type*<br/>
 복사 된 요소의 데이터 형식입니다.
 
 ##  <a name="associated_accelerator_view"></a> associated_accelerator_view
@@ -467,7 +467,7 @@ void copy_to(
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Dest`  
+*_Dest*<br/>
 합니다 [array_view](array-view-class.md) 복사할 개체입니다.
 
 ##  <a name="cpu_access_type"></a> cpu_access_type
@@ -551,7 +551,7 @@ operator std::vector<value_type>() const restrict(cpu);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`value_type`  
+*value_type*<br/>
 벡터 요소의 데이터 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -580,19 +580,19 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Index`  
+*_Index*<br/>
 요소의 위치입니다.
 
-`_I0`  
+*_I0*<br/>
 이 단원의 원본의의 가장 중요 한 구성 요소입니다.
 
-`_I1`  
+*_I1*<br/>
 이 섹션의 원점을 다음-에-가장 중요 한 구성 요소입니다.
 
-`_I2`  
+*_I2*<br/>
 이 단원의 원본의의 가장 중요 하지 않은 구성 요소입니다.
 
-`_I`  
+*_I*<br/>
 요소의 위치입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -614,10 +614,10 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Index`  
+*_Index*<br/>
 인덱스입니다.
 
-`_I`  
+*_I*<br/>
 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -637,10 +637,10 @@ array& operator= (
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Other`  
+*_Other*<br/>
 `array` 복사할 개체입니다.
 
-`_Src`  
+*_Src*<br/>
 `array` 복사할 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -752,40 +752,40 @@ array_view<const value_type,3> section(
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_E0`  
+*_E0*<br/>
 이 섹션의 범위의 가장 중요 한 구성 요소입니다.
 
-`_E1`  
+*_E1*<br/>
 이 섹션의 범위는 다음-에-가장 중요 한 구성 요소입니다.
 
-`_E2`  
+*_E2*<br/>
 이 섹션의 범위의 가장 중요 하지 않은 구성 요소입니다.
 
-`_Ext`  
+*_Ext*<br/>
 합니다 [익스텐트](extent-class.md) 섹션의 범위를 지정 하는 개체입니다. 원래 값은 0입니다.
 
-`_Idx`  
+*_Idx*<br/>
 합니다 [인덱스](index-class.md) 출처의 위치를 지정 하는 개체입니다. 하위 섹션에는 범위의 나머지입니다.
 
-`_I0`  
+*_I0*<br/>
 이 단원의 원본의의 가장 중요 한 구성 요소입니다.
 
-`_I1`  
+*_I1*<br/>
 이 섹션의 원점을 다음-에-가장 중요 한 구성 요소입니다.
 
-`_I2`  
+*_I2*<br/>
 이 단원의 원본의의 가장 중요 하지 않은 구성 요소입니다.
 
-`_Rank`  
+*_Rank*<br/>
 섹션의 순위입니다.
 
-`_Section_extent`  
+*_Section_extent*<br/>
 합니다 [익스텐트](extent-class.md) 섹션의 범위를 지정 하는 개체입니다.
 
-`_Section_origin`  
+*_Section_origin*<br/>
 합니다 [인덱스](index-class.md) 출처의 위치를 지정 하는 개체입니다.
 
-`value_type`  
+*value_type*<br/>
 복사 된 요소의 데이터 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -807,13 +807,13 @@ array_view<const value_type,_New_rank> view_as(
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_New_rank`  
+*_New_rank*<br/>
 순위를 `extent` 개체를 매개 변수로 전달 합니다.
 
-`_View_extent`  
+*_View_extent*<br/>
 새 생성 하는 데 사용 되는 정도 [array_view](array-view-class.md) 개체입니다.
 
-`value_type`  
+*value_type*<br/>
 두 원본에 있는 요소의 데이터 형식 `array` 개체 및 반환 된 `array_view` 개체입니다.
 
 ### <a name="return-value"></a>반환 값

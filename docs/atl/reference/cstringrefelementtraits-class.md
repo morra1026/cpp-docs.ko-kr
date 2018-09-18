@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 223d781e879f2d1c3a35fce00e788a42247299eb
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8369afbbf423f85df0e38f7f2979b3b7e48f8591
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760099"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067924"
 ---
 # <a name="cstringrefelementtraits-class"></a>CStringRefElementTraits 클래스
 
@@ -34,13 +34,13 @@ ms.locfileid: "43760099"
 ## <a name="syntax"></a>구문
 
 ```
-template <typename T>  
+template <typename T>
 class CStringRefElementTraits : public CElementTraitsBase<T>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 컬렉션에 저장할 데이터의 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -79,10 +79,10 @@ static bool CompareElements(INARGTYPE element1, INARGTYPE element2) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*element1*  
+*element1*<br/>
 첫 번째 요소는 문자열입니다.
 
-*element2 요소*  
+*element2 요소*<br/>
 두 번째 요소는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -99,10 +99,10 @@ static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*str1*  
+*str1*<br/>
 첫 번째 요소는 문자열입니다.
 
-*str2*  
+*str2*<br/>
 두 번째 요소는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -119,7 +119,7 @@ static ULONG Hash(INARGTYPE str) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*str*  
+*str*<br/>
 문자열 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -128,5 +128,5 @@ static ULONG Hash(INARGTYPE str) throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[CElementTraitsBase 클래스](../../atl/reference/celementtraitsbase-class.md)   
+[CElementTraitsBase 클래스](../../atl/reference/celementtraitsbase-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

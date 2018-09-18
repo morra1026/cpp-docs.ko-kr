@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f61400ad53d6fcc208b22067bbce62e886d0299
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ab575cc03905cc4405c221e27eec5b36776b4a0a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33322863"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056978"
 ---
 # <a name="resource-compiler-error-rc2171"></a>리소스 컴파일러 오류 RC2171
-알 수 없는 DIB 헤더 형식  
-  
- 비트맵 헤더가 **BITMAPCOREHEADER** 또는 **BITMAPINFOHEADER** 구조입니다.
+
+알 수 없는 DIB 헤더 형식
+
+비트맵 헤더가 없는 **BITMAPCOREHEADER** 하거나 **BITMAPINFOHEADER** 구조입니다.

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 381bb9505745331d2ef470c5fd4e8d55e5e742f8
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: dfadbfb887959aaad01c88cba7c3c04ef5f27873
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45705811"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066136"
 ---
 # <a name="atl-control-wizard"></a>ATL 컨트롤 마법사
 
@@ -107,7 +107,7 @@ ATL 프로젝트 (또는 MFC 프로젝트에 ATL 지원)에 삽입 하는 ATL �
 
 ## <a name="see-also"></a>참고 항목
 
-[ATL 컨트롤](../../atl/reference/adding-an-atl-control.md)   
-[복합 컨트롤에 기능 추가](../../atl/adding-functionality-to-the-composite-control.md)   
+[ATL 컨트롤](../../atl/reference/adding-an-atl-control.md)<br/>
+[복합 컨트롤에 기능 추가](../../atl/adding-functionality-to-the-composite-control.md)<br/>
 [ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)
 

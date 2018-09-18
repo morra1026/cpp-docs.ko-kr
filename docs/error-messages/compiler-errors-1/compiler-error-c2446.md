@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0274aaf606d039cc4dcf4482f5d8ea1e3ef8e86d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7eeeab46bd7ed5be5b820d1740dd4ff8d377633a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196664"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062802"
 ---
 # <a name="compiler-error-c2446"></a>컴파일러 오류 C2446
-'operator': 'type1'에서 'type2' 사이의 변환이  
-  
- 컴파일러는 변환할 수 없는 `type1` 를 `type2`합니다. C/c + + 의미 체계를 위반 하기 때문에 변환 적합할 수 있습니다.
+
+'operator': 'type1'에서 'type2'로 변환 되지 않았습니다
+
+컴파일러는 변환할 수 없습니다 `type1` 에 `type2`입니다. C/c + + 의미 체계를 위반 하기 때문에 변환이 적합 하지 않을 수 있습니다.

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2431319c6da69dcb144dbb47b4fbb0e01c1eaa78
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 628aa2c0465018b635d015c56a0b38f69365bd88
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236682"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060085"
 ---
 # <a name="compiler-error-c2795"></a>컴파일러 오류 C2795
-'super::function' 멤버 함수가 아닙니다.  
-  
- 사용 하려고 할 때마다이 오류 메시지가 표시 [super](../../cpp/super.md) 멤버 함수 이외의 다른 멤버에 액세스 합니다.
+
+'super::function' 멤버 함수가 아닙니다.
+
+사용 하려고 할 때마다이 오류 메시지가 나타납니다 [super](../../cpp/super.md) 멤버 함수가 아닌 멤버에 액세스 합니다.

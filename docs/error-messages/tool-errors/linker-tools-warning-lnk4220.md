@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d832a0ca961aed7359ad04391319f64a24216bff
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9070b026f155a318d5eb087d0a08f05a64d5dd99
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33305311"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073202"
 ---
 # <a name="linker-tools-warning-lnk4220"></a>링커 도구 경고 LNK4220
-잘못 된 '링커 옵션' 값은 ''; 기본값이 선택 됩니다.  
-  
- 범위를 벗어난 값을 지정 했습니다는 [/TLBID](../../build/reference/tlbid-specify-resource-id-for-typelib.md) 옵션입니다. 에 대 한 기본값 **/TLBID** 는 1입니다.
+
+잘못 된 '링커 옵션' 값은 ''; 기본값이 선택 됩니다.
+
+범위를 벗어난 값을 사용 하 여 지정 된 된 [/TLBID](../../build/reference/tlbid-specify-resource-id-for-typelib.md) 옵션입니다. 에 대 한 기본값 **/TLBID** 1입니다.

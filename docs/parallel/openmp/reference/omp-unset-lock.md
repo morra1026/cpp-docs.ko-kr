@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 243ff6d2336d3e293d009f82ba4a39243e076f94
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 6b0b7b796ce5db6cfe23eea3608db171ff38e263
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33690691"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059067"
 ---
 # <a name="ompunsetlock"></a>omp_unset_lock
-잠금을 해제 합니다.  
+잠금을 해제합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,14 +34,13 @@ void omp_unset_lock(
 );  
 ```  
   
-## <a name="remarks"></a>설명  
- 다음은 각 문자에 대한 설명입니다.  
+### <a name="parameters"></a>매개 변수
   
- `lock`  
- 형식의 변수 [omp_lock_t](../../../parallel/openmp/reference/omp-lock-t.md) 를 사용 하 여 초기화 된 [omp_init_lock](../../../parallel/openmp/reference/omp-init-lock.md)스레드에서 소유 하 고 실행 중인 함수에, 합니다.  
+*lock*<br/>
+형식 변수의 [omp_lock_t](../../../parallel/openmp/reference/omp-lock-t.md) 사용 하 여 초기화 된 [omp_init_lock](../../../parallel/openmp/reference/omp-init-lock.md), 스레드에 의해 소유 및 함수에서 실행 합니다.  
   
 ## <a name="remarks"></a>설명  
- 자세한 내용은 참조 [3.2.4 omp_unset_lock and omp_unset_nest_lock 함수](../../../parallel/openmp/3-2-4-omp-unset-lock-and-omp-unset-nest-lock-functions.md)합니다.  
+ 자세한 내용은 [3.2.4 omp_unset_lock and omp_unset_nest_lock 함수](../../../parallel/openmp/3-2-4-omp-unset-lock-and-omp-unset-nest-lock-functions.md)합니다.  
   
 ## <a name="example"></a>예제  
  참조 [omp_init_lock](../../../parallel/openmp/reference/omp-init-lock.md) 사용 하는 예제에 대 한 `omp_unset_lock`합니다.  

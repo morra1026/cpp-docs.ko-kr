@@ -33,12 +33,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53a37083335c42d8042167e737b68ccad517fa00
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 0fa2c3b421aa0aa60194f8ed949c023d78b70c2d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756352"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070303"
 ---
 # <a name="csimplemap-class"></a>CSimpleMap 클래스
 
@@ -47,19 +47,19 @@ ms.locfileid: "43756352"
 ## <a name="syntax"></a>구문
 
 ```
-template <class TKey, class TVal, class TEqual = CSimpleMapEqualHelper<TKey, TVal>>  
+template <class TKey, class TVal, class TEqual = CSimpleMapEqualHelper<TKey, TVal>>
 class CSimpleMap
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*TKey*  
+*TKey*<br/>
 Key 요소 형식입니다.
 
-*TVal*  
+*TVal*<br/>
 값 요소 형식입니다.
 
-*TEqual*  
+*TEqual*<br/>
 형식의 요소에 대 한 같음 테스트를 정의 하는 특성 (trait) 개체 `T`합니다.
 
 ## <a name="members"></a>멤버
@@ -124,10 +124,10 @@ BOOL Add(const TKey& key, const TVal& val);
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 키입니다.
 
-*val*  
+*val*<br/>
 연결 된 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -188,7 +188,7 @@ int FindKey(const TKey& key) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 검색할 키입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -205,7 +205,7 @@ int FindVal(const TVal& val) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*val*  
+*val*<br/>
 검색할 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -222,7 +222,7 @@ TKey& GetKeyAt(int nIndex) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*nIndex*  
+*nIndex*<br/>
 반환할 키의 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -255,7 +255,7 @@ TVal& GetValueAt(int nIndex) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*nIndex*  
+*nIndex*<br/>
 반환할 값의 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -276,7 +276,7 @@ TVal Lookup(const TKey& key) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 키입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -293,7 +293,7 @@ BOOL Remove(const TKey& key);
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 키입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -322,7 +322,7 @@ BOOL RemoveAt(int nIndex);
 
 ### <a name="parameters"></a>매개 변수
 
-*nIndex*  
+*nIndex*<br/>
 키 및 제거 하려면 연결 된 값의 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -339,7 +339,7 @@ TKey ReverseLookup(const TVal& val) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*val*  
+*val*<br/>
 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -356,10 +356,10 @@ BOOL SetAt(const TKey& key, const TVal& val);
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 키입니다.
 
-*val*  
+*val*<br/>
 할당할 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -379,13 +379,13 @@ BOOL SetAtIndex(
 
 ### <a name="parameters"></a>매개 변수
 
-*nIndex*  
+*nIndex*<br/>
 키와 값을 변경 하려면 연결을 참조 하는 인덱스입니다.
 
-*key*  
+*key*<br/>
 새 키입니다.
 
-*val*  
+*val*<br/>
 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
