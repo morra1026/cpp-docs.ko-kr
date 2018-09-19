@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0eb34b0ce7b087a457b751604ffd86e61085bf5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c89f577168593dcb22570af63801fc05654eb4b3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753076"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100699"
 ---
 # <a name="csnapinpropertypageimpl-class"></a>CSnapInPropertyPageImpl 클래스
 
@@ -125,7 +125,7 @@ CSnapInPropertyPageImpl(LPCTSTR lpszTitle = NULL);
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszTitle*  
+*lpszTitle*<br/>
 [in] 속성 페이지의 제목입니다.
 
 ### <a name="remarks"></a>설명
@@ -326,10 +326,10 @@ LRESULT QuerySiblings(WPARAM wParam, LPARAM lParam);
 
 ### <a name="parameters"></a>매개 변수
 
-*wParam*  
+*wParam*<br/>
 [in] 추가 메시지 종속 정보를 지정 합니다.
 
-*lParam*  
+*lParam*<br/>
 [in] 추가 메시지 종속 정보를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -350,7 +350,7 @@ void SetModified(BOOL bChanged = TRUE);
 
 ### <a name="parameters"></a>매개 변수
 
-*bChanged*  
+*bChanged*<br/>
 [in] 속성 페이지 설정; 적용 된 마지막 시간 이후 수정 된 것을 나타내려면 TRUE 속성 페이지 설정 적용 된 하거나 무시할지 FALSE입니다.
 
 ### <a name="remarks"></a>설명

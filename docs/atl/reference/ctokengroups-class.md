@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 87109793625435945c45b2643ccd674946acff49
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1d14a839cded7d22236912ba52a733a9ce15f7aa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752647"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103245"
 ---
 # <a name="ctokengroups-class"></a>CTokenGroups 클래스
 
@@ -92,19 +92,19 @@ Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access
 추가 된 `CSid` 또는 기존 `TOKEN_GROUPS` 구조체를 `CTokenGroups` 개체.
 
 ```
-void Add(const CSid& rSid, DWORD dwAttributes) throw(... );  
+void Add(const CSid& rSid, DWORD dwAttributes) throw(... );
 void Add(const TOKEN_GROUPS& rTokenGroups) throw(...);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*rSid*  
+*rSid*<br/>
 A [CSid](../../atl/reference/csid-class.md) 개체입니다.
 
-*dwAttributes*  
+*dwAttributes*<br/>
 특성을 사용 하 여 연결 된 `CSid` 개체입니다.
 
-*rTokenGroups*  
+*rTokenGroups*<br/>
 A [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) 구조입니다.
 
 ### <a name="remarks"></a>설명
@@ -117,13 +117,13 @@ A [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) 구조입니
 
 ```
 CTokenGroups() throw();
-CTokenGroups(const CTokenGroups& rhs) throw(... );  
+CTokenGroups(const CTokenGroups& rhs) throw(... );
 CTokenGroups(const TOKEN_GROUPS& rhs) throw(...);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*rhs*  
+*rhs*<br/>
 합니다 `CTokenGroups` 개체 또는 [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) 생성 하는 구조를 `CTokenGroups` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -152,7 +152,7 @@ bool Delete(const CSid& rSid) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*rSid*  
+*rSid*<br/>
 합니다 [CSid](../../atl/reference/csid-class.md) 개체는 보안 식별자 (SID) 및 특성을 제거 해야 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -215,10 +215,10 @@ void GetSidsAndAttributes(
 
 ### <a name="parameters"></a>매개 변수
 
-*pSids*  
+*pSids*<br/>
 배열에 대 한 포인터 [CSid](../../atl/reference/csid-class.md) 개체입니다.
 
-*pAttributes*  
+*pAttributes*<br/>
 Dword 배열에 대 한 포인터입니다. 이 매개 변수가 생략 하거나 NULL 인 경우에 특성을 검색 하지 됩니다.
 
 ### <a name="remarks"></a>설명
@@ -237,10 +237,10 @@ bool LookupSid(
 
 ### <a name="parameters"></a>매개 변수
 
-*rSid*  
+*rSid*<br/>
 합니다 [CSid](../../atl/reference/csid-class.md) 개체입니다.
 
-*pdwAttributes*  
+*pdwAttributes*<br/>
 수락할는 DWORD에 대 한 포인터를 `CSid` 개체의 특성입니다. 생략 하거나 NULL 특성 검색 되지 않습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -256,13 +256,13 @@ bool LookupSid(
 대입 연산자입니다.
 
 ```
-CTokenGroups& operator= (const TOKEN_GROUPS& rhs) throw(...);  
+CTokenGroups& operator= (const TOKEN_GROUPS& rhs) throw(...);
 CTokenGroups& operator= (const CTokenGroups& rhs) throw(...);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*rhs*  
+*rhs*<br/>
 합니다 `CTokenGroups` 개체 또는 [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) 할당할 구조는 `CTokenGroups` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -273,7 +273,7 @@ CTokenGroups& operator= (const CTokenGroups& rhs) throw(...);
 
 에 대 한 포인터에 값을 캐스팅 합니다 `TOKEN_GROUPS` 구조입니다.
 
-```  
+```
 operator const TOKEN_GROUPS *() const throw(...);
 ```
 
@@ -283,7 +283,7 @@ operator const TOKEN_GROUPS *() const throw(...);
 
 ## <a name="see-also"></a>참고 항목
 
-[보안 샘플](../../visual-cpp-samples.md)   
-[CSid 클래스](../../atl/reference/csid-class.md)   
-[클래스 개요](../../atl/atl-class-overview.md)   
+[보안 샘플](../../visual-cpp-samples.md)<br/>
+[CSid 클래스](../../atl/reference/csid-class.md)<br/>
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [보안 전역 함수](../../atl/reference/security-global-functions.md)

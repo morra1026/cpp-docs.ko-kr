@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19895f08f06dbbce998350c89a7accb9251b9588
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3908dbaca4384b0d76b2554593dc51f4a795a174
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33268946"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094665"
 ---
 # <a name="compiler-error-c3858"></a>컴파일러 오류 C3858
-'type': 현재 범위에서 다시 선언할 수 없습니다.  
-  
- 동일한 범위에서 두 번 형식을 선언할 수 없습니다.  
-  
- 다음 샘플에서는 C3858 오류가 생성 됩니다.  
-  
-```  
-// C3858.cpp  
-// compile with: /LD  
-template <class T>  
-struct Outer  
-{  
-   struct Inner;  
-};  
-  
-template <class T>  
-struct Outer<T>::Inner;   // C3858  
-// try the following line instead  
-// struct Outer<T>::Inner{};  
+
+'type': 현재 범위에서 다시 선언할 수 없습니다
+
+형식은 두 번 동일한 범위에서에서 선언할 수 없습니다.
+
+다음 샘플에서는 C3858를 생성합니다.
+
+```
+// C3858.cpp
+// compile with: /LD
+template <class T>
+struct Outer
+{
+   struct Inner;
+};
+
+template <class T>
+struct Outer<T>::Inner;   // C3858
+// try the following line instead
+// struct Outer<T>::Inner{};
 ```

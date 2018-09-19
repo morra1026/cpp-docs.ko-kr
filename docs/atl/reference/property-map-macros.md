@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf82c48cb5b1f9bd93a9c30afe8c698699c8199b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 594b02d777d87decfc218064678dbecdf8ecf0c9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758094"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106353"
 ---
 # <a name="property-map-macros"></a>속성 맵 매크로
 
@@ -55,7 +55,7 @@ BEGIN_PROP_MAP(theClass)
 
 ### <a name="parameters"></a>매개 변수
 
-*theClass*  
+*theClass*<br/>
 [in] 속성이 지도 포함 하는 클래스를 지정 합니다.
 
 ### <a name="remarks"></a>설명
@@ -80,13 +80,13 @@ PROP_DATA_ENTRY( szDesc, member, vt)
 
 ### <a name="parameters"></a>매개 변수
 
-*szDesc*  
+*szDesc*<br/>
 [in] 속성 설명입니다.
 
-*멤버*  
+*멤버*<br/>
 [in] 범위; 포함 된 데이터 멤버 예를 들어 `m_sizeExtent`합니다.
 
-*vt*  
+*vt*<br/>
 [in] VARIANT 형식의 속성을 지정합니다.
 
 ### <a name="remarks"></a>설명
@@ -113,16 +113,16 @@ PROP_ENTRY_TYPE( szDesc, dispid, clsid, vt)
 
 ### <a name="parameters"></a>매개 변수
 
-*szDesc*  
+*szDesc*<br/>
 [in] 속성 설명입니다.
 
-*dispid*  
+*dispid*<br/>
 [in] 속성의 DISPID입니다.
 
-*clsid*  
+*clsid*<br/>
 [in] 연결된 속성 페이지의 CLSID입니다. 연결된 속성 페이지를 하지 않은 속성에 대 한 특수 값 CLSID_NULL를 사용 합니다.
 
-*vt*  
+*vt*<br/>
 [in] 속성의 형식입니다.
 
 ### <a name="remarks"></a>설명
@@ -145,19 +145,19 @@ PROP_ENTRY_TYPE_EX( szDesc, dispid, clsid, iidDispatch, vt)
 
 ### <a name="parameters"></a>매개 변수
 
-*szDesc*  
+*szDesc*<br/>
 [in] 속성 설명입니다.
 
-*dispid*  
+*dispid*<br/>
 [in] 속성의 DISPID입니다.
 
-*clsid*  
+*clsid*<br/>
 [in] 연결된 속성 페이지의 CLSID입니다. 연결된 속성 페이지를 하지 않은 속성에 대 한 특수 값 CLSID_NULL를 사용 합니다.
 
-*iidDispatch*  
+*iidDispatch*<br/>
 [in] 속성을 정의 하는 이중 인터페이스의 IID입니다.
 
-*vt*  
+*vt*<br/>
 [in] 속성의 형식입니다.
 
 ### <a name="remarks"></a>설명
@@ -182,7 +182,7 @@ PROP_PAGE(clsid)
 
 ### <a name="parameters"></a>매개 변수
 
-*clsid*  
+*clsid*<br/>
 [in] 속성 페이지의 CLSID입니다.
 
 ### <a name="remarks"></a>설명

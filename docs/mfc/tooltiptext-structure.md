@@ -17,33 +17,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f65b94294b3b3d55f9839dffa99a18be61c5639
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 82c06b98acec18e845fd1353875c1453c4bee8b1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43195986"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097161"
 ---
 # <a name="tooltiptext-structure"></a>TOOLTIPTEXT 구조체
 작성에서에 [도구 설명 알림 처리기](../mfc/handling-ttn-needtext-notification-for-tool-tips.md)를 사용 해야 합니다 **TOOLTIPTEXT** 구조입니다. 멤버는 **TOOLTIPTEXT** 구조는:  
   
- `typedef struct {`  
-  
- `NMHDR     hdr;        // required for all WM_NOTIFY messages`  
-  
- `LPTSTR    lpszText;   // see below`  
-  
- `TCHAR     szText[80]; // buffer for tool tip text`  
-  
- `HINSTANCE hinst;      // see below`  
-  
- `UINT      uflags;     // flag indicating how to interpret the`  
-  
- `// idFrom member of the NMHDR structure`  
-  
- `// that is included in the structure`  
-  
- `} TOOLTIPTEXT, FAR *LPTOOLTIPTEXT;`  
+```cpp
+typedef struct {
+    NMHDR     hdr;        // required for all WM_NOTIFY messages
+    LPTSTR    lpszText;   // see below
+    TCHAR     szText[80]; // buffer for tool tip text
+    HINSTANCE hinst;      // see below
+    UINT      uflags;     // flag indicating how to interpret the
+                          // idFrom member of the NMHDR structure
+                          // that is included in the structure
+} TOOLTIPTEXT, FAR *LPTOOLTIPTEXT;
+```
   
  *hdr*  
  텍스트는 도구를 식별 합니다. 해야 할 수 있습니다이 구조체의 유일한 구성원은 컨트롤의 명령 id입니다. 컨트롤의 명령 ID는 이어야 합니다 *idFrom* 의 멤버를 **NMHDR** 구조를 구문을 사용 하 여 액세스할 `hdr.idFrom`. 참조 [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) 에 대 한 멤버의 설명은 합니다 **NMHDR** 구조입니다.  
@@ -57,7 +51,7 @@ ms.locfileid: "43195986"
  *hinst*  
  도구 설명 텍스트로 사용할 문자열을 포함 하는 인스턴스 핸들입니다. 하는 경우 *lpszText* 주소인 도구 설명 텍스트의이 멤버는 NULL입니다.  
   
- 처리 하는 경우는 `TTN_NEEDTEXT` 알림 메시지를 다음 방법 중 하나에 표시할 문자열을 지정 합니다.  
+처리 하는 경우는 `TTN_NEEDTEXT` 알림 메시지를 다음 방법 중 하나에 표시할 문자열을 지정 합니다.  
   
 -   지정 된 버퍼에 텍스트를 복사 합니다 *szText* 멤버입니다.  
   

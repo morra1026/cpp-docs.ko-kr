@@ -16,44 +16,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1738bdcc66e05512932fcd9029484dc55e3fc4a0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5cccc06d9202297e1c86d87735621e12dd346cca
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236896"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095223"
 ---
 # <a name="compiler-error-c2749"></a>컴파일러 오류 C2749
-'type': throw 하거나 catch /clr: safe 사용 하는 관리 되는 클래스에 대 한 핸들 수  
-  
- 사용 하는 경우 **/clr: safe**, throw 또는 catch 참조 형식만 있습니다.  
-  
- 자세한 내용은 [/clr(공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md)을 참조하세요.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C2749 오류가 생성 됩니다.  
-  
-```  
-// C2749.cpp  
-// compile with: /clr:safe  
-ref struct MyStruct {  
-public:  
-   int i;  
-};  
-  
-int main() {  
-   MyStruct ^x = gcnew MyStruct;  
-  
-   // Delete the following 4 lines to resolve.  
-   try {   
-      throw (1);   // C2749  
-   }  
-   catch(int){}  
-  
-   // OK  
-   try {  
-      throw (x);  
-   }  
-   catch(MyStruct ^){}   
-}  
+
+'type': throw 또는 catch /clr: safe 사용 하 여 관리 되는 클래스에 대 한 핸들 수
+
+사용 하는 경우 **/clr: safe**, throw 또는 catch 참조 형식만 가능 합니다.
+
+자세한 내용은 [/clr(공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md)을 참조하세요.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C2749 오류가 생성 됩니다.
+
+```
+// C2749.cpp
+// compile with: /clr:safe
+ref struct MyStruct {
+public:
+   int i;
+};
+
+int main() {
+   MyStruct ^x = gcnew MyStruct;
+
+   // Delete the following 4 lines to resolve.
+   try {
+      throw (1);   // C2749
+   }
+   catch(int){}
+
+   // OK
+   try {
+      throw (x);
+   }
+   catch(MyStruct ^){}
+}
 ```

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 602b92d52860429a70b2339f35093ab85934fc89
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8432b4aff0c4ac3526f99ba4faaf669e7c69ee72
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293860"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102595"
 ---
 # <a name="compiler-warning-level-3-c4511"></a>컴파일러 경고(수준 3) C4511
-'class': 복사 생성자를 생성할 수 없습니다  
-  
- 컴파일러는 클래스;에 대 한 기본 복사 생성자를 생성할 수 없습니다. 기본 클래스에는 복사 생성자를 private 있을 수 있습니다.
+
+'class': 복사 생성자를 생성할 수 없습니다
+
+컴파일러는 클래스에 대 한 기본 복사 생성자를 생성할 수 없습니다. 기본 클래스에 전용 복사 생성자 있을 수 있습니다.

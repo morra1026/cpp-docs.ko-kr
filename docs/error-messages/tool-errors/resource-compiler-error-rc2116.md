@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 63ba6a62610e4cc22a7b1e49695e3b730ee20957
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a4e28be01c0f38579f09204a9b1312fdfe287851
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33321456"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097122"
 ---
 # <a name="resource-compiler-error-rc2116"></a>리소스 컴파일러 오류 RC2116
-ID에 대 한 숫자가 있어야합니다.  
-  
- 에 대 한 숫자가 있어야 합니다.는 `id` 에서 제어 문의 필드는 **대화** 문. 번호를 지정 했는지 확인 또는 `#define` 문을 컨트롤 id입니다.
+
+ID에 수가 있어야합니다.
+
+에 대 한 숫자가 있어야 합니다.는 `id` 제어문에 필드를 **대화** 문입니다. 숫자로 했는지 확인 하거나 `#define` 문을 컨트롤 id입니다.

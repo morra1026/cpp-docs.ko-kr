@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5dcaa927bc9fe38ca45cf938a20cf08713ecff1d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f24cf6cce5cdf268367f547e8a536dcdae7cc859
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755518"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098955"
 ---
 # <a name="ccomobjectrootex-class"></a>CComObjectRootEx 클래스
 
@@ -44,13 +44,13 @@ ms.locfileid: "43755518"
 ## <a name="syntax"></a>구문
 
 ```
-template<class ThreadModel>  
+template<class ThreadModel>
 class CComObjectRootEx : public CComObjectRootBase
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*ThreadModel*  
+*ThreadModel*<br/>
 메서드가 필요한 스레딩 모델을 구현 하는 클래스입니다. 설정 하 여 스레딩 모델을 명시적으로 선택할 수 있습니다 *ThreadModel* 에 [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md)하십시오 [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md), 또는 [ CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md)합니다. 설정 하 여 서버의 기본 스레드 모델을 적용할 수 있습니다 *ThreadModel* 하 [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) 하거나 [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)합니다.  
 
 ## <a name="members"></a>멤버
@@ -205,16 +205,16 @@ static HRESULT InternalQueryInterface(
 
 ### <a name="parameters"></a>매개 변수
 
-*pThis*  
+*pThis*<br/>
 [in] 에 노출 된 인터페이스의 COM 맵에 포함 된 개체에 대 한 포인터 `QueryInterface`합니다.
 
-*pEntries*  
+*pEntries*<br/>
 [in] 에 대 한 포인터를 `_ATL_INTMAP_ENTRY` 맵을 사용할 수 있는 인터페이스에 액세스 하는 구조입니다.
 
-*iid*  
+*iid*<br/>
 [in] 요청 된 인터페이스의 GUID입니다.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] 에 지정 된 인터페이스 포인터에 대 한 포인터 *iid*, 또는 인터페이스를 찾을 수 없으면 NULL입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -308,7 +308,7 @@ static void WINAPI ObjectMain(bool bStarting);
 
 ### <a name="parameters"></a>매개 변수
 
-*bStarting*  
+*bStarting*<br/>
 [out] 값이 TRUE 클래스를 초기화 하는 중입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
@@ -343,10 +343,10 @@ HRESULT OuterQueryInterface(REFIID iid, void** ppvObject);
 
 ### <a name="parameters"></a>매개 변수
 
-*iid*  
+*iid*<br/>
 [in] 요청 된 인터페이스의 GUID입니다.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] 에 지정 된 인터페이스 포인터에 대 한 포인터 *iid*, 또는 집계의 인터페이스를 지원 하지 않는 경우 NULL입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -381,7 +381,7 @@ void Unlock();
 
 ## <a name="see-also"></a>참고 항목
 
-[CComAggObject 클래스](../../atl/reference/ccomaggobject-class.md)   
-[CComObject 클래스](../../atl/reference/ccomobject-class.md)   
-[CComPolyObject 클래스](../../atl/reference/ccompolyobject-class.md)   
+[CComAggObject 클래스](../../atl/reference/ccomaggobject-class.md)<br/>
+[CComObject 클래스](../../atl/reference/ccomobject-class.md)<br/>
+[CComPolyObject 클래스](../../atl/reference/ccompolyobject-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

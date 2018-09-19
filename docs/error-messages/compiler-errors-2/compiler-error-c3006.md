@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3019a4017170b13da21820931a572370db1862e1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 098a39fa6a2918a6a168c28ce322544fe944a1c6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33258202"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103186"
 ---
 # <a name="compiler-error-c3006"></a>컴파일러 오류 C3006
-'clause': OpenMP 'directive' 지시문의 절에 필요한 인수가 없습니다.  
-  
- OpenMP 지시문에 필요한 인수가 없습니다.  
-  
- 다음 샘플에서는 C3006을 생성합니다.  
-  
-```  
-// C3006.c  
-// compile with: /openmp  
-int main()  
-{  
-   #pragma omp parallel shared   // C3006  
-   // Try the following line instead:  
-   // #pragma omp parallel shared(x) {}  
-  
-}  
+
+'clause': OpenMP 'directive' 지시문의 절에 필요한 인수가 없습니다.
+
+OpenMP 지시문에 필요한 인수가 없습니다.
+
+다음 샘플에서는 C3006을 생성합니다.
+
+```
+// C3006.c
+// compile with: /openmp
+int main()
+{
+   #pragma omp parallel shared   // C3006
+   // Try the following line instead:
+   // #pragma omp parallel shared(x) {}
+
+}
 ```

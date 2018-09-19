@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6bcfca18512d7a5af18bf978fc4f6549799bbdc7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f71fca2804a6869fbb58073eb0c11a3ac1f18153
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297695"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098896"
 ---
 # <a name="compiler-warning-level-4-c4517"></a>컴파일러 경고(수준 4) C4517
-액세스 선언은 사용 되지 않습니다. 멤버를 사용 하 여 선언 보다 더 효율적을 제공합니다.  
-  
- ANSI c + + committee 액세스 선언이 했습니다 (없이 파생된 클래스에서 멤버의 액세스 권한을 변경 하는 [를 사용 하 여](../../cpp/using-declaration.md) 키워드)를 오래 된 상태일 수 있습니다. 액세스 선언이 c + +의 이후 버전에서 지원 되지 않을 수 있습니다.
+
+액세스 선언은 사용 되지 않습니다. 더 나은 대안을 제공 하는 멤버를 사용 하 여 선언
+
+ANSI c + + 위원회에 대 한 액세스 선언이 했습니다 (하지 않고 파생된 클래스에서 멤버의 액세스를 변경 합니다 [를 사용 하 여](../../cpp/using-declaration.md) 키워드) 오래 된 되도록 합니다. 액세스 선언은 c + +의 이후 버전에서 지원 되지 않을 수 있습니다.

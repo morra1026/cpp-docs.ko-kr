@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 828c3881771aa37181822859cc54894e8771c2cb
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: eddeb6467dfb3bf578c0287161de989e8ba12483
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767596"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097473"
 ---
 # <a name="using-replaceable-parameters-the-registrar39s-preprocessor"></a>대체 가능 매개 변수를 사용 하 여 (등록 기관에&#39;s 전처리기)
 
@@ -36,8 +36,8 @@ ms.locfileid: "43767596"
 
 전처리기를 사용 하는 다른 스크립트 데이터를 사용 하 여 런타임 데이터를 연결 하는 것입니다. 예를 들어, 문자열을 사용 하 여 모듈 전체 경로 포함 하는 항목이 필요한 "`, 1`" 끝에 추가 됩니다. 먼저 다음 확장을 정의 합니다.
 
-```  
-'MySampleKey' = s '%MODULE%, 1'  
+```
+'MySampleKey' = s '%MODULE%, 1'
 ```
 
 그런 다음 호출 하기 전에 스크립트 처리에 나열 된 메서드 중 하나 [스크립트 호출](../atl/invoking-scripts.md), 대체 맵에 추가:
@@ -53,8 +53,8 @@ ms.locfileid: "43767596"
 >  런타임 시 대체 값을 대체를 스크립트에서 호출을 제거 합니다 [DECLARE_REGISTRY_RESOURCE](../atl/reference/registry-macros.md#declare_registry_resource) 하거나 [DECLARE_REGISTRY_RESOURCEID](../atl/reference/registry-macros.md#declare_registry_resourceid) 매크로입니다. 대신, 고유한로 바꾸거나 `UpdateRegistry` 메서드를 호출 하는 [CAtlModule::UpdateRegistryFromResourceD](../atl/reference/catlmodule-class.md#updateregistryfromresourced) 또는 [CAtlModule::UpdateRegistryFromResourceS](../atl/reference/catlmodule-class.md#updateregistryfromresources), _ATL_REGMAP_ 배열을 전달 합니다. 항목 구조입니다. _ATL_REGMAP_ENTRY 배열을 {NULL, NULL}로 설정 되어 있는 적어도 하나의 항목이 있고이 항목은 항상 마지막 항목 이어야 합니다. 그렇지 않으면 액세스 위반 오류가 됩니다 때 생성 `UpdateRegistryFromResource` 라고 합니다.
 
 > [!NOTE]
->  실행 파일을 출력 하는 프로젝트를 빌드할 때 ATL 경로 이름 사용 하 여 런타임 시 만들어집니다 주위에 따옴표를 자동으로 추가 합니다 **모듈 %** 등록자 스크립트 매개 변수입니다. 경로 이름을 따옴표를 포함 하지 않으려면 사용 하 여 새 **묶지** 매개 변수 대신 합니다.  
->   
+>  실행 파일을 출력 하는 프로젝트를 빌드할 때 ATL 경로 이름 사용 하 여 런타임 시 만들어집니다 주위에 따옴표를 자동으로 추가 합니다 **모듈 %** 등록자 스크립트 매개 변수입니다. 경로 이름을 따옴표를 포함 하지 않으려면 사용 하 여 새 **묶지** 매개 변수 대신 합니다.
+>
 >  DLL을 출력 하는 프로젝트를 빌드할 때 ATL는 추가 하지 인용 부호 된 경로 이름으로 경우 **% 모듈** 하거나 **묶지** 사용 됩니다.
 
 ## <a name="see-also"></a>참고 항목

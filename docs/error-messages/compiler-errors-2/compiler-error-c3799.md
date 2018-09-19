@@ -16,30 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f5e13e1e92b3f821ffbed62b06bd601baac7aad9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1022a2a1f5c5bb6279fc4af0acedbf28d7723aa6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33267305"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105338"
 ---
 # <a name="compiler-error-c3799"></a>컴파일러 오류 C3799
-인덱싱된 속성에는 빈 매개 변수 목록을 사용할 수 없습니다.  
-  
-인덱싱된 속성을 잘못 선언 되었습니다. 자세한 내용은 참조 [하는 방법: 사용 하 여 속성 C + + /cli CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md)합니다.  
-  
-## <a name="example"></a>예제  
-다음 샘플에서는 C3799 오류가 발생 하 고를 해결 하는 방법을 보여 줍니다.  
-  
-```cpp  
-// C3799.cpp  
-// compile with: /clr /c  
-ref struct C {  
-   property int default[] {   // C3799  
-   // try the following line instead  
-   // property int default[int] {  
-      int get(int index) { return 0; }  
-      void set(int index, int value) {}  
-   }  
-};  
+
+인덱싱된 속성에는 빈 매개 변수 목록을 사용할 수 없습니다.
+
+인덱싱된 속성을 잘못 선언 되었습니다. 자세한 내용은 [방법: 사용 하 여 속성 C + + CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md)합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플 C3799 생성 및이 해결 하는 방법을 보여 줍니다.
+
+```cpp
+// C3799.cpp
+// compile with: /clr /c
+ref struct C {
+   property int default[] {   // C3799
+   // try the following line instead
+   // property int default[int] {
+      int get(int index) { return 0; }
+      void set(int index, int value) {}
+   }
+};
 ```

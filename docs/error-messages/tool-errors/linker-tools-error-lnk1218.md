@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0a0596a648c44be928e6bbbae89734911550c27
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a8808a52724aa3dc1bdfd33fec5945ba40680ca3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298891"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095328"
 ---
 # <a name="linker-tools-error-lnk1218"></a>링커 도구 오류 LNK1218
-경고를 오류로 처리 됩니다. 출력 파일이 생성 되지 않았습니다  
-  
- 와 연결 하는 경우 **/WX**, 링커 경고를 오류로 처리 되 고 출력 파일이 생성 됩니다.  
-  
- 참조 [/WX (링커 경고를 오류로 처리)](../../build/reference/wx-treat-linker-warnings-as-errors.md) 자세한 정보에 대 한 합니다.
+
+경고를 오류로 처리 됩니다. 출력 파일이 생성 되지 않았습니다
+
+연결할 때 **/WX**, 링커 경고를 오류로 간주 됩니다 및 출력 파일이 생성 됩니다.
+
+참조 [/WX (링커 경고를 오류로 처리)](../../build/reference/wx-treat-linker-warnings-as-errors.md) 자세한 내용은 합니다.

@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a700734cc2fb860d9d3ad8143aed817809ab69f2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2bd76b164e24834f22cc4654873559e340efcb79
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198016"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100464"
 ---
 # <a name="fatal-error-c1351"></a>심각한 오류 C1351
 
-> dll 로드 오류 '*dll*': 호환 되지 않는 버전  
+> dll 로드 중 오류 '*dll*': 호환 되지 않는 버전
 
-잘못 된 버전의 DLL 찾았습니다.
+잘못 된 버전의 DLL 찾을 수 있습니다.
 
-설치에 문제가 나타내며 Visual Studio를 다시 설치 해야 합니다.
+이 설치에 문제가 있음을 나타냅니다. 및 Visual Studio를 다시 설치 해야 합니다.

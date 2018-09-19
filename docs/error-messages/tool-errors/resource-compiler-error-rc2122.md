@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d468686fa874afbcf3d1d95517afe7fbcff8d2e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c836819f1267056e21596274d46101ad75f970fa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33318814"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105501"
 ---
 # <a name="resource-compiler-error-rc2122"></a>리소스 컴파일러 오류 RC2122
-알 수 없는 메뉴 하위 유형  
-  
- *항목 정의* 필드는 **메뉴** 문은 포함할 수 있습니다 **MENUITEM** 및 **팝업** 문.
+
+알 수 없는 메뉴 하위 유형
+
+*항목 정의* 필드를 **메뉴** 문을 포함할 수 있습니다 **MENUITEM** 하 고 **팝업** 문.

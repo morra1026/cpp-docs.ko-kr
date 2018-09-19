@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47089a580285a7d2d0f49848e7e8e5ad90f32616
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dae28f28a07049fa19b56af7efcf43285b2a751b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296915"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46092684"
 ---
 # <a name="command-line-warning-d9024"></a>명령줄 경고 D9024
-인식할 수 없는 소스 형식 'filename' 파일, o b j 파일이 간주  
-  
- 지정된 된 파일의 확장명을 인식할 수 없습니다. 파일 개체 파일 것으로 간주 되었습니다을 링커에 전달 되었습니다.  
-  
- 다음 확장 인식 됩니다.  
-  
--   .c (C 소스 파일)  
-  
--   .cxx (c + + 소스 파일)  
-  
--   .cpp (c + + 소스 파일)  
-  
--   .obj (개체 파일)  
-  
--   .lib (라이브러리 파일)  
-  
--   .def (모듈 정의 파일)  
-  
--   .exp (링커 링크 /LIB에서 만든 파일을 내보냅니다)
+
+인식할 수 없는 소스 형식 'filename' 파일, 파일 가정 개체
+
+지정된 된 파일의 확장명을 인식할 수 없습니다. 개체 파일 것으로 간주 된 파일과 링커로 전달 되었습니다.
+
+다음 확장 인식 됩니다.
+
+- .c (C 소스 파일)
+
+- .cxx (c + + 소스 파일)
+
+- .cpp (c + + 소스 파일)
+
+- .obj (개체 파일)
+
+- .lib (라이브러리 파일)
+
+- .def (모듈 정의 파일)
+
+- .exp (링커 링크 /LIB에 의해 생성 된 파일을 내보냅니다)

@@ -188,12 +188,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62bb1ca2cc4ba07e3f3262f6babee3ed4c52caa2
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: db4e6a01fbf7384cfbc2e1ef2b3c5ed48991998d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45708216"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095455"
 ---
 # <a name="cframewndex-class"></a>CFrameWndEx 클래스
 겹쳐진 Windows SDI(단일 문서 인터페이스) 또는 팝업 프레임 창의 기능을 구현하고 창 관리를 위한 멤버를 제공합니다. 확장 된 [CFrameWnd](../../mfc/reference/cframewnd-class.md) 클래스입니다.  
@@ -1198,17 +1198,12 @@ afx_msg LRESULT OnMenuChar(
   
 ### <a name="return-value"></a>반환 값  
  상위 단어에는 다음 값 중 하나 여야 합니다.  
-  
- `0`  
- 프레임 워크 키 입력을 무시 해야 합니다.  
-  
- `1`  
- 프레임 워크 메뉴를 닫아야 합니다.  
-  
- `2`  
- 프레임 워크 메뉴에 표시 된 항목 중 하나를 선택 해야 합니다. 하위 단어를 선택 하는 명령의 ID를 포함 합니다.  
-  
-### <a name="remarks"></a>설명  
+
+|||
+|-|-|
+ `0` | 프레임 워크 키 입력을 무시 해야 합니다.  
+ `1`  | 프레임 워크 메뉴를 닫아야 합니다.  
+ `2`  | 프레임 워크 메뉴에 표시 된 항목 중 하나를 선택 해야 합니다. 하위 단어를 선택 하는 명령의 ID를 포함 합니다.  
   
 ##  <a name="onmousemove"></a>  CFrameWndEx::OnMouseMove  
  프레임은 포인터를 이동 하면이 메서드를 호출 합니다.  

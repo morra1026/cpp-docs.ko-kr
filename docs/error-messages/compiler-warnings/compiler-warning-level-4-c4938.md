@@ -16,45 +16,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b069e233072e653f848da61423411875d817cef0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e140f3885aec66d01d5f7e28245c10e952bedde3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294829"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107444"
 ---
 # <a name="compiler-warning-level-4-c4938"></a>컴파일러 경고(수준 4) C4938
-'var': /fp:strict 또는 #pragma fenv_access를 지정하면 부동 소수점 환산(reduction) 변수로 인해 일관성 없는 결과가 발생할 수 있습니다.  
-  
- 합계가 다른 순서로 계산되므로 OpenMP 부동 소수점 환산(reduction)과 함께 [/fp:strict](../../build/reference/fp-specify-floating-point-behavior.md) 또는 [fenv_access](../../preprocessor/fenv-access.md) 를 사용하면 안 됩니다. 따라서 결과가 /openmp를 사용하지 않을 경우의 결과와 다를 수 있습니다.  
-  
- 다음 샘플에서는 C4938을 생성합니다.  
-  
-```  
-// C4938.cpp  
-// compile with: /openmp /W4 /fp:strict /c  
-// #pragma fenv_access(on)  
-extern double *a;   
-  
-double test(int first, int last) {   
-   double sum = 0.0;   
-   #pragma omp parallel for reduction(+: sum)   // C4938  
-   for (int i = first ; i <= last ; ++i)   
-      sum += a[i];   
-   return sum;   
-}  
-```  
-  
- 명시적 병렬화를 사용하지 않을 경우 합계는 다음과 같이 계산됩니다.  
-  
-```  
-sum = a[first] + a[first + 1] + ... + a[last];   
-```  
-  
- 명시적 병렬화(및 두 개의 스레드)를 사용할 경우 합계는 다음과 같이 계산됩니다.  
-  
-```  
-sum1 = a[first] + ... a[first + last / 2];   
-sum2 = a[(first + last / 2) + 1] + ... a[last];   
-sum = sum1 + sum2;  
+
+'var': /fp:strict 또는 #pragma fenv_access를 지정하면 부동 소수점 환산(reduction) 변수로 인해 일관성 없는 결과가 발생할 수 있습니다.
+
+합계가 다른 순서로 계산되므로 OpenMP 부동 소수점 환산(reduction)과 함께 [/fp:strict](../../build/reference/fp-specify-floating-point-behavior.md) 또는 [fenv_access](../../preprocessor/fenv-access.md) 를 사용하면 안 됩니다. 따라서 결과가 /openmp를 사용하지 않을 경우의 결과와 다를 수 있습니다.
+
+다음 샘플에서는 C4938을 생성합니다.
+
+```
+// C4938.cpp
+// compile with: /openmp /W4 /fp:strict /c
+// #pragma fenv_access(on)
+extern double *a;
+
+double test(int first, int last) {
+   double sum = 0.0;
+   #pragma omp parallel for reduction(+: sum)   // C4938
+   for (int i = first ; i <= last ; ++i)
+      sum += a[i];
+   return sum;
+}
+```
+
+명시적 병렬화를 사용하지 않을 경우 합계는 다음과 같이 계산됩니다.
+
+```
+sum = a[first] + a[first + 1] + ... + a[last];
+```
+
+명시적 병렬화(및 두 개의 스레드)를 사용할 경우 합계는 다음과 같이 계산됩니다.
+
+```
+sum1 = a[first] + ... a[first + last / 2];
+sum2 = a[(first + last / 2) + 1] + ... a[last];
+sum = sum1 + sum2;
 ```

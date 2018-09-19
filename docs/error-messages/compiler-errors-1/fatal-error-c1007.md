@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e443dd1c48b7ce1d3c5c1173f6832d08d71508cd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 01a9ebad83f3b0596dbf21809f91c11fd73fda2a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197340"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102442"
 ---
 # <a name="fatal-error-c1007"></a>심각한 오류 C1007
-옵션에서 인식할 수 없는 플래그 문자열  
-  
- 명령줄 옵션에 잘못된 문자열이 있습니다. **CL** 명령줄 및 환경 변수에서 오류를 확인하세요.
+
+옵션에서 인식할 수 없는 플래그 문자열
+
+명령줄 옵션에 잘못된 문자열이 있습니다. **CL** 명령줄 및 환경 변수에서 오류를 확인하세요.

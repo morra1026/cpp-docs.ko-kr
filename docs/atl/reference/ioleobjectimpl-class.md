@@ -59,12 +59,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b82aa22c3cc1c217ba4dfd332c43f6663c94638e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: fe5f3234738a16b4c072b667982d36032e30f7dd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761877"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107119"
 ---
 # <a name="ioleobjectimpl-class"></a>IOleObjectImpl 클래스
 
@@ -76,13 +76,13 @@ ms.locfileid: "43761877"
 ## <a name="syntax"></a>구문
 
 ```
-template<class T>  
+template<class T>
 class ATL_NO_VTABLE IOleObjectImpl : public IOleObject
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `IOleObjectImpl`합니다.
 
 ## <a name="members"></a>멤버
@@ -219,10 +219,10 @@ HRESULT DoVerbDiscardUndo(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 
 ### <a name="parameters"></a>매개 변수
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] 사각형 컨테이너에 대 한 포인터를 그릴 제어를 하려고 합니다.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] 컨트롤이 포함 된 창 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -239,10 +239,10 @@ HRESULT DoVerbHide(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 
 ### <a name="parameters"></a>매개 변수
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] 사각형 컨테이너에 대 한 포인터를 그릴 제어를 하려고 합니다.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] 컨트롤이 포함 된 창 핸들입니다. ATL 구현에서 사용 되지 않습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -259,10 +259,10 @@ HRESULT DoVerbInPlaceActivate(LPCRECT prcPosRect, HWND /* hwndParent */);
 
 ### <a name="parameters"></a>매개 변수
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] 사각형 컨테이너에 대 한 포인터를 그릴 제어를 하려고 합니다.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] 컨트롤이 포함 된 창 핸들입니다. ATL 구현에서 사용 되지 않습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -283,10 +283,10 @@ HRESULT DoVerbOpen(LPCRECT /* prcPosRect */, HWND /* hwndParent */);
 
 ### <a name="parameters"></a>매개 변수
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] 사각형 컨테이너에 대 한 포인터를 그릴 제어를 하려고 합니다.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] 컨트롤이 포함 된 창 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -303,10 +303,10 @@ HRESULT DoVerbPrimary(LPCRECT prcPosRect, HWND hwndParent);
 
 ### <a name="parameters"></a>매개 변수
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] 사각형 컨테이너에 대 한 포인터를 그릴 제어를 하려고 합니다.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] 컨트롤이 포함 된 창 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -327,10 +327,10 @@ HRESULT DoVerbShow(LPCRECT prcPosRect, HWND /* hwndParent */);
 
 ### <a name="parameters"></a>매개 변수
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] 사각형 컨테이너에 대 한 포인터를 그릴 제어를 하려고 합니다.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] 컨트롤이 포함 된 창 핸들입니다. ATL 구현에서 사용 되지 않습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -347,10 +347,10 @@ HRESULT DoVerbUIActivate(LPCRECT prcPosRect, HWND /* hwndParent */);
 
 ### <a name="parameters"></a>매개 변수
 
-*prcPosRec*  
+*prcPosRec*<br/>
 [in] 사각형 컨테이너에 대 한 포인터를 그릴 제어를 하려고 합니다.
 
-*hwndParent*  
+*hwndParent*<br/>
 [in] 컨트롤이 포함 된 창 핸들입니다. ATL 구현에서 사용 되지 않습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -833,6 +833,6 @@ S_OK 반환 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[CComControl 클래스](../../atl/reference/ccomcontrol-class.md)   
-[ActiveX 컨트롤 인터페이스](/windows/desktop/com/activex-controls-interfaces)   
+[CComControl 클래스](../../atl/reference/ccomcontrol-class.md)<br/>
+[ActiveX 컨트롤 인터페이스](/windows/desktop/com/activex-controls-interfaces)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

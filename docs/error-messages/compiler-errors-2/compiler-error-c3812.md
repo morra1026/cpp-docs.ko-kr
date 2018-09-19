@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37747ebb68b5e965c15ef9763731e0b4d56ac57e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 83de08dfb0ea42e99a7ef7185fb3b8fc492bdec8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33265826"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101373"
 ---
 # <a name="compiler-error-c3812"></a>컴파일러 오류 C3812
-'property' 속성 선언에서 첫 번째 토큰 이어야 합니다.  
-  
- 속성을 선언 하는 경우는 `__property` 키워드 줄의 첫 번째 토큰 이어야 합니다.  
-  
- C3812은 사용 되지 않는 컴파일러 옵션을 사용 하 여 연결할 수만 **/clr:oldSyntax**합니다.  
+
+'property' 속성 선언에서 첫 번째 토큰 이어야 합니다.
+
+속성을 선언 하는 경우는 `__property` 키워드 줄에서 첫 번째 토큰 이어야 합니다.
+
+C3812 사용 되지 않는 컴파일러 옵션을 사용 하 여 전용인 **/clr: oldsyntax**합니다.

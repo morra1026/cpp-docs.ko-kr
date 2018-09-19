@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9aa6092347b224abf02e0d6fac394146094e576
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4a899826ab299665a7a44deaa89416affe5d41f2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246254"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101516"
 ---
 # <a name="compiler-error-c2869"></a>컴파일러 오류 C2869
-'name': 이미 네임 스페이스로 정의  
-  
- 네임 스페이스도 이미 사용 되는 이름을 다시 사용할 수 없습니다.  
-  
- 다음 샘플에서는 C2869 오류가 생성 됩니다.  
-  
-```  
-// C2869.cpp  
-// compile with: /c  
-namespace A { int i; };  
-  
-class A {};   // C2869, A is already used  
+
+'name': 네임 스페이스로 이미 정의 되어
+
+네임 스페이스를 이미 사용 되는 이름을 다시 사용할 수 없습니다.
+
+다음 샘플에서는 C2869 오류가 생성 됩니다.
+
+```
+// C2869.cpp
+// compile with: /c
+namespace A { int i; };
+
+class A {};   // C2869, A is already used
 ```

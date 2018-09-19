@@ -16,26 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39b941fc0cb32e268e33d3b0e1ae66079e8decaf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5f6db0ee96674beda51ab02c8651e6f4960a0bf8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33286148"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094691"
 ---
 # <a name="compiler-warning-level-1-c4274"></a>컴파일러 경고 (수준 1) C4274
-\#ident 무시 됩니다. #pragma 주석 (exestr, 'string')에 대 한 설명서를 참조 하십시오.  
-  
- `#ident` 개체 또는 실행 파일에서 사용자가 지정한 문자열을 삽입 하는 지시문은 사용 되지 않습니다. 따라서 컴파일러 지시문을 무시합니다.  
-  
+
+\#ident 무시 됩니다. #pragma 주석 (exestr, 'string')에 대 한 설명서를 참조 하세요.
+
+`#ident` 개체 또는 실행 파일의 사용자 지정 문자열을 삽입는 지시문은 사용 되지 않습니다. 결과적으로 컴파일러 지시문을 무시합니다.
+
 > [!CAUTION]
->  사용 하 라는 경고 C4274는 [#pragma 주석 (exestr, 'string')](../../preprocessor/comment-c-cpp.md) 지시문입니다. 그러나이 충고가 더 이상 컴파일러의 이후 릴리스에서 수정 될 예정입니다. 사용 하는 경우는 `#pragma` 지시문 링커 도구 (LINK.exe) 무시 주석 기록은 지시문에 의해 발생 하 고 경고 [LNK4229](../../error-messages/tool-errors/linker-tools-warning-lnk4229.md)합니다. 대신는 `#ident` 파일 버전 리소스 문자열을 사용 하 여 응용 프로그램에서 지시문을 권장 합니다.  
-  
-## <a name="to-correct-this-error"></a>이 오류를 해결하려면  
-  
--   제거는 `#ident "` *문자열* `"` 지시문입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [주석 (C/c + +)](../../preprocessor/comment-c-cpp.md)   
- [링커 도구 경고 LNK4229](../../error-messages/tool-errors/linker-tools-warning-lnk4229.md)   
- [리소스 파일 작업](../../windows/working-with-resource-files.md)
+>  사용 하 여 경고 C4274 조언 합니다 [#pragma 주석 (exestr, 'string')](../../preprocessor/comment-c-cpp.md) 지시문입니다. 그러나이 권장 사항은 않으며 컴파일러의 이후 릴리스에서 수정 될 예정입니다. 사용 하는 경우는 `#pragma` 지시문에 링커 도구 (LINK.exe)를 무시 주석 기록은 지시문에 의해 발생 하 고 경고가 발생 [LNK4229](../../error-messages/tool-errors/linker-tools-warning-lnk4229.md)합니다. 대신는 `#ident` 파일 버전 리소스 문자열을 사용 하 여 응용 프로그램에서 지시문을 권장 합니다.
+
+## <a name="to-correct-this-error"></a>이 오류를 해결하려면
+
+- 제거 된 `#ident "` *문자열* `"` 지시문입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[C 주석(C/C++)](../../preprocessor/comment-c-cpp.md)<br/>
+[링커 도구 경고 LNK4229](../../error-messages/tool-errors/linker-tools-warning-lnk4229.md)<br/>
+[리소스 파일 작업](../../windows/working-with-resource-files.md)

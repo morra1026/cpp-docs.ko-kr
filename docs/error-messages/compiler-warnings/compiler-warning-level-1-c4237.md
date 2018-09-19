@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3dfefb2dc7dd04f2334b2b7d222153d5ee351ae2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ca72e4973c71655bc4a891570c6f686304d07eb0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33277581"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46092897"
 ---
 # <a name="compiler-warning-level-1-c4237"></a>컴파일러 경고(수준 1) C4237
-'keyword' 키워드는 아직 지원 되지 않지만 나중에 사용  
-  
- Visual c + + 컴파일러에서 c + + 사양에 키워드를 구현 되지 않은 있지만 키워드는 사용자 정의 기호로 사용할 수 없습니다.  
-  
- 다음 샘플에서는 C4237 오류가 생성 됩니다.  
-  
-```  
-// C4237.cpp  
-// compile with: /W1 /c  
-int export;   // C4237  
+
+'keyword' 키워드는 아직 지원 되지 않지만 나중에 사용
+
+C + + 사양에 키워드는 Visual c + + 컴파일러에서 구현 되지 않습니다 하지만 키워드는 사용자 정의 기호로 사용할 수 없습니다.
+
+다음 샘플에서는 C4237 오류가 생성 됩니다.
+
+```
+// C4237.cpp
+// compile with: /W1 /c
+int export;   // C4237
 ```

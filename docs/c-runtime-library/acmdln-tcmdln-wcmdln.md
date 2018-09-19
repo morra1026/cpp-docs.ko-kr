@@ -32,30 +32,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 141e261af618cc6058a2a731b70e824582be303b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3c9dd8af9b55ab022277737f2349b27eb257810f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32386497"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135869"
 ---
 # <a name="acmdln-tcmdln-wcmdln"></a>_acmdln, _tcmdln, _wcmdln
-내부 CRT 전역 변수입니다. 명령줄입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-char * _acmdln;  
-wchar_t * _wcmdln;  
-  
-#ifdef WPRFLAG  
-   #define _tcmdln _wcmdln  
-#else  
-   #define _tcmdln _acmdln  
-```  
-  
-## <a name="remarks"></a>설명  
- 이러한 CRT 내부 변수는 전체 명령줄을 저장하고 CRT의 내보낸 기호에 노출되지만 사용자 코드에 사용할 수는 없습니다. `_acmdln`은 데이터를 문자열로 저장합니다. `_wcmdln`은 데이터를 와이드 문자열로 저장합니다. `_tcmdln`은 어떤 것이 적절한지에 따라 `_acmdln` 또는 `_wcmdln`으로 정의할 수 있습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [전역 변수](../c-runtime-library/global-variables.md)
+
+내부 CRT 전역 변수입니다. 명령줄입니다.
+
+## <a name="syntax"></a>구문
+
+```
+char * _acmdln;
+wchar_t * _wcmdln;
+
+#ifdef WPRFLAG
+   #define _tcmdln _wcmdln
+#else
+   #define _tcmdln _acmdln
+```
+
+## <a name="remarks"></a>설명
+
+이러한 CRT 내부 변수는 전체 명령줄을 저장하고 CRT의 내보낸 기호에 노출되지만 사용자 코드에 사용할 수는 없습니다. `_acmdln`은 데이터를 문자열로 저장합니다. `_wcmdln`은 데이터를 와이드 문자열로 저장합니다. `_tcmdln`은 어떤 것이 적절한지에 따라 `_acmdln` 또는 `_wcmdln`으로 정의할 수 있습니다.
+
+## <a name="see-also"></a>참고 항목
+
+[전역 변수](../c-runtime-library/global-variables.md)

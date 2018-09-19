@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f7c9360af2b5e2220daacabcd9ac04e108871dc
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: fe2cf03debbfd88f19ccc77d3922a9a5c50a50d2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764230"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091272"
 ---
 # <a name="atl-connection-points"></a>ATL 연결 지점
 
@@ -33,18 +33,18 @@ ms.locfileid: "43764230"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[ATL 연결 지점 클래스](../atl/atl-connection-point-classes.md)  
+[ATL 연결 지점 클래스](../atl/atl-connection-point-classes.md)<br/>
 연결 지점을 지원하는 ATL 클래스에 대해 간략하게 설명합니다.
 
-[개체에 연결 지점 추가](../atl/adding-connection-points-to-an-object.md)  
+[개체에 연결 지점 추가](../atl/adding-connection-points-to-an-object.md)<br/>
 개체에 연결 지점을 추가하는 데 사용되는 단계에 대해 설명합니다.
 
-[ATL 연결 지점 예제](../atl/atl-connection-point-example.md)  
+[ATL 연결 지점 예제](../atl/atl-connection-point-example.md)<br/>
 연결 지점 선언 예제를 제공합니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 액티브 템플릿 라이브러리를 사용하여 프로그래밍하는 방법에 대한 개념 항목의 링크를 제공합니다.
 
 ## <a name="see-also"></a>참고 항목

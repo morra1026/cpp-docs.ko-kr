@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: baac68409820683182ff3ee592e00772141625cd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2eed6dfc8d12b7bec9bb3437a3213b3feeda480e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168960"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099592"
 ---
 # <a name="compiler-error-c2310"></a>컴파일러 오류 C2310
-catch 처리기 유형임을 지정 해야 합니다.  
-  
- Catch 처리기 형식이 없는 또는 여러 형식을 지정 합니다.  
-  
- 다음 샘플에서는 C2310 오류가 생성 됩니다.  
-  
-```  
-// C2310.cpp  
-// compile with: /EHsc  
-#include <eh.h>  
-int main() {  
-   try {  
-      throw "Out of memory!";  
-   }  
-   catch( int ,int) {}   // C2310 two types  
-   // try the following line instead  
-   // catch( int)  {}  
-}  
+
+catch 처리기 형식을 하나 지정 해야 합니다.
+
+Catch 처리기 없는 형식 또는 여러 형식을 지정 합니다.
+
+다음 샘플에서는 C2310를 생성합니다.
+
+```
+// C2310.cpp
+// compile with: /EHsc
+#include <eh.h>
+int main() {
+   try {
+      throw "Out of memory!";
+   }
+   catch( int ,int) {}   // C2310 two types
+   // try the following line instead
+   // catch( int)  {}
+}
 ```

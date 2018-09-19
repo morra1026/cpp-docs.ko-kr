@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33eac78dc871dd2a9869452bc829150c3356fd0a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 6861f19e6b785ac72edec54577b92dea0c307bff
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754945"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100606"
 ---
 # <a name="ccommultithreadmodel-class"></a>CComMultiThreadModel 클래스
 
@@ -99,7 +99,7 @@ typedef CComAutoCriticalSection AutoCriticalSection;
 
 다음 코드는 기반으로 모델링 [CComObjectRootEx](ccomobjectrootex-class.md)를 보여 줍니다 `AutoCriticalSection` 스레딩 환경에서 사용 중인 합니다.
 
-```cpp  
+```cpp
 template<class ThreadModel>
 class CMyAutoCritClass
 {
@@ -175,7 +175,7 @@ static ULONG WINAPI Decrement(LPLONG p) throw ();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 [in] 감소 시킬 변수에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -196,7 +196,7 @@ static ULONG WINAPI Increment(LPLONG p) throw ();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 [in] 증가 시킬 변수에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -233,7 +233,7 @@ typedef CComMultiThreadModelNoCS ThreadModelNoCS;
 
 ## <a name="see-also"></a>참고 항목
 
-[CComSingleThreadModel 클래스](ccomsinglethreadmodel-class.md)   
-[CComAutoCriticalSection 클래스](ccomautocriticalsection-class.md)   
-[CComCriticalSection 클래스](ccomcriticalsection-class.md)   
+[CComSingleThreadModel 클래스](ccomsinglethreadmodel-class.md)<br/>
+[CComAutoCriticalSection 클래스](ccomautocriticalsection-class.md)<br/>
+[CComCriticalSection 클래스](ccomcriticalsection-class.md)<br/>
 [클래스 개요](../atl-class-overview.md)

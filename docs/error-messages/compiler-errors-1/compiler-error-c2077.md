@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba9395bd783307ae184cf7f23f187d4425523968
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9a9025a61f9ca32679f5041256a2972ab1eaeea0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33164374"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100658"
 ---
 # <a name="compiler-error-c2077"></a>컴파일러 오류 C2077
-스칼라가 아닌 필드 이니셜라이저 'identifier'  
-  
- 비스칼라 (구조체, 공용 구조체, 배열 또는 클래스)을 사용 하 여 비트 필드를 초기화 하려고 했습니다. 정수 또는 부동 소수점 값을 사용 합니다.
+
+스칼라가 아닌 필드 이니셜라이저 'identifier'
+
+비스칼라 (구조체, 공용 구조체, 배열 또는 클래스)를 사용 하 여 비트 필드를 초기화 하려고 했습니다. 정수 또는 부동 소수점 값을 사용 합니다.

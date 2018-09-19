@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bebc10481c446edfa29d09663ac3139ecc5391b
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: dee005091c95bbac5fca64851f631b443bd33cca
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42541855"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106774"
 ---
 # <a name="accelerator-class"></a>accelerator 클래스
 액셀러레이터 키에는 데이터 병렬 계산에 최적화 된 하드웨어 기능입니다. 가속기는 PCIe 버스 (예: GPU)에 연결 된 장치 수 또는 메인 CPU에 설정 된 확장된 명령어를 수 있습니다.  
@@ -164,11 +164,11 @@ accelerator(const accelerator& _Other);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Device_path`  
- 물리적 장치의 경로입니다.  
+*_Device_path*<br/>
+물리적 장치의 경로입니다.  
   
- `_Other`  
- 복사할 액셀러레이터 키입니다.  
+*_Other*<br/>
+복사할 액셀러레이터 키입니다.  
   
 ##  <a name="cpu_accelerator"></a> cpu_accelerator 
 
@@ -187,8 +187,8 @@ accelerator_view create_view(queuing_mode qmode = queuing_mode_automatic);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `qmode`  
- 큐 모드입니다.  
+*qmode*<br/>
+큐 모드입니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정된 큐 모드를 사용하는 이 액셀러레이터의 새로운 `accelerator_view` 개체입니다.  
@@ -470,8 +470,8 @@ bool operator!= (const accelerator& _Other) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Other`  
- 이것과 비교할 `accelerator` 개체입니다.  
+*_Other*<br/>
+이것과 비교할 `accelerator` 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `false` 하는 경우 두 `accelerator` 개체가 동일한 지 고, 그렇지 않으면 `true`합니다.  
@@ -485,8 +485,8 @@ accelerator& operator= (const accelerator& _Other);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Other`  
- `accelerator` 복사할 개체입니다.  
+*_Other*<br/>
+`accelerator` 복사할 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이에 대 한 참조 `accelerator` 개체입니다.  
@@ -502,8 +502,8 @@ bool operator== (const accelerator& _Other) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Other`  
- 이것과 비교할 `accelerator` 개체입니다.  
+*_Other*<br/>
+이것과 비교할 `accelerator` 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `true` 하는 경우 다른 `accelerator` 개체가이 동일 `accelerator` ; 개체이 고, 그렇지 `false`합니다.  
@@ -517,8 +517,8 @@ static inline bool set_default(std::wstring _Path);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Path`  
- 액셀러레이터 키에 대 한 경로입니다.  
+*경로 (_p)*<br/>
+액셀러레이터 키에 대 한 경로입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `true` 기본 액셀러레이터 설정 시 호출이 성공 하면 합니다. 그렇지 않으면 `false`입니다.  
@@ -532,8 +532,8 @@ bool set_default_cpu_access_type(access_type _Default_cpu_access_type);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Default_cpu_access_type`  
- 이 가속기에서 배열/array_view 메모리 할당에 사용할 기본 cpu access_type 합니다.  
+*_Default_cpu_access_type*<br/>
+이 가속기에서 배열/array_view 메모리 할당에 사용할 기본 cpu access_type 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  액셀러레이터 키에 대 한 기본 cpu access_type이 성공적으로 설정 하는 경우를 나타내는 부울 값입니다.  
@@ -597,8 +597,8 @@ accelerator_view(const accelerator_view& _Other);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Other`  
- `accelerator_view` 복사할 개체입니다.  
+*_Other*<br/>
+`accelerator_view` 복사할 개체입니다.  
   
 ##  <a name="create_marker"></a> create_marker 
 
@@ -714,8 +714,8 @@ bool operator!= (const accelerator_view& _Other) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Other`  
- 이것과 비교할 `accelerator_view` 개체입니다.  
+*_Other*<br/>
+이것과 비교할 `accelerator_view` 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  두 개체가 같으면 `false`이고, 그렇지 않으면 `true`입니다.  
@@ -729,8 +729,8 @@ accelerator_view& operator= (const accelerator_view& _Other);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Other`  
- `accelerator_view` 복사할 개체입니다.  
+*_Other*<br/>
+`accelerator_view` 복사할 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  수정된 `accelerator_view` 개체에 대한 참조입니다.  
@@ -746,8 +746,8 @@ bool operator== (const accelerator_view& _Other) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Other`  
- 이것과 비교할 `accelerator_view` 개체입니다.  
+*_Other*<br/>
+이것과 비교할 `accelerator_view` 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  두 개체가 같으면 `true`이고, 그렇지 않으면 `false`입니다.  

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ec00864bf0fb9d6a2f6e19198285a9b8ac65dd2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7625d7b16eba226539473ac8af109a3367291cb7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249156"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105106"
 ---
 # <a name="compiler-error-c3303"></a>컴파일러 오류 C3303
-'attribute': 특성은 'usage'에서만 사용될 수 있습니다.  
-  
- 사용할 수 없는 위치에서 특성을 사용하려고 했습니다.
+
+'attribute': 특성은 'usage'에서만 사용될 수 있습니다.
+
+사용할 수 없는 위치에서 특성을 사용하려고 했습니다.

@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e25369f18f542198638e324110ba14d10b8ddc69
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 39f45b9c81d5339b2b6afe4c77fdc9bac6b5d731
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691770"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091168"
 ---
 # <a name="ompnumthreads"></a>OMP_NUM_THREADS
-최대 스레드 수 병렬 영역을 설정 하 여 덮어쓰지 않는 한 [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) 또는 [num_threads](../../../parallel/openmp/reference/num-threads.md)합니다.  
+의해 재정의 되지 않는 병렬 지역의 스레드의 최대 수를 설정 [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) 하거나 [num_threads](../../../parallel/openmp/reference/num-threads.md)합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -32,27 +32,26 @@ ms.locfileid: "33691770"
 set OMP_NUM_THREADS[=num]  
 ```  
   
+### <a name="parameters"></a>매개 변수
+  
+*num*<br/>
+Visual c + + 구현에서 64 최대 병렬 지역의 하려는 스레드의 최대 수입니다.  
+  
 ## <a name="remarks"></a>설명  
- 다음은 각 문자에 대한 설명입니다.  
+ 합니다 **OMP_NUM_THREADS** 환경 변수 재정의 될 수 있습니다 합니다 [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) 함수 또는 [num_threads](../../../parallel/openmp/reference/num-threads.md)합니다.  
   
- `num`  
- Visual c + + 구현에서 64 최대 병렬 영역에서 원하는 스레드의 최대 수입니다.  
+ 기본값은 `num` Visual c + +에서의 OpenMP 표준 구현은 하이퍼 스레딩을 Cpu를 포함 하 여 가상 프로세서의 수입니다.  
   
-## <a name="remarks"></a>설명  
- **OMP_NUM_THREADS** 환경 변수 재정의 될 수 있습니다는 [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) 함수 또는 [num_threads](../../../parallel/openmp/reference/num-threads.md)합니다.  
-  
- 기본값 `num` Visual c + + OpenMP 표준의 구현을 하이퍼 스레딩을 Cpu를 포함 하는 가상 프로세서의 수입니다.  
-  
- 자세한 내용은 참조 [4.2 OMP_NUM_THREADS](../../../parallel/openmp/4-2-omp-num-threads.md)합니다.  
+ 자세한 내용은 [4.2 OMP_NUM_THREADS](../../../parallel/openmp/4-2-omp-num-threads.md)합니다.  
   
 ## <a name="example"></a>예제  
- 다음 명령 집합의 **OMP_NUM_THREADS** 를 16으로 환경 변수:  
+ 다음 명령 집합을 **OMP_NUM_THREADS** 환경 변수를 16:  
   
 ```  
 set OMP_NUM_THREADS=16  
 ```  
   
- 다음 명령은의 현재 설정을 표시는 **OMP_NUM_THREADS** 환경 변수:  
+ 다음 명령은의 현재 설정을 표시 합니다 **OMP_NUM_THREADS** 환경 변수:  
   
 ```  
 set OMP_NUM_THREADS  

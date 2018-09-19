@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5938785d7d9fdccae73048392b74cc5bb34f6680
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a4821ba572d2719ebba6c693cc39b96971002512
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753557"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106326"
 ---
 # <a name="ccomenumonstl-class"></a>CComEnumOnSTL 클래스
 
@@ -32,7 +32,7 @@ ms.locfileid: "43753557"
 
 ```
 template <class Base,
-    const IID* piid, class T, class Copy, class CollType, class ThreadModel = CComObjectThreadModel>  
+    const IID* piid, class T, class Copy, class CollType, class ThreadModel = CComObjectThreadModel>
 class ATL_NO_VTABLE CComEnumOnSTL : public IEnumOnSTLImpl<Base, piid,
 T,
     Copy,
@@ -42,19 +42,19 @@ CollType>,
 
 #### <a name="parameters"></a>매개 변수
 
-*자료*  
+*자료*<br/>
 COM 열거자입니다. 참조 [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) 예입니다.
 
-*piid*  
+*piid*<br/>
 열거자 인터페이스의 인터페이스 ID에 대 한 포인터입니다.
 
-*T*  
+*T*<br/>
 열거자 인터페이스에 의해 노출 되는 항목의 형식입니다.
 
-*복사*  
+*복사*<br/>
 A [정책을 복사](../../atl/atl-copy-policy-classes.md) 클래스입니다.
 
-*CollType*  
+*CollType*<br/>
 C + + 표준 라이브러리 컨테이너 클래스입니다.
 
 ## <a name="remarks"></a>설명
@@ -111,9 +111,9 @@ C + + 표준 라이브러리 컨테이너 클래스입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)   
-[ATLCollections 샘플: ICollectionOnSTLImpl, CComEnumOnSTL 및 사용자 지정 복사 정책 클래스](../../visual-cpp-samples.md)   
-[클래스 개요](../../atl/atl-class-overview.md)   
-[CComObjectRootEx 클래스](../../atl/reference/ccomobjectrootex-class.md)   
-[CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)   
+[IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)<br/>
+[ATLCollections 샘플: ICollectionOnSTLImpl, CComEnumOnSTL 및 사용자 지정 복사 정책 클래스](../../visual-cpp-samples.md)<br/>
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
+[CComObjectRootEx 클래스](../../atl/reference/ccomobjectrootex-class.md)<br/>
+[CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)<br/>
 [IEnumOnSTLImpl 클래스](../../atl/reference/ienumonstlimpl-class.md)

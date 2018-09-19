@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 0cd8b4a4a1140a1a34e0148756cdb23b2f8069cc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4f4df3e8059a56b137b2a4750177af1269cb6a5c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33161475"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107028"
 ---
 # <a name="ptrptr"></a>ptr::ptr
-생성 한 `com::ptr` 를 래핑하는 COM 개체입니다.  
+생성 된 `com::ptr` COM 개체를 래핑할 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,13 +40,13 @@ ptr(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `P`  
- COM 인터페이스 포인터.  
+*P*<br/>
+COM 인터페이스 포인터.  
   
 ## <a name="remarks"></a>설명  
- 인수 없는 생성자 할당 `nullptr` 기본 개체 핸들을 합니다. 에 대 한 후속 호출에서 `com::ptr` 내부 개체의 유효성을 검사 하 고 자동으로 개체를 실제로 만들거나 연결 될 때까지 실패 합니다.  
+ 인수 없는 생성자 할당 `nullptr` 기본 개체 핸들입니다. 에 대 한 후속 호출을 `com::ptr` 내부 개체의 유효성을 검사 하며 자동으로 개체를 실제로 만들거나 연결 될 때까지 실패 합니다.  
   
- 단일 인수 생성자를 사용 하는 COM 개체에 대 한 참조를 추가 하지만 호출자에 게 호출 해야 하므로 호출자의 참조를 해제 하지 않습니다 `Release` 진정으로 컨트롤을 제공 하는 COM 개체에서 합니다. 경우는 `com::ptr`의 소멸자가 호출 되는 COM 개체의 참조를 자동으로 해제 됩니다.  
+ 단일 인수 생성자는 COM 개체에 대 한 참조를 추가 하지만 호출자에 게 호출 해야 하므로 호출자의 참조를 해제 하지 않습니다 `Release` 에서 COM 개체를 완전히 제어를 포기 합니다. 경우는 `com::ptr`의 소멸자가 호출 COM 개체의 참조를 자동으로 해제 됩니다.  
   
  전달 `NULL` 이 생성자에 인수가 없는 버전을 호출 하는 것과 같습니다.  
   

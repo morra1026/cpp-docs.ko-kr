@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2b3e7a0589c0da4d41cab419fa68039e4f0b62c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 4b8d3155dd63afa6deb84349c11b0b086d039c4c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763356"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091324"
 ---
 # <a name="iconnectionpointimpl-class"></a>IConnectionPointImpl 클래스
 
@@ -38,19 +38,19 @@ ms.locfileid: "43763356"
 ## <a name="syntax"></a>구문
 
 ```
-template<class T, const IID* piid, class CDV = CComDynamicUnkArray>  
+template<class T, const IID* piid, class CDV = CComDynamicUnkArray>
 class ATL_NO_VTABLE IConnectionPointImpl : public _ICPLocator<piid>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `IConnectionPointImpl`합니다.
 
-*piid*  
+*piid*<br/>
 연결 지점 개체를 나타내는 인터페이스의 IID에 대 한 포인터입니다.
 
-*CDV*  
+*CDV*<br/>
 연결을 관리 하는 클래스입니다. 기본값은 [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md), 무제한 연결 수 있습니다. 사용할 수도 있습니다 [CComUnkArray](../../atl/reference/ccomunkarray-class.md), 고정 된 수의 연결을 지정 합니다.
 
 ## <a name="members"></a>멤버
@@ -167,5 +167,5 @@ STDMETHOD(Unadvise)(DWORD dwCookie);
 
 ## <a name="see-also"></a>참고 항목
 
-[IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint)   
+[IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

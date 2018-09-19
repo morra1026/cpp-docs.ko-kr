@@ -82,12 +82,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4708f180a1a1f5e936a6b30650a6432d48878d53
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 148bb42b7dc6b650bb85860b0bcce3b70c61318e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726754"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099915"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl Class
 응용 프로그램 도구의 용도를 설명하는 텍스트 한 줄을 표시하는 작은 팝업 창인 "도구 설명 컨트롤"의 기능을 캡슐화합니다.  
@@ -573,24 +573,25 @@ BOOL HitTest(
   
  `TTHITTESTINFO` 구조는 다음과 같이 정의 됩니다.  
   
- `typedef struct _TT_HITTESTINFO { // tthti`  
+```cpp
+typedef struct _TT_HITTESTINFO { // tthti
+    HWND hwnd;   // handle of tool or window with tool
+    POINT pt;    // client coordinates of point to test
+    TOOLINFO ti; // receives information about the tool
+} TTHITTESTINFO, FAR * LPHITTESTINFO;
+```
   
- `HWND hwnd;   // handle of tool or window with tool`  
+- `hwnd`  
+
+   도구의 핸들을 지정합니다.  
   
- `POINT pt;    // client coordinates of point to test`  
+- `pt`  
+
+   지점이 도구의의 경계 사각형 경우 한 점의 좌표를 지정 합니다.  
   
- `TOOLINFO ti; // receives information about the tool`  
-  
- `} TTHITTESTINFO, FAR * LPHITTESTINFO;`  
-  
- `hwnd`  
- 도구의 핸들을 지정합니다.  
-  
- `pt`  
- 지점이 도구의의 경계 사각형 경우 한 점의 좌표를 지정 합니다.  
-  
- `ti`  
- 도구에 대 한 정보를 제공 합니다. 에 대 한 자세한 내용은 합니다 `TOOLINFO` 구조체를 참조 하십시오 [CToolTipCtrl::GetToolInfo](#gettoolinfo)합니다.  
+- `ti`  
+
+   도구에 대 한 정보를 제공 합니다. 에 대 한 자세한 내용은 합니다 `TOOLINFO` 구조체를 참조 하십시오 [CToolTipCtrl::GetToolInfo](#gettoolinfo)합니다.  
   
 ##  <a name="pop"></a>  CToolTipCtrl::Pop  
  보기에서 표시 된 도구 설명 창을 제거합니다.  

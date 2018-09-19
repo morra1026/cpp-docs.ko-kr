@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac922526abec73d7219f64cb1004319e9547fef6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 815a276cb07a91da73acb68a32cceef4b2138325
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757883"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093848"
 ---
 # <a name="idispeventimpl-class"></a>IDispEventImpl 클래스
 
@@ -45,31 +45,31 @@ template <UINT nID, class T,
     const GUID* plibid = &GUID_NULL,
     WORD wMajor = 0,
     WORD wMinor = 0, 
-    class tihclass = CcomTypeInfoHolder>  
+    class tihclass = CcomTypeInfoHolder>
 class ATL_NO_VTABLE IDispEventImpl : public IDispEventSimpleImpl<nID, T, pdiid>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*nID*  
+*nID*<br/>
 원본 개체에 대 한 고유 식별자입니다. 때 `IDispEventImpl` 기본 클래스인 복합 컨트롤의 경우이 매개 변수에 대해 원하는 포함 된 컨트롤의 리소스 ID를 사용 합니다. 다른 경우에는 임의의 양의 정수를 사용 합니다.
 
-*T*  
+*T*<br/>
 사용자의 클래스에서 파생 된 `IDispEventImpl`합니다.
 
-*pdiid*  
+*pdiid*<br/>
 이 클래스에서 구현 되는 이벤트 인터페이스의 IID에 대 한 포인터입니다. 이 인터페이스를 가리키는 형식 라이브러리에 정의 되어 있어야 *plibid*를 *wMajor*, 및 *wMinor*합니다.
 
-*plibid*  
+*plibid*<br/>
 디스패치 인터페이스를 정의 하는 형식 라이브러리에 대 한 포인터에서 가리키는 *pdiid*합니다. 하는 경우 **& GUID_NULL**, 이벤트 소싱 개체에서 형식 라이브러리를 로드 됩니다.
 
-*wMajor*  
+*wMajor*<br/>
 형식 라이브러리의 주 버전입니다. 기본값은 0입니다.
 
-*wMinor*  
+*wMinor*<br/>
 형식 라이브러리의 부 버전입니다. 기본값은 0입니다.
 
-*tihclass*  
+*tihclass*<br/>
 클래스에 대 한 형식 정보를 관리 하는 데 *T*합니다. 기본값은 형식의 클래스 `CComTypeInfoHolder`있지만 아닌 다른 형식의 클래스를 제공 하 여이 템플릿 매개 변수를 재정의할 수 있습니다 `CComTypeInfoHolder`합니다.
 
 ## <a name="members"></a>멤버
@@ -143,16 +143,16 @@ HRESULT GetFuncInfoFromId(
 
 ### <a name="parameters"></a>매개 변수
 
-*iid*  
+*iid*<br/>
 [in] 함수의 ID에 대 한 참조입니다.
 
-*dispidMember*  
+*dispidMember*<br/>
 [in] 디스패치 ID 함수입니다.
 
-*lcid*  
+*lcid*<br/>
 [in] 로캘 컨텍스트의 함수 id입니다.
 
-*정보*  
+*정보*<br/>
 [in] 함수를 호출 하는 방법을 나타내는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -213,10 +213,10 @@ VARTYPE GetUserDefinedType(
 
 ### <a name="parameters"></a>매개 변수
 
-*PTI*  
+*PTI*<br/>
 [in] 에 대 한 포인터를 [ITypeInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) 사용자 정의 형식을 포함 하는 인터페이스입니다.
 
-*hrt*  
+*hrt*<br/>
 [in] 검색 될 형식 설명에 대 한 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -249,10 +249,10 @@ typedef tihclass _tihclass;
 
 ## <a name="see-also"></a>참고 항목
 
-[_ATL_FUNC_INFO 구조체](../../atl/reference/atl-func-info-structure.md)   
-[IDispatchImpl 클래스](../../atl/reference/idispatchimpl-class.md)   
-[IDispEventSimpleImpl 클래스](../../atl/reference/idispeventsimpleimpl-class.md)   
-[SINK_ENTRY](composite-control-macros.md#sink_entry)   
-[SINK_ENTRY_EX](composite-control-macros.md#sink_entry_ex)   
-[SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)   
+[_ATL_FUNC_INFO 구조체](../../atl/reference/atl-func-info-structure.md)<br/>
+[IDispatchImpl 클래스](../../atl/reference/idispatchimpl-class.md)<br/>
+[IDispEventSimpleImpl 클래스](../../atl/reference/idispeventsimpleimpl-class.md)<br/>
+[SINK_ENTRY](composite-control-macros.md#sink_entry)<br/>
+[SINK_ENTRY_EX](composite-control-macros.md#sink_entry_ex)<br/>
+[SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

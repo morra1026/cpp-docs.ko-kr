@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e066c3de938b85431ea837c91b0ae51ad0cd4e5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0ba28cd6d2772a0d7027f591b35c07c42941d440
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33166535"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107472"
 ---
 # <a name="compiler-error-c2138"></a>컴파일러 오류 C2138
-멤버 없이 열거형을 정의할 수 없습니다  
-  
- 열거형 구성원을 하나 이상 있어야 합니다. 때 /Za (Microsoft 확장 사용 안 함)을 선택 합니다.
+
+멤버 없이 열거형을 정의 하는 잘못 되었습니다.
+
+열거형 멤버를 하나 이상 있어야 합니다. 때 /Za (Microsoft 확장 사용 안 함)을 선택 합니다.

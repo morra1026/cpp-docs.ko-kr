@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f977f3a0ffda275a0819f01f8c99f12236babd5c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d4f4247d8e752e71b86829ea61756f2f04d26762
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165720"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105999"
 ---
 # <a name="compiler-error-c2120"></a>컴파일러 오류 C2120
-' void' 모든 종류를 사용할 수 없습니다  
-  
- `void` 형식은 다른 형식이 있는 선언에서 사용 됩니다.  
-  
- 다음 샘플에서는 C2120 오류가 생성 됩니다.  
-  
-```  
-// C2120.cpp  
-int main() {  
-   void int i;   // C2120  
-   int j;   // OK  
-}  
+
+' void' 형식도 사용할 수 없습니다.
+
+`void` 형식은 다른 형식의 선언에 사용 됩니다.
+
+다음 샘플에서는 C2120 오류가 생성 됩니다.
+
+```
+// C2120.cpp
+int main() {
+   void int i;   // C2120
+   int j;   // OK
+}
 ```

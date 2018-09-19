@@ -1,5 +1,5 @@
 ---
-title: 위치 클래스 | Microsoft Docs
+title: location 클래스 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fdfb555375df4b9f791db25fa2dee47222f79063
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: a7d441aff74faede9ecbc41f03fe52cd05528e06
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688026"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46104766"
 ---
 # <a name="location-class"></a>위치 클래스
 하드웨어의 실제 위치에 대한 추상화입니다.  
@@ -58,7 +58,7 @@ class location;
 |----------|-----------------|  
 |[operator!=](#operator_neq)|두 `location` 개체가 서로 다른 위치를 나타내는지 여부를 확인합니다.|  
 |[operator=](#operator_eq)|다른 `location` 개체의 내용을 여기에 할당합니다.|  
-|[operator==](#operator_eq_eq)|두 결정 `location` 개체는 같은 위치를 나타냅니다.|  
+|[operator==](#operator_eq_eq)|두 결정 `location` 개체는 동일한 위치를 나타냅니다.|  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  `location`  
@@ -96,8 +96,8 @@ static location __cdecl from_numa_node(unsigned short _NumaNodeNumber);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_NumaNodeNumber`  
- 위치를 생성하기 위한 NUMA 노드 번호입니다.  
+*_NumaNodeNumber*<br/>
+위치를 생성하기 위한 NUMA 노드 번호입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `_NumaNodeNumber` 매개 변수로 지정된 NUMA 노드를 나타내는 위치입니다.  
@@ -120,12 +120,17 @@ location(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Src`  
- `_LocationType`  
- `_Id`  
- `_BindingId`  
- `_PBinding`  
-  
+*_Src*<br/>
+
+*_LocationType*<br/>
+
+*Id (_i)*<br/>
+
+*_BindingId*<br/>
+
+*_PBinding*<br/>
+(선택 사항) 바인딩에 대 한 포인터입니다.
+
 ### <a name="remarks"></a>설명  
  기본적으로 생성되는 위치는 시스템 전체를 나타냅니다.  
   
@@ -138,7 +143,8 @@ bool operator!= (const location& _Rhs) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Rhs`  
+*_Rhs*<br/>
+피연산자 `location`합니다.
   
 ### <a name="return-value"></a>반환 값  
  두 위치가 다르면 `true`이고, 그렇지 않으면 `false`입니다.  
@@ -152,24 +158,25 @@ location& operator= (const location& _Rhs);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Rhs`  
- 소스 `location` 개체입니다.  
+*_Rhs*<br/>
+소스 `location` 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
   
 ##  <a name="operator_eq_eq"></a> 연산자 = = 
 
- 두 결정 `location` 개체는 같은 위치를 나타냅니다.  
+ 두 결정 `location` 개체는 동일한 위치를 나타냅니다.  
   
 ```
 bool operator== (const location& _Rhs) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Rhs`  
+*_Rhs*<br/>
+피연산자 `location`합니다.
   
 ### <a name="return-value"></a>반환 값  
- `true` 두 위치 동일 하 고 `false` 그렇지 않은 경우.  
+ `true` 두 위치는 동일 하는 경우 및 `false` 그렇지 않은 경우.  
   
 ## <a name="see-also"></a>참고 항목  
  [concurrency 네임스페이스](concurrency-namespace.md)

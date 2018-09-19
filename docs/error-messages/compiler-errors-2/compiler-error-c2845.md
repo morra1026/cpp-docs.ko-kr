@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e0d74548ff546993c5c8f752709de7418c62965
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4314a6e79a5052d3e9e05aa453ce3ae842ded74c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243247"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107794"
 ---
 # <a name="compiler-error-c2845"></a>컴파일러 오류 C2845
-'operator': 포인터 산술이 형식에 대해 사용할 수 없습니다  
-  
- 관리 되는 클래스에 대 한 포인터를 증가 시킬 수 없습니다.  
+
+'operator': 포인터 산술이 형식에 사용할 수 없습니다
+
+관리 되는 클래스에 대 한 포인터를 증가 시킬 수 없습니다.

@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c3bc07c404a1f4d667045fdfea24009e7d20ad69
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7bf03c35c60bebb52c94ed04cca2349f35c06fbc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33232635"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093652"
 ---
 # <a name="compiler-error-c2632"></a>컴파일러 오류 C2632
-'type1' 뒤에 'type2'은 사용할 수 없습니다.  
-  
- 이 오류는 두 형식 지정자 사이의 코드 누락 된 경우 발생할 수 있습니다.  
-  
- 다음 샘플에서는 C2632 오류가 생성 됩니다.  
-  
-```  
-// C2632.cpp  
-int float i;   // C2632  
-```  
-  
- 이 오류는 Visual Studio.NET 2003에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 수 있습니다. `bool` 이제는 적절 한 형식이입니다. 이전 버전에서는 `bool` typedef와 였으며 해당 이름의 식별자를 만들 수 있습니다.  
-  
- 다음 샘플에서는 C2632 오류가 생성 됩니다.  
-  
-```  
-// C2632_2.cpp  
-// compile with: /LD  
-void f(int bool);   // C2632  
-```  
-  
- 이 오류를 해결 하는 코드는 Visual Studio.NET 2003와 Visual Studio.NET 버전의 Visual c + +에서 유효 하려면 식별자를 이름을 바꿉니다.
+
+'type1' 'type2' 뒤에 올바르지 않습니다.
+
+이 오류는 두 가지 형식 지정자 사이 코드가 누락 된 경우 발생할 수 있습니다.
+
+다음 샘플에서는 C2632 오류가 생성 됩니다.
+
+```
+// C2632.cpp
+int float i;   // C2632
+```
+
+이 오류 Visual Studio.NET 2003에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 될 수도 있습니다. `bool` 이제 적절 한 형식이입니다. 이전 버전에서는 `bool` typedef에서 되었으며 해당 이름의 식별자를 만들 수 있습니다.
+
+다음 샘플에서는 C2632 오류가 생성 됩니다.
+
+```
+// C2632_2.cpp
+// compile with: /LD
+void f(int bool);   // C2632
+```
+
+이 오류 코드는 Visual Studio.NET 2003 및 Visual Studio.NET 버전 모두 Visual c + +에서 유효한를 해결 하려면 식별자를 이름을 바꿉니다.

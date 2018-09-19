@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65a3d399ed6c7f25b849335328550526ecf7a816
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 853e9b8a7741b31a57af172427656be8a78a99f5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236498"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098149"
 ---
 # <a name="compiler-error-c2791"></a>컴파일러 오류 C2791
-'super'를 잘못 사용 했습니다: 'class' 기본 클래스가 없습니다  
-  
- 키워드 [super](../../cpp/super.md) 의 기본 클래스를 사용 하지 않는 클래스 멤버 함수의 컨텍스트 내에서 사용 되었습니다.  
-  
- 다음 샘플에서는 C2791 오류가 생성 됩니다.  
-  
-```  
-// C2791.cpp  
-struct D {  
-   void mf() {  
-      __super::mf();   // C2791  
-   }  
-};  
+
+잘못 사용 했습니다 'super': 'class' 기본 클래스 없는 합니다.
+
+키워드 [super](../../cpp/super.md) 모든 기본 클래스가 없는 클래스 멤버 함수의 컨텍스트에서 사용 되었습니다.
+
+다음 샘플에서는 C2791를 생성합니다.
+
+```
+// C2791.cpp
+struct D {
+   void mf() {
+      __super::mf();   // C2791
+   }
+};
 ```

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 56ee12f65ff9efe9f3b048d061b80aef691eb0f2
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: a10acd24fed4dadb6bd33b66c895dc94f7215cb3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39404397"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102807"
 ---
 # <a name="noalias"></a>noalias
 
@@ -36,7 +36,7 @@ ms.locfileid: "39404397"
 
 별칭 지정에 영향을 줄 수 있는 다른 주석을 참조 하세요 [__declspec(restrict)](../cpp/restrict.md)합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 샘플의 사용법을 보여 줍니다 **__declspec(noalias)** 합니다.
 
@@ -103,12 +103,13 @@ int main()
     a = init(M, N);
     b = init(N, P);
     c = init(M, P);
- 
+
     multiply(a, b, c);
 }
 ```
 
 ## <a name="see-also"></a>참고자료
- [__declspec](../cpp/declspec.md)  
- [키워드](../cpp/keywords-cpp.md)  
- [__declspec(restrict)](../cpp/restrict.md)  
+
+[__declspec](../cpp/declspec.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
+[__declspec(restrict)](../cpp/restrict.md)

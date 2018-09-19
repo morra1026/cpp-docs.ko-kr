@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d8a40aa3ae2169233874ae806d65a63d1644283e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7fdca31d191700057a255d99c6d943f4b4e6a981
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169870"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46092845"
 ---
 # <a name="compiler-error-c2190"></a>컴파일러 오류 C2190
-첫 번째 매개 변수 목록이 둘째 보다 깁니다.  
-  
- C 함수를 한 번 더 짧은 매개 변수 목록 사용 하 여 선언 되었습니다. C에서 오버 로드 된 함수를 지원 하지 않습니다.  
-  
- 다음 샘플에서는 C2190 오류가 생성 됩니다.  
-  
-```  
-// C2190.c  
-// compile with: /Za /c  
-void func( int, float );  
-void func( int  );   // C2190, different parameter list  
-void func2( int  );   // OK  
+
+첫 번째 매개 변수 목록이 둘째 보다 깁니다.
+
+C 함수를 한 번 더 짧은 매개 변수 목록 사용 하 여 선언 되었습니다. C에서 오버 로드 된 함수를 지원 하지 않습니다.
+
+다음 샘플에서는 C2190를 생성합니다.
+
+```
+// C2190.c
+// compile with: /Za /c
+void func( int, float );
+void func( int  );   // C2190, different parameter list
+void func2( int  );   // OK
 ```

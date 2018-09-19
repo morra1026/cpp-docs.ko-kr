@@ -16,31 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3802deefb8a62f7952a5ce7a32c589c76c84513
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6d35701eb47bdf633377652094b847ccdfb31e59
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196012"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100632"
 ---
 # <a name="compiler-error-c2364"></a>컴파일러 오류 C2364
-'type': 사용자 지정 특성에 대 한 형식이 잘못 되었습니다.  
-  
- 사용자 지정 특성에 대 한 명명 된 인수는 컴파일 시간 상수 제한 합니다. (Int, char 등) 예를 들어 정수 계열 형식 system:: type ^, 및 system:: object ^ 합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C2364 오류가 발생 합니다.  
-  
-```  
-// c2364.cpp  
-// compile with: /clr /c  
-using namespace System;  
-  
-[attribute(AttributeTargets::All)]  
-public ref struct ABC {  
-public:  
-   // Delete the following line to resolve.  
-   ABC( Enum^ ) {}   // C2364  
-   ABC( int ) {}   // OK  
-};  
+
+'type': 사용자 지정 특성 형식이 잘못 되었습니다.
+
+사용자 지정 특성에 대 한 명명 된 인수는 컴파일 시간 상수로 제한 합니다. 정수 계열 형식 예를 들어 (int, char 등), system:: type ^, 및 system:: object ^ 합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플 C2364를 생성합니다.
+
+```
+// c2364.cpp
+// compile with: /clr /c
+using namespace System;
+
+[attribute(AttributeTargets::All)]
+public ref struct ABC {
+public:
+   // Delete the following line to resolve.
+   ABC( Enum^ ) {}   // C2364
+   ABC( int ) {}   // OK
+};
 ```

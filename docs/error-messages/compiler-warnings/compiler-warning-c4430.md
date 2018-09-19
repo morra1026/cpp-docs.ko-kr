@@ -16,36 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 311c75ed1fcacdf8b40f096a759d669c9331c2ca
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 79c0045b568a24ad6702e748e82a8ebd88c41044
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33272115"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093924"
 ---
 # <a name="compiler-warning-c4430"></a>컴파일러 경고 C4430
-형식 지정자가 없습니다. int로 가정합니다. 참고: c + + 기본 int를 지원 하지 않습니다.  
-  
- 이 오류는 Visual c + + 2005에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 될 수 있습니다: 모든 선언 형식을; 명시적으로 지정 해야 int가 더 이상 사용 됩니다.  
-  
- C4430은 항상 오류로 실행 됩니다.  와 함께이 경고를 해제할 수 있습니다는 `#pragma warning` 또는 **/wd**; 참조 [경고](../../preprocessor/warning.md) 또는 [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, / we, /wo /Wv, /WX (경고 수준)](../../build/reference/compiler-option-warning-level.md)자세한 정보에 대 한 합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 c4430 오류가 발생 합니다.  
-  
-```  
-// C4430.cpp  
-// compile with: /c  
-struct CMyClass {  
-   CUndeclared m_myClass;  // C4430  
-   int m_myClass;  // OK  
-};  
-  
-typedef struct {  
-   POINT();   // C4430  
-   // try the following line instead  
-   // int POINT();  
-   unsigned x;  
-   unsigned y;  
-} POINT;  
+
+형식 지정자가 없습니다. int로 가정합니다. 참고: c + + 기본 int를 지원 하지 않습니다.
+
+이 오류는 Visual c + + 2005에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 될 수 있습니다: 모든 선언 명시적으로 형식을 지정 해야 합니다. int가 더 이상 사용 됩니다.
+
+C4430은 항상 오류로 실행 됩니다.  사용 하 여이 경고를 해제할 수 있습니다 합니다 `#pragma warning` 나 **/wd**; 참조 [경고](../../preprocessor/warning.md) 또는 [/w, / w0, / w1, / w2, / w3, / w4, / w1, / w2, / w3, / w4, /Wall, /wd, / we, /wo, /Wv, /WX (경고 수준)](../../build/reference/compiler-option-warning-level.md)자세한 내용은 합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플 C4430을 생성합니다.
+
+```
+// C4430.cpp
+// compile with: /c
+struct CMyClass {
+   CUndeclared m_myClass;  // C4430
+   int m_myClass;  // OK
+};
+
+typedef struct {
+   POINT();   // C4430
+   // try the following line instead
+   // int POINT();
+   unsigned x;
+   unsigned y;
+} POINT;
 ```
