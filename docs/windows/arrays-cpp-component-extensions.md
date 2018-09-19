@@ -22,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fa004d449190003f6438744c09c1c8023a0cbda3
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: dbfcedd2bc17e21b94de46c63edd95bf58f576a7
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314432"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714456"
 ---
 # <a name="arrays-c-component-extensions"></a>배열(C++ 구성 요소 확장명)
 
@@ -62,12 +62,14 @@ ms.locfileid: "44314432"
     {initialization-list [,...]}
 ```
 
-*한정자* [선택 사항] 하나 이상의 이러한 저장소 클래스 지정자: [변경할 수 있는](../cpp/mutable-data-members-cpp.md)를 [volatile](../cpp/volatile-cpp.md)를 [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md)하십시오 [정적](../cpp/static-members-cpp.md)합니다.
+*한정자*<br/>
+(선택 사항) 이러한 저장소 클래스 지정자 중 하나 이상이: [변경할 수 있는](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md)를 [const](../cpp/const-cpp.md)를 [extern](../cpp/using-extern-to-specify-linkage.md), [정적](../cpp/static-members-cpp.md).
 
 *배열 형식*  
 배열 변수의 형식입니다. 올바른 유형은 Windows 런타임 클래스 및 기본 형식, ref 클래스 및 구조체, 값 클래스 및 구조체 및 네이티브 포인터 (`type*`).
 
-*순위* [선택 사항] 배열 차원 수입니다. 1 이어야 합니다.
+*rank*<br/>
+(선택 사항) 배열의 차원 수입니다. 1 이어야 합니다.
 
 *identifier*  
 배열 변수의 이름입니다.
@@ -75,7 +77,8 @@ ms.locfileid: "44314432"
 *초기화 유형*  
 배열을 초기화 하는 값의 형식입니다. 일반적으로 *배열 형식* 하 고 *초기화 형식* 동일한 형식이 있습니다. 그러나 형식에서 변환 하는 경우에 다 수 *초기화 유형* 하 *배열 형식*-예를 들어 경우 *초기화 형식* 에서파생됩니다*배열 형식*합니다.
 
-*초기화 목록* [선택 사항] 중괄호에 있는 값의 쉼표로 구분 된 목록을 괄호 초기화 하는 배열의 요소입니다. 예를 들어 경우 *순위 크기 목록* 되었습니다 `(3)`는 1 차원 배열의 요소 3 개를 선언 하는 *초기화 목록* 수 `{1,2,3}`입니다.
+*목록 초기화*<br/>
+(선택 사항) 배열의 요소를 초기화 하는 중괄호에 있는 값의 쉼표로 구분 된 목록입니다. 예를 들어 경우 *순위 크기 목록* 되었습니다 `(3)`는 1 차원 배열의 요소 3 개를 선언 하는 *초기화 목록* 수 `{1,2,3}`입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -115,12 +118,14 @@ int main() {
     {initialization-list [,...]}
 ```
 
-*한정자* [선택 사항] 하나 이상의 이러한 저장소 클래스 지정자: [변경할 수 있는](../cpp/mutable-data-members-cpp.md)를 [volatile](../cpp/volatile-cpp.md)를 [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md)하십시오 [정적](../cpp/static-members-cpp.md)합니다.
+*한정자*<br/>
+(선택 사항) 이러한 저장소 클래스 지정자 중 하나 이상이: [변경할 수 있는](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md)를 [const](../cpp/const-cpp.md)를 [extern](../cpp/using-extern-to-specify-linkage.md), [정적](../cpp/static-members-cpp.md).
 
 *배열 형식*  
 배열 변수의 형식입니다. 올바른 유형은 Windows 런타임 클래스 및 기본 형식, ref 클래스 및 구조체, 값 클래스 및 구조체를 네이티브 포인터 (`type*`), 및 네이티브 POD (일반 이전 데이터) 형식입니다.
 
-*순위* [선택 사항] 배열 차원 수입니다. 기본값은 1입니다. 최대값은 32입니다. 배열의 각 차원 배열입니다.
+*rank*<br/>
+(선택 사항) 배열의 차원 수입니다. 기본값은 1입니다. 최대값은 32입니다. 배열의 각 차원 배열입니다.
 
 *identifier*  
 배열 변수의 이름입니다.
@@ -131,7 +136,8 @@ int main() {
 *순위 크기 목록*  
 배열의 각 차원 크기의 쉼표로 구분 된 목록입니다. 또는 경우는 *초기화 목록* 매개 변수에 지정 된 경우 컴파일러는 각 차원 크기를 추론할 수 있습니다 하 고 *차수 크기 목록* 생략할 수 있습니다.
 
-*초기화 목록* [선택 사항] 중괄호에 있는 값의 쉼표로 구분 된 목록을 괄호 초기화 하는 배열의 요소입니다. 나의 쉼표로 구분 된 목록을 중첩 *초기화 목록* 다차원 배열의 요소를 초기화 하는 항목입니다.
+*목록 초기화*<br/>
+(선택 사항) 배열의 요소를 초기화 하는 중괄호에 있는 값의 쉼표로 구분 된 목록입니다. 나의 쉼표로 구분 된 목록을 중첩 *초기화 목록* 다차원 배열의 요소를 초기화 하는 항목입니다.
 
 예를 들어 경우 *순위 크기 목록* 되었습니다 `(3)`는 1 차원 배열의 요소 3 개를 선언 하는 *초기화 목록* 수 `{1,2,3}`입니다. 하는 경우 *순위 크기 목록* 되었습니다 `(3,2,4)`, 첫 번째 차원, 2 개 요소, 두 번째에서 및 세 번째, 4 개 요소로 3 요소의 3 차원 배열을 선언 하는 *초기화 목록* 수 `{{1,2,3},{0,0},{-5,10,-21,99}}`.)
 

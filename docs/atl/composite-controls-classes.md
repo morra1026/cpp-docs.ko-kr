@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d9f9359bb6dfa1204c32e6902e12c62423291db
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9e3c7c930df13c09afc48f17e7042f2fe846b095
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765884"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075282"
 ---
 # <a name="composite-controls-classes"></a>복합 컨트롤 클래스
 
@@ -36,7 +36,7 @@ ms.locfileid: "43765884"
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 개요](../atl/atl-class-overview.md)   
-[복합 컨트롤 매크로](../atl/reference/composite-control-macros.md)   
+[클래스 개요](../atl/atl-class-overview.md)<br/>
+[복합 컨트롤 매크로](../atl/reference/composite-control-macros.md)<br/>
 [복합 컨트롤 전역 함수](../atl/reference/composite-control-global-functions.md)
 

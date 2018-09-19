@@ -16,38 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a260cb27529e3ef7ec2b7b7a948578bad320d738
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1a99211afe310730e9041f2f04dc8ce67a762ed0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33275257"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084863"
 ---
 # <a name="compiler-warning-level-1-c4533"></a>컴파일러 경고(수준 1) C4533
-'v 초기화 '명령'에 의해 생략 되었습니다.  
-  
- 프로그램에는 명령을 변경 제어 흐름이 변수를 초기화 하는 명령이 실행 되지 않았습니다. 다음 샘플에서는 C4533 오류가 생성 됩니다.  
-  
-```  
-// C4533.cpp  
-// compile with: /W1  
-#include <stdio.h>  
-  
-struct A  
-{  
-   int m_data;  
-};  
-  
-int main()  
-{  
-   if (1)  
-   {  
-      goto Label;  
-   }  
-  
-   A a = { 100 };  
-  
-   Label:   // C4533  
-      printf("\n%d", a.m_data);   // prints an uninitialized value  
-}  
+
+'variable' 초기화 '명령을' 의해 생략 되었습니다.
+
+명령 프로그램에서 변경, 제어 흐름, 변수를 초기화 하는 명령이 실행 되지 않았습니다. 다음 샘플에서는 C4533 오류가 생성 됩니다.
+
+```
+// C4533.cpp
+// compile with: /W1
+#include <stdio.h>
+
+struct A
+{
+   int m_data;
+};
+
+int main()
+{
+   if (1)
+   {
+      goto Label;
+   }
+
+   A a = { 100 };
+
+   Label:   // C4533
+      printf("\n%d", a.m_data);   // prints an uninitialized value
+}
 ```

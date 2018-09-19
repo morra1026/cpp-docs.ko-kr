@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77762fe12ed74f11f0b7e633f2a0c77523a7efaa
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: aae4caaa73970818a4c3deee9a82b94260629e17
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849791"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700916"
 ---
 # <a name="cmfcmenubutton-class"></a>CMFCMenuButton 클래스
 사용자가 선택한 메뉴에 팝업 메뉴와 보고서를 표시하는 단추입니다.  
@@ -65,7 +65,7 @@ class CMFCMenuButton : public CMFCButton
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CMFCMenuButton::m_bOSMenu](#m_bosmenu)|기본 시스템 팝업 메뉴에 표시 되거나 사용 여부를 지정 [CContextMenuManager::TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#trackpopupmenu)합니다.|  
 |[CMFCMenuButton::m_bRightArrow](#m_brightarrow)|팝업 메뉴 아래쪽 또는 오른쪽 단추에 나타날지 여부를 지정 합니다.|  
@@ -78,7 +78,7 @@ class CMFCMenuButton : public CMFCButton
   
  만들 때는 `CMFCMenuButton`, 연결 된 팝업 메뉴에 대 한 핸들을 전달 해야 합니다. 그런 다음 함수를 호출 `CMFCMenuButton::SizeToContent`합니다. `CMFCMenuButton::SizeToContent` 단추 크기가 있는 팝업 창이 표시 됩니다.-즉, 아래 또는 오른쪽 단추 위치를 가리키는 화살표를 포함 하는 데 충분 한지 확인 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 단추에 연결 된 메뉴의 핸들을 설정 하 고 해당 텍스트와 이미지 크기에 따라 단추 크기를 조정 프레임 워크에 의해 표시 되는 팝업 메뉴를 설정 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_NewControls#38](../../mfc/reference/codesnippet/cpp/cmfcmenubutton-class_1.h)]  
@@ -167,8 +167,8 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMsg*  
- 가리키는 [MSG](../../mfc/reference/msg-structure1.md) 처리할 메시지를 포함 하는 구조입니다.  
+*pMsg*<br/>
+[in] 가리키는 [MSG](../../mfc/reference/msg-structure1.md) 처리할 메시지를 포함 하는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  0이 아닌 메시지를 변환 및 발송 되어야 합니다. 메시지 변환 되지 되었습니다 및 디스패치해야 하는 경우 0입니다.  
@@ -183,8 +183,8 @@ virtual CSize SizeToContent(BOOL bCalcOnly = FALSE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bCalcOnly*  
- 이 메서드가 단추의 크기를 조정 하는지 여부를 나타내는 부울 매개 변수입니다.  
+*bCalcOnly*<br/>
+[in] 이 메서드가 단추의 크기를 조정 하는지 여부를 나타내는 부울 매개 변수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) 단추에 대 한 새 크기를 지정 하는 개체입니다.  

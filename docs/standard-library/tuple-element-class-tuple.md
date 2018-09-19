@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ae46a78484a2ee2737f3d949e525ce89d8401cd
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 4fb89f479320287ff238517cc649f199e0081ffa
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959071"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716194"
 ---
 # <a name="tupleelement-class"></a>tuple_element 클래스
 
@@ -66,22 +66,22 @@ template <class T1, class T2>
 
 ### <a name="parameters"></a>매개 변수
 
-*Index*  
+*Index*<br/>
 지정된 요소의 인덱스입니다.
 
-*Tuple*  
+*Tuple*<br/>
 튜플의 형식입니다.
 
-*Elem*  
+*Elem*<br/>
 배열 요소의 형식입니다.
 
-*Size*  
+*Size*<br/>
 배열의 크기입니다.
 
-*T1*  
+*T1*<br/>
 쌍의 첫 번째 요소의 형식입니다.
 
-*T2*  
+*T2*<br/>
 쌍의 두 번째 요소 형식입니다.
 
 ## <a name="remarks"></a>설명
@@ -96,7 +96,7 @@ template <class T1, class T2>
 
 사용 된 [get 함수 &lt;유틸리티&gt; ](../standard-library/utility-functions.md#get) 지정 된 위치 또는 지정 된 형식의 요소를 반환 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 #include <tuple>
@@ -121,7 +121,7 @@ int main() {
 0 1.5 Tail
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 #include <array>
@@ -151,7 +151,7 @@ int main()
  0
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 #include <utility>
@@ -184,7 +184,13 @@ int main() {
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<튜플 > **헤더:** \<배열 > (배열 특수화 용) **헤더:** \<유틸리티 > (쌍 특수화의 경우)에 대 한  **Namespace:** std
+**헤더:** \<tuple>
+
+**헤더:** \<array>(배열 특수화용)
+
+**헤더:** \<유틸리티 > (쌍 특수화의 경우)에 대 한
+
+**네임스페이스:** std
 
 ## <a name="see-also"></a>참고자료
 

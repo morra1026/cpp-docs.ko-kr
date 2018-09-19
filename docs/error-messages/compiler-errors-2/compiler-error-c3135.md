@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 524435d95e085b0e5014eed21877b6d351e4ca75
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1a1158de2768cd5aea025627caf2fe40ef53e2ba
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245737"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46048463"
 ---
 # <a name="compiler-error-c3135"></a>컴파일러 오류 C3135
-'property': 속성에는 'const' 여야 합니다. 또는 'volatile' 형식을  
-  
- [const](../../cpp/const-cpp.md) 및 [휘발성](../../cpp/volatile-cpp.md) 키워드는 속성에 허용 되지 않습니다.
+
+'property': 속성을 'const' 또는 'volatile' 형식을 수 없습니다.
+
+합니다 [상수](../../cpp/const-cpp.md) 및 [volatile](../../cpp/volatile-cpp.md) 키워드는 속성에 허용 되지 않습니다.

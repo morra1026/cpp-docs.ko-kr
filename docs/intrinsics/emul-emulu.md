@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6e9e7ee594f2587334d93173daa147d81dcebb2
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 8f3bf997006d98cfbd05a47140baf53ef7032876
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540898"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719422"
 ---
 # <a name="emul-emulu"></a>__emul, __emulu
 **Microsoft 전용**  
@@ -46,11 +46,11 @@ unsigned __int64 __emulu(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `a`  
- 곱하기의 첫 번째 정수 피연산자입니다.  
+*a*<br/>
+[in] 곱하기의 첫 번째 정수 피연산자입니다.  
   
- [in] `b`  
- 곱하기의 두 번째 정수 피연산자입니다.  
+*b*<br/>
+[in] 곱하기의 두 번째 정수 피연산자입니다.  
   
 ## <a name="return-value"></a>반환 값  
  곱하기의 결과입니다.  
@@ -69,7 +69,7 @@ unsigned __int64 __emulu(
   
  `__emulu` 두 개의 32 비트 부호 없는 정수 값을 사용 하 고 64 비트 부호 없는 정수 값으로 곱하기의 결과 반환 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // emul.cpp  

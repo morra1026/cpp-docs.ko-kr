@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eacffcd5e66d73cd7594207f58356a4a8a0ecb47
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 7e9ca899b7ad0f83faed4b8aefe318d2c62abb76
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540714"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704992"
 ---
 # <a name="segmentlimit"></a>__segmentlimit
 **Microsoft 전용**  
@@ -38,8 +38,8 @@ unsigned long __segmentlimit(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `a`  
- 세그먼트 선택기를 지정 하는 상수입니다.  
+*a*<br/>
+[in] 세그먼트 선택기를 지정 하는 상수입니다.  
   
 ## <a name="return-value"></a>반환 값  
  지정 된 세그먼트 선택기의 세그먼트 제한을 `a`있는 선택기를 현재 사용 권한 수준에서 유효 하 고 표시 되는 경우.  
@@ -57,7 +57,7 @@ unsigned long __segmentlimit(
   
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 #include <stdio.h>  

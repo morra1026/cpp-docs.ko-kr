@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b70665a767a9ab428336fbfd0cd03bc3da1ff7ca
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c76c72a3bb9694536a9c5ae60f60a87ba9b455c1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243933"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108673"
 ---
 # <a name="compiler-error-c2996"></a>컴파일러 오류 C2996
-'function': 재귀 함수 템플릿 정의  
-  
- 함수 정의가 루트 템플릿 클래스를 인스턴스화하려고 합니다. 재귀 템플릿 인스턴스화가 허용되지 않습니다.
+
+'function': 재귀 함수 템플릿 정의
+
+함수 정의가 루트 템플릿 클래스를 인스턴스화하려고 합니다. 재귀 템플릿 인스턴스화가 허용되지 않습니다.

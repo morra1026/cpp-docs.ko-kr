@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ea72c42f1c10e8d5cd27537db13c7b7baafef5d
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: e5eb06eb9b3a764589008949485aa8e62f15d3d6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42538939"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710088"
 ---
 # <a name="cmfcdesktopalertdialog-class"></a>CMFCDesktopAlertDialog 클래스
 합니다 `CMFCDesktopAlertDialog` 클래스와 함께 사용 됩니다 합니다 [CMFCDesktopAlertWnd 클래스](../../mfc/reference/cmfcdesktopalertwnd-class.md) 팝업 창에는 사용자 지정 대화 상자를 표시 합니다.  
@@ -90,8 +90,8 @@ BOOL CreateFromParams(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *매개 변수*  
- [in] *pParent*  
+*params*<br/>
+[in] [in] *pParent*  
   
 ### <a name="return-value"></a>반환 값  
   

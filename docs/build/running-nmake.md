@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9eb3ba676da2de9790fc992b9f788963f8dcdbc1
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: bdc9d89dbc0e77a8002cc34e5d010ee49d761da4
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894644"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706695"
 ---
 # <a name="running-nmake"></a>NMAKE 실행
 
@@ -41,11 +41,11 @@ NMAKE 빌드만 지정할 *대상* 또는 지정 되지 않은 경우 첫 번째
 
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
-[NMAKE 옵션](../build/nmake-options.md)  
+[NMAKE 옵션](../build/nmake-options.md)
 
-[Tools.ini 및 NMake](../build/tools-ini-and-nmake.md)  
+[Tools.ini 및 NMake](../build/tools-ini-and-nmake.md)
 
-[NMAKE의 종료 코드](../build/exit-codes-from-nmake.md)  
+[NMAKE의 종료 코드](../build/exit-codes-from-nmake.md)
 
 ## <a name="see-also"></a>참고 항목
 

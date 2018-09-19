@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89e1452c3893d30fa3beea0e436da61355b902a1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f47ff3ab9094e7926453ec4eb5964485cf16f945
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248752"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065608"
 ---
 # <a name="compiler-error-c3253"></a>컴파일러 오류 C3253
-'function': 명시적 재정의에 오류  
-  
- 명시적 재정의 잘못 지정 되었습니다. 예를 들어 순수으로 지정 하는 재정의 대 한 구현을 지정할 수 없습니다. 자세한 내용은 참조 [명시적으로 재정의](../../windows/explicit-overrides-cpp-component-extensions.md)합니다.  
-  
- 다음 샘플에서는 C3253 오류가 생성 됩니다.  
-  
-```  
-// C3253.cpp  
-// compile with: /clr  
-public interface struct I {  
-   void a();  
-   void b();  
-   void c();  
-};  
-  
-public ref struct R : I {  
-   virtual void a() = 0, I::a {}   // C3253  
-   virtual void b() = I::a {}   // OK  
-   virtual void c() = 0;   // OK  
-};  
+
+'function': 명시적 재정의 사용 하 여 오류
+
+명시적 재정의 올바르게 지정 되었습니다. 예를 들어, 또한 순수로 지정 하는 재정의 대 한 구현을 지정할 수 없습니다. 자세한 내용은 [명시적으로 재정의](../../windows/explicit-overrides-cpp-component-extensions.md)합니다.
+
+다음 샘플에서는 C3253 오류가 생성 됩니다.
+
+```
+// C3253.cpp
+// compile with: /clr
+public interface struct I {
+   void a();
+   void b();
+   void c();
+};
+
+public ref struct R : I {
+   virtual void a() = 0, I::a {}   // C3253
+   virtual void b() = I::a {}   // OK
+   virtual void c() = 0;   // OK
+};
 ```

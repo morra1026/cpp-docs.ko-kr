@@ -11,12 +11,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d740bb36c1d574e474058c05d900d605c71e55f0
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 1a05eada2b5828cfc654496355bddcabcafc8d60
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406336"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086150"
 ---
 # <a name="containers-modern-c"></a>컨테이너(최신 C++)
 
@@ -48,6 +48,7 @@ C 스타일 배열을 사용 하지 마세요. 직접 데이터에 대 한 액�
 컨테이너에 대 한 자세한 내용은 참조 하세요. [c + + 표준 라이브러리 컨테이너](../standard-library/stl-containers.md)합니다.
 
 ## <a name="see-also"></a>참고자료
- [C++의 진화](../cpp/welcome-back-to-cpp-modern-cpp.md)  
- [C++ 언어 참조](../cpp/cpp-language-reference.md)  
- [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)  
+
+[C++의 진화](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
+[C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

@@ -23,17 +23,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2813fd6d06d69ee346e234b73c96b8b2e782b95b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a80dc66f9626c87cef78a79b1c46a62afd0957d3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33330985"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719357"
 ---
 # <a name="incfsbyte-incfsword-incfsdword"></a>__incfsbyte, __incfsword, __incfsdword
 **Microsoft 전용**  
   
- 시작 부분에 상대적인 오프셋으로 지정 된 메모리 위치에 값에 추가 `FS` 세그먼트입니다.  
+ 값의 시작을 기준으로 오프셋으로 지정 된 메모리 위치에 추가 된 `FS` 세그먼트입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -50,8 +50,8 @@ void __incfsdword(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `Offset`  
- 시작 부분에서 오프셋 `FS`합니다.  
+*오프셋*<br/>
+[in] 시작 부분 으로부터의 오프셋 `FS`합니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
@@ -62,7 +62,7 @@ void __incfsdword(
 |`__incfsdword`|x86|  
   
 ## <a name="remarks"></a>설명  
- 이러한 내장 함수는 커널 모드에서 사용할 수만 이며 루틴은 내장 함수로 사용할 수만 있습니다.  
+ 이러한 내장 함수 에서만 커널 모드에서 사용할 수 있으며 루틴은 내장 함수로 사용할 수 있습니다.  
   
 **Microsoft 전용 종료**  
   

@@ -16,78 +16,82 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d551bea5c78e3a9e0723601647624f29e22f3cb
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 20d064a1154126878ce75d9dd08d88fa9d65f83c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39402935"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028560"
 ---
 # <a name="private-c"></a>private (C++)
-## <a name="syntax"></a>구문  
-  
-```  
-private:  
-   [member-list]  
-private base-class  
-```  
-  
-## <a name="remarks"></a>설명  
- 목록 앞에 오는 클래스 멤버를 **개인** 키워드 멤버만 멤버 함수와 클래스의 friend 에서만 액세스할 수 있도록 지정 합니다. 이 설정은 다음 액세스 지정자 또는 클래스 끝까지 선언된 모든 멤버에 적용됩니다.  
-  
- 이름 앞에 오는 기본 클래스의 경우는 **개인** 키워드는 기본 클래스의 public 및 protected 멤버는 파생된 클래스의 private 멤버를 지정 합니다.  
-  
- 클래스에서 멤버의 기본 액세스는 전용입니다. 구조체나 공용 구조체에서 멤버의 기본 액세스는 공용입니다.  
-  
- 기본 클래스의 기본 액세스는 클래스에 대해 전용이고 구조체에 대해 공용입니다. 공용 구조체에 기본 클래스를 사용할 수 없습니다.  
-  
- 관련 정보를 참조 하세요 [friend](../cpp/friend-cpp.md), [공용](../cpp/public-cpp.md)를 [보호](../cpp/protected-cpp.md), 및 멤버 액세스 테이블 [클래스멤버에대한액세스제어](member-access-control-cpp.md).  
-  
-## <a name="clr-specific"></a>/clr 관련  
- CLR 형식에서 c + + 액세스 지정자 키워드 (**공개**를 **사설**, 및 **보호**) 형식 및 어셈블리와 관련 된 메서드 표시 여부에 영향을 줄 수 있습니다. 자세한 내용은 [멤버 Access Control](member-access-control-cpp.md)합니다.  
-  
+
+## <a name="syntax"></a>구문
+
+```
+private:
+   [member-list]
+private base-class
+```
+
+## <a name="remarks"></a>설명
+
+목록 앞에 오는 클래스 멤버를 **개인** 키워드 멤버만 멤버 함수와 클래스의 friend 에서만 액세스할 수 있도록 지정 합니다. 이 설정은 다음 액세스 지정자 또는 클래스 끝까지 선언된 모든 멤버에 적용됩니다.
+
+이름 앞에 오는 기본 클래스의 경우는 **개인** 키워드는 기본 클래스의 public 및 protected 멤버는 파생된 클래스의 private 멤버를 지정 합니다.
+
+클래스에서 멤버의 기본 액세스는 전용입니다. 구조체나 공용 구조체에서 멤버의 기본 액세스는 공용입니다.
+
+기본 클래스의 기본 액세스는 클래스에 대해 전용이고 구조체에 대해 공용입니다. 공용 구조체에 기본 클래스를 사용할 수 없습니다.
+
+관련 정보를 참조 하세요 [friend](../cpp/friend-cpp.md), [공용](../cpp/public-cpp.md)를 [보호](../cpp/protected-cpp.md), 및 멤버 액세스 테이블 [클래스멤버에대한액세스제어](member-access-control-cpp.md).
+
+## <a name="clr-specific"></a>/clr 관련
+
+CLR 형식에서 c + + 액세스 지정자 키워드 (**공개**를 **사설**, 및 **보호**) 형식 및 어셈블리와 관련 된 메서드 표시 여부에 영향을 줄 수 있습니다. 자세한 내용은 [멤버 Access Control](member-access-control-cpp.md)합니다.
+
 > [!NOTE]
->  파일을 컴파일하면 [/LN](../build/reference/ln-create-msil-module.md) 이 동작의 영향을 받지 않습니다. 이 경우 관리되는 클래스(공용 또는 전용)가 모두 표시됩니다.  
-  
-## <a name="end-clr-specific"></a>END /clr 관련  
-  
-## <a name="example"></a>예  
-  
-```cpp 
-// keyword_private.cpp  
-class BaseClass {  
-public:  
-   // privMem accessible from member function  
-   int pubFunc() { return privMem; }  
-private:  
-   void privMem;  
-};  
-  
-class DerivedClass : public BaseClass {  
-public:  
-   void usePrivate( int i )  
-      { privMem = i; }   // C2248: privMem not accessible  
-                         // from derived class  
-};  
-  
-class DerivedClass2 : private BaseClass {  
-public:  
-   // pubFunc() accessible from derived class  
-   int usePublic() { return pubFunc(); }  
-};  
-  
-int main() {  
-   BaseClass aBase;  
-   DerivedClass aDerived;  
-   DerivedClass2 aDerived2;  
-   aBase.privMem = 1;     // C2248: privMem not accessible  
-   aDerived.privMem = 1;  // C2248: privMem not accessible  
-                          //    in derived class  
-   aDerived2.pubFunc();   // C2247: pubFunc() is private in  
-                          //    derived class  
-}  
-```  
-  
-## <a name="see-also"></a>참고자료  
- [클래스 멤버에 대 한 액세스를 제어합니다.](member-access-control-cpp.md)   
- [키워드](../cpp/keywords-cpp.md)
+>  파일을 컴파일하면 [/LN](../build/reference/ln-create-msil-module.md) 이 동작의 영향을 받지 않습니다. 이 경우 관리되는 클래스(공용 또는 전용)가 모두 표시됩니다.
+
+## <a name="end-clr-specific"></a>END /clr 관련
+
+## <a name="example"></a>예제
+
+```cpp
+// keyword_private.cpp
+class BaseClass {
+public:
+   // privMem accessible from member function
+   int pubFunc() { return privMem; }
+private:
+   void privMem;
+};
+
+class DerivedClass : public BaseClass {
+public:
+   void usePrivate( int i )
+      { privMem = i; }   // C2248: privMem not accessible
+                         // from derived class
+};
+
+class DerivedClass2 : private BaseClass {
+public:
+   // pubFunc() accessible from derived class
+   int usePublic() { return pubFunc(); }
+};
+
+int main() {
+   BaseClass aBase;
+   DerivedClass aDerived;
+   DerivedClass2 aDerived2;
+   aBase.privMem = 1;     // C2248: privMem not accessible
+   aDerived.privMem = 1;  // C2248: privMem not accessible
+                          //    in derived class
+   aDerived2.pubFunc();   // C2247: pubFunc() is private in
+                          //    derived class
+}
+```
+
+## <a name="see-also"></a>참고자료
+
+[클래스 멤버에 대한 액세스 제어](member-access-control-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)

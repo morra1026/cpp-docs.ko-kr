@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 438f9a4f23dd7069457a635c0db02b66ff8de1e8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 236bfdfc031544e05d4aa95d9c36720ddb0ebdf8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33251175"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051299"
 ---
 # <a name="compiler-error-c3368"></a>컴파일러 오류 C3368
-'function declaration': IDL에 대한 호출 규칙이 잘못되었습니다.  
-  
- .idl 파일에서 [__stdcall](../../cpp/stdcall.md) 또는 [__cdecl](../../cpp/cdecl.md) 호출 규칙만 사용할 수 있습니다.  
-  
- 다음 샘플에서는 C3368을 생성합니다.  
-  
-```  
-// C3368.cpp  
-// processor: x86  
-[idl_module(name="Name", dllname="Some.dll")];  
-  
-[idl_module(name="Name")]  
-int __fastcall f1();   // C3368  
+
+'function declaration': IDL에 대한 호출 규칙이 잘못되었습니다.
+
+.idl 파일에서 [__stdcall](../../cpp/stdcall.md) 또는 [__cdecl](../../cpp/cdecl.md) 호출 규칙만 사용할 수 있습니다.
+
+다음 샘플에서는 C3368을 생성합니다.
+
+```
+// C3368.cpp
+// processor: x86
+[idl_module(name="Name", dllname="Some.dll")];
+
+[idl_module(name="Name")]
+int __fastcall f1();   // C3368
 ```

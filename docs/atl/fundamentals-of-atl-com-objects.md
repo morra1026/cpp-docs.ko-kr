@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7873b7006962449a40a8e67d118b6699ac61f263
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b90d8901a60b5945b2b29db2c378a0cd29939f63
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762095"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059279"
 ---
 # <a name="fundamentals-of-atl-com-objects"></a>ATL COM 개체의 기본 사항
 
@@ -57,30 +57,30 @@ ATL COM 개체의 다른 측면은 다른 클래스에 의해 처리 됩니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[CComObjectRootEx 구현](../atl/implementing-ccomobjectrootex.md)  
+[CComObjectRootEx 구현](../atl/implementing-ccomobjectrootex.md)<br/>
 예제를 구현 하기 위한 COM 맵 엔트리 `CComObjectRootEx`합니다.
 
-[CComObject, CComAggObject 및 CComPolyObject 구현](../atl/implementing-ccomobject-ccomaggobject-and-ccompolyobject.md)  
+[CComObject, CComAggObject 및 CComPolyObject 구현](../atl/implementing-ccomobject-ccomaggobject-and-ccompolyobject.md)<br/>
 에 대해 설명 하는 방법을 **DECLARE_\*_AGGREGATABLE** 매크로 사용에 영향을 줄 `CComObject`합니다 `CComAggObject`, 및 `CComPolyObject`합니다.
 
-[IDispatch 및 IErrorInfo 지원](../atl/supporting-idispatch-and-ierrorinfo.md)  
+[IDispatch 및 IErrorInfo 지원](../atl/supporting-idispatch-and-ierrorinfo.md)<br/>
 지 원하는 데 ATL 구현 클래스를 나열 합니다 `IDispatch` 및 `IErrorInfo` 인터페이스입니다.
 
-[IDispEventImpl 지원](../atl/supporting-idispeventimpl.md)  
+[IDispEventImpl 지원](../atl/supporting-idispeventimpl.md)<br/>
 클래스에 대 한 연결 지점을 구현 하는 단계를 설명 합니다.
 
-[기본 클래스 팩터리 및 집계 모델 변경](../atl/changing-the-default-class-factory-and-aggregation-model.md)  
+[기본 클래스 팩터리 및 집계 모델 변경](../atl/changing-the-default-class-factory-and-aggregation-model.md)<br/>
 기본 클래스 팩터리 및 집계 모델을 변경 하는 데 어떤 매크로 보여 줍니다.
 
-[집계 개체 만들기](../atl/creating-an-aggregated-object.md)  
+[집계 개체 만들기](../atl/creating-an-aggregated-object.md)<br/>
 집계 개체를 만들기 위한 단계를 나열 합니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[ATL 프로젝트 만들기](../atl/reference/creating-an-atl-project.md)  
+[ATL 프로젝트 만들기](../atl/reference/creating-an-atl-project.md)<br/>
 ATL COM 개체 만들기에 대 한 정보를 제공 합니다.
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 액티브 템플릿 라이브러리를 사용하여 프로그래밍하는 방법에 대한 개념 항목의 링크를 제공합니다.
 
 ## <a name="see-also"></a>참고 항목

@@ -104,12 +104,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2eb1695383e5bb1a700305fd0cc8487590afd7c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 114ddba64de255c0f034fb9dbcbe55a45ca72bba
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217043"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723972"
 ---
 # <a name="coleipframewndex-class"></a>COleIPFrameWndEx 클래스
 `COleIPFrameWndEx` 클래스는 MFC를 지원하는 OLE 컨테이너를 구현합니다. 응용 프로그램에 대한 현재 위치의 프레임 창 클래스는 `COleIPFrameWndEx` COleIPFrameWnd [클래스에서 파생하는 대신](../../mfc/reference/coleipframewnd-class.md)클래스에서 파생해야 합니다. 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.   
@@ -216,8 +216,8 @@ BOOL AddPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pControlBar*  
- [in] *bTail*  
+*pControlBar*<br/>
+[in] [in] *bTail*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -246,8 +246,8 @@ void DockPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- [in] *nDockBarID*  
+*pBar*<br/>
+[in] [in] *nDockBarID*  
  [in] *lpRect*  
   
 ### <a name="remarks"></a>설명  
@@ -262,11 +262,11 @@ BOOL DockPaneLeftOf(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- 도킹 창에 대 한 포인터입니다.  
+*pBar*<br/>
+[in] 도킹 창에 대 한 포인터입니다.  
   
- [in] *pLeftOf*  
- 원본으로 사용 되는 창에 대 한 포인터입니다.  
+*pLeftOf*<br/>
+[in] 원본으로 사용 되는 창에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  작업이 성공한 경우 TRUE를 반환 합니다. 그렇지 않으면 FALSE를 반환합니다.  
@@ -316,12 +316,12 @@ void EnablePaneMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- [in] *uiCustomizeCmd*  
- [in] *strCustomizeLabel*  
- [in] *uiViewToolbarsMenuEntryID*  
- [in] *bContextMenuShowsToolbarsOnly*  
- [in] *bViewMenuShowsToolbarsOnly*  
+*bEnable*<br/>
+[in] [in] *uiCustomizeCmd*  
+*strCustomizeLabel*<br/>
+[in] [in] *uiViewToolbarsMenuEntryID*  
+*bContextMenuShowsToolbarsOnly*<br/>
+[in] [in] *bViewMenuShowsToolbarsOnly*  
   
 ### <a name="remarks"></a>설명  
   
@@ -445,11 +445,11 @@ virtual BOOL GetToolbarButtonToolTipText(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pButton*  
- 단추에 대 한 포인터입니다.  
+*pButton*<br/>
+[in] 단추에 대 한 포인터입니다.  
   
- [in] *strTTText*  
- 도구 설명 텍스트에 대 한 포인터입니다.  
+*strTTText*<br/>
+[in] 도구 설명 텍스트에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  기본 구현에서는 0을 반환합니다.  
@@ -468,14 +468,14 @@ void InitUserToolbars(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszRegEntry*  
- 레지스트리 항목 라이브러리 사용자 도구 모음 설정을 저장 하는 위치입니다.  
+*lpszRegEntry*<br/>
+[in] 레지스트리 항목 라이브러리 사용자 도구 모음 설정을 저장 하는 위치입니다.  
   
- [in] *uiUserToolbarFirst*  
- 첫 번째 사용자 정의 도구 모음에 할당 되는 컨트롤 ID입니다.  
+*uiUserToolbarFirst*<br/>
+[in] 첫 번째 사용자 정의 도구 모음에 할당 되는 컨트롤 ID입니다.  
   
- [in] *uiUserToolbarLast*  
- 마지막 사용자 정의 도구 모음에 할당 되는 컨트롤 ID입니다.  
+*uiUserToolbarLast*<br/>
+[in] 마지막 사용자 정의 도구 모음에 할당 되는 컨트롤 ID입니다.  
   
 ### <a name="remarks"></a>설명  
  이 함수를 사용 하 여 사용자가 동적으로 정의 하는 도구 모음에 할당 하기 위해 컨트롤 Id의 범위를 초기화 합니다. 매개 변수 *uiUserToolbarFirst* 하 고 *uiUserToolbarLast* 허용된 도구 모음 컨트롤 Id의 범위를 정의 합니다. 사용자 정의 도구 모음 생성을 사용 하지 않으려면 설정할 *uiUserToolbarFirst* 또는 *uiUserToolbarLast* -1입니다.  
@@ -491,8 +491,8 @@ BOOL InsertPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pControlBar*  
- [in] *pTarget*  
+*pControlBar*<br/>
+[in] [in] *pTarget*  
  [in] *후에는*  
   
 ### <a name="return-value"></a>반환 값  
@@ -523,8 +523,8 @@ BOOL IsPointNearDockSite(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- [in] *dwBarAlignment*  
+*지점*<br/>
+[in] [in] *dwBarAlignment*  
  [in] *bOuterEdge*  
   
 ### <a name="return-value"></a>반환 값  
@@ -543,10 +543,10 @@ virtual BOOL LoadFrame(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nIDResource*  
- [in] *dwDefaultStyle*  
- [in] *pParentWnd*  
- [in] *pContext*  
+*nIDResource*<br/>
+[in] [in] *dwDefaultStyle*  
+*pParentWnd*<br/>
+[in] [in] *pContext*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -588,8 +588,8 @@ virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMenuPopup*  
- 팝업 메뉴 개체에 대 한 포인터입니다.  
+*pMenuPopup*<br/>
+[in] 팝업 메뉴 개체에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  알림을 수신 하려면이 메서드를 재정의 `CMFCPopupMenu` WM_DESTROY 메시지를 처리 하는 경우 개체입니다.  
@@ -606,10 +606,10 @@ virtual BOOL OnCmdMsg(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- [in] *nCode*  
- [in] *pExtra*  
- [in] *pHandlerInfo*  
+*nID*<br/>
+[in] [in] *nCode*  
+*pExtra*<br/>
+[in] [in] *pHandlerInfo*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -626,14 +626,14 @@ virtual BOOL OnDrawMenuImage(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pMenuButton*  
- 메뉴 단추에 대 한 포인터입니다.  
+*pMenuButton*<br/>
+[in] 메뉴 단추에 대 한 포인터입니다.  
   
- [in] *rectImage*  
- 메뉴 항목과 연결 된 이미지입니다.  
+*rectImage*<br/>
+[in] 메뉴 항목과 연결 된 이미지입니다.  
   
 ### <a name="return-value"></a>반환 값  
  기본 구현은 아무 작업도 수행 하지 하 고 0을 반환 합니다.  
@@ -652,14 +652,14 @@ virtual void OnDrawMenuLogo(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pMenu*  
- 팝업 메뉴 개체에 대 한 포인터입니다.  
+*pMenu*<br/>
+[in] 팝업 메뉴 개체에 대 한 포인터입니다.  
   
- [in] *rectLogo*  
- 표시할 로고에 대 한 포인터입니다.  
+*rectLogo*<br/>
+[in] 표시할 로고에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  소유 하 고 메뉴 모음을 사용 하 여 연결 된 팝업 메뉴에 로고를 표시 하려면이 메서드를 재정의 합니다 `COleIPFrameWndEx`-파생 개체입니다. 기본 구현은 아무 작업도 수행하지 않습니다.  
@@ -710,8 +710,8 @@ virtual void OnSetPreviewMode(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bPreview*  
- [in] *pState*  
+*bPreview*<br/>
+[in] [in] *pState*  
   
 ### <a name="remarks"></a>설명  
   
@@ -725,8 +725,8 @@ virtual BOOL OnShowCustomizePane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMenuPane*  
- [in] *uiToolbarID*  
+*pMenuPane*<br/>
+[in] [in] *uiToolbarID*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -754,8 +754,8 @@ virtual BOOL OnShowPopupMenu(CMFCPopupMenu* pMenuPopup);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMenuPopup*  
- 표시할 팝업 메뉴에 대 한 포인터입니다.  
+*pMenuPopup*<br/>
+[in] 표시할 팝업 메뉴에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  기본 구현은 아무 작업도 수행 하지 하 고 0이 아닌 값을 반환 합니다. 팝업 메뉴를 표시할 수 없는 경우 구현에서 FALSE를 반환 해야 합니다.  
@@ -773,11 +773,11 @@ virtual BOOL OnTearOffMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMenuPopup*  
- 사용자 선택 팝업 메뉴에 대 한 포인터입니다.  
+*pMenuPopup*<br/>
+[in] 사용자 선택 팝업 메뉴에 대 한 포인터입니다.  
   
- [in] *pBar*  
- 메뉴를 호스팅하는 창에 대 한 포인터입니다.  
+*pBar*<br/>
+[in] 메뉴를 호스팅하는 창에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  팝업 메뉴를 활성화 하기 위해 프레임 워크를 원하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
@@ -803,10 +803,10 @@ CBasePane* PaneFromPoint(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- [in] *nSensitivity*  
- [in] *bExactBar*  
- [in] *pRTCBarType*  
+*지점*<br/>
+[in] [in] *nSensitivity*  
+*bExactBar*<br/>
+[in] [in] *pRTCBarType*  
  [in] *dwAlignment*  
   
 ### <a name="return-value"></a>반환 값  
@@ -852,10 +852,10 @@ void RemovePaneFromDockManager(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pControlBar*  
- [in] *bDestroy*  
- [in] *bAdjustLayout*  
- [in] *bAutoHide*  
+*pControlBar*<br/>
+[in] [in] *bDestroy*  
+*bAdjustLayout*<br/>
+[in] [in] *bAutoHide*  
  [in] *pBarReplacement*  
   
 ### <a name="remarks"></a>설명  
@@ -868,8 +868,8 @@ void SetDockState(const CDockState& state);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *상태*  
- 도킹 상태를 지정합니다.  
+*state*<br/>
+[in] 도킹 상태를 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  이 함수에 속해 있는 창에 대 한 새 도킹 상태를 지정 하는 데는 `COleIPFrameWndEx` 개체입니다.  
@@ -885,14 +885,14 @@ void SetupToolbarMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *메뉴*  
- 에 대 한 참조를 [CMenu](../../mfc/reference/cmenu-class.md) 개체를 수정할 수 있습니다.  
+*메뉴*<br/>
+[in] 에 대 한 참조를 [CMenu](../../mfc/reference/cmenu-class.md) 개체를 수정할 수 있습니다.  
   
- [in] *uiViewUserToolbarCmdFirst*  
- 첫 번째 사용자 정의 명령을 지정합니다.  
+*uiViewUserToolbarCmdFirst*<br/>
+[in] 첫 번째 사용자 정의 명령을 지정합니다.  
   
- [in] *uiViewUserToolbarCmdLast*  
- 마지막 사용자 정의 명령을 지정합니다.  
+*uiViewUserToolbarCmdLast*<br/>
+[in] 마지막 사용자 정의 명령을 지정합니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -908,10 +908,10 @@ void ShowPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- [in] *bShow*  
- [in] *bDelay*  
- [in] *bActivate*  
+*pBar*<br/>
+[in] [in] *bShow*  
+*bDelay*<br/>
+[in] [in] *bActivate*  
   
 ### <a name="remarks"></a>설명  
   
@@ -928,8 +928,8 @@ virtual void WinHelp(
  [in] dwData  
  지정 된 도움말 유형에 대 한 필요에 따라 데이터를 지정 *nCmd*합니다.  
   
- [in] *nCmd*  
- 요청한 도움말의 형식을 지정합니다. 가능한 값 목록과 미치는 영향에 대 한 합니다 *dwData* 매개 변수를 참조 합니다 [WinHelp 함수](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows SDK의 합니다.  
+*nCmd*<br/>
+[in] 요청한 도움말의 형식을 지정 합니다. 가능한 값 목록과 미치는 영향에 대 한 합니다 *dwData* 매개 변수를 참조 합니다 [WinHelp 함수](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows SDK의 합니다.  
   
 ### <a name="remarks"></a>설명  
   

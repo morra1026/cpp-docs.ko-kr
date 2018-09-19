@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46e77311823977522952d4fe1ca79c41f7edc6b4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bc9cd34233fdc508d24a295495c4442ab16b7a9c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252762"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105013"
 ---
 # <a name="compiler-error-c3159"></a>컴파일러 오류 C3159
-'pointer': 값 형식에 대 한 포인터 배열을 선언할 수 없습니다.  
-  
- 값 형식에 대 한 포인터 배열을 선언할 수 없습니다.  
-  
- C3159은 사용 되지 않는 컴파일러 옵션을 사용 하 여 연결할 수만 **/clr:oldSyntax**합니다.  
+
+'pointer': 값 형식에 대 한 포인터 배열을 선언할 수 없습니다
+
+값 형식에 대 한 포인터 배열을 선언할 수 없습니다.
+
+C3159 사용 되지 않는 컴파일러 옵션을 사용 하 여 전용인 **/clr: oldsyntax**합니다.

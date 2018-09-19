@@ -31,42 +31,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5087fd42a5fd1c104d8587091996e58f78442b1e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 12162e7d6eabfc60b3b4c028b990b720a502f516
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392317"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077882"
 ---
 # <a name="locale-categories"></a>로캘 범주
-## <a name="syntax"></a>구문  
-  
-```  
-  
-#include <locale.h>  
-  
-```  
-  
-## <a name="remarks"></a>설명  
- 로캘 범주는 지역화 루틴에서 사용할 프로그램 로캘 정보 부분을 지정하는 데 사용하는 매니페스트 상수입니다. 로캘은 프로그램의 특정 측면을 사용자 지정할 수 있는 지역성(또는 국가/지역)을 나타냅니다. 로캘 종속 영역에는 날짜 형식 지정 및 통화 값의 형식 표시 등이 포함됩니다.  
-  
-|로캘 범주|영향을 받는 프로그램 부분|  
-|---------------------|-------------------------------|  
-|`LC_ALL`|모든 로캘 관련 동작(모든 범주)|  
-|`LC_COLLATE`|`strcoll` 및 `strxfrm` 함수의 동작|  
-|`LC_CTYPE`|문자 처리 함수(영향을 받지 않는 **isdigit**, `isxdigit`, `mbstowcs` 및 `mbtowc` 제외)의 동작입니다.|  
-|`LC_MAX`|`LC_TIME`과 같음|  
-|`LC_MIN`|`LC_ALL`과 같음|  
-|`LC_MONETARY`|`localeconv` 함수에 의해 반환되는 통화 서식 정보입니다.|  
-|`LC_NUMERIC`|서식이 지정된 출력 루틴(예: `printf`), 데이터 변환 루틴 및 `localeconv` 함수에 의해 반환된 비통화 서식 정보에 대한 소수점 문자입니다.|  
-|`LC_TIME`|`strftime` 함수의 동작|  
-  
- 예제에 대해서는 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)을 참조하세요.  
-  
-## <a name="see-also"></a>참고 항목  
- [localeconv](../c-runtime-library/reference/localeconv.md)   
- [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)   
- [strcoll 함수](../c-runtime-library/strcoll-functions.md)   
- [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)   
- [strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)   
- [전역 상수](../c-runtime-library/global-constants.md)
+
+## <a name="syntax"></a>구문
+
+```
+
+#include <locale.h>
+
+```
+
+## <a name="remarks"></a>설명
+
+로캘 범주는 지역화 루틴에서 사용할 프로그램 로캘 정보 부분을 지정하는 데 사용하는 매니페스트 상수입니다. 로캘은 프로그램의 특정 측면을 사용자 지정할 수 있는 지역성(또는 국가/지역)을 나타냅니다. 로캘 종속 영역에는 날짜 형식 지정 및 통화 값의 형식 표시 등이 포함됩니다.
+
+|로캘 범주|영향을 받는 프로그램 부분|
+|---------------------|-------------------------------|
+|`LC_ALL`|모든 로캘 관련 동작(모든 범주)|
+|`LC_COLLATE`|`strcoll` 및 `strxfrm` 함수의 동작|
+|`LC_CTYPE`|문자 처리 함수(영향을 받지 않는 **isdigit**, `isxdigit`, `mbstowcs` 및 `mbtowc` 제외)의 동작입니다.|
+|`LC_MAX`|`LC_TIME`과 같음|
+|`LC_MIN`|`LC_ALL`과 같음|
+|`LC_MONETARY`|`localeconv` 함수에 의해 반환되는 통화 서식 정보입니다.|
+|`LC_NUMERIC`|서식이 지정된 출력 루틴(예: `printf`), 데이터 변환 루틴 및 `localeconv` 함수에 의해 반환된 비통화 서식 정보에 대한 소수점 문자입니다.|
+|`LC_TIME`|`strftime` 함수의 동작|
+
+예제에 대해서는 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)을 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+[localeconv](../c-runtime-library/reference/localeconv.md)<br/>
+[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
+[strcoll 함수](../c-runtime-library/strcoll-functions.md)<br/>
+[strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)<br/>
+[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
+[전역 상수](../c-runtime-library/global-constants.md)

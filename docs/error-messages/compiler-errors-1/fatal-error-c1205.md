@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcb1e32843c7c8c47589d4b75fd2613a1d73f135
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e70be77c224b8c1c6039a908d38e8e482ab36259
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230087"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035567"
 ---
 # <a name="fatal-error-c1205"></a>심각한 오류 C1205
-설치된 런타임 버전에서는 제네릭이 지원되지 않습니다.  
-  
- 컴파일러가 사용하는 공용 언어 런타임 버전은 현재 컴파일러에서 지원하는 런타임 버전이 아닙니다.  예를 들어 제네릭 기능을 사용하려면 컴파일러와 일치하는 런타임이 필요합니다.  
-  
- 경로 사양을 수정해야 할 수 있습니다.
+
+설치된 런타임 버전에서는 제네릭이 지원되지 않습니다.
+
+컴파일러가 사용하는 공용 언어 런타임 버전은 현재 컴파일러에서 지원하는 런타임 버전이 아닙니다.  예를 들어 제네릭 기능을 사용하려면 컴파일러와 일치하는 런타임이 필요합니다.
+
+경로 사양을 수정해야 할 수 있습니다.

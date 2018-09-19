@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e996a83cfc2a79d4bf5cc458ccc5bdd586355b64
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 6884face758cd7f7b9b507405f41f4fcbac8f188
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42539060"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721307"
 ---
 # <a name="umul128"></a>_umul128
 **Microsoft 전용**  
@@ -39,14 +39,14 @@ unsigned __int64 _umul128(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `Multiplier`  
- 곱할 첫 번째 64비트 정수입니다.  
+*승수*<br/>
+[in] 곱할 첫 번째 64 비트 정수입니다.  
   
- [in] `Multiplicand`  
- 곱할 두 번째 64비트 정수입니다.  
+*피 승수*<br/>
+[in] 곱할 두 번째 64 비트 정수입니다.  
   
- [out] `HighProduct`  
- 곱의 상위 64비트입니다.  
+*HighProduct*<br/>
+[out] 제품의 상위 64 비트입니다.  
   
 ## <a name="return-value"></a>반환 값  
  곱의 하위 64비트입니다.  
@@ -57,7 +57,7 @@ unsigned __int64 _umul128(
 |---------------|------------------|------------|  
 |`_umul128`|ARM, x64|\<intrin.h>|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // umul128.c  

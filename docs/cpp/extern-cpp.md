@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8aaf699f2130c94729b8db9cc21dd17b9699d66c
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7b090875b9656fec52e50cb68caf9c2c047d055b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606460"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114256"
 ---
 # <a name="extern-c"></a>extern (c + +)
 
@@ -88,11 +88,11 @@ extern constexpr __declspec(selectany) int x = 10;
 
 ## <a name="extern-c-and-extern-c-function-declarations"></a>extern "C" 및 extern "c + +" 함수 선언
 
- C + +에서는 문자열에서 사용 하는 경우 **extern** 는 다른 언어의 링크 규칙을 사용 하는 중임을 지정 합니다. C 함수 및 데이터는 이전에 C 링크가 있는 것으로 선언된 경우에만 액세스할 수 있습니다. 단, 별도로 컴파일된 변환 단위로 정의되어야 합니다.
+C + +에서는 문자열에서 사용 하는 경우 **extern** 는 다른 언어의 링크 규칙을 사용 하는 중임을 지정 합니다. C 함수 및 데이터는 이전에 C 링크가 있는 것으로 선언된 경우에만 액세스할 수 있습니다. 단, 별도로 컴파일된 변환 단위로 정의되어야 합니다.
 
- Microsoft c + + 지원 **"C"** 하 고 **"c + +"** 에 *문자열 리터럴* 필드입니다. 모든 표준 포함 파일을 **extern** "C" 구문을 런타임 라이브러리 함수를 c + + 프로그램에서 사용할 수 있도록 합니다.
+Microsoft c + + 지원 **"C"** 하 고 **"c + +"** 에 *문자열 리터럴* 필드입니다. 모든 표준 포함 파일을 **extern** "C" 구문을 런타임 라이브러리 함수를 c + + 프로그램에서 사용할 수 있도록 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 C 링크가 있는 이름을 선언 하는 방법을 보여 줍니다.
 
@@ -114,7 +114,7 @@ extern "C" {
     char GetChar(void);
 }
 
-//  Define the two functions 
+//  Define the two functions
 //  ShowChar and GetChar with C linkage.
 extern "C" char ShowChar(char ch) {
     putchar(ch);
@@ -131,7 +131,7 @@ extern "C" char GetChar(void) {
 extern "C" int errno;
 ```
 
- 함수에 둘 이상의 링크 사양이 있는 경우 두 사양은 일치해야 합니다. C 및 C++ 링크가 둘 다 있는 것으로 함수를 선언하면 오류가 발생합니다. 뿐만 아니라 함수에 대한 두 선언(링크 사양이 있는 선언과 없는 선언)이 프로그램에서 발생할 경우 링크 사양이 있는 선언이 첫 번째여야 합니다. 이미 링크 사양이 있는 함수의 모든 중복 선언에는 첫 번째 선언에서 지정된 링크가 제공됩니다. 예를 들어:
+함수에 둘 이상의 링크 사양이 있는 경우 두 사양은 일치해야 합니다. C 및 C++ 링크가 둘 다 있는 것으로 함수를 선언하면 오류가 발생합니다. 뿐만 아니라 함수에 대한 두 선언(링크 사양이 있는 선언과 없는 선언)이 프로그램에서 발생할 경우 링크 사양이 있는 선언이 첫 번째여야 합니다. 이미 링크 사양이 있는 함수의 모든 중복 선언에는 첫 번째 선언에서 지정된 링크가 제공됩니다. 예를 들어:
 
 ```cpp
 extern "C" int CFunc1();
@@ -147,8 +147,9 @@ extern "C" int CFunc2(); // Error: not the first declaration of
 ```
 
 ## <a name="see-also"></a>참고자료
- [키워드](../cpp/keywords-cpp.md)  
- [프로그램 및 링크](program-and-linkage-cpp.md)  
- [extern c에서 저장소 클래스 지정자](../c-language/extern-storage-class-specifier.md)  
- [C에서 식별자 동작](../c-language/behavior-of-identifiers.md)  
- [C 링크](../c-language/linkage.md)
+
+[키워드](../cpp/keywords-cpp.md)<br/>
+[프로그램 및 링크](program-and-linkage-cpp.md)<br/>
+[extern c에서 저장소 클래스 지정자](../c-language/extern-storage-class-specifier.md)<br/>
+[C에서 식별자 동작](../c-language/behavior-of-identifiers.md)<br/>
+[C 링크](../c-language/linkage.md)

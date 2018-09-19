@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f5458bc5dc9500ea7850833b073d40d66bfc6e2a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5d6d14cf04ae399b10cbaa393d9e9fcc7133f274
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33232358"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095250"
 ---
 # <a name="compiler-error-c2667"></a>컴파일러 오류 C2667
-'function': 숫자 오버 로드 중에 최적의 변환이 없습니다  
-  
- 오버 로드 된 함수 호출이 모호 하며 확인할 수 없습니다.  
-  
- 오버 로드 된 함수 중 하나에 함수 호출에 실제 매개 변수가 일치 하는 데 필요한 변환을 다른 오버 로드 된 함수에 필요한 변환 보다 엄격 하 게 더 나은 이어야 합니다.  
-  
- 함수 템플릿의 부분 순서 지정에 자세한 내용은 기술 자료 문서 Q240869를 참조 합니다.
+
+'function': 숫자 오버 로드 중에 최적의 변환이 없습니다
+
+오버 로드 된 함수 호출을 모호 하며 확인할 수 없습니다.
+
+변환 함수 호출 오버 로드 된 함수 중 하나에서 실제 매개 변수와 일치 하는 데 필요한 다른 오버 로드 된 함수에 필요한 변환 보다 엄격 하 게 해야 합니다.
+
+함수 템플릿의 부분 순서 지정에 자세한 내용은 기술 자료 문서 Q240869를 참조 하세요.

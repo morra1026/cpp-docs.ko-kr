@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2467c295c4f2724ec6d258e844f2bdaa84cfe29
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 83e1920ab2cb44815e9547e4f7f4a07999c1c588
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692245"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020955"
 ---
 # <a name="if-openmp"></a>if (OpenMP)
-직렬에서 또는 병렬에서 루프를 실행 해야 하는지를 지정 합니다.  
+직렬 또는 병렬로 루프를 실행할지 여부를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -32,14 +32,13 @@ ms.locfileid: "33692245"
 if(expression)  
 ```  
   
-## <a name="remarks"></a>설명  
- 다음은 각 문자에 대한 설명입니다.  
+### <a name="parameters"></a>매개 변수
   
- `expression`  
- (0이 아님)을 true로 평가 되 면 동시에 실행 하는 병렬 영역에서 코드를 발생 시키는 정수 식입니다. 식이 false (0) 이면 병렬 영역 (단일 스레드)에서 차례 대로 실행 됩니다.  
+*식*<br/>
+(0이 아닌)을 true로 평가 하는 경우 발생 하 여 코드가 병렬 지역의 병렬로 실행 하는 정수 식입니다. 식이 false (0)으로 계산 되 면 병렬 영역 (단일 스레드)를 통해 직렬 실행 됩니다.  
   
 ## <a name="remarks"></a>설명  
- `if` 다음과 같은 지시문에 적용 됩니다.  
+ `if` 다음 지시문에 적용 됩니다.  
   
 -   [parallel](../../../parallel/openmp/reference/parallel.md)  
   
@@ -47,7 +46,7 @@ if(expression)
   
 -   [섹션](../../../parallel/openmp/reference/sections-openmp.md)  
   
- 자세한 내용은 참조 [2.3 parallel 구문](../../../parallel/openmp/2-3-parallel-construct.md)합니다.  
+ 자세한 내용은 [2.3 parallel 구문](../../../parallel/openmp/2-3-parallel-construct.md)합니다.  
   
 ## <a name="example"></a>예제  
   

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 30abb265676f3e95b799f657487e293cceb2a053
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 32b6c92a34f5aa991452eca4c490d8570bd0d5b3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33270790"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086533"
 ---
 # <a name="compiler-warning-level-1-c4409"></a>컴파일러 경고(수준 1) C4409
-잘못 된 명령 크기  
-  
- 지정된 된 크기를 사용 하 여 폼 명령을 사용할 수 없습니다. 유효한 최소 크기 사용 되었습니다.
+
+명령 크기가 잘못 되었습니다
+
+명령에 지정된 된 크기를 사용 하 여 폼이 없습니다. 유효한 최소 크기 사용 되었습니다.

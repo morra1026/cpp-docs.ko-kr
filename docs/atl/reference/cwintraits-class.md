@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72c5ddc9d49488aa4609249cbbdc7842e188cc34
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: fb6ee8cd591c4a5b5a4a3701c6974849f9e3238f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760879"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069395"
 ---
 # <a name="cwintraits-class"></a>CWinTraits 클래스
 
@@ -45,10 +45,10 @@ template <DWORD t_dwStyle = 0, DWORD t_dwExStyle = 0>  class CWinTraits
 
 #### <a name="parameters"></a>매개 변수
 
-*t_dwStyle*  
+*t_dwStyle*<br/>
 기본 표준 창 스타일입니다.
 
-*t_dwExStyle*  
+*t_dwExStyle*<br/>
 기본 확장된 창 스타일입니다.
 
 ## <a name="members"></a>멤버
@@ -68,14 +68,17 @@ template <DWORD t_dwStyle = 0, DWORD t_dwExStyle = 0>  class CWinTraits
 
 ATL 창 스타일의 자주 사용 되는 조합에 대 한이 서식 파일의 세 가지 미리 정의 된 특수화를 제공합니다.
 
-`CControlWinTraits`  
-표준 컨트롤 창을 위한 것입니다. 다음 표준 스타일을 사용 합니다: WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN, 및 WS_CLIPSIBLINGS 합니다. 확장 된 스타일이 없는 경우
+- `CControlWinTraits`  
 
-`CFrameWinTraits`  
-표준 프레임 창을 위한 것입니다. 사용 하는 표준 스타일 포함: WS_OVERLAPPEDWINDOW, WS_CLIPCHILDREN, 및 WS_CLIPSIBLINGS 합니다. 사용 된 확장된 스타일을 포함 합니다: WS_EX_APPWINDOW 및 WS_EX_WINDOWEDGE 합니다.
+   표준 컨트롤 창을 위한 것입니다. 다음 표준 스타일을 사용 합니다: WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN, 및 WS_CLIPSIBLINGS 합니다. 확장 된 스타일이 없는 경우
 
-`CMDIChildWinTraits`  
-표준 MDI 자식 창을 위한 것입니다. 사용 하는 표준 스타일 포함: WS_OVERLAPPEDWINDOW "," WS_CHILD "," WS_VISIBLE "," WS_CLIPCHILDREN, "및" WS_CLIPSIBLINGS 합니다. 사용 된 확장된 스타일 포함: WS_EX_MDICHILD 합니다.
+- `CFrameWinTraits`  
+
+   표준 프레임 창을 위한 것입니다. 사용 하는 표준 스타일 포함: WS_OVERLAPPEDWINDOW, WS_CLIPCHILDREN, 및 WS_CLIPSIBLINGS 합니다. 사용 된 확장된 스타일을 포함 합니다: WS_EX_APPWINDOW 및 WS_EX_WINDOWEDGE 합니다.
+
+- `CMDIChildWinTraits`  
+
+   표준 MDI 자식 창을 위한 것입니다. 사용 하는 표준 스타일 포함: WS_OVERLAPPEDWINDOW "," WS_CHILD "," WS_VISIBLE "," WS_CLIPCHILDREN, "및" WS_CLIPSIBLINGS 합니다. 사용 된 확장된 스타일 포함: WS_EX_MDICHILD 합니다.
 
 인스턴스별 별로 설정할 다른 스타일을 허용 하는 창 클래스의 모든 인스턴스 사용에 대 한 특정 스타일 설정 되어 있는지 확인 하려는 경우 [CWinTraitsOR](../../atl/reference/cwintraitsor-class.md) 대신 합니다.
 
@@ -93,7 +96,7 @@ static DWORD GetWndStyle(DWORD dwStyle);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwStyle*  
+*dwStyle*<br/>
 창 만드는 데는 표준 스타일입니다. 하는 경우 *dwStyle* 가 0 이면 템플릿 스타일 값 (`t_dwStyle`)이 반환 됩니다. 하는 경우 *dwStyle* 는 0이 아니면 *dwStyle* 반환 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -110,7 +113,7 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwExStyle*  
+*dwExStyle*<br/>
 확장된 스타일 창 만들기에 사용 합니다. 하는 경우 *dwExStyle* 가 0 이면 템플릿 스타일 값 (`t_dwExStyle`)이 반환 됩니다. 하는 경우 *dwExStyle* 는 0이 아니면 *dwExStyle* 반환 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -119,5 +122,5 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 개요](../../atl/atl-class-overview.md)   
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [창 특성 이해](../../atl/understanding-window-traits.md)

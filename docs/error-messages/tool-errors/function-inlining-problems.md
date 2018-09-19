@@ -19,86 +19,88 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 670136a61d5991655a5d99e8257c6bcc907f2dfb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 98d0ed20881ef89264f7c162750f600c7f68412b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300230"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088139"
 ---
 # <a name="function-inlining-problems"></a>함수 인라이닝 문제
-함수 인라이닝를 사용 하는 경우 다음을 수행 해야 합니다.  
-  
--   포함 하는 헤더 파일에서 구현 된 인라인 함수를 가집니다.  
-  
--   가 인라인 처리 헤더 파일에서 ON으로 설정 합니다.  
-  
-```  
-// LNK2019_function_inline.cpp  
-// compile with: /c   
-// post-build command: lib LNK2019_function_inline.obj  
-#include <stdio.h>  
-struct _load_config_used {  
-   void Test();  
-   void Test2() { printf("in Test2\n"); }  
-};  
-  
-void _load_config_used::Test() { printf("in Test\n"); }  
-```  
-  
- 그리고  
-  
-```  
-// LNK2019_function_inline_2.cpp  
-// compile with: LNK2019_function_inline.lib  
-struct _load_config_used {  
-   void Test();  
-   void Test2();  
-};  
-  
-int main() {  
-   _load_config_used x;  
-   x.Test();  
-   x.Test2();   // LNK2019  
-}  
-```  
-  
- 사용 하는 경우는 `#pragma inline_depth` 설정 2 이상 값이 있는 컴파일러 지시문을 있는지 확인 하십시오. 값 0은 해제 인라인 처리 합니다. 또한 사용 하 고 있는지를 확인는 **/Ob1** 또는 **/Ob2** 컴파일러 옵션입니다.  
-  
- 서로 다른 모듈에서 인라인 및 인라인이 아닌 컴파일 옵션을 혼합 하면 문제가 발생할 수 있습니다. C + + 라이브러리 함수 인라이닝 설정 만들어집니다 ([/Ob1](../../build/reference/ob-inline-function-expansion.md) 또는 [/Ob2](../../build/reference/ob-inline-function-expansion.md)) 함수를 설명 하는 해당 헤더 파일에 인라이닝 (옵션 없음)을 해제 하지만, LNK2001 오류가 발생 합니다. 함수 인라인되지 코드에는 헤더 파일에서 하지만 없기 때문에 라이브러리 파일에 없는 주소가 참조를 확인할 수 없습니다.  
-  
- 마찬가지로, 인라인 함수를 사용 하는 프로젝트 함수를 정의.cpp 파일에서 헤더에서 파일 대신은 또한 LNK2019 합니다. 헤더 파일 포함 everywhere, 적절 한 것으로 간주 되지만 기능은 인라인.cpp 파일 컴파일러 통해 전달 될 때 따라서 링커가 외부 다른 모듈에서 사용 될 때 확인 되지 않은 참조로 함수를 볼 수 있습니다.  
-  
-```  
-// LNK2019_FIP.h  
-struct testclass {  
-   void PublicStatMemFunc1(void);  
-};  
-```  
-  
- 그런 다음  
-  
-```  
-// LNK2019_FIP.cpp  
-// compile with: /c  
-#include "LNK2019_FIP.h"  
-inline void testclass::PublicStatMemFunc1(void) {}  
-```  
-  
- 그런 다음  
-  
-```  
-// LNK2019_FIP_2.cpp  
-// compile with: LNK2019_FIP.cpp  
-// LNK2019 expected  
-#include "LNK2019_FIP.h"  
-int main() {  
-   testclass testclsObject;  
-  
-   // module cannot see the implementation of PublicStatMemFunc1  
-   testclsObject.PublicStatMemFunc1();  
-}  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [링커 도구 오류 LNK2019](../../error-messages/tool-errors/linker-tools-error-lnk2019.md)
+
+인라인 함수를 사용 하는 경우 다음을 수행 해야 합니다.
+
+- 인라인 함수를 포함 하는 헤더 파일에서 구현 된 경우
+
+- 가 인라인 헤더 파일에서 ON으로 설정 합니다.
+
+```
+// LNK2019_function_inline.cpp
+// compile with: /c
+// post-build command: lib LNK2019_function_inline.obj
+#include <stdio.h>
+struct _load_config_used {
+   void Test();
+   void Test2() { printf("in Test2\n"); }
+};
+
+void _load_config_used::Test() { printf("in Test\n"); }
+```
+
+그리고
+
+```
+// LNK2019_function_inline_2.cpp
+// compile with: LNK2019_function_inline.lib
+struct _load_config_used {
+   void Test();
+   void Test2();
+};
+
+int main() {
+   _load_config_used x;
+   x.Test();
+   x.Test2();   // LNK2019
+}
+```
+
+사용 중인 경우는 `#pragma inline_depth` 컴파일러 지시문에 있어야 2의 큰 값을 설정 합니다. 값 0은 해제 인라인 처리 합니다. 또한 사용 하 고 있는지를 확인 합니다 **/Ob1** 하거나 **/ob2** 컴파일러 옵션입니다.
+
+서로 다른 모듈에서 인라인 및 인라인이 아닌 컴파일 옵션을 혼합 하면 문제가 발생할 수 있습니다. C + + 라이브러리 함수 인라이닝 설정으로 만들어집니다 ([/Ob1](../../build/reference/ob-inline-function-expansion.md) 하거나 [/ob2](../../build/reference/ob-inline-function-expansion.md)) 함수를 설명 하는 해당 헤더 파일은 인라인 (옵션 제외)를 해제 하지만 LNK2001 오류가 표시 됩니다. 함수를 얻지 인라인 코드를 헤더 파일에서 있지만 없기 때문에 라이브러리 파일에 대 한 참조를 해결 하려면 주소가 없습니다.
+
+마찬가지로, 인라인 함수를 사용 하는 프로젝트 함수를 정의.cpp 파일에 파일 헤더에 LNK2019를 가져올 수도 대신 합니다. 헤더 파일은 어디에서 나 적절 한 것으로 간주 포함 되지만 함수만 인라인 컴파일러를 통해.cpp 파일을 전달 하는 경우 따라서 링커는 다른 모듈에 사용 되는 경우 외부 참조로 함수를 볼 수 있습니다.
+
+```
+// LNK2019_FIP.h
+struct testclass {
+   void PublicStatMemFunc1(void);
+};
+```
+
+그런 다음
+
+```
+// LNK2019_FIP.cpp
+// compile with: /c
+#include "LNK2019_FIP.h"
+inline void testclass::PublicStatMemFunc1(void) {}
+```
+
+그런 다음
+
+```
+// LNK2019_FIP_2.cpp
+// compile with: LNK2019_FIP.cpp
+// LNK2019 expected
+#include "LNK2019_FIP.h"
+int main() {
+   testclass testclsObject;
+
+   // module cannot see the implementation of PublicStatMemFunc1
+   testclsObject.PublicStatMemFunc1();
+}
+```
+
+## <a name="see-also"></a>참고 항목
+
+[링커 도구 오류 LNK2019](../../error-messages/tool-errors/linker-tools-error-lnk2019.md)

@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93a1c08e8e50e8ef1236b253d471c2332c4e6e03
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1479ced25a741e27a195b529b6bf8825b47ce41e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763772"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099605"
 ---
 # <a name="ipersiststorageimpl-class"></a>IPersistStorageImpl 클래스
 
@@ -42,13 +42,13 @@ ms.locfileid: "43763772"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE IPersistStorageImpl : public IPersistStorage
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `IPersistStorageImpl`합니다.
 
 ## <a name="members"></a>멤버
@@ -185,7 +185,7 @@ S_OK 반환 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[저장소 및 스트림](/windows/desktop/Stg/storages-and-streams)   
-[IPersistStreamInitImpl 클래스](../../atl/reference/ipersiststreaminitimpl-class.md)   
-[IPersistPropertyBagImpl 클래스](../../atl/reference/ipersistpropertybagimpl-class.md)   
+[저장소 및 스트림](/windows/desktop/Stg/storages-and-streams)<br/>
+[IPersistStreamInitImpl 클래스](../../atl/reference/ipersiststreaminitimpl-class.md)<br/>
+[IPersistPropertyBagImpl 클래스](../../atl/reference/ipersistpropertybagimpl-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

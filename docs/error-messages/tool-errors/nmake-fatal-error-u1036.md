@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 042bd493dcf8f59b0aa94170eaa5c2a37a2c0fb6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: aa7f94f9f584ab66b83fdec0e6f9076feb6b5d12
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316337"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46048307"
 ---
 # <a name="nmake-fatal-error-u1036"></a>NMAKE 심각한 오류 U1036
-구문 오류: '='의 왼쪽에 너무 많은 이름  
-  
- 하나의 문자열은 매크로 정의의 왼쪽에 사용할 수 있습니다.
+
+구문 오류: '=' 왼쪽에 이름이 너무 많습니다
+
+하나의 문자열은 매크로 정의의 왼쪽에 허용 됩니다.

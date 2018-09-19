@@ -16,68 +16,70 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdbd957bb1c19e28d08dd0fa5392eadd0f019756
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a8a9709b4bd6c66ec303ad61e2000ddc97976e87
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33234061"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107262"
 ---
 # <a name="compiler-error-c2707"></a>컴파일러 오류 C2707
-'identifier': 내장 함수에 대 한 잘못 된 컨텍스트  
-  
- 구조적된 예외 처리 내장 함수는 특정 컨텍스트에서 유효 하지 않습니다.  
-  
--   `_exception_code()` 예외 필터 외부 또는 `__except` 블록  
-  
--   `_exception_info()` 예외 필터 외부  
-  
--   `_abnormal_termination()` 외부는 `__finally` 블록  
-  
- 이 오류를 해결 하려면 예외 처리 내장 함수는 적절 한 컨텍스트에서 배치 됩니다 해야 합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C2707 오류가 발생 합니다.  
-  
-```  
-// C2707.cpp  
-#include <windows.h>  
-#include <stdio.h>  
-  
-LONG MyFilter(LONG excode)   
-{  
-    return (excode == EXCEPTION_ACCESS_VIOLATION ?  
-        EXCEPTION_EXECUTE_HANDLER : EXCEPTION_CONTINUE_SEARCH);   // OK  
-}  
-  
-LONG func(void)   
-{  
-    int x, y;  
-    return(GetExceptionCode() == EXCEPTION_ACCESS_VIOLATION ?  // C2707  
-             EXCEPTION_EXECUTE_HANDLER : EXCEPTION_CONTINUE_SEARCH);  
-  
-    __try   
-    {  
-        y = 0;  
-        x = 4 / y;  
-        return 0;  
-     }  
-  
-    __except(MyFilter(GetExceptionCode()))   
-    {  
-        return(GetExceptionCode() == EXCEPTION_ACCESS_VIOLATION ? // ok  
-               EXCEPTION_EXECUTE_HANDLER : EXCEPTION_CONTINUE_SEARCH);  
-    }  
-}  
-  
-int main()   
-{  
-    __try   
-    {  
-        func();  
-    } __except(EXCEPTION_EXECUTE_HANDLER)  
-    {  
-        printf_s("Caught exception\n");  
-    }  
-}  
+
+'identifier': 내장 함수의 컨텍스트가 잘못 되었습니다
+
+구조적된 예외 처리 내장 함수는 특정 컨텍스트에서 유효 하지 않습니다.
+
+- `_exception_code()` 예외 필터 외부 또는 `__except` 블록
+
+- `_exception_info()` 예외 필터 외부
+
+- `_abnormal_termination()` 외부는 `__finally` 블록
+
+이 오류를 해결 하려면 예외 처리 내장 함수는 적절 한 컨텍스트에 배치 되도록 해야 합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C2707 오류가 발생 합니다.
+
+```
+// C2707.cpp
+#include <windows.h>
+#include <stdio.h>
+
+LONG MyFilter(LONG excode)
+{
+    return (excode == EXCEPTION_ACCESS_VIOLATION ?
+        EXCEPTION_EXECUTE_HANDLER : EXCEPTION_CONTINUE_SEARCH);   // OK
+}
+
+LONG func(void)
+{
+    int x, y;
+    return(GetExceptionCode() == EXCEPTION_ACCESS_VIOLATION ?  // C2707
+             EXCEPTION_EXECUTE_HANDLER : EXCEPTION_CONTINUE_SEARCH);
+
+    __try
+    {
+        y = 0;
+        x = 4 / y;
+        return 0;
+     }
+
+    __except(MyFilter(GetExceptionCode()))
+    {
+        return(GetExceptionCode() == EXCEPTION_ACCESS_VIOLATION ? // ok
+               EXCEPTION_EXECUTE_HANDLER : EXCEPTION_CONTINUE_SEARCH);
+    }
+}
+
+int main()
+{
+    __try
+    {
+        func();
+    } __except(EXCEPTION_EXECUTE_HANDLER)
+    {
+        printf_s("Caught exception\n");
+    }
+}
 ```

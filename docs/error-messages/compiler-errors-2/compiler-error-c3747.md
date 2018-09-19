@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ca36074f33299b1a55da0fe7b42786a05dd6c49
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f1f657e6d3f64a4d8a2244ab2927a9a712c14b1a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33264118"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091675"
 ---
 # <a name="compiler-error-c3747"></a>컴파일러 오류 C3747
-기본 형식 매개 변수 누락: 매개 변수 param  
-  
- 제네릭 또는 템플릿 매개 변수 기본값을 사용 하지 않는 매개 변수가가 매개 변수 목록에 나오면 안 합니다.  
-  
- 다음 샘플에서는 C3747 오류가 생성 됩니다.  
-  
-```  
-// C3747.cpp  
-template <class T1 = int, class T2>   // C3747  
-struct MyStruct {};  
-```  
-  
- 해결 방법:  
-  
-```  
-// C3747b.cpp  
-// compile with: /c  
-template <class T1, class T2 = int>  
-struct MyStruct {};  
+
+기본 형식 매개 변수가 없습니다: 매개 변수 매개 변수
+
+기본값이 있는 제네릭 또는 템플릿 매개 변수에 기본값이 없는 매개 변수에 따라 매개 변수 목록에서 올 수 없습니다.
+
+다음 샘플에서는 C3747를 생성합니다.
+
+```
+// C3747.cpp
+template <class T1 = int, class T2>   // C3747
+struct MyStruct {};
+```
+
+해결 방법:
+
+```
+// C3747b.cpp
+// compile with: /c
+template <class T1, class T2 = int>
+struct MyStruct {};
 ```

@@ -16,29 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b4aaa53ae1d92364fad143f127ee3e7b504acdd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c4b6656753ab4a611dcb80d1473e0b44bf47a270
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33273646"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094782"
 ---
 # <a name="compiler-error-c3675"></a>컴파일러 오류 C3675
-'function': 'property' 정의 되었기 때문에 예약 되어  
-  
- Get 및 set 접근자 메서드를 권한과 컴파일러 생성 간단한 속성을 선언 하는 경우 이름이 프로그램의 범위에 표시 되어 있습니다.  컴파일러에서 생성 한 이름이 get_ 및 set_를 속성 이름 앞에 추가 하 여 구성 됩니다.  따라서 컴파일러에서 생성 된 접근자와 같은 이름 사용 하 여 함수를 선언할 수 없습니다.  
-  
- 자세한 내용은 [property](../../windows/property-cpp-component-extensions.md) 를 참조하세요.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3675 오류가 발생 합니다.  
-  
-```  
-// C3675.cpp  
-// compile with: /clr /c  
-ref struct C {  
-public:  
-   property int Size;  
-   int get_Size() { return 0; }   // C3675  
-};  
+
+'function': 'property' 정의 되어 있기 때문에 예약 되어
+
+단순 속성을 선언 하면 컴파일러 생성 get 및 set 접근자 메서드 및 해당 이름은 프로그램의 범위에 존재 합니다.  컴파일러에서 생성 된 이름은 get_ 및 set_ 속성 이름에 추가 하 여 구성 됩니다.  따라서 컴파일러에서 생성 된 접근자와 같은 이름 사용 하 여 함수를 선언할 수 없습니다.
+
+자세한 내용은 [property](../../windows/property-cpp-component-extensions.md) 를 참조하세요.
+
+## <a name="example"></a>예제
+
+다음 샘플 C3675를 생성합니다.
+
+```
+// C3675.cpp
+// compile with: /clr /c
+ref struct C {
+public:
+   property int Size;
+   int get_Size() { return 0; }   // C3675
+};
 ```

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0abfecf605dfba95643e455d7f9523ca046b3002
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 352964f92c6475aa860dc8b0a73cd9e95a8b56ed
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319236"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043835"
 ---
 # <a name="nmake-fatal-error-u1097"></a>NMAKE 심각한 오류 U1097
-파일 이름 부분 구문에는 종속 파일이 있어야합니다.  
-  
- 현재 종속성 중 하나는 명시적 또는 암시적 종속이 없습니다. 백분율을 사용 하 여 파일 이름 부분 구문 (`%`) 지정자의 현재 대상의 첫 번째 종속 구성 요소를 나타냅니다.
+
+파일 이름 부분 구문에는 종속 파일이 있어야합니다.
+
+현재 종속성을 명시적 종속 또는 암시적 종속 파일이 없습니다. 백분율을 사용 하는 파일 이름 부분 구문 (`%`) 지정자를 현재 대상의 첫 번째 종속 구성 요소를 나타냅니다.

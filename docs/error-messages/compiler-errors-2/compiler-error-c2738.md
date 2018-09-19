@@ -16,35 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f056d8f38c36011e2b9025283e46164fe53061fd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 78dad09ba06e3f78007125508aa11de1a76101a3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236731"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066622"
 ---
 # <a name="compiler-error-c2738"></a>컴파일러 오류 C2738
-'declaration': 모호 하거나 'type'의 구성원이 아닙니다  
-  
- 함수를 잘못 선언 되었습니다.  
-  
- 다음 샘플에서는 C2738 오류가 생성 됩니다.  
-  
-```  
-// C2738.cpp  
-struct A {  
-   template <class T> operator T*();  
-   // template <class T> operator T();  
-};  
-  
-template <>  
-A::operator int() {   // C2738  
-  
-// try the following line instead  
-// A::operator int*() {  
-  
-// or use the commented member declaration  
-  
-   return 0;  
-}  
+
+'declaration': 모호 하거나 't y'의 구성원이 아닙니다
+
+함수를 잘못 선언 되었습니다.
+
+다음 샘플에서는 C2738 오류가 생성 됩니다.
+
+```
+// C2738.cpp
+struct A {
+   template <class T> operator T*();
+   // template <class T> operator T();
+};
+
+template <>
+A::operator int() {   // C2738
+
+// try the following line instead
+// A::operator int*() {
+
+// or use the commented member declaration
+
+   return 0;
+}
 ```

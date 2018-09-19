@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd865772b3629939306d835728e5033da763eaa9
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 73d6966844ae8dc6c41350aad57ad310310b3a32
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895268"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715003"
 ---
 # <a name="txt-files-as-linker-input"></a>링커 입력 파일로 사용하는 .Txt 파일
 
@@ -29,5 +29,5 @@ ms.locfileid: "43895268"
 
 ## <a name="see-also"></a>참고 항목
 
-[LINK 입력된 파일](../../build/reference/link-input-files.md)   
+[LINK 입력 파일](../../build/reference/link-input-files.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

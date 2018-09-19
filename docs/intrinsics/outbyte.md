@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 70aa643d7d8f81cca0ff74a3016badd6551c11a0
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: cff8c2e8abfff713b4044ce58104c58b0a96da12
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42538757"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719272"
 ---
 # <a name="outbyte"></a>__outbyte
 **Microsoft 전용**  
@@ -39,11 +39,11 @@ void __outbyte(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `Port`  
- 데이터를 보낼 포트입니다.  
+*포트*<br/>
+[in] 데이터를 보낼 포트입니다.  
   
- [in] `Data`  
- 지정된 된 포트에 보내도록 바이트입니다.  
+*Data*<br/>
+[in] 지정된 된 포트에 보내도록 바이트입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   

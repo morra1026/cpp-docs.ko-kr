@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72f72cddad59d4768029bc682181ce55e7537c44
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1fb0e5e33ee7f2a82d56c26933ef98c8e8688a4a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33166548"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044043"
 ---
 # <a name="compiler-error-c2182"></a>컴파일러 오류 C2182
-'identifier': 'void' 형식을 잘못 사용했습니다.  
-  
- 변수가 선언된 형식 `void`입니다.  
-  
- 다음 샘플에서는 C2182를 생성합니다.  
-  
-```  
-// C2182.cpp  
-// compile with: /c  
-int main() {  
-   int i = 10;  
-   void &ir = i;   // C2182 cannot have a reference to type void  
-   int &ir = i;   // OK  
-}  
+
+'identifier': 'void' 형식을 잘못 사용했습니다.
+
+변수가 선언된 형식 `void`입니다.
+
+다음 샘플에서는 C2182를 생성합니다.
+
+```
+// C2182.cpp
+// compile with: /c
+int main() {
+   int i = 10;
+   void &ir = i;   // C2182 cannot have a reference to type void
+   int &ir = i;   // OK
+}
 ```

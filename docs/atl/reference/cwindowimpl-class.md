@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3582f3fff0ee683889e1b0403554c59835293889
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 39a0938f6faadc05b2fdb3d716417a56512768b7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756108"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084561"
 ---
 # <a name="cwindowimpl-class"></a>CWindowImpl 클래스
 
@@ -45,19 +45,19 @@ ms.locfileid: "43756108"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T, class TBase = CWindow, class TWinTraits = CControlWinTraits>  
+template <class T, class TBase = CWindow, class TWinTraits = CControlWinTraits>
 class ATL_NO_VTABLE CWindowImpl : public CWindowImplBaseT<TBase, TWinTraits>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 `CWindowImpl`에서 파생된 새 클래스입니다.
 
-*TBase*  
+*TBase*<br/>
 클래스의 기본 클래스입니다. 기본 클래스는 기본적으로 [CWindow](../../atl/reference/cwindow-class.md)합니다.
 
-*TWinTraits*  
+*TWinTraits*<br/>
 A [traits 클래스](../../atl/understanding-window-traits.md) 창 스타일을 정의 하는 합니다. 기본값은 `CControlWinTraits`입니다.
 
 ## <a name="members"></a>멤버
@@ -153,25 +153,25 @@ HWND Create(
 
 ### <a name="parameters"></a>매개 변수
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] 부모 또는 소유자 창에 대 한 핸들입니다.
 
-*rect*  
+*rect*<br/>
 [in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 창의 위치를 지정 하는 구조입니다. `RECT` 포인터 또는 참조로 전달할 수 있습니다.
 
-*szWindowName*  
+*szWindowName*<br/>
 [in] 창의 이름을 지정합니다. 기본값은 NULL입니다.
 
-*dwStyle*  
+*dwStyle*<br/>
 [in] 창 스타일입니다. 이 값은 창에 대 한 특성 클래스에서 제공 하는 스타일을 사용 하 여 결합 됩니다. 기본 값을 특성 클래스를 완전히 제어할 스타일을 제공합니다. 가능한 값 목록을 참조 하세요 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK에 있습니다.
 
-*dwExStyle*  
+*dwExStyle*<br/>
 [in] 확장된 창 스타일입니다. 이 값은 창에 대 한 특성 클래스에서 제공 하는 스타일을 사용 하 여 결합 됩니다. 기본 값을 특성 클래스를 완전히 제어할 스타일을 제공합니다. 가능한 값 목록을 참조 하세요 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK에 있습니다.
 
-*MenuOrID*  
+*MenuOrID*<br/>
 [in] 자식 창의 창 식별자입니다. 최상위 창에 대 한 메뉴 창에 대 한 처리 합니다. 기본값은 **0U**합니다.
 
-*lpCreateParam*  
+*lpCreateParam*<br/>
 [in] 창 만들기 데이터에 대 한 포인터입니다. 에 마지막 매개 변수에 대 한 설명을 참조 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -205,13 +205,13 @@ LRESULT DefWindowProc();
 
 ### <a name="parameters"></a>매개 변수
 
-*uMsg*  
+*uMsg*<br/>
 [in] 창으로 전송 하는 메시지입니다.
 
-*wParam*  
+*wParam*<br/>
 [in] 추가 메시지 관련 정보입니다.
 
-*lParam*  
+*lParam*<br/>
 [in] 추가 메시지 관련 정보입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -300,7 +300,7 @@ virtual void OnFinalMessage(HWND hWnd);
 
 ### <a name="parameters"></a>매개 변수
 
-*hWnd*  
+*hWnd*<br/>
 [in] 소멸 될 창의 핸들입니다.
 
 ### <a name="remarks"></a>설명
@@ -317,7 +317,7 @@ BOOL SubclassWindow(HWND hWnd);
 
 ### <a name="parameters"></a>매개 변수
 
-*hWnd*  
+*hWnd*<br/>
 [in] 서브클래싱 되 고 창에 대 한 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -357,16 +357,16 @@ static LRESULT CALLBACK WindowProc(
 
 ### <a name="parameters"></a>매개 변수
 
-*hWnd*  
+*hWnd*<br/>
 [in] 창에 대 한 핸들입니다.
 
-*uMsg*  
+*uMsg*<br/>
 [in] 창으로 전송 하는 메시지입니다.
 
-*wParam*  
+*wParam*<br/>
 [in] 추가 메시지 관련 정보입니다.
 
-*lParam*  
+*lParam*<br/>
 [in] 추가 메시지 관련 정보입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -387,6 +387,6 @@ static LRESULT CALLBACK WindowProc(
 
 ## <a name="see-also"></a>참고 항목
 
-[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)   
-[CComControl 클래스](../../atl/reference/ccomcontrol-class.md)   
+[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
+[CComControl 클래스](../../atl/reference/ccomcontrol-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

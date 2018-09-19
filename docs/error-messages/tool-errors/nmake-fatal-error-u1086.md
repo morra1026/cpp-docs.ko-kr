@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac9d314f523706ae6b4a18070f51341eba43984e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 300dac81a55a07f163f0fe6bb01646403517b554
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317205"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107657"
 ---
 # <a name="nmake-fatal-error-u1086"></a>NMAKE 심각한 오류 U1086
-**유추 규칙 종속 파일을 사용할 수 없습니다.**  
-  
- 콜론 (**:**)에 유추 규칙을 따라야 합니다 다음 중 하나가:  
-  
--   줄 바꿈 문자  
-  
--   세미콜론 (**;**), 뒤에 명령이 오는  
-  
--   숫자 기호 (**#**), 뒤에 주석이 오는
+
+**유추 규칙 종속 파일을 사용할 수 없습니다.**
+
+콜론 (**:**)을 유추 규칙 뒤에 야 다음 중 하나에서:
+
+- 줄 바꿈 문자
+
+- 세미콜론 (**;**), 명령에 올 수 있습니다.는
+
+- 숫자 기호 (**#**), 메모에 올 수 있습니다는

@@ -16,44 +16,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57bad3a63e910918b6a22b6263f0df3faca0dcd1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f04035f3c5f0acd77fc197cbef3d2ab507feb0d4
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374728"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710192"
 ---
 # <a name="module-definition-def-files"></a>모듈 정의(.Def) 파일
-모듈 정의 (.def) 파일 링커 내보내기, 특성 및 연결 될 프로그램에 대 한 기타 정보에 대 한 정보를 제공 합니다. .Def 파일 DLL을 빌드할 때 가장 유용 합니다. 있기 때문에 [링커 옵션](../../build/reference/linker-options.md) 사용할 수 있는 모듈 정의 문의 대신.def 파일은 일반적으로 불필요 합니다. 사용할 수도 있습니다 [__declspec (dllexport)](../../build/exporting-from-a-dll-using-declspec-dllexport.md) 지정 하는 방법으로 함수를 내보냈습니다.  
-  
- 링커 단계.def 파일을 호출할 수 있습니다는 [/DEF (모듈 정의 파일 지정)](../../build/reference/def-specify-module-definition-file.md) 링커 옵션입니다.  
-  
- 내보내기가 없는.exe 파일을 작성 하는.def 파일을 사용 하 여 출력 파일 크고 속도가 느립니다 로드가 생성 됩니다.  
-  
- 예를 들어 참조 [DLL를 사용 하 여 DEF 파일에서 내보내는](../../build/exporting-from-a-dll-using-def-files.md)합니다.  
-  
- 자세한 내용은 다음 섹션을 참조 하십시오.  
-  
--   [모듈 정의 문의 규칙](../../build/reference/rules-for-module-definition-statements.md)  
-  
--   [EXPORTS](../../build/reference/exports.md)  
-  
--   [HEAPSIZE](../../build/reference/heapsize.md)  
-  
--   [LIBRARY](../../build/reference/library.md)  
-  
--   [이름](../../build/reference/name-c-cpp.md)  
-  
--   [섹션](../../build/reference/sections-c-cpp.md)  
-  
--   [STACKSIZE](../../build/reference/stacksize.md)  
-  
--   [STUB](../../build/reference/stub.md)  
-  
--   [버전](../../build/reference/version-c-cpp.md)  
-  
--   [예약 된 단어](../../build/reference/reserved-words.md)  
-  
-## <a name="see-also"></a>참고 항목  
- [C/C++ 빌드 참조](../../build/reference/c-cpp-building-reference.md)   
- [링커 옵션](../../build/reference/linker-options.md)  
+
+모듈 정의 (.def) 파일 내보내기, 특성 및 연결 될 프로그램에 대 한 기타 정보에 대 한 정보를 사용 하 여 링커를 제공 합니다. .Def 파일을 DLL을 빌드할 때 가장 유용 합니다. 있기 때문에 [링커 옵션](../../build/reference/linker-options.md) 사용할 수 있는 모듈 정의 문의 대신.def 파일 일반적으로 필요 하지 않습니다. 사용할 수도 있습니다 [__declspec (dllexport)](../../build/exporting-from-a-dll-using-declspec-dllexport.md) 지정 하는 방법으로 함수를 내보냈습니다.
+
+사용 하 여 링커 단계.def 파일을 호출할 수 있습니다 합니다 [/DEF (모듈 정의 파일 지정)](../../build/reference/def-specify-module-definition-file.md) 링커 옵션입니다.
+
+내보내기가 없는.exe 파일을 작성 하는.def 파일을 사용 하 여 출력 파일 크고 느린 로드를 생성 됩니다.
+
+예를 들어 참조 [DLL를 사용 하 여 DEF 파일에서 내보내는](../../build/exporting-from-a-dll-using-def-files.md)합니다.
+
+자세한 내용은 다음 섹션을 참조 하세요.
+
+- [모듈 정의 문의 규칙](../../build/reference/rules-for-module-definition-statements.md)
+
+- [EXPORTS](../../build/reference/exports.md)
+
+- [HEAPSIZE](../../build/reference/heapsize.md)
+
+- [LIBRARY](../../build/reference/library.md)
+
+- [이름](../../build/reference/name-c-cpp.md)
+
+- [섹션](../../build/reference/sections-c-cpp.md)
+
+- [STACKSIZE](../../build/reference/stacksize.md)
+
+- [STUB](../../build/reference/stub.md)
+
+- [버전](../../build/reference/version-c-cpp.md)
+
+- [예약어](../../build/reference/reserved-words.md)
+
+## <a name="see-also"></a>참고 항목
+
+[C/C++ 빌드 참조](../../build/reference/c-cpp-building-reference.md)<br/>
+[링커 옵션](../../build/reference/linker-options.md)

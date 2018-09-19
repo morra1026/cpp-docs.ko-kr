@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b02b1d9d06706c70478d958dd3c2af8dbc9c2c03
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e4c11a97dd99515ff7623b77ff31de5fb8577b5d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299177"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040624"
 ---
 # <a name="linker-tools-error-lnk1241"></a>링커 도구 오류 LNK1241
-이미 지정 된 ' 리소스 파일' 리소스 파일  
-  
- 실행 하는 경우이 오류는 발생 **cvtres** 명령줄에서 직접 전달 하면.obj 파일 및 링커에 뿐만 아니라 다른.res 파일입니다.  
-  
- 전달 여러.res 파일을 지정 하려면 모든.res 파일로 링커 하지 내에서 만들어진.obj 파일에서 **cvtres**합니다.
+
+리소스 ' file '리소스 파일 이미 지정
+
+실행 하는 경우이 오류가 생성 됩니다 **cvtres** 명령줄에서 수동으로 전달 하면.obj 파일을 링커에 또한 다른.res 파일입니다.
+
+전달 여러.res 파일을 지정 하려면 모든.res 파일로 링커 하지 내에서 만들어진.obj 파일에서 **cvtres**합니다.

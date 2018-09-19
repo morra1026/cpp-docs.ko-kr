@@ -128,12 +128,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0e5fe8c9f9eb5f4d09bac28c4ffed3eda95454c
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 5528e8eb8c7eeb54e221ca6c6167246a6491d7b2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540109"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720072"
 ---
 # <a name="cwinappex-class"></a>CWinAppEx 클래스
 `CWinAppEx` 응용 프로그램 상태를 처리, 상태를 레지스트리에 저장, 레지스트리에서 상태를 로드, 응용 프로그램 관리자를 초기화 및 이러한 동일한 응용 프로그램 관리자에 대 한 링크를 제공 합니다.  
@@ -219,7 +219,7 @@ class CWinAppEx : public CWinApp
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CWinAppEx::m_bForceImageReset](#m_bforceimagereset)|프레임 창 도구 모음을 포함 하는 로드 될 때 프레임 워크에서 모든 도구 모음 이미지를 다시는 여부를 지정 합니다.|  
   
@@ -254,8 +254,8 @@ virtual BOOL CleanState(LPCTSTR lpszSectionName=NULL);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszSectionName*  
- 레지스트리 키의 경로 포함 하는 문자열입니다.  
+*lpszSectionName*<br/>
+[in] 레지스트리 키의 경로 포함 하는 문자열입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -271,8 +271,8 @@ CWinAppEx(BOOL bResourceSmartUpdate = FALSE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bResourceSmartUpdate*  
- Workspace 개체 검색 하 고 리소스 업데이트를 처리 해야 하는지 여부를 지정 하는 부울 매개 변수입니다.  
+*bResourceSmartUpdate*<br/>
+[in] Workspace 개체 검색 하 고 리소스 업데이트를 처리 해야 하는지 여부를 지정 하는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  `CWinAppEx` 클래스 초기화 메서드가 레지스트리에 응용 프로그램 정보를 로드 및 저장에 대 한 기능을 제공 하 고 전역 응용 프로그램 설정을 제어 합니다. 있도록와 같은 전역 관리자를 사용 하는 [CKeyboardManager 클래스](../../mfc/reference/ckeyboardmanager-class.md) 하며 [CUserToolsManager 클래스](../../mfc/reference/cusertoolsmanager-class.md)합니다. 각 응용 프로그램에는 하나의 인스턴스만 가질 수는 `CWinAppEx` 클래스입니다.  
@@ -285,8 +285,8 @@ void EnableLoadWindowPlacement(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 응용 프로그램의 초기 크기와 주 프레임 창 위치 레지스트리에서 로드 하는지 여부를 지정 합니다.  
+*bEnable*<br/>
+[in] 응용 프로그램의 초기 크기와 주 프레임 창 위치 레지스트리에서 로드 하는지 여부를 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로 주 프레임의 위치와 크기는 다른 응용 프로그램 설정과 함께 레지스트리에서 로드 됩니다. 하는 동안 이런 [CWinAppEx::LoadState](#loadstate)합니다. 레지스트리에서 초기 창 배치를 로드 하려면이 메서드를 호출 *bEnable* FALSE로 설정 합니다.  
@@ -302,14 +302,14 @@ BOOL EnableTearOffMenus(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszRegEntry*  
- 레지스트리 키의 경로 포함 하는 문자열입니다. 이 레지스트리 키를 사용 하 여 분리 메뉴에 대 한 정보를 저장 하는 응용 프로그램.  
+*lpszRegEntry*<br/>
+[in] 레지스트리 키의 경로 포함 하는 문자열입니다. 이 레지스트리 키를 사용 하 여 분리 메뉴에 대 한 정보를 저장 하는 응용 프로그램.  
   
- [in] *uiCmdFirst*  
- 첫 번째 삭제 메뉴 id입니다.  
+*uiCmdFirst*<br/>
+[in] 첫 번째 삭제 메뉴 id입니다.  
   
- [in] *uiCmdLast*  
- 메뉴 마지막 삭제 id입니다.  
+*uiCmdLast*<br/>
+[in] 메뉴 마지막 삭제 id입니다.  
   
 ### <a name="return-value"></a>반환 값  
  True는 `CMenuTearOffManager` 만들어지고 초기화 되었습니다. FALSE 오류가 발생 하거나는 `CMenuTearOffManager` 이미 있습니다.  
@@ -331,23 +331,23 @@ BOOL EnableUserTools(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmdToolsDummy*  
- 프레임 워크는 사용자 도구 메뉴의 명령 ID에 대 한 자리 표시자로 사용 하는 부호 없는 정수입니다.  
+*uiCmdToolsDummy*<br/>
+[in] 프레임 워크는 사용자 도구 메뉴의 명령 ID에 대 한 자리 표시자로 사용 하는 부호 없는 정수입니다.  
   
- [in] *uiCmdFirst*  
- 첫 번째 사용자 도구 명령에 대 한 명령 ID입니다.  
+*uiCmdFirst*<br/>
+[in] 첫 번째 사용자 도구 명령에 대 한 명령 ID입니다.  
   
- [in] *uiCmdLast*  
- 마지막 사용자 도구 명령에 대 한 명령 ID입니다.  
+*uiCmdLast*<br/>
+[in] 마지막 사용자 도구 명령에 대 한 명령 ID입니다.  
   
- [in] *pToolRTC*  
- 클래스는 `CUserToolsManager` 개체가 사용 하 여 새 사용자 도구를 만듭니다.  
+*pToolRTC*<br/>
+[in] 클래스는 `CUserToolsManager` 개체가 사용 하 여 새 사용자 도구를 만듭니다.  
   
- [in] *uArgMenuID*  
- 인수 메뉴 id입니다.  
+*uArgMenuID*<br/>
+[in] 인수 메뉴 id입니다.  
   
- [in] *uInitDirMenuID*  
- 초기 도구 디렉터리에 대 한 메뉴 ID입니다.  
+*uInitDirMenuID*<br/>
+[in] 초기 도구 디렉터리에 대 한 메뉴 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드를 만들고 초기화 하는 경우 TRUE를 `CUserToolsManager` 개체 FALSE 경우 또는 메서드가 실패 하는 경우는 `CUserToolsManager` 개체가 이미 있습니다.  
@@ -381,14 +381,14 @@ BOOL GetBinary(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszEntry*  
- 레지스트리 키의 이름을 포함 하는 문자열입니다.  
+*lpszEntry*<br/>
+[in] 레지스트리 키의 이름을 포함 하는 문자열입니다.  
   
- [out] *ppData*  
- 메서드는 이진 데이터를 채우는 버퍼에 대 한 포인터입니다.  
+*ppData*<br/>
+[out] 메서드는 이진 데이터를 채우는 버퍼에 대 한 포인터입니다.  
   
- [out] *pBytes*  
- 읽은 바이트 수를 쓴 메서드를 사용 하는 부호 없는 정수에 대 한 포인터입니다.  
+*pBytes*<br/>
+[out] 읽은 바이트 수를 쓴 메서드를 사용 하는 부호 없는 정수에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 FALSE이 고, 그렇지 합니다.  
@@ -452,11 +452,11 @@ int GetInt(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszEntry*  
- 레지스트리 항목의 이름을 포함 하는 문자열입니다.  
+*lpszEntry*<br/>
+[in] 레지스트리 항목의 이름을 포함 하는 문자열입니다.  
   
- [in] *n 기본*  
- 지정 된 레지스트리 항목이 존재 하지 않는 경우 메서드가 반환 하는 기본값입니다.  
+*n 기본*<br/>
+[in] 지정 된 레지스트리 항목이 존재 하지 않는 경우 메서드가 반환 하는 기본값입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하는 경우 레지스트리 데이터 그렇지 않으면 *n 기본*입니다.  
@@ -502,11 +502,11 @@ BOOL GetObject(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszEntry*  
- 레지스트리 항목의 상대 경로 포함 하는 문자열입니다.  
+*lpszEntry*<br/>
+[in] 레지스트리 항목의 상대 경로 포함 하는 문자열입니다.  
   
- [out] *obj*  
- 에 대 한 참조를 `CObject`입니다. 이 참조를 사용 하 여 레지스트리 데이터를 저장 하는 메서드.  
+*obj*<br/>
+[out] 에 대 한 참조를 `CObject`입니다. 이 참조를 사용 하 여 레지스트리 데이터를 저장 하는 메서드.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -537,8 +537,8 @@ CString GetRegSectionPath(LPCTSTR szSectionAdd = _T(""));
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *szSectionAdd*  
- 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
+*szSectionAdd*<br/>
+[in] 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `CString` 레지스트리 키의 절대 경로 포함 하는 합니다.  
@@ -558,17 +558,17 @@ BOOL GetSectionBinary(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszSubSection*  
- 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
+*lpszSubSection*<br/>
+[in] 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
   
- [in] *lpszEntry*  
- 읽은 값을 포함 하는 문자열입니다.  
+*lpszEntry*<br/>
+[in] 읽은 값을 포함 하는 문자열입니다.  
   
- [out] *ppData*  
- 메서드는 데이터를 저장 하는 위치는 버퍼에 대 한 포인터입니다.  
+*ppData*<br/>
+[out] 메서드는 데이터를 저장 하는 위치는 버퍼에 대 한 포인터입니다.  
   
- [out] *pBytes*  
- 부호 없는 정수에 대 한 포인터입니다. 메서드 기록의 크기 *ppData* 이 매개 변수입니다.  
+*pBytes*<br/>
+[out] 부호 없는 정수에 대 한 포인터입니다. 메서드 기록의 크기 *ppData* 이 매개 변수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 TRUE이고, 실패하면 FALSE입니다.  
@@ -589,14 +589,14 @@ int GetSectionInt(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszSubSection*  
- 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
+*lpszSubSection*<br/>
+[in] 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
   
- [in] *lpszEntry*  
- 읽은 값을 포함 하는 문자열입니다.  
+*lpszEntry*<br/>
+[in] 읽은 값을 포함 하는 문자열입니다.  
   
- [in] *n 기본*  
- 지정된 된 값이 없는 경우 반환할 기본값입니다.  
+*n 기본*<br/>
+[in] 지정된 된 값이 없는 경우 반환할 기본값입니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정 된 레지스트리 값에 저장 된 정수 데이터 *n 기본* 데이터가 없는 경우.  
@@ -617,14 +617,14 @@ BOOL GetSectionObject(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszSubSection*  
- 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
+*lpszSubSection*<br/>
+[in] 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
   
- [in] *lpszEntry*  
- 읽은 값을 포함 하는 문자열입니다.  
+*lpszEntry*<br/>
+[in] 읽은 값을 포함 하는 문자열입니다.  
   
- [out] *obj*  
- 에 대 한 참조를 `CObject`입니다. 이 메서드를 사용 하 여 `CObject` 레지스트리 데이터를 저장 합니다.  
+*obj*<br/>
+[out] 에 대 한 참조를 `CObject`입니다. 이 메서드를 사용 하 여 `CObject` 레지스트리 데이터를 저장 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -645,14 +645,14 @@ CString GetSectionString(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszSubSection*  
- 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
+*lpszSubSection*<br/>
+[in] 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
   
- [in] *lpszEntry*  
- 읽은 값을 포함 하는 문자열입니다.  
+*lpszEntry*<br/>
+[in] 읽은 값을 포함 하는 문자열입니다.  
   
- [in] *lpszDefault*  
- 지정된 된 값이 없는 경우 반환할 기본값입니다.  
+*lpszDefault*<br/>
+[in] 지정된 된 값이 없는 경우 반환할 기본값입니다.  
   
 ### <a name="return-value"></a>반환 값  
  데이터가 있으면 지정 된 레지스트리 값에 저장 된 문자열 데이터 그렇지 않으면 *lpszDefault*합니다.  
@@ -685,11 +685,11 @@ CString GetString(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszEntry*  
- 레지스트리 키의 이름을 포함 하는 문자열  
+*lpszEntry*<br/>
+[in] 레지스트리 키의 이름을 포함 하는 문자열  
   
- [in] *lpzDefault*  
- 지정 된 레지스트리 항목이 존재 하지 않는 경우 메서드가 반환 하는 기본값입니다.  
+*lpzDefault*<br/>
+[in] 지정 된 레지스트리 항목이 존재 하지 않는 경우 메서드가 반환 하는 기본값입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공할 경우 레지스트리에 저장 된 문자열 데이터 *lpszDefault* 그렇지 않은 경우.  
@@ -819,8 +819,8 @@ BOOL IsStateExists(LPCTSTR lpszSectionName);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszSectionName*  
- 레지스트리 키의 경로 포함 하는 문자열입니다.  
+*lpszSectionName*<br/>
+[in] 레지스트리 키의 경로 포함 하는 문자열입니다.  
   
 ### <a name="return-value"></a>반환 값  
  레지스트리에서; 키를 0이 아닌 그렇지 않으면 0입니다.  
@@ -862,14 +862,14 @@ virtual BOOL LoadState(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pFrame*  
- 프레임 창 개체에 대 한 포인터입니다. 메서드가이 프레임 창에 상태 정보를 레지스트리에 적용 됩니다.  
+*pFrame*<br/>
+[in] 프레임 창 개체에 대 한 포인터입니다. 메서드가이 프레임 창에 상태 정보를 레지스트리에 적용 됩니다.  
   
- [in] *lpszSectionName*  
- 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
+*lpszSectionName*<br/>
+[in] 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
   
- [in] *pFrameImpl*  
- 에 대 한 포인터를 `CFrameImpl` 개체입니다. 메서드가이 프레임 창에 상태 정보를 레지스트리에 적용 됩니다.  
+*pFrameImpl*<br/>
+[in] 에 대 한 포인터를 `CFrameImpl` 개체입니다. 메서드가이 프레임 창에 상태 정보를 레지스트리에 적용 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -892,14 +892,14 @@ virtual BOOL LoadWindowPlacement(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *rectNormalPosition*  
- 복원된 위치에 있을 때 주 프레임 창의 좌표를 포함 하는 사각형입니다.  
+*rectNormalPosition*<br/>
+[out] 복원된 위치에 있을 때 주 프레임 창의 좌표를 포함 하는 사각형입니다.  
   
- [out] *nFlags*  
- 최소화 된 창 및 운영 체제 최소화 및 복원 된 창 간에 전환 하는 방법의 위치를 제어 하는 플래그입니다.  
+*nFlags*<br/>
+[out] 최소화 된 창 및 운영 체제 최소화 및 복원 된 창 간에 전환 하는 방법의 위치를 제어 하는 플래그입니다.  
   
- [out] *nShowCmd*  
- 창의 표시 상태를 지정 하는 정수입니다. 가능한 값에 대 한 자세한 내용은 참조 하세요. [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow)합니다.  
+*nShowCmd*<br/>
+[out] 창의 표시 상태를 지정 하는 정수입니다. 가능한 값에 대 한 자세한 내용은 참조 하세요. [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow)합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -929,11 +929,11 @@ virtual void OnAppContextHelp(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndControl*  
- 사용자는에 대 한 상황에 맞는 도움말을 호출 하는 창 개체에 대 한 포인터입니다.  
+*pWndControl*<br/>
+[in] 사용자는에 대 한 상황에 맞는 도움말을 호출 하는 창 개체에 대 한 포인터입니다.  
   
- [in] *dwHelpIDArray*  
- 예약 된 값입니다.  
+*dwHelpIDArray]*<br/>
+[in] 예약 된 값입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 나중에 사용할 현재 예약 되어 있습니다. 기본 구현은 아무 작업도 수행 하지 하 고 현재 호출 되지 않기 프레임 워크에서.  
@@ -946,8 +946,8 @@ virtual void OnClosingMainFrame(CFrameImpl* pFrameImpl);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pFrameImpl*  
- 에 대 한 포인터를 `CFrameImpl` 개체입니다.  
+*pFrameImpl*<br/>
+[in] 에 대 한 포인터를 `CFrameImpl` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  상태를 저장 하는이 메서드의 기본 구현은 *pFrameImpl*합니다.  
@@ -962,11 +962,11 @@ virtual BOOL OnViewDoubleClick(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- 파생 된 개체에 대 한 포인터를 [CView 클래스](../../mfc/reference/cview-class.md)합니다.  
+*pWnd*<br/>
+[in] 파생 된 개체에 대 한 포인터를 [CView 클래스](../../mfc/reference/cview-class.md)합니다.  
   
- [in] *iViewId*  
- 뷰 ID  
+*iViewId*<br/>
+[in] 뷰 ID  
   
 ### <a name="return-value"></a>반환 값  
  프레임 워크는 명령에서 발견 한 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1016,8 +1016,8 @@ virtual BOOL ReloadWindowPlacement(CFrameWnd* pFrame);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pFrame*  
- 프레임 창에 대 한 포인터입니다.  
+*pFrame*<br/>
+[in] 프레임 창에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 0이 아닌 값 되었거나 실패 한 부하가 로드할 데이터가 없는 경우 0입니다.  
@@ -1060,14 +1060,14 @@ BOOL SaveState(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszSectionName*  
- 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
+*lpszSectionName*<br/>
+[in] 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
   
- [in] *pFrameImpl*  
- 에 대 한 포인터를 `CFrameImpl` 개체입니다. 이 프레임은 Windows 레지스트리에 저장 됩니다.  
+*pFrameImpl*<br/>
+[in] 에 대 한 포인터를 `CFrameImpl` 개체입니다. 이 프레임은 Windows 레지스트리에 저장 됩니다.  
   
- [in] *pFrame*  
- 프레임 창 개체에 대 한 포인터입니다. 이 프레임은 Windows 레지스트리에 저장 됩니다.  
+*pFrame*<br/>
+[in] 프레임 창 개체에 대 한 포인터입니다. 이 프레임은 Windows 레지스트리에 저장 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 FALSE이 고, 그렇지 합니다.  
@@ -1085,8 +1085,8 @@ LPCTSTR SetRegistryBase(LPCTSTR lpszSectionName = NULL);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszSectionName*  
- 레지스트리 키의 경로 포함 하는 문자열입니다.  
+*lpszSectionName*<br/>
+[in] 레지스트리 키의 경로 포함 하는 문자열입니다.  
   
 ### <a name="return-value"></a>반환 값  
  기본 레지스트리 위치의 경로 포함 하는 문자열입니다.  
@@ -1105,14 +1105,14 @@ virtual BOOL ShowPopupMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiMenuResId*  
- 메뉴 리소스 id입니다.  
+*uiMenuResId*<br/>
+[in] 메뉴 리소스 id입니다.  
   
- [in] *지점*  
- A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 화면 좌표에서 메뉴의 위치를 지정 하 합니다.  
+*지점*<br/>
+[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 화면 좌표에서 메뉴의 위치를 지정 하 합니다.  
   
- [in] *pWnd*  
- 팝업 메뉴를 소유 하는 창에 대 한 포인터입니다.  
+*pWnd*<br/>
+[in] 팝업 메뉴를 소유 하는 창에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  팝업 메뉴 성공적으로 표시 되 면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -1133,14 +1133,14 @@ virtual BOOL StoreWindowPlacement(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nFlags*  
- 최소화 된 창 및 운영 체제 최소화 및 복원 된 창 간에 전환 하는 방법의 위치를 제어 하는 플래그입니다.  
+*nFlags*<br/>
+[in] 최소화 된 창 및 운영 체제 최소화 및 복원 된 창 간에 전환 하는 방법의 위치를 제어 하는 플래그입니다.  
   
- [in] *nShowCmd*  
- 창의 표시 상태를 지정 하는 정수입니다. 가능한 값에 대 한 자세한 내용은 참조 하세요. [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow)합니다.  
+*nShowCmd*<br/>
+[in] 창의 표시 상태를 지정 하는 정수입니다. 가능한 값에 대 한 자세한 내용은 참조 하세요. [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow)합니다.  
   
- [in] *rectNormalPosition*  
- 복원된 상태에 있을 때 주 프레임 창의 좌표를 포함 하는 사각형입니다.  
+*rectNormalPosition*<br/>
+[in] 복원된 상태에 있을 때 주 프레임 창의 좌표를 포함 하는 사각형입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -1161,14 +1161,14 @@ BOOL WriteBinary(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszEntry*  
- 레지스트리 키의 이름을 포함 하는 문자열입니다.  
+*lpszEntry*<br/>
+[in] 레지스트리 키의 이름을 포함 하는 문자열입니다.  
   
- [in] *pData*  
- 데이터 저장소입니다.  
+*pData*<br/>
+[in] 데이터 저장소입니다.  
   
- [in] *nBytes*  
- 크기인 *pData* (바이트)에서입니다.  
+*nBytes*<br/>
+[in] 크기인 *pData* (바이트)에서입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1188,11 +1188,11 @@ BOOL WriteInt(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszEntry*  
- 레지스트리 키의 이름을 포함 하는 문자열입니다.  
+*lpszEntry*<br/>
+[in] 레지스트리 키의 이름을 포함 하는 문자열입니다.  
   
- [in] *n 값*  
- 데이터 저장소입니다.  
+*n 값*<br/>
+[in] 데이터 저장소입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1212,11 +1212,11 @@ BOOL WriteObject(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszEntry*  
- 설정할 값을 포함 하는 문자열입니다.  
+*lpszEntry*<br/>
+[in] 설정할 값을 포함 하는 문자열입니다.  
   
- [in] *obj*  
- 에 대 한 참조 `CObject` 메서드를 저장 하는 데이터입니다.  
+*obj*<br/>
+[in] 에 대 한 참조 `CObject` 메서드를 저장 하는 데이터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1236,17 +1236,17 @@ BOOL WriteSectionBinary(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszSubSection*  
- 레지스트리 키의 이름을 포함 하는 문자열  
+*lpszSubSection*<br/>
+[in] 레지스트리 키의 이름을 포함 하는 문자열  
   
- [in] *lpszEntry*  
- 설정할 값을 포함 하는 문자열입니다.  
+*lpszEntry*<br/>
+[in] 설정할 값을 포함 하는 문자열입니다.  
   
- [in] *pData*  
- 레지스트리에 쓸 데이터입니다.  
+*pData*<br/>
+[in] 레지스트리에 쓸 데이터입니다.  
   
- [in] *nBytes*  
- 크기인 *pData* (바이트)에서입니다.  
+*nBytes*<br/>
+[in] 크기인 *pData* (바이트)에서입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1267,14 +1267,14 @@ BOOL WriteSectionInt(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszSubSection*  
- 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
+*lpszSubSection*<br/>
+[in] 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
   
- [in] *lpszEntry*  
- 설정할 값을 포함 하는 문자열입니다.  
+*lpszEntry*<br/>
+[in] 설정할 값을 포함 하는 문자열입니다.  
   
- [in] *n 값*  
- 레지스트리에 쓸 데이터입니다.  
+*n 값*<br/>
+[in] 레지스트리에 쓸 데이터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1295,14 +1295,14 @@ BOOL WriteSectionObject(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszSubSection*  
- 레지스트리 키의 이름을 포함 하는 문자열입니다.  
+*lpszSubSection*<br/>
+[in] 레지스트리 키의 이름을 포함 하는 문자열입니다.  
   
- [in] *lpszEntry*  
- 설정할 값의 이름을 포함 하는 문자열입니다.  
+*lpszEntry*<br/>
+[in] 설정할 값의 이름을 포함 하는 문자열입니다.  
   
- [in] *obj*  
- 데이터 저장소입니다.  
+*obj*<br/>
+[in] 데이터 저장소입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1323,14 +1323,14 @@ BOOL WriteSectionString(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszSubSection*  
- 레지스트리 키의 이름을 포함 하는 문자열입니다.  
+*lpszSubSection*<br/>
+[in] 레지스트리 키의 이름을 포함 하는 문자열입니다.  
   
- [in] *lpszEntry*  
- 설정할 값을 포함 하는 문자열입니다.  
+*lpszEntry*<br/>
+[in] 설정할 값을 포함 하는 문자열입니다.  
   
- [in] *lpszValue*  
- 레지스트리에 쓸 문자열 데이터입니다.  
+*lpszValue*<br/>
+[in] 레지스트리에 쓸 문자열 데이터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1350,11 +1350,11 @@ BOOL WriteString(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszEntry*  
- 레지스트리 키의 이름을 포함 하는 문자열입니다.  
+*lpszEntry*<br/>
+[in] 레지스트리 키의 이름을 포함 하는 문자열입니다.  
   
- [in] *lpszValue*  
- 데이터 저장소입니다.  
+*lpszValue*<br/>
+[in] 데이터 저장소입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  

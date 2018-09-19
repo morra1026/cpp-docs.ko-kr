@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14cbb110cf226a0a36a121ac9aa1901782357b04
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 974488a2f587c2fde02dd74baf64a98a7590e9b0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168089"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066571"
 ---
 # <a name="compiler-error-c2163"></a>컴파일러 오류 C2163
-'function': 내장 함수로 사용할 수 없음  
-  
- `intrinsic` 또는 `function` pragma 내장 형식에서 사용할 수 없는 함수를 나열 합니다. 예를 들어 특정 내장 함수는 /clr 프로그래밍을 사용 하는 프로그램을 컴파일할 때 사용할 수 없습니다.
+
+'function': 내장 함수로 사용할 수 없음
+
+`intrinsic` 또는 `function` pragma 내장 형식에서 사용할 수 없는 함수를 나열 합니다. 예를 들어, /clr 프로그래밍을 사용 하는 프로그램 컴파일 특정 내장 형식을 사용할 수 없는 경우

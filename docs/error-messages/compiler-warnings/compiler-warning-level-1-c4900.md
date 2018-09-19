@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e58076b070860b31706b4b55a13b881df51db33
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0c27df56ab38224020e9be88787dfaa038ba8f0e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33304751"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103111"
 ---
 # <a name="compiler-warning-level-1-c4900"></a>컴파일러 경고(수준 1) C4900
-'tool1' 버전 'version1'과 'tool2' 버전 'version2' 사이에 중간 언어가 일치하지 않습니다.  
-  
- *tool1* 과 *tool2* 에서 사용되는 중간 언어가 일치하지 않습니다. 각 도구의 현재 버전이 설치되어 있는지 확인합니다.
+
+'tool1' 버전 'version1'과 'tool2' 버전 'version2' 사이에 중간 언어가 일치하지 않습니다.
+
+*tool1* 과 *tool2* 에서 사용되는 중간 언어가 일치하지 않습니다. 각 도구의 현재 버전이 설치되어 있는지 확인합니다.

@@ -18,20 +18,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de5591caab2488b4e55464e783df063859e538e5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b9b800e827daebbe7656a69888617a74081eb3ef
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32370503"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709464"
 ---
 # <a name="nologo-editbin"></a>/NOLOGO(EDITBIN)
-```  
-/NOLOGO  
-```  
-  
-## <a name="remarks"></a>설명  
- 이 옵션에는 EDITBIN 저작권 메시지 및 버전 번호를 표시를 하지 않습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [EDITBIN 옵션](../../build/reference/editbin-options.md)
+
+```
+/NOLOGO
+```
+
+## <a name="remarks"></a>설명
+
+이 옵션은 EDITBIN 저작권 메시지와 버전 번호를 표시를 하지 않습니다.
+
+## <a name="see-also"></a>참고 항목
+
+[EDITBIN 옵션](../../build/reference/editbin-options.md)

@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d67f4fb4fdb6a46d00ef8cdf21559cf6043932e2
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 1339b291c92879beb7606b0dabe77904ad9f462e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336522"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713598"
 ---
 # <a name="cfileexception-class"></a>CFileException 클래스
 파일 관련 예외 상태를 나타냅니다.  
@@ -134,7 +134,7 @@ static int PASCAL ErrnoToException(int nErrno);
 ### <a name="remarks"></a>설명  
  참조 [CFileException::m_cause](#m_cause) 가능한 목록에 대 한 값을 열거 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#26](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_1.cpp)]  
   
 ##  <a name="geterrormessage"></a>  CFileException::GetErrorMessage  
@@ -148,14 +148,14 @@ virtual BOOL GetErrorMessage(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out에서] *lpszError*  
- 오류 메시지를 받는 버퍼에 대 한 포인터입니다.  
+*lpszError*<br/>
+[out에서] 오류 메시지를 받는 버퍼에 대 한 포인터입니다.  
   
- [in] *nMaxError*  
- 지정 된 버퍼에 저장할 수 문자의 최대 수입니다. Null 종결 문자 포함 됩니다.  
+*nMaxError*<br/>
+[in] 지정 된 버퍼에 저장할 수 문자의 최대 수입니다. Null 종결 문자 포함 됩니다.  
   
- [out에서] *pnHelpContext*  
- 도움말 컨텍스트 ID를 수신 하는 부호 없는 정수에 대 한 포인터 경우 `NULL`, ID가 없습니다. 반환 됩니다.  
+*pnHelpContext*<br/>
+[out에서] 도움말 컨텍스트 ID를 수신 하는 부호 없는 정수에 대 한 포인터 경우 `NULL`, ID가 없습니다. 반환 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -163,7 +163,7 @@ virtual BOOL GetErrorMessage(
 ### <a name="remarks"></a>설명  
  지정 된 버퍼가 너무 작은 경우 오류 메시지는 잘립니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 `CFileException::GetErrorMessage`합니다.  
   
  [!code-cpp[NVC_MFCExceptions#22](../../mfc/codesnippet/cpp/cfileexception-class_2.cpp)]  
@@ -214,7 +214,7 @@ int m_cause;
     > [!NOTE]
     > `CArchiveException::generic`은 사용되지 않습니다. 대신 `genericException`를 사용하세요. 하는 경우 **제네릭** 응용 프로그램에서 사용 되 고 /clr을 쉽게 이해할 수 없는 오류가 발생 하는 구문을 사용 하 여 작성 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#30](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_3.cpp)]  
   
 ##  <a name="m_loserror"></a>  CFileException::m_lOsError  
@@ -248,7 +248,7 @@ static int PASCAL OsErrorToException(LONG lOsError);
 ### <a name="return-value"></a>반환 값  
  지정 된 운영 체제 오류 값에 해당 하는 열거형된 값입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#27](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_4.cpp)]  
   
 ##  <a name="throwerrno"></a>  CFileException::ThrowErrno  
@@ -265,7 +265,7 @@ static void PASCAL ThrowErrno(int nErrno, LPCTSTR lpszFileName = NULL);
  *lpszFileName*  
  파일의 이름을 포함 하는 문자열에 대 한 포인터를 발생 시킨 예외를 사용 가능한 경우.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#28](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_5.cpp)]  
   
 ##  <a name="throwoserror"></a>  CFileException::ThrowOsError  
@@ -282,7 +282,7 @@ static void PASCAL ThrowOsError(LONG lOsError, LPCTSTR lpszFileName = NULL);
  *lpszFileName*  
  파일의 이름을 포함 하는 문자열에 대 한 포인터를 발생 시킨 예외를 사용 가능한 경우.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  [!code-cpp[NVC_MFCFiles#29](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_6.cpp)]  
   
 ## <a name="see-also"></a>참고 항목  

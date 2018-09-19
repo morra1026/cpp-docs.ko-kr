@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b9b10af535b0739d480326d616ee7587318bb5a
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 821f3c25d195a2c92ac04fdf5f9e5a59b493c257
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33696177"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113840"
 ---
 # <a name="uninitializedobject-class"></a>uninitialized_object 클래스
 초기화 되지 않은 개체를 사용 하는 경우 throw 되는 예외입니다.  
@@ -68,8 +68,8 @@ unsupported_feature() throw();
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Message`  
- 오류에 대한 설명입니다.  
+*메시지 (_m)*<br/>
+오류에 대한 설명입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `unsupported_feature` 개체 

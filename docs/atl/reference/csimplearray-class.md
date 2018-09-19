@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd3e6809a8204b9a2380e896e4e458512e79fa2b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 5603327e7bdc32d9b760fc25160543c682e6f4f4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766664"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054508"
 ---
 # <a name="csimplearray-class"></a>CSimpleArray 클래스
 
@@ -40,16 +40,16 @@ ms.locfileid: "43766664"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T, class TEqual = CSimpleArrayEqualHelper<T>>  
+template <class T, class TEqual = CSimpleArrayEqualHelper<T>>
 class CSimpleArray
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 배열에 저장할 데이터의 형식입니다.
 
-*TEqual*  
+*TEqual*<br/>
 형식의 요소에 대 한 같음 테스트를 정의 하는 특성 (trait) 개체 *T*합니다.
 
 ## <a name="members"></a>멤버
@@ -107,7 +107,7 @@ BOOL Add(const T& t);
 
 ### <a name="parameters"></a>매개 변수
 
-*t*  
+*t*<br/>
 배열에 추가할 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -123,13 +123,13 @@ BOOL Add(const T& t);
 배열 개체에 대 한 생성자입니다.
 
 ```
-CSimpleArray(const CSimpleArray<T, TEqual>& src);  
+CSimpleArray(const CSimpleArray<T, TEqual>& src);
 CSimpleArray();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*src*  
+*src*<br/>
 기존 `CSimpleArray` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -158,7 +158,7 @@ int Find(const T& t) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*t*  
+*t*<br/>
 검색할 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -203,7 +203,7 @@ T& operator[](int nindex);
 
 ### <a name="parameters"></a>매개 변수
 
-*nIndex*  
+*nIndex*<br/>
 요소의 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -226,7 +226,7 @@ CSimpleArray<T, TEqual>
 
 ### <a name="parameters"></a>매개 변수
 
-*src*  
+*src*<br/>
 복사할 배열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -251,7 +251,7 @@ BOOL Remove(const T& t);
 
 ### <a name="parameters"></a>매개 변수
 
-*t*  
+*t*<br/>
 배열에서 제거할 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -284,7 +284,7 @@ BOOL RemoveAtint nIndex);
 
 ### <a name="parameters"></a>매개 변수
 
-*nIndex*  
+*nIndex*<br/>
 제거할 요소를 가리키는 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -307,10 +307,10 @@ BOOL SetAtIndex(
 
 ### <a name="parameters"></a>매개 변수
 
-*nIndex*  
+*nIndex*<br/>
 변경 하는 요소의 인덱스입니다.
 
-*t*  
+*t*<br/>
 지정된 요소에 할당할 값입니다.
 
 ### <a name="return-value"></a>반환 값

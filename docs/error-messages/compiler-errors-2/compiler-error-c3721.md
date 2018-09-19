@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0bd4942dba3c49ecc06b015d6ed14b297d09ac2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: df6c2ff97e44ab679e59b3377e80e78398f12211
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33275199"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039559"
 ---
 # <a name="compiler-error-c3721"></a>컴파일러 오류 C3721
-'서명': 이벤트에 대 한 호환 되지 않는 서명  
-  
- 이벤트 잘못 선언 되었습니다. 자세한 내용은 참조 [__event](../../cpp/event.md)합니다.  
-  
- C3721은 사용 되지 않는 컴파일러 옵션을 사용 하 여 연결할 수만 **/clr:oldSyntax**합니다.  
+
+'서명': 이벤트에 대 한 호환 되지 않는 서명
+
+이벤트를 올바르게 선언 되었습니다. 자세한 내용은 [__event](../../cpp/event.md)합니다.
+
+C3721 사용 되지 않는 컴파일러 옵션을 사용 하 여 전용인 **/clr: oldsyntax**합니다.

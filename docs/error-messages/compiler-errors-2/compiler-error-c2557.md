@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5402cb98d2cf315861ccb27aad3233b3bd370f8e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f975bdacf4db0460f6b12cd4f340c72e50f01a8c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33227410"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102608"
 ---
 # <a name="compiler-error-c2557"></a>컴파일러 오류 C2557
-'identifier': 전용 및 보호된 멤버는 생성자 없이 초기화할 수 없습니다.  
-  
- 멤버와 friend만 private 또는 protected 멤버에 값을 할당할 수 있습니다. public이 아닌 멤버는 클래스 생성자에서 초기화해야 합니다.
+
+'identifier': 전용 및 보호된 멤버는 생성자 없이 초기화할 수 없습니다.
+
+멤버와 friend만 private 또는 protected 멤버에 값을 할당할 수 있습니다. public이 아닌 멤버는 클래스 생성자에서 초기화해야 합니다.

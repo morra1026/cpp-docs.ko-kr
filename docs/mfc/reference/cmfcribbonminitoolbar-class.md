@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 789a8165a12977d11220d299e2c99549121dba64
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: ef348275059fd2623ca83b40730f010a7d18d6d5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540339"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721177"
 ---
 # <a name="cmfcribbonminitoolbar-class"></a>CMFCRibbonMiniToolBar 클래스
 상황별 팝업 도구 모음을 구현합니다.  
@@ -98,16 +98,16 @@ void SetCommands(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pRibbonBar*  
- 미니 도구 모음을 표시할 단추를 검색 하는 리본 표시줄입니다.  
+*pRibbonBar*<br/>
+[in] 미니 도구 모음을 표시할 단추를 검색 하는 리본 표시줄입니다.  
   
- [in] *lstCommands*  
- 미니 도구 모음에 표시 되는 명령 목록입니다. 모든 리본 범주는 관련된 된 단추를 찾으려면 검색 됩니다.  
+*lstCommands*<br/>
+[in] 미니 도구 모음에 표시 되는 명령 목록입니다. 모든 리본 범주는 관련된 된 단추를 찾으려면 검색 됩니다.  
   
 ### <a name="remarks"></a>설명  
  이 함수를 사용 하 여 미니 도구 모음에서 표시할 수 있는 명령의 목록을 설정 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `SetCommands` 메서드는 `CMFCRibbonMiniToolBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [MS Office 2007 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_MSOffice2007Demo#9](../../mfc/reference/codesnippet/cpp/cmfcribbonminitoolbar-class_1.cpp)]  
@@ -122,11 +122,11 @@ BOOL Show(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *x*  
- 화면 좌표에 미니 도구 모음의 가로 위치를 지정합니다.  
+*x*<br/>
+[in] 화면 좌표에 미니 도구 모음의 가로 위치를 지정합니다.  
   
- [in] *y*  
- 화면 좌표에 미니 도구 모음의 세로 위치를 지정합니다.  
+*y*<br/>
+[in] 화면 좌표에 미니 도구 모음의 세로 위치를 지정합니다.  
   
 ### <a name="return-value"></a>반환 값  
  미니 도구 모음을 성공적으로 표시 된 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -143,17 +143,17 @@ BOOL ShowWithContextMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *x*  
- 화면 좌표에서 상황에 맞는 메뉴의 가로 위치를 지정합니다.  
+*x*<br/>
+[in] 화면 좌표에서 상황에 맞는 메뉴의 가로 위치를 지정합니다.  
   
- [in] *y*  
- 화면 좌표에서 상황에 맞는 메뉴의 세로 위치를 지정합니다.  
+*y*<br/>
+[in] 화면 좌표에서 상황에 맞는 메뉴의 세로 위치를 지정합니다.  
   
- [in] *uiMenuResID*  
- 표시 하려면 상황에 맞는 메뉴의 리소스 ID를 지정 합니다.  
+*uiMenuResID*<br/>
+[in] 표시 하려면 상황에 맞는 메뉴의 리소스 ID를 지정 합니다.  
   
- [in] *pWndOwner*  
- 상황에 맞는 메뉴에서 메시지를 수신 하는 창을 식별 합니다.  
+*pWndOwner*<br/>
+[in] 상황에 맞는 메뉴에서 메시지를 수신 하는 창을 식별 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  상황에 맞는 메뉴를 성공적으로 표시 된 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  

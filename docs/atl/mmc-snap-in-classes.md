@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 995693a73fde41a3f5e31d81224b96d12edb2c46
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 85d32a4550c2a7b3522456defc53b9741ea2eb25
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763281"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024231"
 ---
 # <a name="mmc-snap-in-classes"></a>MMC 스냅인 클래스
 
@@ -33,6 +33,6 @@ Microsoft Management Console (MMC) 스냅인에서 구성 요소를 개발에 �
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 개요](../atl/atl-class-overview.md)   
+[클래스 개요](../atl/atl-class-overview.md)<br/>
 [스냅인 개체 매크로](../atl/reference/snap-in-object-macros.md)
 

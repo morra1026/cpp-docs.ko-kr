@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a90202bfc06d50089e2ac283a5060bc431b9549c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b2c6d281f4a5e7f59e0e7a34fb77d2d18b295e7d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33274260"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029899"
 ---
 # <a name="compiler-warning-level-1-c4003"></a>컴파일러 경고 (수준 1) C4003
-'identifier' 매크로의 실제 매개 변수가 부족합니다.  
-  
- 매크로 정의의 형식 매개 변수 개수가 매크로의 실제 매개 변수 개수를 초과 합니다. 누락 된 매개 변수가 빈 텍스트를 대체 하는 매크로 확장 합니다.  
-  
- 다음 샘플에서는 C4003 오류가 생성 됩니다.  
-  
-```  
-// C4003.cpp  
-// compile with: /WX  
-#define test(a,b) (a+b)  
-  
-int main()  
-{  
-   int a = 1;  
-   int b = 2;  
-   a = test(b);   // C4003  
-   // try..  
-   a = test(a,b);  
-}  
+
+'identifier' 매크로의 실제 매개 변수가 부족합니다.
+
+매크로 정의의 정식 매개 변수 수가 매크로의 실제 매개 변수 수를 초과합니다. 누락 된 매개 변수가 빈 텍스트로 대체 하는 매크로 확장 합니다.
+
+다음 샘플에서는 C4003 오류가 생성 됩니다.
+
+```
+// C4003.cpp
+// compile with: /WX
+#define test(a,b) (a+b)
+
+int main()
+{
+   int a = 1;
+   int b = 2;
+   a = test(b);   // C4003
+   // try..
+   a = test(a,b);
+}
 ```

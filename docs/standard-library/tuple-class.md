@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc5f5c987f8e448490a0d337517d7a0699619849
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 4ea4a0c17422823f306942bc7d02514456bf8310
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42539863"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712090"
 ---
 # <a name="tuple-class"></a>튜플 클래스
 
@@ -52,14 +52,14 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*TN*  
- N번째 튜플 요소의 형식입니다.
+*TN*<br/>
+N번째 튜플 요소의 형식입니다.
 
 ## <a name="remarks"></a>설명
 
 형식의 n 개 개체를 저장 하는 개체를 설명 하는 템플릿 클래스 `T1`, `T2`,..., `TN`각각 여기서 `0 <= N <= Nmax`합니다. 튜플 인스턴스 익스텐트 `tuple<T1, T2, ..., TN>` 수 `N` 해당 템플릿 인수의 합니다. 템플릿 인수의 인덱스 `Ti` 형식의 저장된 된 해당 값은 및 `i - 1`합니다. 따라서 것이 설명서의 n 1에서 형식 번호를 하는 동안 해당 인덱스 값 범위는 0에서 n-1입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // tuple.cpp
@@ -154,11 +154,11 @@ template <class U1, class U2>
 
 ### <a name="parameters"></a>매개 변수
 
-*취소*  
- N번째 복사된 튜플 요소의 형식입니다.
+*취소*<br/>
+N번째 복사된 튜플 요소의 형식입니다.
 
-*right*  
- 복사할 튜플입니다.
+*right*<br/>
+복사할 튜플입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -166,7 +166,7 @@ template <class U1, class U2>
 
 나머지 구성원 연산자도 앞의 연산자와 동일하지만 [Rvalue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 사용합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__tuple__tuple_operator_as.cpp
@@ -263,11 +263,11 @@ template <class U1, class U2>
 
 ### <a name="parameters"></a>매개 변수
 
-*취소*  
- N번째 복사된 튜플 요소의 형식입니다.
+*취소*<br/>
+N번째 복사된 튜플 요소의 형식입니다.
 
-*right*  
- 복사할 튜플입니다.
+*right*<br/>
+복사할 튜플입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -281,7 +281,7 @@ template <class U1, class U2>
 
 나머지 생성자도 앞의 생성자와 동일하지만 [Rvalue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 사용합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // std__tuple__tuple_tuple.cpp

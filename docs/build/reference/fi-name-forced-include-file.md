@@ -22,41 +22,44 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b85bfaebe09203f7aad76c24e8f8fbccfe009d80
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: aa06eaf8f16a80b849ce911468fc0001366b9e29
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373376"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725467"
 ---
 # <a name="fi-name-forced-include-file"></a>/FI(강제 포함 파일 이름 지정)
-전처리기가 지정 된 헤더 파일을 처리 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-/FI[ ]pathname  
-```  
-  
-## <a name="remarks"></a>설명  
- 이 옵션은에 큰따옴표를 사용 하 여 파일을 지정 하는 것과 같습니다는 `#include` 명령줄 CL 환경 변수 또는 명령 파일에 지정 된 모든 소스 파일의 첫 번째 줄에 지시문입니다. 여러 개 사용 하면 **/FI** 파일 옵션은 CL에서 처리 되는 순서에 포함 됩니다.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면  
-  
-1.  프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)합니다.  
-  
-2.  **C/C++** 폴더를 클릭합니다.  
-  
-3.  클릭는 **고급** 속성 페이지.  
-  
-4.  수정 된 **강제 포함** 속성입니다.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면  
-  
--   <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ForcedIncludeFiles%2A>을 참조하세요.  
-  
-## <a name="see-also"></a>참고 항목  
- [출력 파일 (/ F) 옵션](../../build/reference/output-file-f-options.md)   
- [컴파일러 옵션](../../build/reference/compiler-options.md)   
- [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)   
- [경로 이름 지정](../../build/reference/specifying-the-pathname.md)
+
+지정 된 헤더 파일을 처리 하도록 전처리기에 발생 합니다.
+
+## <a name="syntax"></a>구문
+
+```
+/FI[ ]pathname
+```
+
+## <a name="remarks"></a>설명
+
+이 옵션에 큰따옴표를 사용 하 여 파일을 지정 하는 것과 동일한 효과가 `#include` 명령줄 CL 환경 변수 또는 명령 파일에 지정 된 모든 소스 파일의 첫 번째 줄에서 지시문입니다. 여러 개 사용 하면 **/FI** 옵션 파일 CL에 의해 처리 된 순서 대로 포함 됩니다.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
+
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+
+1. **C/C++** 폴더를 클릭합니다.
+
+1. 클릭 합니다 **고급** 속성 페이지.
+
+1. 수정 된 **강제 포함** 속성입니다.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
+
+- <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ForcedIncludeFiles%2A>을 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+[출력 파일 (/ F) 옵션](../../build/reference/output-file-f-options.md)
+[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
+[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
+[경로 이름 지정](../../build/reference/specifying-the-pathname.md)

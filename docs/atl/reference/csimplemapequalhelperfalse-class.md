@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bfa615af00535d899533f21abf933f35bcd5bbf
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f26deca76ff887eff2cd0a2c33dad94fbdbff8ee
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767997"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052742"
 ---
 # <a name="csimplemapequalhelperfalse-class"></a>CSimpleMapEqualHelperFalse 클래스
 
@@ -33,7 +33,7 @@ ms.locfileid: "43767997"
 ## <a name="syntax"></a>구문
 
 ```
-template <class TKey, class TVal>  
+template <class TKey, class TVal>
 class CSimpleMapEqualHelperFalse
 ```
 
@@ -66,10 +66,10 @@ static bool IsEqualKey(const TKey& k1, const TKey& k2);
 
 ### <a name="parameters"></a>매개 변수
 
-*k1*  
+*k1*<br/>
 첫 번째 키입니다.
 
-*k2*  
+*k2*<br/>
 두 번째 키입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -98,5 +98,5 @@ false를 반환합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[CSimpleMapEqualHelper 클래스](../../atl/reference/csimplemapequalhelper-class.md)   
+[CSimpleMapEqualHelper 클래스](../../atl/reference/csimplemapequalhelper-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

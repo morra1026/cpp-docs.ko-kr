@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4014c58a7e562aa632dba62dcac04c835352cbf
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 03b2f4e746632cc91b652ca76587ddad18afd165
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44101731"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717966"
 ---
 # <a name="fa-fa-listing-file"></a>/FA, /Fa(목록 파일)
 
@@ -49,38 +49,38 @@ ms.locfileid: "44101731"
 
 ### <a name="fa-arguments"></a>/FA 인수
 
-없음  
+없음<br/>
 어셈블러 언어만 목록에 포함 됩니다.
 
-**c**  
+**c**<br/>
 선택 사항입니다. 목록에서 컴퓨터 코드를 포함합니다.
 
-**s**  
+**s**<br/>
 선택 사항입니다. 목록에서 소스 코드를 포함합니다.
 
-**u**  
+**u**<br/>
 선택 사항입니다. 목록 파일에 utf-8 형식으로 인코딩하고 바이트 순서 마커를 포함 합니다. 기본적으로 파일 ANSI로 인코딩됩니다. 사용 하 여 `u` 모든 시스템에 올바르게 표시 하는 한 목록 파일을 만들려면 컴파일러에 대 한 입력으로 유니코드를 사용 하는 경우 또는 소스 코드 파일.
 
 둘 다 **s** 하 고 **u** 를 지정 하 고 소스 코드 파일 경우 u t F-8을.asm 파일에 코드 줄을 올바르게 표시 되지 않을 이외의 유니코드 인코딩을 사용 합니다.
 
 ### <a name="fa-argument"></a>/Fa 인수
 
-없음  
+없음<br/>
 하나의 *원본*.asm 파일을 컴파일할 때 각 소스 코드 파일에 대 한 만들어집니다.
 
-*filename*  
+*filename*<br/>
 목록 파일인 *filename*.asm은 현재 디렉터리에 배치 합니다. 이 단일 소스 코드 파일을 컴파일할 때에 유효 합니다.
 
-*filename.extension*  
+*filename.extension*<br/>
 목록 파일인 *filename.extension* 현재 디렉터리에 배치 됩니다. 이 단일 소스 코드 파일을 컴파일할 때에 유효 합니다.
 
-*디렉터리*__\\__  
+*디렉터리*__\\__<br/>
 하나의 *source_file*.asm 파일을 만들고 지정 된 배치 *directory* 컴파일할 때 각 소스 코드 파일에 대 한 합니다. 필요한 후행 백슬래시를 note 합니다. 현재 디스크에 대 한 경로만 허용 됩니다.
 
-*디렉터리*__\\__*파일 이름*  
+*디렉터리*__\\__*파일 이름*<br/>
 목록 파일 이름이 *filename*.asm 위치한 지정 된 *디렉터리*합니다. 이 단일 소스 코드 파일을 컴파일할 때에 유효 합니다.
 
-*디렉터리*__\\__*filename.extension*  
+*디렉터리*__\\__*filename.extension*<br/>
 목록 파일 이름이 *filename.extension* 위치한 지정 된 *directory*합니다. 이 단일 소스 코드 파일을 컴파일할 때에 유효 합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
@@ -98,6 +98,7 @@ ms.locfileid: "44101731"
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AssemblerListingLocation%2A> 또는 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AssemblerOutput%2A>을 참조하십시오. 지정할 **하려면 /FAu**를 참조 하세요 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>합니다.
 
 ## <a name="example"></a>예제
+
 다음 명령줄을 결합 된 소스를 생성 하 고 기계어 코드로 hello.cod:
 
 ```cmd
@@ -106,7 +107,7 @@ CL /FAcs HELLO.CPP
 
 ## <a name="see-also"></a>참고 항목
 
-[출력 파일 (/ F) 옵션](../../build/reference/output-file-f-options.md)   
-[컴파일러 옵션](../../build/reference/compiler-options.md)   
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)   
+[출력 파일 (/ F) 옵션](../../build/reference/output-file-f-options.md)
+[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
+[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
 [경로 이름 지정](../../build/reference/specifying-the-pathname.md)

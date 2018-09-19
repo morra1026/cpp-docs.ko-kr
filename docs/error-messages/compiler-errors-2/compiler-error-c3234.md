@@ -16,26 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10964afb48e4a83830d0eb48a5f2147906a3543e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f701eb20743925913bf0eab754f2788e8bd3a9b6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246019"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017051"
 ---
 # <a name="compiler-error-c3234"></a>컴파일러 오류 C3234
-제네릭 클래스는 제네릭 형식 매개 변수에서 상속할 수 없습니다.  
-  
- 제네릭 클래스는 제네릭 형식 매개 변수에서 상속할 수 없습니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3234를 생성합니다.  
-  
-```  
-// C3234.cpp  
-// compile with: /clr /c  
-generic <class T>  
-public ref class C : T {};   // C3234  
-// try the following line instead  
-// public ref class C {};  
+
+제네릭 클래스는 제네릭 형식 매개 변수에서 상속할 수 없습니다.
+
+제네릭 클래스는 제네릭 형식 매개 변수에서 상속할 수 없습니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C3234를 생성합니다.
+
+```
+// C3234.cpp
+// compile with: /clr /c
+generic <class T>
+public ref class C : T {};   // C3234
+// try the following line instead
+// public ref class C {};
 ```

@@ -16,22 +16,22 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a10fd33ebeef43904db964fc327fb749029f963
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: be2a2caef9e1252bf1ab36253a7f5f715b94d5a3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197977"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031615"
 ---
 # <a name="compiler-error-c2483"></a>컴파일러 오류 C2483
 
->'*식별자*': '스레드' 생성자 또는 소멸자가 있는 개체를 선언할 수 없습니다.
+>'*식별자*': 'thread' 생성자 또는 소멸자를 사용 하 여 개체를 선언할 수 없습니다.
 
-이 오류 메시지는 Visual Studio 2015 이상 버전에서 사용 되지 않습니다. 이전 버전에서 사용 하 여 변수 선언에서 `thread` 특성 생성자 나 런타임에 계산에 필요한 다른 식으로 초기화할 수 없습니다. 정적 식 초기화에 필요 `thread` 데이터입니다.
+이 오류 메시지는 Visual Studio 2015 이상 버전에서 사용 되지 않습니다. 이전 버전에서는로 선언 된 변수에 `thread` 특성 생성자 나 런타임에 계산에 필요한 다른 식으로 초기화할 수 없습니다. 정적 식 초기화에 필요 `thread` 데이터입니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 Visual Studio 2013 및 이전 버전에서 C2483 오류가 발생 합니다.
+다음 샘플 Visual Studio 2013 및 이전 버전에서 C2483를 생성합니다.
 
 ```cpp
 // C2483.cpp
@@ -39,7 +39,7 @@ ms.locfileid: "33197977"
 __declspec(thread) struct A {
    A(){}
    ~A(){}
-} aa;   // C2483 error  
+} aa;   // C2483 error
 
 __declspec(thread) struct B {} b;   // OK
 ```

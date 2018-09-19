@@ -50,12 +50,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3198a2d3ef91df80429f7cd245e5616ebe7af43a
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: f02f6a2810f5ac3a51abb80245c22a7f0c2df434
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110633"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074151"
 ---
 # <a name="codecvt-class"></a>codecvt 클래스
 
@@ -91,21 +91,24 @@ class codecvt : public locale::facet, codecvt_base;
 
 C++ 표준 라이브러리는 여러 명시적 특수화를 정의합니다.
 
-`template<>`
-
-`codecvt<wchar_t, char, mbstate_t>`
+```cpp
+template<>
+codecvt<wchar_t, char, mbstate_t>
+```
 
 사이 변환 **wchar_t** 하 고 **char** 시퀀스입니다.
 
-`template<>`
-
-`codecvt<char16_t, char, mbstate_t>`
+```cpp
+template<>
+codecvt<char16_t, char, mbstate_t>
+```
 
 사이 변환 `char16_t` 시퀀스를 u t F-16으로 인코드된 및 **char** 시퀀스를 u t F-8로 인코딩됩니다.
 
-`template<>`
-
-`codecvt<char32_t, char, mbstate_t>`
+```cpp
+template<>
+codecvt<char32_t, char, mbstate_t>
+```
 
 사이 변환 `char32_t` (u c S-4) UTF-32로 인코딩된 시퀀스 및 **char** 시퀀스를 u t F-8로 인코딩됩니다.
 

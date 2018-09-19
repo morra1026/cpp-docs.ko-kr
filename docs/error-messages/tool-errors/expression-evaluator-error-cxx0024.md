@@ -17,20 +17,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50a07297ddabf269b003a1f14d967d1187fea96d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2816be7bb1d33757d9722d605d461ac6fb34fadd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302463"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118197"
 ---
 # <a name="expression-evaluator-error-cxx0024"></a>식 계산기 오류 CXX0024
-작업을 해야 l 값  
-  
- L-value를 평가 되지 않는 식 l-value를 필요로 하는 작업에 지정 되었습니다.  
-  
- L 값 (대입문의 왼쪽에 표시 되기 때문에 이렇게 부름)는 메모리 위치를 참조 하는 식입니다.  
-  
- 예를 들어 `buffer[count]` 은 올바른 l 값이 특정 메모리 위치를 가리키므로 합니다. 논리 비교 `zed != 0` 메모리 주소로 하지 TRUE 또는 FALSE로 계산 되기 때문에 l 값이 올바르지 않습니다.  
-  
- 이 오류는 can0024와 동일 합니다.
+
+작업에 l-value가 필요
+
+L-value를 필요로 하는 작업에 대 한 식에 l-value가 평가 되지 않습니다 지정 되었습니다.
+
+L-value (대입문의 왼쪽에 표시 되기 때문에 이렇게 부름)는 메모리 위치를 참조 하는 식입니다.
+
+예를 들어 `buffer[count]` 유효한 l-value 이므로 특정 메모리 위치를 가리킵니다. 논리 비교 `zed != 0` 메모리 주소 필요가 TRUE 또는 FALSE로 계산 되기 때문에 유효한 l 값이 아닙니다.
+
+이 오류는 can0024와 동일 합니다.

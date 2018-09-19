@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1941f08d13fb8aef9b5b281ce4b2bc1c61bf98fe
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 70ba26e5893b21393a3466ae7cf1c6cea43b81ef
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766589"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070160"
 ---
 # <a name="ccomptrbase-class"></a>CComPtrBase 클래스
 
@@ -41,13 +41,13 @@ ms.locfileid: "43766589"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T>  
+template <class T>
 class CComPtrBase
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 스마트 포인터에 의해 참조 될 개체 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -111,13 +111,13 @@ HRESULT Advise(
 
 ### <a name="parameters"></a>매개 변수
 
-*pUnk*  
+*pUnk*<br/>
 클라이언트에 대 한 포인터 `IUnknown`합니다.
 
-*iid*  
+*iid*<br/>
 연결 지점의 GUID입니다. 일반적으로 이것이 연결 지점에서 관리 되는 송신 인터페이스와 동일 합니다.
 
-*pdw*  
+*pdw*<br/>
 연결을 고유 하 게 식별 하는 쿠키에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -138,7 +138,7 @@ void Attach(T* p2) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p2*  
+*p2*<br/>
 `CComPtrBase` 개체 this이 포인터의 소유권을 갖게 됩니다.
 
 ### <a name="remarks"></a>설명
@@ -175,16 +175,16 @@ HRESULT CoCreateInstance(
 
 ### <a name="parameters"></a>매개 변수
 
-*szProgID*  
+*szProgID*<br/>
 ProgID, CLSID를 복구 하는 데에 대 한 포인터입니다.
 
-*pUnkOuter*  
+*pUnkOuter*<br/>
 NULL 인 경우 개체가 생성 되지 않도록 되는 집계의 일부로 나타냅니다. NULL이 아닌 경우 집계 개체에 대 한 포인터 `IUnknown` 인터페이스 (제어용 `IUnknown`).
 
-*dwClsContext*  
+*dwClsContext*<br/>
 새로 만든된 개체를 관리 하는 코드가 실행 되는 컨텍스트.
 
-*rclsid*  
+*rclsid*<br/>
 데이터 및 개체를 만드는 데 사용할 코드와 연관 된 CLSID입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -207,7 +207,7 @@ HRESULT CopyTo(T** ppT) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*ppT*  
+*ppT*<br/>
 수신 하는 변수의 주소는 `CComPtrBase` 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -246,7 +246,7 @@ bool IsEqualObject(IUnknown* pOther) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*광폭 한*  
+*광폭 한*<br/>
 비교할 `IUnknown *`입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -301,7 +301,7 @@ bool operator== (T* pT) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*  
+*(태평양 표준시)*<br/>
 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -334,7 +334,7 @@ bool operator<(T* pT) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*  
+*(태평양 표준시)*<br/>
 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -345,7 +345,7 @@ bool operator<(T* pT) const throw();
 
 캐스트 연산자입니다.
 
-```  
+```
 operator T*() const throw();
 ```
 
@@ -376,10 +376,10 @@ template <class Q> HRESULT QueryInterface(Q
 
 ### <a name="parameters"></a>매개 변수
 
-*Q*  
+*Q*<br/>
 필요한 인터페이스 포인터가 해당 개체 형식입니다.
 
-*pp*  
+*pp*<br/>
 요청 된 인터페이스 포인터를 수신 하는 출력 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -414,7 +414,7 @@ HRESULT SetSite(IUnknown* punkParent) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*punkParent*  
+*punkParent*<br/>
 에 대 한 포인터를 `IUnknown` 부모의 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값

@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a170e869a2d8869424b23fb154cd23f0ed26c9fa
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c5607df86a44174536f58242c5c0a98f7fe5e7dc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248198"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045278"
 ---
 # <a name="compiler-error-c2838"></a>컴파일러 오류 C2838
-'member': 멤버 선언의 정규화 된 이름이 잘못 되었습니다.  
-  
- 클래스, 구조체 또는 공용 구조체 정규화 된 이름을 사용 하 여 다른 클래스, 구조체 또는 공용 구조체의 멤버를 다시 선언 합니다.  
-  
- 다음 샘플에서는 C2838 오류가 생성 됩니다.  
-  
-```  
-// C2838.cpp  
-// compile with: /c  
-class Bellini {  
-public:  
-    void Norma();  
-};  
-  
-class Bottesini {  
-   Bellini::Norma();  // C2838  
-};  
+
+'member': 멤버 선언의 정규화 된 이름이 잘못 되었습니다.
+
+클래스, 구조체 또는 공용 구조체에는 다른 클래스, 구조체 또는 공용 구조체의 멤버를 다시 선언 정규화 된 이름을 사용 합니다.
+
+다음 샘플에서는 C2838 오류가 생성 됩니다.
+
+```
+// C2838.cpp
+// compile with: /c
+class Bellini {
+public:
+    void Norma();
+};
+
+class Bottesini {
+   Bellini::Norma();  // C2838
+};
 ```

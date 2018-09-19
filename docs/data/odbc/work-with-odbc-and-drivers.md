@@ -15,27 +15,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7d49fa24c6cb27bc54e8cc3dc6bba674cb12ae57
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 37888b735e76c42aaca20b3519efe381f3d7578c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33095117"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038791"
 ---
 # <a name="work-with-odbc-and-drivers"></a>ODBC 및 드라이버 작업
-ODBC를 사용 하면 데이터베이스 관리 시스템 (DBMS)에 종속 되지 않은 응용 프로그램을 작성할 수 있습니다. 사용자를 올바른 DBMS 관련 ODBC 드라이버에 게 여러 Dbms에서 작동할 수 있는 하나의 응용 프로그램을 작성할 수 있습니다.  
+
+ODBC를 사용 하면 한 데이터베이스 관리 시스템 (DBMS)에 종속 되지 않는 응용 프로그램을 작성할 수 있습니다. 사용자에 게는 올바른 DBMS 특정 ODBC 드라이버를 제공 하는 여러 Dbms에서 작동할 수 있는 응용 프로그램을 작성할 수 있습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
   
--   [런타임 시 ODBC 데이터 소스의 스키마 확인](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)  
+- [런타임 시 ODBC 데이터 원본의 스키마를 결정 합니다.](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)  
   
--   [ODBC 관리자를 사용 하 여 드라이버 설명 가져오기](../../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md)  
+- [ODBC 관리자를 사용 하 여 드라이버 설명 가져오기](../../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md)  
   
--   [ODBC 드라이버에 대 한 온라인 도움말 보기](../../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md)  
+- [ODBC 드라이버에 대 한 온라인 도움말을 가져오려면](../../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md)  
   
--   [프로그래밍 방식으로 ODBC 데이터 원본에 테이블을 만들려면](../../data/odbc/data-source-programmatically-creating-a-table-in-an-odbc-data-source.md)  
+- [프로그래밍 방식으로 ODBC 데이터 원본에 테이블을 만들려면](../../data/odbc/data-source-programmatically-creating-a-table-in-an-odbc-data-source.md)  
   
--   [MFC에서 직접 ODBC API 함수를 호출 합니다.](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)  
+- [MFC에서 직접 ODBC API 함수를 호출 합니다.](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)  
   
 ## <a name="see-also"></a>참고 항목  
- [ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)
+
+[ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)

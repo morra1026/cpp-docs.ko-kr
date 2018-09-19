@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 220a02fca7a8de67d1f35743fa9f56e8499c88e0
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: d3be0a32de4e0e5b57471722ffa2cf8fcea5fd6c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690048"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027858"
 ---
 # <a name="ithreadproxy-structure"></a>IThreadProxy 구조체
 실행 스레드에 대한 추상화입니다. 직접 만든 스케줄러의 `SchedulerType` 정책 키에 따라 리소스 관리자는 일반 Win32 스레드 또는 UMS(사용자 모드 예약 가능) 스레드 중 하나에서 지원되는 스레드 프록시를 부여합니다. UMS 스레드는 Windows 7 이상 버전의 64비트 운영 체제에서 지원됩니다.  
@@ -77,8 +77,8 @@ virtual void SwitchOut(SwitchingProxyState switchState = Blocking) = 0;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `switchState`  
- 스위치를 실행 하는 스레드 프록시의 상태를 나타냅니다. 이 매개 변수는 형식 `SwitchingProxyState`합니다.  
+*switchState*<br/>
+스위치를 실행 하는 스레드 프록시의 상태를 나타냅니다. 이 매개 변수는 형식 `SwitchingProxyState`합니다.  
   
 ### <a name="remarks"></a>설명  
  어떠한 이유로든 실행 중인 가상 프로세서 루트에서 컨텍스트 연결을 끊어야 할 경우 `SwitchOut`을 사용합니다. `switchState` 매개변수에 전달하는 값에 따라 그리고 가상 프로세서 루트에서 실행하는지 여부에 따라 이 호출은 해당 컨텍스트와 연결된 스레드 프록시를 즉시 반환하거나 차단합니다. 매개 변수를 `SwitchOut`로 설정하여 `Idle`을 호출하면 오류가 발생합니다. 이렇게 하면 프로그램 [invalid_argument](../../../standard-library/invalid-argument-class.md) 예외입니다.  
@@ -103,11 +103,11 @@ virtual void SwitchTo(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `pContext`  
- 협조적으로 전환 하려면 실행 컨텍스트입니다.  
+*pContext*<br/>
+협조적으로 전환 하려면 실행 컨텍스트입니다.  
   
- `switchState`  
- 스위치를 실행 하는 스레드 프록시의 상태를 나타냅니다. 이 매개 변수는 형식 `SwitchingProxyState`합니다.  
+*switchState*<br/>
+스위치를 실행 하는 스레드 프록시의 상태를 나타냅니다. 이 매개 변수는 형식 `SwitchingProxyState`합니다.  
   
 ### <a name="remarks"></a>설명  
  하나의 실행 컨텍스트에서 간에 전환 하려면이 메서드를 사용 합니다 [iexecutioncontext:: Dispatch](iexecutioncontext-structure.md#dispatch) 첫 번째 실행 컨텍스트의 메서드. 메서드 실행 컨텍스트 연결 `pContext` 아직 하나를 사용 하 여 연결 되지 않은 경우 스레드 프록시를 사용 하 여 합니다. 현재 스레드 프록시가의 소유권에 대해 지정한 값으로 결정 됩니다는 `switchState` 인수입니다.  

@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b16f2fd1a82d6199f1e035b06f8c0598810f0dfd
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: eadbcd138bd9fc73835938b8ff59d694ede152b8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752169"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065623"
 ---
 # <a name="atl-com-desktop-components"></a>ATL COM 데스크톱 구성 요소
 
@@ -28,37 +28,37 @@ ATL 참조는 액티브 템플릿 라이브러리(ATL), 콤포넌트 개체 모�
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[ATL 클래스 개요](../atl/atl-class-overview.md)  
+[ATL 클래스 개요](../atl/atl-class-overview.md)<br/>
 범주별로 구성 된 ATL 클래스에 간략하게 설명 및 링크를 제공 합니다.
 
-[ATL 클래스 및 구조체](../atl/reference/atl-classes.md)  
+[ATL 클래스 및 구조체](../atl/reference/atl-classes.md)<br/>
 클래스 및 구조체 사전순으로 정렬 되어에 대 한 참조 자료를 제공 합니다.
 
-[ATL 함수](../atl/reference/atl-functions.md)  
+[ATL 함수](../atl/reference/atl-functions.md)<br/>
 사전순으로 구성 하는 전역 함수에 대 한 참조 자료를 제공 합니다. 함수는 범주로 구성 하는 항목이 포함 되어 있습니다.
 
-[ATL 전역 변수](../atl/reference/atl-global-variables.md)  
+[ATL 전역 변수](../atl/reference/atl-global-variables.md)<br/>
 사전순으로 구성 하는 전역 변수에서 참조 자료를 제공 합니다.
 
-[ATL 매크로](../atl/reference/atl-macros.md)  
+[ATL 매크로](../atl/reference/atl-macros.md)<br/>
 사전순으로 정렬 되어 매크로에 대 한 참조 자료를 제공 합니다. 매크로 범주로 구성 하는 항목이 포함 되어 있습니다.
 
-[ATL 형식 정의](../atl/reference/atl-typedefs.md)  
+[ATL 형식 정의](../atl/reference/atl-typedefs.md)<br/>
 사전순으로 정렬 되어 typedef에 대 한 참조 자료를 제공 합니다.
 
-[Worker 원형](../atl/reference/worker-archetype.md)  
+[Worker 원형](../atl/reference/worker-archetype.md)<br/>
 ATL Worker 원형에 대 한 링크를 제공합니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 액티브 템플릿 라이브러리 (ATL)를 사용 하 여 프로그래밍 하는 방법에 항목을 제공 합니다.
 
-[ATL 자습서](../atl/active-template-library-atl-tutorial.md)  
+[ATL 자습서](../atl/active-template-library-atl-tutorial.md)<br/>
 컨트롤 생성을 안내하고 프로세스에서 일부 ATL 기초를 보여줍니다.
 
-[ATL 샘플](../visual-cpp-samples.md)  
+[ATL 샘플](../visual-cpp-samples.md)<br/>
 COM 객체를 이용한 ATL 사용 방법을 보여주는 샘플 코드입니다.
 
-[OLE DB 템플릿](../data/oledb/ole-db-templates.md)  
+[OLE DB 템플릿](../data/oledb/ole-db-templates.md)<br/>
 흔히 사용되는 여러 OLE DB 인터페이스를 구현하는 템플릿 클래스 집합인 OLE DB 소비자 및 공급자 템플릿에 대한 참조 자료를 제공합니다.  

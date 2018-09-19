@@ -15,16 +15,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b174747b3153bb44f6850f251713f8f3fca168c4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: be674af25fceec377d2d7b8979b3a52de91cf640
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372405"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712480"
 ---
 # <a name="exe-files-as-linker-input"></a>링커 입력 파일로 사용하는 .Exe 파일
-[MS-DOS 스텁 파일 이름](../../build/reference/stub-ms-dos-stub-file-name.md) (/ 스텁) 옵션은 MS-DOS와 실행 하는.exe 파일의 이름을 지정 합니다. 링크는 올바른 MS-DOS 프로그램 인지 확인 하려면 지정된 된 파일을 검사 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [LINK 입력된 파일](../../build/reference/link-input-files.md)   
- [링커 옵션](../../build/reference/linker-options.md)
+
+합니다 [MS-DOS 스텁 파일 이름](../../build/reference/stub-ms-dos-stub-file-name.md) (/ 스텁) 옵션에는 MS-DOS를 사용 하 여 실행 하는.exe 파일의 이름을 지정 합니다. 링크는 올바른 MS-DOS 프로그램 인지 지정된 된 파일을 검사 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[LINK 입력 파일](../../build/reference/link-input-files.md)<br/>
+[링커 옵션](../../build/reference/linker-options.md)

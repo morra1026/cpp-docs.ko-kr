@@ -37,12 +37,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c56f8fe711980e038281baca7618bff08f0d3d9b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 042fe1a446137546654c8f0cfd5ee9be8072dcee
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764945"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091831"
 ---
 # <a name="csnapinitemimpl-class"></a>CSnapInItemImpl 클래스
 
@@ -54,16 +54,16 @@ ms.locfileid: "43764945"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T, BOOL bIsExtension = FALSE>  
+template <class T, BOOL bIsExtension = FALSE>
 class ATL_NO_VTABLE CSnapInItemImpl : public CSnapInItem
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `CSnapInItemImpl`합니다.
 
-*bIsExtension*  
+*bIsExtension*<br/>
 TRUE 이면 개체는 스냅인 확장; 그렇지 않으면 FALSE입니다.
 
 ## <a name="members"></a>멤버
@@ -127,10 +127,10 @@ AddMenuItems(
 
 ### <a name="parameters"></a>매개 변수
 
-*변수인 piCallback*  
+*변수인 piCallback*<br/>
 [in] 에 대 한 포인터를 `IContextMenuCallback` 상황에 맞는 메뉴에 항목을 추가할 수는 있습니다.
 
-*pInsertionAllowed*  
+*pInsertionAllowed*<br/>
 [out에서] 식별 Microsoft 관리 콘솔 MMC 정의 메뉴 항목 삽입 지점을 사용할 수 있는 합니다. 다음 플래그의 조합일 수 있습니다.
 
 - 상황에 맞는 메뉴의 맨 위에 있는 CCM_INSERTIONALLOWED_TOP 항목을 삽입할 수 있습니다.
@@ -141,7 +141,7 @@ AddMenuItems(
 
 - 결과 창 상황에 맞는 메뉴 보기 하위 메뉴 또는 도구 모음 보기 메뉴에서 CCM_INSERTIONALLOWED_VIEW 항목을 삽입할 수 있습니다.
 
-*type*  
+*type*<br/>
 [in] 개체의 형식을 지정합니다. 다음 값 중 하나일 수 있습니다.
 
 - 범위 창 컨텍스트에 대해 CCT_SCOPE 데이터 개체입니다.
@@ -162,10 +162,10 @@ Command(long lCommandID, DATA_OBJECT_TYPES type);
 
 ### <a name="parameters"></a>매개 변수
 
-*lCommandID*  
+*lCommandID*<br/>
 [in] 메뉴 항목의 명령 식별자를 지정합니다.
 
-*type*  
+*type*<br/>
 [in] 개체의 형식을 지정합니다. 다음 값 중 하나일 수 있습니다.
 
 - 범위 창 컨텍스트에 대해 CCT_SCOPE 데이터 개체입니다.
@@ -190,16 +190,16 @@ CreatePropertyPages(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpProvider*  
+*lpProvider*<br/>
 [in] 에 대 한 포인터를 `IPropertySheetCallback` 인터페이스입니다.
 
-*handle*  
+*handle*<br/>
 [in] 적절 한 데이터 클래스에 MMCN_PROPERTY_CHANGE 알림 메시지를 라우팅하는 데 핸들을 지정 합니다.
 
-*pUnk*  
+*pUnk*<br/>
 [in] 에 대 한 포인터를 `IExtendPropertySheet` 노드에 대 한 컨텍스트 정보를 포함 하는 개체의 인터페이스입니다.
 
-*type*  
+*type*<br/>
 [in] 개체의 형식을 지정합니다. 다음 값 중 하나일 수 있습니다.
 
 - 범위 창 컨텍스트에 대해 CCT_SCOPE 데이터 개체입니다.
@@ -228,10 +228,10 @@ FillData(CLIPFORMAT cf, LPSTREAM pStream);
 
 ### <a name="parameters"></a>매개 변수
 
-*cf*  
+*cf*<br/>
 [in] 형식 (텍스트, 서식 있는 텍스트 또는 OLE 항목을 사용 하 여 서식 있는 텍스트) 클립보드의입니다.
 
-*pStream*  
+*pStream*<br/>
 [in] 개체 데이터를 포함 하는 스트림 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -250,10 +250,10 @@ GetResultViewType(
 
 ### <a name="parameters"></a>매개 변수
 
-*ppViewType*  
+*ppViewType*<br/>
 [out] 반환 된 뷰 유형의 주소에 대 한 포인터입니다.
 
-*pViewOptions*  
+*pViewOptions*<br/>
 [out] 소유 스냅인에서 지정 된 옵션을 사용 하 여 콘솔을 제공 하는 MMC_VIEW_OPTIONS 열거형에 대 한 포인터입니다. 이 값 중 하나일 수 있습니다.
 
 - MMC_VIEW_OPTIONS_NOLISTVIEWS = 0x00000001 콘솔에서 표준 목록 보기 옵션을 제공 하지 않는 것을 지시 합니다 **보기** 메뉴. 스냅인만 결과 뷰 창에서에서 자체 사용자 지정 보기를 표시할 수 있습니다. 이 이번에 정의 된 유일한 옵션 플래그입니다.
@@ -270,7 +270,7 @@ GetScopePaneInfo (SCOPEDATAITEM* pScopeDataItem);
 
 ### <a name="parameters"></a>매개 변수
 
-*pScopeDataItem*  
+*pScopeDataItem*<br/>
 [out] 에 대 한 포인터를 `SCOPEDATAITEM` 구조는 `CSnapInItemImpl` 개체입니다.
 
 ##  <a name="getresultpaneinfo"></a>  CSnapInItemImpl::GetResultPaneInfo
@@ -283,7 +283,7 @@ GetResultPaneInfo (RESULTDATAITEM* pResultDataItem);
 
 ### <a name="parameters"></a>매개 변수
 
-*pResultDataItem*  
+*pResultDataItem*<br/>
 [out] 에 대 한 포인터를 `RESULTDATAITEM` 구조는 `CSnapInItemImpl` 개체입니다.
 
 ##  <a name="m_bstrdisplayname"></a>  CSnapInItemImpl::m_bstrDisplayName
@@ -326,7 +326,7 @@ STDMETHOD(Notify)(
 
 ### <a name="parameters"></a>매개 변수
 
-*event*  
+*event*<br/>
 [in] 사용자가 수행한 작업을 식별 합니다. 다음과 같은 알림이 나타날 수 있습니다.
 
 - MMCN_ACTIVATE 전송 창이 될 때 활성화 및 비활성화 합니다.
@@ -357,19 +357,19 @@ STDMETHOD(Notify)(
 
 - MMCN_VIEW_CHANGE 스냅인 수를 업데이트할 때 모든 보기 변경 될 때 전송 합니다.
 
-*arg*  
+*arg*<br/>
 [in] 알림 유형에 따라 다릅니다.
 
-*param*  
+*param*<br/>
 [in] 알림 유형에 따라 다릅니다.
 
-*pComponentData*  
+*pComponentData*<br/>
 [out] 구현 하는 개체에 대 한 포인터 `IComponentData`합니다. 알림이 전달 되지 않고는 경우이 매개 변수는 NULL `IComponentData::Notify`합니다.
 
-*pComponent*  
+*pComponent*<br/>
 [out] 구현 하는 개체에 대 한 포인터 `IComponent`합니다. 알림이 전달 되지 않고는 경우이 매개 변수는 NULL `IComponent::Notify`합니다.
 
-*type*  
+*type*<br/>
 [in] 개체의 형식을 지정합니다. 다음 값 중 하나일 수 있습니다.
 
 - 범위 창 컨텍스트에 대해 CCT_SCOPE 데이터 개체입니다.
@@ -400,10 +400,10 @@ void SetMenuInsertionFlags(
 
 ### <a name="parameters"></a>매개 변수
 
-*bBeforeInsertion*  
+*bBeforeInsertion*<br/>
 [in] 항목의 상황에 맞는 메뉴에 추가 되기 전에 함수를 호출 해야 하는 경우 0이 아닌 값 그렇지 않으면 0입니다.
 
-*pInsertionAllowed*  
+*pInsertionAllowed*<br/>
 [out에서] 식별 Microsoft 관리 콘솔 MMC 정의 메뉴 항목 삽입 지점을 사용할 수 있는 합니다. 다음 플래그의 조합일 수 있습니다.
 
 - 상황에 맞는 메뉴의 맨 위에 있는 CCM_INSERTIONALLOWED_TOP 항목을 삽입할 수 있습니다.
@@ -433,10 +433,10 @@ void SetToolbarButtonInfo(
 
 ### <a name="parameters"></a>매개 변수
 
-*ID*  
+*ID*<br/>
 [in] ID를 설정할 도구 모음 단추입니다.
 
-*fsState*  
+*fsState*<br/>
 [in] 단추 상태 플래그입니다. 다음 중 하나 이상의 수 있습니다.
 
 - TBSTATE_CHECKED 단추 TBSTYLE_CHECKED 스타일 있으며입니다.
@@ -451,7 +451,7 @@ void SetToolbarButtonInfo(
 
 - 줄 바꿈을 TBSTATE_WRAP 단추는 다음과 같습니다. 단추는 TBSTATE_ENABLED 있어야 합니다.
 
-*fstype 이라*  
+*fstype 이라*<br/>
 [in] 단추 상태 플래그입니다. 다음 중 하나 이상의 수 있습니다.
 
 - TBSTYLE_BUTTON 표준 누름 단추를 만듭니다.
@@ -477,13 +477,13 @@ void UpdateMenuState(
 
 ### <a name="parameters"></a>매개 변수
 
-*ID*  
+*ID*<br/>
 [in] 설정 메뉴 항목의 ID입니다.
 
-*pBuf*  
+*pBuf*<br/>
 [in] 업데이트 메뉴 항목에 대 한 문자열에 대 한 포인터입니다.
 
-*flags*  
+*flags*<br/>
 [in] 새 상태 플래그를 지정합니다. 다음 플래그의 조합일 수 있습니다.
 
 - MF_POPUP 상황에 맞는 메뉴 내에서 하위 메뉴 임을 지정 합니다. 메뉴 항목, 삽입 지점 및 추가 하위 메뉴를 사용 하 여이 하위 메뉴에 추가할 수 있습니다 해당 `lCommandID` 로 해당 `IInsertionPointID`합니다.
@@ -524,10 +524,10 @@ BOOL UpdateToolbarButton(UINT id, BYTE fsState);
 
 ### <a name="parameters"></a>매개 변수
 
-*ID*  
+*ID*<br/>
 업데이트할 도구 모음 단추의 단추 ID를 지정 합니다.
 
-*fsState*  
+*fsState*<br/>
 도구 모음 단추 상태를 지정합니다. 이 상태를 설정할 경우 TRUE를 반환 합니다. 다음 플래그의 조합일 수 있습니다.
 
 - 사용자 입력을 허용 하는 단추를 사용 합니다. 이 상태 없는 단추 사용자 입력을 허용 하지 않습니다 및 회색으로 나타납니다.

@@ -20,14 +20,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 952933f72ae5d3f65aa646964ec6e04e758a27c6
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 244fea4b776f0713b6fb2281563e39d27a910a2d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103777"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704255"
 ---
 # <a name="f-set-stack-size"></a>/F(스택 크기 설정)
+
 프로그램의 스택 크기를 바이트 단위로 설정 합니다.
 
 ## <a name="syntax"></a>구문
@@ -47,9 +48,9 @@ ms.locfileid: "44103777"
 
 또한 스택 크기를 설정할 수 있습니다.
 
--   사용 하 여 **스택/** 링커 옵션입니다. 자세한 내용은 [스택/](../../build/reference/stack.md)합니다.
+- 사용 하 여 **스택/** 링커 옵션입니다. 자세한 내용은 [스택/](../../build/reference/stack.md)합니다.
 
--   .Exe 파일에서 EDITBIN를 사용합니다. 자세한 내용은 [EDITBIN 참조](../../build/reference/editbin-reference.md)합니다.
+- .Exe 파일에서 EDITBIN를 사용합니다. 자세한 내용은 [EDITBIN 참조](../../build/reference/editbin-reference.md)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
@@ -65,5 +66,5 @@ ms.locfileid: "44103777"
 
 ## <a name="see-also"></a>참고 항목
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)   
+[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

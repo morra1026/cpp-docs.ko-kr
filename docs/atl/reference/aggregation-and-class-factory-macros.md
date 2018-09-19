@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba2c1b96a1ce4db7c16695c51d946ecb98827271
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9a9cc4a142a0aefc4937df493fa87552464b4294
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752790"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043419"
 ---
 # <a name="aggregation-and-class-factory-macros"></a>집계 및 클래스 팩터리 매크로
 
@@ -67,7 +67,7 @@ DECLARE_AGGREGATABLE( x )
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 [in] 집계할 수로 정의 하는 클래스의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -131,7 +131,7 @@ DECLARE_CLASSFACTORY_EX( cf )
 
 ### <a name="parameters"></a>매개 변수
 
-*cf*  
+*cf*<br/>
 [in] 클래스 팩터리 개체를 구현 하는 클래스의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -154,7 +154,7 @@ DECLARE_CLASSFACTORY2( lic )
 
 ### <a name="parameters"></a>매개 변수
 
-*없음*  
+*없음*<br/>
 [in] 구현 하는 클래스 `VerifyLicenseKey`하십시오 `GetLicenseKey`, 및 `IsLicenseValid`합니다.
 
 ### <a name="remarks"></a>설명
@@ -178,7 +178,7 @@ class  CComClassFactory2 : public IClassFactory2,
 
 ### <a name="parameters"></a>매개 변수
 
-*라이선스*  
+*라이선스*<br/>
 다음 정적 함수를 구현 하는 클래스:
 
 - `static BOOL VerifyLicenseKey( BSTR bstr );`
@@ -249,7 +249,7 @@ DECLARE_CLASSFACTORY_SINGLETON( obj )
 
 ### <a name="parameters"></a>매개 변수
 
-*obj*  
+*obj*<br/>
 [in] 클래스 개체의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -274,7 +274,7 @@ class CComClassFactorySingleton : public CComClassFactory
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스입니다.
 
 `CComClassFactorySingleton` 파생 되 [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) 사용 하 여 [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) 단일 개체를 생성 합니다. 각 호출에는 `CreateInstance` 메서드는 단순히이 개체에 대 한 인터페이스 포인터를 쿼리 합니다.
@@ -307,7 +307,7 @@ DECLARE_NOT_AGGREGATABLE( x )
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 [in] 집계할 수 없는 것으로 정의 하는 클래스 개체의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -330,7 +330,7 @@ DECLARE_ONLY_AGGREGATABLE( x )
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 [in] 만 집계할 수로 정의 하는 클래스 개체의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -353,7 +353,7 @@ DECLARE_POLY_AGGREGATABLE( x )
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 [in] 집계할 수 또는 집계할 수 없는 정의 하는 클래스 개체의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -382,7 +382,7 @@ DECLARE_VIEW_STATUS( statusFlags )
 
 ### <a name="parameters"></a>매개 변수
 
-*statusFlags*  
+*statusFlags*<br/>
 [in] VIEWSTATUS 플래그입니다. 참조 [VIEWSTATUS](/windows/desktop/api/ocidl/ne-ocidl-tagviewstatus) 플래그의 목록은 합니다.
 
 ### <a name="example"></a>예제

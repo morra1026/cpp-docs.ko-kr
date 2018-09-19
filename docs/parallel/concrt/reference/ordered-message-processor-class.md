@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27dfb6c1a64d3a4e9df24f3966ec89db1dfbe10c
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: fa27c46db5d23c78d9f433b41f27161f0bc41736
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688767"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028573"
 ---
 # <a name="orderedmessageprocessor-class"></a>ordered_message_processor 클래스
 `ordered_message_processor`는 메시지 블록이 수신된 순서대로 메시지를 처리할 수 있도록 하는 `message_processor`입니다.  
@@ -42,8 +42,8 @@ class ordered_message_processor : public message_processor<T>;
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `T`  
- 프로세서에 의해 처리 되는 메시지의 페이로드 유형입니다.  
+*T*<br/>
+프로세서에 의해 처리 되는 메시지의 페이로드 유형입니다.  
   
 ## <a name="members"></a>멤버  
   
@@ -51,24 +51,24 @@ class ordered_message_processor : public message_processor<T>;
   
 |이름|설명|  
 |----------|-----------------|  
-|`type`|에 대 한 형식 별칭 `T`합니다.|  
+|`type`|에 대 한 형식 별칭을 `T`입니다.|  
   
 ### <a name="public-constructors"></a>Public 생성자  
   
 |이름|설명|  
 |----------|-----------------|  
 |[ordered_message_processor](#ctor)|`ordered_message_processor` 개체를 생성합니다.|  
-|[~ordered_message_processor Destructor](#dtor)|소멸 된 `ordered_message_processor` 개체입니다.|  
+|[~ordered_message_processor Destructor](#dtor)|제거 된 `ordered_message_processor` 개체입니다.|  
   
 ### <a name="public-methods"></a>Public 메서드  
   
 |이름|설명|  
 |----------|-----------------|  
-|[async_send](#async_send)|비동기적으로 메시지를 큐에 대기 하 고 이미 수행 되지 않은 경우에 처리 작업을 시작 합니다. (재정의 [message_processor:: async_send](message-processor-class.md#async_send).)|  
-|[initialize](#initialize)|초기화는 `ordered_message_processor` 적절 한 콜백 함수, 스케줄러 및 일정 그룹을 가진 개체입니다.|  
+|[async_send](#async_send)|비동기적으로 메시지를 큐에 대기 하 고 이미 수행 하지 않은 경우 처리 작업을 시작 합니다. (재정의 [message_processor:: async_send](message-processor-class.md#async_send).)|  
+|[initialize](#initialize)|초기화는 `ordered_message_processor` 적절 한 콜백 함수, 스케줄러 및 일정 그룹을 사용 하 여 개체입니다.|  
 |[initialize_batched_processing](#initialize_batched_processing)|일관 처리된 메시지 처리 초기화|  
-|[sync_send](#sync_send)|동기적으로 메시지를 큐에 대기 하 고 이미 수행 되지 않은 경우 처리 작업을 시작 합니다. (재정의 [message_processor:: sync_send](message-processor-class.md#sync_send).)|  
-|[wait](#wait)|모든 비동기 처리가 작업 시간이 블록을 삭제 하기 전에 있는지 확인 하려면 메시지 블록의 소멸자에 사용 되는 특정 프로세서 관련 스핀 대기 합니다. (재정의 [message_processor:: wait](message-processor-class.md#wait).)|  
+|[sync_send](#sync_send)|동기적으로 메시지를 큐에 대기 하 고 이미 수행 하지 않은 경우 처리 작업을를 시작 합니다. (재정의 [message_processor:: sync_send](message-processor-class.md#sync_send).)|  
+|[wait](#wait)|모든 비동기 처리 작업 블록을 제거 하기 전에 시간이 있는지 확인 하려면 메시지 블록의 소멸자에 사용 되는 특정 프로세서 관련 스핀 대기 합니다. (재정의 [message_processor:: wait](message-processor-class.md#wait).)|  
   
 ### <a name="protected-methods"></a>보호된 메서드  
   
@@ -88,19 +88,19 @@ class ordered_message_processor : public message_processor<T>;
   
 ##  <a name="async_send"></a> async_send 
 
- 비동기적으로 메시지를 큐에 대기 하 고 이미 수행 되지 않은 경우에 처리 작업을 시작 합니다.  
+ 비동기적으로 메시지를 큐에 대기 하 고 이미 수행 하지 않은 경우 처리 작업을 시작 합니다.  
   
 ```
 virtual void async_send(_Inout_opt_ message<T>* _Msg);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Msg`  
- 메시지에 대 한 포인터입니다.  
+*_Msg*<br/>
+메시지에 대 한 포인터입니다.  
   
 ##  <a name="initialize"></a> 초기화 
 
- 초기화는 `ordered_message_processor` 적절 한 콜백 함수, 스케줄러 및 일정 그룹을 가진 개체입니다.  
+ 초기화는 `ordered_message_processor` 적절 한 콜백 함수, 스케줄러 및 일정 그룹을 사용 하 여 개체입니다.  
   
 ```
 void initialize(
@@ -110,14 +110,14 @@ void initialize(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_PScheduler`  
- 간단한 작업을 예약 하는 데 사용할 스케줄러에 대 한 포인터입니다.  
+*_PScheduler*<br/>
+간단한 작업을 예약 하는 데 사용할 스케줄러에 대 한 포인터입니다.  
   
- `_PScheduleGroup`  
- 간단한 작업을 예약 하는 데 사용할 일정 그룹에 대 한 포인터입니다.  
+*_PScheduleGroup*<br/>
+간단한 작업을 예약 하는 데 사용할 일정 그룹에 대 한 포인터입니다.  
   
- `_Handler`  
- 콜백 중에 호출 처리기 함수입니다.  
+*_Handler*<br/>
+콜백 중에 호출 처리기 함수입니다.  
   
 ##  <a name="initialize_batched_processing"></a> initialize_batched_processing 
 
@@ -130,11 +130,11 @@ virtual void initialize_batched_processing(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Processor`  
- 콜백 중에 호출 프로세서 함수입니다.  
+*_Processor*<br/>
+콜백 중에 호출 처리기 함수입니다.  
   
- `_Propagator`  
- 콜백 중에 호출 전파자 함수입니다.  
+*_Propagator*<br/>
+콜백 중에 호출 전파자 함수입니다.  
   
 ##  <a name="ctor"></a> ordered_message_processor 
 
@@ -145,18 +145,18 @@ ordered_message_processor();
 ```  
   
 ### <a name="remarks"></a>설명  
- 이 `ordered_message_processor` 동기 또는 비동기 처리기 될 때까지 일정지 것입니다는 `initialize` 함수를 호출 합니다.  
+ 이 `ordered_message_processor` 될 때까지 동기 또는 비동기 처리기를 예약 하지 것입니다는 `initialize` 함수를 호출 합니다.  
   
 ##  <a name="dtor"></a> ~ordered_message_processor 
 
- 소멸 된 `ordered_message_processor` 개체입니다.  
+ 제거 된 `ordered_message_processor` 개체입니다.  
   
 ```
 virtual ~ordered_message_processor();
 ```  
   
 ### <a name="remarks"></a>설명  
- 프로세서를 제거 하기 전에 처리 중인 모든 비동기 작업을 기다립니다.  
+ 프로세서를 제거 하기 전에 모든 대기 중인 비동기 작업을 기다립니다.  
   
 ##  <a name="process_incoming_message"></a> process_incoming_message 
 
@@ -168,19 +168,19 @@ virtual void process_incoming_message();
   
 ##  <a name="sync_send"></a> sync_send 
 
- 동기적으로 메시지를 큐에 대기 하 고 이미 수행 되지 않은 경우 처리 작업을 시작 합니다.  
+ 동기적으로 메시지를 큐에 대기 하 고 이미 수행 하지 않은 경우 처리 작업을를 시작 합니다.  
   
 ```
 virtual void sync_send(_Inout_opt_ message<T>* _Msg);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Msg`  
- 메시지에 대 한 포인터입니다.  
+*_Msg*<br/>
+메시지에 대 한 포인터입니다.  
   
 ##  <a name="wait"></a> 대기 
 
- 모든 비동기 처리가 작업 시간이 블록을 삭제 하기 전에 있는지 확인 하려면 메시지 블록의 소멸자에 사용 되는 특정 프로세서 관련 스핀 대기 합니다.  
+ 모든 비동기 처리 작업 블록을 제거 하기 전에 시간이 있는지 확인 하려면 메시지 블록의 소멸자에 사용 되는 특정 프로세서 관련 스핀 대기 합니다.  
   
 ```
 virtual void wait();

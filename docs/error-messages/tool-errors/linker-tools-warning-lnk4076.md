@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f0e9a85237a47515925a5867b0f26b7321e778c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: de96bdbbc9752cd68ca78728395ad4bfdb4b01a9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301933"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018536"
 ---
 # <a name="linker-tools-warning-lnk4076"></a>링커 도구 경고 LNK4076
-잘못 된 증분 상태 파일 'filename'; 비증분 링크  
-  
- 링크 (.ilk) 증분 상태 파일에 쓸 수 없습니다. 어느 `filename` 손상 되었거나는 증분 데이터베이스는 연결 되지 않습니다. 파일 및 다시 연결을 제거 합니다.
+
+잘못 된 증분 상태 파일 'filename'; 비증분 링크
+
+링크 (.ilk) 증분 상태 파일을 쓸 수 없습니다. 두 `filename` 손상 되었거나는 증분 연결 데이터베이스가 아닙니다. 파일 및 다시 연결을 제거 합니다.

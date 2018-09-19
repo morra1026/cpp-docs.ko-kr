@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c964701f9a26c655bbb9529a112f036c7c9f0bf5
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 54911e3e9c696cd2a390dc2f5b42e3917b08014f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33685751"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037478"
 ---
 # <a name="contextunblockunbalanced-class"></a>context_unblock_unbalanced 클래스
 이 클래스는 동일한 컨텍스트에서 `Context` 개체의 `Block` 및 `Unblock` 메서드 호출 쌍이 잘못된 경우 발생하는 예외를 설명합니다.  
@@ -43,7 +43,7 @@ class context_unblock_unbalanced : public std::exception;
 |[context_unblock_unbalanced](#ctor)|오버로드됨. `context_unblock_unbalanced` 개체를 생성합니다.|  
   
 ## <a name="remarks"></a>설명  
- 에 대 한 호출이 `Block` 및 `Unblock` 의 메서드는 `Context` 개체 항상 제대로 쌍이 되어야 합니다. 동시성 런타임에서 작업을 순서를 바꿔서 수행할 수 있습니다. 예를 들어 `Block` 호출 다음에 `Unblock` 호출이 오거나 그 반대가 될 수 있습니다. 예를 들어, 두 호출 하는 경우이 예외가 throw 됩니다는 `Unblock` 메서드에서 행에 수행 된는 `Context` 차단 된 개체입니다.  
+ 에 대 한 호출을 `Block` 및 `Unblock` 의 메서드를 `Context` 개체 항상 올바르게을 이루어야 합니다. 동시성 런타임에서 작업이 어떤 순서로 든 발생할 수 있습니다. 예를 들어 `Block` 호출 다음에 `Unblock` 호출이 오거나 그 반대가 될 수 있습니다. 예를 들어,를 두 번 호출 하는 경우이 예외가 throw 됩니다 합니다 `Unblock` 메서드는 행에 수행 되었습니다를 `Context` 차단 하지는 개체입니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  `exception`  
@@ -67,8 +67,8 @@ context_unblock_unbalanced() throw();
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Message`  
- 오류 설명 메시지입니다.  
+*메시지 (_m)*<br/>
+오류 설명 메시지입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [concurrency 네임스페이스](concurrency-namespace.md)

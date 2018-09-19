@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 263667b96c052025550f4d366cd236d256e7f7a8
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: b9ba9f6c2de8260ea846b51e2192ecfb967c5502
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42543210"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719981"
 ---
 # <a name="cmfcautohidebar-class"></a>CMFCAutoHideBar 클래스
 `CMFCAutoHideBar` 클래스는 자동 숨기기 기능을 구현하는 특수 도구 모음 클래스입니다.  
@@ -94,7 +94,7 @@ class CMFCAutoHideBar : public CPane
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CMFCAutoHideBar::m_nShowAHWndDelay](#m_nshowahwnddelay)|사용자 위에 마우스 커서를 배치 하는 경우 현재 사이의 지연 시간을 [CMFCAutoHideButton 클래스](../../mfc/reference/cmfcautohidebutton-class.md) 및 프레임 워크에 연결 된 창이 표시 되는 경우 현재 합니다.|  
   
@@ -105,7 +105,7 @@ class CMFCAutoHideBar : public CPane
   
  `m_nShowAHWndDelay`를 설정하여 타이머의 지연 길이를 제어할 수 있습니다. 기본값은 400ms입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `CMFCAutoHideBar` 개체를 생성하고 해당 `GetDockSiteRow` 메서드를 사용하는 방법을 보여 줍니다.  
   
  [!code-cpp[NVC_MFC_RibbonApp#26](../../mfc/reference/codesnippet/cpp/cmfcautohidebar-class_1.cpp)]  
@@ -136,11 +136,11 @@ CMFCAutoHideButton* AddAutoHideWindow(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pAutoHideWnd*  
- 숨기려는 창입니다.  
+*pAutoHideWnd*<br/>
+[in] 숨기려는 창.  
   
- [in] *dwAlignment*  
- 응용 프로그램 창에 자동 숨기기 단추의 맞춤을 지정하는 값입니다.  
+*dwAlignment*<br/>
+[in] 응용 프로그램 창 자동 숨기기 단추의 맞춤을 지정 하는 값입니다.  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -176,8 +176,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bStretch*  
- [in] *bHorz*  
+*bStretch*<br/>
+[in] [in] *bHorz*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -207,12 +207,12 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszClassName*  
- [in] *dwStyle*  
- [in] *rect*  
- [in] *pParentWnd*  
- [in] *nID*  
- [in] *dwControlBarStyle*  
+*lpszClassName*<br/>
+[in] [in] *dwStyle*  
+*rect*<br/>
+[in] [in] *pParentWnd*  
+*nID*<br/>
+[in] [in] *dwControlBarStyle*  
  [in] *pContext*  
   
 ### <a name="return-value"></a>반환 값  
@@ -333,9 +333,7 @@ BOOL ShowAutoHideWindow(
 ### <a name="remarks"></a>설명  
   
 ##  <a name="stretchpane"></a>  CMFCAutoHideBar::StretchPane  
- 
-      
-    `CMFCAutoHideButton` 개체에 맞게 자동 숨기기 막대의 크기를 축소된 상태로 조정합니다.  
+ `CMFCAutoHideButton` 개체에 맞게 자동 숨기기 막대의 크기를 축소된 상태로 조정합니다.  
   
 ```  
 virtual CSize StretchPane(
@@ -344,11 +342,11 @@ virtual CSize StretchPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nLength*  
- 값이 기본 구현에서 사용되지 않습니다. 파생된 구현에서는 이 값을 사용하여 크기 조정된 창의 길이를 나타냅니다.  
+*nLength*<br/>
+[in] 값이 기본 구현에서 사용 되지 않습니다. 파생된 구현에서는 이 값을 사용하여 크기 조정된 창의 길이를 나타냅니다.  
   
- [in] *bVert*  
- 값이 기본 구현에서 사용되지 않습니다. 파생 된 구현에서 사용 하 여 자동 숨기기 막대 세로로 축소 된 경우 핸들 및 FALSE는 true로 설정 하면 자동 숨기기 막대가 가로로 축소 되는 경우.  
+*bVert*<br/>
+[in] 값이 기본 구현에서 사용 되지 않습니다. 파생 된 구현에서 사용 하 여 자동 숨기기 막대 세로로 축소 된 경우 핸들 및 FALSE는 true로 설정 하면 자동 숨기기 막대가 가로로 축소 되는 경우.  
   
 ### <a name="return-value"></a>반환 값  
  크기 조정된 창의 결과 크기입니다.  

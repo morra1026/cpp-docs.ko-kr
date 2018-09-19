@@ -25,12 +25,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d5f0d38ebd24c38579f73bceea0fff50ab361638
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: b158f6bedd2dba2d65f7b0778758eafe08e88851
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962782"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702912"
 ---
 # <a name="vectorltboolgt-class"></a>vector&lt;bool&gt; 클래스
 
@@ -108,7 +108,7 @@ typedef bool const_reference;
 void flip();
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // vector_bool_flip.cpp
@@ -165,7 +165,7 @@ vector&<bool&>::const_reference operator[](size_type Pos) const;
 
 _ITERATOR_DEBUG_LEVEL 집합을 사용 하 여 컴파일할 경우 벡터 경계 밖에 서 요소에 액세스 하면 런타임 오류가 발생 합니다.  자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 이 코드 예제는 `vector<bool>::operator[]`의 올바른 사용 방법과 두 가지 흔한 코딩 실수(주석 처리)를 보여 줍니다. 이러한 실수는 `vector<bool>::reference`에서 반환하는 `vector<bool>::operator[]` 개체의 주소를 가져올 수 없으므로 오류가 발생합니다.
 
@@ -227,7 +227,7 @@ bool& refb = vb[1];   // conversion error - do not use
 void flip();
 ```
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 ```cpp
 // vector_bool_ref_flip.cpp
@@ -293,13 +293,13 @@ reference& operator=(bool Val);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*  
- 해당 값을 비트에 할당할 요소 참조입니다.
+*오른쪽*<br/>
+해당 값을 비트에 할당할 요소 참조입니다.
 
-*val*  
- 비트에 할당될 부울 값입니다.
+*val*<br/>
+비트에 할당될 부울 값입니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 ```cpp
 // vector_bool_ref_op_assign.cpp
@@ -382,11 +382,11 @@ static void swap(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*  
- 사용 하 여 교환할 요소를 *오른쪽* 요소입니다.
+*왼쪽*<br/>
+사용 하 여 교환할 요소를 *오른쪽* 요소입니다.
 
-*오른쪽*  
- 사용 하 여 교환할 요소를 *왼쪽* 요소입니다.
+*오른쪽*<br/>
+사용 하 여 교환할 요소를 *왼쪽* 요소입니다.
 
 ### <a name="remarks"></a>설명
 

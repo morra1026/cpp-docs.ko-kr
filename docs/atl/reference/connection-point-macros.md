@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 226c0b0d0f1fc316d5b78884a4d6e260296c52f9
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a5b025e29c93cffe9c600646a2475f7e3230fd03
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752195"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039545"
 ---
 # <a name="connection-point-macros"></a>연결 지점 매크로
 
@@ -49,7 +49,7 @@ BEGIN_CONNECTION_POINT_MAP(x)
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 [in] 연결 지점을 포함 하는 클래스의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -73,10 +73,10 @@ CONNECTION_POINT_ENTRY_P(piid) // (Visual Studio 2017)
 
 ### <a name="parameters"></a>매개 변수
 
-*iid*  
+*iid*<br/>
 [in] 연결 지점 지도에 추가 되는 인터페이스의 GUID입니다. 
 
-*piid*  
+*piid*<br/>
 [in] Adde 되는 인터페이스의 GUID에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -111,5 +111,5 @@ Atl에서 연결 지점에 대 한 자세한 내용은 문서 참조 [연결점]
 
 ## <a name="see-also"></a>참고 항목
 
-[매크로](../../atl/reference/atl-macros.md)   
+[매크로](../../atl/reference/atl-macros.md)<br/>
 [연결 지점 전역 함수](../../atl/reference/connection-point-global-functions.md)

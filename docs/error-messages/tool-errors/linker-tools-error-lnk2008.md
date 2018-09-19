@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4ee6a8a4c4cc6d33f47d5335daa9fccd4e5fd99
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 18eda06e7f133ada4de1b7ec28ac21be205a71f7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299567"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086813"
 ---
 # <a name="linker-tools-error-lnk2008"></a>링커 도구 오류 LNK2008
-픽스업 대상이 정렬 된 'symbol_name' 아닙니다.  
-  
- 링크는 픽스업 대상을 제대로 정렬 되지 개체 파일에서 발견 했습니다.  
-  
- 이 오류를 사용자 지정 섹션 맞춤 원인일 수 있습니다 (예를 들어 #pragma [팩](../../preprocessor/pack.md)), [맞춤](../../cpp/align-cpp.md) 한정자 또는 섹션 맞춤을 수정 하는 어셈블리 언어 코드를 사용 하 여 합니다.  
-  
- 코드 위 사용 하지 않는 경우이 컴파일러에 의해 발생할 수 있습니다.
+
+픽스업 대상이 symbol_name' 맞춤된' 아닙니다.
+
+링크는 픽스업 대상이 제대로 정렬 되지 않은 하는 개체 파일에서 발견 했습니다.
+
+사용자 지정 섹션 맞춤 하 여이 오류를 발생할 수 있습니다 (예를 들어 #pragma [팩](../../preprocessor/pack.md)), [맞춤](../../cpp/align-cpp.md) 한정자 또는 섹션 맞춤을 수정 하는 어셈블리 언어 코드를 사용 하 여 합니다.
+
+코드 위의 사용 하지 않는 경우이 컴파일러에 의해 발생할 수 있습니다.

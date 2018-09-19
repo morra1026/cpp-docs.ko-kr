@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d178fcd62c39c65d9f4f8958fde3b178a074671
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 61a931ac5f9793f800157ed02ffcb7ff5071f4df
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895320"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724401"
 ---
 # <a name="h-restrict-length-of-external-names"></a>/H(외부 이름 길이 제한)
 
@@ -37,7 +37,7 @@ ms.locfileid: "43895320"
 
 ## <a name="arguments"></a>인수
 
-*수*  
+*수*<br/>
 프로그램에서 허용 하는 외부 이름의 최대 길이 지정 합니다.
 
 ## <a name="remarks"></a>설명
@@ -96,5 +96,5 @@ void func2(void) {}
 
 ## <a name="see-also"></a>참고 항목
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)   
+[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

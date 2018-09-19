@@ -23,17 +23,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4c2b4a9e185f709ff829a3b88ea9cb67741fa1c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 08a9948bb986ae57e42e37253b3b54737cf4d3f9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33330248"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714222"
 ---
 # <a name="addfsbyte-addfsword-addfsdword"></a>__addfsbyte, __addfsword, __addfsdword
 **Microsoft 전용**  
   
- 값의 시작 부분에 상대적인 오프셋으로 지정 된 메모리 위치에 추가 `FS` 세그먼트입니다.  
+ 값의 시작을 기준으로 오프셋으로 지정 된 메모리 위치에 추가 된 `FS` 세그먼트입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -53,11 +53,11 @@ void __addfsdword(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `Offset`  
- 시작 부분에서 오프셋 `FS`합니다.  
+*오프셋*<br/>
+[in] 시작 부분 으로부터의 오프셋 `FS`합니다.  
   
- [in] `Data`  
- 메모리 위치에 추가할 값입니다.  
+*Data*<br/>
+[in] 메모리 위치에 추가할 값입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   

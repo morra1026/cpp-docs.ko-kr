@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1864fb953c53cba562856fed24a44b6157a03603
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a8a4ac19f9ead379b66d93a7be031bb53bc50fe5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764217"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109347"
 ---
 # <a name="registry-data-exchange-macros"></a>레지스트리 데이터 교환 매크로
 
@@ -89,19 +89,19 @@ RDX_BINARY(
 
 ### <a name="parameters"></a>매개 변수
 
-*Rootkey*  
+*Rootkey*<br/>
 레지스트리 키 루트입니다.
 
-*하위 키*  
+*하위 키*<br/>
 레지스트리 하위 키입니다.
 
-*valuename*  
+*valuename*<br/>
 레지스트리 키입니다.
 
-*멤버*  
+*멤버*<br/>
 멤버 변수를 지정 된 레지스트리 항목 연결입니다.
 
-*member_size*  
+*member_size*<br/>
 멤버 변수를 바이트 단위로 크기입니다.
 
 ### <a name="remarks"></a>설명
@@ -123,19 +123,19 @@ RDX_CSTRING_TEXT(
 
 ### <a name="parameters"></a>매개 변수
 
-*Rootkey*  
+*Rootkey*<br/>
 레지스트리 키 루트입니다.
 
-*하위 키*  
+*하위 키*<br/>
 레지스트리 하위 키입니다.
 
-*valuename*  
+*valuename*<br/>
 레지스트리 키입니다.
 
-*멤버*  
+*멤버*<br/>
 멤버 변수를 지정 된 레지스트리 항목 연결입니다.
 
-*member_size*  
+*member_size*<br/>
 멤버 변수를 바이트 단위로 크기입니다.
 
 ### <a name="remarks"></a>설명
@@ -157,19 +157,19 @@ RDX_DWORD(
 
 ### <a name="parameters"></a>매개 변수
 
-*Rootkey*  
+*Rootkey*<br/>
 레지스트리 키 루트입니다.
 
-*하위 키*  
+*하위 키*<br/>
 레지스트리 하위 키입니다.
 
-*valuename*  
+*valuename*<br/>
 레지스트리 키입니다.
 
-*멤버*  
+*멤버*<br/>
 멤버 변수를 지정 된 레지스트리 항목 연결입니다.
 
-*member_size*  
+*member_size*<br/>
 멤버 변수를 바이트 단위로 크기입니다.
 
 ### <a name="remarks"></a>설명
@@ -191,19 +191,19 @@ RDX_TEXT(
 
 ### <a name="parameters"></a>매개 변수
 
-*Rootkey*  
+*Rootkey*<br/>
 레지스트리 키 루트입니다.
 
-*하위 키*  
+*하위 키*<br/>
 레지스트리 하위 키입니다.
 
-*valuename*  
+*valuename*<br/>
 레지스트리 키입니다.
 
-*멤버*  
+*멤버*<br/>
 멤버 변수를 지정 된 레지스트리 항목 연결입니다.
 
-*member_size*  
+*member_size*<br/>
 멤버 변수를 바이트 단위로 크기입니다.
 
 ### <a name="remarks"></a>설명
@@ -212,6 +212,6 @@ RDX_TEXT(
 
 ## <a name="see-also"></a>참고 항목
 
-[매크로](../../atl/reference/atl-macros.md)   
+[매크로](../../atl/reference/atl-macros.md)<br/>
 [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange)
 

@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe13dbe61b0a50226f82ae8fb09ab46c922309d1
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 1b9479957fdfb4d6b92ec531941808940765a9e5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406938"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116726"
 ---
 # <a name="constexpr-c"></a>constexpr(C++)
 
@@ -40,16 +40,16 @@ constexpr ctor (params);
 
 ## <a name="parameters"></a>매개 변수
 
- *params*  
+*params*<br/>
 하나 이상의 매개 변수는 리터럴 형식 이어야 하며 그 자체가 상수 식 이어야 합니다.
 
 ## <a name="return-value"></a>반환 값
 
- Constexpr 변수 또는 함수 반환 해야 합니다는 [리터럴 형식](trivial-standard-layout-and-pod-types.md#literal_types)합니다.
+Constexpr 변수 또는 함수 반환 해야 합니다는 [리터럴 형식](trivial-standard-layout-and-pod-types.md#literal_types)합니다.
 
 ## <a name="constexpr-variables"></a>constexpr 변수
 
- const 및 constexpr 변수 간의 주요 차이점은 const 변수의 초기화는 런타임까지 지연시킬 수 있는 반면 constexpr 변수는 컴파일 타임에 초기화해야 한다는 것입니다.  모든 constexpr 변수는 상수입니다.
+const 및 constexpr 변수 간의 주요 차이점은 const 변수의 초기화는 런타임까지 지연시킬 수 있는 반면 constexpr 변수는 컴파일 타임에 초기화해야 한다는 것입니다.  모든 constexpr 변수는 상수입니다.
 
 - 사용 하 여 변수를 선언할 수 있습니다 **constexpr**이면 변수가 리터럴 형식이 고 초기화 됩니다. 생성자에서 초기화는 수행 하는 경우 생성자로 선언 되어야 합니다 **constexpr**합니다.
 
@@ -91,7 +91,7 @@ Constexpr 함수에 다음 규칙이 적용 됩니다.
 다음 규칙이 적용 됩니다 **constexpr** 함수 Visual Studio 2017 이상:
 
 - 포함할 수 있습니다 **하는 경우** 및 **전환** 문과 포함 하는 모든 반복 문을 **에 대 한**에 대 한 범위 기반 **하는 동안**, 및 **수행-동안**합니다.
- 
+
 - 지역 변수 선언, 포함 될 수 있지만 변수 초기화는 리터럴 형식 이어야 하 고 정적 또는 스레드 로컬 일 수 없습니다. 로컬로 선언 된 변수는 const 일 필요가 없습니다 및 변경할 수 있습니다.
 
 - Constexpr 비정적 멤버 함수는 암시적으로 생성 될 필요가 없습니다.
@@ -113,9 +113,9 @@ constexpr float exp(float x, int n)
 
 [/zc: externconstexpr](../build/reference/zc-externconstexpr.md) 컴파일러 옵션을 사용 하면 적용할 컴파일러 [외부 링크가]() 사용 하 여 선언 된 변수를 **extern constexpr**합니다. 이전 버전의 Visual Studio 및 기본적으로 이거나 **/Zc:externConstexpr-** 지정 된 경우 Visual Studio 내부 링크에 적용 됩니다 **constexpr** 경우에도 변수는 **extern** 키워드를 사용 합니다. 합니다 **/zc: externconstexpr** 옵션은 Visual Studio 2017 업데이트 15.6부터 사용할 수 있습니다. 기본적으로 꺼져 있습니다. /permissive-option /zc: externconstexpr 활성화 되지 않습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
- 다음 예와 **constexpr** 변수, 함수 및 사용자 정의 형식입니다. Main ()의 마지막 문에서 유의 합니다 **constexpr** 멤버 함수 getvalue () 값은 컴파일 타임에 알려질 필요가 없으므로 런타임에 호출 됩니다.
+다음 예와 **constexpr** 변수, 함수 및 사용자 정의 형식입니다. Main ()의 마지막 문에서 유의 합니다 **constexpr** 멤버 함수 getvalue () 값은 컴파일 타임에 알려질 필요가 없으므로 런타임에 호출 됩니다.
 
 ```cpp
 #include <iostream>
@@ -189,5 +189,6 @@ int main()
 Visual Studio 2015
 
 ## <a name="see-also"></a>참고자료
- [선언 및 정의](../cpp/declarations-and-definitions-cpp.md)  
- [const](../cpp/const-cpp.md)
+
+[선언 및 정의](../cpp/declarations-and-definitions-cpp.md)<br/>
+[const](../cpp/const-cpp.md)

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a02110750a748b5c520df7d202a87957f227a802
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 03a9006889c5853e77b5603484ea9d18f2474241
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230998"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088373"
 ---
 # <a name="compiler-error-c2692"></a>컴파일러 오류 C2692
-'function_name': C 컴파일러에 필요한 완전히 프로토타입화 된 함수가 ' / clr' 옵션  
-  
- .NET에 대 한 컴파일을 관리 코드에 C 컴파일러에 ANSI 함수 선언이 있어야 합니다. 또한 경우 매개 변수를 사용 하는 함수를 명시적으로 선언 해야 `void` 매개 변수 형식입니다.
+
+'function_name': C 컴파일러에 완전히 프로토타입화 된 함수가 ' / clr' 옵션
+
+.NET 용 관리 코드를 하는 경우 C 컴파일러는 ANSI 함수 선언이 있어야 합니다. 또한 경우 매개 변수를 사용 하는 함수를 명시적으로 선언 해야 `void` 매개 변수 형식으로 합니다.

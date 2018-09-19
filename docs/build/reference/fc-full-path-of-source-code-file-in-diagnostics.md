@@ -18,16 +18,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a721b6887b6c5c07d96a79b06f05e6d7855250b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4d34fe85354d218d2499dbece70964c2e55e2592
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373207"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702709"
 ---
 # <a name="fc-full-path-of-source-code-file-in-diagnostics"></a>/FC(진단 소스 코드 파일의 전체 경로)
 
-컴파일러가 컴파일러 진단에 전달 된 소스 코드 파일의 전체 경로를 표시 합니다.
+컴파일러에서 진단에 컴파일러에 전달 하는 소스 코드 파일의 전체 경로 표시 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,23 +44,23 @@ int main( ) {
 }
 ```
 
-없이 **/FC**, 진단 텍스트 진단 텍스트 유사 합니다.
+없이 **/FC**, 진단 텍스트는 진단 텍스트와 비슷하게 표시 됩니다.
 
-- compiler_option_FC.cpp(5): 오류 C2143: 구문 오류: 없습니다. ';' 하기 전에 '을 (를) '
+- compiler_option_FC.cpp(5): 오류 C2143: 구문 오류: 누락 된 ';' 이전 '을 (를) '
 
-와 **/FC**, 진단 텍스트 진단 텍스트 유사 합니다.
+사용 하 여 **/FC**, 진단 텍스트는 진단 텍스트와 비슷하게 표시 됩니다.
 
-- c:\test\compiler_option_fc.cpp(5): 오류 C2143: 구문 오류: 없습니다. ';' 하기 전에 '을 (를) '
+- c:\test\compiler_option_fc.cpp(5): 오류 C2143: 구문 오류: 누락 된 ';' 이전 '을 (를) '
 
- **/FC** 이 사용 하는 경우에 파일 이름의 전체 경로 표시 하려는 경우 필요는 &#95; &#95;파일&#95; &#95; 매크로입니다. 참조 [미리 정의 된 매크로](../../preprocessor/predefined-macros.md) 대 한 자세한 내용은 &#95; &#95;파일&#95;&#95;합니다.
+**/FC** 사용 하는 경우 파일 이름의 전체 경로 표시 하려는 경우 필요 합니다 &#95; &#95;파일&#95; &#95; 매크로입니다. 참조 [미리 정의 된 매크로](../../preprocessor/predefined-macros.md) 대 한 자세한 내용은 &#95; &#95;파일&#95;&#95;합니다.
 
-**/FC** 옵션 암시 **/ZI**합니다. 에 대 한 자세한 내용은 **/ZI**, 참조 [/Z7, /Zi, /ZI (디버깅 정보 형식)](../../build/reference/z7-zi-zi-debug-information-format.md)합니다.
+합니다 **/FC** 옵션은 권한에 포함 된 **/ZI**합니다. 에 대 한 자세한 내용은 **/ZI**를 참조 하십시오 [/z7, /Zi, /ZI (디버그 정보 형식)](../../build/reference/z7-zi-zi-debug-information-format.md)합니다.
 
-**/FC** 소문자로 전체 경로 출력 합니다.
+**/FC** 소문자의 전체 경로 출력 합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
 
 1. 선택 된 **구성 속성** > **C/c + +** > **고급** 속성 페이지.
 
@@ -72,5 +72,5 @@ int main( ) {
 
 ## <a name="see-also"></a>참고 항목
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)   
+[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

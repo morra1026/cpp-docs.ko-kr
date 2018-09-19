@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b27def7f37bda8d4ed5fe5e37a8b5907b542a6ba
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c8426a0113ca245f6c9390a5c95f350398938731
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759472"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106235"
 ---
 # <a name="marshaling-global-functions"></a>마샬링 전역 함수
 
@@ -50,7 +50,7 @@ HRESULT AtlFreeMarshalStream(IStream* pStream);
 
 ### <a name="parameters"></a>매개 변수
 
-*pStream*  
+*pStream*<br/>
 [in] 에 대 한 포인터를 `IStream` 마샬링하는 데 사용 하는 스트림 인터페이스입니다.
 
 ### <a name="example"></a>예제
@@ -70,13 +70,13 @@ HRESULT AtlMarshalPtrInProc(
 
 ### <a name="parameters"></a>매개 변수
 
-*pUnk*  
+*pUnk*<br/>
 [in] 마샬링될 인터페이스에 대 한 포인터입니다.
 
-*iid*  
+*iid*<br/>
 [in] 마샬링되 인터페이스의 GUID입니다.
 
-*ppStream*  
+*ppStream*<br/>
 [out] 에 대 한 포인터를 `IStream` 마샬링에 사용 되는 새 스트림 개체의 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -108,13 +108,13 @@ HRESULT AtlUnmarshalPtr(
 
 ### <a name="parameters"></a>매개 변수
 
-*pStream*  
+*pStream*<br/>
 [in] 역마샬링 중인 스트림에 대 한 포인터입니다.
 
-*iid*  
+*iid*<br/>
 [in] 역마샬링 중인 인터페이스의 GUID입니다.
 
-*ppUnk*  
+*ppUnk*<br/>
 [out] 역마샬링 된 인터페이스 포인터입니다.
 
 ### <a name="return-value"></a>반환 값

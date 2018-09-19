@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 144fa1d85e4dd63fdb9a381fd4285ba905817851
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 31a1164ecd8ce17aec7058525598c68d312f14e0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316266"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113034"
 ---
 # <a name="nmake-fatal-error-u1077"></a>NMAKE 심각한 오류 U1077
-'프로그램': 반환 코드 'value'  
-  
- 지정 된 명령 또는 프로그램 실패 지정 된 종료 코드를 반환 하는 NMAKE에 의해 호출 됩니다.  
-  
- 이 오류를 표시 및 NMAKE 세션을 계속 /I 옵션을 사용 하 여 **합니다. 무시** 점 지시문 또는 대시 (**-**) 명령 한정자입니다. 종속성 트리의 관련 되지 않은 부분에 대 한 NMAKE 세션을 계속 하려면 /K 옵션을 사용 합니다.
+
+'프로그램': 'value' 코드를 반환 합니다.
+
+지정 된 명령이 나 프로그램 NMAKE 실패 하 고 지정 된 종료 코드를 반환 하 여 호출 합니다.
+
+이 오류를 표시 하지 않으려면 NMAKE 세션을 계속 하 고 /I 옵션을 사용 하 여 **입니다. 무시** 점 지시문 또는 대시 (**-**) 명령 한정자입니다. NMAKE 세션 중 종속성 트리에서 관련이 없는 파트에 대 한 작업을 계속 하려면 /K 옵션을 사용 합니다.

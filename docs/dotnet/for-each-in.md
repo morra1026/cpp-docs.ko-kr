@@ -1,5 +1,5 @@
 ---
-title: 각 항목에 대해에서 | Microsoft Docs
+title: 각각의 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 6ab5f7309da1a037f7066d44815cafc934b162cf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a55425c891999142fe32ae08125cce22728daffa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33111945"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040697"
 ---
 # <a name="for-each-in"></a>for each, in
-배열 또는 컬렉션을 반복합니다. 이 비표준 키워드는 C++/CLI 및 네이티브 C++ 프로젝트에서 사용할 수 있습니다. 그러나 사용하지 않는 것이 좋습니다. 표준을 사용 하는 것이 좋습니다 [범위 기반에 대 한 문 (c + +)](../cpp/range-based-for-statement-cpp.md) 대신 합니다.  
+배열 또는 컬렉션을 반복합니다. 이 비표준 키워드는 C++/CLI 및 네이티브 C++ 프로젝트에서 사용할 수 있습니다. 그러나 사용하지 않는 것이 좋습니다. 표준을 사용 하는 것이 좋습니다 [범위에 대 한 문 (c + +)를 기준으로](../cpp/range-based-for-statement-cpp.md) 대신 합니다.  
   
 ## <a name="all-runtimes"></a>모든 런타임  
  **구문**  
@@ -43,25 +43,25 @@ ms.locfileid: "33111945"
   
  **매개 변수**  
   
- `type`  
- `identifier`의 형식입니다.  
+*type*<br/>
+`identifier`의 형식입니다.  
   
- `identifier`  
- 반복 변수는 컬렉션 요소를 나타냅니다.  때 `identifier` 는 [추적 참조 연산자](../windows/tracking-reference-operator-cpp-component-extensions.md), 요소를 수정할 수 있습니다.  
+*identifier*<br/>
+반복 변수는 컬렉션 요소를 나타냅니다.  때 `identifier` 되는 [추적 참조 연산자](../windows/tracking-reference-operator-cpp-component-extensions.md), 요소를 수정할 수 있습니다.  
   
- `expression`  
- 배열 식 또는 컬렉션입니다. 컬렉션 요소는 컴파일러가 `identifier` 형식으로 변환할 수 있어야 합니다.  
+*식*<br/>
+배열 식 또는 컬렉션입니다. 컬렉션 요소는 컴파일러가 `identifier` 형식으로 변환할 수 있어야 합니다.  
   
- `statements`  
- 실행할 하나 이상의 문입니다.  
+*문*<br/>
+실행할 하나 이상의 문입니다.  
   
  **주의**  
   
  `for each` 문은 컬렉션을 반복하는 데 사용됩니다. 컬렉션의 요소를 수정할 수 있지만 요소를 추가하거나 삭제할 수 없습니다.  
   
- *문을* 배열 또는 컬렉션의 각 요소에 대해 실행 됩니다. 컬렉션의 모든 요소에 대해 반복이 완료된 후 제어가 `for each` 블록 다음 문으로 전달됩니다.  
+ 합니다 *문을* 배열 또는 컬렉션의 각 요소에 대해 실행 됩니다. 컬렉션의 모든 요소에 대해 반복이 완료된 후 제어가 `for each` 블록 다음 문으로 전달됩니다.  
   
- `for each` 및 `in` 는 [상황에 맞는 키워드](../windows/context-sensitive-keywords-cpp-component-extensions.md)합니다.  
+ `for each` 및 `in` 됩니다 [상황에 맞는 키워드](../windows/context-sensitive-keywords-cpp-component-extensions.md)합니다.  
   
  추가 정보  
   
@@ -118,12 +118,12 @@ Testing
 ## <a name="common-language-runtime"></a>공용 언어 런타임 
  **주의**  
   
- CLR 구문은 동일는 **모든 런타임** 구문을 다음과 같이 제외 하 고 있습니다.  
+ CLR 구문은 동일 합니다 **모든 런타임** 구문을 다음과 같이 제외 합니다.  
   
  *식*  
- 관리되는 배열 식 또는 컬렉션입니다. 컬렉션 요소는 컴파일러에서 변환할 수 있도록 있어야 <xref:System.Object> 에 *식별자* 유형입니다.  
+ 관리되는 배열 식 또는 컬렉션입니다. 컬렉션 요소는 컴파일러에서 변환할 수 있도록 해야 합니다. <xref:System.Object> 에 *식별자* 형식입니다.  
   
- *식* 구현 하는 형식으로 계산 <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, 또는 형식이 정의 하는 `GetEnumerator` 형식을 반환 하거나 메서드를 구현 하는 <xref:System.Collections.IEnumerator> 모든 에정의된메서드를선언하거나`IEnumerator`.  
+ *식* 를 구현 하는 형식으로 계산 될 <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, 또는 정의 하는 형식을 `GetEnumerator` 구현 하는 형식을 반환 하거나 하는 메서드가 <xref:System.Collections.IEnumerator> 에정의된메서드의모든선언또는`IEnumerator`.  
   
 ### <a name="requirements"></a>요구 사항  
  컴파일러 옵션: **/clr**  

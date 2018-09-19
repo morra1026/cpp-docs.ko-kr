@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c90d3a5bb880ad10dcc4fb24d31fdc107f898840
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fe19b079a0407f07796bd8141db2cbedaf02cbbb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320345"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032967"
 ---
 # <a name="resource-compiler-fatal-error-rc1020"></a>리소스 컴파일러 심각한 오류 RC1020
-예기치 않은 ' #endif'  
-  
- `#endif` 지시문 짝이 되는 없이 나타난 `#if`, **#ifdef**, 또는 **#ifndef** 지시문입니다.  
-  
- 짝이 되는 없는지 확인 `#endif` 각 `#if`, **#ifdef**, 및 **#ifndef** 문.
+
+예기치 않은 ' #endif'
+
+`#endif` 일치 하는 없이 지시문 나타난 `#if`를 **#ifdef**, 또는 **#ifndef** 지시문입니다.
+
+있는지는 일치 하는 `#endif` 마다 `#if`를 **#ifdef**, 및 **#ifndef** 문입니다.

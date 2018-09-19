@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b31e8c712ef7c395570912224f75036e6249b431
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 85e772b9222f2066259042e551fa393758559ab2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761971"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115881"
 ---
 # <a name="ipersiststreaminitimpl-class"></a>IPersistStreamInitImpl 클래스
 
@@ -42,14 +42,14 @@ ms.locfileid: "43761971"
 ## <a name="syntax"></a>구문
 
 ```
-template<class T>  
+template<class T>
 class ATL_NO_VTABLE IPersistStreamInitImpl 
    : public IPersistStreamInit
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `IPersistStreamInitImpl`합니다.
 
 ## <a name="members"></a>멤버
@@ -163,5 +163,5 @@ ATL 개체의 속성 맵에 사용 하 여이 정보를 저장 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[저장소 및 스트림](/windows/desktop/Stg/storages-and-streams)   
+[저장소 및 스트림](/windows/desktop/Stg/storages-and-streams)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

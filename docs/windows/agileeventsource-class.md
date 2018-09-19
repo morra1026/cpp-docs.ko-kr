@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 40259a559389e274b6aaaa67bb215249c96a97ba
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8efebf67d87decef1fb6e53f2efa42acc9ac487c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611034"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068522"
 ---
 # <a name="agileeventsource-class"></a>AgileEventSource 클래스
 
@@ -38,10 +38,10 @@ class AgileEventSource
 
 ## <a name="parameters"></a>매개 변수
 
-*TDelegateInterface*  
+*TDelegateInterface*<br/>
 인터페이스 이벤트 처리기를 나타내는 대리자입니다.
 
-*TEventSourceOptions*  
+*TEventSourceOptions*<br/>
 [InvokeModeOptions](invokemodeoptions-structure.md) invokeMode 필드를로 갖는 `InvokeMode::StopOnFirstError` 또는 `InvokeMode::FireAll`합니다.
 
 ## <a name="remarks"></a>설명
@@ -51,6 +51,7 @@ class AgileEventSource
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
 `EventSource`
+
 `AgileEventSource`
 
 ## <a name="requirements"></a>요구 사항

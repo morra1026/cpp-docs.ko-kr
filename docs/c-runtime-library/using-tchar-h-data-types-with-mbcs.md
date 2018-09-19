@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 066459593be4970fde141333a6f22f0846f8bbc4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fc14f5831904e2fea9bfa7ef7607f2085d1f0e58
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32412653"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46061268"
 ---
 # <a name="using-tcharh-data-types-with-mbcs"></a>_MBCS와 TCHAR.H 데이터 형식 사용
 
@@ -35,7 +35,7 @@ ms.locfileid: "32412653"
 
 - MBCS 관련 루틴. 이 경우 문자열 인수는 __unsigned char&#42;__ 형식이어야 합니다. 예를 들어 **_tcsrev**는 **_mbsrev**에 매핑되며, __unsigned char&#42;__ 형식의 문자열을 반환합니다. 마찬가지로 문자열 형식으로 **_TCHAR** 일반 텍스트 데이터 형식을 사용하는 경우, **_TCHAR**이 **char** 형식에 매핑되므로 잠재적인 형식 충돌이 있습니다.
 
- 이러한 형식 충돌(및 이로 인한 C 컴파일러 경고 또는 C++ 컴파일러 오류)을 방지하기 위한 방법으로는 다음 세 가지가 있습니다.
+이러한 형식 충돌(및 이로 인한 C 컴파일러 경고 또는 C++ 컴파일러 오류)을 방지하기 위한 방법으로는 다음 세 가지가 있습니다.
 
 - 기본 동작을 사용합니다. TCHAR.H는 다음 예제와 같이 런타임 라이브러리의 루틴에 일반 텍스트 루틴 프로토타입을 제공합니다.
 

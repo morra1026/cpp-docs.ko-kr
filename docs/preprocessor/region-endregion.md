@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e6ec22be873dcec06f224913eb905a2779e4efd
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: dac2df26f393b7491d94abdb6d987a8e424723e1
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42544435"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715561"
 ---
 # <a name="region-endregion"></a>region, endregion
 `#pragma region` 확장 하거나 사용 하는 경우 축소할 수 있는 코드 블록을 지정할 수 있습니다 합니다 [개요 기능](/visualstudio/ide/outlining) Visual Studio 코드 편집기입니다.  
@@ -40,11 +40,11 @@ ms.locfileid: "42544435"
 ```  
   
 ### <a name="parameters"></a>매개 변수  
-*주석* (선택 사항)  
-코드 편집기에 표시될 주석입니다.  
+*comment*  
+(선택 사항) 코드 편집기에 표시 되는 주석입니다.  
   
-*name* (선택 사항)  
-영역의 이름입니다.  이 이름은 코드 편집기에 표시됩니다.  
+*name*  
+(선택 사항) 영역의 이름입니다.  이 이름은 코드 편집기에 표시됩니다.  
   
 ## <a name="remarks"></a>설명  
  
@@ -52,7 +52,7 @@ ms.locfileid: "42544435"
   
 A `#region` 블록으로 종결 되어야 합니다 `#pragma endregion`합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```cpp  
 // pragma_directives_region.cpp  

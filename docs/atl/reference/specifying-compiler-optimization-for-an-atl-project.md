@@ -19,32 +19,32 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95df1e21bee99914d2f20f194d68e5bfae29e203
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 622c0720f55e638d6640094f095e59d2d5e5f931
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763557"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069341"
 ---
 # <a name="specifying-compiler-optimization-for-an-atl-project"></a>ATL 프로젝트에 대 한 컴파일러 최적화 지정
 
 기본적으로 [ATL 컨트롤 마법사](../../atl/reference/atl-control-wizard.md) ATL_NO_VTABLE 매크로 사용 하 여 새 클래스를 다음과 같이 생성 합니다.
 
-```  
-class ATL_NO_VTABLE CProjName  
-{  
-...  
-};  
+```
+class ATL_NO_VTABLE CProjName
+{
+...
+};
 ```
 
 그런 다음 ATL _ATL_NO_VTABLE를 다음과 같이 정의합니다.
 
-```  
-#ifdef _ATL_DISABLE_NO_VTABLE  
-#define ATL_NO_VTABLE  
-#else  
-#define ATL_NO_VTABLE __declspec(novtable)  
-#endif  
+```
+#ifdef _ATL_DISABLE_NO_VTABLE
+#define ATL_NO_VTABLE
+#else
+#define ATL_NO_VTABLE __declspec(novtable)
+#endif
 ```
 
 ATL_NO_VTABLE 매크로 확장 하 여 _ATL_DISABLE_NO_VTABLE를 정의 하지 않는 경우 `declspec(novtable)`합니다. 사용 하 여 `declspec(novtable)`클래스에서 선언에서 클래스 생성자와 소멸자에서 초기화 된 vtable 포인터를 방지 합니다. 프로젝트를 빌드할 때 링커 vtable 및 vtable 가리키는 모든 함수를 제거 합니다.
@@ -55,19 +55,19 @@ ATL_NO_VTABLE를 사용 해야 및 결과적으로 `declspec(novtable)`, 직접 
 
 사용 해야 할지 확실 하지 않은 경우는 `declspec(novtable)` 한정자 ATL_NO_VTABLE 매크로, 모든 클래스 정의에서 제거 하거나 지정 하 여 전역적으로 비활성화할 수 있습니다
 
-```  
-#define _ATL_DISABLE_NO_VTABLE  
+```
+#define _ATL_DISABLE_NO_VTABLE
 ```
 
 stdafx.h, 다른 모든 ATL 하기 전에 헤더 파일이 포함 됩니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)   
-[Visual C++ 프로젝트 형식](../../ide/visual-cpp-project-types.md)   
-[응용 프로그램 마법사를 사용하여 데스크톱 프로젝트 만들기](../../ide/creating-desktop-projects-by-using-application-wizards.md)   
-[ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)   
-[ATL COM 개체의 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)   
-[novtable](../../cpp/novtable.md)   
+[ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)<br/>
+[Visual C++ 프로젝트 형식](../../ide/visual-cpp-project-types.md)<br/>
+[응용 프로그램 마법사를 사용하여 데스크톱 프로젝트 만들기](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
+[ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
+[ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)<br/>
+[novtable](../../cpp/novtable.md)<br/>
 [기본 ATL 프로젝트 구성](../../atl/reference/default-atl-project-configurations.md)
 

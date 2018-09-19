@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 775d559c332e37e91be2b89b10e046e0f8c1abd7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cd6cd35d20f4ce0377aa5ae5cd66cd8c08004fb8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168557"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021682"
 ---
 # <a name="compiler-error-c2231"></a>컴파일러 오류 C2231
-'.': 왼쪽 피연산자 포인트 s-k'를 사용 하세요. '->'  
-  
- 멤버 선택 연산 (.)의 왼쪽에 있는 피연산자는 클래스, 구조체 또는 공용 구조체 대신 포인터입니다.  
-  
- 다음 샘플에서는 C2231을 생성합니다.  
-  
-```  
-// C2231.c  
-struct S {  
-   int member;  
-} s, *ps = &s;  
-int main() {  
-   ps.member = 0;   // C2231  
-  
-   // OK  
-   ps->member = 0;   // crash  
-   s.member = 0;  
-}  
+
+'.': 왼쪽 피연산자를 가리킵니다 ' 클래스 키 ', '->' 사용
+
+멤버 선택 연산자 (.)의 왼쪽 피연산자는 클래스, 구조체 또는 공용 구조체 대신 포인터입니다.
+
+다음 샘플에서는 C2231을 생성합니다.
+
+```
+// C2231.c
+struct S {
+   int member;
+} s, *ps = &s;
+int main() {
+   ps.member = 0;   // C2231
+
+   // OK
+   ps->member = 0;   // crash
+   s.member = 0;
+}
 ```

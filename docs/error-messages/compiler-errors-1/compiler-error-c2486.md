@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 856d17d9ec816c8216553eca5bb273349ca0040e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 106d70c031a6981157875c86b1332bbe3be8a668
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197288"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081730"
 ---
 # <a name="compiler-error-c2486"></a>컴파일러 오류 C2486
-' __LOCAL_SIZE' 'naked' 특성이 있는 함수에만 사용할 수  
-  
- 인라인 어셈블리 함수 이름에서에서 `__LOCAL_SIZE` 으로 선언 된 함수의 예약 되는 [naked](../../cpp/naked-cpp.md) 특성입니다.  
-  
- 다음 샘플에서는 C2486 오류가 생성 됩니다.  
-  
-```  
-// C2486.cpp  
-// processor: x86  
-void __declspec(naked) f1() {  
-   __asm {  
-      mov   eax,   __LOCAL_SIZE  
-   }  
-}  
-void f2() {  
-   __asm {  
-      mov   eax,   __LOCAL_SIZE   // C2486  
-   }  
-}  
+
+' __LOCAL_SIZE' 'naked' 특성이 있는 함수에만 사용할 수
+
+인라인 어셈블리 함수에서 이름 `__LOCAL_SIZE` 으로 선언 된 함수에 대해 예약 된 [naked](../../cpp/naked-cpp.md) 특성입니다.
+
+다음 샘플에서는 C2486를 생성합니다.
+
+```
+// C2486.cpp
+// processor: x86
+void __declspec(naked) f1() {
+   __asm {
+      mov   eax,   __LOCAL_SIZE
+   }
+}
+void f2() {
+   __asm {
+      mov   eax,   __LOCAL_SIZE   // C2486
+   }
+}
 ```

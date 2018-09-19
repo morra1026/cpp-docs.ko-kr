@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb7218d7fc8886cffdcce13f09a682fdc635f84f
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a8ee35df4b6ee792cd91f1b294259544e8944509
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759930"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089049"
 ---
 # <a name="atlbasemodule70-structure"></a>_ATL_BASE_MODULE70 구조체
 
@@ -47,28 +47,28 @@ struct _ATL_BASE_MODULE70 {
 
 ## <a name="members"></a>멤버
 
-`cbSize`  
+`cbSize`<br/>
 버전 관리에 사용 되는 구조체의 크기입니다.
 
-`m_hInst`  
+`m_hInst`<br/>
 `hInstance` (exe 또는 dll)이이 모듈에 대 한 합니다.
 
-`m_hInstResource`  
+`m_hInstResource`<br/>
 기본 인스턴스 리소스 핸들입니다.
 
-`m_bNT5orWin98`  
+`m_bNT5orWin98`<br/>
 운영 체제 버전 정보입니다. ATL.에서 내부적으로 사용
 
-`dwAtlBuildVer`  
+`dwAtlBuildVer`<br/>
 ATL.의 버전을 저장 현재 0x0700 합니다.
 
-`pguidVer`  
+`pguidVer`<br/>
 ATL의 내부 GUID입니다.
 
-`m_csResource`  
+`m_csResource`<br/>
 에 대 한 액세스를 동기화 하는 데는 `m_rgResourceInstance` 배열입니다. ATL.에서 내부적으로 사용
 
-`m_rgResourceInstance`  
+`m_rgResourceInstance`<br/>
 ATL은 인식 되는 모든 리소스 인스턴스에 대 한 리소스를 검색 하는 데 사용 하는 배열입니다. ATL.에서 내부적으로 사용
 
 ## <a name="remarks"></a>설명

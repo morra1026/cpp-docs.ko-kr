@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d08529006e54427e4327ce96666e551046c07e2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 926a2bcca82fb76e4fb13450531a9ceb0089c979
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33276687"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052980"
 ---
 # <a name="compiler-warning-level-1-c4550"></a>컴파일러 경고(수준 1) C4550
-식이 인수 목록이 없는 함수로 계산  
-  
- 함수에 대 한 역참조 포인터에 인수 목록이 없습니다.  
-  
-## <a name="example"></a>예제  
-  
-```  
-// C4550.cpp  
-// compile with: /W1  
-bool f()  
-{  
-   return true;  
-}  
-  
-typedef bool (*pf_t)();  
-  
-int main()  
-{  
-   pf_t pf = f;  
-   if (*pf) {}  // C4550  
-   return 0;  
-}  
+
+식이 인수 목록이 없는 함수로 계산
+
+함수에 대 한 포인터 역참조는 인수 목록이 없습니다.
+
+## <a name="example"></a>예제
+
+```
+// C4550.cpp
+// compile with: /W1
+bool f()
+{
+   return true;
+}
+
+typedef bool (*pf_t)();
+
+int main()
+{
+   pf_t pf = f;
+   if (*pf) {}  // C4550
+   return 0;
+}
 ```

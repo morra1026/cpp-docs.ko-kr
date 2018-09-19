@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af944c56dfd579c608edd48b22925480f16d05c4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 05af2bd4f1dc3403f5ecbb3254564292698624aa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198523"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045096"
 ---
 # <a name="compiler-error-c2531"></a>컴파일러 오류 C2531
-'identifier': 비트 필드 잘못에 대 한 참조  
-  
- 비트 필드에 대 한 참조는 허용 되지 않습니다.  
-  
- 다음 샘플에서는 C2531 오류가 생성 됩니다.  
-  
-```  
-// C2531.cpp  
-// compile with: /c  
-class P {  
-   int &b1 : 10;   // C2531  
-   int b2 : 10;   // OK  
-};  
+
+'identifier': 비트 필드 잘못 된에 대 한 참조
+
+비트 필드에 대 한 참조는 허용 되지 않습니다.
+
+다음 샘플에서는 C2531 오류가 생성 됩니다.
+
+```
+// C2531.cpp
+// compile with: /c
+class P {
+   int &b1 : 10;   // C2531
+   int b2 : 10;   // OK
+};
 ```

@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 96f07f14c73ce6e42b8bbc057aa35c5a0f63f6ee
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ef56a4e580e8c62db7f8c8c818a84acec0214672
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301751"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46048268"
 ---
 # <a name="compiler-warning-level-4-c4725"></a>컴파일러 경고(수준 4) C4725
-명령이 일부 Pentium에서 정확하지 않을 수 있습니다.  
-  
- 코드에 일부 Pentium 마이크로프로세서에서 정확한 결과를 생성하지 않을 수 있는 인라인 어셈블리 명령이 포함되어 있습니다.  
-  
- 다음 샘플에서는 C4725를 생성합니다.  
-  
-```  
-// C4725.cpp  
-// compile with: /W4  
-// processor: x86  
-double m32fp = 2.0003e-17;  
-  
-void f() {  
-   __asm  
-   {  
-      FDIV m32fp   // C4725  
-   }  
-}  
-  
-int main() {  
-}  
+
+명령이 일부 Pentium에서 정확하지 않을 수 있습니다.
+
+코드에 일부 Pentium 마이크로프로세서에서 정확한 결과를 생성하지 않을 수 있는 인라인 어셈블리 명령이 포함되어 있습니다.
+
+다음 샘플에서는 C4725를 생성합니다.
+
+```
+// C4725.cpp
+// compile with: /W4
+// processor: x86
+double m32fp = 2.0003e-17;
+
+void f() {
+   __asm
+   {
+      FDIV m32fp   // C4725
+   }
+}
+
+int main() {
+}
 ```

@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1065d412a2f977e1784ba739d1226d08e28bc8ea
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 97423da084c005e427b21043e75ebe850623c63b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33289960"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055314"
 ---
 # <a name="compiler-warning-level-3-c4557"></a>컴파일러 경고(수준 3) C4557
-'__assume'에 'effect' 효과가 있습니다.  
-  
- 에 전달 된 값은 [__assume](../../intrinsics/assume.md) statement2 수정 되었습니다.  
-  
- 기본적으로 이 경고는 해제되어 있습니다. 자세한 내용은 [기본적으로 해제되어 있는 컴파일러 경고](../../preprocessor/compiler-warnings-that-are-off-by-default.md) 를 참조하세요.  
-  
- 다음 샘플에서는 C4557 오류가 생성 됩니다.  
-  
-```  
-// C4557.cpp  
-// compile with: /W3  
-#pragma warning(default : 4557)  
-int main()  
-{  
-   int i;  
-   __assume(i++);   // C4557  
-}  
+
+'__assume'에 'effect' 효과가 있습니다.
+
+전달 되는 값을 [__assume](../../intrinsics/assume.md) 문 2 수정 되었습니다.
+
+기본적으로 이 경고는 해제되어 있습니다. 자세한 내용은 [기본적으로 해제되어 있는 컴파일러 경고](../../preprocessor/compiler-warnings-that-are-off-by-default.md) 를 참조하세요.
+
+다음 샘플에서는 C4557 오류가 생성 됩니다.
+
+```
+// C4557.cpp
+// compile with: /W3
+#pragma warning(default : 4557)
+int main()
+{
+   int i;
+   __assume(i++);   // C4557
+}
 ```

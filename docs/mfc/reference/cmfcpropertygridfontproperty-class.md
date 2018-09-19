@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9e90570e783b2c42081da4854d54a65d1bdb9b6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 33c719ffcba207beb4a5f867192af2b98aef2797
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43208868"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719942"
 ---
 # <a name="cmfcpropertygridfontproperty-class"></a>CMFCPropertyGridFontProperty 클래스
 `CMFCPropertyGridFileProperty` 클래스 글꼴 선택 대화 상자를 여는 속성 목록 컨트롤 항목을 지원 합니다.  
@@ -83,23 +83,23 @@ CMFCPropertyGridFontProperty(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *strName*  
- 속성의 이름입니다.  
+*strName*<br/>
+[in] 속성의 이름입니다.  
   
- [in] *lf*  
- 글꼴의 특성을 지정 하는 논리 글꼴 구조입니다.  
+*lf*<br/>
+[in] 글꼴의 특성을 지정 하는 논리 글꼴 구조입니다.  
   
- [in] *dwFontDialogFlags*  
- 속성 값 드롭다운 단추를 클릭할 때 표시 되는 글꼴 대화 상자에 적용 되는 스타일입니다. 기본값은 CF_EFFECTS 및 CF_SCREENFONTS의 비트 조합 (OR)입니다. 자세한 내용은 참조는 *플래그* 의 매개 변수를 [CHOOSEFONT 구조](/windows/desktop/api/commdlg/ns-commdlg-tagchoosefonta)합니다.  
+*dwFontDialogFlags*<br/>
+[in] 속성 값 드롭다운 단추를 클릭할 때 표시 되는 글꼴 대화 상자에 적용 되는 스타일입니다. 기본값은 CF_EFFECTS 및 CF_SCREENFONTS의 비트 조합 (OR)입니다. 자세한 내용은 참조는 *플래그* 의 매개 변수를 [CHOOSEFONT 구조](/windows/desktop/api/commdlg/ns-commdlg-tagchoosefonta)합니다.  
   
- [in] *lpszDescr*  
- Font 속성의 설명입니다. 기본값은 NULL입니다.  
+*lpszDescr*<br/>
+[in] Font 속성의 설명입니다. 기본값은 NULL입니다.  
   
- [in] *dwData*  
- 응용 프로그램별 데이터, 정수 등의 속성을 사용 하 여 연결 된 다른 데이터에 대 한 포인터입니다. 기본값은 0입니다.  
+*dwData*<br/>
+[in] 응용 프로그램별 데이터, 정수 등의 속성을 사용 하 여 연결 된 다른 데이터에 대 한 포인터입니다. 기본값은 0입니다.  
   
- [in] *색*  
- 글꼴의 색입니다. 기본값은 기본 색입니다.  
+*색*<br/>
+[in] 글꼴의 색입니다. 기본값은 기본 색입니다.  
   
 ### <a name="remarks"></a>설명  
  `CMFCPropertyGridFontProperty` 개체 속성 표 글꼴 컨트롤의 글꼴 속성을 나타냅니다.  

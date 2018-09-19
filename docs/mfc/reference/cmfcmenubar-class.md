@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2933ed9fbb9a464b4458ce357ce196f2ae9df8f6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: fa6af27d314a4c4421230a9088ead6f3d9e53af3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43196384"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723010"
 ---
 # <a name="cmfcmenubar-class"></a>CMFCMenuBar 클래스
 도킹을 구현하는 메뉴 모음입니다.  
@@ -265,8 +265,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bStretch*  
- [in] *bHorz*  
+*bStretch*<br/>
+[in] [in] *bHorz*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -282,8 +282,8 @@ virtual CSize CalcLayout(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwMode*  
- [in] *nLength*  
+*dwMode*<br/>
+[in] [in] *nLength*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -333,14 +333,14 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pParentWnd*  
- 새 부모 창에 대 한 포인터 `CMFCMenuBar` 개체입니다.  
+*pParentWnd*<br/>
+[in] 새 부모 창에 대 한 포인터 `CMFCMenuBar` 개체입니다.  
   
- [in] *dwStyle*  
- 새 메뉴의 스타일입니다.  
+*dwStyle*<br/>
+[in] 새 메뉴의 스타일입니다.  
   
- [in] *nID*  
- 메뉴 모음의 자식 창에 대 한 ID입니다.  
+*nID*<br/>
+[in] 메뉴 모음의 자식 창에 대 한 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 TRUE이고, 실패하면 FALSE입니다.  
@@ -366,20 +366,20 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pParentWnd*  
- 새 부모 창에 대 한 포인터 `CMFCMenuBar` 개체입니다.  
+*pParentWnd*<br/>
+[in] 새 부모 창에 대 한 포인터 `CMFCMenuBar` 개체입니다.  
   
- [in] *dwCtrlStyle*  
- 새 메뉴 모음에 대 한 추가 스타일입니다.  
+*dwCtrlStyle*<br/>
+[in] 새 메뉴 모음에 대 한 추가 스타일입니다.  
   
- [in] *dwStyle*  
- 새 메뉴 표시줄의 기본 스타일입니다.  
+*dwStyle*<br/>
+[in] 새 메뉴 표시줄의 기본 스타일입니다.  
   
- [in] *rcBorders*  
- A `CRect` 테두리에 대 한 크기를 지정 하는 매개 변수는 `CMFCMenuBar` 개체입니다.  
+*rcBorders*<br/>
+[in] A `CRect` 테두리에 대 한 크기를 지정 하는 매개 변수는 `CMFCMenuBar` 개체입니다.  
   
- [in] *nID*  
- 메뉴 모음의 자식 창에 대 한 ID입니다.  
+*nID*<br/>
+[in] 메뉴 모음의 자식 창에 대 한 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -406,14 +406,14 @@ virtual void CreateFromMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hMenu*  
- 메뉴 리소스 핸들입니다. `CreateFromMenu` 이 리소스에 대 한 템플릿으로 사용 하 여 `CMFCMenuBar`입니다.  
+*hMenu*<br/>
+[in] 메뉴 리소스 핸들입니다. `CreateFromMenu` 이 리소스에 대 한 템플릿으로 사용 하 여 `CMFCMenuBar`입니다.  
   
- [in] *bDefaultMenu*  
- 기본 메뉴에 새 메뉴에 인지 여부를 나타내는 부울입니다.  
+*bDefaultMenu*<br/>
+[in] 기본 메뉴에 새 메뉴에 인지 여부를 나타내는 부울입니다.  
   
- [in] *bForceUpdate*  
- 이 메서드는 메뉴 업데이트 강제 여부를 나타내는 부울입니다.  
+*bForceUpdate*<br/>
+[in] 이 메서드는 메뉴 업데이트 강제 여부를 나타내는 부울입니다.  
   
 ### <a name="remarks"></a>설명  
  메뉴 리소스와 동일한 메뉴 항목이 메뉴 컨트롤을 원하는 경우이 메서드를 사용 합니다. 호출 하면 후이 메서드를 호출 하면 [CMFCMenuBar::Create](#create) 하거나 [CMFCMenuBar::CreateEx](#createex)합니다.  
@@ -429,14 +429,14 @@ void EnableHelpCombobox(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiID*  
- 단추에 대 한 명령 ID를 **도움말** 콤보 상자입니다.  
+*uiID*<br/>
+[in] 단추에 대 한 명령 ID를 **도움말** 콤보 상자입니다.  
   
- [in] *lpszPrompt*  
- 비어 있고 활성화 되지 않은 경우 콤보 상자에 표시 되는 프레임 워크는 텍스트를 포함 하는 문자열입니다. 예를 들어, "텍스트를 입력 하십시오 여기"입니다.  
+*lpszPrompt*<br/>
+[in] 비어 있고 활성화 되지 않은 경우 콤보 상자에 표시 되는 프레임 워크는 텍스트를 포함 하는 문자열입니다. 예를 들어, "텍스트를 입력 하십시오 여기"입니다.  
   
- [in] *nComboBoxWidth*  
- 픽셀에서 콤보 상자 단추의 너비입니다.  
+*nComboBoxWidth*<br/>
+[in] 픽셀에서 콤보 상자 단추의 너비입니다.  
   
 ### <a name="remarks"></a>설명  
  **도움말** 콤보 상자와 유사 합니다 **도움말** Microsoft Word의 메뉴 모음에서 콤보 상자입니다.  
@@ -451,8 +451,8 @@ static void EnableMenuShadows(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 팝업 메뉴에 대 한 그림자를 사용 해야 하는지 여부를 나타내는 부울 매개 변수입니다.  
+*bEnable*<br/>
+[in] 팝업 메뉴에 대 한 그림자를 사용 해야 하는지 여부를 나타내는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드를 사용 하는 알고리즘은 복잡 하며 속도가 느린 시스템 응용 프로그램의 성능이 저하 될 수 있습니다.  
@@ -558,8 +558,8 @@ static const CFont& GetMenuFont(BOOL bHorz = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bHorz*  
- 가로 또는 세로 글꼴을 반환할지 여부를 지정 하는 부울 매개 변수입니다. True 이면 가로 글꼴을 나타냅니다.  
+*bHorz*<br/>
+[in] 가로 또는 세로 글꼴을 반환할지 여부를 지정 하는 부울 매개 변수입니다. True 이면 가로 글꼴을 나타냅니다.  
   
 ### <a name="return-value"></a>반환 값  
  에 대 한 포인터를 [CFont](../../mfc/reference/cfont-class.md) 현재 메뉴 표시줄 글꼴을 포함 하는 매개 변수입니다.  
@@ -575,8 +575,8 @@ CMFCToolBarButton* GetMenuItem(int iItem) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iItem*  
- 반환할 메뉴 항목의 인덱스입니다.  
+*iItem*<br/>
+[in] 반환할 메뉴 항목의 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  에 대 한 포인터를 `CMFCToolBarButton` 으로 지정 된 인덱스와 일치 하는 개체 *iItem*합니다. 인덱스가 유효 하지 않은 경우 NULL입니다.  
@@ -602,8 +602,8 @@ CMFCToolBarMenuButtonsButton* GetSystemButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiBtn*  
- [in] *bByCommand*  
+*uiBtn*<br/>
+[in] [in] *bByCommand*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -639,8 +639,8 @@ static void HighlightDisabledItems(BOOL bHighlight = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bHighlight*  
- 프레임 워크를 사용할 수 없는 메뉴 항목을 강조 표시 하는지 여부를 나타내는 부울 매개 변수입니다.  
+*bHighlight*<br/>
+[in] 프레임 워크를 사용할 수 없는 메뉴 항목을 강조 표시 하는지 여부를 나타내는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로 프레임 워크를 강조 표시 하지 않습니다 사용할 수 없는 메뉴 항목 위로 마우스 포인터를 놓을 때.  
@@ -740,14 +740,14 @@ virtual BOOL LoadState(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszProfileName*  
- Windows 레지스트리 키의 경로 포함 하는 문자열입니다.  
+*lpszProfileName*<br/>
+[in] Windows 레지스트리 키의 경로 포함 하는 문자열입니다.  
   
- [in] *nIndex*  
- 메뉴 모음에 대 한 컨트롤 ID입니다.  
+*nIndex*<br/>
+[in] 메뉴 모음에 대 한 컨트롤 ID입니다.  
   
- [in] *uiID*  
- 예약 된 값입니다.  
+*uiID*<br/>
+[in] 예약 된 값입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -777,8 +777,8 @@ virtual void OnDefaultMenuLoaded(HMENU hMenu);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hMenu*  
- 에 연결 된 메뉴에 대 한 핸들을 `CMFCMenuBar` 개체입니다.  
+*hMenu*<br/>
+[in] 에 연결 된 메뉴에 대 한 핸들을 `CMFCMenuBar` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  이 함수의 기본 구현은 아무 작업도 수행하지 않습니다. 프레임 워크 리소스 파일에서 메뉴 리소스를 로드 한 후 사용자 지정 코드를 실행 하려면이 함수를 재정의 합니다.  
@@ -805,8 +805,8 @@ virtual BOOL OnSetDefaultButtonText(CMFCToolBarButton* pButton);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pButton*  
- 에 대 한 포인터를 [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md) 사용자 지정 하는 사용자가 개체입니다.  
+*pButton*<br/>
+[in] 에 대 한 포인터를 [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md) 사용자 지정 하는 사용자가 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  프레임 워크 메뉴 모음; 사용자 변경 내용을 적용 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -824,8 +824,8 @@ virtual INT_PTR OnToolHitTest(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- [in] *pTI*  
+*지점*<br/>
+[in] [in] *pTI*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -871,14 +871,14 @@ virtual BOOL SaveState (
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszProfileName*  
- Windows 레지스트리 키의 경로 포함 하는 문자열입니다.  
+*lpszProfileName*<br/>
+[in] Windows 레지스트리 키의 경로 포함 하는 문자열입니다.  
   
- [in] *nIndex*  
- 메뉴 모음에 대 한 컨트롤 ID입니다.  
+*nIndex*<br/>
+[in] 메뉴 모음에 대 한 컨트롤 ID입니다.  
   
- [in] *uiID*  
- 예약 된 값입니다.  
+*uiID*<br/>
+[in] 예약 된 값입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 그렇지 않으면 FALSE입니다.  
@@ -896,8 +896,8 @@ void SetDefaultMenuResId(UINT uiResId);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiResId*  
- 새 기본 메뉴에 대 한 리소스 ID입니다.  
+*uiResId*<br/>
+[in] 새 기본 메뉴에 대 한 리소스 ID입니다.  
   
 ### <a name="remarks"></a>설명  
  합니다 [CMFCMenuBar::RestoreOriginalstate](#restoreoriginalstate) 메서드는 리소스 파일에서 기본 메뉴에 복원 합니다.  
@@ -927,14 +927,14 @@ void SetMaximizeMode(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bMax*  
- 모드를 지정 하는 부울입니다. 자세한 내용은 설명 부분을 참조하세요.  
+*bMax*<br/>
+[in] 모드를 지정 하는 부울입니다. 자세한 내용은 설명 부분을 참조하세요.  
   
- [in] *pWnd*  
- 변경 되 고 있는 MDI 자식 창에 대 한 포인터입니다.  
+*pWnd*<br/>
+[in] 변경 되 고 있는 MDI 자식 창에 대 한 포인터입니다.  
   
- [in] *bRecalcLayout*  
- 메뉴 모음의 레이아웃을 즉시 계산 해야 하는지 여부를 지정 하는 부울입니다.  
+*bRecalcLayout*<br/>
+[in] 메뉴 모음의 레이아웃을 즉시 계산 해야 하는지 여부를 지정 하는 부울입니다.  
   
 ### <a name="remarks"></a>설명  
  MDI 자식 창 최대화 되었을 때 MDI 주 프레임 창에 연결 된 메뉴 모음의 시스템 메뉴를 표시 하며 **최소화**를 **최대화** 및 **닫기** 단추입니다. 경우 *bMax* 이 고 *pWnd* NULL이 아니면 MDI 자식 창을 최대화 하 고 메뉴 모음 추가 컨트롤을 통합 해야 합니다. 그렇지 않으면 메뉴 모음 일반 상태로 돌아갑니다.  
@@ -947,8 +947,8 @@ void SetMenuButtonRTC(CRuntimeClass* pMenuButtonRTC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMenuButtonRTC*  
- 합니다 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 에서 파생 된 클래스에 대 한 정보를 [CMFCMenuButton 클래스](../../mfc/reference/cmfcmenubutton-class.md)합니다.  
+*pMenuButtonRTC*<br/>
+[in] 합니다 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 에서 파생 된 클래스에 대 한 정보를 [CMFCMenuButton 클래스](../../mfc/reference/cmfcmenubutton-class.md)합니다.  
   
 ### <a name="remarks"></a>설명  
  메뉴 모음에 새 단추를 추가 하는 사용자, 프레임 워크를 동적으로 단추를 만듭니다. 기본적으로 만듭니다 `CMFCMenuButton` 개체입니다. 프레임 워크를 만드는 단추 개체 유형을 변경 하려면이 메서드를 재정의 합니다.  
@@ -963,11 +963,11 @@ static BOOL SetMenuFont(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpLogFont*  
- 에 대 한 포인터를 [LOGFONT](/windows/desktop/api/dimm/ns-dimm-__midl___midl_itf_dimm_0000_0000_0003) 글꼴 집합을 정의 하는 구조입니다.  
+*lpLogFont*<br/>
+[in] 에 대 한 포인터를 [LOGFONT](/windows/desktop/api/dimm/ns-dimm-__midl___midl_itf_dimm_0000_0000_0003) 글꼴 집합을 정의 하는 구조입니다.  
   
- [in] *bHorz*  
- 원하는 경우 TRUE를 *lpLogFont* 가로 글꼴에 사용할 수 있도록 하려는 경우 세로 방향 글꼴에서 FALSE에 사용할 매개 변수입니다.  
+*bHorz*<br/>
+[in] 원하는 경우 TRUE를 *lpLogFont* 가로 글꼴에 사용할 수 있도록 하려는 경우 세로 방향 글꼴에서 FALSE에 사용할 매개 변수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -985,8 +985,8 @@ static void SetRecentlyUsedMenus (BOOL bOn = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bOn*  
- 최근에 사용한 메뉴 명령이 표시 되는지 여부를 제어 하는 부울입니다.  
+*bOn*<br/>
+[in] 최근에 사용한 메뉴 명령이 표시 되는지 여부를 제어 하는 부울입니다.  
   
 ##  <a name="setshowallcommands"></a>  CMFCMenuBar::SetShowAllCommands  
  사용 가능한 모든 명령을 메뉴에 표시 되는지 여부를 제어 합니다.  
@@ -996,8 +996,8 @@ static void SetShowAllCommands(BOOL bShowAllCommands = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bShowAllCommands*  
- 팝업 메뉴에 메뉴 명령을 모두 표시 되는지 여부를 지정 하는 부울 매개 변수입니다.  
+*bShowAllCommands*<br/>
+[in] 팝업 메뉴에 메뉴 명령을 모두 표시 되는지 여부를 지정 하는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  메뉴에 메뉴 명령을 모두 표시 되지 않으면, 자주 사용 되지 않는 명령을 숨깁니다. 메뉴 명령을 표시 하는 방법에 대 한 자세한 내용은 참조 하세요. [CMFCMenuBar 클래스](../../mfc/reference/cmfcmenubar-class.md)합니다.  

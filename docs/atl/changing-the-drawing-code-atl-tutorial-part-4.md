@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fed83cd67ff596581440fa317355186653a0cbec
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 0da5f024e8dffd0115ba9bdbd6cf34f3f7c68a0e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760427"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065792"
 ---
 # <a name="changing-the-drawing-code-atl-tutorial-part-4"></a>그리기 코드 변경(ATL 자습서, 4부)
 
@@ -131,6 +131,6 @@ ms.locfileid: "43760427"
 
 ## <a name="see-also"></a>참고 항목
 
-[자습서](../atl/active-template-library-atl-tutorial.md)   
+[자습서](../atl/active-template-library-atl-tutorial.md)<br/>
 [테스트 컨테이너로 속성 및 이벤트 테스트](../mfc/testing-properties-and-events-with-test-container.md)
 

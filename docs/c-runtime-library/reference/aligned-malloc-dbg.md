@@ -32,12 +32,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f8786af730567155ca865440e612bb983e2bea8
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 076ccfcf164eb17e2a855f175c8714cd63a91817
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39402980"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093055"
 ---
 # <a name="alignedmallocdbg"></a>_aligned_malloc_dbg
 
@@ -56,16 +56,16 @@ void * _aligned_malloc_dbg(
 
 ### <a name="parameters"></a>매개 변수
 
-*size*  
+*size*<br/>
 요청된 메모리 할당의 크기입니다.
 
-*alignment*  
+*alignment*<br/>
 맞춤 값으로 2의 정수 거듭제곱이어야 합니다.
 
-*filename*  
+*filename*<br/>
 할당 작업 또는 NULL을 요청한 소스 파일의 이름에 대한 포인터입니다.
 
-*linenumber*  
+*linenumber*<br/>
 할당 작업이 요청되었거나 NULL인 소스 파일의 줄 번호입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -96,4 +96,4 @@ void * _aligned_malloc_dbg(
 
 ## <a name="see-also"></a>참고자료
 
-[디버그 루틴](../../c-runtime-library/debug-routines.md)  
+[디버그 루틴](../../c-runtime-library/debug-routines.md)

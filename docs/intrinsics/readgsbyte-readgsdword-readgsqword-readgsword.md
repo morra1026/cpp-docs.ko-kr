@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00f71faa5a7b81931c8ee3fbce00ea4b7e66249b
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 9cc4c44807a40425d4531c747526148837e0a25c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42541316"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711167"
 ---
 # <a name="readgsbyte-readgsdword-readgsqword-readgsword"></a>__readgsbyte, __readgsdword, __readgsqword, __readgsword
 **Microsoft 전용**  
@@ -52,8 +52,8 @@ unsigned __int64 __readgsqword(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `Offset`  
- 시작 부분 으로부터의 오프셋 `GS` 에서 읽을 수 있습니다.  
+*오프셋*<br/>
+[in] 시작 부분 으로부터의 오프셋 `GS` 에서 읽을 수 있습니다.  
   
 ## <a name="return-value"></a>반환 값  
  메모리 내용의 바이트, word, 2 배 워드를 또는 쿼드 워드 (호출 함수의 이름으로 표시) 하는 대로 위치 `GS:[Offset]`합니다.  

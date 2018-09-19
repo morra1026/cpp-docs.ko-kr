@@ -18,21 +18,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1dca3cc2d51f0e165e9b17d9fe630752a427590f
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 05cfcb59100f1778b0266636fb3930fd9489e917
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339158"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067079"
 ---
 # <a name="fetching-data"></a>데이터 페치
+
 데이터 원본, 세션 및 행 집합 개체를 연 후에 데이터를 가져올 수 있습니다. 사용할 접근자 형식에 따라 열을 바인딩하는 것이 해야 합니다.  
   
 ### <a name="to-fetch-data"></a>데이터를 인출 하려면  
   
-1.  적절 한 사용 하 여 행 집합을 엽니다 **열고** 명령입니다.  
+1. 적절 한 사용 하 여 행 집합을 엽니다 **열고** 명령입니다.  
   
-2.  사용 중인 경우 `CManualAccessor`를 이미 수행 하지 않은 경우 출력 열을 바인딩합니다. 열을 바인딩하려면 호출 `GetColumnInfo`를 만든 다음 접근자는 바인딩을 사용 하 여 다음 예와에서 같이 및:  
+1. 사용 중인 경우 `CManualAccessor`를 이미 수행 하지 않은 경우 출력 열을 바인딩합니다. 열을 바인딩하려면 호출 `GetColumnInfo`를 만든 다음 접근자는 바인딩을 사용 하 여 다음 예와에서 같이 및:  
   
     ```cpp  
     // From the DBViewer Sample CDBTreeView::OnQueryEdit  
@@ -49,7 +50,7 @@ ms.locfileid: "39339158"
     rs.Bind();  
     ```  
   
-3.  쓰기는 `while` 루프 데이터를 검색 합니다. 루프에서 호출 `MoveNext` 커서를 이동 하 고 다음 예와에서 같이 S_OK 반환 값을 검사 하려면:  
+1. 쓰기는 `while` 루프 데이터를 검색 합니다. 루프에서 호출 `MoveNext` 커서를 이동 하 고 다음 예와에서 같이 S_OK 반환 값을 검사 하려면:  
   
     ```cpp  
     while (rs.MoveNext() == S_OK)  
@@ -59,7 +60,7 @@ ms.locfileid: "39339158"
     }  
     ```  
   
-4.  내는 `while` 루프 접근자 유형에 따라 데이터를 가져올 수 있습니다.  
+1. 내는 `while` 루프 접근자 유형에 따라 데이터를 가져올 수 있습니다.  
   
     -   사용 하는 경우는 [CAccessor](../../data/oledb/caccessor-class.md) 클래스 데이터 멤버를 포함 하는 사용자 레코드가 있어야 합니다. 다음 예제에서와 같이 해당 데이터 멤버를 사용 하 여 데이터를 액세스할 수 있습니다.  
   
@@ -101,4 +102,5 @@ ms.locfileid: "39339158"
         ```  
   
 ## <a name="see-also"></a>참고 항목  
- [OLE DB 소비자 템플릿 작업](../../data/oledb/working-with-ole-db-consumer-templates.md)
+
+[OLE DB 소비자 템플릿 작업](../../data/oledb/working-with-ole-db-consumer-templates.md)

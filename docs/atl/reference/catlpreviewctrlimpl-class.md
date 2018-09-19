@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec4fa860387068dd345c19467583922ebaeb49ab
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ef1469c40de8aae06460f1874905c53e91a47ca1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763675"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46079338"
 ---
 # <a name="catlpreviewctrlimpl-class"></a>CAtlPreviewCtrlImpl 클래스
 
@@ -144,10 +144,10 @@ virtual BOOL Create(HWND hWndParent, const RECT* prc);
 
 ### <a name="parameters"></a>매개 변수
 
-*hWndParent*  
+*hWndParent*<br/>
 셸에서에서 제공 하는 다양 한 미리 보기에 대 한 호스트 창 핸들입니다.
 
-*중국*  
+*중국*<br/>
 초기 크기와 창의 위치를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -176,7 +176,7 @@ virtual void DoPaint(HDC hdc);
 
 ### <a name="parameters"></a>매개 변수
 
-*hdc*  
+*hdc*<br/>
 그리기에 대 한 장치 컨텍스트 핸들입니다.
 
 ### <a name="remarks"></a>설명
@@ -235,16 +235,16 @@ LRESULT OnPaint(
 
 ### <a name="parameters"></a>매개 변수
 
-*nMsg*  
+*nMsg*<br/>
 WM_PAINT로 설정 합니다.
 
-*wParam*  
+*wParam*<br/>
 이 매개 변수는 사용되지 않습니다.
 
-*lParam*  
+*lParam*<br/>
 이 매개 변수는 사용되지 않습니다.
 
-*bHandled*  
+*bHandled*<br/>
 이 함수는 반환 될 때 TRUE를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -273,7 +273,7 @@ virtual void SetHost(HWND hWndParent);
 
 ### <a name="parameters"></a>매개 변수
 
-*hWndParent*  
+*hWndParent*<br/>
 새 부모 창 핸들입니다.
 
 ### <a name="remarks"></a>설명
@@ -291,13 +291,13 @@ virtual void SetPreviewVisuals(
 
 ### <a name="parameters"></a>매개 변수
 
-*clrBack*  
+*clrBack*<br/>
 미리 보기 창의 배경색입니다.
 
-*clrText*  
+*clrText*<br/>
 미리 보기 창의 텍스트 색입니다.
 
-*plf*  
+*plf*<br/>
 미리 보기 창에 텍스트를 표시 하는 데 사용 하는 글꼴입니다.
 
 ### <a name="remarks"></a>설명
@@ -312,10 +312,10 @@ virtual void SetRect(const RECT* prc, BOOL bRedraw);
 
 ### <a name="parameters"></a>매개 변수
 
-*중국*  
+*중국*<br/>
 새 크기와 미리 보기 컨트롤의 위치를 지정 합니다.
 
-*bRedraw*  
+*bRedraw*<br/>
 컨트롤을 그려야 하는지 여부를 지정 합니다.
 
 ### <a name="remarks"></a>설명

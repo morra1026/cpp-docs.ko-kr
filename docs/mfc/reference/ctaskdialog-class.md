@@ -126,12 +126,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a1c3e55f6045b0096ef614e1d3b4b054db60265
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 51970f99a05b587bcdbccc5d24ad21b036d87f74
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202397"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710816"
 ---
 # <a name="ctaskdialog-class"></a>CTaskDialog Class
 
@@ -274,17 +274,17 @@ void AddCommandControl(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nCommandControlID*  
-명령 컨트롤 id.
+*nCommandControlID*<br/>
+[in] 명령 컨트롤 id.
 
-[in] *strCaption*  
-문자열을는 `CTaskDialog` 사용자에 게 표시 합니다. 명령의 용도 설명 하기에이 문자열을 사용 합니다.
+*strCaption*<br/>
+[in] 문자열을는 `CTaskDialog` 사용자에 게 표시 합니다. 명령의 용도 설명 하기에이 문자열을 사용 합니다.
 
-[in] *b 사용*  
-새 단추를 사용 하도록 설정 되었거나 사용 하지 않도록 설정 하는 경우를 나타내는 부울 매개 변수입니다.
+*b 사용*<br/>
+[in] 새 단추를 사용 하도록 설정 되었거나 사용 하지 않도록 설정 하는 경우를 나타내는 부울 매개 변수입니다.
 
-[in] *bRequiresElevation*  
-명령에 권한 상승이 필요한 지 여부를 나타내는 부울 매개 변수입니다.
+*bRequiresElevation*<br/>
+[in] 명령에 권한 상승이 필요한 지 여부를 나타내는 부울 매개 변수입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -309,14 +309,14 @@ void CTaskDialog::AddRadioButton(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nRadioButtonID*  
-라디오 단추의 id 번호입니다.
+*nRadioButtonID*<br/>
+[in] 라디오 단추의 id 번호입니다.
 
-[in] *strCaption*  
-문자열을는 `CTaskDialog` 라디오 단추 옆에 표시 됩니다.
+*strCaption*<br/>
+[in] 문자열을는 `CTaskDialog` 라디오 단추 옆에 표시 됩니다.
 
-[in] *b 사용*  
-라디오 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.
+*b 사용*<br/>
+[in] 라디오 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -339,8 +339,8 @@ void ClickCommandControl(int nCommandControlID) const;
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nCommandControlID*  
-클릭 컨트롤의 명령 ID입니다.
+*nCommandControlID*<br/>
+[in] 클릭 컨트롤의 명령 ID입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -357,8 +357,8 @@ void ClickRadioButton(int nRadioButtonID) const;
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nRadioButtonID*  
-라디오 단추를 클릭의 ID입니다.
+*nRadioButtonID*<br/>
+[in] 라디오 단추를 클릭의 ID입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -391,29 +391,29 @@ CTaskDialog(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *strContent*  
-내용에 사용 하는 문자열을 `CTaskDialog`입니다.
+*strContent*<br/>
+[in] 내용에 사용 하는 문자열을 `CTaskDialog`입니다.
 
-[in] *strMainInstruction*  
-기본 명령은 `CTaskDialog`합니다.
+*strMainInstruction*<br/>
+[in] 기본 명령은 `CTaskDialog`합니다.
 
-[in] *strTitle*  
-제목의 `CTaskDialog`합니다.
+*strTitle*<br/>
+[in] 제목의 `CTaskDialog`합니다.
 
-[in] *nCommonButtons*  
-추가할 일반적인 단추의 마스크는 `CTaskDialog`합니다.
+*nCommonButtons*<br/>
+[in] 추가할 일반적인 단추의 마스크는 `CTaskDialog`합니다.
 
-[in] *nTaskDialogOptions*  
-사용 하는 옵션의 집합을 `CTaskDialog`입니다.
+*nTaskDialogOptions*<br/>
+[in] 사용 하는 옵션의 집합을 `CTaskDialog`입니다.
 
-[in] *strFooter*  
-바닥글을 사용 하는 문자열입니다.
+*strFooter*<br/>
+[in] 바닥글을 사용 하는 문자열입니다.
 
-[in] *nIDCommandControlsFirst*  
-첫 번째 명령의 문자열 ID입니다.
+*nIDCommandControlsFirst*<br/>
+[in] 첫 번째 명령의 문자열 ID입니다.
 
-[in] *nIDCommandControlsLast*  
-마지막 명령은의 문자열 ID입니다.
+*nIDCommandControlsLast*<br/>
+[in] 마지막 명령은의 문자열 ID입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -437,8 +437,8 @@ INT_PTR DoModal (HWND hParent = ::GetActiveWindow());
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *hParent*  
-부모 창입니다는 `CTaskDialog`합니다.
+*hParent*<br/>
+[in] 부모 창입니다는 `CTaskDialog`합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -482,8 +482,8 @@ int GetCommonButtonFlag(int nButtonId) const;
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nButtonId*  
-표준 Windows 단추 값입니다.
+*nButtonId*<br/>
+[in] 표준 Windows 단추 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -499,8 +499,8 @@ int GetCommonButtonId(int nFlag);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *플래그*  
-와 관련 된 일반적인 단추 종류를 `CTaskDialog` 클래스입니다.
+*플래그*<br/>
+[in] 와 관련 된 일반적인 단추 종류를 `CTaskDialog` 클래스입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -592,8 +592,8 @@ BOOL IsCommandControlEnabled(int nCommandControlID) const;
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nCommandControlID*  
-테스트 단추 명령 단추 컨트롤의 ID입니다.
+*nCommandControlID*<br/>
+[in] 테스트 단추 명령 단추 컨트롤의 ID입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -619,8 +619,8 @@ BOOL IsRadioButtonEnabled(int nRadioButtonID) const;
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nRadioButtonID*  
-테스트 라디오 단추의 ID입니다.
+*nRadioButtonID*<br/>
+[in] 테스트 라디오 단추의 ID입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -666,11 +666,11 @@ void LoadCommandControls(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nIDCommandControlsFirst*  
-첫 번째 명령의 문자열 ID입니다.
+*nIDCommandControlsFirst*<br/>
+[in] 첫 번째 명령의 문자열 ID입니다.
 
-[in] *nIDCommandControlsLast*  
-마지막 명령은의 문자열 ID입니다.
+*nIDCommandControlsLast*<br/>
+[in] 마지막 명령은의 문자열 ID입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -694,11 +694,11 @@ void LoadRadioButtons(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nIDRadioButtonsFirst*  
-문자열의 ID는 첫 번째 라디오 단추입니다.
+*nIDRadioButtonsFirst*<br/>
+[in] 문자열의 ID는 첫 번째 라디오 단추입니다.
 
-[in] *nIDRadioButtonsLast*  
-마지막 라디오 단추의 문자열 ID입니다.
+*nIDRadioButtonsLast*<br/>
+[in] 마지막 라디오 단추의 문자열 ID입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -721,8 +721,8 @@ void NavigateTo(CTaskDialog& oTaskDialog) const;
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *oTaskDialog*  
-`CTaskDialog` 포커스를 받는 합니다.
+*oTaskDialog*<br/>
+[in] `CTaskDialog` 포커스를 받는 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -738,8 +738,8 @@ virtual HRESULT OnCommandControlClick(int nCommandControlID);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nCommandControlID*  
-사용자가 선택한 명령 단추 컨트롤의 ID입니다.
+*nCommandControlID*<br/>
+[in] 사용자가 선택한 명령 단추 컨트롤의 ID입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -791,8 +791,8 @@ virtual HRESULT OnExpandButtonClicked(BOOL bExpanded);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *bExpanded*  
-0이 아닌 값에 추가 정보가 표시 됩니다. 0 추가 정보 숨겨져 있음을 나타냅니다.
+*bExpanded*<br/>
+[in] 0이 아닌 값에 추가 정보가 표시 됩니다. 0 추가 정보 숨겨져 있음을 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -828,8 +828,8 @@ virtual HRESULT OnHyperlinkClick(const CString& strHref);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *strHref*  
-하이퍼링크를 나타내는 문자열입니다.
+*strHref*<br/>
+[in] 하이퍼링크를 나타내는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -883,8 +883,8 @@ virtual HRESULT OnRadioButtonClick(int nRadioButtonID);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nRadioButtonID*  
-사용자가 클릭 한 라디오 단추 컨트롤의 ID입니다.
+*nRadioButtonID*<br/>
+[in] 사용자가 클릭 한 라디오 단추 컨트롤의 ID입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -904,8 +904,8 @@ virtual HRESULT OnTimer(long lTime);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *lTime*  
-시간 이후의 밀리초를 `CTaskDialog` 만든 또는 타이머 다시 설정 되었습니다.
+*lTime*<br/>
+[in] 시간 이후의 밀리초를 `CTaskDialog` 만든 또는 타이머 다시 설정 되었습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -925,8 +925,8 @@ virtual HRESULT OnVerificationCheckboxClick(BOOL bChecked);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *bChecked*  
-TRUE 이면 확인 확인란을 선택 하 고 있습니다. FALSE 이면 아닙니다.
+*bChecked*<br/>
+[in] TRUE 이면 확인 확인란을 선택 하 고 있습니다. FALSE 이면 아닙니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -973,14 +973,14 @@ void SetCommandControlOptions(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nCommandControlID*  
-업데이트 명령 컨트롤의 ID입니다.
+*nCommandControlID*<br/>
+[in] 업데이트 명령 컨트롤의 ID입니다.
 
-[in] *b 사용*  
-지정한 명령 단추 컨트롤이 사용 하도록 설정 되었거나 사용 하지 않도록 설정 하는 경우를 나타내는 부울 매개 변수입니다.
+*b 사용*<br/>
+[in] 지정한 명령 단추 컨트롤이 사용 하도록 설정 되었거나 사용 하지 않도록 설정 하는 경우를 나타내는 부울 매개 변수입니다.
 
-[in] *bRequiresElevation*  
-지정 된 명령 단추 컨트롤에 권한 상승이 필요한 경우를 나타내는 부울 매개 변수입니다.
+*bRequiresElevation*<br/>
+[in] 지정 된 명령 단추 컨트롤에 권한 상승이 필요한 경우를 나타내는 부울 매개 변수입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1002,11 +1002,11 @@ void SetCommonButtonOptions(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nDisabledButtonMask*  
-일반 단추를 사용 하지 않도록 설정에 대 한 마스크입니다.
+*nDisabledButtonMask*<br/>
+[in] 일반 단추를 사용 하지 않도록 설정에 대 한 마스크입니다.
 
-[in] *nElevationButtonMask*  
-권한 상승 해야 하는 일반 단추에 대 한 마스크입니다.
+*nElevationButtonMask*<br/>
+[in] 권한 상승 해야 하는 일반 단추에 대 한 마스크입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1033,14 +1033,14 @@ void SetCommonButtons(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nButtonMask*  
-추가할 단추의 마스크는 `CTaskDialog`합니다.
+*nButtonMask*<br/>
+[in] 추가할 단추의 마스크는 `CTaskDialog`합니다.
 
-[in] *nDisabledButtonMask*  
-단추를 사용 하지 않도록 설정 하는 마스크입니다.
+*nDisabledButtonMask*<br/>
+[in] 단추를 사용 하지 않도록 설정 하는 마스크입니다.
 
-[in] *nElevationButtonMask*  
-권한 상승 해야 하는 단추는 마스크입니다.
+*nElevationButtonMask*<br/>
+[in] 권한 상승 해야 하는 단추는 마스크입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1066,8 +1066,8 @@ void SetContent(const CString& strContent);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *strContent*  
-사용자에 게 표시할 문자열입니다.
+*strContent*<br/>
+[in] 사용자에 게 표시할 문자열입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1087,8 +1087,8 @@ void SetDefaultCommandControl(int nCommandControlID);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nCommandControlID*  
-기본 명령 단추 컨트롤의 ID입니다.
+*nCommandControlID*<br/>
+[in] 기본 명령 단추 컨트롤의 ID입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1110,8 +1110,8 @@ void SetDefaultRadioButton(int nRadioButtonID);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nRadioButtonID*  
-기본 라디오 단추의 ID입니다.
+*nRadioButtonID*<br/>
+[in] 기본 라디오 단추의 ID입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1133,8 +1133,8 @@ void SetDialogWidth(int nWidth = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nWidth*  
-대화 상자의 픽셀에서 너비입니다.
+*nWidth*<br/>
+[in] 대화 상자의 픽셀에서 너비입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1159,14 +1159,14 @@ void SetExpansionArea(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *strExpandedInformation*  
-문자열을는 `CTaskDialog` 확장 단추를 클릭할 때 대화 상자의 본문에 표시 됩니다.
+*strExpandedInformation*<br/>
+[in] 문자열을는 `CTaskDialog` 확장 단추를 클릭할 때 대화 상자의 본문에 표시 됩니다.
 
-[in] *strCollapsedLabel*  
-문자열을는 `CTaskDialog` 확장 된 영역을 축소 되는 경우 확장 단추 옆에 표시 됩니다.
+*strCollapsedLabel*<br/>
+[in] 문자열을는 `CTaskDialog` 확장 된 영역을 축소 되는 경우 확장 단추 옆에 표시 됩니다.
 
-[in] *strExpandedLabel*  
-문자열을는 `CTaskDialog` 확장 된 영역에 표시 되 면 확장 단추 옆에 표시 됩니다.
+*strExpandedLabel*<br/>
+[in] 문자열을는 `CTaskDialog` 확장 된 영역에 표시 되 면 확장 단추 옆에 표시 됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1189,11 +1189,11 @@ void SetFooterIcon(LPCWSTR lpszFooterIcon);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *hFooterIcon*  
-새 아이콘의 `CTaskDialog`합니다.
+*hFooterIcon*<br/>
+[in] 새 아이콘의 `CTaskDialog`합니다.
 
-[in] *lpszFooterIcon*  
-새 아이콘의 `CTaskDialog`합니다.
+*lpszFooterIcon*<br/>
+[in] 새 아이콘의 `CTaskDialog`합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1217,8 +1217,8 @@ void SetFooterText(const CString& strFooterText);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *strFooterText*  
-바닥글에 대 한 새 텍스트입니다.
+*strFooterText*<br/>
+[in] 바닥글에 대 한 새 텍스트입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1239,11 +1239,11 @@ void SetMainIcon(LPCWSTR lpszMainIcon);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *hMainIcon*  
-새 아이콘입니다.
+*hMainIcon*<br/>
+[in] 새 아이콘입니다.
 
-[in] *lpszMainIcon*  
-새 아이콘입니다.
+*lpszMainIcon*<br/>
+[in] 새 아이콘입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1265,8 +1265,8 @@ void SetMainInstruction(const CString& strInstructions);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *strInstructions*  
-새 기본 명령입니다.
+*strInstructions*<br/>
+[in] 새 기본 명령입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1286,8 +1286,8 @@ void SetOptions(int nOptionFlag);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nOptionFlag*  
-사용 하는 플래그 집합을 `CTaskDialog`입니다.
+*nOptionFlag*<br/>
+[in] 사용 하는 플래그 집합을 `CTaskDialog`입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1330,11 +1330,11 @@ void SetProgressBarMarquee(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *b 사용*  
-움직이는 텍스트 모음;를 사용 하도록 설정 움직이는 텍스트 모음을 사용 하지 않도록 설정 하 고에서 제거 하려는 경우 FALSE를 `CTaskDialog`입니다.
+*b 사용*<br/>
+[in] 움직이는 텍스트 모음;를 사용 하도록 설정 움직이는 텍스트 모음을 사용 하지 않도록 설정 하 고에서 제거 하려는 경우 FALSE를 `CTaskDialog`입니다.
 
-[in] *nMarqueeSpeed*  
-움직이는 텍스트 막대의 속도 나타내는 정수입니다.
+*nMarqueeSpeed*<br/>
+[in] 움직이는 텍스트 막대의 속도 나타내는 정수입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1358,8 +1358,8 @@ void SetProgressBarPosition(int nProgressPos);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nProgressPos*  
-진행률 표시줄의 위치입니다.
+*nProgressPos*<br/>
+[in] 진행률 표시줄의 위치입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1381,11 +1381,11 @@ void SetProgressBarRange(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nRangeMin*  
-진행률 표시줄의 하한값입니다.
+*nRangeMin*<br/>
+[in] 진행률 표시줄의 하한값입니다.
 
-[in] *nRangeMax*  
-진행률 표시줄의 상한입니다.
+*nRangeMax*<br/>
+[in] 진행률 표시줄의 상한입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1409,8 +1409,8 @@ void SetProgressBarState(int nState = PBST_NORMAL);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nState*  
-진행률 표시줄의 상태입니다. 가능한 값에 대 한 설명 섹션을 참조 합니다.
+*nState*<br/>
+[in] 진행률 표시줄의 상태입니다. 가능한 값에 대 한 설명 섹션을 참조 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1442,11 +1442,11 @@ void SetRadioButtonOptions(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nRadioButtonID*  
-라디오 단추 컨트롤의 ID입니다.
+*nRadioButtonID*<br/>
+[in] 라디오 단추 컨트롤의 ID입니다.
 
-[in] *b 사용*  
-라디오 단추를 사용 하도록 설정 라디오 단추를 사용 하지 않도록 설정 하려면 FALSE입니다.
+*b 사용*<br/>
+[in] 라디오 단추를 사용 하도록 설정 라디오 단추를 사용 하지 않도록 설정 하려면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1466,8 +1466,8 @@ void SetVerificationCheckbox(BOOL bChecked);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *bChecked*  
-True 이면 확인 확인란 선택한 경우는 `CTaskDialog` 후보가 표시 됩니다. 확인란을 확인 하려면 FALSE를 선택 하는 경우 취소는 `CTaskDialog` 표시 됩니다.
+*bChecked*<br/>
+[in] True 이면 확인 확인란 선택한 경우는 `CTaskDialog` 후보가 표시 됩니다. 확인란을 확인 하려면 FALSE를 선택 하는 경우 취소는 `CTaskDialog` 표시 됩니다.
 
 ### <a name="example"></a>예제
 
@@ -1483,8 +1483,8 @@ void SetVerificationCheckboxText(CString& strVerificationText);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *strVerificationText*  
-확인 확인란 옆에 표시 되는이 메서드는 텍스트입니다.
+*strVerificationText*<br/>
+[in] 확인 확인란 옆에 표시 되는이 메서드는 텍스트입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1504,8 +1504,8 @@ void SetWindowTitle(CString& strWindowTitle);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *strWindowTitle*  
-새 제목을 `CTaskDialog`합니다.
+*strWindowTitle*<br/>
+[in] 새 제목을 `CTaskDialog`합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1531,29 +1531,29 @@ static INT_PTR ShowDialog(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *strContent*  
-내용에 사용 하는 문자열을 `CTaskDialog`입니다.
+*strContent*<br/>
+[in] 내용에 사용 하는 문자열을 `CTaskDialog`입니다.
 
-[in] *strMainInstruction*  
-기본 명령은 `CTaskDialog`합니다.
+*strMainInstruction*<br/>
+[in] 기본 명령은 `CTaskDialog`합니다.
 
-[in] *strTitle*  
-제목의 `CTaskDialog`합니다.
+*strTitle*<br/>
+[in] 제목의 `CTaskDialog`합니다.
 
-[in] *nIDCommandControlsFirst*  
-첫 번째 명령의 문자열 ID입니다.
+*nIDCommandControlsFirst*<br/>
+[in] 첫 번째 명령의 문자열 ID입니다.
 
-[in] *nIDCommandControlsLast*  
-마지막 명령은의 문자열 ID입니다.
+*nIDCommandControlsLast*<br/>
+[in] 마지막 명령은의 문자열 ID입니다.
 
-[in] *nCommonButtons*  
-추가할 단추의 마스크는 `CTaskDialog`합니다.
+*nCommonButtons*<br/>
+[in] 추가할 단추의 마스크는 `CTaskDialog`합니다.
 
-[in] *nTaskDialogOptions*  
-사용 하는 옵션의 집합을 `CTaskDialog`입니다.
+*nTaskDialogOptions*<br/>
+[in] 사용 하는 옵션의 집합을 `CTaskDialog`입니다.
 
-[in] *strFooter*  
-바닥글을 사용 하는 문자열입니다.
+*strFooter*<br/>
+[in] 바닥글을 사용 하는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1589,20 +1589,20 @@ HRESULT TaskDialogCallback(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *hwnd*  
-에 대 한 핸들을 `m_hWnd` 의 구조는 `CTaskDialog`합니다.
+*hwnd*<br/>
+[in] 에 대 한 핸들을 `m_hWnd` 의 구조는 `CTaskDialog`합니다.
 
-[in] *uNotification*  
-생성된 된 메시지를 지정 하는 알림 코드입니다.
+*uNotification*<br/>
+[in] 생성된 된 메시지를 지정 하는 알림 코드입니다.
 
-[in] *wParam*  
-메시지에 대 한 자세한 정보입니다.
+*wParam*<br/>
+[in] 메시지에 대 한 자세한 정보입니다.
 
-[in] *lParam*  
-메시지에 대 한 자세한 정보입니다.
+*lParam*<br/>
+[in] 메시지에 대 한 자세한 정보입니다.
 
-[in] *dwRefData*  
-에 대 한 포인터를 `CTaskDialog` 콜백 메시지에 적용 되는 개체입니다.
+*dwRefData*<br/>
+[in] 에 대 한 포인터를 `CTaskDialog` 콜백 메시지에 적용 되는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 

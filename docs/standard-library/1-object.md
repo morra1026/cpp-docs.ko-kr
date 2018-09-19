@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: afb57f408c52f6884c68e93af88671d49815ef69
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 156eca047946ad13b1e4f09057edceb9f0bc6b34
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840344"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719188"
 ---
 # <a name="1-object"></a>_1 개체
 
@@ -35,12 +35,12 @@ ms.locfileid: "33840344"
 namespace placeholders {
     extern unspecified _1,
     _2, ... _M
- } // namespace placeholders (within std)
+} // namespace placeholders (within std)
 ```
 
 ## <a name="remarks"></a>설명
 
-개체 `_1, _2, ... _M` 자리 표시자를 지정 하는 첫 번째, 두 번째,..., Mth 인수 함수 호출을 반환 하는 개체에 각각 [바인딩할](../standard-library/functional-functions.md#bind)합니다. bind 식을 평가할 때 N번째 인수를 삽입해야 하는 위치를 지정하려면 `_N`을 사용합니다.
+개체 `_1, _2, ... _M` 자리 표시자 지정 하는 첫 번째, 두 번째,..., m 번째 인수를 반환 하는 개체를 함수 호출에서 각각 [바인딩할](../standard-library/functional-functions.md#bind)합니다. bind 식을 평가할 때 N번째 인수를 삽입해야 하는 위치를 지정하려면 `_N`을 사용합니다.
 
 이 구현에서 `M`의 값은 20입니다.
 

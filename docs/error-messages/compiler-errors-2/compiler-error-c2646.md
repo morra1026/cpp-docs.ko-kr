@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6d4fdd5141c8fafb350110bee838a13b2cd3b1d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c94895dfd429723819190ad622e3a7d93fd38a99
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199881"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46104272"
 ---
 # <a name="compiler-error-c2646"></a>컴파일러 오류 C2646
-전역 또는 네임스페이스 범위의 익명 구조체 또는 공용 구조체는 static으로 선언해야 합니다.  
-  
- 익명 구조체 또는 공용 구조체가 전역 또는 네임스페이스 범위를 가지지만 `static`으로 선언되지 않았습니다.  
-  
- 다음 샘플에서는 C2646 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.  
-  
-```  
-// C2646.cpp  
-// compile with: /c  
-union { int i; };   // C2646 not static  
-  
-// OK  
-static union { int j; };  
-union U { int i; };  
+
+전역 또는 네임스페이스 범위의 익명 구조체 또는 공용 구조체는 static으로 선언해야 합니다.
+
+익명 구조체 또는 공용 구조체가 전역 또는 네임스페이스 범위를 가지지만 `static`으로 선언되지 않았습니다.
+
+다음 샘플에서는 C2646 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.
+
+```
+// C2646.cpp
+// compile with: /c
+union { int i; };   // C2646 not static
+
+// OK
+static union { int j; };
+union U { int i; };
 ```

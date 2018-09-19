@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fbabd502ca6d9d81c569831f9dcb0b344523bb3e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a6313bcf0a4acfaa705cb4718570dd49374530b4
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215330"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707533"
 ---
 # <a name="cmfccolorbutton-class"></a>CMFCColorButton 클래스
 합니다 `CMFCColorButton` 하 고 [CMFCColorBar 클래스](../../mfc/reference/cmfccolorbar-class.md) 색 선택 컨트롤을 구현 하려면 클래스를 함께 사용 합니다.  
@@ -107,7 +107,7 @@ class CMFCColorButton : public CMFCButton
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |`m_bAltColorDlg`|부울입니다. True 이면 프레임 워크가 표시 합니다 [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) 색 대화 상자를 *다른* 단추를 클릭 FALSE 이면 시스템 색 대화 상자 또는. 기본값은 TRUE입니다. 자세한 내용은 [CMFCColorButton::EnableOtherButton](#enableotherbutton)합니다.|  
 |`m_bAutoSetFocus`|부울입니다. TRUE 인 경우 프레임 워크 메뉴 표시 되거나 FALSE 인 경우 포커스를 변경 하지 경우 색 메뉴에 포커스를 설정 합니다. 기본값은 TRUE입니다.|  
@@ -159,14 +159,14 @@ void EnableAutomaticButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszLabel*  
- 자동 단추의 텍스트를 지정합니다.  
+*lpszLabel*<br/>
+[in] 자동 단추의 텍스트를 지정합니다.  
   
- [in] *colorAutomatic*  
- 자동 단추의 기본 색을 지정 하는 RGB 값입니다.  
+*colorAutomatic*<br/>
+[in] 자동 단추의 기본 색을 지정 하는 RGB 값입니다.  
   
- [in] *bEnable*  
- 자동 단추 사용 되는지 여부를 지정 합니다.  
+*bEnable*<br/>
+[in] 자동 단추 사용 되는지 여부를 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -181,14 +181,14 @@ void EnableOtherButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszLabel*  
- 단추의 텍스트를 지정합니다.  
+*lpszLabel*<br/>
+[in] 단추의 텍스트를 지정합니다.  
   
- [in] *bAltColorDlg*  
- 지정 여부는 [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) 단추를 클릭할 때 대화 상자 또는 시스템 색 대화 상자를 열입니다.  
+*bAltColorDlg*<br/>
+[in] 지정 여부는 [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) 단추를 클릭할 때 대화 상자 또는 시스템 색 대화 상자를 열입니다.  
   
- [in] *bEnable*  
- "기타" 단추를 사용 하도록 설정 되는지 여부를 지정 합니다.  
+*bEnable*<br/>
+[in] "기타" 단추를 사용 하도록 설정 되는지 여부를 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  색 대화 상자를 표시 하려면 "기타" 단추를 클릭 합니다. 경우는 *bAltColorDlg* 매개 변수는 TRUE를 [CMFCColorDialog 클래스](../../mfc/reference/cmfccolordialog-class.md) 표시 되 면 시스템 색 대화 상자를 표시 하는 고, 그렇지 합니다.  
@@ -249,14 +249,14 @@ virtual void OnDraw(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 단추의 이미지를 렌더링 하는 데 사용 되는 장치 컨텍스트를 가리킵니다.  
+*pDC*<br/>
+[in] 단추의 이미지를 렌더링 하는 데 사용 되는 장치 컨텍스트를 가리킵니다.  
   
- [in] *rect*  
- 단추를 제한 하는 사각형입니다.  
+*rect*<br/>
+[in] 단추를 제한 하는 사각형입니다.  
   
- [in] *uiState*  
- 단추의 표시 상태를 지정합니다.  
+*uiState*<br/>
+[in] 단추의 표시 상태를 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  렌더링 프로세스를 사용자 지정 하려면이 메서드를 재정의 합니다.  
@@ -272,14 +272,14 @@ virtual void OnDrawBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 테두리를 그리는 데 사용 되는 장치 컨텍스트를 가리킵니다.  
+*pDC*<br/>
+[in] 테두리를 그리는 데 사용 되는 장치 컨텍스트를 가리킵니다.  
   
- [in] *rectClient*  
- 사각형에 지정 된 디바이스 컨텍스트에서 합니다 *pDC* 그릴 단추의 경계를 정의 하는 매개 변수입니다.  
+*rectClient*<br/>
+[in] 사각형에 지정 된 디바이스 컨텍스트에서 합니다 *pDC* 그릴 단추의 경계를 정의 하는 매개 변수입니다.  
   
- [in] *uiState*  
- 단추의 표시 상태를 지정합니다.  
+*uiState*<br/>
+[in] 단추의 표시 상태를 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  색 단추의 테두리 모양을 사용자 지정 하려면이 함수를 재정의 합니다.  
@@ -294,11 +294,11 @@ virtual void OnDrawFocusRect(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 포커스 영역을 그리는 데 사용 되는 장치 컨텍스트를 가리킵니다.  
+*pDC*<br/>
+[in] 포커스 영역을 그리는 데 사용 되는 장치 컨텍스트를 가리킵니다.  
   
- [in] *rectClient*  
- 지정 된 디바이스 컨텍스트에서 사각형 합니다 *pDC* 단추의 경계를 정의 하는 매개 변수입니다.  
+*rectClient*<br/>
+[in] 지정 된 디바이스 컨텍스트에서 사각형 합니다 *pDC* 단추의 경계를 정의 하는 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  포커스 사각형의 모양을 사용자 지정 하려면이 메서드를 재정의 합니다.  
@@ -323,7 +323,7 @@ void RebuildPalette(CPalette* pPal);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *pPal*|논리 색상표 또는 NULL 포인터입니다. NULL 인 경우 기본 시스템 색상표가 사용 됩니다.|  
+|*pPal*|[in] 논리 색상표 또는 NULL 포인터입니다. NULL 인 경우 기본 시스템 색상표가 사용 됩니다.|  
   
 ##  <a name="setcolor"></a>  CMFCColorButton::SetColor  
  단추의 색을 지정합니다.  
@@ -333,8 +333,8 @@ void SetColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *색*  
- RGB 값입니다.  
+*색*<br/>
+[in] RGB 값입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -348,11 +348,11 @@ static void SetColorName(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *색*  
- 색의 RGB 값입니다.  
+*색*<br/>
+[in] 색의 RGB 값입니다.  
   
- [in] *strName*  
- 색의 이름입니다.  
+*strName*<br/>
+[in] 색의 이름입니다.  
   
 ### <a name="remarks"></a>설명  
  색 이름 중 목록은 응용 프로그램 당 전역입니다. 이 메서드는 매개 변수를 전송 하는 결과적으로 [CMFCColorBar::SetColorName](../../mfc/reference/cmfccolorbar-class.md#setcolorname)합니다.  
@@ -365,8 +365,8 @@ void SetColumnsNumber(int nColumns);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nColumns*  
- 열 개수를 지정합니다.  
+*nColumns*<br/>
+[in] 열 개수를 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  사용자는 미리 정의 된 색의 테이블을 표시 하는 팝업 색 막대에서 색을 선택할 수 있습니다. 이 메서드를 사용 하 여 테이블에서 열 수를 정의 합니다.  
@@ -381,11 +381,11 @@ void SetDocumentColors(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszLabel*  
- 문서 색 집합을 사용 하 여 표시할 레이블을 지정 합니다.  
+*lpszLabel*<br/>
+[in] 문서 색 집합을 사용 하 여 표시할 레이블을 지정 합니다.  
   
- [in] *lstColors*  
- RGB 값 목록에 대 한 참조입니다.  
+*lstColors*<br/>
+[in] RGB 값 목록에 대 한 참조입니다.  
   
 ### <a name="remarks"></a>설명  
  A `CMFCColorButton` 개체에 전송 되는 RGB 값의 목록을 유지 관리를 [CMFCColorBar 클래스](../../mfc/reference/cmfccolorbar-class.md) 개체입니다. 색 막대에 표시 되 면 이러한 색 해당 레이블이 지정 된 특정 섹션에 나와 합니다 *lpszLabel* 매개 변수입니다.  
@@ -398,8 +398,8 @@ void SetPalette(CPalette* pPalette);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pPalette*  
- 색상표에 대 한 포인터입니다.  
+*pPalette*<br/>
+[in] 색상표에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -411,8 +411,8 @@ virtual CSize SizeToContent(BOOL bCalcOnly=FALSE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bCalcOnly*  
- 0이 아닌 경우에 단추 컨트롤의 새 크기는 계산 되지만 실제 크기는 변경 되지 않습니다.  
+*bCalcOnly*<br/>
+[in] 0이 아닌 경우에 단추 컨트롤의 새 크기는 계산 되지만 실제 크기는 변경 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  `CSize` 새 단추 컨트롤 크기를 지정 하는 개체입니다.  
@@ -427,8 +427,8 @@ virtual void UpdateColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *색*  
- 사용자가 선택한 색입니다.  
+*색*<br/>
+[in] 사용자가 선택한 색입니다.  
   
 ### <a name="remarks"></a>설명  
  `UpdateColor` 함수 현재 선택한 단추의 색을 변경 하 고 BN_CLICKED 표준 알림이 WM_COMMAND 메시지를 보내 해당 부모에 알립니다. 사용 된 [CMFCColorButton::GetColor](#getcolor) 선택한 색을 검색 하는 방법입니다.  

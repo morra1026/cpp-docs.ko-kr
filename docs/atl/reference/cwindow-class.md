@@ -163,12 +163,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72b27036ffe84ff915bfcda0205469ef79e00255
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 46e3926f31ec7d12da539d868cacb37e18134e96
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757090"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109694"
 ---
 # <a name="cwindow-class"></a>CWindow 클래스
 
@@ -410,7 +410,7 @@ void Attach(HWND hWndNew) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*hWndNew*  
+*hWndNew*<br/>
 [in] 창에 대 한 핸들입니다.
 
 ### <a name="example"></a>예제
@@ -459,7 +459,7 @@ BOOL CenterWindow(HWND hWndCenter = NULL) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*hWndCenter*  
+*hWndCenter*<br/>
 [in] 중앙에 대 한 창 핸들입니다. 이 매개 변수가 NULL (기본값) 인 경우 메서드는 설정 *hWndCenter* 가 자식 창인 경우 창의 부모 창에 있습니다. 설정이 고, 그렇지 *hWndCenter* 창의 소유자 창에 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -566,28 +566,28 @@ HWND Create(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpstrWndClass*  
+*lpstrWndClass*<br/>
 [in] 창 클래스에 대 한 포인터입니다.
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] 부모 또는 소유자 창에 대 한 핸들입니다.
 
-*rect*  
+*rect*<br/>
 [in] 형식 변수의 [_U_RECT](../../atl/reference/u-rect-class.md) 창의 위치를 지정 합니다. 기본값은 NULL입니다. 경우이 매개 변수는 NULL 값 `CWindow::rcDefault` 사용 됩니다.
 
-*szWindowName*  
+*szWindowName*<br/>
 [in] 창의 이름을 지정합니다. 기본값은 NULL입니다.
 
-*dwStyle*  
+*dwStyle*<br/>
 [in] 창 스타일입니다. 기본값은 0, 의미 없는 스타일 지정 됩니다. 가능한 값 목록을 참조 하세요 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK에 있습니다.
 
-*dwExStyle*  
+*dwExStyle*<br/>
 [in] 확장된 창 스타일입니다. 기본값은 0, 의미 없는 확장된 스타일 지정 됩니다. 가능한 값 목록을 참조 하세요 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK에 있습니다.
 
-*MenuOrID*  
+*MenuOrID*<br/>
 [in] 형식 변수의 [_U_MENUorID](../../atl/reference/u-menuorid-class.md) 메뉴 또는 창 식별자에 대 한 핸들을 지정 합니다. 기본값은 0U 합니다.
 
-*lpCreateParam*  
+*lpCreateParam*<br/>
 창 만들기에 포함 된 데이터에 대 한 포인터를 [CREATESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632603) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -652,7 +652,7 @@ CWindow(HWND hWnd = NULL) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*hWnd*  
+*hWnd*<br/>
 [in] 창에 대 한 핸들입니다.
 
 ### <a name="remarks"></a>설명
@@ -911,7 +911,7 @@ HWND GetDescendantWindow(int nID) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nID*  
+*nID*<br/>
 [in] 검색할 하위 창의 식별자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -935,13 +935,13 @@ HRESULT GetDlgControl(
 
 ### <a name="parameters"></a>매개 변수
 
-*nID*  
+*nID*<br/>
 [in] 검색할 컨트롤의 리소스 ID입니다.
 
-*iid*  
+*iid*<br/>
 [in] 컨트롤을 활용 하려면 원하는 인터페이스의 ID입니다.
 
-*ppCtrl*  
+*ppCtrl*<br/>
 [out] 인터페이스에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -977,13 +977,13 @@ HRESULT GetDlgHost(
 
 ### <a name="parameters"></a>매개 변수
 
-*nID*  
+*nID*<br/>
 [in] 검색할 컨트롤의 리소스 ID입니다.
 
-*iid*  
+*iid*<br/>
 [in] 컨트롤을 활용 하려면 원하는 인터페이스의 ID입니다.
 
-*ppHost*  
+*ppHost*<br/>
 [out] 인터페이스에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1098,7 +1098,7 @@ HICON GetIcon(BOOL bBigIcon = TRUE) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*bBigIcon*  
+*bBigIcon*<br/>
 [in] True (기본값) 메서드는 큰 아이콘 그렇지 않은 경우 작은 아이콘을 반환합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1448,16 +1448,16 @@ int GetWindowText(CSimpleString& strText) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszStringBuf*  
+*lpszStringBuf*<br/>
 창 텍스트를 쓸 버퍼입니다.
 
-*nMaxCount*  
+*nMaxCount*<br/>
 문자 단위의 버퍼 크기이며, 쓸 수 있는 최대 문자 수이기도 합니다.
 
-*bstrText*  
+*bstrText*<br/>
 창 텍스트를 저장 하는 BSTR입니다.
 
-*strText*  
+*strText*<br/>
 창 텍스트를 저장할 `CString`입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1761,7 +1761,7 @@ BOOL LockWindowUpdate(BOOL bLock = TRUE) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*블록*  
+*블록*<br/>
 [in] 경우 TRUE (기본값), 창 잠깁니다. 그렇지 않으면 해당 잠금이 해제 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1833,13 +1833,13 @@ BOOL ModifyStyle(
 
 ### <a name="parameters"></a>매개 변수
 
-*dwRemove*  
+*dwRemove*<br/>
 [in] 스타일 수정 하는 동안 제거할 창 스타일을 지정 합니다.
 
-*dwAdd*  
+*dwAdd*<br/>
 [in] 스타일 수정 하는 동안 추가할 창 스타일을 지정 합니다.
 
-*nFlags*  
+*nFlags*<br/>
 [in] 창 위치 지정 플래그입니다. 가능한 값 목록을 참조 하세요. 합니다 [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) Windows SDK에는 함수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1879,13 +1879,13 @@ BOOL ModifyStyleEx(
 
 ### <a name="parameters"></a>매개 변수
 
-*dwRemove*  
+*dwRemove*<br/>
 [in] 스타일 수정 하는 동안 제거할 확장된 스타일을 지정 합니다.
 
-*dwAdd*  
+*dwAdd*<br/>
 [in] 스타일 수정 하는 동안 추가할 확장된 스타일을 지정 합니다.
 
-*nFlags*  
+*nFlags*<br/>
 [in] 창 위치 지정 플래그입니다. 가능한 값 목록을 참조 하세요. 합니다 [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) Windows SDK에는 함수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1963,7 +1963,7 @@ BOOL OpenClipboard() throw();
 
 변환 된 `CWindow` 를 HWND로 개체입니다.
 
-```  
+```
 operator HWND() const throw();
 ```
 
@@ -2018,10 +2018,10 @@ void Print(HDC hDC, DWORD dwFlags) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*hDC*  
+*hDC*<br/>
 [in] 장치 컨텍스트에 대 한 핸들입니다.
 
-*dwFlags*  
+*dwFlags*<br/>
 [in] 그리기 옵션을 지정합니다. 다음 플래그 중 하나 이상 결합할 수 있습니다.
 
 - PRF_CHECKVISIBLE 표시 된 경우에 창을 그립니다.
@@ -2046,10 +2046,10 @@ void PrintClient(HDC hDC, DWORD dwFlags) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*hDC*  
+*hDC*<br/>
 [in] 장치 컨텍스트에 대 한 핸들입니다.
 
-*dwFlags*  
+*dwFlags*<br/>
 [in] 그리기 옵션을 지정합니다. 다음 플래그 중 하나 이상 결합할 수 있습니다.
 
 - PRF_CHECKVISIBLE 표시 된 경우에 창을 그립니다.
@@ -2122,13 +2122,13 @@ BOOL ResizeClient(
 
 ### <a name="parameters"></a>매개 변수
 
-*nWidth*  
+*nWidth*<br/>
 픽셀에서 창의 새 너비입니다.
 
-*nHeight*  
+*nHeight*<br/>
 픽셀에서 창의 새 높이입니다.
 
-*bRedraw*  
+*bRedraw*<br/>
 변경 내용을 다시 그릴 것인지를 나타내는 플래그입니다. 기본값은 FALSE를 나타내는 창을 변경 내용을 다시 그려지지 않습니다.
 
 ##  <a name="screentoclient"></a>  CWindow::ScreenToClient
@@ -2236,16 +2236,16 @@ void SendMessageToDescendants(
 
 ### <a name="parameters"></a>매개 변수
 
-*message*  
+*message*<br/>
 [in] 메시지를 보냅니다.
 
-*wParam*  
+*wParam*<br/>
 [in] 추가 메시지 관련 정보입니다.
 
-*lParam*  
+*lParam*<br/>
 [in] 추가 메시지 관련 정보입니다.
 
-*bDeep*  
+*bDeep*<br/>
 [in] True (기본값), 메시지가 전송 될 모든 하위 창을; 하려면 이 고, 그렇지 직계 자식 windows에만 전송 됩니다.
 
 ### <a name="remarks"></a>설명
@@ -2319,7 +2319,7 @@ int SetDlgCtrlID(int nID) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nID*  
+*nID*<br/>
 [in] 창의 식별자에 대해 설정할 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -2379,10 +2379,10 @@ void SetFont(HFONT hFont, BOOL bRedraw = TRUE) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*hFont*  
+*hFont*<br/>
 [in] 새 글꼴에 대 한 핸들입니다.
 
-*bRedraw*  
+*bRedraw*<br/>
 [in] 경우 TRUE (기본값), 창 다시 그려집니다. 이 고, 그렇지 않습니다.
 
 ##  <a name="sethotkey"></a>  CWindow::SetHotKey
@@ -2395,10 +2395,10 @@ int SetHotKey(WORD wVirtualKeyCode, WORD wModifiers) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*wVirtualKeyCode*  
+*wVirtualKeyCode*<br/>
 [in] 바로 가기 키의 가상 키 코드입니다. 에서 표준 가상 키 코드 목록은 Winuser.h를 참조 하세요.
 
-*wModifiers*  
+*wModifiers*<br/>
 [in] 바로 가기 키의 한정자입니다. 가능한 값 목록을 Windows SDK의 WM_SETHOTKEY를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
@@ -2415,10 +2415,10 @@ HICON SetIcon(HICON hIcon, BOOL bBigIcon = TRUE) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*hIcon*  
+*hIcon*<br/>
 [in] 새 아이콘에 대 한 핸들입니다.
 
-*bBigIcon*  
+*bBigIcon*<br/>
 [in] 경우 TRUE (기본값), 큰 아이콘을 설정 하는 메서드. 그렇지 않은 경우 작은 아이콘을 설정합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -2467,7 +2467,7 @@ void SetRedraw(BOOL bRedraw = TRUE) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*bRedraw*  
+*bRedraw*<br/>
 [in] 다시 그리기 플래그의 상태를 지정합니다. 경우 TRUE (기본값), 다시 그리기 플래그를 설정 합니다. FALSE 이면 플래그가 지워집니다.
 
 ### <a name="remarks"></a>설명

@@ -13,12 +13,12 @@ f1_keywords:
 - fstream/std::wifstream
 - fstream/std::wofstream
 ms.assetid: 8dddef2d-7f17-42a6-ba08-6f6f20597d23
-ms.openlocfilehash: 49c5af53c6d174e7f87f75ad8970726c526db714
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: dcae38b92d4740758bad00bc6e07555654dfd973
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962977"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018056"
 ---
 # <a name="ltfstreamgt-typedefs"></a>&lt;fstream&gt; 형식 정의
 
@@ -66,21 +66,17 @@ typedef basic_ifstream<char, char_traits<char>> ifstream;
 
 형식은 템플릿 클래스에 대 한 동의어 [basic_ifstream](../standard-library/basic-ifstream-class.md)기본 문자 특성을 사용 하 여 char 형식의 요소용으로 특수화 된 합니다. 예제는 다음과 같습니다.
 
-`using namespace std;`
+```cpp
+using namespace std;
 
-`ifstream infile("existingtextfile.txt");`
+ifstream infile("existingtextfile.txt");
 
-`if (!infile.bad())`
-
-`{`
-
-`// Dump the contents of the file to cout.`
-
-`cout << infile.rdbuf();`
-
-`infile.close();`
-
-`}`
+if (!infile.bad())
+{
+    // Dump the contents of the file to cout.
+    cout << infile.rdbuf();infile.close();
+}
+```
 
 ## <a name="ofstream"></a>  ofstream
 

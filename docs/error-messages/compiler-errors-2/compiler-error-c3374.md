@@ -16,40 +16,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd06f0e63ab1c467b9359c38ad77056440535aba
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1c4fce4e39dac7342e8d564c0adc7537a856c05d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33253894"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46104896"
 ---
 # <a name="compiler-error-c3374"></a>컴파일러 오류 C3374
-대리자 인스턴스를 만들지 않으면 'function'의 주소를 가져올 수 없습니다.  
-  
- 대리자 인스턴스를 만드는 컨텍스트가 아닌 다른 컨텍스트에서 함수의 주소를 가져왔습니다.  
-  
- 다음 샘플에서는 C3374 오류가 발생하는 경우를 보여 줍니다.  
-  
-```  
-// C3374.cpp  
-// compile with: /clr  
-public delegate void MyDel(int i);  
-  
-ref class A {  
-public:  
-   void func1(int i) {  
-      System::Console::WriteLine("in func1 {0}", i);  
-   }  
-};  
-  
-int main() {  
-   &A::func1;   // C3374  
-  
-   // OK  
-   A ^ a = gcnew A;  
-   MyDel ^ StaticDelInst = gcnew MyDel(a, &A::func1);  
-}  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [방법: 대리자 정의 및 사용(C++/CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md)
+
+대리자 인스턴스를 만들지 않으면 'function'의 주소를 가져올 수 없습니다.
+
+대리자 인스턴스를 만드는 컨텍스트가 아닌 다른 컨텍스트에서 함수의 주소를 가져왔습니다.
+
+다음 샘플에서는 C3374 오류가 발생하는 경우를 보여 줍니다.
+
+```
+// C3374.cpp
+// compile with: /clr
+public delegate void MyDel(int i);
+
+ref class A {
+public:
+   void func1(int i) {
+      System::Console::WriteLine("in func1 {0}", i);
+   }
+};
+
+int main() {
+   &A::func1;   // C3374
+
+   // OK
+   A ^ a = gcnew A;
+   MyDel ^ StaticDelInst = gcnew MyDel(a, &A::func1);
+}
+```
+
+## <a name="see-also"></a>참고 항목
+
+[방법: 대리자 정의 및 사용(C++/CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md)

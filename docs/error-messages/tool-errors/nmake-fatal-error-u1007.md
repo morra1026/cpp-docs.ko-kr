@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 988438b952aa1a06be3ec0da1d7337793c704133
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6a1c74cdfe4113cf1fafd242993df27081eb1d28
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33322382"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112306"
 ---
 # <a name="nmake-fatal-error-u1007"></a>NMAKE 심각한 오류 U1007
-큰따옴표 이름에 사용할 수 없습니다  
-  
- 지정한 대상 이름이 나 파일 이름이 포함 된 큰따옴표 (**"**).  
-  
- 큰따옴표는 파일 이름이 둘러쌀 수 있지만 그 안에 포함 될 수 없습니다.
+
+큰따옴표를 표시 이름에 사용할 수 없습니다
+
+지정 된 대상 이름 또는 파일 이름이 포함 된 큰따옴표 (**"**).
+
+큰따옴표 파일 이름을 둘러쌀 수 있지만 그 안에 포함 될 수 없습니다.

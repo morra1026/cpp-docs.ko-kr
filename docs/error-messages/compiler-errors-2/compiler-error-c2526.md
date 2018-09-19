@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 735222893b69763b2934a93abbb965852d2f6d1e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 152baa8b4fcd3f28e38b94c69b04a87f45040ccc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198237"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094977"
 ---
 # <a name="compiler-error-c2526"></a>컴파일러 오류 C2526
-'identifier1': C 링크 함수 c + + 클래스 'identifier2' 반환할 수 없습니다  
-  
- C 링크가 있는 정의 된 함수는 사용자 정의 형식을 반환할 수 없습니다.
+
+'identifier1': C 링크 함수 c + + 클래스 'identifier2' 반환할 수 없습니다
+
+C 링크가 있는 정의 된 함수는 사용자 정의 형식을 반환할 수 없습니다.

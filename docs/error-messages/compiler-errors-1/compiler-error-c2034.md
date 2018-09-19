@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 606276264a3218b4d222f346a932796e469f6236
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b1dadc3249b7e58410eb153f8d298fca06a44ea7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33166376"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46034423"
 ---
 # <a name="compiler-error-c2034"></a>컴파일러 오류 C2034
-'identifier': 비트 수에 비해 너무 작음을 비트 필드의 유형  
-  
- 비트 필드 선언에는 비트 수는 기본 형식의 크기를 초과합니다.  
-  
- 다음 샘플에서는 C2034 오류가 생성 됩니다.  
-  
-```  
-// C2034.cpp  
-struct A {  
-   char test : 9;   // C2034, char has 8 bits  
-};  
-```  
-  
- 해결 방법:  
-  
-```  
-// C2034b.cpp  
-// compile with: /c  
-struct A {  
-   char test : 8;  
-};  
+
+'identifier': 비트 수가 너무 작아서 비트 필드의 형식
+
+비트 필드 선언에는 비트 수가 기본 형식의 크기를 초과합니다.
+
+다음 샘플에서는 C2034를 생성합니다.
+
+```
+// C2034.cpp
+struct A {
+   char test : 9;   // C2034, char has 8 bits
+};
+```
+
+해결 방법:
+
+```
+// C2034b.cpp
+// compile with: /c
+struct A {
+   char test : 8;
+};
 ```

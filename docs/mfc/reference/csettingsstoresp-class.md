@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cf84e2e7db6f829cb7afcd1831521b4f94535bd
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 4223ce5c358f4e95ab94baac9d5cf0edda5ad73f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850786"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716363"
 ---
 # <a name="csettingsstoresp-class"></a>CSettingsStoreSP 클래스
 합니다 `CSettingsStoreSP` 클래스는 도우미 클래스의 인스턴스를 만드는 데 사용할 수 있는 합니다 [CSettingsStore 클래스](../../mfc/reference/csettingsstore-class.md)합니다.  
@@ -55,7 +55,7 @@ class CSettingsStoreSP
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |`m_dwUserData`|에 저장 된 사용자 지정 사용자 데이터는 `CSettingsStoreSP` 개체입니다. 생성자에서이 데이터를 제공 합니다 `CSettingsStoreSP` 개체입니다.|  
 |`m_pRegistry`|합니다 `CSettingsStore`-파생 된 개체는 `Create` 메서드를 만듭니다.|  
@@ -88,11 +88,11 @@ CSettingsStore& CSettingsStoreSP Create(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bAdmin*  
- 결정 하는 부울 매개 변수 여부를 `CSettingsStore` 개체는 관리자 모드에서 만들어집니다.  
+*bAdmin*<br/>
+[in] 결정 하는 부울 매개 변수 여부를 `CSettingsStore` 개체는 관리자 모드에서 만들어집니다.  
   
- [in] *bReadOnly*  
- 결정 하는 부울 매개 변수 여부를 `CSettingsStore` 읽기 전용 액세스에 대 한 개체가 만들어집니다.  
+*bReadOnly*<br/>
+[in] 결정 하는 부울 매개 변수 여부를 `CSettingsStore` 읽기 전용 액세스에 대 한 개체가 만들어집니다.  
   
 ### <a name="return-value"></a>반환 값  
  새로 만든에 대 한 참조 `CSettingsStore` 개체입니다.  
@@ -104,7 +104,7 @@ CSettingsStore& CSettingsStoreSP Create(
   
  하는 경우 *bAdmin* 가 TRUE 인 응용 프로그램에 관리 권한이 있어야 합니다. 그렇지 않으면 레지스트리를 액세스 하려고 하면 실패 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `Create` 메서드는 `CSettingsStoreSP` 클래스입니다.  
   
  [!code-cpp[NVC_MFC_RibbonApp#33](../../mfc/reference/codesnippet/cpp/csettingsstoresp-class_1.cpp)]  
@@ -117,8 +117,8 @@ CSettingsStoreSP::CSettingsStoreSP(DWORD dwUserData = 0);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwUserData*  
- 사용자 정의 데이터는는 `CSettingsStoreSP` 저장소 개체입니다.  
+*dwUserData*<br/>
+[in] 사용자 정의 데이터는는 `CSettingsStoreSP` 저장소 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  합니다 `CSettingsStoreSP` 에서 데이터를 저장 하는 개체 *dwUserData* 보호 된 멤버 변수의 `m_dwUserData`합니다.  
@@ -131,8 +131,8 @@ static BOOL __stdcall CSettingsStoreSP::SetRuntimeClass(CRuntimeClass* pRTI);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pRTI*  
- 파생 된 클래스에 대 한 런타임 클래스 정보에 대 한 포인터를 [CSettingsStore 클래스](../../mfc/reference/csettingsstore-class.md)합니다.  
+*pRTI*<br/>
+[in] 파생 된 클래스에 대 한 런타임 클래스 정보에 대 한 포인터를 [CSettingsStore 클래스](../../mfc/reference/csettingsstore-class.md)합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 클래스에서 식별 하는 경우에 FALSE *pRTI* 에서 파생 되지 않은 `CSettingsStore`합니다.  

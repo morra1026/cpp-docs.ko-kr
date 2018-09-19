@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d62494aca47f0ad52c9abbe8e3b897c58c327d9d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ab9d89d66efed3cfa687d17b8a9efd406bf1bec7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169659"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082640"
 ---
 # <a name="compiler-error-c2207"></a>컴파일러 오류 C2207
-'member': 클래스 템플릿의 멤버는 함수 형식을 가져올 수 없습니다.  
-  
- 클래스 템플릿의 `member`는 이전에 비정적 데이터 멤버로 구문 분석되었습니다. 멤버 함수로 재정의할 수 없습니다.
+
+'member': 클래스 템플릿의 멤버는 함수 형식을 가져올 수 없습니다.
+
+클래스 템플릿의 `member`는 이전에 비정적 데이터 멤버로 구문 분석되었습니다. 멤버 함수로 재정의할 수 없습니다.

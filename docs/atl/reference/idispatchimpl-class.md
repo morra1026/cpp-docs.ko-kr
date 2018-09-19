@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 878fa1f530a73a9d872a1b094d0ea0ee1b822971
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 81feb345c25ea1c1e9d15dba8dceebb7a2cdb418
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756365"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709802"
 ---
 # <a name="idispatchimpl-class"></a>IDispatchImpl 클래스
 
@@ -52,23 +52,23 @@ class ATL_NO_VTABLE IDispatchImpl : public T
 
 #### <a name="parameters"></a>매개 변수
 
-[in] *T*  
-이중 인터페이스입니다.
+*T*<br/>
+[in] 이중 인터페이스입니다.
 
-[in] *piid*  
-에 대 한 포인터의 IID *T*합니다.
+*piid*<br/>
+[in] 에 대 한 포인터의 IID *T*합니다.
 
-[in] *plibid*  
-포인터를 인터페이스에 대 한 정보를 포함 하는 형식 라이브러리의 LIBID입니다. 서버 수준 형식 라이브러리는 기본적으로 전달 됩니다.
+*plibid*<br/>
+[in] 포인터를 인터페이스에 대 한 정보를 포함 하는 형식 라이브러리의 LIBID입니다. 서버 수준 형식 라이브러리는 기본적으로 전달 됩니다.
 
-[in] *wMajor*  
-형식 라이브러리의 주 버전입니다. 기본적으로 값은 1입니다.
+*wMajor*<br/>
+[in] 형식 라이브러리의 주 버전입니다. 기본적으로 값은 1입니다.
 
-[in] *wMinor*  
-형식 라이브러리의 부 버전입니다. 기본적으로 값은 0입니다.
+*wMinor*<br/>
+[in] 형식 라이브러리의 부 버전입니다. 기본적으로 값은 0입니다.
 
-[in] *tihclass*  
-클래스에 대 한 형식 정보를 관리 하는 데 *T*합니다. 기본적으로 이 값은 `CComTypeInfoHolder`입니다.
+*tihclass*<br/>
+[in] 클래스에 대 한 형식 정보를 관리 하는 데 *T*합니다. 기본적으로 이 값은 `CComTypeInfoHolder`입니다.
 
 ## <a name="members"></a>멤버
 

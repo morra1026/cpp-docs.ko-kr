@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f5e71fbf1a24a38b0a18e70ce7d0fa044ad4ec5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: db7903dccfd851bb4bf76f1990424f887686d344
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767880"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070108"
 ---
 # <a name="cacl-class"></a>CAcl 클래스
 
@@ -161,7 +161,7 @@ CAcl(const CAcl& rhs) throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*rhs*  
+*rhs*<br/>
 기존 `CAcl` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -206,16 +206,16 @@ void GetAclEntries(
 
 ### <a name="parameters"></a>매개 변수
 
-*pSids*  
+*pSids*<br/>
 배열에 대 한 포인터 [CSid](../../atl/reference/csid-class.md) 개체입니다.
 
-*pAccessMasks*  
+*pAccessMasks*<br/>
 액세스 마스크입니다.
 
-*pAceTypes*  
+*pAceTypes*<br/>
 액세스 제어 항목 (ACE) 형식입니다.
 
-*pAceFlags*  
+*pAceFlags*<br/>
 ACE는 플래그입니다.
 
 ### <a name="remarks"></a>설명
@@ -243,25 +243,25 @@ void GetAclEntry(
 
 ### <a name="parameters"></a>매개 변수
 
-*nIndex*  
+*nIndex*<br/>
 검색할 ACL 항목 인덱스입니다.
 
-*pSid*  
+*pSid*<br/>
 합니다 [CSid](../../atl/reference/csid-class.md) ACL 항목이 적용 되는 개체입니다.
 
-*pMask*  
+*pMask*<br/>
 액세스를 부여 하거나 거부할 권한을 지정 하는 마스크입니다.
 
-*pType*  
+*pType*<br/>
 ACE 형식입니다.
 
-*pFlags*  
+*pFlags*<br/>
 ACE는 플래그입니다.
 
-*pObjectType*  
+*pObjectType*<br/>
 개체 형식입니다. ACE는 개체 ACE 없는 경우 또는 ACE에 개체 형식을 지정 하지 않으면이 GUID_NULL에 설정 됩니다.
 
-*pInheritedObjectType*  
+*pInheritedObjectType*<br/>
 상속 된 개체 형식입니다. ACE는 개체 ACE 없는 경우 또는 ACE의 상속 된 개체 형식을 지정 하지 않으면이 GUID_NULL에 설정 됩니다.
 
 ### <a name="remarks"></a>설명
@@ -322,7 +322,7 @@ TRUE를 반환 합니다 `CAcl` 개체가 NULL이 FALSE이 고, 그렇지 합니
 
 캐스트를 `CAcl` 개체는 `ACL` (액세스 제어 목록) 구조입니다.
 
-```  
+```
 operator const ACL *() const throw(...);
 ```
 
@@ -340,7 +340,7 @@ CAcl& operator= (const CAcl& rhs) throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*rhs*  
+*rhs*<br/>
 `CAcl` 기존 개체에 할당 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -357,7 +357,7 @@ void RemoveAce(UINT nIndex) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nIndex*  
+*nIndex*<br/>
 제거할 ACE 항목 인덱스입니다.
 
 ### <a name="remarks"></a>설명
@@ -374,7 +374,7 @@ bool RemoveAces(const CSid& rSid) throw(...)
 
 ### <a name="parameters"></a>매개 변수
 
-*rSid*  
+*rSid*<br/>
 `CSid` 개체에 대한 참조입니다.
 
 ##  <a name="setempty"></a>  CAcl::SetEmpty
@@ -403,5 +403,5 @@ void SetNull() throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 개요](../../atl/atl-class-overview.md)   
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [보안 전역 함수](../../atl/reference/security-global-functions.md)

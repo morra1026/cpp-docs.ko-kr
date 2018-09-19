@@ -1,7 +1,7 @@
 ---
 title: CEdit 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -104,12 +104,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27ea5ccb0d15bd57a526c78cd3c57a4e83369ed0
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e8442f771cda2b7130a60148582288a31977fa59
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757792"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726637"
 ---
 # <a name="cedit-class"></a>CEdit Class
 Windows 편집 컨트롤의 기능을 제공합니다.  
@@ -445,11 +445,11 @@ CString GetCueBanner() const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *lpszText*  
- 큐 텍스트를 포함 하는 문자열에 대 한 포인터입니다.  
+*lpszText*<br/>
+[out] 큐 텍스트를 포함 하는 문자열에 대 한 포인터입니다.  
   
- [in] *cchText*  
- 받을 수 있는 문자의 수입니다. 이 수에는 NULL 종결 문자 포함 됩니다.  
+*cchText*<br/>
+[in] 받을 수 있는 문자의 수입니다. 이 수에는 NULL 종결 문자 포함 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  첫 번째 오버 로드에 대 한 메서드가 성공할 경우 TRUE 그렇지 않으면 FALSE입니다.  
@@ -513,14 +513,14 @@ BOOL GetHighlight(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out] *pichStart*|강조 표시 되는 텍스트 범위에서 첫 번째 문자의 0부터 시작 인덱스입니다.|  
-|[out] *pichEnd*|강조 표시 된 텍스트 범위의 마지막 문자의 0부터 시작 인덱스입니다.|  
+|*pichStart*|[out] 강조 표시 되는 텍스트 범위에서 첫 번째 문자의 0부터 시작 인덱스입니다.|  
+|*pichEnd*|[out] 강조 표시 된 텍스트 범위의 마지막 문자의 0부터 시작 인덱스입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 전송 된 [EM_GETHILITE](/windows/desktop/Controls/em-gethilite) Windows SDK에 설명 된 메시지입니다.  
+ 이 메서드는 전송 된 [EM_GETHILITE](/windows/desktop/Controls/em-gethilite) Windows SDK에 설명 된 메시지입니다. 둘 다 `SetHighlight` 고 `GetHighlight` 유니코드만 빌드에 대 한 현재 사용 하도록 설정 됩니다. 
   
 ##  <a name="getlimittext"></a>  CEdit::GetLimitText  
  이 텍스트 제한을 가져올를이 멤버 함수 호출 `CEdit` 개체입니다.  
@@ -917,11 +917,11 @@ BOOL SetCueBanner(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszText*  
- 편집 컨트롤에 표시할 큐를 포함 하는 문자열에 대 한 포인터입니다.  
+*lpszText*<br/>
+[in] 편집 컨트롤에 표시할 큐를 포함 하는 문자열에 대 한 포인터입니다.  
   
- [in] *fDrawWhenFocused*  
- FALSE 인 경우 사용자가 편집 컨트롤 클릭 하 고 컨트롤 포커스 큐 배너를 그리지 않습니다.  
+*fDrawWhenFocused*<br/>
+[in] FALSE 인 경우 사용자가 편집 컨트롤 클릭 하 고 컨트롤 포커스 큐 배너를 그리지 않습니다.  
   
  TRUE 인 경우 컨트롤에 포커스가 있을 때에 큐 배너를 그립니다. 큐 배너를 사용자 컨트롤에 입력 하기 시작 하면 사라집니다.  
   
@@ -981,11 +981,11 @@ void SetHighlight(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *ichStart*|강조 표시 하는 텍스트 범위에서 첫 번째 문자의 0부터 시작 인덱스입니다.|  
-|[in] *ichEnd*|강조 표시 하는 텍스트 범위에서 마지막 문자의 0부터 시작 인덱스입니다.|  
+|*ichStart*|[in] 강조 표시 하는 텍스트 범위에서 첫 번째 문자의 0부터 시작 인덱스입니다.|  
+|*ichEnd*|[in] 강조 표시 하는 텍스트 범위에서 마지막 문자의 0부터 시작 인덱스입니다.|  
   
 ### <a name="remarks"></a>설명  
- 이 메서드는 전송 된 [EM_SETHILITE](/windows/desktop/Controls/em-sethilite) Windows SDK에 설명 된 메시지입니다.  
+ 이 메서드는 전송 된 [EM_SETHILITE](/windows/desktop/Controls/em-sethilite) Windows SDK에 설명 된 메시지입니다.  이 메서드는 전송 된 [EM_SETHILITE](/windows/desktop/Controls/em-sethilite) Windows SDK에 설명 된 메시지입니다. 둘 다 `SetHighlight` 및 `GetHighlight` 유니코드만 빌드에 대 한 활성화 됩니다. 
   
 ##  <a name="setlimittext"></a>  CEdit::SetLimitText  
  이 텍스트 제한을 설정 하려면이 멤버 함수 호출 `CEdit` 개체입니다.  
@@ -1245,10 +1245,10 @@ BOOL ShowBalloonTip(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *pEditBalloonTip*|에 대 한 포인터를 [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) 풍선 설명 하는 구조입니다.|  
-|[in] *lpszTitle*|풍선 설명의 제목을 포함 하는 유니코드 문자열에 대 한 포인터입니다.|  
-|[in] *lpszText*|풍선 도구 설명 텍스트를 포함 하는 유니코드 문자열에 대 한 포인터입니다.|  
-|[in] *ttiIcon*|**INT** 풍선 연결할 아이콘의 형식을 지정 하는 합니다. 기본값은 TTI_NONE 합니다. 자세한 내용은 참조 하세요. 합니다 `ttiIcon` 의 멤버는 [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) 구조입니다.|  
+|*pEditBalloonTip*|[in] 에 대 한 포인터를 [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) 풍선 설명 하는 구조입니다.|  
+|*lpszTitle*|[in] 풍선 설명의 제목을 포함 하는 유니코드 문자열에 대 한 포인터입니다.|  
+|*lpszText*|[in] 풍선 도구 설명 텍스트를 포함 하는 유니코드 문자열에 대 한 포인터입니다.|  
+|*ttiIcon*|[in] **INT** 풍선 연결할 아이콘의 형식을 지정 하는 합니다. 기본값은 TTI_NONE 합니다. 자세한 내용은 참조 하세요. 합니다 `ttiIcon` 의 멤버는 [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) 구조입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  

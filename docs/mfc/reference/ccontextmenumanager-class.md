@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f2bf81c2e69290feb9f9afd054286c10e42d0be
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: c3a9088ced647dd0e6694181cd7ab7857047c720
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338755"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713284"
 ---
 # <a name="ccontextmenumanager-class"></a>CContextMenuManager 클래스
 `CContextMenuManager` 개체 관리 바로 가기 메뉴, 상황에 맞는 메뉴 라고도 합니다.  
@@ -87,7 +87,7 @@ class CContextMenuManager : public CObject
   
  `CContextMenuManager` 도 저장 하 고 Windows 레지스트리에 해당 상태를 로드할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예에서는 메뉴에 추가 하는 방법에 설명를 `CContextMenuManager` 개체 및 방법 활성 팝업 메뉴 닫기 때는 `CContextMenuManager` 개체에 새 팝업 메뉴가 표시 됩니다. 이 코드 조각은의 일부인 합니다 [사용자 지정 페이지 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_CustomPages#4](../../mfc/reference/codesnippet/cpp/ccontextmenumanager-class_1.cpp)]  
@@ -115,14 +115,14 @@ BOOL AddMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiMenuNameResId*  
- 새 메뉴 이름을 포함 하는 문자열에 대 한 리소스 ID입니다.  
+*uiMenuNameResId*<br/>
+[in] 새 메뉴 이름을 포함 하는 문자열에 대 한 리소스 ID입니다.  
   
- [in] *uiMenuResId*  
- 메뉴 리소스 id입니다.  
+*uiMenuResId*<br/>
+[in] 메뉴 리소스 id입니다.  
   
- [in] *lpszName*  
- 새 메뉴 이름을 포함 하는 문자열입니다.  
+*lpszName*<br/>
+[in] 새 메뉴 이름을 포함 하는 문자열입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 0이 아닌 값 메서드가 실패 하는 경우 0입니다.  
@@ -148,8 +148,8 @@ HMENU GetMenuById(UINT nMenuResId) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nMenuResId*  
- 메뉴에 대 한 리소스 ID입니다.  
+*nMenuResId*<br/>
+[in] 메뉴에 대 한 리소스 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
  연결 된 메뉴에 대 한 핸들 또는 `NULL` 메뉴 없는 경우.  
@@ -164,11 +164,11 @@ HMENU GetMenuByName(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszName*  
- 검색할 메뉴의 이름을 포함 하는 문자열입니다.  
+*lpszName*<br/>
+[in] 검색할 메뉴의 이름을 포함 하는 문자열입니다.  
   
- [out] *puiOrigResID*  
- UINT 포인터입니다. 하는 경우이 매개 변수에 지정된 된 메뉴의 리소스 ID를 포함 찾을 수 있습니다.  
+*puiOrigResID*<br/>
+[out] UINT 포인터입니다. 하는 경우이 매개 변수에 지정된 된 메뉴의 리소스 ID를 포함 찾을 수 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정 된 이름과 일치 하는 메뉴에 대 한 핸들 *lpszName*합니다. 호출 없음 메뉴의 경우 NULL *lpszName*합니다.  
@@ -184,8 +184,8 @@ void GetMenuNames(CStringList& listOfNames) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *listOfNames*  
- 에 대 한 참조를 [CStringList](../../mfc/reference/cstringlist-class.md) 매개 변수입니다. 이 메서드는 메뉴 이름 목록을이 매개 변수를 씁니다.  
+*listOfNames*<br/>
+[out] 에 대 한 참조를 [CStringList](../../mfc/reference/cstringlist-class.md) 매개 변수입니다. 이 메서드는 메뉴 이름 목록을이 매개 변수를 씁니다.  
   
 ##  <a name="loadstate"></a>  CContextMenuManager::LoadState  
  연관 된 정보를 로드 합니다 [CContextMenuManager 클래스](../../mfc/reference/ccontextmenumanager-class.md) Windows 레지스트리에서 합니다.  
@@ -195,8 +195,8 @@ virtual BOOL LoadState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszProfileName*  
- 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
+*lpszProfileName*<br/>
+[in] 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -227,8 +227,8 @@ virtual BOOL SaveState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszProfileName*  
- 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
+*lpszProfileName*<br/>
+[in] 레지스트리 키의 상대 경로 포함 하는 문자열입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -246,8 +246,8 @@ void SetDontCloseActiveMenu (BOOL bSet = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bSet*  
- 활성 팝업 메뉴를 닫을지 여부를 제어 하는 부울 매개 변수입니다. TRUE 값을 지정 활성 팝업 메뉴 닫혀 있지 않습니다. FALSE 이면 활성 팝업 메뉴 닫히도록 합니다.  
+*bSet*<br/>
+[in] 활성 팝업 메뉴를 닫을지 여부를 제어 하는 부울 매개 변수입니다. TRUE 값을 지정 활성 팝업 메뉴 닫혀 있지 않습니다. FALSE 이면 활성 팝업 메뉴 닫히도록 합니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로 `CContextMenuManager` 활성 팝업 메뉴를 닫습니다.  
@@ -276,29 +276,29 @@ virtual CMFCPopupMenu* ShowPopupMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiMenuResId*  
- 이 메서드를 표시 하는 메뉴의 리소스 ID입니다.  
+*uiMenuResId*<br/>
+[in] 이 메서드를 표시 하는 메뉴의 리소스 ID입니다.  
   
- [in] *x*  
- 가로 클라이언트 좌표에서 바로 가기 메뉴에 대 한 오프셋입니다.  
+*x*<br/>
+[in] 가로 클라이언트 좌표에서 바로 가기 메뉴에 대 한 오프셋입니다.  
   
- [in] *y*  
- 클라이언트 좌표에서 바로 가기 메뉴에 대 한 세로 오프셋  
+*y*<br/>
+[in] 클라이언트 좌표에서 바로 가기 메뉴에 대 한 세로 오프셋  
   
- [in] *pWndOwner*  
- 바로 가기 메뉴의 부모 창에 대 한 포인터입니다.  
+*pWndOwner*<br/>
+[in] 바로 가기 메뉴의 부모 창에 대 한 포인터입니다.  
   
- [in] *bOwnMessage*  
- 메시지가 라우팅되는 방식을 나타내는 부울 매개 변수입니다. 하는 경우 *bOwnMessage* FALSE이 고, 표준 MFC는 라우팅이 사용 됩니다. 그렇지 않으면 *pWndOwner* 메시지를 수신 합니다.  
+*bOwnMessage*<br/>
+[in] 메시지가 라우팅되는 방식을 나타내는 부울 매개 변수입니다. 하는 경우 *bOwnMessage* FALSE이 고, 표준 MFC는 라우팅이 사용 됩니다. 그렇지 않으면 *pWndOwner* 메시지를 수신 합니다.  
   
- [in] *hmenuPopup*  
- 이 메서드를 표시 하는 메뉴의 핸들입니다.  
+*hmenuPopup*<br/>
+[in] 이 메서드를 표시 하는 메뉴의 핸들입니다.  
   
- [in] *bAutoDestroy*  
- 메뉴 자동으로 제거 됩니다 있는지 여부를 나타내는 부울 매개 변수입니다.  
+*bAutoDestroy*<br/>
+[in] 메뉴 자동으로 제거 됩니다 있는지 여부를 나타내는 부울 매개 변수입니다.  
   
- [in] *bRightAlign*  
- 메뉴 항목을 정렬 하는 방법을 나타내는 부울 매개 변수입니다. 하는 경우 *bRightAlign* 가 TRUE 이면 메뉴는 오른쪽에서 왼쪽 읽기 순서에 대 한 오른쪽에 맞춰집니다.  
+*bRightAlign*<br/>
+[in] 메뉴 항목을 정렬 하는 방법을 나타내는 부울 매개 변수입니다. 하는 경우 *bRightAlign* 가 TRUE 이면 메뉴는 오른쪽에서 왼쪽 읽기 순서에 대 한 오른쪽에 맞춰집니다.  
   
 ### <a name="return-value"></a>반환 값  
  첫 번째 메서드 오버 로드 메서드가 성공적으로 메뉴를 표시 하는 경우 0이 아닌 반환 그렇지 않으면 0입니다. 두 번째 메서드 오버 로드에 대 한 포인터를 반환 [CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) 경우 바로 가기 메뉴 표시 잘못 되었습니다; 그렇지 않으면 NULL입니다.  
@@ -321,20 +321,20 @@ virtual UINT TrackPopupMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hmenuPopup*  
- 이 메서드를 표시 하는 바로 가기 메뉴의 핸들입니다.  
+*hmenuPopup*<br/>
+[in] 이 메서드를 표시 하는 바로 가기 메뉴의 핸들입니다.  
   
- [in] *x*  
- 가로 클라이언트 좌표에서 바로 가기 메뉴에 대 한 오프셋입니다.  
+*x*<br/>
+[in] 가로 클라이언트 좌표에서 바로 가기 메뉴에 대 한 오프셋입니다.  
   
- [in] *y*  
- 세로 클라이언트 좌표에서 바로 가기 메뉴에 대 한 오프셋입니다.  
+*y*<br/>
+[in] 세로 클라이언트 좌표에서 바로 가기 메뉴에 대 한 오프셋입니다.  
   
- [in] *pWndOwner*  
- 바로 가기 메뉴의 부모 창에 대 한 포인터입니다.  
+*pWndOwner*<br/>
+[in] 바로 가기 메뉴의 부모 창에 대 한 포인터입니다.  
   
- [in] *bRightAlign*  
- 메뉴 항목을 정렬 하는 방법을 나타내는 부울 매개 변수입니다. 하는 경우 *bRightAlign* 가 TRUE 이면 메뉴는 오른쪽에서 왼쪽 읽기 순서에 대 한 오른쪽에 맞춰집니다. 하는 경우 *bRightAlign* 은 FALSE 메뉴는 왼쪽에서 오른쪽 읽기 순서에 대 한 왼쪽에 맞춰집니다.  
+*bRightAlign*<br/>
+[in] 메뉴 항목을 정렬 하는 방법을 나타내는 부울 매개 변수입니다. 하는 경우 *bRightAlign* 가 TRUE 이면 메뉴는 오른쪽에서 왼쪽 읽기 순서에 대 한 오른쪽에 맞춰집니다. 하는 경우 *bRightAlign* 은 FALSE 메뉴는 왼쪽에서 오른쪽 읽기 순서에 대 한 왼쪽에 맞춰집니다.  
   
 ### <a name="return-value"></a>반환 값  
  사용자가; 명령의 메뉴 명령 ID 사용자가 메뉴 명령을 선택 하지 않고 바로 가기 메뉴를 닫을 경우 0입니다.  

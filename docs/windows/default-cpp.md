@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d1055c0865988edf9b54539c0d214cebcda13735
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6baefb7ef0af5054cb46ed4ad74b6a6bf80fbb61
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220422"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45699923"
 ---
 # <a name="default-c"></a>default(C++)
 
@@ -46,8 +46,8 @@ coclass 내에 정의된 custom 또는 dispinterface가 기본 프로그래밍 �
 
 지정된 기본 인터페이스가 없는 경우 처음에 발생하는 비 소스 인터페이스가 기본값으로 사용됩니다.
 
-*interface2*(선택 사항)  
-기본 소스 인터페이스입니다. 이 인터페이스는 [source](../windows/source-cpp.md) 특성을 사용하여 지정해야 합니다.
+*interface2*<br/>
+(선택 사항) 기본 소스 인터페이스입니다. 이 인터페이스는 [source](../windows/source-cpp.md) 특성을 사용하여 지정해야 합니다.
 
 지정된 기본 소스 인터페이스가 없는 경우 첫 번째 소스 인터페이스가 기본값으로 사용됩니다.
 

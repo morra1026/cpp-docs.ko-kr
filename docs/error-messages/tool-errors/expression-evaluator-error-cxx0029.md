@@ -17,18 +17,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 216474bbb7a67cb3c435770ab418ab4b7f4e5c4f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 687708db71eedf9b8f62dc88efc1bfe473cde1d4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297325"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017016"
 ---
 # <a name="expression-evaluator-error-cxx0029"></a>식 계산기 오류 CXX0029
-구조체 포인터가 아닙니다  
-  
- 멤버 선택 연산자 (**->**) 구조에 대 한 포인터가 아닌 식에 적용 되었습니다.  
-  
- 전체 식은 괄호로 묶인 올바르게 또는 적절 한 구조 포인터 형식으로 주소 식 형식을 확인 하십시오.  
-  
- 이 오류는 can0029와 동일 합니다.
+
+구조체 포인터가 아닙니다
+
+멤버 선택 연산자 (**->**) 구조에 대 한 포인터가 아닌 식에 적용 되었습니다.
+
+전체 식을 괄호로 묶인 올바르게 이거나 형식 캐스팅 적절 한 구조 포인터 형식으로 주소 식을 확인 합니다.
+
+이 오류는 can0029와 동일 합니다.

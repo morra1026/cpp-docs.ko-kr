@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22f59045bfc0e0d7261541005be6c70680c1e906
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d68eff2e15b4a7b0f8bafa64b4629b953e9430d9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302570"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46058850"
 ---
 # <a name="linker-tools-error-lnk1296"></a>링커 도구 오류 LNK1296
-파일 이름을 로드할 수 없습니다.  
-  
- 지정 된 DLL에 사용할 수 없습니다.  
-  
- DLL에 대 한 가능한 위치는 현재 디렉터리, 시스템 디렉터리, Windows 디렉터리 및 경로 환경 변수에 지정 된 디렉터리입니다.
+
+파일을 로드할 수 없습니다.
+
+지정 된 DLL에 사용할 수 없습니다.
+
+DLL에 대 한 가능한 위치에는 현재 디렉터리, 시스템 디렉터리, Windows 디렉터리와 PATH 환경 변수에 지정 된 디렉터리는입니다.

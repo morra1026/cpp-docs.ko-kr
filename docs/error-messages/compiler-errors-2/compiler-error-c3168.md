@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 83f0d6c6b35d863ee200798bd4c6a8bcd08d88ab
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b2a70af70af5b31ef9a3bf2fe939eef28783369a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245240"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106456"
 ---
 # <a name="compiler-error-c3168"></a>컴파일러 오류 C3168
-'type': 열거형의 내부 형식이 잘못 되었습니다.  
-  
-에 대해 지정 된 내부 형식이 고 `enum` 형식이 잘못 되었습니다. 기본 형식이 c + + 정수 형식이 나 해당 CLR 형식 이어야 합니다.  
-  
-다음 샘플에서는 C3168 오류가 생성 됩니다.  
-  
-```  
-// C3168.cpp  
-// compile with: /clr /c  
-ref class G{};  
-  
-enum class E : G { e };   // C3168  
-enum class F { f };   // OK  
-```  
+
+'type': 열거형의 내부 형식이 잘못 되었습니다.
+
+에 지정 된 형식의 기본는 `enum` 유형이 잘못 되었습니다. C + + 정수 형식 또는 해당 CLR 형식이 기본 형식 이어야 합니다.
+
+다음 샘플에서는 C3168를 생성합니다.
+
+```
+// C3168.cpp
+// compile with: /clr /c
+ref class G{};
+
+enum class E : G { e };   // C3168
+enum class F { f };   // OK
+```

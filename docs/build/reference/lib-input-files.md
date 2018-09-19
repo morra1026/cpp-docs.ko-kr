@@ -16,24 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 140a0f1d9ef6fdb3ca5e6d6977804684c88af1fb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 952c3345234192e3798fea483d527cd3afec4bff
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371969"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702470"
 ---
 # <a name="lib-input-files"></a>LIB 입력 파일
-LIB에서 필요로 하는 입력된 파일은 다음 표에 나와 있는 것 처럼가 사용 되 고 있는 모드에 따라 달라 집니다.  
-  
-|모드|입력|  
-|----------|-----------|  
-|기본값 (빌드 또는 라이브러리를 수정 합니다.)|COFF 개체 (.obj) 파일, COFF 라이브러리 (.lib) 32 비트 개체 모델 (OMF) 개체 (.obj) 파일|  
-|/EXTRACT와 멤버 추출|COFF 라이브러리 (.lib)|  
-|내보내기 파일 및 가져오기 /def 라이브러리|모듈 정의 (.def) 파일, COFF 개체 (.obj) 파일, COFF 라이브러리 (.lib), 32 비트 OMF 개체 (.obj) 파일|  
-  
+
+LIB에서 예상한 입력된 파일 표에 표시 된 것 처럼가 사용 되 고 있는 모드에 따라 달라 집니다.
+
+|모드|입력|
+|----------|-----------|
+|기본값 (빌드 또는 라이브러리를 수정 합니다.)|COFF 개체 (.obj) 파일, COFF 라이브러리 (.lib) 32 비트 개체 모델 형식 (OMF) 개체 (.obj) 파일|
+|/EXTRACT을 사용 하 여 멤버 추출|COFF 라이브러리 (.lib)|
+|내보내기 파일을 빌드하고 /def 라이브러리 가져오기|모듈 정의 (.def) 파일, COFF 개체 (.obj) 파일, COFF 라이브러리 (.lib), 32 비트 OMF 개체 (.obj) 파일|
+
 > [!NOTE]
->  16 비트 버전의 LIB에서 만들어진 OMF 라이브러리는 32 비트 버전의 LIB에 입력으로 사용할 수 없습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [LIB 개요](../../build/reference/overview-of-lib.md)
+>  LIB 16 비트 버전에서 만들어진 OMF 라이브러리는 32 비트 버전의 LIB 입력으로 사용할 수 없습니다.
+
+## <a name="see-also"></a>참고 항목
+
+[LIB 개요](../../build/reference/overview-of-lib.md)

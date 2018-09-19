@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4d11c4234bd4e1343198658b1dfcada556b0e1f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a8a7dc9cee6bf24f4605455818a32bd757bcd60c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171951"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052376"
 ---
 # <a name="compiler-error-c2174"></a>컴파일러 오류 C2174
-'function': 실제 매개 변수는 'void' 형식의: 매개 변수 number1, 매개 변수 목록 number2  
-  
- 매개 변수 `number1` 매개 변수 목록에 전달 된 `number2` 는 `void` 매개 변수입니다. 매개 변수 형식을 사용할 수 없습니다 `void`합니다. 대신 `void*`를 사용하세요.
+
+'function': 실제 매개 변수는 'void' 형식의: 매개 변수 number1, 매개 변수 목록 number2
+
+매개 변수 `number1` 매개 변수 목록에 전달 `number2` 되는 `void` 매개 변수입니다. 매개 변수 형식을 사용할 수 없습니다 `void`합니다. 대신 `void*`를 사용하세요.

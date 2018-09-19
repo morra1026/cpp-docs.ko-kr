@@ -16,32 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85b4f80a9f257fa5e5d9ed8701a6ee7cfdf68cfd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 585d9eaaf37b913a0be339ccabd230aa79142526
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249969"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016587"
 ---
 # <a name="compiler-error-c3296"></a>컴파일러 오류 C3296
-'property': 같은 이름의 속성이 이미 있습니다.  
-  
- 컴파일러가 동일한 이름의 속성을 둘 이상 발견했습니다. 형식의 각 속성에는 고유한 이름이 있어야 합니다.  
-  
- 자세한 내용은 [property](../../windows/property-cpp-component-extensions.md)을 참조하세요.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3296을 생성합니다.  
-  
-```  
-// C3296.cpp  
-// compile with: /clr /c  
-using namespace System;  
-  
-ref class R {  
-public:  
-   property int MyProp[int] { int get(int); }  
-  
-   property String^ MyProp[int] { void set(int, String^); }   // C3296  
-};  
+
+'property': 같은 이름의 속성이 이미 있습니다.
+
+컴파일러가 동일한 이름의 속성을 둘 이상 발견했습니다. 형식의 각 속성에는 고유한 이름이 있어야 합니다.
+
+자세한 내용은 [property](../../windows/property-cpp-component-extensions.md)을 참조하세요.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C3296을 생성합니다.
+
+```
+// C3296.cpp
+// compile with: /clr /c
+using namespace System;
+
+ref class R {
+public:
+   property int MyProp[int] { int get(int); }
+
+   property String^ MyProp[int] { void set(int, String^); }   // C3296
+};
 ```

@@ -18,20 +18,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19457258ae9fe2017430c6445fa9b7d876343680
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a4516a415695b8ebf0594d393981b3fa3211f1ae
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376743"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726337"
 ---
 # <a name="tsaware"></a>/TSAWARE
-```  
-/TSAWARE[:NO]  
-```  
-  
-## <a name="remarks"></a>설명  
- EDITBIN 유틸리티에 /TSAWARE 옵션을 사용 하면가 사용 하는 경우 프로그램 이미지를 같은 방식으로 수정할 수 있습니다는 [/TSAWARE](../../build/reference/tsaware-create-terminal-server-aware-application.md) 링커 옵션입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [EDITBIN 옵션](../../build/reference/editbin-options.md)
+
+```
+/TSAWARE[:NO]
+```
+
+## <a name="remarks"></a>설명
+
+EDITBIN 유틸리티 /TSAWARE 옵션을 사용 하면 사용한 경우 처럼 동일한 방식으로 프로그램 이미지를 수정 하는 [/TSAWARE](../../build/reference/tsaware-create-terminal-server-aware-application.md) 링커 옵션입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[EDITBIN 옵션](../../build/reference/editbin-options.md)

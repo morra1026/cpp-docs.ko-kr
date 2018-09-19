@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be3d00af54709d697461a8424041769aed9956e1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a075b198f615e9b7d98577910f0866b9096fed79
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171359"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041248"
 ---
 # <a name="compiler-error-c2292"></a>컴파일러 오류 C2292
-'identifier': 최적 case 상속 표현: 'representation1' 'representation2'가 필요 하지만 선언  
-  
- 다음 코드를 컴파일할 [/vmb](../../build/reference/vmb-vmg-representation-method.md) ("최적 항상" 표현) C2292 발생 합니다.  
-  
-```  
-// C2292.cpp  
-// compile with: /vmb  
-class __single_inheritance X;  
-  
-struct A { };  
-struct B { };  
-struct X : A, B { };  // C2292, X uses multiple inheritance  
+
+'identifier': 최적 case 상속 표현: 'representation1' 'representation2'가 필요 하지만 선언
+
+다음 코드를 컴파일할 [/vmb](../../build/reference/vmb-vmg-representation-method.md) ("최상의 항상" 표현) C2292 발생 합니다.
+
+```
+// C2292.cpp
+// compile with: /vmb
+class __single_inheritance X;
+
+struct A { };
+struct B { };
+struct X : A, B { };  // C2292, X uses multiple inheritance
 ```

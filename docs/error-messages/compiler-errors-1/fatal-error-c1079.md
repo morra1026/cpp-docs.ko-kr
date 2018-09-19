@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 285994620225f5752ec9a32c510add71593c11f8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9b9ba2a0e7fb984468d0d6e9d75fc10cdbad3c80
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225331"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062529"
 ---
 # <a name="fatal-error-c1079"></a>심각한 오류 C1079
-컴파일러 한계: PCH 파일 크기 제한 초과  
-  
- PCH 파일 크기 4GB의 제한을 초과합니다.
+
+컴파일러 한계: PCH 파일 크기 제한 초과
+
+PCH 파일 크기가 최대 크기는 4GB를 초과합니다.

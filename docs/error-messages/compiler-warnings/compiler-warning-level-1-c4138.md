@@ -16,40 +16,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc3102f18021c16663bdf61dcde6df5e6893d46c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 0d2e637c73482b1a59034d6a269ea2240445bdef
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197090"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046916"
 ---
 # <a name="compiler-warning-level-1-c4138"></a>컴파일러 경고(수준 1) C4138
-'*/'가 주석 외부에 있습니다.  
-  
- 닫는 주석 구분 기호 앞에 여는 주석 구분 기호가 없습니다. 컴파일러는 별표 사이 공백이 있다고 가정 (<strong>\*</strong>)와 슬래시 (/).  
-  
-## <a name="example"></a>예제  
-  
-```  
-// C4138a.cpp  
-// compile with: /W1  
-int */*comment*/ptr;   // C4138 Ambiguous first delimiter causes warning  
-int main()  
-{  
-}  
-```  
-  
- 이 경고는 주석을 중첩하려는 경우에 발생할 수 있습니다.  
-  
- 주석을 포함하는 코드 섹션을 주석으로 처리하고 **#if/#endif** 블록에 코드를 포함한 다음 제어하는 식을 0으로 설정하면 이 경고를 해결할 수 있습니다.  
-  
-```  
-// C4138b.cpp  
-// compile with: /W1  
-#if 0  
-int my_variable;   /* Declaration currently not needed */  
-#endif  
-int main()  
-{  
-}  
+
+'*/'가 주석 외부에 있습니다.
+
+닫는 주석 구분 기호 앞에 여는 주석 구분 기호가 없습니다. 컴파일러는 별표 사이 공백이 있다고 가정 (<strong>\*</strong>)와 슬래시 (/).
+
+## <a name="example"></a>예제
+
+```
+// C4138a.cpp
+// compile with: /W1
+int */*comment*/ptr;   // C4138 Ambiguous first delimiter causes warning
+int main()
+{
+}
+```
+
+이 경고는 주석을 중첩하려는 경우에 발생할 수 있습니다.
+
+주석을 포함하는 코드 섹션을 주석으로 처리하고 **#if/#endif** 블록에 코드를 포함한 다음 제어하는 식을 0으로 설정하면 이 경고를 해결할 수 있습니다.
+
+```
+// C4138b.cpp
+// compile with: /W1
+#if 0
+int my_variable;   /* Declaration currently not needed */
+#endif
+int main()
+{
+}
 ```

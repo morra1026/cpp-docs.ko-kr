@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48c1cdf36693863c43cbb3d7c709bdbefa07d232
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9c634ac505684a5f0bf30a831668e27078650d70
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33223584"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078636"
 ---
 # <a name="compiler-error-c2426"></a>컴파일러 오류 C2426
-'token': '컨텍스트'에 잘못 된 연산자  
-  
- 이 컨텍스트에서 연산자로 토큰을 사용할 수 없습니다. 예를 들어 인덱스 연산자를 중첩할 수 없습니다.
+
+'token': '컨텍스트'에 잘못 된 연산자
+
+이 컨텍스트에서 연산자로 토큰을 사용할 수 없습니다. 예를 들어 인덱스 연산자를 중첩할 수 없습니다.

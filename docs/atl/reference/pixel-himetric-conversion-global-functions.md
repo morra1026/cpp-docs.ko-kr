@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 086310efe565e060645320db30526b03d57a68af
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b5ab980813eec09fe0eef35f54280444d8c08b80
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752412"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105390"
 ---
 # <a name="pixelhimetric-conversion-global-functions"></a>픽셀/HIMETRIC 변환 전역 함수
 
@@ -46,10 +46,10 @@ extern void AtlHiMetricToPixel(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpSizeInHiMetric*  
+*lpSizeInHiMetric*<br/>
 [in] 개체의 HIMETRIC 단위 크기에 대 한 포인터입니다.
 
-*lpSizeInPix*  
+*lpSizeInPix*<br/>
 [out] 반환할 개체의 크기 (픽셀 단위) 인에 대 한 포인터입니다.
 
 ### <a name="example"></a>예제
@@ -72,10 +72,10 @@ extern void AtlPixelToHiMetric(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpSizeInPix*  
+*lpSizeInPix*<br/>
 [in] 개체의 크기 (픽셀 단위)에 대 한 포인터입니다.
 
-*lpSizeInHiMetric*  
+*lpSizeInHiMetric*<br/>
 [out] 반환할 개체의 HIMETRIC 단위 크기 인에 대 한 포인터입니다.
 
 ### <a name="example"></a>예제

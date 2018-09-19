@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d30b2e5c1856a604ae314316cd71d6acc00a7c74
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c0accd68881cccad5e34530a6c157a4e8179b283
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33234762"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111097"
 ---
 # <a name="compiler-error-c2708"></a>컴파일러 오류 C2708
-'identifier': 이전 호출 또는 참조에서와 다른 실제 매개 변수 길이 (바이트)  
-  
- A [__stdcall](../../cpp/stdcall.md) 함수 프로토타입 뒤에 야 합니다. 그렇지 않으면 프로토타입으로 함수에 대 한 첫 번째 호출을 해석 하는 컴파일러 및 컴파일러와 일치 하지 않는 한 호출에서 발생 하는 경우이 오류가 발생 합니다.  
-  
- 이 오류를 해결 하려면 함수 프로토타입을 추가 합니다.
+
+'identifier': 이전 호출 또는 참조와 다른 실제 매개 변수 길이 (바이트)
+
+A [__stdcall](../../cpp/stdcall.md) 함수 프로토타입 뒤에 야 합니다. 이 고, 그렇지 컴파일러 해석 프로토타입으로 함수를 처음으로 호출 하 고 컴파일러와 일치 하지 않는 호출을 발견 하는 경우이 오류가 발생 합니다.
+
+이 오류를 해결 하려면 함수 프로토타입을 추가 합니다.

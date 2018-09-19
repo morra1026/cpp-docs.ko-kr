@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e680bf4c84087db90c794c772f58691a5b2932d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c3157db05d183ab9ada2ad53443ca5b20bcfbcba
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754641"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46136324"
 ---
 # <a name="caccesstoken-class"></a>CAccessToken 클래스
 
@@ -160,7 +160,7 @@ void Attach(HANDLE hToken) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*hToken*  
+*hToken*<br/>
 액세스 토큰 핸들입니다.
 
 ### <a name="remarks"></a>설명
@@ -191,10 +191,10 @@ bool CheckTokenMembership(
 
 ### <a name="parameters"></a>매개 변수
 
-*rSid*  
+*rSid*<br/>
 에 대 한 참조를 [CSid 클래스](../../atl/reference/csid-class.md) 개체입니다.
 
-*pbIsMember*  
+*pbIsMember*<br/>
 검사의 결과 수신 하는 변수에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -222,10 +222,10 @@ bool CreateImpersonationToken(
 
 ### <a name="parameters"></a>매개 변수
 
-*pImp*  
+*pImp*<br/>
 새 포인터 `CAccessToken` 개체입니다.
 
-*sil*  
+*sil*<br/>
 지정 된 [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-_security_impersonation_level) 열거 새 토큰 가장 수준을 제공 하는 형식.
 
 ### <a name="return-value"></a>반환 값
@@ -249,13 +249,13 @@ bool CreatePrimaryToken(
 
 ### <a name="parameters"></a>매개 변수
 
-*pPri*  
+*pPri*<br/>
 새 포인터 `CAccessToken` 개체입니다.
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 새 토큰에 대 한 요청 된 액세스 권한을 지정합니다. 기본값인 MAXIMUM_ALLOWED, 호출자가 사용할 수 있는 모든 액세스 권한을 요청 합니다. 참조 [액세스 권한 및 액세스 마스크](/windows/desktop/SecAuthZ/access-rights-and-access-masks) 자세한 on 액세스 권한에 대 한 합니다.
 
-*pTokenAttributes*  
+*pTokenAttributes*<br/>
 에 대 한 포인터를 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) 새 토큰의 보안 설명자를 지정 하 고 자식 프로세스 토큰을 상속할 수 있는지 여부를 결정 하는 구조입니다. 하는 경우 *pTokenAttributes* 가 NULL이 고, 토큰에는 기본 보안 설명자를 가져옵니다 핸들을 상속할 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -286,34 +286,34 @@ bool CreateProcessAsUser(
 
 ### <a name="parameters"></a>매개 변수
 
-*pApplicationName*  
+*pApplicationName*<br/>
 모듈에서 실행 하도록 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다. 이 매개 변수는 NULL 일 수 없습니다.
 
-*pCommandLine*  
+*pCommandLine*<br/>
 실행할 명령줄을 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
-*pProcessInformation*  
+*pProcessInformation*<br/>
 에 대 한 포인터를 [PROCESS_INFORMATION](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-_process_information) 새 프로세스에 대 한 식별 정보를 수신 하는 구조입니다.
 
-*pStartupInfo*  
+*pStartupInfo*<br/>
 에 대 한 포인터를 [STARTUPINFO](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-_startupinfoa) 새 프로세스의 주 창 표시 방법을 지정 하는 구조입니다.
 
-*dwCreationFlags*  
+*dwCreationFlags*<br/>
 우선 순위 클래스 및 프로세스의 생성을 제어 하는 추가 플래그를 지정 합니다. Win32 함수를 참조 하세요 [createprocessasuser가](https://msdn.microsoft.com/library/windows/desktop/ms682429) 플래그의 목록은 합니다.
 
-*bLoadProfile*  
+*bLoadProfile*<br/>
 사용자의 프로필을 사용 하 여 로드 되 고 TRUE 인 경우 [LoadUserProfile](/windows/desktop/api/userenv/nf-userenv-loaduserprofilea)합니다.
 
-*pProcessAttributes*  
+*pProcessAttributes*<br/>
 에 대 한 포인터를 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) 새 프로세스에 대 한 보안 설명자를 지정 하 고 자식 프로세스가 반환된 된 핸들을 상속할 수 있는지 여부를 결정 하는 구조입니다. 하는 경우 *pProcessAttributes* 가 NULL이 고, 프로세스는 기본 보안 설명자를 가져옵니다 핸들을 상속할 수 없습니다.
 
-*pThreadAttributes*  
+*pThreadAttributes*<br/>
 에 대 한 포인터를 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) 새 스레드에 대 한 보안 설명자를 지정 하 고 자식 프로세스가 반환된 된 핸들을 상속할 수 있는지 여부를 결정 하는 구조입니다. 하는 경우 *pThreadAttributes* 가 NULL이 고, 스레드는 기본 보안 설명자를 가져옵니다 핸들을 상속할 수 없습니다.
 
-*bInherit*  
+*bInherit*<br/>
 새 프로세스가 호출 프로세스에서 핸들을 상속 되는지 여부를 나타냅니다. TRUE 이면 호출 프로세스에 상속할 수 있는 열린 핸들 각 새 프로세스에 의해 상속 됩니다. 상속 된 핸들에는 원래 핸들으로 동일한 값 및 액세스 권한이 있습니다.
 
-*pCurrentDirectory*  
+*pCurrentDirectory*<br/>
 새 프로세스에 대 한 디렉터리와 현재 드라이브를 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다. 문자열에는 드라이브 문자를 포함 하는 전체 경로 여야 합니다. 이 매개 변수가 NULL 인 경우 새 프로세스 호출 프로세스와 같은 현재 드라이브 및 디렉터리 포함 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -340,16 +340,16 @@ bool CreateRestrictedToken(
 
 ### <a name="parameters"></a>매개 변수
 
-*pRestrictedToken*  
+*pRestrictedToken*<br/>
 신규 제한 `CAccessToken` 개체입니다.
 
-*SidsToDisable*  
+*SidsToDisable*<br/>
 `CTokenGroups` 거부 전용 Sid를 지정 하는 개체입니다.
 
-*SidsToRestrict*  
+*SidsToRestrict*<br/>
 `CTokenGroups` 제한 Sid를 지정 하는 개체입니다.
 
-*PrivilegesToDelete*  
+*PrivilegesToDelete*<br/>
 `CTokenPrivileges` 제한 된 토큰에서 삭제 하는 권한을 지정 하는 개체입니다. 기본값은 빈 개체를 만듭니다.
 
 ### <a name="return-value"></a>반환 값
@@ -391,10 +391,10 @@ bool DisablePrivilege(
 
 ### <a name="parameters"></a>매개 변수
 
-*pszPrivilege*  
+*pszPrivilege*<br/>
 사용 권한을 사용 하지 않도록 설정 하려면 포함 하는 문자열에 대 한 포인터를 `CAccessToken` 개체입니다.
 
-*pPreviousState*  
+*pPreviousState*<br/>
 에 대 한 포인터를 `CTokenPrivileges` 권한의 이전 상태를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -413,10 +413,10 @@ bool DisablePrivileges(
 
 ### <a name="parameters"></a>매개 변수
 
-*rPrivileges*  
+*rPrivileges*<br/>
 사용 하지 않도록 설정 하는 권한을 포함 하는 문자열의 배열에 대 한 포인터를 `CAccessToken` 개체입니다.
 
-*pPreviousState*  
+*pPreviousState*<br/>
 에 대 한 포인터를 `CTokenPrivileges` 권한의 이전 상태를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -435,10 +435,10 @@ bool EnablePrivilege(
 
 ### <a name="parameters"></a>매개 변수
 
-*pszPrivilege*  
+*pszPrivilege*<br/>
 사용할 수 있도록 권한을 포함 하는 문자열에 대 한 포인터를 `CAccessToken` 개체입니다.
 
-*pPreviousState*  
+*pPreviousState*<br/>
 에 대 한 포인터를 `CTokenPrivileges` 권한의 이전 상태를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -457,10 +457,10 @@ bool EnablePrivileges(
 
 ### <a name="parameters"></a>매개 변수
 
-*rPrivileges*  
+*rPrivileges*<br/>
 사용 하도록 설정 하는 권한을 포함 하는 문자열의 배열에 대 한 포인터를 `CAccessToken` 개체입니다.
 
-*pPreviousState*  
+*pPreviousState*<br/>
 에 대 한 포인터를 `CTokenPrivileges` 권한의 이전 상태를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -477,7 +477,7 @@ bool GetDefaultDacl(CDacl* pDacl) const throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*pDacl*  
+*pDacl*<br/>
 에 대 한 포인터를 [CDacl 클래스](../../atl/reference/cdacl-class.md) 수신 하는 개체는 `CAccessToken` 개체의 기본 DACL입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -494,7 +494,7 @@ bool GetEffectiveToken(DWORD dwDesiredAccess) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 액세스 토큰에 대해 요청된 액세스 형식을 지정하는 액세스 마스크를 지정합니다. 이러한 요청된 액세스 형식은 토큰의 DACL과 비교하여 액세스가 허용 또는 거부되는 경우를 확인합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -511,7 +511,7 @@ bool GetGroups(CTokenGroups* pGroups) const throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*pGroups*  
+*pGroups*<br/>
 에 대 한 포인터를 [CTokenGroups 클래스](../../atl/reference/ctokengroups-class.md) 그룹 정보를 수신 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -541,7 +541,7 @@ bool GetImpersonationLevel(
 
 ### <a name="parameters"></a>매개 변수
 
-*pImpersonationLevel*  
+*pImpersonationLevel*<br/>
 에 대 한 포인터를 [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-_security_impersonation_level) 가장 수준 정보를 수신 하는 열거형입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -558,7 +558,7 @@ bool GetLogonSessionId(LUID* pluid) const throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*pluid*  
+*pluid*<br/>
 에 대 한 포인터를 [LUID](/windows/desktop/api/winnt/ns-winnt-_luid) 는 로그온 세션 id입니다. 수신할 됩니다
 
 ### <a name="return-value"></a>반환 값
@@ -579,7 +579,7 @@ bool GetLogonSid(CSid* pSid) const throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*pSid*  
+*pSid*<br/>
 에 대 한 포인터를 [CSid 클래스](../../atl/reference/csid-class.md) 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -600,7 +600,7 @@ bool GetOwner(CSid* pSid) const throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*pSid*  
+*pSid*<br/>
 에 대 한 포인터를 [CSid 클래스](../../atl/reference/csid-class.md) 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -621,7 +621,7 @@ bool GetPrimaryGroup(CSid* pSid) const throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*pSid*  
+*pSid*<br/>
 에 대 한 포인터를 [CSid 클래스](../../atl/reference/csid-class.md) 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -642,7 +642,7 @@ bool GetPrivileges(CTokenPrivileges* pPrivileges) const throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*pPrivileges*  
+*pPrivileges*<br/>
 에 대 한 포인터를 [CTokenPrivileges 클래스](../../atl/reference/ctokenprivileges-class.md) 권한을 수신 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -659,10 +659,10 @@ bool GetProcessToken(DWORD dwDesiredAccess, HANDLE hProcess = NULL) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 액세스 토큰에 대해 요청된 액세스 형식을 지정하는 액세스 마스크를 지정합니다. 이러한 요청된 액세스 형식은 토큰의 DACL과 비교하여 액세스가 허용 또는 거부되는 경우를 확인합니다.
 
-*hProcess*  
+*hProcess*<br/>
 액세스 토큰이 열린 프로세스에 대한 핸들입니다. 기본값은 NULL 사용 하는 경우 현재 프로세스가 사용 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -695,7 +695,7 @@ bool GetSource(TOKEN_SOURCE* pSource) const throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*pSource*  
+*pSource*<br/>
 에 대 한 포인터를 [TOKEN_SOURCE](/windows/desktop/api/winnt/ns-winnt-_token_source) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -712,7 +712,7 @@ bool GetStatistics(TOKEN_STATISTICS* pStatistics) const throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*pStatistics*  
+*pStatistics*<br/>
 에 대 한 포인터를 [TOKEN_STATISTICS](/windows/desktop/api/winnt/ns-winnt-_token_statistics) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -729,7 +729,7 @@ bool GetTerminalServicesSessionId(DWORD* pdwSessionId) const throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*pdwSessionId*  
+*pdwSessionId*<br/>
 터미널 서비스 세션 id입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -749,13 +749,13 @@ bool GetThreadToken(
 
 ### <a name="parameters"></a>매개 변수
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 액세스 토큰에 대해 요청된 액세스 형식을 지정하는 액세스 마스크를 지정합니다. 이러한 요청된 액세스 형식은 토큰의 DACL과 비교하여 액세스가 허용 또는 거부되는 경우를 확인합니다.
 
-*hThread*  
+*hThread*<br/>
 해당 액세스 토큰이 열린 스레드로 처리 합니다.
 
-*bOpenAsSelf*  
+*bOpenAsSelf*<br/>
 액세스 검사 스레드 호출의 보안 컨텍스트에 대 한 수를 여부를 나타내는 `GetThreadToken` 메서드 또는 호출 스레드에 대 한 프로세스의 보안 컨텍스트에 대 한 합니다.
 
 이 매개 변수가 FALSE 인 경우 액세스 검사가 호출 스레드에 대 한 보안 컨텍스트를 사용 하 여 수행 됩니다. 스레드는 클라이언트를 가장 하는 경우 다음 보안 컨텍스트는 클라이언트 프로세스의 수 있습니다. 이 매개 변수가 TRUE 인 경우 프로세스의 보안 컨텍스트를 사용 하 여 호출 스레드에 대 한 액세스 검사가 됩니다.
@@ -774,7 +774,7 @@ bool GetTokenId(LUID* pluid) const throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*pluid*  
+*pluid*<br/>
 에 대 한 포인터를 [LUID](/windows/desktop/api/winnt/ns-winnt-_luid) 는 수신할 토큰 id입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -791,7 +791,7 @@ bool GetType(TOKEN_TYPE* pType) const throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*pType*  
+*pType*<br/>
 주소를 [TOKEN_TYPE](/windows/desktop/api/winnt/ne-winnt-_token_type) 변수 성공 하면 수신 하는 토큰의 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -812,7 +812,7 @@ bool GetUser(CSid* pSid) const throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*pSid*  
+*pSid*<br/>
 에 대 한 포인터를 [CSid 클래스](../../atl/reference/csid-class.md) 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -841,7 +841,7 @@ bool Impersonate(HANDLE hThread = NULL) const throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*hThread*  
+*hThread*<br/>
 가장 토큰을 할당 하는 스레드를 처리 합니다. 이 핸들 TOKEN_IMPERSONATE 액세스 권한이 있는 열려 있어야 합니다. 하는 경우 *hThread* 가 null 인 경우 메서드를 호출 하면 스레드의 가장 토큰을 사용 하 여 중지 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -914,19 +914,19 @@ bool LogonUser(
 
 ### <a name="parameters"></a>매개 변수
 
-*pszUserName*  
+*pszUserName*<br/>
 사용자 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다. 에 로그온 사용자 계정의 이름입니다.
 
-*pszDomain*  
+*pszDomain*<br/>
 도메인 또는 계정 데이터베이스를 포함 하는 서버의 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터를 *pszUserName* 계정.
 
-*pszPassword*  
+*pszPassword*<br/>
 지정 된 사용자 계정에 대 한 일반 텍스트 암호를 지정 하는 null로 끝나는 문자열에 대 한 포인터 *pszUserName*합니다.
 
-*dwLogonType*  
+*dwLogonType*<br/>
 수행할 로그온 작업 유형을 지정 합니다. 참조 [LogonUser](/windows/desktop/api/winbase/nf-winbase-logonusera) 대 한 자세한 내용은 합니다.
 
-*dwLogonProvider*  
+*dwLogonProvider*<br/>
 로그온 공급자를 지정합니다. 참조 [LogonUser](/windows/desktop/api/winbase/nf-winbase-logonusera) 대 한 자세한 내용은 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -950,13 +950,13 @@ bool OpenCOMClientToken(
 
 ### <a name="parameters"></a>매개 변수
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 액세스 토큰에 대해 요청된 액세스 형식을 지정하는 액세스 마스크를 지정합니다. 이러한 요청된 액세스 형식은 토큰의 DACL과 비교하여 액세스가 허용 또는 거부되는 경우를 확인합니다.
 
-*bImpersonate*  
+*bImpersonate*<br/>
 TRUE 이면 현재 스레드는이 호출이 성공적으로 완료 되 면 호출 하는 COM 클라이언트를 가장 합니다. FALSE 인 경우 액세스 토큰을 열 수는 있지만 스레드가 가장 토큰을는이 호출이 완료 될 때.
 
-*bOpenAsSelf*  
+*bOpenAsSelf*<br/>
 액세스 검사 스레드 호출의 보안 컨텍스트에 대 한 수를 여부를 나타내는 합니다 [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) 메서드 또는 호출 스레드에 대 한 프로세스의 보안 컨텍스트에 대 한 합니다.
 
 이 매개 변수가 FALSE 인 경우 액세스 검사가 호출 스레드에 대 한 보안 컨텍스트를 사용 하 여 수행 됩니다. 스레드는 클라이언트를 가장 하는 경우 다음 보안 컨텍스트는 클라이언트 프로세스의 수 있습니다. 이 매개 변수가 TRUE 인 경우 프로세스의 보안 컨텍스트를 사용 하 여 호출 스레드에 대 한 액세스 검사가 됩니다.
@@ -983,16 +983,16 @@ bool OpenNamedPipeClientToken(
 
 ### <a name="parameters"></a>매개 변수
 
-*hPipe*  
+*hPipe*<br/>
 명명된 된 파이프에 대 한 핸들입니다.
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 액세스 토큰에 대해 요청된 액세스 형식을 지정하는 액세스 마스크를 지정합니다. 이러한 요청된 액세스 형식은 토큰의 DACL과 비교하여 액세스가 허용 또는 거부되는 경우를 확인합니다.
 
-*bImpersonate*  
+*bImpersonate*<br/>
 TRUE 이면 현재 스레드는이 호출이 성공적으로 완료 되 면 호출 파이프 클라이언트를 가장 합니다. FALSE 인 경우 액세스 토큰을 열 수는 있지만 스레드가 가장 토큰을는이 호출이 완료 될 때.
 
-*bOpenAsSelf*  
+*bOpenAsSelf*<br/>
 액세스 검사 스레드 호출의 보안 컨텍스트에 대 한 수를 여부를 나타내는 합니다 [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) 메서드 또는 호출 스레드에 대 한 프로세스의 보안 컨텍스트에 대 한 합니다.
 
 이 매개 변수가 FALSE 인 경우 액세스 검사가 호출 스레드에 대 한 보안 컨텍스트를 사용 하 여 수행 됩니다. 스레드는 클라이언트를 가장 하는 경우 다음 보안 컨텍스트는 클라이언트 프로세스의 수 있습니다. 이 매개 변수가 TRUE 인 경우 프로세스의 보안 컨텍스트를 사용 하 여 호출 스레드에 대 한 액세스 검사가 됩니다.
@@ -1019,16 +1019,16 @@ bool OpenRPCClientToken(
 
 ### <a name="parameters"></a>매개 변수
 
-*BindingHandle*  
+*BindingHandle*<br/>
 클라이언트에 대 한 바인딩을 나타내는 서버 바인딩 핸들입니다.
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 액세스 토큰에 대해 요청된 액세스 형식을 지정하는 액세스 마스크를 지정합니다. 이러한 요청된 액세스 형식은 토큰의 DACL과 비교하여 액세스가 허용 또는 거부되는 경우를 확인합니다.
 
-*bImpersonate*  
+*bImpersonate*<br/>
 TRUE 이면 현재 스레드는이 호출이 성공적으로 완료 되 면 호출 RPC 클라이언트를 가장 합니다. FALSE 인 경우 액세스 토큰을 열 수는 있지만 스레드가 가장 토큰을는이 호출이 완료 될 때.
 
-*bOpenAsSelf*  
+*bOpenAsSelf*<br/>
 액세스 검사 스레드 호출의 보안 컨텍스트에 대 한 수를 여부를 나타내는 합니다 [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) 메서드 또는 호출 스레드에 대 한 프로세스의 보안 컨텍스트에 대 한 합니다.
 
 이 매개 변수가 FALSE 인 경우 액세스 검사가 호출 스레드에 대 한 보안 컨텍스트를 사용 하 여 수행 됩니다. 스레드는 클라이언트를 가장 하는 경우 다음 보안 컨텍스트는 클라이언트 프로세스의 수 있습니다. 이 매개 변수가 TRUE 인 경우 프로세스의 보안 컨텍스트를 사용 하 여 호출 스레드에 대 한 액세스 검사가 됩니다.
@@ -1055,18 +1055,18 @@ bool OpenThreadToken(
 
 ### <a name="parameters"></a>매개 변수
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 액세스 토큰에 대해 요청된 액세스 형식을 지정하는 액세스 마스크를 지정합니다. 이러한 요청된 액세스 형식은 토큰의 DACL과 비교하여 액세스가 허용 또는 거부되는 경우를 확인합니다.
 
-*bImpersonate*  
+*bImpersonate*<br/>
 True 이면이 메서드가 완료 된 후 스레드가 요청 된 가장 수준에 남게 됩니다. False 인 경우, 스레드가 가장 수준으로 되돌아갑니다.
 
-*bOpenAsSelf*  
+*bOpenAsSelf*<br/>
 액세스 검사 스레드 호출의 보안 컨텍스트에 대 한 수를 여부를 나타내는 합니다 [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) 메서드 또는 호출 스레드에 대 한 프로세스의 보안 컨텍스트에 대 한 합니다.
 
 이 매개 변수가 FALSE 인 경우 액세스 검사가 호출 스레드에 대 한 보안 컨텍스트를 사용 하 여 수행 됩니다. 스레드는 클라이언트를 가장 하는 경우 다음 보안 컨텍스트는 클라이언트 프로세스의 수 있습니다. 이 매개 변수가 TRUE 인 경우 프로세스의 보안 컨텍스트를 사용 하 여 호출 스레드에 대 한 액세스 검사가 됩니다.
 
-*sil*  
+*sil*<br/>
 지정 된 [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-_security_impersonation_level) 열거 토큰 가장 수준을 제공 하는 형식.
 
 ### <a name="return-value"></a>반환 값
@@ -1091,10 +1091,10 @@ bool PrivilegeCheck(
 
 ### <a name="parameters"></a>매개 변수
 
-*RequiredPrivileges*  
+*RequiredPrivileges*<br/>
 에 대 한 포인터를 [PRIVILEGE_SET](/windows/desktop/api/winnt/ns-winnt-_privilege_set) 구조입니다.
 
-*pbResult*  
+*pbResult*<br/>
 메서드는 지정 된 권한 중 일부 또는 모두에 사용 되는지 여부를 나타내는 설정 값에 대 한 포인터를 `CAccessToken` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1115,7 +1115,7 @@ bool Revert(HANDLE hThread = NULL) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*hThread*  
+*hThread*<br/>
 가장에서 되돌리려면 스레드로 처리 합니다. 하는 경우 *hThread* 가 NULL 이면 현재 스레드에 것으로 간주 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1136,7 +1136,7 @@ bool SetDefaultDacl(const CDacl& rDacl) throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*rDacl*  
+*rDacl*<br/>
 새 기본값 [CDacl 클래스](../../atl/reference/cdacl-class.md) 정보입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1157,7 +1157,7 @@ bool SetOwner(const CSid& rSid) throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*rSid*  
+*rSid*<br/>
 합니다 [CSid 클래스](../../atl/reference/csid-class.md) 소유자 정보를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1178,7 +1178,7 @@ bool SetPrimaryGroup(const CSid& rSid) throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*rSid*  
+*rSid*<br/>
 합니다 [CSid 클래스](../../atl/reference/csid-class.md) 주 그룹 정보를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1191,6 +1191,6 @@ bool SetPrimaryGroup(const CSid& rSid) throw(...);
 
 ## <a name="see-also"></a>참고 항목
 
-[ATLSecurity 샘플](../../visual-cpp-samples.md)   
-[액세스 토큰](/windows/desktop/SecAuthZ/access-tokens)   
+[ATLSecurity 샘플](../../visual-cpp-samples.md)<br/>
+[액세스 토큰](/windows/desktop/SecAuthZ/access-tokens)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

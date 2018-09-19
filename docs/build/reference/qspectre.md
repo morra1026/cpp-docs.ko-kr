@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec3509b71d78221c3e15607d34f674fc38d9f635
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: 5dde5d8bb2e7b973b505b467165a710546f2a6a0
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43130991"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716029"
 ---
 # <a name="qspectre"></a>/Qspectre
 
@@ -44,7 +44,7 @@ ms.locfileid: "43130991"
 
 ### <a name="availability"></a>가용성
 
-합니다 **/Qspectre** 옵션은 Visual Studio 2017 버전 15.5.5 및 2018 년 1 월 23 일 이후에 만든 모든 업데이트를 Microsoft Visual c + + 컴파일러 (MSVC)에서 사용할 수 있습니다.
+합니다 **/Qspectre** 옵션은 Visual Studio 2017 버전 15.5.5 및 2018 년 1 월 23 일 이후에 만든 모든 업데이트를 Microsoft Visual c + + 컴파일러 (MSVC)에서 사용할 수 있습니다. Visual Studio 설치 관리자를 사용 하 여 컴파일러를 업데이트 하 고 개별 구성 요소로 스펙터 완화 라이브러리를 설치 합니다. 합니다 **/Qspectre** 옵션 패치를 통해 Visual Studio 2015 업데이트 3에서 제공 됩니다. 자세한 내용은 [KB 4338871](https://support.microsoft.com/help/4338871)합니다.
 
 모든 버전의 Visual Studio 2017 버전 15.5 및 모든 미리 보기의 Visual Studio 버전 15.6에는 이미는 문서화 되지 않은 옵션이 포함 되어 **/d2guardspecload**, 즉 해당 초기 동작 **/Qspectre**. 사용할 수 있습니다 **/d2guardspecload** 이러한 버전의 컴파일러에서 코드를 동일한 완화를 적용 합니다. 사용 하 여 빌드를 업데이트 하세요 **/Qspectre** ; 옵션을 지 원하는 컴파일러에서는 **/Qspectre** 컴파일러의 이후 버전에서 새 완화 옵션을 지원할 수도 있습니다.
 
@@ -86,6 +86,6 @@ ms.locfileid: "43130991"
 
 ## <a name="see-also"></a>참고자료
 
-[/Q 옵션(하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)  
-[컴파일러 옵션](../../build/reference/compiler-options.md)  
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)  
+[/Q 옵션 (하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)
+[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
+[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

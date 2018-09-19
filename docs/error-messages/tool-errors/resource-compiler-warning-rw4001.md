@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d74ff4164d1e0ace3fced51df4f8028b782e62d5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b6e430dd0c42ced94fb01c2d29fff0270e090dc6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33323575"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040351"
 ---
 # <a name="resource-compiler-warning-rw4001"></a>리소스 컴파일러 오류 RW4001
-. EXE 처리 옵션 (/L /M /P /T /K /E /31 또는/30)  
-  
- EXE 처리 옵션을 지정 했지만 실행 파일이 처리할 수 없습니다. .Res 파일 함께 이러한 옵션을 사용 하지 마십시오.
+
+. EXE 처리 옵션 (/L /M/P /T /K /E /31 또는/30)
+
+EXE 처리 옵션을 지정 했지만 프로세스 실행 파일이 생성 되지 않습니다. .Res 파일을 사용 하 여 이러한 옵션을 사용 하지 마세요.

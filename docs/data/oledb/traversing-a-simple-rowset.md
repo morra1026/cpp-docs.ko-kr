@@ -19,14 +19,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6ba5262577fc9176669916a7fc30d299d06770a8
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 9a127b5cd611177c28e6e434b04060edf3bdcb55
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336656"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028638"
 ---
 # <a name="traversing-a-simple-rowset"></a>단순 행 집합 검색
+
 다음 예제에서는 명령을 포함 하지 않는 쉽고 빠르게 데이터베이스 액세스를 보여 줍니다. 라는 테이블에서 레코드를 검색 하는 ATL 프로젝트에서 다음 소비자 코드 *아티스트* Microsoft Access에서 Microsoft OLE DB Provider for ODBC 사용 하 여 데이터베이스입니다. 이 코드에서는 만듭니다는 [CTable](../../data/oledb/ctable-class.md) 사용자 레코드 클래스를 기반으로 한 접근자를 사용 하 여 테이블 개체 `CArtists`합니다. 연결, 연결에서 세션을 열고 열리고 세션에서 테이블을 엽니다.  
   
 ```cpp  
@@ -53,7 +54,7 @@ while (artists.MoveNext() == S_OK)
 }  
 ```  
   
- 사용자 레코드 `CArtists`, 다음과 유사 합니다.  
+사용자 레코드 `CArtists`, 다음과 유사 합니다.  
   
 ```cpp  
 class CArtists  
@@ -73,4 +74,5 @@ END_COLUMN_MAP()
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [OLE DB 소비자 템플릿 작업](../../data/oledb/working-with-ole-db-consumer-templates.md)
+
+[OLE DB 소비자 템플릿 작업](../../data/oledb/working-with-ole-db-consumer-templates.md)

@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d16df0d314aa5039d0fc495c1b934e647a40c62
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d954e06bfe0ca6b6d94347c6f847242ec549cf80
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33330790"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041391"
 ---
 # <a name="math-error-m6107"></a>수학 오류 M6107
-에뮬레이트되지 않습니다.  
-  
- 유효 하지 않거나 에뮬레이터에서 지원 하지 않는 보조 프로세서 명령을 실행 하려고 했습니다.  
-  
- 프로그램은 135 종료 코드로 종료 됩니다.
+
+에뮬레이트되지 않습니다.
+
+유효 하지 않거나 에뮬레이터에서 지원 되지 않습니다는 보조 프로세서 명령을 실행 하려고 했습니다.
+
+프로그램은 135 종료 코드로 종료 됩니다.

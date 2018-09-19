@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f53b75466a4fe623de9c1f0fd6f0ff768cf55f47
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f44bcdedc718ce4d6459fea7f8581273e49caa10
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760314"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097564"
 ---
 # <a name="ipointerinactiveimpl-class"></a>IPointerInactiveImpl 클래스
 
@@ -45,7 +45,7 @@ class IPointerInactiveImpl
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `IPointerInactiveImpl`합니다.
 
 ## <a name="members"></a>멤버

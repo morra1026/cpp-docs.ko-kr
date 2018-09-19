@@ -11,12 +11,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49d67f9a2e91e3a2e0a2731e61fc0e1c2ec55679
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: cc115fbc77ac68c774b85bb86fd0cf9eac1fa51b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028543"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716640"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>ARM64 ABI 규칙 개요
 
@@ -173,7 +173,7 @@ Variadic이 아닌 함수에 대 한 Windows ABI는 매개 변수 전달에 대 
 
 11. NGRN 8로 설정 됩니다.
 
-12. NSAA 반올림은 8 또는 인수 형식의 자연 맞춤의 더 큰... 
+12. NSAA 반올림은 8 또는 인수 형식의 자연 맞춤의 더 큰...
 
 13. 인수가 복합 형식이 면 인수는 조정 된 NSAA에서 메모리에 복사 됩니다. NSAA는 인수 크기만큼 증분됩니다. 이제 인수가 할당 되었습니다.
 
@@ -189,7 +189,7 @@ Variadic이 아닌 함수에 대 한 Windows ABI는 매개 변수 전달에 대 
 
 2. SIMD 및 부동 소수점 레지스터 사용 되지 않습니다.
 
-효과적으로이 매월 다음 규칙 C.12–C.15 여기서 스택의 첫 번째 64 바이트 x0 x7, 로드 되 고 나머지 스택 인수가 일반적으로 배치 됩니다 허수 스택에 인수 할당 합니다. 
+효과적으로이 매월 다음 규칙 C.12–C.15 여기서 스택의 첫 번째 64 바이트 x0 x7, 로드 되 고 나머지 스택 인수가 일반적으로 배치 됩니다 허수 스택에 인수 할당 합니다.
 
 ## <a name="return-values"></a>반환 값
 
@@ -231,5 +231,5 @@ ARM EABI는 해제 코드는 예외 해제 모델을 지정 합니다. 그러나
 
 ## <a name="see-also"></a>참고자료
 
-[일반적인 Visual C++ ARM 마이그레이션 문제](../build/common-visual-cpp-arm-migration-issues.md)  
-[ARM64 예외 처리](../build/arm64-exception-handling.md)  
+[일반적인 Visual C++ ARM 마이그레이션 문제](../build/common-visual-cpp-arm-migration-issues.md)<br/>
+[ARM64 예외 처리](../build/arm64-exception-handling.md)

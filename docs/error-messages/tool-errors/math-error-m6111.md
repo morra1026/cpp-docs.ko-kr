@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b03937ed442b169b960d573b44c0eb6ebca9660
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 95a55ec6b7cdf0b6e4c15bd283dde77c610698fa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317998"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074827"
 ---
 # <a name="math-error-m6111"></a>수학 오류 M6111
-스택 언더플로  
-  
- 에뮬레이터 또는 8087/287/387 보조 프로세서에 스택 언더플로에서 부동 소수점 연산이 발생 했습니다.  
-  
- 이 오류는 종종를 호출 하 여 발생 한 `long double` 값을 반환 하지 않는 함수입니다. 예를 들어 다음이 오류가 생성 컴파일하여 실행 하면 됩니다.  
-  
-```  
-long double ld() {};  
-main ()  
-{  
-  ld();  
-}  
-```  
-  
- 프로그램은 139 종료 코드로 종료 됩니다.
+
+언더플로 스택
+
+부동 소수점 연산 8087/287 387 프로세서 또는 에뮬레이터에는 스택 언더플로 했습니다.
+
+이 오류는 호출 하 여 자주 발생을 `long double` 함수 값을 반환 하지 않습니다. 예를 들어, 다음이 오류를 생성 컴파일 및 실행 하는 경우:
+
+```
+long double ld() {};
+main ()
+{
+  ld();
+}
+```
+
+프로그램은 139 종료 코드로 종료 됩니다.

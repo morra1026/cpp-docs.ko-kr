@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d15a90bf1a17bb07c06c2bcfc74a12368ffcdbc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5cd86b4634808d74e8aa094884d16dcc2e2cecab
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225367"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043406"
 ---
 # <a name="fatal-error-c1087"></a>심각한 오류 C1087
-filetype 파일에 알릴 수 없습니다. 'file': message  
-  
- 컴파일러에서 I/O 작업을 완료할 수 없습니다.
+
+filetype 파일에 알릴 수 없습니다. 'file': message
+
+컴파일러에서 I/O 작업을 완료할 수 없습니다.

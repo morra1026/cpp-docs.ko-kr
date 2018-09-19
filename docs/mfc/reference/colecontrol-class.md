@@ -344,12 +344,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e9e12409320bd82e25f94c02cba83b946252fff
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d3c5f68d35c4cf77073de3f8d2e6090f62a6dae2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43196441"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050101"
 ---
 # <a name="colecontrol-class"></a>COleControl 클래스
 OLE 컨트롤을 개발할 수 있는 강력한 기본 클래스입니다.
@@ -1692,17 +1692,14 @@ enum ControlFlags {
 
 기본적으로 `GetControlFlags` 반환 `fastBeginPaint | clipPaintDC`합니다.
 
-`fastBeginPaint` 경우 설정 사용을 시작-그리기 함수에 맞게 대신 OLE 컨트롤의 [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) API (기본적으로 설정 됨).
-
-`clipPaintDC` 그렇지 않은 경우 설정에 대 한 호출을 사용 하지 않도록 설정 `IntersectClipRect` 수행한 `COleControl` 및 속도가 약간 빨라집니다. 창 없는 활성화를 사용 하는 경우 플래그는 영향을 주지 않습니다.
-
-`pointerInactive` 경우 설정, 제공 마우스 상호 작용 하 고 컨트롤을 사용 하 여 활성화 되지 `COleControl`의 구현을 `IPointerInactive` 인터페이스를 기본적으로 비활성화 됩니다.
-
-`noFlickerActivate` 경우 설정, 추가 그리기 작업 및 깜빡임의 제거 합니다. 컨트롤의 비활성 및 활성 상태에서 자신을 동일 하 게 그릴 때 사용 합니다. 창 없는 활성화를 사용 하는 경우 플래그는 영향을 주지 않습니다.
-
-`windowlessActivate` 경우 설정, 창 없는 활성화를 사용 하는 컨트롤을 나타냅니다.
-
-`canOptimizeDraw` 경우 설정, 컨트롤 그리기 최적화를 수행 되는 컨테이너에서 지 원하는 경우를 나타냅니다.
+|||
+|-|-|
+|`fastBeginPaint`|경우 설정 사용을 시작-그리기 함수에 맞게 대신 OLE 컨트롤의 [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) API (기본적으로 설정 됨).|
+|`clipPaintDC`|그렇지 않은 경우 설정에 대 한 호출을 사용 하지 않도록 설정 `IntersectClipRect` 수행한 `COleControl` 및 속도가 약간 빨라집니다. 창 없는 활성화를 사용 하는 경우 플래그는 영향을 주지 않습니다.|
+|`pointerInactive`|경우 설정, 제공 마우스 상호 작용 하 고 컨트롤을 사용 하 여 활성화 되지 `COleControl`의 구현을 `IPointerInactive` 인터페이스를 기본적으로 비활성화 됩니다.|
+|`noFlickerActivate`|경우 설정, 추가 그리기 작업 및 깜빡임의 제거 합니다. 컨트롤의 비활성 및 활성 상태에서 자신을 동일 하 게 그릴 때 사용 합니다. 창 없는 활성화를 사용 하는 경우 플래그는 영향을 주지 않습니다.|
+|`windowlessActivate`|경우 설정, 창 없는 활성화를 사용 하는 컨트롤을 나타냅니다.|
+|`canOptimizeDraw`|경우 설정, 컨트롤 그리기 최적화를 수행 되는 컨테이너에서 지 원하는 경우를 나타냅니다.|
 
 에 대 한 자세한 내용은 `GetControlFlags` 다른 최적화 OLE 컨트롤의 내용과 [ActiveX 컨트롤: 최적화](../../mfc/mfc-activex-controls-optimization.md)합니다.
 

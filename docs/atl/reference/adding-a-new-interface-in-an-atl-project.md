@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad90ac69fa41a6bec70373b84044344592d2d86e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 7d468e6e2770eca3bc01fca95fb585d1753210a3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753940"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039025"
 ---
 # <a name="adding-a-new-interface-in-an-atl-project"></a>ATL 프로젝트에 새 인터페이스 추가
 
@@ -52,10 +52,10 @@ ms.locfileid: "43753940"
 
 ## <a name="see-also"></a>참고 항목
 
-[ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)   
-[Visual C++ 프로젝트 형식](../../ide/visual-cpp-project-types.md)   
-[응용 프로그램 마법사를 사용하여 데스크톱 프로젝트 만들기](../../ide/creating-desktop-projects-by-using-application-wizards.md)   
-[ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)   
-[ATL COM 개체의 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)   
+[ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)<br/>
+[Visual C++ 프로젝트 형식](../../ide/visual-cpp-project-types.md)<br/>
+[응용 프로그램 마법사를 사용하여 데스크톱 프로젝트 만들기](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
+[ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
+[ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [기본 ATL 프로젝트 구성](../../atl/reference/default-atl-project-configurations.md)
 

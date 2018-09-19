@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d151c774672b1788ca893a9812deb3e41100dc0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e86515a7d7c8954271578291c4ebcb1a52fc9863
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171720"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054287"
 ---
 # <a name="compiler-error-c2129"></a>컴파일러 오류 C2129
-'function' 정적 함수 선언 되었지만 정의 되지 않았습니다.  
-  
- 정방향 참조는 `static` 정의 되지 않은 함수입니다.  
-  
- A `static` 파일 범위 내에서 함수를 정의 해야 합니다. 를 다른 파일에서 함수를 정의 하는 경우 선언 해야 `extern`합니다.
+
+'function' 정적 함수 선언 되었지만 정의 되지 않았습니다.
+
+전방 참조 하려고는 `static` 정의 되지 않은 함수입니다.
+
+`static` 파일 범위 내에서 함수를 정의 해야 합니다. 를 다른 파일에서 함수를 정의 하는 경우 선언 되어야 합니다 `extern`합니다.

@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec995026b0142fc30470836b29697457be91937e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 6fcf62e142c99fad15bec667534bc60b4d19e43d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764812"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045057"
 ---
 # <a name="ccompolyobject-class"></a>CComPolyObject 클래스
 
@@ -41,14 +41,14 @@ ms.locfileid: "43764812"
 ## <a name="syntax"></a>구문
 
 ```
-template<class contained>  
+template<class contained>
 class CComPolyObject : public IUnknown,
       public CComObjectRootEx<contained::_ThreadModel::ThreadModelNoCS>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*포함 된*  
+*포함 된*<br/>
 파생 된 클래스 [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) 하거나 [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)처럼 개체에서 지원 하려는 다른 인터페이스 에서도 잘 합니다.
 
 ## <a name="members"></a>멤버
@@ -127,7 +127,7 @@ CComPolyObject(void* pv);
 
 ### <a name="parameters"></a>매개 변수
 
-*pv*  
+*pv*<br/>
 [in] 외부 알 수 없는 경우 개체, 집계 또는 경우에 NULL에 대 한 포인터는 개체가 집계 되지 않은 경우 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -160,7 +160,7 @@ static HRESULT WINAPI CreateInstance(
 
 ### <a name="parameters"></a>매개 변수
 
-*pp*  
+*pp*<br/>
 [out] 에 대 한 포인터를 **CComPolyObject <** `contained` **>** 포인터입니다. 하는 경우 `CreateInstance` 정상적이 지 않습니다 *pp* NULL로 설정 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -203,7 +203,7 @@ CComContainedObject<contained> m_contained;
 
 ### <a name="parameters"></a>매개 변수
 
-*포함 된*  
+*포함 된*<br/>
 [in] 파생 된 클래스 [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) 하거나 [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)처럼 개체에서 지원 하려는 다른 인터페이스 에서도 잘 합니다.
 
 ### <a name="remarks"></a>설명
@@ -216,22 +216,22 @@ CComContainedObject<contained> m_contained;
 
 ```
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
-template <class Q>  
+template <class Q>
 HRESULT QueryInterface(Q** pp);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*Q*  
+*Q*<br/>
 COM 인터페이스입니다.
 
-*iid*  
+*iid*<br/>
 [in] 요청 된 인터페이스의 식별자입니다.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] 로 식별 되는 인터페이스 포인터에 대 한 포인터 *iid*합니다. 개체는이 인터페이스를 지원 하지 않는 경우 *ppvObject* NULL로 설정 됩니다.
 
-*pp*  
+*pp*<br/>
 [out] 로 식별 된 인터페이스에 대 한 포인터 `__uuidof(Q)`합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -256,6 +256,6 @@ STDMETHOD_(ULONG, Release)();
 
 ## <a name="see-also"></a>참고 항목
 
-[CComObjectRootEx 클래스](../../atl/reference/ccomobjectrootex-class.md)   
-[DECLARE_POLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_poly_aggregatable)   
+[CComObjectRootEx 클래스](../../atl/reference/ccomobjectrootex-class.md)<br/>
+[DECLARE_POLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_poly_aggregatable)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

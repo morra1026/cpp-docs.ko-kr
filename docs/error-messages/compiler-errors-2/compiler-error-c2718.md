@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12ffe631f354c7aef87497e7b21e3a9cd3261c3b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: facbee46968cf76e6709bceff4432ba289aed3cd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236327"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045772"
 ---
 # <a name="compiler-error-c2718"></a>컴파일러 오류 C2718
-'parameter': __declspec(align('#')) 인 실제 매개 변수는 맞춰지지 않습니다  
-  
- [맞춤](../../cpp/align-cpp.md) `__declspec` 한정자 함수 매개 변수에서 허용 되지 않습니다.  
-  
- 다음 샘플에서는 C2718 오류가 생성 됩니다.  
-  
-```  
-// C2718.cpp  
-typedef struct __declspec(align(32)) AlignedStruct  {   
-   int i;   
-} AlignedStruct;  
-  
-void f2(int i, ...);  
-  
-void f4() {  
-   AlignedStruct as;  
-  
-   f2(0, as);   // C2718, actual parameter is aligned  
-}  
+
+'parameter': __declspec(align('#')) 인 실제 매개 변수는 맞춰지지 않습니다
+
+합니다 [맞춤](../../cpp/align-cpp.md) `__declspec` 한정자 함수 매개 변수에서 허용 되지 않습니다.
+
+다음 샘플에서는 C2718 오류가 생성 됩니다.
+
+```
+// C2718.cpp
+typedef struct __declspec(align(32)) AlignedStruct  {
+   int i;
+} AlignedStruct;
+
+void f2(int i, ...);
+
+void f4() {
+   AlignedStruct as;
+
+   f2(0, as);   // C2718, actual parameter is aligned
+}
 ```

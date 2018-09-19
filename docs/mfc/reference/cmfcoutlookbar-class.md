@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b9de076f4682bd3649f62940a0dd492eb801e28
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 9ed3a07b7994d2c7adc7a5d708d31abe9c49437f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850185"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717108"
 ---
 # <a name="cmfcoutlookbar-class"></a>CMFCOutlookBar 클래스
 Microsoft Outlook 2000 또는 Outlook 2003의 **탐색 창** 과 시각적으로 유사한 탭 창입니다. `CMFCOutlookBar` 개체를 포함 한 [CMFCOutlookBarTabCtrl 클래스](../../mfc/reference/cmfcoutlookbartabctrl-class.md) 개체와 일련의 탭. 탭 일 수 있습니다 [CMFCOutlookBarPane 클래스](../../mfc/reference/cmfcoutlookbarpane-class.md) 개체 또는 `CWnd`-파생 개체입니다. Outlook 표시줄은 사용자에게 일련의 단추와 표시 영역으로 나타납니다. 사용자가 단추를 클릭하면 해당 컨트롤 또는 단추 창이 표시됩니다.  
@@ -210,8 +210,8 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- 이 창에 도킹 되는 다른 창에 대 한 포인터입니다.  
+*pBar*<br/>
+[in] 이 창에 도킹 되는 다른 창에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  다른 창; Outlook 표시줄 창에 도킹할 수 있는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -253,26 +253,26 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszCaption*  
- 창 캡션을 지정합니다.  
+*lpszCaption*<br/>
+[in] 창 캡션을 지정합니다.  
   
- [in] *pParentWnd*  
- 부모 창에 대 한 포인터를 지정합니다. NULL이 아니어야 합니다.  
+*pParentWnd*<br/>
+[in] 부모 창에 대 한 포인터를 지정합니다. NULL이 아니어야 합니다.  
   
- [in] *rect*  
- Outlook 표시줄 크기와 위치를 픽셀 단위로 지정합니다.  
+*rect*<br/>
+[in] Outlook 표시줄 크기와 위치를 픽셀 단위로 지정합니다.  
   
- [in] *nID*  
- 컨트롤 ID를 지정합니다. 다른 제어 응용 프로그램에서 사용 되는 Id에서에서 고유 해야 합니다.  
+*nID*<br/>
+[in] 컨트롤 ID를 지정합니다. 다른 제어 응용 프로그램에서 사용 되는 Id에서에서 고유 해야 합니다.  
   
- [in] *dwStyle*  
- 원하는 컨트롤 막대 스타일을 지정합니다. 가능한 값을 참조 하세요 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  
+*dwStyle*<br/>
+[in] 원하는 컨트롤 막대 스타일을 지정합니다. 가능한 값을 참조 하세요 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  
   
- [in] *dwControlBarStyle*  
- 특별 한 라이브러리 정의 스타일을 지정합니다.  
+*dwControlBarStyle*<br/>
+[in] 특별 한 라이브러리 정의 스타일을 지정합니다.  
   
- [in] *pContext*  
- 컨텍스트를 만듭니다.  
+*pContext*<br/>
+[in] 컨텍스트를 만듭니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -282,7 +282,7 @@ virtual BOOL Create(
   
  참조 [cbasepane:: Createex](../../mfc/reference/cbasepane-class.md#createex) 가 지정 해야 하는 사용 가능한 라이브러리 정의 된 스타일의 목록은 *dwControlBarStyle*합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `Create` 메서드는 `CMFCOutlookBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [Outlook 다중 뷰 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_OutlookMultiViews#1](../../mfc/reference/codesnippet/cpp/cmfcoutlookbar-class_1.h)]  
@@ -300,17 +300,17 @@ CMFCOutlookBarPane* CreateCustomPage(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszPageName*  
- 페이지 레이블입니다.  
+*lpszPageName*<br/>
+[in] 페이지 레이블입니다.  
   
- [in] *bActivatePage*  
- True 이면 페이지를 작성할 때 활성화 됩니다.  
+*bActivatePage*<br/>
+[in] True 이면 페이지를 작성할 때 활성화 됩니다.  
   
- [in] *dwEnabledDocking*  
- 페이지 분리 되 면 설정 된 도킹 측면을 지정 하는 CBRS_ALIGN_ 플래그의 조합입니다.  
+*dwEnabledDocking*<br/>
+[in] 페이지 분리 되 면 설정 된 도킹 측면을 지정 하는 CBRS_ALIGN_ 플래그의 조합입니다.  
   
- [in] *bEnableTextLabels*  
- True 이면 텍스트 레이블의 페이지에 있는 단추에 대해 활성화 됩니다.  
+*bEnableTextLabels*<br/>
+[in] True 이면 텍스트 레이블의 페이지에 있는 단추에 대해 활성화 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  새로 만든 페이지나 생성에 실패 하는 경우에 NULL 포인터입니다.  
@@ -350,17 +350,17 @@ virtual BOOL FloatTab(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- Float로 창에 대 한 포인터입니다.  
+*pBar*<br/>
+[in] Float로 창에 대 한 포인터입니다.  
   
- [in] *nTabID*  
- Float 탭의 0부터 시작 하는 인덱스입니다.  
+*nTabID*<br/>
+[in] Float 탭의 0부터 시작 하는 인덱스입니다.  
   
- [in] *dockMethod*  
- 창 float를 사용 하는 방법을 지정 합니다.  자세한 내용은 [cbasetabbedpane:: Floattab](../../mfc/reference/cbasetabbedpane-class.md#floattab)합니다.  
+*dockMethod*<br/>
+[in] 창 float를 사용 하는 방법을 지정 합니다.  자세한 내용은 [cbasetabbedpane:: Floattab](../../mfc/reference/cbasetabbedpane-class.md#floattab)합니다.  
   
- [in] *bHide*  
- 부동; 전에 창을 숨기려면 TRUE 그렇지 않으면 FALSE입니다. 이 메서드의 기본 클래스 버전을 달리이 매개 변수 없는 기본 값입니다.  
+*bHide*<br/>
+[in] 부동; 전에 창을 숨기려면 TRUE 그렇지 않으면 FALSE입니다. 이 메서드의 기본 클래스 버전을 달리이 매개 변수 없는 기본 값입니다.  
   
 ### <a name="return-value"></a>반환 값  
  창 부동 설정; 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -391,11 +391,11 @@ virtual void GetTabArea(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *rectTabAreaTop*  
- 함수가 반환할 때 크기와를 클라이언트 좌표로 나타낸 위쪽 탭 영역의 위치를 포함 합니다.  
+*rectTabAreaTop*<br/>
+[out] 함수가 반환할 때 크기와를 클라이언트 좌표로 나타낸 위쪽 탭 영역의 위치를 포함 합니다.  
   
- [out] *rectTabAreaBottom*  
- 함수는 반환 될 때 아래쪽 탭 영역 (클라이언트 좌표로) 위치와 크기를 포함 합니다.  
+*rectTabAreaBottom*<br/>
+[out] 함수는 반환 될 때 아래쪽 탭 영역 (클라이언트 좌표로) 위치와 크기를 포함 합니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 워크 대상 창으로 도킹의 형식을 확인 하려면이 메서드를 호출 합니다. 프레임 워크 대상 창의 탭 영역에 도킹할 창을 끌를 결정 하는 경우 대상 창의 새 탭으로 첫 번째 창에 추가 하려고 합니다. 그렇지 않으면 대상 창의 오른쪽 아래에 있는 첫 번째 창 도킹 하려고 합니다. 프레임 워크 추가 도킹된 창에 맞게 슬라이더를 사용 하 여 새 컨테이너를 만듭니다.  
@@ -425,8 +425,8 @@ virtual void OnAfterAnimation(int nPage);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *n 페이지*  
- 활성 이루어졌습니다 탭 페이지의 0부터 시작 하는 인덱스입니다.  
+*. n 페이지*<br/>
+[in] 활성 이루어졌습니다 탭 페이지의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="remarks"></a>설명  
  활성 탭을 설정 하는 시각 효과 애니메이션 설정 여부에 따라 달라 집니다. 자세한 내용은 [CMFCOutlookBarTabCtrl::EnableAnimation](../../mfc/reference/cmfcoutlookbartabctrl-class.md#enableanimation)합니다.  
@@ -439,8 +439,8 @@ virtual BOOL OnBeforeAnimation(int nPage);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *n 페이지*  
- 활성 설정에 있는 탭 페이지의 0부터 시작 하는 인덱스입니다.  
+*. n 페이지*<br/>
+[in] 활성 설정에 있는 탭 페이지의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  새 활성 탭 설정에서 애니메이션을 사용 하는 경우 TRUE 또는 애니메이션을 비활성화 해야 하는 경우에 FALSE를 반환 합니다.  
@@ -455,8 +455,8 @@ virtual void OnScroll(BOOL bDown);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bDown*  
- Outlook 표시줄, 스크롤 또는 위로 스크롤 하는 경우에 FALSE 이면 TRUE입니다.  
+*bDown*<br/>
+[in] Outlook 표시줄, 스크롤 또는 위로 스크롤 하는 경우에 FALSE 이면 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -470,11 +470,11 @@ BOOL RemoveCustomPage(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiPage*  
- 부모 Outlook 창에서 페이지의 0부터 시작 인덱스입니다.  
+*uiPage*<br/>
+[in] 부모 Outlook 창에서 페이지의 0부터 시작 인덱스입니다.  
   
- [in] *pTargetWnd*  
- Pointerto 부모 Outlook 창입니다.  
+*pTargetWnd*<br/>
+[in] Pointerto 부모 Outlook 창입니다.  
   
 ### <a name="return-value"></a>반환 값  
  사용자 지정 페이지를 성공적으로 제거 된 경우 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -496,11 +496,11 @@ void SetButtonsFont(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pFont*  
- 새 글꼴을 지정합니다.  
+*pFont*<br/>
+[in] 새 글꼴을 지정합니다.  
   
- [in] *bRedraw*  
- True 이면 Outlook 표시줄이 그려집니다.  
+*bRedraw*<br/>
+[in] True 이면 Outlook 표시줄이 그려집니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드를 사용 하 여 outlook 탭 페이지 단추에 표시 되는 텍스트 글꼴을 설정 합니다.  
@@ -513,8 +513,8 @@ void SetMode2003(BOOL bMode2003=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bMode2003*  
- TRUE 이면 Office 2003 모드가 사용 됩니다.  
+*bMode2003*<br/>
+[in] TRUE 이면 Office 2003 모드가 사용 됩니다.  
   
 ### <a name="remarks"></a>설명  
  이 함수를 사용 하 여 사용 하도록 설정 하 여 Office 2003 모드를 사용 하지 않도록 설정 합니다. 이 모드에서는 Outlook 표시줄에는 사용자 지정 단추를 사용 하 여 추가 프로그램 도구 모음입니다. Outlook 표시줄의 동작은 Microsoft Office 2003에서 Outlook 표시줄의 동작을 따릅니다.  

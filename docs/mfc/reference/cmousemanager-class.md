@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d99f0b2ea50e84e3eb5e89d1f2e24a181653893c
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 38dcb010df79e0a5c5a54079b4c98021cc406c8d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852479"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720280"
 ---
 # <a name="cmousemanager-class"></a>CMouseManager 클래스
 사용자가 다른 명령을 특정을 사용 하 여 연결 하도록 허용 [CView](../../mfc/reference/cview-class.md) 사용자가 뷰 안에서 두 번 클릭할 때 개체입니다.  
@@ -93,20 +93,20 @@ BOOL AddView(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iViewId*  
- 뷰 id가.  
+*iViewId*<br/>
+[in] 뷰 id가.  
   
- [in] *uiViewNameResId*  
- 뷰 이름을 참조 하는 리소스 문자열 ID입니다.  
+*uiViewNameResId*<br/>
+[in] 뷰 이름을 참조 하는 리소스 문자열 ID입니다.  
   
- [in] *uiIconId*  
- 뷰 아이콘 id입니다.  
+*uiIconId*<br/>
+[in] 뷰 아이콘 id입니다.  
   
- [in] *iId*  
- 뷰 id가.  
+*iId*<br/>
+[in] 뷰 id가.  
   
- [in] *lpszViewName*  
- 뷰 이름입니다.  
+*lpszViewName*<br/>
+[in] 뷰 이름입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -118,7 +118,7 @@ BOOL AddView(
   
  사용자 지정 마우스 동작을 제공 하는 방법에 대 한 자세한 내용은 참조 하세요. [키보드 및 마우스 사용자 지정](../../mfc/keyboard-and-mouse-customization.md)합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에 대 한 포인터를 검색 하는 방법을 보여 줍니다는 `CMouseManager` 사용 하 여 개체를 `CWinAppEx::GetMouseManager` 메서드 및 `AddView` 에서 메서드를 `CMouseManager` 클래스입니다. 이 코드 조각은의 일부인 합니다 [상태 컬렉션 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_StateCollection#4](../../mfc/reference/codesnippet/cpp/cmousemanager-class_1.cpp)]  
@@ -131,8 +131,8 @@ UINT GetViewDblClickCommand(int iId) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iId*  
- 뷰 ID  
+*iId*<br/>
+[in] 뷰 ID  
   
 ### <a name="return-value"></a>반환 값  
  명령 식별자; 명령과 연결 된 경우 그렇지 않으면 0입니다.  
@@ -145,8 +145,8 @@ UINT GetViewIconId(int iViewId) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iViewId*  
- 뷰 ID  
+*iViewId*<br/>
+[in] 뷰 ID  
   
 ### <a name="return-value"></a>반환 값  
  성공할 경우 아이콘 리소스 식별자 그렇지 않으면 0입니다.  
@@ -162,8 +162,8 @@ int GetViewIdByName(LPCTSTR lpszName) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszName*  
- 뷰 이름입니다.  
+*lpszName*<br/>
+[in] 뷰 이름입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공할 경우에 뷰 ID 그렇지 않으면 0입니다.  
@@ -179,8 +179,8 @@ void GetViewNames(CStringList& listOfNames) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *listOfNames*  
- 에 대 한 참조 `CStringList` 개체입니다.  
+*listOfNames*<br/>
+[out] 에 대 한 참조 `CStringList` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 매개 변수를 채웁니다 `listOfNames` 이름을 사용 하 여 등록 된 모든 뷰를 사용 하 여 [CMouseManager::AddView](#addview)합니다.  
@@ -193,8 +193,8 @@ BOOL LoadState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszProfileName*  
- 레지스트리 키의 경로입니다.  
+*lpszProfileName*<br/>
+[in] 레지스트리 키의 경로입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -212,8 +212,8 @@ BOOL SaveState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszProfileName*  
- 레지스트리 키의 경로입니다.  
+*lpszProfileName*<br/>
+[in] 레지스트리 키의 경로입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -233,11 +233,11 @@ void SetCommandForDblClk(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iViewId*  
- 뷰 식별자입니다.  
+*iViewId*<br/>
+[in] 뷰 식별자입니다.  
   
- [in] *uiCmd*  
- 명령 식별자입니다.  
+*uiCmd*<br/>
+[in] 명령 식별자입니다.  
   
 ### <a name="remarks"></a>설명  
  뷰를 사용 하 여 사용자 지정 명령에 연결 하기 위해 먼저 등록 해야 뷰를 사용 하 여 [CMouseManager::AddView](#addview)합니다. `AddView` 메서드 뷰 식별자를 입력된 매개 변수로 필요 합니다. 호출할 수는 보기를 등록 하 고 나면 `CMouseManager::SetCommandForDblClk` 동일한 뷰 식별자 입력 매개 변수를 제공 하는 `AddView`합니다. 그런 다음 등록 된 보기에서 마우스를 클릭할 때 응용 프로그램은 명령을 실행 합니다 나타난 *uiCmd 합니다.* 사용자 지정 마우스 동작을 지원 하려면는 마우스 관리자를 사용 하 여 등록 된 보기를 사용자 지정도 해야 합니다. 사용자 지정 마우스 동작에 대 한 자세한 내용은 참조 하세요. [키보드 및 마우스 사용자 지정](../keyboard-and-mouse-customization.md)합니다.  

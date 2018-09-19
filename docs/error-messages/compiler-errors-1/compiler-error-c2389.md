@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0eaf2907238294ea34c8dbcd51609434b3328d88
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 73809d0fdd94871ad282042cef22a233ced19a32
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195947"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113242"
 ---
 # <a name="compiler-error-c2389"></a>컴파일러 오류 C2389
-'operator': 'nullptr'는 잘못된 피연산자입니다.  
-  
- `nullptr` 는 피연산자일 수 없습니다.  
-  
- 다음 샘플에서는 C2389를 생성합니다.  
-  
-```  
-// C2389.cpp  
-// compile with: /clr  
-int main() {  
-   throw nullptr;   // C2389  
-}  
+
+'operator': 'nullptr'는 잘못된 피연산자입니다.
+
+`nullptr` 는 피연산자일 수 없습니다.
+
+다음 샘플에서는 C2389를 생성합니다.
+
+```
+// C2389.cpp
+// compile with: /clr
+int main() {
+   throw nullptr;   // C2389
+}
 ```

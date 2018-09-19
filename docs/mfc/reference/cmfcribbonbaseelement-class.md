@@ -242,12 +242,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c5c2697c22384524234f90a48c396a91b3c3522
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: a0200f15ab7a5c97699165a34d52ec6ce1f239e5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43678100"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46136337"
 ---
 # <a name="cmfcribbonbaseelement-class"></a>CMFCRibbonBaseElement 클래스
 합니다 `CMFCRibbonBaseElement` 클래스는 추가할 수 있는 모든 요소에 대 한 기본 클래스를 [리본 표시줄](../../mfc/reference/cmfcribbonbar-class.md)합니다. 리본 요소의 예를 들면 리본 단추, 리본 확인란 및 리본 콤보 상자가 있습니다.  
@@ -423,8 +423,8 @@ virtual void AddToKeyList(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *arElems*  
- 에 대 한 참조를 [CArray](../../mfc/reference/carray-class.md) 키 팁입니다.  
+*arElems*<br/>
+[in] 에 대 한 참조를 [CArray](../../mfc/reference/carray-class.md) 키 팁입니다.  
   
 ### <a name="remarks"></a>설명  
  리본 키 팁 기능을 사용 하는 경우 프레임 워크는 사용자가 ALT 키 또는 F10 키를 누를 때 리본 키 팁을 표시 합니다.  
@@ -439,11 +439,11 @@ virtual int AddToListBox(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndListBox*  
- 명령 목록 상자에 대 한 포인터입니다.  
+*pWndListBox*<br/>
+[in] 명령 목록 상자에 대 한 포인터입니다.  
   
- [in] *bDeep*  
- 이 매개 변수는 사용되지 않습니다.  
+*bDeep*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  추가한 리본 요소의 0부터 시작 하는 인덱스입니다.  
@@ -529,8 +529,8 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *src*  
- 소스 [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md) 개체입니다.  
+*src*<br/>
+[in] 소스 [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md) 개체입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -555,25 +555,24 @@ virtual void DrawImage(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *형식*  
- 이미지 형식 열거형 값입니다. 가능한 값 목록은 설명 섹션을 참조 하세요.  
+*type*<br/>
+[in] 이미지 형식 열거형 값입니다. 가능한 값 목록은 설명 섹션을 참조 하세요.  
   
- [in] *rectImage*  
- 이미지 사각형입니다.  
+*rectImage*<br/>
+[in] 이미지 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로이 메서드는 없습니다. 리본 요소에 대 한 이미지를 그릴 파생된 클래스에서이 메서드를 재정의 합니다.  
   
  다음 표에 대 한 가능한 값은 *형식* 매개 변수:  
-  
- `RibbonImageLarge`  
- 큰 32 x 32 픽셀 이미지 크기입니다.  
-  
- `RibbonImageSmall`  
- 작은 16 x 16 픽셀 이미지 크기입니다.  
+
+|||
+|-|-|
+| `RibbonImageLarge`  | 큰 32 x 32 픽셀 이미지 크기입니다.  |
+| `RibbonImageSmall`  | 작은 16 x 16 픽셀 이미지 크기입니다.  |
   
 ##  <a name="find"></a>  CMFCRibbonBaseElement::Find  
  현재 개체를 가리키는 경우 지정된 된 포인터를 반환 합니다.  
@@ -583,8 +582,8 @@ virtual CMFCRibbonBaseElement* Find(const CMFCRibbonBaseElement* pElement);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pElement*  
- 리본 요소에 대 한 포인터입니다.  
+*pElement*<br/>
+[in] 리본 요소에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  리본 요소에 대 한 포인터는 경우 *pElement* 현재 가리키는 개체 고 그렇지 않으면 NULL입니다.  
@@ -599,8 +598,8 @@ virtual CMFCRibbonBaseElement* FindByData(DWORD_PTR dwData);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwData*  
- 리본 요소에 연결 된 데이터입니다.  
+*dwData*<br/>
+[in] 리본 요소에 연결 된 데이터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정 된 데이터에 포함 된 경우 리본 요소에 대 한 포인터 그렇지 않으면 NULL입니다.  
@@ -615,8 +614,8 @@ virtual CMFCRibbonBaseElement* FindByID(UINT uiCmdID);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmdID*  
- 리본 요소에 대 한 명령 ID입니다.  
+*uiCmdID*<br/>
+[in] 리본 요소에 대 한 명령 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
  해당 요소는; 지정한 명령 ID로 식별 되 면 리본 요소에 대 한 포인터 그렇지 않으면 NULL입니다.  
@@ -631,8 +630,8 @@ virtual CMFCRibbonBaseElement* FindByOriginal(CMFCRibbonBaseElement* pOriginal);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pOriginal*  
- 리본 요소에 대 한 포인터입니다.  
+*pOriginal*<br/>
+[in] 리본 요소에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  해당 원래 리본 요소에 지정 된 리본 요소와 일치 하는 경우 리본 요소에 대 한 포인터 그렇지 않으면 NULL입니다.  
@@ -648,8 +647,8 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  리본 요소의 압축 크기입니다.  
@@ -698,8 +697,8 @@ virtual void GetElements(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out에서] *arElements*  
- 리본 요소의 배열입니다.  
+*arElements*<br/>
+[out에서] 리본 요소의 배열입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -713,11 +712,11 @@ virtual void GetElementsByID(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmdID*  
- 리본 요소의 명령 ID입니다.  
+*uiCmdID*<br/>
+[in] 리본 요소의 명령 ID입니다.  
   
- [in] *arElements*  
- 리본 요소의 배열입니다.  
+*arElements*<br/>
+[in] 리본 요소의 배열입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -761,8 +760,8 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  중간 상태인 리본 요소의 크기입니다.  
@@ -787,11 +786,11 @@ virtual CRect GetKeyTipRect(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *bIsMenu*  
- 리본 요소를 팝업 메뉴를 표시 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+*bIsMenu*<br/>
+[in] 리본 요소를 팝업 메뉴를 표시 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  항상 값이 0 인 사각형을 반환합니다.  
@@ -807,8 +806,8 @@ virtual CSize GetKeyTipSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  Keytip 텍스트의 크기입니다.  
@@ -965,8 +964,8 @@ virtual CSize GetRegularSize(CDC* pDC) = 0;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  리본 요소의 보통 크기입니다.  
@@ -984,8 +983,8 @@ virtual CSize GetSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  리본 요소의 현재 크기입니다.  
@@ -1083,8 +1082,8 @@ virtual CMFCRibbonBaseElement* HitTest(CPoint point);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 이 매개 변수는 사용되지 않습니다.  
+*지점*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  않으면 리본 요소에 대 한 포인터 그렇지 않으면 FALSE입니다.  
@@ -1126,8 +1125,8 @@ virtual BOOL IsAutoRepeatMode(int& nDelay) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nDelay*  
- 이 매개 변수는 사용되지 않습니다.  
+*nDelay*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  항상 FALSE를 반환합니다.  
@@ -1378,8 +1377,8 @@ BOOL NotifyCommand(BOOL bWithDelay = FALSE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bWithDelay*  
- 명령 알림 부모 창의; 메시지 큐에 추가. False 이면 부모 창에 메시지를 즉시 전송 됩니다.  
+*bWithDelay*<br/>
+[in] 명령 알림 부모 창의; 메시지 큐에 추가. False 이면 부모 창에 메시지를 즉시 전송 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 메시지를 보냈습니다. 그렇지 않으면 FALSE입니다.  
@@ -1394,8 +1393,8 @@ virtual void NotifyHighlightListItem(int nIndex);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nIndex*  
- 목록의 리본 요소의 인덱스입니다.  
+*nIndex*<br/>
+[in] 목록의 리본 요소의 인덱스입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1407,8 +1406,8 @@ virtual BOOL OnAddToQAToolbar(CMFCRibbonQuickAccessToolBar& qat);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *qat*  
- 빠른 실행 도구 모음입니다.  
+*qat*<br/>
+[in] 빠른 실행 도구 모음입니다.  
   
 ### <a name="return-value"></a>반환 값  
  항상 빠른 실행 도구 모음에 추가한 리본 요소를 나타내는 TRUE를 반환 합니다.  
@@ -1423,8 +1422,8 @@ virtual void OnAfterChangeRect(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 이 매개 변수는 사용되지 않습니다.  
+*pDC*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로이 메서드는 리본 요소에 대 한 도구 설명을 업데이트합니다. 해당 표시 사각형 변경 된 후 리본 요소를 업데이트 하려면이 메서드를 재정의 합니다.  
@@ -1450,8 +1449,8 @@ virtual void OnCalcTextSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 이 매개 변수는 사용되지 않습니다.  
+*pDC*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로이 메서드는 없습니다. 리본 요소에 대 한 텍스트의 크기를 계산 하려면이 메서드를 재정의 합니다.  
@@ -1465,11 +1464,11 @@ virtual void OnChangeMenuHighlight(CMFCRibbonPanelMenuBar* pPanelMenuBar
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pPanelMenuBar*  
- 이 매개 변수는 사용되지 않습니다.  
+*pPanelMenuBar*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
- [in] *pHot*  
- 이 매개 변수는 사용되지 않습니다.  
+*pHot*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로이 메서드는 없습니다. 강조 표시를 변경 하는 경우 메뉴에 있는 리본 요소를 업데이트 하려면이 메서드를 재정의 합니다.  
@@ -1482,8 +1481,8 @@ virtual void OnDraw(CDC* pDC) = 0;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  특정 리본 요소를 그리는 사용자 지정 하려는 경우에 파생된 클래스에서이 메서드를 재정의 합니다.  
@@ -1499,14 +1498,14 @@ virtual void OnDrawKeyTip(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- Keytip에 대 한 경계 사각형입니다.  
+*rect*<br/>
+[in] Keytip에 대 한 경계 사각형입니다.  
   
- [in] *bIsMenu*  
- Keytip을 팝업 메뉴 단추에 대 한 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+*bIsMenu*<br/>
+[in] Keytip을 팝업 메뉴 단추에 대 한 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1520,11 +1519,11 @@ virtual BOOL OnDrawMenuImage(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 메뉴 이미지 사각형입니다.  
+*rect*<br/>
+[in] 메뉴 이미지 사각형입니다.  
   
 ### <a name="return-value"></a>반환 값  
  항상 이미지를 그린 나타내려면 TRUE를 반환 합니다.  
@@ -1545,23 +1544,23 @@ virtual void OnDrawOnList(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 리본 요소에 대 한 장치 컨텍스트에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 리본 요소에 대 한 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *strText*  
- 표시 텍스트입니다.  
+*strText*<br/>
+[in] 표시 텍스트입니다.  
   
- [in] *nTextOffset*  
- 텍스트를 표시할 목록 상자의 왼쪽에서의 픽셀 단위의 거리입니다.  
+*nTextOffset*<br/>
+[in] 텍스트를 표시할 목록 상자의 왼쪽에서의 픽셀 단위의 거리입니다.  
   
- [in] *rect*  
- 리본 요소에 대 한 표시 사각형입니다.  
+*rect*<br/>
+[in] 리본 요소에 대 한 표시 사각형입니다.  
   
- [in] *bIsSelected*  
- 이 매개 변수는 사용되지 않습니다.  
+*bIsSelected*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
- [in] *bHighlighted*  
- 이 매개 변수는 사용되지 않습니다.  
+*bHighlighted*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
  명령 목록 상자는 사용자는 빠른 실행 도구 모음을 사용자 지정할 수 있도록 리본 요소를 표시 합니다.  
@@ -1574,8 +1573,8 @@ virtual BOOL OnKey(BOOL bIsMenuKey);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bIsMenuKey*  
- Keytip을 팝업 메뉴를 표시 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+*bIsMenuKey*<br/>
+[in] Keytip을 팝업 메뉴를 표시 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이벤트가 처리 되었으면 TRUE 그렇지 않으면 FALSE입니다.  
@@ -1590,8 +1589,8 @@ virtual BOOL OnMenuKey(UINT nUpperChar);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nUpperChar*  
- 이 매개 변수는 사용되지 않습니다.  
+*nUpperChar*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  항상 FALSE를 반환합니다.  
@@ -1607,8 +1606,8 @@ virtual BOOL OnProcessKey(UINT nChar);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nChar*  
- 이 매개 변수는 사용되지 않습니다.  
+*NChar*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  항상 FALSE를 반환합니다.  
@@ -1624,8 +1623,8 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bIsRTL*  
- 이 매개 변수는 사용되지 않습니다.  
+*bIsRTL*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로이 메서드는 없습니다. 레이아웃 방향 변경 되 면 리본 요소를 조정 하려면이 메서드를 재정의 합니다. 기본 레이아웃 방향은 왼쪽에서 오른쪽입니다.  
@@ -1648,8 +1647,8 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bShow*  
- 이 매개 변수는 사용되지 않습니다.  
+*bShow*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로이 메서드는 없습니다. 이 메서드를 표시 하거나 숨기려면 리본 요소를 재정의 합니다.  
@@ -1672,8 +1671,8 @@ void PostMenuCommand(UINT uiCmdId);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmdId*  
- 매개 변수가 사용 되지 않습니다.  
+*uiCmdId*<br/>
+[in] 매개 변수가 사용 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
  닫기 메시지는 리본 요소에 팝업 메뉴에 있는 경우에 전송 됩니다.  
@@ -1718,8 +1717,8 @@ virtual void SetCompactMode(BOOL bCompactMode = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bCompactMode*  
- 리본 요소의 표시 크기를 줄이기 위해 TRUE 리본 요소의 표시 크기를 늘리려면 FALSE입니다.  
+*bCompactMode*<br/>
+[in] 리본 요소의 표시 크기를 줄이기 위해 TRUE 리본 요소의 표시 크기를 늘리려면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  다음 표에서이 메서드에 대 한 논리를 보여 줍니다.  
@@ -1739,8 +1738,8 @@ void SetData(DWORD_PTR dwData);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwData*  
- 데이터 값입니다.  
+*dwData*<br/>
+[in] 데이터 값입니다.  
   
 ##  <a name="setdefaultmenulook"></a>  CMFCRibbonBaseElement::SetDefaultMenuLook  
  팝업 명령으로 표시할 리본 요소를 설정 합니다.  
@@ -1750,8 +1749,8 @@ void SetDefaultMenuLook(BOOL bIsDefaultMenuLook = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bIsDefaultMenuLook*  
- 팝업 명령;으로 표시할 리본 요소를 설정. 그렇지 않으면 FALSE입니다.  
+*bIsDefaultMenuLook*<br/>
+[in] 팝업 명령;으로 표시할 리본 요소를 설정. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1763,8 +1762,8 @@ virtual void SetDescription(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszText*  
- 리본 요소에 대 한 설명입니다.  
+*lpszText*<br/>
+[in] 리본 요소에 대 한 설명입니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 워크는 상태 표시줄에 또는 도구 설명 또는 메뉴 단추를 클릭 새 설명을 표시합니다.  
@@ -1777,8 +1776,8 @@ virtual void SetID(UINT nID);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 명령 ID입니다.  
+*nID*<br/>
+[in] 명령 id입니다.  
   
 ##  <a name="setinitialmode"></a>  CMFCRibbonBaseElement::SetInitialMode  
  리본 요소에 대 한 초기 표시 크기를 설정합니다.  
@@ -1788,8 +1787,8 @@ virtual void SetInitialMode(BOOL bOneRow = FALSE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bOneRow*  
- Compact 또는 중간; 리본 요소에 대 한 표시 크기를 제한 하려면 true로 설정 그렇지 않으면 FALSE입니다.  
+*bOneRow*<br/>
+[in] Compact 또는 중간; 리본 요소에 대 한 표시 크기를 제한 하려면 true로 설정 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  리본 요소의 표시 크기는 compact, 중급, 또는 대형 수 있습니다.  
@@ -1804,11 +1803,11 @@ virtual void SetKeys(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszKeys*  
- 리본 요소에 대 한 keytip 합니다.  
+*lpszKeys*<br/>
+[in] 리본 요소에 대 한 keytip 합니다.  
   
- [in] *lpszMenuKeys*  
- 리본 요소의 팝업 메뉴에 대 한 keytip 합니다.  
+*lpszMenuKeys*<br/>
+[in] 리본 요소의 팝업 메뉴에 대 한 keytip 합니다.  
   
 ##  <a name="setoriginal"></a>  CMFCRibbonBaseElement::SetOriginal  
  리본 요소에 대 한 원래 리본 요소를 설정합니다.  
@@ -1818,8 +1817,8 @@ virtual void SetOriginal(CMFCRibbonBaseElement* pOriginal);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pOriginal*  
- 리본 요소에 대 한 포인터입니다.  
+*pOriginal*<br/>
+[in] 리본 요소에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  다른 컨테이너에 복사 되는 리본 요소에는 원래 리본 요소에 대 한 포인터를 유지 합니다.  
@@ -1832,8 +1831,8 @@ virtual void SetParentCategory(CMFCRibbonCategory* pParent);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pParent*  
- 리본 범주에 대 한 포인터입니다.  
+*pParent*<br/>
+[in] 리본 범주에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  리본 컨트롤의 탭된 그룹에는 범주 라고 합니다.  
@@ -1846,8 +1845,8 @@ virtual void SetParentMenu(CMFCRibbonPanelMenuBar* pMenuBar);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMenuBar*  
- 부모 메뉴입니다.  
+*pMenuBar*<br/>
+[in] 부모 메뉴입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1859,8 +1858,8 @@ virtual void SetParentRibbonBar(CMFCRibbonBar* pRibbonBar);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pRibbonBar*  
- 부모 리본 표시줄에 대 한 포인터입니다.  
+*pRibbonBar*<br/>
+[in] 부모 리본 표시줄에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1872,8 +1871,8 @@ void SetRect(CRect rect);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rect*  
- 사각형의 크기입니다.  
+*rect*<br/>
+[in] 사각형의 크기입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1885,8 +1884,8 @@ virtual void SetText(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszText*  
- 리본 요소에 대 한 keytip와 텍스트입니다.  
+*lpszText*<br/>
+[in] 리본 요소에 대 한 keytip와 텍스트입니다.  
   
 ### <a name="remarks"></a>설명  
  리본 요소에 대 한 keytip을 설정 하려면 추가 keytip 문자를 뒤에 줄 바꿈 이스케이프 시퀀스 *lpszText*합니다.  
@@ -1910,8 +1909,8 @@ virtual void SetTextAlwaysOnRight(BOOL bSet = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bSet*  
- 오른쪽의 텍스트를 표시. 그렇지 않으면 FALSE입니다.  
+*bSet*<br/>
+[in] 오른쪽의 텍스트를 표시. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1923,8 +1922,8 @@ virtual void SetToolTipText(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszText*  
- 도구 설명 텍스트입니다.  
+*lpszText*<br/>
+[in] 도구 설명 텍스트입니다.  
   
 ##  <a name="setvisible"></a>  CMFCRibbonBaseElement::SetVisible  
  리본 요소의 표시 유형을 설정합니다.  
@@ -1934,8 +1933,8 @@ void SetVisible(BOOL bIsVisible);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bIsVisible*  
- 리본 요소를 표시 리본 요소를 숨기려면 FALSE입니다.  
+*bIsVisible*<br/>
+[in] 리본 요소를 표시 리본 요소를 숨기려면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1959,11 +1958,11 @@ virtual BOOL StretchToWholeRow(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 이 매개 변수는 사용되지 않습니다.  
+*pDC*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
- [in] *nHeight*  
- 행의 높이입니다.  
+*nHeight*<br/>
+[in] 행의 높이입니다.  
   
 ### <a name="return-value"></a>반환 값  
  표시 높이 설정 된 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  

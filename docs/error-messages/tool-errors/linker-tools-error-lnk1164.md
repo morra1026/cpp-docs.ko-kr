@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f85ad1c223c9d4b22e3763f1d24a6c2631f6342d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4b07dcf360a58b07b84abe655641b758d6137d0e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297422"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087440"
 ---
 # <a name="linker-tools-error-lnk1164"></a>링커 도구 오류 LNK1164
-섹션 섹션 맞춤 (number) /ALIGN 값 보다 큰  
-  
- 지정 된 값을 초과 하는 개체 파일에 지정 된 섹션 맞춤 크기는 [/align](../../build/reference/align-section-alignment.md) 옵션입니다. **/align** 값 2의 거듭제곱 이어야 합니다. 하며 같거나 개체 파일에 지정 된 섹션 맞춤과 해야 합니다.  
-  
- 더 작은 섹션 맞춤 또는 증가으로 다시 컴파일하거나는 **/align** 값입니다.
+
+섹션 섹션 맞춤 (number)이 /ALIGN 값 보다 큼
+
+개체 파일에 지정 된 섹션의 맞춤 크기를 사용 하 여 지정 된 값을 초과 합니다 [/align](../../build/reference/align-section-alignment.md) 옵션입니다. 합니다 **/align** 값 2의 거듭제곱 이어야 합니다. 하며 같거나 섹션 맞춤과 개체 파일에 지정 해야 합니다.
+
+작은 섹션 맞춤 또는 증가 사용 하 여 컴파일하거나 합니다 **/align** 값입니다.

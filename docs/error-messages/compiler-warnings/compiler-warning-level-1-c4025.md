@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47e84ba11c7bed7420a9a1c699361612ef2002d8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 109f1694f63488c167e51c7c2c89675411b6d269
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33273951"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045577"
 ---
 # <a name="compiler-warning-level-1-c4025"></a>컴파일러 경고(수준 1) C4025
-'number': 기반 포인터가 가변 인수를 갖는 함수로 전달되었습니다. 매개 변수 number  
-  
- 가변 인수를 갖는 함수에 기반 포인터를 전달하면 포인터가 정규화되어 예기치 않은 결과가 발생합니다. 가변 인수를 갖는 함수에 기반 포인터를 전달하지 마세요.
+
+'number': 기반 포인터가 가변 인수를 갖는 함수로 전달되었습니다. 매개 변수 number
+
+가변 인수를 갖는 함수에 기반 포인터를 전달하면 포인터가 정규화되어 예기치 않은 결과가 발생합니다. 가변 인수를 갖는 함수에 기반 포인터를 전달하지 마세요.

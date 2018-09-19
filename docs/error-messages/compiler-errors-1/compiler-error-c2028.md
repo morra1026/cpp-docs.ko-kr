@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c1421a32d06fb7d922670ac921971c684c0d0e1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3c326e058a65037da635ed32fcdd799a651a48ac
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165274"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035723"
 ---
 # <a name="compiler-error-c2028"></a>컴파일러 오류 C2028
-구조체/공용 구조체 멤버는 구조체/공용 구조체 안에 있어야 합니다.  
-  
- 구조체 또는 공용 구조체 내에서 구조체 또는 공용 구조체 멤버를 선언해야 합니다.
+
+구조체/공용 구조체 멤버는 구조체/공용 구조체 안에 있어야 합니다.
+
+구조체 또는 공용 구조체 내에서 구조체 또는 공용 구조체 멤버를 선언해야 합니다.

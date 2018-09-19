@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 855bc48da10e8ca4dd83cf091e155746450a33f1
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 0d9b730e9cb1ca78b5247ea09f1f24a9bb8c307c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848521"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709789"
 ---
 # <a name="cmfcribbonbuttonsgroup-class"></a>CMFCRibbonButtonsGroup 클래스
 `CMFCRibbonButtonsGroup` 클래스를 사용 하면 그룹으로 리본 단추 집합을 구성할 수 있습니다. 그룹의 모든 단추는 가로로 서로 직접 인접해 있으며 테두리로 둘러싸여 있습니다.  
@@ -83,7 +83,7 @@ class CMFCRibbonButtonsGroup : public CMFCRibbonBaseElement
 ## <a name="remarks"></a>설명  
  그룹에서 파생 됩니다 [CMFCBaseRibbonElement](../../mfc/reference/cmfcribbonbaseelement-class.md) 있으며 단일 엔터티로 조작할 수 있습니다. 모든 패널 또는 팝업 메뉴에서 그룹을 배치할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `CMFCRibbonButtonsGroup` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 생성 하는 방법을 보여는 `CMFCRibbonButtonsGroup` 개체, 리본 단추 그룹에 이미지를 할당 및 리본 단추 그룹에 단추를 추가 합니다. 이 코드 조각은 [클라이언트 그리기 샘플](../../visual-cpp-samples.md)의 일부입니다.  
   
  [!code-cpp[NVC_MFC_DrawClient#2](../../mfc/reference/codesnippet/cpp/cmfcribbonbuttonsgroup-class_1.cpp)]  
@@ -106,8 +106,8 @@ void AddButton(CMFCRibbonBaseElement* pButton);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pButton*  
- 추가 하는 단추에 대 한 포인터입니다.  
+*pButton*<br/>
+[in] 추가 하는 단추에 대 한 포인터입니다.  
   
 ##  <a name="addbuttons"></a>  CMFCRibbonButtonsGroup::AddButtons  
  단추 그룹에 추가합니다.  
@@ -118,8 +118,8 @@ void AddButtons(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lstButtons*  
- 목록 추가 하려는 단추에 대 한 포인터입니다.  
+*lstButtons*<br/>
+[in] 목록 추가 하려는 단추에 대 한 포인터입니다.  
   
 ##  <a name="cmfcribbonbuttonsgroup"></a>  CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup  
  `CMFCRibbonButtonsGroup` 개체를 생성합니다.  
@@ -130,8 +130,8 @@ CMFCRibbonButtonsGroup(CMFCRibbonBaseElement* pButton);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pButton*  
- 새로 만든 추가할 단추 지정 `CMFCRibbonButtonsGroup` 개체입니다.  
+*pButton*<br/>
+[in] 새로 만든 추가할 단추 지정 `CMFCRibbonButtonsGroup` 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -145,8 +145,8 @@ CMFCRibbonBaseElement* GetButton(int i) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *있나요*  
- 반환할 단추는 0부터 시작 하는 인덱스입니다.  
+*i*<br/>
+[in] 반환할 단추는 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정된 된 인덱스에 있는 단추에 대 한 포인터입니다. 지정 된 인덱스가 범위를 벗어난 경우 NULL입니다.  
@@ -183,8 +183,8 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 리본 그룹의 장치 컨텍스트에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 리본 그룹의 장치 컨텍스트에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -214,17 +214,17 @@ virtual void OnDrawImage(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트는에 대 한 포인터를 `CMFCRibbonButtonsGroup` 개체입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트는에 대 한 포인터를 `CMFCRibbonButtonsGroup` 개체입니다.  
   
- [in] *rectImage*  
- 이미지를 그릴 사각형입니다.  
+*rectImage*<br/>
+[in] 이미지를 그릴 사각형입니다.  
   
- [in] *pButton*  
- 단추를 그릴 이미지입니다.  
+*pButton*<br/>
+[in] 단추를 그릴 이미지입니다.  
   
- [in] *nImageIndex*  
- 단추 (보통, 강조 표시 된 또는 사용 안 함 단추에 대 한 3 개의 이미지 배열 중 하나)에 그릴 이미지의 인덱스입니다.  
+*nImageIndex*<br/>
+[in] 단추 (보통, 강조 표시 된 또는 사용 안 함 단추에 대 한 3 개의 이미지 배열 중 하나)에 그릴 이미지의 인덱스입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -248,14 +248,14 @@ void SetImages(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pImages*  
- 일반 이미지입니다.  
+*pImages*<br/>
+[in] 일반 이미지입니다.  
   
- [in] *pHotImages*  
- 핫 이미지입니다.  
+*pHotImages*<br/>
+[in] 핫 이미지입니다.  
   
- [in] *pDisabledImages*  
- 비활성된 이미지입니다.  
+*pDisabledImages*<br/>
+[in] 비활성된 이미지입니다.  
   
 ### <a name="remarks"></a>설명  
  호출 `SetImages` 단추 그룹에 추가 하기 전에 합니다. 단추 그룹에 추가할 수와 같거나 큰 이미지 수가 이어야 합니다.  
@@ -271,8 +271,8 @@ virtual void SetParentCategory(CMFCRibbonCategory* pCategory);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pCategory*  
- 부모 범주 설정에 대 한 포인터 (리본 컨트롤의 탭된 그룹의 범주 라고도 함).  
+*pCategory*<br/>
+[in] 부모 범주 설정에 대 한 포인터 (리본 컨트롤의 탭된 그룹의 범주 라고도 함).  
   
 ### <a name="remarks"></a>설명  
   

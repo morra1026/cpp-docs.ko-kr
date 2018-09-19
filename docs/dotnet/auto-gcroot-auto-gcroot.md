@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: df9650c5a013d6308869de002919c33a08b2ae04
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bc168596c43c4ea8f26da5157656822b862bdc1e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33105831"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100443"
 ---
 # <a name="autogcrootautogcroot"></a>auto_gcroot::auto_gcroot
 `auto_gcroot` 생성자입니다.  
@@ -46,14 +46,14 @@ auto_gcroot(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `_ptr`  
- 소유 하는 개체입니다.  
+*_ptr*<br/>
+개체 자체입니다.  
   
- `_right`  
- 기존 `auto_gcroot`입니다.  
+*(_r)*<br/>
+기존 `auto_gcroot`입니다.  
   
 ## <a name="remarks"></a>설명  
- 생성할 때는 `auto_gcroot` 기존 `auto_gcroot`, 기존 `auto_gcroot` 를 새 개체의 소유권을 전송 하기 전에 해당 개체를 해제 `auto_gcroot`합니다.  
+ 생성 하는 경우는 `auto_gcroot` 기존 `auto_gcroot`, 기존 `auto_gcroot` 새 개체의 소유권을 전송 하기 전에 해당 개체를 해제 `auto_gcroot`합니다.  
   
 ## <a name="example"></a>예제  
   

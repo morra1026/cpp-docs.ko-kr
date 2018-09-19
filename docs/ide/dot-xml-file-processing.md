@@ -51,9 +51,9 @@ ms.locfileid: "33340517"
   
     -   내장 형식(ELEMENT_TYPE_I4, ELEMENT_TYPE_OBJECT, ELEMENT_TYPE_STRING, ELEMENT_TYPE_TYPEDBYREF, ELEMENT_TYPE_VOID)은 해당하는 전체 형식의 정규화된 이름으로 표시됩니다(예: **System.Int32** 또는 **System.TypedReference**).  
   
-    -   ELEMENT_TYPE_PTR은 수정된 형식 뒤에 '*'로 표시됩니다.  
+    -   ELEMENT_TYPE_PTR은 수정된 형식 뒤에 '\*'로 표시됩니다.  
   
-    -   ELEMENT_TYPE_BYREF는 수정된 형식 뒤에 '@'로 표시됩니다.  
+    -   ELEMENT_TYPE_BYREF는 수정된 형식 뒤에 '\@'로 표시됩니다.  
   
     -   ELEMENT_TYPE_PINNED는 수정된 형식 뒤에 '^'로 표시됩니다. Visual C++ 컴파일러에서는 이 내용이 적용되지 않습니다.  
   

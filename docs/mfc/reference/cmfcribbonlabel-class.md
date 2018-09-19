@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac06722b675af5e8ac8d4136cc2938ac772befc9
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 9c519d4f6d903453ce9fea6965a8f954243bab97
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848585"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703835"
 ---
 # <a name="cmfcribbonlabel-class"></a>CMFCRibbonLabel 클래스
 리본에 대해 클릭할 수 없는 텍스트 레이블을 구현합니다.  
@@ -80,11 +80,11 @@ CMFCRibbonLabel(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszText*  
- 레이블에 표시할 텍스트입니다.  
+*lpszText*<br/>
+[in] 레이블에 표시할 텍스트입니다.  
   
- [in] *bIsMultiLine*  
- TRUE 레이블 여러 줄 레이블을; 임을 지정 하려면 그렇지 않으면 FALSE입니다.  
+*bIsMultiLine*<br/>
+[in] TRUE 레이블 여러 줄 레이블을; 임을 지정 하려면 그렇지 않으면 FALSE입니다.  
   
 ##  <a name="setaccdata"></a>  CMFCRibbonLabel::SetACCData  
  현재 리본 label 요소에 대 한 내게 필요한 옵션 데이터를 결정합니다.  
@@ -96,11 +96,11 @@ virtual BOOL SetACCData(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pParent*  
- 현재 리본 레이블의 부모 창을 나타냅니다.  
+*pParent*<br/>
+[in] 현재 리본 레이블의 부모 창을 나타냅니다.  
   
- [out] *데이터*  
- 형식의 개체 `CAccessibilityData` 현재 리본 레이블의 내게 필요한 옵션 데이터는 채워집니다.  
+*data*<br/>
+[out] 형식의 개체 `CAccessibilityData` 현재 리본 레이블의 내게 필요한 옵션 데이터는 채워집니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 합니다 *데이터* FALSE 매개 변수를 성공적으로 현재 리본 레이블의 내게 필요한 옵션 데이터를 사용 하 여 채워진 고, 그렇지 않으면입니다.  

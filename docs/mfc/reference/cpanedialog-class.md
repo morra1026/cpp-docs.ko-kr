@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc74f89708132b0895c8980538b852c15087b5e6
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 4e987910cf27135858d4fe272bc02da7c90f622f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43682329"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710153"
 ---
 # <a name="cpanedialog-class"></a>CPaneDialog 클래스
 `CPaneDialog` 클래스는 도킹 가능한 모덜리스 대화 상자를 지원 합니다.  
@@ -122,32 +122,32 @@ BOOL Create(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszWindowName*  
- 대화 상자를 도킹의 이름입니다.  
+*lpszWindowName*<br/>
+[in] 대화 상자를 도킹의 이름입니다.  
   
- [in] *pParentWnd*  
- 부모 창을 가리킵니다.  
+*pParentWnd*<br/>
+[in] 부모 창을 가리킵니다.  
   
- [in] *bHasGripper*  
- TRUE (그리퍼); 캡션을 사용 하 여 도킹 대화 상자를 만들려면 그렇지 않으면 FALSE입니다.  
+*bHasGripper*<br/>
+[in] TRUE (그리퍼); 캡션을 사용 하 여 도킹 대화 상자를 만들려면 그렇지 않으면 FALSE입니다.  
   
- [in] *lpszTemplateName*  
- 리소스 대화 상자 템플릿의 이름입니다.  
+*lpszTemplateName*<br/>
+[in] 리소스 대화 상자 템플릿의 이름입니다.  
   
- [in] *nStyle*  
- Windows 스타일입니다.  
+*nStyle*<br/>
+[in] Windows 스타일입니다.  
   
- [in] *nID*  
- 컨트롤 id입니다.  
+*nID*<br/>
+[in] 컨트롤 id입니다.  
   
- [in] *nIDTemplate*  
- 대화 상자 템플릿의 리소스 ID입니다.  
+*nIDTemplate*<br/>
+[in] 대화 상자 템플릿의 리소스 ID입니다.  
   
- [in] *dwTabbedStyle*  
- 스타일 사용자가 컨트롤로 끌어 다른 컨트롤 창이 컨트롤 창의 캡션을 때 발생 하는 탭된 창입니다. 기본값은 AFX_CBRS_REGULAR_TABS 합니다. 자세한 내용은의 설명 섹션을 참조 하십시오.는 [cbasepane:: Createex](../../mfc/reference/cbasepane-class.md#createex) 메서드.  
+*dwTabbedStyle*<br/>
+[in] 스타일 사용자가 컨트롤로 끌어 다른 컨트롤 창이 컨트롤 창의 캡션을 때 발생 하는 탭된 창입니다. 기본값은 AFX_CBRS_REGULAR_TABS 합니다. 자세한 내용은의 설명 섹션을 참조 하십시오.는 [cbasepane:: Createex](../../mfc/reference/cbasepane-class.md#createex) 메서드.  
   
- [in] *dwControlBarStyle*  
- 추가 스타일 특성입니다. 기본값은 AFX_DEFAULT_DOCKING_PANE_STYLE 합니다. 자세한 내용은의 설명 섹션을 참조 하십시오.는 [cbasepane:: Createex](../../mfc/reference/cbasepane-class.md#createex) 메서드.  
+*dwControlBarStyle*<br/>
+[in] 추가 스타일 특성입니다. 기본값은 AFX_DEFAULT_DOCKING_PANE_STYLE 합니다. 자세한 내용은의 설명 섹션을 참조 하십시오.는 [cbasepane:: Createex](../../mfc/reference/cbasepane-class.md#createex) 메서드.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -170,11 +170,11 @@ afx_msg LRESULT HandleInitDialog(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *wParam*  
- 기본 키보드 포커스를 받을 수는 컨트롤에 대 한 핸들입니다.  
+*wParam*<br/>
+[in] 기본 키보드 포커스를 받을 수는 컨트롤에 대 한 핸들입니다.  
   
- [in] *lParam*  
- 추가 초기화 데이터를 지정합니다.  
+*lParam*<br/>
+[in] 추가 초기화 데이터를 지정합니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다. TRUE로 지정 된 컨트롤에 키보드 포커스를 설정 하는 또한 합니다 *wParam* 매개 변수입니다. FALSE 기본 키보드 포커스를 설정 하지 않습니다.  
@@ -190,8 +190,8 @@ virtual BOOL SetOccDialogInfo(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pOccDialogInfo*  
- 대화 상자 개체를 만드는 데 사용 되는 대화 상자 템플릿에 대 한 포인터입니다. 에 전달 된이 매개 변수 값 이후에 합니다 [COccManager::CreateDlgControls](../../mfc/reference/coccmanager-class.md#createdlgcontrols) 메서드.  
+*pOccDialogInfo*<br/>
+[in] 대화 상자 개체를 만드는 데 사용 되는 대화 상자 템플릿에 대 한 포인터입니다. 에 전달 된이 매개 변수 값 이후에 합니다 [COccManager::CreateDlgControls](../../mfc/reference/coccmanager-class.md#createdlgcontrols) 메서드.  
   
 ### <a name="return-value"></a>반환 값  
  항상 TRUE입니다.  

@@ -1,5 +1,5 @@
 ---
-title: index 클래스 | Microsoft Docs
+title: 인덱스 클래스 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 594ee94bbbfc19bc6fcceb9ae7f0760d9ec877dc
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: da6dae3aa76e593a3a98ff25b4d327faf284459e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695339"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097135"
 ---
 # <a name="index-class"></a>index 클래스
 정의 *N*-차원 인덱스 pographics cpp amp.md 합니다.  
@@ -36,8 +36,8 @@ class index;
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `_Rank`  
- 순위, 또는 차원의 수입니다.  
+*_Rank*<br/>
+순위 또는 차원 수입니다.  
   
 ## <a name="members"></a>멤버  
   
@@ -52,27 +52,27 @@ class index;
 |이름|설명|  
 |----------|-----------------|  
 |[operator--](#operator--)|감소의 각 요소는 `index` 개체입니다.|  
-|[operator(mod)=](#operator_mod_eq)|모듈러스 (나머지)의 각 요소에 계산의 `index` 해당 요소는를 숫자로 나눌 때 개체입니다.|  
+|[operator(mod)=](#operator_mod_eq)|각 요소에 모듈러스 (나머지)를 계산 합니다 `index` 해당 요소를 숫자로 나눌 때 개체입니다.|  
 |[operator*=](#operator_star_eq)|각 요소를 곱합니다는 `index` 번호로 개체입니다.|  
-|[operator/=](#operator_div_eq)|분할의 각 요소는 `index` 번호로 개체입니다.|  
+|[operator/=](#operator_div_eq)|각 요소를 나눕니다는 `index` 번호로 개체입니다.|  
 |[index::operator\[\]](#operator_at)|지정된 된 인덱스에 있는 요소를 반환 합니다.|  
-|[operator++](#operator_add_add)|각 요소를 증가 `index` 개체입니다.|  
-|[operator+=](#operator_add_eq)|지정된 된 수의 각 요소에 추가 `index` 개체입니다.|  
-|[operator=](#operator_eq)|지정 된의 내용을 복사 `index` 을 여기에 개체입니다.|  
-|[operator-=](#operator_-_eq)|지정된 된 수의 각 요소에서 뺍니다는 `index` 개체입니다.|  
+|[operator++](#operator_add_add)|각 요소를 증가 시킵니다는 `index` 개체입니다.|  
+|[operator+=](#operator_add_eq)|지정된 된 수의 각 요소에 추가 된 `index` 개체입니다.|  
+|[operator=](#operator_eq)|지정 된 내용을 복사 `index` 을 여기에 개체입니다.|  
+|[operator-=](#operator_-_eq)|각 요소에서 지정한 수를 뺍니다는 `index` 개체입니다.|  
 
   
 ### <a name="public-constants"></a>공용 상수  
   
 |이름|설명|  
 |----------|-----------------|  
-|[rank 상수](#rank)|차수를 저장 된 `index` 개체입니다.|  
+|[rank 상수](#rank)|차수를 저장 합니다 `index` 개체입니다.|  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  `index`  
   
 ## <a name="remarks"></a>설명  
- `index` 구조의 좌표 벡터를 나타냅니다. *N* 에서 고유한 위치를 지정 하는 정수는 *N*-차원 공간입니다. 벡터의 값은 가장 덜 중요 한에 가장 중요 한에서 정렬 됩니다. 사용 하 여 구성 요소 값을 검색할 수 있습니다 [연산자 =](#operator_eq)합니다.  
+ 합니다 `index` 구조체의 좌표 벡터를 나타냅니다 *N* 에서 고유 위치를 지정 하는 정수를 *N*-차원 공간입니다. 벡터의 값은 최하위에서 최하위 순서로 정렬 합니다. 사용 하 여 구성 요소 값을 검색할 수 있습니다 [연산자 =](#operator_eq)합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** amp.h  
@@ -81,7 +81,7 @@ class index;
 
 
 ## <a name="index_ctor"></a> 인덱스 생성자
-Index 클래스의 새 인스턴스를 초기화합니다.
+인덱스 클래스의 새 인스턴스를 초기화합니다.
 
 ```  
 index() restrict(amp,cpu);
@@ -113,20 +113,20 @@ explicit index(
 ### <a name="parameters"></a>매개 변수
 
 _Array  
-순위 값이 포함 된 1 차원 배열입니다.  
+Rank 값이 있는 1 차원 배열입니다.  
 _I  
 1 차원 인덱스의 인덱스 위치입니다.  
 _I0  
-가장 중요 한 차원 길이 지정 합니다.  
+최대 유효 치수의 길이입니다.  
 _I1  
-다음-에-가장 중요 한 차원 길이 지정 합니다.  
+다음-에-가장 중요 한 차원의 길이입니다.  
 _I2  
-가장 덜 중요 한 차원 길이 지정 합니다.  
+최소 유효 치수의 길이입니다.  
 _Other  
 새 인덱스 개체의 기반이 되는 인덱스 개체입니다.  
 
 ## <a name="operator--"></a>  operator--
-감소 index 개체의 각 요소입니다.  
+감소 인덱스 개체의 각 요소입니다.  
 ```  
 index<_Rank>& operator--() restrict(amp,cpu);  
 
@@ -135,10 +135,10 @@ index operator--(
 ) restrict(amp,cpu);
 ```  
 ### <a name="return-values"></a>반환 값
-Index 개체 전위 연산자에 대 한 (*이). 접미사 연산자는 새 인덱스 개체입니다.
+전위 연산자의 경우 인덱스 개체에 대 한 (*이). 접미사 연산자의 경우 새 인덱스 개체입니다.
 
 ## <a name="operator_mod_eq"></a>  operator(mod)=   
-해당 요소가 지정된 된 수로 나누어 때 index 개체에 있는 각 요소의 모듈러스 (나머지)를 계산 합니다.
+요소에 지정 된 숫자로 나눌 때 인덱스 개체의 각 요소 모듈러스 (나머지)를 계산 합니다.
 
 ```  
 index<_Rank>& operator%=(
@@ -150,7 +150,7 @@ _Rhs를 모듈러스를 찾기 위해 나눌 숫자입니다.
 Index 개체 값을 반환 합니다.
 
 ## <a name="operator_star_eq"></a>  operator*=   
-지정 된 수 index 개체의 각 요소를 곱합니다.
+지정된 된 수 만큼 인덱스 개체의 각 요소를 곱합니다.
 ```
 index<_Rank>& operator*=(
    int _Rhs
@@ -158,7 +158,7 @@ index<_Rank>& operator*=(
 ```
 
 ### <a name="parameters"></a>매개 변수
-_Rhs 곱할 수입니다.
+_Rhs 곱할 숫자입니다.
 
 ## <a name="operator_div_eq"></a>  operator/= 
 지정된 된 숫자 인덱스 개체의 각 요소를 나눕니다.
@@ -169,7 +169,7 @@ index<_Rank>& operator/=(
 ) restrict(amp,cpu);
 ``` 
 ### <a name="parameters"></a>매개 변수
-_Rhs 숫자를 나눕니다.
+_Rhs를 나눌 숫자입니다.
 
 ## <a name="operator_at"></a>  operator\[\]  
 지정 된 위치의 인덱스의 구성 요소를 반환 합니다.
@@ -185,13 +185,13 @@ int& operator[] (
 ```
 
 ### <a name="parameters"></a>매개 변수
-_Index 0에서 1 뺀 값 순위 까지의 정수입니다.
+_Index 0부터 순위에서 1 뺀 값 까지의 정수입니다.
 
 ### <a name="return-value"></a>반환 값
-지정 된 인덱스에 있는 요소입니다.
+지정된 된 인덱스에 있는 요소입니다.
 
 ### <a name="remarks"></a>설명
-다음 예제에서는이 인덱스의 구성 요소 값을 표시합니다.
+다음 예에서는 인덱스의 구성 요소 값을 표시합니다.
 ```  
 // Prints 1 2 3.
 concurrency::index<3> idx(1, 2, 3);
@@ -210,7 +210,7 @@ index<_Rank> operator++(
 ) restrict(amp,cpu);
 ```  
 ### <a name="return-value"></a>반환 값
-Index 개체 전위 연산자에 대 한 (*이). 접미사 연산자는 새 인덱스 개체입니다.
+전위 연산자의 경우 인덱스 개체에 대 한 (*이). 접미사 연산자의 경우 새 인덱스 개체입니다.
 
 ## <a name="operator_add_eq"></a>  operator+=   
 Index 개체의 각 요소에 지정된 된 숫자를 추가합니다.
@@ -224,7 +224,7 @@ index<_Rank>& operator+=(
 ) restrict(amp,cpu);
 ``` 
 ### <a name="parameters"></a>매개 변수
-_Rhs 추가할 수 있습니다.
+_Rhs 더할 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
 인덱스 개체입니다.
@@ -237,7 +237,7 @@ index<_Rank>& operator=(
 ) restrict(amp,cpu);
 ``` 
 ### <a name="parameters"></a>매개 변수
-_Other에서 복사할 인덱스 개체입니다.
+_Other 복사할 인덱스 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 이 인덱스 개체에 대 한 참조입니다.
@@ -254,7 +254,7 @@ index<_Rank>& operator-=(
 ) restrict(amp,cpu);
 ```  
 ### <a name="parameters"></a>매개 변수
-_Rhs 뺄 수 있습니다.
+_Rhs 뺄 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
 인덱스 개체입니다.   

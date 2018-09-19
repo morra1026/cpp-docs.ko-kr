@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e951c1007ccdd0885e19a6ef3b483128fcfc2a92
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5a85e638edc5710c8db13b324d58a5485df31819
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33194907"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053078"
 ---
 # <a name="compiler-error-c2420"></a>컴파일러 오류 C2420
-'identifier': 컨텍스트의 기호가 잘못되었습니다.  
-  
- 이 식별자는 이 컨텍스트에서 사용할 수 없습니다.
+
+'identifier': 컨텍스트의 기호가 잘못되었습니다.
+
+이 식별자는 이 컨텍스트에서 사용할 수 없습니다.

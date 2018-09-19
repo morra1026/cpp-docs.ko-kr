@@ -18,14 +18,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a98f1e84f3ef09d3cef5d45028374b93887fc6d4
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 3702dcafbc93e34852d5d8fd4a0f1d3c222ea1a6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42538751"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706955"
 ---
 # <a name="rdtscp"></a>__rdtscp
+
 **Microsoft 전용**  
   
  생성 합니다 `rdtscp` 명령 기록 `TSC_AUX[31:0`] 메모리를 64 비트 타임 스탬프 카운터 반환 (`TSC)` 결과입니다.  
@@ -39,8 +40,8 @@ unsigned __int64 __rdtscp(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [out] `Aux`  
- 컴퓨터의 특정 레지스터의 내용을 포함 하는 위치에 대 한 포인터 `TSC_AUX[31:0]`합니다.  
+*Aux*<br/>
+[out] 컴퓨터의 특정 레지스터의 내용을 포함 하는 위치에 대 한 포인터 `TSC_AUX[31:0]`합니다.  
   
 ## <a name="return-value"></a>반환 값  
  64 비트 부호 없는 정수 틱 수입니다.  
@@ -63,7 +64,7 @@ unsigned __int64 __rdtscp(
   
  값의 의미를 `TSC_AUX[31:0]` 운영 체제에 따라 달라 집니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 #include <intrin.h>   
@@ -84,7 +85,8 @@ TSC_AUX was 0
 ```  
   
 **Microsoft 전용 종료**  
- 고급 마이크로 장치, inc 저작권 2007 All rights reserved. 고급 마이크로 장치, Inc. 사용 권한을 사용 하 여 재현  
+
+고급 마이크로 장치, inc 저작권 2007 All rights reserved. 고급 마이크로 장치, Inc. 사용 권한을 사용 하 여 재현  
   
 ## <a name="see-also"></a>참고 항목  
  [__rdtsc](../intrinsics/rdtsc.md)   

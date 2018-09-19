@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 985289041f1461ef9486a55fedd9816c1ebb3f35
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 5650707f9c08c144d2f5832744117dfdd06acc08
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752565"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106911"
 ---
 # <a name="window-class-macros"></a>창 클래스 매크로
 
@@ -29,8 +29,8 @@ ms.locfileid: "43752565"
 
 |||
 |-|-|
-|[DECLARE_WND_CLASS](#declare_wnd_class)|새 창 클래스의 이름을 지정할 수 있습니다.| 
-|[DECLARE_WND_CLASS2](#declare_wnd_class2)|(Visual Studio 2017) 새 창 클래스와 새 클래스를 사용 하 여 창 프로시저는 바깥쪽 클래스의 이름을 지정할 수 있습니다.| 
+|[DECLARE_WND_CLASS](#declare_wnd_class)|새 창 클래스의 이름을 지정할 수 있습니다.|
+|[DECLARE_WND_CLASS2](#declare_wnd_class2)|(Visual Studio 2017) 새 창 클래스와 새 클래스를 사용 하 여 창 프로시저는 바깥쪽 클래스의 이름을 지정할 수 있습니다.|
 |[DECLARE_WND_SUPERCLASS](#declare_wnd_superclass)|새 창 클래스를 기반으로 하는 기존 창 클래스의 이름을 지정할 수 있습니다.|
 |[DECLARE_WND_CLASS_EX](#declare_wnd_class_ex)|클래스의 매개 변수를 지정할 수 있습니다.|  
 
@@ -48,7 +48,7 @@ DECLARE_WND_CLASS( WndClassName )
 
 ### <a name="parameters"></a>매개 변수
 
-*WndClassName*  
+*WndClassName*<br/>
 [in] 새 창 클래스의 이름입니다. NULL 인 경우 ATL 창 클래스 이름이 생성 됩니다.
 
 ### <a name="remarks"></a>설명
@@ -83,10 +83,10 @@ DECLARE_WND_CLASS2( WndClassName, EnclosingClass )
 
 ### <a name="parameters"></a>매개 변수
 
-*WndClassName*  
+*WndClassName*<br/>
 [in] 새 창 클래스의 이름입니다. NULL 인 경우 ATL 창 클래스 이름이 생성 됩니다. 
 
-*EnclosingClass*  
+*EnclosingClass*<br/>
 [in] 새 창 클래스를 포함 하는 창 클래스의 이름입니다. NULL일 수 없습니다.
 
 ### <a name="remarks"></a>설명
@@ -104,10 +104,10 @@ DECLARE_WND_SUPERCLASS( WndClassName, OrigWndClassName )
 
 ### <a name="parameters"></a>매개 변수
 
-*WndClassName*  
+*WndClassName*<br/>
 [in] 창의 이름을 해당는 슈퍼 클래스 *OrigWndClassName*합니다. NULL 인 경우 ATL 창 클래스 이름이 생성 됩니다.
 
-*OrigWndClassName*  
+*OrigWndClassName*<br/>
 [in] 기존 창 클래스의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -134,13 +134,13 @@ DECLARE_WND_CLASS_EX( WndClassName, style, bkgnd )
 
 ### <a name="parameters"></a>매개 변수
 
-*WndClassName*  
+*WndClassName*<br/>
 [in] 새 창 클래스의 이름입니다. NULL 인 경우 ATL 창 클래스 이름이 생성 됩니다.
 
-*style*  
+*style*<br/>
 [in] 창 스타일입니다.
 
-*배경*  
+*배경*<br/>
 [in] 창의 배경색입니다.
 
 ### <a name="remarks"></a>설명

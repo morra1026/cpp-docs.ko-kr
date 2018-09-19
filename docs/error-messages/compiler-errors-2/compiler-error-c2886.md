@@ -16,37 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1472c475a89fc219f8fe94fdbc69ae7c8a176f24
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 271ee8341cb5faa033d3fb5ec3238f36975c3531
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243465"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023581"
 ---
 # <a name="compiler-error-c2886"></a>컴파일러 오류 C2886
-'class::identifier': 멤버 using 선언에서 기호를 사용할 수 없습니다  
-  
- A `using` 선언에는 네임 스페이스 이름이 같은 기호를 사용 합니다. A `using` 선언이 기본 클래스 멤버를 선언 합니다.  
-  
- 다음 샘플에서는 C2886 오류가 생성 됩니다.  
-  
-```  
-// C2886.cpp  
-// compile with: /c  
-namespace Z {  
-    int i;  
-}  
-  
-class B {  
-protected:  
-    int i;  
-};  
-  
-class D : public B {  
-    // Error: Z is a namespace  
-    using Z::i;   // C2886  
-  
-    // OK: B is a base class  
-    using B::i;  
-};  
+
+'class::identifier': 멤버 using 선언에서 기호를 사용할 수 없습니다
+
+`using` 선언 네임 스페이스 이름과 같은 기호를 사용 합니다. `using` 선언이 기본 클래스 멤버를 선언 합니다.
+
+다음 샘플에서는 C2886 오류가 생성 됩니다.
+
+```
+// C2886.cpp
+// compile with: /c
+namespace Z {
+    int i;
+}
+
+class B {
+protected:
+    int i;
+};
+
+class D : public B {
+    // Error: Z is a namespace
+    using Z::i;   // C2886
+
+    // OK: B is a base class
+    using B::i;
+};
 ```

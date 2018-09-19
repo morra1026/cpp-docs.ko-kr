@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d4ed57c980813c8539fbffed0e41a35048c0571
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 27ffd33a0a80056ee57f5f088823d7f8f6549c24
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319620"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135768"
 ---
 # <a name="nmake-fatal-error-u1100"></a>NMAKE 심각한 오류 U1100
-매크로 '매크로 이름' 'rule' 일괄 처리 규칙의 컨텍스트에서 올바르지 않습니다.  
-  
- NMAKE는 배치 모드 규칙의 명령 블록이 $<가 아닌 특수한 파일 매크로를 직접적 또는 간접적으로 참조할 때 이 오류를 생성합니다.  
-  
- 배치 모드 규칙에는 $< 매크로만 사용할 수 있습니다.
+
+매크로 '매크로 이름' 'rule' 일괄 처리 규칙의 컨텍스트에서 올바르지 않습니다.
+
+NMAKE는 배치 모드 규칙의 명령 블록이 $<가 아닌 특수한 파일 매크로를 직접적 또는 간접적으로 참조할 때 이 오류를 생성합니다.
+
+배치 모드 규칙에는 $< 매크로만 사용할 수 있습니다.

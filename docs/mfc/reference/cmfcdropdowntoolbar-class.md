@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b227f9d2fdd43b576f89b74f43e4cdce8476bf9
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 23ca73629208e0ac80f7c516f8249e83ae0d41a6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43692385"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719240"
 ---
 # <a name="cmfcdropdowntoolbar-class"></a>CMFCDropDownToolBar 클래스
 사용자가 최상위 도구 모음 단추를 누르고 있을 때 나타나는 도구 모음입니다.  
@@ -133,23 +133,23 @@ virtual BOOL LoadBitmap(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiResID*  
- 핫 도구 모음 이미지를 참조하는 비트맵의 리소스 ID입니다.  
+*uiResID*<br/>
+[in] 핫 도구 모음 이미지를 참조 하는 비트맵의 리소스 ID입니다.  
   
- [in] *uiColdResID*  
- 콜드 도구 모음 이미지를 참조하는 비트맵의 리소스 ID입니다.  
+*uiColdResID*<br/>
+[in] 콜드 도구 모음 이미지를 참조 하는 비트맵의 리소스 ID입니다.  
   
- [in] *uiMenuResID*  
- 일반 메뉴 이미지를 참조하는 비트맵의 리소스 ID입니다.  
+*uiMenuResID*<br/>
+[in] 일반 메뉴 이미지를 참조 하는 비트맵의 리소스 ID입니다.  
   
- [in] *차단*  
- 도구 모음을 잠그려면 그렇지 않으면 FALSE입니다.  
+*차단*<br/>
+[in] 도구 모음을 잠그려면 그렇지 않으면 FALSE입니다.  
   
- [in] *uiDisabledResID*  
- 비활성화된 도구 모음 이미지를 참조하는 비트맵의 리소스 ID입니다.  
+*uiDisabledResID*<br/>
+[in] 비활성화 된 도구 모음 이미지를 참조 하는 비트맵의 리소스 ID입니다.  
   
- [in] *uiMenuDisabledResID*  
- 비활성화된 메뉴 이미지를 참조하는 비트맵의 리소스 ID입니다.  
+*uiMenuDisabledResID*<br/>
+[in] 비활성화 된 메뉴 이미지를 참조 하는 비트맵의 리소스 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공하면 0이 아니고, 실패하면 0입니다.  
@@ -174,12 +174,12 @@ virtual BOOL LoadToolBar(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiResID*  
- [in] *uiColdResID*  
- [in] *uiMenuResID*  
- [in] *BOOL*  
- [in] *uiDisabledResID*  
- [in] *uiMenuDisabledResID*  
+*uiResID*<br/>
+[in] [in] *uiColdResID*  
+*uiMenuResID*<br/>
+[in] [in] *BOOL*  
+*uiDisabledResID*<br/>
+[in] [in] *uiMenuDisabledResID*  
  [in] *uiHotResID*  
   
 ### <a name="return-value"></a>반환 값  
@@ -196,8 +196,8 @@ afx_msg void OnLButtonUp(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nFlags*  
- [in] *지점*  
+*nFlags*<br/>
+[in] [in] *지점*  
   
 ### <a name="remarks"></a>설명  
   
@@ -211,8 +211,8 @@ afx_msg void OnMouseMove(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nFlags*  
- [in] *지점*  
+*nFlags*<br/>
+[in] [in] *지점*  
   
 ### <a name="remarks"></a>설명  
   
@@ -240,8 +240,8 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pTarget*  
- [in] *bDisableIfNoHndler*  
+*pTarget*<br/>
+[in] [in] *bDisableIfNoHndler*  
   
 ### <a name="remarks"></a>설명  
   

@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 545f38058871d81196150e127c1814b304b6ab56
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1c0261964f2e9c33f8a594a83e1b19c1db7be614
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767857"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069237"
 ---
 # <a name="iworkerthreadclient-interface"></a>IWorkerThreadClient 인터페이스
 
@@ -66,7 +66,7 @@ HRESULT CloseHandle(HANDLE  hHandle);
 
 ### <a name="parameters"></a>매개 변수
 
-*hHandle*  
+*hHandle*<br/>
 핸들을 닫아야입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -93,10 +93,10 @@ HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwParam*  
+*dwParam*<br/>
 사용자 매개 변수입니다.
 
-*hObject*  
+*hObject*<br/>
 신호에 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -115,5 +115,5 @@ HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스](../../atl/reference/atl-classes.md)   
+[클래스](../../atl/reference/atl-classes.md)<br/>
 [CWorkerThread 클래스](../../atl/reference/cworkerthread-class.md)

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1dbb5032e49c0522fed1127a68cc27fe9135f777
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5526ba4578895f401ddc2fb177539bc025ca364f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33327829"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063257"
 ---
 # <a name="nmake-warning-u4006"></a>NMAKE 경고 U4006
-특별 한 매크로가 정의 되지 않았습니다: '매크로 이름'  
-  
- 지정한 특수 매크로 이름이 정의 되지 않으며 확장 되지 않습니다.
+
+특수 매크로가 정의 되지 않았습니다. '매크로 이름'
+
+지정 된 특수 매크로 이름이 정의 되지 않으며 확장 되지 않습니다.

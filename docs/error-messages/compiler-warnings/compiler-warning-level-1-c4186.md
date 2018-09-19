@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc40d2b9f43d041c7b04ba2bc77a0aba0630274c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0bfc722a07d2ddb10e5be8c6d8fde60956b297c8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33277594"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46079780"
 ---
 # <a name="compiler-warning-level-1-c4186"></a>컴파일러 경고(수준 1) C4186
-\#import 특성 'u t e'에 count 인수가; 필요 합니다. 무시  
-  
- `#import` 특성의 인수 개수가 잘못되었습니다.  
-  
-## <a name="example"></a>예제  
-  
-```  
-// C4186.cpp  
-// compile with: /W1 /c  
-#import "stdole2.tlb" no_namespace("abc") rename("a","b","c")  // C4186  
-```  
-  
- `no_namespace` 특성은 인수를 사용하지 않습니다. **rename** 특성은 두 개의 인수만 사용합니다.
+
+\#가져오기 ' attribute '특성에 count 인수가; 필요 무시
+
+`#import` 특성의 인수 개수가 잘못되었습니다.
+
+## <a name="example"></a>예제
+
+```
+// C4186.cpp
+// compile with: /W1 /c
+#import "stdole2.tlb" no_namespace("abc") rename("a","b","c")  // C4186
+```
+
+`no_namespace` 특성은 인수를 사용하지 않습니다. **rename** 특성은 두 개의 인수만 사용합니다.

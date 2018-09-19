@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 44172ffdf7985b7ab304e232eb03b859313df6bc
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: a1e28b9c28823e77244bc6e686db163e5110a8fa
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853766"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719968"
 ---
 # <a name="cmfccmdusagecount-class"></a>CMFCCmdUsageCount 클래스
 사용자가 메뉴에서 항목을 선택 하는 경우 같은 Windows 메시지를 사용 횟수를 추적 합니다.  
@@ -73,7 +73,7 @@ class CMFCCmdUsageCount : public CObject
   
 |||  
 |-|-|  
-|name|설명|  
+|이름|설명|  
 |`m_CmdUsage`|`CMap` 명령을 해당 사용 횟수에 매핑되는 개체입니다.|  
 |`m_nMinUsagePercentage`|자주 사용할 명령에 대 한 최소 사용량 백분율입니다.|  
 |`m_nStartCount`|이 개체는 최소한의 추적 데이터를 수집할지 여부를 결정 하는 데 사용 되는 시작 카운터입니다.|  
@@ -104,7 +104,7 @@ void AddCmd(UINT uiCmd);
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *uiCmd*|증가 시킬 명령은 카운터를 지정 합니다.|  
+|*uiCmd*|[in] 증가 시킬 명령은 카운터를 지정 합니다.|  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 명령 개수 맵 구조에 새 항목 추가 `m_CmdUsage`이면 항목이 이미 존재 하지 않습니다.  
@@ -129,7 +129,7 @@ UINT GetCount(UINT uiCmd) const;
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *uiCmd*|검색할 명령 카운터의 ID입니다.|  
+|*uiCmd*|[in] 검색할 명령 카운터의 ID입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  지정 된 명령 ID와 연결 된 사용 횟수  
@@ -161,7 +161,7 @@ BOOL IsFreqeuntlyUsedCmd(UINT uiCmd) const;
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *uiCmd*|확인 하는 명령을 지정 합니다.|  
+|*uiCmd*|[in] 확인 하는 명령을 지정 합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  0이 아닌 명령 자주 사용 됩니다. 그렇지 않으면 0입니다.  
@@ -193,7 +193,7 @@ virtual void Serialize(CArchive& ar);
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *ar*|`CArchive` 에서 serialize 할 개체입니다.|  
+|*ar*|[in] `CArchive` 에서 serialize 할 개체입니다.|  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 명령 개수 맵 구조를 serialize `m_CmdUsage`, 및 총 명령 사용법을 `m_nTotalUsage`, 카운터 또는 지정 된 보관 파일에.  
@@ -214,8 +214,8 @@ static BOOL __stdcall SetOptions(
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *nStartCount*|모든 추적 된 명령 새 초기 수입니다.|  
-|[in] *nMinUsagePercentage*|새 최소 사용량 백분율입니다.|  
+|*nStartCount*|[in] 모든 추적 된 명령 새 초기 수입니다.|  
+|*nMinUsagePercentage*|[in] 새 최소 사용량 백분율입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 FALSE 경우 TRUE를 *nMinUsagePercentage* 매개 변수는 100 보다 크거나 같은 경우입니다.  

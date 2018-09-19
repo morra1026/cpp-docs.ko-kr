@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cd9658a97f1f62a2a5a262e7262127744dd144a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a455daffba3957b9a4628ecab9e604994e4a4ce2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319737"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027091"
 ---
 # <a name="resource-compiler-fatal-error-rc1019"></a>리소스 컴파일러 심각한 오류 RC1019
-예기치 않은 ' #else '  
-  
- `#else` 지시문 내에서 표시 되지 않았습니다는 `#if`, **#ifdef**, 또는 **#ifndef** 생성 합니다.  
-  
- 가 있는지 확인 한 `#if`, **#ifdef**, 또는 **#ifndef** 문을이 문 앞에 적용 합니다.
+
+예기치 않은 ' #else '
+
+합니다 `#else` 지시문 내에서 표시 되지 않은 `#if`를 **#ifdef**, 또는 **#ifndef** 생성 합니다.
+
+있는지 확인 하십시오는 `#if`, **#ifdef**, 또는 **#ifndef** 문을이 문 앞에 적용 합니다.

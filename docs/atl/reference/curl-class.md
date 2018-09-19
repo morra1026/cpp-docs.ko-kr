@@ -45,12 +45,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02453ae14ab6e8cd4a75a9f2d8725ce69e2b7f02
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: f0ab7906961936239ac564137d0760e6d64de9de
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895294"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068223"
 ---
 # <a name="curl-class"></a>CUrl 클래스
 
@@ -154,7 +154,7 @@ inline BOOL Canonicalize(DWORD dwFlags = 0) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dwFlags*  
+*dwFlags*<br/>
 정규화를 제어 하는 플래그입니다. 플래그가 없으므로 지정 된 경우 (*dwFlags* = 0), 메서드가 변환 하는 모든 안전 하지 않은 문자 및 메타 순서 (같은 \\., \..., 및 \\...) 이스케이프 시퀀스입니다. *dwFlags* 다음 값 중 하나일 수 있습니다.
 
 - ATL_URL_BROWSER_MODE: 인코딩 하지 않거나 "#" 뒤에 문자를 디코딩할 또는 "" 후 후행 공백을 제거 하지 않는 ""입니다. 이 값을 지정 하지 않으면 전체 URL 인코딩 되 고 후행 공백이 제거 됩니다.
@@ -195,10 +195,10 @@ BOOL CrackUrl(LPCTSTR lpszUrl, DWORD dwFlags = 0) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszUrl*  
+*lpszUrl*<br/>
 URL입니다.
 
-*dwFlags*  
+*dwFlags*<br/>
 모든 이스케이프 문자를 변환할 ATL_URL_DECODE 또는 ATL_URL_ESCAPE 지정할 *lpszUrl* 구문 분석 한 후 실제 값으로. (Visual c + + 2005 전의 ATL_URL_DECODE 변환 모든 이스케이프 문자 구문 분석 하기 전에.)
 
 ### <a name="return-value"></a>반환 값
@@ -218,13 +218,13 @@ inline BOOL CreateUrl(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszUrl*  
+*lpszUrl*<br/>
 전체 URL 문자열을 저장할 문자열 버퍼입니다.
 
-*pdwMaxLength*  
+*pdwMaxLength*<br/>
 최대 길이 *lpszUrl* 문자열 버퍼입니다.
 
-*dwFlags*  
+*dwFlags*<br/>
 모든 이스케이프 문자를 변환할 ATL_URL_ESCAPE 지정할 *lpszUrl* 실제 값으로.
 
 ### <a name="return-value"></a>반환 값
@@ -256,7 +256,7 @@ CUrl(const CUrl& urlThat) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*url에*  
+*url에*<br/>
 `CUrl` URL을 만드는 데 복사할 개체입니다.
 
 ##  <a name="dtor"></a>  CUrl:: ~ CUrl
@@ -457,7 +457,7 @@ CUrl& operator= (const CUrl& urlThat) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*url에*  
+*url에*<br/>
 `CUrl` 개체를 현재 개체에 복사 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -474,7 +474,7 @@ inline BOOL SetExtraInfo(LPCTSTR lpszInfo) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszInfo*  
+*lpszInfo*<br/>
 URL에 포함 하려면 추가 정보가 포함 된 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -491,7 +491,7 @@ inline BOOL SetHostName(LPCTSTR lpszHost) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszHost*  
+*lpszHost*<br/>
 호스트 이름입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -508,7 +508,7 @@ inline BOOL SetPassword(LPCTSTR lpszPass) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszPass*  
+*lpszPass*<br/>
 암호입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -525,7 +525,7 @@ inline BOOL SetPortNumber(ATL_URL_PORT nPrt) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nPrt*  
+*nPrt*<br/>
 포트 번호입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -542,7 +542,7 @@ inline BOOL SetScheme(ATL_URL_SCHEME nScheme) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nScheme*  
+*nScheme*<br/>
 중 하나는 [ATL_URL_SCHEME](atl-url-scheme-enum.md) 구성표에 대 한 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -563,7 +563,7 @@ inline BOOL SetSchemeName(LPCTSTR lpszSchm) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszSchm*  
+*lpszSchm*<br/>
 URL 구성표 이름입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -584,7 +584,7 @@ inline BOOL SetUrlPath(LPCTSTR lpszPath) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszPath*  
+*lpszPath*<br/>
 URL 경로입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -601,7 +601,7 @@ inline BOOL SetUserName(LPCTSTR lpszUser) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszUser*  
+*lpszUser*<br/>
 사용자 이름입니다.
 
 ### <a name="return-value"></a>반환 값

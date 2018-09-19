@@ -12,15 +12,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39c5aa2bd844a70848583ef8304cdb2fd57befc6
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 9c121a2e15f7020db141dc64e9a3dc9735149c65
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42571994"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704966"
 ---
 # <a name="dynamic-parameter-stack-area-construction"></a>동적 매개 변수 스택 영역 생성
-프레임 포인터를 사용 하는 경우 매개 변수 스택 영역을 동적으로 생성 하는 옵션도가 있습니다. 이렇게 하지 않으면 현재 x64에서 컴파일러.  
-  
-## <a name="see-also"></a>참고 항목  
- [스택 사용](../build/stack-usage.md)
+
+프레임 포인터를 사용 하는 경우 매개 변수 스택 영역을 동적으로 생성 하는 옵션도가 있습니다. 이렇게 하지 않으면 현재 x64에서 컴파일러.
+
+## <a name="see-also"></a>참고 항목
+
+[스택 사용](../build/stack-usage.md)

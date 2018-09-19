@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d8741763295e96f3d0c221b687c8ef62fbfc55c
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 125d08def4a1fb801cb1b6c911d8c8c9c154c296
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695943"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037976"
 ---
 # <a name="cancellationtoken-class"></a>cancellation_token 클래스
 `cancellation_token` 클래스는 일부 작업을 취소하도록 요청되었는지 여부를 확인하는 기능을 나타냅니다. 지정된 토큰을 `task_group`, `structured_task_group` 또는 `task`와 연결하여 암시적 취소를 제공할 수 있습니다. 연결된 `cancellation_token_source`가 취소된 경우 취소를 폴링하거나 콜백을 등록할 수도 있습니다.  
@@ -89,7 +89,8 @@ cancellation_token(cancellation_token&& _Src);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Src`  
+*_Src*<br/>
+복사 또는 이동할 cancellation_token 합니다.
   
 ##  <a name="deregister_callback"></a> deregister_callback 
 
@@ -100,8 +101,8 @@ void deregister_callback(const cancellation_token_registration& _Registration) c
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Registration`  
- `cancellation_token_registration` 개체는 등록을 취소할 콜백에 해당합니다. `register` 메서드에 대한 호출에서 이 토큰이 이전에 반환됐어야 합니다.  
+*_Registration*<br/>
+`cancellation_token_registration` 개체는 등록을 취소할 콜백에 해당합니다. `register` 메서드에 대한 호출에서 이 토큰이 이전에 반환됐어야 합니다.  
   
 ##  <a name="is_cancelable"></a> is_cancelable 
 
@@ -143,8 +144,9 @@ bool operator!= (const cancellation_token& _Src) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Src`  
-  
+*_Src*<br/>
+비교할 `cancellation_token`입니다.
+
 ### <a name="return-value"></a>반환 값  
   
 ##  <a name="operator_eq"></a> 연산자 = 
@@ -156,7 +158,8 @@ cancellation_token& operator= (cancellation_token&& _Src);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Src`  
+*_Src*<br/>
+`cancellation_token` 할당 합니다.
   
 ### <a name="return-value"></a>반환 값  
   
@@ -167,7 +170,8 @@ bool operator== (const cancellation_token& _Src) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Src`  
+*_Src*<br/>
+비교할 `cancellation_token`입니다.
   
 ### <a name="return-value"></a>반환 값  
   
@@ -181,14 +185,14 @@ template<typename _Function>
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Function`  
- 이 `cancellation_token`이 취소될 때 콜백되는 함수 개체의 형식입니다.  
+*_Function*<br/>
+이 `cancellation_token`이 취소될 때 콜백되는 함수 개체의 형식입니다.  
   
- `_Func`  
- 이 `cancellation_token`이 취소되었을 때 콜백되는 함수 개체입니다.  
+*_Func*<br/>
+이 `cancellation_token`이 취소되었을 때 콜백되는 함수 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 이전에 등록된 콜백의 등록을 해제하고 콜백이 이루어지지 않도록 하기 위해 `cancellation_token_registration` 메서드에서 이용할 수 있는 `deregister` 개체입니다. 합니다는 [invalid_operation](invalid-operation-class.md) 예외에서 호출 되는 `cancellation_token` 사용 하 여 만든 개체는 [cancellation_token:: none](#none) 메서드.  
+ 이전에 등록된 콜백의 등록을 해제하고 콜백이 이루어지지 않도록 하기 위해 `cancellation_token_registration` 메서드에서 이용할 수 있는 `deregister` 개체입니다. 메서드에 throw 합니다는 [invalid_operation](invalid-operation-class.md) 에서 호출 되 면 예외를 `cancellation_token` 사용 하 여 만든 개체를 [cancellation_token:: none](#none) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [concurrency 네임스페이스](concurrency-namespace.md)

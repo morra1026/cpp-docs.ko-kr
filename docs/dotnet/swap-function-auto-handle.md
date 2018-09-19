@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: c616a391db07a9c6116c96c1b0242714a0ad958b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 66416bf19a154a5ea1f4a52728f97bbfbd3477f8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33163961"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103238"
 ---
 # <a name="swap-function-autohandle"></a>swap 함수(auto_handle)
 개체 하나를 바꿉니다 `auto_handle` 또 다른 합니다.  
@@ -39,11 +39,11 @@ void swap(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `_left`  
- `auto_handle`입니다.  
+*_ 왼쪽*<br/>
+`auto_handle`입니다.  
   
- `_right`  
- 다른 `auto_handle`합니다.  
+*(_r)*<br/>
+다른 `auto_handle`합니다.  
   
 ## <a name="example"></a>예제  
   

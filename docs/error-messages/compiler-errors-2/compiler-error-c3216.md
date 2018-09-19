@@ -16,40 +16,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19091b0e200bb44ca6c1ec7c9a8ee359a95fad1e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4eb1fb93335dc6fb61e8e73ea11cfc91c6b461b8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247650"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043692"
 ---
 # <a name="compiler-error-c3216"></a>컴파일러 오류 C3216
-제약 조건은 'type'이 아니라 제네릭 매개 변수여야 합니다.  
-  
- 제약 조건 형식이 잘못되었습니다.  
-  
- 다음 샘플에서는 C3216을 생성합니다.  
-  
-```  
-// C3216.cpp  
-// compile with: /clr  
-interface struct A {};  
-  
-generic <class T>  
-where F : A   // C3216  
-// Try the following line instead:  
-// where T : A    // C3216  
-ref class C {};  
-```  
-  
- 다음 예제에서는 가능한 해결 방법을 설명합니다.  
-  
-```  
-// C3216b.cpp  
-// compile with: /clr /c  
-interface struct A {};  
-  
-generic <class T>  
-where T : A  
-ref class C {};  
+
+제약 조건은 'type'이 아니라 제네릭 매개 변수여야 합니다.
+
+제약 조건 형식이 잘못되었습니다.
+
+다음 샘플에서는 C3216을 생성합니다.
+
+```
+// C3216.cpp
+// compile with: /clr
+interface struct A {};
+
+generic <class T>
+where F : A   // C3216
+// Try the following line instead:
+// where T : A    // C3216
+ref class C {};
+```
+
+다음 예제에서는 가능한 해결 방법을 설명합니다.
+
+```
+// C3216b.cpp
+// compile with: /clr /c
+interface struct A {};
+
+generic <class T>
+where T : A
+ref class C {};
 ```

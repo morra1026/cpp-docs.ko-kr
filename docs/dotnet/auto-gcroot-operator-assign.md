@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: b4bc0f671ea0c156b05eabe092bc3cc85b5cd9fe
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 91503568b093dfb7052cd6d6e99fc63f1c780a73
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33111304"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102744"
 ---
 # <a name="autogcrootoperator"></a>auto_gcroot::operator=
 대입 연산자입니다.  
@@ -46,15 +46,15 @@ auto_gcroot<_element_type> & operator=(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `_right`  
- 개체 또는 `auto_gcroot` 현재에 할당할 `auto_gcroot`합니다.  
+*(_r)*<br/>
+개체 또는 `auto_gcroot` 현재 할당할 `auto_gcroot`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 현재 `auto_gcroot`, 이제 소유 `_right`합니다.  
+ 현재 `auto_gcroot`이제 소유 `_right`합니다.  
   
 ## <a name="example"></a>예제  
   
-```  
+```cpp  
 // msl_auto_gcroot_operator_equals.cpp  
 // compile with: /clr  
 #include <msclr\auto_gcroot.h>  

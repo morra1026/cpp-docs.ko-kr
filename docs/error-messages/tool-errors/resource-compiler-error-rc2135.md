@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14600b00b1347f7fe63c0bc8b6d1ab5c70b68fad
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8bd510aa4a6045b3e691ba89d05b327d35818b8b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33318027"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46092990"
 ---
 # <a name="resource-compiler-error-rc2135"></a>리소스 컴파일러 오류 RC2135
-파일을 찾을 수 없습니다. filename  
-  
- 리소스 컴파일러 명령줄에 지정된 파일을 찾을 수 없습니다. 확인 파일이 다른 디렉터리로 이동 된 여부와 파일 이름 및 경로 올바르게 입력 하십시오.  
-  
- 파일을 사용 하기 위한 검색는 **INCLUDE** 환경 변수 또는 Visual c + + **INCLUDE** 설정 합니다.
+
+파일을 찾을 수 없습니다. filename
+
+리소스 컴파일러 명령줄에 지정된 파일을 찾을 수 없습니다. 다른 디렉터리로 파일을 이동 되었는지 여부와 경로 파일 이름을 올바르게 입력 되는 여부를 확인 합니다.
+
+사용에 대 한 파일을 검색 합니다 **INCLUDE** 환경 변수 또는 Visual c + + **포함** 설정 합니다.

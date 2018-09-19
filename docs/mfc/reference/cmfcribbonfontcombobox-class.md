@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a53dd239d2c6cdba77f977cc94642828c5e91b7
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 79facf2498769c0f4385f6dbc84133c3773fe0e7
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216476"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705707"
 ---
 # <a name="cmfcribbonfontcombobox-class"></a>CMFCRibbonFontComboBox 클래스
 글꼴 목록이 포함된 콤보 상자를 구현합니다. 콤보 상자를 리본 패널에 배치합니다.  
@@ -106,14 +106,14 @@ void BuildFonts(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nFontType*  
- 추가할 글꼴의 글꼴 종류를 지정 합니다.  
+*nFontType*<br/>
+[in] 추가할 글꼴의 글꼴 종류를 지정 합니다.  
   
- [in] *nCharSet*  
- 추가할 글꼴의 문자 집합을 지정 합니다.  
+*nCharSet*<br/>
+[in] 추가할 글꼴의 문자 집합을 지정 합니다.  
   
- [in] *nPitchAndFamily*  
- 피치 및 추가할 글꼴의 제품군을 지정 합니다.  
+*nPitchAndFamily*<br/>
+[in] 피치 및 추가할 글꼴의 제품군을 지정 합니다.  
   
 ##  <a name="cmfcribbonfontcombobox"></a>  CMFCRibbonFontComboBox::CMFCRibbonFontComboBox  
  생성 하 고 초기화 된 [CMFCRibbonFontComboBox](../../mfc/reference/cmfcribbonfontcombobox-class.md) 개체입니다.  
@@ -128,20 +128,20 @@ CMFCRibbonFontComboBox(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 콤보 상자에서 항목을 선택할 때 실행 되는 명령의 명령 ID입니다.  
+*nID*<br/>
+[in] 콤보 상자에서 항목을 선택할 때 실행 되는 명령의 명령 ID입니다.  
   
- [in] *nFontType*  
- 글꼴 콤보 상자에 표시할 형식을 지정 합니다. 유효한 옵션 DEVICE_FONTTYPE, RASTER_FONTTYPE, TRUETYPE_FONTTYPE 또는 이러한 옵션의 비트 조합입니다.  
+*nFontType*<br/>
+[in] 글꼴 콤보 상자에 표시할 형식을 지정 합니다. 유효한 옵션 DEVICE_FONTTYPE, RASTER_FONTTYPE, TRUETYPE_FONTTYPE 또는 이러한 옵션의 비트 조합입니다.  
   
- [in] *nCharSet*  
- 지정된 된 문자 집합에 속해 있는 콤보 상자에 있는 글꼴 필터링...  
+*nCharSet*<br/>
+[in] 지정된 된 문자 집합에 속해 있는 콤보 상자에 있는 글꼴 필터링...  
   
- [in] *nPitchAndFamily*  
- 피치 및 콤보 상자에 표시 되는 글꼴의 제품군을 지정 합니다.  
+*nPitchAndFamily*<br/>
+[in] 피치 및 콤보 상자에 표시 되는 글꼴의 제품군을 지정 합니다.  
   
- [in] *nWidth*  
- 콤보 상자의 픽셀 너비를 지정 합니다.  
+*nWidth*<br/>
+[in] 콤보 상자의 픽셀 너비를 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  가능한 대 한 자세한 내용은 *nFontType* 매개 변수 값을 참조 하십시오 [EnumFontFamProc](https://msdn.microsoft.com/library/windows/desktop/dd162621) Windows SDK 설명서의 합니다.  

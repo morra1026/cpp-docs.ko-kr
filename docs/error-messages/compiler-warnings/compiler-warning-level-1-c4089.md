@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 713d22baa84cc612509b71b74ee7fba054ff8c25
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a321745e539a6e34ae04a80cefc15100c925d52f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33277048"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066585"
 ---
 # <a name="compiler-warning-level-1-c4089"></a>컴파일러 경고 (수준 1) C4089
-'function': 실제 매개 변수 'number', 'number' 형식 매개 변수에서에서 서로 다른 형식이  
-  
- 해당 형식 및 실제 매개 변수는 다양 한 종류입니다. 실제 매개 변수가 변경 되지 않은 상태로 전달 됩니다. 함수는 함수 정의에 지정 된 형식과 실제 매개 변수를 캐스팅 합니다.
+
+'function': 실제 매개 변수 'number', 'number' 형식 매개 변수에서에서 다른 형식
+
+해당 형식 및 실제 매개 변수 형식이 다른 합니다. 실제 매개 변수가 변경 되지 않은 상태로 전달 됩니다. 함수는 함수 정의에 지정 된 형식에는 실제 매개 변수를 캐스팅 합니다.

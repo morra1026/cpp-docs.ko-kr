@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ebe6ac2e3d19d16e2147411df436a976526ea2ff
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f59e43bbc1d5f11d1582bad577cc0d8eb971d121
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765137"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108588"
 ---
 # <a name="dual-interfaces-and-atl"></a>이중 인터페이스 및 ATL
 
@@ -29,21 +29,21 @@ ms.locfileid: "43765137"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[이중 인터페이스 구현](../atl/implementing-a-dual-interface.md)  
+[이중 인터페이스 구현](../atl/implementing-a-dual-interface.md)<br/>
 클래스 및 이중 인터페이스 구현에 관련 된 마법사에 설명 합니다.
 
-[여러 개의 이중 인터페이스](../atl/multiple-dual-interfaces.md)  
+[여러 개의 이중 인터페이스](../atl/multiple-dual-interfaces.md)<br/>
 단일 개체에 대해 여러 개의 이중 인터페이스를 노출 하는 방법에 설명 합니다.
 
-[Nonextensible 특성](../atl/nonextensible-attribute.md)  
+[Nonextensible 특성](../atl/nonextensible-attribute.md)<br/>
 사용 하는 경우에 대해 설명 합니다 **nonextensible** 인터페이스 정의 대 한 특성입니다.
 
-[이중 인터페이스 및 이벤트](../atl/dual-interfaces-and-events.md)  
+[이중 인터페이스 및 이벤트](../atl/dual-interfaces-and-events.md)<br/>
 이중 인터페이스 인터페이스 이벤트 되 고 있지 않음의 디자인상 이유에 대해 설명 합니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 액티브 템플릿 라이브러리를 사용하여 프로그래밍하는 방법에 대한 개념 항목의 링크를 제공합니다.
 
 ## <a name="see-also"></a>참고 항목

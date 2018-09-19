@@ -16,46 +16,48 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f378a60c79defed4fb1738515ca5b65b2851056
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fdea26e204032c27f00639ee46a928c7bf084a4e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33256557"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035625"
 ---
 # <a name="compiler-error-c3068"></a>컴파일러 오류 C3068
-'function': 'naked' 함수 해제가 필요한 c + + 예외가 발생 하는 개체를 포함할 수 없습니다  
-  
- 컴파일러에서 스택 해제를 수행할 수 없습니다. 한 [naked](../../cpp/naked-cpp.md) 함수 및 c + + 예외 처리에 임시 개체를 만들었기 때문에 예외가 발생 했습니다 함수 ([/EHsc](../../build/reference/eh-exception-handling-model.md)) 지정 되었습니다.  
-  
- 이 오류를 해결 하려면 다음 중 적어도 하나를 수행 합니다.  
-  
--   /EHsc로 컴파일하지 않습니다.  
-  
--   이 함수를 표시 하지 마십시오 `naked`합니다.  
-  
--   함수에서 임시 개체를 만들지 마십시오.  
-  
- 함수를 만드는 경우 임시 개체는 스택에 함수가 예외를 throw 하 고 c + + 예외 처리를 사용 하는 경우 예외가 발생 하는 경우 컴파일러는 스택 정리 합니다.  
-  
- 예외가 발생 하 고 컴파일러에서 생성 한 코드를 프롤로그 라는 에필로그와에 없는 naked 함수, 함수에 대해 실행 됩니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3068 오류가 생성 됩니다.  
-  
-```  
-// C3068.cpp  
-// compile with: /EHsc  
-// processor: x86  
-class A {  
-public:  
-   A(){}  
-   ~A(){}  
-};  
-  
-void b(A){}  
-  
-__declspec(naked) void c() {  
-   b(A());   // C3068   
-};  
+
+'function': 'naked' 함수를 c + + 예외를 발생 한 경우에 필요한 해제는 개체를 포함할 수 없습니다
+
+컴파일러에서 스택 해제를 수행할 수 없습니다.는 [naked](../../cpp/naked-cpp.md) 함수 및 c + + 예외 처리에 임시 개체 생성 되었기 때문에 예외가 발생 하는 함수 ([/EHsc](../../build/reference/eh-exception-handling-model.md)) 지정 되었습니다.
+
+이 오류를 해결 하려면 다음 중 적어도 하나를 수행 합니다.
+
+- /EHsc를 사용 하 여 컴파일되지 않습니다.
+
+- 이 함수를 표시 하지 마십시오. `naked`합니다.
+
+- 함수에서 임시 개체를 만들지 마십시오.
+
+함수를 만드는 경우 임시 개체를 스택에 함수가 예외를 throw 하 고 c + + 예외 처리를 사용 하는 경우 예외가 throw 되 면 컴파일러 스택 위로 정리 됩니다.
+
+예외가 throw 됩니다, 컴파일러에서 생성 한 코드를 프롤로그 호출을 에필로그와 naked 함수에 존재 하지 않는 함수에 대 한 실행 됩니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C3068 오류가 생성 됩니다.
+
+```
+// C3068.cpp
+// compile with: /EHsc
+// processor: x86
+class A {
+public:
+   A(){}
+   ~A(){}
+};
+
+void b(A){}
+
+__declspec(naked) void c() {
+   b(A());   // C3068
+};
 ```

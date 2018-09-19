@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 088783c97651926ed215506816e4f2db87b51563
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 94d7005fc1e3a48ff7f49c6eb1c462c814dcf107
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33271930"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46048086"
 ---
 # <a name="compiler-warning-level-1-c4045"></a>컴파일러 경고(수준 1) C4045
-'array': 배열 범위에 오버플로가 발생했습니다.  
-  
- 배열에 이니셜라이저가 너무 많습니다. 불필요한 이니셜라이저가 무시됩니다.  
-  
- 배열 요소와 이니셜라이저의 크기 및 수량이 일치하는지 확인합니다.
+
+'array': 배열 범위에 오버플로가 발생했습니다.
+
+배열에 이니셜라이저가 너무 많습니다. 불필요한 이니셜라이저가 무시됩니다.
+
+배열 요소와 이니셜라이저의 크기 및 수량이 일치하는지 확인합니다.

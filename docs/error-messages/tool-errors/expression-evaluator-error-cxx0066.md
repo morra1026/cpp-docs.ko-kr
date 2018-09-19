@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a4e2f71de2f883e54a17a08aa4735f63f167915
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2985583b24decfbfd2da1a1a4bfb1344f57bac49
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298423"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026741"
 ---
 # <a name="expression-evaluator-error-cxx0066"></a>식 계산기 오류 CXX0066
-정적 멤버가 없습니다.  
-  
- 클래스의 정적 멤버를 찾거나 정의 되지 않았습니다. 이 오류가 발생할 수 있습니다 정적 클래스에서 있지 않고 선언 된 멤버를 정의 또는 정의 되 고 디버그 정보를 포함 하지 않는 모듈에서 참조 합니다.  
-  
- 이 오류는 can0066과 동일 합니다.
+
+정적 멤버가 없습니다.
+
+클래스의 정적 멤버를 없거나 정의 되지 않았습니다. 이 오류가 발생할 수 있습니다 정적 클래스에서 제외한 선언 된 멤버를 정의 또는 정의 되 고 디버그 정보를 포함 하지 않는 모듈에서 참조 합니다.
+
+이 오류는 can0066과 동일 합니다.

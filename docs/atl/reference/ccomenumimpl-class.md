@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aab6e168970ff740f68d1338a05d51c691fd116d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 2cf80d51cdf45b6298255a252124ace9568953b1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759989"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082527"
 ---
 # <a name="ccomenumimpl-class"></a>CComEnumImpl 클래스
 
@@ -43,22 +43,22 @@ ms.locfileid: "43759989"
 
 ```
 template <class Base,
-    const IID* piid, class T, class Copy>  
+    const IID* piid, class T, class Copy>
 class ATL_NO_VTABLE CComEnumImpl : public Base
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*자료*  
+*자료*<br/>
 COM 열거자 인터페이스입니다. 참조 [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) 예입니다.
 
-*piid*  
+*piid*<br/>
 열거자 인터페이스의 인터페이스 ID에 대 한 포인터입니다.
 
-*T*  
+*T*<br/>
 열거자 인터페이스에 의해 노출 되는 항목의 형식입니다.
 
-*복사*  
+*복사*<br/>
 동종 [복사 정책 클래스](../../atl/atl-copy-policy-classes.md)합니다.
 
 ## <a name="members"></a>멤버
@@ -143,16 +143,16 @@ HRESULT Init(
 
 ### <a name="parameters"></a>매개 변수
 
-*begin*  
+*begin*<br/>
 열거할 항목을 포함 하는 배열의 첫 번째 요소에 대 한 포인터입니다.
 
-*end*  
+*end*<br/>
 열거할 항목을 포함 하는 배열의 마지막 요소 바로 다음 위치에 대 한 포인터입니다.
 
-*pUnk*  
+*pUnk*<br/>
 [in] `IUnknown` 유지 해야 하는 활성 열거자의 수명 동안 개체의 포인터입니다. 이러한 개체가 없는 경우 NULL을 전달 합니다.
 
-*flags*  
+*flags*<br/>
 열거자 배열의 소유권을 갖거나 복사본을 확인 해야 여부를 지정 하는 플래그입니다. 가능한 값에 대 한 설명은 다음과 같습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -167,13 +167,13 @@ HRESULT Init(
 
 합니다 *플래그* 매개 변수를 사용 하면 열거자가 전달 된 배열 요소를 처리 해야 하는 방법을 지정할 수 있습니다. *플래그* 의 값 중 하나를 수행할 수는 `CComEnumFlags` 아래에 표시 된 열거형:
 
-```  
-enum CComEnumFlags  
-   {  
-   AtlFlagNoCopy = 0,  
-   AtlFlagTakeOwnership = 2, // BitOwn  
-   AtlFlagCopy = 3           // BitOwn | BitCopy  
-   };  
+```
+enum CComEnumFlags
+   {
+   AtlFlagNoCopy = 0,
+   AtlFlagTakeOwnership = 2, // BitOwn
+   AtlFlagCopy = 3           // BitOwn | BitCopy
+   };
 ```
 
 `AtlFlagNoCopy` 열거자가 배열의 수명 제어 되지 의미 합니다. 정적 또는 식별 되는 개체 배열 됩니다이 예에서 *pUnk* 가 더 이상 필요 없는 경우 배열을 해제 하는 일을 담당 합니다.
@@ -195,7 +195,7 @@ STDMETHOD(Clone)(Base** ppEnum);
 
 ### <a name="parameters"></a>매개 변수
 
-*ppEnum*  
+*ppEnum*<br/>
 [out] 현재 열거자에서 복제는 새로 만든된 개체에서 열거자 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -256,13 +256,13 @@ STDMETHOD(Next)(ULONG celt, T* rgelt, ULONG* pceltFetched);
 
 ### <a name="parameters"></a>매개 변수
 
-*celt*  
+*celt*<br/>
 [in] 요청 하는 요소의 수입니다.
 
-*rgelt*  
+*rgelt*<br/>
 [out] 배열 요소를 사용 하 여 채울 수입니다.
 
-*pceltFetched*  
+*pceltFetched*<br/>
 [out] 에 실제로 반환 된 요소 수가 *rgelt*합니다. 수 미만 *celt* 개 보다 적으면 *celt* 요소 목록에 유지 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -291,7 +291,7 @@ STDMETHOD(Skip)(ULONG celt);
 
 ### <a name="parameters"></a>매개 변수
 
-*celt*  
+*celt*<br/>
 [in] 건너뛸 요소 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -304,6 +304,6 @@ E_INVALIDARG를 반환 *celt* 이 0 이면 보다 작으면 S_FALSE를 반환 �
 
 ## <a name="see-also"></a>참고 항목
 
-[IEnumOnSTLImpl 클래스](../../atl/reference/ienumonstlimpl-class.md)   
-[CComEnum 클래스](../../atl/reference/ccomenum-class.md)   
+[IEnumOnSTLImpl 클래스](../../atl/reference/ienumonstlimpl-class.md)<br/>
+[CComEnum 클래스](../../atl/reference/ccomenum-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

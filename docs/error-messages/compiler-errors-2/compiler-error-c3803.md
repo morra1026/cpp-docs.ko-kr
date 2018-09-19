@@ -16,40 +16,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d720e2f94cc4a480122413e31b897ec1718ebc15
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6a841dbaae4142e92d8e0987b0618285e4f71f60
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33269259"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075868"
 ---
 # <a name="compiler-error-c3803"></a>컴파일러 오류 C3803
-'property': 속성에는 해당 접근자 'accessor' 중 하 나와 호환 되지 않는 형식  
-  
- 정의 된 속성의 형식은 [속성](../../cpp/property-cpp.md) 해당 접근자 함수 중 하나에 대 한 반환 형식과 일치 하지 않습니다.  
-  
- 다음 샘플에서는 C3803 오류가 생성 됩니다.  
-  
-```  
-// C3803.cpp  
-struct A  
-{  
-   __declspec(property(get=GetIt)) int i;  
-   char GetIt()  
-   {  
-      return 0;  
-   }  
-  
-   /*  
-   // try the following definition instead  
-   int GetIt()  
-   {  
-      return 0;  
-   }  
-   */  
-}; // C3803  
-  
-int main()  
-{  
-}  
+
+'property': 속성이 해당 접근자 'accessor' 중 하나를 사용 하 여 호환 되지 않는 형식
+
+정의 된 속성의 형식은 [속성](../../cpp/property-cpp.md) 해당 접근자 함수 중 하나에 대 한 반환 형식과 일치 하지 않습니다.
+
+다음 샘플에서는 C3803 오류가 생성 됩니다.
+
+```
+// C3803.cpp
+struct A
+{
+   __declspec(property(get=GetIt)) int i;
+   char GetIt()
+   {
+      return 0;
+   }
+
+   /*
+   // try the following definition instead
+   int GetIt()
+   {
+      return 0;
+   }
+   */
+}; // C3803
+
+int main()
+{
+}
 ```

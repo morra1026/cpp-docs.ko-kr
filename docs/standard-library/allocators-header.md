@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a1d2d710631c01a39b910e7d9b15f14179b3125
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: f860d90905c244327787182c40505207c4745201
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965745"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069172"
 ---
 # <a name="ltallocatorsgt"></a>&lt;allocators&gt;
 
@@ -47,9 +47,10 @@ C++ 표준 라이브러리(std::list, std::set, std::multiset, std::map and std:
 
 할당자는 다음 형식의 모든 템플릿입니다.
 
-`template<class` `Type` `>`
-
-`class allocator;`
+```cpp
+template<class Type>
+class allocator;
+```
 
 여기서 템플릿 인수 `Type`은 할당자 인스턴스에 의해 관리되는 형식입니다. C++ 표준 라이브러리는 [\< memory>](../standard-library/memory.md)에 정의된 기본 할당자인 템플릿 클래스 [allocator](../standard-library/allocator-class.md)를 제공합니다. \<allocators> 헤더는 다음과 같은 할당자를 제공합니다.
 
@@ -67,23 +68,22 @@ C++ 표준 라이브러리(std::list, std::set, std::multiset, std::map and std:
 
 다음 코드 예제와 같이, 컨테이너를 만들 때 할당자의 적절한 인스턴스화를 두 번째 형식 인수로 사용합니다.
 
-`#include <list>`
-
-`#include <allocators>`
-
-`std::list<int, stdext::allocators::allocator_chunklist<int> > _List0;`
+```cpp
+#include <list>
+#include <allocators>
+std::list<int, stdext::allocators::allocator_chunklist<int> > _List0;
+```
 
 _List0은 `allocator_chunklist` 및 기본 동기화 필터를 사용하여 노드를 할당합니다.
 
 기본 필터 이외의 동기화 필터로 할당자 템플릿을 만들려면 [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) 매크로를 사용합니다.
 
-`#include <list>`
-
-`#include <allocators>`
-
-`ALLOCATOR_DECL(CACHE_CHUNKLIST, stdext::allocators::sync_per_thread, Alloc);`
-
-`std::list<int, alloc<int> > _List1;`
+```cpp
+#include <list>
+#include <allocators>
+ALLOCATOR_DECL(CACHE_CHUNKLIST, stdext::allocators::sync_per_thread, Alloc);
+std::list<int, alloc<int> > _List1;
+```
 
 _Lst1은 `allocator_chunklist` 및 [sync_per_thread](../standard-library/sync-per-thread-class.md) 동기화 필터를 사용하여 노드를 할당합니다.
 

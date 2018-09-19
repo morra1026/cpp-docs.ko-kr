@@ -108,12 +108,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 702cc504032f7c4702dcc1b317c517d53b9cccc9
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 0b88e53d7f5cfdd03728f8d1a474ee5171ca5daa
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693882"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717589"
 ---
 # <a name="crebarctrl-class"></a>CReBarCtrl 클래스
 자식 창의 컨테이너인 rebar 컨트롤의 기능을 캡슐화합니다.  
@@ -766,8 +766,8 @@ BOOL SetBandWidth(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *uBand*|Rebar 밴드의 0부터 시작 인덱스입니다.|  
-|[in] *cxWidth*|새 너비 (픽셀 단위)는 rebar 밴드입니다.|  
+|*uBand*|[in] Rebar 밴드의 0부터 시작 인덱스입니다.|  
+|*cxWidth*|[in] 새 너비 (픽셀 단위)는 rebar 밴드입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -846,8 +846,8 @@ DWORD SetExtendedStyle(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *dwMask*|에 플래그를 지정 하는 플래그의 비트 조합 (OR)는 *dwStyleEx* 매개 변수가 적용 됩니다. 다음 값 중 하나 이상을 사용 합니다.<br /><br /> RBS_EX_SPLITTER: 기본적으로 표시 분할자 아래에 가로 모드에서 및 오른쪽에 세로 모드에서.<br /><br /> RBS_EX_TRANSPARENT: 전달 된 [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) 부모 창에는 메시지입니다.|  
-|[in] *dwStyleEx*|적용할 스타일을 지정 하는 플래그의 비트 조합 (OR)입니다. 스타일을 설정 하려면에서 사용 되는 동일한 플래그를 지정 합니다 *dwMask* 매개 변수입니다. 스타일을 재설정 하려면 이진 0을 지정 합니다.|  
+|*dwMask*|[in] 에 플래그를 지정 하는 플래그의 비트 조합 (OR)는 *dwStyleEx* 매개 변수가 적용 됩니다. 다음 값 중 하나 이상을 사용 합니다.<br /><br /> RBS_EX_SPLITTER: 기본적으로 표시 분할자 아래에 가로 모드에서 및 오른쪽에 세로 모드에서.<br /><br /> RBS_EX_TRANSPARENT: 전달 된 [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) 부모 창에는 메시지입니다.|  
+|*dwStyleEx*|[in] 적용할 스타일을 지정 하는 플래그의 비트 조합 (OR)입니다. 스타일을 설정 하려면에서 사용 되는 동일한 플래그를 지정 합니다 *dwMask* 매개 변수입니다. 스타일을 재설정 하려면 이진 0을 지정 합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이전 확장된 스타일입니다.  

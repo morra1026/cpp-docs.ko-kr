@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8f9f36bef278edc4c40c732b86c012180535f74
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e6f1ae1b22cca0d00e990f64ccaf469359563f8e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33164243"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038700"
 ---
 # <a name="compiler-error-c2019"></a>컴파일러 오류 C2019
-전처리기 지시문이 있어야 하는데 'character'가 있습니다.  
-  
- 다음에 오는 문자는 `#` 부호는 전처리기 지시문의 첫 번째 문자가 아닙니다.  
-  
- 다음 샘플에서는 C2019 오류가 생성 됩니다.  
-  
-```  
-// C2019.cpp  
-#!define TRUE 1   // C2019  
-```  
-  
- 해결 방법:  
-  
-```  
-// C2019b.cpp  
-// compile with: /c  
-#define TRUE 1  
+
+전처리기 지시문이 있어야 하는데 'character'가 있습니다.
+
+다음에 오는 문자는 `#` 로그인 하지 않은 전처리기 지시문의 첫 번째 문자입니다.
+
+다음 샘플에서는 C2019를 생성합니다.
+
+```
+// C2019.cpp
+#!define TRUE 1   // C2019
+```
+
+해결 방법:
+
+```
+// C2019b.cpp
+// compile with: /c
+#define TRUE 1
 ```

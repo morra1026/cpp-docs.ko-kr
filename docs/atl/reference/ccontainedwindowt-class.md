@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc9ac9fc7e638655b7b6b812d347ac26b8cf6967
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1c64db5a041845bbd068bab1a72ad461740170b8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755803"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040481"
 ---
 # <a name="ccontainedwindowt-class"></a>CContainedWindowT 클래스
 
@@ -49,16 +49,16 @@ ms.locfileid: "43755803"
 ## <a name="syntax"></a>구문
 
 ```
-template <class TBase = CWindow, class TWinTraits = CControlWinTraits>  
+template <class TBase = CWindow, class TWinTraits = CControlWinTraits>
 class CContainedWindowT : public TBase
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*TBase*  
+*TBase*<br/>
 새 클래스의 기본 클래스입니다. 기본 클래스는 `CWindow`합니다.
 
-*TWinTraits*  
+*TWinTraits*<br/>
 창 스타일을 정의 하는 특성 클래스입니다. 기본값은 `CControlWinTraits`입니다.
 
 > [!NOTE]
@@ -148,13 +148,13 @@ CContainedWindowT(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszClassName*  
+*lpszClassName*<br/>
 [in] 포함된 된 창의 기반이 될 기존 창 클래스의 이름입니다.
 
-*pObject*  
+*pObject*<br/>
 [in] 메시지 맵에서 선언 하는 포함 하는 개체에 대 한 포인터입니다. 이 개체의이 클래스에서 파생 되어야 합니다 [CMessageMap](../../atl/reference/cmessagemap-class.md)합니다.
 
-*dwMsgMapID*  
+*dwMsgMapID*<br/>
 [in] 포함 된 창의 메시지를 처리 하는 메시지 맵을 식별 합니다. 기본값 0으로 지정으로 선언 된 기본 메시지 맵에서 [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)합니다. 대체 메시지 맵을 사용 하 여를 사용 하 여 선언 [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), 전달 `msgMapID`합니다.
 
 ### <a name="remarks"></a>설명
@@ -211,34 +211,34 @@ HWND Create(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszClassName*  
+*lpszClassName*<br/>
 [in] 포함된 된 창의 기반이 될 기존 창 클래스의 이름입니다.
 
-*pObject*  
+*pObject*<br/>
 [in] 메시지 맵에서 선언 하는 포함 하는 개체에 대 한 포인터입니다. 이 개체의이 클래스에서 파생 되어야 합니다 [CMessageMap](../../atl/reference/cmessagemap-class.md)합니다.
 
-*dwMsgMapID*  
+*dwMsgMapID*<br/>
 [in] 포함 된 창의 메시지를 처리 하는 메시지 맵을 식별 합니다. 기본값 0으로 지정으로 선언 된 기본 메시지 맵에서 [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)합니다. 대체 메시지 맵을 사용 하 여를 사용 하 여 선언 [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), 전달 `msgMapID`합니다.
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] 부모 또는 소유자 창에 대 한 핸들입니다.
 
-*rect*  
+*rect*<br/>
 [in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 창의 위치를 지정 하는 구조입니다. `RECT` 포인터 또는 참조로 전달할 수 있습니다.
 
-*szWindowName*  
+*szWindowName*<br/>
 [in] 창의 이름을 지정합니다. 기본값은 NULL입니다.
 
-*dwStyle*  
+*dwStyle*<br/>
 [in] 창 스타일입니다. 기본값은 WS_CHILD &#124; WS_VISIBLE 합니다. 가능한 값 목록을 참조 하세요 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK에 있습니다.
 
-*dwExStyle*  
+*dwExStyle*<br/>
 [in] 확장된 창 스타일입니다. 기본값은 0, 확장 된 스타일이 없습니다. 가능한 값 목록을 참조 하세요 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK에 있습니다.
 
-*MenuOrID*  
+*MenuOrID*<br/>
 [in] 자식 창의 창 식별자입니다. 최상위 창에 대 한 메뉴 창에 대 한 처리 합니다. 기본값은 **0U**합니다.
 
-*lpCreateParam*  
+*lpCreateParam*<br/>
 [in] 창 만들기 데이터에 대 한 포인터입니다. 에 마지막 매개 변수에 대 한 설명을 참조 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -269,13 +269,13 @@ LRESULT DefWindowProc(
 
 ### <a name="parameters"></a>매개 변수
 
-*uMsg*  
+*uMsg*<br/>
 [in] 창으로 전송 하는 메시지입니다.
 
-*wParam*  
+*wParam*<br/>
 [in] 추가 메시지 관련 정보입니다.
 
-*lParam*  
+*lParam*<br/>
 [in] 추가 메시지 관련 정보입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -382,7 +382,7 @@ BOOL SubclassWindow(HWND hWnd);
 
 ### <a name="parameters"></a>매개 변수
 
-*hWnd*  
+*hWnd*<br/>
 [in] 서브클래싱 되 고 창에 대 한 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -406,7 +406,7 @@ void SwitchMessageMap(DWORD dwMsgMapID);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwMsgMapID*  
+*dwMsgMapID*<br/>
 [in] 메시지 맵 식별자입니다. 기본 메시지 맵을 사용 하 여를 사용 하 여 선언 [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map), 0을 전달 합니다. 대체 메시지 맵을 사용 하 여를 사용 하 여 선언 [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), 전달 `msgMapID`합니다.
 
 ### <a name="remarks"></a>설명
@@ -425,7 +425,7 @@ HWND UnsubclassWindow(BOOL bForce = FALSE);
 
 ### <a name="parameters"></a>매개 변수
 
-*bForce*  
+*bForce*<br/>
 [in] 복원할 원본 창 프로시저 강제 하려면 true로 설정 하더라도이 위한 창 프로시저 `CContainedWindowT` 개체가 현재 활성 상태가 아닙니다. 하는 경우 *bForce* 가 FALSE로 설정 되며 창 프로시저를이 `CContainedWindowT` 개체 현재 활성 상태인 원본 창 프로시저 복원 되지 것입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -450,16 +450,16 @@ static LRESULT CALLBACK WindowProc(
 
 ### <a name="parameters"></a>매개 변수
 
-*hWnd*  
+*hWnd*<br/>
 [in] 창에 대 한 핸들입니다.
 
-*uMsg*  
+*uMsg*<br/>
 [in] 창으로 전송 하는 메시지입니다.
 
-*wParam*  
+*wParam*<br/>
 [in] 추가 메시지 관련 정보입니다.
 
-*lParam*  
+*lParam*<br/>
 [in] 추가 메시지 관련 정보입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -472,9 +472,9 @@ static LRESULT CALLBACK WindowProc(
 
 ## <a name="see-also"></a>참고 항목
 
-[CWindow 클래스](../../atl/reference/cwindow-class.md)   
-[CWindowImpl 클래스](../../atl/reference/cwindowimpl-class.md)   
-[CMessageMap 클래스](../../atl/reference/cmessagemap-class.md)   
-[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)   
-[ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)   
+[CWindow 클래스](../../atl/reference/cwindow-class.md)<br/>
+[CWindowImpl 클래스](../../atl/reference/cwindowimpl-class.md)<br/>
+[CMessageMap 클래스](../../atl/reference/cmessagemap-class.md)<br/>
+[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
+[ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

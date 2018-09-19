@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 580fb4c96db70b612135ac48e30bd9c0d45c4d1c
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 1edd35ac9f32a28a19c4ea54b7e9fba2820d6095
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42572013"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031628"
 ---
 # <a name="mixing-c-structured-and-c-exceptions"></a>C (구조적) 및 c + + 예외 혼합
 
@@ -47,10 +47,10 @@ ms.locfileid: "42572013"
 
   사용에 대 한 자세한 내용은 `setjmp` 고 `longjmp` c + + 프로그램에서입니다.
 
-- [C + +에서 구조적된 예외 처리](../cpp/exception-handling-differences.md)
+- [C++에서 구조적 예외 처리](../cpp/exception-handling-differences.md)
 
   C + +를 사용 하 여 예외 처리를 구성 하는 방법의 예제를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 예외 처리](../cpp/cpp-exception-handling.md)  
+[C++ 예외 처리](../cpp/cpp-exception-handling.md)

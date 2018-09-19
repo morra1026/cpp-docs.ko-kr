@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5082490b9dd2e37090bac747e592b62ce51ac26a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 7598065aa451d87fb45ae26310064e4828b4fb72
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754971"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098812"
 ---
 # <a name="cobarray-class"></a>CObArray 클래스
 `CObject` 포인터 배열을 지원합니다.  
@@ -170,11 +170,11 @@ INT_PTR Add(CObject* newElement);
   
  이 프로그램의 결과 아래와 같습니다.  
   
- `Add example: A CObArray with 2 elements`  
-  
- `[0] = a CAge at $442A 21`  
-  
- `[1] = a CAge at $4468 40`  
+```Output
+Add example: A CObArray with 2 elements
+[0] = a CAge at $442A 21
+[1] = a CAge at $4468 40
+```
   
 ##  <a name="append"></a>  CObArray::Append  
  다른 배열의 내용을 지정 된 배열의 끝에 추가 하려면이 멤버 함수를 호출 합니다.  
@@ -530,13 +530,12 @@ void InsertAt(
   
  이 프로그램의 결과 아래와 같습니다.  
   
- `InsertAt example: A CObArray with 3 elements`  
-  
- `[0] = a CAge at $45C8 21`  
-  
- `[1] = a CAge at $4646 30`  
-  
- `[2] = a CAge at $4606 40`  
+```Output
+InsertAt example: A CObArray with 3 elements
+[0] = a CAge at $45C8 21
+[1] = a CAge at $4646 30
+[2] = a CAge at $4606 40
+```
   
 ##  <a name="isempty"></a>  CObArray::IsEmpty  
  배열이 비어 있는지를 확인합니다.  
@@ -646,9 +645,10 @@ void RemoveAt(
   
  이 프로그램의 결과 아래와 같습니다.  
   
- `RemoveAt example: A CObArray with 1 elements`  
-  
- `[0] = a CAge at $4606 40`  
+```Output
+RemoveAt example: A CObArray with 1 elements
+[0] = a CAge at $4606 40
+```
   
 ##  <a name="setat"></a>  CObArray::SetAt  
  지정된 된 인덱스에 있는 배열 요소를 설정합니다.  
@@ -689,11 +689,11 @@ void SetAt(
   
  이 프로그램의 결과 아래와 같습니다.  
   
- `SetAt example: A CObArray with 2 elements`  
-  
- `[0] = a CAge at $47E0 30`  
-  
- `[1] = a CAge at $47A0 40`  
+```Output
+SetAt example: A CObArray with 2 elements
+[0] = a CAge at $47E0 30
+[1] = a CAge at $47A0 40
+```
   
 ##  <a name="setatgrow"></a>  CObArray::SetAtGrow  
  지정된 된 인덱스에 있는 배열 요소를 설정합니다.  
@@ -732,15 +732,13 @@ void SetAtGrow(
   
  이 프로그램의 결과 아래와 같습니다.  
   
- `SetAtGrow example: A CObArray with 4 elements`  
-  
- `[0] = a CAge at $47C0 21`  
-  
- `[1] = a CAge at $4800 40`  
-  
- `[2] = NULL`  
-  
- `[3] = a CAge at $4840 65`  
+```Output
+SetAtGrow example: A CObArray with 4 elements
+[0] = a CAge at $47C0 21
+[1] = a CAge at $4800 40
+[2] = NULL
+[3] = a CAge at $4840 65
+```
   
 ##  <a name="setsize"></a>  CObArray::SetSize  
  비어 있거나 기존 배열의; 크기를 설정합니다. 필요한 경우 메모리를 할당 합니다.  

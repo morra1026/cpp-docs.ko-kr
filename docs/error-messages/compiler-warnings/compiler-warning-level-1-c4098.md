@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 889c9aa926a8400d977de00ef5c288316ae84782
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 84b3cdcdbb487774a92361d3a003ba83895d475e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33276388"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118312"
 ---
 # <a name="compiler-warning-level-1-c4098"></a>컴파일러 경고 (수준 1) C4098
-'function': 값을 반환 하는 void 함수  
-  
- 함수 반환 형식으로 선언 [void](../../cpp/void-cpp.md) 에 `return` 값을 반환 하는 문입니다. 컴파일러는 함수 형식의 값을 반환 하는 것으로 가정 `int`합니다.
+
+'function': 값을 반환 하는 void 함수
+
+함수 반환 형식으로 선언 [void](../../cpp/void-cpp.md) 에 `return` 값을 반환 하는 문입니다. 컴파일러가 함수 형식의 값을 반환 하는 것으로 가정 `int`합니다.

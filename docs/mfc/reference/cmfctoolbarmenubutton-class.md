@@ -102,12 +102,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07b582c8b785adb13acce86497d898c183b3128b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d5baebfa1d706bf18b9fc36d706ebe474b6b042d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765933"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721723"
 ---
 # <a name="cmfctoolbarmenubutton-class"></a>CMFCToolBarMenuButton 클래스
 팝업 메뉴를 포함하는 도구 모음 단추입니다.  
@@ -220,23 +220,23 @@ CMFCToolBarMenuButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *src*  
- 기존 `CMFCToolBarMenuButton` 에이 복사 될 개체 `CMFCToolBarMenuButton` 개체입니다.  
+*src*<br/>
+[in] 기존 `CMFCToolBarMenuButton` 에이 복사 될 개체 `CMFCToolBarMenuButton` 개체입니다.  
   
- [in] *uiID*  
- 단추를 클릭할 때 실행할 명령 ID 또는 메뉴 단추의 명령 직접 실행 되지 않는 (단위)-1입니다.  
+*uiID*<br/>
+[in] 단추를 클릭할 때 실행할 명령 ID 또는 메뉴 단추의 명령 직접 실행 되지 않는 (단위)-1입니다.  
   
- [in] *hMenu*  
- 메뉴;에 대 한 핸들 또는 메뉴 단추에 없는 경우 NULL입니다.  
+*hMenu*<br/>
+[in] 메뉴;에 대 한 핸들 또는 메뉴 단추에 없는 경우 NULL입니다.  
   
- [in] *iImage*  
- 단추에 대 한 이미지의 인덱스 이 단추에 아이콘 없거나 지정 된 명령에 대 한 아이콘을 사용 하는 경우-1 *uiID*합니다. 색인 마다 동일한 `CMFCToolBarImages` 응용 프로그램의 개체입니다.  
+*iImage*<br/>
+[in] 단추에 대 한 이미지의 인덱스 이 단추에 아이콘 없거나 지정 된 명령에 대 한 아이콘을 사용 하는 경우-1 *uiID*합니다. 색인 마다 동일한 `CMFCToolBarImages` 응용 프로그램의 개체입니다.  
   
- [in] *lpszText*  
- 도구 모음 메뉴 단추의 텍스트입니다.  
+*lpszText*<br/>
+[in] 도구 모음 메뉴 단추의 텍스트입니다.  
   
- [in] *bUserButton*  
- TRUE 이면 사용자 정의 이미지를 표시 하는 단추 FALSE 이면 지정 된 명령과 사용 하 여 연결 된 미리 정의 된 이미지를 표시 하는 단추 *uiID*합니다.  
+*bUserButton*<br/>
+[in] TRUE 이면 사용자 정의 이미지를 표시 하는 단추 FALSE 이면 지정 된 명령과 사용 하 여 연결 된 미리 정의 된 이미지를 표시 하는 단추 *uiID*합니다.  
   
 ### <a name="remarks"></a>설명  
  하는 경우 *uiID* 유효한 명령 ID, 단추를 클릭할 때 해당 명령을 수행 합니다. 하는 경우 *hMenu* 핸들이 유효한 메뉴 단추를 메뉴에 나타나는 경우 도구 모음 또는 하위 메뉴에 표시 될 경우 드롭 다운 메뉴를 제공 합니다. 둘 다 *uiID* 하 고 *hMenu* 단추를 클릭할 때 명령을 수행 하는 부분과 드롭 다운 메뉴는 아래쪽 화살표를 사용 하 여 일부를 사용 하 여 분할 단추는 사용할 때 사용자 클릭합니다. 그러나 경우 *hMenu* 유효 사용자 메뉴에 단추를 삽입할 때 명령을 수행 하려면 단추를 클릭할 수 없습니다.  
@@ -280,8 +280,8 @@ virtual void CreateFromMenu(HMENU hMenu);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hMenu*  
- 메뉴 핸들입니다.  
+*hMenu*<br/>
+[in] 메뉴 핸들입니다.  
   
 ### <a name="remarks"></a>설명  
  도구 모음 메뉴 단추에서 드롭다운 메뉴를 표시할 수 있습니다.  
@@ -327,14 +327,14 @@ void DrawDocumentIcon(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rectImage*  
- 이미지 경계 사각형의 좌표입니다.  
+*rectImage*<br/>
+[in] 이미지 경계 사각형의 좌표입니다.  
   
- [in] *hIcon*  
- 아이콘에 대 한 핸들입니다.  
+*hIcon*<br/>
+[in] 아이콘에 대 한 핸들입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 문서 아이콘을 사용 하 고 가운데에서 지정 된 영역에 있는 메뉴 단추를 그립니다 *rectImage*합니다.  
@@ -424,8 +424,8 @@ void GetImageRect(CRect& rectImage);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *rectImage*  
- 에 대 한 참조를 `CRect` 이미지가 경계 사각형의 좌표를 받는 개체입니다.  
+*rectImage*<br/>
+[out] 에 대 한 참조를 `CRect` 이미지가 경계 사각형의 좌표를 받는 개체입니다.  
   
 ##  <a name="getpaletterows"></a>  CMFCToolBarMenuButton::GetPaletteRows  
  메뉴 색상표 모드일 때 드롭다운 메뉴에서 행의 수를 반환 합니다.  
@@ -560,8 +560,8 @@ virtual SIZE OnCalculateSize(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *sizeDefault*  
+*pDC*<br/>
+[in] [in] *sizeDefault*  
  [in] *bHorz*  
   
 ### <a name="return-value"></a>반환 값  
@@ -599,8 +599,8 @@ virtual BOOL OnClick(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- [in] *bDelay*  
+*pWnd*<br/>
+[in] [in] *bDelay*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -651,14 +651,14 @@ virtual void OnDraw(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rect*  
- [in] *pImages*  
- [in] *bHorz*  
- [in] *bCustomizeMode*  
- [in] *bHighlight*  
- [in] *bDrawBorder*  
- [in] *bGrayDisabledButtons*  
+*pDC*<br/>
+[in] [in] *rect*  
+*pImages*<br/>
+[in] [in] *bHorz*  
+*bCustomizeMode*<br/>
+[in] [in] *bHighlight*  
+*bDrawBorder*<br/>
+[in] [in] *bGrayDisabledButtons*  
   
 ### <a name="remarks"></a>설명  
   
@@ -673,8 +673,8 @@ virtual int OnDrawOnCustomizeList(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- [in] *rect*  
+*pDC*<br/>
+[in] [in] *rect*  
  [in] *bSelected*  
   
 ### <a name="return-value"></a>반환 값  
@@ -689,8 +689,8 @@ virtual BOOL OpenPopupMenu(CWnd* pWnd=NULL);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- 드롭다운 메뉴 명령을 수신 하는 기간을 지정 합니다. 도구 모음 메뉴 단추가 부모 창 하는 경우에 NULL 수 있습니다.  
+*pWnd*<br/>
+[in] 드롭다운 메뉴 명령을 수신 하는 기간을 지정 합니다. 도구 모음 메뉴 단추가 부모 창 하는 경우에 NULL 수 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE는 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md) 개체가 만들어져 있고 열이 고, 그렇지 않으면 FALSE입니다.  
@@ -759,8 +759,8 @@ void SetMenuOnly(BOOL bMenuOnly);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bMenuOnly*  
- 에 있을 때 올바른 명령 ID와 하위 메뉴의 경우 FALSE 유효한 명령 ID와 하위 메뉴에 있을 때 분할 단추와이 단추를 표시 하려면 메뉴 단추를으로이 단추를 표시 하려면 TRUE입니다.  
+*bMenuOnly*<br/>
+[in] 에 있을 때 올바른 명령 ID와 하위 메뉴의 경우 FALSE 유효한 명령 ID와 하위 메뉴에 있을 때 분할 단추와이 단추를 표시 하려면 메뉴 단추를으로이 단추를 표시 하려면 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
  일반적으로 도구 모음 메뉴 단추 명령 ID와 하위 메뉴에 있는 경우 메뉴 아래쪽 화살표 단추는 기본 단추 및 연결에 있는 분할 단추를 표시 됩니다. 이 메서드를 호출 하 고 *bMenuOnly* 가 TRUE 인 단추 대신 단추에서 아래쪽 화살표를 사용 하 여 단일 메뉴 단추를 표시 합니다. 사용자가 두 모드에 있는 화살표를 클릭 하면 하위 메뉴가 열리고 모드나 프레임 워크에서에서 단추의 아닌 화살표 부분 실행 명령을 클릭할 때.  
@@ -775,11 +775,11 @@ void SetMenuPaletteMode(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bMenuPaletteMode*  
- 드롭다운 메뉴 색상표 모드 인지 여부를 지정 합니다.  
+*bMenuPaletteMode*<br/>
+[in] 드롭다운 메뉴 색상표 모드 인지 여부를 지정 합니다.  
   
- [in] *nPaletteRows*  
- 색상표에 있는 행의 수입니다.  
+*nPaletteRows*<br/>
+[in] 색상표에 있는 행의 수입니다.  
   
 ### <a name="remarks"></a>설명  
  색상표 모드에서는 모든 메뉴 항목이 여러 열로 된 색상표도 표시 됩니다. 사용 하 여 행의 수를 지정할 *nPaletteRows*합니다.  
@@ -816,8 +816,8 @@ virtual void SetTearOff(UINT uiBarID);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiBarID*  
- 새 분리 지정 모음 id입니다.  
+*uiBarID*<br/>
+[in] 새 분리 지정 모음 id입니다.  
   
 ### <a name="remarks"></a>설명  
  메뉴 모음에서 메뉴 단추를 끌 때 생성 되는 분리 막대가 막대에 대 한 ID를 지정 하려면이 메서드를 호출 합니다. 경우는 *uiBarID* 매개 변수가 0 이면 사용자 메뉴 단추 떼어낼 수 없습니다.  

@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97c88b73499948db4e8fc0645b2d59f7b92b3cfe
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 77e7cd29c38706078dbcb2cc9718827d8c8cc583
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753180"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022996"
 ---
 # <a name="csid-class"></a>CSid 클래스
 
@@ -156,22 +156,22 @@ explicit CSid(
 
 ### <a name="parameters"></a>매개 변수
 
-*rhs*  
+*rhs*<br/>
 기존 `CSid` 개체 또는 `SID` (보안 식별자) 구조입니다.
 
-*IdentifierAuthority*  
+*IdentifierAuthority*<br/>
 인증 기관입니다.
 
-*nSubAuthorityCount*  
+*nSubAuthorityCount*<br/>
 Subauthority 수입니다.
 
-*pszAccountName*  
+*pszAccountName*<br/>
 계정 이름입니다.
 
-*pszSystem*  
+*pszSystem*<br/>
 시스템 이름입니다. 이 문자열에는 원격 컴퓨터의 이름일 수 있습니다. 이 문자열이 NULL 인 경우 로컬 시스템이 대신 사용 됩니다.
 
-*pSid*  
+*pSid*<br/>
 에 대 한 포인터를 `SID` 구조입니다.
 
 ### <a name="remarks"></a>설명
@@ -233,7 +233,7 @@ bool EqualPrefix(const CSid& rhs) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*rhs*  
+*rhs*<br/>
 합니다 `SID` (보안 식별자) 구조 또는 `CSid` 비교할 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -300,7 +300,7 @@ DWORD GetSubAuthority(DWORD nSubAuthority) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nSubAuthority*  
+*nSubAuthority*<br/>
 Subauthority 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -363,13 +363,13 @@ bool LoadAccount(
 
 ### <a name="parameters"></a>매개 변수
 
-*pszAccountName*  
+*pszAccountName*<br/>
 계정 이름입니다.
 
-*pszSystem*  
+*pszSystem*<br/>
 시스템 이름입니다. 이 문자열에는 원격 컴퓨터의 이름일 수 있습니다. 이 문자열이 NULL 인 경우 로컬 시스템이 대신 사용 됩니다.
 
-*pSid*  
+*pSid*<br/>
 에 대 한 포인터를 [SID](/windows/desktop/api/winnt/ns-winnt-_sid) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -385,13 +385,13 @@ bool LoadAccount(
 대입 연산자입니다.
 
 ```
-CSid& operator= (const CSid& rhs) throw(...);  
+CSid& operator= (const CSid& rhs) throw(...);
 CSid& operator= (const SID& rhs) throw(...);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*rhs*  
+*rhs*<br/>
 합니다 `SID` (보안 식별자) 또는 `CSid` 할당할는 `CSid` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -410,10 +410,10 @@ bool operator==(
 
 ### <a name="parameters"></a>매개 변수
 
-*lhs*  
+*lhs*<br/>
 합니다 `SID` (보안 식별자) 또는 `CSid` 의 왼쪽에 표시 되는 = = 연산자입니다.
 
-*rhs*  
+*rhs*<br/>
 합니다 `SID` (보안 식별자) 또는 `CSid` 의 오른쪽에 표시 되는 = = 연산자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -432,10 +432,10 @@ bool operator!=(
 
 ### <a name="parameters"></a>매개 변수
 
-*lhs*  
+*lhs*<br/>
 합니다 `SID` (보안 식별자) 또는 `CSid` 의 왼쪽에 표시 되는! = 연산자입니다.
 
-*rhs*  
+*rhs*<br/>
 합니다 `SID` (보안 식별자) 또는 `CSid` 의 오른쪽에 표시 되는! = 연산자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -454,10 +454,10 @@ bool operator<(
 
 ### <a name="parameters"></a>매개 변수
 
-*lhs*  
+*lhs*<br/>
 합니다 `SID` (보안 식별자) 또는 `CSid` 의 왼쪽에 표시 되는! = 연산자입니다.
 
-*rhs*  
+*rhs*<br/>
 합니다 `SID` (보안 식별자) 또는 `CSid` 의 오른쪽에 표시 되는! = 연산자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -476,10 +476,10 @@ bool operator<=(
 
 ### <a name="parameters"></a>매개 변수
 
-*lhs*  
+*lhs*<br/>
 합니다 `SID` (보안 식별자) 또는 `CSid` 의 왼쪽에 표시 되는! = 연산자입니다.
 
-*rhs*  
+*rhs*<br/>
 합니다 `SID` (보안 식별자) 또는 `CSid` 의 오른쪽에 표시 되는! = 연산자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -498,10 +498,10 @@ bool operator>(
 
 ### <a name="parameters"></a>매개 변수
 
-*lhs*  
+*lhs*<br/>
 합니다 `SID` (보안 식별자) 또는 `CSid` 의 왼쪽에 표시 되는! = 연산자입니다.
 
-*rhs*  
+*rhs*<br/>
 합니다 `SID` (보안 식별자) 또는 `CSid` 의 오른쪽에 표시 되는! = 연산자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -520,10 +520,10 @@ bool operator>=(
 
 ### <a name="parameters"></a>매개 변수
 
-*lhs*  
+*lhs*<br/>
 합니다 `SID` (보안 식별자) 또는 `CSid` 의 왼쪽에 표시 되는! = 연산자입니다.
 
-*rhs*  
+*rhs*<br/>
 합니다 `SID` (보안 식별자) 또는 `CSid` 의 오른쪽에 표시 되는! = 연산자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -534,7 +534,7 @@ TRUE 이면 *lhs* 보다 크거나 같음 *rhs*이 고, 그렇지 않으면 FALS
 
 캐스트를 `CSid` 개체에 대 한 포인터를 `SID` (보안 식별자) 구조입니다.
 
-```  
+```
 operator const SID *() const throw(...);
 ```
 
@@ -584,7 +584,7 @@ SID_NAME_USE SidNameUse() const throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[보안 샘플](../../visual-cpp-samples.md)   
-[클래스 개요](../../atl/atl-class-overview.md)   
-[보안 전역 함수](../../atl/reference/security-global-functions.md)   
+[보안 샘플](../../visual-cpp-samples.md)<br/>
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
+[보안 전역 함수](../../atl/reference/security-global-functions.md)<br/>
 [연산자](../../atl/reference/atl-operators.md)

@@ -21,15 +21,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 25b5ec1ab7bb5c429538f312ee3b598d3d1d83ec
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ce9e13e56728216c4a4b16246d4e99117199878c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33137512"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115959"
 ---
 # <a name="locktryacquire"></a>lock::try_acquire
-지정 된 시간 동안 대기 하 고 반환 하는 개체에 대 한 잠금을 획득 한 `bool` 예외를 throw 하는 대신 취득의 성공 여부를 보고 하기 위해 합니다.  
+지정된 된 시간 동안 대기 하 고 반환 개체에 대 한 잠금을 획득을 `bool` 예외를 throw 하는 대신 취득의 성공 여부를 보고 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,17 +43,17 @@ bool try_acquire(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `_timeout`  
- 제한 시간 값 (밀리초) 또는 <xref:System.TimeSpan>합니다.  
+*시간 제한 _t*<br/>
+시간 (밀리초) 또는 시간 제한 값을 <xref:System.TimeSpan>입니다.  
   
 ## <a name="return-value"></a>반환 값  
  `true` 잠금을 획득 하는 경우 `false` 그렇지 않은 경우.  
   
 ## <a name="remarks"></a>설명  
- 잠금을 이미 가져온 경우이 함수는 아무 작업도 수행 하지 않습니다.  
+ 잠금을 이미 가져온 경우이 함수는 아무 작업도 수행 하지.  
   
 ## <a name="example"></a>예제  
- 이 예제에서는 여러 스레드 간에 클래스의 단일 인스턴스를 사용 합니다.  클래스를 사용 하 여 잠금을 자체에서 내부 데이터에 대 한 액세스가 각 스레드에 대해 일관적인 지 확인 합니다.  기본 응용 프로그램 스레드는 주기적으로 확인 하는 경우 모든 작업자 스레드 여전히 존재 하며, 해당 작업을 완료 될 때까지 모든 작업자 스레드가 끝나기를 대기 하는 클래스의 동일한 인스턴스에 잠금을 사용 합니다.  
+ 이 예제에서는 여러 스레드에서 클래스의 단일 인스턴스를 사용 합니다.  클래스 자체에 잠금을 사용 하 여 내부 데이터에 대 한 액세스는 각 스레드에 대해 일치 되도록 합니다.  주 응용 프로그램 스레드는 주기적으로 확인 하는 경우 모든 작업자 스레드가 여전히 존재 하며 일까 지 모든 작업자 스레드가 끝나기를 대기 요소가 해당 작업을 완료 하는 클래스의 동일한 인스턴스에서 잠금을 사용 합니다.  
   
 ```  
 // msl_lock_try_acquire.cpp  

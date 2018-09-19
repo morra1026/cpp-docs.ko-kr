@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ef53ed9fa69dc77c93b90f9f24fa8628d589b07
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 98c4c82bcf858215ceba31e2ddd0770511446f72
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705265"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075646"
 ---
 # <a name="simplepartitioner-class"></a>simple_partitioner 클래스
 `simple_partitioner` 클래스는 `parallel_for`에서 반복하는 범위의 정적 분할을 나타냅니다. 파티셔너는 각 청크에 적어도 청크 크기로 지정된 개수의 반복이 있도록 범위를 청크로 나눕니다.  
@@ -68,7 +68,8 @@ explicit simple_partitioner(_Size_type _Chunk_size);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Chunk_size`  
+*_Chunk_size*<br/>
+최소 파티션 크기입니다.
   
 ## <a name="see-also"></a>참고 항목  
  [concurrency 네임스페이스](concurrency-namespace.md)

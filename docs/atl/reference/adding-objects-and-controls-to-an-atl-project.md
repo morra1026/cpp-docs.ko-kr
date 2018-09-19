@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e70ac6f333312fc62854478897912fc28f3c2f8e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a5cb510bb02f71f71b35191d3ba9c4fee6b7059d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756563"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093963"
 ---
 # <a name="adding-objects-and-controls-to-an-atl-project"></a>ATL 프로젝트에 개체 및 컨트롤 추가
 
@@ -56,10 +56,10 @@ ATL 또는 MFC 기반 프로젝트에 개체 또는 컨트롤을 추가 하려�
 
 ## <a name="see-also"></a>참고 항목
 
-[ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)   
-[Visual C++ 프로젝트 형식](../../ide/visual-cpp-project-types.md)   
-[응용 프로그램 마법사를 사용하여 데스크톱 프로젝트 만들기](../../ide/creating-desktop-projects-by-using-application-wizards.md)   
-[ATL COM 개체의 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)   
-[ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)   
+[ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)<br/>
+[Visual C++ 프로젝트 형식](../../ide/visual-cpp-project-types.md)<br/>
+[응용 프로그램 마법사를 사용하여 데스크톱 프로젝트 만들기](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
+[ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)<br/>
+[ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [기본 ATL 프로젝트 구성](../../atl/reference/default-atl-project-configurations.md)
 

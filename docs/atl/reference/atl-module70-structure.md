@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7afe6867f359b334654f58aad39ad7f143dd428
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f84b90613bcf542a9ace44505565951819fcaa91
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764893"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108445"
 ---
 # <a name="atlmodule70-structure"></a>_ATL_MODULE70 구조체
 
@@ -43,16 +43,16 @@ struct _ATL_MODULE70 {
 
 ## <a name="members"></a>멤버
 
-`cbSize`  
+`cbSize`<br/>
 버전 관리에 사용 되는 구조체의 크기입니다.
 
-`m_nLockCnt`  
+`m_nLockCnt`<br/>
 모듈을 활성 상태로 유지 해야 기간을 확인 하려면 참조 횟수입니다.
 
-`m_pTermFuncs`  
+`m_pTermFuncs`<br/>
 ATL 종료 될 때 호출할에 등록 된 추적 함수입니다.
 
-`m_csStaticDataInitAndTypeInfo`  
+`m_csStaticDataInitAndTypeInfo`<br/>
 다중 스레드 상황에서 내부 데이터에 대 한 액세스를 조정 하는 데 사용 합니다.
 
 ## <a name="remarks"></a>설명

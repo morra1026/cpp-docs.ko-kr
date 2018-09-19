@@ -16,37 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 039b819b65f0c0e9a7d9fb7fa490659dd9763e37
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 20b50d394b0701281cf382c6c0226b0b0b3c8180
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33267256"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016847"
 ---
 # <a name="compiler-error-c3830"></a>컴파일러 오류 C3830
-'type1': 값 형식 인터페이스 클래스에서 에서만 상속할 수 있습니다 'type2'에서 상속할 수 없습니다  
-  
- 값 형식이 기본 클래스를 상속할 수 없습니다.  자세한 내용은 참조 [클래스 및 구조체](../../windows/classes-and-structs-cpp-component-extensions.md)합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3830 오류가 생성 됩니다.  
-  
-```  
-// C3830a.cpp  
-// compile with: /clr /c  
-public value struct MyStruct4 {  
-   int i;  
-};  
-  
-public value class MyClass : public MyStruct4 {};   // C3830  
-  
-// OK  
-public interface struct MyInterface4 {  
-   void i();  
-};  
-  
-public value class MyClass2 : public MyInterface4 {  
-public:  
-   virtual void i(){}  
-};  
-```  
+
+'type1': 값 형식 인터페이스 클래스에서 에서만 상속할 수 'type2'에서 상속할 수 없습니다.
+
+값 형식을 기본 클래스를 상속할 수 없습니다.  자세한 내용은 [클래스 및 구조체](../../windows/classes-and-structs-cpp-component-extensions.md)합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C3830 오류가 생성 됩니다.
+
+```
+// C3830a.cpp
+// compile with: /clr /c
+public value struct MyStruct4 {
+   int i;
+};
+
+public value class MyClass : public MyStruct4 {};   // C3830
+
+// OK
+public interface struct MyInterface4 {
+   void i();
+};
+
+public value class MyClass2 : public MyInterface4 {
+public:
+   virtual void i(){}
+};
+```

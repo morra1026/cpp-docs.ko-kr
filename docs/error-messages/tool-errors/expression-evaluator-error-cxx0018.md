@@ -17,34 +17,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7fbc4f2a4df7233b13579cb1dd4f9fa9679eb4e6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2d5bd4808d1e03252e5b3df4cee2955bb6a456d5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298700"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051102"
 ---
 # <a name="expression-evaluator-error-cxx0018"></a>식 계산기 오류 CXX0018
-잘못 된 레지스터 이름  
-  
- 지정 된 레지스터 존재 하지 않거나를 표시할 수 없습니다.  
-  
- 조사식 창에는 다음에 레지스터 표시 수 있습니다.  
-  
- AX SP DS IP  
-  
- BX BP ES FL  
-  
- CX SI SS GS  
-  
- DX DI CS SS  
-  
- EAX ESP DS EIP  
-  
- EBX EBP ES EFL  
-  
- ECX ESI FS  
-  
- EDX EDI CS  
-  
- 이 오류는 can0018과 동일 합니다.
+
+잘못 된 레지스터 이름
+
+지정 된 레지스터 존재 하지 않거나 표시할 수 없습니다.
+
+조사식 창에는 다음 레지스터 표시할 수 있습니다.
+
+AX SP DS IP
+
+BX BP ES FL
+
+CX SI SS GS
+
+DX DI CS SS
+
+EAX ESP DS EIP
+
+EBX EBP ES EFL
+
+ECX ESI FS
+
+EDX EDI CS
+
+이 오류는 can0018과 동일 합니다.

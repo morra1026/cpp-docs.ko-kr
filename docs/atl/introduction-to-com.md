@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0302727bba0155fe59ffa223f5e4e91ef3c122de
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a98c7bb473e36e53e8cbe0f90f9dd94f655392d6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754860"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073228"
 ---
 # <a name="introduction-to-com"></a>COM 소개
 
@@ -41,6 +41,6 @@ COM의 기본 개념:
 
 ## <a name="see-also"></a>참고 항목
 
-[COM 및 ATL 소개](../atl/introduction-to-com-and-atl.md)   
+[COM 및 ATL 소개](../atl/introduction-to-com-and-atl.md)<br/>
 [구성 요소 개체 모델](/windows/desktop/com/the-component-object-model)
 

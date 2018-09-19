@@ -16,38 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2eb5fca95c876b1020a630f0ebe69e56a1dfa362
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b3d0b070d5f32b75bdd3c56a3754857a574638b7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33250431"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46083251"
 ---
 # <a name="compiler-error-c3226"></a>컴파일러 오류 C3226
-제네릭 선언 내부에서는 템플릿을 선언할 수 없습니다.  
-  
- 제네릭 클래스 내부에서는 제네릭 선언을 사용합니다.  
-  
- 다음 샘플에서는 C3226을 생성합니다.  
-  
-```  
-// C3226.cpp  
-// compile with: /clr  
-generic <class T>  
-ref class C {  
-   template <class T1>   // C3226  
-   ref struct S1 {};  
-};  
-```  
-  
- 다음 샘플에는 가능한 해결 방법을 보여 줍니다.  
-  
-```  
-// C3226b.cpp  
-// compile with: /clr /c  
-generic <class T>  
-ref class C {  
-   generic <class T1>  
-   ref struct S1 {};  
-};  
+
+제네릭 선언 내부에서는 템플릿을 선언할 수 없습니다.
+
+제네릭 클래스 내부에서는 제네릭 선언을 사용합니다.
+
+다음 샘플에서는 C3226을 생성합니다.
+
+```
+// C3226.cpp
+// compile with: /clr
+generic <class T>
+ref class C {
+   template <class T1>   // C3226
+   ref struct S1 {};
+};
+```
+
+다음 샘플에는 가능한 해결 방법을 보여 줍니다.
+
+```
+// C3226b.cpp
+// compile with: /clr /c
+generic <class T>
+ref class C {
+   generic <class T1>
+   ref struct S1 {};
+};
 ```

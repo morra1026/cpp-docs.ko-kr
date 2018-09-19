@@ -16,28 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 918b0e2198df68a6748166c13a492dadb45e2ede
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 35231ffda3a072b0720acc4c866dd2e3684c88fb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33258347"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024556"
 ---
 # <a name="compiler-error-c3400"></a>컴파일러 오류 C3400
-'constraint_1' 및 'constraint_2'와 관련된 순환 제약 조건 종속성입니다.  
-  
- 컴파일러가 순환 제약 조건을 검색했습니다.  
-  
- 자세한 내용은 참조 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + /cli CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md)합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3400을 생성합니다.  
-  
-```  
-// C3400.cpp  
-// compile with: /clr /c  
-generic<class T, class U>  
-where T : U  
-where U : T   // C3400  
-public ref struct R {};  
+
+'constraint_1' 및 'constraint_2'와 관련된 순환 제약 조건 종속성입니다.
+
+컴파일러가 순환 제약 조건을 검색했습니다.
+
+자세한 내용은 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md)합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C3400을 생성합니다.
+
+```
+// C3400.cpp
+// compile with: /clr /c
+generic<class T, class U>
+where T : U
+where U : T   // C3400
+public ref struct R {};
 ```

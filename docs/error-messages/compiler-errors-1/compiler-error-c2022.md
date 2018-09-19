@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47e13dddc1cba93afe8c51b2bca3efdd58e75f85
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dc92e683c3def2378912db5011049924696b7f59
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165612"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089660"
 ---
 # <a name="compiler-error-c2022"></a>컴파일러 오류 C2022
-'number': 문자에 비해 너무 큽니다.  
-  
- 백슬래시 뒤 8 진수 (\\) 문자의 문자를 나타낼 문자열 상수가 너무 큽니다. 또는 합니다.
+
+'number': 문자에 비해 너무 큽니다.
+
+백슬래시 뒤에 8 진수 숫자가 (\\) 문자에서는 문자를 나타내는 문자열 상수가 너무 큽니다. 또는 합니다.

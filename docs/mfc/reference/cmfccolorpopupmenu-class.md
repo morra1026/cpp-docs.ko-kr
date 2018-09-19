@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b32317f4fd67a627a272ea8eefcc949d1b0e63c8
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 32dd81b005570761088cdeb874ad0524bc543df2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852996"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721866"
 ---
 # <a name="cmfccolorpopupmenu-class"></a>CMFCColorPopupMenu 클래스
 사용자가 문서 또는 응용 프로그램에서 색을 선택 하는 데 사용할 팝업 메뉴를 나타냅니다.  
@@ -64,7 +64,7 @@ class CMFCColorPopupMenu : public CMFCPopupMenu
   
 |||  
 |-|-|  
-|name|설명|  
+|이름|설명|  
 |`m_bEnabledInCustomizeMode`|색 막대를 표시할지 여부를 결정 하는 부울 값입니다.|  
 |`m_wndColorBar`|`CMFCColorBar` 색 선택 영역을 제공 하는 개체입니다.|  
   
@@ -133,56 +133,56 @@ CMFCColorPopupMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *색*  
- 배열 프레임 워크 팝업 메뉴에 표시 되는 색입니다.  
+*색*<br/>
+[in] 배열 프레임 워크 팝업 메뉴에 표시 되는 색입니다.  
   
- [in] *색*  
- 기본 색을 선택 합니다.  
+*색*<br/>
+[in] 기본 색을 선택 합니다.  
   
- [in] *lpszAutoColor*  
- 텍스트 레이블을 합니다 *자동* 색 단추 (기본값) 또는 NULL입니다.  
+*lpszAutoColor*<br/>
+[in] 텍스트 레이블을 합니다 *자동* 색 단추 (기본값) 또는 NULL입니다.  
   
  자동 단추에 대 한 표준 레이블이 **자동**합니다.  
   
- [in] *lpszOtherColor*  
- 텍스트 레이블을 합니다 *다른* 단추를 표시 하는 색 중에서 더 또는 NULL입니다.  
+*lpszOtherColor*<br/>
+[in] 텍스트 레이블을 합니다 *다른* 단추를 표시 하는 색 중에서 더 또는 NULL입니다.  
   
  기타 단추에 대 한 표준 레이블이 **다른 색...** .  
   
- [in] *lpszDocColors*  
- 문서 색 단추 텍스트 레이블입니다. 문서 색 색상표를 문서에서 현재 사용 하는 모든 색을 나열 합니다.  
+*lpszDocColors*<br/>
+[in] 문서 색 단추 텍스트 레이블입니다. 문서 색 색상표를 문서에서 현재 사용 하는 모든 색을 나열 합니다.  
   
- [in] *lstDocColors*  
- 현재 문서에 사용 된 색 목록을 합니다.  
+*lstDocColors*<br/>
+[in] 현재 문서에 사용 된 색 목록을 합니다.  
   
- [in] *nColumns*  
- 색 배열에 있는 열의 수입니다.  
+*nColumns*<br/>
+[in] 색 배열에 있는 열의 수입니다.  
   
- [in] *nHorzDockRows*  
- 가로로 도킹 될 때 색 막대에는 행의 수입니다.  
+*nHorzDockRows*<br/>
+[in] 가로로 도킹 될 때 색 막대에는 행의 수입니다.  
   
- [in] *nVertDockColumns*  
- 세로로 도킹 될 때 색 막대에 있는 열의 수입니다.  
+*nVertDockColumns*<br/>
+[in] 세로로 도킹 될 때 색 막대에 있는 열의 수입니다.  
   
- [in] *colorAutomatic*  
- 프레임 워크에는 자동 단추를 클릭할 때 적용 되는 기본 색입니다.  
+*colorAutomatic*<br/>
+[in] 프레임 워크에는 자동 단추를 클릭할 때 적용 되는 기본 색입니다.  
   
- [in] *uiCommandID*  
- 색 막대 컨트롤 명령 id입니다.  
+*uiCommandID*<br/>
+[in] 색 막대 컨트롤 명령 id입니다.  
   
- [in] *bStdColorDlg*  
- 표준 시스템 색 대화 상자를 표시할지 여부를 나타내는 부울 값 또는 [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) 대화 상자.  
+*bStdColorDlg*<br/>
+[in] 표준 시스템 색 대화 상자를 표시할지 여부를 나타내는 부울 값 또는 [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) 대화 상자.  
   
- [in] *pParentBtn*  
- 부모 단추에 대 한 포인터입니다.  
+*pParentBtn*<br/>
+[in] 부모 단추에 대 한 포인터입니다.  
   
- [in] *nID*  
- 명령 ID입니다.  
+*nID*<br/>
+[in] 명령 id입니다.  
   
 ### <a name="remarks"></a>설명  
  생성자 오버 로드 된 각는 `m_bEnabledInCustomizeMode` 멤버 FALSE입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 생성 하는 방법에 설명 된 `CMFCColorPopupMenu` 개체입니다.  
   
  [!code-cpp[NVC_MFC_RibbonApp#34](../../mfc/reference/codesnippet/cpp/cmfccolorpopupmenu-class_1.cpp)]  
@@ -202,9 +202,9 @@ virtual CPane* CreateTearOffBar(
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *pWndMain*|분리 막대가 막대의 부모 창에 대 한 포인터입니다.|  
-|[in] *uiID*|분리 막대가 막대의 명령 ID입니다.|  
-|[in] *lpszName*|창 텍스트 분리 모음입니다.|  
+|*pWndMain*|[in] 분리 막대가 막대의 부모 창에 대 한 포인터입니다.|  
+|*uiID*|[in] 분리 막대가 막대의 명령 ID입니다.|  
+|*lpszName*|[in] 창 텍스트 분리 모음입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  새 분리 컨트롤 막대 개체에 대 한 포인터입니다.  
@@ -233,8 +233,8 @@ void SetPropList(CMFCPropertyGridCtrl* pWndList);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndList*  
- 속성 표 컨트롤 개체에 대 한 포인터입니다.  
+*pWndList*<br/>
+[in] 속성 표 컨트롤 개체에 대 한 포인터입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [계층 구조 차트](../../mfc/hierarchy-chart.md)   

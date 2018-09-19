@@ -16,36 +16,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e93659f8a40d4806189bdcb772b9be89b112b2ee
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f3c78ebb4f0c33424c823008c3afd8fb692a7086
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33255724"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093677"
 ---
 # <a name="compiler-error-c3137"></a>컴파일러 오류 C3137
-'property': 속성을 초기화할 수 없습니다  
-  
- 예를 들어, 생성자의 초기화 목록에서 속성을 초기화할 수 없습니다.  
-  
- 다음 예제에서는 C3137 오류가 생성 됩니다.  
-  
-```  
-// C3137.cpp  
-// compile with: /clr /c  
-ref class CMyClass {  
-public:  
-   property int Size {  
-      int get() {  
-         return 0;  
-      }  
-      void set( int i ) {}  
-   }  
-  
-   CMyClass() : Size( 1 ) {   // C3137  
-      // to resolve this C3137, remove the initializer from the  
-      // ctor declaration and perform the assignment as follows  
-      // Size = 1;  
-   }  
-};  
-```  
+
+'property': 속성을 초기화할 수 없습니다
+
+예를 들어, 생성자의 초기화 목록에서 속성을 초기화할 수 없습니다.
+
+다음 예제에서는 C3137를 생성합니다.
+
+```
+// C3137.cpp
+// compile with: /clr /c
+ref class CMyClass {
+public:
+   property int Size {
+      int get() {
+         return 0;
+      }
+      void set( int i ) {}
+   }
+
+   CMyClass() : Size( 1 ) {   // C3137
+      // to resolve this C3137, remove the initializer from the
+      // ctor declaration and perform the assignment as follows
+      // Size = 1;
+   }
+};
+```

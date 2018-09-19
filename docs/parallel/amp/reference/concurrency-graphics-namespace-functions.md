@@ -13,12 +13,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8fc00f1754358eca0d6e90d484153b79c0a67130
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 6a31a205a90480ae91740ecaf859f411c331bd69
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687051"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037985"
 ---
 # <a name="concurrencygraphics-namespace-functions"></a>Concurrency:: graphics 네임 스페이스 함수
 |||  
@@ -26,7 +26,7 @@ ms.locfileid: "33687051"
 |[copy](#copy)|[copy_async](#copy_async)|  
   
 ##  <a name="copy"></a>  copy 함수 (concurrency:: graphics Namespace)  
- 원본 질감을 대상 버퍼에 복사 하거나 소스 버퍼를 대상 버퍼에 복사 합니다. 이 함수는 일반적인 형태의 `copy(src, dest)`합니다.  
+ 소스 텍스처를 대상 버퍼로 복사 하거나 소스 버퍼를 대상 버퍼로 복사 합니다. 이 함수의 일반 형식은 `copy(src, dest)`합니다.  
   
 ```  
 template <
@@ -132,47 +132,47 @@ void copy (
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Copy_extent`  
- 복사할 질감 섹션의 범위입니다.  
+*_Copy_extent*<br/>
+복사할 질감 섹션의 범위입니다.  
   
- `_Dst`  
- 복사할 대상 개체입니다.  
+*_Dst*<br/>
+복사할 개체입니다.  
   
- `_Dst_byte_size`  
- 대상의 바이트 수입니다.  
+*_Dst_byte_size*<br/>
+대상의 바이트 수입니다.  
   
- `_Dst_type`  
- 대상 개체의 형식입니다.  
+*_Dst_type*<br/>
+대상 개체의 형식입니다.  
   
- `_Dst_offset`  
- 복사를 시작 하는 대상에 대 한 오프셋입니다.  
+*_Dst_offset*<br/>
+대상에 복사를 시작할 오프셋입니다.  
   
- `InputIterator`  
- 입력된 interator의 형식입니다.  
+*InputIterator*<br/>
+입력된 반복기의 형식입니다.  
   
- `OutputIterator`  
- 출력 반복기의 형식입니다.  
+*OutputIterator*<br/>
+출력 반복기의 형식입니다.  
   
- `_Src`  
- 복사할 개체입니다.  
+*_Src*<br/>
+복사할 대상 개체입니다.  
   
- `_Src_byte_size`  
- 원본의 바이트의 수입니다.  
+*_Src_byte_size*<br/>
+소스의 바이트 수입니다.  
   
- `_Src_type`  
- 원본 개체의 형식입니다.  
+*_Src_type*<br/>
+원본 개체의 형식입니다.  
   
- `_Src_offset`  
- 복사를 시작 하는 소스에 대 한 오프셋입니다.  
+*_Src_offset*<br/>
+소스 복사를 시작할 오프셋입니다.  
   
- `first`  
- 소스 컨테이너에는 시작 반복기입니다.  
+*first*<br/>
+소스 컨테이너에는 시작 반복기입니다.  
   
- `last`  
- 소스 컨테이너에 사용 되는 끝 반복기입니다.  
+*last*<br/>
+소스 컨테이너에 사용 되는 끝 반복기입니다.  
   
 ##  <a name="copy_async"></a>  copy_async 함수 (concurrency:: graphics Namespace)  
- 대상 버퍼에 원본 질감을 비동기적으로 복사 또는 소스 버퍼를 대상 버퍼에 복사한 다음 반환을 [completion_future](completion-future-class.md) 대기한 수 있는 개체입니다. 코드 가속기에서 실행 되는 데이터를 복사할 수 없습니다. 이 함수는 일반적인 형태의 `copy(src, dest)`합니다.  
+ 를 대상 버퍼로 소스 텍스처를 비동기적으로 복사 하거나 소스 버퍼를 대상 버퍼로 복사 및 다음 반환 된 [completion_future](completion-future-class.md) 대기할 수 있는 개체입니다. 액셀러레이터에서 코드를 실행 하는 경우 데이터를 복사할 수 없습니다. 이 함수의 일반 형식은 `copy(src, dest)`합니다.  
   
 ```  
 template<
@@ -274,44 +274,44 @@ concurrency::completion_future copy_async(_Src_type& _Src,
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Copy_extent`  
- 복사할 질감 섹션의 범위입니다.  
+*_Copy_extent*<br/>
+복사할 질감 섹션의 범위입니다.  
   
- `_Dst`  
- 복사할 대상 개체입니다.  
+*_Dst*<br/>
+복사할 개체입니다.  
   
- `_Dst_byte_size`  
- 대상의 바이트 수입니다.  
+*_Dst_byte_size*<br/>
+대상의 바이트 수입니다.  
   
- `_Dst_type`  
- 대상 개체의 형식입니다.  
+*_Dst_type*<br/>
+대상 개체의 형식입니다.  
   
- `_Dst_offset`  
- 복사를 시작 하는 대상에 대 한 오프셋입니다.  
+*_Dst_offset*<br/>
+대상에 복사를 시작할 오프셋입니다.  
   
- `InputIterator`  
- 입력된 interator의 형식입니다.  
+*InputIterator*<br/>
+입력된 반복기의 형식입니다.  
   
- `OutputIterator`  
- 출력 반복기의 형식입니다.  
+*OutputIterator*<br/>
+출력 반복기의 형식입니다.  
   
- `_Src`  
- 복사할 개체입니다.  
+*_Src*<br/>
+복사할 대상 개체입니다.  
   
- `_Src_byte_size`  
- 원본의 바이트의 수입니다.  
+*_Src_byte_size*<br/>
+소스의 바이트 수입니다.  
   
- `_Src_type`  
- 원본 개체의 형식입니다.  
+*_Src_type*<br/>
+원본 개체의 형식입니다.  
   
- `_Src_offset`  
- 복사를 시작 하는 소스에 대 한 오프셋입니다.  
+*_Src_offset*<br/>
+소스 복사를 시작할 오프셋입니다.  
   
- `first`  
- 소스 컨테이너에는 시작 반복기입니다.  
+*first*<br/>
+소스 컨테이너에는 시작 반복기입니다.  
   
- `last`  
- 소스 컨테이너에 사용 되는 끝 반복기입니다.  
+*last*<br/>
+소스 컨테이너에 사용 되는 끝 반복기입니다.  
 
 ## <a name="requirements"></a>요구 사항  
  **헤더:** amp_graphics.h  

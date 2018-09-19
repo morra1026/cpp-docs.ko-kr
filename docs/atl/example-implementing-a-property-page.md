@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9bddb536fe50c9f9f7d1eb76d3dfa90c1c3488b8
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 36d3289767d8c8e2eaa2f25889aaff073cf73fce
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759332"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046253"
 ---
 # <a name="example-implementing-a-property-page"></a>예: 속성 페이지 구현
 
@@ -153,25 +153,25 @@ ms.locfileid: "43759332"
 작성 한 후 프로젝트를 만들고 Visual Studio 개발 환경에서 실행할 수 있는 간단한 매크로 사용 하는 도우미 개체 및 속성 페이지를 테스트할 수 있습니다. 이 매크로 도우미를 만드는 개체를 만든 다음 호출 해당 `ShowPage` 의 ProgID를 사용 하 여 메서드를 **DocProperties** 속성 페이지 및 `IUnknown` Visual Studio 편집기에서 현재 활성 문서의 포인터입니다. 이 매크로에 필요한 코드는 다음과 같습니다.
 
 ```vb
-Imports EnvDTE  
-Imports System.Diagnostics  
+Imports EnvDTE
+Imports System.Diagnostics
 
-Public Module AtlPages  
+Public Module AtlPages
 
-Public Sub Test()  
-    Dim Helper  
-    Helper = CreateObject("ATLPages7.Helper.1")  
+Public Sub Test()
+    Dim Helper
+    Helper = CreateObject("ATLPages7.Helper.1")
 
-    On Error Resume Next  
-    Helper.ShowPage( ActiveDocument.Name, "ATLPages7Lib.DocumentProperties.1", DTE.ActiveDocument )  
+    On Error Resume Next
+    Helper.ShowPage( ActiveDocument.Name, "ATLPages7Lib.DocumentProperties.1", DTE.ActiveDocument )
 End Sub
 
-End Module  
+End Module
 ```
 
 이 매크로 실행 하면 파일 이름 및 현재 텍스트 문서의 읽기 전용 상태를 보여 주는 속성 페이지에 표시 됩니다. 문서의 읽기 전용 상태를 반영 되며 개발 환경에서 문서에 쓸 수 디스크에 있는 파일의 읽기 전용 특성을 반영 되지 않습니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[속성 페이지](../atl/atl-com-property-pages.md)   
+[속성 페이지](../atl/atl-com-property-pages.md)<br/>
 [ATLPages 샘플](../visual-cpp-samples.md)

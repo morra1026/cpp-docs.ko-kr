@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f58d66e9d3dacfa2c0b38eb84fe51e0813a892d3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b46b3669978ff3735d5a16015ca0a01e65f07ae9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252434"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037855"
 ---
 # <a name="compiler-error-c3610"></a>컴파일러 오류 C3610
-'valuetype': 값 형식 해야 수 'boxed' ' method '메서드를 호출할 수 있습니다  
-  
- 기본적으로 값 형식에 없는 경우 관리 되는 힙 .NET 런타임 클래스에서와 같은 메서드를 호출 하기 전에 `Object`, 관리 되는 힙에 값 형식을 이동 해야 합니다.  
-  
- C3610은 사용 되지 않는 컴파일러 옵션을 사용 하 여 연결할 수만 **/clr:oldSyntax**합니다.  
+
+'valuetype': 값 형식 해야 수 'b o x' ' method '메서드를 호출할 수 있습니다
+
+기본적으로 값 형식에 없는 경우 관리 되는 힙 .NET 런타임 클래스에서와 같은 메서드를 호출 하기 전에 `Object`, 관리 되는 힙에 값 형식을 이동 해야 합니다.
+
+C3610 사용 되지 않는 컴파일러 옵션을 사용 하 여 전용인 **/clr: oldsyntax**합니다.

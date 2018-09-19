@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: aa6788945a7f36a2b9b478b72e514552cf8d9603
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: b83acbc8b4ca6beb3288ed9e02667410b239c6e7
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315810"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722048"
 ---
 # <a name="text-tool-font-dialog-box-c-image-editor-for-icons"></a>텍스트 도구 글꼴 대화 상자 (c + +) (아이콘에 대 한 이미지 편집기)
 
@@ -34,20 +34,25 @@ ms.locfileid: "44315810"
 
 이 대화 상자를 열려면 클릭 합니다 **글꼴** 단추를 **텍스트 도구** 대화 상자.
 
-**글꼴**  
-사용 가능한 글꼴을 나열합니다.
+- **글꼴**
 
-**글꼴 스타일**  
-사용 가능한 지정된 된 글꼴 스타일을 나열합니다.
+   사용 가능한 글꼴을 나열합니다.
 
-**Size**  
-지정된 된 글꼴에 사용할 수 있는 포인트 크기를 나열합니다.
+- **글꼴 스타일**
 
-**샘플**  
-지정 된 글꼴 설정을 사용 하 여 텍스트를 표시 하는 방법을 예제를 보여 줍니다.
+   사용 가능한 지정된 된 글꼴 스타일을 나열합니다.
 
-**스크립트**  
-지정된 된 글꼴에 대 한 사용 가능한 언어 스크립트를 나열 합니다. 다른 언어로 스크립트를 선택 하면 문자 집합에 대 한 언어 다국어 문서를 만드는 데 사용할 수는 있습니다.
+- **Size**
+
+   지정된 된 글꼴에 사용할 수 있는 포인트 크기를 나열합니다.
+
+- **샘플**
+
+   지정 된 글꼴 설정을 사용 하 여 텍스트를 표시 하는 방법을 예제를 보여 줍니다.
+
+- **스크립트**
+
+   지정된 된 글꼴에 대 한 사용 가능한 언어 스크립트를 나열 합니다. 다른 언어로 스크립트를 선택 하면 문자 집합에 대 한 언어 다국어 문서를 만드는 데 사용할 수는 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 

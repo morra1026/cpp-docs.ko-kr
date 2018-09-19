@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acb946e7032cb4b6c04f715563e6101e03770308
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9b26546a3cf7612b32eb6a464ca21abafafb4cd9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243263"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102855"
 ---
 # <a name="compiler-error-c2994"></a>컴파일러 오류 C2994
-템플릿 매개 변수 목록에 명명되지 않은 클래스가 있습니다.  
-  
- 클래스 이름을 지정하지 않고 `class` 키워드를 템플릿 인수로 사용할 수 없습니다.
+
+템플릿 매개 변수 목록에 명명되지 않은 클래스가 있습니다.
+
+클래스 이름을 지정하지 않고 `class` 키워드를 템플릿 인수로 사용할 수 없습니다.

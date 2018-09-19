@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8434f6ce0a1f57e144bd4f58d2f19c4f3639fb66
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d2f0c076da0beb765a84485968dd57f72abb9824
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301894"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075467"
 ---
 # <a name="compiler-warning-level-3-c4543"></a>컴파일러 경고(수준 3) C4543
-' No_injected_text' 특성에 의해 표시 되는 삽입 된 텍스트  
-  
- [no_injected_text](../../windows/no-injected-text.md) 특성 소스 코드에 표시 되었습니다. 컴파일러에서 방해 특성 코드를 삽입 합니다.  
-  
- 이 경고는 알려 특성은 코드를 넣을 할 수 없습니다.
+
+' No_injected_text' 특성으로 표시 되지 않도록 하는 삽입 된 텍스트
+
+합니다 [no_injected_text](../../windows/no-injected-text.md) 소스 코드에서 특성 사용 했습니다. 즉, 컴파일러 못합니다 특성 코드를 삽입 하는 동작입니다.
+
+이 경고에 방문 하셔서 찾아보시기 특성은 코드를 삽입할 수 없습니다는.

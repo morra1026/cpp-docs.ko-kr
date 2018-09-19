@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61d37405a9853fda79c8717f16abbd931ed947e7
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 34fedf8a30a5ed47837f593012e4cd836782bb66
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42539314"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720137"
 ---
 # <a name="movsb"></a>__movsb
 **Microsoft 전용**  
@@ -41,14 +41,14 @@ void __movsb(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [out] `Destination`  
- 복사 대상에 대 한 포인터입니다.  
+*대상*<br/>
+[out] 복사 대상에 대 한 포인터입니다.  
   
- [in] `Source`  
- 복사의 원본에 대 한 포인터입니다.  
+*Source*<br/>
+[in] 복사의 원본에 대 한 포인터입니다.  
   
- [in] `Count`  
- 복사할 바이트 수입니다.  
+*개수*<br/>
+[in] 복사할 바이트 수입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
@@ -63,7 +63,7 @@ void __movsb(
   
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // movsb.cpp  

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eddce134c3cda27e57a6a20d709bc4eab08d6e80
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 17efa63488a736089c988e6cfbb7bd97330816aa
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849017"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701391"
 ---
 # <a name="cmfcribbonapplicationbutton-class"></a>CMFCRibbonApplicationButton 클래스
 응용 프로그램 창의 왼쪽 위 모서리에 있는 특수 단추를 구현합니다. 클릭하면 단추는 **열기** , **저장**및 **종료**와 같은 일반적인 **파일**명령이 포함된 메뉴를 엽니다.  
@@ -52,7 +52,7 @@ class CMFCRibbonApplicationButton : public CMFCRibbonButton
 |`CMFCRibbonApplicationButton::GetThisClass`|에 대 한 포인터를 가져오는 데 프레임 워크에 의해 합니다 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 이 클래스 형식과 연결 된 개체입니다.|  
 |[CMFCRibbonApplicationButton::SetImage](#setimage)|리본 응용 프로그램 단추에 이미지를 할당합니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `CMFCRibbonApplicationButton` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 이 예제에서는 응용 프로그램 단추에 이미지를 할당 하는 방법 및 해당 도구 설명이 설정 하는 방법을 보여 줍니다. 이 코드 조각은 [클라이언트 그리기 샘플](../../visual-cpp-samples.md)의 일부입니다.  
   
  [!code-cpp[NVC_MFC_DrawClient#4](../../mfc/reference/codesnippet/cpp/cmfcribbonapplicationbutton-class_1.h)]  
@@ -98,11 +98,11 @@ void SetImage(HBITMAP hBmp);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiBmpResID*  
- 응용 프로그램 단추에 표시할 이미지의 리소스 ID입니다.  
+*uiBmpResID*<br/>
+[in] 응용 프로그램 단추에 표시할 이미지의 리소스 ID입니다.  
   
- [in] *hBmp*  
- 응용 프로그램 단추에 표시할 비트맵 핸들입니다.  
+*hBmp*<br/>
+[in] 응용 프로그램 단추에 표시할 비트맵 핸들입니다.  
   
 ### <a name="remarks"></a>설명  
  단추를 만든 후 새 이미지를 응용 프로그램 리본 단추에 할당 하려면이 메서드를 사용 합니다. 응용 프로그램 단추를 응용 프로그램 창의 왼쪽 위 모퉁이 있습니다.  

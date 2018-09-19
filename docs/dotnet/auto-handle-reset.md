@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 0e63d93134d48b1f429b097562805c967911e608
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7596829cc89dcfa335b38d24a57666a430507e27
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103706"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111721"
 ---
 # <a name="autohandlereset"></a>auto_handle::reset
-현재 소유한 개체를 삭제 하 고 필요에 따라 새 개체를 소유한을 수행 합니다.  
+현재 소유한 개체를 제거 하 고 필요에 따라 새 개체의 소유를 수행 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,8 +40,8 @@ void reset();
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `_new_ptr`  
- (선택 사항) 새 개체입니다.  
+*_new_ptr*<br/>
+(선택 사항) 새 개체입니다.  
   
 ## <a name="example"></a>예제  
   

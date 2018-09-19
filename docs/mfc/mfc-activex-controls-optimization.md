@@ -1,7 +1,7 @@
 ---
 title: 'MFC ActiveX 컨트롤: 최적화 | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -24,15 +24,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 424bb8e7082432cea3f730bb0783c2c1912c293f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 09d441a44660310a13be264b24286ad2f0ccc6cd
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220508"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535186"
 ---
 # <a name="mfc-activex-controls-optimization"></a>MFC ActiveX 컨트롤: 최적화
 이 문서에는 성능 향상을 위해 ActiveX 컨트롤을 최적화 하 여 기술을 설명 합니다.  
+
+>[!IMPORTANT]
+> ActiveX는 새로운 개발에 사용 되지 해야 하는 레거시 기술입니다. ActiveX를 대체 하는 최신 기술에 대 한 자세한 내용은 참조 하세요. [ActiveX 컨트롤](activex-controls.md)합니다.
   
  항목 [설정 Off the 활성화 되었을 때 표시 옵션](../mfc/turning-off-the-activate-when-visible-option.md) 하 고 [제공 마우스 상호 작용 하는 동안 비활성](../mfc/providing-mouse-interaction-while-inactive.md) 활성화 될 때까지 창을 만들지는 컨트롤에 설명 합니다. 항목 [창 없는 활성화 제공](../mfc/providing-windowless-activation.md) 활성화 되는 경우에 창을 만들지는 컨트롤에 설명 합니다.  
   

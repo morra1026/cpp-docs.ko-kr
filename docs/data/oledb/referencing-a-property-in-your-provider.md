@@ -17,25 +17,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 467fa4812af6957bea249d6f55701e1474a9382d
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: f6730746cbb3da08e52b5a4d9936aa48a8484886
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42572384"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052564"
 ---
 # <a name="referencing-a-property-in-your-provider"></a>공급자의 속성 참조
+
 원하는 속성에 대 한 속성 그룹 및 속성 ID를 찾습니다. 자세한 내용은 [OLE DB 속성](/previous-versions/windows/desktop/ms722734\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
- 다음 예제에서는 하려는 행 집합에서 속성을 가정 합니다. 세션 또는 명령에 대 한 코드는 유사 하지만 서로 다른 인터페이스를 사용 합니다.  
+다음 예제에서는 하려는 행 집합에서 속성을 가정 합니다. 세션 또는 명령에 대 한 코드는 유사 하지만 서로 다른 인터페이스를 사용 합니다.  
   
- 만들기는 [CDBPropSet](../../data/oledb/cdbpropset-class.md) 속성 그룹을 사용 하 여 생성자에 매개 변수로 개체입니다. 예를 들어:  
+만들기는 [CDBPropSet](../../data/oledb/cdbpropset-class.md) 속성 그룹을 사용 하 여 생성자에 매개 변수로 개체입니다. 예를 들어:  
   
 ```cpp  
 CDBPropSet propset(DBPROPSET_ROWSET);  
 ```  
   
- 호출 [AddProperty](../../data/oledb/cdbpropset-addproperty.md), 속성에 할당할 속성 ID 및 값을 전달 합니다. 값의 형식을 사용 하는 속성에 따라 달라 집니다.  
+호출 [AddProperty](../../data/oledb/cdbpropset-addproperty.md), 속성에 할당할 속성 ID 및 값을 전달 합니다. 값의 형식을 사용 하는 속성에 따라 달라 집니다.  
   
 ```cpp  
 CDBPropSet propset(DBPROPSET_ROWSET);  
@@ -45,7 +46,7 @@ propset.AddProperty(DBPROP_IRowsetChange, true);
 propset.AddProperty(DBPROP_UPDATABILITY, DBPROPVAL_UP_INSERT | DBPROPVAL_UP_CHANGE | DBPROPVAL_UP_DELETE);  
 ```  
   
- 사용 된 `IRowset` 호출에 대 한 인터페이스 `GetProperties`합니다. 매개 변수로 설정할 속성을 전달 합니다. 최종 코드는 다음과 같습니다.  
+사용 된 `IRowset` 호출에 대 한 인터페이스 `GetProperties`합니다. 매개 변수로 설정할 속성을 전달 합니다. 최종 코드는 다음과 같습니다.  
   
 ```cpp  
 CAgentRowset<CMyProviderCommand>* pRowset = (CAgentRowset<CMyProviderCommand>*) pThis;  
@@ -78,4 +79,5 @@ if (pPropSet)
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [OLE DB 공급자 템플릿을 사용하여 작업](../../data/oledb/working-with-ole-db-provider-templates.md)
+
+[OLE DB 공급자 템플릿을 사용하여 작업](../../data/oledb/working-with-ole-db-provider-templates.md)

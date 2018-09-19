@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6bbfb34d34f6bd920744621042f5f3e09143e896
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d2b70e7332c5f0a24af80ddb5cfd14a8ecf146de
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751321"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025154"
 ---
 # <a name="icollectiononstlimpl-class"></a>ICollectionOnSTLImpl 클래스
 
@@ -35,25 +35,25 @@ ms.locfileid: "43751321"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T, class CollType, class ItemType, class CopyItem, class EnumType>  
+template <class T, class CollType, class ItemType, class CopyItem, class EnumType>
 class ICollectionOnSTLImpl : public T
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 COM 컬렉션 인터페이스입니다.
 
-*CollType*  
+*CollType*<br/>
 C + + 표준 라이브러리 컨테이너 클래스입니다.
 
-*ItemType*  
+*ItemType*<br/>
 컨테이너 인터페이스에 의해 노출 되는 항목의 형식입니다.
 
-*CopyItem*  
+*CopyItem*<br/>
 A [복사 정책 클래스](../../atl/atl-copy-policy-classes.md)합니다.
 
-*EnumType*  
+*EnumType*<br/>
 A [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md)-호환 열거자 클래스입니다.
 
 ## <a name="members"></a>멤버
@@ -111,7 +111,7 @@ STDMETHOD(getcount)(long* pcount);
 
 ### <a name="parameters"></a>매개 변수
 
-*pcount*  
+*pcount*<br/>
 [out] 컬렉션의 요소 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -128,10 +128,10 @@ STDMETHOD(get_Item)(long Index, ItemType* pvar);
 
 ### <a name="parameters"></a>매개 변수
 
-*Index*  
+*Index*<br/>
 [in] 컬렉션에 있는 항목의 인덱스 1부터 시작 합니다.
 
-*pvar*  
+*pvar*<br/>
 [out] 에 해당 하는 항목 *인덱스*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -152,7 +152,7 @@ STDMETHOD(get__NewEnum)(IUnknown** ppUnk);
 
 ### <a name="parameters"></a>매개 변수
 
-*ppUnk*  
+*ppUnk*<br/>
 [out] 합니다 **IUnknown** 새로 만든된 열거자 개체의 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -173,5 +173,5 @@ CollType m_coll;
 
 ## <a name="see-also"></a>참고 항목
 
-[ATLCollections 샘플](../../visual-cpp-samples.md)   
+[ATLCollections 샘플](../../visual-cpp-samples.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

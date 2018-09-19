@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f895626ac04afc776c279f5e2bf7a857ffbd432
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 419178a7ff71817c418aa791ae1f6cce116cd986
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246237"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057695"
 ---
 # <a name="compiler-error-c3040"></a>컴파일러 오류 C3040
-'var': 'reduction' 절의 변수 형식이 환산 연산자 'operator'와 호환되지 않습니다.  
-  
- [reduction](../../parallel/openmp/reference/reduction.md) 절의 변수를 reduction 연산자와 함께 사용할 수 없습니다.  
-  
- 다음 샘플에서는 C3040을 생성합니다.  
-  
-```  
-// C3040.cpp  
-// compile with: /openmp /c  
-#include "omp.h"  
-double d;  
-  
-int main() {  
-   #pragma omp parallel reduction(&:d)   // C3040  
-      ;  
-  
-   #pragma omp parallel reduction(-:d)  // OK  
-      ;  
-}  
+
+'var': 'reduction' 절의 변수 형식이 환산 연산자 'operator'와 호환되지 않습니다.
+
+[reduction](../../parallel/openmp/reference/reduction.md) 절의 변수를 reduction 연산자와 함께 사용할 수 없습니다.
+
+다음 샘플에서는 C3040을 생성합니다.
+
+```
+// C3040.cpp
+// compile with: /openmp /c
+#include "omp.h"
+double d;
+
+int main() {
+   #pragma omp parallel reduction(&:d)   // C3040
+      ;
+
+   #pragma omp parallel reduction(-:d)  // OK
+      ;
+}
 ```

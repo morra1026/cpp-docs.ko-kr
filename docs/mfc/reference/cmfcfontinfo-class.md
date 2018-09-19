@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3984ebc1568c831420e11bd7b3c9004dabcc316b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: eef400f13e36ac543fbcd73ccb7aedf4bc053037
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222096"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718096"
 ---
 # <a name="cmfcfontinfo-class"></a>CMFCFontInfo 클래스
 `CMFCFontInfo` 클래스 이름 및 글꼴의 기타 특성에 설명 합니다.  
@@ -60,7 +60,7 @@ class CMFCFontInfo : public CObject
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CMFCFontInfo::m_nCharSet](#m_ncharset)|연결 된 문자 집합 (스크립트)을 지정 하는 값입니다.|  
 |[CMFCFontInfo::m_nPitchAndFamily](#m_npitchandfamily)|피치 및 글꼴의 제품군을 지정 하는 값입니다.|  
@@ -94,23 +94,23 @@ CMFCFontInfo(const CMFCFontInfo& src);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszName*  
- 글꼴의 이름입니다. 자세한 내용은 참조 하세요. 합니다 `lfFaceName` 의 멤버는 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 구조입니다.  
+*lpszName*<br/>
+[in] 글꼴의 이름입니다. 자세한 내용은 참조 하세요. 합니다 `lfFaceName` 의 멤버는 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 구조입니다.  
   
- [in] *lpszScript*  
- 글꼴의 스크립트 (문자 집합)의 이름입니다.  
+*lpszScript*<br/>
+[in] 글꼴의 스크립트 (문자 집합)의 이름입니다.  
   
- [in] *nCharSet*  
- 글꼴의 문자 집합 (스크립트)을 지정 하는 값입니다. 자세한 내용은 참조 하세요. 합니다 `lfCharSet` 의 멤버는 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 구조입니다.  
+*nCharSet*<br/>
+[in] 글꼴의 문자 집합 (스크립트)을 지정 하는 값입니다. 자세한 내용은 참조 하세요. 합니다 `lfCharSet` 의 멤버는 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 구조입니다.  
   
- [in] *nPitchAndFamily*  
- 피치 및 글꼴의 제품군을 지정 하는 값입니다. 자세한 내용은 참조 하세요. 합니다 `lfPitchAndFamily` 의 멤버는 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 구조입니다.  
+*nPitchAndFamily*<br/>
+[in] 피치 및 글꼴의 제품군을 지정 하는 값입니다. 자세한 내용은 참조 하세요. 합니다 `lfPitchAndFamily` 의 멤버는 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 구조입니다.  
   
- [in] *n 형식*  
- 글꼴 종류를 지정 하는 값입니다. 이 매개 변수는 DEVICE_FONTTYPE, RASTER_FONTTYPE, TRUETYPE_FONTTYPE의 비트 조합 (OR) 수 있습니다.  
+*n 형식*<br/>
+[in] 글꼴 종류를 지정 하는 값입니다. 이 매개 변수는 DEVICE_FONTTYPE, RASTER_FONTTYPE, TRUETYPE_FONTTYPE의 비트 조합 (OR) 수 있습니다.  
   
- [in] *src*  
- 기존 `CMFCFontInfo` 멤버가이 생성 되는 개체 `CMFCFontInfo` 개체입니다.  
+*src*<br/>
+[in] 기존 `CMFCFontInfo` 멤버가이 생성 되는 개체 `CMFCFontInfo` 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
   

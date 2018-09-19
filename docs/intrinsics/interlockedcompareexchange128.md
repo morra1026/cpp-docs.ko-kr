@@ -18,17 +18,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e5433e2d1ddf94f23a3f483a8857e3032c27be3
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 7e7499bdb615edfb6c03c54ba7fe8272d0fa6b26
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42545867"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721125"
 ---
 # <a name="interlockedcompareexchange128"></a>_InterlockedCompareExchange128
+
 **Microsoft 전용**  
   
- 128 비트 연관된 비교 및 교환을 수행합니다.  
+128 비트 연관된 비교 및 교환을 수행합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,17 +43,17 @@ unsigned char _InterlockedCompareExchange128(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in, out] `Destination`  
- 두 64 비트 정수의 배열 대상에 대 한 포인터 128 비트 필드로 간주 합니다. 대상 데이터에 일반 보호 오류를 방지 하려면 정렬 16 바이트 여야 합니다.  
+*대상*<br/>
+[out에서] 두 64 비트 정수의 배열 대상에 대 한 포인터 128 비트 필드로 간주 합니다. 대상 데이터에 일반 보호 오류를 방지 하려면 정렬 16 바이트 여야 합니다.  
   
- [in] `ExchangeHigh`  
- 대상의 상위 부분을 사용 하 여 교환할 수 있는 64 비트 정수입니다.  
+*ExchangeHigh*<br/>
+[in] 대상의 상위 부분을 사용 하 여 교환할 수 있는 64 비트 정수입니다.  
   
- [in] `ExchangeLow`  
- 대상의 하위 부분으로 교환할 수 있는 64 비트 정수입니다.  
+*ExchangeLow*<br/>
+[in] 대상의 하위 부분으로 교환할 수 있는 64 비트 정수입니다.  
   
- [in, out] `ComparandResult`  
- (128 비트 필드로 간주 됨) 하는 두 개의 64 비트 정수 배열에 대 한 포인터를 대상으로 비교 합니다.  출력 시이 대상의 원래 값으로 덮어씁니다 되어 있습니다.  
+*ComparandResult*<br/>
+[out에서] (128 비트 필드로 간주 됨) 하는 두 개의 64 비트 정수 배열에 대 한 포인터를 대상으로 비교 합니다.  출력 시이 대상의 원래 값으로 덮어씁니다 되어 있습니다.  
   
 ## <a name="return-value"></a>반환 값  
  128 비트 피비교수와 대상의 원래 값이 일치 하는 경우 1입니다. `ExchangeHigh` 및 `ExchangeLow` 128 비트 대상을 덮어씁니다.  
@@ -79,7 +80,7 @@ unsigned char _InterlockedCompareExchange128(
   
  이 루틴은 내장 함수로 사용할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  이 예제에서는 `_InterlockedCompareExchange128` 해당 높음 및 낮음 단어의 합계를 사용 하 여 두 개의 64 비트 정수 배열로 높은 단어를 대체 하는 데 하위 워드를 하나씩 늘립니다. BigInt.Int 배열에 대 한 액세스는 원자성 하지만이 예제에서는 단일 스레드를 사용 하 고 간단히 하기 위해 잠금을 무시 합니다.  
   
 ```  
@@ -128,8 +129,9 @@ int main(void)
 BigInt.Int[1] = 34, BigInt.Int[0] = 12  
 ```  
   
-**Microsoft 전용 종료**  
- 고급 마이크로 장치, inc 저작권 2007 All rights reserved. 고급 마이크로 장치, Inc. 사용 권한을 사용 하 여 재현  
+**Microsoft 전용 종료**
+
+고급 마이크로 장치, inc 저작권 2007 All rights reserved. 고급 마이크로 장치, Inc. 사용 권한을 사용 하 여 재현  
   
 ## <a name="see-also"></a>참고 항목  
  [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)   

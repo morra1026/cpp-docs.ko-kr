@@ -1,5 +1,5 @@
 ---
-title: -H e l (컴파일러 명령줄 도움말) | Microsoft Docs
+title: 도움말 (컴파일러 명령줄 도움말) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -22,34 +22,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40246db2d70d69fc2dab576ef5c7da9c7829ab80
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cc21ac544a7f30dd193ca571fcd82e1078fb44dc
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371387"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713234"
 ---
 # <a name="help-compiler-command-line-help"></a>/HELP(컴파일러 명령줄 도움말)
-표준 출력으로 컴파일러 옵션 목록을 표시합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-/HELP  
-/help  
-/?  
-```  
-  
-## <a name="remarks"></a>설명  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면  
-  
--   이 컴파일러 옵션은 명령줄에서만 액세스 해야 합니다.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면  
-  
--   이 컴파일러 옵션을 프로그래밍 방식으로 변경할 수 없습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [컴파일러 옵션](../../build/reference/compiler-options.md)   
- [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+
+표준 출력에 컴파일러 옵션의 목록을 표시합니다.
+
+## <a name="syntax"></a>구문
+
+```
+/HELP
+/help
+/?
+```
+
+## <a name="remarks"></a>설명
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
+
+- 명령줄에서이 컴파일러 옵션에 액세스 해야 합니다.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
+
+- 이 컴파일러 옵션을 프로그래밍 방식으로 변경할 수 없습니다.
+
+## <a name="see-also"></a>참고 항목
+
+[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
+[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

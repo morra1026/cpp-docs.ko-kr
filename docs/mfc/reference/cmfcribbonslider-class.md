@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0816a490a4375504168b11d8055ddbe41dae2109
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 165dbf85e22a6f30089bbf1523068057b972b7e8
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540687"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709334"
 ---
 # <a name="cmfcribbonslider-class"></a>CMFCRibbonSlider 클래스
 `CMFCRibbonSlider` 클래스는 리본 표시줄 또는 리본 상태 표시줄에 추가할 수 있는 슬라이더 컨트롤을 구현 합니다. 리본 슬라이더 컨트롤은 Office 2007 응용 프로그램의 확대/축소 슬라이더와 유사합니다.  
@@ -87,7 +87,7 @@ class CMFCRibbonSlider : public CMFCRibbonBaseElement
   
  `SetZoomIncrement` 메서드 정의를 추가 하거나 확대/축소 단추를 클릭할 때 현재 위치에서 뺄 증가 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서 다양 한 메서드를 사용 하는 방법에 설명 합니다 `CMFCRibbonSlider` 슬라이더의 속성을 설정 하는 클래스입니다. 생성 하는 방법을 보여는 `CMFCRibbonSlider` 개체, 확대/축소 단추를 표시, 슬라이더 컨트롤의 현재 위치를 설정 및 슬라이더 컨트롤에 대 한 값의 범위를 설정 합니다.  
   
  [!code-cpp[NVC_MFC_RibbonApp#12](../../mfc/reference/codesnippet/cpp/cmfcribbonslider-class_1.cpp)]  
@@ -112,8 +112,8 @@ CMFCRibbonSlider(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 슬라이더의 id입니다.  
+*nID*<br/>
+[in] 슬라이더의 id입니다.  
   
  [in]. *nWidth*  
  슬라이더 너비 (픽셀)에서입니다.  
@@ -207,11 +207,11 @@ void SetPos(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nPos*  
- 슬라이더에 대해 설정할 위치를 지정 합니다. 슬라이더의 시작 부분에 상대적인 위치가입니다.  
+*nPos*<br/>
+[in] 슬라이더에 대해 설정할 위치를 지정 합니다. 슬라이더의 시작 부분에 상대적인 위치가입니다.  
   
- [in] *bRedraw*  
- True 이면 슬라이더가 그려집니다.  
+*bRedraw*<br/>
+[in] True 이면 슬라이더가 그려집니다.  
   
 ##  <a name="setrange"></a>  CMFCRibbonSlider::SetRange  
  슬라이더 컨트롤에 대 한 값의 범위를 설정 합니다.  
@@ -223,11 +223,11 @@ void SetRange(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nMin*  
- 슬라이더 컨트롤의 최소값을 지정합니다.  
+*nMin*<br/>
+[in] 슬라이더 컨트롤의 최소값을 지정합니다.  
   
- [in] *최대*  
- 슬라이더 컨트롤의 최대값을 지정합니다.  
+*최대*<br/>
+[in] 슬라이더 컨트롤의 최대값을 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  최소 및 최대 값을 설정 하 여 슬라이더 컨트롤에 대 한 값의 범위를 지정 합니다.  
@@ -251,8 +251,8 @@ void SetZoomIncrement(int nZoomIncrement);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nZoomIncrement*  
- 슬라이더 컨트롤의 확대/축소 증분을 지정합니다.  
+*nZoomIncrement*<br/>
+[in] 슬라이더 컨트롤의 확대/축소 증분을 지정합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [계층 구조 차트](../../mfc/hierarchy-chart.md)   

@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2f53aa98d7743ccee804ed7a89df160368c8a23
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 57c7c55ae2214c4123973e93c65f5e189d32b99a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849167"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701651"
 ---
 # <a name="cmfctaskspanetaskgroup-class"></a>CMFCTasksPaneTaskGroup 클래스
 합니다 `CMFCTasksPaneTaskGroup` 클래스는에서 사용 하는 도우미 클래스를 [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) 제어 합니다. `CMFCTasksPaneTaskGroup` 형식의 개체는 *작업 그룹*을 나타냅니다. 작업 그룹은 축소 단추가 포함된 별도 상자에 프레임워크가 표시하는 항목 목록입니다. 상자는 선택적 캡션(그룹 이름)을 가질 수 있습니다. 그룹을 축소하면 작업 목록이 표시되지 않습니다.  
@@ -67,7 +67,7 @@ class CMFCTasksPaneTaskGroup : public CObject
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CMFCTasksPaneTaskGroup::m_bIsBottom](#m_bisbottom)|작업 그룹의 작업 창 컨트롤의 아래쪽으로 정렬 되는지 여부를 결정 합니다.|  
 |[CMFCTasksPaneTaskGroup::m_bIsCollapsed](#m_biscollapsed)|작업 그룹이 축소 되는지 여부를 결정 합니다.|  
@@ -216,11 +216,11 @@ virtual BOOL SetACCData(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pParent*  
- 현재 작업 그룹의 부모 창을 나타냅니다.  
+*pParent*<br/>
+[in] 현재 작업 그룹의 부모 창을 나타냅니다.  
   
- [out] *데이터*  
- 형식의 개체 `CAccessibilityData` 는 현재 작업 그룹의 내게 필요한 옵션 데이터를 사용 하 여 채워집니다.  
+*data*<br/>
+[out] 형식의 개체 `CAccessibilityData` 는 현재 작업 그룹의 내게 필요한 옵션 데이터를 사용 하 여 채워집니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 합니다 *데이터* FALSE 매개 변수를 성공적으로 현재 작업 그룹의 내게 필요한 옵션 데이터를 사용 하 여 채워진 고, 그렇지 않으면입니다.  

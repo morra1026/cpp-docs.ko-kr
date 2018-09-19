@@ -1,28 +1,36 @@
 ---
 title: 구조를 구현 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/11/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Implements
+- implements/Microsoft::WRL::Implements::CanCastTo
+- implements/Microsoft::WRL::Implements::CastToUnknown
+- implements/Microsoft::WRL::Implements::FillArrayWithIid
+- implements/Microsoft::WRL::Implements::IidCount
 dev_langs:
 - C++
 helpviewer_keywords:
-- Implements structure
+- Microsoft::WRL::Implements structure
+- Microsoft::WRL::Implements::CanCastTo method
+- Microsoft::WRL::Implements::CastToUnknown method
+- Microsoft::WRL::Implements::FillArrayWithIid method
+- Microsoft::WRL::Implements::IidCount method
 ms.assetid: 29b13e90-34d4-4a0b-babd-5187c9eb0c36
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 417f384b54833786c68fe2b13dc9e7e53b1bc975
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 18616b1010dfe6a23861c512b1113c30fe5251ce
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603290"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535355"
 ---
 # <a name="implements-structure"></a>Implements 구조체
 
@@ -104,23 +112,23 @@ struct __declspec(novtable) Implements<RuntimeClassFlags<flags>, I0, I1, I2, I3,
 
 ### <a name="public-typedefs"></a>공용 Typedefs
 
-|이름|설명|
-|----------|-----------------|
-|`ClassFlags`|`RuntimeClassFlags<WinRt>`의 동의어입니다.|
+| 이름        | 설명                               |
+| ----------- | ----------------------------------------- |
+| `ClassFlags`| `RuntimeClassFlags<WinRt>`의 동의어입니다. |
 
 ### <a name="protected-methods"></a>보호된 메서드
 
-|이름|설명|
-|----------|-----------------|
-|[Implements::CanCastTo 메서드](../windows/implements-cancastto-method.md)|지정된 된 인터페이스에 대 한 포인터를 가져옵니다.|
-|[Implements::CastToUnknown 메서드](../windows/implements-casttounknown-method.md)|기본 포인터를 가져옵니다 `IUnknown` 인터페이스입니다.|
-|[Implements::FillArrayWithIid 메서드](../windows/implements-fillarraywithiid-method.md)|현재 0 번째 템플릿 매개 변수로 지정 된 배열 요소에 지정 된 인터페이스 ID를 삽입 합니다.|
+| 이름                                              | 설명                                                                                                   |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| [Implements:: cancastto](#cancastto)               | 지정된 된 인터페이스에 대 한 포인터를 가져옵니다.                                                                    |
+| [Implements:: casttounknown](#casttounknown)       | 기본 포인터를 가져옵니다 `IUnknown` 인터페이스입니다.                                                        |
+| [Implements:: fillarraywithiid](#fillarraywithiid) | 현재 0 번째 템플릿 매개 변수로 지정 된 배열 요소에 지정 된 인터페이스 ID를 삽입 합니다. |
 
 ### <a name="protected-constants"></a>보호 된 상수
 
-|name|설명|
-|----------|-----------------|
-|[Implements::IidCount 상수](../windows/implements-iidcount-constant.md)|구현 된 인터페이스 Id 수를 보유합니다.|
+| 이름                              | 설명                                    |
+| --------------------------------- | ---------------------------------------------- |
+| [Implements:: iidcount](#iidcount) | 구현 된 인터페이스 Id 수를 보유합니다. |
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -142,6 +150,76 @@ struct __declspec(novtable) Implements<RuntimeClassFlags<flags>, I0, I1, I2, I3,
 
 **네임스페이스:** Microsoft::WRL
 
-## <a name="see-also"></a>참고 항목
+## <a name="cancastto"></a>Implements:: cancastto
 
-[Microsoft::WRL 네임스페이스](../windows/microsoft-wrl-namespace.md)
+지정된 된 인터페이스에 대 한 포인터를 가져옵니다.
+
+```cpp
+__forceinline HRESULT CanCastTo(
+   REFIID riid,
+   _Deref_out_ void **ppv
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*riid*  
+인터페이스 ID에 대 한 참조
+
+*ppv*  
+성공 하면 인터페이스에 대 한 포인터를 지정 *riid*합니다.
+
+### <a name="return-value"></a>반환 값
+
+성공 하면 s_ok이 고 그렇지 않으면 E_NOINTERFACE 같은 오류를 나타내는 HRESULT입니다.
+
+### <a name="remarks"></a>설명
+
+QueryInterface 작업을 수행 하는 내부 도우미 함수입니다.
+
+## <a name="casttounknown"></a>Implements:: casttounknown
+
+기본 포인터를 가져옵니다 `IUnknown` 인터페이스입니다.
+
+```cpp
+__forceinline IUnknown* CastToUnknown();
+```
+
+### <a name="return-value"></a>반환 값
+
+이 작업에서 항상 성공 하 고 반환 된 `IUnknown` 포인터입니다.
+
+### <a name="remarks"></a>설명
+
+내부 도우미 함수입니다.
+
+## <a name="fillarraywithiid"></a>Implements:: fillarraywithiid
+
+현재 0 번째 템플릿 매개 변수로 지정 된 배열 요소에 지정 된 인터페이스 ID를 삽입 합니다.
+
+```cpp
+__forceinline static void FillArrayWithIid(
+   unsigned long &index,
+   _In_ IID* iids
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*index*  
+이 작업에 대 한 시작 배열 요소를 나타내는 0부터 시작 인덱스입니다. 이 작업이 완료 되 면 *인덱스* 1 씩 증가 합니다.
+
+*iid*  
+IID 형식의 배열입니다.
+
+### <a name="remarks"></a>설명
+
+내부 도우미 함수입니다.
+
+## <a name="iidcount"></a>Implements:: iidcount
+
+구현 된 인터페이스 Id 수를 보유합니다.
+
+```cpp
+static const unsigned long IidCount;
+```

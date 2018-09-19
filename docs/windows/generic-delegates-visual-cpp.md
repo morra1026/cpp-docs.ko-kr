@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9556aee6ef2d9d7cf10e0bb2bd24bdc61c9a0ecd
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8a9613dbc28b3e1f263133c15ae88d20294962e9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42583475"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702535"
 ---
 # <a name="generic-delegates-visual-c"></a>제네릭 대리자(Visual C++)
 
@@ -39,8 +39,8 @@ generic < [class | typename] type-parameter-identifiers>
 
 ### <a name="parameters"></a>매개 변수
 
-*특성* (선택 사항)  
-추가 선언 정보입니다. 특성 및 특성 클래스에 대한 자세한 내용은 특성을 참조하십시오.
+*특성*  
+(선택 사항) 추가 선언 정보입니다. 특성 및 특성 클래스에 대한 자세한 내용은 특성을 참조하십시오.
 
 *type-parameter-identifier(s)*  
 형식 매개 변수에 대한 식별자의 쉼표로 구분된 목록입니다.
@@ -48,8 +48,8 @@ generic < [class | typename] type-parameter-identifiers>
 *형식 매개 변수-제약 조건 절*  
 에 지정 된 형식은 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + /cli CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)
 
-*액세스 가능성 한정자* (선택 사항)  
-액세스 가능성 한정자 (예: **공용**하십시오 **개인**).
+*액세스 가능성 한정자*  
+(선택 사항) 액세스 가능성 한정자 (예: **공용**하십시오 **개인**).
 
 *result-type*  
 대리자의 반환 형식입니다.
@@ -57,10 +57,10 @@ generic < [class | typename] type-parameter-identifiers>
 *identifier*  
 대리자의 이름입니다.
 
-*정식 매개 변수* (선택 사항)  
-대리자의 매개 변수 목록입니다.
+*정식 매개 변수*  
+(선택 사항) 대리자의 매개 변수 목록입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 대리자 형식 매개 변수는 대리자 개체가 만들어진 위치에 지정됩니다. 대리자 및 연결된 메서드의 시그니처는 둘 다 같아야 합니다. 다음 예제는 제네릭 대리자 선언을 보여 줍니다.
 
@@ -71,7 +71,7 @@ generic <class ItemType>
 delegate ItemType GenDelegate(ItemType p1, ItemType% p2);
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 샘플은 다음을 보여 줍니다.
 
@@ -115,7 +115,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 제네릭 대리자 `GenDelegate<ItemType>`를 선언한 다음, `MyMethod` 형식 매개 변수를 사용하는 `ItemType` 메서드를 연결하여 인스턴스화합니다. 대리자의 두 인스턴스(정수 및 double)를 만들고 호출합니다.
 

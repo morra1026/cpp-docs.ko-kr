@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0894ecf767d24f6e5ec5ea385b5aeca6daae41a8
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: aacbb7709daf6952f00276663e20131e967a554d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131755"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022360"
 ---
 # <a name="functions-c"></a>함수(C++)
 
@@ -135,7 +135,7 @@ int sum(int a, int b)
 
 다음 그림에서는 함수 정의의 일부분을 보여 줍니다. 음영 처리된 영역은 함수 본문입니다.
 
- ![함수 정의 부분](../cpp/media/vc38ru1.gif "vc38RU1") 함수 정의 부분
+![함수 정의 부분](../cpp/media/vc38ru1.gif "vc38RU1") 함수 정의 부분
 
 ## <a name="function-definitions"></a>함수 정의
 
@@ -205,7 +205,7 @@ void DoSomething(std::string& input){...}
 void DoSomething(const std::string& input){...}
 ```
 
- **C + + 11:** rvalue 참조 또는 lvalue 참조로 전달 되는 인수를 명시적으로 처리를 사용 하 여 이중 앰퍼샌드를 매개 변수에서 범용 참조를 나타냅니다.
+**C + + 11:** rvalue 참조 또는 lvalue 참조로 전달 되는 인수를 명시적으로 처리를 사용 하 여 이중 앰퍼샌드를 매개 변수에서 범용 참조를 나타냅니다.
 
 ```cpp
 void DoSomething(const std::string&& input){...}
@@ -315,22 +315,22 @@ template<typename F, typename Tuple = tuple<T...>,
     ```cpp
     #include <string>
     #include <iostream>
-    
+
     using namespace std;
-    
+
     struct S
     {
         string name;
         int num;
     };
-    
+
     S g()
     {
         string t{ "hello" };
         int u{ 42 };
         return { t, u };
     }
-    
+
     int main()
     {
         S s = g();
@@ -338,16 +338,16 @@ template<typename F, typename Tuple = tuple<T...>,
         return 0;
     }
     ```
-    
+
 1. Std:: tuple 또는 std:: pair 개체를 반환 합니다.
 
     ```cpp
     #include <tuple>
     #include <string>
     #include <iostream>
-    
+
     using namespace std;
-        
+
     tuple<int, string, double> f()
     {
         int i{ 108 };
@@ -355,20 +355,20 @@ template<typename F, typename Tuple = tuple<T...>,
         double d{ .01 };
         return { i,s,d };
     }
-    
+
     int main()
     {
         auto t = f();
         cout << get<0>(t) << " " << get<1>(t) << " " << get<2>(t) << endl;
-     
+
         // --or--
-    
+
         int myval;
         string myname;
         double mydecimal;
         tie(myval, myname, mydecimal) = f();
         cout << myval << " " << myname << " " << mydecimal << endl;
-    
+
         return 0;
     }
     ```
@@ -379,9 +379,9 @@ template<typename F, typename Tuple = tuple<T...>,
     #include <tuple>
     #include <string>
     #include <iostream>
-    
+
     using namespace std;
-    
+
     tuple<int, string, double> f()
     {
         int i{ 108 };
@@ -394,25 +394,25 @@ template<typename F, typename Tuple = tuple<T...>,
         string name;
         int num;
     };
-    
+
     S g()
     {
         string t{ "hello" };
         int u{ 42 };
         return { t, u };
     }
-    
+
     int main()
     {
         auto[x, y, z] = f(); // init from tuple
         cout << x << " " << y << " " << z << endl;
-    
+
         auto[a, b] = g(); // init from POD struct
         cout << a << " " << b << endl;
         return 0;
     }
     ```
-    
+
 1. 자체 반환 값을 사용 하는 것 외에도 반환할 수 있습니다 "" 값 함수를 수정 하거나 호출자에 게 제공 하는 개체의 값을 초기화할 수 있도록 참조 하 여 패스를 사용 하는 매개 변수 수를 정의 하 여. 자세한 내용은 [참조 형식 함수 인수](reference-type-function-arguments.md)합니다.
 
 ## <a name="function-pointers"></a>함수 포인터
@@ -435,9 +435,10 @@ int (*myFunction(char* s))(int);
 앞의 선언은 위에서 typedef를 사용한 선언과 같습니다.
 
 ## <a name="see-also"></a>참고자료
- [함수 오버로드](../cpp/function-overloading.md)  
- [가변 인수 목록을 사용하는 함수](../cpp/functions-with-variable-argument-lists-cpp.md)  
- [명시적으로 기본 설정 및 삭제된 함수](../cpp/explicitly-defaulted-and-deleted-functions.md)  
- [함수에 대한 인수 종속 이름(Koenig) 조회](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)  
- [기본 인수](../cpp/default-arguments.md)  
- [인라인 함수](../cpp/inline-functions-cpp.md)
+
+[함수 오버로드](../cpp/function-overloading.md)<br/>
+[가변 인수 목록을 사용하는 함수](../cpp/functions-with-variable-argument-lists-cpp.md)<br/>
+[명시적으로 기본 설정 및 삭제된 함수](../cpp/explicitly-defaulted-and-deleted-functions.md)<br/>
+[함수에 대한 인수 종속 이름(Koenig) 조회](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)<br/>
+[기본 인수](../cpp/default-arguments.md)<br/>
+[인라인 함수](../cpp/inline-functions-cpp.md)

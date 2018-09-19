@@ -1,7 +1,7 @@
 ---
 title: Debug Iterator Support | Microsoft 문서
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/13/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 237ce1e956cd05f21a34d0b2b159ba104167ca37
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: ffcd69475d13277884deaf9ee114f3cd8d86516f
+ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959594"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45601472"
 ---
 # <a name="debug-iterator-support"></a>Debug Iterator Support
 
@@ -38,7 +38,7 @@ C++ 표준은 멤버 함수로 인해 컨테이너에 대한 반복기가 어떻
 
 - push 또는 insert를 사용하여 [vector](../standard-library/vector.md)의 크기를 줄이면 `vector`에 대한 반복기가 무효화됩니다.
 
-## <a name="example"></a>예
+## <a name="invalid-iterators"></a>잘못 된 반복기
 
 이 샘플 프로그램을 디버그 모드에서 컴파일하면 이 프로그램이 런타임에 어설션되고 종료됩니다.
 
@@ -49,12 +49,7 @@ C++ 표준은 멤버 함수로 인해 컨테이너에 대한 반복기가 어떻
 #include <iostream>
 
 int main() {
-   std::vector<int> v ;
-
-   v.push_back(10);
-   v.push_back(15);
-   v.push_back(20);
-
+   std::vector<int> v {10, 15, 20};
    std::vector<int>::iterator i = v.begin();
    ++i;
 
@@ -69,7 +64,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예
+## <a name="using-iteratordebuglevel"></a>_ITERATOR_DEBUG_LEVEL을 사용 하 여
 
 전처리기 매크로 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 사용하여 디버그 빌드에서 반복기 디버깅 기능을 끌 수 있습니다. 이 프로그램은 어설션되지 않지만 정의되지 않은 동작을 계속 트리거합니다.
 
@@ -81,11 +76,7 @@ int main() {
 #include <iostream>
 
 int main() {
-   std::vector<int> v ;
-
-   v.push_back(10);
-   v.push_back(15);
-   v.push_back(20);
+    std::vector<int> v {10, 15, 20};
 
    std::vector<int>::iterator i = v.begin();
    ++i;
@@ -106,7 +97,7 @@ int main() {
 -572662307
 ```
 
-## <a name="example"></a>예
+## <a name="unitialized-iterators"></a>초기화 되지 않은 반복기
 
 다음과 같이 반복기가 초기화되기 전에 반복기를 사용하려고 하면 어설션이 발생합니다.
 
@@ -123,7 +114,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예
+## <a name="incompatible-iterators"></a>호환 되지 않는 반복기
 
 [for_each](../standard-library/algorithm-functions.md#for_each) 알고리즘에 대한 두 개의 반복기가 호환되지 않으므로 다음 코드 예제는 어설션을 발생시킵니다. 알고리즘은 알고리즘에 제공되는 반복기가 같은 컨테이너를 참조하는지 확인합니다.
 
@@ -136,14 +127,8 @@ using namespace std;
 
 int main()
 {
-    vector<int> v1;
-    vector<int> v2;
-
-    v1.push_back(10);
-    v1.push_back(20);
-
-    v2.push_back(10);
-    v2.push_back(20);
+    vector<int> v1 {10, 20};
+    vector<int> v2 {10, 20};
 
     // The next line asserts because v1 and v2 are
     // incompatible.
@@ -153,7 +138,7 @@ int main()
 
 이 예제에서는 함수 대신 람다 식 `[] (int& elem) { elem *= 2; }`를 사용합니다. 이 선택은 비슷한 함수가 같은 실패를 일으키는 어설션 실패와 아무런 관련이 없지만 람다는 간단한 함수 개체 작업을 수행하는 매우 유용한 방법입니다. 람다 식에 대한 자세한 내용은 [람다 식](../cpp/lambda-expressions-in-cpp.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="iterators-going-out-of-scope"></a>반복기 범위를 벗어납니다 진행
 
 디버그 반복기 확인 길어질에 선언 된 반복기 변수를 **에 대 한** 루프의 수를 범위 합니다 **에 대 한** 루프 범위가 끝날 합니다.
 
@@ -163,11 +148,7 @@ int main()
 #include <vector>
 #include <iostream>
 int main() {
-   std::vector<int> v ;
-
-   v.push_back(10);
-   v.push_back(15);
-   v.push_back(20);
+   std::vector<int> v {10, 15, 20};
 
    for (std::vector<int>::iterator i = v.begin(); i != v.end(); ++i)
       ;   // do nothing
@@ -175,9 +156,9 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예
+## <a name="destructors-for-debug-iterators"></a>디버그 반복기에 대 한 소멸자
 
-디버그 반복기에 non-trivial 소멸자가 있습니다. 소멸자가 실행되지 않으면 이유가 무엇이든 액세스 위반 및 데이터 손상이 발생할 수 있습니다. 다음 예제를 고려해 보세요.
+디버그 반복기에 non-trivial 소멸자가 있습니다. 소멸자가 실행 되지 않습니다. 개체의 메모리가 해제 하지만 경우에 액세스 위반 및 데이터 손상이 발생할 수 있습니다. 다음 예제를 고려해 보세요.
 
 ```cpp
 // iterator_debugging_5.cpp
@@ -195,11 +176,10 @@ struct derived : base {
 };
 
 int main() {
-   std::vector<int> vect( 10 );
-   base * pb = new derived( vect.begin() );
-   delete pb;  // doesn't call ~derived()
-   // access violation
-}
+  auto vect = std::vector<int>(10);
+  auto sink = new auto(std::begin(vect));
+  ::operator delete(sink); // frees the memory without calling ~iterator()
+} // access violation
 ```
 
 ## <a name="see-also"></a>참고자료

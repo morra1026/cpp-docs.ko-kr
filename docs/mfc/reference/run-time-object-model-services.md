@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13e04c7f1ae9873ebf2d044dd8b6d6948e55a120
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 138275468801f3db2f2c64f06e5a505c412723b5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197474"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050959"
 ---
 # <a name="run-time-object-model-services"></a>런타임 개체 모델 서비스
 클래스 [CObject](../../mfc/reference/cobject-class.md) 하 고 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 런타임 클래스 정보, serialization 및 동적 개체 만들기에 대 한 액세스를 포함 하 여 여러 개체 서비스를 캡슐화 합니다. 모든 클래스에서 파생 된 `CObject` 이 기능을 상속 합니다.  
@@ -260,8 +260,8 @@ IMPLEMENT_DYNAMIC(class_name, base_class_name)
  *class_name*  
  클래스의 실제 이름입니다.  
   
- `base_class_name`  
- 기본 클래스의 이름입니다.  
+*base_class_name*<br/>
+기본 클래스의 이름입니다.  
   
 ### <a name="remarks"></a>설명  
  .Cpp 모듈에서 IMPLEMENT_DYNAMIC 매크로 사용 하 고 결과 개체 코드를 한 번만 연결 합니다.  

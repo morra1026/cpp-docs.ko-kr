@@ -22,16 +22,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d730563d01a3b59d4f2ac6bbadc980ca51112203
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 626cabbec169d541a63dd65c22a7380718613b79
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379886"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706591"
 ---
 # <a name="zcrvaluecast-enforce-type-conversion-rules"></a>/Zc:rvalueCast(형식 변환 규칙 적용)
 
-경우는 **/zc: rvaluecast** 옵션을 지정한 경우 컴파일러는 C + + 11 표준에 따라 캐스트 연산의 결과로 rvalue 참조 형식의 올바르게 식별 합니다. 이 옵션이 지정되지 않은 경우 컴파일러 동작은 Visual Studio 2012와 동일합니다.
+경우는 **/zc: rvaluecast** 옵션을 지정 하면 컴파일러는 c++11 표준에 따라 캐스트 연산의 결과로 rvalue 참조 형식의 올바르게 식별 합니다. 이 옵션이 지정되지 않은 경우 컴파일러 동작은 Visual Studio 2012와 동일합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -39,11 +39,11 @@ ms.locfileid: "32379886"
 
 ## <a name="remarks"></a>설명
 
-경우 **/zc: rvaluecast** 이 지정 된 경우 컴파일러는 C + + 11 표준의 섹션 5.4에 따라 캐스트 비참조 형식 발생 하 고 비 함수 형식에 대 한 rvalue 참조에서 생성 하는 식을 캐스팅 하는 식만 처리 rvalue 형식입니다. 기본적으로 또는 **/Zc:rvalueCast-** 이 지정 된 경우 컴파일러는 비호환 적 모든 캐스트 식을 rvalue로 rvalue 참조에서 발생 하는 처리 합니다. 준수 및 캐스트에서 오류를 제거 하기 위해 사용 하는 것이 좋습니다 **/zc: rvaluecast**합니다.
+하는 경우 **/zc: rvaluecast** 컴파일러는 c++11 표준의 섹션 5.4 따르며 캐스트 식 비참조 형식에서 발생할 수 있으며 비 함수 형식 rvalue 참조가 발생 하는 캐스트 식만 처리 된 형식 rvalue입니다. 기본적으로 이거나 **/Zc:rvalueCast-** 를 지정한 경우 컴파일러는 비호환 고 rvalue로 rvalue 참조는 모든 캐스트 식을 처리 합니다. 준수 및 오류 캐스트를 제거 하기를 사용 하는 것이 좋습니다 **/zc: rvaluecast**합니다.
 
-기본적으로 **/zc: rvaluecast** 해제 되어 (**/Zc:rvalueCast-**). [관대 한 /-](permissive-standards-conformance.md) 컴파일러 옵션에는 암시적으로이 옵션을 설정 하지만 사용 하 여 재정의할 수 있습니다 **/Zc:rvalueCast-** 합니다.
+기본적으로 **/zc: rvaluecast** 해제 되어 (**/Zc:rvalueCast-**). 합니다 [/ permissive-](permissive-standards-conformance.md) 컴파일러 옵션에는 암시적으로이 옵션을 설정 하지만 사용 하 여 재정의할 수 있습니다 **/Zc:rvalueCast-** 합니다.
 
-사용 하 여 **/zc: rvaluecast** rvalue 참조 형식을 사용 하는 함수에 캐스트 식을 인수로 전달 하는 경우. 기본 동작은 컴파일러 오류 [c 2664](../../error-messages/compiler-errors-2/compiler-error-c2664.md) 때 컴파일러 올바르게 형식을 잘못 결정 캐스트 식입니다. 올바른에서 보여 주는이 예제는 컴파일러 오류 때 코드 **/zc: rvaluecast** 지정 되지 않았습니다.
+사용 하 여 **/zc: rvaluecast** rvalue 참조 형식을 사용 하는 함수에 캐스트 식을 인수로 전달 하는 경우. 기본 동작은 컴파일러 오류를 발생 시킵니다 [C2664](../../error-messages/compiler-errors-2/compiler-error-c2664.md) 때 컴파일러가 잘못 판단 캐스트 식의 형식입니다. 이 예제에서는 올바른 컴파일러 오류를 보여 줍니다. 때 코드 **/zc: rvaluecast** 지정 하지 않으면:
 
 ```cpp
 // Test of /Zc:rvalueCast
@@ -63,8 +63,8 @@ struct Thing {
    T& thing2;
 };
 
-// Create a Thing, using move semantics if possible  
-template <typename T>  
+// Create a Thing, using move semantics if possible
+template <typename T>
 Thing<T> make_thing(T&& t1, T&& t2)
 {
    return (Thing<T>(std::forward<T>(t1), std::forward<T>(t2)));
@@ -74,19 +74,19 @@ struct Test1 {
    long a;
    long b;
 
-   Thing<long> test() { 
+   Thing<long> test() {
       // Use identity casts to create rvalues as arguments
       return make_thing(static_cast<long>(a), static_cast<long>(b));
    }
 };
 ```
 
-보고하지 않는 것이 적절한 경우 기본 컴파일러 동작이 오류 C2102를 보고하지 않을 수도 있습니다. 이 예제에서는 컴파일러는 오류를 보고 하지 경우 id 캐스트에서 만든 rvalue 주소가 사용 되 면 **/zc: rvaluecast** 지정 되지 않았습니다.
+보고하지 않는 것이 적절한 경우 기본 컴파일러 동작이 오류 C2102를 보고하지 않을 수도 있습니다. 이 예에서 컴파일러는 오류를 보고 하지 경우 id 캐스트에서 만든 rvalue의 주소가 사용 되 면 **/zc: rvaluecast** 지정 하지 않으면:
 
 ```cpp
 int main() {
    int a = 1;
-   int *p = &a;   // Okay, take address of lvalue 
+   int *p = &a;   // Okay, take address of lvalue
                   // Identity cast creates rvalue from lvalue;
    p = &(int)a;   // problem: should cause C2102: '&' requires l-value
 }
@@ -96,11 +96,11 @@ Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstand
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
 
 1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
 
-1. 수정 된 **추가 옵션** 포함할 속성을 **/zc: rvaluecast** 선택한 후 **확인**합니다.
+1. 수정 된 **추가 옵션** 포함할 속성을 **/zc: rvaluecast** 를 선택한 후 **확인**합니다.
 
 ## <a name="see-also"></a>참고자료
 

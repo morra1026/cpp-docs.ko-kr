@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43581995e8979ec733d8c82374896009c843166b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 2359bb3909c803e4df1efdeef9058a3553908ff9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766648"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074060"
 ---
 # <a name="cstringelementtraits-class"></a>CStringElementTraits 클래스
 
@@ -38,13 +38,13 @@ ms.locfileid: "43766648"
 ## <a name="syntax"></a>구문
 
 ```
-template <typename T>  
+template <typename T>
 class CStringElementTraits
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 컬렉션에 저장할 데이터의 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -86,10 +86,10 @@ static bool CompareElements(INARGTYPE str1, INARGTYPE str2);
 
 ### <a name="parameters"></a>매개 변수
 
-*str1*  
+*str1*<br/>
 첫 번째 요소는 문자열입니다.
 
-*str2*  
+*str2*<br/>
 두 번째 요소는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -106,10 +106,10 @@ static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2);
 
 ### <a name="parameters"></a>매개 변수
 
-*str1*  
+*str1*<br/>
 첫 번째 요소는 문자열입니다.
 
-*str2*  
+*str2*<br/>
 두 번째 요소는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -129,13 +129,13 @@ static void CopyElements(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDest*  
+*pDest*<br/>
 복사한 데이터를 받을 첫 번째 요소에 대 한 포인터입니다.
 
-*pSrc*  
+*pSrc*<br/>
 복사할 첫 번째 요소에 대 한 포인터입니다.
 
-*nElements*  
+*nElements*<br/>
 복사할 요소의 수입니다.
 
 ### <a name="remarks"></a>설명
@@ -152,7 +152,7 @@ static ULONG Hash(INARGTYPE str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*  
+*str*<br/>
 문자열 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -188,13 +188,13 @@ static void RelocateElements(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDest*  
+*pDest*<br/>
 위치가 변경 된 데이터를 받을 첫 번째 요소에 대 한 포인터입니다.
 
-*pSrc*  
+*pSrc*<br/>
 재배치 첫 번째 요소에 대 한 포인터입니다.
 
-*nElements*  
+*nElements*<br/>
 재배치 요소의 수입니다.
 
 ### <a name="remarks"></a>설명
@@ -203,6 +203,6 @@ static void RelocateElements(
 
 ## <a name="see-also"></a>참고 항목
 
-[CElementTraitsBase 클래스](../../atl/reference/celementtraitsbase-class.md)   
-[CStringElementTraitsI 클래스](../../atl/reference/cstringelementtraitsi-class.md)   
+[CElementTraitsBase 클래스](../../atl/reference/celementtraitsbase-class.md)<br/>
+[CStringElementTraitsI 클래스](../../atl/reference/cstringelementtraitsi-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

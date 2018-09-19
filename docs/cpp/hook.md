@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4fd5ebd1b70476fd4248d3e309dec967ea471cf0
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2f839b6c9b87bb37564951d1c15935ad573e1b46
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197399"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719292"
 ---
 # <a name="hook"></a>__hook
 
@@ -75,8 +75,8 @@ long __hook(
 
 - 관리 되는 이벤트: *ReceiverClass* 는 이벤트 수신기 클래스 및 `HandlerMethod` 처리기입니다.
 
-*받는 사람* (선택 사항)<br/>
-이벤트 수신기 클래스의 인스턴스에 대한 포인터입니다. 수신기를 지정 하지 않으면 경우 기본값은 수신기 클래스 또는 구조체 **__hook** 라고 합니다.
+*받는 사람*<br/>
+(선택 사항) 이벤트 수신기 클래스의 인스턴스에 대 한 포인터입니다. 수신기를 지정 하지 않으면 경우 기본값은 수신기 클래스 또는 구조체 **__hook** 라고 합니다.
 
 ## <a name="usage"></a>사용법
 

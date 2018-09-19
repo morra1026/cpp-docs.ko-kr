@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 164e54ccbd9365e7e4fb2c1989f84891e5813c2f
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 7b1023ff59af0f64d5205447e6e7b17ead1f5186
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849175"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705837"
 ---
 # <a name="cmfcpropertygridcolorproperty-class"></a>CMFCPropertyGridColorProperty 클래스
 `CMFCPropertyGridColorProperty` 클래스는 색 선택 항목 대화 상자를 여는 속성 목록 컨트롤 항목을 지원합니다.  
@@ -75,7 +75,7 @@ class CMFCPropertyGridColorProperty : public CMFCPropertyGridProperty
 ## <a name="remarks"></a>설명  
  `CMFCPropertyGridColorProperty` 클래스는 속성 목록 컨트롤에 추가할 수 있는 색 속성을 지원합니다. 자세한 내용은 참조는 [CMFCPropertyGridCtrl 클래스](../../mfc/reference/cmfcpropertygridctrl-class.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `CMFCPropertyGridColorProperty` 클래스의 개체를 생성하고 `CMFCPropertyGridColorProperty` 클래스의 다양한 메서드를 사용하여 이 개체를 구성하는 방법을 보여 줍니다. 코드에서는 자동 및 기타 단추를 사용하도록 설정하는 방법과 색 및 열 번호를 설정하는 방법을 설명합니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_NewControls#13](../../mfc/reference/codesnippet/cpp/cmfcpropertygridcolorproperty-class_1.cpp)]  
@@ -103,20 +103,20 @@ CMFCPropertyGridColorProperty(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *strName*  
- 속성의 이름입니다.  
+*strName*<br/>
+[in] 속성의 이름입니다.  
   
- [in] *색*  
- 속성의 색 값입니다.  
+*색*<br/>
+[in] 속성의 색 값입니다.  
   
- [in] *pPalette*  
- 색의 팔레트에 대 한 포인터입니다. 기본값은 NULL입니다.  
+*pPalette*<br/>
+[in] 색의 팔레트에 대 한 포인터입니다. 기본값은 NULL입니다.  
   
- [in] *lpszDescr*  
- 속성 설명입니다. 기본값은 NULL입니다.  
+*lpszDescr*<br/>
+[in] 속성 설명입니다. 기본값은 NULL입니다.  
   
- [in] *dwData*  
- 응용 프로그램별 데이터, 정수 등의 속성을 사용 하 여 연결 된 다른 데이터에 대 한 포인터입니다. 기본값은 0입니다.  
+*dwData*<br/>
+[in] 응용 프로그램별 데이터, 정수 등의 속성을 사용 하 여 연결 된 다른 데이터에 대 한 포인터입니다. 기본값은 0입니다.  
   
 ##  <a name="enableautomaticbutton"></a>  CMFCPropertyGridColorProperty::EnableAutomaticButton  
  사용 하도록 설정 합니다 *자동* 색 선택 대화 상자에서 단추입니다. (표준 자동 단추인 **자동**.)  
@@ -129,14 +129,14 @@ void EnableAutomaticButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszLabel*  
- 자동 단추의 레이블 텍스트입니다.  
+*lpszLabel*<br/>
+[in] 자동 단추의 레이블 텍스트입니다.  
   
- [in] *colorAutomatic*  
- 자동 (기본값) 색의 RGB 색 값입니다.  
+*colorAutomatic*<br/>
+[in] 자동 (기본값) 색의 RGB 색 값입니다.  
   
- [in] *bEnable*  
- 자동 단추를 사용 하도록 설정 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
+*bEnable*<br/>
+[in] 자동 단추를 사용 하도록 설정 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -151,14 +151,14 @@ void EnableOtherButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszLabel*  
- 다른 단추의 레이블 텍스트입니다.  
+*lpszLabel*<br/>
+[in] 다른 단추의 레이블 텍스트입니다.  
   
- [in] *bAltColorDlg*  
- True로 설정 하면 여 `CMFCColorDialog` 대화 상자 표준 색 선택 대화 상자를 표시 하려면 FALSE입니다. 기본값은 TRUE입니다.  
+*bAltColorDlg*<br/>
+[in] True로 설정 하면 여 `CMFCColorDialog` 대화 상자 표준 색 선택 대화 상자를 표시 하려면 FALSE입니다. 기본값은 TRUE입니다.  
   
- [in] *bEnable*  
- 다른 단추를 표시 그렇지 않으면 FALSE입니다.  기본값은 TRUE입니다.  
+*bEnable*<br/>
+[in] 다른 단추를 표시 그렇지 않으면 FALSE입니다.  기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -182,8 +182,8 @@ void SetColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *색*  
- RGB 색 값입니다.  
+*색*<br/>
+[in] RGB 색 값입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -195,8 +195,8 @@ void SetColumnsNumber(int nColumnsNumber);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nColumnsNumber*  
- 기본 색 속성 표의 열 수 있습니다.  
+*nColumnsNumber*<br/>
+[in] 기본 색 속성 표의 열 수 있습니다.  
   
 ### <a name="remarks"></a>설명  
  값을 설정 하는이 메서드는 `m_nColumnsNumber` 데이터 멤버를 보호 합니다.  
@@ -209,8 +209,8 @@ virtual void SetOriginalValue(const COleVariant& varValue);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *varValue*  
- 값입니다.  
+*varValue*<br/>
+[in] 값입니다.  
   
 ### <a name="remarks"></a>설명  
  사용 된 [cmfcpropertygridproperty:: Resetoriginalvalue](../../mfc/reference/cmfcpropertygridproperty-class.md#resetoriginalvalue) 편집된 된 속성의 원래 값을 다시 설정 하는 방법입니다.  

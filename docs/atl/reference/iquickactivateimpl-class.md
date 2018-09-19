@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 96e165fcd4d38c9d263b48ee2c559394770a52a1
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f65df09ffba45f61b967080e4bfd61ec3d2f912a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765722"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052788"
 ---
 # <a name="iquickactivateimpl-class"></a>IQuickActivateImpl 클래스
 
@@ -40,13 +40,13 @@ ms.locfileid: "43765722"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE IQuickActivateImpl : public IQuickActivate
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `IQuickActivateImpl`합니다.
 
 ## <a name="members"></a>멤버
@@ -121,5 +121,5 @@ STDMETHOD(SetContentExtent)(LPSIZEL pSize);
 
 ## <a name="see-also"></a>참고 항목
 
-[CComControl 클래스](../../atl/reference/ccomcontrol-class.md)   
+[CComControl 클래스](../../atl/reference/ccomcontrol-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

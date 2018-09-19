@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 041a207af69ac65646e1b30672250b84aa3a5d36
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: ee7c04ee4cd581395ff03763c2ebe50b421986d2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853971"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711141"
 ---
 # <a name="cmfctaskspanetask-class"></a>CMFCTasksPaneTask 클래스
 합니다 `CMFCTasksPaneTask` 클래스는 작업 창 컨트롤에 대 한 작업을 나타내는 도우미 클래스 ( [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md)). 작업 개체의 작업 그룹에서 항목을 나타냅니다 ( [CMFCTasksPaneTaskGroup](../../mfc/reference/cmfctaskspanetaskgroup-class.md)). 각 작업은 사용자가 작업을 클릭할 때 프레임워크가 실행하는 명령과 작업 이름의 왼쪽에 나타내는 아이콘을 포함할 수 있습니다.  
@@ -73,7 +73,7 @@ class CMFCTasksPaneTask : public CObject
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CMFCTasksPaneTask::m_bAutoDestroyWindow](#m_bautodestroywindow)|작업 창이 자동으로 소멸 되 고 있는지 여부를 결정 합니다.|  
 |[CMFCTasksPaneTask::m_bIsBold](#m_bisbold)|프레임 워크를 굵은 텍스트로 작업 레이블을 그릴지 여부를 결정 합니다.|  
@@ -252,11 +252,11 @@ virtual BOOL SetACCData(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pParent*  
- 현재 태스크의 부모 창을 나타냅니다.  
+*pParent*<br/>
+[in] 현재 태스크의 부모 창을 나타냅니다.  
   
- [out] *데이터*  
- 형식의 개체 `CAccessibilityData` 는 현재 태스크의 내게 필요한 옵션 데이터를 사용 하 여 채워집니다.  
+*data*<br/>
+[out] 형식의 개체 `CAccessibilityData` 는 현재 태스크의 내게 필요한 옵션 데이터를 사용 하 여 채워집니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 합니다 *데이터* FALSE 매개 변수를 성공적으로 현재 태스크의 내게 필요한 옵션 데이터를 사용 하 여 채워진 고, 그렇지 않으면입니다.  

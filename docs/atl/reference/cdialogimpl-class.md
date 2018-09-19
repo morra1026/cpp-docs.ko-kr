@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1780a4f77cce4812ebdb03ebc89936da0dc0d5d0
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ba47b7f78e372f05a851d2180590bbc68a8c61ca
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767057"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068444"
 ---
 # <a name="cdialogimpl-class"></a>CDialogImpl 클래스
 
@@ -51,10 +51,10 @@ template <class T,
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `CDialogImpl`합니다.
 
-*TBase*  
+*TBase*<br/>
 새 클래스의 기본 클래스입니다. 기본 클래스는 [CWindow](../../atl/reference/cwindow-class.md)합니다.
 
 ## <a name="members"></a>멤버
@@ -113,7 +113,7 @@ template <class T,
 
 모덜리스 대화 상자를 만듭니다.
 
-```  
+```
 HWND Create(
     HWND hWndParent,  
     LPARAM dwInitParam = NULL );  
@@ -121,18 +121,17 @@ HWND Create(
 HWND Create(
     HWND hWndParent,  
     RECT&, 
-    LPARAM dwInitParam = NULL); 
+    LPARAM dwInitParam = NULL);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] 소유자 창에 대 한 핸들입니다.
 
-**RECT &** *rect*  
-[in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 대화 상자의 크기와 위치를 지정 합니다.
+**RECT &** *rect* [in] [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 대화 상자의 크기와 위치를 지정 합니다.
 
-*dwInitParam*  
+*dwInitParam*<br/>
 [in] 대화 상자에 전달할 값을 지정 합니다 *lParam* WM_INITDIALOG 메시지의 매개 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -173,16 +172,16 @@ static LRESULT CALLBACK DialogProc(
 
 ### <a name="parameters"></a>매개 변수
 
-*hWnd*  
+*hWnd*<br/>
 [in] 대화 상자에 대 한 핸들입니다.
 
-*uMsg*  
+*uMsg*<br/>
 [in] 대화 상자에 전송 된 메시지입니다.
 
-*wParam*  
+*wParam*<br/>
 [in] 추가 메시지 관련 정보입니다.
 
-*lParam*  
+*lParam*<br/>
 [in] 추가 메시지 관련 정보입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -199,18 +198,18 @@ TRUE 이면 메시지를 처리 합니다. 그렇지 않으면 FALSE입니다.
 
 모달 대화 상자를 만듭니다.
 
-```   
+```
 INT_PTR DoModal(  
     HWND hWndParent = ::GetActiveWindow(),   
-    LPARAM dwInitParam = NULL); 
+    LPARAM dwInitParam = NULL);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] 소유자 창에 대 한 핸들입니다. 기본값은의 반환 값을 [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 함수입니다.
 
-*dwInitParam*  
+*dwInitParam*<br/>
 [in] 대화 상자에 전달할 값을 지정 합니다 *lParam* WM_INITDIALOG 메시지의 매개 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -227,13 +226,13 @@ INT_PTR DoModal(
 
 모달 대화 상자를 제거합니다.
 
-```   
-BOOL EndDialog(int nRetCode); 
+```
+BOOL EndDialog(int nRetCode);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*nRetCode*  
+*nRetCode*<br/>
 [in] 값을 반환할 [CDialogImpl::DoModal](#domodal)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -251,8 +250,8 @@ BOOL EndDialog(int nRetCode);
 
 반환 `DialogProc`, 현재 대화 상자 프로시저입니다.
 
-```   
-virtual WNDPROC GetDialogProc(); 
+```
+virtual WNDPROC GetDialogProc();
 ```
 
 ### <a name="return-value"></a>반환 값
@@ -267,13 +266,13 @@ virtual WNDPROC GetDialogProc();
 
 (Maps) 대화 상자 단위 화면에 지정된 된 사각형의 단위 (픽셀)를 변환합니다.
 
-```   
-BOOL MapDialogRect(LPRECT lpRect); 
+```
+BOOL MapDialogRect(LPRECT lpRect);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*lpRect*  
+*lpRect*<br/>
 가리키는 `CRect` 개체 또는 [RECT](../../mfc/reference/rect-structure1.md) 구조 업데이트 영역을 둘러싸는 업데이트의 클라이언트 좌표를 수신 하는 것입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -288,13 +287,13 @@ BOOL MapDialogRect(LPRECT lpRect);
 
 마지막 메시지를 받은 후에 호출 됩니다 (일반적으로 `WM_NCDESTROY`).
 
-```   
-virtual void OnFinalMessage(HWND hWnd); 
+```
+virtual void OnFinalMessage(HWND hWnd);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*hWnd*  
+*hWnd*<br/>
 [in] 소멸 될 창의 핸들입니다.
 
 ### <a name="remarks"></a>설명
@@ -305,26 +304,26 @@ virtual void OnFinalMessage(HWND hWnd);
 
 대화 상자에 전송 된 메시지를 처리 하는 데 첫 번째 메시지가 수신 되 면 한 번만 호출 됩니다.
 
-```   
+```
 static LRESULT CALLBACK StartDialogProc(
     HWND hWnd,  
     UINT uMsg,  
     WPARAM wParam,  
-    LPARAM lParam); 
+    LPARAM lParam);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*hWnd*  
+*hWnd*<br/>
 [in] 대화 상자에 대 한 핸들입니다.
 
-*uMsg*  
+*uMsg*<br/>
 [in] 대화 상자에 전송 된 메시지입니다.
 
-*wParam*  
+*wParam*<br/>
 [in] 추가 메시지 관련 정보입니다.
 
-*lParam*  
+*lParam*<br/>
 [in] 추가 메시지 관련 정보입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -337,5 +336,5 @@ static LRESULT CALLBACK StartDialogProc(
 
 ## <a name="see-also"></a>참고 항목
 
-[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)   
+[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

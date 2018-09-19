@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e119251b4d7ebfbfc6dd0cd0414d72c431555e0
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a5b97912843f14c9bc73307145bd0e1542d2c01b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200656"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726585"
 ---
 # <a name="cmfcdropdowntoolbarbutton-class"></a>CMFCDropDownToolbarButton 클래스
 클릭할 때 일반 단추처럼 동작하는 도구 모음 단추의 한 종류입니다. 그러나 드롭다운 도구 모음이 열립니다 ( [CMFCDropDownToolBar 클래스](../../mfc/reference/cmfcdropdowntoolbar-class.md) 경우 클릭 하 고 도구 모음 단추를 누르고 있습니다.  
@@ -103,7 +103,7 @@ class CMFCDropDownToolbarButton : public CMFCToolBarButton
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CMFCDropDownToolbarButton::m_uiShowBarDelay](#m_uishowbardelay)|드롭다운 도구 모음이 표시 되기 전에 사용자를 마우스 단추를 누른 해야 하는 시간의 길이 지정 합니다.|  
   
@@ -132,8 +132,8 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *src*  
- 복사할 소스 단추에 대 한 참조입니다.  
+*src*<br/>
+[in] 복사할 소스 단추에 대 한 참조입니다.  
   
 ### <a name="remarks"></a>설명  
  이 도구 모음 단추를 도구 모음 단추 복사 하려면이 메서드를 호출 합니다. *src* 형식 이어야 합니다 `CMFCDropDownToolbarButton`합니다.  
@@ -151,11 +151,11 @@ CMFCDropDownToolbarButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszName*  
- 단추의 기본 텍스트입니다.  
+*lpszName*<br/>
+[in] 단추의 기본 텍스트입니다.  
   
- [in] *pToolBar*  
- 에 대 한 포인터를 `CMFCDropDownToolBar` 단추를 누를 때 표시 되는 개체입니다.  
+*pToolBar*<br/>
+[in] 에 대 한 포인터를 `CMFCDropDownToolBar` 단추를 누를 때 표시 되는 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  도구 모음에서 첫 번째 단추 드롭다운 단추에 복사 생성자의 두 번째 오버 로드는 *pToolBar* 지정 합니다.  
@@ -175,8 +175,8 @@ BOOL DropDownToolbar(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- 드롭다운 도구 모음 단추의 부모 창을 사용 하 여 NULL 드롭다운 프레임의 부모 창입니다.  
+*pWnd*<br/>
+[in] 드롭다운 도구 모음 단추의 부모 창을 사용 하 여 NULL 드롭다운 프레임의 부모 창입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -196,8 +196,8 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *menuButton*  
- 대상 메뉴 단추에 대 한 참조입니다.  
+*MenuButton*<br/>
+[in] 대상 메뉴 단추에 대 한 참조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공하면 0이 아니고, 실패하면 0입니다.  
@@ -267,14 +267,14 @@ virtual SIZE OnCalculateSize(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 단추를 표시 하는 장치 컨텍스트.  
+*pDC*<br/>
+[in] 단추를 표시 하는 장치 컨텍스트.  
   
- [in] *sizeDefault*  
- 단추의 기본 크기입니다.  
+*sizeDefault*<br/>
+[in] 단추의 기본 크기입니다.  
   
- [in] *bHorz*  
- 부모 도구 모음 도킹 상태입니다. 도구 모음 세로로 도킹 되는 경우이 매개 변수는 도구 모음에서 가로로 도킹 되어 있거나 부동 창인 경우에 TRUE 또는 FALSE입니다.  
+*bHorz*<br/>
+[in] 부모 도구 모음 도킹 상태입니다. 도구 모음 세로로 도킹 되는 경우이 매개 변수는 도구 모음에서 가로로 도킹 되어 있거나 부동 창인 경우에 TRUE 또는 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `SIZE` 픽셀에서 단추의 크기를 포함 하는 구조입니다.  
@@ -290,8 +290,8 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndParent*  
- 새 부모 창입니다.  
+*pWndParent*<br/>
+[in] 새 부모 창입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 기본 클래스 구현을 재정의 ( [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)) 텍스트 레이블의 선택을 취소 하 여 ( [CMFCToolBarButton::m_strText](../../mfc/reference/cmfctoolbarbutton-class.md#m_strtext)) 설정 하 여 [ CMFCToolBarButton::m_bText](../../mfc/reference/cmfctoolbarbutton-class.md#m_btext) 하 고 [CMFCToolBarButton::m_bUserButton](../../mfc/reference/cmfctoolbarbutton-class.md#m_buserbutton) FALSE로 데이터 멤버입니다.  
@@ -306,11 +306,11 @@ virtual BOOL OnClick(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- 부모 창 도구 모음 단추입니다.  
+*pWnd*<br/>
+[in] 부모 창 도구 모음 단추입니다.  
   
- [in] *bDelay*  
- 메시지 지연 시간을 처리 해야 하는 경우 TRUE입니다.  
+*bDelay*<br/>
+[in] 메시지 지연 시간을 처리 해야 하는 경우 TRUE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  단추 클릭 메시지를 처리 하는 경우 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -345,8 +345,8 @@ virtual BOOL OnContextHelp(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- 부모 창 도구 모음 단추입니다.  
+*pWnd*<br/>
+[in] 부모 창 도구 모음 단추입니다.  
   
 ### <a name="return-value"></a>반환 값  
  단추 도움말 메시지를 처리 하는 경우 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -364,8 +364,8 @@ virtual BOOL OnCustomizeMenu(CMenu* pMenu);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMenu*  
- 메뉴 사용자 지정입니다.  
+*pMenu*<br/>
+[in] 메뉴 사용자 지정입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 TRUE를 반환합니다.  
@@ -401,29 +401,29 @@ virtual void OnDraw(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 단추를 표시 하는 장치 컨텍스트.  
+*pDC*<br/>
+[in] 단추를 표시 하는 장치 컨텍스트.  
   
- [in] *rect*  
- 단추의 경계 사각형입니다.  
+*rect*<br/>
+[in] 단추의 경계 사각형입니다.  
   
- [in] *pImages*  
- 단추와 연결 된 도구 모음 이미지의 컬렉션입니다.  
+*pImages*<br/>
+[in] 단추와 연결 된 도구 모음 이미지의 컬렉션입니다.  
   
- [in] *bHorz*  
- 부모 도구 모음 도킹 상태입니다. 이 매개 변수는 단추를 세로로 도킹 되 면 단추는 가로 및 FALSE에 도킹 되 면 TRUE입니다.  
+*bHorz*<br/>
+[in] 부모 도구 모음 도킹 상태입니다. 이 매개 변수는 단추를 세로로 도킹 되 면 단추는 가로 및 FALSE에 도킹 되 면 TRUE입니다.  
   
- [in] *bCustomizeMode*  
- 도구 모음 사용자 지정 모드 인지 여부를 지정 합니다. 도구 모음 사용자 지정 모드에 없는 경우 도구 모음 사용자 지정 모드 및 FALSE는이 매개 변수는 TRUE입니다.  
+*bCustomizeMode*<br/>
+[in] 도구 모음 사용자 지정 모드 인지 여부를 지정 합니다. 도구 모음 사용자 지정 모드에 없는 경우 도구 모음 사용자 지정 모드 및 FALSE는이 매개 변수는 TRUE입니다.  
   
- [in] *bHighlight*  
- 단추를 강조 표시 되어 있는지 여부를 지정 합니다. 단추 강조 표시가 해제 되는 경우이 매개 변수는 단추를 강조 표시 되 면 TRUE와 FALSE입니다.  
+*bHighlight*<br/>
+[in] 단추를 강조 표시 되어 있는지 여부를 지정 합니다. 단추 강조 표시가 해제 되는 경우이 매개 변수는 단추를 강조 표시 되 면 TRUE와 FALSE입니다.  
   
- [in] *bDrawBorder*  
- 단추에서 테두리를 표시할지 여부를 지정 합니다. 이 매개 변수는 단추를 표시할지 해당 테두리와 FALSE 단추의 테두리를 표시 하지 않아야 하는 경우 TRUE입니다.  
+*bDrawBorder*<br/>
+[in] 단추에서 테두리를 표시할지 여부를 지정 합니다. 이 매개 변수는 단추를 표시할지 해당 테두리와 FALSE 단추의 테두리를 표시 하지 않아야 하는 경우 TRUE입니다.  
   
- [in] *bGrayDisabledButtons*  
- 비활성화 된 단추가 지정 하거나 비활성된 이미지 컬렉션을 사용할 것인지 지정 합니다. 이 메서드는 비활성된 이미지 컬렉션을 사용 해야 하는 경우 비활성화 된 단추가 회색으로 표시 하 고 FALSE를 수 해야이 매개 변수는 TRUE입니다.  
+*bGrayDisabledButtons*<br/>
+[in] 비활성화 된 단추가 지정 하거나 비활성된 이미지 컬렉션을 사용할 것인지 지정 합니다. 이 메서드는 비활성된 이미지 컬렉션을 사용 해야 하는 경우 비활성화 된 단추가 회색으로 표시 하 고 FALSE를 수 해야이 매개 변수는 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
  도구 모음 단추 그리기를 사용자 지정 하려면이 메서드를 재정의 합니다.  
@@ -439,14 +439,14 @@ virtual int OnDrawOnCustomizeList(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 단추를 표시 하는 장치 컨텍스트.  
+*pDC*<br/>
+[in] 단추를 표시 하는 장치 컨텍스트.  
   
- [in] *rect*  
- 단추의 경계 사각형입니다.  
+*rect*<br/>
+[in] 단추의 경계 사각형입니다.  
   
- [in] *bSelected*  
- 단추가 선택 되었는지 여부를 나타냅니다. 이 매개 변수가 TRUE 인 경우에 단추를 선택 됩니다. 이 매개 변수가 FALSE 인 경우에 단추를 선택 하지 않았습니다.  
+*bSelected*<br/>
+[in] 단추가 선택 되었는지 여부를 나타냅니다. 이 매개 변수가 TRUE 인 경우에 단추를 선택 됩니다. 이 매개 변수가 FALSE 인 경우에 단추를 선택 하지 않았습니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정된 된 장치 컨텍스트에의 단추에 픽셀에서 너비입니다.  
@@ -464,8 +464,8 @@ virtual void Serialize(CArchive& ar);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *ar*  
- `CArchive` serialize 하는 개체입니다.  
+*ar*<br/>
+[in] `CArchive` serialize 하는 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 기본 클래스 구현을 확장 ( [CMFCToolBarButton::Serialize](../../mfc/reference/cmfctoolbarbutton-class.md#serialize)) 부모 도구 모음 리소스 ID를 직렬화 하 여 합니다. 보관 파일을 로드 하는 경우 ( [CArchive::IsLoading](../../mfc/reference/carchive-class.md#isloading) 0이 아닌 값을 반환)를 설정 하는이 메서드는 `m_pToolBar` 직렬화 된 리소스 ID를 포함 하는 도구 모음에 데이터 멤버  
@@ -478,8 +478,8 @@ void SetDefaultCommand(UINT uiCmd);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmd*  
- 기본 명령의 ID입니다.  
+*uiCmd*<br/>
+[in] 기본 명령의 ID입니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 워크 단추를 클릭할 때 실행 되는 기본 명령을 지정 하려면이 메서드를 호출 합니다. 지정 된 명령 ID 가진 항목이 *uiCmd* 부모 드롭다운 도구 모음에 있어야 합니다.  

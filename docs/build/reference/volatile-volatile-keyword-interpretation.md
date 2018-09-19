@@ -23,47 +23,47 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ccd36c5edaaab8577e5f278b25b51ce69e0633f1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4204d602d1390bf30080a800174426513faf0467
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32378199"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723636"
 ---
 # <a name="volatile-volatile-keyword-interpretation"></a>/volatile(volatile 키워드 해석)
 
-지정 방법을 [휘발성](../../cpp/volatile-cpp.md) 해석 해야 하는 키워드입니다.
+지정 하는 방법을 [volatile](../../cpp/volatile-cpp.md) 해석 해야 하는 키워드입니다.
 
 ## <a name="syntax"></a>구문
 
-> **/volatile:**{**iso**|**ms**}  
+> **/volatile:**{**iso**|**ms**}
 
 ## <a name="arguments"></a>인수
 
-**/volatile:iso**  
-엄격한 선택 `volatile` ISO 표준 c + + 언어에서 정의 된 대로 의미 합니다. 의미 체계를 획득 해제 volatile 액세스에서 보장 되지 않습니다. 기본 해석 컴파일러 ARM를 대상으로 하는 경우 이것이 `volatile`합니다.
+**/volatile:iso**<br/>
+엄격한 선택 `volatile` ISO 표준 c + + 언어에서 정의 된 의미 체계. Volatile 액세스에 acquire/release 의미 체계가 보장 되지 않습니다. 컴파일러가 ARM을 대상으로 하는 경우의 기본 해석입니다 `volatile`합니다.
 
-**/volatile:ms**  
-선택 하는 Microsoft 확장 `volatile` 순서 보장 ISO 표준 c + + 언어 이외의 메모리를 추가 하는 의미 체계입니다. 의미 체계를 획득 해제 volatile 액세스에서 보장 됩니다. 그러나이 옵션에는 또한 ARM 및 다른 약한 메모리 정렬 아키텍처에 상당한 오버 헤드를 추가할 수 있는 하드웨어 메모리 장벽을 생성 하도록 컴파일러에 강제로 합니다. 기본 해석 컴파일러를 ARM 제외한 모든 플랫폼을 대상으로 하는 경우 이것이 `volatile`합니다.
+**/volatile:ms**<br/>
+Microsoft 확장 선택 `volatile` 의미 체계를 memory ordering 보장 ISO 표준 c + + 언어 외에 추가 합니다. Volatile 액세스에 acquire/release 의미 체계가 보장 됩니다. 그러나이 옵션에는 ARM 및 취약 한 기타 메모리 순서가 아키텍처에 상당한 오버 헤드를 추가할 수 있는 하드웨어 메모리 장벽을 생성 하도록 컴파일러에도 실행 하도록 합니다. 컴파일러가 ARM 제외한 모든 플랫폼을 대상으로 하는 경우의 기본 해석입니다 `volatile`합니다.
 
 ## <a name="remarks"></a>설명
 
-사용 하는 것이 좋습니다 **/volatile:iso** 스레드 간에 공유 되는 메모리를 처리할 때 컴파일러 내장 형식 및 명시적 동기화 기본 형식입니다. 자세한 내용은 참조 [휘발성](../../cpp/volatile-cpp.md)합니다.
+사용 하는 것이 좋습니다 **/volatile:iso** 명시적 동기화 기본 형식 및 컴파일러 내장 함수는 스레드 간에 공유 되는 메모리를 처리할 때 함께 합니다. 자세한 내용은 [volatile](../../cpp/volatile-cpp.md)합니다.
 
-를 기존 코드 이식 하거나 프로젝트 중에이 옵션을 변경 하는 경우 경고를 사용 하도록 설정 하려면 유용할 수 있습니다 [c 4746](../../error-messages/compiler-warnings/compiler-warning-c4746.md) 의미 체계의 차이 영향을 받는 코드 위치를 식별 하기.
+를 기존 코드를 이식 하거나 프로젝트 중간에이 옵션을 변경 하는 경우 경고를 사용 하도록 설정 하려면 유용할 수 있습니다 [C4746](../../error-messages/compiler-warnings/compiler-warning-c4746.md) 의미 체계의 영향을 받는 코드 위치를 식별 합니다.
 
-없는 `#pragma` 이 옵션을 제어와 동일 합니다.
+방법이 없는 `#pragma` 이 옵션을 제어 하에 해당 합니다.
 
-### <a name="to-set-the-volatile-compiler-option-in-visual-studio"></a>Visual Studio에서 컴파일러 옵션은 /volatile 설정 하려면
+### <a name="to-set-the-volatile-compiler-option-in-visual-studio"></a>/Volatile를 설정 하려면 Visual Studio에서 컴파일러 옵션
 
-1. 열기는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 참조 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)합니다.
+1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
 
 1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
 
-1. 에 **추가 옵션** 상자에서 추가 **/volatile:iso** 또는 **/volatile:ms** 선택한 후 **확인** 또는 **적용** 변경 내용을 저장 합니다.
+1. 에 **추가 옵션** 상자에서 추가 **/volatile:iso** 또는 **찾는데** 를 선택한 후 **확인** 또는 **적용** 변경 내용을 저장 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[volatile](../../cpp/volatile-cpp.md)  
-[컴파일러 옵션](../../build/reference/compiler-options.md)  
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)  
+[volatile](../../cpp/volatile-cpp.md)<br/>
+[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
+[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

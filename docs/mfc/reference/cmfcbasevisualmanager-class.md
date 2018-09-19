@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b7b21651bdab6bf2e4603a8fa012480a6201e34b
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: db5c1ee0a381d45ce951c627d5f59bfb6eb97ea3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336225"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724830"
 ---
 # <a name="cmfcbasevisualmanager-class"></a>CMFCBaseVisualManager 클래스
 Windows 테마 API 파생된 비주얼 관리자 사이의 계층입니다.  
@@ -136,25 +136,25 @@ virtual BOOL DrawCheckBox(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대 한 포인터  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터  
   
- [in] *rect*  
- 확인란의 경계 사각형입니다.  
+*rect*<br/>
+[in] 확인란의 경계 사각형입니다.  
   
- [in] *bHighlighted*  
- 확인란은 강조 표시 여부를 지정 합니다.  
+*bHighlighted*<br/>
+[in] 확인란은 강조 표시 여부를 지정 합니다.  
   
- [in] *nState*  
- 0 선택된 보통에 대 한 옵션을 선택 취소 1  
+*nState*<br/>
+[in] 0 확인 된 정상에 대 한 옵션을 선택 취소 1  
   
  보통의 혼합 2입니다.  
   
- [in] *b 사용*  
- 확인란 사용 되는지 여부를 지정 합니다.  
+*b 사용*<br/>
+[in] 확인란 사용 되는지 여부를 지정 합니다.  
   
- [in] *bPressed*  
- 확인란을 눌렀는지 여부를 지정 합니다.  
+*bPressed*<br/>
+[in] 확인란을 눌렀는지 여부를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  테마 API를 사용 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -181,20 +181,20 @@ virtual BOOL DrawComboBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 콤보 상자 테두리의 경계 사각형입니다.  
+*rect*<br/>
+[in] 콤보 상자 테두리의 경계 사각형입니다.  
   
- [in] *사용 안 함*  
- 콤보 상자 테두리 비활성화 되었는지 여부를 지정 합니다.  
+*사용 안 함*<br/>
+[in] 콤보 상자 테두리 비활성화 되었는지 여부를 지정 합니다.  
   
- [in] *bIsDropped*  
- 콤보 상자 테두리를 삭제할지 여부를 지정 합니다.  
+*bIsDropped*<br/>
+[in] 콤보 상자 테두리를 삭제할지 여부를 지정 합니다.  
   
- [in] *bIsHighlighted*  
- 콤보 상자 테두리에 강조 표시 되어 있는지 여부를 지정 합니다.  
+*bIsHighlighted*<br/>
+[in] 콤보 상자 테두리에 강조 표시 되어 있는지 여부를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  테마 API를 사용 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -215,11 +215,11 @@ virtual BOOL DrawComboDropButton(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *pDC*|장치 컨텍스트에 대한 포인터입니다.|  
-|[in] *rect*|콤보 상자 드롭다운 단추의 경계 사각형입니다.|  
-|[in] *사용 안 함*|콤보 상자 드롭다운 단추를 사용할 수 있는지 여부를 지정 합니다.|  
-|[in] *bIsDropped*|콤보 상자 드롭다운 단추를 삭제할지 여부를 지정 합니다.|  
-|[in] *bIsHighlighted*|콤보 상자 드롭다운 단추를 강조 표시 되어 있는지 여부를 지정 합니다.|  
+|*pDC*|[in] 장치 컨텍스트에 대 한 포인터입니다.|  
+|*rect*|[in] 콤보 상자 드롭다운 단추의 경계 사각형입니다.|  
+|*사용 안 함*|[in] 콤보 상자 드롭다운 단추를 사용할 수 있는지 여부를 지정 합니다.|  
+|*bIsDropped*|[in] 콤보 상자 드롭다운 단추를 삭제할지 여부를 지정 합니다.|  
+|*bIsHighlighted*|[in] 콤보 상자 드롭다운 단추를 강조 표시 되어 있는지 여부를 지정 합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  테마 API를 사용 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -236,17 +236,17 @@ virtual BOOL DrawPushButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 누름 단추의 경계 사각형입니다.  
+*rect*<br/>
+[in] 누름 단추의 경계 사각형입니다.  
   
- [in] *pButton*  
- 에 대 한 포인터를 [CMFCButton 클래스](../../mfc/reference/cmfcbutton-class.md) 그릴 개체입니다.  
+*pButton*<br/>
+[in] 에 대 한 포인터를 [CMFCButton 클래스](../../mfc/reference/cmfcbutton-class.md) 그릴 개체입니다.  
   
- [in] *uiState*  
- 무시됩니다. 상태를 가져옵니다 *pButton*합니다.  
+*uiState*<br/>
+[in] 무시 됩니다. 상태를 가져옵니다 *pButton*합니다.  
   
 ### <a name="return-value"></a>반환 값  
  테마 API를 사용 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -265,23 +265,23 @@ virtual BOOL DrawRadioButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 라디오 단추의 경계 사각형입니다.  
+*rect*<br/>
+[in] 라디오 단추의 경계 사각형입니다.  
   
- [in] *bHighlighted*  
- 라디오 단추가 강조 표시 하는지 여부를 지정 합니다.  
+*bHighlighted*<br/>
+[in] 라디오 단추가 강조 표시 하는지 여부를 지정 합니다.  
   
- [in] *bChecked*  
- 라디오 단추가 선택 되었는지 여부를 지정 합니다.  
+*bChecked*<br/>
+[in] 라디오 단추가 선택 되었는지 여부를 지정 합니다.  
   
- [in] *b 사용*  
- 라디오 단추를 사용할 수 있는지 여부를 지정 합니다.  
+*b 사용*<br/>
+[in] 라디오 단추를 사용할 수 있는지 여부를 지정 합니다.  
   
- [in] *bPressed*  
- 라디오 단추를 눌렀는지 여부를 지정 합니다.  
+*bPressed*<br/>
+[in] 라디오 단추를 눌렀는지 여부를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  테마 API를 사용 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -303,32 +303,32 @@ virtual BOOL DrawStatusBarProgress(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pStatusBar*  
- 상태 표시줄에 대 한 포인터입니다. 이 값은 무시됩니다.  
+*pStatusBar*<br/>
+[in] 상태 표시줄에 대 한 포인터입니다. 이 값은 무시됩니다.  
   
- [in] *rectProgress*  
- 진행률 표시줄의 경계 사각형 *pDC* 좌표입니다.  
+*rectProgress*<br/>
+[in] 진행률 표시줄의 경계 사각형 *pDC* 좌표입니다.  
   
- [in] *nProgressTotal*  
- 총 진행률 값입니다.  
+*nProgressTotal*<br/>
+[in] 총 진행률 값입니다.  
   
- [in] *nProgressCurr*  
- 현재 진행률 값입니다.  
+*nProgressCurr*<br/>
+[in] 현재 진행률 값입니다.  
   
- [in] *clrBar*  
- 시작 색입니다. `CMFCBaseVisualManager` 이 무시합니다. 파생된 클래스 색 그라데이션에 사용할 수 있습니다.  
+*clrBar*<br/>
+[in] 시작 색입니다. `CMFCBaseVisualManager` 이 무시합니다. 파생된 클래스 색 그라데이션에 사용할 수 있습니다.  
   
- [in] *clrProgressBarDest*  
- 마지막 색입니다. `CMFCBaseVisualManager` 이 무시합니다. 파생된 클래스 색 그라데이션에 사용할 수 있습니다.  
+*clrProgressBarDest*<br/>
+[in] 마지막 색입니다. `CMFCBaseVisualManager` 이 무시합니다. 파생된 클래스 색 그라데이션에 사용할 수 있습니다.  
   
- [in] *clrProgressText*  
- 진행률 텍스트 색입니다. `CMFCBaseVisualManager` 이 무시합니다. 텍스트 색을 정의한 `afxGlobalData.clrBtnText`합니다.  
+*clrProgressText*<br/>
+[in] 진행률 텍스트 색입니다. `CMFCBaseVisualManager` 이 무시합니다. 텍스트 색을 정의한 `afxGlobalData.clrBtnText`합니다.  
   
- [in] *bProgressText*  
- 진행률 텍스트를 표시할지 여부를 지정 합니다.  
+*bProgressText*<br/>
+[in] 진행률 텍스트를 표시할지 여부를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  테마 API를 사용 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -344,14 +344,14 @@ virtual void FillReBarPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pBar*  
- 해당 배경을 그려야 하는 창에 대 한 포인터입니다.  
+*pBar*<br/>
+[in] 해당 배경을 그려야 하는 창에 대 한 포인터입니다.  
   
- [in] *rectClient*  
- 채워질 영역 경계 사각형입니다.  
+*rectClient*<br/>
+[in] 채워질 영역 경계 사각형입니다.  
   
 ### <a name="return-value"></a>반환 값  
  테마 API를 사용 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  

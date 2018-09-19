@@ -310,12 +310,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65a6eb5fe80c25912c76e3446efb1ee00413fff1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 14529f9246572299fc6629ec13ff4eab837bb5fd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171274"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095848"
 ---
 # <a name="cc-build-errors"></a>C/C++ 빌드 오류
 
@@ -325,5 +325,5 @@ ms.locfileid: "33171274"
 
 ## <a name="see-also"></a>참고자료
 
-[C/C++ 빌드 참조](../../build/reference/c-cpp-building-reference.md)   
+[C/C++ 빌드 참조](../../build/reference/c-cpp-building-reference.md)<br/>
 [Visual Studio의 디버깅](/visualstudio/debugger/debugging-in-visual-studio)

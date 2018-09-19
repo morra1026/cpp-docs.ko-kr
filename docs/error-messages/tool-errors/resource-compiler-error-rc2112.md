@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4007e714a69665758a44c5f80c03fd7dbbfe7f8d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e2b65f845ef845648d219c6d0e58a9fcd9068a34
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317364"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018589"
 ---
 # <a name="resource-compiler-error-rc2112"></a>리소스 컴파일러 오류 RC2112
-대화 상자에 BEGIN이 필요  
-  
- **시작** 키워드 바로 뒤에 붙여야는 **대화** 키워드입니다.
+
+BEGIN이 대화 상자에서 필요 합니다.
+
+**시작** 키워드 바로 뒤에 나와야 합니다 **대화 상자** 키워드입니다.

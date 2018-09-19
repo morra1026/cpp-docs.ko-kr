@@ -16,37 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0564d3472c46e01bc9f45d2f5d85446db0bb2ff3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 185fc7d70a9510ce9caf252398b63dd3c59c1f7d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246596"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020214"
 ---
 # <a name="compiler-error-c3289"></a>컴파일러 오류 C3289
-'property': trivial 속성은 인덱싱할 수 없습니다.  
-  
- 속성이 잘못 선언되었습니다. 인덱싱된 속성에 대해 접근자를 정의해야 합니다. 자세한 내용은 [property](../../windows/property-cpp-component-extensions.md) 를 참조하세요.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3289를 생성합니다.  
-  
-```  
-// C3289.cpp  
-// compile with: /clr  
-public ref struct C {  
-   // user-defined simple indexer  
-   property int indexer1[int];   // C3289  
-  
-   // user-defined indexer  
-   property int indexer2[int] {  
-      int get(int i) { return 0; }  
-      void set(int i, int j) {}  
-   }  
-};  
-  
-int main() {  
-   C ^ MyC = gcnew C();  
-   MyC->indexer2[0] = 1;  
-}  
+
+'property': trivial 속성은 인덱싱할 수 없습니다.
+
+속성이 잘못 선언되었습니다. 인덱싱된 속성에 대해 접근자를 정의해야 합니다. 자세한 내용은 [property](../../windows/property-cpp-component-extensions.md) 를 참조하세요.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C3289를 생성합니다.
+
+```
+// C3289.cpp
+// compile with: /clr
+public ref struct C {
+   // user-defined simple indexer
+   property int indexer1[int];   // C3289
+
+   // user-defined indexer
+   property int indexer2[int] {
+      int get(int i) { return 0; }
+      void set(int i, int j) {}
+   }
+};
+
+int main() {
+   C ^ MyC = gcnew C();
+   MyC->indexer2[0] = 1;
+}
 ```

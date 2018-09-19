@@ -463,21 +463,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3caa4ed0cb4a14cea913d141a88d9f2dd079f9bb
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: d06bac8aef674472b817817fde4191f1d655365e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33693454"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723231"
 ---
 # <a name="reference-concurrency-runtime"></a>참조(동시성 런타임)
-이 섹션에는 동시성 런타임에 대 한 참조 정보가 포함 되어 있습니다.
-**참고** c + + 언어 표준 라이브러리와 같은 구현을 위해 밑줄 (_) 문자로 시작 하는 식별자의 사용이 예약 되어 있습니다. 코드에서는 이러한 이름을 사용하지 마세요. 해당 이름이 이 규칙을 따르는 코드 요소의 동작은 보장되지 않으며 이후 릴리스에서 변경될 수 있습니다. 이러한 이유로, 등의 코드 요소는 동시성 런타임 설명서에서 생략 됩니다.
+이 섹션에서는 동시성 런타임에 대 한 참조 정보를 포함합니다.
+
+> [!Note]
+> C + + 언어 표준 라이브러리와 같은 구현을 위해 밑줄 (_) 문자로 시작 하는 식별자의 사용을 예약 합니다. 코드에서는 이러한 이름을 사용하지 마세요. 해당 이름이 이 규칙을 따르는 코드 요소의 동작은 보장되지 않으며 이후 릴리스에서 변경될 수 있습니다. 이러한 이유로, 동시성 런타임에서 설명서에서 해당 코드 요소가 생략 됩니다.
 
 ## <a name="in-this-section"></a>섹션 내용
-[동시성 Namespace](concurrency-namespace.md) 함수를 제공 하는 c + + 용 동시 프로그래밍 프레임 워크인 동시성 런타임에 액세스와 동시성 네임 스페이스 클래스를 제공 합니다. 자세한 내용은 [동시성 런타임](../concurrency-runtime.md)을 참조하세요.
+
+[동시성 Namespace](concurrency-namespace.md) 동시성 네임 스페이스 클래스를 제공 하 고 동시성 런타임에서 c + + 용 동시 프로그래밍 프레임 워크에 대 한 액세스를 제공 하는 함수입니다. 자세한 내용은 [동시성 런타임](../concurrency-runtime.md)을 참조하세요.
 
 [std 네임 스페이스](std-namespace.md)
+
 [stdx 네임 스페이스](stdx-namespace.md)
-
-

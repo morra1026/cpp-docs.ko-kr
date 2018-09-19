@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5bf01db5baff0bda6cda1d47ffb6f64e7d9bac1
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 7d3f8f52e237fe364f73057c81eb17c8fd3def18
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759433"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041040"
 ---
 # <a name="atl-registry-component-registrar"></a>ATL 레지스트리 구성 요소(등록자)
 
@@ -36,14 +36,14 @@ ATL 등록자 시스템 레지스트리에 사용자 지정 인터페이스를 �
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[등록자 스크립트 만들기](../atl/creating-registrar-scripts.md)  
+[등록자 스크립트 만들기](../atl/creating-registrar-scripts.md)<br/>
 등록자 스크립트를 작성 하는 가이드입니다. BNF 구문, 구문 분석 트리, 레지스트리 스크립트 예제, 대체 가능 매개 변수를 사용 하 여 스크립트를 호출 하는 방식에 대 한 항목이 포함 되어 있습니다.
 
-[등록자 코드 (c + + 전용)에 대 한 정적 링크 설정](../atl/setting-up-a-static-link-to-the-registrar-code-cpp-only.md)  
+[등록자 코드 (c + + 전용)에 대 한 정적 링크 설정](../atl/setting-up-a-static-link-to-the-registrar-code-cpp-only.md)<br/>
 등록자에 게 정적 연결을 설정 하는 단계를 나열 합니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 액티브 템플릿 라이브러리를 사용하여 프로그래밍하는 방법에 대한 개념 항목의 링크를 제공합니다.
 

@@ -16,34 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 163cb170953c444789e39b906ff4d408739f7514
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5f004de3ed133ea77d543014ae1adcdc4e1eddef
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247679"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077804"
 ---
 # <a name="compiler-error-c3071"></a>컴파일러 오류 C3071
-'operator' 연산자는 ref 클래스 또는 값 형식의 인스턴스에만 적용할 수 있습니다.  
-  
- CLR 연산자는 네이티브 형식에 사용할 수 없습니다. 이 연산자는 ref 클래스나 ref 구조체(값 형식)에 사용할 수 있으며 int 같은 네이티브 형식이나 네이티브 형식에 대한 별칭(예: System::Int32)에는 사용할 수 없습니다. 이러한 형식은 C++ 코드에서 네이티브 변수를 참조하는 방식으로 boxing될 수 없기 때문에, 이 연산자를 사용할 수 없습니다.  
-  
- 자세한 내용은 참조 [추적 참조 연산자](../../windows/tracking-reference-operator-cpp-component-extensions.md)합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3071 오류가 발생하는 경우를 보여 줍니다.  
-  
-```  
-// C3071.cpp  
-// compile with: /clr  
-class N {};  
-ref struct R {};  
-  
-int main() {  
-   N n;  
-   %n;   // C3071  
-  
-   R r;  
-   R ^ r2 = %r;   // OK  
-}  
+
+'operator' 연산자는 ref 클래스 또는 값 형식의 인스턴스에만 적용할 수 있습니다.
+
+CLR 연산자는 네이티브 형식에 사용할 수 없습니다. 이 연산자는 ref 클래스나 ref 구조체(값 형식)에 사용할 수 있으며 int 같은 네이티브 형식이나 네이티브 형식에 대한 별칭(예: System::Int32)에는 사용할 수 없습니다. 이러한 형식은 C++ 코드에서 네이티브 변수를 참조하는 방식으로 boxing될 수 없기 때문에, 이 연산자를 사용할 수 없습니다.
+
+자세한 내용은 [추적 참조 연산자](../../windows/tracking-reference-operator-cpp-component-extensions.md)합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C3071 오류가 발생하는 경우를 보여 줍니다.
+
+```
+// C3071.cpp
+// compile with: /clr
+class N {};
+ref struct R {};
+
+int main() {
+   N n;
+   %n;   // C3071
+
+   R r;
+   R ^ r2 = %r;   // OK
+}
 ```

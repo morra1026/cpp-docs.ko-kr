@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ca145addc16306d613817643e363ecd9c95069a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 84aa73120dabd261d54e764d1e0bfe8bc9c561a0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292190"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039616"
 ---
 # <a name="compiler-warning-level-4-c4092"></a>컴파일러 경고 (수준 4) C4092
-sizeof '부호 없는 long' 반환  
-  
- 피연산자는 `sizeof` 연산자가 매우 큰 하므로 `sizeof` 서명 되지 않은 반환 **긴**합니다. 이 경고는 Microsoft 확장 발생 ([/Ze](../../build/reference/za-ze-disable-language-extensions.md)). ANSI 호환성 (/Za)에서 결과 대신 잘립니다.
+
+sizeof 'unsigned 반환합니다.
+
+피연산자는 `sizeof` 연산자가 매우 큰 이므로 `sizeof` 부호 없는 반환 **긴**합니다. 이 경고는 Microsoft 확장에 발생 합니다 ([/Ze](../../build/reference/za-ze-disable-language-extensions.md)). ANSI 호환성 (/Za)에서 결과 대신 잘립니다.

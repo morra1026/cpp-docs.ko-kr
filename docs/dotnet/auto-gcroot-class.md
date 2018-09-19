@@ -19,15 +19,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: b6afad3450aff2a9243b3e4a480a374fbcd14fc7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: da63d58136d61bbea75daa90ac01cee5b44ac86d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103868"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039103"
 ---
 # <a name="autogcroot-class"></a>auto_gcroot 클래스
-자동 리소스 관리 (같은 [auto_ptr 클래스](../standard-library/auto-ptr-class.md))는 네이티브 형식에 가상 핸들을 포함 하 여 사용할 수 있는 합니다.  
+자동 리소스 관리 (같은 [auto_ptr 클래스](../standard-library/auto-ptr-class.md))는 네이티브 형식에 가상 핸들을 포함 시킬 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,8 +37,8 @@ class auto_gcroot;
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `_element_type`  
- 포함할 관리 되는 형식입니다.  
+*_element_type*<br/>
+포함할 관리 되는 형식입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더 파일** \<msclr\auto_gcroot.h >  

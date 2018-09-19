@@ -83,12 +83,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46d96d574fedf9af2fe7eb46c872819cf54a364e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c96b5b18530cd9b983e5a4c022883919261cc22c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216461"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701612"
 ---
 # <a name="cmfcribbonedit-class"></a>CMFCRibbonEdit 클래스
 리본 표시줄에 있는 편집 컨트롤을 구현 합니다.  
@@ -181,17 +181,17 @@ CMFCRibbonEdit();
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 명령에 대 한 ID는 `CMFCRibbonEdit` 제어 합니다.  
+*nID*<br/>
+[in] 명령에 대 한 ID는 `CMFCRibbonEdit` 제어 합니다.  
   
- [in] *nWidth*  
- 픽셀에 대 한 입력란의 너비는 `CMFCRibbonEdit` 제어 합니다.  
+*nWidth*<br/>
+[in] 픽셀에 대 한 입력란의 너비는 `CMFCRibbonEdit` 제어 합니다.  
   
- [in] *lpszLabel*  
- 에 대 한 레이블을 `CMFCRibbonEdit` 제어 합니다.  
+*lpszLabel*<br/>
+[in] 에 대 한 레이블을 `CMFCRibbonEdit` 제어 합니다.  
   
- [in] *nImage*  
- 사용할 작은 이미지의 인덱스를 `CMFCRibbonEdit` 제어 합니다. 작은 이미지의 컬렉션은 부모 리본 범주에 따라 유지 됩니다.  
+*nImage*<br/>
+[in] 사용할 작은 이미지의 인덱스를 `CMFCRibbonEdit` 제어 합니다. 작은 이미지의 컬렉션은 부모 리본 범주에 따라 유지 됩니다.  
   
 ### <a name="remarks"></a>설명  
  `CMFCRibbonEdit` 컨트롤은 큰 이미지를 사용 하지 않습니다.  
@@ -204,8 +204,8 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *src*  
- 소스 `CMFCRibbonEdit` 개체입니다.  
+*src*<br/>
+[in] 원본 `CMFCRibbonEdit` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  합니다 *src* 매개 변수 형식 이어야 합니다 `CMFCRibbonEdit`합니다.  
@@ -220,11 +220,11 @@ virtual CMFCRibbonRichEditCtrl* CreateEdit(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndParent*  
- 부모 창에 대 한 포인터를 `CMFCRibbonEdit` 개체입니다.  
+*pWndParent*<br/>
+[in] 부모 창에 대 한 포인터를 `CMFCRibbonEdit` 개체입니다.  
   
- [in] *dwEditStyle*  
- 입력란의 스타일을 지정 합니다. 주의 섹션에서 나열 된 창 스타일을 결합할 수 있습니다 합니다 [컨트롤 스타일 편집](/windows/desktop/Controls/edit-control-styles) Windows SDK에 나와 있는 합니다.  
+*dwEditStyle*<br/>
+[in] 입력란의 스타일을 지정 합니다. 주의 섹션에서 나열 된 창 스타일을 결합할 수 있습니다 합니다 [컨트롤 스타일 편집](/windows/desktop/Controls/edit-control-styles) Windows SDK에 나와 있는 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 새 텍스트 상자에 대 한 포인터 그렇지 않으면 NULL입니다.  
@@ -273,11 +273,11 @@ void EnableSpinButtons(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nMin*  
- 최소 값 스핀 단추입니다.  
+*nMin*<br/>
+[in] 최소 값 스핀 단추입니다.  
   
- [in] *최대*  
- 최대 값 스핀 단추입니다.  
+*최대*<br/>
+[in] 최대 값 스핀 단추입니다.  
   
 ### <a name="remarks"></a>설명  
  스핀 단추 위쪽 및 아래쪽 화살표를 나타내고 고정된 값 집합을 통해 이동 하는 사용자 합니다.  
@@ -290,8 +290,8 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대 한 포인터를 `CMFCRibbonEdit` 개체입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터를 `CMFCRibbonEdit` 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  Compact 크기는 `CMFCRibbonEdit` 개체입니다.  
@@ -318,8 +318,8 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대 한 포인터를 `CMFCRibbonEdit` 개체입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터를 `CMFCRibbonEdit` 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  중간 크기의 `CMFCRibbonEdit` 개체입니다.  
@@ -355,8 +355,8 @@ int GetWidth(BOOL bInFloatyMode = FALSE) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bInFloatyMode*  
- True는 `CMFCRibbonEdit` 부동 모드에서 컨트롤은, 그렇지 않으면 FALSE입니다.  
+*bInFloatyMode*<br/>
+[in] True는 `CMFCRibbonEdit` 부동 모드에서 컨트롤은, 그렇지 않으면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  픽셀에서 너비의는 `CMFCRibbonEdit` 제어 합니다.  
@@ -433,8 +433,8 @@ virtual void OnAfterChangeRect(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대 한 포인터를 `CMFCRibbonEdit` 제어 합니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터를 `CMFCRibbonEdit` 제어 합니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -446,8 +446,8 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대 한 포인터를 `CMFCRibbonEdit` 제어 합니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터를 `CMFCRibbonEdit` 제어 합니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -459,8 +459,8 @@ virtual void OnDrawLabelAndImage(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대 한 포인터를 `CMFCRibbonEdit` 제어 합니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터를 `CMFCRibbonEdit` 제어 합니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -478,23 +478,23 @@ virtual void OnDrawOnList(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대 한 포인터를 `CMFCRibbonEdit` 제어 합니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터를 `CMFCRibbonEdit` 제어 합니다.  
   
- [in] *strText*  
- 텍스트를 표시할 [ ] (../../mfc/reference/cmfcribbonedit-class.md "cmfcribbonedit 클래스")합니다.  
+*strText*<br/>
+[in] 텍스트를 표시할 [ ] (../../mfc/reference/cmfcribbonedit-class.md "cmfcribbonedit 클래스")합니다.  
   
- [in] *nTextOffset*  
- 텍스트를 표시할 목록 상자의 왼쪽에서의 픽셀 단위의 거리입니다.  
+*nTextOffset*<br/>
+[in] 텍스트를 표시할 목록 상자의 왼쪽에서의 픽셀 단위의 거리입니다.  
   
- [in] *rect*  
- 에 대 한 표시 사각형을 `CMFCRibbonEdit` 제어 합니다.  
+*rect*<br/>
+[in] 에 대 한 표시 사각형을 `CMFCRibbonEdit` 제어 합니다.  
   
- [in] *bIsSelected*  
- 이 매개 변수는 사용되지 않습니다.  
+*bIsSelected*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
- [in] *bHighlighted*  
- 이 매개 변수는 사용되지 않습니다.  
+*bHighlighted*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
  명령 목록 상자는 사용자는 빠른 실행 도구 모음을 사용자 지정할 수 있도록 리본 컨트롤을 표시 합니다.  
@@ -507,8 +507,8 @@ virtual void OnEnable(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 컨트롤을 사용 하도록 설정 컨트롤을 사용 하지 않도록 설정 하려면 FALSE입니다.  
+*bEnable*<br/>
+[in] 컨트롤을 사용 하도록 설정 컨트롤을 사용 하지 않도록 설정 하려면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -520,8 +520,8 @@ virtual void OnHighlight(BOOL bHighlight);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bHighlight*  
- 포인터의 범위에 있으면 TRUE를 `CMFCRibbonEdit` 컨트롤, 그렇지 않으면 FALSE입니다.  
+*bHighlight*<br/>
+[in] 포인터의 범위에 있으면 TRUE를 `CMFCRibbonEdit` 컨트롤, 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -533,8 +533,8 @@ virtual BOOL OnKey(BOOL bIsMenuKey);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bIsMenuKey*  
- Keytip을 팝업 메뉴를 표시 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+*bIsMenuKey*<br/>
+[in] Keytip을 팝업 메뉴를 표시 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이벤트가 처리 되었으면 TRUE 그렇지 않으면 FALSE입니다.  
@@ -549,8 +549,8 @@ virtual void OnLButtonDown(CPoint point);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 이 매개 변수는 사용되지 않습니다.  
+*지점*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -562,8 +562,8 @@ virtual void OnLButtonUp(CPoint point);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 이 매개 변수는 사용되지 않습니다.  
+*지점*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -575,8 +575,8 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bIsRTL*  
- 레이아웃이 오른쪽에서 왼쪽; 면 TRUE입니다. 레이아웃이 왼쪽에서 오른쪽 면 FALSE입니다.  
+*bIsRTL*<br/>
+[in] 레이아웃이 오른쪽에서 왼쪽; 면 TRUE입니다. 레이아웃이 왼쪽에서 오른쪽 면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -588,8 +588,8 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bShow*  
- 컨트롤을 표시 컨트롤을 숨기려면 FALSE입니다.  
+*bShow*<br/>
+[in] 컨트롤을 표시 컨트롤을 숨기려면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -632,8 +632,8 @@ void SetEditText(CString strText);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *strText*  
- 텍스트 상자에 대 한 텍스트입니다.  
+*strText*<br/>
+[in] 텍스트 상자에 대 한 텍스트입니다.  
   
 ##  <a name="settextalign"></a>  CMFCRibbonEdit::SetTextAlign  
  입력란의 텍스트 맞춤을 설정합니다.  
@@ -643,8 +643,8 @@ void SetTextAlign(int nAlign);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nAlign*  
- 텍스트 맞춤 값을 열거 합니다. 가능한 값에 대 한 설명 섹션을 참조 합니다.  
+*nAlign*<br/>
+[in] 텍스트 맞춤 값을 열거 합니다. 가능한 값에 대 한 설명 섹션을 참조 합니다.  
   
 ### <a name="remarks"></a>설명  
  매개 변수 *nAlign* 컨트롤 스타일 편집을 다음 중 하나입니다.  
@@ -667,8 +667,8 @@ void SetWidth(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nWidth*  
- 입력란의 픽셀에서 너비입니다.  
+*nWidth*<br/>
+[in] 입력란의 픽셀에서 너비입니다.  
   
  *bInFloatyMode*  
  부동 모드에 대 한 너비를 설정. 일반 모드에 대 한 너비를 설정 하려면 FALSE입니다.  

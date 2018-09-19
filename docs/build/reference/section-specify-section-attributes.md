@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f052d8acaceee88b6b9a727e176666180b1bb9d
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: bf762718e507309e47d36b06baacf54c6cb01e3e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214182"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713741"
 ---
 # <a name="section-specify-section-attributes"></a>/SECTION(섹션 특성 지정)
 
@@ -89,7 +89,7 @@ E, R, W 설정 되지 않은 PE 파일의 섹션 아마도 올바르지 않습�
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1.  프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **링커** > **명령줄** 속성 페이지.
 
@@ -101,5 +101,5 @@ E, R, W 설정 되지 않은 PE 파일의 섹션 아마도 올바르지 않습�
 
 ## <a name="see-also"></a>참고자료
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)  
-[링커 옵션](../../build/reference/linker-options.md)  
+[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
+[링커 옵션](../../build/reference/linker-options.md)

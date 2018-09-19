@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67dc97688dddde37323f25b96bd8bbc596660e2f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a618c02fcf3a8927d8090b1ad51ed16d9ac28542
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33231219"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056055"
 ---
 # <a name="compiler-error-c2695"></a>컴파일러 오류 C2695
-'function1': 재정의 가상 함수에서 'function2' 점만 다른 호출 규칙  
-  
- 파생된 클래스에서 함수의 서명이 기본 클래스의 함수를 재정의 하 고 호출 규칙을 변경할 수 없습니다.  
-  
- 다음 샘플에서는 C2695 오류가 생성 됩니다.  
-  
-```  
-// C2695.cpp  
-class C {  
-   virtual void __fastcall func();  
-};  
-  
-class D : public C {  
-   virtual void __clrcall func();   // C2695  
-};  
+
+'function1': 재정의 가상 함수에서 'function2'만 다른 호출 규칙
+
+파생된 클래스에서 함수 서명의 기본 클래스의 함수를 재정의 및 호출 규칙을 변경할 수 없습니다.
+
+다음 샘플에서는 C2695를 생성합니다.
+
+```
+// C2695.cpp
+class C {
+   virtual void __fastcall func();
+};
+
+class D : public C {
+   virtual void __clrcall func();   // C2695
+};
 ```

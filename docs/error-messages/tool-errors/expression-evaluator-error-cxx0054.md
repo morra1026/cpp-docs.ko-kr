@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 11f5306f7cd3385c9ca302cd186de5591b448ea6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7aaf1a55ffee1d06eb4807381ad2cf1315420dbd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294312"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074697"
 ---
 # <a name="expression-evaluator-error-cxx0054"></a>식 계산기 오류 CXX0054
-잘못 된 중단점 식의 레지스터가  
-  
- 레지스터는 중단점 식에 사용할 수 없습니다.  
-  
- 이 오류는 can0054와 동일 합니다.
+
+잘못 된 중단점 식에 등록
+
+레지스터는 중단점 식에 사용할 수 없습니다.
+
+이 오류는 can0054와 동일 합니다.

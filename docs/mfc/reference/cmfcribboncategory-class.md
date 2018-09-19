@@ -140,12 +140,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e292ff062449fd53aba0c5f4775e1b2e0b8ff909
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 73cf6b78475ca438c39e52263c4e91b10de60f8c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852395"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020422"
 ---
 # <a name="cmfcribboncategory-class"></a>CMFCRibbonCategory 클래스
 합니다 `CMFCRibbonCategory` 그룹을 포함 하는 리본 탭을 구현 하는 클래스 [리본 패널](../../mfc/reference/cmfcribbonpanel-class.md)합니다.  
@@ -237,23 +237,18 @@ class CMFCRibbonCategory : public CObject
   
  다음 예제에서는 리본 범주를 만들고 창을 추가 하는 방법을 보여 줍니다.  
   
- `// Create a new ribbon category and get a pointer to it`  
-  
- `CMFCRibbonCategory* pCategory = m_wndRibbonBar.AddCategory`  
-  
- `(_T("&Write"),           // Category name`  
-  
- `IDB_WRITE,              // Category small images (16 x 16)`  
-  
- `IDB_WRITE_LARGE);   // Category large images (32 x 32)`  
-  
- `// Add a panel to the new category`  
-  
- `CMFCRibbonPanel* pPanel = pCategory->AddPanel (`  
-  
- `_T("Clipboard"),                       // Panel name`  
-  
- `m_PanelIcons.ExtractIcon (0));  // Panel icon`  
+```cpp
+// Create a new ribbon category and get a pointer to it`  
+CMFCRibbonCategory* pCategory = m_wndRibbonBar.AddCategory
+    (_T("&Write"),           // Category name
+    IDB_WRITE,               // Category small images (16 x 16)
+    IDB_WRITE_LARGE);        // Category large images (32 x 32)
+
+// Add a panel to the new category
+CMFCRibbonPanel* pPanel = pCategory->AddPanel (
+    _T("Clipboard"),                // Panel name
+    m_PanelIcons.ExtractIcon (0));  // Panel icon
+```
   
  다음 다이어그램에서는 RibbonApp 샘플 응용 프로그램의 홈 범주의 그림을 보여 줍니다.  
   
@@ -275,8 +270,8 @@ void AddHidden(CMFCRibbonBaseElement* pElem);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pElem*  
- 리본 요소에 대 한 포인터입니다.  
+*pElem*<br/>
+[in] 리본 요소에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  사용자 지정 대화 상자에서 리본 요소는 빠른 실행 도구 모음에 추가할 수 있는 명령입니다.  
@@ -292,14 +287,14 @@ CMFCRibbonPanel* AddPanel(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszPanelName*  
- 새 리본 패널의 이름에 대 한 포인터입니다.  
+*lpszPanelName*<br/>
+[in] 새 리본 패널의 이름에 대 한 포인터입니다.  
   
- [in] *hIcon*  
- 새 리본 패널에 대 한 기본 아이콘에 대 한 핸들입니다.  
+*hIcon*<br/>
+[in] 새 리본 패널에 대 한 기본 아이콘에 대 한 핸들입니다.  
   
- [in] *pRTI*  
- 사용자 지정 리본 패널에 대 한 런타임 클래스 정보에 대 한 포인터입니다.  
+*pRTI*<br/>
+[in] 사용자 지정 리본 패널에 대 한 런타임 클래스 정보에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 새 리본 패널에 대 한 포인터 그렇지 않으면 패널을 만들지 않은 경우 NULL입니다.  
@@ -309,7 +304,7 @@ CMFCRibbonPanel* AddPanel(
   
  리본 요소를 표시할 공간이 부족 하면 리본 패널에 대 한 기본 아이콘이 표시 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `AddPanel` 의 메서드는 `CMFCRibbonCategory` 클래스입니다.  
   
  [!code-cpp[NVC_MFC_RibbonApp#10](../../mfc/reference/codesnippet/cpp/cmfcribboncategory-class_1.cpp)]  
@@ -330,23 +325,23 @@ CMFCRibbonCategory(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pParenrRibbonBar*  
- 리본 범주에 있는 부모 리본 표시줄에 대 한 포인터입니다.  
+*pParenrRibbonBar*<br/>
+[in] 리본 범주에 있는 부모 리본 표시줄에 대 한 포인터입니다.  
   
- [in] *lpszName*  
- 리본 범주의 이름입니다.  
+*lpszName*<br/>
+[in] 리본 범주의 이름입니다.  
   
- [in] *uiSmallImagesResID*  
- 이미지 목록의 리본 범주의 리본 요소에 의해 사용 되는 작은 이미지에 대 한 리소스 ID입니다.  
+*uiSmallImagesResID*<br/>
+[in] 이미지 목록의 리본 범주의 리본 요소에 의해 사용 되는 작은 이미지에 대 한 리소스 ID입니다.  
   
- [in] *uiLargeImagesResID*  
- 이미지 목록의 리본 범주의 리본 요소에 의해 사용 되는 큰 이미지에 대 한 리소스 ID입니다.  
+*uiLargeImagesResID*<br/>
+[in] 이미지 목록의 리본 범주의 리본 요소에 의해 사용 되는 큰 이미지에 대 한 리소스 ID입니다.  
   
- [in] *sizeSmallImage*  
- 기본 리본 범주의 리본 요소에 대 한 작은 이미지의 크기입니다.  
+*sizeSmallImage*<br/>
+[in] 기본 리본 범주의 리본 요소에 대 한 작은 이미지의 크기입니다.  
   
- [in] *sizeLargeImage*  
- 기본 리본 범주의 리본 요소에 대 한 큰 이미지의 크기입니다.  
+*sizeLargeImage*<br/>
+[in] 기본 리본 범주의 리본 요소에 대 한 큰 이미지의 크기입니다.  
   
 ##  <a name="copyfrom"></a>  CMFCRibbonCategory::CopyFrom  
  지정 된 상태를 복사 [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md) 현재 [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md) 개체입니다.  
@@ -356,8 +351,8 @@ virtual void CopyFrom(CMFCRibbonCategory& src);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *src*  
- 소스 `CMFCRibbonCategory` 개체입니다.  
+*src*<br/>
+[in] 원본 `CMFCRibbonCategory` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -371,11 +366,11 @@ CMFCRibbonBaseElement* FindByData(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwData*  
- 리본 요소에 연결 된 데이터입니다.  
+*dwData*<br/>
+[in] 리본 요소에 연결 된 데이터입니다.  
   
- [in] *bVisibleOnly*  
- 검색에 대 한 빠른 액세스 리본 요소를 포함 하려면 TRUE 검색에 대 한 빠른 액세스 리본 요소를 제외 하려면 FALSE입니다.  
+*bVisibleOnly*<br/>
+[in] 검색에 대 한 빠른 액세스 리본 요소를 포함 하려면 TRUE 검색에 대 한 빠른 액세스 리본 요소를 제외 하려면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 리본 요소에 대 한 포인터 그렇지 않으면 NULL입니다.  
@@ -392,11 +387,11 @@ CMFCRibbonBaseElement* FindByID(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmdID*  
- 리본 요소에 연결 된 명령 ID입니다.  
+*uiCmdID*<br/>
+[in] 리본 요소에 연결 된 명령 ID입니다.  
   
- [in] *bVisibleOnly*  
- 검색에 대 한 빠른 액세스 리본 요소를 포함 하려면 TRUE 검색에 대 한 빠른 액세스 리본 요소를 제외 하려면 FALSE입니다.  
+*bVisibleOnly*<br/>
+[in] 검색에 대 한 빠른 액세스 리본 요소를 포함 하려면 TRUE 검색에 대 한 빠른 액세스 리본 요소를 제외 하려면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 리본 요소에 대 한 포인터 그렇지 않으면 NULL입니다.  
@@ -411,8 +406,8 @@ CMFCRibbonPanel* FindPanelWithElem(const CMFCRibbonBaseElement* pElement);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pElement*  
- 리본 요소에 대 한 포인터입니다.  
+*pElement*<br/>
+[in] 리본 요소에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 리본 패널에 대 한 포인터 그렇지 않으면 NULL입니다.  
@@ -463,8 +458,8 @@ void GetElements(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out에서] *arElements*  
- 에 대 한 참조를 [CArray](../../mfc/reference/carray-class.md) 리본 요소입니다.  
+*arElements*<br/>
+[out에서] 에 대 한 참조를 [CArray](../../mfc/reference/carray-class.md) 리본 요소입니다.  
   
 ### <a name="remarks"></a>설명  
  빠른 실행 도구 모음에서 사용 하기 위해 설계 된 리본 요소를 배열에 포함 됩니다.  
@@ -479,11 +474,11 @@ void GetElementsByID(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmdID*  
- 리본 요소에 연결 된 명령 ID입니다.  
+*uiCmdID*<br/>
+[in] 리본 요소에 연결 된 명령 ID입니다.  
   
- [out에서] *arElements*  
- 에 대 한 참조를 [CArray](../../mfc/reference/carray-class.md) 리본 요소입니다.  
+*arElements*<br/>
+[out에서] 에 대 한 참조를 [CArray](../../mfc/reference/carray-class.md) 리본 요소입니다.  
   
 ### <a name="remarks"></a>설명  
  빠른 실행 도구 모음에서 사용 하기 위해 설계 된 리본 요소를 배열에 포함 됩니다.  
@@ -532,8 +527,8 @@ int GetImageCount(BOOL bIsLargeImage) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bIsLargeImage*  
- 큰 이미지 목록의 이미지 개수에 대해 TRUE 작은 이미지 목록의 이미지 개수를 FALSE로 설정 합니다.  
+*bIsLargeImage*<br/>
+[in] 큰 이미지 목록의 이미지 개수에 대해 TRUE 작은 이미지 목록의 이미지 개수를 FALSE로 설정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정 된 이미지 목록의 이미지 개수입니다.  
@@ -548,8 +543,8 @@ CSize GetImageSize(BOOL bIsLargeImage) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bIsLargeImage*  
- 큰 이미지의 크기에 대해 TRUE 작은 이미지의 크기에 대 한 FALSE입니다.  
+*bIsLargeImage*<br/>
+[in] 큰 이미지의 크기에 대해 TRUE 작은 이미지의 크기에 대 한 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정 된 이미지 목록의 이미지의 크기입니다.  
@@ -567,11 +562,11 @@ void GetItemIDsList(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *lstItems*  
- 리본 범주에 있는 리본 요소에 대 한 명령 Id의 목록입니다.  
+*lstItems*<br/>
+[out] 리본 범주에 있는 리본 요소에 대 한 명령 Id의 목록입니다.  
   
- [in] *bHiddenOnly*  
- 리본 범주의; 리본 패널에 표시 되는 리본 요소를 제외. 리본 범주에서 모든 리본 요소를 포함 하려면 FALSE입니다.  
+*bHiddenOnly*<br/>
+[in] 리본 범주의; 리본 패널에 표시 되는 리본 요소를 제외. 리본 범주에서 모든 리본 요소를 포함 하려면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -605,8 +600,8 @@ int GetMaxHeight(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 리본 패널에 대 한 장치 컨텍스트에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 리본 패널에 대 한 장치 컨텍스트에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  리본 범주에 포함 된 리본 패널의 최대 높이입니다.  
@@ -634,8 +629,8 @@ CMFCRibbonPanel* GetPanel(int nIndex);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nIndex*  
- 리본 패널의 0부터 시작 하는 인덱스입니다.  
+*nIndex*<br/>
+[in] 리본 패널의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정된 된 인덱스에 있는 리본 패널에 대 한 포인터입니다.  
@@ -661,8 +656,8 @@ CMFCRibbonPanel* GetPanelFromPoint(CPoint point) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 창의 왼쪽 위 모퉁이 기준으로 포인터의 x 및 y 좌표입니다.  
+*지점*<br/>
+[in] 창의 왼쪽 위 모퉁이 기준으로 포인터의 x 및 y 좌표입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 리본 패널에 대 한 포인터 그렇지 않으면 NULL입니다.  
@@ -678,8 +673,8 @@ int GetPanelIndex(const CMFCRibbonPanel* pPanel) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pPanel*  
- 리본 패널에 대 한 포인터입니다.  
+*pPanel*<br/>
+[in] 리본 패널에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 지정 된 리본 패널의 0 기반 인덱스 그렇지 않으면-1입니다.  
@@ -822,11 +817,11 @@ CMFCRibbonPanel* HighlightPanel(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pHLPanel*  
- 리본 패널에 강조 표시에 대 한 포인터입니다.  
+*pHLPanel*<br/>
+[in] 리본 패널에 강조 표시에 대 한 포인터입니다.  
   
- [in] *지점*  
- 창의 왼쪽 위 모퉁이 기준으로 포인터의 x 및 y 좌표입니다.  
+*지점*<br/>
+[in] 창의 왼쪽 위 모퉁이 기준으로 포인터의 x 및 y 좌표입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이전에 강조 표시 된 리본 패널에 대 한 포인터 그렇지 않으면 없습니다 리본 패널에는이 메서드가 호출 될 때 강조 표시 되 면 NULL입니다.  
@@ -844,11 +839,11 @@ CMFCRibbonBaseElement* HitTest(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 창의 왼쪽 위 모퉁이 기준으로 마우스 포인터의 x 및 y 좌표입니다.  
+*지점*<br/>
+[in] 창의 왼쪽 위 모퉁이 기준으로 마우스 포인터의 x 및 y 좌표입니다.  
   
- [in] *bCheckPanelCaption*  
- 리본 패널 캡션이;를 테스트. 리본 패널 캡션이 제외 하려면 FALSE입니다.  
+*bCheckPanelCaption*<br/>
+[in] 리본 패널 캡션이;를 테스트. 리본 패널 캡션이 제외 하려면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 리본 요소에 대 한 포인터 그렇지 않으면 NULL입니다.  
@@ -864,8 +859,8 @@ int HitTestEx(CPoint point) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 창의 왼쪽 위 모퉁이 기준으로 마우스 포인터의 x 및 y 좌표입니다.  
+*지점*<br/>
+[in] 창의 왼쪽 위 모퉁이 기준으로 마우스 포인터의 x 및 y 좌표입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 리본 요소의 0부터 시작 인덱스 그렇지 않으면-1입니다.  
@@ -881,8 +876,8 @@ CMFCRibbonBaseElement* HitTestScrollButtons(CPoint point) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 테스트할 점입니다.  
+*지점*<br/>
+[in] 테스트할 점입니다.  
   
 ### <a name="return-value"></a>반환 값  
  하는 경우 *지점* 하거나 왼쪽의 경계 사각형 또는 오른쪽 스크롤 단추를 리본 범주에 속하는, 해당 단추에 대 한 포인터를 반환 합니다. 또는 그렇지 않은 경우 NULL을 반환 합니다.  
@@ -939,17 +934,17 @@ virtual BOOL NotifyControlCommand(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bAccelerator*  
- 그렇지 않은 경우 액셀러레이터 또는 FALSE에서 시작 하는 경우 TRUE 명령입니다.  
+*bAccelerator*<br/>
+[in] 그렇지 않은 경우 액셀러레이터 또는 FALSE에서 시작 하는 경우 TRUE 명령입니다.  
   
- [in] *nNotifyCode*  
- 알림 코드입니다.  
+*nNotifyCode*<br/>
+[in] 알림 코드입니다.  
   
- [in] *wParam*  
- 메시지의 WPARAM 필드입니다.  
+*wParam*<br/>
+[in] 메시지의 WPARAM 필드입니다.  
   
- [in] *lParam*  
- 메시지의 LPARAM 필드입니다.  
+*lParam*<br/>
+[in] 메시지의 LPARAM 필드입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메시지를 처리 하는 경우 TRUE 또는 그렇지 않은 경우 FALSE를 반환 합니다.  
@@ -973,8 +968,8 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 리본 범주에 대 한 장치 컨텍스트에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 리본 범주에 대 한 장치 컨텍스트에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -992,23 +987,23 @@ virtual BOOL OnDrawImage(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 이미지에 대 한 장치 컨텍스트에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 이미지에 대 한 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 이미지에 대 한 사각형을 표시 합니다.  
+*rect*<br/>
+[in] 이미지에 대 한 사각형을 표시 합니다.  
   
- [in] *pElement*  
- 이미지를 포함 하는 리본 요소에 대 한 포인터입니다.  
+*pElement*<br/>
+[in] 이미지를 포함 하는 리본 요소에 대 한 포인터입니다.  
   
- [in] *bIsLargeImage*  
- 이미지의 크기가 큰; 경우 TRUE 이미지의 크기가 작은 경우에 FALSE입니다.  
+*bIsLargeImage*<br/>
+[in] 이미지의 크기가 큰; 경우 TRUE 이미지의 크기가 작은 경우에 FALSE입니다.  
   
- [in] *nImageIndex*  
- 리본 범주에 포함 된 이미지 배열에 있는 이미지의 0부터 시작 인덱스입니다.  
+*nImageIndex*<br/>
+[in] 리본 범주에 포함 된 이미지 배열에 있는 이미지의 0부터 시작 인덱스입니다.  
   
- [in] *bCenter*  
- 가운데에 이미지의 표시 사각형을; TRUE False 이면 표시 사각형의 왼쪽 위 모퉁이에서 이미지를 그립니다.  
+*bCenter*<br/>
+[in] 가운데에 이미지의 표시 사각형을; TRUE False 이면 표시 사각형의 왼쪽 위 모퉁이에서 이미지를 그립니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1025,11 +1020,11 @@ virtual void OnDrawMenuBorder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 이 매개 변수는 사용되지 않습니다.  
+*pDC*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
- [in] *pMenuBar*  
- 이 매개 변수는 사용되지 않습니다.  
+*pMenuBar*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로이 메서드는 없습니다. 팝업 메뉴의 테두리를 그리는이 메서드를 재정의 합니다.  
@@ -1055,8 +1050,8 @@ virtual CMFCRibbonBaseElement* OnLButtonDown(CPoint point);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 창의 왼쪽 위 모퉁이 기준으로 마우스 포인터의 x 및 y 좌표입니다.  
+*지점*<br/>
+[in] 창의 왼쪽 위 모퉁이 기준으로 마우스 포인터의 x 및 y 좌표입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 리본 요소에 대 한 포인터 그렇지 않으면 NULL입니다.  
@@ -1071,8 +1066,8 @@ virtual void OnLButtonUp(CPoint point);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 창의 왼쪽 위 모퉁이 기준으로 포인터의 x 및 y 좌표입니다.  
+*지점*<br/>
+[in] 창의 왼쪽 위 모퉁이 기준으로 포인터의 x 및 y 좌표입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1084,8 +1079,8 @@ virtual void OnMouseMove(CPoint point);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 창의 왼쪽 위 모퉁이 기준으로 포인터의 x 및 y 좌표입니다.  
+*지점*<br/>
+[in] 창의 왼쪽 위 모퉁이 기준으로 포인터의 x 및 y 좌표입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1097,8 +1092,8 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bIsRTL*  
- 레이아웃이 오른쪽에서 왼쪽; 면 TRUE입니다. 레이아웃이 왼쪽에서 오른쪽 면 FALSE입니다.  
+*bIsRTL*<br/>
+[in] 레이아웃이 오른쪽에서 왼쪽; 면 TRUE입니다. 레이아웃이 왼쪽에서 오른쪽 면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 모든 리본 패널 및 리본 범주에 포함 된 리본 요소의 레이아웃을 조정 합니다.  
@@ -1113,11 +1108,11 @@ virtual BOOL OnScrollHorz(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bScrollLeft*  
- TRUE는 왼쪽으로 스크롤 False 이면 오른쪽으로 스크롤합니다.  
+*bScrollLeft*<br/>
+[in] TRUE는 왼쪽으로 스크롤 False 이면 오른쪽으로 스크롤합니다.  
   
- [in] *nScrollOffset*  
- 스크롤 거리 (픽셀)입니다.  
+*nScrollOffset*<br/>
+[in] 스크롤 거리 (픽셀)입니다.  
   
 ### <a name="return-value"></a>반환 값  
  리본 범주를 가로 방향으로;에서 이동 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1135,14 +1130,14 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pCmdUI*  
- 에 대 한 포인터를 `CMFCRibbonCmdUI` 사용자 인터페이스 요소가 사용 하도록 설정 하 고 사용할 수 없게 하는 지정 하는 개체입니다.  
+*pCmdUI*<br/>
+[in] 에 대 한 포인터를 `CMFCRibbonCmdUI` 사용자 인터페이스 요소가 사용 하도록 설정 하 고 사용할 수 없게 하는 지정 하는 개체입니다.  
   
- [in] *pTarget*  
- 제어를 사용 하도록 설정 또는 사용자 인터페이스 요소를 사용 하지 않도록 설정 하는 창에 대 한 포인터입니다.  
+*pTarget*<br/>
+[in] 제어를 사용 하도록 설정 또는 사용자 인터페이스 요소를 사용 하지 않도록 설정 하는 창에 대 한 포인터입니다.  
   
- [in] *bDisableIfNoHndler*  
- 처리기는 메시지 맵;에 정의 된 경우 사용자 인터페이스 항목을 사용 하지 않도록 설정. 그렇지 않으면 FALSE입니다.  
+*bDisableIfNoHndler*<br/>
+[in] 처리기는 메시지 맵;에 정의 된 경우 사용자 인터페이스 항목을 사용 하지 않도록 설정. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1154,8 +1149,8 @@ virtual void RecalcLayout(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 리본 범주에 대 한 장치 컨텍스트에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 리본 범주에 대 한 장치 컨텍스트에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1169,11 +1164,11 @@ BOOL RemovePanel(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nIndex*  
- 제거할 패널의 인덱스 번호입니다. 호출 하 여 가져올는 [CMFCRibbonCategory::GetPanelIndex](#getpanelindex) 메서드.  
+*nIndex*<br/>
+[in] 제거할 패널의 인덱스 번호입니다. 호출 하 여 가져올는 [CMFCRibbonCategory::GetPanelIndex](#getpanelindex) 메서드.  
   
- [in] *b 삭제*  
- 메모리에서 패널 개체를 삭제 하려면 TRUE 삭제 하지 않고 패널 개체를 제거 하려면 FALSE입니다.  
+*b 삭제*<br/>
+[in] 메모리에서 패널 개체를 삭제 하려면 TRUE 삭제 하지 않고 패널 개체를 제거 하려면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1186,8 +1181,8 @@ virtual void ReposPanels(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 리본 범주에 포함 된 리본 패널에 대 한 장치 컨텍스트에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 리본 범주에 포함 된 리본 패널에 대 한 장치 컨텍스트에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1199,8 +1194,8 @@ void SetCollapseOrder(const CArray<int,int>& arCollapseOrder);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *arCollapseOrder*  
- 축소 순서를 지정합니다. 배열 리본 패널의 0부터 시작 인덱스를 포함합니다.  
+*arCollapseOrder*<br/>
+[in] 축소 순서를 지정합니다. 배열 리본 패널의 0부터 시작 인덱스를 포함합니다.  
   
 ### <a name="remarks"></a>설명  
  라이브러리는 축소 순서를 정의 합니다. 그러나 축소 순서를 지정 하는 인덱스 목록을 사용 하 여 범주를 제공 하 여이 동작을 사용자 지정할 수 있습니다.  
@@ -1209,7 +1204,7 @@ void SetCollapseOrder(const CArray<int,int>& arCollapseOrder);
   
  예를 들어 범주 리본 패널 세 개 있으며 모든 패널 완전히 축소 된 상태로 될 때까지 여러 번 축소할 수 있습니다. 다음 축소 순서를 설정할 수 있습니다: 0, 0, 2, 2입니다. 이 경우 범주 패널 0을 두 번 축소 됩니다, 그리고 패널 2 2 배입니다. Uncollapsed 패널 1의 인덱스가 있는 상태로 유지 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `SetCollapseOrder` 의 메서드는 `CMFCRibbonCategory` 클래스입니다. 예제에는 축소 주문에 대 한 배열을 생성 하는 방법 및 리본 범주에는 축소 순서를 설정 하는 방법을 보여 줍니다.  
   
  [!code-cpp[NVC_MFC_RibbonApp#13](../../mfc/reference/codesnippet/cpp/cmfcribboncategory-class_2.cpp)]  
@@ -1222,8 +1217,8 @@ void SetData(DWORD_PTR dwData);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwData*  
- 사용자 정의 데이터입니다.  
+*dwData*<br/>
+[in] 사용자 정의 데이터입니다.  
   
 ##  <a name="setkeys"></a>  CMFCRibbonCategory::SetKeys  
  리본 범주에는 keytip을 할당합니다.  
@@ -1233,8 +1228,8 @@ void SetKeys(LPCTSTR lpszKeys);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszKeys*  
- Keytip 텍스트입니다.  
+*lpszKeys*<br/>
+[in] Keytip 텍스트입니다.  
   
 ### <a name="remarks"></a>설명  
  키 팁에는 사용자가 Alt 키 또는 F10 키를 누를 때 표시 됩니다.  
@@ -1247,8 +1242,8 @@ void SetName(LPCTSTR lpszName);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszName*  
- Keytip 리본 범주와 이름입니다.  
+*lpszName*<br/>
+[in] Keytip 리본 범주와 이름입니다.  
   
 ### <a name="remarks"></a>설명  
  리본 범주에 대 한 keytip을 설정 하려면 추가 keytip 문자를 뒤에 줄 바꿈 이스케이프 시퀀스 *lpszName*합니다.  
@@ -1261,8 +1256,8 @@ void SetTabColor(AFX_RibbonCategoryColor color);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *색*  
- 리본 범주의 새 색을 지정합니다.  
+*색*<br/>
+[in] 리본 범주의 새 색을 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  색은 다음 값 중 하나일 수 있습니다.  

@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a1e2b25330bd326ac32dbe1c1b8abcc37c89d09
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 8458462304a9b739c61997505724d21bb56763f6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894761"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45708672"
 ---
 # <a name="cl-command-files"></a>CL 명령 파일
 
@@ -37,25 +37,25 @@ ms.locfileid: "43894761"
 
 예를 들어 응답 파일에 다음 명령입니다.
 
-```  
+```
 /Og /link LIBC.LIB
-```  
+```
 
 고 CL 명령을 지정 합니다.
 
-```  
+```
 CL /Ob2 @RESP MYAPP.C
-```  
+```
 
 CL 명령을 아래와 같습니다.
 
-```  
+```
 CL /Ob2 /Og MYAPP.C /link LIBC.LIB
-```  
+```
 
 Note 명령줄 명령과 명령 파일 관리자에 게는 효과적으로 결합 됩니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)

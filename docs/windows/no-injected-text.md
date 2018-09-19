@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e63b0b47dcc3f53ecd5af2d51505df844f66437a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 055b14c38e3084a7368953cbce4f95373e1a77f3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599388"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706331"
 ---
 # <a name="noinjectedtext"></a>no_injected_text
 
@@ -38,8 +38,8 @@ ms.locfileid: "42599388"
 
 ### <a name="parameters"></a>매개 변수
 
-*부울* (선택 사항)  
-**true 이면** 없는 코드를 삽입 하려는 경우 **false** 코드를 삽입할 수 있도록 합니다. **true** 가 기본값입니다.
+*부울*  
+(선택 사항) **true** 없는 코드를 삽입 하려는 경우 **false** 코드를 삽입할 수 있도록 합니다. **true** 가 기본값입니다.
 
 ## <a name="remarks"></a>설명
 

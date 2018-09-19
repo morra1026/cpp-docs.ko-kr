@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39b712b44c2908df1163380a76909884e4ab87d8
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 788188814de37214f397632161de55b54a28421e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755757"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073267"
 ---
 # <a name="default-atl-project-configurations"></a>기본 ATL 프로젝트 구성
 
@@ -34,8 +34,8 @@ ATL 프로젝트 마법사는 기본적으로 두 가지 프로젝트 구성을 
 
 ## <a name="see-also"></a>참고 항목
 
-[ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)   
-[프로젝트 속성 사용](../../ide/working-with-project-properties.md)   
-[구성 관리자 대화 상자](/visualstudio/ide/understanding-build-configurations)   
+[ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
+[프로젝트 속성 사용](../../ide/working-with-project-properties.md)<br/>
+[구성 관리자 대화 상자](/visualstudio/ide/understanding-build-configurations)<br/>
 [컴파일 및 빌드](/visualstudio/ide/compiling-and-building-in-visual-studio)
 

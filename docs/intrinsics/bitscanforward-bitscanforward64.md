@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4720ca4a65a543ca09412ac0c1eb1e65bf6cdd23
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: e563e7240c1797bf863ee0762f923e91a6f05bb0
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42539495"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45699892"
 ---
 # <a name="bitscanforward-bitscanforward64"></a>_BitScanForward, _BitScanForward64
 **Microsoft 전용**  
@@ -47,11 +47,11 @@ unsigned char _BitScanForward64(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [out] `Index`  
- 발견된 첫 번째 설정 비트(1)의 비트 위치를 사용하여 로드됩니다.  
+*Index*<br/>
+[out] 찾은 첫 번째 설정 비트 (1)의 비트 위치를 사용 하 여 로드 합니다.  
   
- [in] `Mask`  
- 검색할 32비트 또는 64비트 값입니다.  
+*마스크*<br/>
+[in] 검색할 32 비트 또는 64 비트 값입니다.  
   
 ## <a name="return-value"></a>반환 값  
  마스크가 0이면 0이고 그렇지 않으면 0이 아닙니다.  
@@ -68,7 +68,7 @@ unsigned char _BitScanForward64(
   
  **헤더 파일** \<intrin.h >  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // BitScanForward.cpp  

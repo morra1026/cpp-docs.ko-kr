@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2b90ef2eeca60a305cd8836e09dc81940392d2c
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: e004c129fb5482ed1bb50d091c8e4e53becbf20b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42539484"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059097"
 ---
 # <a name="reduction"></a>reduction
 각 스레드에 private는 하나 이상의 변수 끝의 병렬 영역 감소 작업의 제목을 지정 합니다.  
@@ -32,14 +32,13 @@ ms.locfileid: "42539484"
 reduction(operation:var)  
 ```  
   
-## <a name="remarks"></a>설명  
- 다음은 각 문자에 대한 설명입니다.  
+### <a name="parameters"></a>매개 변수
   
- `operation`  
- 변수에서 수행할 작업에 대 한 연산자 (`var`) 병렬 영역의 끝입니다.  
+*작업*<br/>
+변수에서 수행할 작업에 대 한 연산자 (`var`) 병렬 영역의 끝입니다.  
   
- `var`  
- 스칼라 감소가 수행 하는 하나 이상의 변수입니다. 둘 이상의 변수를 지정할 경우 쉼표를 사용 하 여 변수 이름을 구분 합니다.  
+*var*<br/>
+스칼라 감소가 수행 하는 하나 이상의 변수입니다. 둘 이상의 변수를 지정할 경우 쉼표를 사용 하 여 변수 이름을 구분 합니다.  
   
 ## <a name="remarks"></a>설명  
  `reduction` 다음 지시문에 적용 됩니다.  
@@ -52,7 +51,7 @@ reduction(operation:var)
   
  자세한 내용은 [2.7.2.6 감소](../../../parallel/openmp/2-7-2-6-reduction.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // omp_reduction.cpp  

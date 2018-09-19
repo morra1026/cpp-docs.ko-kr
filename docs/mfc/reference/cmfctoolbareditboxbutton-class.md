@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 928e2845321ad12a92e4ba3f42838b3f468dce70
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3ffb78d1c7893255666e5a340ce48649da72df6c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215517"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706903"
 ---
 # <a name="cmfctoolbareditboxbutton-class"></a>CMFCToolBarEditBoxButton 클래스
 편집 컨트롤을 포함 하는 도구 모음 단추 ( [CEdit 클래스](../../mfc/reference/cedit-class.md)).  
@@ -177,17 +177,17 @@ CMFCToolBarEditBoxButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiID*  
- 컨트롤 ID를 지정합니다.  
+*uiID*<br/>
+[in] 컨트롤 ID를 지정합니다.  
   
- [in] *iImage*  
- 도구 모음 이미지의 인덱스를 지정합니다. 이미지에는 [CMFCToolBarImages 클래스](../../mfc/reference/cmfctoolbarimages-class.md) 개체입니다 [CMFCToolBar 클래스](../../mfc/reference/cmfctoolbar-class.md) 클래스 유지 관리 합니다.  
+*iImage*<br/>
+[in] 도구 모음 이미지의 인덱스를 지정합니다. 이미지에는 [CMFCToolBarImages 클래스](../../mfc/reference/cmfctoolbarimages-class.md) 개체입니다 [CMFCToolBar 클래스](../../mfc/reference/cmfctoolbar-class.md) 클래스 유지 관리 합니다.  
   
- [in] *dwStyle*  
- 편집 컨트롤의 스타일을 지정합니다.  
+*dwStyle*<br/>
+[in] 편집 컨트롤의 스타일을 지정합니다.  
   
- [in] *iWidth*  
- Edit 컨트롤의 픽셀에서 너비를 지정합니다.  
+*iWidth*<br/>
+[in] Edit 컨트롤의 픽셀에서 너비를 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  기본 생성자를 다음 조합에 컨트롤의 편집 스타일을 설정합니다.  
@@ -204,8 +204,8 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *src*  
- 복사할 소스 단추에 대 한 참조입니다.  
+*src*<br/>
+[in] 복사할 소스 단추에 대 한 참조입니다.  
   
 ### <a name="remarks"></a>설명  
  이 도구 모음 단추를 도구 모음 단추 복사 하려면이 메서드를 호출 합니다. *src* 형식 이어야 합니다 `CMFCToolBarEditBoxButton`합니다.  
@@ -220,11 +220,11 @@ virtual CEdit* CreateEdit(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndParent*  
- Edit 컨트롤의 부모 창을 지정합니다. NULL이 아니어야 합니다.  
+*pWndParent*<br/>
+[in] Edit 컨트롤의 부모 창을 지정합니다. NULL이 아니어야 합니다.  
   
- [in] *rect*  
- 편집 컨트롤의 크기와 위치를 지정합니다.  
+*rect*<br/>
+[in] 편집 컨트롤의 크기와 위치를 지정합니다.  
   
 ### <a name="return-value"></a>반환 값  
  새로 만든된 편집 컨트롤에 대 한 포인터 컨트롤의 생성 및 첨부 파일 실패 하는 경우 NULL입니다.  
@@ -240,8 +240,8 @@ static CMFCToolBarEditBoxButton* __stdcall GetByCmd(UINT uiCmd);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmd*  
- 검색할 단추의 명령 ID입니다.  
+*uiCmd*<br/>
+[in] 검색할 단추의 명령 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
  첫 번째 `CMFCToolBarEditBoxButton` 이러한 개체가 없는 경우 NULL을 지정 된 명령 ID를 가진 응용 프로그램의 개체입니다.  
@@ -257,8 +257,8 @@ static CString __stdcall GetContentsAll(UINT uiCmd);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmd*  
- 콘텐츠를 검색할 단추의 명령 ID입니다.  
+*uiCmd*<br/>
+[in] 콘텐츠를 검색할 단추의 명령 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `CString` 지정한 명령 ID를 가진 첫 번째 편집 상자 도구 모음 컨트롤의 텍스트가 포함 된 개체  
@@ -287,8 +287,8 @@ virtual void GetEditBorder(CRect& rectBorder);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *rectBorder*  
- 에 대 한 참조를 `CRect` 경계 사각형을 받는 개체입니다.  
+*rectBorder*<br/>
+[out] 에 대 한 참조를 `CRect` 경계 사각형을 받는 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 클라이언트 좌표로 편집 컨트롤의 경계 사각형을 검색합니다. 각 방향에 사각형의 크기 마다 1 픽셀씩 확장합니다.  
@@ -368,8 +368,8 @@ virtual BOOL NotifyCommand(int iNotifyCode);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iNotifyCode*  
- 명령과 사용 하 여 연결 된 알림 메시지입니다.  
+*iNotifyCode*<br/>
+[in] 명령과 사용 하 여 연결 된 알림 메시지입니다.  
   
 ### <a name="return-value"></a>반환 값  
  WM_COMMAND 메시지 또는 FALSE 부모 도구 모음에서 메시지를 처리 해야을 나타내려면 단추를 처리 하는 경우 TRUE입니다.  
@@ -399,8 +399,8 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndParent*  
- 새 부모 창에 대 한 포인터입니다.  
+*pWndParent*<br/>
+[in] 새 부모 창에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 기본 클래스 구현을 재정의 ( [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)) 내부 다시 만들어 `CEdit` 개체입니다.  
@@ -415,11 +415,11 @@ virtual BOOL OnClick(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- 사용되지 않습니다.  
+*pWnd*<br/>
+[in] 사용 되지 않습니다.  
   
- [in] *bDelay*  
- 사용되지 않습니다.  
+*bDelay*<br/>
+[in] 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  단추 클릭 메시지를 처리 하는 경우 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -437,11 +437,11 @@ virtual HBRUSH OnCtlColor(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 단추를 표시 하는 장치 컨텍스트.  
+*pDC*<br/>
+[in] 단추를 표시 하는 장치 컨텍스트.  
   
- [in] *nCtlColor*  
- 사용되지 않습니다.  
+*nCtlColor*<br/>
+[in] 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  전역 창 브러시에 대 한 핸들입니다.  
@@ -481,8 +481,8 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bShow*  
- 단추가 표시 되는지 여부를 지정 합니다. 이 매개 변수가 TRUE 인 경우 단추 표시 됩니다. 그렇지 않으면 단추가 표시 되지 않습니다.  
+*bShow*<br/>
+[in] 단추가 표시 되는지 여부를 지정 합니다. 이 매개 변수가 TRUE 인 경우 단추 표시 됩니다. 그렇지 않으면 단추가 표시 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 기본 클래스 구현을 확장 ( [CMFCToolBarButton::OnShow](../../mfc/reference/cmfctoolbarbutton-class.md#onshow)) 하는 경우에 단추를 표시 하 여 *bShow* 은 TRUE입니다. 그렇지 않은 경우이 메서드 단추를 숨깁니다.  
@@ -495,8 +495,8 @@ virtual void OnSize(int iSize);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iSize*  
- 새 너비 (픽셀)에서 단추를입니다.  
+*iSize*<br/>
+[in] 새 너비 (픽셀)에서 단추를입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 기본 클래스 구현을 재정의 [CMFCToolBarButton::OnSize](../../mfc/reference/cmfctoolbarbutton-class.md#onsize), 크기 및 내부 위치를 업데이트 하 여 `CEdit` 개체입니다.  
@@ -513,17 +513,17 @@ virtual BOOL OnUpdateToolTip(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndParent*  
- 사용되지 않습니다.  
+*pWndParent*<br/>
+[in] 사용 되지 않습니다.  
   
- [in] *iButtonIndex*  
- 사용되지 않습니다.  
+*iButtonIndex*<br/>
+[in] 사용 되지 않습니다.  
   
- [in] *wndToolTip*  
- 도구 설명 텍스트를 표시 하는 컨트롤입니다.  
+*wndToolTip*<br/>
+[in] 도구 설명 텍스트를 표시 하는 컨트롤입니다.  
   
- [out] *str*  
- `CString` 업데이트 된 도구 설명 텍스트를 받는 개체입니다.  
+*str*<br/>
+[out] `CString` 업데이트 된 도구 설명 텍스트를 받는 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드는 도구 설명 텍스트를 업데이트 하는 경우 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -539,8 +539,8 @@ virtual void SetContents(const CString& sContents);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *sContents*  
- 설정할 새 텍스트를 지정 합니다.  
+*sContents*<br/>
+[in] 설정할 새 텍스트를 지정 합니다.  
   
 ##  <a name="setcontentsall"></a>  CMFCToolBarEditBoxButton::SetContentsAll  
  찾습니다는 [CMFCToolBarEditBoxButton](../../mfc/reference/cmfctoolbareditboxbutton-class.md) 개체에 지정 된 명령 ID를 해당 텍스트 상자에 지정된 된 텍스트를 설정 합니다.  
@@ -552,11 +552,11 @@ static BOOL SetContentsAll(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmd*  
- 텍스트는 변경 될 컨트롤의 명령 ID를 지정 합니다.  
+*uiCmd*<br/>
+[in] 텍스트는 변경 될 컨트롤의 명령 ID를 지정 합니다.  
   
- [in] *strContents*  
- 설정할 새 텍스트를 지정 합니다.  
+*strContents*<br/>
+[in] 설정할 새 텍스트를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  텍스트를 설정 된 경우 0이 아닌 값 인 경우 0을 `CMFCToolBarEditBoxButton` 지정된 된 명령 ID 사용 하 여 컨트롤이 존재 하지 않습니다.  
@@ -569,8 +569,8 @@ void SetContextMenuID(UINT uiResID);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmd*  
- 바로 가기 메뉴의 리소스 ID입니다.  
+*uiCmd*<br/>
+[in] 바로 가기 메뉴의 리소스 ID입니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 워크 리소스 ID를 사용 하 여 도구 모음 단추를 클릭할 때 바로 가기 메뉴를 만듭니다.  
@@ -583,8 +583,8 @@ static void __stdcall SetFlatMode(BOOL bFlat = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bFlat*  
- 평면 스타일 편집 상자 단추입니다. 이 매개 변수가 TRUE 인 평면 스타일 모양은 사용할 수 있습니다. 그렇지 않으면 평면 스타일 모양은 사용할 수 없습니다.  
+*bFlat*<br/>
+[in] 평면 스타일 편집 상자 단추입니다. 이 매개 변수가 TRUE 인 평면 스타일 모양은 사용할 수 있습니다. 그렇지 않으면 평면 스타일 모양은 사용할 수 없습니다.  
   
 ### <a name="remarks"></a>설명  
  편집 상자 단추에 대 한 기본 평면 스타일은 TRUE입니다. 사용 된 [CMFCToolBarEditBoxButton::IsFlatMode](#isflatmode) 응용 프로그램에 대 한 평면 스타일 모양을 검색 하는 방법입니다.  
@@ -597,8 +597,8 @@ virtual void SetStyle(UINT nStyle);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nStyle*  
- 설정할 새 스타일입니다.  
+*nStyle*<br/>
+[in] 설정할 새 스타일입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드를 설정 [CMFCToolBarButton::m_nStyle](../../mfc/reference/cmfctoolbarbutton-class.md#m_nstyle) 하 *nStyle* 응용 프로그램 사용자 지정 모드에 있고 응용 프로그램 (참조 사용자지정모드로없을때사용하도록설정하는경우텍스트상자비활성화[ CMFCToolBar::SetCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#setcustomizemode) 하 고 [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)). 참조 [ToolBar 컨트롤 스타일](../../mfc/reference/toolbar-control-styles.md) 유효한 스타일 플래그의 목록은 합니다.  

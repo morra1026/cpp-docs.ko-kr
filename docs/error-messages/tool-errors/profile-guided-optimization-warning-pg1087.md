@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e766dfe2e4f5825830b7c218e6ea219558c533e3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1522587c20b661c1885880b9690f3dee54215f80
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33323149"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045229"
 ---
 # <a name="profile-guided-optimization-warning-pg1087"></a>프로필 기반 최적화 경고 PG1087
-'File' PGC 파일 올바르지 않습니다.  
-  
- .Pgc 파일 비정상적인 종료를 프로 파일링 세션으로 인해 손상 되었습니다.  프로 파일링 시나리오를 다시 실행 하 고 정상적으로 종료 합니다.
+
+'File' PGC 파일 올바르지 않습니다.
+
+.Pgc 파일 프로 파일링 세션에 비정상적인 종료 때문 손상 되었습니다.  프로 파일링 시나리오를 다시 실행 하 고 정상적으로 종료 합니다.

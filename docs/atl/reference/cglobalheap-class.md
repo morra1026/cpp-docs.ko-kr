@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b379cdff5f2f0b0e5bf00a6e67b9320cd5150f47
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 6cdc20d536ab4043a24263aebeb0576c379b2f1d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756166"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091337"
 ---
 # <a name="cglobalheap-class"></a>CGlobalHeap 클래스
 
@@ -83,7 +83,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nBytes*  
+*nBytes*<br/>
 새 메모리 블록의 요청된 바이트 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -106,7 +106,7 @@ virtual void Free(void* p) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다. NULL 유효한 값 이며 아무 작업도 수행 합니다.
 
 ### <a name="remarks"></a>설명
@@ -123,7 +123,7 @@ virtual size_t GetSize(void* p) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -144,10 +144,10 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다.
 
-*nBytes*  
+*nBytes*<br/>
 새 메모리 블록의 요청된 바이트 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -162,9 +162,9 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 개요](../../atl/atl-class-overview.md)   
-[CComHeap 클래스](../../atl/reference/ccomheap-class.md)   
-[CWin32Heap 클래스](../../atl/reference/cwin32heap-class.md)   
-[CLocalHeap 클래스](../../atl/reference/clocalheap-class.md)   
-[CCRTHeap 클래스](../../atl/reference/ccrtheap-class.md)   
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
+[CComHeap 클래스](../../atl/reference/ccomheap-class.md)<br/>
+[CWin32Heap 클래스](../../atl/reference/cwin32heap-class.md)<br/>
+[CLocalHeap 클래스](../../atl/reference/clocalheap-class.md)<br/>
+[CCRTHeap 클래스](../../atl/reference/ccrtheap-class.md)<br/>
 [IAtlMemMgr 클래스](../../atl/reference/iatlmemmgr-class.md)

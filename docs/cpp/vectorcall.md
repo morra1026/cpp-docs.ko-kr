@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 463f005388a066776d7db8b1701850e08888de76
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 335f81a204ec91361c51f7573e58b61fad91f97b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895099"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46061710"
 ---
 # <a name="vectorcall"></a>__vectorcall
 
@@ -46,7 +46,7 @@ typedef struct {
    __m256 y;
    __m256 z;
 } hva3;    // 3 element HVA type on __m256
-```  
+```
 
 명시적으로 사용 하 여 함수를 선언 합니다 **__vectorcall** 키워드 별도로 있도록 헤더 파일의 컴파일된 코드 오류 없이 링크를 합니다. 함수를 사용 하 여 있도록 프로토타입화 되어야 **__vectorcall**를 사용할 수 없습니다는 `vararg` 가변 길이 인수 목록입니다.
 
@@ -60,25 +60,25 @@ ARM 컴퓨터에서 **__vectorcall** 수락 하 고 컴파일러에서 무시 �
 struct MyClass {
    void __vectorcall mymethod();
 };
-```  
+```
 
 다음 코드는
 
 ```cpp
 void MyClass::mymethod() { return; }
-```  
+```
 
 다음 코드 조각과 일치합니다.
 
 ```cpp
 void __vectorcall MyClass::mymethod() { return; }
-```  
+```
 
 합니다 **__vectorcall** 호출 규칙 한정자를 지정 해야 합니다는 경우에 대 한 포인터는 **__vectorcall** 함수가 만들어집니다. 다음 예제에서는 만듭니다는 **typedef** 에 대 한 포인터를 **__vectorcall** 4를 사용 하는 함수 **double** 인수 및 반환은 **__m256**값:
 
 ```cpp
 typedef __m256 (__vectorcall * vcfnptr)(double, double, double, double);
-```  
+```
 
 ## <a name="vectorcall-convention-on-x64"></a>x64의 __vectorcall 규칙
 
@@ -167,7 +167,7 @@ hva4 __vectorcall example6(hva2 a, hva4 b, __m256 c, hva2 d) {
    return b;
 }
 
-int __cdecl main( void )  
+int __cdecl main( void )
 {
    hva4 h4;
    hva2 h2;
@@ -188,7 +188,7 @@ int __cdecl main( void )
    i = example5(1, h2, 3, h4, 5);
    h4 = example6(h2, h4, c, h2);
 }
-```  
+```
 
 ## <a name="vectorcall-convention-on-x86"></a>x86의 __vectorcall 규칙
 
@@ -273,7 +273,7 @@ hva4 __vectorcall example6(hva2 a, hva4 b, __m256 c, hva2 d) {
    return b;
 }
 
-int __cdecl main( void )  
+int __cdecl main( void )
 {
    hva4 h4;
    hva2 h2;
@@ -294,11 +294,11 @@ int __cdecl main( void )
    i = example5(1, h2, 3, h4, 5);
    h4 = example6(h2, h4, c, h2);
 }
-```  
+```
 
 **Microsoft 전용 종료**
 
 ## <a name="see-also"></a>참고자료
 
-[인수 전달 및 명명 규칙](../cpp/argument-passing-and-naming-conventions.md)   
+[인수 전달 및 명명 규칙](../cpp/argument-passing-and-naming-conventions.md)<br/>
 [키워드](../cpp/keywords-cpp.md)

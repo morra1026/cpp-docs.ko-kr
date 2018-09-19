@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b5a5a01458c4117fb6cb49c967cc8ca94a77226
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5ef826dcdb439a28630221bdc9b4a90e9f6f324f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319971"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072968"
 ---
 # <a name="resource-compiler-error-rc2109"></a>리소스 컴파일러 오류 RC2109
-대화 숫자 상수가 필요합니다.  
-  
- A **대화** 문의 대 한 정수 값을 지정 해야는 *x, y, 너비:*, 및 *높이* 필드입니다. 이러한 값 뒤에 포함 되어 있는지 확인은 **대화** 키워드와 음수 되지 않은 합니다.
+
+예상된 숫자 대화 상수
+
+**대화 상자** 문에 필요에 대 한 정수 값을 *x, y, 너비*, 및 *높이* 필드. 이러한 값 뒤에 포함 되어 있는지 확인 합니다 **대화 상자** 키워드 및 음수 되지 않은 합니다.

@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c465e5da4d3822782bd9c7b81e497ea544e3bd1
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 000e43926a83bdd7457c33c656383ae44dce6259
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759956"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046279"
 ---
 # <a name="ustringorid-class"></a>_U_STRINGorID 클래스
 
@@ -76,16 +76,16 @@ LPCTSTR m_lpstr;
 UINT 생성자 인수로 MAKEINTRESOURCE 매크로 사용 하 여 Windows 리소스 관리 함수를 사용 하 여 호환 되는 리소스 종류를 변환한 결과 클래스의 단일 데이터 멤버에 저장 됩니다 [m_lpstr](#_u_stringorid__m_lpstr)합니다.
 
 ```
-_U_STRINGorID(UINT nID);  
+_U_STRINGorID(UINT nID);
 _U_STRINGorID(LPCTSTR lpString);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*nID*  
+*nID*<br/>
 리소스 id입니다.
 
-*lpString*  
+*lpString*<br/>
 리소스 이름입니다.
 
 ### <a name="remarks"></a>설명

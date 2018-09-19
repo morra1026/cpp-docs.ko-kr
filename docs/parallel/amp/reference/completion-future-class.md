@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b6aa7e9c160a7bedc6eed58a63c07ae7bb65913
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 835c3a0473ffc68a2b1e32780fc2eb376f0ceee6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689040"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118145"
 ---
 # <a name="completionfuture-class"></a>completion_future 클래스
 나중에 해당 하는 c + + AMP 비동기 작업을 나타냅니다.  
@@ -46,26 +46,26 @@ class completion_future;
 |이름|설명|  
 |----------|-----------------|  
 |[completion_future 생성자](#ctor)|`completion_future` 클래스의 새 인스턴스를 초기화합니다.|  
-|[~ completion_future 소멸자](#dtor)|소멸 된 `completion_future` 개체입니다.|  
+|[~ completion_future 소멸자](#dtor)|제거 된 `completion_future` 개체입니다.|  
   
 ### <a name="public-methods"></a>Public 메서드  
   
 |이름|설명|  
 |----------|-----------------|  
-|[get](#get)|연결 된 비동기 작업이 완료 될 때까지 기다립니다.|  
-|[then](#then)|연결에 콜백 함수 개체는 `completion_future` 연결 된 비동기 작업 실행이 끝날 때 실행 될 개체입니다.|  
+|[get](#get)|연결된 된 비동기 작업이 완료 될 때까지 대기 합니다.|  
+|[then](#then)|콜백 함수 개체에 연결 된 `completion_future` 연결된 된 비동기 작업 실행이 끝날 때 실행할 개체입니다.|  
 |[to_task](#to_task)|반환 된 `task` 연결 된 비동기 작업에 해당 하는 개체입니다.|  
-|[valid](#valid)|개체가 비동기 작업에 연결 되었는지 여부를 나타내는 부울 값을 가져옵니다.|  
-|[wait](#wait)|연결 된 비동기 작업이 완료 될 때까지 차단 됩니다.|  
-|[wait_for](#wait_for)|연결 된 비동기 작업이 완료 될 때까지 차단 또는 지정 된 시간 `_Rel_time` 경과 합니다.|  
-|[wait_until](#wait_until)|현재 시간에서 지정한 값을 초과할 때까지 또는 연결 된 비동기 작업이 완료 될 때까지 차단 `_Abs_time`합니다.|  
+|[valid](#valid)|개체가 비동기 작업에 연결 되어 있는지 여부를 나타내는 부울 값을 가져옵니다.|  
+|[wait](#wait)|연결된 된 비동기 작업이 완료 될 때까지 차단 합니다.|  
+|[wait_for](#wait_for)|연결된 된 비동기 작업이 완료 될 때까지 차단 또는 지정 된 시간 `_Rel_time` 경과 합니다.|  
+|[wait_until](#wait_until)|연결된 된 비동기 작업이 완료 될 때까지 또는 현재 시간에서 지정한 값을 초과할 때까지 차단 `_Abs_time`합니다.|  
   
 ### <a name="public-operators"></a>Public 연산자  
   
 |이름|설명|  
 |----------|-----------------|  
-|[연산자 std::shared_future\<void >](#operator_shared_future)|암시적으로 변환 된 `completion_future` 개체는 `std::shared_future` 개체입니다.|  
-|[operator=](#operator_eq)|지정 된의 내용을 복사 `completion_future` 을 여기에 개체입니다.|  
+|[operator std:: shared_future\<void >](#operator_shared_future)|암시적으로 변환 합니다 `completion_future` 개체는 `std::shared_future` 개체입니다.|  
+|[operator=](#operator_eq)|지정 된 내용을 복사 `completion_future` 을 여기에 개체입니다.|  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  `completion_future`  
@@ -93,8 +93,8 @@ completion_future(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Other`  
- 복사하거나 이동시킬 `completion_future` 개체입니다.  
+*_Other*<br/>
+복사하거나 이동시킬 `completion_future` 개체입니다.  
   
 ### <a name="overloads-list"></a>오버 로드 목록  
   
@@ -106,7 +106,7 @@ completion_future(
   
 ## <a name="get"></a> 가져오기 
 
-연결 된 비동기 작업이 완료 될 때까지 기다립니다. 비동기 작업 중 하나가 발생한 경우 저장된 예외를 throw합니다.  
+연결된 된 비동기 작업이 완료 될 때까지 대기 합니다. 비동기 작업 중 하나가 발생한 경우 저장된 예외를 throw합니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -114,9 +114,9 @@ completion_future(
 void get() const;  
 ```  
   
-## <a name="operator_shared_future"></a> 연산자 std::shared_future<void> 
+## <a name="operator_shared_future"></a> operator std:: shared_future<void> 
 
-암시적으로 변환 된 `completion_future` 개체는 `std::shared_future` 개체입니다.  
+암시적으로 변환 합니다 `completion_future` 개체는 `std::shared_future` 개체입니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -129,7 +129,7 @@ operator std::shared_future<void>() const;
   
 ## <a name="operator_eq"></a> 연산자 = 
 
-지정 된의 내용을 복사 `completion_future` 을 여기에 개체입니다.  
+지정 된 내용을 복사 `completion_future` 을 여기에 개체입니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -139,8 +139,8 @@ completion_future&  operator= (completion_future&& _Other );
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Other`  
- 복사할 개체입니다.  
+*_Other*<br/>
+복사할 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이에 대 한 참조 `completion_future` 개체입니다.  
@@ -154,7 +154,7 @@ completion_future&  operator= (completion_future&& _Other );
   
 ## <a name="then"></a> 그런 다음 
 
-연결에 콜백 함수 개체는 `completion_future` 연결 된 비동기 작업 실행이 끝날 때 실행 될 개체입니다.  
+콜백 함수 개체에 연결 된 `completion_future` 연결된 된 비동기 작업 실행이 끝날 때 실행할 개체입니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -164,11 +164,11 @@ void then(const _Functor & _Func ) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Functor`  
- 콜백 구조 함수입니다.  
+*_Functor*<br/>
+콜백 구조 함수입니다.  
   
- `_Func`  
- 콜백 함수 개체입니다.  
+*_Func*<br/>
+콜백 함수 개체입니다.  
   
 ## <a name="to_task"></a> to_task 
 
@@ -198,7 +198,7 @@ bool valid() const;
   
 ## <a name="wait"></a> 대기 
 
-연결 된 비동기 작업이 완료 될 때까지 차단 됩니다.  
+연결된 된 비동기 작업이 완료 될 때까지 차단 합니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -208,7 +208,7 @@ void wait() const;
   
 ## <a name="wait_for"></a> wait_for 
 
-연결 된 비동기 작업이 완료 될 때까지 차단 또는 지정 된 시간 `_Rel_time` 경과 합니다.  
+연결된 된 비동기 작업이 완료 될 때까지 차단 또는 지정 된 시간 `_Rel_time` 경과 합니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -222,27 +222,27 @@ std::future_status::future_status wait_for(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Rep`  
- 틱 수를 나타내는 산술 형식입니다.  
+*_Rep*<br/>
+틱 수를 나타내는 산술 형식입니다.  
   
- `_Period`  
- 틱 당 경과 하는 시간 (초) 수를 나타내는 std::ratio 합니다.  
+*_Period*<br/>
+std:: ratio 틱 당 경과 시간 (초) 수를 나타내는입니다.  
   
- `_Rel_time`  
- 최대 양을 작업이 완료 될 때까지 기다리는 시간입니다.  
+*_Rel_time*<br/>
+작업이 완료 될 때까지 기다리는 시간을 최대 양입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 반환합니다.  
+ 이 반환 됩니다.  
   
--   `std::future_status::deferred` 연결 된 비동기 작업을 실행 하지 않으면 합니다.  
+-   `std::future_status::deferred` 경우 연결된 된 비동기 작업이 실행 되지 않습니다.  
   
--   `std::future_status::ready` 경우 연결 된 비동기 작업 완료 됩니다.  
+-   `std::future_status::ready` 연결된 된 비동기 작업이 완료 되었습니다 하는 경우.  
   
--   `std::future_status::timeout` 지정 된 시간 동안 경과 되었습니다 하는 경우.  
+-   `std::future_status::timeout` 지정 된 기간 동안 경과 되었습니다 하는 경우.  
   
 ## <a name="wait_until"></a> wait_until 
 
-현재 시간에서 지정한 값을 초과할 때까지 또는 연결 된 비동기 작업이 완료 될 때까지 차단 `_Abs_time`합니다.  
+연결된 된 비동기 작업이 완료 될 때까지 또는 현재 시간에서 지정한 값을 초과할 때까지 차단 `_Abs_time`합니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -256,27 +256,27 @@ std::future_status::future_status wait_until(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Clock`  
- 이 시점 측정 되는 클록입니다.  
+*_Clock*<br/>
+이 시간 포인트가 측정 되는 시계입니다.  
   
- `_Duration`  
- 시간 간격의 시작 된 이후 `_Clock`의 epoch, 지나면 함수는 시간이 초과 됩니다.  
+*_Duration*<br/>
+시간 간격의 시작 된 이후에 `_Clock`의 epoch 후 함수는 시간이 초과 됩니다.  
   
- `_Abs_time`  
- 지정 시간 제한 시간이 되기 함수입니다.  
+*_Abs_time*<br/>
+시간이 지나면 함수에 제한 시간이 시점입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 반환합니다.  
+ 이 반환 됩니다.  
   
-1.  `std::future_status::deferred` 연결 된 비동기 작업을 실행 하지 않으면 합니다.  
+1.  `std::future_status::deferred` 경우 연결된 된 비동기 작업이 실행 되지 않습니다.  
   
-2.  `std::future_status::ready` 경우 연결 된 비동기 작업 완료 됩니다.  
+2.  `std::future_status::ready` 연결된 된 비동기 작업이 완료 되었습니다 하는 경우.  
   
-3.  `std::future_status::timeout` 지정 된 시간 동안 경과 되었습니다.  
+3.  `std::future_status::timeout` 기간을 지정 하는 경우 경과 되었습니다.  
   
 ## <a name="dtor"></a> ~completion_future 
 
-소멸 된 `completion_future` 개체입니다.  
+제거 된 `completion_future` 개체입니다.  
   
 ### <a name="syntax"></a>구문  
   

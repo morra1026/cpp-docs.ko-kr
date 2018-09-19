@@ -47,12 +47,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed6e32ec0e474f901818618af662a91e3e46efed
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3ce6099b904c088399dcb43635a1b254567e8320
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763700"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024918"
 ---
 # <a name="message-map-macros-atl"></a>메시지 맵 매크로 (ATL)
 
@@ -109,7 +109,7 @@ ALT_MSG_MAP(msgMapID)
 
 ### <a name="parameters"></a>매개 변수
 
-*msgMapID*  
+*msgMapID*<br/>
 [in] 메시지 맵 식별자입니다.
 
 ### <a name="remarks"></a>설명
@@ -148,7 +148,7 @@ BEGIN_MSG_MAP(theClass)
 
 ### <a name="parameters"></a>매개 변수
 
-*theClass*  
+*theClass*<br/>
 [in] 메시지 맵을 포함 하는 클래스의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -227,10 +227,10 @@ CHAIN_MSG_MAP_ALT(theChainClass, msgMapID)
 
 ### <a name="parameters"></a>매개 변수
 
-*theChainClass*  
+*theChainClass*<br/>
 [in] 메시지 맵이 포함 된 기본 클래스의 이름입니다.
 
-*msgMapID*  
+*msgMapID*<br/>
 [in] 메시지 맵 식별자입니다.
 
 ### <a name="remarks"></a>설명
@@ -256,10 +256,10 @@ CHAIN_MSG_MAP_ALT_MEMBER(theChainMember, msgMapID)
 
 ### <a name="parameters"></a>매개 변수
 
-*theChainMember*  
+*theChainMember*<br/>
 [in] 메시지 맵이 포함 된 데이터 멤버의 이름입니다.
 
-*msgMapID*  
+*msgMapID*<br/>
 [in] 메시지 맵 식별자입니다.
 
 ### <a name="remarks"></a>설명
@@ -285,7 +285,7 @@ CHAIN_MSG_MAP(theChainClass)
 
 ### <a name="parameters"></a>매개 변수
 
-*theChainClass*  
+*theChainClass*<br/>
 [in] 메시지 맵이 포함 된 기본 클래스의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -323,7 +323,7 @@ CHAIN_MSG_MAP_DYNAMIC(dynaChainID)
 
 ### <a name="parameters"></a>매개 변수
 
-*dynaChainID*  
+*dynaChainID*<br/>
 [in] 개체의 메시지 맵에 대 한 고유 식별자입니다.
 
 ### <a name="remarks"></a>설명
@@ -349,7 +349,7 @@ CHAIN_MSG_MAP_MEMBER(theChainMember)
 
 ### <a name="parameters"></a>매개 변수
 
-*theChainMember*  
+*theChainMember*<br/>
 [in] 메시지 맵이 포함 된 데이터 멤버의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -387,10 +387,10 @@ COMMAND_CODE_HANDLER(code, func)
 
 ### <a name="parameters"></a>매개 변수
 
-*코드*  
+*코드*<br/>
 [in] 알림 코드입니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="requirements"></a>요구 사항
@@ -407,13 +407,13 @@ COMMAND_HANDLER(id, code, func)
 
 ### <a name="parameters"></a>매개 변수
 
-*ID*  
+*ID*<br/>
 [in] 메뉴 항목, 컨트롤 또는 액셀러레이터 키의 식별자입니다.
 
-*코드*  
+*코드*<br/>
 [in] 알림 코드입니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -449,10 +449,10 @@ COMMAND_ID_HANDLER(id, func)
 
 ### <a name="parameters"></a>매개 변수
 
-*ID*  
+*ID*<br/>
 [in] 메뉴 항목, 컨트롤 또는 메시지를 보내는 액셀러레이터 키의 식별자입니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="requirements"></a>요구 사항
@@ -469,16 +469,16 @@ COMMAND_RANGE_CODE_HANDLER(idFirst, idLast, code, func)
 
 ### <a name="parameters"></a>매개 변수
 
-*idFirst*  
+*idFirst*<br/>
 [in] 인접 한 범위의 컨트롤 식별자의 시작을 표시 합니다.
 
-*idLast*  
+*idLast*<br/>
 [in] 컨트롤 식별자의 연속 된 범위 끝을 표시 합니다.
 
-*코드*  
+*코드*<br/>
 [in] 알림 코드입니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -499,13 +499,13 @@ COMMAND_RANGE_HANDLER( idFirst, idLast, func)
 
 ### <a name="parameters"></a>매개 변수
 
-*idFirst*  
+*idFirst*<br/>
 [in] 인접 한 범위의 컨트롤 식별자의 시작을 표시 합니다.
 
-*idLast*  
+*idLast*<br/>
 [in] 컨트롤 식별자의 연속 된 범위 끝을 표시 합니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -598,10 +598,10 @@ MESSAGE_HANDLER( msg, func )
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지*  
+*메시지*<br/>
 [in] Windows 메시지입니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -639,13 +639,13 @@ MESSAGE_RANGE_HANDLER( msgFirst, msgLast, func )
 
 ### <a name="parameters"></a>매개 변수
 
-*msgFirst*  
+*msgFirst*<br/>
 [in] 메시지의 연속 된 범위의 시작을 표시 합니다.
 
-*msgLast*  
+*msgLast*<br/>
 [in] 메시지의 연속 된 범위 끝을 표시 합니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="requirements"></a>요구 사항
@@ -662,10 +662,10 @@ NOTIFY_CODE_HANDLER(cd, func)
 
 ### <a name="parameters"></a>매개 변수
 
-*cd*  
+*cd*<br/>
 [in] 알림 코드입니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="requirements"></a>요구 사항
@@ -682,13 +682,13 @@ NOTIFY_HANDLER( id, cd, func )
 
 ### <a name="parameters"></a>매개 변수
 
-*ID*  
+*ID*<br/>
 [in] 메시지를 전송 하는 컨트롤의 식별자입니다.
 
-*cd*  
+*cd*<br/>
 [in] 알림 코드입니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -726,10 +726,10 @@ NOTIFY_ID_HANDLER( id, func )
 
 ### <a name="parameters"></a>매개 변수
 
-*ID*  
+*ID*<br/>
 [in] 메시지를 전송 하는 컨트롤의 식별자입니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="requirements"></a>요구 사항
@@ -746,16 +746,16 @@ NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
 
 ### <a name="parameters"></a>매개 변수
 
-*idFirst*  
+*idFirst*<br/>
 [in] 인접 한 범위의 컨트롤 식별자의 시작을 표시 합니다.
 
-*idLast*  
+*idLast*<br/>
 [in] 컨트롤 식별자의 연속 된 범위 끝을 표시 합니다.
 
-*cd*  
+*cd*<br/>
 [in] 알림 코드입니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -776,13 +776,13 @@ NOTIFY_RANGE_HANDLER( idFirst, idLast, func )
 
 ### <a name="parameters"></a>매개 변수
 
-*idFirst*  
+*idFirst*<br/>
 [in] 인접 한 범위의 컨트롤 식별자의 시작을 표시 합니다.
 
-*idLast*  
+*idLast*<br/>
 [in] 컨트롤 식별자의 연속 된 범위 끝을 표시 합니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -819,10 +819,10 @@ REFLECTED_COMMAND_CODE_HANDLER( code, func )
 
 ### <a name="parameters"></a>매개 변수
 
-*코드*  
+*코드*<br/>
 [in] 알림 코드입니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.  
 
 ### <a name="requirements"></a>요구 사항
@@ -839,13 +839,13 @@ REFLECTED_COMMAND_HANDLER( id, code, func )
 
 ### <a name="parameters"></a>매개 변수
 
-*ID*  
+*ID*<br/>
 [in] 메뉴 항목, 컨트롤 또는 액셀러레이터 키의 식별자입니다.
 
-*코드*  
+*코드*<br/>
 [in] 알림 코드입니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.  
 
 ### <a name="requirements"></a>요구 사항
@@ -862,10 +862,10 @@ REFLECTED_COMMAND_ID_HANDLER( id, func )
 
 ### <a name="parameters"></a>매개 변수
 
-*ID*  
+*ID*<br/>
 [in] 메뉴 항목, 컨트롤 또는 액셀러레이터 키의 식별자입니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.  
 
 ### <a name="requirements"></a>요구 사항
@@ -882,16 +882,16 @@ REFLECTED_COMMAND_RANGE_CODE_HANDLER( idFirst, idLast, code, func )
 
 ### <a name="parameters"></a>매개 변수
 
-*idFirst*  
+*idFirst*<br/>
 [in] 인접 한 범위의 컨트롤 식별자의 시작을 표시 합니다.
 
-*idLast*  
+*idLast*<br/>
 [in] 컨트롤 식별자의 연속 된 범위 끝을 표시 합니다.
 
-*코드*  
+*코드*<br/>
 [in] 알림 코드입니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.  
 
 ### <a name="requirements"></a>요구 사항
@@ -908,13 +908,13 @@ REFLECTED_COMMAND_RANGE_HANDLER( idFirst, idLast, func )
 
 ### <a name="parameters"></a>매개 변수
 
-*idFirst*  
+*idFirst*<br/>
 [in] 인접 한 범위의 컨트롤 식별자의 시작을 표시 합니다.
 
-*idLast*  
+*idLast*<br/>
 [in] 컨트롤 식별자의 연속 된 범위 끝을 표시 합니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.  
 
 ### <a name="requirements"></a>요구 사항
@@ -931,10 +931,10 @@ REFLECTED_NOTIFY_CODE_HANDLER_EX( cd, func )
 
 ### <a name="parameters"></a>매개 변수
 
-*cd*  
+*cd*<br/>
 [in] 알림 코드입니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.  
 
 ### <a name="requirements"></a>요구 사항
@@ -951,13 +951,13 @@ REFLECTED_NOTIFY_HANDLER( id, cd, func )
 
 ### <a name="parameters"></a>매개 변수
 
-*ID*  
+*ID*<br/>
 [in] 메뉴 항목, 컨트롤 또는 액셀러레이터 키의 식별자입니다.
 
-*cd*  
+*cd*<br/>
 [in] 알림 코드입니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.  
 
 ### <a name="requirements"></a>요구 사항
@@ -974,10 +974,10 @@ REFLECTED_NOTIFY_ID_HANDLER( id, func )
 
 ### <a name="parameters"></a>매개 변수
 
-*ID*  
+*ID*<br/>
 [in] 메뉴 항목, 컨트롤 또는 액셀러레이터 키의 식별자입니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.  
 
 ### <a name="requirements"></a>요구 사항
@@ -994,16 +994,16 @@ REFLECTED_NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
 
 ### <a name="parameters"></a>매개 변수
 
-*idFirst*  
+*idFirst*<br/>
 [in] 인접 한 범위의 컨트롤 식별자의 시작을 표시 합니다.
 
-*idLast*  
+*idLast*<br/>
 [in] 컨트롤 식별자의 연속 된 범위 끝을 표시 합니다.
 
-*cd*  
+*cd*<br/>
 [in] 알림 코드입니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="requirements"></a>요구 사항
@@ -1020,13 +1020,13 @@ REFLECTED_NOTIFY_RANGE_HANDLER( idFirst, idLast, func )
 
 ### <a name="parameters"></a>매개 변수
 
-*idFirst*  
+*idFirst*<br/>
 [in] 인접 한 범위의 컨트롤 식별자의 시작을 표시 합니다.
 
-*idLast*  
+*idLast*<br/>
 [in] 컨트롤 식별자의 연속 된 범위 끝을 표시 합니다.
 
-*func*  
+*func*<br/>
 [in] 메시지-처리기 함수의 이름입니다.
 
 ## <a name="see-also"></a>참고 항목

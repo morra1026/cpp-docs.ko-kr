@@ -147,12 +147,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f455ce1f09822d4705a8c700e9dbc93d4a2e79c
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 52073a97e062d4ab96e50fed534edc24add0f8c5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44104608"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715600"
 ---
 # <a name="unorderedmultimap-class"></a>unordered_multimap 클래스
 
@@ -369,7 +369,7 @@ size_type bucket(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*  
+*keyval*<br/>
 매핑할 키 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -514,7 +514,7 @@ size_type bucket_size(size_type nbucket) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*nbucket*  
+*nbucket*<br/>
 버킷 번호입니다.
 
 ### <a name="remarks"></a>설명
@@ -880,7 +880,7 @@ size_type count(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*  
+*keyval*<br/>
 검색할 키 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -1201,7 +1201,7 @@ std::pair<const_iterator, const_iterator>
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*  
+*keyval*<br/>
 검색할 키 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -1277,16 +1277,16 @@ size_type erase(
 
 ### <a name="parameters"></a>매개 변수
 
-*Where*  
+*Where*<br/>
 제거할 요소의 위치입니다.
 
-*첫 번째*  
+*첫 번째*<br/>
 제거할 첫 번째 요소의 위치입니다.
 
-*마지막*  
+*마지막*<br/>
 제거할 마지막 요소 바로 다음 위치입니다.
 
-*키*  
+*키*<br/>
 제거할 요소의 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1309,7 +1309,7 @@ const_iterator find(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*  
+*keyval*<br/>
 검색할 키 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -2011,7 +2011,7 @@ void max_load_factor(float factor);
 
 ### <a name="parameters"></a>매개 변수
 
-*factor*  
+*factor*<br/>
 새로운 최대 로드 비율입니다.
 
 ### <a name="remarks"></a>설명
@@ -2291,7 +2291,7 @@ void rehash(size_type nbuckets);
 
 ### <a name="parameters"></a>매개 변수
 
-*nbuckets*  
+*nbuckets*<br/>
 요청된 버킷 수입니다.
 
 ### <a name="remarks"></a>설명

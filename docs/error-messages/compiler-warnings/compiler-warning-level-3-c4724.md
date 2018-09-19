@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 351a859dc557e862ee4c22b3a78f8de289bdb053
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 31c65f3ab2dd5e9bfb5c1acd9f183892feebea56
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295271"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135891"
 ---
 # <a name="compiler-warning-level-3-c4724"></a>컴파일러 경고(수준 3) C4724
-0의 나머지 연산이 발생할 수 있습니다.  
-  
- 나머지 연산의 두 번째 피연산자가 컴파일 시간에 0으로 계산되어 정의되지 않은 결과를 제공합니다.
+
+0의 나머지 연산이 발생할 수 있습니다.
+
+나머지 연산의 두 번째 피연산자가 컴파일 시간에 0으로 계산되어 정의되지 않은 결과를 제공합니다.

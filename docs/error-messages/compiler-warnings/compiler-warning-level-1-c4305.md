@@ -15,20 +15,20 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7694c511f57b6907227d62f969b61218f836cb14
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 88ae0fb38b7e6af14525906e90486a68ce22ee56
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33277825"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086826"
 ---
 # <a name="compiler-warning-level-1-c4305"></a>컴파일러 경고(수준 1) C4305
 
-> '*컨텍스트*':에서 잘림 '*type1*'to'*type2*'  
+> '*상황에 맞는*':에서 잘림 '*type1*'to'*type2*'
 
 ## <a name="remarks"></a>설명
 
-이 경고는 정보의 손실 더 작은 형식 생성자 인수 또는 초기화는 값이 변환 될 때 발생 합니다.
+정보의 손실 더 작은 형식 또는 생성자 인수로 초기화에서 값을 변환할 때 경고가 발생 합니다.
 
 ## <a name="example"></a>예제
 
@@ -51,4 +51,4 @@ int main()
 }
 ```
 
-이 문제를 해결 하려면 올바른 형식의 값을 사용 하 여 초기화 하거나 올바른 형식으로 명시적 캐스트를 사용 합니다. 사용 예를 들어는 **float** 대신 2.71828f 같은 리터럴는 **double** (부동 소수점 리터럴에 대 한 기본 형식)를 초기화 한 **float** 변수를 또는에 전달 하는 사용 하는 생성자는 **float** 인수입니다.
+이 문제를 해결 하려면 올바른 형식의 값을 사용 하 여 초기화 하거나 올바른 형식으로 명시적 캐스트를 사용 합니다. 사용 예를 들어를 **float** 2.71828f 대신 같은 리터럴를 **double** (부동 소수점 리터럴에 대 한 기본 형식)를 초기화를 **float** 변수 또는 전달할를 사용 하는 생성자는 **float** 인수입니다.

@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: df35eed8711e83174316ac9912f7ba535ef9ebf9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 128a86b59ebf43ab87b0f4f4bcb7e9c684e4ad07
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33135029"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051826"
 ---
 # <a name="locklock"></a>lock::lock
-생성 한 `lock` 시간의 되거나 전혀 지정된 된 시간에 대 한 잠금을 영원히 획득 하려고 대기 하는 선택적 개체입니다.  
+생성을 `lock` 또는 전혀 사용 하지 않을 경우의 지정된 된 시간에 대 한 잠금을 영구적으로 획득 하려고 대기 하는 선택적 개체입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,26 +51,26 @@ template<class T> lock(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `_object`  
- 개체를 잠글 수입니다.  
+*(_o)*<br/>
+개체를 잠글 수입니다.  
   
- `_timeout`  
- 제한 시간 값 (밀리초) 또는 <xref:System.TimeSpan>합니다.  
+*시간 제한 _t*<br/>
+시간 (밀리초) 또는 시간 제한 값을 <xref:System.TimeSpan>입니다.  
   
 ## <a name="exceptions"></a>예외  
- Throw <xref:System.ApplicationException> 잠금 획득 제한 시간 전에 발생 하지 않습니다.  
+ Throw <xref:System.ApplicationException> 잠금 획득 시간 제한 전에 발생 하지 않습니다.  
   
 ## <a name="remarks"></a>설명  
- 생성자에는 처음 세 가지 시도 대 한 잠금을 얻기 위해 `_object` 지정된 된 제한 시간 내에서 (또는 <xref:System.Threading.Timeout.Infinite> 지정 되지 않은 경우).  
+ 생성자의 처음 세 개의 폼에서 잠금을 획득 하려고 `_object` 지정된 된 제한 시간 내에서 (또는 <xref:System.Threading.Timeout.Infinite> 지정 되지 않은 경우).  
   
- 네 번째 형식의 생성자에 잠금을 획득 하지 `_object`합니다. `lock_later` 구성원은 [lock_when 열거형](../dotnet/lock-when-enum.md)합니다. 사용 하 여 [lock::acquire](../dotnet/lock-acquire.md) 또는 [lock::try_acquire](../dotnet/lock-try-acquire.md) 이 경우에 잠금을 획득 하려고 합니다.  
+ 네 번째 형식의 생성자에서 잠금을 획득 하지 `_object`합니다. `lock_later` 구성원임을 확인 합니다 [lock_when 열거형](../dotnet/lock-when-enum.md)합니다. 사용 하 여 [lock::acquire](../dotnet/lock-acquire.md) 하거나 [lock::try_acquire](../dotnet/lock-try-acquire.md) 잠금을 획득 하기 위해이 경우.  
   
- 소멸자가 호출 되는 경우에 자동으로 잠금이 해제 됩니다.  
+ 소멸자가 호출 될 때에 자동으로 잠금이 해제 됩니다.  
   
- `_object`가 <xref:System.Threading.ReaderWriterLock>이 될 수 없는 경우  인 경우 컴파일러 오류가 발생 합니다.  
+ `_object`가 <xref:System.Threading.ReaderWriterLock>이 될 수 없는 경우  이 경우 컴파일러 오류가 발생 합니다.  
   
 ## <a name="example"></a>예제  
- 이 예제에서는 여러 스레드 간에 클래스의 단일 인스턴스를 사용 합니다.  클래스를 사용 하 여 잠금을 자체에서 내부 데이터에 대 한 액세스가 각 스레드에 대해 일관적인 지 확인 합니다.  기본 응용 프로그램 스레드는 주기적으로 확인 하는 경우 모든 작업자 스레드 여전히 존재 하며, 해당 작업을 완료 될 때까지 모든 작업자 스레드가 끝나기를 대기 하는 클래스의 동일한 인스턴스에 잠금을 사용 합니다.  
+ 이 예제에서는 여러 스레드에서 클래스의 단일 인스턴스를 사용 합니다.  클래스 자체에 잠금을 사용 하 여 내부 데이터에 대 한 액세스는 각 스레드에 대해 일치 되도록 합니다.  주 응용 프로그램 스레드는 주기적으로 확인 하는 경우 모든 작업자 스레드가 여전히 존재 하며 일까 지 모든 작업자 스레드가 끝나기를 대기 요소가 해당 작업을 완료 하는 클래스의 동일한 인스턴스에서 잠금을 사용 합니다.  
   
 ```  
 // msl_lock_lock.cpp  
@@ -165,6 +165,6 @@ All threads completed.
   
 ## <a name="see-also"></a>참고 항목  
  [lock 멤버](../dotnet/lock-members.md)   
- [lock:: ~ 잠금](../dotnet/lock-tilde-lock.md)   
+ [잠금:: ~ 잠금](../dotnet/lock-tilde-lock.md)   
  [lock::acquire](../dotnet/lock-acquire.md)   
  [lock::try_acquire](../dotnet/lock-try-acquire.md)

@@ -1,5 +1,5 @@
 ---
-title: 단순한 읽기 전용 공급자 기능 향상 | Microsoft Docs
+title: 단순한 읽기 전용 공급자의 기능 향상 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,23 +18,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7c88714e4e1651839cdc5fd4b92d3c5222aa08d0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 28a92f6193053baca80ca078bddc0de862f50279
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33100020"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036451"
 ---
 # <a name="enhancing-the-simple-read-only-provider"></a>단순한 읽기 전용 공급자의 기능 향상
-이 섹션에서는 향상 하는 방법을 보여 줍니다.는 [단순한 읽기 전용 공급자](../../data/oledb/implementing-the-simple-read-only-provider.md) 이전 섹션에서 만든 합니다. `IRowsetLocateImpl` 에 대 한 구현을 만듭니다는 `IRowsetLocate` 인터페이스 및 책갈피 지원을 추가 합니다.  
+
+이 섹션에서는 개선 하는 방법을 보여 줍니다 합니다 [단순한 읽기 전용 공급자](../../data/oledb/implementing-the-simple-read-only-provider.md) 이전 섹션에서 만든 합니다. `IRowsetLocateImpl` 에 대 한 구현을 만듭니다는 `IRowsetLocate` 인터페이스 및 책갈피 지원을 추가 합니다.  
   
- 작업 공급자를 사용 하는 경우에 트랜잭션을 처리 하거나 행 인출 알고리즘의 성능을 향상 시킬 공급자 업데이트를 수행 하려면이 함수는 것이 좋습니다. 공급자 향상 된 기능을 대부분 기존 COM 개체에 인터페이스 추가 작업이 포함 됩니다.  
+작업 공급자를 사용 하는 경우에 공급자 업데이트를 트랜잭션 처리 하거나 행 인출 알고리즘의 성능을 향상 시킬 수 있도록 개선 하는 것이 좋습니다. 공급자 향상 된 기능을 대부분 기존 COM 개체에 인터페이스를 추가 하는 작업이 포함 됩니다.  
   
- 다음 항목의 예제를 추가 하 여 행을 인출 하는 메커니즘을 향상 시킵니다.는 `IRowsetLocate` 인터페이스 `CAgentRowset`합니다. 표시 하는 항목에:  
+다음 항목의 예제를 추가 하 여 행 인출 메커니즘을 개선 합니다 `IRowsetLocate` 인터페이스를 `CAgentRowset`입니다. 표시 하는 항목에:  
   
--   [RMyProviderRowset IRowsetLocate에서 상속 하는 확인](../../data/oledb/modifying-the-inheritance-of-rmyproviderrowset.md)합니다.  
+- [IRowsetLocate에서 상속 RMyProviderRowset 확인](../../data/oledb/modifying-the-inheritance-of-rmyproviderrowset.md)합니다.  
   
--   [소비자에 게 반환 되는 열을 동적으로 결정](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md)합니다.  
+- [소비자에 게 반환 되는 열을 동적으로 결정](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [단순한 읽기 전용 공급자 만들기](../../data/oledb/creating-a-simple-read-only-provider.md)
+
+[단순한 읽기 전용 공급자 만들기](../../data/oledb/creating-a-simple-read-only-provider.md)

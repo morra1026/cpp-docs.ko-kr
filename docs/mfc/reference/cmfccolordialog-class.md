@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a1d5c2d7bb2da2ba293ac29a59948f80c1bed59
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 3cf85ec6de81ca18f32b8cd6bea015341f78287c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680612"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715366"
 ---
 # <a name="cmfccolordialog-class"></a>CMFCColorDialog 클래스
 `CMFCColorDialog` 클래스 색 선택 대화 상자를 나타냅니다.  
@@ -125,17 +125,17 @@ CMFCColorDialog(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *clrInit*  
- 기본 색 선택 합니다. 없는 값을 지정 하는 경우 기본값은 RGB(0,0,0) (검정).  
+*clrInit*<br/>
+[in] 기본 색 선택 합니다. 없는 값을 지정 하는 경우 기본값은 RGB(0,0,0) (검정).  
   
- [in] *dwFlags*  
- (예약 됨.)  
+*dwFlags*<br/>
+[in] 예약 되어 있습니다.
   
- [in] *pParentWnd*  
- 대화 상자의 부모 또는 소유자 창에 대 한 포인터입니다.  
+*pParentWnd*<br/>
+[in] 대화 상자의 부모 또는 소유자 창에 대 한 포인터입니다.  
   
- [in] *hPal*  
- 색 색상표 핸들입니다.  
+*hPal*<br/>
+[in] 색 색상표 핸들입니다.  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -182,8 +182,8 @@ void SetCurrentColor(COLORREF rgb);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rgb*  
- RGB 색상 값  
+*rgb*<br/>
+[in] RGB 색상 값  
   
 ### <a name="remarks"></a>설명  
   
@@ -195,8 +195,8 @@ void SetNewColor(COLORREF rgb);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rgb*  
- A [COLORREF](/windows/desktop/gdi/colorref) RGB 색을 지정 하는 합니다.  
+*rgb*<br/>
+[in] A [COLORREF](/windows/desktop/gdi/colorref) RGB 색을 지정 하는 합니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -211,14 +211,14 @@ void SetPageOne(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *R*  
- RGB 값의 빨강 구성 요소를 지정합니다.  
+*R*<br/>
+[in] RGB 값의 빨강 구성 요소를 지정합니다.  
   
- [in] *G*  
- RGB 값의 녹색 구성 요소를 지정합니다.  
+*G*<br/>
+[in] RGB 값의 녹색 구성 요소를 지정합니다.  
   
- [in] *B*  
- RGB 값의 파랑 구성 요소를 지정합니다.  
+*B*<br/>
+[in] RGB 값의 파랑 구성 요소를 지정합니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -233,14 +233,14 @@ void SetPageTwo(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *R*  
- RGB 값의 빨강 구성 요소를 지정합니다.  
+*R*<br/>
+[in] RGB 값의 빨강 구성 요소를 지정합니다.  
   
- [in] *G*  
- RGB 값의 녹색 구성 요소를 지정합니다.  
+*G*<br/>
+[in] RGB 값의 녹색 구성 요소를 지정합니다.  
   
- [in] *B*  
- RGB 값의 파랑 구성 요소를 지정합니다.  
+*B*<br/>
+[in] RGB 값의 파랑 구성 요소를 지정합니다.  
   
 ### <a name="remarks"></a>설명  
   

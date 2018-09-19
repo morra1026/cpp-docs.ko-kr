@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e64ecd708f5ff159b61a6b7601c74dbf2b6abda6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: de241532763267f5d20d051121e501934da972cf
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758669"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055158"
 ---
 # <a name="atl-class-overview"></a>ATL 클래스 개요
 
@@ -52,10 +52,10 @@ ATL 프로젝트에서 사용할 수 있는 추가 클래스를 참조 하세요
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 및 구조체](../atl/reference/atl-classes.md)   
-[ATL COM 데스크톱 구성 요소](../atl/atl-com-desktop-components.md)  
-[함수](../atl/reference/atl-functions.md)   
-[전역 변수](../atl/reference/atl-global-variables.md)   
-[매크로](../atl/reference/atl-macros.md)   
+[클래스 및 구조체](../atl/reference/atl-classes.md)<br/>
+[ATL COM 데스크톱 구성 요소](../atl/atl-com-desktop-components.md)<br/>
+[함수](../atl/reference/atl-functions.md)<br/>
+[전역 변수](../atl/reference/atl-global-variables.md)<br/>
+[매크로](../atl/reference/atl-macros.md)<br/>
 [Typedefs](../atl/reference/atl-typedefs.md)
 

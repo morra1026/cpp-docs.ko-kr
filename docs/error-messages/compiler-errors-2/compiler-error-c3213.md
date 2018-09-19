@@ -16,40 +16,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dbfdbb3554aad858cf412ace7709bbf63b3ae311
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a23f61dc8170ff7cd5638d2b2f394d288f48c5f3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246006"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112982"
 ---
 # <a name="compiler-error-c3213"></a>컴파일러 오류 C3213
-기본 클래스 'base_type'이 'derived_type'보다 액세스하기 어렵습니다.  
-  
- 어셈블리에서 볼 수 있는 형식은 공개적으로 볼 수 있는 기본 클래스를 사용해야 합니다.  
-  
- 다음 샘플에서는 C3213을 생성합니다.  
-  
-```  
-// C3213.cpp  
-// compile with: /clr  
-private ref struct privateG {  
-public:  
-   int i;  
-};  
-  
-public ref struct publicG {  
-public:  
-   int i;  
-};  
-  
-public ref struct V : public privateG {   // C3213  
-public:  
-   int j;  
-};  
-  
-public ref struct W: public publicG {   // OK  
-public:  
-   int j;  
-};  
+
+기본 클래스 'base_type'이 'derived_type'보다 액세스하기 어렵습니다.
+
+어셈블리에서 볼 수 있는 형식은 공개적으로 볼 수 있는 기본 클래스를 사용해야 합니다.
+
+다음 샘플에서는 C3213을 생성합니다.
+
+```
+// C3213.cpp
+// compile with: /clr
+private ref struct privateG {
+public:
+   int i;
+};
+
+public ref struct publicG {
+public:
+   int i;
+};
+
+public ref struct V : public privateG {   // C3213
+public:
+   int j;
+};
+
+public ref struct W: public publicG {   // OK
+public:
+   int j;
+};
 ```

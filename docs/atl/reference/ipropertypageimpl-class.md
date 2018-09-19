@@ -41,12 +41,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28af5343f761f89678768133c9114e3cf23be8e5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 2b07609b792b7080e2c4c432ed435381007ba286
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755988"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075230"
 ---
 # <a name="ipropertypageimpl-class"></a>IPropertyPageImpl 클래스
 
@@ -58,13 +58,13 @@ ms.locfileid: "43755988"
 ## <a name="syntax"></a>구문
 
 ```
-template<class T>  
+template<class T>
 class IPropertyPageImpl
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `IPropertyPageImpl`합니다.
 
 ## <a name="members"></a>멤버
@@ -311,7 +311,7 @@ void SetDirty(BOOL bDirty);
 
 ### <a name="parameters"></a>매개 변수
 
-*bDirty*  
+*bDirty*<br/>
 [in] True 이면 속성 페이지의 상태가 변경 된 것으로 표시 됩니다. 그렇지 않은 경우 표시로 변경 합니다.
 
 ### <a name="remarks"></a>설명
@@ -368,7 +368,7 @@ HRESULT TranslateAccelerator(MSG* pMsg);
 
 ## <a name="see-also"></a>참고 항목
 
-[IPropertyPage2Impl 클래스](../../atl/reference/ipropertypage2impl-class.md)   
-[IPerPropertyBrowsingImpl 클래스](../../atl/reference/iperpropertybrowsingimpl-class.md)   
-[ISpecifyPropertyPagesImpl 클래스](../../atl/reference/ispecifypropertypagesimpl-class.md)   
+[IPropertyPage2Impl 클래스](../../atl/reference/ipropertypage2impl-class.md)<br/>
+[IPerPropertyBrowsingImpl 클래스](../../atl/reference/iperpropertybrowsingimpl-class.md)<br/>
+[ISpecifyPropertyPagesImpl 클래스](../../atl/reference/ispecifypropertypagesimpl-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

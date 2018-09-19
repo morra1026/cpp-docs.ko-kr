@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38a3bb405fac71a651b37fd6d6098c0d0f0263b0
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 0cbb7f3bc7263165a988a910f0311d3d2c368e0c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42545870"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46104324"
 ---
 # <a name="assume"></a>__assume
 **Microsoft 전용**  
@@ -38,8 +38,8 @@ __assume(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `expression`  
- true로 평가된다고 간주되는 식입니다.  
+*식*<br/>
+true로 평가된다고 간주되는 식입니다.  
   
 ## <a name="remarks"></a>설명  
  최적화 프로그램은 키워드가 표시되는 지점에서 `expression`으로 표시되는 조건이 true이며 변수에 할당하는 등의 작업을 통해 `expression`을 수정할 때까지 true로 유지된다고 가정합니다. `__assume`이 최적화 프로그램에 전달하는 힌트를 적절하게 사용하면 최적화 성능을 개선할 수 있습니다.  
@@ -61,7 +61,7 @@ __assume(
 |---------------|------------------|  
 |`__assume`|x86, ARM, x64|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // compiler_intrinsics__assume.cpp  

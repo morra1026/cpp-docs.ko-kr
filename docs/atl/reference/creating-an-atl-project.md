@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b937212f49bd09f6498ebcda934e1aa362d959e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ea8d1dcb0d5d3a59eb5f2899baffed18e7d1663f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755540"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054755"
 ---
 # <a name="creating-an-atl-project"></a>ATL 프로젝트 만들기
 
@@ -47,6 +47,6 @@ ATL 프로젝트를 만드는 가장 쉬운 방법은의 Win32 프로젝트 폴�
 
 ## <a name="see-also"></a>참고 항목
 
-[코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)   
+[코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [속성 페이지](../../ide/property-pages-visual-cpp.md)   
 

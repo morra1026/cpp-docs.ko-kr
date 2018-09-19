@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 147814856e1e447894fd9826b9620ea8d762d48c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 4abf96e3850f88b58e138745536ffc40aef11b68
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764981"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024543"
 ---
 # <a name="ca2caex-class"></a>CA2CAEX 클래스
 
@@ -36,13 +36,13 @@ ms.locfileid: "43764981"
 ## <a name="syntax"></a>구문
 
 ```
-template<int t_nBufferLength = 128>  
+template<int t_nBufferLength = 128>
 class CA2CAEX
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*t_nBufferLength*  
+*t_nBufferLength*<br/>
 변환 프로세스에서 사용 되는 버퍼의 크기입니다. 기본 길이 128 바이트입니다.
 
 ## <a name="members"></a>멤버
@@ -103,10 +103,10 @@ CA2CAEX(LPCSTR psz) throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*psz*  
+*psz*<br/>
 변환할 텍스트 문자열입니다.
 
-*nCodePage*  
+*nCodePage*<br/>
 이 클래스에서 사용 되지 않습니다.
 
 ### <a name="remarks"></a>설명
@@ -137,7 +137,7 @@ LPCSTR m_psz;
 
 변환 연산자입니다.
 
-```  
+```
 operator LPCSTR() const throw();
 ```
 
@@ -147,9 +147,9 @@ LPCSTR 입력할 텍스트 문자열을 반환 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[CA2AEX 클래스](../../atl/reference/ca2aex-class.md)   
-[CA2WEX 클래스](../../atl/reference/ca2wex-class.md)   
-[CW2AEX 클래스](../../atl/reference/cw2aex-class.md)   
-[CW2CWEX 클래스](../../atl/reference/cw2cwex-class.md)   
-[CW2WEX 클래스](../../atl/reference/cw2wex-class.md)   
+[CA2AEX 클래스](../../atl/reference/ca2aex-class.md)<br/>
+[CA2WEX 클래스](../../atl/reference/ca2wex-class.md)<br/>
+[CW2AEX 클래스](../../atl/reference/cw2aex-class.md)<br/>
+[CW2CWEX 클래스](../../atl/reference/cw2cwex-class.md)<br/>
+[CW2WEX 클래스](../../atl/reference/cw2wex-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

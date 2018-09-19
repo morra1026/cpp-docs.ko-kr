@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff3bc9ea331be6c25be80b21c14a309d47718c8e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c18a9b1e4a35a1089b8a7fb441161552bb3a3909
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217335"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724310"
 ---
 # <a name="cdialog-class"></a>CDialog 클래스
 화면에 대화 상자를 표시 하는 데는 기본 클래스입니다.  
@@ -472,8 +472,8 @@ Virtual void OnSetFont(CFont* pFont);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pFont*  
- 이 대화 상자에서 모든 컨트롤을 기본 글꼴로 사용할 글꼴에 대 한 포인터를 지정 합니다.  
+*pFont*<br/>
+[in] 이 대화 상자에서 모든 컨트롤을 기본 글꼴로 사용할 글꼴에 대 한 포인터를 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  대화 상자의 모든 컨트롤에 대 한 기본값으로 지정 된 글꼴을 사용 합니다.  

@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a555cc26e8857899690852743fa177a706afa0f2
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 94d56a6defbc47a133e3f583daab188921622d84
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677747"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711810"
 ---
 # <a name="cstatusbarctrl-class"></a>CStatusBarCtrl 클래스
 Windows의 공용 상태 표시줄 컨트롤의 기능을 제공합니다.  
@@ -261,7 +261,7 @@ HICON GetIcon(int iPart) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iPart*|검색할 아이콘이 포함 된 파트의 0부터 시작 하는 인덱스입니다. 이 매개 변수가-1 인 경우 상태 표시줄 단순 모드 상태 표시줄 수로 간주 됩니다.|  
+|*iPart*|[in] 검색할 아이콘이 포함 된 파트의 0부터 시작 하는 인덱스입니다. 이 매개 변수가-1 인 경우 상태 표시줄 단순 모드 상태 표시줄 수로 간주 됩니다.|  
   
 ### <a name="return-value"></a>반환 값  
  아이콘에 대 한 핸들 경우 성공 메서드 그렇지 않으면 NULL입니다.  
@@ -521,8 +521,8 @@ BOOL SetSimple(BOOL bSimple = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bSimple*  
- 표시 유형 플래그입니다. 이 매개 변수가 TRUE 인 경우 컨트롤에 간단한 텍스트 표시 FALSE 인 경우에 여러 파트가 표시 됩니다.  
+*bSimple*<br/>
+[in] 표시 유형 플래그입니다. 이 매개 변수가 TRUE 인 경우 컨트롤에 간단한 텍스트 표시 FALSE 인 경우에 여러 파트가 표시 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  항상 0을 반환합니다.  

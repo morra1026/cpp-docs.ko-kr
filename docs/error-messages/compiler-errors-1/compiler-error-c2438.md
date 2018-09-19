@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf42740c137953007cab2c5301bff122b553e5f6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4f5153e3ff6626f3ea1b1155f14bc9ef96441e7d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225540"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066078"
 ---
 # <a name="compiler-error-c2438"></a>컴파일러 오류 C2438
-'identifier': 생성자를 통해 정적 클래스 데이터를 초기화할 수 없습니다  
-  
- 클래스의 정적 멤버를 초기화 하는 생성자 사용 됩니다. 클래스 선언 외부 정의에서 정적 멤버를 초기화 합니다.  
-  
- 다음 샘플에서는 C2438 오류가 생성 됩니다.  
-  
-```  
-// C2438.cpp  
-struct X {  
-   X(int i) : j(i) {}   // C2438  
-   static int j;  
-};  
-  
-int X::j;  
-  
-int main() {  
-   X::j = 1;  
-}  
+
+'identifier': 생성자를 통해 정적 클래스 데이터를 초기화할 수 없습니다
+
+생성자는 클래스의 정적 멤버 초기화에 사용 됩니다. 정적 멤버는 클래스 선언 밖에 정의에서 초기화 되어야 합니다.
+
+다음 샘플에서는 C2438를 생성합니다.
+
+```
+// C2438.cpp
+struct X {
+   X(int i) : j(i) {}   // C2438
+   static int j;
+};
+
+int X::j;
+
+int main() {
+   X::j = 1;
+}
 ```

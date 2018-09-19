@@ -16,25 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 135ecf7767fddafc3d9e16398edfb4708b7d67cd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7588ec3862c914fd998a7b5a3f59ff4d0bb5bbf2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33266313"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088672"
 ---
 # <a name="compiler-error-c3669"></a>컴파일러 오류 C3669
-'member': 재정의 지정자 'override' 정적 멤버 함수 또는 생성자에 사용할 수 없습니다  
-  
- 재정의 잘못 지정 되었습니다. 자세한 내용은 참조 [명시적으로 재정의](../../windows/explicit-overrides-cpp-component-extensions.md)합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3669 오류가 발생 합니다.  
-  
-```  
-// C3669.cpp  
-// compile with: /clr  
-public ref struct R {  
-   R() override {}   // C3669  
-};  
+
+'member': 재정의 지정자 'override' 정적 멤버 함수 또는 생성자에서 사용할 수 없습니다
+
+재정의 잘못 지정 되었습니다. 자세한 내용은 [명시적으로 재정의](../../windows/explicit-overrides-cpp-component-extensions.md)합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플 C3669를 생성합니다.
+
+```
+// C3669.cpp
+// compile with: /clr
+public ref struct R {
+   R() override {}   // C3669
+};
 ```

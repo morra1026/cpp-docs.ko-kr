@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5052aaadc673e38a844ea5b0d1e11ff3a96f3fbe
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: fd5bf96706b94ffbba8cb1b9aeeee8701b266e5d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691757"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115048"
 ---
 # <a name="ompschedule"></a>OMP_SCHEDULE
-동작을 수정 하는 [일정](../../../parallel/openmp/reference/schedule.md) 절 때 `schedule(runtime)` 에 지정 된 한 `for` 또는 `parallel for` 지시문입니다.  
+동작을 수정 합니다 [일정](../../../parallel/openmp/reference/schedule.md) 절 때 `schedule(runtime)` 에 지정 된을 `for` 또는 `parallel for` 지시문입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -32,14 +32,13 @@ ms.locfileid: "33691757"
 set OMP_SCHEDULE[=type[,size]]  
 ```  
   
-## <a name="remarks"></a>설명  
- 다음은 각 문자에 대한 설명입니다.  
+## <a name="arguments"></a>인수
+
+*size*<br/>
+(선택 사항) 반복의 크기를 지정합니다. `size` 양의 정수 여야 합니다. 기본값은 1, 경우를 제외 하 고 `type` 고정 됩니다. 유효 하지 않은 경우 `type` 는 `runtime`합니다.  
   
- `size`(선택 사항)  
- 반복의 크기를 지정합니다. `size` 양의 정수 여야 합니다. 기본값은 1의 경우는 제외 `type` 는 정적입니다. 경우에 유효 하지 않은 `type` 은 `runtime`합니다.  
-  
- `type`  
- 일정의 종류:  
+*type*<br/>
+예약의 종류:  
   
 -   `dynamic`  
   
@@ -52,16 +51,16 @@ set OMP_SCHEDULE[=type[,size]]
 ## <a name="remarks"></a>설명  
  OpenMP 표준의 Visual c + + 구현에서 기본값은 `OMP_SCHEDULE=static,0`합니다.  
   
- 자세한 내용은 참조 [4.1 OMP_SCHEDULE](../../../parallel/openmp/4-1-omp-schedule.md)합니다.  
+ 자세한 내용은 [4.1 OMP_SCHEDULE](../../../parallel/openmp/4-1-omp-schedule.md)합니다.  
   
 ## <a name="example"></a>예제  
- 다음 명령 집합의 **OMP_SCHEDULE** 환경 변수:  
+ 다음 명령 집합을 **OMP_SCHEDULE** 환경 변수:  
   
 ```  
 set OMP_SCHEDULE="guided,2"  
 ```  
   
- 다음 명령은의 현재 설정을 표시는 **OMP_SCHEDULE** 환경 변수:  
+ 다음 명령은의 현재 설정을 표시 합니다 **OMP_SCHEDULE** 환경 변수:  
   
 ```  
 set OMP_SCHEDULE  

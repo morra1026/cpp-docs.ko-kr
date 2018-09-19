@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8642bf2bb6b2db06ecb33fa6ec1cc44d5e68317c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 672da1c98ebc51a7440e29234950be2adb5e1c0e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766232"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093071"
 ---
 # <a name="csecurityattributes-class"></a>CSecurityAttributes 클래스
 
@@ -80,10 +80,10 @@ explicit CSecurityAttributes(const CSecurityDesc& rSecurityDescriptor, bool bInh
 
 ### <a name="parameters"></a>매개 변수
 
-*rSecurityDescriptor*  
+*rSecurityDescriptor*<br/>
 보안 설명자에 대한 참조입니다.
 
-*bInheritsHandle*  
+*bInheritsHandle*<br/>
 새 프로세스가 만들어질 때 반환된 핸들의 상속 여부를 지정합니다. 이 멤버가 true이면 새 프로세스가 핸들을 상속합니다.
 
 ##  <a name="set"></a>  Csecurityattributes:: Set
@@ -96,10 +96,10 @@ void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) 
 
 ### <a name="parameters"></a>매개 변수
 
-*rSecurityDescriptor*  
+*rSecurityDescriptor*<br/>
 보안 설명자에 대한 참조입니다.
 
-*bInheritHandle*  
+*bInheritHandle*<br/>
 새 프로세스가 만들어질 때 반환된 핸들의 상속 여부를 지정합니다. 이 멤버가 true이면 새 프로세스가 핸들을 상속합니다.
 
 ### <a name="remarks"></a>설명
@@ -108,8 +108,8 @@ void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) 
 
 ## <a name="see-also"></a>참고 항목
 
-[보안 샘플](../../visual-cpp-samples.md)   
-[SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560)   
-[보안 설명자](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)   
-[클래스 개요](../../atl/atl-class-overview.md)   
+[보안 샘플](../../visual-cpp-samples.md)<br/>
+[SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560)<br/>
+[보안 설명자](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)<br/>
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [보안 전역 함수](../../atl/reference/security-global-functions.md)

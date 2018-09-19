@@ -19,18 +19,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85a31aea113514651fc3e81ac147b5ea2974920c
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 2ea52c91391800b25ab9a71d977300dd1705fb51
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39604296"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025531"
 ---
 # <a name="floating-limits"></a>부동 한계
 
 **Microsoft 전용**
 
-다음 표에는 부동 소수점 상수의 값에 대한 제한이 나와 있습니다. 이러한 제한은 표준 헤더 파일에도 정의 됩니다 \<float.h >.  
+다음 표에는 부동 소수점 상수의 값에 대한 제한이 나와 있습니다. 이러한 제한은 표준 헤더 파일에도 정의 됩니다 \<float.h >.
 
 ## <a name="limits-on-floating-point-constants"></a>부동 소수점 상수에 대한 제한
 
@@ -57,4 +57,4 @@ ms.locfileid: "39604296"
 
 ## <a name="see-also"></a>참고자료
 
-[정수 제한](../cpp/integer-limits.md)  
+[정수 제한](../cpp/integer-limits.md)

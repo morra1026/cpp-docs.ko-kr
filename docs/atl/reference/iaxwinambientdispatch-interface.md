@@ -45,12 +45,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f5bb644e43a5dd5085c53d0428f892cccd424fc1
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 2cf8747275325332f6a2d0072e2c0ba2a66ae276
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766687"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057615"
 ---
 # <a name="iaxwinambientdispatch-interface"></a>IAxWinAmbientDispatch 인터페이스
 
@@ -130,7 +130,7 @@ STDMETHOD(get_AllowContextMenu)(VARIANT_BOOL* pbAllowContextMenu);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbAllowContextMenu*  
+*pbAllowContextMenu*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -151,7 +151,7 @@ STDMETHOD(get_AllowShowUI)(VARIANT_BOOL* pbAllowShowUI);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbAllowShowUI*  
+*pbAllowShowUI*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -172,7 +172,7 @@ STDMETHOD(get_AllowWindowlessActivation)(VARIANT_BOOL* pbAllowWindowless);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbAllowWindowless*  
+*pbAllowWindowless*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -193,7 +193,7 @@ STDMETHOD(get_BackColor)(OLE_COLOR* pclrBackground);
 
 ### <a name="parameters"></a>매개 변수
 
-*pclrBackground*  
+*pclrBackground*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -214,7 +214,7 @@ STDMETHOD(get_DisplayAsDefault)(VARIANT_BOOL* pbDisplayAsDefault);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbDisplayAsDefault*  
+*pbDisplayAsDefault*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -235,7 +235,7 @@ STDMETHOD(get_DocHostDoubleClickFlags)(DWORD* pdwDocHostDoubleClickFlags);
 
 ### <a name="parameters"></a>매개 변수
 
-*pdwDocHostDoubleClickFlags*  
+*pdwDocHostDoubleClickFlags*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -256,7 +256,7 @@ STDMETHOD(get_DocHostFlags)(DWORD* pdwDocHostFlags);
 
 ### <a name="parameters"></a>매개 변수
 
-*pdwDocHostFlags*  
+*pdwDocHostFlags*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -277,7 +277,7 @@ STDMETHOD(get_Font)(IFontDisp** pFont);
 
 ### <a name="parameters"></a>매개 변수
 
-*pFont*  
+*pFont*<br/>
 [out] 주소는 `IFontDisp` 이 속성의 현재 값을 수신 하는 데 사용 되는 인터페이스 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -298,7 +298,7 @@ STDMETHOD(get_ForeColor)(OLE_COLOR* pclrForeground);
 
 ### <a name="parameters"></a>매개 변수
 
-*pclrForeground*  
+*pclrForeground*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -319,7 +319,7 @@ STDMETHOD(get_LocaleID)(LCID* plcidLocaleID);
 
 ### <a name="parameters"></a>매개 변수
 
-*plcidLocaleID*  
+*plcidLocaleID*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -342,7 +342,7 @@ STDMETHOD(get_MessageReflect)(VARIANT_BOOL* pbMessageReflect);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbMessageReflect*  
+*pbMessageReflect*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -363,7 +363,7 @@ STDMETHOD(get_OptionKeyPath)(BSTR* pbstrOptionKeyPath);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbstrOptionKeyPath*  
+*pbstrOptionKeyPath*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -380,7 +380,7 @@ STDMETHOD(get_ShowGrabHandles)(VARIANT_BOOL* pbShowGrabHandles);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbShowGrabHandles*  
+*pbShowGrabHandles*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -401,7 +401,7 @@ STDMETHOD(get_ShowHatching)(VARIANT_BOOL* pbShowHatching);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbShowHatching*  
+*pbShowHatching*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -422,7 +422,7 @@ STDMETHOD(get_UserMode)(VARIANT_BOOL* pbUserMode);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbUserMode*  
+*pbUserMode*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -443,7 +443,7 @@ STDMETHOD(put_AllowContextMenu)(VARIANT_BOOL bAllowContextMenu);
 
 ### <a name="parameters"></a>매개 변수
 
-*bAllowContextMenu*  
+*bAllowContextMenu*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -464,7 +464,7 @@ STDMETHOD(put_AllowShowUI)(VARIANT_BOOL bAllowShowUI);
 
 ### <a name="parameters"></a>매개 변수
 
-*bAllowShowUI*  
+*bAllowShowUI*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -485,7 +485,7 @@ STDMETHOD(put_AllowWindowlessActivation)(VARIANT_BOOL bAllowWindowless);
 
 ### <a name="parameters"></a>매개 변수
 
-*bAllowWindowless*  
+*bAllowWindowless*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -506,7 +506,7 @@ STDMETHOD(put_BackColor)(OLE_COLOR clrBackground);
 
 ### <a name="parameters"></a>매개 변수
 
-*clrBackground*  
+*clrBackground*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -527,7 +527,7 @@ STDMETHOD(put_DisplayAsDefault)(VARIANT_BOOL bDisplayAsDefault);
 
 ### <a name="parameters"></a>매개 변수
 
-*bDisplayAsDefault*  
+*bDisplayAsDefault*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -548,7 +548,7 @@ STDMETHOD(put_DocHostDoubleClickFlags)(DWORD dwDocHostDoubleClickFlags);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwDocHostDoubleClickFlags*  
+*dwDocHostDoubleClickFlags*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -569,7 +569,7 @@ STDMETHOD(put_DocHostFlags)(DWORD dwDocHostFlags);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwDocHostFlags*  
+*dwDocHostFlags*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -590,7 +590,7 @@ STDMETHOD(put_Font)(IFontDisp* pFont);
 
 ### <a name="parameters"></a>매개 변수
 
-*pFont*  
+*pFont*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -611,7 +611,7 @@ STDMETHOD(put_ForeColor)(OLE_COLOR clrForeground);
 
 ### <a name="parameters"></a>매개 변수
 
-*clrForeground*  
+*clrForeground*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -632,7 +632,7 @@ STDMETHOD(put_LocaleID)(LCID lcidLocaleID);
 
 ### <a name="parameters"></a>매개 변수
 
-*lcidLocaleID*  
+*lcidLocaleID*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -653,7 +653,7 @@ STDMETHOD(put_MessageReflect)(VARIANT_BOOL bMessageReflect);
 
 ### <a name="parameters"></a>매개 변수
 
-*bMessageReflect*  
+*bMessageReflect*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -674,7 +674,7 @@ STDMETHOD(put_OptionKeyPath)(BSTR bstrOptionKeyPath);
 
 ### <a name="parameters"></a>매개 변수
 
-*bstrOptionKeyPath*  
+*bstrOptionKeyPath*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -691,7 +691,7 @@ STDMETHOD(put_UserMode)(VARIANT_BOOL bUserMode);
 
 ### <a name="parameters"></a>매개 변수
 
-*bUserMode*  
+*bUserMode*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -704,8 +704,8 @@ STDMETHOD(put_UserMode)(VARIANT_BOOL bUserMode);
 
 ## <a name="see-also"></a>참고 항목
 
-[IAxWinAmbientDispatchEx 인터페이스](../../atl/reference/iaxwinambientdispatchex-interface.md)   
-[IAxWinHostWindow 인터페이스](../../atl/reference/iaxwinhostwindow-interface.md)   
-[CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)   
+[IAxWinAmbientDispatchEx 인터페이스](../../atl/reference/iaxwinambientdispatchex-interface.md)<br/>
+[IAxWinHostWindow 인터페이스](../../atl/reference/iaxwinhostwindow-interface.md)<br/>
+[CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)<br/>
 [AtlAxGetHost](composite-control-global-functions.md#atlaxgethost)
 

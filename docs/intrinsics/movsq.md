@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0231c2514805479c0ec999698ebd027ab51e3119
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 72ed2d47c995e19bdfa473c0abd79034e3e51430
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42541311"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720943"
 ---
 # <a name="movsq"></a>__movsq
 **Microsoft 전용**  
@@ -41,14 +41,14 @@ void __movsq(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [out] `Dest`  
- 작업의 대상입니다.  
+*대상*<br/>
+[out] 작업의 대상입니다.  
   
- [in] `Source`  
- 작업의 원본입니다.  
+*Source*<br/>
+[in] 작업의 원본입니다.  
   
- [in] `Count`  
- 복사할 (쿼드 워드)의 수입니다.  
+*개수*<br/>
+[in] 복사할 (쿼드 워드)의 수입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
@@ -63,7 +63,7 @@ void __movsq(
   
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // movsq.cpp  

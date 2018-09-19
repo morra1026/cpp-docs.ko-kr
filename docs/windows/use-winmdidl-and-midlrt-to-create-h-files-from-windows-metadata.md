@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 41859ae16ecd7f4c3261d644ce37d86fe416ec94
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: dcc942bc69ebb37a7aba59e722b1a4cebbbab3ff
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42589644"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071367"
 ---
 # <a name="how-to-use-winmdidlexe-and-midlrtexe-to-create-h-files-from-windows-metadata"></a>방법: winmdidl.exe 및 midlrt.exe를 사용하여 Windows 메타데이터에서 .h 파일 만들기
 
@@ -42,24 +42,25 @@ Winmdidl.exe 및 midlrt.exe는 Windows 런타임 구성 요소 및 네이티브 
 Winmdidl.exe [/nologo] [/supressversioncheck] [/time] [/outdir:dir] [/banner:file] [/utf8] Winmdfile
 ```
 
-`/nologo`  
+**/nologo**<br/>
 콘솔이 winmdidl 저작권 메시지 및 버전 번호를 표시하는 것을 방지합니다.
 
-`/supressversioncheck`  
+**/supressversioncheck**<br/>
 사용되지 않습니다.
 
-`/time`  
+**/ 시간**<br/>
 콘솔 출력에서 총 실행 시간을 표시합니다.
 
-/outdir:\<dir > 출력 디렉터리를 지정 합니다. 경로에 공백이 있으면 따옴표를 사용합니다. 기본 출력 디렉터리가  *\<드라이브 >*: \Users\\*\<사용자 이름 >* \AppData\Local\VirtualStore\Program 파일 (x86) \Microsoft Visual Studio 12.0\\합니다.
+**/outdir:**<em>dir</em><br/>
+출력 디렉터리를 지정합니다. 경로에 공백이 있으면 따옴표를 사용합니다. 기본 출력 디렉터리가  *\<드라이브 >*: \Users\\*\<사용자 이름 >* \AppData\Local\VirtualStore\Program 파일 (x86) \Microsoft Visual Studio 12.0\\합니다.
 
-`/banner:<file>`  
+**배너 /:**<em>파일</em><br/>
 기본 저작권 메시지 앞에 오는 사용자 지정 텍스트가 포함된 파일을 지정하고 생성된 .idl 파일의 상단에 winmdidl 버전 번호를 표시합니다. 경로에 공백이 있으면 따옴표를 사용합니다.
 
-`/utf8`  
+**/utf8**<br/>
 파일이 UTF-8로 포맷되도록 합니다.
 
-`Winmdfile`  
+*Winmdfile*<br/>
 구문 분석할 .winmd 파일의 이름입니다. 경로에 공백이 있으면 따옴표를 사용합니다.
 
 ## <a name="midlrt-command-line-arguments"></a>Midlrt 명령줄 인수

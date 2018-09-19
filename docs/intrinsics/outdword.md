@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 326ebeeb1d282950ed7d481014d4349c168dc897
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 1181cfa4fc2868fe96deb1d68d4140b9ab80e29b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540331"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45708684"
 ---
 # <a name="outdword"></a>__outdword
 **Microsoft 전용**  
@@ -40,11 +40,11 @@ void __outdword(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `Port`  
- 데이터를 보낼 포트입니다.  
+*포트*<br/>
+[in] 데이터를 보낼 포트입니다.  
   
- [in] `Data`  
- 전송할 워드입니다.  
+*Data*<br/>
+[in] 전송할 워드입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   

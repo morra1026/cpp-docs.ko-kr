@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6bd20852f1dfd278d4ae58cc6c67d6047579cd08
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 9e06ff5301af07ff123954060053296839118d11
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693194"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703965"
 ---
 # <a name="csliderctrl-class"></a>CSliderCtrl 클래스
 Windows의 공용 슬라이더 컨트롤의 기능을 제공합니다.  
@@ -633,7 +633,7 @@ void SetThumbLength(int nLength);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *nLength*|픽셀에서 슬라이더의 길이입니다.|  
+|*nLength*|[in] 픽셀에서 슬라이더의 길이입니다.|  
   
 ### <a name="remarks"></a>설명  
  Trackbar 컨트롤을 설정할 수는이 메서드에 필요 [TBS_FIXEDLENGTH](/windows/desktop/Controls/trackbar-control-styles) 스타일입니다.  

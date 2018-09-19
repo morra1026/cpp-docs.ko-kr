@@ -14,17 +14,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f258740c32cf232c93926efb3efa98e2596ff108
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: eafccc1a2dda9143a39516878851f2c3a62a2d32
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381670"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103336"
 ---
 # <a name="file-position-in-append-mode"></a>추가 모드의 파일 위치
-**ANSI 4.9.3** 추가 모드 스트림의 파일 위치 표시기가 처음에 파일의 시작에 배치되는지 아니면 끝에 배치되는지 여부  
-  
- 추가 모드로 파일을 열 때 파일 위치 표시기는 처음에 파일의 끝을 가리킵니다,  
-  
-## <a name="see-also"></a>참고 항목  
- [라이브러리 함수](../c-language/library-functions.md)
+
+**ANSI 4.9.3** 추가 모드 스트림의 파일 위치 표시기가 처음에 파일의 시작에 배치되는지 아니면 끝에 배치되는지 여부
+
+추가 모드로 파일을 열 때 파일 위치 표시기는 처음에 파일의 끝을 가리킵니다,
+
+## <a name="see-also"></a>참고 항목
+
+[라이브러리 함수](../c-language/library-functions.md)

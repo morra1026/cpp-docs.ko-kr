@@ -22,27 +22,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0c6a5af31eaba30af92201a2e2563b67aceed6e
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 38b97354408d87d862955c0883c72d3e1459aa61
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44104110"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719279"
 ---
 # <a name="gs-control-stack-checking-calls"></a>/Gs(스택 검사 호출 제어)
+
 스택 프로브를 제어합니다.
 
 ## <a name="syntax"></a>구문
 
-```  
+```
 /Gs[size]
-```  
+```
 
 ## <a name="arguments"></a>인수
+
 *size*<br/>
 (옵션) 스택 프로브가 초기화되기 전에 지역 변수가 차지할 수 있는 바이트 수 입니다. 경우는 **/Gs** 옵션 없이 지정 되는 `size` 인수를 지정 하는 것 같습니다 **/Gs0**,
 
 ## <a name="remarks"></a>설명
+
 스택 프로브는 컴파일러에서 모든 함수 호출에 삽입하는 코드 시퀀스입니다. 초기화되면 스택 프로브는 함수의 지역 변수를 저장하는 데 필요한 메모리 공간에 원활하게 도달합니다.
 
 함수에서 지역 변수에 `size`바이트의 스택 공간을 필요로 하는 경우 스택 프로브가 초기화됩니다. 기본적으로 컴파일러에서는 함수에 스택 공간이 2페이지 이상 필요한 경우 스택 프로브를 초기화하는 코드를 생성합니다. 컴파일러 옵션과 같습니다 **/Gs4096** x86, x64 및 ARM 플랫폼에 대 한 합니다. 이 값은 응용 프로그램 및 Windows 메모리 관리자가 런타임 시 프로그램 스택으로 동적으로 커밋되는 메모리 양을 늘리도록 합니다.
@@ -58,18 +61,19 @@ ms.locfileid: "44104110"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1.  프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
 
-2.  선택 된 **C/c + +** 폴더입니다.
+1. 선택 된 **C/c + +** 폴더입니다.
 
-3.  선택 된 **명령줄** 속성 페이지.
+1. 선택 된 **명령줄** 속성 페이지.
 
-4.  **추가 옵션** 상자에 컴파일러 옵션을 입력합니다.
+1. **추가 옵션** 상자에 컴파일러 옵션을 입력합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
--   <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>을 참조하세요.
+- <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
-[컴파일러 옵션](../../build/reference/compiler-options.md)   
+
+[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

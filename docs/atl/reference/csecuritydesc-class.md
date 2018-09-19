@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d771b24db830a03101b7a0041b02aeaeaf3b3b3d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 591465ed9c16485498174a710d2d37ff68425058
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756079"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116869"
 ---
 # <a name="csecuritydesc-class"></a>CSecurityDesc 클래스
 
@@ -129,13 +129,13 @@ Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access
 
 ```
 CSecurityDesc() throw();
-CSecurityDesc(const CSecurityDesc& rhs) throw(... );  
+CSecurityDesc(const CSecurityDesc& rhs) throw(... );
 CSecurityDesc(const SECURITY_DESCRIPTOR& rhs) throw(...);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*rhs*  
+*rhs*<br/>
 합니다 `CSecurityDesc` 개체 또는 `SECURITY_DESCRIPTOR` 구조에 새 할당할 `CSecurityDesc` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -164,7 +164,7 @@ bool FromString(LPCTSTR pstr) throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*pstr*  
+*pstr*<br/>
 포함 된 null로 끝나는 문자열에 대 한 포인터를 [문자열 형식 보안 설명자](/windows/desktop/SecAuthZ/security-descriptor-string-format) 변환할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -187,7 +187,7 @@ bool GetControl(SECURITY_DESCRIPTOR_CONTROL* psdc) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*psdc*  
+*psdc*<br/>
 에 대 한 포인터를 `SECURITY_DESCRIPTOR_CONTROL` 보안 설명자의 제어 정보를 수신 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -211,13 +211,13 @@ bool GetDacl(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDacl*  
+*pDacl*<br/>
 에 대 한 포인터는 `CDacl` 보안 설명자의 DACL의 복사본을 저장 하는 구조입니다. 메서드를 설정 하는 임의의 ACL이 있으면 *pDacl* 보안 설명자의 임의 ACL의 주소입니다. 임의 ACL을 존재 하지 않는 경우 값이 없는 저장 됩니다.
 
-*pbPresent*  
+*pbPresent*<br/>
 지정 된 보안 설명자는 임의 ACL의 존재를 나타내는 값에 대 한 포인터입니다. 이 매개 변수가 설정 된 보안 설명자는 임의 ACL이 있으면 true입니다. 보안 설명자는 임의 ACL이 없는 경우이 매개 변수를 false로 설정 됩니다.
 
-*pbDefaulted*  
+*pbDefaulted*<br/>
 플래그에 대 한 포인터에서 SE_DACL_DEFAULTED 플래그의 값으로 설정 된 `SECURITY_DESCRIPTOR_CONTROL` 보안 설명자에 대 한 임의의 ACL이 있으면 구조체입니다. 임의 ACL 기본 메커니즘을;에서 검색 된이 플래그가 true 인 경우 false 이면 임의 ACL 사용자가 명시적으로 지정 되었습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -236,10 +236,10 @@ bool GetGroup(
 
 ### <a name="parameters"></a>매개 변수
 
-*pSid*  
+*pSid*<br/>
 에 대 한 포인터를 [CSid](../../atl/reference/csid-class.md) (보안 식별자)는 CDacl에 저장 된 그룹의 복사본을 받는입니다.
 
-*pbDefaulted*  
+*pbDefaulted*<br/>
 플래그에 대 한 포인터에서 SE_GROUP_DEFAULTED 플래그의 값으로 설정 된 `SECURITY_DESCRIPTOR_CONTROL` 메서드는 반환 될 때 구조체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -258,10 +258,10 @@ bool GetOwner(
 
 ### <a name="parameters"></a>매개 변수
 
-*pSid*  
+*pSid*<br/>
 에 대 한 포인터를 [CSid](../../atl/reference/csid-class.md) (보안 식별자)는 CDacl에 저장 된 그룹의 복사본을 받는입니다.
 
-*pbDefaulted*  
+*pbDefaulted*<br/>
 플래그에 대 한 포인터에서 SE_OWNER_DEFAULTED 플래그의 값으로 설정 된 `SECURITY_DESCRIPTOR_CONTROL` 메서드는 반환 될 때 구조체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -293,13 +293,13 @@ bool GetSacl(
 
 ### <a name="parameters"></a>매개 변수
 
-*pSacl*  
+*pSacl*<br/>
 에 대 한 포인터는 `CSacl` 보안 설명자의 SACL의 복사본을 저장 하는 구조입니다. 메서드를 설정 하는 시스템 ACL을 볼 수 있으면 *pSacl* 보안 설명자의 시스템 ACL의 주소입니다. 시스템 ACL을 존재 하지 않는 경우 값이 없는 저장 됩니다.
 
-*pbPresent*  
+*pbPresent*<br/>
 지정 된 보안 설명자에는 시스템 ACL의 존재를 나타내는 설정 하는 메서드 플래그에 대 한 포인터입니다. 이 매개 변수가 설정 된 보안 설명자는 시스템 ACL이 있으면 true입니다. 보안 설명자는 시스템 ACL이 없는 경우이 매개 변수를 false로 설정 됩니다.
 
-*pbDefaulted*  
+*pbDefaulted*<br/>
 플래그에 대 한 포인터에서 SE_SACL_DEFAULTED 플래그의 값으로 설정 된 `SECURITY_DESCRIPTOR_CONTROL` 보안 설명자에 대 한 시스템 ACL 있으면 구조체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -529,13 +529,13 @@ bool MakeSelfRelative() throw(...);
 대입 연산자입니다.
 
 ```
-CSecurityDesc& operator= (const SECURITY_DESCRIPTOR& rhs) throw(...);  
+CSecurityDesc& operator= (const SECURITY_DESCRIPTOR& rhs) throw(...);
 CSecurityDesc& operator= (const CSecurityDesc& rhs) throw(...);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*rhs*  
+*rhs*<br/>
 합니다 `SECURITY_DESCRIPTOR` 구조 또는 `CSecurityDesc` 할당할 개체는 `CSecurityDesc` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -546,7 +546,7 @@ CSecurityDesc& operator= (const CSecurityDesc& rhs) throw(...);
 
 에 대 한 포인터에 값을 캐스팅 합니다 `SECURITY_DESCRIPTOR` 구조입니다.
 
-```  
+```
 operator const SECURITY_DESCRIPTOR *() const throw();
 ```
 
@@ -562,10 +562,10 @@ bool SetControl(
 
 ### <a name="parameters"></a>매개 변수
 
-*ControlBitsOfInterest*  
+*ControlBitsOfInterest*<br/>
 설정 제어 비트를 나타내는 SECURITY_DESCRIPTOR_CONTROL 마스크입니다. 설정할 수 있는 플래그 목록은 참조 하세요 [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx)합니다.
 
-*ControlBitsToSet*  
+*ControlBitsToSet*<br/>
 지정 된 컨트롤 비트에 대 한 새 값을 나타내는 SECURITY_DESCRIPTOR_CONTROL 마스크를 *ControlBitsOfInterest* 마스크입니다. 이 매개 변수에 대해 나열 된 플래그의 조합 수를 *ControlBitsOfInterest* 매개 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -592,13 +592,13 @@ inline void SetDacl(
 
 ### <a name="parameters"></a>매개 변수
 
-*Dacl*  
+*Dacl*<br/>
 에 대 한 참조를 `CDacl` 보안 설명자의 DACL을 지정 하는 개체입니다. 이 매개 변수가 NULL이 아니어야 합니다. 보안 설명자에는 NULL DACL을 설정 하려면 메서드의 첫 번째 형태는 것 *bPresent* false로 설정 합니다.
 
-*bPresent*  
+*bPresent*<br/>
 보안 설명자의 DACL의 유무를 나타내는 플래그를 지정 합니다. 이 매개 변수가 true 인 경우 메서드 SE_DACL_PRESENT 플래그를 설정 합니다 `SECURITY_DESCRIPTOR_CONTROL` 구조체의 값을 사용 하는 *Dacl* 및 *bDefaulted* 매개 변수. 메서드를 지우고 SE_DACL_PRESENT 플래그를 false 인 경우와 *bDefaulted* 무시 됩니다.
 
-*bDefaulted*  
+*bDefaulted*<br/>
 DACL의 소스를 나타내는 플래그를 지정 합니다. 이 플래그가 true 인 경우 몇 가지 기본 메커니즘을 통해 검색 된 DACL입니다. False 인 경우 사용자가 DACL은 명시적으로 지정 된 했습니다. SE_DACL_DEFAULTED 플래그의에이 값을 저장 하는 메서드는 `SECURITY_DESCRIPTOR_CONTROL` 구조입니다. 이 매개 변수를 지정 하지 않으면 SE_DACL_DEFAULTED 플래그를 지웁니다.
 
 ### <a name="return-value"></a>반환 값
@@ -619,10 +619,10 @@ bool SetGroup(const CSid& Sid, bool bDefaulted = false) throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*sid*  
+*sid*<br/>
 에 대 한 참조를 [CSid](../../atl/reference/csid-class.md) 보안 설명자의 새 기본 그룹에 대 한 개체입니다. 이 매개 변수가 NULL이 아니어야 합니다. 보안 설명자 DACL 또는 SACL에 없는 것으로 표시할 수 있지만 그룹 및 소유자는 이러한도 있어야 합니다 (즉, 특별 한 의미가 있는 기본 제공 SID) NULL SID 됩니다.
 
-*bDefaulted*  
+*bDefaulted*<br/>
 기본 그룹 정보는 기본 메커니즘에서 파생 된 여부를 나타냅니다. 경우이 값은 true, 기본 정보에 SE_GROUP_DEFAULTED 플래그로이 값을 저장 하는 메서드는 `SECURITY_DESCRIPTOR_CONTROL` 구조입니다. 이 매개 변수가 0 이면 SE_GROUP_DEFAULTED 플래그가 지워집니다.
 
 ### <a name="return-value"></a>반환 값
@@ -639,10 +639,10 @@ bool SetOwner(const CSid& Sid, bool bDefaulted = false) throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*sid*  
+*sid*<br/>
 합니다 [CSid](../../atl/reference/csid-class.md) 보안 설명자의 새 기본 소유자에 대 한 개체입니다. 이 매개 변수가 NULL이 아니어야 합니다.
 
-*bDefaulted*  
+*bDefaulted*<br/>
 소유자 정보는 기본 메커니즘에서 파생 되었는지 여부를 나타냅니다. 이 값이 true 인 경우 기본 정보입니다. SE_OWNER_DEFAULTED 플래그로이 값을 저장 하는 메서드는 `SECURITY_DESCRIPTOR_CONTROL` 구조입니다. 이 매개 변수가 0 이면 SE_OWNER_DEFAULTED 플래그가 지워집니다.
 
 ### <a name="return-value"></a>반환 값
@@ -659,10 +659,10 @@ bool SetSacl(const CSacl& Sacl, bool bDefaulted = false) throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*Sacl*  
+*Sacl*<br/>
 에 대 한 포인터는 `CSacl` 보안 설명자의 SACL을 지정 하는 개체입니다. 이 매개 변수는 NULL이 아니어야 하며 CSacl 개체 여야 합니다. Dacl을 달리 차이가 없습니다 NULL 및 빈는 SACL SACL 개체 액세스 권한, 감사만 정보를 지정 하지 않으면으로 합니다.
 
-*bDefaulted*  
+*bDefaulted*<br/>
 SACL의 소스를 나타내는 플래그를 지정 합니다. 이 플래그가 true 이면 SACL 몇 가지 기본 메커니즘을 통해 검색 된 합니다. False 인 경우 사용자가 SACL은 명시적으로 지정 된 했습니다. SE_SACL_DEFAULTED 플래그의에이 값을 저장 하는 메서드는 `SECURITY_DESCRIPTOR_CONTROL` 구조입니다. 이 매개 변수를 지정 하지 않으면 SE_SACL_DEFAULTED 플래그를 지웁니다.
 
 ### <a name="return-value"></a>반환 값
@@ -682,10 +682,10 @@ bool ToString(
 
 ### <a name="parameters"></a>매개 변수
 
-*pstr*  
+*pstr*<br/>
 수신 하는 null로 끝나는 문자열에 대 한 포인터를 [문자열 형식 보안 설명자](/windows/desktop/SecAuthZ/security-descriptor-string-format)합니다.
 
-*si*  
+*si*<br/>
 출력 문자열에 포함 하는 보안 설명자의 구성 요소를 표시 하기 위해 SECURITY_INFORMATION 비트 플래그의 조합을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -713,7 +713,7 @@ DACL가 NULL이 고 SE_DACL_PRESENT 컨트롤 비트가 입력된 보안 설명�
 
 ## <a name="see-also"></a>참고 항목
 
-[보안 샘플](../../visual-cpp-samples.md)   
-[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)   
-[클래스 개요](../../atl/atl-class-overview.md)   
+[보안 샘플](../../visual-cpp-samples.md)<br/>
+[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)<br/>
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [보안 전역 함수](../../atl/reference/security-global-functions.md)

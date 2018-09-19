@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6951d6d56fa0e93e75725c5ce5b13fec7f3d78f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ad39b2a9e3397f97ddc4a900bc45d1983ebbf574
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228877"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085287"
 ---
 # <a name="compiler-error-c2640"></a>컴파일러 오류 C2640
-'identifier': __based 한정자를 참조  
-  
- `__based` 한정자는 포인터에만 사용할 수 있습니다.  
-  
- 다음 샘플에서는 C2640 오류가 생성 됩니다.  
-  
-```  
-// C2640.cpp  
-void f(int i) {  
-    void *vp;  
-    int _based(vp) &vr = I;  // C2640  
-}  
+
+'identifier': __based 한정자를 참조
+
+`__based` 한정자는 포인터에만 사용할 수 있습니다.
+
+다음 샘플에서는 C2640 오류가 생성 됩니다.
+
+```
+// C2640.cpp
+void f(int i) {
+    void *vp;
+    int _based(vp) &vr = I;  // C2640
+}
 ```

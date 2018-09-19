@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 30a0080dd576add0433421bb465d89b2967b9acd
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c8d32094dd8ee55cdd76fc21f51a2f809b1b341d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753125"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46034930"
 ---
 # <a name="catltemporaryfile-class"></a>CAtlTemporaryFile 클래스
 
@@ -136,7 +136,7 @@ HRESULT Close(LPCTSTR szNewName = NULL) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*szNewName*  
+*szNewName*<br/>
 임시 파일의 내용을 저장 하려면 새 파일의 이름입니다. 이 인수가 NULL 인 경우에 임시 파일의 내용이 삭제 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -157,10 +157,10 @@ HRESULT Create(LPCTSTR pszDir = NULL, DWORD dwDesiredAccess = GENERIC_WRITE) thr
 
 ### <a name="parameters"></a>매개 변수
 
-*pszDir*  
+*pszDir*<br/>
 임시 파일의 경로입니다. 이 NULL 이면 [GetTempPath](/windows/desktop/api/fileapi/nf-fileapi-gettemppatha) 경로 할당 하도록 호출 됩니다.
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 원하는 액세스 합니다. 참조 *dwDesiredAccess* 에 [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -201,7 +201,7 @@ HRESULT GetPosition(ULONGLONG& nPos) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nPos*  
+*nPos*<br/>
 바이트 위치입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -222,7 +222,7 @@ HRESULT GetSize(ULONGLONG& nLen) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nLen*  
+*nLen*<br/>
 파일의 바이트 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -271,10 +271,10 @@ HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nPos*  
+*nPos*<br/>
 잠금을 시작 해야 하는 파일의 위치입니다.
 
-*nCount*  
+*nCount*<br/>
 잠글 바이트 범위의 길이입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -289,7 +289,7 @@ HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 
 임시 파일에 대 한 핸들을 반환합니다.
 
-```  
+```
 operator HANDLE() throw();
 ```
 
@@ -306,13 +306,13 @@ HRESULT Read(
 
 ### <a name="parameters"></a>매개 변수
 
-*pBuffer*  
+*pBuffer*<br/>
 파일에서 읽은 데이터를 받을 버퍼에 대 한 포인터입니다.
 
-*nBufSize*  
+*nBufSize*<br/>
 버퍼 크기(바이트)입니다.
 
-*nBytesRead*  
+*nBytesRead*<br/>
 읽은 바이트 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -337,10 +337,10 @@ HRESULT Seek(LONGLONG nOffset, DWORD dwFrom = FILE_CURRENT) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nOffset*  
+*nOffset*<br/>
 오프셋 (바이트)를 제공한 시작 점에서 *dwFrom 합니다.*
 
-*dwFrom*  
+*dwFrom*<br/>
 시작 지점 (FILE_BEGIN, FILE_CURRENT, 또는 FILE_END)입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -365,7 +365,7 @@ HRESULT SetSize(ULONGLONG nNewLen) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nNewLen*  
+*nNewLen*<br/>
 새 길이 (바이트)에서 파일입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -402,10 +402,10 @@ HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nPos*  
+*nPos*<br/>
 잠금 해제를 시작 해야 하는 파일의 위치입니다.
 
-*nCount*  
+*nCount*<br/>
 바이트 범위 잠금이 해제 되도록의 길이입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -421,7 +421,7 @@ HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 파일 포인터에 의해 표시 되는 위치에서 시작 하 여 임시 파일에 데이터를 쓸이 메서드를 호출 합니다.
 
 ```
-HRESULT Write(  
+HRESULT Write(
     LPCVOID pBuffer,
     DWORD nBufSize,
     DWORD* pnBytesWritten = NULL) throw();
@@ -429,13 +429,13 @@ HRESULT Write(
 
 ### <a name="parameters"></a>매개 변수
 
-*pBuffer*  
+*pBuffer*<br/>
 파일에 쓸 데이터가 포함 된 버퍼입니다.
 
-*nBufSize*  
+*nBufSize*<br/>
 버퍼에서 전송할 바이트 수입니다.
 
-*pnBytesWritten*  
+*pnBytesWritten*<br/>
 쓰여진 바이트 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -452,5 +452,5 @@ HRESULT Write(
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 개요](../../atl/atl-class-overview.md)   
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [CAtlFile 클래스](../../atl/reference/catlfile-class.md)

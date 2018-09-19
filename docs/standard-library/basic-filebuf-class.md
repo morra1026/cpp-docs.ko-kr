@@ -50,12 +50,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4594e24ddf88292d311679b64371ac981642bc5d
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ee6c74693987c35f37caf210e604835061cbefd6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222723"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715340"
 ---
 # <a name="basicfilebuf-class"></a>basic_filebuf 클래스
 
@@ -71,10 +71,10 @@ class basic_filebuf : public basic_streambuf<Elem, Tr>
 ### <a name="parameters"></a>매개 변수
 
 *Elem*<br/>
- 파일 버퍼의 기본 요소입니다.
+파일 버퍼의 기본 요소입니다.
 
 *Tr*<br/>
- 파일 버퍼 기본 요소의 특성(일반적으로 `char_traits`< `Elem`>)입니다.
+파일 버퍼 기본 요소의 특성(일반적으로 `char_traits`< `Elem`>)입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -413,13 +413,13 @@ basic_filebuf<Elem, Tr> *open(
 ### <a name="parameters"></a>매개 변수
 
 *_Filename*<br/>
- 열어야 할 파일의 이름입니다.
+열어야 할 파일의 이름입니다.
 
 *모드 (_m)*<br/>
- [ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
+[ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
 *_Prot*<br/>
- 기본 파일 열기 보호 합니다 *shflag* 에 매개 변수 [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)합니다.
+기본 파일 열기 보호 합니다 *shflag* 에 매개 변수 [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -462,7 +462,7 @@ basic_filebuf& operator=(basic_filebuf&& right);
 ### <a name="parameters"></a>매개 변수
 
 *right*<br/>
- [basic_filebuf](../standard-library/basic-filebuf-class.md) 개체에 대한 rvalue 참조입니다.
+[basic_filebuf](../standard-library/basic-filebuf-class.md) 개체에 대한 rvalue 참조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -483,7 +483,7 @@ virtual int_type overflow(int_type _Meta = traits_type::eof);
 ### <a name="parameters"></a>매개 변수
 
 *_Meta*<br/>
- 버퍼에 삽입할 문자 또는 `traits_type::eof`합니다.
+버퍼에 삽입할 문자 또는 `traits_type::eof`합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -510,7 +510,7 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof);
 ### <a name="parameters"></a>매개 변수
 
 *_Meta*<br/>
- 버퍼에 삽입할 문자 또는 `traits_type::eof`입니다.
+버퍼에 삽입할 문자 또는 `traits_type::eof`입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -547,13 +547,13 @@ virtual pos_type seekoff(off_type _Off,
 ### <a name="parameters"></a>매개 변수
 
 *_Off*<br/>
- 위치를 기준으로 찾을 *_Way*합니다.
+위치를 기준으로 찾을 *_Way*합니다.
 
 *_Way*<br/>
- 오프셋 작업의 시작 지점입니다. 가능한 값은 [seekdir](../standard-library/ios-base-class.md#seekdir)을 참조하세요.
+오프셋 작업의 시작 지점입니다. 가능한 값은 [seekdir](../standard-library/ios-base-class.md#seekdir)을 참조하세요.
 
 *_Which*<br/>
- 포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
+포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -578,10 +578,10 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in 
 ### <a name="parameters"></a>매개 변수
 
 *_Sp*<br/>
- 찾을 위치입니다.
+찾을 위치입니다.
 
 *_Which*<br/>
- 포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
+포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -608,10 +608,10 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
 ### <a name="parameters"></a>매개 변수
 
 *_Buffer*<br/>
- 버퍼에 대한 포인터입니다.
+버퍼에 대한 포인터입니다.
 
 *count*<br/>
- 버퍼의 크기입니다.
+버퍼의 크기입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -632,7 +632,7 @@ void swap(basic_filebuf& right);
 ### <a name="parameters"></a>매개 변수
 
 *right*<br/>
- 다른 `basic_filebuf`에 대한 `lvalue` 참조입니다.
+다른 `basic_filebuf`에 대한 `lvalue` 참조입니다.
 
 ## <a name="sync"></a>  basic_filebuf::sync
 

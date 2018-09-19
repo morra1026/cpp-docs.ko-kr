@@ -172,12 +172,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ebae1828d102881d866e05d41f1831e35e01a51
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: e623c0990477c5ee24fb4dcc782a6f243dce3337
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679249"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712174"
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl Class
 Windows의 공용 트리 뷰 컨트롤의 기능을 제공합니다.  
@@ -465,7 +465,7 @@ BOOL EndEditLabelNow(BOOL fCancelWithoutSave);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *fCancelWithoutSave*|트리 뷰 항목 작업을 결정 하기 전에 변경 내용을 저장 하는 FALSE를 편집 작업을 결정 하기 전에 트리 뷰 항목의 변경 내용을 취소 하려면 TRUE입니다.|  
+|*fCancelWithoutSave*|[in] 트리 뷰 항목 작업을 결정 하기 전에 변경 내용을 저장 하는 FALSE를 편집 작업을 결정 하기 전에 트리 뷰 항목의 변경 내용을 취소 하려면 TRUE입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -732,7 +732,7 @@ int GetItemExpandedImageIndex(HTREEITEM hItem)const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *hItem*|트리 뷰 컨트롤 항목에 대 한 핸들입니다.|  
+|*hItem*|[in] 트리 뷰 컨트롤 항목에 대 한 핸들입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  지정된 된 항목이 확장 된 상태일 때 표시할 이미지의 인덱스입니다.  
@@ -798,9 +798,9 @@ BOOL GetItemPartRect(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *hItem*|트리 뷰 컨트롤 항목에 대 한 핸들입니다.|  
-|[in] *nPart*|파트에 대 한 식별자입니다. TVGIPR_BUTTON로 설정 되어야 합니다.|  
-|[out] *lpRect*|에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다. 구조에 지정 된 파트의 사각형 좌표 수신이 메서드가 성공적 이면 *hItem* 하 고 *nPart*합니다.|  
+|*hItem*|[in] 트리 뷰 컨트롤 항목에 대 한 핸들입니다.|  
+|*nPart*|[in] 파트에 대 한 식별자입니다. TVGIPR_BUTTON로 설정 되어야 합니다.|  
+|*lpRect*|[out] 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다. 구조에 지정 된 파트의 사각형 좌표 수신이 메서드가 성공적 이면 *hItem* 하 고 *nPart*합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -879,7 +879,7 @@ UINT GetItemStateEx(HTREEITEM hItem) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *hItem*|트리 뷰 컨트롤 항목에 대 한 핸들입니다.|  
+|*hItem*|[in] 트리 뷰 컨트롤 항목에 대 한 핸들입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  확장 된 상태 항목입니다. 자세한 내용은 참조 하세요. 합니다 `uStateEx` 의 멤버는 [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) 구조입니다.  
@@ -1322,7 +1322,7 @@ HTREEITEM MapAccIdToItem(UINT uAccId) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *uAccId*|트리 뷰 항목의 요소에 대 한 내게 필요한 옵션 식별자입니다.|  
+|*uAccId*|[in] 트리 뷰 항목의 요소에 대 한 내게 필요한 옵션 식별자입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  트리 뷰 항목에 대 한 핸들 ( `HTREEITEM`)에 해당 하는 *uAccId* 매개 변수입니다. 자세한 내용은 참조 하세요. 합니다 *hItem* 의 멤버는 [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) 구조입니다.  
@@ -1353,7 +1353,7 @@ UINT MapItemToAccID(HTREEITEM hItem) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *hItem*|컨트롤의 트리 뷰 항목의 핸들입니다. 자세한 내용은 참조 하세요. 합니다 *hItem* 의 멤버는 [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) 구조입니다.|  
+|*hItem*|[in] 컨트롤의 트리 뷰 항목의 핸들입니다. 자세한 내용은 참조 하세요. 합니다 *hItem* 의 멤버는 [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) 구조입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  내게 필요한 옵션 식별자에 해당 하는 *hItem* 매개 변수입니다.  
@@ -1474,8 +1474,8 @@ BOOL SetAutoscrollInfo(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *uPixelsPerSec*|픽셀 스크롤할 수 있는 초당 횟수입니다.|  
-|[in] *uUpdateTime*|컨트롤의 업데이트 간 시간 간격입니다.|  
+|*uPixelsPerSec*|[in] 픽셀 스크롤할 수 있는 초당 횟수입니다.|  
+|*uUpdateTime*|[in] 컨트롤의 업데이트 간 시간 간격입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  항상 TRUE를 반환 합니다.  
@@ -1555,8 +1555,8 @@ DWORD SetExtendedStyle(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *dwExMask*|이 메서드에 영향을 받는 현재 트리 뷰 컨트롤의 스타일을 지정 하는 비트 마스크입니다. 이 매개 변수가 0 인 경우 무시 됩니다 및의 값을 *dwExStyles* 매개 변수는 트리 뷰 컨트롤에 할당 됩니다.<br /><br /> 0 또는에 설명 된 스타일의 비트 조합 (OR)을 지정 [트리 뷰 컨트롤 확장 스타일](/windows/desktop/Controls/tree-view-control-window-extended-styles)합니다.|  
-|[in] *dwExStyles*|현재 트리 보기에서 어떤 스타일이 컨트롤 설정 하거나 선택을 취소을 지정 하는 비트 마스크입니다.<br /><br /> 스타일의 조합을 설정 하려면에 설명 된 스타일의 비트 조합 (OR)을 지정 [트리 뷰 컨트롤 확장 스타일](/windows/desktop/Controls/tree-view-control-window-extended-styles)합니다. 스타일 집합을 취소 하려면 0을 지정 합니다.|  
+|*dwExMask*|[in] 이 메서드에 영향을 받는 현재 트리 뷰 컨트롤의 스타일을 지정 하는 비트 마스크입니다. 이 매개 변수가 0 인 경우 무시 됩니다 및의 값을 *dwExStyles* 매개 변수는 트리 뷰 컨트롤에 할당 됩니다.<br /><br /> 0 또는에 설명 된 스타일의 비트 조합 (OR)을 지정 [트리 뷰 컨트롤 확장 스타일](/windows/desktop/Controls/tree-view-control-window-extended-styles)합니다.|  
+|*dwExStyles*|[in] 현재 트리 보기에서 어떤 스타일이 컨트롤 설정 하거나 선택을 취소을 지정 하는 비트 마스크입니다.<br /><br /> 스타일의 조합을 설정 하려면에 설명 된 스타일의 비트 조합 (OR)을 지정 [트리 뷰 컨트롤 확장 스타일](/windows/desktop/Controls/tree-view-control-window-extended-styles)합니다. 스타일 집합을 취소 하려면 0을 지정 합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이전 확장 컨트롤 스타일 포함 하는 값입니다.  
@@ -1747,8 +1747,8 @@ BOOL SetItemExpandedImageIndex(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *hItem*|트리 뷰 컨트롤 항목에 대 한 핸들입니다.|  
-|[in] *iExpandedImage*|지정된 된 항목이 확장 된 상태일 때 표시할 이미지의 인덱스입니다.|  
+|*hItem*|[in] 트리 뷰 컨트롤 항목에 대 한 핸들입니다.|  
+|*iExpandedImage*|[in] 지정된 된 항목이 확장 된 상태일 때 표시할 이미지의 인덱스입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1858,8 +1858,8 @@ BOOL SetItemStateEx(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *hItem*|트리 뷰 컨트롤 항목에 대 한 핸들입니다.|  
-|[in] *uStateEx*|확장 된 상태 항목입니다. 자세한 내용은 참조 하세요. 합니다 `uStateEx` 의 멤버는 [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) 구조입니다.|  
+|*hItem*|[in] 트리 뷰 컨트롤 항목에 대 한 핸들입니다.|  
+|*uStateEx*|[in] 확장 된 상태 항목입니다. 자세한 내용은 참조 하세요. 합니다 `uStateEx` 의 멤버는 [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) 구조입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1984,7 +1984,7 @@ void ShowInfoTip(HTREEITEM hItem);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *hItem*|컨트롤의 트리 뷰 항목에 대 한 핸들입니다. 자세한 내용은 참조 하세요. 합니다 `hItem` 의 멤버는 [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) 구조입니다.|  
+|*hItem*|[in] 컨트롤의 트리 뷰 항목에 대 한 핸들입니다. 자세한 내용은 참조 하세요. 합니다 `hItem` 의 멤버는 [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) 구조입니다.|  
   
 ### <a name="remarks"></a>설명  
  도구 설명 및 정보 팁의 차이점에 대 한 자세한 내용은 "도구 설명 및 정보 팁" 항목에 대 한 검색 [Microsoft Developer Network](http://go.microsoft.com/fwlink/p/?linkid=56322)합니다.  

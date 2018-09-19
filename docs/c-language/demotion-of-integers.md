@@ -14,33 +14,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d380fd36cc71b6d188bbbfe8e51ce3185405611
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 49177e7df11c0c7c4d7fefb201035ce12c5242af
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381722"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087528"
 ---
 # <a name="demotion-of-integers"></a>정수 강등
-**ANSI 3.2.1.2** 정수를 더 짧은 부호 있는 정수로 변환한 결과 또는 값을 표현할 수 없는 경우 부호 없는 정수를 같은 길이의 부호 있는 정수로 변환한 결과  
-  
- **long** 정수를 **a short**로 캐스팅하거나 **short**를 `char`로 캐스팅할 때는 가장 덜 중요한 바이트가 보존됩니다.  
-  
- 예를 들어, 다음 줄은  
-  
-```  
-short x = (short)0x12345678L;  
-```  
-  
- 0x5678 값을 `x`에 할당하고 다음 줄은  
-  
-```  
-char y = (char)0x1234;  
-```  
-  
- 0x34 값을 `y`에 할당합니다.  
-  
- 부호 있는 변수가 부호 없는 변수로 변환되거나 그 반대의 경우 비트 패턴이 동일하게 유지됩니다. 예를 들어, -2(0xFE)를 부호 없는 값으로 캐스팅하면 254(0xFE)가 생성됩니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [정수](../c-language/integers.md)
+
+**ANSI 3.2.1.2** 정수를 더 짧은 부호 있는 정수로 변환한 결과 또는 값을 표현할 수 없는 경우 부호 없는 정수를 같은 길이의 부호 있는 정수로 변환한 결과
+
+**long** 정수를 **a short**로 캐스팅하거나 **short**를 `char`로 캐스팅할 때는 가장 덜 중요한 바이트가 보존됩니다.
+
+예를 들어, 다음 줄은
+
+```
+short x = (short)0x12345678L;
+```
+
+0x5678 값을 `x`에 할당하고 다음 줄은
+
+```
+char y = (char)0x1234;
+```
+
+0x34 값을 `y`에 할당합니다.
+
+부호 있는 변수가 부호 없는 변수로 변환되거나 그 반대의 경우 비트 패턴이 동일하게 유지됩니다. 예를 들어, -2(0xFE)를 부호 없는 값으로 캐스팅하면 254(0xFE)가 생성됩니다.
+
+## <a name="see-also"></a>참고 항목
+
+[정수](../c-language/integers.md)

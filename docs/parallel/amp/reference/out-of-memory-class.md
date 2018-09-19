@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ab3285e0b37b8af93803a1a2752e25b6d91ab2f
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: b57e27647f61b551f8ea5c2770290e1ae9627014
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695297"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070927"
 ---
 # <a name="outofmemory-class"></a>out_of_memory 클래스
-메서드가 시스템이 나 장치 메모리 부족으로 인해 실패할 경우 throw 되는 예외입니다.  
+장치 또는 시스템 메모리 부족으로 인해 메서드가 실패할 때 throw 되는 예외입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -67,8 +67,8 @@ out_of_memory () throw();
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Message`  
- 오류에 대한 설명입니다.  
+*메시지 (_m)*<br/>
+오류에 대한 설명입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `out_of_memory` 클래스의 새 인스턴스입니다.  

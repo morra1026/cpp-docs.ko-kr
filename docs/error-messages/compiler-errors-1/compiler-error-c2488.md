@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7cb64ea76ae38901b2db14ec4b68bba9db69f39c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4f1bf2710acdc2a738b36ca9426ce55da9f6d769
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225295"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044343"
 ---
 # <a name="compiler-error-c2488"></a>컴파일러 오류 C2488
-'identifier': 'naked' 수에 적용할 비멤버 함수 정의  
-  
- [naked](../../cpp/naked-cpp.md) 특성이 있는 함수 선언에 적용 되었습니다.  
-  
- 다음 샘플에서는 C2488 오류가 생성 됩니다.  
-  
-```  
-// C2488.cpp  
-// compile with: /c  
-// processor: x86  
-__declspec( naked ) void func();   // C2488  declaration, not definition  
-__declspec( naked ) void i;   // C2488  i is not a function  
-  
-__declspec( naked ) void func() {}   // OK  
+
+'identifier': 'naked'만 적용할 수 있습니다 비멤버 함수 정의
+
+합니다 [naked](../../cpp/naked-cpp.md) 함수 선언에 특성이 적용 되었습니다.
+
+다음 샘플에서는 C2488 오류가 생성 됩니다.
+
+```
+// C2488.cpp
+// compile with: /c
+// processor: x86
+__declspec( naked ) void func();   // C2488  declaration, not definition
+__declspec( naked ) void i;   // C2488  i is not a function
+
+__declspec( naked ) void func() {}   // OK
 ```

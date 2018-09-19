@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc8ed68cad5ba6aa56a4040c62da4570981534d9
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 5895f8e4efd56ddcc9ab16a91a6242db443f0821
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42539129"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722919"
 ---
 # <a name="inword"></a>__inword
 **Microsoft 전용**  
@@ -39,8 +39,8 @@ unsigned short __inword(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `Port`  
- 포트에서 읽기입니다.  
+*포트*<br/>
+[in] 포트에서 읽기입니다.  
   
 ## <a name="return-value"></a>반환 값  
  읽은 데이터의 단어입니다.  

@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af875ece2414608f9c27de32a2ce130e1ac4315d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f9b2ad0cc6bda9f46e3cf0a65de9e41b1808ac1f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33272479"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098801"
 ---
 # <a name="compiler-error-c3913"></a>컴파일러 오류 C3913
-기본 속성은 인덱싱되어 야 합니다.  
-  
- 기본 속성이 잘못 정의 되었습니다.  
-  
- 자세한 내용은 [property](../../windows/property-cpp-component-extensions.md)을 참조하세요.  
-  
- 다음 샘플에서는 C3913 오류가 생성 됩니다.  
-  
-```  
-// C3913.cpp  
-// compile with: /clr /c  
-ref struct X {  
-   property int default {   // C3913  
-   // try the following line instead  
-   // property int default[int] {  
-      int get(int) { return 0; }  
-      void set(int, int) {}  
-   }  
-};  
+
+기본 속성 인덱싱되어 야 합니다.
+
+기본 속성을 잘못 정의 되었습니다.
+
+자세한 내용은 [property](../../windows/property-cpp-component-extensions.md)을 참조하세요.
+
+다음 샘플에서는 C3913 오류가 생성 됩니다.
+
+```
+// C3913.cpp
+// compile with: /clr /c
+ref struct X {
+   property int default {   // C3913
+   // try the following line instead
+   // property int default[int] {
+      int get(int) { return 0; }
+      void set(int, int) {}
+   }
+};
 ```

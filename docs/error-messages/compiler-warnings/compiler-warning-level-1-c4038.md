@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 215486cb1db0c56a458571abe3a528b65db799df
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8663c0a222ff9a20bca04a497dcdd6ceb1d99d06
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33271949"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067820"
 ---
 # <a name="compiler-warning-level-1-c4038"></a>컴파일러 경고(수준 1) C4038
-'modifier': 클래스 한정자가 모호합니다.  
-  
- 이 한정자는 **dllimport** 또는 [dllexport](../../cpp/dllexport-dllimport.md) 특성을 사용하여 클래스에 대해 사용할 수 없습니다.
+
+'modifier': 클래스 한정자가 모호합니다.
+
+이 한정자는 **dllimport** 또는 [dllexport](../../cpp/dllexport-dllimport.md) 특성을 사용하여 클래스에 대해 사용할 수 없습니다.

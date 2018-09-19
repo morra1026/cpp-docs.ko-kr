@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c9a0d9fb3808af9ed05454b5b07d471303abc654
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5056c4bbca66b47ca991daf4c65485e80e43e0db
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33282885"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073033"
 ---
 # <a name="compiler-warning-level-1-c4075"></a>컴파일러 경고(수준 1) C4075
-이니셜라이저가 인식할 수 없는 초기화 영역에 있습니다.  
-  
- [#pragma init_seg](../../preprocessor/init-seg.md) 에서는 인식할 수 없는 섹션 이름을 사용합니다. 컴파일러는 **pragma** 명령을 무시합니다.  
-  
- 다음 샘플에서는 C4075를 생성합니다.  
-  
-```  
-// C4075.cpp  
-// compile with: /W1  
-#pragma init_seg("mysegg")   // C4075  
-  
-// try..  
-// #pragma init_seg(user)  
-  
-int main() {  
-}  
+
+이니셜라이저가 인식할 수 없는 초기화 영역에 있습니다.
+
+[#pragma init_seg](../../preprocessor/init-seg.md) 에서는 인식할 수 없는 섹션 이름을 사용합니다. 컴파일러는 **pragma** 명령을 무시합니다.
+
+다음 샘플에서는 C4075를 생성합니다.
+
+```
+// C4075.cpp
+// compile with: /W1
+#pragma init_seg("mysegg")   // C4075
+
+// try..
+// #pragma init_seg(user)
+
+int main() {
+}
 ```

@@ -29,38 +29,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 854873987cd83b89efc5c9006c1e091023c91226
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 22d4c6da3b897d0158f790a0146e3f10f7aa385c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389064"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093126"
 ---
 # <a name="setapptype"></a>__set_app_type
-현재 응용 프로그램 형식을 설정합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-void __set_app_type (  
-   int at  
-   )  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
- `at`  
- 응용 프로그램 형식을 나타내는 값입니다. 가능한 값은 다음과 같습니다.  
-  
-|값|설명|  
-|-----------|-----------------|  
-|_UNKNOWN_APP|알 수 없는 응용 프로그램 형식입니다.|  
-|_CONSOLE_APP|콘솔(명령줄) 응용 프로그램입니다.|  
-|_GUI_APP|GUI(Windows) 응용 프로그램입니다.|  
-  
-## <a name="remarks"></a>설명  
-  
-## <a name="requirements"></a>요구 사항  
-  
-|루틴에서 반환된 값|필수 헤더|  
-|-------------|---------------------|  
+
+현재 응용 프로그램 형식을 설정합니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+void __set_app_type (
+   int at
+   )
+```
+
+#### <a name="parameters"></a>매개 변수
+
+*at*<br/>
+응용 프로그램 형식을 나타내는 값입니다. 가능한 값은 다음과 같습니다.
+
+|값|설명|
+|-----------|-----------------|
+|_UNKNOWN_APP|알 수 없는 응용 프로그램 형식입니다.|
+|_CONSOLE_APP|콘솔(명령줄) 응용 프로그램입니다.|
+|_GUI_APP|GUI(Windows) 응용 프로그램입니다.|
+
+## <a name="remarks"></a>설명
+
+## <a name="requirements"></a>요구 사항
+
+|루틴에서 반환된 값|필수 헤더|
+|-------------|---------------------|
 |__set_app_type|internal.h|

@@ -16,39 +16,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c5b2c86b91160eb7ae342b39ea6a63ffad364bb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f6a04de132c85cb09a960d3a0edfcb3b07127119
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33250645"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054579"
 ---
 # <a name="compiler-error-c3412"></a>컴파일러 오류 C3412
-'template': 현재 범위에서 템플릿을 특수화할 수 없습니다.  
-  
- 전역에 클래스 범위 또는 네임 스페이스 범위에서 템플릿을 특수화할 수 없습니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3412 오류가 발생 합니다.  
-  
-```  
-// C3412.cpp  
-template <class T>  
-struct S {  
-   template <>  
-   struct S<int> {};   // C3412 in a class  
-};  
-```  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 가능한 해결 방법을 보여 줍니다.  
-  
-```  
-// C3412b.cpp  
-// compile with: /c  
-template <class T>  
-struct S {};  
-  
-template <>  
-struct S<int> {};  
+
+'template': 현재 범위에서 템플릿을 특수화할 수 없습니다.
+
+전역에 클래스 범위 또는 네임 스페이스 범위에서 템플릿을 특수화할 수 없습니다.
+
+## <a name="example"></a>예제
+
+다음 샘플 C3412를 생성합니다.
+
+```
+// C3412.cpp
+template <class T>
+struct S {
+   template <>
+   struct S<int> {};   // C3412 in a class
+};
+```
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 가능한 해결 방법을 보여 줍니다.
+
+```
+// C3412b.cpp
+// compile with: /c
+template <class T>
+struct S {};
+
+template <>
+struct S<int> {};
 ```

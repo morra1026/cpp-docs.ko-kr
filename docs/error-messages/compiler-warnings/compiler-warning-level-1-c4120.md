@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2bc584463a915f6c437b987f4fb38fba55017002
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b6810528503772643138042ce742653643272731
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33271716"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033370"
 ---
 # <a name="compiler-warning-level-1-c4120"></a>컴파일러 경고(수준 1) C4120
-based 또는 unbased가 일치하지 않습니다.  
-  
- 한 포인터는 based이고 다른 포인터는 based가 아니므로 컴파일러에서 두 포인터 간에 변환할 수 없습니다.
+
+based 또는 unbased가 일치하지 않습니다.
+
+한 포인터는 based이고 다른 포인터는 based가 아니므로 컴파일러에서 두 포인터 간에 변환할 수 없습니다.

@@ -40,12 +40,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 546006fcf1c559317b4afff424976db8109442e7
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 368f32de049aa7bed83a9bb80e650ef212d07778
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39404754"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052168"
 ---
 # <a name="acosh-acoshf-acoshl"></a>acosh, acoshf, acoshl
 
@@ -66,7 +66,7 @@ long double acosh( long double x );  // C++ only
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 부동 소수점 값입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -90,7 +90,7 @@ C + +를 사용 하는 경우의 오버 로드를 호출할 수 있습니다 **a
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```C
 // crt_acosh.c
@@ -120,9 +120,9 @@ acosh( 1.324609 ) = 0.785398
 
 ## <a name="see-also"></a>참고자료
 
-[부동 소수점 지원](../../c-runtime-library/floating-point-support.md)  
-[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)  
-[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)  
-[cosh, coshf, coshl](cosh-coshf-coshl.md)  
-[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)  
-[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)  
+[부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
+[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
+[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
+[cosh, coshf, coshl](cosh-coshf-coshl.md)<br/>
+[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
+[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)

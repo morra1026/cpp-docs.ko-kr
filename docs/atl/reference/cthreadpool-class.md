@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9753599f08d1e8ee238097027c501a0b56e40300
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9a5541613bddd1e6a4fbac3a5555e54ce30fb94c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757396"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091701"
 ---
 # <a name="cthreadpool-class"></a>CThreadPool 클래스
 
@@ -44,16 +44,16 @@ ms.locfileid: "43757396"
 ## <a name="syntax"></a>구문
 
 ```
-template <class Worker, class ThreadTraits = DefaultThreadTraits>  
+template <class Worker, class ThreadTraits = DefaultThreadTraits>
 class CThreadPool : public IThreadPoolConfig
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*작업자*  
+*작업자*<br/>
 따르는 클래스를 [worker 원형](../../atl/reference/worker-archetype.md) 항목 스레드 풀의 큐에 대기 하는 작업을 처리 하는 데 사용 되는 코드를 제공 합니다.
 
-*ThreadTraits*  
+*ThreadTraits*<br/>
 풀에서 스레드를 만드는 데 함수를 제공 하는 클래스입니다.
 
 ## <a name="members"></a>멤버
@@ -180,7 +180,7 @@ HRESULT STDMETHODCALLTYPE GetSize(int* pnNumThreads) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pnNumThreads*  
+*pnNumThreads*<br/>
 [out] 성공 하면 풀의 스레드 수를 수신 하는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -197,7 +197,7 @@ HRESULT STDMETHODCALLTYPE GetTimeout(DWORD* pdwMaxWait) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pdwMaxWait*  
+*pdwMaxWait*<br/>
 [out] 성공 하면 스레드 풀 스레드 종료를 대기할 시간 (밀리초)에는 최대 시간을 수신 하는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -222,20 +222,20 @@ HRESULT Initialize(
 
 ### <a name="parameters"></a>매개 변수
 
-*pvWorkerParam*  
+*pvWorkerParam*<br/>
 작업자 매개 변수는 작업자 스레드 개체에 전달할 `Initialize`, `Execute`, 및 `Terminate` 메서드.
 
-*nNumThreads*  
+*nNumThreads*<br/>
 스레드 풀의 요청된 수입니다.
 
 하는 경우 *nNumThreads* 가 음수 이면 절대 값에 곱합니다 스레드의 총 개수를 가져올 컴퓨터의 프로세서 수입니다.
 
 하는 경우 *nNumThreads* 가 0 이면 ATLS_DEFAULT_THREADSPERPROC 스레드의 총 개수를 가져올 컴퓨터의 프로세서 수를 곱한 수 됩니다.  기본값은 프로세서당 2 스레드입니다. 필요한 경우와 atlutil.h 포함 하기 전에이 기호에 대 한 고유한 양의 정수 값을 정의할 수 있습니다.
 
-*dwStackSize*  
+*dwStackSize*<br/>
 풀의 각 스레드의 스택 크기입니다.
 
-*hCompletion*  
+*hCompletion*<br/>
 완료 포트를 사용 하 여 연결할 개체의 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -264,7 +264,7 @@ BOOL QueueRequest(Worker::RequestType request) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*요청*  
+*요청*<br/>
 요청 큐에 대기할 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -301,7 +301,7 @@ HRESULT STDMETHODCALLTYPE SetSizeint nNumThreads) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nNumThreads*  
+*nNumThreads*<br/>
 스레드 풀의 요청된 수입니다.
 
 하는 경우 *nNumThreads* 가 음수 이면 절대 값에 곱합니다 스레드의 총 개수를 가져올 컴퓨터의 프로세서 수입니다.
@@ -326,7 +326,7 @@ HRESULT STDMETHODCALLTYPE SetTimeout(DWORD dwMaxWait) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dwMaxWait*  
+*dwMaxWait*<br/>
 스레드 풀 스레드 종료를 대기할 시간 (밀리초) 요청 된 최대 시간입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -349,7 +349,7 @@ void Shutdown(DWORD dwMaxWait = 0) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dwMaxWait*  
+*dwMaxWait*<br/>
 스레드 풀 스레드 종료를 대기할 시간 (밀리초) 요청 된 최대 시간입니다. 이 메서드가 설정한 제한 시간을 사용할지 0 또는 값이 없는 경우 [CThreadPool::SetTimeout](#settimeout)합니다.
 
 ### <a name="remarks"></a>설명
@@ -358,6 +358,6 @@ void Shutdown(DWORD dwMaxWait = 0) throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[IThreadPoolConfig 인터페이스](../../atl/reference/ithreadpoolconfig-interface.md)   
-[DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)   
+[IThreadPoolConfig 인터페이스](../../atl/reference/ithreadpoolconfig-interface.md)<br/>
+[DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)<br/>
 [클래스](../../atl/reference/atl-classes.md)

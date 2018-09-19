@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 10acf2b69eaa6b49145e671d437f18dfaff8e499
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d89fef6c2ed3f8ff1a4211cdf8da59d8406e7031
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43195792"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715405"
 ---
 # <a name="dbcolumn"></a>db_column
 
@@ -51,20 +51,20 @@ ms.locfileid: "43195792"
 [db_column(L"city_name")] TCHAR szCity[30];
 ```
 
-*dbtype* (선택 사항)  
-OLE DB [유형 표시기](/previous-versions/windows/desktop/ms711251\(v=vs.85\)) 열 항목에 대 한 합니다.
+*dbtype*  
+(선택 사항) OLE DB [유형 표시기](/previous-versions/windows/desktop/ms711251\(v=vs.85\)) 열 항목에 대 한 합니다.
 
-*전체 자릿수* (선택 사항)  
-열 항목에 사용할 전체 자릿수입니다. 자세한 내용은 설명을 참조는 `bPrecision` 의 요소는 [DBBINDING 구조](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
+*precision*  
+(선택 사항) 열 항목에 사용할 전체 자릿수입니다. 자세한 내용은 설명을 참조는 `bPrecision` 의 요소는 [DBBINDING 구조](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
 
-*확장* (선택 사항)  
-열 항목에 사용할 소수 자릿수입니다. 세부 정보에 대 한 설명을 참조 하세요 `bScale` 의 요소는 [DBBINDING 구조](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
+*크기 조정*  
+(선택 사항) 열 항목에 사용할 소수 자릿수입니다. 세부 정보에 대 한 설명을 참조 하세요 `bScale` 의 요소는 [DBBINDING 구조](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
 
-*상태* (선택 사항)  
-이 칼럼의 상태를 저장 하는 데 사용 되는 멤버 변수입니다. 상태는 데이터 값 또는 NULL 등의 다른 값 열 값이 있는지 여부를 나타냅니다. 가능한 값을 참조 하세요 [상태](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.
+*status*  
+(선택 사항) 이 칼럼의 상태를 저장 하는 데 사용 되는 멤버 변수입니다. 상태는 데이터 값 또는 NULL 등의 다른 값 열 값이 있는지 여부를 나타냅니다. 가능한 값을 참조 하세요 [상태](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.
 
-*길이* (선택 사항)  
-멤버 변수 (바이트)에서 열의 크기를 보유 하는 데 사용 합니다.
+*length*  
+(선택 사항) 멤버 변수 (바이트)에서 열의 크기를 보유 하는 데 사용 합니다.
 
 ## <a name="remarks"></a>설명
 

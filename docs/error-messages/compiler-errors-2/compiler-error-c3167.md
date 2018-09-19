@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc98f3f66041b86dcc93459132e3431e271bde5e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3b1b242b0e98e0309e2a98ca2c8e59ecaeff8b7a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247979"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024192"
 ---
 # <a name="compiler-error-c3167"></a>컴파일러 오류 C3167
-.NET Framework를 초기화할 수 없습니다: 설치 되어 있는지 확인  
-  
- .NET Framework가이 컴퓨터에 설치 되지 않습니다. .NET Framework를 설치 합니다.
+
+.NET Framework를 초기화할 수 없습니다: 설치 되어 있는지 확인
+
+.NET Framework가이 컴퓨터에 설치 되어 있지 .NET Framework를 설치 합니다.

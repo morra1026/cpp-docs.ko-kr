@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45b9b5bb5beae8599c360d35df878a38b591b1b4
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: afd9c9e8069d6140b66a38f4686f562533dd5c21
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761019"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722711"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog 클래스
 파일 열기 또는 저장 작업 파일에 사용 되는 일반 대화 상자를 캡슐화 합니다.  
@@ -522,29 +522,29 @@ explicit CFileDialog(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bOpenFileDialog*  
- 대화 상자를 만들의 형식을 지정 하는 매개 변수입니다. 생성 하려면 TRUE로 설정 된 **파일 열기** 대화 상자. 생성 하려면 FALSE로 설정 된 **다른 이름으로 저장** 대화 상자.  
+*bOpenFileDialog*<br/>
+[in] 대화 상자를 만들의 형식을 지정 하는 매개 변수입니다. 생성 하려면 TRUE로 설정 된 **파일 열기** 대화 상자. 생성 하려면 FALSE로 설정 된 **다른 이름으로 저장** 대화 상자.  
   
- [in] *lpszDefExt*  
- 기본 파일 이름 확장명입니다. 확장에서 지정한 파일 이름 상자에 사용자 (사용자의 컴퓨터에는 연결이 하나) 알려진된 확장명이 포함 되어 있지 않으면, *lpszDefExt* 파일 이름에 자동으로 추가 됩니다. 이 매개 변수가 NULL 인 경우에 확장명이 추가 됩니다.  
+*lpszDefExt*<br/>
+[in] 기본 파일 이름 확장명입니다. 확장에서 지정한 파일 이름 상자에 사용자 (사용자의 컴퓨터에는 연결이 하나) 알려진된 확장명이 포함 되어 있지 않으면, *lpszDefExt* 파일 이름에 자동으로 추가 됩니다. 이 매개 변수가 NULL 인 경우에 확장명이 추가 됩니다.  
   
- [in] *lpszFileName*  
- 파일 이름 상자에 표시 되는 초기 파일 이름입니다. NULL 인 경우에 초기 파일 이름 없이 표시 됩니다.  
+*lpszFileName*<br/>
+[in] 파일 이름 상자에 표시 되는 초기 파일 이름입니다. NULL 인 경우에 초기 파일 이름 없이 표시 됩니다.  
   
- [in] *dwFlags*  
- 사용자 지정 대화 상자를 사용할 수 있는 하나 이상의 플래그의 조합입니다. 이러한 플래그에 대 한 참조를 [OPENFILENAME](/windows/desktop/api/commdlg/ns-commdlg-tagofna) Windows SDK에는 구조입니다. 수정 하는 경우는 `m_ofn.Flags` 멤버 구조에 변경 내용을 비트 OR 연산자를 사용 하 여 기본 동작을 그대로 유지 합니다.  
+*dwFlags*<br/>
+[in] 사용자 지정 대화 상자를 사용할 수 있는 하나 이상의 플래그의 조합입니다. 이러한 플래그에 대 한 참조를 [OPENFILENAME](/windows/desktop/api/commdlg/ns-commdlg-tagofna) Windows SDK에는 구조입니다. 수정 하는 경우는 `m_ofn.Flags` 멤버 구조에 변경 내용을 비트 OR 연산자를 사용 하 여 기본 동작을 그대로 유지 합니다.  
   
- [in] *lpszFilter*  
- 일련의 필터를 지정 하는 문자열 쌍 파일에 적용할 수 있습니다. 파일 필터를 지정 하는 경우 필터 조건과 일치 하는 파일만 파일 목록에 표시 됩니다. 파일 필터를 사용 하는 방법에 대 한 자세한 내용은 설명 섹션을 참조 하세요.  
+*lpszFilter*<br/>
+[in] 일련의 필터를 지정 하는 문자열 쌍 파일에 적용할 수 있습니다. 파일 필터를 지정 하는 경우 필터 조건과 일치 하는 파일만 파일 목록에 표시 됩니다. 파일 필터를 사용 하는 방법에 대 한 자세한 내용은 설명 섹션을 참조 하세요.  
   
- [in] *pParentWnd*  
- 파일 대화 상자의 부모 또는 소유자 창에 대 한 포인터입니다.  
+*pParentWnd*<br/>
+[in] 파일 대화 상자의 부모 또는 소유자 창에 대 한 포인터입니다.  
   
- [in] *dwSize*  
- 크기는 `OPENFILENAME` 구조입니다. 이 값은 운영 체제 버전에 따라 달라 집니다. MFC 대화 상자를 만들 적합 한 유형의 확인 하려면이 매개 변수를 사용 합니다. MFC 코드를 사용 하 여 해당 대화 상자 크기를 결정 하는 0으로의 기본 크기는 프로그램이 실행 되는 운영 체제 버전을 기반으로 합니다.  
+*dwSize*<br/>
+[in] 크기는 `OPENFILENAME` 구조입니다. 이 값은 운영 체제 버전에 따라 달라 집니다. MFC 대화 상자를 만들 적합 한 유형의 확인 하려면이 매개 변수를 사용 합니다. MFC 코드를 사용 하 여 해당 대화 상자 크기를 결정 하는 0으로의 기본 크기는 프로그램이 실행 되는 운영 체제 버전을 기반으로 합니다.  
   
- [in] *bVistaStyle*  
- **참고** 이 매개 변수는 Visual Studio 2008에서 제공 되며 이후 이며는 Windows Vista 이상에서 실행 하는 경우에 사용 하는 새 스타일 대화 상자의 발생 합니다.  
+*bVistaStyle*<br/>
+[in] **참고** 이 매개 변수는 Visual Studio 2008에서 제공 되며 이후 이며는 Windows Vista 이상에서 실행 하는 경우에 사용 하는 새 스타일 대화 상자의 발생 합니다.  
   
  파일 대화 상자의 스타일을 지정 하는 매개 변수입니다. true로 설정 된 새 Vista 스타일을 사용 하 여 파일 대화 상자. 그렇지 않은 경우 이전 스타일 대화 상자 사용 됩니다. Vista에서 실행에 대 한 자세한 내용은 설명 섹션을 참조 합니다.  
   
@@ -1346,11 +1346,11 @@ void SetControlText(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 텍스트를 설정 하는 컨트롤의 ID입니다.  
+*nID*<br/>
+[in] 텍스트를 설정 하는 컨트롤의 ID입니다.  
   
- [in] *lpsz*  
- 컨트롤에 대해 설정할 텍스트를 포함 하는 문자열에 대 한 포인터입니다.  
+*lpsz*<br/>
+[in] 컨트롤에 대해 설정할 텍스트를 포함 하는 문자열에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  이 함수의 두 버전 모두 유니코드를 사용 하는 응용 프로그램에 적합 합니다. 그러나 LPCSTR 유형 사용 하 여 버전만 ANSI를 사용 하는 응용 프로그램에 유효 합니다.  
@@ -1435,17 +1435,17 @@ void SetTemplate(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nWin3ID*  
- 비-탐색기에 대 한 템플릿 리소스의 ID 번호를 포함 `CFileDialog` 개체입니다. 이 템플릿은 Windows NT 3.51 또는 OFN_EXPLORER 스타일 없을 경우에 사용 됩니다.  
+*nWin3ID*<br/>
+[in] 비-탐색기에 대 한 템플릿 리소스의 ID 번호를 포함 `CFileDialog` 개체입니다. 이 템플릿은 Windows NT 3.51 또는 OFN_EXPLORER 스타일 없을 경우에 사용 됩니다.  
   
- [in] *nWin4ID*  
- 탐색기에 대 한 템플릿 리소스의 ID 번호를 포함 `CFileDialog` 개체입니다. 이 템플릿은 OFN_EXPLORER 스타일에 있는 경우 또는 Windows NT 4.0, 버전, Windows 95 및 이상 버전 에서만 사용 됩니다.  
+*nWin4ID*<br/>
+[in] 탐색기에 대 한 템플릿 리소스의 ID 번호를 포함 `CFileDialog` 개체입니다. 이 템플릿은 OFN_EXPLORER 스타일에 있는 경우 또는 Windows NT 4.0, 버전, Windows 95 및 이상 버전 에서만 사용 됩니다.  
   
- [in] *lpWin3ID*  
- 비-탐색기에 대 한 템플릿 리소스의 이름을 포함 `CFileDialog` 개체입니다. 이 템플릿은 Windows NT 3.51 또는 OFN_EXPLORER 스타일 없을 경우에 사용 됩니다.  
+*lpWin3ID*<br/>
+[in] 비-탐색기에 대 한 템플릿 리소스의 이름을 포함 `CFileDialog` 개체입니다. 이 템플릿은 Windows NT 3.51 또는 OFN_EXPLORER 스타일 없을 경우에 사용 됩니다.  
   
- [in] *lpWin4ID*  
- 탐색기의 템플릿 리소스의 이름을 포함 `CFileDialog` 개체입니다. 이 템플릿은 OFN_EXPLORER 스타일에 있는 경우 또는 Windows NT 4.0, 버전, Windows 95 및 이상 버전 에서만 사용 됩니다.  
+*lpWin4ID*<br/>
+[in] 탐색기의 템플릿 리소스의 이름을 포함 `CFileDialog` 개체입니다. 이 템플릿은 OFN_EXPLORER 스타일에 있는 경우 또는 Windows NT 4.0, 버전, Windows 95 및 이상 버전 에서만 사용 됩니다.  
   
 ### <a name="remarks"></a>설명  
  지정 된 템플릿 중 하나에 사용 됩니다. 시스템은 OFN_EXPLORER 스타일 및 응용 프로그램에서 실행 되는 운영 체제의 존재를 기준으로 사용할 템플릿을 결정 합니다. 비 탐색기 및 템플릿 탐색기 스타일을 지정 하 여 Windows NT 3.51, Windows NT 4.0 및 이상 버전 및 Windows 95 및 이상 버전을 지원 하기 쉽습니다.  

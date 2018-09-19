@@ -58,12 +58,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad99ccf1f037d16bcff57f9a643f2332f36e7d7a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b2b1ee8e1beb6022d6a940e7036d9673e3844f35
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220436"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726728"
 ---
 # <a name="cmfctoolbardatetimectrl-class"></a>CMFCToolBarDateTimeCtrl 클래스
 날짜 및 시간 선택 컨트롤을 포함 하는 도구 모음 단추입니다.  
@@ -155,17 +155,17 @@ CMFCToolBarDateTimeCtrl(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiID*  
- 컨트롤 id입니다.  
+*uiID*<br/>
+[in] 컨트롤 id입니다.  
   
- [in] *iImage*  
- 도구 모음 이미지의 인덱스 `CMFCToolBarImages` 개체입니다.  
+*iImage*<br/>
+[in] 도구 모음 이미지의 인덱스 `CMFCToolBarImages` 개체입니다.  
   
- [in] *dwStyle*  
- 스타일을 `CMFCToolBarDateTimeCtrlImpl` 단추를 클릭할 때 생성 되는 창입니다.  
+*dwStyle*<br/>
+[in] 스타일을 `CMFCToolBarDateTimeCtrlImpl` 단추를 클릭할 때 생성 되는 창입니다.  
   
- [in] *iWidth*  
- 컨트롤의 너비(픽셀)입니다.  
+*iWidth*<br/>
+[in] 픽셀 단위의 컨트롤의 너비입니다.  
   
 ### <a name="remarks"></a>설명  
  이 개체는 시스템 날짜 및 시간으로 초기화 됩니다. 내부 창 스타일 `CMFCToolBarDateTimeCtrlImpl` 개체를 포함 합니다 *dwStyle* 매개 변수 및 WS_CHILD 및 WS_VISIBLE 스타일입니다. 사용 하 여 이러한 스타일을 변경할 수 없습니다 `CMFCToolBarDateTimeCtrl::SetStyle`합니다. 사용 하 여 `SetStyle` 의 스타일을 변경 하는 `CMFCToolBarDateTimeCtrl` 제어 합니다.  
@@ -183,8 +183,8 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *src*  
- 복사할 소스 단추에 대 한 참조입니다.  
+*src*<br/>
+[in] 복사할 소스 단추에 대 한 참조입니다.  
   
 ### <a name="remarks"></a>설명  
  이 도구 모음 단추를 도구 모음 단추 복사 하려면이 메서드를 호출 합니다. *src* 형식 이어야 합니다 `CMFCToolBarDateTimeCtrl`합니다.  
@@ -197,8 +197,8 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *menuButton*  
- 대상 메뉴 단추에 대 한 참조입니다.  
+*MenuButton*<br/>
+[in] 대상 메뉴 단추에 대 한 참조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 TRUE를 반환합니다.  
@@ -214,8 +214,8 @@ static CMFCToolBarDateTimeCtrl* __stdcall GetByCmd(UINT uiCmd);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmd*  
- 검색할 단추의 명령 ID입니다.  
+*uiCmd*<br/>
+[in] 검색할 단추의 명령 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
  첫 번째 `CMFCToolBarDateTimeCtrl` 개체가 없으면 NULL을 지정 된 명령 ID를 가진 응용 프로그램에서 `CMFCToolBarDateTimeCtrl` 개체에 지정 된 명령 id입니다.  
@@ -259,11 +259,11 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *timeDest*  
- 첫 번째 오버 로드에는 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 시스템 시간 정보를 받게 될 개체입니다. 두 번째 오버 로드에는 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 시스템 시간 정보를 받게 될 개체입니다.  
+*timeDest*<br/>
+[out] 첫 번째 오버 로드에는 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 시스템 시간 정보를 받게 될 개체입니다. 두 번째 오버 로드에는 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 시스템 시간 정보를 받게 될 개체입니다.  
   
- [out] *pTimeDest*  
- 에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 시스템 시간 정보를 받는 구조체입니다. NULL이 아니어야 합니다.  
+*pTimeDest*<br/>
+[out] 에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 시스템 시간 정보를 받는 구조체입니다. NULL이 아니어야 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  첫 번째 오버 로드에서 시간에 성공적으로 작성 되는 경우 0이 아닌 값을 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 개체 그렇지 않으면 0입니다. 두 번째 및 세 번째 오버 로드의 반환 값은 DWORD에 설정 된 dwFlag 멤버에 해당 합니다 [NMDATETIMECHANGE](/windows/desktop/api/commctrl/ns-commctrl-tagnmdatetimechange) 구조입니다.  
@@ -289,14 +289,14 @@ static DWORD GetTimeAll(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmd*  
- 도구 모음 단추의 명령 ID를 지정 합니다.  
+*uiCmd*<br/>
+[in] 도구 모음 단추의 명령 ID를 지정 합니다.  
   
- [out] *timeDest*  
- 첫 번째 오버 로드에는 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 시스템 시간 정보를 받게 될 개체입니다. 두 번째 오버 로드에는 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 시스템 시간 정보를 받게 될 개체입니다.  
+*timeDest*<br/>
+[out] 첫 번째 오버 로드에는 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 시스템 시간 정보를 받게 될 개체입니다. 두 번째 오버 로드에는 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 시스템 시간 정보를 받게 될 개체입니다.  
   
- [out] *pTimeDest*  
- 에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 시스템 시간 정보를 받는 구조체입니다. NULL이 아니어야 합니다.  
+*pTimeDest*<br/>
+[out] 에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 시스템 시간 정보를 받는 구조체입니다. NULL이 아니어야 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  프레임 워크 도구 모음 단추의 명령 ID와 일치 하는 경우 찾을 수 없습니다 *uiCmd*, 반환 값은 첫 번째 오버 로드에는 0과 다른 오버 로드에서 GDT_NONE 합니다. 도구 모음 단추가 있으면 반환 값은 호출에서 반환 값과 같으면 [CMFCToolBarDateTimeCtrl::GetTime](#gettime) 는 단추입니다. 반환 값 0 또는 GDT_NONE 단추 발견 되 면 나타냅니다 발생할 수 있습니다에 대 한 호출 `GetTime` 다른 이유로 유효한 날짜를 반환 하지 않았습니다.  
@@ -325,8 +325,8 @@ virtual BOOL NotifyCommand(int iNotifyCode);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iNotifyCode*  
- 명령과 사용 하 여 연결 된 알림 메시지입니다.  
+*iNotifyCode*<br/>
+[in] 명령과 사용 하 여 연결 된 알림 메시지입니다.  
   
 ### <a name="return-value"></a>반환 값  
  WM_COMMAND 메시지 또는 FALSE를 나타내는 부모 도구 모음에서 메시지를 처리 해야 하는 단추 처리 하는 경우 TRUE입니다.  
@@ -356,8 +356,8 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndParent*  
- 새 부모 창입니다.  
+*pWndParent*<br/>
+[in] 새 부모 창입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 기본 클래스 구현을 재정의 ( [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)) 내부 다시 만들어 `CMFCToolBarDateTimeCtrlImpl` 개체입니다.  
@@ -372,11 +372,11 @@ virtual BOOL OnClick(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- 사용되지 않습니다.  
+*pWnd*<br/>
+[in] 사용 되지 않습니다.  
   
- [in] *bDelay*  
- 사용되지 않습니다.  
+*bDelay*<br/>
+[in] 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  단추 클릭 메시지를 처리 하는 경우 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -394,11 +394,11 @@ virtual HBRUSH OnCtlColor(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 단추를 표시 하는 장치 컨텍스트.  
+*pDC*<br/>
+[in] 단추를 표시 하는 장치 컨텍스트.  
   
- [in] *nCtlColor*  
- 사용되지 않습니다.  
+*nCtlColor*<br/>
+[in] 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  단추의 배경을 그릴 프레임 워크를 사용 하는 전역 브러시에 대 한 핸들입니다.  
@@ -438,8 +438,8 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bShow*  
- 단추가 표시 되는지 여부를 지정 합니다. 이 매개 변수가 TRUE 인 경우 단추 표시 됩니다. 그렇지 않으면 단추가 표시 되지 않습니다.  
+*bShow*<br/>
+[in] 단추가 표시 되는지 여부를 지정 합니다. 이 매개 변수가 TRUE 인 경우 단추 표시 됩니다. 그렇지 않으면 단추가 표시 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 기본 클래스 구현을 확장 ( [CMFCToolBarButton::OnShow](../../mfc/reference/cmfctoolbarbutton-class.md#onshow)) 하는 경우에 단추를 표시 하 여 *bShow* 은 TRUE입니다. 그렇지 않은 경우이 메서드 단추를 숨깁니다.  
@@ -452,8 +452,8 @@ virtual void OnSize(int iSize);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iSize*  
- 새 너비 (픽셀)에서 단추를입니다.  
+*iSize*<br/>
+[in] 새 너비 (픽셀)에서 단추를입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 기본 클래스 구현을 재정의 ( [CMFCToolBarButton::OnSize](../../mfc/reference/cmfctoolbarbutton-class.md#onsize))의 내부 위치와 크기를 업데이트 하 여 `CMFCToolBarDateTimeCtrlImpl` 개체입니다.  
@@ -470,17 +470,17 @@ virtual BOOL OnUpdateToolTip(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndParent*  
- 부모 창입니다.  
+*pWndParent*<br/>
+[in] 부모 창입니다.  
   
- [in] *iButtonIndex*  
- 단추의 부모 단추 컬렉션의 0부터 시작 하는 인덱스입니다.  
+*iButtonIndex*<br/>
+[in] 단추의 부모 단추 컬렉션의 0부터 시작 하는 인덱스입니다.  
   
- [in] *wndToolTip*  
- 도구 설명 텍스트를 표시 하는 컨트롤입니다.  
+*wndToolTip*<br/>
+[in] 도구 설명 텍스트를 표시 하는 컨트롤입니다.  
   
- [out] *str*  
- `CString` 업데이트 된 도구 설명 텍스트를 받는 개체입니다.  
+*str*<br/>
+[out] `CString` 업데이트 된 도구 설명 텍스트를 받는 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드는 도구 설명 텍스트를 업데이트 하는 경우 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -498,11 +498,11 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew=NULL);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *timeNew*  
- 첫 번째 버전에서는에 대 한 참조를 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 컨트롤은 설정할 시간을 포함 하는 개체입니다. 두 번째 버전에서는에 대 한 포인터를 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 컨트롤은 설정할 시간을 포함 하는 개체입니다.  
+*timeNew*<br/>
+[in] 첫 번째 버전에서는에 대 한 참조를 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 컨트롤은 설정할 시간을 포함 하는 개체입니다. 두 번째 버전에서는에 대 한 포인터를 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 컨트롤은 설정할 시간을 포함 하는 개체입니다.  
   
- [in] *pTimeNew*  
- 에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 컨트롤은 설정할 시간을 포함 하는 구조입니다.  
+*pTimeNew*<br/>
+[in] 에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 컨트롤은 설정할 시간을 포함 하는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -528,14 +528,14 @@ static BOOL SetTimeAll(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmd*  
- 도구 모음 단추의 명령 ID를 지정 합니다.  
+*uiCmd*<br/>
+[in] 도구 모음 단추의 명령 ID를 지정 합니다.  
   
- [in] *timeNew*  
- 첫 번째 버전에서을 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 컨트롤은 설정할 시간을 포함 하는 개체입니다. 두 번째 버전에서는에 대 한 포인터를 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 컨트롤은 설정할 시간을 포함 하는 개체입니다.  
+*timeNew*<br/>
+[in] 첫 번째 버전에서을 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 컨트롤은 설정할 시간을 포함 하는 개체입니다. 두 번째 버전에서는에 대 한 포인터를 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 컨트롤은 설정할 시간을 포함 하는 개체입니다.  
   
- [in] *pTimeNew*  
- 에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 컨트롤은 설정할 시간을 포함 하는 구조입니다.  
+*pTimeNew*<br/>
+[in] 에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 컨트롤은 설정할 시간을 포함 하는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  

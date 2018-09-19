@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01741d1cc67f0045c46ab392212625b9e1a2d8ca
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 86d81662cb02fa3c8f6af75009daf4dab9b70196
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246372"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016561"
 ---
 # <a name="compiler-error-c2891"></a>컴파일러 오류 C2891
-'parameter': 템플릿 매개 변수의 주소를 가져올 수 없습니다  
-  
- Lvalue 경우가 아니라면 템플릿 매개 변수 주소를 가져올 수 없습니다. 형식 매개 변수가 주소가 없기 때문에 lvalue 않습니다. Lvalue 없는 템플릿 매개 변수 목록에 비형식 값도 주소를가지고 하지 않습니다. 이 템플릿 매개 변수로 전달 된 값에는 템플릿 인수는 컴파일러 생성 복사 이므로 컴파일러 오류 C2891 하는 코드의 예시입니다.  
-  
-```  
-template <int i> int* f() { return &i; }  
-```  
-  
- 템플릿 매개 변수를 lvalue 참조 형식에 같은 수의 주소는 수행 했습니다.  
-  
-```  
-template <int& r> int* f() { return &r; }  
-```  
-  
- 이 오류를 해결 하려면 lvalue 하지 않은 주소는 템플릿 매개 변수를 사용 하지 않습니다.
+
+'parameter': 템플릿 매개 변수의 주소를 가져올 수 없습니다.
+
+lvalue가 아닌 경우에 템플릿 매개 변수의 주소를 사용할 수 없습니다. 형식 매개 변수 주소가 없기 때문에 lvalue 않습니다. Lvalue 없는 템플릿 매개 변수 목록에 비형식 값도 수행 주소가 없습니다. 템플릿 매개 변수로 전달 된 값은 템플릿 인수 컴파일러에서 생성 된 복사본 이므로 이것이 컴파일러 오류 C2891 발생 하는 코드의 예입니다.
+
+```
+template <int i> int* f() { return &i; }
+```
+
+참조 형식과 같이 lvalue는 템플릿 매개 변수 수 주소로 수행 합니다.
+
+```
+template <int& r> int* f() { return &r; }
+```
+
+이 오류를 해결 하려면 lvalue 경우가 템플릿 매개 변수의 주소를 사용 하지 않습니다.

@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92a6bb4cbd80cf0fa36b65d81a327b822493e264
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e2c3e0eb625c492cb9f0e9a1234d33149ac201a1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752699"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040234"
 ---
 # <a name="cworkerthread-class"></a>CWorkerThread 클래스
 
@@ -42,13 +42,13 @@ ms.locfileid: "43752699"
 ## <a name="syntax"></a>구문
 
 ```
-template <class ThreadTraits = DefaultThreadTraits>  
+template <class ThreadTraits = DefaultThreadTraits>
 class CWorkerThread
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*ThreadTraits*  
+*ThreadTraits*<br/>
 와 같은 스레드 생성 함수를 제공 하는 클래스 [CRTThreadTraits](../../atl/reference/crtthreadtraits-class.md) 하거나 [Win32ThreadTraits](../../atl/reference/win32threadtraits-class.md)합니다.
 
 ## <a name="members"></a>멤버
@@ -115,13 +115,13 @@ HRESULT AddHandle(
 
 ### <a name="parameters"></a>매개 변수
 
-*hObject*  
+*hObject*<br/>
 대기 가능 개체에 대 한 핸들입니다.
 
-*pClient*  
+*pClient*<br/>
 에 대 한 포인터를 [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md) 핸들 신호가 전달 될 때 호출할 개체의 인터페이스입니다.
 
-*dwParam*  
+*dwParam*<br/>
 에 전달할 매개 변수 [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) 핸들이 신호를 받을 때입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -146,16 +146,16 @@ HRESULT AddTimer(
 
 ### <a name="parameters"></a>매개 변수
 
-*dwInterval*  
+*dwInterval*<br/>
 타이머의 기간을 밀리초 단위로 지정 합니다.
 
-*pClient*  
+*pClient*<br/>
 에 대 한 포인터를 [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md) 핸들 신호가 전달 될 때 호출할 개체의 인터페이스입니다.
 
-*dwParam*  
+*dwParam*<br/>
 에 전달할 매개 변수 [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) 핸들이 신호를 받을 때입니다.
 
-*phTimer*  
+*phTimer*<br/>
 [out] 성공 하면 새로 만든된 타이머에 대 한 핸들을 수신 하는 핸들 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -224,7 +224,7 @@ HRESULT Initialize(CWorkerThread<ThreadTraits>* pThread) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pThread*  
+*pThread*<br/>
 기존 작업자 스레드입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -249,7 +249,7 @@ HRESULT RemoveHandle(HANDLE hObject) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*hObject*  
+*hObject*<br/>
 제거에 대 한 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -270,7 +270,7 @@ HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dwWait*  
+*dwWait*<br/>
 작업자 스레드가 종료 될 때까지 기다리는 시간 (밀리초) 시간입니다. ATL_WORKER_THREAD_WAIT 기본값은 10 초입니다. 필요한 경우와 atlutil.h 포함 하기 전에이 기호에 대 한 고유한 값을 정의할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -285,7 +285,7 @@ HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)   
-[클래스](../../atl/reference/atl-classes.md)   
-[다중 스레딩: 작업자 스레드 만들기](../../parallel/multithreading-creating-worker-threads.md)   
+[DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)<br/>
+[클래스](../../atl/reference/atl-classes.md)<br/>
+[다중 스레딩: 작업자 스레드 만들기](../../parallel/multithreading-creating-worker-threads.md)<br/>
 [IWorkerThreadClient 인터페이스](../../atl/reference/iworkerthreadclient-interface.md)

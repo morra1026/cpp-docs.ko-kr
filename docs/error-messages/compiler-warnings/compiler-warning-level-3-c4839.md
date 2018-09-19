@@ -1,6 +1,6 @@
 ---
 title: 컴파일러 경고 (수준 3) C4839 | Microsoft Docs
-ms.date: 10/25/2017
+ms.date: 09/13/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -15,24 +15,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b72289eef03c56356865b0b62a999c417da570a6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 14a79c6abb118fb173382be87ebda4316545c65a
+ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291959"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45601407"
 ---
-# <a name="compiler-warning-level-4-c4839"></a>컴파일러 경고 (수준 4) C4839
+# <a name="compiler-warning-level-3-c4839"></a>컴파일러 경고 (수준 3) C4839
 
-> 클래스의 비표준 사용*형식*' variadic 함수에 대 한 인수로
+> 클래스의 비표준 사용*형식*' variadic 함수에 인수로 서
 
-Visual Studio 2017 클래스 또는 구조체는 variadic에 전달 되는 함수에서 같은 `printf` 일반적으로 복사할 수 여야 합니다. 해당 개체를 전달할 때 컴파일러는 비트 복사본을 만들기만 하고 생성자 또는 소멸자를 호출하지 않습니다.
+와 같이 variadic 함수에 전달 되는 클래스 또는 구조체 `printf` 일반적으로 복사 가능 해야 합니다. 해당 개체를 전달할 때 컴파일러는 비트 복사본을 만들기만 하고 생성자 또는 소멸자를 호출하지 않습니다.
+
+이 경고는 Visual Studio 2017부터 사용할 수 있습니다.
 
 ## <a name="example"></a>예제
 
 다음 샘플에서는 C4839 오류가 생성 됩니다.
 
 ```cpp
+// C4839.cpp
+// compile by using: cl /EHsc /W3 C4839.cpp
 #include <atomic>
 #include <memory>
 #include <stdio.h>
@@ -42,20 +46,10 @@ int main()
     std::atomic<int> i(0);
     printf("%i\n", i); // error C4839: non-standard use of class 'std::atomic<int>'
                         // as an argument to a variadic function
-                        // note: the constructor and destructor will not be called; 
+                        // note: the constructor and destructor will not be called;
                         // a bitwise copy of the class will be passed as the argument
                         // error C2280: 'std::atomic<int>::atomic(const std::atomic<int> &)':
                         // attempting to reference a deleted function
-
-    struct S {
-        S(int i) : i(i) {}
-        S(const S& other) : i(other.i) {}
-        operator int() { return i; }
-    private:
-        int i;
-    } s(0);
-    printf("%i\n", s); // warning C4840 : non-portable use of class 'main::S'
-                      // as an argument to a variadic function
 }
 ```
 
@@ -66,14 +60,7 @@ int main()
     printf("%i\n", i.load());
 ```
 
-정적 캐스트를 수행하여 개체를 변환한 후 전달합니다.
-
-```cpp
-    struct S {/* as before */} s(0);
-    printf("%i\n", static_cast<int>(s))
-```
-
-빌드 및 관리를 사용 하 여 문자열에 대 한 `CStringW`, 제공 된 `operator LPCWSTR()` 캐스팅을 사용해는 `CStringW` 개체를 형식 문자열에 필요한 C 포인터입니다.
+빌드 및 관리를 사용 하 여 문자열 `CStringW`, 제공 된 `operator LPCWSTR()` 캐스트를 사용 해야는 `CStringW` 형식 문자열에 필요한 C 포인터에 대 한 개체입니다.
 
 ```cpp
     CStringW str1;

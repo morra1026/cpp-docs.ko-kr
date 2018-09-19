@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 96e95fbce8bb87638365c534f906de5c7ede282f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c84f65909ed17060ec4347975b7e7f34a782da95
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199822"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46079026"
 ---
 # <a name="fatal-error-c1904"></a>심각한 오류 C1904
-잘못된 공급자 상호 작용: 'file'  
-  
- 이 오류는 특성 공급자 오류를 나타냅니다.  
-  
- 오류에 대 한 환경을 기록, 문제를 파악 하 여 재현 가능한 테스트 사례를 문의 한 다음 [의견 보내기](/visualstudio/ide/talk-to-us)합니다.
+
+잘못된 공급자 상호 작용: 'file'
+
+이 오류는 특성 공급자 오류를 나타냅니다.
+
+오류 상황을 확인, 문제를 격리 하는 재현 가능한 테스트 사례를 만든 후에 문의 [의견을 보내](/visualstudio/ide/talk-to-us)합니다.

@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb1224b1e5b14c0f34e10b7eff972d4014cccdff
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 70f6773e65c167b980a4fd9967b910a3f760d58f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33268257"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059272"
 ---
 # <a name="compiler-error-c3874"></a>컴파일러 오류 C3874
-'function'의 반환 형식은 'int' 대신 'type' 해야 합니다.  
-  
- 함수에는 컴파일러에서 예상 된 반환 형식이 없습니다.  
-  
- 다음 샘플에서는 C3874 오류가 생성 됩니다.  
-  
-```  
-// C3874b.cpp  
-double main()  
-{   // C3874  
-}  
+
+'function'의 반환 형식 'type' 대신 ' int' 해야 합니다.
+
+함수에는 컴파일러에서 예상 된 반환 형식이 없습니다.
+
+다음 샘플에서는 C3874 오류가 생성 됩니다.
+
+```
+// C3874b.cpp
+double main()
+{   // C3874
+}
 ```

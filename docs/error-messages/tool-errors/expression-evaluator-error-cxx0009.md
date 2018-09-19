@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d579c22ee72992b16cd39a2cedb82e1219972c5f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 95c2706f4b1eb758eea24cc16ea16f4b561155c2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295446"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109797"
 ---
 # <a name="expression-evaluator-error-cxx0009"></a>식 계산기 오류 CXX0009
-누락 된 ' 문자 상수 뒤  
-  
- 작은따옴표 문자 상수의 끝에 사용할 수 없습니다. 문자 상수를 작은따옴표로 묶어 식을 다시 입력 합니다.  
-  
- 이 오류는 can0009와 동일 합니다.
+
+누락 된 ' 후 문자 상수
+
+작은따옴표 문자 상수 끝에 누락 되었습니다. 문자 상수는 작은따옴표로 묶어 식을 입력 합니다.
+
+이 오류는 can0009와 동일 합니다.

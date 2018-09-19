@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 11f1c90fed93666fad7513e2b4186a5baa2aa406
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dc2c6b238fab7e42c0754e613b62756a86a5bb31
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33232819"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069575"
 ---
 # <a name="compiler-error-c2790"></a>컴파일러 오류 C2790
-'super':이 키워드는 클래스 멤버 함수의 본문 내 에서만 사용할 수 있습니다  
-  
- 이 오류 메시지가 표시 된 키워드를 사용 하 여 사용자가 하려고 할 경우 [super](../../cpp/super.md) 컨텍스트 외부에서 멤버 함수입니다.  
-  
- 다음 샘플에서는 C2790 오류가 생성 됩니다.  
-  
-```  
-// C2790.cpp  
-void f() {  
-   __super::g();   // C2790  
-}  
+
+'super':이 키워드는 클래스 멤버 함수의 본문 내 에서만 사용할 수 있습니다
+
+키워드를 사용 하는 사용자가 하려고 할 경우이 오류 메시지가 나타납니다 [super](../../cpp/super.md) 멤버 함수의 컨텍스트 외부에서.
+
+다음 샘플에서는 C2790를 생성합니다.
+
+```
+// C2790.cpp
+void f() {
+   __super::g();   // C2790
+}
 ```

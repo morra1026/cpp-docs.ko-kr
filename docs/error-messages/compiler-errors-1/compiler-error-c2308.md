@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4523fd23f0900172e80cf71fd748a9f939deb044
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 24c01565f03bafa1b0bf1c20c4fb967cde3fc5b7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169077"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091974"
 ---
 # <a name="compiler-error-c2308"></a>컴파일러 오류 C2308
-일치 하지 않는 문자열 연결  
-  
- 두 너비와 비 와이드 문자 문자열 연결에 지정 했습니다. 와이드 문자 문자열 및 비 와이드 문자 문자열을 연결할 수 없습니다.
+
+일치 하지 않는 문자열을 연결
+
+두 너비와 비 와이드 문자 문자열 연결에 대해 지정 되었습니다. 비 와이드 문자 문자열을 와이드 문자 문자열을 연결할 수 없습니다.

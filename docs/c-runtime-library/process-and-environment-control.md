@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0fbbe1f7feca0b2c8d21bfaf5da3e758e2c6c0bb
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 0c314decf15886f8d99ed8be3b7bafe4fff3e36b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200965"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085760"
 ---
 # <a name="process-and-environment-control"></a>프로세스 및 환경 제어
 
@@ -77,11 +77,11 @@ ms.locfileid: "43200965"
 |[_spawnvpe, _wspawnvpe](../c-runtime-library/reference/spawnvpe-wspawnvpe.md)|**PATH** 변수, 지정된 환경 및 인수 배열을 사용하여 새 프로세스를 만들고 실행합니다.|
 |[system, _wsystem](../c-runtime-library/reference/system-wsystem.md)|운영 체제 명령을 실행합니다.|
 
- Windows 운영 체제에서 생성된 프로세스는 생성하는 프로세스와 동급입니다. 모든 프로세스에서 **_cwait**를 사용하여 프로세스 ID가 알려진 다른 모든 프로세스를 기다릴 수 있습니다.
+Windows 운영 체제에서 생성된 프로세스는 생성하는 프로세스와 동급입니다. 모든 프로세스에서 **_cwait**를 사용하여 프로세스 ID가 알려진 다른 모든 프로세스를 기다릴 수 있습니다.
 
- **_exec** 및 **_spawn** 패밀리 간의 차이는 **_spawn** 함수가 새 프로세스에서 호출 프로세스로 제어를 반환할 수 있다는 것입니다. **_spawn** 함수에서 **_P_OVERLAY**가 지정되지 않으면 호출 프로세스 및 새 프로세스는 모두 메모리에 있습니다. **_exec** 함수에서 새 프로세스는 호출 프로세스를 오버레이하므로, 새 프로세스의 실행을 시작하려고 할 때 오류가 발생하지 않으면 호출 프로세스에 제어를 반환할 수 없습니다.
+**_exec** 및 **_spawn** 패밀리 간의 차이는 **_spawn** 함수가 새 프로세스에서 호출 프로세스로 제어를 반환할 수 있다는 것입니다. **_spawn** 함수에서 **_P_OVERLAY**가 지정되지 않으면 호출 프로세스 및 새 프로세스는 모두 메모리에 있습니다. **_exec** 함수에서 새 프로세스는 호출 프로세스를 오버레이하므로, 새 프로세스의 실행을 시작하려고 할 때 오류가 발생하지 않으면 호출 프로세스에 제어를 반환할 수 없습니다.
 
- 다음 표에서 보여 주듯이 **_exec** 패밀리 함수 간 및 **_spawn** 패밀리 함수 간의 차이는 새 프로세스로 실행될 파일을 찾는 방법, 인수가 새 프로세스에 전달되는 형식 및 환경을 설정하는 방법과 관련이 있습니다. 인수 개수가 일정하거나 컴파일 타임에 알려질 경우 인수 목록을 전달하는 함수를 사용합니다. 인수 개수가 런타임에 결정될 경우에는 인수를 포함하는 배열에 대한 포인터를 전달하는 함수를 사용합니다. 다음 표의 정보는 **_spawn** 및 **_exec** 함수의 와이드 문자 대응에도 적용됩니다.
+다음 표에서 보여 주듯이 **_exec** 패밀리 함수 간 및 **_spawn** 패밀리 함수 간의 차이는 새 프로세스로 실행될 파일을 찾는 방법, 인수가 새 프로세스에 전달되는 형식 및 환경을 설정하는 방법과 관련이 있습니다. 인수 개수가 일정하거나 컴파일 타임에 알려질 경우 인수 목록을 전달하는 함수를 사용합니다. 인수 개수가 런타임에 결정될 경우에는 인수를 포함하는 배열에 대한 포인터를 전달하는 함수를 사용합니다. 다음 표의 정보는 **_spawn** 및 **_exec** 함수의 와이드 문자 대응에도 적용됩니다.
 
 ### <a name="spawn-and-exec-function-families"></a>_spawn 및 _exec 함수 패밀리
 

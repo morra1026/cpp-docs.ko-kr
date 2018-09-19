@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 600bdb29a06d9aef84f2f4d914a458f9a4090c4a
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 99b4a84109db8a412f0a3d64967a522d18ada930
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849450"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713455"
 ---
 # <a name="cmfcdropdownframe-class"></a>CMFCDropDownFrame 클래스
 드롭다운 도구 모음 및 드롭다운 도구 모음 단추에 드롭다운 프레임 창 기능을 제공합니다.  
@@ -57,8 +57,7 @@ class CMFCDropDownFrame : public CMiniFrameWnd
 |||  
 |-|-|  
 |이름|설명|  
-|[CMFCDropDownFrame::Create](#create)|
-          `CMFCDropDownFrame` 개체를 만듭니다.|  
+|[CMFCDropDownFrame::Create](#create)|`CMFCDropDownFrame` 개체를 만듭니다.|  
 |`CMFCDropDownFrame::CreateObject`|프레임워크에서 이 클래스 형식의 동적 인스턴스를 만드는 데 사용합니다.|  
 |[CMFCDropDownFrame::GetParentMenuBar](#getparentmenubar)|드롭 다운 프레임의 상위 메뉴 모음을 검색합니다.|  
 |[CMFCDropDownFrame::GetParentPopupMenu](#getparentpopupmenu)|팝업 메뉴 드롭다운 프레임의 부모를 검색합니다.|  
@@ -71,7 +70,7 @@ class CMFCDropDownFrame : public CMiniFrameWnd
   
  프레임 워크가이 클래스를 사용 하 여 프레임 동작을 제공 합니다 `CMFCDropDownToolbar` 및 `CMFCDropDownToolbarButton` 클래스입니다. 이러한 클래스에 대 한 자세한 내용은 참조 하세요. [CMFCDropDownToolBar 클래스](../../mfc/reference/cmfcdropdowntoolbar-class.md) 하 고 [CMFCDropDownToolbarButton 클래스](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에 대 한 포인터를 검색 하는 방법에 설명 된 `CMFCDropDownFrame` 에서 개체를 `CFrameWnd` 클래스 및 자식 드롭다운 도구 모음 창에는 자동으로 제거를 설정 하는 방법.  
   
  [!code-cpp[NVC_MFC_RibbonApp#36](../../mfc/reference/codesnippet/cpp/cmfcdropdownframe-class_1.cpp)]  
@@ -93,8 +92,7 @@ class CMFCDropDownFrame : public CMiniFrameWnd
  **헤더:** afxdropdowntoolbar.h  
   
 ##  <a name="create"></a>  CMFCDropDownFrame::Create  
- 
-          `CMFCDropDownFrame` 개체를 만듭니다.  
+ `CMFCDropDownFrame` 개체를 만듭니다.  
   
 ```  
 virtual BOOL Create(
@@ -109,10 +107,10 @@ virtual BOOL Create(
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *pWndParent*|드롭 다운 프레임의 부모 창입니다.|  
-|[in] *x*|드롭다운 프레임의 위치에 대 한 가로 화면 좌표입니다.|  
-|[in] *y*|드롭다운 프레임의 위치에 대 한 세로 화면 좌표입니다.|  
-|[in] *pWndOriginToolbar*|이 메서드를 사용 하 여 새 드롭다운 프레임 개체를 채우는 드롭다운 단추가 있는 도구 모음입니다.|  
+|*pWndParent*|[in] 드롭 다운 프레임의 부모 창입니다.|  
+|*x*|[in] 드롭다운 프레임의 위치에 대 한 가로 화면 좌표입니다.|  
+|*y*|[in] 드롭다운 프레임의 위치에 대 한 세로 화면 좌표입니다.|  
+|*pWndOriginToolbar*|[in] 이 메서드를 사용 하 여 새 드롭다운 프레임 개체를 채우는 드롭다운 단추가 있는 도구 모음입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 드롭 다운 프레임을 성공적으로 만들었습니다. 그렇지 않으면 FALSE입니다.  
@@ -160,7 +158,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *bNotify*|사용되지 않습니다.|  
+|*bNotify*|[in] 사용 되지 않습니다.|  
   
 ### <a name="remarks"></a>설명  
  프레임 워크 드롭다운 프레임을 만들거나 부모 창의 크기를 조정할 때이 메서드를 호출 합니다. 이 메서드는 부모 창의 크기와 위치를 사용 하 여 드롭다운 프레임의 크기와 위치를 계산 합니다.  
@@ -173,8 +171,8 @@ void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bAutoDestroy*  
- 연결 된 드롭다운 도구 모음 창에 자동으로 삭제. 그렇지 않으면 FALSE입니다.  
+*bAutoDestroy*<br/>
+[in] 연결 된 드롭다운 도구 모음 창에 자동으로 삭제. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  하는 경우 *bAutoDestroy* 가 TRUE 인 경우 `CMFCDropDownFrame` 소멸자는 연결 된 드롭다운 도구 모음 창을 제거 합니다. 기본값은 TRUE입니다.  

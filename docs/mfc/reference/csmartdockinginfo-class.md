@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a900ab0e0307cd059aaeb6f4333ef6d28f98dad6
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 653be2fb1847403436bccb86807da382ef09cc25
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849817"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018212"
 ---
 # <a name="csmartdockinginfo-class"></a>CSmartDockingInfo 클래스
 스마트 도킹 표식의 모양을 정의합니다.  
@@ -68,7 +68,7 @@ class CSmartDockingInfo : public CObject
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CSmartDockingInfo::m_bUseThemeColorInShading](#m_busethemecolorinshading)|프레임 워크 스마트 도킹 표식 표시 되 면 현재 테마 색을 사용할지 여부를 지정 합니다.|  
 |[CSmartDockingInfo::m_clrBaseBackground](#m_clrbasebackground)|스마트 도킹 표식의 기본 배경색을 지정 합니다.|  
@@ -119,8 +119,8 @@ void CopyTo(CSmartDockingInfo& params);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *매개 변수*  
- 형식의 개체 `CSmartDockingInfo` 는 현재 스마트 도킹 매개 변수를 사용 하 여 채워집니다.  
+*params*<br/>
+[out] 형식의 개체 `CSmartDockingInfo` 는 현재 스마트 도킹 매개 변수를 사용 하 여 채워집니다.  
   
 ##  <a name="m_busethemecolorinshading"></a>  CSmartDockingInfo::m_bUseThemeColorInShading  
  프레임 워크 스마트 도킹 표식 표시 되 면 현재 테마 색을 사용할지 여부를 지정 합니다.  
@@ -205,15 +205,13 @@ UINT m_uiMarkerBmpResID[AFX_SD_MARKERS_NUM];
 ### <a name="remarks"></a>설명  
  스마트 도킹 표식 나타내는 비트맵의 리소스 Id 사용 하 여이 배열을 채웁니다. AFX_SD_MARKERS_NUM는 현재 5로 정의 됩니다. 배열을 다음과 같이 입력합니다.  
   
- `params.m_uiMarkerBmpResID[0] = IDB_MARKER_LEFT;`  
-  
- `params.m_uiMarkerBmpResID[1] = IDB_MARKER_RIGHT;`  
-  
- `params.m_uiMarkerBmpResID[2] = IDB_MARKER_TOP;`  
-  
- `params.m_uiMarkerBmpResID[3] = IDB_MARKER_BOTTOM;`  
-  
- `params.m_uiMarkerBmpResID[4] = IDB_MARKER_CENTER;`  
+```cpp
+params.m_uiMarkerBmpResID[0] = IDB_MARKER_LEFT;
+params.m_uiMarkerBmpResID[1] = IDB_MARKER_RIGHT;
+params.m_uiMarkerBmpResID[2] = IDB_MARKER_TOP;
+params.m_uiMarkerBmpResID[3] = IDB_MARKER_BOTTOM;
+params.m_uiMarkerBmpResID[4] = IDB_MARKER_CENTER;
+```
   
 ##  <a name="m_uimarkerlightbmpresid"></a>  CSmartDockingInfo::m_uiMarkerLightBmpResID  
  강조 표시 된 사용자 지정 스마트 도킹 표식에 사용 되는 비트맵의 리소스 Id를 정의 합니다.  
@@ -225,15 +223,13 @@ UINT m_uiMarkerLightBmpResID[AFX_SD_MARKERS_NUM];
 ### <a name="remarks"></a>설명  
  강조 표시 된 스마트 도킹 표식 나타내는 비트맵의 리소스 Id 사용 하 여이 배열을 채웁니다. AFX_SD_MARKERS_NUM는 현재 5로 정의 됩니다. 배열을 다음과 같이 입력합니다.  
   
- `params.m_uiMarkerLightBmpResID[0] = IDB_MARKER_LEFT_LIGHT;`  
-  
- `params.m_uiMarkerLightBmpResID[1] = IDB_MARKER_RIGHT_LIGHT;`  
-  
- `params.m_uiMarkerLightBmpResID[2] = IDB_MARKER_TOP_LIGHT;`  
-  
- `params.m_uiMarkerLightBmpResID[3] = IDB_MARKER_BOTTOM_LIGHT;`  
-  
- `params.m_uiMarkerLightBmpResID[4] = IDB_MARKER_CENTER_LIGHT;`  
+```cpp
+params.m_uiMarkerLightBmpResID[0] = IDB_MARKER_LEFT_LIGHT;
+params.m_uiMarkerLightBmpResID[1] = IDB_MARKER_RIGHT_LIGHT;
+params.m_uiMarkerLightBmpResID[2] = IDB_MARKER_TOP_LIGHT;
+params.m_uiMarkerLightBmpResID[3] = IDB_MARKER_BOTTOM_LIGHT;
+params.m_uiMarkerLightBmpResID[4] = IDB_MARKER_CENTER_LIGHT;
+```
   
 ## <a name="see-also"></a>참고 항목  
  [계층 구조 차트](../../mfc/hierarchy-chart.md)   

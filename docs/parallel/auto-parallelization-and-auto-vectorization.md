@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 240cd4588cb36125b571462b26fcee3853412218
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: c1ff172fde385b4e814508aaf2b567ac15874069
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42541789"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720406"
 ---
 # <a name="auto-parallelization-and-auto-vectorization"></a>자동 병렬화 및 자동 벡터화
 자동 평행화 도우미 및 자동 벡터화 도우미는 코드의 루프 성능을 자동으로 향상시키기 위해 설계되었습니다.  
@@ -75,8 +75,10 @@ void test() {
   
  출력 결과:  
   
-**----함수를 분석 하는 중: __cdecl test(void) void**   
-**d:\myproject\mytest.cpp(4): 병렬 루프**  
+```Output
+--- Analyzing function: void __cdecl test(void)
+d:\myproject\mytest.cpp(4) : loop parallelized
+```
   
 다음 명령어를 사용하여 컴파일 시:  
   
@@ -84,9 +86,11 @@ void test() {
   
 출력 결과:  
   
-**----함수를 분석 하는 중: __cdecl test(void) void**   
-**d:\myproject\mytest.cpp(4): 병렬 루프**   
-**d:\myproject\mytest.cpp(4): '1008' 이유로 인해 평행 화 되지 루프**  
+```Output
+--- Analyzing function: void __cdecl test(void)
+d:\myproject\mytest.cpp(4) : loop parallelized
+d:\myproject\mytest.cpp(4) : loop not parallelized due to reason '1008'
+```
   
 두 가지 간 출력 차이 확인할 수 있습니다 [/Qpar-report (자동 평행 화 도우미 보고 수준)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md) 옵션입니다. `/Qpar-report:1`은 공적으로 평행화된 루프에 대해서만 평행화 도우미 메시지를 출력합니다. `/Qpar-report:2`는 성공 및 실패한 루프 평행화 둘 모두에 대해 평행화 도우미 메시지를 출력합니다.  
   

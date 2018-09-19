@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4272f5f8c5e19b32b295c1028de7ab30b22684bb
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 99d8cd4b076e5de35ffcb957a05f3c680bc82214
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757291"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106807"
 ---
 # <a name="chandle-class"></a>CHandle 클래스
 
@@ -90,7 +90,7 @@ void Attach(HANDLE h) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*h*  
+*h*<br/>
 `CHandle` 핸들의 소유권을 갖게 됩니다 *h*합니다.
 
 ### <a name="remarks"></a>설명
@@ -109,7 +109,7 @@ explicit CHandle(HANDLE h) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*h*  
+*h*<br/>
 기존 핸들 또는 `CHandle`합니다.
 
 ### <a name="remarks"></a>설명
@@ -174,7 +174,7 @@ CHandle& operator=(CHandle& h) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*h*  
+*h*<br/>
 `CHandle` 핸들의 소유권을 갖게 됩니다 *h*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -189,7 +189,7 @@ CHandle& operator=(CHandle& h) throw();
 
 저장 된 핸들의 값을 반환합니다.
 
-```  
+```
 operator HANDLE() const throw();
 ```
 

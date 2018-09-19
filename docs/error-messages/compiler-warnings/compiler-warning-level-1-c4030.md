@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ecef0aef36a2df7e32d1e8e765df95dd8d15273
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2e4ceddc35df1bf95c3a4473d2d92317b2f1ee6a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33274452"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047754"
 ---
 # <a name="compiler-warning-level-1-c4030"></a>컴파일러 경고(수준 1) C4030
-**첫째 정식 매개 변수 목록이 둘째 목록보다 깁니다.**  
-  
- 다른 형식 매개 변수를 사용하여 함수가 다시 선언되었습니다. 컴파일러는 첫 번째 선언에 지정된 형식 매개 변수를 사용합니다.
+
+**첫째 정식 매개 변수 목록이 둘째 목록보다 깁니다.**
+
+다른 형식 매개 변수를 사용하여 함수가 다시 선언되었습니다. 컴파일러는 첫 번째 선언에 지정된 형식 매개 변수를 사용합니다.

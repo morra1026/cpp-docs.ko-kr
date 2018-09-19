@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 313a07ba10275f4e9abed9442e3a8a82995d9577
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 06cb491974d6a13e5690401092222f0832313018
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165989"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066143"
 ---
 # <a name="compiler-error-c2168"></a>컴파일러 오류 C2168
-'function': 내장 함수에 대한 실제 매개 변수가 너무 적습니다.  
-  
- `intrinsic` 함수에 대한 참조에 매개 변수가 너무 적습니다.
+
+'function': 내장 함수에 대한 실제 매개 변수가 너무 적습니다.
+
+`intrinsic` 함수에 대한 참조에 매개 변수가 너무 적습니다.

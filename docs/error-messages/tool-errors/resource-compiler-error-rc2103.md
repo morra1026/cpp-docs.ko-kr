@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c70c89c927dca59f9bc242245d19f91e9e4a3894
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4bfdfefa0ee66093708ea7f839d7fbe8630ffe81
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33332093"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093469"
 ---
 # <a name="resource-compiler-error-rc2103"></a>리소스 컴파일러 오류 RC2103
-예기치 않은 파일의 끝에서는 문자열 리터럴  
-  
- 문자열 종료 되기 전에 파일 끝을 찾았습니다. 문자열이 닫는 큰따옴표가 없습니다 (**"**).
+
+예기치 않은 파일의 끝에 문자열 리터럴
+
+문자열의 종료 되기 전에 파일 끝 찾을 수 있습니다. 문자열이 닫는 큰따옴표가 없습니다 (**"**).

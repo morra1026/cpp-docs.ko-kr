@@ -15,14 +15,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9a9011912b0c187d9aa9e75dd9e484c4688e3c0
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 9dd92d321f0452c24de04fb94427aa2499677155
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39405911"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064829"
 ---
 # <a name="lexical-conventions"></a>어휘 규칙
+
 이 단원에서는 C++ 프로그램의 기본 요소를 소개합니다. 문, 정의, 선언 등을 생성하는 "어휘 요소" 또는 "토큰"이라고 하는 요소를 사용하여 완전한 프로그램을 구성할 수 있습니다. 이 단원에서 설명하는 어휘 요소는 다음과 같습니다.
 
 - [파일 변환 개요](overview-of-file-translation.md)
@@ -45,5 +46,6 @@ ms.locfileid: "39405911"
 - [사용자 정의 리터럴](../cpp/user-defined-literals-cpp.md)
 
 ## <a name="see-also"></a>참고자료
- [C++ 언어 참조](../cpp/cpp-language-reference.md)  
- [프로그램 및 링크](program-and-linkage-cpp.md)
+
+[C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
+[프로그램 및 링크](program-and-linkage-cpp.md)

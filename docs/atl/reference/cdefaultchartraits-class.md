@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 080a7b9f5da71535f8b141555ec1890a521fe715
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 69b6a7b94e993641452154ede11d65929424df5e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761984"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095757"
 ---
 # <a name="cdefaultchartraits-class"></a>CDefaultCharTraits 클래스
 
@@ -33,13 +33,13 @@ ms.locfileid: "43761984"
 ## <a name="syntax"></a>구문
 
 ```
-template <typename T>  
+template <typename T>
 class CDefaultCharTraits
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 컬렉션에 저장할 데이터의 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -64,13 +64,13 @@ class CDefaultCharTraits
 문자를 소문자로 변환 하려면이 함수를 호출 합니다.
 
 ```
-static wchar_t CharToLower(wchar_t x);  
+static wchar_t CharToLower(wchar_t x);
 static char CharToLower(char x);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 소문자로 변환할 문자입니다.
 
 ### <a name="example"></a>예제
@@ -82,13 +82,13 @@ static char CharToLower(char x);
 문자를 대문자로 변환 하려면이 함수를 호출 합니다.
 
 ```
-static wchar_t CharToUpper(wchar_t x);  
+static wchar_t CharToUpper(wchar_t x);
 static char CharToUpper(char x);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 대문자로 변환할 문자입니다.
 
 ## <a name="see-also"></a>참고 항목

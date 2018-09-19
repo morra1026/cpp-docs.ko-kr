@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b76250926ab89c14dfa26f0df3bb5571c1dae10
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 6c5ad5997657ce9f8a61383a2cd7e685f0a28751
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408818"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036555"
 ---
 # <a name="binary-operators"></a>이항 연산자
 
@@ -29,7 +29,7 @@ ms.locfileid: "39408818"
 
 ## <a name="redefinable-binary-operators"></a>다시 정의 가능 이항 연산자
 
-|연산자|name|
+|연산자|이름|
 |--------------|----------|
 |**,**|쉼표|
 |**\!=**|같지 않음|
@@ -80,4 +80,5 @@ ms.locfileid: "39408818"
 > 이항 연산자의 반환 형식에 대한 제한은 없지만 대부분의 사용자 정의 이항 연산자는 클래스 형식이나 클래스 형식에 대한 참조를 반환합니다.
 
 ## <a name="see-also"></a>참고자료
- [연산자 오버로드](../cpp/operator-overloading.md)
+
+[연산자 오버로드](../cpp/operator-overloading.md)

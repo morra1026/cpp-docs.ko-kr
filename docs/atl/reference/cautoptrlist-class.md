@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d3463b9eaad5134f68fbe533e50431ef3a91cf5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1c33c3524d0fb6b39208e2cb7be57805a3ff043f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761201"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046760"
 ---
 # <a name="cautoptrlist-class"></a>CAutoPtrList 클래스
 
@@ -35,14 +35,14 @@ ms.locfileid: "43761201"
 ## <a name="syntax"></a>구문
 
 ```
-template<typename E>  
-class CAutoPtrList : 
+template<typename E>
+class CAutoPtrList :
    public CAtlList<ATL::CAutoPtr<E>, CAutoPtrElementTraits<E>>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*E*  
+*E*<br/>
 포인터 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -79,7 +79,7 @@ CAutoPtrList(UINT nBlockSize = 10) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nBlockSize*  
+*nBlockSize*<br/>
 기본값은 10 사용 하 여 블록 크기입니다.
 
 ### <a name="remarks"></a>설명
@@ -88,6 +88,6 @@ CAutoPtrList(UINT nBlockSize = 10) throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[CAtlList 클래스](../../atl/reference/catllist-class.md)   
-[CAutoPtrElementTraits 클래스](../../atl/reference/cautoptrelementtraits-class.md)   
+[CAtlList 클래스](../../atl/reference/catllist-class.md)<br/>
+[CAutoPtrElementTraits 클래스](../../atl/reference/cautoptrelementtraits-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

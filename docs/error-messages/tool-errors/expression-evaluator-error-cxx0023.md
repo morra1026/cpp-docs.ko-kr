@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 426e074035d7f336963696e8924dfe641572f858
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 94536a0499b4c226f1343bd27c44cc52bbbf3558
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297000"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46034605"
 ---
 # <a name="expression-evaluator-error-cxx0023"></a>식 계산기 오류 CXX0023
-기수가 잘못 되었습니다.  
-  
- C 식 계산기는 지정 된 기 수를 인식 하지 못합니다. 10 진수, 16 진수 및 8 진수 기수만 유효 합니다.  
-  
- 이 오류는 can0023과 동일 합니다.
+
+기수가 잘못 되었습니다.
+
+C 식 계산기는 지정 된 기 수를 인식 하지 못합니다. 10 진수, 16 진수 및 8 진수 기수만 유효 합니다.
+
+이 오류는 can0023과 동일 합니다.

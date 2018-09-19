@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aac3952ff05e7b147418d4282b31e8a35572c9b0
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3ee73a91c14d567754f336b1d71ad4d157781140
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756535"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114061"
 ---
 # <a name="atl-copy-policy-classes"></a>ATL 복사 정책 클래스
 
@@ -90,6 +90,6 @@ VCUE_Copy.h이이 클래스의 다음 특수화도 포함 되어 있습니다: `
 
 ## <a name="see-also"></a>참고 항목
 
-[C + + 표준 라이브러리 기반 컬렉션 구현](../atl/implementing-an-stl-based-collection.md)   
+[C++ 표준 라이브러리 기반 컬렉션 구현](../atl/implementing-an-stl-based-collection.md)<br/>
 [ATLCollections 샘플](../visual-cpp-samples.md)
 

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 555d6d30f78c82e4c37e9fd5a047f62018b3d3d7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6f2a672b8329bc3167452ec5e3d1d76f19161bf6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226312"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055964"
 ---
 # <a name="compiler-error-c2510"></a>컴파일러 오류 C2510
-'identifier': '::' 왼쪽은 클래스/구조체/공용 구조체이어야 합니다.  
-  
- 클래스, 구조체 또는 공용 구조체 이름은 범위 결정 연산자(`::`) 연산자의 왼쪽에 표시되어야 합니다.
+
+'identifier': '::' 왼쪽은 클래스/구조체/공용 구조체이어야 합니다.
+
+클래스, 구조체 또는 공용 구조체 이름은 범위 결정 연산자(`::`) 연산자의 왼쪽에 표시되어야 합니다.

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe11e2697734d06988f4cbcfce48f38cf02c32b7
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: cf803fbd35071a7a7100e3267dcf1bfa8b91e9f7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687142"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059601"
 ---
 # <a name="cancellationtokenregistration-class"></a>cancellation_token_registration 클래스
 `cancellation_token_registration` 클래스는 `cancellation_token`의 콜백 알림을 나타냅니다. 취소 발생 시 알림을 받는 데 `register`의 `cancellation_token` 메서드를 사용하면 `cancellation_token_registration` 메서드 사용을 통해 더 이상 만들어지지 않는 특정 콜백을 호출자가 요청할 수 있도록 `deregister` 개체가 콜백에 대한 핸들로 반환됩니다.  
@@ -76,8 +76,9 @@ cancellation_token_registration(cancellation_token_registration&& _Src);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Src`  
-  
+*_Src*<br/>
+`cancellation_token_registration` 복사 또는 이동 합니다.
+ 
 ##  <a name="operator_neq"></a> operator!= 
 
 ```
@@ -85,8 +86,9 @@ bool operator!= (const cancellation_token_registration& _Rhs) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Rhs`  
-  
+*_Rhs*<br/>
+비교할 `cancellation_token_registration`입니다.
+ 
 ### <a name="return-value"></a>반환 값  
   
 ##  <a name="operator_eq"></a> 연산자 = 
@@ -98,8 +100,9 @@ cancellation_token_registration& operator= (cancellation_token_registration&& _S
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Src`  
-  
+*_Src*<br/>
+`cancellation_token_registration` 할당 합니다.
+ 
 ### <a name="return-value"></a>반환 값  
   
 ##  <a name="operator_eq_eq"></a> 연산자 = = 
@@ -109,8 +112,9 @@ bool operator== (const cancellation_token_registration& _Rhs) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Rhs`  
-  
+*_Rhs*<br/>
+비교할 `cancellation_token_registration`입니다.
+ 
 ### <a name="return-value"></a>반환 값  
   
 ## <a name="see-also"></a>참고 항목  

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9b0eb225f9da88db356fc4f04d25d2219876604
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1ac378e0a923e2a906bf99995432bfc87e39b8d5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752751"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032434"
 ---
 # <a name="cinterfacelist-class"></a>CInterfaceList 클래스
 
@@ -32,7 +32,7 @@ ms.locfileid: "43752751"
 ## <a name="syntax"></a>구문
 
 ```
-template<class I, const IID* piid =& __uuidof(I)>  
+template<class I, const IID* piid =& __uuidof(I)>
 class CInterfaceList 
    : public CAtlList<ATL::CComQIPtr<I, piid>,
                      CComQIPtrElementTraits<I, piid>>
@@ -40,10 +40,10 @@ class CInterfaceList
 
 #### <a name="parameters"></a>매개 변수
 
-*I*  
+*I*<br/>
 저장에 대 한 포인터의 형식을 지정 하는 COM 인터페이스입니다.
 
-*piid*  
+*piid*<br/>
 에 대 한 포인터의 IID *있습니까*합니다.
 
 ## <a name="members"></a>멤버
@@ -80,7 +80,7 @@ CInterfaceList(UINT nBlockSize = 10) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nBlockSize*  
+*nBlockSize*<br/>
 기본값은 10 사용 하 여 블록 크기입니다.
 
 ### <a name="remarks"></a>설명
@@ -89,7 +89,7 @@ CInterfaceList(UINT nBlockSize = 10) throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[CAtlList 클래스](../../atl/reference/catllist-class.md)   
-[CComQIPtr 클래스](../../atl/reference/ccomqiptr-class.md)   
-[CComQIPtrElementTraits 클래스](../../atl/reference/ccomqiptrelementtraits-class.md)   
+[CAtlList 클래스](../../atl/reference/catllist-class.md)<br/>
+[CComQIPtr 클래스](../../atl/reference/ccomqiptr-class.md)<br/>
+[CComQIPtrElementTraits 클래스](../../atl/reference/ccomqiptrelementtraits-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

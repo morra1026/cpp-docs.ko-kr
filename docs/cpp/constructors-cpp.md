@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d90a3f4b2cbacb3071dcd552fd88f6cb11bb5d43
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: 08200320e30816ac45e6c91a14dc41508430cfae
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131844"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069120"
 ---
 # <a name="constructors-c"></a>생성자 (C++)
 
@@ -88,7 +88,7 @@ int main()
     {}
 ```
 
-식별자를 클래스 멤버로; 나타내야 합니다. 인수의 값으로 초기화 됩니다. 인수는 함수 호출을 생성자 매개 변수 중 하나일 수 있습니다 또는 [std:: initializer_list\<T >](../standard-library/initializer-list-class.md)합니다. 
+식별자를 클래스 멤버로; 나타내야 합니다. 인수의 값으로 초기화 됩니다. 인수는 함수 호출을 생성자 매개 변수 중 하나일 수 있습니다 또는 [std:: initializer_list\<T >](../standard-library/initializer-list-class.md)합니다.
 
 **const** 멤버 및 멤버 참조 형식의 멤버 이니셜라이저 목록에서 초기화 되어야 합니다.
 
@@ -96,7 +96,7 @@ int main()
 
 ## <a name="default_constructors"></a> 기본 생성자
 
- *기본 생성자* 일반적으로 매개 변수가 없는 없지만 기본값이 있는 매개 변수를 가질 수 있습니다.
+*기본 생성자* 일반적으로 매개 변수가 없는 없지만 기본값이 있는 매개 변수를 가질 수 있습니다.
 
 ```cpp
 class Box {
@@ -216,6 +216,7 @@ A *복사 생성자* 동일한 유형의 개체에서 멤버 값을 복사 하 �
 개체를 복사 하는 동안 오류가 *C2280: 삭제 된 함수를 참조 하려고*합니다.
 
 ## <a name="move_constructors"></a> 이동 생성자
+
 A *이동 생성자* 는 원래 데이터를 복사 하지 않고 기존 개체의 데이터 소유권을 새 변수에 이동 하는 특수 멤버 함수입니다. 첫 번째 매개 변수로 rvalue 참조를 사용 하 고 추가 매개 변수는 기본값이 있어야 합니다. 이동 생성자는 큰 개체 주위를 전달할 때 프로그램의 효율성을 길어질 수 있습니다. 이동 생성자는 rvalue 참조 첫 번째 매개 변수로 사용 합니다. 다른 매개 변수에 기본값이 있어야 합니다.
 
 ```cpp

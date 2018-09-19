@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c21ce766ed809a93ccf617ab1f76c438ac5be829
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: a4a62f6e569e123b9612e922e2d7c70787371afc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540309"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46136181"
 ---
 # <a name="context-class"></a>Context 클래스
 실행 컨텍스트에 대한 추상화를 나타냅니다.  
@@ -210,8 +210,8 @@ void operator delete(void* _PObject);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_PObject`  
- 삭제할 개체에 대 한 포인터입니다.  
+*_PObject*<br/>
+삭제할 개체에 대 한 포인터입니다.  
   
 ##  <a name="oversubscribe"></a> 초과 구독 
 
@@ -222,8 +222,8 @@ static void __cdecl Oversubscribe(bool _BeginOversubscription);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_BeginOversubscription`  
- 경우 `true`, 초과 구독의 기간에서 추가 가상 프로세서를 추가 해야 함을 나타냅니다. 경우 `false`를 나타내는 값을 초과 구독이 종료 되어야 하는 이전에 추가한 가상 프로세서를 제거 해야 합니다.  
+*_BeginOversubscription*<br/>
+경우 `true`, 초과 구독의 기간에서 추가 가상 프로세서를 추가 해야 함을 나타냅니다. 경우 `false`를 나타내는 값을 초과 구독이 종료 되어야 하는 이전에 추가한 가상 프로세서를 제거 해야 합니다.  
   
 ##  <a name="schedulegroupid"></a> ScheduleGroupId 
 

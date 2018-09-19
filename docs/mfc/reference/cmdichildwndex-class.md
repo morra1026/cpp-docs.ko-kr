@@ -122,12 +122,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b103e2409da08dc67a55aae8ba8c5f49f377434
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: cc9965371de0ea75ece0cb31c7ec5187b9279cef
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677693"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726715"
 ---
 # <a name="cmdichildwndex-class"></a>CMDIChildWndEx 클래스
 `CMDIChildWndEx` 클래스 여러 문서 MDI (인터페이스) 자식 창은 Windows의 기능을 제공 합니다. 기능을 확장 [CMDIChildWnd 클래스](../../mfc/reference/cmdichildwnd-class.md)합니다. MDI 응용 프로그램에서 특정 MFC 클래스를 사용하면 프레임워크에 이 클래스가 필요합니다.  
@@ -239,11 +239,11 @@ BOOL AddPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pControlBar*  
- 창에 대 한 포인터입니다.  
+*pControlBar*<br/>
+[in] 창에 대 한 포인터입니다.  
   
- [in] *bTail*  
- 도킹 관리자에 대 한 창 창의 목록 끝에 추가. 그렇지 않으면 FALSE입니다.  
+*bTail*<br/>
+[in] 도킹 관리자에 대 한 창 창의 목록 끝에 추가. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  창 고 도킹 관리자; 성공적으로 등록 된 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -256,8 +256,8 @@ void AddTabbedPane(CDockablePane* pControlBar);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pControlBar*  
- 창에 대 한 포인터입니다.  
+*pControlBar*<br/>
+[in] 창에 대 한 포인터입니다.  
   
 ##  <a name="adjustdockinglayout"></a>  CMDIChildWndEx::AdjustDockingLayout  
  도킹 레이아웃을 조정합니다.  
@@ -267,8 +267,8 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hdwp*  
- 지연 된 창 위치 구조에 대 한 핸들입니다.  
+*hdwp*<br/>
+[in] 지연 된 창 위치 구조에 대 한 핸들입니다.  
   
 ##  <a name="canshowonmditabs"></a>  CMDIChildWndEx::CanShowOnMDITabs  
 
@@ -305,14 +305,14 @@ void DockPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- 창에 대 한 포인터입니다.  
+*pBar*<br/>
+[in] 창에 대 한 포인터입니다.  
   
- [in] *nDockBarID*  
- ID는 창입니다.  
+*nDockBarID*<br/>
+[in] ID는 창입니다.  
   
- [in] *lpRect*  
- 사각형에 대 한 포인터입니다.  
+*lpRect*<br/>
+[in] 사각형에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  합니다 *lpRect* 매개 변수가 사용 되지 않습니다.  
@@ -349,8 +349,8 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwDockStyle*  
- 사용 되는 주 프레임 창 측면을 지정 합니다. 다음 플래그 중 하나 이상을 사용 합니다.  
+*dwDockStyle*<br/>
+[in] 사용 되는 주 프레임 창 측면을 지정 합니다. 다음 플래그 중 하나 이상을 사용 합니다.  
   
 - CBRS_ALIGN_LEFT  
   
@@ -371,8 +371,8 @@ BOOL EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwDockStyle*  
- 사용할 수 있도록 도킹 맞춤을 지정 합니다.  
+*dwDockStyle*<br/>
+[in] 사용할 수 있도록 도킹 맞춤을 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -453,8 +453,8 @@ CBasePane* GetPane(UINT nID);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 검색할 창의 컨트롤 ID입니다.  
+*nID*<br/>
+[in] 검색할 창의 컨트롤 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
  창 고, 그렇지 않으면 NULL 포인터입니다.  
@@ -506,14 +506,14 @@ BOOL InsertPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pControlBar*  
- 삽입할 창에 대 한 포인터입니다.  
+*pControlBar*<br/>
+[in] 삽입할 창에 대 한 포인터입니다.  
   
- [in] *pTarget*  
- 인접 한 창에 대 한 포인터입니다.  
+*pTarget*<br/>
+[in] 인접 한 창에 대 한 포인터입니다.  
   
- [in] *후에는*  
- TRUE 이면 *pControlBar* 뒤에 삽입 됩니다 *pTarget*합니다. FALSE 이면 *pControlBar* 앞에 삽입 됩니다 *pTarget*합니다.  
+*후에는*<br/>
+[in] TRUE 이면 *pControlBar* 뒤에 삽입 됩니다 *pTarget*합니다. FALSE 이면 *pControlBar* 앞에 삽입 됩니다 *pTarget*합니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 FALSE이 고, 그렇지 면 TRUE입니다.  
@@ -529,14 +529,14 @@ BOOL IsPointNearDockSite(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 지정 된 지점입니다.  
+*지점*<br/>
+[in] 지정 된 지점입니다.  
   
- [in] *dwBarAlignment*  
- 요점은 가까운 가장자리를 지정 합니다. 가능한 값은 CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT, CBRS_ALIGN_TOP, 및 CBRS_ALIGN_BOTTOM  
+*dwBarAlignment*<br/>
+[in] 요점은 가까운 가장자리를 지정 합니다. 가능한 값은 CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT, CBRS_ALIGN_TOP, 및 CBRS_ALIGN_BOTTOM  
   
- [in] *bOuterEdge*  
- TRUE 이면 포인터가 거의 도킹 사이트;의 바깥쪽 테두리 FALSE이 고, 그렇지 합니다.  
+*bOuterEdge*<br/>
+[in] TRUE 이면 포인터가 거의 도킹 사이트;의 바깥쪽 테두리 FALSE이 고, 그렇지 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  도킹 사이트; 가까운 지점이 있으면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -580,8 +580,8 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pFrame*  
- 미니 프레임 창에 대 한 포인터입니다.  
+*pFrame*<br/>
+[in] 미니 프레임 창에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE는 메서드가 성공 하면, 그렇지 않으면 FALSE입니다.  
@@ -596,11 +596,11 @@ virtual void OnSetPreviewMode(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bPreview*  
- TRUE 이면 인쇄 미리 보기 모드로 전환 합니다. FALSE 이면 종료 인쇄 미리 보기 모드입니다.  
+*bPreview*<br/>
+[in] TRUE 이면 인쇄 미리 보기 모드로 전환 합니다. FALSE 이면 종료 인쇄 미리 보기 모드입니다.  
   
- [in] *pState*  
- 인쇄 미리 보기 상태 구조에 대 한 포인터입니다.  
+*pState*<br/>
+[in] 인쇄 미리 보기 상태 구조에 대 한 포인터입니다.  
   
 ##  <a name="onupdateframetitle"></a>  CMDIChildWndEx::OnUpdateFrameTitle  
  프레임 제목을 업데이트 하기 위해 프레임 워크에서 호출 됩니다.  
@@ -610,8 +610,8 @@ virtual void OnUpdateFrameTitle(BOOL bAddToTitle);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bAddToTitle*  
- TRUE 이면 제목에 문서 이름을 추가 합니다.  
+*bAddToTitle*<br/>
+[in] TRUE 이면 제목에 문서 이름을 추가 합니다.  
   
 ##  <a name="panefrompoint"></a>  CMDIChildWndEx::PaneFromPoint  
  지정된 된 점을 포함 하는 창을 반환 합니다.  
@@ -631,20 +631,20 @@ CBasePane* PaneFromPoint(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 확인 화면 좌표에서 지점에 지정 합니다.  
+*지점*<br/>
+[in] 확인 화면 좌표에서 지점에 지정 합니다.  
   
- [in] *nSensitivity*  
- 검색 영역에이 용량을 늘립니다. 지정 된 증가 된 영역에 해당 하는 경우 검색 조건을 충족 하는 창입니다.  
+*nSensitivity*<br/>
+[in] 검색 영역에이 용량을 늘립니다. 지정 된 증가 된 영역에 해당 하는 경우 검색 조건을 충족 하는 창입니다.  
   
- [in] *bExactBar*  
- 무시 하려면 TRUE를 *nSensitivity* 매개 변수, 그렇지 않으면 FALSE입니다.  
+*bExactBar*<br/>
+[in] 무시 하려면 TRUE를 *nSensitivity* 매개 변수, 그렇지 않으면 FALSE입니다.  
   
- [in] *pRTCBarType*  
- NULL이 아닌 경우 메서드는 지정 된 형식의 창만 검색 합니다.  
+*pRTCBarType*<br/>
+[in] NULL이 아닌 경우 메서드는 지정 된 형식의 창만 검색 합니다.  
   
- [in] *dwAlignment*  
- 창이 지정된 된 지점에 있으면이 매개 변수는 지정된 된 위치에 가장 가까운 창 옆쪽에 포함 합니다. 자세한 내용은 설명 섹션을 참조하세요.  
+*dwAlignment*<br/>
+[in] 창이 지정된 된 지점에 있으면이 매개 변수는 지정된 된 위치에 가장 가까운 창 옆쪽에 포함 합니다. 자세한 내용은 설명 섹션을 참조하세요.  
   
 ### <a name="return-value"></a>반환 값  
  에 대 한 포인터를 `CBasePane`-찾을 수 없는 창 하는 경우 지정 된 지점 또는 NULL을 포함 하는 파생 된 개체입니다.  
@@ -662,8 +662,8 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bNotify*  
- TRUE 인 경우 활성 현재 위치 항목 창에 대 한 레이아웃 변경의 알림을 수신 합니다.  
+*bNotify*<br/>
+[in] TRUE 인 경우 활성 현재 위치 항목 창에 대 한 레이아웃 변경의 알림을 수신 합니다.  
   
 ##  <a name="removepanefromdockmanager"></a>  CMDIChildWndEx::RemovePaneFromDockManager  
  창을 도킹 관리자에서 제거합니다.  
@@ -678,20 +678,20 @@ void RemovePaneFromDockManager(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pControlBar*  
- 제거할 창에 대 한 포인터입니다.  
+*pControlBar*<br/>
+[in] 제거할 창에 대 한 포인터입니다.  
   
- [in] *bDestroy*  
- TRUE 이면 제거 창 소멸 됩니다.  
+*bDestroy*<br/>
+[in] TRUE 이면 제거 창 소멸 됩니다.  
   
- [in] *bAdjustLayout*  
- TRUE 이면 즉시 도킹 레이아웃을 조정 합니다.  
+*bAdjustLayout*<br/>
+[in] TRUE 이면 즉시 도킹 레이아웃을 조정 합니다.  
   
- [in] *bAutoHide*  
- TRUE 이면 도킹 레이아웃을 자동 숨기기 막대의 목록 관련이 있습니다. False 인 경우, 일반 창 목록을 도킹 레이아웃 관련이 있습니다.  
+*bAutoHide*<br/>
+[in] TRUE 이면 도킹 레이아웃을 자동 숨기기 막대의 목록 관련이 있습니다. False 인 경우, 일반 창 목록을 도킹 레이아웃 관련이 있습니다.  
   
- [in] *pBarReplacement*  
- 제거 창을 대체 하는 창에 대 한 포인터입니다.  
+*pBarReplacement*<br/>
+[in] 제거 창을 대체 하는 창에 대 한 포인터입니다.  
   
 ##  <a name="setrelatedtabgroup"></a>  CMDIChildWndEx::SetRelatedTabGroup  
 
@@ -717,10 +717,10 @@ void ShowPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- [in] *bShow*  
- [in] *bDelay*  
- [in] *bActivate*  
+*pBar*<br/>
+[in] [in] *bShow*  
+*bDelay*<br/>
+[in] [in] *bActivate*  
   
 ### <a name="remarks"></a>설명  
   

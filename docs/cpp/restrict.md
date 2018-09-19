@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3eb361d0b92a3977547388ebfd612915431ec98
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 955c3574358d59d23b644a31e42ee91ce6ce76eb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39463683"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068340"
 ---
 # <a name="restrict"></a>restrict
 
@@ -32,21 +32,21 @@ ms.locfileid: "39463683"
 
 ## <a name="syntax"></a>구문
 
-> **__declspec(restrict)** *pointer_return_type* *function*();  
-  
+> **__declspec(restrict)** *pointer_return_type* *function*();
+
 ## <a name="remarks"></a>설명
 
 컴파일러에 전파 **__declspec(restrict)** 합니다. 예를 들어 CRT `malloc` 함수에는 **__declspec(restrict)** 장식 및 따라서 컴파일러 가정 하 여 메모리 위치로 초기화 된 포인터는 `malloc` 별칭이 지정 되지 않습니다도 이전에 기존 포인터입니다.
 
-컴파일러는 반환 된 포인터가 실제로 별칭이 지정 되지 않음을 확인 하지 않습니다. 개발자의 책임 프로그램 별칭을 지정 하지로 표시 된 포인터를 확인 하는 것은 **__declspec 제한** 한정자입니다.  
-  
+컴파일러는 반환 된 포인터가 실제로 별칭이 지정 되지 않음을 확인 하지 않습니다. 개발자의 책임 프로그램 별칭을 지정 하지로 표시 된 포인터를 확인 하는 것은 **__declspec 제한** 한정자입니다.
+
 변수에서 비슷한 의미 체계를 참조 하세요 [__restrict](../cpp/extension-restrict.md)합니다.
- 
+
 함수에는 앨리어싱에 적용 되는 다른 주석을 참조 하세요 [__declspec(noalias)](../cpp/noalias.md)합니다.
-  
-에 대 한 자세한 합니다 **제한** c + + AMP의 일부인 키워드 참조 [(c + + AMP) 제한](../cpp/restrict-cpp-amp.md)합니다.  
- 
-## <a name="example"></a>예  
+
+에 대 한 자세한 합니다 **제한** c + + AMP의 일부인 키워드 참조 [(c + + AMP) 제한](../cpp/restrict-cpp-amp.md)합니다.
+
+## <a name="example"></a>예제
 
 다음 샘플의 사용법을 보여 줍니다 **__declspec(restrict)** 합니다.
 
@@ -122,6 +122,7 @@ int main()
 **Microsoft 전용 종료**
 
 ## <a name="see-also"></a>참고자료
- [키워드](../cpp/keywords-cpp.md)  
- [__declspec](../cpp/declspec.md)  
- [__declspec(noalias)](../cpp/noalias.md)  
+
+[키워드](../cpp/keywords-cpp.md)<br/>
+[__declspec](../cpp/declspec.md)<br/>
+[__declspec(noalias)](../cpp/noalias.md)

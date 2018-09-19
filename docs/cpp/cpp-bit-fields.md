@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9bc13eb70dd2efc479cef7185ee0cdfa147ec507
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 69411a727c3f590e9a45a46ecb4ea2eb0eab05c8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408048"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029470"
 ---
 # <a name="c-bit-fields"></a>C++ 비트 필드
 
@@ -38,7 +38,7 @@ ms.locfileid: "39408048"
 > [!NOTE]
 > 두께가 0의 명명 되지 않은 비트 필드는 다음 다음 비트 필드의 맞춤을 강제로 **형식** 경계, 여기서 **형식** 유형 멤버입니다.
 
- 다음 예제에서는 비트 필드가 포함된 구조체를 선언합니다.
+다음 예제에서는 비트 필드가 포함된 구조체를 선언합니다.
 
 ```cpp
 // bit_fields1.cpp
@@ -94,4 +94,5 @@ struct Date {
 - 초기화가 아닌**const** 비트 필드를 사용 하 여 참조 합니다.
 
 ## <a name="see-also"></a>참고자료
- [클래스 및 구조체](../cpp/classes-and-structs-cpp.md)
+
+[클래스 및 구조체](../cpp/classes-and-structs-cpp.md)

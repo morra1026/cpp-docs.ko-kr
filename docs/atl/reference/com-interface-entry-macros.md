@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 914619c2790a904530f6efe2324549402d9b6785
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: fa3f3356cf3fdddeeb4245986549fa1bd2e12ae7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758159"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085227"
 ---
 # <a name="cominterfaceentry-macros"></a>COM_INTERFACE_ENTRY 매크로  
 
@@ -72,7 +72,8 @@ COM_INTERFACE_ENTRY( x )
 ```
 ### <a name="parameters"></a>매개 변수
 
-[in] 인터페이스의 이름 x 클래스 개체에서 파생 됩니다 직접.
+*x*<br/>
+[in] 클래스 개체에서 직접 파생 인터페이스의 이름입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -101,10 +102,10 @@ COM_INTERFACE_ENTRY2(x, x2)
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 [in] 개체에서 노출 하려는 인터페이스의 이름입니다.
 
-*x2*  
+*x2*<br/>
 [in] 상속 분기의 이름을 *x* 노출 됩니다.
 
 ### <a name="remarks"></a>설명
@@ -125,10 +126,10 @@ COM_INTERFACE_ENTRY_IID(iid, x)
 
 ### <a name="parameters"></a>매개 변수
 
-*iid*  
+*iid*<br/>
 [in] 노출 하는 인터페이스의 GUID입니다.
 
-*x*  
+*x*<br/>
 [in] 로 식별 되는 인터페이스와 해당 vtable 노출 될 클래스의 이름을 *iid*합니다.
 
 ### <a name="example"></a>예제
@@ -145,13 +146,13 @@ COM_INTERFACE_ENTRY2_IID(iid, x, x2)
 
 ### <a name="parameters"></a>매개 변수
 
-*iid*  
+*iid*<br/>
 [in] 인터페이스를 지정 하는 GUID입니다.
 
-*x*  
+*x*<br/>
 [in] 클래스 개체에서 직접 파생 되는 인터페이스의 이름입니다.
 
-*x2*  
+*x2*<br/>
 [in] 클래스 개체에서 직접 파생 되는 두 번째 인터페이스의 이름입니다.
 
 ##  <a name="com_interface_entry_aggregate"></a>  COM_INTERFACE_ENTRY_AGGREGATE
@@ -164,10 +165,10 @@ COM_INTERFACE_ENTRY_AGGREGATE(iid, punk)
 
 ### <a name="parameters"></a>매개 변수
 
-*iid*  
+*iid*<br/>
 [in] 에 대 한 쿼리 인터페이스의 GUID입니다.
 
-*punk*  
+*punk*<br/>
 [in] 이름을 `IUnknown` 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -188,7 +189,7 @@ COM_INTERFACE_ENTRY_AGGREGATE_BLIND(punk)
 
 ### <a name="parameters"></a>매개 변수
 
-*punk*  
+*punk*<br/>
 [in] 이름을 `IUnknown` 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -209,13 +210,13 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid, punk, clsid)
 
 ### <a name="parameters"></a>매개 변수
 
-*iid*  
+*iid*<br/>
 [in] 에 대 한 쿼리 인터페이스의 GUID입니다.
 
-*punk*  
+*punk*<br/>
 [in] 이름을 `IUnknown` 포인터입니다. COM 맵에 포함 하는 클래스의 멤버 여야 합니다.
 
-*clsid*  
+*clsid*<br/>
 [in] 만들어지는 경우 집계의 식별자 *punk* NULL입니다.
 
 ### <a name="remarks"></a>설명
@@ -234,10 +235,10 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(punk, clsid)
 
 ### <a name="parameters"></a>매개 변수
 
-*punk*  
+*punk*<br/>
 [in] 이름을 `IUnknown` 포인터입니다. COM 맵에 포함 하는 클래스의 멤버 여야 합니다.
 
-*clsid*  
+*clsid*<br/>
 [in] 만들어지는 경우 집계의 식별자 *punk* NULL입니다.
 
 ### <a name="remarks"></a>설명
@@ -258,7 +259,7 @@ COM_INTERFACE_ENTRY_BREAK(x)
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 [in] 인터페이스 식별자를 생성 하는 데 사용 하는 텍스트입니다.
 
 ### <a name="remarks"></a>설명
@@ -275,13 +276,13 @@ COM_INTERFACE_ENTRY_CACHED_TEAR_OFF(iid, x, punk)
 
 ### <a name="parameters"></a>매개 변수
 
-*iid*  
+*iid*<br/>
 [in] 분리 인터페이스의 GUID입니다.
 
-*x*  
+*x*<br/>
 [in] 인터페이스를 구현 하는 클래스의 이름입니다.
 
-*punk*  
+*punk*<br/>
 [in] 이름을 `IUnknown` 포인터입니다. COM 맵에 포함 하는 클래스의 멤버 여야 합니다. 클래스 개체의 생성자에서 NULL로 초기화 되어야 합니다.
 
 ### <a name="remarks"></a>설명
@@ -302,10 +303,10 @@ COM_INTERFACE_ENTRY_TEAR_OFF(iid, x)
 
 ### <a name="parameters"></a>매개 변수
 
-*iid*  
+*iid*<br/>
 [in] 분리 인터페이스의 GUID입니다.
 
-*x*  
+*x*<br/>
 [in] 인터페이스를 구현 하는 클래스의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -326,7 +327,7 @@ COM_INTERFACE_ENTRY_CHAIN(classname)
 
 ### <a name="parameters"></a>매개 변수
 
-*classname*  
+*classname*<br/>
 [in] 현재 개체의 기본 클래스입니다.
 
 ### <a name="remarks"></a>설명
@@ -349,13 +350,13 @@ COM_INTERFACE_ENTRY_FUNC(iid, dw, func)
 
 ### <a name="parameters"></a>매개 변수
 
-*iid*  
+*iid*<br/>
 [in] 노출 하는 인터페이스의 GUID입니다.
 
-*dw*  
+*dw*<br/>
 [in] 매개 변수를 전달 합니다 *func*합니다.
 
-*func*  
+*func*<br/>
 [in] 반환 하는 함수 포인터 *iid*합니다.
 
 ### <a name="remarks"></a>설명
@@ -376,10 +377,10 @@ COM_INTERFACE_ENTRY_FUNC_BLIND(dw, func)
 
 ### <a name="parameters"></a>매개 변수
 
-*dw*  
+*dw*<br/>
 [in] 매개 변수를 전달 합니다 *func*합니다.
 
-*func*  
+*func*<br/>
 [in] 이 항목의 COM 맵에 처리 될 때 호출 되는 함수입니다.
 
 ### <a name="remarks"></a>설명
@@ -396,7 +397,7 @@ COM_INTERFACE_ENTRY_NOINTERFACE(x)
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 [in] 인터페이스 식별자를 생성 하는 데 사용 하는 텍스트입니다.
 
 ### <a name="remarks"></a>설명

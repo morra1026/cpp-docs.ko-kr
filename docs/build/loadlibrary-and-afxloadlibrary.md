@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e24a86ead18cde836fd52df4e0c279f69b4c67a1
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: e2fe0b0523fb411b8ef4700a7dea7832c1cdfc52
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43687937"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726301"
 ---
 # <a name="loadlibrary-and-afxloadlibrary"></a>LoadLibrary 및 AfxLoadLibrary
 
@@ -39,7 +39,7 @@ MFC 확장명 Dll을 로드 하는 MFC 응용 프로그램을 사용 하는 권�
 
 Windows에서 DLL을 로드할 수 없는 경우 프로세스 오류 로부터 복구를 시도할 수 있습니다. 예를 들어 프로세스 오류의 사용자에 게 알림 및 DLL에 다른 경로 지정 하는 사용자에 게 요청 수입니다.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > 모든 Dll의 전체 경로 지정 해야 합니다. 파일을 로드 하는 경우 현재 디렉터리가 먼저 검색 됩니다. 파일의 경로 지정 하지 않으면 의도 하지 않은 파일을 로드할 수 있습니다. 이 문제를 방지 하는 또 다른 방법은 사용 하는 것은 [/DEPENDENTLOADFLAG](../build/reference/dependentloadflag.md) 링커 옵션입니다.
 
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.

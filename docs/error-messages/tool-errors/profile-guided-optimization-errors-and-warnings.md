@@ -12,18 +12,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24e467c3ba418bfb0c95a0054e30773301c614f7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 775702c7ecfdb579d8edcfb3e1786f5152dfcc7c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317322"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109420"
 ---
 # <a name="profile-guided-optimization-errors-and-warnings"></a>프로필 기반 최적화 오류 및 경고
-이 섹션은 빌드 도구에 의해 생성된 오류에 대한 참조입니다. 에 대 한 도움말 특정 오류 메시지를 출력 창에 오류 번호를 F1 키를 입력에 오류 번호는 **찾아보십시오** 인덱스 상자로 하거나 적절 한 링크를 클릭 합니다.  
-  
- [프로필 기반 최적화 오류 PG0165](../../error-messages/tool-errors/profile-guided-optimization-error-pg0165.md)  
-  
- [프로필 기반 최적화 경고 PG1039](../../error-messages/tool-errors/profile-guided-optimization-warning-pg1039.md)  
-  
- [프로필 기반 최적화 경고 PG1087](../../error-messages/tool-errors/profile-guided-optimization-warning-pg1087.md)
+
+이 섹션은 빌드 도구에 의해 생성된 오류에 대한 참조입니다. 특정 오류 메시지를 사용 하 여 도움말을 하나 클릭 출력 창의 오류 번호를 하 고 F1 키를 입력의 오류 번호를 **검색할** 상자에 인덱스 또는 해당 링크를 클릭 합니다.
+
+[프로필 기반 최적화 오류 PG0165](../../error-messages/tool-errors/profile-guided-optimization-error-pg0165.md)
+
+[프로필 기반 최적화 경고 PG1039](../../error-messages/tool-errors/profile-guided-optimization-warning-pg1039.md)
+
+[프로필 기반 최적화 경고 PG1087](../../error-messages/tool-errors/profile-guided-optimization-warning-pg1087.md)

@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 122c9cc8f1500132f507eb3477e108c3a5c67768
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 72c82ce5885b8b40613a65bab72958d6ae7c1a2d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217121"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050861"
 ---
 # <a name="structured-exception-handling-cc"></a>Structured Exception Handling (C/C++)
 
@@ -34,10 +34,10 @@ ms.locfileid: "43217121"
 
 ## <a name="grammar"></a>문법
 
-*문을 제외 하 고 시도* :  
+*문을 제외 하 고 시도* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**__try** *복합 문* **__except** **(** *식* **)** *복합 문*
 
-*시도--문* :  
+*시도--문* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**__try** *복합 문* **__finally** *복합 문*
 
 ## <a name="remarks"></a>설명
@@ -72,7 +72,7 @@ SEH 메커니즘에는 다음 두 가지가 있습니다.
 
 - [종료 처리기 작성](../cpp/writing-a-termination-handler.md)
 
-- [C + +에서 구조적된 예외 처리](../cpp/exception-handling-differences.md)
+- [C++에서 구조적 예외 처리](../cpp/exception-handling-differences.md)
 
 ## <a name="example"></a>예제
 
@@ -154,8 +154,8 @@ Executing SEH __except block
 
 ## <a name="see-also"></a>참고자료
 
-[예외 처리](../cpp/exception-handling-in-visual-cpp.md)  
-[키워드](../cpp/keywords-cpp.md)  
-[\<exception>](../standard-library/exception.md)  
-[오류 및 예외 처리](../cpp/errors-and-exception-handling-modern-cpp.md)  
-[구조적된 예외 처리 (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms680657.aspx)  
+[예외 처리](../cpp/exception-handling-in-visual-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
+[\<exception>](../standard-library/exception.md)<br/>
+[오류 및 예외 처리](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[구조적된 예외 처리 (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms680657.aspx)

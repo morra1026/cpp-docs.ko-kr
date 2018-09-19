@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4c8275b1fc511ebf4e09b625f64cffae74a3ca6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c4cfa4dbd157a76422cfc86f20b72af5b84c15c0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33263087"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051466"
 ---
 # <a name="compiler-error-c3001"></a>컴파일러 오류 C3001
-'error_text': OpenMP 지시문 이름이 필요합니다.  
-  
- `omp` pragma 뒤에 지시문이 와야 합니다.  
-  
- 다음 샘플에서는 C3001을 생성합니다.  
-  
-```  
-// C3001.c  
-// compile with: /openmp  
-int main()  
-{  
-   #pragma omp   // C3001 missing token  
-}  
+
+'error_text': OpenMP 지시문 이름이 필요합니다.
+
+`omp` pragma 뒤에 지시문이 와야 합니다.
+
+다음 샘플에서는 C3001을 생성합니다.
+
+```
+// C3001.c
+// compile with: /openmp
+int main()
+{
+   #pragma omp   // C3001 missing token
+}
 ```

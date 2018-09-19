@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94a8d5eed933461a3898026f4bac051245c94dbb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a1db81152e36b8d1d0fe95d15862036437e3a4fd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168336"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042600"
 ---
 # <a name="compiler-error-c2103"></a>컴파일러 오류 C2103
-레지스터 변수에 '&'가 있습니다.  
-  
- 레지스터의 주소를 가져올 수 없습니다.
+
+레지스터 변수에 '&'가 있습니다.
+
+레지스터의 주소를 가져올 수 없습니다.

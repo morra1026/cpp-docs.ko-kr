@@ -274,12 +274,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 094cf61c2535ef40991d2ab6ab9a1bc4a9dff014
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: f1e869fd70fb8f2d0b52d69dedb555c600fd390b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43684959"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726819"
 ---
 # <a name="clistctrl-class"></a>CListCtrl 클래스
 각각 이미지 목록의 아이콘과 레이블로 구성되는 항목 컬렉션을 표시하는 "목록 뷰 컨트롤"의 기능을 캡슐화합니다.  
@@ -1276,8 +1276,8 @@ BOOL GetGroupInfoByIndex(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iIndex*|그룹의 인덱스 0부터 시작 합니다.|  
-|[out] *pGroup*|에 대 한 포인터를 [LVGROUP](/windows/desktop/api/commctrl/ns-commctrl-taglvgroup) 에서 지정한 그룹에 대 한 정보를 수신 하는 구조를 *iIndex* 매개 변수입니다.<br /><br /> 호출자가 멤버 초기화를 담당 합니다 [LVGROUP](/windows/desktop/api/commctrl/ns-commctrl-taglvgroup) 구조입니다. 설정 합니다 `cbSize` 구조체의 크기 및 플래그의 멤버는 `mask` 검색할 정보를 지정 하는 멤버입니다.|  
+|*iIndex*|[in] 그룹의 인덱스 0부터 시작 합니다.|  
+|*pGroup*|[out] 에 대 한 포인터를 [LVGROUP](/windows/desktop/api/commctrl/ns-commctrl-taglvgroup) 에서 지정한 그룹에 대 한 정보를 수신 하는 구조를 *iIndex* 매개 변수입니다.<br /><br /> 호출자가 멤버 초기화를 담당 합니다 [LVGROUP](/windows/desktop/api/commctrl/ns-commctrl-taglvgroup) 구조입니다. 설정 합니다 `cbSize` 구조체의 크기 및 플래그의 멤버는 `mask` 검색할 정보를 지정 하는 멤버입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1353,9 +1353,9 @@ BOOL GetGroupRect(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iGroupId*|그룹을 지정합니다.|  
-|[out에서] *lpRect*|에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다. 구조에 지정 된 그룹의 사각형 좌표 수신이 메서드가 성공적 이면 *iGroupId*합니다.|  
-|[in] *iCoords*|검색할 사각형 좌표를 지정 합니다. 이러한 값 중 하나를 사용 합니다.<br /><br /> -LVGGR_GROUP-전체 확장 된 그룹의 (기본값) 좌표입니다.<br />-LVGGR_HEADER-헤더 (축소 된 그룹)만의 좌표입니다.<br />-LVGGR_SUBSETLINK-하위 집합 링크 (태그 하위 집합)만 조정합니다.|  
+|*iGroupId*|[in] 그룹을 지정합니다.|  
+|*lpRect*|[out에서] 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다. 구조에 지정 된 그룹의 사각형 좌표 수신이 메서드가 성공적 이면 *iGroupId*합니다.|  
+|*iCoords*|[in] 검색할 사각형 좌표를 지정 합니다. 이러한 값 중 하나를 사용 합니다.<br /><br /> -LVGGR_GROUP-전체 확장 된 그룹의 (기본값) 좌표입니다.<br />-LVGGR_HEADER-헤더 (축소 된 그룹)만의 좌표입니다.<br />-LVGGR_SUBSETLINK-하위 집합 링크 (태그 하위 집합)만 조정합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1406,8 +1406,8 @@ UINT GetGroupState(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iGroupId*|그룹의 인덱스 0부터 시작 합니다.|  
-|[in] *dwMask*|지정된 된 그룹에 대 한 검색 상태 값을 지정 하는 마스크입니다. 자세한 내용은 참조 하세요. 합니다 `mask` 의 멤버는 [LVGROUP](/windows/desktop/api/commctrl/ns-commctrl-taglvgroup) 구조입니다.|  
+|*iGroupId*|[in] 그룹의 인덱스 0부터 시작 합니다.|  
+|*dwMask*|[in] 지정된 된 그룹에 대 한 검색 상태 값을 지정 하는 마스크입니다. 자세한 내용은 참조 하세요. 합니다 `mask` 의 멤버는 [LVGROUP](/windows/desktop/api/commctrl/ns-commctrl-taglvgroup) 구조입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  지정된 된 그룹 또는 그룹을 찾을 수 없는 경우 0에 대 한 요청 된 상태입니다.  
@@ -1660,10 +1660,10 @@ BOOL GetItemIndexRect(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *pItemIndex*|에 대 한 포인터를 [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) 하위 항목의 부모 항목에 대 한 구조입니다.<br /><br /> 호출자가 할당 하 고 멤버를 설정 하는 일을 담당 합니다 [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) 구조입니다. 이 매개 변수는 NULL 일 수 없습니다.|  
-|[in] *iColumn*|컨트롤에 있는 열의 0부터 시작 인덱스입니다.|  
-|[in] *rectType*|경계 사각형을 검색 되는 목록 뷰 하위 항목의 부분입니다. 다음 값 중 하나를 지정합니다.<br /><br /> LVIR_BOUNDS-아이콘 및 레이블 포함 한 전체 하위 항목의 경계 사각형을 반환 합니다.<br /><br /> LVIR_ICON-아이콘 또는 작은 아이콘의 하위 항목의 경계 사각형을 반환 합니다.<br /><br /> LVIR_LABEL-하위 항목 텍스트의 경계 사각형을 반환 합니다.|  
-|[out] *pRect*|에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 하위 항목의 경계 사각형에 대 한 정보를 수신 하는 구조입니다.<br /><br /> 호출자가 할당 하는 일을 담당 합니다 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다. 이 매개 변수는 NULL 일 수 없습니다.|  
+|*pItemIndex*|[in] 에 대 한 포인터를 [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) 하위 항목의 부모 항목에 대 한 구조입니다.<br /><br /> 호출자가 할당 하 고 멤버를 설정 하는 일을 담당 합니다 [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) 구조입니다. 이 매개 변수는 NULL 일 수 없습니다.|  
+|*iColumn*|[in] 컨트롤에 있는 열의 0부터 시작 인덱스입니다.|  
+|*rectType*|[in] 경계 사각형을 검색 되는 목록 뷰 하위 항목의 부분입니다. 다음 값 중 하나를 지정합니다.<br /><br /> LVIR_BOUNDS-아이콘 및 레이블 포함 한 전체 하위 항목의 경계 사각형을 반환 합니다.<br /><br /> LVIR_ICON-아이콘 또는 작은 아이콘의 하위 항목의 경계 사각형을 반환 합니다.<br /><br /> LVIR_LABEL-하위 항목 텍스트의 경계 사각형을 반환 합니다.|  
+|*pRect*|[out] 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 하위 항목의 경계 사각형에 대 한 정보를 수신 하는 구조입니다.<br /><br /> 호출자가 할당 하는 일을 담당 합니다 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다. 이 매개 변수는 NULL 일 수 없습니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1821,9 +1821,9 @@ BOOL GetItemSpacing(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *fSmall*|보기를 검색할 항목 간격입니다. 작은 아이콘 보기에 대 한 아이콘 보기에 대해 FALSE 또는 TRUE를 지정 합니다.|  
-|[out] *pnHorzSpacing*|항목 사이의 가로 간격을 포함합니다.|  
-|[out] *pnVertSpacing*|항목 사이의 세로 간격을 포함합니다.|  
+|*fSmall*|[in] 보기를 검색할 항목 간격입니다. 작은 아이콘 보기에 대 한 아이콘 보기에 대해 FALSE 또는 TRUE를 지정 합니다.|  
+|*pnHorzSpacing*|[out] 항목 사이의 가로 간격을 포함합니다.|  
+|*pnVertSpacing*|[out] 항목 사이의 세로 간격을 포함합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1944,8 +1944,8 @@ BOOL GetNextItemIndex(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out에서] *pItemIndex*|에 대 한 포인터를 [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) 검색이 시작 되는 항목을 설명 하는 구조 또는-1의 플래그와 일치 하는 첫 번째 항목을 찾을 합니다 *nFlags* 매개 변수입니다.<br /><br /> 이 메서드는 성공 하는 경우는 `LVITEMINDEX` 구조 검색 하 여 찾은 항목에 설명 합니다.|  
-|[in] *nFlags*|검색을 수행 하는 방법을 지정 하는 플래그의 비트 조합 (OR)입니다.<br /><br /> 검색 인덱스, 상태 또는 대상 항목의 모양에 따라 달라질 수 있습니다 또는 항목을 기준으로 대상 항목의 실제 위치를 지정 하는 *pItemIndex* 매개 변수입니다. 자세한 내용은 참조는 *플래그* 에서 매개 변수를 [LVM_GETNEXTITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761059) 메시지.|  
+|*pItemIndex*|[out에서] 에 대 한 포인터를 [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) 검색이 시작 되는 항목을 설명 하는 구조 또는-1의 플래그와 일치 하는 첫 번째 항목을 찾을 합니다 *nFlags* 매개 변수입니다.<br /><br /> 이 메서드는 성공 하는 경우는 `LVITEMINDEX` 구조 검색 하 여 찾은 항목에 설명 합니다.|  
+|*nFlags*|[in] 검색을 수행 하는 방법을 지정 하는 플래그의 비트 조합 (OR)입니다.<br /><br /> 검색 인덱스, 상태 또는 대상 항목의 모양에 따라 달라질 수 있습니다 또는 항목을 기준으로 대상 항목의 실제 위치를 지정 하는 *pItemIndex* 매개 변수입니다. 자세한 내용은 참조는 *플래그* 에서 매개 변수를 [LVM_GETNEXTITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761059) 메시지.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -2647,7 +2647,7 @@ BOOL IsItemVisible(int index) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *인덱스*|현재 목록 뷰 컨트롤에 있는 항목의 0부터 시작 인덱스입니다.|  
+|*index*|[in] 현재 목록 뷰 컨트롤에 있는 항목의 0부터 시작 인덱스입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 지정된 된 항목이 표시 되 고, 그렇지 않으면 FALSE입니다.  
@@ -2666,7 +2666,7 @@ UINT MapIDToIndex(UINT id) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *id*|항목의 고유 ID입니다.|  
+|*ID*|[in] 항목의 고유 ID입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  지정된 된 ID에 대 한 현재 인덱스  
@@ -2689,7 +2689,7 @@ UINT MapIndexToID(UINT index) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *인덱스*|항목의 0부터 시작 하는 인덱스입니다.|  
+|*index*|[in] 항목의 0부터 시작 하는 인덱스입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  지정된 된 항목에 대 한 고유 ID입니다.  
@@ -2773,11 +2773,11 @@ void MoveItemToGroup(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *idItemFrom*  
- 이동할 항목의 인덱스입니다.  
+*idItemFrom*<br/>
+[in] 이동할 항목의 인덱스입니다.  
   
- [in] *idGroupTo*  
- 그룹의 식별자를 항목 이동 됩니다.  
+*idGroupTo*<br/>
+[in] 그룹의 식별자를 항목 이동 됩니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -3496,9 +3496,9 @@ BOOL SetItemIndexState(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *pItemIndex*|에 대 한 포인터를 [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) 항목을 설명 하는 구조입니다. 호출자는이 구조를 할당 하 고 해당 멤버를 설정 하는 일을 담당 합니다.|  
-|[in] *dwState*|상태 항목을 설정 하는 비트 조합 [목록 보기 항목 상태](/windows/desktop/Controls/list-view-item-states)합니다. 다시 설정, 0 또는 상태를 설정 하려면 하나를 지정 합니다.|  
-|[in] *dwMask*|지정 된 상태로의 유효한 비트 마스크를 *dwState* 매개 변수입니다. 비트 조합 (OR)을 지정 [목록 보기 항목 상태](/windows/desktop/Controls/list-view-item-states)합니다.|  
+|*pItemIndex*|[in] 에 대 한 포인터를 [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) 항목을 설명 하는 구조입니다. 호출자는이 구조를 할당 하 고 해당 멤버를 설정 하는 일을 담당 합니다.|  
+|*dwState*|[in] 상태 항목을 설정 하는 비트 조합 [목록 보기 항목 상태](/windows/desktop/Controls/list-view-item-states)합니다. 다시 설정, 0 또는 상태를 설정 하려면 하나를 지정 합니다.|  
+|*dwMask*|[in] 지정 된 상태로의 유효한 비트 마스크를 *dwState* 매개 변수입니다. 비트 조합 (OR)을 지정 [목록 보기 항목 상태](/windows/desktop/Controls/list-view-item-states)합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -3838,13 +3838,13 @@ BOOL SortItems(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pfnCompare*  
- 응용 프로그램 정의 비교 함수의 주소입니다.  
+*pfnCompare*<br/>
+[in] 응용 프로그램 정의 비교 함수의 주소입니다.  
   
  정렬 작업은 두 가지 목록 항목의 상대 순서를 결정 해야 할 때마다 비교 함수를 호출 합니다. 비교 함수는 클래스의 정적 멤버 또는 클래스의 멤버인 되지 않는 독립 실행형 함수 여야 합니다.  
   
- [in] *dwData*  
- 비교 함수에 전달 되는 응용 프로그램 정의 값입니다.  
+*dwData*<br/>
+[in] 비교 함수에 전달 되는 응용 프로그램 정의 값입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 성공 메서드 그렇지 않으면 FALSE입니다.  
@@ -3899,8 +3899,8 @@ BOOL SortItemsEx(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *pfnCompare*|응용 프로그램 정의 비교 함수의 주소입니다.<br /><br /> 정렬 작업은 두 가지 목록 항목의 상대 순서를 결정 해야 할 때마다 비교 함수를 호출 합니다. 비교 함수는 클래스의 정적 멤버 또는 클래스의 멤버인 되지 않는 독립 실행형 함수 여야 합니다.|  
-|[in] *dwData*|응용 프로그램 정의 값 비교 함수에 전달 합니다.|  
+|*pfnCompare*|[in] 응용 프로그램 정의 비교 함수의 주소입니다.<br /><br /> 정렬 작업은 두 가지 목록 항목의 상대 순서를 결정 해야 할 때마다 비교 함수를 호출 합니다. 비교 함수는 클래스의 정적 멤버 또는 클래스의 멤버인 되지 않는 독립 실행형 함수 여야 합니다.|  
+|*dwData*|[in] 응용 프로그램 정의 값 비교 함수에 전달 합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  

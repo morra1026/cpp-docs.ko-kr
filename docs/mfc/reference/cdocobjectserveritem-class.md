@@ -1,7 +1,7 @@
 ---
 title: CDocObjectServerItem 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 985333deaeceeed594e11223c417f3217e8b0322
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 9c9104dd36696b00dd334141b77b5f6fe1531e43
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43682045"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535108"
 ---
 # <a name="cdocobjectserveritem-class"></a>CDocObjectServerItem 클래스
 DocObject 서버 전용 OLE 서버 동사를 구현합니다.  
@@ -67,7 +67,7 @@ class CDocObjectServerItem : public COleServerItem
   
  사용 하도록 `CDocObjectServerItem`, 속하는 합니다 [OnGetEmbeddedItem](../../mfc/reference/coleserverdoc-class.md#ongetembeddeditem) 에서 재정의 `COleServerDoc`-파생된 클래스는 새 반환 `CDocObjectServerItem` 개체. 항목의 모든 기능을 변경 해야 하는 경우 자신만의 새 인스턴스를 만들 수 있습니다 `CDocObjectServerItem`-클래스를 파생 합니다.  
   
- 참조에 대 한 자세한 내용은 DocObjects [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md) 및 [COleCmdUI](../../mfc/reference/colecmdui-class.md) 에 *MFC 참조*합니다. 도 참조 하세요 [인터넷 첫 번째 단계: 활성 문서](../../mfc/active-documents-on-the-internet.md) 하 고 [액티브 문서](../../mfc/active-documents-on-the-internet.md)합니다.  
+ 참조에 대 한 자세한 내용은 DocObjects [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md) 및 [COleCmdUI](../../mfc/reference/colecmdui-class.md) 에 *MFC 참조*합니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  [CObject](../../mfc/reference/cobject-class.md)  

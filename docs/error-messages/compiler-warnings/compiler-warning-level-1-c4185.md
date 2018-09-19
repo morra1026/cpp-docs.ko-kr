@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf07335b8a3e5715adb954f2a544791b5d2b1d80
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: acd6750eff911f52cdf656aa4e9a54cfe084ff00
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33276863"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027377"
 ---
 # <a name="compiler-warning-level-1-c4185"></a>컴파일러 경고(수준 1) C4185
-알 수 없는 #import 특성 'attribute'를 무시합니다.  
-  
- attribute는 `#import`의 유효한 특성이 아닙니다. 무시됩니다.  
-  
-## <a name="example"></a>예제  
-  
-```  
-// C4185.cpp  
-// compile with: /W1 /c  
-#import "stdole2.tlb" no_such_attribute   // C4185  
+
+알 수 없는 #import 특성 'attribute'를 무시합니다.
+
+attribute는 `#import`의 유효한 특성이 아닙니다. 무시됩니다.
+
+## <a name="example"></a>예제
+
+```
+// C4185.cpp
+// compile with: /W1 /c
+#import "stdole2.tlb" no_such_attribute   // C4185
 ```

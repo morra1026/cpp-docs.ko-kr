@@ -53,14 +53,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e399cb38fee83fee23f88732bb2186c4b501c152
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 49b52bd65439165ef8dd83917a0d75926caba518
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32412630"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023668"
 ---
 # <a name="tolower-tolower-towlower-tolowerl-towlowerl"></a>tolower, _tolower, towlower, _tolower_l, _towlower_l
+
 문자를 소문자로 변환합니다.
 
 ## <a name="syntax"></a>구문
@@ -95,15 +96,15 @@ int _towlower_l(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 루틴의 복사본을 변환 *c* 를 소문자로 변환 하 여 가능 하 고 결과 반환 하는 경우. 오류를 나타내기 위해 예약된 반환 값은 없습니다.
+이러한 각 루틴의 복사본을 변환 *c* 소문자로 변환 가능 하 고 결과 반환 합니다. 오류를 나타내기 위해 예약된 반환 값은 없습니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 각 루틴은 가능하며 관련성이 있는 경우 지정된 대문자를 소문자로 변환합니다. 대/소문자 변환은 **towlower** 는 로캘에 따라 다릅니다. 현재 로캘에서 유효한 문자의 대/소문자만 변경됩니다. 없이 함수는 **_l** 접미사를 사용 하 여 현재 설정 로캘 합니다. 있는 이러한 함수 버전은 **_l** 접미사 로캘을 매개 변수로 하 고 현재 설정 하는 대신 사용 하는 로캘 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+이러한 각 루틴은 가능하며 관련성이 있는 경우 지정된 대문자를 소문자로 변환합니다. 대/소문자 변환은 **towlower** 로캘에 따라 다릅니다. 현재 로캘에서 유효한 문자의 대/소문자만 변경됩니다. 없는 함수는 **_l** 접미사를 사용 하 여 현재 설정 로캘. 접미사가 있는 이러한 함수 버전은 **_l** 접미사는 로캘을 매개 변수로 및 현재 설정 대신 사용 하는 로캘. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-에 대 한 순서 대로 **_tolower** 예상된 결과를 제공할 [__isascii](isascii-isascii-iswascii.md) 및 [isupper](isupper-isupper-l-iswupper-iswupper-l.md) 모두 반환 해야 0이 아닌 합니다.
+되려면에서 **_tolower** 예상된 결과 있도록 [__isascii](isascii-isascii-iswascii.md) 하 고 [isupper](isupper-isupper-l-iswupper-iswupper-l.md) 가 둘 다 반환 0이 아닌 합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -111,11 +112,11 @@ int _towlower_l(
 |**_totlower_l**|**_tolower_l**|**_mbctolower_l**|**_towlower_l**|
 
 > [!NOTE]
-> **_tolower_l** 및 **_towlower_l** 로캘에 종속 되지 않습니다 있고 직접 호출할 수 있는 것은 아닙니다. 내부 사용을 위해 제공 되는 **_totlower_l**합니다.
+> **_tolower_l** 하 고 **_towlower_l** 은 로캘에 종속 되지 되지 않으며 직접 호출할 수 있습니다. 내부 용도로 제공 됩니다 **_totlower_l**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**tolower**|\<ctype.h>|
 |**_tolower**|\<ctype.h>|

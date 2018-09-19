@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 095959dd432de52c2a0d32cbd7198ea434223407
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ae66d00c6831d102cb3f6fd47d024745480674fc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195102"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107814"
 ---
 # <a name="compiler-error-c2325"></a>컴파일러 오류 C2325
-'type': 'name'의 오른쪽에 예기치 않은 형식  
-  
- 잘못 된 형식의 소멸자를 호출 합니다.  
-  
- 다음 샘플에서는 C2325 오류가 생성 됩니다.  
-  
-```  
-// C2325.cpp  
-// compile with: /c  
-class A {};  
-typedef A* pA_t;  
-void f() {  
-    A** ppa = new A *;  
-    ppa->~A*;   // C2325  
-  
-   pA_t *ppa2 = new pA_t;  
-   ppa2->~pA_t();   // OK  
-}  
+
+'type': 'name' 오른쪽에 예기치 않은 형식
+
+잘못 된 형식의 소멸자를 호출 합니다.
+
+다음 샘플에서는 C2325 오류가 생성 됩니다.
+
+```
+// C2325.cpp
+// compile with: /c
+class A {};
+typedef A* pA_t;
+void f() {
+    A** ppa = new A *;
+    ppa->~A*;   // C2325
+
+   pA_t *ppa2 = new pA_t;
+   ppa2->~pA_t();   // OK
+}
 ```

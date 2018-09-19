@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7d76b94ef099c2ac84ee7f048539ed56549d2e0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3f3813642503013ecd2ad3be4c01d55f12c837ba
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195258"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087042"
 ---
 # <a name="compiler-error-c2377"></a>컴파일러 오류 C2377
-'identifier': 재정의. 다른 기호를 사용하여 형식 정의를 오버로드할 수 없습니다.  
-  
- `typedef` 식별자가 다시 정의되었습니다.  
-  
- 다음 샘플에서는 C2377을 생성합니다.  
-  
-```  
-// C2377.cpp  
-// compile with: /c  
-typedef int i;  
-int i;   // C2377  
-int j;   // OK  
+
+'identifier': 재정의. 다른 기호를 사용하여 형식 정의를 오버로드할 수 없습니다.
+
+`typedef` 식별자가 다시 정의되었습니다.
+
+다음 샘플에서는 C2377을 생성합니다.
+
+```
+// C2377.cpp
+// compile with: /c
+typedef int i;
+int i;   // C2377
+int j;   // OK
 ```

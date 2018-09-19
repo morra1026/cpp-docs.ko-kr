@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6fddd90eaa6259cd2552dddbeafb405d90580ac
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: d2bb81c430483f4dc2e96defba1d6ade0a0be9fe
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43684354"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030003"
 ---
 # <a name="concurrentunorderedmap-class"></a>concurrent_unordered_map 클래스
 `concurrent_unordered_map` 클래스는 `std::pair<const K, _Element_type>` 형식의 다양한 길이 요소 시퀀스를 제어하는 동시성으로부터 안전한 컨테이너입니다. 시퀀스는 동시성으로부터 안전한 추가, 요소 액세스, 반복기 액세스 및 반복기 통과 작업을 사용할 수 있는 방식으로 표시됩니다.  
@@ -56,20 +56,20 @@ template <typename K,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `K`  
- 키 형식입니다.  
+*K*<br/>
+키 형식입니다.  
   
- `_Element_type`  
- 매핑된 형식입니다.  
+*_Element_type*<br/>
+매핑된 형식입니다.  
   
- `_Hasher`  
- 해시 함수 개체 형식입니다. 이 인수는 선택 사항이며 기본값은 `std::hash<K>`입니다.  
+*_Hasher*<br/>
+해시 함수 개체 형식입니다. 이 인수는 선택 사항이며 기본값은 `std::hash<K>`입니다.  
   
- `key_equality`  
- 같음 비교 함수 개체 형식입니다. 이 인수는 선택 사항이며 기본값은 `std::equal_to<K>`입니다.  
+*key_equality*<br/>
+같음 비교 함수 개체 형식입니다. 이 인수는 선택 사항이며 기본값은 `std::equal_to<K>`입니다.  
   
- `_Allocator_type`  
- 할당 및 순서가 지정 되지 않은 동시 맵에 대 한 메모리 할당 취소 하는 방법에 대 한 세부 정보를 캡슐화 하는 저장 된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이 며 기본값은 `std::allocator<std::pair<K`, `_Element_type>>`합니다.  
+*_Allocator_type*<br/>
+할당 및 순서가 지정 되지 않은 동시 맵에 대 한 메모리 할당 취소 하는 방법에 대 한 세부 정보를 캡슐화 하는 저장 된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이 며 기본값은 `std::allocator<std::pair<K`, `_Element_type>>`합니다.  
   
 ## <a name="members"></a>멤버  
   
@@ -144,8 +144,8 @@ const mapped_type& at(const key_type& KVal) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `KVal`  
- 찾을 키 값입니다.  
+*KVal*<br/>
+찾을 키 값입니다.  
   
 ### <a name="return-value"></a>반환 값  
  찾은 요소의 데이터 값에 대한 참조입니다.  
@@ -230,29 +230,29 @@ concurrent_unordered_map(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Iterator`  
- 입력 반복기의 형식입니다.  
+*_Iterator*<br/>
+입력 반복기의 형식입니다.  
   
- `_Number_of_buckets`  
- 순서가 지정되지 않은 이 맵에 대한 초기 버킷 수입니다.  
+*_Number_of_buckets*<br/>
+순서가 지정되지 않은 이 맵에 대한 초기 버킷 수입니다.  
   
- `_Hasher`  
- 순서가 지정되지 않은 이 맵에 대한 해시 함수입니다.  
+*_Hasher*<br/>
+순서가 지정되지 않은 이 맵에 대한 해시 함수입니다.  
   
- `key_equality`  
- 순서가 지정되지 않은 이 맵에 대한 같음 비교 함수입니다.  
+*key_equality*<br/>
+순서가 지정되지 않은 이 맵에 대한 같음 비교 함수입니다.  
   
- `_Allocator`  
- 순서가 지정되지 않은 이 맵에 대한 할당자입니다.  
+*_Allocator*<br/>
+순서가 지정되지 않은 이 맵에 대한 할당자입니다.  
   
- `_Begin`  
- 복사할 요소의 범위에서 첫 번째 요소의 위치입니다.  
+*시작 (_b)*<br/>
+복사할 요소의 범위에서 첫 번째 요소의 위치입니다.  
   
- `_End`  
- 복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.  
+*(_E)*<br/>
+복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.  
   
- `_Umap`  
- 요소를 복사해 오거나 이동해 올 소스 `concurrent_unordered_map` 개체입니다.  
+*_Umap*<br/>
+요소를 복사해 오거나 이동해 올 소스 `concurrent_unordered_map` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  모든 생성자는 할당자 개체 `_Allocator`를 저장하고 순서가 지정되지 않은 맵을 초기화합니다.  
@@ -276,8 +276,8 @@ size_type count(const key_type& KVal) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `KVal`  
- 검색할 키입니다.  
+*KVal*<br/>
+검색할 키입니다.  
   
 ### <a name="return-value"></a>반환 값  
  키 컨테이너에 나타나는 횟수 만큼 시간.  
@@ -324,8 +324,8 @@ std::pair<const_iterator,
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `KVal`  
- 검색할 키 값입니다.  
+*KVal*<br/>
+검색할 키 값입니다.  
   
 ### <a name="return-value"></a>반환 값  
  A [쌍](../../../standard-library/pair-structure.md) 여기서 첫 번째 요소를 시작 하는 반복기 이며 두 번째 요소 범위의 끝에 대 한 반복기입니다.  
@@ -344,8 +344,8 @@ const_iterator find(const key_type& KVal) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `KVal`  
- 검색할 키 값입니다.  
+*KVal*<br/>
+검색할 키 값입니다.  
   
 ### <a name="return-value"></a>반환 값  
  제공 된 키를 일치 하는 첫 번째 요소의 위치를 가리키는 반복기 또는 반복기 `end()` 이러한 요소가 없는 경우.  
@@ -403,23 +403,23 @@ typename std::enable_if<!std::is_same<const_iterator,
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Iterator`  
- 삽입에 사용되는 반복기 형식입니다.  
+*_Iterator*<br/>
+삽입에 사용되는 반복기 형식입니다.  
   
- `V`  
- Map에 삽입 된 값의 형식입니다.  
+*V*<br/>
+Map에 삽입 된 값의 형식입니다.  
   
- `value`  
- 삽입할 값입니다.  
+*값*<br/>
+삽입할 값입니다.  
   
- `_Where`  
- 삽입 지점을 검색할 시작 위치입니다.  
+*_Where*<br/>
+삽입 지점을 검색할 시작 위치입니다.  
   
- `first`  
- 삽입할 범위의 시작 부분입니다.  
+*first*<br/>
+삽입할 범위의 시작 부분입니다.  
   
- `last`  
- 삽입할 범위의 끝입니다.  
+*last*<br/>
+삽입할 범위의 끝입니다.  
   
 ### <a name="return-value"></a>반환 값  
  반복기 및 부울 값을 포함 하는 쌍입니다. 자세한 내용은 설명 섹션을 참조 합니다.  
@@ -496,8 +496,8 @@ mapped_type& operator[](key_type&& kval);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `KVal`  
- 키 값  
+*KVal*<br/>
+키 값  
   
  페이지를 찾거나 삽입 합니다.  
   
@@ -522,8 +522,8 @@ concurrent_unordered_map& operator= (concurrent_unordered_map&& _Umap);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Umap`  
- 소스 `concurrent_unordered_map` 개체입니다.  
+*_Umap*<br/>
+소스 `concurrent_unordered_map` 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이에 대 한 참조 `concurrent_unordered_map` 개체입니다.  
@@ -540,8 +540,8 @@ void rehash(size_type _Buckets);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Buckets`  
- 원하는 버킷 수입니다.  
+*_Buckets*<br/>
+원하는 버킷 수입니다.  
   
 ### <a name="remarks"></a>설명  
  멤버 함수는 필요에 따라 버킷 수를 `_Buckets` 이상으로 변경하고 해시 테이블을 다시 빌드합니다. 버킷 수는 2의 거듭제곱 이어야 합니다. 경우 하지 2의 거듭제곱을이 반올림 됩니다 다음 가장 큰 2의 제곱을 합니다.  
@@ -571,8 +571,8 @@ void swap(concurrent_unordered_map& _Umap);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Umap`  
- 스왑할 `concurrent_unordered_map` 개체입니다.  
+*_Umap*<br/>
+스왑할 `concurrent_unordered_map` 개체입니다.  
   
 ##  <a name="unsafe_begin"></a> unsafe_begin 
 
@@ -585,8 +585,8 @@ const_local_iterator unsafe_begin(size_type _Bucket) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Bucket`  
- 버킷 인덱스입니다.  
+*(_B)*<br/>
+버킷 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  버킷의 시작 부분을 가리키는 반복기입니다.  
@@ -600,8 +600,8 @@ size_type unsafe_bucket(const key_type& KVal) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `KVal`  
- 검색할 요소의 키입니다.  
+*KVal*<br/>
+검색할 요소의 키입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 컨테이너에 키에 대 한 버킷 인덱스입니다.  
@@ -626,8 +626,8 @@ size_type unsafe_bucket_size(size_type _Bucket);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Bucket`  
- 검색할 통 합니다.  
+*(_B)*<br/>
+검색할 통 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  현재이 컨테이너의 버킷 개수입니다.  
@@ -641,8 +641,8 @@ const_local_iterator unsafe_cbegin(size_type _Bucket) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Bucket`  
- 버킷 인덱스입니다.  
+*(_B)*<br/>
+버킷 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  버킷의 시작 부분을 가리키는 반복기입니다.  
@@ -656,8 +656,8 @@ const_local_iterator unsafe_cend(size_type _Bucket) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Bucket`  
- 버킷 인덱스입니다.  
+*(_B)*<br/>
+버킷 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  버킷의 시작 부분을 가리키는 반복기입니다.  
@@ -673,8 +673,8 @@ const_local_iterator unsafe_end(size_type _Bucket) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Bucket`  
- 버킷 인덱스입니다.  
+*(_B)*<br/>
+버킷 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  버킷의 끝을 가리키는 반복기입니다.  
@@ -696,17 +696,17 @@ size_type unsafe_erase(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Where`  
- 지울 반복기 위치입니다.  
+*_Where*<br/>
+지울 반복기 위치입니다.  
   
- `_Begin`  
- 삭제할 요소의 범위에서 첫 번째 요소의 위치입니다.  
+*시작 (_b)*<br/>
+삭제할 요소의 범위에서 첫 번째 요소의 위치입니다.  
   
- `_End`  
- 삭제할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.  
+*(_E)*<br/>
+삭제할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.  
   
- `KVal`  
- 지울 키 값입니다.  
+*KVal*<br/>
+지울 키 값입니다.  
   
 ### <a name="return-value"></a>반환 값  
  처음 두 구성원 함수의 제거 된 요소 뒤에 남은 첫 번째 요소를 지정 하는 반복기를 반환 하거나 `concurrent_unordered_map::end`이러한 요소가 없는 경우 (). 세 번째 멤버 함수는 제거 된 요소의 수를 반환 합니다.  

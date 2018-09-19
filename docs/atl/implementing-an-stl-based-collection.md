@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b6aa360229857e3c12322cb6579aa0dbbba53d9
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d414df9d5e5f7d930497d42b5ec73d92a65ac3cc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753242"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116713"
 ---
 # <a name="implementing-a-c-standard-library-based-collection"></a>C + + 표준 라이브러리 기반 컬렉션 구현
 
@@ -111,7 +111,7 @@ ATL은 제공 된 `ICollectionOnSTLImpl` 신속 하 게 개체에 c + + 표준 �
 
 ## <a name="see-also"></a>참고 항목
 
-[컬렉션 및 열거자](../atl/atl-collections-and-enumerators.md)   
-[ATLCollections 샘플](../visual-cpp-samples.md)   
+[컬렉션 및 열거자](../atl/atl-collections-and-enumerators.md)<br/>
+[ATLCollections 샘플](../visual-cpp-samples.md)<br/>
 [ATL 복사 정책 클래스](../atl/atl-copy-policy-classes.md)
 

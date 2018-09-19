@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae9ef120d3dba9bc3c337d02aac302fce85f3905
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3aad4a818d0c8869681f9a2f4c4ace0edb63cd02
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228316"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46117532"
 ---
 # <a name="compiler-error-c2583"></a>컴파일러 오류 C2583
-'identifier': ' const/volatile ' 'this'이 포인터는 생성자/소멸자에 적합 하지 않습니다  
-  
- 생성자 또는 소멸자가 선언 된 `const` 또는 `volatile`합니다. 이것은 허용되지 않습니다.  
-  
- 다음 샘플에서는 C2583 오류가 생성 됩니다.  
-  
-```  
-// C2583.cpp  
-// compile with: /c  
-class A {  
-public:  
-   int i;  
-   A() const;   // C2583  
-  
-   // try the following line instead  
-   // A();  
-};  
+
+'identifier': ' const/volatile ' 'this'이 포인터가 생성자/소멸자에 대해 잘못 되었습니다.
+
+생성자 나 소멸자를 선언 `const` 또는 `volatile`합니다. 이것은 허용되지 않습니다.
+
+다음 샘플에서는 C2583 오류가 생성 됩니다.
+
+```
+// C2583.cpp
+// compile with: /c
+class A {
+public:
+   int i;
+   A() const;   // C2583
+
+   // try the following line instead
+   // A();
+};
 ```

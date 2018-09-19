@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bd5f5edcf95144333524c41b803c24b728a621f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6f09cd8c16eeb5ec797643cb6653d069df41b136
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225279"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076946"
 ---
 # <a name="compiler-error-c2381"></a>컴파일러 오류 C2381
-'function': 재정의. __declspec (noreturn)와 다른  
-  
- 함수를 선언 하 고 사용 되는 정의 제외한 다음 정의 [noreturn](../../cpp/noreturn.md) `__declspec` 한정자입니다. 사용 `noreturn` 함수의 재정의 선언 및 정의의 사용에 동의 해야 합니다. `noreturn`합니다.  
-  
- 다음 샘플에서는 C2381 오류가 생성 됩니다.  
-  
-```  
-// C2381.cpp  
-// compile with: /c  
-void f1();  
-void __declspec(noreturn) f1() {}   // C2381  
-void __declspec(noreturn) f2() {}   // OK  
+
+'function': 재정의 __declspec (noreturn) 다른
+
+함수를 선언 하 고 사용 되는 정의 하지만 다음 정의 [noreturn](../../cpp/noreturn.md) `__declspec` 한정자입니다. 사용 `noreturn` 함수의 재정의; 선언 및 정의가 사용에 동의 해야 `noreturn`합니다.
+
+다음 샘플에서는 C2381 오류가 생성 됩니다.
+
+```
+// C2381.cpp
+// compile with: /c
+void f1();
+void __declspec(noreturn) f1() {}   // C2381
+void __declspec(noreturn) f2() {}   // OK
 ```

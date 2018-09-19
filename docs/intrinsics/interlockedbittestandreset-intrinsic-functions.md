@@ -28,12 +28,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 433d4ba23cbf4ed7e2819a3752cd2155b7c20371
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 12935c6a735d72bb1eb25627c78d69f362073a90
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540085"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724377"
 ---
 # <a name="interlockedbittestandreset-intrinsic-functions"></a>_interlockedbittestandreset Intrinsic Functions
 **Microsoft 전용**  
@@ -82,11 +82,11 @@ unsigned char _interlockedbittestandreset64_HLERelease(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `a`  
- 검사할 메모리에 대한 포인터입니다.  
+*a*<br/>
+[in] 검사할 메모리에 대 한 포인터입니다.  
   
- [in] `b`  
- 테스트할 비트 위치입니다.  
+*b*<br/>
+[in] 테스트할 비트 위치입니다.  
   
 ## <a name="return-value"></a>반환 값  
  `b`로 지정된 위치에 있는 비트의 원래 값입니다.  

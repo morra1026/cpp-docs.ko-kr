@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91de6c09128acd3ef1a008437ae418b96b45ef66
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 54e4ab00a0d0df90601d06d9e2ffa100d82d4c03
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762894"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037361"
 ---
 # <a name="composite-control-global-functions"></a>복합 컨트롤 전역 함수
 
@@ -77,19 +77,19 @@ ATLAPI_(int) AtlAxDialogBox(
 
 ### <a name="parameters"></a>매개 변수
 
-*hInstance*  
+*hInstance*<br/>
 [in] 해당 실행 파일 대화 상자 템플릿이 포함 된 모듈의 인스턴스를 식별 합니다.
 
-*lpTemplateName*  
+*lpTemplateName*<br/>
 [in] 대화 상자 템플릿을 식별합니다. 이 매개 변수는 대화 상자 템플릿의 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터 이거나 대화 상자 템플릿의 리소스 식별자를 지정 하는 정수 값입니다. 매개 변수는 리소스 식별자를 지정 하는 경우 경우 상위 워드가 0 이어야 합니다 하 고 해당 하위 단어는 식별자가 있어야 합니다. 사용할 수는 [MAKEINTRESOURCE](https://msdn.microsoft.com/library/windows/desktop/ms648029) 매크로이 값을 생성 합니다.
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] 대화 상자를 소유 하는 창을 식별 합니다.
 
-*lpDialogProc*  
+*lpDialogProc*<br/>
 [in] 대화 상자 프로시저를 가리킵니다. 대화 상자 프로시저에 대 한 자세한 내용은 참조 하세요. [DialogProc](https://msdn.microsoft.com/library/windows/desktop/ms645469)합니다.
 
-*dwInitParam*  
+*dwInitParam*<br/>
 [in] 대화 상자에 전달할 값을 지정 합니다 *lParam* WM_INITDIALOG 메시지의 매개 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -100,9 +100,9 @@ HRESULT 값 중 하나입니다.
 
 사용 하 `AtlAxDialogBox` ActiveX 컨트롤이 포함 된 대화 상자 템플릿을 사용으로 올바른 APPID, CLSID, URL 문자열을 지정 합니다 *텍스트* 필드를 **컨트롤** 섹션 대화 상자 리소스의 함께 " AtlAxWin80 "로 합니다 *클래스 이름* 동일한 섹션에서 필드입니다. 다음 어떤 올바른 방법을 보여 줍니다 **제어** 섹션은 다음과 같을 수 있습니다.
 
-```  
+```
 CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,  
-    "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100  
+    "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100
 ```
 
 리소스 스크립트 편집에 대 한 자세한 내용은 참조 하세요. [방법: 리소스 스크립트 파일을 텍스트 형식으로 열기](../../windows/how-to-open-a-resource-script-file-in-text-format.md)합니다. 컨트롤 리소스 정의 문에 대 한 자세한 내용은 참조 하세요. [공통 제어 매개 변수](/windows/desktop/menurc/common-control-parameters) 에서 Windows SDK *: SDK Tools*합니다.
@@ -124,19 +124,19 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 
 ### <a name="parameters"></a>매개 변수
 
-*hInstance*  
+*hInstance*<br/>
 [in] 해당 실행 파일 대화 상자 템플릿이 포함 된 모듈의 인스턴스를 식별 합니다.
 
-*lpTemplateName*  
+*lpTemplateName*<br/>
 [in] 대화 상자 템플릿을 식별합니다. 이 매개 변수는 대화 상자 템플릿의 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터 이거나 대화 상자 템플릿의 리소스 식별자를 지정 하는 정수 값입니다. 매개 변수는 리소스 식별자를 지정 하는 경우 경우 상위 워드가 0 이어야 합니다 하 고 해당 하위 단어는 식별자가 있어야 합니다. 사용할 수는 [MAKEINTRESOURCE](https://msdn.microsoft.com/library/windows/desktop/ms648029) 매크로이 값을 생성 합니다.
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] 대화 상자를 소유 하는 창을 식별 합니다.
 
-*lpDialogProc*  
+*lpDialogProc*<br/>
 [in] 대화 상자 프로시저를 가리킵니다. 대화 상자 프로시저에 대 한 자세한 내용은 참조 하세요. [DialogProc](https://msdn.microsoft.com/library/windows/desktop/ms645469)합니다.
 
-*dwInitParam*  
+*dwInitParam*<br/>
 [in] 대화 상자에 전달할 값을 지정 합니다 *lParam* WM_INITDIALOG 메시지의 매개 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -163,7 +163,7 @@ ATLAPI AtlAxCreateControl(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszName*  
+*lpszName*<br/>
 컨트롤에 전달할 문자열 포인터입니다. 다음 방법 중 하나로 포맷 되어야 합니다.
 
 - ProgID "MSCAL 예:. Calendar.7 "
@@ -179,13 +179,13 @@ ATLAPI AtlAxCreateControl(
    > [!NOTE]
    > "MSHTML:" 하는 MSHTML stream으로 지정 된 HTML 조각의 앞에 야 합니다.
 
-*hWnd*  
+*hWnd*<br/>
 [in] 컨트롤을 연결할 수 있는 창으로 처리 합니다.
 
-*pStream*  
+*pStream*<br/>
 [in] 컨트롤의 속성을 초기화 하는 데 사용 되는 스트림에 대 한 포인터입니다. NULL 일 수 있습니다.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 [out] 수신할 포인터의 주소는 `IUnknown` 컨테이너입니다. NULL 일 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -215,7 +215,7 @@ ATLAPI AtlAxCreateControlEx(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszName*  
+*lpszName*<br/>
 컨트롤에 전달할 문자열 포인터입니다. 다음 방법 중 하나로 포맷 되어야 합니다.
 
 - ProgID "MSCAL 예:. Calendar.7 "
@@ -231,22 +231,22 @@ ATLAPI AtlAxCreateControlEx(
    > [!NOTE]
    > "MSHTML:" 하는 MSHTML stream으로 지정 된 HTML 조각의 앞에 야 합니다.
 
-*hWnd*  
+*hWnd*<br/>
 [in] 컨트롤을 연결할 수 있는 창으로 처리 합니다.
 
-*pStream*  
+*pStream*<br/>
 [in] 컨트롤의 속성을 초기화 하는 데 사용 되는 스트림에 대 한 포인터입니다. NULL 일 수 있습니다.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 [out] 수신할 포인터의 주소는 `IUnknown` 컨테이너입니다. NULL 일 수 있습니다.
 
-*ppUnkControl*  
+*ppUnkControl*<br/>
 [out] 수신할 포인터의 주소는 `IUnknown` 만든된 컨트롤입니다. NULL 일 수 있습니다.
 
-*iidSink*  
+*iidSink*<br/>
 포함된 된 개체에는 송신 인터페이스의 인터페이스 식별자입니다.
 
-*punkSink*  
+*punkSink*<br/>
 에 대 한 포인터를 `IUnknown` 으로 지정 된 연결 지점에 연결할 싱크 개체의 인터페이스가 *iidSink* 포함된 된 개체 성공적으로 만들어진 후 포함된 된 개체에서.
 
 ### <a name="return-value"></a>반환 값
@@ -274,7 +274,7 @@ ATLAPI AtlAxCreateControlLic(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszName*  
+*lpszName*<br/>
 컨트롤에 전달할 문자열 포인터입니다. 다음 방법 중 하나로 포맷 되어야 합니다.
 
 - ProgID "MSCAL 예:. Calendar.7 "
@@ -290,16 +290,16 @@ ATLAPI AtlAxCreateControlLic(
    > [!NOTE]
    > "MSHTML:" 하는 MSHTML stream으로 지정 된 HTML 조각의 앞에 야 합니다.
 
-*hWnd*  
+*hWnd*<br/>
 컨트롤을 연결할 수 있는 창으로 처리 합니다.
 
-*pStream*  
+*pStream*<br/>
 컨트롤의 속성을 초기화 하는 데 사용 되는 스트림에 대 한 포인터입니다. NULL 일 수 있습니다.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 수신할 포인터의 주소는 `IUnknown` 컨테이너입니다. NULL 일 수 있습니다.
 
-*bstrLic*  
+*bstrLic*<br/>
 컨트롤에 대 한 라이선스를 포함 하는 BSTR입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -328,7 +328,7 @@ ATLAPI AtlAxCreateControlLicEx(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszName*  
+*lpszName*<br/>
 컨트롤에 전달할 문자열 포인터입니다. 다음 방법 중 하나로 포맷 되어야 합니다.
 
 - ProgID "MSCAL 예:. Calendar.7 "
@@ -344,25 +344,25 @@ ATLAPI AtlAxCreateControlLicEx(
    > [!NOTE]
    > "MSHTML:" 하는 MSHTML stream으로 지정 된 HTML 조각의 앞에 야 합니다.
 
-*hWnd*  
+*hWnd*<br/>
 컨트롤을 연결할 수 있는 창으로 처리 합니다.
 
-*pStream*  
+*pStream*<br/>
 컨트롤의 속성을 초기화 하는 데 사용 되는 스트림에 대 한 포인터입니다. NULL 일 수 있습니다.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 수신할 포인터의 주소는 `IUnknown` 컨테이너입니다. NULL 일 수 있습니다.
 
-*ppUnkControl*  
+*ppUnkControl*<br/>
 [out] 수신할 포인터의 주소는 `IUnknown` 만든된 컨트롤입니다. NULL 일 수 있습니다.
 
-*iidSink*  
+*iidSink*<br/>
 포함된 된 개체에는 송신 인터페이스의 인터페이스 식별자입니다.
 
-*punkSink*  
+*punkSink*<br/>
 에 대 한 포인터를 `IUnknown` 으로 지정 된 연결 지점에 연결할 싱크 개체의 인터페이스가 *iidSink* 포함된 된 개체 성공적으로 만들어진 후 포함된 된 개체에서.
 
-*bstrLic*  
+*bstrLic*<br/>
 컨트롤에 대 한 라이선스를 포함 하는 BSTR입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -390,13 +390,13 @@ ATLAPI AtlAxAttachControl(
 
 ### <a name="parameters"></a>매개 변수
 
-*pControl*  
+*pControl*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 컨트롤입니다.
 
-*hWnd*  
+*hWnd*<br/>
 [in] 컨트롤을 호스트 하는 창으로 처리 합니다.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 [out] 에 대 한 포인터에 대 한 포인터를 `IUnknown` 컨테이너 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -420,10 +420,10 @@ ATLAPI AtlAxGetHost(HWND h, IUnknown** pp);
 
 ### <a name="parameters"></a>매개 변수
 
-*h*  
+*h*<br/>
 [in] 컨트롤을 호스트 하는 창 핸들입니다.
 
-*pp*  
+*pp*<br/>
 [out] `IUnknown` 컨트롤의 컨테이너입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -440,10 +440,10 @@ ATLAPI AtlAxGetControl(HWND h, IUnknown** pp);
 
 ### <a name="parameters"></a>매개 변수
 
-*h*  
+*h*<br/>
 [in] 컨트롤을 호스트 하는 창 핸들입니다.
 
-*pp*  
+*pp*<br/>
 [out] `IUnknown` 호스팅되고 제어 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -460,10 +460,10 @@ HRESULT AtlSetChildSite(IUnknown* punkChild, IUnknown* punkParent);
 
 ### <a name="parameters"></a>매개 변수
 
-*punkChild*  
+*punkChild*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 자식 인터페이스입니다.
 
-*punkParent*  
+*punkParent*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 부모의 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -519,19 +519,19 @@ ATLAPI AtlGetObjectSourceInterface(
 
 ### <a name="parameters"></a>매개 변수
 
-*punkObj*  
+*punkObj*<br/>
 [in] 정보는 반환 될 개체에 대 한 포인터입니다.
 
-*plibid*  
+*plibid*<br/>
 [out] 소스 인터페이스의 정의 포함 하는 형식 라이브러리의 LIBID 포인터입니다.
 
-*piid*  
+*piid*<br/>
 [out] 개체의 기본 소스 인터페이스의 인터페이스 ID에 대 한 포인터입니다.
 
-*pdwMajor*  
+*pdwMajor*<br/>
 [out] 소스 인터페이스의 정의 포함 하는 형식 라이브러리의 주 버전 번호에 대 한 포인터입니다.
 
-*pdwMinor*  
+*pdwMinor*<br/>
 [out] 소스 인터페이스의 정의 포함 하는 형식 라이브러리의 부 버전 번호에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -553,5 +553,5 @@ ATLAPI AtlGetObjectSourceInterface(
 
 ## <a name="see-also"></a>참고 항목
 
-[함수](../../atl/reference/atl-functions.md)   
+[함수](../../atl/reference/atl-functions.md)<br/>
 [복합 컨트롤 매크로](../../atl/reference/composite-control-macros.md)

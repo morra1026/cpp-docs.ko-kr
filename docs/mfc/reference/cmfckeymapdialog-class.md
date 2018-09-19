@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af6e9ce4c252e2d798615292291dcd3e21cbd72a
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 810a375fce13d8628db5ff00d89964d84c83b525
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853672"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704049"
 ---
 # <a name="cmfckeymapdialog-class"></a>CMFCKeyMapDialog 클래스
 `CMFCKeyMapDialog` 클래스 명령을 키보드의 키에 매핑되는 컨트롤을 지원 합니다.  
@@ -110,15 +110,15 @@ CMFCKeyMapDialog(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndParentFrame*  
- 부모 창에 대 한 포인터를 `CMFCKeyMapDialog` 개체입니다.  
+*pWndParentFrame*<br/>
+[in] 부모 창에 대 한 포인터를 `CMFCKeyMapDialog` 개체입니다.  
   
- [in] *bEnablePrint*  
- TRUE 이면 액셀러레이터 키 목록을 인쇄할 수 있습니다. 그렇지 않으면 FALSE입니다. 기본값은 FALSE입니다.  
+*bEnablePrint*<br/>
+[in] TRUE 이면 액셀러레이터 키 목록을 인쇄할 수 있습니다. 그렇지 않으면 FALSE입니다. 기본값은 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는의 개체를 생성 하는 방법에 설명 합니다 `CMFCKeyMapDialog` 클래스입니다. 이 예제는의 일부를 [Visual Studio 데모 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#21](../../mfc/codesnippet/cpp/cmfckeymapdialog-class_1.cpp)]  
@@ -144,8 +144,8 @@ virtual CString FormatItem(int nItem) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nItem*  
- 키 매핑 내부 목록에 있는 항목의 0부터 시작 하는 인덱스입니다.  
+*nItem*<br/>
+[in] 키 매핑 내부 목록에 있는 항목의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `CString` 서식이 지정 된 항목 텍스트를 포함 하는 개체입니다.  
@@ -160,8 +160,8 @@ virtual CString GetCommandKeys(UINT uiCmdID) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmdID*  
- 명령 id입니다.  
+*uiCmdID*<br/>
+[in] 명령 id입니다.  
   
 ### <a name="return-value"></a>반환 값  
  세미콜론으로 구분 된 지정 된 명령과 사용 하 여 연결 된 바로 가기 키 (';') 목록입니다.  
@@ -178,11 +178,11 @@ virtual void OnInsertItem(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pButton*  
- 키보드 키 조합을 명령 이름 및 설명에 매핑할 때 사용 되는 도구 모음 단추에 대 한 포인터입니다. 주요 map 항목은 내부 목록 컨트롤에 저장 됩니다.  
+*pButton*<br/>
+[in] 키보드 키 조합을 명령 이름 및 설명에 매핑할 때 사용 되는 도구 모음 단추에 대 한 포인터입니다. 주요 map 항목은 내부 목록 컨트롤에 저장 됩니다.  
   
- [in] *nItem*  
- 내부 목록 컨트롤에 새 키 맵에서 항목을 삽입할 위치를 지정 하는 0부터 시작 인덱스입니다.  
+*nItem*<br/>
+[in] 내부 목록 컨트롤에 새 키 맵에서 항목을 삽입할 위치를 지정 하는 0부터 시작 인덱스입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -197,14 +197,14 @@ virtual int OnPrintHeader(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dc*  
- 프린터 디바이스 컨텍스트입니다.  
+*dc*<br/>
+[in] 프린터 디바이스 컨텍스트입니다.  
   
- [in] *n 페이지*  
- 인쇄할 페이지 번호입니다.  
+*. n 페이지*<br/>
+[in] 인쇄할 페이지 번호입니다.  
   
- [in] *cx*  
- 픽셀에서 헤더의 가로 오프셋입니다.  
+*cx*<br/>
+[in] 픽셀에서 헤더의 가로 오프셋입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 인쇄 되는 텍스트의 높이입니다. 자세한 내용은의 반환 값 섹션을 참조 하세요. [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext)합니다.  
@@ -225,20 +225,20 @@ virtual int OnPrintItem(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dc*  
- 프린터 디바이스 컨텍스트입니다.  
+*dc*<br/>
+[in] 프린터 디바이스 컨텍스트입니다.  
   
- [in] *nItem*  
- 인쇄 항목의 0부터 시작 하는 인덱스입니다.  
+*nItem*<br/>
+[in] 인쇄 항목의 0부터 시작 하는 인덱스입니다.  
   
- [in] *y*  
- 항목의 위치 페이지의 위쪽 사이의 세로 오프셋입니다.  
+*y*<br/>
+[in] 항목의 위치 페이지의 위쪽 사이의 세로 오프셋입니다.  
   
- [in] *cx*  
- 항목의 위치 페이지의 왼쪽 사이의 가로 오프셋입니다.  
+*cx*<br/>
+[in] 항목의 위치 페이지의 왼쪽 사이의 가로 오프셋입니다.  
   
- [in] *bCalcHeight*  
- 최상의 인쇄 항목 높이 계산. False 이면 기본 공간에 맞도록 인쇄 항목이 잘립니다.  
+*bCalcHeight*<br/>
+[in] 최상의 인쇄 항목 높이 계산. False 이면 기본 공간에 맞도록 인쇄 항목이 잘립니다.  
   
 ### <a name="return-value"></a>반환 값  
  인쇄 된 항목의 높이입니다.  

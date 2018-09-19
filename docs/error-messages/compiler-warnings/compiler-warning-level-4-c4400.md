@@ -16,29 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7164b323e5108b44ea40da699ffb906508f731a2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cd22db0313d2d0ea6494908259e7d098336f6dbd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299385"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016197"
 ---
 # <a name="compiler-warning-level-4-c4400"></a>컴파일러 경고(수준 4) C4400
-'type':이 형식에 대해 const/volatile 한정자는 지원 되지 않습니다  
-  
- [const](../../cpp/const-cpp.md)및 [휘발성](../../cpp/volatile-cpp.md)한정자의 공용 언어 런타임 형식 변수와 함께 작동 하지 것입니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C4400 오류가 발생 합니다.  
-  
-```  
-// C4400.cpp  
-// compile with: /clr /W4  
-// C4401 expected  
-using namespace System;  
-#pragma warning (disable : 4101)  
-int main() {  
-   const String^ str;   // C4400  
-   volatile String^ str2;   // C4400  
-}  
+
+'type':이 형식에서 const/volatile 한정자는 지원 되지 않습니다
+
+합니다 [const](../../cpp/const-cpp.md)하 고 [volatile](../../cpp/volatile-cpp.md)한정자가 공용 언어 런타임 형식의 변수를 사용 하 여 작동 하지 것입니다.
+
+## <a name="example"></a>예제
+
+다음 샘플 C4400를 생성합니다.
+
+```
+// C4400.cpp
+// compile with: /clr /W4
+// C4401 expected
+using namespace System;
+#pragma warning (disable : 4101)
+int main() {
+   const String^ str;   // C4400
+   volatile String^ str2;   // C4400
+}
 ```

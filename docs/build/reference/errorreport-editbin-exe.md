@@ -18,22 +18,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61113d7260c11b3eb73db1f25445a6a0050c52d1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b38171db494a0d90bdb46491451dd1e7216d729d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372297"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718356"
 ---
 # <a name="errorreport-editbinexe"></a>/ERRORREPORT(editbin.exe)
-```  
-/ERRORREPORT[NONE | PROMPT | QUEUE | SEND ]  
-```  
-  
-## <a name="remarks"></a>설명  
- 런타임 시 editbin.exe 실패 하는 경우 사용할 수 있습니다 **/ERRORREPORT** 이러한 내부 오류에 대 한 정보를 Microsoft로 보내도록 합니다.  
-  
- 에 대 한 자세한 내용은 **/ERRORREPORT**, 참조 [/errorReport (내부 컴파일러 오류 보고)](../../build/reference/errorreport-report-internal-compiler-errors.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [EDITBIN 옵션](../../build/reference/editbin-options.md)
+
+```
+/ERRORREPORT[NONE | PROMPT | QUEUE | SEND ]
+```
+
+## <a name="remarks"></a>설명
+
+Editbin.exe 런타임에 실패 하는 경우 사용할 수 있습니다 **/ERRORREPORT** 이러한 내부 오류에 대 한 Microsoft로 정보를 보내도록 합니다.
+
+에 대 한 자세한 내용은 **/ERRORREPORT**를 참조 하십시오 [/errorReport (내부 컴파일러 오류 보고)](../../build/reference/errorreport-report-internal-compiler-errors.md)합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[EDITBIN 옵션](../../build/reference/editbin-options.md)

@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17661f7497711449397ae2f64c9d6eff52d5f403
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 18666cc619796bc7ee0216eb9cdf020bd8d8a6f7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766927"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035749"
 ---
 # <a name="ccomcontrolbase-class"></a>CComControlBase 클래스
 
@@ -238,7 +238,7 @@ CComControlBase(HWND& h);
 
 ### <a name="parameters"></a>매개 변수
 
-*h*  
+*h*<br/>
 컨트롤과 연결 된 창에 대 한 핸들입니다.
 
 ### <a name="remarks"></a>설명
@@ -268,10 +268,10 @@ virtual HRESULT ControlQueryInterface(const IID& iid,
 
 ### <a name="parameters"></a>매개 변수
 
-*iid*  
+*iid*<br/>
 요청 된 인터페이스의 GUID입니다.
 
-*ppv*  
+*ppv*<br/>
 로 식별 되는 인터페이스 포인터에 대 한 포인터 *iid*, 또는 인터페이스를 찾을 수 없으면 NULL입니다.
 
 ### <a name="remarks"></a>설명
@@ -292,7 +292,7 @@ BOOL DoesVerbActivate(LONG iVerb);
 
 ### <a name="parameters"></a>매개 변수
 
-*iVerb*  
+*iVerb*<br/>
 값의 동작을 수행 하도록 나타내는 `DoVerb`합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -313,7 +313,7 @@ BOOL DoesVerbUIActivate(LONG iVerb);
 
 ### <a name="parameters"></a>매개 변수
 
-*iVerb*  
+*iVerb*<br/>
 값의 동작을 수행 하도록 나타내는 `DoVerb`합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -330,10 +330,10 @@ HRESULT DoVerbProperties(LPCRECT /* prcPosRect */, HWND hwndParent);
 
 ### <a name="parameters"></a>매개 변수
 
-*prcPosRec*  
+*prcPosRec*<br/>
 예약됨.
 
-*hwndParent*  
+*hwndParent*<br/>
 컨트롤이 포함 된 창 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -376,7 +376,7 @@ HRESULT GetAmbientAppearance(short& nAppearance);
 
 ### <a name="parameters"></a>매개 변수
 
-*nAppearance*  
+*nAppearance*<br/>
 DISPID_AMBIENT_APPEARANCE 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -397,7 +397,7 @@ HRESULT GetAmbientAutoClip(BOOL& bAutoClip);
 
 ### <a name="parameters"></a>매개 변수
 
-*bAutoClip*  
+*bAutoClip*<br/>
 DISPID_AMBIENT_AUTOCLIP 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -414,7 +414,7 @@ HRESULT GetAmbientBackColor(OLE_COLOR& BackColor);
 
 ### <a name="parameters"></a>매개 변수
 
-*BackColor*  
+*BackColor*<br/>
 DISPID_AMBIENT_BACKCOLOR 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -431,7 +431,7 @@ HRESULT GetAmbientCharSet(BSTR& bstrCharSet);
 
 ### <a name="parameters"></a>매개 변수
 
-*bstrCharSet*  
+*bstrCharSet*<br/>
 DISPID_AMBIENT_CHARSET 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -448,7 +448,7 @@ HRESULT GetAmbientCodePage(ULONG& ulCodePage);
 
 ### <a name="parameters"></a>매개 변수
 
-*ulCodePage*  
+*ulCodePage*<br/>
 DISPID_AMBIENT_CODEPAGE 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -465,7 +465,7 @@ HRESULT GetAmbientDisplayAsDefault(BOOL& bDisplayAsDefault);
 
 ### <a name="parameters"></a>매개 변수
 
-*bDisplayAsDefault*  
+*bDisplayAsDefault*<br/>
 DISPID_AMBIENT_DISPLAYASDEFAULT 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -482,7 +482,7 @@ HRESULT GetAmbientDisplayName(BSTR& bstrDisplayName);
 
 ### <a name="parameters"></a>매개 변수
 
-*bstrDisplayName*  
+*bstrDisplayName*<br/>
 DISPID_AMBIENT_DISPLAYNAME 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -499,7 +499,7 @@ HRESULT GetAmbientFont(IFont** ppFont);
 
 ### <a name="parameters"></a>매개 변수
 
-*ppFont*  
+*ppFont*<br/>
 컨테이너에 대 한 포인터의 앰비언트 [IFont](/windows/desktop/api/ocidl/nn-ocidl-ifont) 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -520,7 +520,7 @@ HRESULT GetAmbientFontDisp(IFontDisp** ppFont);
 
 ### <a name="parameters"></a>매개 변수
 
-*ppFont*  
+*ppFont*<br/>
 컨테이너에 대 한 포인터의 앰비언트 [IFontDisp](https://msdn.microsoft.com/library/windows/desktop/ms692695) 디스패치 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -541,7 +541,7 @@ HRESULT GetAmbientForeColor(OLE_COLOR& ForeColor);
 
 ### <a name="parameters"></a>매개 변수
 
-*전경색*  
+*전경색*<br/>
 DISPID_AMBIENT_FORECOLOR 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -558,7 +558,7 @@ HRESULT GetAmbientLocaleID(LCID& lcid);
 
 ### <a name="parameters"></a>매개 변수
 
-*lcid*  
+*lcid*<br/>
 DISPID_AMBIENT_LOCALEID 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -579,7 +579,7 @@ HRESULT GetAmbientMessageReflect(BOOL& bMessageReflect);
 
 ### <a name="parameters"></a>매개 변수
 
-*bMessageReflect*  
+*bMessageReflect*<br/>
 DISPID_AMBIENT_MESSAGEREFLECT 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -596,7 +596,7 @@ HRESULT GetAmbientPalette(HPALETTE& hPalette);
 
 ### <a name="parameters"></a>매개 변수
 
-*hPalette*  
+*hPalette*<br/>
 DISPID_AMBIENT_PALETTE 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -613,10 +613,10 @@ HRESULT GetAmbientProperty(DISPID dispid, VARIANT& var);
 
 ### <a name="parameters"></a>매개 변수
 
-*dispid*  
+*dispid*<br/>
 검색할 컨테이너 속성의 식별자입니다.
 
-*var*  
+*var*<br/>
 변수 속성을 받을입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -637,7 +637,7 @@ HRESULT GetAmbientRightToLeft(BOOL& bRightToLeft);
 
 ### <a name="parameters"></a>매개 변수
 
-*bRightToLeft*  
+*bRightToLeft*<br/>
 DISPID_AMBIENT_RIGHTTOLEFT 속성입니다. 콘텐츠는 왼쪽에서 오른쪽으로 표시 되어 있는 경우 오른쪽에서 왼쪽으로 false로 표시 되 면 TRUE로 설정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -654,7 +654,7 @@ HRESULT GetAmbientScaleUnits(BSTR& bstrScaleUnits);
 
 ### <a name="parameters"></a>매개 변수
 
-*bstrScaleUnits*  
+*bstrScaleUnits*<br/>
 DISPID_AMBIENT_SCALEUNITS 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -671,7 +671,7 @@ HRESULT GetAmbientShowGrabHandles(BOOL& bShowGrabHandles);
 
 ### <a name="parameters"></a>매개 변수
 
-*bShowGrabHandles*  
+*bShowGrabHandles*<br/>
 DISPID_AMBIENT_SHOWGRABHANDLES 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -688,7 +688,7 @@ HRESULT GetAmbientShowHatching(BOOL& bShowHatching);
 
 ### <a name="parameters"></a>매개 변수
 
-*bShowHatching*  
+*bShowHatching*<br/>
 DISPID_AMBIENT_SHOWHATCHING 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -705,7 +705,7 @@ HRESULT GetAmbientSupportsMnemonics(BOOL& bSupportsMnemonics);
 
 ### <a name="parameters"></a>매개 변수
 
-*bSupportsMnemonics*  
+*bSupportsMnemonics*<br/>
 DISPID_AMBIENT_SUPPORTSMNEMONICS 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -722,7 +722,7 @@ HRESULT GetAmbientTextAlign(short& nTextAlign);
 
 ### <a name="parameters"></a>매개 변수
 
-*nTextAlign*  
+*nTextAlign*<br/>
 DISPID_AMBIENT_TEXTALIGN 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -739,7 +739,7 @@ HRESULT GetAmbientTopToBottom(BOOL& bTopToBottom);
 
 ### <a name="parameters"></a>매개 변수
 
-*bTopToBottom*  
+*bTopToBottom*<br/>
 DISPID_AMBIENT_TOPTOBOTTOM 속성입니다. 텍스트 표시 되 면 TRUE로 설정 위쪽에서 아래쪽, 있으면 FALSE 표시 아래쪽 맨 위로 이동 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -756,7 +756,7 @@ HRESULT GetAmbientUIDead(BOOL& bUIDead);
 
 ### <a name="parameters"></a>매개 변수
 
-*bUIDead*  
+*bUIDead*<br/>
 DISPID_AMBIENT_UIDEAD 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -777,7 +777,7 @@ HRESULT GetAmbientUserMode(BOOL& bUserMode);
 
 ### <a name="parameters"></a>매개 변수
 
-*bUserMode*  
+*bUserMode*<br/>
 DISPID_AMBIENT_USERMODE 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -810,7 +810,7 @@ void GetZoomInfo(ATL_DRAWINFO& di);
 
 ### <a name="parameters"></a>매개 변수
 
-*di*  
+*di*<br/>
 확대/축소 비율의 분자와 분모를 보유 하는 구조입니다. 자세한 내용은 [ATL_DRAWINFO](../../atl/reference/atl-drawinfo-structure.md)합니다.
 
 ### <a name="remarks"></a>설명
@@ -827,10 +827,10 @@ HRESULT InPlaceActivate(LONG iVerb, const RECT* prcPosRect = NULL);
 
 ### <a name="parameters"></a>매개 변수
 
-*iVerb*  
+*iVerb*<br/>
 값에서 수행할 작업을 나타내는 [IOleObjectImpl::DoVerb](../../atl/reference/ioleobjectimpl-class.md#doverb)합니다.
 
-*prcPosRect*  
+*prcPosRect*<br/>
 전체 컨트롤의 위치에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -853,10 +853,10 @@ HRESULT InternalGetSite(REFIID riid, void** ppUnkSite);
 
 ### <a name="parameters"></a>매개 변수
 
-*riid*  
+*riid*<br/>
 반환 되어야 하는 인터페이스 포인터의 IID *ppUnkSite*합니다.
 
-*ppUnkSite*  
+*ppUnkSite*<br/>
 요청 된 인터페이스 포인터를 받는 포인터 변수의 주소입니다 *riid*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1259,7 +1259,7 @@ virtual HRESULT OnDraw(ATL_DRAWINFO& di);
 
 ### <a name="parameters"></a>매개 변수
 
-*di*  
+*di*<br/>
 에 대 한 참조를 [ATL_DRAWINFO](../../atl/reference/atl-drawinfo-structure.md) 그리기 측면을 컨트롤 범위 같은 그리기 정보가 포함 된 구조체 그리기 최적화 여부 및 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1286,7 +1286,7 @@ virtual HRESULT OnDrawAdvanced(ATL_DRAWINFO& di);
 
 ### <a name="parameters"></a>매개 변수
 
-*di*  
+*di*<br/>
 에 대 한 참조를 [ATL_DRAWINFO](../../atl/reference/atl-drawinfo-structure.md) 그리기 측면을 컨트롤 범위 같은 그리기 정보가 포함 된 구조체 그리기 최적화 여부 및 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1312,16 +1312,16 @@ LRESULT OnKillFocus(UINT /* nMsg */,
 
 ### <a name="parameters"></a>매개 변수
 
-*nMsg*  
+*nMsg*<br/>
 예약됨.
 
-*wParam*  
+*wParam*<br/>
 예약됨.
 
-*lParam*  
+*lParam*<br/>
 예약됨.
 
-*bHandled*  
+*bHandled*<br/>
 창 메시지가 성공적으로 처리 되었는지 여부를 나타내는 플래그입니다. 기본값은 FALSE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1341,16 +1341,16 @@ LRESULT OnMouseActivate(UINT /* nMsg */,
 
 ### <a name="parameters"></a>매개 변수
 
-*nMsg*  
+*nMsg*<br/>
 예약됨.
 
-*wParam*  
+*wParam*<br/>
 예약됨.
 
-*lParam*  
+*lParam*<br/>
 예약됨.
 
-*bHandled*  
+*bHandled*<br/>
 창 메시지가 성공적으로 처리 되었는지 여부를 나타내는 플래그입니다. 기본값은 FALSE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1370,16 +1370,16 @@ LRESULT OnPaint(UINT /* nMsg */,
 
 ### <a name="parameters"></a>매개 변수
 
-*nMsg*  
+*nMsg*<br/>
 예약됨.
 
-*wParam*  
+*wParam*<br/>
 기존 HDC 합니다.
 
-*lParam*  
+*lParam*<br/>
 예약됨.
 
-*lResult*  
+*lResult*<br/>
 예약됨.
 
 ### <a name="return-value"></a>반환 값
@@ -1403,16 +1403,16 @@ LRESULT OnSetFocus(UINT /* nMsg */,
 
 ### <a name="parameters"></a>매개 변수
 
-*nMsg*  
+*nMsg*<br/>
 예약됨.
 
-*wParam*  
+*wParam*<br/>
 예약됨.
 
-*lParam*  
+*lParam*<br/>
 예약됨.
 
-*bHandled*  
+*bHandled*<br/>
 창 메시지가 성공적으로 처리 되었는지 여부를 나타내는 플래그입니다. 기본값은 FALSE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1434,10 +1434,10 @@ BOOL PreTranslateAccelerator(LPMSG /* pMsg */,
 
 ### <a name="parameters"></a>매개 변수
 
-*pMsg*  
+*pMsg*<br/>
 예약됨.
 
-*hRet*  
+*hRet*<br/>
 예약됨.
 
 ### <a name="return-value"></a>반환 값
@@ -1470,7 +1470,7 @@ HRESULT SendOnDataChange(DWORD advf = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*advf*  
+*advf*<br/>
 플래그를 지정 하는 것이 좋습니다 하는 방법에 대 한 호출 [IAdviseSink::OnDataChange](/windows/desktop/api/objidl/nf-objidl-iadvisesink-ondatachange) 이루어집니다. 값은는 [ADVF](/windows/desktop/api/objidl/ne-objidl-tagadvf) 열거형입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1487,7 +1487,7 @@ HRESULT SendOnRename(IMoniker* pmk);
 
 ### <a name="parameters"></a>매개 변수
 
-*pmk*  
+*pmk*<br/>
 컨트롤의 새 모니커에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1524,10 +1524,10 @@ HRESULT SendOnViewChange(DWORD dwAspect, LONG lindex = -1);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwAspect*  
+*dwAspect*<br/>
 모양 또는 컨트롤의 뷰입니다.
 
-*lindex*  
+*lindex*<br/>
 변경 된 보기의 일부입니다. 1만 유효합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1548,7 +1548,7 @@ BOOL SetControlFocus(BOOL bGrab);
 
 ### <a name="parameters"></a>매개 변수
 
-*bGrab*  
+*bGrab*<br/>
 TRUE 이면 호출 컨트롤에 키보드 포커스를 설정 합니다. FALSE 인 경우는 포커스가 있는 경우 호출 컨트롤에서 키보드 포커스를 제거 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1569,7 +1569,7 @@ void SetDirty(BOOL bDirty);
 
 ### <a name="parameters"></a>매개 변수
 
-*bDirty*  
+*bDirty*<br/>
 데이터 멤버의 값 [CComControlBase::m_bRequiresSave](#m_brequiressave)합니다.
 
 ### <a name="remarks"></a>설명
@@ -1578,5 +1578,5 @@ void SetDirty(BOOL bDirty);
 
 ## <a name="see-also"></a>참고 항목
 
-[CComControl 클래스](../../atl/reference/ccomcontrol-class.md)   
+[CComControl 클래스](../../atl/reference/ccomcontrol-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

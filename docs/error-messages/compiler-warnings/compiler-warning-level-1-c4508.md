@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53f152c2f3573e5f3bd7b8e9be0603ed6d3f11bb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e5abc1d81c3e94c02a63f73c84f3f5e5c7e9b0b0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33283198"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038947"
 ---
 # <a name="compiler-warning-level-1-c4508"></a>컴파일러 경고(수준 1) C4508
-'function':; 값을 반환 해야 하는 함수 'void' 반환 형식으로 간주 됩니다.  
-  
- 함수는 지정 된 반환 형식이 없습니다. 이 경우 C4430도 발생 하 고 컴파일러 구현 C4430 (기본값은 int)에서 보고 된 문제를 해결 합니다.  
-  
- 이 경고를 해결 하려면 함수의 반환 형식을 명시적으로 선언 합니다.  
-  
- 다음 샘플에서는 C4508 오류가 생성 됩니다.  
-  
-```  
-// C4508.cpp  
-// compile with: /W1 /c  
-#pragma warning (disable : 4430)  
-func() {}   // C4508  
-void func2() {}   // OK  
+
+'function': 함수에 값을 반환 해야 'void' 반환 형식으로 간주 됩니다.
+
+함수는 지정 된 반환 형식이 없습니다. 이 경우 C4430도 발생 하 고 컴파일러 구현 C4430 (기본값은 int)에서 보고 된 문제를 해결 합니다.
+
+이 경고를 해결 하려면 함수의 반환 형식을 명시적으로 선언 합니다.
+
+다음 샘플에서는 C4508 오류가 생성 됩니다.
+
+```
+// C4508.cpp
+// compile with: /W1 /c
+#pragma warning (disable : 4430)
+func() {}   // C4508
+void func2() {}   // OK
 ```

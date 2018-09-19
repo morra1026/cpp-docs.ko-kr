@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2893644dc4dbec2d1ebc25be42ba4b30fbd19cb1
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: e96b9d70e48b63eafb8cb3c6f4938f962114fd39
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42539049"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059487"
 ---
 # <a name="currentscheduler-class"></a>CurrentScheduler 클래스
 호출 컨텍스트와 연결된 현재 스케줄러에 대한 추상화를 나타냅니다.  
@@ -80,8 +80,8 @@ static void __cdecl Create(const SchedulerPolicy& _Policy);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Policy`  
- 새로 만든된 스케줄러의 동작을 설명 하는 scheduler 정책입니다.  
+*정책 (_p)*<br/>
+새로 만든된 스케줄러의 동작을 설명 하는 scheduler 정책입니다.  
   
 ### <a name="remarks"></a>설명  
  암시적으로 호출 컨텍스트로 스케줄러의 첨부 파일 스케줄러 참조 횟수를 넣습니다.  
@@ -103,8 +103,8 @@ static ScheduleGroup* __cdecl CreateScheduleGroup(location& _Placement);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Placement`  
- 일정 그룹 내에서 작업 실행 편향 수는 있는 위치 참조입니다.  
+*있음 (_p)*<br/>
+일정 그룹 내에서 작업 실행 편향 수는 있는 위치 참조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  새로 만든된 일정 그룹에 대 한 포인터입니다. 이 `ScheduleGroup` 개체에 배치 될 초기 참조 개수입니다.  
@@ -198,8 +198,8 @@ static bool __cdecl IsAvailableLocation(const location& _Placement);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Placement`  
- 현재 스케줄러를 쿼리하는 위치에 대한 참조입니다.  
+*있음 (_p)*<br/>
+현재 스케줄러를 쿼리하는 위치에 대한 참조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `_Placement` 인수로 지정된 위치를 현재 스케줄러에서 사용할 수 있는지 여부를 나타냅니다.  
@@ -218,8 +218,8 @@ static void __cdecl RegisterShutdownEvent(HANDLE _ShutdownEvent);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_ShutdownEvent`  
- 현재 컨텍스트와 연결 된 스케줄러를 종료 하 고 자체를 제거 하는 경우 런타임에서 신호는 Windows 이벤트 개체에 대 한 핸들입니다.  
+*_ShutdownEvent*<br/>
+현재 컨텍스트와 연결 된 스케줄러를 종료 하 고 자체를 제거 하는 경우 런타임에서 신호는 Windows 이벤트 개체에 대 한 핸들입니다.  
   
 ### <a name="remarks"></a>설명  
  호출 컨텍스트에 연결 된 스케줄러가 없는 경우이 메서드를 호출 하면를 [scheduler_not_attached](scheduler-not-attached-class.md) 예외가 throw 됩니다.  
@@ -240,14 +240,14 @@ static void __cdecl ScheduleTask(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Proc`  
- 간단한 작업의 본문을 수행 하기 위해 실행할 함수에 대 한 포인터입니다.  
+*_Proc*<br/>
+간단한 작업의 본문을 수행 하기 위해 실행할 함수에 대 한 포인터입니다.  
   
- `_Data`  
- 작업의 본문에 매개 변수로 전달 되는 데이터에 대 한 void 포인터입니다.  
+*(_D)*<br/>
+작업의 본문에 매개 변수로 전달 되는 데이터에 대 한 void 포인터입니다.  
   
- `_Placement`  
- 간단한 작업이 실행될 수 있는 위치에 대한 참조입니다.  
+*있음 (_p)*<br/>
+간단한 작업이 실행될 수 있는 위치에 대한 참조입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드를 사용하면 현재 호출 컨텍스트와 연결된 스케줄러가 없는 경우 프로세스의 기본 스케줄러가 생성되고 호출 컨텍스트에 연결됩니다.  

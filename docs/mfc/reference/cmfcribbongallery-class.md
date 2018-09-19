@@ -88,12 +88,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ed6fde4ffb510c30189e49639112edfadfcfd14
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: de624d9775160d1cbe7f048baf2dd83a592cfbe3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540328"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724797"
 ---
 # <a name="cmfcribbongallery-class"></a>CMFCRibbonGallery 클래스
 Office 2007 스타일의 리본 갤러리를 구현합니다.  
@@ -161,7 +161,7 @@ class CMFCRibbonGallery : public CMFCRibbonButton
 ## <a name="remarks"></a>설명  
  갤러리 단추 처럼 일반 메뉴 단추를 제외 하 고 사용자가 열 때 갤러리를 표시 합니다. 갤러리에서 항목을 선택 하면 프레임 워크는 단추의 명령 ID와 함께 WM_COMMAND 메시지를 보냅니다. 메시지를 처리할 때 호출 해야 [CMFCRibbonGallery::GetLastSelectedItem](#getlastselecteditem) 갤러리에서 선택 된 항목을 확인 하려면.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서 다양 한 메서드를 사용 하는 방법에 설명 합니다 `CMFCRibbonGallery` 구성 하는 클래스를 `CMFCRibbonGallery` 개체입니다. 예제에는 갤러리에서 행당 항목 수가 지정, 메뉴 패널의 크기 조정 가능, 팝업 메뉴의 왼쪽 세로 막대를 사용 하도록 설정 및 리본 표시줄에서 직접 색상표도 리본 갤러리를 표시 하는 방법을 보여 줍니다. 이 코드 조각은 [클라이언트 그리기 샘플](../../visual-cpp-samples.md)의 일부입니다.  
   
  [!code-cpp[NVC_MFC_DrawClient#6](../../mfc/reference/codesnippet/cpp/cmfcribbongallery-class_1.cpp)]  
@@ -195,20 +195,20 @@ void AddGroup(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszGroupName*  
- 그룹의 이름을 지정합니다.  
+*lpszGroupName*<br/>
+[in] 그룹의 이름을 지정합니다.  
   
- [in] *uiImagesPaletteResID*  
- 그룹에 대 한 이미지가 포함 된 이미지 목록의 리소스 ID를 지정 합니다.  
+*uiImagesPaletteResID*<br/>
+[in] 그룹에 대 한 이미지가 포함 된 이미지 목록의 리소스 ID를 지정 합니다.  
   
- [in] *cxPaletteImage*  
- 이미지의 픽셀에서 너비를 지정합니다.  
+*cxPaletteImage*<br/>
+[in] 이미지의 픽셀에서 너비를 지정합니다.  
   
- [in] *imagesGroup*  
- 그룹 이미지를 포함 하는 이미지 목록에 대 한 참조입니다.  
+*imagesGroup*<br/>
+[in] 그룹 이미지를 포함 하는 이미지 목록에 대 한 참조입니다.  
   
- [in] *nIconsNum*  
- 그룹의 아이콘 수를 지정합니다. 사용자 지정 (소유자 그리기)에 대해서만이 매개 변수를 지정 해야 그룹입니다.  
+*nIconsNum*<br/>
+[in] 그룹의 아이콘 수를 지정합니다. 사용자 지정 (소유자 그리기)에 대해서만이 매개 변수를 지정 해야 그룹입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드를 호출 하 여 리본 갤러리에 있는 항목이 여러 그룹으로 나눌 수 있습니다. 각 그룹에는 캡션을 가질 수 있습니다.  
@@ -224,14 +224,14 @@ void AddSubItem(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pSubItem*  
- 메뉴에 추가할 항목에 대 한 포인터입니다.  
+*pSubItem*<br/>
+[in] 메뉴에 추가할 항목에 대 한 포인터입니다.  
   
- [in] *nIndex*  
- 위치의 0부터 시작 하는 인덱스 항목을 삽입할 위치를 지정 합니다.  
+*nIndex*<br/>
+[in] 위치의 0부터 시작 하는 인덱스 항목을 삽입할 위치를 지정 합니다.  
   
- [in] *bOnTop*  
- 리본 갤러리; 하기 전에 항목을 삽입할 지정. 그렇지 않으면 FALSE입니다.  
+*bOnTop*<br/>
+[in] 리본 갤러리; 하기 전에 항목을 삽입할 지정. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드를 호출 하 여 팝업 메뉴 항목과 함께 팝업 갤러리를 결합할 수 있습니다. 갤러리 전후 메뉴 항목을 배치할 수 있습니다.  
@@ -325,11 +325,11 @@ void EnableMenuResize(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 사용 하도록 설정 하려면 true로 설정 합니다; 크기 조정 그렇지 않으면 FALSE입니다.  
+*bEnable*<br/>
+[in] 사용 하도록 설정 하려면 true로 설정 합니다; 크기 조정 그렇지 않으면 FALSE입니다.  
   
- [in] *bVertcalOnly*  
- TRUE는 갤러리 크기를 조정할 수만; 세로로 지정 하려면 가로 및 세로 갤러리를 조정할 수 있는 지정 하려면 FALSE입니다.  
+*bVertcalOnly*<br/>
+[in] TRUE는 갤러리 크기를 조정할 수만; 세로로 지정 하려면 가로 및 세로 갤러리를 조정할 수 있는 지정 하려면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  리본 갤러리 크기 조정 사용 하지 않도록 설정 하거나 사용 하려면이 메서드를 사용 합니다. 크기 조정 설정 되 면 리본 갤러리 사용자는 크기를 조정 하는 데 사용할 수 있는 위치 조정 막대를 표시 합니다.  
@@ -342,8 +342,8 @@ void EnablMenuSideBar(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 세로 막대를 사용할 수 있음을;을 지정. 그렇지 않으면 FALSE입니다.  
+*bEnable*<br/>
+[in] 세로 막대를 사용할 수 있음을;을 지정. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  메뉴의 왼쪽에 있는 Office XP 스타일 세로 막대를 사용 하지 않도록 설정 하거나 사용 하려면이 메서드를 호출 합니다.  
@@ -381,8 +381,8 @@ LPCTSTR GetGroupName(int nGroupIndex) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nGroupIndex*  
- 검색 하려는 이름이 그룹에 대 한 인덱스를 지정 합니다.  
+*nGroupIndex*<br/>
+[in] 검색 하려는 이름이 그룹에 대 한 인덱스를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정된 된 인덱스에 있는 그룹의 이름입니다. 잘못 된 인덱스가 전달 실패 한 어설션이 발생 합니다.  
@@ -420,8 +420,8 @@ LPCTSTR GetItemToolTip(int nItemIndex) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nItemIndex*  
- 도구 설명 텍스트를 검색할 항목의 0부터 시작 하는 인덱스를 지정 합니다.  
+*nItemIndex*<br/>
+[in] 도구 설명 텍스트를 검색할 항목의 0부터 시작 하는 인덱스를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  리본 갤러리의 항목에 할당 된 도구 설명 문자열에 대 한 포인터입니다. 도구 설명이 해당 항목에 할당 되 면 NULL 수 있습니다.  
@@ -436,8 +436,8 @@ static int GetLastSelectedItem(UINT uiCmdID);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmdID*  
- 리본 갤러리 열리는 메뉴 항목의 명령 ID를 지정 합니다.  
+*uiCmdID*<br/>
+[in] 리본 갤러리 열리는 메뉴 항목의 명령 ID를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  사용자가 리본 갤러리의 모든 항목을 선택 하면 라이브러리 리본 갤러리 열리는 메뉴 단추의 명령 ID와 함께 WM_COMMAND 메시지를 보냅니다.  
@@ -576,20 +576,20 @@ virtual void OnDrawPaletteIcon(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 그리기에 사용 되는 장치 컨텍스트에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 그리기에 사용 되는 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rectIcon*  
- 그릴 아이콘의 경계 사각형을 지정 합니다.  
+*rectIcon*<br/>
+[in] 그릴 아이콘의 경계 사각형을 지정 합니다.  
   
- [in] *nIconIndex*  
- 그릴 아이콘의 갤러리 아이콘의 이미지 목록에서 인덱스를 지정 합니다.  
+*nIconIndex*<br/>
+[in] 그릴 아이콘의 갤러리 아이콘의 이미지 목록에서 인덱스를 지정 합니다.  
   
- [in] *pIcon*  
- 그리고 있는 아이콘에 대 한 포인터입니다.  
+*pIcon*<br/>
+[in] 그리고 있는 아이콘에 대 한 포인터입니다.  
   
- [in] *clrText*  
- 그릴 항목의 텍스트의 색을 지정 합니다.  
+*clrText*<br/>
+[in] 그릴 항목의 텍스트의 색을 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  리본 갤러리의 모양을 사용자 지정 파생된 클래스에서이 메서드를 재정의할 수 있습니다.  
@@ -659,11 +659,11 @@ virtual BOOL SetACCData(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pParent*  
- 리본 갤러리 창의 부모 창입니다.  
+*pParent*<br/>
+[in] 리본 갤러리 창의 부모 창입니다.  
   
- [out] *데이터*  
- 리본 갤러리에서 내게 필요한 옵션 데이터를 받는 `CAccessibilityData` 개체입니다.  
+*data*<br/>
+[out] `CAccessibilityData` 리본 갤러리에서 내게 필요한 옵션 데이터를 받는 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -678,8 +678,8 @@ void SetButtonMode(BOOL bSet=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bSet*  
- 리본 갤러리 드롭 다운 메뉴 단추;으로 표시. 리본에서 직접 리본 갤러리의 내용을 표시 하려면 FALSE입니다.  
+*bSet*<br/>
+[in] 리본 갤러리 드롭 다운 메뉴 단추;으로 표시. 리본에서 직접 리본 갤러리의 내용을 표시 하려면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -693,11 +693,11 @@ void SetGroupName(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nGroupIndex*  
- 이름이 변경 되는 그룹에 대 한 인덱스를 지정 합니다.  
+*nGroupIndex*<br/>
+[in] 이름이 변경 되는 그룹에 대 한 인덱스를 지정 합니다.  
   
- [in] *lpszGroupName*  
- 그룹에 대 한 새 이름을 지정합니다.  
+*lpszGroupName*<br/>
+[in] 그룹에 대 한 새 이름을 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  이름이 변경 되는 그룹을 추가 해 두어야를 사용 하 여 [CMFCRibbonGallery::AddGroup](#addgroup) 메서드.  
@@ -710,8 +710,8 @@ void SetIconsInRow(int nIconsInRow);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nIconsInRow*  
- 갤러리의 각 행에 표시할 항목 수를 지정 합니다.  
+*nIconsInRow*<br/>
+[in] 갤러리의 각 행에 표시할 항목 수를 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  리본 갤러리의 너비를 지정 하려면이 메서드를 사용 합니다.  
@@ -726,11 +726,11 @@ void SetItemToolTip(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nItemIndex*  
- 도구 설명이 연결 된 색상표 항목의 0부터 시작 하는 인덱스입니다.  
+*nItemIndex*<br/>
+[in] 도구 설명이 연결 된 색상표 항목의 0부터 시작 하는 인덱스입니다.  
   
- [in] *lpszToolTip*  
- 도구 설명에 표시할 텍스트입니다.  
+*lpszToolTip*<br/>
+[in] 도구 설명에 표시할 텍스트입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -747,14 +747,14 @@ void SetPalette(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *imagesPalette*  
- 갤러리에 표시할 아이콘을 포함 하는 이미지 목록을 지정 합니다.  
+*imagesPalette*<br/>
+[in] 갤러리에 표시할 아이콘을 포함 하는 이미지 목록을 지정 합니다.  
   
- [in] *uiImagesPaletteResID*  
- 갤러리에 표시할 아이콘이 포함 된 이미지 목록의 리소스 ID를 지정 합니다.  
+*uiImagesPaletteResID*<br/>
+[in] 갤러리에 표시할 아이콘이 포함 된 이미지 목록의 리소스 ID를 지정 합니다.  
   
- [in] *cxPaletteImage*  
- 갤러리에서 이미지의 픽셀에서 너비를 지정 합니다.  
+*cxPaletteImage*<br/>
+[in] 갤러리에서 이미지의 픽셀에서 너비를 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -766,8 +766,8 @@ void SetPaletteID(UINT nID);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 사용자가 갤러리 항목을 선택할 때 WM_COMMAND 메시지에 전송 되는 명령 ID를 지정 합니다.  
+*nID*<br/>
+[in] 사용자가 갤러리 항목을 선택할 때 WM_COMMAND 메시지에 전송 되는 명령 ID를 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  사용자가 선택한 갤러리의 특정 항목을 확인 하려면 호출을 [CMFCRibbonGallery::GetLastSelectedItem](#getlastselecteditem) 정적 메서드입니다.  

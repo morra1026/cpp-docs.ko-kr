@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5782cf051fe680cb99dcd99c8e9c2d050c4184cc
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 5707a7fd4ab83c8e3de3c4868ad41e3525621b07
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758133"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033955"
 ---
 # <a name="ccomgitptr-class"></a>CComGITPtr 클래스
 
@@ -38,13 +38,13 @@ ms.locfileid: "43758133"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T>  
+template <class T>
 class CComGITPtr
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-`T`  
+*T*<br/>
 GIT에 저장 될 인터페이스 포인터의 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -102,10 +102,10 @@ HRESULT Attach(DWORD dwCookie) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 GIT에 추가 될 인터페이스 포인터입니다.
 
-*dwCookie*  
+*dwCookie*<br/>
 인터페이스 포인터를 식별 하는 데 사용 되는 쿠키입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -130,17 +130,17 @@ CComGITPtr(CComGITPtr&& rv);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *p*  
-(GIT) 전역 인터페이스 테이블에 저장 하는 인터페이스 포인터입니다.
+*p*<br/>
+[in] (GIT) 전역 인터페이스 테이블에 저장 하는 인터페이스 포인터입니다.
 
-[in] *git*  
-기존에 대 한 참조 `CComGITPtr` 개체입니다.
+*Git*<br/>
+[in] 기존에 대 한 참조 `CComGITPtr` 개체입니다.
 
-[in] *dwCookie*  
-인터페이스 포인터를 식별 하는 데 사용 되는 쿠키입니다.
+*dwCookie*<br/>
+[in] 인터페이스 포인터를 식별 하는 데 사용 되는 쿠키입니다.
 
-[in] *rv*  
-원본 `CComGITPtr` 개체 데이터를 이동 합니다.
+*rv*<br/>
+[in] 원본 `CComGITPtr` 개체 데이터를 이동 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -170,7 +170,7 @@ HRESULT CopyTo(T** pp) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pp*  
+*pp*<br/>
 인터페이스를 수신 하는 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -238,17 +238,17 @@ CComGITPtr& operator= (CComGITPtr&& rv);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *p*  
-인터페이스 포인터입니다.
+*p*<br/>
+[in] 인터페이스 포인터입니다.
 
-[in] *git*  
-`CComGITPtr` 개체에 대한 참조입니다.
+*Git*<br/>
+[in] 에 대 한 참조를 `CComGITPtr` 개체입니다.
 
-[in] *dwCookie*  
-인터페이스 포인터를 식별 하는 데 사용 되는 쿠키입니다.
+*dwCookie*<br/>
+[in] 인터페이스 포인터를 식별 하는 데 사용 되는 쿠키입니다.
 
-[in] *rv*  
-`CComGITPtr` 데이터를 이동 합니다.
+*rv*<br/>
+[in] `CComGITPtr` 데이터를 이동 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -262,7 +262,7 @@ CComGITPtr& operator= (CComGITPtr&& rv);
 
 연결 된 쿠키를 반환 합니다 `CComGITPtr` 개체입니다.
 
-```  
+```
 operator DWORD() const;
 ```
 
@@ -288,7 +288,7 @@ GIT에서 인터페이스를 제거합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[자유 스레드된 마샬러](../../atl/atl-and-the-free-threaded-marshaler.md)   
-[아파트 간 인터페이스 액세스](/windows/desktop/com/accessing-interfaces-across-apartments)   
-[전역 인터페이스 테이블을 사용 하는 경우](/windows/desktop/com/when-to-use-the-global-interface-table)   
+[자유 스레드된 마샬러](../../atl/atl-and-the-free-threaded-marshaler.md)<br/>
+[아파트 간 인터페이스 액세스](/windows/desktop/com/accessing-interfaces-across-apartments)<br/>
+[전역 인터페이스 테이블을 사용 하는 경우](/windows/desktop/com/when-to-use-the-global-interface-table)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

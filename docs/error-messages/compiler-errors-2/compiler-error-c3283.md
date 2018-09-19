@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6bc23270d70a2fec1c0ac9cc5f6b96541085cfc6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0feaad0e0eb1b9dc5ee6c5b2f47e8f2a425b6d99
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249106"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096472"
 ---
 # <a name="compiler-error-c3283"></a>컴파일러 오류 C3283
-'type': 인터페이스에는 인스턴스 생성자를 사용할 수 없습니다.  
-  
- CLR [인터페이스](../../windows/interface-class-cpp-component-extensions.md) 에는 인스턴스 생성자를 사용할 수 없습니다.  정적 생성자는 허용됩니다.  
-  
- 다음 샘플에서는 C3283을 생성합니다.  
-  
-```  
-// C3283.cpp  
-// compile with: /clr  
-interface class I {  
-   I();   // C3283  
-};  
-```  
-  
- 해결 방법:  
-  
-```  
-// C3283b.cpp  
-// compile with: /clr /c  
-interface class I {  
-   static I(){}  
-};  
+
+'type': 인터페이스에는 인스턴스 생성자를 사용할 수 없습니다.
+
+CLR [인터페이스](../../windows/interface-class-cpp-component-extensions.md) 에는 인스턴스 생성자를 사용할 수 없습니다.  정적 생성자는 허용됩니다.
+
+다음 샘플에서는 C3283을 생성합니다.
+
+```
+// C3283.cpp
+// compile with: /clr
+interface class I {
+   I();   // C3283
+};
+```
+
+해결 방법:
+
+```
+// C3283b.cpp
+// compile with: /clr /c
+interface class I {
+   static I(){}
+};
 ```

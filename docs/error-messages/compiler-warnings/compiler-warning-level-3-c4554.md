@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad427c9d8a9091a1eea37b10e1e49ed2d8613c18
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b6349cada597b2089f03169071345a68179b24e3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294416"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114438"
 ---
 # <a name="compiler-warning-level-3-c4554"></a>컴파일러 경고(수준 3) C4554
-'operator': 연산자 우선 순위에 오류가; 확인 우선 순위를 명확 하 게 괄호를 사용 합니다.  
-  
- 다음 샘플에서는 C4554 오류가 생성 됩니다.  
-  
-```  
-// C4554.cpp  
-// compile with: /W3 /WX  
-int main() {  
-   int a = 0, b = 0, c = 0;  
-   a = a << b + c;   // C4554  
-   // probably intended (a << b) + c,  
-   // but will get a << (b + c)  
-}  
+
+'operator': 연산자 우선 순위에 가능한 오류를 확인 합니다. 우선 순위를 명확 하 게 괄호 사용
+
+다음 샘플에서는 C4554 오류가 생성 됩니다.
+
+```
+// C4554.cpp
+// compile with: /W3 /WX
+int main() {
+   int a = 0, b = 0, c = 0;
+   a = a << b + c;   // C4554
+   // probably intended (a << b) + c,
+   // but will get a << (b + c)
+}
 ```

@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c27d327fbac5e92ddb2fee50c30d57a46658e889
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 28404c4f8dddeafb624b873448d4dc7aaa5dc0d8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754607"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076816"
 ---
 # <a name="iolecontrolimpl-class"></a>IOleControlImpl 클래스
 
@@ -44,7 +44,7 @@ class IOleControlImpl
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `IOleControlImpl`합니다.
 
 ## <a name="members"></a>멤버
@@ -138,6 +138,6 @@ E_NOTIMPL 반환.
 
 ## <a name="see-also"></a>참고 항목
 
-[IOleObjectImpl 클래스](../../atl/reference/ioleobjectimpl-class.md)   
-[ActiveX 컨트롤 인터페이스](/windows/desktop/com/activex-controls-interfaces)   
+[IOleObjectImpl 클래스](../../atl/reference/ioleobjectimpl-class.md)<br/>
+[ActiveX 컨트롤 인터페이스](/windows/desktop/com/activex-controls-interfaces)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

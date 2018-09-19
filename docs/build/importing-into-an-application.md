@@ -16,29 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88f41d20191474da3713f061747d5985fd447116
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e88d34ce685e22e561683cc33db25997650ed7fd
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368059"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718389"
 ---
 # <a name="importing-into-an-application"></a>응용 프로그램으로 가져오기
-함수는 두 가지 방법으로 응용 프로그램으로 가져올 수 있습니다.  
-  
--   키워드를 사용 하 여 **__declspec (dllimport)** 주 응용 프로그램의 함수 정의  
-  
--   와 함께 모듈 정의 (.def) 파일을 사용 하 여 **__declspec (dllimport)**  
-  
-## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.  
-  
--   [__Declspec (dllimport)을 사용 하 여 응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)  
-  
--   [__Declspec (dllimport)를 사용 하 여 함수 호출 가져오기](../build/importing-function-calls-using-declspec-dllimport.md)  
-  
--   [데이터를 사용 하 여 __declspec (dllimport) 가져오기](../build/importing-data-using-declspec-dllimport.md)  
-  
--   [DEF 파일을 사용 하 여 가져오기](../build/importing-using-def-files.md)  
-  
-## <a name="see-also"></a>참고 항목  
- [가져오기 및 내보내기](../build/importing-and-exporting.md)
+
+함수는 두 메서드를 사용 하 여 응용 프로그램으로 가져올 수 있습니다.
+
+- 키워드를 사용 하 여 **__declspec (dllimport)** 주 응용 프로그램의 함수 정의에서
+
+- 와 함께 모듈 정의 (.def) 파일을 사용 하 여 **__declspec (dllimport)**
+
+## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
+
+- [__Declspec (dllimport)을 사용 하 여 응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)
+
+- [__Declspec (dllimport)를 사용 하 여 함수 호출 가져오기](../build/importing-function-calls-using-declspec-dllimport.md)
+
+- [데이터를 사용 하 여 __declspec (dllimport) 가져오기](../build/importing-data-using-declspec-dllimport.md)
+
+- [DEF 파일을 사용 하 여 가져오기](../build/importing-using-def-files.md)
+
+## <a name="see-also"></a>참고 항목
+
+[가져오기 및 내보내기](../build/importing-and-exporting.md)

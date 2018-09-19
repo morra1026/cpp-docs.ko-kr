@@ -17,17 +17,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e1d6d3277f27c20f7b1c002590fd26e1e2f08eb7
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 3602711a880bbfe97c2fe357982bb60a55299044
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39340032"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035541"
 ---
 # <a name="overriding-a-dynamic-accessor"></a>동적 접근자 재정의
+
 사용 하는 경우 동적 접근자와 같은 `CDynamicAccessor`, 명령 `Open` 메서드 열린된 행 집합의 열 정보를 자동으로 기준에 대 한 접근자를 만듭니다. 열은 바인딩하는 방법에 정확 하 게 제어 하려면 동적 접근자를 재정의할 수 있습니다.  
   
- 동적 접근자 재정의 전달 **false** 마지막 매개 변수로 `CCommand::Open` 메서드. 그러면 `Open` 접근자를 자동으로 만들지 못하게 합니다. 호출할 수 있습니다 `GetColumnInfo` 호출 `AddBindEntry` 바인딩하려는 각 열에 대 한 합니다. 다음 코드에는 작업을 수행 하는 방법을 보여 줍니다.  
+동적 접근자 재정의 전달 **false** 마지막 매개 변수로 `CCommand::Open` 메서드. 그러면 `Open` 접근자를 자동으로 만들지 못하게 합니다. 호출할 수 있습니다 `GetColumnInfo` 호출 `AddBindEntry` 바인딩하려는 각 열에 대 한 합니다. 다음 코드에는 작업을 수행 하는 방법을 보여 줍니다.  
   
 ```cpp  
 USES_CONVERSION;  
@@ -80,4 +81,5 @@ while (product.MoveNext() == S_OK)
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [접근자 사용](../../data/oledb/using-accessors.md)
+
+[접근자 사용](../../data/oledb/using-accessors.md)

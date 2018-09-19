@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54c28bf0918e61f3819865f65458ce78e5cdc4eb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 40c186e222edbb3b141fd13d8a5964e4a696edd8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320589"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087515"
 ---
 # <a name="nmake-warning-u4007"></a>NMAKE 경고 U4007
-'filename' 너무 깁니다; 파일 이름 8.3으로 잘립니다.  
-  
- 지정된 된 파일의 기본 이름에 8 개 이상의 문자가 또는 확장 프로그램에 세 개 이상의 문자입니다. Nmake는 8 자 자료에는 3 자리 확장 이름.  
-  
- 긴 파일 이름 파일 시스템에서 사용할 수, 하는 경우 이름을 큰따옴표로 묶습니다 (**"**).
+
+파일 이름이 너무 깁니다. ' filename' 8.3으로 잘립니다.
+
+지정된 된 파일의 기본 이름이 8 자 또는 확장에는 세 개 이상의 문자입니다. Nmake는 8 자 자료에 3 자로 확장 이름.
+
+긴 파일 이름 파일 시스템에서 지원 되는 경우 큰따옴표로 이름을 묶습니다 (**"**).

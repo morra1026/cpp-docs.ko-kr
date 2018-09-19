@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be04510f7967b431b7e7c4a3b11aef6f51afe8d8
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3f09347fdfaaf20e465e5be05ce446dfec449526
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763229"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024400"
 ---
 # <a name="cmessagemap-class"></a>CMessageMap 클래스
 
@@ -80,22 +80,22 @@ virtual BOOL ProcessWindowMessage(
 
 ### <a name="parameters"></a>매개 변수
 
-*hWnd*  
+*hWnd*<br/>
 [in] 메시지를 받는 창에 대 한 핸들입니다.
 
-*uMsg*  
+*uMsg*<br/>
 [in] 창으로 전송 하는 메시지입니다.
 
-*wParam*  
+*wParam*<br/>
 [in] 추가 메시지 관련 정보입니다.
 
-*lParam*  
+*lParam*<br/>
 [in] 추가 메시지 관련 정보입니다.
 
-*lResult*  
+*lResult*<br/>
 [out] 메시지 처리의 결과입니다.
 
-*dwMsgMapID*  
+*dwMsgMapID*<br/>
 [in] 메시지를 처리 하는 메시지 맵의 식별자입니다. 기본 메시지 맵을 사용 하 여 선언 [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)를 0으로 식별 됩니다. 대체 메시지 지도 사용 하 여 선언 [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map),으로 식별 되 `msgMapID`합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -108,7 +108,7 @@ TRUE 이면 메시지 처리. 그렇지 않으면 FALSE입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[CDynamicChain 클래스](../../atl/reference/cdynamicchain-class.md)   
-[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)   
-[ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)   
+[CDynamicChain 클래스](../../atl/reference/cdynamicchain-class.md)<br/>
+[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
+[ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

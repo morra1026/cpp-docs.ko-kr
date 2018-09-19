@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94c97eaa987163aa35a3f763a1d56c2e6db6050c
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 0b500471a3580af9045f1c42707a543669da48c7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39405216"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063179"
 ---
 # <a name="alignedmalloc"></a>_aligned_malloc
 
@@ -55,10 +55,10 @@ void * _aligned_malloc(
 
 ### <a name="parameters"></a>매개 변수
 
-*size*  
+*size*<br/>
 요청된 메모리 할당의 크기입니다.
 
-*alignment*  
+*alignment*<br/>
 맞춤 값으로 2의 정수 거듭제곱이어야 합니다.
 
 ## <a name="return-value"></a>반환 값
@@ -79,7 +79,7 @@ void * _aligned_malloc(
 |-------------|---------------------|
 |**_aligned_malloc**|\<malloc.h>|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```C
 // crt_aligned_malloc.c
@@ -163,4 +163,4 @@ This pointer, 3280891, is offset by 5 on alignment of 16
 
 ## <a name="see-also"></a>참고자료
 
-[데이터 맞춤](../../c-runtime-library/data-alignment.md)  
+[데이터 맞춤](../../c-runtime-library/data-alignment.md)

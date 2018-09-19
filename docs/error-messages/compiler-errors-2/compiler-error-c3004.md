@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c03f9b609bfa7f60794a120488315680e5f6df2d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d9ccca52b5977c5d709b79dbc6351b5a94605849
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243589"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068804"
 ---
 # <a name="compiler-error-c3004"></a>컴파일러 오류 C3004
-'clause': OpenMP 'directive' 지시문의 절이 잘못되었습니다.  
-  
- OpenMP 절이 활성화되지 않은 지시문에서 사용되었습니다.  
-  
- 다음 샘플에서는 C3004를 생성합니다.  
-  
-```  
-// C3004.c  
-// compile with: /openmp  
-int main()  
-{  
-   int x, y, z;  
-  
-   // Shared clause not allowed for 'single' directive.  
-   #pragma omp single shared(x, y)   // C3004  
-  
-   x = y;  
-}  
+
+'clause': OpenMP 'directive' 지시문의 절이 잘못되었습니다.
+
+OpenMP 절이 활성화되지 않은 지시문에서 사용되었습니다.
+
+다음 샘플에서는 C3004를 생성합니다.
+
+```
+// C3004.c
+// compile with: /openmp
+int main()
+{
+   int x, y, z;
+
+   // Shared clause not allowed for 'single' directive.
+   #pragma omp single shared(x, y)   // C3004
+
+   x = y;
+}
 ```

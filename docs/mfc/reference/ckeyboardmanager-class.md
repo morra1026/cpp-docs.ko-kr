@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82447c14209f2f47fb6224df7e1daeb18ed6048e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3026e614b00f48b7668420aee20fd5915c270da2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212893"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707488"
 ---
 # <a name="ckeyboardmanager-class"></a>CKeyboardManager 클래스
 주 프레임 창 및 자식 프레임 창에 대한 바로 가기 키 테이블을 관리합니다.  
@@ -134,17 +134,17 @@ static BOOL FindDefaultAccelerator(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmd*  
- 명령 ID입니다.  
+*uiCmd*<br/>
+[in] 명령 id입니다.  
   
- [out] *str*  
- `CString` 개체에 대한 참조입니다.  
+*str*<br/>
+[out] 에 대 한 참조를 `CString` 개체입니다.  
   
- [in] *pWndFrame*  
- 프레임 창에 대 한 포인터입니다.  
+*pWndFrame*<br/>
+[in] 프레임 창에 대 한 포인터입니다.  
   
- [in] *bIsDefaultFrame*  
- 프레임 창의 기본 프레임 창인지 여부를 지정 합니다.  
+*bIsDefaultFrame*<br/>
+[in] 프레임 창의 기본 프레임 창인지 여부를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  바로 가기; 없으면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -168,10 +168,10 @@ static BOOL __stdcall IsKeyHandled(
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *nKey*|확인할 키입니다.|  
-|[in] *fVirt*|바로 가기 키의 동작을 지정 합니다. 가능한 값 목록을 참조 하세요 [가속 구조](/windows/desktop/api/winuser/ns-winuser-tagaccel)합니다.|  
-|[in] *pWndFrame*|프레임 창입니다. 이 메서드는이 프레임에서 바로 가기 키를 처리할지 여부를 결정 합니다.|  
-|[in] *bIsDefaultFrame*|나타내는 부울 매개 변수 여부 *pWndFrame* 기본 프레임 창입니다.|  
+|*nKey*|[in] 확인할 키입니다.|  
+|*fVirt*|[in] 바로 가기 키의 동작을 지정 합니다. 가능한 값 목록을 참조 하세요 [가속 구조](/windows/desktop/api/winuser/ns-winuser-tagaccel)합니다.|  
+|*pWndFrame*|[in] 프레임 창입니다. 이 메서드는이 프레임에서 바로 가기 키를 처리할지 여부를 결정 합니다.|  
+|*bIsDefaultFrame*|[in] 나타내는 부울 매개 변수 여부 *pWndFrame* 기본 프레임 창입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  바로 가기 키가 처리 되 면 TRUE입니다. FALSE 키 처리 되지 않은 경우 여부나 *pWndFrame* NULL입니다.  
@@ -191,7 +191,7 @@ static BOOL __stdcall IsKeyPrintable(const UINT nChar);
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *nChar*|이 메서드를 확인 하는 문자입니다.|  
+|*NChar*|[in] 이 메서드를 확인 하는 문자입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  0이 아닌 인쇄 가능한 문자 이면이 없는 경우 0입니다.  
@@ -222,11 +222,11 @@ BOOL LoadState(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszProfileName*  
- 레지스트리 경로 여기서 `CKeyboardManager` 데이터가 저장 됩니다.  
+*lpszProfileName*<br/>
+[in] 레지스트리 경로 여기서 `CKeyboardManager` 데이터가 저장 됩니다.  
   
- [in] *pDefaultFrame*  
- 기본 창으로 사용할 프레임 창에 대 한 포인터입니다.  
+*pDefaultFrame*<br/>
+[in] 기본 창으로 사용할 프레임 창에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  되었으면 상태가 성공적으로 로드 되거나 0 그렇지 않은 경우에 0이 아닙니다.  
@@ -256,11 +256,11 @@ BOOL SaveState(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszProfileName*  
- 저장에 대 한 레지스트리 경로 `CKeyboardManager` 상태입니다.  
+*lpszProfileName*<br/>
+[in] 저장에 대 한 레지스트리 경로 `CKeyboardManager` 상태입니다.  
   
- [in] *pDefaultFrame*  
- 기본 창 되는 프레임 창에 대 한 포인터입니다.  
+*pDefaultFrame*<br/>
+[in] 기본 창 되는 프레임 창에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  키보드 관리자 상태가 성공적으로 저장 된 경우 0이 아닌 또는 그렇지 않으면 0입니다.  
@@ -280,11 +280,11 @@ static void ShowAllAccelerators(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bShowAll*  
- TRUE 이면 모든 바로 가기 키 표시 됩니다. FALSE 이면 첫 번째 바로 가기 키만 표시 됩니다.  
+*bShowAll*<br/>
+[in] TRUE 이면 모든 바로 가기 키 표시 됩니다. FALSE 이면 첫 번째 바로 가기 키만 표시 됩니다.  
   
- [in] *lpszDelimiter*  
- 바로 가기 키 사이 삽입할 문자열입니다. 이 구분 기호 하나만 하나의 바로 가기 키 표시 되는 경우에 영향이 없습니다.  
+*lpszDelimiter*<br/>
+[in] 바로 가기 키 사이 삽입할 문자열입니다. 이 구분 기호 하나만 하나의 바로 가기 키 표시 되는 경우에 영향이 없습니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로 명령에 연결 된 바로 가기 키를 둘 이상 있으면 첫 번째 바로 가기 키만 표시 됩니다. 이 함수를 사용 하면 모든 명령과 연결 된 모든 바로 가기 키를 나열할 수 있습니다.  
@@ -299,8 +299,8 @@ static UINT TranslateCharToUpper(const UINT nChar);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nChar*  
- 변환할 문자입니다.  
+*NChar*<br/>
+[in] 변환할 문자입니다.  
   
 ### <a name="return-value"></a>반환 값  
  문자는 입력된 매개 변수의 상위 레지스터입니다.  
@@ -323,20 +323,20 @@ BOOL UpdateAccelTable(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pTemplate*  
- 문서 서식 파일에 대 한 포인터입니다.  
+*pTemplate*<br/>
+[in] 문서 서식 파일에 대 한 포인터입니다.  
   
- [in] *lpAccel*  
- 새 바로 가기 키에 대 한 포인터입니다.  
+*lpAccel*<br/>
+[in] 새 바로 가기 키에 대 한 포인터입니다.  
   
- [in] *nSize*  
- 새 바로 가기 테이블의 크기입니다.  
+*nSize*<br/>
+[in] 새 바로 가기 테이블의 크기입니다.  
   
- [in] *pDefaultFrame*  
- 기본 프레임 창에 대 한 포인터입니다.  
+*pDefaultFrame*<br/>
+[in] 기본 프레임 창에 대 한 포인터입니다.  
   
- [in] *hAccelNew*  
- 새 바로 가기 테이블에 대 한 핸들입니다.  
+*hAccelNew*<br/>
+[in] 새 바로 가기 테이블에 대 한 핸들입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  

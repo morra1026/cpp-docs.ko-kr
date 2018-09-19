@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae4aaffc76e12734038b0d325e7b540393c6cc6d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e760bab6fb3ad420fc6fe0f5c8a2ea6addc652ac
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754932"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019430"
 ---
 # <a name="iobjectsafetyimpl-class"></a>IObjectSafetyImpl 클래스
 
@@ -40,16 +40,16 @@ ms.locfileid: "43754932"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T,DWORD dwSupportedSafety>  
+template <class T,DWORD dwSupportedSafety>
 class IObjectSafetyImpl
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `IObjectSafetyImpl`합니다.
 
-*dwSupportedSafety*  
+*dwSupportedSafety*<br/>
 컨트롤에 대 한 지원 되는 보안 옵션을 지정합니다. 다음 값 중 하나입니다.
 
 - INTERFACESAFE_FOR_UNTRUSTED_CALLER에서 식별 된 인터페이스를 [SetInterfaceSafetyOptions](#setinterfacesafetyoptions) 매개 변수 `riid` 안전한 이루어져야 합니다.
@@ -139,5 +139,5 @@ HRESULT SetInterfaceSafetyOptions(
 
 ## <a name="see-also"></a>참고 항목
 
-[IObjectSafety 인터페이스](https://msdn.microsoft.com/library/aa768224.aspx)   
+[IObjectSafety 인터페이스](https://msdn.microsoft.com/library/aa768224.aspx)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

@@ -12,29 +12,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85cf817a4d50346b9d10a9a9d1bc27abb5904433
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5cf3b52b8a4e76062d06b0b9ca3d4535b79595c5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32382392"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46061515"
 ---
 # <a name="character-sequences"></a>문자 시퀀스
-**ANSI 3.8.2** 소스 파일 문자 시퀀스의 매핑  
-  
- 전처리기 문은 이스케이프 시퀀스가 지원되지 않는 경우를 제외하고 소스 파일 문과 같은 문자 설정을 사용합니다.  
-  
- 따라서 include 파일에 대한 경로를 지정하려면 백슬래시를 하나만 사용해야 합니다.  
-  
-```  
-#include "path1\path2\myfile"  
-```  
-  
- 소스 코드 내에서는 두 개의 백슬래시가 필요합니다.  
-  
-```  
-fil = fopen( "path1\\path2\\myfile", "rt" );  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [전처리 지시문](../c-language/preprocessing-directives.md)
+
+**ANSI 3.8.2** 소스 파일 문자 시퀀스의 매핑
+
+전처리기 문은 이스케이프 시퀀스가 지원되지 않는 경우를 제외하고 소스 파일 문과 같은 문자 설정을 사용합니다.
+
+따라서 include 파일에 대한 경로를 지정하려면 백슬래시를 하나만 사용해야 합니다.
+
+```
+#include "path1\path2\myfile"
+```
+
+소스 코드 내에서는 두 개의 백슬래시가 필요합니다.
+
+```
+fil = fopen( "path1\\path2\\myfile", "rt" );
+```
+
+## <a name="see-also"></a>참고 항목
+
+[전처리 지시문](../c-language/preprocessing-directives.md)

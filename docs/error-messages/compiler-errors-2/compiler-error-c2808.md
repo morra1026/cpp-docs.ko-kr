@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 357dda3a6726fce3055f0d1eb2192ac4d135e8bc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e4d256fd07f717137f6afe890884f3c1f54944ec
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33235625"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055925"
 ---
 # <a name="compiler-error-c2808"></a>컴파일러 오류 C2808
-단항 'operator 연산자'에 정식 매개 변수가 너무 많습니다.  
-  
- 단항 연산자가 비 void 매개 변수 목록입니다.  
-  
- 다음 샘플에서는 C2808 오류가 생성 됩니다.  
-  
-```  
-// C2808.cpp  
-// compile with: /c  
-class X {  
-public:  
-   X operator! ( X );   // C2808 nonvoid parameter list  
-   X operator! ( void );   // OK  
-};  
-  
+
+단항 'operator o'에 정식 매개 변수가 너무 많습니다.
+
+단항 연산자에는 비 void 매개 변수 목록이 있습니다.
+
+다음 샘플에서는 C2808를 생성합니다.
+
+```
+// C2808.cpp
+// compile with: /c
+class X {
+public:
+   X operator! ( X );   // C2808 nonvoid parameter list
+   X operator! ( void );   // OK
+};
+
 ```

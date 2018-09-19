@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 039d5853da3876dbe079ff1e4a38be4afdb34bd6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 81f6f9aa48a4a0ee1a0b414879ae3673c13529fe
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229081"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097246"
 ---
 # <a name="compiler-error-c2542"></a>컴파일러 오류 C2542
-'identifier': 클래스 개체의 초기화에 대 한 생성자가 없습니다  
-  
- 생성자가 없는 초기화와 일치 하는 매개 변수 목록 사용 합니다.  
-  
- 이 오류는 잘못 된 매개 변수 초기화에 의해 발생할 수 있습니다.
+
+'identifier': 클래스 개체의 초기화에 대 한 생성자가 없습니다
+
+초기화 하는 일치 하는 매개 변수 목록 사용 하 여 생성자가 없을 경우합니다
+
+이 오류는 잘못 된 매개 변수를 초기화에서 하 여 발생할 수 있습니다.

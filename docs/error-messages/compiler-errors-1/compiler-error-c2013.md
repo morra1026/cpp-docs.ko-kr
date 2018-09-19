@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53265c27bbac02ddbccb3b2a89b77a515e752f73
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a849900f3d981de74702d972ad9f45b7f31e5619
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33163753"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113359"
 ---
 # <a name="compiler-error-c2013"></a>컴파일러 오류 C2013
-'>'가 없습니다.  
-  
- `#include` 지시문에 닫는 꺾쇠 괄호가 없습니다. 오류를 해결하려면 닫는 대괄호를 추가합니다.  
-  
- 다음 샘플에서는 C2013을 생성합니다.  
-  
-```  
-// C2013.cpp  
-#include <stdio.h    // C2013  
-```  
-  
- 해결 방법:  
-  
-```  
-// C2013b.cpp  
-// compile with: /c  
-#include <stdio.h>  
+
+'>'가 없습니다.
+
+`#include` 지시문에 닫는 꺾쇠 괄호가 없습니다. 오류를 해결하려면 닫는 대괄호를 추가합니다.
+
+다음 샘플에서는 C2013을 생성합니다.
+
+```
+// C2013.cpp
+#include <stdio.h    // C2013
+```
+
+해결 방법:
+
+```
+// C2013b.cpp
+// compile with: /c
+#include <stdio.h>
 ```

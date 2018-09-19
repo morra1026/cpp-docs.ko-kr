@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 27c049b57d51f173e2a388e48f24d9b9674ae46b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2872f1639a11d537dd79b878a166a3afb5fd8667
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606099"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719173"
 ---
 # <a name="safecast"></a>SafeCast
 
@@ -40,11 +40,11 @@ inline bool SafeCast (
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *에서*  
-변환할 원본 숫자입니다. 이 형식 이어야 합니다 `T`합니다.
+*From*<br/>
+[in] 변환할 원본 숫자입니다. 이 형식 이어야 합니다 `T`합니다.
 
-[out] *를*  
-새 숫자 형식에 대 한 참조입니다. 이 형식 이어야 합니다 `U`합니다.
+*대상*<br/>
+[out] 새 숫자 형식에 대 한 참조입니다. 이 형식 이어야 합니다 `U`합니다.
 
 ## <a name="return-value"></a>반환 값
 

@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65995f24e58b0bdce4a15adc72de0b60ded644dd
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d37c8c9d319495c3247bf98d9ed3c8f58063ae56
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765543"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050556"
 ---
 # <a name="snap-in-object-macros"></a>스냅인 개체 매크로
 
@@ -57,7 +57,7 @@ BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP(classname)
 
 ### <a name="parameters"></a>매개 변수
 
-*classname*  
+*classname*<br/>
 [in] 스냅인 확장 데이터 클래스의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -78,7 +78,7 @@ BEGIN_SNAPINTOOLBARID_MAP(_class)
 
 ### <a name="parameters"></a>매개 변수
 
-*(_c)*  
+*(_c)*<br/>
 [in] 스냅인 개체 클래스를 지정 합니다.
 
 ### <a name="example"></a>예제
@@ -111,7 +111,7 @@ END_SNAPINTOOLBARID_MAP( _class )
 
 ### <a name="parameters"></a>매개 변수
 
-*(_c)*  
+*(_c)*<br/>
 [in] 스냅인 개체 클래스를 지정 합니다.
 
 ### <a name="example"></a>예제
@@ -128,7 +128,7 @@ EXTENSION_SNAPIN_DATACLASS(dataClass )
 
 ### <a name="parameters"></a>매개 변수
 
-*dataClass*  
+*dataClass*<br/>
 [in] 데이터 클래스 확장 스냅인입니다.
 
 ### <a name="remarks"></a>설명
@@ -149,7 +149,7 @@ EXTENSION_SNAPIN_NODEINFO_ENTRY( dataClass )
 
 ### <a name="parameters"></a>매개 변수
 
-*dataClass*  
+*dataClass*<br/>
 [in] 데이터 클래스 확장 스냅인입니다.
 
 ### <a name="remarks"></a>설명
@@ -170,7 +170,7 @@ SNAPINMENUID( id )
 
 ### <a name="parameters"></a>매개 변수
 
-*ID*  
+*ID*<br/>
 [in] 스냅인 개체의 상황에 맞는 메뉴를 식별합니다.
 
 ##  <a name="snapintoolbarid_entry"></a>  SNAPINTOOLBARID_ENTRY
@@ -183,7 +183,7 @@ SNAPINTOOLBARID_ENTRY( id )
 
 ### <a name="parameters"></a>매개 변수
 
-*ID*  
+*ID*<br/>
 [in] 도구 모음 컨트롤을 식별합니다.
 
 ### <a name="remarks"></a>설명

@@ -65,12 +65,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d25fccd56522d420a96b589796ef77cc30148d3
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d438d31088c6ded53df3137e76ebc6a2953890e6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600894"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700923"
 ---
 # <a name="interlockedexchangeadd-intrinsic-functions"></a>_InterlockedExchangeAdd Intrinsic Functions
 **Microsoft 전용**  
@@ -164,11 +164,11 @@ __int64 _InterlockedExchangeAdd64_HLERelease(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in, out] `Addend`  
- 추가 대상 값입니다(추가 결과로 바뀜).  
+*가 수*<br/>
+[out에서] 추가할 값 더하기 연산의 결과 바뀝니다.  
   
- [in] `Value`  
- 추가할 값입니다.  
+*Value*<br/>
+[in] 추가할 값입니다.  
   
 ## <a name="return-value"></a>반환 값  
  반환 값은 `Addend` 매개 변수가 가리키는 변수의 초기 값입니다.  
@@ -192,7 +192,7 @@ __int64 _InterlockedExchangeAdd64_HLERelease(
   
  이러한 루틴은 내장 함수로만 사용할 수 있습니다. 따라서 이들은 내장 함수 인지 여부 [/Oi](../build/reference/oi-generate-intrinsic-functions.md) 하거나 [내장 #pragma](../preprocessor/intrinsic.md) 사용 됩니다. 사용 하는 것이 불가능 [#pragma 함수](../preprocessor/function-c-cpp.md) 에서 이러한 내장 함수입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  샘플을 사용 하는 방법에 대 한 `_InterlockedExchangeAdd`를 참조 하세요 [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md)합니다.  
   
 **Microsoft 전용 종료**  

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4799d0b9c36ade8b1e203ca106605db75752b02f
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f5a4d4c359fb4a90bfd25801f7c73f5bc4d7d501
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752817"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019473"
 ---
 # <a name="commandhandler"></a>CommandHandler
 
@@ -29,7 +29,7 @@ ms.locfileid: "43752817"
 
 ## <a name="syntax"></a>구문
 
-```  
+```cpp
 LRESULT CommandHandler(
     WORD wNotifyCode,  
     WORD wID,  
@@ -39,16 +39,16 @@ LRESULT CommandHandler(
 
 #### <a name="parameters"></a>매개 변수
 
-*wNotifyCode*  
+*wNotifyCode*<br/>
 알림 코드입니다.
 
-*wID*  
+*wID*<br/>
 메뉴 항목, 컨트롤 또는 액셀러레이터 키의 식별자입니다.
 
-*hWndCtl*  
+*hWndCtl*<br/>
 창 컨트롤에 대 한 핸들입니다.
 
-*bHandled*  
+*bHandled*<br/>
 메시지 맵 집합 *bHandled* 하기 전에 true `CommandHandler` 라고 합니다. 경우 `CommandHandler` 메시지를 완전히 처리 하지 않는 설정 해야 *bHandled* 에 FALSE를 메시지에 추가 처리가 필요 합니다.
 
 ## <a name="return-value"></a>반환 값
@@ -61,7 +61,7 @@ LRESULT CommandHandler(
 
 ## <a name="see-also"></a>참고 항목
 
-[창 구현](../atl/implementing-a-window.md)   
-[메시지 맵](../atl/message-maps-atl.md)   
+[창 구현](../atl/implementing-a-window.md)<br/>
+[메시지 맵](../atl/message-maps-atl.md)<br/>
 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)
 
