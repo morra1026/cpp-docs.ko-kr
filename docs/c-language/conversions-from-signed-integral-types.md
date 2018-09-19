@@ -18,65 +18,66 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8747f6c1bfde3f076101cc9330d73b1c76c1055b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3fc38fd8b1ab4bc84898704218b2da5722514cea
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391628"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101386"
 ---
 # <a name="conversions-from-signed-integral-types"></a>부호 있는 정수 계열 형식에서 변환
-부호 있는 정수를 크기가 같거나 더 큰 부호 없는 정수로 변환하는데 부호 있는 정수의 값이 음수가 아니면 값이 변경되지 않습니다. 변환은 부호 있는 정수를 부호 확장하여 수행됩니다. 부호 있는 정수는 상위 비트를 잘라 더 짧은 부호 있는 정수로 변환됩니다. 결과는 이 예제에서 볼 수 있는 것과 같이 부호 없는 값으로 해석됩니다.  
-  
-```  
-int i = -3;  
-unsigned short u;  
-  
-u = i;   
-printf_s( "%hu\n", u );  // Prints 65533  
-  
-```  
-  
- **long int** 또는 **unsigned long int** 값을 **float** 값으로 변환할 때 정밀도가 다소 손실될 수 있다는 점을 제외하면 부호 있는 정수를 부동 값으로 변환할 때 아무 정보도 손실되지 않습니다.  
-  
- 다음 표에서는 부호 있는 정수 계열 형식으로부터의 변환을 요약하여 보여 줍니다. 이 표에서는 **char** 형식에 기본적으로 부호가 있다고 간주합니다. 컴파일 시간 옵션을 사용하여 **char** 형식의 기본값을 unsigned로 변경할 경우 다음 표인 "부호 있는 정수 형식에서 변환" 대신 **unsigned char** 형식에 대한 [부호 없는 정수 형식에서 변환](../c-language/conversions-from-unsigned-integral-types.md) 표에 나와 있는 변환이 적용됩니다.  
-  
-### <a name="conversions-from-signed-integral-types"></a>부호 있는 정수 계열 형식에서 변환  
-  
-|시작|대상|메서드|  
-|----------|--------|------------|  
-|**char**1|**short**|부호 확장|  
-|**char**|**long**|부호 확장|  
-|**char**|**unsigned char**|패턴 유지(상위 비트가 부호 비트로의 기능을 잃음)|  
-|**char**|**unsigned short**|**short**로 부호 확장(**short**를 **unsigned short**로 변환)|  
-|**char**|**unsigned long**|**short**로 부호 확장(**long**을 **unsigned long**으로 변환)|  
-|**char**|**float**|**long**으로 부호 확장(**long**을 **float**로 변환)|  
-|**char**|**double**|**long**으로 부호 확장(**long**을 **double**로 변환)|  
-|**char**|**long double**|**long**으로 부호 확장(**long**을 **double**로 변환)|  
-|**short**|**char**|하위 바이트 유지|  
-|**short**|**long**|부호 확장|  
-|**short**|**unsigned char**|하위 바이트 유지|  
-|**short**|**unsigned short**|비트 패턴 유지(상위 비트가 부호 비트로의 기능을 잃음)|  
-|**short**|**unsigned long**|**short**로 부호 확장(**long**을 **unsigned long**으로 변환)|  
-|**short**|**float**|**long**으로 부호 확장(**long**을 **float**로 변환)|  
-|**short**|**double**|**long**으로 부호 확장(**long**을 **double**로 변환)|  
-|**short**|**long double**|**long**으로 부호 확장(**long**을 **double**로 변환)|  
-|**long**|**char**|하위 바이트 유지|  
-|**long**|**short**|하위 단어 유지|  
-|**long**|**unsigned char**|하위 바이트 유지|  
-|**long**|**unsigned short**|하위 단어 유지|  
-|**long**|**unsigned long**|비트 패턴 유지(상위 비트가 부호 비트로의 기능을 잃음)|  
-|**long**|**float**|**float**로 표시. **long**을 정확히 나타낼 수 없는 경우 일부 정밀도가 손실됩니다.|  
-|**long**|**double**|**double**로 표시. **long**을 **double**로 정확히 나타낼 수 없는 경우 일부 정밀도가 손실됩니다.|  
-|**long**|**long double**|**double**로 표시. **long**을 **double**로 정확히 나타낼 수 없는 경우 일부 정밀도가 손실됩니다.|  
-  
- 1. 모든 **char** 항목에서는 **char** 형식에 기본적으로 부호가 있다고 간주합니다.  
-  
- **Microsoft 전용**  
-  
- Microsoft 32비트 C 컴파일러의 경우 정수는 **long**과 동일합니다. **int** 값의 변환은 **long**과 동일하게 진행됩니다.  
-  
- **Microsoft 전용 종료**  
-  
-## <a name="see-also"></a>참고 항목  
- [할당 변환](../c-language/assignment-conversions.md)
+
+부호 있는 정수를 크기가 같거나 더 큰 부호 없는 정수로 변환하는데 부호 있는 정수의 값이 음수가 아니면 값이 변경되지 않습니다. 변환은 부호 있는 정수를 부호 확장하여 수행됩니다. 부호 있는 정수는 상위 비트를 잘라 더 짧은 부호 있는 정수로 변환됩니다. 결과는 이 예제에서 볼 수 있는 것과 같이 부호 없는 값으로 해석됩니다.
+
+```C
+int i = -3;
+unsigned short u;
+
+u = i;
+printf_s( "%hu\n", u );  // Prints 65533
+```
+
+**long int** 또는 **unsigned long int** 값을 **float** 값으로 변환할 때 정밀도가 다소 손실될 수 있다는 점을 제외하면 부호 있는 정수를 부동 값으로 변환할 때 아무 정보도 손실되지 않습니다.
+
+다음 표에서는 부호 있는 정수 계열 형식으로부터의 변환을 요약하여 보여 줍니다. 이 표에서는 **char** 형식에 기본적으로 부호가 있다고 간주합니다. 컴파일 시간 옵션을 사용하여 **char** 형식의 기본값을 unsigned로 변경할 경우 다음 표인 "부호 있는 정수 형식에서 변환" 대신 **unsigned char** 형식에 대한 [부호 없는 정수 형식에서 변환](../c-language/conversions-from-unsigned-integral-types.md) 표에 나와 있는 변환이 적용됩니다.
+
+### <a name="conversions-from-signed-integral-types"></a>부호 있는 정수 계열 형식에서 변환
+
+|시작|대상|메서드|
+|----------|--------|------------|
+|**char**1|**short**|부호 확장|
+|**char**|**long**|부호 확장|
+|**char**|**unsigned char**|패턴 유지(상위 비트가 부호 비트로의 기능을 잃음)|
+|**char**|**unsigned short**|**short**로 부호 확장(**short**를 **unsigned short**로 변환)|
+|**char**|**unsigned long**|**short**로 부호 확장(**long**을 **unsigned long**으로 변환)|
+|**char**|**float**|**long**으로 부호 확장(**long**을 **float**로 변환)|
+|**char**|**double**|**long**으로 부호 확장(**long**을 **double**로 변환)|
+|**char**|**long double**|**long**으로 부호 확장(**long**을 **double**로 변환)|
+|**short**|**char**|하위 바이트 유지|
+|**short**|**long**|부호 확장|
+|**short**|**unsigned char**|하위 바이트 유지|
+|**short**|**unsigned short**|비트 패턴 유지(상위 비트가 부호 비트로의 기능을 잃음)|
+|**short**|**unsigned long**|**short**로 부호 확장(**long**을 **unsigned long**으로 변환)|
+|**short**|**float**|**long**으로 부호 확장(**long**을 **float**로 변환)|
+|**short**|**double**|**long**으로 부호 확장(**long**을 **double**로 변환)|
+|**short**|**long double**|**long**으로 부호 확장(**long**을 **double**로 변환)|
+|**long**|**char**|하위 바이트 유지|
+|**long**|**short**|하위 단어 유지|
+|**long**|**unsigned char**|하위 바이트 유지|
+|**long**|**unsigned short**|하위 단어 유지|
+|**long**|**unsigned long**|비트 패턴 유지(상위 비트가 부호 비트로의 기능을 잃음)|
+|**long**|**float**|**float**로 표시. **long**을 정확히 나타낼 수 없는 경우 일부 정밀도가 손실됩니다.|
+|**long**|**double**|**double**로 표시. **long**을 **double**로 정확히 나타낼 수 없는 경우 일부 정밀도가 손실됩니다.|
+|**long**|**long double**|**double**로 표시. **long**을 **double**로 정확히 나타낼 수 없는 경우 일부 정밀도가 손실됩니다.|
+
+1. 모든 **char** 항목에서는 **char** 형식에 기본적으로 부호가 있다고 간주합니다.
+
+**Microsoft 전용**
+
+Microsoft 32비트 C 컴파일러의 경우 정수는 **long**과 동일합니다. **int** 값의 변환은 **long**과 동일하게 진행됩니다.
+
+**Microsoft 전용 종료**
+
+## <a name="see-also"></a>참고 항목
+
+[할당 변환](../c-language/assignment-conversions.md)

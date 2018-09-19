@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f2a039e66e8df295bced87d9354750c4fa985f6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 5f0090195506e26cab165e3ddadca0342c0b35b6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757977"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084057"
 ---
 # <a name="for-statement-c"></a>for 문 (C)
 
@@ -81,8 +81,8 @@ int main()
 }
 ```
 
-## <a name="output"></a>출력  
-  
+## <a name="output"></a>출력
+
 ```Output
 Number of spaces: 4
 Number of tabs: 2

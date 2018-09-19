@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75afd44b8c0a31d9f3731a4c6f9fb86c15de4328
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 618a8053bea59896615d23514c2cf8aff29bea93
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389422"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087485"
 ---
 # <a name="indirection-and-address-of-operators"></a>연산자 주소 및 간접 참조
 
@@ -52,7 +52,6 @@ ms.locfileid: "32389422"
 
 피연산자가 단항 __&#42;__ 연산자의 결과이면, 연산자가 평가되지 않고 결과는 둘 다 생략된 것과 같습니다. 결과는 lvalue가 아니며 연산자에 대한 제약 조건이 여전히 적용됩니다. 피연산자가 __&#91;&#93;__ 연산자의 결과인 경우, __&__ 연산자도 __&#91;&#93;__ 연산자에 의해 함축된 단항 __&#42;__ 는 평가되지 않습니다. 결과는 __&__ 연산자를 제거하고 __&#91;&#93;__ 연산자를 __+__ 연산자로 변경하는 것과 동일한 효과가 있습니다. 그렇지 않은 경우 결과는 피연산자가 지정한 개체 또는 함수에 대한 포인터입니다.
 
-
 ## <a name="examples"></a>예제
 
 다음 예에서는 이러한 일반적인 선언을 사용합니다.
@@ -65,7 +64,7 @@ double d;
 
 이 명령문은 주소 연산자(**&**)를 사용하여 `a` 배열의 여섯 번째 요소의 주소를 가져옵니다. 결과는 포인터 변수 `pa`에 저장됩니다.
 
-```C  
+```C
 pa = &a[5];
 ```
 
@@ -89,11 +88,11 @@ int roundup( void );     /* Function declaration */
 int  *proundup  = roundup;
 int  *pround  = &roundup;
 assert( pround == proundup );
-```  
+```
 
 함수 `roundup`이 선언되면 `roundup`에 대한 두 개의 포인터가 선언되고 초기화됩니다. 첫 번째 포인터, `proundup`은 해당 함수의 이름만을 사용하여 초기화되지만 두 번째 포인터, `pround`는 초기화 시 주소 연산자를 사용합니다. 초기화는 동일합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[간접 참조 연산자: &#42;](../cpp/indirection-operator-star.md)  
-[주소 연산자: &](../cpp/address-of-operator-amp.md)  
+[간접 참조 연산자: &#42;](../cpp/indirection-operator-star.md)<br/>
+[주소 연산자: &](../cpp/address-of-operator-amp.md)

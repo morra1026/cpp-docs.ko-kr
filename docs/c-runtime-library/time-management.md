@@ -19,18 +19,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d5983795dbb5711452db2f59b07cb6aa8b22a8c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: f63bfe358e3f077bff780e2c5b4436fb841fd145
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200207"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46083979"
 ---
 # <a name="time-management"></a>시간 관리
 
 다음 함수를 사용하여 현재 시간을 가져오고 필요에 따라 변환, 조정 및 저장할 수 있습니다. 현재 시간은 시스템 시간입니다.
 
- **_ftime** 및 **localtime** 루틴은 **TZ** 환경 변수를 사용합니다. **TZ**를 설정하지 않으면 런타임 라이브러리는 운영 체제에서 지정한 표준 시간대 정보를 사용하려고 합니다. 이 정보를 사용할 수 없는 경우 이러한 함수는 기본값 PST8PDT를 사용합니다. **TZ**에 대한 자세한 내용은 [_tzset](../c-runtime-library/reference/tzset.md)를 참조하세요. [_daylight, timezone 및 _tzname](../c-runtime-library/daylight-dstbias-timezone-and-tzname.md)도 참조하세요.
+**_ftime** 및 **localtime** 루틴은 **TZ** 환경 변수를 사용합니다. **TZ**를 설정하지 않으면 런타임 라이브러리는 운영 체제에서 지정한 표준 시간대 정보를 사용하려고 합니다. 이 정보를 사용할 수 없는 경우 이러한 함수는 기본값 PST8PDT를 사용합니다. **TZ**에 대한 자세한 내용은 [_tzset](../c-runtime-library/reference/tzset.md)를 참조하세요. [_daylight, timezone 및 _tzname](../c-runtime-library/daylight-dstbias-timezone-and-tzname.md)도 참조하세요.
 
 ### <a name="time-routines"></a>시간 루틴
 

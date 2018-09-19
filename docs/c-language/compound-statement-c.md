@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e13f09defccb0aeb3d4ec47cf7cf1678deaee6dd
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 11197f19047b0058f5401b9419f0f353c44c91d6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767805"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063627"
 ---
 # <a name="compound-statement-c"></a>복합 문 (C)
 
@@ -61,4 +61,5 @@ if ( i > 0 )
 이 예제에서 `i`가 0보다 클 경우 복합 문 내부의 모든 문이 순서대로 실행됩니다.
 
 ## <a name="see-also"></a>참고 항목
+
 [문](../c-language/statements-c.md)

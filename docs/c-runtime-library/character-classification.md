@@ -17,20 +17,20 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 262479a4538843cef2af61be0ec56347c7afc75f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: f4c194432c3d7442677a78046ac893e5e3e2a7ee
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222450"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101347"
 ---
 # <a name="character-classification"></a>문자 분류
 
 이러한 각 루틴은 지정된 싱글바이트 문자, 와이드 문자 또는 멀티바이트 문자가 조건을 충족하는지 테스트합니다. (정의된 대로 0에서 127 사이의 ASCII 문자 집합은 모든 멀티바이트 문자 집합의 하위 집합입니다. 예를 들어 일본어 가타카나에는 ASCII 문자와 비 ASCII 문자가 모두 포함됩니다.)
 
- 테스트 조건은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다.
+테스트 조건은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다.
 
- 일반적으로 이러한 루틴은 사용자가 작성하고 우선적으로 고려하는 테스트보다 더 빠르게 실행됩니다. 예를 들어 다음 코드는 `isalpha(c)` 호출보다 더 느리게 실행됩니다.
+일반적으로 이러한 루틴은 사용자가 작성하고 우선적으로 고려하는 테스트보다 더 빠르게 실행됩니다. 예를 들어 다음 코드는 `isalpha(c)` 호출보다 더 느리게 실행됩니다.
 
 ```C
 if ((c >= 'A') && (c <= 'Z')) || ((c >= 'a') && (c <= 'z'))

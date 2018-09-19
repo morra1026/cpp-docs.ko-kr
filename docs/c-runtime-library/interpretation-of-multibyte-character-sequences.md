@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d52a8b3572f398a97c902cf0bcd647a3752cee8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 86fc93b74f661ac0829c0ed5925cb9cf78a8876e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32390013"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103635"
 ---
 # <a name="interpretation-of-multibyte-character-sequences"></a>멀티바이트 문자 시퀀스 해석
 
@@ -43,4 +43,4 @@ Microsoft 런타임 라이브러리에 있는 대부분의 멀티바이트 문�
 ## <a name="see-also"></a>참고 항목
 
 [국제화](../c-runtime-library/internationalization.md)<br/>
- [범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>

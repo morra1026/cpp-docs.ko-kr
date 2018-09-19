@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ee1c3be0ecc06dd2ccfb28882b6dc99912d7e13
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d776adab3404bf1244c7365e905866b4d041fc00
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762478"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091915"
 ---
 # <a name="array-declarations"></a>배열 선언
 
@@ -48,9 +48,9 @@ ms.locfileid: "43762478"
 
 *constant-expression*은 선택 사항이기 때문에 구문에는 두 가지 형태가 있습니다.
 
--   첫 번째 형태는 배열 변수를 정의합니다. 대괄호 안의 *constant-expression* 인수는 배열의 요소 수를 지정합니다. *constant-expression*(있는 경우)에는 정수 계열 형식과 0보다 큰 값이 있어야 합니다. 각 요소에는 *type-specifier*로 지정된 형식이 있으며, 형식은 `void`를 제외한 모든 형식이 될 수 있습니다. 배열 요소는 함수 형식일 수 없습니다.
+- 첫 번째 형태는 배열 변수를 정의합니다. 대괄호 안의 *constant-expression* 인수는 배열의 요소 수를 지정합니다. *constant-expression*(있는 경우)에는 정수 계열 형식과 0보다 큰 값이 있어야 합니다. 각 요소에는 *type-specifier*로 지정된 형식이 있으며, 형식은 `void`를 제외한 모든 형식이 될 수 있습니다. 배열 요소는 함수 형식일 수 없습니다.
 
--   두 번째 형태는 다른 곳에 정의된 변수를 선언합니다. 이 형태에서는 대괄호로 묶은 *constant-expression* 인수가 생략되지만 대괄호는 생략되지 않습니다. 배열을 이전에 초기화했거나, 배열을 매개 변수로 선언했거나, 프로그램의 다른 곳에서 명시적으로 정의된 배열에 대한 참조로 배열을 선언한 경우에만 이 형태를 사용할 수 있습니다.
+- 두 번째 형태는 다른 곳에 정의된 변수를 선언합니다. 이 형태에서는 대괄호로 묶은 *constant-expression* 인수가 생략되지만 대괄호는 생략되지 않습니다. 배열을 이전에 초기화했거나, 배열을 매개 변수로 선언했거나, 프로그램의 다른 곳에서 명시적으로 정의된 배열에 대한 참조로 배열을 선언한 경우에만 이 형태를 사용할 수 있습니다.
 
 두 형태 모두에서 *direct-declarator*는 변수의 이름을 지정하고 변수의 형식을 수정할 수 있습니다. *direct-declarator* 뒤에 오는 대괄호(**[ ]**)는 선언자를 배열 형식으로 수정합니다.
 
@@ -75,6 +75,7 @@ char A[2][3];
 배열의 개별 요소를 참조하려면 [후위 연산자](../c-language/postfix-operators.md)에 설명된 것처럼 첨자 식을 사용하세요.
 
 ## <a name="examples"></a>예제
+
 다음 예제에서는 배열 선언을 보여 줍니다.
 
 ```C

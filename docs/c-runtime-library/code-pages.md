@@ -22,20 +22,20 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 203467eea055927ac7eb8d5ccf8a90242c62d33a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2a81b358a89f3ed16747d27bc6401c01ad194680
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32388619"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113723"
 ---
 # <a name="code-pages"></a>코드 페이지
 
 *코드 페이지*는 숫자, 문장 부호 및 기타 문자를 포함할 수 있는 문자 집합입니다. 언어 및 로캘마다 다른 코드 페이지를 사용할 수 있습니다. 예를 들어 ANSI 코드 페이지 1252는 미국 영어와 대부분의 유럽 언어에 사용되고, OEM 코드 페이지 932는 일본어 간지에 사용됩니다.
 
- 코드 페이지는 문자를 싱글바이트 값 또는 멀티바이트 값으로 매핑하는 표로 나타낼 수 있습니다. 여러 코드 페이지는 0x00 - 0x7F 범위의 문자에 대한 ASCII 문자 집합을 공유합니다.
+코드 페이지는 문자를 싱글바이트 값 또는 멀티바이트 값으로 매핑하는 표로 나타낼 수 있습니다. 여러 코드 페이지는 0x00 - 0x7F 범위의 문자에 대한 ASCII 문자 집합을 공유합니다.
 
- Microsoft 런타임 라이브러리는 다음 형식의 코드 페이지를 사용합니다.
+Microsoft 런타임 라이브러리는 다음 형식의 코드 페이지를 사용합니다.
 
 - 시스템 기본 ANSI 코드 페이지. 기본적으로 시작할 때 런타임 시스템은 자동으로 멀티바이트 코드 페이지를 운영 체제로부터 가져온 시스템 기본 ANSI 코드 페이지로 설정합니다. 다음을 호출해도
 
@@ -54,4 +54,4 @@ ms.locfileid: "32388619"
 ## <a name="see-also"></a>참고 항목
 
 [국제화](../c-runtime-library/internationalization.md)<br/>
- [범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>

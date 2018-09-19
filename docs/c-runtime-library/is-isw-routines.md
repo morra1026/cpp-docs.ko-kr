@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98f7edcf115a6fadc741c7f1bcde8f240c93abcc
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: db047c2b16eb67f086bc26976783e829189d4266
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895125"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095107"
 ---
 # <a name="is-isw-routines"></a>is, isw 루틴
 
@@ -61,75 +61,75 @@ ms.locfileid: "43895125"
 
 "C" 로캘에서 **is** 루틴에 대한 테스트 조건은 다음과 같습니다.
 
-`isalnum`  
+`isalnum`<br/>
 영숫자(A-Z, a-z 또는 0-9)
 
-`isalpha`  
+`isalpha`<br/>
 알파벳(A-Z 또는 a-z)
 
-`__isascii`  
+`__isascii`<br/>
 ASCII 문자(0x00-0x7F)
 
-`isblank`  
+`isblank`<br/>
 가로 탭 또는 공백 문자(0x09 또는 0x20)
 
-`iscntrl`  
+`iscntrl`<br/>
 제어 문자(0x00 - 0x1F 또는 0x7F)
 
-`__iscsym`  
+`__iscsym`<br/>
 문자, 밑줄 또는 숫자
 
-`__iscsymf`  
+`__iscsymf`<br/>
 문자 또는 밑줄
 
-`isdigit`  
+`isdigit`<br/>
 10진수(0-9)
 
-`isgraph`  
+`isgraph`<br/>
 공백을 제외한 인쇄 가능한 문자()
 
-`islower`  
+`islower`<br/>
 소문자(a ~ z)
 
-`isprint`  
+`isprint`<br/>
 공백을 포함한 인쇄 가능한 문자(0x20-0x7E)
 
-`ispunct`  
+`ispunct`<br/>
 문장 부호 문자
 
-`isspace`  
+`isspace`<br/>
 공백 문자(0x09-0x0D 또는 0x20)
 
-`isupper`  
+`isupper`<br/>
 대문자(A ~ Z)
 
-`isxdigit`  
+`isxdigit`<br/>
 16진수(A-F, a-f 또는 0-9)
 
 **isw** 루틴의 경우 지정된 조건의 테스트 결과는 로캘과 무관합니다. **isw** 함수에 대한 테스트 조건은 다음과 같습니다.
 
-`iswalnum`  
+`iswalnum`<br/>
 `iswalpha` 또는 `iswdigit`
 
-`iswalpha`  
+`iswalpha`<br/>
 `iswcntrl`, `iswdigit`, `iswpunct`, `iswspace`가 모두 0인 구현 시 정의된 집합 중 하나인 와이드 문자. `iswalpha`는 `iswupper` 또는 `iswlower`가 0이 아닌 와이드 문자에 대해서는 0이 아닌 값을 반환합니다.
 
-`iswascii`  
+`iswascii`<br/>
 ASCII 문자의 와이드 문자 표현(0x0000-0x007F)
 
-`iswblank`  
+`iswblank`<br/>
 표준 공백 문자에 해당하거나 `iswalnum`이 false인 경우 구현 시 정의된 와이드 문자 집합 중 하나인 와이드 문자. 표준 공백 문자는 공백(L' ') 및 가로 탭(L'\t')입니다.
 
-`iswcntrl`  
+`iswcntrl`<br/>
 제어 와이드 문자
 
-`__iswcsym`  
+`__iswcsym`<br/>
 `isalnum`가 true인 경우 와이드 문자 또는 '_' 문자
 
-`__iswcsymf`  
+`__iswcsymf`<br/>
 `iswalpha`가 true인 경우 와이드 문자 또는 '_' 문자
 
-`iswctype`  
+`iswctype`<br/>
 문자에 `desc` 인수에 의해 지정된 속성이 있습니다. 다음 표에 표시된 것처럼, `iswctype`의 `desc` 인수에 유효한 각 값에 대해 해당하는 와이드 문자 분류 루틴이 있습니다.
 
 ### <a name="equivalence-of-iswctypec-desc-to-other-isw-testing-routines"></a>기타 isw 테스트 루틴에 대한 iswctype(c, desc) 동등성
@@ -150,28 +150,28 @@ ASCII 문자의 와이드 문자 표현(0x0000-0x007F)
 |**_UPPER**|**iswupper(** `c` **)**|
 |**_HEX**|**iswxdigit(** `c` **)**|
 
-`iswdigit`  
+`iswdigit`<br/>
 10진수 문자에 해당하는 와이드 문자
 
-`iswgraph`  
+`iswgraph`<br/>
 공백 와이드 문자(L' ')를 제외한 인쇄 가능한 와이드 문자
 
-`iswlower`  
+`iswlower`<br/>
 소문자이거나 `iswcntrl`, `iswdigit`, `iswpunct`, `iswspace`가 모두 0인 구현 시 정의된 와이드 문자 집합 중 하나. `iswlower`는 소문자에 해당하는 와이드 문자에 대해서만 0이 아닌 값을 반환합니다.
 
-`iswprint`  
+`iswprint`<br/>
 공백 와이드 문자(L' ')를 포함한 인쇄 가능한 와이드 문자
 
-`iswpunct`  
+`iswpunct`<br/>
 `iswalnum`이 0이 아닌 와이드 문자도 공백 와이드 문자(L' ')도 아닌 인쇄 가능한 와이드 문자
 
-`iswspace`  
+`iswspace`<br/>
 표준 공백 문자에 해당하거나 `iswalnum`이 false인 경우 구현 시 정의된 와이드 문자 집합 중 하나인 와이드 문자. 표준 공백 문자: 공백(L' '), 용지 공급(L'\f'), 줄 바꿈(L'\n'), 캐리지 리턴(L'\r'), 가로 탭(L'\t'), 세로 탭(L'\v')
 
-`iswupper`  
+`iswupper`<br/>
 대문자이거나 `iswcntrl`, `iswdigit`, `iswpunct`, `iswspace`가 모두 0인 구현 시 정의된 와이드 문자 집합 중 하나인 와이드 문자. `iswupper`는 대문자에 해당하는 와이드 문자에 대해서만 0이 아닌 값을 반환합니다.
 
-`iswxdigit`  
+`iswxdigit`<br/>
 16진수 문자에 해당하는 와이드 문자
 
 ## <a name="example"></a>예
@@ -181,16 +181,16 @@ ASCII 문자의 와이드 문자 표현(0x0000-0x007F)
 /* This program tests all characters between 0x0
 * and 0x7F, then displays each character with abbreviations
 * for the character-type codes that apply.
-*/  
+*/
 
 #include <stdio.h>
 #include <ctype.h>
 
-int main( void )  
-{  
+int main( void )
+{
    int ch;
-   for( ch = 0; ch <= 0x7F; ch++ )  
-   {  
+   for( ch = 0; ch <= 0x7F; ch++ )
+   {
       printf( "%.2x  ", ch );
       printf( " %c", isprint( ch )  ? ch   : ' ' );
       printf( "%4s", isalnum( ch )  ? "AN" : "" );
@@ -208,9 +208,9 @@ int main( void )
       printf( "%3s", isupper( ch )  ? "U"  : "" );
       printf( "%3s", isxdigit( ch ) ? "X"  : "" );
       printf( ".\n" );
-   }  
-}  
-```  
+   }
+}
+```
 
 ## <a name="output"></a>출력
 
@@ -347,8 +347,8 @@ int main( void )
 
 ## <a name="see-also"></a>참고 항목
 
-[문자 분류](../c-runtime-library/character-classification.md)   
-[로캘](../c-runtime-library/locale.md)   
-[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)   
-[멀티바이트 문자 시퀀스 해석](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
+[문자 분류](../c-runtime-library/character-classification.md)<br/>
+[로캘](../c-runtime-library/locale.md)<br/>
+[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
+[멀티바이트 문자 시퀀스 해석](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [to 함수](../c-runtime-library/to-functions.md)

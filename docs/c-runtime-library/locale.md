@@ -20,22 +20,22 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 638d4fbe6fd4dfce1fb3eeb246ef85c5b60fada0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3f3bf660b2e1c8301e9c6c8ba1bd1e11fa3956de
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392512"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082224"
 ---
 # <a name="locale"></a>로캘
 
 *로캘*은 프로그램을 사용자 지정하는 데 사용할 수 있는 국가/지역 및 언어 설정을 참조합니다. 일부 로캘 종속 범주는 날짜 및 통화 값의 표시 형식을 포함합니다. 자세한 내용은 [로캘 범주](../c-runtime-library/locale-categories.md)를 참조하세요.
 
- **_l** 접미사가 없는 함수를 사용하면서 현재 프로그램 또는 스레드 로캘 정보의 일부 또는 모두를 변경하거나 쿼리하려면 [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) 함수를 사용합니다. **_l** 접미사가 있는 함수는 특정 함수만 실행하는 동안 해당 로캘 정보에 대해 전달되는 로캘 매개 변수를 사용합니다. **_l** 접미사가 있는 함수와 함께 사용할 로캘을 만들려면 [_create_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md)을 사용합니다. 이 로캘을 해제하려면 [_free_locale](../c-runtime-library/reference/free-locale.md)을 사용합니다. 현재 로캘을 가져오려면 [_get_current_locale](../c-runtime-library/reference/get-current-locale.md)을 사용합니다.
+**_l** 접미사가 없는 함수를 사용하면서 현재 프로그램 또는 스레드 로캘 정보의 일부 또는 모두를 변경하거나 쿼리하려면 [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) 함수를 사용합니다. **_l** 접미사가 있는 함수는 특정 함수만 실행하는 동안 해당 로캘 정보에 대해 전달되는 로캘 매개 변수를 사용합니다. **_l** 접미사가 있는 함수와 함께 사용할 로캘을 만들려면 [_create_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md)을 사용합니다. 이 로캘을 해제하려면 [_free_locale](../c-runtime-library/reference/free-locale.md)을 사용합니다. 현재 로캘을 가져오려면 [_get_current_locale](../c-runtime-library/reference/get-current-locale.md)을 사용합니다.
 
- [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md)을 사용하여 각 스레드가 자체 로캘을 포함하는지 또는 프로그램의 모든 스레드가 동일한 로캘을 공유하는지를 제어합니다. 자세한 내용은 [로캘 및 코드 페이지](../text/locales-and-code-pages.md)를 참조하세요.
+[_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md)을 사용하여 각 스레드가 자체 로캘을 포함하는지 또는 프로그램의 모든 스레드가 동일한 로캘을 공유하는지를 제어합니다. 자세한 내용은 [로캘 및 코드 페이지](../text/locales-and-code-pages.md)를 참조하세요.
 
- 다음 표에서 **_s**("보안") 접미사로 표시된 함수는 더 안전한 버전의 함수로 사용할 수 있습니다. 자세한 내용은 [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md)을 참조하세요.
+다음 표에서 **_s**("보안") 접미사로 표시된 함수는 더 안전한 버전의 함수로 사용할 수 있습니다. 자세한 내용은 [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md)을 참조하세요.
 
 ## <a name="locale-dependent-routines"></a>로캘 종속 루틴
 
@@ -82,4 +82,4 @@ ms.locfileid: "32392512"
 ## <a name="see-also"></a>참고 항목
 
 [국제화](../c-runtime-library/internationalization.md)<br/>
- [범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>

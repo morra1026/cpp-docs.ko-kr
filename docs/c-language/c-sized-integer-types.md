@@ -14,28 +14,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a61d9ae386efb25171cfdbedc5889c1ffa76e30
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 037ff61dbe1d1d42d8b0c751fcdc83f01a8dd112
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381865"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101425"
 ---
 # <a name="c-sized-integer-types"></a>C 크기 조정 정수 형식
-**Microsoft 전용**  
-  
- Microsoft C는 크기가 지정된 정수 형식을 지원합니다. __int*n* 형식 지정자를 사용하여 8비트, 16비트, 32비트 또는 64비트 정수 변수를 선언할 수 있습니다. 여기서 *n*은 정수 변수의 비트 크기입니다. *n*의 값은 8, 16, 32 또는 64입니다. 다음 예제에서는 네 가지 형식의 크기가 지정된 정수 각각의 변수 하나를 선언합니다.  
-  
-```  
-__int8 nSmall;      // Declares 8-bit integer  
-__int16 nMedium;    // Declares 16-bit integer  
-__int32 nLarge;     // Declares 32-bit integer  
-__int64 nHuge;      // Declares 64-bit integer  
-```  
-  
- 처음 세 가지 형식의 크기가 지정된 정수는 크기가 같은 ANSI 형식에 대한 동의어이며 여러 플랫폼에서 동일하게 동작하는 이식 가능한 코드 작성에 유용합니다. __int8 데이터 형식은 char 형식과 동의어이고, \__int16은 short 형식과 동의어이며, \__int32는 int 형식과 동의어입니다. \__int64 형식에는 해당 ANSI 유형이 없습니다.  
-  
- **Microsoft 전용 종료**  
-  
-## <a name="see-also"></a>참고 항목  
- [기본 형식의 저장소](../c-language/storage-of-basic-types.md)
+
+**Microsoft 전용**
+
+Microsoft C는 크기가 지정된 정수 형식을 지원합니다. __int*n* 형식 지정자를 사용하여 8비트, 16비트, 32비트 또는 64비트 정수 변수를 선언할 수 있습니다. 여기서 *n*은 정수 변수의 비트 크기입니다. *n*의 값은 8, 16, 32 또는 64입니다. 다음 예제에서는 네 가지 형식의 크기가 지정된 정수 각각의 변수 하나를 선언합니다.
+
+```
+__int8 nSmall;      // Declares 8-bit integer
+__int16 nMedium;    // Declares 16-bit integer
+__int32 nLarge;     // Declares 32-bit integer
+__int64 nHuge;      // Declares 64-bit integer
+```
+
+처음 세 가지 형식의 크기가 지정된 정수는 크기가 같은 ANSI 형식에 대한 동의어이며 여러 플랫폼에서 동일하게 동작하는 이식 가능한 코드 작성에 유용합니다. __int8 데이터 형식은 char 형식과 동의어이고, \__int16은 short 형식과 동의어이며, \__int32는 int 형식과 동의어입니다. \__int64 형식에는 해당 ANSI 유형이 없습니다.
+
+**Microsoft 전용 종료**
+
+## <a name="see-also"></a>참고 항목
+
+[기본 형식의 저장소](../c-language/storage-of-basic-types.md)

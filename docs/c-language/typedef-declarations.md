@@ -16,14 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba98340f9670229e7be0d56beac482d7ad994fb6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a7af5e89e66b179b4527fd35a042caf8ddb1c644
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765787"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100580"
 ---
 # <a name="typedef-declarations"></a>Typedef 선언
+
 typedef 선언은 typedef를 저장소 클래스로 사용하는 선언입니다. 선언자는 새 형식이 됩니다. typedef 선언을 사용하여 C에서 이미 정의된 형식이나 사용자가 선언한 형식에 대한 보다 짧거나 의미 있는 이름을 생성할 수 있습니다. typedef 이름을 사용하면 변경될 수 있는 구현 정보를 캡슐화할 수 있습니다.
 
 typedef 선언은 변수 또는 함수 선언과 같은 방식으로 해석되지만, 선언에 형식이 지정되었다고 가정하는 대신 식별자가 형식의 동의어가 됩니다.
@@ -113,6 +114,7 @@ pfv signal( int, pfv );    /* Uses typedef type */
 ```
 
 ## <a name="examples"></a>예제
+
 다음 예제에서는 typedef 선언을 보여 줍니다.
 
 ```C

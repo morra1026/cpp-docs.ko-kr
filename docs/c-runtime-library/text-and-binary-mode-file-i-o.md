@@ -25,12 +25,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4be1a3619fcd441dbcca53b0a1c369e30f9fb678
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 133f62347998ad8238c3136c3de03b08ba41346d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411486"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116258"
 ---
 # <a name="text-and-binary-mode-file-io"></a>텍스트 및 이진 모드 파일 I/O
 
@@ -47,4 +47,4 @@ ms.locfileid: "32411486"
 ## <a name="see-also"></a>참고 항목
 
 [입력 및 출력](../c-runtime-library/input-and-output.md)<br/>
- [범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>
