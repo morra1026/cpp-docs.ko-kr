@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3face9db98fcf2fc727d2bf8713a014f28ca5ec4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b55ede76c41f4832854d1c4b4c4c4fc2793a5e71
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299470"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118871"
 ---
 # <a name="linker-tools-warning-lnk4216"></a>링커 도구 경고 LNK4216
-내보낸된 항목 지점 항목  
-  
- 진입점은 DLL에서 내보내지 않았습니다. DLL의 진입점 내보낼 필요는 없습니다.
+
+내보낸된 항목 지점
+
+진입점은 DLL에서 내보내지 않았습니다. DLL의 진입점을 내보낼 필요가 없습니다.

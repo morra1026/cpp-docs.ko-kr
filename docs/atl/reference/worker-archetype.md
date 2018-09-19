@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13f34f7ceca5cf958e981f8390044863a07b4317
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 80bd9984afa3ce1fc6cda4e0b48cfa59e7e84b56
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767167"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118455"
 ---
 # <a name="worker-archetype"></a>Worker 원형
 
@@ -68,7 +68,7 @@ ms.locfileid: "43767167"
 
 작업 항목을 처리 하기 위해 호출 됩니다.
 
-```  
+```
 void Execute(
     RequestType request,  
     void* pvWorkerParam,  
@@ -77,25 +77,25 @@ void Execute(
 
 #### <a name="parameters"></a>매개 변수
 
-*요청*  
+*요청*<br/>
 작업 항목을 처리할 수입니다. 동일한 형식의 작업 항목은 `RequestType`합니다.
 
-*pvWorkerParam*  
+*pvWorkerParam*<br/>
 작업자 클래스에 의해 인식 사용자 지정 매개 변수입니다. 또한 전달 `WorkerArchetype::Initialize` 고 `Terminate`입니다.
 
-*pOverlapped*  
+*pOverlapped*<br/>
 에 대 한 포인터를 [OVERLAPPED](/windows/desktop/api/minwinbase/ns-minwinbase-_overlapped) 구조는 작업 항목이 대기 중인 큐를 만드는 데 사용 합니다.
 
 ## <a name="initialize"></a> WorkerArchetype::Initialize
 
-모든 요청에 전달 되기 전에 작업자 개체를 초기화 하기 위해 호출 `WorkerArchetype::Execute`합니다.  
+모든 요청에 전달 되기 전에 작업자 개체를 초기화 하기 위해 호출 `WorkerArchetype::Execute`합니다.
 ```
 BOOL Initialize(void* pvParam) throw();
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*pvParam*  
+*pvParam*<br/>
 작업자 클래스에 의해 인식 사용자 지정 매개 변수입니다. 또한 전달 `WorkerArchetype::Terminate` 고 `WorkerArchetype::Execute`입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -106,8 +106,8 @@ BOOL Initialize(void* pvParam) throw();
 
 작업자 클래스에 의해 처리 될 수 있는 작업 항목 형식에 대 한 typedef입니다.
 
-```  
-typedef MyRequestType RequestType;    
+```
+typedef MyRequestType RequestType;
 ```
 
 ### <a name="remarks"></a>설명
@@ -118,17 +118,17 @@ typedef MyRequestType RequestType;
 
 모든 요청에 전달 된 후 작업자 개체의 초기화를 취소 하기 위해 호출 `WorkerArchetype::Execute`).
 
-``` 
+```
 void Terminate(void* pvParam) throw();
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*pvParam*  
+*pvParam*<br/>
 작업자 클래스에 의해 인식 사용자 지정 매개 변수입니다. 또한 전달 `WorkerArchetype::Initialize` 고 `WorkerArchetype::Execute`입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[개념](../../atl/active-template-library-atl-concepts.md)   
+[개념](../../atl/active-template-library-atl-concepts.md)<br/>
 [ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md)
 

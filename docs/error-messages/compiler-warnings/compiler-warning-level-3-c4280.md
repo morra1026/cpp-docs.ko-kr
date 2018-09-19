@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6d4e9743a584249e2ec51c639423f56280f2d8f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: aa1446e6725ecbb990e38ede33071afddb54065f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33289908"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118325"
 ---
 # <a name="compiler-warning-level-3-c4280"></a>컴파일러 경고(수준 3) C4280
-'type' 형식을 통해 재귀적을 된 'operator->'  
-  
- 코드 잘못 사용 **operator->** 자신을 호출 하 합니다.  
-  
- 다음 샘플에서는 C4280 오류가 생성 됩니다.  
-  
-```  
-// C4280.cpp  
-// compile with: /W3 /WX  
-struct A  
-{  
-   int z;  
-   A& operator ->();  
-};  
-  
-void f(A y)  
-{  
-   int i = y->z; // C4280  
-}  
+
+'type' 형식을 통해 재귀적을 된 'operator->'
+
+코드 잘못 사용 **operator->** 자신을 호출 합니다.
+
+다음 샘플에서는 C4280 오류가 생성 됩니다.
+
+```
+// C4280.cpp
+// compile with: /W3 /WX
+struct A
+{
+   int z;
+   A& operator ->();
+};
+
+void f(A y)
+{
+   int i = y->z; // C4280
+}
 ```

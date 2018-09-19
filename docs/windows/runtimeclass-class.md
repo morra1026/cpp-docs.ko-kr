@@ -39,12 +39,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 07cd5fdc2aa47e5e7486f48c0106b7b24ff16d9f
-ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
+ms.openlocfilehash: 3bc016367495be8cc10c09605e8018811bde5ca9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45535045"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118910"
 ---
 # <a name="runtimeclass-class"></a>RuntimeClass 클래스
 
@@ -69,7 +69,8 @@ template <unsigned int classFlags, typename ...TInterfaces> class RuntimeClass;
 
 ## <a name="members"></a>멤버
 
-`RuntimeClassInitialize` 경우에 개체를 초기화 하는 함수는 `MakeAndInitialize` 템플릿 함수는 개체를 만드는 데 사용 됩니다. 초기화에 실패 한 경우 개체가 성공적으로 초기화 된 경우 S_OK 또는 COM 오류 코드를 반환 합니다. COM 오류 코드 반환 값으로 전파 됩니다 `MakeAndInitialize`합니다. 합니다 `RuntimeClassInitialize` 경우에 메서드가 호출 되지 않습니다는 `Make` 템플릿 함수는 개체를 만드는 데 사용 됩니다.
+`RuntimeClassInitialize`<br/>
+경우에 개체를 초기화 하는 함수는 `MakeAndInitialize` 템플릿 함수는 개체를 만드는 데 사용 됩니다. 초기화에 실패 한 경우 개체가 성공적으로 초기화 된 경우 S_OK 또는 COM 오류 코드를 반환 합니다. COM 오류 코드 반환 값으로 전파 됩니다 `MakeAndInitialize`합니다. 합니다 `RuntimeClassInitialize` 경우에 메서드가 호출 되지 않습니다는 `Make` 템플릿 함수는 개체를 만드는 데 사용 됩니다.
 
 ### <a name="public-constructors"></a>Public 생성자
 

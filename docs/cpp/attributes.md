@@ -8,12 +8,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c573f3e170929df1b988bf3e74535dd12b83a2f8
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: f2a6ef80edc5f6bbeaf43bbc5851336b67d8cf36
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131801"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118832"
 ---
 # <a name="attributes-in-c"></a>C + + 특성
 
@@ -45,7 +45,7 @@ void Foo(int);
 
 - `[[carries_dependency]]` 함수는 데이터 종속성 순서 스레드 동기화와 관련 하 여 전파를 지정 합니다. 하나 이상의 매개 변수에 전달 된 인수 전달 함수 본문에 대 한 종속성을 지정 하는 특성을 적용할 수 있습니다. 함수 반환 값 전달 함수의 종속성을 지정 하려면 자체에 특성을 적용할 수 있습니다. 컴파일러가이 정보를 사용 하 여 더 효율적인 코드를 생성할 수 있습니다.
 
-- `[[deprecated]]` **Visual Studio 2015 이상:** 함수는 사용할 수 없습니다 지정 되 고 나중에 라이브러리 인터페이스의 버전 존재 하지 않을 수 있습니다. 컴파일러는 클라이언트 코드에서 함수를 호출 하려고 하면 정보 메시지를 생성 하는 데 사용할 수 있습니다. 클래스, typedef 이름, 변수, 비정적 데이터 멤버, 함수, 네임 스페이스, 열거형, 열거자, 또는 템플릿 특수화의 선언에 적용할 수 있습니다.  
+- `[[deprecated]]` **Visual Studio 2015 이상:** 함수는 사용할 수 없습니다 지정 되 고 나중에 라이브러리 인터페이스의 버전 존재 하지 않을 수 있습니다. 컴파일러는 클라이언트 코드에서 함수를 호출 하려고 하면 정보 메시지를 생성 하는 데 사용할 수 있습니다. 클래스, typedef 이름, 변수, 비정적 데이터 멤버, 함수, 네임 스페이스, 열거형, 열거자, 또는 템플릿 특수화의 선언에 적용할 수 있습니다.
 
 - `[[fallthrough]]` **Visual Studio 2017 이상:** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md))는 `[[fallthrough]]` 컨텍스트의 특성을 사용할 수 있습니다 [전환](switch-statement-cpp.md) 컴파일러 (또는 읽는 독자 라면 누구나 힌트로 문 코드)는 fallthrough 동작 합니다. Visual c + + 컴파일러 현재 경고 하지 않습니다 fallthrough 동작에 있으므로이 특성에 적용 컴파일러 동작이 없습니다.
 
