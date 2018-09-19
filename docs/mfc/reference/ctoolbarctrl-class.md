@@ -192,12 +192,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f97559dd962fefbb4e727c0e75d0102898c8f13
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 93752aa124bc144e42a337f757c9d9cdc9a226ca
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724076"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047930"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl 클래스
 Windows의 도구 모음 공용 컨트롤의 기능을 제공합니다.  
@@ -410,65 +410,66 @@ BOOL AddButtons(
 ### <a name="remarks"></a>설명  
  합니다 *lpButtons* 배열을 가리키는 포인터 `TBBUTTON` 구조입니다. 각 `TBBUTTON` 구조체 단추의 스타일, 이미지 및/또는 문자열, 명령 ID, 상태 및 사용자 정의 데이터를 사용 하 여 추가 단추를 연결 합니다.  
   
- `typedef struct _TBBUTTON {`  
-  
- `int iBitmap;// zero-based index of button image`  
-  
- `int idCommand;  // command to be sent when button pressed`  
-  
- `BYTE fsState;   // button state--see below`  
-  
- `BYTE fsStyle;   // button style--see below`  
-  
- `DWORD dwData;   // application-defined value`  
-  
- `int iString;// zero-based index of button label string`  
-  
- `} TBBUTTON;`  
+```cpp
+typedef struct _TBBUTTON {
+    int iBitmap;    // zero-based index of button image
+    int idCommand;  // command to be sent when button pressed
+    BYTE fsState;   // button state--see below
+    BYTE fsStyle;   // button style--see below
+    DWORD dwData;   // application-defined value
+    int iString;    // zero-based index of button label string
+} TBBUTTON;
+```
   
  멤버는 다음과 같습니다.  
   
- `iBitmap`  
- 이 단추에 대 한 이미지가 없는 경우-1 단추 이미지의 0부터 시작 인덱스입니다.  
+- `iBitmap`  
+
+   이 단추에 대 한 이미지가 없는 경우-1 단추 이미지의 0부터 시작 인덱스입니다.  
   
- `idCommand`  
- 단추와 연결 된 명령 식별자입니다. 단추를 선택할 때이 식별자에 WM_COMMAND 메시지에 전송 됩니다. 경우는 `fsStyle` 멤버 TBSTYLE_SEP 값을 가진이 멤버는 0 이어야 합니다.  
+-  `idCommand`  
+
+   단추와 연결 된 명령 식별자입니다. 단추를 선택할 때이 식별자에 WM_COMMAND 메시지에 전송 됩니다. 경우는 `fsStyle` 멤버 TBSTYLE_SEP 값을 가진이 멤버는 0 이어야 합니다.  
   
- `fsState`  
- 단추 상태 플래그입니다. 아래에 나열 된 값의 조합 수 있습니다.  
+-  `fsState`  
+
+   단추 상태 플래그입니다. 아래에 나열 된 값의 조합 수 있습니다.  
   
-- TBSTATE_CHECKED 단추 TBSTYLE_CHECKED 스타일 있으며입니다.  
+   - TBSTATE_CHECKED 단추 TBSTYLE_CHECKED 스타일 있으며입니다.  
   
-- TBSTATE_ENABLED 단추 사용자 입력을 허용합니다. 이 상태 없는 단추 사용자 입력을 허용 하지 않습니다 및 회색으로 나타납니다.  
+   - TBSTATE_ENABLED 단추 사용자 입력을 허용합니다. 이 상태 없는 단추 사용자 입력을 허용 하지 않습니다 및 회색으로 나타납니다.  
   
-- TBSTATE_HIDDEN 단추가 표시 되지 않으며 사용자 입력을 받을 수 없습니다.  
+   - TBSTATE_HIDDEN 단추가 표시 되지 않으며 사용자 입력을 받을 수 없습니다.  
   
-- TBSTATE_INDETERMINATE 단추가 흐리게 표시 됩니다.  
+   - TBSTATE_INDETERMINATE 단추가 흐리게 표시 됩니다.  
   
-- 단추를 눌렀는지 TBSTATE_PRESSED 합니다.  
+   - 단추를 눌렀는지 TBSTATE_PRESSED 합니다.  
   
-- 줄 바꿈을 TBSTATE_WRAP 단추는 다음과 같습니다. 단추는 TBSTATE_ENABLED 상태가 있어야 합니다.  
+   - 줄 바꿈을 TBSTATE_WRAP 단추는 다음과 같습니다. 단추는 TBSTATE_ENABLED 상태가 있어야 합니다.  
   
- `fsStyle`  
- 단추 스타일입니다. 아래에 나열 된 값의 조합 수 있습니다.  
+- `fsStyle`  
+
+   단추 스타일입니다. 아래에 나열 된 값의 조합 수 있습니다.  
   
-- TBSTYLE_BUTTON 표준 누름 단추를 만듭니다.  
+   - TBSTYLE_BUTTON 표준 누름 단추를 만듭니다.  
   
-- 사용자 누름 및 누르지 않은 상태로 될 때마다 상태 간에 전환 하는 단추 클릭 TBSTYLE_CHECK 만듭니다. 누름 상태의 경우 단추가 다른 배경색을 됩니다.  
+   - 사용자 누름 및 누르지 않은 상태로 될 때마다 상태 간에 전환 하는 단추 클릭 TBSTYLE_CHECK 만듭니다. 누름 상태의 경우 단추가 다른 배경색을 됩니다.  
   
-- TBSTYLE_CHECKGROUP 그룹의 다른 단추를 누를 때까지 유지 되는 확인 단추 누름을 만듭니다.  
+   - TBSTYLE_CHECKGROUP 그룹의 다른 단추를 누를 때까지 유지 되는 확인 단추 누름을 만듭니다.  
   
-- TBSTYLE_GROUP 그룹의 다른 단추를 누를 때까지 유지 되는 단추 누름을 만듭니다.  
+   - TBSTYLE_GROUP 그룹의 다른 단추를 누를 때까지 유지 되는 단추 누름을 만듭니다.  
   
-- TBSTYLE_SEP 단추 그룹 사이의 작은 간격을 제공 하는 구분 기호를 만듭니다. 이 스타일에 있는 단추는 사용자 입력을 받지 않습니다.  
+   - TBSTYLE_SEP 단추 그룹 사이의 작은 간격을 제공 하는 구분 기호를 만듭니다. 이 스타일에 있는 단추는 사용자 입력을 받지 않습니다.  
   
- `dwData`  
- 사용자 정의 데이터입니다.  
+- `dwData`  
+
+   사용자 정의 데이터입니다.  
   
- `iString`  
- 단추 label의 경우이 단추에 대 한 문자열이 없으면-1을 사용 하는 문자열의 0부터 시작 인덱스입니다.  
+- `iString`  
+
+   단추 label의 경우이 단추에 대 한 문자열이 없으면-1을 사용 하는 문자열의 0부터 시작 인덱스입니다.  
   
- 이미지 및/또는 제공한 인덱스가 반드시 이전에 추가 되어 있어야를 도구 모음 컨트롤의 문자열을 사용 하 여 목록을 [AddBitmap](#addbitmap)하십시오 [AddString](#addstring), 및/또는 [AddStrings](#addstrings)합니다.  
+이미지 및/또는 제공한 인덱스가 반드시 이전에 추가 되어 있어야를 도구 모음 컨트롤의 문자열을 사용 하 여 목록을 [AddBitmap](#addbitmap)하십시오 [AddString](#addstring), 및/또는 [AddStrings](#addstrings)합니다.  
   
 ##  <a name="addstring"></a>  CToolBarCtrl::AddString  
  도구 모음에서의 내부 목록을 문자열 리소스 ID를 변수로 전달 된 새 문자열을 추가 합니다.  

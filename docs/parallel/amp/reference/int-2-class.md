@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7368607fd3041895d2f84553d64395ed1bd54820
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 7c3e3d61179717648c50709dc219038956438f3e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33686440"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080300"
 ---
 # <a name="int2-class"></a>int_2 클래스
 두 정수의 짧은 벡터를 나타냅니다.  
@@ -66,7 +66,7 @@ class int_2;
   
 |이름|설명|  
 |----------|-----------------|  
-|[int_2 생성자](#ctor)|오버로드됨. 기본 생성자, 0 인 모든 요소를 초기화 합니다.|  
+|[int_2 생성자](#ctor)|오버로드됨. 기본 생성자가 0 인 모든 요소를 초기화 합니다.|  
   
 ### <a name="public-methods"></a>Public 메서드  
   
@@ -134,7 +134,7 @@ class int_2;
   
 ##  <a name="ctor"></a> int_2 
 
- 기본 생성자, 0 인 모든 요소를 초기화 합니다.  
+ 기본 생성자가 0 인 모든 요소를 초기화 합니다.  
   
 ```  
 int_2() restrict(amp,
@@ -183,17 +183,17 @@ explicit inline int_2(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_V0`  
- 값 초기화 요소 0입니다.  
+*_V0*<br/>
+요소 0 초기화 값입니다.  
   
- `_V1`  
- 1 요소를 초기화 값입니다.  
+*_V1*<br/>
+1 요소를 초기화할 값입니다.  
   
- `_V`  
- 초기화에 대 한 값입니다.  
+*(_V)*<br/>
+초기화에 대 한 값입니다.  
   
- `_Other`  
- 초기화 하는 데 사용 되는 개체입니다.  
+*_Other*<br/>
+초기화 하는 데 사용 하는 개체입니다.  
   
 ##  <a name="int_2__size"></a> 크기 
 

@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0bba14bd704ba4d068fc5534f78a32f80b42046a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 294ca98d1f4ce8a86e551ab17269458784992a53
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169064"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053104"
 ---
 # <a name="compiler-error-c2234"></a>컴파일러 오류 C2234
-'name': 참조 배열이 적합 하지 않습니다.  
-  
- 참조에 대 한 포인터는 허용 되지 않으므로 참조 배열을 사용할 수 없는 합니다.  
-  
- 다음 샘플에서는 C2234 오류가 생성 됩니다.  
-  
-```  
-// C2234.cpp  
-int main() {  
-   int i = 0, j = 0, k = 0, l = 0;  
-   int &array[4] = {i,j,k,l};   // C2234  
-   int array2[4] = {i,j,k,l};   // OK  
-}  
+
+'name': 참조 배열이 잘못 되었습니다.
+
+없으므로 참조에 대 한 포인터, 참조 배열이 가능 하지 않습니다.
+
+다음 샘플에서는 C2234 오류가 생성 됩니다.
+
+```
+// C2234.cpp
+int main() {
+   int i = 0, j = 0, k = 0, l = 0;
+   int &array[4] = {i,j,k,l};   // C2234
+   int array2[4] = {i,j,k,l};   // OK
+}
 ```

@@ -16,40 +16,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c3de4c0d3e6a93a783dfb660bc26f07be6fcacf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2d05663b913a3e310c091b62a81483f28bbf2c09
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245886"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46049833"
 ---
 # <a name="compiler-error-c2897"></a>컴파일러 오류 C2897
-소멸자/종료자 함수 템플릿일 수 없습니다.  
-  
- 소멸자 또는 종료자 오버 로드할 수 없습니다, 소멸자 (있음 소멸자의 집합을 정의)를 템플릿으로 선언 허용 되지 않습니다.  
-  
- 다음 샘플에서는 C2897 오류가 생성 됩니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C2897 오류가 발생 합니다.  
-  
-```  
-// C2897.cpp  
-// compile with: /c  
-class X {  
-public:  
-   template<typename T> ~X() {}   // C2897  
-};  
-```  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C2897 오류가 발생 합니다.  
-  
-```  
-// C2897_b.cpp  
-// compile with: /c /clr  
-ref struct R2 {  
-protected:  
-   template<typename T> !R2(){}   // C2897 error  
-};  
+
+소멸자/종료자는 함수 템플릿일 수 없습니다.
+
+소멸자 또는 종료자 오버 로드할 수 없습니다, 소멸자 (있는 소멸자의 집합을 정의)를 템플릿으로 선언 허용 되지 않습니다.
+
+다음 샘플에서는 C2897를 생성합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플 C2897를 생성합니다.
+
+```
+// C2897.cpp
+// compile with: /c
+class X {
+public:
+   template<typename T> ~X() {}   // C2897
+};
+```
+
+## <a name="example"></a>예제
+
+다음 샘플 C2897를 생성합니다.
+
+```
+// C2897_b.cpp
+// compile with: /c /clr
+ref struct R2 {
+protected:
+   template<typename T> !R2(){}   // C2897 error
+};
 ```

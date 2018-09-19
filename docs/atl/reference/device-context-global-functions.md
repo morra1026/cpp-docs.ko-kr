@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86c8e7c6fb2d1e441ab0c85f60779bbefd221d52
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ac2e56e4b13f739f61df5b37ab70689784a39882
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761068"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077544"
 ---
 # <a name="device-context-global-functions"></a>장치 컨텍스트 전역 함수
 
@@ -39,10 +39,10 @@ HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);
 
 ### <a name="parameters"></a>매개 변수
 
-*hdc*  
+*hdc*<br/>
 [in] 장치 컨텍스트 또는 NULL의 기존 핸들입니다.
 
-*ptd*  
+*ptd*<br/>
 [in] 에 대 한 포인터를 `DVTARGETDEVICE` 대상 장치에 대 한 정보를 포함 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값

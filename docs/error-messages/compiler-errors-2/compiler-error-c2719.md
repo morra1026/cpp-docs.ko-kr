@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee8779db363c506d2f4ad884e15f78ba8231caa7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4423352bad520d66920a01542f592ed8022482d6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33233336"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054189"
 ---
 # <a name="compiler-error-c2719"></a>컴파일러 오류 C2719
-'parameter': __declspec(align('#'))를 사용하는 정식 매개 변수는 정렬되지 않습니다.  
-  
- [맞춤](../../cpp/align-cpp.md) `__declspec` 한정자 함수 매개 변수에서 허용 되지 않습니다. 함수 매개 변수 맞춤은 사용되는 호출 규칙에 의해 제어됩니다. 자세한 내용은 참조 [호출 규칙](../../cpp/calling-conventions.md)합니다.  
-  
- 다음 샘플에서는 C2719 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.  
-  
-```  
-// C2719.cpp  
-void func(int __declspec(align(32)) i);   // C2719  
-// try the following line instead  
-// void func(int i);  
+
+'parameter': __declspec(align('#'))를 사용하는 정식 매개 변수는 정렬되지 않습니다.
+
+합니다 [맞춤](../../cpp/align-cpp.md) `__declspec` 한정자 함수 매개 변수에서 허용 되지 않습니다. 함수 매개 변수 맞춤은 사용되는 호출 규칙에 의해 제어됩니다. 자세한 내용은 [호출 규칙](../../cpp/calling-conventions.md)합니다.
+
+다음 샘플에서는 C2719 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.
+
+```
+// C2719.cpp
+void func(int __declspec(align(32)) i);   // C2719
+// try the following line instead
+// void func(int i);
 ```

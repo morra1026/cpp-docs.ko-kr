@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3108da1b203160456e0823b4d9a3fd594b705a8b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d317384d3708679d485ae0a77c6ee9b6622b9c83
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290480"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050426"
 ---
 # <a name="compiler-warning-level-2-c4150"></a>컴파일러 경고 (수준 2) C4150
-불완전 한 형식 'type';에 대 한 포인터 삭제 소멸자가 호출 되지  
-  
- **삭제** 연산자가 호출 되어 선언 되었지만 정의 되지 않은 형식을 삭제 했으므로 컴파일러는 소멸자를 찾을 수 없습니다.  
-  
- 다음 샘플에서는 C4150 오류가 생성 됩니다.  
-  
-```  
-// C4150.cpp  
-// compile with: /W2  
-class  IncClass;  
-  
-void NoDestruct( IncClass* pIncClass )  
-{  
-   delete pIncClass;  
-} // C4150, define class to resolve  
-  
-int main()  
-{  
-}  
+
+불완전 한 형식 'type';에 대 한 포인터 삭제 소멸자가 호출 되지 않은
+
+합니다 **삭제** 컴파일러가 소멸자를 찾을 수 없습니다 있도록 선언 되었지만 정의 되지 않은 형식을 삭제 하려면 연산자를 호출 합니다.
+
+다음 샘플에서는 C4150 오류가 생성 됩니다.
+
+```
+// C4150.cpp
+// compile with: /W2
+class  IncClass;
+
+void NoDestruct( IncClass* pIncClass )
+{
+   delete pIncClass;
+} // C4150, define class to resolve
+
+int main()
+{
+}
 ```

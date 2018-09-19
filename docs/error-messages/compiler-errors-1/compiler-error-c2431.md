@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94a3f94163e02b953a4739b56a04f92f2499d27f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 944bead5439abf686fd18e436664e3c1cf7bccb5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197535"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46049960"
 ---
 # <a name="compiler-error-c2431"></a>컴파일러 오류 C2431
-'identifier'에 잘못 된 인덱스 레지스터가 두  
-  
- ESP 레지스터를 크기 조정 또는 인덱스와 기본 레지스터로 사용 합니다. Sib 인코딩에 둘은 x86 프로세서 중 하나를 허용 하지 않습니다.  
-  
- 다음 샘플에서는 C2431 오류가 생성 됩니다.  
-  
-```  
-// C2431.cpp  
-// processor: x86  
-int main() {  
-   _asm mov ax, [ESI + 2*ESP]   // C2431  
-   _asm mov ax, [esp + esp]   // C2431  
-}  
+
+'identifier'에 잘못 된 인덱스 레지스터
+
+ESP 등록을 크기 조정 또는 인덱스와 기본 등록으로 사용 합니다. X86 프로세서 중 하나를 허용 하지 않습니다 인코딩에 형제입니다.
+
+다음 샘플에서는 C2431 오류가 생성 됩니다.
+
+```
+// C2431.cpp
+// processor: x86
+int main() {
+   _asm mov ax, [ESI + 2*ESP]   // C2431
+   _asm mov ax, [esp + esp]   // C2431
+}
 ```

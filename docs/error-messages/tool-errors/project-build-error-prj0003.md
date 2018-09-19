@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a44f272569741b1897caed1d1d64832d8b113eae
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3d1a23b8171c916b05df1d715f803893ab0720e6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316438"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053819"
 ---
-# <a name="project-build-error-prj0003"></a>프로젝트 빌드 오류 PRJ0003  
-  
-> 오류를 생성할 '*명령줄*'.  
-  
-*명령줄* 명령 형식에 입력에서 파생 된 **속성 페이지** 대화 상자는 오류 코드를 반환 했지만에 아무 정보도 표시는 **출력** 창.  
+# <a name="project-build-error-prj0003"></a>프로젝트 빌드 오류 PRJ0003
 
-이 오류에 대 한 가능한 원인은 다음과 같습니다.  
-  
--   프로젝트에 ATL 서버에 따라 달라 집니다. Visual Studio 2008부터, ATL 서버를 더 이상 Visual Studio의 일부로 포함 있지만 CodePlex에서 공유 원본 프로젝트로 서 놓았습니다. ATL 서버 소스 코드 및 도구를 다운로드 하려면로 이동 [ATL 서버 라이브러리 및 도구](http://go.microsoft.com/fwlink/p/?linkid=81979)합니다.  
-  
--   시스템 리소스가 부족 합니다. 이 문제를 해결할 일부 응용 프로그램을 닫습니다.  
-  
--   보안 권한이 부족 합니다. 보안 권한이 충분 한지 확인 합니다.  
-  
--   에 지정 된 실행 파일 경로 **VC + + 디렉터리** 실행을 시도 하는 도구에 대 한 경로 포함 하지 않습니다. 자세한 내용은 참조 하세요. [프로젝트 속성 사용](../../ide/working-with-project-properties.md)  
-  
--   실행할 명령이 없습니다 메이크파일 프로젝트에 대 한 **빌드 명령줄** 또는 **다시 빌드 명령줄**합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [프로젝트 빌드 오류 및 경고(PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)
+> 오류 생성 '*명령줄*'.
+
+*명령줄* 명령에서 입력에서 형성 합니다 **속성 페이지** 대화 상자는 오류 코드를 반환 했지만에 아무 정보도 표시는 **출력** 창입니다.
+
+이 오류의 가능한 원인은 다음과 같습니다.
+
+- 프로젝트에 ATL 서버에 따라 달라 집니다. Visual Studio 2008부터 ATL 서버 더 이상 Visual Studio의 일부로 포함 되었지만 CodePlex에서 공유 소스 프로젝트로 놓았습니다. ATL 서버 소스 코드 및 도구를 다운로드 하려면로 이동 [ATL 서버 라이브러리 및 도구](http://go.microsoft.com/fwlink/p/?linkid=81979)합니다.
+
+- 시스템 리소스가 부족 합니다. 이 해결 하려면 일부 응용 프로그램을 닫습니다.
+
+- 보안 권한이 부족 합니다. 보안 권한이 있는지 확인 합니다.
+
+- 에 지정 된 실행 파일 경로 **VC + + 디렉터리** 실행 하려고 하는 도구의 경로 포함 하지 않습니다. 내용은 [프로젝트 속성 사용](../../ide/working-with-project-properties.md)
+
+- 메이크파일 프로젝트에 대 한 중 하나에서 실행 하는 명령을 누락 **명령줄 빌드** 하거나 **다시 빌드 명령줄**합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[프로젝트 빌드 오류 및 경고(PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)

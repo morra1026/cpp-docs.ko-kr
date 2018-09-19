@@ -16,31 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aaea09d89c192a1820c2a384144ce758fde90476
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0002b6fdf25374ec0d977c5fa4f450e41d29335f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33263949"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090648"
 ---
 # <a name="compiler-error-c3672"></a>컴파일러 오류 C3672
-의사 (pseudo) 소멸자 식은 함수 호출의 일부로 사용할 수 있습니다.  
-  
- 소멸자를 잘못 호출 했습니다.  자세한 내용은 참조 [소멸자](../../cpp/destructors-cpp.md)합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3672 오류가 발생 합니다.  
-  
-```  
-// C3672.cpp  
-template<typename T>  
-void f(T* pT) {  
-   &pT->T::~T;   // C3672  
-   pT->T::~T();   // OK  
-};  
-  
-int main() {  
-   int i;  
-   f(&i);  
-}  
+
+함수 호출의 일부로 의사 (pseudo) 소멸자 식만 사용할 수 있습니다.
+
+소멸자를 잘못 호출 했습니다.  자세한 내용은 [소멸자](../../cpp/destructors-cpp.md)합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플 C3672를 생성합니다.
+
+```
+// C3672.cpp
+template<typename T>
+void f(T* pT) {
+   &pT->T::~T;   // C3672
+   pT->T::~T();   // OK
+};
+
+int main() {
+   int i;
+   f(&i);
+}
 ```

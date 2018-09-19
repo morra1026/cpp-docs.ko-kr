@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6eea9b6005498c6c42017731db7ea706af96726
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a0d233bd9ad35eabe5782e58e186f0033b8cf816
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216992"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085773"
 ---
 # <a name="cmapstringtoob-class"></a>CMapStringToOb 클래스
 고유한 `CString` 개체를 `CObject` 포인터에 매핑하는 사전 컬렉션 클래스입니다.  
@@ -241,13 +241,12 @@ void GetNextAssoc(
   
  이 프로그램의 결과 아래와 같습니다.  
   
- `Lisa : a CAge at $4724 11`  
-  
- `Marge : a CAge at $47A8 35`  
-  
- `Homer : a CAge at $4766 36`  
-  
- `Bart : a CAge at $45D4 13`  
+```Output
+Lisa : a CAge at $4724 11
+Marge : a CAge at $47A8 35
+Homer : a CAge at $4766 36
+Bart : a CAge at $45D4 13
+```
   
 ##  <a name="getsize"></a>  CMapStringToOb::GetSize  
  지도 요소 수를 반환 합니다.  
@@ -484,11 +483,11 @@ CObject*& operator[ ](lpctstr key);
   
  이 프로그램의 결과 아래와 같습니다.  
   
- `Operator [] example: A CMapStringToOb with 2 elements`  
-  
- `[Lisa] = a CAge at $4A02 11`  
-  
- `[Bart] = a CAge at $497E 13`  
+```Output
+Operator [] example: A CMapStringToOb with 2 elements
+[Lisa] = a CAge at $4A02 11
+[Bart] = a CAge at $497E 13
+```
   
 ##  <a name="removeall"></a>  CMapStringToOb::RemoveAll  
  이 맵에서 모든 요소를 제거 하 고 삭제를 `CString` 개체 키입니다.  
@@ -553,13 +552,12 @@ BOOL RemoveKey(LPCTSTR key);
   
  이 프로그램의 결과 아래와 같습니다.  
   
- `RemoveKey example: A CMapStringToOb with 3 elements`  
-  
- `[Marge] = a CAge at $49A0 35`  
-  
- `[Homer] = a CAge at $495E 36`  
-  
- `[Bart] = a CAge at $4634 13`  
+```Output
+RemoveKey example: A CMapStringToOb with 3 elements
+[Marge] = a CAge at $49A0 35
+[Homer] = a CAge at $495E 36
+[Bart] = a CAge at $4634 13
+```
   
 ##  <a name="setat"></a>  CMapStringToOb::SetAt  
  기본 맵에서 요소를 삽입 한다는 의미입니다.  
@@ -598,17 +596,14 @@ void SetAt(
   
  이 프로그램의 결과 아래와 같습니다.  
   
- `before Lisa's birthday: A CMapStringToOb with 2 elements`  
-  
- `[Lisa] = a CAge at $493C 11`  
-  
- `[Bart] = a CAge at $4654 13`  
-  
- `after Lisa's birthday: A CMapStringToOb with 2 elements`  
-  
- `[Lisa] = a CAge at $49C0 12`  
-  
- `[Bart] = a CAge at $4654 13`  
+```Output
+before Lisa's birthday: A CMapStringToOb with 2 elements
+[Lisa] = a CAge at $493C 11
+[Bart] = a CAge at $4654 13
+after Lisa's birthday: A CMapStringToOb with 2 elements
+[Lisa] = a CAge at $49C0 12
+[Bart] = a CAge at $4654 13
+```
   
 ## <a name="see-also"></a>참고 항목  
  [CObject 클래스](../../mfc/reference/cobject-class.md)   

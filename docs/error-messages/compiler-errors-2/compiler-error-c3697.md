@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e4689365859ec121c716e5fb060d2985647bba30
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6cb5755cc737c0cc5524cb6abd980b70d08b6cf8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33263816"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050660"
 ---
 # <a name="compiler-error-c3697"></a>컴파일러 오류 C3697
-'한정자':에이 한정자를 사용할 수 없습니다 ' ^'  
-  
- 추적 핸들 (^)를 사용할 수 없는 한정자에 적용 되었습니다.  
-  
- 다음 샘플에서는 C3697 오류가 생성 됩니다.  
-  
-```  
-// C3697.cpp  
-// compile with: /clr  
-using namespace System;  
-int main() {  
-   String ^__restrict s;   // C3697  
-   String ^ s2;   // OK  
-}  
+
+'한정자':이 한정자를 사용할 수 없습니다 ' ^'
+
+추적 핸들 (^)에 사용할 수 없는 한정자를 적용 했습니다.
+
+다음 샘플에서는 C3697 오류가 생성 됩니다.
+
+```
+// C3697.cpp
+// compile with: /clr
+using namespace System;
+int main() {
+   String ^__restrict s;   // C3697
+   String ^ s2;   // OK
+}
 ```

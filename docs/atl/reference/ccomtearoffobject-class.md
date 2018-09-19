@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3814dacff2861bf78800adb8a019b696ce2756b7
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ecbf2b415b93526fe856e21411431eb1f20b4c42
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752764"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089582"
 ---
 # <a name="ccomtearoffobject-class"></a>CComTearOffObject 클래스
 
@@ -45,7 +45,7 @@ class CComTearOffObject : public Base
 
 #### <a name="parameters"></a>매개 변수
 
-*자료*  
+*자료*<br/>
 분리 막대가 클래스에서 파생 된 `CComTearOffObjectBase` 고 인터페이스를 지원 하기 위해 분리 개체입니다.
 
 ATL 두 단계로 분리 인터페이스를 구현-는 `CComTearOffObjectBase` 메서드는 참조 횟수를 처리 하 고 `QueryInterface`, 하는 동안 `CComTearOffObject` 구현 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown)합니다.
@@ -123,7 +123,7 @@ CComTearOffObject(void* pv);
 
 ### <a name="parameters"></a>매개 변수
 
-*pv*  
+*pv*<br/>
 [in] 에 대 한 포인터로 변환할 포인터는 `CComObject<Owner>` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -164,7 +164,7 @@ CComObject<Owner>* m_pOwner;
 
 ### <a name="parameters"></a>매개 변수
 
-*소유자*  
+*소유자*<br/>
 [in] 분리 막대가 구현 되는 클래스입니다.
 
 ### <a name="remarks"></a>설명
@@ -181,10 +181,10 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
 ### <a name="parameters"></a>매개 변수
 
-*iid*  
+*iid*<br/>
 [in] 요청 된 인터페이스의 IID입니다.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] 로 식별 되는 인터페이스 포인터에 대 한 포인터 *iid*, 또는 인터페이스를 찾을 수 없으면 NULL입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -209,5 +209,5 @@ STDMETHOD_ULONG Release();
 
 ## <a name="see-also"></a>참고 항목
 
-[CComCachedTearOffObject 클래스](../../atl/reference/ccomcachedtearoffobject-class.md)   
+[CComCachedTearOffObject 클래스](../../atl/reference/ccomcachedtearoffobject-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

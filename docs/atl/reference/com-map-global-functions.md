@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9d3db2a3d7f673c8e81b1077bcb45e9b8241d37
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c9185a71cc77cadb1ad7cdf577654730819147d2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751863"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113138"
 ---
 # <a name="com-map-global-functions"></a>COM 맵 전역 함수
 
@@ -51,16 +51,16 @@ HRESULT AtlInternalQueryInterface(
 
 ### <a name="parameters"></a>매개 변수
 
-*pThis*  
+*pThis*<br/>
 [in] 에 노출 된 인터페이스의 COM 맵에 포함 된 개체에 대 한 포인터 `QueryInterface`합니다.
 
-*pEntries*  
+*pEntries*<br/>
 [in] 배열을 `_ATL_INTMAP_ENTRY` 맵을 사용할 수 있는 인터페이스에 액세스 하는 구조입니다.
 
-*iid*  
+*iid*<br/>
 [in] 요청 된 인터페이스의 GUID입니다.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] 에 지정 된 인터페이스 포인터에 대 한 포인터 *iid*, 또는 인터페이스를 찾을 수 없으면 NULL입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -85,10 +85,10 @@ BOOL InlineIsEqualUnknown(REFGUID rguid1);
 
 ### <a name="parameters"></a>매개 변수
 
-*rguid1*  
+*rguid1*<br/>
 [in] 비교할 GUID `IID_IUnknown`합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[함수](../../atl/reference/atl-functions.md)   
+[함수](../../atl/reference/atl-functions.md)<br/>
 [COM 맵 매크로](../../atl/reference/com-map-macros.md)

@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c1e04bd31ca1942e5e5fa054cb4991233e2f61c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b772a548054cd9d829356436afe53748c215c193
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762189"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078922"
 ---
 # <a name="iatlmemmgr-class"></a>IAtlMemMgr 클래스
 
@@ -76,7 +76,7 @@ void* Allocate(size_t nBytes) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nBytes*  
+*nBytes*<br/>
 새 메모리 블록의 요청된 바이트 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -101,7 +101,7 @@ void Free(void* p) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -122,7 +122,7 @@ size_t GetSize(void* p) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -143,10 +143,10 @@ void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다.
 
-*nBytes*  
+*nBytes*<br/>
 새 메모리 블록의 요청된 바이트 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -173,7 +173,7 @@ STDMETHOD(get_AllowContextMenu)(VARIANT_BOOL* pbAllowContextMenu);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbAllowContextMenu*  
+*pbAllowContextMenu*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -194,7 +194,7 @@ STDMETHOD(get_AllowShowUI)(VARIANT_BOOL* pbAllowShowUI);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbAllowShowUI*  
+*pbAllowShowUI*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -215,7 +215,7 @@ STDMETHOD(get_AllowWindowlessActivation)(VARIANT_BOOL* pbAllowWindowless);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbAllowWindowless*  
+*pbAllowWindowless*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -236,7 +236,7 @@ STDMETHOD(get_BackColor)(OLE_COLOR* pclrBackground);
 
 ### <a name="parameters"></a>매개 변수
 
-*pclrBackground*  
+*pclrBackground*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -257,7 +257,7 @@ STDMETHOD(get_DisplayAsDefault)(VARIANT_BOOL* pbDisplayAsDefault);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbDisplayAsDefault*  
+*pbDisplayAsDefault*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -278,7 +278,7 @@ STDMETHOD(get_DocHostDoubleClickFlags)(DWORD* pdwDocHostDoubleClickFlags);
 
 ### <a name="parameters"></a>매개 변수
 
-*pdwDocHostDoubleClickFlags*  
+*pdwDocHostDoubleClickFlags*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -299,7 +299,7 @@ STDMETHOD(get_DocHostFlags)(DWORD* pdwDocHostFlags);
 
 ### <a name="parameters"></a>매개 변수
 
-*pdwDocHostFlags*  
+*pdwDocHostFlags*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -320,7 +320,7 @@ STDMETHOD(get_Font)(IFontDisp** pFont);
 
 ### <a name="parameters"></a>매개 변수
 
-*pFont*  
+*pFont*<br/>
 [out] 주소는 `IFontDisp` 이 속성의 현재 값을 수신 하는 데 사용 되는 인터페이스 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -341,7 +341,7 @@ STDMETHOD(get_ForeColor)(OLE_COLOR* pclrForeground);
 
 ### <a name="parameters"></a>매개 변수
 
-*pclrForeground*  
+*pclrForeground*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -362,7 +362,7 @@ STDMETHOD(get_LocaleID)(LCID* plcidLocaleID);
 
 ### <a name="parameters"></a>매개 변수
 
-*plcidLocaleID*  
+*plcidLocaleID*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -385,7 +385,7 @@ STDMETHOD(get_MessageReflect)(VARIANT_BOOL* pbMessageReflect);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbMessageReflect*  
+*pbMessageReflect*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -406,7 +406,7 @@ STDMETHOD(get_OptionKeyPath)(BSTR* pbstrOptionKeyPath);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbstrOptionKeyPath*  
+*pbstrOptionKeyPath*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -423,7 +423,7 @@ STDMETHOD(get_ShowGrabHandles)(VARIANT_BOOL* pbShowGrabHandles);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbShowGrabHandles*  
+*pbShowGrabHandles*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -444,7 +444,7 @@ STDMETHOD(get_ShowHatching)(VARIANT_BOOL* pbShowHatching);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbShowHatching*  
+*pbShowHatching*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -465,7 +465,7 @@ STDMETHOD(get_UserMode)(VARIANT_BOOL* pbUserMode);
 
 ### <a name="parameters"></a>매개 변수
 
-*pbUserMode*  
+*pbUserMode*<br/>
 [out] 이 속성의 현재 값을 받는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -486,7 +486,7 @@ STDMETHOD(put_AllowContextMenu)(VARIANT_BOOL bAllowContextMenu);
 
 ### <a name="parameters"></a>매개 변수
 
-*bAllowContextMenu*  
+*bAllowContextMenu*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -507,7 +507,7 @@ STDMETHOD(put_AllowShowUI)(VARIANT_BOOL bAllowShowUI);
 
 ### <a name="parameters"></a>매개 변수
 
-*bAllowShowUI*  
+*bAllowShowUI*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -528,7 +528,7 @@ STDMETHOD(put_AllowWindowlessActivation)(VARIANT_BOOL bAllowWindowless);
 
 ### <a name="parameters"></a>매개 변수
 
-*bAllowWindowless*  
+*bAllowWindowless*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -549,7 +549,7 @@ STDMETHOD(put_BackColor)(OLE_COLOR clrBackground);
 
 ### <a name="parameters"></a>매개 변수
 
-*clrBackground*  
+*clrBackground*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -570,7 +570,7 @@ STDMETHOD(put_DisplayAsDefault)(VARIANT_BOOL bDisplayAsDefault);
 
 ### <a name="parameters"></a>매개 변수
 
-*bDisplayAsDefault*  
+*bDisplayAsDefault*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -591,7 +591,7 @@ STDMETHOD(put_DocHostDoubleClickFlags)(DWORD dwDocHostDoubleClickFlags);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwDocHostDoubleClickFlags*  
+*dwDocHostDoubleClickFlags*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -612,7 +612,7 @@ STDMETHOD(put_DocHostFlags)(DWORD dwDocHostFlags);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwDocHostFlags*  
+*dwDocHostFlags*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -633,7 +633,7 @@ STDMETHOD(put_Font)(IFontDisp* pFont);
 
 ### <a name="parameters"></a>매개 변수
 
-*pFont*  
+*pFont*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -654,7 +654,7 @@ STDMETHOD(put_ForeColor)(OLE_COLOR clrForeground);
 
 ### <a name="parameters"></a>매개 변수
 
-*clrForeground*  
+*clrForeground*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -675,7 +675,7 @@ STDMETHOD(put_LocaleID)(LCID lcidLocaleID);
 
 ### <a name="parameters"></a>매개 변수
 
-*lcidLocaleID*  
+*lcidLocaleID*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -696,7 +696,7 @@ STDMETHOD(put_MessageReflect)(VARIANT_BOOL bMessageReflect);
 
 ### <a name="parameters"></a>매개 변수
 
-*bMessageReflect*  
+*bMessageReflect*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -717,7 +717,7 @@ STDMETHOD(put_OptionKeyPath)(BSTR bstrOptionKeyPath);
 
 ### <a name="parameters"></a>매개 변수
 
-*bstrOptionKeyPath*  
+*bstrOptionKeyPath*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -734,7 +734,7 @@ STDMETHOD(put_UserMode)(VARIANT_BOOL bUserMode);
 
 ### <a name="parameters"></a>매개 변수
 
-*bUserMode*  
+*bUserMode*<br/>
 [in] 이 속성의 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -755,7 +755,7 @@ virtual HRESULT STDMETHODCALLTYPE SetAmbientDispatch(IDispatch* pDispatch) = 0;
 
 ### <a name="parameters"></a>매개 변수
 
-*pDispatch*  
+*pDispatch*<br/>
 새 인터페이스에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -776,10 +776,10 @@ STDMETHOD(AttachControl)(IUnknown* pUnkControl, HWND hWnd);
 
 ### <a name="parameters"></a>매개 변수
 
-*pUnkControl*  
+*pUnkControl*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 호스트 개체에 연결 될 컨트롤의 인터페이스입니다.
 
-*hWnd*  
+*hWnd*<br/>
 [in] 호스팅에 사용 되는 창 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -799,13 +799,13 @@ STDMETHOD(CreateControl)(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpTricsData*  
+*lpTricsData*<br/>
 [in] 만들 컨트롤을 식별 하는 문자열입니다. (중괄호를 포함 해야 함) CLSID, ProgID, URL 또는 원시 HTML 수 (접두사로 **MSHTML:**).
 
-*hWnd*  
+*hWnd*<br/>
 [in] 호스팅에 사용 되는 창 핸들입니다.
 
-*pStream*  
+*pStream*<br/>
 [in] 컨트롤에 대 한 초기화 데이터를 포함 하는 스트림에 대 한 인터페이스 포인터입니다. NULL 일 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -836,22 +836,22 @@ STDMETHOD(CreateControlEx)(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpTricsData*  
+*lpTricsData*<br/>
 [in] 만들 컨트롤을 식별 하는 문자열입니다. (중괄호를 포함 해야 함) CLSID, ProgID, URL 또는 원시 HTML 수 (접두사로 **MSHTML:**).
 
-*hWnd*  
+*hWnd*<br/>
 [in] 호스팅에 사용 되는 창 핸들입니다.
 
-*pStream*  
+*pStream*<br/>
 [in] 컨트롤에 대 한 초기화 데이터를 포함 하는 스트림에 대 한 인터페이스 포인터입니다. NULL 일 수 있습니다.
 
-*ppUnk*  
+*ppUnk*<br/>
 [out] 수신할 포인터의 주소는 `IUnknown` 만든된 컨트롤의 인터페이스입니다. NULL 일 수 있습니다.
 
-*riidAdvise*  
+*riidAdvise*<br/>
 [in] 포함된 된 개체에는 송신 인터페이스의 인터페이스 식별자입니다. IID_NULL 될 수 있습니다.
 
-*punkAdvise*  
+*punkAdvise*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 으로 지정 된 포함된 된 개체의 연결 지점에 연결 되어 싱크 개체의 인터페이스가 `iidSink`합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -874,10 +874,10 @@ STDMETHOD(QueryControl)(REFIID riid, void** ppvObject);
 
 ### <a name="parameters"></a>매개 변수
 
-*riid*  
+*riid*<br/>
 [in] 요청 된 컨트롤에 인터페이스의 ID입니다.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] 만든된 컨트롤의 지정된 된 인터페이스를 수신할 포인터의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -894,7 +894,7 @@ STDMETHOD(SetExternalDispatch)(IDispatch* pDisp);
 
 ### <a name="parameters"></a>매개 변수
 
-*pDisp*  
+*pDisp*<br/>
 [in] 에 대 한 포인터는 `IDispatch` 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -911,7 +911,7 @@ STDMETHOD(SetExternalUIHandler)(IDocHostUIHandlerDispatch* pDisp);
 
 ### <a name="parameters"></a>매개 변수
 
-*pDisp*  
+*pDisp*<br/>
 [in] 에 대 한 포인터는 `IDocHostUIHandlerDispatch` 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -936,7 +936,7 @@ STDMETHOD(CreateControlLic)(
 
 ### <a name="parameters"></a>매개 변수
 
-*bstrLic*  
+*bstrLic*<br/>
 [in] 컨트롤에 대 한 라이선스 키를 포함 하는 BSTR입니다.
 
 ### <a name="remarks"></a>설명
@@ -966,7 +966,7 @@ STDMETHOD(CreateControlLicEx)(
 
 ### <a name="parameters"></a>매개 변수
 
-*bstrLic*  
+*bstrLic*<br/>
 [in] 컨트롤에 대 한 라이선스 키를 포함 하는 BSTR입니다.
 
 ### <a name="remarks"></a>설명

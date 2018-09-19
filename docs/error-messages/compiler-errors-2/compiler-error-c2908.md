@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d84f7fbda450b0830125a30898480ea94455332
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 913a01a21c75933688c55bbb79c3621124601745
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33241372"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053117"
 ---
 # <a name="compiler-error-c2908"></a>컴파일러 오류 C2908
-명시적 특수화. 'template' 이미 인스턴스화되어  
-  
- 기본 템플릿의 특수화는 명시적 특수화 되기 전에 발생합니다.  
-  
- 다음 샘플에서는 C2908 오류가 생성 됩니다.  
-  
-```  
-// C2908.cpp  
-// compile with: /c  
-template<class T> class X {};  
-  
-void f() {  
-X<int> x;   //specialization and instantiation  
-            //of X<int>  
-}  
-  
-template<> class X<int> {}  // C2908, explicit specialization  
+
+명시적 특수화 이미 인스턴스화된 'template'
+
+기본 템플릿의 특수화는 명시적 특수화는 그것이 전에 발생합니다.
+
+다음 샘플에서는 C2908를 생성합니다.
+
+```
+// C2908.cpp
+// compile with: /c
+template<class T> class X {};
+
+void f() {
+X<int> x;   //specialization and instantiation
+            //of X<int>
+}
+
+template<> class X<int> {}  // C2908, explicit specialization
 ```

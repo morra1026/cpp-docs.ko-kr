@@ -16,39 +16,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a358bd757a8ffeb445be160a1f06dc5ca13a789
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c07033489538011889ef939599b30b88664c08ee
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33251263"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135764"
 ---
 # <a name="compiler-error-c3414"></a>컴파일러 오류 C3414
-'member': 가져온된 멤버 함수를 정의할 수 없습니다.  
-  
- 멤버는 참조 된 어셈블리에 정의 된 코드에 정의 되었습니다.  
-  
- 다음 샘플에서는 C3414 오류가 생성 됩니다.  
-  
-```  
-// C3414a2.cpp  
-// compile with: /clr /LD  
-public ref class MyClass {  
-public:  
-   void Test(){}  
-};  
-```  
-  
- 그리고  
-  
-```  
-// C3414b2.cpp  
-// compile with: /clr  
-#using <C3414a2.dll>  
-  
-void MyClass::Test() {    // C3414  
-}  
-  
-System::Object::Object() {    // C3414  
-}  
-```  
+
+'member': 가져온된 멤버 함수를 정의할 수 없습니다
+
+멤버는 참조 된 어셈블리에 정의 된 코드에 정의 되었습니다.
+
+다음 샘플에서는 C3414를 생성합니다.
+
+```
+// C3414a2.cpp
+// compile with: /clr /LD
+public ref class MyClass {
+public:
+   void Test(){}
+};
+```
+
+그리고
+
+```
+// C3414b2.cpp
+// compile with: /clr
+#using <C3414a2.dll>
+
+void MyClass::Test() {    // C3414
+}
+
+System::Object::Object() {    // C3414
+}
+```

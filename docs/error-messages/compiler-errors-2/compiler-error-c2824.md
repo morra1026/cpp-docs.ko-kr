@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc654f60d9494480e0551f4de3ec1e041938cea2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 310156e82f69622a5c4a2315e204ccaa146e2c00
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33237166"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077414"
 ---
 # <a name="compiler-error-c2824"></a>컴파일러 오류 C2824
-'operator new' 이어야 합니다 반환 형식은 ' void *'  
-  
- 연산자 오버 로드 아닌 기반 포인터 `new` 반환 해야 `void *`합니다.  
-  
- 다음 샘플에서는 C2824 오류가 생성 됩니다.  
-  
-```  
-// C2824.cpp  
-// compile with: /c  
-class   A {  
-   A* operator new(size_t i, char *m);   // C2824  
-   // try the following line instead  
-   // void* operator new(size_t i, char *m);  
-};  
+
+'operator new' 이어야 합니다 반환 형식은 ' void *'
+
+연산자의 오버 로드 기반이 아닌 포인터를 사용 하 여 `new` 돌아가야 `void *`합니다.
+
+다음 샘플에서는 C2824 오류가 생성 됩니다.
+
+```
+// C2824.cpp
+// compile with: /c
+class   A {
+   A* operator new(size_t i, char *m);   // C2824
+   // try the following line instead
+   // void* operator new(size_t i, char *m);
+};
 ```

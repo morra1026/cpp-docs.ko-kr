@@ -16,39 +16,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59f0f93876076fcdf0dfb1ded58dcbfc750858ec
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 24df0b75d45f9447b26cd8942ff6ca3e751c6a5d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33227758"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047345"
 ---
 # <a name="compiler-error-c2521"></a>컴파일러 오류 C2521
-함수는 인수를 사용 하지 않습니다.  
-  
- 인수는 소멸자 또는 종료자를 사용 하려고 했습니다.  
-  
- 자세한 내용은 참조 [소멸자 및 종료자](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C2521 오류가 발생 합니다.  
-  
-```  
-// C2521.cpp  
-// compile with: /clr  
-ref class R {  
-protected:  
-   !R() {}  
-  
-public:  
-   void CleanUp() {  
-      this->!R(4);   // C2521  
-      this->!R();   // OK  
-   }  
-};  
-  
-int main() {  
-   R^ r = gcnew R();  
-   r->CleanUp();  
-}  
+
+함수 인수를 사용 하지 않습니다.
+
+소멸자 또는 종료자를 사용 하 여 인수를 사용 하려고 했습니다.
+
+자세한 내용은 [소멸자 및 종료자](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플 C2521를 생성합니다.
+
+```
+// C2521.cpp
+// compile with: /clr
+ref class R {
+protected:
+   !R() {}
+
+public:
+   void CleanUp() {
+      this->!R(4);   // C2521
+      this->!R();   // OK
+   }
+};
+
+int main() {
+   R^ r = gcnew R();
+   r->CleanUp();
+}
 ```

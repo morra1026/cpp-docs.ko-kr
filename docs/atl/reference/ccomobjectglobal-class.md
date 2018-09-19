@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4198e08a4c126a180006a088d4fc1509643824f6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 141940ef5d5c7d23ea3cf049e64e9f4c6974fce0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764932"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076660"
 ---
 # <a name="ccomobjectglobal-class"></a>CComObjectGlobal 클래스
 
@@ -42,7 +42,7 @@ class CComObjectGlobal : public Base
 
 #### <a name="parameters"></a>매개 변수
 
-*자료*  
+*자료*<br/>
 파생 된 클래스 [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) 하거나 [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)처럼 개체에서 지원 하려는 다른 모든 인터페이스 에서도 잘 합니다.
 
 ## <a name="members"></a>멤버
@@ -142,10 +142,10 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
 ### <a name="parameters"></a>매개 변수
 
-*iid*  
+*iid*<br/>
 [in] 요청 된 인터페이스의 GUID입니다.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] 인터페이스를 찾을 수 없으면 iid 또는 NULL로 식별 되는 인터페이스 포인터에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -174,7 +174,7 @@ STDMETHOD_(ULONG, Release)();
 
 ## <a name="see-also"></a>참고 항목
 
-[CComObjectStack 클래스](../../atl/reference/ccomobjectstack-class.md)   
-[CComAggObject 클래스](../../atl/reference/ccomaggobject-class.md)   
-[CComObject 클래스](../../atl/reference/ccomobject-class.md)   
+[CComObjectStack 클래스](../../atl/reference/ccomobjectstack-class.md)<br/>
+[CComAggObject 클래스](../../atl/reference/ccomaggobject-class.md)<br/>
+[CComObject 클래스](../../atl/reference/ccomobject-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

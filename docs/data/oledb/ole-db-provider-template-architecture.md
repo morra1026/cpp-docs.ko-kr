@@ -17,37 +17,40 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ebebb7f69239b62cf276e955fd6e54ef0cf37ea4
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 71e693c09d59643a272a0b2736a5a229ef444aa9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43684292"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078896"
 ---
 # <a name="ole-db-provider-template-architecture"></a>OLE DB 공급자 템플릿 구조
+
 ## <a name="data-sources-and-sessions"></a>데이터 소스 및 세션  
- OLE DB 공급자 아키텍처에는 데이터 원본 개체 및 하나 이상의 세션이 포함 됩니다. 데이터 원본 개체에는 모든 공급자를 인스턴스화해야 하는 초기 개체가입니다. 소비자 응용 프로그램에서 데이터를 필요한 경우 공동 공급자를 시작 하려면 데이터 원본 개체를 만듭니다. 데이터 원본 개체에는 세션 개체를 만듭니다 (사용 하 여는 `IDBCreateSession` 인터페이스)를 통해 소비자는 데이터 원본 개체에 연결 합니다. ODBC 프로그래머에 게 데이터 원본 개체에 해당 하는 것으로 생각할 수 있습니다는 `HENV` 와 동등 하 게 세션 개체는 `HDBC`합니다.  
+
+OLE DB 공급자 아키텍처에는 데이터 원본 개체 및 하나 이상의 세션이 포함 됩니다. 데이터 원본 개체에는 모든 공급자를 인스턴스화해야 하는 초기 개체가입니다. 소비자 응용 프로그램에서 데이터를 필요한 경우 공동 공급자를 시작 하려면 데이터 원본 개체를 만듭니다. 데이터 원본 개체에는 세션 개체를 만듭니다 (사용 하 여는 `IDBCreateSession` 인터페이스)를 통해 소비자는 데이터 원본 개체에 연결 합니다. ODBC 프로그래머에 게 데이터 원본 개체에 해당 하는 것으로 생각할 수 있습니다는 `HENV` 와 동등 하 게 세션 개체는 `HDBC`합니다.  
   
- ![공급자 아키텍처](../../data/oledb/media/vc4twb1.gif "vc4twb1")  
+![공급자 아키텍처](../../data/oledb/media/vc4twb1.gif "vc4twb1")  
   
- OLE DB 공급자 마법사에서 만든 소스 파일을 함께 OLE DB 템플릿 데이터 원본 개체를 구현 합니다. OLE DB에 해당 하는 개체인 세션 `TSession`합니다.  
+OLE DB 공급자 마법사에서 만든 소스 파일을 함께 OLE DB 템플릿 데이터 원본 개체를 구현 합니다. OLE DB에 해당 하는 개체인 세션 `TSession`합니다.  
   
 ## <a name="mandatory-and-optional-interfaces"></a>필수 및 선택적 인터페이스  
- OLE DB 공급자 템플릿에 필요한 모든 인터페이스에 대 한 미리 패키지 된 구현을 제공합니다. 필수 및 선택적 인터페이스는 여러 유형의 개체에 대 한 OLE DB에서 정의 됩니다.  
+
+OLE DB 공급자 템플릿에 필요한 모든 인터페이스에 대 한 미리 패키지 된 구현을 제공합니다. 필수 및 선택적 인터페이스는 여러 유형의 개체에 대 한 OLE DB에서 정의 됩니다.  
   
--   [데이터 원본](../../data/oledb/data-source-object-interfaces.md)  
+- [데이터 원본](../../data/oledb/data-source-object-interfaces.md)  
   
--   [세션](../../data/oledb/session-object-interfaces.md)  
+- [세션](../../data/oledb/session-object-interfaces.md)  
   
--   [행 집합](../../data/oledb/rowset-object-interfaces.md)  
+- [행 집합](../../data/oledb/rowset-object-interfaces.md)  
   
--   [명령](../../data/oledb/command-object-interfaces.md)  
+- [명령](../../data/oledb/command-object-interfaces.md)  
   
--   [트랜잭션](../../data/oledb/transaction-object-interfaces.md)  
+- [트랜잭션](../../data/oledb/transaction-object-interfaces.md)  
   
- 참고 OLE DB 공급자 템플릿 행 및 저장소 개체를 구현 하지 않습니다.  
+참고 OLE DB 공급자 템플릿 행 및 저장소 개체를 구현 하지 않습니다.  
   
- 다음 표에서 위에 나열 된 개체에 대 한 필수 및 선택적 인터페이스에 따라 합니다 [OLE DB 2.6 SDK 설명서](/previous-versions/windows/desktop/ms722784\(v=vs.85\))합니다.  
+다음 표에서 위에 나열 된 개체에 대 한 필수 및 선택적 인터페이스에 따라 합니다 [OLE DB 2.6 SDK 설명서](/previous-versions/windows/desktop/ms722784\(v=vs.85\))합니다.  
   
 |구성 요소|인터페이스|주석|  
 |---------------|---------------|-------------|  
@@ -57,12 +60,13 @@ ms.locfileid: "43684292"
 |[명령](../../data/oledb/command-object-interfaces.md) ([CCommand](ccommand-class.md))|[필수] `IAccessor`<br /><br /> [필수] `IColumnsInfo`<br /><br /> [필수] `ICommand`<br /><br /> [필수] `ICommandProperties`<br /><br /> [필수] `ICommandText`<br /><br /> [필수] `IConvertType`<br /><br /> [선택 사항] `IColumnsRowset`<br /><br /> [선택 사항] `ICommandPersist`<br /><br /> [선택 사항] `ICommandPrepare`<br /><br /> [선택 사항] `ICommandWithParameters`<br /><br /> [선택 사항] `ISupportErrorInfo`<br /><br /> [선택 사항] `ICommandStream`|명령 개체 쿼리와 같은 데이터에 대 한 작업을 처리합니다. 매개 변수가 있거나 매개 변수가 없는 문을 처리할 수 있습니다.<br /><br /> 명령 개체 매개 변수 및 출력 열에 대 한 바인딩을 처리를 담당 이기도 합니다. 바인딩에 행 집합에서 열을 검색 해야 하는 방법에 대 한 정보를 포함 하는 구조입니다. 서 수, 데이터 형식, 길이 및 상태와 같은 정보를 포함합니다.|  
 |[트랜잭션](../../data/oledb/transaction-object-interfaces.md) (선택 사항)|[필수] `IConnectionPointContainer`<br /><br /> [필수] `ITransaction`<br /><br /> [선택 사항] `ISupportErrorInfo`|트랜잭션 개체를 데이터 원본에서 작업의 원자 단위를 정의 하 고 이러한 작업 단위가 서로 관계를 결정 합니다. 이 개체는 OLE DB 공급자 템플릿에 의해 직접 지원 되지 않습니다 (즉, 사용자 고유의 개체 만듭니다).|  
   
- 자세한 내용은 다음 항목을 참조하세요.  
+자세한 내용은 다음 항목을 참조하세요.  
   
--   [속성 맵](../../data/oledb/property-maps.md)  
+- [속성 맵](../../data/oledb/property-maps.md)  
   
--   [사용자 레코드](../../data/oledb/user-record.md)  
+- [사용자 레코드](../../data/oledb/user-record.md)  
   
 ## <a name="see-also"></a>참고 항목  
- [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB 인터페이스](/previous-versions/windows/desktop/ms709709\(v=vs.85\))
+
+[OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB 인터페이스](/previous-versions/windows/desktop/ms709709\(v=vs.85\))

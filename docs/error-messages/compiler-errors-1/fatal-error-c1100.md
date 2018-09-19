@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89890fdaa5c2188aff279e22ff25dfa9868382c0
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b5567f1aad0d74bd42059e3458f4655781f30d16
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220048"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054105"
 ---
 # <a name="fatal-error-c1100"></a>심각한 오류 C1100
-OLE를 초기화할 수 없습니다: 시스템 오류 메시지  
-  
- 컴파일러 구성 요소 개체 모델 (COM) 라이브러리를 초기화할 수 없습니다. 참조 [CoInitialize](/windows/desktop/api/objbase/nf-objbase-coinitialize)합니다.
+
+OLE를 초기화할 수 없습니다: 시스템 오류 메시지
+
+컴파일러 구성 요소 개체 모델 (COM) 라이브러리를 초기화할 수 없습니다. 참조 [CoInitialize](/windows/desktop/api/objbase/nf-objbase-coinitialize)합니다.

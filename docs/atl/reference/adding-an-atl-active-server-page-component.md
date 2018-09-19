@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0cf97db30cae44d02a690782f1246e06d6c2b9a8
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a326b72ac5594d7ef5f0b9ad26f9bdf4e8472bd4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766723"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112995"
 ---
 # <a name="adding-an-atl-active-server-page-component"></a>ATL Active Server Page 구성 요소를 추가합니다.
 
@@ -46,10 +46,10 @@ Active Server Pages 구성 요소를 사용 하면 다음과 같은 고급 웹 �
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 추가](../../ide/adding-a-class-visual-cpp.md)   
-[ATL 프로젝트에 새 인터페이스 추가](../../atl/reference/adding-a-new-interface-in-an-atl-project.md)   
-[개체에 연결 지점 추가](../../atl/adding-connection-points-to-an-object.md)   
-[메서드 추가](../../ide/adding-a-method-visual-cpp.md)   
-[MFC 클래스](../../mfc/reference/adding-an-mfc-class.md)   
+[클래스 추가](../../ide/adding-a-class-visual-cpp.md)<br/>
+[ATL 프로젝트에 새 인터페이스 추가](../../atl/reference/adding-a-new-interface-in-an-atl-project.md)<br/>
+[개체에 연결 지점 추가](../../atl/adding-connection-points-to-an-object.md)<br/>
+[메서드 추가](../../ide/adding-a-method-visual-cpp.md)<br/>
+[MFC 클래스](../../mfc/reference/adding-an-mfc-class.md)<br/>
 [일반 C++ 클래스 추가](../../ide/adding-a-generic-cpp-class.md)
 

@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f892c7f3d1ca7bf2aebf3ecfe7574182b544fd01
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0439aa157a683065ccf7fff5b5f9d6d4d85e2f12
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248853"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054222"
 ---
 # <a name="compiler-error-c3136"></a>컴파일러 오류 C3136
-'interface': COM 인터페이스를 다른 COM 인터페이스에서 에서만 상속할 수 있습니다, 'interface' COM 인터페이스가 아니므로  
-  
- 적용 된 인터페이스는 [인터페이스 특성](../../windows/interface-attributes.md) 인터페이스를 COM 인터페이스에서 상속 합니다. COM 인터페이스에서 궁극적으로 상속 `IUnknown`합니다. 인터페이스 특성 다음에 오는 인터페이스가 COM 인터페이스가입니다.  
-  
- 다음 예제에서는 C3136 오류가 생성 됩니다.  
-  
-```  
-// C3136.cpp  
-#include "unknwn.h"  
-  
-__interface A   // C3136  
-// try the following line instead  
-// _interface A : IUnknown  
-{  
-   int a();  
-};  
-  
-[object]  
-__interface B : A  
-{  
-   int aa();  
-};  
+
+'interface': COM 인터페이스를 다른 COM 인터페이스에서 에서만 상속할 수 있습니다, 'interface' COM 인터페이스가 아닙니다.
+
+적용 된 인터페이스는 [interface 특성](../../windows/interface-attributes.md) COM 인터페이스가 아닌 인터페이스에서 상속 합니다. COM 인터페이스에서 궁극적으로 상속 `IUnknown`합니다. 인터페이스 특성으로 다음에 오는 인터페이스가 COM 인터페이스가입니다.
+
+다음 예제에서는 C3136 오류가 생성 됩니다.
+
+```
+// C3136.cpp
+#include "unknwn.h"
+
+__interface A   // C3136
+// try the following line instead
+// _interface A : IUnknown
+{
+   int a();
+};
+
+[object]
+__interface B : A
+{
+   int aa();
+};
 ```

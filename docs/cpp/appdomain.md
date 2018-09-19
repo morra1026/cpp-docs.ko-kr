@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52b371d0dedc03c3f14ede1472221077d081ae8f
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: f8ef06751e1c9e478c7119dbffb242581f432b9e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39402304"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111773"
 ---
 # <a name="appdomain"></a>appdomain
 
@@ -42,7 +42,7 @@ ms.locfileid: "39402304"
 
 특정 응용 프로그램 도메인에서 함수를 호출 하는 방법에 대 한 자세한 내용은 [call_in_appdomain 함수](../dotnet/call-in-appdomain-function.md)합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // declspec_appdomain.cpp
@@ -145,5 +145,6 @@ __declspec(process) CGlobal::~CGlobal destructor
 ```
 
 ## <a name="see-also"></a>참고자료
-[__declspec](../cpp/declspec.md)  
-[키워드](../cpp/keywords-cpp.md)  
+
+[__declspec](../cpp/declspec.md)<br/>
+[키워드](../cpp/keywords-cpp.md)

@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4ac334221f22dcd80434c1be2f59998709aae5e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: dcf5cbf6522d90b6338b817eebac434c81bf7c9a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204882"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080690"
 ---
 # <a name="crgn-class"></a>CRgn 클래스
 Windows GDI(그래픽 장치 인터페이스) 영역을 캡슐화합니다.  
@@ -326,13 +326,12 @@ BOOL CreatePolygonRgn(
  *lpPoints*  
  배열을 가리킵니다 `POINT` 구조체 또는 배열을 `CPoint` 개체입니다. 각 구조는 x 좌표 및 다각형의 한 꼭 짓 점의 y 좌표를 지정합니다. `POINT` 구조는 다음과 같은 형식을 갖습니다.  
   
- `typedef struct tagPOINT {`  
-  
- `int x;`  
-  
- `int y;`  
-  
- `} POINT;`  
+```cpp
+typedef struct tagPOINT {
+    int x;
+    int y;
+} POINT;
+```
   
  *nCount*  
  개수를 지정 `POINT` 구조 또는 `CPoint` 가리키는 개체 배열의 *lpPoints*합니다.  
@@ -372,13 +371,12 @@ BOOL CreatePolyPolygonRgn(
  *lpPoints*  
  배열을 가리킵니다 `POINT` 구조체 또는 배열을 `CPoint` 다각형의 꼭지점을 정의 하는 개체입니다. 시스템에 자동으로 닫히지 않습니다 때문에 각 다각형 명시적으로 닫아야 합니다. 다각형은 연속적으로 지정 됩니다. `POINT` 구조는 다음과 같은 형식을 갖습니다.  
   
- `typedef struct tagPOINT {`  
-  
- `int x;`  
-  
- `int y;`  
-  
- `} POINT;`  
+```cpp
+typedef struct tagPOINT {
+    int x;
+    int y;
+} POINT;
+```
   
  *lpPolyCounts*  
  정수의 배열 가리킵니다. 첫 번째 다각형의 꼭 짓 점 수를 지정 하는 첫 번째 정수를 *lpPoints* 고 두 번째 다각형의 꼭 짓 점 수를 지정 하는 배열에 두 번째 정수입니다.  
@@ -453,17 +451,14 @@ BOOL CreateRectRgnIndirect(LPCRECT lpRect);
  *lpRect*  
  가리키는 `RECT` 구조 또는 `CRect` 영역의 왼쪽 및 오른쪽 아래 모퉁이의 논리적 좌표를 포함 하는 개체입니다. `RECT` 구조는 다음과 같은 형식을 갖습니다.  
   
- `typedef struct tagRECT {`  
-  
- `int left;`  
-  
- `int top;`  
-  
- `int right;`  
-  
- `int bottom;`  
-  
- `} RECT;`  
+```cpp
+typedef struct tagRECT {
+    int left;
+    int top;
+    int right;
+    int bottom;
+} RECT;
+```
   
 ### <a name="return-value"></a>반환 값  
  작업이 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -715,17 +710,14 @@ BOOL RectInRegion(LPCRECT lpRect) const;
  *lpRect*  
  가리키는 `RECT` 구조 또는 `CRect` 개체입니다. `RECT` 구조는 다음과 같은 형식을 갖습니다.  
   
- `typedef struct tagRECT {`  
-  
- `int left;`  
-  
- `int top;`  
-  
- `int right;`  
-  
- `int bottom;`  
-  
- `} RECT;`  
+```cpp
+typedef struct tagRECT {
+    int left;
+    int top;
+    int right;
+    int bottom;
+} RECT;
+```
   
 ### <a name="return-value"></a>반환 값  
  지정된 된 사각형의 일부 영역 경계 내에 있는 경우 0이 아닌 값 그렇지 않으면 0입니다.  

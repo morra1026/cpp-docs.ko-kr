@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 952b0565c3ff22e4fb96ac59d7a969aad713c815
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bc9945cfd938b79784b3e29b484133365176e758
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33163779"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086995"
 ---
 # <a name="compiler-error-c2066"></a>컴파일러 오류 C2066
-함수 유형으로 캐스팅 올바르지 않습니다.  
-  
- ANSI c에서는 함수 포인터와 데이터 포인터 간의 캐스팅 없습니다.
+
+cast 함수 형식에 유효 하지 않은
+
+ANSI c에서 함수 포인터 사이의 데이터 포인터로 캐스팅 아닙니다.

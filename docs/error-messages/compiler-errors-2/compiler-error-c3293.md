@@ -16,44 +16,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b195a91825b0f20445b29e330f67810329584db7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8d45f342528b1ee6297ee6c11a01a0eceb710595
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33257730"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050335"
 ---
 # <a name="compiler-error-c3293"></a>컴파일러 오류 C3293
-'accessor': 'default'를 사용하여 'type' 클래스의 기본 속성(인덱서)에 액세스하세요.  
-  
- 인덱싱된 속성에 잘못 액세스했습니다.  참조 [하는 방법: 사용 하 여 속성 C + + /cli CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md) 자세한 정보에 대 한 합니다.  
 
- **Visual Studio 2017 이상**: Visual Studio 2015 및 이전 버전의 경우에 따라 컴파일러는 기본 속성으로는 기본 인덱서가 misidentified 합니다. 속성에 액세스하는 데 식별자 "default"를 사용하여 문제를 해결할 수 있었습니다. default가 C++11에서 키워드로 도입된 이후 해결 방법 자체가 문제가 되었습니다. 따라서 Visual Studio 2017에서는 해결 방법이 필요했던 버그가 수정되었고 이제 컴파일러는 "default"가 클래스에 대한 기본 속성에 액세스하는 데 사용될 경우 오류를 발생시킵니다.
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 c 3293 및 이전 버전 Visual Studio 2015에서 합니다.  
-  
-```  
-// C3293.cpp  
-// compile with: /clr /c  
-using namespace System;  
-ref class IndexerClass {  
-public:  
-   // default indexer  
-   property int default[int] {  
-      int get(int index) { return 0; }  
-      void set(int index, int value) {}  
-   }  
-};  
-  
-int main() {  
-   IndexerClass ^ ic = gcnew IndexerClass;  
+'accessor': 'default'를 사용하여 'type' 클래스의 기본 속성(인덱서)에 액세스하세요.
+
+인덱싱된 속성에 잘못 액세스했습니다.  참조 [방법: 사용 하 여 속성 C + + CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md) 자세한 내용은 합니다.
+
+**Visual Studio 2017 이상**: Visual Studio 2015 및 이전 버전에서는 일부 경우에 컴파일러는 기본 속성을 기본 인덱서로 misidentified 합니다. 속성에 액세스하는 데 식별자 "default"를 사용하여 문제를 해결할 수 있었습니다. default가 C++11에서 키워드로 도입된 이후 해결 방법 자체가 문제가 되었습니다. 따라서 Visual Studio 2017에서는 해결 방법이 필요했던 버그가 수정되었고 이제 컴파일러는 "default"가 클래스에 대한 기본 속성에 액세스하는 데 사용될 경우 오류를 발생시킵니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C3293 Visual Studio 2015 및 이전 버전을 생성 합니다.
+
+```
+// C3293.cpp
+// compile with: /clr /c
+using namespace System;
+ref class IndexerClass {
+public:
+   // default indexer
+   property int default[int] {
+      int get(int index) { return 0; }
+      void set(int index, int value) {}
+   }
+};
+
+int main() {
+   IndexerClass ^ ic = gcnew IndexerClass;
    ic->Item[0] = 21;   // C3293 in VS2015 OK in VS2017
    ic->default[0] = 21;   // OK in VS2015 and earlier
-  
-   String ^s = "Hello";  
+
+   String ^s = "Hello";
    wchar_t wc = s->Chars[0];   // C3293 in VS2015 OK in VS2017
-   wchar_t wc2 = s->default[0];   // OK in VS2015 and earlier  
-   Console::WriteLine(wc2);  
-}  
+   wchar_t wc2 = s->default[0];   // OK in VS2015 and earlier
+   Console::WriteLine(wc2);
+}
 ```

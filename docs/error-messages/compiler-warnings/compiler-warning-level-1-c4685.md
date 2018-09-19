@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31ba410d0ed0434109ce01733e8f3874b8ecbc00
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 898b9e31e252d8298ef341d9290baf1104a1aa7c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33274286"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084681"
 ---
 # <a name="compiler-warning-level-1-c4685"></a>컴파일러 경고(수준 1) C4685
-템플릿 매개 변수를 분석하는 경우 '> >'가 있어야 하는데 '>>'가 왔습니다.  
-  
- 템플릿 정의가 올바르게 종료되지 않았습니다.
+
+템플릿 매개 변수를 분석하는 경우 '> >'가 있어야 하는데 '>>'가 왔습니다.
+
+템플릿 정의가 올바르게 종료되지 않았습니다.

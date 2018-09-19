@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8f07a559c6353bb66a210bf450c15376720cdac
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: cc13285549543eeab07bed6372f8f7d529f90a32
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753037"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078701"
 ---
 # <a name="category-macros"></a>범주 매크로
 
@@ -67,7 +67,7 @@ BEGIN_CATEGORY_MAP(theClass)
 
 ### <a name="parameters"></a>매개 변수
 
-*theClass*  
+*theClass*<br/>
 [in] 범주 맵이 포함 된 클래스의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -109,7 +109,7 @@ IMPLEMENTED_CATEGORY(catID)
 
 ### <a name="parameters"></a>매개 변수
 
-*catID*  
+*catID*<br/>
 [in] CATID 상수 또는 변수 구현 된 범주에 대 한 전역적으로 고유 식별자 (GUID)를 보유 합니다. 주소의 *catID* 가져오며 맵에 추가 됩니다. 다양 한 주식 범주 아래 표를 참조 하세요.
 
 ### <a name="remarks"></a>설명
@@ -146,7 +146,7 @@ REQUIRED_CATEGORY( catID )
 
 ### <a name="parameters"></a>매개 변수
 
-*catID*  
+*catID*<br/>
 [in] CATID 상수 또는 변수 필요한 범주에 대 한 전역적으로 고유 식별자 (GUID)를 보유 합니다. 주소의 *catID* 가져오며 맵에 추가 됩니다. 다양 한 주식 범주 아래 표를 참조 하세요.
 
 ### <a name="remarks"></a>설명

@@ -16,17 +16,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 28150a39042305ab96c4dba7746c0b79dbec9509
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: d3b7d20fb82399f3778c751de28858b93f81071a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39340458"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080885"
 ---
 # <a name="dynamically-determining-columns-returned-to-the-consumer"></a>소비자에게 반환되는 열을 동적으로 결정
+
 PROVIDER_COLUMN_ENTRY 매크로 정상적으로 처리 된 `IColumnsInfo::GetColumnsInfo` 호출 합니다. 그러나 소비자는 책갈피를 사용 하도록 선택할 수, 있으므로 공급자 소비자는 책갈피를 요청 하는 여부에 따라 반환 되는 열을 변경할 수 여야 합니다.  
   
- 처리 하는 `IColumnsInfo::GetColumnsInfo` 함수를 정의 하는 PROVIDER_COLUMN_MAP, 삭제를 호출할 `GetColumnInfo`에서 `CAgentMan` 사용자 MyProviderRS.h의 기록 하 고 고유한 정의로 바꿉니다 `GetColumnInfo` 함수:  
+처리 하는 `IColumnsInfo::GetColumnsInfo` 함수를 정의 하는 PROVIDER_COLUMN_MAP, 삭제를 호출할 `GetColumnInfo`에서 `CAgentMan` 사용자 MyProviderRS.h의 기록 하 고 고유한 정의로 바꿉니다 `GetColumnInfo` 함수:  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
@@ -49,11 +50,11 @@ public:
 };  
 ```  
   
- 다음으로 구현 된 `GetColumnInfo` MyProviderRS.cpp, 다음 코드와 같이 함수입니다.  
+다음으로 구현 된 `GetColumnInfo` MyProviderRS.cpp, 다음 코드와 같이 함수입니다.  
   
- `GetColumnInfo` 먼저 확인 하는 경우 OLE DB 속성인 `DBPROP_BOOKMARKS` 설정 됩니다. 속성을 가져올 `GetColumnInfo` 대 한 포인터를 사용 하 여 (`pRowset`) 행 집합 개체입니다. `pThis` 포인터 클래스인 속성 맵에 저장 된 행 집합을 생성 하는 클래스를 나타냅니다. `GetColumnInfo` 포인터로 변환 합니다 `pThis` 에 대 한 포인터는 `RMyProviderRowset` 포인터입니다.  
+`GetColumnInfo` 먼저 확인 하는 경우 OLE DB 속성인 `DBPROP_BOOKMARKS` 설정 됩니다. 속성을 가져올 `GetColumnInfo` 대 한 포인터를 사용 하 여 (`pRowset`) 행 집합 개체입니다. `pThis` 포인터 클래스인 속성 맵에 저장 된 행 집합을 생성 하는 클래스를 나타냅니다. `GetColumnInfo` 포인터로 변환 합니다 `pThis` 에 대 한 포인터는 `RMyProviderRowset` 포인터입니다.  
   
- 확인 하는 `DBPROP_BOOKMARKS` 속성인 `GetColumnInfo` 사용 하 여를 `IRowsetInfo` 인터페이스를 호출 하 여 가져올 수 있습니다 `QueryInterface` 에 `pRowset` 인터페이스. 또는 ATL을 사용할 수 있습니다 [CComQIPtr](../../atl/reference/ccomqiptr-class.md) 메서드 대신 합니다.  
+확인 하는 `DBPROP_BOOKMARKS` 속성인 `GetColumnInfo` 사용 하 여를 `IRowsetInfo` 인터페이스를 호출 하 여 가져올 수 있습니다 `QueryInterface` 에 `pRowset` 인터페이스. 또는 ATL을 사용할 수 있습니다 [CComQIPtr](../../atl/reference/ccomqiptr-class.md) 메서드 대신 합니다.  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////  
@@ -114,7 +115,7 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(void* pThis, ULONG* pcCols)
 }  
 ```  
   
- 이 예제에서는 정적 배열을 사용 하 여 열 정보를 포함 하도록 합니다. 소비자는 책갈피 열을 원하지 않을 경우 배열에 있는 하나의 항목을 사용 하지 않습니다. 정보를 처리 하려면 두 배열 매크로 만듭니다: ADD_COLUMN_ENTRY 및 ADD_COLUMN_ENTRY_EX 합니다. ADD_COLUMN_ENTRY_EX는 추가 매개 변수로 `flags`되는 책갈피 열을 지정 하는 경우 필요 합니다.  
+이 예제에서는 정적 배열을 사용 하 여 열 정보를 포함 하도록 합니다. 소비자는 책갈피 열을 원하지 않을 경우 배열에 있는 하나의 항목을 사용 하지 않습니다. 정보를 처리 하려면 두 배열 매크로 만듭니다: ADD_COLUMN_ENTRY 및 ADD_COLUMN_ENTRY_EX 합니다. ADD_COLUMN_ENTRY_EX는 추가 매개 변수로 `flags`되는 책갈피 열을 지정 하는 경우 필요 합니다.  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
@@ -145,7 +146,7 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(void* pThis, ULONG* pcCols)
    _rgColumns[ulCols].columnid.uName.pwszName = (LPOLESTR)name;  
 ```  
   
- `GetColumnInfo` 함수, 책갈피 매크로 다음과 같이 사용 됩니다.  
+`GetColumnInfo` 함수, 책갈피 매크로 다음과 같이 사용 됩니다.  
   
 ```cpp  
 ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Bookmark"), 0, sizeof(DWORD),  
@@ -153,7 +154,8 @@ ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Bookmark"), 0, sizeof(DWORD),
    DBCOLUMNFLAGS_ISBOOKMARK)  
 ```  
   
- 이제 컴파일 및 향상 된 공급자를 실행할 수 있습니다. 에 설명 된 대로 공급자를 테스트 하려면 테스트 소비자를 수정 [단순 소비자 구현](../../data/oledb/implementing-a-simple-consumer.md)합니다. 공급자를 사용 하 여 테스트 소비자를 실행 합니다. 확인을 클릭 하면 테스트 소비자의 공급자에서 적절 한 문자열을 검색 하는 **실행할** 단추를 **소비자 테스트** 대화 상자.  
+이제 컴파일 및 향상 된 공급자를 실행할 수 있습니다. 에 설명 된 대로 공급자를 테스트 하려면 테스트 소비자를 수정 [단순 소비자 구현](../../data/oledb/implementing-a-simple-consumer.md)합니다. 공급자를 사용 하 여 테스트 소비자를 실행 합니다. 확인을 클릭 하면 테스트 소비자의 공급자에서 적절 한 문자열을 검색 하는 **실행할** 단추를 **소비자 테스트** 대화 상자.  
   
 ## <a name="see-also"></a>참고 항목  
- [단순한 읽기 전용 공급자의 기능 향상](../../data/oledb/enhancing-the-simple-read-only-provider.md)
+
+[단순한 읽기 전용 공급자의 기능 향상](../../data/oledb/enhancing-the-simple-read-only-provider.md)

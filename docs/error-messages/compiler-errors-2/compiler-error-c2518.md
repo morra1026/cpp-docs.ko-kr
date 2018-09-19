@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e1e44a99ad49945e441e1560f296dc66568ae3f3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 202d93e4ff466ddb1509c3d30ad3a326c07d0861
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228075"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051154"
 ---
 # <a name="compiler-error-c2518"></a>컴파일러 오류 C2518
-'keyword' 기본 클래스 목록;에 잘못 된 키워드 무시  
-  
- 키워드 `class` 및 `struct` 기본 클래스 목록에 표시 되지 않도록 합니다.  
-  
- 다음 샘플에서는 C2518 오류가 생성 됩니다.  
-  
-```  
-// C2518.cpp  
-// compile with: /c  
-class B {};  
-class C : public class B {};   // C2518  
-class D: public B {};   // OK  
+
+기본 클래스 목록에 잘못 된 ' keyword' 키워드 무시
+
+키워드 `class` 고 `struct` 기본 클래스 목록에 나타나지 않아야 합니다.
+
+다음 샘플에서는 C2518 오류가 생성 됩니다.
+
+```
+// C2518.cpp
+// compile with: /c
+class B {};
+class C : public class B {};   // C2518
+class D: public B {};   // OK
 ```

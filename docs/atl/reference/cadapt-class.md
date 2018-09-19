@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 503ce18d5ffa966f6c216468b487851207313937
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 9292c354b630ca5aea8bda7c88f5beab6691ba08
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105356"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052844"
 ---
 # <a name="cadapt-class"></a>CAdapt 클래스
 
@@ -36,13 +36,13 @@ ms.locfileid: "44105356"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T>  
+template <class T>
 class CAdapt
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 조정된 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -97,10 +97,10 @@ CAdapt(CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 
 ### <a name="parameters"></a>매개 변수
 
-*rSrc*  
+*rSrc*<br/>
 새로 생성 된 어댑터 개체를 복사할 수를 조정 하는 형식의 변수입니다.
 
-*rSrCA*  
+*rSrCA*<br/>
 포함 된 데이터는 복사 (또는 이동) 새로 생성 된 어댑터 개체에는 어댑터 개체입니다.
 
 ##  <a name="m_t"></a>  CAdapt::m_T
@@ -119,7 +119,7 @@ T m_T;
 
 반환을 **const** 에 대 한 참조를 [m_T](#m_t) 멤버, 어댑터 개체 형식의 개체 처럼 처리 되도록 허용 *T*합니다.
 
-```  
+```
 operator const T&() const;
 ```
 
@@ -131,7 +131,7 @@ A **상수** 에 대 한 참조 `m_T`합니다.
 
 에 대 한 참조를 반환 합니다 [m_T](#m_t) 어댑터 개체 형식의 개체 처럼 처리 되도록 허용 멤버 *T*.
 
-```  
+```
 operator T&();
 ```
 
@@ -149,7 +149,7 @@ bool operator<(const T& rSrc) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*rSrc*  
+*rSrc*<br/>
 비교할 개체 참조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -168,10 +168,10 @@ CAdapt& operator= (CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 
 ### <a name="parameters"></a>매개 변수
 
-*rSrc*  
+*rSrc*<br/>
 복사할 조정 된 형식의 개체에 대 한 참조입니다.
 
-*rSrCA*  
+*rSrCA*<br/>
 이동할 개체에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -188,7 +188,7 @@ bool operator== (const T& rSrc) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*rSrc*  
+*rSrc*<br/>
 비교할 개체 참조입니다.
 
 ### <a name="return-value"></a>반환 값

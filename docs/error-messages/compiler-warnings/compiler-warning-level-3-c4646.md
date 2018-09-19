@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36ff770877333042319b2a91dc5006e2ceb4118f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9ad9a96aaf15294a1404de54f276eb5309a09357
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291218"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086787"
 ---
 # <a name="compiler-warning-level-3-c4646"></a>컴파일러 경고(수준 3) C4646
-__declspec(noreturn)으로 선언된 함수에 void가 아닌 반환 형식이 있습니다.  
-  
- [noreturn](../../cpp/noreturn.md) `__declspec` 한정자로 표시한 함수에는 [void](../../cpp/void-cpp.md) 반환 형식이 있어야 합니다.  
-  
- 다음 샘플에서는 C4646을 생성합니다.  
-  
-```  
-// C4646.cpp  
-// compile with: /W3 /WX  
-int __declspec(noreturn) TestFunction()  
-{   // C4646  make return type void  
-}  
+
+__declspec(noreturn)으로 선언된 함수에 void가 아닌 반환 형식이 있습니다.
+
+[noreturn](../../cpp/noreturn.md) `__declspec` 한정자로 표시한 함수에는 [void](../../cpp/void-cpp.md) 반환 형식이 있어야 합니다.
+
+다음 샘플에서는 C4646을 생성합니다.
+
+```
+// C4646.cpp
+// compile with: /W3 /WX
+int __declspec(noreturn) TestFunction()
+{   // C4646  make return type void
+}
 ```

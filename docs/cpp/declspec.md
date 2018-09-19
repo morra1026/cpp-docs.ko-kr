@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b434ca991ef05bb90c3cbdc659cf8adc3381aa0
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b159bcdae6e7f576ed92275ec5f79d25132b53e5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752915"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111324"
 ---
 # <a name="declspec"></a>__declspec
 
@@ -105,5 +105,6 @@ __declspec( thread ) int tls_i = 1;
 **Microsoft 전용 종료**
 
 ## <a name="see-also"></a>참고자료
- [키워드](../cpp/keywords-cpp.md)  
- [C 확장 저장소 클래스 특성](../c-language/c-extended-storage-class-attributes.md)  
+
+[키워드](../cpp/keywords-cpp.md)<br/>
+[C 확장 저장소 클래스 특성](../c-language/c-extended-storage-class-attributes.md)

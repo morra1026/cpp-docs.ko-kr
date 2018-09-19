@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28f3a9173f1141c055547149bc18b5f96a3a475b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e35be180be7ded6a65585566dff6173a13ba7821
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165911"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46083381"
 ---
 # <a name="compiler-error-c2104"></a>컴파일러 오류 C2104
-비트 필드의 '&'가 무시됩니다.  
-  
- 비트 필드의 주소를 가져올 수 없습니다.  
-  
- 다음 샘플에서는 C2104 오류가 생성 됩니다.  
-  
-```  
-// C2104.cpp  
-struct X {  
-   int sb : 1;  
-};  
-  
-int main() {  
-   X x;  
-   &x.sb;   // C2104   
-   x.sb;   // OK  
-}  
+
+비트 필드의 '&'가 무시됩니다.
+
+비트 필드의 주소를 가져올 수 없습니다.
+
+다음 샘플에서는 C2104 오류가 생성 됩니다.
+
+```
+// C2104.cpp
+struct X {
+   int sb : 1;
+};
+
+int main() {
+   X x;
+   &x.sb;   // C2104
+   x.sb;   // OK
+}
 ```

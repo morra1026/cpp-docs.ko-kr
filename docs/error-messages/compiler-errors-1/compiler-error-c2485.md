@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf668f70d0d55c81744119e77fbb3bd24630493a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fe33462f5f2e5e958a70823a6b4652882860ba0b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33223792"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046630"
 ---
 # <a name="compiler-error-c2485"></a>컴파일러 오류 C2485
-'identifier': 확장 특성을 인식할 수 없습니다.  
-  
- 선언 특성이 올바르지 않습니다.
+
+'identifier': 확장 특성을 인식할 수 없습니다.
+
+선언 특성이 올바르지 않습니다.

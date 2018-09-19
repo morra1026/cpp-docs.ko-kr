@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e94b85a65f95353498c144eb4d55abdf83daa2c4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 61cf0471bd4308feb7be3a789f03e4355d6f7366
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33278168"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080287"
 ---
 # <a name="compiler-warning-level-1-c4175"></a>컴파일러 경고(수준 1) C4175
-\#pragma component(browser, on): 브라우저 정보는 처음에 명령줄에 지정  
-  
- [구성 요소](../../preprocessor/component.md) pragma를 사용하려면 컴파일하는 동안 브라우저 정보를 생성해야 합니다([/FR](../../build/reference/fr-fr-create-dot-sbr-file.md)).
+
+\#pragma component(browser, on): 브라우저 정보는 명령줄에서 처음에 지정 해야 합니다
+
+[구성 요소](../../preprocessor/component.md) pragma를 사용하려면 컴파일하는 동안 브라우저 정보를 생성해야 합니다([/FR](../../build/reference/fr-fr-create-dot-sbr-file.md)).

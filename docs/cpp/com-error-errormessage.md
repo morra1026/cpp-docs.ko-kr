@@ -16,31 +16,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8dda27c3f1c535f60856bd9d4a3abb9a51a1a32
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: afe11d570658ee077e8fdffe925349731f1921fd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219922"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111370"
 ---
 # <a name="comerrorerrormessage"></a>_com_error::ErrorMessage
-**Microsoft 전용**  
-  
- 에 저장 된 HRESULT에 대 한 문자열 메시지를 검색 합니다 `_com_error` 개체입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-const TCHAR * ErrorMessage( ) const throw( );  
-```  
-  
-## <a name="return-value"></a>반환 값  
- 내에 기록 된 HRESULT에 대 한 문자열 메시지를 반환 합니다 `_com_error` 개체입니다. HRESULT가 매핑된 16 비트 [wCode](../cpp/com-error-wcode.md), 일반 메시지 "`IDispatch error #<wCode>`"이 반환 됩니다. 메시지가 발견되지 않으면 일반 메시지 "`Unknown error #<hresult>`"가 반환됩니다. 반환 된 문자열은 유니코드 또는 _UNICODE 매크로의 상태에 따라 멀티 바이트 문자열  
-  
-## <a name="remarks"></a>설명  
- 내에 기록 된 HRESULT에 대 한 적절 한 시스템 메시지 텍스트를 검색 합니다 `_com_error` 개체입니다. Win32를 호출 하 여 시스템 메시지 텍스트를 가져옵니다 [FormatMessage](/windows/desktop/api/winbase/nf-winbase-formatmessage) 함수입니다. 반환된 문자열은 `FormatMessage` API에 의해 할당되고, `_com_error` 개체가 소멸될 때 해제됩니다.  
-  
- **Microsoft 전용 종료**  
-  
-## <a name="see-also"></a>참고자료  
- [_com_error 클래스](../cpp/com-error-class.md)
+
+**Microsoft 전용**
+
+에 저장 된 HRESULT에 대 한 문자열 메시지를 검색 합니다 `_com_error` 개체입니다.
+
+## <a name="syntax"></a>구문
+
+```
+const TCHAR * ErrorMessage( ) const throw( );
+```
+
+## <a name="return-value"></a>반환 값
+
+내에 기록 된 HRESULT에 대 한 문자열 메시지를 반환 합니다 `_com_error` 개체입니다. HRESULT가 매핑된 16 비트 [wCode](../cpp/com-error-wcode.md), 일반 메시지 "`IDispatch error #<wCode>`"이 반환 됩니다. 메시지가 발견되지 않으면 일반 메시지 "`Unknown error #<hresult>`"가 반환됩니다. 반환 된 문자열은 유니코드 또는 _UNICODE 매크로의 상태에 따라 멀티 바이트 문자열
+
+## <a name="remarks"></a>설명
+
+내에 기록 된 HRESULT에 대 한 적절 한 시스템 메시지 텍스트를 검색 합니다 `_com_error` 개체입니다. Win32를 호출 하 여 시스템 메시지 텍스트를 가져옵니다 [FormatMessage](/windows/desktop/api/winbase/nf-winbase-formatmessage) 함수입니다. 반환된 문자열은 `FormatMessage` API에 의해 할당되고, `_com_error` 개체가 소멸될 때 해제됩니다.
+
+**Microsoft 전용 종료**
+
+## <a name="see-also"></a>참고자료
+
+[_com_error 클래스](../cpp/com-error-class.md)

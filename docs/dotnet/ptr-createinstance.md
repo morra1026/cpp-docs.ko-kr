@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: dd4ba56b92150046b986f2b101f6a004c114bf28
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8f03a4f0cfb2b231e9a453009155308f7bf407db
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33161706"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112215"
 ---
 # <a name="ptrcreateinstance"></a>ptr::CreateInstance
-내에서 COM 개체의 인스턴스를 만듭니다는 `com::ptr`합니다.  
+내에서 COM 개체의 인스턴스를 만듭니다를 `com::ptr`입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -72,28 +72,28 @@ void CreateInstance(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `progid`  
- `ProgID` 문자열입니다.  
+*progid*<br/>
+`ProgID` 문자열입니다.  
   
- `pouter`  
- 집계 개체의 IUnknown 인터페이스 (controlling IUnknown)에 대 한 포인터입니다. 경우 `pouter` 를 지정 하지 않으면 `NULL` 사용 됩니다.  
+*pouter*<br/>
+집계 개체의 IUnknown 인터페이스 (controlling IUnknown)에 대 한 포인터입니다. 하는 경우 `pouter` 지정 하지 않으면 `NULL` 사용 됩니다.  
   
- `cls_context`  
- 새로 만든된 개체를 관리 하는 코드가 실행 되는 컨텍스트. 값에서 가져옵니다는 `CLSCTX` 열거형입니다. 경우 `cls_context` 을 지정 하지 않으면 CLSCTX_ALL 사용 되는 값입니다.  
+*cls_context*<br/>
+새로 만든된 개체를 관리 하는 코드가 실행 되는 컨텍스트. 값을 가져옵니다는 `CLSCTX` 열거형입니다. 경우 `cls_context` 지정 하지 않으면 CLSCTX_ALL 사용 되는 값입니다.  
   
- `rclsid`  
- `CLSID` 데이터 및 개체를 만드는 사용할 수 있는 코드와 연결 합니다.  
+*rclsid*<br/>
+`CLSID` 데이터 및 개체를 만드는 데 사용할 코드를 사용 하 여 연결 합니다.  
   
 ## <a name="exceptions"></a>예외  
- 경우는 `com::ptr` COM 개체에 대 한 참조를 이미 소유한 `CreateInstance` throw <xref:System.InvalidOperationException>합니다.  
+ 경우는 `com::ptr` COM 개체에 대 한 참조를 이미 소유 `CreateInstance` throw <xref:System.InvalidOperationException>합니다.  
   
- 이 함수 호출 `CoCreateInstance` 사용 하 여 <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> 오류 변환할 `HRESULT` 적절 한 예외를 합니다.  
+ 이 함수 호출 `CoCreateInstance` 사용 하 여 <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> 오류 변환할 `HRESULT` 적절 한 예외에 합니다.  
   
 ## <a name="remarks"></a>설명  
- `CreateInstance` 사용 하 여 `CoCreateInstance` ProgID 또는 CLSID에서 식별 된 지정된 된 개체의 새 인스턴스를 만듭니다. `com::ptr` 새로 만든된 개체를 참조 하 고는 자동으로 소멸 시 모든 소유 참조를 해제 합니다.  
+ `CreateInstance` 사용 하 여 `CoCreateInstance` ProgID 또는 CLSID에서 식별 된 지정된 된 개체의 새 인스턴스를 만들려고 합니다. `com::ptr` 새로 만든된 개체를 참조 하 고 소멸 시 모든 소유 참조를 자동으로 해제 됩니다.  
   
 ## <a name="example"></a>예제  
- 이 예제에서는 `com::ptr`을 사용해서 해당 개인 멤버 `IXMLDOMDocument` 개체를 래핑하는 CLR 클래스를 구현합니다. 클래스 생성자의 두 가지 다른 형식이 사용 `CreateInstance` ProgID 또는 CLSID는 CLSCTX에서 문서 개체를 만들려고 합니다.  
+ 이 예제에서는 `com::ptr`을 사용해서 해당 개인 멤버 `IXMLDOMDocument` 개체를 래핑하는 CLR 클래스를 구현합니다. 클래스 생성자에 사용할 두 가지 다른 형태의 `CreateInstance` ProgID 또는 CLSID plus는 CLSCTX에서 문서 개체를 만들려고 합니다.  
   
 ```  
 // comptr_createinstance.cpp  

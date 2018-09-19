@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 861cb216dba1e8b3d451d6120dba897e06ba910a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 72c82ce5885b8b40613a65bab72958d6ae7c1a2d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713195"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050861"
 ---
 # <a name="structured-exception-handling-cc"></a>Structured Exception Handling (C/C++)
 
@@ -154,8 +154,8 @@ Executing SEH __except block
 
 ## <a name="see-also"></a>참고자료
 
-[예외 처리](../cpp/exception-handling-in-visual-cpp.md)  
-[키워드](../cpp/keywords-cpp.md)  
-[\<exception>](../standard-library/exception.md)  
-[오류 및 예외 처리](../cpp/errors-and-exception-handling-modern-cpp.md)  
-[구조적된 예외 처리 (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms680657.aspx)  
+[예외 처리](../cpp/exception-handling-in-visual-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
+[\<exception>](../standard-library/exception.md)<br/>
+[오류 및 예외 처리](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[구조적된 예외 처리 (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms680657.aspx)

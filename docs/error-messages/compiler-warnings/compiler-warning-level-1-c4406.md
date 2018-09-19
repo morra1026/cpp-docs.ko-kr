@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64cded5192c62687006b37363c4bad6e3e001a19
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 26ccf67d5e80134254268d00f46181a8b5c9d9bd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33272203"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084915"
 ---
 # <a name="compiler-warning-level-1-c4406"></a>컴파일러 경고(수준 1) C4406
-무시 지시문의 피연산자  
-  
- 지시문에 피연산자 하지만 피연산자가 지정 되어 있습니다.  
-  
- 컴파일러는 지정 된 피연산자를 무시 합니다.
+
+무시 하는 지시문의 피연산자
+
+지시문에 피연산자 있지만 피연산자가 지정 합니다.
+
+컴파일러는 지정 된 피연산자를 무시 합니다.

@@ -16,36 +16,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af7fdd16925f080137be386cb3d2dd0dd3d8b446
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7042dd8689bf5a9bafc35d6bdaa6028f0c52df2a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293847"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087242"
 ---
 # <a name="compiler-warning-level-4-c4125"></a>컴파일러 경고(수준 4) C4125
-10진수가 8진수 이스케이프 시퀀스를 마칩니다.  
-  
- 컴파일러가 10진수 없는 8진수를 계산하고 10진수를 문자로 가정합니다.  
-  
-## <a name="example"></a>예제  
-  
-```  
-// C4125a.cpp  
-// compile with: /W4  
-char array1[] = "\709"; // C4125  
-int main()  
-{  
-}  
-```  
-  
- 숫자 9가 문자로 사용된 경우 예제를 다음과 같이 수정합니다.  
-  
-```  
-// C4125b.cpp  
-// compile with: /W4  
-char array[] = "\0709";  // C4125 String containing "89"  
-int main()  
-{  
-}  
+
+10진수가 8진수 이스케이프 시퀀스를 마칩니다.
+
+컴파일러가 10진수 없는 8진수를 계산하고 10진수를 문자로 가정합니다.
+
+## <a name="example"></a>예제
+
+```
+// C4125a.cpp
+// compile with: /W4
+char array1[] = "\709"; // C4125
+int main()
+{
+}
+```
+
+숫자 9가 문자로 사용된 경우 예제를 다음과 같이 수정합니다.
+
+```
+// C4125b.cpp
+// compile with: /W4
+char array[] = "\0709";  // C4125 String containing "89"
+int main()
+{
+}
 ```

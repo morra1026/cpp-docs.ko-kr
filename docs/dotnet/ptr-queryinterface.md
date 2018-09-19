@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: dd25661fc14cb9539d4b8e68f42c29895ce0d70e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2a3416f057d32a003eba1b9776456a60d915de95
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33160968"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090142"
 ---
 # <a name="ptrqueryinterface"></a>ptr::QueryInterface
 인터페이스에 대 한 소유 COM 개체를 쿼리하고 결과를 다른 연결 `com::ptr`합니다.  
@@ -40,17 +40,17 @@ void QueryInterface(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `other`  
- `com::ptr` 인터페이스를 받습니다.  
+*other*<br/>
+`com::ptr` 는 인터페이스를 받습니다.  
   
 ## <a name="exceptions"></a>예외  
- 내부적으로 `QueryInterface` 소유한 COM 개체 및 모든 오류를 호출할 `HRESULT` 여 예외로 변환 <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>합니다.  
+ 내부적으로 `QueryInterface` 소유 COM 개체 및 모든 오류 라고 `HRESULT` 하 여 예외를 변환할 때 <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>합니다.  
   
 ## <a name="remarks"></a>설명  
- 현재 래퍼가 소유 하는 COM 개체의 다른 인터페이스에 대 한 COM 래퍼를 만들려면이 메서드를 사용 합니다. 이 메서드를 호출 `QueryInterface` COM의 특정 인터페이스에 대 한 포인터를 요청 하려면 소유 COM 개체를 통해 개체를 반환 된 인터페이스 포인터를 전달 기능에 연결 `com::ptr`합니다.  
+ 현재 래퍼를 소유 하는 COM 개체의 다른 인터페이스에 대 한 COM 래퍼를 만들려면이 메서드를 사용 합니다. 이 메서드를 호출 `QueryInterface` COM의 특정 인터페이스에 대 한 포인터를 요청 하려면 소유 COM 개체를 통해 개체 및 전달 기능에 대 한 반환 된 인터페이스 포인터를 연결 `com::ptr`합니다.  
   
 ## <a name="example"></a>예제  
- 이 예제에서는 `com::ptr`을 사용해서 해당 개인 멤버 `IXMLDOMDocument` 개체를 래핑하는 CLR 클래스를 구현합니다. `WriteTopLevelNode` 멤버 함수를 사용 하 여 `QueryInterface` 로컬 채울 `com::ptr` 와 `IXMLDOMNode` 다음 전달는 `com::ptr` (추적 참조)에서 노드 이름 및 텍스트 속성을 콘솔에 작성 하는 private 멤버 함수에 있습니다.  
+ 이 예제에서는 `com::ptr`을 사용해서 해당 개인 멤버 `IXMLDOMDocument` 개체를 래핑하는 CLR 클래스를 구현합니다. `WriteTopLevelNode` 멤버 함수를 사용 하 여 `QueryInterface` 로컬에 맞게 `com::ptr` 사용 하 여를 `IXMLDOMNode` 다음 전달는 `com::ptr` (추적 참조)에서 노드의 이름 및 텍스트 속성을 콘솔에 작성 하는 private 멤버 함수에 합니다.  
   
 ```  
 // comptr_queryinterface.cpp  

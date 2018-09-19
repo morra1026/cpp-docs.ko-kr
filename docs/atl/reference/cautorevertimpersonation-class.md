@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99f0615dc37070311428ec12894bcaeea8febe8d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 45a14f8c742393c60a026f7c58217407715ef282
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760619"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052753"
 ---
 # <a name="cautorevertimpersonation-class"></a>CAutoRevertImpersonation 클래스
 
@@ -77,7 +77,7 @@ void Attach(const CAccessToken* pAT) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*PAT*  
+*PAT*<br/>
 주소를 [CAccessToken](../../atl/reference/caccesstoken-class.md) 개체를 자동으로 되돌릴 수
 
 ### <a name="remarks"></a>설명
@@ -94,7 +94,7 @@ CAutoRevertImpersonation(const CAccessToken* pAT) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*PAT*  
+*PAT*<br/>
 주소를 [CAccessToken](../../atl/reference/caccesstoken-class.md) 개체를 자동으로 되돌려집니다.
 
 ### <a name="remarks"></a>설명
@@ -147,6 +147,6 @@ const CAccessToken* GetAccessToken() throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[ATLSecurity 샘플](../../visual-cpp-samples.md)   
-[액세스 토큰](/windows/desktop/SecAuthZ/access-tokens)   
+[ATLSecurity 샘플](../../visual-cpp-samples.md)<br/>
+[액세스 토큰](/windows/desktop/SecAuthZ/access-tokens)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b15eee85b41661c40d3dd40035050a23177aa63
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cc8914e8ad349f9dcd75c5f0c08ee0d55570e89d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33231828"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114932"
 ---
 # <a name="compiler-error-c2704"></a>컴파일러 오류 C2704
-'identifier': __va_start 내장 함수는 varargs에서만 사용할 수 있습니다.  
-  
- `__va_start` 내장 함수는 선언에서 고정 개수의 인수와 함께 사용됩니다.
+
+'identifier': __va_start 내장 함수는 varargs에서만 사용할 수 있습니다.
+
+`__va_start` 내장 함수는 선언에서 고정 개수의 인수와 함께 사용됩니다.

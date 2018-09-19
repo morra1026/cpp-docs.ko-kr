@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed5c72ba0e90389bbae09473bf25454aa1901149
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1025648a71d96f758a6444984f7c682df9d7904e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33289596"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080950"
 ---
 # <a name="compiler-warning-level-3-c4282"></a>컴파일러 경고(수준 3) C4282
-'type' 형식을 통해 다음  
-  
- C4281shows 경고의이 연속 하는 **operator->** 통해 자신을 호출 `type`합니다.
+
+'type' 형식을 통해 다음
+
+이 경고 C4281shows입니다 **operator->** 를 통해 자신을 호출 `type`합니다.

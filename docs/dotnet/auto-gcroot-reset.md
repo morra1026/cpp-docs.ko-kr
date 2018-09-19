@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: d2ff59b6fc9c4f893f87fbb59b0531c5ba8917fb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f461958a09212f5beb562b5b8e92fa6f39711ec5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106377"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082276"
 ---
 # <a name="autogcrootreset"></a>auto_gcroot::reset
-현재 소유한 개체를 삭제 하 고 필요에 따라 새 개체를 소유한을 수행 합니다.  
+현재 소유한 개체를 제거 하 고 필요에 따라 새 개체의 소유를 수행 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,8 +39,8 @@ void reset(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `_new_ptr`  
- (선택 사항) 새 개체입니다.  
+*_new_ptr*<br/>
+(선택 사항) 새 개체입니다.  
   
 ## <a name="example"></a>예제  
   

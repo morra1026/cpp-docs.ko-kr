@@ -16,44 +16,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1715e535eeaed8b486be6052ed079eb4ee4e10c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c7e633594b1f5467c3a8a664029691423db5bb63
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33264183"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115985"
 ---
 # <a name="compiler-error-c3724"></a>컴파일러 오류 C3724
-해야 #include \<. h >를 사용 하 여 이벤트에 다중 스레딩을 사용  
-  
- Windows.h 파일은 사용 하는 경우 필요 이벤트에 다중 스레딩을 사용 합니다. 이 오류를 해결 하려면 추가 `#include <windows.h>` 수신기가 정의 이벤트 원본 및 이벤트에 있는 파일의 맨 위로 이동 합니다.  
-  
-```  
-// C3724.cpp  
-// uncomment the following line to resolve  
-// #include <windows.h>  
-  
-[event_source(native), threading(apartment)]  
-class CEventSrc {  
-public:  
-   __event void event1();   // C3724  
-};  
-  
-[event_receiver(native)]  
-class CEventRec {  
-public:  
-   void handler1() {  
-   }  
-  
-   void HookEvents(CEventSrc* pSrc) {  
-      __hook(CEventSrc::event1, pSrc, CEventRec::handler1);  
-   }  
-  
-   void UnhookEvents(CEventSrc* pSrc) {  
-      __unhook(CEventSrc::event1, pSrc, CEventRec::handler1);  
-   }  
-};  
-  
-int main() {  
-}  
+
+해야 #include \<windows.h >를 사용 하 여 이벤트를 사용 하 여 다중 스레딩
+
+Windows.h 파일을 사용 하는 필요한 경우 이벤트에 다중 스레딩을 사용 합니다. 이 오류를 해결 하려면 추가 `#include <windows.h>` 파일은 이벤트 소스와 이벤트 수신기가 정의 하는 맨 위로 이동 합니다.
+
+```
+// C3724.cpp
+// uncomment the following line to resolve
+// #include <windows.h>
+
+[event_source(native), threading(apartment)]
+class CEventSrc {
+public:
+   __event void event1();   // C3724
+};
+
+[event_receiver(native)]
+class CEventRec {
+public:
+   void handler1() {
+   }
+
+   void HookEvents(CEventSrc* pSrc) {
+      __hook(CEventSrc::event1, pSrc, CEventRec::handler1);
+   }
+
+   void UnhookEvents(CEventSrc* pSrc) {
+      __unhook(CEventSrc::event1, pSrc, CEventRec::handler1);
+   }
+};
+
+int main() {
+}
 ```

@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc4300c73eea1b9bc14c535fe9cde960c51212d0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d8ba6878c893aeaaaa1f0851fc94a6fd13bbf104
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248621"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081249"
 ---
 # <a name="compiler-error-c3049"></a>컴파일러 오류 C3049
-'arg': OpenMP 'default' 절의 인수가 잘못되었습니다.  
-  
- 잘못된 값이 [default](../../parallel/openmp/reference/default-openmp.md) 절에 전달되었습니다.  
-  
- 다음 샘플에서는 C3049를 생성합니다.  
-  
-```  
-// C3049.cpp  
-// compile with: /openmp /c  
-int main() {  
-   int n1 = 1;  
-  
-   #pragma omp parallel default(private)   // C3049   
-   // try the following line instead  
-   // #pragma omp parallel default(shared)  
-   {  
-      ++n1;  
-   }  
-}  
+
+'arg': OpenMP 'default' 절의 인수가 잘못되었습니다.
+
+잘못된 값이 [default](../../parallel/openmp/reference/default-openmp.md) 절에 전달되었습니다.
+
+다음 샘플에서는 C3049를 생성합니다.
+
+```
+// C3049.cpp
+// compile with: /openmp /c
+int main() {
+   int n1 = 1;
+
+   #pragma omp parallel default(private)   // C3049
+   // try the following line instead
+   // #pragma omp parallel default(shared)
+   {
+      ++n1;
+   }
+}
 ```

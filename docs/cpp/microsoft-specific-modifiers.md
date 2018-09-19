@@ -12,27 +12,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3dfc57e1d6af11628b37823f2452ee2b65f8a7f
-ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
+ms.openlocfilehash: 9a1fc13df342b4282ee63c185205c2f2b12ca003
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42572613"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110616"
 ---
 # <a name="microsoft-specific-modifiers"></a>Microsoft 전용 한정자
-이 단원에서는 다음 영역의 Microsoft 전용 C++ 확장에 대해 설명합니다.  
-  
--   [기반 주소](based-addressing.md)에 대 한 포인터를 사용 하 여 다른 포인터가 오프셋 하는 데 사용 될 수 있는 기준으로 하는 방법  
-  
--   [함수 호출 규칙](calling-conventions.md)  
-  
--   확장 저장소 클래스 특성을 사용 하 여 선언 된 [__declspec](declspec.md) 키워드  
-  
--   합니다 [__w64](w64.md) 키워드  
 
-### <a name="microsoft-specific-keywords"></a>Microsoft 전용 키워드  
+이 단원에서는 다음 영역의 Microsoft 전용 C++ 확장에 대해 설명합니다.
 
-Microsoft 전용 키워드 중 대다수는 파생 형식을 형성하는 선언자를 수정하는 데 사용될 수 있습니다. 선언 자에 대 한 자세한 내용은 참조 하세요. [선언 자](overview-of-declarators.md)합니다.  
+- [기반 주소](based-addressing.md)에 대 한 포인터를 사용 하 여 다른 포인터가 오프셋 하는 데 사용 될 수 있는 기준으로 하는 방법
+
+- [함수 호출 규칙](calling-conventions.md)
+
+- 확장 저장소 클래스 특성을 사용 하 여 선언 된 [__declspec](declspec.md) 키워드
+
+- 합니다 [__w64](w64.md) 키워드
+
+### <a name="microsoft-specific-keywords"></a>Microsoft 전용 키워드
+
+Microsoft 전용 키워드 중 대다수는 파생 형식을 형성하는 선언자를 수정하는 데 사용될 수 있습니다. 선언 자에 대 한 자세한 내용은 참조 하세요. [선언 자](overview-of-declarators.md)합니다.
 
 |키워드|의미|파생 형식을 만드는 데 사용됩니까?|   
 |-------------|-------------|---------------------------------|
@@ -47,4 +48,5 @@ Microsoft 전용 키워드 중 대다수는 파생 형식을 형성하는 선언
 |[__vectorcall](vectorcall.md)|뒤에 오는 이름이 인수 전달 시 가능하면 스택 대신 SSE 레지스터 등의 레지스터를 사용하는 함수를 선언합니다.|예|      
     
 ## <a name="see-also"></a>참고 항목     
- [C++ 언어 참조](cpp-language-reference.md)
+
+[C++ 언어 참조](cpp-language-reference.md)

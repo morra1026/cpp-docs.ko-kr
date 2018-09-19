@@ -16,38 +16,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 496f26046803efdd2b67cdc6d5a5ec74a3cbb90d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b8188e3fc861573025a4855102e3ced14d3136fb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293389"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46079702"
 ---
 # <a name="compiler-warning-level-4-c4365"></a>컴파일러 경고(수준 4) C4365
-'action': signed 또는 unsigned 일치 하지 않습니다. 'type_2', 'type_1'에서 변환  
-  
- 예를 들어, 부호 없는 값을 부호 있는 값으로 변환 하려고 합니다.  
-  
- C4365는 기본적으로 해제 되어 있습니다.  자세한 내용은 [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md)을 참조하세요.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C4365 경고가 발생 합니다.  
-  
-```  
-// C4365.cpp  
-// compile with: /W4  
-#pragma warning(default:4365)  
-  
-int f(int) { return 0; }  
-void Test(size_t i) {}  
-  
-int main() {  
-   unsigned int n = 10;  
-   int o = 10;  
-   n++;  
-   f(n);   // C4365  
-   f(o);   // OK  
-  
-   Test( -19 );   // C4365  
-}  
+
+'action': signed 또는 unsigned 일치 하지 않습니다. 'type_2', 'type_1'에서 변환
+
+예를 들어, 부호 없는 값을 부호 있는 값으로 변환 하려고 합니다.
+
+C4365는 기본적으로 해제 되어 있습니다.  자세한 내용은 [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md)을 참조하세요.
+
+## <a name="example"></a>예제
+
+다음 샘플 C4365를 생성합니다.
+
+```
+// C4365.cpp
+// compile with: /W4
+#pragma warning(default:4365)
+
+int f(int) { return 0; }
+void Test(size_t i) {}
+
+int main() {
+   unsigned int n = 10;
+   int o = 10;
+   n++;
+   f(n);   // C4365
+   f(o);   // OK
+
+   Test( -19 );   // C4365
+}
 ```

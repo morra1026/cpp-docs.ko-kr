@@ -1,5 +1,5 @@
 ---
-title: 문서 및 뷰 작업 | Microsoft Docs
+title: 문서 및 뷰를 사용 하 여 작업 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,21 +18,23 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 71750507d6b3c6cf14a721971d809347f8adfd3d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fdaf290cde69f6d269b4bf055c70171800aa1489
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33092948"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053975"
 ---
 # <a name="working-with-documents-and-views"></a>문서 및 뷰 작업
-Microsoft Foundation 클래스 (MFC) 라이브러리는 많은 기능에 대 한 문서/뷰 아키텍처에 의존합니다. 일반적으로 문서 데이터를 저장 하 고는 보기 프레임 창의 클라이언트 영역 내에서 표시 하 고 사용자 데이터와 상호 작용을 관리 합니다. 뷰를 가져오고 데이터를 업데이트 문서와 통신 합니다. Framework와 함께 또는 없이 데이터베이스 클래스를 사용할 수 있습니다.  
+
+Microsoft Foundation 클래스 (MFC) 라이브러리는 다양 한 기능에 대 한 문서/뷰 아키텍처를 사용합니다. 일반적으로 문서에 데이터를 저장 및 보기 프레임 창의 클라이언트 영역 내에서 표시 하 고 데이터를 사용 하 여 사용자 상호 작용을 관리 합니다. 뷰를 가져오고 데이터를 업데이트 하는 문서와 통신 합니다. 프레임 워크를 사용 하 여 또는 없으면 데이터베이스 클래스를 사용할 수 있습니다.  
   
- 데이터베이스 클래스를 사용 하 여 프레임 워크에 대 한 자세한 내용은 참조 하십시오. [MFC: 문서 및 뷰를 이용한 데이터베이스 클래스를 사용 하 여](../../data/mfc-using-database-classes-with-documents-and-views.md)합니다.  
+데이터베이스 클래스를 사용 하 여 프레임 워크에 대 한 자세한 내용은 참조 하세요. [MFC: 문서 및 뷰를 이용한 데이터베이스 클래스를 사용 하 여](../../data/mfc-using-database-classes-with-documents-and-views.md)입니다.  
   
- 기본적으로 MFC 응용 프로그램 마법사는 데이터베이스 지원 하지 않는 서 기초 응용 프로그램을 만듭니다. 그러나 최소 데이터베이스 지원 또는 전체 폼 기반 지원을 포함 하는 옵션을 선택할 수 있습니다. 응용 프로그램 마법사 옵션에 대 한 자세한 내용은 참조 [MFC 응용 프로그램 마법사, 데이터베이스 지원](../../mfc/reference/database-support-mfc-application-wizard.md)합니다.  
+기본적으로 MFC 응용 프로그램 마법사를 지원 하지 않는 데이터베이스는 기본 응용 프로그램을 만듭니다. 그러나 최소 데이터베이스 지원 또는 전체 폼 기반 지원을 포함 하는 옵션을 선택할 수 있습니다. 응용 프로그램 마법사 옵션에 대 한 자세한 내용은 참조 하세요. [MFC 응용 프로그램 마법사, 데이터베이스 지원](../../mfc/reference/database-support-mfc-application-wizard.md)합니다.  
   
- 전체 문서/뷰 아키텍처를 사용 하지 않고 데이터베이스 클래스를 사용할 수도 있습니다. 자세한 내용은 참조 [MFC: 문서 데이터베이스 클래스를 사용 하 여 뷰와](../../data/mfc-using-database-classes-without-documents-and-views.md)합니다.  
+또한 전체 문서/뷰 아키텍처를 사용 하지 않고 데이터베이스 클래스를 사용할 수 있습니다. 자세한 내용은 [MFC: 문서 데이터베이스 클래스를 사용 하 여 뷰와](../../data/mfc-using-database-classes-without-documents-and-views.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [ODBC 및 MFC](../../data/odbc/odbc-and-mfc.md)
+
+[ODBC 및 MFC](../../data/odbc/odbc-and-mfc.md)

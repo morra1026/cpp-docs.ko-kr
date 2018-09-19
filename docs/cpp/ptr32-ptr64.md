@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 050317be4c5f933ca9e08055a02555f5597c583c
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 573af4088e288403edaa8e5c34fb84817442c8f5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406535"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115998"
 ---
 # <a name="ptr32-ptr64"></a>__ptr32, __ptr64
 
@@ -42,12 +42,12 @@ int * __ptr32 p32;
 int * __ptr64 p64;
 ```
 
- 32 비트 시스템에서 사용 하 여 포인터 선언 **__ptr64** 32 비트 포인터로 잘립니다. 64 비트 시스템에서 사용 하 여 포인터 선언 **__ptr32** 64 비트 포인터로 강제 변환 됩니다.
+32 비트 시스템에서 사용 하 여 포인터 선언 **__ptr64** 32 비트 포인터로 잘립니다. 64 비트 시스템에서 사용 하 여 포인터 선언 **__ptr32** 64 비트 포인터로 강제 변환 됩니다.
 
 > [!NOTE]
 > 사용할 수 없습니다 **__ptr32** 또는 **__ptr64** 사용 하 여 컴파일하면 **/clr: pure**합니다. 그렇지 않으면 컴파일러 오류 C2472 생성 됩니다. **/clr: pure** 및 **/clr: safe** Visual Studio 2015에서 사용 되지 않고 Visual Studio 2017에서 지원 되지 않는 컴파일러 옵션입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에는 선언 및 사용 하 여 포인터를 할당 하는 방법을 보여 줍니다 합니다 **__ptr32** 하 고 **__ptr64** 키워드입니다.
 
@@ -80,4 +80,5 @@ int main()
 **Microsoft 전용 종료**
 
 ## <a name="see-also"></a>참고자료
- [기본 형식](../cpp/fundamental-types-cpp.md)
+
+[기본 형식](../cpp/fundamental-types-cpp.md)

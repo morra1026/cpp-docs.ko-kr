@@ -16,25 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa4b590b494355450909032c78822553004beddc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6e739c5c9fc77c4c9658afb2f5f6d9568c6f43bb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169438"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088360"
 ---
 # <a name="compiler-error-c2191"></a>컴파일러 오류 C2191
-두 번째 매개 변수 목록이 첫째 보다 깁니다.  
-  
- C 함수를 한 번 더 긴 매개 변수 목록 사용 하 여 선언 되었습니다. C에서 오버 로드 된 함수를 지원 하지 않습니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C2191 오류가 생성 됩니다.  
-  
-```  
-// C2191.c  
-// compile with: /Za /c  
-void func( int );  
-void func( int, float );   // C2191 different parameter list  
-void func2( int, float );   // OK  
+
+두 번째 매개 변수 목록이 첫째 보다 깁니다.
+
+C 함수 매개 변수 목록 사용 하 여 두 번 선언 되었습니다. C에서 오버 로드 된 함수를 지원 하지 않습니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C2191 오류가 생성 됩니다.
+
+```
+// C2191.c
+// compile with: /Za /c
+void func( int );
+void func( int, float );   // C2191 different parameter list
+void func2( int, float );   // OK
 ```

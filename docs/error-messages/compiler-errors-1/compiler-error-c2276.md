@@ -16,44 +16,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb5d0b8b533567884d574cc81ef74010beeacf55
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5a39c006acc3b5e3e74a738ba89c8ea6f56b889d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33172627"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114178"
 ---
 # <a name="compiler-error-c2276"></a>컴파일러 오류 C2276
-'operator': 바인딩된 멤버 함수 식에 잘못 된 작업  
-  
- 포인터-멤버를 만들려면 구문 사용 하 여 문제를 발견 하는 컴파일러.  
-  
- 다음 샘플에서는 C2276 오류가 생성 됩니다.  
-  
-```  
-// C2276.cpp  
-class A {  
-public:  
-   int func(){return 0;}  
-} a;  
-  
-int (*pf)() = &a.func;   // C2276  
-// try the following line instead  
-// int (A::*pf3)() = &A::func;  
-  
-class B {  
-public:  
-   void mf() {  
-      &this -> mf;   // C2276  
-      // try the following line instead  
-      // &B::mf;  
-   }  
-};  
-  
-int main() {  
-   A a;  
-   &a.func;   // C2276  
-   // try the following line instead  
-   // &A::func;  
-}  
+
+'operator': 바인딩된 멤버 함수 식의 연산이 잘못 되었습니다
+
+컴파일러는 포인터 멤버를 만드는 구문 사용 하 여 문제를 발견 합니다.
+
+다음 샘플에서는 C2276 오류가 생성 됩니다.
+
+```
+// C2276.cpp
+class A {
+public:
+   int func(){return 0;}
+} a;
+
+int (*pf)() = &a.func;   // C2276
+// try the following line instead
+// int (A::*pf3)() = &A::func;
+
+class B {
+public:
+   void mf() {
+      &this -> mf;   // C2276
+      // try the following line instead
+      // &B::mf;
+   }
+};
+
+int main() {
+   A a;
+   &a.func;   // C2276
+   // try the following line instead
+   // &A::func;
+}
 ```

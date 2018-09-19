@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5147b8079d694e59141c244a860f12c59f42f7b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: b77c814b3ce2f372ae34e3c0293951ec23cdf6a6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45706838"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090752"
 ---
 # <a name="atl-text-encoding-functions"></a>ATL 텍스트 인코딩 함수
 
@@ -44,7 +44,7 @@ ms.locfileid: "45706838"
 
 |||
 |-|-|
-|[AtlGetHexValue](#atlgethexvalue)|16진수의 숫자 값을 가져오려면 이 함수를 호출합니다.|   
+|[AtlGetHexValue](#atlgethexvalue)|16진수의 숫자 값을 가져오려면 이 함수를 호출합니다.|
 |[AtlGetVersion](#atlgetversion)|사용 중인 ATL 라이브러리의 버전을 가져오려면이 함수를 호출 합니다.  |
 |[AtlHexDecode](#atlhexdecode)|에 대 한 이전 호출에서와 같이 16 진수 텍스트로 인코딩된 데이터의 문자열을 디코딩합니다 [AtlHexEncode](#atlhexencode)합니다.|
 |[AtlHexDecodeGetRequiredLength](#atlhexdecodegetrequiredlength)|지정된 길이의 16진수로 인코딩된 문자열에서 디코딩된 데이터를 포함할 수 있는 버퍼를 바이트 크기로 가져오려면 이 함수를 호출합니다.|
@@ -70,19 +70,19 @@ ms.locfileid: "45706838"
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlenc.h의  
+**헤더:** atlenc.h의
 
 ## <a name="atlgethexvalue"></a> AtlGetHexValue
 
 16진수의 숫자 값을 가져오려면 이 함수를 호출합니다.
 
 ```
-inline char AtlGetHexValue(char chIn) throw();  
+inline char AtlGetHexValue(char chIn) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*chIn*  
+*chIn*<br/>
 16 진수 문자 '0'-'9', 'A'-'F' 또는 'a'-'f'입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -93,13 +93,13 @@ inline char AtlGetHexValue(char chIn) throw();
 
 사용 중인 ATL 라이브러리의 버전을 가져오려면이 함수를 호출 합니다.
 
-```  
-ATLAPI_(DWORD) AtlGetVersion(void* pReserved);  
+```
+ATLAPI_(DWORD) AtlGetVersion(void* pReserved);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*유지*  
+*유지*<br/>
 예약 된 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -114,32 +114,32 @@ ATL 라이브러리 컴파일 또는 실행 중인 버전의 DWORD 정수 값을
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlbase.h  
+**헤더:** atlbase.h
 
 ## <a name="atlhexdecode"></a> AtlHexDecode
 
 에 대 한 이전 호출에서와 같이 16 진수 텍스트로 인코딩된 데이터의 문자열을 디코딩합니다 [AtlHexEncode](#atlhexencode)합니다.
 
-```    
-inline BOOL AtlHexDecode(  
-   LPCSTR pSrcData,  
-   int nSrcLen,  
-   LPBYTE pbDest,  
-   int* pnDestLen) throw();  
+```
+inline BOOL AtlHexDecode(
+   LPCSTR pSrcData,
+   int nSrcLen,
+   LPBYTE pbDest,
+   int* pnDestLen) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*pSrcData*  
+*pSrcData*<br/>
 디코딩할 데이터가 포함 된 문자열입니다.
 
-*nSrcLen*  
+*nSrcLen*<br/>
 문자에서 길이 *pSrcData*합니다.
 
-*pbDest*  
+*pbDest*<br/>
 디코딩된 데이터를 받는 호출자 할당 버퍼입니다.
 
-*pnDestLen*  
+*pnDestLen*<br/>
 길이 (바이트) 포함 하는 변수에 대 한 포인터 *pbDest*합니다. 함수가 성공 하면 변수는 버퍼에 쓴 바이트 수를 받습니다. 함수가 실패할 경우 변수 버퍼의 바이트 길이 받게 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -150,13 +150,13 @@ inline BOOL AtlHexDecode(
 
 지정된 길이의 16진수로 인코딩된 문자열에서 디코딩된 데이터를 포함할 수 있는 버퍼를 바이트 크기로 가져오려면 이 함수를 호출합니다.
 
-```  
-inline int AtlHexDecodeGetRequiredLength(int nSrcLen) throw();  
+```
+inline int AtlHexDecodeGetRequiredLength(int nSrcLen) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*nSrcLen*  
+*nSrcLen*<br/>
 인코딩된 문자열의 문자 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -167,26 +167,26 @@ inline int AtlHexDecodeGetRequiredLength(int nSrcLen) throw();
 
 16진수 텍스트 문자열로 일부 데이터를 인코딩하려면 이 함수를 호출합니다.
 
-```  
-inline BOOL AtlHexEncode(  
-   const BYTE * pbSrcData,  
-   int nSrcLen,  
-   LPSTR szDest,  
-int * pnDestLen) throw();  
+```
+inline BOOL AtlHexEncode(
+   const BYTE * pbSrcData,
+   int nSrcLen,
+   LPSTR szDest,
+int * pnDestLen) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*pbSrcData*  
+*pbSrcData*<br/>
 인코딩된 데이터를 포함 하는 버퍼입니다.
 
-*nSrcLen*  
+*nSrcLen*<br/>
 인코딩된 데이터의 길이 (바이트)에서입니다.
 
-*szDest*  
+*szDest*<br/>
 인코딩된 데이터를 받는 호출자 할당 버퍼입니다.
 
-*pnDestLen*  
+*pnDestLen*<br/>
 문자에서 길이 포함 하는 변수에 대 한 포인터 *szDest*합니다. 함수가 성공 하면 변수는 버퍼에 쓴 문자의 수를 받습니다. 함수가 실패할 경우 변수 버퍼의 문자에서 길이 수신 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -201,13 +201,13 @@ int * pnDestLen) throw();
 
 지정된 크기의 데이터에서 디코딩된 문자열을 포함할 수 있는 버퍼를 문자 크기로 가져오려면 이 함수를 호출합니다.
 
-```  
-inline int AtlHexEncodeGetRequiredLength(int nSrcLen) throw();  
+```
+inline int AtlHexEncodeGetRequiredLength(int nSrcLen) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*nSrcLen*  
+*nSrcLen*<br/>
 인코딩된 데이터의 바이트 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -218,13 +218,13 @@ inline int AtlHexEncodeGetRequiredLength(int nSrcLen) throw();
 
 16진수의 숫자 값을 가져오려면 이 함수를 호출합니다.
 
-```  
-inline short AtlHexValue(char chIn) throw();  
+```
+inline short AtlHexValue(char chIn) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*chIn*  
+*chIn*<br/>
 16 진수 문자 '0'-'9', 'A'-'F' 또는 'a'-'f'입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -235,26 +235,26 @@ inline short AtlHexValue(char chIn) throw();
 
 유니코드 문자열을 UTF-8로 변환하려면 이 함수를 호출합니다.
 
-```  
-ATL_NOINLINE inline int AtlUnicodeToUTF8(  
-   LPCWSTR wszSrc,  
-   int nSrc,  
-   LPSTR szDest,  
-   int nDest) throw();  
+```
+ATL_NOINLINE inline int AtlUnicodeToUTF8(
+   LPCWSTR wszSrc,
+   int nSrc,
+   LPSTR szDest,
+   int nDest) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*wszSrc*  
+*wszSrc*<br/>
 변환할 유니코드 문자열
 
-*nSrc*  
+*nSrc*<br/>
 유니코드 문자열의 문자 길이입니다.
 
-*szDest*  
+*szDest*<br/>
 변환된 된 문자열을 받으려면 호출자 할당 버퍼입니다.
 
-*nDest*  
+*nDest*<br/>
 버퍼의 길이 (바이트)에서입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -269,30 +269,30 @@ ATL_NOINLINE inline int AtlUnicodeToUTF8(
 
 "B" 인코딩을 사용하여 일부 데이터를 변환하려면 이 함수를 호출합니다.
 
-```  
-inline BOOL BEncode(  
-   BYTE* pbSrcData,  
-   int nSrcLen,  
-   LPSTR szDest,  
-   int* pnDestLen,  
-   LPCSTR pszCharSet) throw();  
+```
+inline BOOL BEncode(
+   BYTE* pbSrcData,
+   int nSrcLen,
+   LPSTR szDest,
+   int* pnDestLen,
+   LPCSTR pszCharSet) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*pbSrcData*  
+*pbSrcData*<br/>
 인코딩된 데이터를 포함 하는 버퍼입니다.
 
-*nSrcLen*  
+*nSrcLen*<br/>
 인코딩된 데이터의 길이 (바이트)에서입니다.
 
-*szDest*  
+*szDest*<br/>
 인코딩된 데이터를 받는 호출자 할당 버퍼입니다.
 
-*pnDestLen*  
+*pnDestLen*<br/>
 문자에서 길이 포함 하는 변수에 대 한 포인터 *szDest*합니다. 함수가 성공 하면 변수는 버퍼에 쓴 문자의 수를 받습니다. 함수가 실패할 경우 변수 버퍼의 문자에서 길이 수신 합니다.
 
-*pszCharSet*  
+*pszCharSet*<br/>
 문자 집합을 변환 하는 데 사용 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -307,16 +307,16 @@ RFC 2047에 설명 된 "B" 인코딩 스키마 ([http://www.ietf.org/rfc/rfc2047
 
 지정된 크기의 데이터에서 디코딩된 문자열을 포함할 수 있는 버퍼를 문자 크기로 가져오려면 이 함수를 호출합니다.
 
-```  
-inline int BEncodeGetRequiredLength(int nSrcLen, int nCharsetLen) throw();  
+```
+inline int BEncodeGetRequiredLength(int nSrcLen, int nCharsetLen) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*nSrcLen*  
+*nSrcLen*<br/>
 인코딩된 데이터의 바이트 수입니다.
 
-*nCharsetLen*  
+*nCharsetLen*<br/>
 변환에 대해 사용 하도록 설정 된 문자의 문자 길이입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -331,31 +331,31 @@ RFC 2047에 설명 된 "B" 인코딩 스키마 ([http://www.ietf.org/rfc/rfc2047
 
 XML에서 사용하기에 안전하지 않은 문자를 안전한 문자로 변환하려면 이 함수를 호출합니다.
 
-```  
-inline int EscapeXML(  
-   const wchar_t * szIn,  
-   int nSrcLen,  
-   wchar_t * szEsc,  
-   int nDestLen,  
-   DWORD dwFlags = ATL_ESC_FLAG_NONE) throw();  
+```
+inline int EscapeXML(
+   const wchar_t * szIn,
+   int nSrcLen,
+   wchar_t * szEsc,
+   int nDestLen,
+   DWORD dwFlags = ATL_ESC_FLAG_NONE) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*szIn*  
+*szIn*<br/>
 변환할 문자열입니다.
 
-*nSrclen*  
+*nSrclen*<br/>
 변환할 문자열의 문자 길이입니다.
 
-*szEsc*  
+*szEsc*<br/>
 변환된 된 문자열을 받으려면 호출자 할당 버퍼입니다.
 
-*nDestLen*  
+*nDestLen*<br/>
 호출자 할당 버퍼의 문자 길이입니다.
 
-*dwFlags*  
-변환을 수행 하는 하는 방법을 설명 하는 ATL_ESC 플래그입니다. 
+*dwFlags*<br/>
+변환을 수행 하는 하는 방법을 설명 하는 ATL_ESC 플래그입니다.
 
 - ATL_ESC_FLAG_NONE 기본 동작입니다. 인용 부호 및 아포스트로피 변환 되지 않습니다.
 - ATL_ESC_FLAG_ATTR 인용 부호 및 아포스트로피 변환할 `&quot;` 고 `&apos;` 각각.
@@ -380,16 +380,16 @@ inline int EscapeXML(
 
 문자열에서 확장된 문자 수를 가져오려면 이 함수를 호출합니다.
 
-```  
-inline int GetExtendedChars(LPCSTR szSrc, int nSrcLen) throw();  
+```
+inline int GetExtendedChars(LPCSTR szSrc, int nSrcLen) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*szSrc*  
+*szSrc*<br/>
 분석할 문자열입니다.
 
-*nSrcLen*  
+*nSrcLen*<br/>
 문자에서 문자열의 길이입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -400,13 +400,13 @@ inline int GetExtendedChars(LPCSTR szSrc, int nSrcLen) throw();
 
 지정한 문자가 확장된 문자(32보다 작거나 126보다 크고 탭, 줄 바꿈 또는 캐리지 리턴이 아님)인지 확인하려면 이 함수를 호출합니다.
 
-```  
-inline int IsExtendedChar(char ch) throw();  
+```
+inline int IsExtendedChar(char ch) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*  
+*ch*<br/>
 테스트할 문자
 
 ### <a name="return-value"></a>반환 값
@@ -417,34 +417,34 @@ inline int IsExtendedChar(char ch) throw();
 
 "Q" 인코딩을 사용하여 일부 데이터를 변환하려면 이 함수를 호출합니다.
 
-```  
-inline BOOL QEncode(  
-   BYTE* pbSrcData,  
-   int nSrcLen,  
-   LPSTR szDest,  
-   int* pnDestLen,  
-   LPCSTR pszCharSet,  
-   int* pnNumEncoded = NULL) throw();  
+```
+inline BOOL QEncode(
+   BYTE* pbSrcData,
+   int nSrcLen,
+   LPSTR szDest,
+   int* pnDestLen,
+   LPCSTR pszCharSet,
+   int* pnNumEncoded = NULL) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*pbSrcData*  
+*pbSrcData*<br/>
 인코딩된 데이터를 포함 하는 버퍼입니다.
 
-*nSrcLen*  
+*nSrcLen*<br/>
 인코딩된 데이터의 길이 (바이트)에서입니다.
 
-*szDest*  
+*szDest*<br/>
 인코딩된 데이터를 받는 호출자 할당 버퍼입니다.
 
-*pnDestLen*  
+*pnDestLen*<br/>
 문자에서 길이 포함 하는 변수에 대 한 포인터 *szDest*합니다. 함수가 성공 하면 변수는 버퍼에 쓴 문자의 수를 받습니다. 함수가 실패할 경우 변수 버퍼의 문자에서 길이 수신 합니다.
 
-*pszCharSet*  
+*pszCharSet*<br/>
 문자 집합을 변환 하는 데 사용 합니다.
 
-*pnNumEncoded*  
+*pnNumEncoded*<br/>
 반환 시 변환 하는 안전 하지 않은 문자 수를 포함 하는 변수에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -459,16 +459,16 @@ RFC 2047에 설명 된 "Q" 인코딩 스키마 ([http://www.ietf.org/rfc/rfc2047
 
 지정된 크기의 데이터에서 디코딩된 문자열을 포함할 수 있는 버퍼를 문자 크기로 가져오려면 이 함수를 호출합니다.
 
-```  
-inline int QEncodeGetRequiredLength(int nSrcLen, int nCharsetLen) throw();  
+```
+inline int QEncodeGetRequiredLength(int nSrcLen, int nCharsetLen) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*nSrcLen*  
+*nSrcLen*<br/>
 인코딩된 데이터의 바이트 수입니다.
 
-*nCharsetLen*  
+*nCharsetLen*<br/>
 변환에 대해 사용 하도록 설정 된 문자의 문자 길이입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -483,13 +483,13 @@ RFC 2047에 설명 된 "Q" 인코딩 스키마 ([http://www.ietf.org/rfc/rfc2047
 
 에 대 한 이전 호출에서 같이 quoted-printable 형식으로 인코딩된 데이터의 문자열을 디코딩합니다 [QPEncode](#qpencode)합니다.
 
-```  
-inline BOOL QPDecode(  
-   BYTE* pbSrcData,  
-   int nSrcLen,  
-   LPSTR szDest,  
-   int* pnDestLen,  
-   DWORD dwFlags = 0) throw();  
+```
+inline BOOL QPDecode(
+   BYTE* pbSrcData,
+   int nSrcLen,
+   LPSTR szDest,
+   int* pnDestLen,
+   DWORD dwFlags = 0) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -521,13 +521,13 @@ inline BOOL QPDecode(
 
 지정된 길이의 quoted-printable로 인코딩된 문자열에서 디코딩된 데이터를 포함할 수 있는 버퍼를 바이트 크기로 가져오려면 이 함수를 호출합니다.
 
-```  
-inline int QPDecodeGetRequiredLength(int nSrcLen) throw();  
+```
+inline int QPDecodeGetRequiredLength(int nSrcLen) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*nSrcLen*  
+*nSrcLen*<br/>
 인코딩된 문자열의 문자 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -542,32 +542,34 @@ inline int QPDecodeGetRequiredLength(int nSrcLen) throw();
 
 quoted-printable 형식으로 일부 데이터를 인코딩하려면 이 함수를 호출합니다.
 
-```  
-inline BOOL QPEncode(  
-   BYTE* pbSrcData,  
-   int nSrcLen,  
-   LPSTR szDest,  
-   int* pnDestLen,  
-   DWORD dwFlags = 0) throw ();  
+```
+inline BOOL QPEncode(
+   BYTE* pbSrcData,
+   int nSrcLen,
+   LPSTR szDest,
+   int* pnDestLen,
+   DWORD dwFlags = 0) throw ();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*pbSrcData*  
+*pbSrcData*<br/>
 인코딩된 데이터를 포함 하는 버퍼입니다.
 
-*nSrcLen*  
+*nSrcLen*<br/>
 인코딩된 데이터의 길이 (바이트)에서입니다.
 
-*szDest*  
+*szDest*<br/>
 인코딩된 데이터를 받는 호출자 할당 버퍼입니다.
 
-*pnDestLen*  
+*pnDestLen*<br/>
 문자에서 길이 포함 하는 변수에 대 한 포인터 *szDest*합니다. 함수가 성공 하면 변수는 버퍼에 쓴 문자의 수를 받습니다. 함수가 실패할 경우 변수 버퍼의 문자에서 길이 수신 합니다.
 
-*dwFlags*  
-변환을 수행 하는 하는 방법을 설명 하는 ATLSMTP_QPENCODE 플래그입니다. 
+*dwFlags*<br/>
+변환을 수행 하는 하는 방법을 설명 하는 ATLSMTP_QPENCODE 플래그입니다.
+
 - 줄의 시작 부분에 잠시 나타납니다 ATLSMTP_QPENCODE_DOT 경우, 것은 출력을 추가할 뿐만 아니라 인코딩.
+
 - ATLSMTP_QPENCODE_TRAILING_SOFT 추가 `=\r\n` 인코딩된 문자열입니다.
 
 따옴표 붙은 인쇄 가능한 인코딩 체계에 설명 되어 [RFC 2045](http://www.ietf.org/rfc/rfc2045.txt)합니다.
@@ -584,13 +586,13 @@ inline BOOL QPEncode(
 
 지정된 크기의 데이터에서 디코딩된 문자열을 포함할 수 있는 버퍼를 문자 크기로 가져오려면 이 함수를 호출합니다.
 
-```  
-inline int QPEncodeGetRequiredLength(int nSrcLen) throw ();  
+```
+inline int QPEncodeGetRequiredLength(int nSrcLen) throw ();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*nSrcLen*  
+*nSrcLen*<br/>
 인코딩된 데이터의 바이트 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -605,26 +607,26 @@ inline int QPEncodeGetRequiredLength(int nSrcLen) throw ();
 
 에 대 한 이전 호출에서와 같이 uuencode 된 데이터의 문자열을 디코딩합니다 [UUEncode](#uuencode)합니다.
 
-```  
-inline BOOL UUDecode(  
-   BYTE* pbSrcData,  
-   int nSrcLen,  
-   BYTE* pbDest,  
-   int* pnDestLen) throw ();  
+```
+inline BOOL UUDecode(
+   BYTE* pbSrcData,
+   int nSrcLen,
+   BYTE* pbDest,
+   int* pnDestLen) throw ();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*pbSrcData*  
+*pbSrcData*<br/>
 디코딩할 데이터가 포함 된 문자열입니다.
 
-*nSrcLen*  
+*nSrcLen*<br/>
 바이트 길이 *pbSrcData*합니다.
 
-*pbDest*  
+*pbDest*<br/>
 디코딩된 데이터를 받는 호출자 할당 버퍼입니다.
 
-*pnDestLen*  
+*pnDestLen*<br/>
 길이 (바이트) 포함 하는 변수에 대 한 포인터 *pbDest*합니다. 함수가 성공 하면 변수는 버퍼에 쓴 바이트 수를 받습니다. 함수가 실패할 경우 변수 버퍼의 바이트 길이 받게 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -639,13 +641,13 @@ inline BOOL UUDecode(
 
 지정된 길이의 uuencode된 문자열에서 디코딩된 데이터를 포함할 수 있는 버퍼를 바이트 크기로 가져오려면 이 함수를 호출합니다.
 
-```  
-inline int UUDecodeGetRequiredLength(int nSrcLen) throw ();  
+```
+inline int UUDecodeGetRequiredLength(int nSrcLen) throw ();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*nSrcLen*  
+*nSrcLen*<br/>
 인코딩된 문자열의 문자 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -660,37 +662,40 @@ inline int UUDecodeGetRequiredLength(int nSrcLen) throw ();
 
 일부 데이터를 uuencode하려면 이 함수를 호출합니다.
 
-```  
-inline BOOL UUEncode(  
-   const BYTE* pbSrcData,  
-   int nSrcLen,  
-   LPSTR szDest,  
-   int* pnDestLen,  
-   LPCTSTR lpszFile = _T("file"),  
-   DWORD dwFlags = 0) throw ();  
+```
+inline BOOL UUEncode(
+   const BYTE* pbSrcData,
+   int nSrcLen,
+   LPSTR szDest,
+   int* pnDestLen,
+   LPCTSTR lpszFile = _T("file"),
+   DWORD dwFlags = 0) throw ();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*pbSrcData*  
+*pbSrcData*<br/>
 인코딩된 데이터를 포함 하는 버퍼입니다.
 
-*nSrcLen*  
+*nSrcLen*<br/>
 인코딩된 데이터의 길이 (바이트)에서입니다.
 
-*szDest*  
+*szDest*<br/>
 인코딩된 데이터를 받는 호출자 할당 버퍼입니다.
 
-*pnDestLen*  
+*pnDestLen*<br/>
 문자에서 길이 포함 하는 변수에 대 한 포인터 *szDest*합니다. 함수가 성공 하면 변수는 버퍼에 쓴 문자의 수를 받습니다. 함수가 실패할 경우 변수 버퍼의 문자에서 길이 수신 합니다.
 
-*lpszFile*  
+*lpszFile*<br/>
 ATLSMTP_UUENCODE_HEADER이 지정 된 경우 헤더에 추가할 파일 *dwFlags*합니다.
 
-*dwFlags*  
-이 함수의 동작을 제어 하는 플래그입니다. 
+*dwFlags*<br/>
+이 함수의 동작을 제어 하는 플래그입니다.
+
 - 헤더 ATLSMTP_UUENCODE_HEADE가 인코드됩니다.
+
 - 끝 ATLSMTP_UUENCODE_END가 인코드됩니다.
+
 - ATLSMTP_UUENCODE_DOT 데이터 오해의 소지가 수행 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -705,13 +710,13 @@ ATLSMTP_UUENCODE_HEADER이 지정 된 경우 헤더에 추가할 파일 *dwFlags
 
 지정된 크기의 데이터에서 디코딩된 문자열을 포함할 수 있는 버퍼를 문자 크기로 가져오려면 이 함수를 호출합니다.
 
-```  
-inline int UUEncodeGetRequiredLength(int nSrcLen) throw ();  
+```
+inline int UUEncodeGetRequiredLength(int nSrcLen) throw ();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*nSrcLen*  
+*nSrcLen*<br/>
 인코딩된 데이터의 바이트 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -724,5 +729,5 @@ inline int UUEncodeGetRequiredLength(int nSrcLen) throw ();
 
 ### <a name="see-also"></a>참고 항목
 
-[개념](../../atl/active-template-library-atl-concepts.md)   
-[ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md)   
+[개념](../../atl/active-template-library-atl-concepts.md)<br/>
+[ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md)

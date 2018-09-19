@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0fbe19ef2073f86a7cb19af105244a370272a62d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dda39de8c4803346c8727b018021f71ca080e4d5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295784"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115822"
 ---
 # <a name="expression-evaluator-error-cxx0014"></a>식 계산기 오류 CXX0014
-피연산자가 없습니다.  
-  
- 연산자가 필요한 피연산자 없이 지정 되었습니다. 식의 구문을 확인합니다.  
-  
- 이 오류는 can0014와 동일 합니다.
+
+피연산자가 없습니다.
+
+연산자는 피연산자를 필요 없이 지정 되었습니다. 식의 구문을 확인합니다.
+
+이 오류는 can0014와 동일 합니다.

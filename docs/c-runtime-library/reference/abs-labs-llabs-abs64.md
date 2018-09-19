@@ -46,12 +46,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b783ee6e4a5ea511a26068ffb89fcc09236f20b1
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 1380a6e56ce444e80feccf3e8306a0a589c98d01
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408130"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085266"
 ---
 # <a name="abs-labs-llabs-abs64"></a>abs, labs, llabs, _abs64
 
@@ -76,7 +76,7 @@ float abs( float n );   // C++ only
 
 ### <a name="parameters"></a>매개 변수
 
-*n*  
+*n*<br/>
 숫자 값입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -98,7 +98,7 @@ C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니�
 
 오버 로드 된 버전을 사용 하도록 **abs** c + +에서 포함 해야 합니다는 \<cmath > 헤더입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 프로그램은 여러 숫자의 절대 값을 계산하여 표시합니다.
 
@@ -157,8 +157,8 @@ _abs64(_I64_MIN) returns 0x8000000000000000
 
 ## <a name="see-also"></a>참고자료
 
-[데이터 변환](../../c-runtime-library/data-conversion.md)  
-[부동 소수점 지원](../../c-runtime-library/floating-point-support.md)  
-[_cabs](cabs.md)  
-[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)  
-[imaxabs](imaxabs.md)  
+[데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
+[부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
+[_cabs](cabs.md)<br/>
+[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)<br/>
+[imaxabs](imaxabs.md)

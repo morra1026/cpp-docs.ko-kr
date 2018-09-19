@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9494f81c01a0bbad01015ecc7d0c171eedd637e8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4aff49918751e94e08cd7d6c229bfa1d27116210
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316097"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110590"
 ---
 # <a name="resource-compiler-fatal-error-rc1116"></a>리소스 컴파일러 심각한 오류 RC1116
-전처리기 오류 종료 했습니다. RC  
-  
- 리소스 컴파일러는 다른 오류로 인해 중단 되었습니다. 다른 오류를 해결 하 고 다시 컴파일하십시오.
+
+전처리기 오류 발생 후 종료 RC
+
+리소스 컴파일러는 다른 오류로 인해 중지 되었습니다. 다른 오류를 수정 하 고 다시 컴파일하십시오.

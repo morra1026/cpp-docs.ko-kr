@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c2376ddd22490bf9ce61a8db9b857ce02551b15
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d70c8b4fe35519479056e25455914ac80fc00cb3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316451"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111617"
 ---
 # <a name="project-build-error-prj0015"></a>프로젝트 빌드 오류 PRJ0015
-에 NULL 장치가 시스템에서 누락 되었습니다. 빌드를 시작 하지 못합니다.  
-  
- 이 오류는 시스템 리소스가 부족 하 여 발생할 수 있습니다. 일부 응용 프로그램을 닫거나 다시 부팅 합니다.  
-  
- 컴퓨터에서 NULL이 장치에 충분 한 권한이 없는 경우도 발생할 수 있습니다.
+
+시스템에 NULL 장치가 없습니다. 빌드를 시작 하지 못합니다.
+
+이 오류는 시스템 리소스가 부족 하 여 발생할 수 있습니다. 일부 응용 프로그램을 닫거나 다시 부팅 합니다.
+
+컴퓨터의 NULL 장치에 충분 한 권한이 없는 경우도 발생할 수 있습니다.

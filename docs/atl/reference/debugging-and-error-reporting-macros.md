@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef417232d62c664b4943a2198ae351a5c443b089
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8fc187cea874d16522955dcd46c2ceac34d29098
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763749"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46136168"
 ---
 # <a name="debugging-and-error-reporting-macros"></a>디버깅 및 오류 보고 매크로
 
@@ -97,7 +97,7 @@ ATLASSERT(booleanExpression);
 
 ### <a name="parameters"></a>매개 변수
 
-*booleanExpression*  
+*booleanExpression*<br/>
 0이 아닌 값 또는 0으로 계산되는 식(포인터 포함)입니다.
 
 ### <a name="remarks"></a>설명
@@ -119,10 +119,10 @@ ATLENSURE_THROW(booleanExpression, hr);
 
 ### <a name="parameters"></a>매개 변수
 
-*booleanExpression*  
+*booleanExpression*<br/>
 테스트할 부울 식을 지정 합니다.
 
-*hr*  
+*hr*<br/>
 반환할 오류 코드를 지정 합니다.
 
 ### <a name="remarks"></a>설명
@@ -155,7 +155,7 @@ ATLTRACENOTIMPL(funcname);
 
 ### <a name="parameters"></a>매개 변수
 
-*funcname*  
+*funcname*<br/>
 [in] 구현 되지 않는 함수의 이름을 포함 하는 문자열입니다.
 
 ### <a name="remarks"></a>설명
@@ -185,16 +185,16 @@ ATLTRACE(
 
 ### <a name="parameters"></a>매개 변수
 
-*exp*  
+*exp*<br/>
 [in] 문자열 및 Visual c + + 보낼 변수 창이 나 이러한 메시지를 트래핑 하는 모든 응용 프로그램을 출력 합니다.
 
-*category*  
+*category*<br/>
 [in] 보고서에는 메서드 또는 이벤트의 형식입니다. 범주 목록에 대 한 설명을 참조 하세요.
 
-*level*  
+*level*<br/>
 [in] 보고서에 대 한 추적의 수준입니다. 자세한 내용은 설명 부분을 참조 하세요.
 
-*lpszFormat*  
+*lpszFormat*<br/>
 [in] 덤프 장치에 보낼 서식이 지정 된 문자열입니다.
 
 ### <a name="remarks"></a>설명
@@ -216,16 +216,16 @@ ATLTRACE2(
 
 ### <a name="parameters"></a>매개 변수
 
-*exp*  
+*exp*<br/>
 [in] Visual c + + 출력 창이 나 이러한 메시지를 트래핑 하는 모든 응용 프로그램에 보낼 문자열입니다.
 
-*category*  
+*category*<br/>
 [in] 보고서에는 메서드 또는 이벤트의 형식입니다. 범주 목록에 대 한 설명을 참조 하세요.
 
-*level*  
+*level*<br/>
 [in] 보고서에 대 한 추적의 수준입니다. 자세한 내용은 설명 부분을 참조 하세요.
 
-*lpszFormat*  
+*lpszFormat*<br/>
 [in] `printf`-덤프 장치에 보낼 문자열을 만드는 데 사용할 형식 문자열 스타일입니다.
 
 ### <a name="remarks"></a>설명
@@ -295,5 +295,5 @@ ATLTRACE 및 ATLTRACE2 동일 하 게 동작, ATLTRACE 이전 버전과 호환�
 
 ## <a name="see-also"></a>참고 항목
 
-[매크로](../../atl/reference/atl-macros.md)   
+[매크로](../../atl/reference/atl-macros.md)<br/>
 [디버깅 및 오류 보고 전역 함수](../../atl/reference/debugging-and-error-reporting-global-functions.md)

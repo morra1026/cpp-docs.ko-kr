@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: daa4a34915547b726494ea9f461b7eba24c617dd
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8d60a7f40fc90d5586d7a8a7d41cab81a4d97c85
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755725"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054482"
 ---
 # <a name="cautovectorptr-class"></a>CAutoVectorPtr 클래스
 
@@ -40,13 +40,13 @@ ms.locfileid: "43755725"
 ## <a name="syntax"></a>구문
 
 ```
-template<typename T>  
+template<typename T>
 class CAutoVectorPtr
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-`T`  
+*T*<br/>
 포인터 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -82,7 +82,7 @@ class CAutoVectorPtr
 
 ## <a name="remarks"></a>설명
 
-이 클래스를 만들고 범위를 벗어나는 경우 자동으로 리소스를 해제 하 여 메모리 누수를 방지 하는 데 도움이 됩니다 하는 스마트 포인터를 관리 하기 위한 메서드를 제공 합니다. `CAutoVectorPtr` 비슷합니다 `CAutoPtr`, 유일한 차이점은는 `CAutoVectorPtr` 사용 하 여 [벡터 new&#91; &#93; ](../../standard-library/new-operators.md#op_new_arr) 및 [벡터 delete&#91; &#93; ](../../standard-library/new-operators.md#op_delete_arr) 할당 및 메모리를 해제 합니다. c + + 대신 **새** 하 고 **삭제** 연산자입니다. 참조 [CAutoVectorPtrElementTraits](../../atl/reference/cautovectorptrelementtraits-class.md) 하는 경우의 컬렉션 클래스 `CAutoVectorPtr` 필요 합니다.  
+이 클래스를 만들고 범위를 벗어나는 경우 자동으로 리소스를 해제 하 여 메모리 누수를 방지 하는 데 도움이 됩니다 하는 스마트 포인터를 관리 하기 위한 메서드를 제공 합니다. `CAutoVectorPtr` 비슷합니다 `CAutoPtr`, 유일한 차이점은는 `CAutoVectorPtr` 사용 하 여 [벡터 new&#91; &#93; ](../../standard-library/new-operators.md#op_new_arr) 및 [벡터 delete&#91; &#93; ](../../standard-library/new-operators.md#op_delete_arr) 할당 및 메모리를 해제 합니다. c + + 대신 **새** 하 고 **삭제** 연산자입니다. 참조 [CAutoVectorPtrElementTraits](../../atl/reference/cautovectorptrelementtraits-class.md) 하는 경우의 컬렉션 클래스 `CAutoVectorPtr` 필요 합니다.
 
 참조 [CAutoPtr](../../atl/reference/cautoptr-class.md) 스마트 포인터 클래스를 사용 하는 예입니다.
 
@@ -100,7 +100,7 @@ bool Allocate(size_t nElements) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nElements*  
+*nElements*<br/>
 배열의 요소 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -121,7 +121,7 @@ void Attach(T* p) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 `CAutoVectorPtr` 개체 this이 포인터의 소유권을 갖게 됩니다.
 
 ### <a name="remarks"></a>설명
@@ -142,7 +142,7 @@ CAutoVectorPtr(CAutoVectorPtr<T>& p) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 기존 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -211,7 +211,7 @@ CAutoVectorPtr<T>& operator= (CAutoVectorPtr<T>& p) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -226,7 +226,7 @@ CAutoVectorPtr<T>& operator= (CAutoVectorPtr<T>& p) throw();
 
 캐스트 연산자입니다.
 
-```  
+```
 operator T*() const throw();
 ```
 
@@ -236,5 +236,5 @@ operator T*() const throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[CAutoPtr 클래스](../../atl/reference/cautoptr-class.md)   
+[CAutoPtr 클래스](../../atl/reference/cautoptr-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

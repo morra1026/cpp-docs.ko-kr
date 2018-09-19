@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 537755ff7162c30c586eb813fecf643de816a351
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 099844710080d2c500996d5918a32c6eb4426541
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751462"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078142"
 ---
 # <a name="adding-an-atl-com-10-component"></a>ATL COM + 1.0 구성 요소 추가
 
@@ -38,6 +38,6 @@ ms.locfileid: "43751462"
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 추가](../../ide/adding-a-class-visual-cpp.md)   
+[클래스 추가](../../ide/adding-a-class-visual-cpp.md)<br/>
 [메서드 추가](../../ide/adding-a-method-visual-cpp.md)
 

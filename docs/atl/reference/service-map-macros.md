@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0cab78f1f35ab003d8457c0e185aa031a112e09
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: dc7b0ca9388de82d49927a7fe76694212b94246b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45702600"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053715"
 ---
 # <a name="service-map-macros"></a>서비스 맵 매크로
 
@@ -49,7 +49,7 @@ BEGIN_SERVICE_MAP(theClass)
 
 ### <a name="parameters"></a>매개 변수
 
-*theClass*  
+*theClass*<br/>
 [in] 서비스 맵을 포함 하는 클래스를 지정 합니다.
 
 ### <a name="remarks"></a>설명
@@ -86,7 +86,7 @@ SERVICE_ENTRY( SID )
 
 ### <a name="parameters"></a>매개 변수
 
-*SID*  
+*SID*<br/>
 서비스 id입니다.
 
 ### <a name="example"></a>예제
@@ -103,7 +103,7 @@ SERVICE_ENTRY_CHAIN( punk )
 
 ### <a name="parameters"></a>매개 변수
 
-*punk*  
+*punk*<br/>
 에 대 한 포인터를 **IUnknown** 체인에는 인터페이스입니다.
 
 ### <a name="example"></a>예제

@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45e5948be0544b0fd6854206aa1aeb9c2c23fee1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: deedbf10edd3d9fd870dfbb1a896e504bfe9d877
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33173433"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052366"
 ---
 # <a name="compiler-error-c2275"></a>컴파일러 오류 C2275
-'identifier':이 형식 식으로 잘못 사용  
-  
- 식을 사용 하 여는 `->` 연산자는 `typedef` 식별자입니다.  
-  
- 다음 샘플에서는 C2275 오류가 생성 됩니다.  
-  
-```  
-// C2275.cpp  
-typedef struct S {  
-    int mem;  
-} *S_t;  
-void func1( int *parm );  
-void func2() {  
-    func1( &S_t->mem );   // C2275, S_t is a typedef  
-}  
+
+'identifier':이 형식 식으로 잘못 사용
+
+식을 사용 하는 `->` 연산자는 `typedef` 식별자입니다.
+
+다음 샘플에서는 C2275 오류가 생성 됩니다.
+
+```
+// C2275.cpp
+typedef struct S {
+    int mem;
+} *S_t;
+void func1( int *parm );
+void func2() {
+    func1( &S_t->mem );   // C2275, S_t is a typedef
+}
 ```

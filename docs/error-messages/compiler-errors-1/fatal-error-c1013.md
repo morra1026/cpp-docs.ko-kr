@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00b5dae643ec20e9d7d8a8dcdf41d9debe7e6b7e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 33c10062cac83984fb1c68835780497b89c4cbc1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198640"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050523"
 ---
 # <a name="fatal-error-c1013"></a>심각한 오류 C1013
-컴파일러 한계 : 여는 괄호가 너무 많습니다.  
-  
- 단일 식에 너무 많은 괄호 수준이 포함되어 있습니다. 식을 단순화하거나 여러 개의 문으로 분리합니다.  
-  
- Visual C++ 6.0 SP3 이전 버전에서는 단일 식의 중첩된 괄호에 대한 제한이 59개였습니다. 현재 중첩된 괄호에 대한 제한은 256개입니다.
+
+컴파일러 한계 : 여는 괄호가 너무 많습니다.
+
+단일 식에 너무 많은 괄호 수준이 포함되어 있습니다. 식을 단순화하거나 여러 개의 문으로 분리합니다.
+
+Visual C++ 6.0 SP3 이전 버전에서는 단일 식의 중첩된 괄호에 대한 제한이 59개였습니다. 현재 중첩된 괄호에 대한 제한은 256개입니다.

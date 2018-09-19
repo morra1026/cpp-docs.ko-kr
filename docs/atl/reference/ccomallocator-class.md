@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a35579cc29e2ec964998c3c126c7aadb17de57e0
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f867d3a7ca81d190ee363c7539e56a62004eb377
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757840"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088945"
 ---
 # <a name="ccomallocator-class"></a>CComAllocator 클래스
 
@@ -65,7 +65,7 @@ static void* Allocate(size_t nBytes) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nBytes*  
+*nBytes*<br/>
 할당할 바이트 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -86,7 +86,7 @@ static void Free(void* p) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 할당된 메모리에 대한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -103,10 +103,10 @@ static void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 할당된 메모리에 대한 포인터입니다.
 
-*nBytes*  
+*nBytes*<br/>
 다시 할당할 바이트 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -119,6 +119,6 @@ static void* Reallocate(void* p, size_t nBytes) throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[CComHeapPtr 클래스](../../atl/reference/ccomheapptr-class.md)   
-[CCRTAllocator 클래스](../../atl/reference/ccrtallocator-class.md)   
+[CComHeapPtr 클래스](../../atl/reference/ccomheapptr-class.md)<br/>
+[CCRTAllocator 클래스](../../atl/reference/ccrtallocator-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

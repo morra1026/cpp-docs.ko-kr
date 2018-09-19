@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84f361dfd86cc32d246cb749da14d79543dd494e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e8e76f5e59e91639514ccd05a71b1cefc4154040
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33270371"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113411"
 ---
 # <a name="compiler-warning-level-1-c4168"></a>컴파일러 경고(수준 1) C4168
-컴파일러 한계: 디버거 형식을 벗어났습니다. 'database' 프로그램 데이터베이스를 삭제하고 다시 빌드합니다.  
-  
- 프로그램의 모든 형식에 맞게 프로그램 데이터베이스 파일을 다시 작성해야 합니다.
+
+컴파일러 한계: 디버거 형식을 벗어났습니다. 'database' 프로그램 데이터베이스를 삭제하고 다시 빌드합니다.
+
+프로그램의 모든 형식에 맞게 프로그램 데이터베이스 파일을 다시 작성해야 합니다.

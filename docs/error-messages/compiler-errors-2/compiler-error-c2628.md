@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3f9813f103f59e61093ab82366e50a7ef6dae46
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 43a7d0515013158932f627b883ab36a2793ab5bd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230245"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051350"
 ---
 # <a name="compiler-error-c2628"></a>컴파일러 오류 C2628
-'type1' 뒤에 'type2'은 사용할 수 없습니다 (했는지 확인 한 ';'?)  
-  
- 세미콜론 없을 수 있습니다.  
-  
- 다음 샘플에서는 C2628 오류가 생성 됩니다.  
-  
-```  
-// C2628.cpp  
-class CMyClass {}  
-int main(){}   // C2628 error  
-```  
-  
- 해결 방법:  
-  
-```  
-// C2628b.cpp  
-class CMyClass {};  
-int main(){}  
+
+'type1' 'type2' 뒤에 유효 하지 않은 (했는지를 ';'?)
+
+세미콜론 누락 될 수 있습니다.
+
+다음 샘플에서는 C2628 오류가 생성 됩니다.
+
+```
+// C2628.cpp
+class CMyClass {}
+int main(){}   // C2628 error
+```
+
+해결 방법:
+
+```
+// C2628b.cpp
+class CMyClass {};
+int main(){}
 ```

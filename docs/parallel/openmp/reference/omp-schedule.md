@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d873d29d5ac6de1073c1ba3f3065dd015cde1f5
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: fd5bf96706b94ffbba8cb1b9aeeee8701b266e5d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45720449"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115048"
 ---
 # <a name="ompschedule"></a>OMP_SCHEDULE
 동작을 수정 합니다 [일정](../../../parallel/openmp/reference/schedule.md) 절 때 `schedule(runtime)` 에 지정 된을 `for` 또는 `parallel for` 지시문입니다.  
@@ -37,8 +37,8 @@ set OMP_SCHEDULE[=type[,size]]
 *size*<br/>
 (선택 사항) 반복의 크기를 지정합니다. `size` 양의 정수 여야 합니다. 기본값은 1, 경우를 제외 하 고 `type` 고정 됩니다. 유효 하지 않은 경우 `type` 는 `runtime`합니다.  
   
- `type`  
- 예약의 종류:  
+*type*<br/>
+예약의 종류:  
   
 -   `dynamic`  
   

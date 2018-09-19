@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8112927940e5e2f17a4e74e2855a035bc7d5e5cc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6f2c92ef68768f4a9f8ac606716d5ae53c4aa72e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292349"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46048216"
 ---
 # <a name="compiler-warning-level-4-c4211"></a>컴파일러 경고(수준 4) C4211
-비표준 확장이 사용 됨: extern에서 static로 재정의 되었습니다.  
-  
- 기본 Microsoft 확장 (/Ze)을 재정의할 수 있습니다는 `extern` 식별자로 **정적**합니다.  
-  
-## <a name="example"></a>예제  
-  
-```  
-// C4211.c  
-// compile with: /W4  
-extern int i;  
-static int i;   // C4211  
-  
-int main()  
-{  
-}  
-```  
-  
- 이러한 재정의 ANSI 규격 사용할 수 없습니다 ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).  
-  
-## <a name="see-also"></a>참고 항목  
+
+비표준 확장이 사용 됨: extern에서 static로 재정의 되었습니다.
+
+기본 Microsoft 확장 (/Ze)을 재정의할 수 있습니다는 `extern` 식별자 **정적**합니다.
+
+## <a name="example"></a>예제
+
+```
+// C4211.c
+// compile with: /W4
+extern int i;
+static int i;   // C4211
+
+int main()
+{
+}
+```
+
+이러한 재정의 ANSI 규격 사용할 수 없습니다 ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
+
+## <a name="see-also"></a>참고 항목
 
 

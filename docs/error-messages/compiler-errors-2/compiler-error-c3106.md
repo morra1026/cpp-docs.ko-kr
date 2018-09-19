@@ -16,26 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 059eaf684995dab6bdcbd1a65bbdb75f70b1551b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4371b8d63a57ef791dad9f1e593c8009d5361852
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248149"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052610"
 ---
 # <a name="compiler-error-c3106"></a>컴파일러 오류 C3106
-'attribute': 명명 되지 않은 인수에는 명명 된 인수 앞에 야  
-  
- 명명 되지 않은 인수는 명명 된 인수 앞 특성에 전달 되어야 합니다.  
-  
- 자세한 내용은 [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md)을 참조하세요.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3106 오류가 발생 합니다.  
-  
-```  
-// C3106.cpp  
-// compile with: /c  
-[module(name="MyLib", dll)];   // C3106  
-[module(dll, name="MyLib")];   // OK  
+
+'attribute': 명명 되지 않은 인수에는 명명 된 인수 앞에 야
+
+명명 되지 않은 인수는 명명 된 인수 앞 특성에 전달 되어야 합니다.
+
+자세한 내용은 [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md)을 참조하세요.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C3106 오류가 발생 합니다.
+
+```
+// C3106.cpp
+// compile with: /c
+[module(name="MyLib", dll)];   // C3106
+[module(dll, name="MyLib")];   // OK
 ```

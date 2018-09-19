@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41bacfc53f8b1f14a9b7409a43db39fd943739e5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9d9266162d4608e39982cce1e94751e427bc5e47
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33261470"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054716"
 ---
 # <a name="compiler-error-c2884"></a>컴파일러 오류 C2884
-'name': 'function' 지역 함수와 충돌 using 선언으로 인해  
-  
- 함수를 두 번 이상 정의 하려고 했습니다. 첫 번째 정의 로컬 정의입니다. 포함 된 네임 스페이스에서 두 번째는는 `using` 선언 합니다.  
-  
- 다음 샘플에서는 C2884 오류가 생성 됩니다.  
-  
-```  
-// C2884.cpp  
-namespace A {  
-   void z(int);  
-}  
-  
-void f() {  
-   void z(int);  
-   using A::z;   // C2884 z is already defined  
-}  
+
+'name': using 선언 충돌 로컬 function '함수를 사용 하 여에서 도입 된
+
+함수를 두 번 이상 정의 하려고 했습니다. 첫 번째 정의 로컬 정의입니다. 두 번째는 사용 하 여 네임 스페이스에서는 `using` 선언 합니다.
+
+다음 샘플에서는 C2884 오류가 생성 됩니다.
+
+```
+// C2884.cpp
+namespace A {
+   void z(int);
+}
+
+void f() {
+   void z(int);
+   using A::z;   // C2884 z is already defined
+}
 ```

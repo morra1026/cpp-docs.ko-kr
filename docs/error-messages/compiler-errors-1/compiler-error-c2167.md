@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22abe4d25f6f8fe9b8d07195a2fd23b44dd7b19e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0dee381be72124d69a17fd6e3026066bbadfac13
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33167179"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088386"
 ---
 # <a name="compiler-error-c2167"></a>컴파일러 오류 C2167
-'function': 내장 함수에 대한 실제 매개 변수가 너무 많습니다.  
-  
- `intrinsic` 함수에 대한 참조에 매개 변수가 너무 많습니다.
+
+'function': 내장 함수에 대한 실제 매개 변수가 너무 많습니다.
+
+`intrinsic` 함수에 대한 참조에 매개 변수가 너무 많습니다.

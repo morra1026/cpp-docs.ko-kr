@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 585dc9b7aaa189d5f9726d1519687849991fc701
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0d6b5a0ebda3cdfa553510f526368b05348c7ab0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33321690"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086074"
 ---
 # <a name="resource-compiler-error-rc2127"></a>리소스 컴파일러 오류 RC2127
-예상 되는 쉼표로 구분 된 버전 Word  
-  
- 버전 리소스의 버전 번호 형식 이어야 합니다 **단어**, 쉼표로 구분 합니다.
+
+예상 되는 쉼표로 구분 된 단어 버전
+
+버전 리소스의 버전 번호 형식 이어야 **WORD**, 쉼표로 구분 합니다.

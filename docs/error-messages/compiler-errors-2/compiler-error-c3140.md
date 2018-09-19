@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2c8c9e47020fe53e87b985b5db6192cd26098fc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a40cec364af10f4b61c19b9a28646279a8efca43
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246906"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111743"
 ---
 # <a name="compiler-error-c3140"></a>컴파일러 오류 C3140
-같은 컴파일 단위에서 여러 개의 'module' 특성을 가질 수 없습니다.  
-  
- [모듈](../../windows/module-cpp.md) 특성만 정의 될 수 한 번 프로젝트 마다.  
-  
- 다음 샘플에서는 C3140 오류가 생성 됩니다.  
-  
-```  
-// C3140.cpp  
-// compile with: /c  
-[emitidl];  
-[module(name = "MyLibrary")];  
-[module(name = "MyLibrary2")];   // C3140  
+
+같은 컴파일 단위에 여러 개의 'module' 특성을 가질 수 없습니다.
+
+합니다 [모듈](../../windows/module-cpp.md) 특성만 정의 될 수 한 번 프로젝트별으로 합니다.
+
+다음 샘플에서는 C3140 오류가 생성 됩니다.
+
+```
+// C3140.cpp
+// compile with: /c
+[emitidl];
+[module(name = "MyLibrary")];
+[module(name = "MyLibrary2")];   // C3140
 ```

@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d5548089f66a26f633e5692f1fe2199a8109904
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 6d38b53d875db5f0ab5a3d096a57494791c027da
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764588"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113086"
 ---
 # <a name="linking-to-the-crt-in-your-atl-project"></a>ATL 프로젝트에서 CRT에 연결
 
@@ -47,6 +47,6 @@ ms.locfileid: "43764588"
 
 ## <a name="see-also"></a>참고 항목
 
-[ATL 및 C 런타임 코드를 사용한 프로그래밍](../atl/programming-with-atl-and-c-run-time-code.md)   
+[ATL 및 C 런타임 코드를 사용한 프로그래밍](../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [DLL 및 Visual C++ 런타임 라이브러리 동작](../build/run-time-library-behavior.md)
 

@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6234eceb35bda37a3616113d3010fe09cb669c8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ed09f1557c2a86d144d5ff4ee476bd8c3fa0f650
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246032"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116583"
 ---
 # <a name="compiler-error-c3179"></a>컴파일러 오류 C3179
-명명되지 않은 관리되는 형식 또는 WinRT 형식을 사용할 수 없습니다.  
-  
-모든 CLR 및 WinRT 클래스와 구조체에는 이름이 있어야 합니다.  
-  
-다음 샘플에서는 C3179 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.  
-  
-```  
-// C3179a.cpp  
-// compile with: /clr /c  
-typedef value struct { // C3179  
-// try the following line instead  
-// typedef value struct MyStruct {  
-   int i;  
-} V;  
-```  
+
+명명되지 않은 관리되는 형식 또는 WinRT 형식을 사용할 수 없습니다.
+
+모든 CLR 및 WinRT 클래스와 구조체에는 이름이 있어야 합니다.
+
+다음 샘플에서는 C3179 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.
+
+```
+// C3179a.cpp
+// compile with: /clr /c
+typedef value struct { // C3179
+// try the following line instead
+// typedef value struct MyStruct {
+   int i;
+} V;
+```

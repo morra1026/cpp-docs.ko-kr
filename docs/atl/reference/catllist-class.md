@@ -47,12 +47,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5a24a98e7780a98726df29452a9878c8abf3d81
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 596fe8bb4a656eb5ebdc7bef855b5e6db8ab6196
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756446"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090801"
 ---
 # <a name="catllist-class"></a>CAtlList 클래스
 
@@ -61,16 +61,16 @@ ms.locfileid: "43756446"
 ## <a name="syntax"></a>구문
 
 ```
-template<typename E, class ETraits = CElementTraits<E>>  
+template<typename E, class ETraits = CElementTraits<E>>
 class CAtlList
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*E*  
+*E*<br/>
 요소 형식입니다.
 
-*ETraits*  
+*ETraits*<br/>
 요소 이동 하거나 복사 하는 데 사용 되는 코드입니다. 참조 [CElementTraits 클래스](../../atl/reference/celementtraits-class.md) 대 한 자세한 내용은 합니다.
 
 ## <a name="members"></a>멤버
@@ -144,7 +144,7 @@ POSITION AddHead(INARGTYPE element);
 
 ### <a name="parameters"></a>매개 변수
 
-*요소*  
+*요소*<br/>
 새 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -169,7 +169,7 @@ void AddHeadList(const CAtlList<E, ETraits>* plNew);
 
 ### <a name="parameters"></a>매개 변수
 
-*plNew*  
+*plNew*<br/>
 추가할 목록입니다.
 
 ### <a name="remarks"></a>설명
@@ -191,7 +191,7 @@ POSITION AddTail(INARGTYPE element);
 
 ### <a name="parameters"></a>매개 변수
 
-*요소*  
+*요소*<br/>
 추가할 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -216,7 +216,7 @@ void AddTailList(const CAtlList<E, ETraits>* plNew);
 
 ### <a name="parameters"></a>매개 변수
 
-*plNew*  
+*plNew*<br/>
 추가할 목록입니다.
 
 ### <a name="remarks"></a>설명
@@ -253,7 +253,7 @@ CAtlList(UINT nBlockSize = 10) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nBlockSize*  
+*nBlockSize*<br/>
 블록 크기입니다.
 
 ### <a name="remarks"></a>설명
@@ -288,10 +288,10 @@ POSITION Find(INARGTYPE element, POSITION posStartAfter = NULL) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*요소*  
+*요소*<br/>
 목록에서 찾을 요소입니다.
 
-*posStartAfter*  
+*posStartAfter*<br/>
 검색 시작 위치입니다. 값은 지정 하지 않으면 검색이 head 요소를 사용 하 여 시작 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -316,7 +316,7 @@ POSITION FindIndex(size_t iElement) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*iElement*  
+*iElement*<br/>
 필요한 목록 요소의 0부터 시작 하는 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -344,7 +344,7 @@ const E& GetAt(POSITION pos) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 특정 요소를 지정 하는 위치 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -435,7 +435,7 @@ const E& GetNext(POSITION& pos) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 위치 값에 대 한 이전 호출에서 반환한 `GetNext`, [CAtlList::GetHeadPosition](#getheadposition), 또는 기타 `CAtlList` 메서드.
 
 ### <a name="return-value"></a>반환 값
@@ -463,7 +463,7 @@ const E& GetPrev(POSITION& pos) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 위치 값에 대 한 이전 호출에서 반환한 `GetPrev`, [CAtlList::GetTailPosition](#gettailposition), 또는 기타 `CAtlList` 메서드.
 
 ### <a name="return-value"></a>반환 값
@@ -543,10 +543,10 @@ POSITION InsertAfter(POSITION pos, INARGTYPE element);
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 새 요소가 삽입 되는 위치 값입니다.
 
-*요소*  
+*요소*<br/>
 삽입할 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -571,10 +571,10 @@ POSITION InsertBefore(POSITION pos, INARGTYPE element);
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 위치 값이 앞의 목록에 새 요소 삽입 됩니다.
 
-*요소*  
+*요소*<br/>
 삽입할 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -615,7 +615,7 @@ void MoveToHead(POSITION pos) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 이동할 요소 위치 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -636,7 +636,7 @@ void MoveToTail(POSITION pos) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 이동할 요소 위치 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -673,7 +673,7 @@ void RemoveAt(POSITION pos) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 제거할 요소의 위치 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -768,10 +768,10 @@ void SetAt(POSITION pos, INARGTYPE element);
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 변경 하려면 요소에 해당 하는 위치 값입니다.
 
-*요소*  
+*요소*<br/>
 새 요소의 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -792,10 +792,10 @@ void SwapElements(POSITION pos1, POSITION pos2) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos1*  
+*pos1*<br/>
 첫 번째 위치 값입니다.
 
-*pos2*  
+*pos2*<br/>
 두 번째 위치 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -808,5 +808,5 @@ void SwapElements(POSITION pos1, POSITION pos2) throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[CList 클래스](../../mfc/reference/clist-class.md)   
+[CList 클래스](../../mfc/reference/clist-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

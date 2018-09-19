@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60047795428aad2da94b117882f351375fed4545
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 786d47e23986962575567b8afdc2eefd5aac5be6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33167985"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082432"
 ---
 # <a name="compiler-error-c2147"></a>컴파일러 오류 C2147
-구문 오류: '' 식별자가 새 키워드  
-  
- 식별자는 이제 언어의 예약 된 키워드를 사용 했습니다.  
-  
- 다음 샘플에서는 C2147 오류가 생성 됩니다.  
-  
-```  
-// C2147.cpp  
-// compile with: /clr  
-int main() {  
-   int gcnew = 0;   // C2147  
-   int i = 0;   // OK  
-}  
+
+구문 오류: 'identifier'는 새로운 키워드
+
+식별자는 이제 언어에서 예약된 된 키워드를 사용 했습니다.
+
+다음 샘플에서는 C2147 오류가 생성 됩니다.
+
+```
+// C2147.cpp
+// compile with: /clr
+int main() {
+   int gcnew = 0;   // C2147
+   int i = 0;   // OK
+}
 ```

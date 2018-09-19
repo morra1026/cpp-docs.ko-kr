@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b7835d537c151ec1eba74d506e803c4f35685586
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4e58daedc0a2054bbeef885446694165f96bc44d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33250126"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46083966"
 ---
 # <a name="compiler-error-c3251"></a>컴파일러 오류 C3251
-값 형식 인스턴스의 기본 클래스 메서드를 호출할 수 없습니다.  
-  
- 다음 오류는 `GetClass` 가 `Microsoft.Runtime.Object`가 아닌 `Microsoft.Runtime.Integer4`의 멤버이기 때문에 발생합니다.
+
+값 형식 인스턴스의 기본 클래스 메서드를 호출할 수 없습니다.
+
+다음 오류는 `GetClass` 가 `Microsoft.Runtime.Object`가 아닌 `Microsoft.Runtime.Integer4`의 멤버이기 때문에 발생합니다.

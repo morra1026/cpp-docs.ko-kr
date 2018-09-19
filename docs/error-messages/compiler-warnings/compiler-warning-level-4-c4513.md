@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92c3e89204ec30f9c96a5ea03ede5093dd013d0c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 75ae1c94d7a11fc9bb0049333c65a6677b04778a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292898"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087385"
 ---
 # <a name="compiler-warning-level-4-c4513"></a>컴파일러 경고(수준 4) C4513
-'class': 소멸자를 생성할 수 없습니다  
-  
- 컴파일러에서 주어진된 클래스;에 대 한 기본 소멸자 소멸자가 되지 않은 생성 되었습니다. 파생된 클래스에 액세스할 수 없으면 기본 클래스의 소멸자는 합니다. 기본 클래스에 private 소멸자를 확인 public 또는 protected 합니다.
+
+'class': 소멸자를 생성 하지 못했습니다
+
+컴파일러는 지정 된 클래스에 대 한 기본 소멸자 소멸자가 없습니다 만들어졌습니다. 파생된 클래스에 액세스할 수 없는 기본 클래스의 소멸자가 있습니다. Private 소멸자가 하는 기본 클래스를 확인 public 또는 protected 합니다.

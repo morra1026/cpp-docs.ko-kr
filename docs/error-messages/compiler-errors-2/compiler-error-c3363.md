@@ -16,25 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aec09769f4db4f501f62ebaa2a996dfdefb5fcd6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fe5ee58d5d11c2f3bad07b2a017a5ff83c6b0cb5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33254097"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089140"
 ---
 # <a name="compiler-error-c3363"></a>컴파일러 오류 C3363
-'type': 'typeid'는 형식에만 적용될 수 있습니다.  
-  
- [typeid](../../windows/typeid-cpp-component-extensions.md) 연산자를 잘못 사용했습니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3363을 생성합니다.  
-  
-```  
-// C3363.cpp  
-// compile with: /clr  
-int main() {  
-   System::typeid;   // C3363  
-}  
+
+'type': 'typeid'는 형식에만 적용될 수 있습니다.
+
+[typeid](../../windows/typeid-cpp-component-extensions.md) 연산자를 잘못 사용했습니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C3363을 생성합니다.
+
+```
+// C3363.cpp
+// compile with: /clr
+int main() {
+   System::typeid;   // C3363
+}
 ```

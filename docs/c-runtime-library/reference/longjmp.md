@@ -31,12 +31,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 857fae2e9c38dfe2c5cd468c6d1b50c6fdd2f317
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 196f95ae134458f2eaf00ab037c3a560d1317515
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42571640"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109700"
 ---
 # <a name="longjmp"></a>longjmp
 
@@ -53,10 +53,10 @@ void longjmp(
 
 ### <a name="parameters"></a>매개 변수
 
-*env*  
+*env*<br/>
 환경이 저장되는 변수입니다.
 
-*값*  
+*값*<br/>
 `setjmp` 호출에 대해 반환되는 값입니다.
 
 ## <a name="remarks"></a>설명
@@ -83,7 +83,7 @@ Windows, Microsoft c + + 코드에 **longjmp** 예외 처리 코드와 동일한
 
 **Microsoft 전용 종료**
 
-> [!NOTE]  
+> [!NOTE]
 > 이식 가능한 c + + 코드에서 가정할 수 없습니다 `setjmp` 고 `longjmp` c + + 개체 의미 체계를 지원 합니다. 특히를 `setjmp` / `longjmp` 쌍에 정의 되지 않은 동작이 대체 하는 경우 호출 합니다 `setjmp` 및 `longjmp` 여 **catch** 및 **throw** 호출 자동 개체에 대 한 모든 non-trivial 소멸자가 있습니다. C + + 프로그램에서 c + + 예외 처리 메커니즘을 사용 하는 것이 좋습니다.
 
 자세한 내용은 [setjmp 및 longjmp 사용](../../cpp/using-setjmp-longjmp.md)을 참조하세요.
@@ -96,11 +96,11 @@ Windows, Microsoft c + + 코드에 **longjmp** 예외 처리 코드와 동일한
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 [_fpreset](fpreset.md)에 대한 예제를 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 
-[프로세스 및 환경 제어](../../c-runtime-library/process-and-environment-control.md)  
-[setjmp](setjmp.md)  
+[프로세스 및 환경 제어](../../c-runtime-library/process-and-environment-control.md)<br/>
+[setjmp](setjmp.md)

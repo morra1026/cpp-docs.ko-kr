@@ -16,37 +16,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0b9349ed9450c6d74a9311d5b9265f57cc37b81
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8027831810a8f95b8d72ef70e392d9984b5c2f3a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33255983"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077934"
 ---
 # <a name="compiler-error-c3461"></a>컴파일러 오류 C3461
-'type': 관리되는 형식만 전달할 수 있습니다.  
-  
- 형식 전달은 CLR 형식에서만 발생할 수 있습니다.  참조 [클래스 및 구조체](../../windows/classes-and-structs-cpp-component-extensions.md) 자세한 정보에 대 한 합니다.  
-  
- 자세한 내용은 참조 [형식 전달 (C + + /cli CLI)](../../windows/type-forwarding-cpp-cli.md)합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 구성 요소를 만듭니다.  
-  
-```  
-// C3461.cpp  
-// compile with: /clr /LD  
-public ref class R {};  
-```  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3461을 생성합니다.  
-  
-```  
-// C3461b.cpp  
-// compile with: /clr /c  
-#using "C3461.dll"  
-class N {};  
-[assembly:TypeForwardedTo(N::typeid)];   // C3461  
-[assembly:TypeForwardedTo(R::typeid)];   // OK  
+
+'type': 관리되는 형식만 전달할 수 있습니다.
+
+형식 전달은 CLR 형식에서만 발생할 수 있습니다.  참조 [클래스 및 구조체](../../windows/classes-and-structs-cpp-component-extensions.md) 자세한 내용은 합니다.
+
+자세한 내용은 [형식 전달 (C + + /cli CLI)](../../windows/type-forwarding-cpp-cli.md)합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 구성 요소를 만듭니다.
+
+```
+// C3461.cpp
+// compile with: /clr /LD
+public ref class R {};
+```
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C3461을 생성합니다.
+
+```
+// C3461b.cpp
+// compile with: /clr /c
+#using "C3461.dll"
+class N {};
+[assembly:TypeForwardedTo(N::typeid)];   // C3461
+[assembly:TypeForwardedTo(R::typeid)];   // OK
 ```

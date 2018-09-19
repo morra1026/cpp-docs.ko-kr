@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b22b77affd41aa60769543ae2bea2ed495084ae
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 71dd2ba071f345622d4058b9fb687dcdeaa50a62
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687883"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088997"
 ---
 # <a name="taskcompletionevent-class"></a>task_completion_event 클래스
 `task_completion_event` 클래스를 사용하면 조건이 충족될 때까지 작업 실행을 지연하거나 외부 이벤트에 대한 응답으로 작업을 시작할 수 있습니다.  
@@ -41,10 +41,9 @@ class task_completion_event<void>;
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `_ResultType`  
- 이 `task_completion_event` 클래스의 결과 형식입니다.  
-  
- `T`  
+*_ResultType*<br/>
+이 `task_completion_event` 클래스의 결과 형식입니다.  
+
   
 ## <a name="members"></a>멤버  
   
@@ -87,14 +86,14 @@ bool set() const ;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Result`  
- 이 이벤트를 설정 하려면 결과입니다.  
+*_Result*<br/>
+이 이벤트를 설정할 결과입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 메서드가 반환 `true` 이벤트를 설정 하는 데 성공한 것입니다. 반환 `false` 이벤트 이미 설정 된 경우.  
+ 메서드는 반환 `true` 이벤트 설정에 성공 합니다. 반환 `false` 이벤트가 이미 설정 된 경우.  
   
 ### <a name="remarks"></a>설명  
- 여러 개 있는 경우 또는 동시 호출을 `set`은 첫 번째 호출에 성공 하 고 (있는 경우)는 결과 작업 완료 이벤트에 저장 됩니다. 나머지 집합 무시 되며 메서드가 false를 반환 합니다. 작업 완료 이벤트를 설정 하면 모든 작업에서 만든 이벤트 즉시 완료 하 고 해당 연속 있는 경우 예약 됩니다. 작업 완료 개체는 `_ResultType` 이외의 `void` 작업의 연속을 값에 전달 합니다.  
+ 여러 개 있는 경우 또는 동시 호출이 `set`, 첫 번째 호출만 성공 하 고 그 결과 (있는 경우) 작업 완료 이벤트에 저장 됩니다. 나머지 세트는 무시 됩니다 및 메서드는 false를 반환 합니다. 작업 완료 이벤트를 설정 하면 이벤트 즉시 완료 하 고 연속 작업이 있는 경우 예정 된 모든 작업에서 만들어집니다. 작업 완료 개체는 `_ResultType` 이외의 `void` 연속으로 값을 전달 합니다.  
   
 ##  <a name="set_exception"></a> set_exception 
 
@@ -108,9 +107,14 @@ __declspec(noinline) bool set_exception(std::exception_ptr _ExceptionPtr) const 
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_E`  
- `_Except`  
- `_ExceptionPtr`  
+*_E*<br/>
+예외 형식입니다.
+
+*_Except*<br/>
+예외 설정입니다.
+
+*_ExceptionPtr*<br/>
+설정에 예외 포인터입니다.
   
 ### <a name="return-value"></a>반환 값  
   

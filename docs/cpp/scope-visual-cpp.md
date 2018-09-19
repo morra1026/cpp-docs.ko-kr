@@ -20,18 +20,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 733d090073fe2ed08a0499ea205c2377b4bdb289
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: eb9d21eee8e561e2caa8a7c4088774435d3ce273
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679699"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080443"
 ---
 # <a name="scope-c"></a>범위 (C++)
 
 클래스, 함수 또는 변수 같은 프로그램 요소를 선언 하면 해당 이름은 "표시" 고 프로그램의 특정 부분에 사용 되는 수 있습니다. 이름 표시 되는 컨텍스트 라고 해당 *범위*합니다. 예를 들어 변수를 선언할 `x` 함수 안의 `x` 만 해당 함수 본문 내에서 표시 됩니다. 있기 *로컬 범위*합니다. 프로그램;에서 같은 이름의 다른 변수를 할 수 있습니다. 서로 다른 범위에 있는 단일 정의 규칙을 위반 하지 않는 하 고 오류가 발생 하지 않습니다.
 
-자동 비정적 변수의 범위 만들고 프로그램 메모리에서 제거 하는 경우에 결정 합니다. 
+자동 비정적 변수의 범위 만들고 프로그램 메모리에서 제거 하는 경우에 결정 합니다.
 
 범위는 다음과 같은 여섯 가지 종류가 있습니다.
 
@@ -51,9 +51,9 @@ ms.locfileid: "43679699"
 
 이름을 포함된 블록에서 선언하여 숨길 수 있습니다. 다음 그림에서는 `i`가 내부 블록 안에서 다시 선언되므로 바깥쪽 블록 범위에서 `i`와 연결된 변수가 숨겨집니다.
 
- ![블록&#45;범위 이름 숨기기](../cpp/media/vc38sf1.png "vc38SF1") 블록 범위 및 이름 숨기기
+![블록&#45;범위 이름 숨기기](../cpp/media/vc38sf1.png "vc38SF1") 블록 범위 및 이름 숨기기
 
- 그림에 표시된 프로그램의 출력은 다음과 같습니다.
+그림에 표시된 프로그램의 출력은 다음과 같습니다.
 
 ```cpp
 i = 0
@@ -67,7 +67,7 @@ i = 0
 
 ## <a name="hiding-class-names"></a>클래스 이름 숨기기
 
- 함수, 개체, 변수 또는 열거자를 동일한 코드에서 선언하여 클래스 이름을 숨길 수 있습니다. 그러나 클래스 이름에 액세스할 수 있습니다 때 키워드가 접두사로 붙는 **클래스**합니다.
+함수, 개체, 변수 또는 열거자를 동일한 코드에서 선언하여 클래스 이름을 숨길 수 있습니다. 그러나 클래스 이름에 액세스할 수 있습니다 때 키워드가 접두사로 붙는 **클래스**합니다.
 
 ```cpp
 // hiding_class_names.cpp
@@ -91,7 +91,7 @@ double Account = 15.37;            // Hides class name Account
 
 int main()
 {
-    class Account Checking( Account ); // Qualifies Account as 
+    class Account Checking( Account ); // Qualifies Account as
                                        //  class name
 
     cout << "Opening account with balance of: "
@@ -103,13 +103,13 @@ int main()
 > [!NOTE]
 > 클래스 이름 위치 (`Account`)이 호출 되는 전역 범위 변수 Account와 구별 하기 위해 class 키워드를 사용 해야 합니다. 이 규칙은 범위 결정 연산자(::)의 왼쪽에 클래스 이름이 나타나는 경우에는 적용되지 않습니다. 범위 결정 연산자의 왼쪽에 있는 이름은 항상 클래스 이름으로 간주됩니다.
 
- 다음 예제에서는 형식의 개체에 대 한 포인터를 선언 하는 방법을 보여 줍니다 `Account` 를 사용 하 여 **클래스** 키워드:
+다음 예제에서는 형식의 개체에 대 한 포인터를 선언 하는 방법을 보여 줍니다 `Account` 를 사용 하 여 **클래스** 키워드:
 
 ```cpp
 class Account *Checking = new class Account( Account );
 ```
 
- 합니다 `Account` 전역 범위에 형식이 괄호 안에 위의 문에서 이니셜라이저의 **double**합니다.
+합니다 `Account` 전역 범위에 형식이 괄호 안에 위의 문에서 이니셜라이저의 **double**합니다.
 
 > [!NOTE]
 > 이 예제와 같이 식별자 이름을 다시 사용하는 것은 좋지 않은 프로그래밍 스타일로 간주됩니다.
@@ -118,7 +118,7 @@ class Account *Checking = new class Account( Account );
 
 ## <a name="hiding-names-with-global-scope"></a>전역 범위가 있는 이름 숨기기
 
- 블록 범위에서 이름이 같은 명시적으로 선언 하 여 전역 범위를 사용 하 여 이름을 숨길 수 있습니다. 하지만 범위 결정 연산자를 사용 하 여 전역 범위 이름 수 액세스 (`::`).
+블록 범위에서 이름이 같은 명시적으로 선언 하 여 전역 범위를 사용 하 여 이름을 숨길 수 있습니다. 하지만 범위 결정 연산자를 사용 하 여 전역 범위 이름 수 액세스 (`::`).
 
 ```cpp
 #include <iostream>
@@ -139,4 +139,5 @@ Global-scoped i has the value: 7
 ```
 
 ## <a name="see-also"></a>참고자료
- [기본 개념](../cpp/basic-concepts-cpp.md)
+
+[기본 개념](../cpp/basic-concepts-cpp.md)

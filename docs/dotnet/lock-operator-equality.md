@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 276ad5b44dd2112abad2c7c2e293fc65b173fffc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 38cefb80b1c4c6969cba976c30383c1499a4968d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33133261"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46048892"
 ---
 # <a name="lockoperator"></a>lock::operator==
 같음 연산자입니다.  
@@ -39,11 +39,11 @@ template<class T> bool operator==(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `t`  
- 같은지 비교할 개체입니다.  
+*t*<br/>
+같은지 비교할 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 반환 `true` 경우 `t` 잠금의 개체와 같은지 `false` 그렇지 않은 경우.  
+ 반환 `true` 하는 경우 `t` 잠금의 개체와 같은지 `false` 그렇지 않은 경우.  
   
 ## <a name="example"></a>예제  
   

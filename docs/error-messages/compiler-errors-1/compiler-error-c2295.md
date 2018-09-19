@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17c4c112c56257b12ca56dddc63dc61f9c5ee9e6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 689d5fa4a405503cd21d086e5c23f5d26aa8cdfb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168375"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135890"
 ---
 # <a name="compiler-error-c2295"></a>컴파일러 오류 C2295
-이스케이프된 'character': 매크로 정의에서 사용할 수 없습니다.  
-  
- 매크로 정의에는 지정된 문자와 함께 이스케이프 시퀀스가 포함될 수 없습니다.
+
+이스케이프된 'character': 매크로 정의에서 사용할 수 없습니다.
+
+매크로 정의에는 지정된 문자와 함께 이스케이프 시퀀스가 포함될 수 없습니다.

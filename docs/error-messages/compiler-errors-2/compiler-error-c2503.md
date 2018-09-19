@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db11113b7f6061a7e3464cc69ae1f397fc7a4753
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b57ce28851d3948db5c14889fceb3594dbe2617a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198874"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46048931"
 ---
 # <a name="compiler-error-c2503"></a>컴파일러 오류 C2503
-'class': 기본 클래스에는 크기가 0 인 배열을 포함할 수 없습니다  
-  
- 기본 클래스 또는 구조체에 크기가 0 인 배열이 포함 되어 있습니다. 클래스에서 배열에 요소가 하나 이상 있어야 합니다.  
-  
- 다음 샘플에서는 C2503 오류가 생성 됩니다.  
-  
-```  
-// C2503.cpp  
-// compile with: /c  
-class A {  
-   public:  
-   int array [];  
-};  
-  
-class B : A {};    // C2503  
-  
-class C {  
-public:  
-   int array [10];  
-};  
-  
-class D : C {};  
+
+'class': 기본 클래스에는 크기가 0 인 배열을 포함할 수 없습니다
+
+기본 클래스 또는 구조체에 크기가 0 인 배열이 포함 되어 있습니다. 클래스에서 배열에 요소가 하나 이상 있어야 합니다.
+
+다음 샘플에서는 C2503 오류가 생성 됩니다.
+
+```
+// C2503.cpp
+// compile with: /c
+class A {
+   public:
+   int array [];
+};
+
+class B : A {};    // C2503
+
+class C {
+public:
+   int array [10];
+};
+
+class D : C {};
 ```

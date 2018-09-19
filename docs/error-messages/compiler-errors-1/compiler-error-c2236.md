@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f755c9ba72e2d36bdce608e93e8a60175e493a45
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4fba2f795c3b786e82331a4b14f2c4530731db64
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33170556"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053702"
 ---
 # <a name="compiler-error-c2236"></a>컴파일러 오류 C2236
-예기치 않은 토큰 'identifier'입니다. ';'이 없습니다.  
-  
- 식별자가 이미 형식으로 정의되었으며 사용자 정의 형식으로 재정의할 수 없습니다.  
-  
- 다음 샘플에서는 C2236을 생성합니다.  
-  
-```  
-// C2236.cpp  
-// compile with: /c  
-int class A {};  // C2236 "int class" is unexpected  
-int i;  
-class B {};  
+
+예기치 않은 토큰 'identifier'입니다. ';'이 없습니다.
+
+식별자가 이미 형식으로 정의되었으며 사용자 정의 형식으로 재정의할 수 없습니다.
+
+다음 샘플에서는 C2236을 생성합니다.
+
+```
+// C2236.cpp
+// compile with: /c
+int class A {};  // C2236 "int class" is unexpected
+int i;
+class B {};
 ```

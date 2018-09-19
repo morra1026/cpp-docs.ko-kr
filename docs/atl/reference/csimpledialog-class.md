@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a476daeb680048c7bbb21565014487f6b937c78
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f58efa7b7ba5c0452f2418a2dbbc27c94eedaca6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754893"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087957"
 ---
 # <a name="csimpledialog-class"></a>CSimpleDialog 클래스
 
@@ -35,7 +35,7 @@ ms.locfileid: "43754893"
 ## <a name="syntax"></a>구문
 
 ```
-template <WORD t_wDlgTemplateID, BOOL t_bCenter = TRUE>  
+template <WORD t_wDlgTemplateID, BOOL t_bCenter = TRUE>
 class CSimpleDialog : public CDialogImplBase
 ```
 
@@ -45,7 +45,7 @@ class CSimpleDialog : public CDialogImplBase
 
 대화 상자 템플릿 리소스의 리소스 ID입니다.
 
-*t_bCenter*  
+*t_bCenter*<br/>
 대화 상자 개체에서 소유자 창의 가운데에 맞춰야 하는 경우 TRUE 그렇지 않으면 FALSE입니다.
 
 ## <a name="members"></a>멤버
@@ -84,7 +84,7 @@ INT_PTR DoModal(HWND hWndParent = ::GetActiveWindow());
 
 ### <a name="parameters"></a>매개 변수
 
-*hWndParent*  
+*hWndParent*<br/>
 대화 상자의 부모 핸들입니다. 없는 값을 제공 하는 경우 부모는 현재 활성 창으로 설정 됩니다.
 
 ### <a name="return-value"></a>반환 값

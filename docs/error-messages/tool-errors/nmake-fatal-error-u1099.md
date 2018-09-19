@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7be09691de4212d07b1452ffe33725a3978fc053
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f3ef75a1435d8c922087fcdd21d1941961bc82cd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33322106"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113385"
 ---
 # <a name="nmake-fatal-error-u1099"></a>NMAKE 심각한 오류 U1099
-스택 오버플로  
-  
- 처리 중인 메이크파일이 NMAKE에서 현재 스택 할당에는 너무 복잡 합니다. NMAKE는 0x3000 (12 K)의 할당을 있습니다.  
-  
- NMAKE의 스택 할당을 늘리려면 실행는 [/stack editbin](../../build/reference/stack.md) 유틸리티를 더 큰 스택 옵션:  
-  
- **NMAKE /STACK:reserve editbin 합니다. EXE**  
-  
- 여기서 *예약* 숫자 NMAKE에서 현재 스택 할당 보다 큽니다.
+
+스택 오버플로
+
+처리 중인 메이크파일 현재 스택 할당 NMAKE에 대해 너무 복잡 했습니다. NMAKE (12 K) 0x3000 할당을 있습니다.
+
+NMAKE의 스택 할당을 늘리려면 다음을 실행 합니다 [/stack editbin](../../build/reference/stack.md) 큰 스택 옵션을 사용 하 여 유틸리티.
+
+**NMAKE /STACK:reserve editbin 합니다. EXE**
+
+여기서 *예약할* 숫자로 NMAKE에서 현재 스택 할당 보다 큽니다.
