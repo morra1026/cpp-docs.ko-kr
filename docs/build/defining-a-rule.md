@@ -15,26 +15,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a8ff7c58033ac5f7e42764d185c45c206bf406f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a8a5cb7a0285f7abf8bcf476141451eae1b10f85
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367123"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705577"
 ---
 # <a name="defining-a-rule"></a>규칙 정의
-*fromext* 종속 파일의 확장을 나타내는 및 *toext* 대상 파일의 확장을 나타냅니다.  
-  
-```  
-.fromext.toext:  
-   commands  
-```  
-  
-## <a name="remarks"></a>설명  
- 확장은 대/소문자 구분 하지 않습니다. 매크로 나타내기 위해 호출 될 수 있습니다 *fromext* 및 *toext*; 전처리 하는 동안 매크로가 확장 됩니다. 마침표 (.) 이전 *fromext* 줄의 시작 부분에 표시 되어야 합니다. 콜론 (:) 앞 공백이 나 탭 0 개 이상 있습니다. 공백 또는 탭, 세미콜론 (;) 명령을 지정 하려면, 메모를 지정 하려면 숫자 기호 (#) 또는 줄 바꿈 문자를 통해서만 수행할 수 있습니다. 다른 공백이 있어서는 안 됩니다. 명령이 설명 블록에서와 같이 지정 됩니다.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>추가 정보  
- [규칙에서 경로 검색](../build/search-paths-in-rules.md)  
-  
-## <a name="see-also"></a>참고 항목  
- [유추 규칙](../build/inference-rules.md)
+
+합니다 *fromext* 종속 파일의 확장명을 나타내는 및 *toext* 대상 파일의 확장명을 나타냅니다.
+
+```
+.fromext.toext:
+   commands
+```
+
+## <a name="remarks"></a>설명
+
+확장은 대/소문자 구분 되지 않았습니다. 나타내는 매크로 호출할 수 있습니다 *fromext* 하 고 *toext*; 전처리 중 매크로 확장 됩니다. 마침표 (.) 앞 *fromext* 줄의 시작 부분에 표시 되어야 합니다. 콜론 (:) 0 개 이상의 공백 또는 탭 앞에 있습니다. 공백 또는 탭, 명령을 지정 하려면 세미콜론 (;), 메모를 지정 하려면 숫자 기호 (#) 또는 줄 바꿈 문자에 의해서만 올 수 있습니다. 다른 공백이 허용 됩니다. 명령 설명 블록와 같이 지정 됩니다.
+
+## <a name="what-do-you-want-to-know-more-about"></a>추가 정보
+
+[규칙에서 경로 검색](../build/search-paths-in-rules.md)
+
+## <a name="see-also"></a>참고 항목
+
+[유추 규칙](../build/inference-rules.md)

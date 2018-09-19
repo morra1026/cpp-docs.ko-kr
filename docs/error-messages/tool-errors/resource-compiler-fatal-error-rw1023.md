@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff2feab76fb4ade2832986ccc82cb98418fee2c1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 298cde9d9f44ace74e7e46080dcbeeff72b8bb33
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320387"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093495"
 ---
 # <a name="resource-compiler-fatal-error-rw1023"></a>리소스 컴파일러 심각한 오류 RW1023
-파일에 쓰는 전체 I/O 오류  
-  
- 사용 가능한 공간을 만들려는 실행 파일의 크기 이상 두 배와 같아야 합니다.
+
+전체 드라이브에 파일을 작성 하는 I/O 오류
+
+사용 가능한 공간을 만들려는 실행 파일의 크기 보다 두 배 이상의 같아야 합니다.

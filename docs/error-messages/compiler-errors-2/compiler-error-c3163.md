@@ -16,35 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7be8fbba29cf82070d6fd96c76f810bda961489
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0e712a70bdd443d9a6c640853b958f29dac78dbd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33250891"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46061970"
 ---
 # <a name="compiler-error-c3163"></a>컴파일러 오류 C3163
-'construct': 특성이 이전 선언과 일치 하지 않습니다.  
-  
- 정의에 적용 되는 특성 선언에 적용 되는 특성와 충돌 합니다.  
-  
- C3163 해결 하는 한 가지 방법은 정방향 선언에서 특성을 제거 하는 합니다. 정방향 선언에 특성이 정의에 있는 특성 보다 작을 수 하거나 해야, 많아야 같아야 합니다.  
-  
- C3163 오류의 가능한 원인은 Microsoft 소스 코드 주석 언어 (SAL) 작업이 포함 됩니다. 프로젝트를 사용 하 여 컴파일하지 않으면 SAL 매크로가 확장 하지 않고는 **/analyze** 플래그입니다. 사용 하 여 다시 시도 하지 않고 오류 없이 컴파일되지 / 분석 하는 프로그램 C3163를 throw 할 수 있습니다는 /analyze 옵션입니다. SAL에 대 한 자세한 내용은 참조 [SAL 주석을](../../c-runtime-library/sal-annotations.md)합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 c3163 오류가 발생 합니다.  
-  
-```  
-// C3163.cpp  
-// compile with: /clr /c  
-using namespace System;  
-  
-[CLSCompliant(true)] void f();  
-[CLSCompliant(false)] void f() {}   // C3163  
-// try the following line instead  
-// [CLSCompliant(true)] void f() {}  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [SAL 주석](../../c-runtime-library/sal-annotations.md)
+
+'construct': 특성이 이전 선언과 일관성이 없습니다
+
+정의에 적용 되는 특성 선언에 적용 되는 특성을 사용 하 여 충돌 합니다.
+
+C3163를 해결 하는 방법을 정방향 선언에 특성을 제거 하는 경우 모든 특성에 대 한 정방향 선언 해야 정의 특성 보다 작을 수 또는 같아야 합니다를.
+
+C3163 오류의 가능한 원인은 Microsoft 소스 코드 주석 언어 (SAL) 포함 됩니다. SAL 매크로가 확장 하지 않고 프로젝트를 사용 하 여 컴파일하지 않으면 합니다 **/analyze** 플래그입니다. 없이 정상적으로 컴파일한 / 분석 하는 프로그램을 사용 하 여 다시 컴파일을 시도 하면 C3163 throw 할 수 있습니다는 /analyze 옵션입니다. SAL에 대 한 자세한 내용은 참조 하세요. [SAL 주석은](../../c-runtime-library/sal-annotations.md)합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플 C3163를 생성합니다.
+
+```
+// C3163.cpp
+// compile with: /clr /c
+using namespace System;
+
+[CLSCompliant(true)] void f();
+[CLSCompliant(false)] void f() {}   // C3163
+// try the following line instead
+// [CLSCompliant(true)] void f() {}
+```
+
+## <a name="see-also"></a>참고 항목
+
+[SAL 주석](../../c-runtime-library/sal-annotations.md)

@@ -16,33 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f64f11f94c5a0c5d223d97b6b597f89b89aa160b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b8e76228ff585f47a2cbe210ac3eb96d5d281a93
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33170702"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114022"
 ---
 # <a name="compiler-error-c2148"></a>컴파일러 오류 C2148
-0x7fffffff 바이트 배열의 전체 크기를 초과할 수 없습니다.  
-  
- 배열에는 제한을 초과합니다. 배열의 크기를 줄입니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C2148 오류가 생성 됩니다.  
-  
-```  
-// C2148.cpp  
-#include <stdio.h>  
-#include <stdlib.h>  
-  
-int main( ) {  
-   char MyArray[0x7ffffffff];   // C2148  
-   char * MyArray2 = (char *)malloc(0x7fffffff);  
-  
-   if (MyArray2)  
-      printf_s("It worked!");  
-   else  
-      printf_s("It didn't work.");  
-}  
+
+배열의 총 크기 0x7fffffff 바이트를 초과할 수 없습니다.
+
+배열 한도 초과합니다. 배열의 크기를 줄입니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C2148를 생성합니다.
+
+```
+// C2148.cpp
+#include <stdio.h>
+#include <stdlib.h>
+
+int main( ) {
+   char MyArray[0x7ffffffff];   // C2148
+   char * MyArray2 = (char *)malloc(0x7fffffff);
+
+   if (MyArray2)
+      printf_s("It worked!");
+   else
+      printf_s("It didn't work.");
+}
 ```

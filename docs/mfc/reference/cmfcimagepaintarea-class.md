@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 449d79119b15e814485f3b7e0c3eb7472d314d19
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: ee3bf6b087777bc550a34234a8969e2127c8ec2d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852486"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720254"
 ---
 # <a name="cmfcimagepaintarea-class"></a>CMFCImagePaintArea 클래스
 이미지 편집기 대화 상자에서 이미지를 수정 하는 데 사용할 수 있는 그림 영역을 제공 합니다.  
@@ -67,7 +67,7 @@ class CMFCImagePaintArea : public CButton
   
  프레임 워크는 이미지 편집기 대화 상자에서 그림 영역을 표시 하려면이 클래스를 사용 합니다. 이미지 편집기 대화 상자에 대 한 자세한 내용은 참조 하세요. [CMFCImageEditorDialog 클래스](../../mfc/reference/cmfcimageeditordialog-class.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는의 개체를 생성 하는 방법에 설명 합니다 `CMFCImagePaintArea` 클래스에서 현재 색을 그리는 현재 그리기 모드를 설정 하 고 그림 영역에 대 한 비트맵 이미지를 설정 합니다.  
   
  [!code-cpp[NVC_MFC_RibbonApp#37](../../mfc/reference/codesnippet/cpp/cmfcimagepaintarea-class_1.cpp)]  
@@ -98,7 +98,7 @@ CMFCImagePaintArea(CMFCImageEditorDialog* pParentDlg);
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *pParentDlg*|이미지 편집기의 부모인 대화 상자에 대 한 포인터입니다.|  
+|*pParentDlg*|[in] 이미지 편집기의 부모인 대화 상자에 대 한 포인터입니다.|  
   
 ##  <a name="getmode"></a>  CMFCImagePaintArea::GetMode  
  현재 그리기 모드를 검색합니다.  
@@ -122,7 +122,7 @@ void SetBitmap(CBitmap* pBitmap);
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *pBitmap*|표시할 새 비트맵 이미지를 지정 합니다.|  
+|*pBitmap*|[in] 표시할 새 비트맵 이미지를 지정 합니다.|  
   
 ### <a name="remarks"></a>설명  
  하는 경우 *pBitmap* 가 null 인 경우이 메서드는 수정할 수 있는 그리기 영역의 크기를 0으로 설정 합니다. 이 고, 그렇지 제공 된 비트맵 이미지의 크기를 수정할 수 있는 그리기 영역의 크기를 설정합니다.  
@@ -139,7 +139,7 @@ void SetColor(COLORREF color);
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *색*|새 그리기 색입니다.|  
+|*색*|[in] 새 그리기 색입니다.|  
   
 ### <a name="remarks"></a>설명  
  때 이미지 편집기 팔레트 막대에서 색을 선택 하거나 색 편집기 프레임 워크는 현재 그리기 색을 업데이트 하려면이 메서드를 호출 합니다. 초기 그리기 색이 검정색 (0 COLORREF 값).  
@@ -158,7 +158,7 @@ void SetMode(IMAGE_EDIT_MODE mode);
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *모드*|[IMAGE_EDIT_MODE](cmfcimagepaintarea-image-edit-mode-enumeration.md) 현재 그리기 모드를 지정 하는 값입니다.|  
+|*모드*|[in] [IMAGE_EDIT_MODE](cmfcimagepaintarea-image-edit-mode-enumeration.md) 현재 그리기 모드를 지정 하는 값입니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [계층 구조 차트](../../mfc/hierarchy-chart.md)   

@@ -170,12 +170,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 125b15062fc46850ad9b0d2512f9f7cc2e2095e1
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 065529796ead2a37b9a417f5e1a2352deb429aba
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204214"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711245"
 ---
 # <a name="cmfcpopupmenu-class"></a>CMFCPopupMenu 클래스
 Windows 팝업 메뉴 기능을 구현하고 분리 메뉴, 도구 설명 같은 기능을 추가하여 확장합니다.
@@ -315,8 +315,8 @@ static BOOL __stdcall ActivatePopupMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pTopFrame*  
- [in] *pPopupMenu*  
+*pTopFrame*<br/>
+[in] [in] *pPopupMenu*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -330,8 +330,8 @@ static void AlwaysShowEmptyToolsEntry(BOOL bShow = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bShow*  
- 팝업 메뉴 빈 항목을 표시할 수 있으면 TRUE FALSE이 고, 그렇지 합니다.  
+*bShow*<br/>
+[in] 팝업 메뉴 빈 항목을 표시할 수 있으면 TRUE FALSE이 고, 그렇지 합니다.  
   
 ##  <a name="areallcommandsshown"></a>  CMFCPopupMenu::AreAllCommandsShown  
 
@@ -352,8 +352,8 @@ MENUAREA_TYPE CheckArea(const CPoint& ptScreen) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *ptScreen*  
- 시점에 화면 좌표입니다.  
+*ptScreen*<br/>
+[in] 시점에 화면 좌표입니다.  
   
 ### <a name="return-value"></a>반환 값  
  팝업 메뉴에 상대적인 점 위치를 나타내는 MENUAREA_TYPE 매개 변수입니다.  
@@ -395,11 +395,11 @@ CMFCPopupMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pCustPage*  
- 사용자 지정 페이지에 대 한 포인터입니다.  
+*pCustPage*<br/>
+[in] 사용자 지정 페이지에 대 한 포인터입니다.  
   
- [in] *lpszTitle*  
- 메뉴 캡션을 포함 하는 문자열입니다.  
+*lpszTitle*<br/>
+[in] 메뉴 캡션을 포함 하는 문자열입니다.  
   
 ### <a name="remarks"></a>설명  
  에 대 한 리소스를 할당 하는이 메서드는 `CMFCPopupMenu`합니다. 팝업 메뉴 항목을 만들려면 호출 [CMFCPopupMenu::Create](#create)합니다.  
@@ -418,23 +418,23 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndParent*  
- 부모 창입니다는 `CMFCPopupMenu`합니다.  
+*pWndParent*<br/>
+[in] 부모 창입니다는 `CMFCPopupMenu`합니다.  
   
- [in] *x*  
- 팝업 메뉴의 위치에 대 한 가로 화면 좌표  
+*x*<br/>
+[in] 팝업 메뉴의 위치에 대 한 가로 화면 좌표  
   
- [in] *y*  
- 팝업 메뉴의 위치에 대 한 세로 화면 좌표입니다.  
+*y*<br/>
+[in] 팝업 메뉴의 위치에 대 한 세로 화면 좌표입니다.  
   
- [in] *hMenu*  
- 메뉴 리소스 핸들입니다.  
+*hMenu*<br/>
+[in] 메뉴 리소스 핸들입니다.  
   
- [in] *차단*  
- 메뉴 사용자 지정 가능한 지 여부를 나타내는 부울 매개 변수입니다. FALSE 팝업 메뉴 사용자 지정 가능한 임을 나타냅니다.  
+*차단*<br/>
+[in] 메뉴 사용자 지정 가능한 지 여부를 나타내는 부울 매개 변수입니다. FALSE 팝업 메뉴 사용자 지정 가능한 임을 나타냅니다.  
   
- [in] *bOwnMessage*  
- 프레임 워크 메뉴 메시지를 라우트하는 방법을 나타내는 부울 매개 변수입니다. 자세한 내용은 설명 섹션을 참조 합니다.  
+*bOwnMessage*<br/>
+[in] 프레임 워크 메뉴 메시지를 라우트하는 방법을 나타내는 부울 매개 변수입니다. 자세한 내용은 설명 섹션을 참조 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -458,8 +458,8 @@ virtual CPane* CreateTearOffBar(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndMain*  
- [in] *uiID*  
+*pWndMain*<br/>
+[in] [in] *uiID*  
  [in] *lpszName*  
   
 ### <a name="return-value"></a>반환 값  
@@ -487,11 +487,11 @@ void EnableMenuLogo(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iLogoSize*  
- 픽셀에서 로고의 크기입니다.  
+*iLogoSize*<br/>
+[in] 픽셀에서 로고의 크기입니다.  
   
- [in] *nLogoLocation*  
- 로고의 위치를 나타내는 열거형된 데이터 형식입니다.  
+*nLogoLocation*<br/>
+[in] 로고의 위치를 나타내는 열거형된 데이터 형식입니다.  
   
 ### <a name="remarks"></a>설명  
  로고를 표시 하려면 메서드를 구현 [CFrameWndEx::OnDrawMenuLogo](../../mfc/reference/cframewndex-class.md#ondrawmenulogo) 주 프레임 창에서.  
@@ -506,8 +506,8 @@ static void EnableMenuSound(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- FALSE이 고, 그렇지 소리를 사용 하려면 TRUE로 설정 합니다.  
+*bEnable*<br/>
+[in] FALSE이 고, 그렇지 소리를 사용 하려면 TRUE로 설정 합니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 워크를 호출 하는 소리를 사용 하는 경우는 [PlaySound](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iusernotification-playsound) 메서드 사용자가 팝업 메뉴를 열거나 메뉴 명령을 선택 합니다. 기본적으로이 기능을 사용 하는 사용 하도록 설정 합니다.  
@@ -596,8 +596,8 @@ static CMFCPopupMenu::ANIMATION_TYPE GetAnimationType(BOOL bNoSystem = FALSE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bNoSystem*  
- 이 메서드는 전역 값을 확인 하는지 여부를 나타내는 부울 매개 변수입니다. 이 인스턴스에 대 한 애니메이션 스타일을 반환 하려면이 메서드를 원하는 경우에 FALSE를 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md)합니다.  
+*bNoSystem*<br/>
+[in] 이 메서드는 전역 값을 확인 하는지 여부를 나타내는 부울 매개 변수입니다. 이 인스턴스에 대 한 애니메이션 스타일을 반환 하려면이 메서드를 원하는 경우에 FALSE를 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md)합니다.  
   
 ### <a name="return-value"></a>반환 값  
  애니메이션 형식을 설명 하는 열거형된 값입니다.  
@@ -682,8 +682,8 @@ CMFCToolBarMenuButton* GetMenuItem(int iIndex) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iIndex*  
- 메뉴 항목의 0부터 시작 하는 인덱스입니다.  
+*iIndex*<br/>
+[in] 메뉴 항목의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메뉴 항목에 대 한 포인터입니다. 인덱스가 유효 하지 않은 경우 NULL입니다.  
@@ -849,11 +849,11 @@ int InsertItem(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *단추*  
- 추가할 메뉴 항목에 대 한 참조입니다.  
+*단추*<br/>
+[in] 추가할 메뉴 항목에 대 한 참조입니다.  
   
- [in] *iInsertAt*  
- 새 항목의 0부터 시작 하는 인덱스입니다. 하는 경우 *iInsertAt* 가-1 이면 항목이 메뉴의 끝에 추가 됩니다.  
+*iInsertAt*<br/>
+[in] 새 항목의 0부터 시작 하는 인덱스입니다. 하는 경우 *iInsertAt* 가-1 이면 항목이 메뉴의 끝에 추가 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  항목이 삽입 된 위치의 0부터 시작 하는 인덱스입니다. 메서드가 실패 하는 경우-1입니다.  
@@ -869,8 +869,8 @@ int InsertSeparator(int iInsertAt = -1);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iInsertAt*  
- 이 메서드는 구분 기호를 삽입 하는 위치는 위치의 0부터 시작 하는 인덱스입니다.  
+*iInsertAt*<br/>
+[in] 이 메서드는 구분 기호를 삽입 하는 위치는 위치의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  구분 기호를 삽입 한 위치의 0부터 시작 하는 인덱스입니다. 이 방법이 실패 하면-1입니다.  
@@ -1073,10 +1073,10 @@ virtual BOOL OnCmdMsg(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- [in] *nCode*  
- [in] *pExtra*  
- [in] *pHandlerInfo*  
+*nID*<br/>
+[in] [in] *nCode*  
+*pExtra*<br/>
+[in] [in] *pHandlerInfo*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -1137,8 +1137,8 @@ BOOL RemoveItem(int iIndex);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iIndex*  
- 삭제할 항목의 0부터 시작 하는 인덱스입니다.  
+*iIndex*<br/>
+[in] 삭제할 항목의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1163,8 +1163,8 @@ static void SetAnimationSpeed(UINT nElapse);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nElapse*  
- 새 애니메이션 속도 시간 (밀리초)입니다.  
+*nElapse*<br/>
+[in] 새 애니메이션 속도 시간 (밀리초)입니다.  
   
 ### <a name="remarks"></a>설명  
  애니메이션 속도 전역 값이 고 응용 프로그램에 팝업 메뉴를 모두에 영향을 줍니다. 이 값을 완료 하려면 팝업 메뉴에 대 한 애니메이션 하는 데 걸리는 시간을 지정 합니다.  
@@ -1179,8 +1179,8 @@ static void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *형식*  
- 애니메이션의 유형을 지정 하는 열거형된 데이터 형식입니다.  
+*type*<br/>
+[in] 애니메이션의 유형을 지정 하는 열거형된 데이터 형식입니다.  
   
 ### <a name="remarks"></a>설명  
  참조 [CMFCPopupMenu::GetAnimationType](#getanimationtype) 에 대 한 올바른 값 목록은 *형식*합니다.  
@@ -1205,8 +1205,8 @@ void SetDefaultItem(UINT uiCmd);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmd*  
- 새 기본 명령의 메뉴 명령 ID입니다.  
+*uiCmd*<br/>
+[in] 새 기본 명령의 메뉴 명령 ID입니다.  
   
 ### <a name="remarks"></a>설명  
  팝업 메뉴의 기본 명령에는 팝업 메뉴에 나타날 때 선택 하는 명령이입니다.  
@@ -1219,8 +1219,8 @@ static void SetForceMenuFocus(BOOL bValue);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bValue*  
- 메뉴 모음 팝업 메뉴가 표시 되 면 입력된 포커스를 강제 하기 위해 프레임 워크를 원하는 경우 TRUE입니다. 팝업 메뉴를 포커스를 유지 하려는 경우 FALSE입니다.  
+*bValue*<br/>
+[in] 메뉴 모음 팝업 메뉴가 표시 되 면 입력된 포커스를 강제 하기 위해 프레임 워크를 원하는 경우 TRUE입니다. 팝업 메뉴를 포커스를 유지 하려는 경우 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 응용 프로그램에서 모든 팝업 메뉴에 대 한 전역 플래그를 설정 합니다. 기본적으로이 기능은 사용 되지 않습니다.  
@@ -1233,8 +1233,8 @@ static void SetForceShadow(BOOL bValue);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bValue*  
- FALSE이 고, 그렇지 메뉴 그림자를 그리기 위해 프레임 워크를 원하는 경우 TRUE입니다.  
+*bValue*<br/>
+[in] FALSE이 고, 그렇지 메뉴 그림자를 그리기 위해 프레임 워크를 원하는 경우 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드를 호출 하는 경우 응용 프로그램에서 전역 플래그를 설정 합니다. 이 플래그는 응용 프로그램에서 모든 팝업 메뉴를 영향을 줍니다.  
@@ -1247,8 +1247,8 @@ void SetMaxWidth(int iMaxWidth);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iMaxWidth*  
- 픽셀에서 팝업 메뉴에 대 한 최대 너비입니다.  
+*iMaxWidth*<br/>
+[in] 픽셀에서 팝업 메뉴에 대 한 최대 너비입니다.  
   
 ### <a name="remarks"></a>설명  
  메뉴 명령과 사용 하 여 연결 된 텍스트는 최대 너비를 넘으면 잘립니다 하 고 맞지 않는 파트 3 개의 점으로 대체 됩니다.  
@@ -1306,8 +1306,8 @@ void SetRightAlign(BOOL bRightAlign = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bRightAlign*  
- 메뉴 맞춤을 나타내는 부울입니다. TRUE 이면 오른쪽 맞춤, FALSE 이면 왼쪽된 맞춤입니다.  
+*bRightAlign*<br/>
+[in] 메뉴 맞춤을 나타내는 부울입니다. TRUE 이면 오른쪽 맞춤, FALSE 이면 왼쪽된 맞춤입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로 모든 팝업 메뉴 왼쪽 맞춤 됩니다.  
@@ -1320,8 +1320,8 @@ static void SetSendMenuSelectMsg(BOOL bSet = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bSet*  
- 팝업 메뉴에 알립니다. 해당 부모 프레임 FALSE 그렇지 않은 경우 TRUE입니다.  
+*bSet*<br/>
+[in] 팝업 메뉴에 알립니다. 해당 부모 프레임 FALSE 그렇지 않은 경우 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
  응용 프로그램에서 모든 팝업 메뉴에 대 한 전역 옵션입니다. 를 사용 하는 경우 팝업 메뉴는 메시지를 보냅니다 WM_MENUSELECT 부모 프레임에는 사용자가 명령을 선택할 때.  
@@ -1353,8 +1353,8 @@ static void UpdateAllShadows(LPRECT lprectScreen = NULL);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lprectScreen*  
- 화면 좌표에서를 업데이트 하려면 영역을 지정 하는 사각형입니다.  
+*lprectScreen*<br/>
+[in] 화면 좌표에서를 업데이트 하려면 영역을 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 팝업 메뉴 애니메이션된 컨트롤 또는 동적 콘텐츠가 있는 다른 windows를 통해 표시 되는 경우에 유용 합니다.  
@@ -1367,8 +1367,8 @@ void UpdateShadow(LPRECT lprectScreen = NULL);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lprectScreen*  
- 사각형을 화면 좌표로 업데이트 영역의 경계를 지정 하는 합니다.  
+*lprectScreen*<br/>
+[in] 사각형을 화면 좌표로 업데이트 영역의 경계를 지정 하는 합니다.  
   
 ### <a name="remarks"></a>설명  
  그림자가 팝업 메뉴 애니메이션된 이미지와 중복 될 때이 메서드를 호출 합니다.  

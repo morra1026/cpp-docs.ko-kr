@@ -16,26 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8445e35b929dc3fa2d9d6507f0b6469df26130db
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 081e63c83909319164a2903d8277a0b26a1e6901
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197847"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059955"
 ---
 # <a name="compiler-error-c2433"></a>컴파일러 오류 C2433
-'identifier': 'modifier' 데이터 선언에 사용할 수 없습니다  
-  
- `friend`, `virtual`, 및 `inline` 데이터 선언에 대 한 한정자를 사용할 수 없습니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C2433 오류가 발생 합니다.  
-  
-```  
-// C2433.cpp  
-class C{};  
-  
-int main() {  
-   inline C c;   // C2433  
-}  
+
+'identifier': 'modifier' 데이터 선언에서 허용 되지 않습니다
+
+합니다 `friend`, `virtual`, 및 `inline` 데이터 선언에 대 한 한정자를 사용할 수 없습니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C2433 오류가 발생 합니다.
+
+```
+// C2433.cpp
+class C{};
+
+int main() {
+   inline C c;   // C2433
+}
 ```

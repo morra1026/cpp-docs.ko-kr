@@ -1,5 +1,5 @@
 ---
-title: -DIRECTIVES | Microsoft Docs
+title: 지시문 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,22 +18,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 455e1dba4c2ef4e77ee0542617f9dff707a9487c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f7375db4929d48be443aba97f0ea9e47ff355419
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32369918"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707709"
 ---
 # <a name="directives"></a>/DIRECTIVES
-```  
-/DIRECTIVES  
-```  
-  
-## <a name="remarks"></a>설명  
- 이 옵션에는 이미지의 컴파일러에서 생성 된.drective 섹션을 덤프합니다.  
-  
- 만 [/HEADERS](../../build/reference/headers.md) DUMPBIN 옵션은으로 생성 된 파일에서 사용 하기 위해 사용할 수는 [/GL](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [DUMPBIN 옵션](../../build/reference/dumpbin-options.md)
+
+```
+/DIRECTIVES
+```
+
+## <a name="remarks"></a>설명
+
+이 옵션.drective 컴파일러에서 생성 된 부분 이미지를 덤프합니다.
+
+만 [/HEADERS](../../build/reference/headers.md) DUMPBIN 옵션을 사용 하 여 생성 된 파일에 사용할 수 있습니다 합니다 [/GL](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[DUMPBIN 옵션](../../build/reference/dumpbin-options.md)

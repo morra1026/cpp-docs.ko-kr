@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d999056d718d9c7aad93d08a99895caebbef539
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3f2377f48eb8102771705f2dedc67a7a15f6fa95
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229815"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030993"
 ---
 # <a name="compiler-error-c2592"></a>컴파일러 오류 C2592
-'class': 'base_class_2'는 'base_class_1'에서 상속되며 다시 지정할 수 없습니다.  
-  
- 다른 기본 클래스에서 상속되지 않는 기본 클래스만 지정할 수 있습니다. 이 경우에는 `base_class_1`이 이미 `base_class_2`를 상속하기 때문에 `class`의 사양에 `base_class_1`만 필요합니다.
+
+'class': 'base_class_2'는 'base_class_1'에서 상속되며 다시 지정할 수 없습니다.
+
+다른 기본 클래스에서 상속되지 않는 기본 클래스만 지정할 수 있습니다. 이 경우에는 `base_class_1`이 이미 `base_class_2`를 상속하기 때문에 `class`의 사양에 `base_class_1`만 필요합니다.

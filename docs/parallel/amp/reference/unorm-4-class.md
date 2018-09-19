@@ -278,15 +278,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e3186200fb01e13fcf3d79d162439a900abf6f4a
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 5c57bbb2e54eb86333ee7e80ad144a486c4c1fba
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33694617"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027663"
 ---
 # <a name="unorm4-class"></a>unorm_4 클래스
-네 개의 서명 되지 않은 일반 숫자의 short 벡터를 나타냅니다.  
+네 개의 부호 없는 일반 숫자의 짧은 벡터를 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -306,7 +306,7 @@ class unorm_4;
   
 |이름|설명|  
 |----------|-----------------|  
-|[unorm_4 생성자](#ctor)|오버로드됨. 기본 생성자, 0 인 모든 요소를 초기화 합니다.|  
+|[unorm_4 생성자](#ctor)|오버로드됨. 기본 생성자가 0 인 모든 요소를 초기화 합니다.|  
   
 ### <a name="public-methods"></a>Public 메서드  
   
@@ -611,7 +611,7 @@ class unorm_4;
   
 ##  <a name="ctor"></a> unorm_4 
 
- 기본 생성자, 0 인 모든 요소를 초기화 합니다.  
+ 기본 생성자가 0 인 모든 요소를 초기화 합니다.  
   
 ```  
 unorm_4() restrict(amp,
@@ -675,23 +675,23 @@ explicit inline unorm_4(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_V0`  
- 값 초기화 요소 0입니다.  
+*_V0*<br/>
+요소 0 초기화 값입니다.  
   
- `_V1`  
- 1 요소를 초기화 값입니다.  
+*_V1*<br/>
+1 요소를 초기화할 값입니다.  
   
- `_V2`  
- 값 2 요소를 초기화 하는입니다.  
+*_V2*<br/>
+2 요소를 초기화할 값입니다.  
   
- `_V3`  
- 3 요소를 초기화 값입니다.  
+*_V3*<br/>
+3 요소를 초기화할 값입니다.  
   
- `_V`  
- 초기화에 대 한 값입니다.  
+*(_V)*<br/>
+초기화에 대 한 값입니다.  
   
- `_Other`  
- 초기화 하는 데 사용 되는 개체입니다.  
+*_Other*<br/>
+초기화 하는 데 사용 하는 개체입니다.  
   
 ##  <a name="unorm_4__size"></a> 크기 
 

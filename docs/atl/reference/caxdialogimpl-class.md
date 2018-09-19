@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 965aa7256fadd00d2ef435b6df64467460322991
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a22b04bd0a362824e20621eaa7f66cafd0e55cf5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753060"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024505"
 ---
 # <a name="caxdialogimpl-class"></a>CAxDialogImpl 클래스
 
@@ -44,16 +44,16 @@ ms.locfileid: "43753060"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T, class TBase = CWindow>  
+template <class T, class TBase = CWindow>
 class ATL_NO_VTABLE CAxDialogImpl : public CDialogImplBaseT<TBase>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `CAxDialogImpl`합니다.
 
-*TBase*  
+*TBase*<br/>
 에 대 한 기본 창 클래스 `CDialogImplBaseT`합니다.
 
 ## <a name="members"></a>멤버
@@ -121,7 +121,7 @@ HRESULT AdviseSinkMap(bool bAdvise);
 
 ### <a name="parameters"></a>매개 변수
 
-*bAdvise*  
+*bAdvise*<br/>
 알림을 받을 수 있습니다; 싱크 항목이 모든 경우 true로 설정 모든 경우에 false 싱크 항목이를 권장 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -139,13 +139,13 @@ HWND Create(HWND hWndParent, RECT&, LPARAM dwInitParam = NULL);
 
 ### <a name="parameters"></a>매개 변수
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] 소유자 창에 대 한 핸들입니다.
 
-*dwInitParam*  
+*dwInitParam*<br/>
 [in] 대화 상자에 전달할 값을 지정 합니다 *lParam* WM_INITDIALOG 메시지의 매개 변수입니다.
 
-*RECT &AMP;*  
+*RECT &AMP;*<br/>
 이 매개 변수는 사용되지 않습니다. 이 매개 변수는에 의해 전달 된 `CComControl`합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -180,16 +180,16 @@ BOOL DestroyWindow();
 
 ```
 INT_PTR DoModal(
-    HWND hWndParent = ::GetActiveWindow(), 
+    HWND hWndParent = ::GetActiveWindow(),
     LPARAM dwInitParam = NULL);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] 소유자 창에 대 한 핸들입니다. 기본값은의 반환 값을 [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 함수입니다.
 
-*dwInitParam*  
+*dwInitParam*<br/>
 [in] 대화 상자에 전달할 값을 지정 합니다 *lParam* WM_INITDIALOG 메시지의 매개 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -212,7 +212,7 @@ BOOL EndDialog(int nRetCode);
 
 ### <a name="parameters"></a>매개 변수
 
-*nRetCode*  
+*nRetCode*<br/>
 [in] 값을 반환할 [DoModal](#domodal)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -264,7 +264,7 @@ BOOL IsDialogMessage(LPMSG pMsg);
 
 ### <a name="parameters"></a>매개 변수
 
-*pMsg*  
+*pMsg*<br/>
 에 대 한 포인터를 [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958) 검사할 메시지를 포함 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -285,5 +285,5 @@ bool m_bModal;
 
 ## <a name="see-also"></a>참고 항목
 
-[CDialogImpl 클래스](../../atl/reference/cdialogimpl-class.md)   
+[CDialogImpl 클래스](../../atl/reference/cdialogimpl-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

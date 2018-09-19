@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa2d0fc361f1cf5ba5355ca11ce86279ebd3575f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8e4dae59f686a1d2fe9f80a4f3f4c47ea6b7ea2d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195635"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065480"
 ---
 # <a name="compiler-error-c2380"></a>컴파일러 오류 C2380
-형식 앞에 'identifier' (생성자 반환 형식 또는 현재 클래스 이름을 잘못 재정의 했습니다.)  
-  
- 생성자는 값을 반환 하거나 클래스 이름을 재정의 합니다.  
-  
- 다음 샘플에서는 C2326을 생성합니다.  
-  
-```  
-// C2380.cpp  
-// compile with: /c  
-class C {  
-public:  
-   int C();   // C2380, specifies an int return  
-   int C;   // C2380, redefinition of i  
-   C();   // OK  
-};  
+
+형식 앞에 'identifier' (반환 형식 또는 클래스 이름에 현재 잘못 된 재정의 사용 하 여 생성자?)
+
+생성자 값을 반환 하거나 클래스 이름을 재정의 합니다.
+
+다음 샘플에서는 C2326을 생성합니다.
+
+```
+// C2380.cpp
+// compile with: /c
+class C {
+public:
+   int C();   // C2380, specifies an int return
+   int C;   // C2380, redefinition of i
+   C();   // OK
+};
 ```

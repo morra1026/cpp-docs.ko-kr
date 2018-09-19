@@ -29,44 +29,46 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a9897be9bbcae0a03ef67996bda6f3ffbe894b8f
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 41d1692fc69ba4ff29e091ca736cae60b10a402a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680454"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054079"
 ---
 # <a name="simplifying-data-access-with-database-attributes"></a>데이터베이스 특성을 사용하여 데이터 액세스 단순화
+
 이 항목에서는 데이터베이스 작업을 간소화 하기 위해 데이터베이스 특성을 사용 하는 방법을 보여 줍니다.  
   
- 데이터베이스에서 정보에 액세스 하는 기본 방법은 데이터베이스에서 명령 (또는 테이블) 클래스 및 특정 테이블에 대 한 사용자 레코드 클래스를 만드는 경우 데이터베이스 특성을 이전에 수행 해야 하 고 템플릿 선언의 일부를 간소화 합니다.  
+데이터베이스에서 정보에 액세스 하는 기본 방법은 데이터베이스에서 명령 (또는 테이블) 클래스 및 특정 테이블에 대 한 사용자 레코드 클래스를 만드는 경우 데이터베이스 특성을 이전에 수행 해야 하 고 템플릿 선언의 일부를 간소화 합니다.  
   
- 데이터베이스 특성의 사용을 보여 주기 위해 다음 섹션에서는 두 개의 동일한 테이블 및 사용자 레코드 클래스 선언이 표시 합니다: 첫 번째 특성을 사용 하 고 두 번째 OLE DB 템플릿을 사용 합니다. 이러한 선언 코드는 일반적으로 authors.h 예를 들어, 테이블 또는 명령 개체에 대 한 헤더 파일에 들어 있습니다.  
+데이터베이스 특성의 사용을 보여 주기 위해 다음 섹션에서는 두 개의 동일한 테이블 및 사용자 레코드 클래스 선언이 표시 합니다: 첫 번째 특성을 사용 하 고 두 번째 OLE DB 템플릿을 사용 합니다. 이러한 선언 코드는 일반적으로 authors.h 예를 들어, 테이블 또는 명령 개체에 대 한 헤더 파일에 들어 있습니다.  
   
- 두 파일을 비교 하 여 특성을 사용 하는 훨씬 간단 하다 볼 수 있습니다. 차이점 중:  
+두 파일을 비교 하 여 특성을 사용 하는 훨씬 간단 하다 볼 수 있습니다. 차이점 중:  
   
--   특성을 사용 하기만 하면 하나의 클래스를 선언 합니다. `CAuthors`템플릿을 사용 하 여 두 선언 해야 하는 동안,: `CAuthorsNoAttrAccessor` 및 `CAuthorsNoAttr`.  
+- 특성을 사용 하기만 하면 하나의 클래스를 선언 합니다. `CAuthors`템플릿을 사용 하 여 두 선언 해야 하는 동안,: `CAuthorsNoAttrAccessor` 및 `CAuthorsNoAttr`.  
   
--   합니다 `db_source` 특성이 지정 된 버전에서 호출 하는 것은 `OpenDataSource()` 템플릿 선언에서 호출 합니다.  
+- 합니다 `db_source` 특성이 지정 된 버전에서 호출 하는 것은 `OpenDataSource()` 템플릿 선언에서 호출 합니다.  
   
--   `db_table` 호출 특성이 지정 된 버전에서 다음 템플릿 선언 하는 것:  
+- `db_table` 호출 특성이 지정 된 버전에서 다음 템플릿 선언 하는 것:  
   
     ```  
     class CAuthorsNoAttr : public CTable<CAccessor<CAuthorsNoAttrAccessor>>  
     ```  
   
--   합니다 `db_column` 특성이 지정 된 버전에서의 호출은 열 지도에 해당 하는 (참조 `BEGIN_COLUMN_MAP ... END_COLUMN_MAP`) 템플릿 선언의 합니다.  
+- 합니다 `db_column` 특성이 지정 된 버전에서의 호출은 열 지도에 해당 하는 (참조 `BEGIN_COLUMN_MAP ... END_COLUMN_MAP`) 템플릿 선언의 합니다.  
   
- 사용자 레코드 클래스 선언을 삽입 합니다. 사용자 레코드 클래스는 `CAuthorsNoAttrAccessor` 템플릿 선언의 합니다. 테이블 클래스 이면 `CAuthors`에 삽입된 사용자 레코드 클래스 라고 `CAuthorsAccessor`, 삽입 된 코드에서 선언 에서만 볼 수 있습니다. 자세한 내용은 "특성 삽입 사용자 레코드 클래스"를 참조 하세요 [사용자 레코드](../../data/oledb/user-records.md)합니다.  
+사용자 레코드 클래스 선언을 삽입 합니다. 사용자 레코드 클래스는 `CAuthorsNoAttrAccessor` 템플릿 선언의 합니다. 테이블 클래스 이면 `CAuthors`에 삽입된 사용자 레코드 클래스 라고 `CAuthorsAccessor`, 삽입 된 코드에서 선언 에서만 볼 수 있습니다. 자세한 내용은 "특성 삽입 사용자 레코드 클래스"를 참조 하세요 [사용자 레코드](../../data/oledb/user-records.md)합니다.  
   
- 특성 사용 및 템플릿 기반 코드에서 사용 하 여 행 집합 속성 설정 해야 합니다 `CDBPropSet::AddProperty`합니다.  
+특성 사용 및 템플릿 기반 코드에서 사용 하 여 행 집합 속성 설정 해야 합니다 `CDBPropSet::AddProperty`합니다.  
   
- 이 항목에서 설명 하는 특성에 대 한 정보를 참조 하세요 [OLE DB 소비자 특성](../../windows/ole-db-consumer-attributes.md)합니다.  
+이 항목에서 설명 하는 특성에 대 한 정보를 참조 하세요 [OLE DB 소비자 특성](../../windows/ole-db-consumer-attributes.md)합니다.  
   
 ## <a name="table-and-accessor-declaration-using-attributes"></a>테이블 및 특성을 사용 하 여 접근자 선언  
- 다음 코드 호출 `db_source` 및 `db_table` 의 테이블 클래스입니다. `db_source` 데이터 원본 및 사용 하는 연결을 지정 합니다. `db_table` 테이블 클래스 선언에 적절 한 템플릿 코드를 삽입 합니다. `db_column` 열 지도 지정 하 고 접근자 선언의 삽입 합니다. Atl이 지원 하는 프로젝트에서 OLE DB 소비자 특성을 사용할 수 있습니다.  
+
+다음 코드 호출 `db_source` 및 `db_table` 의 테이블 클래스입니다. `db_source` 데이터 원본 및 사용 하는 연결을 지정 합니다. `db_table` 테이블 클래스 선언에 적절 한 템플릿 코드를 삽입 합니다. `db_column` 열 지도 지정 하 고 접근자 선언의 삽입 합니다. Atl이 지원 하는 프로젝트에서 OLE DB 소비자 특성을 사용할 수 있습니다.  
   
- 테이블 및 접근자 선언 특성을 사용 하는 다음과 같습니다.  
+테이블 및 접근자 선언 특성을 사용 하는 다음과 같습니다.  
   
 ```cpp
 //////////////////////////////////////////////////////////////////////  
@@ -102,7 +104,8 @@ public:
 ```  
   
 ## <a name="table-and-accessor-declaration-using-templates"></a>테이블 및 템플릿을 사용 하 여 접근자 선언  
- 템플릿을 사용 하 여 테이블 및 접근자 선언을 다음과 같습니다.  
+
+템플릿을 사용 하 여 테이블 및 접근자 선언을 다음과 같습니다.  
   
 ```cpp
 //////////////////////////////////////////////////////////////////////  
@@ -207,4 +210,5 @@ HRESULT hr = Open(m_session, "Authors", pPropSet);
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [OLE DB 소비자 특성](../../windows/ole-db-consumer-attributes.md)   
+
+[OLE DB 소비자 특성](../../windows/ole-db-consumer-attributes.md)   

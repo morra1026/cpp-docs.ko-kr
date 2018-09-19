@@ -17,35 +17,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: fffc1ceef1f67dadde61190ccb12ce1cd5b7ba9b
-ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
+ms.openlocfilehash: cbf1c696a66024ec1d3b3022b1e3a03445e9b6fe
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42571738"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043302"
 ---
 # <a name="creating-an-updatable-provider"></a>업데이트 가능 공급자 만들기
 
 업데이트할 수 있는 공급자 또는 공급자를 업데이트할 수 있는 visual c + + 지원 (쓸) 데이터 저장소입니다. 이 항목에서는 OLE DB 템플릿을 사용 하 여 업데이트할 수 있는 공급자를 만드는 방법을 설명 합니다.  
   
- 이 항목에서는 작업 공급자를 사용 하 여 시작 한다고 가정 합니다. 업데이트 가능 공급자 만들기에 다음과 같은 두 단계가 있습니다. 어떻게 공급자는 변경 하는 데이터 저장소를 먼저 결정 해야 합니다. 특히, 변경 내용을 즉시 수행 해야 하는 여부를 update 명령이 실행 될 때까지 지연 합니다. 섹션 "[공급자 업데이트할 수 있도록](#vchowmakingprovidersupdatable)" 변경 내용과 공급자 코드에서 작업을 수행 하는 데 필요한 설정을 설명 합니다.  
+이 항목에서는 작업 공급자를 사용 하 여 시작 한다고 가정 합니다. 업데이트 가능 공급자 만들기에 다음과 같은 두 단계가 있습니다. 어떻게 공급자는 변경 하는 데이터 저장소를 먼저 결정 해야 합니다. 특히, 변경 내용을 즉시 수행 해야 하는 여부를 update 명령이 실행 될 때까지 지연 합니다. 섹션 "[공급자 업데이트할 수 있도록](#vchowmakingprovidersupdatable)" 변경 내용과 공급자 코드에서 작업을 수행 하는 데 필요한 설정을 설명 합니다.  
   
- 그런 다음 공급자 소비자가 요청 하는 아무 것도 지원 하기 위한 모든 기능이 포함 되어 있는지 확인 해야 합니다. 소비자를 데이터 저장소를 업데이트 하려는 경우 공급자는 데이터 저장소의 데이터를 유지 하는 코드를 포함 해야 합니다. 예를 들어, 데이터 원본에 따라 이러한 작업을 수행 하는 C 런타임 라이브러리 또는 MFC를 사용할 수 있습니다. 섹션 "[데이터 원본에 작성](#vchowwritingtothedatasource)" 데이터 원본에 작성, NULL이 고 기본 값을 처리 및 열 플래그를 설정 하는 방법을 설명 합니다.  
+그런 다음 공급자 소비자가 요청 하는 아무 것도 지원 하기 위한 모든 기능이 포함 되어 있는지 확인 해야 합니다. 소비자를 데이터 저장소를 업데이트 하려는 경우 공급자는 데이터 저장소의 데이터를 유지 하는 코드를 포함 해야 합니다. 예를 들어, 데이터 원본에 따라 이러한 작업을 수행 하는 C 런타임 라이브러리 또는 MFC를 사용할 수 있습니다. 섹션 "[데이터 원본에 작성](#vchowwritingtothedatasource)" 데이터 원본에 작성, NULL이 고 기본 값을 처리 및 열 플래그를 설정 하는 방법을 설명 합니다.  
   
 > [!NOTE]
 >  [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) 은 업데이트할 수 있는 공급자의 예입니다. UpdatePV는 MyProv로 업데이트할 수 있는 지원과 동일합니다.  
   
 ##  <a name="vchowmakingprovidersupdatable"></a> 메서드를 업데이트 가능 공급자 만들기  
 
- 핵심 공급자를 업데이트할 수 있는 공급자를 데이터 저장소 및 해당 작업을 수행 하는 공급자를 원하는 방식에 대해 수행 하려는 작업 파악 합니다. 특히 중요 한 문제는 즉시 또는 지연 된 데이터 저장소에 대 한 업데이트 되는지 (일괄 처리) update 명령이 실행 될 때까지 합니다.  
+핵심 공급자를 업데이트할 수 있는 공급자를 데이터 저장소 및 해당 작업을 수행 하는 공급자를 원하는 방식에 대해 수행 하려는 작업 파악 합니다. 특히 중요 한 문제는 즉시 또는 지연 된 데이터 저장소에 대 한 업데이트 되는지 (일괄 처리) update 명령이 실행 될 때까지 합니다.  
   
- 상속 여부를 먼저 결정 해야 합니다 `IRowsetChangeImpl` 또는 `IRowsetUpdateImpl` 행 집합 클래스에서. 이 중에서 어떤에 따라 구현에 세 가지 방법의 기능을 영향을 받게 됩니다. `SetData`, `InsertRows`, 및 `DeleteRows`합니다.  
+상속 여부를 먼저 결정 해야 합니다 `IRowsetChangeImpl` 또는 `IRowsetUpdateImpl` 행 집합 클래스에서. 이 중에서 어떤에 따라 구현에 세 가지 방법의 기능을 영향을 받게 됩니다. `SetData`, `InsertRows`, 및 `DeleteRows`합니다.  
   
 - 상속 하는 경우 [IRowsetChangeImpl](../../data/oledb/irowsetchangeimpl-class.md), 데이터 저장소 변경 즉시 이러한 세 가지 메서드를 호출 합니다.  
   
 - 상속 하는 경우 [IRowsetUpdateImpl](../../data/oledb/irowsetupdateimpl-class.md), 메서드를 호출 하기 전에 데이터 저장소에 변경 내용을 연기 `Update`합니다 `GetOriginalData`, 또는 `Undo`합니다. 몇 가지 변경 사항을 포함 하는 업데이트를 일괄 처리 모드 (변경 내용 일괄 처리 상당한 메모리 오버 헤드를 추가할 수 있음을 참고)에서 수행 됩니다.  
   
- 사실은 `IRowsetUpdateImpl` 에서 파생 `IRowsetChangeImpl`합니다. 따라서 `IRowsetUpdateImpl` 제공 기능 뿐만 아니라 일괄 처리 기능을 변경 합니다.  
+사실은 `IRowsetUpdateImpl` 에서 파생 `IRowsetChangeImpl`합니다. 따라서 `IRowsetUpdateImpl` 제공 기능 뿐만 아니라 일괄 처리 기능을 변경 합니다.  
   
 #### <a name="to-support-updatability-in-your-provider"></a>업데이트를 지원 하려면 공급자에서  
   
@@ -72,21 +72,21 @@ ms.locfileid: "42571738"
     > [!NOTE]
     >  제거 해야 합니다 `IRowsetChangeImpl` 상속 체인에 줄. 앞에서 언급 한 지시문이 한 가지 예외에 대 한 코드를 포함 해야 `IRowsetChangeImpl`합니다.  
   
-2.  다음을 고 COM 맵에 추가 합니다 (`BEGIN_COM_MAP ... END_COM_MAP`):  
+1. 다음을 고 COM 맵에 추가 합니다 (`BEGIN_COM_MAP ... END_COM_MAP`):  
   
     |구현 하는 경우|COM 맵에 추가|  
     |----------------------|--------------------|  
     |`IRowsetChangeImpl`|`COM_INTERFACE_ENTRY(IRowsetChange)`|  
     |`IRowsetUpdateImpl`|`COM_INTERFACE_ENTRY(IRowsetChange)COM_INTERFACE_ENTRY(IRowsetUpdate)`|  
   
-3.  명령에 다음 속성 집합 맵에 추가 합니다 (`BEGIN_PROPSET_MAP ... END_PROPSET_MAP`):  
+1. 명령에 다음 속성 집합 맵에 추가 합니다 (`BEGIN_PROPSET_MAP ... END_PROPSET_MAP`):  
   
     |구현 하는 경우|속성 집합 구조에 추가|  
     |----------------------|-----------------------------|  
     |`IRowsetChangeImpl`|`PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)`|  
     |`IRowsetUpdateImpl`|`PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)PROPERTY_INFO_ENTRY_VALUE(IRowsetUpdate, VARIANT_FALSE)`|  
   
-4.  사용자 속성 집합 구조의 포함 해야 다음 설정 중 모든 아래 나타나는:  
+1. 사용자 속성 집합 구조의 포함 해야 다음 설정 중 모든 아래 나타나는:  
   
     ```cpp  
     PROPERTY_INFO_ENTRY_VALUE(UPDATABILITY, DBPROPVAL_UP_CHANGE |   
@@ -145,7 +145,8 @@ ms.locfileid: "42571738"
         >  알림을 지 원하는 경우 해야 할 수 있습니다 다른 속성 에서도; 섹션을 참조 `IRowsetNotifyCP` 이 목록에 대 한 합니다.  
   
 ##  <a name="vchowwritingtothedatasource"></a> 데이터 원본에 쓰기  
- 데이터 원본에서 읽기 호출을 `Execute` 함수입니다. 데이터 원본에 쓸 호출을 `FlushData` 함수입니다. (일반적인 의미에서 플러시 테이블 또는 인덱스를 디스크에 수정 내용을 저장 하는 수단입니다.)  
+
+데이터 원본에서 읽기 호출을 `Execute` 함수입니다. 데이터 원본에 쓸 호출을 `FlushData` 함수입니다. (일반적인 의미에서 플러시 테이블 또는 인덱스를 디스크에 수정 내용을 저장 하는 수단입니다.)  
 
 ```cpp
 
@@ -158,6 +159,7 @@ FlushData(HROW, HACCESSOR);
 `FlushData` 메서드는 원래 저장 된 형식으로 데이터를 씁니다. 이 함수를 재정의 하지 않는 경우에 공급자는 제대로 작동 하지만 변경 내용을 데이터 저장소로 플러시되지 않습니다.
 
 ### <a name="when-to-flush"></a>플러시 하는 경우
+
 공급자 템플릿 데이터를 데이터 저장소에 쓸 때마다 FlushData 호출 이 일반적으로 (항상 그렇지는 않지만) 결과로 발생 하는 다음 함수 호출:
 
 - `IRowsetChange::DeleteRows`
@@ -312,6 +314,7 @@ HRESULT FlushData(HROW, HACCESSOR)
 UpdatePV 예제의 코드를 확인 공급자를 NULL 데이터를 처리할 수 있는 방법을 보여 줍니다. UpdatePV, 공급자 문자열 "NULL"을 작성 하 여 NULL 데이터를 데이터 저장소에 저장 합니다. 데이터 저장소에서 NULL 데이터를 읽을 때 해당 문자열을 확인 한 다음 NULL 문자열을 만들어 버퍼를 비웁니다. 역시 재정의 `IRowsetImpl::GetDBStatus` 데이터 값이 비어 있는 경우에 DBSTATUS_S_ISNULL을 반환 합니다.
 
 ### <a name="marking-nullable-columns"></a>Null 허용 열 표시
+
 또한 스키마 행 집합을 구현 하는 경우 (참조 `IDBSchemaRowsetImpl`), 열이 null을 허용함 구현 (일반적으로 공급자에서으로 표시 CxxxSchemaColSchemaRowset) DBSCHEMA_COLUMNS 행 집합에서 지정 해야 합니다.
 
 모든 null 허용 열 포함 버전 DBCOLUMNFLAGS_ISNULLABLE 값을 지정 해야 합니다 `GetColumnInfo`합니다.
@@ -441,4 +444,5 @@ m_rgRowData.Add(trData[0]);
 이 코드 지정 무엇 보다도 열 지원 하 고 기본값은 0으로 쓰기를 가능 하 고 열의 모든 데이터가 동일한 길이 갖도록 하 합니다. 가변 길이 열에 데이터를 원하는 경우이 플래그를 설정 하지 것입니다.
 
 ## <a name="see-also"></a>참고 항목
+
 [OLE DB 공급자 만들기](creating-an-ole-db-provider.md)

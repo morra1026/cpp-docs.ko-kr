@@ -30,12 +30,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7f52e0e62a831a77a7a00dc50aeecac45cd0fe9
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 2424ce23c0a376156bbb78869a2e33e501958e73
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960556"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719136"
 ---
 # <a name="strstreambuf-class"></a>strstreambuf 클래스
 
@@ -103,8 +103,8 @@ void freeze(bool _Freezeit = true);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Freezeit*  
- A **bool** 스트림을 고정할지를 나타내는입니다.
+*_Freezeit*<br/>
+A **bool** 스트림을 고정할지를 나타내는입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -115,7 +115,7 @@ void freeze(bool _Freezeit = true);
 > [!NOTE]
 > 고정된 버퍼는 `strstreambuf` 소멸 중에 해제되지 않습니다. 메모리 누수를 방지하려면 버퍼를 해제하기 전에 고정을 취소해야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // strstreambuf_freeze.cpp
@@ -191,8 +191,8 @@ virtual int overflow(int _Meta = EOF);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Meta*  
- 버퍼에 삽입할 문자 또는 `EOF`입니다.
+*_Meta*<br/>
+버퍼에 삽입할 문자 또는 `EOF`입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -216,8 +216,8 @@ virtual int pbackfail(int _Meta = EOF);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Meta*  
- 버퍼에 삽입할 문자 또는 `EOF`입니다.
+*_Meta*<br/>
+버퍼에 삽입할 문자 또는 `EOF`입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -249,7 +249,7 @@ streamsize pcount() const;
 
 구체적으로 [pptr](../standard-library/basic-streambuf-class.md#pptr)이 null 포인터이면 함수는 0을 반환합니다. 그렇지 `pptr`  -  [pbase](../standard-library/basic-streambuf-class.md#pbase)합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // strstreambuf_pcount.cpp
@@ -280,14 +280,14 @@ virtual streampos seekoff(streamoff _Off,
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off*  
- 위치를 기준으로 찾을 *_Way*합니다.
+*_Off*<br/>
+위치를 기준으로 찾을 *_Way*합니다.
 
-*_Way*  
- 오프셋 작업의 시작 지점입니다. 가능한 값은 [seekdir](../standard-library/ios-base-class.md#seekdir)을 참조하세요.
+*_Way*<br/>
+오프셋 작업의 시작 지점입니다. 가능한 값은 [seekdir](../standard-library/ios-base-class.md#seekdir)을 참조하세요.
 
-*_Which*  
- 포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
+*_Which*<br/>
+포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -319,11 +319,11 @@ virtual streampos seekpos(streampos _Sp, ios_base::openmode _Which = ios_base::i
 
 ### <a name="parameters"></a>매개 변수
 
-*_Sp*  
- 찾을 위치입니다.
+*_Sp*<br/>
+찾을 위치입니다.
 
-*_Which*  
- 포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
+*_Which*<br/>
+포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -351,7 +351,7 @@ char *str();
 
 종료 null 요소는 명시적으로 삽입한 경우가 아니면 없습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 **str**을 사용하는 샘플은 [strstreambuf::freeze](#freeze)를 참조하세요.
 
@@ -389,20 +389,20 @@ strstreambuf(const unsigned char* _Getptr,
 
 ### <a name="parameters"></a>매개 변수
 
-*_Allocfunc*  
- 버퍼 메모리를 할당하는 데 사용되는 함수입니다.
+*_Allocfunc*<br/>
+버퍼 메모리를 할당하는 데 사용되는 함수입니다.
 
-*count*  
- 가리키는 버퍼의 길이 결정 *_Getptr*합니다. 하는 경우 *_Getptr* 는 인수가 아닙니다. (첫 번째 생성자 형식), 제안된 된 할당 크기의 버퍼에 대 한 합니다.
+*count*<br/>
+가리키는 버퍼의 길이 결정 *_Getptr*합니다. 하는 경우 *_Getptr* 는 인수가 아닙니다. (첫 번째 생성자 형식), 제안된 된 할당 크기의 버퍼에 대 한 합니다.
 
-*_Freefunc*  
- 버퍼 메모리를 확보하는 데 사용되는 함수입니다.
+*_Freefunc*<br/>
+버퍼 메모리를 확보하는 데 사용되는 함수입니다.
 
-*_Getptr*  
- 입력에 사용되는 버퍼입니다.
+*_Getptr*<br/>
+입력에 사용되는 버퍼입니다.
 
-*_Putptr*  
- 출력에 사용되는 버퍼입니다.
+*_Putptr*<br/>
+출력에 사용되는 버퍼입니다.
 
 ### <a name="remarks"></a>설명
 

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37564920e2ffb4c2526631cd04864db1971a6f02
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 4a2434257290c673ca4e18be2e5ec70877e72e67
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757213"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039090"
 ---
 # <a name="messagehandler"></a>MessageHandler
 
@@ -39,16 +39,16 @@ LRESULT MessageHandler(
 
 ### <a name="parameters"></a>매개 변수
 
-*uMsg*  
+*uMsg*<br/>
 메시지를 지정합니다.
 
-*wParam*  
+*wParam*<br/>
 추가 메시지 관련 정보입니다.
 
-*lParam*  
+*lParam*<br/>
 추가 메시지 관련 정보입니다.
 
-*bHandled*  
+*bHandled*<br/>
 메시지 맵 집합 *bHandled* 하기 전에 true `MessageHandler` 라고 합니다. 경우 `MessageHandler` 메시지를 완전히 처리 하지 않는 설정 해야 *bHandled* 에 FALSE를 메시지에 추가 처리가 필요 합니다.
 
 ## <a name="return-value"></a>반환 값
@@ -61,6 +61,6 @@ LRESULT MessageHandler(
 
 ## <a name="see-also"></a>참고 항목
 
-[창 구현](../atl/implementing-a-window.md)   
-[메시지 맵](../atl/message-maps-atl.md)   
+[창 구현](../atl/implementing-a-window.md)<br/>
+[메시지 맵](../atl/message-maps-atl.md)<br/>
 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)

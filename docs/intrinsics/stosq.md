@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f6afd5349595f849e8b7418fa1efb628c200b4b6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 03c38c5328500394871bee937cbc05395eb44cd5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33332028"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715509"
 ---
 # <a name="stosq"></a>__stosq
 **Microsoft 전용**  
@@ -41,14 +41,14 @@ void __stosb(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [out] `Dest`  
- 작업의 대상입니다.  
+*대상*<br/>
+[out] 작업의 대상입니다.  
   
- [in] `Data`  
- 데이터를 저장 하는입니다.  
+*Data*<br/>
+[in] 데이터 저장소입니다.  
   
- [in] `Count`  
- 쓸 개 쿼드 워드 블록의 길이입니다.  
+*개수*<br/>
+[in] 쓸 (쿼드 워드) 블록의 길이입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
@@ -56,10 +56,10 @@ void __stosb(
 |---------------|------------------|  
 |`__stosq`|AMD64|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- 결과 쿼드 워드는 `Data` 블록으로 기록 `Count` 쿼드 워드를 두는 `Dest` 문자열입니다.  
+ 결과는 쿼드 워드 `Data` 블록으로 기록 됩니다 `Count` 쿼드 워드를 두는 `Dest` 문자열입니다.  
   
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   

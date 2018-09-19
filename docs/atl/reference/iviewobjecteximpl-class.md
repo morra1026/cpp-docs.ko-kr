@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d47c017a178d0a222780532b74db4135447f062
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8a7364f86ad08f882660f49556853826bb7186f6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760450"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108432"
 ---
 # <a name="iviewobjecteximpl-class"></a>IViewObjectExImpl 클래스
 
@@ -49,14 +49,14 @@ ms.locfileid: "43760450"
 ## <a name="syntax"></a>구문
 
 ```
-template<class T>  
+template<class T>
 class ATL_NO_VTABLE IViewObjectExImpl 
    : public IViewObjectEx
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `IViewObjectExImpl`합니다.
 
 ## <a name="members"></a>멤버
@@ -309,7 +309,7 @@ HRESULT CloseHandle(HANDLE hHandle);
 
 ### <a name="parameters"></a>매개 변수
 
-*hHandle*  
+*hHandle*<br/>
 핸들을 닫아야입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -336,10 +336,10 @@ HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwParam*  
+*dwParam*<br/>
 사용자 매개 변수입니다.
 
-*hObject*  
+*hObject*<br/>
 신호에 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -358,8 +358,8 @@ HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
 
 ## <a name="see-also"></a>참고 항목
 
-[CComControl 클래스](../../atl/reference/ccomcontrol-class.md)   
-[ActiveX 컨트롤 인터페이스](/windows/desktop/com/activex-controls-interfaces)   
-[자습서](../../atl/active-template-library-atl-tutorial.md)   
-[ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)   
+[CComControl 클래스](../../atl/reference/ccomcontrol-class.md)<br/>
+[ActiveX 컨트롤 인터페이스](/windows/desktop/com/activex-controls-interfaces)<br/>
+[자습서](../../atl/active-template-library-atl-tutorial.md)<br/>
+[ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

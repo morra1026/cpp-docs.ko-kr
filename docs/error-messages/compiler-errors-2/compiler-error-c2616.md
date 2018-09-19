@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ad7163522fb1155f540293622689fbc0388733f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a983f8cd1083fa05499c334ad776a220441db61a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33233671"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047423"
 ---
 # <a name="compiler-error-c2616"></a>컴파일러 오류 C2616
-'conversion': lvalue가 아닌 'type1' 'type2'를 암시적으로 변환할 수 하는 const  
-  
- 대 한 참조는 lvalue가 아닌에서 초기화할 수 없습니다.  
-  
- 이것은 ANSI 규격 오류 ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) 및 Microsoft 확장 경고 (**/Ze**).
+
+'conversion':는 lvalue가 아닌 'type1'는 'type2'를 암시적으로 변환할 수 있는 const가 아닌
+
+참조를 lvalue가 아닌에서 초기화할 수 없습니다.
+
+이것은 ANSI 규격 오류 ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) 및 Microsoft 확장 경고 (**/Ze**).

@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d99fc58f9e6208db9aaeb8689e8be8b49f9aaea4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1c9143406fc4b52d50b5dc68215fa796f5100fb7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294117"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053923"
 ---
 # <a name="compiler-warning-level-4-c4932"></a>컴파일러 경고(수준 4) C4932
-__identifier (identifier) 및 \__identifier(identifier) 서로 구분 되지 않으므로  
-  
- 컴파일러에서 **_finally** 및 `__finally` 또는 `__try` 및 **_try** 를 [__identifier](../../windows/identifier-cpp-cli.md)에 전달된 매개 변수로 구별할 수 없습니다. [C2374](../../error-messages/compiler-errors-1/compiler-error-c2374.md) 오류가 발생하므로 동일한 프로그램에서 둘 다를 식별자로 사용해서는 안 됩니다.  
-  
- 다음 샘플에서는 C4932를 생성합니다.  
-  
-```  
-// C4932.cpp  
-// compile with: /clr /W4 /WX  
-int main() {  
-   int __identifier(_finally) = 245;   // C4932  
-   int __identifier(__finally) = 25;   // C4932  
-}  
+
+__identifier (identifier) 및 \__identifier(identifier) 구분 되지 않습니다.
+
+컴파일러에서 **_finally** 및 `__finally` 또는 `__try` 및 **_try** 를 [__identifier](../../windows/identifier-cpp-cli.md)에 전달된 매개 변수로 구별할 수 없습니다. [C2374](../../error-messages/compiler-errors-1/compiler-error-c2374.md) 오류가 발생하므로 동일한 프로그램에서 둘 다를 식별자로 사용해서는 안 됩니다.
+
+다음 샘플에서는 C4932를 생성합니다.
+
+```
+// C4932.cpp
+// compile with: /clr /W4 /WX
+int main() {
+   int __identifier(_finally) = 245;   // C4932
+   int __identifier(__finally) = 25;   // C4932
+}
 ```

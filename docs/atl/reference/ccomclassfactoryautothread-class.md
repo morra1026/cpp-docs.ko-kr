@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 476edd2a199ca21a9067a72cac82a6ac7b608112
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 269fd977bf57f1b2daff4ec5550b1d2da97b58d6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757380"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114165"
 ---
 # <a name="ccomclassfactoryautothread-class"></a>CComClassFactoryAutoThread 클래스
 
@@ -85,13 +85,13 @@ STDMETHODIMP CreateInstance(
 
 ### <a name="parameters"></a>매개 변수
 
-*pUnkOuter*  
+*pUnkOuter*<br/>
 [in] 개체를 만드는 경우 집계의 일부로 다음 *pUnkOuter* 알 수 없는 외부 이어야 합니다. 그렇지 않으면 *pUnkOuter* NULL 이어야 합니다.
 
-*riid*  
+*riid*<br/>
 [in] 요청된 된 인터페이스의 IID입니다. 하는 경우 *pUnkOuter* 가 NULL이 아닌 *riid* 있어야 `IID_IUnknown`합니다.
 
-*ppvObj*  
+*ppvObj*<br/>
 [out] 로 식별 되는 인터페이스 포인터에 대 한 포인터 *riid*합니다. 개체는이 인터페이스를 지원 하지 않는 경우 *ppvObj* NULL로 설정 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -112,7 +112,7 @@ STDMETHODIMP LockServer(BOOL fLock);
 
 ### <a name="parameters"></a>매개 변수
 
-*떼*  
+*떼*<br/>
 [in] TRUE 인 경우 잠금 수가 증가 하 고, 그렇지 않으면, 잠금 수가 감소 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -127,9 +127,9 @@ STDMETHODIMP LockServer(BOOL fLock);
 
 ## <a name="see-also"></a>참고 항목
 
-[IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)   
-[CComClassFactory2 클래스](../../atl/reference/ccomclassfactory2-class.md)   
-[CComClassFactorySingleton 클래스](../../atl/reference/ccomclassfactorysingleton-class.md)   
-[CComObjectRootEx 클래스](../../atl/reference/ccomobjectrootex-class.md)   
-[CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)   
+[IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)<br/>
+[CComClassFactory2 클래스](../../atl/reference/ccomclassfactory2-class.md)<br/>
+[CComClassFactorySingleton 클래스](../../atl/reference/ccomclassfactorysingleton-class.md)<br/>
+[CComObjectRootEx 클래스](../../atl/reference/ccomobjectrootex-class.md)<br/>
+[CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

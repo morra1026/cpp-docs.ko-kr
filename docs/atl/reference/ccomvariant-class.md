@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf9fbd4967bbd3091d734f9b70aed9350d63a25e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 89b1dbfe9dcf00582f5f8736a4706a18439b51c6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753196"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042548"
 ---
 # <a name="ccomvariant-class"></a>CComVariant 클래스
 
@@ -43,9 +43,8 @@ ms.locfileid: "43753196"
 
 ## <a name="syntax"></a>구문
 
-```  
-cpp
-class CComVariant : public tagVARIANT  
+```cpp
+class CComVariant : public tagVARIANT
 ```
 
 ## <a name="members"></a>멤버
@@ -108,7 +107,7 @@ HRESULT Attach(VARIANT* pSrc);
 
 ### <a name="parameters"></a>매개 변수
 
-*pSrc*  
+*pSrc*<br/>
 [in] 가리키는 합니다 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 개체에 연결 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -151,39 +150,39 @@ CComVariant(const CComBSTR& bstrSrc);
 
 ### <a name="parameters"></a>매개 변수
 
-*varSrc*  
+*varSrc*<br/>
 [in] 합니다 `CComVariant` 또는 초기화 하는 데 사용 되는 VARIANT를 `CComVariant` 개체입니다. 원본 변형의 콘텐츠가 변환 하지 않고 대상에 복사 됩니다.
 
-*lpszSrc*  
+*lpszSrc*<br/>
 [in] 문자열 초기화 하는 데는 `CComVariant` 개체입니다. 생성자 또는 LPCSTR 버전에는 ANSI 문자열의 LPCOLESTR 버전으로 (0으로 끝나는 와이드 유니코드) 문자열을 전달할 수 있습니다. 두 경우 모두에 문자열을 사용 하 여 할당 하는 BSTR 유니코드 변환 됩니다 `SysAllocString`합니다. 형식의 여 `CComVariant` 개체 VT_BSTR 됩니다.
 
-*bSrc*  
+*bSrc*<br/>
 [in] 합니다 **bool** 초기화 하는 데는 `CComVariant` 개체입니다. 합니다 **bool** 저장 되기 전에 인수를 VARIANT_BOOL로 변환 합니다. 형식의 여 `CComVariant` 개체 VT_BOOL 됩니다.
 
-*nSrc*  
+*nSrc*<br/>
 [in] **int**, **바이트**를 **짧은**를 **긴**, LONGLONG, ULONGLONG, **unsigned short**를 **부호 없는 long**, 또는 **부호 없는 int** 초기화 하는 데는 `CComVariant` 개체입니다. 형식의 여 `CComVariant` 개체 됩니다 VT_I4, VT_UI1, VT_I2, VT_I4, VT_I8, VT_UI8, VT_UI2, VT_UI4, 또는 VT_UI4, 각각.
 
-*vtSrc*  
+*vtSrc*<br/>
 [in] 형식 변형입니다. 첫 번째 매개 변수 인 경우 **int**, 올바른 유형은 VT_I4 및 VT_INT 합니다. 첫 번째 매개 변수 인 경우 **긴**, 올바른 유형은 VT_I4 및 VT_ERROR 합니다. 첫 번째 매개 변수 인 경우 **이중**, 올바른 유형은 VT_R8 및 VT_DATE 합니다. 첫 번째 매개 변수 인 경우 **부호 없는 int**, 올바른 유형은 VT_UI4 및 VT_UINT 합니다.
 
-*fltSrc*  
+*fltSrc*<br/>
 [in] 합니다 **부동 소수점** 초기화 하는 데는 `CComVariant` 개체입니다. 형식의 여 `CComVariant` 개체 VT_R4 됩니다.
 
-*dblSrc*  
+*dblSrc*<br/>
 [in] 합니다 **이중** 초기화 하는 데는 `CComVariant` 개체입니다. 형식의 여 `CComVariant` 개체 VT_R8 됩니다.
 
-*cySrc*  
+*cySrc*<br/>
 [in] 합니다 `CY` 초기화 하는 데는 `CComVariant` 개체입니다. 형식의 여 `CComVariant` 개체 VT_CY 됩니다.
 
-*pSrc*  
+*pSrc*<br/>
 [in] 합니다 `IDispatch` 또는 `IUnknown` 초기화 하는 데 대 한 포인터를 `CComVariant` 개체입니다. `AddRef` 인터페이스 포인터에서 호출 됩니다. 형식의 여 `CComVariant` 개체 VT_DISPATCH 또는 됩니다 VT_UNKNOWN, 각각.
 
 또는 초기화 하는 데 SAFERRAY 포인터는 `CComVariant` 개체입니다. SAFEARRAY의 복사본에 저장 되는 `CComVariant` 개체입니다. 형식의 여 `CComVariant` 개체는 원래 형식의 VT_ARRAY 고 SAFEARRAY 조합 됩니다.
 
-*cSrc*  
+*cSrc*<br/>
 [in] 합니다 **char** 초기화 하는 데는 `CComVariant` 개체입니다. 형식의 여 `CComVariant` 개체 VT_I1 됩니다.
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] 초기화를 사용 하는 BSTR을 `CComVariant` 개체입니다. 형식의 여 `CComVariant` 개체 VT_BSTR 됩니다.
 
 ### <a name="remarks"></a>설명
@@ -212,10 +211,10 @@ HRESULT ChangeType(VARTYPE vtNew, const VARIANT* pSrc = NULL);
 
 ### <a name="parameters"></a>매개 변수
 
-*vtNew*  
+*vtNew*<br/>
 [in] 새 형식은 `CComVariant` 개체입니다.
 
-*pSrc*  
+*pSrc*<br/>
 [in] 새 형식으로 변환할 값 변형에 대 한 포인터입니다. 기본값은 NULL 의미는 `CComVariant` 개체 위치에 변환 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -252,7 +251,7 @@ HRESULT Copy(const VARIANT* pSrc);
 
 ### <a name="parameters"></a>매개 변수
 
-*pSrc*  
+*pSrc*<br/>
 [in] 에 대 한 포인터를 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 복사 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -269,7 +268,7 @@ HRESULT CopyTo(BSTR* pstrDest);
 
 ### <a name="parameters"></a>매개 변수
 
-*pstrDest*  
+*pstrDest*<br/>
 Bstr의 내용의 복사본을 받는 요소를 `CComVariant` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -290,7 +289,7 @@ HRESULT Detach(VARIANT* pDest);
 
 ### <a name="parameters"></a>매개 변수
 
-*pDest*  
+*pDest*<br/>
 [out] 개체의 기본 변형 값을 반환합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -352,36 +351,36 @@ CComVariant& operator=(char cSrc) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*varSrc*  
+*varSrc*<br/>
 [in] 합니다 `CComVariant` 또는 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 할당할 수는 `CComVariant` 개체입니다. 원본 변형의 콘텐츠가 변환 하지 않고 대상에 복사 됩니다.
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] 에 할당할 BSTR은 `CComVariant` 개체입니다. 형식의 여 `CComVariant` 개체 VT_BSTR 됩니다.
 
-*lpszSrc*  
+*lpszSrc*<br/>
 [in] 에 할당할 문자열의 `CComVariant` 개체입니다. LPCOLESTR 버전 연산자나 LPCSTR 버전에는 ANSI 문자열의 (0 종료 와이드 유니코드) 문자열을 전달할 수 있습니다. 두 경우 모두에 문자열을 사용 하 여 할당 하는 BSTR 유니코드 변환 됩니다 `SysAllocString`합니다. 형식의 여 `CComVariant` 개체 VT_BSTR 됩니다.
 
-*bSrc*  
+*bSrc*<br/>
 [in] 합니다 **bool** 할당할 수는 `CComVariant` 개체입니다. 합니다 **bool** 저장 되기 전에 인수를 VARIANT_BOOL로 변환 합니다. 형식의 여 `CComVariant` 개체 VT_BOOL 됩니다.
 
-*nSrc*  
+*nSrc*<br/>
 [in] **int**, 바이트 **짧은**를 **긴**, LONGLONG, ULONGLONG를 **unsigned short**를 **부호 없는 long**, 또는 **부호 없는 int** 할당할 수는 `CComVariant` 개체입니다. 형식의 여 `CComVariant` 개체 됩니다 VT_I4, VT_UI1, VT_I2, VT_I4, VT_I8, VT_UI8, VT_UI2, VT_UI4, 또는 VT_UI4, 각각.
 
-*fltSrc*  
+*fltSrc*<br/>
 [in] 합니다 **부동 소수점** 할당할 수는 `CComVariant` 개체입니다. 형식의 여 `CComVariant` 개체 VT_R4 됩니다.
 
-*dblSrc*  
+*dblSrc*<br/>
 [in] 합니다 **이중** 할당할 수는 `CComVariant` 개체입니다. 형식의 여 `CComVariant` 개체 VT_R8 됩니다.
 
-*cySrc*  
+*cySrc*<br/>
 [in] 합니다 `CY` 할당할 수는 `CComVariant` 개체입니다. 형식의 여 `CComVariant` 개체 VT_CY 됩니다.
 
-*pSrc*  
+*pSrc*<br/>
 [in] 합니다 `IDispatch` 또는 `IUnknown` 할당할 수에 대 한 포인터를 `CComVariant` 개체입니다. `AddRef` 인터페이스 포인터에서 호출 됩니다. 형식의 여 `CComVariant` 개체 VT_DISPATCH 또는 됩니다 VT_UNKNOWN, 각각.
 
 또는 할당할 SAFEARRAY 포인터를 `CComVariant` 개체입니다. SAFEARRAY의 복사본에 저장 되는 `CComVariant` 개체입니다. 형식의 여 `CComVariant` 개체는 원래 형식의 VT_ARRAY 고 SAFEARRAY 조합 됩니다.
 
-*cSrc*  
+*cSrc*<br/>
 [in] 할당할 문자는 `CComVariant` 개체입니다. 형식의 여 `CComVariant` 개체 VT_I1 됩니다.
 
 ##  <a name="operator_eq_eq"></a>  CComVariant::operator = =
@@ -446,7 +445,7 @@ HRESULT ReadFromStream(IStream* pStream);
 
 ### <a name="parameters"></a>매개 변수
 
-*pStream*  
+*pStream*<br/>
 [in] 에 대 한 포인터를 [IStream](/windows/desktop/api/objidl/nn-objidl-istream) 인터페이스에 데이터를 포함 하는 스트림입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -468,10 +467,10 @@ void SetByRef(T* pT) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 형식의 VARIANT BSTR, 예를 들어 **int**, 또는 **char**합니다.
 
-*(태평양 표준시)*  
+*(태평양 표준시)*<br/>
 초기화 하는 데 포인터는 `CComVariant` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -490,7 +489,7 @@ HRESULT WriteToStream(IStream* pStream);
 
 ### <a name="parameters"></a>매개 변수
 
-*pStream*  
+*pStream*<br/>
 [in] 에 대 한 포인터를 [IStream](/windows/desktop/api/objidl/nn-objidl-istream) 스트림에 대 한 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값

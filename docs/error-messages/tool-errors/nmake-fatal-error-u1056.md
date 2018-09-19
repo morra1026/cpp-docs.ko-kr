@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19890e290c98fd9602d755ad35f9d47204bd6c24
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e0a83c62bedf995708d5e99fee19f05696d05c2d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316558"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065701"
 ---
 # <a name="nmake-fatal-error-u1056"></a>NMAKE 심각한 오류 U1056
-명령 처리기를 찾을 수 없습니다.  
-  
- 명령 처리기에 지정 된 경로에 없습니다.는 **COMSPEC** 또는 **경로** 환경 변수입니다.  
-  
- NMAKE 모드를 사용할지 COMMAND.COM cmd. Exe 명령을 실행할 때 명령 처리기로 사용 합니다. 에 설정 된 경로에 명령 처리기를 먼저 찾고 **COMSPEC**합니다. 경우 **COMSPEC** NMAKE 검색에 지정 된 디렉터리가 존재 하지 않는 **경로**합니다.
+
+명령 처리기를 찾을 수 없습니다.
+
+명령 프로세서에 지정 된 경로에 없습니다. 합니다 **COMSPEC** 하거나 **경로** 환경 변수입니다.
+
+NMAKE는 COMMAND.COM 또는 cmd.를 사용합니다. Exe 명령을 실행할 때 명령 프로세서로 사용 합니다. 에 설정 된 경로에 명령 프로세서를 먼저 찾고 **COMSPEC**합니다. 하는 경우 **COMSPEC** NMAKE 검색에 지정 된 디렉터리가 존재 하지 않는 **경로**합니다.

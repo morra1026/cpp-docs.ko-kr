@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d5614006ed60d088a2749ab13417de23054e64ee
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: bba9e3cce5424fdba86c05c0fd94cb3a0d08a5bb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761399"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030926"
 ---
 # <a name="ccomptr-class"></a>CComPtr 클래스
 
@@ -32,13 +32,13 @@ COM 인터페이스 포인터를 관리 하는 것에 대 한 스마트 포인�
 ## <a name="syntax"></a>구문
 
 ```
-template<class T>  
+template<class T>
 class CComPtr
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 저장에 대 한 포인터의 형식을 지정 하는 COM 인터페이스입니다.
 
 ## <a name="members"></a>멤버
@@ -89,10 +89,10 @@ CComPtr (const CComPtr<T>& lp) throw ();
 
 ### <a name="parameters"></a>매개 변수
 
-*lp*  
+*lp*<br/>
 인터페이스 포인터를 초기화 하는 데 사용 합니다.
 
-*T*  
+*T*<br/>
 COM 인터페이스입니다.
 
 ##  <a name="operator_eq"></a>  CComPtr::operator =
@@ -114,6 +114,6 @@ T* operator= (const CComPtr<T>& lp) throw ();
 
 ## <a name="see-also"></a>참고 항목
 
-[CComPtr::CComPtr](#ccomptr)   
-[CComQIPtr::CComQIPtr](../../atl/reference/ccomqiptr-class.md#ccomqiptr)   
+[CComPtr::CComPtr](#ccomptr)<br/>
+[CComQIPtr::CComQIPtr](../../atl/reference/ccomqiptr-class.md#ccomqiptr)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

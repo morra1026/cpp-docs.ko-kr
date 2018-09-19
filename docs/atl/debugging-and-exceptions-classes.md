@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ee17d8c944fa41bcca9b255c12cc4c2b0c3f565
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3750b26643bc2ceb33e49723d1586ba5350fe4db
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753817"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055210"
 ---
 # <a name="debugging-and-exceptions-classes"></a>디버깅 및 예외 클래스
 
@@ -31,7 +31,7 @@ ms.locfileid: "43753817"
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 개요](../atl/atl-class-overview.md)   
-[디버깅 및 오류 보고 전역 함수](../atl/reference/debugging-and-error-reporting-global-functions.md)   
+[클래스 개요](../atl/atl-class-overview.md)<br/>
+[디버깅 및 오류 보고 전역 함수](../atl/reference/debugging-and-error-reporting-global-functions.md)<br/>
 [디버깅 및 오류 보고 매크로](../atl/reference/debugging-and-error-reporting-macros.md)
 

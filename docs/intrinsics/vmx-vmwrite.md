@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 132841c8c24e2b625dad218aaaef2a19cba0a264
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 1f52c2c2ca60f66218b669201f293ca377d4ca5a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680500"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707020"
 ---
 # <a name="vmxvmwrite"></a>__vmx_vmwrite
 **Microsoft 전용**  
@@ -42,8 +42,8 @@ unsigned char __vmx_vmwrite(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] `Field`|쓸 VMCS 필드입니다.|  
-|[in] `FieldValue`|VMCS 필드에 쓸 값입니다.|  
+|*필드*|[in] 쓸 VMCS 필드입니다.|  
+|*FieldValue*|[in] VMCS 필드에 쓸 값입니다.|  
   
 ## <a name="return-value"></a>반환 값  
  0  

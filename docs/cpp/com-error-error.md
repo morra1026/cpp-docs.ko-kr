@@ -17,31 +17,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a7ddaefcf3bd46bf40b03c03d2d1fb00cf8fbbb
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 9d56fcf7faaee9d3b0e02964163aa62372a30a78
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408429"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109298"
 ---
 # <a name="comerrorerror"></a>_com_error::Error
-**Microsoft 전용**  
-  
- 생성자에 전달 된 HRESULT를 검색 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-HRESULT Error( ) const throw( );  
-```  
-  
-## <a name="return-value"></a>반환 값  
- 원시 HRESULT 항목 생성자에 전달 합니다.  
-  
-## <a name="remarks"></a>설명  
- 캡슐화 된 HRESULT 항목 검색을 `_com_error` 개체입니다.  
-  
- **Microsoft 전용 종료**  
-  
-## <a name="see-also"></a>참고자료  
- [_com_error 클래스](../cpp/com-error-class.md)
+
+**Microsoft 전용**
+
+생성자에 전달 된 HRESULT를 검색 합니다.
+
+## <a name="syntax"></a>구문
+
+```
+HRESULT Error( ) const throw( );
+```
+
+## <a name="return-value"></a>반환 값
+
+원시 HRESULT 항목 생성자에 전달 합니다.
+
+## <a name="remarks"></a>설명
+
+캡슐화 된 HRESULT 항목 검색을 `_com_error` 개체입니다.
+
+**Microsoft 전용 종료**
+
+## <a name="see-also"></a>참고자료
+
+[_com_error 클래스](../cpp/com-error-class.md)

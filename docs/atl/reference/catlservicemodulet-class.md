@@ -45,12 +45,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fff071ad298d379dd8d063d5f71287da9a567b49
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 74d36c7b13be3653a0c17f763e37447d5541c5a3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755565"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086462"
 ---
 # <a name="catlservicemodulet-class"></a>CAtlServiceModuleT 클래스
 
@@ -62,16 +62,16 @@ ms.locfileid: "43755565"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T, UINT nServiceNameID>  
+template <class T, UINT nServiceNameID>
 class ATL_NO_VTABLE CAtlServiceModuleT : public CAtlExeModuleT<T>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `CAtlServiceModuleT`합니다.
 
-*nServiceNameID*  
+*nServiceNameID*<br/>
 서비스의 리소스 식별자입니다.
 
 ## <a name="members"></a>멤버
@@ -163,7 +163,7 @@ void Handler(DWORD dwOpcode) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dwOpcode*  
+*dwOpcode*<br/>
 처리기 작업을 정의 하는 스위치입니다. 자세한 내용은 설명을 참조 하세요.
 
 ### <a name="remarks"></a>설명
@@ -246,10 +246,10 @@ void __cdecl LogEvent(LPCTSTR pszFormat, ...) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pszFormat*  
+*pszFormat*<br/>
 이벤트 로그에 쓸 문자열입니다.
 
-...  
+*...*<br/>
 이벤트 로그를 쓸 수 있도록 선택적 추가 문자열입니다.
 
 ### <a name="remarks"></a>설명
@@ -366,7 +366,7 @@ void OnUnknownRequest(DWORD /* dwOpcode*/) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dwOpcode*  
+*dwOpcode*<br/>
 예약됨.
 
 ##  <a name="parsecommandline"></a>  CAtlServiceModuleT::ParseCommandLine
@@ -379,10 +379,10 @@ bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lpCmdLine*  
+*lpCmdLine*<br/>
 명령줄입니다.
 
-*pnRetCode*  
+*pnRetCode*<br/>
 (발생 해당) 하는 경우 해당 등록 하는 HRESULT입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -403,7 +403,7 @@ HRESULT PreMessageLoop(int nShowCmd) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nShowCmd*  
+*nShowCmd*<br/>
 이 매개 변수가 전달 [CAtlExeModuleT::PreMessageLoop](../../atl/reference/catlexemodulet-class.md#premessageloop)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -424,7 +424,7 @@ inline HRESULT RegisterAppId(bool bService = false) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*bService*  
+*bService*<br/>
 서비스로 등록 하려면 true 여야 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -441,7 +441,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nShowCmd*  
+*nShowCmd*<br/>
 창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다. 기본값은 SW_HIDE 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -462,10 +462,10 @@ void ServiceMain(DWORD dwArgc, LPTSTR* lpszArgv) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dwArgc*  
+*dwArgc*<br/>
 Argc 인수입니다.
 
-*lpszArgv*  
+*lpszArgv*<br/>
 Argv 인수입니다.
 
 ### <a name="remarks"></a>설명
@@ -484,7 +484,7 @@ void SetServiceStatus(DWORD dwState) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dwState*  
+*dwState*<br/>
 새 상태입니다. 참조 [SetServiceStatus](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) 가능한 값에 대 한 합니다.
 
 ### <a name="remarks"></a>설명
@@ -501,7 +501,7 @@ HRESULT Start(int nShowCmd) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nShowCmd*  
+*nShowCmd*<br/>
 창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -562,7 +562,7 @@ int WinMain(int nShowCmd) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nShowCmd*  
+*nShowCmd*<br/>
 창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -575,5 +575,5 @@ int WinMain(int nShowCmd) throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[CAtlExeModuleT 클래스](../../atl/reference/catlexemodulet-class.md)   
+[CAtlExeModuleT 클래스](../../atl/reference/catlexemodulet-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

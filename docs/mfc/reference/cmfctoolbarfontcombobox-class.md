@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12b6d0b0ccc21f4ab1f8b3d7116f098a532d0418
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b510b05c80ba7cdbea0bbf0ec580e88daa55fbed
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216263"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704368"
 ---
 # <a name="cmfctoolbarfontcombobox-class"></a>CMFCToolBarFontComboBox 클래스
 사용자가 시스템 글꼴의 목록에서 글꼴을 선택할 수 있는 콤보 상자 컨트롤을 포함 하는 도구 모음 단추입니다.  
@@ -110,14 +110,14 @@ CMFCToolBarFontComboBox();
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiID*  
- 콤보 상자의 명령 ID입니다.  
+*uiID*<br/>
+[in] 콤보 상자의 명령 ID입니다.  
   
- [in] *iImage*  
- 도구 모음 이미지의 0부터 시작 하는 인덱스입니다. 이미지에는 [CMFCToolBarImages 클래스](../../mfc/reference/cmfctoolbarimages-class.md) 개체입니다 [CMFCToolBar 클래스](../../mfc/reference/cmfctoolbar-class.md) 클래스 유지 관리 합니다.  
+*iImage*<br/>
+[in] 도구 모음 이미지의 0부터 시작 하는 인덱스입니다. 이미지에는 [CMFCToolBarImages 클래스](../../mfc/reference/cmfctoolbarimages-class.md) 개체입니다 [CMFCToolBar 클래스](../../mfc/reference/cmfctoolbar-class.md) 클래스 유지 관리 합니다.  
   
- [in] *nFontType*  
- 글꼴 콤보 상자를 포함 하는 형식입니다. 이 매개 변수는 다음 값의 조합 (OR 부울) 수 있습니다.  
+*nFontType*<br/>
+[in] 글꼴 콤보 상자를 포함 하는 형식입니다. 이 매개 변수는 다음 값의 조합 (OR 부울) 수 있습니다.  
   
  DEVICE_FONTTYPE  
   
@@ -125,20 +125,20 @@ CMFCToolBarFontComboBox();
   
  TRUETYPE_FONTTYPE  
   
- [in] *nCharSet*  
- DEFAULT_CHARSET, 콤보 상자로 포함 되어 있으면 모든 문자 집합의 모든 고유 하 게 명명 된 글꼴. (두 글꼴 이름이 같은 경우 콤보 상자 포함 그 중 하나입니다.) 유효한 문자 집합 값 콤보 상자로 포함 되어 있으면 지정된 된 문자 집합의 글꼴만. 참조 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 가능한 문자 목록을 설정 합니다.  
+*nCharSet*<br/>
+[in] DEFAULT_CHARSET, 콤보 상자로 포함 되어 있으면 모든 문자 집합의 모든 고유 하 게 명명 된 글꼴. (두 글꼴 이름이 같은 경우 콤보 상자 포함 그 중 하나입니다.) 유효한 문자 집합 값 콤보 상자로 포함 되어 있으면 지정된 된 문자 집합의 글꼴만. 참조 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 가능한 문자 목록을 설정 합니다.  
   
- [in] *dwStyle*  
- 콤보 상자의 스타일입니다. (참조 [콤보 상자 스타일](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles))  
+*dwStyle*<br/>
+[in] 콤보 상자의 스타일입니다. (참조 [콤보 상자 스타일](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles))  
   
- [in] *iWidth*  
- Edit 컨트롤의 픽셀에서 너비입니다.  
+*iWidth*<br/>
+[in] Edit 컨트롤의 픽셀에서 너비입니다.  
   
- [in] *nPitchAndFamily*  
- 집합 DEFAULT_PITCH, 콤보 상자에 포함 된 경우 글꼴 피치에 관계 없이. 경우 FIXED_PITCH 또는 VARIABLE_PITCH로 콤보 상자 글꼴만 포함 피치 형식과 함께 합니다. 글꼴 패밀리를 기반으로 필터링 현재 지원 되지 않습니다.  
+*nPitchAndFamily*<br/>
+[in] 집합 DEFAULT_PITCH, 콤보 상자에 포함 된 경우 글꼴 피치에 관계 없이. 경우 FIXED_PITCH 또는 VARIABLE_PITCH로 콤보 상자 글꼴만 포함 피치 형식과 함께 합니다. 글꼴 패밀리를 기반으로 필터링 현재 지원 되지 않습니다.  
   
- [out] *pLstFontsExternal*  
- 에 대 한 포인터를 [CObList 클래스](../../mfc/reference/coblist-class.md) 사용 가능한 글꼴을 저장 하는 개체입니다.  
+*pLstFontsExternal*<br/>
+[out] 에 대 한 포인터를 [CObList 클래스](../../mfc/reference/coblist-class.md) 사용 가능한 글꼴을 저장 하는 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  일반적으로 `CMFCToolBarFontComboBox` 개체에서 공유 되는 하나의 사용 가능한 글꼴 목록을 저장 `CObList` 개체입니다. 생성자의 두 번째 오버 로드를 사용 하 고에 대 한 유효한 포인터를 제공 하는 경우 *pLstFontsExternal*하 `CMFCToolBarFontComboBox` 개체를 채울 대신 합니다 `CObList` 하는 *pLstFontsExternal* 사용 가능한 글꼴을 사용 하 여를 가리킵니다.  
@@ -156,8 +156,8 @@ const CMFCFontInfo* GetFontDesc(int iIndex=-1) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iIndex*  
- 콤보 상자 항목의 0부터 시작 인덱스를 지정 합니다.  
+*iIndex*<br/>
+[in] 콤보 상자 항목의 0부터 시작 인덱스를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  에 대 한 포인터를 `CMFCFontInfo` 개체입니다. 하는 경우 *iIndex* 유효한 항목 인덱스를 지정 하지 않는 반환 값은 NULL입니다.  
@@ -183,14 +183,14 @@ BOOL SetFont(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszName*  
- 글꼴 이름 또는 접두사를 지정합니다.  
+*lpszName*<br/>
+[in] 글꼴 이름 또는 접두사를 지정합니다.  
   
- [in] *nCharSet*  
- 문자 집합을 지정 합니다.  
+*nCharSet*<br/>
+[in] 문자 집합을 지정 합니다.  
   
- [in] *bExact*  
- 지정 여부 *lpszName* 글꼴 접두사 또는 글꼴 이름을 포함 합니다.  
+*bExact*<br/>
+[in] 지정 여부 *lpszName* 글꼴 접두사 또는 글꼴 이름을 포함 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  글꼴을 성공적으로 선택한 경우 0이 아닌 값 그렇지 않으면 0입니다.  

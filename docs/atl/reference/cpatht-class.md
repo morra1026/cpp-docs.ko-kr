@@ -59,12 +59,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60541891832a3d466f7396086ac0918108991582
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d95a8f6b28b638b65191bc04ad094cc128f7b247
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753164"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080313"
 ---
 # <a name="cpatht-class"></a>CPathT 클래스
 
@@ -82,7 +82,7 @@ class CPathT
 
 #### <a name="parameters"></a>매개 변수
 
-*StringType*  
+*StringType*<br/>
 경로 대해 사용 하는 ATL/MFC 문자열 클래스 (참조 [CStringT](../../atl-mfc-shared/reference/cstringt-class.md)).
 
 ## <a name="members"></a>멤버
@@ -194,7 +194,7 @@ BOOL AddExtension(PCXSTR pszExtension);
 
 ### <a name="parameters"></a>매개 변수
 
-*pszExtension*  
+*pszExtension*<br/>
 추가할 파일 확장명입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -215,7 +215,7 @@ BOOL Append(PCXSTR pszMore);
 
 ### <a name="parameters"></a>매개 변수
 
-*pszMore*  
+*pszMore*<br/>
 추가할 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -236,7 +236,7 @@ void BuildRoot(int iDrive);
 
 ### <a name="parameters"></a>매개 변수
 
-*iDrive*  
+*iDrive*<br/>
 드라이브 수 (0은 a:, 1은 b:, 및 등).
 
 ### <a name="remarks"></a>설명
@@ -265,10 +265,10 @@ void Combine(PCXSTR pszDir, PCXSTR  pszFile);
 
 ### <a name="parameters"></a>매개 변수
 
-*pszDir*  
+*pszDir*<br/>
 디렉터리 경로입니다.
 
-*pszFile*  
+*pszFile*<br/>
 파일 경로입니다.
 
 ### <a name="remarks"></a>설명
@@ -285,7 +285,7 @@ CPathT<StringType> CommonPrefix(PCXSTR pszOther);
 
 ### <a name="parameters"></a>매개 변수
 
-*pszOther*  
+*pszOther*<br/>
 현재 비교할 경로입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -306,10 +306,10 @@ BOOL CompactPath(HDC hDC, UINT nWidth);
 
 ### <a name="parameters"></a>매개 변수
 
-*hDC*  
+*hDC*<br/>
 글꼴 메트릭을 사용 하는 장치 컨텍스트.
 
-*nWidth*  
+*nWidth*<br/>
 픽셀에서 너비에 맞게 해야만 하는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -330,10 +330,10 @@ BOOL CompactPathEx(UINT nMaxChars, DWORD dwFlags = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*nMaxChars*  
+*nMaxChars*<br/>
 NULL 종결 문자를 포함 하 여 새 문자열에 포함 될 문자의 최대 수입니다.
 
-*dwFlags*  
+*dwFlags*<br/>
 예약됨.
 
 ### <a name="return-value"></a>반환 값
@@ -356,10 +356,10 @@ CPathT() throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pszPath*  
+*pszPath*<br/>
 경로 문자열에 대 한 포인터입니다.
 
-*path*  
+*path*<br/>
 경로 문자열입니다.
 
 ##  <a name="fileexists"></a>  CPathT::FileExists
@@ -480,7 +480,7 @@ BOOL IsPrefix(PCXSTR pszPrefix) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*pszPrefix*  
+*pszPrefix*<br/>
 검색할 접두사입니다. 접두사는 이러한 형식 중 하나: "c:\\\\",".","...","... \\\\".
 
 ### <a name="return-value"></a>반환 값
@@ -533,7 +533,7 @@ BOOL IsSameRoot(PCXSTR pszOther) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*pszOther*  
+*pszOther*<br/>
 다른 경로입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -630,7 +630,7 @@ BOOL MatchSpec(PCXSTR pszSpec) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*pszSpec*  
+*pszSpec*<br/>
 검색할 파일 형식 사용 하 여 null로 끝나는 문자열에 대 한 포인터입니다. 예를 들어 현재 경로에서 파일을 문서 파일 인지 여부를 테스트할 *pszSpec* 로 설정 해야 "*.doc"입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -651,7 +651,7 @@ CPathT<StringType>& operator+=(PCXSTR pszMore);
 
 ### <a name="parameters"></a>매개 변수
 
-*pszMore*  
+*pszMore*<br/>
 추가할 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -744,16 +744,16 @@ BOOL RelativePathTo(
 
 ### <a name="parameters"></a>매개 변수
 
-*pszFrom*  
+*pszFrom*<br/>
 시작 상대 경로입니다.
 
-*dwAttrFrom*  
+*dwAttrFrom*<br/>
 파일 특성 *pszFrom*합니다. 이 값 FILE_ATTRIBUTE_DIRECTORY, 있으면 *pszFrom* 고, 그렇지 않으면 디렉터리 맡은 *pszFrom* 파일로 간주 됩니다.
 
-*pszTo*  
+*pszTo*<br/>
 끝점의 상대 경로입니다.
 
-*dwAttrTo*  
+*dwAttrTo*<br/>
 파일 특성 *pszTo*합니다. 이 값 FILE_ATTRIBUTE_DIRECTORY, 있으면 *pszTo* 고, 그렇지 않으면 디렉터리 맡은 *pszTo* 파일로 간주 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -838,7 +838,7 @@ BOOL RenameExtension(PCXSTR pszExtension);
 
 ### <a name="parameters"></a>매개 변수
 
-*pszExtension*  
+*pszExtension*<br/>
 새 파일 이름 확장명 앞에 "." 문자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -919,5 +919,5 @@ typedef StringType::XCHAR XCHAR;
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스](../../atl/reference/atl-classes.md)   
+[클래스](../../atl/reference/atl-classes.md)<br/>
 [CStringT 클래스](../../atl-mfc-shared/reference/cstringt-class.md)

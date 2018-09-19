@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e377c9692fdbed0e5d7bcae16c5b96473fa6955
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b179b56edaf6dc661d1c3c9c9a781195a2d37ee6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33241983"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043289"
 ---
 # <a name="compiler-error-c2973"></a>컴파일러 오류 C2973
-'number' 템플릿 인수가 잘못되었습니다.  
-  
- 템플릿 정의를 확인하여 올바른 형식을 찾습니다.
+
+'number' 템플릿 인수가 잘못되었습니다.
+
+템플릿 정의를 확인하여 올바른 형식을 찾습니다.

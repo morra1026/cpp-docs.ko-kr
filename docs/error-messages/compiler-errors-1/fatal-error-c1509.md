@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fec83f6b6138eacc613e560b9da4557079d6677d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 837ab5b7cf76b724726c6c52fbfe974d4da6ca85
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198796"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033136"
 ---
 # <a name="fatal-error-c1509"></a>심각한 오류 C1509
-컴파일러 한계: ' function '함수에에서 예외 처리기 상태가 너무 많습니다. 함수를 단순화 합니다.  
-  
- 코드에서 예외 처리기 상태가 (32, 768 상태) 내부 한계를 초과 합니다.  
-  
- 가장 일반적인 원인은 함수에 사용자 지정 클래스 변수 및 산술 연산자는 복잡 한 식이 포함 되어 있습니다.  
-  
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>아래의 해결 방법 따라 수정합니다.  
-  
-1.  공통 하위 식의 임시 변수를 지정 하 여 단순한 식을 사용 합니다.  
-  
-2.  함수를 좀 더 작은 함수로 분할 합니다.
+
+컴파일러 한계: 'function' 함수에 예외 처리기 상태가 너무 많습니다. 함수를 간소화 합니다.
+
+코드는 예외 처리기 상태가 (32,768 상태)는 내부 한계를 초과합니다.
+
+가장 일반적인 원인은 함수 클래스 사용자 정의 변수 및 산술 연산자의 복잡 한 식을 포함 합니다.
+
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>아래의 해결 방법 따라 수정합니다.
+
+1. 일반적인 하위 식의 임시 변수를 할당 하 여 식을 간소화 합니다.
+
+1. 함수를 좀 더 작은 함수로 분할 합니다.

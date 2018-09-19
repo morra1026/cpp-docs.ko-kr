@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c3bfa286e253ef634a42fea5a5c926981174c400
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b599e5f25449dfef3b37d7811db572ee4299b241
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613003"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719110"
 ---
 # <a name="dbparam"></a>db_param
 
@@ -47,8 +47,8 @@ ms.locfileid: "42613003"
 *서 수*  
 데이터를 바인딩할 행 집합의 필드에 해당 열 번호 (DBCOLUMNINFO 서 수).
 
-*가 paramtype과* (선택 사항)  
-형식 매개 변수에 설정입니다. 공급자의 데이터 원본에서 지원 되는 매개 변수 I/O 형식만 지원 합니다. 형식은 하나 이상의 DBPARAMIOENUM 값을 조합 합니다.
+*가 paramtype과*  
+(선택 사항) 형식 매개 변수에 설정입니다. 공급자의 데이터 원본에서 지원 되는 매개 변수 I/O 형식만 지원 합니다. 형식은 하나 이상의 DBPARAMIOENUM 값을 조합 합니다.
 
 - DBPARAMIO_INPUT 입력된 매개 변수입니다.
 
@@ -56,20 +56,20 @@ ms.locfileid: "42613003"
 
 - DBPARAMIO_NOTPARAM 접근자 매개 변수가 없습니다. 설정 `eParamIO` 행에서이 값을 접근자 받으라는 매개 변수가 무시 됩니다.
 
-*dbtype* (선택 사항)  
-OLE DB [유형 표시기](/previous-versions/windows/desktop/ms711251\(v=vs.85\)) 열 항목에 대 한 합니다.
+*dbtype*  
+(선택 사항) OLE DB [유형 표시기](/previous-versions/windows/desktop/ms711251\(v=vs.85\)) 열 항목에 대 한 합니다.
 
-*전체 자릿수* (선택 사항)  
-열 항목에 사용할 전체 자릿수입니다. 세부 정보에 대 한 설명을 참조 하세요 `bPrecision` 의 요소는 [DBBINDING 구조](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
+*precision*  
+(선택 사항) 열 항목에 사용할 전체 자릿수입니다. 세부 정보에 대 한 설명을 참조 하세요 `bPrecision` 의 요소는 [DBBINDING 구조](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
 
-*확장* (선택 사항)  
-열 항목에 사용할 소수 자릿수입니다. 세부 정보에 대 한 설명을 참조 하세요 `bScale` 의 요소는 [DBBINDING 구조](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
+*크기 조정*  
+(선택 사항) 열 항목에 사용할 소수 자릿수입니다. 세부 정보에 대 한 설명을 참조 하세요 `bScale` 의 요소는 [DBBINDING 구조](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
 
-*상태* (선택 사항)  
-이 칼럼의 상태를 저장 하는 데 사용 되는 멤버 변수입니다. 상태는 데이터 값 또는 NULL 등의 다른 값 열 값이 있는지 여부를 나타냅니다. 가능한 값을 참조 하세요 [상태](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.
+*status*  
+(선택 사항) 이 칼럼의 상태를 저장 하는 데 사용 되는 멤버 변수입니다. 상태는 데이터 값 또는 NULL 등의 다른 값 열 값이 있는지 여부를 나타냅니다. 가능한 값을 참조 하세요 [상태](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.
 
-*길이* (선택 사항)  
-멤버 변수 (바이트)에서 열의 크기를 보유 하는 데 사용 합니다.
+*length*  
+(선택 사항) 멤버 변수 (바이트)에서 열의 크기를 보유 하는 데 사용 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -81,7 +81,7 @@ OLE DB [유형 표시기](/previous-versions/windows/desktop/ms711251\(v=vs.85\)
 
 컴파일러는 클래스 이름을 소비자 특성 공급자가이 특성 클래스에 적용 될 때 \_ *YourClassName*접근자를 여기서 *YourClassName* 제공한 이름인는 클래스 및 컴파일러 라는 클래스를 만들 수도 됩니다 *YourClassName*에서 파생 되는 \_ *YourClassName*접근자입니다.  클래스 뷰에 두 클래스 모두 표시됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 Northwind 데이터베이스의 SalesbyYear 저장 프로시저를 기준으로 하는 명령 클래스를 만듭니다. 사용 하 여 저장된 프로시저의 첫 번째 매개 변수를 연결 하는 `m_RETURN_VALUE` 변수를 output 매개 변수로 정의 합니다. 마지막 두 (입력된) 매개 변수를 연결 `m_Beginning_Date` 고 `m_Ending_Date`입니다.
 

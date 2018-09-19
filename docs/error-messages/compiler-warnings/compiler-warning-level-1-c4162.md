@@ -16,47 +16,48 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2789f6aa63c8a547a34ec6adfd89c1e1163c68e3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a36fa6a63443bf2272df7ce6125fd77afedf100f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33287529"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027182"
 ---
 # <a name="compiler-warning-level-1-c4162"></a>컴파일러 경고 (수준 1) C4162
-'identifier': C 링크가 있는 함수  
-  
- C 링크가 있는 함수 선언 되었지만 찾을 수 없습니다.  
-  
- 이 경고를 해결 하려면.c 파일에 컴파일 (C 컴파일러 호출).  C + + 컴파일러를 호출 해야 하는 경우에 extern "C" 함수 선언 전에 배치 합니다.  
-  
- 다음 샘플에서는 C4162  
-  
-```  
-// C4162.cpp  
-// compile with: /c /W1  
-unsigned char _bittest(long* a, long b);  
-#pragma intrinsic (_bittest)   // C4162  
-  
-int main() {  
-   bool bit;  
-   long num = 78002;  
-   bit = _bittest(&num, 5);  
-}  
-```  
-  
- 해결 방법:  
-  
-```  
-// C4162b.cpp  
-// compile with: /c  
-extern "C"  
-unsigned char _bittest(long* a, long b);  
-#pragma intrinsic (_bittest)  
-  
-int main() {  
-   bool bit;  
-   long num = 78002;  
-   bit = _bittest(&num, 5);  
-}  
+
+'identifier': C 링크가 있는 함수가 없습니다
+
+C 링크가 있는 함수가 선언 되었지만 찾을 수 없습니다.
+
+이 경고를 해결 하려면.c 파일에서 컴파일 (C 컴파일러를 호출).  C + + 컴파일러를 호출 해야 하는 경우에 extern "C" 함수 선언 전에 배치 합니다.
+
+다음 샘플에서는 C4162
+
+```
+// C4162.cpp
+// compile with: /c /W1
+unsigned char _bittest(long* a, long b);
+#pragma intrinsic (_bittest)   // C4162
+
+int main() {
+   bool bit;
+   long num = 78002;
+   bit = _bittest(&num, 5);
+}
+```
+
+해결 방법:
+
+```
+// C4162b.cpp
+// compile with: /c
+extern "C"
+unsigned char _bittest(long* a, long b);
+#pragma intrinsic (_bittest)
+
+int main() {
+   bool bit;
+   long num = 78002;
+   bit = _bittest(&num, 5);
+}
 ```

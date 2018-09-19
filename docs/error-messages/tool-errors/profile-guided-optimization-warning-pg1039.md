@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a2637013bacaecfa3e0d812177c12ce227d19be
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d1dd62059697b7f5c50a9fe7863f62ebbe6bf56c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316532"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050530"
 ---
 # <a name="profile-guided-optimization-warning-pg1039"></a>프로필 기반 최적화 경고 PG1039
-정리 작업을 유휴 시간 동안 대기 하지 못했습니다.  
-  
- 응용 프로그램에서 허용 하지 않습니다 [pgosweep](../../build/reference/pgosweep.md) 실행 되도록 합니다.  가능 하면 응용 프로그램이 유휴 상태일 때 pgosweep를 실행 합니다.
+
+정리 작업을 유휴 시간 동안 대기 하지 못했습니다.
+
+응용 프로그램을 허용 하지 않습니다 [pgosweep](../../build/reference/pgosweep.md) 실행 합니다.  응용 프로그램이 유휴 상태일 때 가능 하면 pgosweep를 실행 합니다.

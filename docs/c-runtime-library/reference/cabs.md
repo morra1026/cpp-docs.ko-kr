@@ -38,12 +38,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80ea966b748407d51283823073a0c10a40717cf5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cad3c873dd7e0bab2a7b75e785fb91c704e616de
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393539"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085288"
 ---
 # <a name="cabs"></a>_cabs
 
@@ -64,15 +64,15 @@ double _cabs(
 
 ## <a name="return-value"></a>반환 값
 
-**_cabs** 성공 하는 경우 해당 인수의 절대값을 반환 합니다. 오버플로에서 **_cabs** 반환 **HUGE_VAL** 설정 **errno** 를 **ERANGE**합니다. [_matherr](matherr.md)을 사용하여 오류 처리를 변경할 수 있습니다.
+**_cabs** 성공 하는 경우 해당 인수의 절대값을 반환 합니다. 오버플로에서 **_cabs** 반환 **HUGE_VAL** 설정 하 고 **errno** 에 **ERANGE**합니다. [_matherr](matherr.md)을 사용하여 오류 처리를 변경할 수 있습니다.
 
 ## <a name="remarks"></a>설명
 
-**_cabs** 함수 형식의 구조 여야 하는 복잡 한 숫자의 절대값을 계산 [_complex](../../c-runtime-library/standard-types.md)합니다. 구조 *z* 는 실제 구성 요소로 이루어져 *x* 및 허수 구성 요소는 *y*합니다. 에 대 한 호출 **_cabs** 해당 하는 식의 값이 생성 `sqrt( z.x * z.x + z.y * z.y )`합니다.
+합니다 **_cabs** 형식의 구조 여야 하는 복합 숫자의 절대값을 계산 하는 함수 [_complex](../../c-runtime-library/standard-types.md)합니다. 구조 *z* 실수부 이루어집니다 *x* 허수 구성 요소가 *y*합니다. 에 대 한 호출 **_cabs** 해당 하는 식의 값을 생성 `sqrt( z.x * z.x + z.y * z.y )`합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_cabs**|\<math.h>|
 
@@ -107,4 +107,4 @@ The absolute value of 3.000000 + 4.000000i is 5.000000
 
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
 [abs, labs, llabs, _abs64](abs-labs-llabs-abs64.md)<br/>
-[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)   
+[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)

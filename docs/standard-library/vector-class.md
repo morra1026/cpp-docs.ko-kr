@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d60d47757bfcf1564d81dcb58c0727b1ca56b3ce
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2fdb8fea78d62202dd460f5dd219f2686bd99c6b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199497"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710237"
 ---
 # <a name="vector-class"></a>vector 클래스
 
@@ -116,11 +116,11 @@ class vector
 
 ### <a name="parameters"></a>매개 변수
 
-*Type*  
- 벡터에 저장되는 요소 데이터 형식입니다.
+*Type*<br/>
+벡터에 저장되는 요소 데이터 형식입니다.
 
-*할당자*  
- 벡터의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `allocator<Type>`입니다.
+*할당자*<br/>
+벡터의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `allocator<Type>`입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -234,20 +234,20 @@ void assign(InputIterator First, InputIterator Last);
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째*  
- 복사할 요소의 범위에서 첫 번째 요소의 위치입니다.
+*첫 번째*<br/>
+복사할 요소의 범위에서 첫 번째 요소의 위치입니다.
 
-*마지막*  
- 복사할 요소의 범위를 벗어난 첫 번째 요소의 위치입니다.
+*마지막*<br/>
+복사할 요소의 범위를 벗어난 첫 번째 요소의 위치입니다.
 
-*개수*  
- 벡터에 삽입되는 요소의 복사본 수입니다.
+*개수*<br/>
+벡터에 삽입되는 요소의 복사본 수입니다.
 
-*val*  
- 벡터에 삽입되는 요소의 값입니다.
+*val*<br/>
+벡터에 삽입되는 요소의 값입니다.
 
-*IList*  
- 삽입할 요소를 포함하는 initializer_list입니다.
+*IList*<br/>
+삽입할 요소를 포함하는 initializer_list입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -313,8 +313,8 @@ const_reference at(size_type _Pos) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*_Pos*  
- 벡터에서 참조할 요소의 아래 첨자 또는 위치 번호입니다.
+*_Pos*<br/>
+벡터에서 참조할 요소의 아래 첨자 또는 위치 번호입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1562,7 +1562,7 @@ void push_back(T&& Val);
 ### <a name="parameters"></a>매개 변수
 
 *val*<br/>
- 벡터의 끝에 추가된 요소에 할당할 값입니다.
+벡터의 끝에 추가된 요소에 할당할 값입니다.
 
 ### <a name="example"></a>예제
 
@@ -1726,8 +1726,8 @@ void reserve(size_type count);
 
 ### <a name="parameters"></a>매개 변수
 
-*count*  
- 벡터에 대해 할당할 최소 저장소 길이입니다.
+*count*<br/>
+벡터에 대해 할당할 최소 저장소 길이입니다.
 
 ### <a name="example"></a>예제
 
@@ -1768,11 +1768,11 @@ void resize(size_type Newsize, Type Val);
 
 ### <a name="parameters"></a>매개 변수
 
-*Newsize*  
- 벡터의 새 크기입니다.
+*Newsize*<br/>
+벡터의 새 크기입니다.
 
-*val*  
- 새 크기가 원래 크기보다 큰 경우 벡터에 추가된 새 요소의 초기화 값입니다. 이 값이 생략되면 새 개체는 기본 생성자를 사용합니다.
+*val*<br/>
+새 크기가 원래 크기보다 큰 경우 벡터에 추가된 새 요소의 초기화 값입니다. 이 값이 생략되면 새 개체는 기본 생성자를 사용합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2010,11 +2010,11 @@ friend void swap(
 
 ### <a name="parameters"></a>매개 변수
 
-*right*  
- 교환할 요소를 제공 하는 벡터 또는 벡터와 교환할 요소를 벡터 *왼쪽*합니다.
+*right*<br/>
+교환할 요소를 제공 하는 벡터 또는 벡터와 교환할 요소를 벡터 *왼쪽*합니다.
 
-*left*  
- 벡터와 교환할 요소를 벡터 *오른쪽*합니다.
+*left*<br/>
+벡터와 교환할 요소를 벡터 *오른쪽*합니다.
 
 ### <a name="example"></a>예제
 

@@ -16,34 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d28412fed7b31a81a0ef49d9e29c917f4c617e0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f37d21015724bbb66aaa2abf52f0ee2fab7b50a8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33254299"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045356"
 ---
 # <a name="compiler-error-c3100"></a>컴파일러 오류 C3100
-'target': 알 수 없는 특성 한정자  
-  
- 잘못 된 특성 대상 지정 되었습니다.  
-  
- 자세한 내용은 [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md)을 참조하세요.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3100 오류가 발생 합니다.  
-  
-```  
-// C3100.cpp  
-// compile with: /clr /c  
-using namespace System;  
-[AttributeUsage(AttributeTargets::All)]  
-public ref class Attr : public Attribute {  
-public:  
-   Attr(int t) : m_t(t) {}  
-   int m_t;  
-};  
-  
-[invalid_target:Attr(10)];   // C3100  
-[assembly:Attr(10)];   // OK  
+
+'target': 알 수 없는 특성 한정자
+
+특성 대상은 잘못 지정 되었습니다.
+
+자세한 내용은 [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md)을 참조하세요.
+
+## <a name="example"></a>예제
+
+다음 샘플 C3100를 생성합니다.
+
+```
+// C3100.cpp
+// compile with: /clr /c
+using namespace System;
+[AttributeUsage(AttributeTargets::All)]
+public ref class Attr : public Attribute {
+public:
+   Attr(int t) : m_t(t) {}
+   int m_t;
+};
+
+[invalid_target:Attr(10)];   // C3100
+[assembly:Attr(10)];   // OK
 ```

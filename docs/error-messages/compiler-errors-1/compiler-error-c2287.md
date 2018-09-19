@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b78dd6d7ffc44822cdff383f88b11a6cd899adf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3a57d2738ba55d4964274c3c25038b8ebf248b24
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33170270"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072578"
 ---
 # <a name="compiler-error-c2287"></a>컴파일러 오류 C2287
-'class': 상속 표현: 'representation1' 필수 'representation2' 보다 덜 일반적은  
-  
- 클래스는 필요한 것 보다 간단한 방식으로 선언 됩니다.  
-  
- 다음 샘플에서는 C2287 오류가 생성 됩니다.  
-  
-```  
-// C2287.cpp  
-// compile with: /vmg /c  
-class __single_inheritance X;  
-class __single_inheritance Y;  
-  
-struct A { };  
-struct B { };  
-struct X : A, B { };  // C2287  X uses multiple inheritance  
-struct Y : A { };  // OK  
+
+'class': 상속 표현: 'representation1' 필수 'representation2' 보다 덜 일반적은
+
+클래스는 필요한 것 보다 더 간단한 표현으로 선언 됩니다.
+
+다음 샘플에서는 C2287 오류가 생성 됩니다.
+
+```
+// C2287.cpp
+// compile with: /vmg /c
+class __single_inheritance X;
+class __single_inheritance Y;
+
+struct A { };
+struct B { };
+struct X : A, B { };  // C2287  X uses multiple inheritance
+struct Y : A { };  // OK
 ```

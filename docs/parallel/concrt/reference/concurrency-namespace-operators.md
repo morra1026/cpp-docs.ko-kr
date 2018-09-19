@@ -1,5 +1,5 @@
 ---
-title: 동시성 네임 스페이스 연산자 | Microsoft Docs
+title: concurrency 네임 스페이스 연산자 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,14 +13,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90c8fbbdd0e5d2baf0ba82998a6951242b73203a
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 13b9288e39e372ecb23299d355abc921353444b7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33693512"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059877"
 ---
-# <a name="concurrency-namespace-operators"></a>동시성 네임 스페이스 연산자
+# <a name="concurrency-namespace-operators"></a>concurrency 네임 스페이스 연산자
 ||||  
 |-|-|-|  
 |[operator!=](#operator_neq)|[operator&amp;&amp;](#operator_amp_amp)|[operator&gt;](#operator_gt)|  
@@ -55,14 +55,14 @@ inline task<void> operator||(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `ReturnType`  
- 반환되는 작업의 형식입니다.  
+*ReturnType*<br/>
+반환되는 작업의 형식입니다.  
   
- `lhs`  
- 결과 작업으로 결합할 첫 번째 작업입니다.  
+*lhs*<br/>
+결과 작업으로 결합할 첫 번째 작업입니다.  
   
- `rhs`  
- 결과 작업으로 결합할 두 번째 작업입니다.  
+*rhs*<br/>
+결과 작업으로 결합할 두 번째 작업입니다.  
   
 ### <a name="return-value"></a>반환 값  
  두 입력 작업이 모두 성공적으로 완료된 경우 성공적으로 완료되는 작업입니다. 입력 작업이 `T` 형식이면 이 함수의 출력은 `task<std::vector<T>`가 됩니다. 입력 작업이 `void` 형식이면 이 함수의 출력 작업도 `task<void>`가 됩니다.  
@@ -104,14 +104,14 @@ inline task<void>  operator&&(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `ReturnType`  
- 반환되는 작업의 형식입니다.  
+*ReturnType*<br/>
+반환되는 작업의 형식입니다.  
   
- `lhs`  
- 결과 작업으로 결합할 첫 번째 작업입니다.  
+*lhs*<br/>
+결과 작업으로 결합할 첫 번째 작업입니다.  
   
- `rhs`  
- 결과 작업으로 결합할 두 번째 작업입니다.  
+*rhs*<br/>
+결과 작업으로 결합할 두 번째 작업입니다.  
   
 ### <a name="return-value"></a>반환 값  
  두 입력 작업이 모두 성공적으로 완료되는 경우 완료되는 작업입니다. 입력 작업이 `T` 형식이면 이 함수의 출력은 `task<std::vector<T>>`가 됩니다. 입력 작업이 `void` 형식이면 이 함수의 출력 작업도 `task<void>`가 됩니다.  
@@ -130,30 +130,30 @@ inline bool operator== (
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `T`  
- 동시 벡터에 저장 된 요소의 데이터 형식입니다.  
+*T*<br/>
+동시 벡터에 저장 된 요소의 데이터 형식입니다.  
   
- `A1`  
- 첫 번째 할당자 형식 `concurrent_vector` 개체입니다.  
+*A1*<br/>
+첫 번째 할당자 형식 `concurrent_vector` 개체입니다.  
   
- `A2`  
- 두 번째 할당자 형식 `concurrent_vector` 개체입니다.  
+*A2*<br/>
+두 번째 할당자 형식 `concurrent_vector` 개체입니다.  
   
- `_A`  
- `concurrent_vector` 형식의 개체입니다.  
+*_A*<br/>
+`concurrent_vector` 형식의 개체입니다.  
   
- `_B`  
- `concurrent_vector` 형식의 개체입니다.  
+*_B*<br/>
+`concurrent_vector` 형식의 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
- `true` 연산자의 좌 변에 있는 동시 벡터가 연산자의 오른쪽에 있는 동시 벡터와 같은지 그렇지 않으면 `false`합니다.  
+ `true` 연산자의 좌 변에 있는 동시 벡터가 연산자의 오른쪽에 있는 동시 벡터와 같으면 그렇지 않으면 `false`합니다.  
   
 ### <a name="remarks"></a>설명  
- 두 개의 동시 벡터는 동일한 수의 요소 및 해당 요소가 동일한 값이 있는 같습니다. 그렇지 않으면 목록은 같지 않은 것입니다.  
+ 포함 된 요소 수가 같고 개별 요소의 값이 같은 경우 두 개의 동시 벡터 같습니다. 그렇지 않으면 목록은 같지 않은 것입니다.  
   
- 이 메서드는 동시성 으로부터 안전한 동시 벡터를 수정할 수 있는 다른 메서드에 대해 없습니다 `_A` 또는 `_B`합니다.  
+ 이 메서드는 동시 벡터를 수정할 수 있는 다른 방법에 대해 동시성 으로부터 안전한 아닙니다 `_A` 또는 `_B`합니다.  
   
-##  <a name="operator_neq"></a>  operator! = 연산자  
+##  <a name="operator_neq"></a>  연산자! = 연산자  
  연산자의 좌변에 있는 `concurrent_vector` 개체가 우변에 있는 `concurrent_vector` 개체와 같지 않은지 테스트합니다.  
   
 ```  
@@ -164,28 +164,28 @@ inline bool operator!= (
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `T`  
- 동시 벡터에 저장 된 요소의 데이터 형식입니다.  
+*T*<br/>
+동시 벡터에 저장 된 요소의 데이터 형식입니다.  
   
- `A1`  
- 첫 번째 할당자 형식 `concurrent_vector` 개체입니다.  
+*A1*<br/>
+첫 번째 할당자 형식 `concurrent_vector` 개체입니다.  
   
- `A2`  
- 두 번째 할당자 형식 `concurrent_vector` 개체입니다.  
+*A2*<br/>
+두 번째 할당자 형식 `concurrent_vector` 개체입니다.  
   
- `_A`  
- `concurrent_vector` 형식의 개체입니다.  
+*_A*<br/>
+`concurrent_vector` 형식의 개체입니다.  
   
- `_B`  
- `concurrent_vector` 형식의 개체입니다.  
+*_B*<br/>
+`concurrent_vector` 형식의 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
- `true` 동시 벡터 같지 않으면 하는 경우 `false` 동시 벡터 같으면 합니다.  
+ `true` 동시 벡터가 같지 않으면 하는 경우 `false` 동시 벡터가 같으면 합니다.  
   
 ### <a name="remarks"></a>설명  
- 두 개의 동시 벡터는 동일한 수의 요소 및 해당 요소가 동일한 값이 있는 같습니다. 그렇지 않으면 목록은 같지 않은 것입니다.  
+ 포함 된 요소 수가 같고 개별 요소의 값이 같은 경우 두 개의 동시 벡터 같습니다. 그렇지 않으면 목록은 같지 않은 것입니다.  
   
- 이 메서드는 동시성 으로부터 안전한 동시 벡터를 수정할 수 있는 다른 메서드에 대해 없습니다 `_A` 또는 `_B`합니다.  
+ 이 메서드는 동시 벡터를 수정할 수 있는 다른 방법에 대해 동시성 으로부터 안전한 아닙니다 `_A` 또는 `_B`합니다.  
   
 ##  <a name="operator_lt"></a>  연산자&lt; 연산자  
  연산자의 좌변에 있는 `concurrent_vector` 개체가 우변에 있는 `concurrent_vector` 개체보다 작은지 테스트합니다.  
@@ -198,28 +198,28 @@ inline bool operator<(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `T`  
- 동시 벡터에 저장 된 요소의 데이터 형식입니다.  
+*T*<br/>
+동시 벡터에 저장 된 요소의 데이터 형식입니다.  
   
- `A1`  
- 첫 번째 할당자 형식 `concurrent_vector` 개체입니다.  
+*A1*<br/>
+첫 번째 할당자 형식 `concurrent_vector` 개체입니다.  
   
- `A2`  
- 두 번째 할당자 형식 `concurrent_vector` 개체입니다.  
+*A2*<br/>
+두 번째 할당자 형식 `concurrent_vector` 개체입니다.  
   
- `_A`  
- `concurrent_vector` 형식의 개체입니다.  
+*_A*<br/>
+`concurrent_vector` 형식의 개체입니다.  
   
- `_B`  
- `concurrent_vector` 형식의 개체입니다.  
+*_B*<br/>
+`concurrent_vector` 형식의 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `true` 연산자의 좌 변에 있는 동시 벡터가 연산자의 오른쪽에 있는 동시 벡터 보다 작은 경우 그렇지 않으면 `false`합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 연산자의 동작에 대 한 해당 연산자와 같습니다는 `vector` 클래스에 `std` 네임 스페이스입니다.  
+ 이 연산자의 동작에 해당 하는 연산자와 동일 합니다 `vector` 클래스는 `std` 네임 스페이스입니다.  
   
- 이 메서드는 동시성 으로부터 안전한 동시 벡터를 수정할 수 있는 다른 메서드에 대해 없습니다 `_A` 또는 `_B`합니다.  
+ 이 메서드는 동시 벡터를 수정할 수 있는 다른 방법에 대해 동시성 으로부터 안전한 아닙니다 `_A` 또는 `_B`합니다.  
   
 ##  <a name="operator_lt_eq"></a>  연산자&lt;= 연산자  
  연산자의 좌변에 있는 `concurrent_vector` 개체가 우변에 있는 `concurrent_vector` 개체보다 작거나 같은지 테스트합니다.  
@@ -232,28 +232,28 @@ inline bool operator<= (
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `T`  
- 동시 벡터에 저장 된 요소의 데이터 형식입니다.  
+*T*<br/>
+동시 벡터에 저장 된 요소의 데이터 형식입니다.  
   
- `A1`  
- 첫 번째 할당자 형식 `concurrent_vector` 개체입니다.  
+*A1*<br/>
+첫 번째 할당자 형식 `concurrent_vector` 개체입니다.  
   
- `A2`  
- 두 번째 할당자 형식 `concurrent_vector` 개체입니다.  
+*A2*<br/>
+두 번째 할당자 형식 `concurrent_vector` 개체입니다.  
   
- `_A`  
- `concurrent_vector` 형식의 개체입니다.  
+*_A*<br/>
+`concurrent_vector` 형식의 개체입니다.  
   
- `_B`  
- `concurrent_vector` 형식의 개체입니다.  
+*_B*<br/>
+`concurrent_vector` 형식의 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
- `true` 연산자의 좌 변에 있는 동시 벡터 보다 크거나 같음 연산자의 오른쪽에 있는 동시 벡터 작은 경우 그렇지 않으면 `false`합니다.  
+ `true` 연산자의 좌 변에 있는 동시 벡터가 연산자의 오른쪽에 있는 동시 벡터 보다 작거나 경우 그렇지 않으면 `false`합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 연산자의 동작에 대 한 해당 연산자와 같습니다는 `vector` 클래스에 `std` 네임 스페이스입니다.  
+ 이 연산자의 동작에 해당 하는 연산자와 동일 합니다 `vector` 클래스는 `std` 네임 스페이스입니다.  
   
- 이 메서드는 동시성 으로부터 안전한 동시 벡터를 수정할 수 있는 다른 메서드에 대해 없습니다 `_A` 또는 `_B`합니다.  
+ 이 메서드는 동시 벡터를 수정할 수 있는 다른 방법에 대해 동시성 으로부터 안전한 아닙니다 `_A` 또는 `_B`합니다.  
   
 ##  <a name="operator_gt"></a>  연산자&gt; 연산자  
  연산자의 좌변에 있는 `concurrent_vector` 개체가 우변에 있는 `concurrent_vector` 개체보다 큰지 테스트합니다.  
@@ -266,28 +266,28 @@ inline bool operator>(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `T`  
- 동시 벡터에 저장 된 요소의 데이터 형식입니다.  
+*T*<br/>
+동시 벡터에 저장 된 요소의 데이터 형식입니다.  
   
- `A1`  
- 첫 번째 할당자 형식 `concurrent_vector` 개체입니다.  
+*A1*<br/>
+첫 번째 할당자 형식 `concurrent_vector` 개체입니다.  
   
- `A2`  
- 두 번째 할당자 형식 `concurrent_vector` 개체입니다.  
+*A2*<br/>
+두 번째 할당자 형식 `concurrent_vector` 개체입니다.  
   
- `_A`  
- `concurrent_vector` 형식의 개체입니다.  
+*_A*<br/>
+`concurrent_vector` 형식의 개체입니다.  
   
- `_B`  
- `concurrent_vector` 형식의 개체입니다.  
+*_B*<br/>
+`concurrent_vector` 형식의 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  연산자 좌변에 있는 동시 벡터가 연산자 우변에 있는 동시 벡터보다 큰 경우 `true`이고, 그렇지 않으면 `false`입니다.  
   
 ### <a name="remarks"></a>설명  
- 이 연산자의 동작에 대 한 해당 연산자와 같습니다는 `vector` 클래스에 `std` 네임 스페이스입니다.  
+ 이 연산자의 동작에 해당 하는 연산자와 동일 합니다 `vector` 클래스는 `std` 네임 스페이스입니다.  
   
- 이 메서드는 동시성 으로부터 안전한 동시 벡터를 수정할 수 있는 다른 메서드에 대해 없습니다 `_A` 또는 `_B`합니다.  
+ 이 메서드는 동시 벡터를 수정할 수 있는 다른 방법에 대해 동시성 으로부터 안전한 아닙니다 `_A` 또는 `_B`합니다.  
   
 ##  <a name="operator_gt_eq"></a>  연산자&gt;= 연산자  
  연산자의 좌변에 있는 `concurrent_vector` 개체가 우변에 있는 `concurrent_vector` 개체보다 크거나 같은지 테스트합니다.  
@@ -300,28 +300,28 @@ inline bool operator>= (
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `T`  
- 동시 벡터에 저장 된 요소의 데이터 형식입니다.  
+*T*<br/>
+동시 벡터에 저장 된 요소의 데이터 형식입니다.  
   
- `A1`  
- 첫 번째 할당자 형식 `concurrent_vector` 개체입니다.  
+*A1*<br/>
+첫 번째 할당자 형식 `concurrent_vector` 개체입니다.  
   
- `A2`  
- 두 번째 할당자 형식 `concurrent_vector` 개체입니다.  
+*A2*<br/>
+두 번째 할당자 형식 `concurrent_vector` 개체입니다.  
   
- `_A`  
- `concurrent_vector` 형식의 개체입니다.  
+*_A*<br/>
+`concurrent_vector` 형식의 개체입니다.  
   
- `_B`  
- `concurrent_vector` 형식의 개체입니다.  
+*_B*<br/>
+`concurrent_vector` 형식의 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
- `true` 연산자의 좌 변에 있는 동시 벡터가 연산자의 오른쪽에 있는 동시 벡터 보다 크거나 경우 그렇지 않으면 `false`합니다.  
+ `true` 연산자의 좌 변에 있는 동시 벡터 보다 크거나 같음 연산자의 오른쪽에 있는 동시 벡터 이면 그렇지 않으면 `false`합니다.  
   
 ### <a name="remarks"></a>설명  
- 이 연산자의 동작에 대 한 해당 연산자와 같습니다는 `vector` 클래스에 `std` 네임 스페이스입니다.  
+ 이 연산자의 동작에 해당 하는 연산자와 동일 합니다 `vector` 클래스는 `std` 네임 스페이스입니다.  
   
- 이 메서드는 동시성 으로부터 안전한 동시 벡터를 수정할 수 있는 다른 메서드에 대해 없습니다 `_A` 또는 `_B`합니다.  
+ 이 메서드는 동시 벡터를 수정할 수 있는 다른 방법에 대해 동시성 으로부터 안전한 아닙니다 `_A` 또는 `_B`합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [concurrency 네임스페이스](concurrency-namespace.md)

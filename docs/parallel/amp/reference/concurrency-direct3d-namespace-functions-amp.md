@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 099bd36908ef12d2cd4c6b4603dc047d7ed6e74f
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: aefb11f8028aa2af9822bc6433e85d06d0609a9d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107609"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039168"
 ---
 # <a name="concurrencydirect3d-namespace-functions-amp"></a>Concurrency::direct3d 네임 스페이스 함수 (AMP)
 ||||
@@ -60,7 +60,7 @@ inline int abs(int _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_X`  
+*_X*<br/>
 정수 값
 
 ### <a name="return-value"></a>반환 값
@@ -83,13 +83,13 @@ inline int clamp(
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_X`  
+*_X*<br/>
 고정 값
 
-`_Min`  
+*_Min*<br/>
 고정 범위의 하한값입니다.
 
-`_Max`  
+*_Max*<br/>
 고정 범위의 상한입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -103,7 +103,7 @@ inline unsigned int countbits(unsigned int _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_X`  
+*_X*<br/>
 부호 없는 정수 값
 
 ### <a name="return-value"></a>반환 값
@@ -126,16 +126,16 @@ accelerator_view create_accelerator_view(
 ```  
 
 #### <a name="parameters"></a>매개 변수
-`_Accelerator`  
+*_Accelerator*<br/>
 새 accelerator_view를 만들려는 액셀러레이터입니다.
 
-`_D3D_device`  
+*_D3D_device*<br/>
 Direct3D 장치 인터페이스에 대 한 포인터입니다.
 
-`_Disable_timeout`  
+*_Disable_timeout*<br/>
 새로 만든된 accelerator_view에 대 한 제한 시간을 비활성화 해야 하는지 여부를 지정 하는 부울 매개 변수입니다. Direct3D 장치를 만들기 위한 D3D11_CREATE_DEVICE_DISABLE_GPU_TIMEOUT 플래그에 해당 하 고 운영 체제 Windows 제한 시간 별로 장치를 재설정 하지 않고 실행 하는 데 2 초 이상 걸리는 작업을 허용 해야 하는 경우를 나타내는 데이 감지 및 복구 메커니즘입니다. Accelerator_view에서 시간이 오래 걸리는 작업을 수행 해야 하는 경우이 플래그의 사용을 사용 하는 것이 좋습니다.
 
-`_Qmode`  
+*_Qmode*<br/>
 합니다 [queuing_mode](concurrency-namespace-enums-amp.md#queuing_mode) 새로 만든된 accelerator_view에 대해 사용할 수 있습니다. 이 매개 변수는 기본값은 `queuing_mode_automatic`합니다.
 
 ## <a name="return-value"></a>반환 값
@@ -157,7 +157,7 @@ void __cdecl d3d_access_lock(accelerator_view& _Av);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Av`  
+*_Av*<br/>
 잠글 accelerator_view입니다.
 
 ##  <a name="d3d_access_try_lock"></a>  d3d_access_try_lock
@@ -168,7 +168,7 @@ bool __cdecl d3d_access_try_lock(accelerator_view& _Av);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Av`  
+*_Av*<br/>
 잠글 accelerator_view입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -182,7 +182,7 @@ void __cdecl d3d_access_unlock(accelerator_view& _Av);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Av`  
+*_Av*<br/>
 잠금을 발표를 앞둔 accelerator_view입니다.
 
 ##  <a name="firstbithigh"></a>  firstbithigh
@@ -193,7 +193,7 @@ inline int firstbithigh(int _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_X`  
+*_X*<br/>
 정수 값
 
 ### <a name="return-value"></a>반환 값
@@ -207,7 +207,7 @@ inline int firstbitlow(int _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_X`  
+*_X*<br/>
 정수 값
 
 ### <a name="return-value"></a>반환 값
@@ -226,13 +226,13 @@ IUnknown *get_buffer(
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`value_type`  
+*value_type*<br/>
 배열 요소의 형식입니다.
 
-`_Rank`  
+*_Rank*<br/>
 배열의 차수입니다.
 
-`_Array`  
+*_Array*<br/>
 기본 Direct3D 버퍼 인터페이스를 반환 되는 Direct3D accelerator_view의 배열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -263,10 +263,10 @@ inline int imax(
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_X`  
+*_X*<br/>
 정수 값
 
-`_Y`  
+*_Y*<br/>
 정수 값
 
 ### <a name="return-value"></a>반환 값
@@ -282,10 +282,10 @@ inline int imin(
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_X`  
+*_X*<br/>
 정수 값
 
-`_Y`  
+*_Y*<br/>
 정수 값
 
 ### <a name="return-value"></a>반환 값
@@ -299,7 +299,7 @@ bool __cdecl is_timeout_disabled(const accelerator_view& _Accelerator_view);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Accelerator_view`  
+*_Accelerator_view*<br/>
 제한 시간 설정을 비활성화 있는 accelerator_view를 쿼리할 수 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -334,13 +334,13 @@ inline unsigned int mad(
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_X`  
+*_X*<br/>
 첫 번째 인수를 지정 합니다.
 
-`_Y`  
+*_Y*<br/>
 두 번째 인수를 지정 합니다.
 
-`_Z`  
+*_Z*<br/>
 세 번째 인수를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -361,19 +361,19 @@ array<value_type, _Rank> make_array(
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`value_type`  
+*value_type*<br/>
 만들려는 배열의 요소 형식입니다.
 
-`_Rank`  
+*_Rank*<br/>
 만들려는 배열의 차수입니다.
 
-`_Extent`  
+*_Extent*<br/>
 배열 집합체의 모양을 설명 하는 범위입니다.
 
-`_Rv`  
+*_Rv*<br/>
 배열이 만들 D3D 액셀러레이터 보기입니다.
 
-`_D3D_buffer`  
+*_D3D_buffer*<br/>
 배열을 만들기 위한 D3D 버퍼의 IUnknown 인터페이스 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -387,7 +387,7 @@ inline float noise(float _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_X`  
+*_X*<br/>
 Perlin 노이즈를 생성하는 부동 소수점 값
 
 ### <a name="return-value"></a>반환 값
@@ -401,7 +401,7 @@ inline float radians(float _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_X`  
+*_X*<br/>
 부동 소수점 값
 
 ### <a name="return-value"></a>반환 값
@@ -418,7 +418,7 @@ inline double rcp(double _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_X`  
+*_X*<br/>
 역 수를 계산 하는 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -432,7 +432,7 @@ inline unsigned int reversebits(unsigned int _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_X`  
+*_X*<br/>
 부호 없는 정수 값
 
 ### <a name="return-value"></a>반환 값
@@ -446,7 +446,7 @@ inline float saturate(float _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_X`  
+*_X*<br/>
 부동 소수점 값
 
 ### <a name="return-value"></a>반환 값
@@ -460,7 +460,7 @@ inline int sign(int _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_X`  
+*_X*<br/>
 정수 값
 
 ### <a name="return-value"></a>반환 값
@@ -477,13 +477,13 @@ inline float smoothstep(
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Min`  
+*_Min*<br/>
 부동 소수점 값
 
-`_Max`  
+*_Max*<br/>
 부동 소수점 값
 
-`_X`  
+*_X*<br/>
 부동 소수점 값
 
 ### <a name="return-value"></a>반환 값
@@ -499,10 +499,10 @@ inline float step(
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_Y`  
+*_Y*<br/>
 부동 소수점 값
 
-`_X`  
+*_X*<br/>
 부동 소수점 값
 
 ### <a name="return-value"></a>반환 값
@@ -518,10 +518,10 @@ inline unsigned int umax(
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_X`  
+*_X*<br/>
 정수 값
 
-`_Y`  
+*_Y*<br/>
 정수 값
 
 ### <a name="return-value"></a>반환 값
@@ -537,10 +537,10 @@ inline unsigned int umin(
 ```  
 
 ### <a name="parameters"></a>매개 변수
-`_X`  
+*_X*<br/>
 정수 값
 
-`_Y`  
+*_Y*<br/>
 정수 값
 
 ### <a name="return-value"></a>반환 값

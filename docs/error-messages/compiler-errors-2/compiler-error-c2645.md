@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0330f9f678da58648c2fd445f7a291b02c167a89
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2ada345b79c061c71bc716bf7baf96116444bcc7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229150"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076829"
 ---
 # <a name="compiler-error-c2645"></a>컴파일러 오류 C2645
-멤버의 포인터에 대 한 정규화 된 이름이 없습니다 (발견 ':: *')  
-  
- 멤버에 대 한 포인터의 선언에서 클래스를 지정 하지 않습니다.  
-  
- 다음 샘플에서는 C2645 오류가 생성 됩니다.  
-  
-```  
-// C2645.cpp  
-class A {};  
-int main() {  
-   int B::* bp;   // C2645 B not defined  
-   int A::* ap;   // OK  
-}  
+
+멤버에 대 한 포인터에 대 한 정규화 된 이름이 없는 (찾을 수 ':: *')
+
+멤버에 대 한 포인터의 선언에서 클래스를 지정 하지 않습니다.
+
+다음 샘플에서는 C2645 오류가 생성 됩니다.
+
+```
+// C2645.cpp
+class A {};
+int main() {
+   int B::* bp;   // C2645 B not defined
+   int A::* ap;   // OK
+}
 ```

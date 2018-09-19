@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 524f360f2dcc2e1eaec11723395da0be7058c21a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 69838a690fcdddc58194caf38e3666fef023222c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756505"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028053"
 ---
 # <a name="com-map-macros"></a>COM 맵 매크로
 
@@ -47,7 +47,7 @@ BEGIN_COM_MAP(x)
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 [in] 인터페이스에 노출 하는 클래스 개체의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -70,5 +70,5 @@ END_COM_MAP()
 
 ## <a name="see-also"></a>참고 항목
 
-[매크로](../../atl/reference/atl-macros.md)   
+[매크로](../../atl/reference/atl-macros.md)<br/>
 [COM 맵 전역 함수](../../atl/reference/com-map-global-functions.md)

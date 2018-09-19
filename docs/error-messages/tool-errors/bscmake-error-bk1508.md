@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2ae57caba0d6dfda1fa188beee2137a011c1ef3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dd27f649563cc750787a4c767a8e359bd7e95b86
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294377"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045330"
 ---
 # <a name="bscmake-error-bk1508"></a>BSCMAKE 오류 BK1508
-'filename' 임시 파일을 삭제할 수 없습니다 [: 이유]  
-  
- BSCMAKE에서 임시 파일 중 하나를 삭제할 수 없습니다.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>다음과 같은 가능한 원인을 확인하여 수정하려면  
-  
-1.  다른 프로세스에서 파일을 엽니다.  
-  
-2.  하드웨어 오류가 발생 합니다.
+
+'filename' 임시 파일을 삭제할 수 없습니다. [: 이유]
+
+BSCMAKE는 해당 임시 파일 중 하나를 삭제할 수 없습니다.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>다음과 같은 가능한 원인을 확인하여 수정하려면
+
+1. 다른 프로세스에서 파일을 엽니다.
+
+1. 하드웨어 오류가 발생 합니다.

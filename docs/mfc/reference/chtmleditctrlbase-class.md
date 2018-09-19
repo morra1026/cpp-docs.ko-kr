@@ -230,12 +230,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d28eaff98d2af12d24fab91797182c99d33d317d
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e2d2bdddd950197406672c59a6577d33985d3a54
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43207964"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031511"
 ---
 # <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase 클래스
 HTML 편집 구성 요소를 나타냅니다.  
@@ -361,8 +361,8 @@ template <class T> class CHtmlEditCtrlBase
 |[CHtmlEditCtrlBase::UnorderList](#unorderlist)|현재 선택 영역을 정렬 된 목록 및 일반 형식으로 블록을 전환합니다.|  
   
 #### <a name="parameters"></a>매개 변수  
- `T`  
- 파생된 클래스의 이름입니다.  
+*T*<br/>
+파생된 클래스의 이름입니다.  
   
 ## <a name="remarks"></a>설명  
  `CHtmlEditCtrlBase` WebBrowser의 html 편집 명령와 같은 멤버 함수를 제공 [굵게](#bold)합니다. (또는 호출할 수 있습니다 [ExecCommand](#execcommand) IDM_BOLD 명령을 실행 합니다.)  

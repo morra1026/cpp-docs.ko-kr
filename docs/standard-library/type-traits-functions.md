@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::is_trivially_copy_assignable
 - std::is_trivially_move_assignable
 - std::is_trivially_move_constructible
-ms.openlocfilehash: 3754af9a32ab1beeb4f3b9a783547bd081d57a46
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 551282b6d99491e49a185bab2ede2f775bb55498
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955840"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707826"
 ---
 # <a name="lttypetraitsgt-functions"></a>&lt;type_traits&gt; 함수
 
@@ -53,11 +53,11 @@ struct is_assignable;
 
 ### <a name="parameters"></a>매개 변수
 
-*대상*  
- 할당을 받는 개체의 형식입니다.
+*대상*<br/>
+할당을 받는 개체의 형식입니다.
 
-*From*  
- 값을 제공하는 개체의 형식입니다.
+*From*<br/>
+값을 제공하는 개체의 형식입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -74,8 +74,8 @@ struct is_copy_assignable;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*  
- 형식이 쿼리입니다.
+*Ty*<br/>
+형식이 쿼리입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -92,14 +92,14 @@ struct is_copy_constructible;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*  
- 형식이 쿼리입니다.
+*Ty*<br/>
+형식이 쿼리입니다.
 
 ### <a name="remarks"></a>설명
 
 형식 조건자의 인스턴스 형태인 경우 true 형식을 *Ty* 는 클래스에 복사 생성자가 있는 그렇지 않으면 false입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <type_traits>
@@ -145,14 +145,14 @@ struct is_default_constructible;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
- 형식이 쿼리입니다.
+*T*<br/>
+형식이 쿼리입니다.
 
 ### <a name="remarks"></a>설명
 
 형식 조건자의 인스턴스 형태인 경우 true 형식을 *T* 는 클래스 형식에 기본 생성자, 그렇지 않으면 false입니다. 이것은 조건자 `is_constructible<T>`에 해당합니다. 형식 *T* 완전 한 형식 이어야 합니다 **void**, 또는 범위를 알 수 없는 배열입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <type_traits>
@@ -198,8 +198,8 @@ struct is_move_assignable;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
- 형식이 쿼리입니다.
+*T*<br/>
+형식이 쿼리입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -216,8 +216,8 @@ struct is_move_constructible;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
- 평가할 형식입니다.
+*T*<br/>
+평가할 형식입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -234,8 +234,8 @@ struct is_nothrow_move_assignable;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*  
- 형식이 쿼리입니다.
+*Ty*<br/>
+형식이 쿼리입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -252,8 +252,8 @@ struct is_trivially_copy_assignable;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
- 형식이 쿼리입니다.
+*T*<br/>
+형식이 쿼리입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -272,8 +272,8 @@ struct is_trivially_move_assignable;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*  
- 형식이 쿼리입니다.
+*Ty*<br/>
+형식이 쿼리입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -302,8 +302,8 @@ struct is_trivially_move_constructible;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*  
- 형식이 쿼리입니다.
+*Ty*<br/>
+형식이 쿼리입니다.
 
 ### <a name="remarks"></a>설명
 

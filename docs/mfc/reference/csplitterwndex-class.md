@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ae4a24424acc4385927e0f7c99735bd50a6d472
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: a2b7abb9cbc3f75c2b4f50f87a1bfdd818e6a3f8
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37121652"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707345"
 ---
 # <a name="csplitterwndex-class"></a>CSplitterWndEx 클래스
 
@@ -50,12 +50,12 @@ class CSplitterWndEx : public CSplitterWnd
   
 |이름|설명|  
 |----------|-----------------|  
-|[CSplitterWndEx::OnDrawSplitter](#ondrawsplitter)|분할 창 그리기 위해 프레임 워크에서 호출 됩니다. (재정의 [CSplitterWnd::OnDrawSplitter](csplitterwnd-class.md#ondrawsplitter).)|  
+|[CSplitterWndEx::OnDrawSplitter](#ondrawsplitter)|분할기 창 그리기 위해 프레임 워크에서 호출 됩니다. (재정의 [CSplitterWnd::OnDrawSplitter](csplitterwnd-class.md#ondrawsplitter).)|  
   
 ## <a name="remarks"></a>설명  
- 재정의 `OnDrawSplitter` 창에 그래픽 컴포넌트의 모양을 사용자 지정 하는 메서드.  
+ 재정의 `OnDrawSplitter` 분할자 창 그래픽 구성 요소의 모양을 사용자 지정 하는 방법입니다.  
   
- `CSplitterWndEx` 클래스와 함께 사용 되는 [OnDrawSplitterBorder](cmfcvisualmanager-class.md#ondrawsplitterborder), [OnDrawSplitterBox](cmfcvisualmanager-class.md#ondrawsplitterbox), 및 [OnFillSplitterBackground](cmfcvisualmanager-class.md#onfillsplitterbackground) 는 메서드를 비주얼 관리자 구현합니다. 응용 프로그램에서 분할자 창 그리는 비주얼 관리자를 교체의 선언 된 `CSplitterWnd` 클래스와 `CSplitterWndEx` 클래스. 프레임 창 응용 프로그램에 대 한 분할 창 클래스 mainfrm.h에 있는 CMainFrame 클래스에서 선언 됩니다. 예를 들어 참조는 `OutlookDemo` 샘플 디렉터리에 샘플입니다.  
+ `CSplitterWndEx` 클래스와 함께 사용 되는 [OnDrawSplitterBorder](cmfcvisualmanager-class.md#ondrawsplitterborder), [OnDrawSplitterBox](cmfcvisualmanager-class.md#ondrawsplitterbox), 및 [OnFillSplitterBackground](cmfcvisualmanager-class.md#onfillsplitterbackground) 메서드를 시각화 관리자에서 구현 합니다. 응용 프로그램에서 창에 그릴 비주얼 관리자 시킬의 선언을 대체할 합니다 `CSplitterWnd` 클래스를 `CSplitterWndEx` 클래스. 프레임 창 응용 프로그램에 대 한 분할 창 클래스 mainfrm.h에 위치한 CMainFrame 클래스에 선언 됩니다. 예를 들어 참조 된 `OutlookDemo` 샘플 디렉터리에 샘플.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  [CObject](cobject-class.md)  
@@ -70,7 +70,7 @@ class CSplitterWndEx : public CSplitterWnd
  **헤더:** afxsplitterwndex.h  
   
 ##  <a name="ondrawsplitter"></a>  CSplitterWndEx::OnDrawSplitter  
- 분할 창 그리기 위해 프레임 워크에서 호출 됩니다.  
+ 분할기 창 그리기 위해 프레임 워크에서 호출 됩니다.  
   
 ```  
 virtual void OnDrawSplitter(  
@@ -81,14 +81,14 @@ virtual void OnDrawSplitter(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대 한 포인터입니다. 이 매개 변수가 NULL 이면 현재 창 프레임 워크를 다시 그립니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다. 이 매개 변수가 NULL 인 경우 활성 창 프레임 워크를 다시 그립니다.  
   
- [in] *n 유형*  
- 중 하나는 `CSplitterWnd::ESplitType` 분할자 창 요소 그리기를 지정 하는 열거형 값입니다. 유효한 값은 `splitBox`, `splitBar`, `splitIntersection` 및 `splitBorder`입니다.  
+*n 형식*<br/>
+[in] 중 하나는 `CSplitterWnd::ESplitType` 그릴 분할자 창 요소를 지정 하는 열거형 값입니다. 유효한 값은 `splitBox`, `splitBar`, `splitIntersection` 및 `splitBorder`입니다.  
   
- [in] *rect*  
- 차원 및에서 지정 된 분할자 창을 요소를 그릴 위치를 지정 하는 경계 사각형입니다.  
+*rect*<br/>
+[in] 크기와 지정 된 분할자 창 요소를 그릴 위치를 지정 하는 경계 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
   

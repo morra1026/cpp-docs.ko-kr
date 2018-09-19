@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e70e744ca4eb9cfa4b84ac0cca58be2452a8e25
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 4da59a76ccc4d51e82fd43805daa73d513fcde17
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756953"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044277"
 ---
 # <a name="atl-collections-and-enumerators"></a>ATL 컬렉션 및 열거자
 
@@ -36,21 +36,21 @@ ms.locfileid: "43756953"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[ATL 컬렉션 및 열거자 클래스](../atl/atl-collection-and-enumerator-classes.md)  
+[ATL 컬렉션 및 열거자 클래스](../atl/atl-collection-and-enumerator-classes.md)<br/>
 간략하게 설명 하 고 컬렉션 및 열거자를 구현 하는 도움이 되는 ATL 클래스에 대 한 링크를 제공 합니다.
 
-[컬렉션 및 열거자 인터페이스에 대한 디자인 원칙](../atl/design-principles-for-collection-and-enumerator-interfaces.md)  
+[컬렉션 및 열거자 인터페이스에 대한 디자인 원칙](../atl/design-principles-for-collection-and-enumerator-interfaces.md)<br/>
 각 유형의 인터페이스 되는 다양 한 디자인 원칙을 설명합니다.
 
-[C++ 표준 라이브러리 기반 컬렉션 구현](../atl/implementing-an-stl-based-collection.md)  
+[C++ 표준 라이브러리 기반 컬렉션 구현](../atl/implementing-an-stl-based-collection.md)<br/>
 C + + 표준 라이브러리 기반 컬렉션의 구현을 통해 안내 하는 확장 된 예제입니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 액티브 템플릿 라이브러리를 사용하여 프로그래밍하는 방법에 대한 개념 항목의 링크를 제공합니다.
 
-[ATLCollections 샘플](../visual-cpp-samples.md)  
+[ATLCollections 샘플](../visual-cpp-samples.md)<br/>
 샘플의 사용법을 보여 주는 `ICollectionOnSTLImpl` 및 `CComEnumOnSTL`, 및 사용자 지정 복사 정책 클래스의 구현입니다.
 
 ## <a name="see-also"></a>참고 항목

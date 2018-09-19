@@ -9,12 +9,12 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 8653eea6-12f2-4dd7-aa2f-db38a71599a0
-ms.openlocfilehash: 6edd8cb33aaf5cc90ead3a3d327f8222e4410443
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: af86ef68d734d72169a8bc8b506206cc72d3af4b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962311"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709542"
 ---
 # <a name="ltunorderedsetgt-operators"></a>&lt;unordered_set&gt; 연산자
 
@@ -32,11 +32,11 @@ bool operator!=(const unordered_set <Key, Hash, Pred, Allocator>& left, const un
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- `unordered_set` 형식의 개체입니다.
+*left*<br/>
+`unordered_set` 형식의 개체입니다.
 
-*right*  
- `unordered_set` 형식의 개체입니다.
+*right*<br/>
+`unordered_set` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -46,7 +46,7 @@ bool operator!=(const unordered_set <Key, Hash, Pred, Allocator>& left, const un
 
 unordered_set 개체 간의 비교는 해당 요소를 저장하는 임의의 순서에 의해 영향을 받지 않습니다. 두 unordered_set는 요소 수가 같고 특정 컨테이너의 요소가 다른 컨테이너의 요소 순열이면 동일합니다. 그렇지 않으면 목록은 같지 않은 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // unordered_set_ne.cpp
@@ -101,11 +101,11 @@ bool operator==(const unordered_set <Key, Hash, Pred, Allocator>& left, const un
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- `unordered_set` 형식의 개체입니다.
+*left*<br/>
+`unordered_set` 형식의 개체입니다.
 
-*right*  
- `unordered_set` 형식의 개체입니다.
+*right*<br/>
+`unordered_set` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -115,7 +115,7 @@ bool operator==(const unordered_set <Key, Hash, Pred, Allocator>& left, const un
 
 unordered_set 개체 간의 비교는 해당 요소를 저장하는 임의의 순서에 의해 영향을 받지 않습니다. 두 unordered_set는 요소 수가 같고 특정 컨테이너의 요소가 다른 컨테이너의 요소 순열이면 동일합니다. 그렇지 않으면 목록은 같지 않은 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // unordered_set_eq.cpp
@@ -170,11 +170,11 @@ bool operator!=(const unordered_multiset <Key, Hash, Pred, Allocator>& left, con
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- `unordered_multiset` 형식의 개체입니다.
+*left*<br/>
+`unordered_multiset` 형식의 개체입니다.
 
-*right*  
- `unordered_multiset` 형식의 개체입니다.
+*right*<br/>
+`unordered_multiset` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -184,7 +184,7 @@ bool operator!=(const unordered_multiset <Key, Hash, Pred, Allocator>& left, con
 
 unordered_multiset 개체 간의 비교는 해당 요소를 저장하는 임의의 순서에 의해 영향을 받지 않습니다. 두 unordered_multiset는 요소 수가 같고 특정 컨테이너의 요소가 다른 컨테이너의 요소 순열이면 동일합니다. 그렇지 않으면 목록은 같지 않은 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // unordered_multiset_ne.cpp
@@ -242,11 +242,11 @@ bool operator==(const unordered_multiset <Key, Hash, Pred, Allocator>& left, con
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
- `unordered_multiset` 형식의 개체입니다.
+*left*<br/>
+`unordered_multiset` 형식의 개체입니다.
 
-*right*  
- `unordered_multiset` 형식의 개체입니다.
+*right*<br/>
+`unordered_multiset` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -256,7 +256,7 @@ bool operator==(const unordered_multiset <Key, Hash, Pred, Allocator>& left, con
 
 unordered_multiset 개체 간의 비교는 해당 요소를 저장하는 임의의 순서에 의해 영향을 받지 않습니다. 두 unordered_multiset는 요소 수가 같고 특정 컨테이너의 요소가 다른 컨테이너의 요소 순열이면 동일합니다. 그렇지 않으면 목록은 같지 않은 것입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // unordered_multiset_eq.cpp

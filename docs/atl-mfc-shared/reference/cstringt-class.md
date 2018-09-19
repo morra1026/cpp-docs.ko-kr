@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77f86356dada81afb64f0c0efa8f5f5154caa8e4
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ca2f1e907864e096acfb385d8c340ab40fb82346
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766063"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059227"
 ---
 # <a name="cstringt-class"></a>CStringT 클래스
 
@@ -1611,11 +1611,11 @@ CRT 달리와 같은 함수를 토큰화 [strtok_s, _strtok_s_l, wcstok_s, _wcst
 
 이 예제의 출력은 다음과 같습니다.
 
-`Resulting Token: First`
-
-`Resulting Token: Second`
-
-`Resulting Token: Third`
+```Output
+Resulting Token: First
+Resulting Token: Second
+Resulting Token: Third
+```
 
 ##  <a name="trim"></a>  CStringT::Trim
 
@@ -1657,9 +1657,10 @@ CStringT& Trim();
 
 이 예제의 출력은 다음과 같습니다.
 
-`Before: "******Soccer is best, but liquor is quicker!!!!!"`
-
-`After : "Soccer is best, but liquor is quicker"`
+```Output
+Before: "******Soccer is best, but liquor is quicker!!!!!"
+After : "Soccer is best, but liquor is quicker"
+```
 
 ##  <a name="trimleft"></a>  CStringT::TrimLeft
 

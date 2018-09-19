@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0600d675d37e2fed1d318645daaedcce5f80ed89
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e7a6f4f014d609e8b650951d459c23b07fd4a006
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752373"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085448"
 ---
 # <a name="ccomobject-class"></a>CComObject 클래스
 
@@ -36,13 +36,13 @@ ms.locfileid: "43752373"
 ## <a name="syntax"></a>구문
 
 ```
-template<class Base>  
+template<class Base>
 class CComObject : public Base
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*자료*  
+*자료*<br/>
 파생 된 클래스 [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) 하거나 [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)처럼 개체에서 지원 하려는 다른 인터페이스 에서도 잘 합니다.
 
 ## <a name="members"></a>멤버
@@ -101,7 +101,7 @@ CComObject(void* = NULL);
 
 ### <a name="parameters"></a>매개 변수
 
-<em>void\*</em>  
+<em>void\*</em><br/>
 [in] 이 명명 되지 않은 매개 변수 사용 되지 않습니다. 다른 대칭에 대 한 존재 `CComXXXObjectXXX` 생성자입니다.
 
 ### <a name="remarks"></a>설명
@@ -132,7 +132,7 @@ static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);
 
 ### <a name="parameters"></a>매개 변수
 
-*pp*  
+*pp*<br/>
 [out] 에 대 한 포인터를 **CComObject <** `Base` **>** 포인터입니다. 하는 경우 `CreateInstance` 정상적이 지 않습니다 *pp* NULL로 설정 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -157,19 +157,19 @@ static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);
 
 ```
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
-template <class Q>  
+template <class Q>
 HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*iid*  
+*iid*<br/>
 [in] 요청 된 인터페이스의 식별자입니다.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] 로 식별 되는 인터페이스 포인터에 대 한 포인터 *iid*합니다. 개체는이 인터페이스를 지원 하지 않는 경우 *ppvObject* NULL로 설정 됩니다.
 
-*pp*  
+*pp*<br/>
 [out] 형식별로 식별 된 인터페이스 포인터에 `Q`입니다. 개체는이 인터페이스를 지원 하지 않는 경우 *pp* NULL로 설정 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -190,8 +190,8 @@ STDMETHOD_(ULONG, Release)();
 
 ## <a name="see-also"></a>참고 항목
 
-[CComAggObject 클래스](../../atl/reference/ccomaggobject-class.md)   
-[CComPolyObject 클래스](../../atl/reference/ccompolyobject-class.md)   
-[DECLARE_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_aggregatable)   
-[DECLARE_NOT_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_not_aggregatable)   
+[CComAggObject 클래스](../../atl/reference/ccomaggobject-class.md)<br/>
+[CComPolyObject 클래스](../../atl/reference/ccompolyobject-class.md)<br/>
+[DECLARE_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_aggregatable)<br/>
+[DECLARE_NOT_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_not_aggregatable)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

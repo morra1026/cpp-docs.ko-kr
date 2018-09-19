@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e53f8542983a6e15f353ff181efa280815fea9d8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0ff6080d6315156a1dbaeb89fae1d5cb10865405
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33282524"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074268"
 ---
 # <a name="compiler-warning-level-1-c4618"></a>컴파일러 경고(수준 1) C4618
-pragma 매개 변수 포함 빈 문자열인 경우. pragma가 무시 되었습니다  
-  
- Null 문자열에 대 한 인수로 지정 된 한 **#pragma**합니다.  
-  
- Pragma는 인수 없이 처리 됩니다.  
-  
- 다음 샘플에서는 C4618 오류가 생성 됩니다.  
-  
-```  
-// C4618.cpp  
-// compile with: /W1 /LD  
-#pragma code_seg("")   // C4618  
+
+pragma 매개 변수는 빈 문자열을 포함 pragma가 무시 됩니다
+
+인수로 지정 된 null 문자열을 **#pragma**합니다.
+
+Pragma는 인수 없이 처리 됩니다.
+
+다음 샘플에서는 C4618 오류가 생성 됩니다.
+
+```
+// C4618.cpp
+// compile with: /W1 /LD
+#pragma code_seg("")   // C4618
 ```

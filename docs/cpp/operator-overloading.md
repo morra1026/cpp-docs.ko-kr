@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eae4b7cc2211462b097efbefca580b796d573c59
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: ff6be1e24371692c53621cf6583677cc97d631b4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408948"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059201"
 ---
 # <a name="operator-overloading"></a>연산자 오버 로드
 
@@ -117,7 +117,7 @@ ms.locfileid: "39408948"
 
 ### <a name="nonredefinable-operators"></a>다시 정의할 수 없는 연산자
 
-|연산자|name|
+|연산자|이름|
 |-|-|
 |**.**|멤버 선택|
 |**.&#42;**|멤버 포인터 선택|
@@ -133,7 +133,7 @@ Point pt;
 pt.operator+( 3 );  // Call addition operator to add 3 to pt.
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 오버 로드 된 **+** 연산자 두 개의 복소수는 숫자 및 결과 반환 합니다.
 
@@ -187,5 +187,6 @@ int main() {
 - [멤버 액세스](../cpp/member-access.md)
 
 ## <a name="see-also"></a>참고자료
- [C++ 기본 제공 연산자, 우선 순위 및 결합성](../cpp/cpp-built-in-operators-precedence-and-associativity.md)  
- [키워드](../cpp/keywords-cpp.md)
+
+[C++ 기본 제공 연산자, 우선 순위 및 결합성](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[키워드](../cpp/keywords-cpp.md)

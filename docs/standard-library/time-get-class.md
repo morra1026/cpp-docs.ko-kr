@@ -48,12 +48,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ff44c6352224b65d712161a62d34b34ee858ad6
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 98ef24f5a714b1df5cb9be0875cdfd5adcb3fe62
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102748"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704876"
 ---
 # <a name="timeget-class"></a>time_get 클래스
 
@@ -69,10 +69,10 @@ class time_get : public time_base;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType*  
+*CharType*<br/>
 문자를 인코딩하기 위해 프로그램 내 사용하는 형식
 
-*InputIterator*  
+*InputIterator*<br/>
 시간 값을 읽어올 반복기입니다.
 
 ## <a name="remarks"></a>설명
@@ -320,19 +320,19 @@ virtual iter_type do_get_date(iter_type first,
 
 ### <a name="parameters"></a>매개 변수
 
-*first*  
+*first*<br/>
 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
-*last*  
+*last*<br/>
 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
-*iosbase*  
+*iosbase*<br/>
 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
-*state*  
+*state*<br/>
 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
-*ptm*  
+*ptm*<br/>
 날짜 정보를 저장할 위치에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -371,19 +371,19 @@ virtual iter_type do_get_monthname(iter_type first,
 
 ### <a name="parameters"></a>매개 변수
 
-*first*  
+*first*<br/>
 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
-*last*  
+*last*<br/>
 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
-*iosbase*  
+*iosbase*<br/>
 사용되지 않습니다.
 
-*state*  
+*state*<br/>
 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정하는 출력 매개 변수입니다.
 
-*ptm*  
+*ptm*<br/>
 월 정보를 저장할 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -414,19 +414,19 @@ virtual iter_type do_get_time(iter_type first,
 
 ### <a name="parameters"></a>매개 변수
 
-*first*  
+*first*<br/>
 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
-*last*  
+*last*<br/>
 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
-*iosbase*  
+*iosbase*<br/>
 사용되지 않습니다.
 
-*state*  
+*state*<br/>
 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
-*ptm*  
+*ptm*<br/>
 날짜 정보를 저장할 위치에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -465,19 +465,19 @@ virtual iter_type do_get_weekday(iter_type first,
 
 ### <a name="parameters"></a>매개 변수
 
-*first*  
+*first*<br/>
 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
-*last*  
+*last*<br/>
 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
-*iosbase*  
+*iosbase*<br/>
 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
-*state*  
+*state*<br/>
 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
-*ptm*  
+*ptm*<br/>
 요일 정보를 저장할 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -508,19 +508,19 @@ virtual iter_type do_get_year(iter_type first,
 
 ### <a name="parameters"></a>매개 변수
 
-*first*  
+*first*<br/>
 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
-*last*  
+*last*<br/>
 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
-*iosbase*  
+*iosbase*<br/>
 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
-*state*  
+*state*<br/>
 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
-*ptm*  
+*ptm*<br/>
 연도 정보를 저장할 위치에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -563,31 +563,31 @@ iter_type get(
 
 ### <a name="parameters"></a>매개 변수
 
-*first*  
+*first*<br/>
 변환할 시퀀스의 시작 위치를 나타내는 입력 반복기입니다.
 
-*last*  
+*last*<br/>
 변환할 시퀀스의 끝 부분을 나타내는 입력 반복기입니다.
 
-*iosbase*  
+*iosbase*<br/>
 스트림입니다.
 
-*state*  
+*state*<br/>
 적절한 비트 마스크 요소는 스트림 상태가 오류를 나타내도록 설정됩니다.
 
-*ptm*  
+*ptm*<br/>
 시간을 저장할 시간 구조에 대한 포인터입니다.
 
-*fmt*  
+*fmt*<br/>
 변환 지정자 문자입니다.
 
-*mod*  
+*mod*<br/>
 선택적 한정자 문자입니다.
 
-*fmt_first*  
+*fmt_first*<br/>
 형식 지시문의 시작 위치를 가리킵니다.
 
-*fmt_last*  
+*fmt_last*<br/>
 형식 지시문의 끝을 가리킵니다.
 
 ### <a name="return-value"></a>반환 값
@@ -620,19 +620,19 @@ iter_type get_date(iter_type first,
 
 ### <a name="parameters"></a>매개 변수
 
-*first*  
+*first*<br/>
 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
-*last*  
+*last*<br/>
 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
-*iosbase*  
+*iosbase*<br/>
 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
-*state*  
+*state*<br/>
 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
-*ptm*  
+*ptm*<br/>
 날짜 정보를 저장할 위치에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -714,19 +714,19 @@ iter_type get_monthname(iter_type first,
 
 ### <a name="parameters"></a>매개 변수
 
-*first*  
+*first*<br/>
 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
-*last*  
+*last*<br/>
 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
-*iosbase*  
+*iosbase*<br/>
 사용되지 않습니다.
 
-*state*  
+*state*<br/>
 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정하는 출력 매개 변수입니다.
 
-*ptm*  
+*ptm*<br/>
 월 정보를 저장할 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -806,19 +806,19 @@ iter_type get_time(iter_type first,
 
 ### <a name="parameters"></a>매개 변수
 
-*first*  
+*first*<br/>
 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
-*last*  
+*last*<br/>
 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
-*iosbase*  
+*iosbase*<br/>
 사용되지 않습니다.
 
-*state*  
+*state*<br/>
 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
-*ptm*  
+*ptm*<br/>
 날짜 정보를 저장할 위치에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -887,19 +887,19 @@ iter_type get_weekday(iter_type first,
 
 ### <a name="parameters"></a>매개 변수
 
-*first*  
+*first*<br/>
 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
-*last*  
+*last*<br/>
 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
-*iosbase*  
+*iosbase*<br/>
 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
-*state*  
+*state*<br/>
 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
-*ptm*  
+*ptm*<br/>
 요일 정보를 저장할 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -964,19 +964,19 @@ iter_type get_year(iter_type first,
 
 ### <a name="parameters"></a>매개 변수
 
-*first*  
+*first*<br/>
 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
-*last*  
+*last*<br/>
 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
-*iosbase*  
+*iosbase*<br/>
 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
-*state*  
+*state*<br/>
 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
-*ptm*  
+*ptm*<br/>
 연도 정보를 저장할 위치에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1050,7 +1050,7 @@ explicit time_get(size_t refs = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*refs*  
+*refs*<br/>
 개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
 ### <a name="remarks"></a>설명

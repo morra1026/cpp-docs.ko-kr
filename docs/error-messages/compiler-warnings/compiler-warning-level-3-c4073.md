@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93e3aae403b8dee41ef31c5d0c44e16702bc363b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 24af5c41a524b4178f1402008203959c4e6b021d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290272"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088620"
 ---
 # <a name="compiler-warning-level-3-c4073"></a>컴파일러 경고 (수준 3) C4073
-이니셜라이저가 라이브러리 초기화 영역  
-  
- 타사 라이브러리 개발자가 하 여 지정한 라이브러리 초기화 영역을 사용 해야 하는 전용 [#pragma init_seg](../../preprocessor/init-seg.md)합니다. 다음 샘플에서는 C4073 오류가 생성 됩니다.  
-  
-```  
-// C4073.cpp  
-// compile with: /W3  
-#pragma init_seg(lib)   // C4073  
-  
-// try this line to resolve the warning  
-// #pragma init_seg(user)  
-  
-int main() {  
-}  
+
+이니셜라이저가 라이브러리 초기화 영역
+
+타사 라이브러리 개발자에 의해 지정 되는 라이브러리 초기화 영역을 사용 해야 하는 전용 [#pragma init_seg](../../preprocessor/init-seg.md)합니다. 다음 샘플에서는 C4073 오류가 생성 됩니다.
+
+```
+// C4073.cpp
+// compile with: /W3
+#pragma init_seg(lib)   // C4073
+
+// try this line to resolve the warning
+// #pragma init_seg(user)
+
+int main() {
+}
 ```

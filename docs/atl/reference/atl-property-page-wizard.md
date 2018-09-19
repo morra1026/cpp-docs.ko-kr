@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94bca969b150718450da166501abaea9c89b75d7
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b5a150a81ea26e34e05cbfb9199c734a1ccad9b7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760385"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094197"
 ---
 # <a name="atl-property-page-wizard"></a>ATL 속성 페이지 마법사
 
@@ -56,21 +56,24 @@ Visual Studio 2008부터,이 마법사에서 생성 된 등록 스크립트 등�
 
 개체에 대 한 COM 기능에 대 한 정보를 제공합니다.
 
-**Coclass**  
-개체에서 지 원하는 인터페이스의 목록을 포함 하는 구성 요소 클래스의 이름을 설정 합니다.
+- **Coclass**
 
-> [!NOTE]
->  특성을 사용 하 여 프로젝트를 만들거나 ATL 포함 되어 있지 않으므로이 옵션을 지정할 경우이 마법사 페이지에서 속성 페이지 특성을 사용 하는 변경할 수 없습니다는 `coclass` 특성입니다.
+   개체에서 지 원하는 인터페이스의 목록을 포함 하는 구성 요소 클래스의 이름을 설정 합니다.
 
-**Type**  
-레지스트리에 나타나는 개체 설명 설정
+   > [!NOTE]
+   > 특성을 사용 하 여 프로젝트를 만들거나 ATL 포함 되어 있지 않으므로이 옵션을 지정할 경우이 마법사 페이지에서 속성 페이지 특성을 사용 하는 변경할 수 없습니다는 `coclass` 특성입니다.
 
-**ProgID**  
-컨테이너 개체의 CLSID 대신 사용할 수 있는 이름을 설정 합니다.
+- **Type**
+
+   레지스트리에 나타나는 개체 설명 설정
+
+- **ProgID**
+
+   컨테이너 개체의 CLSID 대신 사용할 수 있는 이름을 설정 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[옵션, ATL 속성 페이지 마법사](../../atl/reference/options-atl-property-page-wizard.md)   
-[문자열, ATL 속성 페이지 마법사](../../atl/reference/strings-atl-property-page-wizard.md)   
+[옵션, ATL 속성 페이지 마법사](../../atl/reference/options-atl-property-page-wizard.md)<br/>
+[문자열, ATL 속성 페이지 마법사](../../atl/reference/strings-atl-property-page-wizard.md)<br/>
 [예: 속성 페이지 구현](../../atl/example-implementing-a-property-page.md)
 

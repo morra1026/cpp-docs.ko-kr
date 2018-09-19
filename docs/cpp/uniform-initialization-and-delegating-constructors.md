@@ -12,17 +12,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f985d206a342611dfccb4f05347b0ecc9e9521b0
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 80beb5e840e182396f519b6b827dd8d727252d61
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314659"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116245"
 ---
 # <a name="uniform-initialization-and-delegating-constructors"></a>균일 초기화 및 생성자 위임
+
 최신 c + +에서 사용할 수 있습니다 *중괄호 초기화* 등호 기호 없이 모든 형식에 대 한 합니다. 또한 비슷한 작업을 수행 하는 생성자를 여러 개 있는 경우 코드를 단순화 하기 위해 위임 생성자를 사용할 수 있습니다.
 
 ## <a name="brace-initialization"></a>중괄호 초기화
+
 모든 클래스, 구조체 또는 공용 구조체에 대 한 중괄호 초기화를 사용할 수 있습니다. 형식에 기본 생성자를 암시적 또는 명시적으로 선언 하는 경우 (빈 중괄호)와 기본 중괄호 초기화를 사용할 수 있습니다. 예를 들어, 기본값 및 기본값이 아닌 중괄호 초기화를 사용 하 여 다음 클래스를 초기화할 수 있습니다.
 
 ```cpp
@@ -99,6 +101,7 @@ return { 4.5 };
 ```
 
 ## <a name="initializerlist-constructors"></a>initializer_list 생성자
+
 합니다 [initializer_list 클래스](../standard-library/initializer-list-class.md) 생성자에서 및 다른 컨텍스트에서 사용할 수 있는 지정 된 형식의 개체 목록을 나타냅니다. Initializer_list 중괄호 초기화를 사용 하 여 생성할 수 있습니다.
 
 ```cpp
@@ -127,6 +130,7 @@ regex rgx{'x', 'y', 'z'};
 ```
 
 ## <a name="delegating-constructors"></a>위임 생성자
+
 많은 클래스는 비슷한 작업을 수행 하는 여러 생성자-예를 들어, 매개 변수 유효성 검사:
 
 ```cpp

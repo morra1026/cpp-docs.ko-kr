@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be0b81d1baddfd8d89112f7f7b9d63624a6aa3b6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ae9a83ff8cc8e4909e23e7751e0c82da690a0c21
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757769"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093820"
 ---
 # <a name="crbmultimap-class"></a>CRBMultiMap 클래스
 
@@ -40,22 +40,22 @@ ms.locfileid: "43757769"
 template<typename K,
          typename V, 
          class KTraits = CElementTraits<K>, 
-         class VTraits = CElementTraits<V>>  
+         class VTraits = CElementTraits<V>>
 class CRBMultiMap : public CRBTree<K, V, KTraits, VTraits>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*K*  
+*K*<br/>
 Key 요소 형식입니다.
 
-*V*  
+*V*<br/>
 값 요소 형식입니다.
 
-*KTraits*  
+*KTraits*<br/>
 복사 하거나 주요 요소를 이동 하는 데 사용 되는 코드입니다. 참조 [CElementTraits 클래스](../../atl/reference/celementtraits-class.md) 대 한 자세한 내용은 합니다.
 
-*VTraits*  
+*VTraits*<br/>
 값 요소 이동 하거나 복사 하는 데 사용 되는 코드입니다.
 
 ## <a name="members"></a>멤버
@@ -111,7 +111,7 @@ explicit CRBMultiMap(size_t nBlockSize = 10) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nBlockSize*  
+*nBlockSize*<br/>
 블록 크기입니다.
 
 ### <a name="remarks"></a>설명
@@ -148,7 +148,7 @@ POSITION FindFirstWithKey(KINARGTYPE key) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 찾을 요소를 식별 하는 키를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -180,10 +180,10 @@ V& GetNextValueWithKey(
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 에 대 한 호출을 사용 하 여 얻은 위치 값을 [CRBMultiMap::FindFirstWithKey](#findfirstwithkey) 또는 [CRBMultiMap::GetNextWithKey](#getnextwithkey)에 대 한 이전 호출 또는 `GetNextValueWithKey`합니다.
 
-*key*  
+*key*<br/>
 찾을 요소를 식별 하는 키를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -215,10 +215,10 @@ CPair* GetNextWithKey(
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 에 대 한 호출을 사용 하 여 얻은 위치 값을 [CRBMultiMap::FindFirstWithKey](#findfirstwithkey) 또는 [CRBMultiMap::GetNextValueWithKey](#getnextvaluewithkey)에 대 한 이전 호출 또는 `GetNextWithKey`합니다.
 
-*key*  
+*key*<br/>
 찾을 요소를 식별 하는 키를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -241,10 +241,10 @@ POSITION Insert(KINARGTYPE key, VINARGTYPE value) throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 추가할 키 값을 `CRBMultiMap` 개체입니다.
 
-*값*  
+*값*<br/>
 에 추가할 값을 `CRBMultiMap` 와 연결 된 개체 *키*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -269,7 +269,7 @@ size_t RemoveKey(KINARGTYPE key) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 삭제할 대상 요소를 식별 하는 키를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -288,7 +288,7 @@ size_t RemoveKey(KINARGTYPE key) throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[CRBTree 클래스](../../atl/reference/crbtree-class.md)   
-[CAtlMap 클래스](../../atl/reference/catlmap-class.md)   
-[CRBMap 클래스](../../atl/reference/crbmap-class.md)   
+[CRBTree 클래스](../../atl/reference/crbtree-class.md)<br/>
+[CAtlMap 클래스](../../atl/reference/catlmap-class.md)<br/>
+[CRBMap 클래스](../../atl/reference/crbmap-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

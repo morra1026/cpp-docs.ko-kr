@@ -38,12 +38,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02bd6b1c5ed9cf29b87dc2a218f7a5e9eda3e3dc
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 9f95c9d85ab3649c1710881c73df1ae325f9cb60
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44319060"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724817"
 ---
 # <a name="valarray-class"></a>valarray 클래스
 
@@ -132,10 +132,10 @@ valarray<Type> apply(Type _Func(constType&)) const;
 ### <a name="parameters"></a>매개 변수
 
 *_Func(Type)*<br/>
- 피연산자 valarray의 각 요소에 적용할 함수 개체입니다.
+피연산자 valarray의 각 요소에 적용할 함수 개체입니다.
 
 *_Func(const Type&)*<br/>
- 피연산자 valarray의 각 요소에 적용할 const의 함수 개체입니다.
+피연산자 valarray의 각 요소에 적용할 const의 함수 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -204,8 +204,8 @@ valarray<Type> cshift(int count) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*count*  
- 요소를 앞으로 이동할 위치 수입니다.
+*count*<br/>
+요소를 앞으로 이동할 위치 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -463,8 +463,8 @@ valarray<Type>& operator%=(const Type& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*  
- 요소 전체에서 피연산자 valarray를 나눌 피연산자 valarray의 요소 형식과 동일한 요소 형식의 값 또는 valarray
+*right*<br/>
+요소 전체에서 피연산자 valarray를 나눌 피연산자 valarray의 요소 형식과 동일한 요소 형식의 값 또는 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -528,8 +528,8 @@ valarray<Type>& operator&=(const Type& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*  
- 값 형식의 요소와 동일한 결합할 피연산자 valarray의 요소 전체에서 논리적으로 또는 `AND` 피연산자 valarray를 사용 하 여 합니다.
+*right*<br/>
+값 형식의 요소와 동일한 결합할 피연산자 valarray의 요소 전체에서 논리적으로 또는 `AND` 피연산자 valarray를 사용 하 여 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -599,8 +599,8 @@ valarray<Type>& operator>>=(const Type& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*  
- 오른쪽으로 이동할 크기를 나타내는 값 또는 해당 요소가 요소 전체 오른쪽 이동 크기를 나타내는 valarray
+*right*<br/>
+오른쪽으로 이동할 크기를 나타내는 값 또는 해당 요소가 요소 전체 오른쪽 이동 크기를 나타내는 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -668,8 +668,8 @@ valarray<Type>& operator<<=(const Type& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*  
- 왼쪽으로 이동할 크기를 나타내는 값 또는 해당 요소가 요소 전체 왼쪽 이동 크기를 나타내는 valarray
+*right*<br/>
+왼쪽으로 이동할 크기를 나타내는 값 또는 해당 요소가 요소 전체 왼쪽 이동 크기를 나타내는 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -738,8 +738,8 @@ valarray<Type>& operator*=(const Type& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*  
- 요소 전체에서 피연산자 valarray를 곱할 피연산자 valarray의 요소 형식과 동일한 요소 형식의 값 또는 valarray
+*right*<br/>
+요소 전체에서 피연산자 valarray를 곱할 피연산자 valarray의 요소 형식과 동일한 요소 형식의 값 또는 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -854,8 +854,8 @@ valarray<Type>& operator+=(const Type& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*  
- 요소 전체에서 피연산자 valarray를 더할 피연산자 valarray의 요소 형식과 동일한 요소 형식의 값 또는 valarray
+*right*<br/>
+요소 전체에서 피연산자 valarray를 더할 피연산자 valarray의 요소 형식과 동일한 요소 형식의 값 또는 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -970,8 +970,8 @@ valarray<Type>& operator-=(const Type& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*  
- 요소 전체에서 피연산자 valarray에서 뺄 피연산자 valarray의 요소 형식과 동일한 요소 형식의 값 또는 valarray
+*right*<br/>
+요소 전체에서 피연산자 valarray에서 뺄 피연산자 valarray의 요소 형식과 동일한 요소 형식의 값 또는 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -1035,8 +1035,8 @@ valarray<Type>& operator/=(const Type& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*  
- 요소 전체에서 피연산자 valarray로 나눌 피연산자 valarray의 요소 형식과 동일한 요소 형식의 값 또는 valarray
+*right*<br/>
+요소 전체에서 피연산자 valarray로 나눌 피연산자 valarray의 요소 형식과 동일한 요소 형식의 값 또는 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -1110,23 +1110,23 @@ valarray<Type>& operator=(const indirect_array<Type>& _Indarray);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*  
- 피연산자 valarray에 복사할 valarray
+*right*<br/>
+피연산자 valarray에 복사할 valarray
 
-*val*  
- 피연산자 valarray의 요소에 할당할 값
+*val*<br/>
+피연산자 valarray의 요소에 할당할 값
 
-*_Slicearray*  
- 피연산자 valarray에 복사할 slice_array
+*_Slicearray*<br/>
+피연산자 valarray에 복사할 slice_array
 
-*_Gslicearray*  
- 피연산자 valarray에 복사할 gslice_array
+*_Gslicearray*<br/>
+피연산자 valarray에 복사할 gslice_array
 
-*_Maskarray*  
- 피연산자 valarray에 복사할 mask_array
+*_Maskarray*<br/>
+피연산자 valarray에 복사할 mask_array
 
-*_Indarray*  
- 피연산자 valarray에 복사할 indirect_array
+*_Indarray*<br/>
+피연산자 valarray에 복사할 indirect_array
 
 ### <a name="return-value"></a>반환 값
 
@@ -1228,20 +1228,20 @@ valarray<Type> operator[](const valarray<size_t>& _Indarray) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off*  
- 값을 할당할 요소의 인덱스
+*_Off*<br/>
+값을 할당할 요소의 인덱스
 
-*_Slicearray*  
- 선택하거나 새 valarray로 반환할 하위 집합을 지정하는 valarray의 slice_array
+*_Slicearray*<br/>
+선택하거나 새 valarray로 반환할 하위 집합을 지정하는 valarray의 slice_array
 
-*_Gslicearray*  
- 선택하거나 새 valarray로 반환할 하위 집합을 지정하는 valarray의 gslice_array
+*_Gslicearray*<br/>
+선택하거나 새 valarray로 반환할 하위 집합을 지정하는 valarray의 gslice_array
 
-*_Boolarray*  
- 선택하거나 새 valarray로 반환할 하위 집합을 지정하는 valarray의 bool_array
+*_Boolarray*<br/>
+선택하거나 새 valarray로 반환할 하위 집합을 지정하는 valarray의 bool_array
 
-*_Indarray*  
- 선택하거나 새 valarray로 반환할 하위 집합을 지정하는 valarray의 indirect_array
+*_Indarray*<br/>
+선택하거나 새 valarray로 반환할 하위 집합을 지정하는 valarray의 indirect_array
 
 ### <a name="return-value"></a>반환 값
 
@@ -1269,8 +1269,8 @@ valarray<Type>& operator|=(const Type& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*  
- 요소 전체에서 배타적 논리 **XOR**을 통해 피연산자 valarray와 결합할 피연산자 valarray의 요소 형식과 동일한 요소 형식의 값 또는 valarray
+*right*<br/>
+요소 전체에서 배타적 논리 **XOR**을 통해 피연산자 valarray와 결합할 피연산자 valarray의 요소 형식과 동일한 요소 형식의 값 또는 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -1342,8 +1342,8 @@ valarray<Type>& operator|=(const Type& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*  
- 요소 전체에서 비트 `OR`을 통해 피연산자 valarray와 결합할 피연산자 valarray의 요소 형식과 동일한 요소 형식의 값 또는 valarray
+*right*<br/>
+요소 전체에서 비트 `OR`을 통해 피연산자 valarray와 결합할 피연산자 valarray의 요소 형식과 동일한 요소 형식의 값 또는 valarray
 
 ### <a name="return-value"></a>반환 값
 
@@ -1518,11 +1518,11 @@ void resize(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Newsize*  
- 크기 조정된 valarray의 요소 수입니다.
+*_Newsize*<br/>
+크기 조정된 valarray의 요소 수입니다.
 
-*val*  
- 크기 조정된 valarray의 요소에 지정할 값입니다.
+*val*<br/>
+크기 조정된 valarray의 요소에 지정할 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1589,8 +1589,8 @@ valarray<Type> shift(int count) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*count*  
- 요소를 앞으로 이동할 위치 수입니다.
+*count*<br/>
+요소를 앞으로 이동할 위치 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1839,32 +1839,32 @@ valarray(
 
 ### <a name="parameters"></a>매개 변수
 
-*개수*  
- valarray에 지정할 요소의 수입니다.
+*개수*<br/>
+valarray에 지정할 요소의 수입니다.
 
-*val*  
- valarray의 요소를 초기화하는 데 사용할 값입니다.
+*val*<br/>
+valarray의 요소를 초기화하는 데 사용할 값입니다.
 
-*ptr*  
- valarray의 요소를 초기화하는 데 사용할 값에 대한 포인터입니다.
+*ptr*<br/>
+valarray의 요소를 초기화하는 데 사용할 값에 대한 포인터입니다.
 
-*오른쪽*  
- 새 valarray를 초기화할 기존 valarray입니다.
+*오른쪽*<br/>
+새 valarray를 초기화할 기존 valarray입니다.
 
-*SliceArray*  
- 생성 중인 valarray의 요소를 초기화하는 데 사용할 요소 값을 포함하는 slice_array입니다.
+*SliceArray*<br/>
+생성 중인 valarray의 요소를 초기화하는 데 사용할 요소 값을 포함하는 slice_array입니다.
 
-*GsliceArray*  
- 생성 중인 valarray의 요소를 초기화하는 데 사용할 요소 값을 포함하는 gslice_array입니다.
+*GsliceArray*<br/>
+생성 중인 valarray의 요소를 초기화하는 데 사용할 요소 값을 포함하는 gslice_array입니다.
 
-*MaskArray*  
- 생성 중인 valarray의 요소를 초기화하는 데 사용할 요소 값을 포함하는 mask_array입니다.
+*MaskArray*<br/>
+생성 중인 valarray의 요소를 초기화하는 데 사용할 요소 값을 포함하는 mask_array입니다.
 
-*IndArray*  
- 생성 중인 valarray의 요소를 초기화하는 데 사용할 요소 값을 포함하는 indirect_array입니다.
+*IndArray*<br/>
+생성 중인 valarray의 요소를 초기화하는 데 사용할 요소 값을 포함하는 indirect_array입니다.
 
-*IList*  
- 복사할 요소를 포함하는 initializer_list입니다.
+*IList*<br/>
+복사할 요소를 포함하는 initializer_list입니다.
 
 ### <a name="remarks"></a>설명
 

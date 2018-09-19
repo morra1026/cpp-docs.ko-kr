@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 623183e5ee54c995d624f47461c724ee8f4befae
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 9879b9258902a496dd46c59c44f7bf211726e460
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217400"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056874"
 ---
 # <a name="compiler-warning-level-4-c4242"></a>컴파일러 경고(수준 4) C4242
-'identifier': 'type1'에서 'type2', 데이터 손실으로 변환  
-  
- 형식이 서로 다릅니다. 형식 변환의 데이터가 손실에서 될 수 있습니다. 컴파일러에서 형식 변환 합니다.  
-  
- 기본적으로 이 경고는 해제되어 있습니다. 자세한 내용은 [기본적으로 해제되어 있는 컴파일러 경고](../../preprocessor/compiler-warnings-that-are-off-by-default.md) 를 참조하세요.  
-  
- C4242에 대 한 자세한 내용은 참조 하세요. [일반적인 컴파일러 오류](/windows/desktop/WinProg64/common-compiler-errors)합니다.  
-  
- 다음 샘플에서는 C4242 경고가 생성 됩니다.  
-  
-```  
-// C4242.cpp  
-// compile with: /W4  
-#pragma warning(4:4242)  
-int func() {  
-   return 0;  
-}  
-  
-int main() {  
-   char a;  
-   a = func();   // C4242, return type and variable type do not match  
-}  
+
+'identifier': 'type1'에서 'type2', 데이터 손실으로 변환
+
+형식이 서로 다릅니다. 형식 변환의 데이터가 손실에서 될 수 있습니다. 컴파일러에서 형식 변환 합니다.
+
+기본적으로 이 경고는 해제되어 있습니다. 자세한 내용은 [기본적으로 해제되어 있는 컴파일러 경고](../../preprocessor/compiler-warnings-that-are-off-by-default.md) 를 참조하세요.
+
+C4242에 대 한 자세한 내용은 참조 하세요. [일반적인 컴파일러 오류](/windows/desktop/WinProg64/common-compiler-errors)합니다.
+
+다음 샘플에서는 C4242 경고가 생성 됩니다.
+
+```
+// C4242.cpp
+// compile with: /W4
+#pragma warning(4:4242)
+int func() {
+   return 0;
+}
+
+int main() {
+   char a;
+   a = func();   // C4242, return type and variable type do not match
+}
 ```

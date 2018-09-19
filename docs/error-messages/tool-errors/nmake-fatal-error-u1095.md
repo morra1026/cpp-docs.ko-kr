@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13c819d18149e61bca71f6a4cb10ea851a2d485d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 964ec1d029e56a5d9d78659ad919c71a4e44506d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317247"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039883"
 ---
 # <a name="nmake-fatal-error-u1095"></a>NMAKE 심각한 오류 U1095
-확장된 명령줄이 너무 길어서 ' commandline'  
-  
- 매크로 확장 된 후 지정한 명령줄에 운영 체제에 대 한 명령줄의 길이 대 한 제한을 초과 했습니다.  
-  
- MS-DOS는 명령줄에서 최대 128 자를 허용합니다.  
-  
- 파일에서 명령줄 입력을 받아들일 수 있는 프로그램에 대 한 명령이 있으면 명령을 변경 하 고 디스크에 파일 또는 인라인 파일에서 입력을 제공 합니다. 예를 들어, 링크 및 LIB 컴파일러 지시 파일에서 입력을 받습니다.
+
+확장된 명령줄이 너무 길어서 ' 명령줄'
+
+매크로 확장 한 후 지정 된 명령줄의 운영 체제의 명령줄 길이 제한을 초과 했습니다.
+
+MS-DOS는 명령줄에서 최대 128 자의 문자를 허용합니다.
+
+명령에 대 한 경우 파일에서 명령줄 입력을 수락할 수 있는 프로그램 명령을 변경 하 고 디스크의 파일 또는 인라인 파일에서 입력을 제공 합니다. 예를 들어, 링크 및 LIB 지시 파일에서 입력을 허용 합니다.

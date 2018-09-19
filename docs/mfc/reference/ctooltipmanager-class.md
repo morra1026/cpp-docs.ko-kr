@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9de39d2054f3c75e00e8827ebb4aaefac9970d59
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 81e027108d0f7b62ba707718c5396432396bdc5e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42538932"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711882"
 ---
 # <a name="ctooltipmanager-class"></a>CTooltipManager 클래스
 도구 설명에 대한 런타임 정보를 유지합니다. `CTooltipManager` 클래스는 응용 프로그램당 한 번씩 인스턴스화됩니다.  
@@ -76,14 +76,14 @@ static BOOL CreateToolTip(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *pToolTip*  
- 도구 설명 포인터에 대 한 참조입니다. 함수는 반환 될 때 새로 만든된 도구 설명이를 가리키도록 설정 됩니다.  
+*pToolTip*<br/>
+[out] 도구 설명 포인터에 대 한 참조입니다. 함수는 반환 될 때 새로 만든된 도구 설명이를 가리키도록 설정 됩니다.  
   
- [in] *pWndParent*  
- 도구 설명의 부모입니다.  
+*pWndParent*<br/>
+[in] 도구 설명의 부모입니다.  
   
- [in] *n 형식*  
- 도구 설명의 형식입니다.  
+*n 형식*<br/>
+[in] 도구 설명의 형식입니다.  
   
 ### <a name="return-value"></a>반환 값  
  도구 설명에 0이 아닌 경우 성공적으로 만들었습니다.  
@@ -117,8 +117,8 @@ static void DeleteToolTip(CToolTipCtrl*& pToolTip);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out에서] *pToolTip*  
- 제거할 도구 설명에 대 한 포인터에 대 한 참조입니다.  
+*pToolTip*<br/>
+[out에서] 제거할 도구 설명에 대 한 포인터에 대 한 참조입니다.  
   
 ### <a name="remarks"></a>설명  
  각각에 대해이 메서드를 호출 [CToolTipCtrl 클래스](../../mfc/reference/ctooltipctrl-class.md) 하 여 만들어진 [CTooltipManager::CreateToolTip](#createtooltip)합니다. 부모 컨트롤에서이 메서드를 호출 해야 해당 `OnDestroy` 처리기입니다. 이 프레임 워크에서 도구 설명을 제대로 제거 해야 합니다. 이 메서드를 설정 *pToolTip* 반환 하기 전에 NULL로 합니다.  
@@ -134,14 +134,14 @@ void SetTooltipParams(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nTypes*  
- 컨트롤 형식을 지정합니다.  
+*nTypes*<br/>
+[in] 컨트롤 형식을 지정합니다.  
   
- [in] *pRTC*  
- 사용자 지정 도구 설명의 런타임 클래스입니다.  
+*pRTC*<br/>
+[in] 사용자 지정 도구 설명의 런타임 클래스입니다.  
   
- [in] *pParams*  
- 도구 설명 매개 변수입니다.  
+*pParams*<br/>
+[in] 도구 설명 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 런타임 클래스 및 초기 매개 변수는 설정 된 [CToolTipManager](../../mfc/reference/ctooltipmanager-class.md) 도구 설명을 만들 때 사용 합니다. 컨트롤을 호출 하는 경우 [CTooltipManager::CreateToolTip](#createtooltip) 도구 설명에 전달 하 여 지정 된 형식 중 하나는 입력 *nTypes*, 도구 설명 관리자의 인스턴스는 도구 설명 컨트롤을 만듭니다는 지정 된 런타임 클래스 *pRTC* 로 지정 된 매개 변수 전달 *pParams* 새 도구 설명으로 합니다.  
@@ -150,7 +150,7 @@ void SetTooltipParams(
   
  *nTypes* 유형에 유효한 도구 설명의 조합 수 [CTooltipManager::CreateToolTip](#createtooltip) 사용 하거나 AFX_TOOLTIP_TYPE_ALL 될 수 있습니다. AFX_TOOLTIP_TYPE_ALL를 전달 하는 경우 도구 설명 유형도 영향을 받습니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `SetTooltipParams` 메서드는 `CTooltipManager` 클래스입니다. 이 코드 조각은 [클라이언트 그리기 샘플](../../visual-cpp-samples.md)의 일부입니다.  
   
  [!code-cpp[NVC_MFC_DrawClient#11](../../mfc/reference/codesnippet/cpp/ctooltipmanager-class_1.cpp)]  
@@ -168,20 +168,20 @@ static void SetTooltipText(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pTI*  
- TOOLINFO 개체에 대 한 포인터입니다.  
+*PTI*<br/>
+[in] TOOLINFO 개체에 대 한 포인터입니다.  
   
- [out에서] *pToolTip*  
- 텍스트 및 설명을 설정 하는 도구 설명 컨트롤에 대 한 포인터입니다.  
+*pToolTip*<br/>
+[out에서] 텍스트 및 설명을 설정 하는 도구 설명 컨트롤에 대 한 포인터입니다.  
   
- [in] *n 형식*  
- 이 도구 설명과 연결 된 컨트롤의 형식을 지정 합니다.  
+*n 형식*<br/>
+[in] 이 도구 설명과 연결 된 컨트롤의 형식을 지정 합니다.  
   
- [in] *strText*  
- 텍스트 도구 설명 텍스트를 설정입니다.  
+*strText*<br/>
+[in] 텍스트 도구 설명 텍스트를 설정입니다.  
   
- [in] *lpszDescr*  
- 도구 설명에 대 한 포인터입니다. NULL 일 수 있습니다.  
+*lpszDescr*<br/>
+[in] 도구 설명에 대 한 포인터입니다. NULL 일 수 있습니다.  
   
 ### <a name="remarks"></a>설명  
  변수의 *n 형식* 와 같은 값 이어야 합니다는 *n 형식* 의 매개 변수 [CTooltipManager::CreateToolTip](#createtooltip) 도구 설명을 만들 때.  

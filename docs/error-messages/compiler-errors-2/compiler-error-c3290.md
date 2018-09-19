@@ -16,46 +16,48 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf65a35469ca978b0464c6f7275a6ac0e331da5d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3b97818dd6ef7b38bb815e2c0a6345cc056fc45c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33256385"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46058928"
 ---
 # <a name="compiler-error-c3290"></a>컴파일러 오류 C3290
-'type': trivial 속성은 참조 형식일 수 없습니다.  
-  
- 속성이 잘못 선언되었습니다. trivial 속성을 선언하면 컴파일러가 속성에서 업데이트할 변수를 만들며, 클래스에 추적 참조 변수를 사용할 수 없습니다.  
-  
- 참조 [속성](../../windows/property-cpp-component-extensions.md) 및 [추적 참조 연산자](../../windows/tracking-reference-operator-cpp-component-extensions.md) 자세한 정보에 대 한 합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3290을 생성합니다.  
-  
-```  
-// C3290.cpp  
-// compile with: /clr /c  
-ref struct R {};  
-  
-ref struct X {  
-   R^ mr;  
-  
-   property R % y;   // C3290  
-   property R ^ x;   // OK  
-  
-   // OK  
-   property R% prop {  
-      R% get() {   
-         return *mr;   
-      }  
-  
-      void set(R%) {}  
-   }  
-};  
-  
-int main() {  
-   X x;  
-   R% xp = x.prop;  
-}  
+
+'type': trivial 속성은 참조 형식일 수 없습니다.
+
+속성이 잘못 선언되었습니다. trivial 속성을 선언하면 컴파일러가 속성에서 업데이트할 변수를 만들며, 클래스에 추적 참조 변수를 사용할 수 없습니다.
+
+참조 [속성](../../windows/property-cpp-component-extensions.md) 하 고 [추적 참조 연산자](../../windows/tracking-reference-operator-cpp-component-extensions.md) 자세한 내용은 합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C3290을 생성합니다.
+
+```
+// C3290.cpp
+// compile with: /clr /c
+ref struct R {};
+
+ref struct X {
+   R^ mr;
+
+   property R % y;   // C3290
+   property R ^ x;   // OK
+
+   // OK
+   property R% prop {
+      R% get() {
+         return *mr;
+      }
+
+      void set(R%) {}
+   }
+};
+
+int main() {
+   X x;
+   R% xp = x.prop;
+}
 ```

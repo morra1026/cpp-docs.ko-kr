@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f878633e29fe2ea7bcb065f9851a907d81f6d20f
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: af20b6d406b0e2119df04d5348c554b3405e8597
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39461549"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103375"
 ---
 # <a name="thiscall"></a>__thiscall
 
@@ -47,4 +47,5 @@ ARM 및 x64 컴퓨터 **__thiscall** 수락 하 고 컴파일러에서 무시 �
 **Microsoft 전용 종료**
 
 ## <a name="see-also"></a>참고자료
- [인수 전달 및 명명 규칙](../cpp/argument-passing-and-naming-conventions.md)
+
+[인수 전달 및 명명 규칙](../cpp/argument-passing-and-naming-conventions.md)

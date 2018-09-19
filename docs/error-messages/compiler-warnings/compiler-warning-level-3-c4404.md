@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 23eccd4d8735d6a6d2b5d1c6af7e65613ed46c4c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c48b17dfc96ba041e92ac88c5fd7af7238b20933
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302073"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078298"
 ---
 # <a name="compiler-warning-level-3-c4404"></a>컴파일러 경고(수준 3) C4404
-무시 지시문의 마침표가  
-  
- 지시문 앞에 마침표는 무시 됩니다.
+
+무시 하는 지시문의 마침표가
+
+지시문 앞에 선택적인 기간 무시 됩니다.

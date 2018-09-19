@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92e72d3dabdb67ee595d9747ad5fa1f9f3909ce9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ecb4f4bcdf218d9a017939b7d57aa0452afe52a4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33251850"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026532"
 ---
 # <a name="compiler-error-c3358"></a>컴파일러 오류 C3358
-'symbol': 기호를 찾을 수 없습니다.  
-  
- 필요한 기호를 찾을 수 없습니다.  
-  
- 다음 샘플에서는 C3358을 생성합니다.  
-  
-```  
-// C3358.cpp  
-#define __ATLEVENT_H__ 1   // remove this line to resolve the error  
-#define _ATL_ATTRIBUTES 1  
-#include "atlbase.h"  
-#include "atlcom.h"  
-  
-[event_receiver(com)]  
-struct A   // C3358  
-{  
-   void func();  
-};  
-  
-int main()  
-{  
-}  
+
+'symbol': 기호를 찾을 수 없습니다.
+
+필요한 기호를 찾을 수 없습니다.
+
+다음 샘플에서는 C3358을 생성합니다.
+
+```
+// C3358.cpp
+#define __ATLEVENT_H__ 1   // remove this line to resolve the error
+#define _ATL_ATTRIBUTES 1
+#include "atlbase.h"
+#include "atlcom.h"
+
+[event_receiver(com)]
+struct A   // C3358
+{
+   void func();
+};
+
+int main()
+{
+}
 ```

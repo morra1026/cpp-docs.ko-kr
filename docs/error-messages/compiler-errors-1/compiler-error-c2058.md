@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 456aa7a2766f2460ee914c625b63f67bda132c87
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eb59a50ec324f81dedc9d784514b397ebc351dfe
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33163100"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046643"
 ---
 # <a name="compiler-error-c2058"></a>컴파일러 오류 C2058
-상수 식이 정수 계열이 아닙니다.  
-  
- 컨텍스트에는 정수 상수 식이 필요합니다.
+
+상수 식이 정수 계열이 아닙니다.
+
+컨텍스트에는 정수 상수 식이 필요합니다.

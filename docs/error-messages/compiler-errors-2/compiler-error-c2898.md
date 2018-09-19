@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3299e3c341657fd253e688065014b46519dce5eb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8b34eaf73840d4c156299128209cd5c519155473
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33241120"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110044"
 ---
 # <a name="compiler-error-c2898"></a>컴파일러 오류 C2898
-'declaration': 멤버 함수 템플릿은 가상 일 수 없습니다  
-  
- 다음 샘플에서는 C2898 오류가 생성 됩니다.  
-  
-```  
-// C2898.cpp  
-// compile with: /c  
-class X {  
-public:  
-   template<typename T> virtual void f(T t) {}   // C2898  
-};  
+
+'declaration': 멤버 함수 템플릿은 가상 일 수 없습니다.
+
+다음 샘플에서는 C2898 오류가 생성 됩니다.
+
+```
+// C2898.cpp
+// compile with: /c
+class X {
+public:
+   template<typename T> virtual void f(T t) {}   // C2898
+};
 ```

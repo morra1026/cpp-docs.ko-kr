@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c9ec437be7c719c4ba65b31465f9112fa250284d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e104b5d471302b614852d98b379f941b2d9b7ead
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751723"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024952"
 ---
 # <a name="ipersistpropertybagimpl-class"></a>IPersistPropertyBagImpl 클래스
 
@@ -38,13 +38,13 @@ ms.locfileid: "43751723"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE IPersistPropertyBagImpl : public IPersistPropertyBag
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `IPersistPropertyBagImpl`합니다.
 
 ## <a name="members"></a>멤버
@@ -137,5 +137,5 @@ ATL 개체의 속성 맵에 사용 하 여이 정보를 저장 합니다. 기본
 
 ## <a name="see-also"></a>참고 항목
 
-[BEGIN_PROP_MAP](property-map-macros.md#begin_prop_map)   
+[BEGIN_PROP_MAP](property-map-macros.md#begin_prop_map)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 857c0614288240aeaf3001d03aa5d6372ccee1c9
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ca81fa18bb5f63f57c057eaa9e64c35df01e33f1
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43196307"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726767"
 ---
 # <a name="hashmultimap-class"></a>hash_multimap 클래스
 
@@ -123,16 +123,16 @@ class hash_multimap
 ### <a name="parameters"></a>매개 변수
 
 *키*<br/>
- hash_multimap에 저장되는 키 데이터 형식입니다.
+hash_multimap에 저장되는 키 데이터 형식입니다.
 
 *Type*<br/>
- hash_multimap에 저장되는 요소 데이터 형식입니다.
+hash_multimap에 저장되는 요소 데이터 형식입니다.
 
 *특성*<br/>
- 클래스 중 하나는 두 함수 개체를 포함 하는 형식 *Traits* 상대적 순서를 결정 하는 단항 조건자 매핑 요소의 키 값은 해시 함수의 정렬 키로 두 요소 값을 비교할 수는 부호 없는 정수 형식의 `size_t`합니다. 이 인수는 선택 사항이며 기본값은 `hash_compare<Key, less<Key>>`입니다.
+클래스 중 하나는 두 함수 개체를 포함 하는 형식 *Traits* 상대적 순서를 결정 하는 단항 조건자 매핑 요소의 키 값은 해시 함수의 정렬 키로 두 요소 값을 비교할 수는 부호 없는 정수 형식의 `size_t`합니다. 이 인수는 선택 사항이며 기본값은 `hash_compare<Key, less<Key>>`입니다.
 
 *할당자*<br/>
- hash_multimap의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `allocator<pair <const Key, Type>>`입니다.
+hash_multimap의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `allocator<pair <const Key, Type>>`입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -600,7 +600,7 @@ size_type count(const Key& key) const;
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- hash_multimap에서 일치하는지 확인할 요소의 키입니다.
+hash_multimap에서 일치하는지 확인할 요소의 키입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -895,7 +895,7 @@ int main()
 
 ```Output
 After the emplace insertion, hm1 contains:
- 1 => a
+1 => a
 ```
 
 ## <a name="emplace_hint"></a>  hash_multimap::emplace_hint
@@ -955,7 +955,7 @@ int main()
 
 ```Output
 After the emplace insertion, hm1 contains:
- 1 => a
+1 => a
 ```
 
 ## <a name="empty"></a>  hash_multimap::empty
@@ -1096,7 +1096,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- 검색 중인 hash_multimap에서 요소의 정렬 키와 비교할 인수 키입니다.
+검색 중인 hash_multimap에서 요소의 정렬 키와 비교할 인수 키입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1187,16 +1187,16 @@ size_type erase(const key_type& key);
 ### <a name="parameters"></a>매개 변수
 
 *_Where*<br/>
- hash_multimap에서 제거할 요소의 위치입니다.
+hash_multimap에서 제거할 요소의 위치입니다.
 
 *first*<br/>
- hash_multimap에서 제거된 첫 번째 요소의 위치입니다.
+hash_multimap에서 제거된 첫 번째 요소의 위치입니다.
 
 *last*<br/>
- hash_multimap에서 제거된 마지막 요소 바로 뒤의 위치입니다.
+hash_multimap에서 제거된 마지막 요소 바로 뒤의 위치입니다.
 
 *key*<br/>
- hash_multimap에서 제거할 요소의 키입니다.
+hash_multimap에서 제거할 요소의 키입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1311,7 +1311,7 @@ const_iterator find(const Key& key) const;
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- 검색 중인 hash_multimap에서 요소의 정렬 키와 일치 여부를 확인할 키입니다.
+검색 중인 hash_multimap에서 요소의 정렬 키와 일치 여부를 확인할 키입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1505,18 +1505,18 @@ hash_multimap(
 
 template <class InputIterator>
 hash_multimap(
- InputIterator First,
+    InputIterator First,
     InputIterator Last);
 
 template <class InputIterator>
 hash_multimap(
- InputIterator First,
+    InputIterator First,
     InputIterator Last,
     const Compare& Comp);
 
 template <class InputIterator>
 hash_multimap(
- InputIterator First,
+    InputIterator First,
     InputIterator Last,
     const Compare& Comp,
     const Allocator& Al);
@@ -1762,7 +1762,7 @@ const_iterator lower_bound(const Key& key) const;
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- 검색 중인 hash_multimap에서 요소의 정렬 키와 비교할 인수 키입니다.
+검색 중인 hash_multimap에서 요소의 정렬 키와 비교할 인수 키입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2316,7 +2316,7 @@ void swap(hash_multimap& right);
 ### <a name="parameters"></a>매개 변수
 
 *right*<br/>
- 교환할 요소를 제공하는 hash_multimap 또는 hash_multimap과 요소를 교환할 hash_multimap입니다.
+교환할 요소를 제공하는 hash_multimap 또는 hash_multimap과 요소를 교환할 hash_multimap입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2390,7 +2390,7 @@ const_iterator upper_bound(const Key& key) const;
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
- 검색 중인 hash_multimap에서 요소의 정렬 키와 비교할 인수 키입니다.
+검색 중인 hash_multimap에서 요소의 정렬 키와 비교할 인수 키입니다.
 
 ### <a name="return-value"></a>반환 값
 

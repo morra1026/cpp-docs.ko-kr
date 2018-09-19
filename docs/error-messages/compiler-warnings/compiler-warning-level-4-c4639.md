@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ad4b3159eb83c6dd050bba41032a461716f556a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c0ab2e08878e2172337ef373ebcbc8a37359b85f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294234"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46117675"
 ---
 # <a name="compiler-warning-level-4-c4639"></a>컴파일러 경고(수준 4) C4639
-MSXML 오류, XML 문서 주석이 처리 되지 것입니다. 이유  
-  
- 이 경고에 대 한 여러 가지 이유로 발생할 수 있습니다.  
-  
- 이 경고를 해결 방법:  
-  
--   다시 컴파일하십시오.  
-  
--   MSXML 공용 언어 런타임 다시 설치 하 여 다시 설치 합니다.  
-  
--   편집 하거나 경고 임계값과 다시 컴파일을 발생 시킨 문서 주석을 제거 합니다.  
-  
- C4639이 실행 되 면 모든 XML 주석 처리가 비활성화 되 고.xdc 파일은 생성 되지 않습니다.
+
+MSXML 오류, XML 문서 주석이 처리 되지 것입니다. 이유
+
+이 경고는 다양 한 이유로 발생할 수 있습니다.
+
+이 경고를 해결 방법:
+
+- 다시 컴파일하십시오.
+
+- MSXML을 공용 언어 런타임 다시 설치 하 여 다시 설치 합니다.
+
+- 편집 하거나 경고를 다시 컴파일을 발생 시키는 문서 주석을 제거 합니다.
+
+C4639 실행 될 때 모든 XML 주석 처리가 해제 되 고.xdc 파일이 생성 되지 않습니다.

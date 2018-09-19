@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15c18bf2a747cdedda2c9ce2ea6162e5a92e3b36
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 488f1d08c089b159971834729596d74b4e3dab22
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688962"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46106062"
 ---
 # <a name="defaultschedulerexists-class"></a>default_scheduler_exists 클래스
 이 클래스는 프로세스 내에 기본 스케줄러가 이미 있을 때 `Scheduler::SetDefaultSchedulerPolicy` 메서드를 호출하는 경우 발생하는 예외를 설명합니다.  
@@ -63,8 +63,8 @@ default_scheduler_exists() throw();
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Message`  
- 오류 설명 메시지입니다.  
+*메시지 (_m)*<br/>
+오류 설명 메시지입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [concurrency 네임스페이스](concurrency-namespace.md)

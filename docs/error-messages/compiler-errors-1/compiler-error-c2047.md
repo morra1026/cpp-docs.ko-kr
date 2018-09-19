@@ -16,43 +16,44 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16aed5b8100a3591fcdfbb4451a76db51a5f3b4d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 815973340208aaf7ba498272aef3cd1beebad04d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33164481"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110863"
 ---
 # <a name="compiler-error-c2047"></a>컴파일러 오류 C2047
-기본값이 잘못되었습니다.  
-  
- `default` 키워드는 `switch` 문에만 나타날 수 있습니다.  
-  
- 다음 샘플에서는 C2047을 생성합니다.  
-  
-```  
-// C2047.cpp  
-int main() {  
-   int i = 0;  
-   default:   // C2047  
-   switch(i) {  
-      case 0:  
-      break;  
-   }  
-}  
-```  
-  
- 해결 방법:  
-  
-```  
-// C2047b.cpp  
-int main() {  
-   int i = 0;  
-   switch(i) {  
-      case 0:  
-      break;  
-      default:  
-      break;  
-   }  
-}  
+
+기본값이 잘못되었습니다.
+
+`default` 키워드는 `switch` 문에만 나타날 수 있습니다.
+
+다음 샘플에서는 C2047을 생성합니다.
+
+```
+// C2047.cpp
+int main() {
+   int i = 0;
+   default:   // C2047
+   switch(i) {
+      case 0:
+      break;
+   }
+}
+```
+
+해결 방법:
+
+```
+// C2047b.cpp
+int main() {
+   int i = 0;
+   switch(i) {
+      case 0:
+      break;
+      default:
+      break;
+   }
+}
 ```

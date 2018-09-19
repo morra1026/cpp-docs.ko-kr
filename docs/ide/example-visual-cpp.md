@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cefd38a18447d0e8c9121d61c0ba963e9da39187
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 7c6be247c6c756557e7173c4b295197d9e4267cb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33321433"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110967"
 ---
 # <a name="ltexamplegt-visual-c"></a>&lt;example&gt;(Visual C++)
 \<example> 태그를 사용하면 메서드 또는 기타 라이브러리 멤버를 사용하는 방법의 예제를 지정할 수 있습니다. 일반적으로 여기에는 [\<code>](../ide/code-visual-cpp.md) 태그의 사용도 포함됩니다.  
@@ -35,8 +35,8 @@ ms.locfileid: "33321433"
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `description`  
- 코드 샘플에 대한 설명입니다.  
+*description*<br/>
+코드 샘플에 대한 설명입니다.  
   
 ## <a name="remarks"></a>설명  
  [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.  

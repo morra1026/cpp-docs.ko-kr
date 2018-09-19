@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 87709026e9cc088b03f6e04dd30bd49d2cf3707b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 648b0e1addd509652ba67e09d32dbdd060f29e87
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410333"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074424"
 ---
 # <a name="system-calls"></a>시스템 호출
 
@@ -39,6 +39,6 @@ ms.locfileid: "32410333"
 ## <a name="see-also"></a>참고 항목
 
 [범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>
- [파일 처리](../c-runtime-library/file-handling.md)<br/>
- [디렉터리 제어](../c-runtime-library/directory-control.md)<br/>
- [하위 수준 I/O](../c-runtime-library/low-level-i-o.md)<br/>
+[파일 처리](../c-runtime-library/file-handling.md)<br/>
+[디렉터리 제어](../c-runtime-library/directory-control.md)<br/>
+[하위 수준 I/O](../c-runtime-library/low-level-i-o.md)<br/>

@@ -16,52 +16,53 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08433109a959b324621e9c837e67cf529d9f6fdb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fc2cb8ef9c7c9fe8eea7c506e55c49878b9bd809
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199721"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108537"
 ---
 # <a name="fatal-error-c1017"></a>심각한 오류 C1017
-정수 계열 상수 식이 잘못되었습니다.  
-  
- 식에는 `#if` 지시문 존재 하지 않는 또는 상수 식이 아닙니다.  
-  
- 사용 하 여 정의 된 상수 `#define` 에 사용 되는 경우 정수 상수를 평가 하는 값을 가져야 합니다는 `#if`, `#elif`, 또는 `#else` 지시문입니다.  
-  
- 다음 샘플에서는 C1017 오류가 생성 됩니다.  
-  
-```  
-// C1017.cpp  
-#define CONSTANT_NAME "YES"  
-#if CONSTANT_NAME   // C1017  
-#endif  
-```  
-  
- 해결 방법:  
-  
-```  
-// C1017b.cpp  
-// compile with: /c  
-#define CONSTANT_NAME 1  
-#if CONSTANT_NAME  
-#endif  
-```  
-  
- 때문에 `CONSTANT_NAME` 정수가 아닌 문자열로로 평가 되는 `#if` 지시어 심각한 오류 C1017를 생성 합니다.  
-  
- 다른 경우 전처리기는 정의 되지 않은 상수 0으로 계산 됩니다. 다음 샘플에 표시 된 대로 의도 하지 않은 결과가 발생할 수 있습니다. `YES` 이 정의 되지 않습니다 않았으므로 0으로 계산 합니다. 식 `#if` `CONSTANT_NAME` 사용 되는 코드를 false로 평가 되 `YES` 전처리기에 의해 제거 됩니다. `NO` 또한 정의 되지 않은 (영) 이므로 `#elif` `CONSTANT_NAME==NO` true로 평가 (`0 == 0`), 전처리기에서 코드는 `#elif` 보고서의 부분-정확히 반대는 의도 된 동작입니다.  
-  
-```  
-// C1017c.cpp  
-// compile with: /c  
-#define CONSTANT_NAME YES  
-#if CONSTANT_NAME  
-   // Code to use on YES...  
-#elif CONSTANT_NAME==NO  
-   // Code to use on NO...  
-#endif  
-```  
-  
- 컴파일러 전처리기 지시문을 처리 하는 방식을 정확 하 게를 보려면 사용 [/P](../../build/reference/p-preprocess-to-a-file.md), [/E](../../build/reference/e-preprocess-to-stdout.md), 또는 [/EP](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)합니다.
+
+정수 계열 상수 식이 잘못되었습니다.
+
+식에는 `#if` 지시문 없었습니다 또는 상수 식이 아닙니다.
+
+사용 하 여 정의 된 상수 `#define` 정수 상수에 사용 되는 경우 계산 되는 값을 가져야 합니다는 `#if`를 `#elif`, 또는 `#else` 지시문입니다.
+
+다음 샘플에서는 C1017를 생성합니다.
+
+```
+// C1017.cpp
+#define CONSTANT_NAME "YES"
+#if CONSTANT_NAME   // C1017
+#endif
+```
+
+해결 방법:
+
+```
+// C1017b.cpp
+// compile with: /c
+#define CONSTANT_NAME 1
+#if CONSTANT_NAME
+#endif
+```
+
+때문에 `CONSTANT_NAME` 문자열과 정수가 아닌 계산 되는 `#if` 지시어 심각한 오류 C1017를 생성 합니다.
+
+다른 경우 전처리기는 0으로 정의 되지 않은 상수를를 평가합니다. 다음 샘플에 표시 된 대로 의도 하지 않은 결과가 발생할 수 있습니다. `YES` 아니므로 정의 0으로 계산 합니다. 식을 `#if` `CONSTANT_NAME` false이 고 코드에서 사용할 `YES` 전처리기에 의해 제거 됩니다. `NO` 정의 되지 않은 (영) 따라서 이기도 `#elif` `CONSTANT_NAME==NO` true로 평가 (`0 == 0`), 전처리기에서 코드를 `#elif` 문의 부분-의도 된 동작의 정확히 반대입니다.
+
+```
+// C1017c.cpp
+// compile with: /c
+#define CONSTANT_NAME YES
+#if CONSTANT_NAME
+   // Code to use on YES...
+#elif CONSTANT_NAME==NO
+   // Code to use on NO...
+#endif
+```
+
+컴파일러 전처리기 지시문을 처리 하는 방식을 정확 하 게 보려면 [/P](../../build/reference/p-preprocess-to-a-file.md)를 [/E](../../build/reference/e-preprocess-to-stdout.md), 또는 [/EP](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)합니다.

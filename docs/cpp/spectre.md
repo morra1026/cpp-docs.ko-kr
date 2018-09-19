@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a51d47764ea4515fcbc2cb3b7aa37fd341cd130e
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 3d919a810ed93e40218476369ef9981da59b89bb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39463231"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114620"
 ---
 # <a name="spectre"></a>스펙터
 
@@ -33,7 +33,7 @@ ms.locfileid: "39463231"
 
 ## <a name="syntax"></a>구문
 
-> **__declspec (spectre(nomitigation))**  
+> **__declspec (spectre(nomitigation))**
 
 ## <a name="remarks"></a>설명
 
@@ -44,7 +44,7 @@ ms.locfileid: "39463231"
 > [!CAUTION]
 > 합니다 **/Qspectre** 투기적 실행 장벽 지침 중요 한 보안 보호 제공 하며 성능에는 거의 영향을 주지 합니다. 함수의 성능이 매우 중요하고 해당 함수의 안전성이 파악되는 드문 경우를 제외하고, 버퍼 보안 검사를 억제하지 않도록 권장합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드를 사용 하는 방법을 보여 줍니다 `__declspec(spectre(nomitigation))`합니다.
 
@@ -66,6 +66,7 @@ int main() {
 **Microsoft 전용 종료**
 
 ## <a name="see-also"></a>참고자료
- [__declspec](../cpp/declspec.md)  
- [키워드](../cpp/keywords-cpp.md)  
- [/Qspectre](../build/reference/qspectre.md)  
+
+[__declspec](../cpp/declspec.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
+[/Qspectre](../build/reference/qspectre.md)

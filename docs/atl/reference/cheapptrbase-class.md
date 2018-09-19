@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 849e7ced8889cb46195946cca68243c37e1299a2
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f2a6ab9e03a44f48acca9b949193ceec85eb3ef6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760125"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063114"
 ---
 # <a name="cheapptrbase-class"></a>CHeapPtrBase 클래스
 
@@ -40,16 +40,16 @@ ms.locfileid: "43760125"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T, class Allocator = CCRTAllocator>  
+template <class T, class Allocator = CCRTAllocator>
 class CHeapPtrBase
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 힙에 저장 될 개체 형식입니다.
 
-*할당자*  
+*할당자*<br/>
 사용 하는 메모리 할당 클래스입니다. 기본적으로 CRT 루틴은 할당 및 메모리를 확보를 위해 사용 됩니다.
 
 ## <a name="members"></a>멤버
@@ -102,7 +102,7 @@ bool AllocateBytes(size_t nBytes) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nBytes*  
+*nBytes*<br/>
 할당할 메모리의 바이트 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -123,7 +123,7 @@ void Attach(T* pData) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pData*  
+*pData*<br/>
 `CHeapPtrBase` 개체 this이 포인터의 소유권을 갖게 됩니다.
 
 ### <a name="remarks"></a>설명
@@ -216,7 +216,7 @@ T* operator->() const throw();
 
 캐스트 연산자입니다.
 
-```  
+```
 operator T*() const throw();
 ```
 
@@ -234,7 +234,7 @@ bool ReallocateBytes(size_t nBytes) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nBytes*  
+*nBytes*<br/>
 새 바이트에 할당할 메모리 양입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -243,6 +243,6 @@ bool ReallocateBytes(size_t nBytes) throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[CHeapPtr 클래스](../../atl/reference/cheapptr-class.md)   
-[CComHeapPtr 클래스](../../atl/reference/ccomheapptr-class.md)   
+[CHeapPtr 클래스](../../atl/reference/cheapptr-class.md)<br/>
+[CComHeapPtr 클래스](../../atl/reference/ccomheapptr-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

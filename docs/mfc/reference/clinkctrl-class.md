@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a167b228b054a24a812ce5099f396521adda0d08
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: f81b1e675f6b0c12330d84d17b2e6b1635503dfc
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690423"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704940"
 ---
 # <a name="clinkctrl-class"></a>CLinkCtrl 클래스
 Windows의 공용 SysLink 컨트롤의 기능을 제공합니다.  
@@ -237,7 +237,7 @@ int GetIdealSize(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *cxMaxWidth*|링크 픽셀에서의 최대 너비입니다.|  
+|*cxMaxWidth*|[in] 링크 픽셀에서의 최대 너비입니다.|  
 |[out] \* *pSize*|Windows에 대 한 포인터 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조입니다. 이 메서드는 반환 될 때를 *cy* 의 멤버는 `SIZE` 구조에 지정 된 링크 텍스트의 너비에 대 한 이상적인 링크 텍스트 높이가 포함 됩니다 *cxMaxWidth*합니다. 합니다 *cx* 구조체의 멤버에 실제로 필요한 링크 텍스트의 너비를 포함 합니다.|  
   
 ### <a name="return-value"></a>반환 값  

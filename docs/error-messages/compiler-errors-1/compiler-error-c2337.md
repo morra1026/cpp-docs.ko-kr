@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af10023a044e8f4f602ca6a018139d557b99dffe
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f1b3ed1193d7a5c81e84a152bd01a26bfd04bab0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195128"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105520"
 ---
 # <a name="compiler-error-c2337"></a>컴파일러 오류 C2337
-'attribute name': 특성을 찾을 수 없습니다.  
-  
- 이 버전의 Visual C++에서 지원되지 않는 특성을 사용했습니다.  
-  
- 다음 샘플에서는 C2337을 생성합니다.  
-  
-```  
-// C2337.cpp  
-// compile with: /c  
-[emitidl];  
-[module(name="x")];  
-[grasshopper]   // C2337, not a supported attribute  
-class a{};  
+
+'attribute name': 특성을 찾을 수 없습니다.
+
+이 버전의 Visual C++에서 지원되지 않는 특성을 사용했습니다.
+
+다음 샘플에서는 C2337을 생성합니다.
+
+```
+// C2337.cpp
+// compile with: /c
+[emitidl];
+[module(name="x")];
+[grasshopper]   // C2337, not a supported attribute
+class a{};
 ```

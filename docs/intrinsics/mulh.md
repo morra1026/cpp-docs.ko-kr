@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6bf4cc0ce245b6b80165ced5a9649586f9214639
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 853666f6dee7bae68b03ccc1d9d9c23ce765925b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42539324"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45699963"
 ---
 # <a name="mulh"></a>__mulh
 **Microsoft 전용**  
@@ -38,11 +38,11 @@ __int64 __mulh(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `a`  
- 곱할 첫 번째 숫자입니다.  
+*a*<br/>
+[in] 곱할 첫 번째 숫자입니다.  
   
- [in] `b`  
- 곱할 두 번째 숫자입니다.  
+*b*<br/>
+[in] 곱할 두 번째 숫자입니다.  
   
 ## <a name="return-value"></a>반환 값  
  곱셈의 128비트 결과에서 상위 64비트입니다.  
@@ -58,7 +58,7 @@ __int64 __mulh(
 ## <a name="remarks"></a>설명  
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // mulh.cpp  

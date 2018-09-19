@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca6dedf18989341df82cacfde14f358c778d141e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 264bbff052be7b37af1525392ffe0289fddef6d4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300607"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46104091"
 ---
 # <a name="linker-tools-warning-lnk4096"></a>링커 도구 경고 LNK4096
-/ 기준 값 "number" Windows 95, Windows 98;에 대해 올바르지 않습니다. 이미지가 실행 되지 않습니다.  
-  
- 지정한 기본 주소가 올바르지 않습니다. Windows 95, Windows 98 실행 파일 0x400000입니다 보다 큰 기본 주소가 있어야 합니다. 기본 주소에 대 한 자세한 내용은 참조는 [/base](../../build/reference/base-base-address.md) 링커 옵션입니다.
+
+/ 기준 값 "number" Windows 95 및 Windows 98;에 대해 올바르지 않습니다. 이미지를 실행할 수 없습니다.
+
+지정한 기본 주소가 올바르지 않습니다. 실행 파일을 windows 95 및 Windows 98 0x400000 보다 큰 기본 주소가 있어야 합니다. 기본 주소에 대 한 자세한 내용은 참조는 [/base](../../build/reference/base-base-address.md) 링커 옵션입니다.

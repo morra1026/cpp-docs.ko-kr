@@ -54,12 +54,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 900200eb1894a4f7065a008aeada9b90e71c6fcd
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 369d7c1c6c5bf2201c52bab67361f196b309c6f9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42575790"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702548"
 ---
 # <a name="interlockedincrement-intrinsic-functions"></a>_InterlockedIncrement Intrinsic Functions
 **Microsoft 전용**  
@@ -108,8 +108,8 @@ __int64 _InterlockedIncrement64_nf(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in, out] `lpAddend`  
- 증가시킬 변수에 대한 포인터입니다.  
+*lpAddend*<br/>
+[out에서] 증가 시킬 변수에 대 한 포인터입니다.  
   
 ## <a name="return-value"></a>반환 값  
  반환 값은 증가된 결과 값입니다.  
@@ -134,7 +134,7 @@ __int64 _InterlockedIncrement64_nf(
   
  이러한 루틴은 내장 함수로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  샘플을 사용 하는 방법에 대 한 `_InterlockedIncrement`를 참조 하세요 [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md)합니다.  
   
 **Microsoft 전용 종료**  

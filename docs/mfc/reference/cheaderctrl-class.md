@@ -74,12 +74,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ebe4b604958220a846ee3a91b1a6251f6f461de9
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 763849c2f13e88c11280ec7594385afd85552080
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758858"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712740"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl 클래스
 Windows의 공용 헤더 컨트롤의 기능을 제공합니다.  
@@ -490,8 +490,8 @@ BOOL GetItemDropDownRect(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iItem*|해당 스타일은 HDF_SPLITBUTTON 헤더 항목의 0부터 시작 인덱스입니다. 자세한 내용은 참조 하세요. 합니다 `fmt` 의 멤버는 [HDITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) 구조입니다.|  
-|[out] *lpRect*|에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 경계 사각형 정보를 얻습니다.|  
+|*iItem*|[in] 해당 스타일은 HDF_SPLITBUTTON 헤더 항목의 0부터 시작 인덱스입니다. 자세한 내용은 참조 하세요. 합니다 `fmt` 의 멤버는 [HDITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) 구조입니다.|  
+|*lpRect*|[out] 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 경계 사각형 정보를 얻습니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 함수에 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -567,7 +567,7 @@ BOOL GetOverflowRect(LPRECT lpRect) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out] *lpRect*|에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 경계 사각형 정보를 수신 하는 구조입니다.|  
+|*lpRect*|[out] 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 경계 사각형 정보를 수신 하는 구조입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 함수에 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -598,7 +598,7 @@ int HitTest(LPHDHITTESTINFO* phdhti);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out에서] *phdhti*|에 대 한 포인터를 [HDHITTESTINFO](/windows/desktop/api/commctrl/ns-commctrl-_hd_hittestinfo) 테스트 하는 시점을 지정 하 고 테스트의 결과 받는 구조체입니다.|  
+|*phdhti*|[out에서] 에 대 한 포인터를 [HDHITTESTINFO](/windows/desktop/api/commctrl/ns-commctrl-_hd_hittestinfo) 테스트 하는 시점을 지정 하 고 테스트의 결과 받는 구조체입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  지정 된 위치에 있는 경우 헤더 항목의 0부터 시작 인덱스 그렇지 않으면-1입니다.  
@@ -726,7 +726,7 @@ BOOL SetFocusedItem(int iItem);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iItem*|헤더 항목의 인덱스가 0부터 시작 합니다.|  
+|*iItem*|[in] 헤더 항목의 인덱스가 0부터 시작 합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  

@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e9932f8814855213f133323f2102e0cacf1e69c8
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a55623c28ca7114f43f208e5c660b9df38d1242b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43196713"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701835"
 ---
 # <a name="cbutton-class"></a>CButton 클래스
 Windows 단추 컨트롤의 기능을 제공합니다.  
@@ -394,8 +394,8 @@ BOOL GetNote(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out] *lpszNote*|호출자가 할당 및 할당 취소 하는 일을 담당 하는 버퍼에 대 한 포인터입니다. 반환 값이 TRUE 이면 버퍼에 현재 명령 링크 컨트롤을 사용 하 여 연결 된 메모 텍스트 포함 그렇지 않은 경우 버퍼 변경 되지 않습니다.|  
-|[out에서] *cchNote*|부호 없는 정수 변수에 대 한 포인터입니다.<br /><br /> 이 메서드를 호출 될 때 변수의 지정 된 버퍼의 크기를 포함 하는 합니다 *lpszNote* 매개 변수입니다.<br /><br /> 경우 반환 값 TRUE 변수 이면이 메서드가 반환 현재 명령 링크 컨트롤을 사용 하 여 연결 된 메모의 크기를 포함 합니다. 반환 값이 FALSE 이면 변수는 메모를 포함 하는 데 필요한 버퍼 크기를 포함 합니다.|  
+|*lpszNote*|[out] 호출자가 할당 및 할당 취소 하는 일을 담당 하는 버퍼에 대 한 포인터입니다. 반환 값이 TRUE 이면 버퍼에 현재 명령 링크 컨트롤을 사용 하 여 연결 된 메모 텍스트 포함 그렇지 않은 경우 버퍼 변경 되지 않습니다.|  
+|*cchNote*|[out에서] 부호 없는 정수 변수에 대 한 포인터입니다.<br /><br /> 이 메서드를 호출 될 때 변수의 지정 된 버퍼의 크기를 포함 하는 합니다 *lpszNote* 매개 변수입니다.<br /><br /> 경우 반환 값 TRUE 변수 이면이 메서드가 반환 현재 명령 링크 컨트롤을 사용 하 여 연결 된 메모의 크기를 포함 합니다. 반환 값이 FALSE 이면 변수는 메모를 포함 하는 데 필요한 버퍼 크기를 포함 합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  첫 번째 오버 로드에는 [CString](../../atl-mfc-shared/using-cstring.md) 현재 명령 링크 컨트롤을 사용 하 여 연결 된 메모 텍스트를 포함 하는 개체입니다.  
@@ -467,7 +467,7 @@ BOOL GetSplitInfo(PBUTTON_SPLITINFO pInfo) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out] *pInfo*|에 대 한 포인터를 [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) 현재 분할 단추 컨트롤에 대 한 정보를 수신 하는 구조입니다. 호출자는 구조를 할당 하는 일을 담당 합니다.|  
+|*pInfo*|[out] 에 대 한 포인터를 [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) 현재 분할 단추 컨트롤에 대 한 정보를 수신 하는 구조입니다. 호출자는 구조를 할당 하는 일을 담당 합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -488,7 +488,7 @@ BOOL GetSplitSize(LPSIZE pSize) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out] *pSize*|에 대 한 포인터를 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조체는 사각형의 설명입니다.|  
+|*pSize*|[out] 에 대 한 포인터를 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조체는 사각형의 설명입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -687,7 +687,7 @@ BOOL SetDropDownState(BOOL fDropDown);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *fDropDown*|BST_DROPDOWNPUSHED 상태;으로 설정 그렇지 않으면 FALSE입니다.|  
+|*fDropDown*|[in] BST_DROPDOWNPUSHED 상태;으로 설정 그렇지 않으면 FALSE입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -718,7 +718,7 @@ BOOL SetElevationRequired(BOOL fElevationRequired);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *fElevationRequired*|설정 하려면 True `elevation required` 상태, 그렇지 않으면 FALSE입니다.|  
+|*fElevationRequired*|[in] 설정 하려면 True `elevation required` 상태, 그렇지 않으면 FALSE입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -790,7 +790,7 @@ BOOL SetNote(LPCTSTR lpszNote);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *lpszNote*|명령 링크 컨트롤에 대 한 메모 텍스트로 설정 하는 유니코드 문자열에 대 한 포인터입니다.|  
+|*lpszNote*|[in] 명령 링크 컨트롤에 대 한 메모 텍스트로 설정 하는 유니코드 문자열에 대 한 포인터입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -821,7 +821,7 @@ BOOL SetSplitGlyph(TCHAR chGlyph);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *chGlyph*|분할 단추 드롭다운 화살표를 사용 하는 문자를 지정 하는 문자입니다.|  
+|*chGlyph*|[in] 분할 단추 드롭다운 화살표를 사용 하는 문자를 지정 하는 문자입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -844,7 +844,7 @@ BOOL SetSplitImageList(CImageList* pSplitImageList);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *pSplitImageList*|에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 현재 분할 단추 컨트롤에 할당할 개체입니다.|  
+|*pSplitImageList*|[in] 에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 현재 분할 단추 컨트롤에 할당할 개체입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -865,7 +865,7 @@ BOOL SetSplitInfo(PBUTTON_SPLITINFO pInfo);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *pInfo*|에 대 한 포인터를 [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) 현재 분할 단추 컨트롤을 정의 하는 구조입니다.|  
+|*pInfo*|[in] 에 대 한 포인터를 [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) 현재 분할 단추 컨트롤을 정의 하는 구조입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -896,7 +896,7 @@ BOOL SetSplitSize(LPSIZE pSize);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *pSize*|에 대 한 포인터를 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 경계 사각형을 설명 하는 구조입니다.|  
+|*pSize*|[in] 에 대 한 포인터를 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 경계 사각형을 설명 하는 구조입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -929,7 +929,7 @@ BOOL SetSplitStyle(UINT uSplitStyle);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *uSplitStyle*|분할 단추 스타일의 비트 조합입니다. 자세한 내용은 참조 하세요. 합니다 `uSplitStyle` 의 멤버는 [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) 구조입니다.|  
+|*uSplitStyle*|[in] 분할 단추 스타일의 비트 조합입니다. 자세한 내용은 참조 하세요. 합니다 `uSplitStyle` 의 멤버는 [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) 구조입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  

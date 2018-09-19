@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6793cbb120b44456a880a47ffd114c346662376
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a3aee777cf7d003beb2d1f76d57bf029d358aba6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43208887"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726793"
 ---
 # <a name="application-information-and-management"></a>응용 프로그램 정보 및 관리
 단일 응용 프로그램을 작성할 때 만든 [CWinApp](../../mfc/reference/cwinapp-class.md)-파생 개체입니다. 때때로 하려는 경우 외부에서이 개체에 대 한 정보는 `CWinApp`-파생 개체입니다. 또는 다른 전역 "관리자" 개체에 대 한 액세스를 해야 할 수 있습니다.
@@ -406,8 +406,8 @@ BOOL AFXAPI AfxInitRichEdit2();
 BOOL AFXAPI AfxIsExtendedFrameClass( CWnd* pWnd );  
 ```
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- `CWnd`에서 파생된 개체에 대한 포인터입니다.  
+*pWnd*<br/>
+[in] 파생 된 개체에 대 한 포인터 `CWnd`합니다.  
    
 ### <a name="return-value"></a>반환 값  
  제공 된 창이 확장 된 프레임 개체 이면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -442,8 +442,8 @@ BOOL AFXAPI AfxIsExtendedFrameClass( CWnd* pWnd );
 BOOL AFXAPI AfxIsMFCToolBar(CWnd* pWnd);  
 ```
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- `CWnd`에서 파생된 개체에 대한 포인터입니다.  
+*pWnd*<br/>
+[in] 파생 된 개체에 대 한 포인터 `CWnd`합니다.  
    
 ### <a name="return-value"></a>반환 값  
  제공 된 창 도구 모음 개체; 이면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -636,8 +636,8 @@ void AFXAPI AfxSetPerUserRegistration(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- TRUE 이면 레지스트리 정보; HKCU 노드로 전달 되는 False로 기본 노드에 레지스트리 정보를 기록 하는 응용 프로그램을 나타냅니다. 기본 노드인 **HKEY_CLASSES_ROOT** ( **HKCR**).  
+*bEnable*<br/>
+[in] TRUE 이면 레지스트리 정보; HKCU 노드로 전달 되는 False로 기본 노드에 레지스트리 정보를 기록 하는 응용 프로그램을 나타냅니다. 기본 노드인 **HKEY_CLASSES_ROOT** ( **HKCR**).  
   
 ### <a name="remarks"></a>설명  
 

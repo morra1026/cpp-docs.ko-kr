@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b41b0f7360d49891e330277114324aa099900682
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e9ca53e5b614b5e1d85832a7ad437a39ac1c5d87
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33263975"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107901"
 ---
 # <a name="compiler-error-c3698"></a>컴파일러 오류 C3698
-'type': 'operator'의 인수로이 형식을 사용할 수 없습니다  
-  
- 관리 되는 개체를 잘못 선언 되었습니다.  
-  
- 다음 샘플에서는 C3698 오류가 생성 됩니다.  
-  
-```  
-// C3698.cpp  
-// compile with: /clr  
-  
-int main() {  
-   array<int>^a = new array<int>^(20);   // C3698  
-   array<int>^a2 = gcnew array<int>(20);   // OK  
-}  
+
+'type': 'operator'의 인수로이 형식을 사용할 수 없습니다
+
+관리 되는 개체를 올바르게 선언 되었습니다.
+
+다음 샘플에서는 C3698를 생성합니다.
+
+```
+// C3698.cpp
+// compile with: /clr
+
+int main() {
+   array<int>^a = new array<int>^(20);   // C3698
+   array<int>^a2 = gcnew array<int>(20);   // OK
+}
 ```

@@ -16,30 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc0ca6235e0fd4bdd22330e807464e96280ae461
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cfae8a58d9c42c9ddc3ef7779fc86f7157ba41b0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33234031"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46080859"
 ---
 # <a name="compiler-error-c2785"></a>컴파일러 오류 C2785
-'declaration1' 및 'declaration2'는 다른 반환 형식  
-  
- 함수 템플릿 특수화의 반환 형식이 기본 기능은 서식 파일의 반환 형식에서 다릅니다.  
-  
-### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
-  
-1.  일관성에 대 한 함수 템플릿의 모든 특수화를 확인 합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C2785 오류가 생성 됩니다.  
-  
-```  
-// C2785.cpp  
-// compile with: /c  
-template<class T> void f(T);  
-  
-template<> int f(int); // C2785  
-template<> void f(int); // OK  
+
+'declaration1' 및 'declaration2'는 다른 반환 형식
+
+기본 함수 템플릿은의 반환 형식에서 함수 템플릿 특수화의 반환 형식이 서로 다릅니다.
+
+### <a name="to-correct-this-error"></a>이 오류를 해결하려면
+
+1. 일관성에 대 한 함수 템플릿의 모든 특수화를 확인 합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C2785를 생성합니다.
+
+```
+// C2785.cpp
+// compile with: /c
+template<class T> void f(T);
+
+template<> int f(int); // C2785
+template<> void f(int); // OK
 ```

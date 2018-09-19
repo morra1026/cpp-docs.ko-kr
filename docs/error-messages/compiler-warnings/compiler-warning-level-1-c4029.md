@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe03ca53056a48d2c6104d86dd70c8c4ae31a2c6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1e14664a40057ff76bf69863f7b0b08bb0e63d5d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33273194"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105176"
 ---
 # <a name="compiler-warning-level-1-c4029"></a>컴파일러 경고 (수준 1) C4029
-선언 된 형식 매개 변수 목록이 정의와 다릅니다.  
-  
- 함수 선언에서 형식 매개 변수 형식이 함수 정의에 있는 것과 일치 하지 않습니다. 컴파일러에는 정의에서 매개 변수 목록을 사용 합니다.
+
+선언 된 정식 매개 변수 목록이 정의와 다릅니다.
+
+형식 매개 변수 형식이 함수 선언에서 함수 정의의 설정과 일치 하지 않습니다. 컴파일러는 정의에서 매개 변수 목록을 사용 합니다.

@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e88053cde81e7eea8bc9e9280cf235d5eccc6704
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d2bdc91dd2b64c4fbd3a14670ba500ac970c9ad3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226950"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135791"
 ---
 # <a name="compiler-error-c2612"></a>컴파일러 오류 C2612
-'char' 기본/멤버 이니셜라이저 목록에 잘못 된 후행  
-  
- 마지막 기본 또는 멤버 이니셜라이저 목록에서 다음에 문자가 표시 합니다.  
-  
- 다음 샘플에서는 C2612 오류가 생성 됩니다.  
-  
-```  
-// C2612.cpp  
-class A {  
-public:  
-   int i;  
-   A( int ia ) : i( ia ) + {};   // C2612  
-};  
+
+'char' 기본/멤버 이니셜라이저 목록에서 잘못 된 후행
+
+마지막으로 기본 또는 멤버 이니셜라이저 목록에서 다음에 문자가 표시 합니다.
+
+다음 샘플에서는 C2612 오류가 생성 됩니다.
+
+```
+// C2612.cpp
+class A {
+public:
+   int i;
+   A( int ia ) : i( ia ) + {};   // C2612
+};
 ```

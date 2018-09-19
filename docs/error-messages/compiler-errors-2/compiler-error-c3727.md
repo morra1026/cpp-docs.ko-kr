@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f19d77bee07abd6eb112f470ed0932b3d1dbb78
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ac2b5628e370ba6e8c4116a144c6c60712bc7e45
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33264001"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085396"
 ---
 # <a name="compiler-error-c3727"></a>컴파일러 오류 C3727
-'event': 관리 되는 이벤트 멤버 함수 또는 데이터 멤버를 대리자에 대 한 포인터 여야 합니다  
-  
- .NET 이벤트는 대리자 형식에 대 한 포인터 여야 합니다.  
+
+'event': 관리 되는 이벤트 대리자에 대 한 포인터는 데이터 멤버 또는 멤버 함수 여야 합니다.
+
+.NET 이벤트 대리자 형식에 대 한 포인터 여야 합니다.

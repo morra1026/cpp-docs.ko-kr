@@ -16,22 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6a21afc6831c0fb51c96fa6ff8c43de1bebb812
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4332b48ea9ea0a69c1545fbfac8b7df5cf5f8be3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33272076"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093352"
 ---
 # <a name="compiler-error-c3820"></a>컴파일러 오류 C3820
-'name': 이니셜라이저는 관리되어야 합니다.  
-  
- 관리되는 형식에 대한 *name* 이니셜라이저도 관리해야 합니다.  
-  
-### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
-  
-1.  관리되는 이니셜라이저 메서드를 지정합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [이니셜라이저](../../cpp/initializers.md)   
- [추가 시작 고려 사항](../../cpp/additional-startup-considerations.md)
+
+'name': 이니셜라이저는 관리되어야 합니다.
+
+관리되는 형식에 대한 *name* 이니셜라이저도 관리해야 합니다.
+
+### <a name="to-correct-this-error"></a>이 오류를 해결하려면
+
+1. 관리되는 이니셜라이저 메서드를 지정합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[이니셜라이저](../../cpp/initializers.md)<br/>
+[추가 시작 고려 사항](../../cpp/additional-startup-considerations.md)

@@ -58,12 +58,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7eff5cab57c1288af1f6e1109fae458c35e0fa7b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b301483e2c2f76838054059af838b282aee2d523
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611385"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711258"
 ---
 # <a name="interlockedcompareexchange-intrinsic-functions"></a>_InterlockedCompareExchange 내장 함수
 **Microsoft 전용**  
@@ -186,14 +186,14 @@ __int64 _InterlockedCompareExchange64_rel(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in, out] `Destination`  
- 대상 값에 대한 포인터입니다. 부호는 무시됩니다.  
+*대상*<br/>
+[out에서] 대상 값에 대 한 포인터입니다. 부호는 무시됩니다.  
   
- [in] `Exchange`  
- 값을 교환합니다. 부호는 무시됩니다.  
+*Exchange*<br/>
+[in] 값을 교환 합니다. 부호는 무시됩니다.  
   
- [in] `Comparand`  
- 대상과 비교할 값입니다. 부호는 무시됩니다.  
+*비교 피연산자*<br/>
+[in] 대상과 비교할 값입니다. 부호는 무시됩니다.  
   
 ## <a name="return-value"></a>반환 값  
  반환 값은 `Destination` 포인터의 초기 값입니다.  
@@ -224,7 +224,7 @@ __int64 _InterlockedCompareExchange64_rel(
   
  이러한 루틴은 내장 함수로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 간단한 하위 수준 스레드 동기화에 `_InterlockedCompareExchange`를 사용합니다. 이 방식은 다중 스레드 프로그래밍의 기준으로 사용하기에는 한계가 있으며, 일반적인 연관 내장 함수 사용 방법을 보여 주기 위한 용도로 제공됩니다. 최상의 결과를 얻으려면 Windows API를 사용합니다. 다중 스레드 프로그래밍에 대 한 자세한 내용은 참조 하세요. [다중 스레드 Win32 프로그램 작성](../parallel/writing-a-multithreaded-win32-program.md)합니다.  
   
 ```  

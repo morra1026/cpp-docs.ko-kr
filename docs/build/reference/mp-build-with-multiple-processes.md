@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e61f1ac30c2a50cbbefe6c0cbd9e28011a0d0bd
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: bb24ed970d3b02835d5545cb0eaf1d9fd8e81c7e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42572978"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713429"
 ---
 # <a name="mp-build-with-multiple-processes"></a>/MP(여러 프로세스로 빌드)
 
@@ -127,7 +127,7 @@ Visual Studio에서 사용 하 여 [MSBuild.exe](/visualstudio/msbuild/msbuild-r
 
 솔루션의 빌드 시간은 부분적으로 빌드를 수행 하는 프로세스의 수에 따라 다릅니다. *수* 인수를 [/maxcpucount](/visualstudio/msbuild/msbuild-command-line-reference) MSBuild 옵션 동시에 빌드할 프로젝트의 최대 수를 지정 합니다. 마찬가지로, 합니다 *processMax* 의 인수는 **/MP** 컴파일러 옵션을 동시에 빌드할 컴파일 단위의 최대 수를 지정 합니다. 경우는 **/maxcpucount** 옵션을 지정 *P* 프로젝트 및 **/MP** 옵션 지정 *C* 처리 하 고, 최대 *P*  x *C* 프로세스가 동시에 실행 합니다.
 
- MSBuild를 사용할지 여부를 결정 하기 위한 지침은 또는 **/MP** 기술은 다음과 같습니다.
+MSBuild를 사용할지 여부를 결정 하기 위한 지침은 또는 **/MP** 기술은 다음과 같습니다.
 
 - 각 프로젝트의 몇 가지 파일을 사용 하 여 여러 프로젝트의 경우 MSBuild 도구를 사용 합니다.
 

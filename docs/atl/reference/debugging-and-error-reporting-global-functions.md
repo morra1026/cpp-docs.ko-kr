@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8af4a1b2ee763dfc28288058d27b1b08721fd97
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3bef300671894e054ddf9b1ca0ab9dcf3b135370
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756066"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019423"
 ---
 # <a name="debugging-and-error-reporting-global-functions"></a>디버깅 및 오류 보고 전역 함수
 
@@ -63,7 +63,7 @@ AtlHresultFromWin32(DWORD error);
 
 ### <a name="parameters"></a>매개 변수
 
-*error*  
+*error*<br/>
 변환 오류 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -129,28 +129,28 @@ HRESULT WINAPI AtlReportError(
 
 ### <a name="parameters"></a>매개 변수
 
-*clsid*  
+*clsid*<br/>
 [in] 오류를 보고 하는 개체의 CLSID입니다.
 
-*lpszDesc*  
+*lpszDesc*<br/>
 [in] 오류를 설명 하는 문자열입니다. 유니코드 버전 지정 *lpszDesc* 입니다 LPCOLESTR 입력; ANSI 버전 LPCSTR 형식을 지정 합니다.
 
-*iid*  
+*iid*<br/>
 [in] 오류는 운영 체제에 의해 정의 된 경우 오류 또는 GUID_NULL를 정의 하는 인터페이스의 IID입니다.
 
-*hRes*  
+*hRes*<br/>
 [in] 원하는 HRESULT 호출자에 게 반환 합니다.
 
-*nID*  
+*nID*<br/>
 [in] 오류 설명 문자열을 저장 된 리소스 식별자입니다. 이 값 사이 있어야 0x0200 및 0xFFFF 까지입니다. 디버그 빌드에서 **ASSERT** 경우에 발생 합니다 *nID* 는 유효한 문자열을 인덱싱하지 않습니다. 릴리스 빌드에서 오류 설명 문자열을 "알 수 없는 오류입니다."로 설정 됩니다.
 
-*dwHelpID*  
+*dwHelpID*<br/>
 [in] 오류에 대 한 도움말 컨텍스트 식별자입니다.
 
-*lpszHelpFile*  
+*lpszHelpFile*<br/>
 [in] 경로 오류를 설명 하는 도움말 파일의 이름입니다.
 
-*hInst*  
+*hInst*<br/>
 [in] 리소스에 대 한 핸들입니다. 이 매개 변수는 기본적으로 `__AtlBaseModuleModule::GetResourceInstance`, 여기서 `__AtlBaseModuleModule` 의 인스턴스인 전역 [CAtlBaseModule](../../atl/reference/catlbasemodule-class.md) 클래스에서 파생 된 또는 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -182,7 +182,7 @@ __declspec(noreturn) inline void AtlThrow(HRESULT hr);
 
 ### <a name="parameters"></a>매개 변수
 
-*hr*  
+*hr*<br/>
 표준 HRESULT 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -233,6 +233,6 @@ _ATL_NO_EXCEPTIONS 정의 된 경우 함수는 예외를 throw 하는 대신 어
 
 ## <a name="see-also"></a>참고 항목
 
-[함수](../../atl/reference/atl-functions.md)   
+[함수](../../atl/reference/atl-functions.md)<br/>
 [디버깅 및 오류 보고 매크로](../../atl/reference/debugging-and-error-reporting-macros.md)
 

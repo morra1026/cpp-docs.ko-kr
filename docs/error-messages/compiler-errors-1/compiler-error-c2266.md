@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cada178ed73ff9388b5f86d5d20220b375971e3c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c6f28741d5ae090a497ce3ebc3a56f68fc87e1b0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168007"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067367"
 ---
 # <a name="compiler-error-c2266"></a>컴파일러 오류 C2266
-'identifier': 비상수 범위 배열 참조를 사용할 수 없습니다.  
-  
- 참조가 비상수 범위를 가진 배열에 대해 선언되었습니다. 배열은 상수 범위를 가져야 합니다.
+
+'identifier': 비상수 범위 배열 참조를 사용할 수 없습니다.
+
+참조가 비상수 범위를 가진 배열에 대해 선언되었습니다. 배열은 상수 범위를 가져야 합니다.

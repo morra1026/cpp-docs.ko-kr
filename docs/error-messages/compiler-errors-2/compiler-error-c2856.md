@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac67538a10d39bc68059b0a7d1aaf73a381abb2a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: df6226bfd2fc11f05f894091f4ff02c145d09e11
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33244135"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072719"
 ---
 # <a name="compiler-error-c2856"></a>컴파일러 오류 C2856
-\#pragma hdrstop #if 블록 내에 있을 수 없습니다.  
-  
- `hdrstop` pragma는 조건부 컴파일 블록의 본문 안에 배치할 수 없습니다.  
-  
- 이동 된 `#pragma hdrstop` 문을에 포함 되지 않은 영역에는 `#if/#endif` 블록입니다.
+
+\#pragma hdrstop #if 블록 내 여야 합니다.
+
+`hdrstop` 조건부 컴파일 블록의 본문 안에 pragma를 배치할 수 없습니다.
+
+이동 합니다 `#pragma hdrstop` 영역에 포함 되지 않은 문을 `#if/#endif` 블록입니다.

@@ -12,18 +12,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 205241f2306885800813597568ed9ae8cf3858b3
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2c2b1dc80cec8ba18522d8238752857105993074
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598235"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720735"
 ---
 # <a name="configuring-programs-for-windows-xp"></a>Windows XP 용 프로그램 구성
 
 Visual Studio에서는 여러 플랫폼 도구 집합을 지원 하므로 운영 체제 및 런타임 라이브러리 기본 도구 집합에서 지원 되지 않는 대상 수 있습니다. 예를 들어, 플랫폼 도구 집합을 전환 하 여 사용할 수 있습니다 c++11, c++14 및 Visual Studio에서 Visual c + + 컴파일러에서 지원 되는 C + + 17 개의 언어 향상 된 Windows XP 및 Windows Server 2003을 대상으로 하는 앱을 만듭니다. 또한 이전 플랫폼 도구 집합을 사용 하 여 이진 호환 레거시 코드를 유지 하 고 여전히 Visual Studio IDE의 최신 기능을 활용 하기 위해 수 있습니다.
 
 ## <a name="install-the-windows-xp-platform-toolset"></a>Windows XP 플랫폼 도구 집합 설치
+
 Visual Studio 2017에서 플랫폼 도구 집합 및 대상 Windows XP 및 Windows Server 2003 구성 요소를 가져오려면 Visual Studio 설치 관리자를 실행 합니다. Visual Studio를 처음 설치할 때 또는 선택 하면 **수정** 기존 설치를 수정 하려면 합니다 **c + +를 사용한 데스크톱 개발** 워크 로드가 선택 합니다. 이 워크 로드에 대 한 선택적 구성 요소 목록에서 선택 **c + + 용 Windows XP 지원**를 선택한 후 **설치** 하거나 **수정**합니다.
 
 ## <a name="windows-xp-targeting-experience"></a>Windows XP 대상 환경
@@ -72,7 +73,7 @@ Windows XP 플랫폼 도구 집합, C 런타임 라이브러리 (CRT), c + + 표
 
 - **DirectX 그래픽 디버깅**
 
-     그래픽 디버거는 Direct3D 9 API를 지원 하지 않으므로, Windows XP 또는 Windows Server 2003에서 Direct3D를 사용 하는 앱을 디버깅 하려면 사용할 수 없습니다. 그러나 앱이 Direrct3D 10 또는 Direct3D 11 API를 사용하는 대체 렌더러를 구현하는 경우 그래픽 디버거를 사용하여 해당 API 사용 시 발생하는 문제를 진단할 수 있습니다.
+   그래픽 디버거는 Direct3D 9 API를 지원 하지 않으므로, Windows XP 또는 Windows Server 2003에서 Direct3D를 사용 하는 앱을 디버깅 하려면 사용할 수 없습니다. 그러나 앱이 Direrct3D 10 또는 Direct3D 11 API를 사용하는 대체 렌더러를 구현하는 경우 그래픽 디버거를 사용하여 해당 API 사용 시 발생하는 문제를 진단할 수 있습니다.
 
 - **HLSL 빌드**
 

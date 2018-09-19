@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 34a6b019c2e3f71b70253ad2c15bc4b2758eeae7
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8ea4fd429395fc78f36d1f9b3244068c737be49a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762082"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033981"
 ---
 # <a name="cheapptr-class"></a>CHeapPtr 클래스
 
@@ -37,16 +37,16 @@ ms.locfileid: "43762082"
 ## <a name="syntax"></a>구문
 
 ```
-template<typename T, class Allocator=CCRTAllocator>  
+template<typename T, class Allocator=CCRTAllocator>
 class CHeapPtr : public CHeapPtrBase<T, Allocator>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 힙에 저장 될 개체 형식입니다.
 
-*할당자*  
+*할당자*<br/>
 사용 하는 메모리 할당 클래스입니다.
 
 ## <a name="members"></a>멤버
@@ -94,7 +94,7 @@ bool Allocate(size_t nElements = 1) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nElements*  
+*nElements*<br/>
 할당할 메모리 양을 계산 하는 데 사용 되는 요소의 수입니다. 기본값은 1입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -121,7 +121,7 @@ CHeapPtr(CHeapPtr<T, Allocator>& p) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 기존 힙 포인터를 또는 `CHeapPtr`합니다.
 
 ### <a name="remarks"></a>설명
@@ -143,7 +143,7 @@ CHeapPtr<T, Allocator>& operator=(
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 기존 `CHeapPtr` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -164,7 +164,7 @@ bool Reallocate(size_t nElements) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nElements*  
+*nElements*<br/>
 할당할 메모리 양을 계산 하는 데 사용 하는 요소의 새 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -177,6 +177,6 @@ True를 반환 했습니다. 메모리가 할당 실패 하면 false를 합니�
 
 ## <a name="see-also"></a>참고 항목
 
-[CHeapPtrBase 클래스](../../atl/reference/cheapptrbase-class.md)   
-[CCRTAllocator 클래스](../../atl/reference/ccrtallocator-class.md)   
+[CHeapPtrBase 클래스](../../atl/reference/cheapptrbase-class.md)<br/>
+[CCRTAllocator 클래스](../../atl/reference/ccrtallocator-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

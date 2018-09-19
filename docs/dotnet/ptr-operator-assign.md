@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: c4f9e54ce2bcd6ff402e6ad239b269a3e314286d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a8a8b87afba71836876554e1abbe04014cb09772
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33161033"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075085"
 ---
 # <a name="ptroperator"></a>ptr::operator=
-COM 개체에 연결 된 `com::ptr`합니다.  
+COM 개체를 연결 된 `com::ptr`합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,22 +39,22 @@ ptr<_interface_type> % operator=(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `_right`  
- 연결할 COM 인터페이스 포인터입니다.  
+*(_r)*<br/>
+연결할 COM 인터페이스 포인터입니다.  
   
 ## <a name="return-value"></a>반환 값  
  에 대 한 추적 참조는 `com::ptr`합니다.  
   
 ## <a name="exceptions"></a>예외  
- 경우는 `com::ptr` COM 개체에 대 한 참조를 이미 소유한 `operator=` throw <xref:System.InvalidOperationException>합니다.  
+ 경우는 `com::ptr` COM 개체에 대 한 참조를 이미 소유 `operator=` throw <xref:System.InvalidOperationException>합니다.  
   
 ## <a name="remarks"></a>설명  
- COM 개체를 할당 한 `com::ptr` COM 개체를 참조 하지만 호출자의에 대 한 참조를 해제 하지 않습니다.  
+ COM 개체를 할당 한 `com::ptr` COM 개체를 참조 하지만에 대 한 호출자의 참조를 해제 하지 않습니다.  
   
- 이 연산자는 것과 동일한 결과가 `Attach`합니다.  
+ 이 연산자는 것과 동일한 효과가 `Attach`합니다.  
   
 ## <a name="example"></a>예제  
- 이 예제에서는 `com::ptr`을 사용해서 해당 개인 멤버 `IXMLDOMDocument` 개체를 래핑하는 CLR 클래스를 구현합니다.  `ReplaceDocument` 멤버 함수에 대 한 첫 번째 호출 `Release` 에서 이전에 소유 하 고 개체와 사용 하 여 `operator=` 새 문서 개체를 연결 합니다.  
+ 이 예제에서는 `com::ptr`을 사용해서 해당 개인 멤버 `IXMLDOMDocument` 개체를 래핑하는 CLR 클래스를 구현합니다.  `ReplaceDocument` 멤버 함수에 대 한 첫 번째 호출 `Release` 에 소유 했던 개체와 사용 하 여 `operator=` 새 문서를 연결 합니다.  
   
 ```  
 // comptr_op_assign.cpp  

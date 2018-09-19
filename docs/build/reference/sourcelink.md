@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 876373b5646790f9f8de0042442b2ab56d9d2971
-ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
+ms.openlocfilehash: dff53f7a4db12e32bca2494ba99f5b3b8203d48f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40242870"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706669"
 ---
 # <a name="sourcelink-include-sourcelink-file-in-pdb"></a>/ SOURCELINK (Sourcelink 포함 파일 PDB)
 
@@ -33,7 +33,7 @@ ms.locfileid: "40242870"
 
 ## <a name="arguments"></a>인수
 
-*filename*  
+*filename*<br/>
 JSON 형식의 구성 파일을 지정 로컬 파일 경로를 Url의 간단한 매핑을 포함 하는 소스 파일을 검색할 수 있는 디버거에 의해 표시 합니다. 이 파일의 형식에 자세한 내용은 참조 [소스 링크 JSON 스키마](https://github.com/dotnet/designs/blob/master/accepted/diagnostics/source-link.md#source-link-json-schema)합니다.
 
 ## <a name="remarks"></a>설명
@@ -48,11 +48,11 @@ SourceLink는 원본 이진 파일에 대 한 디버깅을 제공 하기 위한 
 
 1. 에 **추가 옵션** 상자에서 추가 **/SOURCELINK:**_filename_ 를 선택한 후 **확인** 또는 **적용**변경 내용을 저장 합니다.
 
-### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면  
-  
+### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면
+
 - 이 옵션에 프로그래밍 방식으로 해당 하는 없습니다.
 
 ## <a name="see-also"></a>참고자료
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)  
-[링커 옵션](../../build/reference/linker-options.md)  
+[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
+[링커 옵션](../../build/reference/linker-options.md)

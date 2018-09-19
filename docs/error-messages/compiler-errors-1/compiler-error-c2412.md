@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f6abe2e7ae989acab3b8545f447d567a0e876953
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ee9c3b7b414bcbfa07fb289a76e9e481da6697c6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33240886"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044563"
 ---
 # <a name="compiler-error-c2412"></a>컴파일러 오류 C2412
-'label': 대/소문자 구분 레이블을 재정의 했습니다  
-  
- 레이블이 현재 함수에 두 번 이상 정의 됩니다. 레이블 및 해당 참조의 맞춤법을 변경 합니다.
+
+'label': 대/소문자 레이블이 재정의 되었습니다
+
+현재 함수에서 레이블은 두 번 이상 정의 됩니다. 레이블 및 해당 참조의 철자를 변경 합니다.

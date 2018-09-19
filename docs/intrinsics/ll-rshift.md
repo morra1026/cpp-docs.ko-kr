@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd8189f15f38d5d3008c1f20959573ca9d2337c9
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 8df70d0ba5c0f957620ee204256b6c92ce4c01f1
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42545884"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722074"
 ---
 # <a name="llrshift"></a>__ll_rshift
 **Microsoft 전용**  
@@ -40,11 +40,11 @@ __int64 __ll_rshift(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `Mask`  
- 오른쪽 시프트 64 비트 정수 값입니다.  
+*마스크*<br/>
+[in] 오른쪽 시프트 64 비트 정수 값입니다.  
   
- [in] `nBit`  
- X86 32 모듈로 및 x64에서 64 모듈로 이동할 비트 수입니다.  
+*nBit*<br/>
+[in] X86 32 모듈로 및 x64에서 64 모듈로 이동할 비트 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
  으로 이동 하 여 마스크 `nBit` 비트입니다.  
@@ -60,7 +60,7 @@ __int64 __ll_rshift(
 ## <a name="remarks"></a>설명  
  두 번째 매개 변수 번호도 이동할 비트 수를 확인 하려면 64 (x86 32) 모듈로 수행 되는 (32) x86에서 x64 64 보다 큰 경우. `ll` 접두사에는 작업 임을 나타냅니다 `long long`다른 이름 `__int64`, 64 비트 부호 있는 정수 계열 형식입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // ll_rshift.cpp  

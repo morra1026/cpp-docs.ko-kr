@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb54752efb23db7599538e6dc2b71ea3bf5eb3a3
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: cf12d517647e36c8a0d9428b818f3812bfea2e1d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197337"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020618"
 ---
 # <a name="subscript-operator-"></a>첨자 연산자]
 
@@ -64,7 +64,7 @@ double aDbl[2];
 
 *expression1* **[** *expression2* **] [** *expression3* **]** ...
 
-첨자 식은 왼쪽에서 오른쪽으로 연결합니다. 맨 왼쪽 첨자 식인 *expression1* **[** *expression2* **]**, 먼저 계산 됩니다. *expression1* 및 *expression2*를 추가한 결과인 주소는 포인터 식을 형성합니다. 그런 다음 이 포인터 식에 *expression3*이 추가되어 새 포인터 식을 형성하고 마지막 첨자 식이 추가될 때까지 계속됩니다. 간접 참조 연산자 (<strong>\*</strong>) 최종 포인터 값이 배열 형식을 해결 하지 않으면 마지막 첨자 식이 계산 된 후 적용 됩니다.
+첨자 식은 왼쪽에서 오른쪽으로 연결합니다. 맨 왼쪽 첨자 식인 *expression1* **[** *expression2* **]** 가 먼저 계산됩니다. *expression1* 및 *expression2*를 추가한 결과인 주소는 포인터 식을 형성합니다. 그런 다음 이 포인터 식에 *expression3*이 추가되어 새 포인터 식을 형성하고 마지막 첨자 식이 추가될 때까지 계속됩니다. 간접 참조 연산자 (<strong>\*</strong>) 최종 포인터 값이 배열 형식을 해결 하지 않으면 마지막 첨자 식이 계산 된 후 적용 됩니다.
 
 여러 첨자가 포함된 식은 다차원 배열의 요소를 참조합니다. 다차원 배열은 요소가 배열인 배열입니다. 예를 들어 3차원 배열의 첫 번째 요소는 2차원 배열입니다. 다음 예제에서는 간단한 2차원 문자 배열을 선언 및 초기화합니다.
 
@@ -120,6 +120,6 @@ int main() {
 
 [후위 식](../cpp/postfix-expressions.md)<br/>
 [C++ 기본 제공 연산자, 우선 순위 및 결합성](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[배열](../cpp/arrays-cpp.md)
-[1 차원 배열](../c-language/one-dimensional-arrays.md)<br/>
+[배열](../cpp/arrays-cpp.md)<br/>
+[1차원 배열](../c-language/one-dimensional-arrays.md)<br/>
 [다차원 배열](../c-language/multidimensional-arrays-c.md)<br/>

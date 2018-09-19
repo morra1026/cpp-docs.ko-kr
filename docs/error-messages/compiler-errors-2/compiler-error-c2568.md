@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 480d0ba97417476b192a962321ff4e9d0d18a617
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4a9d03f0dd5a1d7029028b7e5f0d17a5e90e2891
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228740"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021663"
 ---
 # <a name="compiler-error-c2568"></a>컴파일러 오류 C2568
-'identifier1': 함수 오버 로드를 확인할 수 없습니다.  
-  
- 컴파일러는 호출할 함수를 오버 로드 된 확인할 수 없습니다. 오버 로드 된 함수 중 하나에 대 한 형식 매개 변수와 일치 하도록 함수에 전달 하는 실제 매개 변수를 캐스팅 해야 하지만 한 일치 항목이 없는 다른 모든 항목 보다 더 명확 하 게 좋습니다.
+
+'identifier1': 함수 오버 로드를 확인할 수 없습니다.
+
+컴파일러는 호출할 함수를 오버 로드 된 확인할 수 없습니다. 오버 로드 된 함수 중 하나에 대 한 정식 매개 변수를 일치 하도록 함수에 전달 하는 실제 매개 변수를 캐스팅 되어야 합니다 이지만 하나의 일치 하는 항목이 다른 모든 보다 명확 하 게 합니다.

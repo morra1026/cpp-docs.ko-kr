@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0822c12e109cd5a89a8e1050197367b12a24efa9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 94a95ab1eab00424774d5117e3ae37685a2ac1fc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196768"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035470"
 ---
 # <a name="compiler-error-c2458"></a>컴파일러 오류 C2458
-'identifier': 정의 내에 재정의가  
-  
- 클래스, 구조체, 공용 구조체 또는 열거형 자체 선언에서 다시 정의 됩니다.  
-  
- 다음 샘플에서는 C2458 오류가 생성 됩니다.  
-  
-```  
-// C2458.cpp  
-class C {  
-   enum i { C };   // C2458  
-};  
+
+'identifier': 정의 내 재정의
+
+클래스, 구조체, 공용 구조체 또는 열거형 자체 선언에서 다시 정의 됩니다.
+
+다음 샘플에서는 C2458 오류가 생성 됩니다.
+
+```
+// C2458.cpp
+class C {
+   enum i { C };   // C2458
+};
 ```

@@ -66,12 +66,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52ded6eb4b6b757934bcdb62c280c6d57e1b171e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 72e37cd8ba46e3ad9e59fa0d585d6a118b7a0038
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43196062"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45708632"
 ---
 # <a name="cdrawingmanager-class"></a>CDrawingManager 클래스
 `CDrawingManager` 클래스는 복합 그리기 알고리즘을 구현 합니다.  
@@ -139,8 +139,8 @@ CDrawingManager(CDC& dc);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dc*  
- 장치 컨텍스트에 대 한 참조입니다. `CDrawingManager` 그리기에 대 한이 컨텍스트를 사용 합니다.  
+*dc*<br/>
+[in] 장치 컨텍스트에 대 한 참조입니다. `CDrawingManager` 그리기에 대 한이 컨텍스트를 사용 합니다.  
   
 ##  <a name="createbitmap_32"></a>  CDrawingManager::CreateBitmap_32  
  응용 프로그램에 직접 쓸 수 있는 32 비트 장치 독립적 비트맵 DIB ()을 만듭니다.  
@@ -160,8 +160,8 @@ static HBITMAP __stdcall CreateBitmap_32(
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *크기*|A [CSize](../../atl-mfc-shared/reference/csize-class.md) 비트맵의 크기를 나타내는 매개 변수입니다.|  
-|[out] *pBits*|DIB의 위치를 수신 하는 데이터 포인터에 비트 값입니다.|  
+|*size*|[in] A [CSize](../../atl-mfc-shared/reference/csize-class.md) 비트맵의 크기를 나타내는 매개 변수입니다.|  
+|*pBits*|[out] DIB의 위치를 수신 하는 데이터 포인터에 비트 값입니다.|  
 |*비트맵*|원래 비트맵에 대 한 핸들|  
 |*clrTransparent*|원래 비트맵의 투명 한 색을 지정 하는 RGB 값입니다.|  
   
@@ -183,17 +183,17 @@ void DrawAlpha(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDstDC*  
- 대상 장치 컨텍스트에 대 한 포인터입니다.  
+*pDstDC*<br/>
+[in] 대상 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rectDst*  
- 대상 사각형입니다.  
+*rectDst*<br/>
+[in] 대상 사각형입니다.  
   
- [in] *pSrcDC*  
- 원본에 대 한 장치 컨텍스트 포인터입니다.  
+*pSrcDC*<br/>
+[in] 원본에 대 한 장치 컨텍스트 포인터입니다.  
   
- [in] *rectSrc*  
- 소스 사각형입니다.  
+*rectSrc*<br/>
+[in] 소스 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드가 두 비트맵의 알파 혼합을 수행합니다. 알파 혼합 하는 방법에 대 한 자세한 내용은 참조 하세요. [해 서 AlphaBlend](/windows/desktop/api/wingdi/nf-wingdi-alphablend) Windows SDK에 있습니다.  
@@ -209,14 +209,14 @@ void DrawEllipse(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rect*  
- 타원에 대 한 경계 사각형입니다.  
+*rect*<br/>
+[in] 타원에 대 한 경계 사각형입니다.  
   
- [in] *clrFill*  
- 이 메서드는 타원을 채우는 데 사용 된 색입니다.  
+*clrFill*<br/>
+[in] 이 메서드는 타원을 채우는 데 사용 된 색입니다.  
   
- [in] *clrLine*  
- 이 메서드는 타원의 테두리 색입니다.  
+*clrLine*<br/>
+[in] 이 메서드는 타원의 테두리 색입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 두 색은-1로 설정 하는 경우 타원 그리기 없이 반환 합니다. 경계 사각형의 두 차원을 0 이면 타원 그리기 없이 반환 합니다.  
@@ -236,26 +236,26 @@ BOOL DrawGradientRing(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rect*  
- A [CRect](../../atl-mfc-shared/reference/crect-class.md) 그라데이션 링에 대 한 경계를 지정 하는 매개 변수입니다.  
+*rect*<br/>
+[in] A [CRect](../../atl-mfc-shared/reference/crect-class.md) 그라데이션 링에 대 한 경계를 지정 하는 매개 변수입니다.  
   
- [in] *colorStart*  
- 첫 번째 그라데이션 색입니다.  
+*colorStart*<br/>
+[in] 첫 번째 그라데이션 색입니다.  
   
- [in] *colorFinish*  
- 그라데이션의 마지막 색입니다.  
+*colorFinish*<br/>
+[in] 그라데이션의 마지막 색입니다.  
   
- [in] *colorBorder*  
- 테두리의 색입니다.  
+*colorBorder*<br/>
+[in] 테두리의 색입니다.  
   
- [in] *nAngle*  
- 초기 그라데이션 그리기 각도 지정 하는 매개 변수입니다. 이 값은 0에서 360 사이 여야 합니다.  
+*nAngle*<br/>
+[in] 초기 그라데이션 그리기 각도 지정 하는 매개 변수입니다. 이 값은 0에서 360 사이 여야 합니다.  
   
- [in] *nWidth*  
- 링에 대 한 테두리의 너비입니다.  
+*nWidth*<br/>
+[in] 링에 대 한 테두리의 너비입니다.  
   
- [in] *clrFace*  
- 내부 링의 색입니다.  
+*clrFace*<br/>
+[in] 내부 링의 색입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -287,11 +287,11 @@ void DrawLineA(
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *x1*|줄 시작 위치 x 좌표입니다.|  
-|[in] *y1*|줄 시작 위치 y 좌표입니다.|  
-|[in] *x2*|줄이 끝나는 x 좌표입니다.|  
-|[in] *y2*|줄이 끝나는 y 좌표입니다.|  
-|[in] *clrLine*|선의 색입니다.|  
+|*x1*|[in] 줄 시작 위치 x 좌표입니다.|  
+|*y1*|[in] 줄 시작 위치 y 좌표입니다.|  
+|*x2*|[in] 줄이 끝나는 x 좌표입니다.|  
+|*y2*|[in] 줄이 끝나는 y 좌표입니다.|  
+|*clrLine*|[in] 선의 색입니다.|  
   
 ### <a name="remarks"></a>설명  
  이 메서드가 실패 하는 경우 *clrLine* 가-1입니다.  
@@ -307,14 +307,14 @@ void DrawRect(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rect*  
- 사각형의 경계입니다.  
+*rect*<br/>
+[in] 사각형의 경계입니다.  
   
- [in] *clrFill*  
- 이 메서드는 사각형을 채우는 데 사용 된 색입니다.  
+*clrFill*<br/>
+[in] 이 메서드는 사각형을 채우는 데 사용 된 색입니다.  
   
- [in] *clrLine*  
- 이 메서드는 사각형의 테두리 색입니다.  
+*clrLine*<br/>
+[in] 이 메서드는 사각형의 테두리 색입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 두 색을-1로 설정 된 경우 사각형을 그리지 않고 반환 합니다. 사각형의 두 차원을 0 인 경우 반환 합니다.  
@@ -335,29 +335,29 @@ BOOL DrawShadow(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rect*  
- 응용 프로그램에서 사각형 영역입니다. 그리기 관리자를이 영역 아래에 있는 그림자를 그립니다.  
+*rect*<br/>
+[in] 응용 프로그램에서 사각형 영역입니다. 그리기 관리자를이 영역 아래에 있는 그림자를 그립니다.  
   
- [in] *nDepth*  
- 그림자의 높이 너비입니다.  
+*nDepth*<br/>
+[in] 그림자의 높이 너비입니다.  
   
- [in] *iMinBrightness*  
- 그림자의 최소 밝기입니다.  
+*iMinBrightness*<br/>
+[in] 그림자의 최소 밝기입니다.  
   
- [in] *iMaxBrightness*  
- 그림자의 최대 밝기입니다.  
+*iMaxBrightness*<br/>
+[in] 그림자의 최대 밝기입니다.  
   
- [in] *pBmpSaveBottom*  
- 그림자의 아래 부분에 대 한 이미지가 포함 된 비트맵에 대 한 포인터입니다.  
+*pBmpSaveBottom*<br/>
+[in] 그림자의 아래 부분에 대 한 이미지가 포함 된 비트맵에 대 한 포인터입니다.  
   
- [in] *pBmpSaveRight*  
- 사각형의 오른쪽에 그린 그림자에 대 한 이미지가 포함 된 비트맵에 대 한 포인터입니다.  
+*pBmpSaveRight*<br/>
+[in] 사각형의 오른쪽에 그린 그림자에 대 한 이미지가 포함 된 비트맵에 대 한 포인터입니다.  
   
- [in] *clrBase*  
- 그림자의 색입니다.  
+*clrBase*<br/>
+[in] 그림자의 색입니다.  
   
- [in] *bRightShadow*  
- 그림자를 그리는 방법을 나타내는 부울 매개 변수입니다. 하는 경우 *bRightShadow* 됩니다 `TRUE`, `DrawShadow` 사각형의 오른쪽에 그림자를 그립니다.  
+*bRightShadow*<br/>
+[in] 그림자를 그리는 방법을 나타내는 부울 매개 변수입니다. 하는 경우 *bRightShadow* 됩니다 `TRUE`, `DrawShadow` 사각형의 오른쪽에 그림자를 그립니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공하면 0이 아니고, 그렇지 않으면 0입니다.  
@@ -389,26 +389,26 @@ void Fill4ColorsGradient(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rect*  
- 채울 사각형입니다.  
+*rect*<br/>
+[in] 채울 사각형입니다.  
   
- [in] *colorStart1*  
- 첫 번째 색 그라데이션에 대 한 초기 색입니다.  
+*colorStart1*<br/>
+[in] 첫 번째 색 그라데이션에 대 한 초기 색입니다.  
   
- [in] *colorFinish1*  
- 첫 번째 색 그라데이션의 마지막 색입니다.  
+*colorFinish1*<br/>
+[in] 첫 번째 색 그라데이션의 마지막 색입니다.  
   
- [in] *colorStart2*  
- 두 번째 색 그라데이션에 대 한 초기 색입니다.  
+*colorStart2*<br/>
+[in] 두 번째 색 그라데이션에 대 한 초기 색입니다.  
   
- [in] *colorFinish2*  
- 한 두 번째 색 그라데이션의 마지막 색입니다.  
+*colorFinish2*<br/>
+[in] 한 두 번째 색 그라데이션의 마지막 색입니다.  
   
- [in] *bHorz*  
- 나타내는 부울 매개 변수 여부 `Fill4ColorsGradient` 가로 또는 세로 그라데이션 색입니다. True 이면 가로 그라데이션이 나타냅니다.  
+*bHorz*<br/>
+[in] 나타내는 부울 매개 변수 여부 `Fill4ColorsGradient` 가로 또는 세로 그라데이션 색입니다. True 이면 가로 그라데이션이 나타냅니다.  
   
- [in] *nPercentage*  
- 0-100 까지의 정수입니다. 이 값은 첫 번째 색 그라데이션을 사용 하 여 채울 사각형의 백분율을 나타냅니다.  
+*nPercentage*<br/>
+[in] 0-100 까지의 정수입니다. 이 값은 첫 번째 색 그라데이션을 사용 하 여 채울 사각형의 백분율을 나타냅니다.  
   
 ### <a name="remarks"></a>설명  
  서로 위에 있는 또는 서로 값에 따라 다음 중 하나는 두 색 그라데이션을 사용 하 여 사각형 가득 차면 *bHorz*합니다. 각 색 그라데이션 메서드를 사용 하 여 독립적으로 계산 됩니다 [CDrawingManager::FillGradient](#fillgradient)합니다.  
@@ -429,23 +429,23 @@ void FillGradient(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rect*  
- 채울 사각형 영역입니다.  
+*rect*<br/>
+[in] 채울 사각형 영역입니다.  
   
- [in] *colorStart*  
- 첫 번째 그라데이션 색입니다.  
+*colorStart*<br/>
+[in] 첫 번째 그라데이션 색입니다.  
   
- [in] *colorFinish*  
- 그라데이션의 마지막 색입니다.  
+*colorFinish*<br/>
+[in] 그라데이션의 마지막 색입니다.  
   
- [in] *bHorz*  
- 부울 매개 변수를 지정 하 여부를 `FillGradient` 가로 또는 세로 그라데이션을 그리는 해야 합니다.  
+*bHorz*<br/>
+[in] 부울 매개 변수를 지정 하 여부를 `FillGradient` 가로 또는 세로 그라데이션을 그리는 해야 합니다.  
   
- [in] *nStartFlatPercentage*  
- 사각형의 백분율입니다 `FillGradient` 채웁니다 *colorStart* 그라데이션의 시작 하기 전에 합니다.  
+*nStartFlatPercentage*<br/>
+[in] 사각형의 백분율입니다 `FillGradient` 채웁니다 *colorStart* 그라데이션의 시작 하기 전에 합니다.  
   
- [in] *nEndFlatPercentage*  
- 사각형의 백분율입니다 `FillGradient` 채웁니다 *colorFinish* 그라데이션의 완료 된 후입니다.  
+*nEndFlatPercentage*<br/>
+[in] 사각형의 백분율입니다 `FillGradient` 채웁니다 *colorFinish* 그라데이션의 완료 된 후입니다.  
   
 ### <a name="example"></a>예제  
  다음 예제에서는 사용 하는 방법에 설명 합니다 `FillGradient` 메서드는 `CDrawingManager` 클래스입니다. 이 코드 조각은의 일부인 합니다 [MS Office 2007 데모 샘플](../../visual-cpp-samples.md)합니다.  
@@ -464,17 +464,17 @@ void FillGradient2 (
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rect*  
- 채울 사각형 영역입니다.  
+*rect*<br/>
+[in] 채울 사각형 영역입니다.  
   
- [in] *colorStart*  
- 그라데이션의 첫 번째 색입니다.  
+*colorStart*<br/>
+[in] 그라데이션의 첫 번째 색입니다.  
   
- [in] *colorFinish*  
- 그라데이션의 마지막 색입니다.  
+*colorFinish*<br/>
+[in] 그라데이션의 마지막 색입니다.  
   
- [in] *nAngle*  
- 0과 360 사이의 정수입니다. 이 매개 변수는 색 그라데이션의 방향을 지정 합니다.  
+*nAngle*<br/>
+[in] 0과 360 사이의 정수입니다. 이 매개 변수는 색 그라데이션의 방향을 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  사용 하 여 *nAngle* 색 그라데이션의 방향을 지정 합니다. 색 그라데이션의 방향을 지정 하는 경우 또한 지정할 색 그라데이션의 시작 되는 위치입니다. 값이 0에 대 한 *nAngle* 그라데이션의 사각형의 위쪽에서 시작을 나타냅니다. 로 *nAngle* 증가 하면 시작 되는 위치 그라데이션의 각도에 따라 시계 반대 방향에서 이동에 대 한 합니다.  
@@ -496,17 +496,17 @@ BOOL GrayRect(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rect*  
- 채울 사각형 영역입니다.  
+*rect*<br/>
+[in] 채울 사각형 영역입니다.  
   
- [in] *nPercentage*  
- 사각형에 회색의 비율입니다.  
+*nPercentage*<br/>
+[in] 사각형에 회색의 비율입니다.  
   
- [in] *clrTransparent*  
- 투명 한 색입니다.  
+*clrTransparent*<br/>
+[in] 투명 한 색입니다.  
   
- [in] *clrDisabled*  
- 색 채도 취소에 대 한 경우이 메서드를 사용 하 *nPercentage* -1로 설정 됩니다.  
+*clrDisabled*<br/>
+[in] 색 채도 취소에 대 한 경우이 메서드를 사용 하 *nPercentage* -1로 설정 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -529,20 +529,20 @@ BOOL HighlightRect(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rect*  
- 강조 표시 하는 사각형 영역입니다.  
+*rect*<br/>
+[in] 강조 표시 하는 사각형 영역입니다.  
   
- [in] *nPercentage*  
- 투명도 강조 표시 해야 여부를 나타내는 백분율입니다.  
+*nPercentage*<br/>
+[in] 투명도 강조 표시 해야 여부를 나타내는 백분율입니다.  
   
- [in] *clrTransparent*  
- 투명 한 색입니다.  
+*clrTransparent*<br/>
+[in] 투명 한 색입니다.  
   
- [in] *nTolerance*  
- 색 허용 오차를 나타내는 0과 255 사이의 정수입니다.  
+*nTolerance*<br/>
+[in] 색 허용 오차를 나타내는 0과 255 사이의 정수입니다.  
   
- [in] *clrBlend*  
- 혼합에 대 한 기본 색입니다.  
+*clrBlend*<br/>
+[in] 혼합에 대 한 기본 색입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -563,14 +563,14 @@ static COLORREF __stdcall HLStoRGB_ONE(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *H*  
- 0과 1 사이의 숫자 색에 대 한 색상을 나타냅니다.  
+*H*<br/>
+[in] 0과 1 사이의 숫자 색에 대 한 색상을 나타냅니다.  
   
- [in] *L*  
- 0과 1 사이의 숫자는 색의 명도 나타냅니다.  
+*L*<br/>
+[in] 0과 1 사이의 숫자는 색의 명도 나타냅니다.  
   
- [in] *S*  
- 0과 1 사이의 숫자 색 채도 나타냅니다.  
+*S*<br/>
+[in] 0과 1 사이의 숫자 색 채도 나타냅니다.  
   
 ### <a name="return-value"></a>반환 값  
  제공 된 HLS 색의 RGB 표현입니다.  
@@ -591,14 +591,14 @@ static COLORREF __stdcall HLStoRGB_TWO(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *H*  
- 색에 대 한 색상을 나타내는 0과 360 사이의 수입니다.  
+*H*<br/>
+[in] 색에 대 한 색상을 나타내는 0과 360 사이의 수입니다.  
   
- [in] *L*  
- 0과 1 사이의 숫자는 색의 명도 나타냅니다.  
+*L*<br/>
+[in] 0과 1 사이의 숫자는 색의 명도 나타냅니다.  
   
- [in] *S*  
- 0과 1 사이의 숫자 색 채도 나타냅니다.  
+*S*<br/>
+[in] 0과 1 사이의 숫자 색 채도 나타냅니다.  
   
 ### <a name="return-value"></a>반환 값  
  제공 된 HLS 색의 RGB 표현입니다.  
@@ -623,9 +623,9 @@ static COLORREF __stdcall HSVtoRGB(
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *H*|색에 대 한 색상을 나타내는 0과 360 사이의 수입니다.|  
-|[in] *S*|0과 1 사이의 숫자 색 채도 나타냅니다.|  
-|[in] *V*|0과 1 사이의 숫자 색에 대 한 값을 나타냅니다.|  
+|*H*|[in] 색에 대 한 색상을 나타내는 0과 360 사이의 수입니다.|  
+|*S*|[in] 0과 1 사이의 숫자 색 채도 나타냅니다.|  
+|*V*|[in] 0과 1 사이의 숫자 색에 대 한 값을 나타냅니다.|  
   
 ### <a name="return-value"></a>반환 값  
  제공 된 HSV 색의 RGB 표현입니다.  
@@ -650,23 +650,23 @@ static BYTE __stdcall HueToRGB(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *m1*  
- 설명 부분을 참조하세요.  
+*m1*<br/>
+[in] 설명을 참조 하세요.  
   
- [in] *m2*  
- 설명 부분을 참조하세요.  
+*m2*<br/>
+[in] 설명을 참조 하세요.  
   
- [in] *h*  
- 설명 부분을 참조하세요.  
+*h*<br/>
+[in] 설명을 참조 하세요.  
   
- [in] *rm1*  
- 설명 부분을 참조하세요.  
+*rm1*<br/>
+[in] 설명을 참조 하세요.  
   
- [in] *rm2*  
- 설명 부분을 참조하세요.  
+*rm2*<br/>
+[in] 설명을 참조 하세요.  
   
- [in] *rh*  
- 설명 부분을 참조하세요.  
+*rh*<br/>
+[in] 설명을 참조 하세요.  
   
 ### <a name="return-value"></a>반환 값  
  제공 된 색상에 대 한 개별 빨간색, 녹색 또는 파란색 구성 합니다.  
@@ -692,11 +692,11 @@ void MirrorRect(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rect*  
- 대칭으로 배열할지 영역의 경계 사각형입니다.  
+*rect*<br/>
+[in] 대칭으로 배열할지 영역의 경계 사각형입니다.  
   
- [in] *bHorz*  
- 사각형을 가로 또는 세로로 대칭 이동 하는지 여부를 나타내는 부울 매개 변수입니다.  
+*bHorz*<br/>
+[in] 사각형을 가로 또는 세로로 대칭 이동 하는지 여부를 나타내는 부울 매개 변수입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 소유한 장치 컨텍스트의 모든 영역을 전환할 수는 `CDrawingManager` 클래스입니다. 하는 경우 *bHorz* 가 TRUE로 설정 된이 메서드 좌우 대칭 이동 하는 영역입니다. 그렇지 않으면 해당 상하 대칭 이동 영역입니다.  
@@ -722,23 +722,23 @@ static COLORREF __stdcall PixelAlpha(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *srcPixel*  
- 픽셀의 초기 색입니다.  
+*srcPixel*<br/>
+[in] 픽셀의 초기 색입니다.  
   
- [in] *백분율*  
- 투명도의 백분율을 나타내는 0과 100 사이의 숫자입니다. 값이 100 초기 색이 완전히 투명 하 게 나타냅니다.  
+*%*<br/>
+[in] 투명도의 백분율을 나타내는 0과 100 사이의 숫자입니다. 값이 100 초기 색이 완전히 투명 하 게 나타냅니다.  
   
- [in] *percentR*  
- 투명도 빨강 구성 요소에 대 한 백분율을 나타내는 0과 100 사이의 숫자입니다.  
+*percentR*<br/>
+[in] 투명도 빨강 구성 요소에 대 한 백분율을 나타내는 0과 100 사이의 숫자입니다.  
   
- [in] *percentG*  
- 녹색 구성 요소에 대 한 투명도의 백분율을 나타내는 0과 100 사이의 숫자입니다.  
+*percentG*<br/>
+[in] 녹색 구성 요소에 대 한 투명도의 백분율을 나타내는 0과 100 사이의 숫자입니다.  
   
- [in] *percentB*  
- 파랑 구성 요소에 대 한 투명도의 백분율을 나타내는 0과 100 사이의 숫자입니다.  
+*percentB*<br/>
+[in] 파랑 구성 요소에 대 한 투명도의 백분율을 나타내는 0과 100 사이의 숫자입니다.  
   
- [in] *dstPixel*  
- 픽셀에 대 한 기본 색입니다.  
+*dstPixel*<br/>
+[in] 픽셀에 대 한 기본 색입니다.  
   
 ### <a name="return-value"></a>반환 값  
  반투명 픽셀의 최종 색입니다.  
@@ -760,17 +760,17 @@ static HBITMAP __stdcall PrepareShadowMask (
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nDepth*  
- 그림자의 높이 너비입니다.  
+*nDepth*<br/>
+[in] 그림자의 높이 너비입니다.  
   
- [in] *clrBase*  
- 그림자의 색입니다.  
+*clrBase*<br/>
+[in] 그림자의 색입니다.  
   
- [in] *iMinBrightness*  
- 그림자의 최소 밝기입니다.  
+*iMinBrightness*<br/>
+[in] 그림자의 최소 밝기입니다.  
   
- [in] *iMaxBrightness*  
- 그림자의 최대 밝기입니다.  
+*iMaxBrightness*<br/>
+[in] 그림자의 최대 밝기입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 만든된 비트맵에 대 한 핸들 그렇지 않으면 NULL입니다.  
@@ -794,10 +794,10 @@ static void __stdcall RGBtoHSL(
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *rgb*|RGB 값의 색입니다.|  
-|[out] *H*|메서드는 색의 색상을 저장 하는 위치 하는 double 값을 포인터입니다.|  
-|[out] *S*|메서드는 색의 채도 저장 하는 위치 하는 double 값을 포인터입니다.|  
-|[out] *L*|메서드는 색의 명도 저장 하는 위치 하는 double 값을 포인터입니다.|  
+|*rgb*|[in] RGB 값의 색입니다.|  
+|*H*|[out] 메서드는 색의 색상을 저장 하는 위치 하는 double 값을 포인터입니다.|  
+|*S*|[out] 메서드는 색의 채도 저장 하는 위치 하는 double 값을 포인터입니다.|  
+|*L*|[out] 메서드는 색의 명도 저장 하는 위치 하는 double 값을 포인터입니다.|  
   
 ### <a name="remarks"></a>설명  
  HSV (색상, 채도 및 값), (색상, 채도 및 명도), HSL 또는 RGB (빨강, 녹색 및 파랑) 색을 나타낼 수 있습니다. 색의 다양 한 표현에 대 한 자세한 내용은 참조 하세요. [Color](http://go.microsoft.com/fwlink/p/?linkid=119126)합니다.  
@@ -816,17 +816,17 @@ static void __stdcall RGBtoHSV(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rgb*  
- 색 RGB 표현에서 변환입니다.  
+*rgb*<br/>
+[in] 색 RGB 표현에서 변환입니다.  
   
- [out] *H*  
- 이 메서드는 색에 대 한 결과 색상을 저장 하는 double 값을 포인터입니다.  
+*H*<br/>
+[out] 이 메서드는 색에 대 한 결과 색상을 저장 하는 double 값을 포인터입니다.  
   
- [out] *S*  
- 이 메서드는 색 채도 결과 저장 하는 double 값을 포인터입니다.  
+*S*<br/>
+[out] 이 메서드는 색 채도 결과 저장 하는 double 값을 포인터입니다.  
   
- [out] *V*  
- 이 메서드는 색에 대 한 결과 값을 저장 하는 위치 하는 double 값을 포인터입니다.  
+*V*<br/>
+[out] 이 메서드는 색에 대 한 결과 값을 저장 하는 위치 하는 double 값을 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  HSV (색상, 채도 및 값), (색상, 채도 및 명도), HSL 또는 RGB (빨강, 녹색 및 파랑) 색을 나타낼 수 있습니다. 색의 다양 한 표현에 대 한 자세한 내용은 참조 하세요. [Color](http://go.microsoft.com/fwlink/p/?linkid=119126)합니다.  
@@ -849,29 +849,29 @@ static void __stdcall SetAlphaPixel(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBits*  
- 비트맵 비트 값 포인터입니다.  
+*pBits*<br/>
+[in] 비트맵 비트 값 포인터입니다.  
   
- [in] *rect*  
- 응용 프로그램에서 사각형 영역입니다. 그리기 관리자는이 영역의 오른쪽 및 아래에 있는 그림자를 그립니다.  
+*rect*<br/>
+[in] 응용 프로그램에서 사각형 영역입니다. 그리기 관리자는이 영역의 오른쪽 및 아래에 있는 그림자를 그립니다.  
   
- [in] *x*  
- 픽셀 색에 가로 좌표입니다.  
+*x*<br/>
+[in] 픽셀 색에 가로 좌표입니다.  
   
- [in] *y*  
- 색 픽셀에 세로 좌표입니다.  
+*y*<br/>
+[in] 색 픽셀에 세로 좌표입니다.  
   
- [in] *백분율*  
- 백분율 투명도입니다.  
+*%*<br/>
+[in] 백분율 투명도입니다.  
   
- [in] *iShadowSize*  
- 그림자의 높이 너비입니다.  
+*iShadowSize*<br/>
+[in] 그림자의 높이 너비입니다.  
   
- [in] *clrBase*  
- 그림자의 색입니다.  
+*clrBase*<br/>
+[in] 그림자의 색입니다.  
   
- [in] *bIsRight*  
- 픽셀 색을 나타내는 부울 매개 변수입니다. 자세한 내용은 설명 부분을 참조하세요.  
+*bIsRight*<br/>
+[in] 픽셀 색을 나타내는 부울 매개 변수입니다. 자세한 내용은 설명 부분을 참조하세요.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 사용 되는 도우미 메서드를 [CDrawingManager::DrawShadow](#drawshadow) 메서드. 그림자를 그릴 경우 호출 하는 것이 좋습니다 `CDrawingManager::DrawShadow` 대신 합니다.  
@@ -896,12 +896,12 @@ static void __stdcall SetPixel(
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *pBits*|비트맵의 비트 값 포인터입니다.|  
-|[in] *cx*|비트맵의 총 너비입니다.|  
-|[in] *cy*|비트맵의 전체 높이입니다.|  
-|[in] *x*|변경 비트맵의 픽셀의 x 좌표입니다.|  
-|[in] *y*|변경 비트맵의 픽셀의 y 좌표입니다.|  
-|[in] *색*|제공 된 좌표에서 식별 된 픽셀에 대 한 새 색입니다.|  
+|*pBits*|[in] 비트맵의 비트 값 포인터입니다.|  
+|*cx*|[in] 비트맵의 총 너비입니다.|  
+|*cy*|[in] 비트맵의 전체 높이입니다.|  
+|*x*|[in] 변경 비트맵의 픽셀의 x 좌표입니다.|  
+|*y*|[in] 변경 비트맵의 픽셀의 y 좌표입니다.|  
+|*색*|[in] 제공 된 좌표에서 식별 된 픽셀에 대 한 새 색입니다.|  
   
 ##  <a name="smartmixcolors"></a>  CDrawingManager::SmartMixColors  
  가중치가 적용 된 비율에 따라 두 가지 색을 결합 합니다.  
@@ -920,11 +920,11 @@ static COLORREF __stdcall SmartMixColors(
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *color1*|첫 번째 색 혼합입니다.|  
-|[in] *color2*|두 번째 색 혼합입니다.|  
-|[in] *dblLumRatio*|새 색의 명도 비율입니다. `SmartMixColors` 최종 색을 결정 하기 전에이 비율에 따라 혼합된 색의 명도 곱합니다.|  
-|[in] *k1*|첫 번째 색에 대 한 가중치가 적용 된 비율입니다.|  
-|[in] *k2*|두 번째 색에 대 한 가중치가 적용 된 비율입니다.|  
+|*color1*|[in] 첫 번째 색 혼합입니다.|  
+|*color2*|[in] 두 번째 색 혼합입니다.|  
+|*dblLumRatio*|[in] 새 색의 명도 비율입니다. `SmartMixColors` 최종 색을 결정 하기 전에이 비율에 따라 혼합된 색의 명도 곱합니다.|  
+|*k1*|[in] 첫 번째 색에 대 한 가중치가 적용 된 비율입니다.|  
+|*k2*|[in] 두 번째 색에 대 한 가중치가 적용 된 비율입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  제공 된 색의 가중치가 적용 된 혼합을 나타내는 색입니다.  

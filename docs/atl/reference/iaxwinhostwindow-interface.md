@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8cf8c27d118984422ec3a78f442a3f11f13e1c75
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: bee312cd5e7a88dd0798778d5f8385df265d78a1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766034"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099777"
 ---
 # <a name="iaxwinhostwindow-interface"></a>IAxWinHostWindow 인터페이스
 
@@ -79,10 +79,10 @@ STDMETHOD(AttachControl)(IUnknown* pUnkControl, HWND hWnd);
 
 ### <a name="parameters"></a>매개 변수
 
-*pUnkControl*  
+*pUnkControl*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 호스트 개체에 연결 될 컨트롤의 인터페이스입니다.
 
-*hWnd*  
+*hWnd*<br/>
 [in] 호스팅에 사용 되는 창 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -102,13 +102,13 @@ STDMETHOD(CreateControl)(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpTricsData*  
+*lpTricsData*<br/>
 [in] 만들 컨트롤을 식별 하는 문자열입니다. (중괄호를 포함 해야 함) CLSID, ProgID, URL 또는 원시 HTML 수 (접두사로 **MSHTML:**).
 
-*hWnd*  
+*hWnd*<br/>
 [in] 호스팅에 사용 되는 창 핸들입니다.
 
-*pStream*  
+*pStream*<br/>
 [in] 컨트롤에 대 한 초기화 데이터를 포함 하는 스트림에 대 한 인터페이스 포인터입니다. NULL 일 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -139,22 +139,22 @@ STDMETHOD(CreateControlEx)(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpTricsData*  
+*lpTricsData*<br/>
 [in] 만들 컨트롤을 식별 하는 문자열입니다. (중괄호를 포함 해야 함) CLSID, ProgID, URL 또는 원시 HTML 수 (접두사로 **MSHTML:**).
 
-*hWnd*  
+*hWnd*<br/>
 [in] 호스팅에 사용 되는 창 핸들입니다.
 
-*pStream*  
+*pStream*<br/>
 [in] 컨트롤에 대 한 초기화 데이터를 포함 하는 스트림에 대 한 인터페이스 포인터입니다. NULL 일 수 있습니다.
 
-*ppUnk*  
+*ppUnk*<br/>
 [out] 수신할 포인터의 주소는 `IUnknown` 만든된 컨트롤의 인터페이스입니다. NULL 일 수 있습니다.
 
-*riidAdvise*  
+*riidAdvise*<br/>
 [in] 포함된 된 개체에는 송신 인터페이스의 인터페이스 식별자입니다. IID_NULL 될 수 있습니다.
 
-*punkAdvise*  
+*punkAdvise*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 으로 지정 된 포함된 된 개체의 연결 지점에 연결 되어 싱크 개체의 인터페이스가 `iidSink`합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -179,10 +179,10 @@ STDMETHOD(QueryControl)(
 
 ### <a name="parameters"></a>매개 변수
 
-*riid*  
+*riid*<br/>
 [in] 요청 된 컨트롤에 인터페이스의 ID입니다.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] 만든된 컨트롤의 지정된 된 인터페이스를 수신할 포인터의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -199,7 +199,7 @@ STDMETHOD(SetExternalDispatch)(IDispatch* pDisp);
 
 ### <a name="parameters"></a>매개 변수
 
-*pDisp*  
+*pDisp*<br/>
 [in] 에 대 한 포인터는 `IDispatch` 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -216,7 +216,7 @@ STDMETHOD(SetExternalUIHandler)(IDocHostUIHandlerDispatch* pDisp);
 
 ### <a name="parameters"></a>매개 변수
 
-*pDisp*  
+*pDisp*<br/>
 [in] 에 대 한 포인터는 `IDocHostUIHandlerDispatch` 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -229,7 +229,7 @@ STDMETHOD(SetExternalUIHandler)(IDocHostUIHandlerDispatch* pDisp);
 
 ## <a name="see-also"></a>참고 항목
 
-[IAxWinAmbientDispatch 인터페이스](../../atl/reference/iaxwinambientdispatch-interface.md)   
-[CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)   
+[IAxWinAmbientDispatch 인터페이스](../../atl/reference/iaxwinambientdispatch-interface.md)<br/>
+[CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)<br/>
 [AtlAxGetHost](composite-control-global-functions.md#atlaxgethost)
 

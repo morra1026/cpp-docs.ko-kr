@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 659da66ea74088247a9eb46ae25f9920050719a1
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 90b96181dc3d48edbe6f58923e62d4fd1259f3c0
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42538924"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723933"
 ---
 # <a name="movsd"></a>__movsd
 **Microsoft 전용**  
@@ -41,14 +41,14 @@ void __movsd(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [out] `Dest`  
- 작업의 대상입니다.  
+*대상*<br/>
+[out] 작업의 대상입니다.  
   
- [in] `Source`  
- 작업의 원본입니다.  
+*Source*<br/>
+[in] 작업의 원본입니다.  
   
- [in] `Count`  
- 복사할 2 배 워드 횟수입니다.  
+*개수*<br/>
+[in] 복사할 2 배 워드 횟수입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
@@ -63,7 +63,7 @@ void __movsd(
   
  이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // movsd.cpp  

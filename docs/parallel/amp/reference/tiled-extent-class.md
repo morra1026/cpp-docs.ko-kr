@@ -23,15 +23,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59ac4e878ee67e03498d4d29efe7c91d34c1b4c7
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 3d0a0606e531b4343bf8b5569daa5034c827dcb3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688585"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114555"
 ---
 # <a name="tiledextent-class"></a>tiled_extent 클래스
-A `tiled_extent` 개체가 `extent` 익스텐트 공간 1, 2 또는 3 차원 타일으로 세분 하는 1 ~ 3 차원 개체입니다.  
+A `tiled_extent` 개체는 `extent` 익스텐트 공간 1, 2 또는 3 차원 타일로 세분 하는 1 ~ 3 차원 개체입니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -56,14 +56,14 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Dim0`  
- 가장 중요 한 차원 길이 지정 합니다.  
+*_Dim0*<br/>
+최대 유효 치수의 길이입니다.  
   
- `_Dim1`  
- 다음 가장 중요 한 차원 길이 지정 합니다.  
+*_Dim1*<br/>
+다음 최대 유효 치수의 길이입니다.  
   
- `_Dim2`  
- 가장 덜 중요 한 차원 길이 지정 합니다.  
+*_Dim2*<br/>
+최소 유효 치수의 길이입니다.  
   
 ## <a name="members"></a>멤버  
   
@@ -78,31 +78,31 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
   
 |이름|설명|  
 |----------|-----------------|  
-|[get_tile_extent](#get_tile_extent)|반환 된 `extent` 개체의 값을 캡처하는 `tiled_extent` 템플릿 인수 `_Dim0`, `_Dim1`, 및 `_Dim2`합니다.|  
-|[pad](#pad)|새 반환 `tiled_extent` 익스텐트 개체 타일 크기에 따라 균등 하 게 나눌 수를 조정 합니다.|  
-|[truncate](#truncate)|새 반환 `tiled_extent` 타일 크기에 따라 균등 하 게 나눌 수를 낮게 조정 하는 익스텐트는 개체입니다.|  
+|[get_tile_extent](#get_tile_extent)|반환을 `extent` 개체의 값을 캡처하는 합니다 `tiled_extent` 템플릿 인수 `_Dim0`, `_Dim1`, 및 `_Dim2`합니다.|  
+|[pad](#pad)|반환 된 새 `tiled_extent` 익스텐트를 사용 하 여 개체 타일 크기에 따라 균등 하 게 나눌 수를 조정 합니다.|  
+|[truncate](#truncate)|반환 된 새 `tiled_extent` 타일 크기에 따라 균등 하 게 나눌 수를 조정 된 익스텐트를 사용 하 여 개체입니다.|  
   
 ### <a name="public-operators"></a>Public 연산자  
   
 |이름|설명|  
 |----------|-----------------|  
-|[operator=](#operator_eq)|지정 된의 내용을 복사 `tiled_index` 을 여기에 개체입니다.|  
+|[operator=](#operator_eq)|지정 된 내용을 복사 `tiled_index` 을 여기에 개체입니다.|  
 
   
 ### <a name="public-constants"></a>공용 상수  
   
 |이름|설명|  
 |----------|-----------------|  
-|[tile_dim0 Constant](#tile_dim0)|가장 중요 한 차원 길이 저장합니다.|  
-|[tile_dim1 상수](#tile_dim1)|다음 가장 중요 한 차원 길이 저장합니다.|  
-|[tile_dim2 Constant](#tile_dim2)|가장 덜 중요 한 차원 길이 저장합니다.|  
+|[tile_dim0 Constant](#tile_dim0)|최대 유효 치수의 길이 저장 합니다.|  
+|[tile_dim1 상수](#tile_dim1)|다음 최대 유효 치수의 길이 저장 합니다.|  
+|[tile_dim2 Constant](#tile_dim2)|최소 유효 치수의 길이 저장 합니다.|  
 
   
 ### <a name="public-data-members"></a>공용 데이터 멤버  
   
 |이름|설명|  
 |----------|-----------------|  
-|[tile_extent](#tile_extent)|가져옵니다는 `extent` 개체의 값을 캡처하는 `tiled_extent` 템플릿 인수 `_Dim0`, `_Dim1`, 및 `_Dim2`합니다.|  
+|[tile_extent](#tile_extent)|가져옵니다는 `extent` 의 값을 캡처하는 개체를 `tiled_extent` 템플릿 인수 `_Dim0`, `_Dim1`, 및 `_Dim2`.|  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  `extent`  
@@ -130,14 +130,14 @@ tiled_extent(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Other`  
- `extent` 또는 `tiled_extent` 복사할 개체입니다.  
+*_Other*<br/>
+합니다 `extent` 또는 `tiled_extent` 복사할 개체입니다.  
   
 
   
 
 ## <a name="get_tile_extent"> </a>  get_tile_extent   
-반환 된 `extent` 개체의 값을 캡처하는 `tiled_extent` 템플릿 인수 `_Dim0`, `_Dim1`, 및 `_Dim2`합니다.  
+반환을 `extent` 개체의 값을 캡처하는 합니다 `tiled_extent` 템플릿 인수 `_Dim0`, `_Dim1`, 및 `_Dim2`합니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -146,11 +146,11 @@ Concurrency::extent<rank> get_tile_extent() const restrict(amp,cpu);
 ```  
   
 ### <a name="return-value"></a>반환 값  
- `extent` 개체의이 크기를 캡처하는 `tiled_extent` 인스턴스.  
+ `extent` 개체의 크기를 캡처하는 `tiled_extent` 인스턴스.  
   
 
-## <a name="pad"> </a>  채움   
-새 반환 `tiled_extent` 익스텐트 개체 타일 크기에 따라 균등 하 게 나눌 수를 조정 합니다.  
+## <a name="pad"> </a>  패드   
+반환 된 새 `tiled_extent` 익스텐트를 사용 하 여 개체 타일 크기에 따라 균등 하 게 나눌 수를 조정 합니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -159,9 +159,9 @@ tiled_extent pad() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 새 `tiled_extent` 개체 값입니다. 
+ 새 `tiled_extent` 값 개체입니다. 
 ## <a name="truncate"> </a>  truncate   
-새 반환 `tiled_extent` 타일 크기에 따라 균등 하 게 나눌 수를 낮게 조정 하는 익스텐트는 개체입니다.  
+반환 된 새 `tiled_extent` 타일 크기에 따라 균등 하 게 나눌 수를 조정 된 익스텐트를 사용 하 여 개체입니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -170,10 +170,10 @@ tiled_extent truncate() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- 새 반환 `tiled_extent` 타일 크기에 따라 균등 하 게 나눌 수를 낮게 조정 하는 익스텐트는 개체입니다.  
+ 반환 된 새 `tiled_extent` 타일 크기에 따라 균등 하 게 나눌 수를 조정 된 익스텐트를 사용 하 여 개체입니다.  
 
 ## <a name="operator_eq"> </a>  operator=   
-지정 된의 내용을 복사 `tiled_index` 을 여기에 개체입니다.  
+지정 된 내용을 복사 `tiled_index` 을 여기에 개체입니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -183,14 +183,14 @@ tiled_extent&  operator= (
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Other`  
- `tiled_index` 복사할 개체입니다.  
+*_Other*<br/>
+`tiled_index` 복사할 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이에 대 한 참조 `tiled_index` 인스턴스.  
 
 ## <a name="tile_dim0"> </a>  tile_dim0   
-가장 중요 한 차원 길이 저장합니다.  
+최대 유효 치수의 길이 저장 합니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -199,7 +199,7 @@ static const int tile_dim0 = _Dim0;
 ```  
   
 ## <a name="tile_dim1"> </a>  tile_dim1   
-다음 가장 중요 한 차원 길이 저장합니다.  
+다음 최대 유효 치수의 길이 저장 합니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -207,7 +207,7 @@ static const int tile_dim0 = _Dim0;
 static const int tile_dim1 = _Dim1;  
 ```  
 ## <a name="tile_dim2"> </a>  tile_dim2   
-가장 덜 중요 한 차원 길이 저장합니다.  
+최소 유효 치수의 길이 저장 합니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -215,7 +215,7 @@ static const int tile_dim1 = _Dim1;
 static const int tile_dim2 = _Dim2;  
 ```  
 ## <a name="tile_extent"> </a>  tile_extent   
-  가져옵니다는 `extent` 개체의 값을 캡처하는 `tiled_extent` 템플릿 인수 `_Dim0`, `_Dim1`, 및 `_Dim2`합니다.  
+  가져옵니다는 `extent` 의 값을 캡처하는 개체를 `tiled_extent` 템플릿 인수 `_Dim0`, `_Dim1`, 및 `_Dim2`.  
   
 ### <a name="syntax"></a>구문  
   

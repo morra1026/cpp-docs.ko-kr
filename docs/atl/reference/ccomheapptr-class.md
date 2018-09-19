@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7a5b30ca507387b1529c9e9726e48735c844fac
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3455e88c5a9852c902702544a0f915e8d20dc64e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764831"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043237"
 ---
 # <a name="ccomheapptr-class"></a>CComHeapPtr 클래스
 
@@ -32,13 +32,13 @@ ms.locfileid: "43764831"
 ## <a name="syntax"></a>구문
 
 ```
-template<typename T>  
+template<typename T>
 class CComHeapPtr : public CHeapPtr<T, CComAllocator>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 힙에 저장 될 개체 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -76,7 +76,7 @@ explicit CComHeapPtr(T* pData) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pData*  
+*pData*<br/>
 기존 `CComHeapPtr` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -85,7 +85,7 @@ explicit CComHeapPtr(T* pData) throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[CHeapPtr 클래스](../../atl/reference/cheapptr-class.md)   
-[CHeapPtrBase 클래스](../../atl/reference/cheapptrbase-class.md)   
-[CComAllocator 클래스](../../atl/reference/ccomallocator-class.md)   
+[CHeapPtr 클래스](../../atl/reference/cheapptr-class.md)<br/>
+[CHeapPtrBase 클래스](../../atl/reference/cheapptrbase-class.md)<br/>
+[CComAllocator 클래스](../../atl/reference/ccomallocator-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2917b1a947925b8bbd01f366f9540184b839a41
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7155de95ec4475a2b7b114292e507685717f8d78
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230003"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060423"
 ---
 # <a name="compiler-error-c2638"></a>컴파일러 오류 C2638
-'identifier': __based 한정자를 멤버의 포인터  
-  
- `__based` 멤버에 대 한 포인터에 대 한 한정자를 사용할 수 없습니다.  
-  
- 다음 샘플에서는 C2638 오류가 생성 됩니다.  
-  
-```  
-// C2638.cpp  
-void *a;  
-  
-class C {  
-public:  
-   int i;  
-   int j;  
-   int func();  
-};  
-int __based (a) C::* cpi = &C::i;  // C2638  
-int (__based (a) C::* cpf)() = &C::func; // c2638  
+
+'identifier': __based 한정자를 멤버에 대 한 포인터
+
+`__based` 멤버에 대 한 포인터에 대 한 한정자를 사용할 수 없습니다.
+
+다음 샘플에서는 C2638 오류가 생성 됩니다.
+
+```
+// C2638.cpp
+void *a;
+
+class C {
+public:
+   int i;
+   int j;
+   int func();
+};
+int __based (a) C::* cpi = &C::i;  // C2638
+int (__based (a) C::* cpf)() = &C::func; // c2638
 ```

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee2d9057019c073035dfc07399e8c56580c8052d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c37b45cb86793c3c4ca7066f9d7adc047188f658
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33241725"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026337"
 ---
 # <a name="compiler-error-c2927"></a>컴파일러 오류 C2927
-'function': 인수를 최소한 하나 이상 사용하여 함수 템플릿을 호출해야 합니다.  
-  
- 인수 없이 템플릿 함수를 호출할 수 없습니다. 템플릿 인수의 형식에 따라 생성할 함수 버전이 결정됩니다.
+
+'function': 인수를 최소한 하나 이상 사용하여 함수 템플릿을 호출해야 합니다.
+
+인수 없이 템플릿 함수를 호출할 수 없습니다. 템플릿 인수의 형식에 따라 생성할 함수 버전이 결정됩니다.

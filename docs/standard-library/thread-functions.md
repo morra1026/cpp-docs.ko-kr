@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::sleep_until [C++]
 - std::swap [C++]
 - std::yield [C++]
-ms.openlocfilehash: 948c00f7c0b773bf366f4ea9e102c832e9878d9b
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 25c03be7ffb504f2bec47677aec70360d0f8b38f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960452"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704260"
 ---
 # <a name="ltthreadgt-functions"></a>&lt;thread&gt; 함수
 
@@ -54,8 +54,8 @@ inline void sleep_for(const chrono::duration<Rep, Period>& Rel_time);
 
 ### <a name="parameters"></a>매개 변수
 
-*Rel_time*  
- 시간 간격을 지정하는 [duration](../standard-library/duration-class.md) 개체입니다.
+*Rel_time*<br/>
+시간 간격을 지정하는 [duration](../standard-library/duration-class.md) 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -74,8 +74,8 @@ void sleep_until(const xtime *Abs_time);
 
 ### <a name="parameters"></a>매개 변수
 
-*Abs_time*  
- 특정 시점을 나타냅니다.
+*Abs_time*<br/>
+특정 시점을 나타냅니다.
 
 ### <a name="remarks"></a>설명
 
@@ -91,11 +91,11 @@ void swap(thread& Left, thread& Right) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*  
- 왼쪽 **스레드** 개체입니다.
+*왼쪽*<br/>
+왼쪽 **스레드** 개체입니다.
 
-*오른쪽*  
- 오른쪽 **스레드** 개체입니다.
+*오른쪽*<br/>
+오른쪽 **스레드** 개체입니다.
 
 ### <a name="remarks"></a>설명
 

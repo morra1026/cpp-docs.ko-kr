@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12505ded20ab2a543355d51c7761a7f3acdf9feb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6545c2ec2374258996ee8819739382cf4b861fbf
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33263803"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086514"
 ---
 # <a name="compiler-error-c3652"></a>컴파일러 오류 C3652
-'override': 명시적으로 재정의 하는 함수는 가상 메서드여야 합니다.  
-  
- 명시적으로 재정의 하는 함수는 virtual 이어야 합니다. 자세한 내용은 참조 [명시적으로 재정의](../../windows/explicit-overrides-cpp-component-extensions.md)합니다.  
-  
- 다음 샘플에서는 C3652 오류가 생성 됩니다.  
-  
-```  
-// C3652.cpp  
-// compile with: /clr /c  
-public interface class I {  
-   void f();  
-};  
-  
-public ref struct R : I {  
-   void f() = I::f {}   // C3652  
-   // try the following line instead  
-   // virtual void f() = I::f {}  
-};  
+
+'override': 명시적으로 재정의 하는 함수는 virtual 이어야 합니다.
+
+명시적으로 재정의 하는 함수는 virtual 이어야 합니다. 자세한 내용은 [명시적으로 재정의](../../windows/explicit-overrides-cpp-component-extensions.md)합니다.
+
+다음 샘플에서는 C3652 오류가 생성 됩니다.
+
+```
+// C3652.cpp
+// compile with: /clr /c
+public interface class I {
+   void f();
+};
+
+public ref struct R : I {
+   void f() = I::f {}   // C3652
+   // try the following line instead
+   // virtual void f() = I::f {}
+};
 ```

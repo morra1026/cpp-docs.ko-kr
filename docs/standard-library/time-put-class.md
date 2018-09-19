@@ -24,12 +24,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02c4c537f1a420a096fbcd979580ff7b10076845
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 27a200ba94be8c4937342820fadf89e4225ba97d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106758"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719955"
 ---
 # <a name="timeput-class"></a>time_put 클래스
 
@@ -45,10 +45,10 @@ class time_put : public locale::facet;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType*  
+*CharType*<br/>
 문자를 인코딩하기 위해 프로그램 내 사용하는 형식
 
-*OutputIterator*  
+*OutputIterator*<br/>
 시간 put 함수가 출력을 쓰는 반복기의 형식입니다.
 
 ## <a name="remarks"></a>설명
@@ -108,19 +108,19 @@ virtual iter_type do_put(
 
 ### <a name="parameters"></a>매개 변수
 
-*next*  
+*next*<br/>
 시간과 날짜를 나타내는 문자 시퀀스를 삽입할 출력 반복기입니다.
 
-*_Iosbase*  
+*_Iosbase*<br/>
 사용되지 않습니다.
 
-*_Pt*  
+*_Pt*<br/>
 출력되는 날짜 및 시간 정보입니다.
 
-*_Fmt*  
+*_Fmt*<br/>
 출력의 형식입니다. 유효한 값은 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)를 참조하세요.
 
-*_Mod*  
+*_Mod*<br/>
 형식의 한정자입니다. 유효한 값은 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)를 참조하세요.
 
 ### <a name="return-value"></a>반환 값
@@ -171,28 +171,28 @@ iter_type put(iter_type next,
 
 ### <a name="parameters"></a>매개 변수
 
-*next*  
+*next*<br/>
 시간과 날짜를 나타내는 문자 시퀀스를 삽입할 출력 반복기입니다.
 
-*_Iosbase*  
+*_Iosbase*<br/>
 사용되지 않습니다.
 
-*_Fill*  
+*_Fill*<br/>
 형식의 문자 `CharType` 간격에 사용 합니다.
 
-*_Pt*  
+*_Pt*<br/>
 출력되는 날짜 및 시간 정보입니다.
 
-*_Fmt*  
+*_Fmt*<br/>
 출력의 형식입니다. 유효한 값은 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)를 참조하세요.
 
-*_Mod*  
+*_Mod*<br/>
 형식의 한정자입니다. 유효한 값은 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)를 참조하세요.
 
-*first*  
+*first*<br/>
 출력에 대한 서식 문자열의 시작 부분입니다. 유효한 값은 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)를 참조하세요.
 
-*last*  
+*last*<br/>
 출력에 대한 서식 문자열의 끝부분입니다. 유효한 값은 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)를 참조하세요.
 
 ### <a name="return-value"></a>반환 값

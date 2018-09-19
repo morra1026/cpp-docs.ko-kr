@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71b36f19cc6e3deddbd5984e63b70c61a0ca8ea8
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e776fd88799999ce175ba2efc137fc0353cbe65a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762771"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068470"
 ---
 # <a name="ccomdynamicunkarray-class"></a>CComDynamicUnkArray 클래스
 
@@ -93,7 +93,7 @@ DWORD Add(IUnknown* pUnk);
 
 ### <a name="parameters"></a>매개 변수
 
-*pUnk*  
+*pUnk*<br/>
 `IUnknown` 배열에 추가에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -174,7 +174,7 @@ IUnknown* GetAt(int nIndex);
 
 ### <a name="parameters"></a>매개 변수
 
-*nIndex*  
+*nIndex*<br/>
 검색할 요소의 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -191,7 +191,7 @@ DWORD WINAPI GetCookie(IUnknown** ppFind);
 
 ### <a name="parameters"></a>매개 변수
 
-*ppFind*  
+*ppFind*<br/>
 `IUnknown` 포인터 관련된 쿠키를 필수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -224,7 +224,7 @@ IUnknown* WINAPI GetUnknown(DWORD dwCookie);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwCookie*  
+*dwCookie*<br/>
 쿠키는 연결 된 `IUnknown` 포인터가 필요 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -241,7 +241,7 @@ BOOL Remove(DWORD dwCookie);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwCookie*  
+*dwCookie*<br/>
 참조 하는 쿠키를 `IUnknown` 배열에서 제거할 수에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -250,5 +250,5 @@ BOOL Remove(DWORD dwCookie);
 
 ## <a name="see-also"></a>참고 항목
 
-[CComUnkArray 클래스](../../atl/reference/ccomunkarray-class.md)   
+[CComUnkArray 클래스](../../atl/reference/ccomunkarray-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

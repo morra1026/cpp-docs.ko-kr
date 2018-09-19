@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84f62346d12c978a466de14357352f78345e99f1
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: bc03777a490613cb3da111e4a3b678311f09f678
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43691110"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706539"
 ---
 # <a name="cmfcoutlookbarpane-class"></a>CMFCOutlookBarPane 클래스
 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
@@ -184,32 +184,32 @@ BOOL AddButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiImage*  
- 비트맵의 리소스 식별자를 지정합니다.  
+*uiImage*<br/>
+[in] 비트맵의 리소스 식별자를 지정합니다.  
   
- [in] *lpszLabel*  
- 단추의 텍스트를 지정합니다.  
+*lpszLabel*<br/>
+[in] 단추의 텍스트를 지정합니다.  
   
- [in] *iIdCommand*  
- 단추 컨트롤의 ID를 지정합니다.  
+*iIdCommand*<br/>
+[in] 단추 컨트롤의 ID를 지정합니다.  
   
- [in] *iInsertAt*  
- Outlook 표시줄 페이지 단추를 삽입할 0부터 시작 인덱스를 지정 합니다.  
+*iInsertAt*<br/>
+[in] Outlook 표시줄 페이지 단추를 삽입할 0부터 시작 인덱스를 지정 합니다.  
   
- [in] *uiLabel*  
- 문자열 리소스 id입니다.  
+*uiLabel*<br/>
+[in] 문자열 리소스 id입니다.  
   
- [in] *szBmpFileName*  
- 로드할 디스크 이미지 파일의 이름을 지정 합니다.  
+*szBmpFileName*<br/>
+[in] 로드할 디스크 이미지 파일의 이름을 지정 합니다.  
   
- [in] *szLabel*  
- 단추의 텍스트를 지정합니다.  
+*szLabel*<br/>
+[in] 단추의 텍스트를 지정합니다.  
   
- [in] *hBmp*  
- 단추의 비트맵 핸들입니다.  
+*hBmp*<br/>
+[in] 단추의 비트맵 핸들입니다.  
   
- [in] *hIcon*  
- 버튼의 아이콘에 대 한 핸들입니다.  
+*hIcon*<br/>
+[in] 버튼의 아이콘에 대 한 핸들입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 단추를 추가 했습니다. 그렇지 않으면 FALSE입니다.  
@@ -254,17 +254,17 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pParentWnd*  
- Outlook 표시줄 창 컨트롤의 부모 창을 지정합니다. NULL이 아니어야 합니다.  
+*pParentWnd*<br/>
+[in] Outlook 표시줄 창 컨트롤의 부모 창을 지정합니다. NULL이 아니어야 합니다.  
   
- [in] *dwStyle*  
- 창 스타일입니다.  창 스타일의 목록은 참조 하세요 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  
+*dwStyle*<br/>
+[in] 창 스타일입니다.  창 스타일의 목록은 참조 하세요 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  
   
- [in] *uiID*  
- 컨트롤 id입니다. 사용할 수 있도록 고유 컨트롤의 상태를 저장 합니다.  
+*uiID*<br/>
+[in] 컨트롤 id입니다. 사용할 수 있도록 고유 컨트롤의 상태를 저장 합니다.  
   
- [in] *dwControlBarStyle*  
- Outlook 표시줄에서 분리 될 때 Outlook 표시줄 창 컨트롤의 동작을 정의 하는 특별 한 스타일을 지정 합니다.  
+*dwControlBarStyle*<br/>
+[in] Outlook 표시줄에서 분리 될 때 Outlook 표시줄 창 컨트롤의 동작을 정의 하는 특별 한 스타일을 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -284,11 +284,11 @@ virtual BOOL EnableContextMenuItems(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pButton*  
- 사용자를 클릭 하는 도구 모음 단추에 대 한 포인터입니다.  
+*pButton*<br/>
+[in] 사용자를 클릭 하는 도구 모음 단추에 대 한 포인터입니다.  
   
- [in] *pPopup*  
- 바로 가기 메뉴에 대 한 포인터입니다.  
+*pPopup*<br/>
+[in] 바로 가기 메뉴에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE를 반환 하는 경우 바로 가기 메뉴를 표시할; 그렇지 않으면 FALSE입니다.  
@@ -309,8 +309,8 @@ void EnablePageScrollMode(BOOL bPageScroll=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bPageScroll*  
- TRUE 이면 페이지 스크롤 모드를 사용 하도록 설정 합니다. FALSE 이면 페이지 스크롤 모드를 사용 하지 않도록 설정 합니다.  
+*bPageScroll*<br/>
+[in] TRUE 이면 페이지 스크롤 모드를 사용 하도록 설정 합니다. FALSE 이면 페이지 스크롤 모드를 사용 하지 않도록 설정 합니다.  
   
 ##  <a name="getregularcolor"></a>  CMFCOutlookBarPane::GetRegularColor  
  일반 반환 (즉, 선택 되지 않은) Outlook 표시줄 창의 텍스트 색입니다.  
@@ -365,8 +365,8 @@ BOOL RemoveButton(UINT iIdCommand);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iIdCommand*  
- 제거할 단추의 명령 ID를 지정 합니다.  
+*iIdCommand*<br/>
+[in] 제거할 단추의 명령 ID를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  단추 제거 되었으면 TRUE 지정된 된 명령 ID 유효 하지 않은 경우 FALSE입니다.  
@@ -379,8 +379,8 @@ void SetBackColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *색*  
- 새 배경색을 지정합니다.  
+*색*<br/>
+[in] 새 배경색을 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  Outlook 표시줄의 현재 배경색을 설정 하려면이 함수를 호출 합니다. 배경 색상 배경 이미지가 없는 경우에 사용 됩니다.  
@@ -393,8 +393,8 @@ void SetBackImage(UINT uiImageID);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiImageID*  
- 이미지 리소스 ID를 지정합니다.  
+*uiImageID*<br/>
+[in] 이미지 리소스 ID를 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  Outlook을 설정 하려면이 메서드를 호출 막대의 배경 이미지입니다. 배경 이미지의 목록 관리를 포함 하 여 [CMFCToolBarImages 클래스](../../mfc/reference/cmfctoolbarimages-class.md) 개체입니다.  
@@ -426,11 +426,11 @@ void SetTextColor(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *clrRegText*  
- 선택 되지 않은 텍스트에 대 한 새 색을 지정합니다.  
+*clrRegText*<br/>
+[in] 선택 되지 않은 텍스트에 대 한 새 색을 지정합니다.  
   
- [in] *clrSelText*  
- 선택한 텍스트에 대 한 새 색을 지정합니다.  
+*clrSelText*<br/>
+[in] 선택한 텍스트에 대 한 새 색을 지정합니다.  
   
 ##  <a name="settransparentcolor"></a>  CMFCOutlookBarPane::SetTransparentColor  
  Outlook 표시줄 창에 대 한 투명 한 색을 설정합니다.  

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68ef867a966df027ff918db209ec6e46a5ca9d9b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 18ebfff81eed0268501c268cc6704914ebf054ef
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296824"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084746"
 ---
 # <a name="linker-tools-error-lnk1196"></a>링커 도구 오류 LNK1196
-가져오기 개체가 잘못 되었거나 손상: 알 수 없는 버전  
-  
- 가져오기 라이브러리 손상 되었습니다. 라이브러리를 다시 빌드하십시오.
+
+가져오기 개체가 잘못 되었거나 손상 되었습니다: 알 수 없는 버전
+
+가져오기 라이브러리 손상 되었습니다. 라이브러리를 다시 빌드하십시오.

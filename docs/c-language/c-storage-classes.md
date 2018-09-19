@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd6bed6fa3722b320e23f5d6da94673ba928c225
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3bade146edd1b83f893af72fc4e760a46187679b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754984"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111708"
 ---
 # <a name="c-storage-classes"></a>C 저장소 클래스
 
@@ -60,6 +60,6 @@ C에서는 다음과 같은 저장소 클래스 지정자를 제공합니다.
 
 [외부 수준 선언에 대한 저장소 클래스 지정자](../c-language/storage-class-specifiers-for-external-level-declarations.md) 및 [내부 수준 선언에 대한 저장소 클래스 지정자](../c-language/storage-class-specifiers-for-internal-level-declarations.md)에서는 종류별 선언의 *storage-class-specifier* 터미널을 설명하고 *storage-class-specifier*를 변수에서 생략할 경우 기본 동작을 설명합니다. [함수 선언이 있는 저장소 클래스 지정자](../c-language/storage-class-specifiers-with-function-declarations.md)에서는 함수에 사용되는 저장소 클래스 지정자를 설명합니다.
 
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고 항목
 
-[선언 및 형식](../c-language/declarations-and-types.md)  
+[선언 및 형식](../c-language/declarations-and-types.md)

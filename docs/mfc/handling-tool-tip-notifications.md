@@ -17,39 +17,39 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8df4b584a4e8b0ef940d5934a5968037427c607d
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: e18dc83bf57b449f71c3219cf7f67b6152c17394
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36931816"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016063"
 ---
 # <a name="handling-tool-tip-notifications"></a>도구 설명 알림 처리
-지정 하는 경우는 **TBSTYLE_TOOLTIPS** 도구 모음 스타일을 만들고 도구 설명 컨트롤을 관리 합니다. 도구 설명에는 도구 모음 단추를 설명 하는 텍스트 줄을 포함 하는 작은 팝업 창인은 합니다. 사용자가 도구 모음 단추에 커서 있고 그대로 있을 약 절반에 대 한 두 번째 경우에 나타나는 도구 설명 숨겨져 있습니다. 커서 주위 도구 설명이 표시 됩니다.  
+지정 하는 경우는 **TBSTYLE_TOOLTIPS** 스타일 도구 모음을 만들고 도구 설명 컨트롤을 관리 합니다. 도구 팁을 도구 모음 단추를 설명 하는 텍스트의 줄을 포함 하는 작은 팝업 창입니다. 사용자 도구 모음 단추에 커서를 놓습니다 고 그대로 남아 있는 약 절반에 대 한 두 번째 경우에 나타나는 도구 설명이 숨겨집니다. 커서 주위 도구 설명이 표시 됩니다.  
   
- 도구 설명이 표시 되기 전에 **TTN_NEEDTEXT** 단추에 대 한 설명 텍스트를 검색 하 고 도구 모음 소유자 창에 알림 메시지가 보내집니다. 도구 모음의 소유자 창이 하는 경우는 `CFrameWnd` 때문에 설명이 추가 작업 없이 표시 되는 도구 창 `CFrameWnd` 에 대 한 기본 처리기는 **TTN_NEEDTEXT** 알림입니다. 도구 모음의 소유자 창에서 파생 되지 않은 경우 `CFrameWnd`, 대화 상자 또는 폼 보기와 같은 항목 소유자 창의 메시지 맵에 추가 하 고 메시지 맵에 알림 처리기를 제공 해야 합니다. 소유자 창의 메시지 맵에 항목은 다음과 같습니다.  
+ 도구 설명 표시 되기 전에 **TTN_NEEDTEXT** 단추에 대 한 설명 텍스트를 검색 하는 도구 모음 소유자 창에 알림 메시지 전송 됩니다. 소유자 창 도구 모음에서의 경우는 `CFrameWnd` 때문에 모든 추가 작업 없이 설명이 표시 되는 도구 창 `CFrameWnd` 에 대 한 기본 처리기가 합니다 **TTN_NEEDTEXT** 알림. 도구 모음의 소유자 창에서 파생 되지 않은 경우 `CFrameWnd`, 대화 상자나 폼 보기와 같은 소유자 창의 메시지 맵에 항목을 추가 및 메시지 맵에서 알림 처리기를 제공 해야 합니다. 소유자 창의 메시지 맵에 항목을 아래와 같습니다.  
   
  [!code-cpp[NVC_MFCControlLadenDialog#40](../mfc/codesnippet/cpp/handling-tool-tip-notifications_1.cpp)]  
   
 ## <a name="remarks"></a>설명  
- `memberFxn`  
- 이 단추 텍스트가 필요할 때 호출 되는 멤버 함수입니다.  
+*memberFxn*<br/>
+이 단추에 대 한 텍스트가 필요할 때 호출 되는 멤버 함수입니다.  
   
  도구 설명의 id는 항상 0입니다.  
   
- 이외에 **TTN_NEEDTEXT** 알림, 도구 설명 컨트롤 도구 모음 컨트롤에는 다음과 같은 알림이 보낼 수 있습니다.  
+ 이외에 **TTN_NEEDTEXT** 알림, 도구 설명 컨트롤 도구 모음 컨트롤에 다음과 같은 알림이 보낼 수 있습니다.  
   
 |알림|의미|  
 |------------------|-------------|  
-|**TTN_NEEDTEXTA**|도구 설명 컨트롤 필요 ASCII 텍스트 (Windows 95에만 해당)|  
-|**TTN_NEEDTEXTW**|도구 설명 컨트롤 필요 유니코드 텍스트 (Windows NT에만 해당)|  
-|**TBN_HOTITEMCHANGE**|핫 (강조 된) 항목이 변경 되었음을 나타냅니다.|  
-|**NM_RCLICK**|단추를 마우스 오른쪽 단추로 클릭 사용자가을 나타냅니다.|  
-|**TBN_DRAGOUT**|사용자가 단추를 클릭 하 고 끌어 포인터를 단추 밖을 나타냅니다. 응용을 프로그램을 끌어서를 구현 하 고 도구 모음 단추에서 삭제할 수 있습니다. 이 알림을 받으면 응용 프로그램이 끌어서 시작과 놓기 작업 합니다.|  
-|**TBN_DROPDOWN**|사용자가 사용 하는 단추 클릭 나타냅니다는 **TBSTYLE_DROPDOWN** 스타일입니다.|  
-|**TBN_GETOBJECT**|사용자는 사용 하는 단추 위로 포인터를 이동 나타냅니다는 **TBSTYLE_DROPPABLE** 스타일입니다.|  
+|**TTN_NEEDTEXTA**|도구 설명 컨트롤이 필요 ASCII 텍스트 (Windows 95에만 해당)|  
+|**TTN_NEEDTEXTW**|도구 설명 컨트롤이 필요한 유니코드 텍스트 (Windows NT에만 해당)|  
+|**TBN_HOTITEMCHANGE**|핫 (선택한) 항목이 변경 되었음을 나타냅니다.|  
+|**NM_RCLICK**|사용자 단추를 마우스 오른쪽 단추로 클릭에 나타냅니다.|  
+|**TBN_DRAGOUT**|사용자가 단추를 클릭 하 고 끌어 포인터를 단추 밖을 나타냅니다. 응용 프로그램을을 끌어서를 구현 하 고 도구 모음 단추에서 삭제할 수 있습니다. 이 알림을 수신 하는 경우 응용 프로그램 끌기 시작 하 고 작업을 삭제 합니다.|  
+|**TBN_DROPDOWN**|사용자가 사용 하는 단추 클릭 나타냅니다 합니다 **TBSTYLE_DROPDOWN** 스타일입니다.|  
+|**TBN_GETOBJECT**|사용자는 단추 위로 포인터를 이동 나타냅니다 합니다 **TBSTYLE_DROPPABLE** 스타일입니다.|  
   
- 예제 처리기 함수 및 도구 설명을 사용 하도록 설정 하는 방법에 대 한 자세한 내용은 참조 [도구 설명](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)합니다.  
+ 처리기 함수 예제 및 도구 설명을 사용 하도록 설정 하는 방법에 대 한 자세한 내용은 참조 하십시오 [도구 팁](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [CToolBarCtrl 사용](../mfc/using-ctoolbarctrl.md)   

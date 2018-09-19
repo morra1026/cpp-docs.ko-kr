@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e182409ec0d9bc609daf96060386c374072cdef
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 548342ed0d08de93af1288c57bed5067ad97ccf3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33163948"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032896"
 ---
 # <a name="compiler-error-c2069"></a>컴파일러 오류 C2069
-'void' 항에서 비 'void'로 캐스팅했습니다.  
-  
- `void` 형식을 다른 형식으로 캐스팅할 수 없습니다.
+
+'void' 항에서 비 'void'로 캐스팅했습니다.
+
+`void` 형식을 다른 형식으로 캐스팅할 수 없습니다.

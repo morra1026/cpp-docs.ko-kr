@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dc28d8a0d5dc24d0f0c665e5a17fc38e0c9d08f
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: eabb923b165d407f77554d88d710cd7c67a14240
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753151"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022113"
 ---
 # <a name="registry-scripting-examples"></a>레지스트리 스크립팅 예
 
@@ -32,17 +32,17 @@ ms.locfileid: "43753151"
 
 다음 구문 분석 트리를 시스템 레지스트리에 단일 키를 추가 하는 간단한 스크립트를 보여 줍니다. 스크립트에서 키를 추가 하는 특히 `MyVeryOwnKey`를 `HKEY_CURRENT_USER`입니다. 기본 문자열 값을 할당 `HowGoesIt` 새 키:
 
-```  
-HKEY_CURRENT_USER  
+```
+HKEY_CURRENT_USER
 {  
-'MyVeryOwnKey' = s 'HowGoesIt'  
-}  
+    'MyVeryOwnKey' = s 'HowGoesIt'
+}
 ```
 
 이 스크립트를 여러 하위 키를 다음과 같이 정의 쉽게 확장할 수 있습니다.
 
-```  
-HKCU  
+```
+HKCU
 {  
     'MyVeryOwnKey' = s 'HowGoesIt'  
     {  
@@ -51,8 +51,8 @@ HKCU
             'PrettyCool' = d '55'  
             val 'ANameValue' = s 'WithANamedValue'  
         }  
-    }  
-}  
+    }
+}
 ```
 
 스크립트에 하위 키를 추가 하는 이제 `HasASubkey`를 `MyVeryOwnKey`입니다. 이 하위 키에 추가 모두를 `PrettyCool` 하위 키 (기본값 `DWORD` 55 값) 및 `ANameValue` 명명 된 값 (문자열 값을 사용 하 여 `WithANamedValue`).
@@ -61,8 +61,8 @@ HKCU
 
 다음 스크립트를 자체 등록 기관 COM 서버를 등록합니다.
 
-```  
-HKCR  
+```
+HKCR
 {  
     ATL.Registrar = s 'ATL Registrar Class'  
     {  
@@ -78,8 +78,8 @@ HKCR
                 val ThreadingModel = s 'Apartment'  
             }  
         }  
-    }  
-}  
+    }
+}
 ```
 
 런타임 시이 구문 분석 트리를 추가 합니다 `ATL.Registrar` 키를 `HKEY_CLASSES_ROOT`입니다. 이 새 키에 다음 it:
@@ -106,15 +106,15 @@ HKCR
 
 스크립트에서 둘 이상의 구문 분석 트리를 지정 하려면 다른 끝에 트리를 배치 합니다. 다음 스크립트는 키를 추가 하는 예를 들어 `MyVeryOwnKey`를 둘 다에 대해 구문 분석 트리에 `HKEY_CLASSES_ROOT` 및 `HKEY_CURRENT_USER`:
 
-```  
-HKCR  
+```
+HKCR
 {  
-    'MyVeryOwnKey' = s 'HowGoesIt'  
-}  
-HKEY_CURRENT_USER  
+    'MyVeryOwnKey' = s 'HowGoesIt'
+}
+HKEY_CURRENT_USER
 {  
-    'MyVeryOwnKey' = s 'HowGoesIt'  
-}  
+    'MyVeryOwnKey' = s 'HowGoesIt'
+}
 ```
 
 > [!NOTE]

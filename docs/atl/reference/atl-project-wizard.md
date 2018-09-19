@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 139a20eb3db99ce87b2de51aa1ef7602f7b5a36a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d7ac74d1b310f4db7bfc4a558db5b89df5d8df5a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758578"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109849"
 ---
 # <a name="atl-project-wizard"></a>ATL 프로젝트 마법사
 
@@ -58,10 +58,10 @@ ms.locfileid: "43758578"
 
 ## <a name="see-also"></a>참고 항목
 
-[Visual C++ 프로젝트 만들기 및 관리](../../ide/creating-and-managing-visual-cpp-projects.md)   
-[Visual C++ 프로젝트 형식](../../ide/visual-cpp-project-types.md)   
-[응용 프로그램 마법사를 사용하여 데스크톱 프로젝트 만들기](../../ide/creating-desktop-projects-by-using-application-wizards.md)   
-[ATL COM 개체의 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)   
-[ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)   
+[Visual C++ 프로젝트 만들기 및 관리](../../ide/creating-and-managing-visual-cpp-projects.md)<br/>
+[Visual C++ 프로젝트 형식](../../ide/visual-cpp-project-types.md)<br/>
+[응용 프로그램 마법사를 사용하여 데스크톱 프로젝트 만들기](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
+[ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)<br/>
+[ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [자습서](../../atl/active-template-library-atl-tutorial.md)
 

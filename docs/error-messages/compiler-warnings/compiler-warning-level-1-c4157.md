@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8808f7b384deeed9a0ea1c6e780c7167d2098b53
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4722c260c0c5cb8e50b45dbabe546749f50c51e4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33273679"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46136202"
 ---
 # <a name="compiler-warning-level-1-c4157"></a>컴파일러 경고 (수준 1) C4157
-C 컴파일러에서 pragma가 무시  
-  
- c + + 컴파일러가 인식 **init_seg()** 합니다.
+
+C 컴파일러에서 pragma가 무시
+
+C + + 컴파일러 에서만 인식 **init_seg()** 합니다.

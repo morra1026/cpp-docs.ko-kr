@@ -17,32 +17,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 167cf817074a992fae5492ba387ea8a3589a10ec
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: c870861d11a27b5343888e62259a585720274190
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337231"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068587"
 ---
 # <a name="recordset-adding-records-in-bulk-odbc"></a>레코드 집합: 대량 레코드 추가(ODBC)
+
 이 항목에서는 MFC ODBC 클래스에 적용 됩니다.  
   
- MFC [CRecordset](../../mfc/reference/crecordset-class.md) 클래스에는 테이블에 대량으로 새 레코드를 추가할 때 효율성을 개선 하는 최적화 합니다.  
+MFC [CRecordset](../../mfc/reference/crecordset-class.md) 클래스에는 테이블에 대량으로 새 레코드를 추가할 때 효율성을 개선 하는 최적화 합니다.  
   
 > [!NOTE]
 >  이 항목에서 파생 된 개체에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 사용 하는 경우 참조 [레코드 집합: 레코드 페치 대량 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.  
   
- 에 대 한 새 옵션을 *dwOptions* 매개 변수를를 [crecordset:: Open](../../mfc/reference/crecordset-class.md#open) 멤버 함수 `optimizeBulkAdd`, 호출없이연속적으로여러레코드를추가할때성능을향상시킵니다`Requery` 또는 `Close`합니다. 첫 번째 더티 필드만 `Update` 호출 다음에 대 한 커밋되지 않은 것으로 표시 됩니다 `AddNew` / `Update` 호출 합니다.  
+에 대 한 새 옵션을 *dwOptions* 매개 변수를를 [crecordset:: Open](../../mfc/reference/crecordset-class.md#open) 멤버 함수 `optimizeBulkAdd`, 호출없이연속적으로여러레코드를추가할때성능을향상시킵니다`Requery` 또는 `Close`합니다. 첫 번째 더티 필드만 `Update` 호출 다음에 대 한 커밋되지 않은 것으로 표시 됩니다 `AddNew` / `Update` 호출 합니다.  
   
- 데이터베이스 클래스를 활용 하기 위해 사용 중인 경우는 `::SQLSetPos` 편집을 추가 하는 것에 대 한 ODBC API 함수 및 레코드를 삭제 하는 중에이 최적화가 필요 없습니다.  
+데이터베이스 클래스를 활용 하기 위해 사용 중인 경우는 `::SQLSetPos` 편집을 추가 하는 것에 대 한 ODBC API 함수 및 레코드를 삭제 하는 중에이 최적화가 필요 없습니다.  
   
- ODBC 커서 라이브러리가 로드 또는 ODBC 드라이버는 추가 지원 하지 않는 경우 편집 및 삭제를 통해 `::SQLSetPos`,이 최적화는 bulk 개선 해야 성능을 추가 합니다. 이 최적화를 설정 합니다 *dwOptions* 에 매개 변수는 `Open` 다음과 레코드 집합에 대 한 호출:  
+ODBC 커서 라이브러리가 로드 또는 ODBC 드라이버는 추가 지원 하지 않는 경우 편집 및 삭제를 통해 `::SQLSetPos`,이 최적화는 bulk 개선 해야 성능을 추가 합니다. 이 최적화를 설정 합니다 *dwOptions* 에 매개 변수는 `Open` 다음과 레코드 집합에 대 한 호출:  
   
 ```  
 appendOnly | optimizeBulkAdd  
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [레코드 집합 (ODBC)](../../data/odbc/recordset-odbc.md)   
- [레코드 집합: 추가, 업데이트 및 삭제할 레코드 (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)   
- [레코드 집합: 레코드 잠금(ODBC)](../../data/odbc/recordset-locking-records-odbc.md)
+
+[레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
+[레코드 집합: 레코드 추가, 업데이트 및 삭제(ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)<br/>
+[레코드 집합: 레코드 잠금(ODBC)](../../data/odbc/recordset-locking-records-odbc.md)

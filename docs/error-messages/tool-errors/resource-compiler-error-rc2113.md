@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 152621a248c2a47a453034f1b171fe1746000fd1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2eb23ae8e9274368abd2c754d94a19050ae3805c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33318729"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46015872"
 ---
 # <a name="resource-compiler-error-rc2113"></a>리소스 컴파일러 오류 RC2113
-종료 대화 상자에서 필요 합니다.  
-  
- **끝** 키워드의 끝에서 수행 되어야 합니다는 **대화** 문. 왼쪽 위의 문에서 열린 따옴표 없는 없는지 확인 합니다.
+
+종료 대화 상자에서 필요 합니다.
+
+**끝** 키워드의 끝에 있어야 합니다.는 **대화 상자** 문입니다. 위의 문에서 왼쪽 열린 따옴표 없음 없는지 확인 합니다.

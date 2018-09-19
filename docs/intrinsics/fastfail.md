@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a0346be9f7a48defc702c9f2ef6aa187c37f187
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 7e04f2898caf1f62a9499096ffab09fce8da86ab
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540506"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700182"
 ---
 # <a name="fastfail"></a>__fastfail
 **Microsoft 전용**  
@@ -31,8 +31,8 @@ void __fastfail(unsigned int code);
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `code`  
- 프로세스 종료 이유를 나타내는 winnt.h 또는 wdm.h의 `FAST_FAIL_<description>` 기호화된 상수입니다.  
+*코드*<br/>
+[in] `FAST_FAIL_<description>` winnt.h 또는 wdm.h의 프로세스 종료 이유를 나타내는 기호화 된 상수입니다.  
   
 ## <a name="return-value"></a>반환 값  
  `__fastfail` 내장 함수는 결과를 반환하지 않습니다.  

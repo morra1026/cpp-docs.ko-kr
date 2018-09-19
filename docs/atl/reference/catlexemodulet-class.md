@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa212a6a58d1de417035f002b2caf3e206dabf1c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b9b19888f6eae3efe7baf4429ec1174432f99a10
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757587"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118559"
 ---
 # <a name="catlexemodulet-class"></a>CAtlExeModuleT 클래스
 
@@ -46,13 +46,13 @@ ms.locfileid: "43757587"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE CAtlExeModuleT : public CAtlModuleT<T>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `CAtlExeModuleT`합니다.
 
 ## <a name="members"></a>멤버
@@ -100,7 +100,7 @@ ATL에서 모듈에 대 한 자세한 내용은 참조 하세요. [ATL 모듈 �
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
-[_ATL_MODULE](atl-typedefs.md#_atl_module)  
+[_ATL_MODULE](atl-typedefs.md#_atl_module)
 
 [CAtlModule](../../atl/reference/catlmodule-class.md)
 
@@ -200,10 +200,10 @@ bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lpCmdLine*  
+*lpCmdLine*<br/>
 명령줄 응용 프로그램에 전달 합니다.
 
-*pnRetCode*  
+*pnRetCode*<br/>
 (발생 해당) 하는 경우 해당 등록 하는 HRESULT입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -240,7 +240,7 @@ HRESULT PreMessageLoop(int nShowCmd) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nShowCmd*  
+*nShowCmd*<br/>
 로 전달 된 값을 *nShowCmd* WinMain에서 매개 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -261,10 +261,10 @@ HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dwClsContext*  
+*dwClsContext*<br/>
 클래스 개체를 실행할의 컨텍스트를 지정 합니다. 가능한 값은 CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER, 또는 CLSCTX_LOCAL_SERVER입니다.
 
-*dwFlags*  
+*dwFlags*<br/>
 클래스 개체에 연결 형식을 결정합니다. 가능한 값은 REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE, 또는 REGCLS_MULTI_SEPARATE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -293,7 +293,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nShowCmd*  
+*nShowCmd*<br/>
 창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다. SW_HIDE 기본값은입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -350,7 +350,7 @@ int WinMain(int nShowCmd) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nShowCmd*  
+*nShowCmd*<br/>
 창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -363,7 +363,7 @@ int WinMain(int nShowCmd) throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[ATLDuck 샘플](../../visual-cpp-samples.md)   
-[CAtlModuleT 클래스](../../atl/reference/catlmodulet-class.md)   
-[CAtlDllModuleT 클래스](../../atl/reference/catldllmodulet-class.md)   
+[ATLDuck 샘플](../../visual-cpp-samples.md)<br/>
+[CAtlModuleT 클래스](../../atl/reference/catlmodulet-class.md)<br/>
+[CAtlDllModuleT 클래스](../../atl/reference/catldllmodulet-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

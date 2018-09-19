@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b8b481c917292c672711c308ac39c052ed4ea1d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: baab04880c19cac1e0c291f2b4d8a274dea1c21b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752123"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044940"
 ---
 # <a name="win32threadtraits-class"></a>Win32ThreadTraits 클래스
 
@@ -80,22 +80,22 @@ static HANDLE CreateThread(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpsa*  
+*lpsa*<br/>
 새 스레드의 보안 특성입니다.
 
-*dwStackSize*  
+*dwStackSize*<br/>
 새 스레드의 스택 크기입니다.
 
-*pfnThreadProc*  
+*pfnThreadProc*<br/>
 새 스레드의 스레드 프로시저입니다.
 
-*pvParam*  
+*pvParam*<br/>
 스레드 프로시저에 전달할 매개 변수입니다.
 
-*dwCreationFlags*  
+*dwCreationFlags*<br/>
 만들기 (0 또는 CREATE_SUSPENDED) 플래그를 지정 합니다.
 
-*pdwThreadId*  
+*pdwThreadId*<br/>
 [out] 성공 하면 새로 만든 스레드의 스레드 ID를 수신 하는 DWORD 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값

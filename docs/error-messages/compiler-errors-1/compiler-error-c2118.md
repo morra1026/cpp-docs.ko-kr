@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c27b4b253e2696b88763c2a9f99c0476f9c46dd5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 91e79e396f707dc1462b17d9dd470527f199ad10
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165245"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081639"
 ---
 # <a name="compiler-error-c2118"></a>컴파일러 오류 C2118
-음수 아래 첨자  
-  
- 배열 크기를 정의 값이 최대 배열 크기 보다 큰 또는 0 보다 작습니다.  
-  
- 다음 샘플에서는 C2118 오류가 생성 됩니다.  
-  
-```  
-// C2118.cpp  
-int main() {  
-   int array1[-1];   // C2118  
-   int array2[3];   // OK  
-}  
+
+첨자가 음수.
+
+배열 크기를 정의 하는 값이 최대 배열 크기 보다 크거나 0 보다 작은 경우
+
+다음 샘플에서는 C2118 오류가 생성 됩니다.
+
+```
+// C2118.cpp
+int main() {
+   int array1[-1];   // C2118
+   int array2[3];   // OK
+}
 ```

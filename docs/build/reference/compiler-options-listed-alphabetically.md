@@ -13,12 +13,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 985232af68daebe924cd51300974d614bf6d6756
-ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
+ms.openlocfilehash: f99df40d5718a450019fb7cd26aa0c00a59c0a48
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42572121"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701860"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>컴파일러 옵션 사전순 목록
 
@@ -173,4 +173,7 @@ ms.locfileid: "42572121"
 |[/ZW](zw-windows-runtime-compilation.md)|Windows 런타임에서 실행 하는 출력 파일을 생성 합니다.|
 
 ## <a name="see-also"></a>참고 항목
- [C/c + + 빌드 참조](c-cpp-building-reference.md) [컴파일러 옵션](compiler-options.md) [컴파일러 옵션 설정](setting-compiler-options.md)
+
+[C/C++ 빌드 참조](c-cpp-building-reference.md)<br/>
+[컴파일러 옵션](compiler-options.md)<br/>
+[컴파일러 옵션 설정](setting-compiler-options.md)

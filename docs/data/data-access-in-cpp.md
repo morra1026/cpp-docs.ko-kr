@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: bb74d27af485f765e1330bc83ab196e1d9ba6b5c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c8e2fc86d15472bd4ab63e472df99bb69393b386
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33090664"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060306"
 ---
 # <a name="data-access-in-visual-c"></a>Visual C++의 데이터 액세스
 
@@ -33,27 +33,39 @@ SQL과 NoSQL의 거의 모든 데이터베이스 제품에서는 네이티브 C+
 Microsoft는 2011년부터 온-프레미스와 클라우드 모두에서 Microsoft SQL Server 데이터베이스에 연결하는 네이티브 응용 프로그램에 대한 표준으로 ODBC를 제공해 왔습니다. 자세한 내용은 [데이터 액세스 프로그래밍\(MFC-ATL\)](data-access-programming-mfc-atl.md)을 참조하세요. C++/CLI 라이브러리는 네이티브 ODBC 드라이버 또는 ADO.NET을 사용할 수 있습니다. 자세한 내용은 [ADO.NET을 사용하여 데이터 액세스(C++/CLI)](/dotnet/data-access-using-adonet-cpp-cli.md) 및 [Visual Studio에서 데이터 액세스](https://docs.microsoft.com/visualstudio/data-tools/accessing-data-in-visual-studio)를 참조하세요.
 
 ## <a name="in-this-section"></a>섹션 내용
-[데이터 액세스 프로그래밍 (MFC/ATL)](data-access-programming-mfc-atl.md) 하는 방법을 설명 레거시 데이터 액세스 여기서는 기본 방법은 클래스 라이브러리 ATL (액티브 템플릿) 또는 Microsoft Foundation 클래스 (MFC) 라이브러리와 같은 클래스 라이브러리 중 하나를 사용 하는, Visual c + + 프로그래밍 데이터베이스 Api 작업을 간소화합니다.
 
-[데이터베이스 연결 (ODBC)를 열고](odbc/open-database-connectivity-odbc.md) Microsoft Foundation 클래스 (MFC) 라이브러리와 연결 ODBC (Open Database) 프로그래밍에 대 한 클래스를 제공 합니다.
+[데이터 액세스 프로그래밍 (MFC/ATL)](data-access-programming-mfc-atl.md)<br/>
+Visual C++를 사용하는 레거시 데이터 액세스 프로그래밍에 대해 설명합니다. 이 프로그램에서는 기본적으로 ATL(액티브 템플릿 클래스 라이브러리) 또는 MFC(Microsoft Foundation Class) 라이브러리와 같은 클래스 라이브러리 중 하나를 사용하므로 데이터베이스 API를 간편하게 사용할 수 있습니다.
 
-[OLE DB 프로그래밍](oledb/ole-db-programming.md) 연결 된 서버에 대해 프로그래밍 하는 경우에 특히 일부 시나리오에서 여전히 필요한 대부분의 레거시 인터페이스입니다.
+[ODBC(Open Database Connectivity)](odbc/open-database-connectivity-odbc.md)<br/>
+MFC(Microsoft Foundation Classes) 라이브러리는 ODBC(Open Database Connectivity)를 사용하여 프로그래밍하는 데 필요한 클래스를 제공합니다.
+
+[OLE DB 프로그래밍](oledb/ole-db-programming.md)<br/>
+연결 된 서버에 대해 프로그래밍 하는 경우에 특히 일부 시나리오에서는 여전히 필요한 대부분의 레거시 인터페이스입니다.
 
 ## <a name="related-topics"></a>관련 항목
-[C 및 c + +를 사용 하 여 SQL 데이터베이스에 연결](/azure/sql-database/sql-database-develop-cplusplus-simple) C 또는 c + + 응용 프로그램에서 Azure SQL 데이터베이스에 연결 합니다.
 
-[C + + 용 Microsoft Azure 저장소 클라이언트 라이브러리](https://github.com/Azure/azure-storage-cpp)
-[Azure 저장소](/azure/storage/storage-introduction) 내구성, 가용성 및 확장성 요구를 충족 하기 위해 사용 하는 최신 응용 프로그램에 대 한 클라우드 저장소 솔루션은 해당 고객 합니다. C++용 Microsoft Azure Storage Client Library를 사용하여 C++에서 Azure Storage에 연결하세요.
+[C 및 c + +를 사용 하 여 SQL Database에 연결](/azure/sql-database/sql-database-develop-cplusplus-simple)<br/>
+C 또는 c + + 응용 프로그램에서 Azure SQL Database에 연결 합니다.
 
-[ODBC Driver 13.1 for SQL Server-Windows 출시](https://blogs.msdn.microsoft.com/sqlnativeclient/2016/08/01/announcing-the-odbc-driver-13-1-for-sql-server) C/c + + 기반 응용 프로그램에 대 한 최신 ODBC 드라이버는 Microsoft SQL Server 2016 Microsoft Azure SQL 데이터베이스에 강력한 데이터 액세스를 제공 합니다. 항상 암호화 기능을 포함 하 여에 대 한 지원, Azure Active Directory 및 AlwaysOn 가용성 그룹을 제공 합니다. MacOS 및 Linux에서도 사용할 수 있습니다.     
+[C + + 용 Microsoft Azure Storage 클라이언트 라이브러리](https://github.com/Azure/azure-storage-cpp)<br/>
+[Azure Storage](/azure/storage/storage-introduction)는 내구성, 가용성, 확장성을 활용하여 고객의 요구 사항을 충족하는 최신 응용 프로그램을 위한 클라우드 저장소 솔루션입니다. C++용 Microsoft Azure Storage Client Library를 사용하여 C++에서 Azure Storage에 연결하세요.
+
+[ODBC Driver 13.1 for SQL Server-Windows 출시](https://blogs.msdn.microsoft.com/sqlnativeclient/2016/08/01/announcing-the-odbc-driver-13-1-for-sql-server)<br/>
+최신 ODBC 드라이버는 Microsoft SQL Server 2016 C/C++용 Microsoft Azure SQL Database 기반 응용 프로그램에 대한 강력한 데이터 액세스를 제공합니다. 상시 암호화를 비롯 한 기능 지원, Azure Active Directory 및 AlwaysOn 가용성 그룹을 제공 합니다. MacOS 및 Linux에서도 사용할 수 있습니다.     
  
-[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client-programming) SQL Server Native Client는 독립 실행형 데이터 액세스 응용 프로그래밍 인터페이스 (API) OLE DB 및 ODBC를 지 원하는 SQL Server 2014를 통해 SQL Server 2005 모두에 사용 합니다. 새 응용 프로그램은 ODBC Driver 13.1 for SQL Server를 사용해야 합니다.
+[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client-programming)<br/>
+SQL Server Native Client는 OLE DB 및 ODBC 모두에 사용되는 독립 실행형 데이터 액세스 API(응용 프로그래밍 인터페이스)로, SQL Server 2005에서 SQL Server 2014까지 지원합니다. 새 응용 프로그램은 ODBC Driver 13.1 for SQL Server를 사용해야 합니다.
 
-[Microsoft Azure C 및 c + + 개발자 센터](https://azure.microsoft.com/develop/cpp/) Azure를 사용 하면 쉽게 유연성이 향상된, 확장성 및 안정성을 선호 하십니까 도구를 사용 하 여 c + + 응용 프로그램을 빌드할 수 있습니다.    
+[Microsoft Azure C 및 c + + 개발자 센터](https://azure.microsoft.com/develop/cpp/)<br/>
+향상된 유연성, 확장성 및 안정성을 제공하는 Azure에서는 원하는 도구를 사용하여 C++ 응용 프로그램을 쉽게 빌드할 수 있습니다.    
 
-[C + +에서 Blob 저장소를 사용 하는 방법](https://docs.microsoft.com/azure/storage/storage-c-plus-plus-how-to-use-blobs) Azure Blob 저장소는 클라우드에서 개체/blob으로 구조화 되지 않은 데이터를 저장 하는 서비스입니다. Blob Storage는 문서, 미디어 파일, 응용 프로그램 설치 관리자 등과 같은 모든 유형의 텍스트 또는 이진 데이터를 저장할 수 있습니다. Blob Storage를 개체 저장소라고도 합니다.
+[C + +에서 Blob Storage를 사용 하는 방법](https://docs.microsoft.com/azure/storage/storage-c-plus-plus-how-to-use-blobs)<br/>
+Azure Blob Storage는 클라우드에서 구조화되지 않은 데이터를 개체/Blob으로 저장하는 서비스입니다. Blob Storage는 문서, 미디어 파일, 응용 프로그램 설치 관리자 등과 같은 모든 유형의 텍스트 또는 이진 데이터를 저장할 수 있습니다. Blob Storage를 개체 저장소라고도 합니다.
 
-[ ODBC 프로그래머 참조](https://docs.microsoft.com/sql/odbc/reference/odbc-programmer-s-reference) The ODBC 인터페이스는 C 프로그래밍 언어에 사용 하도록 설계 되었습니다. ODBC 인터페이스는 SQL 문, ODBC 함수 호출 및 C 프로그래밍의 세 가지 영역에서 사용됩니다.
+[ ODBC 프로그래머 참조](https://docs.microsoft.com/sql/odbc/reference/odbc-programmer-s-reference)<br/>
+ODBC 인터페이스는 C 프로그래밍 언어와 함께 사용하도록 설계되었습니다. ODBC 인터페이스는 SQL 문, ODBC 함수 호출 및 C 프로그래밍의 세 가지 영역에서 사용됩니다.
 
 ## <a name="see-also"></a>참고 항목
+
 [Visual C++](../visual-cpp-in-visual-studio.md)

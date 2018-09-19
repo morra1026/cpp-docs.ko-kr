@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67123349dd782beb9b547d3497d6c71d4390e434
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a7548e2154144ca502ab581bf804018b80cc0d8d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33231376"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072669"
 ---
 # <a name="compiler-error-c2627"></a>컴파일러 오류 C2627
-'function': 멤버 함수를 익명 공용 구조체에 사용할 수 없습니다  
-  
- [익명 공용 구조체](../../cpp/unions.md#anonymous_unions) 멤버 함수를 사용할 수 없습니다.  
-  
- 다음 샘플에서는 C2627 오류가 생성 됩니다.  
-  
-```  
-// C2627.cpp  
-int main() {  
-   union { void f(){} };   // C2627  
-   union X { void f(){} };  
-}  
+
+'function': 멤버 함수를 익명 공용 구조체에 사용할 수 없습니다
+
+[익명 공용 구조체](../../cpp/unions.md#anonymous_unions) 멤버 함수를 사용할 수 없습니다.
+
+다음 샘플에서는 C2627 오류가 생성 됩니다.
+
+```
+// C2627.cpp
+int main() {
+   union { void f(){} };   // C2627
+   union X { void f(){} };
+}
 ```

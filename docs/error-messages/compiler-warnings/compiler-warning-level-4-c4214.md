@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0efe0666ded5428dcc40a1900f263cfc522a1502
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 879c959bfe851b56dbc60b4eeb714db8d7f9dfaf
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292924"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027429"
 ---
 # <a name="compiler-warning-level-4-c4214"></a>컴파일러 경고(수준 4) C4214
-비표준 확장이 사용 됨: 비트 필드 형식이 int  
-  
- 기본 Microsoft 확장 (/Ze) 비트 필드가 구조체 멤버는 모든 정수 형식의 수 있습니다.  
-  
-## <a name="example"></a>예제  
-  
-```  
-// C4214.c  
-// compile with: /W4  
-struct bitfields  
-{  
-   unsigned short j:4;  // C4214  
-};  
-  
-int main()  
-{  
-}  
-```  
-  
- 이러한 비트 필드는 ANSI 호환성 사용할 수 없습니다 ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
+
+비표준 확장이 사용 됨: 비트 필드 형식이 int
+
+기본 Microsoft 확장명 (/Ze)를 사용 하 여 모든 정수 형식의 비트 필드 구조체 멤버 수 있습니다.
+
+## <a name="example"></a>예제
+
+```
+// C4214.c
+// compile with: /W4
+struct bitfields
+{
+   unsigned short j:4;  // C4214
+};
+
+int main()
+{
+}
+```
+
+이러한 비트 필드를 ANSI 호환성 올바르지 않습니다 ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).

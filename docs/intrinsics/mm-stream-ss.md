@@ -17,18 +17,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5058ac6c415f155b6a7cab712002d4769983d1f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ef5910f47fdf9c058cfb4493c9df486749da18fc
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33339490"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714391"
 ---
 # <a name="mmstreamss"></a>_mm_stream_ss  
   
 **Microsoft 전용**  
   
- 캐시 오염 하지 않고 메모리 위치에 32 비트 데이터를 씁니다.  
+ 캐시를 오염 시 키 지 않고 메모리 위치에 32 비트 데이터를 씁니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,11 +41,11 @@ void _mm_stream_ss(
   
 #### <a name="parameters"></a>매개 변수  
   
- [out] `Dest`  
- 원본 데이터를 쓰는 위치에 대 한 포인터입니다.  
+*대상*<br/>
+[out] 원본 데이터가 기록 되는 위치에 대 한 포인터입니다.  
   
- [in] `Source`  
- 포함 하는 128 비트 수는 `float` 32 비트 아래쪽에 쓸 값입니다.  
+*Source*<br/>
+[in] 포함 하는 128 비트 숫자를 `float` 32 비트 아래쪽에 쓸 값...  
   
 ## <a name="return-value"></a>반환 값  
   
@@ -57,13 +57,13 @@ void _mm_stream_ss(
 |---------------|------------------|  
 |`_mm_stream_ss`|SSE4a|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
   
-이 내장 함수 생성의 `movntss` 명령입니다. 이 명령에 대 한 하드웨어 지원을 확인 하려면 호출는 `__cpuid` 포함 된 내장 함수 `InfoType=0x80000001` 의 6 비트를 확인 하 고 `CPUInfo[2] (ECX)`합니다. 이 비트는 그렇지 않은 경우 명령에 지원 되는 경우 1과 0입니다.  
+이 내장 함수 생성을 `movntss` 명령입니다. 확인 하려면이 명령에 대 한 하드웨어 지원을 호출 합니다 `__cpuid` 포함 된 내장 함수 `InfoType=0x80000001` 의 6 비트를 확인 하 고 `CPUInfo[2] (ECX)`입니다. 이 비트는 그렇지 않은 경우 명령에 지원 되는 경우 1과 0입니다.  
   
-사용 하는 코드를 실행 하는 경우는 `_mm_stream_ss` 지원 하지 않는 하드웨어에 내장 된 `movntss` 명령 결과 예측할 수 없습니다.  
+사용 하는 코드를 실행 하는 경우는 `_mm_stream_ss` 하드웨어를 지원 하지 않는 내장 함수는 `movntss` 명령 결과 예측할 수 없습니다.  
   
 ## <a name="example"></a>예제  
   
@@ -99,7 +99,7 @@ f[2] = -3, f[3] = 3
   
 **Microsoft 전용 종료**  
 
-고급 마이크로 장치, inc 2007 저작권 All rights reserved. 고급 마이크로 장치, Inc. 로부터 사용 권한을 승인 하에 복제  
+고급 마이크로 장치, inc 저작권 2007 All rights reserved. 고급 마이크로 장치, Inc. 사용 권한을 사용 하 여 재현  
   
 ## <a name="see-also"></a>참고 항목  
  [_mm_stream_sd](../intrinsics/mm-stream-sd.md)   

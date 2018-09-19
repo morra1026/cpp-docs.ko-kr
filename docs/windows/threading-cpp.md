@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 19f49951cad65d3dbf15c406af9ac78a28408d4b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 899c41a65a651f7464b11639d2106b3eaa51e21b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221816"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45708658"
 ---
 # <a name="threading-c"></a>threading(C++)
 
@@ -38,8 +38,8 @@ COM 개체에 대 한 스레딩 모델을 지정합니다.
 
 ### <a name="parameters"></a>매개 변수
 
-*모델* (선택 사항)  
-다음과 같은 스레딩 모델 중 하나입니다.
+*model*<br/>
+(선택 사항) 다음과 같은 스레딩 모델 중 하나입니다.
 
 - `apartment` (아파트 스레딩)
 

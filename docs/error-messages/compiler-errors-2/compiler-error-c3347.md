@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 961ddc31fbd4b2ac5cac283c949ebb443f0ca855
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 824d2e787ae613636c20c0cc79ae3167431a8fe7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33253110"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46015730"
 ---
 # <a name="compiler-error-c3347"></a>컴파일러 오류 C3347
-'arg': idl_module 특성에 필수 인수를 지정하지 않았습니다.  
-  
- 필수 인수가 [idl_module](../../windows/idl-module.md) 특성에 전달되지 않았습니다.  
-  
- 다음 샘플에서는 C3347을 생성합니다.  
-  
-```  
-// C3347.cpp  
-// compile with: /c  
-[module(name="xx")];  
-  
-[idl_module(dllname="x")];    // C3347  
-// try the following line instead  
-// [idl_module(name="test", dllname="x")];  
+
+'arg': idl_module 특성에 필수 인수를 지정하지 않았습니다.
+
+필수 인수가 [idl_module](../../windows/idl-module.md) 특성에 전달되지 않았습니다.
+
+다음 샘플에서는 C3347을 생성합니다.
+
+```
+// C3347.cpp
+// compile with: /c
+[module(name="xx")];
+
+[idl_module(dllname="x")];    // C3347
+// try the following line instead
+// [idl_module(name="test", dllname="x")];
 ```

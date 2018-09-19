@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b6eb9ea25428138297cf85fe71e9c84b2364199
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 303a0aacbcde0fcf495469ed9cb9310ddb7710e5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225478"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115166"
 ---
 # <a name="compiler-error-c2400"></a>컴파일러 오류 C2400
-인라인 어셈블러 구문 오류가 '컨텍스트의'; 'token'를 찾을 수합니다  
-  
- 지정된 된 컨텍스트에 구문 오류가 발생 하는 토큰입니다.  
-  
- 다음 샘플에서는 C2400 오류가 생성 됩니다.  
-  
-```  
-// C2400.cpp  
-// processor: x86  
-int main() {  
-   __asm {  
-      heh ax,bx;   // C2400, heh is not a valid x86 instruction  
-      mov ax,bx;   // OK  
-   }  
-}  
+
+인라인 어셈블러 구문 오류가 '컨텍스트'; 'token'을 찾을 수합니다
+
+토큰이 지정 된 컨텍스트에서 구문 오류가 발생 했습니다.
+
+다음 샘플에서는 C2400를 생성합니다.
+
+```
+// C2400.cpp
+// processor: x86
+int main() {
+   __asm {
+      heh ax,bx;   // C2400, heh is not a valid x86 instruction
+      mov ax,bx;   // OK
+   }
+}
 ```

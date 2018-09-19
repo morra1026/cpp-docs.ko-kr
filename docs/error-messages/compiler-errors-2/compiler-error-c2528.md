@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 347330600e9b912d50522532f0c64e789e385520
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3c588457743c601e31c24fd0a53de652477fbf05
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229476"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072604"
 ---
 # <a name="compiler-error-c2528"></a>컴파일러 오류 C2528
-'name': 참조에 대 한 포인터 올바르지 않습니다.  
-  
- 참조에 대 한 포인터를 선언할 수 없습니다. 에 대 한 포인터를 선언 하기 전에 변수를 역참조 합니다.  
-  
- 다음 샘플에서는 C2528 오류가 생성 됩니다.  
-  
-```  
-// C2528.cpp  
-int i;  
-int &ir = i;  
-int & (*irptr) = ir;    // C2528  
+
+'name': 참조 한 포인터가 잘못 되었습니다
+
+참조에 대 한 포인터를 선언할 수 없습니다. 에 대 한 포인터를 선언 하기 전에 변수를 역참조 합니다.
+
+다음 샘플에서는 C2528 오류가 생성 됩니다.
+
+```
+// C2528.cpp
+int i;
+int &ir = i;
+int & (*irptr) = ir;    // C2528
 ```

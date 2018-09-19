@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc1bc552de1ee781e4d1e87f4b1d0d49f080fdfa
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 4fdc3f89f4f12873a10a1d66349c6ac9efd56f71
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691796"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017050"
 ---
 # <a name="omptestnestlock"></a>omp_test_nest_lock
-중첩 잠금을 설정 하려고 시도 하지만 스레드 실행을 차단 하지 않습니다.  
+중첩 가능 잠금을 설정 하려고 시도 하지만 스레드 실행을 차단 하지 않습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,14 +34,13 @@ int omp_test_nest_lock(
 );  
 ```  
   
-## <a name="remarks"></a>설명  
- 다음은 각 문자에 대한 설명입니다.  
+### <a name="parameters"></a>매개 변수
   
- `lock`  
- 형식의 변수 [omp_nest_lock_t](../../../parallel/openmp/reference/omp-nest-lock-t.md) 를 사용 하 여 초기화 된 [omp_init_nest_lock](../../../parallel/openmp/reference/omp-init-nest-lock.md)합니다.  
+*lock*<br/>
+형식 변수의 [omp_nest_lock_t](../../../parallel/openmp/reference/omp-nest-lock-t.md) 사용 하 여 초기화 된 [omp_init_nest_lock](../../../parallel/openmp/reference/omp-init-nest-lock.md)합니다.  
   
 ## <a name="remarks"></a>설명  
- 자세한 내용은 참조 [3.2.5 omp_test_lock and omp_test_nest_lock 함수](../../../parallel/openmp/3-2-5-omp-test-lock-and-omp-test-nest-lock-functions.md)합니다.  
+ 자세한 내용은 [3.2.5 omp_test_lock and omp_test_nest_lock 함수](../../../parallel/openmp/3-2-5-omp-test-lock-and-omp-test-nest-lock-functions.md)합니다.  
   
 ## <a name="example"></a>예제  
   

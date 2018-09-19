@@ -17,31 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 310f0c6d3b36f63d4ba9d1f165c808b6d417c321
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 10c5a4fd9b7f15e5f6532bbaf6b5d8af4d3c86ba
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33087795"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068003"
 ---
 # <a name="odbc-driver-list"></a>ODBC 드라이버 목록
-Visual c + +에서는 다음 데이터베이스에 대 한 ODBC 드라이버를 제공합니다.  
+
+Visual c + +는 다음 데이터베이스에 대 한 ODBC 드라이버를 제공합니다.  
   
--   SQL Server  
+- SQL Server  
   
--   Microsoft Access  
+- Microsoft Access  
   
--   Microsoft Excel  
+- Microsoft Excel  
   
--   dBASE  
+- dBASE  
   
--   Paradox  
+- Paradox  
   
--   Microsoft Oracle ODBC  
+- Microsoft Oracle ODBC  
   
--   텍스트 파일  
+- 텍스트 파일  
   
- Microsoft 및 ODBC 드라이버 팩 비롯 하 여 다른 회사에서 사용할 수 있는 ODBC 드라이버에 대 한 내용은 Microsoft 기술 지원 서비스에 문의 합니다.  
+Microsoft ODBC Driver 팩을 비롯 한 다른 회사에서 사용할 수 있는 ODBC 드라이버에 대 한 내용은 Microsoft 기술 지원 서비스에 문의 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)
+
+[ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)

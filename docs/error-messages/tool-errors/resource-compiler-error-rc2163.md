@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e2cd0e4f2e800d9922a6e1820d6e4141cefc7a0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6230cd50c621a37f0c2dd8f9e56bda8b0a20eb68
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317335"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46098866"
 ---
 # <a name="resource-compiler-error-rc2163"></a>리소스 컴파일러 오류 RC2163
-엑셀 러 레이 터 필요한 형식 [ASCII 또는 VIRTKEY]  
-  
- `type` ACCELERATORS **문의** 필드는 ASCII 또는 VIRTKEY 값을 포함해야 합니다.
+
+accelerator 필요한 형식 [ASCII 또는 VIRTKEY]
+
+`type` ACCELERATORS **문의** 필드는 ASCII 또는 VIRTKEY 값을 포함해야 합니다.

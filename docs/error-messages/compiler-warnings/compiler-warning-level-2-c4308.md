@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3daff15f8e6eee179f04fd466f3595af1154e035
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ddb57d4d603be3182be8a77dc020ce0e0a673115
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290012"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039636"
 ---
 # <a name="compiler-warning-level-2-c4308"></a>컴파일러 경고(수준 2) C4308
-음의 정수 상수가 부호 없는 형식으로 변환  
-  
- 식 부호 없는 형식에는 음의 정수 상수를 변환합니다. 식의 결과 의미가입니다.  
-  
-## <a name="example"></a>예제  
-  
-```  
-// C4308.cpp  
-// compile with: /W2  
-unsigned int u = (-5 + 3U);   // C4308  
-  
-int main()  
-{  
-}  
+
+음의 정수 상수가 부호 없는 형식으로 변환
+
+음의 정수 상수는 부호 없는 형식으로 변환 하는 식. 식의 결과 아마도 의미가 없습니다.
+
+## <a name="example"></a>예제
+
+```
+// C4308.cpp
+// compile with: /W2
+unsigned int u = (-5 + 3U);   // C4308
+
+int main()
+{
+}
 ```

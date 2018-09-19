@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9dc88b6b4488115390f4e6be57fbba2caadcc01
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 02806f26f623b2f4ad7f19cd67216018da984e42
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853636"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713702"
 ---
 # <a name="cmfcpopupmenubar-class"></a>CMFCPopupMenuBar 클래스
 팝업 메뉴에 포함된 메뉴 모음입니다.  
@@ -100,14 +100,14 @@ class CMFCPopupMenuBar : public CMFCToolBar
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CMFCPopupMenuBar::m_bDisableSideBarInXPMode](#m_bdisablesidebarinxpmode)|응용 프로그램에 Windows XP 모양을 회색 세로 막대를 표시할지 여부를 지정 합니다.|  
   
 ## <a name="remarks"></a>설명  
  합니다 `CMFCPopupMenuBar` 와 동시에 만들어집니다를 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md) 및 그 안에 포함 된 합니다. `CMFCPopupMenuBar` 의 전체 클라이언트 영역을 `CMFCPopupMenu` 개체입니다. 키보드 및 마우스 입력을 지원 합니다. 도를 입력 하는 통신을 `CMFCPopupMenu` 및 최상위 프레임 창에 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 초기화 하는 방법에 설명 된 `CMFCPopupMenuBar` 에서 개체를 `CMFCPopupMenu` 개체. 이 코드 조각은 [클라이언트 그리기 샘플](../../visual-cpp-samples.md)의 일부입니다.  
   
  [!code-cpp[NVC_MFC_DrawClient#7](../../mfc/reference/codesnippet/cpp/cmfcpopupmenubar-class_1.cpp)]  
@@ -140,8 +140,8 @@ virtual void AdjustSizeImmediate(BOOL bRecalcLayout);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bRecalcLayout*  
- 팝업 메뉴 표시줄 창;의 레이아웃을 자동으로 다시 계산. 그렇지 않으면 FALSE입니다.  
+*bRecalcLayout*<br/>
+[in] 팝업 메뉴 표시줄 창;의 레이아웃을 자동으로 다시 계산. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -153,8 +153,8 @@ BOOL BuildOrigItems(UINT uiMenuResID);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiMenuResID*  
- 로드할 메뉴 리소스의 메뉴 ID를 지정 합니다.  
+*uiMenuResID*<br/>
+[in] 로드할 메뉴 리소스의 메뉴 ID를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 TRUE 또는 그렇지 않은 경우 FALSE를 반환 합니다.  
@@ -190,8 +190,8 @@ CMFCToolBar* FindDestintationToolBar(CPoint point);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 화면에 있는 지점입니다.  
+*지점*<br/>
+[in] 화면에 있는 지점입니다.  
   
 ### <a name="return-value"></a>반환 값  
  핸들을 반환 도구 모음에는 점이, 있는 경우 또는 그렇지 않은 경우 NULL입니다.  
@@ -257,11 +257,11 @@ virtual BOOL ImportFromMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hMenu*  
- 가져올 팝업 메뉴 단추 메뉴입니다.  
+*hMenu*<br/>
+[in] 가져올 팝업 메뉴 단추 메뉴입니다.  
   
- [in] *bShowAllCommands*  
- 메뉴의 TRUE 이면 모든 명령을 가져오거나 드물게 사용 되는 것에 숨겨질 수 있습니다 하는 경우에 FALSE를 수 있습니다.  
+*bShowAllCommands*<br/>
+[in] 메뉴의 TRUE 이면 모든 명령을 가져오거나 드물게 사용 되는 것에 숨겨질 수 있습니다 하는 경우에 FALSE를 수 있습니다.  
   
 ### <a name="return-value"></a>반환 값  
  메뉴 단추를 성공적으로 가져온 경우에는 FALSE 또는 메뉴 되지 경우 TRUE를 반환 합니다.  
@@ -325,8 +325,8 @@ BOOL LoadFromHash(HMENU hMenu);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hMenu*  
- 보관 된 메뉴를 로드에 대 한 핸들입니다.  
+*hMenu*<br/>
+[in] 보관 된 메뉴를 로드에 대 한 핸들입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메뉴 성공적으로 로드 되거나 그렇지 않은 경우 FALSE 이면 TRUE를 반환 합니다.  
@@ -364,11 +364,11 @@ virtual void SetButtonStyle(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nIndex*  
- 도구 모음 단추 스타일 설정 하는 것의 0부터 시작 하는 인덱스입니다.  
+*nIndex*<br/>
+[in] 도구 모음 단추 스타일 설정 하는 것의 0부터 시작 하는 인덱스입니다.  
   
- [in] *nStyle*  
- 단추 스타일입니다. 참조 [ToolBar 컨트롤 스타일](../../mfc/reference/toolbar-control-styles.md) 사용 가능한 도구 모음 단추 스타일의 목록은 합니다.  
+*nStyle*<br/>
+[in] 단추 스타일입니다. 참조 [ToolBar 컨트롤 스타일](../../mfc/reference/toolbar-control-styles.md) 사용 가능한 도구 모음 단추 스타일의 목록은 합니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -380,8 +380,8 @@ void SetOffset(int iOffset);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iOffset*  
- 팝업 메뉴 모음 오프셋 되는 행의 수입니다.  
+*iOffset*<br/>
+[in] 팝업 메뉴 모음 오프셋 되는 행의 수입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -395,11 +395,11 @@ void StartPopupMenuTimer(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMenuButton*  
- 지연 타이머를 설정할 수 있는 메뉴 단추에 대 한 포인터입니다.  
+*pMenuButton*<br/>
+[in] 지연 타이머를 설정할 수 있는 메뉴 단추에 대 한 포인터입니다.  
   
- [in] *nDelayFactor*  
- 지연 인수를 하나 이상에 표준 메뉴 지연 시간 (일반적으로 0.5 초 사이의 5 초)을 기준으로 곱할 같음.  
+*nDelayFactor*<br/>
+[in] 지연 인수를 하나 이상에 표준 메뉴 지연 시간 (일반적으로 0.5 초 사이의 5 초)을 기준으로 곱할 같음.  
   
 ### <a name="remarks"></a>설명  
   

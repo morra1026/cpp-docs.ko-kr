@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61050f8fc1924f6d2a143893af5bd1918df94394
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: d6a685633b6e23a21d46ad3256188fea3ee16ccc
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895190"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700781"
 ---
 # <a name="stosb"></a>__stosb
 
@@ -43,14 +43,14 @@ void __stosb(
 
 #### <a name="parameters"></a>매개 변수
 
-[out] `Dest`  
-작업의 대상입니다.
+*대상*<br/>
+[out] 작업의 대상입니다.
 
-[in] `Data`  
-데이터 저장소입니다.
+*Data*<br/>
+[in] 데이터 저장소입니다.
 
-[in] `Count`  
-쓸 바이트 블록의 길이입니다.
+*개수*<br/>
+[in] 쓸 바이트 블록의 길이입니다.
 
 ## <a name="requirements"></a>요구 사항
 

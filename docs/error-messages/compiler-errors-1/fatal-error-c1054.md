@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9daac4944c57dbf08fe0ebcbc95993a97838585
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 439019b1f510127ae54e77d445d59e86be09a49b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198900"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101971"
 ---
 # <a name="fatal-error-c1054"></a>심각한 오류 C1054
-컴파일러 한계: 이니셜라이저가 너무 많이 중첩  
-  
- 코드는 중첩 제한에서 이니셜라이저의 (초기화 되는 형식의 조합에 따라 10-15 수준)를 초과 합니다.  
-  
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>아래의 해결 방법 따라 수정합니다.  
-  
-1.  중첩을 줄이기 위해 초기화 중인 데이터 형식을 단순화 합니다.  
-  
-2.  선언 후 별도 문에 변수를 초기화 합니다.
+
+컴파일러 한계: 이니셜라이저가 너무 많이 중첩
+
+이니셜라이저 (초기화 되는 형식의 조합에 따라 10 ~ 15 개 수준)에 중첩 한계를 초과 하는 코드입니다.
+
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>아래의 해결 방법 따라 수정합니다.
+
+1. 중첩을 줄이기 위해 초기화 되는 데이터 형식을 간소화 합니다.
+
+1. 선언 후 별도 문에서 변수를 초기화 합니다.

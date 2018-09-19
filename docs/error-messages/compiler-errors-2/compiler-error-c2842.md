@@ -16,28 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe0a95edfa484eb8606b914424e52483c4c1c52d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 20967ab4cd047f62a5cf692c91fec90148b4f470
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245298"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118819"
 ---
 # <a name="compiler-error-c2842"></a>컴파일러 오류 C2842
-'class' : 관리되는 형식 또는 WinRT 형식은 고유한 'operator new' 또는 'operator delete'를 정의할 수 없습니다.  
-  
- 직접 정의할 수 있습니다 * * 연산자 new 또는 **delete 연산자** 네이티브 힙에 메모리 할당을 관리할 수 있습니다. 그러나 참조 클래스는 관리되는 힙에만 할당되기 때문에 이러한 연산자를 정의할 수 없습니다.  
 
-  
- 자세한 내용은 참조 [사용자 정의 연산자 (C + + /cli CLI)](../../dotnet/user-defined-operators-cpp-cli.md)합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C2842 오류가 발생하는 경우를 보여 줍니다.  
-  
-```  
-// C2842.cpp  
-// compile with: /clr /c  
-ref class G {  
-   void* operator new( size_t nSize );   // C2842  
-};  
-```  
+'class' : 관리되는 형식 또는 WinRT 형식은 고유한 'operator new' 또는 'operator delete'를 정의할 수 없습니다.
+
+직접 정의할 수 있습니다 * * 연산자 new 또는 **delete 연산자** 네이티브 힙의 메모리 할당을 관리할 수 있습니다. 그러나 참조 클래스는 관리되는 힙에만 할당되기 때문에 이러한 연산자를 정의할 수 없습니다.
+
+
+자세한 내용은 [사용자 정의 연산자 (C + + /cli CLI)](../../dotnet/user-defined-operators-cpp-cli.md)합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C2842 오류가 발생하는 경우를 보여 줍니다.
+
+```
+// C2842.cpp
+// compile with: /clr /c
+ref class G {
+   void* operator new( size_t nSize );   // C2842
+};
+```

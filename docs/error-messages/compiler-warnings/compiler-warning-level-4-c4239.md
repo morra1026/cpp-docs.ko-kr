@@ -16,47 +16,50 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d756bba65100d3e5c2987527d7a0dd4cc3fdc050
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 89a68de05ff999e72fc02a75d5958a7e2589f8ed
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296291"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032844"
 ---
 # <a name="compiler-warning-level-4-c4239"></a>컴파일러 경고(수준 4) C4239
-비표준 확장이 사용 됨: 'token': 'type'에서 'type'으로 변환  
-  
- 이러한 형식 변환은 c + + 표준에서 허용 되지 않지만 특성이 확장 합니다. 이 경고 뒤에 항상 하나 이상 줄 설명이 언어 규칙을 위반 합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 c 4239 합니다.  
-  
-```  
-// C4239.cpp  
-// compile with: /W4 /c  
-struct C {  
-   C() {}  
-};  
-  
-void func(void) {  
-   C & rC = C();   // C4239  
-   const C & rC2 = C();   // OK  
-   rC2;  
-}  
-```  
-  
-## <a name="example"></a>예제  
- 정수 계열 형식에서 열거형 형식 변환 엄격 하 게 허용 되지 않습니다.  
-  
- 다음 샘플에서는 c 4239 합니다.  
-  
-```  
-// C4239b.cpp  
-// compile with: /W4 /c  
-enum E { value };   
-struct S {   
-   E e : 2;   
-} s = { 5 };   // C4239   
-// try the following line instead  
-// } s = { (E)5 };  
+
+비표준 확장이 사용 됨: 'token': 'type'에서 'type'로 변환
+
+C + + 표준에서는이 형식으로 변환할 수 없습니다 있지만 허용 된 확장으로 여기 있습니다. 이 경고 뒤에 항상 하나 이상의 줄을 위반 하는 언어 규칙을 설명 하는 설명.
+
+## <a name="example"></a>예제
+
+다음 샘플 C4239를 생성합니다.
+
+```
+// C4239.cpp
+// compile with: /W4 /c
+struct C {
+   C() {}
+};
+
+void func(void) {
+   C & rC = C();   // C4239
+   const C & rC2 = C();   // OK
+   rC2;
+}
+```
+
+## <a name="example"></a>예제
+
+정수 계열 형식에서 열거형 형식 변환할 엄격 하 게 허용 되지 않습니다.
+
+다음 샘플 C4239를 생성합니다.
+
+```
+// C4239b.cpp
+// compile with: /W4 /c
+enum E { value };
+struct S {
+   E e : 2;
+} s = { 5 };   // C4239
+// try the following line instead
+// } s = { (E)5 };
 ```

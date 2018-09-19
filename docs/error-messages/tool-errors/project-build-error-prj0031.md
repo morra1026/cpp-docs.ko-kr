@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d5ebd25c239a05c4300b574ec0d47035904187d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ce97e8f540295f5a2968fce22312b8e0e34cfd2a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33318324"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076894"
 ---
 # <a name="project-build-error-prj0031"></a>프로젝트 빌드 오류 PRJ0031
-사용자 지정 빌드에 대 한 '출력' 속성이 한 단계씩 코드 실행 매크로 대 한 파일에 포함 된 ' file' ' '로 확인 됨 'macro_expansion'.  
-  
- 파일에 사용자 지정 빌드 단계에는 매크로 확인 문제 때문 출력이 잘못 되었습니다. 이 오류는 경로가 잘못 되었습니다, 문자 또는 파일 경로에서 허용 하지 않는 문자 조합을 포함 된 의미할 수도 있습니다.  
-  
- 이 오류를 해결 하려면 매크로 수정 하거나 경로 지정을 수정 합니다. 확인 된 경로 프로젝트 디렉터리에서 절대 경로입니다.
+
+사용자 지정 빌드에 대 한 '출력' 속성이 'macro_expansion' 매크로 대 한 파일에 포함 된 ' file' ' '로 확인 됨 단계입니다.
+
+파일에서 사용자 지정 빌드 단계 매크로 평가 문제 때문에 잘못 된 출력을 했습니다. 이 오류는 경로 잘못 구성 된 문자 또는 파일 경로에서 사용할 수 없는 문자 조합을 포함 하는 것을 의미할 수도 수 있습니다.
+
+이 오류를 해결 하려면 매크로 수정 하거나 경로 지정을 수정 합니다. 확인 된 경로가 프로젝트 디렉터리의 절대 경로 보여 줍니다.

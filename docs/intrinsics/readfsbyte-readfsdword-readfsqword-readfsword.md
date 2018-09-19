@@ -26,17 +26,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2dc016dbd2b17552d50dfdedd1208dcd3e6af22
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9a1a60bde6b522cbd42ac458e79e153450e09030
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33333198"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705697"
 ---
 # <a name="readfsbyte-readfsdword-readfsqword-readfsword"></a>__readfsbyte, __readfsdword, __readfsqword, __readfsword
 **Microsoft 전용**  
   
- FS 세그먼트의 시작 부분에 상대적인 오프셋으로 지정 된 위치에서 메모리를 읽습니다.  
+ FS 세그먼트의 시작을 기준으로 오프셋으로 지정 된 위치에서 메모리를 읽습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -56,11 +56,11 @@ unsigned __int64 __readfsqword(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `Offset`  
- 시작 부분에서 오프셋 `FS` 에서 읽을 수 있습니다.  
+*오프셋*<br/>
+[in] 시작 부분 으로부터의 오프셋 `FS` 에서 읽을 수 있습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 바이트, word, 더블, 워드 또는 쿼드 워드 (대로 호출 되는 함수 이름으로 표시 됨)의 메모리 내용이 위치의 `FS:[Offset]`합니다.  
+ 메모리 내용의 바이트, 단어, 워드, 또는 (호출 함수의 이름으로 표시) 하는 대로 쿼드 워드 위치의 `FS:[Offset]`합니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
@@ -71,7 +71,7 @@ unsigned __int64 __readfsqword(
 |`__readfsqword`|x86|  
 |`__readfsword`|x86|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
  이러한 루틴은 내장 함수로 사용할 수 있습니다.  

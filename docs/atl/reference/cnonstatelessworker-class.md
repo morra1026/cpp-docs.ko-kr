@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb3b6411e9ce34ba0196d25c8a63f3f066d78549
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a4aa07273e68f0320823d258f324bb8631aef77a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765124"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095601"
 ---
 # <a name="cnonstatelessworker-class"></a>CNonStatelessWorker 클래스
 
@@ -38,13 +38,13 @@ ms.locfileid: "43765124"
 ## <a name="syntax"></a>구문
 
 ```
-template <class Worker>  
+template <class Worker>
 class CNonStatelessWorker
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*작업자*  
+*작업자*<br/>
 준수 하는 작업자 스레드 클래스를 [worker 원형](../../atl/reference/worker-archetype.md) 큐에 대기 요청 처리에 대 한 적절 한 [CThreadPool](../../atl/reference/cthreadpool-class.md)합니다.
 
 ## <a name="members"></a>멤버
@@ -130,6 +130,6 @@ void Terminate(void* /* pvParam */) throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[CThreadPool 클래스](../../atl/reference/cthreadpool-class.md)   
-[Worker 원형](../../atl/reference/worker-archetype.md)   
+[CThreadPool 클래스](../../atl/reference/cthreadpool-class.md)<br/>
+[Worker 원형](../../atl/reference/worker-archetype.md)<br/>
 [클래스](../../atl/reference/atl-classes.md)

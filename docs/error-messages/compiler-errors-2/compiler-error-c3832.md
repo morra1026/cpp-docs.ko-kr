@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bc751880826731c3943028a935e26936b73240f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1c443242779fd355ed4f945bc33880ff8b96c566
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33266557"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115218"
 ---
 # <a name="compiler-error-c3832"></a>컴파일러 오류 C3832
-'type library': 형식 라이브러리 처럼 보입니다. 32 비트 포인터 용으로 작성 된 'ptrsize' 한정자를 변경 하십시오.  
-  
- 와 함께 제공 되는 명시적인 정보는 `ptrsize` 특성에는 [#import](../../preprocessor/hash-import-directive-cpp.md) 지시문은 형식 라이브러리에 컴파일러 발견과 일치 하지 않습니다.
+
+'type library': 형식 라이브러리는 32 비트 포인터 용으로 빌드된 것 처럼 보입니다 'ptrsize' 한정자를 변경 하세요.
+
+명시적인 정보가 제공 합니다 `ptrsize` 특성을 [#import](../../preprocessor/hash-import-directive-cpp.md) 지시문 형식 라이브러리에 있는 컴파일러와 일치 하지 않습니다.

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac5abdfde314220e8478a524d5b0b2e9ea15dcf4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8aa622d1864a9f302c51fe90bd77f58c2829859b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33327095"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084239"
 ---
 # <a name="resource-compiler-error-rc2175"></a>리소스 컴파일러 오류 RC2175
-리소스 파일의 파일 이름이 3.00 형식이 아닙니다.  
-  
- 이전 버전 3.00 보다 지정된 된 리소스의 형식을 사용 합니다. 리소스 파일 변환 해야 하거나 버전 3.00 이상의 형식을 사용 하는 다시 생성 합니다.
+
+리소스 파일의 파일 이름이 3.00 형식이 아닙니다.
+
+이전 버전 3.00 보다 지정된 된 리소스의 형식을 사용 합니다. 리소스 파일을 변환 해야 합니다 또는 버전 3.00 이상의 형식을 사용 하 여 다시 생성 합니다.

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a452d563646ac869bc1a3bc832a72a9bd11b694
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: bb65ff85346412587fab96934ca5438bb6a4dfe5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894811"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031381"
 ---
 # <a name="stdcall"></a>__stdcall
 
@@ -54,7 +54,7 @@ ARM 및 x64 프로세서 **__stdcall** 수락 되 고 컴파일러에서; ARM �
 비정적 클래스 함수의 경우 함수가 아웃오브 라인으로 정의되면 호출 규칙 한정자를 아웃오브 라인 정의에서 지정하지 않아도 됩니다. 즉, 클래스 비정적 멤버 메서드의 경우 선언하는 동안 지정된 호출 규칙이 정의 시 가정됩니다. 다음과 같은 클래스 정의가 주어진 경우
 
 ```cpp
-struct CMyClass {  
+struct CMyClass {
    void __stdcall mymethod();
 };
 ```
@@ -62,13 +62,13 @@ struct CMyClass {
 this
 
 ```cpp
-void CMyClass::mymethod() { return; }  
+void CMyClass::mymethod() { return; }
 ```
 
 다음 코드와 동일합니다.
 
 ```cpp
-void __stdcall CMyClass::mymethod() { return; }  
+void __stdcall CMyClass::mymethod() { return; }
 ```
 
 ## <a name="example"></a>예제
@@ -84,5 +84,5 @@ typedef BOOL (__stdcall *funcname_ptr)(void * arg1, const char * arg2, DWORD fla
 
 ## <a name="see-also"></a>참고자료
 
-[인수 전달 및 명명 규칙](../cpp/argument-passing-and-naming-conventions.md)   
+[인수 전달 및 명명 규칙](../cpp/argument-passing-and-naming-conventions.md)<br/>
 [키워드](../cpp/keywords-cpp.md)

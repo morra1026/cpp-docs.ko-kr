@@ -17,21 +17,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0ba2e8452defef14816993a2c1851de58bf624f
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: a22b97e730a40e8ebe71ea766919f946ac4dcb84
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39407285"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064365"
 ---
 # <a name="program-termination"></a>프로그램 종료
-C++에서는 프로그램을 종료하는 몇 가지 방법이 있습니다.  
-  
--   호출 된 [종료](../cpp/exit-function.md) 함수입니다.  
-  
--   호출 된 [중단](../cpp/abort-function.md) 함수입니다.  
-  
--   실행 된 [반환](../cpp/return-statement-in-program-termination-cpp.md) 문이 `main`합니다.  
-  
-## <a name="see-also"></a>참고자료  
- [main: 프로그램 시작](../cpp/main-program-startup.md)
+
+C++에서는 프로그램을 종료하는 몇 가지 방법이 있습니다.
+
+- 호출 된 [종료](../cpp/exit-function.md) 함수입니다.
+
+- 호출 된 [중단](../cpp/abort-function.md) 함수입니다.
+
+- 실행 된 [반환](../cpp/return-statement-in-program-termination-cpp.md) 문이 `main`합니다.
+
+## <a name="see-also"></a>참고자료
+
+[main: 프로그램 시작](../cpp/main-program-startup.md)

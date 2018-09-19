@@ -17,15 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: a8689254120416e5b2bf5de617fc3f3ef466abb1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 707ee9476ce26de9325337f6f2130e41d19faa3a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33111288"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105247"
 ---
 # <a name="callinappdomain-function"></a>call_in_appdomain 함수
-지정 된 응용 프로그램 도메인에서 함수를 실행 합니다.  
+지정 된 응용 프로그램 도메인에서 함수를 실행합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -49,23 +49,23 @@ RetType call_in_appdomain(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `appdomainId`  
- 함수를 호출 하는 appdomain 합니다.  
+*appdomainId*<br/>
+함수를 호출 하는 appdomain 합니다.  
   
- `voidFunc`  
- 에 대 한 포인터는 `void` N 매개 변수를 사용 하는 함수 (0 < = N < = 15).  
+*voidFunc*<br/>
+에 대 한 포인터를 `void` N 매개 변수를 사용 하는 함수 (0 < = N < = 15).  
   
- `nonvoidFunc`  
- 이외에 대 한 포인터`void` N 매개 변수를 사용 하는 함수 (0 < = N < = 15).  
+*nonvoidFunc*<br/>
+이외에 대 한 포인터`void` N 매개 변수를 사용 하는 함수 (0 < = N < = 15).  
   
- `arg1...argN`  
- 0 ~ 15 매개 변수를 전달 하도록 `voidFunc` 또는 `nonvoidFunc` 다른 appdomain에서 합니다.  
+*... arg1 argN*<br/>
+0에 전달할 매개 변수가 15 ~ `voidFunc` 또는 `nonvoidFunc` 다른 appdomain에서.  
   
 ## <a name="return-value"></a>반환 값  
- 실행 결과 `voidFunc` 또는 `nonvoidFunc` 지정 된 응용 프로그램 도메인에 있습니다.  
+ 실행 결과 `voidFunc` 또는 `nonvoidFunc` 지정 된 응용 프로그램 도메인입니다.  
   
 ## <a name="remarks"></a>설명  
- 함수의 인수에 전달 된 `call_in_appdomain` CLR 형식 되지 않아야 합니다.  
+ 함수의 인수를 전달할 `call_in_appdomain` CLR 형식이 아니어야 합니다.  
   
 ## <a name="example"></a>예제  
   

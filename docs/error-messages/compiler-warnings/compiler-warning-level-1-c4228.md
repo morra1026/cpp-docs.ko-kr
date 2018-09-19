@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 023bf60930a53b6bd881680caebb78c151406df4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dab568ef6622bfa10f0e10566ec92dfaee71d22c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33276792"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047956"
 ---
 # <a name="compiler-warning-level-1-c4228"></a>컴파일러 경고(수준 1) C4228
-비표준 확장이 사용 됨: 선언 자 목록에서 쉼표 뒤의 한정자는 무시 됩니다.  
-  
- 한정자를 사용 하 여 같은 **const** 또는 `volatile` 후 변수를 선언할 때 쉼표는 Microsoft 확장 ([/Ze](../../build/reference/za-ze-disable-language-extensions.md)).  
-  
-## <a name="example"></a>예제  
-  
-```  
-// C4228.cpp  
-// compile with: /W1  
-int j, const i = 0;  // C4228  
-int k;  
-int const m = 0;  // ok  
-int main()  
-{  
-}  
+
+비표준 확장이 사용 됨: 선언 자 목록에서 쉼표 뒤의 한정자는 무시 됩니다.
+
+한정자의 사용 하 여 같은 **상수** 또는 `volatile` 변수를 선언할 때 쉼표는 Microsoft 확장 한 후 ([/Ze](../../build/reference/za-ze-disable-language-extensions.md)).
+
+## <a name="example"></a>예제
+
+```
+// C4228.cpp
+// compile with: /W1
+int j, const i = 0;  // C4228
+int k;
+int const m = 0;  // ok
+int main()
+{
+}
 ```

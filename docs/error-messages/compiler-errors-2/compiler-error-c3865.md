@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99a872d4cf7ed285a0798461c77adf904cfa3e71
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8fd5c83d922601ca4cdffe0f3772723b31e630b6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33275501"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090843"
 ---
 # <a name="compiler-error-c3865"></a>컴파일러 오류 C3865
-'calling_convention': 네이티브 멤버 함수에만 사용할 수  
-  
- 호출 규칙은 관리 되는 멤버 함수 또는 함수를 전역 함수에 사용 되었습니다. 호출 규칙 (관리 되지 않음) 네이티브 멤버 함수에만 사용할 수 있습니다.  
-  
- 자세한 내용은 참조 [호출 규칙](../../cpp/calling-conventions.md)합니다.  
-  
- 다음 샘플에서는 C3865 오류가 생성 됩니다.  
-  
-```  
-// C3865.cpp  
-// compile with: /clr  
-// processor: x86  
-void __thiscall Func(){}   // C3865  
-  
-// OK  
-struct MyType {  
-   void __thiscall Func(){}  
-};  
+
+'calling_convention': 네이티브 멤버 함수에만 사용할 수 있습니다
+
+호출 규칙을 관리 되는 멤버 함수 또는 전역 함수는 함수에서 사용 되었습니다. 호출 규칙 (관리 되지 않는) 네이티브 멤버 함수에만 사용할 수 있습니다.
+
+자세한 내용은 [호출 규칙](../../cpp/calling-conventions.md)합니다.
+
+다음 샘플에서는 C3865 오류가 생성 됩니다.
+
+```
+// C3865.cpp
+// compile with: /clr
+// processor: x86
+void __thiscall Func(){}   // C3865
+
+// OK
+struct MyType {
+   void __thiscall Func(){}
+};
 ```

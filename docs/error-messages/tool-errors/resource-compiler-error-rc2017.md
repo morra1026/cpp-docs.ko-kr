@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a73acafab54c5448eaa9fbf0887a9e124311a654
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e00759ae0d987a04d60fd5f32ca0a7d18f3832c4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317013"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053845"
 ---
 # <a name="resource-compiler-error-rc2017"></a>리소스 컴파일러 오류 RC2017
-잘못 된 이스케이프 시퀀스  
-  
- 이스케이프 시퀀스가 있는 없어야 합니다.  
-  
- 이스케이프 시퀀스-백슬래시 ( **\\** ) 뒤에 숫자 또는 문자-문자 또는 문자열에만 사용할 수 상수입니다.
+
+잘못 된 이스케이프 시퀀스
+
+이스케이프 시퀀스가 있는 하나를 사용할 수 없습니다.
+
+이스케이프 시퀀스-백슬래시 ( **\\** ) 뒤에 문자 또는 숫자, 문자 또는 문자열 에서만 발생할 수 있습니다 상수입니다.

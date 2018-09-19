@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd6e23bd3f67bb6e2b100b8afa483b2be8fc68fb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5584bf596a507a3055cc9196acd233da8139523b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171339"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101581"
 ---
 # <a name="compiler-error-c2060"></a>컴파일러 오류 C2060
-구문 오류: 파일의 끝  
-  
- 적어도 하나 이상의 토큰이 필요 합니다.
+
+구문 오류: 파일의 끝
+
+적어도 하나 이상의 토큰이 필요 합니다.

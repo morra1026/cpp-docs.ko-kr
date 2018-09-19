@@ -1,7 +1,7 @@
 ---
 title: '연습: WRL 및 Media Foundation을 사용 하 여 UWP 앱 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/17/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2775e0348f6bfe1e7fe960a105ebf0c31fcaae96
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3eb82c5c86411af63ea79a4dbcf2e54d2d3ce5f5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214833"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038310"
 ---
 # <a name="walkthrough-creating-a-uwp-app-using-wrl-and-media-foundation"></a>연습: WRL 및 Media Foundation을 사용 하 여 UWP 앱 만들기
 
@@ -101,7 +101,7 @@ ms.locfileid: "43214833"
 
    1. 아래 **입력**에 대 한 합니다 **모듈 정의 파일**를 지정 `GrayScaleTransform.def`합니다.
 
-   2. 또한 아래에 있는 **입력**, 추가 `runtimeobject.lib`, `mfuuid.lib`, 및 `mfplatf.lib` 에 **추가 종속성** 속성입니다.
+   2. 또한 아래에 있는 **입력**, 추가 `runtimeobject.lib`, `mfuuid.lib`, 및 `mfplat.lib` 에 **추가 종속성** 속성입니다.
 
    3. 아래 **Windows 메타 데이터**설정 **Windows 메타 데이터 생성** 하 **예 (/ WINMD)** 합니다.
 

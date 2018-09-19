@@ -12,17 +12,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ceaa41dcaca88c7857a03c16ccccabdba086fd0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 980000932c8cc4a6be3798976d273dae8608324f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387826"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089166"
 ---
 # <a name="underflow-of-floating-point-values"></a>부동 소수점 값 언더플로
-**ANSI 4.5.1** 수학 함수가 정수 식 `errno`를 언더플로 범위 오류에 대한 `ERANGE` 매크로의 값으로 설정하는지 여부  
-  
- 부동 소수점 언더플로는 `errno` 식을 `ERANGE`로 설정하지 않습니다. 값이 0이고 결국 언더플로로 가까워지면 값이 0으로 설정됩니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [라이브러리 함수](../c-language/library-functions.md)
+
+**ANSI 4.5.1** 수학 함수가 정수 식 `errno`를 언더플로 범위 오류에 대한 `ERANGE` 매크로의 값으로 설정하는지 여부
+
+부동 소수점 언더플로는 `errno` 식을 `ERANGE`로 설정하지 않습니다. 값이 0이고 결국 언더플로로 가까워지면 값이 0으로 설정됩니다.
+
+## <a name="see-also"></a>참고 항목
+
+[라이브러리 함수](../c-language/library-functions.md)

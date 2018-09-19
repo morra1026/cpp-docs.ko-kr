@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: befbf65c8faa74e889d837a0b310eda4bc6fe576
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 227c7d43334419326670dae5fabad28d18ec58a0
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43676782"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716172"
 ---
 # <a name="cmfcpropertygridtooltipctrl-class"></a>CMFCPropertyGridToolTipCtrl 클래스
 설명을 구현 하는 컨트롤을 합니다 [CMFCPropertyGridCtrl 클래스](../../mfc/reference/cmfcpropertygridctrl-class.md) 사용 하 여 도구 설명을 표시 합니다.  
@@ -106,8 +106,8 @@ BOOL Create(CWnd* pWndParent);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndParent*  
- 부모 창에 대 한 포인터입니다.  
+*pWndParent*<br/>
+[in] 부모 창에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  창 성공적으로 만들어진 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -130,8 +130,8 @@ void GetLastRect(CRect& rect) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *rect*  
- 도구 설명 컨트롤의 마지막 위치를 포함합니다.  
+*rect*<br/>
+[out] 도구 설명 컨트롤의 마지막 위치를 포함합니다.  
   
 ##  <a name="hide"></a>  CMFCPropertyGridToolTipCtrl::Hide  
  도구 설명 컨트롤을 숨깁니다.  
@@ -148,8 +148,8 @@ void SetTextMargin(int nTextMargin);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nTextMargin*  
- 도구 설명 컨트롤 텍스트를 도구 설명 창의 테두리 사이의 간격을 지정합니다. 기본값은 10 픽셀입니다.  
+*nTextMargin*<br/>
+[in] 도구 설명 컨트롤 텍스트를 도구 설명 창의 테두리 사이의 간격을 지정합니다. 기본값은 10 픽셀입니다.  
   
 ##  <a name="track"></a>  CMFCPropertyGridToolTipCtrl::Track  
  도구 설명 컨트롤을 표시합니다.  
@@ -161,11 +161,11 @@ void Track(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rect*  
- 도구 설명 컨트롤의 크기와 위치를 지정합니다.  
+*rect*<br/>
+[in] 도구 설명 컨트롤의 크기와 위치를 지정합니다.  
   
- [in] *strText*  
- 도구 설명에 표시할 텍스트를 지정 합니다.  
+*strText*<br/>
+[in] 도구 설명에 표시할 텍스트를 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 지정 된 크기와 위치에 도구 설명 컨트롤을 표시 *rect*합니다. 마지막으로이 메서드를 호출한 후 위치, 크기 및 텍스트 변경 되지 않은 경우이 메서드는 영향을 주지 않습니다.  

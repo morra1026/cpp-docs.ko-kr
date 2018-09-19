@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 474d4ad146edf4411bd9734a6ec4482273c065dd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6aa86a9fd3c2d6d19482ba5ce5c866ab660e742e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298154"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073089"
 ---
 # <a name="linker-tools-error-lnk1166"></a>링커 도구 오류 LNK1166
-오프셋에서 코드를 조정할 수 없는 = 오프셋, va = 값  
-  
- 링크를 필요에 따라 코드를 채울 수 없습니다.  
-  
- 일부 프로세서 페이지 경계를 교차 하는 특정 명령은 허용 되지 않습니다. 링크는이 상황을 해결 패드를 추가 하려고 합니다. 이 경우에 링크 문제를 해결 하지 못했습니다.
+
+오프셋에서 코드를 조정할 수 없는 오프셋, va = = value
+
+링크 필요에 따라 코드를 채울 수 없습니다.
+
+일부 프로세서 페이지 경계를 교차 하는 특정 지침 허용 되지 않습니다. 링크는이 문제를 해결 하는 패드를 추가 하려고 합니다. 이 경우에 링크 문제를 해결 하지 못했습니다.

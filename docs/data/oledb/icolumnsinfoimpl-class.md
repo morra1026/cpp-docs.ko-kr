@@ -38,14 +38,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2bc335a0c83e57b8abfeb708d9c6acce977010dd
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: bde6a3947d7afa836d93387e80c9b7885b1bc15c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42571410"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099410"
 ---
 # <a name="icolumnsinfoimpl-class"></a>IColumnsInfoImpl 클래스
+
 구현을 제공 합니다 [IColumnsInfo](/previous-versions/windows/desktop/ms724541\(v=vs.85\)) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
@@ -58,11 +59,13 @@ class ATL_NO_VTABLE IColumnsInfoImpl :
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- *T*  
- 클래스에서 파생 된 `IColumnsInfoImpl`합니다.  
+
+*T*<br/>
+클래스에서 파생 된 `IColumnsInfoImpl`합니다.  
 
 ## <a name="requirements"></a>요구 사항  
- **헤더:** atldb.h  
+
+**헤더:** atldb.h  
   
 ## <a name="members"></a>멤버  
   
@@ -74,9 +77,11 @@ class ATL_NO_VTABLE IColumnsInfoImpl :
 |[MapColumnIDs](#mapcolumnids)|지정된 된 열 Id로 식별 되는 행 집합의 열 서 수의 배열을 반환 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 행 집합 및 명령에는 필수 인터페이스입니다. 공급자의 동작을 수정 하려면 `IColumnsInfo` 공급자 열 지도 수정 해야 하는 구현 합니다.  
+
+행 집합 및 명령에는 필수 인터페이스입니다. 공급자의 동작을 수정 하려면 `IColumnsInfo` 공급자 열 지도 수정 해야 하는 구현 합니다.  
 
 ## <a name="getcolumninfo"></a> Icolumnsinfoimpl:: Getcolumninfo
+
 대부분의 소비자에 필요한 열 메타 데이터를 반환 합니다.  
   
 ### <a name="syntax"></a>구문  
@@ -88,9 +93,11 @@ STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+
+참조 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
 
 ## <a name="mapcolumnids"></a> Icolumnsinfoimpl:: Mapcolumnids
+
 지정된 된 열 Id로 식별 되는 행 집합의 열 서 수의 배열을 반환 합니다.  
   
 ### <a name="syntax"></a>구문  
@@ -102,8 +109,10 @@ STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+
+참조 [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

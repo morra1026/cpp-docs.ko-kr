@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f09bafd0bbda8a64b7a60fe6cacf996106385787
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c08387d5c1a2a9b9b757bab7a8112783a3810065
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753014"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097798"
 ---
 # <a name="catlarray-class"></a>CAtlArray 클래스
 
@@ -55,10 +55,10 @@ class CAtlArray
 
 #### <a name="parameters"></a>매개 변수
 
-*E*  
+*E*<br/>
 배열에 저장할 데이터의 형식입니다.
 
-*ETraits*  
+*ETraits*<br/>
 요소 이동 하거나 복사 하는 데 사용 되는 코드입니다.
 
 ## <a name="members"></a>멤버
@@ -124,7 +124,7 @@ size_t Add();
 
 ### <a name="parameters"></a>매개 변수
 
-*요소*  
+*요소*<br/>
 배열에 추가할 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -149,7 +149,7 @@ size_t Append(const CAtlArray<E, ETraits>& aSrc);
 
 ### <a name="parameters"></a>매개 변수
 
-*aSrc*  
+*aSrc*<br/>
 추가할 배열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -222,7 +222,7 @@ void Copy(const CAtlArray<E, ETraits>& aSrc);
 
 ### <a name="parameters"></a>매개 변수
 
-*aSrc*  
+*aSrc*<br/>
 원본 배열에 복사할 요소입니다.
 
 ### <a name="remarks"></a>설명
@@ -265,7 +265,7 @@ E& GetAt(size_t iElement) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*iElement*  
+*iElement*<br/>
 반환할 배열 요소의 인덱스 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -335,10 +335,10 @@ void InsertArrayAt(size_t iStart, const CAtlArray<E, ETraits>* paNew);
 
 ### <a name="parameters"></a>매개 변수
 
-*iStart*  
+*iStart*<br/>
 배열을 삽입할 인덱스입니다.
 
-*paNew*  
+*paNew*<br/>
 삽입 될 배열입니다.
 
 ### <a name="remarks"></a>설명
@@ -364,13 +364,13 @@ void InsertAt(size_t iElement, INARGTYPE element, size_t nCount = 1);
 
 ### <a name="parameters"></a>매개 변수
 
-*iElement*  
+*iElement*<br/>
 요소 또는 요소를 삽입 하는 인덱스입니다.
 
-*요소*  
+*요소*<br/>
 값을 삽입할 요소입니다.
 
-*nCount*  
+*nCount*<br/>
 추가할 요소의 수입니다.
 
 ### <a name="remarks"></a>설명
@@ -414,7 +414,7 @@ const E& operator[](size_t ielement) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*iElement*  
+*iElement*<br/>
 반환할 배열 요소의 인덱스 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -463,10 +463,10 @@ void RemoveAt(size_t iElement, size_t nCount = 1);
 
 ### <a name="parameters"></a>매개 변수
 
-*iElement*  
+*iElement*<br/>
 제거할 첫 번째 요소의 인덱스입니다.
 
-*nCount*  
+*nCount*<br/>
 제거할 요소의 수입니다.
 
 ### <a name="remarks"></a>설명
@@ -489,10 +489,10 @@ void SetAt(size_t iElement, INARGTYPE element);
 
 ### <a name="parameters"></a>매개 변수
 
-*iElement*  
+*iElement*<br/>
 설정할 배열 요소를 가리키는 인덱스입니다.
 
-*요소*  
+*요소*<br/>
 지정 된 요소의 새 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -513,10 +513,10 @@ bool SetCount(size_t nNewSize, int nGrowBy = - 1);
 
 ### <a name="parameters"></a>매개 변수
 
-*nNewSize*  
+*nNewSize*<br/>
 필요한 크기의 배열입니다.
 
-*nGrowBy*  
+*nGrowBy*<br/>
 결정 하는 데 사용 하는 값을 얼마나 큰 버퍼를 확인 합니다. 값이-1 이면는 내부적으로 계산 된 값을 사용할 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -543,10 +543,10 @@ void SetAtGrow(size_t iElement, INARGTYPE element);
 
 ### <a name="parameters"></a>매개 변수
 
-*iElement*  
+*iElement*<br/>
 설정할 배열 요소를 가리키는 인덱스입니다.
 
-*요소*  
+*요소*<br/>
 지정 된 요소의 새 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -559,9 +559,9 @@ void SetAtGrow(size_t iElement, INARGTYPE element);
 
 ## <a name="see-also"></a>참고 항목
 
-[MMXSwarm 샘플](../../visual-cpp-samples.md)   
-[DynamicConsumer 샘플](../../visual-cpp-samples.md)   
-[UpdatePV 샘플](../../visual-cpp-samples.md)   
-[움직이는 텍스트 샘플](../../visual-cpp-samples.md)   
-[CArray 클래스](../../mfc/reference/carray-class.md)   
+[MMXSwarm 샘플](../../visual-cpp-samples.md)<br/>
+[DynamicConsumer 샘플](../../visual-cpp-samples.md)<br/>
+[UpdatePV 샘플](../../visual-cpp-samples.md)<br/>
+[움직이는 텍스트 샘플](../../visual-cpp-samples.md)<br/>
+[CArray 클래스](../../mfc/reference/carray-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0da9a0299679ec140888e9536329f0957a786279
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 208c89cad441a1fae70f5532204ec7856459de7f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760005"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095861"
 ---
 # <a name="atl-com-property-pages"></a>ATL COM 속성 페이지
 
@@ -38,18 +38,18 @@ ms.locfileid: "43760005"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[속성 페이지 지정](../atl/specifying-property-pages.md)  
+[속성 페이지 지정](../atl/specifying-property-pages.md)<br/>
 제어에 대 한 속성 페이지를 지정 하는 단계를 나열 하 고 클래스 예제를 보여 줍니다.
 
-[속성 페이지 구현](../atl/implementing-property-pages.md)  
+[속성 페이지 구현](../atl/implementing-property-pages.md)<br/>
 속성 페이지를 재정의 하는 방법을 비롯 하 여 구현 하는 단계를 나열 합니다. ATLPages 샘플 프로그램을 기반으로 하는 전체 예제를 안내 합니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[ATLPages 샘플](../visual-cpp-samples.md)  
+[ATLPages 샘플](../visual-cpp-samples.md)<br/>
 ATLPages 샘플을 사용 하 여 속성 페이지를 구현 하는 샘플 추상 `IPropertyPageImpl`합니다.
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 액티브 템플릿 라이브러리를 사용하여 프로그래밍하는 방법에 대한 개념 항목의 링크를 제공합니다.
 
 ## <a name="see-also"></a>참고 항목

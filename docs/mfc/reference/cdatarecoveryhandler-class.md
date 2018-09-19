@@ -72,12 +72,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9be1d106257787d5a5dd919372726c8d31a1edc1
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 604ccf9ba0695cf9d17790f149be1f0738266076
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339282"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701768"
 ---
 # <a name="cdatarecoveryhandler-class"></a>CDataRecoveryHandler 클래스
 `CDataRecoveryHandler` 자동으로 저장에 설명 하 고 응용 프로그램에서 예기치 않게 종료 되 면 복원 합니다.  
@@ -188,8 +188,8 @@ virtual BOOL AutosaveDocumentInfo(
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *pDocument*|에 대 한 포인터를 `CDocument` 저장 합니다.|  
-|[in] *bResetModifiedFlag*|TRUE 이면 합니다 `CDataRecoveryHandler` 고려 *pDocument* 수정할; FALSE 이면 프레임 워크에서는 간주 한다는 *pDocument* 되도록 수정 합니다. 이 플래그의 효과 대 한 자세한 내용은 설명 섹션을 참조 하세요.|  
+|*pDocument*|[in] 에 대 한 포인터를 `CDocument` 저장 합니다.|  
+|*bResetModifiedFlag*|[in] TRUE 이면 합니다 `CDataRecoveryHandler` 고려 *pDocument* 수정할; FALSE 이면 프레임 워크에서는 간주 한다는 *pDocument* 되도록 수정 합니다. 이 플래그의 효과 대 한 자세한 내용은 설명 섹션을 참조 하세요.|  
   
 ### <a name="return-value"></a>반환 값  
  적절 한 플래그 설정 된 경우 TRUE이 고 *pDocument* 유효한 `CDocument` 개체입니다.  
@@ -218,8 +218,8 @@ CDataRecoveryHandler(
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *dwRestartManagerSupportFlags*|지원 되는 다시 시작 관리자의 어떤 옵션을 나타냅니다.|  
-|[in] *nAutosaveInterval*|자동으로 저장 사이의 시간입니다. 이 매개 변수는 밀리초에서입니다.|  
+|*dwRestartManagerSupportFlags*|[in] 지원 되는 다시 시작 관리자의 어떤 옵션을 나타냅니다.|  
+|*nAutosaveInterval*|[in] 자동으로 저장 사이의 시간입니다. 이 매개 변수는 밀리초에서입니다.|  
   
 ### <a name="remarks"></a>설명  
  MFC 프레임 워크에서 자동으로 만듭니다는 `CDataRecoveryHandler` 사용 하는 경우 응용 프로그램에 대 한 개체를 **새 프로젝트** 마법사. 데이터 복구 동작 또는 다시 시작 관리자를 사용자 지정 하려는 경우가 아니면 만들면 안을 `CDataRecoveryHandler` 개체입니다.  
@@ -237,7 +237,7 @@ virtual BOOL CreateDocumentInfo(CDocument* pDocument);
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *pDocument*|에 대 한 포인터를 `CDocument`입니다. 이 메서드는이 문서의 정보를 만듭니다 `CDocument`합니다.|  
+|*pDocument*|[in] 에 대 한 포인터를 `CDocument`입니다. 이 메서드는이 문서의 정보를 만듭니다 `CDocument`합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  기본 구현에서는 TRUE를 반환합니다.  
@@ -269,7 +269,7 @@ virtual BOOL DeleteAutosavedFile(const CString& strAutosavedFile);
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *strAutosavedFile*|자동 저장 된 파일 이름을 포함 하는 문자열입니다.|  
+|*strAutosavedFile*|[in] 자동 저장 된 파일 이름을 포함 하는 문자열입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  기본 구현에서는 항상 TRUE를 반환 합니다.  
@@ -285,8 +285,8 @@ virtual CString GenerateAutosaveFileName(const CString& strDocumentName) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *strDocumentName*  
- 문서 이름을 포함 하는 문자열입니다. `GenerateAutosaveFileName` 이 문서 이름을 사용 하 여 해당 자동 저장 파일 이름을 생성 합니다.  
+*strDocumentName*<br/>
+[in] 문서 이름을 포함 하는 문자열입니다. `GenerateAutosaveFileName` 이 문서 이름을 사용 하 여 해당 자동 저장 파일 이름을 생성 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  생성 된 자동 저장 파일 이름을 *strDocumentName*합니다.  
@@ -326,7 +326,7 @@ virtual CString GetDocumentListName(CDocument* pDocument) const;
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *pDocument*|에 대 한 포인터를 `CDocument`입니다. `GetDocumentListName` 이 문서 이름을 검색 `CDocument`합니다.|  
+|*pDocument*|[in] 에 대 한 포인터를 `CDocument`입니다. `GetDocumentListName` 이 문서 이름을 검색 `CDocument`합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  문서 이름 *pDocument*합니다.  
@@ -346,7 +346,7 @@ virtual CString GetNormalDocumentTitle(CDocument* pDocument);
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *pDocument*|에 대 한 포인터를 `CDocument`입니다.|  
+|*pDocument*|[in] 에 대 한 포인터를 `CDocument`입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  지정된 된 문서에 대 한 일반 제목입니다.  
@@ -362,8 +362,8 @@ virtual CString GetRecoveredDocumentTitle(const CString& strDocumentTitle) const
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *strDocumentTitle*  
- 일반적인 제목 문서입니다.  
+*strDocumentTitle*<br/>
+[in] 일반적인 제목 문서입니다.  
   
 ### <a name="return-value"></a>반환 값  
  복구 된 문서 제목입니다.  
@@ -462,7 +462,7 @@ virtual BOOL RemoveDocumentInfo(CDocument* pDocument);
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *pDocument*|제거할 문서에 대 한 포인터입니다.|  
+|*pDocument*|[in] 제거할 문서에 대 한 포인터입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 *pDocument* 목록에서 제거 되었습니다 FALSE 이면 오류가 발생 했습니다.  
@@ -529,8 +529,8 @@ Virtual void SetAutosaveInterval(int nAutosaveInterval);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nAutosaveInterval*  
- 시간 (밀리초)는 새 자동 저장 간격입니다.  
+*nAutosaveInterval*<br/>
+[in] 시간 (밀리초)는 새 자동 저장 간격입니다.  
   
 ##  <a name="setautosavepath"></a>  CDataRecoveryHandler::SetAutosavePath  
  자동 저장 된 파일을 저장할 디렉터리를 설정 합니다.  
@@ -544,7 +544,7 @@ virtual void SetAutosavePath(const CString& strAutosavePath);
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *strAutosavePath*|자동 저장 파일을 저장할 경로입니다.|  
+|*strAutosavePath*|[in] 자동 저장 파일을 저장할 경로입니다.|  
   
 ### <a name="remarks"></a>설명  
  자동 저장 디렉터리를 변경 합니다. 움직이지 않으면 현재 자동 저장 된 파일입니다.  
@@ -561,7 +561,7 @@ virtual void SetRestartIdentifier(const CString& strRestartIdentifier);
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *strRestartIdentifier*|다시 시작 관리자에 대 한 고유 식별자입니다.|  
+|*strRestartIdentifier*|[in] 다시 시작 관리자에 대 한 고유 식별자입니다.|  
   
 ### <a name="remarks"></a>설명  
  다시 시작 관리자는 레지스트리에서 열려 있는 문서에 대 한 정보를 기록합니다. 이 정보는 키로 다시 시작 고유 식별자를 사용 하 여 저장 됩니다. 다시 시작 식별자가 응용 프로그램의 각 인스턴스에 대해 고유 하므로 응용 프로그램의 여러 인스턴스 예기치 않게 종료 될 수 있습니다 하 고 다시 시작 관리자는 각각의 복구할 수 있습니다.  
@@ -578,7 +578,7 @@ virtual void SetSaveDocumentInfoOnIdle(BOOL bSaveOnIdle);
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *bSaveOnIdle*|현재 유휴 주기; 동안 문서 정보를 저장. False 이면 저장을 수행 하지 않습니다.|  
+|*bSaveOnIdle*|[in] 현재 유휴 주기; 동안 문서 정보를 저장. False 이면 저장을 수행 하지 않습니다.|  
   
 ##  <a name="setshutdownbyrestartmanager"></a>  CDataRecoveryHandler::SetShutdownByRestartManager  
  다시 시작 관리자에서 응용 프로그램의 이전 종료 원인이 있는지 여부를 설정 합니다.  
@@ -592,7 +592,7 @@ virtual void SetShutdownByRestartManager(BOOL bShutdownByRestartManager);
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *bShutdownByRestartManager*|다시 시작 관리자는 응용 프로그램을 종료; 발생 한다는 것을 나타내려면 False 이면 다른 이유로 응용 프로그램이 종료 되었음을 나타냅니다.|  
+|*bShutdownByRestartManager*|[in] 다시 시작 관리자는 응용 프로그램을 종료; 발생 한다는 것을 나타내려면 False 이면 다른 이유로 응용 프로그램이 종료 되었음을 나타냅니다.|  
   
 ### <a name="remarks"></a>설명  
  프레임 워크는 이전 종료 예기치 않은 여부 또는 다시 시작 관리자가 초기화 되었는지 여부에 따라 다르게 동작 합니다.  
@@ -609,7 +609,7 @@ virtual BOOL UpdateDocumentInfo(CDocument* pDocument);
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *pDocument*|저장된 된 문서에 대 한 포인터입니다.|  
+|*pDocument*|[in] 저장된 된 문서에 대 한 포인터입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 자동 저장 된 문서를 삭제 하 고 문서 정보를 업데이트 하는 경우 TRUE입니다. FALSE 이면 오류가 발생 했습니다.  

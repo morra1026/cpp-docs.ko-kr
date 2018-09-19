@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22dcb904da7ab2f3c20948b12181af91cb46a1be
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 170098d146eb4b2c83fedfd4787879b39ede3184
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225079"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102634"
 ---
 # <a name="fatal-error-c1086"></a>심각한 오류 C1086
-filetype 파일을 찾을 수 없습니다. 'file': message  
-  
- 컴파일러에서 I/O 작업을 완료할 수 없습니다.
+
+filetype 파일을 찾을 수 없습니다. 'file': message
+
+컴파일러에서 I/O 작업을 완료할 수 없습니다.

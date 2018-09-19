@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ab812a4b6621acb28a4df636056598047f5c21e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7ec7b1e9c1e5e7894740cc80f9c030fa1ee26ec0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230163"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028846"
 ---
 # <a name="compiler-error-c2585"></a>컴파일러 오류 C2585
-'type' 명시적 변환이 모호 합니다.  
-  
- 형식을 변환 하 여 둘 이상의 결과 생성할 수 있습니다.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>다음과 같은 가능한 원인을 확인하여 수정하려면  
-  
-1.  다중 상속 기반 클래스 또는 구조체 형식에서 변환 합니다. 변환 함수 또는 연산자 유형을 동일한 기본 클래스를 두 번 이상 상속 하는 경우 범위 결정 사용 해야 합니다 (`::`) 변환에 사용할를 상속 된 클래스 중 하나로 지정할 수 있습니다.  
-  
-2.  변환 연산자 및 생성자가 정의 된 동일한 변환을 수행 합니다.
+
+'type' 명시적 변환이 모호 합니다.
+
+형식을 변환 하 여 둘 이상의 결과 생성할 수 있습니다.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>다음과 같은 가능한 원인을 확인하여 수정하려면
+
+1. 다중 상속 기반 클래스 또는 구조체 형식에서 변환 합니다. 변환 함수 또는 연산자 형식에서 동일한 기본 클래스를 두 번 이상 상속 하는 경우 범위 결정 사용 해야 합니다 (`::`) 변환에 사용할 상속 된 클래스를 지정 합니다.
+
+1. 변환 연산자와 생성자를 정의한 동일한 변환을 수행 합니다.

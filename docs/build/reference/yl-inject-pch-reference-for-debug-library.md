@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1fda6ac3336b1f2a5e910355b5460633916b0803
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 378d8e6b43a391c6d94c55b278bc71789981d9e3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894657"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712376"
 ---
 # <a name="yl-inject-pch-reference-for-debug-library"></a>/Yl(디버그 라이브러리에 PCH 참조 넣기)
 
@@ -31,16 +31,16 @@ ms.locfileid: "43894657"
 
 ## <a name="syntax"></a>구문
 
->**/Yl**  
->**/Yl**_name_  
->**/Yl-**  
+>**/Yl**
+> **/Yl**_이름_
+> **/Yl-**
 
 ### <a name="arguments"></a>인수
 
-*name*  
+*name*<br/>
 고유한 기호의 일부로 사용 하는 선택적 이름입니다.
 
-*\-*  
+*\-*<br/>
 대시 (-)을 명시적으로 비활성화 합니다 **/Yl** 컴파일러 옵션입니다.
 
 ## <a name="remarks"></a>설명
@@ -75,5 +75,5 @@ ms.locfileid: "43894657"
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)  
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)  
+[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
+[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

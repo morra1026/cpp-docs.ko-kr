@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4935c4cb936b803170f0fc11db5adb3f477a05a0
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8e74df913b22684a61ab4f45ade561e55db18544
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763817"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044511"
 ---
 # <a name="ioleinplaceactiveobjectimpl-class"></a>IOleInPlaceActiveObjectImpl 클래스
 
@@ -49,7 +49,7 @@ class IOleInPlaceActiveObjectImpl
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `IOleInPlaceActiveObjectImpl`합니다.
 
 ## <a name="members"></a>멤버
@@ -201,6 +201,6 @@ HRESULT TranslateAccelerator(LPMSG lpmsg);
 
 ## <a name="see-also"></a>참고 항목
 
-[CComControl 클래스](../../atl/reference/ccomcontrol-class.md)  
-[ActiveX 컨트롤 인터페이스](/windows/desktop/com/activex-controls-interfaces)  
+[CComControl 클래스](../../atl/reference/ccomcontrol-class.md)<br/>
+[ActiveX 컨트롤 인터페이스](/windows/desktop/com/activex-controls-interfaces)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

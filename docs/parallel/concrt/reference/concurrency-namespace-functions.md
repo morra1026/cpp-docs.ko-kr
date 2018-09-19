@@ -41,12 +41,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1535ccda7b53a4fe87c496e2749e382413e32d0a
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: e71804a2b9b9420e4e7839bf33054fb1ed0a7797
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677790"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021202"
 ---
 # <a name="concurrency-namespace-functions"></a>concurrency 네임 스페이스 함수
 ||||  
@@ -75,8 +75,8 @@ void* __cdecl Alloc(size_t _NumBytes);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_NumBytes`  
- 할당할 메모리의 바이트 수입니다.  
+*_NumBytes*<br/>
+할당할 메모리의 바이트 수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  새로 할당 된 메모리에 대 한 포인터입니다.  
@@ -100,14 +100,14 @@ bool asend(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `T`  
- 전송할 데이터의 형식입니다.  
+*T*<br/>
+전송할 데이터의 형식입니다.  
   
- `_Trg`  
- 포인터 또는 데이터 전송 하는 대상에 대 한 참조입니다.  
+*_Trg*<br/>
+포인터 또는 데이터 전송 하는 대상에 대 한 참조입니다.  
   
- `_Data`  
- 데이터 전송에 대 한 참조입니다.  
+*(_D)*<br/>
+데이터 전송에 대 한 참조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `true` 메서드가 반환 되기 전에 메시지가 허용 된 경우 `false` 그렇지 않은 경우.  
@@ -133,8 +133,9 @@ void concurrent_queue<T, _Ax>::clear();
 ```   
   
 ### <a name="parameters"></a>매개 변수  
- `T`  
- `_Ax`  
+*T*<br/>
+
+*_Ax*<br/>
   
 ##  <a name="create_async"></a>  create_async  
  사용자가 제공한 람다 또는 함수 개체를 기준으로 Windows 런타임 비동기 구문을 만듭니다. `create_async`의 반환 형식은 메서드에 전달된 람다의 시그니처에 따라 `IAsyncAction^`, `IAsyncActionWithProgress<TProgress>^`, `IAsyncOperation<TResult>^` 또는 `IAsyncOperationWithProgress<TResult, TProgress>^` 중 하나입니다.  
@@ -146,9 +147,11 @@ __declspec(noinline) auto create_async(const _Function& _Func)
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Function`  
- `_Func`  
- Windows 런타임 비동기 구문을 만들 람다 또는 함수 개체입니다.  
+*_Function*<br/>
+형식입니다.
+
+*_Func*<br/>
+Windows 런타임 비동기 구문을 만들 람다 또는 함수 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  IAsyncAction로 표시 되는 비동기 구문 ^, IAsyncActionWithProgress\<TProgress > ^, IAsyncOperation\<TResult > ^, 또는 an IAsyncOperationWithProgress\<TResult, TProgress > ^ 합니다. 반환된 인터페이스는 함수에 전달되는 람다의 시그니처에 종속됩니다.  
@@ -196,16 +199,21 @@ __declspec( noinline) task<_ReturnType> create_task(const task<_ReturnType>& _Ta
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `T`  
- 작업이 생성되는 매개 변수 형식입니다.  
+*T*<br/>
+작업이 생성되는 매개 변수 형식입니다.  
   
- `_ReturnType`  
- `_Param`  
- 작업이 생성되는 매개 변수입니다. 이 람다 또는 함수 개체 수를 `task_completion_event` 개체, 다른 `task` 개체 또는 UWP 앱에서 작업을 사용 하는 경우 Windows::Foundation::IAsyncInfo 인터페이스.  
+*_ReturnType*<br/>
+형식입니다.
+
+*되므로*<br/>
+작업이 생성되는 매개 변수입니다. 이 람다 또는 함수 개체 수를 `task_completion_event` 개체, 다른 `task` 개체 또는 UWP 앱에서 작업을 사용 하는 경우 Windows::Foundation::IAsyncInfo 인터페이스.  
   
- `_TaskOptions`  
- `_Task`  
-  
+*_TaskOptions*<br/>
+작업 옵션입니다.
+
+*_Task*<br/>
+만들 태스크입니다.
+
 ### <a name="return-value"></a>반환 값  
  형식의 새 작업 `T`, 즉에서 유추 `_Param`합니다.  
   
@@ -246,8 +254,8 @@ void __cdecl Free(_Pre_maybenull_ _Post_invalid_ void* _PAllocation);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_PAllocation`  
- 이전에 의해 할당 된 메모리에 대 한 포인터를 `Alloc` 해제 하는 메서드. 경우 매개 변수 `_PAllocation` 값으로 설정 되어 `NULL`,이 메서드는 무시 하 고 즉시 반환 합니다.  
+*_PAllocation*<br/>
+이전에 의해 할당 된 메모리에 대 한 포인터를 `Alloc` 해제 하는 메서드. 경우 매개 변수 `_PAllocation` 값으로 설정 되어 `NULL`,이 메서드는 무시 하 고 즉시 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
  캐싱 하위 할당자를 사용 하 여 이점을 얻을 수 응용 프로그램에서 시나리오에 대 한 자세한 내용은 [작업 스케줄러](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)합니다.  
@@ -338,11 +346,15 @@ void concurrent_vector<T, _Ax>::internal_assign_iterators(
 ```   
   
 ### <a name="parameters"></a>매개 변수  
- `T`  
- `_Ax`  
- `_I`  
- `first`  
- `last`  
+*T*<br/>
+
+*_Ax*<br/>
+
+*_I*<br/>
+
+*first*<br/>
+
+*last*<br/>
   
 ##  <a name="interruption_point"></a>  interruption_point  
  취소를 위한 중단 지점을 만듭니다. 이 함수가 호출된 컨텍스트에서 취소가 진행 중이면 현재 실행 중인 병렬 작업의 실행을 중단하는 내부 예외가 발생합니다. 취소가 진행되고 있지 않으면 함수에서 아무 작업도 하지 않습니다.  
@@ -393,26 +405,26 @@ choice<std::tuple<T1, T2, Ts...>> make_choice(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `T1`  
- 첫 번째 소스의 메시지 블록 형식입니다.  
+*T1*<br/>
+첫 번째 소스의 메시지 블록 형식입니다.  
   
- `T2`  
- 두 번째 소스 메시지 블록 형식입니다.  
+*T2*<br/>
+두 번째 소스 메시지 블록 형식입니다.  
   
- `_PScheduler`  
- `Scheduler` 메시징 블록의 전파 작업이 예약되는 `choice` 개체입니다.  
+*_PScheduler*<br/>
+`Scheduler` 메시징 블록의 전파 작업이 예약되는 `choice` 개체입니다.  
   
- `_Item1`  
- 첫 번째 소스입니다.  
+*_Item1*<br/>
+첫 번째 소스입니다.  
   
- `_Item2`  
- 두 번째 소스입니다.  
+*_Item2*<br/>
+두 번째 소스입니다.  
   
- `_Items`  
- 추가적인 소스입니다.  
+*항목 (_i)*<br/>
+추가적인 소스입니다.  
   
- `_PScheduleGroup`  
- `ScheduleGroup` 메시징 블록의 전파 작업이 예약되는 `choice` 개체입니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.  
+*_PScheduleGroup*<br/>
+`ScheduleGroup` 메시징 블록의 전파 작업이 예약되는 `choice` 개체입니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  두 개 이상의 입력 소스가 있는 `choice` 메시지 블록입니다.  
@@ -443,26 +455,26 @@ multitype_join<std::tuple<T1, T2, Ts...>, greedy> make_greedy_join(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `T1`  
- 첫 번째 소스의 메시지 블록 형식입니다.  
+*T1*<br/>
+첫 번째 소스의 메시지 블록 형식입니다.  
   
- `T2`  
- 두 번째 소스 메시지 블록 형식입니다.  
+*T2*<br/>
+두 번째 소스 메시지 블록 형식입니다.  
   
- `_PScheduler`  
- `Scheduler` 메시징 블록의 전파 작업이 예약되는 `multitype_join` 개체입니다.  
+*_PScheduler*<br/>
+`Scheduler` 메시징 블록의 전파 작업이 예약되는 `multitype_join` 개체입니다.  
   
- `_Item1`  
- 첫 번째 소스입니다.  
+*_Item1*<br/>
+첫 번째 소스입니다.  
   
- `_Item2`  
- 두 번째 소스입니다.  
+*_Item2*<br/>
+두 번째 소스입니다.  
   
- `_Items`  
- 추가적인 소스입니다.  
+*항목 (_i)*<br/>
+추가적인 소스입니다.  
   
- `_PScheduleGroup`  
- `ScheduleGroup` 메시징 블록의 전파 작업이 예약되는 `multitype_join` 개체입니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.  
+*_PScheduleGroup*<br/>
+`ScheduleGroup` 메시징 블록의 전파 작업이 예약되는 `multitype_join` 개체입니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  두 개 이상의 입력 소스가 있는 `greedy multitype_join` 메시지 블록입니다.  
@@ -494,26 +506,26 @@ multitype_join<std::tuple<T1, T2, Ts...>> make_join(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `T1`  
- 첫 번째 소스의 메시지 블록 형식입니다.  
+*T1*<br/>
+첫 번째 소스의 메시지 블록 형식입니다.  
   
- `T2`  
- 두 번째 소스 메시지 블록 형식입니다.  
+*T2*<br/>
+두 번째 소스 메시지 블록 형식입니다.  
   
- `_PScheduler`  
- `Scheduler` 메시징 블록의 전파 작업이 예약되는 `multitype_join` 개체입니다.  
+*_PScheduler*<br/>
+`Scheduler` 메시징 블록의 전파 작업이 예약되는 `multitype_join` 개체입니다.  
   
- `_Item1`  
- 첫 번째 소스입니다.  
+*_Item1*<br/>
+첫 번째 소스입니다.  
   
- `_Item2`  
- 두 번째 소스입니다.  
+*_Item2*<br/>
+두 번째 소스입니다.  
   
- `_Items`  
- 추가적인 소스입니다.  
+*항목 (_i)*<br/>
+추가적인 소스입니다.  
   
- `_PScheduleGroup`  
- `ScheduleGroup` 메시징 블록의 전파 작업이 예약되는 `multitype_join` 개체입니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.  
+*_PScheduleGroup*<br/>
+`ScheduleGroup` 메시징 블록의 전파 작업이 예약되는 `multitype_join` 개체입니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  두 개 이상의 입력 소스가 있는 `non_greedy multitype_join` 메시지 블록입니다.  
@@ -527,11 +539,11 @@ task_handle<_Function> make_task(const _Function& _Func);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Function`  
- 표현 되는 작업을 실행 하기 위해 호출 될 함수 개체의 형식은 `task_handle` 개체입니다.  
+*_Function*<br/>
+표현 되는 작업을 실행 하기 위해 호출 될 함수 개체의 형식은 `task_handle` 개체입니다.  
   
- `_Func`  
- 표현 되는 작업을 실행 하기 위해 호출 될 함수를 `task_handle` 개체입니다. 이 람다 함수, 함수에 대 한 포인터 이거나 서명 사용 하 여 함수 호출 연산자의 버전을 지 원하는 모든 개체 `void operator()()`합니다.  
+*_Func*<br/>
+표현 되는 작업을 실행 하기 위해 호출 될 함수를 `task_handle` 개체입니다. 이 람다 함수, 함수에 대 한 포인터 이거나 서명 사용 하 여 함수 호출 연산자의 버전을 지 원하는 모든 개체 `void operator()()`합니다.  
   
 ### <a name="return-value"></a>반환 값  
  `task_handle` 개체입니다.  
@@ -590,29 +602,29 @@ inline void parallel_buffered_sort(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Random_iterator`  
- 입력 범위의 반복기 형식입니다.  
+*_Random_iterator*<br/>
+입력 범위의 반복기 형식입니다.  
   
- `_Allocator`  
- C + + 표준 라이브러리 호환 메모리 할당자의 형식입니다.  
+*_Allocator*<br/>
+C + + 표준 라이브러리 호환 메모리 할당자의 형식입니다.  
   
- `_Function`  
- 이진 비교 연산자의 형식입니다.  
+*_Function*<br/>
+이진 비교 연산자의 형식입니다.  
   
- `_Begin`  
- 저장할 범위의 첫 번째 요소 위치를 주소 지정하는 임의 액세스 반복기입니다.  
+*시작 (_b)*<br/>
+저장할 범위의 첫 번째 요소 위치를 주소 지정하는 임의 액세스 반복기입니다.  
   
- `_End`  
- 저장할 범위의 마지막 요소 하나 다음 위치를 주소 지정하는 임의 액세스 반복기입니다.  
+*(_E)*<br/>
+저장할 범위의 마지막 요소 하나 다음 위치를 주소 지정하는 임의 액세스 반복기입니다.  
   
- `_Alloc`  
- C + + 표준 라이브러리 호환 메모리 할당자의 인스턴스.  
+*_Alloc*<br/>
+C + + 표준 라이브러리 호환 메모리 할당자의 인스턴스.  
   
- `_Func`  
- 순서에 따라 연속적인 요소에 대해 충족될 비교 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하여 조건이 충족되면 `true`를 반환하고, 충족되지 않으면 `false`를 반환합니다. 이 비교 함수는 시퀀스의 요소 쌍에 대해 엄밀히 약한 순서를 적용해야 합니다.  
+*_Func*<br/>
+순서에 따라 연속적인 요소에 대해 충족될 비교 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하여 조건이 충족되면 `true`를 반환하고, 충족되지 않으면 `false`를 반환합니다. 이 비교 함수는 시퀀스의 요소 쌍에 대해 엄밀히 약한 순서를 적용해야 합니다.  
   
- `_Chunk_size`  
- 병렬 실행을 위해 두 개로 분할될 청크의 최소 크기입니다.  
+*_Chunk_size*<br/>
+병렬 실행을 위해 두 개로 분할될 청크의 최소 크기입니다.  
   
 ### <a name="remarks"></a>설명  
  모든 오버 로드 필요 `n * sizeof(T)` 추가 공간을 여기서 `n` 정렬 될 요소의 수 및 `T` 요소 형식입니다. 대부분의 경우 parallel_buffered_sort 알아보겠습니다 성능 향상을 통해 [parallel_sort](concurrency-namespace-functions.md), parallel_sort를 통해 사용 가능한 메모리가 사용 해야 합니다.  
@@ -672,29 +684,29 @@ void parallel_for(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Index_type`  
- 반복에 사용 되는 인덱스의 형식입니다.  
+*_Index_type*<br/>
+반복에 사용 되는 인덱스의 형식입니다.  
   
- `_Function`  
- 각 반복에서 실행 될 함수의 형식입니다.  
+*_Function*<br/>
+각 반복에서 실행 될 함수의 형식입니다.  
   
- `_Partitioner`  
- 제공 된 범위를 분할 하는 데 사용 되는 파티 셔 너의 형식입니다.  
+*_Partitioner*<br/>
+제공 된 범위를 분할 하는 데 사용 되는 파티 셔 너의 형식입니다.  
   
- `first`  
- 반복에 포함할 첫 번째 인덱스입니다.  
+*first*<br/>
+반복에 포함할 첫 번째 인덱스입니다.  
   
- `last`  
- 인덱스 하나 이전 반복에 포함할 마지막 인덱스입니다.  
+*last*<br/>
+인덱스 하나 이전 반복에 포함할 마지막 인덱스입니다.  
   
- `_Step`  
- 단계를 반복 하는 경우에 사용 되는 값 `first` 에 `last`입니다. 단계는 양수 여야 합니다. [invalid_argument](../../../standard-library/invalid-argument-class.md) 단계 1 보다 작은 경우 throw 됩니다.  
+*_Step*<br/>
+단계를 반복 하는 경우에 사용 되는 값 `first` 에 `last`입니다. 단계는 양수 여야 합니다. [invalid_argument](../../../standard-library/invalid-argument-class.md) 단계 1 보다 작은 경우 throw 됩니다.  
   
- `_Func`  
- 각 반복 시 실행할 함수입니다. 람다 식, 함수 포인터를 수 있습니다 또는 서명 사용 하 여 함수 호출 연산자의 버전을 지 원하는 모든 개체 `void operator()(_Index_type)`합니다.  
+*_Func*<br/>
+각 반복 시 실행할 함수입니다. 람다 식, 함수 포인터를 수 있습니다 또는 서명 사용 하 여 함수 호출 연산자의 버전을 지 원하는 모든 개체 `void operator()(_Index_type)`합니다.  
   
- `_Part`  
- partitioner 개체에 대한 참조입니다. 인수 중 하나일 수 있습니다 `const` [auto_partitioner](auto-partitioner-class.md)`&`합니다 `const` [static_partitioner](static-partitioner-class.md)`&`하십시오 `const` [simple_ 파티 셔 너](simple-partitioner-class.md) `&` 하거나 [affinity_partitioner](affinity-partitioner-class.md) `&` 경우를 [affinity_partitioner](affinity-partitioner-class.md) 개체는, 참조는 비 const l-value 해야 합니다. 알고리즘을 재사용 하 여 향후의 루프에 대 한 상태를 저장할 수 있도록 참조 합니다.  
+*_Part*<br/>
+partitioner 개체에 대한 참조입니다. 인수 중 하나일 수 있습니다 `const` [auto_partitioner](auto-partitioner-class.md)`&`합니다 `const` [static_partitioner](static-partitioner-class.md)`&`하십시오 `const` [simple_ 파티 셔 너](simple-partitioner-class.md) `&` 하거나 [affinity_partitioner](affinity-partitioner-class.md) `&` 경우를 [affinity_partitioner](affinity-partitioner-class.md) 개체는, 참조는 비 const l-value 해야 합니다. 알고리즘을 재사용 하 여 향후의 루프에 대 한 상태를 저장할 수 있도록 참조 합니다.  
   
 ### <a name="remarks"></a>설명  
  자세한 내용은 [병렬 알고리즘](../../../parallel/concrt/parallel-algorithms.md)합니다.  
@@ -718,24 +730,24 @@ void parallel_for_each(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Iterator`  
- 컨테이너를 통해 반복 하는 데 사용 되는 반복기의 형식입니다.  
+*_Iterator*<br/>
+컨테이너를 통해 반복 하는 데 사용 되는 반복기의 형식입니다.  
   
- `_Function`  
- 형식 범위 내의 각 요소에 적용할 함수입니다.  
+*_Function*<br/>
+형식 범위 내의 각 요소에 적용할 함수입니다.  
   
- `_Partitioner`  
- `first`  
- 병렬 반복에 포함할 첫 번째 요소 위치의 주소를 지정 반복기입니다.  
+*_Partitioner*<br/>
+*first*<br/>
+병렬 반복에 포함할 첫 번째 요소 위치의 주소를 지정 반복기입니다.  
   
- `last`  
- 병렬 반복에 포함할 하나 마지막 요소 다음 위치의 주소 지정 반복기입니다.  
+*last*<br/>
+병렬 반복에 포함할 하나 마지막 요소 다음 위치의 주소 지정 반복기입니다.  
   
- `_Func`  
- 범위의 각 요소에 적용 되는 사용자 정의 함수 개체입니다.  
+*_Func*<br/>
+범위의 각 요소에 적용 되는 사용자 정의 함수 개체입니다.  
   
- `_Part`  
- partitioner 개체에 대한 참조입니다. 인수 중 하나일 수 있습니다 `const` [auto_partitioner](auto-partitioner-class.md)`&`합니다 `const` [static_partitioner](static-partitioner-class.md)`&`하십시오 `const` [simple_ 파티 셔 너](simple-partitioner-class.md) `&` 하거나 [affinity_partitioner](affinity-partitioner-class.md) `&` 경우를 [affinity_partitioner](affinity-partitioner-class.md) 개체는, 참조는 비 const l-value 해야 합니다. 알고리즘을 재사용 하 여 향후의 루프에 대 한 상태를 저장할 수 있도록 참조 합니다.  
+*_Part*<br/>
+partitioner 개체에 대한 참조입니다. 인수 중 하나일 수 있습니다 `const` [auto_partitioner](auto-partitioner-class.md)`&`합니다 `const` [static_partitioner](static-partitioner-class.md)`&`하십시오 `const` [simple_ 파티 셔 너](simple-partitioner-class.md) `&` 하거나 [affinity_partitioner](affinity-partitioner-class.md) `&` 경우를 [affinity_partitioner](affinity-partitioner-class.md) 개체는, 참조는 비 const l-value 해야 합니다. 알고리즘을 재사용 하 여 향후의 루프에 대 한 상태를 저장할 수 있도록 참조 합니다.  
   
 ### <a name="remarks"></a>설명  
  [auto_partitioner](auto-partitioner-class.md) 는 명시적인 partitioner 없이 오버 로드에 사용 됩니다.  
@@ -873,65 +885,65 @@ void parallel_invoke(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Function1`  
- 병렬로 실행 될 첫 번째 함수 개체의 형식입니다.  
+*_Function1*<br/>
+병렬로 실행 될 첫 번째 함수 개체의 형식입니다.  
   
- `_Function2`  
- 병렬로 실행 될 두 번째 함수 개체의 형식입니다.  
+*_Function2*<br/>
+병렬로 실행 될 두 번째 함수 개체의 형식입니다.  
   
- `_Function3`  
- 병렬 실행 수를 세 번째 함수 개체의 형식입니다.  
+*_Function3*<br/>
+병렬 실행 수를 세 번째 함수 개체의 형식입니다.  
   
- `_Function4`  
- 네 번째 병렬로 실행 될 함수 개체의 형식입니다.  
+*_Function4*<br/>
+네 번째 병렬로 실행 될 함수 개체의 형식입니다.  
   
- `_Function5`  
- 병렬로 실행 될 다섯 번째 함수 개체의 형식입니다.  
+*_Function5*<br/>
+병렬로 실행 될 다섯 번째 함수 개체의 형식입니다.  
   
- `_Function6`  
- 병렬로 실행 될 여섯 번째 함수 개체의 형식입니다.  
+*_Function6*<br/>
+병렬로 실행 될 여섯 번째 함수 개체의 형식입니다.  
   
- `_Function7`  
- 일곱 번째 병렬로 실행 될 함수 개체의 형식입니다.  
+*_Function7*<br/>
+일곱 번째 병렬로 실행 될 함수 개체의 형식입니다.  
   
- `_Function8`  
- 병렬로 실행 될 여덟 번째 함수 개체의 형식입니다.  
+*_Function8*<br/>
+병렬로 실행 될 여덟 번째 함수 개체의 형식입니다.  
   
- `_Function9`  
- 병렬로 실행 될 아홉 번째 함수 개체의 형식입니다.  
+*_Function9*<br/>
+병렬로 실행 될 아홉 번째 함수 개체의 형식입니다.  
   
- `_Function10`  
- 병렬로 실행 될 열 번째 함수 개체의 형식입니다.  
+*_Function10*<br/>
+병렬로 실행 될 열 번째 함수 개체의 형식입니다.  
   
- `_Func1`  
- 병렬로 실행 될 첫 번째 함수 개체입니다.  
+*_Func1*<br/>
+병렬로 실행 될 첫 번째 함수 개체입니다.  
   
- `_Func2`  
- 병렬로 실행할 두 번째 함수 개체입니다.  
+*_Func2*<br/>
+병렬로 실행할 두 번째 함수 개체입니다.  
   
- `_Func3`  
- 병렬 실행 수를 세 번째 함수 개체입니다.  
+*_Func3*<br/>
+병렬 실행 수를 세 번째 함수 개체입니다.  
   
- `_Func4`  
- 병렬로 실행 될 네 번째 함수 개체입니다.  
+*_Func4*<br/>
+병렬로 실행 될 네 번째 함수 개체입니다.  
   
- `_Func5`  
- 병렬로 실행 될 다섯 번째 함수 개체입니다.  
+*_Func5*<br/>
+병렬로 실행 될 다섯 번째 함수 개체입니다.  
   
- `_Func6`  
- 병렬 실행에 여섯 번째 함수 개체입니다.  
+*_Func6*<br/>
+병렬 실행에 여섯 번째 함수 개체입니다.  
   
- `_Func7`  
- 동시에 실행할 일곱 번째 함수 개체입니다.  
+*_Func7*<br/>
+동시에 실행할 일곱 번째 함수 개체입니다.  
   
- `_Func8`  
- 병렬로 실행 될 여덟 번째 함수 개체입니다.  
+*_Func8*<br/>
+병렬로 실행 될 여덟 번째 함수 개체입니다.  
   
- `_Func9`  
- 병렬로 실행 될 아홉 번째 함수 개체입니다.  
+*_Func9*<br/>
+병렬로 실행 될 아홉 번째 함수 개체입니다.  
   
- `_Func10`  
- 병렬로 실행 될 열 번째 함수 개체입니다.  
+*_Func10*<br/>
+병렬로 실행 될 열 번째 함수 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  Note는 함수 개체 중 하나 이상을 제공 된 매개 변수 인라인 호출 컨텍스트에서 실행할 수 있습니다.  
@@ -987,29 +999,29 @@ inline void parallel_radixsort(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Random_iterator`  
- 입력 범위의 반복기 형식입니다.  
+*_Random_iterator*<br/>
+입력 범위의 반복기 형식입니다.  
   
- `_Allocator`  
- C + + 표준 라이브러리 호환 메모리 할당자의 형식입니다.  
+*_Allocator*<br/>
+C + + 표준 라이브러리 호환 메모리 할당자의 형식입니다.  
   
- `_Function`  
- 형식 프로젝션 함수입니다.  
+*_Function*<br/>
+형식 프로젝션 함수입니다.  
   
- `_Begin`  
- 저장할 범위의 첫 번째 요소 위치를 주소 지정하는 임의 액세스 반복기입니다.  
+*시작 (_b)*<br/>
+저장할 범위의 첫 번째 요소 위치를 주소 지정하는 임의 액세스 반복기입니다.  
   
- `_End`  
- 저장할 범위의 마지막 요소 하나 다음 위치를 주소 지정하는 임의 액세스 반복기입니다.  
+*(_E)*<br/>
+저장할 범위의 마지막 요소 하나 다음 위치를 주소 지정하는 임의 액세스 반복기입니다.  
   
- `_Alloc`  
- C + + 표준 라이브러리 호환 메모리 할당자의 인스턴스.  
+*_Alloc*<br/>
+C + + 표준 라이브러리 호환 메모리 할당자의 인스턴스.  
   
- `_Proj_func`  
- 정수 계열 값으로 요소를 변환 하는 프로젝션 사용자 정의 함수 개체입니다.  
+*_Proj_func*<br/>
+정수 계열 값으로 요소를 변환 하는 프로젝션 사용자 정의 함수 개체입니다.  
   
- `_Chunk_size`  
- 병렬 실행을 위해 두 개로 분할될 청크의 최소 크기입니다.  
+*_Chunk_size*<br/>
+병렬 실행을 위해 두 개로 분할될 청크의 최소 크기입니다.  
   
 ### <a name="remarks"></a>설명  
  모든 오버 로드 필요 `n * sizeof(T)` 추가 공간을 여기서 `n` 정렬 될 요소의 수 및 `T` 요소 형식입니다. 서명 사용 하 여 단항 프로젝션 함수를 `I _Proj_func(T)` 요소에 지정 된 경우 키를 반환 하는 데 필요한 위치 `T` 의 요소 형식 및 `I` 부호 없는 정수와 유사한 형식입니다.  
@@ -1050,32 +1062,32 @@ inline _Reduce_type parallel_reduce(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Forward_iterator`  
- 입력 범위의 반복기 형식입니다.  
+*_Forward_iterator*<br/>
+입력 범위의 반복기 형식입니다.  
   
- `_Sym_reduce_fun`  
- 대칭 감소 함수의 형식입니다. 이 서명 사용 하 여 함수 형식 이어야 `_Reduce_type _Sym_fun(_Reduce_type, _Reduce_type)`_Reduce_type 인 동일한 id 형식 및 감소의 결과 형식으로, 합니다. 세 번째 오버 로드에 대 한이 일치 해야 출력 유형의 `_Range_reduce_fun`합니다.  
+*_Sym_reduce_fun*<br/>
+대칭 감소 함수의 형식입니다. 이 서명 사용 하 여 함수 형식 이어야 `_Reduce_type _Sym_fun(_Reduce_type, _Reduce_type)`_Reduce_type 인 동일한 id 형식 및 감소의 결과 형식으로, 합니다. 세 번째 오버 로드에 대 한이 일치 해야 출력 유형의 `_Range_reduce_fun`합니다.  
   
- `_Reduce_type`  
- 형식으로 입력을 줄이는 입력된 요소 형식과 다를 수 있습니다. 반환 값 및 id 값은이 형식이 발생 합니다.  
+*_Reduce_type*<br/>
+형식으로 입력을 줄이는 입력된 요소 형식과 다를 수 있습니다. 반환 값 및 id 값은이 형식이 발생 합니다.  
   
- `_Range_reduce_fun`  
- 범위 감소 함수의 형식입니다. 이 서명 사용 하 여 함수 형식 이어야 `_Reduce_type _Range_fun(_Forward_iterator, _Forward_iterator, _Reduce_type)`, _Reduce_type id 형식 및 감소의 결과 형식으로는 동일 합니다.  
+*_Range_reduce_fun*<br/>
+범위 감소 함수의 형식입니다. 이 서명 사용 하 여 함수 형식 이어야 `_Reduce_type _Range_fun(_Forward_iterator, _Forward_iterator, _Reduce_type)`, _Reduce_type id 형식 및 감소의 결과 형식으로는 동일 합니다.  
   
- `_Begin`  
- 입력된 반복기 범위에서 첫 번째 요소를 주소 지정을 줄일 수 있습니다.  
+*시작 (_b)*<br/>
+입력된 반복기 범위에서 첫 번째 요소를 주소 지정을 줄일 수 있습니다.  
   
- `_End`  
- 요소를 줄일 수 범위에서 마지막 요소 하나 다음 위치의 주소를 지정 하는 입력된 반복기입니다.  
+*(_E)*<br/>
+요소를 줄일 수 범위에서 마지막 요소 하나 다음 위치의 주소를 지정 하는 입력된 반복기입니다.  
   
- `_Identity`  
- Id 값을 `_Identity` 감소의 결과 형식과 동일한 형식입니다. 그리고를 `value_type` 첫 번째와 두 번째 오버 로드에 대 한 반복기의 합니다. 세 번째 오버 로드에 대 한 id 값을 감소의 결과 형식과 같은 형식이 있어야 하지만 다를 수 있습니다는 `value_type` 반복기입니다. 적절 한 값이 없어야 되도록 범위 감소 연산자 `_Range_fun`다양 한 종류의 단일 요소에 적용 된 경우 `value_type` id 값을 형식에서 값의 형식 캐스팅을 처럼 및 `value_type` id 형식에 있습니다.  
+*_Identity*<br/>
+Id 값을 `_Identity` 감소의 결과 형식과 동일한 형식입니다. 그리고를 `value_type` 첫 번째와 두 번째 오버 로드에 대 한 반복기의 합니다. 세 번째 오버 로드에 대 한 id 값을 감소의 결과 형식과 같은 형식이 있어야 하지만 다를 수 있습니다는 `value_type` 반복기입니다. 적절 한 값이 없어야 되도록 범위 감소 연산자 `_Range_fun`다양 한 종류의 단일 요소에 적용 된 경우 `value_type` id 값을 형식에서 값의 형식 캐스팅을 처럼 및 `value_type` id 형식에 있습니다.  
   
- `_Sym_fun`  
- 감소의 두 번째에서 사용할 대칭 함수입니다. 자세한 내용은 주의를 참조 하십시오.  
+*_Sym_fun*<br/>
+감소의 두 번째에서 사용할 대칭 함수입니다. 자세한 내용은 주의를 참조 하십시오.  
   
- `_Range_fun`  
- 감소의 첫 번째 단계에서 사용할 함수입니다. 자세한 내용은 주의를 참조 하십시오.  
+*_Range_fun*<br/>
+감소의 첫 번째 단계에서 사용할 함수입니다. 자세한 내용은 주의를 참조 하십시오.  
   
 ### <a name="return-value"></a>반환 값  
  결과 감소입니다.  
@@ -1107,23 +1119,23 @@ inline void parallel_sort(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Random_iterator`  
- 입력 범위의 반복기 형식입니다.  
+*_Random_iterator*<br/>
+입력 범위의 반복기 형식입니다.  
   
- `_Function`  
- 이진 비교 구조 함수의 형식입니다.  
+*_Function*<br/>
+이진 비교 구조 함수의 형식입니다.  
   
- `_Begin`  
- 저장할 범위의 첫 번째 요소 위치를 주소 지정하는 임의 액세스 반복기입니다.  
+*시작 (_b)*<br/>
+저장할 범위의 첫 번째 요소 위치를 주소 지정하는 임의 액세스 반복기입니다.  
   
- `_End`  
- 저장할 범위의 마지막 요소 하나 다음 위치를 주소 지정하는 임의 액세스 반복기입니다.  
+*(_E)*<br/>
+저장할 범위의 마지막 요소 하나 다음 위치를 주소 지정하는 임의 액세스 반복기입니다.  
   
- `_Func`  
- 순서에 따라 연속적인 요소에 대해 충족될 비교 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하여 조건이 충족되면 `true`를 반환하고, 충족되지 않으면 `false`를 반환합니다. 이 비교 함수는 시퀀스의 요소 쌍에 대해 엄밀히 약한 순서를 적용해야 합니다.  
+*_Func*<br/>
+순서에 따라 연속적인 요소에 대해 충족될 비교 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하여 조건이 충족되면 `true`를 반환하고, 충족되지 않으면 `false`를 반환합니다. 이 비교 함수는 시퀀스의 요소 쌍에 대해 엄밀히 약한 순서를 적용해야 합니다.  
   
- `_Chunk_size`  
- 병렬 실행을 위해 두 개로 분할될 청크의 최소 크기입니다.  
+*_Chunk_size*<br/>
+병렬 실행을 위해 두 개로 분할될 청크의 최소 크기입니다.  
   
 ### <a name="remarks"></a>설명  
  첫 번째 오버 로드는 이진 비교 연산자를 사용 하 여 `std::less`입니다.  
@@ -1204,42 +1216,42 @@ _Output_iterator parallel_transform(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Input_iterator1`  
- 첫 번째 입력 반복기 또는 유일한 입력 반복기의 형식입니다.  
+*_Input_iterator1*<br/>
+첫 번째 입력 반복기 또는 유일한 입력 반복기의 형식입니다.  
   
- `_Output_iterator`  
- 출력 반복기의 형식입니다.  
+*_Output_iterator*<br/>
+출력 반복기의 형식입니다.  
   
- `_Unary_operator`  
- 입력 범위의 각 요소에서 실행될 단항 구조 함수의 형식입니다.  
+*_Unary_operator*<br/>
+입력 범위의 각 요소에서 실행될 단항 구조 함수의 형식입니다.  
   
- `_Input_iterator2`  
- 두 번째 입력 반복기의 형식입니다.  
+*_Input_iterator2*<br/>
+두 번째 입력 반복기의 형식입니다.  
   
- `_Binary_operator`  
- 두 소스 범위의 요소에서 쌍 단위로 실행될 이진 구조 함수의 형식입니다.  
+*_Binary_operator*<br/>
+두 소스 범위의 요소에서 쌍 단위로 실행될 이진 구조 함수의 형식입니다.  
   
- `_Partitioner`  
- `first1`  
- 작업을 수행할 첫 번째 소스 범위 또는 유일한 소스 범위의 첫 번째 요소의 위치를 주소 지정하는 입력 반복기입니다.  
+*_Partitioner*<br/>
+*first1*<br/>
+작업을 수행할 첫 번째 소스 범위 또는 유일한 소스 범위의 첫 번째 요소의 위치를 주소 지정하는 입력 반복기입니다.  
   
- `last1`  
- 작업을 수행할 첫 번째 소스 범위 또는 유일한 소스 범위에서 최종 요소의 하나 다음 위치를 주소 지정하는 입력 반복기입니다.  
+*last1*<br/>
+작업을 수행할 첫 번째 소스 범위 또는 유일한 소스 범위에서 최종 요소의 하나 다음 위치를 주소 지정하는 입력 반복기입니다.  
   
- `_Result`  
- 대상 범위의 첫 번째 요소의 위치를 주소 지정하는 출력 반복기입니다.  
+*_Result*<br/>
+대상 범위의 첫 번째 요소의 위치를 주소 지정하는 출력 반복기입니다.  
   
- `_Unary_op`  
- 소스 범위의 각 요소에 적용되는 사용자 정의 단항 함수 개체입니다.  
+*_Unary_op*<br/>
+소스 범위의 각 요소에 적용되는 사용자 정의 단항 함수 개체입니다.  
   
- `_Part`  
- partitioner 개체에 대한 참조입니다. 인수 중 하나일 수 있습니다 `const` [auto_partitioner](auto-partitioner-class.md)`&`합니다 `const` [static_partitioner](static-partitioner-class.md)`&`하십시오 `const` [simple_ 파티 셔 너](simple-partitioner-class.md) `&` 하거나 [affinity_partitioner](affinity-partitioner-class.md) `&` 경우를 [affinity_partitioner](affinity-partitioner-class.md) 개체는, 참조는 비 const l-value 해야 합니다. 알고리즘을 재사용 하 여 향후의 루프에 대 한 상태를 저장할 수 있도록 참조 합니다.  
+*_Part*<br/>
+partitioner 개체에 대한 참조입니다. 인수 중 하나일 수 있습니다 `const` [auto_partitioner](auto-partitioner-class.md)`&`합니다 `const` [static_partitioner](static-partitioner-class.md)`&`하십시오 `const` [simple_ 파티 셔 너](simple-partitioner-class.md) `&` 하거나 [affinity_partitioner](affinity-partitioner-class.md) `&` 경우를 [affinity_partitioner](affinity-partitioner-class.md) 개체는, 참조는 비 const l-value 해야 합니다. 알고리즘을 재사용 하 여 향후의 루프에 대 한 상태를 저장할 수 있도록 참조 합니다.  
   
- `first2`  
- 작업을 수행할 두 번째 소스 범위에서 첫 번째 요소의 위치를 주소 지정하는 입력 반복기입니다.  
+*first2*<br/>
+작업을 수행할 두 번째 소스 범위에서 첫 번째 요소의 위치를 주소 지정하는 입력 반복기입니다.  
   
- `_Binary_op`  
- 두 소스 범위에 쌍 단위 정방향으로 적용되는 사용자 정의 이진 함수 개체입니다.  
+*_Binary_op*<br/>
+두 소스 범위에 쌍 단위 정방향으로 적용되는 사용자 정의 이진 함수 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  함수 개체에 의해 변형된 출력 요소를 받는 대상 범위에서 최종 요소의 하나 다음 위치를 주소 지정하는 출력 반복기입니다.  
@@ -1283,17 +1295,17 @@ T receive(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `T`  
- 페이로드 유형입니다.  
+*T*<br/>
+페이로드 유형입니다.  
   
- `_Src`  
- 포인터 또는 데이터가 예상 되는 원본에 대 한 참조입니다.  
+*_Src*<br/>
+포인터 또는 데이터가 예상 되는 원본에 대 한 참조입니다.  
   
- `_Timeout`  
- 메서드에 없어야 하는 시간 (밀리초)의 데이터에 대해 최대 된 시간입니다.  
+*시간 제한 _t*<br/>
+메서드에 없어야 하는 시간 (밀리초)의 데이터에 대해 최대 된 시간입니다.  
   
- `_Filter_proc`  
- 메시지를 허용 해야 하는지 여부를 결정 하는 필터 함수입니다.  
+*_Filter_proc*<br/>
+메시지를 허용 해야 하는지 여부를 결정 하는 필터 함수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  페이로드 형식의 원본에서 사용 되는 값입니다.  
@@ -1314,14 +1326,14 @@ void run_with_cancellation_token(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Function`  
- 호출될 함수 개체의 형식입니다.  
+*_Function*<br/>
+호출될 함수 개체의 형식입니다.  
   
- `_Func`  
- 실행될 함수 개체입니다. 이 개체는 void(void)의 시그니처가 있는 함수 호출 연산자를 지원해야 합니다.  
+*_Func*<br/>
+실행될 함수 개체입니다. 이 개체는 void(void)의 시그니처가 있는 함수 호출 연산자를 지원해야 합니다.  
   
- `_Ct`  
- 함수 객체의 암시 취소를 제어하는 취소 토큰입니다. 취소 중인 부모 작업 그룹에서 암시적 취소의 가능성 없이 함수 실행을 원할 경우 `cancellation_token::none()`을 사용합니다.  
+*_Ct*<br/>
+함수 객체의 암시 취소를 제어하는 취소 토큰입니다. 취소 중인 부모 작업 그룹에서 암시적 취소의 가능성 없이 함수 실행을 원할 경우 `cancellation_token::none()`을 사용합니다.  
   
 ### <a name="remarks"></a>설명  
  `cancellation_token`가 취소될 때 함수 개체의 중단점이 트리거됩니다. 명시적 토큰 `_Ct`는 부모에 다른 토큰이 있거나 토큰이 없는 경우 부모 취소로부터 `_Func`를 격리합니다.  
@@ -1338,14 +1350,14 @@ bool send(ITarget<T>& _Trg, const T& _Data);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `T`  
- 페이로드 유형입니다.  
+*T*<br/>
+페이로드 유형입니다.  
   
- `_Trg`  
- 포인터 또는 데이터 전송 하는 대상에 대 한 참조입니다.  
+*_Trg*<br/>
+포인터 또는 데이터 전송 하는 대상에 대 한 참조입니다.  
   
- `_Data`  
- 데이터 전송에 대 한 참조입니다.  
+*(_D)*<br/>
+데이터 전송에 대 한 참조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `true` 메시지가 허용 된 경우 `false` 그렇지 않은 경우.  
@@ -1360,7 +1372,8 @@ inline void set_ambient_scheduler(std::shared_ptr<::Concurrency::scheduler_inter
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Scheduler`  
+*_Scheduler*<br/>
+앰비언트 스케줄러 설정입니다.
   
 ##  <a name="set_task_execution_resources"></a>  set_task_execution_resources  
  동시성 런타임 내부 작업자 스레드가 사용하는 실행 리소스를 지정된 선호도 집합으로 제한합니다.  
@@ -1379,14 +1392,14 @@ void __cdecl set_task_execution_resources(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_ProcessAffinityMask`  
- 동시성 런타임의 작업자 스레드를 제한할 선호도 마스크입니다. 동시성 런타임을 현재 프로세서 그룹의 하위 집합으로 제한하려는 경우 하드웨어 스레드 수가 64개보다 많은 시스템에서만 이 메서드를 사용하십시오. 하드웨어 스레드 수가 64개보다 많은 컴퓨터에서는 일반적으로 그룹 선호도 배열을 매개 변수로 사용하는 메서드 버전을 사용해야 합니다.  
+*_ProcessAffinityMask*<br/>
+동시성 런타임의 작업자 스레드를 제한할 선호도 마스크입니다. 동시성 런타임을 현재 프로세서 그룹의 하위 집합으로 제한하려는 경우 하드웨어 스레드 수가 64개보다 많은 시스템에서만 이 메서드를 사용하십시오. 하드웨어 스레드 수가 64개보다 많은 컴퓨터에서는 일반적으로 그룹 선호도 배열을 매개 변수로 사용하는 메서드 버전을 사용해야 합니다.  
   
- `count`  
- `GROUP_AFFINITY` 매개 변수로 지정된 배열에서 `_PGroupAffinity` 항목의 수입니다.  
+*count*<br/>
+`GROUP_AFFINITY` 매개 변수로 지정된 배열에서 `_PGroupAffinity` 항목의 수입니다.  
   
- `_PGroupAffinity`  
- `GROUP_AFFINITY` 항목의 배열입니다.  
+*_PGroupAffinity*<br/>
+`GROUP_AFFINITY` 항목의 배열입니다.  
   
 ### <a name="remarks"></a>설명  
  메서드에 throw 합니다는 [invalid_operation](invalid-operation-class.md) Resource Manager는 호출 시점에 있는 경우 예외와 [invalid_argument](../../../standard-library/invalid-argument-class.md) 예외에 대 한 선호도의 빈 집합에서 결과 지정 하는 경우 리소스입니다.  
@@ -1406,17 +1419,17 @@ inline void swap(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `T`  
- 동시 벡터에 저장 된 요소의 데이터 형식입니다.  
+*T*<br/>
+동시 벡터에 저장 된 요소의 데이터 형식입니다.  
   
- `_Ax`  
- 할당자 유형 동시 벡터입니다.  
+*_Ax*<br/>
+할당자 유형 동시 벡터입니다.  
   
- `_A`  
- 동시 벡터와 교환할 요소가 들어 있는 동시 벡터가 `_B`합니다.  
+*_A*<br/>
+동시 벡터와 교환할 요소가 들어 있는 동시 벡터가 `_B`합니다.  
   
- `_B`  
- 교환할 요소를 제공 하는 동시 벡터 또는 교환할 동시 벡터의 요소가 벡터 `_A`입니다.  
+*_B*<br/>
+교환할 요소를 제공 하는 동시 벡터 또는 교환할 동시 벡터의 요소가 벡터 `_A`입니다.  
   
 ### <a name="remarks"></a>설명  
  템플릿 함수는 컨테이너 클래스의 특수화 된 알고리즘 `concurrent_vector` 멤버 함수를 실행 하려면 `_A`합니다. [concurrent_vector:: swap](concurrent-vector-class.md#swap)( `_B`). 이러한 함수는 컴파일러에서 지정하는 함수 템플릿의 부분 순서 인스턴스입니다. 함수를 호출할 때 템플릿이 고유하게 일치하지 않는 방식으로 템플릿 함수가 오버로드되면 컴파일러는 템플릿 함수의 가장 특수화된 버전을 선택합니다. 템플릿 함수의 일반 버전인 `template <class T> void swap(T&, T&)`, 알고리즘에서 클래스 할당으로 작동 하며 속도가 느린 작업입니다. 각 컨테이너의 특수화된 버전은 컨테이너 클래스의 내부 표현을 사용할 수 있으므로 속도가 훨씬 빠릅니다.  
@@ -1433,10 +1446,13 @@ task<_TaskType> task_from_exception(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_TaskType`  
- `_ExType`  
- `_Exception`  
- `_TaskOptions`  
+*_TaskType*<br/>
+
+*_ExType*<br/>
+
+*_Exception*<br/>
+
+*_TaskOptions*<br/>
   
 ### <a name="return-value"></a>반환 값  
   
@@ -1455,9 +1471,11 @@ inline task<void> task_from_result(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `T`  
- `_Param`  
- `_TaskOptions`  
+*T*<br/>
+
+*되므로*<br/>
+
+*_TaskOptions*<br/>
   
 ### <a name="return-value"></a>반환 값  
   
@@ -1472,14 +1490,14 @@ void Trace_agents_register_name(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `T`  
- 개체의 형식입니다. 일반적으로 메시지 블록 또는 에이전트입니다.  
+*T*<br/>
+개체의 형식입니다. 일반적으로 메시지 블록 또는 에이전트입니다.  
   
- `_PObject`  
- 추적에 명명된 에이전트 또는 메시지 블록에 대한 포인터입니다.  
+*_PObject*<br/>
+추적에 명명된 에이전트 또는 메시지 블록에 대한 포인터입니다.  
   
- `_Name`  
- 지정된 개체의 이름입니다.  
+*이름 (_n)*<br/>
+지정된 개체의 이름입니다.  
   
 ##  <a name="try_receive"></a>  try_receive  
  컨텍스트에서 정확히 한 소스의 데이터를 찾고 허용되는 값을 필터링할 수 있게 하는 일반 try-receive 구현입니다. 데이터가 준비되지 않은 경우 메서드가 false를 반환합니다.  
@@ -1505,17 +1523,17 @@ bool try_receive(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `T`  
- 페이로드 형식  
+*T*<br/>
+페이로드 형식  
   
- `_Src`  
- 포인터 또는 데이터가 예상 되는 원본에 대 한 참조입니다.  
+*_Src*<br/>
+포인터 또는 데이터가 예상 되는 원본에 대 한 참조입니다.  
   
- `_value`  
- 결과 배치할 위치에 대 한 참조입니다.  
+*이름이 _value*<br/>
+결과 배치할 위치에 대 한 참조입니다.  
   
- `_Filter_proc`  
- 메시지를 허용 해야 하는지 여부를 결정 하는 필터 함수입니다.  
+*_Filter_proc*<br/>
+메시지를 허용 해야 하는지 여부를 결정 하는 필터 함수입니다.  
   
 ### <a name="return-value"></a>반환 값  
  A `bool` 페이로드가에 있는지 여부를 나타내는 값 `_value`합니다.  
@@ -1531,8 +1549,8 @@ void __cdecl wait(unsigned int _Milliseconds);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Milliseconds`  
- 현재 컨텍스트가 일시 중지되어야 하는 시간(밀리초)입니다. `_Milliseconds` 매개 변수의 값이 `0`으로 설정된 경우 현재 컨텍스트는 계속하기 전에 다른 실행 가능한 컨텍스트에 실행을 양보해야 합니다.  
+*_Milliseconds*<br/>
+현재 컨텍스트가 일시 중지되어야 하는 시간(밀리초)입니다. `_Milliseconds` 매개 변수의 값이 `0`으로 설정된 경우 현재 컨텍스트는 계속하기 전에 다른 실행 가능한 컨텍스트에 실행을 양보해야 합니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 동시성 런타임 스케줄러 컨텍스트에서 스케줄러 내부 리소스에서 실행 하는 다른 컨텍스트를 찾을 수 있습니다. 스케줄러는 본질적으로 협조적이기 때문에 이 컨텍스트는 지정된 시간(밀리초) 후에 정확하게 다시 시작할 수 없습니다. 스케줄러가 스케줄러에 협조적으로 양보하지 않는 다른 작업을 실행 중인 경우 대기 기간이 무한할 수 있습니다.  
@@ -1551,16 +1569,17 @@ auto when_all(
 ```   
   
 ### <a name="parameters"></a>매개 변수  
- `_Iterator`  
- 입력 반복기의 형식입니다.  
+*_Iterator*<br/>
+입력 반복기의 형식입니다.  
   
- `_Begin`  
- 결과 작업으로 결합되는 요소 범위 내 첫 번째 요소의 위치입니다.  
+*시작 (_b)*<br/>
+결과 작업으로 결합되는 요소 범위 내 첫 번째 요소의 위치입니다.  
   
- `_End`  
- 결과 작업으로 결합되는 요소 범위를 벗어나는 첫 번째 요소의 위치입니다.  
+*(_E)*<br/>
+결과 작업으로 결합되는 요소 범위를 벗어나는 첫 번째 요소의 위치입니다.  
   
- `_TaskOptions`  
+*_TaskOptions*<br/>
+`task_options` 개체
   
 ### <a name="return-value"></a>반환 값  
  모든 입력 작업이 성공적으로 완료되는 경우 완료되는 작업입니다. 입력 작업이 `T` 형식이면 이 함수의 출력은 `task<std::vector<T>>`가 됩니다. 입력 작업이 `void` 형식이면 이 함수의 출력 작업도 `task<void>`가 됩니다.  
@@ -1598,18 +1617,18 @@ auto when_any(
 ```   
   
 ### <a name="parameters"></a>매개 변수  
- `_Iterator`  
- 입력 반복기의 형식입니다.  
+*_Iterator*<br/>
+입력 반복기의 형식입니다.  
   
- `_Begin`  
- 결과 작업으로 결합되는 요소 범위 내 첫 번째 요소의 위치입니다.  
+*시작 (_b)*<br/>
+결과 작업으로 결합되는 요소 범위 내 첫 번째 요소의 위치입니다.  
   
- `_End`  
- 결과 작업으로 결합되는 요소 범위를 벗어나는 첫 번째 요소의 위치입니다.  
+*(_E)*<br/>
+결과 작업으로 결합되는 요소 범위를 벗어나는 첫 번째 요소의 위치입니다.  
   
- `_TaskOptions`  
- `_CancellationToken`  
- 반환된 작업의 취소를 제어하는 취소 토큰입니다. 취소 토큰을 제공하지 않으면 결과 작업은 작업의 취소 토큰을 받으므로 완료됩니다.  
+*_TaskOptions*<br/>
+*_CancellationToken*<br/>
+반환된 작업의 취소를 제어하는 취소 토큰입니다. 취소 토큰을 제공하지 않으면 결과 작업은 작업의 취소 토큰을 받으므로 완료됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  두 입력 작업 중 하나라도 성공적으로 완료되는 경우 완료되는 작업입니다. 입력 작업이 `T` 형식이면 이 함수의 출력은 `task<std::pair<T, size_t>>>`이 되며, 여기서 쌍의 첫 번째 요소는 완료되는 작업의 결과이고 두 번째 요소는 완료된 작업의 인덱스입니다. 입력 작업이 `void` 형식이면 출력은 `task<size_t>`이 됩니다. 여기서 결과는 완료되는 작업의 인덱스입니다.  

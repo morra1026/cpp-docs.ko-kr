@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e837e15f934e53f7b1d06a94efb4a320f2e8407
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 48303c6115ac1d2314e3038556b8f98330a6182e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757896"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062672"
 ---
 # <a name="cwintraitsor-class"></a>CWinTraitsOR 클래스
 
@@ -45,10 +45,10 @@ class CWinTraitsOR
 
 #### <a name="parameters"></a>매개 변수
 
-*t_dwStyle*  
+*t_dwStyle*<br/>
 기본 창 스타일입니다.
 
-*t_dwExStyle*  
+*t_dwExStyle*<br/>
 기본 확장된 창 스타일입니다.
 
 ## <a name="members"></a>멤버
@@ -82,7 +82,7 @@ static DWORD GetWndStyle(DWORD dwStyle);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwStyle*  
+*dwStyle*<br/>
 창의 생성에 사용 되는 스타일입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -99,7 +99,7 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwExStyle*  
+*dwExStyle*<br/>
 확장된 스타일 창 만들기에 사용 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -108,6 +108,6 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 개요](../../atl/atl-class-overview.md)   
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [창 특성 이해](../../atl/understanding-window-traits.md)
 

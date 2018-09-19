@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 392e9dc2997dc7f4f0f36b1d7d38cd8ecdc691bb
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ac285921500107b85c30eba4d2f1940c93721d0a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759534"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113060"
 ---
 # <a name="atlfuncinfo-structure"></a>_ATL_FUNC_INFO 구조체
 
@@ -43,16 +43,16 @@ struct _ATL_FUNC_INFO {
 
 ## <a name="members"></a>멤버
 
-`cc`  
+`cc`<br/>
 호출 규칙. 이 구조를 사용 하는 경우는 [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) 클래스를이 멤버는 CC_STDCALL 이어야 합니다. `CC_CDECL` Windows CE에서 지원 되는 유일한 옵션은는 `CALLCONV` 필드는 `_ATL_FUNC_INFO` 구조입니다. 다른 값 지원 되지 않습니다. 따라서 해당 동작이 정의 되지 않았습니다.
 
-`vtReturn`  
+`vtReturn`<br/>
 Variant 형식 함수 값을 반환 합니다.
 
-`nParams`  
+`nParams`<br/>
 함수 매개 변수의 수입니다.
 
-`pVarTypes`  
+`pVarTypes`<br/>
 함수 매개 변수의 variant 형식의 배열입니다.
 
 ## <a name="remarks"></a>설명
@@ -75,7 +75,7 @@ IDL에 정의 하는 dispinterface 메서드를 제공 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 및 구조체](../../atl/reference/atl-classes.md)  
-[IDispEventSimpleImpl 클래스](../../atl/reference/idispeventsimpleimpl-class.md)   
+[클래스 및 구조체](../../atl/reference/atl-classes.md)<br/>
+[IDispEventSimpleImpl 클래스](../../atl/reference/idispeventsimpleimpl-class.md)<br/>
 [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)
 

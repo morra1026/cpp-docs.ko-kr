@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f68c22ff88ac92357dabfef8076c160271a76378
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 12976bcf796466f959807f7ac2fb52257889454b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756492"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025544"
 ---
 # <a name="connection-point-global-functions"></a>연결 지점 전역 함수
 
@@ -59,16 +59,16 @@ HRESULT    AtlAdvise(
 
 ### <a name="parameters"></a>매개 변수
 
-*pUnkCP*  
+*pUnkCP*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 개체의 클라이언트가 연결 하려고 합니다.
 
-*pUnk*  
+*pUnk*<br/>
 [in] 클라이언트에 대 한 포인터 `IUnknown`합니다.
 
-*iid*  
+*iid*<br/>
 [in] 연결 지점의 GUID입니다. 일반적으로 이것이 연결 지점에서 관리 되는 송신 인터페이스와 동일 합니다.
 
-*pdw*  
+*pdw*<br/>
 [out] 연결을 고유 하 게 식별 하는 쿠키에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -99,13 +99,13 @@ HRESULT    AtlUnadvise(
 
 ### <a name="parameters"></a>매개 변수
 
-*pUnkCP*  
+*pUnkCP*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 클라이언트와 연결 된 개체입니다.
 
-*iid*  
+*iid*<br/>
 [in] 연결 지점의 GUID입니다. 일반적으로 이것이 연결 지점에서 관리 되는 송신 인터페이스와 동일 합니다.
 
-*dw*  
+*dw*<br/>
 [in] 연결을 고유 하 게 식별 하는 쿠키입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -129,10 +129,10 @@ HRESULT AtlAdviseSinkMap(T* pT, bool bAdvise);
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*  
+*(태평양 표준시)*<br/>
 [in] 싱크 맵이 포함 된 개체에 대 한 포인터입니다.
 
-*bAdvise*  
+*bAdvise*<br/>
 [in] 모든 경우에 TRUE 싱크 항목이 알림을 받을 수 있습니다. 권장 되지 싱크 항목이 모든 경우에 FALSE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -145,5 +145,5 @@ HRESULT AtlAdviseSinkMap(T* pT, bool bAdvise);
 
 ## <a name="see-also"></a>참고 항목
 
-[함수](../../atl/reference/atl-functions.md)   
+[함수](../../atl/reference/atl-functions.md)<br/>
 [연결 지점 매크로](../../atl/reference/connection-point-macros.md)

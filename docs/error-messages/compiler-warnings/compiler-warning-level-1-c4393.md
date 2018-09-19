@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59a1022f54d22e97a11c0970cad6bcd8918c7190
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 79a77e73e87d8ebc6a4bcff76fba296188233c1c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33277942"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053858"
 ---
 # <a name="compiler-warning-level-1-c4393"></a>컴파일러 경고(수준 1) C4393
-'var': const; 리터럴 데이터 멤버에 영향을 주지 무시  
-  
- A [리터럴](../../windows/literal-cpp-component-extensions.md) 데이터 멤버를 const로 지정 합니다.  리터럴 데이터 멤버를 const 함축 이후 필요가 없습니다 추가할에 상수를 선언 합니다.  
-  
- 다음 샘플에서는 C4393 오류가 생성 됩니다.  
-  
-```  
-// C4393.cpp  
-// compile with: /clr /W1 /c  
-ref struct Y1 {  
-   literal const int staticConst = 10;   // C4393  
-   literal int staticConst2 = 10;   // OK  
-};  
+
+'var': const 리터럴 데이터 멤버에 영향을 주지 무시
+
+A [리터럴](../../windows/literal-cpp-component-extensions.md) 데이터 멤버를 const로 지정 합니다.  리터럴 데이터 멤버를 const 의미 하므로 없습니다 필요가 추가 선언에 const를 합니다.
+
+다음 샘플에서는 C4393 오류가 생성 됩니다.
+
+```
+// C4393.cpp
+// compile with: /clr /W1 /c
+ref struct Y1 {
+   literal const int staticConst = 10;   // C4393
+   literal int staticConst2 = 10;   // OK
+};
 ```

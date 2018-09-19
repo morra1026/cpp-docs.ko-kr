@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54ba1c5b161b4a708b73cd20bc6a4a730b8a1401
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7018beef36004e3bcd6f276236b17b7110585c29
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33163618"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053000"
 ---
 # <a name="compiler-error-c2056"></a>컴파일러 오류 C2056
-잘못 된 식  
-  
- 이전 오류로 인해 식을 잘못 되었습니다.
+
+식이 잘못 되었습니다.
+
+이전 오류로 인해 식을 잘못 되었습니다.

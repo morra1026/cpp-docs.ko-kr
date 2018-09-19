@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3faf350fa14156a82218fed506f50e45084501dc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 77e5db3859e0ada60999f329fddc82926b607579
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295703"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081041"
 ---
 # <a name="expression-evaluator-error-cxx0002"></a>식 계산기 오류 CXX0002
-사용자 메모리에 액세스 하는 오류  
-  
- 식은 디버깅 중인 프로그램에 할당 되지 않은 메모리 참조 하려고 합니다.  
-  
- 이 오류는 can0002와 동일 합니다.
+
+사용자 메모리에 액세스 하는 오류
+
+식은 디버깅 중인 프로그램에 할당 되지 않은 메모리를 참조 하려고 합니다.
+
+이 오류는 can0002와 동일 합니다.

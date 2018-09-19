@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a20a965fba2f914c0d6e4e940479963485bf9926
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: aaafc5bac40a7322afb54675c7774231edd324f4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195453"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021462"
 ---
 # <a name="compiler-error-c2408"></a>컴파일러 오류 C2408
-'context'에서 PTR 연산자의 형식이 잘못되었습니다.  
-  
- `PTR` 연산자의 첫 번째 매개 변수가 잘못된 형식 사양입니다.
+
+'context'에서 PTR 연산자의 형식이 잘못되었습니다.
+
+`PTR` 연산자의 첫 번째 매개 변수가 잘못된 형식 사양입니다.

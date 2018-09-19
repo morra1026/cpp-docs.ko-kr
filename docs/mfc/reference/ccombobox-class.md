@@ -118,12 +118,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4fc2eb252c81e903174d99d4a55b2f3c1eed321
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 4b0226e38b34268217b4f21a1f5262cd1f1afbec
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43205289"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702093"
 ---
 # <a name="ccombobox-class"></a>CComboBox 클래스
 Windows 콤보 상자의 기능을 제공합니다.  
@@ -612,8 +612,8 @@ BOOL GetCueBanner(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out] *lpszText*|큐 배너 텍스트를 받는 버퍼에 대 한 포인터입니다.|  
-|[in] *cchText*|버퍼의 크기는 합니다 *lpszText* 매개 변수를 가리킵니다.|  
+|*lpszText*|[out] 큐 배너 텍스트를 받는 버퍼에 대 한 포인터입니다.|  
+|*cchText*|[in] 버퍼의 크기는 합니다 *lpszText* 매개 변수를 가리킵니다.|  
   
 ### <a name="return-value"></a>반환 값  
  첫 번째 오버 로드에는 [CString](../../atl-mfc-shared/using-cstring.md) ; 있으면 큐 배너 텍스트를 포함 하는 개체가 고, 그렇지는 `CString` 개체의 길이 0입니다.  
@@ -1048,7 +1048,7 @@ BOOL SetCueBanner(LPCTSTR lpszText);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *lpszText*|큐 텍스트를 포함 하는 null로 끝나는 버퍼에 대 한 포인터입니다.|  
+|*lpszText*|[in] 큐 텍스트를 포함 하는 null로 끝나는 버퍼에 대 한 포인터입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1291,7 +1291,7 @@ BOOL SetMinVisibleItems(int iMinVisible);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iMinVisible*|표시 된 항목의 최소 수를 지정 합니다.|  
+|*iMinVisible*|[in] 표시 된 항목의 최소 수를 지정 합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  

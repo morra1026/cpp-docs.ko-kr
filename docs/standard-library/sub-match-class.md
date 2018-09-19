@@ -30,12 +30,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 132498c5773e4cce1fd178573698b62e874dda48
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: d2349beadb5983c85059be83ee5a933689913886
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691616"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722724"
 ---
 # <a name="submatch-class"></a>sub_match 클래스
 
@@ -51,8 +51,8 @@ class sub_match
 
 ## <a name="parameters"></a>매개 변수
 
-*BidIt*  
- 부분 일치에 대한 반복기 형식입니다.
+*BidIt*<br/>
+부분 일치에 대한 반복기 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -159,14 +159,14 @@ int compare(const value_type *ptr) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*  
- 비교할 부분 일치입니다.
+*right*<br/>
+비교할 부분 일치입니다.
 
-*str*  
- 비교할 문자열입니다.
+*str*<br/>
+비교할 문자열입니다.
 
-*ptr*  
- 비교할 null 종료 시퀀스입니다.
+*ptr*<br/>
+비교할 null 종료 시퀀스입니다.
 
 ### <a name="remarks"></a>설명
 

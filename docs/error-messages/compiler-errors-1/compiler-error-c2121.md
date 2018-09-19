@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0fa7015880eee512cfdcaf6284c79b9c5965bb40
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4e40451a70744b7918301cd6dfa837df1295cea8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33166132"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042405"
 ---
 # <a name="compiler-error-c2121"></a>컴파일러 오류 C2121
-'#': 잘못 된 문자: 매크로 확장의 결과  
-  
- 잘못 된 매크로가 문자열 화 연산자 대신 토큰 붙여넣기 연산자 (#)를 사용 하 여 잘못 된 # 문자 삽입 (#).
+
+'#': 잘못 된 문자: 매크로 확장의 결과 수
+
+잘못 된 # 문자는 문자열 화 연산자 대신 토큰 붙여넣기 연산자 (#)를 사용 하는 잘못 된 매크로를 삽입 될 수 있습니다 (#).

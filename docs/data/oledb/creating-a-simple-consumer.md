@@ -15,51 +15,52 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e9f7c5a51765e2ce29df503aeefa9f850b71b1d4
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 091a529bdd8eb80158fc093fd450e496bc4f18c2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339856"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052350"
 ---
 # <a name="creating-a-simple-consumer"></a>단순 소비자 만들기
+
 OLE DB 템플릿 소비자를 생성 하는 ATL 프로젝트 마법사 및 ATL OLE DB 소비자 마법사를 사용 합니다.  
   
 ### <a name="to-create-a-console-application-for-an-ole-db-consumer"></a>OLE DB 소비자에 대 한 콘솔 응용 프로그램을 만들려면  
   
-1.  **파일** 메뉴에서 **새로 만들기**를 클릭한 다음 **프로젝트**를 클릭합니다.  
+1. **파일** 메뉴에서 **새로 만들기**를 클릭한 다음 **프로젝트**를 클릭합니다.  
   
      **새 프로젝트** 대화 상자가 나타납니다.  
   
-2.  프로젝트 형식 창에서 클릭 합니다 **Visual c + + 프로젝트** 폴더를 마우스 클릭 합니다 **Win32 프로젝트** 템플릿 창에서 아이콘입니다. 에 **이름을** 상자에 예를 들어 프로젝트의 이름을 입력 합니다 **MyCons**합니다.  
+1. 프로젝트 형식 창에서 클릭 합니다 **Visual c + + 프로젝트** 폴더를 마우스 클릭 합니다 **Win32 프로젝트** 템플릿 창에서 아이콘입니다. 에 **이름을** 상자에 예를 들어 프로젝트의 이름을 입력 합니다 **MyCons**합니다.  
   
-3.  **확인**을 클릭합니다.  
+1. **확인**을 클릭합니다.  
   
      Win32 프로젝트 마법사가 나타납니다.  
   
-4.  에 **응용 프로그램 설정** 페이지에서 **콘솔 응용 프로그램**를 선택한 후 **ATL에 대 한 지원을 추가**합니다.  
+1. 에 **응용 프로그램 설정** 페이지에서 **콘솔 응용 프로그램**를 선택한 후 **ATL에 대 한 지원을 추가**합니다.  
   
-5.  클릭 **완료** 마법사를 닫고 프로젝트를 생성 합니다.  
+1. 클릭 **완료** 마법사를 닫고 프로젝트를 생성 합니다.  
   
- 다음으로, ATL OLE DB 소비자 마법사를 사용 하 여 OLE DB 소비자 개체를 추가 합니다.  
+다음으로, ATL OLE DB 소비자 마법사를 사용 하 여 OLE DB 소비자 개체를 추가 합니다.  
   
 #### <a name="to-create-a-consumer-with-the-atl-ole-db-consumer-wizard"></a>ATL OLE DB 소비자 마법사를 사용 하 여 소비자를 만들려면  
   
-1.  클래스 뷰를 마우스 오른쪽 단추로 클릭는 `MyCons` 프로젝트입니다.  
+1. 클래스 뷰를 마우스 오른쪽 단추로 클릭는 `MyCons` 프로젝트입니다.  
   
-2.  바로 가기 메뉴에서 클릭 **추가**를 클릭 하 고 **클래스 추가**합니다.  
+1. 바로 가기 메뉴에서 클릭 **추가**를 클릭 하 고 **클래스 추가**합니다.  
   
      합니다 **클래스 추가** 대화 상자가 나타납니다.  
   
-3.  범주 창에서 클릭 **Visual c + +** 를 클릭 합니다 **ATL OLE DB 소비자** 클릭 한 다음 확인 하 고 템플릿 창에서 아이콘 **열기**합니다.  
+1. 범주 창에서 클릭 **Visual c + +** 를 클릭 합니다 **ATL OLE DB 소비자** 클릭 한 다음 확인 하 고 템플릿 창에서 아이콘 **열기**합니다.  
   
      ATL OLE DB 소비자 마법사가 나타납니다.  
   
-4.  클릭 합니다 **데이터 원본** 단추입니다.  
+1. 클릭 합니다 **데이터 원본** 단추입니다.  
   
      합니다 **데이터 연결 속성** 대화 상자가 나타납니다.  
   
-5.  에 **데이터 연결 속성** 대화 상자에서 다음을 수행 합니다.  
+1. 에 **데이터 연결 속성** 대화 상자에서 다음을 수행 합니다.  
   
     -   에 **공급자** 탭에서 OLE DB 공급자를 지정 합니다.  
   
@@ -78,11 +79,11 @@ OLE DB 템플릿 소비자를 생성 하는 ATL 프로젝트 마법사 및 ATL O
   
      합니다 **데이터베이스 개체 선택** 대화 상자가 나타납니다.  
   
-6.  트리 컨트롤을 사용 하 여 테이블, 뷰 또는 저장된 프로시저를 선택 합니다. 이 절차를 위해 Northwind 데이터베이스의 Products 테이블을 선택 합니다.  
+1. 트리 컨트롤을 사용 하 여 테이블, 뷰 또는 저장된 프로시저를 선택 합니다. 이 절차를 위해 Northwind 데이터베이스의 Products 테이블을 선택 합니다.  
   
-7.  **확인**을 클릭합니다. ATL OLE DB 소비자 마법사 돌아갑니다.  
+1. **확인**을 클릭합니다. ATL OLE DB 소비자 마법사 돌아갑니다.  
   
-8.  마법사 완료의 이름을 `Class` 하 고 **.h 파일** 또는 저장 프로시저 선택한 테이블, 뷰 이름에 따라 합니다. 원하는 경우이 이름을 편집할 수 있습니다.  
+1. 마법사 완료의 이름을 `Class` 하 고 **.h 파일** 또는 저장 프로시저 선택한 테이블, 뷰 이름에 따라 합니다. 원하는 경우이 이름을 편집할 수 있습니다.  
   
 9. 선택을 취소 합니다 **특성 사용** 마법사를 사용 하 여 소비자 코드를 만들 수 있도록 확인란 [OLE DB 템플릿 클래스](../../data/oledb/ole-db-consumer-templates-reference.md) 기본값 대신 [OLE DB 소비자 특성](../../windows/ole-db-consumer-attributes.md)합니다.  
   
@@ -96,7 +97,7 @@ OLE DB 템플릿 소비자를 생성 하는 ATL 프로젝트 마법사 및 ATL O
   
 12. 클릭 **완료** 여 소비자를 만듭니다.  
   
- 에 표시 된 대로 마법사를 명령 클래스 및 사용자 레코드 클래스를 생성 [소비자 마법사 생성 클래스](../../data/oledb/consumer-wizard-generated-classes.md)합니다. 명령 클래스 이름에 입력 해야 합니다.는 `Class` 마법사에서 상자 (여기서 `CProducts`), 사용자 레코드 클래스 형식의 이름을 갖습니다 "*ClassName*접근자" (이 예제의 경우 `CProductsAccessor`).  
+에 표시 된 대로 마법사를 명령 클래스 및 사용자 레코드 클래스를 생성 [소비자 마법사 생성 클래스](../../data/oledb/consumer-wizard-generated-classes.md)합니다. 명령 클래스 이름에 입력 해야 합니다.는 `Class` 마법사에서 상자 (여기서 `CProducts`), 사용자 레코드 클래스 형식의 이름을 갖습니다 "*ClassName*접근자" (이 예제의 경우 `CProductsAccessor`).  
   
 > [!NOTE]
 >  마법사에 다음 줄을 Products.h 넣습니다.  
@@ -109,4 +110,5 @@ OLE DB 템플릿 소비자를 생성 하는 ATL 프로젝트 마법사 및 ATL O
 >  이 줄 소비자 응용 프로그램이 컴파일되지 않도록 방지 하 고 하드 코드 된 암호에 대 한 연결 문자열에 체크 인할 수를 표시 합니다. 연결 문자열을 확인 한 후이 코드 줄을 제거할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [마법사를 사용하여 OLE DB 소비자 만들기](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)
+
+[마법사를 사용하여 OLE DB 소비자 만들기](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

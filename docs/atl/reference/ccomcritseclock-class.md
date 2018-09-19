@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d06b34099ecdb9c61d3580586bcb3bcd73eaf709
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ab3c4b349b64b96b8aeb7a53d6bf8809f41cea7b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755049"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097785"
 ---
 # <a name="ccomcritseclock-class"></a>CComCritSecLock 클래스
 
@@ -39,7 +39,7 @@ template<class TLock> class CComCritSecLock
 
 #### <a name="parameters"></a>매개 변수
 
-*TLock*  
+*TLock*<br/>
 개체 잠금 또는 잠금 해제 수입니다.
 
 ## <a name="members"></a>멤버
@@ -76,10 +76,10 @@ CComCritSecLock(TLock& cs, bool bInitialLock = true);
 
 ### <a name="parameters"></a>매개 변수
 
-*cs*  
+*cs*<br/>
 임계 영역 개체입니다.
 
-*bInitialLock*  
+*bInitialLock*<br/>
 초기 잠금 상태: **true** 잠긴 의미 합니다.
 
 ### <a name="remarks"></a>설명
@@ -128,5 +128,5 @@ void Unlock() throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[CComCriticalSection 클래스](../../atl/reference/ccomcriticalsection-class.md)   
+[CComCriticalSection 클래스](../../atl/reference/ccomcriticalsection-class.md)<br/>
 [CComAutoCriticalSection 클래스](../../atl/reference/ccomautocriticalsection-class.md)

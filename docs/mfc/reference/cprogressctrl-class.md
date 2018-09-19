@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c4ea8cf95298918088f54c3099a8f41d9c16ca9
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: f20a5f2767da015bb92a8e64491c2e5226f58aa5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690154"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705915"
 ---
 # <a name="cprogressctrl-class"></a>CProgressCtrl 클래스
 Windows의 공용 진행률 표시줄 컨트롤의 기능을 제공합니다.  
@@ -347,7 +347,7 @@ COLORREF SetBarColor(COLORREF clrBar);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *clrBar*|A [COLORREF](/windows/desktop/gdi/colorref) 새로운 진행률 표시줄의 색을 지정 하는 값입니다. 기본 색을 사용 하 여 진행률 표시줄이 시킬 CLR_DEFAULT를 지정 합니다.|  
+|*clrBar*|[in] A [COLORREF](/windows/desktop/gdi/colorref) 새로운 진행률 표시줄의 색을 지정 하는 값입니다. 기본 색을 사용 하 여 진행률 표시줄이 시킬 CLR_DEFAULT를 지정 합니다.|  
   
 ### <a name="return-value"></a>반환 값  
 
@@ -399,8 +399,8 @@ BOOL SetMarquee(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *fMarqueeMode*|설정 움직이는 텍스트 모드를 켜 짐 또는 움직이는 텍스트 모드를 해제 하려면 FALSE true로 설정 하면입니다.|  
-|[in] *n 간격*|움직이는 텍스트 애니메이션의 업데이트 간격 (밀리초) 시간입니다.|  
+|*fMarqueeMode*|[in] 설정 움직이는 텍스트 모드를 켜 짐 또는 움직이는 텍스트 모드를 해제 하려면 FALSE true로 설정 하면입니다.|  
+|*n 간격*|[in] 움직이는 텍스트 애니메이션의 업데이트 간격 (밀리초) 시간입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 항상 TRUE를 반환 합니다.  
@@ -478,7 +478,7 @@ int SetState(int iState);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iState*|진행률 표시줄을 설정할 상태입니다. 다음 값 중 하나를 사용합니다.<br /><br /> -PBST_NORMAL-진행 중<br />-PBST_ERROR-오류<br />-PBST_PAUSED-일시 중지|  
+|*iState*|[in] 상태 진행률 표시줄 설정입니다. 다음 값 중 하나를 사용합니다.<br /><br /> -PBST_NORMAL-진행 중<br />-PBST_ERROR-오류<br />-PBST_PAUSED-일시 중지|  
   
 ### <a name="return-value"></a>반환 값  
  현재 진행률 표시줄 컨트롤의 이전 상태입니다.  

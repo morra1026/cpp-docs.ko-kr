@@ -44,12 +44,12 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_entry::operator&gt;=
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c61d69c1ee5ad40191771dabd829514e3381e88
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: 46a031b727f5c592925aaa4d343fc1299f6d4cdf
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691408"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701521"
 ---
 # <a name="directoryentry-class"></a>directory_entry 클래스
 
@@ -115,13 +115,13 @@ void assign(const std::experimental::filesystem::path& pval,
 ### <a name="parameters"></a>매개 변수
 
 *pval*<br/>
-저장 된 파일 이름 경로입니다.  
+저장 된 파일 이름 경로입니다.
 
 *stat_arg로*<br/>
-상태 저장된 된 파일 이름입니다.  
+상태 저장된 된 파일 이름입니다.
 
 *symstat_arg로*<br/>
-저장 된 파일 이름의 기호화 된 링크 상태입니다.  
+저장 된 파일 이름의 기호화 된 링크 상태입니다.
 
 ## <a name="directory_entry"></a> directory_entry
 
@@ -139,13 +139,13 @@ explicit directory_entry(const std::experimental::filesystem::path& pval,
 ### <a name="parameters"></a>매개 변수
 
 *pval*<br/>
-저장 된 파일 이름 경로입니다.  
+저장 된 파일 이름 경로입니다.
 
 *stat_arg로*<br/>
-상태 저장된 된 파일 이름입니다.  
+상태 저장된 된 파일 이름입니다.
 
 *symstat_arg로*<br/>
-저장 된 파일 이름의 기호화 된 링크 상태입니다.  
+저장 된 파일 이름의 기호화 된 링크 상태입니다.
 
 ## <a name="op_neq"></a> operator!=
 
@@ -158,7 +158,7 @@ bool operator!=(const directory_entry& right) const noexcept;
 ### <a name="parameters"></a>매개 변수
 
 *right*<br/>
-합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.  
+합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.
 
 ## <a name="op_as"></a> 연산자 =
 
@@ -172,7 +172,7 @@ directory_entry& operator=(directory_entry&&) noexcept = default;
 ### <a name="parameters"></a>매개 변수
 
 *right*<br/>
-합니다 [directory_entry](../standard-library/directory-entry-class.md) 에 복사 되는 `directory_entry`합니다.  
+합니다 [directory_entry](../standard-library/directory-entry-class.md) 에 복사 되는 `directory_entry`합니다.
 
 ## <a name="op_eq"></a> 연산자 = =
 
@@ -185,7 +185,7 @@ bool operator==(const directory_entry& right) const noexcept;
 ### <a name="parameters"></a>매개 변수
 
 *right*<br/>
-합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.  
+합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.
 
 ## <a name="op_lt"></a> 연산자&lt;
 
@@ -198,7 +198,7 @@ bool operator<(const directory_entry& right) const noexcept;
 ### <a name="parameters"></a>매개 변수
 
 *right*<br/>
-합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.  
+합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.
 
 ## <a name="op_lteq"></a> 연산자&lt;=
 
@@ -211,7 +211,7 @@ bool operator&lt;=(const directory_entry& right) const noexcept;
 ### <a name="parameters"></a>매개 변수
 
 *right*<br/>
-합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.  
+합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.
 
 ## <a name="op_gt"></a> 연산자&gt;
 
@@ -224,7 +224,7 @@ bool operator&gt;(const directory_entry& right) const noexcept;
 ### <a name="parameters"></a>매개 변수
 
 *right*<br/>
-합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.  
+합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.
 
 ## <a name="op_gteq"></a> 연산자&gt;=
 
@@ -237,7 +237,7 @@ bool operator&gt;=(const directory_entry& right) const noexcept;
 ### <a name="parameters"></a>매개 변수
 
 *right*<br/>
-합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.  
+합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.
 
 ## <a name="path_type"></a> const path_type 연산자 &
 
@@ -269,13 +269,13 @@ void replace_filename(
 ### <a name="parameters"></a>매개 변수
 
 *pval*<br/>
-저장 된 파일 이름 경로입니다.  
+저장 된 파일 이름 경로입니다.
 
 *stat_arg로*<br/>
-상태 저장된 된 파일 이름입니다.  
+상태 저장된 된 파일 이름입니다.
 
 *symstat_arg로*<br/>
-저장 된 파일 이름의 기호화 된 링크 상태입니다.  
+저장 된 파일 이름의 기호화 된 링크 상태입니다.
 
 ## <a name="status"></a> 상태
 
@@ -293,7 +293,7 @@ file_status status(error_code& ec) const noexcept;
 ### <a name="parameters"></a>매개 변수
 
 *ec*<br/>
-상태 오류 코드입니다.  
+상태 오류 코드입니다.
 
 ## <a name="symlink_status"></a> symlink_status
 
@@ -307,7 +307,7 @@ file_status symlink_status(error_code& ec) const noexcept;
 ### <a name="parameters"></a>매개 변수
 
 *ec*<br/>
-상태 오류 코드입니다.  
+상태 오류 코드입니다.
 
 ## <a name="see-also"></a>참고자료
 

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d4437d06a7308505c2338f37deea1126fcb0605
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e4c35ab13d5cf2448135b1e07405a1e31a5eec86
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752914"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116674"
 ---
 # <a name="ccomqiptr-class"></a>CComQIPtr 클래스
 
@@ -32,16 +32,16 @@ COM 인터페이스 포인터를 관리 하는 것에 대 한 스마트 포인�
 ## <a name="syntax"></a>구문
 
 ```
-template<class T, const IID* piid= &__uuidof(T)>  
+template<class T, const IID* piid= &__uuidof(T)>
 class CComQIPtr: public CComPtr<T>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 저장에 대 한 포인터의 형식을 지정 하는 COM 인터페이스입니다.
 
-*piid*  
+*piid*<br/>
 에 대 한 포인터의 IID *T*합니다.
 
 ## <a name="members"></a>멤버
@@ -87,13 +87,13 @@ CComQIPtr(const CComQIPtr<T, piid>& lp) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lp*  
+*lp*<br/>
 인터페이스 포인터를 초기화 하는 데 사용 합니다.
 
-*T*  
+*T*<br/>
 COM 인터페이스입니다.
 
-*piid*  
+*piid*<br/>
 에 대 한 포인터의 IID *T*합니다.
 
 ##  <a name="operator_eq"></a>  CComQIPtr::operator =
@@ -108,13 +108,13 @@ T* operator= (IUnknown* lp) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lp*  
+*lp*<br/>
 인터페이스 포인터를 초기화 하는 데 사용 합니다.
 
-*T*  
+*T*<br/>
 COM 인터페이스입니다.
 
-*piid*  
+*piid*<br/>
 에 대 한 포인터의 IID *T*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -123,8 +123,8 @@ COM 인터페이스입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[CComPtr::CComPtr](../../atl/reference/ccomptr-class.md#ccomptr)   
-[CComQIPtr::CComQIPtr](#ccomqiptr)   
-[CComPtrBase 클래스](../../atl/reference/ccomptrbase-class.md)   
-[클래스 개요](../../atl/atl-class-overview.md)   
+[CComPtr::CComPtr](../../atl/reference/ccomptr-class.md#ccomptr)<br/>
+[CComQIPtr::CComQIPtr](#ccomqiptr)<br/>
+[CComPtrBase 클래스](../../atl/reference/ccomptrbase-class.md)<br/>
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [CComQIPtrElementTraits 클래스](../../atl/reference/ccomqiptrelementtraits-class.md)

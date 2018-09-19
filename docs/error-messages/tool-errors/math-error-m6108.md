@@ -16,19 +16,20 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4dfeca48aa04ebfbc097649e5c25253166c50dad
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e1624a89b472733b4adb5563c8ba52e0b03dcaa2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33325853"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46048619"
 ---
 # <a name="math-error-m6108"></a>수학 오류 M6108
-제곱근  
-  
- 제곱근 연산에서 피연산자가 음수입니다.  
-  
- 프로그램은 136 종료 코드로 종료 됩니다.  
-  
+
+제곱근
+
+제곱근 연산의 피연산자가 음수입니다.
+
+프로그램은 136 종료 코드로 종료 됩니다.
+
 > [!NOTE]
->  `sqrt` 포트란 내장 함수는 C 런타임 라이브러리의 함수 **SQRT** 이 오류를 생성 하지 않습니다. C `sqrt` 함수는 연산을 수행 하기 전에 인수를 확인 하 고는 피연산자가 음수 이면 오류 값을 반환 합니다. 포트란 **SQRT** 도메인 오류를 생성 하는 함수 [M6201](../../error-messages/tool-errors/math-error-m6201.md) 이 오류는 대신 합니다.
+>  합니다 `sqrt` FORTRAN 내장 함수 및 C 런타임 라이브러리 함수 **SQRT** 이 오류를 생성 하지 않습니다. C `sqrt` 함수는 작업을 수행 하기 전에 인수를 확인 하 고 피연산자가 음수 오류 값을 반환 합니다. 포트란 **SQRT** 함수에는 도메인 오류를 생성 합니다 [M6201](../../error-messages/tool-errors/math-error-m6201.md) 이 오류는 대신 합니다.

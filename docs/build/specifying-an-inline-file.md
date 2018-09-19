@@ -16,24 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c0d85436aef5ed48c0a8787f8bce330bf6d3e96
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 73983094f10088920100b4fbbb8d870aee13f05e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32380107"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720566"
 ---
 # <a name="specifying-an-inline-file"></a>인라인 파일 지정
-두 개의 꺾쇠 괄호를 지정 (<<) 명령에 여기서 *filename* 표시 하는 것입니다. 꺾쇠 괄호 매크로 확장 될 수 없습니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-<<[filename]  
-```  
-  
-## <a name="remarks"></a>설명  
- 명령이 실행 되는 꺾쇠 괄호 바뀝니다 *filename*, 지정 하거나, 고유한 NMAKE에서 생성 된 이름으로 합니다. 를 지정 하는 경우 *filename* 공백이 나 탭 없이 꺾쇠 괄호 뒤와 야 합니다. 경로 사용할 수 있습니다. 확장명이 없는 필요 하거나 가정 합니다. 경우 *filename* 지정 파일이 현재에서 만들어집니다 하지 않거나 해당 이름의 파일 가기를; 그러지 않으면 TMP 디렉터리에 생성이 지정 된 디렉터리 (또는 현재 디렉터리 경우 TMP 환경 변수 정의 되지 않습니다). 이전 하는 경우 *filename* 는 계속 사용 NMAKE 이전 파일을 대체 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [메이크파일의 인라인 파일](../build/inline-files-in-a-makefile.md)
+
+2 개의 꺾쇠 괄호를 지정 합니다. (<<) 명령에 있는 *filename* 표시 하는 것입니다. 꺾쇠 괄호는 매크로 확장이 수 없습니다.
+
+## <a name="syntax"></a>구문
+
+```
+<<[filename]
+```
+
+## <a name="remarks"></a>설명
+
+꺾쇠 괄호 안의 명령이 실행 되 면으로 바뀝니다 *filename*지정 하는 경우, 고유한 NMAKE에서 생성 된 이름으로 합니다. 를 지정 하는 경우 *filename* 공백 또는 탭 하지 않고 꺾쇠 괄호를 따라야 합니다. 경로 허용 됩니다. 확장명이 필요 하지 않거나 것으로 간주 합니다. 경우 *filename* 현재에서 파일을 만들 지정 하지 않거나 지정한 디렉터리 해당 이름으로 파일 기존 덮어쓰지;이 고, 그렇지 TMP 디렉터리에 만들어집니다 (또는 현재 디렉터리 경우 TMP 환경 변수 정의 되지 않았습니다). 이전 하는 경우 *filename* 는 다시 NMAKE 이전 파일을 대체 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[메이크파일의 인라인 파일](../build/inline-files-in-a-makefile.md)

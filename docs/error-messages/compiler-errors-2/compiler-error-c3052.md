@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 96db942b0ed50114378843b9f88fd77b2d24d771
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2d292087aefcc7bb99e505aefd0534dd018b2725
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33244200"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46049223"
 ---
 # <a name="compiler-error-c3052"></a>컴파일러 오류 C3052
-'var': default(none) 절 밑의 데이터 공유 절에 변수가 없습니다.  
-  
- [default(none)](../../parallel/openmp/reference/default-openmp.md) 가 사용되는 경우 구조화된 블록에 사용되는 모든 변수가 [shared](../../parallel/openmp/reference/shared-openmp.md) 또는 [private](../../parallel/openmp/reference/private-openmp.md)으로 명시적으로 지정되어야 합니다.  
-  
- 다음 샘플에서는 C3052를 생성합니다.  
-  
-```  
-// C3052.cpp  
-// compile with: /openmp /c  
-int main() {  
-   int n1 = 1;  
-  
-   #pragma omp parallel default(none) // shared(n1) private(n1)  
-   {  
-      n1 = 0;   // C3052 use either a shared or private clause  
-   }  
-}  
+
+'var': default(none) 절 밑의 데이터 공유 절에 변수가 없습니다.
+
+[default(none)](../../parallel/openmp/reference/default-openmp.md) 가 사용되는 경우 구조화된 블록에 사용되는 모든 변수가 [shared](../../parallel/openmp/reference/shared-openmp.md) 또는 [private](../../parallel/openmp/reference/private-openmp.md)으로 명시적으로 지정되어야 합니다.
+
+다음 샘플에서는 C3052를 생성합니다.
+
+```
+// C3052.cpp
+// compile with: /openmp /c
+int main() {
+   int n1 = 1;
+
+   #pragma omp parallel default(none) // shared(n1) private(n1)
+   {
+      n1 = 0;   // C3052 use either a shared or private clause
+   }
+}
 ```

@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6b1bc5c90fd837f56dbd98eddb37f624e78080b
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 65e4895af0903008e17b75a38981c169f07fc1c7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695407"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047761"
 ---
 # <a name="writeonlytextureview-class"></a>writeonly_texture_view 클래스
-Writeonly 질감에 대 한 액세스를 제공합니다.  
+질감에 대 한 writeonly 액세스를 제공합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -45,11 +45,11 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `value_type`  
- 질감에 있는 요소의 형식입니다.  
+*value_type*<br/>
+질감의 요소 형식입니다.  
   
- `_Rank`  
- 질감의 순위입니다.  
+*_Rank*<br/>
+질감의 순위입니다.  
   
 ## <a name="members"></a>멤버  
   
@@ -58,14 +58,14 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
 |이름|설명|  
 |----------|-----------------|  
 |`scalar_type`||  
-|`value_type`|질감에 있는 요소의 형식입니다.|  
+|`value_type`|질감의 요소 형식입니다.|  
   
 ### <a name="public-constructors"></a>Public 생성자  
   
 |이름|설명|  
 |----------|-----------------|  
 |[writeonly_texture_view 생성자](#ctor)|`writeonly_texture_view` 클래스의 새 인스턴스를 초기화합니다.|  
-|[~ writeonly_texture_view 소멸자](#ctor)|소멸 된 `writeonly_texture_view` 개체입니다.|  
+|[~ writeonly_texture_view 소멸자](#ctor)|제거 된 `writeonly_texture_view` 개체입니다.|  
   
 ### <a name="public-methods"></a>Public 메서드  
   
@@ -77,13 +77,13 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
   
 |이름|설명|  
 |----------|-----------------|  
-|[operator=](#operator_eq)|지정 된 복사 `writeonly_texture_view` 여기에 개체입니다.|  
+|[operator=](#operator_eq)|복사 된 `writeonly_texture_view` 여기에 개체입니다.|  
   
 ### <a name="public-constants"></a>공용 상수  
   
 |이름|설명|  
 |----------|-----------------|  
-|[rank 상수](#rank)|순위를 가져옵니다는 `writeonly_texture_view` 개체입니다.|  
+|[rank 상수](#rank)|차수를 가져옵니다는 `writeonly_texture_view` 개체입니다.|  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  `_Texture_base`  
@@ -97,7 +97,7 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
   
 ##  <a name="dtor"></a> ~ writeonly_texture_view 
 
- 소멸 된 `writeonly_texture_view` 개체입니다.  
+ 제거 된 `writeonly_texture_view` 개체입니다.  
   
 ```  
 ~writeonly_texture_view() restrict(amp,cpu);
@@ -105,7 +105,7 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
   
 ##  <a name="operator_eq"></a> 연산자 = 
 
- 지정 된 복사 `writeonly_texture_view` 여기에 개체입니다.  
+ 복사 된 `writeonly_texture_view` 여기에 개체입니다.  
   
 ```  
 writeonly_texture_view<value_type, _Rank>& operator= (
@@ -113,15 +113,15 @@ writeonly_texture_view<value_type, _Rank>& operator= (
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Other`  
- `writeonly_texture_view` 복사할 개체입니다.  
+*_Other*<br/>
+`writeonly_texture_view` 복사할 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이에 대 한 참조 `writeonly_texture_view` 개체입니다.  
   
 ##  <a name="rank"></a> 순위 
 
- 순위를 가져옵니다는 `writeonly_texture_view` 개체입니다.  
+ 차수를 가져옵니다는 `writeonly_texture_view` 개체입니다.  
   
 ```  
 static const int rank = _Rank;  
@@ -138,11 +138,11 @@ void set(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Index`  
- 요소의 인덱스입니다.  
+*_Index*<br/>
+요소의 인덱스입니다.  
   
- `value`  
- 요소의 새 값입니다.  
+*값*<br/>
+요소의 새 값입니다.  
   
 ##  <a name="ctor"></a> writeonly_texture_view 
 
@@ -160,14 +160,14 @@ writeonly_texture_view(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Rank`  
- 질감의 순위입니다.  
+*_Rank*<br/>
+질감의 순위입니다.  
   
- `value_type`  
- 질감에 있는 요소의 형식입니다.  
+*value_type*<br/>
+질감의 요소 형식입니다.  
   
- `_Src`  
- `writeonly_texture_view`를 만드는 데 사용되는 질감입니다.  
+*_Src*<br/>
+`writeonly_texture_view`를 만드는 데 사용되는 질감입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Concurrency::graphics 네임스페이스](concurrency-graphics-namespace.md)

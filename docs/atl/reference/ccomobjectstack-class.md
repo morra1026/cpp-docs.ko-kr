@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c3e29c3eed99c95ee92841413ceaca6e17e8565
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 277951a5425a75c9769c5a2c4104421303f677c2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755068"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065343"
 ---
 # <a name="ccomobjectstack-class"></a>CComObjectStack 클래스
 
@@ -36,13 +36,13 @@ ms.locfileid: "43755068"
 ## <a name="syntax"></a>구문
 
 ```
-template <class  Base>  
+template <class  Base>
 class CComObjectStack : public Base
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*자료*  
+*자료*<br/>
 파생 된 클래스 [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) 하거나 [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)처럼 개체에서 지원 하려는 다른 모든 인터페이스 에서도 잘 합니다.
 
 ## <a name="members"></a>멤버
@@ -170,7 +170,7 @@ STDMETHOD_(ULONG, Release)();
 
 ## <a name="see-also"></a>참고 항목
 
-[CComAggObject 클래스](../../atl/reference/ccomaggobject-class.md)   
-[CComObject 클래스](../../atl/reference/ccomobject-class.md)   
-[CComObjectGlobal 클래스](../../atl/reference/ccomobjectglobal-class.md)   
+[CComAggObject 클래스](../../atl/reference/ccomaggobject-class.md)<br/>
+[CComObject 클래스](../../atl/reference/ccomobject-class.md)<br/>
+[CComObjectGlobal 클래스](../../atl/reference/ccomobjectglobal-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

@@ -7,12 +7,12 @@ f1_keywords:
 - new/std::nothrow
 - new/std::set_new_handler
 ms.assetid: e250f06a-b025-4509-ae7a-5356d56aad7d
-ms.openlocfilehash: f930fb43ea554e1dd445dabb382adecc6f67e35f
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 6192805f0f427f86267a646b11d9f1d3365a1d57
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964966"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716042"
 ---
 # <a name="ltnewgt-functions"></a>&lt;new&gt; 함수
 
@@ -32,7 +32,7 @@ extern const std::nothrow_t nothrow;
 
 이 개체는 매개 변수 형식 [std::nothrow_t](../standard-library/nothrow-t-structure.md)의 일치를 확인하기 위한 함수 인수로 사용됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 `std::nothrow_t`를 함수 매개 변수로 사용하는 방법의 예제는 [operator new](../standard-library/new-operators.md#op_new) 및 [operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr)를 참조하세요.
 
@@ -46,7 +46,7 @@ new_handler set_new_handler(new_handler Pnew) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*Pnew*  
+*Pnew*<br/>
 `new_handler` 를 설치 해야 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -57,7 +57,7 @@ new_handler set_new_handler(new_handler Pnew) throw();
 
 함수 저장소 *Pnew* 정적에서 [새 처리기](../standard-library/new-typedefs.md#new_handler) 유지 관리 하는 포인터에는 다음 포인터에서 이전에 저장 된 값을 반환 합니다. 새 처리기를 사용해 [new 연산자](../standard-library/new-operators.md#op_new)(**size_t**).
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // new_set_new_handler.cpp

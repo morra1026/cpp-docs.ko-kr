@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8b4a296379ab6e4ac8ad3b70668508303e2779d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b76c5533e79c75d06594d42464ca32104eb065ef
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299580"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046227"
 ---
 # <a name="linker-tools-error-lnk2026"></a>링커 도구 오류 LNK2026
-SAFESEH 이미지에 대해 안전 하지 않은 모듈  
-  
- [/SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md) 지정 되었지만 모듈 안전한 예외 처리 기능과 호환 되지 않습니다. 이 모듈을 사용 하려는 경우 **/SAFESEH**, 모듈을 다시 컴파일하려면 해야 합니다.
+
+SAFESEH 이미지에 대 한 안전 하지 않은 모듈
+
+[/SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md) 지정 되었지만 모듈이 안전한 예외 처리 기능과 호환 되지 않습니다. 사용 하 여이 모듈을 사용 하려는 경우 **/SAFESEH**, 모듈을 다시 컴파일하지 해야 합니다.

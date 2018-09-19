@@ -33,12 +33,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 513fe618d32e3a3dcfadcf98134a927ddf629b86
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 866cedba73be1c7858415359dfd94cec9a55dccc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761796"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045252"
 ---
 # <a name="atl-typedefs"></a>ATL Typedef
 
@@ -67,15 +67,15 @@ ms.locfileid: "43761796"
 
 _ATL_BASE_MODULE70 기반 typedef로 정의 합니다.
 
-```   
-typedef ATL::_ATL_BASE_MODULE70 _ATL_BASE_MODULE;   
+```
+typedef ATL::_ATL_BASE_MODULE70 _ATL_BASE_MODULE;
 ```
 
 ### <a name="remarks"></a>설명
 
 모든 ATL 프로젝트에서 사용 합니다. 에 따라 [_ATL_BASE_MODULE70](../../atl/reference/atl-base-module70-structure.md)합니다.
 
-ATL 7.0 모듈 클래스의 일부인 클래스 _ATL_BASE_MODULE 구조에서 파생 됩니다.  ATL 모듈 클래스에 대 한 자세한 내용은 참조 [COM 모듈 클래스](../../atl/com-modules-classes.md)합니다.  
+ATL 7.0 모듈 클래스의 일부인 클래스 _ATL_BASE_MODULE 구조에서 파생 됩니다.  ATL 모듈 클래스에 대 한 자세한 내용은 참조 [COM 모듈 클래스](../../atl/com-modules-classes.md)합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -85,13 +85,13 @@ ATL 7.0 모듈 클래스의 일부인 클래스 _ATL_BASE_MODULE 구조에서 �
 
 _ATL_COM_MODULE70 기반 typedef로 정의 합니다.
 
-```   
-typedef ATL::_ATL_COM_MODULE70 _ATL_COM_MODULE;   
+```
+typedef ATL::_ATL_COM_MODULE70 _ATL_COM_MODULE;
 ```
 
 ### <a name="remarks"></a>설명
 
-COM 기능을 사용 하는 ATL 프로젝트에서 사용 합니다. 에 따라 [_ATL_COM_MODULE70](../../atl/reference/atl-com-module70-structure.md)합니다.  
+COM 기능을 사용 하는 ATL 프로젝트에서 사용 합니다. 에 따라 [_ATL_COM_MODULE70](../../atl/reference/atl-com-module70-structure.md)합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -101,9 +101,10 @@ COM 기능을 사용 하는 ATL 프로젝트에서 사용 합니다. 에 따라 
 
 _ATL_MODULE70 기반 typedef로 정의 합니다.
 
-```   
-typedef ATL::_ATL_MODULE70 _ATL_MODULE;   
-```  
+```
+typedef ATL::_ATL_MODULE70 _ATL_MODULE;
+```
+
 ## <a name="requirements"></a>요구 사항
 
 **헤더:**
@@ -116,13 +117,13 @@ typedef ATL::_ATL_MODULE70 _ATL_MODULE;
 
 _ATL_WIN_MODULE70 기반 typedef로 정의 합니다.
 
-```   
-typedef ATL::_ATL_WIN_MODULE70 _ATL_WIN_MODULE; 
+```
+typedef ATL::_ATL_WIN_MODULE70 _ATL_WIN_MODULE;
 ```
 
 ### <a name="remarks"></a>설명
 
-창 작업 기능을 사용 하는 모든 ATL 프로젝트에서 사용 합니다. 에 따라 [_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md)합니다.  
+창 작업 기능을 사용 하는 모든 ATL 프로젝트에서 사용 합니다. 에 따라 [_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md)합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -132,9 +133,9 @@ typedef ATL::_ATL_WIN_MODULE70 _ATL_WIN_MODULE;
 
 사용 된 유형을 [CUrl](curl-class.md) 포트 번호를 지정 합니다.
 
-```  
+```
 typedef WORD ATL_URL_PORT;
-```  
+```
 
 ## <a name="requirements"></a>요구 사항
 
@@ -144,9 +145,10 @@ typedef WORD ATL_URL_PORT;
 
 이 클래스는 COM 인터페이스 포인터를 관리합니다.
 
-```   
-typedef CComQIPtr<IDispatch, &__uuidof(IDispatch)> CComDispatchDriver;   
-```  
+```
+typedef CComQIPtr<IDispatch, &__uuidof(IDispatch)> CComDispatchDriver;
+```
+
 ## <a name="requirements"></a>요구 사항
 
 **헤더:** atlbase.h
@@ -155,16 +157,16 @@ typedef CComQIPtr<IDispatch, &__uuidof(IDispatch)> CComDispatchDriver;
 
 적절 한 스레드 사용 되는 스레딩 모델에 관계 없이 모델 메서드를 호출 합니다.
 
-```   
-#if defined(_ATL_SINGLE_THREADED)  
-typedef CComSingleThreadModel CComGlobalsThreadModel;  
-#elif defined(_ATL_APARTMENT_THREADED)  
-typedef CComMultiThreadModel CComGlobalsThreadModel;  
-#elif defined(_ATL_FREE_THREADED)  
-typedef CComMultiThreadModel CComGlobalsThreadModel;  
-#else  
-#pragma message ("No global threading model defined")  
-#endif   
+```
+#if defined(_ATL_SINGLE_THREADED)
+typedef CComSingleThreadModel CComGlobalsThreadModel;
+#elif defined(_ATL_APARTMENT_THREADED)
+typedef CComMultiThreadModel CComGlobalsThreadModel;
+#elif defined(_ATL_FREE_THREADED)
+typedef CComMultiThreadModel CComGlobalsThreadModel;
+#else
+#pragma message ("No global threading model defined")
+#endif
 ```
 
 ### <a name="remarks"></a>설명
@@ -185,7 +187,7 @@ typedef CComMultiThreadModel CComGlobalsThreadModel;
 
 S = `CComSingleThreadModel`; M = `CComMultiThreadModel`
 
-사용 하 여 `CComObjectThreadModel` 내의 단일 개체 클래스입니다. 사용 하 여 `CComGlobalsThreadModel` 여러 스레드에서 모듈 리소스를 보호 하려는 경우 또는 프로그램에 전역적으로 사용할 수 있는 개체입니다.  
+사용 하 여 `CComObjectThreadModel` 내의 단일 개체 클래스입니다. 사용 하 여 `CComGlobalsThreadModel` 여러 스레드에서 모듈 리소스를 보호 하려는 경우 또는 프로그램에 전역적으로 사용할 수 있는 개체입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -195,16 +197,16 @@ S = `CComSingleThreadModel`; M = `CComMultiThreadModel`
 
 적절 한 스레드 사용 되는 스레딩 모델에 관계 없이 모델 메서드를 호출 합니다.
 
-```   
-#if defined(_ATL_SINGLE_THREADED)  
-typedef CComSingleThreadModel CComObjectThreadModel;  
-#elif defined(_ATL_APARTMENT_THREADED)  
-typedef CComSingleThreadModel CComObjectThreadModel;  
-#elif defined(_ATL_FREE_THREADED)  
-typedef CComMultiThreadModel CComObjectThreadModel;  
-#else  
-#pragma message ("No global threading model defined")  
-#endif   
+```
+#if defined(_ATL_SINGLE_THREADED)
+typedef CComSingleThreadModel CComObjectThreadModel;
+#elif defined(_ATL_APARTMENT_THREADED)
+typedef CComSingleThreadModel CComObjectThreadModel;
+#elif defined(_ATL_FREE_THREADED)
+typedef CComMultiThreadModel CComObjectThreadModel;
+#else
+#pragma message ("No global threading model defined")
+#endif
 ```
 
 ### <a name="remarks"></a>설명
@@ -225,7 +227,7 @@ typedef CComMultiThreadModel CComObjectThreadModel;
 
 S = `CComSingleThreadModel`; M = `CComMultiThreadModel`
 
-사용 하 여 `CComObjectThreadModel` 내의 단일 개체 클래스입니다. 사용 하 여 `CComGlobalsThreadModel` 중 하나는 개체에 여러 스레드에서 모듈 리소스를 보호 하려는 경우 또는 프로그램에 전역적으로 사용할 수 있습니다.  
+사용 하 여 `CComObjectThreadModel` 내의 단일 개체 클래스입니다. 사용 하 여 `CComGlobalsThreadModel` 중 하나는 개체에 여러 스레드에서 모듈 리소스를 보호 하려는 경우 또는 프로그램에 전역적으로 사용할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -235,9 +237,9 @@ S = `CComSingleThreadModel`; M = `CComMultiThreadModel`
 
 이 클래스의 특수화 인 `CContainedWindowT`합니다.
 
-```   
-typedef CContainedWindowT<CWindow> CContainedWindow;   
-```  
+```
+typedef CContainedWindowT<CWindow> CContainedWindow;
+```
 
 ## <a name="requirements"></a>요구 사항
 
@@ -251,9 +253,9 @@ typedef CContainedWindowT<CWindow> CContainedWindow;
 
 특수화 [CPathT](../../atl/reference/cpatht-class.md) 사용 하 여 `CString`입니다.
 
-```   
-typedef CPathT<CString> CPath;   
-```  
+```
+typedef CPathT<CString> CPath;
+```
 
 ## <a name="requirements"></a>요구 사항
 
@@ -263,8 +265,8 @@ typedef CPathT<CString> CPath;
 
 특수화 [CPathT](../../atl/reference/cpatht-class.md) 사용 하 여 `CStringA`입니다.
 
-```   
-typedef CPathT<CStringA> CPathA;   
+```
+typedef CPathT<CStringA> CPathA;
 ```
 
 ## <a name="requirements"></a>요구 사항
@@ -275,9 +277,9 @@ typedef CPathT<CStringA> CPathA;
 
 특수화 [CPathT](../../atl/reference/cpatht-class.md) 사용 하 여 `CStringW`입니다.
 
-```   
-typedef ATL::CPathT<CStringW> CPathW;   
-```  
+```
+typedef ATL::CPathT<CStringW> CPathW;
+```
 ## <a name="requirements"></a>요구 사항
 
 **헤더:** atlpath.h의
@@ -286,13 +288,13 @@ typedef ATL::CPathT<CStringW> CPathW;
 
 단순 형식 저장 하기 위한 배열을 나타냅니다.
 
-```   
-#define CSimpleValArray CSimpleArray   
-```  
+```
+#define CSimpleValArray CSimpleArray
+```
 
 ### <a name="remarks"></a>설명
 
-`CSimpleValArray` 만들기 및 관리 단순한 데이터 형식이 포함 된 배열에 대 한 제공 됩니다. 단순 #의 define [CSimpleArray](../../atl/reference/csimplearray-class.md)합니다.  
+`CSimpleValArray` 만들기 및 관리 단순한 데이터 형식이 포함 된 배열에 대 한 제공 됩니다. 단순 #의 define [CSimpleArray](../../atl/reference/csimplearray-class.md)합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -302,9 +304,9 @@ typedef ATL::CPathT<CStringW> CPathW;
 
 상수에 대 한 포인터 [CUrl](../../atl/reference/curl-class.md) 개체입니다.
 
-```   
-typedef const CUrl* LPCURL;   
-```  
+```
+typedef const CUrl* LPCURL;
+```
 
 ## <a name="requirements"></a>요구 사항
 
@@ -316,12 +318,12 @@ typedef const CUrl* LPCURL;
 
 ### <a name="syntax"></a>구문
 
-```  
-      #if defined(_MT)  
-   typedef CRTThreadTraits DefaultThreadTraits;  
-#else  
-   typedef Win32ThreadTraits DefaultThreadTraits;  
-#endif  
+```
+#if defined(_MT)
+   typedef CRTThreadTraits DefaultThreadTraits;
+#else
+   typedef Win32ThreadTraits DefaultThreadTraits;
+#endif
 ```
 
 ## <a name="remarks"></a>설명
@@ -336,9 +338,9 @@ typedef const CUrl* LPCURL;
 
 에 대 한 포인터를 [CUrl](../../atl/reference/curl-class.md) 개체입니다.
 
-```   
-typedef CUrl* LPURL;   
-```  
+```
+typedef CUrl* LPURL;
+```
 
 ## <a name="requirements"></a>요구 사항
 
@@ -346,8 +348,8 @@ typedef CUrl* LPURL;
 
 ## <a name="see-also"></a>참고 항목
 
-[ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md)   
-[함수](../../atl/reference/atl-functions.md)   
-[전역 변수](../../atl/reference/atl-global-variables.md)   
-[클래스 및 구조체](../../atl/reference/atl-classes.md)   
-[매크로](../../atl/reference/atl-macros.md)   
+[ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md)<br/>
+[함수](../../atl/reference/atl-functions.md)<br/>
+[전역 변수](../../atl/reference/atl-global-variables.md)<br/>
+[클래스 및 구조체](../../atl/reference/atl-classes.md)<br/>
+[매크로](../../atl/reference/atl-macros.md)

@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ddab2c3dff6631b5cb775352a3bcb994d6abff3
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: b9bdb00c421e668313d92c829c4252c2637e2e18
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44109916"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722139"
 ---
 # <a name="addcv-class"></a>add_cv 클래스
 
@@ -96,7 +96,9 @@ invoked const volatile S.f()
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<type_traits > **Namespace:** std
+**헤더:** \<type_traits>
+
+**네임스페이스:** std
 
 ## <a name="see-also"></a>참고자료
 

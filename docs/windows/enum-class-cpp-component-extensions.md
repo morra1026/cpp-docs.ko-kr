@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 625b99751c570c47456aad4903de5b8c4049ac42
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 72c312bdec9248cdc38150163d914b2ac7036ab8
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43207604"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711089"
 ---
 # <a name="enum-class--c-component-extensions"></a>enum 클래스(C++ 구성 요소 확장)
 
@@ -101,11 +101,11 @@ accessenum structname [:type] { enumerator-list } var;
 *name*  
 열거형의 이름입니다. 관리되는 익명 열거형은 허용되지 않습니다.
 
-*형식* (선택 사항)  
-*식별자*의 내부 형식입니다. 서명 되거나 서명 되지 않은 버전의 같은 스칼라 형식일 수 **int**를 **짧은**, 또는 **긴**합니다.  **bool** 나 **char** 사용할 수 있습니다.
+*type*  
+(선택 사항) 내부 형식의 합니다 *식별자*합니다. 서명 되거나 서명 되지 않은 버전의 같은 스칼라 형식일 수 **int**를 **짧은**, 또는 **긴**합니다.  **bool** 나 **char** 사용할 수 있습니다.
 
-*var* (선택 사항)  
-열거형 형식의 변수 이름입니다.
+*var*  
+(선택 사항) 열거형 형식의 변수 이름입니다.
 
 ### <a name="remarks"></a>설명
 

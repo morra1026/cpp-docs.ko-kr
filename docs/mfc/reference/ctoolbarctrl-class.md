@@ -192,12 +192,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0801fab2ef5cec0da42cb40e28cd5124141c1007
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 93752aa124bc144e42a337f757c9d9cdc9a226ca
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686087"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047930"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl 클래스
 Windows의 도구 모음 공용 컨트롤의 기능을 제공합니다.  
@@ -410,65 +410,66 @@ BOOL AddButtons(
 ### <a name="remarks"></a>설명  
  합니다 *lpButtons* 배열을 가리키는 포인터 `TBBUTTON` 구조입니다. 각 `TBBUTTON` 구조체 단추의 스타일, 이미지 및/또는 문자열, 명령 ID, 상태 및 사용자 정의 데이터를 사용 하 여 추가 단추를 연결 합니다.  
   
- `typedef struct _TBBUTTON {`  
-  
- `int iBitmap;// zero-based index of button image`  
-  
- `int idCommand;  // command to be sent when button pressed`  
-  
- `BYTE fsState;   // button state--see below`  
-  
- `BYTE fsStyle;   // button style--see below`  
-  
- `DWORD dwData;   // application-defined value`  
-  
- `int iString;// zero-based index of button label string`  
-  
- `} TBBUTTON;`  
+```cpp
+typedef struct _TBBUTTON {
+    int iBitmap;    // zero-based index of button image
+    int idCommand;  // command to be sent when button pressed
+    BYTE fsState;   // button state--see below
+    BYTE fsStyle;   // button style--see below
+    DWORD dwData;   // application-defined value
+    int iString;    // zero-based index of button label string
+} TBBUTTON;
+```
   
  멤버는 다음과 같습니다.  
   
- `iBitmap`  
- 이 단추에 대 한 이미지가 없는 경우-1 단추 이미지의 0부터 시작 인덱스입니다.  
+- `iBitmap`  
+
+   이 단추에 대 한 이미지가 없는 경우-1 단추 이미지의 0부터 시작 인덱스입니다.  
   
- `idCommand`  
- 단추와 연결 된 명령 식별자입니다. 단추를 선택할 때이 식별자에 WM_COMMAND 메시지에 전송 됩니다. 경우는 `fsStyle` 멤버 TBSTYLE_SEP 값을 가진이 멤버는 0 이어야 합니다.  
+-  `idCommand`  
+
+   단추와 연결 된 명령 식별자입니다. 단추를 선택할 때이 식별자에 WM_COMMAND 메시지에 전송 됩니다. 경우는 `fsStyle` 멤버 TBSTYLE_SEP 값을 가진이 멤버는 0 이어야 합니다.  
   
- `fsState`  
- 단추 상태 플래그입니다. 아래에 나열 된 값의 조합 수 있습니다.  
+-  `fsState`  
+
+   단추 상태 플래그입니다. 아래에 나열 된 값의 조합 수 있습니다.  
   
-- TBSTATE_CHECKED 단추 TBSTYLE_CHECKED 스타일 있으며입니다.  
+   - TBSTATE_CHECKED 단추 TBSTYLE_CHECKED 스타일 있으며입니다.  
   
-- TBSTATE_ENABLED 단추 사용자 입력을 허용합니다. 이 상태 없는 단추 사용자 입력을 허용 하지 않습니다 및 회색으로 나타납니다.  
+   - TBSTATE_ENABLED 단추 사용자 입력을 허용합니다. 이 상태 없는 단추 사용자 입력을 허용 하지 않습니다 및 회색으로 나타납니다.  
   
-- TBSTATE_HIDDEN 단추가 표시 되지 않으며 사용자 입력을 받을 수 없습니다.  
+   - TBSTATE_HIDDEN 단추가 표시 되지 않으며 사용자 입력을 받을 수 없습니다.  
   
-- TBSTATE_INDETERMINATE 단추가 흐리게 표시 됩니다.  
+   - TBSTATE_INDETERMINATE 단추가 흐리게 표시 됩니다.  
   
-- 단추를 눌렀는지 TBSTATE_PRESSED 합니다.  
+   - 단추를 눌렀는지 TBSTATE_PRESSED 합니다.  
   
-- 줄 바꿈을 TBSTATE_WRAP 단추는 다음과 같습니다. 단추는 TBSTATE_ENABLED 상태가 있어야 합니다.  
+   - 줄 바꿈을 TBSTATE_WRAP 단추는 다음과 같습니다. 단추는 TBSTATE_ENABLED 상태가 있어야 합니다.  
   
- `fsStyle`  
- 단추 스타일입니다. 아래에 나열 된 값의 조합 수 있습니다.  
+- `fsStyle`  
+
+   단추 스타일입니다. 아래에 나열 된 값의 조합 수 있습니다.  
   
-- TBSTYLE_BUTTON 표준 누름 단추를 만듭니다.  
+   - TBSTYLE_BUTTON 표준 누름 단추를 만듭니다.  
   
-- 사용자 누름 및 누르지 않은 상태로 될 때마다 상태 간에 전환 하는 단추 클릭 TBSTYLE_CHECK 만듭니다. 누름 상태의 경우 단추가 다른 배경색을 됩니다.  
+   - 사용자 누름 및 누르지 않은 상태로 될 때마다 상태 간에 전환 하는 단추 클릭 TBSTYLE_CHECK 만듭니다. 누름 상태의 경우 단추가 다른 배경색을 됩니다.  
   
-- TBSTYLE_CHECKGROUP 그룹의 다른 단추를 누를 때까지 유지 되는 확인 단추 누름을 만듭니다.  
+   - TBSTYLE_CHECKGROUP 그룹의 다른 단추를 누를 때까지 유지 되는 확인 단추 누름을 만듭니다.  
   
-- TBSTYLE_GROUP 그룹의 다른 단추를 누를 때까지 유지 되는 단추 누름을 만듭니다.  
+   - TBSTYLE_GROUP 그룹의 다른 단추를 누를 때까지 유지 되는 단추 누름을 만듭니다.  
   
-- TBSTYLE_SEP 단추 그룹 사이의 작은 간격을 제공 하는 구분 기호를 만듭니다. 이 스타일에 있는 단추는 사용자 입력을 받지 않습니다.  
+   - TBSTYLE_SEP 단추 그룹 사이의 작은 간격을 제공 하는 구분 기호를 만듭니다. 이 스타일에 있는 단추는 사용자 입력을 받지 않습니다.  
   
- `dwData`  
- 사용자 정의 데이터입니다.  
+- `dwData`  
+
+   사용자 정의 데이터입니다.  
   
- `iString`  
- 단추 label의 경우이 단추에 대 한 문자열이 없으면-1을 사용 하는 문자열의 0부터 시작 인덱스입니다.  
+- `iString`  
+
+   단추 label의 경우이 단추에 대 한 문자열이 없으면-1을 사용 하는 문자열의 0부터 시작 인덱스입니다.  
   
- 이미지 및/또는 제공한 인덱스가 반드시 이전에 추가 되어 있어야를 도구 모음 컨트롤의 문자열을 사용 하 여 목록을 [AddBitmap](#addbitmap)하십시오 [AddString](#addstring), 및/또는 [AddStrings](#addstrings)합니다.  
+이미지 및/또는 제공한 인덱스가 반드시 이전에 추가 되어 있어야를 도구 모음 컨트롤의 문자열을 사용 하 여 목록을 [AddBitmap](#addbitmap)하십시오 [AddString](#addstring), 및/또는 [AddStrings](#addstrings)합니다.  
   
 ##  <a name="addstring"></a>  CToolBarCtrl::AddString  
  도구 모음에서의 내부 목록을 문자열 리소스 ID를 변수로 전달 된 새 문자열을 추가 합니다.  
@@ -532,8 +533,8 @@ BOOL ChangeBitmap(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *idButton*|새 비트맵을 수신 하는 단추의 명령 식별자입니다.|  
-|[in] *iBitmap*|현재 도구 모음 컨트롤의 이미지 목록의 이미지의 0부터 시작 인덱스입니다.|  
+|*idButton*|[in] 새 비트맵을 수신 하는 단추의 명령 식별자입니다.|  
+|*iBitmap*|[in] 현재 도구 모음 컨트롤의 이미지 목록의 이미지의 0부터 시작 인덱스입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -841,7 +842,7 @@ CString GetButtonText(int idButton) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *idButton*|해당 표시 텍스트가 검색 되는 단추에 대 한 식별자입니다.|  
+|*idButton*|[in] 해당 표시 텍스트가 검색 되는 단추에 대 한 식별자입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  A [CString](../../atl-mfc-shared/using-cstring.md) 지정 된 단추의 표시 텍스트를 포함 하는 합니다.  
@@ -860,7 +861,7 @@ BOOL GetColorScheme(COLORSCHEME* lpColorScheme) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out] *lpColorScheme*|에 대 한 포인터를 [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) 색 구성표 정보를 수신 하는 구조입니다. 이 메서드는 반환 될 때 구조 강조 표시 색 및 도구 모음 컨트롤의 그림자 색에 설명 합니다.|  
+|*lpColorScheme*|[out] 에 대 한 포인터를 [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) 색 구성표 정보를 수신 하는 구조입니다. 이 메서드는 반환 될 때 구조 강조 표시 색 및 도구 모음 컨트롤의 그림자 색에 설명 합니다.|  
   
 ### <a name="return-value"></a>반환 값  
 이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1053,8 +1054,8 @@ BOOL GetPadding(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[out] *pnHorzPadding*|도구 모음 컨트롤의 가로 안쪽 여백 (픽셀)에서 수신 하는 정수입니다.|  
-|[out] *pnVertPadding*|도구 모음 컨트롤의 세로 안쪽 여백 (픽셀)에서 수신 하는 정수입니다.|  
+|*pnHorzPadding*|[out] 도구 모음 컨트롤의 가로 안쪽 여백 (픽셀)에서 수신 하는 정수입니다.|  
+|*pnVertPadding*|[out] 도구 모음 컨트롤의 세로 안쪽 여백 (픽셀)에서 수신 하는 정수입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1349,8 +1350,8 @@ BOOL IsButtonHighlighted(int nID) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 도구 모음 단추의 명령 ID입니다.  
+*nID*<br/>
+[in] 도구 모음 단추의 명령 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
  양의 정수를 단추가 강조 표시 하는 경우 단추 강조 표시가 해제 되 면 0 또는-1 이면 오류가 발생 합니다.  
@@ -1363,8 +1364,8 @@ BOOL IsButtonIndeterminate(int nID) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 도구 모음에서 단추 명령 식별자입니다.  
+*nID*<br/>
+[in] 도구 모음에서 단추 명령 식별자입니다.  
   
 ### <a name="return-value"></a>반환 값  
  양의 정수 단추 되지 않으며, 경우 0 단추를 비활성화, 아니거나-1 이면 오류가 발생 합니다.  
@@ -1491,11 +1492,11 @@ BOOL PressButton(int nID, BOOL bPress = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 단추를 누르거나 놓을의 명령 식별자입니다.  
+*nID*<br/>
+[in] 단추를 누르거나 놓을의 명령 식별자입니다.  
   
- [in] *bPress*  
- 지정 된 단추를 눌러 TRUE 지정 된 단추를 해제 하려면 FALSE입니다. 기본값은 TRUE입니다.  
+*bPress*<br/>
+[in] 지정 된 단추를 눌러 TRUE 지정 된 단추를 해제 하려면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1516,7 +1517,7 @@ BOOL ReplaceBitmap(LPTBREPLACEBITMAP pReplaceBitmap);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *pReplaceBitmap*|에 대 한 포인터를 [TBREPLACEBITMAP](/windows/desktop/api/commctrl/ns-commctrl-tbreplacebitmap) 교체 비트맵 및 새로운 비트맵에 설명 하는 구조입니다.|  
+|*pReplaceBitmap*|[in] 에 대 한 포인터를 [TBREPLACEBITMAP](/windows/desktop/api/commctrl/ns-commctrl-tbreplacebitmap) 교체 비트맵 및 새로운 비트맵에 설명 하는 구조입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1593,8 +1594,8 @@ BOOL SetAnchorHighlight(BOOL fAnchor = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *fAnchor*  
- 경우 앵커 강조 표시 설정 여부를 지정 합니다. 이 값이 0이 아닌 값 이면 앵커 강조 표시 될 예정입니다. 이 값이 0 이면 앵커 강조 표시를 사용할 수 없습니다.  
+*fAnchor*<br/>
+[in] 경우 앵커 강조 표시 설정 여부를 지정 합니다. 이 값이 0이 아닌 값 이면 앵커 강조 표시 될 예정입니다. 이 값이 0 이면 앵커 강조 표시를 사용할 수 없습니다.  
   
 ### <a name="return-value"></a>반환 값  
  이전 앵커 설정입니다. 강조 표시를 사용 하는 경우이 값은 0이 아닌 값입니다. 강조 표시 된 사용할 수 없는 경우이 값이 0입니다.  
@@ -1729,7 +1730,7 @@ void SetColorScheme(const COLORSCHEME* lpColorScheme);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *lpColorScheme*|에 대 한 포인터를 [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) 강조 표시 색 및 도구 모음 컨트롤의 그림자 색을 설명 하는 구조입니다.|  
+|*lpColorScheme*|[in] 에 대 한 포인터를 [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) 강조 표시 색 및 도구 모음 컨트롤의 그림자 색을 설명 하는 구조입니다.|  
   
 ### <a name="remarks"></a>설명  
  Windows Vista 시각 테마 설정 된 경우 효과가 없습니다.  
@@ -1952,8 +1953,8 @@ DWORD SetPadding(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *nHorzPadding*|도구 모음 컨트롤의 가로 안쪽 여백을 픽셀 단위로 지정 합니다.|  
-|[in] *nVertPadding*|도구 모음 컨트롤의 세로 안쪽 여백을 픽셀 단위로 지정 합니다.|  
+|*nHorzPadding*|[in] 도구 모음 컨트롤의 가로 안쪽 여백을 픽셀 단위로 지정 합니다.|  
+|*nVertPadding*|[in] 도구 모음 컨트롤의 세로 안쪽 여백을 픽셀 단위로 지정 합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  DWORD 하위 워드입니다 이전 가로 안쪽 여백 값을 포함 하며 이전 세로 안쪽 여백 값을을 포함 하는 상위 워드입니다. 안쪽 여백 값을 픽셀 단위로 측정 됩니다.  
@@ -1979,8 +1980,8 @@ CImagelist* SetPressedImageList(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iImageID*|이미지 목록의 0부터 시작 하는 인덱스입니다. 하나의 이미지 목록을 사용 하는 경우이 매개 변수를 0으로 설정 합니다.|  
-|[in] *pImageList*|에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 새 이미지 목록을 포함 하는 합니다.|  
+|*iImageID*|[in] 이미지 목록의 0부터 시작 하는 인덱스입니다. 하나의 이미지 목록을 사용 하는 경우이 매개 변수를 0으로 설정 합니다.|  
+|*pImageList*|[in] 에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 새 이미지 목록을 포함 하는 합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 이미지 목록이 없는 설정 된 경우 NULL을 현재 컨트롤에 대 한 이전 이미지 목록이 들어 있는입니다.  

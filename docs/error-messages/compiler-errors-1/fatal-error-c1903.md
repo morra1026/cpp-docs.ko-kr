@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f4f89abd2d2a59efa7c028321fd9a6ff82cc206
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4d9374f5e5c8b65956a7864406c86927b0daf604
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226149"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46102218"
 ---
 # <a name="fatal-error-c1903"></a>심각한 오류 C1903
-이전 오류를 복구할 수 없습니다. 컴파일이 중지됩니다.  
-  
- 컴파일러가 너무 많은 오류를 발견하여 계속할 수 없습니다. 오류를 수정한 다음 다시 컴파일하세요.
+
+이전 오류를 복구할 수 없습니다. 컴파일이 중지됩니다.
+
+컴파일러가 너무 많은 오류를 발견하여 계속할 수 없습니다. 오류를 수정한 다음 다시 컴파일하세요.

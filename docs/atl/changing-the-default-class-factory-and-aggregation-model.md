@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3299fbac04da1e0c82671e5ccc4886d7276af5b9
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 203aeae7dd2edb179ec3f9c1f56f989ffc09b35c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761129"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093014"
 ---
 # <a name="changing-the-default-class-factory-and-aggregation-model"></a>기본 클래스 팩터리 및 집계 모델 변경
 
@@ -47,6 +47,6 @@ ATL 사용 합니다 **typedef** 기본 동작을 구현 하는 메커니즘입�
 
 ## <a name="see-also"></a>참고 항목
 
-[ATL COM 개체의 기본 사항](../atl/fundamentals-of-atl-com-objects.md)   
+[ATL COM 개체 기본 사항](../atl/fundamentals-of-atl-com-objects.md)<br/>
 [집계 및 클래스 팩터리 매크로](../atl/reference/aggregation-and-class-factory-macros.md)
 

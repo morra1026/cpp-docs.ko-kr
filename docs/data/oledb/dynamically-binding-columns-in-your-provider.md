@@ -17,31 +17,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 345bc66200ea4a1d6d4bbb79313157e81b9a2edb
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: ed2b8d1d8bc3ac516b3d605f13e02bda37bb0122
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336692"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028547"
 ---
 # <a name="dynamically-binding-columns-in-your-provider"></a>공급자에서 열을 동적으로 바인딩
+
 동적 열 바인딩 실제로 필요한 지 확인 합니다. 때문에 해야 할 수 있습니다.  
   
--   행 집합 열에 컴파일 타임에 정의 되지 않습니다.  
+- 행 집합 열에 컴파일 타임에 정의 되지 않습니다.  
   
--   열을 추가 하는 책갈피와 같은 요소를 지원 합니다.  
+- 열을 추가 하는 책갈피와 같은 요소를 지원 합니다.  
   
 ### <a name="to-implement-dynamic-column-binding"></a>동적 열 바인딩 구현  
   
-1.  제거 `PROVIDER_COLUMN_MAP`코드의 합니다.  
+1. 제거 `PROVIDER_COLUMN_MAP`코드의 합니다.  
   
-2.  사용자 레코드 (구조)에 다음 선언을 추가 합니다.  
+1. 사용자 레코드 (구조)에 다음 선언을 추가 합니다.  
   
     ```cpp  
     static ATLCOLUMNINFO* GetColumnInfo(void* pThis, ULONG* pcCols);  
     ```  
   
-3.  구현 된 `GetColumnInfo` 함수입니다. 이 함수는 정보를 저장 되는 방법을 레이아웃 합니다. 속성 또는이 함수에 대 한 기타 정보를 가져올 해야 합니다. 와 유사한 매크로 만들 수도 있습니다는 [COLUMN_ENTRY](../../data/oledb/column-entry.md) 매크로 고유한 정보를 추가 합니다.  
+1. 구현 된 `GetColumnInfo` 함수입니다. 이 함수는 정보를 저장 되는 방법을 레이아웃 합니다. 속성 또는이 함수에 대 한 기타 정보를 가져올 해야 합니다. 와 유사한 매크로 만들 수도 있습니다는 [COLUMN_ENTRY](../../data/oledb/column-entry.md) 매크로 고유한 정보를 추가 합니다.  
   
      다음 예제는 `GetColumnInfo` 함수입니다.  
   
@@ -97,4 +98,5 @@ ms.locfileid: "39336692"
     ```  
   
 ## <a name="see-also"></a>참고 항목  
- [OLE DB 공급자 템플릿을 사용하여 작업](../../data/oledb/working-with-ole-db-provider-templates.md)
+
+[OLE DB 공급자 템플릿을 사용하여 작업](../../data/oledb/working-with-ole-db-provider-templates.md)

@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d96fe2eea79f1b5c292664bf13b70c8bde945c7e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9dd26f94ecb97e578073f2c3991ed13ebdc592fc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33241773"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035241"
 ---
 # <a name="compiler-error-c3009"></a>컴파일러 오류 C3009
-'label': OpenMP 구조화된 블록 외부에서 내부로 점프할 수 없습니다.  
-  
- 코드가 OpenMP 블록 안이나 밖으로 점프할 수 없습니다.  
-  
- 다음 샘플에서는 C3009를 생성합니다.  
-  
-```  
-// C3009.c  
-// compile with: /openmp  
-int main() {  
-   #pragma omp parallel   
-   {  
-   lbl2:;  
-   }  
-   goto lbl2;   // C3009  
-}  
+
+'label': OpenMP 구조화된 블록 외부에서 내부로 점프할 수 없습니다.
+
+코드가 OpenMP 블록 안이나 밖으로 점프할 수 없습니다.
+
+다음 샘플에서는 C3009를 생성합니다.
+
+```
+// C3009.c
+// compile with: /openmp
+int main() {
+   #pragma omp parallel
+   {
+   lbl2:;
+   }
+   goto lbl2;   // C3009
+}
 ```

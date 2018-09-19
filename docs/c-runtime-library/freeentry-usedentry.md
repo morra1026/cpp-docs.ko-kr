@@ -22,23 +22,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d75dbc61ae2c9b0c30217a782519ba4e826d2b98
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 60487a502fd304be39f973659cb5fd3432ec7a1d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32390780"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096797"
 ---
 # <a name="freeentry-usedentry"></a>_FREEENTRY, _USEDENTRY
-## <a name="syntax"></a>구문  
-  
-```  
-#include <malloc.h>  
-```  
-  
-## <a name="remarks"></a>설명  
- 이러한 상수는 `_heapwalk` 루틴에 의해 **_HEAPINFO** 구조체의 **_useflag** 요소에 할당된 값을 나타냅니다. 힙 항목의 상태를 나타냅니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [_heapwalk](../c-runtime-library/reference/heapwalk.md)   
- [전역 상수](../c-runtime-library/global-constants.md)
+
+## <a name="syntax"></a>구문
+
+```
+#include <malloc.h>
+```
+
+## <a name="remarks"></a>설명
+
+이러한 상수는 `_heapwalk` 루틴에 의해 **_HEAPINFO** 구조체의 **_useflag** 요소에 할당된 값을 나타냅니다. 힙 항목의 상태를 나타냅니다.
+
+## <a name="see-also"></a>참고 항목
+
+[_heapwalk](../c-runtime-library/reference/heapwalk.md)<br/>
+[전역 상수](../c-runtime-library/global-constants.md)

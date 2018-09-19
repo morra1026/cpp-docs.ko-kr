@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: db6091772529896f12952163c0838949b8518054
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f41eff9659fd85b21b46560be4c1141152f748f1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33104882"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103622"
 ---
 # <a name="autohandleoperator"></a>auto_handle::operator=
 대입 연산자입니다.  
@@ -43,11 +43,11 @@ auto_handle<_element_type> % operator=(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `_right`  
- `auto_handle` 현재에 할당할 `auto_handle`합니다.  
+*(_r)*<br/>
+합니다 `auto_handle` 현재 할당할 `auto_handle`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 현재 `auto_handle`, 이제 소유 `_right`합니다.  
+ 현재 `auto_handle`이제 소유 `_right`합니다.  
   
 ## <a name="example"></a>예제  
   

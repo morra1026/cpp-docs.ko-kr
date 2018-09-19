@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71dc40a7c2d4fe460f546dbfe4f55d00aff59667
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: aa5f96b8937168126509025735d20fab7b35c2b2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759511"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019201"
 ---
 # <a name="cprimitiveelementtraits-class"></a>CPrimitiveElementTraits 클래스
 
@@ -33,13 +33,13 @@ ms.locfileid: "43759511"
 ## <a name="syntax"></a>구문
 
 ```
-template <typename T>  
+template <typename T>
 class CPrimitiveElementTraits : public CDefaultElementTraits<T>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 컬렉션 클래스 개체에 저장할 데이터의 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -91,5 +91,5 @@ typedef T& OUTARGTYPE;
 
 ## <a name="see-also"></a>참고 항목
 
-[CDefaultElementTraits 클래스](../../atl/reference/cdefaultelementtraits-class.md)   
+[CDefaultElementTraits 클래스](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

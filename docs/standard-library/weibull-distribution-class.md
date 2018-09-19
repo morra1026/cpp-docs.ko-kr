@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f684ad5e6487378e8f85aa1c30af0ae9d9038075
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 9229aa162c032198595e78344157748d250b4288
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44109851"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713768"
 ---
 # <a name="weibulldistribution-class"></a>weibull_distribution 클래스
 
@@ -233,13 +233,13 @@ explicit weibull_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*a*  
+*a*<br/>
 `a` 분포 매개 변수입니다.
 
-*b*  
+*b*<br/>
 `b` 분포 매개 변수입니다.
 
-*parm*  
+*parm*<br/>
 분포를 생성하는 데 사용되는 `param_type` 구조체입니다.
 
 ### <a name="remarks"></a>설명
@@ -268,13 +268,13 @@ struct param_type {
 
 ### <a name="parameters"></a>매개 변수
 
-*a*  
+*a*<br/>
 `a` 분포 매개 변수입니다.
 
-*b*  
+*b*<br/>
 `b` 분포 매개 변수입니다.
 
-*right*  
+*right*<br/>
 이 매개 변수와 비교할 `param_type` 개체입니다.
 
 ### <a name="remarks"></a>설명

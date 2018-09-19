@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8ec2e22033ea4cc1b475ab1f838bb77d96916e7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f032f96d4e7af48ad98a75f2bf62058121f135d5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33267188"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109199"
 ---
 # <a name="compiler-error-c3640"></a>컴파일러 오류 C3640
-'member': 지역 클래스는 참조 또는 가상 멤버 함수를 정의 해야 합니다  
-  
- 컴파일러에는 특정 함수를 정의할 수 필요 합니다.  
-  
- 다음 샘플에서는 C3640 오류가 생성 됩니다.  
-  
-```  
-// C3640.cpp  
-void f()   
-{  
-   struct S  
-   {  
-      virtual void f1();   // C3640  
-      // Try the following line instead:  
-      // virtual void f1(){}  
-   };  
-}  
+
+'member': 지역 클래스 참조 또는 가상 멤버 함수를 정의 해야 합니다
+
+컴파일러는 특정 함수를 정의할 수 필요 합니다.
+
+다음 샘플에서는 C3640 오류가 생성 됩니다.
+
+```
+// C3640.cpp
+void f()
+{
+   struct S
+   {
+      virtual void f1();   // C3640
+      // Try the following line instead:
+      // virtual void f1(){}
+   };
+}
 ```

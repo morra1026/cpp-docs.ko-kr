@@ -16,30 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45050daf3149cd813fb23b5814be5fe49c375f03
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2ed43dc43fb6ceaf514a8e7452b06eb7bdaf7362
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33170468"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051648"
 ---
 # <a name="compiler-error-c2261"></a>컴파일러 오류 C2261
-'string': 어셈블리 참조가 잘못 되었으며 확인할 수 없습니다  
-  
- 값에 올바르지 않습니다.  
-  
- <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> friend 어셈블리를 지정 하는 데 사용 됩니다. 예를 들어 a.dll를 b.dll friend 어셈블리 지정 하려는 경우 지정 a.dll) (에: InternalsVisibleTo("b") 합니다. 런타임에서 b.dll a.dll (유형 제외 하 고 개인)의 모든 항목에 액세스할 수 있도록 합니다.  
-  
- Friend 어셈블리 지정 하는 경우에 올바른 구문에 자세한 내용은 [Friend 어셈블리 (c + +)](../../dotnet/friend-assemblies-cpp.md)합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C2261 오류가 발생 합니다.  
-  
-```  
-// C2261.cpp  
-// compile with: /clr /c  
-using namespace System::Runtime::CompilerServices;  
-[assembly: InternalsVisibleTo("a,a,a")];   // C2261  
-[assembly: InternalsVisibleTo("a.a")];   // OK  
-[assembly: InternalsVisibleTo("a")];   // OK  
+
+'string': 어셈블리 참조가 잘못 되어 확인할 수 없습니다
+
+값이 잘못 되었습니다.
+
+<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> friend 어셈블리를 지정 하는 데 사용 됩니다. 예를 들어 a.dll를 b.dll를 friend 어셈블리로 지정 하려는 경우 지정 a.dll) (에: InternalsVisibleTo("b") 합니다. 런타임에서 b.dll a.dll (제외 개인 형식)에서 모든 항목에 액세스할 수 있게 합니다.
+
+Friend 어셈블리를 지정 하는 경우에 올바른 구문에 자세한 내용은 참조 하십시오 [Friend 어셈블리 (c + +)](../../dotnet/friend-assemblies-cpp.md)합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플 C2261를 생성합니다.
+
+```
+// C2261.cpp
+// compile with: /clr /c
+using namespace System::Runtime::CompilerServices;
+[assembly: InternalsVisibleTo("a,a,a")];   // C2261
+[assembly: InternalsVisibleTo("a.a")];   // OK
+[assembly: InternalsVisibleTo("a")];   // OK
 ```

@@ -96,12 +96,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d3af5911cac27a0ac2bb65e9ee0cdb7b714b41d
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 4552fa0462332cacaa8abfd8c42b0de4871dc8d4
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42538534"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720306"
 ---
 # <a name="cdocksite-class"></a>CDockSite Class
 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
@@ -166,7 +166,7 @@ class CDockSite: public CBasePane
   
  일반적으로 수행할 필요가 없습니다 때문에 도킹 사이트에서 제공 하는 서비스 호출 [CFrameWndEx 클래스](../../mfc/reference/cframewndex-class.md) 이러한 서비스를 처리 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 `CDockSite` 클래스의 개체를 만드는 방법을 보여 줍니다.  
   
  [!code-cpp[NVC_MFC_RibbonApp#27](../../mfc/reference/codesnippet/cpp/cdocksite-class_1.cpp)]  
@@ -189,8 +189,8 @@ CDockingPanesRow* AddRow(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pos*  
- [in] *nHeight*  
+*pos*<br/>
+[in] [in] *nHeight*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -225,8 +225,8 @@ void AlignDockSite(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rectToAlignBy*  
- [in] *rectResult*  
+*rectToAlignBy*<br/>
+[in] [in] *rectResult*  
  [in] *bMoveImmediately*  
   
 ### <a name="remarks"></a>설명  
@@ -241,8 +241,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bStretch*  
- [in] *bHorz*  
+*bStretch*<br/>
+[in] [in] *bHorz*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -276,12 +276,12 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwStyleEx*  
- [in] *dwStyle*  
- [in] *rect*  
- [in] *pParentWnd*  
- [in] *dwControlBarStyle*  
- [in] *pContext*  
+*dwStyleEx*<br/>
+[in] [in] *dwStyle*  
+*rect*<br/>
+[in] [in] *pParentWnd*  
+*dwControlBarStyle*<br/>
+[in] [in] *pContext*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -298,8 +298,8 @@ virtual CDockingPanesRow* CreateRow(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pParentDockBar*  
- [in] *nOffset*  
+*pParentDockBar*<br/>
+[in] [in] *nOffset*  
  [in] *nRowHeight*  
   
 ### <a name="return-value"></a>반환 값  
@@ -317,8 +317,8 @@ virtual void DockPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- [in] *dockMethod*  
+*pWnd*<br/>
+[in] [in] *dockMethod*  
  [in] *lpRect*  
   
 ### <a name="remarks"></a>설명  
@@ -363,8 +363,8 @@ CPane* FindPaneByID(UINT nID);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 찾을 창의 명령 ID입니다.  
+*nID*<br/>
+[in] 찾을 창의 명령 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
  창 없는 경우 NULL을 지정 된 명령 ID를 사용 하 여 창에 대 한 포인터입니다.  
@@ -472,8 +472,8 @@ BOOL IsRectWithinDockSite(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rect*  
- [in] *ptDelta*  
+*rect*<br/>
+[in] [in] *ptDelta*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -501,8 +501,8 @@ virtual BOOL MovePane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- [in] *nFlags*  
+*pWnd*<br/>
+[in] [in] *nFlags*  
  [in] *ptOffset*  
   
 ### <a name="return-value"></a>반환 값  
@@ -531,8 +531,8 @@ virtual void OnRemoveRow(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pos*  
- [in] *bByShow*  
+*pos*<br/>
+[in] [in] *bByShow*  
   
 ### <a name="remarks"></a>설명  
   
@@ -546,8 +546,8 @@ virtual int OnResizeRow(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pRowToResize*  
- [in] *nOffset*  
+*pRowToResize*<br/>
+[in] [in] *nOffset*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -565,10 +565,10 @@ virtual void OnSizeParent(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rectAvailable*  
- [in] *nSide*  
- [in] *bExpand*  
- [in] *nOffset*  
+*rectAvailable*<br/>
+[in] [in] *nSide*  
+*bExpand*<br/>
+[in] [in] *nOffset*  
   
 ### <a name="remarks"></a>설명  
   
@@ -583,8 +583,8 @@ virtual BOOL OnSetWindowPos(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndInsertAfter*  
- [in] *rectWnd*  
+*pWndInsertAfter*<br/>
+[in] [in] *rectWnd*  
  [in] *nFlags*  
   
 ### <a name="return-value"></a>반환 값  
@@ -601,8 +601,8 @@ virtual void OnShowRow(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pos*  
- [in] *bShow*  
+*pos*<br/>
+[in] [in] *bShow*  
   
 ### <a name="remarks"></a>설명  
   
@@ -614,8 +614,8 @@ virtual CPane* PaneFromPoint(CPoint pt);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *(태평양 표준시)*  
- 시점, 검색할 창에 대 한 화면 좌표입니다.  
+*(태평양 표준시)*<br/>
+[in] 시점, 검색할 창에 대 한 화면 좌표입니다.  
   
 ### <a name="return-value"></a>반환 값  
  창 없는 지정된 된 지점에 있는 경우 NULL을 지정 된 위치에 있는 창에 대 한 포인터입니다.  
@@ -632,8 +632,8 @@ static int __stdcall RectSideFromPoint(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rect*  
- [in] *지점*  
+*rect*<br/>
+[in] [in] *지점*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -649,8 +649,8 @@ virtual void RemovePane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- [in] *dockMethod*  
+*pWnd*<br/>
+[in] [in] *dockMethod*  
   
 ### <a name="remarks"></a>설명  
   
@@ -676,8 +676,8 @@ BOOL ReplacePane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pOldBar*  
- [in] *pNewBar*  
+*pOldBar*<br/>
+[in] [in] *pNewBar*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -705,8 +705,8 @@ void ResizeDockSite(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nNewWidth*  
- [in] *nNewHeight*  
+*nNewWidth*<br/>
+[in] [in] *nNewHeight*  
   
 ### <a name="remarks"></a>설명  
   
@@ -721,8 +721,8 @@ int ResizeRow(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pRow*  
- [in] *nNewSize*  
+*pRow*<br/>
+[in] [in] *nNewSize*  
  [in] *bAdjustLayout*  
   
 ### <a name="return-value"></a>반환 값  
@@ -744,14 +744,14 @@ virtual BOOL ShowPane(
  [in] [out] *pBar*  
  표시 하거나 숨길 수의 창에 대 한 포인터입니다.  
   
- [in] *bShow*  
- 창에 표시할; 임을 지정. 창에 표시 되지 않도록 임을 지정 하려면 FALSE입니다.  
+*bShow*<br/>
+[in] 창에 표시할; 임을 지정. 창에 표시 되지 않도록 임을 지정 하려면 FALSE입니다.  
   
- [in] *bDelay*  
- 창 레이아웃 창으로 표시 되 후까지 지연 돼야 하는지 지정. 그렇지 않으면 FALSE입니다.  
+*bDelay*<br/>
+[in] 창 레이아웃 창으로 표시 되 후까지 지연 돼야 하는지 지정. 그렇지 않으면 FALSE입니다.  
   
- [in] *bActivate*  
- 이 매개 변수는 사용되지 않습니다.  
+*bActivate*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  창에 성공적으로 숨기 거 나 표시할지를 하는 경우 TRUE입니다. FALSE 이면 지정한 창이 도킹 사이트에 속하지 않습니다.  
@@ -770,8 +770,8 @@ void ShowRow(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pRow*  
- [in] *bShow*  
+*pRow*<br/>
+[in] [in] *bShow*  
  [in] *bAdjustLayout*  
   
 ### <a name="remarks"></a>설명  
@@ -786,8 +786,8 @@ void SwapRows(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pFirstRow*  
- [in] *pSecondRow*  
+*pFirstRow*<br/>
+[in] [in] *pSecondRow*  
   
 ### <a name="remarks"></a>설명  
   

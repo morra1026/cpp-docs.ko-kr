@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 769c7b2d6c20fdc6daba6f1df2f576987c146641
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 28348626417f6b4c961be4486f6d7573a0a67780
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320897"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076062"
 ---
 # <a name="project-build-error-prj0017"></a>프로젝트 빌드 오류 PRJ0017
-현재 작업 디렉터리가 잘못 되었습니다.  
-  
- 현재 작업 디렉터리의 경로를 _MAXPATH 보다 깁니다. 이 오류를 해결 하려면 마십시오 프로젝트에 만들지 중첩 수준.
+
+현재 작업 디렉터리가 잘못 되었습니다.
+
+현재 작업 디렉터리의 경로를 _MAXPATH 보다 깁니다. 이 오류를 해결 하려면 이러한 중첩 수준에서 프로젝트를 만들 하지 않습니다.

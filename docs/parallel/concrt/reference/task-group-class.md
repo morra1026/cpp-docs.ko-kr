@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33b285cb55e04bcae2fd7f65ef5e94686e88e5e6
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: d7ee8fa674174d95c3e538889f6d5538be049b70
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208990"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020722"
 ---
 # <a name="taskgroup-class"></a>task_group 클래스
 `task_group` 클래스는 대기하거나 취소할 수 있는 병렬 작업 컬렉션을 나타냅니다.  
@@ -127,17 +127,17 @@ void run(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Function`  
- 작업 핸들의 본문을 실행 하기 위해 호출 될 함수 개체의 형식입니다.  
+*_Function*<br/>
+작업 핸들의 본문을 실행 하기 위해 호출 될 함수 개체의 형식입니다.  
   
- `_Func`  
- 함수 호출 작업의 본문을 호출 하 여입니다. 람다 식 또는 서명 사용 하 여 함수 호출 연산자의 버전을 지 원하는 다른 개체를 사용 하도록 때문일 `void operator()()`합니다.  
+*_Func*<br/>
+함수 호출 작업의 본문을 호출 하 여입니다. 람다 식 또는 서명 사용 하 여 함수 호출 연산자의 버전을 지 원하는 다른 개체를 사용 하도록 때문일 `void operator()()`합니다.  
   
- `_Placement`  
- `_Func` 매개 변수가 나타내는 작업을 실행해야 할 위치에 대한 참조입니다.  
+*있음 (_p)*<br/>
+`_Func` 매개 변수가 나타내는 작업을 실행해야 할 위치에 대한 참조입니다.  
   
- `_Task_handle`  
- 예약 된 작업에 대 한 핸들입니다. 호출자에 게이 개체의 수명 담당 하는 참고 합니다. 런타임에서 라이브로 될 때까지 계속 합니다 `wait` 또는 `run_and_wait` 메서드가이 호출 된 `task_group` 개체입니다.  
+*_Task_handle*<br/>
+예약 된 작업에 대 한 핸들입니다. 호출자에 게이 개체의 수명 담당 하는 참고 합니다. 런타임에서 라이브로 될 때까지 계속 합니다 `wait` 또는 `run_and_wait` 메서드가이 호출 된 `task_group` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  런타임에서 해당 되는 호출 함수가 반환 된 후 나중에 실행 되도록 제공 된 작업 함수를 예약 합니다. 이 메서드를 사용 하는 [task_handle](task-handle-class.md) 제공 된 작업 함수의 복사본을 저장 하는 개체입니다. 따라서이 메서드에 전달 하는 함수 개체에서 발생 하는 모든 상태 변경 내용을 해당 함수 개체의 복사본에 나타나지 않습니다. 또한 작업 함수에 대 한 참조 또는 포인터에 의해 전달 하는 모든 개체의 수명을 작업 함수에서 반환 될 때까지 유효한 상태로 해야 합니다.  
@@ -167,14 +167,14 @@ task_group_status run_and_wait(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Function`  
- 작업의 본문을 실행하기 위해 호출될 함수 개체의 형식입니다.  
+*_Function*<br/>
+작업의 본문을 실행하기 위해 호출될 함수 개체의 형식입니다.  
   
- `_Task_handle`  
- 인라인 호출 컨텍스트에서 실행 태스크에 대 한 핸들입니다. 호출자에 게이 개체의 수명 담당 하는 참고 합니다. 런타임이 될 때까지 라이브로 계속를 `run_and_wait` 메서드 실행을 완료 합니다.  
+*_Task_handle*<br/>
+인라인 호출 컨텍스트에서 실행 태스크에 대 한 핸들입니다. 호출자에 게이 개체의 수명 담당 하는 참고 합니다. 런타임이 될 때까지 라이브로 계속를 `run_and_wait` 메서드 실행을 완료 합니다.  
   
- `_Func`  
- 함수 호출 작업의 본문을 호출 하 여입니다. 람다 식 또는 서명 사용 하 여 함수 호출 연산자의 버전을 지 원하는 다른 개체를 사용 하도록 때문일 `void operator()()`합니다.  
+*_Func*<br/>
+함수 호출 작업의 본문을 호출 하 여입니다. 람다 식 또는 서명 사용 하 여 함수 호출 연산자의 버전을 지 원하는 다른 개체를 사용 하도록 때문일 `void operator()()`합니다.  
   
 ### <a name="return-value"></a>반환 값  
  명시적 취소 작업 또는 태스크 중 하나에서 예외가 발생 인해 대기가 충족 되었음을 여부를 나타내는 값 또는 작업 그룹이 취소 되었습니다. 자세한 내용은 [task_group_status](concurrency-namespace-enums.md#task_group_status)합니다.  
@@ -202,8 +202,8 @@ task_group(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_CancellationToken`  
- 이 작업 그룹에 연결할 취소 토큰입니다. 작업 그룹은 토큰이 취소될 때 취소됩니다.  
+*_CancellationToken*<br/>
+이 작업 그룹에 연결할 취소 토큰입니다. 작업 그룹은 토큰이 취소될 때 취소됩니다.  
   
 ### <a name="remarks"></a>설명  
  취소 토큰을 사용하는 생성자는 토큰에 연결된 소스가 취소될 때 취소될 `task_group`을 만듭니다. 명시적 취소 토큰을 제공하면 다른 토큰을 사용하거나 토큰을 사용하지 않는 부모 그룹에서의 암시적 취소에 이 작업 그룹이 참여하지 않도록 격리됩니다.  

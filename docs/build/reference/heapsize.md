@@ -16,19 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7fd45584cc83a1b5fbfc593959e04304c5aaeb3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e5939828dbcd735e80535192687b91c22b06fd50
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32370949"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717667"
 ---
 # <a name="heapsize"></a>HEAPSIZE
-동일한 기능을 노출 된 [힙/](../../build/reference/heap-set-heap-size.md) 링커 옵션입니다.  
-  
-```  
-/HEAP:reserve[,commit]  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [모듈 정의 문의 규칙](../../build/reference/rules-for-module-definition-statements.md)
+
+동일한 기능을 노출 합니다 [힙/](../../build/reference/heap-set-heap-size.md) 링커 옵션입니다.
+
+```
+/HEAP:reserve[,commit]
+```
+
+## <a name="see-also"></a>참고 항목
+
+[모듈 정의 문의 규칙](../../build/reference/rules-for-module-definition-statements.md)

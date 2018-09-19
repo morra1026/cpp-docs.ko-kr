@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab1b1472495f858db2c17b9b7c5d0e77b3627396
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: daae15b06ffb576df75859b1562fd4a895a45f6f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33166561"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053968"
 ---
 # <a name="compiler-error-c2132"></a>컴파일러 오류 C2132
-구문 오류 : 예기치 않은 식별자입니다.  
-  
- 지원되지 않는 컨텍스트에서 식별자가 나타납니다.
+
+구문 오류 : 예기치 않은 식별자입니다.
+
+지원되지 않는 컨텍스트에서 식별자가 나타납니다.

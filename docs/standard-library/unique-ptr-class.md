@@ -32,12 +32,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 554b6a1c405060c975e914340b5e4b312d9b25b7
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: fc013ca5cc8c941e0208b5921a73daebdae2264b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961557"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725194"
 ---
 # <a name="uniqueptr-class"></a>unique_ptr 클래스
 
@@ -104,17 +104,17 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*  
- `unique_ptr`
+*오른쪽*<br/>
+`unique_ptr`
 
-*Nptr*  
- `rvalue` 형식의 `std::nullptr_t`입니다.
+*Nptr*<br/>
+`rvalue` 형식의 `std::nullptr_t`입니다.
 
-*ptr*  
- `pointer`
+*ptr*<br/>
+`pointer`
 
-*삭제 자*  
- `deleter`에 바인딩되는 `unique_ptr` 함수.
+*삭제 자*<br/>
+`deleter`에 바인딩되는 `unique_ptr` 함수.
 
 ## <a name="exceptions"></a>예외
 
@@ -266,7 +266,7 @@ pointer release();
 
 `release`를 사용하여 `unique_ptr`이 저장한 원시 포인터의 소유권을 가져올 수 있습니다. 호출자는 반환된 포인터를 삭제해야 합니다. `unique-ptr`은 비어 있는 기본 생성 상태로 설정됩니다. `unique_ptr` 호출 후에 호환되는 형식의 다른 포인터를 `release`에 할당할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 이 예에서는 릴리스의 호출자가 반환된 개체를 책임지는 방식을 보여 줍니다.
 
@@ -348,8 +348,8 @@ void swap(unique_ptr& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*  
- 포인터를 교환하는 데 사용되는 `unique_ptr`입니다.
+*right*<br/>
+포인터를 교환하는 데 사용되는 `unique_ptr`입니다.
 
 ### <a name="remarks"></a>설명
 

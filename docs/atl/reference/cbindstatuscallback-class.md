@@ -39,12 +39,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58d18a6b5eae55373be9ddc71a4d856547bf420c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3a816d10a0cb9665938e77ae8c649464b7b6768c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758432"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108484"
 ---
 # <a name="cbindstatuscallback-class"></a>CBindStatusCallback 클래스
 
@@ -57,17 +57,17 @@ ms.locfileid: "43758432"
 
 ```
 template <class T,
-    int nBindFlags = BINDF_ASYNCHRONOUS | BINDF_ASYNCSTORAGE | BINDF_GETNEWESTVERSION | BINDF_NOWRITECACHE>  
+    int nBindFlags = BINDF_ASYNCHRONOUS | BINDF_ASYNCSTORAGE | BINDF_GETNEWESTVERSION | BINDF_NOWRITECACHE>
 class ATL_NO_VTABLE CBindStatusCallback : public CComObjectRootEx <T ::_ThreadModel::ThreadModelNoCS>,
     public IBindStatusCallbackImpl<T>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 데이터를 수신할 때 호출 되는 함수를 포함 하 여 클래스입니다.
 
-*nBindFlags*  
+*nBindFlags*<br/>
 반환 되는 바인딩 플래그를 지정 [GetBindInfo](#getbindinfo)합니다. 기본 구현에서는 비동기가 되도록 바인딩을 설정 하 고, 최신 버전의 데이터/개체를 검색, 디스크 캐시에서 검색된 된 데이터를 저장 하지 않습니다.
 
 ## <a name="members"></a>멤버
@@ -162,7 +162,7 @@ CBindStatusCallback();
 만듭니다는 `CBindStatusCallback` 개체와 호출 `StartAsyncDownload` 지정된 된 URL에서 데이터를 비동기적으로 다운로드를 시작 합니다.
 
 ```
-static HRESULT Download(  
+static HRESULT Download(
     T* pT,
     ATL_PDATAAVAILABLE pFunc,
     BSTR bstrURL,
@@ -172,21 +172,21 @@ static HRESULT Download(
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*  
+*(태평양 표준시)*<br/>
 [in] 비동기 데이터 전송 요청 하는 개체에 대 한 포인터입니다. `CBindStatusCallback` 개체는이 개체의이 클래스에 템플릿 화 됩니다.
 
-*pFunc*  
+*pFunc*<br/>
 [in] 읽을 수 있는 데이터를 수신 하는 함수에 대 한 포인터입니다. 함수 형식의 개체의 클래스의 멤버인 `T`합니다. 참조 [StartAsyncDownload](#startasyncdownload) 구문 및 예제입니다.
 
-*bstrURL*  
+*bstrURL*<br/>
 [in] 데이터를 가져올 URL입니다. 모든 유효한 URL 또는 파일 이름일 수 있습니다. NULL일 수 없습니다. 예를 들어:
 
 `CComBSTR mybstr =_T("http://somesite/data.htm")`
 
-*pUnkContainer*  
+*pUnkContainer*<br/>
 [in] `IUnknown` 컨테이너입니다. 기본적으로 NULL입니다.
 
-*bRelative*  
+*bRelative*<br/>
 [in] 상대 또는 절대 URL이 있는지 여부를 나타내는 플래그입니다. 절대 URL 즉 기본적으로 FALSE가입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -209,7 +209,7 @@ STDMETHOD(GetBindInfo)(
 
 ### <a name="parameters"></a>매개 변수
 
-*pgrfBSCF*  
+*pgrfBSCF*<br/>
 [out] 바인딩 작업이 발생 해야 하는 방법을 나타내는 BINDF 열거형 값에 대 한 포인터입니다. 기본적으로 다음 열거형 값으로 설정 합니다.
 
 BINDF_ASYNCHRONOUS 비동기 다운로드 합니다.
@@ -220,7 +220,7 @@ BINDF_GETNEWESTVERSION 바인딩 작업 데이터의 최신 버전을 검색 해
 
 디스크 캐시에서 데이터를 검색 하는 BINDF_NOWRITECACHE 바인딩 작업을 저장 하지 마십시오.
 
-*pbindinfo*  
+*pbindinfo*<br/>
 [out에서] 에 대 한 포인터를 `BINDINFO` 구조 개체 바인딩 되려면 하려고 하는 방법에 대 한 자세한 정보를 제공 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -241,7 +241,7 @@ STDMETHOD(GetPriority)(LONG* pnPriority);
 
 ### <a name="parameters"></a>매개 변수
 
-*pnPriority*  
+*pnPriority*<br/>
 [out] 주소를 **긴** 성공 하면 우선 순위를 수신 하는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -284,12 +284,12 @@ ATL_PDATAAVAILABLE m_pFunc;
 
 가리키는 함수 `m_pFunc` 개체의 클래스의 멤버 이며에 다음 구문이 있습니다.
 
-```  
-void Function_Name(  
-   CBindStatusCallback<T>* pbsc,  
-   BYTE* pBytes,  
-   DWORD dwSize  
-   );  
+```
+void Function_Name(
+   CBindStatusCallback<T>* pbsc,
+   BYTE* pBytes,
+   DWORD dwSize
+   );
 ```
 
 ##  <a name="m_pt"></a>  CBindStatusCallback::m_pT
@@ -357,7 +357,7 @@ CComPtr<IStream> m_spStream;
 비동기 모니커 시스템 제공 호출 `OnDataAvailable` 를 사용할 수 있는 개체에 데이터를 제공 합니다.
 
 ```
-STDMETHOD(  
+STDMETHOD(
     OnDataAvailable)(DWORD grfBSCF,
     DWORD dwSize,
     FORMATETC* /* pformatetc */,
@@ -366,16 +366,16 @@ STDMETHOD(
 
 ### <a name="parameters"></a>매개 변수
 
-*grfBSCF*  
+*grfBSCF*<br/>
 [in] BSCF 열거형 값입니다. 다음 중 하나 이상의: BSCF_FIRSTDATANOTIFICATION, BSCF_INTERMEDIARYDATANOTIFICATION, 또는 BSCF_LASTDATANOTIFICATION 합니다.
 
-*dwSize*  
+*dwSize*<br/>
 [in] 바인딩의 사용할 수 있는 데이터의 누적 양 (메가바이트)입니다. 데이터의 양을 관련 되지 않거나 특정 양이 없는 나왔을 있는지를 나타내는 0이 될 수 있습니다.
 
-*pformatetc*  
+*pformatetc*<br/>
 [in] 에 대 한 포인터를 [FORMATETC](/windows/desktop/com/the-formatetc-structure) 사용 가능한 데이터의 형식을 포함 하는 구조입니다. 형식이 없습니다, 경우에 CF_NULL 수 있습니다.
 
-*pstgmed*  
+*pstgmed*<br/>
 [in] 에 대 한 포인터를 [STGMEDIUM](/windows/desktop/com/the-stgmedium-structure) 이제 사용 가능한 실제 데이터를 보유 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -396,7 +396,7 @@ STDMETHOD(OnLowResource)(DWORD /* dwReserved */);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwReserved*  
+*dwReserved*<br/>
 예약됨.
 
 ### <a name="return-value"></a>반환 값
@@ -413,10 +413,10 @@ STDMETHOD(OnObjectAvailable)(REFID /* riid */, IUnknown* /* punk */);
 
 ### <a name="parameters"></a>매개 변수
 
-*riid*  
+*riid*<br/>
 요청된 된 인터페이스의 인터페이스 식별자입니다. 사용되지 않습니다.
 
-*punk*  
+*punk*<br/>
 IUnknown 인터페이스 주소입니다. 사용되지 않습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -437,16 +437,16 @@ STDMETHOD(OnProgress)(
 
 ### <a name="parameters"></a>매개 변수
 
-*ulProgress*  
+*ulProgress*<br/>
 부호 없는 정수 (long)입니다. 사용되지 않습니다.
 
-*ulProgressMax*  
+*ulProgressMax*<br/>
 부호 없는 정수 (long) 사용 안 함.
 
-*ulStatusCode*  
+*ulStatusCode*<br/>
 부호 없는 정수 (long)입니다. 사용되지 않습니다.
 
-*szStatusText*  
+*szStatusText*<br/>
 문자열 값의 주소입니다. 사용되지 않습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -463,10 +463,10 @@ STDMETHOD(OnStartBinding)(DWORD /* dwReserved */, IBinding* pBinding);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwReserved*  
+*dwReserved*<br/>
 나중에 사용하기 위해 예약되어 있습니다.
 
-*pBinding*  
+*pBinding*<br/>
 [in] 현재 IBinding 인터페이스의 주소는 작업을 바인딩합니다. 두 일 수 없습니다. 클라이언트는 바인딩 개체에 대 한 참조를 유지 하려면이 포인터에서 AddRef를 호출 해야 합니다.
 
 ##  <a name="onstopbinding"></a>  CBindStatusCallback::OnStopBinding
@@ -479,11 +479,11 @@ STDMETHOD(OnStopBinding)(HRESULT hresult, LPCWSTR /* szError */);
 
 ### <a name="parameters"></a>매개 변수
 
-*hresult*  
+*hresult*<br/>
 바인딩 작업에서 반환 되는 상태 코드입니다.
 
-szStatusText  
-사용 되지 않은 문자열 값의 주소입니다.
+*szError*<br/>
+문자열 값의 주소입니다. 사용되지 않습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -494,7 +494,7 @@ szStatusText
 지정된 된 URL에서 데이터를 비동기적으로 다운로드를 시작 합니다.
 
 ```
-HRESULT StartAsyncDownload(  
+HRESULT StartAsyncDownload(
     T* pT,
     ATL_PDATAAVAILABLE pFunc,
     BSTR bstrURL,
@@ -504,21 +504,21 @@ HRESULT StartAsyncDownload(
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*  
+*(태평양 표준시)*<br/>
 [in] 비동기 데이터 전송 요청 하는 개체에 대 한 포인터입니다. `CBindStatusCallback` 개체는이 개체의이 클래스에 템플릿 화 됩니다.
 
-*pFunc*  
+*pFunc*<br/>
 [in] 읽을 데이터를 수신 하는 함수에 대 한 포인터입니다. 함수 형식의 개체의 클래스의 멤버인 `T`합니다. 참조 **주의** 구문 및 예제입니다.
 
-*bstrURL*  
+*bstrURL*<br/>
 [in] 데이터를 가져올 URL입니다. 모든 유효한 URL 또는 파일 이름일 수 있습니다. NULL일 수 없습니다. 예를 들어:
 
 `CComBSTR mybstr =_T("http://somesite/data.htm")`
 
-*pUnkContainer*  
+*pUnkContainer*<br/>
 [in] `IUnknown` 컨테이너입니다. 기본적으로 NULL입니다.
 
-*bRelative*  
+*bRelative*<br/>
 [in] 상대 또는 절대 URL이 있는지 여부를 나타내는 플래그입니다. 절대 URL 즉 기본적으로 FALSE가입니다.
 
 ### <a name="return-value"></a>반환 값

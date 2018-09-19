@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f050a4b9e8b188c5c44534972e9c94d89020351
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c9bbb2a2cc65ae5b9216344e5d2e1a6cc3e13b93
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33164647"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018557"
 ---
 # <a name="compiler-error-c2112"></a>컴파일러 오류 C2112
-'-': 포인터 빼기에는 정수 계열 또는 포인터 피연산자가 있어야 합니다.  
-  
- 다양 한 종류를 가리키는 포인터 빼기 하려고 했습니다.
+
+'-': 포인터 빼기에는 정수 계열 또는 포인터 피연산자가 있어야 합니다.
+
+다양 한 종류를 가리키는 포인터를 뺄 하려고 했습니다.

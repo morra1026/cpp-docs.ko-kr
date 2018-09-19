@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08884f8a9304a2849d9bcbe13170d0bd38402a62
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 608109d6a040345610a47ac2e43a51a813a3c6bf
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243305"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059041"
 ---
 # <a name="compiler-error-c2906"></a>컴파일러 오류 C2906
-'specialization' : 명시적 특수화에는 'template <>'가 필요합니다.  
-  
- 템플릿의 명시적 특수화에 대 한 새 구문을 사용 해야 합니다.  
-  
- 다음 샘플에서는 C2906 오류가 생성 됩니다.  
-  
-```  
-// C2906.cpp  
-// compile with: /c  
-template<class T> class X{};   // primary template  
-class X<int> { }   // C2906  
-template<> class X<int> { };   // new syntax  
+
+'specialization' : 명시적 특수화에는 'template <>'가 필요합니다.
+
+템플릿의 명시적 특수화에 대 한 새 구문을 사용 해야 합니다.
+
+다음 샘플에서는 C2906 오류가 생성 됩니다.
+
+```
+// C2906.cpp
+// compile with: /c
+template<class T> class X{};   // primary template
+class X<int> { }   // C2906
+template<> class X<int> { };   // new syntax
 ```

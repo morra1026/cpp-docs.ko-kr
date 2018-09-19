@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5bc4004be27a057c96d9c10e7e7f261d8a5ddebe
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: bb2d345e0bb8be8f5150d48237df9845acf451dd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761354"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036178"
 ---
 # <a name="ccomcontrol-class"></a>CComControl 클래스
 
@@ -46,17 +46,17 @@ ms.locfileid: "43761354"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T, class WinBase = CWindowImpl<T>>  
+template <class T, class WinBase = CWindowImpl<T>>
 class ATL_NO_VTABLE CComControl : public CComControlBase,
     public WinBase;
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 컨트롤을 구현 하는 클래스입니다.
 
-*WinBase*  
+*WinBase*<br/>
 기간 이동 함수를 구현 하는 기본 클래스입니다. 기본값으로 [CWindowImpl](../../atl/reference/cwindowimpl-class.md)합니다.
 
 ## <a name="members"></a>멤버
@@ -119,10 +119,10 @@ virtual HRESULT ControlQueryInterface(const IID& iid, void** ppv);
 
 ### <a name="parameters"></a>매개 변수
 
-*iid*  
+*iid*<br/>
 [in] 요청 된 인터페이스의 GUID입니다.
 
-*ppv*  
+*ppv*<br/>
 [out] 로 식별 되는 인터페이스 포인터에 대 한 포인터 *iid*, 또는 인터페이스를 찾을 수 없으면 NULL입니다.
 
 ### <a name="remarks"></a>설명
@@ -143,10 +143,10 @@ virtual HWND CreateControlWindow(HWND hWndParent, RECT& rcPos);
 
 ### <a name="parameters"></a>매개 변수
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] 부모 또는 소유자 창에 대 한 핸들입니다. 유효한 창 핸들을 제공 해야 합니다. 컨트롤 창은 부모 창의 영역으로 제한 됩니다.
 
-*rcPos*  
+*rcPos*<br/>
 [in] 초기 크기 및 만들려는 창의 위치입니다.
 
 ### <a name="remarks"></a>설명
@@ -167,7 +167,7 @@ HRESULT FireOnChanged(DISPID dispID);
 
 ### <a name="parameters"></a>매개 변수
 
-*dispID*  
+*dispID*<br/>
 [in] 변경 된 속성의 식별자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -194,7 +194,7 @@ HRESULT FireOnRequestEdit(DISPID dispID);
 
 ### <a name="parameters"></a>매개 변수
 
-*dispID*  
+*dispID*<br/>
 [in] 변경할 속성의 식별자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -203,7 +203,7 @@ HRESULT 값 중 하나입니다.
 
 ### <a name="remarks"></a>설명
 
-컨트롤 클래스에서 파생 되는 경우 [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink),이 메서드를 호출 [CFirePropNotifyEvent::FireOnRequestEdit](cfirepropnotifyevent-class.md#fireonrequestedit) 연결 된 모든 알림 `IPropertyNotifySink` 하는 인터페이스를 지정 된 컨트롤 속성 변경 되려고 합니다. 컨트롤 클래스에서 파생 되지 않은 경우 `IPropertyNotifySink`,이 메서드는 S_OK를 반환 합니다.  
+컨트롤 클래스에서 파생 되는 경우 [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink),이 메서드를 호출 [CFirePropNotifyEvent::FireOnRequestEdit](cfirepropnotifyevent-class.md#fireonrequestedit) 연결 된 모든 알림 `IPropertyNotifySink` 하는 인터페이스를 지정 된 컨트롤 속성 변경 되려고 합니다. 컨트롤 클래스에서 파생 되지 않은 경우 `IPropertyNotifySink`,이 메서드는 S_OK를 반환 합니다.
 
 이 메서드는 안전 컨트롤 연결점을 지원 하지 않습니다 하는 경우에 호출 합니다.
 
@@ -224,13 +224,13 @@ int MessageBox(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszText*  
+*lpszText*<br/>
 메시지 상자에 표시할 텍스트입니다.
 
-*lpszCaption*  
+*lpszCaption*<br/>
 대화 상자 제목입니다. 경우 NULL (기본값), "Error"는 제목입니다.
 
-*n 형식*  
+*n 형식*<br/>
 내용 및 대화 상자의 동작을 지정합니다. 참조 된 [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) 목록 사용할 수 있는 다양 한 메시지 상자는 Windows SDK 설명서의 항목입니다. 기본 제공 단순 **확인** 단추입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -243,7 +243,7 @@ int MessageBox(
 
 ## <a name="see-also"></a>참고 항목
 
-[CWindowImpl 클래스](../../atl/reference/cwindowimpl-class.md)   
-[클래스 개요](../../atl/atl-class-overview.md)   
-[CComControlBase 클래스](../../atl/reference/ccomcontrolbase-class.md)   
+[CWindowImpl 클래스](../../atl/reference/cwindowimpl-class.md)<br/>
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
+[CComControlBase 클래스](../../atl/reference/ccomcontrolbase-class.md)<br/>
 [CComCompositeControl 클래스](../../atl/reference/ccomcompositecontrol-class.md)

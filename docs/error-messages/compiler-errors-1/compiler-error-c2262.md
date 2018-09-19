@@ -16,25 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 199c5d109cf994a8f69e29f893cd13dd7028ca82
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 44e60bfcf00e3e01340c3df1b79004e84e93f56c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33170767"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071447"
 ---
 # <a name="compiler-error-c2262"></a>컴파일러 오류 C2262
-'attribute_specifiers': InternalsVisibleTo 선언에는 버전, 문화권 또는 프로세서 아키텍처를 지정할 수 없습니다.  
-  
- <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 특성을 올바르게 지정하지 않았습니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C2262를 생성합니다.  
-  
-```  
-// C2262.cpp  
-// compile with: /clr /c  
-using namespace System::Runtime::CompilerServices;  
-[assembly: InternalsVisibleTo("assembly_name, version=1.2.3.7")];   // C2262  
-[assembly: InternalsVisibleTo("assembly_name ")];   // OK  
+
+'attribute_specifiers': InternalsVisibleTo 선언에는 버전, 문화권 또는 프로세서 아키텍처를 지정할 수 없습니다.
+
+<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 특성을 올바르게 지정하지 않았습니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C2262를 생성합니다.
+
+```
+// C2262.cpp
+// compile with: /clr /c
+using namespace System::Runtime::CompilerServices;
+[assembly: InternalsVisibleTo("assembly_name, version=1.2.3.7")];   // C2262
+[assembly: InternalsVisibleTo("assembly_name ")];   // OK
 ```

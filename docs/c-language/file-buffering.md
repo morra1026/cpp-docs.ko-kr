@@ -16,17 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8aaa6595fa9d7e87c7021368125af7a3bc53128e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2a2b8221976dc00666a24cfc2627dad35e73f3ce
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32382655"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076023"
 ---
 # <a name="file-buffering"></a>파일 버퍼링
-**ANSI 4.9.3** 파일 버퍼링의 특징  
-  
- 표준 I/O 기능을 통해 액세스되는 디스크 파일은 완전히 버퍼링됩니다. 기본적으로 버퍼는 512바이트를 보유합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [라이브러리 함수](../c-language/library-functions.md)
+
+**ANSI 4.9.3** 파일 버퍼링의 특징
+
+표준 I/O 기능을 통해 액세스되는 디스크 파일은 완전히 버퍼링됩니다. 기본적으로 버퍼는 512바이트를 보유합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[라이브러리 함수](../c-language/library-functions.md)

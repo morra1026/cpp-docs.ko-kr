@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 509c7e00236ed824c3213f7ba730909873646c2e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0f993b435df4d0b6804ab9b31698074d65a03112
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295989"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025024"
 ---
 # <a name="expression-evaluator-error-cxx0057"></a>식 계산기 오류 CXX0057
-줄 번호에 코드가 없습니다.  
-  
- 지정된 된 줄 번호에 대해 생성 된 코드가 없습니다. 중단점으로 사용할 수 없습니다.  
-  
- 이 오류는 can0057과 동일 합니다.
+
+줄 번호에 코드가 없습니다.
+
+지정된 된 줄 번호에 대 한 생성 된 코드가 없습니다. 중단점으로 사용할 수 없습니다.
+
+이 오류는 can0057과 동일 합니다.

@@ -143,12 +143,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab0f59604cc23f5d8cbd442fcc2a526962bdc4e9
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 6f97129a9a785d4c6541d951418f2c9455aa9610
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851418"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713639"
 ---
 # <a name="cpane-class"></a>CPane Class
 합니다 `CPane` 클래스의 향상 된 기능을 [CControlBar 클래스](../../mfc/reference/ccontrolbar-class.md)합니다. 기존 MFC 프로젝트를 업그레이드 하는 경우의 모든 항목을 바꾸려면 `CControlBar` 사용 하 여 `CPane`입니다.  
@@ -246,7 +246,7 @@ class CPane : public CBasePane
   
 ### <a name="data-members"></a>데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |[CPane::m_bHandleMinSize](#m_bhandleminsize)|창에 대 한 최소 크기의 일관 된 처리할 수 있습니다.|  
 |[M_recentdockinfo](#m_recentdockinfo)|최근 도킹 정보가 들어 있습니다.|  
@@ -278,8 +278,8 @@ virtual void AdjustSizeImmediate(BOOL bRecalcLayout = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bRecalcLayout*  
- 창의 레이아웃을 자동으로 다시 계산. 그렇지 않으면 FALSE입니다.  
+*bRecalcLayout*<br/>
+[in] 창의 레이아웃을 자동으로 다시 계산. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  창의 레이아웃을 동적으로 변경 하면이 메서드를 호출 합니다. 예를 들어, 다음 도구 모음 단추를 표시 하거나 숨길 때이 메서드를 호출 하는 것이 좋습니다.  
@@ -294,11 +294,11 @@ BOOL AllocElements(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nElements*  
- 저장소를 할당 하는 요소의 수입니다.  
+*nElements*<br/>
+[in] 저장소를 할당 하는 요소의 수입니다.  
   
- [in] *cbElement*  
- 요소를 바이트 단위로 크기입니다.  
+*cbElement*<br/>
+[in] 요소를 바이트 단위로 크기입니다.  
   
 ### <a name="return-value"></a>반환 값  
  FALSE 이면 메모리 할당이 실패 합니다. 그렇지 않으면 TRUE입니다.  
@@ -324,8 +324,8 @@ virtual CSize CalcAvailableSize(CRect rectRequired);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rectRequired*  
- 필요한 사각형입니다.  
+*rectRequired*<br/>
+[in] 필요한 사각형입니다.  
   
 ### <a name="return-value"></a>반환 값  
  너비와 높이 간 차이 *rectRequired* 및 현재 창 사각형입니다.  
@@ -340,11 +340,11 @@ void CalcInsideRect(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *rect*  
- 크기와 창의 클라이언트 영역의 오프셋을 포함합니다.  
+*rect*<br/>
+[out] 크기와 창의 클라이언트 영역의 오프셋을 포함합니다.  
   
- [in] *bHorz*  
- 창 가로; 지향 이면 TRUE 그렇지 않으면 FALSE입니다.  
+*bHorz*<br/>
+[in] 창 가로; 지향 이면 TRUE 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 창에 대 한 레이아웃을 다시 계산 해야 할 때 프레임 워크에서 호출 됩니다. 합니다 *rect* 매개 변수 크기와 창의 클라이언트 영역의 오프셋으로 채워집니다. 여기에 해당 테두리 및 켭니다.  
@@ -367,8 +367,8 @@ virtual CSize CalcSize(BOOL bVertDock);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bVertDock*  
- 창이 도킹 되어 있는 되 고 세로 방향으로, FALSE 그렇지 않은 경우 TRUE입니다.  
+*bVertDock*<br/>
+[in] 창이 도킹 되어 있는 되 고 세로 방향으로, FALSE 그렇지 않은 경우 TRUE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드의 기본 구현은 반환 크기는 (0, 0).  
@@ -384,8 +384,8 @@ virtual BOOL CanBeDocked(CBasePane* pDockBar) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDockBar*  
- 이 창에 도킹할 창을 지정 합니다.  
+*pDockBar*<br/>
+[in] 이 창에 도킹할 창을 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정 된 도킹 창;에서이 창을 도킹할 수 있는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -416,8 +416,8 @@ virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bActiveTabOnly*  
- 사용 되지 않습니다 `CPane::ConvertToTabbedDocument`합니다.  
+*bActiveTabOnly*<br/>
+[in] 사용 되지 않습니다 `CPane::ConvertToTabbedDocument`합니다.  
   
 ### <a name="remarks"></a>설명  
  탭 문서로 도킹 가능 창은 변환할 수 있습니다. 정보를 참조 하세요 [CDockablePane::ConvertToTabbedDocument](../../mfc/reference/cdockablepane-class.md#converttotabbeddocument)합니다.  
@@ -430,8 +430,8 @@ virtual void CopyState(CPane* pOrgBar);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pOrgBar*  
- 창에 대 한 포인터입니다.  
+*pOrgBar*<br/>
+[in] 창에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 상태를 복사 *pOrgBar* 현재 창에 있습니다.  
@@ -451,23 +451,23 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszClassName*  
- Windows 클래스의 이름을 지정합니다.  
+*lpszClassName*<br/>
+[in] Windows 클래스의 이름을 지정합니다.  
   
- [in] *dwStyle*  
- 창 스타일 특성을 지정합니다. 자세한 내용은 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  
+*dwStyle*<br/>
+[in] 창 스타일 특성을 지정합니다. 자세한 내용은 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  
   
- [in] *rect*  
- 초기 크기와 위치를 지정 합니다 *pParentWnd* 창의 클라이언트 좌표입니다.  
+*rect*<br/>
+[in] 초기 크기와 위치를 지정 합니다 *pParentWnd* 창의 클라이언트 좌표입니다.  
   
  [in] [out] *pParentWnd*  
  이 창의 부모 창을 지정합니다.  
   
- [in] *nID*  
- 창의 ID를 지정합니다.  
+*nID*<br/>
+[in] 창의 ID를 지정합니다.  
   
- [in] *dwControlBarStyle*  
- 창 스타일을 지정합니다. 자세한 내용은 [cbasepane:: Createex](../../mfc/reference/cbasepane-class.md#createex)합니다.  
+*dwControlBarStyle*<br/>
+[in] 창 스타일을 지정합니다. 자세한 내용은 [cbasepane:: Createex](../../mfc/reference/cbasepane-class.md#createex)합니다.  
   
  [in] [out] *pContext*  
  창 만들기 컨텍스트를 지정 합니다.  
@@ -488,8 +488,8 @@ virtual CPaneFrameWnd* CreateDefaultMiniframe(CRect rectInitial);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rectInitial*  
- 초기 크기와 화면 좌표에서 만들려는 미니 프레임 창의 위치를 지정 합니다.  
+*rectInitial*<br/>
+[in] 초기 크기와 화면 좌표에서 만들려는 미니 프레임 창의 위치를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  새로 만든된 미니 프레임 창입니다.  
@@ -515,26 +515,26 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwStyleEx*  
- 확장된 창 스타일 특성을 지정합니다. 자세한 내용은 [확장 창 스타일](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)합니다.  
+*dwStyleEx*<br/>
+[in] 확장된 창 스타일 특성을 지정합니다. 자세한 내용은 [확장 창 스타일](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)합니다.  
   
- [in] *lpszClassName*  
- Windows 클래스의 이름을 지정합니다.  
+*lpszClassName*<br/>
+[in] Windows 클래스의 이름을 지정합니다.  
   
- [in] *dwStyle*  
- 창 스타일 특성을 지정합니다. 자세한 내용은 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  
+*dwStyle*<br/>
+[in] 창 스타일 특성을 지정합니다. 자세한 내용은 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  
   
- [in] *rect*  
- 초기 크기와 위치를 지정 합니다 *pParentWnd* 창의 클라이언트 좌표입니다.  
+*rect*<br/>
+[in] 초기 크기와 위치를 지정 합니다 *pParentWnd* 창의 클라이언트 좌표입니다.  
   
  [in] [out] *pParentWnd*  
  이 창의 부모 창을 지정합니다.  
   
- [in] *nID*  
- 창의 ID를 지정합니다.  
+*nID*<br/>
+[in] 창의 ID를 지정합니다.  
   
- [in] *dwControlBarStyle*  
- 창 스타일을 지정합니다. 자세한 내용은 [cbasepane:: Createex](../../mfc/reference/cbasepane-class.md#createex)합니다.  
+*dwControlBarStyle*<br/>
+[in] 창 스타일을 지정합니다. 자세한 내용은 [cbasepane:: Createex](../../mfc/reference/cbasepane-class.md#createex)합니다.  
   
  [in] [out] *pContext*  
  창 만들기 컨텍스트를 지정 합니다.  
@@ -555,8 +555,8 @@ virtual BOOL DockByMouse(CBasePane* pDockBar);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDockBar*  
- 이 창의 도킹을 기본 창을 지정 합니다.  
+*pDockBar*<br/>
+[in] 이 창의 도킹을 기본 창을 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  창에 성공적으로 도킹 된 경우 TRUE 그렇지 않으면 FALSE입니다.  
@@ -575,11 +575,11 @@ virtual BOOL DockPane(
  [in] [out] *pDockBar*  
  기본 창이이 창의 도킹을 지정 합니다.  
   
- [in] *lpRect*  
- 이 창을 도킹할 수 인 기본 창에서 사각형을 지정 합니다.  
+*lpRect*<br/>
+[in] 이 창을 도킹할 수 인 기본 창에서 사각형을 지정 합니다.  
   
- [in] *dockMethod*  
- 도킹 메서드를 사용 하 여 지정 합니다. 사용 가능한 옵션은 다음과 같습니다.  
+*dockMethod*<br/>
+[in] 도킹 메서드를 사용 하 여 지정 합니다. 사용 가능한 옵션은 다음과 같습니다.  
   
 |옵션|설명|  
 |------------|-----------------|  
@@ -604,8 +604,8 @@ virtual CPane* DockPaneStandard(BOOL& bWasDocked);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bWasDocked*  
- 창 도킹 되어 성공적으로; 경우 TRUE 그렇지 않으면 FALSE입니다.  
+*bWasDocked*<br/>
+[in] 창 도킹 되어 성공적으로; 경우 TRUE 그렇지 않으면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 항상 반환 된 **이** 포인터입니다.  
@@ -627,23 +627,23 @@ virtual BOOL DockToFrameWindow(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwAlignment*  
- 부모 프레임 창을 도킹 하고자 하는 부분입니다.  
+*dwAlignment*<br/>
+[in] 부모 프레임 창을 도킹 하고자 하는 부분입니다.  
   
- [in] *lpRect*  
- 지정 된 크기입니다.  
+*lpRect*<br/>
+[in] 지정 된 크기입니다.  
   
- [in] *dwDockFlags*  
- 무시됩니다.  
+*dwDockFlags*<br/>
+[in] 무시 됩니다.  
   
- [in] *pRelativeBar*  
- 무시됩니다.  
+*pRelativeBar*<br/>
+[in] 무시 됩니다.  
   
- [in] *nRelativeIndex*  
- 무시됩니다.  
+*nRelativeIndex*<br/>
+[in] 무시 됩니다.  
   
- [in] *bOuterEdge*  
- 그리고 TRUE로 지정 되는 쪽에 도킹 가능 창을 다른 경우 *dwAlignment*, 창이 도킹 되어 있는 다른 창 외부 부모 프레임의 가장자리에 가깝게 됩니다. FALSE 이면 창 클라이언트 영역의 가운데에 더 가깝게 도킹 됩니다.  
+*bOuterEdge*<br/>
+[in] 그리고 TRUE로 지정 되는 쪽에 도킹 가능 창을 다른 경우 *dwAlignment*, 창이 도킹 되어 있는 다른 창 외부 부모 프레임의 가장자리에 가깝게 됩니다. FALSE 이면 창 클라이언트 영역의 가운데에 더 가깝게 도킹 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  FALSE 이면 창 구분선 ( [CPaneDivider 클래스](../../mfc/reference/cpanedivider-class.md)) TRUE이 고, 그렇지 않으면 만들 수 없습니다.  
@@ -676,14 +676,14 @@ virtual BOOL FloatPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rectFloat*  
- 움직이는 것 때 창의 위치를 화면 좌표로 위치를 지정 합니다.  
+*rectFloat*<br/>
+[in] 움직이는 것 때 창의 위치를 화면 좌표로 위치를 지정 합니다.  
   
- [in] *dockMethod*  
- 도킹 창 움직이는 때 사용할 메서드를 지정 합니다. 가능한 값 목록을 참조 하세요 [CPane::DockPane](#dockpane)합니다.  
+*dockMethod*<br/>
+[in] 도킹 창 움직이는 때 사용할 메서드를 지정 합니다. 가능한 값 목록을 참조 하세요 [CPane::DockPane](#dockpane)합니다.  
   
- [in] *bShow*  
- TRUE; 움직이는 경우 창을 표시 하려면 그렇지 않으면 FALSE입니다.  
+*bShow*<br/>
+[in] TRUE; 움직이는 경우 창을 표시 하려면 그렇지 않으면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  아니면 때문에 창 놓을지 수 없습니다. 창 부동 성공적으로 설정 된 경우 TRUE [CBasePane::CanFloat](../../mfc/reference/cbasepane-class.md#canfloat) FALSE이 고, 그렇지 않으면 FALSE를 반환 합니다.  
@@ -784,8 +784,8 @@ virtual void GetMinSize(CSize& size) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *크기*  
- `CSize` 크기가 허용 되는 최소값으로 채워진 개체입니다.  
+*size*<br/>
+[out] `CSize` 크기가 허용 되는 최소값으로 채워진 개체입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -797,8 +797,8 @@ virtual void GetPaneName(CString& strName) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *strName*  
- `CString` 캡션 이름이 채워진 개체입니다.  
+*strName*<br/>
+[out] `CString` 캡션 이름이 채워진 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  창 제목이 도킹 하거나 부동 창이 되 면 캡션 영역에 표시 됩니다. 창 탭된 그룹의 일부 이면 제목 탭 영역에 표시 됩니다. 제목에 표시 됩니다 창 자동 숨기기 모드에 있으면는 `CMFCAutoHideButton`합니다.  
@@ -811,8 +811,8 @@ void GetVirtualRect(CRect& rectVirtual) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *rectVirtual*  
- `CRect` 가상 사각형으로 채워진 개체입니다.  
+*rectVirtual*<br/>
+[out] `CRect` 가상 사각형으로 채워진 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  창이 이동 될 때 프레임 워크 가상 사각형에 창의 원래 위치를 저장 합니다. 프레임 워크 가상 사각형을 사용 창의 원래 위치를 복원할 수 있습니다.  
@@ -829,11 +829,11 @@ virtual AFX_CS_STATUS IsChangeState(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nOffset*  
- 도킹 민감도 지정합니다. 예를 들어, 내에서 이동 하는 창을 *nOffset* 픽셀 도킹 행에서 도킹 될 합니다.  
+*nOffset*<br/>
+[in] 도킹 민감도 지정합니다. 예를 들어, 내에서 이동 하는 창을 *nOffset* 픽셀 도킹 행에서 도킹 될 합니다.  
   
- [in] *ppTargetBar*  
- 메서드는 반환 될 때 *ppTargetBar* 발생 하면 없는 도킹을 현재 창에서 도킹할 것인지, 개체에 대 한 포인터 또는 NULL을 포함 합니다.  
+*ppTargetBar*<br/>
+[in] 메서드는 반환 될 때 *ppTargetBar* 발생 하면 없는 도킹을 현재 창에서 도킹할 것인지, 개체에 대 한 포인터 또는 NULL을 포함 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  다음 AFX_CS_STATUS 값 중 하나입니다.  
@@ -880,11 +880,11 @@ bool IsLeftOf(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rect*  
- `CRect` 비교에 사용 되는 개체입니다.  
+*rect*<br/>
+[in] `CRect` 비교에 사용 되는 개체입니다.  
   
- [in] *bWindowRect*  
- TRUE 이면 *rect* FALSE 이면; 화면 좌표를 포함 하도록 가정 *rect* 클라이언트 좌표를 포함 하도록 간주 됩니다.  
+*bWindowRect*<br/>
+[in] TRUE 이면 *rect* FALSE 이면; 화면 좌표를 포함 하도록 가정 *rect* 클라이언트 좌표를 포함 하도록 간주 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -932,14 +932,14 @@ virtual BOOL LoadState(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszProfileName*  
- 프로필 이름입니다.  
+*lpszProfileName*<br/>
+[in] 프로필 이름입니다.  
   
- [in] *nIndex*  
- 프로필 인덱스입니다.  
+*nIndex*<br/>
+[in] 프로필 인덱스입니다.  
   
- [in] *uiID*  
- 창 id입니다.  
+*uiID*<br/>
+[in] 창 id입니다.  
   
 ### <a name="return-value"></a>반환 값  
  창 상태를 성공적으로 로드 된 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -981,11 +981,11 @@ BOOL MoveByAlignment(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwAlignment*  
- 창 맞춤을 지정합니다.  
+*dwAlignment*<br/>
+[in] 창 맞춤을 지정합니다.  
   
- [in] *nOffset*  
- 픽셀 창과 가상 사각형을 이동 시킬 양입니다.  
+*nOffset*<br/>
+[in] 픽셀 창과 가상 사각형을 이동 시킬 양입니다.  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -1013,14 +1013,14 @@ virtual CSize MovePane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rectNew*  
- 창에 대 한 새 사각형을 지정합니다.  
+*rectNew*<br/>
+[in] 창에 대 한 새 사각형을 지정합니다.  
   
- [in] *bForceMove*  
- True 이면이 메서드는 허용 된 최소 창 크기 무시 ( [CPane::GetMinSize](#getminsize))이 고, 그렇지 않으면 창 되는지 이상 크기를 허용 되는 최소를 필요에 따라 조정 됩니다.  
+*bForceMove*<br/>
+[in] True 이면이 메서드는 허용 된 최소 창 크기 무시 ( [CPane::GetMinSize](#getminsize))이 고, 그렇지 않으면 창 되는지 이상 크기를 허용 되는 최소를 필요에 따라 조정 됩니다.  
   
- [in] *hdwp*  
- 사용되지 않습니다.  
+*hdwp*<br/>
+[in] 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  A `CSize` 신규 버전과 기존 사각형의 너비와 높이의 차이 포함 하는 개체 (이전 사각형- *rectNew*).  
@@ -1053,14 +1053,14 @@ virtual void OnAfterDock(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- 이 매개 변수는 사용되지 않습니다.  
+*pBar*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
- [in] *lpRect*  
- 이 매개 변수는 사용되지 않습니다.  
+*lpRect*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
- [in] *dockMethod*  
- 이 매개 변수는 사용되지 않습니다.  
+*dockMethod*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ##  <a name="onafterfloat"></a>  CPane::OnAfterFloat  
  창을 부동 후 프레임 워크에서 호출 됩니다.  
@@ -1085,8 +1085,8 @@ virtual void OnBeforeChangeParent(
  [in] [out] *pWndNewParent*  
  새 부모 창을 지정합니다.  
   
- [in] *bDelay*  
- 전역 도킹 레이아웃 조정; 지연 하려면 TRUE 그렇지 않으면 FALSE입니다.  
+*bDelay*<br/>
+[in] 전역 도킹 레이아웃 조정; 지연 하려면 TRUE 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 창의 부모 창에는 중 이므로 변경 되려고 할 때 프레임 워크에서 호출 됩니다 도킹 하거나 부동 합니다.  
@@ -1107,11 +1107,11 @@ virtual BOOL OnBeforeDock(
  [in] [out] *ppDockBar*  
  이 창에 도킹 되는 창을 지정 합니다.  
   
- [in] *lpRect*  
- 도킹 사각형을 지정합니다.  
+*lpRect*<br/>
+[in] 도킹 사각형을 지정합니다.  
   
- [in] *dockMethod*  
- 도킹 메서드를 지정합니다.  
+*dockMethod*<br/>
+[in] 도킹 메서드를 지정합니다.  
   
 ### <a name="return-value"></a>반환 값  
  창에 도킹할 수 있으면 TRUE입니다. 함수가 FALSE를 반환 하는 경우 도킹 작업이 중단 됩니다.  
@@ -1129,11 +1129,11 @@ virtual BOOL OnBeforeFloat(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rectFloat*  
- 부동 상태에 있을 때 창의 크기와 위치를 지정 합니다.  
+*rectFloat*<br/>
+[in] 부동 상태에 있을 때 창의 크기와 위치를 지정 합니다.  
   
- [in] *dockMethod*  
- 창 도킹 메서드를 지정합니다.  
+*dockMethod*<br/>
+[in] 창 도킹 메서드를 지정합니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 창 놓을지 수 있습니다. 그렇지 않으면 FALSE입니다.  
@@ -1159,8 +1159,8 @@ virtual BOOL OnShowControlBarMenu(CPoint point);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 메뉴 위치를 지정합니다.  
+*지점*<br/>
+[in] 메뉴 위치를 지정합니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 메뉴를 표시할 수 있습니다. 그렇지 않으면 FALSE입니다.  
@@ -1191,14 +1191,14 @@ virtual BOOL SaveState(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszProfileName*  
- 프로필 이름입니다.  
+*lpszProfileName*<br/>
+[in] 프로필 이름입니다.  
   
- [in] *nIndex*  
- 프로필 인덱스입니다.  
+*nIndex*<br/>
+[in] 프로필 인덱스입니다.  
   
- [in] *uiID*  
- 창 id입니다.  
+*uiID*<br/>
+[in] 창 id입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 상태 저장 했습니다. 그렇지 않으면 FALSE입니다.  
@@ -1216,8 +1216,8 @@ virtual void SetActiveInGroup(BOOL bActive);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bActive*  
- 창에는 활성으로 플래그는 지정 하는지 여부를 지정 하는 부울 값입니다.  
+*bActive*<br/>
+[in] 창에는 활성으로 플래그는 지정 하는지 여부를 지정 하는 부울 값입니다.  
   
 ### <a name="remarks"></a>설명  
  도킹 가능한 창에 표시 되는 자동 숨기기 단추를 선택한 경우, 해당 자동 숨기기 창 활성으로 표시 됩니다.  
@@ -1240,20 +1240,20 @@ void SetBorders(LPCRECT lpRect);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *cxLeft*  
- 픽셀, 창의 왼쪽된 테두리의 너비를 지정 합니다.  
+*cxLeft*<br/>
+[in] 픽셀, 창의 왼쪽된 테두리의 너비를 지정 합니다.  
   
- [in] *cyTop*  
- 픽셀, 창의 위쪽 테두리의 너비를 지정 합니다.  
+*cyTop*<br/>
+[in] 픽셀, 창의 위쪽 테두리의 너비를 지정 합니다.  
   
- [in] *cxRight*  
- 픽셀, 창의 오른쪽 테두리의 너비를 지정 합니다.  
+*cxRight*<br/>
+[in] 픽셀, 창의 오른쪽 테두리의 너비를 지정 합니다.  
   
- [in] *cyBottom*  
- 픽셀, 창의 아래쪽 테두리의 너비를 지정 합니다.  
+*cyBottom*<br/>
+[in] 픽셀, 창의 아래쪽 테두리의 너비를 지정 합니다.  
   
- [in] *lpRect*  
- A [CRect](../../atl-mfc-shared/reference/crect-class.md) 픽셀, 창의 각 테두리의 너비를 포함 하는 개체입니다.  
+*lpRect*<br/>
+[in] A [CRect](../../atl-mfc-shared/reference/crect-class.md) 픽셀, 창의 각 테두리의 너비를 포함 하는 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  창 테두리의 크기를 설정 하려면이 함수를 호출 합니다.  
@@ -1266,8 +1266,8 @@ void SetClientHotSpot(const CPoint& ptNew);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *ptNew*  
- `CPoint` 새 핫 스폿을 나타내는 개체입니다.  
+*ptNew*<br/>
+[in] `CPoint` 새 핫 스폿을 나타내는 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  합니다 *핫 스폿* 사용자 선택 하 고 창을 이동 하려면 보유 하는 창에서 지점입니다. 핫 스폿 창 도킹 된 위치로 끌 때 부드러운 애니메이션에 사용 됩니다.  
@@ -1280,8 +1280,8 @@ virtual void SetDockState(CDockingManager* pDockManager);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDockManager*  
- 주 프레임 창에 대 한 도킹 관리자에 대 한 포인터입니다.  
+*pDockManager*<br/>
+[in] 주 프레임 창에 대 한 도킹 관리자에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 창의 도킹 최신 상태 정보를 복원 하기 위해 프레임 워크에서 호출 됩니다. 최신 도킹 상태 정보를 저장 하는 창을 [M_recentdockinfo](#m_recentdockinfo)합니다. 자세한 내용은 참조는 [CRecentDockSiteInfo 클래스](../../mfc/reference/crecentdocksiteinfo-class.md)합니다.  
@@ -1296,8 +1296,8 @@ virtual void SetExclusiveRowMode(BOOL bExclusive = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bExclusive*  
- 배타 행 모드를 사용 하도록 설정 그렇지 않으면 FALSE입니다.  
+*bExclusive*<br/>
+[in] 배타 행 모드를 사용 하도록 설정 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  배타적 행 모드를 사용 하지 않도록 설정 하거나 사용 하려면이 메서드를 호출 합니다. 창을 배타 행 모드의 경우 다른 도구 모음을 사용 하 여 동일한 행을 공유할 수 없습니다 것.  
@@ -1312,8 +1312,8 @@ void SetMinSize(const CSize& size);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *크기*  
- `CSize` 창의 크기에 허용 되는 최소값을 포함 하는 개체입니다.  
+*size*<br/>
+[in] `CSize` 창의 크기에 허용 되는 최소값을 포함 하는 개체입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1327,11 +1327,11 @@ void SetVirtualRect(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rect*  
- `CRect` 설정할 가상 사각형을 지정 하는 개체입니다.  
+*rect*<br/>
+[in] `CRect` 설정할 가상 사각형을 지정 하는 개체입니다.  
   
- [in] *bMapToParent*  
- TRUE를 지정 하는 경우 *rect* 부모 창 기준으로 요소를 포함 합니다.  
+*bMapToParent*<br/>
+[in] TRUE를 지정 하는 경우 *rect* 부모 창 기준으로 요소를 포함 합니다.  
   
 ### <a name="remarks"></a>설명  
  A *가상 사각형* 이동할 때 창의 원래 위치를 저장 합니다. 프레임 워크를 원래 위치로 복원 가상 사각형을 사용 수 있습니다.  
@@ -1362,11 +1362,11 @@ virtual int StretchPaneDeferWndPos(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nStretchSize*  
- 스트레치 창에 픽셀에서 양입니다. 창 축소 하려면 음수를 사용 합니다.  
+*nStretchSize*<br/>
+[in] 스트레치 창에 픽셀에서 양입니다. 창 축소 하려면 음수를 사용 합니다.  
   
- [in] *hdwp*  
- 사용되지 않습니다.  
+*hdwp*<br/>
+[in] 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  창 스트레치 된 픽셀의 실제 량.  
@@ -1392,8 +1392,8 @@ virtual void UndockPane(BOOL bDelay = FALSE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bDelay*  
- 프레임 워크를 호출 하는 값이 false 이면 [cbasepane:: Adjustdockinglayout](../../mfc/reference/cbasepane-class.md#adjustdockinglayout) 도킹 레이아웃을 조정 합니다.  
+*bDelay*<br/>
+[in] 프레임 워크를 호출 하는 값이 false 이면 [cbasepane:: Adjustdockinglayout](../../mfc/reference/cbasepane-class.md#adjustdockinglayout) 도킹 레이아웃을 조정 합니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드를 사용 하 여 프로그래밍 방식으로 창의 도킹을 해제 합니다.  
@@ -1408,11 +1408,11 @@ void UpdateVirtualRect(CPoint ptOffset);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *ptOffset*  
- `CPoint` 창 이동에 사용 되는 오프셋을 지정 하는 개체입니다.  
+*ptOffset*<br/>
+[in] `CPoint` 창 이동에 사용 되는 오프셋을 지정 하는 개체입니다.  
   
- [in] *sizeNew*  
- `CSize` 창에 대 한 새 크기를 지정 하는 개체입니다.  
+*sizeNew*<br/>
+[in] `CSize` 창에 대 한 새 크기를 지정 하는 개체입니다.  
   
 ### <a name="remarks"></a>설명  
  첫 번째 오버 로드는 현재 위치와 창의 크기를 사용 하 여 가상 사각형을 설정 합니다.  

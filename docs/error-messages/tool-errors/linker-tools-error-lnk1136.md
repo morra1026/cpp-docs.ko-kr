@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53cab76b186ce6fdc3aa9a5a5d581044c65616e8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8b70d5e7cb302430561e6092e47e07091e0d8c4d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296863"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043068"
 ---
 # <a name="linker-tools-error-lnk1136"></a>링커 도구 오류 LNK1136
-잘못 되었거나 손상 된 파일  
-  
- 입력된 파일 헤더가 손상 또는 크기 / 비정상적으로 작은 0입니다.  
-  
- LNK1136 파일 추가 종속성으로 잘못 지정 된 경우에 발생할 수 있습니다.
+
+잘못 되었거나 손상 된 파일
+
+입력된 파일 헤더가 손상 또는 크기 또는 비정상적으로 작은 0입니다.
+
+LNK1136 파일 추가 종속성으로 올바르게 지정 된 경우에 발생할 수 있습니다.

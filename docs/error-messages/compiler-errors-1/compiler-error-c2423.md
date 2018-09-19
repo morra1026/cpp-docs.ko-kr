@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c96408323c7afd9e15fee521c9d20005dfc6da21
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5e7a974a83935dbbcc9cd78bcc9280c9f0fbc2a4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195856"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029314"
 ---
 # <a name="compiler-error-c2423"></a>컴파일러 오류 C2423
-'number': 잘못 된 크기 조정  
-  
- 인라인 어셈블리 코드 레지스터 크기를 조정 하려면 1, 2, 4 또는 8 이외의 번호를 사용 합니다.  
-  
- 다음 샘플에서는 C2423 오류가 생성 됩니다.  
-  
-```  
-// C2423.cpp  
-// processor: x86  
-int main() {  
-   _asm {  
-      lea EAX, [EAX*3]   // C2423  
-      lea EAX, [EAX+EAX*2]   // OK  
-   }  
-}  
+
+'number': 잘못 된 배율
+
+인라인 어셈블리 코드 확장을 등록 하려면 1, 2, 4 또는 8 이외의 숫자를 사용 합니다.
+
+다음 샘플에서는 C2423 오류가 생성 됩니다.
+
+```
+// C2423.cpp
+// processor: x86
+int main() {
+   _asm {
+      lea EAX, [EAX*3]   // C2423
+      lea EAX, [EAX+EAX*2]   // OK
+   }
+}
 ```

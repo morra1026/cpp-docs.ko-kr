@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a893b9ae94f45d9608d2ac67bcfdbf3b5ecb41f4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 61293576fa36d9e8a853cb7a8b71e4c2de98e932
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33324316"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022554"
 ---
 # <a name="resource-compiler-error-rc2165"></a>리소스 컴파일러 오류 RC2165
-문자열 DLGINCLUDE 문에서 찾을 수 없습니다  
-  
- 문이 유효한 포함 파일을 지정 하지 않았습니다.  
-  
- **DLGINCLUDE** 문에 다음 구문을 사용 해야 합니다.  
-  
- **DLGINCLUDE "*filename*.h"**
+
+문자열 DLGINCLUDE 문에서 찾을 수 없습니다
+
+문이 유효한 포함 파일을 지정 하지 않았습니다.
+
+합니다 **DLGINCLUDE** 문을 다음 구문을 사용 해야 합니다.
+
+**DLGINCLUDE "*filename*.h"**

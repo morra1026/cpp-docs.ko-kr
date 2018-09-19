@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12f4b9019a79b6ff57da6905b6ad9329788b4ec9
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: e9112a6790175709a2575319c6f71a55d1303a83
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849769"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705317"
 ---
 # <a name="cmfcribbonseparator-class"></a>CMFCRibbonSeparator 클래스
 리본 구분 기호를 구현합니다.  
@@ -113,11 +113,11 @@ virtual int AddToListBox(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWndListBox*  
- 에 대 한 포인터를 **명령** 목록 구분 기호를 추가 하는 위치입니다.  
+*pWndListBox*<br/>
+[in] 에 대 한 포인터를 **명령** 목록 구분 기호를 추가 하는 위치입니다.  
   
- [in] *bDeep*  
- 무시됩니다.  
+*bDeep*<br/>
+[in] 무시 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  0부터 시작 하 여 지정 된 목록 상자에서 문자열 인덱스 *pWndListBox*합니다.  
@@ -130,13 +130,13 @@ CMFCRibbonSeparator(BOOL bIsHoriz = FALSE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bIsHoriz*  
- 구분 기호는 가로; TRUE 인 경우 FALSE 인 경우에 구분 기호는 세로입니다.  
+*bIsHoriz*<br/>
+[in] 구분 기호는 가로; TRUE 인 경우 FALSE 인 경우에 구분 기호는 세로입니다.  
   
 ### <a name="remarks"></a>설명  
  가로 구분 기호는 응용 프로그램 메뉴에 사용 됩니다. 세로 구분 기호는 도구 모음에 사용 됩니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는의 개체를 생성 하는 방법에 설명 합니다 `CMFCRibbonSeparator` 클래스입니다.  
   
  [!code-cpp[NVC_MFC_RibbonApp#19](../../mfc/reference/codesnippet/cpp/cmfcribbonseparator-class_1.cpp)]  
@@ -149,8 +149,8 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *Src*  
- 복사할 소스 리본 요소입니다.  
+*src*<br/>
+[in] 복사할 소스 리본 요소입니다.  
   
 ##  <a name="getregularsize"></a>  CMFCRibbonSeparator::GetRegularSize  
  구분 기호의 크기를 반환합니다.  
@@ -160,8 +160,8 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 내용에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 내용에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  크기 지정 된 디바이스 컨텍스트 구분 기호입니다.  
@@ -197,8 +197,8 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
 ##  <a name="ondrawonlist"></a>  CMFCRibbonSeparator::OnDrawOnList  
  구분 기호에 그릴 시스템에 의해 호출 된 **명령** 목록입니다.  
@@ -218,12 +218,12 @@ virtual void OnDrawOnList(
 |||  
 |-|-|  
 |매개 변수|설명|  
-|[in] *pDC*|장치 컨텍스트에 대한 포인터입니다.|  
-|[in] *strText*|목록에 표시할 텍스트입니다.|  
-|[in] *nTextOffset*|텍스트 및 경계 사각형의 왼쪽 사이의 간격입니다.|  
-|[in] *rect*|경계 사각형을 지정합니다.|  
-|[in] *bIsSelected*|무시됩니다.|  
-|[in] *bHighlighted*|무시됩니다.|  
+|*pDC*|[in] 장치 컨텍스트에 대 한 포인터입니다.|  
+|*strText*|[in] 목록에 표시할 텍스트입니다.|  
+|*nTextOffset*|[in] 텍스트 및 경계 사각형의 왼쪽 사이의 간격입니다.|  
+|*rect*|[in] 경계 사각형을 지정합니다.|  
+|*bIsSelected*|[in] 무시 됩니다.|  
+|*bHighlighted*|[in] 무시 됩니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [계층 구조 차트](../../mfc/hierarchy-chart.md)   

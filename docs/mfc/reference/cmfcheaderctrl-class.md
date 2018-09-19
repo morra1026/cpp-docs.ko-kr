@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97e0a81fc5e317f018924efd3d564d39618cb2b5
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 36817eba04d630ea4e56140af582bf49fa6f54ce
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850084"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718122"
 ---
 # <a name="cmfcheaderctrl-class"></a>CMFCHeaderCtrl Class
 `CMFCHeaderCtrl` 클래스 헤더 컨트롤에서 여러 열의 정렬을 지원 합니다.  
@@ -87,7 +87,7 @@ class CMFCHeaderCtrl : public CHeaderCtrl
 |[CMFCHeaderCtrl::OnDrawSortArrow](#ondrawsortarrow)|정렬 화살표를 그리기 위해 프레임 워크에서 호출 됩니다.|  
 |[CMFCHeaderCtrl::OnFillBackground](#onfillbackground)|열 헤더 컨트롤의 배경을 채울 하기 위해 프레임 워크에서 호출 됩니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는의 개체를 생성 하는 방법에 설명 합니다 `CMFCHeaderCtrl` 클래스 및 사용 하는 방법 *여러 열 정렬* 현재 헤더 컨트롤에 대 한 모드입니다.  
   
  [!code-cpp[NVC_MFC_RibbonApp#24](../../mfc/reference/codesnippet/cpp/cmfcheaderctrl-class_1.cpp)]  
@@ -137,8 +137,8 @@ void EnableMultipleSort(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 여러 열 정렬 모드를 사용 하도록 설정. 여러 열 정렬 모드를 사용 하지 않도록 설정 하 고 정렬 된 열의 목록에서 열을 제거 하려면 FALSE입니다. 기본값은 TRUE입니다.  
+*bEnable*<br/>
+[in] 여러 열 정렬 모드를 사용 하도록 설정. 여러 열 정렬 모드를 사용 하지 않도록 설정 하 고 정렬 된 열의 목록에서 열을 제거 하려면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드를 여러 열 정렬 모드를 사용할지를 사용 합니다. 헤더 컨트롤이 여러 열 정렬 모드에 있으면 두 개 이상의 열을 정렬에 참여할 수 있습니다.  
@@ -151,8 +151,8 @@ int GetColumnState(int iColumn) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iColumn*  
- 열의 0부터 시작 하는 인덱스입니다.  
+*iColumn*<br/>
+[in] 열의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정 된 열의 정렬 상태를 나타내는 값입니다. 다음 표에서 가능한 값을 나열합니다.  
@@ -227,20 +227,20 @@ virtual void OnDrawItem(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *iItem*  
- 그릴 항목의 0부터 시작 하는 인덱스입니다.  
+*iItem*<br/>
+[in] 그릴 항목의 0부터 시작 하는 인덱스입니다.  
   
- [in] *rect*  
- 그릴 항목의 경계 사각형입니다.  
+*rect*<br/>
+[in] 그릴 항목의 경계 사각형입니다.  
   
- [in] *bIsPressed*  
- 누름 상태의; 항목을 그릴 TRUE 그렇지 않으면 FALSE입니다.  
+*bIsPressed*<br/>
+[in] 누름 상태의; 항목을 그릴 TRUE 그렇지 않으면 FALSE입니다.  
   
- [in] *bIsHighlighted*  
- 항목을 그리는 강조 표시 된 상태 이면 TRUE 그렇지 않으면 FALSE입니다.  
+*bIsHighlighted*<br/>
+[in] 항목을 그리는 강조 표시 된 상태 이면 TRUE 그렇지 않으면 FALSE입니다.  
   
 ##  <a name="ondrawsortarrow"></a>  CMFCHeaderCtrl::OnDrawSortArrow  
  정렬 화살표를 그리기 위해 프레임 워크에서 호출 됩니다.  
@@ -252,11 +252,11 @@ virtual void OnDrawSortArrow(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rectArrow*  
- 정렬 화살표의 경계 사각형입니다.  
+*rectArrow*<br/>
+[in] 정렬 화살표의 경계 사각형입니다.  
   
 ##  <a name="onfillbackground"></a>  CMFCHeaderCtrl::OnFillBackground  
  열 헤더 컨트롤의 배경을 채울 하기 위해 프레임 워크에서 호출 됩니다.  
@@ -266,8 +266,8 @@ virtual void OnFillBackground(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -279,8 +279,8 @@ void RemoveSortColumn(int iColumn);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iColumn*  
- 제거할 열의 0부터 시작 하는 인덱스입니다.  
+*iColumn*<br/>
+[in] 제거할 열의 0부터 시작 하는 인덱스입니다.  
   
 ##  <a name="setsortcolumn"></a>  CMFCHeaderCtrl::SetSortColumn  
  헤더 컨트롤의 지정 된 열의 정렬 순서를 설정합니다.  
@@ -293,14 +293,14 @@ void SetSortColumn(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iColumn*  
- 헤더 컨트롤 열의 0부터 시작 하는 인덱스입니다. 이 매개 변수가 0 보다 작으면이 메서드는 정렬 열 목록에서 모든 열을 제거 합니다.  
+*iColumn*<br/>
+[in] 헤더 컨트롤 열의 0부터 시작 하는 인덱스입니다. 이 매개 변수가 0 보다 작으면이 메서드는 정렬 열 목록에서 모든 열을 제거 합니다.  
   
- [in] *bAscending*  
- 열의 정렬 순서를 지정 하는 *iColumn* 매개 변수를 지정 합니다. 오름차순 키; 설정 내림차순을 설정 하려면 FALSE입니다. 기본값은 TRUE입니다.  
+*bAscending*<br/>
+[in] 열의 정렬 순서를 지정 하는 *iColumn* 매개 변수를 지정 합니다. 오름차순 키; 설정 내림차순을 설정 하려면 FALSE입니다. 기본값은 TRUE입니다.  
   
- [in] *추가*  
- 이면 true는 열의 정렬 순서를 설정 합니다 *iColumn* 매개 변수를 지정 합니다.  
+*추가*<br/>
+[in] 이면 true는 열의 정렬 순서를 설정 합니다 *iColumn* 매개 변수를 지정 합니다.  
   
  현재 헤더 컨트롤에 있으면 *여러 열 정렬* 모드에서는이 메서드가 정렬 열 목록에 지정 된 열을 추가 합니다. 사용 하 여 [CMFCHeaderCtrl::EnableMultipleSort](#enablemultiplesort) 여러 열 정렬 모드를 설정 합니다.  
   

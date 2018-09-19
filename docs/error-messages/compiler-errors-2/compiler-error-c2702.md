@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 813833b5c3aeb7da0651fecb879ac12ca0713d13
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cbec8fe50c87cfc609cad5098779bc22ddae84cb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33234647"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46061241"
 ---
 # <a name="compiler-error-c2702"></a>컴파일러 오류 C2702
-__except 나타나지 않을 수 있습니다 종료 블록에  
-  
- 예외 처리기 (`__try`/`__except`) 안에 중첩 될 수 없습니다는 `__finally` 블록입니다.  
-  
- 다음 샘플에서는 C2702 오류가 생성 됩니다.  
-  
-```  
-// C2702.cpp  
-// processor: x86 IPF  
-int Counter;  
-int main() {  
-   __try {}  
-   __finally {  
-      __try {}   // C2702  
-      __except( Counter ) {}   // C2702  
-   }  
-}  
+
+__except에 나타날 수 없습니다 종료 블록
+
+예외 처리기 (`__try`/`__except`) 내에서 중첩 될 수 없습니다는 `__finally` 블록입니다.
+
+다음 샘플에서는 C2702 오류가 생성 됩니다.
+
+```
+// C2702.cpp
+// processor: x86 IPF
+int Counter;
+int main() {
+   __try {}
+   __finally {
+      __try {}   // C2702
+      __except( Counter ) {}   // C2702
+   }
+}
 ```

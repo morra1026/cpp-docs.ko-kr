@@ -16,42 +16,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8b6b5c66ba02bdb23e5b8dffe6f0ba74350b2e32
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 187a7079eee1bc3b5ce36f29b8fbaef67c64fc59
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33268571"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46092793"
 ---
 # <a name="compiler-error-c3732"></a>컴파일러 오류 C3732
-'interface': COM 이벤트를 발생 시키는 사용자 지정 인터페이스는 IDispatch에서 상속할 수 없습니다  
-  
- 지 원하는 COM 이벤트 인터페이스에서 상속할 수 없습니다 `IDispatch`합니다. 자세한 내용은 참조 [COM에서 이벤트 처리](../../cpp/event-handling-in-com.md)합니다.  
-  
- 다음 오류 C3732를 생성합니다.  
-  
-```  
-// C3732.cpp  
-#define _ATL_ATTRIBUTES 1  
-#include "atlbase.h"  
-#include "atlcom.h"  
-  
-[module(name="test")];  
-  
-// to resolve this C3732, use dual instead of object  
-// or inherit from IUnknown  
-[ object ]  
-__interface I : IDispatch  
-{  
-};  
-  
-[ event_source(com), coclass ]  
-struct A  
-{  
-   __event __interface I;   // C3732  
-};  
-  
-int main()  
-{  
-}  
+
+'interface': COM 이벤트를 발생 시키는 사용자 지정 인터페이스는 IDispatch에서 상속할 수 없습니다
+
+COM 이벤트를 지 원하는 인터페이스에서 상속할 수 없습니다 `IDispatch`합니다. 자세한 내용은 [COM에서 이벤트 처리](../../cpp/event-handling-in-com.md)합니다.
+
+다음 오류 C3732를 생성합니다.
+
+```
+// C3732.cpp
+#define _ATL_ATTRIBUTES 1
+#include "atlbase.h"
+#include "atlcom.h"
+
+[module(name="test")];
+
+// to resolve this C3732, use dual instead of object
+// or inherit from IUnknown
+[ object ]
+__interface I : IDispatch
+{
+};
+
+[ event_source(com), coclass ]
+struct A
+{
+   __event __interface I;   // C3732
+};
+
+int main()
+{
+}
 ```

@@ -16,47 +16,48 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 831dd1c73cf732e76a78138d55a7fecb204012a9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d9f983485353f2f270160a1795bf29b027950cad
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249309"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107175"
 ---
 # <a name="compiler-error-c3059"></a>컴파일러 오류 C3059
-'var': 'threadprivate' 기호는 'clause' 절에서 사용할 수 없습니다.  
-  
- [threadprivate](../../parallel/openmp/reference/threadprivate.md) 기호가 절에서 사용되었습니다.  
-  
- 다음 샘플에서는 C3059를 생성합니다.  
-  
-```  
-// C3059.cpp  
-// compile with: /openmp  
-#include "omp.h"  
-int x, y;  
-#pragma omp threadprivate(x, y)  
-  
-int main() {  
-   #pragma omp parallel private(x, y)   // C3059  
-   {  
-      x = y;  
-   }  
-}  
-```  
-  
- 해결 방법:  
-  
-```  
-// C3059b.cpp  
-// compile with: /openmp  
-#include "omp.h"  
-int x = 0, y = 0;  
-  
-int main() {  
-   #pragma omp parallel firstprivate(y) private(x)  
-   {  
-      x = y;  
-   }  
-}  
+
+'var': 'threadprivate' 기호는 'clause' 절에서 사용할 수 없습니다.
+
+[threadprivate](../../parallel/openmp/reference/threadprivate.md) 기호가 절에서 사용되었습니다.
+
+다음 샘플에서는 C3059를 생성합니다.
+
+```
+// C3059.cpp
+// compile with: /openmp
+#include "omp.h"
+int x, y;
+#pragma omp threadprivate(x, y)
+
+int main() {
+   #pragma omp parallel private(x, y)   // C3059
+   {
+      x = y;
+   }
+}
+```
+
+해결 방법:
+
+```
+// C3059b.cpp
+// compile with: /openmp
+#include "omp.h"
+int x = 0, y = 0;
+
+int main() {
+   #pragma omp parallel firstprivate(y) private(x)
+   {
+      x = y;
+   }
+}
 ```

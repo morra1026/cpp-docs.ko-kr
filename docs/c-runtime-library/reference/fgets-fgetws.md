@@ -39,12 +39,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c155150a364c2cbbd230c56678e6e7dcb4e4fde
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: ab57eecfec91e277f3409ba7b9b33d99a4b52e4b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027169"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067567"
 ---
 # <a name="fgets-fgetws"></a>fgets, fgetws
 
@@ -105,11 +105,11 @@ wchar_t *fgetws(
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```C
 // crt_fgets.c
-// This program uses fgets to display 
+// This program uses fgets to display
 // the first line from a file.
 
 #include <stdio.h>

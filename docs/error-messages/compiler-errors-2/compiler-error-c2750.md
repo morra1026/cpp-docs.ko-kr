@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 06731b0b386b200b74697592137aac10a48a8e82
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e3f40894c4879c9b3598429c02bb0811db658bb0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33233268"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069516"
 ---
 # <a name="compiler-error-c2750"></a>컴파일러 오류 C2750
-'type': 참조 형식에 'n e w'를 사용할 수 없습니다 대신 'gcnew'를 사용 하 여  
-  
- 사용 해야 인스턴스가 가비지 수집 힙에 배치 시키는 CLR 형식의 인스턴스를 만들려면 [gcnew](../../windows/ref-new-gcnew-cpp-component-extensions.md)합니다.  
-  
- 다음 샘플에서는 C2750 오류가 생성 됩니다.  
-  
-```  
-// C2750.cpp  
-// compile with: /clr  
-ref struct Y1 {};  
-  
-int main() {  
-   Y1 ^ x = new Y1;   // C2750  
-  
-   // try the following line instead  
-   Y1 ^ x2 = gcnew Y1;  
-}  
+
+'type': 참조 형식에 'new' 사용할 수 없습니다 'gcnew'를 대신 사용
+
+그러면 인스턴스가 가비지 수집 힙에 배치 될 CLR 형식의 인스턴스를 만드는 사용 해야 합니다 [gcnew](../../windows/ref-new-gcnew-cpp-component-extensions.md)합니다.
+
+다음 샘플에서는 C2750를 생성합니다.
+
+```
+// C2750.cpp
+// compile with: /clr
+ref struct Y1 {};
+
+int main() {
+   Y1 ^ x = new Y1;   // C2750
+
+   // try the following line instead
+   Y1 ^ x2 = gcnew Y1;
+}
 ```

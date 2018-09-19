@@ -14,15 +14,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85db49f138cc733326e47a3008e79bae5ab4b7cb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a7451ea6afee81cc296fb091705bde48041ef5d1
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360782"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722490"
 ---
 # <a name="bitfields"></a>비트 필드
-구조 비트 필드는 64 비트로 제한 되며 유형일 수 int, 부호 없는 int, int64, 또는 부호 없는 int64 서명 합니다. 형식 경계를 교차 하는 비트 필드가 비트 다음 형식 맞춤을 비트 필드를 건너뜁니다. 예를 들어 정수 비트 필드는 32 비트 경계를 교차 하지 않을 수 있습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [형식 및 저장소](../build/types-and-storage.md)
+
+구조 비트 필드는 64 비트 제한 되 고 형식이 될 수 있습니다, 부호 없는 int, int64, 정수나 부호 없는 int64를 서명 합니다. 형식 경계를 교차 하는 비트 필드는 다음 형식 맞춤을 비트 필드에 맞게 비트를 건너뜁니다. 예를 들어 정수 넘어설 수 없습니다는 32 비트 경계입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[형식 및 저장소](../build/types-and-storage.md)

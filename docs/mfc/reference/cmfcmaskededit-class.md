@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b903946a2e907b67d70e5008bff602670f1751e
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 2739b9306647b1929a0ad51aca8e0b66a65e9d2a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849473"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018264"
 ---
 # <a name="cmfcmaskededit-class"></a>CMFCMaskedEdit 클래스
 `CMFCMaskedEdit` 클래스 마스크에 대해 사용자 입력의 유효성을 검사 하 고 템플릿에 따라 유효성을 검사 결과 표시 하는 마스킹된 편집 컨트롤을 지원 합니다.  
@@ -94,7 +94,7 @@ class CMFCMaskedEdit : public CEdit
   
  마스크, 잘못 된 문자를 및 기본 텍스트를 초기화 하는 하나 이상의 메서드를 호출 하면 마스킹된 편집 컨트롤에 표준 편집 컨트롤의 동작을 동일 하 게 동작 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 마스크 (예: 전화 번호)를 사용 하 여 설정 하는 방법에 설명 합니다 `EnableMask` 메서드는 마스킹된 편집 컨트롤에 대 한 마스크를는 `SetValidChars` 사용자가 입력할 수 있는 올바른 문자와 의문자열을지정하는방법`SetWindowText` 컨트롤을 편집 하는 마스크의 프롬프트를 표시 하는 방법입니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_NewControls#11](../../mfc/reference/codesnippet/cpp/cmfcmaskededit-class_1.h)]  
@@ -132,8 +132,8 @@ void EnableGetMaskedCharsOnly(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 지정 하는 TRUE를 [CMFCMaskedEdit::GetWindowText](#getwindowtext) 메서드 검색 문자를만 마스크 False 이면 메서드 검색 전체 텍스트를 지정 합니다. 기본값은 TRUE입니다.  
+*bEnable*<br/>
+[in] 지정 하는 TRUE를 [CMFCMaskedEdit::GetWindowText](#getwindowtext) 메서드 검색 문자를만 마스크 False 이면 메서드 검색 전체 텍스트를 지정 합니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드를 사용 하 여 마스크 문자 검색을 사용 하도록 설정 합니다. 그런 다음 (425) 555-0187 등의 전화 번호에 해당 하는 마스킹된 편집 컨트롤을 만듭니다. 호출 하는 경우는 `GetWindowText` "4255550187" 반환 메서드를 합니다. 검색 마스크 문자를 사용 하지 않도록 설정 된 `GetWindowText` 메서드 예를 들어 "(425) 555-0187" 하는 편집 컨트롤에 표시 되는 텍스트를 반환 합니다.  
@@ -150,17 +150,17 @@ void EnableMask(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszMask*  
- 사용자 입력의 각 위치에 나타날 수 있는 문자의 형식을 지정 하는 마스크 문자열을 반환 합니다. 길이 *lpszInputTemplate* 하 고 *lpszMask* 매개 변수 문자열이 동일 해야 합니다. 마스크 문자에 대 한 자세한 설명 섹션을 참조 하세요.  
+*lpszMask*<br/>
+[in] 사용자 입력의 각 위치에 나타날 수 있는 문자의 형식을 지정 하는 마스크 문자열을 반환 합니다. 길이 *lpszInputTemplate* 하 고 *lpszMask* 매개 변수 문자열이 동일 해야 합니다. 마스크 문자에 대 한 자세한 설명 섹션을 참조 하세요.  
   
- [in] *lpszInputTemplate*  
- 리터럴 문자를 지정 하는 마스크 템플릿 문자열로 사용자 입력의 각 위치에 나타날 수 있습니다. 밑줄 문자 ('_') 문자 자리 표시자로 사용 합니다. 길이 *lpszInputTemplate* 하 고 *lpszMask* 매개 변수 문자열이 동일 해야 합니다.  
+*lpszInputTemplate*<br/>
+[in] 리터럴 문자를 지정 하는 마스크 템플릿 문자열로 사용자 입력의 각 위치에 나타날 수 있습니다. 밑줄 문자 ('_') 문자 자리 표시자로 사용 합니다. 길이 *lpszInputTemplate* 하 고 *lpszMask* 매개 변수 문자열이 동일 해야 합니다.  
   
- [in] *chMaskInputTemplate*  
- 사용자 입력에 잘못 된 각 문자에 대 한 프레임 워크를 대체 하는 기본 문자입니다. 이 매개 변수의 기본값은 밑줄 ('_').  
+*chMaskInputTemplate*<br/>
+[in] 사용자 입력에 잘못 된 각 문자에 대 한 프레임 워크를 대체 하는 기본 문자입니다. 이 매개 변수의 기본값은 밑줄 ('_').  
   
- [in] *lpszValid*  
- 유효한 문자 집합을 포함 하는 문자열입니다. NULL 문자를 모두 유효한 지를 나타냅니다. 이 매개 변수의 기본값은 NULL입니다.  
+*lpszValid*<br/>
+[in] 유효한 문자 집합을 포함 하는 문자열입니다. NULL 문자를 모두 유효한 지를 나타냅니다. 이 매개 변수의 기본값은 NULL입니다.  
   
 ### <a name="remarks"></a>설명  
  마스킹된 편집 컨트롤에 대 한 마스크를 만들려면이 메서드를 사용 합니다. 클래스를 파생 합니다 `CMFCMaskedEdit` 클래스를 재정의 합니다 [CMFCMaskedEdit::IsMaskedChar](#ismaskedchar) 사용자 지정 마스크 처리를 위해 사용자 고유의 코드를 사용 하는 방법입니다.  
@@ -186,8 +186,8 @@ void EnableSelectByGroup(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- TRUE로만 그룹 선택 False 이면 전체 텍스트를 선택 합니다. 기본값은 TRUE입니다.  
+*bEnable*<br/>
+[in] TRUE로만 그룹 선택 False 이면 전체 텍스트를 선택 합니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
  이 함수를 사용 하 여 마스킹된 편집 컨트롤 사용자가 그룹 또는 전체 텍스트를 선택할 수 있는지 여부를 지정 합니다.  
@@ -196,18 +196,17 @@ void EnableSelectByGroup(BOOL bEnable=TRUE);
   
  예를 들어, 전화 번호의 유효성을 검사 하려면 다음 마스킹된 편집 컨트롤을 사용할 수 있습니다.  
   
- `m_wndMaskEdit.EnableMask(`  
-  
- `_T(" ddd  ddd dddd"),// Mask string`  
-  
- `_T("(___) ___-____"),// Template string`  
-  
- `_T(' '));// Default char`  
-  
- `m_wndMaskEdit.SetValidChars(NULL); // All characters are valid.`  
-  
- `m_wndMaskEdit.SetWindowText(_T("(425) 555-0187")); // Prompt`  
-  
+```cpp
+m_wndMaskEdit.EnableMask(
+    _T(" ddd  ddd dddd"),  // Mask string
+    _T("(___) ___-____"),  // Template string
+    _T(' '));              // Default char
+
+m_wndMaskEdit.SetValidChars(NULL); // All characters are valid.
+
+m_wndMaskEdit.SetWindowText(_T("(425) 555-0187")); // Prompt
+```
+
  그룹 선택을 사용 하는 경우 사용자만의 "425", "555" 또는 "0187" 문자열 그룹 검색할 수 있습니다. 그룹을 선택 하지 않으면 사용자의 전화 번호의 전체 텍스트를 검색할 수 있습니다. "(425) 555-0187"입니다.  
   
 ##  <a name="enablesetmaskedcharsonly"></a>  CMFCMaskedEdit::EnableSetMaskedCharsOnly  
@@ -218,8 +217,8 @@ void EnableSetMaskedCharsOnly(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 사용자에 대 한 입력 마스크 문자에만 유효성을 검사. 전체 마스크에 대 한 유효성을 검사 하려면 FALSE입니다. 기본값은 TRUE입니다.  
+*bEnable*<br/>
+[in] 사용자에 대 한 입력 마스크 문자에만 유효성을 검사. 전체 마스크에 대 한 유효성을 검사 하려면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ##  <a name="getwindowtext"></a>  CMFCMaskedEdit::GetWindowText  
  검색 마스킹된 편집 컨트롤에서 텍스트의 유효성을 검사 합니다.  
@@ -233,14 +232,14 @@ void GetWindowText(CString& rstrString) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *lpszStringBuf*  
- 편집 컨트롤에서 텍스트를 받는 버퍼에 대 한 포인터입니다.  
+*lpszStringBuf*<br/>
+[out] 편집 컨트롤에서 텍스트를 받는 버퍼에 대 한 포인터입니다.  
   
- [in] *nMaxCount*  
- 수신 문자의 최대 수입니다.  
+*nMaxCount*<br/>
+[in] 수신 문자의 최대 수입니다.  
   
- [out] *rstrString*  
- 편집 컨트롤에서 텍스트를 수신 하는 문자열 개체에 대 한 참조입니다.  
+*rstrString*<br/>
+[out] 편집 컨트롤에서 텍스트를 수신 하는 문자열 개체에 대 한 참조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  첫 번째 메서드 오버 로드에 복사 되는 문자열의 바이트 수를 반환 합니다 *lpszStringBuf* 매개 변수 버퍼; 마스킹된 편집 컨트롤에 텍스트가 없는 경우 0입니다.  
@@ -260,11 +259,11 @@ virtual BOOL IsMaskedChar(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *chChar*  
- 유효성을 검사할 문자입니다.  
+*chChar*<br/>
+[in] 유효성을 검사할 문자입니다.  
   
- [in] *chMaskChar*  
- 마스크 문자열에서 해당 문자입니다.  
+*chMaskChar*<br/>
+[in] 마스크 문자열에서 해당 문자입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면을 *chChar* 매개 변수는 형식에서 허용 하는 문자는 *chMaskChar* 매개 변수, 그렇지 않으면 FALSE입니다.  
@@ -280,15 +279,24 @@ void SetValidChars(LPCTSTR lpszValid=NULL);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszValid*  
- 유효한 입력된 문자 집합을 포함 하는 문자열입니다. NULL은 모든 문자가 올바른지를 의미 합니다. 이 매개 변수의 기본값은 NULL입니다.  
+*lpszValid*<br/>
+[in] 유효한 입력된 문자 집합을 포함 하는 문자열입니다. NULL은 모든 문자가 올바른지를 의미 합니다. 이 매개 변수의 기본값은 NULL입니다.  
   
 ### <a name="remarks"></a>설명  
  유효한 문자의 목록을 정의 하려면이 메서드를 사용 합니다. 입력된 문자가이 목록에 없는 경우 마스킹된 편집 컨트롤 것 허용 하지 않습니다.  
   
  다음 코드 예제에서는 16 진수만 허용합니다.  
   
- `//Mask: 0xFFFFm_wndMaskEdit.EnableMask( _T(" AAAA"),                // The mask string. _T("0x____"),               // The literal template string. _T('_'));                   // The default character that replaces the backspace character.// Valid string charactersm_wndMaskEdit.SetValidChars(_T("1234567890ABCDEFabcdef"));m_wndMaskEdit.SetWindowText(_T("0x01AF"));`  
+```cpp
+//Mask: 0xFFFF
+m_wndMaskEdit.EnableMask( 
+    _T(" AAAA"),                // The mask string.
+    _T("0x____"),               // The literal template string.
+    _T('_'));                   // The default character that 
+                                // replaces the backspace character.
+// Valid string characters
+m_wndMaskEdit.SetValidChars(_T("1234567890ABCDEFabcdef"));m_wndMaskEdit.SetWindowText(_T("0x01AF"));
+```
   
 ##  <a name="setwindowtext"></a>  CMFCMaskedEdit::SetWindowText  
  마스킹된 편집 컨트롤에 프롬프트를 표시합니다.  
@@ -298,8 +306,8 @@ void SetWindowText(LPCTSTR lpszString);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszString*  
- 프롬프트로 사용할 null로 끝나는 문자열을 가리킵니다.  
+*lpszString*<br/>
+[in] 프롬프트로 사용할 null로 끝나는 문자열을 가리킵니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 컨트롤 텍스트를 설정합니다.  

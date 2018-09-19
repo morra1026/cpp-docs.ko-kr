@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c8838ed6b2d202d58c9553a773da9653839b6c8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f9138172bb108095c4e72407f1e17e8f4fa2370c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236380"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082666"
 ---
 # <a name="compiler-error-c2722"></a>컴파일러 오류 C2722
-':: operator': 다음 연산자 명령을; 잘못 되었습니다. 'operator 연산자'를 사용 하 여  
-  
- `operator` 문 가져오거나 다시 정의한 요소 `::new` 또는 `::delete`합니다. `new` 및 `delete` 는 전역 연산자 하므로 범위 결정 연산자 (`::`)은 의미가 없습니다. 제거는 `::` 연산자입니다.
+
+':: operator': 다음 연산자 명령을; 잘못 되었습니다. 'operator o'를 사용 합니다.
+
+`operator` 문 redefines `::new` 또는 `::delete`합니다. `new` 하 고 `delete` 는 전역 연산자 하므로 범위 결정 연산자 (`::`)은 의미가 없습니다. 제거 된 `::` 연산자입니다.

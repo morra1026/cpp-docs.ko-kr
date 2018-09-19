@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c92ccfe9dbf25fa1355885a5f6dd3570df4884b
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 2c594e86c0e0bcb74fe624743c863c70a1c7f9e6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42538941"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707813"
 ---
 # <a name="cglobalutils-class"></a>CGlobalUtils 클래스
 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
@@ -104,8 +104,8 @@ void AdjustRectToworkArea(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out에서] *rect*  
- [in] *pRectDelta*  
+*rect*<br/>
+[out에서] [in] *pRectDelta*  
   
 ### <a name="remarks"></a>설명  
   
@@ -123,12 +123,12 @@ void CalcExpectedDockedRect(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *barContainerManager*  
- [in] *pWndTodock*  
- [in] *ptMouse*  
- [out] *rectResult*  
- [out] *bDrawTab*  
- [out] *ppTargetBar*  
+*barContainerManager*<br/>
+[in] [in] *pWndTodock*  
+*ptMouse*<br/>
+[in] [out] *rectResult*  
+*bDrawTab*<br/>
+[out] [out] *ppTargetBar*  
   
 ### <a name="remarks"></a>설명  
   
@@ -176,14 +176,14 @@ BOOL CheckAlignment(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- [in] *pBar*  
- [in] *nSensitivity*  
- [in] *pDockManager*  
- [in] *bOuterEdge*  
- [out] *dwAlignment*  
- [in] *dwEnabledDockBars*  
- [in] *lpRectBounds*  
+*지점*<br/>
+[in] [in] *pBar*  
+*nSensitivity*<br/>
+[in] [in] *pDockManager*  
+*bOuterEdge*<br/>
+[in] [out] *dwAlignment*  
+*dwEnabledDockBars*<br/>
+[in] [in] *lpRectBounds*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -199,8 +199,8 @@ BOOL CyFromString(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *cy*  
- [in] *psz*  
+*cy*<br/>
+[out] [in] *psz*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -216,8 +216,8 @@ BOOL DecimalFromString(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *10 진수*  
- [in] *psz*  
+*decimal*<br/>
+[out] [in] *psz*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -233,8 +233,8 @@ void FlipRect(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out에서] *rect*  
- [in] *nDegrees*  
+*rect*<br/>
+[out에서] [in] *nDegrees*  
   
 ### <a name="remarks"></a>설명  
   
@@ -249,8 +249,8 @@ void ForceAdjustLayout(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out에서] *pDockManager*  
- [in] *bForce*  
+*pDockManager*<br/>
+[out에서] [in] *bForce*  
  [in] *bForceInvisible*  
   
 ### <a name="remarks"></a>설명  
@@ -297,12 +297,12 @@ BOOL GetPaneAndAlignFromPoint(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *barContainerManager*  
- [in] *(태평양 표준시)*  
- [out] *ppTargetControlBar*  
- [out] *dwAlignment*  
- [out] *bTabArea*  
- [out] *bCaption*  
+*barContainerManager*<br/>
+[in] [in] *(태평양 표준시)*  
+*ppTargetControlBar*<br/>
+[out] [out] *dwAlignment*  
+*bTabArea*<br/>
+[out] [out] *bCaption*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -333,8 +333,8 @@ void SetNewParent(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lstControlBars*  
- [in] *pNewParent*  
+*lstControlBars*<br/>
+[in] [in] *pNewParent*  
  [in] *bCheckVisibility*  
   
 ### <a name="remarks"></a>설명  
@@ -349,8 +349,8 @@ BOOL StringFromCy(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *str*  
- [in] *cy*  
+*str*<br/>
+[out] [in] *cy*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -366,8 +366,8 @@ BOOL StringFromDecimal(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *str*  
- [in] *10 진수*  
+*str*<br/>
+[out] [in] *10 진수*  
   
 ### <a name="return-value"></a>반환 값  
   

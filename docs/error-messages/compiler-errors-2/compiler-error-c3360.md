@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc8e361b81a2b61f2695a9d47dbcca39bec367bb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c2ec9d43d9849e07010ac56989466c17ce37a93e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33253881"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022866"
 ---
 # <a name="compiler-error-c3360"></a>컴파일러 오류 C3360
-'string': 이름을 만들 수 없습니다.  
-  
- [uuid](../../windows/uuid-cpp-attributes.md) 특성에 전달된 값이 잘못되었습니다.  
-  
- 다음 샘플에서는 C3360을 생성합니다.  
-  
-```  
-// C3360.cpp  
-[ uuid("1") ]  
-// try this line instead  
-// [ uuid("12341234-1234-1234-1234-123412341234") ]  
-struct A   // C3360  
-{  
-};  
-  
-int main()  
-{  
-}  
+
+'string': 이름을 만들 수 없습니다.
+
+[uuid](../../windows/uuid-cpp-attributes.md) 특성에 전달된 값이 잘못되었습니다.
+
+다음 샘플에서는 C3360을 생성합니다.
+
+```
+// C3360.cpp
+[ uuid("1") ]
+// try this line instead
+// [ uuid("12341234-1234-1234-1234-123412341234") ]
+struct A   // C3360
+{
+};
+
+int main()
+{
+}
 ```

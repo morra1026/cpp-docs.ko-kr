@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb3ce81832f4366add1c8da96623690cd40b3dd9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c96216782994e6491437df82c8bb56d74354622b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169922"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030537"
 ---
 # <a name="compiler-error-c2290"></a>컴파일러 오류 C2290
-C++ asm 구문이 무시됩니다. __asm을 사용하세요.  
-  
- `asm` 구문은 나중에 사용할 수 있도록 예약되었습니다.
+
+C++ asm 구문이 무시됩니다. __asm을 사용하세요.
+
+`asm` 구문은 나중에 사용할 수 있도록 예약되었습니다.

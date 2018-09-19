@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f9b5bc8568c3655d8c038d70d78f3887b2c3becc
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 775fbe39edc9478b1fce3afb39ee2bf1f6d5ed36
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607527"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714313"
 ---
 # <a name="interface-class--c-component-extensions"></a>interface 클래스(C++ 구성 요소 확장)
 
@@ -50,8 +50,8 @@ interface class
 *inherit_access*  
 액세스 가능성 *base_interface*합니다.  수만 내게 필요한 옵션을 기본 인터페이스에 대 한 **공용** (기본값).
 
-*base_interface* (선택 사항)  
-인터페이스에 대 한 기본 인터페이스 *이름을*입니다.
+*base_interface*  
+(선택 사항) 인터페이스에 대 한 기본 인터페이스 *이름을*입니다.
 
 ### <a name="remarks"></a>설명
 

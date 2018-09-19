@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5ebd607dc207975e7d38e3217c275d3d5d18bb8
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: a2a44cbdb5abeed7d5dbd7be7dfaba37ba1d0145
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33686349"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024959"
 ---
 # <a name="missingwait-class"></a>missing_wait 클래스
 이 클래스는 개체의 소멸자를 실행할 때 `task_group` 또는 `structured_task_group` 개체에 여전히 예약된 작업이 있는 경우 발생하는 예외를 설명합니다. 예외의 결과로 스택 해제 때문에 소멸자에 도달한 경우에는 이 예외가 발생하지 않습니다.  
@@ -43,7 +43,7 @@ class missing_wait : public std::exception;
 |[missing_wait](#ctor)|오버로드됨. `missing_wait` 개체를 생성합니다.|  
   
 ## <a name="remarks"></a>설명  
- 예외 흐름 없다는 담당 하는 호출는 `wait` 또는 `run_and_wait` 의 메서드는 `task_group` 또는 `structured_task_group` 해당 개체를 소멸을 허용 하기 전에 개체입니다. 런타임에서 호출을 잊은 확인이 예외를 throw는 `wait` 또는 `run_and_wait` 메서드.  
+ 예외 흐름 없는 담당 하는 호출을 `wait` 또는 `run_and_wait` 메서드를 `task_group` 또는 `structured_task_group` 소멸 시킬 개체를 허용 하기 전에 개체. 런타임 호출을 잊은 확인 하기 위해이 예외를 throw 합니다 `wait` 또는 `run_and_wait` 메서드.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  `exception`  
@@ -66,8 +66,8 @@ missing_wait() throw();
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Message`  
- 오류 설명 메시지입니다.  
+*메시지 (_m)*<br/>
+오류 설명 메시지입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Namespace 동시성](concurrency-namespace.md)   

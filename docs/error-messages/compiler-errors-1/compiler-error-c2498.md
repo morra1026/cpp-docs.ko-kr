@@ -16,24 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c50596e4e5ca47a0f1bdf3f5ab25405139b66447
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3fbd946158157f76b2fc9bfe6cbd3ea9086d09ff
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196612"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115153"
 ---
 # <a name="compiler-error-c2498"></a>컴파일러 오류 C2498
-'function': 'novtable' 클래스 선언 또는 정의에 적용 될 수 있습니다  
-  
- 이 오류를 사용 하 여 발생할 수 있습니다 `__declspec(novtable)` 함수를 사용 합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C2498 오류가 생성 됩니다.  
-  
-```  
-// C2498.cpp  
-// compile with: /c  
-void __declspec(novtable) f() {}   // C2498  
-class __declspec(novtable) A {};   // OK  
+
+'function': 'novtable'는 클래스 선언 또는 정의에 적용 될 수 있습니다
+
+이 오류를 사용 하 여 발생할 수 있습니다 `__declspec(novtable)` 함수를 사용 하 여 합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C2498 오류가 생성 됩니다.
+
+```
+// C2498.cpp
+// compile with: /c
+void __declspec(novtable) f() {}   // C2498
+class __declspec(novtable) A {};   // OK
 ```

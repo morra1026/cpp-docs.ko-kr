@@ -16,24 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 25fd1a04e0be46943b4fd183b470b369f810a0d1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7b8210aacf60c4c53faf50278e7494c90c58aa67
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33253959"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076426"
 ---
 # <a name="compiler-error-c3295"></a>컴파일러 오류 C3295
-'#pragma pragma'는 전역 또는 네임스페이스 범위에서만 사용할 수 있습니다.  
-  
- 일부 pragma는 함수에 사용할 수 없습니다.  참조 [Pragma 지시문 및 __Pragma 키워드](../../preprocessor/pragma-directives-and-the-pragma-keyword.md) 자세한 정보에 대 한 합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3295를 생성합니다.  
-  
-```  
-// C3295.cpp  
-int main() {  
-   #pragma managed   // C3295  
-}  
+
+'#pragma pragma'는 전역 또는 네임스페이스 범위에서만 사용할 수 있습니다.
+
+일부 pragma는 함수에 사용할 수 없습니다.  참조 [Pragma 지시문 및 __Pragma 키워드](../../preprocessor/pragma-directives-and-the-pragma-keyword.md) 자세한 내용은 합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C3295를 생성합니다.
+
+```
+// C3295.cpp
+int main() {
+   #pragma managed   // C3295
+}
 ```

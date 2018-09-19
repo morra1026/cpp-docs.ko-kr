@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7abc221b81b6ace3afb165585b7e24655d348c2b
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 3c49f76175ced83fb9a9b7e72e1c1fc7dbb68e20
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42545883"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720670"
 ---
 # <a name="outwordstring"></a>__outwordstring
 **Microsoft 전용**  
@@ -41,14 +41,14 @@ void __outwordstring(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `Port`  
- 데이터를 보낼 포트입니다.  
+*포트*<br/>
+[in] 데이터를 보낼 포트입니다.  
   
- [in] `Buffer`  
- 지정된 된 포트에 보내도록 데이터에 대 한 포인터입니다.  
+*Buffer*<br/>
+[in] 지정된 된 포트에 보내도록 데이터에 대 한 포인터입니다.  
   
- [in] `Count`  
- 보낼 단어의 수입니다.  
+*개수*<br/>
+[in] 보낼 단어의 수입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   

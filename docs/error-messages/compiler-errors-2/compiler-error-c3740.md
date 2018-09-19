@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53004e1a26fc0ead32680ac9b37b2e9aaa13087e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b6bda1392ae4ebe95c6038b8dd0ec322b32ba4d8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33264092"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044199"
 ---
 # <a name="compiler-error-c3740"></a>컴파일러 오류 C3740
-서식 파일 원본 또는 이벤트를 받을 수 없습니다.  
-  
- 템플릿 기반 클래스 또는 구조체를 포함할 수 없습니다 [이벤트](../../cpp/event-handling.md)합니다.  
-  
- 다음 샘플에서는 C3740 오류가 생성 됩니다.  
-  
-```  
-// C3740.cpp  
-template <typename T>   // Delete the template specification  
-struct E {  
-   __event void f();   // C3740  
-};  
-  
-int main() {  
-}  
+
+템플릿 원본 또는 이벤트를 수신할 수 없습니다.
+
+템플릿 기반 클래스 또는 구조체를 포함할 수 없습니다 [이벤트](../../cpp/event-handling.md)합니다.
+
+다음 샘플에서는 C3740 오류가 생성 됩니다.
+
+```
+// C3740.cpp
+template <typename T>   // Delete the template specification
+struct E {
+   __event void f();   // C3740
+};
+
+int main() {
+}
 ```

@@ -15,17 +15,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7519fb18ac7f24e79a5f7f664cb35f8eb5b3fd77
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 551028999d11379c06d3319f01e882a33ad57936
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368930"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705200"
 ---
 # <a name="binding-imports"></a>가져오기 바인딩
-링커의 기본 동작은 지연 로드 된 DLL에 대 한 바인딩 가능한 가져오기 주소 테이블을 만드는 것입니다. 도우미 함수의 호출 하는 대신 바인딩된 정보를 사용 하려고 합니다 DLL에 바인딩된 경우 **GetProcAddress** 각 참조 가져오기. 타임 스탬프 또는 기본 설정된 주소가 일치 하지 않으면 로드 된 DLL의 도우미 함수 것으로 간주 하 바운드 가져오기 주소 테이블 최신이 존재 하지 않는 경우에 따라 진행 됩니다.  
-  
- DLL의 지연 로드 가져오기 바인딩 않을 경우 지정 [지연/](../../build/reference/delay-delay-load-import-settings.md): nobind 링커의 명령줄에서 이미지 파일의 공간이 생성된 소모 되는 바인딩된 가져오기 주소 테이블 못합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [링커의 지연 로드된 DLL 지원](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+
+링커의 기본 동작은 지연 로드 된 dll을 바인딩할 수 있는 가져오기 주소 테이블을 만드는 방법은입니다. 도우미 함수를 호출 하는 대신 바인딩된 정보를 사용 하려고 경우 DLL이 바인딩되면 **GetProcAddress** 참조 된 각 합니다. 타임 스탬프 또는 기본 설정된 주소가 일치 하지 않으면 로드 된 DLL의 도우미 함수 것으로 간주 하 바인딩된 가져오기 주소 테이블을 오래 된 존재 하지 않는 경우에 따라 진행 됩니다.
+
+지정 하지 않을 경우 DLL의 지연 로드 가져오기 바인딩할 합니다 [지연/](../../build/reference/delay-delay-load-import-settings.md): nobind 링커의 명령줄에서 이미지 파일의 생성 및 사용 중인 공간에서 바인딩된 가져오기 주소 테이블을 못합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[링커의 지연 로드된 DLL 지원](../../build/reference/linker-support-for-delay-loaded-dlls.md)

@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0eda5fc385f094bd7a18bff521250453ebb66c84
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 39b376d6e65a5002487cbf51186fdab9ccb3fc46
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757938"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46110148"
 ---
 # <a name="caxwindow-class"></a>CAxWindow 클래스
 
@@ -94,10 +94,10 @@ HRESULT AttachControl(
 
 ### <a name="parameters"></a>매개 변수
 
-*pControl*  
+*pControl*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 컨트롤입니다.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 [out] 에 대 한 포인터를 `IUnknown` 호스트의 (의 `AxWin` 개체).
 
 ### <a name="return-value"></a>반환 값
@@ -118,7 +118,7 @@ CAxWindow(HWND hWnd = NULL);
 
 ### <a name="parameters"></a>매개 변수
 
-*hWnd*  
+*hWnd*<br/>
 기존 창 개체에 대 한 핸들입니다.
 
 ##  <a name="createcontrol"></a>  CAxWindow::CreateControl
@@ -139,7 +139,7 @@ HRESULT CreateControl(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszName*  
+*lpszName*<br/>
 컨트롤을 만들려면 문자열에 대 한 포인터입니다. 다음 방법 중 하나로 포맷 되어야 합니다.
 
 - ProgID "MSCAL 예:. Calendar.7 "
@@ -155,13 +155,13 @@ HRESULT CreateControl(
    > [!NOTE]
    > "MSHTML:" 하는 MSHTML stream으로 지정 된 HTML 조각의 앞에 야 합니다. ProgID 및 CLSID는 Windows Mobile 플랫폼에서 지원 됩니다. Windows CE 플랫폼을 포함, CE IE 지원에 대 한 지원 사용 하 여 Windows Mobile 이외의 ProgID를 포함 한 모든 형식의 CLSID, URL에 대 한 참조 액티브 문서 및 html 조각입니다.
 
-*pStream*  
+*pStream*<br/>
 [in] 컨트롤의 속성을 초기화 하는 데 사용 되는 스트림에 대 한 포인터입니다. NULL 일 수 있습니다.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 [out] 수신할 포인터의 주소는 `IUnknown` 컨테이너입니다. NULL 일 수 있습니다.
 
-*dwResID*  
+*dwResID*<br/>
 HTML 리소스의 리소스 ID입니다. WebBrowser 컨트롤을 만들고 지정된 된 리소스를 사용 하 여 로드 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -206,7 +206,7 @@ HRESULT CreateControlEx(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszName*  
+*lpszName*<br/>
 컨트롤을 만들려면 문자열에 대 한 포인터입니다. 다음 방법 중 하나로 포맷 되어야 합니다.
 
 - ProgID "MSCAL 예:. Calendar.7 "
@@ -222,22 +222,22 @@ HRESULT CreateControlEx(
    > [!NOTE]
    > "MSHTML:" 하는 MSHTML stream으로 지정 된 HTML 조각의 앞에 야 합니다. ProgID 및 CLSID는 Windows Mobile 플랫폼에서 지원 됩니다. Windows CE 플랫폼을 포함, CE IE 지원에 대 한 지원 사용 하 여 Windows Mobile 이외의 ProgID를 포함 한 모든 형식의 CLSID, URL에 대 한 참조 액티브 문서 및 html 조각입니다.
 
-*pStream*  
+*pStream*<br/>
 [in] 컨트롤의 속성을 초기화 하는 데 사용 되는 스트림에 대 한 포인터입니다. NULL 일 수 있습니다.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 [out] 수신할 포인터의 주소는 `IUnknown` 컨테이너입니다. NULL 일 수 있습니다.
 
-*ppUnkControl*  
+*ppUnkControl*<br/>
 [out] 수신할 포인터의 주소는 `IUnknown` 컨트롤입니다. NULL 일 수 있습니다.
 
-*iidSink*  
+*iidSink*<br/>
 [in] 포함된 된 개체에는 송신 인터페이스의 인터페이스 식별자입니다. IID_NULL 될 수 있습니다.
 
-*punkSink*  
+*punkSink*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 으로 지정 된 포함된 된 개체의 연결 지점에 연결 되어 싱크 개체의 인터페이스가 *iidSink*합니다.
 
-*dwResID*  
+*dwResID*<br/>
 [in] HTML 리소스의 리소스 ID입니다. WebBrowser 컨트롤을 만들고 지정된 된 리소스를 사용 하 여 로드 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -276,7 +276,7 @@ CAxWindow<TBase>& operator=(HWND hWnd);
 
 ### <a name="parameters"></a>매개 변수
 
-*hWnd*  
+*hWnd*<br/>
 기존 창 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -295,13 +295,13 @@ HRESULT QueryControl(Q** ppUnk);
 
 ### <a name="parameters"></a>매개 변수
 
-*iid*  
+*iid*<br/>
 [in] 컨트롤의 인터페이스의 IID를 지정합니다.
 
-*ppUnk*  
+*ppUnk*<br/>
 [out] 컨트롤의 인터페이스에 대 한 포인터입니다. 이 방법의 템플릿 버전에서는 않아도가 됩니다 참조 id는 연결 된 UUID 사용 하 여 형식화 된 인터페이스를 전달 하기만 합니다.
 
-*Q*  
+*Q*<br/>
 [in] 에 대 한 쿼리 되는 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -320,13 +320,13 @@ HRESULT QueryHost(Q** ppUnk);
 
 ### <a name="parameters"></a>매개 변수
 
-*iid*  
+*iid*<br/>
 [in] 컨트롤의 인터페이스의 IID를 지정합니다.
 
-*ppUnk*  
+*ppUnk*<br/>
 [out] 호스트의 인터페이스 포인터입니다. 이 방법의 템플릿 버전에서는 않아도가 됩니다 참조 id는 연결 된 UUID 사용 하 여 형식화 된 인터페이스를 전달 하기만 합니다.
 
-*Q*  
+*Q*<br/>
 [in] 에 대 한 쿼리 되는 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -347,7 +347,7 @@ HRESULT SetExternalDispatch(IDispatch* pDisp);
 
 ### <a name="parameters"></a>매개 변수
 
-*pDisp*  
+*pDisp*<br/>
 [in] 에 대 한 포인터는 `IDispatch` 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -364,7 +364,7 @@ HRESULT SetExternalUIHandler(IDocHostUIHandlerDispatch* pUIHandler);
 
 ### <a name="parameters"></a>매개 변수
 
-*pUIHandler*  
+*pUIHandler*<br/>
 [in] 에 대 한 포인터는 `IDocHostUIHandlerDispatch` 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -377,9 +377,9 @@ HRESULT SetExternalUIHandler(IDocHostUIHandlerDispatch* pUIHandler);
 
 ## <a name="see-also"></a>참고 항목
 
-[ATLCON 샘플](../../visual-cpp-samples.md)   
-[CWindow 클래스](../../atl/reference/cwindow-class.md)   
-[합성 컨트롤 기본 사항](../../atl/atl-composite-control-fundamentals.md)   
-[클래스 개요](../../atl/atl-class-overview.md)   
+[ATLCON 샘플](../../visual-cpp-samples.md)<br/>
+[CWindow 클래스](../../atl/reference/cwindow-class.md)<br/>
+[복합 컨트롤 기본 사항](../../atl/atl-composite-control-fundamentals.md)<br/>
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [컨트롤 포함 FAQ](../../atl/atl-control-containment-faq.md)
 

@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97b143311f6326e938e9ac61175b02c82d3c8c2c
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 44ccd0c1625e971fd74e913b9618d7f3ae811be5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027182"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712495"
 ---
 # <a name="cmfcribboncheckbox-class"></a>CMFCRibbonCheckBox 클래스
 `CMFCRibbonCheckBox` 클래스는 리본 패널, 빠른 실행 도구 모음 또는 팝업 메뉴에 추가할 수 있는 확인란을 구현합니다.  
@@ -103,16 +103,16 @@ CMFCRibbonCheckBox(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 명령 ID를 지정 합니다.  
+*nID*<br/>
+[in] 명령 ID를 지정 합니다.  
   
- [in] *lpszText*  
- 텍스트 레이블을 지정합니다.  
+*lpszText*<br/>
+[in] 텍스트 레이블을 지정합니다.  
   
 ### <a name="return-value"></a>반환 값  
  리본 확인란 개체를 생성합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는의 개체를 생성 하는 방법에 설명 합니다 `CMFCRibbonCheckBox` 클래스입니다.  
   
  [!code-cpp[NVC_MFC_RibbonApp#17](../../mfc/reference/codesnippet/cpp/cmfcribboncheckbox-class_1.cpp)]  
@@ -125,8 +125,8 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 확인란을 사용 하 여 연결 된 CDC에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 확인란을 사용 하 여 연결 된 CDC에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  반환 된 `CSize` 확인란의 압축 크기를 포함 하는 개체입니다.  
@@ -142,8 +142,8 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 이 확인란을 사용 하 여 연결 된 CDC에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 이 확인란을 사용 하 여 연결 된 CDC에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `CSize` 확인란의 중간 크기를 포함 하는 개체입니다.  
@@ -159,8 +159,8 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 이 확인란을 사용 하 여 연결 된 CDC 개체에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 이 확인란을 사용 하 여 연결 된 CDC 개체에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  반환 된 `CSize` 확인란의 보통 크기를 포함 하는 개체입니다.  
@@ -188,8 +188,8 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 확인란을 그릴 CDC에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 확인란을 그릴 CDC에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -204,8 +204,8 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
  [in] *CDC**  
  확인란을 사용 하 여 연결 된 CDC에 대 한 포인터입니다.  
   
- [in] *CRect*  
- `CRect` 메뉴 이미지를 그릴 사각형을 지정 하는 개체입니다.  
+*CRect*<br/>
+[in] `CRect` 메뉴 이미지를 그릴 사각형을 지정 하는 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이미지를 그릴 경우 TRUE 또는 그렇지 않은 경우 FALSE를 반환 합니다.  
@@ -227,23 +227,23 @@ virtual void OnDrawOnList(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 확인란을 그릴 장치 컨텍스트에 대 한 포인터입니다.  
+*pDC*<br/>
+[in] 확인란을 그릴 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *strText*  
- 표시 텍스트입니다.  
+*strText*<br/>
+[in] 표시 텍스트입니다.  
   
- [in] *nTextOffset*  
- 텍스트를 표시할 목록 상자의 왼쪽에서의 픽셀 단위의 거리입니다.  
+*nTextOffset*<br/>
+[in] 텍스트를 표시할 목록 상자의 왼쪽에서의 픽셀 단위의 거리입니다.  
   
- [in] *rect*  
- 확인란의 표시 사각형을 합니다.  
+*rect*<br/>
+[in] 확인란의 표시 사각형을 합니다.  
   
- [in] *bIsSelected*  
- 확인란을 선택 하거나 그렇지 않은 경우 FALSE 이면 TRUE입니다.  
+*bIsSelected*<br/>
+[in] 확인란을 선택 하거나 그렇지 않은 경우 FALSE 이면 TRUE입니다.  
   
- [in] *bHighlighted*  
- 확인란 강조 표시 된, 또는 그렇지 않은 경우 FALSE 이면 TRUE입니다.  
+*bHighlighted*<br/>
+[in] 확인란 강조 표시 된, 또는 그렇지 않은 경우 FALSE 이면 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
   

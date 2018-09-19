@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4cae819ccffae37ca27d1e062ae9a766e7acba1f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 991c8c9505485e84aa4e8e1e0e8955b5ad2ac23a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201753"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712858"
 ---
 # <a name="moneyget-class"></a>money_get 클래스
 
@@ -47,10 +47,10 @@ class money_get : public locale::facet;
 ### <a name="parameters"></a>매개 변수
 
 *CharType*<br/>
- 로캘의 문자를 인코딩하기 위해 프로그램 내 사용하는 형식입니다.
+로캘의 문자를 인코딩하기 위해 프로그램 내 사용하는 형식입니다.
 
 *InputIterator*<br/>
- get 함수가 입력을 읽어올 반복기의 형식입니다.
+get 함수가 입력을 읽어올 반복기의 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -116,22 +116,22 @@ virtual iter_type do_get(iter_type first,
 ### <a name="parameters"></a>매개 변수
 
 *first*<br/>
- 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
 *last*<br/>
- 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
 *Intl*<br/>
- 시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값입니다. 국제의 경우 **true**이고 국내의 경우 **false**입니다.
+시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값입니다. 국제의 경우 **true**이고 국내의 경우 **false**입니다.
 
 *iosbase*<br/>
- 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
+집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
 *상태*<br/>
- 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
+작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
 *val*<br/>
- 변환된 시퀀스를 저장하는 문자열입니다.
+변환된 시퀀스를 저장하는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -198,22 +198,22 @@ iter_type get(iter_type first,
 ### <a name="parameters"></a>매개 변수
 
 *first*<br/>
- 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
 *last*<br/>
- 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
+변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
 *Intl*<br/>
- 시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값입니다. 국제의 경우 **true**이고 국내의 경우 **false**입니다.
+시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값입니다. 국제의 경우 **true**이고 국내의 경우 **false**입니다.
 
 *iosbase*<br/>
- 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
+집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
 *상태*<br/>
- 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
+작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
 *val*<br/>
- 변환된 시퀀스를 저장하는 문자열입니다.
+변환된 시퀀스를 저장하는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -295,7 +295,7 @@ explicit money_get(size_t _Refs = 0);
 ### <a name="parameters"></a>매개 변수
 
 *_Refs*<br/>
- 개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
+개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
 ### <a name="remarks"></a>설명
 

@@ -19,22 +19,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9921ad7bad5e3e09402ecf74d182e9812cc63bad
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c384ef6e842213e75ec0d8a7f7e9b03b576f8d6b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373893"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721164"
 ---
 # <a name="section-dumpbin"></a>/SECTION(DUMPBIN)
-```  
-/SECTION:section  
-```  
-  
-## <a name="remarks"></a>설명  
- 이 옵션에 지정 된 정보를 출력 제한 *섹션*합니다. 사용 하 여는 [/HEADERS](../../build/reference/headers.md) 옵션 파일에 있는 섹션의 목록을 가져올 수 있습니다.  
-  
- 만 [/HEADERS](../../build/reference/headers.md) DUMPBIN 옵션은으로 생성 된 파일에서 사용 하기 위해 사용할 수는 [/GL](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [DUMPBIN 옵션](../../build/reference/dumpbin-options.md)
+
+```
+/SECTION:section
+```
+
+## <a name="remarks"></a>설명
+
+이 옵션에 지정 된 정보를 출력 제한 *섹션*합니다. 사용 된 [/HEADERS](../../build/reference/headers.md) 파일의 섹션의 목록을 가져오려면 옵션입니다.
+
+만 [/HEADERS](../../build/reference/headers.md) DUMPBIN 옵션을 사용 하 여 생성 된 파일에 사용할 수 있습니다 합니다 [/GL](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[DUMPBIN 옵션](../../build/reference/dumpbin-options.md)

@@ -202,12 +202,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c940ec56b0f522e90410b786d595f4cbf929ed89
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 1236cbdaca396aa6d52d4e30095d9a0df5379142
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688547"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712038"
 ---
 # <a name="cwinapp-class"></a>CWinApp 클래스
 
@@ -437,8 +437,8 @@ virtual DWORD ApplicationRecoveryCallback(LPVOID lpvParam);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *lpvParam*  
-나중에 사용하기 위해 예약되어 있습니다.
+*lpvParam*<br/>
+[in] 사용 하도록 예약 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1745,11 +1745,11 @@ virtual CDocument* OpenDocumentFile(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *lpszFileName*  
-열려는 파일의 이름입니다.
+*lpszFileName*<br/>
+[in] 열려는 파일의 이름입니다.
 
-[in] *baddtomru입니다*  
-TRUE 이면 문서를 사용 하면 가장 최근의 파일 중 하나인 FALSE 문서가 아닌 최신 파일 중 하나를 나타냅니다.
+*baddtomru*<br/>
+[in] TRUE 이면 문서를 사용 하면 가장 최근의 파일 중 하나인 FALSE 문서가 아닌 최신 파일 중 하나를 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1936,8 +1936,8 @@ void RegisterShellFileTypes(BOOL bCompat = FALSE);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *bCompat*  
-TRUE는 인쇄 및 인쇄에 파일을 인쇄 하려면 셸에서 직접 파일을 끌거나 프린터 개체를 사용자가 셸 명령에 대 한 등록 항목을 추가 합니다. 또한 DefaultIcon 키 추가. 기본적으로이 매개 변수는 FALSE는 이전 버전과 호환성에 대 한 합니다.
+*bCompat*<br/>
+[in] TRUE는 인쇄 및 인쇄에 파일을 인쇄 하려면 셸에서 직접 파일을 끌거나 프린터 개체를 사용자가 셸 명령에 대 한 등록 항목을 추가 합니다. 또한 DefaultIcon 키 추가. 기본적으로이 매개 변수는 FALSE는 이전 버전과 호환성에 대 한 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1973,14 +1973,14 @@ virtual HRESULT RegisterWithRestartManager(
 |||
 |-|-|
 |매개 변수|설명|
-|[in] *bRegisterRecoveryCallback*|TRUE 이면 응용 프로그램의이 인스턴스는 복구 콜백 함수입니다. FALSE 되지 않은 것을 나타냅니다. 프레임 워크는 응용 프로그램이 예기치 않게 종료 될 때 복구 콜백 함수를 호출 합니다. 자세한 내용은 [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback)합니다.|
-|[in] *strRestartIdentifier*|다시 시작 관리자의이 인스턴스를 식별 하는 고유 문자열입니다. 다시 시작 관리자 식별자는 응용 프로그램의 각 인스턴스에 대해 고유 합니다.|
-|[in] *pwzCommandLineArgs*|명령줄에서 추가 인수를 포함 하는 문자열입니다.|
-|[in] *dwRestartFlags*|다시 시작 관리자에 대 한 선택적 플래그입니다. 자세한 내용은 설명 섹션을 참조하세요.|
-|[in] *pRecoveryCallback*|복구 콜백 함수입니다. 이 함수는 입력으로 LPVOID 매개 변수를 사용 하 고 DWORD를 반환 해야 합니다. 기본 복구 콜백 함수는 `CWinApp::ApplicationRecoveryCallback`합니다.|
-|[in] *lpvParam*|복구 콜백 함수에 대 한 입력된 매개 변수입니다. 자세한 내용은 [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback)합니다.|
-|[in] *dwPingInterval*|다시 시작 관리자를 반환 하는 복구 콜백 함수에 대 한 대기 하는 시간의 길이입니다. 이 매개 변수는 밀리초에서입니다.|
-|[in] *dwCallbackFlags*|플래그 복구 콜백 함수에 전달 합니다. 나중에 사용하기 위해 예약되어 있습니다.|
+|*bRegisterRecoveryCallback*|[in] TRUE 이면 응용 프로그램의이 인스턴스는 복구 콜백 함수입니다. FALSE 되지 않은 것을 나타냅니다. 프레임 워크는 응용 프로그램이 예기치 않게 종료 될 때 복구 콜백 함수를 호출 합니다. 자세한 내용은 [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback)합니다.|
+|*strRestartIdentifier*|[in] 다시 시작 관리자의이 인스턴스를 식별 하는 고유 문자열입니다. 다시 시작 관리자 식별자는 응용 프로그램의 각 인스턴스에 대해 고유 합니다.|
+|*pwzCommandLineArgs*|[in] 명령줄에서 추가 인수를 포함 하는 문자열입니다.|
+|*dwRestartFlags*|[in] 다시 시작 관리자에 대 한 선택적 플래그입니다. 자세한 내용은 설명 섹션을 참조하세요.|
+|*pRecoveryCallback*|[in] 복구 콜백 함수입니다. 이 함수는 입력으로 LPVOID 매개 변수를 사용 하 고 DWORD를 반환 해야 합니다. 기본 복구 콜백 함수는 `CWinApp::ApplicationRecoveryCallback`합니다.|
+|*lpvParam*|[in] 복구 콜백 함수에 대 한 입력된 매개 변수입니다. 자세한 내용은 [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback)합니다.|
+|*dwPingInterval*|[in] 다시 시작 관리자를 반환 하는 복구 콜백 함수에 대 한 대기 하는 시간의 길이입니다. 이 매개 변수는 밀리초에서입니다.|
+|*dwCallbackFlags*|[in] 플래그 복구 콜백 함수에 전달 합니다. 나중에 사용하기 위해 예약되어 있습니다.|
 
 ### <a name="return-value"></a>반환 값
 

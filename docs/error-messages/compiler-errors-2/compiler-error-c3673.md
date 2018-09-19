@@ -16,64 +16,67 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5359115064abc96d2a2091dfaf029ca49575f733
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e0dbc811c948091b68f07ddf732c425b63be5cba
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33264995"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066941"
 ---
 # <a name="compiler-error-c3673"></a>컴파일러 오류 C3673
-'type': 클래스에는 복사 생성자가 없습니다  
-  
- Ref 형식 CLR 개체를 복사 하는 사용자 정의 생성자를 필요 합니다. 자세한 내용은 참조 [참조 형식에 대 한 c + + 스택 의미 체계](../../dotnet/cpp-stack-semantics-for-reference-types.md)합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3673 오류가 발생 합니다.  
-  
-```  
-// C3673.cpp  
-// compile with: /clr  
-public ref struct R {  
-public:  
-   R() {}  
-   // Uncomment the following line to resolve.  
-   // R(R% p) {}  
-};  
-  
-int main() {  
-   R r;  
-   R s = r;   // C3673  
-}  
-```  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3673 오류가 발생 합니다.  
-  
-```  
-// C3673_b.cpp  
-// compile with: /clr /c  
-// C3673 expected  
-using namespace System;  
-[AttributeUsage(AttributeTargets::Class)]  
-ref class MyAttr : public Attribute {  
-public:  
-   MyAttr() {}  
-   // Uncomment the following line to resolve.  
-   // MyAttr(int i) {}  
-   property int Priority;  
-   property int Version;  
-};  
-  
-[MyAttr]   
-ref class ClassA {};   // OK, no arguments  
-  
-[MyAttr(Priority = 1)]   
-ref class ClassB {};   // OK, named argument  
-  
-[MyAttr(123)]  
-ref class ClassC {};   // Positional argument  
-  
-[MyAttr(123, Version = 1)]  
-ref class ClassD {};   // Positional and named  
+
+'type': 클래스에 복사 생성자가 없습니다
+
+사용자 정의 생성자를 사용 하는 CLR 참조 형식의 개체를 복사할 필요 합니다. 자세한 내용은 [참조 형식에 대 한 c + + 스택 의미 체계](../../dotnet/cpp-stack-semantics-for-reference-types.md)합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플 C3673를 생성합니다.
+
+```
+// C3673.cpp
+// compile with: /clr
+public ref struct R {
+public:
+   R() {}
+   // Uncomment the following line to resolve.
+   // R(R% p) {}
+};
+
+int main() {
+   R r;
+   R s = r;   // C3673
+}
+```
+
+## <a name="example"></a>예제
+
+다음 샘플 C3673를 생성합니다.
+
+```
+// C3673_b.cpp
+// compile with: /clr /c
+// C3673 expected
+using namespace System;
+[AttributeUsage(AttributeTargets::Class)]
+ref class MyAttr : public Attribute {
+public:
+   MyAttr() {}
+   // Uncomment the following line to resolve.
+   // MyAttr(int i) {}
+   property int Priority;
+   property int Version;
+};
+
+[MyAttr]
+ref class ClassA {};   // OK, no arguments
+
+[MyAttr(Priority = 1)]
+ref class ClassB {};   // OK, named argument
+
+[MyAttr(123)]
+ref class ClassC {};   // Positional argument
+
+[MyAttr(123, Version = 1)]
+ref class ClassD {};   // Positional and named
 ```

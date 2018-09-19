@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bfb0c3c0544a9c58801f98567825e7e97e48b13c
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: a956212df2579298f1f947bf2388dec1532dff10
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "43687989"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721736"
 ---
 # <a name="subtractwithcarryengine-class"></a>subtract_with_carry_engine 클래스
 
@@ -46,17 +46,17 @@ class subtract_with_carry_engine;
 
 ### <a name="parameters"></a>매개 변수
 
-*UIntType*  
- 부호가 없는 정수 결과 형식입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*UIntType*<br/>
+부호가 없는 정수 결과 형식입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-*W*  
- **단어 크기**. 상태 시퀀스의 각 단어 크기입니다(비트). **사전 조건**: `0 < W ≤ numeric_limits<UIntType>::digits`
+*W*<br/>
+**단어 크기**. 상태 시퀀스의 각 단어 크기입니다(비트). **사전 조건**: `0 < W ≤ numeric_limits<UIntType>::digits`
 
-*S*  
- **짧은 지연**. 정수 값의 개수입니다. **사전 조건**: `0 < S < R`
+*S*<br/>
+**짧은 지연**. 정수 값의 개수입니다. **사전 조건**: `0 < S < R`
 
-*R*  
- **긴 지연**. 되풀이가 연속으로 발생했는지 확인합니다.
+*R*<br/>
+**긴 지연**. 되풀이가 연속으로 발생했는지 확인합니다.
 
 ## <a name="members"></a>멤버
 

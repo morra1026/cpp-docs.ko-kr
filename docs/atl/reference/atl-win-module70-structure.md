@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e4c5d7ad570d9745e10107f0df09faccd9eb42e3
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c000175c031868136aad44e59644d0fa122d213e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761555"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084512"
 ---
 # <a name="atlwinmodule70-structure"></a>_ATL_WIN_MODULE70 구조체
 
@@ -43,16 +43,16 @@ struct _ATL_WIN_MODULE70 {
 
 ## <a name="members"></a>멤버
 
-`cbSize`  
+`cbSize`<br/>
 버전 관리에 사용 되는 구조체의 크기입니다.
 
-`m_csWindowCreate`  
+`m_csWindowCreate`<br/>
 등록 코드 창에 대 한 액세스를 serialize 하는 데 사용 합니다. ATL.에서 내부적으로 사용
 
-`m_pCreateWndList`  
+`m_pCreateWndList`<br/>
 해당 개체에 windows를 바인딩하는 데 사용 합니다. ATL.에서 내부적으로 사용
 
-`m_rgWindowClassAtoms`  
+`m_rgWindowClassAtoms`<br/>
 종료 시 제대로 등록 되지 않을 수도 있습니다 있도록 창 클래스 등록을 추적 하는 데 사용 합니다. ATL.에서 내부적으로 사용
 
 ## <a name="remarks"></a>설명

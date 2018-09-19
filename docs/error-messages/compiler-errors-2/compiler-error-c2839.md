@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c7d9fed2b36ee395923d0e370fd04b10c4c474d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e9ddee01f0f97f6b20519403c6e5c11da1a9b4bd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33255589"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050998"
 ---
 # <a name="compiler-error-c2839"></a>컴파일러 오류 C2839
-오버로드된 'operator ->'의 'type' 반환 형식이 잘못되었습니다.  
-  
- `->` 연산자는 클래스, 구조체 또는 공용 구조체 또는 하나에 대 한 참조를 반환 해야 합니다.
+
+오버로드된 'operator ->'의 'type' 반환 형식이 잘못되었습니다.
+
+`->` 연산자는 클래스, 구조체 또는 공용 구조체 또는 하나에 대 한 참조를 반환 해야 합니다.

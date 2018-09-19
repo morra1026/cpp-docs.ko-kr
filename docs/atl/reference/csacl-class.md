@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f42d90fa2fb04c75f6c45db8d099d4a1a9a74c2a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d408ab5d0575984fb597cec28f01484d9b878ebf
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763105"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108393"
 ---
 # <a name="csacl-class"></a>CSacl 클래스
 
@@ -110,25 +110,25 @@ bool AddAuditAce(
 
 ### <a name="parameters"></a>매개 변수
 
-*rSid*  
+*rSid*<br/>
 합니다 [CSid](../../atl/reference/csid-class.md) 개체입니다.
 
-*AccessMask*  
+*AccessMask*<br/>
 감사할 액세스 권한 마스크를 지정 된 항목에 대 한 `CSid` 개체입니다.
 
-*bSuccess*  
+*bSuccess*<br/>
 허용 되는 액세스 시도 감사할 수 있는지 여부를 지정 합니다. 이 플래그를 사용 감사; true로 설정 그렇지 않으면 false로 설정 합니다.
 
-*bFailure*  
+*bFailure*<br/>
 거부 된 액세스 시도 감사할 수 있는지 여부를 지정 합니다. 이 플래그를 사용 감사; true로 설정 그렇지 않으면 false로 설정 합니다.
 
-*AceFlags*  
+*AceFlags*<br/>
 ACE 상속을 제어 하는 비트 플래그 집합입니다.
 
-*pObjectType*  
+*pObjectType*<br/>
 개체 형식입니다.
 
-*pInheritedObjectType*  
+*pInheritedObjectType*<br/>
 상속 된 개체 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -152,7 +152,7 @@ CSacl(const ACL& rhs) throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*rhs*  
+*rhs*<br/>
 기존 `ACL` (액세스 제어 목록) 구조입니다.
 
 ### <a name="remarks"></a>설명
@@ -193,7 +193,7 @@ CSacl& operator=(const ACL& rhs) throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*rhs*  
+*rhs*<br/>
 `ACL` 기존 개체에 할당할 (액세스 제어 목록).
 
 ### <a name="return-value"></a>반환 값
@@ -210,7 +210,7 @@ void RemoveAce(UINT nIndex) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nIndex*  
+*nIndex*<br/>
 제거할 ACE 항목 인덱스입니다.
 
 ### <a name="remarks"></a>설명
@@ -231,8 +231,8 @@ void RemoveAllAces() throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[CAcl 클래스](../../atl/reference/cacl-class.md)   
-[ACLs](/windows/desktop/SecAuthZ/access-control-lists)   
-[Ace](/windows/desktop/SecAuthZ/access-control-entries)   
-[클래스 개요](../../atl/atl-class-overview.md)   
+[CAcl 클래스](../../atl/reference/cacl-class.md)<br/>
+[Acl](/windows/desktop/SecAuthZ/access-control-lists)<br/>
+[Ace](/windows/desktop/SecAuthZ/access-control-entries)<br/>
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [보안 전역 함수](../../atl/reference/security-global-functions.md)

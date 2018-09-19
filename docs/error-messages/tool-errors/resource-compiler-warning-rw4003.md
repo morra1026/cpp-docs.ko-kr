@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d584811e056995e19cac0ec68cb58f25ccc921e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f800fc37d41102044c0b8b88921d8bad216d5984
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33322002"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46101126"
 ---
 # <a name="resource-compiler-warning-rw4003"></a>리소스 컴파일러 오류 RW4003
-VIRTKEY 없이 SHIFT 또는 CONTROL이 사용되었습니다.  
-  
- 액셀러레이터 키 테이블 리소스에서 SHIFT 또는 CONTROL은 VIRTKEY 필요합니다. SHIFT와 CONTROL은 VIRTKEY 형식 액셀러레이터에서 플래그 비트로 표시되므로 VIRTKEY와 독립적으로 존재할 수 없습니다.
+
+VIRTKEY 없이 SHIFT 또는 CONTROL이 사용되었습니다.
+
+액셀러레이터 키 테이블 리소스에서 SHIFT 또는 CONTROL은 VIRTKEY 필요합니다. SHIFT와 CONTROL은 VIRTKEY 형식 액셀러레이터에서 플래그 비트로 표시되므로 VIRTKEY와 독립적으로 존재할 수 없습니다.

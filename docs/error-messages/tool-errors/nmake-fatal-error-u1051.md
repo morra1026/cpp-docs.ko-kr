@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 570c7e5d8e6e8250a67e4f032ac26b04388cfd00
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d3d3a14b75a30aa22bcc9faafb97a218051bb080
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317416"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045018"
 ---
 # <a name="nmake-fatal-error-u1051"></a>NMAKE 심각한 오류 U1051
-메모리 부족  
-  
- NMAKE 메이크파일이 너무 크거나 복잡 하기 때문에 가상 메모리를 포함 하 여 메모리 부족 오류가 발생 했습니다.  
-  
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>아래의 해결 방법 따라 수정합니다.  
-  
-1.  디스크 공간을 확보 합니다.  
-  
-2.  Windows NT 페이징 파일이 나 Windows 스왑 파일의 크기를 늘립니다.  
-  
-3.  메이크파일의 일부만 사용 중인 경우에 메이크파일의를 별도 파일로 사용 나누거나 **! IF** 전처리 지시문 NMAKE 처리 해야 하는 양을 제한할 수 있습니다. **! IF** 지시문에는 **! IF**, `!IFDEF`, **! IFNDEF**, **! ELSE IF**, **! 다른** `IFDEF`, 및 **! 다른** `IFNDEF`합니다.
+
+메모리가 부족 합니다.
+
+NMAKE는 메이크파일 너무 크거나 복잡 한 되었으므로 가상 메모리를 포함 하 여 메모리가 부족 합니다.
+
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>아래의 해결 방법 따라 수정합니다.
+
+1. 디스크 공간을 확보 합니다.
+
+1. Windows NT 페이징 파일이 나 Windows 스왑 파일의 크기를 늘립니다.
+
+1. 메이크파일의 일부만 사용 중인 경우 메이크파일 별도 파일로 분할 하거나 사용 하 여 **! IF** 전처리 지시문 NMAKE 처리 해야 하는 크기를 제한 합니다. **! IF** 지시문에는 **! IF**하십시오 `!IFDEF`, **! IFNDEF**, **! ELSE IF**, **! ELSE** `IFDEF`, 및 **! ELSE** `IFNDEF`합니다.

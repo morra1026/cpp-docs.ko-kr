@@ -17,21 +17,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f3f447c2cc45e0ccc96a1480b9d521f1bde09c9e
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 99d647e2e5a98c7e4c4433baaface66d1f987b32
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677211"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073676"
 ---
 # <a name="ole-db-programming"></a>OLE DB 프로그래밍
+
 Microsoft OLE DB는 레거시 기술입니다. 새 응용 프로그램 연결 된 SQL 서버에 필요한 데이터 액세스 API입니다. 새 응용 프로그램을 모두 ODBC 사용 해야 합니다. SQL Server에 대 한 현재 OLE DB 공급자가 SQLNCLI11입니다. DLL입니다. 공급자는 SQL Server 2016에서 여전히 배송 됩니다. 이 문서는 이미 OLE DB를 사용 하는 기존 응용 프로그램을 유지 하는 개발자를 위한 것입니다.
   
- OLE DB 템플릿은 일반적으로 사용되는 많은 OLE DB 인터페이스를 구현하는 클래스를 제공하여 고성능 OLE DB 데이터베이스 기술을 보다 쉽게 구현하도록 하는 C++ 템플릿입니다. 이 템플릿 라이브러리는 소비자 템플릿과 공급자 템플릿으로 구분됩니다.  
+OLE DB 템플릿은 일반적으로 사용되는 많은 OLE DB 인터페이스를 구현하는 클래스를 제공하여 고성능 OLE DB 데이터베이스 기술을 보다 쉽게 구현하도록 하는 C++ 템플릿입니다. 이 템플릿 라이브러리는 소비자 템플릿과 공급자 템플릿으로 구분됩니다.  
   
- 또한 Visual C++에는 OLE DB 시작 응용 프로그램을 만드는 마법사도 제공됩니다.  
+또한 Visual C++에는 OLE DB 시작 응용 프로그램을 만드는 마법사도 제공됩니다.  
   
- 뿐만 아니라 특성을 사용하여 OLE DB 소비자 템플릿을 구현할 수 있습니다.  
+뿐만 아니라 특성을 사용하여 OLE DB 소비자 템플릿을 구현할 수 있습니다.  
   
 |자세한 정보를 확인할 항목|참조|  
 |-------------------------|---------|  
@@ -45,4 +46,5 @@ Microsoft OLE DB는 레거시 기술입니다. 새 응용 프로그램 연결 �
 |ODBC 개념 항목|[ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)|  
 
 ## <a name="see-also"></a>참고 항목  
- [데이터 액세스](../data-access-in-cpp.md)
+
+[데이터 액세스](../data-access-in-cpp.md)

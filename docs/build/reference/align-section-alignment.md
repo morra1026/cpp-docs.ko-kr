@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 543ea30b06f62939f378167d8598c73f66061f46
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cb92d4b16be7903004831ffb25e2891f498a8989
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32370308"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718252"
 ---
 # <a name="align-section-alignment"></a>/ALIGN(섹션 맞춤)
 
@@ -36,26 +36,26 @@ ms.locfileid: "32370308"
 
 ### <a name="arguments"></a>인수
 
-*번호*  
+*수*<br/>
 바이트 맞춤 값입니다.
 
 ## <a name="remarks"></a>설명
 
-**/align** 옵션은 프로그램의 선형 주소 공간 내에서 각 섹션의 맞춤을 지정 합니다. *번호* 인수는 바이트 단위 이며 2의 거듭제곱 이어야 합니다. 기본값은 4k (4096). 링커에서 맞춤 잘못 된 이미지를 생성 합니다. 경고를 표시 합니다.
+합니다 **/align** 옵션 프로그램의 선형 주소 공간 내에서 각 섹션의 맞춤을 지정 합니다. 합니다 *번호* 인수 (바이트)에서 이며 2의 거듭제곱 이어야 합니다. 기본값은 4k 4096입니다. 맞춤을 잘못 된 이미지를 생성 하는 경우 링커는 경고가 발생 합니다.
 
-장치 드라이버 등의 응용 프로그램을 작성 하는 경우가 맞춤을 수정할 필요는 없습니다.
+장치 드라이버 등의 응용 프로그램을 작성 하는 경우가 아니면 맞춤을 수정 하지 않아도 됩니다.
 
-맞춤 매개 변수를 사용 하는 특정 섹션의 맞춤을 수정할 수는 [/section](../../build/reference/section-specify-section-attributes.md) 옵션입니다.
+맞춤 매개 변수를 사용 하 여 특정 섹션의 맞춤을 수정 하는 것이 가능 합니다 [/section](../../build/reference/section-specify-section-attributes.md) 옵션.
 
-지정 된 맞춤 값의 가장 큰 섹션 맞춤 보다 작을 수 없습니다.
+지정 된 맞춤 값은 최대 섹션 맞춤 보다 작을 수 없습니다.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **링커** > **명령줄** 속성 페이지.
 
-1. 에 옵션을 입력에서 **추가 옵션** 상자입니다. 선택 **확인** 또는 **적용** 에 변경 내용을 적용 합니다.
+1. 옵션을 입력 합니다 **추가 옵션** 상자입니다. 선택 **확인** 하거나 **적용** 에 변경 내용을 적용 합니다.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면
 
@@ -63,5 +63,5 @@ ms.locfileid: "32370308"
 
 ## <a name="see-also"></a>참고자료
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)  
-[링커 옵션](../../build/reference/linker-options.md)  
+[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
+[링커 옵션](../../build/reference/linker-options.md)

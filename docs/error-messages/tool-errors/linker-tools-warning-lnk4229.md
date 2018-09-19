@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c82599d414ddfcd3bd75097a32d8bfce31752cc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0837942c7701f8349983f4651005123b5ba89232
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302752"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118884"
 ---
 # <a name="linker-tools-warning-lnk4229"></a>링커 도구 경고 LNK4229
-잘못 된 지시문 /directive 반환 합니다. 무시  
-  
- 지시문을 통해 전달 되는 [주석](../../preprocessor/comment-c-cpp.md) pragma 올바르지 않습니다. 링커 무시 `/directive`합니다.
+
+그렇지 않으면 잘못 된 지시문 /directive 무시
+
+지시문을 통해 전달 된 [주석](../../preprocessor/comment-c-cpp.md) pragma 올바르지 않습니다. 링커 무시 `/directive`합니다.

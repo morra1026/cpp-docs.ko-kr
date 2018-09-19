@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3ea5c28fe54e5d117ef40430912ef3f8ea0efd8
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 62b49c20248ca4825bcf2c95b6c7adc956a39025
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44104292"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714528"
 ---
 # <a name="exports"></a>EXPORTS
 
@@ -30,7 +30,7 @@ ms.locfileid: "44104292"
 ```DEF
 EXPORTS
    definition
-```  
+```
 
 ## <a name="remarks"></a>설명
 
@@ -76,7 +76,7 @@ C + + 함수에 대 한 이름 데코레이션을 사용 하는 Visual c + + 컴
 ```DEF
 EXPORTS
    exported_global DATA
-```  
+```
 
 다음은 정의를 내보내는 4가지 방법으로 권장 순서대로 나열되었습니다.
 
@@ -95,7 +95,7 @@ EXPORTS
 
 #Pragma 지시문을 데코 레이트 되지 않은 함수 이름을 내보내고에 빌드 구성에 따라 다른 내보내기 (예를 들어 32 비트 또는 64 비트 빌드) 해야 할 경우에 유용 합니다.
 
-4가지 메서드 모두 동일한 프로그램에서 사용할 수 있습니다. LINK가 내보내기를 포함하는 프로그램을 빌드하는 경우 빌드에서 .EXP 파일을 사용하지 않는다면 가져오기 라이브러리도 만들게 됩니다. 
+4가지 메서드 모두 동일한 프로그램에서 사용할 수 있습니다. LINK가 내보내기를 포함하는 프로그램을 빌드하는 경우 빌드에서 .EXP 파일을 사용하지 않는다면 가져오기 라이브러리도 만들게 됩니다.
 
 다음은 EXPORTS 섹션의 예입니다.
 
@@ -106,7 +106,7 @@ EXPORTS
    DllGetClassObject    @4 NONAME   PRIVATE
    DllRegisterServer    @7
    DllUnregisterServer
-```  
+```
 
 .DEF 파일을 사용하여 DLL에서 변수를 내보낸 경우 변수에 대해 `__declspec(dllexport)`을 지정할 필요가 없습니다. 그러나 DLL을 사용하는 모든 파일에서는 데이터 선언 시 `__declspec(dllimport)`을 계속해서 사용해야 합니다.
 

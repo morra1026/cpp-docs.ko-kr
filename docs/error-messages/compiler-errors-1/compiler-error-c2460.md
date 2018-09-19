@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4220be654f93ecd79d196efc14657ca7346411f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cb2d85ffbc7aa799f0688fbb10021a04ef9455ad
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197782"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022622"
 ---
 # <a name="compiler-error-c2460"></a>컴파일러 오류 C2460
-'identifier1': 사용 하 여 'identifier2'를 정의 중인  
-  
- 클래스 또는 구조체 (`identifier2`) 자체의 멤버로 선언 (`identifier1`). 클래스 및 구조체의 재귀 정의 허용 되지 않습니다.  
-  
- 다음 샘플에서는 C2460 오류가 생성 됩니다.  
-  
-```  
-// C2460.cpp  
-class C {  
-   C aC;    // C2460  
-};  
-```  
-  
- 대신 클래스에 대 한 포인터 참조를 사용 합니다.  
-  
-```  
-// C2460.cpp  
-class C {  
-   C * aC;    // OK  
-};  
+
+'identifier1': 사용 하 여 'identifier2'에 정의 되는
+
+클래스 또는 구조체 (`identifier2`)을 멤버 자체로로 선언 됩니다 (`identifier1`). 클래스 및 구조체의 재귀 정의 허용 되지 않습니다.
+
+다음 샘플에서는 C2460 오류가 생성 됩니다.
+
+```
+// C2460.cpp
+class C {
+   C aC;    // C2460
+};
+```
+
+대신, 클래스에 대 한 포인터 참조를 사용 합니다.
+
+```
+// C2460.cpp
+class C {
+   C * aC;    // OK
+};
 ```

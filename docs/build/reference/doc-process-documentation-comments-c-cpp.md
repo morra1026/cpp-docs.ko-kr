@@ -21,14 +21,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee09b3fe61c86015d8dc7464ef9925419fc745d9
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 488ee353cf245303b5ea73be139a262aea5be49d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100342"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706578"
 ---
 # <a name="doc-process-documentation-comments-cc"></a>/doc(문서 주석 처리)(C/C++)
+
 컴파일러에서 문서 주석을 처리 소스 코드 파일에 문서 주석이 포함 된 각 소스 코드 파일에 대 한.xdc 파일을 만듭니다.
 
 ## <a name="syntax"></a>구문
@@ -50,7 +51,7 @@ IntelliSense를 사용 하 여 생성 된.xml 파일을 사용 하려면 지원 
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1.  프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
 
 1. 선택 된 **구성 속성** > **C/c + +** > **출력 파일** 속성 페이지.
 
@@ -62,5 +63,5 @@ IntelliSense를 사용 하 여 생성 된.xml 파일을 사용 하려면 지원 
 
 ## <a name="see-also"></a>참고 항목
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)   
+[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

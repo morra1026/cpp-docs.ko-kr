@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::make_pair [C++]
 - std::move [C++]
 - std::swap [C++]
-ms.openlocfilehash: 9c7f053466e8c6297b7ccd9a2a40c5980e23ccba
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 12e8b2c4dfb0d7d36974fb2e5979d82b69c89316
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960309"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718333"
 ---
 # <a name="ltutilitygt-functions"></a>&lt;utility&gt; 함수
 
@@ -41,17 +41,17 @@ T exchange(T& val, Other&& new_val)
 
 ### <a name="parameters"></a>매개 변수
 
-*val*  
- new_val의 값을 받는 개체입니다.
+*val*<br/>
+new_val의 값을 받는 개체입니다.
 
-*new_val*  
- 값이 val로 복사되거나 이동되는 개체입니다.
+*new_val*<br/>
+값이 val로 복사되거나 이동되는 개체입니다.
 
 ### <a name="remarks"></a>설명
 
 복합 형식에서 `exchange`는 이동 생성자를 사용할 수 있는 경우 이전 값의 복사를 방지하고, 임시 개체이거나 이동된 경우 새 값의 복사를 방지하며, 사용 가능한 변환 대입 연산자를 통해 모든 형식을 새 값으로 받아들입니다. exchange 함수는 왼쪽 인수가 오른쪽 인수로 이동되거나 복사되지 않는다는 점에서 [std::swap](../standard-library/algorithm-functions.md#swap)과 다릅니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서는 `exchange`을 사용하는 방법을 보여 줍니다. 실제로 `exchange`는 복사하는 데 비용이 많이 드는 큰 개체에서 가장 유용합니다.
 
@@ -163,17 +163,17 @@ constexpr T2&& get(pair<T1, T2>&& Pr) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*Index*  
- 지정된 요소의 0으로 시작하는 인덱스입니다.
+*Index*<br/>
+지정된 요소의 0으로 시작하는 인덱스입니다.
 
-*T1*  
- 첫 번째 pair 요소의 형식입니다.
+*T1*<br/>
+첫 번째 pair 요소의 형식입니다.
 
-*T2*  
- 두 번째 pair 요소의 형식입니다.
+*T2*<br/>
+두 번째 pair 요소의 형식입니다.
 
-*pr*  
- 선택할 쌍입니다.
+*pr*<br/>
+선택할 쌍입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -183,7 +183,7 @@ constexpr T2&& get(pair<T1, T2>&& Pr) noexcept;
 
 인덱스 매개 변수가 없는 오버로드에서는 반환할 요소가 형식 인수로 추론됩니다. 호출 `get<T>(Tuple)` 경우 컴파일러 오류가 생성 됩니다 *pr* 이상 있거나 없는 형식은 T 형식 요소가 두 개
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 #include <utility>
@@ -234,11 +234,11 @@ pair<T, U> make_pair(T&& Val1, U&& Val2);
 
 ### <a name="parameters"></a>매개 변수
 
-*Val1*  
- `pair`의 첫 번째 요소를 초기화하는 값
+*Val1*<br/>
+`pair`의 첫 번째 요소를 초기화하는 값
 
-*Val2*  
- `pair`의 두 번째 요소를 초기화하는 값
+*Val2*<br/>
+`pair`의 두 번째 요소를 초기화하는 값
 
 ### <a name="return-value"></a>반환 값
 
@@ -260,7 +260,7 @@ pair<T, U> make_pair(T&& Val1, U&& Val2);
 
 `make_pair` 도우미 함수도 입력 매개 변수로 한 쌍이 필요한 함수에 두 값을 전달할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 도우미 함수 `make_pair`를 사용하여 쌍을 선언하고 초기화하는 방법을 알아보려면 [pair 구조체](../standard-library/pair-structure.md)를 참조하세요.
 

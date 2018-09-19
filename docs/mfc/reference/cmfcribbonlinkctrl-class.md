@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53e9396148a89a4778d7e12066a814f2065bbac6
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: c326a13e55ed14f93b35ed486f7ee4596c643758
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42541113"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712519"
 ---
 # <a name="cmfcribbonlinkctrl-class"></a>CMFCRibbonLinkCtrl 클래스
 리본에 배치되는 하이퍼링크를 구현합니다. 하이퍼링크를 클릭하면 웹 페이지가 열립니다.  
@@ -106,16 +106,16 @@ CMFCRibbonLinkCtrl(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 링크 컨트롤을 클릭할 때 실행 되는 명령의 명령 ID를 지정 합니다.  
+*nID*<br/>
+[in] 링크 컨트롤을 클릭할 때 실행 되는 명령의 명령 ID를 지정 합니다.  
   
- [in] *lpszText*  
- 링크 컨트롤에 표시할 레이블을 지정 합니다.  
+*lpszText*<br/>
+[in] 링크 컨트롤에 표시할 레이블을 지정 합니다.  
   
- [in] *lpszLink*  
- 링크 컨트롤을 사용 하 여 관련 된 하이퍼링크를 지정 합니다.  
+*lpszLink*<br/>
+[in] 링크 컨트롤을 사용 하 여 관련 된 하이퍼링크를 지정 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 예제에서는의 생성자를 사용 하는 방법에 설명 합니다 `CMFCRibbonLinkCtrl` 클래스입니다. 이 코드 조각은의 일부인 합니다 [리본 가젯 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_RibbonGadgets#1](../../mfc/reference/codesnippet/cpp/cmfcribbonlinkctrl-class_1.cpp)]  
@@ -263,8 +263,8 @@ void SetLink(LPCTSTR lpszLink);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszLink*  
- 하이퍼링크 텍스트를 지정합니다.  
+*lpszLink*<br/>
+[in] 하이퍼링크 텍스트를 지정합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [계층 구조 차트](../../mfc/hierarchy-chart.md)   

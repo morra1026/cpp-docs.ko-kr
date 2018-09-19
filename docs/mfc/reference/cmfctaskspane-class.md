@@ -204,12 +204,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0477bb2dfa60b8a3803c6aff2502de7fd0ad15c
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 453bbb5d99d87a03a8627d231e45316cb5456794
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686459"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702055"
 ---
 # <a name="cmfctaskspane-class"></a>CMFCTasksPane 클래스
 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
@@ -399,20 +399,20 @@ int AddGroup(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nPageIdx*  
- 0부터 시작 페이지 인덱스를 지정합니다.  
+*nPageIdx*<br/>
+[in] 0부터 시작 페이지 인덱스를 지정합니다.  
   
- [in] *lpszGroupName*  
- 그룹 이름을 지정합니다.  
+*lpszGroupName*<br/>
+[in] 그룹 이름을 지정합니다.  
   
- [in] *bBottomLocation*  
- 작업 창 컨트롤의 맨 아래에서 그룹을 만들려면 TRUE 그렇지 않으면 FALSE입니다.  
+*bBottomLocation*<br/>
+[in] 작업 창 컨트롤의 맨 아래에서 그룹을 만들려면 TRUE 그렇지 않으면 FALSE입니다.  
   
- [in] *bSpecial*  
- 이 그룹으로 표시 하려면 TRUE를 *특수* 그룹, 그렇지 않으면 FALSE입니다. 특수 한 그룹에 대 한 자세한 내용은의 설명 섹션을 참조 하세요. `CMFCTasksPane`합니다.  
+*bSpecial*<br/>
+[in] 이 그룹으로 표시 하려면 TRUE를 *특수* 그룹, 그렇지 않으면 FALSE입니다. 특수 한 그룹에 대 한 자세한 내용은의 설명 섹션을 참조 하세요. `CMFCTasksPane`합니다.  
   
- [in] *hIcon*  
- 그룹 캡션의 표시할 아이콘을 지정 합니다.  
+*hIcon*<br/>
+[in] 그룹 캡션의 표시할 아이콘을 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  클래스를 유지 관리 하는 그룹의 내부 목록에 그룹의 0부터 시작 하는 인덱스입니다.  
@@ -434,17 +434,17 @@ int AddLabel(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *해제*  
- 레이블을 추가 됩니다 여기서 그룹의 인덱스를 지정 합니다.  
+*해제*<br/>
+[in] 레이블을 추가 됩니다 여기서 그룹의 인덱스를 지정 합니다.  
   
- [in] *lpszLabelName*  
- 레이블의 이름을 지정합니다.  
+*lpszLabelName*<br/>
+[in] 레이블의 이름을 지정합니다.  
   
- [in] *nTaskIcon*  
- 레이블 옆에 표시할 아이콘을 지정 합니다. 프레임 워크 아이콘 이미지 목록을 저장합니다. 이 매개 변수는 해당 목록에 대 한 인덱스입니다.  
+*nTaskIcon*<br/>
+[in] 레이블 옆에 표시할 아이콘을 지정 합니다. 프레임 워크 아이콘 이미지 목록을 저장합니다. 이 매개 변수는 해당 목록에 대 한 인덱스입니다.  
   
- [in] *bIsBold*  
- 굵게 표시 된 텍스트에 레이블을 표시 하려면 TRUE 그렇지 않으면 FALSE입니다.  
+*bIsBold*<br/>
+[in] 굵게 표시 된 텍스트에 레이블을 표시 하려면 TRUE 그렇지 않으면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  레이블을 추가 된 그룹의 인덱스 또는 그룹을 지정 하면-1 *해제* 존재 하지 않습니다.  
@@ -462,11 +462,11 @@ int AddMRUFilesList(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *해제*  
- 그룹의 인덱스를 지정 합니다. 이 메서드는 최근에 사용한 파일 목록에서이 매개 변수에서 지정한 그룹에 추가 합니다.  
+*해제*<br/>
+[in] 그룹의 인덱스를 지정 합니다. 이 메서드는 최근에 사용한 파일 목록에서이 매개 변수에서 지정한 그룹에 추가 합니다.  
   
- [in] *nMaxFiles*  
- 최근에 사용한 파일 목록에 표시할 파일의 수를 지정 합니다.  
+*nMaxFiles*<br/>
+[in] 최근에 사용한 파일 목록에 표시할 파일의 수를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  최근에 사용한 파일 목록에서 추가 된 그룹의 인덱스 또는 그룹을 지정 하면-1 *해제* 존재 하지 않습니다.  
@@ -479,8 +479,8 @@ int AddPage(LPCTSTR lpszPageLabel);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszPageLabel*  
- 페이지에 대 한 레이블을 지정합니다.  
+*lpszPageLabel*<br/>
+[in] 페이지에 대 한 레이블을 지정합니다.  
   
 ### <a name="return-value"></a>반환 값  
  새 페이지의 0부터 시작 하는 인덱스입니다.  
@@ -512,20 +512,20 @@ int AddTask(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *해제*  
- 작업 항목이 있는 그룹 인덱스를 지정 합니다.  
+*해제*<br/>
+[in] 작업 항목이 있는 그룹 인덱스를 지정 합니다.  
   
- [in] *lpszTaskName*  
- 태스크의 이름을 지정합니다.  
+*lpszTaskName*<br/>
+[in] 태스크의 이름을 지정합니다.  
   
- [in] *nTaskIcon*  
- 태스크 옆에 표시할 아이콘을 지정 합니다. 프레임 워크 아이콘 이미지 목록을 저장합니다. 이 매개 변수는 해당 목록에 대 한 인덱스입니다.  
+*nTaskIcon*<br/>
+[in] 태스크 옆에 표시할 아이콘을 지정 합니다. 프레임 워크 아이콘 이미지 목록을 저장합니다. 이 매개 변수는 해당 목록에 대 한 인덱스입니다.  
   
- [in] *uiCommandID*  
- 작업을 마우스 오른쪽 단추로 클릭할 때 실행할 명령의 명령 ID를 지정 합니다. 작업 하는 경우 레이블을으로 처리 됩니다 *uiCommandID* 은 0입니다.  
+*uiCommandID*<br/>
+[in] 작업을 마우스 오른쪽 단추로 클릭할 때 실행할 명령의 명령 ID를 지정 합니다. 작업 하는 경우 레이블을으로 처리 됩니다 *uiCommandID* 은 0입니다.  
   
- [in] *dwUserData*  
- 태스크와 연결할 사용자 정의 데이터를 지정 합니다.  
+*dwUserData*<br/>
+[in] 태스크와 연결할 사용자 정의 데이터를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  태스크 추가 된 그룹의 인덱스 또는 그룹을 지정 하면-1 *해제* 존재 하지 않습니다.  
@@ -543,20 +543,20 @@ int AddWindow(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *해제*  
- 창 추가 됩니다 여기서 그룹 인덱스를 지정 합니다.  
+*해제*<br/>
+[in] 창 추가 됩니다 여기서 그룹 인덱스를 지정 합니다.  
   
- [in] *hwndTask*  
- 추가할 창의 핸들을 지정 합니다.  
+*hwndTask*<br/>
+[in] 추가할 창의 핸들을 지정 합니다.  
   
- [in] *nWndHeight*  
- 창의 높이 지정합니다.  
+*nWndHeight*<br/>
+[in] 창의 높이 지정합니다.  
   
- [in] *bAutoDestroyWindow*  
- 작업 제거 되거나 창을 제거. 그렇지 않으면 FALSE입니다.  
+*bAutoDestroyWindow*<br/>
+[in] 작업 제거 되거나 창을 제거. 그렇지 않으면 FALSE입니다.  
   
- [in] *dwUserData*  
- 작업과 연결 된 사용자 정의 데이터를 지정 합니다.  
+*dwUserData*<br/>
+[in] 작업과 연결 된 사용자 정의 데이터를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  창 추가 된 그룹의 인덱스 또는 그룹을 지정 하면-1 *해제* 존재 하지 않습니다.  
@@ -584,8 +584,8 @@ void CollapseAllGroups(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bCollapse*  
- [in] *nPageIdx*  
+*bCollapse*<br/>
+[in] [in] *nPageIdx*  
   
 ### <a name="remarks"></a>설명  
   
@@ -604,14 +604,14 @@ BOOL CollapseGroup(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pGroup*  
- 축소 하는 그룹을 지정 합니다.  
+*pGroup*<br/>
+[in] 축소 하는 그룹을 지정 합니다.  
   
- [in] *bCollapse*  
- 그룹을 축소 FALSE를 사용 하 여 그룹을 확장 합니다.  
+*bCollapse*<br/>
+[in] 그룹을 축소 FALSE를 사용 하 여 그룹을 확장 합니다.  
   
- [in] *해제*  
- 내부 목록의 그룹을 축소 하는 그룹의 인덱스를 지정 합니다.  
+*해제*<br/>
+[in] 내부 목록의 그룹을 축소 하는 그룹의 인덱스를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  그룹을 축소 하거나 성공적으로 확장 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -656,8 +656,8 @@ void EnableAnimation(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 작업 그룹을 확장 하거나 축소; 때 발생 하는 애니메이션을 사용 하도록 설정. 그렇지 않으면 FALSE입니다.  
+*bEnable*<br/>
+[in] 작업 그룹을 확장 하거나 축소; 때 발생 하는 애니메이션을 사용 하도록 설정. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  작업 그룹을 확장 하거나 축소 하는 경우 발생 하는 애니메이션은 기본적으로 사용 됩니다.  
@@ -670,8 +670,8 @@ void EnableGroupCollapse(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 사용자가 작업 그룹을 축소할 수 있으면 TRUE 그렇지 않으면 FALSE입니다.  
+*bEnable*<br/>
+[in] 사용자가 작업 그룹을 축소할 수 있으면 TRUE 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  축소 된 작업 그룹을 표시만 그룹 캡션에; 작업 목록에 숨겨져 있습니다.  
@@ -684,8 +684,8 @@ void EnableHistoryMenuButtons(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 드롭다운 메뉴를 사용 하도록 설정 하려면 true로 설정 합니다 **다음** 및 **이전** 탐색 단추, 그렇지 않으면 FALSE입니다.  
+*bEnable*<br/>
+[in] 드롭다운 메뉴를 사용 하도록 설정 하려면 true로 설정 합니다 **다음** 및 **이전** 탐색 단추, 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로 드롭다운 메뉴에는 **다음** 하 고 **이전** 단추가 비활성화 됩니다.  
@@ -706,17 +706,17 @@ void EnableNavigationToolbar(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 탐색 모음을 사용 하도록 설정 그렇지 않으면 FALSE입니다.  
+*bEnable*<br/>
+[in] 탐색 모음을 사용 하도록 설정 그렇지 않으면 FALSE입니다.  
   
- [in] *uiToolbarBmpRes*  
- 도구 모음에서 표시할 이미지를 포함 하는 비트맵의 리소스 ID를 지정 합니다.  
+*uiToolbarBmpRes*<br/>
+[in] 도구 모음에서 표시할 이미지를 포함 하는 비트맵의 리소스 ID를 지정 합니다.  
   
- [in] *sizeToolbarImage*  
- 도구 모음 이미지의 크기를 지정합니다.  
+*sizeToolbarImage*<br/>
+[in] 도구 모음 이미지의 크기를 지정합니다.  
   
- [in] *sizeToolbarButton*  
- 도구 모음 단추의 크기를 지정합니다.  
+*sizeToolbarButton*<br/>
+[in] 도구 모음 단추의 크기를 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  탐색 모음은 작업창의 맨 위에 있는 프레임 워크를 표시 하는 도구 모음입니다. 탐색 도구 모음을 포함 합니다 **다시**, **전달**, 및 **홈** 탐색 단추 및 메뉴 단추를 사용할 수 있는 페이지의 목록을 포함 하는.  
@@ -743,8 +743,8 @@ void EnableScrollButtons(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 스크롤 막대를; 대신 작업 창에서 스크롤 단추를 표시. 그렇지 않으면 FALSE입니다.  
+*bEnable*<br/>
+[in] 스크롤 막대를; 대신 작업 창에서 스크롤 단추를 표시. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로 프레임 워크 작업 창에서 스크롤 단추를 표시합니다.  
@@ -757,8 +757,8 @@ void EnableWrapLabels(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 줄 바꿈; 작업 창에 표시 되는 레이블 텍스트 true로 설정 하면 그렇지 않으면 FALSE입니다.  
+*bEnable*<br/>
+[in] 줄 바꿈; 작업 창에 표시 되는 레이블 텍스트 true로 설정 하면 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로 프레임 워크의 레이블 텍스트를 래핑하지 않으며 합니다. 자동 줄 바꿈을 사용 하는 경우 레이블 텍스트 여러 줄에 나타날 수 있습니다. 레이블을 표식와 같은 주요 줄을 포함할 수 있습니다 `\n` 밑줄 표식 및 `&`합니다.  
@@ -771,8 +771,8 @@ void EnableWrapTasks(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 작업 창의 작업을 래핑할 TRUE 그렇지 않으면 FALSE입니다.  
+*bEnable*<br/>
+[in] 작업 창의 작업을 래핑할 TRUE 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로 작업에 대 한 자동 줄 바꿈을 비활성화 됩니다.  
@@ -840,11 +840,11 @@ BOOL GetGroupLocation(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pGroup*  
- 위치가 검색 되는 작업 그룹을 지정 합니다.  
+*pGroup*<br/>
+[in] 위치가 검색 되는 작업 그룹을 지정 합니다.  
   
- [out] *해제*  
- 작업 그룹의 인덱스를 포함합니다.  
+*해제*<br/>
+[out] 작업 그룹의 인덱스를 포함합니다.  
   
 ### <a name="return-value"></a>반환 값  
  작업 그룹을 찾은 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -894,11 +894,11 @@ BOOL GetPageByGroup(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *해제*  
- 작업 그룹의 인덱스를 지정합니다.  
+*해제*<br/>
+[in] 작업 그룹의 인덱스를 지정합니다.  
   
- [out] *n 페이지*  
- 지정된 된 그룹에 대 한 페이지 인덱스를 포함합니다. 작업 그룹의 기본 페이지가 있으면 반환 되는 값은 0입니다.  
+*. n 페이지*<br/>
+[out] 지정된 된 그룹에 대 한 페이지 인덱스를 포함합니다. 작업 그룹의 기본 페이지가 있으면 반환 되는 값은 0입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 그룹 *해제* 있으면, 그렇지 않으면 FALSE입니다.  
@@ -949,11 +949,11 @@ CMFCTasksPaneTask* GetTask(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *해제*  
- 태스크가 포함 된 그룹의 인덱스를 지정 합니다.  
+*해제*<br/>
+[in] 태스크가 포함 된 그룹의 인덱스를 지정 합니다.  
   
- [in] *nTask*  
- 지정 된 목록에서 작업의 0부터 시작 인덱스를 지정 *해제*합니다.  
+*nTask*<br/>
+[in] 지정 된 목록에서 작업의 0부터 시작 인덱스를 지정 *해제*합니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정된 된 인덱스에는 작업.  
@@ -966,8 +966,8 @@ int GetTaskCount(int nGroup) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *해제*  
- 작업 그룹의 인덱스를 지정 합니다.  
+*해제*<br/>
+[in] 작업 그룹의 인덱스를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정된 된 그룹 또는 0 이면 작업 수가 *해제* 올바르지 않습니다.  
@@ -980,8 +980,8 @@ CMFCTasksPaneTaskGroup* GetTaskGroup(int nGroup) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *해제*  
- 검색할 그룹의 인덱스를 지정 합니다.  
+*해제*<br/>
+[in] 검색할 그룹의 인덱스를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정된 된 인덱스에서 작업 그룹입니다.  
@@ -1007,20 +1007,20 @@ BOOL GetTaskLocation(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCommandID*  
- 검색할 작업의 명령 ID를 지정 합니다.  
+*uiCommandID*<br/>
+[in] 검색할 작업의 명령 ID를 지정 합니다.  
   
- [out] *해제*  
- 작업 그룹 인덱스를 포함합니다.  
+*해제*<br/>
+[out] 작업 그룹 인덱스를 포함합니다.  
   
- [out] *nTask*  
- 작업 그룹에서 작업의 인덱스를 포함합니다.  
+*nTask*<br/>
+[out] 작업 그룹에서 작업의 인덱스를 포함합니다.  
   
- [in] *hwndTask*  
- 태스크와 관련 된 창을 지정 합니다.  
+*hwndTask*<br/>
+[in] 태스크와 관련 된 창을 지정 합니다.  
   
- [in] *pTask*  
- 검색할 작업을 지정 합니다.  
+*pTask*<br/>
+[in] 검색할 작업을 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 태스크 위치를 찾을 수 있습니다. 지정 된 작업이 없는 경우 FALSE입니다.  
@@ -1199,8 +1199,8 @@ virtual BOOL LoadState(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszProfileName*  
- [in] *nIndex*  
+*lpszProfileName*<br/>
+[in] [in] *nIndex*  
  [in] *uiID*  
   
 ### <a name="return-value"></a>반환 값  
@@ -1238,17 +1238,17 @@ virtual void OnClickTask(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nGroupNumber*  
- 클릭 한 태스크가 포함 된 그룹의 인덱스를 지정 합니다.  
+*nGroupNumber*<br/>
+[in] 클릭 한 태스크가 포함 된 그룹의 인덱스를 지정 합니다.  
   
- [in] *nTaskNumber*  
- 클릭 한 작업의 0부터 시작 인덱스를 지정합니다.  
+*nTaskNumber*<br/>
+[in] 클릭 한 작업의 0부터 시작 인덱스를 지정합니다.  
   
- [in] *uiCommandID*  
- 작업과 연결 된 명령 ID를 지정 합니다.  
+*uiCommandID*<br/>
+[in] 작업과 연결 된 명령 ID를 지정 합니다.  
   
- [in] *dwUserData*  
- 클릭 한 작업과 연결 된 사용자 정의 데이터를 포함 합니다.  
+*dwUserData*<br/>
+[in] 클릭 한 작업과 연결 된 사용자 정의 데이터를 포함 합니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 워크는 사용자가 작업을 클릭할 때이 메서드를 호출 합니다. 기본적으로 프레임 워크 확인 클릭 한 작업과 연결 된 명령 ID 하 고, 0이 없는 경우 작업 창 컨트롤의 소유자에 게 WM_COMMAND 메시지를 보냅니다.  
@@ -1310,8 +1310,8 @@ virtual void OnPressOtherButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pbtn*  
- [in] *pWndOwner*  
+*pbtn*<br/>
+[in] [in] *pWndOwner*  
   
 ### <a name="remarks"></a>설명  
   
@@ -1339,8 +1339,8 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pTarget*  
- [in] *bDisableIfNoHndler*  
+*pTarget*<br/>
+[in] [in] *bDisableIfNoHndler*  
   
 ### <a name="remarks"></a>설명  
   
@@ -1378,8 +1378,8 @@ void RemoveAllGroups(int nPageIdx = 0);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nPageIdx*  
- 페이지의 0부터 시작 하는 인덱스를 지정합니다.  
+*nPageIdx*<br/>
+[in] 페이지의 0부터 시작 하는 인덱스를 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  지정 된 페이지의 모든 그룹을 제거 *nPageIdx*, 또는 기본 페이지만 있으면 모든 그룹입니다.  
@@ -1399,8 +1399,8 @@ void RemoveAllTasks(int nGroup);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *해제*  
- 그룹의 인덱스를 지정합니다.  
+*해제*<br/>
+[in] 그룹의 인덱스를 지정합니다.  
   
 ##  <a name="removegroup"></a>  CMFCTasksPane::RemoveGroup  
  그룹을 제거합니다.  
@@ -1410,8 +1410,8 @@ void RemoveGroup(int nGroup);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *해제*  
- 제거할 그룹의 인덱스를 지정 합니다.  
+*해제*<br/>
+[in] 제거할 그룹의 인덱스를 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 단일 그룹을 제거합니다. 모든 그룹을 제거 하려면 호출 [CMFCTasksPane::RemoveAllGroups](#removeallgroups) 대신 합니다.  
@@ -1426,8 +1426,8 @@ void RemovePage(int nPageIdx);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nPageIdx*  
- 제거할 페이지의 0부터 시작 하는 인덱스를 지정 합니다.  
+*nPageIdx*<br/>
+[in] 제거할 페이지의 0부터 시작 하는 인덱스를 지정 합니다.  
   
 ##  <a name="removetask"></a>  CMFCTasksPane::RemoveTask  
  작업 그룹에서 작업을 제거합니다.  
@@ -1440,14 +1440,14 @@ BOOL RemoveTask(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *해제*  
- 제거할 작업을 포함 하는 작업 그룹의 인덱스를 지정 합니다.  
+*해제*<br/>
+[in] 제거할 작업을 포함 하는 작업 그룹의 인덱스를 지정 합니다.  
   
- [in] *nTask*  
- 제거할 작업의 0부터 시작 인덱스를 지정 합니다.  
+*nTask*<br/>
+[in] 제거할 작업의 0부터 시작 인덱스를 지정 합니다.  
   
- [in] *bRedraw*  
- 작업 창;을 다시 그리게 TRUE 그렇지 않으면 FALSE입니다.  
+*bRedraw*<br/>
+[in] 작업 창;을 다시 그리게 TRUE 그렇지 않으면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  함수가 성공 하면 TRUE입니다. FALSE 이면 *해제* 하거나 *nTask* 올바르지 않습니다.  
@@ -1463,8 +1463,8 @@ virtual BOOL SaveState(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszProfileName*  
- [in] *nIndex*  
+*lpszProfileName*<br/>
+[in] [in] *nIndex*  
  [in] *uiID*  
   
 ### <a name="return-value"></a>반환 값  
@@ -1491,8 +1491,8 @@ void SetActivePage(int nPageIdx);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nPageIdx*  
- 표시할 페이지의 0부터 시작 하는 인덱스를 지정 합니다.  
+*nPageIdx*<br/>
+[in] 표시할 페이지의 0부터 시작 하는 인덱스를 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  이 이렇게 하면 어설션 합니다 *nPageIdx* 올바르지 않습니다.  
@@ -1505,8 +1505,8 @@ void SetCaption(LPCTSTR lpszName);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszName*  
- 캡션 이름을 지정합니다.  
+*lpszName*<br/>
+[in] 캡션 이름을 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  작업창을 여러 페이지에 있는 경우 기본 페이지에이 함수를 사용 하 여 설정 된 캡션입니다.  
@@ -1519,8 +1519,8 @@ void SetGroupCaptionHeight(int n = -1);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *n*  
- 캡션 높이 지정합니다.  
+*n*<br/>
+[in] 캡션 높이 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  작업 창 요소의 여백이 사용자 지정 하려면이 메서드를 호출 합니다.  
@@ -1535,8 +1535,8 @@ void SetGroupCaptionHorzOffset(int n = -1);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *n*  
- 그룹 캡션의 가로 오프셋을 지정합니다.  
+*n*<br/>
+[in] 그룹 캡션의 가로 오프셋을 지정합니다.  
   
 ##  <a name="setgroupcaptionvertoffset"></a>  CMFCTasksPane::SetGroupCaptionVertOffset  
  그룹 캡션의 세로 오프셋을 설정합니다.  
@@ -1546,8 +1546,8 @@ void SetGroupCaptionVertOffset(int n = -1);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *n*  
- 픽셀 그룹 캡션의 세로 오프셋을 지정합니다.  
+*n*<br/>
+[in] 픽셀 그룹 캡션의 세로 오프셋을 지정합니다.  
   
 ##  <a name="setgroupname"></a>  CMFCTasksPane::SetGroupName  
  그룹 이름을 설정합니다.  
@@ -1559,11 +1559,11 @@ BOOL SetGroupName(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *해제*  
- 그룹의 인덱스를 지정합니다.  
+*해제*<br/>
+[in] 그룹의 인덱스를 지정합니다.  
   
- [in] *lpszGroupName*  
- 그룹의 이름을 지정합니다.  
+*lpszGroupName*<br/>
+[in] 그룹의 이름을 지정합니다.  
   
 ### <a name="return-value"></a>반환 값  
  그룹 이름을 성공적으로 설정 되었으면; TRUE 그렇지 않으면 FALSE입니다.  
@@ -1579,14 +1579,14 @@ BOOL SetGroupTextColor(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *해제*  
- 그룹의 인덱스를 지정합니다.  
+*해제*<br/>
+[in] 그룹의 인덱스를 지정합니다.  
   
- [in] *색*  
- 텍스트 색을 지정 합니다.  
+*색*<br/>
+[in] 텍스트 색을 지정 합니다.  
   
- [in] *colorHot*  
- 강조 표시 된 그룹에 대 한 텍스트 색을 지정 합니다. -1 이면 기본 강조 색이 사용 됩니다.  
+*colorHot*<br/>
+[in] 강조 표시 된 그룹에 대 한 텍스트 색을 지정 합니다. -1 이면 기본 강조 색이 사용 됩니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 그룹 텍스트 색 변경 되었습니다. 그렇지 않으면 FALSE입니다.  
@@ -1599,8 +1599,8 @@ void SetGroupVertOffset(int n = -1);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *n*  
- 세로 오프셋을 지정합니다.  
+*n*<br/>
+[in] 세로 오프셋을 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  세로 오프셋 작업 그룹에서 작업 창의 테두리 사이의 거리입니다.  
@@ -1615,8 +1615,8 @@ void SetHorzMargin(int n = -1);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *n*  
- 픽셀에서의 여백을 지정합니다.  
+*n*<br/>
+[in] 픽셀에서의 여백을 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  가로 여백은 작업 창 클라이언트 영역의 위쪽 이나 아래쪽 가장자리 사이의 거리입니다.  
@@ -1636,17 +1636,17 @@ void SetIconsList(HIMAGELIST hIcons);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiImageListResID*  
- 이미지 목록의 리소스 ID를 지정합니다.  
+*uiImageListResID*<br/>
+[in] 이미지 목록의 리소스 ID를 지정합니다.  
   
- [in] *cx*  
- 이미지 목록에 있는 아이콘의 크기를 지정합니다.  
+*cx*<br/>
+[in] 이미지 목록에 있는 아이콘의 크기를 지정합니다.  
   
- [in] *clrTransparent*  
- 투명 한 색을 지정합니다.  
+*clrTransparent*<br/>
+[in] 투명 한 색을 지정합니다.  
   
- [in] *hIcons*  
- 작업 창에 대 한 아이콘이 포함 된 이미지 목록을 지정 합니다.  
+*hIcons*<br/>
+[in] 작업 창에 대 한 아이콘이 포함 된 이미지 목록을 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 워크 이미지 목록에서 아이콘을 저장합니다. 작업 목록에 저장 된 아이콘을 사용 하 여 연결 됩니다.  
@@ -1663,11 +1663,11 @@ void SetPageCaption(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nPageIdx*  
- 페이지의 0부터 시작 하는 인덱스를 지정합니다.  
+*nPageIdx*<br/>
+[in] 페이지의 0부터 시작 하는 인덱스를 지정합니다.  
   
- [in] *lpszName*  
- 페이지에 표시할 캡션 텍스트를 지정 합니다.  
+*lpszName*<br/>
+[in] 페이지에 표시할 캡션 텍스트를 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  작업창을 여러 페이지에 있는 경우 기본 페이지에이 메서드를 사용 하 여 설정 된 캡션입니다.  
@@ -1683,14 +1683,14 @@ BOOL SetTaskName(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *해제*  
- 작업 그룹의 인덱스를 지정합니다.  
+*해제*<br/>
+[in] 작업 그룹의 인덱스를 지정합니다.  
   
- [in] *nTask*  
- 작업의 인덱스를 지정합니다.  
+*nTask*<br/>
+[in] 작업의 인덱스를 지정합니다.  
   
- [in] *lpszTaskName*  
- 작업 이름을 지정합니다.  
+*lpszTaskName*<br/>
+[in] 작업 이름을 지정합니다.  
   
 ### <a name="return-value"></a>반환 값  
  태스크 이름을 성공적으로 설정 되었으면; TRUE 그렇지 않으면 FALSE입니다.  
@@ -1703,8 +1703,8 @@ void SetTasksHorzOffset(int n = -1);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *n*  
- 가로 오프셋을 지정합니다.  
+*n*<br/>
+[in] 가로 오프셋을 지정합니다.  
   
 ### <a name="remarks"></a>설명  
  가로 오프셋 그룹의 왼쪽 및 오른쪽 가장자리에서의 픽셀 단위의 거리입니다.  
@@ -1749,17 +1749,17 @@ BOOL SetTaskTextColor(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *해제*  
- 태스크가 포함 된 작업 그룹의 인덱스를 지정 합니다.  
+*해제*<br/>
+[in] 태스크가 포함 된 작업 그룹의 인덱스를 지정 합니다.  
   
- [in] *nTask*  
- 작업의 인덱스를 지정합니다.  
+*nTask*<br/>
+[in] 작업의 인덱스를 지정합니다.  
   
- [in] *색*  
- 작업에 대 한 텍스트 색을 지정 합니다.  
+*색*<br/>
+[in] 작업에 대 한 텍스트 색을 지정 합니다.  
   
- [in] *colorHot*  
- 강조 표시 된 그룹에 대 한 텍스트 색을 지정 합니다. -1 이면이 메서드는 기본 강조 색을 사용 합니다.  
+*colorHot*<br/>
+[in] 강조 표시 된 그룹에 대 한 텍스트 색을 지정 합니다. -1 이면이 메서드는 기본 강조 색을 사용 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 작업에 대 한 텍스트 색이 성공적으로 설정 됩니다. 그렇지 않으면 FALSE입니다.  
@@ -1772,8 +1772,8 @@ void SetVertMargin(int n = -1);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *n*  
- 세로 여백을 설정 하려면을 지정 합니다.  
+*n*<br/>
+[in] 세로 여백을 설정 하려면을 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  세로 여백은 작업 창 클라이언트 영역의 세로 가장자리 사이의 거리입니다.  
@@ -1796,14 +1796,14 @@ BOOL SetWindowHeight(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *해제*  
- 창 컨트롤을 포함 하는 그룹의 인덱스를 지정 합니다.  
+*해제*<br/>
+[in] 창 컨트롤을 포함 하는 그룹의 인덱스를 지정 합니다.  
   
- [in] *hwndTask*  
- 창 컨트롤에 대 한 핸들을 지정합니다.  
+*hwndTask*<br/>
+[in] 창 컨트롤에 대 한 핸들을 지정합니다.  
   
- [in] *nWndHeight*  
- 설정할 높이를 지정 합니다.  
+*nWndHeight*<br/>
+[in] 설정할 높이를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  창 컨트롤의 높이 성공적으로 설정 되었으면; TRUE FALSE 이면 *해제* 올바르지 않습니다 이거나 *hwndTask* 존재 하지 않습니다.  
@@ -1835,17 +1835,17 @@ BOOL ShowTask(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *해제*  
- 그룹의 인덱스를 지정합니다.  
+*해제*<br/>
+[in] 그룹의 인덱스를 지정합니다.  
   
- [in] *nTask*  
- 표시 하거나 숨기려면 작업의 0부터 시작 인덱스를 지정 합니다.  
+*nTask*<br/>
+[in] 표시 하거나 숨기려면 작업의 0부터 시작 인덱스를 지정 합니다.  
   
- [in] *bShow*  
- TRUE로 표시 합니다. 작업을 숨기려면 FALSE입니다.  
+*bShow*<br/>
+[in] TRUE로 표시 합니다. 작업을 숨기려면 FALSE입니다.  
   
- [in] *bRedraw*  
- 작업 창;을 다시 그리게 TRUE 그렇지 않으면 FALSE입니다.  
+*bRedraw*<br/>
+[in] 작업 창;을 다시 그리게 TRUE 그렇지 않으면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 작업이 성공적으로 표시 되거나 숨겨집니다. FALSE 이면 지정한 그룹 또는 작업이 존재 하지 않습니다.  
@@ -1864,14 +1864,14 @@ BOOL ShowTaskByCmdId(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCommandID*  
- 표시 하거나 숨기려면 작업의 명령 ID를 지정 합니다.  
+*uiCommandID*<br/>
+[in] 표시 하거나 숨기려면 작업의 명령 ID를 지정 합니다.  
   
- [in] *bShow*  
- TRUE로 표시 합니다. 작업을 숨기려면 FALSE입니다.  
+*bShow*<br/>
+[in] TRUE로 표시 합니다. 작업을 숨기려면 FALSE입니다.  
   
- [in] *bRedraw*  
- 작업 창;을 다시 그리게 TRUE 그렇지 않으면 FALSE입니다.  
+*bRedraw*<br/>
+[in] 작업 창;을 다시 그리게 TRUE 그렇지 않으면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 작업이 성공적으로 표시 되거나 숨겨집니다. FALSE 이면 지정 된 명령 사용 하 여 작업 ID가 없습니다.  

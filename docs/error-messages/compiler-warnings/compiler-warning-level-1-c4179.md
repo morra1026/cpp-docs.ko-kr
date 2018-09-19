@@ -16,15 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a47c8da89df03e9c33e968574e81bef304a00dd
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 0a5f51e334062badafed5a78c675442e9805d20c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37122032"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032180"
 ---
 # <a name="compiler-warning-level-1-c4179"></a>컴파일러 경고(수준 1) C4179
 
-> ' / / *':로 구문 분석할 '/' 및 ' /\*': 혼동 표준 ' / /' 주석  
-  
-__//\*__ 잘못 된 주석 구분 기호입니다. 사용 하 여 __//__ 또는 __/ \*__ 대신 합니다.
+> ' / / *':으로 구문 분석 '/' 및 ' /\*': 혼동 표준 ' / /' 주석
+
+__//\*__ 잘못 된 주석 구분 기호입니다. 사용 하 여 __//__ 하거나 __/ \*__ 대신 합니다.

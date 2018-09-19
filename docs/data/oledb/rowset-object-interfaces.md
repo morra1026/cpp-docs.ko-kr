@@ -19,14 +19,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2050a444ca228554cfbb3b6bba2693c55e53c4a2
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 87b8b6893c8fdd04374919ceff1d28a61bc315e5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217552"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024670"
 ---
 # <a name="rowset-object-interfaces"></a>행 집합 개체 인터페이스
+
 다음 표에서 행 집합 개체에 대 한 OLE DB에서 정의 된 필수 및 선택적 인터페이스를 보여 줍니다.  
   
 |인터페이스|필수 여부|OLE DB 템플릿에서 구현 되었습니까?|  
@@ -56,7 +57,8 @@ ms.locfileid: "43217552"
 |[ISupportErrorInfo](/previous-versions/windows/desktop/ms715816\(v=vs.85\))|Optional|예|  
 |[IRowsetBookmark](/previous-versions/windows/desktop/ms714246\(v=vs.85\))|Optional|아니요|  
   
- 마법사에서 생성 된 행 집합 개체에 구현 `IAccessor`, `IRowset`, 및 `IRowsetInfo` 상속을 통해. `IAccessorImpl` 모두 출력 열을 바인딩합니다. `IRowset` 인출 행 및 데이터를 처리 하는 인터페이스입니다. `IRowsetInfo` 행 집합 속성을 처리 하는 인터페이스입니다.  
+마법사에서 생성 된 행 집합 개체에 구현 `IAccessor`, `IRowset`, 및 `IRowsetInfo` 상속을 통해. `IAccessorImpl` 모두 출력 열을 바인딩합니다. `IRowset` 인출 행 및 데이터를 처리 하는 인터페이스입니다. `IRowsetInfo` 행 집합 속성을 처리 하는 인터페이스입니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

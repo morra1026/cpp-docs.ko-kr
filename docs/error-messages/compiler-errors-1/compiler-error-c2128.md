@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6db4621a39e704c2b9d19b66b388cc1899b8da12
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ecd2b7eb2db0828387bd2c933b51ee39c00bae77
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168154"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066715"
 ---
 # <a name="compiler-error-c2128"></a>컴파일러 오류 C2128
-'function': alloc_text/same_seg는 C 링크가 있는 함수에만 적용  
-  
- `pragma` `alloc_text` C 링크를 사용 하도록 선언 된 함수 에서만 사용할 수 있습니다.  
-  
- 다음 샘플에서는 생성 C2128 됩니다.  
-  
-```  
-// C2128.cpp  
-// compile with: /c  
-  
-// Delete the following line to resolve.  
-void func();  
-// #pragma alloc_text("my segment", func)   // C2128  
-  
-extern "C" {  
-void func();  
-}  
-  
-#pragma alloc_text("my segment", func)  
-void func() {}  
+
+'function': alloc_text/same_seg는 C 링크가 있는 함수에만 적용
+
+`pragma` `alloc_text` C 링크를 포함 하도록 선언 하는 함수로 사용할 수 있습니다.
+
+다음 샘플에서는 C2128 오류가 생성 됩니다.
+
+```
+// C2128.cpp
+// compile with: /c
+
+// Delete the following line to resolve.
+void func();
+// #pragma alloc_text("my segment", func)   // C2128
+
+extern "C" {
+void func();
+}
+
+#pragma alloc_text("my segment", func)
+void func() {}
 ```

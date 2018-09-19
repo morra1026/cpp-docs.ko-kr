@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59cb7376957b7985b7ae2335ea472171d490ff42
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: daf097cd8715a7c523e6e8a2ea46714481ca7d2a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301137"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105214"
 ---
 # <a name="linker-tools-warning-lnk4219"></a>링커 도구 경고 LNK4219
-픽스업 이름 픽스업 오버플로입니다. 대상 '대상 symbol name' 범위를 벗어남 썽크가 삽입 됩니다.  
-  
- 여기서 주소 또는 오프셋 하지 못했습니다 대상 기호 명령 위치에서 너무 멀리 떨어져 이므로 지정 된 명령에 맞지 않는 경우 썽크를 삽입 하는 링커.  
-  
- 이미지를 다시 정렬 하는 것이 좋습니다 (사용 하 여는 [/순서](../../build/reference/order-put-functions-in-order.md) 옵션을 예를 들어) 추가 수준의 간접 참조를 방지 하려면.
+
+픽스업 이름 픽스업 오버플로입니다. 대상 '대상 symbol name' 범위를 벗어난 썽크가 삽입
+
+링커 주소 또는 offset가 수 없었던 대상 기호 명령 위치에서 너무 멀리 떨어진 곳 이므로, 지정 된 명령에 맞게 상황에서 썽크를 삽입 합니다.
+
+이미지를 다시 정렬 하는 것이 좋습니다 (사용 하는 [/](../../build/reference/order-put-functions-in-order.md) 옵션, 예를 들어) 추가 수준의 간접 참조를 방지 하려면.

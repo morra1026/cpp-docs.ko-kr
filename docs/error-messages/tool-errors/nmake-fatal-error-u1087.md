@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f07309c64066b0a17aab110035c700c229c439df
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2f0e094c720222990ee90af7de900d8cf6ba4051
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319724"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036802"
 ---
 # <a name="nmake-fatal-error-u1087"></a>NMAKE 심각한 오류 U1087
-사용할 수 없습니다: 및:: 동일한 대상에 대 한 종속 항목  
-  
- 대상 모두 단일 콜론에 지정할 수 없습니다 (**:**) 및 이중 콜론 (`::`) 종속성.  
-  
- 여러 설명 블록에 대상을 지정 하려면 `::` 각 연결선에 있습니다.
+
+사용할 수 없습니다: 고:: 동일한 대상에 대 한 종속 항목
+
+모두 단일 콜론 대상을 지정할 수 없습니다 (**:**) 및 이중 콜론 (`::`) 종속성입니다.
+
+여러 개의 설명 블록에는 대상 지정을 사용 하 여 `::` 각 연결선에 있습니다.

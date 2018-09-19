@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3c6db8a46e0b0e8d490019b18fc67dc7bf1e226
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b6eb8c7ed32e780ddaf31dfd6167f59fd55de9da
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763447"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116778"
 ---
 # <a name="ccomcurrency-class"></a>CComCurrency 클래스
 
@@ -118,45 +118,45 @@ CComCurrency() throw();
 CComCurrency(const CComCurrency& curSrc) throw();
 CComCurrency(CURRENCY cySrc) throw();
 CComCurrency(DECIMAL dSrc);
-CComCurrency(ULONG ulSrc);  
-CComCurrency(USHORT usSrc);  
-CComCurrency(CHAR cSrc);  
-CComCurrency(DOUBLE dSrc);  
-CComCurrency(FLOAT fSrc);  
-CComCurrency(LONG lSrc);  
-CComCurrency(SHORT sSrc);  
-CComCurrency(BYTE bSrc);  
-CComCurrency(LONGLONG nInteger, SHORT nFraction);  
-explicit CComCurrency(LPDISPATCH pDispSrc);  
-explicit CComCurrency(const VARIANT& varSrc);  
-explicit CComCurrency(LPCWSTR szSrc);  
+CComCurrency(ULONG ulSrc);
+CComCurrency(USHORT usSrc);
+CComCurrency(CHAR cSrc);
+CComCurrency(DOUBLE dSrc);
+CComCurrency(FLOAT fSrc);
+CComCurrency(LONG lSrc);
+CComCurrency(SHORT sSrc);
+CComCurrency(BYTE bSrc);
+CComCurrency(LONGLONG nInteger, SHORT nFraction);
+explicit CComCurrency(LPDISPATCH pDispSrc);
+explicit CComCurrency(const VARIANT& varSrc);
+explicit CComCurrency(LPCWSTR szSrc);
 explicit CComCurrency(LPCSTR szSrc);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*curSrc*  
+*curSrc*<br/>
 기존 `CComCurrency` 개체입니다.
 
-*cySrc*  
+*cySrc*<br/>
 통화 형식의 변수입니다.
 
-*bSrc*, *dSrc*를 *fSrc*를 *lSrc*를 *sSrc*, *ulSrc, usSrc*  
+*bSrc*, *dSrc*를 *fSrc*를 *lSrc*를 *sSrc*, *ulSrc, usSrc*<br/>
 멤버 변수를 지정 된 초기 값 `m_currency`합니다.
 
-*cSrc*  
+*cSrc*<br/>
 멤버 변수를 지정 된 초기 값을 포함 하는 문자 `m_currency`합니다.
 
-*nInteger*, *nFraction*  
+*nInteger*, *nFraction*<br/>
 정수 및 소수 부분은 초기 통화 값입니다. 참조 된 [CComCurrency](../../atl/reference/ccomcurrency-class.md) 자세한 개요입니다.
 
-*pDispSrc*  
+*pDispSrc*<br/>
 `IDispatch` 포인터입니다.
 
-*varSrc*  
+*varSrc*<br/>
 VARIANT 형식의 변수입니다. 현재 스레드의 로캘은 변환 하는 데 사용 됩니다.
 
-*szSrc*  
+*szSrc*<br/>
 초기 값이 포함 된 유니코드 또는 ANSI 문자열입니다. 현재 스레드의 로캘은 변환 하는 데 사용 됩니다.
 
 ### <a name="remarks"></a>설명
@@ -238,7 +238,7 @@ CComCurrency operator-(const CComCurrency& cur) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*cur*  
+*cur*<br/>
 `CComCurrency` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -259,7 +259,7 @@ bool operator!= (const CComCurrency& cur) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*cur*  
+*cur*<br/>
 비교할 `CComCurrency` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -281,10 +281,10 @@ CComCurrency operator*(const CComCurrency& cur) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*nOperand*  
+*nOperand*<br/>
 승수입니다.
 
-*cur*  
+*cur*<br/>
 `CComCurrency` 승수를 사용 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -306,10 +306,10 @@ const CComCurrency& operator*= (const CComCurrency& cur);
 
 ### <a name="parameters"></a>매개 변수
 
-*nOperand*  
+*nOperand*<br/>
 승수입니다.
 
-*cur*  
+*cur*<br/>
 `CComCurrency` 승수를 사용 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -330,7 +330,7 @@ CComCurrency operator/(long nOperand) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*nOperand*  
+*nOperand*<br/>
 제수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -351,7 +351,7 @@ const CComCurrency& operator/= (long nOperand);
 
 ### <a name="parameters"></a>매개 변수
 
-*nOperand*  
+*nOperand*<br/>
 제수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -372,7 +372,7 @@ CComCurrency operator+(const CComCurrency& cur) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*cur*  
+*cur*<br/>
 `CComCurrency` 원래 개체에 추가할 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -393,7 +393,7 @@ const CComCurrency& operator+= (const CComCurrency& cur);
 
 ### <a name="parameters"></a>매개 변수
 
-*cur*  
+*cur*<br/>
 `CComCurrency` 개체
 
 ### <a name="return-value"></a>반환 값
@@ -414,7 +414,7 @@ bool operator<(const CComCurrency& cur) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*cur*  
+*cur*<br/>
 `CComCurrency` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -435,7 +435,7 @@ bool operator<= (const CComCurrency& cur) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*cur*  
+*cur*<br/>
 `CComCurrency` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -466,13 +466,13 @@ const CComCurrency& operator= (DECIMAL dSrc);
 
 ### <a name="parameters"></a>매개 변수
 
-*curSrc*  
+*curSrc*<br/>
 `CComCurrency` 개체입니다.
 
-*cySrc*  
+*cySrc*<br/>
 통화 형식의 변수입니다.
 
-*sSrc*, *fSrc*를 *lSrc*를 *bSrc*를 *usSrc*를 *dSrc*, *cSrc* 하십시오 *ulSrc*, *dSrc*  
+*sSrc*, *fSrc*를 *lSrc*를 *bSrc*를 *usSrc*를 *dSrc*, *cSrc* 하십시오 *ulSrc*, *dSrc*<br/>
 숫자 값을 할당 하는 `CComCurrency` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -493,7 +493,7 @@ const CComCurrency& operator-= (const CComCurrency& cur);
 
 ### <a name="parameters"></a>매개 변수
 
-*cur*  
+*cur*<br/>
 `CComCurrency` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -514,7 +514,7 @@ bool operator== (const CComCurrency& cur) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*cur*  
+*cur*<br/>
 `CComCurrency` 비교할 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -535,7 +535,7 @@ bool operator>(const CComCurrency& cur) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*cur*  
+*cur*<br/>
 `CComCurrency` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -556,7 +556,7 @@ bool operator>= (const CComCurrency& cur) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*cur*  
+*cur*<br/>
 `CComCurrency` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -571,7 +571,7 @@ bool operator>= (const CComCurrency& cur) const;
 
 이러한 연산자는 캐스팅 하는 데 사용 되는 `CComCurrency` 통화 데이터 형식 개체입니다.
 
-```  
+```
 operator CURRENCY&() throw();
 operator const CURRENCY&() const throw();
 ```
@@ -594,7 +594,7 @@ HRESULT Roundint nDecimals);
 
 ### <a name="parameters"></a>매개 변수
 
-*nDecimals*  
+*nDecimals*<br/>
 소수 자릿수는 `m_currency` 범위 0 ~ 4에서에서 반올림 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -615,7 +615,7 @@ HRESULT SetFraction(SHORT nFraction);
 
 ### <a name="parameters"></a>매개 변수
 
-*nFraction*  
+*nFraction*<br/>
 소수 부분에 할당할 값을 `m_currency` 데이터 멤버입니다. 소수 부분이 기호를 정수 구성 요소와 동일 하며 값 범위는-9999 (CY_MIN_FRACTION)에서 + 9999 (CY_MAX_FRACTION) 하에 있어야 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -636,7 +636,7 @@ HRESULT SetInteger(LONGLONG nInteger);
 
 ### <a name="parameters"></a>매개 변수
 
-*nInteger*  
+*nInteger*<br/>
 값의 정수 부분을 할당할 수는 `m_currency` 데이터 멤버입니다. 정수 구성 요소 부호 기호를 기존 소수 부분이 일치 해야 합니다.
 
 *nInteger* CY_MAX_INTEGER 포괄 하려면 CY_MIN_INTEGER 사이 여야 합니다. 이러한 값은 atlcur.h에 정의 됩니다.
@@ -651,6 +651,6 @@ HRESULT SetInteger(LONGLONG nInteger);
 
 ## <a name="see-also"></a>참고 항목
 
-[COleCurrency 클래스](../../mfc/reference/colecurrency-class.md)   
-[통화](/windows/desktop/api/wtypes/ns-wtypes-tagcy)   
+[COleCurrency 클래스](../../mfc/reference/colecurrency-class.md)<br/>
+[통화](/windows/desktop/api/wtypes/ns-wtypes-tagcy)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

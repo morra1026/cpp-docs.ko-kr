@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e7a8c7c544ef89f1b54459a7f02b90424e6c7c5
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: c987b2ee09cdd701cb606e45a9525e827e0db90a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693563"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042964"
 ---
 # <a name="c-runtime-errors-r6002-through-r6035"></a>C 런타임 오류 R6002 ~ R6035
 
@@ -63,4 +63,4 @@ Microsoft의 공개 포럼에서 오류 및 경고에 대 한 추가 지원을 �
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 빌드 오류](../../error-messages/compiler-errors-1/c-cpp-build-errors.md)  
+[C++ 빌드 오류](../../error-messages/compiler-errors-1/c-cpp-build-errors.md)

@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62e2867ed7e95f6b135581260103c9d5e1386fb9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bd17b03cc48555800e3c36cc3f5512506f011372
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168544"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072077"
 ---
 # <a name="compiler-error-c2157"></a>컴파일러 오류 C2157
-'function': pragma 목록에서 사용하려면 먼저 선언해야 합니다.  
-  
- 함수 이름이 선언되지 않은 상태에서 [alloc_text](../../preprocessor/alloc-text.md) pragma에 대한 함수 목록에서 참조되었습니다.  
-  
- 다음 샘플에서는 C2157을 생성합니다.  
-  
-```  
-// C2157.cpp  
-// compile with: /c  
-#pragma alloc_text( "func", func)   // C2157  
-  
-// OK  
-extern "C" void func();  
-#pragma alloc_text( "func", func)  
+
+'function': pragma 목록에서 사용하려면 먼저 선언해야 합니다.
+
+함수 이름이 선언되지 않은 상태에서 [alloc_text](../../preprocessor/alloc-text.md) pragma에 대한 함수 목록에서 참조되었습니다.
+
+다음 샘플에서는 C2157을 생성합니다.
+
+```
+// C2157.cpp
+// compile with: /c
+#pragma alloc_text( "func", func)   // C2157
+
+// OK
+extern "C" void func();
+#pragma alloc_text( "func", func)
 ```

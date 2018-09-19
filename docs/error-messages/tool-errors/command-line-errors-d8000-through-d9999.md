@@ -1,5 +1,5 @@
 ---
-title: 명령줄 오류 D8000 D9999 통해 | Microsoft Docs
+title: 명령줄 오류 (d8000 ~ D9999 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/17/2017
 ms.technology:
@@ -12,16 +12,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e608745f4c10d915ee0fc8a2cdad2f372f81046c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1bed2202c8dc7f6372a102eb3926ac49d568793a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302544"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096706"
 ---
 # <a name="command-line-errors-d8000-through-d9999"></a>명령줄 오류(D8000~D9999)
 
-이 섹션의 문서 빌드 도구에 의해 생성 되는 명령줄 오류에 대 한 참조를 제공 합니다.
+이 섹션의에서 문서에는 명령줄 빌드 도구에 의해 발생 한 오류에 대 한 참조를 제공 합니다.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -63,4 +63,4 @@ ms.locfileid: "33302544"
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 빌드 오류](../../error-messages/compiler-errors-1/c-cpp-build-errors.md)  
+[C++ 빌드 오류](../../error-messages/compiler-errors-1/c-cpp-build-errors.md)

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64b6266ac31e2d6dec6eabc847b67b080b250837
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 533458b35e4589e04d95a4618a04a90aa1994c35
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751425"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039337"
 ---
 # <a name="cinterfacearray-class"></a>CInterfaceArray 클래스
 
@@ -32,7 +32,7 @@ ms.locfileid: "43751425"
 ## <a name="syntax"></a>구문
 
 ```
-template <class I, const IID* piid=& __uuidof(I)>  
+template <class I, const IID* piid=& __uuidof(I)>
 class CInterfaceArray : 
    public CAtlArray<ATL::CComQIPtr<I, piid>,
                     CComQIPtrElementTraits<I, piid>>
@@ -40,10 +40,10 @@ class CInterfaceArray :
 
 #### <a name="parameters"></a>매개 변수
 
-*I*  
+*I*<br/>
 저장에 대 한 포인터의 형식을 지정 하는 COM 인터페이스입니다.
 
-*piid*  
+*piid*<br/>
 에 대 한 포인터의 IID *있습니까*합니다.
 
 ## <a name="members"></a>멤버
@@ -84,7 +84,7 @@ CInterfaceArray() throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[CAtlArray 클래스](../../atl/reference/catlarray-class.md)   
-[CComQIPtr 클래스](../../atl/reference/ccomqiptr-class.md)   
-[CComQIPtrElementTraits 클래스](../../atl/reference/ccomqiptrelementtraits-class.md)   
+[CAtlArray 클래스](../../atl/reference/catlarray-class.md)<br/>
+[CComQIPtr 클래스](../../atl/reference/ccomqiptr-class.md)<br/>
+[CComQIPtrElementTraits 클래스](../../atl/reference/ccomqiptrelementtraits-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

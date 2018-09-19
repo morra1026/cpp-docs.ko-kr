@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37f60097b1075756a0a44247d40fe2f0ba8a4d9d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8deac0579cedcd369211b3624dc004ca995dc8f4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225812"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085565"
 ---
 # <a name="fatal-error-c1089"></a>심각한 오류 C1089
-filetype 파일을 자를 수 없습니다. 'file': message  
-  
- 컴파일러는 파일을 길이 0으로 축소할 수 없습니다.
+
+filetype 파일을 자를 수 없습니다. 'file': message
+
+컴파일러는 파일을 길이 0으로 축소할 수 없습니다.

@@ -17,24 +17,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ac52b16c2c8551282b79ef6a7fda40e24acc6bb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4d9913bc77dfc3fbc95bd03fd32c954c4d304d27
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299736"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023204"
 ---
 # <a name="expression-evaluator-error-cxx0045"></a>식 계산기 오류 CXX0045
-not 함수  
-  
- 함수의 이름이 되지 않은 프로그램의 기호는 인수 목록을 제공 되었습니다.  
-  
-## <a name="example"></a>예제  
-  
-```  
-queue( alpha, beta )  
-```  
-  
- 때 `queue` 는 함수가 아닙니다.  
-  
- 이 오류는 can0045와 동일 합니다.
+
+not 함수
+
+함수 이름이 아닌 프로그램의 기호에 대 한 인수 목록이 제공 되었습니다.
+
+## <a name="example"></a>예제
+
+```
+queue( alpha, beta )
+```
+
+때 `queue` 함수가 아닙니다.
+
+이 오류는 can0045와 동일 합니다.

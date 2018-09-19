@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ebf3ba07ac5608a47f4e2bbbe853cb37c033e5f7
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 46198390ce25cb655b94c0ca4769321fc3e9362d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757617"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099709"
 ---
 # <a name="catlautothreadmodulet-class"></a>CAtlAutoThreadModuleT 클래스
 
@@ -35,21 +35,21 @@ ms.locfileid: "43757617"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T, 
+template <class T,
          class ThreadAllocator = CComSimpleThreadAllocator,
-         DWORD dwWait = INFINITE>  
+         DWORD dwWait = INFINITE>
 class ATL_NO_VTABLE CAtlAutoThreadModuleT : public IAtlAutoThreadModule
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 COM 서버 구현 하는 클래스입니다.
 
-*ThreadAllocator*  
+*ThreadAllocator*<br/>
 스레드 선택 영역을 관리 하는 클래스입니다. 기본값은 [CComSimpleThreadAllocator](../../atl/reference/ccomsimplethreadallocator-class.md)합니다.
 
-*dwWait*  
+*dwWait*<br/>
 시간 제한 간격을 밀리초 단위로 지정 합니다. 기본값은 메서드의 시간 제한 간격이 경과 없음을 의미 하는 무한 합니다.
 
 ## <a name="members"></a>멤버
@@ -95,7 +95,7 @@ EXE 모듈에서 생성 될 스레드의 수입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[IAtlAutoThreadModule 클래스](../../atl/reference/iatlautothreadmodule-class.md)   
-[클래스 개요](../../atl/atl-class-overview.md)   
-[IAtlAutoThreadModule 클래스](../../atl/reference/iatlautothreadmodule-class.md)   
+[IAtlAutoThreadModule 클래스](../../atl/reference/iatlautothreadmodule-class.md)<br/>
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
+[IAtlAutoThreadModule 클래스](../../atl/reference/iatlautothreadmodule-class.md)<br/>
 [모듈 클래스](../../atl/atl-module-classes.md)

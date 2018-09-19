@@ -114,12 +114,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 758b2039168825ec95a14b84b1c4c589618e7c24
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: ad50deb1cb500abb532acac8c3c0d035c37b87ce
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680106"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726442"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl Class
 `CMFCTabCtrl` 클래스는 tab 컨트롤에 대 한 기능을 제공 합니다. 탭 컨트롤은 맨 위 또는 아래에 평면 또는 3차원 탭이 포함된 도킹 가능한 창을 표시합니다. 탭은 텍스트와 이미지를 표시하고 활성화된 경우 색을 변경할 수 있습니다.  
@@ -265,8 +265,8 @@ void ActivateMDITab(int nTab = -1);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nTab*  
- 0부터 시작 인덱스는 탭을 표시 하거나 현재 활성 탭을 지정 하려면-1입니다.  
+*nTab*<br/>
+[in] 0부터 시작 인덱스는 탭을 표시 하거나 현재 활성 탭을 지정 하려면-1입니다.  
   
 ##  <a name="allowdestroyemptytabbedpane"></a>  CMFCTabCtrl::AllowDestroyEmptyTabbedPane  
  자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
@@ -288,8 +288,8 @@ void AutoSizeWindow(BOOL bAutoSize = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bAutoSize*  
- 탭 컨트롤 windows를 자동으로 조정. 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
+*bAutoSize*<br/>
+[in] 탭 컨트롤 windows를 자동으로 조정. 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -307,23 +307,23 @@ BOOL Create(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *스타일*  
- 스타일 탭 컨트롤입니다. 자세한 내용은 설명 부분을 참조하세요.  
+*style*<br/>
+[in] 스타일 탭 컨트롤입니다. 자세한 내용은 설명 부분을 참조하세요.  
   
- [in] *rect*  
- 탭 컨트롤을 제한 하는 사각형입니다.  
+*rect*<br/>
+[in] 탭 컨트롤을 제한 하는 사각형입니다.  
   
- [in] *pParentWnd*  
- 부모 창에 대 한 포인터입니다. NULL이 아니어야 합니다.  
+*pParentWnd*<br/>
+[in] 부모 창에 대 한 포인터입니다. NULL이 아니어야 합니다.  
   
- [in] *nID*  
- 탭 컨트롤의 ID입니다.  
+*nID*<br/>
+[in] 탭 컨트롤의 ID입니다.  
   
- [in] *위치*  
- 탭의 위치입니다. 기본값은 LOCATION_BOTTOM 합니다. 자세한 내용은 설명 부분을 참조하세요.  
+*location*<br/>
+[in] 탭의 위치입니다. 기본값은 LOCATION_BOTTOM 합니다. 자세한 내용은 설명 부분을 참조하세요.  
   
- [in] *bCloseBtn*  
- TRUE; 탭에서 닫기 단추를 표시 하려면 그렇지 않으면 FALSE입니다. 기본값은 FALSE입니다.  
+*bCloseBtn*<br/>
+[in] TRUE; 탭에서 닫기 단추를 표시 하려면 그렇지 않으면 FALSE입니다. 기본값은 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 그렇지 않으면 FALSE입니다.  
@@ -362,8 +362,8 @@ virtual void CalcRectEdit(CRect& rectEdit);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *rectEdit*  
- 탭의 영역을 지정 하는 사각형입니다.  
+*rectEdit*<br/>
+[in] 탭의 영역을 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 탭의 레이블을 변경할 때 호출 됩니다. 이 메서드는 지정된 된 사각형의 왼쪽 및 오른쪽 절반에 현재 탭 높이 압축 하 고 위쪽 및 아래쪽 하나의 단위로 압축 합니다.  
@@ -376,8 +376,8 @@ void EnableActiveTabCloseButton(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 활성 탭;에 닫기 단추를 표시. 탭 영역의 오른쪽 위 모서리에서 닫기 단추를 표시 하려면 FALSE입니다. 기본값은 TRUE입니다.  
+*bEnable*<br/>
+[in] 활성 탭;에 닫기 단추를 표시. 탭 영역의 오른쪽 위 모서리에서 닫기 단추를 표시 하려면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ##  <a name="enableinplaceedit"></a>  CMFCTabCtrl::EnableInPlaceEdit  
  사용 하거나 편집할 수 있는 탭 레이블을 사용 하지 않도록 설정 합니다.  
@@ -387,8 +387,8 @@ virtual void EnableInPlaceEdit(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- TRUE 레이블 편집 가능한 탭을 사용 하도록 설정 하려면 편집 가능한 탭 레이블을 사용 하지 않도록 설정 하려면 FALSE입니다.  
+*bEnable*<br/>
+[in] TRUE 레이블 편집 가능한 탭을 사용 하도록 설정 하려면 편집 가능한 탭 레이블을 사용 하지 않도록 설정 하려면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -400,8 +400,8 @@ void EnableTabDocumentsMenu(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 탭된 창 레이블의; 팝업 메뉴를 표시 하려면 TRUE 앞으로 및 뒤로 스크롤 단추를 표시 하려면 FALSE입니다. 기본값은 TRUE입니다.  
+*bEnable*<br/>
+[in] 탭된 창 레이블의; 팝업 메뉴를 표시 하려면 TRUE 앞으로 및 뒤로 스크롤 단추를 표시 하려면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
  사용자가 탭 레이블을 프레임 워크에 해당 하는 탭된 창을 표시 됩니다. 탭 레이블이 표시 되 면 하는 경우 해당 위치를 변경 하지 않고 탭된 창이 열립니다. 사용자가 팝업 메뉴에서 문서를 선택 하 여 해당 탭된 창이 화면 밖으로, 하는 경우 탭된 창에는 첫 번째 탭 됩니다.  
@@ -414,8 +414,8 @@ virtual BOOL EnsureVisible(int iTab);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 탭의 0부터 시작 하는 인덱스입니다.  
+*iTab*<br/>
+[in] 탭의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 TRUE입니다. 경우에는 FALSE를 *iTab* 매개 변수 인덱스가 잘못 되었습니다.  
@@ -431,8 +431,8 @@ static HICON __stdcall GetDocumentIcon(UINT nCmdID);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nCmdID*  
- 탭 창의 팝업 메뉴의 탭의 명령 ID입니다.  
+*nCmdID*<br/>
+[in] 탭 창의 팝업 메뉴의 탭의 명령 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
  비트맵 이미지의 핸들입니다.  
@@ -483,11 +483,11 @@ void GetTabArea(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *rectTabAreaTop*  
- 이 메서드는 반환 될 때이 참조 상단 탭 레이블 영역을 제한 하는 사각형을 포함 합니다. 사각형은 클라이언트 좌표입니다. 이 참조 탭 컨트롤의 맨 위에 있는 탭 레이블 영역이 있는 경우 비어 있습니다.  
+*rectTabAreaTop*<br/>
+[out] 이 메서드는 반환 될 때이 참조 상단 탭 레이블 영역을 제한 하는 사각형을 포함 합니다. 사각형은 클라이언트 좌표입니다. 이 참조 탭 컨트롤의 맨 위에 있는 탭 레이블 영역이 있는 경우 비어 있습니다.  
   
- [out] *rectTabAreaBottom*  
- 이 메서드는 반환 될 때이 참조는 아래쪽 탭 레이블 영역을 제한 하는 사각형을 포함 합니다. 사각형은 클라이언트 좌표입니다. 이 참조 탭 레이블 영역이 탭 컨트롤의 맨 아래에 있는 경우 비어 있습니다.  
+*rectTabAreaBottom*<br/>
+[out] 이 메서드는 반환 될 때이 참조는 아래쪽 탭 레이블 영역을 제한 하는 사각형을 포함 합니다. 사각형은 클라이언트 좌표입니다. 이 참조 탭 레이블 영역이 탭 컨트롤의 맨 아래에 있는 경우 비어 있습니다.  
   
 ### <a name="remarks"></a>설명  
  탭된 창에서 탭 영역의 위치와 크기를 확인 하려면이 메서드를 사용 합니다.  
@@ -523,8 +523,8 @@ virtual void GetTabsRect(CRect& rect) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *rect*  
- 이 메서드가 반환 하는 경우는 *rect* 매개 변수 탭 영역 경계가 되는 사각형을 포함 합니다.  
+*rect*<br/>
+[out] 이 메서드가 반환 하는 경우는 *rect* 매개 변수 탭 영역 경계가 되는 사각형을 포함 합니다.  
   
 ##  <a name="getwndarea"></a>  CMFCTabCtrl::GetWndArea  
  현재 탭 컨트롤의 클라이언트 영역 경계를 검색합니다.  
@@ -534,8 +534,8 @@ void GetWndArea(CRect& rect) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out에서] *rect*  
- 이 메서드는 반환 될 때이 매개 변수는 현재 탭 컨트롤을 제한 하는 사각형을 포함 합니다.  
+*rect*<br/>
+[out에서] 이 메서드는 반환 될 때이 매개 변수는 현재 탭 컨트롤을 제한 하는 사각형을 포함 합니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -557,8 +557,8 @@ void HideInactiveWindow(BOOL bHide = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bHide*  
- 비활성 창;를 표시 하려면 TRUE 되지 않음 비활성 창에 표시할 FALSE입니다. 기본값은 TRUE입니다.  
+*bHide*<br/>
+[in] 비활성 창;를 표시 하려면 TRUE 되지 않음 비활성 창에 표시할 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -570,8 +570,8 @@ void HideNoTabs(BOOL bHide=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bHide*  
- 사용 하도록 설정 하는 true로 설정 하면 탭 영역이; 그리기 그리기를 사용 하지 않도록 설정 하려면 FALSE입니다. 기본값은 TRUE입니다.  
+*bHide*<br/>
+[in] 사용 하도록 설정 하는 true로 설정 하면 탭 영역이; 그리기 그리기를 사용 하지 않도록 설정 하려면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -583,8 +583,8 @@ virtual void HideSingleTab(BOOL bHide=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bHide*  
- 하지는 단일 탭된 창에 대 한 탭을 그리려면 단일 탭에 그릴 FALSE입니다. 기본값은 TRUE입니다.  
+*bHide*<br/>
+[in] 하지는 단일 탭된 창에 대 한 탭을 그리려면 단일 탭에 그릴 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -749,8 +749,8 @@ BOOL ModifyTabStyle(Style style);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *스타일*  
- 탭 컨트롤의 모양을 지정 하는 열거형 값 중 하나입니다. 자세한 내용은 주의 있는 표를 참조 하세요.  
+*style*<br/>
+[in] 탭 컨트롤의 모양을 지정 하는 열거형 값 중 하나입니다. 자세한 내용은 주의 있는 표를 참조 하세요.  
   
 ### <a name="return-value"></a>반환 값  
  항상 TRUE입니다.  
@@ -780,14 +780,14 @@ virtual DROPEFFECT OnDragEnter(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDataObject*  
- 사용자가 데이터를 포함 하는 데이터 개체를 가리킵니다.  
+*pDataObject*<br/>
+[in] 사용자가 데이터를 포함 하는 데이터 개체를 가리킵니다.  
   
- [in] *dwKeyState*  
- 보조키의 상태를 포함합니다. 이 매개 변수는 다음 값의 비트 조합 (OR): MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다. 자세한 내용은 참조는 **메시지 매개 변수** 부분 [마우스 입력에 대 한](/windows/desktop/inputdev/about-mouse-input)합니다.  
+*dwKeyState*<br/>
+[in] 보조키의 상태를 포함합니다. 이 매개 변수는 다음 값의 비트 조합 (OR): MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다. 자세한 내용은 참조는 **메시지 매개 변수** 부분 [마우스 입력에 대 한](/windows/desktop/inputdev/about-mouse-input)합니다.  
   
- [in] *지점*  
- 클라이언트 좌표에서 커서의 현재 위치를 포함합니다.  
+*지점*<br/>
+[in] 클라이언트 좌표에서 커서의 현재 위치를 포함합니다.  
   
 ### <a name="return-value"></a>반환 값  
  항상 DROPEFFECT_NONE, 즉, 놓기 대상이 데이터를 받아들일 수 없습니다.  
@@ -808,14 +808,14 @@ virtual DROPEFFECT OnDragOver(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDataObject*  
- 에 대 한 포인터를 [COleDataObject](../../mfc/reference/coledataobject-class.md) 개체를 놓기 대상 위로 끄는입니다.  
+*pDataObject*<br/>
+[in] 에 대 한 포인터를 [COleDataObject](../../mfc/reference/coledataobject-class.md) 개체를 놓기 대상 위로 끄는입니다.  
   
- [in] *dwKeyState*  
- MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON의 비트 조합 (OR)는 보조 키의 상태입니다. 자세한 내용은 "메시지 Parameters"를 참조 [마우스 입력에 대 한](/windows/desktop/inputdev/about-mouse-input)합니다.  
+*dwKeyState*<br/>
+[in] MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON의 비트 조합 (OR)는 보조 키의 상태입니다. 자세한 내용은 "메시지 Parameters"를 참조 [마우스 입력에 대 한](/windows/desktop/inputdev/about-mouse-input)합니다.  
   
- [in] *지점*  
- 현재 마우스 위치입니다.  
+*지점*<br/>
+[in] 현재 마우스 위치입니다.  
   
 ### <a name="return-value"></a>반환 값  
  항상 DROPEFFECT_NONE 합니다.  
@@ -831,8 +831,8 @@ virtual void OnShowTabDocumentsMenu(CPoint point);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 팝업 메뉴를 표시할 위치의 좌표입니다.  
+*지점*<br/>
+[in] 팝업 메뉴를 표시할 위치의 좌표입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -844,8 +844,8 @@ void SetActiveInMDITabGroup(BOOL bActive);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bActive*  
- 활성 탭을 현재 탭을 확인. False 이면 비활성 현재 탭을 확인 합니다.  
+*bActive*<br/>
+[in] 활성 탭을 현재 탭을 확인. False 이면 비활성 현재 탭을 확인 합니다.  
   
 ### <a name="remarks"></a>설명  
  여러 문서 창을 세로 또는 가로 탭 그룹 중 하나를 구성 하 고 한 탭 그룹에서 다른 문서를 쉽게 이동할 수 있습니다.  
@@ -858,8 +858,8 @@ virtual BOOL SetActiveTab(int iTab);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iTab*  
- 활성화 하려면 탭의 인덱스를 지정 합니다.  
+*iTab*<br/>
+[in] 활성화 하려면 탭의 인덱스를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정된 된 탭 활성화 된 경우 TRUE FALSE 이면 지정 된 *iTab* 매개 변수 값이 잘못 되었습니다.  
@@ -877,8 +877,8 @@ void SetActiveTabBoldFont(BOOL bIsBold=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bIsBold*  
- 굵은 글꼴을 사용 하 여; 활성 탭의 레이블을 표시 하려면 TRUE 레이블을 표시 하려면 표준 글꼴을 사용 하려면 FALSE입니다. 기본값은 TRUE입니다.  
+*bIsBold*<br/>
+[in] 굵은 글꼴을 사용 하 여; 활성 탭의 레이블을 표시 하려면 TRUE 레이블을 표시 하려면 표준 글꼴을 사용 하려면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -890,8 +890,8 @@ void SetDrawFrame(BOOL bDraw=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bDraw*  
- 포함 된 막대를; 프레임 사각형을 표시. 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
+*bDraw*<br/>
+[in] 포함 된 막대를; 프레임 사각형을 표시. 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -905,11 +905,11 @@ void SetFlatFrame(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bFlat*  
- 플랫 2D 프레임 탭 영역; 주위 그릴 TRUE 3 차원 (3d) 프레임을 그릴 FALSE입니다. 기본값은 TRUE입니다.  
+*bFlat*<br/>
+[in] 플랫 2D 프레임 탭 영역; 주위 그릴 TRUE 3 차원 (3d) 프레임을 그릴 FALSE입니다. 기본값은 TRUE입니다.  
   
- [in] *bRepaint*  
- 창을 즉시 다시 그리도록 하려면 TRUE 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
+*bRepaint*<br/>
+[in] 창을 즉시 다시 그리도록 하려면 TRUE 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -926,17 +926,17 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiID*  
- 이미지 목록이 포함 된 비트맵 리소스의 ID입니다.  
+*uiID*<br/>
+[in] 이미지 목록이 포함 된 비트맵 리소스의 ID입니다.  
   
- [in] *cx*  
- 픽셀에서의 각 이미지의 너비입니다. 기본값은 15입니다.  
+*cx*<br/>
+[in] 픽셀에서의 각 이미지의 너비입니다. 기본값은 15입니다.  
   
- [in] *clrTransp*  
- 투명 이미지 색입니다. 이 색 되어 있는 이미지의 파트를 투명 하 게 됩니다. 기본값은 색 자홍, RGB(255,0,255) 합니다.  
+*clrTransp*<br/>
+[in] 투명 이미지 색입니다. 이 색 되어 있는 이미지의 파트를 투명 하 게 됩니다. 기본값은 색 자홍, RGB(255,0,255) 합니다.  
   
- [in] *hImageList*  
- 미리 로드 된 이미지 목록에 대 한 핸들입니다.  
+*hImageList*<br/>
+[in] 미리 로드 된 이미지 목록에 대 한 핸들입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드가 성공적 이면 TRUE입니다. 탭 컨트롤 평면 스타일을 사용 하 여 만들어지는 경우 또는 첫 번째 메서드 오버 로드는 지정 된 비트맵을 로드할 수 없는 경우 FALSE를 *uiID* 매개 변수입니다.  
@@ -954,8 +954,8 @@ void SetResizeMode(ResizeMode resizeMode);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *resizeMode*  
- 중 하나는 `CMFCTabCtrl::ResizeMode` 탭 컨트롤 크기를 조정할 수 하는 방법을 지정 하는 열거형 값입니다. 가능한 값 목록은 설명의 표를 참조 합니다.  
+*resizeMode*<br/>
+[in] 중 하나는 `CMFCTabCtrl::ResizeMode` 탭 컨트롤 크기를 조정할 수 하는 방법을 지정 하는 열거형 값입니다. 가능한 값 목록은 설명의 표를 참조 합니다.  
   
 ### <a name="remarks"></a>설명  
  합니다 *resizeMode* 매개 변수는 다음 중 하나일 수 있습니다 `ResizeMode` 열거형 값입니다.  
@@ -974,8 +974,8 @@ void SetTabMaxWidth(int nTabMaxWidth);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nTabMaxWidth*  
- 최대 탭 너비 (픽셀)에서입니다.  
+*nTabMaxWidth*<br/>
+[in] 최대 탭 너비 (픽셀)에서입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드를 사용 하 여 탭된 창에 각 탭의 너비를 제한 합니다. 이 메서드는 탭 매우 긴 레이블이 있는 경우에 유용 합니다. 합니다 [CMFCTabCtrl](../../mfc/reference/cmfctabctrl-class.md) 클래스 생성자 최대 탭 너비를 0으로, 실제로 너비 제한 된다는 것을 의미 합니다.  
@@ -988,8 +988,8 @@ void StopResize(BOOL bCancel);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *b 취소*  
- 현재 크기 조정 작업을 중단 하려면 TRUE 현재 조정 작업을 완료 하려는 경우 FALSE. 두 경우 모두 프레임 워크는 크기 조정 사각형을 그리기를 중지 합니다.  
+*b 취소*<br/>
+[in] 현재 크기 조정 작업을 중단 하려면 TRUE 현재 조정 작업을 완료 하려는 경우 FALSE. 두 경우 모두 프레임 워크는 크기 조정 사각형을 그리기를 중지 합니다.  
   
 ##  <a name="synchronizescrollbar"></a>  CMFCTabCtrl::SynchronizeScrollBar  
  플랫 탭을 표시 하는 탭 컨트롤에 가로 스크롤 막대를 그립니다.  
@@ -999,8 +999,8 @@ BOOL SynchronizeScrollBar(SCROLLINFO* pScrollInfo = NULL);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *pScrollInfo*  
- 에 대 한 포인터를 [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) 구조 또는 NULL입니다. 이 메서드가 반환 하는 경우 및이 매개 변수가 NULL이 아닌 경우 구조는 스크롤 막대의 모든 매개 변수를 포함 합니다. 기본값은 NULL입니다.  
+*pScrollInfo*<br/>
+[out] 에 대 한 포인터를 [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) 구조 또는 NULL입니다. 이 메서드가 반환 하는 경우 및이 매개 변수가 NULL이 아닌 경우 구조는 스크롤 막대의 모든 매개 변수를 포함 합니다. 기본값은 NULL입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  

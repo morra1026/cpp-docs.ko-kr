@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 946c82d4f558974d548a40af0b14e63f7ccebf4e
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: afabb17847f1c94ce7fae1db05e589f03a79506a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680582"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721255"
 ---
 # <a name="cvslistbox-class"></a>CVSListBox 클래스
 `CVSListBox` 클래스는 편집할 수 있는 목록 컨트롤을 지원 합니다.  
@@ -124,14 +124,14 @@ virtual int AddItem(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *strIext*  
- 문자열에 대 한 참조입니다.  
+*strIext*<br/>
+[in] 문자열에 대 한 참조입니다.  
   
- [in] *dwData*  
- 문자열을 사용 하 여 연결 되는 응용 프로그램별 32 비트 값입니다. 기본값은 0입니다.  
+*dwData*<br/>
+[in] 문자열을 사용 하 여 연결 되는 응용 프로그램별 32 비트 값입니다. 기본값은 0입니다.  
   
- [in] *iIndex*  
- 문자열을 포함 하는 위치의 0부터 시작 하는 인덱스입니다. 경우는 *iIndex* 매개 변수가-1 이면 문자열이 목록의 끝에 추가 됩니다. 기본값은 -1입니다.  
+*iIndex*<br/>
+[in] 문자열을 포함 하는 위치의 0부터 시작 하는 인덱스입니다. 경우는 *iIndex* 매개 변수가-1 이면 문자열이 목록의 끝에 추가 됩니다. 기본값은 -1입니다.  
   
 ### <a name="return-value"></a>반환 값  
  목록 컨트롤에서 입력 문자열의 위치의 0부터 시작 하는 인덱스입니다.  
@@ -158,8 +158,8 @@ virtual BOOL EditItem(int iIndex);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iIndex*  
- 목록 컨트롤 항목의 0부터 시작 인덱스입니다.  
+*iIndex*<br/>
+[in] 목록 컨트롤 항목의 0부터 시작 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  편집 작업을 성공적으로 시작 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -188,8 +188,8 @@ virtual DWORD_PTR GetItemData(int iIndex) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iIndex*  
- 편집할 수 있는 목록 컨트롤 항목의 0부터 시작 하는 인덱스입니다.  
+*iIndex*<br/>
+[in] 편집할 수 있는 목록 컨트롤 항목의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정 된 항목과 연결 된 32 비트 값입니다.  
@@ -205,8 +205,8 @@ virtual CString GetItemText(int iIndex) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] `iIndex`  
- 편집할 수 있는 목록 컨트롤 항목의 0부터 시작 하는 인덱스입니다.  
+*iIndex*<br/>
+[in] 편집할 수 있는 목록 컨트롤 항목의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) 지정된 된 항목의 텍스트가 포함 된 개체입니다.  
@@ -246,8 +246,8 @@ virtual BOOL RemoveItem(int iIndex);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iIndex*  
- 편집할 수 있는 목록 컨트롤 항목의 0부터 시작 하는 인덱스입니다.  
+*iIndex*<br/>
+[in] 편집할 수 있는 목록 컨트롤 항목의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 지정된 된 항목이 제거 됩니다. 그렇지 않으면 FALSE입니다.  
@@ -262,8 +262,8 @@ virtual BOOL SelectItem(int iItem);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iItem*  
- 편집할 수 있는 목록 컨트롤 항목의 0부터 시작 하는 인덱스입니다.  
+*iItem*<br/>
+[in] 편집할 수 있는 목록 컨트롤 항목의 0부터 시작 하는 인덱스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -281,11 +281,11 @@ virtual void SetItemData(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *iIndex*  
- 편집할 수 있는 목록 컨트롤 항목의 0부터 시작 하는 인덱스입니다.  
+*iIndex*<br/>
+[in] 편집할 수 있는 목록 컨트롤 항목의 0부터 시작 하는 인덱스입니다.  
   
- [in] *dwData*  
- 32 비트 값입니다. 이 값은 응용 프로그램별 정수 또는 기타 데이터에 대 한 포인터 수 있습니다.  
+*dwData*<br/>
+[in] 32 비트 값입니다. 이 값은 응용 프로그램별 정수 또는 기타 데이터에 대 한 포인터 수 있습니다.  
   
 ### <a name="remarks"></a>설명  
   

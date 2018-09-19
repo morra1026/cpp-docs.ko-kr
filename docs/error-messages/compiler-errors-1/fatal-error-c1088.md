@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1041bc87822e5347e519f73e039056355825da2f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 570db0d6956be8345ef6ecae5a073bf28d2eee1d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196963"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111500"
 ---
 # <a name="fatal-error-c1088"></a>심각한 오류 C1088
-filetype 파일을 플러시할 수 없습니다. 'file': message  
-  
- 컴파일러에서 I/O 작업을 완료할 수 없습니다.
+
+filetype 파일을 플러시할 수 없습니다. 'file': message
+
+컴파일러에서 I/O 작업을 완료할 수 없습니다.

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c5e3ede7a9aeba58c84b39f346222adde17f682
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 46f676bbe61784adab40f90e329b87aa1c1aae52
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33685621"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026754"
 ---
 # <a name="improperschedulerattach-class"></a>improper_scheduler_attach 클래스
 이 클래스는 동일한 컨텍스트에 이미 연결된 `Scheduler` 개체에 대해 `Attach` 메서드를 호출하는 경우 발생하는 예외를 설명합니다.  
@@ -63,8 +63,8 @@ improper_scheduler_attach() throw();
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Message`  
- 오류 설명 메시지입니다.  
+*메시지 (_m)*<br/>
+오류 설명 메시지입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Namespace 동시성](concurrency-namespace.md)   

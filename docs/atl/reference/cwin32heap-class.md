@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c8081b5a85b09f513152861cb09758b61df8d9b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d3b10648a3251a705085e31559a98b6ee4957c72
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763255"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088477"
 ---
 # <a name="cwin32heap-class"></a>CWin32Heap 클래스
 
@@ -101,7 +101,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nBytes*  
+*nBytes*<br/>
 새 메모리 블록의 요청된 바이트 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -124,10 +124,10 @@ void Attach(HANDLE hHeap, bool bTakeOwnership) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*hHeap*  
+*hHeap*<br/>
 기존 힙 핸들입니다.
 
-*bTakeOwnership*  
+*bTakeOwnership*<br/>
 플래그 나타내는 경우는 `CWin32Heap` 개체가 힙의 리소스에 대 한 소유권을 합니다.
 
 ### <a name="remarks"></a>설명
@@ -149,16 +149,16 @@ CWin32Heap(
 
 ### <a name="parameters"></a>매개 변수
 
-*hHeap*  
+*hHeap*<br/>
 기존 힙 개체입니다.
 
-*dwFlags*  
+*dwFlags*<br/>
 힙을 만드는 데 사용되는 플래그입니다.
 
-*nInitialSize*  
+*nInitialSize*<br/>
 힙의 초기 크기입니다.
 
-*nMaxSize*  
+*nMaxSize*<br/>
 힙의 최대 크기입니다.
 
 ### <a name="remarks"></a>설명
@@ -213,7 +213,7 @@ virtual void Free(void* p) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 사용 가능한 메모리의 블록에 대 한 포인터입니다. NULL 유효한 값 이며 아무 작업도 수행 합니다.
 
 ##  <a name="getsize"></a>  CWin32Heap::GetSize
@@ -226,7 +226,7 @@ virtual size_t GetSize(void* p) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 메서드는 가져옵니다 크기가 메모리 블록에 대 한 포인터입니다. 이것은 포인터가 반환한 [CWin32Heap::Allocate](#allocate) 하거나 [CWin32Heap::Reallocate](#reallocate)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -263,10 +263,10 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 다시 할당할 메모리 블록에 대한 포인터입니다.
 
-*nBytes*  
+*nBytes*<br/>
 할당된 블록의 새 크기(바이트)입니다. 블록은 더 크거나 작을 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -279,9 +279,9 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 개요](../../atl/atl-class-overview.md)   
-[IAtlMemMgr 클래스](../../atl/reference/iatlmemmgr-class.md)   
-[CLocalHeap 클래스](../../atl/reference/clocalheap-class.md)   
-[CGlobalHeap 클래스](../../atl/reference/cglobalheap-class.md)   
-[CCRTHeap 클래스](../../atl/reference/ccrtheap-class.md)   
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
+[IAtlMemMgr 클래스](../../atl/reference/iatlmemmgr-class.md)<br/>
+[CLocalHeap 클래스](../../atl/reference/clocalheap-class.md)<br/>
+[CGlobalHeap 클래스](../../atl/reference/cglobalheap-class.md)<br/>
+[CCRTHeap 클래스](../../atl/reference/ccrtheap-class.md)<br/>
 [CComHeap 클래스](../../atl/reference/ccomheap-class.md)

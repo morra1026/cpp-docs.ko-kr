@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 588f12e04f3a2833da6d67c07ab41929d916a4b5
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: def102ecb8063f82d90d41b2b678ff22638b1f8b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705213"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116011"
 ---
 # <a name="invalidcomputedomain-class"></a>invalid_compute_domain 클래스
-런타임에에서 지정 된 계산 도메인을 사용 하 여 커널을 시작할 수 없는 경우 throw 되는 예외는 [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each) 호출 사이트입니다.  
+런타임에서에서 지정 된 계산 도메인을 사용 하 여 커널을 시작할 수 없는 경우 throw 되는 예외를 [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each) 호출 사이트입니다.  
 
   
 ## <a name="syntax"></a>구문  
@@ -70,8 +70,8 @@ invalid_compute_domain() throw();
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Message`  
- 오류에 대한 설명입니다.  
+*메시지 (_m)*<br/>
+오류에 대한 설명입니다.  
   
 ### <a name="return-value"></a>반환 값  
  인스턴스는 `invalid_compute_domain` 클래스  

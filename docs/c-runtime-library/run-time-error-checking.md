@@ -17,18 +17,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2468cd05efdf732fbf955b8532a61d24fa6c0ff4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: eaa4972a12729a5697db3574fcf89b0fb2b252ff
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409126"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068457"
 ---
 # <a name="run-time-error-checking"></a>런타임 오류 검사
 
 C 런타임 라이브러리에는 RTC(런타임 오류 검사)를 지원하는 함수가 포함되어 있습니다. 런타임 오류 검사를 사용하면 특정 런타임 오류 종류가 보고되도록 프로그램을 빌드할 수 있습니다. 오류가 보고되는 방법과 보고되는 오류 종류를 지정합니다. 자세한 내용은 [방법: 네이티브 런타임 검사 기능 사용](/visualstudio/debugger/how-to-use-native-run-time-checks)을 참조하세요.
 
- 프로그램에서 런타임 오류 검사가 수행되는 방법을 사용자 지정하려면 다음 함수를 사용하십시오.
+프로그램에서 런타임 오류 검사가 수행되는 방법을 사용자 지정하려면 다음 함수를 사용하십시오.
 
 ## <a name="run-time-error-checking-functions"></a>런타임 오류 검사 함수
 
@@ -42,6 +42,6 @@ C 런타임 라이브러리에는 RTC(런타임 오류 검사)를 지원하는 �
 ## <a name="see-also"></a>참고 항목
 
 [범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>
- [/RTC(런타임 오류 검사)](../build/reference/rtc-run-time-error-checks.md)<br/>
- [runtime_checks](../preprocessor/runtime-checks.md)<br/>
- [디버그 루틴](../c-runtime-library/debug-routines.md)<br/>
+[/RTC(런타임 오류 검사)](../build/reference/rtc-run-time-error-checks.md)<br/>
+[runtime_checks](../preprocessor/runtime-checks.md)<br/>
+[디버그 루틴](../c-runtime-library/debug-routines.md)<br/>

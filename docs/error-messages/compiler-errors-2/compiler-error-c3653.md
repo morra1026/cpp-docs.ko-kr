@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a78dd5a9c52c9dfc845de43c62ae38180d0d079f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8d0409317cb0cdf6a248554cba2e18d7f9d2e0e0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33266463"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019005"
 ---
 # <a name="compiler-error-c3653"></a>컴파일러 오류 C3653
-'function': 명명된 된 재정의로 사용할 수 없습니다: 재정의 되; 함수 함수를 사용 하 여 명시적으로 이름을 하 였는:: operator?  
-  
- 명시적 재정의 모든 인터페이스에서 찾을 수 없는 함수를 지정 합니다. 자세한 내용은 참조 [명시적으로 재정의](../../windows/explicit-overrides-cpp-component-extensions.md)합니다.  
-  
- 다음 샘플에서는 C3653 오류가 생성 됩니다.  
-  
-```  
-// C3653.cpp  
-// compile with: /clr  
-public interface struct I {  
-   void h();  
-};  
-  
-public ref struct X : public I {  
-   virtual void f() new sealed = J {};   // C3653 no J in scope  
-   virtual void g() {}   // OK  
-   virtual void h() new sealed = I::h {};   // OK  
-};  
+
+'function': 명명된 된 재정의로 사용할 수 없습니다: 찾은; 재정의 되는 함수 함수를 사용 하 여 명시적으로 이름을 하 였는:: operator?
+
+명시적 재정의 모든 인터페이스에서 찾을 수 없는 함수를 지정 합니다. 자세한 내용은 [명시적으로 재정의](../../windows/explicit-overrides-cpp-component-extensions.md)합니다.
+
+다음 샘플에서는 C3653를 생성합니다.
+
+```
+// C3653.cpp
+// compile with: /clr
+public interface struct I {
+   void h();
+};
+
+public ref struct X : public I {
+   virtual void f() new sealed = J {};   // C3653 no J in scope
+   virtual void g() {}   // OK
+   virtual void h() new sealed = I::h {};   // OK
+};
 ```

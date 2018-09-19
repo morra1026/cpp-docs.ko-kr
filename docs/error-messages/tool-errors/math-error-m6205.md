@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e8d7fbd042d8ce8210ec4fe275b0d83314f5d12
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 55549300a5ea603e4462d5b81679f935319838ca
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33322070"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46099756"
 ---
 # <a name="math-error-m6205"></a>수학 오류 M6205
-'function': _TLOSS 오류  
-  
- 중요 (전체 자릿수)는 전체 손실이 발생 했습니다.  
-  
- 이 오류 cos, sin, 피연산자와 매우 큰 숫자를 지정 하 여 발생할 수 있습니다 또는 0에서 2 사이의 숫자를 줄여야 하는 피연산자 tan * pi 합니다.
+
+'function': _TLOSS 오류
+
+중요 (전체 자릿수)는 전체 손실이 발생 했습니다.
+
+이 오류는 cos, sin의 피연산자로 매우 큰 숫자를 지정 하 여 것일 수 있습니다 또는 0과 2 사이의 숫자를 줄여야 하는 피연산자 tan * pi입니다.

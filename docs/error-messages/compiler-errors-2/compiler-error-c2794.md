@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2cee2ce072f3dfe106434443ba28047cf7b58284
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4c81e8dcfde2a24c4a827406c3e499c12e891b2f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33237394"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068015"
 ---
 # <a name="compiler-error-c2794"></a>컴파일러 오류 C2794
-'function': 클래스는 직접 또는 간접 기본 클래스의 'class'의 구성원이 아닙니다  
-  
- 사용 하려는 [super](../../cpp/super.md) 존재 하지 않는 멤버 함수를 호출 합니다.  
-  
- 다음 샘플에서는 C2794  
-  
-```  
-// C2794.cpp  
-struct B {  
-   void mf();  
-};  
-  
-struct D : B {  
-   void mf() {  
-      __super::f();  // C2794  
-   }  
-};  
+
+'function': 'class' 모든 직접 또는 간접 기본 클래스의 멤버가 아닙니다.
+
+사용 하려는 [super](../../cpp/super.md) 존재 하지 않는 멤버 함수를 호출 합니다.
+
+다음 샘플에서는 C2794
+
+```
+// C2794.cpp
+struct B {
+   void mf();
+};
+
+struct D : B {
+   void mf() {
+      __super::f();  // C2794
+   }
+};
 ```

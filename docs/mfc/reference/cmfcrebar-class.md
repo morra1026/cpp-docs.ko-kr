@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af74ab381293e04c08a1fa8c601558edaeacf6c4
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 0336cb9bd2f0e12c834615647cb4a442ab261316
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43689194"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721515"
 ---
 # <a name="cmfcrebar-class"></a>CMFCReBar 클래스
 `CMFCReBar` 개체 레이아웃, 지 속성 및 rebar 컨트롤에 대 한 상태 정보를 제공 하는 컨트롤 막대입니다.  
@@ -113,20 +113,20 @@ BOOL AddBar(
  [in] [out] *pBar*  
  Rebar에 삽입 되는 자식 창에 대 한 포인터입니다. 참조 된 개체에 있어야 합니다 **WS_CHILD** 창 스타일입니다.  
   
- [in] *pszText*  
- Rebar에 표시할 텍스트를 지정 합니다. 텍스트를 자식 창에 속하지 않습니다. 대신, rebar 자체에 표시 됩니다.  
+*pszText*<br/>
+[in] Rebar에 표시할 텍스트를 지정 합니다. 텍스트를 자식 창에 속하지 않습니다. 대신, rebar 자체에 표시 됩니다.  
   
  [in] [out] *pbmp*  
  Rebar 백그라운드에 표시할 비트맵을 지정 합니다.  
   
- [in] *dwStyle*  
- 밴드에 적용할 스타일을 포함 합니다. 대역 외 스타일의 전체 목록은에 대 한 설명을 참조 하세요 `fStyle` 에 [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) Windows SDK 설명서의 구조입니다.  
+*dwStyle*<br/>
+[in] 밴드에 적용할 스타일을 포함 합니다. 대역 외 스타일의 전체 목록은에 대 한 설명을 참조 하세요 `fStyle` 에 [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) Windows SDK 설명서의 구조입니다.  
   
- [in] *clrFore*  
- Rebar의 전경색을 나타냅니다.  
+*clrFore*<br/>
+[in] Rebar의 전경색을 나타냅니다.  
   
- [in] *clrBack*  
- Rebar의 배경색을 나타냅니다.  
+*clrBack*<br/>
+[in] Rebar의 배경색을 나타냅니다.  
   
 ### <a name="return-value"></a>반환 값  
  밴드 rebar;에 성공적으로 추가 된 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -146,14 +146,14 @@ BOOL Create(
  [in] [out] *pParentWnd*  
  이 rebar 컨트롤의 부모 창에 대 한 포인터입니다.  
   
- [in] *dwCtrlStyle*  
- Rebar 컨트롤의 스타일을 지정합니다. 기본 스타일 값은 **RBS_BANDBORDERS**는 표시 좁힐 선으로 인접 한 rebar 컨트롤 밴드를 구분 합니다. 유효한 스타일의 목록은 참조 하세요 [Rebar 컨트롤 스타일](/windows/desktop/Controls/rebar-control-styles) Windows SDK 설명서의 합니다.  
+*dwCtrlStyle*<br/>
+[in] Rebar 컨트롤의 스타일을 지정합니다. 기본 스타일 값은 **RBS_BANDBORDERS**는 표시 좁힐 선으로 인접 한 rebar 컨트롤 밴드를 구분 합니다. 유효한 스타일의 목록은 참조 하세요 [Rebar 컨트롤 스타일](/windows/desktop/Controls/rebar-control-styles) Windows SDK 설명서의 합니다.  
   
- [in] *dwStyle*  
- Rebar 컨트롤의 창 스타일입니다. 유효한 스타일의 목록은 참조 하세요 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  
+*dwStyle*<br/>
+[in] Rebar 컨트롤의 창 스타일입니다. 유효한 스타일의 목록은 참조 하세요 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  
   
- [in] *nID*  
- Rebar의 자식 창 id입니다.  
+*nID*<br/>
+[in] Rebar의 자식 창 id입니다.  
   
 ### <a name="return-value"></a>반환 값  
  Rebar 성공적으로 만들어진 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -183,8 +183,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bStretch*  
- [in] *bHorz*  
+*bStretch*<br/>
+[in] [in] *bHorz*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -248,8 +248,8 @@ virtual INT_PTR OnToolHitTest(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- [in] *pTI*  
+*지점*<br/>
+[in] [in] *pTI*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -265,8 +265,8 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pTarget*  
- [in] *bDisableIfNoHndler*  
+*pTarget*<br/>
+[in] [in] *bDisableIfNoHndler*  
   
 ### <a name="remarks"></a>설명  
   

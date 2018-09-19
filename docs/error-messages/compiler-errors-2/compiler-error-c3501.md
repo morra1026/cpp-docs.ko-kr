@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a74c3f06165765f971a8999dfe80412dd99dc719
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bdf614c8b04dc9695d870aa8254cff8a2b75ca26
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33253428"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086280"
 ---
 # <a name="compiler-error-c3501"></a>컴파일러 오류 C3501
-typelib가 없습니다. 'progid' ProgID에 대 한 등록  
-  
- 에 대 한 클래스 ID는 지정 된 progid에 없는 연결된 형식 라이브러리. 따라서 전달할 수 없습니다이를 progid는 `#import` 문.
+
+typelib가 없습니다. 'progid' ProgID에 대 한 등록
+
+에 대 한 클래스 ID를 지정 된 progid 없는 연결된 형식 라이브러리를 합니다. 따라서 전달할 수 없습니다이에 progid는 `#import` 문입니다.

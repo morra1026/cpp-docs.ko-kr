@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27cac655dc716904c1d4bf6c9f0aff092c902853
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 57a5bb6ac27192b8e5b0ffe6c1c343bbeab5a508
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293977"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043874"
 ---
 # <a name="command-line-error-d8021"></a>명령줄 오류 D8021
-'number' 숫자 인수가 잘못 되었습니다.  
-  
- 65534 보다 큰 숫자를 숫자 인수로 지정 되었습니다.
+
+'number' 숫자 인수가 잘못 되었습니다
+
+65,534 보다 큰 숫자를 숫자 인수로 지정 되었습니다.

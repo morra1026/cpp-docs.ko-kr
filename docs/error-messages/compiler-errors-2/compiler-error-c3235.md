@@ -16,27 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6101d6f3d15e0276697130f26627ced593fef0a9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d156a9c1a6cda2ad8bb15e31034927b39a1a82e8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252247"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027871"
 ---
 # <a name="compiler-error-c3235"></a>컴파일러 오류 C3235
-'specialization': 제네릭 클래스의 명시적 특수화 또는 부분 특수화는 허용되지 않습니다.  
-  
- 명시적 특수화 또는 부분 특수화에 제네릭 클래스를 사용할 수 없습니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C3235를 생성합니다.  
-  
-```  
-// C3235.cpp  
-// compile with: /clr  
-generic<class T>  
-public ref class C {};  
-  
-generic<>  
-public ref class C<int> {};   // C3235 Remove this specialization to resolve this error.  
+
+'specialization': 제네릭 클래스의 명시적 특수화 또는 부분 특수화는 허용되지 않습니다.
+
+명시적 특수화 또는 부분 특수화에 제네릭 클래스를 사용할 수 없습니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C3235를 생성합니다.
+
+```
+// C3235.cpp
+// compile with: /clr
+generic<class T>
+public ref class C {};
+
+generic<>
+public ref class C<int> {};   // C3235 Remove this specialization to resolve this error.
 ```

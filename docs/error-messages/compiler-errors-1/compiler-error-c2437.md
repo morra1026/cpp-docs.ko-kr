@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc9c619ac361fcbe2d095407b4030a2e38ada8ad
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 893c037e7efd363b8d867ef181db5a8df001d3c4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33224426"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047943"
 ---
 # <a name="compiler-error-c2437"></a>컴파일러 오류 C2437
-'identifier': 이미 초기화 되었습니다.  
-  
- 개체는 한 번만 초기화할 수 있습니다.  
-  
- 다음 샘플에서는 C2437 오류가 생성 됩니다.  
-  
-```  
-// C2437.cpp  
-// compile with: /c  
-class A {  
-public:  
-   A(int i) {}  
-};  
-  
-class B : A {  
-   B() : A(1), A(2) {}   // C2437  
-   B() : A(1) {}   // OK  
-};  
+
+'identifier': 이미 초기화 되었습니다.
+
+개체는 한 번만 초기화할 수 있습니다.
+
+다음 샘플에서는 C2437 오류가 생성 됩니다.
+
+```
+// C2437.cpp
+// compile with: /c
+class A {
+public:
+   A(int i) {}
+};
+
+class B : A {
+   B() : A(1), A(2) {}   // C2437
+   B() : A(1) {}   // OK
+};
 ```

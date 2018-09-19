@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84f76c5b5ae8212e463a7022680ffca5dd4ca498
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bb64f1f0c2a8c5af2a8b8625cd1a05c530066185
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33163663"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046155"
 ---
 # <a name="compiler-error-c2089"></a>컴파일러 오류 C2089
-'identifier': ' s-k ' 너무 커서  
-  
- 지정 된 구조체 또는 공용 구조체에 4GB의 제한을 초과합니다.
+
+'identifier': ' 클래스 키 ' 너무 큽니다.
+
+지정 된 구조체 또는 공용 구조체에 최대 크기는 4GB를 초과합니다.

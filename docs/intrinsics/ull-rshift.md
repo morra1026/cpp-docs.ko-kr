@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c834b3b2284a7a5ae660870b840d3275c985dc9e
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 9ad07e225afbfe0c69b5115cfb566ef722eb81e3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540100"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722665"
 ---
 # <a name="ullrshift"></a>__ull_rshift
 **Microsoft 전용**  
@@ -39,11 +39,11 @@ unsigned __int64 __ull_rshift(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `mask`  
- 오른쪽 시프트 64 비트 정수 값입니다.  
+*마스크*<br/>
+[in] 오른쪽 시프트 64 비트 정수 값입니다.  
   
- [in] `nBit`  
- X86, 32 모듈로 및 x64 64 모듈로 이동할 비트 수입니다.  
+*nBit*<br/>
+[in] X86, 32 모듈로 및 x64 64 모듈로 이동할 비트 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
  으로 이동 하 여 마스크 `nBit` 비트입니다.  
@@ -59,7 +59,7 @@ unsigned __int64 __ull_rshift(
 ## <a name="remarks"></a>설명  
  두 번째 매개 변수 31 이동할 비트 수를 결정할 수 32 (x64 64) 모듈로 수행 되는 x86 (x64 63) 보다 큰 경우. 합니다 `ull` 이름을 나타냅니다 `unsigned long long (unsigned __int64)`합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // ull_rshift.cpp  

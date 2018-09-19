@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68e6b4730be3679e4309a298d40657dcecde94b6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9eb111b3fa1376be8a43bfc9a04c7865164bff76
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755712"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46084577"
 ---
 # <a name="idispeventsimpleimpl-class"></a>IDispEventSimpleImpl 클래스
 
@@ -42,19 +42,19 @@ ms.locfileid: "43755712"
 ## <a name="syntax"></a>구문
 
 ```
-template <UINT nID, class T, const IID* pdiid>  
+template <UINT nID, class T, const IID* pdiid>
 class ATL_NO_VTABLE IDispEventSimpleImpl : public _IDispEventLocator<nID, pdiid>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*nID*  
+*nID*<br/>
 원본 개체에 대 한 고유 식별자입니다. 때 `IDispEventSimpleImpl` 기본 클래스인 복합 컨트롤의 경우이 매개 변수에 대해 원하는 포함 된 컨트롤의 리소스 ID를 사용 합니다. 다른 경우에는 임의의 양의 정수를 사용 합니다.
 
-*T*  
+*T*<br/>
 사용자의 클래스에서 파생 된 `IDispEventSimpleImpl`합니다.
 
-*pdiid*  
+*pdiid*<br/>
 이 클래스에서 구현 되는 이벤트 인터페이스의 IID에 대 한 포인터입니다.
 
 ## <a name="members"></a>멤버
@@ -119,7 +119,7 @@ HRESULT Advise(IUnknown* pUnk);
 
 ### <a name="parameters"></a>매개 변수
 
-*pUnk*  
+*pUnk*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 이벤트 소스 개체의 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -145,10 +145,10 @@ HRESULT DispEventAdvise(IUnknown* pUnk  const IID* piid);
 
 ### <a name="parameters"></a>매개 변수
 
-*pUnk*  
+*pUnk*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 이벤트 소스 개체의 인터페이스입니다.
 
-*piid*  
+*piid*<br/>
 이벤트 소스 개체의 IID에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -174,10 +174,10 @@ HRESULT DispEventUnadvise(IUnknown* pUnk  const IID* piid);
 
 ### <a name="parameters"></a>매개 변수
 
-*pUnk*  
+*pUnk*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 이벤트 소스 개체의 인터페이스입니다.
 
-*piid*  
+*piid*<br/>
 이벤트 소스 개체의 IID에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -267,7 +267,7 @@ HRESULT Unadvise(IUnknown* pUnk);
 
 ### <a name="parameters"></a>매개 변수
 
-*pUnk*  
+*pUnk*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 이벤트 소스 개체의 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -287,8 +287,8 @@ S_OK 또는 모든 오류 HRESULT 값입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[_ATL_FUNC_INFO 구조체](../../atl/reference/atl-func-info-structure.md)   
-[IDispatchImpl 클래스](../../atl/reference/idispatchimpl-class.md)   
-[IDispEventImpl 클래스](../../atl/reference/idispeventimpl-class.md)   
-[SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)   
+[_ATL_FUNC_INFO 구조체](../../atl/reference/atl-func-info-structure.md)<br/>
+[IDispatchImpl 클래스](../../atl/reference/idispatchimpl-class.md)<br/>
+[IDispEventImpl 클래스](../../atl/reference/idispeventimpl-class.md)<br/>
+[SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

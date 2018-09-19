@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f121310318cbb91b1f983ec240b42d5d9ea34b8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f9c533ada388f876443021fbf159320f171a07a5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299964"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041847"
 ---
 # <a name="command-line-error-d8036"></a>명령줄 오류 D8036
-'/option' 여러 소스 파일과 함께 사용할 수 없습니다  
-  
- 여러 소스 파일에서이 컴파일러 옵션을 사용할 수 없습니다.  
-  
--   어셈블리 파일 목록 이름 (/ Fa)  
-  
--   개체 파일 이름 바꾸기 (/ Fo)  
-  
--   지역 변수 없이 소스 브라우저 정보 만들기 (/ Fr)  
-  
--   지역 변수를 포함 하는 소스 브라우저 정보 만들기 (/ FR)
+
+'/option' 여러 소스 파일과 함께 사용할 수 없습니다
+
+여러 소스 파일을 사용 하 여 이러한 컴파일러 옵션을 사용할 수 없습니다.
+
+- 어셈블리 파일 목록 이름 (/ Fa)
+
+- 개체 파일 이름 바꾸기 (/ Fo)
+
+- 지역 변수 없는 브라우저 정보 소스를 만듭니다 (/ Fr)
+
+- 지역 변수를 포함 하는 소스 브라우저 정보를 만듭니다 (/ FR)

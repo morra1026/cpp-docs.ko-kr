@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bb24b1d00c7c70b545213a64e685f238d6b5157
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f69172986a2f9bd3ca7c0b2373bb815a2f52186b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757964"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029015"
 ---
 # <a name="cprivateobjectsecuritydesc-class"></a>CPrivateObjectSecurityDesc 클래스
 
@@ -93,16 +93,16 @@ bool ConvertToAutoInherit(
 
 ### <a name="parameters"></a>매개 변수
 
-*pParent*  
+*pParent*<br/>
 에 대 한 포인터를 [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) 개체의 부모 컨테이너를 참조 하는 개체입니다. 부모 컨테이너가 없는 경우이 매개 변수는 NULL입니다.
 
-*ObjectType*  
+*ObjectType*<br/>
 에 대 한 포인터를 `GUID` 현재 개체와 연결 된 개체의 형식을 식별 하는 구조입니다. 설정할 *ObjectType* 개체에 GUID가 없는 경우 null입니다.
 
-*bIsDirectoryObject*  
+*bIsDirectoryObject*<br/>
 새 개체가 다른 개체를 포함할 수 있는지 여부를 지정 합니다. 값이 true 이면 새 개체 컨테이너 임을 나타냅니다. False 이면 새 개체 컨테이너 임을 나타냅니다.
 
-*GenericMapping*  
+*GenericMapping*<br/>
 에 대 한 포인터를 [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-_generic_mapping) 개체에 대 한 특정 권한 각 제네릭 오른쪽에서 매핑을 지정 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -161,28 +161,28 @@ bool Create(
 
 ### <a name="parameters"></a>매개 변수
 
-*pParent*  
+*pParent*<br/>
 에 대 한 포인터를 [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) 새 개체를 작성 하는 부모 디렉터리를 참조 하는 개체입니다. 부모 디렉터리가 없는 경우 NULL로 설정 합니다.
 
-*pCreator*  
+*pCreator*<br/>
 개체의 작성자가 제공 하는 보안 설명자에 대 한 포인터입니다. 개체의 작성자는 새 개체에 대 한 보안 정보를 명시적으로 통과 하지 못하는 경우이 매개 변수를 NULL로 설정 합니다.
 
-*bIsDirectoryObject*  
+*bIsDirectoryObject*<br/>
 새 개체가 다른 개체를 포함할 수 있는지 여부를 지정 합니다. 값이 true 이면 새 개체 컨테이너 임을 나타냅니다. False 이면 새 개체 컨테이너 임을 나타냅니다.
 
-*토큰*  
+*토큰*<br/>
 에 대 한 참조를 [CAccessToken](../../atl/reference/caccesstoken-class.md) 주체인 개체 만들어지는 클라이언트 프로세스에 대 한 개체입니다.
 
-*GenericMapping*  
+*GenericMapping*<br/>
 에 대 한 포인터를 [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-_generic_mapping) 개체에 대 한 특정 권한 각 제네릭 오른쪽에서 매핑을 지정 하는 구조입니다.
 
-*ObjectType*  
+*ObjectType*<br/>
 에 대 한 포인터를 `GUID` 현재 개체와 연결 된 개체의 형식을 식별 하는 구조입니다. 설정할 *ObjectType* 개체에 GUID가 없는 경우 null입니다.
 
-*bIsContainerObject*  
+*bIsContainerObject*<br/>
 새 개체가 다른 개체를 포함할 수 있는지 여부를 지정 합니다. 값이 true 이면 새 개체 컨테이너 임을 나타냅니다. False 이면 새 개체 컨테이너 임을 나타냅니다.
 
-*AutoInheritFlags*  
+*AutoInheritFlags*<br/>
 액세스 제어 항목 (Ace)에서 상속 되는 방식을 제어 하는 비트 플래그 집합이 *pParent*합니다. 참조 [CreatePrivateObjectSecurityEx](https://msdn.microsoft.com/library/windows/desktop/aa446581) 대 한 자세한 내용은 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -210,10 +210,10 @@ bool Get(
 
 ### <a name="parameters"></a>매개 변수
 
-*si*  
+*si*<br/>
 검색할 보안 설명자의 부분을 나타내는 비트 플래그 집합입니다. 이 값의 조합 수를 [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) 비트 플래그입니다.
 
-*pResult*  
+*pResult*<br/>
 에 대 한 포인터를 [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) 지정 된 보안 설명자에서 요청 된 정보의 복사본을 받는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -234,7 +234,7 @@ CPrivateObjectSecurityDesc& operator= (const CPrivateObjectSecurityDesc& rhs) th
 
 ### <a name="parameters"></a>매개 변수
 
-*rhs*  
+*rhs*<br/>
 `CPrivateObjectSecurityDesc` 현재 개체에 할당할 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -262,19 +262,19 @@ bool Set(
 
 ### <a name="parameters"></a>매개 변수
 
-*si*  
+*si*<br/>
 집합을 설정 하는 보안 설명자의 부분을 나타내는 비트 플래그입니다. 이 값의 조합 수를 [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) 비트 플래그입니다.
 
-*수정*  
+*수정*<br/>
 에 대 한 포인터를 [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) 개체입니다. 이 보안 설명자의 부분에 나타난 합니다 *si* 매개 변수 개체의 보안 설명자에 적용 됩니다.
 
-*GenericMapping*  
+*GenericMapping*<br/>
 에 대 한 포인터를 [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-_generic_mapping) 개체에 대 한 특정 권한 각 제네릭 오른쪽에서 매핑을 지정 하는 구조입니다.
 
-*토큰*  
+*토큰*<br/>
 에 대 한 참조를 [CAccessToken](../../atl/reference/caccesstoken-class.md) 주체인 개체 만들어지는 클라이언트 프로세스에 대 한 개체입니다.
 
-*AutoInheritFlags*  
+*AutoInheritFlags*<br/>
 액세스 제어 항목 (Ace)에서 상속 되는 방식을 제어 하는 비트 플래그 집합이 *pParent*합니다. 참조 [CreatePrivateObjectSecurityEx](https://msdn.microsoft.com/library/windows/desktop/aa446581) 대 한 자세한 내용은 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -287,7 +287,7 @@ bool Set(
 
 ## <a name="see-also"></a>참고 항목
 
-[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)   
-[클래스 개요](../../atl/atl-class-overview.md)   
-[보안 전역 함수](../../atl/reference/security-global-functions.md)   
+[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)<br/>
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
+[보안 전역 함수](../../atl/reference/security-global-functions.md)<br/>
 [CSecurityDesc 클래스](../../atl/reference/csecuritydesc-class.md)

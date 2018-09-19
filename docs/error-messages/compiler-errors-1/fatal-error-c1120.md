@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 292d1b4ea2334e1f052e7334890ceb728390fbc5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b68d805ce400e4beb735ddec66006f75cdba23a1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197249"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032941"
 ---
 # <a name="fatal-error-c1120"></a>심각한 오류 C1120
-'function'에 대 한 실패 한 GetProcAddress 호출이  
-  
- 이 오류는 Visual c + +를 다시 설치 해야 합니다. 나타냅니다.
+
+'function'에 대 한 실패 한 GetProcAddress 호출이
+
+이 오류는 Visual c + +를 다시 설치 해야 나타냅니다.

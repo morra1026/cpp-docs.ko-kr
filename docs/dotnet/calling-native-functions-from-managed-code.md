@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 3ef47e3aeb8cfb18dd1eb6497c593d8cec26081b
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 002093a6a9044c65e5780035ad6c19db35d6b648
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43678452"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116752"
 ---
 # <a name="calling-native-functions-from-managed-code"></a>관리 코드에서 네이티브 함수 호출
 공용 언어 런타임 Platform Invocation Services 또는 PInvoke를는 관리 되는 네이티브 동적 연결 라이브러리 (Dll)의 C 스타일 함수를 호출 하는 코드를 제공 합니다. COM 상호 운용성 It Just Works, "ijw 메커니즘은 런타임에서 동일한 데이터 마샬링이 사용 됩니다.  
@@ -105,7 +105,7 @@ int main() {
   
  이 예제에서는 Visual c + + 프로그램을 Win32 API의 일부인 MessageBox 함수와 상호 운용 합니다.  
   
-```  
+```cpp  
 // platform_invocation_services_4.cpp  
 // compile with: /clr /c  
 using namespace System;  
@@ -132,16 +132,17 @@ int main() {
   
  Visual c + + 응용 프로그램에서 PInvoke를 사용 하는 경우 다음과 유사한 코드를 작성 해야 합니다.  
   
- `[DllImport("mylib")]`  
-  
- `extern "C" String * MakeSpecial([MarshalAs(UnmanagedType::LPStr)] String ^);`  
+```cpp
+[DllImport("mylib")]
+extern "C" String * MakeSpecial([MarshalAs(UnmanagedType::LPStr)] String ^);
+```
   
  이 경우 makespecial 반환 되는 관리 되지 않는 문자열에 대 한 메모리를 삭제할 수 없습니다. PInvoke를 통해 호출 된 다른 함수는 사용자가 할당을 해제할 수 없는 내부 버퍼에 대 한 포인터를 반환 합니다. 이 경우 IJW 기능을 사용 하는 것이 좋습니다.  
   
 ## <a name="limitations-of-pinvoke"></a>PInvoke의 제한 사항  
  네이티브 함수를 매개 변수로 사용 했던 것과 동일한 포인터를 반환할 수 없습니다. 네이티브 함수에 PInvoke에서 마샬링 한 포인터를 반환 합니다, 메모리 손상 되 고 예외 충돌 될 수 있습니다.  
   
-```  
+```cpp  
 __declspec(dllexport)  
 char* fstringA(char* param) {  
    return param;  

@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75689c07718bf066105920b566087c08a220a7de
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: e5b550cd0b76aa0a2e061536ae6bb0ea61063909
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408808"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087749"
 ---
 # <a name="partial-ordering-of-function-templates-c"></a>함수 템플릿의 부분 순서 지정 (C++)
 
@@ -49,7 +49,7 @@ ms.locfileid: "39408808"
 
      4. __const T\*__  보다는 더욱 특수화 __T\*__ 이므로 __const X\*__  유효한 인수는를 __T\*__  템플릿 인수에 있지만 __X\*__  에 대 한 올바른 인수가 아닙니다.를 __const T\*__  템플릿 인수를 사용 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 샘플은 표준에 지정 된 대로 작동합니다.
 
@@ -82,15 +82,16 @@ int main() {
    f(cpi); // Calls even more specialized function.
    // Without partial ordering, these calls would be ambiguous.
 }
-```  
-  
-### <a name="output"></a>출력  
-  
-```Output  
-Less specialized function called  
-More specialized function called  
-Even more specialized function for const T*  
-```  
-  
+```
+
+### <a name="output"></a>출력
+
+```Output
+Less specialized function called
+More specialized function called
+Even more specialized function for const T*
+```
+
 ## <a name="see-also"></a>참고자료
- [함수 템플릿](../cpp/function-templates.md)
+
+[함수 템플릿](../cpp/function-templates.md)

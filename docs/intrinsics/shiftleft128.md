@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e3ca2c389b00126ff477b8e184d690afce07c484
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 57846bab53e50f1644dcdc3ec817472e47793840
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540895"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725207"
 ---
 # <a name="shiftleft128"></a>__shiftleft128
 **Microsoft 전용**  
@@ -39,14 +39,14 @@ unsigned __int64 __shiftleft128(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `LowPart`  
- 이동할 128비트 수량 중 하위 64비트입니다.  
+*LowPart*<br/>
+[in] 이동할 128 비트 수량 중 하위 64 비트입니다.  
   
- [in] `HighPart`  
- 이동할 128비트 수량 중 상위 64비트입니다.  
+*HighPart*<br/>
+[in] 이동할 128 비트 수량 중 상위 64 비트입니다.  
   
- [in] `Shift`  
- 이동할 비트 수입니다.  
+*Shift*<br/>
+[in] 이동할 비트 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
  결과의 상위 64비트입니다.  
@@ -62,7 +62,7 @@ unsigned __int64 __shiftleft128(
 ## <a name="remarks"></a>설명  
  `Shift` 값은 항상 64로 나눈 나머지이므로 예를 들어 `__shiftleft128(1, 0, 64)`를 호출하면 함수는 하위 부분의 `0`비트를 왼쪽으로 이동하고 일반적인 경우에 반환되는 `0`이 아닌 상위 부분 `1`을 반환합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 // shiftleft128.c  

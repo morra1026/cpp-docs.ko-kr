@@ -8,18 +8,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be4ca30d42ab4404c5df229a9148d1b4d23dad99
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4aae6f2d901f4b7f0385cf5a78c303250dc0a956
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32385060"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076686"
 ---
 # <a name="function-family-overviews"></a>함수 패밀리 개요
-여기에 소개하는 내용을 삽입합니다.  
-  
-## <a name="section-heading"></a>단원 제목  
- 여기에 본문 섹션을 삽입합니다.  
-  
-### <a name="subsection-heading"></a>하위 단원 제목  
- 여기에 하위 단원 본문을 삽입합니다.
+
+여기에 소개하는 내용을 삽입합니다.
+
+## <a name="section-heading"></a>단원 제목
+
+여기에 본문 섹션을 삽입합니다.
+
+### <a name="subsection-heading"></a>하위 단원 제목
+
+여기에 하위 단원 본문을 삽입합니다.

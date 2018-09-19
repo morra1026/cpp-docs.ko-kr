@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22812808ce6e159c0f35d9dc2de8e269ecc23cac
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b37d9dc1e50da921bdbe758e73257100853517eb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33233137"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026161"
 ---
 # <a name="compiler-error-c2671"></a>컴파일러 오류 C2671
-'function': 정적 멤버 함수에는 'this' 포인터가 없는 합니다.  
-  
- A `static` 멤버 함수에 액세스 하려고 했습니다. `this`합니다.  
-  
- 다음 샘플에서는 C2671 오류가 생성 됩니다.  
-  
-```  
-// C2671.cpp  
-struct S {  
-   static S* const func() { return this; }  // C2671  
-};  
+
+'function': 정적 멤버 함수에 'this' 포인터가 없습니다.
+
+A `static` 멤버 함수에 액세스 하려고 `this`합니다.
+
+다음 샘플에서는 C2671 오류가 생성 됩니다.
+
+```
+// C2671.cpp
+struct S {
+   static S* const func() { return this; }  // C2671
+};
 ```

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b78bc955b43f3b6650f7a2fe654e5920c9cac971
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 1e7dc90ce1ff04d3d02aed13927f137a2b4f7f75
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705174"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113294"
 ---
 # <a name="invalidschedulerpolicykey-class"></a>invalid_scheduler_policy_key 클래스
 이 클래스는 잘못되었거나 알 수 없는 키가 `SchedulerPolicy` 개체 생성자에 전달된 경우 또는 `SchedulerPolicy` 개체의 `SetPolicyValue` 메서드에 `SetConcurrencyLimits` 메서드와 같은 기타 방법으로 변경해야 하는 키가 전달된 경우 발생하는 예외를 설명합니다.  
@@ -63,8 +63,8 @@ invalid_scheduler_policy_key() throw();
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Message`  
- 오류 설명 메시지입니다.  
+*메시지 (_m)*<br/>
+오류 설명 메시지입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Namespace 동시성](concurrency-namespace.md)   

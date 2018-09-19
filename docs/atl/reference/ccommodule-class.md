@@ -41,12 +41,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb135fc68e11a5af86fdccde949b8e1761160625
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: faf3080c6363ef0227b71e550ff658b1790d37b9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753281"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090700"
 ---
 # <a name="ccommodule-class"></a>CComModule 클래스
 
@@ -144,13 +144,13 @@ HRESULT GetClassObject(
 
 ### <a name="parameters"></a>매개 변수
 
-*rclsid*  
+*rclsid*<br/>
 [in] 만들 개체의 CLSID입니다.
 
-*riid*  
+*riid*<br/>
 [in] 요청된 된 인터페이스의 IID입니다.
 
-*ppv*  
+*ppv*<br/>
 [out] 로 식별 되는 인터페이스 포인터에 대 한 포인터 *riid*합니다. 개체는이 인터페이스를 지원 하지 않는 경우 *ppv* NULL로 설정 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -224,13 +224,13 @@ HRESULT Init(
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 [in] 개체 맵 항목의 배열에 대 한 포인터입니다.
 
-*h*  
+*h*<br/>
 [in] 에 전달 된 HINSTANCE `DLLMain` 또는 `WinMain`합니다.
 
-*plibid*  
+*plibid*<br/>
 [in] 프로젝트에 연결 된 형식 라이브러리의 LIBID 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -350,19 +350,19 @@ ATL_DEPRECATED HRESULT RegisterClassHelper(
 
 ### <a name="parameters"></a>매개 변수
 
-*clsid*  
+*clsid*<br/>
 [in] 등록할 개체의 CLSID입니다.
 
-*lpszProgID*  
+*lpszProgID*<br/>
 [in] 개체에 연결 된 ProgID입니다.
 
-*lpszVerIndProgID*  
+*lpszVerIndProgID*<br/>
 [in] 개체에 연결 된 버전 독립 ProgID입니다.
 
-*nDescID*  
+*nDescID*<br/>
 [in] 개체의 설명에 대 한 문자열 리소스의 식별자입니다.
 
-*dwFlags*  
+*dwFlags*<br/>
 [in] 스레딩 모델 레지스트리에 입력을 지정 합니다. 가능한 값은 THREADFLAGS_APARTMENT, THREADFLAGS_BOTH, 또는 AUTPRXFLAG입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -385,10 +385,10 @@ HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dwClsContext*  
+*dwClsContext*<br/>
 [in] 클래스 개체를 실행할의 컨텍스트를 지정 합니다. 가능한 값은 CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER, 또는 CLSCTX_LOCAL_SERVER입니다. 이러한 값에 대 한 참조 [CLSCTX](https://msdn.microsoft.com/library/windows/desktop/ms693716) Windows SDK에 있습니다.
 
-*dwFlags*  
+*dwFlags*<br/>
 [in] 클래스 개체에 연결 형식을 결정합니다. 가능한 값은 REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE, 또는 REGCLS_MULTI_SEPARATE입니다. 이러한 값에 대 한 참조 [REGCLS](/windows/desktop/api/combaseapi/ne-combaseapi-tagregcls) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -411,10 +411,10 @@ HRESULT RegisterServer(
 
 ### <a name="parameters"></a>매개 변수
 
-*bRegTypeLib*  
+*bRegTypeLib*<br/>
 [in] 형식 라이브러리를 등록할 적이 있는지 여부를 나타냅니다. 기본값은 FALSE입니다.
 
-*하면*  
+*하면*<br/>
 [in] 등록할 개체의 CLSID 가리킵니다. NULL (기본값), 개체 맵의 모든 개체를 등록할 경우.
 
 ### <a name="return-value"></a>반환 값
@@ -442,7 +442,7 @@ HRESULT RegisterTypeLib(LPCTSTR lpszIndex) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszIndex*  
+*lpszIndex*<br/>
 [in] 형식에서 문자열 `"\\N"`여기서 `N` TYPELIB 리소스의 정수 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -496,13 +496,13 @@ ATL_DEPRECATED HRESULT UnregisterClassHelper(
 
 ### <a name="parameters"></a>매개 변수
 
-*clsid*  
+*clsid*<br/>
 [in] 등록을 취소할 개체의 CLSID입니다.
 
-*lpszProgID*  
+*lpszProgID*<br/>
 [in] 개체에 연결 된 ProgID입니다.
 
-*lpszVerIndProgID*  
+*lpszVerIndProgID*<br/>
 [in] 개체에 연결 된 버전 독립 ProgID입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -526,10 +526,10 @@ inline HRESULT UnregisterServer(BOOL bUnRegTypeLib, const CLSID* pCLSID = NULL) 
 
 ### <a name="parameters"></a>매개 변수
 
-*bUnRegTypeLib*  
+*bUnRegTypeLib*<br/>
 True 이면 형식 라이브러리는도 등록 합니다.
 
-*하면*  
+*하면*<br/>
 등록을 취소할 개체의 CLSID 가리킵니다. 경우 NULL (기본값), 개체 맵의 모든 개체를 등록 취소 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -568,25 +568,25 @@ ATL_DEPRECATED HRESULT UpdateRegistryClass(
 
 ### <a name="parameters"></a>매개 변수
 
-*clsid*  
+*clsid*<br/>
 등록 하거나 등록을 취소할 개체의 CLSID입니다.
 
-*lpszProgID*  
+*lpszProgID*<br/>
 개체에 연결 된 ProgID입니다.
 
-*lpszVerIndProgID*  
+*lpszVerIndProgID*<br/>
 개체에 연결 된 버전 독립 ProgID입니다.
 
-*nDescID*  
+*nDescID*<br/>
 개체의 설명에 대 한 문자열 리소스의 식별자입니다.
 
-*szDesc*  
+*szDesc*<br/>
 개체의 설명을 포함 하는 문자열입니다.
 
-*dwFlags*  
+*dwFlags*<br/>
 스레딩 모델 레지스트리에 입력을 지정 합니다. 가능한 값은 THREADFLAGS_APARTMENT, THREADFLAGS_BOTH, 또는 AUTPRXFLAG입니다.
 
-*b 등록 하십시오*  
+*b 등록 하십시오*<br/>
 개체를 등록할지 여부를 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
@@ -621,16 +621,16 @@ virtual HRESULT UpdateRegistryFromResourceD(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszRes*  
+*lpszRes*<br/>
 [in] 리소스 이름입니다.
 
-*nResID*  
+*nResID*<br/>
 [in] 리소스 id입니다.
 
-*b 등록 하십시오*  
+*b 등록 하십시오*<br/>
 [in] 개체를 등록할지 여부를 나타냅니다.
 
-*pMapEntries*  
+*pMapEntries*<br/>
 [in] 스크립트의 대체 가능 매개 변수를 사용 하 여 연결 된 값을 저장 대체 지도에 대 한 포인터입니다. ATL 사용 하 여 자동으로 `%MODULE%`입니다. 추가 대체 가능 매개 변수를 사용 하려면 세부 정보에 대 한 설명을 참조 하세요. 그렇지 않으면 NULL 기본값을 사용 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -671,16 +671,16 @@ virtual HRESULT UpdateRegistryFromResourceS(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszRes*  
+*lpszRes*<br/>
 [in] 리소스 이름입니다.
 
-*nResID*  
+*nResID*<br/>
 [in] 리소스 id입니다.
 
-*b 등록 하십시오*  
+*b 등록 하십시오*<br/>
 [in] 리소스 스크립트를 등록할지 여부를 나타냅니다.
 
-*pMapEntries*  
+*pMapEntries*<br/>
 [in] 스크립트의 대체 가능 매개 변수를 사용 하 여 연결 된 값을 저장 대체 지도에 대 한 포인터입니다. ATL 사용 하 여 자동으로 `%MODULE%`입니다. 추가 대체 가능 매개 변수를 사용 하려면 세부 정보에 대 한 설명을 참조 하세요. 그렇지 않으면 NULL 기본값을 사용 합니다.
 
 ### <a name="return-value"></a>반환 값

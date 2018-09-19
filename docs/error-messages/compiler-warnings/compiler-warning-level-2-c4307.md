@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52914fc5825bda5647308c006b853538f3d6225e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ed18c213b35e79aaae98efa5932ac404a8d84bff
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292034"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46079195"
 ---
 # <a name="compiler-warning-level-2-c4307"></a>컴파일러 경고(수준 2) C4307
-'operator': 정수 계열 상수 오버플로입니다  
-  
- 연산자는 정수 계열 상수에 할당 된 공간 오버플로가 발생 하는 식에 사용 됩니다. 상수에 대해 더 큰 형식을 사용 해야 합니다. A **int 서명** 보다 작은 값을 저장 한 `unsigned int` 때문에 **int 서명** 1 비트가 부호를 사용 하 여 합니다.  
-  
- 다음 샘플에서는 C4307 오류가 생성 됩니다.  
-  
-```  
-// C4307.cpp  
-// compile with: /W2  
-int i = 2000000000 + 2000000000;   // C4307  
-int j = (unsigned)2000000000 + 2000000000;   // OK  
-  
-int main()  
-{  
-}  
+
+'operator': 정수 계열 상수가 오버플로 됩니다.
+
+연산자는 정수 상수에 할당 된 공간에 오버플로가 발생 하는 식에 사용 됩니다. 상수에 대 한 더 큰 형식을 사용 해야 합니다. **int 서명** 보다 작은 값을 저장를 `unsigned int` 때문에 **int 서명** 부호를 나타내는 1 비트를 사용 합니다.
+
+다음 샘플에서는 C4307 오류가 생성 됩니다.
+
+```
+// C4307.cpp
+// compile with: /W2
+int i = 2000000000 + 2000000000;   // C4307
+int j = (unsigned)2000000000 + 2000000000;   // OK
+
+int main()
+{
+}
 ```

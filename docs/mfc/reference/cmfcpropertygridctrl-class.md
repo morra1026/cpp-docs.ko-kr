@@ -160,12 +160,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 25e1c3fdad045b17b83f7562256592114a5c6e72
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: a9b17c62c767b6665f70e91bfd04dc03379e08ab
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680655"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724674"
 ---
 # <a name="cmfcpropertygridctrl-class"></a>CMFCPropertyGridCtrl 클래스
 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
@@ -332,8 +332,8 @@ virtual HRESULT accSelect(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *flagsSelect*  
- [in] *varChild*  
+*flagsSelect*<br/>
+[in] [in] *varChild*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -350,14 +350,14 @@ int AddProperty(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pProp*  
- 속성에 대 한 포인터입니다.  
+*pProp*<br/>
+[in] 속성에 대 한 포인터입니다.  
   
- [in] *bRedraw*  
- 즉시; 속성을 다시 그리게 TRUE 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
+*bRedraw*<br/>
+[in] 즉시; 속성을 다시 그리게 TRUE 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
   
- [in] *bAdjustLayout*  
- 텍스트 및 속성의 값을 그리고 다음 속성을 그리는 방법을 다시 계산. False 이면 속성을 그릴 기존 계산을 사용 합니다. 기본값은 TRUE입니다.  
+*bAdjustLayout*<br/>
+[in] 텍스트 및 속성의 값을 그리고 다음 속성을 그리는 방법을 다시 계산. False 이면 속성을 그릴 기존 계산을 사용 합니다. 기본값은 TRUE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드가 성공 하면; 속성이 추가 위치 속성 표 컨트롤에서 위치의 0부터 시작 인덱스 그렇지 않으면-1입니다.  
@@ -447,17 +447,17 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwStyle*  
- 비트 조합 (OR) [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  
+*dwStyle*<br/>
+[in] 비트 조합 (OR) [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  
   
- [in] *rect*  
- 클라이언트의 크기와 창의 위치를 지정 하는 경계 사각형의 좌표 *pParentWnd*합니다.  
+*rect*<br/>
+[in] 클라이언트의 크기와 창의 위치를 지정 하는 경계 사각형의 좌표 *pParentWnd*합니다.  
   
- [in] *pParentWnd*  
- 부모 창에 대 한 포인터입니다. NULL이 아니어야 합니다.  
+*pParentWnd*<br/>
+[in] 부모 창에 대 한 포인터입니다. NULL이 아니어야 합니다.  
   
- [in] *nID*  
- 자식 창 ID입니다.  
+*nID*<br/>
+[in] 자식 창 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
  창 성공적으로 만들어진 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -481,14 +481,14 @@ BOOL DeleteProperty(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pProp*  
- 속성에 대 한 포인터입니다.  
+*pProp*<br/>
+[in] 속성에 대 한 포인터입니다.  
   
- [in] *bRedraw*  
- 속성 그리드 컨트롤을 다시 그리게 TRUE 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
+*bRedraw*<br/>
+[in] 속성 그리드 컨트롤을 다시 그리게 TRUE 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
   
- [in] *bAdjustLayout*  
- 속성 표 컨트롤에서 모든 텍스트, 이미지 및 항목 그리고 다음 컨트롤을 그리는 방법을 다시 계산. 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
+*bAdjustLayout*<br/>
+[in] 속성 표 컨트롤에서 모든 텍스트, 이미지 및 항목 그리고 다음 컨트롤을 그리는 방법을 다시 계산. 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -517,11 +517,11 @@ virtual BOOL EditItem(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pProp*  
- 속성에 대 한 포인터입니다.  
+*pProp*<br/>
+[in] 속성에 대 한 포인터입니다.  
   
- [in] *lptClick*  
- 사용자가 클릭 한 편집 작업을 시작 하는 속성 표 컨트롤의 점입니다. 포인터가 컨트롤의 클라이언트 좌표에 있습니다. 기본값은 NULL입니다.  
+*lptClick*<br/>
+[in] 사용자가 클릭 한 편집 작업을 시작 하는 속성 표 컨트롤의 점입니다. 포인터가 컨트롤의 클라이언트 좌표에 있습니다. 기본값은 NULL입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -536,8 +536,8 @@ void EnableDescriptionArea(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 설명 영역;를 사용 하도록 설정 설명 영역을 사용 하지 않도록 설정 하려면 FALSE입니다. 기본값은 TRUE입니다.  
+*bEnable*<br/>
+[in] 설명 영역;를 사용 하도록 설정 설명 영역을 사용 하지 않도록 설정 하려면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
  설명 영역 속성 표 컨트롤의 맨 아래에 표시 됩니다. 기본적으로 설명 영역은 비활성화 되 고 표시 되지 않습니다.  
@@ -553,14 +553,14 @@ void EnableHeaderCtrl(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 헤더 컨트롤을 사용 하도록 설정 하려면 TRUE 헤더 컨트롤을 사용 하지 않도록 설정 하려면 FALSE입니다. 기본값은 TRUE입니다.  
+*bEnable*<br/>
+[in] 헤더 컨트롤을 사용 하도록 설정 하려면 TRUE 헤더 컨트롤을 사용 하지 않도록 설정 하려면 FALSE입니다. 기본값은 TRUE입니다.  
   
- [in] *lpszLeftColumn*  
- 제목 헤더 컨트롤의 왼쪽된 열입니다. 기본값은 **속성**합니다.  
+*lpszLeftColumn*<br/>
+[in] 제목 헤더 컨트롤의 왼쪽된 열입니다. 기본값은 **속성**합니다.  
   
- [in] *lpszRightColumn*  
- 제목 헤더 컨트롤의 오른쪽 열입니다. 기본값은 **값**합니다.  
+*lpszRightColumn*<br/>
+[in] 제목 헤더 컨트롤의 오른쪽 열입니다. 기본값은 **값**합니다.  
   
 ##  <a name="endedititem"></a>  CMFCPropertyGridCtrl::EndEditItem  
  사용자 속성을 수정 완료 되 면 프레임 워크에서 호출 됩니다.  
@@ -570,8 +570,8 @@ virtual BOOL EndEditItem(BOOL bUpdateData=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bUpdateData*  
- 편집 작업이 완료 되 면 수정 된 속성 데이터를 확인할 수 있어야 지정. 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
+*bUpdateData*<br/>
+[in] 편집 작업이 완료 되 면 수정 된 속성 데이터를 확인할 수 있어야 지정. 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  편집 작업을 성공적으로 종료 되 면 TRUE입니다. 편집 작업을 계속 해야 하는 경우 또는 수정 된 속성 데이터를 유효 하지 않은 경우 FALSE입니다.  
@@ -588,11 +588,11 @@ void EnsureVisible(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pProp*  
- 속성에 대 한 포인터입니다.  
+*pProp*<br/>
+[in] 속성에 대 한 포인터입니다.  
   
- [in] *bExpandParents*  
- 지정된 된 속성을 표시 하도록 부모 항목을 확장. 그렇지 않으면 FALSE입니다. 기본값은 FALSE입니다.  
+*bExpandParents*<br/>
+[in] 지정된 된 속성을 표시 하도록 부모 항목을 확장. 그렇지 않으면 FALSE입니다. 기본값은 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -604,8 +604,8 @@ void ExpandAll(BOOL bExpand=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bExpand*  
- 모든 노드를 확장 모든 노드를 축소 하려면 FALSE입니다. 기본값은 TRUE입니다.  
+*bExpand*<br/>
+[in] 모든 노드를 확장 모든 노드를 축소 하려면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -619,11 +619,11 @@ CMFCPropertyGridProperty* FindItemByData(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwData*  
- DWORD 값입니다.  
+*dwData*<br/>
+[in] DWORD 값입니다.  
   
- [in] *bSearchSubItems*  
- 속성 하위 항목을 검색 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
+*bSearchSubItems*<br/>
+[in] 속성 하위 항목을 검색 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드가 성공 하면; 연결된 속성 개체에 대 한 포인터 그렇지 않으면 NULL입니다.  
@@ -669,8 +669,8 @@ virtual HRESULT get_accHelp(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *varChild*  
- [in] *pszHelp*  
+*varChild*<br/>
+[in] [in] *pszHelp*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -687,8 +687,8 @@ virtual HRESULT get_accHelpTopic(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pszHelpFile*  
- [in] *varChild*  
+*pszHelpFile*<br/>
+[in] [in] *varChild*  
  [in] *pidTopic*  
   
 ### <a name="return-value"></a>반환 값  
@@ -705,8 +705,8 @@ virtual HRESULT get_accKeyboardShortcut(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *varChild*  
- [in] *pszKeyboardShortcut*  
+*varChild*<br/>
+[in] [in] *pszKeyboardShortcut*  
   
 ### <a name="return-value"></a>반환 값  
   
@@ -776,26 +776,26 @@ void GetCustomColors(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *clrBackground*  
- 속성 값의 배경색입니다.  
+*clrBackground*<br/>
+[out] 속성 값의 배경색입니다.  
   
- [out] *clrText*  
- 속성 이름과 속성 값 텍스트의 색입니다.  
+*clrText*<br/>
+[out] 속성 이름과 속성 값 텍스트의 색입니다.  
   
- [out] *clrGroupBackground*  
- 속성 그룹의 배경색입니다.  
+*clrGroupBackground*<br/>
+[out] 속성 그룹의 배경색입니다.  
   
- [out] *clrGroupText*  
- 속성 그룹의 텍스트 색입니다.  
+*clrGroupText*<br/>
+[out] 속성 그룹의 텍스트 색입니다.  
   
- [out] *clrDescriptionBackground*  
- 설명 영역 배경색입니다.  
+*clrDescriptionBackground*<br/>
+[out] 설명 영역 배경색입니다.  
   
- [out] *clrDescriptionText*  
- 설명 영역에서 텍스트의 색입니다.  
+*clrDescriptionText*<br/>
+[out] 설명 영역에서 텍스트의 색입니다.  
   
- [out] *clrLine*  
- 속성 간에 그려지는 선의 색입니다.  
+*clrLine*<br/>
+[out] 속성 간에 그려지는 선의 색입니다.  
   
 ### <a name="remarks"></a>설명  
  사용 된 [CMFCPropertyGridCtrl::SetCustomColors](#setcustomcolors) 사용자 지정 색을 설정 하는 방법입니다.  
@@ -883,8 +883,8 @@ CMFCPropertyGridProperty* GetProperty(int nIndex) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nIndex*  
- 속성 표 컨트롤 항목의 0부터 시작 하는 인덱스입니다.  
+*nIndex*<br/>
+[in] 속성 표 컨트롤 항목의 0부터 시작 하는 인덱스입니다.  
   
  이 이렇게 하면 어설션 합니다 *nIndex* 매개 변수는 0 보다 작거나 또는 보다 큰 속성의 수와 같습니다.  
   
@@ -939,8 +939,8 @@ virtual CScrollBar* GetScrollBarCtrl(int nBar) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nBar*  
- SB_VERT 이어야 하는 스크롤 막대의 방향입니다.  
+*nBar*<br/>
+[in] SB_VERT 이어야 하는 스크롤 막대의 방향입니다.  
   
 ### <a name="return-value"></a>반환 값  
  스크롤 막대의 개체나 없습니다 스크롤 막대 또는 스크롤 막대 방향을 경우 NULL 포인터가 SB_HORZ 합니다.  
@@ -972,14 +972,14 @@ CMFCPropertyGridProperty* HitTest(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *(태평양 표준시)*  
- 지점에서 클라이언트 좌표로입니다.  
+*(태평양 표준시)*<br/>
+[in] 지점에서 클라이언트 좌표로입니다.  
   
- [out에서] *pnArea*  
- 에 대 한 포인터를 `ClickArea` 변수입니다. 이 메서드가 반환 될 때, 변수 나타냅니다 합니다 *속성 영역* 지정 된 위치를 포함 하는 합니다. 속성 영역에 대 한 자세한 내용은 설명을 참조 하십시오.  
+*pnArea*<br/>
+[out에서] 에 대 한 포인터를 `ClickArea` 변수입니다. 이 메서드가 반환 될 때, 변수 나타냅니다 합니다 *속성 영역* 지정 된 위치를 포함 하는 합니다. 속성 영역에 대 한 자세한 내용은 설명을 참조 하십시오.  
   
- [in] *bPropsOnly*  
- 테스트 속성 영역만; true로 설정 하면 테스트 하려는 경우 FALSE를 *설명 영역* 속성 영역에 지정된 된 지점이 없는 경우. 기본값은 FALSE입니다. 설명 영역에 대 한 자세한 내용은 설명을 참조 하십시오.  
+*bPropsOnly*<br/>
+[in] 테스트 속성 영역만; true로 설정 하면 테스트 하려는 경우 FALSE를 *설명 영역* 속성 영역에 지정된 된 지점이 없는 경우. 기본값은 FALSE입니다. 설명 영역에 대 한 자세한 내용은 설명을 참조 하십시오.  
   
 ### <a name="return-value"></a>반환 값  
  경우는 *bPropsOnly* 속성 영역에는 지정 된 위치는 매개 변수는 TRUE를 반환 값은 해당 속성 개체에 대 한 포인터입니다. 또한 합니다 *pnArea* 매개 변수는 지정 된 위치를 포함 하는 특정 영역의 설정 합니다. 반환 값은 NULL이 고, 그렇지 하며 *pnArea* 매개 변수는 수정 되지 않습니다.  
@@ -1127,11 +1127,11 @@ void MarkModifiedProperties(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bMark*  
- True로 설정 하면 굵게 스타일; 속성을 수정 일반 스타일의 수정 된 속성을 표시 하려면 FALSE입니다. 기본값은 TRUE입니다.  
+*bMark*<br/>
+[in] True로 설정 하면 굵게 스타일; 속성을 수정 일반 스타일의 수정 된 속성을 표시 하려면 FALSE입니다. 기본값은 TRUE입니다.  
   
- [in] *bRedraw*  
- 속성 표 컨트롤을 즉시 다시 그리기 true로 설정 하면 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
+*bRedraw*<br/>
+[in] 속성 표 컨트롤을 즉시 다시 그리기 true로 설정 하면 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1148,8 +1148,8 @@ virtual void OnChangeSelection(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *pNewSel*|새로 선택한 속성에 대 한 포인터입니다.|  
-|[in] *pOldSel*|이전에 선택한 속성에 대 한 포인터입니다.|  
+|*pNewSel*|[in] 새로 선택한 속성에 대 한 포인터입니다.|  
+|*pOldSel*|[in] 이전에 선택한 속성에 대 한 포인터입니다.|  
   
 ### <a name="remarks"></a>설명  
  이 메서드의 기본 구현은 아무 작업도 수행합니다.  
@@ -1162,8 +1162,8 @@ virtual void OnClickButton(CPoint point);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 지점에서 클라이언트 좌표로입니다.  
+*지점*<br/>
+[in] 지점에서 클라이언트 좌표로입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로이 메서드는 현재 속성 값을 업데이트합니다.  
@@ -1176,8 +1176,8 @@ virtual void OnDrawBorder(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1191,11 +1191,11 @@ virtual void OnDrawDescription(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *rect*  
- 설명 영역에 그릴 위치를 지정 하는 사각형입니다.  
+*rect*<br/>
+[in] 설명 영역에 그릴 위치를 지정 하는 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  사용 된 [CMFCPropertyGridCtrl::EnableDescriptionArea](#enabledescriptionarea) 설명 영역을 표시 하는 방법입니다.  
@@ -1208,8 +1208,8 @@ virtual void OnDrawList(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1223,11 +1223,11 @@ virtual int OnDrawProperty(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pProp*  
- 속성 개체에 대 한 포인터입니다.  
+*pProp*<br/>
+[in] 속성 개체에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1242,8 +1242,8 @@ virtual void OnPropertyChanged(CMFCPropertyGridProperty* pProp) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pProp*  
- 값이 변경 된 속성 개체에 대 한 포인터입니다.  
+*pProp*<br/>
+[in] 값이 변경 된 속성 개체에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로이 메서드는 다음과 같이 전송 됩니다. 합니다 [AFX_WM_PROPERTY_CHANGED](../../mfc/reference/afx-messages.md) 메시지 속성 표 컨트롤의 소유자입니다.  
@@ -1274,8 +1274,8 @@ void ResetOriginalValues(BOOL bRedraw=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bRedraw*  
- 다시 그리기; 속성은 true로 설정 하면 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
+*bRedraw*<br/>
+[in] 다시 그리기; 속성은 true로 설정 하면 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1287,8 +1287,8 @@ void SetAlphabeticMode(BOOL bSet=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bSet*  
- 영문자 모드를 설정 FALSE 재설정 영문자 모드입니다. 기본값은 TRUE입니다.  
+*bSet*<br/>
+[in] 영문자 모드를 설정 FALSE 재설정 영문자 모드입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
  속성 표 컨트롤 알파벳 모드일 때 컨트롤 속성 이름으로 포함 된 모든 속성을 정렬 합니다.  
@@ -1303,11 +1303,11 @@ void SetBoolLabels(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszTrue*  
- True 부울 값에 대해 표시할 텍스트 문자열입니다.  
+*lpszTrue*<br/>
+[in] True 부울 값에 대해 표시할 텍스트 문자열입니다.  
   
- [in] *lpszFalse*  
- False의 부울 값에 대해 표시할 텍스트 문자열입니다.  
+*lpszFalse*<br/>
+[in] False의 부울 값에 대해 표시할 텍스트 문자열입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1321,11 +1321,11 @@ void SetCurSel(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pProp*  
- 속성 개체에 대 한 포인터입니다.  
+*pProp*<br/>
+[in] 속성 개체에 대 한 포인터입니다.  
   
- [in] *bRedraw*  
- 속성 표 컨트롤을 즉시 다시 그리기 true로 설정 하면 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
+*bRedraw*<br/>
+[in] 속성 표 컨트롤을 즉시 다시 그리기 true로 설정 하면 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
  속성 표 컨트롤의 현재 항목의 선택을 취소 한 다음 지정된 된 속성에 해당 하는 항목을 선택 하려면이 메서드를 사용 합니다.  
@@ -1345,26 +1345,26 @@ void SetCustomColors(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *clrBackground*  
- 속성 값의 배경색입니다.  
+*clrBackground*<br/>
+[in] 속성 값의 배경색입니다.  
   
- [in] *clrText*  
- 속성 이름과 속성 값 텍스트의 색입니다.  
+*clrText*<br/>
+[in] 속성 이름과 속성 값 텍스트의 색입니다.  
   
- [in] *clrGroupBackground*  
- 속성 그룹의 배경색입니다.  
+*clrGroupBackground*<br/>
+[in] 속성 그룹의 배경색입니다.  
   
- [in] *clrGroupText*  
- 속성 그룹의 새 텍스트 색입니다.  
+*clrGroupText*<br/>
+[in] 속성 그룹의 새 텍스트 색입니다.  
   
- [in] *clrDescriptionBackground*  
- 설명 영역 배경색입니다.  
+*clrDescriptionBackground*<br/>
+[in] 설명 영역 배경색입니다.  
   
- [in] *clrDescriptionText*  
- 설명 영역에서 텍스트의 색입니다.  
+*clrDescriptionText*<br/>
+[in] 설명 영역에서 텍스트의 색입니다.  
   
- [in] *clrLine*  
- 속성 간에 그려지는 선의 색입니다.  
+*clrLine*<br/>
+[in] 속성 간에 그려지는 선의 색입니다.  
   
 ### <a name="remarks"></a>설명  
  매개 변수를 지정 합니다 `((COLORREF)-1)` 색 속성 표 컨트롤의 해당 요소에 대 한 기본 색을 사용 하는 값입니다.  
@@ -1379,8 +1379,8 @@ void SetDescriptionRows(int nDescRows);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nDescRows*  
- 속성 설명에 표시할 행의 수입니다.  
+*nDescRows*<br/>
+[in] 속성 설명에 표시할 행의 수입니다.  
   
 ##  <a name="setgroupnamefullwidth"></a>  CMFCPropertyGridCtrl::SetGroupNameFullWidth  
  현재 속성 표 컨트롤에 범주 이름 그룹 속성의 전체 너비를 표시할지 여부를 지정 합니다.  
@@ -1392,11 +1392,11 @@ void SetGroupNameFullWidth(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bGroupNameFullWidth*  
- 범주 이름 속성 이름 열의 너비에 관계 없이 전체 너비를 표시 하려면 TRUE입니다. 범주 이름 속성 이름 열 너비의 너비를 제한 하려면 FALSE입니다. 기본값은 TRUE입니다.  
+*bGroupNameFullWidth*<br/>
+[in] 범주 이름 속성 이름 열의 너비에 관계 없이 전체 너비를 표시 하려면 TRUE입니다. 범주 이름 속성 이름 열 너비의 너비를 제한 하려면 FALSE입니다. 기본값은 TRUE입니다.  
   
- [in] *bRedraw*  
- 속성 표 컨트롤을 즉시 업데이트 하려면 true로 설정 다음 이벤트를 다시 그릴 때 컨트롤을 업데이트 하려면 FALSE에 발생 합니다. 기본값은 TRUE입니다.  
+*bRedraw*<br/>
+[in] 속성 표 컨트롤을 즉시 업데이트 하려면 true로 설정 다음 이벤트를 다시 그릴 때 컨트롤을 업데이트 하려면 FALSE에 발생 합니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
  속성 표 컨트롤 구성 된 크기를 조정할 *속성 이름이* 열 및 *속성 값* 열. 이름 열 끝 값 열의 시작 이기도합니다. 열 크기를 조정 하려면 열 간의 테두리를 끕니다.  
@@ -1411,8 +1411,8 @@ void SetListDelimiter(TCHAR c);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *c*  
- 구분 기호로 사용 하는 문자입니다.  
+*c*<br/>
+[in] 구분 기호로 사용 하는 문자입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드를 사용 하 여 속성 값에 사용 되는 목록에서 구분 기호 문자를 정의 합니다 [CMFCPropertyGridProperty::CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md#cmfcpropertygridproperty) 생성자입니다. 해당 생성자에서 설정 된 *bIsValueList* 매개 변수를 TRUE입니다.  
@@ -1427,8 +1427,8 @@ void SetShowDragContext(BOOL bShowDragContext = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bShowDragContext*  
- 크기 조정 작업을 하는 동안 이름 및 값 열을 다시 그리게 TRUE 끌기 작업이 완료 된 후 열을 다시 그리게 FALSE입니다. 기본값은 TRUE입니다.  
+*bShowDragContext*<br/>
+[in] 크기 조정 작업을 하는 동안 이름 및 값 열을 다시 그리게 TRUE 끌기 작업이 완료 된 후 열을 다시 그리게 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
  속성 표 컨트롤의 이름 및 값 열을 열 사이 있는 분할 막대를 드래그 하 여 조정할 수 있습니다. 끌어서 컨텍스트에 표시 되 면 이름 및 값 열에 분할 막대를 끌으로 크기가 조정 됩니다. 그렇지 않으면 분할 막대 이동 하지만 열 끌기 작업을 완료할 때까지 그려지는.  
@@ -1441,8 +1441,8 @@ void SetVSDotNetLook(BOOL bSet=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bSet*  
- Visual Studio.NET에서 사용 되는 스타일으로 컨트롤 속성 표 설정 하려면 True 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
+*bSet*<br/>
+[in] Visual Studio.NET에서 사용 되는 스타일으로 컨트롤 속성 표 설정 하려면 True 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1454,8 +1454,8 @@ virtual void UpdateColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *색*  
- RGB 색 값입니다.  
+*색*<br/>
+[in] RGB 색 값입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 현재 선택한 속성은 속성 표 컨트롤의 색 속성을 없으면 디버그 모드에서 어설션 합니다.  
@@ -1471,7 +1471,7 @@ virtual BOOL ValidateItemData(CMFCPropertyGridProperty* pProp);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *pProp*|속성에 대 한 포인터입니다. 이 매개 변수는 사용되지 않습니다.|  
+|*pProp*|[in] 속성에 대 한 포인터입니다. 이 매개 변수는 사용되지 않습니다.|  
   
 ### <a name="return-value"></a>반환 값  
  항상 TRUE입니다.  

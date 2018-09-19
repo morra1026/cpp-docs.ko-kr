@@ -14,37 +14,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 561bfa3e307a08c6a3560a6a8b6d3bebd8598343
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 08c92d86cbbfd38ed4ae852ce52e3b70735812e9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751197"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028092"
 ---
 # <a name="understanding-parse-trees"></a>구문 분석 트리 이해
 
 여기서 각 구문 분석 트리 형식은 등록자 스크립트에서 하나 이상의 구문 분석 트리를 정의할 수 있습니다.
 
-```  
-<root key>{<registry expression>}+  
+```
+<root key>{<registry expression>}+
 ```
 
 다음은 각 문자에 대한 설명입니다.
 
-```  
+```
 <root key> ::= HKEY_CLASSES_ROOT | HKEY_CURRENT_USER |  
     HKEY_LOCAL_MACHINE | HKEY_USERS |  
     HKEY_PERFORMANCE_DATA | HKEY_DYN_DATA |  
     HKEY_CURRENT_CONFIG | HKCR | HKCU |  
-    HKLM | HKU | HKPD | HKDD | HKCC  
-<registry expression> ::= <Add Key> | <Delete Key>  
-<Add Key> ::= [ForceRemove | NoRemove | val]<Key Name> [<Key Value>][{<Add Key>}]  
-<Delete Key> ::= Delete<Key Name>  
-<Key Name> ::= '<AlphaNumeric>+'  
-<AlphaNumeric> ::= any character not NULL, i.e. ASCII 0  
-<Key Value> ::== <Key Type><Key Name>  
-<Key Type> ::= s | d  
-<Key Value> ::= '<AlphaNumeric>'  
+    HKLM | HKU | HKPD | HKDD | HKCC
+<registry expression> ::= <Add Key> | <Delete Key>
+<Add Key> ::= [ForceRemove | NoRemove | val]<Key Name> [<Key Value>][{<Add Key>}]
+<Delete Key> ::= Delete<Key Name>
+<Key Name> ::= '<AlphaNumeric>+'
+<AlphaNumeric> ::= any character not NULL, i.e. ASCII 0
+<Key Value> ::== <Key Type><Key Name>
+<Key Type> ::= s | d
+<Key Value> ::= '<AlphaNumeric>'
 ```
 
 > [!NOTE]
@@ -52,8 +52,8 @@ ms.locfileid: "43751197"
 
 구문 분석 트리 여러 키와 하위 키를 추가할 수는 \<루트 키 >입니다. 이 과정에서 해당 하위 키의 핸들을 열어 둡니다 파서는 모든 하위 키를 구문 분석을 완료 될 때까지. 다음 예제와 같이이 방법은 한 번에 하나의 키를 운영 보다 더 효율적입니다.
 
-```  
-HKEY_CLASSES_ROOT  
+```
+HKEY_CLASSES_ROOT
 {  
     'MyVeryOwnKey'  
     {  
@@ -61,8 +61,8 @@ HKEY_CLASSES_ROOT
         {  
             'PrettyCool'  
         }  
-    }  
-}  
+    }
+}
 ```
 
 등록 기관은 처음 여기서 열립니다 (만듭니다) `HKEY_CLASSES_ROOT\MyVeryOwnKey`합니다. 그런 다음 발견 하는 `MyVeryOwnKey` 하위 키가 있습니다. 키를 닫을 것이 아니라 `MyVeryOwnKey`, 등록 기관에 핸들을 유지 하 고 엽니다 (만듭니다) `HasASubKey` 이 부모 핸들을 사용 하 여 합니다. (시스템 레지스트리에 낮아질 수 있습니다 부모 핸들이 열릴 때.) 를 열 `HKEY_CLASSES_ROOT\MyVeryOwnKey` 를 연 다음 `HasASubKey` 사용 하 여 `MyVeryOwnKey` 부모 여 보다 빠르게 그대로 `MyVeryOwnKey`, 닫는 `MyVeryOwnKey`을 연 다음 `MyVeryOwnKey\HasASubKey`합니다.

@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 242c83ce7a22d56d3c584b50ec93c941b45213ab
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3ddd11cf6c9fbc1b0a032a609f1315e581290c01
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106494"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074983"
 ---
 # <a name="autogcrootattach"></a>auto_gcroot::attach
 연결 `auto_gcroot` 개체입니다.  
@@ -46,14 +46,14 @@ auto_gcroot<_element_type> & attach(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `_right`  
- 개체를 연결 하려면 또는 `auto_gcroot` 연결할 개체를 포함 합니다.  
+*(_r)*<br/>
+개체를 연결 하려면 또는 `auto_gcroot` 연결할 개체를 포함 합니다.  
   
 ## <a name="return-value"></a>반환 값  
  현재 `auto_gcroot`입니다.  
   
 ## <a name="remarks"></a>설명  
- 경우 `_right` 는 `auto_gcroot`, 현재 개체를 연결 하기 전에 해당 개체의 소유권을 해제 `auto_gcroot`합니다.  
+ 경우 `_right` 되는 `auto_gcroot`, 현재 개체를 연결 하려면 먼저 해당 개체의 소유권을 해제 `auto_gcroot`합니다.  
   
 ## <a name="example"></a>예제  
   

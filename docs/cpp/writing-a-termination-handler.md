@@ -21,27 +21,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9773817337bce2f054b279724db9859cc2faa41
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 85241d9dde87e929b02328a6e7d0c75b5ce068ef
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462835"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116232"
 ---
 # <a name="writing-a-termination-handler"></a>종료 처리기 작성
-예외 처리기와 달리 종료 처리기는 보호된 코드 블록이 정상적으로 종료되었는지 여부와 관계없이 항상 실행됩니다. 종료 처리기의 유일한 목적은 코드 섹션의 실행 완료 방법과 관계없이 메모리, 핸들 및 파일과 같은 리소스가 제대로 닫혔는지 확인하는 것이어야 합니다.  
-  
- 종료 처리기는 try-finally 문을 사용합니다.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>추가 정보  
-  
--   [Try-finally 문](../cpp/try-finally-statement.md)  
-  
--   [리소스 정리](../cpp/cleaning-up-resources.md)  
-  
--   [예외 처리에서의 작업 타이밍](../cpp/timing-of-exception-handling-a-summary.md)  
-  
--   [종료 처리기에 대 한 제한](../cpp/restrictions-on-termination-handlers.md)  
-  
-## <a name="see-also"></a>참고자료  
- [구조적 예외 처리(C/C++)](../cpp/structured-exception-handling-c-cpp.md)
+
+예외 처리기와 달리 종료 처리기는 보호된 코드 블록이 정상적으로 종료되었는지 여부와 관계없이 항상 실행됩니다. 종료 처리기의 유일한 목적은 코드 섹션의 실행 완료 방법과 관계없이 메모리, 핸들 및 파일과 같은 리소스가 제대로 닫혔는지 확인하는 것이어야 합니다.
+
+종료 처리기는 try-finally 문을 사용합니다.
+
+## <a name="what-do-you-want-to-know-more-about"></a>추가 정보
+
+- [Try-finally 문](../cpp/try-finally-statement.md)
+
+- [리소스 정리](../cpp/cleaning-up-resources.md)
+
+- [예외 처리에서의 작업 타이밍](../cpp/timing-of-exception-handling-a-summary.md)
+
+- [종료 처리기에 대 한 제한](../cpp/restrictions-on-termination-handlers.md)
+
+## <a name="see-also"></a>참고자료
+
+[구조적 예외 처리(C/C++)](../cpp/structured-exception-handling-c-cpp.md)

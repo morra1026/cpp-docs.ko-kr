@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7b32ac9234690c1203bdbd3097c1f6ac830e886
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4f799007fffae3f8841b91de71001b5daf48b96f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33265067"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111669"
 ---
 # <a name="compiler-error-c3627"></a>컴파일러 오류 C3627
-값 형식만 boxed 될 수 있습니다.  
-  
-값 클래스에만 boxed 될 수 있습니다.  
+
+값 형식만 넣을 수 있습니다.
+
+값 클래스 에서만 넣을 수 있습니다.

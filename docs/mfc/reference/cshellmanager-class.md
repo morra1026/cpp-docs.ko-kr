@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35f186822e00f74552e3bf8d52950f3c4bbe5b45
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 48312e4840436b1e0cc7c3e176d86f1783ff1746
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43207394"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714670"
 ---
 # <a name="cshellmanager-class"></a>CShellManager 클래스
 PIDL(식별자 포인터 목록)에 대한 포인터를 사용하여 작업할 수 있는 몇 가지 메서드를 구현합니다.  
@@ -104,23 +104,23 @@ BOOL BrowseForFolder(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [out] *strOutFolder*  
- 메서드에서 사용 하 여 선택한 폴더의 경로를 저장 하는 문자열입니다.  
+*strOutFolder*<br/>
+[out] 메서드에서 사용 하 여 선택한 폴더의 경로를 저장 하는 문자열입니다.  
   
- [in] *pWndParent*  
- 부모 창에 대 한 포인터입니다.  
+*pWndParent*<br/>
+[in] 부모 창에 대 한 포인터입니다.  
   
- [in] *lplszInitialFolder*  
- 대화 상자가 표시 되 면 기본적으로 선택 되어 있는 폴더를 포함 하는 문자열입니다.  
+*lplszInitialFolder*<br/>
+[in] 대화 상자가 표시 되 면 기본적으로 선택 되어 있는 폴더를 포함 하는 문자열입니다.  
   
- [in] *lpszTitle*  
- 대화 상자의 제목입니다.  
+*lpszTitle*<br/>
+[in] 대화 상자의 제목입니다.  
   
- [in] *ulFlags*  
- 대화 상자에 대 한 옵션을 지정 하는 플래그입니다. 참조 [BROWSEINFO](/windows/desktop/api/shlobj_core/ns-shlobj_core-_browseinfoa) 자세한 설명입니다.  
+*ulFlags*<br/>
+[in] 대화 상자에 대 한 옵션을 지정 하는 플래그입니다. 참조 [BROWSEINFO](/windows/desktop/api/shlobj_core/ns-shlobj_core-_browseinfoa) 자세한 설명입니다.  
   
- [out] *piFolderImage*  
- 메서드를 선택한 폴더의 이미지 인덱스를 기록 하는 위치는 정수 값에 대 한 포인터입니다.  
+*piFolderImage*<br/>
+[out] 메서드를 선택한 폴더의 이미지 인덱스를 기록 하는 위치는 정수 값에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  사용자는 대화 상자에서 폴더를 선택 하는 경우 0이 아닌 값 그렇지 않으면 0입니다.  
@@ -143,11 +143,11 @@ LPITEMIDLIST ConcatenateItem(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pidl1*  
- 첫 번째 항목입니다.  
+*pidl1*<br/>
+[in] 첫 번째 항목입니다.  
   
- [in] *pidl2*  
- 두 번째 항목입니다.  
+*pidl2*<br/>
+[in] 두 번째 항목입니다.  
   
 ### <a name="return-value"></a>반환 값  
  함수가 성공할 경우 새 항목 목록에 대 한 포인터를 그렇지 않으면 NULL입니다.  
@@ -163,8 +163,8 @@ LPITEMIDLIST CopyItem(LPCITEMIDLIST pidlSource);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pidlSource*  
- 원래 항목 목록입니다.  
+*pidlSource*<br/>
+[in] 원래 항목 목록입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공할 경우 새로 만든된 항목 목록에 대 한 포인터 그렇지 않으면 NULL입니다.  
@@ -180,8 +180,8 @@ LPITEMIDLIST CreateItem(UINT cbSize);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *cbSize*  
- 항목 목록의 크기입니다.  
+*cbSize*<br/>
+[in] 항목 목록의 크기입니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공할 경우 만든된 항목 목록에 대 한 포인터 그렇지 않으면 NULL입니다.  
@@ -204,8 +204,8 @@ void FreeItem(LPITEMIDLIST pidl);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pidl*  
- 삭제 하는 항목 목록입니다.  
+*pidl*<br/>
+[in] 삭제 하는 항목 목록입니다.  
   
 ##  <a name="getitemcount"></a>  CShellManager::GetItemCount  
  항목 목록의 항목 개수를 반환합니다.  
@@ -215,8 +215,8 @@ UINT GetItemCount(LPCITEMIDLIST pidl);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pidl*  
- 항목 목록에 대 한 포인터입니다.  
+*pidl*<br/>
+[in] 항목 목록에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  항목 목록의 항목 개수입니다.  
@@ -229,8 +229,8 @@ UINT GetItemSize(LPCITEMIDLIST pidl);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pidl*  
- 항목 목록에 대 한 포인터입니다.  
+*pidl*<br/>
+[in] 항목 목록에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  항목 목록의 크기입니다.  
@@ -243,8 +243,8 @@ LPITEMIDLIST GetNextItem(LPCITEMIDLIST pidl);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pidl*  
- 목록 반복 하는 항목입니다.  
+*pidl*<br/>
+[in] 목록 반복 하는 항목입니다.  
   
 ### <a name="return-value"></a>반환 값  
  목록에서 다음 항목에 대 한 포인터입니다.  
@@ -262,11 +262,11 @@ int GetParentItem(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpidl*  
- PIDL 부모가 검색 됩니다.  
+*lpidl*<br/>
+[in] PIDL 부모가 검색 됩니다.  
   
- [out] *lpidlParent*  
- 메서드는 결과 저장 하는 위치를 PIDL 참조입니다.  
+*lpidlParent*<br/>
+[out] 메서드는 결과 저장 하는 위치를 PIDL 참조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  PIDL 부모 수준입니다.  
@@ -284,11 +284,11 @@ HRESULT ItemFromPath(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszPath*  
- 항목에 대 한 경로 지정 하는 문자열입니다.  
+*lpszPath*<br/>
+[in] 항목에 대 한 경로 지정 하는 문자열입니다.  
   
- [out] *pidl*  
- PIDL 참조입니다. 메서드 반환 값에 대 한 포인터를 저장 하려면이 PIDL를 사용 합니다.  
+*pidl*<br/>
+[out] PIDL 참조입니다. 메서드 반환 값에 대 한 포인터를 저장 하려면이 PIDL를 사용 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  성공할 경우 NOERROR 반환 OLE 정의 오류 값입니다.  

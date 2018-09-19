@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a37b6d3dce5d41578999aa54c8dff2dd2271fe9e
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 46073d07cbca27256ca169ab94e0fe027bf98b15
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692641"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118858"
 ---
 # <a name="join-class"></a>join 클래스
 `join` 메시징 블록은 각 소스에서 `T` 형식의 메시지를 결합하는 순서가 지정된 단일 대상 다중 소스 `propagator_block`입니다.  
@@ -46,11 +46,11 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
 ```   
   
 #### <a name="parameters"></a>매개 변수  
- `T`  
- 조인 되 고 블록에 의해 전파 메시지의 페이로드 형식입니다.  
+*T*<br/>
+메시지의 페이로드 유형 조인 및 블록에 의해 전파 합니다.  
   
- `_Jtype`  
- 종류의 `join` 하거나 이것이 블록 `greedy` 또는 `non_greedy`  
+*_Jtype*<br/>
+종류의 `join` 차단 하거나 이것이 `greedy` 또는 `non_greedy`  
   
 ## <a name="members"></a>멤버  
   
@@ -59,23 +59,23 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
 |이름|설명|  
 |----------|-----------------|  
 |[join](#ctor)|오버로드됨. 생성 된 `join` 메시징 블록입니다.|  
-|[~ join 소멸자](#dtor)|소멸 된 `join` 블록입니다.|  
+|[~ join 소멸자](#dtor)|제거 된 `join` 블록입니다.|  
   
 ### <a name="protected-methods"></a>보호된 메서드  
   
 |이름|설명|  
 |----------|-----------------|  
-|[accept_message](#accept_message)|이 제공 된 메시지를 수락 `join` 호출자에 게 소유권을 전송 하는 메시징 블록입니다.|  
-|[consume_message](#consume_message)|이전에 제공한 메시지 소비는 `join` 메시징 블록이 고 호출자에 게 소유권을 전송 하 여 대상에 의해 예약 합니다.|  
-|[link_target_notification](#link_target_notification)|이 새 대상 연결을 알리는 콜백입니다 `join` 메시징 블록입니다.|  
-|[propagate_message](#propagate_message)|메시지를 비동기적으로 전달 된 `ISource` 이 블록 `join` 메시징 블록입니다. 이 호출 하는 `propagate` 소스 블록에서 호출 될 경우이 메서드.|  
-|[propagate_to_any_targets](#propagate_to_any_targets)|전파 될 때 하는 모든 메시지에는 각 원본에서 입력된 메시지를 포함 하는 출력 메시지를 생성 합니다. 각 대상에이 출력 메시지를 보냅니다.|  
-|[release_message](#release_message)|이전의 메시지 예약을 해제합니다. (재정의 [source_block:: release_message](source-block-class.md#release_message).)|  
-|[reserve_message](#reserve_message)|이 이전에 제공 메시지를 예약 `join` 메시징 블록입니다. (재정의 [source_block:: reserve_message](source-block-class.md#reserve_message).)|  
+|[accept_message](#accept_message)|이 제공 된 메시지를 수락 `join` 메시징 블록을 호출자에 게 소유권을 전송 합니다.|  
+|[consume_message](#consume_message)|이전에 제공한 메시지를 생성 합니다 `join` 메시징 블록이 고 호출자에 게 소유권을 전송 하 여 대상에 의해 예약 합니다.|  
+|[link_target_notification](#link_target_notification)|이 새 대상이 연결 된 알리는 콜백 `join` 메시징 블록입니다.|  
+|[propagate_message](#propagate_message)|메시지를 비동기적으로 전달 된 `ISource` 이 블록 `join` 메시징 블록입니다. 호출한는 `propagate` 메서드의 소스 블록에서 호출 하는 경우.|  
+|[propagate_to_any_targets](#propagate_to_any_targets)|전파 될 때 이러한 있는 모든 메시지에는 각 원본에서 입력된 메시지를 포함 하는 출력 메시지를 생성 합니다. 출력 메시지가 각 대상에 보냅니다.|  
+|[release_message](#release_message)|이전 메시지 예약을 해제합니다. (재정의 [source_block:: release_message](source-block-class.md#release_message).)|  
+|[reserve_message](#reserve_message)|이전에 제공한 메시지를 예약 `join` 메시징 블록입니다. (재정의 [source_block:: reserve_message](source-block-class.md#reserve_message).)|  
 |[resume_propagation](#resume_propagation)|예약을 해제 된 후에 전파를 다시 시작 합니다. (재정의 [source_block:: resume_propagation](source-block-class.md#resume_propagation).)|  
   
 ## <a name="remarks"></a>설명  
- 자세한 내용은 참조 [비동기 메시지 블록](../../../parallel/concrt/asynchronous-message-blocks.md)합니다.  
+ 자세한 내용은 [비동기 메시지 블록](../../../parallel/concrt/asynchronous-message-blocks.md)합니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  [ISource](isource-class.md)  
@@ -95,36 +95,36 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
   
 ##  <a name="accept_message"></a> accept_message 
 
- 이 제공 된 메시지를 수락 `join` 호출자에 게 소유권을 전송 하는 메시징 블록입니다.  
+ 이 제공 된 메시지를 수락 `join` 메시징 블록을 호출자에 게 소유권을 전송 합니다.  
   
 ```
 virtual message<_OutputType>* accept_message(runtime_object_identity _MsgId);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_MsgId`  
- `runtime_object_identity` 제공 되의 `message` 개체입니다.  
+*_MsgId*<br/>
+합니다 `runtime_object_identity` 제공 되의 `message` 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 에 대 한 포인터는 `message` 호출자에 이제 소유권을 가진 개체입니다.  
+ 에 대 한 포인터를 `message` 호출자에 이제 소유권을 가진 개체입니다.  
   
 ##  <a name="consume_message"></a> consume_message 
 
- 이전에 제공한 메시지 소비는 `join` 메시징 블록이 고 호출자에 게 소유권을 전송 하 여 대상에 의해 예약 합니다.  
+ 이전에 제공한 메시지를 생성 합니다 `join` 메시징 블록이 고 호출자에 게 소유권을 전송 하 여 대상에 의해 예약 합니다.  
   
 ```
 virtual message<_OutputType>* consume_message(runtime_object_identity _MsgId);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_MsgId`  
- `runtime_object_identity` 의 `message` 사용 되는 개체입니다.  
+*_MsgId*<br/>
+합니다 `runtime_object_identity` 의 `message` 사용 중인 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
- 에 대 한 포인터는 `message` 호출자에 이제 소유권을 가진 개체입니다.  
+ 에 대 한 포인터를 `message` 호출자에 이제 소유권을 가진 개체입니다.  
   
 ### <a name="remarks"></a>설명  
- 비슷한 `accept`를를 호출 하 여 항상 선행 `reserve`합니다.  
+ 비슷합니다 `accept`를 호출 하 여 항상 선행 `reserve`합니다.  
   
 ##  <a name="ctor"></a> 조인 
 
@@ -158,26 +158,26 @@ join(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_NumInputs`  
- 이 입력 수 `join` 블록 허용 됩니다.  
+*_NumInputs*<br/>
+이 수가 입력 `join` 블록 수입니다.  
   
- `_Filter`  
- 제공 된 메시지를 허용 해야 하는지 여부를 결정 하는 필터 함수  
+*필터 (_f)*<br/>
+제공 된 메시지를 허용 해야 하는지 여부를 결정 하는 필터 함수입니다.  
   
- `_PScheduler`  
- `Scheduler` 의 전파에 대 한 작업이 있는 개체는 `join` 메시징 블록 예약 됩니다.  
+*_PScheduler*<br/>
+`Scheduler` 개체에 대 한 작업의 전파는는 `join` 메시징 블록 예약 됩니다.  
   
- `_PScheduleGroup`  
- `ScheduleGroup` 의 전파에 대 한 작업이 있는 개체는 `join` 메시징 블록 예약 됩니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.  
+*_PScheduleGroup*<br/>
+`ScheduleGroup` 개체에 대 한 작업의 전파는는 `join` 메시징 블록 예약 됩니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.  
   
 ### <a name="remarks"></a>설명  
  런타임은 `_PScheduler` 또는 `_PScheduleGroup` 매개 변수를 지정하지 않는 경우 기본 스케줄러를 사용합니다.  
   
- 형식 `filter_method` 시그니처가 있는 함수는 `bool (T const &)` 이 호출 되는 `join` 제공된 된 메시지를 수락 해야 하는지 여부를 결정 하는 메시징 블록입니다.  
+ 형식 `filter_method` 서명 사용 하 여 함수는 `bool (T const &)` 이 호출 되는 `join` 메시징 블록에 제공된 된 메시지를 수락 해야 하는지 여부를 결정 합니다.  
   
 ##  <a name="dtor"></a> ~ 조인 
 
- 소멸 된 `join` 블록입니다.  
+ 제거 된 `join` 블록입니다.  
   
 ```
 ~join();
@@ -185,7 +185,7 @@ join(
   
 ##  <a name="link_target_notification"></a> link_target_notification 
 
- 이 새 대상 연결을 알리는 콜백입니다 `join` 메시징 블록입니다.  
+ 이 새 대상이 연결 된 알리는 콜백 `join` 메시징 블록입니다.  
   
 ```
 virtual void link_target_notification(_Inout_ ITarget<std::vector<T>> *);
@@ -193,7 +193,7 @@ virtual void link_target_notification(_Inout_ ITarget<std::vector<T>> *);
   
 ##  <a name="propagate_message"></a> propagate_message 
 
- 메시지를 비동기적으로 전달 된 `ISource` 이 블록 `join` 메시징 블록입니다. 이 호출 하는 `propagate` 소스 블록에서 호출 될 경우이 메서드.  
+ 메시지를 비동기적으로 전달 된 `ISource` 이 블록 `join` 메시징 블록입니다. 호출한는 `propagate` 메서드의 소스 블록에서 호출 하는 경우.  
   
 ```
 message_status propagate_message(
@@ -202,18 +202,18 @@ message_status propagate_message(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_PMessage`  
- `message` 개체에 대한 포인터입니다.  
+*_PMessage*<br/>
+`message` 개체에 대한 포인터입니다.  
   
- `_PSource`  
- 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.  
+*_PSource*<br/>
+메시지를 제공 하는 소스 블록에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
- A [message_status](concurrency-namespace-enums.md) 메시지로 하기로 하는 대상의 표시 합니다.  
+ A [message_status](concurrency-namespace-enums.md) 메시지와 함께 수행 하기로 하는 대상을 표시 합니다.  
   
 ##  <a name="propagate_to_any_targets"></a> propagate_to_any_targets 
 
- 전파 될 때 하는 모든 메시지에는 각 원본에서 입력된 메시지를 포함 하는 출력 메시지를 생성 합니다. 각 대상에이 출력 메시지를 보냅니다.  
+ 전파 될 때 이러한 있는 모든 메시지에는 각 원본에서 입력된 메시지를 포함 하는 출력 메시지를 생성 합니다. 출력 메시지가 각 대상에 보냅니다.  
   
 ```
 void propagate_to_any_targets(_Inout_opt_ message<_OutputType> *);
@@ -221,33 +221,33 @@ void propagate_to_any_targets(_Inout_opt_ message<_OutputType> *);
   
 ##  <a name="release_message"></a> release_message 
 
- 이전의 메시지 예약을 해제합니다.  
+ 이전 메시지 예약을 해제합니다.  
   
 ```
 virtual void release_message(runtime_object_identity _MsgId);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_MsgId`  
- `runtime_object_identity` 의 `message` 해제 하 고 개체입니다.  
+*_MsgId*<br/>
+합니다 `runtime_object_identity` 의 `message` 릴리스될 개체입니다.  
   
 ##  <a name="reserve_message"></a> reserve_message 
 
- 이 이전에 제공 메시지를 예약 `join` 메시징 블록입니다.  
+ 이전에 제공한 메시지를 예약 `join` 메시징 블록입니다.  
   
 ```
 virtual bool reserve_message(runtime_object_identity _MsgId);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_MsgId`  
- `runtime_object_identity` 제공 되의 `message` 개체입니다.  
+*_MsgId*<br/>
+합니다 `runtime_object_identity` 제공 되의 `message` 개체입니다.  
   
 ### <a name="return-value"></a>반환 값  
  `true` 메시지를 성공적으로 예약 하는 경우 `false` 그렇지 않은 경우.  
   
 ### <a name="remarks"></a>설명  
- 후 `reserve` 반환 하는 경우 라고 `true`, 어느 `consume` 또는 `release` 호출을 얻거나 메시지의 소유권을 해제 해야 합니다.  
+ 후 `reserve` 반환 하는 경우 라고 `true`하거나, `consume` 또는 `release` 수행 하거나 메시지의 소유권을 해제를 호출 해야 합니다.  
   
 ##  <a name="resume_propagation"></a> resume_propagation 
 

@@ -11,12 +11,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 082cd3a7721f1bc72899130159b724b292e5e217
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6208e425ce4a2e1b5738932b8acaf6b11b7db24b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595050"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706682"
 ---
 # <a name="microsoft-visual-c-floating-point-optimization"></a>Microsoft Visual c + + 부동 소수점 최적화
 
@@ -757,7 +757,6 @@ float sum = f1 + f2;
 일부 중간 계산을 수행 하는 낮은 정밀도 부동 소수점 유닛에, SSE2 같은 사용 하 여 이러한 종류의 추가 반올림 될 수 있습니다. /Fp: fast 반올림의 정확도 플랫폼 종속; 되므로 다른 프로세서에 적합 한 개의 프로세서에 적합 컴파일되지 않는 코드 반드시 작동 하지 않습니다. 속도 향상 정확성 문제 보다 클 경우를 확인 하려면 사용자에 게 중단 됩니다.
 
 /Fp: fast 최적화가 특히 특정 함수에 대 한 문제가 있는 경우 부동 소수점 모드를 전환할 수 있습니다 로컬로 fp: 정확 하 게 사용 하는 `float_control` 컴파일러 pragma입니다.
-
 
 ### <a name="algebraic-transformations-under-fpfast"></a>/Fp: fast 아래 대 수 변환
 

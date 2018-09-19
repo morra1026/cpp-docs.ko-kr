@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17ae5ac4abbdabc68813a7f1d8f25cac138961e6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ea0aa3daada09f5e1daae7f50caeb214db1aaadd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294705"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020591"
 ---
 # <a name="linker-tools-error-lnk1143"></a>링커 도구 오류 LNK1143
-잘못 되었거나 손상 된 파일: COMDAT 섹션 번호에 대 한 기호가 없습니다  
-  
- 개체 파일이 손상 된 경우에이 오류가 발생할 수 있습니다.  
-  
- 파일을 다시 빌드해야 합니다.
+
+파일이 잘못 되었거나 손상 되었습니다: COMDAT 섹션 번호에 대 한 기호가 없습니다
+
+개체 파일이 손상 된 경우이 오류를 발생할 수 있습니다.
+
+파일을 다시 빌드해야 합니다.

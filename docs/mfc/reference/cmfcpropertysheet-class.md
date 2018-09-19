@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9e4d2bc62ffadb59565ba64e28311cd1283cb5d
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: bae44c3d92c2e27802c3c1b0849fa23266e2f753
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43691438"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723530"
 ---
 # <a name="cmfcpropertysheet-class"></a>CMFCPropertySheet 클래스
 `CMFCPropertySheet` 클래스는 각 속성 페이지가 페이지 탭, 도구 모음 단추, 트리 컨트롤 노드 또는 목록 항목으로 표시되는 속성 시트를 지원합니다.  
@@ -151,8 +151,8 @@ void AddPage(CPropertyPage* pPage);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *물리 페이지*  
- Page 개체에 대 한 포인터입니다. 이 매개 변수는 NULL 일 수 없습니다.  
+*물리 페이지*<br/>
+[in] Page 개체에 대 한 포인터입니다. 이 매개 변수는 NULL 일 수 없습니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 속성 시트의 오른쪽에 있는 탭으로 지정 된 속성 페이지를 추가합니다. 따라서 왼쪽에서 오른쪽 순서로 페이지를 추가 하려면이 메서드를 사용 합니다.  
@@ -171,17 +171,17 @@ void AddPageToTree(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pCategory*  
- 부모 트리 노드 또는 최상위 노드를 사용 하 여 지정된 된 페이지를 연결 하는 NULL 포인터입니다. 호출 된 [CMFCPropertySheet::AddTreeCategory](#addtreecategory) 이 포인터를 가져오는 방법입니다.  
+*pCategory*<br/>
+[in] 부모 트리 노드 또는 최상위 노드를 사용 하 여 지정된 된 페이지를 연결 하는 NULL 포인터입니다. 호출 된 [CMFCPropertySheet::AddTreeCategory](#addtreecategory) 이 포인터를 가져오는 방법입니다.  
   
- [in] *물리 페이지*  
- 속성 페이지 개체에 대 한 포인터입니다.  
+*물리 페이지*<br/>
+[in] 속성 페이지 개체에 대 한 포인터입니다.  
   
- [in] *nIconNum*  
- 아이콘 또는 없음 아이콘을 사용 하는 경우-1의 0부터 시작 인덱스입니다. 페이지 선택 하지 않은 경우 트리 컨트롤 속성 페이지 옆에 있는 아이콘을 표시 됩니다. 기본값은 -1입니다.  
+*nIconNum*<br/>
+[in] 아이콘 또는 없음 아이콘을 사용 하는 경우-1의 0부터 시작 인덱스입니다. 페이지 선택 하지 않은 경우 트리 컨트롤 속성 페이지 옆에 있는 아이콘을 표시 됩니다. 기본값은 -1입니다.  
   
- [in] *nSelIconNum*  
- 아이콘 또는 없음 아이콘을 사용 하는 경우-1의 0부터 시작 인덱스입니다. 페이지 선택 하면 아이콘 트리 컨트롤 속성 페이지 옆에 표시 됩니다. 기본값은 -1입니다.  
+*nSelIconNum*<br/>
+[in] 아이콘 또는 없음 아이콘을 사용 하는 경우-1의 0부터 시작 인덱스입니다. 페이지 선택 하면 아이콘 트리 컨트롤 속성 페이지 옆에 표시 됩니다. 기본값은 -1입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 트리 컨트롤의 리프로 속성 페이지를 추가합니다. 속성 페이지를 추가 하려면 만듭니다를 `CMFCPropertySheet` 개체를 호출 합니다 [cmfcpropertysheet:: Setlook](#setlook) 메서드를 *확인* 매개 변수 설정 `CMFCPropertySheet::PropSheetLook_Tree`, 다음이 메서드를 사용 하 여 속성 페이지를 추가 하려면 .  
@@ -198,17 +198,17 @@ CMFCPropertySheetCategoryInfo* AddTreeCategory(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszLabel*  
- 노드의 이름입니다.  
+*lpszLabel*<br/>
+[in] 노드의 이름입니다.  
   
- [in] *nIconNum*  
- 아이콘 또는 없음 아이콘을 사용 하는 경우-1의 0부터 시작 인덱스입니다. 페이지 선택 하지 않은 경우 트리 컨트롤 속성 페이지 옆에 있는 아이콘을 표시 됩니다. 기본값은 -1입니다.  
+*nIconNum*<br/>
+[in] 아이콘 또는 없음 아이콘을 사용 하는 경우-1의 0부터 시작 인덱스입니다. 페이지 선택 하지 않은 경우 트리 컨트롤 속성 페이지 옆에 있는 아이콘을 표시 됩니다. 기본값은 -1입니다.  
   
- [in] *nSelectedIconNum*  
- 아이콘 또는 없음 아이콘을 사용 하는 경우-1의 0부터 시작 인덱스입니다. 페이지 선택 하면 아이콘 트리 컨트롤 속성 페이지 옆에 표시 됩니다. 기본값은 -1입니다.  
+*nSelectedIconNum*<br/>
+[in] 아이콘 또는 없음 아이콘을 사용 하는 경우-1의 0부터 시작 인덱스입니다. 페이지 선택 하면 아이콘 트리 컨트롤 속성 페이지 옆에 표시 됩니다. 기본값은 -1입니다.  
   
- [in] *pParentCategory*  
- 부모 트리 노드 또는 최상위 노드를 사용 하 여 지정된 된 페이지를 연결 하는 NULL 포인터입니다. 이 매개 변수를 설정 합니다 [CMFCPropertySheet::AddTreeCategory](#addtreecategory) 메서드.  
+*pParentCategory*<br/>
+[in] 부모 트리 노드 또는 최상위 노드를 사용 하 여 지정된 된 페이지를 연결 하는 NULL 포인터입니다. 이 매개 변수를 설정 합니다 [CMFCPropertySheet::AddTreeCategory](#addtreecategory) 메서드.  
   
 ### <a name="return-value"></a>반환 값  
  트리 컨트롤의 새 노드에 대 한 포인터입니다.  
@@ -234,17 +234,17 @@ CMFCPropertySheet(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pszCaption*  
- 속성 시트 캡션을 포함 하는 문자열입니다. NULL일 수 없습니다.  
+*pszCaption*<br/>
+[in] 속성 시트 캡션을 포함 하는 문자열입니다. NULL일 수 없습니다.  
   
- [in] *nIDCaption*  
- 속성 시트 캡션을 포함 하는 리소스 ID입니다.  
+*nIDCaption*<br/>
+[in] 속성 시트 캡션을 포함 하는 리소스 ID입니다.  
   
- [in] *pParentWnd*  
- 속성 시트의 부모 창은 응용 프로그램의 주 창 하는 경우에 NULL 부모 창에 대 한 포인터입니다. 기본값은 NULL입니다.  
+*pParentWnd*<br/>
+[in] 속성 시트의 부모 창은 응용 프로그램의 주 창 하는 경우에 NULL 부모 창에 대 한 포인터입니다. 기본값은 NULL입니다.  
   
- [in] *iSelectPage*  
- Top 속성 페이지의 0부터 시작 하는 인덱스입니다. 기본값은 0입니다.  
+*iSelectPage*<br/>
+[in] Top 속성 페이지의 0부터 시작 하는 인덱스입니다. 기본값은 0입니다.  
   
 ### <a name="remarks"></a>설명  
  자세한 내용은 참조에 대 한 매개 변수를 [CPropertySheet::CPropertySheet](../../mfc/reference/cpropertysheet-class.md#cpropertysheet) 생성자입니다.  
@@ -257,8 +257,8 @@ void EnablePageHeader(int nHeaderHeight);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nHeaderHeight*  
- 픽셀에서 머리글의 높이입니다.  
+*nHeaderHeight*<br/>
+[in] 픽셀에서 머리글의 높이입니다.  
   
 ### <a name="remarks"></a>설명  
  값을 사용 하는 *nHeaderHeight* 사용자 지정 헤더를 그릴 매개 변수를 재정의 합니다 [CMFCPropertySheet::OnDrawPageHeader](#ondrawpageheader) 메서드.  
@@ -334,8 +334,8 @@ virtual void OnActivatePage(CPropertyPage* pPage);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *물리 페이지*  
- Enabled 속성 페이지를 나타내는 속성 페이지 개체에 대 한 포인터입니다.  
+*물리 페이지*<br/>
+[in] Enabled 속성 페이지를 나타내는 속성 페이지 개체에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로이 메서드는 enabled 속성 페이지 스크롤될 확인 합니다. 현재 속성 시트 스타일의 Microsoft Outlook 창에 있으면이 메서드는 해당 Outlook 단추 선택된 상태를 설정 합니다.  
@@ -351,14 +351,14 @@ virtual void OnDrawPageHeader(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *n 페이지*  
- 0부터 시작 속성 페이지 번호입니다.  
+*. n 페이지*<br/>
+[in] 0부터 시작 속성 페이지 번호입니다.  
   
- [in] *rectHeader*  
- 헤더를 그릴 위치를 지정 하는 경계 사각형입니다.  
+*rectHeader*<br/>
+[in] 헤더를 그릴 위치를 지정 하는 경계 사각형입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로이 메서드는 없습니다. 이 메서드를 재정의 하는 경우 호출 된 [CMFCPropertySheet::EnablePageHeader](#enablepageheader) 프레임 워크는이 메서드를 호출 하기 전에 합니다.  
@@ -371,8 +371,8 @@ virtual BOOL OnRemoveTreePage(CPropertyPage* pPage);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *물리 페이지*  
- 제거할 속성 페이지를 나타내는 속성 페이지 개체에 대 한 포인터입니다.  
+*물리 페이지*<br/>
+[in] 제거할 속성 페이지를 나타내는 속성 페이지 개체에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -385,8 +385,8 @@ void RemoveCategory(CMFCPropertySheetCategoryInfo* pCategory);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pCategory*  
- 제거할 범주 (노드)에 대 한 포인터입니다.  
+*pCategory*<br/>
+[in] 제거할 범주 (노드)에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  또한 라고 범주를 트리 컨트롤에서 노드를 제거 하려면이 메서드를 사용 합니다. 사용 된 [CMFCPropertySheet::AddTreeCategory](#addtreecategory) 트리 컨트롤 노드를 추가 하는 방법입니다.  
@@ -400,11 +400,11 @@ void RemovePage(int nPage);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *물리 페이지*  
- 제거할 속성 페이지를 나타내는 속성 페이지 개체에 대 한 포인터입니다. NULL일 수 없습니다.  
+*물리 페이지*<br/>
+[in] 제거할 속성 페이지를 나타내는 속성 페이지 개체에 대 한 포인터입니다. NULL일 수 없습니다.  
   
- [in] *n 페이지*  
- 제거할 페이지의 0부터 시작 인덱스입니다.  
+*. n 페이지*<br/>
+[in] 제거할 페이지의 0부터 시작 인덱스입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 지정 된 속성 페이지를 제거 하 고 연결된 된 창을 제거 합니다. 속성 페이지 개체를 *물리 페이지* 매개 변수 지정 될 때까지 제거 되지 않습니다를 [CMFCPropertySheet](../../mfc/reference/cmfcpropertysheet-class.md) 창이 닫힙니다.  
@@ -421,17 +421,17 @@ void SetIconsList(HIMAGELIST hIcons);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiImageListResID*  
- 리소스의 ID는 이미지 목록입니다.  
+*uiImageListResID*<br/>
+[in] 리소스의 ID는 이미지 목록입니다.  
   
- [in] *cx*  
- 이미지 목록에 있는 아이콘의 픽셀에서 너비입니다.  
+*cx*<br/>
+[in] 이미지 목록에 있는 아이콘의 픽셀에서 너비입니다.  
   
- [in] *clrTransparent*  
- 투명 이미지 색입니다. 이 색 되어 있는 이미지의 파트를 투명 하 게 됩니다. 기본값은 색 자홍, RGB(255,0,255) 합니다.  
+*clrTransparent*<br/>
+[in] 투명 이미지 색입니다. 이 색 되어 있는 이미지의 파트를 투명 하 게 됩니다. 기본값은 색 자홍, RGB(255,0,255) 합니다.  
   
- [in] *hIcons*  
- 기존 이미지 목록에 대 한 핸들입니다.  
+*hIcons*<br/>
+[in] 기존 이미지 목록에 대 한 핸들입니다.  
   
 ### <a name="return-value"></a>반환 값  
  첫 번째 방법은 오버 로드 구문을 true 이면이 메서드는 성공 하는 경우 그렇지 않으면 FALSE입니다.  
@@ -451,11 +451,11 @@ void SetLook(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *확인*  
- 속성 시트의 모양을 지정 하는 열거형 값 중 하나입니다. 속성 시트에 대 한 기본 스타일은 `CMFCPropertySheet::PropSheetLook_Tabs`합니다. 자세한 내용은이 항목의 설명 섹션의 표를 참조 하세요.  
+*찾는 위치*<br/>
+[in] 속성 시트의 모양을 지정 하는 열거형 값 중 하나입니다. 속성 시트에 대 한 기본 스타일은 `CMFCPropertySheet::PropSheetLook_Tabs`합니다. 자세한 내용은이 항목의 설명 섹션의 표를 참조 하세요.  
   
- [in] *nNavControlWidth*  
- 픽셀에서 탐색 컨트롤의 너비입니다. 기본값은 100입니다.  
+*nNavControlWidth*<br/>
+[in] 픽셀에서 탐색 컨트롤의 너비입니다. 기본값은 100입니다.  
   
 ### <a name="remarks"></a>설명  
  기본값이 아닌 스타일의 속성 시트를 표시 하려면 속성 시트 창을 만들기 전에이 메서드를 호출 합니다.  

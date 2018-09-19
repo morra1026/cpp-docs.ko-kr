@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0502528a2db47b8db41437fd7017aece1dc67cde
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 9454b33348fa4e4bc2efaa609001201ea215a8c9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217747"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081990"
 ---
 # <a name="threadprivate"></a>threadprivate
 변수는 스레드에 private 임을 지정 합니다.  
@@ -32,11 +32,10 @@ ms.locfileid: "43217747"
 #pragma omp threadprivate(var)  
 ```  
   
-## <a name="remarks"></a>설명  
- 다음은 각 문자에 대한 설명입니다.  
+### <a name="parameters"></a>매개 변수
   
- `var`  
- 스레드를 비공개로 하려는 변수의 쉼표로 구분 된 목록입니다. `var` 전역 또는 네임 스페이스-범위 변수 또는 로컬 정적 변수 여야 합니다.  
+*var*<br/>
+스레드를 비공개로 하려는 변수의 쉼표로 구분 된 목록입니다. `var` 전역 또는 네임 스페이스-범위 변수 또는 로컬 정적 변수 여야 합니다.  
   
 ## <a name="remarks"></a>설명  
  `threadprivate` 지시문 없는 OpenMP 절을 지원 합니다.  

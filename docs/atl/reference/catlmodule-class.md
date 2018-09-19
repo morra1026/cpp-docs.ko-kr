@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7d7b8ee240b94fe6a9b05d5c06c960ab8857ed6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 88c8ee576af3c50317b86b7016ac198fefdcbaa9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753138"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093443"
 ---
 # <a name="catlmodule-class"></a>CAtlModule 클래스
 
@@ -106,7 +106,7 @@ virtual HRESULT AddCommonRGSReplacements(IRegistrarBase* /* pRegistrar*/) throw(
 
 ### <a name="parameters"></a>매개 변수
 
-*pRegistrar*  
+*pRegistrar*<br/>
 예약됨.
 
 ### <a name="return-value"></a>반환 값
@@ -129,10 +129,10 @@ HRESULT AddTermFunc(_ATL_TERMFUNC* pFunc, DWORD_PTR dw) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pFunc*  
+*pFunc*<br/>
 추가할 함수에 대 한 포인터입니다.
 
-*dw*  
+*dw*<br/>
 사용자 정의 데이터를 함수에 전달 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -173,7 +173,7 @@ virtual HRESULT GetGITPtr(IGlobalInterfaceTable** ppGIT) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*ppGIT*  
+*ppGIT*<br/>
 전역 인터페이스 테이블에 대 한 포인터를 수신 하는 변수에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -270,16 +270,16 @@ HRESULT WINAPI UpdateRegistryFromResourceD(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszRes*  
+*lpszRes*<br/>
 리소스 이름입니다.
 
-*nResID*  
+*nResID*<br/>
 리소스 id입니다.
 
-*b 등록 하십시오*  
+*b 등록 하십시오*<br/>
 TRUE 이면 개체를 등록 해야 합니다. FALSE이 고, 그렇지 합니다.
 
-*pMapEntries*  
+*pMapEntries*<br/>
 스크립트의 대체 가능 매개 변수를 사용 하 여 연결 된 값을 저장 대체 지도에 대 한 포인터입니다. ATL 모듈 % 보기를 자동으로 사용합니다. 참조 추가 대체 가능 매개 변수를 사용 하려면 [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements)합니다. 그렇지 않으면 NULL 기본값을 사용 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -307,13 +307,13 @@ inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszRes*  
+*lpszRes*<br/>
 리소스 이름입니다.
 
-*b 등록 하십시오*  
+*b 등록 하십시오*<br/>
 개체를 등록할지 여부를 나타냅니다.
 
-*pMapEntries*  
+*pMapEntries*<br/>
 스크립트의 대체 가능 매개 변수를 사용 하 여 연결 된 값을 저장 대체 지도에 대 한 포인터입니다. ATL 모듈 % 보기를 자동으로 사용합니다. 참조 추가 대체 가능 매개 변수를 사용 하려면 [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements)합니다. 그렇지 않으면 NULL 기본값을 사용 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -342,16 +342,16 @@ HRESULT WINAPI UpdateRegistryFromResourceS(
 
 ### <a name="parameters"></a>매개 변수
 
-*nResID*  
+*nResID*<br/>
 리소스 id입니다.
 
-*lpszRes*  
+*lpszRes*<br/>
 리소스 이름입니다.
 
-*b 등록 하십시오*  
+*b 등록 하십시오*<br/>
 리소스 스크립트를 등록할지 여부를 나타냅니다.
 
-*pMapEntries*  
+*pMapEntries*<br/>
 스크립트의 대체 가능 매개 변수를 사용 하 여 연결 된 값을 저장 대체 지도에 대 한 포인터입니다. ATL 모듈 % 보기를 자동으로 사용합니다. 참조 추가 대체 가능 매개 변수를 사용 하려면 [CAtlModule::AddCommonRGSReplacements](#addcommonrgsreplacements)합니다. 그렇지 않으면 NULL 기본값을 사용 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -364,7 +364,7 @@ HRESULT WINAPI UpdateRegistryFromResourceS(
 
 ## <a name="see-also"></a>참고 항목
 
-[_ATL_MODULE](atl-typedefs.md#_atl_module)   
-[클래스 개요](../../atl/atl-class-overview.md)   
-[모듈 클래스](../../atl/atl-module-classes.md)   
+[_ATL_MODULE](atl-typedefs.md#_atl_module)<br/>
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
+[모듈 클래스](../../atl/atl-module-classes.md)<br/>
 [레지스트리 구성 요소 (등록자)](../../atl/atl-registry-component-registrar.md)  

@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a12e5abcc02017acbd06c841cc9ab62a9d25bdf
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 810b59bb85d374b1cf65985a64be32c645e6f3b5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757103"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718083"
 ---
 # <a name="cspinbuttonctrl-class"></a>CSpinButtonCtrl 클래스
 Windows의 공용 스핀 단추 컨트롤의 기능을 제공합니다.  
@@ -352,9 +352,10 @@ void SetRange32(
     int nUpper);
 ```  
   
-### <a name="parameters"></a>매개 변수  
- *nLower* 고 *nUpper*  
- 컨트롤에 대 한 상한 및 하 한 제한입니다. 에 대 한 `SetRange`, 모두 제한 UD_MAXVAL 보다 클 수 또는 UD_MINVAL; 미만 또한의 차이 두 가지 제한 초과할 수 없습니다 UD_MAXVAL 합니다. `SetRange32` 제한;에 제한을 두지합니다 모든 정수를 사용 합니다.  
+### <a name="parameters"></a>매개 변수
+
+*nLower* 고 *nUpper*<br/>
+컨트롤에 대 한 상한 및 하 한 제한입니다. 에 대 한 `SetRange`, 모두 제한 UD_MAXVAL 보다 클 수 또는 UD_MINVAL; 미만 또한의 차이 두 가지 제한 초과할 수 없습니다 UD_MAXVAL 합니다. `SetRange32` 제한;에 제한을 두지합니다 모든 정수를 사용 합니다.  
   
 ### <a name="remarks"></a>설명  
  멤버 함수 `SetRange32` spin button 컨트롤에 대 한 32 비트 범위를 설정 합니다.  

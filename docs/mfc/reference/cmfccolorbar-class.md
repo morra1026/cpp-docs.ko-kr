@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08d7edc11584f7a7c6d2b218d9bfbbcf8d3020a4
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 5610cd7f5c861fb8f82364e8f1d4d6975a18d7b7
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212106"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717979"
 ---
 # <a name="cmfccolorbar-class"></a>CMFCColorBar 클래스
 `CMFCColorBar` 문서 또는 응용 프로그램에서 색을 선택할 수 있는 도킹 컨트롤 막대 클래스를 나타냅니다.  
@@ -153,7 +153,7 @@ class CMFCColorBar : public CMFCPopupMenuBar
   
 ### <a name="protected-data-members"></a>보호된 데이터 멤버  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |`m_bInternal`|마우스 이벤트 처리 되는지 여부를 결정 하는 부울 필드입니다. 일반적으로이 필드는 TRUE 이며 사용자 지정 모드 FALSE 경우 마우스 이벤트 처리 됩니다.|  
 |`m_bIsEnabled`|컨트롤이 사용 되는지 여부를 나타내는 부울입니다.|  
@@ -280,8 +280,8 @@ virtual CSize CalcSize(BOOL bVertDock);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bVertDock*  
- 색 막대 컨트롤이 세로로; 도킹 되 지정. 색 막대 컨트롤 가로로 도킹 되어을 지정 하려면 FALSE입니다.  
+*bVertDock*<br/>
+[in] 색 막대 컨트롤이 세로로; 도킹 되 지정. 색 막대 컨트롤 가로로 도킹 되어을 지정 하려면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  색 단추가 색 막대 컨트롤에서 배열의 크기입니다.  
@@ -324,51 +324,51 @@ CMFCColorBar(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *색*  
- 배열 프레임 워크 색 막대 컨트롤에 표시 되는 색입니다.  
+*색*<br/>
+[in] 배열 프레임 워크 색 막대 컨트롤에 표시 되는 색입니다.  
   
- [in] *색*  
- 처음에 선택한 색입니다.  
+*색*<br/>
+[in] 처음에 선택한 색입니다.  
   
- [in] *lpszAutoColor*  
- 텍스트 레이블을 합니다 *자동* 색 단추 (기본값) 또는 NULL입니다.  
+*lpszAutoColor*<br/>
+[in] 텍스트 레이블을 합니다 *자동* 색 단추 (기본값) 또는 NULL입니다.  
   
  자동 단추에 대 한 표준 레이블이 **자동**합니다.  
   
- [in] *lpszOtherColor*  
- 텍스트 레이블을 합니다 *다른* 단추를 표시 하는 색 중에서 더 또는 NULL입니다.  
+*lpszOtherColor*<br/>
+[in] 텍스트 레이블을 합니다 *다른* 단추를 표시 하는 색 중에서 더 또는 NULL입니다.  
   
  기타 단추에 대 한 표준 레이블이 **다른 색...** .  
   
- [in] *lpszDocColors*  
- 문서 색 단추 텍스트 레이블입니다. 문서 색 색상표를 문서에서 현재 사용 하는 모든 색을 나열 합니다.  
+*lpszDocColors*<br/>
+[in] 문서 색 단추 텍스트 레이블입니다. 문서 색 색상표를 문서에서 현재 사용 하는 모든 색을 나열 합니다.  
   
- [in] *lstDocColors*  
- 현재 문서에 사용 된 색 목록을 합니다.  
+*lstDocColors*<br/>
+[in] 현재 문서에 사용 된 색 목록을 합니다.  
   
- [in] *nColumns*  
- 색 배열에 있는 열의 수입니다.  
+*nColumns*<br/>
+[in] 색 배열에 있는 열의 수입니다.  
   
- [in] *nRowsDockHorz*  
- 가로로 도킹 될 때 색 막대에는 행의 수입니다.  
+*nRowsDockHorz*<br/>
+[in] 가로로 도킹 될 때 색 막대에는 행의 수입니다.  
   
- [in] *nColDockVert*  
- 세로로 도킹 될 때 색 막대에 있는 열의 수입니다.  
+*nColDockVert*<br/>
+[in] 세로로 도킹 될 때 색 막대에 있는 열의 수입니다.  
   
- [in] *colorAutomatic*  
- 프레임 워크에는 자동 단추를 클릭할 때 적용 되는 기본 색입니다.  
+*colorAutomatic*<br/>
+[in] 프레임 워크에는 자동 단추를 클릭할 때 적용 되는 기본 색입니다.  
   
- [in] *nCommandID*  
- 색 막대 컨트롤 명령 id입니다.  
+*nCommandID*<br/>
+[in] 색 막대 컨트롤 명령 id입니다.  
   
- [in] *pParentBtn*  
- 부모 단추에 대 한 포인터입니다.  
+*pParentBtn*<br/>
+[in] 부모 단추에 대 한 포인터입니다.  
   
- [in] *src*  
- 기존 `CMFCColorBar` 복사할 새 개체 `CMFCColorBar` 개체입니다.  
+*src*<br/>
+[in] 기존 `CMFCColorBar` 복사할 새 개체 `CMFCColorBar` 개체입니다.  
   
- [in] *uiCommandID*  
- 명령 ID입니다.  
+*uiCommandID*<br/>
+[in] 명령 id입니다.  
   
 ##  <a name="contexttosize"></a>  CMFCColorBar::ContextToSize  
  색 막대 컨트롤에 단추를 포함 하는 데 필요한 해당 단추의 위치를 조정 하는 가로 및 세로 여백을 계산 합니다.  
@@ -383,8 +383,8 @@ void ContextToSize(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *bSquareButtons*|색 막대 컨트롤에 있는 단추의 모양을 사각형; 되는지 지정. 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.|  
-|[in] *bCenterButtons*|색 막대 컨트롤 단추 모양의 콘텐츠; 가운데로 정렬 됨을 지정. 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.|  
+|*bSquareButtons*|[in] 색 막대 컨트롤에 있는 단추의 모양을 사각형; 되는지 지정. 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.|  
+|*bCenterButtons*|[in] 색 막대 컨트롤 단추 모양의 콘텐츠; 가운데로 정렬 됨을 지정. 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.|  
   
 ### <a name="remarks"></a>설명  
   
@@ -403,26 +403,26 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pParentWnd*  
- 부모 창에 대 한 포인터입니다.  
+*pParentWnd*<br/>
+[in] 부모 창에 대 한 포인터입니다.  
   
- [in] *dwStyle*  
- 비트 조합 (OR) [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  
+*dwStyle*<br/>
+[in] 비트 조합 (OR) [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.  
   
- [in] *nID*  
- 명령 ID입니다.  
+*nID*<br/>
+[in] 명령 id입니다.  
   
- [in] *pPalette*  
- 색의 팔레트에 대 한 포인터입니다. 기본값은 NULL입니다.  
+*pPalette*<br/>
+[in] 색의 팔레트에 대 한 포인터입니다. 기본값은 NULL입니다.  
   
- [in] *nColumns*  
- 색 막대 컨트롤에서 열 수입니다. 기본값은 0입니다.  
+*nColumns*<br/>
+[in] 색 막대 컨트롤에서 열 수입니다. 기본값은 0입니다.  
   
- [in] *nRowsDockHorz*  
- 가로로 도킹 될 때 색 막대 컨트롤에서 행의 수입니다. 기본값은 0입니다.  
+*nRowsDockHorz*<br/>
+[in] 가로로 도킹 될 때 색 막대 컨트롤에서 행의 수입니다. 기본값은 0입니다.  
   
- [in] *nColDockVert*  
- 세로로 도킹 될 때 색 막대 컨트롤에서 열 수입니다. 기본값은 0입니다.  
+*nColDockVert*<br/>
+[in] 세로로 도킹 될 때 색 막대 컨트롤에서 열 수입니다. 기본값은 0입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -443,20 +443,20 @@ virtual BOOL CreateControl(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pParentWnd*  
- 부모 창에 대 한 포인터입니다. NULL일 수 없습니다.  
+*pParentWnd*<br/>
+[in] 부모 창에 대 한 포인터입니다. NULL일 수 없습니다.  
   
- [in] *rect*  
- 색 막대 컨트롤을 그릴 위치를 지정 하는 경계 사각형입니다.  
+*rect*<br/>
+[in] 색 막대 컨트롤을 그릴 위치를 지정 하는 경계 사각형입니다.  
   
- [in] *nID*  
- 컨트롤 id입니다.  
+*nID*<br/>
+[in] 컨트롤 id입니다.  
   
- [in] *nColumns*  
- 색 막대 컨트롤에 있는 열의 이상적인 수입니다. 이 메서드는 지정 된 색의 팔레트에 맞게 해당 번호를 수정 합니다. 기본값은-1로,이 매개 변수는 지정 되지 않았음을 나타냅니다.  
+*nColumns*<br/>
+[in] 색 막대 컨트롤에 있는 열의 이상적인 수입니다. 이 메서드는 지정 된 색의 팔레트에 맞게 해당 번호를 수정 합니다. 기본값은-1로,이 매개 변수는 지정 되지 않았음을 나타냅니다.  
   
- [in] *pPalette*  
- 색상표 색의 NULL 포인터입니다. 이 매개 변수가 NULL 인 경우이 메서드는 20 색 지정 된 경우에 따라 색 막대 컨트롤의 크기를 계산 합니다. 기본값은 NULL입니다.  
+*pPalette*<br/>
+[in] 색상표 색의 NULL 포인터입니다. 이 매개 변수가 NULL 인 경우이 메서드는 20 색 지정 된 경우에 따라 색 막대 컨트롤의 크기를 계산 합니다. 기본값은 NULL입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -477,8 +477,8 @@ static BOOL CreatePalette(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *arColors*|배열 색입니다.|  
-|[in] *색상표*|색의 색상표입니다.|  
+|*arColors*|[in] 배열 색입니다.|  
+|*색상표*|[in] 색의 색상표입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -494,16 +494,16 @@ void EnableAutomaticButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszLabel*  
- 텍스트 레이블을 합니다 *자동* 색 단추 (기본값) 또는 NULL입니다.  
+*lpszLabel*<br/>
+[in] 텍스트 레이블을 합니다 *자동* 색 단추 (기본값) 또는 NULL입니다.  
   
  자동 단추에 대 한 표준 레이블이 **자동**합니다.  
   
- [in] *colorAutomatic*  
- 프레임 워크에는 자동 단추를 클릭할 때 적용 되는 기본 색입니다.  
+*colorAutomatic*<br/>
+[in] 프레임 워크에는 자동 단추를 클릭할 때 적용 되는 기본 색입니다.  
   
- [in] *bEnable*  
- 자동 단추를 사용 하도록 설정 False 이면 자동 단추를 사용 하지 않도록 설정 합니다. 기본값은 TRUE입니다.  
+*bEnable*<br/>
+[in] 자동 단추를 사용 하도록 설정 False 이면 자동 단추를 사용 하지 않도록 설정 합니다. 기본값은 TRUE입니다.  
   
 ### <a name="remarks"></a>설명  
  자동 단추 텍스트 레이블의 경우 삭제 되는 *lpszLabel* 매개 변수는 NULL 또는 *bEnable* 매개 변수가 FALSE 인 합니다.  
@@ -519,16 +519,16 @@ void EnableOtherButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszLabel*  
- 텍스트 레이블을 합니다 *다른* 단추를 표시 하는 색 중에서 더 또는 NULL입니다.  
+*lpszLabel*<br/>
+[in] 텍스트 레이블을 합니다 *다른* 단추를 표시 하는 색 중에서 더 또는 NULL입니다.  
   
  이 단추에 대 한 표준 레이블이 **다른 색...** .  
   
- [in] *bAltColorDlg*  
- 표시 하려면 true로 설정 합니다 [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) 대화 상자 False 이면 표준 표시 [CColorDialog](../../mfc/reference/ccolordialog-class.md) 대화 상자. 기본값은 TRUE입니다.  
+*bAltColorDlg*<br/>
+[in] 표시 하려면 true로 설정 합니다 [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) 대화 상자 False 이면 표준 표시 [CColorDialog](../../mfc/reference/ccolordialog-class.md) 대화 상자. 기본값은 TRUE입니다.  
   
- [in] *bEnable*  
- 단추를 사용 하도록 설정 단추를 사용 하지 않도록 설정 하려면 FALSE입니다. 기본값은 TRUE입니다.  
+*bEnable*<br/>
+[in] 단추를 사용 하도록 설정 단추를 사용 하지 않도록 설정 하려면 FALSE입니다. 기본값은 TRUE입니다.  
   
 ##  <a name="getcolor"></a>  CMFCColorBar::GetColor  
  현재 선택한 색을 검색합니다.  
@@ -551,7 +551,7 @@ CSize GetColorGridSize(BOOL bVertDock) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *bVertDock*|색 막대를 세로로 도킹 된 컨트롤에 대 한 계산을 수행. 그렇지 않은 경우 가로로 도킹된 된 컨트롤에 대 한 계산을 수행 합니다.|  
+|*bVertDock*|[in] 색 막대를 세로로 도킹 된 컨트롤에 대 한 계산을 수행. 그렇지 않은 경우 가로로 도킹된 된 컨트롤에 대 한 계산을 수행 합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다 `cx` 열과 해당 수를 포함 하는 구성 요소 `cy` 행의 수를 포함 하는 구성 요소입니다.  
@@ -580,7 +580,7 @@ int GetExtraHeight(int nNumColumns) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *nNumColumns*|색 막대 컨트롤 포함 되 면 문서 색, 문서 색 눈금에 표시할 열의 수입니다. 그렇지 않은 경우이 값은 사용 되지 않습니다.|  
+|*nNumColumns*|[in] 색 막대 컨트롤 포함 되 면 문서 색, 문서 색 눈금에 표시할 열의 수입니다. 그렇지 않은 경우이 값은 사용 되지 않습니다.|  
   
 ### <a name="return-value"></a>반환 값  
  필요한 계산된 추가 높이입니다.  
@@ -630,8 +630,8 @@ static int InitColors(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *pPalette*|색상표 개체 또는 NULL 포인터입니다. 이 매개 변수가 NULL 인 경우이 메서드는 운영 체제의 기본 색상표를 사용 합니다.|  
-|[in] *arColors*|배열 색입니다.|  
+|*pPalette*|[in] 색상표 개체 또는 NULL 포인터입니다. 이 매개 변수가 NULL 인 경우이 메서드는 운영 체제의 기본 색상표를 사용 합니다.|  
+|*arColors*|[in] 배열 색입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  색 배열에 있는 요소의 수입니다.  
@@ -657,8 +657,8 @@ virtual BOOL OnKey(UINT nChar);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nChar*  
- 사용자가 누른 키에 대 한 가상 키 코드입니다.  
+*NChar*<br/>
+[in] 사용자가 누른 키에 대 한 가상 키 코드입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 지정된 된 키를 처리 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -674,7 +674,7 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *pButton*|도구 모음에 있는 컨트롤에 대 한 포인터입니다.|  
+|*pButton*|[in] 도구 모음에 있는 컨트롤에 대 한 포인터입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -689,11 +689,11 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pTarget*  
- 업데이트 하는 사용자 인터페이스 항목을 포함 하는 창에 대 한 포인터입니다.  
+*pTarget*<br/>
+[in] 업데이트 하는 사용자 인터페이스 항목을 포함 하는 창에 대 한 포인터입니다.  
   
- [in] *bDisableIfNoHndler*  
- 처리기는 메시지 맵;에 정의 된 경우 사용자 인터페이스 항목을 사용 하지 않도록 설정. 그렇지 않으면 FALSE입니다.  
+*bDisableIfNoHndler*<br/>
+[in] 처리기는 메시지 맵;에 정의 된 경우 사용자 인터페이스 항목을 사용 하지 않도록 설정. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  항목을 사용 하도록 설정 하는 대로 표시할 해야 하는지 여부를 알아야 응용 프로그램의 사용자가 사용자 인터페이스 항목을 클릭할 때 또는 사용 하지 않도록 설정 합니다. ON_UPDATE_COMMAND_UI 명령 처리기를 구현 하 여이 정보를 제공 하는 명령 메시지의 대상입니다. 명령을 처리할 수 있도록이 메서드를 사용 합니다. 자세한 내용은 [CCmdUI 클래스](../../mfc/reference/ccmdui-class.md)합니다.  
@@ -708,11 +708,11 @@ virtual BOOL OpenColorDialog(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *colorDefault*  
- 색 대화 상자를 열면 기본적으로 선택 된 색입니다.  
+*colorDefault*<br/>
+[in] 색 대화 상자를 열면 기본적으로 선택 된 색입니다.  
   
- [out] *colorRes*  
- 사용자가 선택한 색입니다.  
+*colorRes*<br/>
+[out] 사용자가 선택한 색입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 사용자 선택 색입니다. 사용자가 색 대화 상자를 취소 하는 경우에 FALSE입니다.  
@@ -737,7 +737,7 @@ CPalette* SelectPalette(CDC* pDC);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *pDC*|현재 색 막대 컨트롤의 부모 단추의 장치 컨텍스트에 대 한 포인터입니다.|  
+|*pDC*|[in] 현재 색 막대 컨트롤의 부모 단추의 장치 컨텍스트에 대 한 포인터입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  현재 색 막대 컨트롤의 부모 단추의 색상표에 따라 대체 되는 팔레트에 대 한 포인터입니다.  
@@ -750,8 +750,8 @@ void SetColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *색*  
- RGB 색 값입니다.  
+*색*<br/>
+[in] RGB 색 값입니다.  
   
 ##  <a name="setcolorname"></a>  CMFCColorBar::SetColorName  
  지정 된 색에 대 한 새 이름을 설정합니다.  
@@ -763,11 +763,11 @@ static void SetColorName(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *색*  
- 색의 RGB 값입니다.  
+*색*<br/>
+[in] 색의 RGB 값입니다.  
   
- [in] *strName*  
- 지정된 된 색에 대 한 새 이름입니다.  
+*strName*<br/>
+[in] 지정된 된 색에 대 한 새 이름입니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 모든 지정된 된 색의 이름 변경 `CMFCColorBar` 응용 프로그램의 개체입니다.  
@@ -780,8 +780,8 @@ void SetCommandID(UINT nCommandID);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nCommandID*  
- 명령 id입니다.  
+*nCommandID*<br/>
+[in] 명령 id입니다.  
   
 ### <a name="remarks"></a>설명  
  색 막대 컨트롤의 명령 ID를 수정 하 고 ID가 변경 된 컨트롤의 부모 창에 알리기 위해이 메서드를 호출 합니다.  
@@ -797,14 +797,14 @@ void SetDocumentColors(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszCaption*  
- 색 막대 컨트롤이 도킹 되지 않습니다 때 표시 되는 캡션.  
+*lpszCaption*<br/>
+[in] 색 막대 컨트롤이 도킹 되지 않습니다 때 표시 되는 캡션.  
   
- [in] *lstDocColors*  
- 현재 문서 색을 대체 하는 목록 색입니다.  
+*lstDocColors*<br/>
+[in] 현재 문서 색을 대체 하는 목록 색입니다.  
   
- [in] *bShowWhenDocked*  
- 색 막대 컨트롤 도킹 되어; 경우 문서 색을 표시. 그렇지 않으면 FALSE입니다. 기본값은 FALSE입니다.  
+*bShowWhenDocked*<br/>
+[in] 색 막대 컨트롤 도킹 되어; 경우 문서 색을 표시. 그렇지 않으면 FALSE입니다. 기본값은 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  *문서 색* 문서에서 현재 사용 되는 색입니다. 프레임 워크에는 자동으로 문서 색 목록을 유지 관리 하지만 목록을 수정 하려면이 메서드를 사용할 수 있습니다.  
@@ -817,8 +817,8 @@ void SetHorzMargin(int nHorzMargin);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nHorzMargin*  
- 가로 여백에서 픽셀에서입니다.  
+*nHorzMargin*<br/>
+[in] 가로 여백에서 픽셀에서입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로 [CMFCColorBar::CMFCColorBar](#cmfccolorbar) 4 픽셀 가로 여백을 설정 하는 생성자입니다.  
@@ -834,7 +834,7 @@ void SetPropList(CMFCPropertyGridCtrl* pWndList);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *pWndList*|속성 그리드 컨트롤 개체에 대 한 포인터입니다.|  
+|*pWndList*|[in] 속성 그리드 컨트롤 개체에 대 한 포인터입니다.|  
   
 ##  <a name="setvertmargin"></a>  CMFCColorBar::SetVertMargin  
  클라이언트 영역 경계 위쪽 또는 아래쪽 색 셀 사이의 공간에는 세로 여백을 설정 합니다.  
@@ -844,8 +844,8 @@ void SetVertMargin(int nVertMargin);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nVertMargin*  
- 세로 여백에서 픽셀에서입니다.  
+*nVertMargin*<br/>
+[in] 세로 여백에서 픽셀에서입니다.  
   
 ### <a name="remarks"></a>설명  
  기본적으로 [CMFCColorBar::CMFCColorBar](#cmfccolorbar) 4 픽셀에 세로 여백을 설정 하는 생성자입니다.  
@@ -858,8 +858,8 @@ virtual void ShowCommandMessageString(UINT uiCmdId);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiCmdId*  
- 명령 id입니다. (이 매개 변수가 무시 됩니다.)  
+*uiCmdId*<br/>
+[in] 명령 id입니다. (이 매개 변수가 무시 됩니다.)  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 색 막대 컨트롤의 소유자에 게 WM_SETMESSAGESTRING 메시지를 보냅니다.  

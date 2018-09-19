@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5b27c1fffca8c21a0fa3e3e79eedae0c17ae580
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 01deb34c2e490eb8a2d6529a426aedca40f98901
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295394"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070576"
 ---
 # <a name="expression-evaluator-error-cxx0043"></a>식 계산기 오류 CXX0043
-이 포인터 멤버 함수 외부에서 사용  
-  
- **이** 포인터는 비정적 멤버 함수에 대해서만 사용할 수 있습니다.  
-  
- 이 오류는 can0043과 동일 합니다.
+
+외부 멤버 함수를 사용 하는 this이 포인터
+
+합니다 **이** 비정적 멤버 함수에 대 한 포인터 에서만 사용할 수 있습니다.
+
+이 오류는 can0043과 동일 합니다.

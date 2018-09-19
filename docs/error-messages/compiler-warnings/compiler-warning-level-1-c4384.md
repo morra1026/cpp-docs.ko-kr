@@ -16,28 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88d24436270156dc86ad074cf8fee8d0272e83c9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 54d913aac76f767728bbe7b4a31d4ea1c8bbd96d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33278085"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027000"
 ---
 # <a name="compiler-warning-level-1-c4384"></a>컴파일러 경고(수준 1) C4384
-\#pragma 'make_public' 전역 범위에만 사용 해야  
-  
- [make_public](../../preprocessor/make-public.md) pragma 올바르게 적용 되었습니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C4384 오류가 발생 합니다.  
-  
-```  
-// C4384.cpp  
-// compile with: /c /W1  
-namespace n {  
-   #pragma make_public(N::C)   // C4384  
-   namespace N {  
-      class C {};  
-   }  
-}  
+
+\#pragma 'make_public' 전역 범위에만 사용할 수
+
+합니다 [make_public](../../preprocessor/make-public.md) pragma 올바르게 적용 되었습니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C4384 오류가 발생 합니다.
+
+```
+// C4384.cpp
+// compile with: /c /W1
+namespace n {
+   #pragma make_public(N::C)   // C4384
+   namespace N {
+      class C {};
+   }
+}
 ```

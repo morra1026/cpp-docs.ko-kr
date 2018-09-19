@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c64980cbdfeec92f0029828183c8f56b390dd85
-ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
+ms.openlocfilehash: d3e7603bfe2074022cdaa0e99024627c32452b46
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45535316"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072799"
 ---
 # <a name="activex-controls-on-the-internet"></a>인터넷의 ActiveX 컨트롤
 
@@ -174,33 +174,21 @@ ActiveX 컨트롤은 업데이트 된 버전의 OLE 컨트롤 사양입니다.
 ## <a name="displaying-a-control-on-a-web-page"></a>웹 페이지에 컨트롤 표시  
  Object 태그 및 웹 페이지에 컨트롤을 삽입 하는 것에 대 한 특성의 예는 다음과 같습니다.  
   
- `<OBJECT`  
-  
- `CLASSID="clsid:FC25B780-75BE-11CF-8B01-444553540000"`  
-  
- `CODEBASE="/ie/download/activex/iechart.ocx"`  
-  
- `ID=chart1`  
-  
- `WIDTH=400`  
-  
- `HEIGHT=200`  
-  
- `ALIGN=center`  
-  
- `HSPACE=0`  
-  
- `VSPACE=0`  
-  
- `>`  
-  
- `<PARAM NAME="BackColor" value="#ffffff">`  
-  
- `<PARAM NAME="ForeColor" value="#0000ff">`  
-  
- `<PARAM NAME="url" VALUE="/ie/controls/chart/mychart.txt">`  
-  
- `</OBJECT>`  
+```xml
+<OBJECT
+  CLASSID="clsid:FC25B780-75BE-11CF-8B01-444553540000"
+  CODEBASE="/ie/download/activex/iechart.ocx"
+  ID=chart1
+  WIDTH=400
+  HEIGHT=200
+  ALIGN=center
+  HSPACE=0
+  VSPACE=0>
+  <PARAM NAME="BackColor" value="#ffffff"/>
+  <PARAM NAME="ForeColor" value="#0000ff"/>
+  <PARAM NAME="url" VALUE="/ie/controls/chart/mychart.txt"/>
+</OBJECT>
+```
   
 ## <a name="updating-an-existing-ole-control-to-use-new-activex-control-features"></a>ActiveX 컨트롤의 새로운 기능을 사용 하 여 기존 OLE 컨트롤을 업데이트 합니다.  
  OLE 컨트롤 4.2 이전 버전의 Visual c + +를 사용 하 여 생성 된 경우에 성능 향상을 위한 기능을 향상을 수행할 수 있는 단계가 있습니다. 이러한 변경 내용의 자세한 내용은 참조 하세요 [ActiveX 컨트롤: 최적화](../mfc/mfc-activex-controls-optimization.md)합니다.  

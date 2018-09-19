@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99d89b217e5cca5abc4a352a05722bd4d0d53a48
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1fd83298e9a1afcaa318c8bbc333b77f3b2da61c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317559"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019914"
 ---
 # <a name="resource-compiler-fatal-error-rc1121"></a>리소스 컴파일러 심각한 오류 RC1121
-파일을 읽는 동안 I/O 오류가 발생했습니다.  
-  
- 리소스 컴파일러가 파일을 읽을 수 없습니다. 파일이 포함된 드라이브를 사용할 수 있고 파일이 유효한지 확인합니다.
+
+파일을 읽는 동안 I/O 오류가 발생했습니다.
+
+리소스 컴파일러가 파일을 읽을 수 없습니다. 파일이 포함된 드라이브를 사용할 수 있고 파일이 유효한지 확인합니다.

@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 27f27b164d7a00e05e8d080a692f97b696776cbe
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f88d086c76ea6b56f1bb049b886df70ceadbdbb9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33136209"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707904"
 ---
 # <a name="marshalcontextmarshalas"></a>marshal_context::marshal_as
-관리 되는 및 네이티브 데이터 형식 간에 변환 하려면 특정 데이터 개체에 대해 마샬링을 수행 합니다.  
+특정 데이터 개체를 관리 및 네이티브 데이터 형식 간에 변환할 마샬링을 수행 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,21 +39,21 @@ To_Type marshal_as<To_Type>(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `input`  
- 마샬링할 하려는 값을 `To_Type` 변수입니다.  
+*input*<br/>
+[in] 에 마샬링하 려는 값을 `To_Type` 변수입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 형식의 변수 `To_Type` 의 변환 된 값 즉 `input`합니다.  
+ 형식 변수의 `To_Type` 으로 변환된 된 값 즉 `input`합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 함수는 특정 데이터 개체에 대해 마샬링을 수행 합니다. 이 함수를 사용 하 여 테이블에 표시 된 변환이 있는 [개요의 c + + 마샬링](../dotnet/overview-of-marshaling-in-cpp.md)합니다.  
+ 이 함수는 특정 데이터 개체의 마샬링을 수행 합니다. 이 함수를 사용 하 여 테이블에서 지정 된 변환 만으로 [Overview of Marshaling c + +에서](../dotnet/overview-of-marshaling-in-cpp.md)합니다.  
   
- 지원 되지 않는 데이터 형식의 쌍 마샬링할 하려고 하면 `marshal_as` 오류가 생성 됩니다 [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) 컴파일 타임에 있습니다. 자세한 내용은이 오류와 함께 제공 된 메시지를 읽습니다. `C4996` 이상만 사용 되지 않는 함수에 대 한 오류는 생성 될 수 있습니다. 이 오류를 생성 하는 두 가지 조건은를 한 쌍의 지원 되지 않는 데이터 형식 마샬링하는 동안 하며 사용 하려고 `marshal_as` 변환 하는 컨텍스트가 필요 합니다.  
+ 지원 되지 않는 데이터 형식의 쌍 마샬링할 하려고 하면 `marshal_as` 오류가 생성 됩니다 [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) 컴파일 타임에 있습니다. 자세한 내용은이 오류와 함께 제공 되는 메시지를 읽습니다. `C4996` 이상만 사용 되지 않는 함수에 대 한 오류를 생성할 수 있습니다. 이 오류를 생성 하는 두 가지 조건은를 지원 하지 않는 데이터 형식의 한 쌍을 마샬링하는 동안 하며 사용 하는 동안 `marshal_as` 필요한 컨텍스트를 변환 합니다.  
   
- 마샬링 라이브러리 헤더 파일을 여러 개 구성 됩니다. 모든 변환 파일 하나만 필요 하지만 다른 변환 해야 하는 경우 추가 파일을 포함할 수 있습니다. 테이블 `Marshaling Overview in C++` 마샬링 파일 각 변환에 대 한 포함 되어야 합니다. 나타냅니다.  
+ 마샬링 라이브러리는 몇 가지 헤더 파일의 구성 됩니다. 변환 파일을 하나만 이어야 하는데 다른 변환 해야 할 경우 추가 파일을 포함할 수 있습니다. 표의 `Marshaling Overview in C++` 나타냅니다 마샬링 파일 각 변환에 포함 해야 합니다.  
   
 ## <a name="example"></a>예제  
- 이 예제에서 마샬링하기 위한 컨텍스트를 만듭니다.는 `System::String` 에 `const char *` 변수 형식입니다. 변환된 된 데이터 컨텍스트를 삭제 하는 줄 다음 유효한 되지 않습니다.  
+ 마샬링에 대 한 컨텍스트를 만드는이 예제는 `System::String` 에 `const char *` 변수 형식입니다. 변환된 된 데이터 컨텍스트를 삭제 하는 줄 뒤 잘못 되지 않습니다.  
   
 ```  
 // marshal_context_test.cpp  

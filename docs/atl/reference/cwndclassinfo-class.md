@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: edfe84b767136d5ea7e2dcb0b47a06474020c074
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d674b2e3049d27f0e79eb082a44640f67a395dea
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754958"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097895"
 ---
 # <a name="cwndclassinfo-class"></a>CWndClassInfo 클래스
 
@@ -185,7 +185,7 @@ ATOM Register(WNDPROC* pProc);
 
 ### <a name="parameters"></a>매개 변수
 
-*pProc*  
+*pProc*<br/>
 [out] 기존 창 클래스의 원본 창 프로시저를 지정합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -200,5 +200,5 @@ ATOM Register(WNDPROC* pProc);
 
 ## <a name="see-also"></a>참고 항목
 
-[CComControl 클래스](../../atl/reference/ccomcontrol-class.md)   
+[CComControl 클래스](../../atl/reference/ccomcontrol-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

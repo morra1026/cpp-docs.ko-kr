@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca7a39149969b7e85685930d6e901bf81db99d64
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ef8c497a681ae1b54ec833a048cddba29a72be7f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759404"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067595"
 ---
 # <a name="iserviceproviderimpl-class"></a>IServiceProviderImpl 클래스
 
@@ -33,13 +33,13 @@ ms.locfileid: "43759404"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE IServiceProviderImpl : public IServiceProvider
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `IServiceProviderImpl`합니다.
 
 ## <a name="members"></a>멤버
@@ -83,14 +83,14 @@ STDMETHOD(QueryService)(
 
 ### <a name="parameters"></a>매개 변수
 
-[IN] *guidService*  
-서비스 식별자 (SID)에 대 한 포인터입니다.
+*guidService*<br/>
+[in] 서비스 식별자 (SID)에 대 한 포인터입니다.
 
-[IN] *riid*  
-호출자가 액세스할 인터페이스의 식별자입니다.
+*riid*<br/>
+[in] 호출자가 액세스할 인터페이스의 식별자입니다.
 
-[OUT] *ppvObj*  
-요청된 된 인터페이스에 대 한 간접 포인터입니다.
+*ppvObj*<br/>
+[out] 요청된 된 인터페이스에 대 한 간접 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 

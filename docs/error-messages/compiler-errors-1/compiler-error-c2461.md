@@ -16,30 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47aee3122dad3e875cf58d5a41bcadda297e1463
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 39d58b315fdd7e3c4e1899041cebf8400813ed40
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197639"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029301"
 ---
 # <a name="compiler-error-c2461"></a>컴파일러 오류 C2461
-  
-> '*클래스*': 생성자 구문에 정식 매개 변수가 없습니다.  
-  
- 클래스에 대 한 생성자는 모든 형식 매개 변수를 지정 하지 않습니다. 생성자의 선언에 정식 매개 변수 목록을 지정 해야 합니다. 목록은 비어 있을 수 있습니다.  
-  
-이 문제를 해결 하려면의 선언 뒤에 괄호 쌍을 추가 *클래스*:: **클래스*합니다.  
-  
-## <a name="example"></a>예제  
-  
-다음 샘플 C2461를 수정 하는 방법을 보여 줍니다.  
-  
-```cpp  
-// C2461.cpp  
-// compile with: /c  
-class C {  
-   C::C;     // C2461  
-   C::C();   // OK  
-};  
+
+> '*클래스*': 생성자 구문에 정식 매개 변수가 없음
+
+클래스의 생성자는 정식 매개 변수를 지정 하지 않습니다. 생성자 선언에 정식 매개 변수 목록을 지정 해야 합니다. 목록은 비어 있을 수 있습니다.
+
+이 문제를 해결 하려면 선언 뒤에 괄호 한 쌍 추가 *클래스*:: **클래스*합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플 C2461를 해결 하는 방법을 보여 줍니다.
+
+```cpp
+// C2461.cpp
+// compile with: /c
+class C {
+   C::C;     // C2461
+   C::C();   // OK
+};
 ```

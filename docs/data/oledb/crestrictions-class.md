@@ -24,14 +24,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b9dc35df928d53d7d5ca5d833db8e87c96e1c7f4
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: c66200acab5fc1be509136fc45895fdf08e40fdb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42572788"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072084"
 ---
 # <a name="crestrictions-class"></a>CRestrictions 클래스
+
 스키마 행 집합에 대 한 제한을 지정할 수 있는 제네릭 클래스입니다.  
   
 ## <a name="syntax"></a>구문
@@ -43,17 +44,19 @@ class CRestrictions :
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- *T*  
- 접근자에 사용 되는 클래스입니다.  
+
+*T*<br/>
+접근자에 사용 되는 클래스입니다.  
   
- *nRestrictions*  
- 스키마 행 집합에 대 한 제한 열의 수입니다.  
+*nRestrictions*<br/>
+스키마 행 집합에 대 한 제한 열의 수입니다.  
   
- *pguid*  
- 스키마에 대 한 GUID에 대 한 포인터입니다.  
+*pguid*<br/>
+스키마에 대 한 GUID에 대 한 포인터입니다.  
 
 ## <a name="requirements"></a>요구 사항  
- **헤더:** atldbsch.h 
+
+**헤더:** atldbsch.h 
   
 ## <a name="members"></a>멤버  
   
@@ -64,6 +67,7 @@ class CRestrictions :
 |[열기](#open)|결과 사용자가 제공한 제한 사항에 따라 집합을 반환 합니다.|   
 
 ## <a name="open"></a> Crestrictions:: Open
+
 결과 사용자가 제공한 제한 사항에 따라 집합을 반환 합니다.  
   
 ### <a name="syntax"></a>구문  
@@ -81,24 +85,28 @@ HRESULT Open(const CSession& session,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- *세션*  
- [in] 데이터 원본에 연결 하는 데 기존 세션 개체를 지정 합니다.  
+
+*세션*<br/>
+[in] 데이터 원본에 연결 하는 데 기존 세션 개체를 지정 합니다.  
   
- *lpszParam*  
- [in] 스키마 행 집합에는 제한을 지정합니다.  
+*lpszParam*<br/>
+[in] 스키마 행 집합에는 제한을 지정합니다.  
   
- *bBind*  
- [in] 열 지도 자동으로 바인딩할 지 여부를 지정 합니다. 기본값은 **true**를 자동으로 바인딩할 열 지도 이르게 합니다. 설정 *bBind* 하 **false** 수동으로 바인딩할 수 있도록 열 맵의 자동 바인딩 방지 합니다. (수동 바인딩으로 OLAP 사용자에 게 특히 관심입니다.)  
+*bBind*<br/>
+[in] 열 지도 자동으로 바인딩할 지 여부를 지정 합니다. 기본값은 **true**를 자동으로 바인딩할 열 지도 이르게 합니다. 설정 *bBind* 하 **false** 수동으로 바인딩할 수 있도록 열 맵의 자동 바인딩 방지 합니다. (수동 바인딩으로 OLAP 사용자에 게 특히 관심입니다.)  
   
 ### <a name="return-value"></a>반환 값  
- HRESULT 값 중 하나입니다.  
+
+HRESULT 값 중 하나입니다.  
   
 ### <a name="remarks"></a>설명  
- 스키마 행 집합에서 최대 7 개의 제한 지정할 수 있습니다.  
+
+스키마 행 집합에서 최대 7 개의 제한 지정할 수 있습니다.  
   
- 참조 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) 각 스키마 행 집합에서 정의 된 제한에 대 한 정보에 대 한 합니다.  
+참조 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) 각 스키마 행 집합에서 정의 된 제한에 대 한 정보에 대 한 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)    
- [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)
+
+[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
+[스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)

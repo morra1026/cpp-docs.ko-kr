@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c443517edb26258f91497a4d82fcfd7ff26893d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c053f7b92ae12b3e99792603cf7b3c5ac9b49227
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247278"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108601"
 ---
 # <a name="compiler-error-c3060"></a>컴파일러 오류 C3060
-'member': friend 함수는 클래스 내부에서 정규화된 이름을 사용하여 정의할 수 없으며 선언만 할 수 있습니다.  
-  
- Friend 함수가 정규화된 이름을 사용하여 정의되었으며 이는 허용되지 않습니다.  
-  
- 다음 샘플에서는 C3060을 생성합니다.  
-  
-```  
-// C3060.cpp  
-class A {  
-public:  
-   void func();  
-};  
-  
-class C {  
-public:  
-   friend void A::func() { }   // C3060  
-   // Try the following line and the out of class definition:  
-   // friend void A::func();  
-};  
-  
-// void A::func(){}  
+
+'member': friend 함수는 클래스 내부에서 정규화된 이름을 사용하여 정의할 수 없으며 선언만 할 수 있습니다.
+
+Friend 함수가 정규화된 이름을 사용하여 정의되었으며 이는 허용되지 않습니다.
+
+다음 샘플에서는 C3060을 생성합니다.
+
+```
+// C3060.cpp
+class A {
+public:
+   void func();
+};
+
+class C {
+public:
+   friend void A::func() { }   // C3060
+   // Try the following line and the out of class definition:
+   // friend void A::func();
+};
+
+// void A::func(){}
 ```

@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d10e18eef4691c0a018feb583ffb93499e86ccb6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4b78bf8e9eb9ebe86dae75856ea3c0b6f5d34a26
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320208"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075909"
 ---
 # <a name="resource-compiler-error-rc2148"></a>리소스 컴파일러 오류 RC2148
-너무 많은 하위 언어 ID  
-  
- 하위 언어 ID 값 범위를 벗어났습니다.  
-  
- **LANGUAGE** 문에서는 다음 구문을 사용해야 합니다.  
-  
- **LANGUAGE** *primary_language_ID*,*secondary_language_ID*  
-  
- 유효한 보조 언어 Id로 정의 된 **SUBLANG_** WINNT.h 파일에는 상수입니다.
+
+너무 많은 하위 언어 ID
+
+보조 언어 ID 값이 범위를 벗어났습니다.
+
+**LANGUAGE** 문에서는 다음 구문을 사용해야 합니다.
+
+**LANGUAGE** *primary_language_ID*,*secondary_language_ID*
+
+유효한 보조 언어 Id로 정의 됩니다 **SUBLANG_** WINNT.h 파일에는 상수입니다.

@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1670ff7ed53d05b1dfc09e6953650892b0335f61
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 654b801c61d00f179d6d7ef88763b323d6503873
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761471"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050582"
 ---
 # <a name="csimplemapequalhelper-class"></a>CSimpleMapEqualHelper 클래스
 
@@ -33,16 +33,16 @@ ms.locfileid: "43761471"
 ## <a name="syntax"></a>구문
 
 ```
-template <class TKey, class TVal>  
+template <class TKey, class TVal>
 class CSimpleMapEqualHelper
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*TKey*  
+*TKey*<br/>
 주요 요소입니다.
 
-*TVal*  
+*TVal*<br/>
 값 요소입니다.
 
 ## <a name="members"></a>멤버
@@ -72,10 +72,10 @@ static bool IsEqualKey(const TKey& k1, const TKey& k2);
 
 ### <a name="parameters"></a>매개 변수
 
-*k1*  
+*k1*<br/>
 첫 번째 키입니다.
 
-*k2*  
+*k2*<br/>
 두 번째 키입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -92,10 +92,10 @@ static bool IsEqualValue(const TVal& v1, const TVal& v2);
 
 ### <a name="parameters"></a>매개 변수
 
-*v1*  
+*v1*<br/>
 첫 번째 값입니다.
 
-*v2*  
+*v2*<br/>
 두 번째 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -104,5 +104,5 @@ static bool IsEqualValue(const TVal& v1, const TVal& v2);
 
 ## <a name="see-also"></a>참고 항목
 
-[CSimpleMapEqualHelperFalse 클래스](../../atl/reference/csimplemapequalhelperfalse-class.md)   
+[CSimpleMapEqualHelperFalse 클래스](../../atl/reference/csimplemapequalhelperfalse-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

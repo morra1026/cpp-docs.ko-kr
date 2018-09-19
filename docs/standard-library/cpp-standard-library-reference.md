@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc6c665309f51044f00b05931500065ed087e774
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: dcf760219f06ab71684d9d67240712fa501b3c00
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33841208"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722607"
 ---
 # <a name="c-standard-library-reference"></a>C++ 표준 라이브러리 참조
 
@@ -34,8 +34,8 @@ Visual C++ 런타임 라이브러리에 대한 자세한 내용은 [CRT 라이�
 
 [C + + 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md) c + + 표준 라이브러리의 Microsoft 구현에 대 한 개요를 제공 합니다.
 
-[iostream 프로그래밍](../standard-library/iostream-programming.md) iostream 프로그래밍에 대 한 개요를 제공 합니다.
+[iostream 프로그래밍](../standard-library/iostream-programming.md) iostream 프로그래밍에 간략하게 설명 합니다.
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md) c + + 표준 라이브러리 헤더 파일 코드 예제와 함께 설명 하는 참조 항목에 대 한 링크를 제공 합니다.
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md) 코드 예제를 사용 하 여 c + + 표준 라이브러리 헤더 파일에 설명 하는 참조 항목에 대 한 링크를 제공 합니다.
 
 

@@ -21,17 +21,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a639091bd7c5c263a3f09067858cd0fe4ac631cd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 34063223addb433a94c877ad56cf410f189e6681
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33329198"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724739"
 ---
 # <a name="popcnt16-popcnt-popcnt64"></a>__popcnt16, __popcnt, __popcnt64
+
 **Microsoft 전용**  
   
- 개수를 하나의 비트 (채우기 수)는 16, 32 비트 또는 64 비트 부호 없는 정수입니다.  
+ 개수를 하나의 비트 (채우기 수)를 16, 32 비트 또는 64 비트 부호 없는 정수입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -48,8 +49,8 @@ unsigned __int64 __popcnt64(
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- [in] `value`  
- 16-, 32 또는 64 비트 부호 없는 정수 모집단 count 하겠습니다.  
+*값*<br/>
+[in] 16-, 32 비트 또는 64 비트 부호 없는 정수 채우기 수를 사용 하도록 하겠습니다.  
   
 ## <a name="return-value"></a>반환 값  
  하나의 비트 수는 `value` 매개 변수입니다.  
@@ -62,12 +63,12 @@ unsigned __int64 __popcnt64(
 |`__popcnt`|고급 비트 조작|  
 |`__popcnt64`|64 비트 모드에서 고급 비트 조작 합니다.|  
   
- **헤더 파일** \<. h >  
+ **헤더 파일** \<intrin.h >  
   
 ## <a name="remarks"></a>설명  
- 각각의 이러한 내장 함수 생성의 `popcnt` 명령입니다.  값의 크기는는 `popcnt` 해당 인수의 크기와 같습니다 반환 하는 명령입니다.  32 비트 모드에서 발생 하는 없는 64 비트 범용 레지스터, 따라서 더 64 비트 `popcnt`합니다.  
+ 각 이러한 내장 함수 생성을 `popcnt` 명령입니다.  값의 크기는는 `popcnt` 인수의 크기와 동일 하 게 반환 하는 명령입니다.  32 비트 모드로 레지스터가 없습니다 64-bit 범용, 따라서 64 비트 이상 `popcnt`합니다.  
   
- 에 대 한 하드웨어 지원을 확인 하는 `popcnt` 명령, 호출의 `__cpuid` 포함 된 내장 함수 `InfoType=0x00000001` 의 23 비트를 확인 하 고 `CPUInfo[2] (ECX)`합니다. 이 비트는 그렇지 않으면 명령이 지원 되 면 1과 0입니다. 하는 경우 코드를 실행 하면 사용 하 여이 내장 함수를 지원 하지 않는 하드웨어에는 `popcnt` 명령 결과 예측할 수 없습니다.  
+ 에 대 한 하드웨어 지원을 확인 하는 `popcnt` 명령을 호출 합니다 `__cpuid` 포함 된 내장 함수 `InfoType=0x00000001` 23 많은 확인 및 `CPUInfo[2] (ECX)`합니다. 이 비트는 그렇지 않은 경우 명령 지원 되 면 1과 0입니다. 경우 코드를 실행 하면 사용 하 여이 내장 함수를 지원 하지 않는 하드웨어를 `popcnt` 명령 결과 예측할 수 없습니다.  
   
 ## <a name="example"></a>예제  
   
@@ -107,7 +108,8 @@ __popcnt(0xffffffff) = 32
 ```  
   
 **Microsoft 전용 종료**  
- 고급 마이크로 장치, inc 2007 저작권 All rights reserved. 고급 마이크로 장치, Inc. 로부터 사용 권한을 승인 하에 복제  
+
+고급 마이크로 장치, inc 저작권 2007 All rights reserved. 고급 마이크로 장치, Inc. 사용 권한을 사용 하 여 재현  
   
 ## <a name="see-also"></a>참고 항목  
  [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

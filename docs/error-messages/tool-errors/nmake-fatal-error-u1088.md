@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c3934e39cd87bd41432e90af1b7053815e5e44ad
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 72f09dec61cec9870627682e9413d98e0d623188
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33318014"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46109758"
 ---
 # <a name="nmake-fatal-error-u1088"></a>NMAKE 심각한 오류 U1088
-잘못 된 구분 기호 ':: ' 유추 규칙에  
-  
- 단일 콜론으로 유추 규칙을 따라야 합니다 (**:**).
+
+잘못 된 구분 기호 ': ' 유추 규칙
+
+단일 콜론으로 유추 규칙을 따라야 (**:**).

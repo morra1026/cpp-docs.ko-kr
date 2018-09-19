@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1578b6d7c55272c4b798d0222a1da37f5a749ecc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: aae194d0ec2aa6c5eedafa1d4c66137861385ed6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33234124"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029594"
 ---
 # <a name="compiler-error-c2694"></a>컴파일러 오류 C2694
-'override': 재정의 가상 함수에 기본 클래스 보다 덜 제한적인 예외 사양이 가상 멤버 함수 'base'  
-  
- 가상 함수 재정의 된 [/Za](../../build/reference/za-ze-disable-language-extensions.md), 함수를 재정의 하는 것이 덜 제한적인 [예외 사양이](../../cpp/exception-specifications-throw-cpp.md)합니다.  
-  
- 다음 샘플에서는 C2694 오류가 생성 됩니다.  
-  
-```  
-// C2694.cpp  
-// compile with: /Za /c  
-class MyBase {  
-public:  
-   virtual void f(void) throw(int) {  
-   }  
-};  
-  
-class Derived : public MyBase {  
-public:  
-   void f(void) throw(...) {}   // C2694  
-   void f2(void) throw(int) {}   // OK  
-};  
+
+'override': 재정의 가상 함수에 기본 클래스 보다 덜 제한적인 예외 사양이 가상 멤버 함수 'base'
+
+가상 함수 재정의 되었습니다 [/Za](../../build/reference/za-ze-disable-language-extensions.md)의 함수를 재정의 했습니다 덜 제한적인 [예외 사양이](../../cpp/exception-specifications-throw-cpp.md)합니다.
+
+다음 샘플에서는 C2694 오류가 생성 됩니다.
+
+```
+// C2694.cpp
+// compile with: /Za /c
+class MyBase {
+public:
+   virtual void f(void) throw(int) {
+   }
+};
+
+class Derived : public MyBase {
+public:
+   void f(void) throw(...) {}   // C2694
+   void f2(void) throw(int) {}   // OK
+};
 ```

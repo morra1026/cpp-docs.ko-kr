@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 476dd8b3eeb7174c7584a58ccb5d53bf251adbcc
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b6a2e6c334016c79f02dc43e9790d7dfc4645212
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43768010"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075620"
 ---
 # <a name="programming-with-ccombstr-atl"></a>CComBSTR을 사용한 프로그래밍(ATL)
 
@@ -88,8 +88,8 @@ ATL 클래스 [CComBSTR](../atl/reference/ccombstr-class.md) BSTR 데이터 형�
 
 ## <a name="see-also"></a>참고 항목
 
-[개념](../atl/active-template-library-atl-concepts.md)   
-[CStringT 클래스](../atl-mfc-shared/reference/cstringt-class.md)   
-[wstring](../standard-library/basic-string-class.md)   
+[개념](../atl/active-template-library-atl-concepts.md)<br/>
+[CStringT 클래스](../atl-mfc-shared/reference/cstringt-class.md)<br/>
+[wstring](../standard-library/basic-string-class.md)<br/>
 [문자열 변환 매크로](../atl/reference/string-conversion-macros.md)
 

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eec4b4b1df536a176fa05ea9095878ab5e1492cb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 67adc99491a15503ee5580df37a612eb73013686
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33253369"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075893"
 ---
 # <a name="compiler-error-c3603"></a>컴파일러 오류 C3603
-'Symbol': ' type' 아직 지원 하지 않습니다  
-  
- 관리 되는 개체에서.NET 런타임이 아직 지원 되지 않는 데이터 형식을 사용 하려고 했습니다.
+
+'Symbol': ' type' 아직 지원 되지 않음
+
+관리 되는 개체의.NET 런타임에서 아직 지원 되지 않는 데이터 형식을 사용 하려고 했습니다.

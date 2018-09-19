@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 11c83332c12daa6753add0618367b90f8c759532
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: a13c7971e65a926799cc0134c811845c292161d4
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848770"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709192"
 ---
 # <a name="cmfcribbonundobutton-class"></a>CMFCRibbonUndoButton 클래스
 `CMFCRibbonUndoButton` 최신 사용자 명령을 포함 하는 드롭다운 목록에서 단추를 구현 하는 클래스입니다. 사용자는 다시 실행 하거나 해당 변경 내용을 취소 하려면 드롭다운 목록에서 가장 최근 명령 중 하나 이상을 선택할 수 있습니다.  
@@ -62,7 +62,7 @@ class CMFCRibbonUndoButton : public CMFCRibbonGallery
 ## <a name="remarks"></a>설명  
  `CMFCRibbonUndoButton` 클래스는 스택을 드롭 다운 목록을 나타내는 데 사용 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는의 개체를 생성 하는 방법에 설명 합니다 `CMFCRibbonUndoButton` 클래스 및 동작의 목록에 새 작업을 추가 합니다. 이 코드 조각은의 일부인 합니다 [리본 가젯 샘플](../../visual-cpp-samples.md)합니다.  
   
  [!code-cpp[NVC_MFC_RibbonGadgets#2](../../mfc/reference/codesnippet/cpp/cmfcribbonundobutton-class_1.cpp)]  
@@ -89,8 +89,8 @@ void AddUndoAction(LPCTSTR lpszLabel);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpszLabel*  
- 드롭다운 목록에서 표시할 작업 레이블.  
+*lpszLabel*<br/>
+[in] 드롭다운 목록에서 표시할 작업 레이블.  
   
 ##  <a name="cleanupundolist"></a>  CMFCRibbonUndoButton::CleanUpUndoList  
  드롭다운 목록에는 작업 목록을 지웁니다.  
@@ -117,20 +117,20 @@ CMFCRibbonUndoButton(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 명령 식별자를 지정합니다.  
+*nID*<br/>
+[in] 명령 식별자를 지정합니다.  
   
- [in] *lpszText*  
- 단추의 텍스트 레이블을 지정합니다.  
+*lpszText*<br/>
+[in] 단추의 텍스트 레이블을 지정합니다.  
   
- [in] *nSmallImageIndex*  
- 단추의 작은 이미지에 대 한 부모 개체의 이미지 목록에서 0부터 시작 인덱스입니다.  
+*nSmallImageIndex*<br/>
+[in] 단추의 작은 이미지에 대 한 부모 개체의 이미지 목록에서 0부터 시작 인덱스입니다.  
   
- [in] *nLargeImageIndex*  
- 인덱스에 대 한 부모 개체의 이미지 목록에서를 단추의 큰 이미지입니다.  
+*nLargeImageIndex*<br/>
+[in] 인덱스에 대 한 부모 개체의 이미지 목록에서를 단추의 큰 이미지입니다.  
   
- [in] *hIcon*  
- 단추의 이미지로 사용할 수 있는 아이콘에 대 한 핸들입니다.  
+*hIcon*<br/>
+[in] 단추의 이미지로 사용할 수 있는 아이콘에 대 한 핸들입니다.  
   
 ##  <a name="getactionnumber"></a>  CMFCRibbonUndoButton::GetActionNumber  
  사용자가 선택한 드롭다운 목록에서 항목 수를 결정 합니다.  

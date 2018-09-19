@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dfc2881180fd2b3948c0e9ed7b3125dc03d0f093
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a16d27ab2e2c42ed2f58bbb416df067f01c7ec0d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226365"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46081353"
 ---
 # <a name="fatal-error-c1077"></a>심각한 오류 C1077
-컴파일러 한계: 명령줄 옵션을 number개 보다 많이 지정할 수 없습니다.  
-  
- 명령줄 옵션의 수가 내부 한계를 초과합니다.  
-  
- 너무 많은 기호가 [/D](../../build/reference/d-preprocessor-definitions.md)를 사용하여 정의된 것일 수 있습니다. (대신 정의를 헤더 파일에 배치합니다.)
+
+컴파일러 한계: 명령줄 옵션을 number개 보다 많이 지정할 수 없습니다.
+
+명령줄 옵션의 수가 내부 한계를 초과합니다.
+
+너무 많은 기호가 [/D](../../build/reference/d-preprocessor-definitions.md)를 사용하여 정의된 것일 수 있습니다. (대신 정의를 헤더 파일에 배치합니다.)

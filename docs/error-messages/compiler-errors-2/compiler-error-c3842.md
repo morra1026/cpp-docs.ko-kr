@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c29878f7d64bfe1ed444130c77461dece6d20302
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8db69ce3af28ed5878c43775b2c33542e5c817d6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33270764"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055528"
 ---
 # <a name="compiler-error-c3842"></a>컴파일러 오류 C3842
-'function': WinRT 또는 관리되는 형식의 멤버 함수에 'const' 및 'volatile' 한정자를 사용할 수 없습니다.  
-  
- [const](../../cpp/const-cpp.md) 및 [휘발성](../../cpp/volatile-cpp.md) Windows 런타임 또는 관리 되는 형식 멤버 함수에서 지원 되지 않습니다.  
-  
- 다음 샘플에서는 C3842를 생성합니다.  
-  
-```  
-// C3842a.cpp  
-// compile with: /clr /c  
-public ref struct A {  
-   void f() const {}   // C3842  
-   void f() volatile {}   // C3842  
-  
-   void f() {}  
-};  
+
+'function': WinRT 또는 관리되는 형식의 멤버 함수에 'const' 및 'volatile' 한정자를 사용할 수 없습니다.
+
+[const](../../cpp/const-cpp.md) 하 고 [volatile](../../cpp/volatile-cpp.md) Windows 런타임 또는 관리 되는 형식의 멤버 함수에서 지원 되지 않습니다.
+
+다음 샘플에서는 C3842를 생성합니다.
+
+```
+// C3842a.cpp
+// compile with: /clr /c
+public ref struct A {
+   void f() const {}   // C3842
+   void f() volatile {}   // C3842
+
+   void f() {}
+};
 ```

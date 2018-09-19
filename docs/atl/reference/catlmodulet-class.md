@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f468117cc4d3fad8f3eb1d94abc948c9a4a032b4
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3a88ecf9c5fcffa07066c3ab988fde1f36adf8d4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766830"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057485"
 ---
 # <a name="catlmodulet-class"></a>CAtlModuleT 클래스
 
@@ -38,13 +38,13 @@ ms.locfileid: "43766830"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `CAtlModuleT`합니다.
 
 ## <a name="members"></a>멤버
@@ -74,7 +74,7 @@ class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
-[_ATL_MODULE](atl-typedefs.md#_atl_module)  
+[_ATL_MODULE](atl-typedefs.md#_atl_module)
 
 [CAtlModule](../../atl/reference/catlmodule-class.md)
 
@@ -132,10 +132,10 @@ HRESULT RegisterServer(
 
 ### <a name="parameters"></a>매개 변수
 
-*bRegTypeLib*  
+*bRegTypeLib*<br/>
 TRUE 이면 형식 라이브러리 등록 됩니다. 기본값은 FALSE입니다.
 
-*하면*  
+*하면*<br/>
 등록할 개체의 CLSID 가리킵니다. NULL (기본값), 개체 맵의 모든 개체를 등록할 경우.
 
 ### <a name="return-value"></a>반환 값
@@ -166,10 +166,10 @@ HRESULT UnregisterServer(
 
 ### <a name="parameters"></a>매개 변수
 
-*bUnRegTypeLib*  
+*bUnRegTypeLib*<br/>
 형식 라이브러리 등록을 취소할 수도 이면 TRUE입니다.
 
-*하면*  
+*하면*<br/>
 등록을 취소할 개체의 CLSID 가리킵니다. 경우 NULL (기본값), 개체 맵의 모든 개체를 등록 취소 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -186,7 +186,7 @@ static HRESULT WINAPI UpdateRegistryAppId(BOOL /* bRegister*/) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*b 등록 하십시오*  
+*b 등록 하십시오*<br/>
 예약됨.
 
 ### <a name="return-value"></a>반환 값
@@ -195,6 +195,6 @@ static HRESULT WINAPI UpdateRegistryAppId(BOOL /* bRegister*/) throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[CAtlModule 클래스](../../atl/reference/catlmodule-class.md)   
-[클래스 개요](../../atl/atl-class-overview.md)   
+[CAtlModule 클래스](../../atl/reference/catlmodule-class.md)<br/>
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [모듈 클래스](../../atl/atl-module-classes.md)

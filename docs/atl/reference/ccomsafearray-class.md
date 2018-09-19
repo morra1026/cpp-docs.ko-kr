@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 920cfbde9229131c5148c359f6a82ce002d7fb3a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 411b8f58b38d2b35c1353d1ff446407026977d66
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758520"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030146"
 ---
 # <a name="ccomsafearray-class"></a>CComSafeArray 클래스
 
@@ -58,7 +58,7 @@ class CComSafeArray
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 배열에 저장할 데이터의 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -158,19 +158,19 @@ HRESULT Add(const T& t, BOOL bCopy = TRUE);
 
 ### <a name="parameters"></a>매개 변수
 
-*psaSrc*  
+*psaSrc*<br/>
 에 대 한 포인터를 `SAFEARRAY` 개체입니다.
 
-*ulCount*  
+*ulCount*<br/>
 배열에 추가할 개체의 수입니다.
 
-*(태평양 표준시)*  
+*(태평양 표준시)*<br/>
 배열에 추가할 하나 이상의 개체에 대 한 포인터입니다.
 
-*t*  
+*t*<br/>
 배열에 추가할 개체 참조입니다.
 
-*복사*  
+*복사*<br/>
 데이터의 복사본을 만들어야 하는지 여부를 나타냅니다. 기본값은 TRUE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -193,7 +193,7 @@ HRESULT Attach(const SAFEARRAY* psaSrc);
 
 ### <a name="parameters"></a>매개 변수
 
-*psaSrc*  
+*psaSrc*<br/>
 에 대 한 포인터를 `SAFEARRAY` 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -220,25 +220,25 @@ CComSafeArray(const SAFEARRAY* psaSrc);
 
 ### <a name="parameters"></a>매개 변수
 
-*바인딩된*  
+*바인딩된*<br/>
 `SAFEARRAYBOUND` 구조입니다.
 
-*ulCount*  
+*ulCount*<br/>
 배열의 요소 수입니다.
 
-*lLBound*  
+*lLBound*<br/>
 하한값 값 즉, 배열의 첫 번째 요소의 인덱스입니다.
 
-*pBound*  
+*pBound*<br/>
 에 대 한 포인터를 `SAFEARRAYBOUND` 구조입니다.
 
-*uDims*  
+*uDims*<br/>
 배열의 차원 수입니다.
 
-*saSrc*  
+*saSrc*<br/>
 에 대 한 참조를 `SAFEARRAY` 구조 또는 `CComSafeArray` 개체입니다. 두 경우 모두 생성자 생성 후 배열 참조 되지 않은 있도록 배열의 복사본을이 참조를 사용 합니다.
 
-*psaSrc*  
+*psaSrc*<br/>
 에 대 한 포인터를 `SAFEARRAY` 구조입니다. 생성자 생성 후 배열 참조 되지 않은 있도록 배열의 복사본이 주소를 사용 합니다.
 
 ### <a name="remarks"></a>설명
@@ -267,7 +267,7 @@ HRESULT CopyFrom(LPSAFEARRAY* ppArray);
 
 ### <a name="parameters"></a>매개 변수
 
-*ppArray*  
+*ppArray*<br/>
 에 대 한 포인터를 `SAFEARRAY` 복사 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -288,7 +288,7 @@ HRESULT CopyTo(LPSAFEARRAY* ppArray);
 
 ### <a name="parameters"></a>매개 변수
 
-*ppArray*  
+*ppArray*<br/>
 만들 새 위치에 대 한 포인터 `SAFEARRAY`합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -310,16 +310,16 @@ HRESULT Create(ULONG ulCount = 0, LONG lLBound = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*pBound*  
+*pBound*<br/>
 에 대 한 포인터를 `SAFEARRAYBOUND` 개체입니다.
 
-*uDims*  
+*uDims*<br/>
 배열의 차원 수를 지정 합니다.
 
-*ulCount*  
+*ulCount*<br/>
 배열의 요소 수입니다.
 
-*lLBound*  
+*lLBound*<br/>
 하한값 값 즉, 배열의 첫 번째 요소의 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -372,7 +372,7 @@ T& GetAt(LONG lIndex) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*색인입니다.*  
+*색인입니다.*<br/>
 반환할 배열의 값의 인덱스 번호입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -389,7 +389,7 @@ ULONG GetCount(UINT uDim = 0) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*uDim*  
+*uDim*<br/>
 배열 차원입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -422,7 +422,7 @@ LONG GetLowerBound(UINT uDim = 0) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*uDim*  
+*uDim*<br/>
 하한값을 가져올 배열 차원입니다. 생략 하면 기본값은 0입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -485,7 +485,7 @@ LONG GetUpperBound(UINT uDim = 0) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*uDim*  
+*uDim*<br/>
 상한 값을 가져올 배열 차원입니다. 생략 하면 기본값은 0입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -526,10 +526,10 @@ HRESULT MultiDimGetAt(const LONG* alIndex, T& t);
 
 ### <a name="parameters"></a>매개 변수
 
-*alIndex*  
+*alIndex*<br/>
 배열의 각 차원에 대 한 인덱스의 벡터에 대 한 포인터입니다. 왼쪽 (최상위) 차원이 `alIndex[0]`합니다.
 
-*t*  
+*t*<br/>
 데이터에 대 한 참조를 반환 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -546,10 +546,10 @@ HRESULT MultiDimSetAt(const LONG* alIndex, const T& t);
 
 ### <a name="parameters"></a>매개 변수
 
-*alIndex*  
+*alIndex*<br/>
 배열의 각 차원에 대 한 인덱스의 벡터에 대 한 포인터입니다. 오른쪽 (최하위) 차원이 `alIndex`[0]입니다.
 
-*T*  
+*T*<br/>
 새 요소의 값을 지정합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -571,7 +571,7 @@ T& operator[]int nindex) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*nIndex 색인입니다.*  
+*nIndex 색인입니다.*<br/>
 배열에 필요한 요소의 인덱스 번호입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -593,10 +593,10 @@ ATL::CComSafeArray<T>& operator=(const SAFEARRAY* psaSrc);
 
 ### <a name="parameters"></a>매개 변수
 
-*saSrc*  
+*saSrc*<br/>
 `CComSafeArray` 개체에 대한 참조입니다.
 
-*psaSrc*  
+*psaSrc*<br/>
 에 대 한 포인터를 `SAFEARRAY` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -626,13 +626,13 @@ HRESULT Resize(ULONG ulCount, LONG lLBound = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*pBound*  
+*pBound*<br/>
 에 대 한 포인터를 `SAFEARRAYBOUND` 요소 수 및 배열의 하한값에 대 한 정보를 포함 하는 구조입니다.
 
-*ulCount*  
+*ulCount*<br/>
 크기가 조정 된 배열의 개체에에서 요청 된 횟수입니다.
 
-*lLBound*  
+*lLBound*<br/>
 하 한.
 
 ### <a name="return-value"></a>반환 값
@@ -653,13 +653,13 @@ HRESULT SetAt(LONG lIndex, const T& t, BOOL bCopy = TRUE);
 
 ### <a name="parameters"></a>매개 변수
 
-*색인입니다.*  
+*색인입니다.*<br/>
 설정할 수 있는 배열 요소의 인덱스 번호입니다.
 
-*t*  
+*t*<br/>
 지정 된 요소의 새 값입니다.
 
-*복사*  
+*복사*<br/>
 데이터의 복사본을 만들어야 하는지 여부를 나타냅니다. 기본값은 TRUE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -672,7 +672,7 @@ HRESULT SetAt(LONG lIndex, const T& t, BOOL bCopy = TRUE);
 
 ## <a name="see-also"></a>참고 항목
 
-[SAFEARRAY 데이터 형식](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearray)   
-[Ccomsafearray::](#create)   
-[Ccomsafearray:: Destroy](#destroy)   
+[SAFEARRAY 데이터 형식](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearray)<br/>
+[개체를 만들려면](#create)<br/>
+[CComSafeArray::Destroy](#destroy)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

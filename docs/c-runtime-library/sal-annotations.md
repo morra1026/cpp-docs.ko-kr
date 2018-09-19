@@ -57,17 +57,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2eb935285c8c90c238baf59cd11a1232fa33d895
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 363d7ff6de4c808c3c7b8d37a9a9f95bf069723c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409386"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107496"
 ---
 # <a name="sal-annotations"></a>SAL 주석
-라이브러리 헤더 파일에서 `_In_z` 및 `_Out_z_cap_(_Size)`와 같은 특수한 주석을 볼 수 있습니다. 이러한 주석은 Microsoft SAL(소스 코드 주석 언어)의 예로서 가정과 완료에 대한 보장 등 함수에서 매개 변수를 사용하는 방법을 설명하는 주석 모음을 제공합니다. 헤더 파일 \<sal.h>는 주석을 정의합니다.  
-  
- Visual Studio에서 SAL 주석을 사용하는 방법에 대한 자세한 내용은 [C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects)을 참조하세요.  
-  
-## <a name="see-also"></a>참고 항목  
- [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)
+
+라이브러리 헤더 파일에서 `_In_z` 및 `_Out_z_cap_(_Size)`와 같은 특수한 주석을 볼 수 있습니다. 이러한 주석은 Microsoft SAL(소스 코드 주석 언어)의 예로서 가정과 완료에 대한 보장 등 함수에서 매개 변수를 사용하는 방법을 설명하는 주석 모음을 제공합니다. 헤더 파일 \<sal.h>는 주석을 정의합니다.
+
+Visual Studio에서 SAL 주석을 사용하는 방법에 대한 자세한 내용은 [C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects)을 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+[CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)

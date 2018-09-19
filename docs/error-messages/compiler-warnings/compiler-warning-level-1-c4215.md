@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d5e07b9382c24f82f3e7d84fe82aee9dd91ca19
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 137a278452e9e3e204d761f0519c16541cfdb46e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33277607"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094093"
 ---
 # <a name="compiler-warning-level-1-c4215"></a>컴파일러 경고(수준 1) C4215
-비표준 확장이 사용 됨: long float  
-  
- 기본 Microsoft 확장 (/Ze) 처리 **long float** 으로 **double**합니다. ANSI 호환성 ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) 하지 않습니다. 사용 하 여 **double** 의 호환성을 유지 합니다.  
-  
- 다음 샘플에서는 C4215 오류가 생성 됩니다.  
-  
-```  
-// C4215.cpp  
-// compile with: /W1 /LD  
-long float a;   // C4215  
-  
-// use the line below to resolve the warning  
-// double a;  
+
+비표준 확장이 사용 됨: long float
+
+기본 Microsoft 확장명 (/Ze) 취급 **float long** 으로 **double**합니다. ANSI 호환성 ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) 하지 않습니다. 사용 하 여 **이중** 호환성을 유지 합니다.
+
+다음 샘플에서는 C4215 오류가 생성 됩니다.
+
+```
+// C4215.cpp
+// compile with: /W1 /LD
+long float a;   // C4215
+
+// use the line below to resolve the warning
+// double a;
 ```

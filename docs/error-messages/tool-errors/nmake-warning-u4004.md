@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 532abf2f62616d6e748c9a4e34f5c983f0853276
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2a89bb8abf212c8a0ffa9fb40fe5d3ea43307a08
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317182"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016652"
 ---
 # <a name="nmake-warning-u4004"></a>NMAKE 경고 U4004
-대상 'targetname'에 대 한 너무 많은 규칙  
-  
- 설명 블록 둘 이상의 단일 콜론을 사용 하 여 지정한 대상에 대해 지정 된 (**:**)으로 구분 합니다. NMAKE는 첫 번째 설명 블록에 있는 명령을 실행 하 고 나머지 블록을 무시 합니다.  
-  
- 동일한 대상 여러 종속성을 지정 하려면 이중 콜론을 사용 합니다 (`::`) 각 연결선에서 구분 기호로 합니다.
+
+대상 'targetname'에 대 한 규칙이 너무 많습니다.
+
+둘 이상의 설명 블록 단일 콜론을 사용 하 여 지정된 된 대상에 대해 지정 되었습니다 (**:**) 구분 기호로 합니다. NMAKE는 첫 번째 설명 블록에 있는 명령을 실행 하 고 나머지 블록을 무시 합니다.
+
+동일한 대상에 여러 종속성을 지정 하려면 이중 콜론을 사용 합니다 (`::`) 각 연결선에 구분 기호로 사용 합니다.

@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ec36cddae835d46c5db6245f85e4294aa52225e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 170f46424e8eb4db4c38c91f01a89b53d5cbce0a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766576"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107831"
 ---
 # <a name="catldllmodulet-class"></a>CAtlDllModuleT 클래스
 
@@ -38,13 +38,13 @@ ms.locfileid: "43766576"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `CAtlDllModuleT`합니다.
 
 ## <a name="members"></a>멤버
@@ -128,13 +128,13 @@ HRESULT DllGetClassObject(
 
 ### <a name="parameters"></a>매개 변수
 
-*rclsid*  
+*rclsid*<br/>
 만들 개체의 CLSID입니다.
 
-*riid*  
+*riid*<br/>
 요청된 된 인터페이스의 IID입니다.
 
-*ppv*  
+*ppv*<br/>
 로 식별 되는 인터페이스 포인터에 대 한 포인터 *riid*합니다. 개체는이 인터페이스를 지원 하지 않는 경우 *ppv* NULL로 설정 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -151,10 +151,10 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID /* lpReserved*/) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dwReason*  
+*dwReason*<br/>
 DLL_PROCESS_ATTACH, 활발 및 DLL_THREAD_DETACH 알림 호출으로 사용 하지 않도록 설정 합니다.
 
-*lpReserved*  
+*lpReserved*<br/>
 예약됨.
 
 ### <a name="return-value"></a>반환 값
@@ -175,7 +175,7 @@ HRESULT DllRegisterServer(BOOL bRegTypeLib = TRUE) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*bRegTypeLib*  
+*bRegTypeLib*<br/>
 TRUE 이면 형식 라이브러리 등록 됩니다. 기본값은 TRUE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -192,7 +192,7 @@ HRESULT DllUnregisterServer(BOOL bUnRegTypeLib = TRUE) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*bUnRegTypeLib*  
+*bUnRegTypeLib*<br/>
 형식 라이브러리를 레지스트리에서 제거할 이면 TRUE입니다. 기본값은 TRUE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -212,13 +212,13 @@ HRESULT GetClassObject(
 
 ### <a name="parameters"></a>매개 변수
 
-*rclsid*  
+*rclsid*<br/>
 만들 개체의 CLSID입니다.
 
-*riid*  
+*riid*<br/>
 요청된 된 인터페이스의 IID입니다.
 
-*ppv*  
+*ppv*<br/>
 로 식별 되는 인터페이스 포인터에 대 한 포인터 *riid*합니다. 개체는이 인터페이스를 지원 하지 않는 경우 *ppv* NULL로 설정 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -231,7 +231,7 @@ HRESULT GetClassObject(
 
 ## <a name="see-also"></a>참고 항목
 
-[CAtlModuleT 클래스](../../atl/reference/catlmodulet-class.md)   
-[CAtlExeModuleT 클래스](../../atl/reference/catlexemodulet-class.md)   
-[클래스 개요](../../atl/atl-class-overview.md)   
+[CAtlModuleT 클래스](../../atl/reference/catlmodulet-class.md)<br/>
+[CAtlExeModuleT 클래스](../../atl/reference/catlexemodulet-class.md)<br/>
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [모듈 클래스](../../atl/atl-module-classes.md)

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4197d850dbc7a064ebc7c6e33183d83fb9916ebe
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eab8643706b3c7468b589bd63c508ec0c2bf5306
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299203"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021916"
 ---
 # <a name="linker-tools-warning-lnk4073"></a>링커 도구 경고 LNK4073
-.ilk 파일에 대 한 맵을 만들 수 없습니다. 비증분 링크  
-  
- 큰 하지 못했습니다 (.ilk) 증분 상태 파일을 만드는 링크에 대 한 공유 메모리에서 연속 공간이 부족 합니다. 링크 비증분 빌드를 수행 합니다.
+
+.ilk 파일에 대 한 맵을 만들 수 없습니다. 비증분 링크
+
+큰 하지 못했습니다 (.ilk) 증분 상태 파일을 만들려면 링크에 대 한 공유 메모리에서 연속 공간이 부족 합니다. 링크 비증분 빌드를 수행 합니다.

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f2c115ea47f87a59c7412ed057675ccf893467cc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c47d7e99099632313fd561a4e08af52644693c95
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33166363"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077011"
 ---
 # <a name="compiler-error-c2091"></a>컴파일러 오류 C2091
-함수를 반환 하는 함수  
-  
- 함수는 함수를 반환할 수 없습니다. 대신 함수에 대 한 포인터를 반환 합니다.
+
+함수가 함수를 반환합니다.
+
+함수는 함수를 반환할 수 없습니다. 대신 함수에 대 한 포인터를 반환 합니다.

@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e9dc0c7def2819f3a882667efb073c565707712
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 90936d7ad695cb826e7fc58798706822ca1b8f24
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33272161"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037790"
 ---
 # <a name="compiler-warning-level-1-c4518"></a>컴파일러 경고(수준 1) C4518
-'specifier': 저장소 클래스 또는 형식 지정자에 예기치 않은. 무시  
-  
- 다음 샘플에서는 C4518 오류가 생성 됩니다.  
-  
-```  
-// C4518.cpp  
-// compile with: /c /W1  
-_declspec(dllexport) extern "C" void MyFunction();   // C4518  
-  
-extern "C" void MyFunction();   // OK  
+
+'specifier': 저장소 클래스 또는 형식 지정 자가 예기치 않은. 무시
+
+다음 샘플에서는 C4518 오류가 생성 됩니다.
+
+```
+// C4518.cpp
+// compile with: /c /W1
+_declspec(dllexport) extern "C" void MyFunction();   // C4518
+
+extern "C" void MyFunction();   // OK
 ```

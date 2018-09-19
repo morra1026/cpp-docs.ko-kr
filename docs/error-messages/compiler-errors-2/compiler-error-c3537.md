@@ -16,35 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f03f02062e61e4034f0a809784ba571ce532e07
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9f04500998adf132594b91fc38f82c8bec4b1c5c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252607"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46107694"
 ---
 # <a name="compiler-error-c3537"></a>컴파일러 오류 C3537
-'type': 'auto' 포함 하는 형식으로 캐스팅할 수 없습니다  
-  
- 에 포함 하기 때문에 변수 표시 된 형식으로 캐스팅할 수 없습니다는 `auto` 키워드 및 기본 [/zc: auto](../../build/reference/zc-auto-deduce-variable-type.md) 컴파일러 옵션을 적용 합니다.  
-  
-## <a name="example"></a>예제  
- 다음 코드에서는 C3537 포함 하는 형식으로 캐스팅 하는 변수는 `auto` 키워드입니다.  
-  
-```  
-// C3537.cpp  
-// Compile with /Zc:auto  
-int main()  
-{  
-   int value = 123;  
-   auto(value);                        // C3537  
-   (auto)value;                        // C3537  
-   auto x1 = auto(value);              // C3537  
-   auto x2 = (auto)value;              // C3537  
-   auto x3 = static_cast<auto>(value); // C3537  
-   return 0;  
-}  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [auto 키워드](../../cpp/auto-keyword.md)
+
+'type': 'auto'를 포함 하는 형식으로 캐스팅할 수 없습니다
+
+형식을 포함 하기 때문에 변수 표시 된 형식으로 캐스팅할 수 없습니다는 `auto` 키워드 및 기본 [/zc: auto](../../build/reference/zc-auto-deduce-variable-type.md) 컴파일러 옵션이 적용 됩니다.
+
+## <a name="example"></a>예제
+
+다음 코드에서는 C3537 포함 하는 형식으로 캐스팅 하는 변수는 `auto` 키워드입니다.
+
+```
+// C3537.cpp
+// Compile with /Zc:auto
+int main()
+{
+   int value = 123;
+   auto(value);                        // C3537
+   (auto)value;                        // C3537
+   auto x1 = auto(value);              // C3537
+   auto x2 = (auto)value;              // C3537
+   auto x3 = static_cast<auto>(value); // C3537
+   return 0;
+}
+```
+
+## <a name="see-also"></a>참고 항목
+
+[auto 키워드](../../cpp/auto-keyword.md)

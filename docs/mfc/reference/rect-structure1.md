@@ -1,5 +1,5 @@
 ---
-title: RECT 구조 1 | Microsoft Docs
+title: RECT 구조체 1 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,14 +18,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b61c794b8fa383eeea62459a5a83948ef2efe10
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2e71459a1c22b9295c5c88ce29da9e494660fa26
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372595"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046305"
 ---
-# <a name="rect-structure1"></a>RECT 구조 1
+# <a name="rect-structure1"></a>RECT 구조체 1
 `RECT` 구조체는 사각형의 왼쪽 위 및 오른쪽 아래 모퉁이의 좌표를 정의합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -40,17 +40,17 @@ typedef struct tagRECT {
 ```  
   
 ## <a name="members"></a>멤버  
- `left`  
- 사각형의 왼쪽 위 모퉁이의 x좌표를 지정합니다.  
+`left`<br/>
+사각형의 왼쪽 위 모퉁이의 x좌표를 지정합니다.  
   
- `top`  
- 사각형의 왼쪽 위 모퉁이의 y좌표를 지정합니다.  
+`top`<br/>
+사각형의 왼쪽 위 모퉁이의 y좌표를 지정합니다.  
   
- `right`  
- 사각형의 오른쪽 아래 모퉁이의 x좌표를 지정합니다.  
+`right`<br/>
+사각형의 오른쪽 아래 모퉁이의 x좌표를 지정합니다.  
   
- `bottom`  
- 사각형의 오른쪽 아래 모퉁이의 y좌표를 지정합니다.  
+`bottom`<br/>
+사각형의 오른쪽 아래 모퉁이의 y좌표를 지정합니다.  
   
 ## <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_Utilities#38](../../mfc/codesnippet/cpp/rect-structure1_1.cpp)]  

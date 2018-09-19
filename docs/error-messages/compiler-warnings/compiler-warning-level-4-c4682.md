@@ -16,38 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 076e8de6cbffa1f531cec875fd682a1daee42e74
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: aa804b96c2177fc4d263b76feeaa770fea07b5de
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293535"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46092637"
 ---
 # <a name="compiler-warning-level-4-c4682"></a>컴파일러 경고(수준 4) C4682
-'parameter': 방향 매개 변수 특성을 지정하지 않았으므로 기본적으로 [in]이 사용됩니다.  
-  
- 특성을 가진 인터페이스 매개 변수에 대한 메서드에 방향 특성( [in](../../windows/in-cpp.md) 또는 [out](../../windows/out-cpp.md))이 없습니다. 매개 변수의 기본값은 in입니다.  
-  
- 기본적으로 이 경고는 해제되어 있습니다. 자세한 내용은 [기본적으로 해제되어 있는 컴파일러 경고](../../preprocessor/compiler-warnings-that-are-off-by-default.md) 를 참조하세요.  
-  
- 다음 샘플에서는 C4682를 생성합니다.  
-  
-```  
-// C4682.cpp  
-// compile with: /W4  
-#pragma warning(default : 4682)  
-#include <windows.h>  
-[module(name="MyModule")];  
-  
-[ library_block, object, uuid("c54ad59d-d516-41dd-9acd-afda17565c2b") ]  
-__interface IMyIface : IUnknown  
-{  
-   HRESULT f1(int i, int *pi); // C4682  
-   // try the following line  
-   // HRESULT f1([in] int i, [in] int *pi);  
-};  
-  
-int main()  
-{  
-}  
+
+'parameter': 방향 매개 변수 특성을 지정하지 않았으므로 기본적으로 [in]이 사용됩니다.
+
+특성을 가진 인터페이스 매개 변수에 대한 메서드에 방향 특성( [in](../../windows/in-cpp.md) 또는 [out](../../windows/out-cpp.md))이 없습니다. 매개 변수의 기본값은 in입니다.
+
+기본적으로 이 경고는 해제되어 있습니다. 자세한 내용은 [기본적으로 해제되어 있는 컴파일러 경고](../../preprocessor/compiler-warnings-that-are-off-by-default.md) 를 참조하세요.
+
+다음 샘플에서는 C4682를 생성합니다.
+
+```
+// C4682.cpp
+// compile with: /W4
+#pragma warning(default : 4682)
+#include <windows.h>
+[module(name="MyModule")];
+
+[ library_block, object, uuid("c54ad59d-d516-41dd-9acd-afda17565c2b") ]
+__interface IMyIface : IUnknown
+{
+   HRESULT f1(int i, int *pi); // C4682
+   // try the following line
+   // HRESULT f1([in] int i, [in] int *pi);
+};
+
+int main()
+{
+}
 ```

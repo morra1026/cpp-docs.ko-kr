@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b389e5b137ef3cdb94ffbb1fc381ebe2e5813963
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 4c7751929a55993876034bb3c1918b82193681fc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603972"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016886"
 ---
 # <a name="asyncstatusinternal-enumeration"></a>AsyncStatusInternal 열거형
 
@@ -40,19 +40,19 @@ enum AsyncStatusInternal;
 
 ## <a name="members"></a>멤버
 
-`_Created`  
+`_Created`<br/>
 `::Windows::Foundation::AsyncStatus::Created`와 같습니다.
 
-`_Started`  
+`_Started`<br/>
 `::Windows::Foundation::AsyncStatus::Started`와 같습니다.
 
-`_Completed`  
+`_Completed`<br/>
 `::Windows::Foundation::AsyncStatus::Completed`와 같습니다.
 
-`_Cancelled`  
+`_Cancelled`<br/>
 `::Windows::Foundation::AsyncStatus::Cancelled`와 같습니다.
 
-`_Error`  
+`_Error`<br/>
 `::Windows::Foundation::AsyncStatus::Error`와 같습니다.
 
 ## <a name="requirements"></a>요구 사항

@@ -17,26 +17,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1aa9c72cbb8724da00b2d370884bd7ddbf7264cc
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 4dfda5807aab0c9930780b8374ffc934dde001c0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763242"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096810"
 ---
 # <a name="while-statement-c"></a>while 문 (C)
 
-`while` 문을 사용하면 지정된 식이 false가 될 때까지 문을 반복할 수 있습니다.  
-  
+`while` 문을 사용하면 지정된 식이 false가 될 때까지 문을 반복할 수 있습니다.
+
 ## <a name="syntax"></a>구문
 
 *iteration-statement*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**while (**  *expression*  **)**  *statement*
-  
-*expression*은 산술 형식이나 포인터 형식이어야 합니다. 다음과 같이 실행됩니다.  
-  
-1. *expression*이 계산됩니다.  
-  
+
+*expression*은 산술 형식이나 포인터 형식이어야 합니다. 다음과 같이 실행됩니다.
+
+1. *expression*이 계산됩니다.
+
 2. *expression*이 처음에 false인 경우 `while` 문의 본문이 실행되지 않으며, `while` 문에서 프로그램의 다음 문으로 제어가 전달됩니다.
 
    *expression*이 true(0이 아님)인 경우 문의 본문이 실행되고 1단계부터 반복됩니다.

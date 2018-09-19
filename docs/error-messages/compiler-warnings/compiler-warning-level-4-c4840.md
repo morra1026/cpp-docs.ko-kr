@@ -13,17 +13,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0baf70ac7fd4d07958478d2eef455c7dc395e221
-ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
+ms.openlocfilehash: c43ce60d319c427877b77a043df7c30bd00edc9b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601828"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025882"
 ---
 # <a name="compiler-warning-level-4-c4840"></a>컴파일러 경고 (수준 4) C4840
 
 > 클래스의 비 휴대용 활용*형식*' variadic 함수에 인수로 서
-  
+
 ## <a name="remarks"></a>설명
 
 Variadic 함수에 전달 되는 클래스 또는 구조체는 일반적으로 복사 가능 해야 합니다. 해당 개체를 전달할 때 컴파일러는 비트 복사본을 만들기만 하고 생성자 또는 소멸자를 호출하지 않습니다.

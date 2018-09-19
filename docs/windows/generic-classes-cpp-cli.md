@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 76dc54662fac3dc769e0bbf72c672908196ef351
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 09390e25ffe06ce6702aef68d73c352e063a48ef
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598249"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716783"
 ---
 # <a name="generic-classes-ccli"></a>제네릭 클래스(C++/CLI)
 
@@ -47,8 +47,8 @@ class-body
 
 위의 구문에서 다음과 같은 용어가 사용 됩니다.
 
-*특성* (선택 사항)  
-추가 선언 정보입니다. 특성 및 특성 클래스에 대한 자세한 내용은 특성을 참조하십시오.
+*특성*  
+(선택 사항) 추가 선언 정보입니다. 특성 및 특성 클래스에 대한 자세한 내용은 특성을 참조하십시오.
 
 *클래스 키*  
 어느 **클래스** 또는 **typename**
@@ -58,7 +58,7 @@ class-body
 *제약 조건 절*  
 목록 (쉼표로 구분 되지 않습니다)의 **여기서** 절 형식 매개 변수 제약 조건을 지정 합니다. 형식을 사용 합니다.
 
-`where`  *형식 매개 변수 식별자*`:`*제약 조건 목록*  `...`
+> **여기서** *형식-매개 변수-식별자* **:** *제약 조건 목록***...** 
 
 *제약 조건 목록*  
 *클래스 또는 인터페이스*[`,` *...* ]
@@ -69,8 +69,8 @@ class-body
 *identifier*  
 제네릭 클래스는 모든 유효한 c + + 식별자의 이름입니다.
 
-*한정자* (선택 사항)  
-한정자는 허용 **봉인** 하 고 **추상**합니다.
+*한정자*  
+(선택 사항) 한정자는 허용 **봉인** 하 고 **추상**합니다.
 
 *기본-목록*  
 하나의 기본 클래스와 포함 된 목록을 쉼표로 구분 된 모든 인터페이스를 구현 합니다.
@@ -167,7 +167,7 @@ ref class MyClass : IInterface<ItemType> {};
 
 제네릭 클래스의 인스턴스 변수 형식 및 바깥쪽 클래스의 모든 형식 매개 변수를 포함 하는 변수 이니셜라이저를 가질 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 세 가지 다른 인스턴스의 제네릭 클래스인 MyClass\<ItemType >, 적절 한 형식 인수를 사용 하 여 생성 됩니다 (**int**, **double**, 및 **문자열**).
 
@@ -215,7 +215,7 @@ String field = ABC
 
 정적 변수는 바깥쪽 클래스의 모든 형식 매개 변수를 사용할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 정적 필드 및 제네릭 클래스 내에서 정적 생성자를 사용 하는 방법을 보여 줍니다.
 
@@ -292,7 +292,7 @@ Test1
 
 이러한 메서드의 본문에서 이러한 형식 매개 변수를 사용할 수도 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 비 제네릭 메서드를 선언 `ProtectData`에 제네릭 클래스 내의 `MyClass<ItemType>`합니다. 클래스 형식 매개 변수를 사용 하는 메서드 `ItemType` 시그니처에 개방형 생성된 형식에서입니다.
 
@@ -353,7 +353,7 @@ Amount: $123.00**
 
 제네릭 및 제네릭이 아닌 클래스의 제네릭 메서드를 선언할 수 있습니다. 예를 들어:
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // generics_method2.cpp
@@ -379,7 +379,7 @@ public:
 
 모든 유형의 제네릭 클래스의 메서드는 제네릭를 포함 하 여 정적, 인스턴스 및 가상 메서드 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 선언 하 고 제네릭 클래스 내에서 제네릭 메서드를 사용 하 여 보여 줍니다.
 
@@ -465,7 +465,7 @@ ref class Outer {
 
 다음 예제에서는 제네릭 클래스에서 중첩 된 형식을 사용 하 여 연결된 된 목록을 읽고 빌드를 보여 줍니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // generics_linked_list.cpp
@@ -566,7 +566,7 @@ Reading nodes:
 
 - 속성, 이벤트, 인덱서 및 연산자 자체 수 매개 변수화 수 없습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 예제에서는 제네릭 클래스 내의 인스턴스 속성의 선언을 보여 줍니다.
 
@@ -606,7 +606,7 @@ int main() {
 John, 234
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 이벤트를 사용 하 여 제네릭 클래스를 보여 줍니다.
 
@@ -673,7 +673,7 @@ int main() {
 
 규칙을 선언 하 고 제네릭 구조체를 사용 하 여 Visual c + + 언어 참조에 명시 된 차이점을 제외 하면 제네릭 클래스와 동일 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 제네릭 구조체를 선언 `MyGenStruct`, 단일 필드를 갖는 `myField`, 다양 한 형식의 값을 할당 하 고 (**int**를 **double**, `String^`)이이 필드에 합니다.
 

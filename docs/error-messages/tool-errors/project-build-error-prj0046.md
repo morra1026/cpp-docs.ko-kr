@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c3571570fb00b25a42412ac8305623271ff0364
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 00c6c02e6644391f0e4848b43f3a9f47364b41ef
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33339880"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46111591"
 ---
 # <a name="project-build-error-prj0046"></a>프로젝트 빌드 오류 PRJ0046
-지정 된 항목이 비어 있으므로 명령줄을 생성할 수 없습니다.  
-  
- 빈 명령줄 메이크파일 구성;에 대해 지정 된 명령줄이 필요 합니다.
+
+지정 된 항목이 비어 있으므로 명령줄을 생성할 수 없습니다.
+
+빈 명령줄 메이크파일 구성;에 지정 된 명령줄이 필요 합니다.

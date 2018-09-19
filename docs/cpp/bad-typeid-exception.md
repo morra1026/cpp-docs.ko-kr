@@ -18,70 +18,73 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55718522bdbf618fb656eedc5c6afd59bfcaca08
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 9cc93ab5a0f2d7fce12e926d571881ccb9c070fd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409008"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46092208"
 ---
 # <a name="badtypeid-exception"></a>bad_typeid 예외
-**bad_typeid** 예외를 throw 합니다 [typeid 연산자](../cpp/typeid-operator.md) 경우 피연산자 **typeid** 가 NULL 포인터.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-catch (bad_typeid)  
-   statement  
-```  
-  
-## <a name="remarks"></a>설명  
- 에 대 한 인터페이스 **bad_typeid** 됩니다.  
-  
-```cpp 
-class bad_typeid : public exception  
-{  
-public:  
-   bad_typeid(const char * _Message = "bad typeid");  
-   bad_typeid(const bad_typeid &);  
-   virtual ~bad_typeid();  
-};  
-```  
-  
- 다음 예제에서는 합니다 **typeid** 를 throw 하는 연산자는 **bad_typeid** 예외입니다.  
-  
-```cpp 
-// expre_bad_typeid.cpp  
-// compile with: /EHsc /GR  
-#include <typeinfo.h>  
-#include <iostream>  
-  
-class A{  
-public:  
-   // object for class needs vtable  
-   // for RTTI  
-   virtual ~A();  
-};  
-  
-using namespace std;  
-int main() {  
-A* a = NULL;  
-  
-try {  
-   cout << typeid(*a).name() << endl;  // Error condition  
-   }  
-catch (bad_typeid){  
-   cout << "Object is NULL" << endl;  
-   }  
-}  
-```  
-  
-## <a name="output"></a>출력  
-  
-```Output 
-Object is NULL  
-```  
-  
-## <a name="see-also"></a>참고자료  
- [런타임 형식 정보](../cpp/run-time-type-information.md)   
- [키워드](../cpp/keywords-cpp.md)
+
+**bad_typeid** 예외를 throw 합니다 [typeid 연산자](../cpp/typeid-operator.md) 경우 피연산자 **typeid** 가 NULL 포인터.
+
+## <a name="syntax"></a>구문
+
+```
+catch (bad_typeid)
+   statement
+```
+
+## <a name="remarks"></a>설명
+
+에 대 한 인터페이스 **bad_typeid** 됩니다.
+
+```cpp
+class bad_typeid : public exception
+{
+public:
+   bad_typeid(const char * _Message = "bad typeid");
+   bad_typeid(const bad_typeid &);
+   virtual ~bad_typeid();
+};
+```
+
+다음 예제에서는 합니다 **typeid** 를 throw 하는 연산자는 **bad_typeid** 예외입니다.
+
+```cpp
+// expre_bad_typeid.cpp
+// compile with: /EHsc /GR
+#include <typeinfo.h>
+#include <iostream>
+
+class A{
+public:
+   // object for class needs vtable
+   // for RTTI
+   virtual ~A();
+};
+
+using namespace std;
+int main() {
+A* a = NULL;
+
+try {
+   cout << typeid(*a).name() << endl;  // Error condition
+   }
+catch (bad_typeid){
+   cout << "Object is NULL" << endl;
+   }
+}
+```
+
+## <a name="output"></a>출력
+
+```Output
+Object is NULL
+```
+
+## <a name="see-also"></a>참고자료
+
+[런타임 형식 정보](../cpp/run-time-type-information.md)<br/>
+[키워드](../cpp/keywords-cpp.md)

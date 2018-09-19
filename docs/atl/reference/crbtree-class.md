@@ -37,12 +37,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18c8221b7e379d739dda3ebfa9cbc205d9f88af6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: de307c1b4f3d910615061915a240bf7b2c61b337
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759547"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090362"
 ---
 # <a name="crbtree-class"></a>CRBTree 클래스
 
@@ -54,22 +54,22 @@ ms.locfileid: "43759547"
 template <typename K,
           typename V, 
           class KTraits = CElementTraits<K>, 
-          class VTraits = CElementTraits<V>> 
+          class VTraits = CElementTraits<V>>
 class CRBTree
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*K*  
+*K*<br/>
 Key 요소 형식입니다.
 
-*V*  
+*V*<br/>
 값 요소 형식입니다.
 
-*KTraits*  
+*KTraits*<br/>
 복사 하거나 주요 요소를 이동 하는 데 사용 되는 코드입니다. 참조 [CElementTraits 클래스](../../atl/reference/celementtraits-class.md) 대 한 자세한 내용은 합니다.
 
-*VTraits*  
+*VTraits*<br/>
 값 요소 이동 하거나 복사 하는 데 사용 되는 코드입니다.
 
 ## <a name="members"></a>멤버
@@ -169,7 +169,7 @@ POSITION FindFirstKeyAfter(KINARGTYPE key) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -192,13 +192,13 @@ void GetAt(POSITION pos, KOUTARGTYPE key, VOUTARGTYPE value) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 위치 값입니다.
 
-*key*  
+*key*<br/>
 키를 받는 변수입니다.
 
-*값*  
+*값*<br/>
 변수 값을 받습니다.입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -249,7 +249,7 @@ const K& GetKeyAt(POSITION pos) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 위치 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -271,7 +271,7 @@ CPair* GetNext(POSITION& pos) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 위치 카운터를 같은 메서드에 대 한 이전 호출에서 반환한 [CRBTree::GetHeadPosition](#getheadposition) 하거나 [CRBTree::FindFirstKeyAfter](#findfirstkeyafter)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -295,13 +295,13 @@ void GetNextAssoc(
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 위치 카운터를 같은 메서드에 대 한 이전 호출에서 반환한 [CRBTree::GetHeadPosition](#getheadposition) 하거나 [CRBTree::FindFirstKeyAfter](#findfirstkeyafter)합니다.
 
-*key*  
+*key*<br/>
 템플릿 매개 변수를 트리의 키의 형식을 지정 합니다.
 
-*값*  
+*값*<br/>
 템플릿 매개 변수를 트리의 값의 형식을 지정 합니다.
 
 ### <a name="remarks"></a>설명
@@ -318,7 +318,7 @@ const K& GetNextKey(POSITION& pos) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 위치 카운터를 같은 메서드에 대 한 이전 호출에서 반환한 [CRBTree::GetHeadPosition](#getheadposition) 하거나 [CRBTree::FindFirstKeyAfter](#findfirstkeyafter)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -340,7 +340,7 @@ V& GetNextValue(POSITION& pos) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 위치 카운터를 같은 메서드에 대 한 이전 호출에서 반환한 [CRBTree::GetHeadPosition](#getheadposition) 하거나 [CRBTree::FindFirstKeyAfter](#findfirstkeyafter)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -362,7 +362,7 @@ CPair* GetPrev(POSITION& pos) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 위치 카운터를 같은 메서드에 대 한 이전 호출에서 반환한 [CRBTree::GetHeadPosition](#getheadposition) 하거나 [CRBTree::FindFirstKeyAfter](#findfirstkeyafter)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -400,7 +400,7 @@ V& GetValueAt(POSITION pos) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 위치 카운터를 같은 메서드에 대 한 이전 호출에서 반환한 [CRBTree::GetHeadPosition](#getheadposition) 하거나 [CRBTree::FindFirstKeyAfter](#findfirstkeyafter)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -457,7 +457,7 @@ void RemoveAt(POSITION pos) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 위치 카운터를 같은 메서드에 대 한 이전 호출에서 반환한 [CRBTree::GetHeadPosition](#getheadposition) 하거나 [CRBTree::FindFirstKeyAfter](#findfirstkeyafter)합니다.
 
 ### <a name="remarks"></a>설명
@@ -474,10 +474,10 @@ void SetValueAt(POSITION pos, VINARGTYPE value);
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 위치 카운터를 같은 메서드에 대 한 이전 호출에서 반환한 [CRBTree::GetHeadPosition](#getheadposition) 하거나 [CRBTree::FindFirstKeyAfter](#findfirstkeyafter)합니다.
 
-*값*  
+*값*<br/>
 에 추가할 값을 `CRBTree` 개체입니다.
 
 ### <a name="remarks"></a>설명

@@ -39,12 +39,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54677e573f36fca65cc46dc5207e8812e4fa4fa6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d2045a6c14a37d270d895a5eeb4fa455711e7354
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752932"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097681"
 ---
 # <a name="ccombstr-class"></a>CComBSTR 클래스
 
@@ -141,16 +141,16 @@ HRESULT Append(LPCOLESTR lpsz, int nLen) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] `CComBSTR` 추가할 개체입니다.
 
-*ch*  
+*ch*<br/>
 [in] 추가할 문자입니다.
 
-*lpsz*  
+*lpsz*<br/>
 [in] 0으로 끝나는 문자열을 추가 합니다. LPCOLESTR 오버 로드 또는 LPCSTR 버전 통해 ANSI 문자열을 통해 유니코드 문자열을 전달할 수 있습니다.
 
-*nLen*  
+*nLen*<br/>
 [in] 문자 수가 *lpsz* 추가 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -175,7 +175,7 @@ HRESULT AppendBSTR(BSTR p) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*p*  
+*p*<br/>
 [in] 추가 하는 BSTR입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -200,10 +200,10 @@ HRESULT AppendBytes(const char* lpsz, int nLen) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lpsz*  
+*lpsz*<br/>
 [in] 추가할 바이트 배열에 대 한 포인터입니다.
 
-*p*  
+*p*<br/>
 [in] 추가할 바이트 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -224,7 +224,7 @@ HRESULT ArrayToBSTR(const SAFEARRAY* pSrc) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pSrc*  
+*pSrc*<br/>
 [in] 문자열을 만드는 데 필요한 요소를 포함 하는 safearray입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -241,7 +241,7 @@ HRESULT AssignBSTR(const BSTR bstrSrc) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] 현재 할당할 BSTR `CComBSTR` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -258,7 +258,7 @@ void Attach(BSTR src) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*src*  
+*src*<br/>
 [in] 개체에 연결 하는 BSTR입니다.
 
 ### <a name="remarks"></a>설명
@@ -282,7 +282,7 @@ HRESULT BSTRToArray(LPSAFEARRAY* ppArray) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*ppArray*  
+*ppArray*<br/>
 [out] 함수의 결과 저장 하는 데 사용 되는 safearray에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -315,31 +315,31 @@ unsigned int ByteLength() const throw();
 
 ```
 CComBSTR() throw();
-CComBSTR(const CComBSTR& src);  
-CComBSTR(REFGUID  guid);  
-CComBSTR(int nSize);  
-CComBSTR(int nSize, LPCOLESTR sz);  
-CComBSTR(int nSize, LPCSTR sz);  
-CComBSTR(LPCOLESTR pSrc);  
-CComBSTR(LPCSTR pSrc);  
+CComBSTR(const CComBSTR& src);
+CComBSTR(REFGUID  guid);
+CComBSTR(int nSize);
+CComBSTR(int nSize, LPCOLESTR sz);
+CComBSTR(int nSize, LPCSTR sz);
+CComBSTR(LPCOLESTR pSrc);
+CComBSTR(LPCSTR pSrc);
 CComBSTR(CComBSTR&& src) throw(); // (Visual Studio 2017)
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*nSize*  
+*nSize*<br/>
 [in] 복사할 문자의 수 *sz* 또는 문자에 대 한 초기 크기는 `CComBSTR`합니다.
 
-*sz*  
+*sz*<br/>
 [in] 복사할 문자열입니다. 유니코드 버전 지정을 LPCOLESTR; ANSI 버전을 LPCSTR를 지정합니다.
 
-*pSrc*  
+*pSrc*<br/>
 [in] 복사할 문자열입니다. 유니코드 버전 지정을 LPCOLESTR; ANSI 버전을 LPCSTR를 지정합니다.
 
-*src*  
+*src*<br/>
 [in] `CComBSTR` 개체입니다.
 
-*guid*  
+*guid*<br/>
 [in] 에 대 한 참조를 `GUID` 구조입니다.
 
 ### <a name="remarks"></a>설명
@@ -396,10 +396,10 @@ HRESULT CopyTo(VARIANT* pvarDest) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pbstr*  
+*pbstr*<br/>
 [out] 이 메서드에 의해 할당 된 문자열을 반환 하는 BSTR의 주소입니다.
 
-*pvarDest*  
+*pvarDest*<br/>
 [out] 이 메서드에 의해 할당 된 문자열을 반환 하는 VARIANT의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -499,7 +499,7 @@ BSTR m_str;
 
 캐스트는 `CComBSTR` bstr 개체입니다.
 
-```  
+```
 operator BSTR() const throw();
 ```
 
@@ -544,13 +544,13 @@ bool operator!= (int nNull) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] `CComBSTR` 개체입니다.
 
-*pszSrc*  
+*pszSrc*<br/>
 [in] 0으로 끝나는 문자열입니다.
 
-*nNull*  
+*nNull*<br/>
 [in] NULL 이어야 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -586,16 +586,16 @@ BSTR* operator&() throw();
 문자열을 추가 합니다 `CComBSTR` 개체입니다.
 
 ```
-CComBSTR& operator+= (const CComBSTR& bstrSrc);  
+CComBSTR& operator+= (const CComBSTR& bstrSrc);
 CComBSTR& operator+= (const LPCOLESTR pszSrc);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] `CComBSTR` 추가할 개체입니다.
 
-*pszSrc*  
+*pszSrc*<br/>
 [in] 추가할 0으로 끝나는 문자열입니다.
 
 ### <a name="remarks"></a>설명
@@ -629,8 +629,8 @@ bool operator<(LPCSTR pszSrc) const throw();
 집합의 [m_str](#m_str) 복사본을 멤버 *pSrc* 또는 BSTR 멤버의 복사본을 *src*합니다. 이동 할당 연산자 이동 `src` 복사 하지 않고 있습니다.
 
 ```
-CComBSTR& operator= (const CComBSTR& src);  
-CComBSTR& operator= (LPCOLESTR pSrc);  
+CComBSTR& operator= (const CComBSTR& src);
+CComBSTR& operator= (LPCOLESTR pSrc);
 CComBSTR& operator= (LPCSTR pSrc);
 CComBSTR& operator= (CComBSTR&& src) throw(); // (Visual Studio 2017)
 ```
@@ -656,13 +656,13 @@ bool operator== (int nNull) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] `CComBSTR` 개체입니다.
 
-*pszSrc*  
+*pszSrc*<br/>
 [in] 0으로 끝나는 문자열입니다.
 
-*nNull*  
+*nNull*<br/>
 [in] NULL 이어야 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -699,7 +699,7 @@ HRESULT ReadFromStream(IStream* pStream) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pStream*  
+*pStream*<br/>
 [in] 에 대 한 포인터를 [IStream](/windows/desktop/api/objidl/nn-objidl-istream) 인터페이스에 데이터를 포함 하는 스트림입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -756,7 +756,7 @@ HRESULT WriteToStream(IStream* pStream) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pStream*  
+*pStream*<br/>
 [in] 에 대 한 포인터를 [IStream](/windows/desktop/api/objidl/nn-objidl-istream) 스트림에 대 한 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -773,5 +773,5 @@ HRESULT WriteToStream(IStream* pStream) throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[클래스 개요](../../atl/atl-class-overview.md)   
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [ATL 및 MFC 문자열 변환 매크로](string-conversion-macros.md)

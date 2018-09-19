@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c15589358979f554a9c17114f7d78b05dd83c472
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2db5dde898a3e5918eed62b2b32231b5d7ed014f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230755"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046058"
 ---
 # <a name="compiler-error-c2589"></a>컴파일러 오류 C2589
-'identifier': 오른쪽에 잘못 된 토큰 ':: '  
-  
- 클래스, 구조체 또는 공용 구조체 이름은 범위 결정 연산자 (이중 콜론)의 왼쪽에 표시 하는 경우에 오른쪽에 토큰 클래스, 구조체 또는 공용 구조체 멤버 여야 합니다. 그렇지 않으면 전역 식별자 오른쪽에 나타날 수 있습니다.  
-  
- 범위 결정 연산자를 오버 로드할 수 없습니다.  
-  
- 다음 샘플에서는 C2589 오류가 생성 됩니다.  
-  
-```  
-// C2589.cpp  
-void Test(){}  
-class A {};  
-void operator :: ();   // C2589  
-  
-int main() {  
-   ::Test();  
-}  
+
+'identifier': 오른쪽에 잘못 된 토큰 ': '
+
+클래스, 구조체 또는 공용 구조체 이름은 범위 결정 연산자 (이중 콜론)의 왼쪽에 있으면 오른쪽의 토큰 클래스, 구조체 또는 공용 구조체 멤버 여야 합니다. 그렇지 않은 경우 모든 전역 식별자 오른쪽에 나타날 수 있습니다.
+
+범위 결정 연산자를 오버 로드할 수 없습니다.
+
+다음 샘플에서는 C2589 오류가 생성 됩니다.
+
+```
+// C2589.cpp
+void Test(){}
+class A {};
+void operator :: ();   // C2589
+
+int main() {
+   ::Test();
+}
 ```

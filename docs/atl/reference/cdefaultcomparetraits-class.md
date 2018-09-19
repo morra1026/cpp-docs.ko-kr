@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4983984c8bf1cad2996818625091b60cdb732a9
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1aecfcb493bfc35e0d6f059c296af1b358eee93f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758559"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103216"
 ---
 # <a name="cdefaultcomparetraits-class"></a>CDefaultCompareTraits 클래스
 
@@ -33,13 +33,13 @@ ms.locfileid: "43758559"
 ## <a name="syntax"></a>구문
 
 ```
-template<typename T>  
+template<typename T>
 class CDefaultCompareTraits
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 컬렉션에 저장할 데이터의 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -71,10 +71,10 @@ static bool CompareElements(const T& element1, const T& element2);
 
 ### <a name="parameters"></a>매개 변수
 
-*element1*  
+*element1*<br/>
 첫 번째 요소입니다.
 
-*element2 요소*  
+*element2 요소*<br/>
 두 번째 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -95,10 +95,10 @@ static int CompareElementsOrdered(const T& element1, const T& element2);
 
 ### <a name="parameters"></a>매개 변수
 
-*element1*  
+*element1*<br/>
 첫 번째 요소입니다.
 
-*element2 요소*  
+*element2 요소*<br/>
 두 번째 요소입니다.
 
 ### <a name="return-value"></a>반환 값

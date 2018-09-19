@@ -58,12 +58,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b7fd978390a2b991da2bddedbab1c05497709d67
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 17136bbc1d914732871d256053acff20d78ab8b1
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688145"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724253"
 ---
 # <a name="cpagerctrl-class"></a>CPagerCtrl 클래스
 `CPagerCtrl` 클래스는 윈도우에 맞지 않는 포함된 창을 보기로 스크롤할 수 있는 Windows 페이저 컨트롤을 래핑합니다.  
@@ -151,10 +151,10 @@ virtual BOOL Create(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *dwStyle*|비트 조합 (OR) [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles) 하 고 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles) 컨트롤을 적용할 수 있습니다.|  
-|[in] *rect*|에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 클라이언트 좌표로 나타낸에서 컨트롤의 크기와 위치를 포함 하는 구조입니다.|  
-|[in] *pParentWnd*|에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 컨트롤의 부모 창입니다. 이 매개 변수는 NULL 일 수 없습니다.|  
-|[in] *nID*|컨트롤의 ID입니다.|  
+|*dwStyle*|[in] 비트 조합 (OR) [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles) 하 고 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles) 컨트롤을 적용할 수 있습니다.|  
+|*rect*|[in] 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 클라이언트 좌표로 나타낸에서 컨트롤의 크기와 위치를 포함 하는 구조입니다.|  
+|*pParentWnd*|[in] 에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 컨트롤의 부모 창입니다. 이 매개 변수는 NULL 일 수 없습니다.|  
+|*nID*|[in] 컨트롤의 ID입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -183,11 +183,11 @@ virtual BOOL CreateEx(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *dwExStyle*|컨트롤에 적용 될 확장된 스타일의 비트 조합입니다. 자세한 내용은 참조는 *dwExStyle* 의 매개 변수를 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) 함수입니다.|  
-|[in] *dwStyle*|비트 조합 (OR) [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles) 하 고 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles) 컨트롤을 적용할 수 있습니다.|  
-|[in] *rect*|에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 클라이언트 좌표로 나타낸에서 컨트롤의 크기와 위치를 포함 하는 구조입니다.|  
-|[in] *pParentWnd*|에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 컨트롤의 부모 창입니다. 이 매개 변수는 NULL 일 수 없습니다.|  
-|[in] *nID*|컨트롤의 ID입니다.|  
+|*dwExStyle*|[in] 컨트롤에 적용 될 확장된 스타일의 비트 조합입니다. 자세한 내용은 참조는 *dwExStyle* 의 매개 변수를 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) 함수입니다.|  
+|*dwStyle*|[in] 비트 조합 (OR) [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles) 하 고 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles) 컨트롤을 적용할 수 있습니다.|  
+|*rect*|[in] 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 클라이언트 좌표로 나타낸에서 컨트롤의 크기와 위치를 포함 하는 구조입니다.|  
+|*pParentWnd*|[in] 에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 컨트롤의 부모 창입니다. 이 매개 변수는 NULL 일 수 없습니다.|  
+|*nID*|[in] 컨트롤의 ID입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -206,7 +206,7 @@ void ForwardMouse(BOOL bForward);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *bForward*|마우스 메시지를 전달 하지 정방향 마우스 메시지 또는 FALSE true로 설정 하면.|  
+|*bForward*|[in] 마우스 메시지를 전달 하지 정방향 마우스 메시지 또는 FALSE true로 설정 하면.|  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 전송 된 [PGM_FORWARDMOUSE](/windows/desktop/Controls/pgm-forwardmouse) Windows SDK에 설명 된 메시지입니다.  
@@ -273,7 +273,7 @@ DWORD GetButtonState(int iButton) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iButton*|상태를 검색할 단추를 나타냅니다. PGS_HORZ 페이저 컨트롤의 스타일을 사용 하는 경우 왼쪽된 단추와 PGB_BOTTOMORRIGHT PGB_TOPORLEFT 오른쪽 단추를 지정 합니다. PGS_VERT 페이저 컨트롤의 스타일을 사용 하는 경우 아래쪽 단추에 대 한 PGB_TOPORLEFT PGB_BOTTOMORRIGHT 위쪽 단추를 지정 합니다. 자세한 내용은 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles)합니다.|  
+|*iButton*|[in] 상태를 검색할 단추를 나타냅니다. PGS_HORZ 페이저 컨트롤의 스타일을 사용 하는 경우 왼쪽된 단추와 PGB_BOTTOMORRIGHT PGB_TOPORLEFT 오른쪽 단추를 지정 합니다. PGS_VERT 페이저 컨트롤의 스타일을 사용 하는 경우 아래쪽 단추에 대 한 PGB_TOPORLEFT PGB_BOTTOMORRIGHT 위쪽 단추를 지정 합니다. 자세한 내용은 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles)합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  지정 된 단추의 상태를 *iButton* 매개 변수입니다. 상태가는 PGF_INVISIBLE, PGF_NORMAL, PGF_GRAYED, PGF_DEPRESSED, 또는 PGF_HOT입니다. 자세한 내용은 반환 값 섹션을 참조 합니다 [PGM_GETBUTTONSTATE](/windows/desktop/Controls/pgm-getbuttonstate) 메시지입니다.  
@@ -325,7 +325,7 @@ BOOL IsButtonDepressed(int iButton) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iButton*|상태를 검색할 단추를 나타냅니다. PGS_HORZ 페이저 컨트롤의 스타일을 사용 하는 경우 왼쪽된 단추와 PGB_BOTTOMORRIGHT PGB_TOPORLEFT 오른쪽 단추를 지정 합니다. PGS_VERT 페이저 컨트롤의 스타일을 사용 하는 경우 아래쪽 단추에 대 한 PGB_TOPORLEFT PGB_BOTTOMORRIGHT 위쪽 단추를 지정 합니다. 자세한 내용은 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles)합니다.|  
+|*iButton*|[in] 상태를 검색할 단추를 나타냅니다. PGS_HORZ 페이저 컨트롤의 스타일을 사용 하는 경우 왼쪽된 단추와 PGB_BOTTOMORRIGHT PGB_TOPORLEFT 오른쪽 단추를 지정 합니다. PGS_VERT 페이저 컨트롤의 스타일을 사용 하는 경우 아래쪽 단추에 대 한 PGB_TOPORLEFT PGB_BOTTOMORRIGHT 위쪽 단추를 지정 합니다. 자세한 내용은 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles)합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  지정한 단추 누름된 상태에 있으면 TRUE 그렇지 않으면 FALSE입니다.  
@@ -344,7 +344,7 @@ BOOL IsButtonGrayed(int iButton) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iButton*|상태를 검색할 단추를 나타냅니다. PGS_HORZ 페이저 컨트롤의 스타일을 사용 하는 경우 왼쪽된 단추와 PGB_BOTTOMORRIGHT PGB_TOPORLEFT 오른쪽 단추를 지정 합니다. PGS_VERT 페이저 컨트롤의 스타일을 사용 하는 경우 아래쪽 단추에 대 한 PGB_TOPORLEFT PGB_BOTTOMORRIGHT 위쪽 단추를 지정 합니다. 자세한 내용은 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles)합니다.|  
+|*iButton*|[in] 상태를 검색할 단추를 나타냅니다. PGS_HORZ 페이저 컨트롤의 스타일을 사용 하는 경우 왼쪽된 단추와 PGB_BOTTOMORRIGHT PGB_TOPORLEFT 오른쪽 단추를 지정 합니다. PGS_VERT 페이저 컨트롤의 스타일을 사용 하는 경우 아래쪽 단추에 대 한 PGB_TOPORLEFT PGB_BOTTOMORRIGHT 위쪽 단추를 지정 합니다. 자세한 내용은 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles)합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  지정한 단추가 회색으로 표시 상태에 있으면 TRUE 그렇지 않으면 FALSE입니다.  
@@ -363,7 +363,7 @@ BOOL IsButtonHot(int iButton) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iButton*|상태를 검색할 단추를 나타냅니다. PGS_HORZ 페이저 컨트롤의 스타일을 사용 하는 경우 왼쪽된 단추와 PGB_BOTTOMORRIGHT PGB_TOPORLEFT 오른쪽 단추를 지정 합니다. PGS_VERT 페이저 컨트롤의 스타일을 사용 하는 경우 아래쪽 단추에 대 한 PGB_TOPORLEFT PGB_BOTTOMORRIGHT 위쪽 단추를 지정 합니다. 자세한 내용은 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles)합니다.|  
+|*iButton*|[in] 상태를 검색할 단추를 나타냅니다. PGS_HORZ 페이저 컨트롤의 스타일을 사용 하는 경우 왼쪽된 단추와 PGB_BOTTOMORRIGHT PGB_TOPORLEFT 오른쪽 단추를 지정 합니다. PGS_VERT 페이저 컨트롤의 스타일을 사용 하는 경우 아래쪽 단추에 대 한 PGB_TOPORLEFT PGB_BOTTOMORRIGHT 위쪽 단추를 지정 합니다. 자세한 내용은 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles)합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  활성 상태의; 지정 된 단추가 있는 경우 TRUE 그렇지 않으면 FALSE입니다.  
@@ -382,7 +382,7 @@ BOOL IsButtonInvisible(int iButton) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iButton*|상태를 검색할 단추를 나타냅니다. PGS_HORZ 페이저 컨트롤의 스타일을 사용 하는 경우 왼쪽된 단추와 PGB_BOTTOMORRIGHT PGB_TOPORLEFT 오른쪽 단추를 지정 합니다. PGS_VERT 페이저 컨트롤의 스타일을 사용 하는 경우 아래쪽 단추에 대 한 PGB_TOPORLEFT PGB_BOTTOMORRIGHT 위쪽 단추를 지정 합니다. 자세한 내용은 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles)합니다.|  
+|*iButton*|[in] 상태를 검색할 단추를 나타냅니다. PGS_HORZ 페이저 컨트롤의 스타일을 사용 하는 경우 왼쪽된 단추와 PGB_BOTTOMORRIGHT PGB_TOPORLEFT 오른쪽 단추를 지정 합니다. PGS_VERT 페이저 컨트롤의 스타일을 사용 하는 경우 아래쪽 단추에 대 한 PGB_TOPORLEFT PGB_BOTTOMORRIGHT 위쪽 단추를 지정 합니다. 자세한 내용은 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles)합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  지정한 단추가 보이지 않는 상태에 있으면 TRUE 그렇지 않으면 FALSE입니다.  
@@ -408,7 +408,7 @@ BOOL IsButtonNormal(int iButton) const;
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iButton*|상태를 검색할 단추를 나타냅니다. PGS_HORZ 페이저 컨트롤의 스타일을 사용 하는 경우 왼쪽된 단추와 PGB_BOTTOMORRIGHT PGB_TOPORLEFT 오른쪽 단추를 지정 합니다. PGS_VERT 페이저 컨트롤의 스타일을 사용 하는 경우 아래쪽 단추에 대 한 PGB_TOPORLEFT PGB_BOTTOMORRIGHT 위쪽 단추를 지정 합니다. 자세한 내용은 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles)합니다.|  
+|*iButton*|[in] 상태를 검색할 단추를 나타냅니다. PGS_HORZ 페이저 컨트롤의 스타일을 사용 하는 경우 왼쪽된 단추와 PGB_BOTTOMORRIGHT PGB_TOPORLEFT 오른쪽 단추를 지정 합니다. PGS_VERT 페이저 컨트롤의 스타일을 사용 하는 경우 아래쪽 단추에 대 한 PGB_TOPORLEFT PGB_BOTTOMORRIGHT 위쪽 단추를 지정 합니다. 자세한 내용은 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles)합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  표준 상태의; 지정 된 단추가 있는 경우 TRUE 그렇지 않으면 FALSE입니다.  
@@ -447,7 +447,7 @@ COLORREF SetBkColor(COLORREF clrBk);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *clrBk*|A [COLORREF](/windows/desktop/gdi/colorref) pager 컨트롤의 새 배경 색을 포함 하는 값입니다.|  
+|*clrBk*|[in] A [COLORREF](/windows/desktop/gdi/colorref) pager 컨트롤의 새 배경 색을 포함 하는 값입니다.|  
   
 ### <a name="return-value"></a>반환 값  
  A [COLORREF](/windows/desktop/gdi/colorref) pager 컨트롤의 이전 배경색을 포함 하는 값입니다.  
@@ -471,7 +471,7 @@ int SetBorder(int iBorder);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iBorder*|새 테두리 크기를 픽셀 단위로 지정 합니다. 경우는 *iBorder* 매개 변수가 음수 이면 테두리 크기를 0으로 설정 됩니다.|  
+|*iBorder*|[in] 새 테두리 크기를 픽셀 단위로 지정 합니다. 경우는 *iBorder* 매개 변수가 음수 이면 테두리 크기를 0으로 설정 됩니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이전 테두리 두께 픽셀 단위로 지정 합니다.  
@@ -495,7 +495,7 @@ int SetButtonSize(int iButtonSize);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iButtonSize*|새 단추 크기를 픽셀 단위로 지정 합니다.|  
+|*iButtonSize*|[in] 새 단추 크기를 픽셀 단위로 지정 합니다.|  
   
 ### <a name="return-value"></a>반환 값  
  이전 단추 크기를 픽셀 단위로 지정 합니다.  
@@ -521,7 +521,7 @@ void SetChild(HWND hwndChild);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *hwndChild*|처리 창에 포함 되어야 합니다.|  
+|*hwndChild*|[in] 처리 창에 포함 되어야 합니다.|  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 전송 된 [PGM_SETCHILD](/windows/desktop/Controls/pgm-setchild) Windows SDK에 설명 된 메시지입니다.  
@@ -544,7 +544,7 @@ void SetScrollPos(int iPos);
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] *iPos*|새 스크롤 위치를 픽셀 단위로 지정 합니다.|  
+|*iPos*|[in] 새 스크롤 위치를 픽셀 단위로 지정 합니다.|  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 전송 된 [PGM_SETPOS](/windows/desktop/Controls/pgm-setpos) Windows SDK에 설명 된 메시지입니다.  

@@ -16,24 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a3462c3600a59c453fbde818c11b602c2254343
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7ebb7a94e807dbd8bbb9e5614f15d03e9b577858
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33255178"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022610"
 ---
 # <a name="compiler-error-c3625"></a>컴파일러 오류 C3625
-'native_type': 네이티브 형식은 WinRT 또는 관리되는 형식 'type'에서 파생될 수 없습니다.  
-  
-네이티브 클래스는 WinRT 또는 관리되는 클래스에서 상속할 수 없습니다. 자세한 내용은 참조 [클래스 및 구조체](../../windows/classes-and-structs-cpp-component-extensions.md)합니다.  
-  
-## <a name="example"></a>예제  
-다음 샘플에서는 C3625 오류가 발생하는 경우를 보여 줍니다.  
-  
-```  
-// C3625.cpp  
-// compile with: /clr /c  
-ref class B {};  
-class D : public B {};   // C3625 cannot inherit from a managed class  
-```  
+
+'native_type': 네이티브 형식은 WinRT 또는 관리되는 형식 'type'에서 파생될 수 없습니다.
+
+네이티브 클래스는 WinRT 또는 관리되는 클래스에서 상속할 수 없습니다. 자세한 내용은 [클래스 및 구조체](../../windows/classes-and-structs-cpp-component-extensions.md)합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C3625 오류가 발생하는 경우를 보여 줍니다.
+
+```
+// C3625.cpp
+// compile with: /clr /c
+ref class B {};
+class D : public B {};   // C3625 cannot inherit from a managed class
+```

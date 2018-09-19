@@ -18,22 +18,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 83f418d0aaf82dbc9fefba5cbdc1bbf8b2c8bf94
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 582a8d666570b974ed97aea5ce2c882e29e4be44
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372034"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723647"
 ---
 # <a name="loadconfig"></a>/LOADCONFIG
-```  
-/LOADCONFIG  
-```  
-  
-## <a name="remarks"></a>설명  
- 이 옵션은 IMAGE_LOAD_CONFIG_DIRECTORY 구조, Windows NT 로더에 의해 사용 되 고 WINNT에 정의 하는 선택적 구조를 덤프 합니다. 8.  
-  
- 만 [/HEADERS](../../build/reference/headers.md) DUMPBIN 옵션은으로 생성 된 파일에서 사용 하기 위해 사용할 수는 [/GL](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [DUMPBIN 옵션](../../build/reference/dumpbin-options.md)
+
+```
+/LOADCONFIG
+```
+
+## <a name="remarks"></a>설명
+
+이 옵션을 IMAGE_LOAD_CONFIG_DIRECTORY 구조, Windows NT 로더에 의해 사용 되 고 WINNT에 정의 된 선택적 구조를 덤프 합니다. 8.
+
+만 [/HEADERS](../../build/reference/headers.md) DUMPBIN 옵션을 사용 하 여 생성 된 파일에 사용할 수 있습니다 합니다 [/GL](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[DUMPBIN 옵션](../../build/reference/dumpbin-options.md)

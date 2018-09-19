@@ -188,12 +188,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2854199796f5d75cc4b24016def3c63327a5d511
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: db4e6a01fbf7384cfbc2e1ef2b3c5ed48991998d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43692044"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095455"
 ---
 # <a name="cframewndex-class"></a>CFrameWndEx 클래스
 겹쳐진 Windows SDI(단일 문서 인터페이스) 또는 팝업 프레임 창의 기능을 구현하고 창 관리를 위한 멤버를 제공합니다. 확장 된 [CFrameWnd](../../mfc/reference/cframewnd-class.md) 클래스입니다.  
@@ -337,11 +337,11 @@ BOOL AddPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pControlBar*  
- 등록할 컨트롤 막대 창입니다.  
+*pControlBar*<br/>
+[in] 등록할 컨트롤 막대 창입니다.  
   
- [in] *bTail*  
- 컨트롤 막대 창 목록 끝에 추가 하려는 경우 TRUE입니다. FALSE이 고, 그렇지 합니다.  
+*bTail*<br/>
+[in] 컨트롤 막대 창 목록 끝에 추가 하려는 경우 TRUE입니다. FALSE이 고, 그렇지 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 컨트롤 막대에 등록 되었습니다. FALSE이 고, 그렇지 합니다.  
@@ -368,8 +368,8 @@ virtual void DelayUpdateFrameMenu(HMENU hMenuAlt);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hMenuAlt*  
- 다른 메뉴에 처리 합니다.  
+*hMenuAlt*<br/>
+[in] 다른 메뉴에 처리 합니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -384,14 +384,14 @@ void DockPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- 도킹 컨트롤 막대에 대 한 포인터입니다.  
+*pBar*<br/>
+[in] 도킹 컨트롤 막대에 대 한 포인터입니다.  
   
- [in] *nDockBarID*  
- 프레임 창에 도킹 측면의 ID입니다.  
+*nDockBarID*<br/>
+[in] 프레임 창에 도킹 측면의 ID입니다.  
   
- [in] *lpRect*  
- 창의 화면 위치와 크기를 지정 하는 상수 Rect 구조체에 대 한 포인터입니다.  
+*lpRect*<br/>
+[in] 창의 화면 위치와 크기를 지정 하는 상수 Rect 구조체에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  합니다 *nDockBarID* 매개 변수는 다음 값 중 하나일 수 있습니다.  
@@ -414,11 +414,11 @@ BOOL DockPaneLeftOf(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- 도킹 창 개체에 대 한 포인터입니다.  
+*pBar*<br/>
+[in] 도킹 창 개체에 대 한 포인터입니다.  
   
- [in] *pLeftOf*  
- 지정 된 창을 도킹 하는 왼쪽 창에 대 한 포인터 *pBar*합니다.  
+*pLeftOf*<br/>
+[in] 지정 된 창을 도킹 하는 왼쪽 창에 대 한 포인터 *pBar*합니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 *pBar* 성공적으로 도킹 합니다. FALSE이 고, 그렇지 합니다.  
@@ -434,8 +434,8 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwDockStyle*  
- 창 도킹을 주 프레임 창의 가장자리를 지정 합니다.  
+*dwDockStyle*<br/>
+[in] 창 도킹을 주 프레임 창의 가장자리를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 막대 창이 지정 된 프레임 창 쪽에 도킹 되어 성공적으로 *dwDockStyle*FALSE, 그렇지 않으면.  
@@ -459,8 +459,8 @@ BOOL EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *dwDockStyle*  
- 창 모음 도킹 위치 주 프레임 창의 가장자리를 지정 합니다.  
+*dwDockStyle*<br/>
+[in] 창 모음 도킹 위치 주 프레임 창의 가장자리를 지정 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 막대 창 성공적으로 지정된 된 측면에 도킹 될 수 있습니다. FALSE이 고, 그렇지 합니다.  
@@ -484,8 +484,8 @@ void EnableFullScreenMainMenu(BOOL bEnableMenu);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnableMenu*  
- 주 메뉴에서 전체 표시 하려면 True 화면 모드 FALSE이 고, 그렇지입니다.  
+*bEnableMenu*<br/>
+[in] 주 메뉴에서 전체 표시 하려면 True 화면 모드 FALSE이 고, 그렇지입니다.  
   
 ##  <a name="enablefullscreenmode"></a>  CFrameWndEx::EnableFullScreenMode  
  프레임 창에 대 한 전체 화면 모드를 사용 합니다.  
@@ -495,8 +495,8 @@ void EnableFullScreenMode(UINT uiFullScreenCmd);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *uiFullScreenCmd*  
- ID 있으며 전체 화면 모드를 사용 하지 않도록 설정 하는 명령입니다.  
+*uiFullScreenCmd*<br/>
+[in] ID 있으며 전체 화면 모드를 사용 하지 않도록 설정 하는 명령입니다.  
   
 ### <a name="remarks"></a>설명  
  전체 화면 모드에서는 모든 도킹 컨트롤 막대, 도구 모음 및 메뉴는 숨겨져 있으며, 활성 뷰가 전체 화면을 차지 하도록 크기가 조정 됩니다.  
@@ -513,8 +513,8 @@ void EnableLoadDockState(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 도킹 상태를 로드 하는 사용 하지 않으려면 FALSE 도킹 상태를 로드를 사용 하려면 TRUE입니다.  
+*bEnable*<br/>
+[in] 도킹 상태를 로드 하는 사용 하지 않으려면 FALSE 도킹 상태를 로드를 사용 하려면 TRUE입니다.  
   
 ##  <a name="enablepanemenu"></a>  CFrameWndEx::EnablePaneMenu  
  창 메뉴의 자동 처리를 사용할지 설정 합니다.  
@@ -530,23 +530,23 @@ void EnablePaneMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bEnable*  
- 팝업 메뉴; 표시줄 컨트롤의 자동 처리를 사용 하도록 설정. 팝업 메뉴 모음 컨트롤의 자동 처리를 사용 하지 않도록 설정 하려면 FALSE입니다.  
+*bEnable*<br/>
+[in] 팝업 메뉴; 표시줄 컨트롤의 자동 처리를 사용 하도록 설정. 팝업 메뉴 모음 컨트롤의 자동 처리를 사용 하지 않도록 설정 하려면 FALSE입니다.  
   
- [in] *uiCustomizeCmd*  
- 명령 ID를 **사용자 지정** 메뉴 항목입니다.  
+*uiCustomizeCmd*<br/>
+[in] 명령 ID를 **사용자 지정** 메뉴 항목입니다.  
   
- [in] *strCustomizeLabel*  
- 에 대해 표시할 레이블을 합니다 **사용자 지정** 메뉴 항목  
+*strCustomizeLabel*<br/>
+[in] 에 대해 표시할 레이블을 합니다 **사용자 지정** 메뉴 항목  
   
- [in] *uiViewToolbarsMenuEntryID*  
- 컨트롤 막대에서 팝업 메뉴를 열고 도구 모음 메뉴 항목의 ID입니다.  
+*uiViewToolbarsMenuEntryID*<br/>
+[in] 컨트롤 막대에서 팝업 메뉴를 열고 도구 모음 메뉴 항목의 ID입니다.  
   
- [in] *bContextMenuShowsToolbarsOnly*  
- True 이면 도구 모음에만 목록 컨트롤 막대 상황에 맞는 메뉴에 표시 됩니다. FALSE 이면 메뉴 도구 모음 및 도킹 막대 목록을 표시 합니다.  
+*bContextMenuShowsToolbarsOnly*<br/>
+[in] True 이면 도구 모음에만 목록 컨트롤 막대 상황에 맞는 메뉴에 표시 됩니다. FALSE 이면 메뉴 도구 모음 및 도킹 막대 목록을 표시 합니다.  
   
- [in] *bViewMenuShowsToolbarsOnly*  
- True 이면 컨트롤 모음 메뉴만 도구 모음 목록이 표시 됩니다. FALSE 이면 메뉴 도구 모음 및 도킹 막대 목록을 표시 합니다.  
+*bViewMenuShowsToolbarsOnly*<br/>
+[in] True 이면 컨트롤 모음 메뉴만 도구 모음 목록이 표시 됩니다. FALSE 이면 메뉴 도구 모음 및 도킹 막대 목록을 표시 합니다.  
   
 ##  <a name="getactivepopup"></a>  CFrameWndEx::GetActivePopup  
  현재 표시 된 팝업 메뉴에 대 한 포인터를 반환합니다.  
@@ -599,8 +599,8 @@ CBasePane* GetPane(UINT nID);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 컨트롤 id입니다.  
+*nID*<br/>
+[in] 컨트롤 id입니다.  
   
 ### <a name="return-value"></a>반환 값  
  지정된 된 ID에 있는 창에 대 한 포인터 이러한 창 없는 경우 NULL입니다.  
@@ -637,11 +637,11 @@ virtual BOOL GetToolbarButtonToolTipText(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pButton*  
- 도구 모음 단추에 대 한 포인터입니다.  
+*pButton*<br/>
+[in] 도구 모음 단추에 대 한 포인터입니다.  
   
- [in] *strTTText*  
- 단추에 대해 표시할 도구 설명 텍스트입니다.  
+*strTTText*<br/>
+[in] 단추에 대해 표시할 도구 설명 텍스트입니다.  
   
 ### <a name="return-value"></a>반환 값  
  도구 설명이 표시 되 면 TRUE입니다. FALSE이 고, 그렇지 합니다.  
@@ -709,14 +709,14 @@ BOOL IsPointNearDockSite(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 요소의 위치입니다.  
+*지점*<br/>
+[in] 요소의 위치입니다.  
   
- [out] *dwBarAlignment*  
- 지점 정렬 되는 위치입니다. 가능한 값에 대 한 설명 섹션의 표를 참조 합니다.  
+*dwBarAlignment*<br/>
+[out] 지점 정렬 되는 위치입니다. 가능한 값에 대 한 설명 섹션의 표를 참조 합니다.  
   
- [out] *bOuterEdge*  
- TRUE 이면 포인터가 프레임 테두리; 가깝게 클라이언트 영역에는 위치가 있는 경우 FALSE입니다.  
+*bOuterEdge*<br/>
+[out] TRUE 이면 포인터가 프레임 테두리; 가깝게 클라이언트 영역에는 위치가 있는 경우 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  지점 맞춤 영역;에 있는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -760,17 +760,17 @@ virtual BOOL LoadFrame(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nIDResource*  
- 모든 프레임 리소스를 로드 하는 데 사용 되는 리소스 ID입니다.  
+*nIDResource*<br/>
+[in] 모든 프레임 리소스를 로드 하는 데 사용 되는 리소스 ID입니다.  
   
- [in] *dwDefaultStyle*  
- 기본 프레임 창 스타일입니다.  
+*dwDefaultStyle*<br/>
+[in] 기본 프레임 창 스타일입니다.  
   
- [in] *pParentWnd*  
- 프레임의 부모 창에 대 한 포인터입니다.  
+*pParentWnd*<br/>
+[in] 프레임의 부모 창에 대 한 포인터입니다.  
   
- [in] *pContext*  
- 에 대 한 포인터를 [CCreateContext 구조체](../../mfc/reference/ccreatecontext-structure.md) 응용 프로그램을 만드는 동안 프레임 워크에서 사용 되는 클래스입니다.  
+*pContext*<br/>
+[in] 에 대 한 포인터를 [CCreateContext 구조체](../../mfc/reference/ccreatecontext-structure.md) 응용 프로그램을 만드는 동안 프레임 워크에서 사용 되는 클래스입니다.  
   
 ### <a name="return-value"></a>반환 값  
  메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -787,11 +787,11 @@ virtual BOOL NegotiateBorderSpace(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nBorderCmd*  
- 테두리 협상 명령입니다. 가능한 값에 대 한 설명 섹션을 참조 합니다.  
+*nBorderCmd*<br/>
+[in] 테두리 협상 명령입니다. 가능한 값에 대 한 설명 섹션을 참조 합니다.  
   
- [out에서] *lpRectBorder*  
- 테두리의 크기입니다.  
+*lpRectBorder*<br/>
+[out에서] 테두리의 크기입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 레이아웃을 다시 계산 되어야 합니다. 그렇지 않으면 FALSE입니다.  
@@ -819,14 +819,14 @@ afx_msg void OnActivate(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nState*  
- 프레임 인지 여부 활성 또는 비활성입니다. 가능한 값에 대 한 설명 섹션의 표를 참조 합니다.  
+*nState*<br/>
+[in] 프레임 인지 여부 활성 또는 비활성입니다. 가능한 값에 대 한 설명 섹션의 표를 참조 합니다.  
   
- [in] *pWndOther*  
- 현재 사용자 입력을 전환 하는 다른 창에 대 한 포인터입니다.  
+*pWndOther*<br/>
+[in] 현재 사용자 입력을 전환 하는 다른 창에 대 한 포인터입니다.  
   
- [in] *bMinimized*  
- 프레임의 최소화 된 상태입니다. TRUE 이면 프레임 최소화 됩니다. 그렇지 않으면 FALSE입니다.  
+*bMinimized*<br/>
+[in] 프레임의 최소화 된 상태입니다. TRUE 이면 프레임 최소화 됩니다. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
  다음 표에서 대 한 가능한 값은 *nState* 매개 변수입니다.  
@@ -850,11 +850,11 @@ afx_msg void OnActivateApp(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bActive*  
- 응용 프로그램을 선택 하는 경우 TRUE입니다. 응용 프로그램을 선택 하지 않으면 FALSE입니다.  
+*bActive*<br/>
+[in] 응용 프로그램을 선택 하는 경우 TRUE입니다. 응용 프로그램을 선택 하지 않으면 FALSE입니다.  
   
- [in] *dwThreadID*  
- 이 매개 변수는 사용되지 않습니다.  
+*dwThreadID*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -868,11 +868,11 @@ afx_msg LRESULT OnChangeVisualManager(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *wParam*  
- 이 매개 변수는 사용되지 않습니다.  
+*wParam*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
- [in] *lParam*  
- 이 매개 변수는 사용되지 않습니다.  
+*lParam*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  항상 0을 반환합니다.  
@@ -941,17 +941,17 @@ virtual BOOL OnCmdMsg(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 명령 ID입니다.  
+*nID*<br/>
+[in] 명령 id입니다.  
   
- [in] *nCode*  
- 명령 메시지 범주입니다.  
+*nCode*<br/>
+[in] 명령 메시지 범주입니다.  
   
- [out에서] *pExtra*  
- 명령 개체에 대 한 포인터입니다.  
+*pExtra*<br/>
+[out에서] 명령 개체에 대 한 포인터입니다.  
   
- [out에서] *pHandlerInfo*  
- 명령 처리기 구조에 대 한 포인터입니다.  
+*pHandlerInfo*<br/>
+[out에서] 명령 처리기 구조에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 명령 메시지를 처리 된; 그렇지 않으면 FALSE입니다.  
@@ -975,8 +975,8 @@ afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpCreateStruct*  
- 에 대 한 포인터를 [CREATESTRUCT 구조체](../../mfc/reference/createstruct-structure.md) 새 프레임에 대 한 합니다.  
+*lpCreateStruct*<br/>
+[in] 에 대 한 포인터를 [CREATESTRUCT 구조체](../../mfc/reference/createstruct-structure.md) 새 프레임에 대 한 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  프레임이 생성에 사용 하 여 계속 0 프레임을 삭제 하려면-1입니다.  
@@ -1004,14 +1004,14 @@ virtual BOOL OnDrawMenuImage(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pMenuButton*  
- 해당 이미지를 렌더링 하는 메뉴 단추에 대 한 포인터입니다.  
+*pMenuButton*<br/>
+[in] 해당 이미지를 렌더링 하는 메뉴 단추에 대 한 포인터입니다.  
   
- [in] *rectImage*  
- 에 대 한 포인터를 `Rect` 이미지의 크기와 화면 위치를 지정 하는 구조입니다.  
+*rectImage*<br/>
+[in] 에 대 한 포인터를 `Rect` 이미지의 크기와 화면 위치를 지정 하는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  프레임 워크를 성공적으로 이미지를 렌더링 하는 경우 TRUE입니다. FALSE이 고, 그렇지 합니다.  
@@ -1030,14 +1030,14 @@ virtual void OnDrawMenuLogo(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pDC*  
- 장치 컨텍스트에 대한 포인터입니다.  
+*pDC*<br/>
+[in] 장치 컨텍스트에 대 한 포인터입니다.  
   
- [in] *pMenu*  
- 메뉴 항목에 대 한 포인터입니다.  
+*pMenu*<br/>
+[in] 메뉴 항목에 대 한 포인터입니다.  
   
- [in] *rectLogo*  
- 상수에 대 한 참조 `CRect` 메뉴 로고의 크기와 화면 위치를 지정 하는 구조입니다.  
+*rectLogo*<br/>
+[in] 상수에 대 한 참조 `CRect` 메뉴 로고의 크기와 화면 위치를 지정 하는 구조입니다.  
   
 ### <a name="remarks"></a>설명  
  소유 하 고 메뉴 모음에 속하는 팝업 메뉴에 로고를 표시 하려는 경우이 함수를 재정의 합니다 `CFrameWndEx` 파생 개체입니다.  
@@ -1052,11 +1052,11 @@ afx_msg LRESULT OnDWMCompositionChanged(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *wp*  
- 이 매개 변수는 사용되지 않습니다.  
+*wp*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
- [in] *lp*  
- 이 매개 변수는 사용되지 않습니다.  
+*lp*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  항상 0을 반환합니다.  
@@ -1073,11 +1073,11 @@ LRESULT OnExitSizeMove(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *wp*  
- 이 매개 변수는 사용되지 않습니다.  
+*wp*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
- [in] *lp*  
- 이 매개 변수는 사용되지 않습니다.  
+*lp*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  항상 0을 반환합니다.  
@@ -1092,8 +1092,8 @@ afx_msg void OnGetMinMaxInfo(MINMAXINFO FAR* lpMMI);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpMMI*  
- 에 대 한 포인터를 [MINMAXINFO](https://msdn.microsoft.com/library/windows/desktop/ms632605) 구조입니다.  
+*lpMMI*<br/>
+[in] 에 대 한 포인터를 [MINMAXINFO](https://msdn.microsoft.com/library/windows/desktop/ms632605) 구조입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1107,11 +1107,11 @@ afx_msg LRESULT OnIdleUpdateCmdUI(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *wParam*  
- 이 매개 변수는 사용되지 않습니다.  
+*wParam*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
- [in] *lParam*  
- 이 매개 변수는 사용되지 않습니다.  
+*lParam*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  항상 0을 반환합니다.  
@@ -1128,11 +1128,11 @@ afx_msg void OnLButtonDown(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nFlags*  
- 사용자 보조키를 눌렀는지 여부를 나타냅니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_LBUTTONDOWN 알림](/windows/desktop/inputdev/wm-lbuttondown)합니다.  
+*nFlags*<br/>
+[in] 사용자 보조키를 눌렀는지 여부를 나타냅니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_LBUTTONDOWN 알림](/windows/desktop/inputdev/wm-lbuttondown)합니다.  
   
- [in] *지점*  
- 창의 왼쪽 위 모퉁이에 상대적인 x를 포인터의 y 좌표를 지정합니다.  
+*지점*<br/>
+[in] 창의 왼쪽 위 모퉁이에 상대적인 x를 포인터의 y 좌표를 지정합니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1146,11 +1146,11 @@ afx_msg void OnLButtonUp(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nFlags*  
- 사용자 보조키를 눌렀는지 여부를 나타냅니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_LBUTTONUP 알림](/windows/desktop/inputdev/wm-lbuttonup)합니다.  
+*nFlags*<br/>
+[in] 사용자 보조키를 눌렀는지 여부를 나타냅니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_LBUTTONUP 알림](/windows/desktop/inputdev/wm-lbuttonup)합니다.  
   
- [in] *지점*  
- 창의 왼쪽 위 모퉁이에 상대적인 x를 포인터의 y 좌표를 지정합니다.  
+*지점*<br/>
+[in] 창의 왼쪽 위 모퉁이에 상대적인 x를 포인터의 y 좌표를 지정합니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1164,11 +1164,11 @@ virtual BOOL OnMenuButtonToolHitTest(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pButton*  
- 도구 모음 단추에 대 한 포인터입니다.  
+*pButton*<br/>
+[in] 도구 모음 단추에 대 한 포인터입니다.  
   
- [out] *pTI*  
- 도구 정보 구조체에 대 한 포인터입니다.  
+*PTI*<br/>
+[out] 도구 정보 구조체에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  응용 프로그램 가득 찬 경우 TRUE를 *pTI* 매개 변수입니다. FALSE이 고, 그렇지 합니다.  
@@ -1187,28 +1187,23 @@ afx_msg LRESULT OnMenuChar(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nChar*  
- 누른된 키의 문자 코드입니다.  
+*NChar*<br/>
+[in] 누른된 키의 문자 코드입니다.  
   
- [in] *nFlags*  
- 표시 되는 메뉴에 하위 메뉴가; 이면 MF_POPUP 플래그를 포함 합니다. 표시 되는 메뉴 컨트롤 메뉴 경우 MF_SYSMENU 플래그를 포함 합니다.  
+*nFlags*<br/>
+[in] 표시 되는 메뉴에 하위 메뉴가; 이면 MF_POPUP 플래그를 포함 합니다. 표시 되는 메뉴 컨트롤 메뉴 경우 MF_SYSMENU 플래그를 포함 합니다.  
   
- [in] *pMenu*  
- 메뉴에 대 한 포인터입니다.  
+*pMenu*<br/>
+[in] 메뉴에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  상위 단어에는 다음 값 중 하나 여야 합니다.  
-  
- `0`  
- 프레임 워크 키 입력을 무시 해야 합니다.  
-  
- `1`  
- 프레임 워크 메뉴를 닫아야 합니다.  
-  
- `2`  
- 프레임 워크 메뉴에 표시 된 항목 중 하나를 선택 해야 합니다. 하위 단어를 선택 하는 명령의 ID를 포함 합니다.  
-  
-### <a name="remarks"></a>설명  
+
+|||
+|-|-|
+ `0` | 프레임 워크 키 입력을 무시 해야 합니다.  
+ `1`  | 프레임 워크 메뉴를 닫아야 합니다.  
+ `2`  | 프레임 워크 메뉴에 표시 된 항목 중 하나를 선택 해야 합니다. 하위 단어를 선택 하는 명령의 ID를 포함 합니다.  
   
 ##  <a name="onmousemove"></a>  CFrameWndEx::OnMouseMove  
  프레임은 포인터를 이동 하면이 메서드를 호출 합니다.  
@@ -1220,11 +1215,11 @@ afx_msg void OnMouseMove(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nFlags*  
- 사용자 보조키를 눌렀는지 여부를 나타냅니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_MOUSEMOVE 알림](/windows/desktop/inputdev/wm-mousemove)합니다.  
+*nFlags*<br/>
+[in] 사용자 보조키를 눌렀는지 여부를 나타냅니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_MOUSEMOVE 알림](/windows/desktop/inputdev/wm-mousemove)합니다.  
   
- [in] *지점*  
- X 및 y를 지정 된 창의 왼쪽 위 모퉁이 기준으로 포인터의 좌표입니다.  
+*지점*<br/>
+[in] X 및 y를 지정 된 창의 왼쪽 위 모퉁이 기준으로 포인터의 좌표입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1236,8 +1231,8 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pFrame*  
- 에 대 한 포인터를 [CPaneFrameWnd 클래스](../../mfc/reference/cpaneframewnd-class.md) 창입니다.  
+*pFrame*<br/>
+[in] 에 대 한 포인터를 [CPaneFrameWnd 클래스](../../mfc/reference/cpaneframewnd-class.md) 창입니다.  
   
 ### <a name="return-value"></a>반환 값  
  창 창 도킹 되지 되었습니다; 경우 TRUE 창 창 도킹 된 경우 FALSE입니다.  
@@ -1252,8 +1247,8 @@ afx_msg BOOL OnNcActivate(BOOL bActive);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bActive*  
- 그리기; 활성 프레임을 true로 설정 하면 비활성 프레임을 그리려면 FALSE입니다.  
+*bActive*<br/>
+[in] 그리기; 활성 프레임을 true로 설정 하면 비활성 프레임을 그리려면 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  기본 처리를 계속 하려면 0이 아닌 값 비클라이언트 영역을 비활성화 하지 않도록 설정 하려면 0입니다.  
@@ -1270,11 +1265,11 @@ afx_msg void OnNcCalcSize(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bCalcValidRects*  
- 응용 프로그램에 유효한 클라이언트 영역; 지정 해야 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
+*bCalcValidRects*<br/>
+[in] 응용 프로그램에 유효한 클라이언트 영역; 지정 해야 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
   
- [in] *lpncsp*  
- 에 대 한 포인터를 `NCCALCSIZE_PARAMS` 프레임 차원 변경 내용이 포함 된 구조입니다.  
+*lpncsp*<br/>
+[in] 에 대 한 포인터를 `NCCALCSIZE_PARAMS` 프레임 차원 변경 내용이 포함 된 구조입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1286,8 +1281,8 @@ afx_msg LRESULT OnNcHitTest(CPoint point);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 화면 좌표에서 포인터의 위치입니다.  
+*지점*<br/>
+[in] 화면 좌표에서 포인터의 위치입니다.  
   
 ### <a name="return-value"></a>반환 값  
  포인터 적중 열거 값입니다. 가능한 값 목록을 참조 하세요 [WM_NCHITTEST 알림을](/windows/desktop/inputdev/wm-nchittest)합니다.  
@@ -1304,11 +1299,11 @@ afx_msg void OnNcMouseMove(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nHitTest*  
- 포인터 적중 열거 값입니다. 가능한 값 목록을 참조 하세요 [WM_NCHITTEST 알림을](/windows/desktop/inputdev/wm-nchittest)합니다.  
+*nHitTest*<br/>
+[in] 포인터 적중 열거 값입니다. 가능한 값 목록을 참조 하세요 [WM_NCHITTEST 알림을](/windows/desktop/inputdev/wm-nchittest)합니다.  
   
- [in] *지점*  
- 화면 좌표에서 포인터의 위치입니다.  
+*지점*<br/>
+[in] 화면 좌표에서 포인터의 위치입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1329,8 +1324,8 @@ afx_msg BOOL OnPaneCheck(UINT nID);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *nID*  
- 창의 컨트롤 ID입니다.  
+*nID*<br/>
+[in] 창의 컨트롤 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
  TRUE 이면 명령이 처리 되었습니다. 명령 처리를 계속 하려면 FALSE입니다.  
@@ -1347,11 +1342,11 @@ afx_msg LRESULT OnPostPreviewFrame(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *wParam*  
- 이 매개 변수는 사용되지 않습니다.  
+*wParam*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
- [in] *lParam*  
- 프레임 인쇄 미리 보기 모드에 있으면 TRUE입니다. 인쇄 미리 보기 모드를 해제 하는 경우 FALSE입니다.  
+*lParam*<br/>
+[in] 프레임 인쇄 미리 보기 모드에 있으면 TRUE입니다. 인쇄 미리 보기 모드를 해제 하는 경우 FALSE입니다.  
   
 ### <a name="return-value"></a>반환 값  
  항상 0을 반환합니다.  
@@ -1368,11 +1363,11 @@ afx_msg LRESULT OnPowerBroadcast(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *wp*  
- 전원 관리 이벤트입니다. 가능한 값 목록을 참조 하세요 [WM_POWERBROADCAST 메시지](/windows/desktop/Power/wm-powerbroadcast)합니다.  
+*wp*<br/>
+[in] 전원 관리 이벤트입니다. 가능한 값 목록을 참조 하세요 [WM_POWERBROADCAST 메시지](/windows/desktop/Power/wm-powerbroadcast)합니다.  
   
- [in] *lp*  
- 이 매개 변수는 사용되지 않습니다.  
+*lp*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  기본 창 프로시저 호출에서 발생 합니다.  
@@ -1391,14 +1386,14 @@ BOOL OnSetMenu(HMENU hmenu);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *wp*  
- 새 프레임 창 메뉴에 대 한 핸들입니다.  
+*wp*<br/>
+[in] 새 프레임 창 메뉴에 대 한 핸들입니다.  
   
- [in] *lp*  
- 새 창 메뉴에 대 한 핸들입니다.  
+*lp*<br/>
+[in] 새 창 메뉴에 대 한 핸들입니다.  
   
- [in] *hmenu*  
- 새 프레임 창 메뉴에 대 한 핸들입니다.  
+*hmenu*<br/>
+[in] 새 프레임 창 메뉴에 대 한 핸들입니다.  
   
 ### <a name="return-value"></a>반환 값  
  LRESULT는 기본 창 프로시저 호출의 결과입니다.  
@@ -1417,11 +1412,11 @@ virtual void OnSetPreviewMode(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bPreview*  
- 인쇄 미리 보기에 사용 하도록 설정 인쇄 미리 보기를 사용 하지 않도록 설정 하려면 FALSE입니다.  
+*bPreview*<br/>
+[in] 인쇄 미리 보기에 사용 하도록 설정 인쇄 미리 보기를 사용 하지 않도록 설정 하려면 FALSE입니다.  
   
- [in] *pState*  
- 에 대 한 포인터를 `CPrintPreviewState` 상태 구조 프레임입니다.  
+*pState*<br/>
+[in] 에 대 한 포인터를 `CPrintPreviewState` 상태 구조 프레임입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1435,11 +1430,11 @@ afx_msg LRESULT OnSetText(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *wParam*  
- 이 매개 변수는 사용되지 않습니다.  
+*wParam*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
- [in] *lParam*  
- 창에 대 한 텍스트에 대 한 포인터입니다.  
+*lParam*<br/>
+[in] 창에 대 한 텍스트에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  에 대 한 호출에서 값 반환 [DefWindowProc](/windows/desktop/api/winuser/nf-winuser-defwindowproca)합니다.  
@@ -1456,11 +1451,11 @@ virtual BOOL OnShowCustomizePane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMenuPane*  
- 빠른에 대 한 포인터 창 사용자 지정 합니다.  
+*pMenuPane*<br/>
+[in] 빠른에 대 한 포인터 창 사용자 지정 합니다.  
   
- [in] *uiToolbarID*  
- 사용자 지정 하려면 도구 모음의 컨트롤 ID입니다.  
+*uiToolbarID*<br/>
+[in] 사용자 지정 하려면 도구 모음의 컨트롤 ID입니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 항상 TRUE를 반환 합니다.  
@@ -1476,8 +1471,8 @@ virtual BOOL OnShowPanes(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bShow*  
- 응용 프로그램 창; 표시 되 면 TRUE입니다. FALSE이 고, 그렇지 합니다.  
+*bShow*<br/>
+[in] 응용 프로그램 창; 표시 되 면 TRUE입니다. FALSE이 고, 그렇지 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  이 메서드는 항상 FALSE를 반환 합니다.  
@@ -1497,8 +1492,8 @@ virtual BOOL OnShowPopupMenu(CMFCPopupMenu* pMenu);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMenu*  
- 팝업 메뉴에 대 한 포인터입니다.  
+*pMenu*<br/>
+[in] 팝업 메뉴에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  팝업 메뉴에 표시 되 면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1517,14 +1512,14 @@ afx_msg void OnSize(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *n 형식*  
- 크기 조정의 형식입니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_SIZE 알림을](/windows/desktop/winmsg/wm-size)합니다.  
+*n 형식*<br/>
+[in] 크기 조정의 형식입니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_SIZE 알림을](/windows/desktop/winmsg/wm-size)합니다.  
   
- [in] *cx*  
- 픽셀에서 프레임의 새 너비입니다.  
+*cx*<br/>
+[in] 픽셀에서 프레임의 새 너비입니다.  
   
- [in] *cy*  
- 픽셀에서 프레임의 새 높이입니다.  
+*cy*<br/>
+[in] 픽셀에서 프레임의 새 높이입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1538,11 +1533,11 @@ afx_msg void OnSizing(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *fwSide*  
- 이동 되는 프레임의 가장자리입니다. 매개 변수를 참조 하세요 *wParam* 에 [WM_SIZING 알림](/windows/desktop/winmsg/wm-sizing)합니다.  
+*fwSide*<br/>
+[in] 이동 되는 프레임의 가장자리입니다. 매개 변수를 참조 하세요 *wParam* 에 [WM_SIZING 알림](/windows/desktop/winmsg/wm-sizing)합니다.  
   
- [out에서] *pRect*  
- 에 대 한 포인터를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 하거나 [RECT](../../mfc/reference/rect-structure1.md) 프레임의 좌표를 포함 하는 구조입니다.  
+*pRect*<br/>
+[out에서] 에 대 한 포인터를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 하거나 [RECT](../../mfc/reference/rect-structure1.md) 프레임의 좌표를 포함 하는 구조입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1565,11 +1560,11 @@ virtual BOOL OnTearOffMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMenuPopup*  
- 팝업 메뉴에 대 한 포인터입니다.  
+*pMenuPopup*<br/>
+[in] 팝업 메뉴에 대 한 포인터입니다.  
   
- [in] *pBar*  
- 분리 막대가 막대에 대 한 포인터입니다.  
+*pBar*<br/>
+[in] 분리 막대가 막대에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  분리 막대가 팝업 메뉴가 활성화 되 면 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1589,11 +1584,11 @@ afx_msg LRESULT OnToolbarContextMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *wp*  
- 이 매개 변수는 사용되지 않습니다.  
+*wp*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
- [in] *lp*  
- 이 매개 변수는 사용되지 않습니다.  
+*lp*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
 ### <a name="return-value"></a>반환 값  
  항상 1을 반환합니다.  
@@ -1610,11 +1605,11 @@ afx_msg LRESULT OnToolbarCreateNew(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *wp*  
- 이 매개 변수는 사용되지 않습니다.  
+*wp*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
- [in] *lp*  
- 도구 모음에 제목 표시줄 텍스트에 대 한 포인터입니다.  
+*lp*<br/>
+[in] 도구 모음에 제목 표시줄 텍스트에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  새 도구 모음;에 대 한 포인터 또는 도구 모음을 만들지 않은 경우 NULL입니다.  
@@ -1626,16 +1621,17 @@ afx_msg LRESULT OnToolbarCreateNew(
   
 ```  
 afx_msg LRESULT OnToolbarDelete(
-    WPARAM, 
+    WPARAM /* unused */, 
     LPARAM lp);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in]  
- 이 매개 변수는 사용되지 않습니다.  
+
+*unused*<br/>
+[in] 이 매개 변수 사용 되지 않습니다.  
   
- [in] *lp*  
- 도구 모음에 대 한 포인터입니다.  
+*lp*<br/>
+[in] 도구 모음에 대 한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
  도구 모음에서 삭제 된 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.  
@@ -1650,8 +1646,8 @@ virtual void OnUpdateFrameMenu(HMENU hMenuAlt);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *hMenuAlt*  
- 다른 메뉴에 대 한 핸들입니다.  
+*hMenuAlt*<br/>
+[in] 다른 메뉴에 대 한 핸들입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1663,8 +1659,8 @@ virtual void OnUpdateFrameTitle(BOOL bAddToTitle);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bAddToTitle*  
- 프레임 창 제목 표시줄에 활성 문서 제목을 추가. 그렇지 않으면 FALSE입니다.  
+*bAddToTitle*<br/>
+[in] 프레임 창 제목 표시줄에 활성 문서 제목을 추가. 그렇지 않으면 FALSE입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1676,8 +1672,8 @@ afx_msg void OnUpdatePaneMenu(CCmdUI* pCmdUI);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pCmdUI*  
- 창 사용자 인터페이스 개체에 대 한 포인터입니다.  
+*pCmdUI*<br/>
+[in] 창 사용자 인터페이스 개체에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1689,8 +1685,8 @@ afx_msg void OnWindowPosChanged(WINDOWPOS FAR* lpwndpos);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *lpwndpos*  
- 에 대 한 포인터를 [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) 새 크기와 위치를 포함 하는 구조입니다.  
+*lpwndpos*<br/>
+[in] 에 대 한 포인터를 [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) 새 크기와 위치를 포함 하는 구조입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1712,20 +1708,20 @@ CBasePane* PaneFromPoint(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *지점*  
- 검사할 요소의 화면 좌표입니다.  
+*지점*<br/>
+[in] 검사할 요소의 화면 좌표입니다.  
   
- [in] *nSensitivity*  
- 지점에 대 한 검색 하는 경우이 용량에서 각 컨트롤 막대의 경계 사각형을 확장 합니다.  
+*nSensitivity*<br/>
+[in] 지점에 대 한 검색 하는 경우이 용량에서 각 컨트롤 막대의 경계 사각형을 확장 합니다.  
   
- [in] *bExactBar*  
- 무시 하려면 TRUE를 *nSensitivity* 매개 변수, 그렇지 않으면 FALSE입니다.  
+*bExactBar*<br/>
+[in] 무시 하려면 TRUE를 *nSensitivity* 매개 변수, 그렇지 않으면 FALSE입니다.  
   
- [in] *pRTCBarType*  
- NULL이 아닌 경우 메서드는 지정 된 형식의 컨트롤 막대에만 검색 합니다.  
+*pRTCBarType*<br/>
+[in] NULL이 아닌 경우 메서드는 지정 된 형식의 컨트롤 막대에만 검색 합니다.  
   
- [out] *dwAlignment*  
- 성공 하면이 매개 변수는 지정된 된 지점에 가장 가까운 컨트롤 막대의 측면을 포함 합니다. 그렇지 않으면이 매개 변수는 초기화 되지 않았습니다.  
+*dwAlignment*<br/>
+[out] 성공 하면이 매개 변수는 지정된 된 지점에 가장 가까운 컨트롤 막대의 측면을 포함 합니다. 그렇지 않으면이 매개 변수는 초기화 되지 않았습니다.  
   
 ### <a name="return-value"></a>반환 값  
  포함 하는 컨트롤 막대에 대 한 포인터를 *지점*; 없는 컨트롤을 찾을 수 없으면 NULL입니다.  
@@ -1743,8 +1739,8 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pMsg*  
- 에 대 한 포인터를 [MSG](../../mfc/reference/msg-structure1.md) 처리할 메시지를 포함 하는 구조입니다.  
+*pMsg*<br/>
+[in] 에 대 한 포인터를 [MSG](../../mfc/reference/msg-structure1.md) 처리할 메시지를 포함 하는 구조입니다.  
   
 ### <a name="return-value"></a>반환 값  
  0이 아닌 메시지를 처리 하 고 발송 되어야 합니다. 메시지 처리 되지 않은 및 디스패치해야 하는 경우 0입니다.  
@@ -1759,8 +1755,8 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *bNotify*  
- 레이아웃 변경에 대 한 OLE 클라이언트 항목을 알릴지 여부를 지정 합니다.  
+*bNotify*<br/>
+[in] 레이아웃 변경에 대 한 OLE 클라이언트 항목을 알릴지 여부를 지정 합니다.  
   
 ### <a name="remarks"></a>설명  
  이 메서드는 컨트롤 막대 표시 되거나 숨겨진 경우 또는 프레임 창의 크기가 변경 될 때 호출 됩니다.  
@@ -1778,20 +1774,20 @@ void RemovePaneFromDockManager(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pControlBar*  
- 제거할 컨트롤 모음 창에 대 한 포인터입니다.  
+*pControlBar*<br/>
+[in] 제거할 컨트롤 모음 창에 대 한 포인터입니다.  
   
- [in] *bDestroy*  
- 컨트롤 막대; 제거한 후 제거. FALSE이 고, 그렇지 합니다.  
+*bDestroy*<br/>
+[in] 컨트롤 막대; 제거한 후 제거. FALSE이 고, 그렇지 합니다.  
   
- [in] *bAdjustLayout*  
- TRUE; 도킹 레이아웃을 조정 하려면 FALSE이 고, 그렇지 합니다.  
+*bAdjustLayout*<br/>
+[in] TRUE; 도킹 레이아웃을 조정 하려면 FALSE이 고, 그렇지 합니다.  
   
- [in] *bAutoHide*  
- 컨트롤 막대 자동 숨기기 모드에 있으면 TRUE FALSE이 고, 그렇지 합니다.  
+*bAutoHide*<br/>
+[in] 컨트롤 막대 자동 숨기기 모드에 있으면 TRUE FALSE이 고, 그렇지 합니다.  
   
- [in] *pBarReplacement*  
- 제거 창을 대체 하는 창에 대 한 포인터입니다.  
+*pBarReplacement*<br/>
+[in] 제거 창을 대체 하는 창에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 창의 도킹 레이아웃에서 컨트롤 막대를 제거 하려면이 메서드를 사용 합니다.  
@@ -1817,8 +1813,8 @@ void SetPrintPreviewFrame(CFrameWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pWnd*  
- 인쇄 미리 보기 프레임 창에 대 한 포인터입니다.  
+*pWnd*<br/>
+[in] 인쇄 미리 보기 프레임 창에 대 한 포인터입니다.  
   
 ### <a name="remarks"></a>설명  
   
@@ -1833,14 +1829,14 @@ void SetupToolbarMenu(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *메뉴*  
- `CMenu` 개체를 수정할 수 있습니다.  
+*메뉴*<br/>
+[in] `CMenu` 개체를 수정할 수 있습니다.  
   
- [in] *uiViewUserToolbarCmdFirst*  
- 첫 번째 사용자 정의 명령입니다.  
+*uiViewUserToolbarCmdFirst*<br/>
+[in] 첫 번째 사용자 정의 명령입니다.  
   
- [in] *uiViewUserToolbarCmdLast*  
- 마지막 사용자 정의 명령입니다.  
+*uiViewUserToolbarCmdLast*<br/>
+[in] 마지막 사용자 정의 명령입니다.  
   
 ### <a name="remarks"></a>설명  
  프레임 워크 목록에 사용자 정의 명령을 저장합니다. 사용 하 여 *uiViewUserToolbarCmdFirst* 및 *uiViewUserToolbarCmdList* 삽입할 명령의 인덱스를 지정 합니다.  
@@ -1864,17 +1860,17 @@ void ShowPane(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- [in] *pBar*  
- 표시 하거나 숨기려면 컨트롤 막대에 대 한 포인터입니다.  
+*pBar*<br/>
+[in] 표시 하거나 숨기려면 컨트롤 막대에 대 한 포인터입니다.  
   
- [in] *bShow*  
- TRUE 인 경우 응용 프로그램 컨트롤 막대를 표시 합니다. 그렇지 않은 경우 응용 프로그램 컨트롤 막대를 숨깁니다.  
+*bShow*<br/>
+[in] TRUE 인 경우 응용 프로그램 컨트롤 막대를 표시 합니다. 그렇지 않은 경우 응용 프로그램 컨트롤 막대를 숨깁니다.  
   
- [in] *bDelay*  
- TRUE 이면 도킹 레이아웃 조정 framework 호출할 때까지 지연 [CFrameWndEx::AdjustDockingLayout](#adjustdockinglayout)합니다. 즉시 도킹 레이아웃을 다시 계산 그렇지 않은 경우.  
+*bDelay*<br/>
+[in] TRUE 이면 도킹 레이아웃 조정 framework 호출할 때까지 지연 [CFrameWndEx::AdjustDockingLayout](#adjustdockinglayout)합니다. 즉시 도킹 레이아웃을 다시 계산 그렇지 않은 경우.  
   
- [in] *bActivate*  
- TRUE 인 경우에 컨트롤 막대를 활성 확인 합니다. 그렇지 않은 경우 비활성 상태로 컨트롤 막대를 표시 합니다.  
+*bActivate*<br/>
+[in] TRUE 인 경우에 컨트롤 막대를 활성 확인 합니다. 그렇지 않은 경우 비활성 상태로 컨트롤 막대를 표시 합니다.  
   
 ##  <a name="updatecaption"></a>  CFrameWndEx::UpdateCaption  
  창 프레임 캡션을 업데이트 하기 위해 프레임 워크에서 호출 됩니다.  

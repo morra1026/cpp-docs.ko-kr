@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 797903c3f558cff9a0ff5addb689e31ae2adbed7
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 5c39d289ae2cf7580eba5a36257b7f5ea8ed061d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026376"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46105403"
 ---
 # <a name="cwinformscontrol-class"></a>CWinFormsControl 클래스
 Windows Forms 컨트롤을 호스팅하기 위한 기본 기능을 제공합니다.  
@@ -42,8 +42,8 @@ class CWinFormsControl : public CWnd
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `TManagedControl`  
- MFC 응용 프로그램에 표시 되는.NET Framework Windows Forms 컨트롤입니다.  
+*TManagedControl*<br/>
+MFC 응용 프로그램에 표시 되는.NET Framework Windows Forms 컨트롤입니다.  
   
 ## <a name="members"></a>멤버  
   
@@ -170,7 +170,7 @@ inline TManagedControl^ GetControl() const;
 ### <a name="return-value"></a>반환 값  
  Windows Forms 컨트롤에 대 한 포인터를 반환합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
   참조 [CWinFormsControl::CreateManagedControl](#createmanagedcontrol)합니다.  
   
 ##  <a name="getcontrolhandle"></a>  CWinFormsControl::GetControlHandle  

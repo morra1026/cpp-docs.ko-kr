@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50a174f4ee85b84451673b56139b9968c796464f
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a2d911d200b88191442c7ea04bdb61281cbc6d2d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761838"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086241"
 ---
 # <a name="introduction-to-com-and-atl"></a>COM 및 ATL 소개
 
@@ -29,20 +29,20 @@ ms.locfileid: "43761838"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[COM 소개](../atl/introduction-to-com.md)  
+[COM 소개](../atl/introduction-to-com.md)<br/>
 구성 요소 개체 모델의 (COM)에 대해 간략하게 인터페이스를 포함 하 여 기본 개념 `IUnknown`, 참조 횟수를 `QueryInterface`, 마샬링 및 집계 합니다.
 
-[ATL 소개](../atl/introduction-to-atl.md)  
+[ATL 소개](../atl/introduction-to-atl.md)<br/>
 액티브 템플릿 라이브러리(ATL)의 설계와 템플릿 라이브러리 그리고 ATL 버전 번호에 대해 간략하게 설명합니다. ATL 및 MFC 중에 선택 권장 사항이 포함되어 있습니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[구성 요소 개체 모델](/windows/desktop/com/the-component-object-model)  
+[구성 요소 개체 모델](/windows/desktop/com/the-component-object-model)<br/>
 Com Windows SDK 자료
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 액티브 템플릿 라이브러리를 사용하여 프로그래밍하는 방법에 대한 개념 항목의 링크를 제공합니다.
 
-[ATL 클래스 개요](../atl/atl-class-overview.md)  
+[ATL 클래스 개요](../atl/atl-class-overview.md)<br/>
 ATL 클래스에 대 한 링크 및 참조 정보를 제공합니다.
 

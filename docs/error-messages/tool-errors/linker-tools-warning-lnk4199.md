@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 902a3dfac03766e55a94c0ce801cb99ff6223fed
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4edd0ed57dc8a47069ccf7ecf001f58269de58de
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298540"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033272"
 ---
 # <a name="linker-tools-warning-lnk4199"></a>링커 도구 경고 LNK4199
-/DELAYLOAD:dllname 무시 됩니다. 가져오기를 dllname에서 찾을 수 없습니다  
-  
- 링커 무시 `dllname` 함수 필요 하지 않으므로 `dllname` 내보냅니다.
+
+/DELAYLOAD:dllname 무시 됩니다. 가져오기를 dllname에서 찾을 수 없습니다
+
+링커 무시 `dllname` 필요가 없는 함수 때문에 `dllname` 내보냅니다.

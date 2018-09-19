@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26fe5354061c0839cd7569c018e84b0e4f2905e5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 97a4021eb4cc5092f4bb9424e141666aea4a00f8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33232116"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021787"
 ---
 # <a name="compiler-error-c2751"></a>컴파일러 오류 C2751
-'parameter': 함수 매개 변수 이름을 한정할 수 없습니다.  
-  
- 함수 매개 변수로 정규화 된 이름을 사용할 수 없습니다.  
-  
- 다음 샘플에서는 C2751 오류가 생성 됩니다.  
-  
-```  
-// C2751.cpp  
-namespace std {  
-   template<typename T>  
-   class list {};  
-}  
-  
-#define list std::list  
-void f(int &list){}   // C2751  
+
+'parameter': 함수 매개 변수의 이름을 정규화 할 수 없습니다
+
+함수 매개 변수로 정규화 된 이름을 사용할 수 없습니다.
+
+다음 샘플에서는 C2751를 생성합니다.
+
+```
+// C2751.cpp
+namespace std {
+   template<typename T>
+   class list {};
+}
+
+#define list std::list
+void f(int &list){}   // C2751
 ```

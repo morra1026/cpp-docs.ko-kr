@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27a96082f620a09687102dd3fd42e6253968f2f7
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 8a0da6941a3076b23eb127cdcb87fee2953a80b9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693974"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707468"
 ---
 # <a name="cmfceditbrowsectrl-class"></a>CMFCEditBrowseCtrl 클래스
 `CMFCEditBrowseCtrl` 클래스는 필요에 따라 찾아보기 단추를 포함 하는 편집 가능한 텍스트 상자 인 편집 찾아보기 컨트롤을 지원 합니다. 사용자가 찾아보기 단추를 클릭하면 컨트롤은 사용자 지정 작업을 수행하거나 파일 브라우저 또는 폴더 브라우저가 포함된 표준 대화 상자를 표시합니다.  
@@ -84,14 +84,17 @@ class CMFCEditBrowseCtrl : public CEdit
   
  `CMFCEditBrowseCtrl` 클래스는 다음과 같은 모드를 지원 합니다.  
   
- **사용자 지정 모드**  
- 사용자 지정 작업은 사용자가 찾아보기 단추를 클릭할 때 수행 됩니다. 예를 들어, 응용 프로그램별 대화 상자를 표시할 수 있습니다.  
+- **사용자 지정 모드**
+
+   사용자 지정 작업은 사용자가 찾아보기 단추를 클릭할 때 수행 됩니다. 예를 들어, 응용 프로그램별 대화 상자를 표시할 수 있습니다.  
   
- **파일 모드**  
- 찾아보기 단추를 클릭할 때 표준 파일 선택 대화 상자가 표시 됩니다.  
+- **파일 모드**
+
+   찾아보기 단추를 클릭할 때 표준 파일 선택 대화 상자가 표시 됩니다.  
   
- **폴더 모드**  
- 사용자가 찾아보기 단추를 클릭 하면 표준 폴더 선택 대화 상자가 표시 됩니다.  
+- **폴더 모드**
+
+   사용자가 찾아보기 단추를 클릭 하면 표준 폴더 선택 대화 상자가 표시 됩니다.  
   
 ## <a name="how-to-specify-an-edit-browse-control"></a>편집 찾아보기 컨트롤을 지정 하는 방법.  
  응용 프로그램에서 편집 찾아보기 컨트롤을 통합 하려면 다음 단계를 수행 합니다.  

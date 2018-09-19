@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e241f918191547812854de9734995b9f0b10770
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b3a2215e43573b08a69501edfbd0c7c86897fdd3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169675"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064919"
 ---
 # <a name="compiler-error-c2152"></a>컴파일러 오류 C2152
-'identifier': 특성이 서로 다른 함수에 대 한 포인터  
-  
- 하나의 호출 규칙을 사용 하는 함수에 대 한 포인터 (`__cdecl`, `__stdcall`, 또는 `__fastcall`) 다른 호출 규칙을 사용 하는 함수에 대 한 포인터에 할당 됩니다.
+
+'identifier': 특성이 서로 다른 함수에 대 한 포인터
+
+하나의 호출 규칙을 사용 하 여 함수에 대 한 포인터 (`__cdecl`, `__stdcall`, 또는 `__fastcall`) 다른 호출 규칙을 사용 하 여 함수에 대 한 포인터에 할당 됩니다.

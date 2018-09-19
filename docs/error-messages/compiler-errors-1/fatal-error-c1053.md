@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da0db5c678b257e3039644627e958bd67b8e4e0a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fe111f84a5ebf056cb0a806e90cb660060bbf3b4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226405"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135921"
 ---
 # <a name="fatal-error-c1053"></a>심각한 오류 C1053
-'\<식별자 >': 함수가 너무 큽니다.  
-  
- 함수가 너무 커서 컴파일할 수 없습니다.  
-  
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>아래의 해결 방법 따라 수정합니다.  
-  
-1.  최적화 없이 컴파일을 시도합니다.  
-  
-2.  함수를 좀 더 작은 함수로 나눕니다.  
-  
-3.  인라인 함수에 대한 호출을 줄입니다.
+
+'\<식별자 >': 함수가 너무 큽니다.
+
+함수가 너무 커서 컴파일할 수 없습니다.
+
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>아래의 해결 방법 따라 수정합니다.
+
+1. 최적화 없이 컴파일을 시도합니다.
+
+1. 함수를 좀 더 작은 함수로 나눕니다.
+
+1. 인라인 함수에 대한 호출을 줄입니다.

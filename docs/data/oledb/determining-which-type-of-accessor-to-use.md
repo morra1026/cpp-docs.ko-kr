@@ -16,21 +16,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e8dbfecf52e974330360714763da3bd4c81117ad
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 720a72406bec5672757c1b2c5713586b7fc7f1ca
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679726"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086969"
 ---
 # <a name="determining-which-type-of-accessor-to-use"></a>사용할 접근자 형식 결정
+
 컴파일 타임 또는 런타임에 행 집합의 데이터 형식을 확인할 수 있습니다.  
   
- 정적 접근자를 사용 하 여 컴파일 시간에 데이터 형식을 결정 해야 할 경우 (같은 `CAccessor`). 수동으로 또는 ATL OLE DB 소비자 마법사를 사용 하 여 데이터 형식을 확인할 수 있습니다.  
+정적 접근자를 사용 하 여 컴파일 시간에 데이터 형식을 결정 해야 할 경우 (같은 `CAccessor`). 수동으로 또는 ATL OLE DB 소비자 마법사를 사용 하 여 데이터 형식을 확인할 수 있습니다.  
   
- 런타임 시 데이터 형식을 결정 해야 할 경우 동적 사용 (`CDynamicAccessor` 또는 하위) 또는 수동 접근자 (`CManualAccessor`). 이러한 경우에 호출할 수 있습니다 `GetColumnInfo` 형식을 결정할 수 있습니다 열 바인딩 정보를 반환 하는 행 집합에 있습니다.  
+런타임 시 데이터 형식을 결정 해야 할 경우 동적 사용 (`CDynamicAccessor` 또는 하위) 또는 수동 접근자 (`CManualAccessor`). 이러한 경우에 호출할 수 있습니다 `GetColumnInfo` 형식을 결정할 수 있습니다 열 바인딩 정보를 반환 하는 행 집합에 있습니다.  
   
- 다음 표에서 소비자 템플릿에서 제공 하는 접근자의 목록을 표시 합니다. 각 접근자에는 각각 장단점이 있습니다. 상황에 따라 하나의 접근자 유형이 요구에 맞게 해야 합니다.  
+다음 표에서 소비자 템플릿에서 제공 하는 접근자의 목록을 표시 합니다. 각 접근자에는 각각 장단점이 있습니다. 상황에 따라 하나의 접근자 유형이 요구에 맞게 해야 합니다.  
   
 |접근자 클래스|바인딩|매개 변수|주석|  
 |--------------------|-------------|---------------|-------------|  
@@ -42,4 +43,5 @@ ms.locfileid: "43679726"
 |`CXMLAccessor`|자동 번역.|아니요.|문자열 데이터로 데이터 저장소에서 액세스 하는 데이터를 검색 하 고 해당 데이터와 XML 태그의 형식을 지정 합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [접근자 사용](../../data/oledb/using-accessors.md)
+
+[접근자 사용](../../data/oledb/using-accessors.md)

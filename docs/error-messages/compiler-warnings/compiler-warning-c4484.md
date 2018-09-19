@@ -16,50 +16,52 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75531c207f0136f16109b4d69d689b883998aae2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b6916bac936ad4b8e67888443f397a4c81c0a956
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33274757"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46022983"
 ---
 # <a name="compiler-warning-c4484"></a>컴파일러 경고 C4484
-'override_function': 기본 ref 클래스 메서드 'base_class_function'와 일치 하지만 'virtual', 'new' 또는 'override';로 표시 되지 않습니다 'new' (및 'virtual' 아님) 가정  
-  
- 로 컴파일할 때 **/clr**, 컴파일러는 기본 클래스 함수, 함수는 vtable의 new 슬롯을 암시적으로 재정의 하지 것입니다. 를 해결 하려면 명시적으로 재정의 하는 함수 인지 지정 합니다.  
-  
- 자세한 내용은 다음을 참조하세요.  
-  
--   [/clr(공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md)  
-  
--   [override](../../windows/override-cpp-component-extensions.md)  
-  
--   [new (의 new 슬롯 vtable)](../../windows/new-new-slot-in-vtable-cpp-component-extensions.md)  
-  
- C4484은 항상 오류로 실행 됩니다. 사용 하 여는 [경고](../../preprocessor/warning.md) pragma C4484 표시를 합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C4484 경고가 발생 합니다.  
-  
-```  
-// C4484.cpp  
-// compile with: /clr  
-ref struct A {  
-   virtual void Test() {}  
-};  
-  
-ref struct B : A {  
-   void Test() {}   // C4484  
-};  
-  
-// OK  
-ref struct C {  
-   virtual void Test() {}  
-   virtual void Test2() {}  
-};  
-  
-ref struct D : C {  
-   virtual void Test() new {}  
-   virtual void Test2() override {}  
-};  
+
+'override_function': 기본 ref 클래스 메서드 'base_class_function'는 일치 하지만 'virtual', 'new' 또는 'override'; 표시 되어 있지 않습니다 'new' (및 'virtual' 아님) 가정
+
+사용 하 여 컴파일하면 **/clr**는 컴파일러가 함수 vtable의 new 슬롯 받을 것을 의미 하는 기본 클래스 함수를 암시적으로 재정의 되지 않습니다. 를 해결 하려면 명시적으로 함수를 재정의 인지 여부를 지정 합니다.
+
+자세한 내용은 다음을 참조하세요.
+
+- [/clr(공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md)
+
+- [override](../../windows/override-cpp-component-extensions.md)
+
+- [new (의 new 슬롯 vtable)](../../windows/new-new-slot-in-vtable-cpp-component-extensions.md)
+
+C4484은 항상 오류로 실행 됩니다. 사용 된 [경고](../../preprocessor/warning.md) C4484 표시 하지 않으려면 pragma입니다.
+
+## <a name="example"></a>예제
+
+다음 샘플 C4484를 생성합니다.
+
+```
+// C4484.cpp
+// compile with: /clr
+ref struct A {
+   virtual void Test() {}
+};
+
+ref struct B : A {
+   void Test() {}   // C4484
+};
+
+// OK
+ref struct C {
+   virtual void Test() {}
+   virtual void Test2() {}
+};
+
+ref struct D : C {
+   virtual void Test() new {}
+   virtual void Test2() override {}
+};
 ```

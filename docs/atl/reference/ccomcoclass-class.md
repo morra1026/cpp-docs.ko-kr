@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37df260d16c04210fb7e66c0ec9a747a3dad7da4
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 11c391e6ad467c835cd8c65ec872db74b85404a2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760164"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097616"
 ---
 # <a name="ccomcoclass-class"></a>CComCoClass 클래스
 
@@ -36,16 +36,16 @@ ms.locfileid: "43760164"
 ## <a name="syntax"></a>구문
 
 ```
-template <class T, const CLSID* pclsid = &CLSID_NULL>  
+template <class T, const CLSID* pclsid = &CLSID_NULL>
 class CComCoClass
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 클래스에서 파생 된 `CComCoClass`합니다.
 
-*pclsid*  
+*pclsid*<br/>
 개체의 CLSID에 대 한 포인터입니다.
 
 ## <a name="members"></a>멤버
@@ -91,13 +91,13 @@ static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
 
 ### <a name="parameters"></a>매개 변수
 
-*Q*  
+*Q*<br/>
 통해 반환 되어야 하는 COM 인터페이스 *pp*합니다.
 
-*punkOuter*  
+*punkOuter*<br/>
 [in] 알 수 없는 외부 또는 집계의 제어 알 수 없음.
 
-*pp*  
+*pp*<br/>
 [out] 만들기가 성공 하는 경우 요청 된 인터페이스 포인터를 받는 포인터 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -166,24 +166,25 @@ static HRESULT Error(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszDesc*  
-[in] 오류를 설명 하는 문자열입니다. 유니코드 버전 `Error` 형식임 *lpszDesc* 입니다 LPCOLESTR 입력; ANSI 버전 LPCSTR 형식을 지정 합니다.  
-*iid*  
+*lpszDesc*<br/>
+[in] 오류를 설명 하는 문자열입니다. 유니코드 버전 `Error` 형식임 *lpszDesc* 입니다 LPCOLESTR 입력; ANSI 버전 LPCSTR 형식을 지정 합니다.
+
+*iid*<br/>
 [in] 오류는 운영 체제에 의해 정의 된 경우 오류 또는 GUID_NULL (기본값)를 정의 하는 인터페이스의 IID입니다.
 
-*hRes*  
+*hRes*<br/>
 [in] 원하는 HRESULT 호출자에 게 반환 합니다. 기본값은 0입니다. 대 한 자세한 내용은 *hRes*, 주의 참조 하세요.
 
-*nID*  
+*nID*<br/>
 [in] 오류 설명 문자열을 저장 된 리소스 식별자입니다. 이 값 사이 있어야 0x0200 및 0xFFFF 까지입니다. 디버그 빌드에서 **ASSERT** 경우에 발생 합니다 *nID* 는 유효한 문자열을 인덱싱하지 않습니다. 릴리스 빌드에서 오류 설명 문자열을 "알 수 없는 오류입니다."로 설정 됩니다.
 
-*dwHelpID*  
+*dwHelpID*<br/>
 [in] 오류에 대 한 도움말 컨텍스트 식별자입니다.
 
-*lpszHelpFile*  
+*lpszHelpFile*<br/>
 [in] 경로 오류를 설명 하는 도움말 파일의 이름입니다.
 
-*hInst*  
+*hInst*<br/>
 [in] 리소스에 대 한 핸들입니다. 이 매개 변수는 기본적으로 `_AtlModule::GetResourceInstance`, 여기서 `_AtlModule` 의 인스턴스인 전역 [CAtlModule](../../atl/reference/catlmodule-class.md)합니다.
 
 ### <a name="return-value"></a>반환 값

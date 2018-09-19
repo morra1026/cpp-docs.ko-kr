@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b047c6a2ca3abe69f2640cabcccb1e3437cc6c5c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b0a70e935c77b81d0ebc9f34a00b5af655768be0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33175971"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076127"
 ---
 # <a name="compiler-error-c2173"></a>컴파일러 오류 C2173
-'function': 실제 매개 변수가 포인터가 아닙니다. 매개 변수 number1, 매개 변수 목록 number2  
-  
- `number1` 매개 변수 목록에 전달된 `number2` 매개 변수는 포인터가 아닙니다. 함수에는 포인터가 필요합니다.
+
+'function': 실제 매개 변수가 포인터가 아닙니다. 매개 변수 number1, 매개 변수 목록 number2
+
+`number1` 매개 변수 목록에 전달된 `number2` 매개 변수는 포인터가 아닙니다. 함수에는 포인터가 필요합니다.

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55844390b872cb0d94ff991ab79b8519388d009f
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3f32ff38008e55e656bf8901541ffc5ec7246bed
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762462"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46085994"
 ---
 # <a name="atl-global-variables"></a>ATL 전역 변수
 
@@ -30,19 +30,20 @@ ms.locfileid: "43762462"
 
 현재 모듈에 대 한 포인터를 저장 하는 전역 변수입니다.  
 
-```cpp  
-__declspec(selectany) CAtlModule * _pAtlModule  
-```  
+```cpp
+__declspec(selectany) CAtlModule * _pAtlModule
+```
+
 ### <a name="remarks"></a>설명
 
 CComModule (이제 사용 되지 않음) 클래스 Visual c + + 6.0에서 제공 하는 기능을 제공 하도록이 전역 변수에서 메서드를 사용할 수 있습니다.
 
 ### <a name="example"></a>예제
 
-```cpp  
-LONG lLocks = _pAtlModule->GetLockCount();  
-```  
+```cpp
+LONG lLocks = _pAtlModule->GetLockCount();
+```
+
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlbase.h  
-
+**헤더:** atlbase.h

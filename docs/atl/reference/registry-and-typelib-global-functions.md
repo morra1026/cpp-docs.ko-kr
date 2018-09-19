@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84e8a7e2cd3d05795e35b97069491f3fdc57c3f1
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e0e4eba9940546e72f11c220dc03a6538750ae85
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753268"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028339"
 ---
 # <a name="registry-and-typelib-global-functions"></a>레지스트리 및 TypeLib 전역 함수
 
@@ -72,14 +72,14 @@ ms.locfileid: "43753268"
 
 ### <a name="syntax"></a>구문
 
-```  
-ATLINLINE ATLAPI AtlGetPerUserRegistration(bool* pEnabled);  
+```
+ATLINLINE ATLAPI AtlGetPerUserRegistration(bool* pEnabled);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[out] *pEnabled*  
-TRUE 이면 레지스트리 정보를 이동 합니다 **HKCU** 노드 False로 기본 노드에 레지스트리 정보를 기록 하는 응용 프로그램을 나타냅니다. 기본 노드인 **HKEY_CLASSES_ROOT** (**HKCR**).
+*pEnabled*<br/>
+[out] TRUE 이면 레지스트리 정보를 이동 합니다 **HKCU** 노드 False로 기본 노드에 레지스트리 정보를 기록 하는 응용 프로그램을 나타냅니다. 기본 노드인 **HKEY_CLASSES_ROOT** (**HKCR**).
 
 ### <a name="return-value"></a>반환 값
 
@@ -101,22 +101,22 @@ S_OK는 메서드가 성공적 이면, 그렇지 않으면 HRESULT 오류 코드
 
 ### <a name="syntax"></a>구문
 
-```  
-LONG AFXAPI AfxRegCreateKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTransactionManager* pTM = NULL);  
+```
+LONG AFXAPI AfxRegCreateKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTransactionManager* pTM = NULL);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*hKey*  
+*hKey*<br/>
 열고 레지스트리 키에 대 한 핸들입니다.
 
-*lpSubKey*  
+*lpSubKey*<br/>
 이 함수를 열거나 만듭니다는 키의 이름입니다.
 
-*phkResult*  
+*phkResult*<br/>
 열린 만들거나 키에 대 한 핸들을 수신 하는 변수에 대 한 포인터입니다.
 
-*pTM*  
+*pTM*<br/>
 `CAtlTransactionManager` 개체에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -133,19 +133,19 @@ LONG AFXAPI AfxRegCreateKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTr
 
 ### <a name="syntax"></a>구문
 
-```  
-LONG AFXAPI AfxRegDeleteKey(HKEY hKey, LPCTSTR lpSubKey, CAtlTransactionManager* pTM = NULL);  
+```
+LONG AFXAPI AfxRegDeleteKey(HKEY hKey, LPCTSTR lpSubKey, CAtlTransactionManager* pTM = NULL);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*hKey*  
+*hKey*<br/>
 열고 레지스트리 키에 대 한 핸들입니다.
 
-*lpSubKey*  
+*lpSubKey*<br/>
 삭제할 키의 이름입니다.
 
-*pTM*  
+*pTM*<br/>
 `CAtlTransactionManager` 개체에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -162,19 +162,19 @@ LONG AFXAPI AfxRegDeleteKey(HKEY hKey, LPCTSTR lpSubKey, CAtlTransactionManager*
 
 ### <a name="syntax"></a>구문
 
-```  
-BOOL AFXAPI AfxRegisterPreviewHandler(LPCTSTR lpszCLSID, LPCTSTR lpszShortTypeName, LPCTSTR lpszFilterExt);  
+```
+BOOL AFXAPI AfxRegisterPreviewHandler(LPCTSTR lpszCLSID, LPCTSTR lpszShortTypeName, LPCTSTR lpszFilterExt);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszCLSID*  
+*lpszCLSID*<br/>
 처리기의 CLSID를 지정합니다.
 
-*lpszShortTypeName*  
+*lpszShortTypeName*<br/>
 처리기의 ProgID를 지정합니다.
 
-*lpszFilterExt*  
+*lpszFilterExt*<br/>
 이 처리기를 사용 하 여 등록 된 파일 확장명을 지정 합니다.
 
 ### <a name="requirements"></a>요구 사항
@@ -191,10 +191,10 @@ ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
 
 ### <a name="parameters"></a>매개 변수
 
-*hInstTypeLib*  
+*hInstTypeLib*<br/>
 모듈 인스턴스에 대 한 핸들입니다.
 
-*lpszIndex*  
+*lpszIndex*<br/>
 형식에서 문자열 "\\\N", 여기서 N은 정수 인덱스 형식 라이브러리 리소스입니다. 인덱스가 필요 없는 경우 NULL 일 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -203,7 +203,8 @@ ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
 
 ### <a name="remarks"></a>설명
 
-이 도우미 함수를 사용 하 여 [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver) 하 고 [CAtlComModule::RegisterTypeLib](../../atl/reference/catlcommodule-class.md#registertypelib)합니다.  
+이 도우미 함수를 사용 하 여 [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver) 하 고 [CAtlComModule::RegisterTypeLib](../../atl/reference/catlcommodule-class.md#registertypelib)합니다.
+
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** atlbase.h
@@ -214,22 +215,22 @@ ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
 
 ### <a name="syntax"></a>구문
 
-```  
-LONG AFXAPI AfxRegOpenKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTransactionManager* pTM = NULL);  
+```
+LONG AFXAPI AfxRegOpenKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTransactionManager* pTM = NULL);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*hKey*  
+*hKey*<br/>
 열고 레지스트리 키에 대 한 핸들입니다.
 
-*lpSubKey*  
+*lpSubKey*<br/>
 이 함수를 열거나 만듭니다는 키의 이름입니다.
 
-*phkResult*  
+*phkResult*<br/>
 만든된 키에 대 한 핸들을 수신 하는 변수에 대 한 포인터입니다.
 
-*pTM*  
+*pTM*<br/>
 `CAtlTransactionManager` 개체에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -246,28 +247,28 @@ LONG AFXAPI AfxRegOpenKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTran
 
 ### <a name="syntax"></a>구문
 
-```  
-LONG AFXAPI AfxRegOpenKeyEx(HKEY hKey, LPCTSTR lpSubKey, DWORD ulOptions, REGSAM samDesired, PHKEY phkResult, CAtlTransactionManager* pTM = NULL);  
+```
+LONG AFXAPI AfxRegOpenKeyEx(HKEY hKey, LPCTSTR lpSubKey, DWORD ulOptions, REGSAM samDesired, PHKEY phkResult, CAtlTransactionManager* pTM = NULL);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*hKey*  
+*hKey*<br/>
 열고 레지스트리 키에 대 한 핸들입니다.
 
-*lpSubKey*  
+*lpSubKey*<br/>
 이 함수를 열거나 만듭니다는 키의 이름입니다.
 
-*ulOptions*  
+*ulOptions*<br/>
 이 매개 변수는 예약 되며 0 이어야 합니다.
 
-*samDesired*  
+*samDesired*<br/>
 키에 원하는 액세스 권한을 지정 하는 마스크입니다.
 
-*phkResult*  
+*phkResult*<br/>
 열린된 키에 대 한 핸들을 수신 하는 변수에 대 한 포인터입니다.
 
-*pTM*  
+*pTM*<br/>
 `CAtlTransactionManager` 개체에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -284,13 +285,13 @@ LONG AFXAPI AfxRegOpenKeyEx(HKEY hKey, LPCTSTR lpSubKey, DWORD ulOptions, REGSAM
 
 ### <a name="syntax"></a>구문
 
-```  
-BOOL AFXAPI AfxUnRegisterPreviewHandler(LPCTSTR lpszCLSID);  
+```
+BOOL AFXAPI AfxUnRegisterPreviewHandler(LPCTSTR lpszCLSID);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszCLSID*  
+*lpszCLSID*<br/>
 등록 취소할 처리기의 CLSID를 지정 합니다.
 
 ### <a name="requirements"></a>요구 사항
@@ -303,14 +304,14 @@ BOOL AFXAPI AfxUnRegisterPreviewHandler(LPCTSTR lpszCLSID);
 
 ### <a name="syntax"></a>구문
 
-```  
-ATLINLINE ATLAPI AtlSetPerUserRegistration(bool bEnable);  
+```
+ATLINLINE ATLAPI AtlSetPerUserRegistration(bool bEnable);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *bEnable*  
-TRUE 이면 레지스트리 정보를 이동 합니다 **HKCU** 노드 False로 기본 노드에 레지스트리 정보를 기록 하는 응용 프로그램을 나타냅니다. 기본 노드인 **HKEY_CLASSES_ROOT** (**HKCR**).
+*bEnable*<br/>
+[in] TRUE 이면 레지스트리 정보를 이동 합니다 **HKCU** 노드 False로 기본 노드에 레지스트리 정보를 기록 하는 응용 프로그램을 나타냅니다. 기본 노드인 **HKEY_CLASSES_ROOT** (**HKCR**).
 
 ### <a name="return-value"></a>반환 값
 
@@ -321,6 +322,7 @@ S_OK는 메서드가 성공적 이면, 그렇지 않으면 HRESULT 오류 코드
 레지스트리 리디렉션 기본적으로 사용 되지 않습니다. 이 옵션을 사용 하는 경우 레지스트리 액세스도 리디렉션되는지 **HKEY_CURRENT_USER\Software\Classes**합니다.
 
 리디렉션 전역 아닙니다. 이 레지스트리 리디렉션은 MFC 및 ATL 프레임 영향을 받습니다.  
+
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** atlbase.h  
@@ -339,10 +341,10 @@ ATLAPI AtlUnRegisterTypeLib(
 
 ### <a name="parameters"></a>매개 변수
 
-*hInstTypeLib*  
+*hInstTypeLib*<br/>
 모듈 인스턴스에 대 한 핸들입니다.
 
-*lpszIndex*  
+*lpszIndex*<br/>
 형식에서 문자열 "\\\N", 여기서 N은 정수 인덱스 형식 라이브러리 리소스입니다. 인덱스가 필요 없는 경우 NULL 일 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -352,6 +354,7 @@ ATLAPI AtlUnRegisterTypeLib(
 ### <a name="remarks"></a>설명
 
 이 도우미 함수를 사용 하 여 [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) 하 고 [AtlComModuleUnregisterServer](#atlcommoduleunregisterserver)합니다.  
+
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** atlbase.h
@@ -372,16 +375,16 @@ ATLINLINE ATLAPI AtlLoadTypeLib(
 
 ### <a name="parameters"></a>매개 변수
 
-*hInstTypeLib*  
+*hInstTypeLib*<br/>
 형식 라이브러리와 연결 된 모듈에 대 한 핸들입니다.
 
-*lpszIndex*  
+*lpszIndex*<br/>
 형식에서 문자열 "\\\N", 여기서 N은 정수 인덱스 형식 라이브러리 리소스입니다. 인덱스가 필요 없는 경우 NULL 일 수 있습니다.
 
-*pbstrPath*  
+*pbstrPath*<br/>
 반환이 성공적 이면 형식 라이브러리와 연결 된 모듈의 전체 경로 포함 합니다.
 
-*ppTypeLib*  
+*ppTypeLib*<br/>
 반환이 성공적 이면 로드 된 형식 라이브러리에 대 한 포인터에 대 한 포인터를 포함합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -415,13 +418,13 @@ HRESULT RegistryDataExchange(
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*  
+*(태평양 표준시)*<br/>
 현재 개체에 대 한 포인터입니다.
 
-*rdxOp*  
+*rdxOp*<br/>
 작업을 나타내는 열거형 값을 함수를 수행 해야 합니다. 허용 되는 값에 대 한 설명 섹션의 표를 참조 합니다.
 
-*pItem*  
+*pItem*<br/>
 데이터를 읽거나 레지스트리를 작성 하는 것에 대 한 포인터입니다. 데이터를 레지스트리에서 삭제할 키를 나타낼 수도 있습니다. 기본값은 NULL입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -446,5 +449,5 @@ HRESULT RegistryDataExchange(
 
 ## <a name="see-also"></a>참고 항목
 
-[함수](atl-functions.md)   
+[함수](atl-functions.md)<br/>
 [레지스트리 데이터 교환 매크로](registry-data-exchange-macros.md)

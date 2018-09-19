@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae964b4ae4b67cbcbd85dac56eddac0c03370f6d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 08ec1b7c65342ece3a7aebae673fce9a0d19b7a6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33277838"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074710"
 ---
 # <a name="compiler-warning-level-1-c4080"></a>컴파일러 경고(수준 1) C4080
-세그먼트 이름에 대한 식별자가 있어야 하는데 'symbol'이 있습니다.  
-  
- [#pragma alloc_text](../../preprocessor/alloc-text.md) 의 세그먼트 이름은 문자열 또는 식별자여야 합니다. 유효한 식별자가 없으면 컴파일러가 pragma를 무시합니다.  
-  
- 다음 샘플에서는 C4080을 생성합니다.  
-  
-```  
-// C4080.cpp  
-// compile with: /W1  
-extern "C" void func(void);  
-  
-#pragma alloc_text()   // C4080  
-  
-// try this line to resolve the warning  
-// #pragma alloc_text("mysection", func)  
-  
-int main() {  
-}  
-  
-void func(void) {  
-}  
+
+세그먼트 이름에 대한 식별자가 있어야 하는데 'symbol'이 있습니다.
+
+[#pragma alloc_text](../../preprocessor/alloc-text.md) 의 세그먼트 이름은 문자열 또는 식별자여야 합니다. 유효한 식별자가 없으면 컴파일러가 pragma를 무시합니다.
+
+다음 샘플에서는 C4080을 생성합니다.
+
+```
+// C4080.cpp
+// compile with: /W1
+extern "C" void func(void);
+
+#pragma alloc_text()   // C4080
+
+// try this line to resolve the warning
+// #pragma alloc_text("mysection", func)
+
+int main() {
+}
+
+void func(void) {
+}
 ```

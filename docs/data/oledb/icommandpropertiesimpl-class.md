@@ -27,14 +27,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c2f3f4c32e2e87fdd905949ffd6cebac89a5023a
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: b31a023e39241a5393fbb9f36177ca42f88fd57e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42572505"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070901"
 ---
 # <a name="icommandpropertiesimpl-class"></a>ICommandPropertiesImpl 클래스
+
 구현을 제공 합니다 [ICommandProperties](/previous-versions/windows/desktop/ms723044\(v=vs.85\)) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
@@ -46,14 +47,16 @@ class ATL_NO_VTABLE ICommandPropertiesImpl
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- *T*  
- 파생 된 클래스  
+
+*T*<br/>
+파생 된 클래스  
   
- *PropClass*  
- 속성 클래스입니다.  
+*PropClass*<br/>
+속성 클래스입니다.  
 
 ## <a name="requirements"></a>요구 사항  
- **헤더:** atldb.h  
+
+**헤더:** atldb.h  
   
 ## <a name="members"></a>멤버  
   
@@ -65,9 +68,11 @@ class ATL_NO_VTABLE ICommandPropertiesImpl
 |[SetProperties](#setproperties)|행 집합 속성 그룹의 속성을 설정합니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 명령에 필수입니다. 구현이 정의 된 정적 함수에서 제공 되는 [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) 매크로입니다.  
+
+이 명령에 필수입니다. 구현이 정의 된 정적 함수에서 제공 되는 [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) 매크로입니다.  
 
 ## <a name="getproperties"></a> Icommandpropertiesimpl:: Getproperties
+
 명령의 속성 맵을 사용 하 여 모든 요청 된 속성 집합을 반환 합니다.  
   
 ### <a name="syntax"></a>구문  
@@ -80,12 +85,15 @@ STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [icommandproperties:: Getproperties](/previous-versions/windows/desktop/ms723119\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+
+참조 [icommandproperties:: Getproperties](/previous-versions/windows/desktop/ms723119\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="remarks"></a>설명  
- [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md)을 참조하세요.  
+
+[BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md)을 참조하세요.  
   
 ## <a name="setproperties"></a> Icommandpropertiesimpl:: Setproperties
+
 명령 개체에 대 한 속성을 설정합니다.  
   
 ### <a name="syntax"></a>구문  
@@ -96,8 +104,10 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [icommandproperties:: Setproperties](/previous-versions/windows/desktop/ms711497\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+
+참조 [icommandproperties:: Setproperties](/previous-versions/windows/desktop/ms711497\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

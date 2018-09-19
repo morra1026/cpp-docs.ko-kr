@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 083bb7258197bbc11118eaf3d3c3e3423c473310
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: fd5661a2b6aa257c91babcc3d17b1babb0b4d2c2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43678326"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707163"
 ---
 # <a name="vmxvmclear"></a>__vmx_vmclear
 **Microsoft 전용**  
@@ -41,7 +41,7 @@ unsigned char __vmx_vmclear(
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|[in] `VmcsPhysicalAddress`|제거할 VMCS의 실제 주소를 포함 하는 64 비트 메모리 위치에 대 한 포인터입니다.|  
+|*VmcsPhysicalAddress*|[in] 제거할 VMCS의 실제 주소를 포함 하는 64 비트 메모리 위치에 대 한 포인터입니다.|  
   
 ## <a name="return-value"></a>반환 값  
   

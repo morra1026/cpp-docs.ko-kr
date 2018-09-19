@@ -82,15 +82,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cfa05f5895c21f5ffdf00020efe1d1b1b881fec4
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: fe59fc6f956c0e88cae1e5c737d3fe33d10d10b6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689079"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052675"
 ---
 # <a name="uint3-class"></a>uint_3 클래스
-세 개의 부호 없는 정수는 short 벡터를 나타냅니다.  
+세 개의 부호 없는 정수 짧은 벡터를 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -110,7 +110,7 @@ class uint_3;
   
 |이름|설명|  
 |----------|-----------------|  
-|[uint_3 생성자](#ctor)|오버로드됨. 기본 생성자, 0 인 모든 요소를 초기화 합니다.|  
+|[uint_3 생성자](#ctor)|오버로드됨. 기본 생성자가 0 인 모든 요소를 초기화 합니다.|  
   
 ### <a name="public-methods"></a>Public 메서드  
   
@@ -223,7 +223,7 @@ class uint_3;
   
 ##  <a name="ctor"></a> uint_3 
 
- 기본 생성자, 0 인 모든 요소를 초기화 합니다.  
+ 기본 생성자가 0 인 모든 요소를 초기화 합니다.  
   
 ```  
 uint_3() restrict(amp,
@@ -273,20 +273,20 @@ explicit inline uint_3(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_V0`  
- 값 초기화 요소 0입니다.  
+*_V0*<br/>
+요소 0 초기화 값입니다.  
   
- `_V1`  
- 1 요소를 초기화 값입니다.  
+*_V1*<br/>
+1 요소를 초기화할 값입니다.  
   
- `_V2`  
- 값 2 요소를 초기화 하는입니다.  
+*_V2*<br/>
+2 요소를 초기화할 값입니다.  
   
- `_V`  
- 초기화에 대 한 값입니다.  
+*(_V)*<br/>
+초기화에 대 한 값입니다.  
   
- `_Other`  
- 초기화 하는 데 사용 되는 개체입니다.  
+*_Other*<br/>
+초기화 하는 데 사용 하는 개체입니다.  
   
 ##  <a name="uint_3__size"></a> 크기 
 
