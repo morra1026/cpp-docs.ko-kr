@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42aea64c0a6881dcc3ca9a3465a436b33f19ad6d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8f38fc3499ecc5956369a78c37f94358a1006cc2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761629"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108692"
 ---
 # <a name="ccomcontainedobject-class"></a>CComContainedObject 클래스
 
@@ -41,13 +41,13 @@ ms.locfileid: "43761629"
 ## <a name="syntax"></a>구문
 
 ```
-template<class Base>  
+template<class Base>
 class CComContainedObject : public Base
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*자료*  
+*자료*<br/>
 파생 된 클래스 [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) 하거나 [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)합니다.
 
 ## <a name="members"></a>멤버
@@ -104,7 +104,7 @@ CComContainedObject(void* pv);
 
 ### <a name="parameters"></a>매개 변수
 
-*pv*  
+*pv*<br/>
 [in] 소유자 개체의 `IUnknown`합니다.
 
 ### <a name="remarks"></a>설명
@@ -151,13 +151,13 @@ HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 
 ### <a name="parameters"></a>매개 변수
 
-*iid*  
+*iid*<br/>
 [in] 요청 된 인터페이스의 식별자입니다.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] 로 식별 되는 인터페이스 포인터에 대 한 포인터 *iid*합니다. 개체는이 인터페이스를 지원 하지 않는 경우 *ppvObject* NULL로 설정 됩니다.
 
-*pp*  
+*pp*<br/>
 [out] 형식별로 식별 된 인터페이스 포인터에 `Q`입니다. 개체는이 인터페이스를 지원 하지 않는 경우 *pp* NULL로 설정 됩니다.
 
 ### <a name="return-value"></a>반환 값

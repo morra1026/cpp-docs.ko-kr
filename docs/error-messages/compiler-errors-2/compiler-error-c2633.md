@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97bc51896487b0520245aa714eafb25a393365e0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2750cad468158ec5f8eddc967392ea68c1029119
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33233098"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46108565"
 ---
 # <a name="compiler-error-c2633"></a>컴파일러 오류 C2633
-'identifier': e'는 생성자에 대 한 유일한 저장소 클래스  
-  
- 생성자는 인라인 이외의 다른 저장소 클래스로 선언 됩니다.  
-  
- 다음 샘플에서는 C2633 오류가 생성 됩니다.  
-  
-```  
-// C2633.cpp  
-// compile with: /c  
-class C {  
-   extern C();   // C2633, not inline  
-   inline C();   // OK  
-};  
+
+'identifier': 'inline'는 생성자에 맞는 유일한 저장소 클래스
+
+생성자는 인라인 이외의 저장소 클래스로 선언 됩니다.
+
+다음 샘플에서는 C2633 오류가 생성 됩니다.
+
+```
+// C2633.cpp
+// compile with: /c
+class C {
+   extern C();   // C2633, not inline
+   inline C();   // OK
+};
 ```
