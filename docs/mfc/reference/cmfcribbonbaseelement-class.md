@@ -242,12 +242,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db46ca389272674da215801c0da83f38e7a3ef2b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a0200f15ab7a5c97699165a34d52ec6ce1f239e5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703887"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46136337"
 ---
 # <a name="cmfcribbonbaseelement-class"></a>CMFCRibbonBaseElement 클래스
 합니다 `CMFCRibbonBaseElement` 클래스는 추가할 수 있는 모든 요소에 대 한 기본 클래스를 [리본 표시줄](../../mfc/reference/cmfcribbonbar-class.md)합니다. 리본 요소의 예를 들면 리본 단추, 리본 확인란 및 리본 콤보 상자가 있습니다.  
@@ -568,12 +568,11 @@ virtual void DrawImage(
  기본적으로이 메서드는 없습니다. 리본 요소에 대 한 이미지를 그릴 파생된 클래스에서이 메서드를 재정의 합니다.  
   
  다음 표에 대 한 가능한 값은 *형식* 매개 변수:  
-  
- `RibbonImageLarge`  
- 큰 32 x 32 픽셀 이미지 크기입니다.  
-  
- `RibbonImageSmall`  
- 작은 16 x 16 픽셀 이미지 크기입니다.  
+
+|||
+|-|-|
+| `RibbonImageLarge`  | 큰 32 x 32 픽셀 이미지 크기입니다.  |
+| `RibbonImageSmall`  | 작은 16 x 16 픽셀 이미지 크기입니다.  |
   
 ##  <a name="find"></a>  CMFCRibbonBaseElement::Find  
  현재 개체를 가리키는 경우 지정된 된 포인터를 반환 합니다.  

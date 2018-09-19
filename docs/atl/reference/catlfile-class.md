@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d3d6ff72f9f5011d7c4e0f0b65cca9a82227b70d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 4ec124d1010a5870d47b9f1504655a7822505fe6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753255"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040494"
 ---
 # <a name="catlfile-class"></a>CAtlFile 클래스
 
@@ -107,13 +107,13 @@ explicit CAtlFile(HANDLE hFile) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*file*  
+*file*<br/>
 파일 개체입니다.
 
-*hFile*  
+*hFile*<br/>
 파일 핸들입니다.
 
-*pTM*  
+*pTM*<br/>
 CAtlTransactionManager 개체에 대한 포인터
 
 ### <a name="remarks"></a>설명
@@ -137,25 +137,25 @@ HRESULT Create(
 
 ### <a name="parameters"></a>매개 변수
 
-*szFilename*  
+*szFilename*<br/>
 파일 이름입니다.
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 원하는 액세스 합니다. 참조 *dwDesiredAccess* 에 [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea) Windows SDK에 있습니다.
 
-*dwShareMode*  
+*dwShareMode*<br/>
 공유 모드입니다. 참조 *dwShareMode* 에서 `CreateFile`합니다.
 
-*dwCreationDisposition*  
+*dwCreationDisposition*<br/>
 만들기 처리 합니다. 참조 *dwCreationDisposition* 에서 `CreateFile`합니다.
 
-*dwFlagsAndAttributes*  
+*dwFlagsAndAttributes*<br/>
 플래그 및 특성입니다. 참조 *dwFlagsAndAttributes* 에서 `CreateFile`합니다.
 
-*lpsa*  
+*lpsa*<br/>
 보안 특성입니다. 참조 *lpSecurityAttributes* 에서 `CreateFile`합니다.
 
-*hTemplateFile*  
+*hTemplateFile*<br/>
 템플릿 파일입니다. 참조 *hTemplateFile* 에서 `CreateFile`합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -195,13 +195,13 @@ HRESULT GetOverlappedResult(
 
 ### <a name="parameters"></a>매개 변수
 
-*pOverlapped*  
+*pOverlapped*<br/>
 Overlapped 구조체입니다. 참조 *lpOverlapped* 에 [GetOverlappedResult](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) Windows SDK에 있습니다.
 
-*dwBytesTransferred*  
+*dwBytesTransferred*<br/>
 바이트를 전송 합니다. 참조 *lpNumberOfBytesTransferred* 에서 `GetOverlappedResult`합니다.
 
-*bWait*  
+*bWait*<br/>
 대기 옵션입니다. 참조 *bWait* 에서 `GetOverlappedResult`합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -222,7 +222,7 @@ HRESULT GetPosition(ULONGLONG& nPos) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nPos*  
+*nPos*<br/>
 바이트 위치입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -243,7 +243,7 @@ HRESULT GetSize(ULONGLONG& nLen) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nLen*  
+*nLen*<br/>
 파일의 바이트 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -264,10 +264,10 @@ HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nPos*  
+*nPos*<br/>
 잠금을 시작 해야 하는 파일의 위치입니다.
 
-*nCount*  
+*nCount*<br/>
 잠글 바이트 범위의 길이입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -316,19 +316,19 @@ HRESULT Read(
 
 ### <a name="parameters"></a>매개 변수
 
-*pBuffer*  
+*pBuffer*<br/>
 파일에서 읽은 데이터를 받을 버퍼에 대 한 포인터입니다.
 
-*nBufSize*  
+*nBufSize*<br/>
 버퍼 크기(바이트)입니다.
 
-*nBytesRead*  
+*nBytesRead*<br/>
 읽은 바이트 수입니다.
 
-*pOverlapped*  
+*pOverlapped*<br/>
 Overlapped 구조체입니다. 참조 *lpOverlapped* 에 [ReadFile](/windows/desktop/api/fileapi/nf-fileapi-readfile) Windows SDK에 있습니다.
 
-*pfnCompletionRoutine*  
+*pfnCompletionRoutine*<br/>
 완료 루틴입니다. 참조 *lpCompletionRoutine* 에 [ReadFileEx](/windows/desktop/api/fileapi/nf-fileapi-readfileex) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -351,10 +351,10 @@ HRESULT Seek(
 
 ### <a name="parameters"></a>매개 변수
 
-*nOffset*  
+*nOffset*<br/>
 제공한 시작 지 점으로부터 오프셋 *dwFrom*합니다.
 
-*dwFrom*  
+*dwFrom*<br/>
 시작 지점 (FILE_BEGIN, FILE_CURRENT, 또는 FILE_END)입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -375,7 +375,7 @@ HRESULT SetSize(ULONGLONG nNewLen) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nNewLen*  
+*nNewLen*<br/>
 새 길이 (바이트)에서 파일입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -396,10 +396,10 @@ HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nPos*  
+*nPos*<br/>
 잠금 해제를 시작 해야 하는 파일의 위치입니다.
 
-*nCount*  
+*nCount*<br/>
 바이트 범위 잠금이 해제 되도록의 길이입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -434,19 +434,19 @@ HRESULT Write(
 
 ### <a name="parameters"></a>매개 변수
 
-*pBuffer*  
+*pBuffer*<br/>
 파일에 쓸 데이터가 포함 된 버퍼입니다.
 
-*nBufSize*  
+*nBufSize*<br/>
 버퍼에서 전송할 바이트 수입니다.
 
-*pOverlapped*  
+*pOverlapped*<br/>
 Overlapped 구조체입니다. 참조 *lpOverlapped* 에 [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-writefile) Windows SDK에 있습니다.
 
-*pfnCompletionRoutine*  
+*pfnCompletionRoutine*<br/>
 완료 루틴입니다. 참조 *lpCompletionRoutine* 에 [WriteFileEx](/windows/desktop/api/fileapi/nf-fileapi-writefileex) Windows SDK에 있습니다.
 
-*pnBytesWritten*  
+*pnBytesWritten*<br/>
 쓸 바이트입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -459,6 +459,6 @@ Overlapped 구조체입니다. 참조 *lpOverlapped* 에 [WriteFile](/windows/de
 
 ## <a name="see-also"></a>참고 항목
 
-[움직이는 텍스트 샘플](../../visual-cpp-samples.md)   
-[클래스 개요](../../atl/atl-class-overview.md)   
+[움직이는 텍스트 샘플](../../visual-cpp-samples.md)<br/>
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
 [CHandle 클래스](../../atl/reference/chandle-class.md)

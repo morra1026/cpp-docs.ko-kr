@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1943895b8db663239ed1bfb27b8e97fc3c416e5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1173633cd720ed6ee0e4aacdf75a8b305fdbfe4d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767908"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043367"
 ---
 # <a name="celementtraitsbase-class"></a>CElementTraitsBase 클래스
 
@@ -35,13 +35,13 @@ ms.locfileid: "43767908"
 ## <a name="syntax"></a>구문
 
 ```
-template<typename T>  
+template<typename T>
 class CElementTraitsBase
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 컬렉션에 저장할 데이터의 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -83,13 +83,13 @@ static void CopyElements(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDest*  
+*pDest*<br/>
 복사한 데이터를 받을 첫 번째 요소에 대 한 포인터입니다.
 
-*pSrc*  
+*pSrc*<br/>
 복사할 첫 번째 요소에 대 한 포인터입니다.
 
-*nElements*  
+*nElements*<br/>
 복사할 요소의 수입니다.
 
 ### <a name="remarks"></a>설명
@@ -125,13 +125,13 @@ static void RelocateElements(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDest*  
+*pDest*<br/>
 위치가 변경 된 데이터를 받을 첫 번째 요소에 대 한 포인터입니다.
 
-*pSrc*  
+*pSrc*<br/>
 재배치 첫 번째 요소에 대 한 포인터입니다.
 
-*nElements*  
+*nElements*<br/>
 재배치 요소의 수입니다.
 
 ### <a name="remarks"></a>설명

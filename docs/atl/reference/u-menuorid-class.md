@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb2c15021b6de6f2979fa29dae700fb7ab526ed0
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9e5902019704821d6c34c74480623593b7d7448a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751662"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044251"
 ---
 # <a name="umenuorid-class"></a>_U_MENUorID 클래스
 
@@ -78,16 +78,16 @@ HMENU m_hMenu;
 UINT 인수 생성자 및 클래스의 단일 데이터 멤버에 저장 된 결과 HMENU 캐스팅할 방금 [m_hMenu](#_u_menuorid__m_hmenu)합니다.
 
 ```
-_U_MENUorID(UINT nID);  
+_U_MENUorID(UINT nID);
 _U_MENUorID(HMENU hMenu);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*nID*  
+*nID*<br/>
 자식 창 식별자입니다.
 
-*hMenu*  
+*hMenu*<br/>
 메뉴 핸들입니다.
 
 ### <a name="remarks"></a>설명

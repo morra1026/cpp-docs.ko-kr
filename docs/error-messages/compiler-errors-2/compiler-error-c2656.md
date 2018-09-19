@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6e4dbae6232f50b9241f5542928311e8944501e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cd4b0e4ee89bc2cd2c31e476bdc4ee19bfb8a3aa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229127"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043770"
 ---
 # <a name="compiler-error-c2656"></a>컴파일러 오류 C2656
-'function': 함수를 비트 필드로 사용할 수 없습니다  
-  
- 비트 필드의 멤버인 함수를 선언 합니다.  
-  
- 생성자 이니셜라이저 목록에서 구문 오류로 인해이 오류가 발생할 수 있습니다.
+
+'function': 함수를 비트 필드로 사용할 수 없습니다
+
+비트 필드의 멤버인 함수를 선언 합니다.
+
+생성자 이니셜라이저 목록에서 구문 오류로 인해이 오류가 발생할 수 있습니다.

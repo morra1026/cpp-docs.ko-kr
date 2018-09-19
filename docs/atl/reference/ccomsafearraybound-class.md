@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 457c880f7f7eb6c011637b438fa3bcc25d57303b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 190716877090f53aa48023d493cded9793839380
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758276"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039571"
 ---
 # <a name="ccomsafearraybound-class"></a>CComSafeArrayBound 클래스
 
@@ -78,10 +78,10 @@ CComSafeArrayBound(ULONG ulCount = 0, LONG lLowerBound = 0) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*ulCount*  
+*ulCount*<br/>
 배열의 요소 수입니다.
 
-*lLowerBound*  
+*lLowerBound*<br/>
 하한값에서 배열 번호가 지정 됩니다.
 
 ### <a name="remarks"></a>설명
@@ -143,10 +143,10 @@ CComSafeArrayBound& operator= (ULONG ulCount) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*바인딩된*  
+*바인딩된*<br/>
 `CComSafeArrayBound` 개체입니다.
 
-*ulCount*  
+*ulCount*<br/>
 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -167,7 +167,7 @@ ULONG SetCount(ULONG ulCount) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*ulCount*  
+*ulCount*<br/>
 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -184,7 +184,7 @@ LONG SetLowerBound(LONG lLowerBound) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lLowerBound*  
+*lLowerBound*<br/>
 하 한.
 
 ### <a name="return-value"></a>반환 값

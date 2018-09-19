@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c707eeb5a7899dd3ef7c8c2aa46098a70ab9c06d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 94d69debb4bde61fc76917c70d95bcc6314c7208
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753089"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044537"
 ---
 # <a name="atl-classes-and-structs"></a>ATL 클래스 및 구조체
 
@@ -231,9 +231,9 @@ ms.locfileid: "43753089"
 
 ## <a name="see-also"></a>참고 항목
 
-[ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md)   
-[함수](../../atl/reference/atl-functions.md)   
-[전역 변수](../../atl/reference/atl-global-variables.md)   
-[형식 정의](../../atl/reference/atl-typedefs.md)   
+[ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md)<br/>
+[함수](../../atl/reference/atl-functions.md)<br/>
+[전역 변수](../../atl/reference/atl-global-variables.md)<br/>
+[Typedefs](../../atl/reference/atl-typedefs.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)
 

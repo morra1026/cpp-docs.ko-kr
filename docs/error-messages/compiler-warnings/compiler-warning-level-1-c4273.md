@@ -16,34 +16,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f37a9a2337c9f6a96091f9972b0308965c2bdc3c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3fb8be688fa90a015996c1ba056ef368fbc1c588
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33276596"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042093"
 ---
 # <a name="compiler-warning-level-1-c4273"></a>컴파일러 경고(수준 1) C4273
-'function': DLL 링크가 일치 하지 않습니다  
-  
- 두 개의 정의 파일에 서로 다르게 사용의 [dllimport](../../cpp/dllexport-dllimport.md)합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C4273 오류가 발생 합니다.  
-  
-```  
-// C4273.cpp  
-// compile with: /W1 /c  
-char __declspec(dllimport) c;  
-char c;   // C4273, delete this line or the line above to resolve  
-```  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C4273 오류가 발생 합니다.  
-  
-```  
-// C4273_b.cpp  
-// compile with: /W1 /clr /c  
-#include <stdio.h>  
-extern "C" int printf_s(const char *, ...);   // C4273  
+
+'function': DLL 링크가 일치 하지 않는
+
+파일에서 두 개의 정의의 용도 다릅니다 [dllimport](../../cpp/dllexport-dllimport.md)합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C4273 오류가 발생 합니다.
+
+```
+// C4273.cpp
+// compile with: /W1 /c
+char __declspec(dllimport) c;
+char c;   // C4273, delete this line or the line above to resolve
+```
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C4273 오류가 발생 합니다.
+
+```
+// C4273_b.cpp
+// compile with: /W1 /clr /c
+#include <stdio.h>
+extern "C" int printf_s(const char *, ...);   // C4273
 ```

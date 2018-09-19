@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00a7bfd149bb83dc31327e3ea235479532213e03
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: fb0bf24657a47cbe1cf1129f0202d120fb1d017e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760834"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039066"
 ---
 # <a name="cdebugreporthook-class"></a>CDebugReportHook 클래스
 
@@ -84,13 +84,13 @@ CDebugReportHook(
 
 ### <a name="parameters"></a>매개 변수
 
-*szMachineName*  
+*szMachineName*<br/>
 디버그 출력을 전송 해야 하는 컴퓨터의 이름입니다. 기본값은 로컬 컴퓨터입니다.
 
-*szPipeName*  
+*szPipeName*<br/>
 디버그 출력을 전송 해야 하는 명명된 된 파이프의 이름입니다.
 
-*dwTimeout*  
+*dwTimeout*<br/>
 이 클래스는 명명된 된 파이프를 사용할 수 있을 대기할 시간 (밀리초) 시간입니다.
 
 ##  <a name="dtor"></a>  CDebugReportHook:: ~ CDebugReportHook
@@ -114,13 +114,13 @@ static int __cdecl CDebugReportHookProc(
 
 ### <a name="parameters"></a>매개 변수
 
-*reportType*  
+*reportType*<br/>
 (_CRT_WARN, _CRT_ERROR, 또는 _CRT_ASSERT) 보고서의 형식입니다.
 
-*message*  
+*message*<br/>
 메시지 문자열입니다.
 
-*returnValue*  
+*returnValue*<br/>
 반환 되어야 하는 값 [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -169,10 +169,10 @@ BOOL SetPipeName(
 
 ### <a name="parameters"></a>매개 변수
 
-*szMachineName*  
+*szMachineName*<br/>
 디버그 출력을 전송 해야 하는 컴퓨터의 이름입니다.
 
-*szPipeName*  
+*szPipeName*<br/>
 디버그 출력을 전송 해야 하는 명명된 된 파이프의 이름입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -189,7 +189,7 @@ void SetTimeout(DWORD dwTimeout);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwTimeout*  
+*dwTimeout*<br/>
 이 클래스는 명명된 된 파이프를 사용할 수 있을 대기할 시간 (밀리초) 시간입니다.
 
 ## <a name="see-also"></a>참고 항목

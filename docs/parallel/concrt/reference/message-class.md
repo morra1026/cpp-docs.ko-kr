@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14fe0fa284a56c45404d8b568acf3b0d360fa27a
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: b0828d1d8698cb696b257e6730e4aea3961dd159
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687945"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042232"
 ---
 # <a name="message-class"></a>message 클래스
 메시징 블록 간에 전달되는 데이터 페이로드를 포함하는 기본 메시지 봉투입니다.  
@@ -40,8 +40,8 @@ class message : public ::Concurrency::details::_Runtime_object;
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `T`  
- 데이터 형식 메시지 내의 페이로드입니다.  
+*T*<br/>
+메시지 페이로드의의 데이터 형식입니다.  
   
 ## <a name="members"></a>멤버  
   
@@ -49,31 +49,31 @@ class message : public ::Concurrency::details::_Runtime_object;
   
 |이름|설명|  
 |----------|-----------------|  
-|`type`|에 대 한 형식 별칭 `T`합니다.|  
+|`type`|에 대 한 형식 별칭을 `T`입니다.|  
   
 ### <a name="public-constructors"></a>Public 생성자  
   
 |이름|설명|  
 |----------|-----------------|  
 |[message](#ctor)|오버로드됨. `message` 개체를 생성합니다.|  
-|[~ message 소멸자](#dtor)|소멸 된 `message` 개체입니다.|  
+|[~ message 소멸자](#dtor)|제거 된 `message` 개체입니다.|  
   
 ### <a name="public-methods"></a>Public 메서드  
   
 |이름|설명|  
 |----------|-----------------|  
-|[add_ref](#add_ref)|에 대 한 참조 횟수에 추가 `message` 개체입니다. 메시지 수명을 확인 하기 위해 참조 가산 필요로 하는 메시지 블록에 사용 합니다.|  
-|[msg_id](#msg_id)|ID를 반환 된 `message` 개체입니다.|  
-|[remove_ref](#remove_ref)|에 대 한 참조 횟수에서 값을 뺍니다는 `message` 개체입니다. 메시지 수명을 확인 하기 위해 참조 가산 필요로 하는 메시지 블록에 사용 합니다.|  
+|[add_ref](#add_ref)|참조 횟수에 추가 된 `message` 개체입니다. 메시지 수명 결정 하기 위해 참조 가산을 해야 하는 메시지 블록에 사용 됩니다.|  
+|[msg_id](#msg_id)|ID를 반환 합니다 `message` 개체입니다.|  
+|[remove_ref](#remove_ref)|에 대 한 참조 개수에서 뺍니다는 `message` 개체입니다. 메시지 수명 결정 하기 위해 참조 가산을 해야 하는 메시지 블록에 사용 됩니다.|  
   
 ### <a name="public-data-members"></a>공용 데이터 멤버  
   
 |이름|설명|  
 |----------|-----------------|  
-|[payload](#payload)|페이로드는 `message` 개체입니다.|  
+|[payload](#payload)|페이로드를 `message` 개체입니다.|  
   
 ## <a name="remarks"></a>설명  
- 자세한 내용은 참조 [비동기 메시지 블록](../../../parallel/concrt/asynchronous-message-blocks.md)합니다.  
+ 자세한 내용은 [비동기 메시지 블록](../../../parallel/concrt/asynchronous-message-blocks.md)합니다.  
   
 ## <a name="inheritance-hierarchy"></a>상속 계층  
  `message`  
@@ -85,7 +85,7 @@ class message : public ::Concurrency::details::_Runtime_object;
   
 ##  <a name="add_ref"></a> add_ref 
 
- 에 대 한 참조 횟수에 추가 `message` 개체입니다. 메시지 수명을 확인 하기 위해 참조 가산 필요로 하는 메시지 블록에 사용 합니다.  
+ 참조 횟수에 추가 된 `message` 개체입니다. 메시지 수명 결정 하기 위해 참조 가산을 해야 하는 메시지 블록에 사용 됩니다.  
   
 ```
 long add_ref();
@@ -114,21 +114,21 @@ message(
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_P`  
- 이 메시지의 페이로드입니다.  
+*_P*<br/>
+이 메시지의 페이로드입니다.  
   
- `_Id`  
- 이 메시지의 고유 ID입니다.  
+*Id (_i)*<br/>
+이 메시지의 고유 ID입니다.  
   
- `_Msg`  
- 참조 또는에 대 한 포인터는 `message` 개체입니다.  
+*_Msg*<br/>
+참조 또는에 대 한 포인터를 `message` 개체입니다.  
   
 ### <a name="remarks"></a>설명  
- 에 대 한 포인터를 사용 하는 생성자는 `message` 개체는 인수를 throw 하는 것으로 [invalid_argument](../../../standard-library/invalid-argument-class.md) 예외 경우 매개 변수 `_Msg` 은 `NULL`합니다.  
+ 에 대 한 포인터를 사용 하는 생성자는 `message` 인수로 throw 개체는 [invalid_argument](../../../standard-library/invalid-argument-class.md) 예외 경우 매개 변수 `_Msg` 는 `NULL`합니다.  
   
 ##  <a name="dtor"></a> ~message 
 
- 소멸 된 `message` 개체입니다.  
+ 제거 된 `message` 개체입니다.  
   
 ```
 virtual ~message();
@@ -136,18 +136,18 @@ virtual ~message();
   
 ##  <a name="msg_id"></a> msg_id 
 
- ID를 반환 된 `message` 개체입니다.  
+ ID를 반환 합니다 `message` 개체입니다.  
   
 ```
 runtime_object_identity msg_id() const;
 ```  
   
 ### <a name="return-value"></a>반환 값  
- `runtime_object_identity` 의 `message` 개체입니다.  
+ 합니다 `runtime_object_identity` 의 `message` 개체입니다.  
   
 ##  <a name="payload"></a> 페이로드 
 
- 페이로드는 `message` 개체입니다.  
+ 페이로드를 `message` 개체입니다.  
   
 ```
 T const payload;
@@ -155,7 +155,7 @@ T const payload;
   
 ##  <a name="remove_ref"></a> remove_ref 
 
- 에 대 한 참조 횟수에서 값을 뺍니다는 `message` 개체입니다. 메시지 수명을 확인 하기 위해 참조 가산 필요로 하는 메시지 블록에 사용 합니다.  
+ 에 대 한 참조 개수에서 뺍니다는 `message` 개체입니다. 메시지 수명 결정 하기 위해 참조 가산을 해야 하는 메시지 블록에 사용 됩니다.  
   
 ```
 long remove_ref();

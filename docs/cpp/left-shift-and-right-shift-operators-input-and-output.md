@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dea292ad348a155c6acdf64352dae47e858140b0
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 3500c2bd8a0245f0ecf5db1337502f05699a6509
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314107"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040338"
 ---
 # <a name="left-shift-and-right-shift-operators-gtgt-and-ltlt"></a>왼쪽된 시프트 및 오른쪽 시프트 연산자 (&gt; &gt; 하 고 &lt; &lt;)
 
@@ -36,7 +36,7 @@ ms.locfileid: "44314107"
 
 ## <a name="syntax"></a>구문
 
-> *시프트 식* `<<` *가산적 식*  
+> *시프트 식* `<<` *덧셈 식을*
 > *시프트 식* `>>` *가산적 식*
 
 ## <a name="remarks"></a>설명
@@ -178,7 +178,7 @@ int main() {
 
     short neg5 = neg1 >> 5; // -1
     bitset<16> bn5(neg5);
-    cout << bn5 << endl;  // 0b11111111'11111111  
+    cout << bn5 << endl;  // 0b11111111'11111111
 }
 ```
 
@@ -240,5 +240,5 @@ int main() {
 
 ## <a name="see-also"></a>참고자료
 
-[이항 연산자가 있는 식](../cpp/expressions-with-binary-operators.md)  
-[C++ 기본 제공 연산자, 우선 순위 및 결합성](../cpp/cpp-built-in-operators-precedence-and-associativity.md)  
+[이항 연산자가 있는 식](../cpp/expressions-with-binary-operators.md)<br/>
+[C++ 기본 제공 연산자, 우선 순위 및 결합성](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

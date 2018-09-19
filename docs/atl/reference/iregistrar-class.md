@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b445a0e1a2668047d34f18424f44b0dc7cc55f1
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 10e5a6fda373c79b85dac5cfcf19739276a5c12f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760921"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039519"
 ---
 # <a name="iregistrar-interface"></a>IRegistrar 인터페이스
 
@@ -147,7 +147,7 @@ virtualHRESULT STDMETHODCALLTYPE ResourceUnregister(
 
 ## <a name="see-also"></a>참고 항목
 
-[대체 가능 매개 변수 (등록자 전처리기)를 사용 하 여](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)   
-[클래스 개요](../../atl/atl-class-overview.md)   
-[모듈 클래스](../../atl/atl-module-classes.md)   
+[대체 가능 매개 변수 사용(등록자 전처리기)](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)<br/>
+[클래스 개요](../../atl/atl-class-overview.md)<br/>
+[모듈 클래스](../../atl/atl-module-classes.md)<br/>
 [레지스트리 구성 요소 (등록자)](../../atl/atl-registry-component-registrar.md)

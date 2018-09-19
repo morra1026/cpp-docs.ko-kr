@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75caf648b0c62827e9532fa3776def1a4e459a64
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 4a502cbf61f3542c010a89b82131a95f94856cda
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764012"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042886"
 ---
 # <a name="cregkey-class"></a>CRegKey 클래스
 
@@ -153,7 +153,7 @@ void Attach(HKEY hKey) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*hKey*  
+*hKey*<br/>
 레지스트리 키의 핸들입니다.
 
 ### <a name="remarks"></a>설명
@@ -189,25 +189,25 @@ LONG Create(
 
 ### <a name="parameters"></a>매개 변수
 
-*hKeyParent*  
+*hKeyParent*<br/>
 열린 키는의 핸들입니다.
 
-*lpszkeyname 만들기*  
+*lpszkeyname 만들기*<br/>
 만들거나 열 수는 키의 이름을 지정 합니다. 이 이름은는 하위 키를 사용 해야 합니다. *hKeyParent*합니다.
 
-*lpszClass*  
+*lpszClass*<br/>
 키를 만들거나 열 수의 클래스를 지정 합니다. 기본값은 REG_NONE 합니다.
 
-*dwOptions*  
+*dwOptions*<br/>
 키에 대 한 옵션입니다. 기본값은 REG_OPTION_NON_VOLATILE 합니다. 가능한 값 및 설명의 목록을 참조 하세요 [RegCreateKeyEx](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) Windows SDK에 있습니다.
 
-*samDesired*  
+*samDesired*<br/>
 키에 대 한 보안 액세스 합니다. 기본값은 KEY_READ &#124; KEY_WRITE 합니다. 가능한 값 및 설명의 목록을 참조 하세요. `RegCreateKeyEx`합니다.
 
-*lpSecAttr*  
+*lpSecAttr*<br/>
 에 대 한 포인터를 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) 키의 핸들을 자식 프로세스가 상속할 수 있는지 여부를 나타내는 구조입니다. 기본적으로이 매개 변수는 NULL (즉 핸들을 상속할 수 없습니다)입니다.
 
-*lpdwDisposition*  
+*lpdwDisposition*<br/>
 [out] NULL이 아닌 경우 (키 있으며 생성 된) 경우 REG_CREATED_NEW_KEY 또는 REG_OPENED_EXISTING_KEY (경우 검색 키가 있고 열린).
 
 ### <a name="return-value"></a>반환 값
@@ -231,13 +231,13 @@ CRegKey(CAtlTransactionManager* pTM) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 `CRegKey` 개체에 대한 참조입니다.
 
-*hKey*  
+*hKey*<br/>
 레지스트리 키에 대 한 핸들입니다.
 
-*pTM*  
+*pTM*<br/>
 CAtlTransactionManager 개체에 대한 포인터
 
 ### <a name="remarks"></a>설명
@@ -266,7 +266,7 @@ LONG DeleteSubKey(LPCTSTR lpszSubKey) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszSubKey*  
+*lpszSubKey*<br/>
 삭제할 키의 이름을 지정 합니다. 이 이름은는 하위 키를 사용 해야 합니다. [m_hKey](#m_hkey)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -287,7 +287,7 @@ LONG DeleteValue(LPCTSTR lpszValue) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszValue*  
+*lpszValue*<br/>
 제거할 값 필드를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -320,16 +320,16 @@ LONG EnumKey(
 
 ### <a name="parameters"></a>매개 변수
 
-*iIndex*  
+*iIndex*<br/>
 하위 키 인덱스입니다. 이 매개 변수는 첫 번째 호출에 대 한 0 이어야 합니다 하 고 후속 호출에 대 한 증가
 
-*pszName*  
+*pszName*<br/>
 Null 종결 문자를 포함 하 여 하위 키의 이름을 받는 버퍼에 대 한 포인터입니다. 하위 키의 이름만 전체 키 계층이 아닌 버퍼에 복사 됩니다.
 
-*pnNameLength*  
+*pnNameLength*<br/>
 지정 된 버퍼의 TCHARs에서 크기를 지정 하는 변수에 대 한 포인터를 *pszName* 매개 변수입니다. 이 크기는 null 종결 문자를 포함 해야 합니다. 반환 되 면 메서드를 가리키는 변수의 *pnNameLength* 버퍼에 저장 된 문자 수를 포함 합니다. 반환 된 수는 null 종결 문자를 포함 하지 않습니다.
 
-*pftLastWriteTime*  
+*pftLastWriteTime*<br/>
 시간을 수신 하는 변수에 대 한 포인터 열거 된 하위 키를 마지막으로 쓴 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -369,13 +369,13 @@ LONG GetKeySecurity(
 
 ### <a name="parameters"></a>매개 변수
 
-*si*  
+*si*<br/>
 합니다 [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) 요청한 보안 정보를 나타내는 값입니다.
 
-*psd*  
+*psd*<br/>
 요청 된 보안 설명자의 복사본을 받는 버퍼에 대 한 포인터입니다.
 
-*pnBytes*  
+*pnBytes*<br/>
 가리키는 버퍼의 바이트 크기 *psd*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -418,10 +418,10 @@ LONG NotifyChangeKeyValue(
 
 ### <a name="parameters"></a>매개 변수
 
-*bWatchSubtree*  
+*bWatchSubtree*<br/>
 지정된 된 키와 모든 하위 키 또는 지정된 된 키에만 변경 내용을 보고할 것인지 여부를 나타내는 플래그를 지정 합니다. 이 매개 변수가 TRUE 인 경우 메서드는 키 및 해당 하위 키의 변경 내용을 보고 합니다. 매개 변수가 FALSE 인 경우 메서드는 키만 변경을 보고 합니다.
 
-*dwNotifyFilter*  
+*dwNotifyFilter*<br/>
 보고 해야 하는 변경 내용을 제어 하는 플래그 집합을 지정 합니다. 이 매개 변수 값의 조합일 수 있습니다.
 
 |값|의미|
@@ -431,10 +431,10 @@ LONG NotifyChangeKeyValue(
 |REG_NOTIFY_CHANGE_LAST_SET|키의 값 변경의 호출자를 게 알립니다. 이 추가 또는 값을 삭제 하거나 기존 값을 변경 합니다.|
 |REG_NOTIFY_CHANGE_SECURITY|키의 보안 설명자에 대 한 변경 내용이 호출자를 게 알립니다.|
 
-*hEvent*  
+*hEvent*<br/>
 이벤트에 대한 핸들. 경우는 *bAsync* 매개 변수가 TRUE 인 메서드가 즉시 반환 하 고이 이벤트 신호를 보내 변경 내용을 보고 됩니다. 하는 경우 *bAsync* 은 FALSE *hEvent* 무시 됩니다.
 
-*bAsync*  
+*bAsync*<br/>
 메서드가 변경 내용을 보고 하는 방법을 나타내는 플래그를 지정 합니다. 이 매개 변수가 TRUE 인 경우 메서드를 즉시 반환 하 고 지정된 된 이벤트 신호를 보내 변경 내용을 보고 합니다. 이 매개 변수가 FALSE 인 경우 변경 내용이 발생 될 때까지 메서드를 반환 하지 않습니다. 하는 경우 *hEvent* 유효한 이벤트를 지정 하지 않는 합니다 *bAsync* 매개 변수가 TRUE 인 경우.
 
 ### <a name="return-value"></a>반환 값
@@ -461,13 +461,13 @@ LONG Open(
 
 ### <a name="parameters"></a>매개 변수
 
-*hKeyParent*  
+*hKeyParent*<br/>
 열린 키는의 핸들입니다.
 
-*lpszkeyname 만들기*  
+*lpszkeyname 만들기*<br/>
 만들거나 열 수는 키의 이름을 지정 합니다. 이 이름은는 하위 키를 사용 해야 합니다. *hKeyParent*합니다.
 
-*samDesired*  
+*samDesired*<br/>
 키에 대 한 보안 액세스 합니다. 기본값은 KEY_ALL_ACCESS 합니다. 가능한 값 및 설명의 목록을 참조 하세요 [RegCreateKeyEx](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -484,7 +484,7 @@ LONG Open(
 
 변환 된 `CRegKey` 개체는 HKEY입니다.
 
-```  
+```
 operator HKEY() const throw();
 ```
 
@@ -498,7 +498,7 @@ CRegKey& operator= (CRegKey& key) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 복사할 키입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -522,13 +522,13 @@ LONG QueryBinaryValue(
 
 ### <a name="parameters"></a>매개 변수
 
-*pszValueName*  
+*pszValueName*<br/>
 쿼리 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
-*pValue*  
+*pValue*<br/>
 값의 데이터를 받는 버퍼에 대 한 포인터입니다.
 
-*pnBytes*  
+*pnBytes*<br/>
 버퍼를 바이트 단위로 크기를 지정 하는 변수에 대 한 포인터에서 가리키는 합니다 *pValue* 매개 변수입니다. 메서드가 반환 하는 경우이 변수는 버퍼에 복사 된 데이터의 크기를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -554,10 +554,10 @@ LONG QueryDWORDValue(
 
 ### <a name="parameters"></a>매개 변수
 
-*pszValueName*  
+*pszValueName*<br/>
 쿼리 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
-*dwValue*  
+*dwValue*<br/>
 DWORD를 받는 버퍼에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -583,10 +583,10 @@ LONG QueryGUIDValue(
 
 ### <a name="parameters"></a>매개 변수
 
-*pszValueName*  
+*pszValueName*<br/>
 쿼리 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
-*guidValue*  
+*guidValue*<br/>
 GUID를 수신 하는 변수에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -613,13 +613,13 @@ LONG QueryMultiStringValue(
 
 ### <a name="parameters"></a>매개 변수
 
-*pszValueName*  
+*pszValueName*<br/>
 쿼리 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
-*pszValue*  
+*pszValue*<br/>
 다중 데이터를 받는 버퍼에 대 한 포인터입니다. multistring은 두 null 문자로 끝나는 null로 끝나는 문자열의 배열.
 
-*pnChars*  
+*pnChars*<br/>
 크기를 가리키는 버퍼의 TCHARs *pszValue*합니다. 메서드는 반환 될 때 *pnChars* 의 null 종결 문자를 포함 하는 검색 multistring TCHARs의 크기를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -645,10 +645,10 @@ LONG QueryQWORDValue(
 
 ### <a name="parameters"></a>매개 변수
 
-*pszValueName*  
+*pszValueName*<br/>
 쿼리 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
-*qwValue*  
+*qwValue*<br/>
 QWORD를 받는 버퍼에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -675,13 +675,13 @@ LONG QueryStringValue(
 
 ### <a name="parameters"></a>매개 변수
 
-*pszValueName*  
+*pszValueName*<br/>
 쿼리 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
-*pszValue*  
+*pszValue*<br/>
 문자열 데이터를 받는 버퍼에 대 한 포인터입니다.
 
-*pnChars*  
+*pnChars*<br/>
 크기를 가리키는 버퍼의 TCHARs *pszValue*합니다. 메서드는 반환 될 때 *pnChars* TCHARs, 종결 null 문자를 포함 하 여 검색 문자열의 크기를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -718,28 +718,28 @@ ATL_DEPRECATED LONG QueryValue(
 
 ### <a name="parameters"></a>매개 변수
 
-*pszValueName*  
+*pszValueName*<br/>
 쿼리 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다. 하는 경우 *pszValueName* NULL 이거나 빈 문자열 "", 메서드 형식을 검색 및 키에 대 한 데이터의 명명 되지 않은 또는 기본값이 있는 경우.
 
-*pdwType*  
+*pdwType*<br/>
 지정된 된 값에 저장 된 데이터의 형식을 나타내는 코드를 수신 하는 변수에 대 한 포인터입니다. 합니다 *pdwType* 매개 변수 형식 코드를 필요 하지 않은 경우 NULL 일 수 있습니다.
 
-*pData*  
+*pData*<br/>
 값의 데이터를 받는 버퍼에 대 한 포인터입니다. 이 매개 변수는 데이터가 필요 하지 않은 경우 NULL 일 수 있습니다.
 
-*pnBytes*  
+*pnBytes*<br/>
 버퍼를 바이트 단위로 크기를 지정 하는 변수에 대 한 포인터에서 가리키는 합니다 *pData* 매개 변수입니다. 메서드가 반환 될 때이 변수 복사할 데이터의 크기를 포함 하는 *pData 합니다.*
 
-*dwValue*  
+*dwValue*<br/>
 값 필드의 숫자 데이터입니다.
 
-*lpszValueName*  
+*lpszValueName*<br/>
 값 필드를 쿼리할 수를 지정 합니다.
 
-*szValue*  
+*szValue*<br/>
 값 필드의 문자열 데이터입니다.
 
-*pdwCount*  
+*pdwCount*<br/>
 문자열 데이터의 크기입니다. 해당 값이 처음 크기를 설정 합니다 *szValue* 버퍼입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -765,7 +765,7 @@ LONG RecurseDeleteKey(LPCTSTR lpszKey) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszKey*  
+*lpszKey*<br/>
 삭제할 키의 이름을 지정 합니다. 이 이름은는 하위 키를 사용 해야 합니다. [m_hKey](#m_hkey)합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -789,13 +789,13 @@ LONG SetBinaryValue(
 
 ### <a name="parameters"></a>매개 변수
 
-*pszValueName*  
+*pszValueName*<br/>
 설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름의 값을 아직 없는 경우, 메서드가 키에 추가 됩니다.
 
-*pValue*  
+*pValue*<br/>
 지정 된 값 이름으로 저장 될 데이터가 포함 된 버퍼에 대 한 포인터입니다.
 
-*nBytes*  
+*nBytes*<br/>
 가 가리키는 정보를 바이트 단위로 크기를 지정 합니다 *pValue* 매개 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -816,10 +816,10 @@ LONG SetDWORDValue(LPCTSTR pszValueName, DWORD dwValue) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pszValueName*  
+*pszValueName*<br/>
 설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름의 값을 아직 없는 경우, 메서드가 키에 추가 됩니다.
 
-*dwValue*  
+*dwValue*<br/>
 지정 된 값 이름으로 저장 될 DWORD 데이터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -840,10 +840,10 @@ LONG SetGUIDValue(LPCTSTR pszValueName, REFGUID guidValue) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pszValueName*  
+*pszValueName*<br/>
 설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름의 값을 아직 없는 경우, 메서드가 키에 추가 됩니다.
 
-*guidValue*  
+*guidValue*<br/>
 지정 된 값 이름으로 저장 GUID에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -867,13 +867,13 @@ LONG SetKeyValue(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszkeyname 만들기*  
+*lpszkeyname 만들기*<br/>
 만들거나 열 수는 키의 이름을 지정 합니다. 이 이름은는 하위 키를 사용 해야 합니다. [m_hKey](#m_hkey)합니다.
 
-*lpszValue*  
+*lpszValue*<br/>
 데이터를 저장할 수를 지정 합니다. 이 매개 변수는 NULL 이어야 합니다.
 
-*lpszValueName*  
+*lpszValueName*<br/>
 설정할 값 필드를 지정 합니다. 이 이름의 값 필드 없는 키에서에 추가 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -894,7 +894,7 @@ LONG SetKeySecurity(SECURITY_INFORMATION si, PSECURITY_DESCRIPTOR psd) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*si*  
+*si*<br/>
 설정할 보안 설명자의 구성 요소를 지정 합니다. 값에는 다음 값의 조합 수 있습니다.
 
 |값|의미|
@@ -904,7 +904,7 @@ LONG SetKeySecurity(SECURITY_INFORMATION si, PSECURITY_DESCRIPTOR psd) throw();
 |OWNER_SECURITY_INFORMATION|키의 소유자 SID를 설정합니다. 키 WRITE_OWNER 액세스 해야 합니다. 또는 호출 프로세스에 개체의 소유자 이거나 SE_TAKE_OWNERSHIP_NAME 권한을 사용 하도록 설정 해야 합니다.|
 |SACL_SECURITY_INFORMATION|키의 시스템 액세스 제어 목록 (SACL)를 설정합니다. 키에 ACCESS_SYSTEM_SECURITY 권한이 있어야 합니다. 이 액세스 권한을 얻을 수 있는 적절 한 방법은 se_security_name 권한을 사용 하도록 설정 하는 것 [권한](https://msdn.microsoft.com/library/windows/desktop/aa379306) 호출자의 현재 액세스 토큰에서 ACCESS_SYSTEM_SECURITY 액세스에 대 한 핸들을 연 다음 권한을 사용 하지 않도록 설정 합니다.|
 
-*psd*  
+*psd*<br/>
 에 대 한 포인터를 [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) 설정할 지정된 된 키에 대 한 보안 특성을 지정 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -925,10 +925,10 @@ LONG SetMultiStringValue(LPCTSTR pszValueName, LPCTSTR pszValue) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pszValueName*  
+*pszValueName*<br/>
 설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름의 값을 아직 없는 경우, 메서드가 키에 추가 됩니다.
 
-*pszValue*  
+*pszValue*<br/>
 지정 된 값 이름으로 저장 하려면 다중 데이터에 대 한 포인터입니다. multistring은 두 null 문자로 끝나는 null로 끝나는 문자열의 배열.
 
 ### <a name="return-value"></a>반환 값
@@ -949,10 +949,10 @@ LONG SetQWORDValue(LPCTSTR pszValueName, ULONGLONG qwValue) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pszValueName*  
+*pszValueName*<br/>
 설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름의 값을 아직 없는 경우, 메서드가 키에 추가 됩니다.
 
-*qwValue*  
+*qwValue*<br/>
 지정 된 값 이름으로 저장 하려면 QWORD 데이터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -976,13 +976,13 @@ LONG SetStringValue(
 
 ### <a name="parameters"></a>매개 변수
 
-*pszValueName*  
+*pszValueName*<br/>
 설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름의 값을 아직 없는 경우, 메서드가 키에 추가 됩니다.
 
-*pszValue*  
+*pszValue*<br/>
 지정 된 값 이름으로 저장할 문자열 데이터에 대 한 포인터입니다.
 
-*dwType*  
+*dwType*<br/>
 레지스트리에 쓸 문자열 형식: REG_SZ (기본값) 또는 REG_EXPAND_SZ (다중 문자열)입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1023,37 +1023,37 @@ ATL_DEPRECATED LONG SetValue(
 
 ### <a name="parameters"></a>매개 변수
 
-*pszValueName*  
+*pszValueName*<br/>
 설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름의 값을 이미 키에 없는 경우 메서드가 키에 추가 됩니다. 하는 경우 *pszValueName* NULL 이거나 빈 문자열인 경우 "", 형식을 설정 하는 메서드 및 키에 대 한 데이터의 명명 되지 않은 값 이나 기본값입니다.
 
-*dwType*  
+*dwType*<br/>
 가리키는 데이터의 형식을 나타내는 코드를 지정 합니다 *pValue* 매개 변수입니다.
 
-*pValue*  
+*pValue*<br/>
 지정 된 값 이름으로 저장 될 데이터가 포함 된 버퍼에 대 한 포인터입니다.
 
-*nBytes*  
+*nBytes*<br/>
 가 가리키는 정보를 바이트 단위로 크기를 지정 합니다 *pValue* 매개 변수입니다. 데이터 형식 REG_SZ, REG_MULTI_SZ, REG_EXPAND_SZ, 이면 *nBytes* null 종결 문자 크기를 포함 해야 합니다.
 
-*hKeyParent*  
+*hKeyParent*<br/>
 열린 키는의 핸들입니다.
 
-*lpszkeyname 만들기*  
+*lpszkeyname 만들기*<br/>
 만들거나 열 수는 키의 이름을 지정 합니다. 이 이름은는 하위 키를 사용 해야 합니다. *hKeyParent*합니다.
 
-*lpszValue*  
+*lpszValue*<br/>
 데이터를 저장할 수를 지정 합니다. 이 매개 변수는 NULL 이어야 합니다.
 
-*lpszValueName*  
+*lpszValueName*<br/>
 설정할 값 필드를 지정 합니다. 이 이름의 값 필드 없는 키에서에 추가 됩니다.
 
-*dwValue*  
+*dwValue*<br/>
 데이터를 저장할 수를 지정 합니다.
 
-*bMulti*  
+*bMulti*<br/>
 False 인 경우에 문자열 형식 REG_SZ 인지를 나타냅니다. True 이면 문자열은 형식 REG_MULTI_SZ multistring 나타냅니다.
 
-*nValueLen*  
+*nValueLen*<br/>
 하는 경우 *bMulti* 가 true 이면 *nValueLen* 의 길이 *lpszValue* 문자에서 문자열입니다. 하는 경우 *bMulti* 이 false 이면 값이-1 이면 메서드 길이 자동으로 계산 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1068,5 +1068,5 @@ False 인 경우에 문자열 형식 REG_SZ 인지를 나타냅니다. True 이�
 
 ## <a name="see-also"></a>참고 항목
 
-[DCOM 예제](../../visual-cpp-samples.md)   
+[DCOM 예제](../../visual-cpp-samples.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

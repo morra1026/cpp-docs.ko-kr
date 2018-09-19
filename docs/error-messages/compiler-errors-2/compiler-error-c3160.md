@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 670dd386be82b4356262cb59442d36fb1d6f646b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bf3ecc18e1afc9b13e47ad8b20bb92f7686d0cfc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249244"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042275"
 ---
 # <a name="compiler-error-c3160"></a>컴파일러 오류 C3160
-'pointer': 관리되는 클래스나 WinRT 클래스의 데이터 멤버는 이 형식을 가질 수 없습니다.  
-  
- 내부 가비지 컬렉션 포인터는 관리되는 클래스나 WinRT 클래스의 내부를 가리킬 수 있습니다. 이 포인터는 전체 개체 포인터보다 더 느리고 가비지 수집기에 의한 특수 처리가 필요하므로 내부 관리되는 포인터를 클래스 멤버로 선언할 수 없습니다.  
-  
- 다음 샘플에서는 C3160 오류가 발생하는 경우를 보여 줍니다.  
-  
-```  
-// C3160.cpp  
-// compile with: /clr  
-ref struct A {  
-   // cannot create interior pointers inside a class  
-   interior_ptr<int> pg;   // C3160  
-   int g;   // OK  
-   int* pg2;   // OK  
-};  
-  
-int main() {  
-   interior_ptr<int> pg2;   // OK  
-}  
-```  
+
+'pointer': 관리되는 클래스나 WinRT 클래스의 데이터 멤버는 이 형식을 가질 수 없습니다.
+
+내부 가비지 컬렉션 포인터는 관리되는 클래스나 WinRT 클래스의 내부를 가리킬 수 있습니다. 이 포인터는 전체 개체 포인터보다 더 느리고 가비지 수집기에 의한 특수 처리가 필요하므로 내부 관리되는 포인터를 클래스 멤버로 선언할 수 없습니다.
+
+다음 샘플에서는 C3160 오류가 발생하는 경우를 보여 줍니다.
+
+```
+// C3160.cpp
+// compile with: /clr
+ref struct A {
+   // cannot create interior pointers inside a class
+   interior_ptr<int> pg;   // C3160
+   int g;   // OK
+   int* pg2;   // OK
+};
+
+int main() {
+   interior_ptr<int> pg2;   // OK
+}
+```

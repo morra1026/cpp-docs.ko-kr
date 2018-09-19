@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc2fc49dba0696de748129e589c3958a1274c791
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0c0b7be7998b083a60f2a9c413f64889311db6f4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33163126"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038466"
 ---
 # <a name="compiler-error-c2067"></a>컴파일러 오류 C2067
-배열 형식으로 잘못 캐스팅했습니다.  
-  
- 개체가 배열 형식으로 캐스팅되었습니다.
+
+배열 형식으로 잘못 캐스팅했습니다.
+
+개체가 배열 형식으로 캐스팅되었습니다.

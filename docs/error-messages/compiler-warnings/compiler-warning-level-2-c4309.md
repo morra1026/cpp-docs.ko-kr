@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3cb98faf0c84210deb1a4c5164959d2ba4c08db9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8b7eba833b547a54adc0644303ab51d3852740a8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300149"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041976"
 ---
 # <a name="compiler-warning-level-2-c4309"></a>컴파일러 경고(수준 2) C4309
-'conversion': 상수 값 잘림  
-  
- 형식 변환으로 할당 된 공간을 초과 하는 상수입니다. 상수에 대해 더 큰 형식을 사용 해야 합니다.  
-  
- 다음 샘플에서는 C4309 오류가 생성 됩니다.  
-  
-```  
-// C4309.cpp  
-// compile with: /W2  
-int main()  
-{  
-   char c = 128;   // C4309  
-}  
+
+'conversion': 상수 값 잘림
+
+형식 변환으로 할당 된 공간을 초과 하는 상수입니다. 상수에 대 한 더 큰 형식을 사용 해야 합니다.
+
+다음 샘플에서는 C4309 오류가 생성 됩니다.
+
+```
+// C4309.cpp
+// compile with: /W2
+int main()
+{
+   char c = 128;   // C4309
+}
 ```

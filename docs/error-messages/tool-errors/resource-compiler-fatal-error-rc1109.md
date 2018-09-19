@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e71123230318d2da006be3c09fdb5855f713220f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 61197a4322690646bf3f89d155fbb526b00ba0de
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33325892"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044810"
 ---
 # <a name="resource-compiler-fatal-error-rc1109"></a>리소스 컴파일러 심각한 오류 RC1109
-리소스 이름을 만드는 동안 오류 발생  
-  
- 지정 된.res 파일을 만들 수 없습니다. 읽기 전용 드라이브에서 생성 되지 않습니다 있는지 확인 합니다. /V 옵션을 사용 하 여 파일은 만드는 중인지 찾을 수 있습니다.
+
+리소스 이름 만들기 오류
+
+지정 된.res 파일을 만들 수 없습니다. 읽기 전용 드라이브에서 생성 되지 않습니다 있는지 확인 합니다. 파일을 만들 여부를 확인 하려면 /V 옵션을 사용 합니다.

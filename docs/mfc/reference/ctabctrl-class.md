@@ -82,12 +82,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac6e8215cc46fd190703981869a065df8d46b18d
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 8ad44aaaf22adce58cfdf01d108f172dc7cdf372
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690473"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043939"
 ---
 # <a name="ctabctrl-class"></a>CTabCtrl 클래스
 Windows의 공용 탭 컨트롤의 기능을 제공합니다.  
@@ -391,30 +391,34 @@ BOOL GetItem(int nItem,   TCITEM* pTabCtrlItem) const;
 ### <a name="remarks"></a>설명  
  메시지를 보낼 때의 `mask` 멤버가 반환 될 특성을 지정 합니다. 경우는 `mask` TCIF_TEXT 값을 지정 하는 멤버를 `pszText` 멤버에 있는 항목 텍스트를 수신 하는 버퍼의 주소를 포함 해야 합니다 및 `cchTextMax` 멤버 버퍼의 크기를 지정 해야 합니다.  
   
- `mask`  
- 지정 하는 값 `TCITEM` 구조체 멤버를 검색 하거나 설정 합니다. 이 멤버는 0 이거나 다음 값의 조합 수 있습니다.  
+- `mask`
+
+   지정 하는 값 `TCITEM` 구조체 멤버를 검색 하거나 설정 합니다. 이 멤버는 0 이거나 다음 값의 조합 수 있습니다.  
   
-- TCIF_TEXT는 `pszText` 유효 합니다.  
+   - TCIF_TEXT는 `pszText` 유효 합니다.  
   
-- TCIF_IMAGE는 `iImage` 유효 합니다.  
+   - TCIF_IMAGE는 `iImage` 유효 합니다.  
   
-- TCIF_PARAM는 `lParam` 유효 합니다.  
+   - TCIF_PARAM는 `lParam` 유효 합니다.  
   
-- TCIF_RTLREADING 텍스트의 `pszText` 히브리어 또는 아랍어 시스템에서 오른쪽에서 왼쪽 읽기 순서를 사용 하 여 표시 됩니다.  
+   - TCIF_RTLREADING 텍스트의 `pszText` 히브리어 또는 아랍어 시스템에서 오른쪽에서 왼쪽 읽기 순서를 사용 하 여 표시 됩니다.  
   
-- TCIF_STATE는 `dwState` 유효 합니다.  
+   - TCIF_STATE는 `dwState` 유효 합니다.  
   
- `pszText`  
- 구조 탭에 대 한 정보를 포함 하는 경우에 탭 텍스트를 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다. 구조는 정보를 받은 경우이 멤버 탭 텍스트를 수신 하는 버퍼의 주소를 지정 합니다.  
+- `pszText`  
+
+   구조 탭에 대 한 정보를 포함 하는 경우에 탭 텍스트를 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다. 구조는 정보를 받은 경우이 멤버 탭 텍스트를 수신 하는 버퍼의 주소를 지정 합니다.  
   
- `cchTextMax`  
- 가리키는 버퍼의 크기 `pszText`합니다. 구조는 정보를 수신 하지 않는 경우이 멤버는 무시 됩니다.  
+- `cchTextMax`  
+
+   가리키는 버퍼의 크기 `pszText`합니다. 구조는 정보를 수신 하지 않는 경우이 멤버는 무시 됩니다.  
   
- `iImage`  
+- `iImage`  
  탭에 대 한 이미지가 없는 경우에 탭 컨트롤의 이미지 목록 또는-1 인덱스입니다.  
   
- lParam  
- 연결 탭을 사용 하 여 응용 프로그램 정의 데이터입니다. 응용 프로그램 구조를 정의 하며 대신 사용 하 여 4 바이트 이상의 탭당 응용 프로그램 정의 데이터의 경우는 `TCITEM` 구조입니다. 응용 프로그램 정의 구조체의 첫 번째 구성원 이어야 합니다는 [TCITEMHEADER](/windows/desktop/api/commctrl/ns-commctrl-tagtcitemheadera)구조입니다. `TCITEMHEADER` 구조는 동일 합니다 `TCITEM` 없이 구조체를 `lParam` 멤버. 구조의 크기와 크기 간의 차이 `TCITEMHEADER` 구조 탭당 추가 바이트의 수와 같아야 합니다.  
+- `lParam`  
+
+   연결 탭을 사용 하 여 응용 프로그램 정의 데이터입니다. 응용 프로그램 구조를 정의 하며 대신 사용 하 여 4 바이트 이상의 탭당 응용 프로그램 정의 데이터의 경우는 `TCITEM` 구조입니다. 응용 프로그램 정의 구조체의 첫 번째 구성원 이어야 합니다는 [TCITEMHEADER](/windows/desktop/api/commctrl/ns-commctrl-tagtcitemheadera)구조입니다. `TCITEMHEADER` 구조는 동일 합니다 `TCITEM` 없이 구조체를 `lParam` 멤버. 구조의 크기와 크기 간의 차이 `TCITEMHEADER` 구조 탭당 추가 바이트의 수와 같아야 합니다.  
   
 ### <a name="example"></a>예제  
  [!code-cpp[NVC_MFC_CTabCtrl#4](../../mfc/reference/codesnippet/cpp/ctabctrl-class_4.cpp)]  

@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce88913a29dd9ec3f9d5d2e78c3e52ad3ead54fd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1823e23f3afc432982d0d68eee3fe080fe52d719
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33280951"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045759"
 ---
 # <a name="compiler-warning-level-1-c4661"></a>컴파일러 경고(수준 1) C4661
-'identifier': 명시적 템플릿 인스턴스화 요청에 대해 제공 된 적합 한 정의가 없습니다  
-  
- 템플릿 클래스의 멤버 정의 되지 않았습니다.  
-  
-## <a name="example"></a>예제  
-  
-```  
-// C4661.cpp  
-// compile with: /W1 /LD  
-template<class T> class MyClass {  
-public:  
-   void i();   // declaration but not definition  
-};  
-template MyClass< int >;  // C4661  
+
+'identifier': 명시적 템플릿 인스턴스화 요청에 대 한 제공 된 적합 한 정의가 없습니다
+
+템플릿 클래스의 멤버 정의 되지 않았습니다.
+
+## <a name="example"></a>예제
+
+```
+// C4661.cpp
+// compile with: /W1 /LD
+template<class T> class MyClass {
+public:
+   void i();   // declaration but not definition
+};
+template MyClass< int >;  // C4661
 ```
