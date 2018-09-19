@@ -18,76 +18,80 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3702dcafbc93e34852d5d8fd4a0f1d3c222ea1a6
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 65c4638112d87b0544e9a6c61d839c7ad4664d33
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45706955"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46415163"
 ---
 # <a name="rdtscp"></a>__rdtscp
 
-**Microsoft 전용**  
-  
- 생성 합니다 `rdtscp` 명령 기록 `TSC_AUX[31:0`] 메모리를 64 비트 타임 스탬프 카운터 반환 (`TSC)` 결과입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-unsigned __int64 __rdtscp(  
-   unsigned int * Aux  
-);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
-*Aux*<br/>
-[out] 컴퓨터의 특정 레지스터의 내용을 포함 하는 위치에 대 한 포인터 `TSC_AUX[31:0]`합니다.  
-  
-## <a name="return-value"></a>반환 값  
- 64 비트 부호 없는 정수 틱 수입니다.  
-  
-## <a name="requirements"></a>요구 사항  
-  
-|내장 함수|아키텍처|  
-|---------------|------------------|  
-|`__rdtscp`|AMD NPT 제품군 0Fh 또는 이상 버전|  
-  
- **헤더 파일** \<intrin.h >  
-  
-## <a name="remarks"></a>설명  
- 이 내장 함수 생성을 `rdtscp` 명령입니다. 확인 하려면이 명령에 대 한 하드웨어 지원을 호출 합니다 `__cpuid` 포함 된 내장 함수 `InfoType=0x80000001` 27 많은 확인 및 `CPUInfo[3] (EDX)`합니다. 이 비트는 그렇지 않은 경우 명령 지원 되 면 1과 0입니다.  경우 코드를 실행 하면 사용 하 여이 내장 함수를 지원 하지 않는 하드웨어를 `rdtscp` 명령 결과 예측할 수 없습니다.  
-  
-> [!CAUTION]
->  와 달리 `rdtsc`, `rdtscp` 직렬화 명령; 컴파일러에서이 문제를 해결 하는 코드를 이동할 수는 그럼에도 불구 하 고 내장 함수입니다.  
-  
- 이전 버전의 x64 해석을 TSC 값의이 차세대 하드웨어는 다릅니다.  자세한 내용은 하드웨어 설명서를 참조 하세요.  
-  
- 값의 의미를 `TSC_AUX[31:0]` 운영 체제에 따라 달라 집니다.  
-  
-## <a name="example"></a>예제  
-  
-```  
-#include <intrin.h>   
-#include <stdio.h>  
-int main()   
-{  
- unsigned __int64 i;  
- unsigned int ui;  
- i = __rdtscp(&ui);  
- printf_s("%I64d ticks\n", i);  
- printf_s("TSC_AUX was %x\n", ui);  
-}  
-```  
-  
-```Output  
-3363423610155519 ticks  
-TSC_AUX was 0  
-```  
-  
-**Microsoft 전용 종료**  
+**Microsoft 전용**
 
-고급 마이크로 장치, inc 저작권 2007 All rights reserved. 고급 마이크로 장치, Inc. 사용 권한을 사용 하 여 재현  
-  
-## <a name="see-also"></a>참고 항목  
- [__rdtsc](../intrinsics/rdtsc.md)   
- [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)
+생성 합니다 `rdtscp` 명령 기록 `TSC_AUX[31:0`] 메모리를 64 비트 타임 스탬프 카운터 반환 (`TSC)` 결과입니다.
+
+## <a name="syntax"></a>구문
+
+```
+unsigned __int64 __rdtscp(
+   unsigned int * Aux
+);
+```
+
+#### <a name="parameters"></a>매개 변수
+
+*Aux*<br/>
+[out] 컴퓨터의 특정 레지스터의 내용을 포함 하는 위치에 대 한 포인터 `TSC_AUX[31:0]`합니다.
+
+## <a name="return-value"></a>반환 값
+
+64 비트 부호 없는 정수 틱 수입니다.
+
+## <a name="requirements"></a>요구 사항
+
+|내장 함수|아키텍처|
+|---------------|------------------|
+|`__rdtscp`|AMD NPT 제품군 0Fh 또는 이상 버전|
+
+**헤더 파일** \<intrin.h >
+
+## <a name="remarks"></a>설명
+
+이 내장 함수 생성을 `rdtscp` 명령입니다. 확인 하려면이 명령에 대 한 하드웨어 지원을 호출 합니다 `__cpuid` 포함 된 내장 함수 `InfoType=0x80000001` 27 많은 확인 및 `CPUInfo[3] (EDX)`합니다. 이 비트는 그렇지 않은 경우 명령 지원 되 면 1과 0입니다.  경우 코드를 실행 하면 사용 하 여이 내장 함수를 지원 하지 않는 하드웨어를 `rdtscp` 명령 결과 예측할 수 없습니다.
+
+> [!CAUTION]
+>  와 달리 `rdtsc`, `rdtscp` 직렬화 명령; 컴파일러에서이 문제를 해결 하는 코드를 이동할 수는 그럼에도 불구 하 고 내장 함수입니다.
+
+이전 버전의 x64 해석을 TSC 값의이 차세대 하드웨어는 다릅니다.  자세한 내용은 하드웨어 설명서를 참조 하세요.
+
+값의 의미를 `TSC_AUX[31:0]` 운영 체제에 따라 달라 집니다.
+
+## <a name="example"></a>예제
+
+```
+#include <intrin.h>
+#include <stdio.h>
+int main()
+{
+unsigned __int64 i;
+unsigned int ui;
+i = __rdtscp(&ui);
+printf_s("%I64d ticks\n", i);
+printf_s("TSC_AUX was %x\n", ui);
+}
+```
+
+```Output
+3363423610155519 ticks
+TSC_AUX was 0
+```
+
+**Microsoft 전용 종료**
+
+고급 마이크로 장치, inc 저작권 2007 All rights reserved. 고급 마이크로 장치, Inc. 사용 권한을 사용 하 여 재현
+
+## <a name="see-also"></a>참고 항목
+
+[__rdtsc](../intrinsics/rdtsc.md)<br/>
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

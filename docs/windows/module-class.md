@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2ae36838a1375b541951122bb00b522cf320650d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a90a7c82706adead4379152b78d36e4dd4b91673
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599757"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46416229"
 ---
 # <a name="module-class"></a>Module 클래스
 
@@ -43,14 +43,14 @@ class Module<OutOfProc> : public Module<InProc>;
 
 ### <a name="parameters"></a>매개 변수
 
-*moduleType*  
+*moduleType*<br/>
 하나 이상의 조합 [ModuleType](../windows/moduletype-enumeration.md) 열거형 값입니다.
 
 ## <a name="members"></a>멤버
 
 ### <a name="protected-classes"></a>보호 된 클래스
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[Module::GenericReleaseNotifier 클래스](../windows/module-genericreleasenotifier-class.md)|현재 모듈의 마지막 개체가 해제될 때 이벤트 처리기를 호출합니다. 이벤트 처리기는 람다, 함수 또는 함수 포인터에 의해 지정됩니다.|
 |[Module::MethodReleaseNotifier 클래스](../windows/module-methodreleasenotifier-class.md)|현재 모듈의 마지막 개체가 해제될 때 이벤트 처리기를 호출합니다. 이벤트 처리기 개체와 해당 포인터를-a-메서드 멤버 지정 됩니다.|
@@ -95,7 +95,7 @@ class Module<OutOfProc> : public Module<InProc>;
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[Module::objectCount_ 데이터 멤버](../windows/module-objectcount-data-member.md)|얼마나 많은 클래스가 사용 하 여 만든 추적 합니다는 [있도록](../windows/make-function.md) 함수입니다.|
 |[Module::releaseNotifier_ 데이터 멤버](../windows/module-releasenotifier-data-member.md)|에 대 한 포인터를 보유 한 `ReleaseNotifier` 개체입니다.|

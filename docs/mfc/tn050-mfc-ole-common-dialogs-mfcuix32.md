@@ -1,5 +1,5 @@
 ---
-title: 'TN050: MFC OLE 일반 대화 상자 (MFCUIx32) | Microsoft Docs'
+title: 'TN050: MFC-OLE 일반 대화 상자 (MFCUIx32) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,17 +17,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4307c1a28ffcc6de7b4607f22b7be65935c54f4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bb48bca667de56a05a38843f339c11dd7e2a74b4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33380905"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46410717"
 ---
 # <a name="tn050-mfcole-common-dialogs-mfcuix32"></a>TN050: MFC/OLE 일반 대화 상자(MFCUIx32)
-이 노트는 몇 가지 문제와 OLE 일반 대화 상자 제공 되 고 MFC에서 사용의 미래에 원래 다룹니다. OLE 일반 대화 상자는 이제 (OLEDLG 시스템에 기본 제공 구성 요소로 제공. DLL)와 제품 설명서에 문서화 되어 완벽 하 게 됩니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)   
- [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
+
+이 원래 몇 가지 문제와 OLE 일반 대화 상자를 제공 및 MFC에서 사용 하는의 미래를 설명 합니다. OLE 일반 대화 상자는 이제 (OLEDLG 체제에 기본 제공 구성 요소로 제공 됩니다. DLL)는 완벽 하 게 제품 설명서에 설명 되어 있습니다.
+
+## <a name="see-also"></a>참고 항목
+
+[번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
+[범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
 

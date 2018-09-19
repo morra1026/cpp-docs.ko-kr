@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6a92e7904b3b42422bebf5a80e0f1b03dd818f86
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 2e2939c7f0a68401b4c1a8c43b5c6335a0acfcb3
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314585"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46403945"
 ---
 # <a name="creating-a-new-custom-or-data-resource-c"></a>새 사용자 지정 또는 데이터 리소스 (c + +) 만들기
 
@@ -40,9 +40,9 @@ ms.locfileid: "44314585"
 
 3. 에 **컴파일 시간 지시문** 상자에 입력을 `#include` 문을 사용자 지정 리소스를 포함 하는 파일의 이름을 제공 하는 합니다. 예를 들어:
 
-```cpp
+    ```cpp
     #include mydata.rc
- ```
+    ```
 
    입력한 구문 및 맞춤법이 정확한지 확인합니다. **컴파일 타임 지시문** 상자의 내용은 입력한 대로 정확하게 리소스 스크립트 파일에 삽입됩니다.
 

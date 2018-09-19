@@ -22,17 +22,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f428242ac84adaf36ea0263f8e193dfeca7d0609
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9ee7b6400dcd5c91d054b31153c21008d5302bd0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341400"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46401266"
 ---
 # <a name="classes-related-to-rich-edit-controls"></a>Rich Edit 컨트롤 관련 클래스
-[CRichEditView](../mfc/reference/cricheditview-class.md), [CRichEditDoc](../mfc/reference/cricheditdoc-class.md), 및 [CRichEditCntrItem](../mfc/reference/cricheditcntritem-class.md) rich edit 컨트롤의 기능을 제공 하는 클래스 ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) MFC의 문서/뷰 아키텍처의 컨텍스트에서 합니다. `CRichEditView` 텍스트 및 텍스트의 서식 특성을 유지 관리합니다. `CRichEditDoc` 보기에 있는 OLE 클라이언트 항목의 목록을 유지 관리 합니다. `CRichEditCntrItem` 컨테이너 쪽 OLE 클라이언트 항목에 대 한 액세스를 제공합니다. 내용을 수정 하는 `CRichEditView`를 사용 하 여 [CRichEditView::GetRichEditCtrl](../mfc/reference/cricheditview-class.md#getricheditctrl) 서식 있는 편집 컨트롤을 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [CRichEditCtrl 사용](../mfc/using-cricheditctrl.md)   
- [컨트롤](../mfc/controls-mfc.md)
+
+[CRichEditView](../mfc/reference/cricheditview-class.md)하십시오 [CRichEditDoc](../mfc/reference/cricheditdoc-class.md), 및 [CRichEditCntrItem](../mfc/reference/cricheditcntritem-class.md) rich edit 컨트롤의 기능을 제공 하는 클래스 ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) MFC의 문서/뷰 아키텍처의 컨텍스트에서 합니다. `CRichEditView` 텍스트 및 텍스트의 서식 특성을 유지 관리합니다. `CRichEditDoc` 보기에 있는 OLE 클라이언트 항목 목록을 유지 관리 합니다. `CRichEditCntrItem` 컨테이너 쪽 OLE 클라이언트 항목에 대 한 액세스를 제공합니다. 내용을 수정 하는 `CRichEditView`를 사용 하 여 [CRichEditView::GetRichEditCtrl](../mfc/reference/cricheditview-class.md#getricheditctrl) rich edit 컨트롤 내부를 액세스할 수 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[CRichEditCtrl 사용](../mfc/using-cricheditctrl.md)<br/>
+[컨트롤](../mfc/controls-mfc.md)
 

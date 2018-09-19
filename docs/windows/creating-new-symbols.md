@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 91d27752af42b861c0374e9d8881db9e121fd5fd
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 156f5979cb27b18247c63f177fa036aa3eeabb79
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315329"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46412121"
 ---
 # <a name="creating-new-symbols"></a>새 기호 만들기
 
@@ -53,5 +53,5 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[리소스 기호 보기](../windows/viewing-resource-symbols.md)  
+[리소스 기호 보기](../windows/viewing-resource-symbols.md)<br/>
 [미리 정의된 기호 ID](../windows/predefined-symbol-ids.md)

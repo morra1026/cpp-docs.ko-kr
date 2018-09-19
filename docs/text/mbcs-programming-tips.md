@@ -19,29 +19,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d5beaab3fe1642b3988e9d0dcbf258eab02e26b7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ac4ed378640942dbe33490d618cec7289125b0c8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610311"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46418790"
 ---
 # <a name="mbcs-programming-tips"></a>MBCS 프로그래밍 팁
-새로운 개발에서 최종 사용자가 볼 수 있는 모든 문자열에 대해 유니코드 문자 인코딩을 사용해야 합니다. MBCS는 유니코드로 대체된 레거시 기술입니다. 이 단원에서는 MBCS를 사용하고 유니코드로의 변환이 실용적이지 않은 기존 프로그램을 유지 관리해야 하는 개발자에 대한 팁을 제공합니다. 권장 하는 MFC 응용 프로그램 및 MFC 하지 않고 작성 된 응용 프로그램에 적용 됩니다. 다음과 같은 내용을 다룹니다.  
-  
--   [일반적인 MBCS 프로그래밍 팁](../text/general-mbcs-programming-advice.md)  
-  
--   [포인터 증가 및 감소](../text/incrementing-and-decrementing-pointers.md)  
-  
--   [바이트 인덱스](../text/byte-indices.md)  
-  
--   [문자열의 마지막 문자](../text/last-character-in-a-string.md)  
-  
--   [문자 할당](../text/character-assignment.md)  
-  
--   [문자 비교](../text/character-comparison.md)  
-  
--   [버퍼 오버플로](../text/buffer-overflow.md)  
-  
-## <a name="see-also"></a>참고 항목  
- [MBCS(멀티바이트 문자 집합) 지원](../text/support-for-multibyte-character-sets-mbcss.md)
+
+새로운 개발에서 최종 사용자가 볼 수 있는 모든 문자열에 대해 유니코드 문자 인코딩을 사용해야 합니다. MBCS는 유니코드로 대체된 레거시 기술입니다. 이 단원에서는 MBCS를 사용하고 유니코드로의 변환이 실용적이지 않은 기존 프로그램을 유지 관리해야 하는 개발자에 대한 팁을 제공합니다. 권장 하는 MFC 응용 프로그램 및 MFC 하지 않고 작성 된 응용 프로그램에 적용 됩니다. 다음과 같은 내용을 다룹니다.
+
+- [일반적인 MBCS 프로그래밍 팁](../text/general-mbcs-programming-advice.md)
+
+- [포인터 증가 및 감소](../text/incrementing-and-decrementing-pointers.md)
+
+- [바이트 인덱스](../text/byte-indices.md)
+
+- [문자열의 마지막 문자](../text/last-character-in-a-string.md)
+
+- [문자 할당](../text/character-assignment.md)
+
+- [문자 비교](../text/character-comparison.md)
+
+- [버퍼 오버플로](../text/buffer-overflow.md)
+
+## <a name="see-also"></a>참고 항목
+
+[MBCS(멀티바이트 문자 집합) 지원](../text/support-for-multibyte-character-sets-mbcss.md)

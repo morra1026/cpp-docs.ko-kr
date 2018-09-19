@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8ecc04f0e8bda3045dcad141fa3fe467039c3f23
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8bd2a81c10855dfe1d409b34612956616018dab7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605562"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46413460"
 ---
 # <a name="setting-the-size-of-the-combo-box-and-its-drop-down-list"></a>콤보 상자 및 드롭다운 목록의 크기 설정
 
@@ -61,6 +61,6 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[콤보 상자 컨트롤에 값 추가](../windows/adding-values-to-a-combo-box-control.md)  
-[대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)  
+[콤보 상자 컨트롤에 값 추가](../windows/adding-values-to-a-combo-box-control.md)<br/>
+[대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)

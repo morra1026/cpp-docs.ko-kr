@@ -22,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dbfcedd2bc17e21b94de46c63edd95bf58f576a7
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 836017dcec969db85a0725a49193d7b8e8a88875
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714456"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46402852"
 ---
 # <a name="arrays-c-component-extensions"></a>배열(C++ 구성 요소 확장명)
 
@@ -65,16 +65,16 @@ ms.locfileid: "45714456"
 *한정자*<br/>
 (선택 사항) 이러한 저장소 클래스 지정자 중 하나 이상이: [변경할 수 있는](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md)를 [const](../cpp/const-cpp.md)를 [extern](../cpp/using-extern-to-specify-linkage.md), [정적](../cpp/static-members-cpp.md).
 
-*배열 형식*  
+*배열 형식*<br/>
 배열 변수의 형식입니다. 올바른 유형은 Windows 런타임 클래스 및 기본 형식, ref 클래스 및 구조체, 값 클래스 및 구조체 및 네이티브 포인터 (`type*`).
 
 *rank*<br/>
 (선택 사항) 배열의 차원 수입니다. 1 이어야 합니다.
 
-*identifier*  
+*identifier*<br/>
 배열 변수의 이름입니다.
 
-*초기화 유형*  
+*초기화 유형*<br/>
 배열을 초기화 하는 값의 형식입니다. 일반적으로 *배열 형식* 하 고 *초기화 형식* 동일한 형식이 있습니다. 그러나 형식에서 변환 하는 경우에 다 수 *초기화 유형* 하 *배열 형식*-예를 들어 경우 *초기화 형식* 에서파생됩니다*배열 형식*합니다.
 
 *목록 초기화*<br/>
@@ -121,19 +121,19 @@ int main() {
 *한정자*<br/>
 (선택 사항) 이러한 저장소 클래스 지정자 중 하나 이상이: [변경할 수 있는](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md)를 [const](../cpp/const-cpp.md)를 [extern](../cpp/using-extern-to-specify-linkage.md), [정적](../cpp/static-members-cpp.md).
 
-*배열 형식*  
+*배열 형식*<br/>
 배열 변수의 형식입니다. 올바른 유형은 Windows 런타임 클래스 및 기본 형식, ref 클래스 및 구조체, 값 클래스 및 구조체를 네이티브 포인터 (`type*`), 및 네이티브 POD (일반 이전 데이터) 형식입니다.
 
 *rank*<br/>
 (선택 사항) 배열의 차원 수입니다. 기본값은 1입니다. 최대값은 32입니다. 배열의 각 차원 배열입니다.
 
-*identifier*  
+*identifier*<br/>
 배열 변수의 이름입니다.
 
-*초기화 유형*  
+*초기화 유형*<br/>
 배열을 초기화 하는 값의 형식입니다. 일반적으로 *배열 형식* 하 고 *초기화 형식* 동일한 형식이 있습니다. 그러나 형식에서 변환 하는 경우에 다 수 *초기화 유형* 하 *배열 형식*-예를 들어 경우 *초기화 형식* 에서파생됩니다*배열 형식*합니다.
 
-*순위 크기 목록*  
+*순위 크기 목록*<br/>
 배열의 각 차원 크기의 쉼표로 구분 된 목록입니다. 또는 경우는 *초기화 목록* 매개 변수에 지정 된 경우 컴파일러는 각 차원 크기를 추론할 수 있습니다 하 고 *차수 크기 목록* 생략할 수 있습니다.
 
 *목록 초기화*<br/>

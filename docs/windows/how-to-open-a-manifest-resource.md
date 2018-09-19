@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7bb55c18bf577e8ef7bbf1f9504af1df0e1ebe7f
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 0825e34515a458d49b8353f3053654094d8b9526
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315524"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46407285"
 ---
 # <a name="how-to-open-a-manifest-resource"></a>방법: 매니페스트 리소스 열기
 
@@ -49,6 +49,6 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[매니페스트 리소스](../windows/manifest-resources.md)  
-[컨트롤](../mfc/controls-mfc.md)  
+[매니페스트 리소스](../windows/manifest-resources.md)<br/>
+[컨트롤](../mfc/controls-mfc.md)<br/>
 [리소스 파일 작업](../windows/working-with-resource-files.md)
