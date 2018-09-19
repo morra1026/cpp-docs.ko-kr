@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f5d78ea68606513b2fe8491137e29fb45afb36e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d3069762810aebae516d6d02ce69da215a2847c1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761500"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038940"
 ---
 # <a name="event-handling-and-atl"></a>이벤트 처리 및 ATL
 
@@ -29,24 +29,24 @@ ms.locfileid: "43761500"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[이벤트 처리 원리](../atl/event-handling-principles.md)  
+[이벤트 처리 원리](../atl/event-handling-principles.md)<br/>
 모든 이벤트 처리 하는 일반적인 단계를 설명합니다.
 
-[이벤트 처리 인터페이스 구현](../atl/implementing-the-event-handling-interface.md)  
+[이벤트 처리 인터페이스 구현](../atl/implementing-the-event-handling-interface.md)<br/>
 이벤트 인터페이스를 구현 하는 데 클래스를 설명 합니다.
 
-[IDispEventImpl 사용](../atl/using-idispeventimpl.md)  
+[IDispEventImpl 사용](../atl/using-idispeventimpl.md)<br/>
 사용 하는 단계를 나열 `IDispEventImpl` 및 코드 샘플을 보여 줍니다.
 
-[IDispEventSimpleImpl 사용](../atl/using-idispeventsimpleimpl.md)  
+[IDispEventSimpleImpl 사용](../atl/using-idispeventsimpleimpl.md)<br/>
 사용 하는 단계를 나열 `IDispEventSimpleImpl` 및 코드 샘플을 보여 줍니다.
 
-[ATL 이벤트 처리 요약](../atl/atl-event-handling-summary.md)  
+[ATL 이벤트 처리 요약](../atl/atl-event-handling-summary.md)<br/>
 싱 및 바이 ATL.를 사용 하 여 이벤트 소스 및 이벤트 인터페이스를 구현 하기 위한 주요 방법으로 테이블을 사용 하 여 요약
 
 ## <a name="related-sections"></a>관련 단원
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 액티브 템플릿 라이브러리를 사용하여 프로그래밍하는 방법에 대한 개념 항목의 링크를 제공합니다.
 
 ## <a name="see-also"></a>참고 항목

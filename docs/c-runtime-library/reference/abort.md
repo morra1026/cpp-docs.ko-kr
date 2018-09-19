@@ -32,12 +32,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc7aefdac322ca8b34bccd2e377534ed1eca47e8
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: d55f3066f2c42737170bdd8d87df95a8ad4a22d0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39402714"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078090"
 ---
 # <a name="abort"></a>abort
 
@@ -86,7 +86,7 @@ CRT 디버깅에 대한 자세한 내용은 [CRT 디버깅 기술](/visualstudio
 |-------------|---------------------|
 |**abort**|\<process.h> 또는 \<stdlib.h>|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 프로그램은 파일을 열려고 시도하고 실패하는 경우 중단합니다.
 
@@ -124,13 +124,13 @@ File could not be opened: No such file or directory
 
 ## <a name="see-also"></a>참고자료
 
-[abort 사용](../../cpp/using-abort.md)  
-[abort 함수](../../c-language/abort-function-c.md)  
-[프로세스 및 환경 제어](../../c-runtime-library/process-and-environment-control.md)  
-[_exec, _wexec 함수](../../c-runtime-library/exec-wexec-functions.md)  
-[exit, _Exit, _exit](exit-exit-exit.md)  
-[raise](raise.md)  
-[signal](signal.md)  
-[_spawn, _wspawn 함수](../../c-runtime-library/spawn-wspawn-functions.md)  
-[_DEBUG](../../c-runtime-library/debug.md)  
-[_set_abort_behavior](set-abort-behavior.md)  
+[abort 사용](../../cpp/using-abort.md)<br/>
+[abort 함수](../../c-language/abort-function-c.md)<br/>
+[프로세스 및 환경 제어](../../c-runtime-library/process-and-environment-control.md)<br/>
+[_exec, _wexec 함수](../../c-runtime-library/exec-wexec-functions.md)<br/>
+[exit, _Exit, _exit](exit-exit-exit.md)<br/>
+[raise](raise.md)<br/>
+[signal](signal.md)<br/>
+[_spawn, _wspawn 함수](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[_DEBUG](../../c-runtime-library/debug.md)<br/>
+[_set_abort_behavior](set-abort-behavior.md)

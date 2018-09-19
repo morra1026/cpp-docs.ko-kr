@@ -23,14 +23,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d934e9ae5494b934acb0779665ba4471dfc4c2b7
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 7f148176b8d5d0c85f3e899cfd117bbb381794b0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42571726"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047397"
 ---
 # <a name="idbcreatesessionimpl-class"></a>IDBCreateSessionImpl 클래스
+
 에 대 한 구현을 제공 합니다 [IDBCreateSession](/previous-versions/windows/desktop/ms724076\(v=vs.85\)) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
@@ -42,14 +43,16 @@ class ATL_NO_VTABLE IDBCreateSessionImpl
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- *T*  
- 파생 된 클래스  
+
+*T*<br/>
+파생 된 클래스  
   
- *SessionClass*  
- 세션 개체입니다.  
+*SessionClass*<br/>
+세션 개체입니다.  
 
 ## <a name="requirements"></a>요구 사항  
- **헤더:** atldb.h 
+
+**헤더:** atldb.h 
   
 ## <a name="members"></a>멤버  
   
@@ -60,9 +63,11 @@ class ATL_NO_VTABLE IDBCreateSessionImpl
 |[CreateSession](#createsession)|데이터 원본 개체에서 새 세션을 만들고 새로 만들어진된 세션에서 요청된 된 인터페이스를 반환 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 데이터 원본 개체에는 필수 인터페이스입니다.  
+
+데이터 원본 개체에는 필수 인터페이스입니다.  
 
 ## <a name="createsession"></a> Idbcreatesessionimpl:: Createsession
+
 데이터 원본 개체에서 새 세션을 만들고 새로 만들어진된 세션에서 요청된 된 인터페이스를 반환 합니다.  
   
 ### <a name="syntax"></a>구문  
@@ -74,8 +79,10 @@ STDMETHOD(CreateSession)(IUnknown * pUnkOuter,
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 참조 [idbcreatesession:: Createsession](/previous-versions/windows/desktop/ms714942\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.   
+
+참조 [idbcreatesession:: Createsession](/previous-versions/windows/desktop/ms714942\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.   
   
 ## <a name="see-also"></a>참고 항목  
- [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

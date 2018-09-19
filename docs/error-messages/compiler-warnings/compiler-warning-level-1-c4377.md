@@ -16,26 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef049f85cd17bfeaba243b84da9fca93ae4036b0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 613ebe183b61c6b9894ed3b726f90061e2b24ef6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33274783"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047176"
 ---
 # <a name="compiler-warning-level-1-c4377"></a>컴파일러 경고(수준 1) C4377
-네이티브 형식은 기본적으로 private입니다. -d1PrivateNativeTypes는 사용 되지 않습니다.  
-  
- 어셈블리의 네이티브 형식은 이전 릴리스에서 문서화 되지 않은, 내부 컴파일러 옵션 고, 기본적으로 public 인 (**/d1PrivateNativeTypes**) 비공개로 설정 하는 해당 하는 데 사용 되었습니다.  
-  
- 네이티브 모든 형식 및 CLR 어셈블리의 기본값은 하므로 **/d1PrivateNativeTypes** 더 이상 필요 합니다.  
-  
-## <a name="example"></a>예제  
- 다음 샘플에서는 C4377 오류가 발생 합니다.  
-  
-```  
-// C4377.cpp  
-// compile with: /clr /d1PrivateNativeTypes /W1  
-// C4377 warning expected  
-int main() {}  
+
+네이티브 형식은 기본적으로 private입니다. -d1PrivateNativeTypes는 사용 되지 않습니다.
+
+어셈블리의 네이티브 형식 이전 릴리스에서 문서화 되지 않은 내부 컴파일러 옵션을 기본적으로 공용 되었습니다 (**/d1PrivateNativeTypes**) 비공개로 설정 하는 해당 하는 데 사용 되었습니다.
+
+모든 형식에 네이티브 및 CLR 어셈블리에서 기본적으로 private 됩니다 있도록 **/d1PrivateNativeTypes** 더 이상 필요 합니다.
+
+## <a name="example"></a>예제
+
+다음 샘플에서는 C4377 오류가 발생 합니다.
+
+```
+// C4377.cpp
+// compile with: /clr /d1PrivateNativeTypes /W1
+// C4377 warning expected
+int main() {}
 ```

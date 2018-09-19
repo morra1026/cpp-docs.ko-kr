@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1061b105b7fd1e344223da3850275910c164774b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3b85d157cd6124bb0ef6e6167a415c018e14b046
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761854"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040442"
 ---
 # <a name="object-map-macros"></a>개체 맵 매크로
 
@@ -47,7 +47,7 @@ DECLARE_OBJECT_DESCRIPTION( x )
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 [in] 클래스 개체의 설명입니다.
 
 ### <a name="remarks"></a>설명
@@ -74,10 +74,10 @@ OBJECT_ENTRY_AUTO( clsid, class )
 
 ### <a name="parameters"></a>매개 변수
 
-*clsid*  
+*clsid*<br/>
 [in] 라는 c + + 클래스에서 구현 되는 COM 클래스의 CLSID *클래스*합니다.
 
-*class*  
+*class*<br/>
 [in] 가 나타내는 COM 클래스를 구현 하는 c + + 클래스의 이름을 *clsid*합니다.
 
 ### <a name="remarks"></a>설명
@@ -106,10 +106,10 @@ OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO( clsid, class )
 
 ### <a name="parameters"></a>매개 변수
 
-*clsid*  
+*clsid*<br/>
 [in] 라는 c + + 클래스에서 구현 되는 COM 클래스의 CLSID *클래스*합니다.
 
-*class*  
+*class*<br/>
 [in] 가 나타내는 COM 클래스를 구현 하는 c + + 클래스의 이름을 *clsid*합니다.
 
 ### <a name="remarks"></a>설명

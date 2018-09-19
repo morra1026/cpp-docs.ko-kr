@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f87f5b9f8295b49b9c1c4bec45cad96e3dec0872
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f4c035fad1fd675fd36fef73d405c63aab3be739
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760060"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040806"
 ---
 # <a name="catlcommodule-class"></a>CAtlComModule 클래스
 
@@ -107,10 +107,10 @@ HRESULT RegisterServer(BOOL bRegTypeLib = FALSE, const CLSID* pCLSID = NULL);
 
 ### <a name="parameters"></a>매개 변수
 
-*bRegTypeLib*  
+*bRegTypeLib*<br/>
 TRUE 이면 형식 라이브러리 등록 됩니다. 기본값은 FALSE입니다.
 
-*하면*  
+*하면*<br/>
 등록할 개체의 CLSID 가리킵니다. NULL (기본값), 개체 맵의 모든 개체를 등록할 경우.
 
 ### <a name="return-value"></a>반환 값
@@ -132,7 +132,7 @@ HRESULT RegisterTypeLib();
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszIndex*  
+*lpszIndex*<br/>
 형식에서 문자열 "\\\N", 여기서 N은 TYPELIB 리소스의 정수 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -155,10 +155,10 @@ HRESULT UnregisterServer(
 
 ### <a name="parameters"></a>매개 변수
 
-*bRegTypeLib*  
+*bRegTypeLib*<br/>
 형식 라이브러리 등록을 취소할 이면 TRUE입니다. 기본값은 FALSE입니다.
 
-*하면*  
+*하면*<br/>
 등록을 취소할 개체의 CLSID 가리킵니다. 경우 NULL (기본값), 개체 맵의 모든 개체를 등록 취소 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -180,7 +180,7 @@ HRESULT UnRegisterTypeLib();
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszIndex*  
+*lpszIndex*<br/>
 형식에서 문자열 "\\\N", 여기서 N은 TYPELIB 리소스의 정수 인덱스입니다.
 
 ### <a name="remarks"></a>설명
@@ -193,5 +193,5 @@ HRESULT UnRegisterTypeLib();
 
 ## <a name="see-also"></a>참고 항목
 
-[_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module)   
+[_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

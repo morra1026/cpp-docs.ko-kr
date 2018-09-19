@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 122a60496a92b3844f4e439e40650c429035dc33
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: d5bda0dd4b756ba9228fac8cc5b0de70b6d71f7a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689677"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053650"
 ---
 # <a name="cancellationtokensource-class"></a>cancellation_token_source 클래스
 `cancellation_token_source` 클래스는 일부 취소 가능한 작업을 취소하는 기능을 나타냅니다.  
@@ -97,7 +97,8 @@ cancellation_token_source(cancellation_token_source&& _Src);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Src`  
+*_Src*<br/>
+개체를 복사 하거나 이동 합니다.  
   
 ##  <a name="create_linked_source"></a> create_linked_source 
 
@@ -112,15 +113,17 @@ static cancellation_token_source create_linked_source(_Iter _Begin, _Iter _End);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Iter`  
- `_Src`  
- 취소 시 반환된 토큰 소스가 취소되는 토큰입니다. 반환된 토큰 소스 역시 이 매개 변수에 포함된 소스와 별도로 취소될 수 있습니다.  
+*_Iter*<br/>
+반복기 형식입니다.
+
+*_Src*<br/>
+취소 시 반환된 토큰 소스가 취소되는 토큰입니다. 반환된 토큰 소스 역시 이 매개 변수에 포함된 소스와 별도로 취소될 수 있습니다.  
   
- `_Begin`  
- 해당 되는 c + + 표준 라이브러리 반복기 토큰의 범위 시작 부분에 취소에 대 한 수신 대기 하도록 합니다.  
+*시작 (_b)*<br/>
+해당 되는 c + + 표준 라이브러리 반복기 토큰 범위의 시작 부분에 취소에 대 한 수신 대기 하도록 합니다.  
   
- `_End`  
- C + + 표준 라이브러리 반복기 토큰의 범위 끝에 해당의 취소에 대 한 수신 대기 하도록 합니다.  
+*(_E)*<br/>
+해당 되는 c + + 표준 라이브러리 반복기 토큰 범위의 끝에 취소에 대 한 수신 대기 하도록 합니다.  
   
 ### <a name="return-value"></a>반환 값  
  `cancellation_token_source` 매개 변수에서 제공된 토큰이 취소된 경우 취소되는 `_Src`입니다.  
@@ -143,7 +146,8 @@ bool operator!= (const cancellation_token_source& _Src) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Src`  
+*_Src*<br/>
+피연산자입니다.
   
 ### <a name="return-value"></a>반환 값  
   
@@ -156,8 +160,9 @@ cancellation_token_source& operator= (cancellation_token_source&& _Src);
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Src`  
-  
+*_Src*<br/>
+피연산자입니다.
+
 ### <a name="return-value"></a>반환 값  
   
 ##  <a name="operator_eq_eq"></a> 연산자 = = 
@@ -167,7 +172,8 @@ bool operator== (const cancellation_token_source& _Src) const;
 ```  
   
 ### <a name="parameters"></a>매개 변수  
- `_Src`  
+*_Src*<br/>
+피연산자입니다.
   
 ### <a name="return-value"></a>반환 값  
   

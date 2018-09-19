@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 96ab91d64806e7d4ca28bf43e812640790b78e87
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e2f293cefdc37c4adb2882f52d6676dcd912cfef
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245014"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047540"
 ---
 # <a name="compiler-error-c2877"></a>컴파일러 오류 C2877
-'symbol'를 'class'에서 액세스할 수 없는 경우  
-  
- 기본 클래스에서 파생 된 모든 멤버는 파생된 클래스에서 액세스할 수 있어야 합니다.  
-  
- 다음 샘플에서는 C2877 오류가 생성 됩니다.  
-  
-```  
-// C2877.cpp  
-// compile with: /c  
-class A {  
-private:  
-   int a;  
-};  
-  
-class B : public A {  
-   using A::a;   // C2877  
-};  
+
+'symbol'를 'class'에서 액세스할 수 없는 경우
+
+기본 클래스에서 파생 된 모든 멤버는 파생된 클래스에서 액세스할 수 있어야 합니다.
+
+다음 샘플에서는 C2877 오류가 생성 됩니다.
+
+```
+// C2877.cpp
+// compile with: /c
+class A {
+private:
+   int a;
+};
+
+class B : public A {
+   using A::a;   // C2877
+};
 ```

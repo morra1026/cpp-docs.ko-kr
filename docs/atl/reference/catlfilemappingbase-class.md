@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e272c9674270c1c600fee697dd77d050d6adb4e0
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 79cace12447eccb9ac7dc560b6add45bd0dc81c5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759831"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045083"
 ---
 # <a name="catlfilemappingbase-class"></a>CAtlFileMappingBase 클래스
 
@@ -89,13 +89,13 @@ class CAtlFileMappingBase
 생성자입니다.
 
 ```
-CAtlFileMappingBase(CAtlFileMappingBase& orig);  
+CAtlFileMappingBase(CAtlFileMappingBase& orig);
 CAtlFileMappingBase() throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*orig*  
+*orig*<br/>
 새 개체 만들기를 복사할 원본 파일 매핑 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -128,7 +128,7 @@ HRESULT CopyFrom(CAtlFileMappingBase& orig) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*orig*  
+*orig*<br/>
 복사할 원본 파일 매핑 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -190,19 +190,19 @@ HRESULT MapFile(
 
 ### <a name="parameters"></a>매개 변수
 
-*hFile*  
+*hFile*<br/>
 매핑 개체를 만드는 데 사용할 파일에 대 한 핸들입니다. *hFile* 유효 해야 하며 INVALID_HANDLE_VALUE로 설정할 수 없습니다.
 
-*nMappingSize*  
+*nMappingSize*<br/>
 매핑 크기입니다. 파일 매핑 개체의 최대 크기는 구분 파일의 현재 크기와 같은 0 인 경우 *hFile 합니다.*
 
-*nOffset*  
+*nOffset*<br/>
 시작 하려면 매핑 인 파일 오프셋입니다. 오프셋된 값을 시스템의 메모리 할당 세분성의 배수 여야 합니다.
 
-*dwMappingProtection*  
+*dwMappingProtection*<br/>
 파일을 매핑할 때 파일 보기에 대 한 필요한 보호 합니다. 참조 *flProtect* 에 [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) Windows SDK에 있습니다.
 
-*dwViewDesiredAccess*  
+*dwViewDesiredAccess*<br/>
 파일 보기 및 따라서 파일에서 매핑된 페이지 보호에 대 한 액세스 형식을 지정 합니다. 참조 *dwDesiredAccess* 에 [mapviewoffileex가](https://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -233,22 +233,22 @@ HRESULT MapSharedMem(
 
 ### <a name="parameters"></a>매개 변수
 
-*nMappingSize*  
+*nMappingSize*<br/>
 매핑 크기입니다. 파일 매핑 개체의 최대 크기는 식별 되는 파일 매핑 개체의 현재 크기와 같은 0 인 경우 *szName*합니다.
 
-*szName*  
+*szName*<br/>
 매핑 개체의 이름입니다.
 
-*pbAlreadyExisted*  
+*pbAlreadyExisted*<br/>
 가 있으면 TRUE로 설정 된 매핑 개체 이미 나타내는 부울 값을 가리키는 존재 합니다.
 
-*lpsa*  
+*lpsa*<br/>
 에 대 한 포인터를 `SECURITY_ATTRIBUTES` 반환된 된 핸들이 자식 프로세스로 상속 될 수 있는지 여부를 결정 하는 구조체. 참조 *lpAttributes* 에 [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) Windows SDK에 있습니다.
 
-*dwMappingProtection*  
+*dwMappingProtection*<br/>
 파일을 매핑할 때 파일 보기의 경우 필요한 보호 합니다. 참조 *flProtect* 에서 `CreateFileMapping` Windows SDK에 있습니다.
 
-*dwViewDesiredAccess*  
+*dwViewDesiredAccess*<br/>
 파일 보기 및 따라서 파일에서 매핑된 페이지 보호에 대 한 액세스 형식을 지정 합니다. 참조 *dwDesiredAccess* 에 [mapviewoffileex가](https://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -273,16 +273,16 @@ HRESULT OpenMapping(
 
 ### <a name="parameters"></a>매개 변수
 
-*szName*  
+*szName*<br/>
 매핑 개체의 이름입니다. 이 이름으로 파일 매핑 개체에 열린 핸들이 있고 매핑 개체의 보안 설명자를 사용 하 여 충돌 하지 않는 경우는 *dwViewDesiredAccess* 매개 변수 열기 작업이 성공 합니다.
 
-*nMappingSize*  
+*nMappingSize*<br/>
 매핑 크기입니다. 파일 매핑 개체의 최대 크기는 식별 되는 파일 매핑 개체의 현재 크기와 같은 0 인 경우 *szName*합니다.
 
-*nOffset*  
+*nOffset*<br/>
 시작 하려면 매핑 인 파일 오프셋입니다. 오프셋된 값을 시스템의 메모리 할당 세분성의 배수 여야 합니다.
 
-*dwViewDesiredAccess*  
+*dwViewDesiredAccess*<br/>
 파일 보기 및 따라서 파일에서 매핑된 페이지 보호에 대 한 액세스 형식을 지정 합니다. 참조 *dwDesiredAccess* 에 [mapviewoffileex가](https://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -303,7 +303,7 @@ CAtlFileMappingBase& operator=(CAtlFileMappingBase& orig);
 
 ### <a name="parameters"></a>매개 변수
 
-*orig*  
+*orig*<br/>
 현재 파일 매핑 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -328,5 +328,5 @@ HRESULT Unmap() throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[CAtlFileMapping 클래스](../../atl/reference/catlfilemapping-class.md)   
+[CAtlFileMapping 클래스](../../atl/reference/catlfilemapping-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)
