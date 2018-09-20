@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 83ff74a460c7cb34a50d0fbdf338eccc3da27f98
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a519d9b978f5b48377b1a85d52274cba35c9d075
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197441"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46401812"
 ---
 # <a name="cinternetsession-class"></a>CInternetSession 클래스
 
@@ -115,7 +115,7 @@ class CInternetSession : public CObject
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
-[CObject](../../mfc/reference/cobject-class.md)  
+[CObject](../../mfc/reference/cobject-class.md)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;`CInternetSession`
 
 ## <a name="requirements"></a>요구 사항
@@ -138,13 +138,13 @@ CInternetSession(
 
 ### <a name="parameters"></a>매개 변수
 
-*pstrAgent*  
+*pstrAgent*<br/>
 응용 프로그램 또는 인터넷 함수 (예를 들어, "Microsoft 인터넷 브라우저")를 호출 하는 엔터티의 이름을 식별 하는 문자열에 대 한 포인터입니다. 하는 경우 *pstrAgent* 가 NULL (기본값), 프레임 워크를 호출 하 여 전역 함수 [AfxGetAppName](application-information-and-management.md#afxgetappname), 응용 프로그램의 이름이 포함 된 null로 끝나는 문자열을 반환 합니다. 일부 프로토콜 서버에 응용 프로그램을 식별 하려면이 문자열을 사용 합니다.
 
-*dwContext*  
+*dwContext*<br/>
 작업에 대 한 컨텍스트 식별자입니다. *dwContext* 반환한 작업의 상태 정보를 식별 [cinternetsession:: Onstatuscallback](#onstatuscallback)합니다. 기본값은 1로 설정 됩니다. 그러나 작업에 대 한 특정 상황에 맞는 ID를 명시적으로 할당할 수 있습니다. 개체 및 수행 작업 컨텍스트 ID와 사용 하 여 연결 됩니다.
 
-*dwAccessType*  
+*dwAccessType*<br/>
 필요한 액세스의 형식입니다. 다음은 유효한 값에는 정확히 하나의 제공 될 수 있습니다.
 
 - INTERNET_OPEN_TYPE_PRECONFIG 연결을 사용 하 여 레지스트리 설정을 미리 구성 됩니다. 이 액세스 유형은 기본값으로 설정 됩니다. 이 프록시를 통해 연결할 설정 *dwAccessType* 이 값;으로 설정한 레지스트리에 적절 하 게 합니다.
@@ -155,13 +155,13 @@ CInternetSession(
 
 다양 한 유형의 프록시를 사용 하 여 연결 하는 방법에 대 한 자세한 내용은 [일반적인 FTP 클라이언트 응용 프로그램 단계](../../mfc/steps-in-a-typical-ftp-client-application.md)합니다.
 
-*pstrProxyName*  
+*pstrProxyName*<br/>
 기본 CERN 프록시의 이름을 경우 *dwAccessType* INTERNET_OPEN_TYPE_PROXY로 설정 됩니다. 기본값은 NULL입니다.
 
-*pstrProxyBypass*  
+*pstrProxyBypass*<br/>
 서버 주소는 선택적 목록을 포함 하는 문자열에 대 한 포인터입니다. 프록시 액세스를 사용 하는 경우 이러한 주소를 무시할 수 있습니다. NULL 값을 제공 하는 경우 레지스트리에서 바이패스 목록에는 읽게 됩니다. 이 매개 변수는 의미 있는 경우에만 *dwAccessType* INTERNET_OPEN_TYPE_PROXY로 설정 됩니다.
 
-*dwFlags*  
+*dwFlags*<br/>
 다양 한 캐싱 옵션을 나타냅니다. 기본값은 0으로 설정 됩니다. 가능한 값은 다음과 같습니다.
 
 - 로컬 또는 게이트웨이 서버에서 데이터를 캐시 하지 INTERNET_FLAG_DONT_CACHE 않습니다.
@@ -200,7 +200,7 @@ BOOL EnableStatusCallback(BOOL bEnable = TRUE);
 
 ### <a name="parameters"></a>매개 변수
 
-*bEnable*  
+*bEnable*<br/>
 콜백 사용 되는지 여부를 지정 합니다. 기본값은 TRUE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -255,16 +255,16 @@ static BOOL GetCookie(
 
 ### <a name="parameters"></a>매개 변수
 
-*pstrUrl*  
+*pstrUrl*<br/>
 URL이 포함 된 문자열에 대 한 포인터입니다.
 
-*pstrCookieName*  
+*pstrCookieName*<br/>
 지정된 된 URL에 대 한 쿠키의 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
-*pstrCookieData*  
+*pstrCookieData*<br/>
 첫 번째 오버 로드에서 쿠키 데이터를 수신 하는 버퍼의 주소를 포함 하는 문자열에 대 한 포인터입니다. 이 값은 NULL 일 수 있습니다. 두 번째 오버 로드에 대 한 참조를 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 쿠키 데이터를 수신 하는 개체입니다.
 
-*dwBufLen*  
+*dwBufLen*<br/>
 변수의 크기를 지정 하는 *pstrCookieData* 버퍼입니다. 버퍼에 복사 하는 데이터의 양을 수신 함수가 성공 하는 경우는 *pstrCookieData* 버퍼입니다. 하는 경우 *pstrCookieData* 가 null 인 경우이 매개 변수는 모든 쿠키 데이터를 복사 하는 데 필요한 버퍼의 크기를 지정 하는 값을 받습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -291,10 +291,10 @@ static DWORD GetCookieLength(
 
 ### <a name="parameters"></a>매개 변수
 
-*pstrUrl*  
+*pstrUrl*<br/>
 URL이 포함 된 문자열에 대 한 포인터
 
-*pstrCookieName*  
+*pstrCookieName*<br/>
 쿠키의 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -320,13 +320,13 @@ CFtpConnection* GetFtpConnection(
 
 ### <a name="parameters"></a>매개 변수
 
-*pstrServer*  
+*pstrServer*<br/>
 FTP 서버 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
-*pstrUserName*  
+*pstrUserName*<br/>
 사용자가 로그인의 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다. NULL 인 경우 기본값은 익명입니다.
 
-*pstrPassword*  
+*pstrPassword*<br/>
 로그인 하는 데 암호를 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다. 둘 다 *pstrPassword* 하 고 *pstrUserName* 이 NULL 이면 기본 익명 암호는 사용자의 전자 메일 이름입니다. 하는 경우 *pstrPassword* NULL (또는 빈 문자열)가 있지만 *pstrUserName* NULL이 아니면 빈 암호가 사용 됩니다. 다음 표에서 동작의 네 가지 가능한 설정에 대 한 설명 *pstrUserName* 하 고 *pstrPassword*:
 
 |*pstrUserName*|*pstrPassword*|FTP 서버에 전송 하는 사용자 이름|FTP 서버에 전송 하는 암호|
@@ -336,10 +336,10 @@ FTP 서버 이름을 포함 하는 문자열에 대 한 포인터입니다.
 |NULL|NULL이 아닌 문자열|오류|오류||
 |NULL이 아닌 문자열|NULL이 아닌 문자열|*pstrUserName*|*pstrPassword*|
 
-*nPort*  
+*nPort*<br/>
 서버에서 사용 하 여 TCP/IP 포트를 식별 하는 번호입니다.
 
-*bPassive*  
+*bPassive*<br/>
 이 FTP 세션에 대 한 활성 또는 수동 모드를 지정합니다. TRUE로 설정 Win32 API `dwFlag` INTERNET_FLAG_PASSIVE 하 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -368,16 +368,16 @@ CGopherConnection* GetGopherConnection(
 
 ### <a name="parameters"></a>매개 변수
 
-*pstrServer*  
+*pstrServer*<br/>
 Gopher 서버 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
-*pstrUserName*  
+*pstrUserName*<br/>
 사용자 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
-*pstrPassword*  
+*pstrPassword*<br/>
 액세스 암호를 포함 하는 문자열에 대 한 포인터입니다.
 
-*nPort*  
+*nPort*<br/>
 서버에서 사용 하 여 TCP/IP 포트를 식별 하는 번호입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -409,19 +409,19 @@ CHttpConnection* GetHttpConnection(
 
 ### <a name="parameters"></a>매개 변수
 
-*pstrServer*  
+*pstrServer*<br/>
 HTTP 서버 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
-*nPort*  
+*nPort*<br/>
 서버에서 사용 하 여 TCP/IP 포트를 식별 하는 번호입니다.
 
-*pstrUserName*  
+*pstrUserName*<br/>
 사용자 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
-*pstrPassword*  
+*pstrPassword*<br/>
 액세스 암호를 포함 하는 문자열에 대 한 포인터입니다.
 
-*dwflags*  
+*dwflags*<br/>
 조합 된 `INTERNET_FLAG_*` 플래그입니다. 표를 참조 합니다 **주의** 부분 [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest) 에 대 한 설명은 *dwFlags* 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -446,16 +446,16 @@ virtual void OnStatusCallback(
 
 ### <a name="parameters"></a>매개 변수
 
-*dwContext*  
+*dwContext*<br/>
 응용 프로그램에서 제공 된 컨텍스트 값입니다.
 
-*dwInternetStatus*  
+*dwInternetStatus*<br/>
 콜백을 수행 되는 이유를 나타내는 상태 코드입니다. 참조 **주의** 가능한 값의 테이블에 대 한 합니다.
 
-*lpvStatusInformation*  
+*lpvStatusInformation*<br/>
 이 콜백은에 적절 한 정보를 포함 하는 버퍼에 대 한 포인터입니다.
 
-*dwStatusInformationLength*  
+*dwStatusInformationLength*<br/>
 크기인 *lpvStatusInformation*합니다.
 
 ### <a name="remarks"></a>설명
@@ -484,7 +484,7 @@ virtual void OnStatusCallback(
 > [!NOTE]
 > 상태 콜백이 스레드 상태를 보호를 해야합니다. MFC 공유 라이브러리를 사용 하는 경우 재정의의 시작 부분에 다음 줄을 추가 합니다.
 
- [!code-cpp[NVC_MFCHtmlHttp#8](../../mfc/reference/codesnippet/cpp/cinternetsession-class_1.cpp)]
+[!code-cpp[NVC_MFCHtmlHttp#8](../../mfc/reference/codesnippet/cpp/cinternetsession-class_1.cpp)]
 
 비동기 작업에 대 한 자세한 내용은 문서를 참조 하세요 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md)합니다.
 
@@ -503,13 +503,13 @@ CStdioFile* OpenURL(
 
 ### <a name="parameters"></a>매개 변수
 
-*pstrURL*  
+*pstrURL*<br/>
 읽기를 시작할 URL의 이름에 대 한 포인터입니다. Url만 파일을 사용 하 여 시작:, ftp:, gopher:, 또는 http: 지원 됩니다. 하면 어설션 *pstrURL* NULL입니다.
 
-*dwContext*  
+*dwContext*<br/>
 콜백에서 반환된 된 핸들을 사용 하 여 응용 프로그램 정의 값을 전달 합니다.
 
-*dwFlags*  
+*dwFlags*<br/>
 이 연결을 처리 하는 방법을 설명 하는 플래그입니다. 참조 **주의** 유효한 플래그에 대 한 자세한 내용은 합니다. 유효한 플래그는 다음과 같습니다.
 
 - INTERNET_FLAG_TRANSFER_ASCII 기본값입니다. ASCII 텍스트 파일을 전송 합니다.
@@ -526,10 +526,10 @@ CStdioFile* OpenURL(
 
 - INTERNET_FLAG_PASSIVE FTP 사이트에 사용 합니다. 수동 FTP 의미 체계를 사용 합니다. 사용한 [CInternetConnection](../../mfc/reference/cinternetconnection-class.md) 의 `OpenURL`합니다.
 
-*pstrHeaders*  
+*pstrHeaders*<br/>
 HTTP 서버에 전송할 헤더를 포함 하는 문자열에 대 한 포인터입니다.
 
-*dwHeadersLength*  
+*dwHeadersLength*<br/>
 추가 헤더의 문자에서 길이입니다. -1l이 경우 및 *pstrHeaders* 이면 NULL이 아닌 *pstrHeaders* 0으로 종료 하 고 길이 계산 간주 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -574,13 +574,13 @@ static BOOL SetCookie(
 
 ### <a name="parameters"></a>매개 변수
 
-*pstrUrl*  
+*pstrUrl*<br/>
 쿠키를 설정 해야 하는 URL을 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
-*pstrCookieName*  
+*pstrCookieName*<br/>
 쿠키의 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
-*pstrCookieData*  
+*pstrCookieData*<br/>
 URL에 연결할 실제 문자열 데이터가 포함 된 문자열에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -611,19 +611,19 @@ BOOL SetOption(
 
 ### <a name="parameters"></a>매개 변수
 
-*dwOption*  
+*dwOption*<br/>
 인터넷 옵션 설정입니다. 참조 [옵션 플래그](/windows/desktop/WinInet/option-flags) Windows SDKfor 가능한 옵션 목록에서에서.
 
-*lpBuffer*  
+*lpBuffer*<br/>
 옵션 설정을 포함 하는 버퍼입니다.
 
-*dwBufferLength*  
+*dwBufferLength*<br/>
 길이가 *lpBuffer* 의 크기나 *dwValue*합니다.
 
-*dwValue*  
+*dwValue*<br/>
 옵션 설정을 포함 하는 DWORD입니다.
 
-*dwFlags*  
+*dwFlags*<br/>
 다양 한 캐싱 옵션을 나타냅니다. 기본값은 0으로 설정 됩니다. 가능한 값은 다음과 같습니다.
 
 - 로컬 또는 게이트웨이 서버에서 데이터를 캐시 하지 INTERNET_FLAG_DONT_CACHE 않습니다.
@@ -636,9 +636,9 @@ BOOL SetOption(
 
 ## <a name="see-also"></a>참고 항목
 
-[CObject 클래스](../../mfc/reference/cobject-class.md)  
-[계층 구조 차트](../../mfc/hierarchy-chart.md)  
-[CInternetConnection 클래스](../../mfc/reference/cinternetconnection-class.md)  
-[CHttpConnection 클래스](../../mfc/reference/chttpconnection-class.md)  
-[CFtpConnection 클래스](../../mfc/reference/cftpconnection-class.md)  
-[CGopherConnection 클래스](../../mfc/reference/cgopherconnection-class.md)  
+[CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
+[계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
+[CInternetConnection 클래스](../../mfc/reference/cinternetconnection-class.md)<br/>
+[CHttpConnection 클래스](../../mfc/reference/chttpconnection-class.md)<br/>
+[CFtpConnection 클래스](../../mfc/reference/cftpconnection-class.md)<br/>
+[CGopherConnection 클래스](../../mfc/reference/cgopherconnection-class.md)

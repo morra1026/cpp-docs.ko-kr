@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6c1db7390be47d2f9530708b2a4cd59dd1c22cc7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e754307c35d10aa36680a42415bd3a5b781321ba
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610396"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46384847"
 ---
 # <a name="editing-properties-for-an-activex-control"></a>ActiveX 컨트롤 속성 편집
 
@@ -48,7 +48,7 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[ActiveX 컨트롤 보기 및 대화 상자에 추가](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md)  
-[대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)  
-[MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)  
+[ActiveX 컨트롤 보기 및 대화 상자에 추가](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md)<br/>
+[대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)<br/>
+[MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)<br/>
 [ActiveX 컨트롤 컨테이너](../mfc/activex-control-containers.md)

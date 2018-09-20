@@ -33,12 +33,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 08347b4ccfa44d8645acc2bd5e96775bab4e7740
-ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
+ms.openlocfilehash: cd9ab28ccce14c5ac0975b7050588ee6524cfcc9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601498"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408351"
 ---
 # <a name="eventsource-class"></a>EventSource 클래스
 
@@ -53,7 +53,7 @@ class EventSource;
 
 ### <a name="parameters"></a>매개 변수
 
-*TDelegateInterface*  
+*TDelegateInterface*<br/>
 인터페이스 이벤트 처리기를 나타내는 대리자입니다.
 
 ## <a name="members"></a>멤버
@@ -104,10 +104,10 @@ HRESULT Add(
 
 ### <a name="parameters"></a>매개 변수
 
-*delegateInterface*  
+*delegateInterface*<br/>
 이벤트 처리기를 나타내는 대리자 개체에 대 한 인터페이스입니다.
 
-*token*  
+*token*<br/>
 이 작업이 완료 될 때 이벤트를 나타내는 핸들입니다. 이 토큰에 대 한 매개 변수로 사용 합니다 [remove ()](#remove) 이벤트 처리기를 삭제 하는 방법입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -302,64 +302,64 @@ void InvokeAll(
 
 ### <a name="parameters"></a>매개 변수
 
-*T0*  
+*T0*<br/>
 0번째 이벤트 처리기 인수 형식입니다.
 
-*T1*  
+*T1*<br/>
 첫 번째 이벤트 처리기 인수 형식입니다.
 
-*T2*  
+*T2*<br/>
 두 번째 이벤트 처리기 인수 형식입니다.
 
-*T3*  
+*T3*<br/>
 세 번째 이벤트 처리기 인수 형식입니다.
 
-*T4*  
+*T4*<br/>
 네 번째 이벤트 처리기 인수 형식입니다.
 
-*T5*  
+*T5*<br/>
 다섯 번째 이벤트 처리기 인수 형식입니다.
 
-*T6*  
+*T6*<br/>
 여섯 번째 이벤트 처리기 인수 형식입니다.
 
-*T7*  
+*T7*<br/>
 일곱 번째 이벤트 처리기 인수 형식입니다.
 
-*T8*  
+*T8*<br/>
 여덟 번째 이벤트 처리기 인수 형식입니다.
 
-*T9*  
+*T9*<br/>
 아홉 번째 이벤트 처리기 인수 형식입니다.
 
-*arg0*  
+*arg0*<br/>
 0번째 이벤트 처리기 인수입니다.
 
-*arg1*  
+*arg1*<br/>
 첫 번째 이벤트 처리기 인수입니다.
 
-*Arg2*  
+*Arg2*<br/>
 두 번째 이벤트 처리기 인수입니다.
 
-*arg3*  
+*arg3*<br/>
 세 번째 이벤트 처리기 인수입니다.
 
-*arg4*  
+*arg4*<br/>
 네 번째 이벤트 처리기 인수입니다.
 
-*arg5*  
+*arg5*<br/>
 다섯 번째 이벤트 처리기 인수입니다.
 
-*a r g 6*  
+*a r g 6*<br/>
 여섯 번째 이벤트 처리기 인수입니다.
 
-*arg7*  
+*arg7*<br/>
 일곱 번째 이벤트 처리기 인수입니다.
 
-*arg8*  
+*arg8*<br/>
 여덟 번째 이벤트 처리기 인수입니다.
 
-*arg9*  
+*arg9*<br/>
 아홉 번째 이벤트 처리기 인수입니다.
 
 ## <a name="remove"></a>Eventsource:: Remove
@@ -374,7 +374,7 @@ HRESULT Remove(
 
 ### <a name="parameters"></a>매개 변수
 
-*token*  
+*token*<br/>
 이벤트 처리기를 나타내는 핸들입니다. 이 토큰은 이벤트 처리기를 등록 된 경우 반환 된 합니다 [add ()](#add) 메서드.
 
 ### <a name="return-value"></a>반환 값

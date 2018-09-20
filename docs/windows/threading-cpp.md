@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 899c41a65a651f7464b11639d2106b3eaa51e21b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8ab2699781526ee12784f7c048cd9a833526fd30
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45708658"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46415002"
 ---
 # <a name="threading-c"></a>threading(C++)
 
@@ -80,8 +80,8 @@ ATL 프로젝트의 경우는 [coclass](../windows/coclass.md) 특성이 있는�
 
 ## <a name="see-also"></a>참고 항목
 
-[COM 특성](../windows/com-attributes.md)  
-[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  
-[클래스 특성](../windows/class-attributes.md)  
-[이전 코드를 위한 다중 스레드 지원(Visual C++)](../parallel/multithreading-support-for-older-code-visual-cpp.md)  
+[COM 특성](../windows/com-attributes.md)<br/>
+[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[클래스 특성](../windows/class-attributes.md)<br/>
+[이전 코드를 위한 다중 스레드 지원(Visual C++)](../parallel/multithreading-support-for-older-code-visual-cpp.md)<br/>
 [중립 아파트](/windows/desktop/cossdk/neutral-apartments)  

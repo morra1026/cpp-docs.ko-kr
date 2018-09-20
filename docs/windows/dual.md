@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3727fc70698d3202734db7bbe72773cbe49bffb9
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6af52fab983f93964ba33cf59ca38783df66b5da
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592915"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46373583"
 ---
 # <a name="dual"></a>dual
 
@@ -38,7 +38,7 @@ ms.locfileid: "42592915"
 
 경우는 **이중** c + + 특성이 인터페이스 앞에 오면, 생성된 된.idl 파일의 라이브러리 블록 안에 배치 하는 인터페이스입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드는 사용 하는 특성 블록 **이중** 인터페이스 정의 하기 전에:
 
@@ -89,9 +89,9 @@ __interface IStatic : IDispatch
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
-[용도별 특성](../windows/attributes-by-usage.md)  
-[custom](../windows/custom-cpp.md)  
-[dispinterface](../windows/dispinterface.md)  
-[object](../windows/object-cpp.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
+[용도별 특성](../windows/attributes-by-usage.md)<br/>
+[custom](../windows/custom-cpp.md)<br/>
+[dispinterface](../windows/dispinterface.md)<br/>
+[object](../windows/object-cpp.md)<br/>
 [__interface](../cpp/interface.md)  

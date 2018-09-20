@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0f1ed792407160c1d025dabb3b8cc01a2ebc7330
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 8de12d1b421fd78fb9ed2a45cc14826541f72757
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314328"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46441696"
 ---
 # <a name="creating-a-new-toolbar-button-c"></a>새 도구 모음 단추 (c + +) 만들기
 
@@ -71,6 +71,6 @@ MFC 또는 ATL
 
 ## <a name="see-also"></a>참고 항목
 
-[도구 모음 단추 속성](../windows/toolbar-button-properties.md)  
-[도구 모음 단추 만들기, 이동 및 편집](../windows/creating-moving-and-editing-toolbar-buttons.md)  
+[도구 모음 단추 속성](../windows/toolbar-button-properties.md)<br/>
+[도구 모음 단추 만들기, 이동 및 편집](../windows/creating-moving-and-editing-toolbar-buttons.md)<br/>
 [도구 모음 편집기](../windows/toolbar-editor.md)

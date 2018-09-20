@@ -19,24 +19,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd1b1d65148a951ba78e0408ab590a2c979648f7
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 76aa828727ccfcf93c7b9b0242e60b747c1873f8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339581"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46390853"
 ---
 # <a name="classes-and-functions-generated-by-the-mfc-dll-wizard"></a>MFC DLL 마법사가 생성하는 클래스 및 함수
-MFC DLL 마법사에서 생성 하는 코드를 만드는 DLL 및 선택한 옵션의 종류에 따라 달라 집니다. MFC DLL 마법사 모두 형태의 기본 MFC Dll에 대 한 동일한 코드를 생성합니다.  
-  
-|DLL의 종류|옵션|클래스|함수|  
-|-----------------|------------|-------------|---------------|  
-|[확장](../../build/extension-dlls-overview.md)|없음|없음|`DllMain`|  
-|[일반](../../build/regular-dlls-dynamically-linked-to-mfc.md)|없음|응용 프로그램 클래스에서 파생 `CWinApp`|없음|  
-|[일반](../../build/regular-dlls-dynamically-linked-to-mfc.md)|자동화|응용 프로그램 클래스에서 파생 `CWinApp`|`DllGetClassObjectDllCanUnloadNowDllRegisterServer`|  
-|[확장](../../build/extension-dlls-overview.md)|Windows 소켓|없음|`DllMain`|  
-|[일반](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Windows 소켓|응용 프로그램 클래스에서 파생 `CWinApp`|`InitInstance` 호출을 포함합니다. `AfxSocketInit`|  
-  
-## <a name="see-also"></a>참고 항목  
- [MFC DLL 마법사](../../mfc/reference/mfc-dll-wizard.md)
+
+MFC DLL 마법사에서 생성 하는 코드를 만드는 DLL 및 선택한 옵션의 종류에 따라 달라 집니다. MFC DLL 마법사 모두 형태의 기본 MFC Dll에 대 한 동일한 코드를 생성합니다.
+
+|DLL의 종류|옵션|클래스|함수|
+|-----------------|------------|-------------|---------------|
+|[확장](../../build/extension-dlls-overview.md)|없음|없음|`DllMain`|
+|[일반](../../build/regular-dlls-dynamically-linked-to-mfc.md)|없음|응용 프로그램 클래스에서 파생 `CWinApp`|없음|
+|[일반](../../build/regular-dlls-dynamically-linked-to-mfc.md)|자동화|응용 프로그램 클래스에서 파생 `CWinApp`|`DllGetClassObjectDllCanUnloadNowDllRegisterServer`|
+|[확장](../../build/extension-dlls-overview.md)|Windows 소켓|없음|`DllMain`|
+|[일반](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Windows 소켓|응용 프로그램 클래스에서 파생 `CWinApp`|`InitInstance` 호출을 포함합니다. `AfxSocketInit`|
+
+## <a name="see-also"></a>참고 항목
+
+[MFC DLL 마법사](../../mfc/reference/mfc-dll-wizard.md)
 

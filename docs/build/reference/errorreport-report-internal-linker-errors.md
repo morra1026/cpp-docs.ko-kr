@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 30cc9cbab9a3575eee2f791b0af7dfcaffc1538d
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 3b4b19eed4b481ffa44688e15fb1567e73da1a8f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45701092"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46373467"
 ---
 # <a name="errorreport-report-internal-linker-errors"></a>/ERRORREPORT(내부 링커 오류 보고)
 
@@ -64,6 +64,6 @@ Windows 오류 보고 서비스 설정에 따라 보고를 사용 하는 경우 
 
 ## <a name="see-also"></a>참고자료
 
-[/errorReport (내부 컴파일러 오류 보고)](../../build/reference/errorreport-report-internal-compiler-errors.md)
+[/errorReport(내부 컴파일러 오류 보고)](../../build/reference/errorreport-report-internal-compiler-errors.md)<br/>
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

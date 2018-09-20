@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2710609cbf20861c77dae1cb0aea327983efef6e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9142ba85a78259c0a6e5ae06f3745d414e62e908
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46098175"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425629"
 ---
 # <a name="smart-pointers-modern-c"></a>스마트 포인터(최신 C++)
 
@@ -86,29 +86,39 @@ POCO(Plain Old C++ 개체)에 대한 포인터를 캡슐화하는 데 가장 먼
 
 COM 개체를 사용하는 경우 인터페이스 포인터를 적절한 스마트 포인터 형식으로 래핑합니다. ATL(Active Template Library)은 다양한 목적을 위해 여러 스마트 포인터를 정의합니다. .tlb 파일에서 래퍼 클래스를 만들 때 컴파일러가 사용하는 `_com_ptr_t` 스마트 포인터 형식을 사용할 수도 있습니다. ATL 헤더 파일을 포함하지 않으려는 경우에 가장 좋습니다.
 
-[CComPtr 클래스](../atl/reference/ccomptr-class.md) ATL. 사용할 수 없는 사용 `AddRef` 및 `Release` 메서드를 사용하여 참조 수 계산을 수행합니다. 자세한 내용은 참조 하세요. [방법: 만들기 및 사용 하 여 CComPtr 및 CComQIPtr 인스턴스](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md)합니다.
+[CComPtr 클래스](../atl/reference/ccomptr-class.md)<br/>
+ATL을 사용할 수 없는 이상 이 형식을 사용합니다. `AddRef` 및 `Release` 메서드를 사용하여 참조 수 계산을 수행합니다. 자세한 내용은 참조 하세요. [방법: 만들기 및 사용 하 여 CComPtr 및 CComQIPtr 인스턴스](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md)합니다.
 
-[CComQIPtr 클래스](../atl/reference/ccomqiptr-class.md) Resembles `CComPtr` 호출에 대 한 간단한 구문을 제공 하지만 `QueryInterface` COM 개체입니다. 자세한 내용은 참조 하세요. [방법: 만들기 및 사용 하 여 CComPtr 및 CComQIPtr 인스턴스](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md)합니다.
+[CComQIPtr 클래스](../atl/reference/ccomqiptr-class.md)<br/>
+`CComPtr`과 유사하지만 COM 개체에서 `QueryInterface`를 호출하는 간단한 구문을 제공합니다. 자세한 내용은 참조 하세요. [방법: 만들기 및 사용 하 여 CComPtr 및 CComQIPtr 인스턴스](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md)합니다.
 
-[CComHeapPtr 클래스](../atl/reference/ccomheapptr-class.md) 사용 하는 개체에 대 한 스마트 포인터 `CoTaskMemFree` 메모리를 확보 합니다.
+[CComHeapPtr 클래스](../atl/reference/ccomheapptr-class.md)<br/>
+`CoTaskMemFree`를 사용하여 메모리를 해제하는 개체에 대한 스마트 포인터
 
-[CComGITPtr 클래스](../atl/reference/ccomgitptr-class.md) 전역 인터페이스 테이블 (GIT)에서 가져온 인터페이스에 대 한 스마트 포인터입니다.
+[CComGITPtr 클래스](../atl/reference/ccomgitptr-class.md)<br/>
+GIT(전역 인터페이스 테이블)에서 가져온 인터페이스에 대한 스마트 포인터입니다.
 
-[_com_ptr_t 클래스](../cpp/com-ptr-t-class.md) Resembles `CComQIPtr` 기능에서 하지만 ATL 헤더에 종속 되지 않습니다.
+[_com_ptr_t 클래스](../cpp/com-ptr-t-class.md)<br/>
+기능 면에서 `CComQIPtr`과 유사하지만 ATL 헤더에 의존하지 않습니다.
 
 ### <a name="atl-smart-pointers-for-poco-objects"></a>POCO 개체에 대한 ATL 스마트 포인터
 
 ATL은 COM 개체에 대한 스마트 포인터뿐만 아니라 이전 일반 C++ 개체에 대한 스마트 포인터 및 스마트 포인터 컬렉션을 정의합니다. 클래식 Windows 프로그래밍에서 이러한 형식은 c + + 표준 라이브러리 컬렉션에 대 한 유용한 대안이 ATL. 고 c + + 표준 라이브러리의 프로그래밍 모델 혼합 하지 않으려는 경우 또는 특히 코드 이식성 필요 하지 않을 경우
 
-[CAutoPtr 클래스](../atl/reference/cautoptr-class.md) 복사본에 대 한 소유권을 전송 하 여 고유 소유권을 적용 하는 스마트 포인터입니다. 사용되지 않는 `std::auto_ptr` 클래스에 비교할 수 있습니다.
+[CAutoPtr 클래스](../atl/reference/cautoptr-class.md)<br/>
+복사 소유권을 전송하여 고유 소유권을 적용하는 스마트 포인터입니다. 사용되지 않는 `std::auto_ptr` 클래스에 비교할 수 있습니다.
 
-[CHeapPtr 클래스](../atl/reference/cheapptr-class.md) 를 사용 하 여 할당 된 개체에 대 한 스마트 포인터 [malloc](../c-runtime-library/reference/malloc.md) 함수입니다.
+[CHeapPtr 클래스](../atl/reference/cheapptr-class.md)<br/>
+C를 사용 하 여 할당 된 개체에 대 한 스마트 포인터 [malloc](../c-runtime-library/reference/malloc.md) 함수입니다.
 
-[CAutoVectorPtr 클래스](../atl/reference/cautovectorptr-class.md) 를 사용 하 여 할당 된 배열에 대 한 스마트 포인터 `new[]`합니다.
+[CAutoVectorPtr 클래스](../atl/reference/cautovectorptr-class.md)<br/>
+배열을 위해 `new[]`를 사용하여 할당하는 스마트 포인터입니다.
 
-[CAutoPtrArray 클래스](../atl/reference/cautoptrarray-class.md) 배열을 캡슐화 하는 클래스 `CAutoPtr` 요소입니다.
+[CAutoPtrArray 클래스](../atl/reference/cautoptrarray-class.md)<br/>
+`CAutoPtr` 요소 배열을 캡슐화하는 클래스입니다.
 
-[CAutoPtrList 클래스](../atl/reference/cautoptrlist-class.md) 목록을 조작 하기 위한 메서드를 캡슐화 하는 클래스 `CAutoPtr` 노드.
+[CAutoPtrList 클래스](../atl/reference/cautoptrlist-class.md)<br/>
+`CAutoPtr` 노드 목록을 조작하기 위해 메서드를 캡슐화하는 클래스입니다.
 
 ## <a name="see-also"></a>참고자료
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c43139dd1d927d9e6173d9e78765d0fcdbddae6a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8faad93ae57e42e0e28bcb697ed300c11e766136
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716016"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46376917"
 ---
 # <a name="dbsource"></a>db_source
 
@@ -40,13 +40,13 @@ ms.locfileid: "45716016"
 
 ### <a name="parameters"></a>매개 변수
 
-*db_source*  
+*db_source*<br/>
 데이터 원본에 연결할 때 사용할 연결 문자열입니다. 연결 문자열의 형식에 대해서 [연결 문자열 및 데이터 링크](/previous-versions/windows/desktop/ms718376\(v=vs.85\)) 에 Microsoft 데이터 액세스 구성 요소 (MDAC) SDK입니다.
 
-*name*  
+*name*<br/>
 (선택 사항) 사용 하는 경우 **db_source** 클래스에서 *이름* 있는 데이터 원본 개체의 인스턴스를 **db_source** 특성 (예 1 참조)를 적용 합니다. 사용 하는 경우 **db_source** 메서드 구현에서 인라인 *이름* 데이터 액세스에 사용할 수 있는 변수 (로컬 메서드에) 원본 (예 2 참조). 이 전달할 *이름* 에 *source_name* 의 매개 변수 `db_command` 명령을 사용 하 여 데이터 원본에 연결할 합니다.
 
-*hresult*  
+*hresult*<br/>
 (선택 사항) 이 데이터베이스 명령의 HRESULT 받을 변수를 식별 합니다. 변수가 없으면 특성에 의해 자동으로 삽입됩니다.
 
 ## <a name="remarks"></a>설명

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ca37981352ddcef639b3e8ed5bbd00a14f56f126
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 07541c31b99959616320d0b4a9526eb2ec5493a2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700715"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425550"
 ---
 # <a name="image-menu-c-image-editor-for-icons"></a>이미지 메뉴 (아이콘에 대 한 c + + 이미지 편집기)
 
@@ -102,5 +102,5 @@ ms.locfileid: "45700715"
 
 ## <a name="see-also"></a>참고 항목
 
-[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)  
+[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)

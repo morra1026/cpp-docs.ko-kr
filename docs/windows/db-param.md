@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b599e5f25449dfef3b37d7811db572ee4299b241
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6bfd96962cebd4b94e9b1b50ca588ada9af69779
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719110"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46418387"
 ---
 # <a name="dbparam"></a>db_param
 
@@ -44,10 +44,10 @@ ms.locfileid: "45719110"
 
 ### <a name="parameters"></a>매개 변수
 
-*서 수*  
+*서 수*<br/>
 데이터를 바인딩할 행 집합의 필드에 해당 열 번호 (DBCOLUMNINFO 서 수).
 
-*가 paramtype과*  
+*가 paramtype과*<br/>
 (선택 사항) 형식 매개 변수에 설정입니다. 공급자의 데이터 원본에서 지원 되는 매개 변수 I/O 형식만 지원 합니다. 형식은 하나 이상의 DBPARAMIOENUM 값을 조합 합니다.
 
 - DBPARAMIO_INPUT 입력된 매개 변수입니다.
@@ -56,19 +56,19 @@ ms.locfileid: "45719110"
 
 - DBPARAMIO_NOTPARAM 접근자 매개 변수가 없습니다. 설정 `eParamIO` 행에서이 값을 접근자 받으라는 매개 변수가 무시 됩니다.
 
-*dbtype*  
+*dbtype*<br/>
 (선택 사항) OLE DB [유형 표시기](/previous-versions/windows/desktop/ms711251\(v=vs.85\)) 열 항목에 대 한 합니다.
 
-*precision*  
+*precision*<br/>
 (선택 사항) 열 항목에 사용할 전체 자릿수입니다. 세부 정보에 대 한 설명을 참조 하세요 `bPrecision` 의 요소는 [DBBINDING 구조](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
 
-*크기 조정*  
+*크기 조정*<br/>
 (선택 사항) 열 항목에 사용할 소수 자릿수입니다. 세부 정보에 대 한 설명을 참조 하세요 `bScale` 의 요소는 [DBBINDING 구조](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
 
-*status*  
+*status*<br/>
 (선택 사항) 이 칼럼의 상태를 저장 하는 데 사용 되는 멤버 변수입니다. 상태는 데이터 값 또는 NULL 등의 다른 값 열 값이 있는지 여부를 나타냅니다. 가능한 값을 참조 하세요 [상태](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.
 
-*length*  
+*length*<br/>
 (선택 사항) 멤버 변수 (바이트)에서 열의 크기를 보유 하는 데 사용 합니다.
 
 ## <a name="remarks"></a>설명

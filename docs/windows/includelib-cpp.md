@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 551ae176504e3bbbca034ca91894ef793ea268fd
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5f15fcefe1a18156e4cbe8180138d7b6c1d944e2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42584344"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46398588"
 ---
 # <a name="includelib-c"></a>includelib(C++)
 
@@ -38,14 +38,14 @@ ms.locfileid: "42584344"
 
 ### <a name="parameters"></a>매개 변수
 
-*name.idl*  
+*name.idl*<br/>
 생성된 된.idl 파일의 일부분으로 포함 하려는.idl 파일의 이름입니다.
 
 ## <a name="remarks"></a>설명
 
 합니다 **includelib** c + + 특성을 한 후 생성 된.idl 파일에 포함 될.idl 또는.h 파일을 사용 하면는 `importlib` 문입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드는.cpp 파일에 표시 됩니다.
 
@@ -71,9 +71,9 @@ ms.locfileid: "42584344"
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
-[독립 실행형 특성](../windows/stand-alone-attributes.md)  
-[import](../windows/import.md)  
-[importidl](../windows/importidl.md)  
-[include](../windows/include-cpp.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
+[독립 실행형 특성](../windows/stand-alone-attributes.md)<br/>
+[import](../windows/import.md)<br/>
+[importidl](../windows/importidl.md)<br/>
+[include](../windows/include-cpp.md)<br/>
 [importlib](../windows/importlib.md)  

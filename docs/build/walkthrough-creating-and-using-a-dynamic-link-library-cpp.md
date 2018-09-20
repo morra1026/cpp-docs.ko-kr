@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb47b64277aea568cf3cad8e2c4b6203e43f1b2f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 5175d89925ddc09fdcd552aa57d2967071e750f7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723257"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46376969"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>연습: 만들기 및 사용자 고유의 동적 링크 라이브러리 (c + +)를 사용 합니다.
 
@@ -411,5 +411,5 @@ DLL 및 클라이언트 응용 프로그램을 만든 했으므로 실험할 수
 
 [Visual C++의 DLL](../build/dlls-in-visual-cpp.md)<br/>
 [데스크톱 응용 프로그램 배포](../ide/deploying-native-desktop-applications-visual-cpp.md)<br/>
-[연습: 프로그램 (c + +)를 배포](../ide/walkthrough-deploying-your-program-cpp.md)
+[연습: 프로그램 배포(C++)](../ide/walkthrough-deploying-your-program-cpp.md)<br/>
 [Visual Basic 응용 프로그램에서 DLL 함수 호출](../build/calling-dll-functions-from-visual-basic-applications.md)

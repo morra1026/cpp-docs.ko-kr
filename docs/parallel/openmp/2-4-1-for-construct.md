@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac142c628f3c2bef0bc29a2ffd50df8a9efda400
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: cb9a554d9141223be7a5f6bc741c86b8f03511e2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216539"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46428548"
 ---
 # <a name="241-for-construct"></a>2.4.1 for 구문
 
@@ -115,28 +115,28 @@ OpenMP와 호환 프로그램을 올바르게 실행에 대 한 특정 일정에
 
 에 대 한 제한 된 **에 대 한** 지시문은 다음과 같습니다.
 
--   **에 대 한** 루프는 구조화 된 블록 이어야 합니다 하 고 해당 실행을 하 여 종료 되지 해야 또한을 **나누기** 문.
+- **에 대 한** 루프는 구조화 된 블록 이어야 합니다 하 고 해당 실행을 하 여 종료 되지 해야 또한을 **나누기** 문.
 
--   루프의 값 식의 제어를 **에 대 한** 루프와 연결 된를 **에 대 한** 지시문 팀의 모든 스레드에 대해 동일 해야 합니다.
+- 루프의 값 식의 제어를 **에 대 한** 루프와 연결 된를 **에 대 한** 지시문 팀의 모든 스레드에 대해 동일 해야 합니다.
 
--   합니다 **에 대 한** 루프 반복 변수 부호 있는 정수 형식 이어야 합니다.
+- 합니다 **에 대 한** 루프 반복 변수 부호 있는 정수 형식 이어야 합니다.
 
--   단일 **일정** 절에 나타날 수 있습니다는 **에 대 한** 지시문입니다.
+- 단일 **일정** 절에 나타날 수 있습니다는 **에 대 한** 지시문입니다.
 
--   단일 **순차적** 절에 나타날 수 있습니다는 **에 대 한** 지시문입니다.
+- 단일 **순차적** 절에 나타날 수 있습니다는 **에 대 한** 지시문입니다.
 
--   단일 **nowait** 절에 나타날 수 있습니다는 **에 대 한** 지시문입니다.
+- 단일 **nowait** 절에 나타날 수 있습니다는 **에 대 한** 지시문입니다.
 
--   지정 되지 않은 경우 또는 내 모든 측면에 영향을 얼마나 자주 합니다 *chunk_size*, *lb*를 *b*, 또는 *incr* 식은 발생 합니다.
+- 지정 되지 않은 경우 또는 내 모든 측면에 영향을 얼마나 자주 합니다 *chunk_size*, *lb*를 *b*, 또는 *incr* 식은 발생 합니다.
 
--   값을 *chunk_size* 식 팀의 모든 스레드에 대해 동일 해야 합니다.
+- 값을 *chunk_size* 식 팀의 모든 스레드에 대해 동일 해야 합니다.
 
 ## <a name="cross-references"></a>교차 참조:
 
--   **개인**, **firstprivate**, **lastprivate**, 및 **감소** 절을 참조 하십시오 [섹션 2.7.2](../../parallel/openmp/2-7-2-data-sharing-attribute-clauses.md) 25 페이지입니다.
+- **개인**, **firstprivate**, **lastprivate**, 및 **감소** 절을 참조 하십시오 [섹션 2.7.2](../../parallel/openmp/2-7-2-data-sharing-attribute-clauses.md) 25 페이지입니다.
 
--   **OMP_SCHEDULE** 환경 변수를 참조 하십시오 [섹션 4.1](../../parallel/openmp/4-1-omp-schedule.md) 48 페이지입니다.
+- **OMP_SCHEDULE** 환경 변수를 참조 하십시오 [섹션 4.1](../../parallel/openmp/4-1-omp-schedule.md) 48 페이지입니다.
 
--   **순차적** 생성을 참조 하십시오 [2.6.6 섹션](../../parallel/openmp/2-6-6-ordered-construct.md) 22 페이지입니다.
+- **순차적** 생성을 참조 하십시오 [2.6.6 섹션](../../parallel/openmp/2-6-6-ordered-construct.md) 22 페이지입니다.
 
--   [부록 D](../../parallel/openmp/d-using-the-schedule-clause.md), 93 페이지 일정 절을 사용 하 여 자세한 정보를 제공 합니다.
+- [부록 D](../../parallel/openmp/d-using-the-schedule-clause.md), 93 페이지 일정 절을 사용 하 여 자세한 정보를 제공 합니다.

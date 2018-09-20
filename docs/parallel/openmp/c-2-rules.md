@@ -12,20 +12,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb83b35a03608e272e9af67159b61e5dbf4e1ec6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1c5845a9125bb32254fc0c03b03e9b6076a086d1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755023"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46404776"
 ---
 # <a name="c2-rules"></a>C.2 규칙
+
 표기법은 6.1 C 표준의 섹션에 설명 되어 있습니다. 이 문법 부록 OpenMP C 및 c + + 지시문에 대 한 기본 언어 문법을 확장을 보여 줍니다.
 
 **/\* c + + (ISO/IEC 14882:1998) \*/**
 
 *문-seq*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*문*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*statement*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*openmp 지시문*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*문-seq 문*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*문-seq openmp 지시문*
@@ -33,7 +34,7 @@ ms.locfileid: "43755023"
 **/\* C90에서 (ISO/IEC 9899:1990) \*/**
 
 *statement-list*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*문*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*statement*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*openmp 지시문*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*문 목록 문*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*문 목록 openmp 지시문*
@@ -41,8 +42,8 @@ ms.locfileid: "43755023"
 **/\* C99에서 (ISO/IEC 9899:1999) \*/**
 
 *항목 차단*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*선언*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*문*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*declaration*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*statement*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*openmp 지시문*
 
 **/\* 표준 문 \*/**
@@ -67,7 +68,7 @@ ms.locfileid: "43755023"
 &nbsp;&nbsp;&nbsp;&nbsp;*flush 지시문*
 
 *구조화 된 블록*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*문*
+&nbsp;&nbsp;&nbsp;&nbsp;*statement*
 
 *병렬 구문을*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*병렬 지시문 구조화 된 블록*
@@ -100,7 +101,7 @@ ms.locfileid: "43755023"
 &nbsp;&nbsp;&nbsp;&nbsp;**일정 (** *예약 종류가* **하십시오** *식* **)**
 
 *예약 종류가*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**정적**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**static**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**동적**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**문제 해결**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**런타임**
@@ -194,7 +195,7 @@ ms.locfileid: "43755023"
 
 **/\* 표준 선언 \*/**
 
-*선언*:<br/>
+*declaration*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*threadprivate 지시문*
 
 *threadprivate 지시문*:<br/>
@@ -217,7 +218,7 @@ ms.locfileid: "43755023"
 **/\* C \*/**
 
 *변수 목록*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*식별자*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*identifier*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*변수 목록* **하십시오** *식별자*
 
 **/\* c + + \*/**

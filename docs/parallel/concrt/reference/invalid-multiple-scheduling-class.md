@@ -18,59 +18,64 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3cc4e3b2a23dd5c617b70a7a4b992323a0e963f4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 71898449447595db5df66ce619c423d62f2410be
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46067347"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46384920"
 ---
 # <a name="invalidmultiplescheduling-class"></a>invalid_multiple_scheduling 클래스
-이 클래스는 `wait` 또는 `run_and_wait` 메서드에 대한 중간 호출 없이 `task_group` 또는 `structured_task_group` 개체의 `run` 메서드를 사용하여 `task_handle` 개체가 여러 번 예약하는 경우 발생하는 예외를 설명합니다.  
-  
-## <a name="syntax"></a>구문  
-  
+
+이 클래스는 `wait` 또는 `run_and_wait` 메서드에 대한 중간 호출 없이 `task_group` 또는 `structured_task_group` 개체의 `run` 메서드를 사용하여 `task_handle` 개체가 여러 번 예약하는 경우 발생하는 예외를 설명합니다.
+
+## <a name="syntax"></a>구문
+
 ```
 class invalid_multiple_scheduling : public std::exception;
-```  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="public-constructors"></a>Public 생성자  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[invalid_multiple_scheduling](#ctor)|오버로드됨. `invalid_multiple_scheduling` 개체를 생성합니다.|  
-  
-## <a name="inheritance-hierarchy"></a>상속 계층  
- `exception`  
-  
- `invalid_multiple_scheduling`  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** concrt.h  
-  
- **네임스페이스:** 동시성  
-  
-##  <a name="ctor"></a> invalid_multiple_scheduling 
+```
 
- `invalid_multiple_scheduling` 개체를 생성합니다.  
-  
+## <a name="members"></a>멤버
+
+### <a name="public-constructors"></a>Public 생성자
+
+|이름|설명|
+|----------|-----------------|
+|[invalid_multiple_scheduling](#ctor)|오버로드됨. `invalid_multiple_scheduling` 개체를 생성합니다.|
+
+## <a name="inheritance-hierarchy"></a>상속 계층
+
+`exception`
+
+`invalid_multiple_scheduling`
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** concrt.h
+
+**네임스페이스:** 동시성
+
+##  <a name="ctor"></a> invalid_multiple_scheduling
+
+`invalid_multiple_scheduling` 개체를 생성합니다.
+
 ```
 explicit _CRTIMP invalid_multiple_scheduling(_In_z_ const char* _Message) throw();
 
 invalid_multiple_scheduling() throw();
-```  
-  
-### <a name="parameters"></a>매개 변수  
+```
+
+### <a name="parameters"></a>매개 변수
+
 *메시지 (_m)*<br/>
-오류 설명 메시지입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [Namespace 동시성](concurrency-namespace.md)   
- [task_handle 클래스](task-handle-class.md)   
- [task_group 클래스](task-group-class.md)   
- [run](task-group-class.md)   
- [wait](task-group-class.md)   
- [run_and_wait](task-group-class.md)   
- [structured_task_group 클래스](structured-task-group-class.md)
+오류 설명 메시지입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[concurrency 네임스페이스](concurrency-namespace.md)<br/>
+[task_handle 클래스](task-handle-class.md)<br/>
+[task_group 클래스](task-group-class.md)<br/>
+[run](task-group-class.md)<br/>
+[wait](task-group-class.md)<br/>
+[run_and_wait](task-group-class.md)<br/>
+[structured_task_group 클래스](structured-task-group-class.md)

@@ -22,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 81f5136ab18143f91a94525f6797e7711abc426a
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 0ed41f7025b3564ab05fe13e77d3e9400cd0f385
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318111"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46420233"
 ---
 # <a name="how-to-include-resources-at-compile-time"></a>방법: 컴파일 타임에 리소스 포함
 
@@ -63,5 +63,5 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[리소스 파일](../windows/resource-files-visual-studio.md)  
+[리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 [리소스 편집기](../windows/resource-editors.md)

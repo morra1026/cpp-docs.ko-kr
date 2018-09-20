@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2bbf6cb67973d7538aa7aea0d846cbadf030d585
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: dc59b9c93cebb622f40881d961709079abcd9166
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590654"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46388632"
 ---
 # <a name="eventtargetarrayeventtargetarray-constructor"></a>EventTargetArray::EventTargetArray 생성자
 
@@ -39,7 +39,7 @@ EventTargetArray(
 
 ### <a name="parameters"></a>매개 변수
 
-*hr*  
+*hr*<br/>
 이 생성자 작업을 수행한 후 매개 변수 *hr* 배열 할당 성공 또는 실패 여부를 나타냅니다. 다음 표에서 대 한 가능한 값 *hr*합니다.
 
 S_ok이 고, 작업에 성공 했습니다.
@@ -48,7 +48,7 @@ S_ok이 고, 작업에 성공 했습니다.
 
 S_FALSE 매개 변수 *항목* 0 보다 작거나 같음.
 
-*항목*  
+*항목*<br/>
 할당할 배열의 요소 수입니다.
 
 ## <a name="remarks"></a>설명
@@ -65,5 +65,5 @@ S_FALSE 매개 변수 *항목* 0 보다 작거나 같음.
 
 ## <a name="see-also"></a>참고 항목
 
-[EventTargetArray 클래스](../windows/eventtargetarray-class.md)  
+[EventTargetArray 클래스](../windows/eventtargetarray-class.md)<br/>
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

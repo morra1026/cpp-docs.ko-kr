@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9753578de006ed46719d94d5861035ab77dbca6c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 90317405f09695c57c907e94306623d5b3e2386d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752254"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419966"
 ---
 # <a name="date-and-time"></a>날짜 및 시간
 
@@ -44,6 +44,6 @@ MFC는 여러 가지 날짜 및 시간을 사용 하 여 작업을 지원합니�
 
 ## <a name="see-also"></a>참고 항목
 
-[개념](../mfc/mfc-concepts.md)   
+[개념](../mfc/mfc-concepts.md)<br/>
 [일반 MFC 항목](../mfc/general-mfc-topics.md)
 

@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 307024980c0d7e338030563507d17ebfd561d2e0
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 9d12392da00561239665859cf7fe26b13cccf8db
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44317630"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46384067"
 ---
 # <a name="displaying-or-hiding-the-colors-window-image-editor-for-icons"></a>색상 창 표시 또는 숨기기(아이콘에 대한 이미지 편집기)
 
@@ -49,5 +49,5 @@ ms.locfileid: "44317630"
 
 ## <a name="see-also"></a>참고 항목
 
-[색상 창](../windows/colors-window-image-editor-for-icons.md)  
+[색상 창](../windows/colors-window-image-editor-for-icons.md)<br/>
 [아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)

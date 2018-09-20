@@ -25,12 +25,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54968c551a79dbda1f81af682222e22ced5fdf0f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 0a851f93ae845d56b9c986e822e94970ad5cccd5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700089"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427136"
 ---
 # <a name="fp-name-pch-file"></a>/Fp(.PCH 파일 이름 지정)
 
@@ -80,7 +80,7 @@ CL /YuMYAPP.H /FpMYPCH.PCH PROG.CPP
 
 ## <a name="see-also"></a>참고 항목
 
-[출력 파일 (/ F) 옵션](../../build/reference/output-file-f-options.md)
+[출력 파일(/F) 옵션](../../build/reference/output-file-f-options.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
 [경로 이름 지정](../../build/reference/specifying-the-pathname.md)

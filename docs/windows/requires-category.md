@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6a1a7d656d307f6f0fcba446d3b58a625adfb8bc
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2e81b6f9dd40e84e0e6bb5af71a76b3ac9163e72
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42612771"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46434390"
 ---
 # <a name="requirescategory"></a>requires_category
 
@@ -38,7 +38,7 @@ ms.locfileid: "42612771"
 
 ### <a name="parameters"></a>매개 변수
 
-*requires_category*  
+*requires_category*<br/>
 필요한 범주의 ID입니다.
 
 ## <a name="remarks"></a>설명
@@ -47,7 +47,7 @@ ms.locfileid: "42612771"
 
 이 특성을 사용하려면 [coclass](../windows/coclass.md), [progid](../windows/progid.md)또는 [vi_progid](../windows/vi-progid.md) 특성(또는 이 중 하나를 암시하는 다른 특성)을 동일한 요소에 적용해야 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드는 개체 컨트롤 범주를 구현 하는 필요 합니다.
 
@@ -80,5 +80,5 @@ class CMyClass {};
 
 ## <a name="see-also"></a>참고 항목
 
-[COM 특성](../windows/com-attributes.md)  
+[COM 특성](../windows/com-attributes.md)<br/>
 [implements_category](../windows/implements-category.md)  

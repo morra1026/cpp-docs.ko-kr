@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 94f4aaeae3acb225c2fdc457af135e3534f8d381
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 02248c7c6f61823649d9643a7321677e23a4afbf
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313262"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46382910"
 ---
 # <a name="string-editor-c"></a>문자열 편집기 (c + +)
 
@@ -63,7 +63,7 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[리소스 편집기](../windows/resource-editors.md)  
-[문자열](https://msdn.microsoft.com/library/windows/desktop/ms646979.aspx)  
+[리소스 편집기](../windows/resource-editors.md)<br/>
+[문자열](https://msdn.microsoft.com/library/windows/desktop/ms646979.aspx)<br/>
 [문자열에 대 한](/windows/desktop/menurc/about-strings)
 

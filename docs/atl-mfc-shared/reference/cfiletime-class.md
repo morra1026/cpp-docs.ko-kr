@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 308222ab1276979bc839799f2f2d3fa393e606f9
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b81a8aeaf2b4475a95421853c4ab5822bc06abb3
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767831"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46437772"
 ---
 # <a name="cfiletime-class"></a>CFileTime 클래스
 
@@ -485,8 +485,8 @@ static const ULONGLONG Week = Day* 7;
 
 ## <a name="see-also"></a>참고 항목
 
-[FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)   
-[CFileTimeSpan 클래스](../../atl-mfc-shared/reference/cfiletimespan-class.md)   
-[계층 구조 차트](../../mfc/hierarchy-chart.md)   
+[FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)<br/>
+[CFileTimeSpan 클래스](../../atl-mfc-shared/reference/cfiletimespan-class.md)<br/>
+[계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC 공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)
 

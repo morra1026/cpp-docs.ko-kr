@@ -22,30 +22,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b9003ba503e0a78e5f223e766346d63679d9959
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2ac60fb8d1b12708c7e64a91beb224ca436e5005
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347888"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46404529"
 ---
 # <a name="frame-window-classes"></a>프레임 창 클래스
-각 응용 프로그램 "주 프레임 창," 캡션을 응용 프로그램 이름은 일반적으로 사용 하는 데스크톱 창 하나를 취합니다. 각 문서 일반적으로 개가 "문서 프레임 창입니다." 문서 프레임 창에 문서의 데이터를 표시 하는 하나 이상의 보기가 있습니다.  
-  
-## <a name="frame-windows-in-sdi-and-mdi-applications"></a>SDI 및 MDI 응용 프로그램의 프레임 창  
- SDI 응용 프로그램에 대 한가 한 프레임 창 클래스에서 파생 된 [CFrameWnd](../mfc/reference/cframewnd-class.md)합니다. 이 창은 주 프레임 창 및 문서 프레임 창 모두입니다. MDI 응용 프로그램에 대 한 주 프레임 창 클래스에서 파생 되며 [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md), 요소인 MDI 자식 창을 문서 프레임 창 클래스에서 파생 되 [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md)합니다.  
-  
-## <a name="use-the-frame-window-class-or-derive-from-it"></a>프레임 창 클래스를 사용 하 여 또는에서 파생  
- 이러한 클래스는 대부분의 응용 프로그램에 필요한 프레임 창 기능을 제공 합니다. 정상적인 상황에서는 기본 동작 및 모양을 제공 요구 사항에 맞게 됩니다. 추가 기능이 필요한 경우 이러한 클래스에서 파생 됩니다.  
-  
-### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목  
-  
--   [응용 프로그램 마법사로 만든 프레임 창 클래스](../mfc/frame-window-classes-created-by-the-application-wizard.md)  
-  
--   [프레임 창 스타일](../mfc/frame-window-styles-cpp.md)  
-  
--   [MFC에서 만든 창 스타일 변경](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)  
-  
-## <a name="see-also"></a>참고 항목  
- [프레임 창](../mfc/frame-windows.md)
+
+각 응용 프로그램에 "주 프레임 창," 캡션을에서 응용 프로그램 이름이 일반적으로 데스크톱 창 하나 있습니다. 각 문서 일반적으로 "문서 프레임 창입니다." 문서 프레임 창에는 문서의 데이터를 제공 하는 하나 이상의 보기가 있습니다.
+
+## <a name="frame-windows-in-sdi-and-mdi-applications"></a>SDI 및 MDI 응용 프로그램의 프레임 Windows
+
+SDI 응용 프로그램은 하나의 프레임 창 클래스에서 파생 된 [CFrameWnd](../mfc/reference/cframewnd-class.md)합니다. 이 창은 주 프레임 창 및 문서 프레임 창 모두입니다. MDI 응용 프로그램에 대 한 주 프레임 창 클래스에서 파생 된 [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md)에 MDI 자식 창을 문서 프레임 창 클래스에서 파생 됩니다 [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md)합니다.
+
+## <a name="use-the-frame-window-class-or-derive-from-it"></a>프레임 창 클래스를 사용 하 여 또는에서 파생
+
+이러한 클래스는 대부분의 응용 프로그램에 필요한 프레임 창 기능을 제공 합니다. 정상적인 상황에서 제공 하는 모양과 기본 동작에 요구에 맞게 됩니다. 추가 기능을 할 경우 이러한 클래스에서 파생 됩니다.
+
+### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+
+- [응용 프로그램 마법사로 만든 프레임 창 클래스](../mfc/frame-window-classes-created-by-the-application-wizard.md)
+
+- [프레임 창 스타일](../mfc/frame-window-styles-cpp.md)
+
+- [MFC에서 만든 창 스타일 변경](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)
+
+## <a name="see-also"></a>참고 항목
+
+[프레임 창](../mfc/frame-windows.md)
 

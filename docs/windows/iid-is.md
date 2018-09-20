@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 597d4c2e6fa9904906c2971c3c442a9f26779834
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3f1616168829d488a0b0a899f1dd09f9b02700ee
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215080"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46389345"
 ---
 # <a name="iidis"></a>iid_is
 
@@ -38,7 +38,7 @@ ms.locfileid: "43215080"
 
 ### <a name="parameters"></a>매개 변수
 
-*식*  
+*식*<br/>
 인터페이스 포인터를 가리키는 COM 인터페이스의 IID를 지정 하는 C 언어 식입니다.
 
 ## <a name="remarks"></a>설명
@@ -79,5 +79,5 @@ __interface IFireTabCtrl : IDispatch
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
 [매개 변수 특성](../windows/parameter-attributes.md)  

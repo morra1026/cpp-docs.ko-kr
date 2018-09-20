@@ -25,23 +25,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0cc12a76f73e2d84a4cb5df66a6dd3d01249265a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8a1006300a0d0a1bc0587e7866e97260ae293516
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343777"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46379842"
 ---
 # <a name="dialog-data-exchange-and-validation"></a>대화 상자 데이터 교환 및 유효성 검사
-대화 상자 데이터 교환 (DDX)에 대화 상자 컨트롤을 초기화 하 고 사용자가 데이터 입력을 수집 하기 위해 쉬운 방법입니다. 대화 상자 데이터 유효성 검사 (DDV) 대화 상자에서 데이터 항목을 확인할 쉽습니다. 활용 하기 위해 DDX 및 DDV 대화 상자에서를 사용 하 여는 [멤버 변수 추가 마법사](../ide/add-member-variable-wizard.md) 에 데이터 멤버를 만들고 데이터 형식으로 설정 하 고 유효성 검사 규칙을 지정 합니다.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목  
-  
--   [대화 상자 데이터 교환](../mfc/dialog-data-exchange.md)  
-  
--   [대화 상자 데이터 유효성 검사](../mfc/dialog-data-validation.md)  
-  
-## <a name="see-also"></a>참고 항목  
- [대화 상자](../mfc/dialog-boxes.md)   
- [대화 상자의 수명 주기](../mfc/life-cycle-of-a-dialog-box.md)
+
+대화 상자 데이터 교환 (DDX)는 대화 상자에서 컨트롤을 초기화 하 고 사용자가 데이터 입력을 수집 하는 간편한 방법입니다. 대화 상자 데이터 유효성 검사 (DDV) 대화 상자에서 데이터 입력의 유효성을 검사 하는 쉬운 방법이 됩니다. 를 이용 하려면 DDX 및 DDV 대화 상자에서 사용 합니다 [멤버 변수 추가 마법사](../ide/add-member-variable-wizard.md) 을 데이터 멤버를 만들어서 해당 데이터 형식을 설정 하 고 유효성 검사 규칙을 지정 합니다.
+
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+
+- [대화 상자 데이터 교환](../mfc/dialog-data-exchange.md)
+
+- [대화 상자 데이터 유효성 검사](../mfc/dialog-data-validation.md)
+
+## <a name="see-also"></a>참고 항목
+
+[대화 상자](../mfc/dialog-boxes.md)<br/>
+[대화 상자의 수명 주기](../mfc/life-cycle-of-a-dialog-box.md)
 

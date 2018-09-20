@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bf6ca06ffbd3912ac3545bc3c014224412c01bc1
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 4bbb5c62fb53d1246c1b8cc282b4ee36f0fcf58e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221172"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46377320"
 ---
 # <a name="aggregates"></a>집계
 
@@ -42,10 +42,10 @@ ms.locfileid: "43221172"
 
 ### <a name="parameters"></a>매개 변수
 
-*clsid*  
+*clsid*<br/>
 집계할 수 있는 개체의 CLSID를 지정합니다.
 
-*variable_name*  
+*variable_name*<br/>
 삽입될 변수의 이름입니다. 이 변수를 포함 합니다 `IUnknown` 집계 중인 개체입니다.
 
 ## <a name="remarks"></a>설명
@@ -106,9 +106,9 @@ struct CObject : IObject
 
 ## <a name="see-also"></a>참고 항목
 
-[COM 특성](../windows/com-attributes.md)  
-[클래스 특성](../windows/class-attributes.md)  
-[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  
-[집계](/windows/desktop/com/aggregation)  
-[집계할 수](/windows/desktop/Midl/aggregatable)  
+[COM 특성](../windows/com-attributes.md)<br/>
+[클래스 특성](../windows/class-attributes.md)<br/>
+[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[집계](/windows/desktop/com/aggregation)<br/>
+[집계할 수](/windows/desktop/Midl/aggregatable)<br/>
 [COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../atl/reference/com-interface-entry-macros.md#com_interface_entry_autoaggregate_blind)  

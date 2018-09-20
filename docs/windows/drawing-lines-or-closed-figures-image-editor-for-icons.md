@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c6c5652f61211ebd4d33de6f2dce07bd49b4f0a0
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 0ab40be4843b33e98daaf0f990e10544cb966a7d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313242"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46404386"
 ---
 # <a name="drawing-lines-or-closed-figures-image-editor-for-icons"></a>선 또는 닫힌 그림 그리기(아이콘에 대한 이미지 편집기)
 
@@ -63,7 +63,7 @@ ms.locfileid: "44313242"
 
 ## <a name="see-also"></a>참고 항목
 
-[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)  
-[그래픽 리소스 편집](../windows/editing-graphical-resources-image-editor-for-icons.md)  
-[아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)  
+[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+[그래픽 리소스 편집](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
+[아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)<br/>
 [색 작업](../windows/working-with-color-image-editor-for-icons.md)

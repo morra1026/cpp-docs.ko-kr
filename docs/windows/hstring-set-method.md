@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6eb2261ab973245c78ec8f5e0269663e5181a0ab
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 391af2939d4fc46f386299241f009ab2249200da
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590043"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46372216"
 ---
 # <a name="hstringset-method"></a>HString::Set 메서드
 
@@ -42,13 +42,13 @@ HRESULT Set(
 
 ### <a name="parameters"></a>매개 변수
 
-*str*  
+*str*<br/>
 와이드 문자 문자열입니다.
 
-*Len 함수*  
+*Len 함수*<br/>
 최대 길이 *str* 현재에 할당 되는 매개 변수 **HString** 개체입니다.
 
-*hstr*  
+*hstr*<br/>
 기존 **HString** 개체입니다.
 
 ## <a name="requirements"></a>요구 사항

@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 095d355ae26faf447b54a99437c843322efe5cb9
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 3dd07ead0608657597a81b239732347f67455273
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611750"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46436886"
 ---
 # <a name="microsoftwrldetails-namespace"></a>Microsoft::WRL::Details 네임스페이스
 
@@ -73,7 +73,7 @@ namespace Microsoft::WRL::Details;
 
 ### <a name="enumerations"></a>열거형
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[AsyncStatusInternal 열거형](../windows/asyncstatusinternal-enumeration.md)|비동기 작업의 상태 내부 열거형 사이 매핑을 지정 및 `Windows::Foundation::AsyncStatus` 열거형입니다.|
 
@@ -95,5 +95,5 @@ namespace Microsoft::WRL::Details;
 
 ## <a name="see-also"></a>참고 항목
 
-[Microsoft::WRL 네임스페이스](../windows/microsoft-wrl-namespace.md)  
+[Microsoft::WRL 네임스페이스](../windows/microsoft-wrl-namespace.md)<br/>
 [Microsoft::WRL::Wrappers 네임스페이스](../windows/microsoft-wrl-wrappers-namespace.md)

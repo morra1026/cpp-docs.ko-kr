@@ -17,21 +17,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2ef1e2135ebd780938fb0ed194a93058fd010f6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d749fad0fabf8ae99bba129caee399e3f93ff9af
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209156"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46443854"
 ---
 # <a name="global-hot-keys"></a>전역 바로 가기 키
-전역 바로 가기 키를 특정 비 자식 창에 연관 됩니다. 사용자를 시스템의 모든 부분에서 창을 활성화를 수 있습니다. 보내 특정 창에 대 한 전역 바로 가기 키를 설정 하는 응용 프로그램을 [WM_SETHOTKEY](/windows/desktop/inputdev/wm-sethotkey) 창에는 메시지입니다. 예를 들어 경우 `m_HotKeyCtrl` 되는 [CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md) 개체 및 `pMainWnd` 포인터가 바로 가기 키를 누르면 활성화할 창으로 컨트롤에 지정 된 바로 가기 키를 연결 하려면 다음 코드를 사용할 수 있습니다 창에서 가리키는 `pMainWnd`합니다.  
-  
- [!code-cpp[NVC_MFCControlLadenDialog#18](../mfc/codesnippet/cpp/global-hot-keys_1.cpp)]  
-  
- 전역 바로 가기 키를 누를 때마다 지정 된 창의 수신 된 [WM_SYSCOMMAND](/windows/desktop/menurc/wm-syscommand) 지정 하는 메시지 **SC_HOTKEY** 명령 형식으로 합니다. 이 메시지는 수신 하는 창도 활성화 합니다. 이 메시지는 정확한 키를 눌렀는지에 대 한 정보 포함 되어 있지 않으므로,이 메서드를 사용 하 여 없도록 동일한 창에 연결 될 수 있는 다양 한 바로 가기 키를 구별 합니다. 전송한 응용 프로그램 바로 가기 키까지 유효 **WM_SETHOTKEY** 종료 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [CHotKeyCtrl 사용](../mfc/using-chotkeyctrl.md)   
- [컨트롤](../mfc/controls-mfc.md)
+
+전역 바로 가기 키를 특정 비 자식 창에 연관 됩니다. 사용자를 시스템의 모든 부분에서 창을 활성화를 수 있습니다. 보내 특정 창에 대 한 전역 바로 가기 키를 설정 하는 응용 프로그램을 [WM_SETHOTKEY](/windows/desktop/inputdev/wm-sethotkey) 창에는 메시지입니다. 예를 들어 경우 `m_HotKeyCtrl` 되는 [CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md) 개체 및 `pMainWnd` 포인터가 바로 가기 키를 누르면 활성화할 창으로 컨트롤에 지정 된 바로 가기 키를 연결 하려면 다음 코드를 사용할 수 있습니다 창에서 가리키는 `pMainWnd`합니다.
+
+[!code-cpp[NVC_MFCControlLadenDialog#18](../mfc/codesnippet/cpp/global-hot-keys_1.cpp)]
+
+전역 바로 가기 키를 누를 때마다 지정 된 창의 수신 된 [WM_SYSCOMMAND](/windows/desktop/menurc/wm-syscommand) 지정 하는 메시지 **SC_HOTKEY** 명령 형식으로 합니다. 이 메시지는 수신 하는 창도 활성화 합니다. 이 메시지는 정확한 키를 눌렀는지에 대 한 정보 포함 되어 있지 않으므로,이 메서드를 사용 하 여 없도록 동일한 창에 연결 될 수 있는 다양 한 바로 가기 키를 구별 합니다. 전송한 응용 프로그램 바로 가기 키까지 유효 **WM_SETHOTKEY** 종료 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[CHotKeyCtrl 사용](../mfc/using-chotkeyctrl.md)<br/>
+[컨트롤](../mfc/controls-mfc.md)
 

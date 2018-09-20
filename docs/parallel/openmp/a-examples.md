@@ -12,12 +12,13 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c67c29bbded76f4ef44337e557b58b6bad828947
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 3747b8a73c372ae3226b1f0c4f762da34dc40eab
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695420"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46446246"
 ---
 # <a name="a-examples"></a>대답: 예제
-다음은이 문서에 정의 된 구문입니다. Note는 지시문 다음 문은 필요한 경우에 복합와 비 복합 문 앞에 오는 지시문에 대해 들여쓰게 됩니다.
+
+이 문서에 정의 된 구문 예제는 다음과 같습니다. 지시문을 다음 문이 필요한 경우에 복합 지 하는 지시문 앞에 관련 하 여 비 복합 문 들여쓰기 됩니다 note 합니다.

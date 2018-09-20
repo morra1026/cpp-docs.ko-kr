@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9c0b2c53bf06a748be522606f5904f307cc00df8
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 555dcfe83ab114db48942a5be604ff344dafa8ed
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591358"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46398724"
 ---
 # <a name="cominterfaceentry-c"></a>com_interface_entry(C++)
 
@@ -38,7 +38,7 @@ ms.locfileid: "42591358"
 
 ### <a name="parameters"></a>매개 변수
 
-*com_interface_entry*  
+*com_interface_entry*<br/>
 항목의 실제 텍스트를 포함 하는 문자열입니다. 가능한 값 목록을 참조 하세요 [COM_INTERFACE_ENTRY 매크로](../atl/reference/com-interface-entry-macros.md)합니다.
 
 ## <a name="remarks"></a>설명
@@ -70,7 +70,7 @@ ATL 인터페이스 맵의 첫 번째 항목 id로 사용 하기 때문에이 �
    };
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드는 두 항목의 기존 COM 인터페이스 맵에 추가 `CMyBaseClass`합니다. 첫 번째는 표준 인터페이스가 고 두 번째 숨깁니다는 `IDebugTest` 인터페이스입니다.
 
@@ -130,6 +130,6 @@ END_COM_MAP()
 
 ## <a name="see-also"></a>참고 항목
 
-[COM 특성](../windows/com-attributes.md)  
-[클래스 특성](../windows/class-attributes.md)  
+[COM 특성](../windows/com-attributes.md)<br/>
+[클래스 특성](../windows/class-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  

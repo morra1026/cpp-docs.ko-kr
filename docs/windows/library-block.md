@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 33febb69db2a8f3bd67205de2e6e5cf019016471
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 39067dd242fece7abb284448104115ac9a5ce4fd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598495"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46404373"
 ---
 # <a name="libraryblock"></a>library_block
 
@@ -38,7 +38,7 @@ IDL 라이브러리 블록 내에서 생성자를 배치합니다.
 
 라이브러리 블록 내부에 구문에 배치 하는 경우 참조 되는 여부에 관계 없이 형식 라이브러리로 전달 되는 확인할 수 있습니다. 기본적으로 유일한 구문에 의해 수정 된 [coclass](../windows/coclass.md)를 [dispinterface](../windows/dispinterface.md), 및 [idl_module](../windows/idl-module.md) 특성 라이브러리 블록에 배치 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에서 사용자 지정 인터페이스가 라이브러리 블록 내부에 배치 됩니다.
 
@@ -68,5 +68,5 @@ __interface IMyInterface {
 
 ## <a name="see-also"></a>참고 항목
 
-[컴파일러 특성](../windows/compiler-attributes.md)  
+[컴파일러 특성](../windows/compiler-attributes.md)<br/>
 [독립 실행형 특성](../windows/stand-alone-attributes.md)  

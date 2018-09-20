@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0132cdfb291c7c8691a6b31f00de125cb08b702d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: fa3bd3d0e44591ba56291a39187d373df980734a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764648"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46417724"
 ---
 # <a name="atlmfc-concepts"></a>ATL/MFC 개념
 
@@ -28,7 +28,7 @@ ms.locfileid: "43764648"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[문자열 (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)  
+[문자열 (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 응용 프로그램에서 문자열 데이터를 관리 하는 방법에 설명 합니다.
 
 ## <a name="see-also"></a>참고 항목

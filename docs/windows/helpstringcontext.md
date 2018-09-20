@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 49fada071661bd647e012bfdfac2aeedabba68fa
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 47afe841a2a8e4a1c41baf68dfd139a70b320c7d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43206604"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394467"
 ---
 # <a name="helpstringcontext"></a>helpstringcontext
 
@@ -38,7 +38,7 @@ ms.locfileid: "43206604"
 
 ### <a name="parameters"></a>매개 변수
 
-*컨텍스트 Id*  
+*컨텍스트 Id*<br/>
 32 비트 도움말 컨텍스트 식별자에는 **도움말** 파일입니다.
 
 ## <a name="remarks"></a>설명
@@ -79,8 +79,8 @@ __interface IMyI
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
-[인터페이스 특성](../windows/interface-attributes.md)  
-[클래스 특성](../windows/class-attributes.md)  
-[메서드 특성](../windows/method-attributes.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
+[인터페이스 특성](../windows/interface-attributes.md)<br/>
+[클래스 특성](../windows/class-attributes.md)<br/>
+[메서드 특성](../windows/method-attributes.md)<br/>
 [모듈](../windows/module-cpp.md)  

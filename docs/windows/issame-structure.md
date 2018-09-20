@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e9e45f64d8eda3e24fb7c85120f14e981963f7f1
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b7d1879217ac43e2d7d3714f491f44b8245f4f27
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595787"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46390528"
 ---
 # <a name="issame-structure"></a>IsSame 구조체
 
@@ -44,10 +44,10 @@ struct IsSame<T1, T1>;
 
 ### <a name="parameters"></a>매개 변수
 
-*T1*  
+*T1*<br/>
 형식입니다.
 
-*T2*  
+*T2*<br/>
 다른 형식입니다.
 
 ## <a name="remarks"></a>설명

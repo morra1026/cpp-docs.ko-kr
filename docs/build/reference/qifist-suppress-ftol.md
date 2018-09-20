@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d7c4bacec9da22e8c8ba9fd6330637a1fb25893
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 4b32557507cbe74fc1fde3963a1375318c7ef1e0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714742"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46448279"
 ---
 # <a name="qifist-suppress-ftol"></a>/QIfist(_ftol 사용 안 함)
 
@@ -75,6 +75,6 @@ ms.locfileid: "45714742"
 
 ## <a name="see-also"></a>참고 항목
 
-[/Q 옵션 (하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)
+[/Q 옵션(하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

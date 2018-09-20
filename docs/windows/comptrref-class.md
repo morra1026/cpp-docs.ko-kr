@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: aaeb641fc7b2276567edfb30fd36c46db6cfc5ae
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d4ec1139efae422035ef34030cfcffcc5547f0a2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613691"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46418504"
 ---
 # <a name="comptrref-class"></a>ComPtrRef 클래스
 
@@ -39,7 +39,7 @@ class ComPtrRef : public ComPtrRefBase<T>;
 
 #### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 A [ComPtr\<T >](../windows/comptr-class.md) 형식 또는 형식에서 파생 하 여이 나타내는 인터페이스 뿐만 아니라는 `ComPtr`합니다.
 
 ## <a name="remarks"></a>설명

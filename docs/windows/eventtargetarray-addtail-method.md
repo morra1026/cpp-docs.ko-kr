@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6609bba6d7adbddda152007e4db45c82f8039bc0
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ab0219c8893ff7ad35e29f9dd8b18be18caf8eb9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603680"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378126"
 ---
 # <a name="eventtargetarrayaddtail-method"></a>EventTargetArray::AddTail 메서드
 
@@ -38,7 +38,7 @@ void AddTail(
 
 ### <a name="parameters"></a>매개 변수
 
-*요소*  
+*요소*<br/>
 추가할 이벤트 처리기에 대 한 포인터입니다.
 
 ## <a name="remarks"></a>설명
@@ -55,5 +55,5 @@ void AddTail(
 
 ## <a name="see-also"></a>참고 항목
 
-[EventTargetArray 클래스](../windows/eventtargetarray-class.md)  
+[EventTargetArray 클래스](../windows/eventtargetarray-class.md)<br/>
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bdcd101759b35490451bf46bd6e222db469a3fba
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 26282ef73f6a979cd564bd7597f8418c6535179a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42581244"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46390521"
 ---
 # <a name="win32-application-wizard"></a>Win32 응용 프로그램 마법사
 
@@ -62,5 +62,5 @@ Windows 데스크톱 응용 프로그램을 만들었으면 [제네릭](../ide/g
 
 ## <a name="see-also"></a>참고 항목
 
-[빈 Windows 데스크톱 응용 프로그램 만들기](../windows/creating-an-empty-windows-desktop-application.md)  
+[빈 Windows 데스크톱 응용 프로그램 만들기](../windows/creating-an-empty-windows-desktop-application.md)<br/>
 [Visual C++ 프로젝트 형식](../ide/visual-cpp-project-types.md)

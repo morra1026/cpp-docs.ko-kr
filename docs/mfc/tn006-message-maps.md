@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6faa29858e94c7d80d6039e35278b6a7ae263a85
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 69aecab15ffb1914dbc8a6a6ae15fca307bc77ef
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43213979"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46386254"
 ---
 # <a name="tn006-message-maps"></a>TN006: 메시지 맵
 
@@ -87,7 +87,7 @@ protected:
 > [!NOTE]
 > Classwizard 함께 사용 해야 합니다 **afx_msg** 메시지 맵 처리기 선언에서 키워드입니다.
 
- 이러한 함수 시그니처는 간단한 규칙을 사용 하 여 파생 되었습니다. 함수의 이름을 항상 시작 `"On`"입니다. 이 배열을 제거 "WM_"를 사용 하 여 Windows 메시지의 이름과 대문자로 시작 하는 각 단어의 첫 글자 나옵니다. 매개 변수의 순서가 *wParam* 뒤 `LOWORD`(*lParam*) 한 다음 `HIWORD`(*lParam*). 사용 되지 않는 매개 변수 전달 되지 않습니다. MFC 클래스에 의해 래핑된 모든 핸들은 적절 한 MFC 개체에 대 한 포인터를 변환 됩니다. WM_PAINT 메시지를 처리 하는 방법을 보여 주는 다음 예제는 `CMyWnd::OnPaint` 호출할 함수입니다.
+이러한 함수 시그니처는 간단한 규칙을 사용 하 여 파생 되었습니다. 함수의 이름을 항상 시작 `"On`"입니다. 이 배열을 제거 "WM_"를 사용 하 여 Windows 메시지의 이름과 대문자로 시작 하는 각 단어의 첫 글자 나옵니다. 매개 변수의 순서가 *wParam* 뒤 `LOWORD`(*lParam*) 한 다음 `HIWORD`(*lParam*). 사용 되지 않는 매개 변수 전달 되지 않습니다. MFC 클래스에 의해 래핑된 모든 핸들은 적절 한 MFC 개체에 대 한 포인터를 변환 됩니다. WM_PAINT 메시지를 처리 하는 방법을 보여 주는 다음 예제는 `CMyWnd::OnPaint` 호출할 함수입니다.
 
 ```cpp
 BEGIN_MESSAGE_MAP(CMyWnd, CMyParentWndClass)
@@ -97,7 +97,7 @@ BEGIN_MESSAGE_MAP(CMyWnd, CMyParentWndClass)
 END_MESSAGE_MAP()
 ```
 
- 메시지 맵 테이블은 모든 함수 또는 클래스 정의의 범위를 벗어나는 정의 되어야 합니다. Extern "C" 블록에 추가 되지 않아야 합니다.
+메시지 맵 테이블은 모든 함수 또는 클래스 정의의 범위를 벗어나는 정의 되어야 합니다. Extern "C" 블록에 추가 되지 않아야 합니다.
 
 > [!NOTE]
 > ClassWizard 간에 발생 하는 메시지 맵 항목을 수정 합니다는 / / {{및 / /}을 (를) 주석 대괄호입니다.
@@ -223,7 +223,7 @@ ON_UPDATE_COMMAND_UI(id, memberFxn)
     }
     ```
 
- 고급 사용자는 단일 명령 처리기를 사용 하 여 다양 한 명령 처리할 수 있습니다: [ON_COMMAND_RANGE](reference/message-map-macros-mfc.md#on_command_range) 또는 ON_COMMAND_RANGE_EX 합니다. 이러한 매크로 대 한 자세한 내용은 제품 설명서를 참조 하세요.
+고급 사용자는 단일 명령 처리기를 사용 하 여 다양 한 명령 처리할 수 있습니다: [ON_COMMAND_RANGE](reference/message-map-macros-mfc.md#on_command_range) 또는 ON_COMMAND_RANGE_EX 합니다. 이러한 매크로 대 한 자세한 내용은 제품 설명서를 참조 하세요.
 
 > [!NOTE]
 > 클래스 마법사 만들기 ON_COMMAND 및 ON_UPDATE_COMMAND_UI 처리기를 지원 하지만 만들기 ON_COMMAND_EX 또는 ON_COMMAND_RANGE 처리기를 지원 하지 않습니다. 그러나 클래스 마법사 구문 분석 하 고 4 개의 명령 처리기 변형이 모두를 탐색할 수 있도록 합니다.
@@ -251,5 +251,5 @@ Windows 공용 컨트롤 사용 더욱 강력해 진 [WM_NOTIFY](https://msdn.mi
 
 ## <a name="see-also"></a>참고자료
 
-[번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)  
-[범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)  
+[번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
+[범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)

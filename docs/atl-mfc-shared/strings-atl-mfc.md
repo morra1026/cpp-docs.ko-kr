@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a918866710575ecc091fcce4564a7617d28a102d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f0751b218fe540a49c2cf0efde1dcf8976f2ebf6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752777"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46387317"
 ---
 # <a name="strings-atlmfc"></a>문자열 (ATL/MFC)
 
@@ -44,18 +44,18 @@ ms.locfileid: "43752777"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[CStringT 사용](../atl-mfc-shared/using-cstringt.md)  
+[CStringT 사용](../atl-mfc-shared/using-cstringt.md)<br/>
 CStringT 템플릿 클래스를 사용 하는 프로그래밍을 설명 합니다.
 
-[CString 사용](../atl-mfc-shared/using-cstring.md)  
+[CString 사용](../atl-mfc-shared/using-cstring.md)<br/>
 CString, CStringT의 기본 구현을 사용 하 여 프로그래밍에 대해 설명 합니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[CStringT 개요](../atl-mfc-shared/reference/cstringt-class.md)  
+[CStringT 개요](../atl-mfc-shared/reference/cstringt-class.md)<br/>
 공유에 대 한 참조 정보를 제공 `CStringT` 클래스입니다.
 
-[MFC 개념](../mfc/mfc-concepts.md)  
+[MFC 개념](../mfc/mfc-concepts.md)<br/>
 개념 및 작업 기반 항목 들을 제공 합니다. MFC 라이브러리를 사용 하 여 프로그래밍 합니다.
 
 ## <a name="see-also"></a>참고 항목

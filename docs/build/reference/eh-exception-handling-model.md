@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e946406a708f26685d6f1b7307476b6253c5362e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e2c368ac8dfcb5a9d283f4b567e68d4a629c1ba4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713295"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46417425"
 ---
 # <a name="eh-exception-handling-model"></a>/EH(예외 처리 모델)
 
@@ -120,5 +120,5 @@ int main() {
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
 [오류 및 예외 처리](../../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
-[예외 사양 (throw)](../../cpp/exception-specifications-throw-cpp.md)
-[구조적 예외 처리 (C/c + +)](../../cpp/structured-exception-handling-c-cpp.md)
+[예외 사양(throw)](../../cpp/exception-specifications-throw-cpp.md)<br/>
+[구조적 예외 처리(C/C++)](../../cpp/structured-exception-handling-c-cpp.md)

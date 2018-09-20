@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c44028f834d2b3200b970fdc613d0bf4d4efd29
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 7d9ab5157bb39b890c867c90e3b6a77cf189c9ef
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45702860"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46421273"
 ---
 # <a name="tlbout-name-tlb-file"></a>/TLBOUT(.TLB 파일 이름 지정)
 
@@ -68,6 +68,6 @@ MIDL 컴파일러가 있는 프로젝트를 연결 하는 경우 Visual c + + �
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)<br/>
-[/IGNOREIDL (처리 하지 않음 특성을 MIDL로)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)
-[/MIDL (MIDL 명령줄 옵션 지정)](../../build/reference/midl-specify-midl-command-line-options.md)
-[특성이 지정 된 프로그램 빌드](../../windows/building-an-attributed-program.md)
+[/IGNOREIDL(특성을 MIDL로 처리하지 않음)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)<br/>
+[/MIDL(MIDL 명령줄 옵션 지정)](../../build/reference/midl-specify-midl-command-line-options.md)<br/>
+[특성을 사용하는 프로그램 빌드](../../windows/building-an-attributed-program.md)

@@ -14,33 +14,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0a298c7fb9e50bb17d37224b69ce342c54115d7
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: bfbef45593a95cb8b317e7585119a6afbffd7a4e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687298"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46423613"
 ---
 # <a name="memory-management-functions"></a>메모리 관리 함수
-이 문서에서는 동시성 런타임에서 메모리 할당과 해제를 동시에 수 있도록 제공 하는 메모리 관리 함수를 설명 합니다.  
-  
+
+이 문서에서는 동시성 런타임에서 메모리 할당과 해제를 동시에 수행할 수 있도록 제공 하는 메모리 관리 함수를 설명 합니다.
+
 > [!TIP]
->  동시성 런타임은 기본 스케줄러를 제공하므로 응용 프로그램에서 스케줄러를 만들 필요가 없습니다. 작업 스케줄러를 사용 하면 응용 프로그램의 성능을 미세 조정할 수 있습니다, 때문에로 시작 하는 것이 좋습니다는 [라이브러리 PPL (병렬 패턴)](../../parallel/concrt/parallel-patterns-library-ppl.md) 또는 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md) 하려는 경우 동시성 런타임으로 새입니다.  
-  
- 동시성 런타임은 할당 하 고 메모리 블록을 동시에 해제에 대 한 최적화 된 두 메모리 관리 함수를 제공 합니다. [concurrency:: alloc](reference/concurrency-namespace-functions.md#alloc) 함수는 지정된 된 크기를 사용 하 여 메모리 블록을 할당 합니다. [concurrency:: free](reference/concurrency-namespace-functions.md#free) 함수에 의해 할당 된 메모리를 해제 `Alloc`합니다.  
-  
+>  동시성 런타임은 기본 스케줄러를 제공하므로 응용 프로그램에서 스케줄러를 만들 필요가 없습니다. 작업 Scheduler를 사용 하면 응용 프로그램의 성능을 미세 조정할 수 있습니다, 있기 때문에 시작 하는 것이 좋습니다 합니다 [PPL 병렬 패턴 라이브러리 ()](../../parallel/concrt/parallel-patterns-library-ppl.md) 또는 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md) 있다면 동시성 런타임으로 새입니다.
+
+동시성 런타임에서 할당 및 메모리 블록을 동시에 해제에 대 한 최적화 된 두 메모리 관리 함수를 제공 합니다. 합니다 [concurrency:: alloc](reference/concurrency-namespace-functions.md#alloc) 함수는 지정된 된 크기를 사용 하 여 메모리 블록을 할당 합니다. 합니다 [concurrency:: free](reference/concurrency-namespace-functions.md#free) 함수에 의해 할당 된 메모리를 해제 `Alloc`합니다.
+
 > [!NOTE]
->  `Alloc` 및 `Free` 함수 서로에 의존 합니다. 사용 하 여는 `Free` 만 사용 하 여 할당 하는 메모리를 해제 하는 함수는 `Alloc` 함수입니다. 또한 사용 하는 경우는 `Alloc` 메모리를 할당만 사용 하는 함수는 `Free` 함수를 해당 메모리를 해제 합니다.  
-  
- 사용 하 여는 `Alloc` 및 `Free` 할당 하 고 서로 다른 스레드 또는 작업에서 할당 크기의 고정된 된 집합을 해제 하는 경우의 작동 합니다. 동시성 런타임은 C 런타임 힙에서 할당 하는 메모리를 캐시 합니다. 각 실행 스레드;에 대 한 별도 메모리 캐시를 보유 하는 동시성 런타임 따라서 런타임에 잠금 또는 메모리 장벽을 사용 하지 않고 메모리를 관리합니다. 응용 프로그램에서 이점을 `Alloc` 및 `Free` 메모리 내 캐시에 더 자주 액세스할 때 작동 합니다. 자주 둘 다를 호출 하는 스레드는 예를 들어 `Alloc` 및 `Free` 주로 호출 하는 스레드 보다 더 많은 이점을 얻습니다 `Alloc` 또는 `Free`합니다.  
-  
+>  합니다 `Alloc` 및 `Free` 함수는 서로 의존 합니다. 사용 합니다 `Free` 만 사용 하 여 할당 하는 메모리를 해제 하는 함수는 `Alloc` 함수입니다. 또한 사용 하는 경우는 `Alloc` 메모리 할당만 사용 하는 함수는 `Free` 해당 메모리를 해제 하는 함수입니다.
+
+사용 된 `Alloc` 및 `Free` 할당 하 고 다른 스레드 또는 작업에서 할당 크기의 고정된 된 집합을 해제 하는 경우 함수입니다. 동시성 런타임은 C 런타임 힙에서 할당 된 메모리를 캐시 합니다. 동시성 런타임의 각 실행 스레드;에 대 한 별도 메모리 캐시를 보유합니다. 따라서 런타임에서 잠금이나 메모리 장벽을 사용 하지 않고 메모리를 관리 합니다. 응용 프로그램 혜택에서 더 많은 정보를 `Alloc` 및 `Free` 메모리 캐시를 더 자주 액세스 될 때 함수입니다. 예를 들어, 자주 둘 다를 호출 하는 스레드 `Alloc` 및 `Free` 주로 호출 하는 스레드 보다 더 많은 이점을 얻습니다 `Alloc` 또는 `Free`합니다.
+
 > [!NOTE]
->  이러한 메모리 관리 함수를 사용 하 고 프로그램 응용 프로그램 사용 하 여 많은 응용 프로그램 메모리를 입력할 수 있습니다 때 메모리 부족 상태 예상 보다 빨리 합니다. 한 스레드에서 캐시 되는 메모리 블록의 한 스레드가 많은 메모리를 보유 하는 경우 다른 스레드를 사용할 수 없기 때문 해당 메모리를 사용할 수 없습니다.  
-  
-## <a name="example"></a>예제  
- 사용 하는 예제에 대 한는 `Alloc` 및 `Free` 메모리 성능을 향상 시키는 함수 참조 [하는 방법: 사용 Alloc 및 Free 메모리 성능 개선에](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)   
- [방법: Alloc 및 Free를 사용하여 메모리 성능 개선](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)
+>  이러한 메모리 관리 함수를 사용 하 고 입력에 응용 프로그램에서는 많은 양의 메모리를 응용 프로그램 메모리 부족 상태 예상 보다 빨리 합니다. 하나의 스레드에서 캐시 되는 메모리 블록의 스레드와 많은 메모리를 보유 하는 경우 다른 스레드를 사용할 수 없기 때문 해당 메모리를 사용할 수 없습니다.
+
+## <a name="example"></a>예제
+
+사용 하는 예는 `Alloc` 및 `Free` 메모리 성능을 향상 시키기 위해 함수를 참조 하세요 [방법: 사용 Alloc 및 Free 메모리 성능 향상을](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md).
+
+## <a name="see-also"></a>참고 항목
+
+[작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
+[방법: Alloc 및 Free를 사용하여 메모리 성능 개선](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)
 

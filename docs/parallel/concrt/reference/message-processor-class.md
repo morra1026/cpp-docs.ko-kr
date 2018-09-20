@@ -21,109 +21,120 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f720ad2590a731792f79ef66a68dd2894a15517d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f3ff478b4471916fb51931ea59712be0d47d2b61
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46026922"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46404035"
 ---
 # <a name="messageprocessor-class"></a>message_processor 클래스
-`message_processor` 클래스는 `message` 개체 처리를 위한 추상 기본 클래스입니다. 메시지 순서에 대한 보장은 없습니다.  
-  
-## <a name="syntax"></a>구문  
-  
+
+`message_processor` 클래스는 `message` 개체 처리를 위한 추상 기본 클래스입니다. 메시지 순서에 대한 보장은 없습니다.
+
+## <a name="syntax"></a>구문
+
 ```
 template<class T>
 class message_processor;
-```  
-  
-#### <a name="parameters"></a>매개 변수  
-*T*<br/>
-이 데이터 형식의 메시지 페이로드의 처리 `message_processor` 개체입니다.  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="public-typedefs"></a>공용 Typedefs  
-  
-|이름|설명|  
-|----------|-----------------|  
-|`type`|에 대 한 형식 별칭을 `T`입니다.|  
-  
-### <a name="public-methods"></a>Public 메서드  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[async_send](#async_send)|파생된 클래스에서 재정의 하는 경우 메시지를 비동기적으로 블록에 넣습니다.|  
-|[sync_send](#sync_send)|파생된 클래스에서 재정의 되 면 메시지를 동기적으로 된 블록에 넣습니다.|  
-|[wait](#wait)|파생된 클래스에서 재정의 되 면 모든 비동기 작업이 완료 될 때까지 기다립니다.|  
-  
-### <a name="protected-methods"></a>보호된 메서드  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[process_incoming_message](#process_incoming_message)|파생된 클래스에서 재정의 되 면 블록으로 전달 메시지 처리를 수행 합니다. 새 메시지가 추가 되 고 큐가 비워 둘 수 때마다 한 번 호출 됩니다.|  
-  
-## <a name="inheritance-hierarchy"></a>상속 계층  
- `message_processor`  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** agents.h  
-  
- **네임스페이스:** 동시성  
-  
-##  <a name="async_send"></a> async_send 
+```
 
- 파생된 클래스에서 재정의 하는 경우 메시지를 비동기적으로 블록에 넣습니다.  
-  
+#### <a name="parameters"></a>매개 변수
+
+*T*<br/>
+이 데이터 형식의 메시지 페이로드의 처리 `message_processor` 개체입니다.
+
+## <a name="members"></a>멤버
+
+### <a name="public-typedefs"></a>공용 Typedefs
+
+|이름|설명|
+|----------|-----------------|
+|`type`|에 대 한 형식 별칭을 `T`입니다.|
+
+### <a name="public-methods"></a>Public 메서드
+
+|이름|설명|
+|----------|-----------------|
+|[async_send](#async_send)|파생된 클래스에서 재정의 하는 경우 메시지를 비동기적으로 블록에 넣습니다.|
+|[sync_send](#sync_send)|파생된 클래스에서 재정의 되 면 메시지를 동기적으로 된 블록에 넣습니다.|
+|[wait](#wait)|파생된 클래스에서 재정의 되 면 모든 비동기 작업이 완료 될 때까지 기다립니다.|
+
+### <a name="protected-methods"></a>보호된 메서드
+
+|이름|설명|
+|----------|-----------------|
+|[process_incoming_message](#process_incoming_message)|파생된 클래스에서 재정의 되 면 블록으로 전달 메시지 처리를 수행 합니다. 새 메시지가 추가 되 고 큐가 비워 둘 수 때마다 한 번 호출 됩니다.|
+
+## <a name="inheritance-hierarchy"></a>상속 계층
+
+`message_processor`
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** agents.h
+
+**네임스페이스:** 동시성
+
+##  <a name="async_send"></a> async_send
+
+파생된 클래스에서 재정의 하는 경우 메시지를 비동기적으로 블록에 넣습니다.
+
 ```
 virtual void async_send(_Inout_opt_ message<T>* _Msg) = 0;
-```  
-  
-### <a name="parameters"></a>매개 변수  
-*_Msg*<br/>
-`message` 비동기적으로 보낼 개체입니다.  
-  
-### <a name="remarks"></a>설명  
- 프로세서 구현에서는이 메서드를 재정의 해야 합니다.  
-  
-##  <a name="process_incoming_message"></a> process_incoming_message 
+```
 
- 파생된 클래스에서 재정의 되 면 블록으로 전달 메시지 처리를 수행 합니다. 새 메시지가 추가 되 고 큐가 비워 둘 수 때마다 한 번 호출 됩니다.  
-  
+### <a name="parameters"></a>매개 변수
+
+*_Msg*<br/>
+`message` 비동기적으로 보낼 개체입니다.
+
+### <a name="remarks"></a>설명
+
+프로세서 구현에서는이 메서드를 재정의 해야 합니다.
+
+##  <a name="process_incoming_message"></a> process_incoming_message
+
+파생된 클래스에서 재정의 되 면 블록으로 전달 메시지 처리를 수행 합니다. 새 메시지가 추가 되 고 큐가 비워 둘 수 때마다 한 번 호출 됩니다.
+
 ```
 virtual void process_incoming_message() = 0;
-```  
-  
-### <a name="remarks"></a>설명  
- 메시지 블록 구현은이 메서드를 재정의 해야 합니다.  
-  
-##  <a name="sync_send"></a> sync_send 
+```
 
- 파생된 클래스에서 재정의 되 면 메시지를 동기적으로 된 블록에 넣습니다.  
-  
+### <a name="remarks"></a>설명
+
+메시지 블록 구현은이 메서드를 재정의 해야 합니다.
+
+##  <a name="sync_send"></a> sync_send
+
+파생된 클래스에서 재정의 되 면 메시지를 동기적으로 된 블록에 넣습니다.
+
 ```
 virtual void sync_send(_Inout_opt_ message<T>* _Msg) = 0;
-```  
-  
-### <a name="parameters"></a>매개 변수  
-*_Msg*<br/>
-`message` 동기적으로 보낼 개체입니다.  
-  
-### <a name="remarks"></a>설명  
- 프로세서 구현에서는이 메서드를 재정의 해야 합니다.  
-  
-##  <a name="wait"></a> 대기 
+```
 
- 파생된 클래스에서 재정의 되 면 모든 비동기 작업이 완료 될 때까지 기다립니다.  
-  
+### <a name="parameters"></a>매개 변수
+
+*_Msg*<br/>
+`message` 동기적으로 보낼 개체입니다.
+
+### <a name="remarks"></a>설명
+
+프로세서 구현에서는이 메서드를 재정의 해야 합니다.
+
+##  <a name="wait"></a> 대기
+
+파생된 클래스에서 재정의 되 면 모든 비동기 작업이 완료 될 때까지 기다립니다.
+
 ```
 virtual void wait() = 0;
-```  
-  
-### <a name="remarks"></a>설명  
- 프로세서 구현에서는이 메서드를 재정의 해야 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [Namespace 동시성](concurrency-namespace.md)   
- [ordered_message_processor 클래스](ordered-message-processor-class.md)
+```
+
+### <a name="remarks"></a>설명
+
+프로세서 구현에서는이 메서드를 재정의 해야 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[concurrency 네임스페이스](concurrency-namespace.md)<br/>
+[ordered_message_processor 클래스](ordered-message-processor-class.md)

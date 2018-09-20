@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 51b2045a1605a37fa9c0d17fdc0c9456652345bd
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: b4adac3b4e593ab19287e21e5a965f3a28d008b8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314198"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427617"
 ---
 # <a name="how-to-search-for-symbols-in-resources-c"></a>방법: 리소스 (c + +)에서 기호 검색
 
@@ -49,6 +49,6 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)  
-[리소스 파일](../windows/resource-files-visual-studio.md)  
+[기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)<br/>
+[리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 [리소스 편집기](../windows/resource-editors.md)

@@ -14,33 +14,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3cd7c97762bb223621732b306fa3bf760e39e88a
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: d70133a686609b2b372f89f0e717d5a2f9bd7574
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705421"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435768"
 ---
 # <a name="stdx-namespace"></a>stdx 네임스페이스
-## <a name="syntax"></a>구문  
-  
+
+## <a name="syntax"></a>구문
+
 ```
 namespace stdx;
-```  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="functions"></a>함수  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[declval 함수](declval-function.md)||  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** ppltasks.h  
-  
-## <a name="see-also"></a>참고 항목  
- [참조](reference-concurrency-runtime.md)
+```
 
+## <a name="members"></a>멤버
 
+### <a name="functions"></a>함수
+
+|이름|설명|
+|----------|-----------------|
+|[declval 함수](declval-function.md)||
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** ppltasks.h
+
+## <a name="see-also"></a>참고 항목
+
+[참조](reference-concurrency-runtime.md)
 

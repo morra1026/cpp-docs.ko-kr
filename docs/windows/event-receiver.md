@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 23607eb9d59a5c860d89444205c675c95e2b907e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d30ac0d2e1d18b22c6130212503576f5fe343a8d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42594071"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46407547"
 ---
 # <a name="eventreceiver"></a>event_receiver
 
@@ -45,7 +45,7 @@ ms.locfileid: "42594071"
 
 ### <a name="parameters"></a>매개 변수
 
-*type*  
+*type*<br/>
 다음 값 중 하나의 열거형:
 
 - `native` 관리 되지 않는 C/c + + 코드 (기본 클래스에 대 한 기본값).
@@ -58,7 +58,7 @@ ms.locfileid: "42594071"
     #include <atlcom.h>
     ```
 
-*layout_dependent*  
+*layout_dependent*<br/>
 지정할 *layout_dependent* 경우에만 `type` = **com**합니다. *layout_dependent* 는 부울입니다.
 
 - **true** 수신기 일치 해야 하는 후크 되어 이벤트 소스 이벤트에서 대리자의 시그니처와 의미 합니다. 이벤트 수신기 처리기 이름은 관련 이벤트 소스 인터페이스에 지정 된 이름과 일치 해야 합니다. 사용 해야 합니다 `coclass` 때 *layout_dependent* 됩니다 **true**합니다. 것이 약간 더 효율적 지정할 **true**합니다.
@@ -91,9 +91,9 @@ ms.locfileid: "42594071"
 
 ## <a name="see-also"></a>참고 항목
 
-[컴파일러 특성](../windows/compiler-attributes.md)  
-[event_source](../windows/event-source.md)  
-[__event](../cpp/event.md)  
-[__hook](../cpp/hook.md)  
-[__unhook](../cpp/unhook.md)  
+[컴파일러 특성](../windows/compiler-attributes.md)<br/>
+[event_source](../windows/event-source.md)<br/>
+[__event](../cpp/event.md)<br/>
+[__hook](../cpp/hook.md)<br/>
+[__unhook](../cpp/unhook.md)<br/>
 [클래스 특성](../windows/class-attributes.md)  

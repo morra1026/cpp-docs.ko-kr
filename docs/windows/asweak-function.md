@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dea10165e920c6b0bbd3856fc04e9ec9661e60c4
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: dfd626a3e0ca1866f6db046554220c6e631c18b4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42571336"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394311"
 ---
 # <a name="asweak-function"></a>AsWeak 함수
 
@@ -40,13 +40,13 @@ HRESULT AsWeak(
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 매개 변수의 형식에 대 한 포인터 *p*합니다.
 
-*p*  
+*p*<br/>
 형식의 인스턴스입니다.
 
-*pWeak*  
+*pWeak*<br/>
 이 작업이 완료 되 면 매개 변수에 대 한 약한 참조에 대 한 포인터 *p*합니다.
 
 ## <a name="return-value"></a>반환 값

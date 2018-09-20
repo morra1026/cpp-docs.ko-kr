@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 20973969385d0b5c61872a12f4d0168420bc2eef
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8716c0a0f954b0a2ad0bbe0e25c29a4445b11823
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713185"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46428345"
 ---
 # <a name="c-preserve-comments-during-preprocessing"></a>/C(전처리 중에 주석 유지)
 
@@ -76,6 +76,6 @@ int i;   // a variable
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
-[/E (stdout으로 전처리)](../../build/reference/e-preprocess-to-stdout.md)
-[/P (파일로 전처리)](../../build/reference/p-preprocess-to-a-file.md)
-[/EP (#line 지시문 없이 stdout로 전처리)](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)
+[/E(stdout으로 전처리)](../../build/reference/e-preprocess-to-stdout.md)<br/>
+[/P(파일로 전처리)](../../build/reference/p-preprocess-to-a-file.md)<br/>
+[/EP(#line 지시문 없이 stdout으로 전처리)](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)

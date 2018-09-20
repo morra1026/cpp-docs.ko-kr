@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 92fd30b0b420080d33f9938bec4891ac80ac660d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 340323d2b540c74e600b76129edd360b73d0db23
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597080"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46372138"
 ---
 # <a name="partial--c-component-extensions"></a>partial(C++ 구성 요소 확장)
 
@@ -53,10 +53,10 @@ class-key identifier {
 
 ### <a name="parameters"></a>매개 변수
 
-*클래스 키*  
+*클래스 키*<br/>
 키워드는 클래스 또는 구조체는 Windows 런타임에서 지원 되는 선언입니다. 어느 **ref 클래스**를 **값 클래스**를 **ref 구조체**, 또는 **값 구조체**합니다.
 
-*identifier*  
+*identifier*<br/>
 정의 된 형식의 이름입니다.
 
 ### <a name="remarks"></a>설명

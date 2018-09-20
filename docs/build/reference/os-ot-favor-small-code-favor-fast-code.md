@@ -27,12 +27,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a6e2f6c8b18f2af6a78857225e153cf57365fa9
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: d74f313caec7ecb98faa3988e8e0dd59847917d5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45699837"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46381519"
 ---
 # <a name="os-ot-favor-small-code-favor-fast-code"></a>/Os, /OT(크기 우선 코드, 속도 우선 코드)
 
@@ -110,6 +110,6 @@ sub    eax, ecx
 
 ## <a name="see-also"></a>참고 항목
 
-[/O 옵션 (코드 최적화)](../../build/reference/o-options-optimize-code.md)
+[/O 옵션(코드 최적화)](../../build/reference/o-options-optimize-code.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

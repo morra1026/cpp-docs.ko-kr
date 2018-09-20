@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 47925bcc647d253775e4dd61f6a7f5d5fb586dde
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2083992bcb444a10b495b7007c698499f9cd9628
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599285"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419167"
 ---
 # <a name="semaphorelock-method"></a>Semaphore::Lock 메서드
 
@@ -43,10 +43,10 @@ static SyncLock Lock(
 
 ### <a name="parameters"></a>매개 변수
 
-*시간 (밀리초)*  
+*시간 (밀리초)*<br/>
 제한 시간 간격(밀리초)입니다. 기본값은 INFINITE으로, 무제한 대기합니다.
 
-*h*  
+*h*<br/>
 에 대 한 핸들을 **세마포** 개체입니다.
 
 ## <a name="return-value"></a>반환 값

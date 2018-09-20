@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 257ca11dcc44b22d6ddbb5043315d29a70377148
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: ebebd8d0b6dc53ef5d83374c329ebe35d23f7fe8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313951"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46443542"
 ---
 # <a name="how-to-specify-include-directories-for-resources-c"></a>방법: 지정 (c + +) 리소스에 대 한 포함 디렉터리
 
@@ -40,8 +40,8 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[리소스 내용 대화 상자](../windows/resource-includes-dialog-box.md)  
-[TN035: Visual C++에서 여러 개의 리소스 파일 및 헤더 파일 사용](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)  
-[기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)  
-[리소스 파일](../windows/resource-files-visual-studio.md)  
+[리소스 내용 대화 상자](../windows/resource-includes-dialog-box.md)<br/>
+[TN035: Visual C++에서 여러 개의 리소스 파일 및 헤더 파일 사용](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)<br/>
+[기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)<br/>
+[리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 [리소스 편집기](../windows/resource-editors.md)

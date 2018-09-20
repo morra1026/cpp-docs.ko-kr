@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2fa16a2cf15d5004ff80dda3188d79ffcba72ec1
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 4b6e05e654b66c2178b7dc6e772c95df89512d1d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316213"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46399849"
 ---
 # <a name="dialog-editor-tab-toolbox-c"></a>대화 상자 편집기 탭, 도구 상자 (c + +)
 
@@ -100,10 +100,10 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[컨트롤](../mfc/controls-mfc.md)  
-[컨트롤 클래스](../mfc/control-classes.md)  
-[대화 상자 클래스](../mfc/dialog-box-classes.md)  
-[스크롤 막대 스타일](../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles)  
-[Rich Edit 컨트롤 예](../mfc/rich-edit-control-examples.md)  
-[대화 상자 컨트롤에 사용할 이벤트 처리기 추가](../windows/adding-event-handlers-for-dialog-box-controls.md)  
+[컨트롤](../mfc/controls-mfc.md)<br/>
+[컨트롤 클래스](../mfc/control-classes.md)<br/>
+[대화 상자 클래스](../mfc/dialog-box-classes.md)<br/>
+[스크롤 막대 스타일](../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles)<br/>
+[Rich Edit 컨트롤 예](../mfc/rich-edit-control-examples.md)<br/>
+[대화 상자 컨트롤에 사용할 이벤트 처리기 추가](../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>
 [대화 상자 컨트롤 및 변수 형식](../ide/dialog-box-controls-and-variable-types.md)

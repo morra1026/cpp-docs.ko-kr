@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: eb08a9dce4c90c9efddd10683bc4b7c2ac0b08b9
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 85d32a3dc01f5c0a496e6471472dab1cfafa0ca0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314419"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46437471"
 ---
 # <a name="setting-accelerator-properties"></a>액셀러레이터 키 속성 설정
 
@@ -47,6 +47,6 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[미리 정의된 액셀러레이터 키](../windows/predefined-accelerator-keys.md)  
-[리소스 편집기](../windows/resource-editors.md)  
+[미리 정의된 액셀러레이터 키](../windows/predefined-accelerator-keys.md)<br/>
+[리소스 편집기](../windows/resource-editors.md)<br/>
 [액셀러레이터 키 편집기](../windows/accelerator-editor.md)

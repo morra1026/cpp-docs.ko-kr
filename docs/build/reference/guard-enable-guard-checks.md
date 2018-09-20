@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d775e9c42ceb8a564e2cc7992cb95ac9717a966d
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 71dc4a3a1f2c08d3bac2fcf5c474768f438feccd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45707683"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394987"
 ---
 # <a name="guard-enable-guard-checks"></a>/GUARD(보호 검사 사용)
 
@@ -47,6 +47,6 @@ CFG 사용 실행 가능 이미지를 만들려면 컴파일러와 링커 둘 �
 
 ## <a name="see-also"></a>참고 항목
 
-[/guard (제어 흐름 보호 사용)](../../build/reference/guard-enable-control-flow-guard.md)
+[/guard(제어 흐름 보호 사용)](../../build/reference/guard-enable-control-flow-guard.md)<br/>
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

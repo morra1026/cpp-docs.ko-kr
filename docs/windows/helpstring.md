@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ae2d5121e17a9325ec45143e7e90e7d2a211f380
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2892f957cf8937b5b030e7624bf3e39f546a7103
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43223100"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46437614"
 ---
 # <a name="helpstring"></a>helpstring
 
@@ -38,7 +38,7 @@ ms.locfileid: "43223100"
 
 ### <a name="parameters"></a>매개 변수
 
-*string*  
+*string*<br/>
 텍스트 도움말 문자열입니다.
 
 ## <a name="remarks"></a>설명
@@ -64,10 +64,10 @@ ms.locfileid: "43223100"
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
-[인터페이스 특성](../windows/interface-attributes.md)  
-[클래스 특성](../windows/class-attributes.md)  
-[메서드 특성](../windows/method-attributes.md)  
-[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  
-[helpfile](../windows/helpfile.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
+[인터페이스 특성](../windows/interface-attributes.md)<br/>
+[클래스 특성](../windows/class-attributes.md)<br/>
+[메서드 특성](../windows/method-attributes.md)<br/>
+[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[helpfile](../windows/helpfile.md)<br/>
 [helpcontext](../windows/helpcontext.md)  

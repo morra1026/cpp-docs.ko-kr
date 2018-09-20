@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 61a8e7b36448a485705b914fbb37892271d7d9fc
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7ce497c621f116c4755e8b47d148e24a9043b46b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597168"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46374752"
 ---
 # <a name="interfacelist-structure"></a>InterfaceList 구조체
 
@@ -40,10 +40,10 @@ struct InterfaceList;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 인터페이스 이름이; 재귀 목록의 첫 번째 인터페이스입니다.
 
-*U*  
+*U*<br/>
 인터페이스 이름이; 재귀 목록의 나머지 인터페이스입니다.
 
 ## <a name="remarks"></a>설명

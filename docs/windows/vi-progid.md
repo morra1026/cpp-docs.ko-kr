@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7c8924f7b22ed86adf7721018c4df3094a2069c1
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 4798cf5c283fc4a663da0e1af7110df63496a6c9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200697"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408247"
 ---
 # <a name="viprogid"></a>vi_progid
 
@@ -38,7 +38,7 @@ ProgID의 버전에 관계 없이 폼을 지정합니다.
 
 ### <a name="parameters"></a>매개 변수
 
-*name*  
+*name*<br/>
 개체를 나타내는 버전 독립 ProgID입니다.
 
 Progid는 COM/ActiveX 개체를 식별 하는 데 클래스 식별자 (CLSID)의 알기 쉬운 버전을 제공 합니다.
@@ -72,7 +72,7 @@ ATL 프로젝트의 경우는 [coclass](../windows/coclass.md) 특성도, 지정
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
-[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  
-[클래스 특성](../windows/class-attributes.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
+[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[클래스 특성](../windows/class-attributes.md)<br/>
 [ProgID 키](/windows/desktop/com/-progid--key)  

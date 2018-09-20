@@ -25,12 +25,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 18616b1010dfe6a23861c512b1113c30fe5251ce
-ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
+ms.openlocfilehash: 27a2cfaaf4ddb5ae58cdcd212b5fdcb7ded73bb0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45535355"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46434728"
 ---
 # <a name="implements-structure"></a>Implements 구조체
 
@@ -69,37 +69,37 @@ struct __declspec(novtable) Implements<RuntimeClassFlags<flags>, I0, I1, I2, I3,
 
 ### <a name="parameters"></a>매개 변수
 
-*I0*  
+*I0*<br/>
 0 번째 인터페이스 id입니다. (필수)
 
-*I1*  
+*I1*<br/>
 첫 번째 인터페이스 id입니다. 이 매개 변수는 선택 사항입니다.
 
-*I2*  
+*I2*<br/>
 두 번째 인터페이스 id입니다. 이 매개 변수는 선택 사항입니다.
 
-*I3*  
+*I3*<br/>
 세 번째 인터페이스 id입니다. 이 매개 변수는 선택 사항입니다.
 
-*I4*  
+*I4*<br/>
 네 번째 인터페이스 id입니다. 이 매개 변수는 선택 사항입니다.
 
-*I5*  
+*I5*<br/>
 다섯 번째 인터페이스 id입니다. 이 매개 변수는 선택 사항입니다.
 
-*I6*  
+*I6*<br/>
 여섯 번째 인터페이스 id입니다. 이 매개 변수는 선택 사항입니다.
 
-*I7*  
+*I7*<br/>
 일곱 번째 인터페이스 id입니다. 이 매개 변수는 선택 사항입니다.
 
-*I8*  
+*I8*<br/>
 여덟 번째 인터페이스 id입니다. 이 매개 변수는 선택 사항입니다.
 
-*I9*  
+*I9*<br/>
 아홉 번째 인터페이스 id입니다. 이 매개 변수는 선택 사항입니다.
 
-*flags*  
+*flags*<br/>
 클래스에 대 한 구성 플래그입니다. 하나 이상의 [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) 에 지정 된 열거형을 [RuntimeClassFlags](../windows/runtimeclassflags-structure.md) 구조입니다.
 
 ## <a name="remarks"></a>설명
@@ -163,10 +163,10 @@ __forceinline HRESULT CanCastTo(
 
 ### <a name="parameters"></a>매개 변수
 
-*riid*  
+*riid*<br/>
 인터페이스 ID에 대 한 참조
 
-*ppv*  
+*ppv*<br/>
 성공 하면 인터페이스에 대 한 포인터를 지정 *riid*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -206,10 +206,10 @@ __forceinline static void FillArrayWithIid(
 
 ### <a name="parameters"></a>매개 변수
 
-*index*  
+*index*<br/>
 이 작업에 대 한 시작 배열 요소를 나타내는 0부터 시작 인덱스입니다. 이 작업이 완료 되 면 *인덱스* 1 씩 증가 합니다.
 
-*iid*  
+*iid*<br/>
 IID 형식의 배열입니다.
 
 ### <a name="remarks"></a>설명

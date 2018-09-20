@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6ef3a2ce99309781ecbfd0c406fe8e0f6f7e0613
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5b34b0a55f079962860bb0d9055f19780273d267
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592120"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46406388"
 ---
 # <a name="converting-an-image-from-one-format-to-another-image-editor-for-icons"></a>이미지를 한 형식에서 다른 형식으로 변환(아이콘에 대한 이미지 편집기)
 
@@ -47,5 +47,5 @@ GIF 또는 JPEG 이미지를 열 수를 **이미지** 편집기 비트맵으로 
 
 ## <a name="see-also"></a>참고 항목
 
-[그래픽 리소스 편집](../windows/editing-graphical-resources-image-editor-for-icons.md)  
+[그래픽 리소스 편집](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
 [아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)

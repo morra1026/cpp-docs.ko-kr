@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bbb5bfb19d56ae41d743de795788961690f327b0
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d6e507fbb352279d406861b7ae1b2cf29aaa943c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42583418"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394909"
 ---
 # <a name="cropping-or-extending-an-entire-image-image-editor-for-icons"></a>전체 이미지 자르기 또는 확장(아이콘에 대한 이미지 편집기)
 
@@ -46,5 +46,5 @@ ms.locfileid: "42583418"
 
 ## <a name="see-also"></a>참고 항목
 
-[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)  
+[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [이미지 크기 조정](../windows/resizing-an-image-image-editor-for-icons.md)

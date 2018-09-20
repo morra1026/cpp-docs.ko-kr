@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a6c8d05d326e11ecfef4df8d22cbf2b8d92bd77
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: cbb90d36ea3da8e443eede8a3d74a35246077d52
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42545850"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46410269"
 ---
 # <a name="inlinedepth"></a>inline_depth
 인라인 추론 검색 수준을, 지정 된 수준 (의 호출 그래프) 보다 큰 경우 함수가 인라인 될가 되도록 *n*합니다.  
@@ -53,5 +53,5 @@ ms.locfileid: "42545850"
   
 ## <a name="see-also"></a>참고 항목  
  
-[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)   
+[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 [inline_recursion](../preprocessor/inline-recursion.md)

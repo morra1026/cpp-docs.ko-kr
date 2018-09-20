@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8847083fe134c36f506e7080772b1e5f0e2a873c
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: fbae13c6ce70533b8338d47893b6007a3032abab
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590184"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46416307"
 ---
 # <a name="activationfactorygetruntimeclassname-method"></a>ActivationFactory::GetRuntimeClassName 메서드
 
@@ -38,7 +38,7 @@ STDMETHOD(
 
 ### <a name="parameters"></a>매개 변수
 
-*runtimeName*  
+*runtimeName*<br/>
 이 작업이 완료 될 때, 개체의 런타임 클래스 이름을 포함 하는 문자열에 대 한 핸들을 현재 **ActivationFactory** 인스턴스화합니다.
 
 ## <a name="return-value"></a>반환 값

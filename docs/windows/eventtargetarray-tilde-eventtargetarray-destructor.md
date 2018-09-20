@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d6fc209158afc21872df869e81296b94159c5bc4
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: f880449dcc3839d0ce0f5532b7b7bc84324568d2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613562"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46428215"
 ---
 # <a name="eventtargetarrayeventtargetarray-destructor"></a>EventTargetArray::~EventTargetArray 소멸자
 
@@ -46,5 +46,5 @@ WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습
 
 ## <a name="see-also"></a>참고 항목
 
-[EventTargetArray 클래스](../windows/eventtargetarray-class.md)  
+[EventTargetArray 클래스](../windows/eventtargetarray-class.md)<br/>
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

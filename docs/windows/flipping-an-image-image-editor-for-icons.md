@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 15160ce25d0f20715ac05f1b3c525f932261bc0f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: be4ca3f7f11329505f665034a1f2983803c6d40c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599547"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46417373"
 ---
 # <a name="flipping-an-image-image-editor-for-icons"></a>이미지 대칭 이동(아이콘에 대한 이미지 편집기)
 
@@ -57,5 +57,5 @@ ms.locfileid: "42599547"
 
 ## <a name="see-also"></a>참고 항목
 
-[그래픽 리소스 편집](../windows/editing-graphical-resources-image-editor-for-icons.md)  
+[그래픽 리소스 편집](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
 [아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)

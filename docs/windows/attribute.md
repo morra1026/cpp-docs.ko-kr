@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 54699888fc2988dd9b4ccec2a57b6d9df0d4e79e
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 335b22b015bf244e39d67781eae21b3c43328256
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314775"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46379790"
 ---
 # <a name="attribute"></a>특성
 
@@ -43,13 +43,13 @@ ms.locfileid: "44314775"
 
 ### <a name="parameters"></a>매개 변수
 
-*AllowOn*  
+*AllowOn*<br/>
 사용자 지정 특성 적용 될 수 있는 언어 요소를 지정 합니다. 기본값은 `System::AttributeTargets::All` (참조 [System::AttributeTargets](https://msdn.microsoft.com/library/system.attributetargets.aspx)).
 
-*AllowMultiple*  
+*AllowMultiple*<br/>
 구문에 사용자 지정 특성 반복적으로 적용 될 수 있는지 여부를 지정 합니다. 기본값은 FALSE입니다.
 
-*상속*  
+*상속*<br/>
 서브 클래스에서 상속 될 특성 인지 여부를 나타냅니다. 컴파일러에서이 기능에 대 한 없는 특별 한 지원을 제공합니다 특성 소비자 작업이 (`Reflection`예를 들어)이이 정보를 준수 하도록 합니다. 하는 경우 *상속 된 항목* 가 TRUE 이면 특성 상속 됩니다. 하는 경우 *AllowMultiple* 가 TRUE 인 경우 특성 파생된 멤버는;에 누적 됩니다 *AllowMultiple* 은 FALSE 특성은 재정의 (또는 바꾸기) 상속에서 합니다. 하는 경우 *상속 된 항목* 은 FALSE 특성은 상속 되지 않습니다. 기본값은 TRUE입니다.
 
 ## <a name="remarks"></a>설명

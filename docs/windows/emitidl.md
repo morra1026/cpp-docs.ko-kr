@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7e1cb0a77c04a1bfea03f742686e1b28a6e2f04c
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 0c1704bf6ea5d8eaa2fc76db61fe0143c06b46ae
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43687852"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46429645"
 ---
 # <a name="emitidl"></a>emitidl
 
@@ -36,7 +36,7 @@ ms.locfileid: "43687852"
 
 ### <a name="parameters"></a>매개 변수
 
-*state*  
+*state*<br/>
 다음 값 중 하나: `true`, `false`를 `forced`, `restricted`에 `push`, 또는 `pop`합니다.
 
 - 경우 `true`, 소스 코드 파일에서 발생 한 모든 IDL 범주 특성이 생성된 된.idl 파일에 배치 됩니다. 이것이 기본 설정에 대 한 **emitidl**합니다.
@@ -77,5 +77,5 @@ ms.locfileid: "43687852"
 
 ## <a name="see-also"></a>참고 항목
 
-[컴파일러 특성](../windows/compiler-attributes.md)  
+[컴파일러 특성](../windows/compiler-attributes.md)<br/>
 [독립 실행형 특성](../windows/stand-alone-attributes.md)  

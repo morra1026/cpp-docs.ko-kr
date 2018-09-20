@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e2aa0b6e3928affbd30e08030f41a0b0183e46d8
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 8a66a849dceb5ba28eb6630b513a121e219a3588
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200683"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46432959"
 ---
 # <a name="maxis"></a>max_is
 
@@ -38,7 +38,7 @@ ms.locfileid: "43200683"
 
 ### <a name="parameters"></a>매개 변수
 
-*식*  
+*식*<br/>
 하나 이상의 C 언어 식입니다. 빈 인수 슬롯 허용 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -64,10 +64,10 @@ ms.locfileid: "43200683"
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
-[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  
-[매개 변수 특성](../windows/parameter-attributes.md)  
-[first_is](../windows/first-is.md)  
-[last_is](../windows/last-is.md)  
-[length_is](../windows/length-is.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
+[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[매개 변수 특성](../windows/parameter-attributes.md)<br/>
+[first_is](../windows/first-is.md)<br/>
+[last_is](../windows/last-is.md)<br/>
+[length_is](../windows/length-is.md)<br/>
 [size_is](../windows/size-is.md)  

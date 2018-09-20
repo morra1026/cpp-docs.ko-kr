@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0800812e39d4d5240b87b24961585610814cd367
-ms.sourcegitcommit: 27b5712badd09a09c499d887e2e4cf2208a28603
+ms.openlocfilehash: 28d1df72efcc1fa7408922876ad91bafcd2b005a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384958"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46422670"
 ---
 # <a name="c-developer-guidance-for-speculative-execution-side-channels"></a>투기적 실행 쪽 채널에 대 한 c + + 개발자 지침
 
@@ -31,7 +31,7 @@ ms.locfileid: "44384958"
 
 이 문서에서 제공 하는 지침으로 표시 하는 취약성의 클래스는 관련이 있습니다.
 
-1. CVE-2017-5753, Spectre variant 1 라고도 합니다. 이 하드웨어 취약점으로 인 한 클래스는 조건부 분기 오측의 결과로 발생 하는 투기적 실행으로 인해 발생할 수 있는 쪽 채널 관련이 있습니다. Visual Studio 2017 (버전 15.5.5부터 시작)에서 Visual c + + 컴파일러에 대 한 지원을 포함 합니다 `/Qspectre` CVE 2017-5753에 관련 된 잠재적으로 취약 한 코딩 패턴의 제한 된 집합에 대 한 컴파일 시간 완화 조치를 제공 하는 스위치입니다. 합니다 `/Qspectre` 스위치를 통해 Visual Studio 2015 업데이트 3에서 사용할 수 있는 이기도 [KB 4338871](https://support.microsoft.com/help/4338871)합니다. 에 대 한 설명서는 [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) 플래그 효과 및 사용에 자세한 정보를 제공 합니다. 
+1. CVE-2017-5753, Spectre variant 1 라고도 합니다. 이 하드웨어 취약점으로 인 한 클래스는 조건부 분기 오측의 결과로 발생 하는 투기적 실행으로 인해 발생할 수 있는 쪽 채널 관련이 있습니다. Visual Studio 2017 (버전 15.5.5부터 시작)에서 Visual c + + 컴파일러에 대 한 지원을 포함 합니다 `/Qspectre` CVE 2017-5753에 관련 된 잠재적으로 취약 한 코딩 패턴의 제한 된 집합에 대 한 컴파일 시간 완화 조치를 제공 하는 스위치입니다. 합니다 `/Qspectre` 스위치를 통해 Visual Studio 2015 업데이트 3에서 사용할 수 있는 이기도 [KB 4338871](https://support.microsoft.com/help/4338871)합니다. 에 대 한 설명서는 [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) 플래그 효과 및 사용에 자세한 정보를 제공 합니다.
 
 2. CVE-2018-3639, 라고도 [잘못 된 저장소 사용 안 함 (SSB)](https://aka.ms/sescsrdssb)합니다. 이 하드웨어 취약점으로 인 한 클래스는 메모리 액세스 오측 결과로 종속 저장소를 미리 로드의 투기적 실행으로 인해 발생할 수 있는 쪽 채널 관련이 있습니다.
 
@@ -55,9 +55,9 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 }
 ```
 
-이 예제에서는 `ReadByte` 가 해당 버퍼에 버퍼, 버퍼 크기와 인덱스를 제공 합니다. 인덱스 매개 변수에서 지정한 대로 `untrusted_index`, less에서 제공 하는 관리자가 아닌 프로세스와 같은 권한 있는 컨텍스트. 하는 경우 `untrusted_index` 는 보다 작은 `buffer_size`에서 해당 인덱스에 있는 문자를 읽은 다음 `buffer` 공유에서 참조 하는 메모리 영역에 인덱스를 사용 하 고 `shared_buffer`합니다. 
+이 예제에서는 `ReadByte` 가 해당 버퍼에 버퍼, 버퍼 크기와 인덱스를 제공 합니다. 인덱스 매개 변수에서 지정한 대로 `untrusted_index`, less에서 제공 하는 관리자가 아닌 프로세스와 같은 권한 있는 컨텍스트. 하는 경우 `untrusted_index` 는 보다 작은 `buffer_size`에서 해당 인덱스에 있는 문자를 읽은 다음 `buffer` 공유에서 참조 하는 메모리 영역에 인덱스를 사용 하 고 `shared_buffer`합니다.
 
-아키텍처 관점에서이 코드 시퀀스는 안전 하다는 보장이 `untrusted_index` 은 항상 미만 `buffer_size`합니다. 그러나 투기적 실행 시 있기 CPU는 조건부 분기 예측 실패 하 고 if의 본문을 실행는 문의 경우에 `untrusted_index` 보다 크거나 같음 `buffer_size`합니다. 따라서 CPU의 범위에서 일어난 바이트 읽을 추측 수 있습니다 `buffer` (하는 암호를 사용 가능)를 통해 후속 부하의 주소를 계산 하는 바이트 값을 사용할 수 없습니다 및 `shared_buffer`합니다. 
+아키텍처 관점에서이 코드 시퀀스는 안전 하다는 보장이 `untrusted_index` 은 항상 미만 `buffer_size`합니다. 그러나 투기적 실행 시 있기 CPU는 조건부 분기 예측 실패 하 고 if의 본문을 실행는 문의 경우에 `untrusted_index` 보다 크거나 같음 `buffer_size`합니다. 따라서 CPU의 범위에서 일어난 바이트 읽을 추측 수 있습니다 `buffer` (하는 암호를 사용 가능)를 통해 후속 부하의 주소를 계산 하는 바이트 값을 사용할 수 없습니다 및 `shared_buffer`합니다.
 
 의도 하지 않은 남아 있는 CPU이이 오측 감지 최종적으로 동안 경계에서 읽은 바이트 값에 대 한 정보를 표시 하는 CPU 캐시에 남아 있을 수 있습니다 `buffer`합니다. 이러한 부작용 작음 하 여 검색할 수에서 얼마나 신속 하 게 검색 하 여 시스템에서 실행 되는 권한 있는 컨텍스트 각 캐시 줄 `shared_buffer` 액세스. 이 위해 수행할 수 있는 단계를 다음과 같습니다.
 
@@ -73,14 +73,14 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 
 ## <a name="what-software-scenarios-can-be-impacted"></a>어떤 소프트웨어 시나리오에 영향이 있을 수 있습니다.
 
-과 같은 프로세스를 사용 하 여 보안 소프트웨어를 개발 합니다 [Security Development Lifecycle](https://www.microsoft.com/en-us/sdl/) (SDL)에 일반적으로 응용 프로그램에 존재 하는 신뢰 경계를 식별 하는 개발자가 필요 합니다. 트러스트 경계 경우 시스템에서 다른 프로세스 또는 커널 모드 장치 드라이버의 경우 관리자가 아닌 사용자 모드 프로세스와 같은 신뢰할 수 없는 context에서 제공 하는 데이터와 응용 프로그램 상호 작용할 수 있습니다 위치에 있습니다. 투기적 실행 쪽 채널 관련 된 취약점의 새 클래스 코드 및 장치에서 데이터를 격리 하는 기존 소프트웨어 보안 모델의 트러스트 경계 중 많은 부분에 관련이 있습니다. 
+과 같은 프로세스를 사용 하 여 보안 소프트웨어를 개발 합니다 [Security Development Lifecycle](https://www.microsoft.com/en-us/sdl/) (SDL)에 일반적으로 응용 프로그램에 존재 하는 신뢰 경계를 식별 하는 개발자가 필요 합니다. 트러스트 경계 경우 시스템에서 다른 프로세스 또는 커널 모드 장치 드라이버의 경우 관리자가 아닌 사용자 모드 프로세스와 같은 신뢰할 수 없는 context에서 제공 하는 데이터와 응용 프로그램 상호 작용할 수 있습니다 위치에 있습니다. 투기적 실행 쪽 채널 관련 된 취약점의 새 클래스 코드 및 장치에서 데이터를 격리 하는 기존 소프트웨어 보안 모델의 트러스트 경계 중 많은 부분에 관련이 있습니다.
 
 다음 표에서 발생 하는 이러한 취약성에 대 한 고려 개발자가 해야 할 수 있는 소프트웨어 보안 모델의 요약을 제공 합니다.
 
 |신뢰 경계|설명|
 |----------------|----------------|
-|가상 컴퓨터 경계|다른 가상 컴퓨터에서 신뢰할 수 없는 데이터를 수신 하는 별도 virtual machines에서 작업을 격리 하는 응용 프로그램은 위험할 수 있습니다.| 
-|커널 경계|관리자가 아닌 사용자 모드 프로세스에서 신뢰할 수 없는 데이터를 수신 하는 커널 모드 장치 드라이버는 위험할 수 있습니다.| 
+|가상 컴퓨터 경계|다른 가상 컴퓨터에서 신뢰할 수 없는 데이터를 수신 하는 별도 virtual machines에서 작업을 격리 하는 응용 프로그램은 위험할 수 있습니다.|
+|커널 경계|관리자가 아닌 사용자 모드 프로세스에서 신뢰할 수 없는 데이터를 수신 하는 커널 모드 장치 드라이버는 위험할 수 있습니다.|
 |프로세스 경계|위험에 노출 될 수 있습니다 메커니즘을 원격 프로시저 호출 (RPC), 공유 메모리 또는 다른 프로세스 간 통신 (IPC)을 통해 같은 로컬 시스템에서 실행 중인 다른 프로세스에서 신뢰할 수 없는 데이터를 수신 하는 응용 프로그램입니다.|
 |Enclave 경계|Enclave 외부에서 신뢰할 수 없는 데이터를 수신 하는 (예: Intel SGX) 보안 enclave 내에서 실행 하는 응용 프로그램은 위험할 수 있습니다.|
 |언어의 경계|해석 하는 응용 프로그램 또는 jit (JUST-IN-TIME) 컴파일 및 작성 하는 신뢰할 수 없는 코드를 실행 합니다. 상위 수준 언어를 위험에 노출 될 수 있습니다.|
@@ -133,7 +133,7 @@ unsigned char ReadBytes(unsigned char *buffer, unsigned int buffer_size) {
 
 ### <a name="array-out-of-bounds-load-feeding-an-indirect-branch"></a>배열 범위를 벗어나는 로드 간접 분기를 제공 합니다.
 
-이 코딩 패턴에서는 조건부 분기 오측 발생할 수 있는 대/소문자를 대상에는 간접 분기에는 다음 잠재 고객 문제를 해결 하는 함수 포인터의 배열에 대 한 액세스 범위를 벗어나는 읽은 범위를 벗어나는. 다음 코드 조각은이 보여 주는 예제를 제공 합니다. 
+이 코딩 패턴에서는 조건부 분기 오측 발생할 수 있는 대/소문자를 대상에는 간접 분기에는 다음 잠재 고객 문제를 해결 하는 함수 포인터의 배열에 대 한 액세스 범위를 벗어나는 읽은 범위를 벗어나는. 다음 코드 조각은이 보여 주는 예제를 제공 합니다.
 
 이 예제에서는 신뢰할 수 없는 메시지 식별자 제공 되어 통해 DispatchMessage는 `untrusted_message_id` 매개 변수입니다. 하는 경우 `untrusted_message_id` 는 보다 작은 `MAX_MESSAGE_ID`, 함수 포인터의 배열로 인덱스 및 분기에 사용 됩니다 해당 분기 대상입니다. 아키텍처 측면에서이 코드는 안전 하지만 CPU mispredicts 조건부 분기를에서 될 수 있습니다 `DispatchTable` 에 의해 인덱싱되고 `untrusted_message_id` 해당 값 보다 크거나 같은 경우 `MAX_MESSAGE_ID`를 따라서는 범위를 벗어나는 액세스 합니다. 이 추측을 통해 실행 되는 코드에 따라 정보 공개 문제점는 배열의 범위를 넘어 파생 되는 분기 대상 주소에서 투기적 실행 될 수 있습니다.
 
@@ -188,7 +188,7 @@ unsigned char WriteSlot(unsigned int untrusted_index, void *ptr) {
 
 ## <a name="speculative-type-confusion"></a>잘못 된 형식 혼동
 
-이 범주에 다룹니다 코딩 패턴을 잘못 된 형식 혼란이 발생할 수 있습니다. 이 아키텍처 패스를 따라는 잘못 된 문자를 사용 하 여 투기적 실행 하는 동안 메모리에 액세스할 때 발생 합니다. 조건부 분기 오측와 잘못 된 저장소 바이패스 잠재적으로 잘못 된 형식 혼란이 발생할 수 있습니다. 
+이 범주에 다룹니다 코딩 패턴을 잘못 된 형식 혼란이 발생할 수 있습니다. 이 아키텍처 패스를 따라는 잘못 된 문자를 사용 하 여 투기적 실행 하는 동안 메모리에 액세스할 때 발생 합니다. 조건부 분기 오측와 잘못 된 저장소 바이패스 잠재적으로 잘못 된 형식 혼란이 발생할 수 있습니다.
 
 잘못 된 저장소 바이패스에 대 한이 시나리오는 컴파일러 다시 여러 종류의 변수에 대 한 스택 위치를 사용 하는 위치에서 발생할 수 있습니다. 왜냐하면 형식 변수의의 아키텍처 저장소 `A` 있으므로 다음 형식의 부하 우회 될 수 있습니다 `A` 드리는 변수에 할당 되기 전에 실행 하 합니다. 이전에 저장 된 변수의 다른 종류의 경우 잘못 된 형식 혼동 조건을 만들 수이.
 
@@ -368,6 +368,5 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 
 ## <a name="see-also"></a>참고 항목
 
-[투기적 실행 사이드 채널 취약성을 완화 하기 위한 지침](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180002)
-
+[투기적 실행 사이드 채널 취약성을 완화 하기 위한 지침](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180002)<br/>
 [투기적 실행 쪽 채널 하드웨어 취약성을 완화 하기](https://blogs.technet.microsoft.com/srd/2018/03/15/mitigating-speculative-execution-side-channel-hardware-vulnerabilities/)

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 997b8bc01424b102551815f19ff9a487113e5f6b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e4aaef2cca5146291f7d3708a995a116768e0467
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601015"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46382938"
 ---
 # <a name="registrationscript"></a>registration_script
 
@@ -38,7 +38,7 @@ ms.locfileid: "42601015"
 
 ### <a name="parameters"></a>매개 변수
 
-*스크립트*  
+*스크립트*<br/>
 사용자 지정 등록 스크립트 (.rgs) 파일에 전체 경로입니다. 값이 **none**와 같은 `script = "none"`, coclass 없는 등록 요구 사항이 있음을 나타냅니다.
 
 ## <a name="remarks"></a>설명
@@ -47,7 +47,7 @@ ms.locfileid: "42601015"
 
 이 특성을 사용하려면 [coclass](../windows/coclass.md), [progid](../windows/progid.md)또는 [vi_progid](../windows/vi-progid.md) 특성(또는 이 중 하나를 암시하는 다른 특성)을 동일한 요소에 적용해야 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드는 구성 요소 cpp_attr_ref_registration_script.rgs 라는 레지스트리 스크립트를 갖도록 지정 합니다.
 
@@ -85,6 +85,6 @@ class CMyClass:public IFace {};
 
 ## <a name="see-also"></a>참고 항목
 
-[COM 특성](../windows/com-attributes.md)  
-[클래스 특성](../windows/class-attributes.md)  
+[COM 특성](../windows/com-attributes.md)<br/>
+[클래스 특성](../windows/class-attributes.md)<br/>
 [rdx](../windows/rdx.md)  

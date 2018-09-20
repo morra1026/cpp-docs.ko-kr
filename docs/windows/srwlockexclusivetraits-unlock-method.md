@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 84f1ef800154f4acf410d45528c50d86180bad39
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: cf16b1ed7d7e344665733caeb56670d503dc4a88
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607890"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46399459"
 ---
 # <a name="srwlockexclusivetraitsunlock-method"></a>SRWLockExclusiveTraits::Unlock 메서드
 
@@ -38,7 +38,7 @@ inline static void Unlock(
 
 ### <a name="parameters"></a>매개 변수
 
-*srwlock*  
+*srwlock*<br/>
 에 대 한 핸들을 `SRWLock` 개체입니다.
 
 ## <a name="requirements"></a>요구 사항

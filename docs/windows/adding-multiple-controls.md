@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: abaf92080710d4b69fc85684d523d2478bcd60d4
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 464b86ba90d4c53adfcf5016cad38d0fbc9034f5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44317136"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46413356"
 ---
 # <a name="adding-multiple-controls"></a>여러 개의 컨트롤 추가
 
@@ -40,6 +40,6 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)  
-[대화 상자 컨트롤에 사용할 이벤트 처리기 추가](../windows/adding-event-handlers-for-dialog-box-controls.md)  
+[대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)<br/>
+[대화 상자 컨트롤에 사용할 이벤트 처리기 추가](../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>
 [대화 상자 컨트롤 및 변수 형식](../ide/dialog-box-controls-and-variable-types.md)

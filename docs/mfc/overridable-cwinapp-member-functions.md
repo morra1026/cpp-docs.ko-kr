@@ -18,25 +18,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d454ce65a2068a00f9b2c7f5934951f295738c12
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ced9d7d5f7f49df50e028a299f83ddebdc9fc2d1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347713"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46395136"
 ---
 # <a name="overridable-cwinapp-member-functions"></a>재정의 가능 CWinApp 멤버 함수
-[CWinApp](../mfc/reference/cwinapp-class.md) 여러 키 재정의 가능한 멤버 함수를 제공 (`CWinApp` 클래스에서 이러한 구성원을 재정의 함 [CWinThread](../mfc/reference/cwinthread-class.md), 올 `CWinApp` 파생):  
-  
--   [InitInstance](../mfc/initinstance-member-function.md)  
-  
--   [실행](../mfc/run-member-function.md)  
-  
--   [ExitInstance](../mfc/exitinstance-member-function.md)  
-  
--   [OnIdle](../mfc/onidle-member-function.md)  
-  
- 재정의해야 하는 유일한 `CWinApp` 멤버 함수는 `InitInstance`입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [CWinApp: 응용 프로그램 클래스](../mfc/cwinapp-the-application-class.md)
+
+[CWinApp](../mfc/reference/cwinapp-class.md) 몇 가지 키 재정의 가능한 멤버 함수를 제공 (`CWinApp` 클래스에서 이러한 멤버를 재정의 [CWinThread](../mfc/reference/cwinthread-class.md), 올 `CWinApp` 파생):
+
+- [InitInstance](../mfc/initinstance-member-function.md)
+
+- [실행](../mfc/run-member-function.md)
+
+- [ExitInstance](../mfc/exitinstance-member-function.md)
+
+- [OnIdle](../mfc/onidle-member-function.md)
+
+재정의해야 하는 유일한 `CWinApp` 멤버 함수는 `InitInstance`입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[CWinApp: 응용 프로그램 클래스](../mfc/cwinapp-the-application-class.md)

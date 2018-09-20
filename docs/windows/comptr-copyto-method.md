@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c295767070da04d0173e3299576338e700a1c6aa
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: c9b84cbcc970183222ed06752dc61b5672615868
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597015"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46405387"
 ---
 # <a name="comptrcopyto-method"></a>ComPtr::CopyTo 메서드
 
@@ -48,13 +48,13 @@ HRESULT CopyTo(
 
 ### <a name="parameters"></a>매개 변수
 
-*U*  
+*U*<br/>
 형식 이름.
 
-*ptr*  
+*ptr*<br/>
 이 작업이 완료 될 때 요청된 된 인터페이스에 대 한 포인터입니다.
 
-*riid*  
+*riid*<br/>
 인터페이스 ID입니다.
 
 ## <a name="return-value"></a>반환 값

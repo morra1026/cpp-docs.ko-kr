@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: de318ab79638f63fae98856987340ad62534f695
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 723dbb3cec2281815c5733b8f2f0fff8f636a3a5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721347"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46402566"
 ---
 # <a name="safeintsafeint"></a>SafeInt::SafeInt
 
@@ -86,6 +86,6 @@ U에 저장 된 데이터 유형의 합니다 **SafeInt**합니다. 부울, 문�
 
 ## <a name="see-also"></a>참고 항목
 
-[SafeInt 라이브러리](../windows/safeint-library.md)  
-[SafeInt 클래스](../windows/safeint-class.md)  
+[SafeInt 라이브러리](../windows/safeint-library.md)<br/>
+[SafeInt 클래스](../windows/safeint-class.md)<br/>
 [SafeIntException 클래스](../windows/safeintexception-class.md)

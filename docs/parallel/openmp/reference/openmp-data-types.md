@@ -12,22 +12,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f33666b35f45bb668ab135941a0d15297442408a
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: b41eaf7012c1d119071281f98177e4a4d841890b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33690948"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46410075"
 ---
 # <a name="openmp-data-types"></a>OpenMP 데이터 형식
-OpenMP API에서 사용 되는 데이터 형식에 대 한 링크를 제공 합니다.  
-  
- 표준 OpenMP의 Visual c + + 구현을 다음 데이터 형식이 포함 됩니다.  
-  
-|데이터 형식|설명|  
-|---------------|-----------------|  
-|[omp_lock_t](../../../parallel/openmp/reference/omp-lock-t.md)|잠금, 잠금을 사용할 수 있는지 또는 스레드는 잠금을 소유 하는 경우의 상태를 보유 하는 형식입니다.|  
-|[omp_nest_lock_t](../../../parallel/openmp/reference/omp-nest-lock-t.md)|잠금에 대 한 정보는 다음과 같은 중 하나를 포함 하는 유형을: 잠금을 사용할 수는 스레드의 id를 소유 하는 잠금 및 중첩 수 있는지 여부를 합니다.|  
-  
-## <a name="see-also"></a>참고 항목  
- [라이브러리 참조](../../../parallel/openmp/reference/openmp-library-reference.md)
+
+OpenMP API에서 사용 되는 데이터 형식에 대 한 링크를 제공 합니다.
+
+표준 OpenMP의 Visual c + + 구현에는 다음 데이터 형식 포함 됩니다.
+
+|데이터 형식|설명|
+|---------------|-----------------|
+|[omp_lock_t](../../../parallel/openmp/reference/omp-lock-t.md)|잠금, 잠금을 사용할 수 있는지 또는 스레드가 잠금을 소유 하는 경우의 상태를 보유 하는 형식입니다.|
+|[omp_nest_lock_t](../../../parallel/openmp/reference/omp-nest-lock-t.md)|잠금에 대 한 정보는 다음과 같은 부분 중 하나를 포함 하는 형식: 잠금을 사용할 수는 스레드의 id를 소유 하는 잠금 및 중첩 수 있는지 여부를 합니다.|
+
+## <a name="see-also"></a>참고 항목
+
+[라이브러리 참조](../../../parallel/openmp/reference/openmp-library-reference.md)

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9f91474ec4c435b6fb2a005b47c67210a54d0804
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: abe76a4153ecfb0e4db4ce9e92eb63f5b00067ff
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44317266"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394649"
 ---
 # <a name="attributed-programming-concepts"></a>특성을 사용하는 프로그래밍 개념
 
@@ -32,27 +32,27 @@ Visual c + +에 다양을 한 프로그램에서 특성을 사용 하는 데는 
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[특성의 용도](../windows/purpose-of-attributes.md)  
+[특성의 용도](../windows/purpose-of-attributes.md)<br/>
 특성 사용된 프로그래밍의 개요를 제공합니다.
 
-[특성의 기본 메커니즘](../windows/basic-mechanics-of-attributes.md)  
+[특성의 기본 메커니즘](../windows/basic-mechanics-of-attributes.md)<br/>
 프로젝트에서 특성이 작동 하는 방법을 설명 합니다.
 
-[특성을 사용하는 프로그램 빌드](../windows/building-an-attributed-program.md)  
+[특성을 사용하는 프로그램 빌드](../windows/building-an-attributed-program.md)<br/>
 C + + 컴파일러 옵션을 사용 하 여 프로젝트에 대 한 정보를 제공 합니다.
 
-[특성 범주](../windows/attribute-categories.md)  
+[특성 범주](../windows/attribute-categories.md)<br/>
 Visual c + +에서 사용 되는 특성의 범주에 대 한 링크를 제공 합니다.
 
-[특성 Programmming FAQ](../windows/attribute-programming-faq.md)  
+[특성 Programmming FAQ](../windows/attribute-programming-faq.md)<br/>
 특성 사용된 프로그래밍에 대 한 자주 묻는 질문을 답변 합니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[특성 참조](../windows/cpp-attributes-reference.md)  
+[특성 참조](../windows/cpp-attributes-reference.md)<br/>
 개별 특성 및 용도 설명 하는 참조 항목에 대 한 링크를 제공 합니다.
 
-[삽입 된 코드 디버깅](/visualstudio/debugger/how-to-debug-injected-code)  
+[삽입 된 코드 디버깅](/visualstudio/debugger/how-to-debug-injected-code)<br/>
 특성 사용된 하는 프로그램의 디버깅에 대해 설명 합니다.
 
 [__super](../cpp/super.md)고 [__interface](../cpp/interface.md)  

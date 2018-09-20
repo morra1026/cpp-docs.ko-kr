@@ -1,5 +1,5 @@
 ---
-title: 'TN046: MFC 클래스의 주석 처리 규칙 | Microsoft Docs'
+title: 'TN046: MFC 클래스에 대 한 주석 처리 규칙 | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,17 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de24840ed3b6b7b747bb16cf26cbdb5aed29b1eb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9984e85bbdd047f7673d683e5c5237d93acb818b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33380827"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46429606"
 ---
 # <a name="tn046-commenting-conventions-for-the-mfc-classes"></a>TN046: MFC 클래스의 주석 처리 규칙
-이 기술 노트에서는 원래 MFC 클래스의 주석에 사용되는 규칙이 설명되었습니다. 이 정보에 대해서는 설명 이제 [MFC: MFC 소스 파일을 사용 하 여](../mfc/using-the-mfc-source-files.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)   
- [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
+
+이 기술 노트에서는 원래 MFC 클래스의 주석에 사용되는 규칙이 설명되었습니다. 이 정보에 설명 되어 [MFC: MFC 소스 파일을 사용 하 여](../mfc/using-the-mfc-source-files.md)입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
+[범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
 

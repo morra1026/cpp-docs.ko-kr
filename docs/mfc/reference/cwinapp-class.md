@@ -202,12 +202,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1236cbdaca396aa6d52d4e30095d9a0df5379142
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8a901b7bd102736bfbeec95a1afe8e44dc26ae3b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45712038"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46412186"
 ---
 # <a name="cwinapp-class"></a>CWinApp 클래스
 
@@ -393,7 +393,7 @@ void AddDocTemplate(CDocTemplate* pTemplate);
 
 ### <a name="parameters"></a>매개 변수
 
-*pTemplate*  
+*pTemplate*<br/>
 에 대 한 포인터를 `CDocTemplate` 추가 합니다.
 
 ### <a name="remarks"></a>설명
@@ -414,7 +414,7 @@ virtual void AddToRecentFileList(LPCTSTR lpszPathName);
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszPathName*  
+*lpszPathName*<br/>
 파일의 경로입니다.
 
 ### <a name="remarks"></a>설명
@@ -462,7 +462,7 @@ void CloseAllDocuments(BOOL bEndSession);
 
 ### <a name="parameters"></a>매개 변수
 
-*bEndSession*  
+*bEndSession*<br/>
 Windows 세션을 종료 되 고 있는지 여부를 지정 합니다. 이 TRUE 이면 세션을 종료 합니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
@@ -479,7 +479,7 @@ BOOL CreatePrinterDC(CDC& dc);
 
 ### <a name="parameters"></a>매개 변수
 
-*dc*  
+*dc*<br/>
 프린터 장치 컨텍스트에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -502,7 +502,7 @@ CWinApp(LPCTSTR lpszAppName = NULL);
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszAppName*  
+*lpszAppName*<br/>
 Windows를 사용 하는 응용 프로그램 이름을 포함 하는 null로 끝나는 문자열입니다. 이 인수는 제공 하지 않으면 아니거나 null 일 경우 경우 `CWinApp` AFX_IDS_APP_TITLE 리소스 문자열 또는 실행 파일의 파일 이름을 사용 합니다.
 
 ### <a name="remarks"></a>설명
@@ -526,13 +526,13 @@ LONG DelRegTree(
 
 ### <a name="parameters"></a>매개 변수
 
-*hParentKey*  
+*hParentKey*<br/>
 레지스트리 키에 대 한 핸들입니다.
 
-*strKeyName*  
+*strKeyName*<br/>
 삭제 하려는 레지스트리 키의 이름입니다.
 
-*pTM*  
+*pTM*<br/>
 CAtlTransactionManager 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -556,13 +556,13 @@ virtual int DoMessageBox(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszPrompt*  
+*lpszPrompt*<br/>
 메시지 상자 텍스트의 주소입니다.
 
-*n 형식*  
+*n 형식*<br/>
 메시지 상자가 [스타일](../../mfc/reference/styles-used-by-mfc.md#message-box-styles)합니다.
 
-*nIDPrompt*  
+*nIDPrompt*<br/>
 도움말 상황에 맞는 문자열로 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -585,7 +585,7 @@ virtual void DoWaitCursor(int nCode);
 
 ### <a name="parameters"></a>매개 변수
 
-*nCode*  
+*nCode*<br/>
 이 매개 변수가 1 이면 대기 커서를 표시 합니다. 0 인 경우 대기 커서를 참조 횟수를 증가 하지 않고 복원 됩니다. -1 이면 대기 커서를 종료 합니다.
 
 ### <a name="remarks"></a>설명
@@ -614,10 +614,10 @@ BOOL EnableD2DSupport(
 
 ### <a name="parameters"></a>매개 변수
 
-*d2dFactoryType*  
+*d2dFactoryType*<br/>
 D2d 및 리소스의 스레딩 모델을 만듭니다.
 
-*writeFactoryType*  
+*writeFactoryType*<br/>
 쓰기 팩터리 개체를 공유 또는 격리는 지 여부를 지정 하는 값
 
 ### <a name="return-value"></a>반환 값
@@ -660,7 +660,7 @@ BOOL EnableTaskbarInteraction(BOOL bEnable = TRUE);
 
 ### <a name="parameters"></a>매개 변수
 
-*bEnable*  
+*bEnable*<br/>
 Windows 7 작업 표시줄을 사용 하 여 상호 작용 (TRUE)를 사용할지 또는 해제 (FALSE) 여부를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -767,7 +767,7 @@ HKEY GetAppRegistryKey(CAtlTransactionManager* pTM = NULL);
 
 ### <a name="parameters"></a>매개 변수
 
-*pTM*  
+*pTM*<br/>
 `CAtlTransactionManager` 개체에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -834,7 +834,7 @@ CDocTemplate* GetNextDocTemplate(POSITION& pos) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*  
+*pos*<br/>
 에 대 한 이전 호출에서 반환 된 위치 값에 대 한 참조가 `GetNextDocTemplate` 나 [GetFirstDocTemplatePosition](#getfirstdoctemplateposition)합니다. 값이이 호출에서 다음 위치로 업데이트 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -859,7 +859,7 @@ BOOL GetPrinterDeviceDefaults(struct tagPDA* pPrintDlg);
 
 ### <a name="parameters"></a>매개 변수
 
-*pPrintDlg*  
+*pPrintDlg*<br/>
 에 대 한 포인터를 [PRINTDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpda) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -888,16 +888,16 @@ BOOL GetProfileBinary(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszSection*  
+*lpszSection*<br/>
 항목이 포함된 섹션을 지정하는 null로 끝나는 문자열을 가리킵니다.
 
-*lpszEntry*  
+*lpszEntry*<br/>
 값을 검색할 항목이 포함된 null로 끝나는 문자열을 가리킵니다.
 
-*ppData*  
+*ppData*<br/>
 데이터의 주소를 수신 하는 포인터를 가리킵니다.
 
-*pBytes*  
+*pBytes*<br/>
 크기 (바이트)의 데이터를 받을 UINT 가리킵니다.
 
 ### <a name="return-value"></a>반환 값
@@ -933,13 +933,13 @@ UINT GetProfileInt(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszSection*  
+*lpszSection*<br/>
 항목이 포함된 섹션을 지정하는 null로 끝나는 문자열을 가리킵니다.
 
-*lpszEntry*  
+*lpszEntry*<br/>
 값을 검색할 항목이 포함된 null로 끝나는 문자열을 가리킵니다.
 
-*n 기본*  
+*n 기본*<br/>
 프레임워크에서 항목을 찾을 수 없는 경우 반환할 기본값을 지정합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -974,13 +974,13 @@ CString GetProfileString(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszSection*  
+*lpszSection*<br/>
 항목이 포함된 섹션을 지정하는 null로 끝나는 문자열을 가리킵니다.
 
-*lpszEntry*  
+*lpszEntry*<br/>
 해당 문자열은 검색할 항목이 포함 된 null로 끝나는 문자열을 가리킵니다. 이 값에 NULL이 아니어야 합니다.
 
-*lpszDefault*  
+*lpszDefault*<br/>
 초기화 파일의 항목을 찾을 수 없는 경우 제공된 된 항목의 기본 문자열 값을 가리킵니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1010,10 +1010,10 @@ HKEY GetSectionKey(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszSection*  
+*lpszSection*<br/>
 가져올 키의 이름입니다.
 
-*pTM*  
+*pTM*<br/>
 `CAtlTransactionManager` 개체에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1042,10 +1042,10 @@ virtual void HtmlHelp(
 
 ### <a name="parameters"></a>매개 변수
 
-*dwData*  
+*dwData*<br/>
 추가 데이터를 지정합니다. 값에 따라 사용 되는 값을 *nCmd* 매개 변수입니다.
 
-*nCmd*  
+*nCmd*<br/>
 요청한 도움말의 형식을 지정합니다. 가능한 값 목록과 미치는 영향에 대 한 합니다 *dwData* 매개 변수를 참조 합니다 *uCommand* 에 대 한 the HTMLHelp API 함수에서 Windows SDK에 설명 된 매개 변수.
 
 ### <a name="remarks"></a>설명
@@ -1105,10 +1105,10 @@ HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nID
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszResourceName*  
+*lpszResourceName*<br/>
 커서 리소스의 이름이 포함 된 null로 끝나는 문자열을 가리킵니다. 사용할 수는 `CString` 이 인수에 대 한 합니다.
 
-*nIDResource*  
+*nIDResource*<br/>
 커서 리소스의 ID입니다. 리소스의 목록을 참조 하세요 [LoadCursor](/windows/desktop/api/winuser/nf-winuser-loadcursora) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1135,10 +1135,10 @@ HICON LoadIcon(LPCTSTR lpszResourceName) const;  HICON LoadIcon(UINT nIDResource
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszResourceName*  
+*lpszResourceName*<br/>
 아이콘 리소스의 이름을 포함 하는 null로 끝나는 문자열을 가리킵니다. 사용할 수도 있습니다는 `CString` 이 인수에 대 한 합니다.
 
-*nIDResource*  
+*nIDResource*<br/>
 아이콘 리소스의 ID.
 
 ### <a name="return-value"></a>반환 값
@@ -1164,7 +1164,7 @@ HCURSOR LoadOEMCursor(UINT nIDCursor) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*nIDCursor*  
+*nIDCursor*<br/>
 **OCR_** 미리 정의 된 Windows 커서를 지정 하는 상수 식별자를 매니페스트 합니다. 있어야 `#define OEMRESOURCE` 하기 전에 `#include \<afxwin.h>` 에 액세스할 수 합니다 **OCR_** WINDOWS의 상수입니다. 8.
 
 ### <a name="return-value"></a>반환 값
@@ -1191,7 +1191,7 @@ HICON LoadOEMIcon(UINT nIDIcon) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*nIDIcon*  
+*nIDIcon*<br/>
 **OIC_** 미리 정의 된 Windows 아이콘을 지정 하는 상수 식별자를 매니페스트 합니다. 있어야 `#define OEMRESOURCE` 하기 전에 `#include \<afxwin.h>` 에 액세스 하려면 합니다 **OIC_** WINDOWS의 상수입니다. 8.
 
 ### <a name="return-value"></a>반환 값
@@ -1212,7 +1212,7 @@ HCURSOR LoadStandardCursor(LPCTSTR lpszCursorName) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszCursorName*  
+*lpszCursorName*<br/>
 **IDC_** 미리 정의 된 Windows 커서를 지정 하는 상수 식별자를 매니페스트 합니다. 이러한 식별자는 WINDOWS에 정의 됩니다. 8. 다음 목록은 가능한 미리 정의 된 값과 의미 *lpszCursorName*:
 
 - IDC_ARROW 표준 화살표 커서
@@ -1261,7 +1261,7 @@ HICON LoadStandardIcon(LPCTSTR lpszIconName) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszIconName*  
+*lpszIconName*<br/>
 미리 정의 된 Windows 아이콘을 지정 하는 매니페스트 상수 식별자입니다. 이러한 식별자는 WINDOWS에 정의 됩니다. 8. 가능한 미리 정의 된 값 및 해당 설명의 목록을 참조 하세요. 합니다 *lpIconName* 에 매개 변수 [LoadIcon](/windows/desktop/api/winuser/nf-winuser-loadicona) Windows SDK의 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1282,7 +1282,7 @@ void LoadStdProfileSettings(UINT nMaxMRU = _AFX_MRU_COUNT);
 
 ### <a name="parameters"></a>매개 변수
 
-*nMaxMRU*  
+*nMaxMRU*<br/>
 최근에 사용한 파일 추적의 수입니다.
 
 ### <a name="remarks"></a>설명
@@ -1558,7 +1558,7 @@ virtual BOOL OnDDECommand(LPTSTR lpszCommand);
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszCommand*  
+*lpszCommand*<br/>
 응용 프로그램이 수신한 DDE 명령 문자열을 가리킵니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1697,7 +1697,7 @@ virtual BOOL OnIdle(LONG lCount);
 
 ### <a name="parameters"></a>매개 변수
 
-*lCount*  
+*lCount*<br/>
 카운터를 증가 될 때마다 `OnIdle` 응용 프로그램의 메시지 큐가 비어 있을 때 호출 됩니다. 이 횟수가 새 메시지가 처리 될 때마다 0으로 재설정 됩니다. 사용할 수는 *lCount* 매개 변수를 응용 프로그램 연결이 유휴 상태 메시지를 처리 하지 않고 상대적 기간을 확인 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1773,7 +1773,7 @@ void ParseCommandLine(CCommandLineInfo& rCmdInfo);
 
 ### <a name="parameters"></a>매개 변수
 
-*rCmdInfo*  
+*rCmdInfo*<br/>
 에 대 한 참조를 [CCommandLineInfo](../../mfc/reference/ccommandlineinfo-class.md) 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -1802,7 +1802,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ### <a name="parameters"></a>매개 변수
 
-*pMsg*  
+*pMsg*<br/>
 에 대 한 포인터를 [MSG](../../mfc/reference/msg-structure1.md) 처리할 메시지를 포함 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1821,10 +1821,10 @@ virtual BOOL ProcessMessageFilter(
 
 ### <a name="parameters"></a>매개 변수
 
-*코드*  
+*코드*<br/>
 후크 코드를 지정합니다. 이 멤버 함수는 코드를 사용 하 여 처리 하는 방법을 결정 *lpMsg 합니다.*
 
-*lpMsg*  
+*lpMsg*<br/>
 Windows에 대 한 포인터 [MSG](../../mfc/reference/msg-structure1.md) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1847,7 +1847,7 @@ BOOL ProcessShellCommand(CCommandLineInfo& rCmdInfo);
 
 ### <a name="parameters"></a>매개 변수
 
-*rCmdInfo*  
+*rCmdInfo*<br/>
 에 대 한 참조를 [CCommandLineInfo](../../mfc/reference/ccommandlineinfo-class.md) 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1892,10 +1892,10 @@ virtual LRESULT ProcessWndProcException(
 
 ### <a name="parameters"></a>매개 변수
 
-*e*  
+*e*<br/>
 예외로 포인터입니다.
 
-*pMsg*  
+*pMsg*<br/>
 A [MSG](../../mfc/reference/msg-structure1.md) 예외를 throw 하기 위해 프레임 워크를 발생 시킨 windows 메시지에 대 한 정보를 포함 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -2127,13 +2127,13 @@ void SelectPrinter(
 
 ### <a name="parameters"></a>매개 변수
 
-*hDevNames*  
+*hDevNames*<br/>
 에 대 한 핸들을 [DEVNAMES](../../mfc/reference/devnames-structure.md) 드라이버, 장치 및 특정 프린터의 출력 포트 이름을 식별 하는 구조입니다.
 
-*hDevMode*  
+*hDevMode*<br/>
 에 대 한 핸들을 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 장치 초기화 및 프린터의 환경에 대 한 정보를 지정 하는 구조입니다.
 
-*bFreeOld*  
+*bFreeOld*<br/>
 이전에 선택한 프린터를 해제합니다.
 
 ### <a name="remarks"></a>설명
@@ -2150,7 +2150,7 @@ void SetHelpMode(AFX_HELP_TYPE eHelpType);
 
 ### <a name="parameters"></a>매개 변수
 
-*eHelpType*  
+*eHelpType*<br/>
 사용 하는 도움말의 형식을 지정 합니다. 참조 [CWinApp::m_eHelpType](#m_ehelptype) 자세한 내용은 합니다.
 
 ### <a name="remarks"></a>설명
@@ -2170,10 +2170,10 @@ void SetRegistryKey(UINT nIDRegistryKey);
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszRegistryKey*  
+*lpszRegistryKey*<br/>
 키의 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
-*nIDRegistryKey*  
+*nIDRegistryKey*<br/>
 레지스트리 키의 이름을 포함 하는 문자열 리소스의 ID입니다.
 
 ### <a name="remarks"></a>설명
@@ -2266,10 +2266,10 @@ virtual void WinHelp(
 
 ### <a name="parameters"></a>매개 변수
 
-*dwData*  
+*dwData*<br/>
 추가 데이터를 지정합니다. 값에 따라 사용 되는 값을 *nCmd* 매개 변수입니다.
 
-*nCmd*  
+*nCmd*<br/>
 요청한 도움말의 형식을 지정합니다. 가능한 값 목록과 미치는 영향에 대 한 합니다 *dwData* 매개 변수를 참조 합니다 [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows 함수입니다.
 
 ### <a name="remarks"></a>설명
@@ -2296,16 +2296,16 @@ BOOL WriteProfileBinary(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszSection*  
+*lpszSection*<br/>
 항목이 포함된 섹션을 지정하는 null로 끝나는 문자열을 가리킵니다. 섹션 존재 하지 않는 경우 만들어집니다. 섹션의 이름은 대/소문자 독립; 모든 조합을 대문자 및 소문자 문자열 수 있습니다.
 
-*lpszEntry*  
+*lpszEntry*<br/>
 값이 쓰여질 항목이 포함 된 null로 끝나는 문자열을 가리킵니다. 지정된 된 섹션에 항목이 없으면 자동으로 만들어집니다.
 
-*pData*  
+*pData*<br/>
 쓸 데이터를 가리킵니다.
 
-*nBytes*  
+*nBytes*<br/>
 쓸 바이트 수를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -2333,13 +2333,13 @@ BOOL WriteProfileInt(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszSection*  
+*lpszSection*<br/>
 항목이 포함된 섹션을 지정하는 null로 끝나는 문자열을 가리킵니다. 섹션 존재 하지 않는 경우 만들어집니다. 섹션의 이름은 대/소문자 독립; 모든 조합을 대문자 및 소문자 문자열 수 있습니다.
 
-*lpszEntry*  
+*lpszEntry*<br/>
 값이 쓰여질 항목이 포함 된 null로 끝나는 문자열을 가리킵니다. 지정된 된 섹션에 항목이 없으면 자동으로 만들어집니다.
 
-*n 값*  
+*n 값*<br/>
 쓸 값을 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -2367,13 +2367,13 @@ BOOL WriteProfileString(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszSection*  
+*lpszSection*<br/>
 항목이 포함된 섹션을 지정하는 null로 끝나는 문자열을 가리킵니다. 섹션 존재 하지 않는 경우 만들어집니다. 섹션의 이름은 대/소문자 독립; 모든 조합을 대문자 및 소문자 문자열 수 있습니다.
 
-*lpszEntry*  
+*lpszEntry*<br/>
 값이 쓰여질 항목이 포함 된 null로 끝나는 문자열을 가리킵니다. 지정된 된 섹션에 항목이 없으면 자동으로 만들어집니다. 섹션에서 지정 된이 매개 변수가 NULL 이면 *lpszSection* 삭제 됩니다.
 
-*lpszValue*  
+*lpszValue*<br/>
 쓸 문자열을 가리킵니다. 이 매개 변수가 NULL 인 항목을 지정 합니다 *lpszEntry* 매개 변수 삭제 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -2396,13 +2396,13 @@ void SetAppID(LPCTSTR lpcszAppID);
 
 ### <a name="parameters"></a>매개 변수
 
-*lpcszAppID*  
+*lpcszAppID*<br/>
 응용 프로그램 사용자 모델 ID를 지정합니다.
 
 ### <a name="remarks"></a>설명
 
 ## <a name="see-also"></a>참고 항목
 
-[CWinThread 클래스](../../mfc/reference/cwinthread-class.md)  
-[계층 구조 차트](../../mfc/hierarchy-chart.md)  
-[방법: 다시 시작 관리자 지원 추가](../../mfc/how-to-add-restart-manager-support.md)  
+[CWinThread 클래스](../../mfc/reference/cwinthread-class.md)<br/>
+[계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
+[방법: 다시 시작 관리자 지원 추가](../../mfc/how-to-add-restart-manager-support.md)

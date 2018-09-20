@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3eb82c5c86411af63ea79a4dbcf2e54d2d3ce5f5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: aba3fc80e13504485cc5a4f93fb3ad35031d4ef7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46038310"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46440045"
 ---
 # <a name="walkthrough-creating-a-uwp-app-using-wrl-and-media-foundation"></a>연습: WRL 및 Media Foundation을 사용 하 여 UWP 앱 만들기
 
@@ -131,6 +131,6 @@ ms.locfileid: "46038310"
 
 ## <a name="see-also"></a>참고 항목
 
-[Windows 런타임 C++ 템플릿 라이브러리(WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)  
-[Microsoft 미디어 파운데이션](/windows/desktop/medfound/microsoft-media-foundation-sdk)  
+[Windows 런타임 C++ 템플릿 라이브러리(WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)<br/>
+[Microsoft 미디어 파운데이션](/windows/desktop/medfound/microsoft-media-foundation-sdk)<br/>
 [미디어 확장명 샘플](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)

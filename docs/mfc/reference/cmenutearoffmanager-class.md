@@ -34,191 +34,209 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ca3af6aba4c208672038de2ca663efdb2cc9d9a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: dc4a6ee892c70a53e28031ff8dd9ef874d252a86
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700936"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46380879"
 ---
 # <a name="cmenutearoffmanager-class"></a>CMenuTearOffManager 클래스
-분리 메뉴를 관리합니다. 분리 메뉴는 메뉴 모음의 메뉴입니다. 사용자는 메뉴 모음에서 분리 메뉴를 제거하여 이동 가능한 상태로 만들 수 있습니다.  
-  
-   자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.  
-   
-## <a name="syntax"></a>구문  
-  
-```  
-class CMenuTearOffManager : public CObject  
-```  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="public-constructors"></a>Public 생성자  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[CMenuTearOffManager::CMenuTearOffManager](#cmenutearoffmanager)|`CMenuTearOffManager` 개체를 생성합니다.|  
-  
-### <a name="public-methods"></a>Public 메서드  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[CMenuTearOffManager::Build](#build)||  
-|[CMenuTearOffManager::GetRegPath](#getregpath)||  
-|[CMenuTearOffManager::Initialize](#initialize)|초기화는 `CMenuTearOffManager` 개체입니다.|  
-|[CMenuTearOffManager::IsDynamicID](#isdynamicid)||  
-|[CMenuTearOffManager::Parse](#parse)||  
-|[CMenuTearOffManager::Reset](#reset)||  
-|[CMenuTearOffManager::SetInUse](#setinuse)||  
-|[CMenuTearOffManager::SetupTearOffMenus](#setuptearoffmenus)||  
-  
-## <a name="remarks"></a>설명  
- 응용 프로그램에서 분리 메뉴를 사용 하려면 있어야를 `CMenuTearOffManager` 개체입니다. 대부분의 경우에서 만들기 또는 초기화 하지 않습니다는 `CMenuTearOffManager` 직접 개체입니다. 이 처리를 호출 하는 경우는 [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus) 함수입니다.  
-  
-## <a name="example"></a>예제  
- 다음 예제에는 생성 하 고 초기화 하는 방법을 보여 줍니다.는 `CMenuTearOffManager` 를 호출 하 여 개체를 `CWinAppEX::EnableTearOffMenus` 메서드. 이 코드 조각은 [워드 패드 샘플](../../visual-cpp-samples.md)의 일부입니다.  
-  
- [!code-cpp[NVC_MFC_WordPad#12](../../mfc/reference/codesnippet/cpp/cmenutearoffmanager-class_1.cpp)]  
-  
-## <a name="inheritance-hierarchy"></a>상속 계층  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- `CMenuTearOffManager`   
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** afxmenutearoffmanager.h  
-  
-##  <a name="build"></a>  CMenuTearOffManager::Build  
 
-  
-```  
+분리 메뉴를 관리합니다. 분리 메뉴는 메뉴 모음의 메뉴입니다. 사용자는 메뉴 모음에서 분리 메뉴를 제거하여 이동 가능한 상태로 만들 수 있습니다.
+
+   자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+
+## <a name="syntax"></a>구문
+
+```
+class CMenuTearOffManager : public CObject
+```
+
+## <a name="members"></a>멤버
+
+### <a name="public-constructors"></a>Public 생성자
+
+|이름|설명|
+|----------|-----------------|
+|[CMenuTearOffManager::CMenuTearOffManager](#cmenutearoffmanager)|`CMenuTearOffManager` 개체를 생성합니다.|
+
+### <a name="public-methods"></a>Public 메서드
+
+|이름|설명|
+|----------|-----------------|
+|[CMenuTearOffManager::Build](#build)||
+|[CMenuTearOffManager::GetRegPath](#getregpath)||
+|[CMenuTearOffManager::Initialize](#initialize)|초기화는 `CMenuTearOffManager` 개체입니다.|
+|[CMenuTearOffManager::IsDynamicID](#isdynamicid)||
+|[CMenuTearOffManager::Parse](#parse)||
+|[CMenuTearOffManager::Reset](#reset)||
+|[CMenuTearOffManager::SetInUse](#setinuse)||
+|[CMenuTearOffManager::SetupTearOffMenus](#setuptearoffmenus)||
+
+## <a name="remarks"></a>설명
+
+응용 프로그램에서 분리 메뉴를 사용 하려면 있어야를 `CMenuTearOffManager` 개체입니다. 대부분의 경우에서 만들기 또는 초기화 하지 않습니다는 `CMenuTearOffManager` 직접 개체입니다. 이 처리를 호출 하는 경우는 [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus) 함수입니다.
+
+## <a name="example"></a>예제
+
+다음 예제에는 생성 하 고 초기화 하는 방법을 보여 줍니다.는 `CMenuTearOffManager` 를 호출 하 여 개체를 `CWinAppEX::EnableTearOffMenus` 메서드. 이 코드 조각은 [워드 패드 샘플](../../visual-cpp-samples.md)의 일부입니다.
+
+[!code-cpp[NVC_MFC_WordPad#12](../../mfc/reference/codesnippet/cpp/cmenutearoffmanager-class_1.cpp)]
+
+## <a name="inheritance-hierarchy"></a>상속 계층
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+`CMenuTearOffManager`
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** afxmenutearoffmanager.h
+
+##  <a name="build"></a>  CMenuTearOffManager::Build
+
+
+```
 void Build(
-    UINT uiTearOffBarID,  
+    UINT uiTearOffBarID,
     CString& strText);
-```  
-  
-### <a name="parameters"></a>매개 변수  
+```
+
+### <a name="parameters"></a>매개 변수
+
 *uiTearOffBarID*<br/>
-[in] [in] *strText*  
-  
-### <a name="remarks"></a>설명  
-  
-##  <a name="cmenutearoffmanager"></a>  CMenuTearOffManager::CMenuTearOffManager  
- 생성 된 [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) 개체입니다.  
-  
-```  
+[in] [in] *strText*
+
+### <a name="remarks"></a>설명
+
+##  <a name="cmenutearoffmanager"></a>  CMenuTearOffManager::CMenuTearOffManager
+
+생성 된 [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) 개체입니다.
+
+```
 CMenuTearOffManager();
-```  
-  
-### <a name="remarks"></a>설명  
- 대부분의 경우, 만들지 않아야는 `CMenuTearOffManager` 수동으로. 응용 프로그램의 프레임 워크를 만듭니다는 `CMenuTearOffManager` 개체를 호출할 때 [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus)합니다.  
-  
-##  <a name="getregpath"></a>  CMenuTearOffManager::GetRegPath  
+```
 
-  
-```  
-LPCTSTR GetRegPath() const;  
-```  
-  
-### <a name="return-value"></a>반환 값  
-  
-### <a name="remarks"></a>설명  
-  
-##  <a name="initialize"></a>  CMenuTearOffManager::Initialize  
- 초기화 된 [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) 개체입니다.  
-  
-```  
+### <a name="remarks"></a>설명
+
+대부분의 경우, 만들지 않아야는 `CMenuTearOffManager` 수동으로. 응용 프로그램의 프레임 워크를 만듭니다는 `CMenuTearOffManager` 개체를 호출할 때 [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus)합니다.
+
+##  <a name="getregpath"></a>  CMenuTearOffManager::GetRegPath
+
+
+```
+LPCTSTR GetRegPath() const;
+```
+
+### <a name="return-value"></a>반환 값
+
+### <a name="remarks"></a>설명
+
+##  <a name="initialize"></a>  CMenuTearOffManager::Initialize
+
+초기화 된 [CMenuTearOffManager](../../mfc/reference/cmenutearoffmanager-class.md) 개체입니다.
+
+```
 BOOL Initialize(
-    LPCTSTR lpszRegEntry,  
-    UINT uiTearOffMenuFirst,  
+    LPCTSTR lpszRegEntry,
+    UINT uiTearOffMenuFirst,
     UINT uiTearOffMenuLast);
-```  
-  
-### <a name="parameters"></a>매개 변수  
+```
+
+### <a name="parameters"></a>매개 변수
+
 *lpszRegEntry*<br/>
-[in] 레지스트리 항목의 경로 포함 하는 문자열입니다. 이 레지스트리 항목에서 분리 막대가 막대에 대 한 설정을 저장 하는 응용 프로그램.  
-  
+[in] 레지스트리 항목의 경로 포함 하는 문자열입니다. 이 레지스트리 항목에서 분리 막대가 막대에 대 한 설정을 저장 하는 응용 프로그램.
+
 *uiTearOffMenuFirst*<br/>
-[in] 분리 메뉴에 대 한 첫 번째 메뉴 ID를 지정 합니다.  
-  
+[in] 분리 메뉴에 대 한 첫 번째 메뉴 ID를 지정 합니다.
+
 *uiTearOffMenuLast*<br/>
-[in] 분리 메뉴에 대 한 마지막 메뉴 ID를 지정 합니다.  
-  
-### <a name="return-value"></a>반환 값  
- 성공하면 0이 아니고, 그렇지 않으면 0입니다.  
-  
-### <a name="remarks"></a>설명  
- 메뉴 Id 범위의 *uiTearOffMenuFirst* 하 *uiTearOffMenuLast* 연속 간격 이어야 합니다. 간격의 응용 프로그램에서 동시에 나타날 수 있는 분리 메뉴를 정의 합니다.  
-  
-##  <a name="isdynamicid"></a>  CMenuTearOffManager::IsDynamicID  
+[in] 분리 메뉴에 대 한 마지막 메뉴 ID를 지정 합니다.
 
-  
-```  
-BOOL IsDynamicID(UINT uiID) const;  
-```  
-  
-### <a name="parameters"></a>매개 변수  
- [in] *uiID*  
-  
-### <a name="return-value"></a>반환 값  
-  
-### <a name="remarks"></a>설명  
-  
-##  <a name="parse"></a>  CMenuTearOffManager::Parse  
+### <a name="return-value"></a>반환 값
 
-  
-```  
+성공하면 0이 아니고, 그렇지 않으면 0입니다.
+
+### <a name="remarks"></a>설명
+
+메뉴 Id 범위의 *uiTearOffMenuFirst* 하 *uiTearOffMenuLast* 연속 간격 이어야 합니다. 간격의 응용 프로그램에서 동시에 나타날 수 있는 분리 메뉴를 정의 합니다.
+
+##  <a name="isdynamicid"></a>  CMenuTearOffManager::IsDynamicID
+
+
+```
+BOOL IsDynamicID(UINT uiID) const;
+```
+
+### <a name="parameters"></a>매개 변수
+
+[in] *uiID*
+
+### <a name="return-value"></a>반환 값
+
+### <a name="remarks"></a>설명
+
+##  <a name="parse"></a>  CMenuTearOffManager::Parse
+
+
+```
 UINT Parse(CString& str);
-```  
-  
-### <a name="parameters"></a>매개 변수  
- [in] *str*  
-  
-### <a name="return-value"></a>반환 값  
-  
-### <a name="remarks"></a>설명  
-  
-##  <a name="reset"></a>  CMenuTearOffManager::Reset  
+```
 
-  
-```  
+### <a name="parameters"></a>매개 변수
+
+[in] *str*
+
+### <a name="return-value"></a>반환 값
+
+### <a name="remarks"></a>설명
+
+##  <a name="reset"></a>  CMenuTearOffManager::Reset
+
+
+```
 void Reset(HMENU hmenu);
-```  
-  
-### <a name="parameters"></a>매개 변수  
- [in] *hmenu*  
-  
-### <a name="remarks"></a>설명  
-  
-##  <a name="setinuse"></a>  CMenuTearOffManager::SetInUse  
+```
 
-  
-```  
+### <a name="parameters"></a>매개 변수
+
+[in] *hmenu*
+
+### <a name="remarks"></a>설명
+
+##  <a name="setinuse"></a>  CMenuTearOffManager::SetInUse
+
+
+```
 void SetInUse(
-    UINT uiCmdId,  
+    UINT uiCmdId,
     BOOL bUse = TRUE);
-```  
-  
-### <a name="parameters"></a>매개 변수  
-*uiCmdId*<br/>
-[in] [in] *b 사용*  
-  
-### <a name="remarks"></a>설명  
-  
-##  <a name="setuptearoffmenus"></a>  CMenuTearOffManager::SetupTearOffMenus  
+```
 
-  
-```  
+### <a name="parameters"></a>매개 변수
+
+*uiCmdId*<br/>
+[in] [in] *b 사용*
+
+### <a name="remarks"></a>설명
+
+##  <a name="setuptearoffmenus"></a>  CMenuTearOffManager::SetupTearOffMenus
+
+
+```
 void SetupTearOffMenus(HMENU hMenu);
-```  
-  
-### <a name="parameters"></a>매개 변수  
- [in] *hMenu*  
-  
-### <a name="remarks"></a>설명  
-  
-## <a name="see-also"></a>참고 항목  
- [계층 구조 차트](../../mfc/hierarchy-chart.md)   
- [클래스](../../mfc/reference/mfc-classes.md)   
- [CWinAppEx 클래스](../../mfc/reference/cwinappex-class.md)
+```
+
+### <a name="parameters"></a>매개 변수
+
+[in] *hMenu*
+
+### <a name="remarks"></a>설명
+
+## <a name="see-also"></a>참고 항목
+
+[계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
+[클래스](../../mfc/reference/mfc-classes.md)<br/>
+[CWinAppEx 클래스](../../mfc/reference/cwinappex-class.md)

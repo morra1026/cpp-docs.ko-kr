@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 19427d24d61581d207101605a8456e8067ade929
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a8228a0a269a8f3d726617f2b7adbeb0f016447e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713845"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46397402"
 ---
 # <a name="safenotequals"></a>SafeNotEquals
 
@@ -69,7 +69,7 @@ inline bool SafeNotEquals (
 
 ## <a name="see-also"></a>참고 항목
 
-[SafeInt 함수](../windows/safeint-functions.md)  
-[SafeInt 라이브러리](../windows/safeint-library.md)  
-[SafeInt 클래스](../windows/safeint-class.md)  
+[SafeInt 함수](../windows/safeint-functions.md)<br/>
+[SafeInt 라이브러리](../windows/safeint-library.md)<br/>
+[SafeInt 클래스](../windows/safeint-class.md)<br/>
 [SafeEquals](../windows/safeequals.md)

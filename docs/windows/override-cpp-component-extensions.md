@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 708b69bc63e59d8ba6ba882d894d6f17b59d8237
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6071cef3d5669fda86975bb0f27a2b9b87eeb011
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592371"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46407272"
 ---
 # <a name="override--c-component-extensions"></a>override(C++ 구성 요소 확장)
 
@@ -51,7 +51,7 @@ struct X : public I1 {
 };
 ```
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 코드 예제에 따르면 **재정의** Windows 런타임 컴파일에서 사용할 수 있습니다.
 
@@ -71,7 +71,7 @@ ref struct X : public I1 {
 
 컴파일러 옵션: `/ZW`
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 코드 예제에 따르면 **재정의** 공용 언어 런타임 컴파일에서 사용할 수 있습니다.
 
@@ -93,5 +93,5 @@ ref struct X : public I1 {
 
 ## <a name="see-also"></a>참고 항목
 
-[override 지정자](../cpp/override-specifier.md)  
+[override 지정자](../cpp/override-specifier.md)<br/>
 [Override 지정자](../windows/override-specifiers-cpp-component-extensions.md)

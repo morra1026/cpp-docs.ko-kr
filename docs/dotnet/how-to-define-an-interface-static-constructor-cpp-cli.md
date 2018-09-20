@@ -17,52 +17,54 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 0c47efbf364f5ddacb7ce534b0dfd7853534acb1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e2da339259efd77ea7992e63e6137a15017fdc31
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33127457"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46402839"
 ---
 # <a name="how-to-define-an-interface-static-constructor-ccli"></a>방법: 인터페이스 정적 생성자 정의(C++/CLI)
-인터페이스는 정적 데이터 멤버를 초기화 하는 데 사용할 수 있는 정적 생성자를 가질 수 있습니다.  정적 생성자는 한 번만 호출 하 고 처음 정적 인터페이스 멤버에 액세스 하기 전에 호출 됩니다.  
-  
-## <a name="example"></a>예제  
-  
-```  
-// mcppv2_interface_class2.cpp  
-// compile with: /clr  
-using namespace System;  
-  
-interface struct MyInterface {  
-   static int i;  
-   static void Test() {  
-      Console::WriteLine(i);  
-   }  
-  
-   static MyInterface() {   
-      Console::WriteLine("in MyInterface static constructor");  
-      i = 99;  
-   }  
-};  
-  
-ref class MyClass : public MyInterface {};  
-  
-int main() {  
-   MyInterface::Test();  
-   MyClass::MyInterface::Test();  
-  
-   MyInterface ^ mi = gcnew MyClass;  
-   mi->Test();  
-}  
-```  
-  
-```Output  
-in MyInterface static constructor  
-99  
-99  
-99  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [인터페이스 클래스입니다.](../windows/interface-class-cpp-component-extensions.md)
+
+인터페이스 정적 데이터 멤버 초기화를 사용할 수 있는 정적 생성자를 가질 수 있습니다.  정적 생성자는 한 번만 호출 됩니다 및 처음 정적 인터페이스 멤버에 액세스 하기 전에 호출 됩니다.
+
+## <a name="example"></a>예제
+
+```
+// mcppv2_interface_class2.cpp
+// compile with: /clr
+using namespace System;
+
+interface struct MyInterface {
+   static int i;
+   static void Test() {
+      Console::WriteLine(i);
+   }
+
+   static MyInterface() {
+      Console::WriteLine("in MyInterface static constructor");
+      i = 99;
+   }
+};
+
+ref class MyClass : public MyInterface {};
+
+int main() {
+   MyInterface::Test();
+   MyClass::MyInterface::Test();
+
+   MyInterface ^ mi = gcnew MyClass;
+   mi->Test();
+}
+```
+
+```Output
+in MyInterface static constructor
+99
+99
+99
+```
+
+## <a name="see-also"></a>참고 항목
+
+[인터페이스 클래스](../windows/interface-class-cpp-component-extensions.md)

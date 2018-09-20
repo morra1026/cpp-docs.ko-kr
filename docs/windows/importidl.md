@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9bb6c1bd23eaf705f6ceb57e5fc4ea3354c0ddfc
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9406cc95804e4eb9fd76f53201118f13f0e422a4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42571360"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46410509"
 ---
 # <a name="importidl"></a>importidl
 
@@ -38,7 +38,7 @@ ms.locfileid: "42571360"
 
 ### <a name="parameters"></a>매개 변수
 
-*idl_file*  
+*idl_file*<br/>
 응용 프로그램에 대해 생성 되는.idl 파일에 병합 하려는.idl 파일의 이름을 식별 합니다.
 
 ## <a name="remarks"></a>설명
@@ -47,7 +47,7 @@ ms.locfileid: "42571360"
 
 사용 하려는 **importidl**, 예를 들어, 생성 된.idl 파일을 사용 하 여 직접 코딩 된.idl 파일을 사용 하려는 경우.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // cpp_attr_ref_importidl.cpp
@@ -71,9 +71,9 @@ ms.locfileid: "42571360"
 
 ## <a name="see-also"></a>참고 항목
 
-[컴파일러 특성](../windows/compiler-attributes.md)  
-[독립 실행형 특성](../windows/stand-alone-attributes.md)  
-[import](../windows/import.md)  
-[importlib](../windows/importlib.md)  
-[include](../windows/include-cpp.md)  
+[컴파일러 특성](../windows/compiler-attributes.md)<br/>
+[독립 실행형 특성](../windows/stand-alone-attributes.md)<br/>
+[import](../windows/import.md)<br/>
+[importlib](../windows/importlib.md)<br/>
+[include](../windows/include-cpp.md)<br/>
 [includelib](../windows/includelib-cpp.md)  

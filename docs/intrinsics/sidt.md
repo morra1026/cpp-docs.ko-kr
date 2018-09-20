@@ -17,44 +17,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6731bb6a06f775c06ba16eb4885a3982d934f3cd
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: dbfb0b50e31cc51c7ea860fbd7b78c89a652ac64
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45699873"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46429374"
 ---
 # <a name="sidt"></a>__sidt
-**Microsoft 전용**  
-  
- 지정된 된 메모리 위치에 인터럽트 설명자 테이블 레지스터 (IDTR)의 값을 저장합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-void __sidt(  
-     void *Destination);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
-  
-|매개 변수|설명|  
-|---------------|-----------------|  
-|*대상*|[in] IDTR 저장 되어 있는 메모리 위치에 대 한 포인터입니다.|  
-  
-## <a name="requirements"></a>요구 사항  
-  
-|내장 함수|아키텍처|  
-|---------------|------------------|  
-|`__sidt`|x86, x64|  
-  
- **헤더 파일** \<intrin.h >  
-  
-## <a name="remarks"></a>설명  
- 합니다 `__sidt` 함수는 동일 합니다 `SIDT` 컴퓨터 명령입니다. 자세한 내용은 문서를 검색 "Intel 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조"에 [Intel Corporation](https://software.intel.com/en-us/articles/intel-sdm) 사이트입니다.  
-  
-**Microsoft 전용 종료**  
-  
-## <a name="see-also"></a>참고 항목  
- [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)   
- [__lidt](../intrinsics/lidt.md)
+
+**Microsoft 전용**
+
+지정된 된 메모리 위치에 인터럽트 설명자 테이블 레지스터 (IDTR)의 값을 저장합니다.
+
+## <a name="syntax"></a>구문
+
+```
+void __sidt(void * Destination);
+```
+
+#### <a name="parameters"></a>매개 변수
+
+|매개 변수|설명|
+|---------------|-----------------|
+|*대상*|[in] IDTR 저장 되어 있는 메모리 위치에 대 한 포인터입니다.|
+
+## <a name="requirements"></a>요구 사항
+
+|내장 함수|아키텍처|
+|---------------|------------------|
+|`__sidt`|x86, x64|
+
+**헤더 파일** \<intrin.h >
+
+## <a name="remarks"></a>설명
+
+합니다 `__sidt` 함수는 동일 합니다 `SIDT` 컴퓨터 명령입니다. 자세한 내용은 문서를 검색 "Intel 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조"에 [Intel Corporation](https://software.intel.com/en-us/articles/intel-sdm) 사이트입니다.
+
+**Microsoft 전용 종료**
+
+## <a name="see-also"></a>참고 항목
+
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
+[__lidt](../intrinsics/lidt.md)

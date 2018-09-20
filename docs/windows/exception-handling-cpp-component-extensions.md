@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6074519f472fff82af60695f37d0f96d9557f193
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 2213266d281933c6a6a59775584532acaeb39d6e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313652"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46412329"
 ---
 # <a name="exception-handling--c-component-extensions"></a>예외 처리(C++ 구성 요소 확장)
 
@@ -33,27 +33,27 @@ ms.locfileid: "44313652"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[관리되는 예외 사용의 기본 개념](../dotnet/basic-concepts-in-using-managed-exceptions.md)  
+[관리되는 예외 사용의 기본 개념](../dotnet/basic-concepts-in-using-managed-exceptions.md)<br/>
 설명 예외를 throw 하 고 사용 하 여 **시도**/**catch** 블록입니다.
 
-[예외 처리 동작 /CLR에서의 차이점](../dotnet/differences-in-exception-handling-behavior-under-clr.md)  
+[예외 처리 동작 /CLR에서의 차이점](../dotnet/differences-in-exception-handling-behavior-under-clr.md)<br/>
 C++ 예외 처리의 표준 동작과의 차이점을 설명합니다.
 
-[finally](../dotnet/finally.md)  
+[finally](../dotnet/finally.md)<br/>
 Finally 키워드를 사용하는 방법을 설명합니다.
 
-[방법: 전역 예외 처리기 정의 및 설치](../dotnet/how-to-define-and-install-a-global-exception-handler.md)  
+[방법: 전역 예외 처리기 정의 및 설치](../dotnet/how-to-define-and-install-a-global-exception-handler.md)<br/>
 처리되지 않은 예외를 캡처하는 방법을 보여 줍니다.
 
-[방법: 네이티브 코드에서 MSIL이 throw한 예외 catch](../dotnet/how-to-catch-exceptions-in-native-code-thrown-from-msil.md)  
+[방법: 네이티브 코드에서 MSIL이 throw한 예외 catch](../dotnet/how-to-catch-exceptions-in-native-code-thrown-from-msil.md)<br/>
 네이티브 코드에서 CLR 및 C++ 예외를 catch하는 방법을 설명합니다.
 
-[방법: 전역 예외 처리기 정의 및 설치](../dotnet/how-to-define-and-install-a-global-exception-handler.md)  
+[방법: 전역 예외 처리기 정의 및 설치](../dotnet/how-to-define-and-install-a-global-exception-handler.md)<br/>
 처리되지 않은 예외를 catch하는 방법을 보여 줍니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[예외 처리](../cpp/exception-handling-in-visual-cpp.md)  
+[예외 처리](../cpp/exception-handling-in-visual-cpp.md)<br/>
 C++에서 예외 처리를 설명합니다.
 
 ## <a name="see-also"></a>참고 항목

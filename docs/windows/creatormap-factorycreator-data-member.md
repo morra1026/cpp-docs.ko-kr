@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 90367a21d76fe7fe735d1174bc9b9d40900dec78
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 12d4fdd415ab37c9af0b0b34651e7cd2f00cf31b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600832"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46405283"
 ---
 # <a name="creatormapfactorycreator-data-member"></a>CreatorMap::factoryCreator 데이터 멤버
 
@@ -35,21 +35,21 @@ HRESULT (*factoryCreator)(
    unsigned int* currentflags,
    const CreatorMap* entry,
    REFIID iidClassFactory,
- IUnknown** factory);
+IUnknown** factory);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*currentflags*  
+*currentflags*<br/>
 중 하나는 [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) 열거자입니다.
 
-*entry*  
+*entry*<br/>
 CreatorMap 합니다.
 
-*iidClassFactory*  
+*iidClassFactory*<br/>
 인터페이스 ID 클래스 팩터리입니다.
 
-*팩터리*  
+*팩터리*<br/>
 작업이 완료 되 면 클래스 팩터리의 주소입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -68,5 +68,5 @@ CreatorMap 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[CreatorMap 구조체](../windows/creatormap-structure.md)  
+[CreatorMap 구조체](../windows/creatormap-structure.md)<br/>
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 73ebfdf9bea9f200279cb3cd2352a88878d8ebe8
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0596276589790ee6fae8e071e50b4d9b55dd8b85
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591902"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46439616"
 ---
 # <a name="nullptr--c-component-extensions"></a>nullptr(C++ 구성 요소 확장)
 
@@ -61,7 +61,7 @@ ms.locfileid: "42591902"
 
 0에 대 한 핸들을 초기화할 수 없습니다. 만 **nullptr** 사용할 수 있습니다. 상수 0 개체 핸들을 할당 생성 boxed `Int32` 로 캐스팅 하 고 `Object^`입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드 예제는 **nullptr** 때마다 네이티브 포인터, 핸들을 키워드를 사용할 수 있습니다 또는 함수 인수를 사용할 수 있습니다. 예제에 및를 **nullptr** 사용 되기 전에 참조를 확인 하는 키워드를 사용할 수 있습니다.
 
@@ -90,7 +90,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드 예제에 따르면 **nullptr** 네이티브 포인터에 대 한 0을 서로 교환해 서 사용할 수 있습니다.
 
@@ -129,7 +129,7 @@ pMyClass == nullptr
 pMyClass == 0
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드 예제에 따르면 **nullptr** 모든 형식에 대 한 핸들 또는 네이티브 포인터 형식으로 해석 됩니다. 다른 형식에 대 한 핸들을 사용 하 여 함수 오버 로드의 경우 모호성 오류가 생성 됩니다. 합니다 **nullptr** 형식으로 명시적으로 캐스팅 해야 합니다.
 
@@ -147,7 +147,7 @@ void f_null() {
 }
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드 예제에서는 해당 캐스팅 **nullptr** 허용 되 고 포함 된 캐스트 형식에 대 한 포인터 또는 핸들을 반환 합니다 합니다 **nullptr** 값입니다.
 
@@ -168,7 +168,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드 예제에 따르면 **nullptr** 함수 매개 변수로 사용할 수 있습니다.
 
@@ -189,7 +189,7 @@ int main() {
 test
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드 예제에서는 처리는 선언 되 고 명시적으로 초기화 하는 경우 이러한는 표시로 초기화 하는 기본 **nullptr**합니다.
 
@@ -216,7 +216,7 @@ int main() {
 NULL
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드 예제에 따르면 **nullptr** 사용 하 여 컴파일하면 네이티브 포인터에 할당할 수 있습니다 `/clr`합니다.
 
@@ -235,5 +235,5 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)  
+[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)<br/>
 [nullptr](../cpp/nullptr.md)

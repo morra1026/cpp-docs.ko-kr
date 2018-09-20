@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 892a32c6ff6f8e9a3a30452d05dd6e15c38a4fa8
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b992f4ad781105a8795a7bf95ff8b831ab961275
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605054"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400681"
 ---
 # <a name="criticalsectioncriticalsection-constructor"></a>CriticalSection::CriticalSection 생성자
 
@@ -38,7 +38,7 @@ explicit CriticalSection(
 
 ### <a name="parameters"></a>매개 변수
 
-*spincount*  
+*spincount*<br/>
 임계 영역 개체의 스핀 수입니다. 기본값은 0입니다.
 
 ## <a name="remarks"></a>설명

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4cec0e02a6a61638f8aed1b4015fea065cbfd343
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: baa73d252bd52f52d40c14bd8e0a411679c24b36
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43207690"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46437627"
 ---
 # <a name="defaultvtable"></a>defaultvtable
 
@@ -38,7 +38,7 @@ COM 개체에 대 한 기본 vtable 인터페이스와 인터페이스를 정의
 
 ### <a name="parameters"></a>매개 변수
 
-*interface*  
+*interface*<br/>
 지정 된 인터페이스를 COM 개체에 대 한 기본 vtable 하려는입니다.
 
 ## <a name="remarks"></a>설명
@@ -90,5 +90,5 @@ class CMyC3 : public IMyI3 {};
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
 [클래스 특성](../windows/class-attributes.md)  

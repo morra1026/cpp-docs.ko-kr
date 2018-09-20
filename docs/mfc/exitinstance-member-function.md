@@ -17,17 +17,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 954d2248061ec571d9d2ba8804c1f7c97275cbfc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: da411fbecdea0a1e7b8976ca119057204693a9bd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343501"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46387863"
 ---
 # <a name="exitinstance-member-function"></a>ExitInstance 멤버 함수
-[ExitInstance](../mfc/reference/cwinapp-class.md#exitinstance) 클래스의 멤버 함수 [CWinApp](../mfc/reference/cwinapp-class.md) 응용 프로그램의 복사본 종료 되 면 일반적으로 사용자는 응용 프로그램을 종료로 인해 될 때마다 호출 됩니다.  
-  
- 재정의 `ExitInstance` 그래픽 장치 GDI (인터페이스) 리소스를 해제 또는 프로그램 실행 중에 사용 되는 메모리 할당 해제와 같은 특별 한 정리 처리 해야 합니다. 그러나 표준 항목 예: 문서 및 뷰 정리 해당 개체에만 적용 되는 특별 한 정리를 수행 하는 데 재정의 가능한 다른 기능 프레임 워크에서 제공 됩니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [CWinApp: 응용 프로그램 클래스](../mfc/cwinapp-the-application-class.md)
+
+합니다 [ExitInstance](../mfc/reference/cwinapp-class.md#exitinstance) 클래스의 멤버 함수 [CWinApp](../mfc/reference/cwinapp-class.md) 응용 프로그램의 복사본으로 종료 되 면 일반적으로 응용 프로그램을 종료 하는 사용자의 결과로 때마다 호출 됩니다.
+
+재정의 `ExitInstance` 그래픽 장치 GDI (인터페이스) 리소스를 해제 또는 프로그램 실행 중에 사용 되는 메모리 할당 해제와 같은 특별 한 정리 처리 해야 합니다. 그러나 문서 및 뷰과 같은 표준 항목의 정리는 해당 개체에 특정 특별 한 정리를 수행 하기 위한 다른 재정의 가능 함수를 사용 하 여 framework에서 제공 됩니다.
+
+## <a name="see-also"></a>참고 항목
+
+[CWinApp: 응용 프로그램 클래스](../mfc/cwinapp-the-application-class.md)

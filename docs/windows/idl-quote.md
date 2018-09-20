@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a79f731ef0080e38e2c1b60d8e4924a5bf75089e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: fdea60808118ecd7caa04fab3421c481d908e833
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600297"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391815"
 ---
 # <a name="idlquote"></a>idl_quote
 
@@ -38,14 +38,14 @@ Visual c + +의 현재 버전에서 지원 되지 않는 IDL 구문을 사용할
 
 ### <a name="parameters"></a>매개 변수
 
-*텍스트*  
+*텍스트*<br/>
 컴파일러 오류를 반환 하지 않고 생성된 된.idl 파일을 통과 하도록 Visual c + + 컴파일러는 특성 이름입니다.
 
 ## <a name="remarks"></a>설명
 
 경우는 **idl_quote** c + + 특성 (세미콜론으로 닫는 괄호 뒤), 독립 실행형 특성으로 사용 됩니다 *텍스트* 그대로 병합 된.idl 파일에 배치 됩니다. 하는 경우 **idl_quote** 기호를 사용할 경우 *텍스트* 해당 기호에 대 한 특성 블록 내에 배치 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드는 지원 되지 않는 특성을 지정할 수는 방법을 보여 줍니다 (사용 하 여 **에서**, 지원 되는) 정의 하는 정의 되지 않은.idl 구문을 사용 하는 방법과:
 
@@ -99,5 +99,5 @@ __interface IStatic{
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
 [독립 실행형 특성](../windows/stand-alone-attributes.md)  

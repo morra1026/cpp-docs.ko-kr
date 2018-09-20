@@ -1,5 +1,5 @@
 ---
-title: 어떻게 MFC를 사용 하면 인터넷 클라이언트 응용 프로그램을 만드는 쉽게 | Microsoft Docs
+title: 어떻게 MFC 쉽게 인터넷 클라이언트 응용 프로그램 만들기 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,31 +16,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d04a27a51645fc44296db7f5fd84bc2524804c4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 26380dc7e01449e4700ddf403c7395714287ed38
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33346115"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46407168"
 ---
 # <a name="how-mfc-makes-it-easier-to-create-internet-client-applications"></a>MFC를 사용하여 인터넷 클라이언트 응용 프로그램을 손쉽게 만드는 방법
-Microsoft Foundation 클래스는 MFC 프로그래머를 위한 친숙 한 컨텍스트를 제공 하는 방식으로 Win32 인터넷 확장 (WinInet) 함수를 캡슐화 합니다. MFC는 세 가지 인터넷 파일 클래스를 제공 ([CInternetFile](../mfc/reference/cinternetfile-class.md), [CHttpFile](../mfc/reference/chttpfile-class.md), 및 [CGopherFile](../mfc/reference/cgopherfile-class.md))에서 파생 된 [CStdioFile](../mfc/reference/cstdiofile-class.md) 클래스 . 뿐만 아니라 방법을 쉽게 검색 하 고 인터넷 데이터 조작을 사용한 프로그래머에 게 익숙한 `CStdioFile` 일관 되 고 투명 하 게의 로컬 파일 및 인터넷 파일 로컬 파일에 있지만이 클래스와 함께 처리할 수 있습니다.  
-  
- MFC WinInet 클래스와 동일한 기능을 제공 `CStdioFile` 인터넷을 통해 전송 되는 데이터에 대 한 합니다. 이러한 클래스를 사용 하면 HTTP, FTP 및 gopher에 대 한 인터넷 프로토콜을 추상화 하는 상위 수준 응용 프로그램 프로그래밍 인터페이스, 인터넷 인식 응용 프로그램에 대 한 빠르고 간단한 경로 제공 합니다. 예를 들어 낮은 수준에서 여러 단계가 필요 여전히 FTP 서버에 연결 하지만 MFC 개발자는 하기만 하면를 한 번 호출 되도록 `CInternetSession::GetFTPConnection` 해당 연결을 만듭니다.  
-  
- 또한 MFC WinInet 클래스는 다음과 같은 이점을 제공합니다.  
-  
--   버퍼링 된 I/O  
-  
--   데이터에 대 한 형식이 안전한 처리  
-  
--   다양 한 기능에 대 한 기본 매개 변수  
-  
--   일반적인 인터넷 오류의 예외 처리  
-  
--   열려 있는 핸들 및 연결의 자동 정리  
-  
-## <a name="see-also"></a>참고 항목  
- [Win32 인터넷 확장명 (WinInet)](../mfc/win32-internet-extensions-wininet.md)   
- [WinInet을 사용하여 인터넷 클라이언트 응용 프로그램을 손쉽게 만드는 방법](../mfc/how-wininet-makes-it-easier-to-create-internet-client-applications.md)
+
+Microsoft Foundation Classes MFC 프로그래머에 게 친숙 한 컨텍스트를 제공 하는 방식으로 Win32 인터넷 확장명 (WinInet) 함수를 캡슐화 합니다. MFC는 세 가지 인터넷 파일 클래스를 제공 ([CInternetFile](../mfc/reference/cinternetfile-class.md)를 [CHttpFile](../mfc/reference/chttpfile-class.md), 및 [CGopherFile](../mfc/reference/cgopherfile-class.md))에서 파생 된 [CStdioFile](../mfc/reference/cstdiofile-class.md) 클래스 . 뿐만 아니라 쉽게 검색 및 인터넷 데이터 조작을 사용 하는 프로그래머에 게 친숙 한 `CStdioFile` 일관 되 고 투명 한 방식으로 로컬 파일 및 인터넷 파일 로컬 파일에 대 한 있지만 이러한 클래스를 사용 하 여 처리할 수 있습니다.
+
+MFC WinInet 클래스와 동일한 기능을 제공 `CStdioFile` 인터넷을 통해 전송 되는 데이터에 대 한 합니다. 이러한 클래스를 사용 하면 HTTP, FTP 및 gopher에 대 한 인터넷 프로토콜을 추상화 하는 프로그래밍 인터페이스가, 인터넷 인식 응용 프로그램을 만드는 빠르고 간단한 경로 제공 합니다. 상위 수준 응용 프로그램에 있습니다. 예를 들어 FTP 서버에 연결할 여전히 낮은 수준에서 여러 단계 하는데 MFC 개발자는 하면 한 번 호출 되도록 `CInternetSession::GetFTPConnection` 해당 연결을 만듭니다.
+
+또한 MFC WinInet 클래스는 다음과 같은 이점을 제공합니다.
+
+- 버퍼링 된 I/O
+
+- 데이터에 대 한 형식이 안전한 핸들
+
+- 다양 한 함수에 대 한 기본 매개 변수
+
+- 일반적인 인터넷 오류의 예외 처리
+
+- 열린 핸들 및 연결의 자동 정리
+
+## <a name="see-also"></a>참고 항목
+
+[Win32 인터넷 확장(WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
+[WinInet을 사용하여 인터넷 클라이언트 응용 프로그램을 손쉽게 만드는 방법](../mfc/how-wininet-makes-it-easier-to-create-internet-client-applications.md)
 

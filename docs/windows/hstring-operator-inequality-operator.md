@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 96131bc566271de9d99d1530ffb407c0870c71a7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b5446fb6fa0722018e4ab7734019e677b6acec7c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604327"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435209"
 ---
 # <a name="hstringoperator-operator"></a>HString::Operator!= 연산자
 
@@ -47,10 +47,10 @@ inline bool operator!=( const HString& lhs,
 
 ### <a name="parameters"></a>매개 변수
 
-*lhs*  
+*lhs*<br/>
 비교할 첫 번째 매개 변수입니다. *lhs* 수는 **HString** 또는 `HStringReference` 개체 또는 HSTRING 핸들입니다.
 
-*rhs*  
+*rhs*<br/>
 비교할 두 번째 매개 변수입니다. *rhs* 수는 **HString** 또는 `HStringReference` 개체 또는 HSTRING 핸들입니다.
 
 ## <a name="return-value"></a>반환 값

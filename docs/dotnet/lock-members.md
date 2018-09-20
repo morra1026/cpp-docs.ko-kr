@@ -13,31 +13,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: b7f5b600bc1a7a0275d972bedd84248da69d9c08
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7fbaaffbb88704ff5adc629c8f2b6111bbf3793a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33130226"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46421351"
 ---
 # <a name="lock-members"></a>lock 멤버
-멤버는 [lock 클래스](../dotnet/lock-class.md)합니다.  
-  
-## <a name="in-this-section"></a>섹션 내용  
- [lock::lock](../dotnet/lock-lock.md)  
-  
- [lock::~lock](../dotnet/lock-tilde-lock.md)  
-  
- [lock::acquire](../dotnet/lock-acquire.md)  
-  
- [lock::is_locked](../dotnet/lock-is-locked.md)  
-  
- [lock::release](../dotnet/lock-release.md)  
-  
- [lock::try_acquire](../dotnet/lock-try-acquire.md)  
-  
- [lock::operator bool](../dotnet/lock-operator-bool.md)  
-  
- [lock::operator==](../dotnet/lock-operator-equality.md)  
-  
- [lock::operator!=](../dotnet/lock-operator-inequality.md)
+
+멤버는 [lock 클래스](../dotnet/lock-class.md)합니다.
+
+## <a name="in-this-section"></a>섹션 내용
+
+[lock::lock](../dotnet/lock-lock.md)
+
+[lock::~lock](../dotnet/lock-tilde-lock.md)
+
+[lock::acquire](../dotnet/lock-acquire.md)
+
+[lock::is_locked](../dotnet/lock-is-locked.md)
+
+[lock::release](../dotnet/lock-release.md)
+
+[lock::try_acquire](../dotnet/lock-try-acquire.md)
+
+[lock::operator bool](../dotnet/lock-operator-bool.md)
+
+[lock::operator==](../dotnet/lock-operator-equality.md)
+
+[lock::operator!=](../dotnet/lock-operator-inequality.md)

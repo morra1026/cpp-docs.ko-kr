@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a0c53832acdd7a785ccc36941cd317a9d0705173
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 69676651c77175b55f4363b525a3ca3acb9be46d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42583628"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46437458"
 ---
 # <a name="synclockwithstatust-class"></a>SyncLockWithStatusT 클래스
 
@@ -39,7 +39,7 @@ class SyncLockWithStatusT : public SyncLockT<SyncTraits>;
 
 ### <a name="parameters"></a>매개 변수
 
-*SyncTraits*  
+*SyncTraits*<br/>
 단독으로 사용할 수 있는 형식 또는 리소스의 소유권을 공유 합니다.
 
 ## <a name="remarks"></a>설명
@@ -71,7 +71,7 @@ class SyncLockWithStatusT : public SyncLockT<SyncTraits>;
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[SyncLockWithStatusT::status_ 데이터 멤버](../windows/synclockwithstatust-status-data-member.md)|현재를 기준으로 개체에 대 한 잠금 작업이 후 기본 대기 작업의 결과 보유 **SyncLockWithStatusT** 개체입니다.|
 

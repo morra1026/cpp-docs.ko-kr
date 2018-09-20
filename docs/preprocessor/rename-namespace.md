@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0876aed966db79b23d506bffd9247dd68d4a3935
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 7608255b5369443ce1045f896b776cb283fdb1cb
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42538500"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46411861"
 ---
 # <a name="renamenamespace"></a>네임스페이스 이름 변경
 **C + + 전용**  
@@ -48,5 +48,5 @@ rename_namespace("NewName")
   
 ## <a name="see-also"></a>참고 항목  
  
-[#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
+[#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import 지시문](../preprocessor/hash-import-directive-cpp.md)

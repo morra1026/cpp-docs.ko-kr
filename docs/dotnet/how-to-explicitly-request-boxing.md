@@ -15,45 +15,47 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 4bf869fc8742f25155a8963cd03b9a7aba571ed4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 14155973da6c733fba375300fd3e29ca3a8762ce
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33127346"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378998"
 ---
 # <a name="how-to-explicitly-request-boxing"></a>방법: 명시적으로 boxing 요청
-변수 형식의 변수에 할당 하 여 명시적으로 boxing 요청 수 `Object`합니다.  
-  
-## <a name="example"></a>예제  
-  
-```  
-// vcmcppv2_explicit_boxing3.cpp  
-// compile with: /clr  
-using namespace System;  
-  
-void f(int i) {  
-   Console::WriteLine("f(int i)");  
-}  
-  
-void f(Object ^o) {  
-   Console::WriteLine("f(Object^ o)");  
-}  
-  
-int main() {  
-   int i = 5;  
-   Object ^ O = i;   // forces i to be boxed  
-   f(i);  
-   f(O);  
-   f( (Object^)i );  // boxes i  
-}  
-```  
-  
-```Output  
-f(int i)  
-f(Object^ o)  
-f(Object^ o)  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [Boxing](../windows/boxing-cpp-component-extensions.md)
+
+형식의 변수에 변수를 할당 하 여 명시적으로 boxing 요청 수 `Object`입니다.
+
+## <a name="example"></a>예제
+
+```
+// vcmcppv2_explicit_boxing3.cpp
+// compile with: /clr
+using namespace System;
+
+void f(int i) {
+   Console::WriteLine("f(int i)");
+}
+
+void f(Object ^o) {
+   Console::WriteLine("f(Object^ o)");
+}
+
+int main() {
+   int i = 5;
+   Object ^ O = i;   // forces i to be boxed
+   f(i);
+   f(O);
+   f( (Object^)i );  // boxes i
+}
+```
+
+```Output
+f(int i)
+f(Object^ o)
+f(Object^ o)
+```
+
+## <a name="see-also"></a>참고 항목
+
+[Boxing](../windows/boxing-cpp-component-extensions.md)

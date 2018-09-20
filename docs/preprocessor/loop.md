@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e4881dfdcb92e778501982482abc13cc91836b0
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 0850a30c0e0e85cd1d90ba5b2399a295a482a3ce
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42540054"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444673"
 ---
 # <a name="loop"></a>루프
 자동 평행화 도우미에서 루프 코드를 고려하는 방법을 제어하고 자동 벡터화 도우미에서 루프를 고려 대상에서 제외합니다.  
@@ -57,5 +57,5 @@ ms.locfileid: "42540054"
   
 ## <a name="see-also"></a>참고 항목  
  
-[자동 병렬화 및 자동 벡터화](../parallel/auto-parallelization-and-auto-vectorization.md)   
+[자동 병렬화 및 자동 벡터화](../parallel/auto-parallelization-and-auto-vectorization.md)<br/>
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

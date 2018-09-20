@@ -17,32 +17,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 6bf712e960cbf96ccef6c3a3e4efebdad9045818
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fc3399ee088a0430ca857c3e421742ee484d337a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33136996"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46413318"
 ---
 # <a name="marshalcontext-class"></a>marshal_context 클래스
-이 클래스는 네이티브 및 관리 환경 간에 데이터를 변환합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-class marshal_context  
-```  
-  
-## <a name="remarks"></a>설명  
- 사용 하 여 `marshal_context` 컨텍스트 해야 하는 데이터 변환에 대 한 클래스입니다. 참조 [개요의 c + + 마샬링](../dotnet/overview-of-marshaling-in-cpp.md) 는 변환에는 컨텍스트가 필요 하 고 어떤 마샬링 파일에 포함 되도록 하는 방법에 대 한 자세한 내용은 합니다. 마샬링 한 컨텍스트를 사용 하는 경우의 결과 유효 기간만 `marshal_context` 개체를 제거 합니다. 사용자의 결과 유지 하려면 데이터를 복사 해야 합니다.  
-  
- 동일한 `marshal_context` 에 여러 개의 데이터 변환을 사용할 수 있습니다. 이런이 방식으로 컨텍스트를 다시 사용 이전 마샬링 호출의 결과 영향을 주지 않습니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더 파일:** \<msclr\marshal.h >, \<msclr\marshal_windows.h >, \<msclr\marshal_cppstd.h >, 또는 \<msclr\marshal_atl.h >  
-  
- **Namespace:** msclr::interop  
-  
-## <a name="see-also"></a>참고 항목  
- [C + + 마샬링 개요](../dotnet/overview-of-marshaling-in-cpp.md)   
- [marshal_as](../dotnet/marshal-as.md)
+
+이 클래스는 네이티브 및 관리 되는 환경 간에 데이터를 변환합니다.
+
+## <a name="syntax"></a>구문
+
+```
+class marshal_context
+```
+
+## <a name="remarks"></a>설명
+
+사용 된 `marshal_context` 컨텍스트를 필요로 하는 데이터 변환에 대 한 클래스입니다. 참조 [Overview of Marshaling c + +에서](../dotnet/overview-of-marshaling-in-cpp.md) 는 변환이 필요한 컨텍스트 및 마샬링 파일에 포함 되도록 하는 방법에 대 한 자세한 내용은 합니다. 마샬링 컨텍스트를 사용 하는 경우의 결과 까지만 유효 합니다 `marshal_context` 개체는 소멸 됩니다. 결과 유지 하려면 데이터를 복사 해야 합니다.
+
+동일한 `marshal_context` 여러 개의 데이터 변환을 사용할 수 있습니다. 이 방식으로 컨텍스트를 다시 사용 마샬링 이전 호출의 결과 결과는 영향이 없습니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더 파일:** \<msclr\marshal.h >, \<msclr\marshal_windows.h >, \<msclr\marshal_cppstd.h >, 또는 \<msclr\marshal_atl.h >
+
+**Namespace:** msclr::interop
+
+## <a name="see-also"></a>참고 항목
+
+[C++ 마샬링 개요](../dotnet/overview-of-marshaling-in-cpp.md)<br/>
+[marshal_as](../dotnet/marshal-as.md)

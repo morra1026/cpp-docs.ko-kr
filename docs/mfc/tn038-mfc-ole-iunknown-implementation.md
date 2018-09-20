@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df624c04b1fd5a80b6e54928adb8f3ca7424920a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c6bf8f299ef46166c5b09a716e5bed21fd3b9b01
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215178"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46387109"
 ---
 # <a name="tn038-mfcole-iunknown-implementation"></a>TN038: MFC/OLE IUnknown 구현
 
@@ -414,7 +414,7 @@ CAggrExample::CAggrExample()
 }
 
 BOOL CAggrExample::OnCreateAggregates()
-{ 
+{
     // wire up aggregate with correct controlling unknown
     m_lpAggrInner = CoCreateInstance(CLSID_Example,
         GetControllingUnknown(), CLSCTX_INPROC_SERVER,
@@ -471,10 +471,10 @@ DWORD ExternalQueryInterface(
 
 #### <a name="parameters"></a>매개 변수
 
-*lpIID*  
+*lpIID*<br/>
 IID(QueryInterface 첫 번째 인수)에 대한 far 포인터
 
-*ppvObj*  
+*ppvObj*<br/>
 IUnknown*(QueryInterface의 두 번째 인수)에 대한 포인터
 
 #### <a name="remarks"></a>설명
@@ -520,10 +520,10 @@ END_INTERFACE_PART(localClass)
 
 #### <a name="parameters"></a>매개 변수
 
-*localClass*  
+*localClass*<br/>
 인터페이스를 구현하는 클래스의 이름
 
-*iface*  
+*iface*<br/>
 이 클래스에서 구현하는 인터페이스의 이름
 
 #### <a name="remarks"></a>설명
@@ -560,10 +560,10 @@ END_INTERFACE_MAP
 
 #### <a name="parameters"></a>매개 변수
 
-*theClass*  
+*theClass*<br/>
 인터페이스 맵을 정의할 클래스
 
-*baseClass*  
+*baseClass*<br/>
 클래스 *theClass* 에서 파생 됩니다.
 
 #### <a name="remarks"></a>설명
@@ -578,13 +578,13 @@ INTERFACE_PART(theClass, iid, localClass)
 
 #### <a name="parameters"></a>매개 변수
 
-*theClass*  
+*theClass*<br/>
 인터페이스 맵을 포함하는 클래스의 이름
 
-*iid*  
+*iid*<br/>
 포함된 클래스에 매핑될 `IID`
 
-*localClass*  
+*localClass*<br/>
 로컬 클래스의 이름('X' 제외)
 
 #### <a name="remarks"></a>설명
@@ -626,10 +626,10 @@ INTERFACE_AGGREGATE(theClass, theAggr)
 
 #### <a name="parameters"></a>매개 변수
 
-*theClass*  
+*theClass*<br/>
 인터페이스 맵을 포함하는 클래스의 이름
 
-*theAggr*  
+*theAggr*<br/>
 집계될 멤버 변수의 이름
 
 #### <a name="remarks"></a>설명
@@ -638,5 +638,5 @@ INTERFACE_AGGREGATE(theClass, theAggr)
 
 ## <a name="see-also"></a>참고자료
 
-[번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)  
-[범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)  
+[번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
+[범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)

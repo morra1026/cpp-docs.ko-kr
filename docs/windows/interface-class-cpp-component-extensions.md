@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 775fbe39edc9478b1fce3afb39ee2bf1f6d5ed36
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 0c7ebdf83730b661cbd855ba730da1abeee936c5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714313"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46377073"
 ---
 # <a name="interface-class--c-component-extensions"></a>interface 클래스(C++ 구성 요소 확장)
 
@@ -36,21 +36,21 @@ ms.locfileid: "45714313"
 ```cpp
 interface_access
 interface class
- name :  inherit_accessbase_interface{};interface_accessinterface structname :  inherit_accessbase_interface{};
+name :  inherit_accessbase_interface{};interface_accessinterface structname :  inherit_accessbase_interface{};
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*interface_access*  
+*interface_access*<br/>
 어셈블리 외부에서 인터페이스의 접근성입니다.  가능한 값은 **공개** 하 고 **개인**합니다.  **개인** 가 기본값입니다. 중첩 된 인터페이스를 사용할 수 없습니다는 *interface_access* 지정자입니다.
 
-*name*  
+*name*<br/>
 인터페이스의 이름입니다.
 
-*inherit_access*  
+*inherit_access*<br/>
 액세스 가능성 *base_interface*합니다.  수만 내게 필요한 옵션을 기본 인터페이스에 대 한 **공용** (기본값).
 
-*base_interface*  
+*base_interface*<br/>
 (선택 사항) 인터페이스에 대 한 기본 인터페이스 *이름을*입니다.
 
 ### <a name="remarks"></a>설명

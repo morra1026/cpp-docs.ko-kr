@@ -26,62 +26,66 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd5341dc4d47740410df01feadbd9e6aa3926a23
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: bdfcd0db1486e5ba6e4c08dee0c19e3b98282df9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721392"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46439694"
 ---
 # <a name="addgsbyte-addgsword-addgsdword-addgsqword"></a>__addgsbyte, __addgsword, __addgsdword, __addgsqword
-**Microsoft 전용**  
-  
- 값의 시작을 기준으로 오프셋으로 지정 된 메모리 위치에 추가 된 `GS` 세그먼트입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-void __addgsbyte(   
-   unsigned long Offset,   
-   unsigned char Data   
-);  
-void __addgsword(   
-   unsigned long Offset,   
-   unsigned short Data   
-);  
-void __addgsdword(   
-   unsigned long Offset,   
-   unsigned long Data   
-);  
-void __addgsqword(   
-   unsigned long Offset,   
-   unsigned __int64 Data   
-);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+
+**Microsoft 전용**
+
+값의 시작을 기준으로 오프셋으로 지정 된 메모리 위치에 추가 된 `GS` 세그먼트입니다.
+
+## <a name="syntax"></a>구문
+
+```
+void __addgsbyte( 
+   unsigned long Offset, 
+   unsigned char Data 
+);
+void __addgsword( 
+   unsigned long Offset, 
+   unsigned short Data 
+);
+void __addgsdword( 
+   unsigned long Offset, 
+   unsigned long Data 
+);
+void __addgsqword( 
+   unsigned long Offset, 
+   unsigned __int64 Data 
+);
+```
+
+#### <a name="parameters"></a>매개 변수
+
 *오프셋*<br/>
-[in] 시작 부분 으로부터의 오프셋 `GS`합니다.  
-  
+[in] 시작 부분 으로부터의 오프셋 `GS`합니다.
+
 *Data*<br/>
-[in] 메모리 위치에 추가할 값입니다.  
-  
-## <a name="requirements"></a>요구 사항  
-  
-|내장 함수|아키텍처|  
-|---------------|------------------|  
-|`__addgsbyte`|X64|  
-|`__addgsword`|X64|  
-|`__addgsdword`|X64|  
-|`__addgsqword`|X64|  
-  
-## <a name="remarks"></a>설명  
- 이러한 내장 함수는 커널 모드 에서만 사용할 수 있습니다 하 고 이러한 루틴은 내장 함수로 사용할 수 있습니다.  
-  
-**Microsoft 전용 종료**  
-  
-## <a name="see-also"></a>참고 항목  
- [__incgsbyte, \__incgsword, \__incgsdword, \__incgsqword](../intrinsics/incgsbyte-incgsword-incgsdword-incgsqword.md)   
- [__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)   
- [__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)   
- [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)
+[in] 메모리 위치에 추가할 값입니다.
+
+## <a name="requirements"></a>요구 사항
+
+|내장 함수|아키텍처|
+|---------------|------------------|
+|`__addgsbyte`|X64|
+|`__addgsword`|X64|
+|`__addgsdword`|X64|
+|`__addgsqword`|X64|
+
+## <a name="remarks"></a>설명
+
+이러한 내장 함수는 커널 모드 에서만 사용할 수 있습니다 하 고 이러한 루틴은 내장 함수로 사용할 수 있습니다.
+
+**Microsoft 전용 종료**
+
+## <a name="see-also"></a>참고 항목
+
+[__incgsbyte, \__incgsword, \__incgsdword, \__incgsqword](../intrinsics/incgsbyte-incgsword-incgsdword-incgsqword.md)<br/>
+[__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)<br/>
+[__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)<br/>
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)
