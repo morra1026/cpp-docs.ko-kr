@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 848ea415d0638b6135c69cd14e442f45dab40237
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ec3ba8280ab481211d98c9dc5256c94e76e193e2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220363"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46396451"
 ---
 # <a name="custom-c"></a>custom(C++)
 
@@ -39,10 +39,10 @@ ms.locfileid: "43220363"
 
 ### <a name="parameters"></a>매개 변수
 
-*uuid*  
+*uuid*<br/>
 고유한 ID입니다.
 
-*값*  
+*값*<br/>
 Variant로 입력할 수 있는 값입니다.
 
 ## <a name="remarks"></a>설명
@@ -66,10 +66,10 @@ Variant로 입력할 수 있는 값입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
-[독립 실행형 특성](../windows/stand-alone-attributes.md)  
-[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  
-[매개 변수 특성](../windows/parameter-attributes.md)  
-[메서드 특성](../windows/method-attributes.md)  
-[클래스 특성](../windows/class-attributes.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
+[독립 실행형 특성](../windows/stand-alone-attributes.md)<br/>
+[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[매개 변수 특성](../windows/parameter-attributes.md)<br/>
+[메서드 특성](../windows/method-attributes.md)<br/>
+[클래스 특성](../windows/class-attributes.md)<br/>
 [인터페이스 특성](../windows/interface-attributes.md)  

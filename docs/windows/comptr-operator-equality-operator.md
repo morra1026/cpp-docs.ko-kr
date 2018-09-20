@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 24ca52eccc814b82e5f9bdd6ddac6458fb5992fe
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2e0fd86cb8a9c9fa86da0a1781f49fe57c5ce6d1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607138"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394447"
 ---
 # <a name="comptroperator-operator"></a>ComPtr::operator== 연산자
 
@@ -47,10 +47,10 @@ bool operator==(
 
 ### <a name="parameters"></a>매개 변수
 
-*a*  
+*a*<br/>
 에 대 한 참조를 **ComPtr** 개체입니다.
 
-*b*  
+*b*<br/>
 다른에 대 한 참조가 **ComPtr** 개체입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -67,5 +67,5 @@ bool operator==(
 
 ## <a name="see-also"></a>참고 항목
 
-[Microsoft::WRL 네임스페이스](../windows/microsoft-wrl-namespace.md)  
+[Microsoft::WRL 네임스페이스](../windows/microsoft-wrl-namespace.md)<br/>
 [ComPtr 클래스](../windows/comptr-class.md)

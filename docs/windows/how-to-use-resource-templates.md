@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 90c94e87693929c2ae33d65fe3f3a4b2dd55d48b
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 677828343fa7247e64a8dfbd8faede4efbc9df24
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313977"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46393752"
 ---
 # <a name="how-to-use-resource-templates-c"></a>방법: 리소스 템플릿 (c + +)를 사용 합니다.
 
@@ -82,5 +82,5 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[리소스 파일](../windows/resource-files-visual-studio.md)  
+[리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 [리소스 편집기](../windows/resource-editors.md)

@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 061b3be0e642bb8e7406f54a469723c70559d85a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ebc8632d273e650cf11e70177bbfbeb0e90e8601
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610163"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394857"
 ---
 # <a name="hstringmakereference-method"></a>HString::MakeReference 메서드
 
@@ -41,13 +41,13 @@ template<unsigned int sizeDest>
 
 ### <a name="parameters"></a>매개 변수
 
-*sizeDest*  
+*sizeDest*<br/>
 대상의 크기를 지정 하는 템플릿 매개 변수 `HStringReference` 버퍼입니다.
 
-*str*  
+*str*<br/>
 와이드 문자 문자열에 대한 참조입니다.
 
-*Len 함수*  
+*Len 함수*<br/>
 최대 길이 *str* 이 작업에 사용할 매개 변수 버퍼입니다. 경우는 *len* 매개 변수를 지정 하지 않으면 전체 *str* 매개 변수를 사용 합니다.
 
 ## <a name="return-value"></a>반환 값

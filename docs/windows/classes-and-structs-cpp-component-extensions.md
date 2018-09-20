@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 04a632e657b57519d02c013d9c03e558b9aec8e1
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 60e388e18e6d3607dac1946c3fd9a511e948afd4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726624"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46448378"
 ---
 # <a name="classes-and-structs--c-component-extensions"></a>클래스 및 구조체(C++ 구성 요소 확장)
 
@@ -46,19 +46,19 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
 
 ### <a name="parameters"></a>매개 변수
 
-*class_access*  
+*class_access*<br/>
 (선택 사항) 클래스 또는 구조체 외부 어셈블리의 접근성입니다. 가능한 값은 **공개** 하 고 **개인** (**개인** 기본값). 중첩 된 클래스 또는 구조체를 사용할 수 없습니다는 *class_access* 지정자입니다.
 
-*name*  
+*name*<br/>
 클래스 또는 구조체의 이름입니다.
 
-*한정자*  
+*한정자*<br/>
 (선택 사항) [추상](../windows/abstract-cpp-component-extensions.md) 하 고 [봉인](../windows/sealed-cpp-component-extensions.md) 가 유효한 한정자입니다.
 
-*inherit_access*  
+*inherit_access*<br/>
 (선택 사항) 액세스 가능성 *base_type*합니다. 유일한 허용 된 액세스 가능성은 **공개** (**공용** 기본값).
 
-*base_type*  
+*base_type*<br/>
 (선택 사항) 기본 형식입니다. 그러나 값 형식은 기본 형식으로 작동할 수 없습니다.
 
 자세한 내용은 특정 언어에 대 한 설명은 Windows 런타임 및 공용 언어 Runtimesections에서이 매개 변수를 참조 하세요.
@@ -97,7 +97,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
 
 ### <a name="parameters"></a>매개 변수
 
-*base_type*  
+*base_type*<br/>
 (선택 사항) 기본 형식입니다. A **ref 클래스** 하거나 **ref 구조체** 0 개 이상의 인터페이스 및 0 개 또는 1에서 상속할 수 있습니다 **ref** 형식입니다. A **값 클래스** 하거나 **값 구조체** 0 개 이상의 인터페이스 에서만 상속할 수 있습니다.
 
 사용 하 여 개체를 선언 하는 **ref 클래스** 또는 **ref 구조체** 키워드는 액세스 한 개체가 개체에 대 한 핸들, 즉 개체에 대 한 참조 카운터 포인터입니다. 선언된 변수가 범위를 벗어나면 컴파일러가 자동으로 내부 개체를 삭제합니다. 개체가 호출에서 매개 변수로 사용되거나 변수에 저장되면 개체 핸들이 실제로 전달되거나 저장됩니다.
@@ -116,7 +116,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
 
 ### <a name="parameters"></a>매개 변수
 
-*base_type*  
+*base_type*<br/>
 (선택 사항) 기본 형식입니다. A **ref 클래스** 하거나 **ref 구조체** 이상의 관리 인터페이스 및 0 개 또는 한 명의 ref 형식 또는 0에서 상속할 수 있습니다. A **값 클래스** 하거나 **값 구조체** 0 개 이상의 관리 되는 인터페이스 에서만 상속할 수 있습니다.
 
 합니다 **ref 클래스** 하 고 **ref 구조체** 키워드는 컴파일러가 힙에 할당 되는 클래스 또는 구조체입니다. 개체가 호출에서 매개 변수로 사용되거나 변수에 저장되면 개체 참조가 실제로 전달되거나 저장됩니다.

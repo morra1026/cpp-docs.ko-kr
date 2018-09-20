@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a5e9ce2480612cdc84982cd1474e003d9151557
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 7c6797e9a75e9150718655ed7fcd72d7f343e591
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42545844"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430204"
 ---
 # <a name="strictgscheck"></a>strict_gs_check
 이 pragma는 향상된 보안 검사를 제공합니다.  
@@ -45,7 +45,7 @@ ms.locfileid: "42545844"
   
 이 pragma를 사용하는 경우에도 안전한 코드를 작성하기 위해 노력해야 합니다. 즉, 코드에 버퍼 오버런이 발생 하지는 확인 합니다. **strict_gs_check** 코드에 남아 있는 버퍼 오버런 으로부터 응용 프로그램을 보호할 수 있습니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  
 다음 코드에서는 배열을 로컬 배열에 복사할 때 버퍼 오버런이 발생합니다. 이 코드를 컴파일할 때 `/GS`, 배열 데이터 형식이 포인터 이기 때문에 쿠키가 없는 스택에서 삽입 됩니다. 추가 된 **strict_gs_check** pragma 하면 스택 쿠키가 함수 스택에 삽입 합니다.  
   
@@ -76,5 +76,5 @@ void ** ReverseArray(void **pData,
   
 ## <a name="see-also"></a>참고 항목  
  
-[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)   
+[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 [/GS(버퍼 보안 검사)](../build/reference/gs-buffer-security-check.md)

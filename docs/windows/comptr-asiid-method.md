@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d79707eaa3e5e93ab5c05e120d1556ee86168af2
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d3dfa87d950a12f115fb157124765fa5fd06eced
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607300"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46396111"
 ---
 # <a name="comptrasiid-method"></a>ComPtr::AsIID 메서드
 
@@ -39,10 +39,10 @@ WRL_NOTHROW HRESULT AsIID(
 
 ### <a name="parameters"></a>매개 변수
 
-*riid*  
+*riid*<br/>
 인터페이스 ID입니다.
 
-*p*  
+*p*<br/>
 개체에 있는 경우 해당 ID가 인터페이스 *riid*,으로 지정한 인터페이스에 대 한 이중 간접 포인터는 *riid* 매개 변수가 고, 그렇지 않으면에 대 한 포인터 `IUnknown`합니다.
 
 ## <a name="return-value"></a>반환 값

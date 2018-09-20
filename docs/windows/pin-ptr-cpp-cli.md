@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: af0cfe6f3a94aa1bc2afc4e4857864f81099567e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: de7f4c94ec0d9cb5a9a57315ebda015b7737132c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591733"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46392764"
 ---
 # <a name="pinptr-ccli"></a>pin_ptr(C++/CLI)
 
@@ -51,16 +51,16 @@ A *대 한 고정 포인터* 개체를 방지 하는 내부 포인터로 가리�
 
 ### <a name="parameters"></a>매개 변수
 
-*cv_qualifier*  
+*cv_qualifier*<br/>
 **const** 나 **volatile** 한정자입니다. 기본적으로 고정 포인터가 **volatile**합니다. 고정 포인터를 선언 하는 오류가 아니라 하지만 중복 될 **volatile**합니다.
 
-*type*  
+*type*<br/>
 유형의 *이니셜라이저*합니다.
 
-*var*  
+*var*<br/>
 이름을 합니다 **pin_ptr** 변수입니다.
 
-*initializer*  
+*initializer*<br/>
 참조 형식의 멤버, 관리되는 배열의 요소 또는 네이티브 포인터에 할당할 수 있는 다른 모든 개체입니다.
 
 ### <a name="remarks"></a>설명

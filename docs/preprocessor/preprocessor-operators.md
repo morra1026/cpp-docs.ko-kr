@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fca1c097a01f34fb2cc708489338391dfced982f
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: b80c9c8ef371808fc98d0475afc00223b13194ea
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42539667"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46384041"
 ---
 # <a name="preprocessor-operators"></a>전처리 연산자
 네 가지 전처리기 관련 연산자를 사용 하 여의 컨텍스트에서 `#define` 지시문 (각각에 대 한 요약에 대 한 다음 목록 참조). 문자열 화, charizing, 및 토큰 붙여넣기 연산자 다음 세 섹션에서 설명 합니다. 에 대 한 정보에 대 한 합니다 `defined` 연산자를 참조 하세요 [#if, #elif, #else 및 #endif 지시문](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)합니다.  
@@ -34,6 +34,6 @@ ms.locfileid: "42539667"
   
 ## <a name="see-also"></a>참고 항목  
  
-[전처리기 지시문](../preprocessor/preprocessor-directives.md)   
-[미리 정의 된 매크로](../preprocessor/predefined-macros.md)   
+[전처리기 지시문](../preprocessor/preprocessor-directives.md)<br/>
+[미리 정의된 매크로](../preprocessor/predefined-macros.md)<br/>
 [ 전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)

@@ -15,20 +15,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e1e03f10199c1b582a1a8603a6ea6c93e1d55473
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 5087c271151793169cbf7350f78750044ccead0b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36931234"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46446974"
 ---
 # <a name="command-ids"></a>명령 ID
-명령 대 한 자세한 내용은 해당 명령 ID만로 (인코딩된는 **WM_COMMAND** 메시지). 이 ID는 명령을 생성 하는 사용자 인터페이스 개체에 할당 됩니다. 일반적으로 Id에 할당 된 사용자 인터페이스 개체의 기능에 대 한 이름이 지정 됩니다.  
-  
- 예를 들어 편집 메뉴에서 모두 지우기 항목 할당 될 수 있습니다는 ID와 같은 **ID_EDIT_CLEAR_ALL**합니다. 클래스 라이브러리는 명령 프레임 워크에서와 같은 자체를 처리 하는 데 일부 Id **ID_EDIT_CLEAR_ALL** 또는 **ID_FILE_OPEN**합니다. 다른 명령 Id를 직접 만듭니다 됩니다.  
-  
- 표시 된 것 처럼 클래스 라이브러리를 수행 하는 것이 좋습니다의 명명 규칙은 자신의 메뉴는 Visual c + +에서 메뉴 편집기를 만들면 **ID_FILE_OPEN**합니다. [표준 명령](../mfc/standard-commands.md) 클래스 라이브러리에 정의 된 표준 명령에 설명 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [사용자 인터페이스 개체 및 명령 ID](../mfc/user-interface-objects-and-command-ids.md)
+
+명령을 자세히만 해당 명령 ID로 설명 되어 있습니다. (인코딩된 합니다 **WM_COMMAND** 메시지). 이 ID는 명령을 생성 하는 사용자 인터페이스 개체에 할당 됩니다. 일반적으로 할당 된 사용자 인터페이스 개체의 기능에 대 한 Id 라고 합니다.
+
+예를 들어 편집 메뉴에서 항목을 모두 지우기 할당 될 수 있습니다 ID와 같은 **ID_EDIT_CLEAR_ALL**합니다. 클래스 라이브러리를 처리 하는 프레임 워크 자체와 같은 명령에 대 한 특히 일부 Id 미리 정의 **ID_EDIT_CLEAR_ALL** 하거나 **ID_FILE_OPEN**합니다. 다른 명령 Id를 직접 만들 됩니다.
+
+사용자 고유의 메뉴 Visual c + +에서 메뉴 편집기를 만들 때 표시 된 것 처럼 클래스 라이브러리를 수행 하는 것이 좋습니다의 명명 규칙 **ID_FILE_OPEN**합니다. [표준 명령](../mfc/standard-commands.md) 클래스 라이브러리에서 정의 하는 일반적인 명령에 설명 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[사용자 인터페이스 개체 및 명령 ID](../mfc/user-interface-objects-and-command-ids.md)
 

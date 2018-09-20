@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b765f6393b9bd2d632539abb5fb7cd17c29297b6
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: bb264447aff789e375afeb9f0db26d2205b3eb2f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45701755"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46374485"
 ---
 # <a name="safeint-class"></a>SafeInt 클래스
 
@@ -233,5 +233,5 @@ Int x = flag ? (int) SafeInt<unsigned int>(y) : -1;
 
 ## <a name="see-also"></a>참고 항목
 
-[SafeInt 라이브러리](../windows/safeint-library.md)  
+[SafeInt 라이브러리](../windows/safeint-library.md)<br/>
 [SafeIntException 클래스](../windows/safeintexception-class.md)
