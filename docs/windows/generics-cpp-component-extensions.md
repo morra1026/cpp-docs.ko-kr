@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2cc6b296684c13c2cf9c538a226fb440a2e50349
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 121d3bf1fd7d59f36362a034216e0728b2fc25b0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599265"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46448352"
 ---
 # <a name="generics--c-component-extensions"></a>제네릭(C++ 구성 요소 확장명)
 
@@ -33,35 +33,35 @@ ms.locfileid: "42599265"
 
 ### <a name="supported-by-the-windows-runtime-and-the-common-language-runtime"></a>Windows 런타임 및 공용 언어 런타임에서 지원
 
-[Visual C++의 제네릭 개요](../windows/overview-of-generics-in-visual-cpp.md)  
+[Visual C++의 제네릭 개요](../windows/overview-of-generics-in-visual-cpp.md)<br/>
 제네릭에 대한 정보, 언어 기능에 대한 동기, 제네릭을 설명하는 데 사용되는 용어의 정의 및 제네릭에 대한 형식 매개 변수로서 참조 형식과 값 형식의 사용에 대한 정보.
 
-[제네릭 인터페이스(Visual C++)](../windows/generic-interfaces-visual-cpp.md)  
+[제네릭 인터페이스(Visual C++)](../windows/generic-interfaces-visual-cpp.md)<br/>
 제네릭 인터페이스의 정의 및 사용에 대한 정보.
 
-[제네릭 대리자(Visual C++)](../windows/generic-delegates-visual-cpp.md)  
+[제네릭 대리자(Visual C++)](../windows/generic-delegates-visual-cpp.md)<br/>
 제네릭 대리자의 정의 및 사용에 대한 정보.
 
-[제네릭 형식 매개 변수에 대한 제약 조건(C++/CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)  
+[제네릭 형식 매개 변수에 대한 제약 조건(C++/CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)<br/>
 제네릭 형식의 제약 조건 사용에 대한 정보.
 
-[제네릭 사용(C++/CLI)](../windows/consuming-generics-cpp-cli.md)  
+[제네릭 사용(C++/CLI)](../windows/consuming-generics-cpp-cli.md)<br/>
 Visual C++에서 다른 언어로 작성되었을 수 있는 .NET 어셈블리에 정의된 제네릭 사용에 대한 정보.
 
-[제네릭 및 템플릿(Visual C++)](../windows/generics-and-templates-visual-cpp.md)  
+[제네릭 및 템플릿(Visual C++)](../windows/generics-and-templates-visual-cpp.md)<br/>
 제네릭 및 템플릿의 비교, 개별로 사용해야 할 때와 유용하게 결합하는 방법.
 
 ### <a name="supported-by-the-common-language-runtime"></a>공용 언어 런타임에서 지원
 
-[제네릭 함수(C++/CLI)](../windows/generic-functions-cpp-cli.md)  
+[제네릭 함수(C++/CLI)](../windows/generic-functions-cpp-cli.md)<br/>
 제네릭 함수 및 메서드의 정의 및 사용에 대한 정보.
 
-[제네릭 클래스(C++/CLI)](../windows/generic-classes-cpp-cli.md)  
+[제네릭 클래스(C++/CLI)](../windows/generic-classes-cpp-cli.md)<br/>
 제네릭 클래스의 정의 및 사용에 대한 정보.
 
 ## <a name="related-sections"></a>관련 단원
 
-[방법: for each로 제네릭 컬렉션 반복](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)  
+[방법: for each로 제네릭 컬렉션 반복](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)<br/>
 사용 하 여는 [각각의](../dotnet/for-each-in.md) 제네릭 컬렉션에서 키워드입니다.
 
 ## <a name="see-also"></a>참고 항목

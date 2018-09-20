@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 09e0dc3b9caf059bb8ecdce0468dfc118ce9ebfa
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 17e1f47c2dfaf53b63e6bc672cb7822f9bf2b391
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42594946"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46375348"
 ---
 # <a name="chaininterfacesfillarraywithiid-method"></a>ChainInterfaces::FillArrayWithIid 메서드
 
@@ -39,10 +39,10 @@ __forceinline static void FillArrayWithIid(
 
 ### <a name="parameters"></a>매개 변수
 
-*index*  
+*index*<br/>
 에 인덱스 값에 대 한 포인터를 *iid* 배열입니다.
 
-*iid*  
+*iid*<br/>
 인터페이스 Id의 배열입니다.
 
 ## <a name="requirements"></a>요구 사항
