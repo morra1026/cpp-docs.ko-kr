@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: abad906c7fcc5c86a6901757ddfbb5dfeff2ec29
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 2065b96875f2c441b24eb69f8ca51b06fe5717f0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45704902"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444495"
 ---
 # <a name="generic-interfaces-visual-c"></a>제네릭 인터페이스(Visual C++)
 
@@ -42,31 +42,31 @@ ms.locfileid: "45704902"
 
 ## <a name="remarks"></a>설명
 
-*특성*  
+*특성*<br/>
 (선택 사항) 추가 선언 정보입니다. 특성 및 특성 클래스에 대 한 자세한 내용은 참조 하세요. **특성**합니다.
 
-*클래스 키*  
+*클래스 키*<br/>
 **클래스** 또는 **typename**
 
-*type-parameter-identifier(s)*  
+*type-parameter-identifier(s)*<br/>
 쉼표로 구분 된 식별자 목록입니다.
 
-*형식 매개 변수-제약 조건 절*  
+*형식 매개 변수-제약 조건 절*<br/>
 에 지정 된 형식은 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + /cli CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)
 
-*액세스 가능성 한정자*  
+*액세스 가능성 한정자*<br/>
 (선택 사항) 액세스 가능성 한정자 (예: **공개 / 개인**).
 
-*identifier*  
+*identifier*<br/>
 인터페이스 이름입니다.
 
-*기본-목록*  
+*기본-목록*<br/>
 (선택 사항) 하나 이상의 명시적 기본 인터페이스 쉼표로 구분 하 여 포함 된 목록입니다.
 
-*인터페이스 본문*  
+*인터페이스 본문*<br/>
 인터페이스 멤버를 선언 합니다.
 
-*선언 자*  
+*선언 자*<br/>
 (선택 사항) 이 형식에 따라 변수를 선언 합니다.
 
 ## <a name="example"></a>예제

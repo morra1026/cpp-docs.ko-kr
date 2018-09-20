@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f0b9c290cb8e5ced7537fb377d6e7ac52f20d089
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 5abae461b4298d8a6300f5d7ad9f3e162a5b21c8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314549"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46447390"
 ---
 # <a name="creating-a-dialog-box-c-that-users-cannot-exit"></a>종료할 수 없는 사용자가 대화 상자 (c + +) 만들기
 
@@ -51,6 +51,6 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[방법: 리소스 파일 만들기](../windows/how-to-create-a-resource.md)  
-[리소스 파일](../windows/resource-files-visual-studio.md)  
+[방법: 리소스 파일 만들기](../windows/how-to-create-a-resource.md)<br/>
+[리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 [대화 상자 편집기](../windows/dialog-editor.md)

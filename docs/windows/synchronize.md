@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a72d305cfae3ba76a7c61ee7f2a6a604e6832631
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: dc056b59bc2d98ab4dcee030024e6f4a4b883dfe
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604698"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46448001"
 ---
 # <a name="synchronize"></a>synchronize
 
@@ -42,7 +42,7 @@ ms.locfileid: "42604698"
 
 이 특성을 사용하려면 [coclass](../windows/coclass.md), [progid](../windows/progid.md)또는 [vi_progid](../windows/vi-progid.md) 특성(또는 이 중 하나를 암시하는 다른 특성)을 동일한 요소에 적용해야 합니다. 단일 특성을 사용하는 경우 다른 두 특성도 자동으로 적용됩니다. 예를 들어 있으면 `progid` 적용 됩니다 `vi_progid` 및 `coclass` 도 적용 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에 대 한 동기화를 제공 합니다 `UpdateBalance` 메서드를 `CMyClass` 개체입니다.
 
@@ -56,10 +56,10 @@ ms.locfileid: "42604698"
 [module(name="SYNC")];
 
 [coclass,
- threading(both),
- vi_progid("MyProject.MyClass"),
- progid("MyProject.MyClass.1"),
- uuid("7a7baa0d-59b8-4576-b754-79d07e1d1cc3")  
+threading(both),
+vi_progid("MyProject.MyClass"),
+progid("MyProject.MyClass.1"),
+uuid("7a7baa0d-59b8-4576-b754-79d07e1d1cc3")  
 ]
 class CMyClass {
    float m_nBalance;

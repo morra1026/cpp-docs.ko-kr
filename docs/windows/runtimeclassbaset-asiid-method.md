@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b50466fc2c357c1d57fca272ff343cd56f3689c5
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7092153e49fdb40fc32fb1cbee5bc2376080ff4e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604268"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391880"
 ---
 # <a name="runtimeclassbasetasiid-method"></a>RuntimeClassBaseT::AsIID 메서드
 
@@ -41,16 +41,16 @@ __forceinline static HRESULT AsIID(
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 매개 변수로 지정 된 인터페이스 ID를 구현 하는 형식을 *riid*합니다.
 
-*구현*  
+*구현*<br/>
 템플릿 매개 변수로 지정 된 형식의 변수로 *T*합니다.
 
-*riid*  
+*riid*<br/>
 검색할 인터페이스 ID입니다.
 
-*ppvObject*  
+*ppvObject*<br/>
 이 작업에 성공한 경우 포인터-에-a-인터페이스에서 지정한 매개 변수 *riid*합니다.
 
 ## <a name="return-value"></a>반환 값
@@ -69,5 +69,5 @@ __forceinline static HRESULT AsIID(
 
 ## <a name="see-also"></a>참고 항목
 
-[RuntimeClassBaseT 구조체](../windows/runtimeclassbaset-structure.md)  
+[RuntimeClassBaseT 구조체](../windows/runtimeclassbaset-structure.md)<br/>
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

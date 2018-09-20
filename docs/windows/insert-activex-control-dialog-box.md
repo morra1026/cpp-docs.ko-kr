@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 16777dc2354787057e3cfe6afb329268272a16e2
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 9a157649f374dfd1fabbecd6ce60523f4208733b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44317370"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46396729"
 ---
 # <a name="insert-activex-control-dialog-box-c"></a>ActiveX 컨트롤 삽입 대화 상자 (c + +)
 
@@ -47,6 +47,6 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[도구 상자, 대화 상자 편집기 탭](../windows/dialog-editor-tab-toolbox.md)  
-[리소스 파일](../windows/resource-files-visual-studio.md)  
+[도구 상자, 대화 상자 편집기 탭](../windows/dialog-editor-tab-toolbox.md)<br/>
+[리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 [대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)

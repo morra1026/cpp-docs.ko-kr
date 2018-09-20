@@ -1,5 +1,5 @@
 ---
-title: 주석 예 | Microsoft Docs
+title: 주석의 예 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,25 +17,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4aa6e0f0b69964ac8cadc3518e0540f4e51545fb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 681c927a7e0e7960cb483e21ed2ff1e2e4b3c5f5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340886"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46442346"
 ---
 # <a name="an-example-of-the-comments"></a>주석 예
-클래스의 다음 부분 목록을 `CChildFrame` 대부분의 클래스 멤버를 사용 하는 방식에 따라 구분 하는 클래스에서 MFC에서 사용 하는 표준 주석 사용 합니다.  
-  
- [!code-cpp[NVC_MFCListView#5](../atl/reference/codesnippet/cpp/an-example-of-the-comments_1.h)]  
-  
- 이러한 의견을 비슷한 종류의 클래스 멤버를 포함 하는 클래스 선언의 섹션을 일관 되 게 표시 합니다. 이 MFC 규칙 점을 염두에 적용 되지 마십시오.  
-  
-## <a name="see-also"></a>참고 항목  
- [MFC 소스 파일을 사용 하 여](../mfc/using-the-mfc-source-files.md)   
- [/ / 구현 주석](../mfc/decrement-implementation-comment.md)   
- [/ / 생성자 주석](../mfc/decrement-constructors-comment.md)   
- [/ / 특성 주석](../mfc/decrement-attributes-comment.md)   
- [/ / 작업 주석](../mfc/decrement-operations-comment.md)   
- [/ / 재정의 가능 주석](../mfc/decrement-overridables-comment.md)
+
+클래스의 다음 부분 목록 `CChildFrame` 대부분 사용 되는 방식에 따라 클래스 멤버를 분할 하는 클래스에서 MFC를 사용 하는 표준 의견을 사용 합니다.
+
+[!code-cpp[NVC_MFCListView#5](../atl/reference/codesnippet/cpp/an-example-of-the-comments_1.h)]
+
+이러한 주석은 비슷한 종류의 클래스 멤버를 포함 하는 클래스 선언의 섹션을 일관 되 게 표시 합니다. 이 MFC 규칙 염두에서에 둡니다, 그리고 규칙을 설정 하지.
+
+## <a name="see-also"></a>참고 항목
+
+[MFC 소스 파일 사용](../mfc/using-the-mfc-source-files.md)<br/>
+[구현 주석](../mfc/decrement-implementation-comment.md)<br/>
+[생성자 주석](../mfc/decrement-constructors-comment.md)<br/>
+[특성 주석](../mfc/decrement-attributes-comment.md)<br/>
+[작업 주석](../mfc/decrement-operations-comment.md)<br/>
+[재정의 가능 주석](../mfc/decrement-overridables-comment.md)
 

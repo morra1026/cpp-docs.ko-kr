@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6baefb7ef0af5054cb46ed4ad74b6a6bf80fbb61
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 28b162b63ad1fbd2363b4519817d466055e96bc9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45699923"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46429281"
 ---
 # <a name="default-c"></a>default(C++)
 
@@ -41,7 +41,7 @@ coclass 내에 정의된 custom 또는 dispinterface가 기본 프로그래밍 �
 
 ### <a name="parameters"></a>매개 변수
 
-*interface1*  
+*interface1*<br/>
 기본 인터페이스는 **default** 특성으로 정의된 클래스에 따라 개체를 만드는 스크립팅 환경에 사용할 수 있습니다.
 
 지정된 기본 인터페이스가 없는 경우 처음에 발생하는 비 소스 인터페이스가 기본값으로 사용됩니다.
@@ -125,6 +125,6 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
-[클래스 특성](../windows/class-attributes.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
+[클래스 특성](../windows/class-attributes.md)<br/>
 [coclass](../windows/coclass.md)  

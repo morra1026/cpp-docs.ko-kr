@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bc10f86a8fa646a1072de8b7c5e30121d98750cf
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 1eecedca8988c95466a3f257fbc77768b7c67b3b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219954"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46392868"
 ---
 # <a name="helpstringdll"></a>typelib
 
@@ -38,7 +38,7 @@ ms.locfileid: "43219954"
 
 ### <a name="parameters"></a>매개 변수
 
-*string*  
+*string*<br/>
 문서 문자열 조회를 수행 하는 데 DLL입니다.
 
 ## <a name="remarks"></a>설명
@@ -75,7 +75,7 @@ __interface IMyI
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
-[인터페이스 특성](../windows/interface-attributes.md)  
-[클래스 특성](../windows/class-attributes.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
+[인터페이스 특성](../windows/interface-attributes.md)<br/>
+[클래스 특성](../windows/class-attributes.md)<br/>
 [메서드 특성](../windows/method-attributes.md)  

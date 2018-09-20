@@ -16,17 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 280c008bf6d0f82149b382da2ca6e3d20cb28846
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 524e5dd86560afd660ebb2352b1c92111ddd72d5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33380307"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46442008"
 ---
 # <a name="tn044-mfc-support-for-dbcs"></a>TN044: DBCS에 대한 MFC 지원
-이 기술 노트 "더블 바이트 문자 집합" 또는 DBCS에 대 한 mfc에서 지원을 설명합니다. 유니코드는에서 사용할 수 있는 이제에 대 한 지원이 MFC의에 대 한 정보 뿐만 아니라이 정보는 *클래스 라이브러리 참조*합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)   
- [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
+
+이 기술 노트 "더블 바이트 문자 집합" 또는 DBCS에 대 한 mfc에서 지원을 설명합니다. 유니코드는에서 사용할 수에 대 한 지원은 MFC의에 대 한 정보 뿐만 아니라이 정보는 *클래스 라이브러리 참조*합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
+[범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
 

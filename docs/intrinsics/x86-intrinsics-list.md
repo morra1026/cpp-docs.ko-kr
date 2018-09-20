@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed65ff0e608740ae5747ec9cd708c119d79a3829
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: d3ae21e0c7f39ef1f4b2ab5379c556b987fcf37b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43685714"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46448469"
 ---
 # <a name="x86-intrinsics-list"></a>x86 내장 목록
 
@@ -1275,6 +1275,6 @@ ms.locfileid: "43685714"
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)  
-[ARM 내장 함수](../intrinsics/arm-intrinsics.md)  
-[(amd64) x64 내장 함수](../intrinsics/x64-amd64-intrinsics-list.md)  
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
+[ARM 내장 함수](../intrinsics/arm-intrinsics.md)<br/>
+[(amd64) x64 내장 함수](../intrinsics/x64-amd64-intrinsics-list.md)

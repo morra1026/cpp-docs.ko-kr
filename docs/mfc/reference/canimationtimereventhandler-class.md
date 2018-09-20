@@ -26,108 +26,125 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4dcd12f3d2f57b947beb71385327f0ad1a14975d
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: ad48c372043c06c2bc3a64537734a30d79e81a50
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36953274"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46395002"
 ---
 # <a name="canimationtimereventhandler-class"></a>CAnimationTimerEventHandler 클래스
-타이밍 이벤트가 발생할 때 애니메이션 API에서 호출하는 콜백을 구현합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-class CAnimationTimerEventHandler : public CUIAnimationTimerEventHandlerBase<CAnimationTimerEventHandler>;  
-```  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="public-methods"></a>Public 메서드  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[CAnimationTimerEventHandler::CreateInstance](#createinstance)|인스턴스를 만들고 `CAnimationTimerEventHandler` 콜백 합니다.|  
-|[CAnimationTimerEventHandler::OnPostUpdate](#onpostupdate)|애니메이션 업데이트가 완료 된 후 발생 하는 이벤트를 처리 합니다. (`CUIAnimationTimerEventHandlerBase::OnPostUpdate`를 재정의합니다.)|  
-|[CAnimationTimerEventHandler::OnPreUpdate](#onpreupdate)|애니메이션 업데이트가 시작 되기 전에 발생 하는 이벤트를 처리 합니다. (`CUIAnimationTimerEventHandlerBase::OnPreUpdate`를 재정의합니다.)|  
-|[CAnimationTimerEventHandler::OnRenderingTooSlow](#onrenderingtooslow)|애니메이션 렌더링 프레임 속도가 최소 원하는 프레임 속도 보다 적을 때 발생 하는 이벤트를 처리 합니다. (`CUIAnimationTimerEventHandlerBase::OnRenderingTooSlow`를 재정의합니다.)|  
-|[CAnimationTimerEventHandler::SetAnimationController](#setanimationcontroller)|경로 이벤트에는 애니메이션 컨트롤러에 대 한 포인터를 저장합니다.|  
-  
-## <a name="remarks"></a>설명  
- 이 이벤트 처리기 만들고 CAnimationController::EnableAnimationTimerEventHandler를 호출 하는 경우 IUIAnimationTimer::SetTimerEventHandler에 전달 합니다.  
-  
-## <a name="inheritance-hierarchy"></a>상속 계층  
- `CUIAnimationCallbackBase`  
-  
- `CUIAnimationTimerEventHandlerBase`  
-  
- `CAnimationTimerEventHandler`  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** afxanimationcontroller.h  
-  
-##  <a name="createinstance"></a>  CAnimationTimerEventHandler::CreateInstance  
- CAnimationTimerEventHandler 콜백의 인스턴스를 만듭니다.  
-  
-```  
+
+타이밍 이벤트가 발생할 때 애니메이션 API에서 호출하는 콜백을 구현합니다.
+
+## <a name="syntax"></a>구문
+
+```
+class CAnimationTimerEventHandler : public CUIAnimationTimerEventHandlerBase<CAnimationTimerEventHandler>;
+```
+
+## <a name="members"></a>멤버
+
+### <a name="public-methods"></a>Public 메서드
+
+|이름|설명|
+|----------|-----------------|
+|[CAnimationTimerEventHandler::CreateInstance](#createinstance)|인스턴스를 만들고 `CAnimationTimerEventHandler` 콜백 합니다.|
+|[CAnimationTimerEventHandler::OnPostUpdate](#onpostupdate)|애니메이션 업데이트가 완료 된 후 발생 하는 이벤트를 처리 합니다. (`CUIAnimationTimerEventHandlerBase::OnPostUpdate`를 재정의합니다.)|
+|[CAnimationTimerEventHandler::OnPreUpdate](#onpreupdate)|애니메이션 업데이트가 시작 되기 전에 발생 하는 이벤트를 처리 합니다. (`CUIAnimationTimerEventHandlerBase::OnPreUpdate`를 재정의합니다.)|
+|[CAnimationTimerEventHandler::OnRenderingTooSlow](#onrenderingtooslow)|애니메이션 렌더링 프레임 속도가 최소 원하는 프레임 속도 아래로 떨어질 때 발생 하는 이벤트를 처리 합니다. (`CUIAnimationTimerEventHandlerBase::OnRenderingTooSlow`를 재정의합니다.)|
+|[CAnimationTimerEventHandler::SetAnimationController](#setanimationcontroller)|이벤트를 라우팅하도록 애니메이션 컨트롤러에 대 한 포인터를 저장합니다.|
+
+## <a name="remarks"></a>설명
+
+이 이벤트 처리기 생성 되어 IUIAnimationTimer::SetTimerEventHandler CAnimationController::EnableAnimationTimerEventHandler를 호출할 때 전달 됩니다.
+
+## <a name="inheritance-hierarchy"></a>상속 계층
+
+`CUIAnimationCallbackBase`
+
+`CUIAnimationTimerEventHandlerBase`
+
+`CAnimationTimerEventHandler`
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** afxanimationcontroller.h
+
+##  <a name="createinstance"></a>  CAnimationTimerEventHandler::CreateInstance
+
+CAnimationTimerEventHandler 콜백 인스턴스를 만듭니다.
+
+```
 static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
-    CAnimationController* pAnimationController,  
+    CAnimationController* pAnimationController,
     IUIAnimationTimerEventHandler** ppTimerEventHandler);
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *pAnimationController*  
- 이벤트를 수신 하는 애니메이션 컨트롤러에 대 한 포인터입니다.  
-  
- *ppTimerEventHandler*  
-  
-### <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 HRESULT 오류 코드를 반환합니다.  
-  
-##  <a name="onpostupdate"></a>  CAnimationTimerEventHandler::OnPostUpdate  
- 애니메이션 업데이트가 완료 된 후 발생 하는 이벤트를 처리 합니다.  
-  
-```  
+```
+
+### <a name="parameters"></a>매개 변수
+
+*pAnimationController*<br/>
+이벤트를 수신 하는 애니메이션 컨트롤러에 대 한 포인터입니다.
+
+*ppTimerEventHandler*
+
+### <a name="return-value"></a>반환 값
+
+메서드가 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 HRESULT 오류 코드를 반환합니다.
+
+##  <a name="onpostupdate"></a>  CAnimationTimerEventHandler::OnPostUpdate
+
+애니메이션 업데이트가 완료 된 후 발생 하는 이벤트를 처리 합니다.
+
+```
 IFACEMETHOD(OnPostUpdate)();
-```  
-  
-### <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL입니다.  
-  
-##  <a name="onpreupdate"></a>  CAnimationTimerEventHandler::OnPreUpdate  
- 애니메이션 업데이트가 시작 되기 전에 발생 하는 이벤트를 처리 합니다.  
-  
-```  
+```
+
+### <a name="return-value"></a>반환 값
+
+메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL입니다.
+
+##  <a name="onpreupdate"></a>  CAnimationTimerEventHandler::OnPreUpdate
+
+애니메이션 업데이트가 시작 되기 전에 발생 하는 이벤트를 처리 합니다.
+
+```
 IFACEMETHOD(OnPreUpdate)();
-```  
-  
-### <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL입니다.  
-  
-##  <a name="onrenderingtooslow"></a>  CAnimationTimerEventHandler::OnRenderingTooSlow  
- 애니메이션 렌더링 프레임 속도가 최소 원하는 프레임 속도 보다 적을 때 발생 하는 이벤트를 처리 합니다.  
-  
-```  
+```
+
+### <a name="return-value"></a>반환 값
+
+메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL입니다.
+
+##  <a name="onrenderingtooslow"></a>  CAnimationTimerEventHandler::OnRenderingTooSlow
+
+애니메이션 렌더링 프레임 속도가 최소 원하는 프레임 속도 아래로 떨어질 때 발생 하는 이벤트를 처리 합니다.
+
+```
 IFACEMETHOD(OnRenderingTooSlow)(UINT32 fps);
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *fps*  
-  
-### <a name="return-value"></a>반환 값  
- 메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL입니다.  
-  
-##  <a name="setanimationcontroller"></a>  CAnimationTimerEventHandler::SetAnimationController  
- 경로 이벤트에는 애니메이션 컨트롤러에 대 한 포인터를 저장합니다.  
-  
-```  
+```
+
+### <a name="parameters"></a>매개 변수
+
+*fps*
+
+### <a name="return-value"></a>반환 값
+
+메서드가 성공 하면 s_ok이 고 그렇지 않으면 E_FAIL입니다.
+
+##  <a name="setanimationcontroller"></a>  CAnimationTimerEventHandler::SetAnimationController
+
+이벤트를 라우팅하도록 애니메이션 컨트롤러에 대 한 포인터를 저장합니다.
+
+```
 void SetAnimationController(CAnimationController* pAnimationController);
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *pAnimationController*  
- 이벤트를 수신 하는 애니메이션 컨트롤러에 대 한 포인터입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [클래스](../../mfc/reference/mfc-classes.md)
+```
+
+### <a name="parameters"></a>매개 변수
+
+*pAnimationController*<br/>
+이벤트를 수신 하는 애니메이션 컨트롤러에 대 한 포인터입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[클래스](../../mfc/reference/mfc-classes.md)

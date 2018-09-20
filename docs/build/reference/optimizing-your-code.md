@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 180586f55ea57100286c3c598ac62eb83107d7c9
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: b715f3cc6bc505d9698484ad7c47b8262f2bc728
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714378"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444413"
 ---
 # <a name="optimizing-your-code"></a>코드 최적화
 
@@ -33,11 +33,14 @@ ms.locfileid: "45714378"
 
 다음 항목은 C/c + + 언어의 최적화 기능 중 일부를 설명 합니다.
 
-[최적화 Pragma 및 키워드](../../build/reference/optimization-pragmas-and-keywords.md) 키워드 및 pragma는 성능 향상을 위해 코드에서 사용할 수 있는 목록입니다.
+[최적화 pragma 및 키워드](../../build/reference/optimization-pragmas-and-keywords.md)<br/>
+키워드 및 pragma는 성능 향상을 위해 코드에서 사용할 수 있는 목록입니다.
 
-[컴파일러 옵션 범주별 목록](../../build/reference/compiler-options-listed-by-category.md) 목록을 **/O** 특히 실행 속도 또는 코드 크기에 영향을 주는 컴파일러 옵션입니다.
+[컴파일러 옵션 범주별 목록](../../build/reference/compiler-options-listed-by-category.md)<br/>
+목록을 **/O** 특히 실행 속도 또는 코드 크기에 영향을 주는 컴파일러 옵션입니다.
 
-[Rvalue 참조 선언 자: & &](../../cpp/rvalue-reference-declarator-amp-amp.md) Rvalue 참조의 구현을 지원 *의미 체계 이동*합니다. 이동 의미 체계는 템플릿 라이브러리를 이러한 템플릿을 사용 하는 응용 프로그램의 성능을 구현 하는 데 사용 됩니다 크게 향상 하는 경우.
+[Rvalue 참조 선언자: &&](../../cpp/rvalue-reference-declarator-amp-amp.md)<br/>
+Rvalue 참조의 구현을 지원 *의미 체계 이동*합니다. 이동 의미 체계는 템플릿 라이브러리를 이러한 템플릿을 사용 하는 응용 프로그램의 성능을 구현 하는 데 사용 됩니다 크게 향상 하는 경우.
 
 ### <a name="the-optimize-pragma"></a>최적화 pragma
 
@@ -59,9 +62,11 @@ ms.locfileid: "45714378"
 
 다음 항목에는 바람직한 프로그래밍 방식도 설명합니다.
 
-[시간 결정적 코드가 향상에 대 한 팁](../../build/reference/tips-for-improving-time-critical-code.md) 좋은 코딩 방법을 더 나은 성능을 얻을 수 있습니다. 이 항목에서는 코딩 시간이 중요 한 코드 부분을 만족 스럽게 수행 하는지 확인 하는 데 도움이 되는 방법을 제안 합니다.
+[시간 중심의 코드 성능 향상을 위한 팁](../../build/reference/tips-for-improving-time-critical-code.md)<br/>
+좋은 코딩 방법을 더 나은 성능을 얻을 수 있습니다. 이 항목에서는 코딩 시간이 중요 한 코드 부분을 만족 스럽게 수행 하는지 확인 하는 데 도움이 되는 방법을 제안 합니다.
 
-[최적화에 대 한 유용한 정보](../../build/reference/optimization-best-practices.md) 응용 프로그램을 최적화 하는 최선의 방법에 대 한 일반적인 지침을 제공 합니다.
+[최적화를 위한 유용한 정보](../../build/reference/optimization-best-practices.md)<br/>
+응용 프로그램을 최적화 하는 최선의 방법에 대 한 일반적인 지침을 제공 합니다.
 
 ## <a name="debugging-optimized-code"></a>최적화 된 코드 디버깅
 
