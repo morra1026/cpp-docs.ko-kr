@@ -19,22 +19,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0936c760c9528e5ed4220c2a4c46a170b84041a8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 26fe49a9932ded22dbc1f0d4600f57b1f0eb6f14
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33381552"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46441410"
 ---
 # <a name="trackers-implementing-trackers-in-your-ole-application"></a>추적기: OLE 응용 프로그램에서 추적기 구현
-추적기는 OLE 클라이언트 항목와 상호 작용할 수 있도록 그래픽 인터페이스를 제공 합니다. 다양 한 추적기 스타일을 사용 하 여 OLE 해치 테두리, 표시할 수 있는 항목이 클라이언트 크기 조정 핸들 또는 다른 시각 효과의 다양 한 합니다. 이 문서에서는 설명합니다.  
-  
--   [코드에서 추적을 구현 하는 방법](../mfc/how-to-implement-tracking-in-your-code.md)합니다.  
-  
--   [고무 밴드 및 추적기](../mfc/rubber-banding-and-trackers.md)합니다.  
-  
- 추적기 스타일을 사용 하 여를 다룹니다. MFC OLE 샘플에 대 한 몇 가지 참조는 또한 [OCLIENT](../visual-cpp-samples.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [추적기](../mfc/trackers.md)
+
+추적기는 OLE 클라이언트 항목을 조작할 수 있도록 하기 위한 그래픽 인터페이스를 제공 합니다. 다른 추적 스타일을 사용 하면 OLE 클라이언트 해치 테두리, 항목을 표시할 수 크기 조정 핸들 또는 다양 한 다른 시각 효과 이 문서에 설명합니다.
+
+- [코드에서 추적을 구현 하는 방법을](../mfc/how-to-implement-tracking-in-your-code.md)합니다.
+
+- [고무 밴드 및 추적기](../mfc/rubber-banding-and-trackers.md)합니다.
+
+문서는 또한 추적기를 사용 하 여 스타일의 사용을 다룹니다. MFC OLE 샘플에 대 한 몇 가지 참조는 또한 [OCLIENT](../visual-cpp-samples.md)합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[추적기](../mfc/trackers.md)
 

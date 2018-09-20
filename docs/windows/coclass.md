@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5816c62749c889cdd926ff1551f4849fd039f1f7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 4f2c4e41b97f8ce8224d656c9ba525d807bfa270
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42585266"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46423886"
 ---
 # <a name="coclass"></a>coclass
 
@@ -82,7 +82,7 @@ Coclass를 정의할 때는 지정할 수도 있습니다는 [uuid](../windows/u
 
 클래스에 대 한.idl 파일에서 생성 된 coclass의 이름 클래스와 동일한 이름을 갖습니다.  예를 들어와 coclass의 클래스 ID에 액세스 하려면 다음 샘플에서는 참조 `CMyClass`, MIDL에서 생성 된 헤더 파일을 통해 클라이언트에서 사용 하 여 `CLSID_CMyClass`입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에서는 사용 하 여 **coclass** 특성:
 
@@ -153,8 +153,8 @@ public:
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
-[COM 특성](../windows/com-attributes.md)  
-[클래스 특성](../windows/class-attributes.md)  
-[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
+[COM 특성](../windows/com-attributes.md)<br/>
+[클래스 특성](../windows/class-attributes.md)<br/>
+[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
 [appobject](../windows/appobject.md)

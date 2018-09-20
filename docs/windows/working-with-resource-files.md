@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a39b4147bd997659f264b60fb1fc88956784bbaf
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: d72e37b8625480779620025dfd1e1eda1101b824
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318191"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430555"
 ---
 # <a name="working-with-resource-files"></a>리소스 파일에 대한 작업
 
@@ -39,24 +39,24 @@ ms.locfileid: "44318191"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[리소스 파일](../windows/resource-files-visual-studio.md)  
+[리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 리소스 파일과, Windows 데스크톱 응용 프로그램에서 리소스 파일의 사용 방법을 설명합니다. 또한 리소스 파일 사용 방법을 설명하는 항목에 대한 링크도 제공합니다.
 
-[기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)  
+[기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)<br/>
 기호에 대해 설명하고, **리소스 기호** 대화 상자를 사용하여 프로젝트의 기호를 관리하는 방법에 대한 정보를 제공합니다.
 
-[리소스 편집기](../windows/resource-editors.md)  
+[리소스 편집기](../windows/resource-editors.md)<br/>
 Visual Studio에서 제공되는 리소스 편집기와 각 편집기로 수정할 수 있는 리소스의 형식에 대해 설명하며 각 편집기를 사용하는 방법에 대한 자세한 정보를 확인할 수 있는 링크를 제공합니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[Visual C++](../visual-cpp-in-visual-studio.md)  
+[Visual C++](../visual-cpp-in-visual-studio.md)<br/>
 Visual C++ 설명서에 대한 링크를 제공합니다.
 
-[의견 보내기](/visualstudio/ide/talk-to-us)  
+[의견 보내기](/visualstudio/ide/talk-to-us)<br/>
 설명서 집합을 사용하고 기술 지원에 문의하고 액세스 가능성 기능을 적용하는 방법에 대한 정보를 확인할 수 있는 링크를 제공합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[Windows 데스크톱 응용 프로그램](../windows/windows-desktop-applications-cpp.md)  
+[Windows 데스크톱 응용 프로그램](../windows/windows-desktop-applications-cpp.md)<br/>
 [메뉴 및 기타 리소스](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

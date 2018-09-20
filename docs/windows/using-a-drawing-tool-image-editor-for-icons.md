@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5e7f1c678cc2f5c3595f1782f1bb3561ae90b86a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0a95d246170776bab20f45e503ba01ca506ce670
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609951"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46431542"
 ---
 # <a name="using-a-drawing-tool-image-editor-for-icons"></a>그리기 도구 사용(아이콘에 대한 이미지 편집기)
 
@@ -76,7 +76,7 @@ ms.locfileid: "42609951"
 
 ## <a name="see-also"></a>참고 항목
 
-[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)  
-[그래픽 리소스 편집](../windows/editing-graphical-resources-image-editor-for-icons.md)  
-[아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)  
+[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+[그래픽 리소스 편집](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
+[아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)<br/>
 [색 작업](../windows/working-with-color-image-editor-for-icons.md)

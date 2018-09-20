@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3ce2f65fd740fd2bf133d65b25cbb52838c53dd2
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ba6ed66359ee833b51154e47f8f6c26c0de8994c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601214"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408949"
 ---
 # <a name="explicit-overrides--c-component-extensions"></a>명시적 재정의(C++ 구성 요소 확장명)
 
@@ -37,16 +37,16 @@ overriding-function-declarator = function { overriding-function-definition }
 
 ### <a name="parameters"></a>매개 변수
 
-*재정의-함수-선언 자*  
+*재정의-함수-선언 자*<br/>
 재정의 함수의 반환 형식, 이름 및 인수 목록입니다.  참고는 재정의 함수를 재정의 하는 함수와 같은 이름을 사용할 필요가 없습니다.
 
-*type*  
+*type*<br/>
 재정의 하는 함수를 포함 하는 기본 형식입니다.
 
-*function*  
+*function*<br/>
 재정의 하려면 하나 이상의 함수 이름의 쉼표로 구분 된 목록입니다.
 
-*재정의-함수-정의*  
+*재정의-함수-정의*<br/>
 재정의 함수를 정의 하는 함수 본문 문입니다.
 
 ### <a name="remarks"></a>설명

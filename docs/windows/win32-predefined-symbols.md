@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cb24c8d0d24351ba09cdc8750cebbe04f7335942
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 18edb56c03541f61607817d14fdbadb067a3630d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313210"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46422781"
 ---
 # <a name="win32-predefined-symbols"></a>미리 정의된 Win32 기호
 
@@ -51,5 +51,5 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[미리 정의된 기호 ID](../windows/predefined-symbol-ids.md)  
+[미리 정의된 기호 ID](../windows/predefined-symbol-ids.md)<br/>
 [기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)

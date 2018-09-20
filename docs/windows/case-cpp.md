@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 109ca7b833791aa982e17335801e8fe1fc538987
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e6b610ce888e91ed8029c4166fa79a847d700dba
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606638"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46436522"
 ---
 # <a name="case-c"></a>case(C++)
 
@@ -38,7 +38,7 @@ ms.locfileid: "42606638"
 
 #### <a name="parameters"></a>매개 변수
 
-*값*  
+*값*<br/>
 가능한 처리를 제공 하려는 값을 입력 합니다. 유형의 **값** 다음 유형 중 하나일 수 있습니다.
 
 - `int`
@@ -55,7 +55,7 @@ ms.locfileid: "42606638"
 
 **대/소문자** c + + 특성에 동일한 기능을 합니다 **사례** MIDL 특성입니다. 이 특성에만 사용 합니다 [switch_type](../windows/switch-type.md) 특성입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에서는 사용 하는 **사례** 특성:
 
@@ -91,6 +91,6 @@ struct SizedValue2 {
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
-[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
+[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
 [클래스 특성](../windows/class-attributes.md)  

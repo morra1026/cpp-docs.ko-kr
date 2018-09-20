@@ -24,17 +24,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d46150ee76219732d0895e818fa00c68dc588853
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 808f0f470e99b95502891552ade7b8c677dfdf17
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36957392"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46396833"
 ---
 # <a name="tn055-migrating-mfc-odbc-database-class-applications-to-mfc-dao-classes"></a>TN055: MFC ODBC 데이터베이스 클래스 응용 프로그램을 MFC DAO 클래스로 마이그레이션
 
 > [!NOTE]
-> Visual c + + 환경 및 마법사 (DAO 클래스에 포함 되어 있으며 계속 사용할 수 있습니다) 이지만 DAO을 지원 하지 않습니다. 사용 하는 것이 좋습니다 [OLE DB 템플릿](../data/oledb/ole-db-templates.md) 또는 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 새 프로젝트에 대 한 합니다. DAO는 기존 응용 프로그램 유지 관리만 사용할 수 있습니다.
+> Visual c + + 환경 및 마법사 (DAO 클래스에 포함 되어 있으며 계속 사용할 수 있습니다) 이지만 DAO을 지원 하지 않습니다. 사용 하는 것이 좋습니다 [OLE DB Templates](../data/oledb/ole-db-templates.md) 하거나 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 새 프로젝트에 대 한 합니다. DAO 기존 응용 프로그램 유지 관리에 사용 해야 합니다.
 
 ## <a name="overview"></a>개요
 
@@ -91,7 +91,7 @@ DAO 클래스에는 더 많은 개체와 다양한 메서드 집합이 포함되
 |`RFX_Binary`|`DFX_Binary`|
 |`RFX_LongBinary`|`DFX_LongBinary`|
 
-<sup>1</sup> 는 `RFX_Date` 함수에 따라 `CTime` 및 `TIMESTAMP_STRUCT`합니다.
+<sup>1</sup> 는 `RFX_Date` 함수를 기반으로 `CTime` 고 `TIMESTAMP_STRUCT`입니다.
 
 사용자 응용 프로그램에 영향을 주거나 단순한 이름 차이 이상의 설명이 필요한 주요 기능 상의 차이는 아래에 나열되어 있습니다.
 
@@ -99,9 +99,9 @@ DAO 클래스에는 더 많은 개체와 다양한 메서드 집합이 포함되
 
    ODBC 클래스의 경우 MFC에서는 매크로 또는 열거 형식을 통해 이러한 옵션을 정의해야 합니다.
 
-   DAO 클래스의 경우, DAO는 헤더 파일(DBDAOINT.H)에서 이러한 옵션의 정의를 제공합니다. 따라서 레코드 집합 형식이 `CRecordset`의 열거된 멤버이지만 DAO에서는 상수입니다. 사용 예를 들어 **스냅숏** 의 형식을 지정할 때 `CRecordset` odbc에서 하지만 **DB_OPEN_SNAPSHOT** 의 형식을 지정할 때 `CDaoRecordset`합니다.
+   DAO 클래스의 경우, DAO는 헤더 파일(DBDAOINT.H)에서 이러한 옵션의 정의를 제공합니다. 따라서 레코드 집합 형식이 `CRecordset`의 열거된 멤버이지만 DAO에서는 상수입니다. 사용 예를 들어 **스냅숏** 의 형식을 지정할 때는 `CRecordset` ODBC에서 하지만 **DB_OPEN_SNAPSHOT** 의 형식을 지정 하는 경우 `CDaoRecordset`합니다.
 
-- 에 대 한 기본 레코드 집합 형식이 `CRecordset` 은 **스냅숏** 에 대 한 기본 레코드 집합 유형에 `CDaoRecordset` 은 **다이너셋** (ODBC 클래스 스냅숏에 대 한 추가 문제에 대 한 아래의 참고 참조).
+- 기본 레코드 집합 형식 `CRecordset` 됩니다 **스냅숏** 기본 레코드 집합 형식에 대 한 `CDaoRecordset` 은 **다이너셋** (ODBC 클래스 스냅숏에 대 한 추가 문제에 대 한 아래 참고 참조).
 
 - ODBC `CRecordset` 클래스에는 전달 전용 레코드 집합 형식을 생성하는 옵션이 포함됩니다. `CDaoRecordset` 클래스에서 전달 전용은 레코드 집합 형식이 아니고, 특정 유형의 레코드 집합이 갖는 속성(또는 옵션)입니다.
 
@@ -111,12 +111,12 @@ DAO 클래스에는 더 많은 개체와 다양한 메서드 집합이 포함되
 
 - 예외 클래스가 변경되었습니다. `CDBExceptions` ODBC 클래스에서 throw 되 고 `CDaoExceptions` DAO 클래스에서입니다.
 
-- `RFX_Date` 사용 하 여 `CTime` 및 `TIMESTAMP_STRUCT` 하는 동안 개체 `DFX_Date` 사용 하 여 `COleDateTime`합니다. `COleDateTime` 거의 동일한 `CTime`, 8 바이트 OLE를 기반으로 하지만 **날짜** 4 바이트 대신 **time_t** 는 훨씬 더 큰 범위의 데이터를 보유할 수 있도록 합니다.
+- `RFX_Date` 사용 하 여 `CTime` 하 고 `TIMESTAMP_STRUCT` 하는 동안 개체 `DFX_Date` 사용 하 여 `COleDateTime`입니다. 합니다 `COleDateTime` 거의 동일 `CTime`, 있지만 기반으로 8 바이트 OLE **날짜** 4 바이트 대신 **time_t** 를 훨씬 더 큰 범위의 데이터를 보유할 수 있도록 합니다.
 
    > [!NOTE]
-   > DAO(`CDaoRecordset`) 스냅숏은 읽기 전용이지만 ODBC(`CRecordset`) 스냅숏은 드라이버 및 ODBC 커서 라이브러리 사용에 따라 업데이트가 가능할 수 있습니다. 커서 라이브러리를 사용하는 경우 `CRecordset` 스냅샷을 업데이트할 수 있습니다. ODBC 커서 라이브러리 없이 Microsoft Desktop Driver Pack 3.0 드라이버를 사용 중이면 `CRecordset` 스냅샷이 읽기 전용입니다. 드라이버의 설명서 있는지를 확인 하는 다른 드라이버를 사용 하는 경우 스냅숏 (`STATIC_CURSORS`)은 읽기 전용입니다.
+   > DAO(`CDaoRecordset`) 스냅숏은 읽기 전용이지만 ODBC(`CRecordset`) 스냅숏은 드라이버 및 ODBC 커서 라이브러리 사용에 따라 업데이트가 가능할 수 있습니다. 커서 라이브러리를 사용하는 경우 `CRecordset` 스냅샷을 업데이트할 수 있습니다. ODBC 커서 라이브러리 없이 Microsoft Desktop Driver Pack 3.0 드라이버를 사용 중이면 `CRecordset` 스냅샷이 읽기 전용입니다. 드라이버의 설명서 있는지를 확인 하는 다른 드라이버를 사용 하는 경우 스냅숏 (`STATIC_CURSORS`)는 읽기 전용입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)  
-[범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)  
+[번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
+[범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)

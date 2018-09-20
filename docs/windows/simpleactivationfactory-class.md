@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 07c37dbf1629461141d592eb1987ce071324e22c
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: 111015fdd8887ae779aeb8fecc8274cfcf7c6c68
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691473"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46441280"
 ---
 # <a name="simpleactivationfactory-class"></a>SimpleActivationFactory 클래스
 
@@ -43,7 +43,7 @@ class SimpleActivationFactory : public ActivationFactory<>;
 
 ### <a name="parameters"></a>매개 변수
 
-*자료*  
+*자료*<br/>
 기본 클래스입니다.
 
 ## <a name="remarks"></a>설명
@@ -106,7 +106,7 @@ STDMETHOD( ActivateInstance )(
 
 #### <a name="parameters"></a>매개 변수
 
-*ppvObject*  
+*ppvObject*<br/>
 이 작업이 완료 될 때, 지정 된 개체의 인스턴스에 대 한 포인터를 `Base` 클래스 템플릿 매개 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -129,7 +129,7 @@ STDMETHOD( GetRuntimeClassName )(
 
 #### <a name="parameters"></a>매개 변수
 
-*runtimeName*  
+*runtimeName*<br/>
 이 작업이 완료 될 때 런타임 클래스 이름입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -152,7 +152,7 @@ STDMETHOD(
 
 #### <a name="parameters"></a>매개 변수
 
-*trustLvl*  
+*trustLvl*<br/>
 이 작업이 완료 될 때 현재 클래스 개체의 신뢰 수준입니다.
 
 ### <a name="return-value"></a>반환 값

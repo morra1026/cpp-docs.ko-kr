@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1ee7e6deeda17d2ac374b39edf70ab28fa1457fa
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 87fb8ece3e1897a3ba460403d273bd649784ad44
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603383"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400436"
 ---
 # <a name="moduleunregisterobjects-method"></a>Module::UnregisterObjects 메서드
 
@@ -38,10 +38,10 @@ HRESULT UnregisterObjects(
 
 ### <a name="parameters"></a>매개 변수
 
-*모듈*  
+*모듈*<br/>
 모듈에 대한 포인터입니다.
 
-*서버 이름*  
+*서버 이름*<br/>
 이 작업으로 영향을 받는 개체의 하위 집합을 지정하는 정규화 이름입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -55,4 +55,5 @@ HRESULT UnregisterObjects(
 **네임스페이스:** Microsoft::WRL
 
 ## <a name="see-also"></a>참고 항목
+
 [Module 클래스](../windows/module-class.md)

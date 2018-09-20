@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98edb5945c2cf01d90cd5dae1a750c0fdd37757f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 1255c92a7de4a0f1707cd20f91e8b9f1de640942
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723283"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46440461"
 ---
 # <a name="debugtype-debug-info-options"></a>/DEBUGTYPE(디버그 정보 옵션)
 
@@ -54,7 +54,7 @@ PDB 파일의 디버그 스트림 정보에 재배치 테이블 항목을 추가
 
 ## <a name="see-also"></a>참고 항목
 
-[/DEBUG (디버그 정보 생성)](../../build/reference/debug-generate-debug-info.md)
-[/DRIVER (Windows NT 커널 모드 드라이버)](../../build/reference/driver-windows-nt-kernel-mode-driver.md)
-[/PROFILE (성능 도구 Profiler)](../../build/reference/profile-performance-tools-profiler.md) 
- [(WinDbg, KD, CDB, NTSD) Windows 용 디버깅 도구](/windows-hardware/drivers/debugger/index)
+[/DEBUG(디버깅 정보 생성)](../../build/reference/debug-generate-debug-info.md)<br/>
+[/DRIVER(Windows NT 커널 모드 드라이버)](../../build/reference/driver-windows-nt-kernel-mode-driver.md)<br/>
+[/PROFILE(성능 도구 프로파일러)](../../build/reference/profile-performance-tools-profiler.md)<br/>
+[Windows (WinDbg, KD, CDB, NTSD) 용 디버깅 도구](/windows-hardware/drivers/debugger/index)

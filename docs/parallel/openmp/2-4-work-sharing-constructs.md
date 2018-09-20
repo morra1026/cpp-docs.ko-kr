@@ -12,22 +12,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c00eb94055f26954a283a6172f69228804832ac4
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 719b33698b708761f0cd56e65a70a6ea8fa3b053
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689638"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46411120"
 ---
 # <a name="24-work-sharing-constructs"></a>2.4 작업 공유 구문
-작업 공유 생성자 배포 발생 하는 팀의 멤버 간에 연결 된 문 실행 합니다. 작업 공유 지시문은 새 스레드를 시작 하지 않으며 없습니다 묵시적된 장벽 작업 공유 구문에 대 한 항목에.  
-  
- 작업 공유의 시퀀스를 생성 하 고 **장벽** 발생 지시문 팀의 모든 스레드에 대해 동일 해야 합니다.  
-  
- 다음 섹션에 설명 되어 및 OpenMP 다음과 같은 작업 공유 생성자를 정의 합니다.  
-  
--   **에 대 한** 지시문  
-  
--   **섹션** 지시문  
-  
--   **단일** 지시문
+
+작업 공유 구문이 발생 하는 팀 구성원 중에서 연결된 된 문 실행을 배포 합니다. 작업 공유 지시문은 새 스레드를 시작 하지 및 작업 공유 구문에 대 한 항목에는 묵시적된 장벽이 없습니다.
+
+작업 공유 시퀀스를 생성 하 고 **장벽** 팀의 모든 스레드에 대해 발생 하는 지시문 같아야 합니다.
+
+OpenMP 다음 작업 공유 생성자를 정의 하 고 섹션에 설명 된 이러한:
+
+- **에 대 한** 지시문
+
+- **섹션** 지시문
+
+- **단일** 지시문

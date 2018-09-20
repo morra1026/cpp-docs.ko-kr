@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6ca09463a2934db0097c09d6a4f928f108fd0760
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: cc933905cf4056d2be6c692728c621913687a6fa
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316304"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425538"
 ---
 # <a name="new-toolbar-resource-dialog-box-c"></a>새 도구 모음 리소스 대화 상자 (c + +)
 
@@ -46,6 +46,6 @@ MFC 또는 ATL
 
 ## <a name="see-also"></a>참고 항목
 
-[도구 모음 단추 속성](../windows/toolbar-button-properties.md)  
-[비트맵을 도구 모음으로 변환](../windows/converting-bitmaps-to-toolbars.md)  
+[도구 모음 단추 속성](../windows/toolbar-button-properties.md)<br/>
+[비트맵을 도구 모음으로 변환](../windows/converting-bitmaps-to-toolbars.md)<br/>
 [도구 모음 편집기](../windows/toolbar-editor.md)

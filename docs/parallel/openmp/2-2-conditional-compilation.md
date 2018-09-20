@@ -1,5 +1,5 @@
 ---
-title: 2.2 조건부 컴파일 | Microsoft Docs
+title: 2.2 조 건 부 컴파일 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,20 +12,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3d8c7073548c015d9982b721387176a0ca658c2
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 25b52ce624777efe85e27b8ce5e7941bc2f5dcba
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33685907"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46440383"
 ---
 # <a name="22-conditional-compilation"></a>2.2 조건부 컴파일
-_**OPENMP** 10 진수 상수 OpenMP 규격 구현으로 정의 된 매크로 이름 *yyyymm*, 연도 및 월의 승인 된 사양 됩니다. 이 매크로의 제목을 않아야는 **#define** 또는 **#undef** 전처리 지시문입니다.  
-  
-```  
-#ifdef _OPENMP  
-iam = omp_get_thread_num() + index;  
-#endif  
-```  
-  
- 확장 OpenMP을 정의 하는 공급 업체, 추가 미리 정의 된 매크로 지정할 수 있습니다.
+
+_**OPENMP** 10 진 상수와 매크로 이름이 OpenMP 규격 구현에서 정의 된 *yyyymm*, 연도 및 월의 승인 된 사양을 수 있습니다. 이 매크로는의 주체를 사용 해야 합니다.는 **#define** 또는 **#undef** 전처리 지시문입니다.
+
+```
+#ifdef _OPENMP
+iam = omp_get_thread_num() + index;
+#endif
+```
+
+공급 업체 확장 openmp를 정의 하는 경우 추가 미리 정의 된 매크로 지정할 수 있습니다.

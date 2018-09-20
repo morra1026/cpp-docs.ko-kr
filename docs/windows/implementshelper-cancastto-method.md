@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ab1f2c16f7329f455fbd1fea525b17c9cc433a36
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9487ba4e05a0094d852b0db0c9c39009c027dc9e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593157"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46423743"
 ---
 # <a name="implementshelpercancastto-method"></a>ImplementsHelper::CanCastTo 메서드
 
@@ -44,13 +44,13 @@ HRESULT CanCastTo(
 
 ### <a name="parameters"></a>매개 변수
 
-*riid*  
+*riid*<br/>
 인터페이스 ID에 대 한 참조
 
-*ppv*  
+*ppv*<br/>
 인터페이스에 대 한 포인터를 지정 하 여이 작업에 성공한 경우 *riid* 하거나 *iid*합니다.
 
-*iid*  
+*iid*<br/>
 인터페이스 ID에 대 한 참조
 
 ## <a name="return-value"></a>반환 값
@@ -69,5 +69,5 @@ HRESULT CanCastTo(
 
 ## <a name="see-also"></a>참고 항목
 
-[ImplementsHelper 구조체](../windows/implementshelper-structure.md)  
+[ImplementsHelper 구조체](../windows/implementshelper-structure.md)<br/>
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

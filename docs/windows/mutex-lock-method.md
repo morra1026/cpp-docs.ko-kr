@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 38bd11620f8d403bbd1667ab6fa4f3f827362c88
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8bb04b8be33f81931106574152d0ccb6ba535295
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600875"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427838"
 ---
 # <a name="mutexlock-method"></a>Mutex::Lock 메서드
 
@@ -43,10 +43,10 @@ static SyncLock Lock(
 
 ### <a name="parameters"></a>매개 변수
 
-*시간 (밀리초)*  
+*시간 (밀리초)*<br/>
 제한 시간 간격(밀리초)입니다. 기본값은 INFINITE으로, 무제한 대기합니다.
 
-*h*  
+*h*<br/>
 핸들을 **뮤텍스** 개체입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -58,4 +58,5 @@ static SyncLock Lock(
 **Namespace:** Microsoft::WRL::Wrappers
 
 ## <a name="see-also"></a>참고 항목
+
 [Mutex 클래스](../windows/mutex-class1.md)

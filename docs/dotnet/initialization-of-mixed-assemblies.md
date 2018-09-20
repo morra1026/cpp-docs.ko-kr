@@ -21,19 +21,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 9004d62caa5368294a5a53e4e2587da05d1d495c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ba9f3143fb110b25f384e462e7dfcd69c0140802
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204544"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46439577"
 ---
 # <a name="initialization-of-mixed-assemblies"></a>혼합형 어셈블리 초기화
 
 Windows 개발자가 항상 조심 하십시오 로더 잠금 하는 동안 코드를 실행할 때 `DllMain`합니다. 그러나 C +를 다룰 때 고려해 야 하는 일부 추가적인 고려 사항이 있습니다. + clr 혼합 모드 어셈블리입니다.
 
 내 코드 [DllMain](/windows/desktop/Dlls/dllmain) CLR을 액세스 하지 않아야 합니다. 즉, `DllMain` 은 관리되는 함수를 직접적으로든 간접적으로든 호출하지 않아야 하고, `DllMain`에서 관리 코드를 선언하거나 구현하지 않아야 하며, `DllMain`내에서 가비지 수집이나 자동 라이브러리 로드를 수행하지 않아야 합니다.
-  
+
 ## <a name="causes-of-loader-lock"></a>로더 잠금 원인
 
 .NET 플랫폼이 개발되면서 실행 모듈(EXE 또는 DLL)을 로드하는 데 서로 다른 두 가지 메커니즘이 사용되기 시작했습니다. 그 중 하나는 Windows용으로 관리되는 모듈에 사용되고, 다른 하나는 .NET 어셈블리를 로드하는 .NET CLR(공용 언어 런타임)에 사용됩니다. 혼합 DLL 로드 문제는 Microsoft Windows OS 로더에 주로 관련된 것입니다.
@@ -130,7 +130,7 @@ Visual Studio 2005 이전 링커는 단순히 다른 소스 파일에 대 한 �
 로더 잠금 문제를 해결하려는 사용자의 편의를 위해 네이티브 구현과 관리되는 구현이 둘 다 있으면 링커에서 네이티브 구현을 선택합니다. 따라서 위와 같은 문제가 발생하지 않습니다. 그러나 이 릴리스에는 컴파일러에서 해결되지 않은 두 가지 문제로 인해 이 규칙에 두 가지 예외가 있습니다.
 
 - 전역 정적 함수 포인터를 통해 인라인 함수를 호출하게 됩니다. 가상 함수는 전역 함수 포인터를 통해 호출되므로 이 시나리오가 특히 두드러집니다. 예를 들어 개체에 적용된
-  
+
 ```cpp
 #include "definesmyObject.h"
 #include "definesclassC.h"
@@ -170,15 +170,15 @@ MSIL 함수를 호출할 때 CLR에서 진단이 생성되면 CLR 실행이 일�
    이 작업을 수행 하려면 엽니다는 **속성** 솔루션에서 시작 프로젝트에 대 한 표입니다. 선택 **구성 속성** > **디버깅**합니다. 설정 된 **디버거 형식** 하 **네이티브 전용**합니다.
 
 1. F5 키를 눌러 디버거를 시작 합니다.
-  
+
 1. 경우는 **/clr** 진단 생성 되는 경우 선택 **을 다시 시도 하세요** 를 선택한 후 **중단**합니다.
-  
+
 1. 호출 스택 창을 엽니다. (메뉴 모음에서 선택 **디버깅할** > **Windows** > **호출 스택**.) 잘못 된 `DllMain` 또는 정적 이니셜라이저는 녹색 화살표를 사용 하 여 식별 됩니다. 위반하는 함수를 식별할 수 없으면 다음 단계를 수행하여 이를 찾아야 합니다.
 
 1. 엽니다는 **직접 실행** 창 (메뉴 모음에서 **디버그** > **Windows** > **즉시**.)
 
 1. 에.load sos.dll을 입력 합니다 **직접 실행** SOS 디버깅 서비스를 로드 하는 창입니다.
-  
+
 1. 형식! dumpstack을 **직접 실행** 내부의 전체 목록을 가져오기 위해 창을 **/clr** 스택.
 
 1. _Cordllmain (스택 맨 아래에 가장 가까운) 첫 번째 인스턴스를 찾습니다 (경우 `DllMain` 문제를 일으키는), _VTableBootstrapThunkInitHelperStub 또는 GetTargetForVTableEntry (정적 이니셜라이저는 문제를 일으키는) 경우입니다. 이 호출 바로 아래에 있는 스택 항목이 로더 잠금 상태에서 실행하려 했던 MSIL 구현 함수의 호출입니다.

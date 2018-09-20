@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b20cbb906676705113bd1a84884cc5719b8272bf
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: 4a3e262567927b818072c1e05acd18aa64cbaa6c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691447"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46446519"
 ---
 # <a name="simpleclassfactory-class"></a>SimpleClassFactory 클래스
 
@@ -39,7 +39,7 @@ class SimpleClassFactory : public ClassFactory<>;
 
 ### <a name="parameters"></a>매개 변수
 
-*자료*  
+*자료*<br/>
 기본 클래스입니다.
 
 ## <a name="remarks"></a>설명
@@ -102,15 +102,15 @@ STDMETHOD( CreateInstance )(
 
 #### <a name="parameters"></a>매개 변수
 
-*pUnkOuter*  
+*pUnkOuter*<br/>
 해야 `nullptr`고, 그렇지 않으면 반환 값은 CLASS_E_NOAGGREGATION 합니다.
 
 SimpleClassFactory 집계를 지원 하지 않습니다. 집계 된 지원 하 고 생성 되는 개체, 집계의 일부 였던 *pUnkOuter* 에 대 한 포인터를 제어 하는 것 `IUnknown` 집계의 인터페이스입니다.
 
-*riid*  
+*riid*<br/>
 만들 개체의 ID를 인터페이스입니다.
 
-*ppvObject*  
+*ppvObject*<br/>
 이 작업이 완료 될 때, 지정 된 개체의 인스턴스에 대 한 포인터를 *riid* 매개 변수입니다.
 
 ### <a name="return-value"></a>반환 값

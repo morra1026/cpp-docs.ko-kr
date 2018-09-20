@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7979dd21d68c5b1e2606573a5271fc8deafdfb07
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 62efb2b1aa2cd2caa0c5701696689ea3df19f962
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604182"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46443620"
 ---
 # <a name="activationfactorycallback-function"></a>ActivationFactoryCallback 함수
 
@@ -39,10 +39,10 @@ inline HRESULT STDAPICALLTYPE ActivationFactoryCallback(
 
 ### <a name="parameters"></a>매개 변수
 
-*activationId*  
+*activationId*<br/>
 런타임 클래스 이름을 지정 하는 문자열에 대 한 핸들입니다.
 
-*ppFactory*  
+*ppFactory*<br/>
 이 작업이 완료 되 면 매개 변수에 해당 하는 활성화 팩터리 *activationId*합니다.
 
 ## <a name="return-value"></a>반환 값

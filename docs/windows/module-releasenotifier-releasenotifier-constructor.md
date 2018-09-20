@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f4ab2d5d03516147acda38ea2133d7445695de80
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e43abd46ccfb150936ff435360611289f18a1270
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598790"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46405023"
 ---
 # <a name="modulereleasenotifierreleasenotifier-constructor"></a>Module::ReleaseNotifier::ReleaseNotifier 생성자
 
@@ -36,7 +36,7 @@ ReleaseNotifier(bool release) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*release*  
+*release*<br/>
 **true** 삭제 하려면이 인스턴스에 `Release` 메서드 호출 됩니다. **false** 이 인스턴스를 삭제 하지 않도록 합니다.
 
 ## <a name="exceptions"></a>예외

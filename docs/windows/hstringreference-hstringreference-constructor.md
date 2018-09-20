@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c13635f4b73ee34de11b8c18b0cdd9943b261a29
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6123f87abb9922a9736ac56f64d28e78887a0fdd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591187"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46403582"
 ---
 # <a name="hstringreferencehstringreference-constructor"></a>HStringReference::HStringReference 생성자
 
@@ -41,16 +41,16 @@ HStringReference(HStringReference&& other) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*sizeDest*  
+*sizeDest*<br/>
 대상의 크기를 지정 하는 템플릿 매개 변수 **HStringReference** 버퍼입니다.
 
-*str*  
+*str*<br/>
 와이드 문자 문자열에 대한 참조입니다.
 
-*Len 함수*  
+*Len 함수*<br/>
 최대 길이 *str* 이 작업에 사용할 매개 변수 버퍼입니다. 경우는 *len* 매개 변수를 지정 하지 않으면 전체 *str* 매개 변수를 사용 합니다. 하는 경우 *len* 보다 크면 *sizeDest*를 *len* 로 설정 되어 *sizeDest*-1입니다.
 
-*other*  
+*other*<br/>
 다른 **HStringReference** 개체입니다.
 
 ## <a name="remarks"></a>설명

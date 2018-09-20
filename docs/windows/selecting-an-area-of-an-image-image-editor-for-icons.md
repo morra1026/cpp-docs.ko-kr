@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c90367a1db313de1935e119c2efb8e9713b3d282
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 73a773a5633ceb38173a4181e5e3effe2329fce0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603605"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419583"
 ---
 # <a name="selecting-an-area-of-an-image-image-editor-for-icons"></a>이미지 영역 선택(아이콘에 대한 이미지 편집기)
 
@@ -58,6 +58,6 @@ ms.locfileid: "42603605"
 
 ## <a name="see-also"></a>참고 항목
 
-[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)  
-[그래픽 리소스 편집](../windows/editing-graphical-resources-image-editor-for-icons.md)  
+[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+[그래픽 리소스 편집](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
 [아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)

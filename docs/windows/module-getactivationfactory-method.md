@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0e87ea3b0e44732d4271385073c48fd92e1aa114
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 995594ee48e6ca408e88d9ab14968d88b536d309
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608929"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46403518"
 ---
 # <a name="modulegetactivationfactory-method"></a>Module::GetActivationFactory 메서드
 
@@ -40,13 +40,13 @@ WRL_NOTHROW HRESULT GetActivationFactory(
 
 ### <a name="parameters"></a>매개 변수
 
-*pActivatibleClassId*  
+*pActivatibleClassId*<br/>
 런타임 클래스의 IID입니다.
 
-*ppIFactory*  
+*ppIFactory*<br/>
 지정된 런타임 클래스에 대한 IActivationFactory입니다.
 
-*서버 이름*  
+*서버 이름*<br/>
 현재 모듈의 클래스 팩터리 하위 집합 이름입니다. 에 사용 되는 서버 이름을 지정 합니다 [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) 매크로 지정 하거나 **nullptr** 기본 서버 이름을 가져올 수 합니다.
 
 ## <a name="return-value"></a>반환 값
@@ -61,5 +61,5 @@ WRL_NOTHROW HRESULT GetActivationFactory(
 
 ## <a name="see-also"></a>참고 항목
 
-[Module 클래스](../windows/module-class.md)  
+[Module 클래스](../windows/module-class.md)<br/>
 [ActivatableClass 매크로](../windows/activatableclass-macros.md)

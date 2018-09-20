@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 847a93efc74c4e6111f49679219e1b26a70022f6
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ab72225287eab71180e80a059bc320829c24b5f7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45707517"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419271"
 ---
 # <a name="qpar-report-auto-parallelizer-reporting-level"></a>/Qpar-report(자동 병렬화 도우미 보고 수준)
 
@@ -53,7 +53,7 @@ ms.locfileid: "45707517"
 
 ## <a name="see-also"></a>참고 항목
 
-[/Q 옵션 (하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)
+[/Q 옵션(하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
 [네이티브 코드의 병렬 프로그래밍](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/)

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 606f9560f6d490e1d50d94dd12103713781c4f1b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 98de9ff79016ebc4ce231b92f5e93ed48e551ada
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603762"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46445050"
 ---
 # <a name="comptrrefcomptrref-constructor"></a>ComPtrRef::ComPtrRef 생성자
 
@@ -38,7 +38,7 @@ ComPtrRef(
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr*  
+*ptr*<br/>
 다른 기본 값 **ComPtrRef** 개체입니다.
 
 ## <a name="remarks"></a>설명
@@ -53,5 +53,5 @@ ComPtrRef(
 
 ## <a name="see-also"></a>참고 항목
 
-[ComPtrRef 클래스](../windows/comptrref-class.md)  
+[ComPtrRef 클래스](../windows/comptrref-class.md)<br/>
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

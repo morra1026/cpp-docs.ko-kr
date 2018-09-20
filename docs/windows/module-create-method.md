@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9ae4f50e6d2d614e444766babf8e55f5c9f83932
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a8b84bcaec7dbadfb7b735264df12f7e958dcd20
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609546"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444699"
 ---
 # <a name="modulecreate-method"></a>Module::Create 메서드
 
@@ -45,16 +45,16 @@ WRL_NOTHROW static Module& Create(
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 모듈 유형입니다.
 
-*콜백*  
+*콜백*<br/>
 모듈의 마지막 인스턴스 개체가 해제 될 때 호출 됩니다.
 
-*object*  
+*object*<br/>
 합니다 *개체* 하 고 *메서드* 조합 하 여 매개 변수를 사용 합니다. 요소 마지막 인스턴스 개체 모듈의 마지막 인스턴스 개체가 해제 될 때입니다.
 
-*method*  
+*method*<br/>
 합니다 *개체* 하 고 *메서드* 조합 하 여 매개 변수를 사용 합니다. 모듈의 마지막 인스턴스 개체가 해제 될 때 마지막 인스턴스 개체의 메서드를 가리킵니다.
 
 ## <a name="return-value"></a>반환 값
