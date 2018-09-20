@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d8e029b1ffc4e17e55f2cb69405bb272b92e94e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6d8d4b0f740e69b57944cb35f2213ae0fd54b511
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221396"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46386290"
 ---
 # <a name="tn071-mfc-iolecommandtarget-implementation"></a>TN071: MFC IOleCommandTarget 구현
 
@@ -59,11 +59,11 @@ DECLARE_OLECMD_MAP ()
 BEGIN_OLECMD_MAP(theClass, baseClass)
 ```
 
-*theClass*  
- 명령 맵을 포함 하는 클래스의 이름입니다.
+*theClass*<br/>
+명령 맵을 포함 하는 클래스의 이름입니다.
 
-*baseClass*  
- 명령 맵을 포함 하는 클래스의 기본 클래스의 이름입니다.
+*baseClass*<br/>
+명령 맵을 포함 하는 클래스의 기본 클래스의 이름입니다.
 
 이 매크로 명령 맵의 시작을 표시 합니다. 명령 맵을 포함 하는 클래스의 구현 파일에서이 매크로 사용 합니다.
 
@@ -77,14 +77,14 @@ END_OLECMD_MAP()
 ON_OLECMD(pguid, olecmdid, id)
 ```
 
-*pguid*  
- OLE 명령의 명령 그룹의 GUID에 대 한 포인터입니다. 이 매개 변수가 **NULL** 표준 OLE 명령 그룹에 대 한 합니다.
+*pguid*<br/>
+OLE 명령의 명령 그룹의 GUID에 대 한 포인터입니다. 이 매개 변수가 **NULL** 표준 OLE 명령 그룹에 대 한 합니다.
 
-*olecmdid*  
- 호출할 명령의 OLE 명령 ID입니다.
+*olecmdid*<br/>
+호출할 명령의 OLE 명령 ID입니다.
 
-*ID*  
- 이 OLE 명령을 호출할 때 명령 맵이 포함 된 응용 프로그램에 보낼 WM_COMMAND 메시지의 ID입니다.
+*ID*<br/>
+이 OLE 명령을 호출할 때 명령 맵이 포함 된 응용 프로그램에 보낼 WM_COMMAND 메시지의 ID입니다.
 
 처리 하려는 OLE 명령에 대 한 항목을 추가 하려면 명령 구조의 ON_OLECMD 매크로 사용 합니다. OLE 명령 수신 되 면 이러한 지정된 된 WM_COMMAND 메시지 변환 되며 표준 MFC 명령 라우팅 아키텍처를 사용 하 여 응용 프로그램의 메시지 맵을 통해 라우팅됩니다.
 
@@ -158,5 +158,5 @@ void CContainerCntrItem::DoOleCmd()
 
 ## <a name="see-also"></a>참고자료
 
-[번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)  
-[범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)  
+[번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
+[범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)

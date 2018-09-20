@@ -29,12 +29,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6f9b121b75e31fdd79313e36b9e1e19c1cf3200e
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: 12fd66c7ff5a6f6fee7588aa7bd51ae2053ba7e8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691538"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46386979"
 ---
 # <a name="weakref-class"></a>WeakRef 클래스
 
@@ -141,10 +141,10 @@ HRESULT As(
 
 ### <a name="parameters"></a>매개 변수
 
-*U*  
+*U*<br/>
 인터페이스 ID입니다.
 
-*ptr*  
+*ptr*<br/>
 이 작업이 완료 되 면 매개 변수를 나타내는 개체 *U*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -176,10 +176,10 @@ HRESULT AsIID(
 
 ### <a name="parameters"></a>매개 변수
 
-*riid*  
+*riid*<br/>
 인터페이스 ID입니다.
 
-*ptr*  
+*ptr*<br/>
 이 작업이 완료 되 면 매개 변수를 나타내는 개체 *riid*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -220,13 +220,13 @@ HRESULT CopyTo(
 
 ### <a name="parameters"></a>매개 변수
 
-*U*  
+*U*<br/>
 포인터는 `IInspectable` 인터페이스입니다. 오류가 발생 하는 경우에 내보내집니다 *U* 에서 파생 되지 않은 `IInspectable`합니다.
 
-*riid*  
+*riid*<br/>
 인터페이스 ID입니다. 오류가 발생 하는 경우에 내보내집니다 *riid* 에서 파생 되지 않은 `IWeakReference`합니다.
 
-*ptr*  
+*ptr*<br/>
 에 대 한 이중 간접 포인터 `IInspectable` 또는 `IWeakReference`합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -284,7 +284,7 @@ WeakRef(
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr*  
+*ptr*<br/>
 포인터, 참조 또는 현재 초기화 하는 기존 개체에 대 한 rvalue 참조 `WeakRef` 개체입니다.
 
 ### <a name="remarks"></a>설명

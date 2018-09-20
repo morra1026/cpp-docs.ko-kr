@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ffb84fd072f4ddd3dc76445c720debef5c364642
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 33f81412ef9580768269663aa23afe06ad4d62f7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590437"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46374681"
 ---
 # <a name="comptras-method"></a>ComPtr::As 메서드
 
@@ -44,10 +44,10 @@ HRESULT As(
 
 ### <a name="parameters"></a>매개 변수
 
-*U*  
+*U*<br/>
 인터페이스를 매개 변수로 표시할 *p*합니다.
 
-*p*  
+*p*<br/>
 A **ComPtr** 매개 변수에 의해 지정 된 인터페이스를 나타내는 개체입니다 *U*합니다. 매개 변수 *p* 현재 참조 하지 않아야 **ComPtr** 개체입니다.
 
 ## <a name="remarks"></a>설명

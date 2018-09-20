@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c2745ed1a17311f92fda6fc61743fed65882b952
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b7633c1fb695e99e7d653d2afd26014c2ffe9004
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601110"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46381909"
 ---
 # <a name="interiorptr-ccli"></a>interior_ptr(C++/CLI)
 
@@ -54,16 +54,16 @@ cli::interior_ptr<cv_qualifier type> var = &initializer;
 
 ### <a name="parameters"></a>매개 변수
 
-*cv_qualifier*  
+*cv_qualifier*<br/>
 **const** 나 **volatile** 한정자입니다.
 
-*type*  
+*type*<br/>
 유형의 *이니셜라이저*합니다.
 
-*var*  
+*var*<br/>
 이름을 합니다 **interior_ptr** 변수입니다.
 
-*initializer*  
+*initializer*<br/>
 참조 형식의 멤버, 관리되는 배열의 요소 또는 네이티브 포인터에 할당할 수 있는 다른 모든 개체입니다.
 
 ### <a name="remarks"></a>설명

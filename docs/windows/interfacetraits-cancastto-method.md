@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: aea326149c9748ff480d523a1078f54ba733cb14
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 705b495e3f6d626a742fd1a63989c8cc658446a4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610422"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46379668"
 ---
 # <a name="interfacetraitscancastto-method"></a>InterfaceTraits::CanCastTo 메서드
 
@@ -41,13 +41,13 @@ static __forceinline bool CanCastTo(
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr*  
+*ptr*<br/>
 이름 형식에 대 한 포인터입니다.
 
-*riid*  
+*riid*<br/>
 인터페이스 ID의 `Base`합니다.
 
-*ppv*  
+*ppv*<br/>
 이 작업에 성공 하면 *ppv* 로 지정 된 인터페이스를 가리키는 `Base`합니다. 그렇지 않으면 *ppv* 로 설정 된 **nullptr**합니다.
 
 ## <a name="return-value"></a>반환 값
@@ -68,5 +68,5 @@ static __forceinline bool CanCastTo(
 
 ## <a name="see-also"></a>참고 항목
 
-[InterfaceTraits 구조체](../windows/interfacetraits-structure.md)  
+[InterfaceTraits 구조체](../windows/interfacetraits-structure.md)<br/>
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

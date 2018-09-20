@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 795c16a46356eb9599e02b43b51066b603b8b9ce
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 4fef169cb0e2386c1629064ad7ea8a1a70a5c517
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222110"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46382078"
 ---
 # <a name="using-a-windows-form-user-control-in-mfc"></a>MFC에서 Windows Form 사용자 정의 컨트롤 사용
 
@@ -85,5 +85,5 @@ MFC 응용 프로그램에서는 Windows Forms 응용 프로그램을 사용 하
 
 ## <a name="see-also"></a>참고자료
 
-[사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)  
-[폼 뷰](../mfc/form-views-mfc.md)  
+[사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)<br/>
+[폼 뷰](../mfc/form-views-mfc.md)

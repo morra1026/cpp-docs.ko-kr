@@ -32,24 +32,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abf907fe12f55b44e7f2e184b8752d2e09a326f8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8e0d0fde53cc7ffb885e8435fc82cbb899a3bc89
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46071733"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46389556"
 ---
 # <a name="array-class"></a>array 클래스
+
 액셀러레이터로 데이터를 이동 하는 데 데이터 컨테이너를 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
-```  
+```
 template <typename value_type, int _Rank>
 friend class array;
-```  
+```
 
 #### <a name="parameters"></a>매개 변수
+
 *value_type*<br/>
 데이터의 요소 형식입니다.
 
@@ -103,6 +105,7 @@ friend class array;
 |[extent](#extent)|배열의 모양을 정의 하는 범위를 가져옵니다.|
 
 ## <a name="remarks"></a>설명
+
 형식 `array<T,N>` 나타냅니다 밀도가 높고 일반적인 (가변 아님) *N*-액셀러레이터 또는 CPU와 같은 특정 위치에 있는 차원 배열입니다. 배열에서 요소의 데이터 형식이 `T`, 대상 액셀러레이터와 호환 되는 형식 이어야 합니다. 하지만 순위 `N`, (의 배열을 정적으로 결정 되며 형식의 일부, 배열의 범위는 런타임에 의해 결정 되며 클래스를 사용 하 여 표현 됩니다 `extent<N>`합니다.
 
 배열 차원 개수에 관계 없이 가질 수 있는 몇 가지 기능에 특수화 되기 `array` 차수가 1, 2 또는 3을 사용 하 여 개체입니다. 차원 인수를 생략 하면 기본값은 1입니다.
@@ -113,16 +116,18 @@ friend class array;
 
 `array<T,N>` 형식은 여러 시나리오에서 사용 됩니다.
 
--   액셀러레이터 키에 대 한 계산에 사용할 수 있는 데이터 컨테이너입니다.
+- 액셀러레이터 키에 대 한 계산에 사용할 수 있는 데이터 컨테이너입니다.
 
--   (사용할 수 있는 다른 배열에서 복사) 호스트 CPU에 대 한 메모리를 보유 하는 데이터 컨테이너입니다.
+- (사용할 수 있는 다른 배열에서 복사) 호스트 CPU에 대 한 메모리를 보유 하는 데이터 컨테이너입니다.
 
--   로 호스트-장치 복사 시에서 빠른 매개자 역할을 하는 스테이징 개체입니다.
+- 로 호스트-장치 복사 시에서 빠른 매개자 역할을 하는 스테이징 개체입니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
-`array`  
+
+`array`
 
 ## <a name="requirements"></a>요구 사항
+
 **헤더:** amp.h
 
 **네임스페이스:** 동시성
@@ -131,54 +136,53 @@ friend class array;
 
 제거 된 `array` 개체입니다.
 
-```  
+```
 ~array() restrict(cpu);
-```  
+```
 
 ##  <a name="accelerator_view"></a> accelerator_view
 
 가져옵니다 합니다 [accelerator_view](accelerator-view-class.md) 배열 할당 된 위치를 나타내는 개체입니다. 이 속성은 CPU 에서만 액세스할 수 있습니다.
 
-```  
+```
 __declspec(property(get= get_accelerator_view)) Concurrency::accelerator_view accelerator_view;
-```  
+```
 
 ##  <a name="ctor"></a> 배열
 
 새 인스턴스를 초기화 합니다 [array 클래스](array-class.md)합니다. 에 대 한 기본 생성자가 없는 `array<T,N>`합니다. 모든 생성자는 cpu 에서만 실행 됩니다. 이러한 Direct3D 대상에서는 실행할 수 없습니다.
 
-```  
-explicit array(  
+```
+explicit array(
     const Concurrency::extent<_Rank>& _Extent) restrict(cpu);
 
-explicit array(  
+explicit array(
     int _E0) restrict(cpu);
 
-explicit array(  
+explicit array(
     int _E0,
     int _E1) restrict(cpu);
 
-explicit array(  
+explicit array(
     int _E0,
     int _E1,
     int _E2) restrict(cpu);
 
-array(  
+array(
     const Concurrency::extent<_Rank>& _Extent,
     Concurrency::accelerator_view _Av
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
-array(  
+array(
     int _E0,
     Concurrency::accelerator_view _Av
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
-array(  
+array(
     int _E0,
     int _E1,
     Concurrency::accelerator_view _Av
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
-
 
 array(
     int _E0,
@@ -187,23 +191,23 @@ array(
     Concurrency::accelerator_view _Av
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
-array(  
+array(
     const Concurrency::extent<_Rank>& _Extent,
     Concurrency::accelerator_view _Av,
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
-array(  
+array(
     int _E0,
     accelerator_view _Av,
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
-array(  
+array(
     int _E0,
     int _E1,
     Concurrency::accelerator_view _Av,
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
-array(  
+array(
     int _E0,
     int _E1,
     int _E2,
@@ -211,42 +215,42 @@ array(
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     const Concurrency::extent<_Rank>& _Extent,
     _InputIterator _Src_first,
     _InputIterator _Src_last) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     const Concurrency::extent<_Rank>& _Extent,
     _InputIterator _Src_first) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     _InputIterator _Src_first,
     _InputIterator _Src_last) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     _InputIterator _Src_first) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1,
     _InputIterator _Src_first,
     _InputIterator _Src_last) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1,
     _InputIterator _Src_first) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1,
     int _E2,
@@ -254,14 +258,14 @@ array(
     _InputIterator _Src_last) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1,
     int _E2,
     _InputIterator _Src_first) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     const Concurrency::extent<_Rank>& _Extent,
     _InputIterator _Src_first,
     _InputIterator _Src_last,
@@ -269,14 +273,14 @@ array(
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     const Concurrency::extent<_Rank>& _Extent,
     _InputIterator _Src_first,
     Concurrency::accelerator_view _Av
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     _InputIterator _Src_first,
     _InputIterator _Src_last,
@@ -284,14 +288,14 @@ array(
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     _InputIterator _Src_first,
     Concurrency::accelerator_view _Av
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1,
     _InputIterator _Src_first,
@@ -308,7 +312,7 @@ array(
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1,
     int _E2,
@@ -318,7 +322,7 @@ array(
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1,
     int _E2,
@@ -327,7 +331,7 @@ array(
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     const Concurrency::extent<_Rank>& _Extent,
     _InputIterator _Src_first,
     _InputIterator _Src_last,
@@ -335,14 +339,14 @@ array(
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     const Concurrency::extent<_Rank>& _Extent,
     _InputIterator _Src_first,
     Concurrency::accelerator_view _Av,
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     _InputIterator _Src_first,
     _InputIterator _Src_last,
@@ -350,27 +354,27 @@ array(
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0, _InputIterator _Src_first,
     Concurrency::accelerator_view _Av,
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1, _InputIterator _Src_first, _InputIterator _Src_last,
     Concurrency::accelerator_view _Av,
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1, _InputIterator _Src_first,
     Concurrency::accelerator_view _Av,
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1,
     int _E2, _InputIterator _Src_first, _InputIterator _Src_last,
@@ -378,17 +382,17 @@ array(
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
 template <typename _InputIterator>
-array(  
+array(
     int _E0,
     int _E1,
     int _E2, _InputIterator _Src_first,
     Concurrency::accelerator_view _Av,
     Concurrency::accelerator_view _Associated_Av) restrict(cpu);
 
-explicit array(  
+explicit array(
     const array_view<const value_type, _Rank>& _Src) restrict(cpu);
 
-array(  
+array(
     const array_view<const value_type, _Rank>& _Src,
     accelerator_view _Av
     access_type _Cpu_access_type = access_type_auto) restrict(cpu);
@@ -401,9 +405,10 @@ array(
 array(const array& _Other) restrict(cpu);
 
 array(array&& _Other) restrict(cpu);
-```  
+```
 
 ### <a name="parameters"></a>매개 변수
+
 *_Associated_Av*<br/>
 Accelerator_view는 배열의 기본 대상 위치를 지정 합니다.
 
@@ -450,23 +455,24 @@ Accelerator_view는 배열의 기본 대상 위치를 지정 합니다.
 
 두 번째 가져옵니다 [accelerator_view](accelerator-view-class.md) 인스턴스화하는 스테이징 생성자를 호출할 때 매개 변수로 전달 되는 개체는 `array` 개체입니다.
 
-```  
+```
 __declspec(property(get= get_associated_accelerator_view)) Concurrency::accelerator_view associated_accelerator_view;
-```  
+```
 
 ##  <a name="copy_to"></a> copy_to
 
 내용을 복사 합니다 `array` 간 `array`합니다.
 
-```  
+```
 void copy_to(
     array<value_type, _Rank>& _Dest) const ;
 
 void copy_to(
     array_view<value_type, _Rank>& _Dest) const ;
-```  
+```
 
 ### <a name="parameters"></a>매개 변수
+
 *_Dest*<br/>
 합니다 [array_view](array-view-class.md) 복사할 개체입니다.
 
@@ -474,60 +480,63 @@ void copy_to(
 
 이 배열에 허용 되는 CPU access_type을 가져옵니다.
 
-```  
+```
 __declspec(property(get= get_cpu_access_type)) access_type cpu_access_type;
-```  
+```
 
 ##  <a name="data"></a> 데이터
 
 원시 데이터에 대 한 포인터를 반환 합니다 `array`합니다.
 
-```  
+```
 value_type* data() restrict(amp, cpu);
 
 const value_type* data() const restrict(amp, cpu);
-```  
+```
 
 ### <a name="return-value"></a>반환 값
+
 배열의 원시 데이터에 대 한 포인터입니다.
 
 ##  <a name="extent"></a> 범위
 
 가져옵니다 합니다 [익스텐트](extent-class.md) 의 모양을 정의 하는 개체는 `array`합니다.
 
-```  
+```
 __declspec(property(get= get_extent)) Concurrency::extent<_Rank> extent;
-```  
+```
 
 ##  <a name="get_accelerator_view"></a> get_accelerator_view
 
 반환 합니다 [accelerator_view](accelerator-view-class.md) 위치를 나타내는 개체 위치를 `array` 개체가 할당 되 합니다. 이 속성은 CPU 에서만 액세스할 수 있습니다.
 
-```  
+```
 Concurrency::accelerator_view get_accelerator_view() const;
-```    
+```
 
 ### <a name="return-value"></a>반환 값
+
 합니다 `accelerator_view` 위치를 나타내는 개체 위치를 `array` 개체가 할당 되 합니다.
 
 ##  <a name="get_associated_accelerator_view"></a> get_associated_accelerator_view
 
 두 번째 가져옵니다 [accelerator_view](accelerator-view-class.md) 인스턴스화하는 스테이징 생성자를 호출할 때 매개 변수로 전달 되는 개체는 `array` 개체입니다.
 
-```  
+```
 Concurrency::accelerator_view get_associated_accelerator_view() const ;
-```  
+```
 
 ### <a name="return-value"></a>반환 값
+
 두 번째 [accelerator_view](accelerator-view-class.md) 스테이징 생성자에 전달 된 개체입니다.
 
 ##  <a name="get_cpu_access_type"></a> get_cpu_access_type
 
 이 배열에 허용 되는 CPU access_type을 반환 합니다.
 
-```  
+```
 access_type get_cpu_access_type() const restrict(cpu);
-```  
+```
 
 ### <a name="return-value"></a>반환 값
 
@@ -535,33 +544,36 @@ access_type get_cpu_access_type() const restrict(cpu);
 
 반환 합니다 [익스텐트](extent-class.md) 의 개체는 `array`합니다.
 
-```  
+```
 Concurrency::extent<_Rank> get_extent() const restrict(amp,cpu);
-```  
+```
 
 ### <a name="return-value"></a>반환 값
+
 합니다 `extent` 의 개체는 `array`합니다.
 
 ##  <a name="operator_vec"></a> operator std:: vector&lt;value_type&gt;
 
 사용 하 여 `copy(*this, vector)` 배열 std:: vector 개체를 암시적으로 변환할 합니다.
 
-```  
+```
 operator std::vector<value_type>() const restrict(cpu);
-```  
+```
 
 ### <a name="parameters"></a>매개 변수
+
 *value_type*<br/>
 벡터 요소의 데이터 형식입니다.
 
 ### <a name="return-value"></a>반환 값
+
 형식의 개체 `vector<T>` 배열에 포함 된 데이터의 복사본이 포함 된 합니다.
 
-##  <a name="operator_call"></a> operator) 
+##  <a name="operator_call"></a> operator)
 
 매개 변수로 지정 된 요소 값을 반환 합니다.
 
-```  
+```
 value_type& operator() (const index<_Rank>& _Index) restrict(amp,cpu);
 
 const value_type& operator() (const index<_Rank>& _Index) cons  t restrict(amp,cpu);
@@ -577,9 +589,10 @@ const value_type& operator() (int _I0, int _I1, int _I2) const restrict(amp,cpu)
 typename details::_Projection_result_type<value_type,_Rank>::_Result_type operator()(int _I) restrict(amp,cpu);
 
 typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type operator()(int _I) const restrict(amp,cpu);
-```  
+```
 
 ### <a name="parameters"></a>매개 변수
+
 *_Index*<br/>
 요소의 위치입니다.
 
@@ -596,13 +609,14 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
 요소의 위치입니다.
 
 ### <a name="return-value"></a>반환 값
+
 매개 변수로 지정 된 요소 값입니다.
 
 ##  <a name="operator_at"></a> operator]
 
 지정된 된 인덱스에 있는 요소를 반환 합니다.
 
-```  
+```
 value_type& operator[](const index<_Rank>& _Index) restrict(amp,cpu);
 
 const value_type& operator[]
@@ -611,9 +625,10 @@ const value_type& operator[]
 typename details::_Projection_result_type<value_type,_Rank>::_Result_type operator[](int _i) restrict(amp,cpu);
 
 typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type operator[](int _i) const restrict(amp,cpu);
-```  
+```
 
 ### <a name="parameters"></a>매개 변수
+
 *_Index*<br/>
 인덱스입니다.
 
@@ -621,22 +636,24 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
+
 지정된 된 인덱스에 있는 요소입니다.
 
 ##  <a name="operator_eq"></a> 연산자 =
 
 지정 된 내용을 복사 `array` 개체입니다.
 
-```  
+```
 array& operator= (const array& _Other) restrict(cpu);
 
 array& operator= (array&& _Other) restrict(cpu);
 
-array& operator= (  
+array& operator= (
     const array_view<const value_type, _Rank>& _Src) restrict(cpu);
-```  
+```
 
 ### <a name="parameters"></a>매개 변수
+
 *_Other*<br/>
 `array` 복사할 개체입니다.
 
@@ -644,27 +661,29 @@ array& operator= (
 `array` 복사할 개체입니다.
 
 ### <a name="return-value"></a>반환 값
+
 이에 대 한 참조 `array` 개체입니다.
 
 ##  <a name="rank"></a> 순위
 
 차수를 저장 합니다 `array`합니다.
 
-```  
+```
 static const int rank = _Rank;
-```  
+```
 ## <a name="reinterpret_as"></a> reinterpret_as
 
 필요에 따라 소스 배열과 다른 값 형식을 가질 수 있는 1 차원 배열을 통해 배열을 다시 해석 합니다.
 
 ### <a name="syntax"></a>구문
-``` 
+
+```
 template <typename _Value_type2>
 array_view<_Value_type2,1> reinterpret_as() restrict(amp,cpu);
 
 template <typename _Value_type2>
 array_view<const _Value_type2, 1> reinterpret_as() const restrict(amp,cpu);
-``` 
+```
 
 ### <a name="parameters"></a>매개 변수
 
@@ -672,9 +691,11 @@ array_view<const _Value_type2, 1> reinterpret_as() const restrict(amp,cpu);
 반환된 된 데이터의 데이터 형식입니다.
 
 ### <a name="return-value"></a>반환 값
+
 Array_view 또는 T에서 ElementType을 1로 감소 n에서 순위 재해석 요소 형식이 배열 기반으로 하는 const array_view 개체입니다.
 
 ### <a name="remarks"></a>설명
+
 때때로 다차원 배열을 소스 배열과 다른 값 형식을 사용 하 여 수 있는 선형의 1 차원 배열에는 것 처럼 보려는 것이 유용 합니다. 이렇게 하려면이 메서드를 사용할 수 있습니다.
 **주의** 안전 하지 않은 작업이 다른 값 형식을 사용 하 여 배열 개체를 재해석 합니다. 이 기능을 신중 하 게 사용 하는 것이 좋습니다.
 
@@ -687,13 +708,13 @@ array<RGB,3>  a = ...;
 array_view<float,1> v = a.reinterpret_as<float>();
 
 assert(v.extent == 3*a.extent);
-```  
+```
 
 ##  <a name="section"></a> 섹션
 
 하위 단원을 반환 합니다 `array` 에 지정 된 origin을 있고, 선택적으로 하는 개체에 지정된 된 범위입니다.
 
-```  
+```
 array_view<value_type,_Rank> section(
     const Concurrency::index<_Rank>& _Section_origin,
     const Concurrency::extent<_Rank>& _Section_extent) restrict(amp,cpu);
@@ -749,9 +770,10 @@ array_view<const value_type,3> section(
     int _E0,
     int _E1,
     int _E2) const restrict(amp,cpu);
-```  
+```
 
 ### <a name="parameters"></a>매개 변수
+
 *_E0*<br/>
 이 섹션의 범위의 가장 중요 한 구성 요소입니다.
 
@@ -789,24 +811,25 @@ array_view<const value_type,3> section(
 복사 된 요소의 데이터 형식입니다.
 
 ### <a name="return-value"></a>반환 값
+
 하위 단원을 반환 합니다 `array` 에 지정 된 origin을 있고, 선택적으로 하는 개체에 지정된 된 범위입니다. 개체만 합니다 `index` 지정 된 경우 요소에 대 한 인덱스 보다 큰 인덱스가 있는 관련된 된 모눈의 모든 요소를 포함 하는 하위 섹션을 `index` 개체.
 
 ##  <a name="view_as"></a> view_as
 
 이 배열을 재해석를 [array_view](array-view-class.md) 다른 순위의 합니다.
 
-```  
+```
 template <int _New_rank>
 array_view<value_type,_New_rank> view_as(
     const Concurrency::extent<_New_rank>& _View_extent) restrict(amp,cpu);
 
-
 template <int _New_rank>
 array_view<const value_type,_New_rank> view_as(
     const Concurrency::extent<_New_rank>& _View_extent) const restrict(amp,cpu);
-```  
+```
 
 ### <a name="parameters"></a>매개 변수
+
 *_New_rank*<br/>
 순위를 `extent` 개체를 매개 변수로 전달 합니다.
 
@@ -817,7 +840,9 @@ array_view<const value_type,_New_rank> view_as(
 두 원본에 있는 요소의 데이터 형식 `array` 개체 및 반환 된 `array_view` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
+
 합니다 [array_view](array-view-class.md) 생성 된 개체입니다.
 
 ## <a name="see-also"></a>참고 항목
+
 [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)

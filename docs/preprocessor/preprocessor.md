@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 980058c588e02751113b889d44cf0bb5f69066f1
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: b693d83872ca1c918c97e47f75c89f788748353c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42539474"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46375905"
 ---
 # <a name="preprocessor"></a>전처리기
 전처리기는 첫 번째 변환 단계의 일부로 소스 파일의 텍스트를 조작하는 텍스트 처리기입니다. 전처리기는 소스 텍스트를 구문 분석하지 않지만 매크로 호출을 찾기 위해 소스 텍스트를 토큰으로 나눕니다. 컴파일러는 일반적으로 첫 번째 단계에서 전처리기를 호출하지만, 컴파일 없이 텍스트를 처리하기 위해 전처리기를 별도로 호출할 수도 있습니다.  
@@ -48,5 +48,5 @@ ms.locfileid: "42539474"
   
 ## <a name="see-also"></a>참고 항목  
  
-[C/c + + 전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)   
+[ 전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
 [변환 단계](../preprocessor/phases-of-translation.md)

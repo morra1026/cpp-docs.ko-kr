@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 656739ad000612f130f5cdfb1a53a6de2d67c4c8
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 81349135fa822627cb40bdcd2570276d8040e50e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761370"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385523"
 ---
 # <a name="cstring-exception-cleanup"></a>CString 예외 정리
 
@@ -30,6 +30,6 @@ C + + 예외 처리 이제 MFC를 사용 하는 메커니즘에서 예외가 발
 
 ## <a name="see-also"></a>참고 항목
 
-[문자열 (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)   
+[문자열 (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [예외 처리](../mfc/exception-handling-in-mfc.md)
 

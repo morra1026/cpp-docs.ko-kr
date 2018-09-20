@@ -20,19 +20,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3864de8b3133fd2284b3ce57b75b30d8f41c26a7
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 844f62b110f54ba3e2c8909a78d58c9f2c01dcac
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36928530"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46392816"
 ---
 # <a name="relationship-between-a-c-window-object-and-an-hwnd"></a>C++ 창 개체와 HWND 간 관계
-창 *개체* 는 c + + 개체 `CWnd` 클래스 (또는 파생된 클래스) 프로그램에서 직접 만든 합니다. 제공 하 고 프로그램의 생성자와 소멸자 호출에 대 한 응답으로 이동 됩니다. Windows *창*, 반면에 창에 해당 하 고 있는 경우 시스템 리소스를 사용 하는 내부 Windows 데이터 구조에는 불투명 핸들입니다. Windows 창 "창 핸들"으로 식별 됩니다 (`HWND`) 후 생성 되 고는 `CWnd` 를 호출 하 여 개체가 만들어집니다는 `Create` 클래스의 멤버 함수 `CWnd`합니다. 프로그램 호출 또는 사용자의 작업 창 소멸 됩니다. 창 핸들 window 개체에 저장 된 *m_hWnd* 멤버 변수입니다. 다음 그림 c + + 창 개체 및 Windows 창 사이의 관계를 보여 줍니다. 설명 창을 만드는 [만드는 Windows](../mfc/creating-windows.md)합니다. 설명 창 소멸 시키기 [창 개체 소멸 시키기](../mfc/destroying-window-objects.md)합니다.  
-  
- ![CWnd 창 개체 및 결과 창](../mfc/media/vc37fj1.gif "vc37fj1")  
-창 개체 및 Windows 창  
-  
-## <a name="see-also"></a>참고 항목  
- [창 개체](../mfc/window-objects.md)
+
+창을 *개체* c + +의 개체인 `CWnd` 클래스 (또는 파생된 클래스) 프로그램에서 직접 만든 합니다. 제공 하 고 프로그램의 생성자 및 소멸자 호출에 대 한 응답으로 이동 합니다. Windows *창*, 다른 한편으로 창에 해당 하 고 있는 경우 시스템 리소스를 소모 되는 내부 Windows 데이터 구조에 대해 불투명 핸들 됩니다. Windows 창 "창 핸들"으로 식별 됩니다 (`HWND`) 후 생성 되 고는 `CWnd` 개체를 호출 하 여 만들어집니다 합니다 `Create` 클래스의 멤버 함수 `CWnd`합니다. 프로그램 호출 하거나 사용자의 동작에 의해 창이 소멸 됩니다. 창 핸들 창 개체에 저장 됩니다 *m_hWnd* 멤버 변수입니다. 다음 그림은 c + + 창 개체 Windows 창 사이의 관계를 보여줍니다. 창을 만드는 부분은 [만드는 Windows](../mfc/creating-windows.md)합니다. 에 설명 되어 제거 창 [창 개체 제거](../mfc/destroying-window-objects.md)합니다.
+
+![CWnd 창 개체 및 결과 창](../mfc/media/vc37fj1.gif "vc37fj1") 창 개체 및 Windows 창
+
+## <a name="see-also"></a>참고 항목
+
+[창 개체](../mfc/window-objects.md)
 

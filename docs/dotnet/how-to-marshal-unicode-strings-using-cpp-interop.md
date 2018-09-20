@@ -19,88 +19,92 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: e5290958a55c61dd55adac0f182af7163896d694
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 42aba2595792cca6ced3febea9890dabfb87aa14
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33130466"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46382247"
 ---
 # <a name="how-to-marshal-unicode-strings-using-c-interop"></a>방법: C++ Interop를 사용하여 유니코드 문자열 마샬링
-이 항목에서는 Visual c + + 상호 운용성의 한 측면을 보여 줍니다. 자세한 내용은 참조 [c + + Interop를 사용 하 여 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)합니다.  
-  
- 다음 코드 예제에서 사용 된 [관리, 관리 되지 않는](../preprocessor/managed-unmanaged.md) #pragma 지시문을 구현 하 관리는 관리 되지 않는 함수에서 동일한 파일에 별도 파일에 정의 된 경우 이러한 함수가 동일한 방식으로 상호 운용 합니다. 관리 되지 않는 함수만 포함 된 파일 사용 하 여 컴파일할 필요가 없습니다 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md)합니다.  
-  
- 이 항목에서는 유니코드 문자열 수 있는 방법을 보여 줍니다. 관리 되지 않는 함수를 코드와 관리 되는 전달 합니다. 다른 문자열 형식 상호 작용을 하기 위한 다음 항목을 참조 합니다.  
-  
--   [방법: C++ Interop를 사용하여 ANSI 문자열 마샬링](../dotnet/how-to-marshal-ansi-strings-using-cpp-interop.md)  
-  
--   [방법: C++ Interop를 사용하여 COM 문자열 마샬링](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)  
-  
-## <a name="example"></a>예제  
- 유니코드 문자열을 관리 되는 관리 되지 않는 함수를 전달 하려면 PtrToStringChars 함수 (Vcclr.h에서 선언 됨)를 사용할 수 있습니다에 관리 되는 문자열이 저장 되는 메모리에 액세스 합니다. 이 주소는 네이티브 함수에 전달 되므로, 되므로 사용 하는 메모리를 고정 [pin_ptr (C + + /cli CLI)](../windows/pin-ptr-cpp-cli.md) 문자열 데이터를 재배치 되 고 않으려면 가비지 수집 주기 발생 해야 하는 동안는 관리 되지 않는 함수를 실행합니다.  
-  
-```  
-// MarshalUnicode1.cpp  
-// compile with: /clr  
-#include <iostream>  
-#include <stdio.h>  
-#include <vcclr.h>  
-  
-using namespace std;  
-  
-using namespace System;  
-using namespace System::Runtime::InteropServices;  
-  
-#pragma unmanaged  
-  
-void NativeTakesAString(const wchar_t* p) {  
-   printf_s("(native) received '%S'\n", p);  
-}  
-  
-#pragma managed  
-  
-int main() {  
-   String^ s = gcnew String("test string");  
-   pin_ptr<const wchar_t> str = PtrToStringChars(s);  
-  
-   Console::WriteLine("(managed) passing string to native func...");  
-   NativeTakesAString( str );  
-}  
-```  
-  
-## <a name="example"></a>예제  
- 다음 예제에서는 관리 되는 함수에 의해 관리 되지 않는 함수 호출에서 유니코드 문자열에 액세스 하는 데 필요한 데이터 마샬링 네이티브 유니코드 문자열을 수신한 경우에 관리 되는 함수를 사용 하 여 관리 되는 문자열을 변환의 <xref:System.Runtime.InteropServices.Marshal.PtrToStringUni%2A> 메서드.  
-  
-```  
-// MarshalUnicode2.cpp  
-// compile with: /clr  
-#include <iostream>  
-  
-using namespace std;  
-using namespace System;  
-using namespace System::Runtime::InteropServices;  
-  
-#pragma managed  
-  
-void ManagedStringFunc(wchar_t* s) {  
-   String^ ms = Marshal::PtrToStringUni((IntPtr)s);  
-   Console::WriteLine("(managed) received '{0}'", ms);  
-}  
-  
-#pragma unmanaged  
-  
-void NativeProvidesAString() {  
-   cout << "(unmanaged) calling managed func...\n";  
-   ManagedStringFunc(L"test string");  
-}  
-  
-#pragma managed  
-  
-int main() {  
-   NativeProvidesAString();  
-}  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+
+이 항목에서는 Visual c + + 상호 운용성의 한 측면을 보여 줍니다. 자세한 내용은 [c + + Interop 사용 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)합니다.
+
+다음 코드 예제에서 사용 된 [관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md) 구현 #pragma 지시문 관리는 관리 되지 않는 함수에서 동일한 파일에 별도 파일에 정의 된 경우 이러한 함수에서 동일한 방식으로 상호 운용 합니다. 관리 되지 않는 함수만 포함 된 파일 사용 하 여 컴파일할 필요가 없습니다 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md)합니다.
+
+이 항목에서는 유니코드 문자열 수 있는 방법을 보여 줍니다. 그 반대로 관리 되지 않는 함수에 관리 되는 전달 합니다. 다른 문자열 형식 상호 작용을 하기 위한 다음 항목을 참조 합니다.
+
+- [방법: C++ Interop를 사용하여 ANSI 문자열 마샬링](../dotnet/how-to-marshal-ansi-strings-using-cpp-interop.md)
+
+- [방법: C++ Interop를 사용하여 COM 문자열 마샬링](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)
+
+## <a name="example"></a>예제
+
+유니코드 문자열에서 관리 되는 관리 되지 않는 함수에 전달 하려면 (Vcclr.h에서 선언 됨) PtrToStringChars 함수를 사용할 수 있습니다 관리 되는 문자열이 저장 되는 메모리에 액세스 합니다. 네이티브 함수에 전달 되므로이 주소를 반드시 사용 하 여 메모리를 고정 [pin_ptr (C + + /cli CLI)](../windows/pin-ptr-cpp-cli.md) 문자열 데이터를 다시 할당을 방지 하려면 가비지 컬렉션 주기 이루어져야 하는 동안는 관리 되지 않는 함수를 실행합니다.
+
+```
+// MarshalUnicode1.cpp
+// compile with: /clr
+#include <iostream>
+#include <stdio.h>
+#include <vcclr.h>
+
+using namespace std;
+
+using namespace System;
+using namespace System::Runtime::InteropServices;
+
+#pragma unmanaged
+
+void NativeTakesAString(const wchar_t* p) {
+   printf_s("(native) received '%S'\n", p);
+}
+
+#pragma managed
+
+int main() {
+   String^ s = gcnew String("test string");
+   pin_ptr<const wchar_t> str = PtrToStringChars(s);
+
+   Console::WriteLine("(managed) passing string to native func...");
+   NativeTakesAString( str );
+}
+```
+
+## <a name="example"></a>예제
+
+다음 예제에서는 관리 되는 관리 되지 않는 함수를 호출한 함수에서 유니코드 문자열에 액세스 하는 데 필요한 데이터 마샬링 하는 방법을 보여 줍니다. 네이티브 유니코드 문자열을 수신 하는 관리 되는 함수를 사용 하 여 관리 되는 문자열로 변환 된 <xref:System.Runtime.InteropServices.Marshal.PtrToStringUni%2A> 메서드.
+
+```
+// MarshalUnicode2.cpp
+// compile with: /clr
+#include <iostream>
+
+using namespace std;
+using namespace System;
+using namespace System::Runtime::InteropServices;
+
+#pragma managed
+
+void ManagedStringFunc(wchar_t* s) {
+   String^ ms = Marshal::PtrToStringUni((IntPtr)s);
+   Console::WriteLine("(managed) received '{0}'", ms);
+}
+
+#pragma unmanaged
+
+void NativeProvidesAString() {
+   cout << "(unmanaged) calling managed func...\n";
+   ManagedStringFunc(L"test string");
+}
+
+#pragma managed
+
+int main() {
+   NativeProvidesAString();
+}
+```
+
+## <a name="see-also"></a>참고 항목
+
+[C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1e5aff6796804d7868b4d61c94e4a181b88e9ab6
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8376db7eb824856d84e8c742d8a187604f939455
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45704842"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46384717"
 ---
 # <a name="custom-image-dialog-box-c-image-editor-for-icons"></a>사용자 지정 이미지 대화 상자 (c + +) (아이콘에 대 한 이미지 편집기)
 
@@ -41,8 +41,10 @@ ms.locfileid: "45704842"
    사용자 지정 이미지에 대 한 색의 수를 선택 하기 위한 공간을 제공 합니다. 2, 16, 또는 256입니다.
   
 ## <a name="requirements"></a>요구 사항
- 없음
+
+없음
   
 ## <a name="see-also"></a>참고 항목
- [새 \<장치 > 이미지 형식 대화 상자](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md)  
- [아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)
+
+[새 \<장치 > 이미지 형식 대화 상자](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md)<br/>
+[아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)

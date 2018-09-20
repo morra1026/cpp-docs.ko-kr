@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c1bebca381bc9d6d644ac1aac95b902065268a9d
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 9ae41727caedfaf09ac5f312ea4d794398cb572c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44317708"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46383430"
 ---
 # <a name="custom-controls-in-the-dialog-editor-c"></a>대화 상자 편집기 (c + +)에서 사용자 지정 컨트롤
 
@@ -59,5 +59,5 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)  
+[대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)

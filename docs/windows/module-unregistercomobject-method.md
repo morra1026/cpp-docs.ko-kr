@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3409e0e2c1cac5f3934902523edd2653839989ed
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 46450142c0455dd4eb96f627abd077e478d96fea
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42575760"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46383508"
 ---
 # <a name="moduleunregistercomobject-method"></a>Module::UnregisterCOMObject 메서드
 
@@ -39,13 +39,13 @@ virtual HRESULT UnregisterCOMObject(
 
 ### <a name="parameters"></a>매개 변수
 
-*서버 이름*  
+*서버 이름*<br/>
 (사용되지 않음)
 
-*쿠키*  
+*쿠키*<br/>
 등록 취소한 클래스 개체를 식별하는 값에 대한 포인터 배열입니다. 배열에서 만든 합니다 [RegisterCOMObject](../windows/module-registercomobject-method.md) 메서드.
 
-*count*  
+*count*<br/>
 등록 취소할 클래스 수입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -59,4 +59,5 @@ virtual HRESULT UnregisterCOMObject(
 **네임스페이스:** Microsoft::WRL
 
 ## <a name="see-also"></a>참고 항목
+
 [Module 클래스](../windows/module-class.md)

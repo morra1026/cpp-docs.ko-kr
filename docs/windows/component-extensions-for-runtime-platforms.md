@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 160ae864218304fbc94324ecfd9d6229729ca379
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 0619585a0a5b59ffb6b8cfbe22e7930909369b23
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318345"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46386756"
 ---
 # <a name="component-extensions-for-runtime-platforms"></a>런타임 플랫폼의 구성 요소 확장명
 
@@ -141,5 +141,5 @@ C + + /cli CLI ISO/ANSI c + + 표준에서를 확장 하 고 정의 된 아래 E
 
 ## <a name="see-also"></a>참고 항목
 
-[C++/CLI를 사용한 .NET 프로그래밍(Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)  
+[C++/CLI를 사용한 .NET 프로그래밍(Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
 [네이티브 및 .NET 상호 운용성](../dotnet/native-and-dotnet-interoperability.md)

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1a20dd5e2fb43dd5caae7a5185260d8c88637d33
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 88d3af154993bea6df509a69b832223aede7ad81
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597964"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46386511"
 ---
 # <a name="comptr-class"></a>ComPtr 클래스
 
@@ -40,10 +40,10 @@ friend class ComPtr;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 인터페이스는 합니다 **ComPtr** 나타냅니다.
 
-*U*  
+*U*<br/>
 클래스를 현재 **ComPtr** 이 friend입니다. 이 매개 변수를 사용하는 템플릿은 보호됩니다.
 
 ## <a name="remarks"></a>설명
@@ -103,7 +103,7 @@ friend class ComPtr;
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[ComPtr::ptr_ 데이터 멤버](../windows/comptr-ptr-data-member.md)|연결 되 고이 관리 되는 인터페이스에 대 한 포인터를 포함 **ComPtr**합니다.|
 

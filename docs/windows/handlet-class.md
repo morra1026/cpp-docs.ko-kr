@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6da9451d6f009bad6163efec23bb6f920a56df49
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6622e92112d9f73e673e2fb44598a393843bf0fa
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590532"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46396341"
 ---
 # <a name="handlet-class"></a>HandleT 클래스
 
@@ -39,7 +39,7 @@ class HandleT;
 
 ### <a name="parameters"></a>매개 변수
 
-*HandleTraits*  
+*HandleTraits*<br/>
 인스턴스를 [HandleTraits](../windows/handletraits-structure.md) 핸들의 공통 된 특징을 정의 하는 구조입니다.
 
 ## <a name="members"></a>멤버
@@ -81,7 +81,7 @@ class HandleT;
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[HandleT::handle_ Data 멤버](../windows/handlet-handle-data-member.md)|핸들을 나타내는 포함 된 **HandleT** 개체입니다.|
 

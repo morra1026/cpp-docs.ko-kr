@@ -26,12 +26,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ab9f8e6056c0f97d36d0c0eb4853fbb7eed80dc0
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 11eea641132a608bf780f9adcc7cfeafad0950d5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313041"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46383139"
 ---
 # <a name="saving-bitmaps-as-gifs-or-jpegs-image-editor-for-icons"></a>비트맵을 GIF 또는 JPEG로 저장(아이콘에 대한 이미지 편집기)
 
@@ -63,5 +63,5 @@ ms.locfileid: "44313041"
 
 ## <a name="see-also"></a>참고 항목
 
-[그래픽 리소스 편집](../windows/editing-graphical-resources-image-editor-for-icons.md)  
+[그래픽 리소스 편집](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
 [아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)

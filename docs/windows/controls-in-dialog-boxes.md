@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d8128859f2b136fb945376eeea8afa0d1ef8e6e1
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: f00fd37f41461933221996c8940c333bd71620ae
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44317110"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46388689"
 ---
 # <a name="controls-in-dialog-box-ces"></a>Es 대화 상자 (c + +)에서 제어
 
@@ -64,6 +64,6 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[대화 상자 컨트롤에 사용할 이벤트 처리기 추가](../windows/adding-event-handlers-for-dialog-box-controls.md)  
-[대화 상자 컨트롤 및 변수 형식](../ide/dialog-box-controls-and-variable-types.md)  
+[대화 상자 컨트롤에 사용할 이벤트 처리기 추가](../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>
+[대화 상자 컨트롤 및 변수 형식](../ide/dialog-box-controls-and-variable-types.md)<br/>
 [대화 상자 편집기](../windows/dialog-editor.md)

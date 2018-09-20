@@ -39,12 +39,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3bc016367495be8cc10c09605e8018811bde5ca9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5dfe6622edcd8446b844b5d3d7c03d1fd5d0197c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118910"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46379413"
 ---
 # <a name="runtimeclass-class"></a>RuntimeClass 클래스
 
@@ -61,10 +61,10 @@ template <unsigned int classFlags, typename ...TInterfaces> class RuntimeClass;
 
 ### <a name="parameters"></a>매개 변수
 
-*classFlags*  
+*classFlags*<br/>
 선택적 매개 변수입니다. 하나 이상의 조합 [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) 열거형 값입니다. `__WRL_CONFIGURATION_LEGACY__` classFlags 프로젝트의 모든 런타임 클래스에 대 한의 기본값을 변경 하려면 매크로 정의할 수 있습니다. 정의 하는 경우에 RuntimeClass 인스턴스는 기본적으로 agile 합니다. 정의 되지 않은 경우 RuntimeClass 인스턴스는 기본적으로 agile입니다. 방지 하려면 모호성 항상 지정 된 `Microsoft::WRL::FtmBase` 에 `TInterfaces` 또는 `RuntimeClassType::InhibitFtmBase`합니다. InhibitFtmBase FtmBase와 개체를 모두 사용 하는 경우 agile 됩니다.
 
-*TInterfaces*  
+*TInterfaces*<br/>
 인터페이스 목록 외 구현 된 개체 `IUnknown`, `IInspectable` 또는 다른 인터페이스에 의해 제어 [RuntimeClassType](../windows/runtimeclasstype-enumeration.md)합니다. 다른 클래스에서 특히 파생를 나열할 수 있습니다 `Microsoft::WRL::FtmBase` 개체를 agile 확인을 구현 하면 `IMarshal`합니다.
 
 ## <a name="members"></a>멤버
@@ -152,10 +152,10 @@ STDMETHOD(
 
 ### <a name="parameters"></a>매개 변수
 
-*iidCount*  
+*iidCount*<br/>
 이 작업이 완료 되 면 배열에 있는 요소의 총 *iid*합니다.
 
-*iid*  
+*iid*<br/>
 이 작업이 완료될 때 인터페이스 ID 배열에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -174,7 +174,7 @@ STDMETHOD( GetRuntimeClassName )(
 
 ### <a name="parameters"></a>매개 변수
 
-*runtimeName*  
+*runtimeName*<br/>
 이 작업이 완료 될 때 런타임 클래스 이름입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -197,7 +197,7 @@ STDMETHOD(GetTrustLevel)(
 
 ### <a name="parameters"></a>매개 변수
 
-*trustLvl*  
+*trustLvl*<br/>
 이 작업이 완료 되 면, 현재 신뢰 수준 `RuntimeClass` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -220,7 +220,7 @@ STDMETHOD(
 
 ### <a name="parameters"></a>매개 변수
 
-*weakReference*  
+*weakReference*<br/>
 이 작업이 완료 될 때 약한 참조 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -253,10 +253,10 @@ STDMETHOD(
 
 ### <a name="parameters"></a>매개 변수
 
-*riid*  
+*riid*<br/>
 인터페이스 ID입니다.
 
-*ppvObject*  
+*ppvObject*<br/>
 완료 될 때이 opereation으로 지정한 인터페이스에 대 한 포인터를 *riid* 매개 변수입니다.
 
 ### <a name="return-value"></a>반환 값

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c375a10d1c8dadca643ac428422eb388c16cdae6
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 2bda23b6847c08096b27516fcc955e4bf68c38ba
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313938"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385835"
 ---
 # <a name="new-ltdevicegt-image-type-dialog-box-c-image-editor-for-icons"></a>새 &lt;장치&gt; 이미지 형식 대화 상자 (c + +) (아이콘에 대 한 이미지 편집기)
 
@@ -54,6 +54,6 @@ ms.locfileid: "44313938"
 
 ## <a name="see-also"></a>참고 항목
 
-[아이콘 및 커서: 디스플레이 장치용 이미지 리소스](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)  
-[이미지 메뉴](../windows/image-menu-image-editor-for-icons.md)  
+[아이콘 및 커서: 디스플레이 장치용 이미지 리소스](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)<br/>
+[이미지 메뉴](../windows/image-menu-image-editor-for-icons.md)<br/>
 [아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)

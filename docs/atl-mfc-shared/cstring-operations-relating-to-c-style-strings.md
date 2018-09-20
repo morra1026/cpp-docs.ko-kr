@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cda24d58e26157b8730ae5d010e0874195151b79
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c7047161a059432b43d4ff1a92e9c4d10dc01d51
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756930"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46387018"
 ---
 # <a name="cstring-operations-relating-to-c-style-strings"></a>C 스타일 문자열 관련 CString 작업
 
@@ -111,6 +111,6 @@ C 런타임 문자열 함수를 사용 해야 할 경우 _core_using_cstring_as_
 
 ## <a name="see-also"></a>참고 항목
 
-[문자열 (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)   
+[문자열 (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [CString 인수 전달](../atl-mfc-shared/cstring-argument-passing.md)
 

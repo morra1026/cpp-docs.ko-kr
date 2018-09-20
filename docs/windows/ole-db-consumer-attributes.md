@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: aebe1a48e037d2780f9b0c6443cbcba3e158677f
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 07b129e2810b7b1310eb8988ca60fbd6e5dcad5a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318020"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391932"
 ---
 # <a name="ole-db-consumer-attributes"></a>OLE DB 소비자 특성
 OLE DB 소비자 특성을 기준으로 코드를 삽입 합니다 [OLE DB 소비자 템플릿](../data/oledb/ole-db-consumer-templates-reference.md), 소비자를 만드는 작업 OLE DB 여 테이블과 같은 작업을 수행 하는 데이터에 액세스 하 고 명령을 실행 합니다.
@@ -40,4 +40,5 @@ OLE DB 소비자 특성을 기준으로 코드를 삽입 합니다 [OLE DB 소�
 |[db_table](../windows/db-table.md)|OLE DB 테이블을 엽니다.|
   
 ## <a name="see-also"></a>참고 항목
- [그룹별 특성](../windows/attributes-by-group.md)
+
+[그룹별 특성](../windows/attributes-by-group.md)

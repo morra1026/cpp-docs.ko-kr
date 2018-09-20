@@ -16,52 +16,56 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dddf9c117f2366496609f8bdf4ffc2f069f66ace
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 531dbc3c0e9b609aeaf5d9179491aa0fb3990363
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199575"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46382923"
 ---
 # <a name="paintstruct-structure"></a>PAINTSTRUCT 구조체
-`PAINTSTRUCT` 구조 창의 클라이언트 영역을 그리는 데 사용할 수 있는 정보를 포함 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-typedef struct tagPAINTSTRUCT {  
-    HDC hdc;  
-    BOOL fErase;  
-    RECT rcPaint;  
-    BOOL fRestore;  
-    BOOL fIncUpdate;  
-    BYTE rgbReserved[16];  
-} PAINTSTRUCT;  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
- *hdc*  
- 그리기에 사용 되는 디스플레이 컨텍스트를 식별 합니다.  
-  
- *fErase*  
- 배경을 그려야 해야 하는지 여부를 지정 합니다. 없는 응용 프로그램 배경을 그리면 0입니다. 응용 프로그램은 배경 브러시를 하지 않고 Windows 창을-클래스를 만들 경우 배경을 그리기 위한 (에 대 한 설명을 참조를 `hbrBackground` 의 멤버는 [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) Windows SDK의 구조).  
-  
- *rcPaint*  
- 왼쪽 위를 지정 하 고 그리기 요청은 사각형의 오른쪽 모퉁이 절감 합니다.  
-  
- *fRestore*  
- 예약 된 멤버입니다. Windows에서 내부적으로 사용 됩니다.  
-  
- *fIncUpdate*  
- 예약 된 멤버입니다. Windows에서 내부적으로 사용 됩니다.  
-  
- *rgbReserved [16]*  
- 예약 된 멤버입니다. 예약 된 메모리 블록을 Windows에서 내부적으로 사용 합니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** winuser.h  
-  
-## <a name="see-also"></a>참고 항목  
- [구조체, 스타일, 콜백 및 메시지 맵](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CPaintDC::m_ps](../../mfc/reference/cpaintdc-class.md#m_ps)
+
+`PAINTSTRUCT` 구조 창의 클라이언트 영역을 그리는 데 사용할 수 있는 정보를 포함 합니다.
+
+## <a name="syntax"></a>구문
+
+```
+typedef struct tagPAINTSTRUCT {
+    HDC hdc;
+    BOOL fErase;
+    RECT rcPaint;
+    BOOL fRestore;
+    BOOL fIncUpdate;
+    BYTE rgbReserved[16];
+} PAINTSTRUCT;
+```
+
+#### <a name="parameters"></a>매개 변수
+
+*hdc*<br/>
+그리기에 사용 되는 디스플레이 컨텍스트를 식별 합니다.
+
+*fErase*<br/>
+배경을 그려야 해야 하는지 여부를 지정 합니다. 없는 응용 프로그램 배경을 그리면 0입니다. 응용 프로그램은 배경 브러시를 하지 않고 Windows 창을-클래스를 만들 경우 배경을 그리기 위한 (에 대 한 설명을 참조를 `hbrBackground` 의 멤버는 [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) Windows SDK의 구조).
+
+*rcPaint*<br/>
+왼쪽 위를 지정 하 고 그리기 요청은 사각형의 오른쪽 모퉁이 절감 합니다.
+
+*fRestore*<br/>
+예약 된 멤버입니다. Windows에서 내부적으로 사용 됩니다.
+
+*fIncUpdate*<br/>
+예약 된 멤버입니다. Windows에서 내부적으로 사용 됩니다.
+
+*rgbReserved [16]*<br/>
+예약 된 멤버입니다. 예약 된 메모리 블록을 Windows에서 내부적으로 사용 합니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** winuser.h
+
+## <a name="see-also"></a>참고 항목
+
+[구조체, 스타일, 콜백 및 메시지 맵](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
+[CPaintDC::m_ps](../../mfc/reference/cpaintdc-class.md#m_ps)
 

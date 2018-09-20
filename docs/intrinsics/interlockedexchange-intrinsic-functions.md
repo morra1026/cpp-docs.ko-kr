@@ -54,140 +54,146 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7a450d683bfa2c358e26a4109a2e8a75c04e233
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f35e3a435025a9758d1ad713eadcef744333441d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716224"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46382429"
 ---
 # <a name="interlockedexchange-intrinsic-functions"></a>_InterlockedExchangePointer Intrinsic Functions
-**Microsoft 전용**  
-  
- 지정된 값을 설정하는 원자성 명령을 생성합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-long _InterlockedExchange(  
-   long volatile * Target,  
-   long Value  
-);  
-long _InterlockedExchange_acq(  
-   long volatile * Target,  
-   long Value  
-);  
-long _InterlockedExchange_HLEAcquire(  
-   long volatile * Target,  
-   long Value  
-);  
-long _InterlockedExchange_HLERelease(  
-   long volatile * Target,  
-   long Value  
-);  
-long _InterlockedExchange_nf(  
-   long volatile * Target,  
-   long Value  
-);  
-long _InterlockedExchange_rel(  
-   long volatile * Target,  
-   long Value  
-);  
-char _InterlockedExchange8(  
-   char volatile * Target,  
-   char Value  
-);  
-char _InterlockedExchange8_acq(  
-   char volatile * Target,  
-   char Value  
-);  
-char _InterlockedExchange8_nf(  
-   char volatile * Target,  
-   char Value  
-);  
-char _InterlockedExchange8_rel(  
-   char volatile * Target,  
-   char Value  
-);  
-short _InterlockedExchange16(  
-   short volatile * Target,  
-   short Value  
-);  
-short _InterlockedExchange16_acq(  
-   short volatile * Target,  
-   short Value  
-);  
-short _InterlockedExchange16_nf(  
-   short volatile * Target,  
-   short Value  
-);  
-short _InterlockedExchange16_rel(  
-   short volatile * Target,  
-   short Value  
-);  
-__int64 _InterlockedExchange64(  
-   __int64 volatile * Target,  
-   __int64 Value  
-);  
-__int64 _InterlockedExchange64_acq(  
-   __int64 volatile * Target,  
-   __int64 Value  
-);  
-__int64 _InterlockedExchange64_HLEAcquire(  
-   __int64 volatile * Target,  
-   __int64 Value  
-);  
-__int64 _InterlockedExchange64_HLERelease(  
-   __int64 volatile * Target,  
-   __int64 Value  
-);  
-__int64 _InterlockedExchange64_nf(  
-   __int64 volatile * Target,  
-   __int64 Value  
-);  
-__int64 _InterlockedExchange64_rel(  
-   __int64 volatile * Target,  
-   __int64 Value  
-);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+
+**Microsoft 전용**
+
+지정된 값을 설정하는 원자성 명령을 생성합니다.
+
+## <a name="syntax"></a>구문
+
+```
+long _InterlockedExchange(
+   long volatile * Target,
+   long Value
+);
+long _InterlockedExchange_acq(
+   long volatile * Target,
+   long Value
+);
+long _InterlockedExchange_HLEAcquire(
+   long volatile * Target,
+   long Value
+);
+long _InterlockedExchange_HLERelease(
+   long volatile * Target,
+   long Value
+);
+long _InterlockedExchange_nf(
+   long volatile * Target,
+   long Value
+);
+long _InterlockedExchange_rel(
+   long volatile * Target,
+   long Value
+);
+char _InterlockedExchange8(
+   char volatile * Target,
+   char Value
+);
+char _InterlockedExchange8_acq(
+   char volatile * Target,
+   char Value
+);
+char _InterlockedExchange8_nf(
+   char volatile * Target,
+   char Value
+);
+char _InterlockedExchange8_rel(
+   char volatile * Target,
+   char Value
+);
+short _InterlockedExchange16(
+   short volatile * Target,
+   short Value
+);
+short _InterlockedExchange16_acq(
+   short volatile * Target,
+   short Value
+);
+short _InterlockedExchange16_nf(
+   short volatile * Target,
+   short Value
+);
+short _InterlockedExchange16_rel(
+   short volatile * Target,
+   short Value
+);
+__int64 _InterlockedExchange64(
+   __int64 volatile * Target,
+   __int64 Value
+);
+__int64 _InterlockedExchange64_acq(
+   __int64 volatile * Target,
+   __int64 Value
+);
+__int64 _InterlockedExchange64_HLEAcquire(
+   __int64 volatile * Target,
+   __int64 Value
+);
+__int64 _InterlockedExchange64_HLERelease(
+   __int64 volatile * Target,
+   __int64 Value
+);
+__int64 _InterlockedExchange64_nf(
+   __int64 volatile * Target,
+   __int64 Value
+);
+__int64 _InterlockedExchange64_rel(
+   __int64 volatile * Target,
+   __int64 Value
+);
+```
+
+#### <a name="parameters"></a>매개 변수
+
 *Target*<br/>
-[out에서] 교환할 값에 대 한 포인터입니다. 함수는 이 변수를 `Value`로 설정하고 이전 값을 반환합니다.  
-  
+[out에서] 교환할 값에 대 한 포인터입니다. 함수는 이 변수를 `Value`로 설정하고 이전 값을 반환합니다.
+
 *Value*<br/>
-[in] 가리키는 값과 교환할 값 `Target`합니다.  
-  
-## <a name="return-value"></a>반환 값  
- `Target`이 가리키는 초기 값을 반환합니다.  
-  
-## <a name="requirements"></a>요구 사항  
-  
-|내장 함수|아키텍처|머리글|  
-|---------------|------------------|------------|  
-|`_InterlockedExchange`, `_InterlockedExchange8`, `_InterlockedExchange16`, `_InterlockedExchange64`|x86, ARM, x64|\<intrin.h>|  
-|`_InterlockedExchange_acq`, `_InterlockedExchange_nf`, `_InterlockedExchange_rel`, `_InterlockedExchange8_acq`, `_InterlockedExchange8_nf`, `_InterlockedExchange8_rel`, `_InterlockedExchange16_acq`, `_InterlockedExchange16_nf`, `_InterlockedExchange16_rel`, `_InterlockedExchange64_acq`, `_InterlockedExchange64_nf`, `_InterlockedExchange64_rel`,|ARM|\<intrin.h>|  
-|`_InterlockedExchange_HLEAcquire`, `_InterlockedExchange_HLERelease`, `_InterlockedExchange64_HLEAcquire`, `_InterlockedExchange64_HLERelease`|x86, x64|\<immintrin.h>|  
-  
-## <a name="remarks"></a>설명  
- `_InterlockedExchange` Win32 Windows SDK에 대 한 컴파일러 내장 지원을 제공 [InterlockedExchange](/windows/desktop/api/winbase/nf-winbase-interlockedexchange) 함수입니다.  
-  
- 사용되는 데이터 형식과 프로세서별 획득 또는 해제 의미 체계에 따라 다른 `_InterlockedExchange`의 여러 변형이 있습니다.  
-  
- `_InterlockedExchange` 함수는 32비트 정수 값에 대해 작동하는 반면 `_InterlockedExchange8`은 8비트 정수 값에 대해, `_InterlockedExchange16`은 16비트 정수 값에 대해, 그리고 `_InterlockedExchange64`는 64비트 정수 값에 대해 작동합니다.  
-  
- ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("no fence"의 약어) 접미사가 포함된 내장 함수는 메모리 장벽으로 작동하지 않습니다.  
-  
- HLE(Hardware Lock Elision) 명령을 지원하는 Intel 플랫폼에서 `_HLEAcquire` 및 `_HLERelease` 접미사가 포함된 내장 함수는 하드웨어에서 잠금 쓰기 단계를 제거하여 성능을 향상시킬 수 있는 힌트를 프로세서에 포함합니다. HLE를 지원하지 않는 플랫폼에서 이러한 내장 함수를 호출하면 힌트는 무시됩니다.  
-  
- 이러한 루틴은 내장 함수로만 사용할 수 있습니다.  
-  
-## <a name="example"></a>예제  
- 샘플을 사용 하는 방법에 대 한 `_InterlockedExchange`를 참조 하세요 [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md)합니다.  
-  
-**Microsoft 전용 종료**  
-  
-## <a name="see-also"></a>참고 항목  
- [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)   
- [키워드](../cpp/keywords-cpp.md)   
- [x86 컴파일러와 충돌](../build/conflicts-with-the-x86-compiler.md)
+[in] 가리키는 값과 교환할 값 `Target`합니다.
+
+## <a name="return-value"></a>반환 값
+
+`Target`이 가리키는 초기 값을 반환합니다.
+
+## <a name="requirements"></a>요구 사항
+
+|내장 함수|아키텍처|머리글|
+|---------------|------------------|------------|
+|`_InterlockedExchange`, `_InterlockedExchange8`, `_InterlockedExchange16`, `_InterlockedExchange64`|x86, ARM, x64|\<intrin.h>|
+|`_InterlockedExchange_acq`, `_InterlockedExchange_nf`, `_InterlockedExchange_rel`, `_InterlockedExchange8_acq`, `_InterlockedExchange8_nf`, `_InterlockedExchange8_rel`, `_InterlockedExchange16_acq`, `_InterlockedExchange16_nf`, `_InterlockedExchange16_rel`, `_InterlockedExchange64_acq`, `_InterlockedExchange64_nf`, `_InterlockedExchange64_rel`,|ARM|\<intrin.h>|
+|`_InterlockedExchange_HLEAcquire`, `_InterlockedExchange_HLERelease`, `_InterlockedExchange64_HLEAcquire`, `_InterlockedExchange64_HLERelease`|x86, x64|\<immintrin.h>|
+
+## <a name="remarks"></a>설명
+
+`_InterlockedExchange` Win32 Windows SDK에 대 한 컴파일러 내장 지원을 제공 [InterlockedExchange](/windows/desktop/api/winbase/nf-winbase-interlockedexchange) 함수입니다.
+
+사용되는 데이터 형식과 프로세서별 획득 또는 해제 의미 체계에 따라 다른 `_InterlockedExchange`의 여러 변형이 있습니다.
+
+`_InterlockedExchange` 함수는 32비트 정수 값에 대해 작동하는 반면 `_InterlockedExchange8`은 8비트 정수 값에 대해, `_InterlockedExchange16`은 16비트 정수 값에 대해, 그리고 `_InterlockedExchange64`는 64비트 정수 값에 대해 작동합니다.
+
+ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("no fence"의 약어) 접미사가 포함된 내장 함수는 메모리 장벽으로 작동하지 않습니다.
+
+HLE(Hardware Lock Elision) 명령을 지원하는 Intel 플랫폼에서 `_HLEAcquire` 및 `_HLERelease` 접미사가 포함된 내장 함수는 하드웨어에서 잠금 쓰기 단계를 제거하여 성능을 향상시킬 수 있는 힌트를 프로세서에 포함합니다. HLE를 지원하지 않는 플랫폼에서 이러한 내장 함수를 호출하면 힌트는 무시됩니다.
+
+이러한 루틴은 내장 함수로만 사용할 수 있습니다.
+
+## <a name="example"></a>예제
+
+샘플을 사용 하는 방법에 대 한 `_InterlockedExchange`를 참조 하세요 [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md)합니다.
+
+**Microsoft 전용 종료**
+
+## <a name="see-also"></a>참고 항목
+
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
+[x86 컴파일러와 충돌](../build/conflicts-with-the-x86-compiler.md)

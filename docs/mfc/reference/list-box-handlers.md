@@ -25,24 +25,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1725521fd710f70f36feb321d9bd019eeebb8116
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 87edc4691c01da199540cb2dcb96c8ce2d34cb9b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369657"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46383037"
 ---
 # <a name="list-box-handlers"></a>목록 상자 처리기
-다음 맵 항목 해당 함수 프로토타입이 있어야 합니다.  
-  
-|맵 항목|함수 프로토타입|  
-|---------------|------------------------|  
-|ON_LBN_DBLCLK ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|  
-|ON_LBN_ERRSPACE ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|  
-|ON_LBN_KILLFOCUS ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|  
-|ON_LBN_SELCHANGE ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|  
-|ON_LBN_SETFOCUS ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|  
-  
-## <a name="see-also"></a>참고 항목  
- [메시지 맵](../../mfc/reference/message-maps-mfc.md)
+
+다음 맵 항목을 해당 함수 프로토타입이 있습니다.
+
+|맵 항목|함수 프로토타입|
+|---------------|------------------------|
+|ON_LBN_DBLCLK ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|
+|ON_LBN_ERRSPACE ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|
+|ON_LBN_KILLFOCUS ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|
+|ON_LBN_SELCHANGE ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|
+|ON_LBN_SETFOCUS ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|
+
+## <a name="see-also"></a>참고 항목
+
+[메시지 맵](../../mfc/reference/message-maps-mfc.md)
 

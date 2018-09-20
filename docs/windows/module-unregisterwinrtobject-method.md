@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 88cafb7796ba0dfd1e37902821872e860ddc4baf
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 39bb86206aec72d918df482ee1d01214b4fbb03b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592186"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46381753"
 ---
 # <a name="moduleunregisterwinrtobject-method"></a>Module::UnregisterWinRTObject 메서드
 
@@ -39,7 +39,7 @@ virtual HRESULT UnregisterWinRTObject(
 
 ### <a name="parameters"></a>매개 변수
 
-*쿠키*  
+*쿠키*<br/>
 등록이 해지된 클래스 개체를 식별하는 값에 대한 포인터입니다.
 
 ## <a name="requirements"></a>요구 사항
@@ -49,4 +49,5 @@ virtual HRESULT UnregisterWinRTObject(
 **네임스페이스:** Microsoft::WRL
 
 ## <a name="see-also"></a>참고 항목
+
 [Module 클래스](../windows/module-class.md)

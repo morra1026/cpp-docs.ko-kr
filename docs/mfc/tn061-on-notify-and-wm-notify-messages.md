@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d2f1259227fa8d27778dbf0e40b13f5460b7041
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2395cb7b1f3d719fd64494ee9b9c7c64ba222bac
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218787"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46381831"
 ---
 # <a name="tn061-onnotify-and-wmnotify-messages"></a>TN061: ON_NOTIFY 및 WM_NOTIFY 메시지
 
@@ -104,14 +104,14 @@ ON_NOTIFY(wNotifyCode, id, memberFxn)
 
 여기서 매개 변수는 다음과 같습니다.
 
-*wNotifyCode*  
- 알림 메시지는 LVN_KEYDOWN 같은 처리에 대 한 코드입니다.
+*wNotifyCode*<br/>
+알림 메시지는 LVN_KEYDOWN 같은 처리에 대 한 코드입니다.
 
-*ID*  
- 알림이 전송 되는 컨트롤의 자식 식별자입니다.
+*ID*<br/>
+알림이 전송 되는 컨트롤의 자식 식별자입니다.
 
-*memberFxn*  
- 이 알림 메시지를 보낼 때 호출 되는 멤버 함수입니다.
+*memberFxn*<br/>
+이 알림 메시지를 보낼 때 호출 되는 멤버 함수입니다.
 
 멤버 함수는 다음과 같은 프로토타입을 사용 하 여 선언 해야 합니다.
 
@@ -121,11 +121,11 @@ afx_msg void memberFxn(NMHDR* pNotifyStruct, LRESULT* result);
 
 여기서 매개 변수는 다음과 같습니다.
 
-*pNotifyStruct*  
- 위 섹션에 설명 된 대로 알림 구조에 대 한 포인터입니다.
+*pNotifyStruct*<br/>
+위 섹션에 설명 된 대로 알림 구조에 대 한 포인터입니다.
 
-*결과*  
- 결과 코드에 대 한 포인터를 반환 하기 전에 설정 합니다.
+*결과*<br/>
+결과 코드에 대 한 포인터를 반환 하기 전에 설정 합니다.
 
 ## <a name="example"></a>예제
 
@@ -141,7 +141,7 @@ ON_NOTIFY(LVN_KEYDOWN, IDC_LIST1, OnKeydownList1)
 void CMessageReflectionDlg::OnKeydownList1(NMHDR* pNMHDR, LRESULT* pResult)
 {
     LV_KEYDOWN* pLVKeyDow = (LV_KEYDOWN*)pNMHDR;
-    
+
     // TODO: Add your control notification handler
     //       code here
 
@@ -167,17 +167,17 @@ ON_NOTIFY_RANGE(wNotifyCode, id, idLast, memberFxn)
 
 여기서 매개 변수는 다음과 같습니다.
 
-*wNotifyCode*  
- 알림 메시지는 LVN_KEYDOWN 같은 처리에 대 한 코드입니다.
+*wNotifyCode*<br/>
+알림 메시지는 LVN_KEYDOWN 같은 처리에 대 한 코드입니다.
 
-*ID*  
- 식별자의 인접 한 범위에서 첫 번째 식별자입니다.
+*ID*<br/>
+식별자의 인접 한 범위에서 첫 번째 식별자입니다.
 
-*idLast*  
- 식별자의 인접 한 범위에서 마지막 식별자입니다.
+*idLast*<br/>
+식별자의 인접 한 범위에서 마지막 식별자입니다.
 
-*memberFxn*  
- 이 알림 메시지를 보낼 때 호출 되는 멤버 함수입니다.
+*memberFxn*<br/>
+이 알림 메시지를 보낼 때 호출 되는 멤버 함수입니다.
 
 멤버 함수는 다음과 같은 프로토타입을 사용 하 여 선언 해야 합니다.
 
@@ -187,14 +187,14 @@ afx_msg void memberFxn(UINT id, NMHDR* pNotifyStruct, LRESULT* result);
 
 여기서 매개 변수는 다음과 같습니다.
 
-*ID*  
- 알림을 전송 하는 컨트롤의 자식 식별자입니다.
+*ID*<br/>
+알림을 전송 하는 컨트롤의 자식 식별자입니다.
 
-*pNotifyStruct*  
- 위에서 설명한 것 처럼 알림 구조에 대 한 포인터입니다.
+*pNotifyStruct*<br/>
+위에서 설명한 것 처럼 알림 구조에 대 한 포인터입니다.
 
-*결과*  
- 결과 코드에 대 한 포인터를 반환 하기 전에 설정 합니다.
+*결과*<br/>
+결과 코드에 대 한 포인터를 반환 하기 전에 설정 합니다.
 
 ##  <a name="_mfcnotes_tn061_on_notify_ex.2c_.on_notify_ex_range"></a> ON_NOTIFY_EX, ON_NOTIFY_EX_RANGE
 
@@ -221,5 +221,5 @@ afx_msg BOOL memberFxn(UINT id, NMHDR* pNotifyStruct, LRESULT* result);
 
 ## <a name="see-also"></a>참고자료
 
-[번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)  
-[범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)  
+[번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
+[범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)

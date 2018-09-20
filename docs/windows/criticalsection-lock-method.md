@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4fedde29441c9c14b68dec5cff998be57d216e29
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: f13af220107ba8d5bc5c26c65c2034f125a39454
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607662"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46382455"
 ---
 # <a name="criticalsectionlock-method"></a>CriticalSection::Lock 메서드
 
@@ -40,7 +40,7 @@ SyncLock Lock();
 
 ### <a name="parameters"></a>매개 변수
 
-*cs*  
+*cs*<br/>
 사용자가 지정한 임계 영역 개체입니다.
 
 ## <a name="return-value"></a>반환 값

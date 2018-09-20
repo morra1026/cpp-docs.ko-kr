@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: bbd42d3d51921ccab01dfdcaed9ad988e22ae9a8
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 2bb4adbb960f9d062cc8573c7ca0f7cd5dcd0426
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894709"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46382221"
 ---
 # <a name="using-verifiable-assemblies-with-sql-server-ccli"></a>SQL Server에 안정형 어셈블리 사용(C++/CLI)
 
@@ -42,19 +42,20 @@ SQL Server transact-sql (T-SQL)을 SQL Server에 안정형 어셈블리를 설�
 CREATE ASSEMBLY <assemblyName> FROM <'Assembly UNC Path'> WITH
   PERMISSION_SET <permissions>
 DROP ASSEMBLY <assemblyName>
-```  
+```
 
 PERMISSION_SET 명령을 보안 컨텍스트를 지정 및 제한 없음, 안전 또는 확장 값을 가질 수 있습니다.
 
 또한 클래스에 메서드 이름에 바인딩할 CREATE FUNCTION 명령을 사용할 수 있습니다.
 
 ```sql
-CREATE FUNCTION <FunctionName>(<FunctionParams>)  
+CREATE FUNCTION <FunctionName>(<FunctionParams>)
 RETURNS returnType
 [EXTERNAL NAME <AssemblyName>:<ClassName>::<StaticMethodName>]
-```  
+```
 
 ## <a name="example"></a>예제
+
 SQL Server에 어셈블리를 로드 하 고 클래스의 메서드를 사용할 수 있도록 하는 다음 SQL 스크립트 (예를 들어, 명명 된 "MyScript.sql"):
 
 ```sql
@@ -69,23 +70,23 @@ with permission_set safe
 -- Create function on assembly with no external access
 drop function GetQuoteNoEA
 go
-create function GetQuoteNoEA(@sym nvarchar(10))  
+create function GetQuoteNoEA(@sym nvarchar(10))
 returns real
 external name stockNoEA:StockQuotes::GetQuote
 go
 
 -- To call the function
-select dbo.GetQuoteNoEA('MSFT')  
+select dbo.GetQuoteNoEA('MSFT')
 go
-```  
+```
 
 SQL 쿼리 분석기 또는 sqlcmd.exe 유틸리티를 사용 하 여 명령줄에서 SQL 스크립트를 대화형으로 실행할 수 있습니다. 다음 명령줄 MyServer 연결, 기본 데이터베이스를 사용 하 여, 트러스트 된 연결을 사용 하 여, MyScript.sql, 입력 및 MyResult.txt 출력 합니다.
 
 ```cmd
 sqlcmd -S MyServer -E -i myScript.sql -o myResult.txt
-```  
+```
 
 ## <a name="see-also"></a>참고 항목
 
-[방법: /clr: safe로 마이그레이션 (C + + /cli CLI)](../dotnet/how-to-migrate-to-clr-safe-cpp-cli.md)   
+[방법: /clr: safe로 마이그레이션 (C + + /cli CLI)](../dotnet/how-to-migrate-to-clr-safe-cpp-cli.md)<br/>
 [클래스 및 구조체](../cpp/classes-and-structs-cpp.md)

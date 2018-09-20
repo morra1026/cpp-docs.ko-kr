@@ -18,25 +18,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 948e8cb73c8132f35d1785a89a26ff86c659fc1c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4e6d2a447c818fda61e816e1ceb7c2ef750fc1e2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343391"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46380687"
 ---
 # <a name="mfc-technical-notes"></a>MFC 기술 참고 사항
-기술 노트는 프로그래머가 프로그래머 용으로 작성 된 문서입니다.  
-  
- 각 기술 노트는 문제 또는 MFC 설명서의 나머지 부분에서 다루지 않는 기능을 설명 합니다. 제공 된 기술 참고 사항 MFC 개발자는 고급 사용자가 사용할 예상 하는 특별 한 정보 뿐만 아니라, 사용자에 게 정보에 대 한 요청을 반영 합니다.  
-  
- 기술 참고 사항을 탐색 하는 방법은 두 가지가 있습니다.  
-  
--   [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)  
-  
--   [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)  
-  
-## <a name="see-also"></a>참고 항목  
 
- [MFC 데스크톱 응용 프로그램](../mfc/mfc-desktop-applications.md)
+기술 참고는 프로그래머가 프로그래머를 위한 기록 문서입니다.
+
+각 기술 노트에는 문제 또는 MFC 설명서의 나머지 부분에서 다루지 않는 기능을 설명 합니다. 제공 된 기술 참고 사항 MFC 개발자는 고급 사용자가 사용할 예상 하는 특수 한 정보 뿐만 아니라 사용자의 정보에 대 한 요청을 반영 합니다.
+
+두 가지 방법으로 기술 정보를 찾아볼 수 있습니다.
+
+- [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)
+
+- [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
+
+## <a name="see-also"></a>참고 항목
+
+[MFC 데스크톱 응용 프로그램](../mfc/mfc-desktop-applications.md)
 

@@ -16,27 +16,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 79d28b64b56ed501b47881fd9e3ba2bd2e8817e9
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 42b95941e7853ec9bba830f5f5b37c0ed73b3548
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33690740"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46384706"
 ---
 # <a name="ompgetthreadnum"></a>omp_get_thread_num
-해당 스레드 팀 내에서 실행 중인 스레드의 스레드 수를 반환 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-int omp_get_thread_num( );  
-```  
-  
-## <a name="remarks"></a>설명  
- 자세한 내용은 참조 [3.1.4 omp_get_thread_num 함수](../../../parallel/openmp/3-1-4-omp-get-thread-num-function.md)합니다.  
-  
-## <a name="example"></a>예제  
- 참조 [병렬](../../../parallel/openmp/reference/parallel.md) 사용 하는 예제에 대 한 `omp_get_thread_num`합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [함수](../../../parallel/openmp/reference/openmp-functions.md)
+
+해당 스레드 팀 내에서 실행 중인 스레드의 스레드 수를 반환 합니다.
+
+## <a name="syntax"></a>구문
+
+```
+int omp_get_thread_num( );
+```
+
+## <a name="remarks"></a>설명
+
+자세한 내용은 [3.1.4 omp_get_thread_num 함수](../../../parallel/openmp/3-1-4-omp-get-thread-num-function.md)합니다.
+
+## <a name="example"></a>예제
+
+참조 [병렬](../../../parallel/openmp/reference/parallel.md) 사용 하는 예제에 대 한 `omp_get_thread_num`합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[함수](../../../parallel/openmp/reference/openmp-functions.md)
