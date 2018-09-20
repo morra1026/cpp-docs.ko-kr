@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9b9be3cd2de53c957074d2acdee18183d688852
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ae4c8834609552c469eff8ca382a4e14ca077cfd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719123"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46428189"
 ---
 # <a name="codeseg"></a>code_seg
 함수가 .obj 파일에 저장되는 텍스트 세그먼트를 지정합니다.  
@@ -96,5 +96,5 @@ int main() {
   
 ## <a name="see-also"></a>참고 항목  
  
-[code_seg (__declspec)](../cpp/code-seg-declspec.md)   
+[code_seg(__declspec)](../cpp/code-seg-declspec.md)<br/>
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

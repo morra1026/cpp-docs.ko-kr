@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 26ec8987b22444c98bb7a88c791c4f941737ceae
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 6239acd275d94eb2a59fe59882095d5106d3fc1e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313314"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46405738"
 ---
 # <a name="how-to-change-the-language-or-condition-of-a-resource-while-copying-c"></a>방법: (c + +)를 복사 하는 동안 언어 또는 리소스의 상태 변경
 
@@ -56,6 +56,6 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[방법: 리소스 복사](../windows/how-to-copy-resources.md)  
-[리소스 파일](../windows/resource-files-visual-studio.md)  
+[방법: 리소스 복사](../windows/how-to-copy-resources.md)<br/>
+[리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 [리소스 편집기](../windows/resource-editors.md)

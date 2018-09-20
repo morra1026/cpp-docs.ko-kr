@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f4b231aa38b0146e40f779e0fa8d75c71ec5d0a6
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0a7583fe9cc73320b56ccb53903f5c2c4edcb57b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606335"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46422001"
 ---
 # <a name="creatormapfactorycache-data-member"></a>CreatorMap::factoryCache 데이터 멤버
 
@@ -46,5 +46,5 @@ FactoryCache* factoryCache;
 
 ## <a name="see-also"></a>참고 항목
 
-[CreatorMap 구조체](../windows/creatormap-structure.md)  
+[CreatorMap 구조체](../windows/creatormap-structure.md)<br/>
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

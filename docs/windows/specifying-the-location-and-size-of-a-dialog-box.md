@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 854e4df84bfc5f75eda8f98fa117c199ba054b3a
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: e825dc7b20c0ce75ca1f55fb9ad0310571316a1c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316577"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435820"
 ---
 # <a name="specifying-the-location-and-size-of-a-dialog-box-c"></a>대화 상자 (c + +)의 크기와 위치를 지정합니다.
 
@@ -37,5 +37,5 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)  
+[대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)

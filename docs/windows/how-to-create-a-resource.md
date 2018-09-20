@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9c12357acf3369192248784fc6593c9b5b91b863
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 61105469abc25de38d0d9ae9a59755e08fd298b6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316785"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46438641"
 ---
 # <a name="how-to-create-a-resource"></a>방법: 리소스 파일 만들기
 
@@ -68,6 +68,6 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[리소스 파일](../windows/resource-files-visual-studio.md)  
-[리소스 편집기](../windows/resource-editors.md)  
+[리소스 파일](../windows/resource-files-visual-studio.md)<br/>
+[리소스 편집기](../windows/resource-editors.md)<br/>
 [리소스 추가 대화 상자](../windows/add-resource-dialog-box.md)

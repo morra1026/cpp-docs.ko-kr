@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d81fb8f8f41a57fc2bd1a87c6726b92756bf26b5
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 58f3be857e0a77a62a5f2d4d1d0b650f02fd391b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42541063"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425524"
 ---
 # <a name="macros-and-c"></a>매크로 및 C++
 C++는 새로운 기능을 제공하며 그 중 일부는 ANSI C 전처리기에서 제공하는 기능을 대신합니다. 이 새로운 기능으로 형식이 더욱 안전해지고 효과적으로 언어를 예측할 수 있습니다.  
@@ -39,5 +39,5 @@ C++는 새로운 기능을 제공하며 그 중 일부는 ANSI C 전처리기에
   
 ## <a name="see-also"></a>참고 항목  
  
-[미리 정의 된 매크로](../preprocessor/predefined-macros.md)   
+[미리 정의된 매크로](../preprocessor/predefined-macros.md)<br/>
 [매크로(C/C++)](../preprocessor/macros-c-cpp.md)

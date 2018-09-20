@@ -17,14 +17,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 50696d8f6ee0aa1c61374c0758905a5bb7063ab5
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 732fab9e0f9f0233de6de7db6328c2e6736db5d0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606939"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46437730"
 ---
 # <a name="mfc-database-programming-symbols"></a>MFC 데이터베이스 프로그래밍 기호
+
 이 표의 기호 데이터베이스 지원이 추가 되었습니다. 경우에 MFC 프로젝트에 나타납니다. SQL server 데이터베이스 프로그래밍에 대 한 MFC 연결과 지원합니다.
   
 |||
@@ -45,8 +46,10 @@ ms.locfileid: "42606939"
 |AFX_IDP_SQL_SQL_NO_TOTAL|AFX_IDP_SQL_UPDATE_DELETE_FAILED|
   
 ## <a name="requirements"></a>요구 사항
- MFC
+
+MFC
   
 ## <a name="see-also"></a>참고 항목
- [미리 정의된 MFC 기호](../windows/mfc-predefined-symbols.md)  
- [기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)
+
+[미리 정의된 MFC 기호](../windows/mfc-predefined-symbols.md)<br/>
+[기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)

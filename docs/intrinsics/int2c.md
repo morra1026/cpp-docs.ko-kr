@@ -19,33 +19,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 23727ed40b12506ddd47a03055eaf8514d5685c5
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: fcb8859f00724eb7865198c662850a60314ffdc3
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42538922"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419986"
 ---
 # <a name="int2c"></a>__int2c
-**Microsoft 전용**  
-  
- 생성 된 `int 2c` 트리거하는 명령은 `2c` 인터럽트 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-void __int2c(void);  
-```  
-  
-## <a name="requirements"></a>요구 사항  
-  
-|내장 함수|아키텍처|  
-|---------------|------------------|  
-|`__int2c`|x86, x64|  
-  
- **헤더 파일** \<intrin.h >  
-  
-**Microsoft 전용 종료**  
-  
-## <a name="see-also"></a>참고 항목  
- [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)
+
+**Microsoft 전용**
+
+생성 된 `int 2c` 트리거하는 명령은 `2c` 인터럽트 합니다.
+
+## <a name="syntax"></a>구문
+
+```
+void __int2c(void);
+```
+
+## <a name="requirements"></a>요구 사항
+
+|내장 함수|아키텍처|
+|---------------|------------------|
+|`__int2c`|x86, x64|
+
+**헤더 파일** \<intrin.h >
+
+**Microsoft 전용 종료**
+
+## <a name="see-also"></a>참고 항목
+
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

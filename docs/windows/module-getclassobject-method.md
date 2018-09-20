@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3e0c8996823de35bbfd85d595556db933f34238a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 90a1b527d12e581c42fc9519e56d453f845e0b63
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599224"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419723"
 ---
 # <a name="modulegetclassobject-method"></a>Module::GetClassObject 메서드
 
@@ -31,7 +31,7 @@ ms.locfileid: "42599224"
 ## <a name="syntax"></a>구문
 
 ```cpp
- HRESULT GetClassObject(
+HRESULT GetClassObject(
    REFCLSID clsid,
    REFIID riid,
    _Deref_out_ void **ppv,
@@ -41,16 +41,16 @@ ms.locfileid: "42599224"
 
 ### <a name="parameters"></a>매개 변수
 
-*clsid*  
+*clsid*<br/>
 클래스 ID입니다.
 
-*riid*  
+*riid*<br/>
 요청하는 인터페이스 ID입니다.
 
-*ppv*  
+*ppv*<br/>
 반환된 개체에 대한 포인터입니다.
 
-*서버 이름*  
+*서버 이름*<br/>
 에 지정 된 서버 이름을 합니다 `ActivatableClassWithFactory`, `ActivatableClassWithFactoryEx`, 또는 `ActivatableClass` 매크로 또는 **nullptr** 기본 서버 이름을 가져올 수 합니다.
 
 ## <a name="return-value"></a>반환 값
@@ -66,4 +66,5 @@ Windows 런타임이 아닌 COM에만이 메서드를 사용 합니다. 이 메�
 **네임스페이스:** Microsoft::WRL
 
 ## <a name="see-also"></a>참고 항목
+
 [Module 클래스](../windows/module-class.md)

@@ -152,12 +152,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c2419925896112eb235bcdfe77d9916373f0091
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: b9a1472cba13f477143c9b9ace27cb2555f41406
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42543196"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408429"
 ---
 # <a name="predefined-macros"></a>미리 정의된 매크로
 
@@ -443,6 +443,6 @@ Microsoft Visual c + +는 이러한 추가 미리 정의 된 매크로 지원합
 
 ## <a name="see-also"></a>참고 항목
 
-[매크로 (C/c + +)](../preprocessor/macros-c-cpp.md)   
-[전처리기 연산자](../preprocessor/preprocessor-operators.md)   
+[매크로(C/C++)](../preprocessor/macros-c-cpp.md)<br/>
+[전처리기 연산자](../preprocessor/preprocessor-operators.md)<br/>
 [전처리기 지시문](../preprocessor/preprocessor-directives.md)

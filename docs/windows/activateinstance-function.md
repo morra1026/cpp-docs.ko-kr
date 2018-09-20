@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c2ac6d8722bcdfed06ae97508b0ca7e5bb8ea00a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ebebe0bbceafe82c41ec99b2532c965670776127
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601454"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46426395"
 ---
 # <a name="activateinstance-function"></a>ActivateInstance 함수
 
@@ -41,13 +41,13 @@ inline HRESULT ActivateInstance(
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 활성화 하는 형식입니다.
 
-*activatableClassId*  
+*activatableClassId*<br/>
 매개 변수를 정의 하는 클래스 ID의 이름을 *T*합니다.
 
-*인스턴스*  
+*인스턴스*<br/>
 이 작업이 완료 될 때, 인스턴스에 대 한 참조 *T*합니다.
 
 ## <a name="return-value"></a>반환 값

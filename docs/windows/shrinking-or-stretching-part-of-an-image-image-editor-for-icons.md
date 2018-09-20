@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5b8d9ef624f17645da058ab86cd9b6a53cf17069
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5bfff5e307b7240a4ce765c31131f8702071b7e9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606023"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46424137"
 ---
 # <a name="shrinking-or-stretching-part-of-an-image-image-editor-for-icons"></a>이미지 일부 줄이기 또는 늘이기(아이콘에 대한 이미지 편집기)
 
@@ -41,5 +41,5 @@ ms.locfileid: "42606023"
 
 ## <a name="see-also"></a>참고 항목
 
-[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)  
+[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [이미지 크기 조정](../windows/resizing-an-image-image-editor-for-icons.md)

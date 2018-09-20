@@ -15,20 +15,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6260c7bc9875e92e66920fb8837810132d0a4a50
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5a6427ec6748ffcb32f401a4b9efe46127dd64f2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33344119"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430685"
 ---
 # <a name="mapi-samples"></a>MAPI 샘플
-Microsoft 응용 프로그램 프로그래밍 인터페이스 MAPI (메시징) 기능을 보여 주는 다음 샘플 프로그램을 참조 하십시오.  
-  
--   [NPP](../visual-cpp-samples.md)  
-  
--   [DRAWCLI](../visual-cpp-samples.md)  
-  
-## <a name="see-also"></a>참고 항목  
- [MAPI](../mfc/mapi.md)
+
+Microsoft 응용 프로그램 프로그래밍 인터페이스 MAPI (메시징) 기능을 보여 주는 다음 예제 프로그램을 참조 하세요.
+
+- [NPP](../visual-cpp-samples.md)
+
+- [DRAWCLI](../visual-cpp-samples.md)
+
+## <a name="see-also"></a>참고 항목
+
+[MAPI](../mfc/mapi.md)
 

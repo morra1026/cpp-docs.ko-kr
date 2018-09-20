@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e56e3f48a3a58f25d03053867c195d11970893f9
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: f844d63bc04deb4294203f04aef30db48f195fd9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601409"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46438069"
 ---
 # <a name="terminatemap-function"></a>TerminateMap 함수
 
@@ -39,13 +39,13 @@ inline bool TerminateMap(
 
 ### <a name="parameters"></a>매개 변수
 
-*모듈*  
+*모듈*<br/>
 A [모듈](../windows/module-class.md)합니다.
 
-*서버 이름*  
+*서버 이름*<br/>
 매개 변수에 의해 지정 된 모듈의 클래스 팩터리 하위 집합의 이름을 *모듈*합니다.
 
-*forceTerminate*  
+*forceTerminate*<br/>
 **true** 클래스를 종료 하는 관계 없이 팩터리는 활성; **false** 모든 팩터리 활성화 된 경우 클래스 팩터리를 종료 되지 않습니다.
 
 ## <a name="return-value"></a>반환 값

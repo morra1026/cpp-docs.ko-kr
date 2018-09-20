@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 930a73f478b02d5aa7a16f262f98131dccba9f76
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 1d6e3af00bfe906a1954f7fc1d2b0af1ea52945e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315934"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46415917"
 ---
 # <a name="creating-a-256-color-icon-or-cursor-image-editor-for-icons"></a>256색 아이콘 또는 커서 만들기(아이콘에 대한 이미지 편집기)
 
@@ -51,6 +51,6 @@ ms.locfileid: "44315934"
 
 ## <a name="see-also"></a>참고 항목
 
-[256 색상표 사용](../windows/using-the-256-color-palette-image-editor-for-icons.md)  
-[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)  
+[256 색상표 사용](../windows/using-the-256-color-palette-image-editor-for-icons.md)<br/>
+[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [아이콘 및 커서: 디스플레이 장치용 이미지 리소스](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)

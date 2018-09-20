@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dd43102eb3a3b4e7bb14e65e0c710b814fc10cff
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: aed52e5ba209a826130b1a85aa866fe024174818
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593834"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46424640"
 ---
 # <a name="createactivationfactory-function"></a>CreateActivationFactory 함수
 
@@ -40,16 +40,16 @@ template<typename Factory>
 
 ### <a name="parameters"></a>매개 변수
 
-*flags*  
+*flags*<br/>
 하나 이상의 조합 [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) 열거형 값입니다.
 
-*entry*  
+*entry*<br/>
 에 대 한 포인터를 [CreatorMap](../windows/creatormap-structure.md) 매개 변수에 대 한 초기화 및 등록 정보를 포함 하는 *riid*합니다.
 
-*riid*  
+*riid*<br/>
 인터페이스 ID에 대 한 참조
 
-*ppFactory*  
+*ppFactory*<br/>
 이 작업이 완료 되 면 성공적으로 활성화 팩터리에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
