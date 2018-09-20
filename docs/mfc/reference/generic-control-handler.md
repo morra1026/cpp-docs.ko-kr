@@ -19,20 +19,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae941e7a59fe673dea6068c6ca6df5feb94db239
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 060bda1de088f3e1e84791601f176097f764c412
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372932"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46446428"
 ---
 # <a name="generic-control-handler"></a>제네릭 컨트롤 처리기
-다음 맵 항목에서는 함수 프로토타입의에 해당합니다.  
-  
-|맵 항목|함수 프로토타입|  
-|---------------|------------------------|  
-|ON_CONTROL ( \<wNotifyCode >, \<id >, \<memberFxn >)|afx_msg void memberFxn ();|  
-  
-## <a name="see-also"></a>참고 항목  
- [메시지 맵](../../mfc/reference/message-maps-mfc.md)
+
+다음 맵 항목 함수 프로토타입에 해당합니다.
+
+|맵 항목|함수 프로토타입|
+|---------------|------------------------|
+|ON_CONTROL ( \<wNotifyCode >, \<id >, \<memberFxn >)|afx_msg void memberFxn ();|
+
+## <a name="see-also"></a>참고 항목
+
+[메시지 맵](../../mfc/reference/message-maps-mfc.md)
 

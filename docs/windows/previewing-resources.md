@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 80d4256057cb268baf2c8750f6d781e7d7aba4db
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: bd5e273a07ed09f54b84d064011874533b55fb88
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314303"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46445830"
 ---
 # <a name="previewing-resources"></a>리소스 미리 보기
 
@@ -68,5 +68,5 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[방법: 프로젝트 외부에서 리소스 스크립트 파일 열기(독립 실행형)](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)  
+[방법: 프로젝트 외부에서 리소스 스크립트 파일 열기(독립 실행형)](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)<br/>
 [리소스 편집기](../windows/resource-editors.md)

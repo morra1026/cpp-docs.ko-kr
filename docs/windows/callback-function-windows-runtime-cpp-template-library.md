@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 57d1a3adc160323726bcdd31808cf82bc8da2e7f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 19bb77128eee9cc8af514e60730c3a39115695cc
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609256"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46426544"
 ---
 # <a name="callback-function-windows-runtime-c-template-library"></a>Callback 함수(Windows Runtime C++ 템플릿 라이브러리)
 
@@ -201,49 +201,49 @@ ComPtr<TDelegateInterface> Callback(
 
 ### <a name="parameters"></a>매개 변수
 
-*TDelegateInterface*  
+*TDelegateInterface*<br/>
 이벤트가 발생할 때 호출할 대리자의 인터페이스를 지정하는 템플릿 매개 변수입니다.
 
-*TCallback*  
+*TCallback*<br/>
 개체 및 해당 콜백 멤버 함수를 나타내는 개체 형식을 지정하는 템플릿 매개 변수입니다.
 
-*TCallbackObject*  
+*TCallbackObject*<br/>
 이벤트가 발생할 때 호출할 메서드가 메서드 함수인 개체를 지정하는 템플릿 매개 변수입니다.
 
-*TArg1*  
+*TArg1*<br/>
 첫 번째 콜백 메서드 인수의 형식을 지정하는 템플릿 매개 변수입니다.
 
-*TArg2*  
+*TArg2*<br/>
 두 번째 콜백 메서드 인수의 형식을 지정하는 템플릿 매개 변수입니다.
 
-*TArg3*  
+*TArg3*<br/>
 세 번째 콜백 메서드 인수의 형식을 지정하는 템플릿 매개 변수입니다.
 
-*TArg4*  
+*TArg4*<br/>
 네 번째 콜백 메서드 인수의 형식을 지정하는 템플릿 매개 변수입니다.
 
-*TArg5*  
+*TArg5*<br/>
 다섯 번째 콜백 메서드 인수의 형식을 지정하는 템플릿 매개 변수입니다.
 
-*TArg6*  
+*TArg6*<br/>
 여섯 번째 콜백 메서드 인수의 형식을 지정하는 템플릿 매개 변수입니다.
 
-*TArg7*  
+*TArg7*<br/>
 일곱 번째 콜백 메서드 인수의 형식을 지정하는 템플릿 매개 변수입니다.
 
-*TArg8*  
+*TArg8*<br/>
 여덟 번째 콜백 메서드 인수의 형식을 지정하는 템플릿 매개 변수입니다.
 
-*TArg9*  
+*TArg9*<br/>
 아홉 번째 콜백 메서드 인수의 형식을 지정하는 템플릿 매개 변수입니다.
 
-*콜백*  
+*콜백*<br/>
 콜백 개체 및 해당 멤버 함수를 나타내는 개체입니다.
 
-*object*  
+*object*<br/>
 이벤트가 발생할 때 해당 멤버 함수를 호출하는 개체입니다.
 
-*method*  
+*method*<br/>
 이벤트가 발생할 때 호출할 멤버 함수입니다.
 
 ## <a name="return-value"></a>반환 값

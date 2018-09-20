@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 59e748ef68d78f9cb77eb335f5c5cd44e058f0d4
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 1e0873b366c84e89b23ddbaa6c64f6b484f921e0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601158"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46446337"
 ---
 # <a name="weakreferenceresolve-method"></a>WeakReference::Resolve 메서드
 
@@ -39,10 +39,10 @@ STDMETHOD(Resolve)
 
 ### <a name="parameters"></a>매개 변수
 
-*riid*  
+*riid*<br/>
 인터페이스 ID입니다.
 
-*ppvObject*  
+*ppvObject*<br/>
 이 작업이 완료 될 때 강력한 참조 횟수가 0이 아닌 경우 현재 강력한 참조의 복사본입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -65,5 +65,5 @@ STDMETHOD(Resolve)
 
 ## <a name="see-also"></a>참고 항목
 
-[WeakReference 클래스1](../windows/weakreference-class1.md)  
+[WeakReference 클래스1](../windows/weakreference-class1.md)<br/>
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)
