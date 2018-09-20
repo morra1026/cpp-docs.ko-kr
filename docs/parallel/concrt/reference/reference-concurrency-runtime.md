@@ -463,14 +463,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d06bac8aef674472b817817fde4191f1d655365e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 575f21e03659f973a25b1ad2e7aae211f9dae187
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723231"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46412108"
 ---
 # <a name="reference-concurrency-runtime"></a>참조(동시성 런타임)
+
 이 섹션에서는 동시성 런타임에 대 한 참조 정보를 포함합니다.
 
 > [!Note]
@@ -478,7 +479,8 @@ ms.locfileid: "45723231"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[동시성 Namespace](concurrency-namespace.md) 동시성 네임 스페이스 클래스를 제공 하 고 동시성 런타임에서 c + + 용 동시 프로그래밍 프레임 워크에 대 한 액세스를 제공 하는 함수입니다. 자세한 내용은 [동시성 런타임](../concurrency-runtime.md)을 참조하세요.
+[concurrency 네임스페이스](concurrency-namespace.md)<br/>
+동시성 런타임에서 c + + 용 동시 프로그래밍 프레임 워크에 대 한 액세스를 제공 하는 함수 및 동시성 네임 스페이스 클래스를 제공 합니다. 자세한 내용은 [동시성 런타임](../concurrency-runtime.md)을 참조하세요.
 
 [std 네임 스페이스](std-namespace.md)
 

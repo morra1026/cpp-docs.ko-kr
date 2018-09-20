@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1f127b8435f934e5cf203de2aaa6f2d0c3a58d13
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6fc7accbad5633bd57d7fceb16f82edb82d80f4e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603072"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46422495"
 ---
 # <a name="weakreferencesetunknown-method"></a>WeakReference::SetUnknown 메서드
 
@@ -38,7 +38,7 @@ void SetUnknown(
 
 ### <a name="parameters"></a>매개 변수
 
-*unk*  
+*unk*<br/>
 에 대 한 포인터를 `IUnknown` 개체의 인터페이스입니다.
 
 ## <a name="remarks"></a>설명
@@ -53,5 +53,5 @@ void SetUnknown(
 
 ## <a name="see-also"></a>참고 항목
 
-[WeakReference 클래스](../windows/weakreference-class1.md)  
+[WeakReference 클래스](../windows/weakreference-class1.md)<br/>
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

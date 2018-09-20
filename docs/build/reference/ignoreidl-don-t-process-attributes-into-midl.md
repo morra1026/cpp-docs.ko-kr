@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7014440c3479016c89b774f9a80cc03fc4b5d4c3
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 9c06e06633e6d0a990c72ebb65a4bd999df45a55
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45708229"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46406674"
 ---
 # <a name="ignoreidl-don39t-process-attributes-into-midl"></a>/IGNOREIDL (Don&#39;t 프로세스 특성을 MIDL로)
 
@@ -54,7 +54,7 @@ ms.locfileid: "45708229"
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)<br/>
-[/IDLOUT (MIDL 출력 파일 이름 지정)](../../build/reference/idlout-name-midl-output-files.md)
-[/TLBOUT (이름입니다. TLB 파일)](../../build/reference/tlbout-name-dot-tlb-file.md)
-[/MIDL (MIDL 명령줄 옵션 지정)](../../build/reference/midl-specify-midl-command-line-options.md)
-[특성이 지정 된 프로그램 빌드](../../windows/building-an-attributed-program.md)
+[/IDLOUT(MIDL 출력 파일 이름 지정)](../../build/reference/idlout-name-midl-output-files.md)<br/>
+[/TLBOUT(.TLB 파일 이름 지정)](../../build/reference/tlbout-name-dot-tlb-file.md)<br/>
+[/MIDL(MIDL 명령줄 옵션 지정)](../../build/reference/midl-specify-midl-command-line-options.md)<br/>
+[특성을 사용하는 프로그램 빌드](../../windows/building-an-attributed-program.md)

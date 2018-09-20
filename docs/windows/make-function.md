@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5dab76460dcbbb70f55dac864292ad9a6f1fca99
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a8b02b51dca4ae3712274b2b011c1967e5006637
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607822"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46422404"
 ---
 # <a name="make-function"></a>Make 함수
 
@@ -174,61 +174,61 @@ ComPtr<T> Make();
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 사용자 지정 클래스에서 상속 되는 `WRL::RuntimeClass`합니다.
 
-*TArg1*  
+*TArg1*<br/>
 지정된 된 런타임 클래스에 전달 되는 인수 1의 형식입니다.
 
-*TArg2*  
+*TArg2*<br/>
 지정된 된 런타임 클래스에 전달 되는 2 인수 형식입니다.
 
-*TArg3*  
+*TArg3*<br/>
 지정된 된 런타임 클래스에 전달 되는 3 번째 인수의 형식입니다.
 
-*TArg4*  
+*TArg4*<br/>
 지정된 된 런타임 클래스에 전달 되는 4 번째 인수의 형식입니다.
 
-*TArg5*  
+*TArg5*<br/>
 지정된 된 런타임 클래스에 전달 되는 5 번째 인수의 형식입니다.
 
-*TArg6*  
+*TArg6*<br/>
 지정된 된 런타임 클래스에 전달 되는 6 번째 인수의 형식입니다.
 
-*TArg7*  
+*TArg7*<br/>
 지정된 된 런타임 클래스에 전달 되는 7 번째 인수의 형식입니다.
 
-*TArg8*  
+*TArg8*<br/>
 지정된 된 런타임 클래스에 전달 되는 8 번째 인수의 형식입니다.
 
-*TArg9*  
+*TArg9*<br/>
 지정된 된 런타임 클래스에 전달 되는 9 번째 인수의 형식입니다.
 
-*arg1*  
+*arg1*<br/>
 인수 1 지정된 된 런타임 클래스에 전달 되는입니다.
 
-*Arg2*  
+*Arg2*<br/>
 인수 2 지정된 된 런타임 클래스에 전달 되는입니다.
 
-*arg3*  
+*arg3*<br/>
 인수 3 지정된 된 런타임 클래스에 전달 되는입니다.
 
-*arg4*  
+*arg4*<br/>
 인수 4 지정된 된 런타임 클래스에 전달 되는입니다.
 
-*arg5*  
+*arg5*<br/>
 인수 5 지정된 된 런타임 클래스에 전달 되는입니다.
 
-*a r g 6*  
+*a r g 6*<br/>
 인수 6 지정된 된 런타임 클래스에 전달 되는입니다.
 
-*arg7*  
+*arg7*<br/>
 7 전달 된 인수를 지정 된 런타임 클래스입니다.
 
-*arg8*  
+*arg8*<br/>
 8 전달 된 인수를 지정 된 런타임 클래스입니다.
 
-*arg9*  
+*arg9*<br/>
 9 전달 된 인수를 지정 된 런타임 클래스입니다.
 
 ## <a name="return-value"></a>반환 값

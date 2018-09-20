@@ -22,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6fc8d8100786f78d516bb5f880e4238b7e3a2388
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d2dfcf61ced958519e7255bd241d3c0ea911824e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611866"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408923"
 ---
 # <a name="eventsource"></a>event_source
 
@@ -45,7 +45,7 @@ ms.locfileid: "42611866"
 
 ### <a name="parameters"></a>매개 변수
 
-*type*  
+*type*<br/>
 다음 값 중 하나의 열거형:
 
 - `native` - 관리되지 않는 C/C++ 코드용(관리되지 않는 클래스에 대한 기본값).
@@ -58,10 +58,10 @@ ms.locfileid: "42611866"
     #include <atlcom.h>
     ```
 
-*optimize*  
+*optimize*<br/>
 때 *형식* 됩니다 `native`를 지정할 수 있습니다 `optimize=size`는 4 바이트의 저장소 (minimum)가 모든 이벤트에 대 한 클래스에서 나타내기 위해 또는 `optimize=speed` (기본값) 4 임을 나타내려면 * (이벤트의 수) 바이트의 저장소입니다.
 
-*데코 레이트*  
+*데코 레이트*<br/>
 때 *형식* 됩니다 `native`를 지정할 수 있습니다 `decorate=false`병합 된 (.mrg) 파일에 확장된 된 이름이 바깥쪽 클래스 이름을 포함 하지 않아야 함을 나타내기 위해. [/Fx](../build/reference/fx-merge-injected-code.md) 로는 .mrg 파일을 생성할 수 있습니다. `decorate=false`를 기본값인 기본값인 병합된 된 파일의 정규화 된 형식 이름이 생성 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -88,9 +88,9 @@ ms.locfileid: "42611866"
 
 ## <a name="see-also"></a>참고 항목
 
-[컴파일러 특성](../windows/compiler-attributes.md)  
-[event_receiver](../windows/event-receiver.md)  
-[__event](../cpp/event.md)  
-[__hook](../cpp/hook.md)  
-[__unhook](../cpp/unhook.md)  
+[컴파일러 특성](../windows/compiler-attributes.md)<br/>
+[event_receiver](../windows/event-receiver.md)<br/>
+[__event](../cpp/event.md)<br/>
+[__hook](../cpp/hook.md)<br/>
+[__unhook](../cpp/unhook.md)<br/>
 [클래스 특성](../windows/class-attributes.md)  

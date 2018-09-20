@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b2336562abb82ae89bd2f6864d0678023a3ccf69
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 87516cf45a39602bea462b8e94f17d3ef64ad0eb
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600530"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46431621"
 ---
 # <a name="interfacelisthelper-structure"></a>InterfaceListHelper 구조체
 
@@ -53,34 +53,34 @@ struct InterfaceListHelper<T0, Nil, Nil, Nil, Nil, Nil, Nil, Nil, Nil>;
 
 ### <a name="parameters"></a>매개 변수
 
-*T0*  
+*T0*<br/>
 템플릿 매개 변수 0 필요 합니다.
 
-*T1*  
+*T1*<br/>
 템플릿 매개 변수 1에는 기본적으로 지정 되지 않았습니다.
 
-*T2*  
+*T2*<br/>
 템플릿 매개 변수 2는 기본적으로 지정 되지 않았습니다. 세 번째 템플릿 매개 변수입니다.
 
-*T3*  
+*T3*<br/>
 템플릿 매개 변수 3, 기본적으로 지정 되지 않았습니다.
 
-*T4*  
+*T4*<br/>
 템플릿 매개 변수 4, 기본적으로 지정 되지 않았습니다.
 
-*T5*  
+*T5*<br/>
 템플릿 매개 변수 5는 기본적으로 지정 되지 않았습니다.
 
-*T6*  
+*T6*<br/>
 템플릿 매개 변수 6, 기본적으로 지정 되지 않았습니다.
 
-*T7*  
+*T7*<br/>
 템플릿 매개 변수 7, 기본적으로 지정 되지 않았습니다.
 
-*T8*  
+*T8*<br/>
 템플릿 매개 변수 8, 기본적으로 지정 되지 않았습니다.
 
-*T9*  
+*T9*<br/>
 템플릿 매개 변수 9, 기본적으로 지정 되지 않았습니다.
 
 ## <a name="remarks"></a>설명

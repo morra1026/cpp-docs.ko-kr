@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 46b09b5cbe74849c3dc08e8faee3ee4ca645a55b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 13ce7d2a35245716adc70b9e84532ea7d1a4a440
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602936"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46432412"
 ---
 # <a name="delegate--c-component-extensions"></a>delegate(C++ 구성 요소 확장)
 
@@ -57,16 +57,16 @@ delegate-type-identifier
 
 ### <a name="parameters"></a>매개 변수
 
-*access*  
+*access*<br/>
 (선택 사항) 해당 되는 대리자의 접근성 **공개** (기본값) 또는 **개인**합니다. 함수 프로토타입을 사용 하 여 한정할 수도 있습니다는 **상수** 또는 **volatile** 키워드입니다.
 
-*반환 형식*  
+*반환 형식*<br/>
 함수 프로토타입의 반환 형식입니다.
 
-*대리자 형식 id*  
+*대리자 형식 id*<br/>
 선언 된 대리자 형식의 이름입니다.
 
-*parameters*  
+*parameters*<br/>
 (선택 사항) 형식 및 함수 프로토타입의 식별자입니다.
 
 ### <a name="remarks"></a>설명
@@ -91,10 +91,10 @@ function_declaration
 
 ### <a name="parameters"></a>매개 변수
 
-*access*  
+*access*<br/>
 (선택 사항) 어셈블리 외부에서 대리자의 내게 필요한 옵션은 공용 또는 개인 수 있습니다.  기본값은 private입니다.  클래스, 대리자는 접근성을 가질 수 있습니다.
 
-*function_declaration*  
+*function_declaration*<br/>
 대리자에 바인딩될 수 있는 함수의 서명입니다. 대리자의 반환 형식에는 관리 되는 형식일 수 있습니다. 상호 운용성을 위해 대리자의 반환 형식은 CLS 형식일 것이 좋습니다.
 
 바인딩되지 않은 대리자에서 첫 번째 매개 변수를 정의 하 *function_declaration* 의 형식이 되어야 합니다 **이** 개체에 대 한 포인터입니다.

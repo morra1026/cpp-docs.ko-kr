@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8e18f64d48b357ed691f42fc900f68c8e8054776
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 71ff4e3fdb80b48e306e543bdb683c3dd2b26ec3
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44317253"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46443334"
 ---
 # <a name="com-attributes"></a>COM 특성
 COM 특성에는 COM 및.NET Framework 공용 언어 런타임 개발의 다양 한 영역을 지 원하는 코드를 삽입 합니다. 이러한 영역 범위에서 사용자 지정 인터페이스 구현 및 지원을 기존 인터페이스의 스톡 속성, 메서드 및 이벤트를 지 원하는입니다. 또한 복합 및 ActiveX 컨트롤 구현을 위한 지원은 찾을 수 있습니다.
@@ -44,4 +44,5 @@ COM 특성에는 COM 및.NET Framework 공용 언어 런타임 개발의 다양 
 |[vi_progid](../windows/vi-progid.md)|컨트롤에 대 한 버전 독립 ProgID를 정의합니다.|
   
 ## <a name="see-also"></a>참고 항목
- [그룹별 특성](../windows/attributes-by-group.md)
+
+[그룹별 특성](../windows/attributes-by-group.md)

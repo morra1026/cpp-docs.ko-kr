@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6c2de62df47e46183c1169956a18ddc10822b22a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 99e82de06f64816521c47c78648108a9ae815279
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611923"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46443230"
 ---
 # <a name="dontusenewusemakeoperator-new-operator"></a>DontUseNewUseMake::operator 새 연산자
 
@@ -39,10 +39,10 @@ void* operator new(
 
 ### <a name="parameters"></a>매개 변수
 
-*__unnamed0*  
+*__unnamed0*<br/>
 할당할 메모리의 바이트 수를 지정 하는 명명 되지 않은 매개 변수입니다.
 
-*배치*  
+*배치*<br/>
 할당할 형식입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -61,5 +61,5 @@ void* operator new(
 
 ## <a name="see-also"></a>참고 항목
 
-[DontUseNewUseMake 클래스](../windows/dontusenewusemake-class.md)  
+[DontUseNewUseMake 클래스](../windows/dontusenewusemake-class.md)<br/>
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

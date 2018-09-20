@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b786bb41e9f0667ebbb81329b2f0977525d4ba96
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: cc36793eba9f2500020795ef9e88e63663d350c8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598064"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46402166"
 ---
 # <a name="implementshelpercasttounknown-method"></a>ImplementsHelper::CastToUnknown 메서드
 
@@ -50,5 +50,5 @@ IUnknown* CastToUnknown();
 
 ## <a name="see-also"></a>참고 항목
 
-[ImplementsHelper 구조체](../windows/implementshelper-structure.md)  
+[ImplementsHelper 구조체](../windows/implementshelper-structure.md)<br/>
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

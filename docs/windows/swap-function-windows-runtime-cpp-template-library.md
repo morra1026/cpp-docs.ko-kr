@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6b5273127b4f4329427f50c82f1bb15a4ad2634e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 512619381ebf44ebcd451484403ec27e1ca869b8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590211"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46437029"
 ---
 # <a name="swap-function-windows-runtime-c-template-library"></a>Swap 함수(Windows Runtime C++ 템플릿 라이브러리)
 
@@ -37,10 +37,10 @@ WRL_NOTHROW inline void Swap(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*  
+*left*<br/>
 첫 번째 인수입니다.
 
-*right*  
+*right*<br/>
 두 번째 인수입니다.
 
 ## <a name="return-value"></a>반환 값

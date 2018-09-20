@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a9d59ca1d404e56e7d85a8f0edfe653dc5692558
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7d1addd96456a33b30259182e4490df70335d0d3
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42584323"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408364"
 ---
 # <a name="invokehelperinvoke-method"></a>InvokeHelper::Invoke 메서드
 
@@ -65,31 +65,31 @@ STDMETHOD(
 
 ### <a name="parameters"></a>매개 변수
 
-*arg1*  
+*arg1*<br/>
 인수 1입니다.
 
-*Arg2*  
+*Arg2*<br/>
 인수 2입니다.
 
-*arg3*  
+*arg3*<br/>
 인수 3입니다.
 
-*arg4*  
+*arg4*<br/>
 인수 4입니다.
 
-*arg5*  
+*arg5*<br/>
 5 인수입니다.
 
-*a r g 6*  
+*a r g 6*<br/>
 인수 6입니다.
 
-*arg7*  
+*arg7*<br/>
 7 인수입니다.
 
-*arg8*  
+*arg8*<br/>
 8 인수입니다.
 
-*arg9*  
+*arg9*<br/>
 9 인수입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -108,5 +108,5 @@ STDMETHOD(
 
 ## <a name="see-also"></a>참고 항목
 
-[InvokeHelper 구조체](../windows/invokehelper-structure.md)  
+[InvokeHelper 구조체](../windows/invokehelper-structure.md)<br/>
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

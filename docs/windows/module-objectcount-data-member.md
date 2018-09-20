@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7733b4f642db9cf281ac78aca7dc90ebcda35562
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 23382ff15a88e36e2015518f76df78be6fb85c09
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603910"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46442684"
 ---
 # <a name="moduleobjectcount-data-member"></a>Module::objectCount_ 데이터 멤버
 
@@ -39,4 +39,5 @@ volatile long objectCount_;
 **네임스페이스:** Microsoft::WRL
 
 ## <a name="see-also"></a>참고 항목
+
 [Module 클래스](../windows/module-class.md)

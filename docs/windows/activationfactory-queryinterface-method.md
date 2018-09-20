@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8783d30aa018e0b29705c4c6bdda3b9e2a47af4a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b4fa728039010ec30748773a51579ad8aabfac0f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613234"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46398783"
 ---
 # <a name="activationfactoryqueryinterface-method"></a>ActivationFactory::QueryInterface 메서드
 
@@ -38,10 +38,10 @@ STDMETHOD(
 
 ### <a name="parameters"></a>매개 변수
 
-*riid*  
+*riid*<br/>
 인터페이스 ID입니다.
 
-*ppvObject*  
+*ppvObject*<br/>
 이 작업이 완료 되 면, 매개 변수에서 지정 된 인터페이스에 대 한 포인터 *riid*합니다.
 
 ## <a name="return-value"></a>반환 값
