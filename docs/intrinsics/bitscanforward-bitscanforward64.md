@@ -21,98 +21,103 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e563e7240c1797bf863ee0762f923e91a6f05bb0
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ad699dc5e209dfae01bdaefdc8184c4cd2149aae
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45699892"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46379686"
 ---
 # <a name="bitscanforward-bitscanforward64"></a>_BitScanForward, _BitScanForward64
-**Microsoft 전용**  
-  
- LSB(최하위 비트)에서 MSB(최상위 비트)로의 마스크 데이터에서 설정 비트(1)를 검색합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-unsigned char _BitScanForward(  
-   unsigned long * Index,  
-   unsigned long Mask  
-);  
-unsigned char _BitScanForward64(  
-   unsigned long * Index,  
-   unsigned __int64 Mask  
-);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+
+**Microsoft 전용**
+
+LSB(최하위 비트)에서 MSB(최상위 비트)로의 마스크 데이터에서 설정 비트(1)를 검색합니다.
+
+## <a name="syntax"></a>구문
+
+```
+unsigned char _BitScanForward(
+   unsigned long * Index,
+   unsigned long Mask
+);
+unsigned char _BitScanForward64(
+   unsigned long * Index,
+   unsigned __int64 Mask
+);
+```
+
+#### <a name="parameters"></a>매개 변수
+
 *Index*<br/>
-[out] 찾은 첫 번째 설정 비트 (1)의 비트 위치를 사용 하 여 로드 합니다.  
-  
+[out] 찾은 첫 번째 설정 비트 (1)의 비트 위치를 사용 하 여 로드 합니다.
+
 *마스크*<br/>
-[in] 검색할 32 비트 또는 64 비트 값입니다.  
-  
-## <a name="return-value"></a>반환 값  
- 마스크가 0이면 0이고 그렇지 않으면 0이 아닙니다.  
-  
-## <a name="remarks"></a>설명  
- 설정 비트가 발견되면 첫 번째로 발견된 설정 비트의 비트 위치가 첫 번째 매개 변수에서 반환됩니다. 설정 비트가 발견되지 않으면 0이 반환되고 그렇지 않으면 1이 반환됩니다.  
-  
-## <a name="requirements"></a>요구 사항  
-  
-|내장 함수|아키텍처|  
-|---------------|------------------|  
-|`_BitScanForward`|x86, ARM, x64|  
-|`_BitScanForward64`|ARM, x64|  
-  
- **헤더 파일** \<intrin.h >  
-  
-## <a name="example"></a>예제  
-  
-```  
-// BitScanForward.cpp  
-// compile with: /EHsc  
-#include <iostream>  
-#include <intrin.h>  
-using namespace std;  
-  
-#pragma intrinsic(_BitScanForward)  
-  
-int main()  
-{  
-   unsigned long mask = 0x1000;  
-   unsigned long index;  
-   unsigned char isNonzero;  
-  
-   cout << "Enter a positive integer as the mask: " << flush;  
-   cin >> mask;  
-   isNonzero = _BitScanForward(&index, mask);  
-   if (isNonzero)  
-   {  
-      cout << "Mask: " << mask << " Index: " << index << endl;  
-   }  
-   else  
-   {  
-      cout << "No set bits found.  Mask is zero." << endl;  
-   }  
-}  
-```  
-  
-## <a name="input"></a>입력  
-  
-```  
-12  
-```  
-  
-## <a name="sample-output"></a>샘플 출력  
-  
-```  
-Enter a positive integer as the mask:   
-Mask: 12 Index: 2  
-```  
-  
-**Microsoft 전용 종료**  
-  
-## <a name="see-also"></a>참고 항목  
- [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)
+[in] 검색할 32 비트 또는 64 비트 값입니다.
+
+## <a name="return-value"></a>반환 값
+
+마스크가 0이면 0이고 그렇지 않으면 0이 아닙니다.
+
+## <a name="remarks"></a>설명
+
+설정 비트가 발견되면 첫 번째로 발견된 설정 비트의 비트 위치가 첫 번째 매개 변수에서 반환됩니다. 설정 비트가 발견되지 않으면 0이 반환되고 그렇지 않으면 1이 반환됩니다.
+
+## <a name="requirements"></a>요구 사항
+
+|내장 함수|아키텍처|
+|---------------|------------------|
+|`_BitScanForward`|x86, ARM, x64|
+|`_BitScanForward64`|ARM, x64|
+
+**헤더 파일** \<intrin.h >
+
+## <a name="example"></a>예제
+
+```
+// BitScanForward.cpp
+// compile with: /EHsc
+#include <iostream>
+#include <intrin.h>
+using namespace std;
+
+#pragma intrinsic(_BitScanForward)
+
+int main()
+{
+   unsigned long mask = 0x1000;
+   unsigned long index;
+   unsigned char isNonzero;
+
+   cout << "Enter a positive integer as the mask: " << flush;
+   cin >> mask;
+   isNonzero = _BitScanForward(&index, mask);
+   if (isNonzero)
+   {
+      cout << "Mask: " << mask << " Index: " << index << endl;
+   }
+   else
+   {
+      cout << "No set bits found.  Mask is zero." << endl;
+   }
+}
+```
+
+## <a name="input"></a>입력
+
+```
+12
+```
+
+## <a name="sample-output"></a>샘플 출력
+
+```
+Enter a positive integer as the mask:
+Mask: 12 Index: 2
+```
+
+**Microsoft 전용 종료**
+
+## <a name="see-also"></a>참고 항목
+
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

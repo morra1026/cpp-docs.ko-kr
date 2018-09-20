@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b7e4976065d32a2f88550e5f89fc464da2dbc00e
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: ae58ae7cf09257b399fd21d7c34890b829394b98
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316707"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430594"
 ---
 # <a name="colors-window-image-editor-for-icons"></a>색상 창(아이콘에 대한 이미지 편집기)
 
@@ -50,8 +50,8 @@ ms.locfileid: "44316707"
 
 ## <a name="see-also"></a>참고 항목
 
-[색 창 표시 또는 숨기기](../windows/displaying-or-hiding-the-colors-window-image-editor-for-icons.md)  
-[장치 이미지에서 투명한 영역이나 반전 영역 만들기](../windows/creating-transparent-or-inverse-regions-in-device-images.md)  
-[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)  
-[사용자 지정 색 선택 대화 상자](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md)  
+[색 창 표시 또는 숨기기](../windows/displaying-or-hiding-the-colors-window-image-editor-for-icons.md)<br/>
+[장치 이미지에서 투명한 영역이나 반전 영역 만들기](../windows/creating-transparent-or-inverse-regions-in-device-images.md)<br/>
+[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+[사용자 지정 색 선택 대화 상자](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md)<br/>
 [아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)

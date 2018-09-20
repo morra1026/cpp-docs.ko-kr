@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 20072a5196ce476cf178f7c6e1071bd495202062
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: a4350492921c59d4bda4ead37933e4c2242b7df9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42539037"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46411159"
 ---
 # <a name="renamesearchnamespace"></a>rename_search_namespace
 **C + + 전용**  
@@ -44,5 +44,5 @@ rename_search_namespace("NewName")
   
 ## <a name="see-also"></a>참고 항목  
  
-[#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
+[#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import 지시문](../preprocessor/hash-import-directive-cpp.md)

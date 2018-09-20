@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 32970c9d30e1804071190ee5a57c42fd4b6334af
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: c3964ce5257a6b2398571c9ed3ba5792b5bd9cca
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677253"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46384483"
 ---
 # <a name="iidppvargshelper-function"></a>IID_PPV_ARGS_Helper 함수
 
@@ -42,10 +42,10 @@ void** IID_PPV_ARGS_Helper(
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 인수의 형식은 *pp*합니다.
 
-*pp*  
+*pp*<br/>
 이중 간접 포인터입니다.
 
 ## <a name="return-value"></a>반환 값

@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 047f74a48b2c3f378b81868721b16ecdd22a6379
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 0f3139332c07652b9fbca536d7c21ba4e10ef7dc
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42540114"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46414357"
 ---
 # <a name="cpuid-cpuidex"></a>__cpuid, __cpuidex
 
@@ -83,7 +83,7 @@ EAX, EBX, ECX 및 EDX에서 CPU의 지원되는 기능에 대해 반환되는 �
 
 일부 프로세서에서는 확장 함수 CPUID 정보를 지원합니다. 이 지원 되는 경우 *function_id* 0x80000000 값을 사용 하 여 정보를 반환할 수 있습니다. 의미 있는 허용 되는 최대값을 확인 하려면 설정 *function_id* 를 0x80000000입니다. 최대값 *function_id* 지원 확장된 함수를 쓸 *cpuInfo*[0]입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 예제에서는 `__cpuid` 및 `__cpuidex` 내장 함수를 통해 제공되는 일부 정보를 보여 줍니다. 앱은 현재 프로세서가 지원하는 명령 집합 확장을 나열합니다. 출력에는 특정 프로세서에 대해 반환될 수 있는 결과가 표시됩니다.
 
@@ -404,7 +404,6 @@ SYSCALL supported
 TBM not supported
 XOP not supported
 XSAVE supported
-
 ```
 
 **Microsoft 전용 종료**

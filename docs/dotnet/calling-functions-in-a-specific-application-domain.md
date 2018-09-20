@@ -16,18 +16,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: fc6765e7a96b2d2775d1dd729a43e89cec876e19
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 269225967ff63e98c1efe8a4ff38cd980d3485f7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33104908"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46409768"
 ---
 # <a name="calling-functions-in-a-specific-application-domain"></a>특정 응용 프로그램 도메인에서 함수 호출
-특정 응용 프로그램 도메인에서 함수 호출을 지원 합니다.  
-  
-## <a name="in-this-section"></a>섹션 내용  
- [call_in_appdomain 함수](../dotnet/call-in-appdomain-function.md)  
-  
-## <a name="see-also"></a>참고 항목  
- [C++ 지원 라이브러리](../dotnet/cpp-support-library.md)
+
+특정 응용 프로그램 도메인에서 함수 호출을 지원 합니다.
+
+## <a name="in-this-section"></a>섹션 내용
+
+[call_in_appdomain 함수](../dotnet/call-in-appdomain-function.md)
+
+## <a name="see-also"></a>참고 항목
+
+[C++ 지원 라이브러리](../dotnet/cpp-support-library.md)

@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c36f898c005a989a7be78e436b560fe9a0536b57
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 3154f2db3c95154c425b116e05ec1b47096e33ff
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45715067"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46383560"
 ---
 # <a name="source-charset-set-source-character-set"></a>/source-charset (소스 문자 집합 설정)
 
@@ -67,6 +67,6 @@ Visual Studio는 기본적으로 인지 하는 경우 소스 파일 인코딩된
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
-[(실행 문자 집합 설정) /execution-charset](../../build/reference/execution-charset-set-execution-character-set.md)
-[/utf-8 (소스 및 실행 문자 집합을 u t F-8)](../../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)
-[/validate-charset (호환에 대 한 유효성 검사 문자)](../../build/reference/validate-charset-validate-for-compatible-characters.md)
+[/execution-charset (실행 문자 집합 설정)](../../build/reference/execution-charset-set-execution-character-set.md)<br/>
+[/utf-8(소스 및 실행 파일 문자 집합을 UTF-8로 설정)](../../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)<br/>
+[/validate-charset(호환 문자에 대한 유효성 검사)](../../build/reference/validate-charset-validate-for-compatible-characters.md)

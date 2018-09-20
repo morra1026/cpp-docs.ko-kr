@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8efebf67d87decef1fb6e53f2efa42acc9ac487c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4f8ef724c78bdc61ef470199fbb5e956e374493f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46068522"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46405256"
 ---
 # <a name="agileeventsource-class"></a>AgileEventSource 클래스
 
@@ -83,10 +83,10 @@ HRESULT Add(
 
 ### <a name="parameters"></a>매개 변수
 
-*delegateInterface*  
+*delegateInterface*<br/>
 이벤트 처리기를 나타내는 대리자 개체에 대 한 인터페이스입니다.
 
-*token*  
+*token*<br/>
 이 작업이 완료 될 때 이벤트를 나타내는 핸들입니다. 이 토큰을 사용 하 여 매개 변수로 `Remove()` 이벤트 처리기를 삭제 하는 방법입니다.
 
 ### <a name="return-value"></a>반환 값

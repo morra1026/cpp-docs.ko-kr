@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8a1a0b16ebee0ebac141d5c1675d7ff7560b374b
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: c3bbcc774115311cd4ed0f302e4d9812ecfc6505
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318215"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46422267"
 ---
 # <a name="symbols-resource-identifiers-c"></a>기호: 리소스 식별자 (c + +)
 
@@ -75,6 +75,6 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[방법: 리소스에서 기호 검색](../windows/how-to-search-for-symbols-in-resources.md)  
-[리소스 편집기](../windows/resource-editors.md)  
+[방법: 리소스에서 기호 검색](../windows/how-to-search-for-symbols-in-resources.md)<br/>
+[리소스 편집기](../windows/resource-editors.md)<br/>
 [리소스 파일](../windows/resource-files-visual-studio.md)

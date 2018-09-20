@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d51bbad058766af6e5e2e75f17866403ba588cd3
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 3ca2cb8cdc748abcac61bd548491187095b71a3f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602702"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46415319"
 ---
 # <a name="comptrrefbase-class"></a>ComPtrRefBase 클래스
 
@@ -39,7 +39,7 @@ class ComPtrRefBase;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 A [ComPtr\<T >](../windows/comptr-class.md) 형식 또는 형식에서 파생 하 여이 나타내는 인터페이스 뿐만 아니라는 **ComPtr**합니다.
 
 ## <a name="remarks"></a>설명
@@ -63,7 +63,7 @@ A [ComPtr\<T >](../windows/comptr-class.md) 형식 또는 형식에서 파생 �
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[ComPtrRefBase::ptr_ 데이터 멤버](../windows/comptrrefbase-ptr-data-member.md)|현재 템플릿 매개 변수로 지정 된 형식에 대 한 포인터입니다.|
 

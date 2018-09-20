@@ -16,25 +16,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab7d4f434bf958c3bf47dc1f91101d35cf04add7
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 12de4065774c4813eeb10fab902551db14d10d3a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36954961"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46420844"
 ---
 # <a name="working-with-a-tab-control"></a>탭 컨트롤 사용
-탭 컨트롤을 사용 하는 가장 쉬운 방법은 ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) 대화 상자 편집기와 대화 상자 템플릿 리소스를 추가 하는 것입니다. 탭 컨트롤 단독으로 사용할 수도 있습니다. MFC 호출 `InitCommonControls` 드립니다. 주요 작업은 다음과 같습니다.  
-  
--   [탭 컨트롤 만들기](../mfc/creating-the-tab-control.md)  
-  
--   [탭 컨트롤에 탭 추가](../mfc/adding-tabs-to-a-tab-control.md)  
-  
--   [탭 컨트롤 알림 메시지 처리](../mfc/processing-tab-control-notification-messages.md)  
-  
- 탭 컨트롤 개체는 부모 뷰 또는 대화 상자 클래스에 포함 된 경우 부모 소멸 될 때 컨트롤이 소멸 됩니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [CTabCtrl 사용](../mfc/using-ctabctrl.md)   
- [컨트롤](../mfc/controls-mfc.md)
+
+탭 컨트롤을 사용 하는 가장 쉬운 방법은 ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) 대화 상자 편집기를 사용 하 여 대화 상자 템플릿 리소스를 추가 하는 것입니다. 또한 자체적으로 하는 tab 컨트롤을 사용할 수 있습니다. MFC 호출 `InitCommonControls` 있습니다. 키 작업은 다음과 같습니다.
+
+- [탭 컨트롤 만들기](../mfc/creating-the-tab-control.md)
+
+- [탭 컨트롤에 탭 추가](../mfc/adding-tabs-to-a-tab-control.md)
+
+- [탭 컨트롤 알림 메시지 처리](../mfc/processing-tab-control-notification-messages.md)
+
+탭 컨트롤 개체를 부모 뷰 또는 대화 상자 클래스에 포함 되어 있는 경우 컨트롤은 부모 소멸 될 때 소멸 됩니다.
+
+## <a name="see-also"></a>참고 항목
+
+[CTabCtrl 사용](../mfc/using-ctabctrl.md)<br/>
+[컨트롤](../mfc/controls-mfc.md)
 

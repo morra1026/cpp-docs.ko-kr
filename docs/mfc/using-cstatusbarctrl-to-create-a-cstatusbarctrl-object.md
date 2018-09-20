@@ -17,31 +17,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb378bba1505f8bbc3739c070d52abe9ef4f8afc
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 3c68603eff0393d76af4e0617548e5bf1dd4aa63
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36953829"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46413694"
 ---
 # <a name="using-cstatusbarctrl-to-create-a-cstatusbarctrl-object"></a>CStatusBarCtrl을 사용하여 CStatusBarCtrl 개체 만들기
-일반적인 사용의 예로 [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md):  
-  
-### <a name="to-use-a-status-bar-control-with-parts"></a>부분과 상태 표시줄 컨트롤을 사용 하려면  
-  
-1.  `CStatusBarCtrl` 개체를 생성합니다.  
-  
-2.  호출 [SetMinHeight](../mfc/reference/cstatusbarctrl-class.md#setminheight) 상태 표시줄 컨트롤의 최소 높이 설정 하려면 그리기 영역입니다.  
-  
-3.  호출 [SetBkColor](../mfc/reference/cstatusbarctrl-class.md#setbkcolor) 상태 표시줄 컨트롤의 배경색을 설정 합니다.  
-  
-4.  호출 [SetParts](../mfc/reference/cstatusbarctrl-class.md#setparts) 상태 표시줄 컨트롤, 각 파트의 오른쪽 가장자리의 좌표에에서 파트 수를 설정할 수 있습니다.  
-  
-5.  호출 [SetText](../mfc/reference/cstatusbarctrl-class.md#settext) 상태 표시줄 컨트롤의 지정된 된 부분에서 텍스트를 설정 합니다. 메시지는 컨트롤이 다음 WM_PAINT 메시지를 받을 때 새 텍스트를 표시 하도록 변경 된 컨트롤의 부분을 무효화 합니다.  
-  
- 일부 경우 상태 표시줄 텍스트의 줄을 표시할지만 필요 합니다. 이 경우에 대 한 호출을 확인 [SetSimple](../mfc/reference/cstatusbarctrl-class.md#setsimple)합니다. 한 줄 텍스트를 표시 하는 "단순" 모드로 상태 표시줄 컨트롤을 추가 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [CStatusBarCtrl 사용](../mfc/using-cstatusbarctrl.md)   
- [컨트롤](../mfc/controls-mfc.md)
+
+일반적인 사용 예로 [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md):
+
+### <a name="to-use-a-status-bar-control-with-parts"></a>파트를 사용 하 여 상태 표시줄 컨트롤을 사용 하려면
+
+1. `CStatusBarCtrl` 개체를 생성합니다.
+
+1. 호출 [SetMinHeight](../mfc/reference/cstatusbarctrl-class.md#setminheight) 의 그리기 영역 상태 표시줄 컨트롤의 최소 높이 설정 하려는 경우.
+
+1. 호출 [SetBkColor](../mfc/reference/cstatusbarctrl-class.md#setbkcolor) 상태 표시줄 컨트롤의 배경색을 설정 합니다.
+
+1. 호출 [SetParts](../mfc/reference/cstatusbarctrl-class.md#setparts) 상태 표시줄 컨트롤 및 각 파트의 오른쪽 가장자리의 좌표에에서 파트 수를 설정 합니다.
+
+1. 호출 [SetText](../mfc/reference/cstatusbarctrl-class.md#settext) 상태 표시줄 컨트롤의 특정된 부분에서 텍스트를 설정 합니다. 컨트롤은 다음 WM_PAINT 메시지를 받을 경우 새 텍스트를 표시 하도록 변경 된 컨트롤의 부분을 무효화 하는 메시지입니다.
+
+일부 경우 상태 표시줄 텍스트의 줄에 표시할만 해야 합니다. 이 경우에 호출할 [SetSimple](../mfc/reference/cstatusbarctrl-class.md#setsimple)합니다. 이 상태 표시줄 컨트롤을 한 줄 텍스트를 표시 하는 "단순" 모드를 넣습니다.
+
+## <a name="see-also"></a>참고 항목
+
+[CStatusBarCtrl 사용](../mfc/using-cstatusbarctrl.md)<br/>
+[컨트롤](../mfc/controls-mfc.md)
 

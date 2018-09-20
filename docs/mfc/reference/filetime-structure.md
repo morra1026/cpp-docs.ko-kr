@@ -16,36 +16,40 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0d1128442300d3f6fc153733be8b23b9d69444d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4377daa0b8a1420e4f1b5afe1f36fa0fd18d581d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33375884"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46384600"
 ---
 # <a name="filetime-structure"></a>FILETIME 구조체
-`FILETIME` 구조는 1601 년 1 월 1 일 이후 100 나노초 간격의 수를 나타내는 64 비트 값입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-typedef struct _FILETIME {  
-    DWORD dwLowDateTime;   /* low 32 bits */  
-    DWORD dwHighDateTime;  /* high 32 bits */  
-} FILETIME, *PFILETIME, *LPFILETIME;  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
- *dwLowDateTime*  
- 저점을 파일 시간의 32 비트를 지정합니다.  
-  
- *dwHighDateTime*  
- 높은 32 비트 파일 시간을 지정합니다.  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** windef.h  
-  
-## <a name="see-also"></a>참고 항목  
- [구조체, 스타일, 콜백 및 메시지 맵](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CTime::CTime](../../atl-mfc-shared/reference/ctime-class.md#ctime)
+
+`FILETIME` 구조는 1601 년 1 월 1 일 이후 100 나노초 간격의 수를 나타내는 64 비트 값입니다.
+
+## <a name="syntax"></a>구문
+
+```
+typedef struct _FILETIME {
+    DWORD dwLowDateTime;   /* low 32 bits */
+    DWORD dwHighDateTime;  /* high 32 bits */
+} FILETIME, *PFILETIME, *LPFILETIME;
+```
+
+#### <a name="parameters"></a>매개 변수
+
+*dwLowDateTime*<br/>
+낮은 파일의 32 비트를 지정합니다.
+
+*dwHighDateTime*<br/>
+높은 파일의 32 비트를 지정합니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** windef.h
+
+## <a name="see-also"></a>참고 항목
+
+[구조체, 스타일, 콜백 및 메시지 맵](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
+[CTime::CTime](../../atl-mfc-shared/reference/ctime-class.md#ctime)
 

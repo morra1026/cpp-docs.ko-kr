@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6972d76127bccf839c7778e9050e11ec10b6ac2f
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 1e52d78de0026fa4a589877ee0a591da26107fde
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315251"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391542"
 ---
 # <a name="how-to-open-a-resource-script-file-outside-of-a-c-project-standalone"></a>방법: c + + 프로젝트 (독립 실행형) 외부의 리소스 스크립트 파일 열기
 
@@ -74,5 +74,5 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[리소스 파일](../windows/resource-files-visual-studio.md)  
+[리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 [리소스 편집기](../windows/resource-editors.md)

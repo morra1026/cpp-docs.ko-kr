@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5d21348d9c252fbcd3024ca6531671979d8834eb
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 138921cfb635125210e5f5bf9305c91243c4489c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605820"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46387226"
 ---
 # <a name="implements-c"></a>implements(C++)
 
@@ -39,10 +39,10 @@ IDL coclass의 구성원으로 강제 적용 되는 디스패치 인터페이스
 
 ### <a name="parameters"></a>매개 변수
 
-*interfaces*  
+*interfaces*<br/>
 쉼표로 구분한 목록 IDL coclass 소속 될 인터페이스입니다. 단일 인터페이스를 지정 하는 간단한 메서드는 **구현 (** *interface_name* **)** 합니다.
 
-*dispinterfaces*  
+*dispinterfaces*<br/>
 쉼표로 구분한 목록 IDL coclass 소속 될 dispinterface입니다. 단일 dispinterface를 지정 하는 간단한 메서드는 **구현 (dispinterface =** *dispinterface_name* **)** 합니다.
 
 ## <a name="remarks"></a>설명
@@ -62,7 +62,7 @@ IDL coclass의 구성원으로 강제 적용 되는 디스패치 인터페이스
 
 자세한 내용은 [특성 컨텍스트](../windows/attribute-contexts.md)를 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제는 세 부분으로 이루어져:.idl 파일 및 해당 연결 된.h 파일과 c + + 파일입니다.
 
@@ -115,7 +115,7 @@ library odod
 }
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 및 다음.h 파일 컴파일러에 사용 가능 하도록 해야 합니다.
 
@@ -433,7 +433,7 @@ CBar;
 #endif
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 를 구현 하지 않고 다음 프로그램에서 `IBar1`, `IBar2`, 및 `ISna` 에 위치 하지 것입니다는 `coclass` 생성된 된 IDL에서.
 
@@ -558,5 +558,5 @@ public:
 
 ## <a name="see-also"></a>참고 항목
 
-[컴파일러 특성](../windows/compiler-attributes.md)  
+[컴파일러 특성](../windows/compiler-attributes.md)<br/>
 [클래스 특성](../windows/class-attributes.md)  

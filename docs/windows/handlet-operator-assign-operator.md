@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cf539082ef88abb5fb27f09d92b73403dc2d03a5
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 4c6aeca188f51f35c739c32f5290aac011781b41
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611344"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46396898"
 ---
 # <a name="handletoperator-operator"></a>HandleT::operator= 연산자
 
@@ -38,7 +38,7 @@ HandleT& operator=(
 
 ### <a name="parameters"></a>매개 변수
 
-*h*  
+*h*<br/>
 핸들에 rvalue 참조입니다.
 
 ## <a name="return-value"></a>반환 값

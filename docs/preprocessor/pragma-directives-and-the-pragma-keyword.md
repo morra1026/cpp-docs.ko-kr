@@ -23,12 +23,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76a29a7ae4734e5d1f1930d5309163d1e1519aa4
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: f195a553c29c8a1cd0ef57f82c9f57a1f3672048
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42539279"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46405296"
 ---
 # <a name="pragma-directives-and-the-pragma-keyword"></a>Pragma 지시문 및 __Pragma 키워드
 Pragma 지시문이 컴퓨터 또는 운영 체제 관련 컴파일러 기능을 지정합니다. 합니다 **__pragma** Microsoft 컴파일러에만 해당 되는 키워드를 매크로 정의 안에 pragma 지시문을 코드에 있습니다.  
@@ -117,6 +117,6 @@ return _hr; \
   
 ## <a name="see-also"></a>참고 항목  
  
-[C/c + + 전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)   
-[C Pragma](../c-language/c-pragmas.md)   
+[ 전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
+[C Pragma](../c-language/c-pragmas.md)<br/>
 [키워드](../cpp/keywords-cpp.md)

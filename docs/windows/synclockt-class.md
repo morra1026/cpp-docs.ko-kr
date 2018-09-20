@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e8589c43d49709842a745464d2727860ccd2c1e2
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d557b7ee6e6a0ae627ec7cc9a6b40b5b9dbb872c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609679"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46379569"
 ---
 # <a name="synclockt-class"></a>SyncLockT 클래스
 
@@ -39,7 +39,7 @@ class SyncLockT;
 
 ### <a name="parameters"></a>매개 변수
 
-*SyncTraits*  
+*SyncTraits*<br/>
 리소스의 소유권을 가져올 수 있는 형식입니다.
 
 ## <a name="remarks"></a>설명
@@ -72,7 +72,7 @@ class SyncLockT;
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[SyncLockT::sync_ 데이터 멤버](../windows/synclockt-sync-data-member.md)|표시 되는 기본 리소스를 보유 합니다 **SyncLockT** 클래스입니다.|
 
@@ -88,5 +88,5 @@ class SyncLockT;
 
 ## <a name="see-also"></a>참고 항목
 
-[Microsoft::WRL::Wrappers::Details 네임스페이스](../windows/microsoft-wrl-wrappers-details-namespace.md)  
+[Microsoft::WRL::Wrappers::Details 네임스페이스](../windows/microsoft-wrl-wrappers-details-namespace.md)<br/>
 [SRWLock 클래스](../windows/srwlock-class.md)

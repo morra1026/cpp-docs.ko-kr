@@ -19,22 +19,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2398f1e775dfa8b9331a4abc0137207c85531aff
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0804397888d64ac5b6cab9a60f9912b27358bc43
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385072"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46373323"
 ---
 # <a name="root-class-cobject"></a>루트 클래스: CObject
-대부분의 Microsoft Foundation 클래스 (MFC) 라이브러리의 클래스는 클래스 계층의 루트에 단일 기본 클래스에서 파생 됩니다. `CObject` 다양 한 오버 헤드가 매우 낮으므로와 여기에서 파생 된 모든 클래스에 유용한 기능을 제공 합니다. 에 대 한 자세한 내용은 `CObject` 참조의 기능 및 [CObject 사용 하 여](../mfc/using-cobject.md)합니다.  
-  
- [CObject](../mfc/reference/cobject-class.md)  
- 대부분의 MFC 클래스의 최종 기본 클래스입니다. 데이터를 직렬화 하는 작업 및 클래스에 대 한 런타임 정보 가져오기를 지원 합니다.  
-  
- [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md)  
- 런타임 시 개체의 정확한 클래스를 결정 하는 데 사용 하는 구조입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [클래스 개요](../mfc/class-library-overview.md)
+
+대부분의 Microsoft Foundation 클래스 (MFC) 라이브러리의 클래스는 클래스 계층 구조의 루트에 있는 하나의 기본 클래스에서 파생 됩니다. `CObject` 다양 한 매우 낮은 오버 헤드로 파생 된 모든 클래스에 유용한 기능을 제공 합니다. 에 대 한 자세한 내용은 `CObject` 해당 기능을 살펴보고 [사용 하 여 CObject](../mfc/using-cobject.md)합니다.
+
+[CObject](../mfc/reference/cobject-class.md)<br/>
+대부분의 MFC 클래스의 궁극적인 기본 클래스입니다. 데이터를 직렬화 및 클래스에 대 한 런타임 정보 가져오기를 지원 합니다.
+
+[CRuntimeClass](../mfc/reference/cruntimeclass-structure.md)<br/>
+런타임 시 개체의 정확한 클래스를 확인 하는 데 사용 하는 구조체입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[클래스 개요](../mfc/class-library-overview.md)
 

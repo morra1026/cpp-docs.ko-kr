@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f1390259838302a56e58397afa79fa8c458b939
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 2da1b645e85542631ce3e656ccaebdfbccf01137
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710335"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46397901"
 ---
 # <a name="walkthrough-compile-a-c-program-on-the-command-line"></a>연습: 명령줄에서 C 프로그램 컴파일
 
@@ -169,7 +169,7 @@ Visual c + + C 컴파일러는 ISO C99 표준을 일반적으로 호환 되지�
 
 ## <a name="see-also"></a>참고자료
 
-[연습: 표준 c + + 프로그램 (c + +) 만들기](../windows/walkthrough-creating-a-standard-cpp-program-cpp.md)
-[C 언어 참조](../c-language/c-language-reference.md)<br/>
+[연습: 표준 C++ 프로그램 만들기(C++)](../windows/walkthrough-creating-a-standard-cpp-program-cpp.md)<br/>
+[C# 언어 참조](../c-language/c-language-reference.md)<br/>
 [C/C++ 프로그램 빌드](../build/building-c-cpp-programs.md)<br/>
 [호환성](../c-runtime-library/compatibility.md)

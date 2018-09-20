@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5d395053231f54570e1bf86ba79f6237b89681fc
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 1c44223dad2ac4d6306bf3896cd8ec7be84a5a2b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315550"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46407766"
 ---
 # <a name="stand-alone-attributes"></a>독립 실행형 특성
 독립 실행형 특성을 c + + 키워드에서 작동 하지 않습니다 하지만 코드 줄에 비슷합니다. 독립 실행형 특성 문은 줄의 끝에 세미콜론이 필요합니다.
@@ -45,4 +45,5 @@ ms.locfileid: "44315550"
 |[pragma](../windows/pragma.md)|생성된 된.idl 파일의 따옴표 없이 지정된 된 문자열을 내보냅니다.|
   
 ## <a name="see-also"></a>참고 항목
- [용도별 특성](../windows/attributes-by-usage.md)
+
+[용도별 특성](../windows/attributes-by-usage.md)

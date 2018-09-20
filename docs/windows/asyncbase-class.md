@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cba5aaaec3303d9cd3534ff86cb677219c9c81c7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 087ecf151b17c7c505b4b70d01913a44e113ad29
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42586786"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46428683"
 ---
 # <a name="asyncbase-class"></a>AsyncBase 클래스
 
@@ -47,13 +47,13 @@ class AsyncBase<TComplete, Details::Nil, resultType> : public Microsoft::WRL::Im
 
 ### <a name="parameters"></a>매개 변수
 
-*TComplete*  
+*TComplete*<br/>
 비동기 작업이 완료 될 때 호출 되는 이벤트 처리기입니다.
 
-*TProgress*  
+*TProgress*<br/>
 작업의 현재 진행률을 보고 하는 비동기 작업 실행을 때 호출 되는 이벤트 처리기입니다.
 
-*resultType*  
+*resultType*<br/>
 중 하나는 [AsyncResultType](../windows/asyncresulttype-enumeration.md) 열거형 값입니다. 기본적으로 `SingleResult`입니다.
 
 ## <a name="members"></a>멤버

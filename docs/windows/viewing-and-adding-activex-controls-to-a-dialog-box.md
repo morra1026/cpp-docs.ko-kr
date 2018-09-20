@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bc5360a90690b27f1c52f97cd8b3746ddee5d60a
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 1eccaaff3f89b6353bd38e316ad515edc59eb9ae
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318384"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427409"
 ---
 # <a name="viewing-and-adding-activex-controls-to-a-dialog-box-c"></a>보기 및 대화 상자 (c + +)에 ActiveX 컨트롤을 추가 합니다.
 
@@ -61,6 +61,6 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)  
-[MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)  
+[대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)<br/>
+[MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)<br/>
 [ActiveX 컨트롤 컨테이너](../mfc/activex-control-containers.md)

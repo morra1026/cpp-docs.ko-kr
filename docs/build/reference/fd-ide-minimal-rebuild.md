@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74fb35ec25bed808e2165498c00b65723aba5bac
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 474602ce51ff9eb84f54d7580104f641d9b5b2a7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45702444"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46396196"
 ---
 # <a name="fd-ide-minimal-rebuild"></a>/FD(IDE 최소 재빌드)
 
@@ -33,6 +33,6 @@ ms.locfileid: "45702444"
 
 ## <a name="see-also"></a>참고 항목
 
-[출력 파일 (/ F) 옵션](../../build/reference/output-file-f-options.md)
+[출력 파일(/F) 옵션](../../build/reference/output-file-f-options.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

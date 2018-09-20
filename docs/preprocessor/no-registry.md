@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 105c2b0ee4d2648a1cc43d0baca9f30146184e78
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 8071fdf5e18542273dddfacecca913130e7bdea6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42541292"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46381233"
 ---
 # <a name="noregistry"></a>no_registry
 **no_registry** 를 사용 하 여 가져온 형식 라이브러리에 대 한 레지스트리를 검색 하지 않도록 컴파일러에 지시 `#import`합니다.  
@@ -48,5 +48,5 @@ ms.locfileid: "42541292"
   
 ## <a name="see-also"></a>참고 항목  
  
-[#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
+[#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import 지시문](../preprocessor/hash-import-directive-cpp.md)

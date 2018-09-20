@@ -12,26 +12,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ee711bfb24e7a2a1cbada1a7e01a243e204f4a8
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 94b4c529b7ad6fd717be1e1dee0edd3ff9ac3ff5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689378"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46426889"
 ---
 # <a name="2727-copyin"></a>2.7.2.7 copyin
-**copyin** 절에 동일한 값을 할당 하는 메커니즘을 제공 **threadprivate** 병렬 영역을 실행 하는 팀에서 각 스레드에 대 한 변수입니다. 에 지정 된 각 변수에 대해는 **copyin** 병렬 영역 맨 앞에 스레드 전용 복사본에 할당 하 여 마치 절, 팀의 마스터 스레드에의 변수 값을 복사 합니다. 구문은 **copyin** 절은 다음과 같습니다.  
-  
-```  
-  
-copyin(  
-variable-list  
-)  
-  
-```  
-  
- 시의 제한 된 **copyin** 절은 다음과 같습니다.  
-  
--   에 지정 된 변수는 **copyin** 절 액세스 가능 하며 명확한 복사 할당 연산자가 있어야 합니다.  
-  
--   에 지정 된 변수는 **copyin** 절 이어야 합니다는 **threadprivate** 변수입니다.
+
+합니다 **copyin** 에 동일한 값을 할당 하는 메커니즘을 제공 하는 절 **threadprivate** 병렬 영역을 실행 하는 팀에서 각 스레드에 대 한 변수입니다. 에 지정 된 각 변수를 **copyin** 병렬 영역 부분에 스레드 전용 복사본에 할당 하 여 처럼 절, 팀의 마스터 스레드에의 변수 값 복사 됩니다. 구문의 합니다 **copyin** 절은 다음과 같습니다.
+
+```
+
+copyin(
+variable-list
+)
+
+```
+
+제한 된 **copyin** 절은 다음과 같습니다.
+
+- 에 지정 된 변수를 **copyin** 절에는 액세스 가능 하며 명확한 복사 할당 연산자는 있어야 합니다.
+
+- 에 지정 된 변수를 **copyin** 절 이어야 합니다는 **threadprivate** 변수입니다.

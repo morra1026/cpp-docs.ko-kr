@@ -16,42 +16,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10acb6af23dffef0a7067883ac5dbac5abd9234f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 5e0f7e648a4d3c985d5fb33660248eea7c54ed97
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724255"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391550"
 ---
 # <a name="writecr3"></a>__writecr3
-**Microsoft 전용**  
-  
- 값을 씁니다 `Data` CR3 등록 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-void writecr3(   
-   unsigned __int64 Data   
-);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+
+**Microsoft 전용**
+
+값을 씁니다 `Data` CR3 등록 합니다.
+
+## <a name="syntax"></a>구문
+
+```
+void writecr3( 
+   unsigned __int64 Data 
+);
+```
+
+#### <a name="parameters"></a>매개 변수
+
 *Data*<br/>
-[in] CR3 레지스터에 쓸 값입니다.  
-  
-## <a name="requirements"></a>요구 사항  
-  
-|내장 함수|아키텍처|  
-|---------------|------------------|  
-|`__writecr3`|x86, x64|  
-  
- **헤더 파일** \<intrin.h >  
-  
-## <a name="remarks"></a>설명  
- 이 내장 함수는 커널 모드에서만 사용할 수 있으며 루틴은 내장 함수로만 사용할 수 있습니다.  
-  
-**Microsoft 전용 종료**  
-  
-## <a name="see-also"></a>참고 항목  
- [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)
+[in] CR3 레지스터에 쓸 값입니다.
+
+## <a name="requirements"></a>요구 사항
+
+|내장 함수|아키텍처|
+|---------------|------------------|
+|`__writecr3`|x86, x64|
+
+**헤더 파일** \<intrin.h >
+
+## <a name="remarks"></a>설명
+
+이 내장 함수는 커널 모드에서만 사용할 수 있으며 루틴은 내장 함수로만 사용할 수 있습니다.
+
+**Microsoft 전용 종료**
+
+## <a name="see-also"></a>참고 항목
+
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 31b333c14af6d57fb098d6aff0d0938092477de0
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: c1bb13773736104354d6276fef0a731aa72f22d2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613126"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46431246"
 ---
 # <a name="asyncbasegetstatus-method"></a>AsyncBase::get_Status 메서드
 
@@ -38,7 +38,7 @@ STDMETHOD(
 
 ### <a name="parameters"></a>매개 변수
 
-*status*  
+*status*<br/>
 상태를 저장할 위치입니다. 자세한 내용은 참조 하세요. `Windows::Foundation::AsyncStatus` 열거형입니다.
 
 ## <a name="return-value"></a>반환 값

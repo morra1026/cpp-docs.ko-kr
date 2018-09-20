@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f0fc65d2aeab01de022e23d0645682800a7d555d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 88ddd3dd59000b629f6e72933b1a0b02cc582c89
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602367"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46409873"
 ---
 # <a name="chaininterfaces-structure"></a>ChainInterfaces 구조체
 
@@ -63,43 +63,43 @@ struct ChainInterfaces<MixIn<DerivedType, BaseType, hasImplements>, I1, I2, I3, 
 
 ### <a name="parameters"></a>매개 변수
 
-*I0*  
+*I0*<br/>
 (필수) 인터페이스 ID 0입니다.
 
-*I1*  
+*I1*<br/>
 (필수) 인터페이스 ID 1입니다.
 
-*I2*  
+*I2*<br/>
 (선택 사항) 인터페이스 ID 2입니다.
 
-*I3*  
+*I3*<br/>
 (선택 사항) 인터페이스 ID 3입니다.
 
-*I4*  
+*I4*<br/>
 (선택 사항) ID 4 인터페이스입니다.
 
-*I5*  
+*I5*<br/>
 (선택 사항) 인터페이스 ID 5입니다.
 
-*I6*  
+*I6*<br/>
 (선택 사항) 인터페이스 ID 6입니다.
 
-*I7*  
+*I7*<br/>
 (선택 사항) 인터페이스 ID 7입니다.
 
-*I8*  
+*I8*<br/>
 (선택 사항) 인터페이스 ID 8입니다.
 
-*I9*  
+*I9*<br/>
 (선택 사항) 인터페이스 ID 9입니다.
 
-*DerivedType*  
+*DerivedType*<br/>
 파생된 형식입니다.
 
-*BaseType*  
+*BaseType*<br/>
 파생 형식이 기본 형식입니다.
 
-*hasImplements*  
+*hasImplements*<br/>
 경우에 해당 하는 부울 값 **true**를 사용할 수 없습니다는 [MixIn](../windows/mixin-structure.md) 에서 파생 되지 않은 클래스를 사용 하 여 구조를 [구현](../windows/implements-structure.md) 갖는 합니다.
 
 ## <a name="members"></a>멤버
@@ -115,7 +115,7 @@ struct ChainInterfaces<MixIn<DerivedType, BaseType, hasImplements>, I1, I2, I3, 
 
 ### <a name="protected-constants"></a>보호 된 상수
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[ChainInterfaces::IidCount 상수](../windows/chaininterfaces-iidcount-constant.md)|템플릿 매개 변수에서 지정한 인터페이스에 포함 된 인터페이스 Id의 총 *I0* 를 통해 *I9*합니다.|
 

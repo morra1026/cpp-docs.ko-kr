@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98dc9416ecee69bca285ff54d6321144c4a3fd02
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: cad23ebdd2289791b50b0e956368b934fe0f1087
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724427"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385198"
 ---
 # <a name="qimprecisefwaits-remove-fwaits-inside-try-blocks"></a>/Qimprecise_fwaits(Try 블록 내의 fwait 제거)
 
@@ -54,6 +54,6 @@ ms.locfileid: "45724427"
 
 ## <a name="see-also"></a>참고 항목
 
-[/Q 옵션 (하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)
+[/Q 옵션(하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

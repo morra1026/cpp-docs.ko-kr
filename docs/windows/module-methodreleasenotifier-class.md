@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cee634ab62e699b4de6af54a57b0fe3d6b5e9a40
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5e223ce02fa8a50ac39298d1f45f1f531dbf1f97
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606610"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46411328"
 ---
 # <a name="modulemethodreleasenotifier-class"></a>Module::MethodReleaseNotifier 클래스
 
@@ -37,7 +37,7 @@ class MethodReleaseNotifier : public ReleaseNotifier;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 멤버 함수가 이벤트 처리기 개체의 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -56,7 +56,7 @@ class MethodReleaseNotifier : public ReleaseNotifier;
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[Module::MethodReleaseNotifier::method_ 데이터 멤버](../windows/module-methodreleasenotifier-method-data-member.md)|현재 이벤트 처리기에 대 한 포인터를 보유 **module:: methodreleasenotifier** 개체입니다.|
 |[Module::MethodReleaseNotifier::object_ 데이터 멤버](../windows/module-methodreleasenotifier-object-data-member.md)|멤버 함수가 이벤트 처리기를 현재 개체에 대 한 포인터를 보유 **module:: methodreleasenotifier** 개체입니다.|
@@ -74,4 +74,5 @@ class MethodReleaseNotifier : public ReleaseNotifier;
 **네임스페이스:** Microsoft::WRL
 
 ## <a name="see-also"></a>참고 항목
+
 [Module 클래스](../windows/module-class.md)

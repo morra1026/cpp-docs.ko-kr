@@ -20,15 +20,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 20c36b4e3326ef8010558b4b99729ec8643b5af5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 07433d1abe9fae109ee7a7be90219ce726f22eeb
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33104154"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419089"
 ---
 # <a name="cliext-namespace"></a>cliext 네임스페이스
-`cliext` 네임 스페이스 STL/CLR 라이브러리의 모든 형식을 포함 합니다. 이러한 모든 형식 및 STL/CLR 형식에 대 한 정보 링크를 목록에 대 한 참조 [STL/CLR 라이브러리 참조](../dotnet/stl-clr-library-reference.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [STL/CLR 라이브러리 참조](../dotnet/stl-clr-library-reference.md)
+
+`cliext` 네임 스페이스 STL/CLR 라이브러리의 모든 형식을 포함 합니다. 이러한 모든 형식 및 STL/CLR 형식에 대 한 자세한 정보에 대 한 링크 목록을 참조 하세요 [STL/CLR 라이브러리 참조](../dotnet/stl-clr-library-reference.md)합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[STL/CLR 라이브러리 참조](../dotnet/stl-clr-library-reference.md)

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: eeaaedeb4c3806af888f36e62c8fa8e54c47eb46
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d5b50c57a80b2a9aca2681c3ade3c6d4fc3568e0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595696"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385991"
 ---
 # <a name="creatormapactivationid-data-member"></a>CreatorMap::activationId 데이터 멤버
 
@@ -39,10 +39,10 @@ union {
 
 ### <a name="parameters"></a>매개 변수
 
-*clsid*  
+*clsid*<br/>
 인터페이스 ID입니다.
 
-*getRuntimeName*  
+*getRuntimeName*<br/>
 Windows 런타임 개체의 이름을 검색 하는 함수입니다.
 
 ## <a name="remarks"></a>설명
@@ -57,5 +57,5 @@ Windows 런타임 개체의 이름을 검색 하는 함수입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[CreatorMap 구조체](../windows/creatormap-structure.md)  
+[CreatorMap 구조체](../windows/creatormap-structure.md)<br/>
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 99c5d961f3e25e17506e25148260b6966152af44
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: f5afaa14d926cc7dde86cdbdb6b5ca8162f81d7c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596124"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46402150"
 ---
 # <a name="getactivationfactory-function"></a>GetActivationFactory 함수
 
@@ -42,13 +42,13 @@ inline HRESULT GetActivationFactory(
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 활성화 팩터리 형식을 지정 하는 템플릿 매개 변수입니다.
 
-*activatableClassId*  
+*activatableClassId*<br/>
 활성화 팩터리를 생성할 수 있는 클래스의 이름입니다.
 
-*팩터리*  
+*팩터리*<br/>
 이 작업이 완료 되 면 형식에 대 한 활성화 팩터리에 대 한 참조가 *T*합니다.
 
 ## <a name="return-value"></a>반환 값

@@ -1,5 +1,5 @@
 ---
-title: 즉시 사용 목록 클래스 | Microsoft Docs
+title: 즉시 사용할 수 있는 목록 클래스 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,25 +18,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 014c3aabb770dc35fdbf106f9a225e52285d201b
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: e3e00bdc0af7a29aef04092ef045d2693a65f8be
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929678"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46399914"
 ---
 # <a name="ready-to-use-list-classes"></a>바로 사용할 수 있는 목록 클래스
-다음 클래스는 즉시 사용할 목록 클래스입니다.  
-  
- [CObList](../mfc/reference/coblist-class.md)  
- 클래스의 개체에 대 한 포인터를 저장 `CObject` 나에서 파생 된 클래스의 개체를 `CObject` 연결된 목록에 있습니다.  
-  
- [해당 클래스가](../mfc/reference/cptrlist-class.md)  
- 에 대 한 포인터를 저장 **void** (일반 포인터) 연결 된 목록에 있습니다.  
-  
- [CStringList](../mfc/reference/cstringlist-class.md)  
- 저장소 `CString` 연결된 목록에는 개체입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [클래스 개요](../mfc/class-library-overview.md)
+
+다음 클래스는 즉시 사용할 수 있는 목록 클래스입니다.
+
+[CObList](../mfc/reference/coblist-class.md)<br/>
+클래스의 개체에 대 한 포인터를 저장 `CObject` 에서 파생 된 클래스의 개체를 `CObject` 는 링크 목록입니다.
+
+[CPtrList](../mfc/reference/cptrlist-class.md)<br/>
+에 대 한 포인터를 저장 **void** (제네릭 포인터)는 링크 목록에서입니다.
+
+[CStringList](../mfc/reference/cstringlist-class.md)<br/>
+저장소 `CString` 연결 된 목록의 개체입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[클래스 개요](../mfc/class-library-overview.md)
 

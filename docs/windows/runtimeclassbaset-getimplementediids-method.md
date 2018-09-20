@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 907a249090ec58d6379cb58f3d63e15826c1f6ad
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 15db0be600d61992d48c2f1cf90d6543057b5090
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610362"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46376074"
 ---
 # <a name="runtimeclassbasetgetimplementediids-method"></a>RuntimeClassBaseT::GetImplementedIIDS 메서드
 
@@ -41,16 +41,16 @@ __forceinline static HRESULT GetImplementedIIDS(
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 형식의 합니다 *구현* 매개 변수입니다.
 
-*구현*  
+*구현*<br/>
 매개 변수에 의해 지정 된 형식에 대 한 포인터 *T*합니다.
 
-*iidCount*  
+*iidCount*<br/>
 검색할 인터페이스 Id의 최대 수입니다.
 
-*iid*  
+*iid*<br/>
 이 작업 완료, 인터페이스 형식에 의해 구현 되는 Id의 배열을 *T*합니다.
 
 ## <a name="return-value"></a>반환 값

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a1117ba3933d714486f314510d0288f0c63bf4b8
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 029528baabcc32c14fb6b35e4a13f4118602d5d5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202378"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46417802"
 ---
 # <a name="asyncuuid"></a>async_uuid
 
@@ -38,7 +38,7 @@ MIDL 컴파일러에 지시 합니다 COM 인터페이스의 동기 및 비동�
 
 ### <a name="parameters"></a>매개 변수
 
-*uuid*  
+*uuid*<br/>
 인터페이스의 버전을 식별 하는 UUID입니다.
 
 ## <a name="remarks"></a>설명
@@ -74,5 +74,5 @@ __interface ICustom {
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
 [인터페이스 특성](../windows/interface-attributes.md)  

@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fe80ae0d4045514c22c40af38deeeecbbfecc363
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 9246d7a26c9764e31cca9c861ec0a15d4792c115
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316382"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46389100"
 ---
 # <a name="setting-a-cursor39s-hot-spot-image-editor-for-icons"></a>커서를 설정&#39;s 핫 스폿 (아이콘에 대 한 이미지 편집기)
 
@@ -48,5 +48,5 @@ ms.locfileid: "44316382"
 
 ## <a name="see-also"></a>참고 항목
 
-[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)  
+[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [아이콘 및 커서: 디스플레이 장치용 이미지 리소스](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)

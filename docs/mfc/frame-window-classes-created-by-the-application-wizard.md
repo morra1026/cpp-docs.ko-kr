@@ -24,25 +24,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d3446de072266fdf7661d2e8d8ca0fc968279646
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: aff98636c723de17056f4bef337b46f4a686ddec
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345054"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46420610"
 ---
 # <a name="frame-window-classes-created-by-the-application-wizard"></a>응용 프로그램 마법사로 만든 프레임 창 클래스
-사용 하는 경우는 [응용 프로그램 마법사](../ide/creating-desktop-projects-by-using-application-wizards.md) 응용 프로그램, 문서 및 뷰 클래스 외에도 기본 응용 프로그램을 만드는 응용 프로그램 마법사는 응용 프로그램의 주 프레임 창에 대 한 파생된 프레임 창 클래스를 만듭니다. 라고 `CMainFrame` 를 포함 하는 파일이 고, 기본적으로 해당 라고 합니다. H와 해당 합니다. CPP 합니다.  
-  
- SDI 응용 프로그램이 경우 프로그램 `CMainFrame` 클래스에서 파생 되므로 [CFrameWnd](../mfc/reference/cframewnd-class.md)합니다.  
-  
- 응용 프로그램이 MDI 경우 `CMainFrame` 클래스에서 파생 된 [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md)합니다. 이 경우 `CMainFrame` 메뉴, 도구 모음 및 상태 표시줄을 보유 하는 주 프레임을 구현 합니다. 응용 프로그램 마법사는 새 문서 프레임 창 클래스를 파생 되지 않습니다. 기본 구현을 사용 하 여 대신 [CMDIChildWnd 클래스](../mfc/reference/cmdichildwnd-class.md)합니다. MFC 프레임 워크에는 각 보기를 포함 하는 자식 창을 만듭니다 (형식 중 하나일 수 있는 `CScrollView`, `CEditView`, `CTreeView`, `CListView`등)는 응용 프로그램에 필요한 합니다. 문서 프레임 창을 사용자 지정 해야 하는 경우 새 문서 프레임 창 클래스를 만들 수 있습니다 (참조 [클래스 추가](../ide/adding-a-class-visual-cpp.md)).  
-  
- 클래스에 형식의 멤버 변수가 도구 모음을 지원 하도록 선택 하면 [CToolBar](../mfc/reference/ctoolbar-class.md) 및 [CStatusBar](../mfc/reference/cstatusbar-class.md) 및 `OnCreate` 두 초기화 하는 메시지-처리기 함수의 [ 컨트롤 막대](../mfc/control-bars.md)합니다.  
-  
- 이러한 프레임 창 클래스 만들어진 대로 작동 하지만 해당 기능을 향상 시키려면 멤버 변수 및 멤버 함수를 추가 해야 합니다. 창 클래스 다른 Windows 메시지를 처리할 수도 있습니다. 자세한 내용은 참조 [MFC에서 만든 창 스타일 변경](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [프레임 창 클래스](../mfc/frame-window-classes.md)   
- [MFC 프로그램 또는 컨트롤 소스 및 헤더 파일](../ide/mfc-program-or-control-source-and-header-files.md)
+
+사용 하는 경우는 [응용 프로그램 마법사](../ide/creating-desktop-projects-by-using-application-wizards.md) 응용 프로그램, 문서 및 뷰 클래스 외에도 기본 응용 프로그램을 만드는 응용 프로그램 마법사는 응용 프로그램의 주 프레임 창에 대 한 파생된 프레임 창 클래스를 만듭니다. 클래스 라고 `CMainFrame` 포함 된 파일과 기본적으로는 해당 이름이 지정 됩니다. H와 해당 합니다. CPP 합니다.
+
+응용 프로그램이 SDI와 경우에 `CMainFrame` 클래스에서 파생 된 클래스 [CFrameWnd](../mfc/reference/cframewnd-class.md)합니다.
+
+응용 프로그램은 MDI `CMainFrame` 클래스에서 파생 되며 [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md)합니다. 이 경우 `CMainFrame` 메뉴, 도구 모음 및 상태 표시줄을 보유 하는 주 프레임을 구현 합니다. 응용 프로그램 마법사는 새 문서 프레임 창 클래스를 파생 되지 않습니다. 기본 구현을 사용 하 여 대신 [CMDIChildWnd 클래스](../mfc/reference/cmdichildwnd-class.md)합니다. MFC 프레임 워크에는 각 뷰에 포함 하도록 자식 창을 만듭니다 (형식일 수 있는 `CScrollView`, `CEditView`를 `CTreeView`, `CListView`등) 응용 프로그램에서 필요한 합니다. 문서 프레임 창에 사용자 지정 해야 하는 경우 새 문서 프레임 창 클래스를 만들 수 있습니다 (참조 [클래스 추가](../ide/adding-a-class-visual-cpp.md)).
+
+클래스 형식의 멤버 변수 또한에 도구 모음을 지원 하려는 경우 [CToolBar](../mfc/reference/ctoolbar-class.md) 하 고 [CStatusBar](../mfc/reference/cstatusbar-class.md) 와 `OnCreate` 메시지 처리기 함수를 두 초기화 [ 컨트롤 막대](../mfc/control-bars.md)합니다.
+
+이러한 프레임 창 클래스 생성 하는 대로 작동 하지만 해당 기능을 강화 하려면 멤버 변수 및 멤버 함수를 추가 해야 합니다. 다른 Windows 메시지를 처리 하 여 창 클래스를 할 수도 있습니다. 자세한 내용은 [MFC에서 만든 창 스타일 변경](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[프레임 창 클래스](../mfc/frame-window-classes.md)<br/>
+[MFC 프로그램 또는 컨트롤 소스 및 헤더 파일](../ide/mfc-program-or-control-source-and-header-files.md)
 

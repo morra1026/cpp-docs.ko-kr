@@ -18,46 +18,51 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e71459a1c22b9295c5c88ce29da9e494660fa26
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fa77af9dd97afc2e9b0cfb94c1fd4c69a50f309b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46046305"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419596"
 ---
 # <a name="rect-structure1"></a>RECT 구조체 1
-`RECT` 구조체는 사각형의 왼쪽 위 및 오른쪽 아래 모퉁이의 좌표를 정의합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-typedef struct tagRECT {  
-    LONG left;  
-    LONG top;  
-    LONG right;  
-    LONG bottom;  
-} RECT;  
-```  
-  
-## <a name="members"></a>멤버  
+
+`RECT` 구조체는 사각형의 왼쪽 위 및 오른쪽 아래 모퉁이의 좌표를 정의합니다.
+
+## <a name="syntax"></a>구문
+
+```
+typedef struct tagRECT {
+    LONG left;
+    LONG top;
+    LONG right;
+    LONG bottom;
+} RECT;
+```
+
+## <a name="members"></a>멤버
+
 `left`<br/>
-사각형의 왼쪽 위 모퉁이의 x좌표를 지정합니다.  
-  
+사각형의 왼쪽 위 모퉁이의 x좌표를 지정합니다.
+
 `top`<br/>
-사각형의 왼쪽 위 모퉁이의 y좌표를 지정합니다.  
-  
+사각형의 왼쪽 위 모퉁이의 y좌표를 지정합니다.
+
 `right`<br/>
-사각형의 오른쪽 아래 모퉁이의 x좌표를 지정합니다.  
-  
+사각형의 오른쪽 아래 모퉁이의 x좌표를 지정합니다.
+
 `bottom`<br/>
-사각형의 오른쪽 아래 모퉁이의 y좌표를 지정합니다.  
-  
-## <a name="example"></a>예제  
- [!code-cpp[NVC_MFC_Utilities#38](../../mfc/codesnippet/cpp/rect-structure1_1.cpp)]  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** windef.h  
-  
-## <a name="see-also"></a>참고 항목  
- [구조체, 스타일, 콜백 및 메시지 맵](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CRect 클래스](../../atl-mfc-shared/reference/crect-class.md)
+사각형의 오른쪽 아래 모퉁이의 y좌표를 지정합니다.
+
+## <a name="example"></a>예제
+
+[!code-cpp[NVC_MFC_Utilities#38](../../mfc/codesnippet/cpp/rect-structure1_1.cpp)]
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** windef.h
+
+## <a name="see-also"></a>참고 항목
+
+[구조체, 스타일, 콜백 및 메시지 맵](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
+[CRect 클래스](../../atl-mfc-shared/reference/crect-class.md)

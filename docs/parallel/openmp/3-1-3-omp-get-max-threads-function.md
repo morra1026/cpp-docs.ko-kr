@@ -12,40 +12,41 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2afa797cc74a50041f2ea24f76fa07ffe109072b
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: c439dc0203fa3435c62e9669da40b5b092556492
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687513"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400824"
 ---
 # <a name="313-ompgetmaxthreads-function"></a>3.1.3 omp_get_max_threads 함수
-**omp_get_max_threads** 함수 반환 하는 경우 병렬 영역 없이 팀을 구성 하는 데 사용할 스레드의 수 이상이 되도록 보장 하는 정수는 **num_threads** 절 코드에서 해당 지점에서 경험할 수 있었습니다. 형식은 다음과 같습니다.  
-  
-```  
-#include <omp.h>  
-int omp_get_max_threads(void);  
-```  
-  
- 다음의 값에 하 한을 표현 **omp_get_max_threads**:  
-  
-```  
-  
-threads-used-for-next-team  
- <= omp_get_max_threads  
-  
-```  
-  
- 경우에 후속 병렬 영역에서 사용 하는 **num_threads** 절 특정 개수의 스레드가 보증은 결과의 하한값에 요청을 **omp_get_max_threads** 긴 보류 없습니다.  
-  
- **omp_get_max_threads** 후속 병렬 영역에서 형성 된 팀의 모든 스레드에 대 한 충분 한 저장소를 동적으로 할당할 함수의 반환 값을 사용할 수 있습니다.  
-  
-## <a name="cross-references"></a>교차 참조:  
-  
--   **omp_get_num_threads** 함수, 참조 [단원 3.1.2](../../parallel/openmp/3-1-2-omp-get-num-threads-function.md) 37 페이지.  
-  
--   **omp_set_num_threads** 함수, 참조 [섹션 3.1.1](../../parallel/openmp/3-1-1-omp-set-num-threads-function.md) 36 페이지.  
-  
--   **omp_set_dynamic** 함수, 참조 [섹션 3.1.7](../../parallel/openmp/3-1-7-omp-set-dynamic-function.md) 39 페이지.  
-  
--   **num_threads** 절 참조 [섹션 2.3](../../parallel/openmp/2-3-parallel-construct.md) 8 페이지에 있습니다.
+
+합니다 **omp_get_max_threads** 이상 만큼 클 경우 병렬 영역 없이 팀을 구성 하는 데 사용할 스레드의 수에 보장 되는 정수를 반환 하는 함수는 **num_threads** 절 코드에서 해당 지점에서 경험할 수 있었습니다. 형식은 다음과 같습니다.
+
+```
+#include <omp.h>
+int omp_get_max_threads(void);
+```
+
+다음 값의 하한값을 표현 **omp_get_max_threads**:
+
+```
+
+threads-used-for-next-team
+<= omp_get_max_threads
+
+```
+
+후속 병렬 영역 사용 하는 경우는 **num_threads** 특정 개수의 스레드를 결과 대 한 하한값 대 한 보장을 요청 하는 절 **omp_get_max_threads** 긴 포함 되지 않습니다.
+
+합니다 **omp_get_max_threads** 후속 병렬 영역에서 형성 된 팀의 모든 스레드에 대 한 충분 한 저장소를 동적으로 할당할 함수의 반환 값을 사용할 수 있습니다.
+
+## <a name="cross-references"></a>교차 참조:
+
+- **omp_get_num_threads** 함수를 참조 하세요 [단원 3.1.2](../../parallel/openmp/3-1-2-omp-get-num-threads-function.md) 37 페이지입니다.
+
+- **omp_set_num_threads** 함수를 참조 하세요 [3.1.1 섹션](../../parallel/openmp/3-1-1-omp-set-num-threads-function.md) 36 페이지입니다.
+
+- **omp_set_dynamic** 함수를 참조 하세요 [3.1.7 섹션](../../parallel/openmp/3-1-7-omp-set-dynamic-function.md) 39 페이지입니다.
+
+- **num_threads** 절을 참조 하세요 [섹션 2.3](../../parallel/openmp/2-3-parallel-construct.md) 8 페이지입니다.

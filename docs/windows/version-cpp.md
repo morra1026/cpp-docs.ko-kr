@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 87186ee70b5863f51a7cd91f8695052f361bd11c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 60a5ad42f83d9e9528fd5bdc4c8d3e62254a3677
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222534"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46438738"
 ---
 # <a name="version-c"></a>version(C++)
 
@@ -39,7 +39,7 @@ ms.locfileid: "43222534"
 
 ### <a name="parameters"></a>매개 변수
 
-*version*  
+*version*<br/>
 버전 번호는 `coclass`합니다. 지정 하지 않으면 1.0.idl 파일에 배치 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -65,5 +65,5 @@ ms.locfileid: "43222534"
 
 ## <a name="see-also"></a>참고 항목
 
-[컴파일러 특성](../windows/compiler-attributes.md)  
+[컴파일러 특성](../windows/compiler-attributes.md)<br/>
 [클래스 특성](../windows/class-attributes.md)  

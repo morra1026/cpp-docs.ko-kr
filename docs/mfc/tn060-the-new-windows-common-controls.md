@@ -16,17 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6626f9be05c9c6bd3cb583a27eefcb29eede6871
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0028d7b2f2121f9463dcb45b13bf34305c39f3d4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33381480"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46388982"
 ---
 # <a name="tn060-the-new-windows-common-controls"></a>TN060: 새 Windows 공용 컨트롤
-새 Windows 공용 컨트롤 및를 사용 하는 방법을 설명 하는 technical Note 60을 반영 했습니다 [컨트롤](../mfc/controls-mfc.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)   
- [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
+
+새 Windows 공용 컨트롤 및을 사용 하는 방법을 설명 인 technical Note 60에 통합 되어 있습니다 [컨트롤](../mfc/controls-mfc.md)합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
+[범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
 

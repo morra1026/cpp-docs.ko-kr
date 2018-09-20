@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d10c025c22523e6329f051fcfbe76988337992a2
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 806003e33e60b5146bdd722fa5248011cd4939c0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318150"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46396553"
 ---
 # <a name="type-forwarding-ccli"></a>형식 전달(C++/CLI)
 
@@ -51,10 +51,10 @@ ms.locfileid: "44318150"
 
 ### <a name="parameters"></a>매개 변수
 
-*new*  
+*new*<br/>
 어셈블리를 이동 하는 형식 정의입니다.
 
-*type*  
+*type*<br/>
 해당 정의 다른 어셈블리로 이동 하는 형식입니다.
 
 ### <a name="remarks"></a>설명

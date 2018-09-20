@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a4721cec6ebc11cf2107afe0048da90164c0f47f
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 31bb19a0854bd28573d474a65781808eaecd7ce2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315563"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46407571"
 ---
 # <a name="specifying-the-dominant-control"></a>기준 컨트롤 지정
 
@@ -48,6 +48,6 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[여러 개의 컨트롤 선택](../windows/selecting-multiple-controls.md)  
-[컨트롤 선택](../windows/selecting-controls.md)  
+[여러 개의 컨트롤 선택](../windows/selecting-multiple-controls.md)<br/>
+[컨트롤 선택](../windows/selecting-controls.md)<br/>
 [대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: efca93e2e9b52ce646ef07465682815978550414
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 61c20647d96a66cf4b50e6f0b031cc04353553e5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607779"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46410652"
 ---
 # <a name="dbaccessor"></a>db_accessor
 
@@ -39,10 +39,10 @@ ms.locfileid: "42607779"
 
 #### <a name="parameters"></a>매개 변수
 
-*num*  
+*num*<br/>
 접근자 수 (0부터 시작 하는 정수 인덱스)를 지정합니다. 오름차순 접근자 숫자 순서를 정수 또는 정의 된 값을 지정 해야 합니다.
 
-*auto*  
+*auto*<br/>
 접근자는 자동으로 검색할지 (TRUE) 여부를 지정 하는 부울 값 (FALSE)를 검색 합니다.
 
 ## <a name="remarks"></a>설명
@@ -55,7 +55,7 @@ ms.locfileid: "42607779"
 
 컴파일러는 클래스 이름을 소비자 특성 공급자가이 특성 클래스에 적용 될 때 \_ *YourClassName*접근자를 여기서 *YourClassName* 제공한 이름인는 클래스 및 컴파일러 라는 클래스를 만들 수도 됩니다 *YourClassName*에서 파생 되는 \_ *YourClassName*접근자입니다.  클래스 뷰에 두 클래스 모두 표시됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 **db_accessor** 두 접근자에 Northwind 데이터베이스의 Orders 테이블의 열을 그룹에 있습니다. 접근자 0은 자동 접근자 및 접근자 1입니다.
 

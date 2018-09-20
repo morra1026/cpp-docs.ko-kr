@@ -21,94 +21,99 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e52bb1fcd0b8d7321ead43c79003032a089a22fb
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: bfda7f2cba8b82ab584eb17ae89db646fad52dff
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723361"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391321"
 ---
 # <a name="bittestandcomplement-bittestandcomplement64"></a>_bittestandcomplement, _bittestandcomplement64
-**Microsoft 전용**  
-  
- 주소 `b`의 비트 `a`를 검사하고 현재 값을 반환한 다음 비트를 보수로 설정하는 명령을 생성합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-unsigned char _bittestandcomplement(  
-   long *a,  
-   long b  
-);  
-unsigned char _bittestandcomplement64(  
-   __int64 *a,  
-   __int64 b  
-);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+
+**Microsoft 전용**
+
+주소 `b`의 비트 `a`를 검사하고 현재 값을 반환한 다음 비트를 보수로 설정하는 명령을 생성합니다.
+
+## <a name="syntax"></a>구문
+
+```
+unsigned char _bittestandcomplement(
+   long *a,
+   long b
+);
+unsigned char _bittestandcomplement64(
+   __int64 *a,
+   __int64 b
+);
+```
+
+#### <a name="parameters"></a>매개 변수
+
 *a*<br/>
-[out에서] 검사할 메모리에 대 한 포인터입니다.  
-  
+[out에서] 검사할 메모리에 대 한 포인터입니다.
+
 *b*<br/>
-[in] 테스트할 비트 위치입니다.  
-  
-## <a name="return-value"></a>반환 값  
- 지정한 위치에 있는 비트입니다.  
-  
-## <a name="requirements"></a>요구 사항  
-  
-|내장 함수|아키텍처|  
-|---------------|------------------|  
-|`_bittestandcomplement`|x86, ARM, x64|  
-|`_bittestandcomplement64`|X64|  
-  
- **헤더 파일** \<intrin.h >  
-  
-## <a name="remarks"></a>설명  
- 이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
-  
-## <a name="example"></a>예제  
-  
-```  
-// bittestandcomplement.cpp  
-// processor: x86, IPF, x64  
-#include <stdio.h>  
-#include <intrin.h>  
-  
-#pragma intrinsic(_bittestandcomplement)  
-#ifdef _M_AMD64  
-#pragma intrinsic(_bittestandcomplement64)  
-#endif  
-  
-int main()  
-{  
-   long i = 1;  
-   __int64 i64 = 0x1I64;  
-   unsigned char result;  
-   printf("Initial value: %d\n", i);  
-   printf("Testing bit 1\n");  
-   result = _bittestandcomplement(&i, 1);  
-   printf("Value changed to %d, Result: %d\n", i, result);  
-#ifdef _M_AMD64  
-   printf("Testing bit 0\n");  
-   result = _bittestandcomplement64(&i64, 0);  
-   printf("Value changed to %I64d, Result: %d\n", i64, result);  
-#endif  
-}  
-```  
-  
-## <a name="sample-output"></a>샘플 출력  
-  
-```  
-Initial value: 1  
-Testing bit 1  
-Value changed to 3, Result: 0  
-Testing bit 0  
-Value changed to 0, Result: 1  
-```  
-  
-**Microsoft 전용 종료**  
-  
-## <a name="see-also"></a>참고 항목  
- [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)
+[in] 테스트할 비트 위치입니다.
+
+## <a name="return-value"></a>반환 값
+
+지정한 위치에 있는 비트입니다.
+
+## <a name="requirements"></a>요구 사항
+
+|내장 함수|아키텍처|
+|---------------|------------------|
+|`_bittestandcomplement`|x86, ARM, x64|
+|`_bittestandcomplement64`|X64|
+
+**헤더 파일** \<intrin.h >
+
+## <a name="remarks"></a>설명
+
+이 루틴은 내장 루틴으로만 사용할 수 있습니다.
+
+## <a name="example"></a>예제
+
+```
+// bittestandcomplement.cpp
+// processor: x86, IPF, x64
+#include <stdio.h>
+#include <intrin.h>
+
+#pragma intrinsic(_bittestandcomplement)
+#ifdef _M_AMD64
+#pragma intrinsic(_bittestandcomplement64)
+#endif
+
+int main()
+{
+   long i = 1;
+   __int64 i64 = 0x1I64;
+   unsigned char result;
+   printf("Initial value: %d\n", i);
+   printf("Testing bit 1\n");
+   result = _bittestandcomplement(&i, 1);
+   printf("Value changed to %d, Result: %d\n", i, result);
+#ifdef _M_AMD64
+   printf("Testing bit 0\n");
+   result = _bittestandcomplement64(&i64, 0);
+   printf("Value changed to %I64d, Result: %d\n", i64, result);
+#endif
+}
+```
+
+## <a name="sample-output"></a>샘플 출력
+
+```
+Initial value: 1
+Testing bit 1
+Value changed to 3, Result: 0
+Testing bit 0
+Value changed to 0, Result: 1
+```
+
+**Microsoft 전용 종료**
+
+## <a name="see-also"></a>참고 항목
+
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

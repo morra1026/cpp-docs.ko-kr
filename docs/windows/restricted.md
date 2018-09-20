@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e8d226f508f5f5e8c717bd671413f21377c0ae01
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7b8de310f8abb3b417abbe96576d910513e25717
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202292"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46398679"
 ---
 # <a name="restricted"></a>restricted
 
@@ -38,7 +38,7 @@ ms.locfileid: "43202292"
 
 ### <a name="parameters"></a>매개 변수
 
-*interfaces*  
+*interfaces*<br/>
 호출할 수 없습니다 임의로 COM 개체에는 하나 이상의 인터페이스입니다. 이 매개 변수는 클래스에 적용 하는 경우에 유효만 합니다.
 
 ## <a name="remarks"></a>설명
@@ -87,6 +87,6 @@ class c : public a, public b
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
-[인터페이스 특성](../windows/interface-attributes.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
+[인터페이스 특성](../windows/interface-attributes.md)<br/>
 [메서드 특성](../windows/method-attributes.md)  

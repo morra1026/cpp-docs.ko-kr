@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 91cf005e3dc1d088a5c7d0e664f67610fac28843
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9d6cdab8d93394f4c51a4b99622d2f6f8604a87e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606251"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46414695"
 ---
 # <a name="asyncbasefireprogress-method"></a>AsyncBase::FireProgress 메서드
 
@@ -38,7 +38,7 @@ void FireProgress(
 
 ### <a name="parameters"></a>매개 변수
 
-*arg*  
+*arg*<br/>
 이벤트 처리기 메서드를 호출 합니다.
 
 ## <a name="remarks"></a>설명

@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca78687f79cdbf1d8bdb60c1a877c489498624ee
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 5f11590a78cb691f4812e7b503350fb72a4bdc95
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766193"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46390736"
 ---
 # <a name="using-cstringt"></a>CStringT 사용
 
@@ -27,10 +27,10 @@ ms.locfileid: "43766193"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[CStringT를 사용한 메모리 관리](../atl-mfc-shared/memory-management-with-cstringt.md)  
+[CStringT를 사용한 메모리 관리](../atl-mfc-shared/memory-management-with-cstringt.md)<br/>
 사용한 메모리 관리에 설명 `CStringT`, 가변 길이 문자 문자열을 조작 하는 데 사용 하는 템플릿 클래스입니다.
 
-[CStringT를 사용하여 문자열 클래스 내보내기](../atl-mfc-shared/exporting-string-classes-using-cstringt.md)  
+[CStringT를 사용하여 문자열 클래스 내보내기](../atl-mfc-shared/exporting-string-classes-using-cstringt.md)<br/>
 사용자 고유의 문자열 클래스는 CStringT 템플릿 클래스를 사용 하 여 DLL에서 내보내기 하는 방법에 설명 합니다.
 
 ## <a name="reference"></a>참조

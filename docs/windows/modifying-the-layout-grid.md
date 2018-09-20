@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 615138b44ab9fdbbf94d4130428ba708697c2aee
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d583bbbfeb4cd426684d1091a165335f7cbb6e64
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601850"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46441403"
 ---
 # <a name="modifying-the-layout-grid"></a>레이아웃 모눈 수정
 
@@ -52,5 +52,5 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[대화 상자 편집기 상태(안내선과 모눈)](../windows/dialog-editor-states-guides-and-grids.md)  
+[대화 상자 편집기 상태(안내선과 모눈)](../windows/dialog-editor-states-guides-and-grids.md)<br/>
 [대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)

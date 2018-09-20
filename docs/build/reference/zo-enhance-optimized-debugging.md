@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e93d8debbab26dc61b4c27de713b94d7bc6c417
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 1b40f7b4fff1d6df6f5fb818e090ce687f12a7b4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45711960"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46412789"
 ---
 # <a name="zo-enhance-optimized-debugging"></a>/Zo(최적화된 디버깅 향상)
 
@@ -58,6 +58,6 @@ ms.locfileid: "45711960"
 
 ## <a name="see-also"></a>참고 항목
 
-[/O 옵션 (코드 최적화)](../../build/reference/o-options-optimize-code.md)
-[/z7, /Zi, /ZI (디버그 정보 형식)](../../build/reference/z7-zi-zi-debug-information-format.md)
-[편집 하며 계속 하기](/visualstudio/debugger/edit-and-continue)
+[/O 옵션(코드 최적화)](../../build/reference/o-options-optimize-code.md)<br/>
+[/Z7, /Zi, /ZI(디버깅 정보 형식)](../../build/reference/z7-zi-zi-debug-information-format.md)<br/>
+[편집하며 계속하기](/visualstudio/debugger/edit-and-continue)

@@ -35,12 +35,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 687fd4f4bd77043bd0b74c7bcc39fb6a496b60be
-ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
+ms.openlocfilehash: e8a1dcd96ab42f48c91bbed2057475fa412c8925
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601459"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46432806"
 ---
 # <a name="ftmbase-class"></a>FtmBase 클래스
 
@@ -106,7 +106,7 @@ static HRESULT CreateGlobalInterfaceTable(
 
 ### <a name="parameters"></a>매개 변수
 
-*Git*  
+*Git*<br/>
 이 작업이 완료 될 때 전역 인터페이스 테이블에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -129,7 +129,7 @@ STDMETHODIMP DisconnectObject(
 
 ### <a name="parameters"></a>매개 변수
 
-*dwReserved*  
+*dwReserved*<br/>
 나중에 사용하도록 예약되어 있습니다. 0이어야 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -161,26 +161,26 @@ STDMETHODIMP GetMarshalSizeMax(
 
 ### <a name="parameters"></a>매개 변수
 
-*riid*  
+*riid*<br/>
 마샬링될 인터페이스의 식별자에 대 한 참조입니다.
 
-*pv*  
+*pv*<br/>
 인터페이스 포인터를 마샬링할 수 있습니다. NULL 일 수 있습니다.
 
-*dwDestContext*  
+*dwDestContext*<br/>
 대상 위치 지정된 된 인터페이스를 컨텍스트 마샬링해야 합니다.
 
 하나 이상의 MSHCTX 열거형 값을 지정 합니다.
 
 현재 역마샬링 발생할 수 있습니다 (MSHCTX_INPROC) 현재 프로세스의 다른 아파트 또는 현재 프로세스 (MSHCTX_LOCAL)와 동일한 컴퓨터에서 다른 프로세스에서.
 
-*pvDestContext*  
+*pvDestContext*<br/>
 사용 하도록 예약 됩니다. NULL 이어야 합니다.
 
-*mshlflags*  
+*mshlflags*<br/>
 클라이언트 프로세스에 다시 전송할 데이터를 마샬링할 수 인지 여부를 나타내는 플래그-일반적인 사례-여러 클라이언트에서 검색할 수 있는 전역 테이블에 기록 합니다. 하나 이상의 MSHLFLAGS 열거형 값을 지정 합니다.
 
-*pSize*  
+*pSize*<br/>
 이 작업이 완료 될 때 마샬링 스트림에 쓸 데이터의 양에 상한을에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -204,23 +204,23 @@ STDMETHODIMP GetUnmarshalClass(
 
 ### <a name="parameters"></a>매개 변수
 
-*riid*  
+*riid*<br/>
 마샬링될 인터페이스의 식별자에 대 한 참조입니다.
 
-*pv*  
+*pv*<br/>
 마샬링될; 인터페이스에 대 한 포인터 호출자가 원하는 인터페이스에 대 한 포인터 없는 경우 NULL 일 수 있습니다.
 
-*dwDestContext*  
+*dwDestContext*<br/>
 대상 위치 지정된 된 인터페이스를 컨텍스트 마샬링해야 합니다.
 
 하나 이상의 MSHCTX 열거형 값을 지정 합니다.
 
 역마샬링 하거나 현재 프로세스 (MSHCTX_INPROC)의 다른 아파트에서 현재 프로세스 (MSHCTX_LOCAL)와 동일한 컴퓨터에서 다른 프로세스에서 발생할 수 있습니다.
 
-*pvDestContext*  
+*pvDestContext*<br/>
 사용 하도록 예약 됩니다. NULL 이어야 합니다.
 
-*mshlflags*  
+*mshlflags*<br/>
 이 작업이 완료 될 때 클라이언트 프로세스에서 프록시를 만드는 데 사용할 CLSID에 대 한 포인터입니다.
 
 *pCid*
@@ -246,26 +246,26 @@ STDMETHODIMP MarshalInterface(
 
 ### <a name="parameters"></a>매개 변수
 
-*pStm*  
+*pStm*<br/>
 마샬링 중 사용할 스트림에 대 한 포인터입니다.
 
-*riid*  
+*riid*<br/>
 마샬링될 인터페이스의 식별자에 대 한 참조입니다. 이 인터페이스에서 파생 되어야 합니다는 `IUnknown` 인터페이스입니다.
 
-*pv*  
+*pv*<br/>
 마샬링될; 인터페이스 포인터에 대 한 포인터 호출자가 원하는 인터페이스에 대 한 포인터 없는 경우 NULL 일 수 있습니다.
 
-*dwDestContext*  
+*dwDestContext*<br/>
 대상 위치 지정된 된 인터페이스를 컨텍스트 마샬링해야 합니다.
 
 하나 이상의 MSHCTX 열거형 값을 지정 합니다.
 
 역마샬링 현재 프로세스 (MSHCTX_LOCAL)와 동일한 컴퓨터에서 다른 프로세스 또는 현재 프로세스 (MSHCTX_INPROC)의 다른 아파트에서 발생할 수 있습니다.
 
-*pvDestContext*  
+*pvDestContext*<br/>
 나중에 사용하도록 예약되어 있습니다. 0이어야 합니다.
 
-*mshlflags*  
+*mshlflags*<br/>
 클라이언트 프로세스에 다시 전송할 데이터를 마샬링할 수 인지 여부를 지정-일반적인 사례-여러 클라이언트에서 검색할 수 있는 전역 테이블에 기록 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -298,7 +298,7 @@ STDMETHODIMP ReleaseMarshalData(
 
 ### <a name="parameters"></a>매개 변수
 
-*pStm*  
+*pStm*<br/>
 제거할 데이터 패킷을 포함 하는 스트림에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -319,13 +319,13 @@ STDMETHODIMP UnmarshalInterface(
 
 ### <a name="parameters"></a>매개 변수
 
-*pStm*  
+*pStm*<br/>
 인터페이스 포인터를 역 마샬링해야 하는 스트림에 대 한 포인터입니다.
 
-*riid*  
+*riid*<br/>
 역 마샬링해야 하는 인터페이스의 식별자에 대 한 참조입니다.
 
-*ppv*  
+*ppv*<br/>
 이 작업이 완료 되 면에서 요청 된 인터페이스 포인터를 받는 포인터 변수의 주소 *riid*합니다. 이 작업에 성공 하면 **ppv* 마샬링해야 하는 인터페이스의 요청 된 인터페이스 포인터를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값

@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 67527717319c4b571ff4b72b83d718c0ac149586
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: a2370a2f47e358358ed2c870f8fffcbe135a116f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313327"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46406687"
 ---
 # <a name="symbol-name-restrictions"></a>기호 이름 제한
 
@@ -60,6 +60,6 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[기호 또는 기호 이름(ID) 변경](../windows/changing-a-symbol-or-symbol-name-id.md)  
-[기호 값 제한](../windows/symbol-value-restrictions.md)  
+[기호 또는 기호 이름(ID) 변경](../windows/changing-a-symbol-or-symbol-name-id.md)<br/>
+[기호 값 제한](../windows/symbol-value-restrictions.md)<br/>
 [미리 정의된 기호 ID](../windows/predefined-symbol-ids.md)

@@ -18,57 +18,63 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3887672f9d0934dbcc38d6db549e383f7976b10
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e7c862cdf778b726a4d416ea490f5da9c3d7eb01
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110980"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46414890"
 ---
 # <a name="nestedschedulermissingdetach-class"></a>nested_scheduler_missing_detach 클래스
-이 클래스는 동시성 런타임에서 `Scheduler` 개체의 `Attach` 메서드를 사용하여 두 번째 스케줄러에 연결된 컨텍스트에 대해 `CurrentScheduler::Detach` 메서드를 호출하지 않은 것을 감지하는 경우 발생하는 예외를 설명합니다.  
-  
-## <a name="syntax"></a>구문  
-  
+
+이 클래스는 동시성 런타임에서 `Scheduler` 개체의 `Attach` 메서드를 사용하여 두 번째 스케줄러에 연결된 컨텍스트에 대해 `CurrentScheduler::Detach` 메서드를 호출하지 않은 것을 감지하는 경우 발생하는 예외를 설명합니다.
+
+## <a name="syntax"></a>구문
+
 ```
 class nested_scheduler_missing_detach : public std::exception;
-```  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="public-constructors"></a>Public 생성자  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[nested_scheduler_missing_detach](#ctor)|오버로드됨. `nested_scheduler_missing_detach` 개체를 생성합니다.|  
-  
-## <a name="remarks"></a>설명  
- 이 예외는 다른 스케줄러에서 이미 소유하고 있거나 다른 스케줄러에 연결된 컨텍스트에서 `Attach` 개체의 `Scheduler` 메서드를 호출함으로써 다른 컨텍스트 내에 한 스케줄러를 중첩할 때만 throw됩니다. 동시성 런타임에서 시나리오 문제를 찾기 위해 검색할 수 있는 경우 선택적으로이 예외를 throw 합니다. 호출을 무시 하는 모든 인스턴스가 `CurrentScheduler::Detach` 메서드는 항상이 예외를 throw 합니다.  
-  
-## <a name="inheritance-hierarchy"></a>상속 계층  
- `exception`  
-  
- `nested_scheduler_missing_detach`  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** concrt.h  
-  
- **네임스페이스:** 동시성  
-  
-##  <a name="ctor"></a> nested_scheduler_missing_detach 
+```
 
- `nested_scheduler_missing_detach` 개체를 생성합니다.  
-  
+## <a name="members"></a>멤버
+
+### <a name="public-constructors"></a>Public 생성자
+
+|이름|설명|
+|----------|-----------------|
+|[nested_scheduler_missing_detach](#ctor)|오버로드됨. `nested_scheduler_missing_detach` 개체를 생성합니다.|
+
+## <a name="remarks"></a>설명
+
+이 예외는 다른 스케줄러에서 이미 소유하고 있거나 다른 스케줄러에 연결된 컨텍스트에서 `Attach` 개체의 `Scheduler` 메서드를 호출함으로써 다른 컨텍스트 내에 한 스케줄러를 중첩할 때만 throw됩니다. 동시성 런타임에서 시나리오 문제를 찾기 위해 검색할 수 있는 경우 선택적으로이 예외를 throw 합니다. 호출을 무시 하는 모든 인스턴스가 `CurrentScheduler::Detach` 메서드는 항상이 예외를 throw 합니다.
+
+## <a name="inheritance-hierarchy"></a>상속 계층
+
+`exception`
+
+`nested_scheduler_missing_detach`
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** concrt.h
+
+**네임스페이스:** 동시성
+
+##  <a name="ctor"></a> nested_scheduler_missing_detach
+
+`nested_scheduler_missing_detach` 개체를 생성합니다.
+
 ```
 explicit _CRTIMP nested_scheduler_missing_detach(_In_z_ const char* _Message) throw();
 
 nested_scheduler_missing_detach() throw();
-```  
-  
-### <a name="parameters"></a>매개 변수  
+```
+
+### <a name="parameters"></a>매개 변수
+
 *메시지 (_m)*<br/>
-오류 설명 메시지입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [Namespace 동시성](concurrency-namespace.md)   
- [Scheduler 클래스](scheduler-class.md)
+오류 설명 메시지입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[concurrency 네임스페이스](concurrency-namespace.md)<br/>
+[Scheduler 클래스](scheduler-class.md)

@@ -15,14 +15,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ad982ee72e93a2779e4f3334984a325514248565
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 02dd1b2cbe4d1da2364d884a0326cdc394bc16af
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315108"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46444881"
 ---
 # <a name="attributes-by-group"></a>그룹별 특성
+
 C + + 특성은 다음 기능 그룹으로 구성 됩니다.
   
 |특성|설명|
@@ -32,10 +33,11 @@ C + + 특성은 다음 기능 그룹으로 구성 됩니다.
 |[OLE DB 소비자 특성](../windows/ole-db-consumer-attributes.md)|코드를 넣을-기반으로 합니다 [OLE DB 소비자 템플릿](../data/oledb/ole-db-consumer-templates-reference.md)-소비자를 만드는 작업 OLE DB 여 테이블과 같은 작업을 수행 하는 데이터에 액세스 하 고 명령을 실행 합니다.|
 |[컴파일러 특성](../windows/compiler-attributes.md)|Visual c + + 컴파일러에서 제공합니다.|
   
- .NET Framework 응용 프로그램에 대 한 사용자 지정 특성을 정의 하는 방법에 대 한 자세한 내용은 [사용자 정의 특성](../windows/user-defined-attributes-cpp-component-extensions.md)합니다.
+.NET Framework 응용 프로그램에 대 한 사용자 지정 특성을 정의 하는 방법에 대 한 자세한 내용은 [사용자 정의 특성](../windows/user-defined-attributes-cpp-component-extensions.md)합니다.
   
 ## <a name="see-also"></a>참고 항목
- [C++ 특성 참조](../windows/cpp-attributes-reference.md)  
- [개념](../windows/attributed-programming-concepts.md)  
- [용도별 특성](../windows/attributes-by-usage.md)  
- [특성 사전순 참조](../windows/attributes-alphabetical-reference.md)
+
+[C++ 특성 참조](../windows/cpp-attributes-reference.md)<br/>
+[개념](../windows/attributed-programming-concepts.md)<br/>
+[용도별 특성](../windows/attributes-by-usage.md)<br/>
+[특성 사전순 참조](../windows/attributes-alphabetical-reference.md)

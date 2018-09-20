@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4422dea0b0bfb07904d0c4defad8f33281a51bec
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: c4dd68a3c678b7877db63167fd2c0d48a1daa7ad
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609864"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46411835"
 ---
 # <a name="makeallocatorallocate-method"></a>MakeAllocator::Allocate 메서드
 
@@ -54,5 +54,5 @@ __forceinline void* Allocate();
 
 ## <a name="see-also"></a>참고 항목
 
-[MakeAllocator 클래스](../windows/makeallocator-class.md)  
+[MakeAllocator 클래스](../windows/makeallocator-class.md)<br/>
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

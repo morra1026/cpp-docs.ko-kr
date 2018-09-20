@@ -18,54 +18,58 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b4e1eaf4bfca27ef22af103a5696ca2a34265d6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e62dc4ad1600b2e5cc7f955c4a419d27482bb557
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069187"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46433220"
 ---
 # <a name="invalidoversubscribeoperation-class"></a>invalid_oversubscribe_operation 클래스
-이 클래스는 `_BeginOversubscription` 매개 변수를 `true`로 설정하여 `Context::Oversubscribe` 메서드를 이전에 호출하지 않고 `_BeginOversubscription` 매개 변수를 `false`로 설정하여 `Context::Oversubscribe` 메서드를 호출하는 경우 발생하는 예외를 설명합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-class invalid_oversubscribe_operation : public std::exception;  
-```  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="public-constructors"></a>Public 생성자  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[invalid_oversubscribe_operation](#ctor)|오버로드됨. `invalid_oversubscribe_operation` 개체를 생성합니다.|  
-  
-## <a name="inheritance-hierarchy"></a>상속 계층  
- `exception`  
-  
- `invalid_oversubscribe_operation`  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** concrt.h  
-  
- **네임스페이스:** 동시성  
-  
-##  <a name="ctor"></a> invalid_oversubscribe_operation 
 
- `invalid_oversubscribe_operation` 개체를 생성합니다.  
-  
-```  
+이 클래스는 `_BeginOversubscription` 매개 변수를 `true`로 설정하여 `Context::Oversubscribe` 메서드를 이전에 호출하지 않고 `_BeginOversubscription` 매개 변수를 `false`로 설정하여 `Context::Oversubscribe` 메서드를 호출하는 경우 발생하는 예외를 설명합니다.
+
+## <a name="syntax"></a>구문
+
+```
+class invalid_oversubscribe_operation : public std::exception;
+```
+
+## <a name="members"></a>멤버
+
+### <a name="public-constructors"></a>Public 생성자
+
+|이름|설명|
+|----------|-----------------|
+|[invalid_oversubscribe_operation](#ctor)|오버로드됨. `invalid_oversubscribe_operation` 개체를 생성합니다.|
+
+## <a name="inheritance-hierarchy"></a>상속 계층
+
+`exception`
+
+`invalid_oversubscribe_operation`
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** concrt.h
+
+**네임스페이스:** 동시성
+
+##  <a name="ctor"></a> invalid_oversubscribe_operation
+
+`invalid_oversubscribe_operation` 개체를 생성합니다.
+
+```
 explicit _CRTIMP invalid_oversubscribe_operation(_In_z_ const char* _Message) throw();
 
- 
 invalid_oversubscribe_operation() throw();
-```  
-  
-### <a name="parameters"></a>매개 변수  
+```
+
+### <a name="parameters"></a>매개 변수
+
 *메시지 (_m)*<br/>
-오류 설명 메시지입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [concurrency 네임스페이스](concurrency-namespace.md)
+오류 설명 메시지입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[concurrency 네임스페이스](concurrency-namespace.md)

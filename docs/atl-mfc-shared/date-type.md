@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d5a6ade991e3a2def588bdd3139cbea8089d3124
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: fe80a16f0085e37feaf7c80611fa303f1d3bf1ab
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758013"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425771"
 ---
 # <a name="date-type"></a>날짜 형식
 
@@ -76,6 +76,6 @@ Automation에서 이러한 날짜 및 시간 형식으로 작업 하는 경우 �
 
 ## <a name="see-also"></a>참고 항목
 
-[날짜 및 시간](../atl-mfc-shared/date-and-time.md)   
+[날짜 및 시간](../atl-mfc-shared/date-and-time.md)<br/>
 [COleDateTime 클래스](../atl-mfc-shared/reference/coledatetime-class.md)
 

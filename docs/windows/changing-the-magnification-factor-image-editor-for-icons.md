@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 561c5c46d0486718cbe05af1507459c26babea8b
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: ee905c88a9dc2cdd8d05e3b60bbc07259c17e850
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315277"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385562"
 ---
 # <a name="changing-the-magnification-factor-image-editor-for-icons"></a>확대 비율 변경(아이콘에 대한 이미지 편집기)
 
@@ -43,5 +43,5 @@ ms.locfileid: "44315277"
 
 ## <a name="see-also"></a>참고 항목
 
-[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)  
+[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [창](../windows/window-panes-image-editor-for-icons.md)

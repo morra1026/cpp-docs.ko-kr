@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 350f1c7c844bd386191b2a236f5bc4ada4e1672a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 726a44a33be5fe82986d4696c5420e07d5c103ff
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204530"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46416463"
 ---
 # <a name="hidden"></a>hidden
 
@@ -57,7 +57,7 @@ ms.locfileid: "43204530"
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
-[인터페이스 특성](../windows/interface-attributes.md)  
-[클래스 특성](../windows/class-attributes.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
+[인터페이스 특성](../windows/interface-attributes.md)<br/>
+[클래스 특성](../windows/class-attributes.md)<br/>
 [메서드 특성](../windows/method-attributes.md)  

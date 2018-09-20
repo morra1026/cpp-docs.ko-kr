@@ -1,5 +1,5 @@
 ---
-title: 멤버 함수 실행 | Microsoft Docs
+title: 멤버 함수를 실행 합니다. | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a658af47723a9c19218b205a17cb46919d7abd59
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 446b1b6fc2a5265e2c4eb8a608ff8b4f0028c57d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36932288"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408234"
 ---
 # <a name="run-member-function"></a>Run 멤버 함수
-프레임 워크 응용에서 대부분의 시간에는 [실행](../mfc/reference/cwinapp-class.md#run) 클래스의 멤버 함수 [CWinApp](../mfc/reference/cwinapp-class.md)합니다. 초기화 된 후 `WinMain` 호출 `Run` 메시지 루프를 처리할 수 있습니다.  
-  
- `Run` 메시지 루프를 사용할 수 있는 메시지에 대 한 메시지 큐를 확인 돌아가면서 선택 합니다. 메시지를 사용할 수 있는 경우 `Run` 동작에 대 한 디스패치합니다. 사용할 수 있는 메시지가 없을 경우는 더욱 그렇습니다, `Run` 호출 `OnIdle` 수행 유휴 시간 처리 프레임 워크에서 해야 하는 작업을 수행할 합니다. 가 없을 경우 메시지가 및 없는 유휴 처리 작업을 수행 하는 응용 프로그램 일이 발생 될 때까지 대기 합니다. 응용 프로그램이 종료 되 면 `Run` 호출 `ExitInstance`합니다. 이 그림에서 [OnIdle 멤버 함수](../mfc/onidle-member-function.md) 메시지 루프에는 일련의 동작을 보여 줍니다.  
-  
- 메시지 디스패치 메시지의 종류에 따라 달라 집니다. 자세한 내용은 참조 [프레임 워크의 메시지 및 명령](../mfc/messages-and-commands-in-the-framework.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [CWinApp: 응용 프로그램 클래스](../mfc/cwinapp-the-application-class.md)
+
+Framework 응용 프로그램을 대부분의 시간을 소비 합니다 [실행할](../mfc/reference/cwinapp-class.md#run) 클래스의 멤버 함수 [CWinApp](../mfc/reference/cwinapp-class.md)합니다. 초기화 한 다음 `WinMain` 호출 `Run` 메시지 루프를 처리 합니다.
+
+`Run` 메시지 루프를 사용할 수 있는 메시지에 대 한 메시지 큐를 검사 돌아가면서 선택 합니다. 메시지가 사용 가능한 경우 `Run` 작업에 디스패치합니다. 메시지가 사용 가능한 경우는 경우가 물론 `Run` 호출 `OnIdle` 수행 유휴 시간 처리 프레임 워크에서 필요할 수 있는 작업을 수행할 합니다. 가 없는 메시지 및 유휴 프로세스가 작업을 수행 하는 경우 응용 프로그램 일이 발생 될 때까지 대기 합니다. 응용 프로그램이 종료 되 면 `Run` 호출 `ExitInstance`합니다. 에 있는 그림과 [OnIdle 멤버 함수](../mfc/onidle-member-function.md) 메시지 루프의 작업 순서를 보여 줍니다.
+
+메시지 디스패치 메시지의 종류에 따라 달라 집니다. 자세한 내용은 [프레임 워크의 메시지 및 명령](../mfc/messages-and-commands-in-the-framework.md)입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[CWinApp: 응용 프로그램 클래스](../mfc/cwinapp-the-application-class.md)

@@ -19,27 +19,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 052f1578386746f9a4d9892576f09b3b61547289
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fb7e73df0944a7a6c0c7b28c04e43008fcd70b39
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33348637"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46401071"
 ---
 # <a name="methods-of-creating-a-toolbar"></a>도구 모음을 만드는 방법
-MFC 도구 모음을 만드는 두 개의 클래스를 제공: [CToolBar](../mfc/reference/ctoolbar-class.md) 및 [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) (Windows 공용 컨트롤 API 래핑합니다 입니다). `CToolBar` 모든 도구 모음 공용 컨트롤의 기능을 제공 하면;에 대 한 대부분의 필수 공용 컨트롤 설정 및 구조를 처리 하 고 그러나 결과 실행 파일이 일반적으로 보다 커집니다 사용 하 여 만든 `CToolBarCtrl`합니다.  
-  
- `CToolBarCtrl` 일반적으로 결과 더 작은 실행 파일에 사용할 수도 `CToolBarCtrl` MFC 아키텍처에 도구 모음을 통합 하지 않을 경우. 사용 하려는 경우 `CToolBarCtrl` MFC 아키텍처에 도구 모음을 통합 하 고, MFC에 도구 모음 컨트롤 조작 통신 하기 위해 추가 주의 해야 합니다. 이 통신이 어렵습니다. 그러나 사용할 때 필요 하지 않은 추가 작업은 `CToolBar`합니다.  
-  
- Visual c + + 도구 모음 공용 컨트롤을 활용 하는 두 가지를 제공 합니다.  
-  
--   사용 하 여 도구 모음 만들기 `CToolBar`, 한 다음 호출 [CToolBar::GetToolBarCtrl](../mfc/reference/ctoolbar-class.md#gettoolbarctrl) 에 액세스 하는 `CToolBarCtrl` 멤버 함수입니다.  
-  
--   사용 하 여 도구 모음 만들기 [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)의 생성자입니다.  
-  
- 두 방법 중 하나는 도구 모음 컨트롤의 멤버 함수에 액세스할 수 있습니다. 호출 하는 경우 `CToolBar::GetToolBarCtrl`, 반환에 대 한 참조는 `CToolBarCtrl` 개체 멤버 함수의 집합 중 하나를 사용할 수 있도록 합니다. 참조 [CToolBar](../mfc/reference/ctoolbar-class.md) 생성 하 고 사용 하 여 도구 모음 만들기에 대 한 내용은 `CToolBar`합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [CToolBarCtrl 사용](../mfc/using-ctoolbarctrl.md)   
- [컨트롤](../mfc/controls-mfc.md)
+
+MFC 도구 모음을 만들려면 두 클래스를 제공 합니다. [CToolBar](../mfc/reference/ctoolbar-class.md) 및 [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) (하는 Windows 공용 컨트롤 API를 래핑하여). `CToolBar` 모든 도구 모음 공용 컨트롤의 기능을 제공 하면;에 대 한 다양 한 일반적인 필수 컨트롤 설정 및 구조를 처리 하 고 그러나 결과 실행 파일 일반적으로 보다 커지는 경우가 사용 하 여 만든 `CToolBarCtrl`합니다.
+
+`CToolBarCtrl` 일반적으로 결과를 더 작은 실행 파일을 사용할 수도 `CToolBarCtrl` MFC 아키텍처에 도구 모음을 통합 하지 않을 경우. 사용 하려는 경우 `CToolBarCtrl` MFC 아키텍처에 도구 모음을 통합 하 고, mfc 도구 모음 컨트롤 조작에 전달할 추가 주의 해야 합니다. 이 통신; 어렵지 않습니다. 그러나 사용 하는 경우에 필요 없는 추가 작업 것 `CToolBar`입니다.
+
+Visual c + + 도구 모음 공용 컨트롤을 활용 하는 두 가지를 제공 합니다.
+
+- 사용 하 여 도구 모음을 만듭니다 `CToolBar`, 호출 [CToolBar::GetToolBarCtrl](../mfc/reference/ctoolbar-class.md#gettoolbarctrl) 에 액세스 하는 `CToolBarCtrl` 멤버 함수입니다.
+
+- 사용 하 여 도구 모음을 만듭니다 [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)의 생성자입니다.
+
+두 방법 중 하나는 도구 모음 컨트롤의 멤버 함수에 액세스할 수 있습니다. 호출 하는 경우 `CToolBar::GetToolBarCtrl`에 대 한 참조를 반환 하는 `CToolBarCtrl` 개체 멤버 함수의 집합 중 하나를 사용할 수 있습니다. 참조 [CToolBar](../mfc/reference/ctoolbar-class.md) 생성 하 고 사용 하 여 도구 모음 만들기에 대 한 내용은 `CToolBar`합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[CToolBarCtrl 사용](../mfc/using-ctoolbarctrl.md)<br/>
+[컨트롤](../mfc/controls-mfc.md)
 

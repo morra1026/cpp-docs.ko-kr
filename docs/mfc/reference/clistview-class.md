@@ -22,94 +22,105 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9087642a529911c0c0a885c4613a3dbf2e92311f
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 5fbb9561111a75011f934aeb0ce972829132cb87
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37037624"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46423405"
 ---
 # <a name="clistview-class"></a>CListView 클래스
-및 목록 컨트롤의 사용을 간소화 [CListCtrl](../../mfc/reference/clistctrl-class.md), MFC의 문서 뷰 아키텍처와 목록 컨트롤 기능을 캡슐화 하는 클래스입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-class CListView : public CCtrlView  
-```  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="public-constructors"></a>Public 생성자  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[CListView::CListView](#clistview)|`CListView` 개체를 생성합니다.|  
-  
-### <a name="public-methods"></a>Public 메서드  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[CListView::GetListCtrl](#getlistctrl)|뷰와 연결 된 목록 컨트롤을 반환 합니다.|  
-  
-### <a name="protected-methods"></a>보호된 메서드  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[CListView::RemoveImageList](#removeimagelist)|목록 보기에서 지정 된 이미지 목록을 제거합니다.|  
-  
-## <a name="remarks"></a>설명  
- 이 아키텍처에 대 한 자세한 내용은 참조에 대 한 개요는 [CView](../../mfc/reference/cview-class.md) 클래스와 있습니다 언급 된 상호 참조 합니다.  
-  
-## <a name="inheritance-hierarchy"></a>상속 계층  
- [CObject](../../mfc/reference/cobject-class.md)  
-  
- [CCmdTarget](../../mfc/reference/ccmdtarget-class.md)  
-  
- [CWnd](../../mfc/reference/cwnd-class.md)  
-  
- [CView](../../mfc/reference/cview-class.md)  
-  
- [CCtrlView](../../mfc/reference/cctrlview-class.md)  
-  
- `CListView`  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** afxcview.h  
-  
-##  <a name="clistview"></a>  CListView::CListView  
- `CListView` 개체를 생성합니다.  
-  
-```  
+
+및 목록 컨트롤의 사용을 간소화 [CListCtrl](../../mfc/reference/clistctrl-class.md), MFC의 문서 뷰 아키텍처를 사용 하 여 목록 컨트롤 기능을 캡슐화 하는 클래스입니다.
+
+## <a name="syntax"></a>구문
+
+```
+class CListView : public CCtrlView
+```
+
+## <a name="members"></a>멤버
+
+### <a name="public-constructors"></a>Public 생성자
+
+|이름|설명|
+|----------|-----------------|
+|[CListView::CListView](#clistview)|`CListView` 개체를 생성합니다.|
+
+### <a name="public-methods"></a>Public 메서드
+
+|이름|설명|
+|----------|-----------------|
+|[CListView::GetListCtrl](#getlistctrl)|뷰와 연결 된 목록 컨트롤을 반환 합니다.|
+
+### <a name="protected-methods"></a>보호된 메서드
+
+|이름|설명|
+|----------|-----------------|
+|[CListView::RemoveImageList](#removeimagelist)|목록 보기에서 지정 된 이미지 목록을 제거합니다.|
+
+## <a name="remarks"></a>설명
+
+이 아키텍처에 대 한 자세한 내용은 참조에 대 한 개요는 [CView](../../mfc/reference/cview-class.md) 클래스 및 있습니다 언급 상호 참조 합니다.
+
+## <a name="inheritance-hierarchy"></a>상속 계층
+
+[CObject](../../mfc/reference/cobject-class.md)
+
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
+
+[CWnd](../../mfc/reference/cwnd-class.md)
+
+[CView](../../mfc/reference/cview-class.md)
+
+[CCtrlView](../../mfc/reference/cctrlview-class.md)
+
+`CListView`
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** afxcview.h
+
+##  <a name="clistview"></a>  CListView::CListView
+
+`CListView` 개체를 생성합니다.
+
+```
 CListView();
-```  
-  
-##  <a name="getlistctrl"></a>  CListView::GetListCtrl  
- 뷰와 연결 된 목록 컨트롤에 대 한 참조를 가져오려면이 함수를 호출 합니다.  
-  
-```  
-CListCtrl& GetListCtrl() const;  
-```  
-  
-### <a name="return-value"></a>반환 값  
- 뷰와 연결 된 목록 컨트롤에 대 한 참조입니다.  
-  
-### <a name="example"></a>예  
- [!code-cpp[NVC_MFCListView#7](../../atl/reference/codesnippet/cpp/clistview-class_1.cpp)]  
-  
-##  <a name="removeimagelist"></a>  CListView::RemoveImageList  
- 목록 보기에서 지정 된 이미지 목록을 제거합니다.  
-  
-```  
+```
+
+##  <a name="getlistctrl"></a>  CListView::GetListCtrl
+
+뷰와 연결 된 목록 컨트롤에 대 한 참조를 가져오려면이 함수를 호출 합니다.
+
+```
+CListCtrl& GetListCtrl() const;
+```
+
+### <a name="return-value"></a>반환 값
+
+뷰와 연결 된 목록 컨트롤에 대 한 참조입니다.
+
+### <a name="example"></a>예제
+
+[!code-cpp[NVC_MFCListView#7](../../atl/reference/codesnippet/cpp/clistview-class_1.cpp)]
+
+##  <a name="removeimagelist"></a>  CListView::RemoveImageList
+
+목록 보기에서 지정 된 이미지 목록을 제거합니다.
+
+```
 void RemoveImageList(int nImageList);
-```  
-  
-### <a name="parameters"></a>매개 변수  
- *nImageList*  
- 제거할 이미지의 0부터 시작 하는 인덱스입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [MFC 샘플 ROWLIST](../../visual-cpp-samples.md)   
- [CCtrlView 클래스](../../mfc/reference/cctrlview-class.md)   
- [계층 구조 차트](../../mfc/hierarchy-chart.md)   
- [CCtrlView 클래스](../../mfc/reference/cctrlview-class.md)
+```
+
+### <a name="parameters"></a>매개 변수
+
+*nImageList*<br/>
+제거할 이미지의 0부터 시작 하는 인덱스입니다.
+
+## <a name="see-also"></a>참고 항목
+
+[MFC 샘플 ROWLIST](../../visual-cpp-samples.md)<br/>
+[CCtrlView 클래스](../../mfc/reference/cctrlview-class.md)<br/>
+[계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
+[CCtrlView 클래스](../../mfc/reference/cctrlview-class.md)

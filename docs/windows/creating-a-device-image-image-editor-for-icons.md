@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 753971a7b010c8e3af1c36c56833a123c182a708
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: b641644818648143fe6153f6cfbfa0859757f92b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318124"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394753"
 ---
 # <a name="creating-a-device-image-image-editor-for-icons"></a>장치 이미지 만들기(아이콘에 대한 이미지 편집기)
 
@@ -53,6 +53,6 @@ ms.locfileid: "44318124"
 
 ## <a name="see-also"></a>참고 항목
 
-[아이콘 및 커서: 디스플레이 장치용 이미지 리소스](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)  
-[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)  
+[아이콘 및 커서: 디스플레이 장치용 이미지 리소스](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)<br/>
+[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [아이콘 및 커서: 디스플레이 장치용 이미지 리소스](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)

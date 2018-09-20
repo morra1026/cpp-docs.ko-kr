@@ -12,32 +12,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c809f297da5059a98915e8055dfe23f45074366f
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 6815afe12344f94ed33d6b9260472f3e29eb72a0
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691605"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46406362"
 ---
 # <a name="2728-copyprivate"></a>2.7.2.8 copyprivate
-**copyprivate** 절 다른 구성원에 게 팀의 멤버 중 하나에서 값을 브로드캐스트할 개인 변수를 사용 하는 메커니즘을 제공 합니다. 것 (예를 들어, 각 수준에서 서로 다른 변수를 요구 하는 재귀)에서 어려울 수는 공유 변수를 제공 하는 경우 값에 대 한 공유 변수를 사용 하는 대신 합니다. **copyprivate** 절에 나타날 수는 **단일** 지시문입니다.  
-  
- 구문은 **copyprivate** 절은 다음과 같습니다.  
-  
-```  
-  
-copyprivate(  
-variable-list  
-)  
-  
-```  
-  
- 효과 **copyprivate** 연관 구조화 된 블록으로 실행 된 후 해당 변수 목록에 있는 변수에서 절이 발생는 **단일** 를 만드는 앞의 스레드 중 하나는 팀 장벽 구문이 끝날 때 남은 합니다. 그런 다음의 각 변수에 대해 팀의 다른 모든 스레드는 *변수 목록*, 해당 변수에 되 정의한 (처럼 할당)는 해당 값을 가진 구문이 실행 하는 스레드에서 변수 구조적 블록입니다.  
-  
- 에 대 한 제한 된 **copyprivate** 절은 다음과 같습니다.  
-  
--   에 지정 된 변수는 **copyprivate** 절에 나타나지 않아야는 **개인** 또는 **firstprivate** 동일한 컴퓨터에 대해 절 **단일**지시문입니다.  
-  
--   경우는 **단일** 지시문는 **copyprivate** 절에에서가 있으면 동적 병렬 영역 범위에 지정 된 모든 변수는 **copyprivate** 절 이어야 합니다 바깥쪽 컨텍스트에서 private입니다.  
-  
--   에 지정 된 변수는 **copyprivate** 절 액세스할 수 있는 명확한 복사 할당 연산자가 있어야 합니다.
+
+합니다 **copyprivate** 절 개인 변수를 사용 하 여 다른 구성원에 게 팀의 한 멤버에서 값을 브로드캐스트 메커니즘을 제공 합니다. 경우에 공유 변수를 제공 (예를 들어, 각 수준에서 서로 다른 변수를 요구 하는 재귀)에서 어려운 값에 대 한 공유 변수를 사용 하는 대신 것입니다. 합니다 **copyprivate** 절 에서만 나타날 수 있습니다 합니다 **단일** 지시문입니다.
+
+구문의 합니다 **copyprivate** 절은 다음과 같습니다.
+
+```
+
+copyprivate(
+variable-list
+)
+
+```
+
+미치는 **copyprivate** 해당 변수 목록에서 변수에서 절을 연관 구조화 된 블록으로 실행 된 후 발생 합니다 **단일** 생성, 앞에 있는 스레드 중 하나는 팀이 해당 구문의 끝 장벽을 남았습니다. 그런 다음, 각 변수에 대 한 팀의 다른 모든 스레드는 *변수 목록*, 해당 변수가 정의한 (처럼 할당) 해당 값을 사용 하 여 구조적 구문을 실행 하는 스레드에서 변수 블록입니다.
+
+에 대 한 제한 된 **copyprivate** 절은 다음과 같습니다.
+
+- 에 지정 된 변수를 **copyprivate** 절에 나타나지 않아야는 **개인** 하거나 **firstprivate** 동일한 절 **단일**지시문입니다.
+
+- 경우는 **단일** 지시문에 **copyprivate** 절 동적 병렬 영역 범위에서 발생 하면에 지정 된 모든 변수는 **copyprivate** 절 이어야 합니다 바깥쪽 컨텍스트에서 private.
+
+- 에 지정 된 변수를 **copyprivate** 절에는 액세스할 수 있는 명확한 복사 할당 연산자는 있어야 합니다.

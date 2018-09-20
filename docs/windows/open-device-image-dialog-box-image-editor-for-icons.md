@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 476df4fa9d2e31b25eb8791e521081eedd2642c6
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: b87de96f260bdd5bf0faaad6c590b0bd3d6f0dfe
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318579"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46395013"
 ---
 # <a name="open-ltdevicegt-image-dialog-box-c-image-editor-for-icons"></a>오픈 &lt;장치&gt; 이미지 대화 상자 (c + +) (아이콘에 대 한 이미지 편집기)
 
@@ -38,5 +38,5 @@ ms.locfileid: "44318579"
 
 ## <a name="see-also"></a>참고 항목
 
-[이미지 메뉴](../windows/image-menu-image-editor-for-icons.md)  
+[이미지 메뉴](../windows/image-menu-image-editor-for-icons.md)<br/>
 [아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)

@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 63da1f6ffb684cd2971808f4a56167e19f7bd347
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 329f1d21489b57130531db20014e249588f101a6
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313405"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400512"
 ---
 # <a name="including-shared-read-only-or-calculated-symbols"></a>공유(읽기 전용) 또는 계산된 기호 포함
 
@@ -82,7 +82,7 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[기호 이름 제한](../windows/symbol-name-restrictions.md)  
-[기호 값 제한](../windows/symbol-value-restrictions.md)  
-[미리 정의된 기호 ID](../windows/predefined-symbol-ids.md)  
+[기호 이름 제한](../windows/symbol-name-restrictions.md)<br/>
+[기호 값 제한](../windows/symbol-value-restrictions.md)<br/>
+[미리 정의된 기호 ID](../windows/predefined-symbol-ids.md)<br/>
 [기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)

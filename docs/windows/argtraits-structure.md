@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e3eade86404bcd4fef7ce3356d36a43ac6a59a8f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 047754338566d476fa8e832d58dd2d4cd0776a63
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597757"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46418400"
 ---
 # <a name="argtraits-structure"></a>ArgTraits 구조체
 
@@ -120,37 +120,37 @@ struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2,
 
 ### <a name="parameters"></a>매개 변수
 
-*TMemberFunction*  
+*TMemberFunction*<br/>
 Typename 매개 변수 수와 일치 하는 ArgTraits 구조체에 대 한 `Invoke` 메서드 시그니처입니다.
 
-*TDelegateInterface*  
+*TDelegateInterface*<br/>
 대리자 인터페이스입니다.
 
-*TArg1*  
+*TArg1*<br/>
 첫 번째 인수 형식의 `Invoke` 메서드.
 
-*TArg2*  
+*TArg2*<br/>
 형식의 두 번째 인수는 `Invoke` 메서드.
 
-*TArg3*  
+*TArg3*<br/>
 세 번째 인수 형식의 `Invoke` 메서드.
 
-*TArg4*  
+*TArg4*<br/>
 네 번째 인수의 형식은 `Invoke` 메서드.
 
-*TArg5*  
+*TArg5*<br/>
 다섯 번째 인수의 형식은 `Invoke` 메서드.
 
-*TArg6*  
+*TArg6*<br/>
 여섯 번째 인수의 형식은 `Invoke` 메서드.
 
-*TArg7*  
+*TArg7*<br/>
 일곱 번째 인수의 형식은 `Invoke` 메서드.
 
-*TArg8*  
+*TArg8*<br/>
 여덟 번째 인수의 형식은 `Invoke` 메서드.
 
-*TArg9*  
+*TArg9*<br/>
 아홉 번째 인수의 형식은 `Invoke` 메서드.
 
 ## <a name="remarks"></a>설명

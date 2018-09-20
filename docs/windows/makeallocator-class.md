@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e27be8eaddfc22474f15d7f9358050273252bf8a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 460e2cdef4d0ba4252ceb8a4b7fe6defc25c183a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610326"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46375375"
 ---
 # <a name="makeallocator-class"></a>MakeAllocator 클래스
 
@@ -35,7 +35,7 @@ template<
    typename T,
    bool hasWeakReferenceSupport =
          !__is_base_of(RuntimeClassFlags<InhibitWeakReference>, T)>
- class MakeAllocator;
+class MakeAllocator;
 
 template<typename T>
 class MakeAllocator<T, false>;
@@ -46,10 +46,10 @@ class MakeAllocator<T, true>;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 형식 이름.
 
-*hasWeakReferenceSupport*  
+*hasWeakReferenceSupport*<br/>
 **true** ; 약한 참조를 지 원하는 개체에 대 한 메모리를 할당 하려면 **false** 약한 참조를 지원 하지 않는 개체에 대 한 메모리를 할당할 수 있습니다.
 
 ## <a name="remarks"></a>설명

@@ -14,54 +14,56 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0edef5dc0c97985ba81b28c9df5233a8a2da6933
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 320f595606789ce2a3726971dfa21d7a92ea2bb1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343614"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46434026"
 ---
 # <a name="dialog-sample-list"></a>대화 상자 샘플 목록
-대화 상자 및 속성 시트를 설명 하는 다음 샘플 프로그램을 참조 하십시오.  
-  
- *대화 상자와 MDI 샘플 응용 프로그램*  
-  
--   [SCRIBBLE](../visual-cpp-samples.md)  
-  
- *모덜리스 대화 상자*  
-  
--   [모덜리스](../visual-cpp-samples.md)  
-  
- *속성 시트 대화 상자 (탭 대화 상자)*  
-  
--   [PROPDLG](../visual-cpp-samples.md)  
-  
--   [CMNCTRL1](../visual-cpp-samples.md)  
-  
--   [CMNCTRL2](../visual-cpp-samples.md)  
-  
- *대화 상자 기반 응용 프로그램*  
-  
--   [CMNCTRL1](../visual-cpp-samples.md)  
-  
--   [CMNCTRL2](../visual-cpp-samples.md)  
-  
- *대화 상자 컨트롤*  
-  
--   [CMNCTRL1](../visual-cpp-samples.md)  
-  
--   [CMNCTRL2](../visual-cpp-samples.md)  
-  
--   [CTRLTEST](../visual-cpp-samples.md)  
-  
- *대화 상자와 비슷한 폼 보기*  
-  
--   [VIEWEX](../visual-cpp-samples.md)  
-  
- *메모리 내 대화 상자 템플릿*  
-  
--   [DLGTEMPL](../visual-cpp-samples.md)  
-  
-## <a name="see-also"></a>참고 항목  
- [대화 상자](../mfc/dialog-boxes.md)
+
+대화 상자 및 속성 시트를 보여 주는 다음 예제 프로그램을 참조 하세요.
+
+*대화 상자를 사용 하 여 MDI 샘플 응용 프로그램*
+
+- [SCRIBBLE](../visual-cpp-samples.md)
+
+*모덜리스 대화 상자*
+
+- [모덜리스](../visual-cpp-samples.md)
+
+*속성 시트 대화 상자 (탭 대화 상자)*
+
+- [PROPDLG](../visual-cpp-samples.md)
+
+- [CMNCTRL1](../visual-cpp-samples.md)
+
+- [CMNCTRL2](../visual-cpp-samples.md)
+
+*대화 상자 기반 응용 프로그램*
+
+- [CMNCTRL1](../visual-cpp-samples.md)
+
+- [CMNCTRL2](../visual-cpp-samples.md)
+
+*대화 상자 컨트롤*
+
+- [CMNCTRL1](../visual-cpp-samples.md)
+
+- [CMNCTRL2](../visual-cpp-samples.md)
+
+- [CTRLTEST](../visual-cpp-samples.md)
+
+*대화 상자와 비슷한 폼 뷰*
+
+- [VIEWEX](../visual-cpp-samples.md)
+
+*메모리 내 대화 상자 템플릿*
+
+- [DLGTEMPL](../visual-cpp-samples.md)
+
+## <a name="see-also"></a>참고 항목
+
+[대화 상자](../mfc/dialog-boxes.md)
 

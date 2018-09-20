@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: da35e2c257fef72ea75e05768960098111727359
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 80b04600f1f464220b00749903f27826855f6000
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611627"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400265"
 ---
 # <a name="modulegenericreleasenotifier-class"></a>Module::GenericReleaseNotifier 클래스
 
@@ -37,7 +37,7 @@ class GenericReleaseNotifier : public ReleaseNotifier;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 이벤트 처리기의 위치를 포함하는 데이터 멤버 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -56,7 +56,7 @@ class GenericReleaseNotifier : public ReleaseNotifier;
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[Module::GenericReleaseNotifier::callback_ 데이터 멤버](../windows/module-genericreleasenotifier-callback-data-member.md)|람다, 함수 또는 함수 포인터 이벤트 처리기에 연결 된 현재 보유 **module:: genericreleasenotifier** 개체입니다.|
 
@@ -73,4 +73,5 @@ class GenericReleaseNotifier : public ReleaseNotifier;
 **네임스페이스:** Microsoft::WRL
 
 ## <a name="see-also"></a>참고 항목
+
 [Module 클래스](../windows/module-class.md)

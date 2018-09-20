@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7a57cb6c72d7d444c345140f4a738a3d4a3232c0
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 95c3d15414dbb312c60029a86707c1d32df56adc
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315615"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46405517"
 ---
 # <a name="default-control-events"></a>기본 컨트롤 이벤트
 
@@ -63,9 +63,9 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[대화 상자 컨트롤의 멤버 변수 정의](../windows/defining-member-variables-for-dialog-controls.md)  
-[사용자 인터페이스 개체와 관련된 메시지 형식](../mfc/reference/message-types-associated-with-user-interface-objects.md)  
-[메시지 처리기 편집](../mfc/reference/editing-a-message-handler.md)  
-[리플렉트된 메시지의 메시지 처리기 정의](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md)  
-[새 컨트롤 클래스 기반의 변수 선언](../mfc/reference/declaring-a-variable-based-on-your-new-control-class.md)  
+[대화 상자 컨트롤의 멤버 변수 정의](../windows/defining-member-variables-for-dialog-controls.md)<br/>
+[사용자 인터페이스 개체와 관련된 메시지 형식](../mfc/reference/message-types-associated-with-user-interface-objects.md)<br/>
+[메시지 처리기 편집](../mfc/reference/editing-a-message-handler.md)<br/>
+[리플렉트된 메시지의 메시지 처리기 정의](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md)<br/>
+[새 컨트롤 클래스 기반의 변수 선언](../mfc/reference/declaring-a-variable-based-on-your-new-control-class.md)<br/>
 [가상 함수 재정의](../ide/overriding-a-virtual-function-visual-cpp.md)

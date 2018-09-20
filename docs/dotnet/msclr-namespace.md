@@ -24,15 +24,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 0ff10b12d9c77c1e17e278276d0ab7f334f2f9ce
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8177029bb114dfa0a2dc826d45ec948599902f55
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33132910"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46390827"
 ---
 # <a name="msclr-namespace"></a>msclr 네임스페이스
-`msclr` 네임 스페이스는 c + + 지원 라이브러리의 모든 클래스를 포함 합니다. 이러한 클래스에 대 한 자세한 내용은 참조 하십시오. [c + + 지원 라이브러리](../dotnet/cpp-support-library.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [C++ 지원 라이브러리](../dotnet/cpp-support-library.md)
+
+`msclr` 네임 스페이스는 c + + 지원 라이브러리의 모든 클래스를 포함 합니다. 이러한 클래스에 대 한 자세한 내용은 참조 하세요. [c + + 지원 라이브러리](../dotnet/cpp-support-library.md)합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[C++ 지원 라이브러리](../dotnet/cpp-support-library.md)

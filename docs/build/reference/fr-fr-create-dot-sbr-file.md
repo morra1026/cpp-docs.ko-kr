@@ -23,12 +23,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5691a87f7350c7816e8ddb58d5591e16cc18189
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6afcd4aa8ba2e86d687739bc3891f45f2da5672c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45709613"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46379167"
 ---
 # <a name="fr-fr-create-sbr-file"></a>/FR, /Fr(.Sbr 파일 만들기)
 
@@ -70,7 +70,7 @@ ms.locfileid: "45709613"
 
 ## <a name="see-also"></a>참고 항목
 
-[출력 파일 (/ F) 옵션](../../build/reference/output-file-f-options.md)
+[출력 파일(/F) 옵션](../../build/reference/output-file-f-options.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
 [경로 이름 지정](../../build/reference/specifying-the-pathname.md)

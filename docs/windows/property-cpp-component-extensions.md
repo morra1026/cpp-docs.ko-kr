@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6db0aa5801a8eca896282b65e4d9f156e9b38318
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6f9c444861587e21724fe5f6aff545935fed6086
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212814"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46420506"
 ---
 # <a name="property--c-component-extensions"></a>속성(C++ 구성 요소 확장)
 
@@ -33,15 +33,15 @@ ms.locfileid: "43212814"
 
 다음 형식의 속성 중 하나를 선언할 수 있습니다.
 
-*단순 속성*  
+*단순 속성*<br/>
 기본적으로 만듭니다는 *set 접근자* 속성 값을 할당 하는 *get 접근자* 속성 값 및 속성 값을 포함 하는 컴파일러에서 생성 된 전용 데이터 멤버를 검색 하는 합니다.
 
-*속성 블록*  
+*속성 블록*<br/>
 사용자 정의 get 및/또는 set 접근자를 만드는 데 사용합니다. 속성은 get 및 set 접근자를 둘 다 정의하면 읽기/쓰기이고, get 접근자만 정의하는 읽기 전용이고, set 접근자만 정의하면 쓰기 전용입니다.
 
 속성 값을 포함하려면 데이터 멤버를 명시적으로 선언해야 합니다.
 
-*인덱싱된 속성*  
+*인덱싱된 속성*<br/>
 하나 이상의 인덱스로 지정된 속성 값을 가져오고 설정하는 데 사용할 수 있는 속성 블록입니다.
 
 인덱싱된 속성을 가진 사용자 정의 속성 이름을 만들 수 있습니다 또는 *기본* 속성 이름입니다. 기본 인덱스 속성의 이름은 속성이 정의된 클래스의 이름입니다. 기본 속성을 선언 하려면 지정 된 **기본** 속성 이름 대신 키워드입니다.
@@ -71,27 +71,27 @@ property type default[index_list] {
 
 ### <a name="parameters"></a>매개 변수
 
-*type*  
+*type*<br/>
 속성 값의 데이터 형식 및 결과적으로 속성 자체입니다.
 
-*property_name*  
+*property_name*<br/>
 속성의 이름입니다.
 
-*액세스 한정자*  
+*액세스 한정자*<br/>
 액세스 한정자입니다. 유효한 한정자는 **정적** 하 고 **가상**합니다.
 
 Get 또는 set 접근자 일치할 필요가 합니다 **가상** 한정자가 있지만에 동의 해야 합니다는 **정적** 한정자.
 
-*상속 한정자*  
+*상속 한정자*<br/>
 상속 한정자입니다. 유효한 한정자는 **추상** 하 고 **봉인**합니다.
 
-*index_list*  
+*index_list*<br/>
 인덱스 하나 이상의 쉼표로 구분된 목록입니다. 각 인덱스는 인덱스 형식 및 속성 메서드 본문에서 사용할 수 있는 선택적 식별자로 구성됩니다.
 
-*값*  
+*값*<br/>
 set 작업에서 속성에 할당하거나 get 작업에서 검색할 값입니다.
 
-*property_body*  
+*property_body*<br/>
 set 또는 get 접근자의 속성 메서드 본문입니다. *property_body* 사용할 수는 *index_list* 기본 속성 데이터 멤버에 액세스 하거나 사용자 정의 처리에서 매개 변수로 합니다.
 
 ## <a name="windows-runtime"></a>Windows 런타임
@@ -123,16 +123,16 @@ modifier property type default[index];
 
 ### <a name="parameters"></a>매개 변수
 
-*한정자*  
+*한정자*<br/>
 속성 선언 또는 get/set 접근자 메서드에 사용할 수 있는 한정자입니다. 가능한 값은 **정적** 하 고 **가상**합니다.
 
-*type*  
+*type*<br/>
 속성으로 나타내는 값의 형식입니다.
 
-*property_name*  
+*property_name*<br/>
 raise 메서드에 대한 매개 변수는 대리자의 서명과 일치해야 합니다.
 
-*index_list*  
+*index_list*<br/>
 대괄호(아래 첨자 연산자, ([])) 안에 지정된 인덱스 하나 이상의 쉼표로 구분된 목록입니다. 각 인덱스의 경우 형식 및 선택적으로 속성 메서드 본문에서 사용할 수 있는 식별자를 지정합니다.
 
 ### <a name="remarks"></a>설명

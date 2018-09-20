@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 285444b5f9bfa29ab00fc6a2ca1b644208bc95a8
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: fae55d0b4ce4a766952afcec7f78ec6b20fbb258
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315797"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46426642"
 ---
 # <a name="creating-a-new-dialog-box-c"></a>새 대화 상자 (c + +) 만들기
 
@@ -50,6 +50,6 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[방법: 리소스 파일 만들기](../windows/how-to-create-a-resource.md)  
-[리소스 파일](../windows/resource-files-visual-studio.md)  
+[방법: 리소스 파일 만들기](../windows/how-to-create-a-resource.md)<br/>
+[리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 [대화 상자 편집기](../windows/dialog-editor.md)

@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 345da5de492c33107effffb9c97b2fe60906e899
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: a01e6cf423aece9fba74c4b81fa247d57844e107
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42545854"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46439889"
 ---
 # <a name="nosmartpointers"></a>no_smart_pointers
 **C + + 전용**  
@@ -42,5 +42,5 @@ no_smart_pointers
   
 ## <a name="see-also"></a>참고 항목  
  
-[#import 특성](../preprocessor/hash-import-attributes-cpp.md)   
+[#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import 지시문](../preprocessor/hash-import-directive-cpp.md)

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 21b9efe8fc1ce5cb7ab90edd30b38253d44dabc0
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 2f937c2cdaa4bb7f31b39b8a28c657274830fc36
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106810"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46446610"
 ---
 # <a name="event-maps"></a>이벤트 맵
 
@@ -89,10 +89,10 @@ BEGIN_EVENT_MAP(theClass,  baseClass)
 
 ### <a name="parameters"></a>매개 변수
 
-*theClass*  
+*theClass*<br/>
 이 이벤트 매핑할 컨트롤 클래스의 이름을 지정 합니다.
 
-*baseClass*  
+*baseClass*<br/>
 기본 클래스의 이름을 지정 *theClass*합니다.
 
 ### <a name="remarks"></a>설명
@@ -127,13 +127,13 @@ EVENT_CUSTOM(pszName, pfnFire,  vtsParams)
 
 ### <a name="parameters"></a>매개 변수
 
-*pszName*  
+*pszName*<br/>
 이벤트의 이름입니다.
 
-*pfnFire*  
+*pfnFire*<br/>
 함수를 실행 하는 이벤트의 이름입니다.
 
-*vtsParams*  
+*vtsParams*<br/>
 함수의 매개 변수 목록을 지정 하는 하나 이상의 상수의 공백으로 구분 된 목록입니다.
 
 ### <a name="remarks"></a>설명
@@ -197,16 +197,16 @@ EVENT_CUSTOM_ID(
 
 ### <a name="parameters"></a>매개 변수
 
-*pszName*  
+*pszName*<br/>
 이벤트의 이름입니다.
 
-*dispid*  
+*dispid*<br/>
 이벤트를 시작 하는 경우 컨트롤에서 사용 하는 디스패치 ID입니다.
 
-*pfnFire*  
+*pfnFire*<br/>
 함수를 실행 하는 이벤트의 이름입니다.
 
-*vtsParams*  
+*vtsParams*<br/>
 매개 변수 목록을 이벤트가 발생 하는 경우 컨트롤 컨테이너에 전달 합니다.
 
 ### <a name="remarks"></a>설명
@@ -268,10 +268,10 @@ ON_STDOLEVERB(iVerb, memberFxn)
 
 ### <a name="parameters"></a>매개 변수
 
-*iVerb*  
+*iVerb*<br/>
 재정의 되는 동사에 대 한 표준 동사 인덱스입니다.
 
-*memberFxn*  
+*memberFxn*<br/>
 동사를 호출할 때 프레임 워크에서 호출 하는 함수입니다.
 
 ### <a name="remarks"></a>설명

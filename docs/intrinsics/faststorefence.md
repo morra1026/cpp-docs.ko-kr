@@ -18,40 +18,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc3086a59fe3995fcb5b4fff34891faa6a630f63
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 5047dbb2023272ab03cc7d49f877f0fcc38a7b76
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42541666"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46402189"
 ---
 # <a name="faststorefence"></a>__faststorefence
-**Microsoft 전용**  
-  
- 로드 및 저장 메모리 참조를 모두 포함한 모든 이전 메모리 참조가 후속 메모리 참조 앞에 전역으로 표시되도록 보장합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-void __faststorefence();  
-```  
-  
-## <a name="requirements"></a>요구 사항  
-  
-|내장 함수|아키텍처|  
-|---------------|------------------|  
-|`__faststorefence`|X64|  
-  
- **헤더 파일** \<intrin.h >  
-  
-## <a name="remarks"></a>설명  
- 이 내장 함수 전에 실행된 load 및 store 작업이 실행이 계속되기 전 전역으로 표시되도록 보장하는 전체 메모리 장벽 명령 시퀀스를 생성합니다. 효과는 모든 x64 플랫폼의 `_mm_mfence` 내장 함수와 유사하지만 속도가 더 빠릅니다.  
-  
- AMD64 플랫폼에서는 이 루틴이 `sfence` 명령보다 더 빠른 store fence인 명령을 생성합니다. 시간이 중요한 코드의 경우 AMD64 플랫폼에서만 `_mm_sfence` 대신 이 내장 함수를 사용합니다. Intel x64 플랫폼에서는 `_mm_sfence` 명령이 더 빠릅니다.  
-  
- 이 루틴은 내장 루틴으로만 사용할 수 있습니다.  
-  
-**Microsoft 전용 종료**  
-  
-## <a name="see-also"></a>참고 항목  
- [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)
+
+**Microsoft 전용**
+
+로드 및 저장 메모리 참조를 모두 포함한 모든 이전 메모리 참조가 후속 메모리 참조 앞에 전역으로 표시되도록 보장합니다.
+
+## <a name="syntax"></a>구문
+
+```
+void __faststorefence();
+```
+
+## <a name="requirements"></a>요구 사항
+
+|내장 함수|아키텍처|
+|---------------|------------------|
+|`__faststorefence`|X64|
+
+**헤더 파일** \<intrin.h >
+
+## <a name="remarks"></a>설명
+
+이 내장 함수 전에 실행된 load 및 store 작업이 실행이 계속되기 전 전역으로 표시되도록 보장하는 전체 메모리 장벽 명령 시퀀스를 생성합니다. 효과는 모든 x64 플랫폼의 `_mm_mfence` 내장 함수와 유사하지만 속도가 더 빠릅니다.
+
+AMD64 플랫폼에서는 이 루틴이 `sfence` 명령보다 더 빠른 store fence인 명령을 생성합니다. 시간이 중요한 코드의 경우 AMD64 플랫폼에서만 `_mm_sfence` 대신 이 내장 함수를 사용합니다. Intel x64 플랫폼에서는 `_mm_sfence` 명령이 더 빠릅니다.
+
+이 루틴은 내장 루틴으로만 사용할 수 있습니다.
+
+**Microsoft 전용 종료**
+
+## <a name="see-also"></a>참고 항목
+
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

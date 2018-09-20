@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ac443927c2dcbb00cc01dd3cd63a95441a4a1bf0
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ea891ce5ee5c3570577edf7c2122b2cd39b5c64d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45711817"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378567"
 ---
 # <a name="module-c"></a>module(C++)
 
@@ -52,7 +52,7 @@ ms.locfileid: "45711817"
 
 ### <a name="parameters"></a>매개 변수
 
-*type*  
+*type*<br/>
 (선택 사항) 다음 중 하나일 수 있습니다.
 
 - `dll` 결과 DLL에서 in-process COM 서버로 작동 하도록 허용 하는 함수 및 클래스를 추가 합니다. 기본값입니다.
@@ -63,50 +63,50 @@ ms.locfileid: "45711817"
 
 - `unspecified` 모듈 특성과 관련 된 ATL 코드의 삽입을 사용 하지 않도록 설정: ATL 모듈 클래스, 전역 인스턴스 _AtlModule 및 진입점의 삽입 함수를 가리킵니다. 프로젝트의 기타 특성으로 인한 ATL 코드의 삽입은 허용합니다.
 
-*name*  
+*name*<br/>
 (선택 사항) 라이브러리 블록의 이름입니다.
 
-*version*  
+*version*<br/>
 (선택 사항) 라이브러리 블록에 할당 하려는 버전 번호입니다. 기본값은 1.0입니다.
 
-*uuid*  
+*uuid*<br/>
 라이브러리에 대한 고유 ID입니다. 이 매개 변수를 생략하면 라이브러리에 대한 ID가 자동으로 생성됩니다. 검색 해야 합니다 *uuid* 의 라이브러리 블록의 식별자를 사용 하 여 수행할 수 있습니다 **__uuidof (** *libraryname* **)** 합니다.
 
-*lcid*  
+*lcid*<br/>
 지역화 매개 변수입니다. 참조 [lcid](/windows/desktop/Midl/lcid) 자세한 내용은 합니다.
 
-*control*  
+*control*<br/>
 (선택 사항) 라이브러리의 모든 coclass 컨트롤 되도록 지정 합니다.
 
-*helpstring*  
+*helpstring*<br/>
 형식 라이브러리를 지정합니다.
 
-*helpstringdll*  
+*helpstringdll*<br/>
 (선택 사항) 문서 문자열 조회를 수행 하는 데.dll 파일의 이름을 설정 합니다. 참조 [helpstringdll](/windows/desktop/Midl/helpstringdll) 자세한 내용은 합니다.
 
-*helpfile*  
+*helpfile*<br/>
 (선택 사항) 이름을 합니다 **도움말** 형식 라이브러리 파일입니다.
 
-*helpcontext*  
+*helpcontext*<br/>
 (선택 사항) 합니다 **도움말 ID** 이 형식 라이브러리에 대 한 합니다.
 
-*helpstringcontext*  
+*helpstringcontext*<br/>
 (선택 사항) 참조 [helpstringcontext](../windows/helpstringcontext.md) 자세한 내용은 합니다.
 
-*hidden*  
+*hidden*<br/>
 (선택 사항) 전체 라이브러리가 표시 되지 않도록 방지 합니다. 이 사용법은 컨트롤과 함께 사용하기 위한 것입니다. 호스트는 확장된 속성을 사용하여 컨트롤을 래핑하는 새로운 형식 라이브러리를 만들어야 합니다. 참조 된 [숨겨진](/windows/desktop/Midl/hidden) 자세한 MIDL 특성입니다.
 
-*restricted*  
+*restricted*<br/>
 (선택 사항) 라이브러리의 멤버를 임의로 호출할 수 없습니다. 참조 된 [제한](/windows/desktop/Midl/restricted) 자세한 MIDL 특성입니다.
 
-*custom*  
+*custom*<br/>
 (선택 사항) 하나 이상의 특성 이 비슷합니다는 [사용자 지정](../windows/custom-cpp.md) 특성입니다. 첫 번째 매개 변수를 *사용자 지정* 특성의 GUID입니다. 예를 들어:
 
 ```
 [module(custom={guid,1}, custom={guid1,2})]
 ```
 
-*resource_name*  
+*resource_name*<br/>
 DLL, 실행 파일 또는 서비스의 APP ID를 등록하는 데 사용되는 .rgs 파일의 문자열 리소스 ID입니다. 모듈이 형식 서비스인 경우 서비스 이름을 포함하는 문자열의 ID를 가져오는 데에도 이 인수가 사용됩니다.
 
 > [!NOTE]
@@ -188,13 +188,13 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
-[클래스 특성](../windows/class-attributes.md)  
-[독립 실행형 특성](../windows/stand-alone-attributes.md)  
-[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  
-[usesgetlasterror](../windows/usesgetlasterror.md)  
-[라이브러리](/windows/desktop/Midl/library)  
-[helpcontext](../windows/helpcontext.md)  
-[helpstring](../windows/helpstring.md)  
-[helpfile](../windows/helpfile.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
+[클래스 특성](../windows/class-attributes.md)<br/>
+[독립 실행형 특성](../windows/stand-alone-attributes.md)<br/>
+[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
+[usesgetlasterror](../windows/usesgetlasterror.md)<br/>
+[라이브러리](/windows/desktop/Midl/library)<br/>
+[helpcontext](../windows/helpcontext.md)<br/>
+[helpstring](../windows/helpstring.md)<br/>
+[helpfile](../windows/helpfile.md)<br/>
 [version](../windows/version-cpp.md)  

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 462dba3caaef53e49203eab6d006ea59d7b23c0e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6562721cfdf1fb963a6af71e8a8665887fa4d4ae
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590375"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46413109"
 ---
 # <a name="satype"></a>satype
 
@@ -38,7 +38,7 @@ ms.locfileid: "42590375"
 
 ### <a name="parameters"></a>매개 변수
 
-*data_type*  
+*data_type*<br/>
 데이터에 대 한 입력을 `SAFEARRAY` 인터페이스 메서드에 대 한 매개 변수로 전달 되는 데이터 구조입니다.
 
 ## <a name="requirements"></a>요구 사항
@@ -59,7 +59,7 @@ ms.locfileid: "42590375"
 > [!NOTE]
 > 간접 참조 수준을에서 삭제 되는 `SAFEARRAY` 생성된 된.idl 파일에서.cpp 파일에서 선언 하는 방법에 대 한 포인터입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // cpp_attr_ref_satype.cpp
@@ -74,7 +74,7 @@ __interface A {
 
 ## <a name="see-also"></a>참고 항목
 
-[컴파일러 특성](../windows/compiler-attributes.md)  
-[매개 변수 특성](../windows/parameter-attributes.md)  
-[메서드 특성](../windows/method-attributes.md)  
+[컴파일러 특성](../windows/compiler-attributes.md)<br/>
+[매개 변수 특성](../windows/parameter-attributes.md)<br/>
+[메서드 특성](../windows/method-attributes.md)<br/>
 [ID](../windows/id.md)  

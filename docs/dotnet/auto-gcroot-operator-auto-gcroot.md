@@ -20,72 +20,76 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: eb713f6dfd959441a409a59cc83cb87ab3299162
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dfe81532aa38e79e272e87489a635db66187109b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103820"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46418218"
 ---
 # <a name="autogcrootoperator-autogcroot"></a>auto_gcroot::operator auto_gcroot
-사이 형식 캐스팅 연산자 `auto_gcroot` 와 호환 되는 형식입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-template<typename _other_type>  
-operator auto_gcroot<_other_type>();  
-```  
-  
-## <a name="return-value"></a>반환 값  
- 현재 `auto_gcroot` 캐스팅 `auto_gcroot<_other_type>`합니다.  
-  
-## <a name="example"></a>예제  
-  
-```  
-// msl_auto_gcroot_op_auto_gcroot.cpp  
-// compile with: /clr  
-#include <msclr\auto_gcroot.h>  
-  
-using namespace System;  
-using namespace msclr;  
-  
-ref class ClassA {  
-protected:     
-   String^ m_s;  
-public:  
-   ClassA( String^ s ) : m_s( s ) {}  
-  
-   virtual void PrintHello() {  
-      Console::WriteLine( "Hello from {0} A!", m_s );  
-   }  
-};  
-  
-ref class ClassB : ClassA {  
-public:  
-   ClassB( String ^ s) : ClassA( s ) {}  
-   virtual void PrintHello() new {  
-      Console::WriteLine( "Hello from {0} B!", m_s );  
-   }  
-};  
-  
-int main() {  
-   auto_gcroot<ClassB^> b = gcnew ClassB("first");  
-   b->PrintHello();  
-   auto_gcroot<ClassA^> a = (auto_gcroot<ClassA^>)b;  
-   a->PrintHello();  
-}  
-```  
-  
-```Output  
-Hello from first B!  
-Hello from first A!  
-```  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더 파일** \<msclr\auto_gcroot.h >  
-  
- **Namespace** msclr  
-  
-## <a name="see-also"></a>참고 항목  
- [auto_gcroot 멤버](../dotnet/auto-gcroot-members.md)
+
+형식 캐스팅 연산자 간의 `auto_gcroot` 및 호환 되는 형식입니다.
+
+## <a name="syntax"></a>구문
+
+```
+template<typename _other_type>
+operator auto_gcroot<_other_type>();
+```
+
+## <a name="return-value"></a>반환 값
+
+현재 `auto_gcroot` 캐스팅할 `auto_gcroot<_other_type>`합니다.
+
+## <a name="example"></a>예제
+
+```
+// msl_auto_gcroot_op_auto_gcroot.cpp
+// compile with: /clr
+#include <msclr\auto_gcroot.h>
+
+using namespace System;
+using namespace msclr;
+
+ref class ClassA {
+protected:
+   String^ m_s;
+public:
+   ClassA( String^ s ) : m_s( s ) {}
+
+   virtual void PrintHello() {
+      Console::WriteLine( "Hello from {0} A!", m_s );
+   }
+};
+
+ref class ClassB : ClassA {
+public:
+   ClassB( String ^ s) : ClassA( s ) {}
+   virtual void PrintHello() new {
+      Console::WriteLine( "Hello from {0} B!", m_s );
+   }
+};
+
+int main() {
+   auto_gcroot<ClassB^> b = gcnew ClassB("first");
+   b->PrintHello();
+   auto_gcroot<ClassA^> a = (auto_gcroot<ClassA^>)b;
+   a->PrintHello();
+}
+```
+
+```Output
+Hello from first B!
+Hello from first A!
+```
+
+## <a name="requirements"></a>요구 사항
+
+**헤더 파일** \<msclr\auto_gcroot.h >
+
+**Namespace** msclr
+
+## <a name="see-also"></a>참고 항목
+
+[auto_gcroot 멤버](../dotnet/auto-gcroot-members.md)

@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 62e4cb9d6eebee4235db2bc38b2cd20935493b02
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: bd4a25b208232c8a0923e33156730fc5612219a5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607982"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46388201"
 ---
 # <a name="creating-a-custom-brush-image-editor-for-icons"></a>사용자 지정 브러시 만들기(아이콘에 대한 이미지 편집기)
 
@@ -76,6 +76,6 @@ ms.locfileid: "42607982"
 
 ## <a name="see-also"></a>참고 항목
 
-[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)  
-[그래픽 리소스 편집](../windows/editing-graphical-resources-image-editor-for-icons.md)  
+[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+[그래픽 리소스 편집](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
 [아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)

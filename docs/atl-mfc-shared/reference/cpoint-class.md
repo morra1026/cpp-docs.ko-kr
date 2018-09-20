@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc0506d5b4f264a2bdbecf30a7732c93c927bf18
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 29f487f77fac6c3f6def51b69715d1d47257dd7c
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767984"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46374225"
 ---
 # <a name="cpoint-class"></a>CPoint 클래스
 
@@ -352,9 +352,9 @@ A `CSize` 두 점 사이의 차이 나타내는 `CPoint` 크기의 부정 만큼
 
 ## <a name="see-also"></a>참고 항목
 
-[MFC 샘플 MDI](../../visual-cpp-samples.md)   
-[계층 구조 차트](../../mfc/hierarchy-chart.md)   
-[POINT 구조체](../../mfc/reference/point-structure1.md)   
-[CRect 클래스](../../atl-mfc-shared/reference/crect-class.md)   
+[MFC 샘플 MDI](../../visual-cpp-samples.md)<br/>
+[계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
+[POINT 구조체](../../mfc/reference/point-structure1.md)<br/>
+[CRect 클래스](../../atl-mfc-shared/reference/crect-class.md)<br/>
 [CSize 클래스](../../atl-mfc-shared/reference/csize-class.md)
 

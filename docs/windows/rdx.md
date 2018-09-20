@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 00ef28954a686dac72c8b7f55b86c88313e74643
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 566b21c911ba99d19fb16b564d0748cfcfd1eb71
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719722"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435976"
 ---
 # <a name="rdx"></a>rdx
 
@@ -40,13 +40,13 @@ ms.locfileid: "45719722"
 
 ### <a name="parameters"></a>매개 변수
 
-*key*  
+*key*<br/>
 이름 키를 만들거나 열 수입니다.
 
-*valuename*  
+*valuename*<br/>
 (선택 사항) 설정할 값 필드를 지정 합니다. 이 이름의 값 필드 없는 키에서에 추가 됩니다.
 
-*regtype*  
+*regtype*<br/>
 추가 되는 레지스트리 키의 형식입니다. 다음 중 하나일 수 있습니다: `text`, `dword`를 `binary`, 또는 `CString`합니다.
 
 ## <a name="remarks"></a>설명
@@ -93,5 +93,5 @@ public:
 
 ## <a name="see-also"></a>참고 항목
 
-[COM 특성](../windows/com-attributes.md)  
+[COM 특성](../windows/com-attributes.md)<br/>
 [registration_script](../windows/registration-script.md)  

@@ -21,16 +21,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 327a719de5cdd3eef7c0eb769b0abf7cfe03ca49
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5f55836f013ffb85bb1d490190dc5c0d196cffcf
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33379205"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46423470"
 ---
 # <a name="responding-to-dynamic-data-exchange-dde"></a>DDE(동적 데이터 교환)에 응답
-프레임 창 (있는 경우 파일 확장명은 등록 또는 연결 된 응용 프로그램) 파일을 파일 관리자에서 열을 동적 데이터 교환 (DDE) 요청에 응답할 수 있습니다. 참조 [등록 셸](../mfc/special-cwinapp-services.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [프레임 창 사용](../mfc/using-frame-windows.md)
+
+프레임 창 관리자를 열려면 파일에서 파일 (파일 확장명 등록 되었거나 응용 프로그램을 사용 하 여 연결 된) 경우 동적 데이터 교환 (DDE) 요청에 응답할 수 있습니다. 참조 [등록 셸](../mfc/special-cwinapp-services.md)합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[프레임 창 사용](../mfc/using-frame-windows.md)
 

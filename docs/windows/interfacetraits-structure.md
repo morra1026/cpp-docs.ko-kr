@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 966759acdac3cf78625cfd072471245a6e42ad63
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: cb8eb8fbc4199ccdaf5717e465f202c0e4ec296e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597117"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46437652"
 ---
 # <a name="interfacetraits-structure"></a>InterfaceTraits 구조체
 
@@ -44,10 +44,10 @@ struct __declspec(novtable) InterfaceTraits<Nil>;
 
 ### <a name="parameters"></a>매개 변수
 
-*I0*  
+*I0*<br/>
 인터페이스의 이름입니다.
 
-*CloakedType*  
+*CloakedType*<br/>
 에 대 한 `RuntimeClass`, `Implements` 고 `ChainInterfaces`, 목록의 수 없는 인터페이스는 인터페이스 Id를 지원 합니다.
 
 ## <a name="remarks"></a>설명

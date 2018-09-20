@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2ef855c4ba73b1f5595568a8b7e61d1a286a0c04
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 71e1bfaf47a901cc57c1280194c4209d94356aac
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313639"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46377489"
 ---
 # <a name="viewing-a-menu-as-a-pop-up-menu"></a>메뉴를 팝업 메뉴로 보기
 
@@ -42,5 +42,5 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[팝업 메뉴 만들기](../windows/creating-pop-up-menus.md)  
+[팝업 메뉴 만들기](../windows/creating-pop-up-menus.md)<br/>
 [메뉴 편집기](../windows/menu-editor.md)  

@@ -22,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9a454d067881a15f6d125430c304f4b5af71b5d1
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 8dee099912b69d48b0ded4184dc68c14da1899fe
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314406"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46391906"
 ---
 # <a name="toolbar-c-image-editor-for-icons"></a>도구 모음 (아이콘에 대 한 c + + 이미지 편집기)
 
@@ -57,6 +57,6 @@ ms.locfileid: "44314406"
 
 ## <a name="see-also"></a>참고 항목
 
-[표시 또는 숨기기 도구 모음](displaying-or-hiding-the-toolbar-image-editor-for-icons.md)  
-[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)  
+[표시 또는 숨기기 도구 모음](displaying-or-hiding-the-toolbar-image-editor-for-icons.md)<br/>
+[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)

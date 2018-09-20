@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: da998c748a3471f053c922e0a80c33d1526b2055
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: e60803ec9696e541376aa8530cb4c01d32b9e569
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313145"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46418863"
 ---
 # <a name="sizing-a-control-while-you-add-it"></a>컨트롤을 추가할 때 크기 조정
 
@@ -49,6 +49,6 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)  
-[대화 상자 컨트롤에 사용할 이벤트 처리기 추가](../windows/adding-event-handlers-for-dialog-box-controls.md)  
+[대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)<br/>
+[대화 상자 컨트롤에 사용할 이벤트 처리기 추가](../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>
 [대화 상자 컨트롤 및 변수 형식](../ide/dialog-box-controls-and-variable-types.md)

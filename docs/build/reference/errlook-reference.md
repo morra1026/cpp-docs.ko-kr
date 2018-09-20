@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8646ad544b6c481ea394add9e6e8faa82919e15
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 09db7dbb2af9294e215ab60c716f73eee821b29a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725038"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46438576"
 ---
 # <a name="errlook-reference"></a>ERRLOOK 참조
 
@@ -30,14 +30,19 @@ ms.locfileid: "45725038"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[값 Edit 컨트롤](../../build/reference/value-edit-control.md) ERRLOOK에서 값 편집 컨트롤에 설명 합니다.
+[값 편집 컨트롤](../../build/reference/value-edit-control.md)<br/>
+ERRLOOK에서 값 편집 컨트롤을 설명합니다.
 
-[오류 메시지 Edit 컨트롤](../../build/reference/error-message-edit-control.md) ERRLOOK에서 오류 메시지 편집 컨트롤에 설명 합니다.
+[오류 메시지 편집 컨트롤](../../build/reference/error-message-edit-control.md)<br/>
+ERRLOOK에서 오류 메시지 편집 컨트롤을 설명합니다.
 
-[모듈 단추](../../build/reference/modules-button.md) ERRLOOK 모듈 단추에 설명 합니다.
+[모듈 단추](../../build/reference/modules-button.md)<br/>
+ERRLOOK 모듈 단추를 설명합니다.
 
-[찾는 위치 위로 단추](../../build/reference/look-up-button.md) ERRLOOK Look Up 단추에 설명 합니다.
+[찾기 단추](../../build/reference/look-up-button.md)<br/>
+ERRLOOK Look Up 단추를 설명합니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[C/c + + Build Tools](../../build/reference/c-cpp-build-tools.md) 제공 하는 항목 링크는 C/c + + 빌드 Visual c + +에서 제공 하는 도구입니다.
+[ 빌드 도구](../../build/reference/c-cpp-build-tools.md)<br/>
+Visual c + +에서 제공 하는 도구를 빌드는 C/c + + 항목의 링크를 제공 합니다.

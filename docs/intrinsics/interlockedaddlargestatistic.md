@@ -18,52 +18,57 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee14f187545e09bbdca81f760b85e771fba3936d
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6698a58ec2a5363700f7751565f1dde8e25c2bcf
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703913"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46415982"
 ---
 # <a name="interlockedaddlargestatistic"></a>_InterlockedAddLargeStatistic
-**Microsoft 전용**  
-  
- 첫 번째 피연산자가 64 비트 값 인 연관된 추가 수행 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-long _InterlockedAddLargeStatistic(  
-   __int64 volatile * Addend,  
-   long Value  
-);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+
+**Microsoft 전용**
+
+첫 번째 피연산자가 64 비트 값 인 연관된 추가 수행 합니다.
+
+## <a name="syntax"></a>구문
+
+```
+long _InterlockedAddLargeStatistic(
+   __int64 volatile * Addend,
+   long Value
+);
+```
+
+#### <a name="parameters"></a>매개 변수
+
 *가 수*<br/>
-[out에서] 추가 작업의 첫 번째 피연산자에 대 한 포인터입니다. 가리킨 값을 더하기의 결과 의해 대체 됩니다.  
-  
+[out에서] 추가 작업의 첫 번째 피연산자에 대 한 포인터입니다. 가리킨 값을 더하기의 결과 의해 대체 됩니다.
+
 *Value*<br/>
-[in] 두 번째 피연산자입니다. 첫 번째 피연산자에 추가할 값입니다.  
-  
-## <a name="return-value"></a>반환 값  
- 두 번째 피연산자의 값입니다.  
-  
-## <a name="requirements"></a>요구 사항  
-  
-|내장 함수|아키텍처|  
-|---------------|------------------|  
-|`_InterlockedAddLargeStatistic`|x86|  
-  
- **헤더 파일** \<intrin.h >  
-  
-## <a name="remarks"></a>설명  
- 별도 두 잠긴된 지침으로 구현 되므로 내장 함수는 원자성 없습니다. 다른 스레드에서 실행 중에 발생이 내장 함수는 원자성 64-bit 읽기를 읽고 일관 되지 않은 값을 될 수 있습니다.  
-  
- 이 함수는 읽기 / 쓰기 장벽으로 작동합니다. 자세한 내용은 [_ReadWriteBarrier](../intrinsics/readwritebarrier.md)합니다.  
-  
-**Microsoft 전용 종료**  
-  
-## <a name="see-also"></a>참고 항목  
- [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)   
- [x86 컴파일러와 충돌](../build/conflicts-with-the-x86-compiler.md)
+[in] 두 번째 피연산자입니다. 첫 번째 피연산자에 추가할 값입니다.
+
+## <a name="return-value"></a>반환 값
+
+두 번째 피연산자의 값입니다.
+
+## <a name="requirements"></a>요구 사항
+
+|내장 함수|아키텍처|
+|---------------|------------------|
+|`_InterlockedAddLargeStatistic`|x86|
+
+**헤더 파일** \<intrin.h >
+
+## <a name="remarks"></a>설명
+
+별도 두 잠긴된 지침으로 구현 되므로 내장 함수는 원자성 없습니다. 다른 스레드에서 실행 중에 발생이 내장 함수는 원자성 64-bit 읽기를 읽고 일관 되지 않은 값을 될 수 있습니다.
+
+이 함수는 읽기 / 쓰기 장벽으로 작동합니다. 자세한 내용은 [_ReadWriteBarrier](../intrinsics/readwritebarrier.md)합니다.
+
+**Microsoft 전용 종료**
+
+## <a name="see-also"></a>참고 항목
+
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
+[x86 컴파일러와 충돌](../build/conflicts-with-the-x86-compiler.md)

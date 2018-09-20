@@ -143,167 +143,169 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8e6d0c6a33f9e981f50e847cde614299ed7b028
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: d89e725b1aa517fe7a9f37cc948bb560e8e8ee24
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208847"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46402065"
 ---
 # <a name="concurrencyprecisemath-namespace"></a>Concurrency::precise_math 네임스페이스
-함수는 `precise_math` 네임 스페이스는 C99 규격입니다. 전체 자릿수 단일 및 이중 정밀도 버전의 각 함수가 포함 됩니다. 예를 들어 `acos` 배정밀도 버전이 고 `acosf` 단 정밀도 버전입니다. 이러한 함수를 단 정밀도 함수를 포함 하 여 액셀러레이터에서 확장 된 이중 정밀도 지원이 필요 합니다. 사용할 수는 [accelerator:: supports_double_precision](accelerator-class.md#supports_double_precision) 특정 액셀러레이터 키에서 이러한 함수를 실행할 수 있는지 확인 하려면. 
 
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-namespace precise_math;  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="functions"></a>함수  
-  
-|이름|설명|  
-|----------|-----------------|  
-|[acos](concurrency-precise-math-namespace-functions.md#acos)|오버로드됨. 인수의 아크코사인 계산|  
-|[acosf](concurrency-precise-math-namespace-functions.md#acosf)|인수의 아크코사인 계산|  
-|[acosh](concurrency-precise-math-namespace-functions.md#acosh)|오버로드됨. 인수의 역 하이퍼볼릭 코사인 값을 계산합니다.|  
-|[acoshf](concurrency-precise-math-namespace-functions.md#acoshf)|인수의 역 하이퍼볼릭 코사인 값을 계산합니다.|  
-|[asin](concurrency-precise-math-namespace-functions.md#asin)|오버로드됨. 인수의 아크사인 계산|  
-|[asinf](concurrency-precise-math-namespace-functions.md#asinf)|인수의 아크사인 계산|  
-|[asinh](concurrency-precise-math-namespace-functions.md#asinh)|오버로드됨. 인수의 역 하이퍼볼릭 사인 값을 계산합니다.|  
-|[asinhf](concurrency-precise-math-namespace-functions.md#asinhf)|인수의 역 하이퍼볼릭 사인 값을 계산합니다.|  
-|[atan](concurrency-precise-math-namespace-functions.md#atan)|오버로드됨. 인수의 아크탄젠트를 계산합니다.|  
-|[atan2](concurrency-precise-math-namespace-functions.md#atan2)|오버로드됨. _Y/_X의 아크탄젠트를 계산합니다.|  
-|[atan2f](concurrency-precise-math-namespace-functions.md#atan2f)|_Y/_X의 아크탄젠트를 계산합니다.|  
-|[atanf](concurrency-precise-math-namespace-functions.md#atanf)|인수의 아크탄젠트를 계산합니다.|  
-|[atanh](concurrency-precise-math-namespace-functions.md#atanh)|오버로드됨. 인수의 역 하이퍼볼릭 탄젠트 값을 계산합니다.|  
-|[atanhf](concurrency-precise-math-namespace-functions.md#atanhf)|인수의 역 하이퍼볼릭 탄젠트 값을 계산합니다.|  
-|[cbrt](concurrency-precise-math-namespace-functions.md#cbrt)|오버로드됨. 인수의 실제 세제곱근을 계산|  
-|[cbrtf](concurrency-precise-math-namespace-functions.md#cbrtf)|인수의 실제 세제곱근을 계산|  
-|[ceil](concurrency-precise-math-namespace-functions.md#ceil)|오버로드됨. 인수의 한계를 계산합니다.|  
-|[ceilf](concurrency-precise-math-namespace-functions.md#ceilf)|인수의 한계를 계산합니다.|  
-|[copysign](concurrency-precise-math-namespace-functions.md#copysign)|오버로드됨. _X 크기 및 _Y 부호 값을 생성합니다.|  
-|[copysignf](concurrency-precise-math-namespace-functions.md#copysignf)|_X 크기 및 _Y 부호 값을 생성합니다.|  
-|[cos](concurrency-precise-math-namespace-functions.md#cos)|오버로드됨. 인수의 코사인 계산|  
-|[cosf](concurrency-precise-math-namespace-functions.md#cosf)|인수의 코사인 계산|  
-|[cosh](concurrency-precise-math-namespace-functions.md#cosh)|오버로드됨. 인수의 쌍 곡 코사인 값을 계산합니다.|  
-|[coshf](concurrency-precise-math-namespace-functions.md#coshf)|인수의 쌍 곡 코사인 값을 계산합니다.|  
-|[cospi](concurrency-precise-math-namespace-functions.md#cospi)|오버로드됨. Pi의 코사인 값을 계산 \* _X|  
-|[cospif](concurrency-precise-math-namespace-functions.md#cospif)|Pi의 코사인 값을 계산 \* _X|  
-|[erf](concurrency-precise-math-namespace-functions.md#erf)|오버로드됨. _X의 오류 함수 계산|  
-|[erfc](concurrency-precise-math-namespace-functions.md#erfc)|오버로드됨. _X의 상보 오류 함수 계산|  
-|[erfcf](concurrency-precise-math-namespace-functions.md#erfcf)|_X의 상보 오류 함수 계산|  
-|[erfcinv](concurrency-precise-math-namespace-functions.md#erfcinv)|오버로드됨. _X의 역 상보 오류 함수 계산|  
-|[erfcinvf](concurrency-precise-math-namespace-functions.md#erfcinvf)|_X의 역 상보 오류 함수 계산|  
-|[erff](concurrency-precise-math-namespace-functions.md#erff)|_X의 오류 함수 계산|  
-|[erfinv](concurrency-precise-math-namespace-functions.md#erfinv)|오버로드됨. _X의 역 오류 함수 계산|  
-|[erfinvf](concurrency-precise-math-namespace-functions.md#erfinvf)|_X의 역 오류 함수 계산|  
-|[exp](concurrency-precise-math-namespace-functions.md#exp)|오버로드됨. 밑이 e 인수를 계산합니다.|  
-|[exp10](concurrency-precise-math-namespace-functions.md#exp10)|오버로드됨. 밑이 10 인 인수의 지 수를 계산합니다.|  
-|[exp10f](concurrency-precise-math-namespace-functions.md#exp10f)|밑이 10 인 인수의 지 수를 계산합니다.|  
-|[exp2](concurrency-precise-math-namespace-functions.md#exp2)|오버로드됨. 밑이 2 인수를 계산합니다.|  
-|[exp2f](concurrency-precise-math-namespace-functions.md#exp2f)|밑이 2 인수를 계산합니다.|  
-|[expf](concurrency-precise-math-namespace-functions.md#expf)|밑이 e 인수를 계산합니다.|  
-|[expm1](concurrency-precise-math-namespace-functions.md#expm1)|오버로드됨. 인수의 밑이 e인 지수 값 - 1을 계산합니다.|  
-|[expm1f](concurrency-precise-math-namespace-functions.md#expm1f)|인수의 밑이 e인 지수 값 - 1을 계산합니다.|  
-|[fabs](concurrency-precise-math-namespace-functions.md#fabs)|오버로드됨. 인수의 절대값을 반환 합니다.|  
-|[fabsf](concurrency-precise-math-namespace-functions.md#fabsf)|인수의 절대값을 반환 합니다.|  
-|[fdim](concurrency-precise-math-namespace-functions.md#fdim)|오버로드됨. 인수 사이의 양의 차이 결정합니다.|  
-|[fdimf](concurrency-precise-math-namespace-functions.md#fdimf)|인수 사이의 양의 차이 결정합니다.|  
-|[floor](concurrency-precise-math-namespace-functions.md#floor)|오버로드됨. 인수의 밑을 계산합니다.|  
-|[floorf](concurrency-precise-math-namespace-functions.md#floorf)|인수의 밑을 계산합니다.|  
-|[fma](concurrency-precise-math-namespace-functions.md#fma)|오버로드됨. 계산 (_X \* _Y) + _Z를 3 개로 구성 된 작업으로 반올림 합니다.|  
-|[fmaf](concurrency-precise-math-namespace-functions.md#fmaf)|계산 (_X \* _Y) + _Z를 3 개로 구성 된 작업으로 반올림 합니다.|  
-|[fmax](concurrency-precise-math-namespace-functions.md#fmax)|오버로드됨. 인수의 최대 숫자 값을 확인|  
-|[fmaxf](concurrency-precise-math-namespace-functions.md#fmaxf)|인수의 최대 숫자 값을 확인|  
-|[fmin](concurrency-precise-math-namespace-functions.md#fmin)|오버로드됨. 인수의 최소 숫자 값을 확인|  
-|[fminf](concurrency-precise-math-namespace-functions.md#fminf)|인수의 최소 숫자 값을 확인|  
-|[fmod 함수 (c + + AMP)](concurrency-precise-math-namespace-functions.md#fmod)|오버로드됨. _X/_Y의 부동 소수점 나머지를 계산합니다.|  
-|[fmodf](concurrency-precise-math-namespace-functions.md#fmodf)|_X/_Y의 부동 소수점 나머지를 계산합니다.|  
-|[fpclassify](concurrency-precise-math-namespace-functions.md#fpclassify)|오버로드됨. 인수 값을 NaN, infinite, normal, subnormal, 0으로 분류합니다.|  
-|[frexp](concurrency-precise-math-namespace-functions.md#frexp)|오버로드됨. _X의 지 수 고가 수를 가져옵니다.|  
-|[frexpf](concurrency-precise-math-namespace-functions.md#frexpf)|_X의 지 수 고가 수를 가져옵니다.|  
-|[hypot](concurrency-precise-math-namespace-functions.md#hypot)|오버로드됨. _X 및 _Y 제곱합의 제곱근 계산|  
-|[hypotf](concurrency-precise-math-namespace-functions.md#hypotf)|_X 및 _Y 제곱합의 제곱근 계산|  
-|[ilogb](concurrency-precise-math-namespace-functions.md#ilogb)|오버로드됨. 부호 있는 정수 값으로 _X 지수를 추출합니다.|  
-|[ilogbf](concurrency-precise-math-namespace-functions.md#ilogbf)|부호 있는 정수 값으로 _X 지수를 추출합니다.|  
-|[isfinite](concurrency-precise-math-namespace-functions.md#isfinite)|오버로드됨. 인수가 유한 값에 있는지 여부를 결정 합니다.|  
-|[isinf](concurrency-precise-math-namespace-functions.md#isinf)|오버로드됨. 인수가 무한대 인지 여부를 결정 합니다.|  
-|[isnan](concurrency-precise-math-namespace-functions.md#isnan)|오버로드됨. 인수가 NaN 인지 확인|  
-|[isnormal](concurrency-precise-math-namespace-functions.md#isnormal)|오버로드됨. 인수가 정상인지 여부를 결정합니다.|  
-|[ldexp](concurrency-precise-math-namespace-functions.md#ldexp)|오버로드됨. 가 수 및 지 수에서 실수를 계산합니다.|  
-|[ldexpf](concurrency-precise-math-namespace-functions.md#ldexpf)|가 수 및 지 수에서 실수를 계산합니다.|  
-|[lgamma](concurrency-precise-math-namespace-functions.md#lgamma)|오버로드됨. 감마 인수의 절대 값 자연 로그 계산|  
-|[lgammaf](concurrency-precise-math-namespace-functions.md#lgammaf)|감마 인수의 절대 값 자연 로그 계산|  
-|[log](concurrency-precise-math-namespace-functions.md#log)|오버로드됨. 인수의 밑 e 인 로그를 계산|  
-|[log10](concurrency-precise-math-namespace-functions.md#log10)|오버로드됨. 인수의 밑이 10 인 로그 계산|  
-|[log10f](concurrency-precise-math-namespace-functions.md#log10f)|인수의 밑이 10 인 로그 계산|  
-|[log1p](concurrency-precise-math-namespace-functions.md#log1p)|오버로드됨. 인수에 1을 더한 값의 밑이 e인 로그 값을 계산합니다.|  
-|[log1pf](concurrency-precise-math-namespace-functions.md#log1pf)|인수에 1을 더한 값의 밑이 e인 로그 값을 계산합니다.|  
-|[log2](concurrency-precise-math-namespace-functions.md#log2)|오버로드됨. 인수의 밑이 2 인 로그 계산|  
-|[log2f](concurrency-precise-math-namespace-functions.md#log2f)|인수의 밑이 2 인 로그 계산|  
-|[logb](concurrency-precise-math-namespace-functions.md#logb)|오버로드됨. 부호 있는 정수 값으로서 _X의 지수를 부동 소수점 형식에서 추출합니다.|  
-|[logbf](concurrency-precise-math-namespace-functions.md#logbf)|부호 있는 정수 값으로서 _X의 지수를 부동 소수점 형식에서 추출합니다.|  
-|[logf](concurrency-precise-math-namespace-functions.md#logf)|인수의 밑 e 인 로그를 계산|  
-|[modf](concurrency-precise-math-namespace-functions.md#modf)|오버로드됨. _X를 소수 부분과 정수 부분으로 분할합니다.|  
-|[modff](concurrency-precise-math-namespace-functions.md#modff)|_X를 소수 부분과 정수 부분으로 분할합니다.|  
-|[nan](concurrency-precise-math-namespace-functions.md#nan)|자동 NaN을 반환합니다.|  
-|[nanf](concurrency-precise-math-namespace-functions.md#nanf)|자동 NaN을 반환합니다.|  
-|[nearbyint](concurrency-precise-math-namespace-functions.md#nearbyint)|오버로드됨. 인수에 현재 반올림 방향을 사용하여 부동 소수점 형식에서 정수 값으로 반올림합니다.|  
-|[nearbyintf](concurrency-precise-math-namespace-functions.md#nearbyintf)|인수에 현재 반올림 방향을 사용하여 부동 소수점 형식에서 정수 값으로 반올림합니다.|  
-|[nextafter](concurrency-precise-math-namespace-functions.md#nextafter)|오버로드됨. _Y 방향으로 _X 다음에 함수의 형식 다음 표현할 수 있는 값을 결정|  
-|[nextafterf](concurrency-precise-math-namespace-functions.md#nextafterf)|_Y 방향으로 _X 다음에 함수의 형식 다음 표현할 수 있는 값을 결정|  
-|[phi](concurrency-precise-math-namespace-functions.md#phi)|오버로드됨. 인수는 누적 분포 함수를 반환합니다.|  
-|[phif](concurrency-precise-math-namespace-functions.md#phif)|인수는 누적 분포 함수를 반환합니다.|  
-|[pow](concurrency-precise-math-namespace-functions.md#pow)|오버로드됨. _X의 _Y 승을 계산 합니다.|  
-|[powf](concurrency-precise-math-namespace-functions.md#powf)|_X의 _Y 승을 계산 합니다.|  
-|[probit](concurrency-precise-math-namespace-functions.md#probit)|오버로드됨. 인수의 역 누적 분포 함수를 반환합니다.|  
-|[probitf](concurrency-precise-math-namespace-functions.md#probitf)|인수의 역 누적 분포 함수를 반환합니다.|  
-|[rcbrt](concurrency-precise-math-namespace-functions.md#rcbrt)|오버로드됨. 인수의 제곱근의 역 수를 반환합니다.|  
-|[rcbrtf](concurrency-precise-math-namespace-functions.md#rcbrtf)|인수의 제곱근의 역 수를 반환합니다.|  
-|[remainder](concurrency-precise-math-namespace-functions.md#remainder)|오버로드됨. 나머지 계산: _X REM _Y|  
-|[remainderf](concurrency-precise-math-namespace-functions.md#remainderf)|나머지 계산: _X REM _Y|  
-|[remquo](concurrency-precise-math-namespace-functions.md#remquo)|오버로드됨. _X REM _Y와 같은 나머지를 계산 합니다. 또한 정수 몫 _X/_Y의 낮은 23 비트를 계산 하 고 같은 _X/_Y 부호 값을 제공 합니다. 이 부호 있는 값의 대가 가리키는 정수에에서 저장 합니다.|  
-|[remquof](concurrency-precise-math-namespace-functions.md#remquof)|_X REM _Y와 같은 나머지를 계산 합니다. 또한 정수 몫 _X/_Y의 낮은 23 비트를 계산 하 고 같은 _X/_Y 부호 값을 제공 합니다. 이 부호 있는 값의 대가 가리키는 정수에에서 저장 합니다.|  
-|[round](concurrency-precise-math-namespace-functions.md#round)|오버로드됨. _X를 가장 가까운 정수로 반올림 합니다.|  
-|[roundf](concurrency-precise-math-namespace-functions.md#roundf)|_X를 가장 가까운 정수로 반올림 합니다.|  
-|[rsqrt](concurrency-precise-math-namespace-functions.md#rsqrt)|오버로드됨. 인수의 제곱근의 역 수를 반환합니다.|  
-|[rsqrtf](concurrency-precise-math-namespace-functions.md#rsqrtf)|인수의 제곱근의 역 수를 반환합니다.|  
-|[scalb](concurrency-precise-math-namespace-functions.md#scalb)|오버로드됨. _X에 FLT_RADIX를 곱하여 _Y 거듭제곱을 구합니다.|  
-|[scalbf](concurrency-precise-math-namespace-functions.md#scalbf)|_X에 FLT_RADIX를 곱하여 _Y 거듭제곱을 구합니다.|  
-|[scalbn](concurrency-precise-math-namespace-functions.md#scalbn)|오버로드됨. _X에 FLT_RADIX를 곱하여 _Y 거듭제곱을 구합니다.|  
-|[scalbnf](concurrency-precise-math-namespace-functions.md#scalbnf)|_X에 FLT_RADIX를 곱하여 _Y 거듭제곱을 구합니다.|  
-|[signbit](concurrency-precise-math-namespace-functions.md#signbit)|오버로드됨. _X의 부호가 음수인지 결정합니다.|  
-|[signbitf](concurrency-precise-math-namespace-functions.md#signbitf)|_X의 부호가 음수인지 결정합니다.|  
-|[sin](concurrency-precise-math-namespace-functions.md#sin)|오버로드됨. 인수의 사인 값을 계산합니다.|  
-|[sincos](concurrency-precise-math-namespace-functions.md#sincos)|오버로드됨. _X의 사인 및 코사인 값 계산|  
-|[sincosf](concurrency-precise-math-namespace-functions.md#sincosf)|_X의 사인 및 코사인 값 계산|  
-|[sinf](concurrency-precise-math-namespace-functions.md#sinf)|인수의 사인 값을 계산합니다.|  
-|[sinh](concurrency-precise-math-namespace-functions.md#sinh)|오버로드됨. 인수의 쌍 곡 사인 값을 계산합니다.|  
-|[sinhf](concurrency-precise-math-namespace-functions.md#sinhf)|인수의 쌍 곡 사인 값을 계산합니다.|  
-|[sinpi](concurrency-precise-math-namespace-functions.md#sinpi)|오버로드됨. Pi의 사인 값을 계산 \* _X|  
-|[sinpif](concurrency-precise-math-namespace-functions.md#sinpif)|Pi의 사인 값을 계산 \* _X|  
-|[sqrt](concurrency-precise-math-namespace-functions.md#sqrt)|오버로드됨. 인수의 제곱근을 계산합니다.|  
-|[sqrtf](concurrency-precise-math-namespace-functions.md#sqrtf)|인수의 제곱근을 계산합니다.|  
-|[tan](concurrency-precise-math-namespace-functions.md#tan)|오버로드됨. 인수의 탄젠트 값을 계산합니다.|  
-|[tanf](concurrency-precise-math-namespace-functions.md#tanf)|인수의 탄젠트 값을 계산합니다.|  
-|[tanh](concurrency-precise-math-namespace-functions.md#tanh)|오버로드됨. 인수의 쌍 곡 탄젠트 값을 계산합니다.|  
-|[tanhf](concurrency-precise-math-namespace-functions.md#tanhf)|인수의 쌍 곡 탄젠트 값을 계산합니다.|  
-|[tanpi](concurrency-precise-math-namespace-functions.md#tanpi)|오버로드됨. Pi의 탄젠트 값을 계산 \* _X|  
-|[tanpif](concurrency-precise-math-namespace-functions.md#tanpif)|Pi의 탄젠트 값을 계산 \* _X|  
-|[tgamma](concurrency-precise-math-namespace-functions.md#tgamma)|오버로드됨. _X의 감마 함수 계산|  
-|[tgammaf](concurrency-precise-math-namespace-functions.md#tgammaf)|_X의 감마 함수 계산|  
-|[trunc](concurrency-precise-math-namespace-functions.md#trunc)|오버로드됨. 인수는 정수 구성 요소를 자르는|  
-|[truncf](concurrency-precise-math-namespace-functions.md#truncf)|인수는 정수 구성 요소를 자르는|  
-  
-## <a name="requirements"></a>요구 사항  
- **헤더:** amp_math.h  
-  
- **네임스페이스:** 동시성  
-  
-## <a name="see-also"></a>참고 항목  
- [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)
+함수는 `precise_math` 네임 스페이스는 C99 규격입니다. 전체 자릿수 단일 및 이중 정밀도 버전의 각 함수가 포함 됩니다. 예를 들어 `acos` 배정밀도 버전이 고 `acosf` 단 정밀도 버전입니다. 이러한 함수를 단 정밀도 함수를 포함 하 여 액셀러레이터에서 확장 된 이중 정밀도 지원이 필요 합니다. 사용할 수는 [accelerator:: supports_double_precision](accelerator-class.md#supports_double_precision) 특정 액셀러레이터 키에서 이러한 함수를 실행할 수 있는지 확인 하려면.
+
+## <a name="syntax"></a>구문
+
+```cpp
+namespace precise_math;
+```
+
+#### <a name="parameters"></a>매개 변수
+
+## <a name="members"></a>멤버
+
+### <a name="functions"></a>함수
+
+|이름|설명|
+|----------|-----------------|
+|[acos](concurrency-precise-math-namespace-functions.md#acos)|오버로드됨. 인수의 아크코사인 계산|
+|[acosf](concurrency-precise-math-namespace-functions.md#acosf)|인수의 아크코사인 계산|
+|[acosh](concurrency-precise-math-namespace-functions.md#acosh)|오버로드됨. 인수의 역 하이퍼볼릭 코사인 값을 계산합니다.|
+|[acoshf](concurrency-precise-math-namespace-functions.md#acoshf)|인수의 역 하이퍼볼릭 코사인 값을 계산합니다.|
+|[asin](concurrency-precise-math-namespace-functions.md#asin)|오버로드됨. 인수의 아크사인 계산|
+|[asinf](concurrency-precise-math-namespace-functions.md#asinf)|인수의 아크사인 계산|
+|[asinh](concurrency-precise-math-namespace-functions.md#asinh)|오버로드됨. 인수의 역 하이퍼볼릭 사인 값을 계산합니다.|
+|[asinhf](concurrency-precise-math-namespace-functions.md#asinhf)|인수의 역 하이퍼볼릭 사인 값을 계산합니다.|
+|[atan](concurrency-precise-math-namespace-functions.md#atan)|오버로드됨. 인수의 아크탄젠트를 계산합니다.|
+|[atan2](concurrency-precise-math-namespace-functions.md#atan2)|오버로드됨. _Y/_X의 아크탄젠트를 계산합니다.|
+|[atan2f](concurrency-precise-math-namespace-functions.md#atan2f)|_Y/_X의 아크탄젠트를 계산합니다.|
+|[atanf](concurrency-precise-math-namespace-functions.md#atanf)|인수의 아크탄젠트를 계산합니다.|
+|[atanh](concurrency-precise-math-namespace-functions.md#atanh)|오버로드됨. 인수의 역 하이퍼볼릭 탄젠트 값을 계산합니다.|
+|[atanhf](concurrency-precise-math-namespace-functions.md#atanhf)|인수의 역 하이퍼볼릭 탄젠트 값을 계산합니다.|
+|[cbrt](concurrency-precise-math-namespace-functions.md#cbrt)|오버로드됨. 인수의 실제 세제곱근을 계산|
+|[cbrtf](concurrency-precise-math-namespace-functions.md#cbrtf)|인수의 실제 세제곱근을 계산|
+|[ceil](concurrency-precise-math-namespace-functions.md#ceil)|오버로드됨. 인수의 한계를 계산합니다.|
+|[ceilf](concurrency-precise-math-namespace-functions.md#ceilf)|인수의 한계를 계산합니다.|
+|[copysign](concurrency-precise-math-namespace-functions.md#copysign)|오버로드됨. _X 크기 및 _Y 부호 값을 생성합니다.|
+|[copysignf](concurrency-precise-math-namespace-functions.md#copysignf)|_X 크기 및 _Y 부호 값을 생성합니다.|
+|[cos](concurrency-precise-math-namespace-functions.md#cos)|오버로드됨. 인수의 코사인 계산|
+|[cosf](concurrency-precise-math-namespace-functions.md#cosf)|인수의 코사인 계산|
+|[cosh](concurrency-precise-math-namespace-functions.md#cosh)|오버로드됨. 인수의 쌍 곡 코사인 값을 계산합니다.|
+|[coshf](concurrency-precise-math-namespace-functions.md#coshf)|인수의 쌍 곡 코사인 값을 계산합니다.|
+|[cospi](concurrency-precise-math-namespace-functions.md#cospi)|오버로드됨. Pi의 코사인 값을 계산 \* _X|
+|[cospif](concurrency-precise-math-namespace-functions.md#cospif)|Pi의 코사인 값을 계산 \* _X|
+|[erf](concurrency-precise-math-namespace-functions.md#erf)|오버로드됨. _X의 오류 함수 계산|
+|[erfc](concurrency-precise-math-namespace-functions.md#erfc)|오버로드됨. _X의 상보 오류 함수 계산|
+|[erfcf](concurrency-precise-math-namespace-functions.md#erfcf)|_X의 상보 오류 함수 계산|
+|[erfcinv](concurrency-precise-math-namespace-functions.md#erfcinv)|오버로드됨. _X의 역 상보 오류 함수 계산|
+|[erfcinvf](concurrency-precise-math-namespace-functions.md#erfcinvf)|_X의 역 상보 오류 함수 계산|
+|[erff](concurrency-precise-math-namespace-functions.md#erff)|_X의 오류 함수 계산|
+|[erfinv](concurrency-precise-math-namespace-functions.md#erfinv)|오버로드됨. _X의 역 오류 함수 계산|
+|[erfinvf](concurrency-precise-math-namespace-functions.md#erfinvf)|_X의 역 오류 함수 계산|
+|[exp](concurrency-precise-math-namespace-functions.md#exp)|오버로드됨. 밑이 e 인수를 계산합니다.|
+|[exp10](concurrency-precise-math-namespace-functions.md#exp10)|오버로드됨. 밑이 10 인 인수의 지 수를 계산합니다.|
+|[exp10f](concurrency-precise-math-namespace-functions.md#exp10f)|밑이 10 인 인수의 지 수를 계산합니다.|
+|[exp2](concurrency-precise-math-namespace-functions.md#exp2)|오버로드됨. 밑이 2 인수를 계산합니다.|
+|[exp2f](concurrency-precise-math-namespace-functions.md#exp2f)|밑이 2 인수를 계산합니다.|
+|[expf](concurrency-precise-math-namespace-functions.md#expf)|밑이 e 인수를 계산합니다.|
+|[expm1](concurrency-precise-math-namespace-functions.md#expm1)|오버로드됨. 인수의 밑이 e인 지수 값 - 1을 계산합니다.|
+|[expm1f](concurrency-precise-math-namespace-functions.md#expm1f)|인수의 밑이 e인 지수 값 - 1을 계산합니다.|
+|[fabs](concurrency-precise-math-namespace-functions.md#fabs)|오버로드됨. 인수의 절대값을 반환 합니다.|
+|[fabsf](concurrency-precise-math-namespace-functions.md#fabsf)|인수의 절대값을 반환 합니다.|
+|[fdim](concurrency-precise-math-namespace-functions.md#fdim)|오버로드됨. 인수 사이의 양의 차이 결정합니다.|
+|[fdimf](concurrency-precise-math-namespace-functions.md#fdimf)|인수 사이의 양의 차이 결정합니다.|
+|[floor](concurrency-precise-math-namespace-functions.md#floor)|오버로드됨. 인수의 밑을 계산합니다.|
+|[floorf](concurrency-precise-math-namespace-functions.md#floorf)|인수의 밑을 계산합니다.|
+|[fma](concurrency-precise-math-namespace-functions.md#fma)|오버로드됨. 계산 (_X \* _Y) + _Z를 3 개로 구성 된 작업으로 반올림 합니다.|
+|[fmaf](concurrency-precise-math-namespace-functions.md#fmaf)|계산 (_X \* _Y) + _Z를 3 개로 구성 된 작업으로 반올림 합니다.|
+|[fmax](concurrency-precise-math-namespace-functions.md#fmax)|오버로드됨. 인수의 최대 숫자 값을 확인|
+|[fmaxf](concurrency-precise-math-namespace-functions.md#fmaxf)|인수의 최대 숫자 값을 확인|
+|[fmin](concurrency-precise-math-namespace-functions.md#fmin)|오버로드됨. 인수의 최소 숫자 값을 확인|
+|[fminf](concurrency-precise-math-namespace-functions.md#fminf)|인수의 최소 숫자 값을 확인|
+|[fmod 함수 (c + + AMP)](concurrency-precise-math-namespace-functions.md#fmod)|오버로드됨. _X/_Y의 부동 소수점 나머지를 계산합니다.|
+|[fmodf](concurrency-precise-math-namespace-functions.md#fmodf)|_X/_Y의 부동 소수점 나머지를 계산합니다.|
+|[fpclassify](concurrency-precise-math-namespace-functions.md#fpclassify)|오버로드됨. 인수 값을 NaN, infinite, normal, subnormal, 0으로 분류합니다.|
+|[frexp](concurrency-precise-math-namespace-functions.md#frexp)|오버로드됨. _X의 지 수 고가 수를 가져옵니다.|
+|[frexpf](concurrency-precise-math-namespace-functions.md#frexpf)|_X의 지 수 고가 수를 가져옵니다.|
+|[hypot](concurrency-precise-math-namespace-functions.md#hypot)|오버로드됨. _X 및 _Y 제곱합의 제곱근 계산|
+|[hypotf](concurrency-precise-math-namespace-functions.md#hypotf)|_X 및 _Y 제곱합의 제곱근 계산|
+|[ilogb](concurrency-precise-math-namespace-functions.md#ilogb)|오버로드됨. 부호 있는 정수 값으로 _X 지수를 추출합니다.|
+|[ilogbf](concurrency-precise-math-namespace-functions.md#ilogbf)|부호 있는 정수 값으로 _X 지수를 추출합니다.|
+|[isfinite](concurrency-precise-math-namespace-functions.md#isfinite)|오버로드됨. 인수가 유한 값에 있는지 여부를 결정 합니다.|
+|[isinf](concurrency-precise-math-namespace-functions.md#isinf)|오버로드됨. 인수가 무한대 인지 여부를 결정 합니다.|
+|[isnan](concurrency-precise-math-namespace-functions.md#isnan)|오버로드됨. 인수가 NaN 인지 확인|
+|[isnormal](concurrency-precise-math-namespace-functions.md#isnormal)|오버로드됨. 인수가 정상인지 여부를 결정합니다.|
+|[ldexp](concurrency-precise-math-namespace-functions.md#ldexp)|오버로드됨. 가 수 및 지 수에서 실수를 계산합니다.|
+|[ldexpf](concurrency-precise-math-namespace-functions.md#ldexpf)|가 수 및 지 수에서 실수를 계산합니다.|
+|[lgamma](concurrency-precise-math-namespace-functions.md#lgamma)|오버로드됨. 감마 인수의 절대 값 자연 로그 계산|
+|[lgammaf](concurrency-precise-math-namespace-functions.md#lgammaf)|감마 인수의 절대 값 자연 로그 계산|
+|[log](concurrency-precise-math-namespace-functions.md#log)|오버로드됨. 인수의 밑 e 인 로그를 계산|
+|[log10](concurrency-precise-math-namespace-functions.md#log10)|오버로드됨. 인수의 밑이 10 인 로그 계산|
+|[log10f](concurrency-precise-math-namespace-functions.md#log10f)|인수의 밑이 10 인 로그 계산|
+|[log1p](concurrency-precise-math-namespace-functions.md#log1p)|오버로드됨. 인수에 1을 더한 값의 밑이 e인 로그 값을 계산합니다.|
+|[log1pf](concurrency-precise-math-namespace-functions.md#log1pf)|인수에 1을 더한 값의 밑이 e인 로그 값을 계산합니다.|
+|[log2](concurrency-precise-math-namespace-functions.md#log2)|오버로드됨. 인수의 밑이 2 인 로그 계산|
+|[log2f](concurrency-precise-math-namespace-functions.md#log2f)|인수의 밑이 2 인 로그 계산|
+|[logb](concurrency-precise-math-namespace-functions.md#logb)|오버로드됨. 부호 있는 정수 값으로서 _X의 지수를 부동 소수점 형식에서 추출합니다.|
+|[logbf](concurrency-precise-math-namespace-functions.md#logbf)|부호 있는 정수 값으로서 _X의 지수를 부동 소수점 형식에서 추출합니다.|
+|[logf](concurrency-precise-math-namespace-functions.md#logf)|인수의 밑 e 인 로그를 계산|
+|[modf](concurrency-precise-math-namespace-functions.md#modf)|오버로드됨. _X를 소수 부분과 정수 부분으로 분할합니다.|
+|[modff](concurrency-precise-math-namespace-functions.md#modff)|_X를 소수 부분과 정수 부분으로 분할합니다.|
+|[nan](concurrency-precise-math-namespace-functions.md#nan)|자동 NaN을 반환합니다.|
+|[nanf](concurrency-precise-math-namespace-functions.md#nanf)|자동 NaN을 반환합니다.|
+|[nearbyint](concurrency-precise-math-namespace-functions.md#nearbyint)|오버로드됨. 인수에 현재 반올림 방향을 사용하여 부동 소수점 형식에서 정수 값으로 반올림합니다.|
+|[nearbyintf](concurrency-precise-math-namespace-functions.md#nearbyintf)|인수에 현재 반올림 방향을 사용하여 부동 소수점 형식에서 정수 값으로 반올림합니다.|
+|[nextafter](concurrency-precise-math-namespace-functions.md#nextafter)|오버로드됨. _Y 방향으로 _X 다음에 함수의 형식 다음 표현할 수 있는 값을 결정|
+|[nextafterf](concurrency-precise-math-namespace-functions.md#nextafterf)|_Y 방향으로 _X 다음에 함수의 형식 다음 표현할 수 있는 값을 결정|
+|[phi](concurrency-precise-math-namespace-functions.md#phi)|오버로드됨. 인수는 누적 분포 함수를 반환합니다.|
+|[phif](concurrency-precise-math-namespace-functions.md#phif)|인수는 누적 분포 함수를 반환합니다.|
+|[pow](concurrency-precise-math-namespace-functions.md#pow)|오버로드됨. _X의 _Y 승을 계산 합니다.|
+|[powf](concurrency-precise-math-namespace-functions.md#powf)|_X의 _Y 승을 계산 합니다.|
+|[probit](concurrency-precise-math-namespace-functions.md#probit)|오버로드됨. 인수의 역 누적 분포 함수를 반환합니다.|
+|[probitf](concurrency-precise-math-namespace-functions.md#probitf)|인수의 역 누적 분포 함수를 반환합니다.|
+|[rcbrt](concurrency-precise-math-namespace-functions.md#rcbrt)|오버로드됨. 인수의 제곱근의 역 수를 반환합니다.|
+|[rcbrtf](concurrency-precise-math-namespace-functions.md#rcbrtf)|인수의 제곱근의 역 수를 반환합니다.|
+|[remainder](concurrency-precise-math-namespace-functions.md#remainder)|오버로드됨. 나머지 계산: _X REM _Y|
+|[remainderf](concurrency-precise-math-namespace-functions.md#remainderf)|나머지 계산: _X REM _Y|
+|[remquo](concurrency-precise-math-namespace-functions.md#remquo)|오버로드됨. _X REM _Y와 같은 나머지를 계산 합니다. 또한 정수 몫 _X/_Y의 낮은 23 비트를 계산 하 고 같은 _X/_Y 부호 값을 제공 합니다. 이 부호 있는 값의 대가 가리키는 정수에에서 저장 합니다.|
+|[remquof](concurrency-precise-math-namespace-functions.md#remquof)|_X REM _Y와 같은 나머지를 계산 합니다. 또한 정수 몫 _X/_Y의 낮은 23 비트를 계산 하 고 같은 _X/_Y 부호 값을 제공 합니다. 이 부호 있는 값의 대가 가리키는 정수에에서 저장 합니다.|
+|[round](concurrency-precise-math-namespace-functions.md#round)|오버로드됨. _X를 가장 가까운 정수로 반올림 합니다.|
+|[roundf](concurrency-precise-math-namespace-functions.md#roundf)|_X를 가장 가까운 정수로 반올림 합니다.|
+|[rsqrt](concurrency-precise-math-namespace-functions.md#rsqrt)|오버로드됨. 인수의 제곱근의 역 수를 반환합니다.|
+|[rsqrtf](concurrency-precise-math-namespace-functions.md#rsqrtf)|인수의 제곱근의 역 수를 반환합니다.|
+|[scalb](concurrency-precise-math-namespace-functions.md#scalb)|오버로드됨. _X에 FLT_RADIX를 곱하여 _Y 거듭제곱을 구합니다.|
+|[scalbf](concurrency-precise-math-namespace-functions.md#scalbf)|_X에 FLT_RADIX를 곱하여 _Y 거듭제곱을 구합니다.|
+|[scalbn](concurrency-precise-math-namespace-functions.md#scalbn)|오버로드됨. _X에 FLT_RADIX를 곱하여 _Y 거듭제곱을 구합니다.|
+|[scalbnf](concurrency-precise-math-namespace-functions.md#scalbnf)|_X에 FLT_RADIX를 곱하여 _Y 거듭제곱을 구합니다.|
+|[signbit](concurrency-precise-math-namespace-functions.md#signbit)|오버로드됨. _X의 부호가 음수인지 결정합니다.|
+|[signbitf](concurrency-precise-math-namespace-functions.md#signbitf)|_X의 부호가 음수인지 결정합니다.|
+|[sin](concurrency-precise-math-namespace-functions.md#sin)|오버로드됨. 인수의 사인 값을 계산합니다.|
+|[sincos](concurrency-precise-math-namespace-functions.md#sincos)|오버로드됨. _X의 사인 및 코사인 값 계산|
+|[sincosf](concurrency-precise-math-namespace-functions.md#sincosf)|_X의 사인 및 코사인 값 계산|
+|[sinf](concurrency-precise-math-namespace-functions.md#sinf)|인수의 사인 값을 계산합니다.|
+|[sinh](concurrency-precise-math-namespace-functions.md#sinh)|오버로드됨. 인수의 쌍 곡 사인 값을 계산합니다.|
+|[sinhf](concurrency-precise-math-namespace-functions.md#sinhf)|인수의 쌍 곡 사인 값을 계산합니다.|
+|[sinpi](concurrency-precise-math-namespace-functions.md#sinpi)|오버로드됨. Pi의 사인 값을 계산 \* _X|
+|[sinpif](concurrency-precise-math-namespace-functions.md#sinpif)|Pi의 사인 값을 계산 \* _X|
+|[sqrt](concurrency-precise-math-namespace-functions.md#sqrt)|오버로드됨. 인수의 제곱근을 계산합니다.|
+|[sqrtf](concurrency-precise-math-namespace-functions.md#sqrtf)|인수의 제곱근을 계산합니다.|
+|[tan](concurrency-precise-math-namespace-functions.md#tan)|오버로드됨. 인수의 탄젠트 값을 계산합니다.|
+|[tanf](concurrency-precise-math-namespace-functions.md#tanf)|인수의 탄젠트 값을 계산합니다.|
+|[tanh](concurrency-precise-math-namespace-functions.md#tanh)|오버로드됨. 인수의 쌍 곡 탄젠트 값을 계산합니다.|
+|[tanhf](concurrency-precise-math-namespace-functions.md#tanhf)|인수의 쌍 곡 탄젠트 값을 계산합니다.|
+|[tanpi](concurrency-precise-math-namespace-functions.md#tanpi)|오버로드됨. Pi의 탄젠트 값을 계산 \* _X|
+|[tanpif](concurrency-precise-math-namespace-functions.md#tanpif)|Pi의 탄젠트 값을 계산 \* _X|
+|[tgamma](concurrency-precise-math-namespace-functions.md#tgamma)|오버로드됨. _X의 감마 함수 계산|
+|[tgammaf](concurrency-precise-math-namespace-functions.md#tgammaf)|_X의 감마 함수 계산|
+|[trunc](concurrency-precise-math-namespace-functions.md#trunc)|오버로드됨. 인수는 정수 구성 요소를 자르는|
+|[truncf](concurrency-precise-math-namespace-functions.md#truncf)|인수는 정수 구성 요소를 자르는|
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** amp_math.h
+
+**네임스페이스:** 동시성
+
+## <a name="see-also"></a>참고 항목
+
+[Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)

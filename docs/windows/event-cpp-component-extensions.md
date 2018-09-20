@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d301f2bc7464d52be643d252e4febf7049657c2b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f001f61a9425a064d3b899beb6cbb689471da5bf
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724773"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46442593"
 ---
 # <a name="event--c-component-extensions"></a>event(C++ 구성 요소 확장)
 
@@ -50,19 +50,19 @@ modifiereventdelegate^ event_name
 
 ### <a name="parameters"></a>매개 변수
 
-*한정자*  
+*한정자*<br/>
 이벤트 선언 또는 이벤트 접근자 메서드에 사용할 수 있는 한정자입니다.  가능한 값은 **정적** 하 고 **가상**합니다.
 
-*delegate*  
+*delegate*<br/>
 합니다 [대리자](../windows/delegate-cpp-component-extensions.md), 시그니처를 가진 이벤트 처리기가 일치 해야 합니다.
 
-*event_name*  
+*event_name*<br/>
 이벤트의 이름입니다.
 
-*return_value*  
+*return_value*<br/>
 이벤트 접근자 메서드의 반환 값입니다.  반환 형식을 확인할 수 있어야 **void**합니다.
 
-*parameters*  
+*parameters*<br/>
 (선택 사항) 에 대 한 매개 변수를 `raise` 의 서명과 일치 하는 메서드를 *대리자* 매개 변수입니다.
 
 ### <a name="remarks"></a>설명
@@ -71,10 +71,10 @@ modifiereventdelegate^ event_name
 
 이벤트 선언에는 다음 두 가지 종류가 있습니다.
 
-*이벤트 데이터 멤버*  
+*이벤트 데이터 멤버*<br/>
 컴파일러에서는 대리자 형식의 멤버 형식으로 이벤트에 대한 저장소를 자동으로 만들고 내부 `add()`, `remove()` 및 `raise()` 멤버 함수를 만듭니다. 이벤트 데이터 멤버는 클래스 내에 선언되어야 합니다. 대리자의 반환 형식은 이벤트 처리기의 반환 형식과 일치해야 합니다.
 
-*이벤트 블록*  
+*이벤트 블록*<br/>
 이벤트 블록을 사용하여 `add()`, `remove()` 및 `raise()` 메서드의 동작을 명시적으로 선언 및 사용자 지정할 수 있습니다.
 
 사용할 수 있습니다 **연산자 + =** 및 **-= 연산자** 추가 및 제거할 이벤트 처리기 또는 호출을 `add()` 및 `remove()` 메서드 명시적으로.
@@ -114,19 +114,19 @@ modifiereventdelegate^ event_name
 
 ### <a name="parameters"></a>매개 변수
 
-*한정자*  
+*한정자*<br/>
 이벤트 선언 또는 이벤트 접근자 메서드에 사용할 수 있는 한정자입니다.  가능한 값은 **정적** 하 고 **가상**합니다.
 
-*delegate*  
+*delegate*<br/>
 합니다 [대리자](../windows/delegate-cpp-component-extensions.md), 시그니처를 가진 이벤트 처리기가 일치 해야 합니다.
 
-*event_name*  
+*event_name*<br/>
 이벤트의 이름입니다.
 
-*return_value*  
+*return_value*<br/>
 이벤트 접근자 메서드의 반환 값입니다.  반환 형식을 확인할 수 있어야 **void**합니다.
 
-*parameters*  
+*parameters*<br/>
 (선택 사항) 에 대 한 매개 변수를 `raise` 의 서명과 일치 하는 메서드를 *대리자* 매개 변수입니다.
 
 ### <a name="remarks"></a>설명
@@ -137,10 +137,10 @@ modifiereventdelegate^ event_name
 
 이벤트 선언에는 다음 두 가지 종류가 있습니다.
 
-*이벤트 데이터 멤버*  
+*이벤트 데이터 멤버*<br/>
 이벤트에 대한 저장소는 컴파일러에 의해 데이터 멤버 이벤트에 대해 대리자 형식의 멤버 형식으로 생성됩니다.  이벤트 데이터 멤버는 클래스 내에 선언되어야 합니다. 이를 trivial 이벤트라고도 합니다(아래 코드 샘플 참조).
 
-*이벤트 블록*  
+*이벤트 블록*<br/>
 이벤트 블록을 통해 add, remove 및 raise 메서드를 구현하여 add, remove 및 raise 메서드의 동작을 사용자 지정할 수 있습니다. add, remove 및 raise 메서드의 서명은 대리자의 서명과 일치해야 합니다.  이벤트 블록은 데이터 멤버가 아니며 데이터 멤버로 사용하면 컴파일러 오류가 발생합니다.
 
 이벤트 처리기의 반환 형식은 대리자의 반환 형식과 일치해야 합니다.

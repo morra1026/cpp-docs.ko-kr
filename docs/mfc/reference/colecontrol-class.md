@@ -344,14 +344,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d3c5f68d35c4cf77073de3f8d2e6090f62a6dae2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 292121e95b20061e95e85b49c60d4758bd18a568
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46050101"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46435534"
 ---
 # <a name="colecontrol-class"></a>COleControl 클래스
+
 OLE 컨트롤을 개발할 수 있는 강력한 기본 클래스입니다.
 
 ## <a name="syntax"></a>구문
@@ -1440,15 +1441,13 @@ void FireReadyStateChange();
 
 준비 상태로 다음 값 중 하나일 수 있습니다.
 
-READYSTATE_UNINITIALIZED 기본 초기화 상태
-
-READYSTATE_LOADING 컨트롤을 해당 속성을 현재 로드
-
-READYSTATE_LOADED 컨트롤이 초기화 되었는지
-
-READYSTATE_INTERACTIVE 컨트롤에 대화식으로 충분 한 데이터가 있지만 모두 비동기 데이터는 아직 로드
-
-READYSTATE_COMPLETE 컨트롤에 해당 하는 모든 데이터
+|||
+|-|-|
+|READYSTATE_UNINITIALIZED|기본 초기화 상태|
+|READYSTATE_LOADING|컨트롤을 해당 속성을 현재 로드|
+|READYSTATE_LOADED|컨트롤이 초기화 되었는지|
+|READYSTATE_INTERACTIVE|컨트롤에 대화식으로 충분 한 데이터가 있지만 모두 비동기 데이터는 아직 로드|
+|READYSTATE_COMPLETE|컨트롤에 해당 하는 모든 데이터|
 
 사용 하 여 [GetReadyState](#getreadystate) 컨트롤의 현재 준비를 확인 하려면.
 
@@ -1466,11 +1465,11 @@ virtual DWORD GetActivationPolicy();
 
 POINTERINACTIVE 열거형에서 플래그의 조합입니다. 가능한 플래그는:
 
-POINTERINACTIVE_ACTIVATEONENTRY 개체 내부에서 마우스 마우스 이동 작업 중 입력 하면 활성화 해야 합니다.
-
-POINTERINACTIVE_DEACTIVATEONLEAVE 마우스 마우스 중 개체를 벗어나면 개체를 비활성화 해야 작업을 이동 합니다.
-
-POINTERINACTIVE_ACTIVATEONDRAG 개체 끌기 중 위로 마우스를 끌 때 활성화 될 수 하 고 작업을 삭제 해야 합니다.
+|||
+|-|-|
+|POINTERINACTIVE_ACTIVATEONENTRY|개체는 내부 활성화 가져가면 해당 마우스 이동 작업 중 이어야 합니다.|
+|POINTERINACTIVE_DEACTIVATEONLEAVE|마우스가 마우스 이동 작업 중 개체를 벗어날 때 개체를 비활성화 해야 합니다.|
+|POINTERINACTIVE_ACTIVATEONDRAG|개체는 마우스를 끌기 중 위로 끌 때 활성화 될 수 하 고 작업을 삭제 해야 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -1915,15 +1914,13 @@ long GetReadyState();
 
 다음 값 중 하나는 컨트롤의 준비 상태:
 
-READYSTATE_UNINITIALIZED 기본 초기화 상태
-
-READYSTATE_LOADING 컨트롤을 해당 속성을 현재 로드
-
-READYSTATE_LOADED 컨트롤이 초기화 되었는지
-
-READYSTATE_INTERACTIVE 컨트롤에 대화식으로 충분 한 데이터가 있지만 모두 비동기 데이터는 아직 로드
-
-READYSTATE_COMPLETE 컨트롤에 해당 하는 모든 데이터
+|||
+|-|-|
+|READYSTATE_UNINITIALIZED|기본 초기화 상태|
+|READYSTATE_LOADING|컨트롤을 해당 속성을 현재 로드|
+|READYSTATE_LOADED|컨트롤이 초기화 되었는지|
+|READYSTATE_INTERACTIVE|컨트롤에 대화식으로 충분 한 데이터가 있지만 모두 비동기 데이터는 아직 로드|
+|READYSTATE_COMPLETE|컨트롤에 해당 하는 모든 데이터|
 
 ### <a name="remarks"></a>설명
 
@@ -2065,15 +2062,13 @@ void InternalSetReadyState(long lNewReadyState);
 *lNewReadyState*<br/>
 다음 값 중 하나는 컨트롤에 대 한 설정 하려면 준비 상태:
 
-READYSTATE_UNINITIALIZED 기본 초기화 상태
-
-READYSTATE_LOADING 컨트롤을 해당 속성을 현재 로드
-
-READYSTATE_LOADED 컨트롤이 초기화 되었는지
-
-READYSTATE_INTERACTIVE 컨트롤에 대화식으로 충분 한 데이터가 있지만 모두 비동기 데이터는 아직 로드
-
-READYSTATE_COMPLETE 컨트롤에 해당 하는 모든 데이터
+|||
+|-|-|
+|READYSTATE_UNINITIALIZED|기본 초기화 상태|
+|READYSTATE_LOADING|컨트롤을 해당 속성을 현재 로드|
+|READYSTATE_LOADED|컨트롤이 초기화 되었는지|
+|READYSTATE_INTERACTIVE|컨트롤에 대화식으로 충분 한 데이터가 있지만 모두 비동기 데이터는 아직 로드|
+|READYSTATE_COMPLETE|컨트롤에 해당 하는 모든 데이터|
 
 ### <a name="remarks"></a>설명
 
@@ -2848,13 +2843,12 @@ virtual DWORD OnGetViewStatus();
 
 성공할 경우 VIEWSTATUS 열거형의 값 중 하나 그렇지 않으면 0입니다. 가능한 값은 다음을 조합 합니다.
 
-VIEWSTATUS_OPAQUE 개체는 완전히 불투명 합니다. 이 비트가 설정 되어 있지 않으면 개체는 투명 한 부분을 포함 합니다. 이 비트 DVASPECT_ICON 또는 DVASPECT_DOCPRINT 및 콘텐츠 관련 측면에만 적용 됩니다.
-
-VIEWSTATUS_SOLIDBKGND 개체를 단색 배경 (단색 브러시 패턴이 아닌에서 구성)에 있습니다. 이 비트가 VIEWSTATUS_OPAQUE 설정 되 고 DVASPECT_ICON 또는 DVASPECT_DOCPRINT 콘텐츠 관련 측면에만 적용 됩니다 하는 경우에 의미 합니다.
-
-VIEWSTATUS_DVASPECTOPAQUE 개체 DVASPECT_OPAQUE를 지원합니다. 이러한 측면을 사용 하 여 매개 변수를 호출할 수 있습니다 하는 대로 그리기 측면을를 사용 하는 모든 IViewObjectEx 메서드.
-
-VIEWSTATUS_DVASPECTTRANSPARENT 개체 DVASPECT_TRANSPARENT를 지원합니다. 모든 `IViewObjectEx` 메서드는 그리기 측면을 이러한 측면을 사용 하 여 매개 변수를 호출할 수 있습니다.
+|||
+|-|-|
+|VIEWSTATUS_OPAQUE|개체는 완전히 불투명 합니다. 이 비트가 설정 되어 있지 않으면 개체는 투명 한 부분을 포함 합니다. 이 비트 DVASPECT_ICON 또는 DVASPECT_DOCPRINT 및 콘텐츠 관련 측면에만 적용 됩니다.|
+|VIEWSTATUS_SOLIDBKGND|개체를 단색 배경 (단색 브러시 패턴이 아닌에서 구성)에 있습니다. 이 비트가 VIEWSTATUS_OPAQUE 설정 되 고 DVASPECT_ICON 또는 DVASPECT_DOCPRINT 콘텐츠 관련 측면에만 적용 됩니다 하는 경우에 의미 합니다.|
+|VIEWSTATUS_DVASPECTOPAQUE|개체는 DVASPECT_OPAQUE를 지원합니다. 이러한 측면을 사용 하 여 매개 변수를 호출할 수 있습니다 하는 대로 그리기 측면을를 사용 하는 모든 IViewObjectEx 메서드.|
+|VIEWSTATUS_DVASPECTTRANSPARENT|개체는 DVASPECT_TRANSPARENT를 지원합니다. 모든 `IViewObjectEx` 메서드는 그리기 측면을 이러한 측면을 사용 하 여 매개 변수를 호출할 수 있습니다.|
 
 ### <a name="remarks"></a>설명
 

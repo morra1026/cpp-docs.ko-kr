@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2e9e13f7b5838cb13497dd874f7f0cf42f34e98
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6ec12275291321751c539d095c60fa9dabffa2b7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200148"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46445180"
 ---
 # <a name="cpropertysheet-class"></a>CPropertySheet 클래스
 
@@ -181,7 +181,7 @@ void AddPage(CPropertyPage* pPage);
 
 ### <a name="parameters"></a>매개 변수
 
-*물리 페이지*  
+*물리 페이지*<br/>
 속성 시트에 추가할 페이지를 가리킵니다. NULL일 수 없습니다.
 
 ### <a name="remarks"></a>설명
@@ -237,25 +237,25 @@ void Construct(
 
 ### <a name="parameters"></a>매개 변수
 
-*nIDCaption*  
+*nIDCaption*<br/>
 속성 시트에 사용할 캡션의 ID입니다.
 
-*pParentWnd*  
+*pParentWnd*<br/>
 속성 시트의 부모 창에 대 한 포인터입니다. NULL 인 경우 부모 창에 응용 프로그램의 주 창이 됩니다.
 
-*iSelectPage*  
+*iSelectPage*<br/>
 처음에 위에 표시 되도록 페이지의 인덱스입니다. 기본값은 시트에 추가할 첫 번째 페이지입니다.
 
-*pszCaption*  
+*pszCaption*<br/>
 속성 시트에 사용 되는 캡션을 포함 하는 문자열에 대 한 포인터입니다. NULL일 수 없습니다.
 
-*hbmWatermark*  
+*hbmWatermark*<br/>
 속성 페이지의 워터 마크 비트맵에 대 한 핸들입니다.
 
-*hpalWatermark*  
+*hpalWatermark*<br/>
 워터 마크 비트맵 및/또는 헤더 비트맵의 색상표를 처리 합니다.
 
-*hbmHeader*  
+*hbmHeader*<br/>
 속성 페이지의 헤더 비트맵에 대 한 핸들입니다.
 
 ### <a name="remarks"></a>설명
@@ -312,25 +312,25 @@ CPropertySheet(
 
 ### <a name="parameters"></a>매개 변수
 
-*nIDCaption*  
+*nIDCaption*<br/>
 속성 시트에 사용할 캡션의 ID입니다.
 
-*pParentWnd*  
+*pParentWnd*<br/>
 속성 시트의 부모 창을 가리킵니다. NULL 인 경우 부모 창에 응용 프로그램의 주 창이 됩니다.
 
-*iSelectPage*  
+*iSelectPage*<br/>
 처음에 위에 표시 되도록 페이지의 인덱스입니다. 기본값은 시트에 추가할 첫 번째 페이지입니다.
 
-*pszCaption*  
+*pszCaption*<br/>
 속성 시트에 사용 되는 캡션을 포함 하는 문자열을 가리킵니다. NULL일 수 없습니다.
 
-*hbmWatermark*  
+*hbmWatermark*<br/>
 속성 시트의 배경 비트맵 핸들입니다.
 
-*hpalWatermark*  
+*hpalWatermark*<br/>
 워터 마크 비트맵 및/또는 헤더 비트맵의 색상표 핸들입니다.
 
-*hbmHeader*  
+*hbmHeader*<br/>
 속성 페이지의 헤더 비트맵 핸들입니다.
 
 ### <a name="remarks"></a>설명
@@ -357,13 +357,13 @@ virtual BOOL Create(CWnd* pParentWnd = NULL,
 
 ### <a name="parameters"></a>매개 변수
 
-*pParentWnd*  
+*pParentWnd*<br/>
 부모 창을 가리킵니다. NULL 인 경우 부모는 바탕 화면입니다.
 
-*dwStyle*  
+*dwStyle*<br/>
 속성 시트에 대 한 창 스타일입니다. 사용 가능한 스타일의 전체 목록은 참조 하세요 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.
 
-*dwExStyle*  
+*dwExStyle*<br/>
 속성 시트에 대 한 확장된 창 스타일입니다. 사용 가능한 스타일의 전체 목록은 참조 하세요. [확장 창 스타일](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)
 
 ### <a name="return-value"></a>반환 값
@@ -445,7 +445,7 @@ void EnableStackedTabs(BOOL bStacked);
 
 ### <a name="parameters"></a>매개 변수
 
-*bStacked*  
+*bStacked*<br/>
 속성 시트에서 누적된 탭 사용 되는지 여부를 나타냅니다. 태그의 누적된 행을 사용 하지 않도록 설정 하 여 *bStacked* FALSE로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -468,7 +468,7 @@ void EndDialog(int nEndID);
 
 ### <a name="parameters"></a>매개 변수
 
-*nEndID*  
+*nEndID*<br/>
 속성 시트의 반환 값으로 사용할 식별자입니다.
 
 ### <a name="remarks"></a>설명
@@ -527,7 +527,7 @@ CPropertyPage* GetPage(int nPage) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*. n 페이지*  
+*. n 페이지*<br/>
 원하는 페이지를 인덱스 0부터 시작 합니다. 0과 1 포함 속성 시트의 페이지 수보다 작아야 사이 여야 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -564,7 +564,7 @@ int GetPageIndex(CPropertyPage* pPage);
 
 ### <a name="parameters"></a>매개 변수
 
-*물리 페이지*  
+*물리 페이지*<br/>
 찾을 인덱스를 사용 하 여 페이지를 가리킵니다. NULL일 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -623,7 +623,7 @@ void MapDialogRect(LPRECT lpRect) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*lpRect*  
+*lpRect*<br/>
 가리키는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 변환할 조정 대화 상자를 포함 하는 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -664,7 +664,7 @@ void PressButton(int nButton);
 
 ### <a name="parameters"></a>매개 변수
 
-*n 단추*  
+*n 단추*<br/>
 n 단추: 단추를 누른 것을 식별 합니다. 이 매개 변수는 다음 값 중 하나일 수 있습니다.
 
 - PSBTN_BACK 뒤로 단추를 선택합니다.
@@ -702,10 +702,10 @@ void RemovePage(int nPage);
 
 ### <a name="parameters"></a>매개 변수
 
-*물리 페이지*  
+*물리 페이지*<br/>
 속성 시트에서 제거할 페이지를 가리킵니다. NULL일 수 없습니다.
 
-*. n 페이지*  
+*. n 페이지*<br/>
 제거할 페이지의 인덱스입니다. 0과 1 포함 속성 시트의 페이지 수보다 작아야 사이 여야 합니다.
 
 ### <a name="remarks"></a>설명
@@ -723,10 +723,10 @@ BOOL SetActivePage(CPropertyPage* pPage);
 
 ### <a name="parameters"></a>매개 변수
 
-*. n 페이지*  
+*. n 페이지*<br/>
 설정 페이지의 인덱스입니다. 0과 1 포함 속성 시트의 페이지 수보다 작아야 사이 여야 합니다.
 
-*물리 페이지*  
+*물리 페이지*<br/>
 속성 시트에서 설정 페이지를 가리킵니다. 두 일 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -751,7 +751,7 @@ void SetFinishText(LPCTSTR lpszText);
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszText*  
+*lpszText*<br/>
 마침 명령 단추에 표시할 텍스트를 가리킵니다.
 
 ### <a name="remarks"></a>설명
@@ -774,10 +774,10 @@ void SetTitle(
 
 ### <a name="parameters"></a>매개 변수
 
-*nStyle*  
+*nStyle*<br/>
 속성 시트의 스타일을 지정합니다. 스타일은 PSH_PROPTITLE 또는 0으로 지정 되어야 합니다. 스타일을 PSH_PROPTITLE로 설정 하면 "속성" 이라는 단어 캡션으로 지정 된 텍스트 뒤에 표시 됩니다. 예를 들어 호출 `SetTitle`"간단한 속성입니다."의 속성 시트 캡션에 하면 ("Simple", PSH_PROPTITLE)
 
-*lpszText*  
+*lpszText*<br/>
 속성 시트의 제목 표시줄의 캡션으로 사용할 텍스트를 가리킵니다.
 
 ### <a name="remarks"></a>설명
@@ -798,7 +798,7 @@ void SetWizardButtons(DWORD dwFlags);
 
 ### <a name="parameters"></a>매개 변수
 
-*dwFlags*  
+*dwFlags*<br/>
 집합 함수 및 마법사 단추의 모양을 사용자 지정 하는 플래그입니다. 이 매개 변수 값의 조합일 수 있습니다.
 
 - PSWIZB_BACK 뒤로 단추
@@ -847,9 +847,9 @@ void SetWizardMode();
 
 ## <a name="see-also"></a>참고 항목
 
-[MFC 샘플 CMNCTRL1](../../visual-cpp-samples.md)  
-[MFC 샘플 CMNCTRL2](../../visual-cpp-samples.md)  
-[MFC 샘플 PROPDLG](../../visual-cpp-samples.md)  
-[MFC 샘플 SNAPVW](../../visual-cpp-samples.md)  
-[CWnd 클래스](../../mfc/reference/cwnd-class.md)  
-[계층 구조 차트](../../mfc/hierarchy-chart.md)  
+[MFC 샘플 CMNCTRL1](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 CMNCTRL2](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 PROPDLG](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 SNAPVW](../../visual-cpp-samples.md)<br/>
+[CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
+[계층 구조 차트](../../mfc/hierarchy-chart.md)

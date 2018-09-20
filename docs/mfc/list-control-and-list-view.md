@@ -18,35 +18,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3279ae5edc02ec52ded065c4a45d18e3236802f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9925bd7188faa97ab5aa32dc2830dc6498726381
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33346001"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46436756"
 ---
 # <a name="list-control-and-list-view"></a>목록 컨트롤 및 목록 뷰
-편의 위해 MFC는 두 가지 방법으로 목록 컨트롤을 캡슐화합니다. 목록 컨트롤을 사용할 수 있습니다.  
-  
--   포함 하 여 직접는 [CListCtrl](../mfc/reference/clistctrl-class.md) 대화 상자 클래스에는 개체입니다.  
-  
--   클래스를 사용 하 여 직접 [CListView](../mfc/reference/clistview-class.md)합니다.  
-  
- `CListView` 쉽게 목록 컨트롤 컨트롤을 캡슐화 하는 MFC 문서/뷰 아키텍처를 통합할 수 만큼 [CEditView](../mfc/reference/ceditview-class.md) 편집 컨트롤을 캡슐화: 컨트롤의 MFC 뷰로 전체 노출 영역을 채웁니다. (뷰 *은* 캐스팅 컨트롤 `CListView`.)  
-  
- A `CListView` 개체에서 상속 [CCtrlView](../mfc/reference/cctrlview-class.md) 와 기본 클래스 기본 목록 컨트롤을 검색 하는 멤버 함수를 추가 합니다. 구성원 보기를 사용 하 여 뷰로 보기 작업을 합니다. 사용 하 여는 [GetListCtrl](../mfc/reference/clistview-class.md#getlistctrl) 멤버 함수는 목록 컨트롤의 멤버 함수에 대 한 액세스 권한을 얻으려고 합니다. 이러한 멤버를 사용 합니다.  
-  
--   추가, 삭제 또는 목록에 "항목"을 조작 합니다.  
-  
--   목록 컨트롤 특성을 가져오거나 설정 합니다.  
-  
- 에 대 한 참조를 가져올 수는 `CListCtrl` 기본는 `CListView`, 호출 `GetListCtrl` 목록 뷰 클래스에서:  
-  
- [!code-cpp[NVC_MFCListView#4](../atl/reference/codesnippet/cpp/list-control-and-list-view_1.cpp)]  
-  
- 이 항목에는 목록 컨트롤을 사용 하도록 두 가지 방법을 모두 설명 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [CListCtrl 사용](../mfc/using-clistctrl.md)   
- [컨트롤](../mfc/controls-mfc.md)
+
+편의 위해 MFC는 두 가지 방법으로 목록 컨트롤을 캡슐화합니다. 목록 컨트롤을 사용할 수 있습니다.
+
+- 포함 하 여 직접를 [CListCtrl](../mfc/reference/clistctrl-class.md) 대화 상자 클래스의 개체입니다.
+
+- 클래스를 사용 하 여 직접 [CListView](../mfc/reference/clistview-class.md)합니다.
+
+`CListView` 손쉽게 컨트롤을 캡슐화 하는 MFC 문서/뷰 아키텍처를 사용 하 여 목록 컨트롤을 통합할 수 만큼 [CEditView](../mfc/reference/ceditview-class.md) 편집 컨트롤을 캡슐화: 컨트롤을 MFC 뷰로의 전체 노출 영역을 채웁니다. (뷰 *됩니다* 캐스팅할 컨트롤 `CListView`.)
+
+A `CListView` 개체에서 상속 [CCtrlView](../mfc/reference/cctrlview-class.md) 와 해당 기본 클래스 기본 목록 컨트롤을 검색 하는 멤버 함수를 추가 합니다. 구성원 보기를 사용 하 여 뷰를 뷰로 사용. 사용 된 [GetListCtrl](../mfc/reference/clistview-class.md#getlistctrl) 멤버 함수 목록 컨트롤의 멤버 함수에 대 한 액세스 권한을 얻으려고 합니다. 이러한 멤버를 사용 합니다.
+
+- 추가, 삭제 또는 목록에 표시 된 "항목"을 조작 합니다.
+
+- 목록 컨트롤 특성을 가져오거나 설정 합니다.
+
+에 대 한 참조를 가져오려고 합니다 `CListCtrl` 내부를 `CListView`를 호출 `GetListCtrl` 목록 뷰 클래스에서:
+
+[!code-cpp[NVC_MFCListView#4](../atl/reference/codesnippet/cpp/list-control-and-list-view_1.cpp)]
+
+목록 컨트롤을 사용 하는 두 방법을 설명 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[CListCtrl 사용](../mfc/using-clistctrl.md)<br/>
+[컨트롤](../mfc/controls-mfc.md)
 

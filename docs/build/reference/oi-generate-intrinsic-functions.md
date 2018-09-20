@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 527f326d629bc8d41efcd73a938994570bed4d2e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 792d1e1bc0ea2f6044bc9ad145d30c1fda3e3648
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725922"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46423873"
 ---
 # <a name="oi-generate-intrinsic-functions"></a>/Oi(내장 함수 만들기)
 
@@ -73,7 +73,7 @@ ms.locfileid: "45725922"
 
 ## <a name="see-also"></a>참고 항목
 
-[/O 옵션 (코드 최적화)](../../build/reference/o-options-optimize-code.md)
+[/O 옵션(코드 최적화)](../../build/reference/o-options-optimize-code.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
 [컴파일러 내장 함수](../../intrinsics/compiler-intrinsics.md)

@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6226b583b60bb458d75ba82ac1fd0b758028dca8
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: c1fc2d9f816e5487f5d89f9c429db85f2592731f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315498"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46439538"
 ---
 # <a name="dialog-editor-c"></a>대화 상자 편집기 (c + +)
 
@@ -71,8 +71,8 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[리소스 편집기](../windows/resource-editors.md)  
-[컨트롤](../mfc/controls-mfc.md)  
-[컨트롤 클래스](../mfc/control-classes.md)  
-[대화 상자 클래스](../mfc/dialog-box-classes.md)  
+[리소스 편집기](../windows/resource-editors.md)<br/>
+[컨트롤](../mfc/controls-mfc.md)<br/>
+[컨트롤 클래스](../mfc/control-classes.md)<br/>
+[대화 상자 클래스](../mfc/dialog-box-classes.md)<br/>
 [대화 상자 컨트롤 및 변수 형식](../ide/dialog-box-controls-and-variable-types.md)

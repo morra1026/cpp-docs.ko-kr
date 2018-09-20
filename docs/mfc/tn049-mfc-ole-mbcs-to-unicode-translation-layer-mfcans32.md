@@ -1,5 +1,5 @@
 ---
-title: 'TN049: MFC OLE MBCS에서 유니코드로 변환 계층 (MFCANS32) | Microsoft Docs'
+title: 'TN049: MFC-OLE MBCS에서 유니코드로 변환 계층 (MFCANS32) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,17 +17,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dba912886f88d4868a6d74b12ac977925d9c0f4e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5950765dbbd9b0afd5142315a7da1365e6e7bd49
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33380743"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46403157"
 ---
 # <a name="tn049-mfcole-mbcs-to-unicode-translation-layer-mfcans32"></a>TN049: MFC/OLE MBCS에서 유니코드로의 변환 계층(MFCANS32)
-이 노트 원래 어떻게 설명 MFCANS32 합니다. DLL에서 ANSI 인터페이스를 제공는 32 비트 OLE의 유니코드 세계 주로 합니다. 이 DLL은 MFC에서 더 이상 사용 됩니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)   
- [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
+
+원래 하는 방법을 설명 하는이 참고 MFCANS32 합니다. ANSI 인터페이스를 제공 하는 DLL을 주로 유니코드 수많은 32 비트 OLE 합니다. 이 DLL은 MFC에서 더 이상 사용 됩니다.
+
+## <a name="see-also"></a>참고 항목
+
+[번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
+[범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
 

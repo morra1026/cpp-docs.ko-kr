@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1ad09a5a4794a9db8882a088f90da5046b6f7b9d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 11f3e82f0834863c3cdfb476443a4dbd0bdf1f6f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609242"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385081"
 ---
 # <a name="invokehelperinvokehelper-constructor"></a>InvokeHelper::InvokeHelper 생성자
 
@@ -38,7 +38,7 @@ explicit InvokeHelper(
 
 ### <a name="parameters"></a>매개 변수
 
-*콜백*  
+*콜백*<br/>
 이벤트 처리기입니다.
 
 ## <a name="remarks"></a>설명
@@ -55,5 +55,5 @@ explicit InvokeHelper(
 
 ## <a name="see-also"></a>참고 항목
 
-[InvokeHelper 구조체](../windows/invokehelper-structure.md)  
+[InvokeHelper 구조체](../windows/invokehelper-structure.md)<br/>
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

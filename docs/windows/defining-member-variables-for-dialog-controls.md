@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e6734391e56f076f247bd8887a7fdb61142b3669
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: fa4d894fb3fc436abab84bfee11199f59bd66f78
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44317864"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46402397"
 ---
 # <a name="defining-member-variables-for-dialog-controls-c"></a>대화 상자 컨트롤 (c + +)에 대 한 멤버 변수 정의
 
@@ -55,11 +55,11 @@ MFC
 
 ## <a name="see-also"></a>참고 항목
 
-[함수에 메시지 매핑](../mfc/reference/mapping-messages-to-functions.md)  
-[코드 마법사로 기능 추가](../ide/adding-functionality-with-code-wizards-cpp.md)  
-[MFC 클래스 마법사](../mfc/reference/mfc-class-wizard.md)  
-[클래스 추가](../ide/adding-a-class-visual-cpp.md)  
-[멤버 함수 추가](../ide/adding-a-member-function-visual-cpp.md)  
-[멤버 변수 추가](../ide/adding-a-member-variable-visual-cpp.md)  
-[가상 함수 재정의](../ide/overriding-a-virtual-function-visual-cpp.md)  
+[함수에 메시지 매핑](../mfc/reference/mapping-messages-to-functions.md)<br/>
+[코드 마법사로 기능 추가](../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
+[MFC 클래스 마법사](../mfc/reference/mfc-class-wizard.md)<br/>
+[클래스 추가](../ide/adding-a-class-visual-cpp.md)<br/>
+[멤버 함수 추가](../ide/adding-a-member-function-visual-cpp.md)<br/>
+[멤버 변수 추가](../ide/adding-a-member-variable-visual-cpp.md)<br/>
+[가상 함수 재정의](../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
 [MFC 메시지 처리기](../mfc/reference/adding-an-mfc-message-handler.md)

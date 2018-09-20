@@ -15,18 +15,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a0a3d93815a740be59960e6d3e0f9e9ed690923
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 0f803af896c1bb2a0e5f58e45f4ef9f588f4e66d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37122956"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46420486"
 ---
 # <a name="walkthrough-adding-a-ctaskdialog-to-an-application"></a>연습: 응용 프로그램에 CTaskDialog 추가
 
 이 연습에서는 [CTaskDialog Class](../mfc/reference/ctaskdialog-class.md) 를 소개하고 이를 응용 프로그램에 추가하는 방법을 보여 줍니다.
 
-`CTaskDialog` Windows Vista 이상에서 Windows 메시지 상자를 대체 하는 작업 대화 상자. `CTaskDialog` 는 원래 메시지 상자를 개선하고 기능을 추가합니다. Windows 메시지 상자는 Visual Studio에서 계속 지원 됩니다.
+`CTaskDialog` 는 Windows Vista 이상에서 Windows 메시지 상자를 대체 하는 작업 대화 상자. `CTaskDialog` 는 원래 메시지 상자를 개선하고 기능을 추가합니다. Windows 메시지 상자는 Visual Studio에서 계속 지원 됩니다.
 
 > [!NOTE]
 > 이전 버전 Windows의 Windows vista 지원 하지 않습니다는 `CTaskDialog`합니다. 이전 버전의 Windows에서 응용 프로그램을 실행하는 사용자에게 메시지를 표시하려면 다른 대화 상자 옵션을 프로그래밍해야 합니다. 정적 메서드 [CTaskDialog::IsSupported](../mfc/reference/ctaskdialog-class.md#issupported) 를 사용하여 런타임에 사용자 컴퓨터에서 `CTaskDialog`에서 Windows 메시지 상자를 대체하는 작업 대화 상자입니다. 또한 `CTaskDialog` 는 응용 프로그램이 유니코드 라이브러리와 함께 빌드된 경우에만 사용할 수 있습니다.
@@ -39,7 +39,7 @@ ms.locfileid: "37122956"
 
 - Visual Studio 2010 이상
 
-- Windows Vista 이상 버전
+- Windows Vista 이상
 
 ## <a name="replacing-a-windows-message-box-with-a-ctaskdialog"></a>Windows 메시지 상자를 CTaskDialog로 대체
 
@@ -47,13 +47,13 @@ ms.locfileid: "37122956"
 
 ### <a name="to-replace-a-windows-message-box-with-a-ctaskdialog"></a>Windows 메시지 상자를 CTaskDialog로 대체하려면
 
-1. 기본 설정으로 새 MFC 응용 프로그램 프로젝트를 만듭니다. 호출 *MyProject*합니다.
+1. 기본 설정으로 새 MFC 응용 프로그램 프로젝트를 만듭니다. 호출할 *MyProject*합니다.
 
 2. **솔루션 탐색기** 를 사용하여 MyProject.cpp 파일을 엽니다.
 
 3. 포함 목록 뒤에 `#include "afxtaskdialog.h"` 를 추가합니다.
 
-4. `CMyProjectApp::InitInstance`메서드를 찾습니다. `return TRUE;` 문 앞에 다음 코드 줄을 삽입합니다. 이 코드는 Windows 메시지 상자 또는 `CTaskDialog`에서 사용하는 문자열을 만듭니다.  
+4. `CMyProjectApp::InitInstance`메서드를 찾습니다. `return TRUE;` 문 앞에 다음 코드 줄을 삽입합니다. 이 코드는 Windows 메시지 상자 또는 `CTaskDialog`에서 사용하는 문자열을 만듭니다.
 
     ```cpp
     CString message("My message to the user");
@@ -201,6 +201,6 @@ ms.locfileid: "37122956"
 
 ## <a name="see-also"></a>참고자료
 
-[대화 상자](../mfc/dialog-boxes.md)  
-[CTaskDialog 클래스](../mfc/reference/ctaskdialog-class.md)  
-[CTaskDialog::CTaskDialog](../mfc/reference/ctaskdialog-class.md#ctaskdialog)  
+[대화 상자](../mfc/dialog-boxes.md)<br/>
+[CTaskDialog 클래스](../mfc/reference/ctaskdialog-class.md)<br/>
+[CTaskDialog::CTaskDialog](../mfc/reference/ctaskdialog-class.md#ctaskdialog)

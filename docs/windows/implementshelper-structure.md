@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bcacfb8d5cd6d15cf9ca5f9f5bb8e937119dc863
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 4ff40e03bf464d4c6f434b491c8b48d2b797d72b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43691576"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46440539"
 ---
 # <a name="implementshelper-structure"></a>ImplementsHelper 구조체
 
@@ -41,13 +41,13 @@ friend struct Details::ImplementsHelper;
 
 ### <a name="parameters"></a>매개 변수
 
-*RuntimeClassFlagsT*  
+*RuntimeClassFlagsT*<br/>
 플래그 중 하나 이상 지정 하는 필드 [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) 열거자입니다.
 
-*ILst*  
+*ILst*<br/>
 목록 인터페이스 Id입니다.
 
-*IsDelegateToClass*  
+*IsDelegateToClass*<br/>
 지정 **true** 하는 경우 현재 인스턴스의 `Implements` 첫 번째 인터페이스 ID의 기본 클래스인 *ILst*고, 그렇지 않으면 **false**합니다.
 
 ## <a name="remarks"></a>설명

@@ -18,46 +18,48 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: faf204f05c03e742e0f491fb3991b56d3405ebc4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 05138040b6283b7af01f6e010bc371490aea495e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33346183"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46440500"
 ---
 # <a name="life-cycle-of-a-dialog-box"></a>대화 상자의 수명 주기
-대화 상자의 수명 주기 동안 사용자 대화 상자를 호출 하 고 일반적으로 만들고 대화 상자 개체를 초기화 하는 명령 처리기 내와 상호 작용할 대화 상자에서 다음 대화 상자가 닫힙니다.  
-  
- 모달 대화 상자에 대 한 처리기는 사용자가 대화 상자가 닫히고 되 면 입력 한 모든 데이터를 수집 합니다. 대화 상자 개체 대화 상자 창을 닫으면 있으므로 단순히 데이터를 추출 하 대화 상자 클래스의 멤버 변수를 사용할 수 있습니다.  
-  
- 모덜리스 대화 상자에 대 한 추출할 수도 있습니다 데이터 대화 상자 개체에서 대화 상자는 계속 표시 합니다. 어느 시점 부터는 대화 개체가 소멸; 이 경우 사용자 코드에 따라 달라 집니다.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목  
-  
--   [대화 상자 만들기 및 표시](../mfc/creating-and-displaying-dialog-boxes.md)  
-  
--   [모달 대화 상자 만들기](../mfc/creating-modal-dialog-boxes.md)  
-  
--   [모덜리스 대화 상자 만들기](../mfc/creating-modeless-dialog-boxes.md)  
-  
--   [메모리의 대화 상자 템플릿 사용](../mfc/using-a-dialog-template-in-memory.md)  
-  
--   [이 대화 상자의 배경색 설정](../mfc/setting-the-dialog-boxs-background-color.md)  
-  
--   [대화 상자 초기화](../mfc/initializing-the-dialog-box.md)  
-  
--   [대화 상자에서 Windows 메시지 처리](../mfc/handling-windows-messages-in-your-dialog-box.md)  
-  
--   [대화 상자 개체에서 데이터 검색](../mfc/retrieving-data-from-the-dialog-object.md)  
-  
--   [대화 상자 닫기](../mfc/closing-the-dialog-box.md)  
-  
--   [대화 상자 소멸 시키기](../mfc/destroying-the-dialog-box.md)  
-  
--   [(DDX) 대화 상자 데이터 교환 및 유효성 검사 (DDV)](../mfc/dialog-data-exchange-and-validation.md)  
-  
--   [속성 시트 대화 상자](../mfc/property-sheets-and-property-pages-mfc.md)  
-  
-## <a name="see-also"></a>참고 항목  
- [대화 상자](../mfc/dialog-boxes.md)
+
+대화 상자의 수명 주기 동안 사용자 대화 상자를 호출 하 고 일반적으로 만들고 대화 상자 개체를 초기화 하는 명령 처리기 내에서 사용자 상호 작용 하는 대화 상자를 사용 하 여 대화 상자를 닫습니다.
+
+모달 대화 상자에 대 한 처리기는 사용자가 대화 상자를 닫히고를 입력 한 모든 데이터를 수집 합니다. 대화 상자 개체 대화 상자 창을 닫으면 있으므로 데이터를 추출 하 대화 상자 클래스의 멤버 변수를 간단히 사용할 수 있습니다.
+
+모덜리스 대화 상자에 대 한 하면 데이터를 추출할 수도 대화 상자 개체에서 대화 상자는 계속 표시 합니다. 어느 시점에서 대화 개체는 소멸 됩니다. 이 경우 코드에 따라 달라 집니다.
+
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+
+- [만들기 및 대화 상자를 표시 합니다.](../mfc/creating-and-displaying-dialog-boxes.md)
+
+- [모달 대화 상자 만들기](../mfc/creating-modal-dialog-boxes.md)
+
+- [모덜리스 대화 상자 만들기](../mfc/creating-modeless-dialog-boxes.md)
+
+- [메모리의 대화 상자 템플릿 사용](../mfc/using-a-dialog-template-in-memory.md)
+
+- [대화 상자의 배경색 설정](../mfc/setting-the-dialog-boxs-background-color.md)
+
+- [대화 상자 초기화](../mfc/initializing-the-dialog-box.md)
+
+- [대화 상자에서 Windows 메시지 처리](../mfc/handling-windows-messages-in-your-dialog-box.md)
+
+- [대화 상자 개체에서 데이터 검색](../mfc/retrieving-data-from-the-dialog-object.md)
+
+- [대화 상자 닫기](../mfc/closing-the-dialog-box.md)
+
+- [대화 상자 제거](../mfc/destroying-the-dialog-box.md)
+
+- [(DDX) 대화 상자 데이터 교환 및 유효성 검사 (DDV)](../mfc/dialog-data-exchange-and-validation.md)
+
+- [속성 시트 대화 상자](../mfc/property-sheets-and-property-pages-mfc.md)
+
+## <a name="see-also"></a>참고 항목
+
+[대화 상자](../mfc/dialog-boxes.md)
 

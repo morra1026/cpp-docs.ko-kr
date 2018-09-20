@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d93bfe44fab0400ce4c3c173473601745f85196c
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6e1da84c3a4ec481d3af2880a80f5923bf0c50cc
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721528"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46438082"
 ---
 # <a name="ox-enable-most-speed-optimizations"></a>/Ox (대부분의 속도 최적화 사용)
 
@@ -77,6 +77,6 @@ ms.locfileid: "45721528"
 
 ## <a name="see-also"></a>참고 항목
 
-[/O 옵션 (코드 최적화)](../../build/reference/o-options-optimize-code.md)
+[/O 옵션(코드 최적화)](../../build/reference/o-options-optimize-code.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

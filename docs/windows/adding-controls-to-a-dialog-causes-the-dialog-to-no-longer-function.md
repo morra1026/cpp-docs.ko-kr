@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 88990595fdf1f6cbb88efd40ec6247b70d90c586
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 89e4a639ad953593195401fe2eadeb5d7877a160
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314901"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46445869"
 ---
 # <a name="adding-controls-to-a-dialog-causes-the-dialog-to-no-longer-function-c"></a>대화 상자에 컨트롤 추가 대화 상자에 상자가 더 이상 작동 (c + +)
 
@@ -70,5 +70,5 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[대화 상자 편집기 문제 해결](../windows/troubleshooting-the-dialog-editor.md)  
+[대화 상자 편집기 문제 해결](../windows/troubleshooting-the-dialog-editor.md)<br/>
 [대화 상자 편집기](../windows/dialog-editor.md)

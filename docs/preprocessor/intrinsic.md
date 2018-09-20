@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c222a939ccb00dc3b7466a1cb1a83abe7ea4036
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 496971736e1f303d61b83e15b2ba1c03083f8d53
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42539671"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46422794"
 ---
 # <a name="intrinsic"></a>intrinsic
 
@@ -58,7 +58,7 @@ pragma의 인수 목록에 지정된 함수에 대한 호출을 내장 함수로
 
 합니다 `_disable` 고 `_enable` 내장 함수를 비활성화/활성화 인터럽트 커널 모드 명령을 생성 하 고 커널 모드 드라이버에서 유용할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 사용 하 여 명령줄에서 다음 코드를 컴파일합니다 `cl -c -FAs sample.c` 는 바뀌기 x86을 보려면 다음 CLI 및 STI 지침:
 
@@ -100,5 +100,5 @@ int main() {
 
 ## <a name="see-also"></a>참고자료
 
-[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)  
+[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)  

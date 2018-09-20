@@ -17,16 +17,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7831b06d116828cf5a4e6b714661082555899cd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: efdc77adac947af81be9595ffabc313610e11ce9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345106"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425225"
 ---
 # <a name="ole-db-classes"></a>OLE DB 클래스
-클래스의 현재 구성 되어 MFC의 OLE DB 지원 [COLEDBRecordView](../mfc/reference/coledbrecordview-class.md)합니다. `COleDBRecordView` 폼 보기에 직접 연결을 통해 컨트롤에 데이터베이스 레코드를 표시 한 [CRowset](../data/oledb/crowset-class.md) 개체입니다. OLE DB 소비자 템플릿에 대 한 자세한 내용은 참조 [목록의 OLE DB 소비자 템플릿](../data/oledb/ole-db-consumer-templates-reference.md)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [클래스 개요](../mfc/class-library-overview.md)
+
+MFC의 OLE DB 지원 클래스 현재 이루어져 [COLEDBRecordView](../mfc/reference/coledbrecordview-class.md)합니다. `COleDBRecordView` 데이터베이스 레코드에 직접 연결 하는 폼 보기를 통해 컨트롤에 표시 된 [CRowset](../data/oledb/crowset-class.md) 개체입니다. OLE DB 소비자 템플릿에 대 한 자세한 내용은 참조 하세요. [목록의 OLE DB 소비자 템플릿](../data/oledb/ole-db-consumer-templates-reference.md)합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[클래스 개요](../mfc/class-library-overview.md)
 

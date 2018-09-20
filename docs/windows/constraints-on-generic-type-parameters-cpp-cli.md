@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7abdc8f2deee962dc6ee5bcfa9857efb6f0bd847
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e0c6e860fa5d7633bd334d0c0a35d25936104636
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593906"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427708"
 ---
 # <a name="constraints-on-generic-type-parameters-ccli"></a>제네릭 형식 매개 변수에 대한 제약 조건(C++/CLI)
 
@@ -39,10 +39,10 @@ where type-parameter: constraint list
 
 ### <a name="parameters"></a>매개 변수
 
-*형식 매개 변수*  
+*형식 매개 변수*<br/>
 제한되는 형식 매개 변수 중 하나입니다.
 
-*제약 조건 목록*  
+*제약 조건 목록*<br/>
 *제약 조건 목록* 은 제약 조건 사양의 쉼표로 구분 된 목록입니다. 이 목록은 형식 매개 변수로 구현해야 하는 인터페이스를 포함할 수 있습니다.
 
 이 목록은 클래스를 포함할 수도 있습니다. 형식 인수가 기본 클래스 제약 조건을 만족하려면 제약 조건과 같은 클래스이거나 제약 조건에서 파생되어야 합니다.
@@ -123,7 +123,7 @@ ref class Dictionary {};
     ref class G2{};
     ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 제약 조건을 사용하여 형식 매개 변수에서 인스턴스 메서드를 호출하는 방법을 보여 줍니다.
 
@@ -185,7 +185,7 @@ int main() {
 "grandfather" is a senior
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 제네릭 형식 매개 변수를 제약 조건으로 사용하면 naked 형식 제약이라고 합니다. 고유한 형식 매개 변수가 있는 멤버 함수가 포함 형식의 형식 매개 변수에 해당 매개 변수를 제한할 필요가 있을 때 naked 형식 제약 조건이 유용합니다.
 

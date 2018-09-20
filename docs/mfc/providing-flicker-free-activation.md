@@ -16,24 +16,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9d9c0108ce4afd2e65678280248488181ad34f2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bd9f780472b8256f6d8332ecbde08138d85c8ebd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33356556"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46378329"
 ---
 # <a name="providing-flicker-free-activation"></a>깜빡임 없는 활성화 제공
-그리기 작업 및 깜빡임을 비활성 사이 전환할 때는 일반적으로 발생 하는 경우 컨트롤의 비활성 및 활성 상태에서 동일 하 게 자신을 그릴 (창 없는 활성화를 사용 하지 않는)을 제거할 수 있습니다. 및 활성 상태입니다. 이 작업을 수행 하려면 포함 된 **noFlickerActivate** 에서 반환 하는 플래그 집합에서 플래그 [COleControl::GetControlFlags](../mfc/reference/colecontrol-class.md#getcontrolflags)합니다. 예를 들어:  
-  
- [!code-cpp[NVC_MFC_AxOpt#5](../mfc/codesnippet/cpp/providing-flicker-free-activation_1.cpp)]  
-[!code-cpp[NVC_MFC_AxOpt#13](../mfc/codesnippet/cpp/providing-flicker-free-activation_2.cpp)]  
-[!code-cpp[NVC_MFC_AxOpt#7](../mfc/codesnippet/cpp/providing-flicker-free-activation_3.cpp)]  
-  
- 선택 하는 경우이 플래그를 포함 하는 코드는 자동으로 생성 됩니다는 **깜빡임 없는 활성화** 옵션에 [제어 설정](../mfc/reference/control-settings-mfc-activex-control-wizard.md) MFC ActiveX 컨트롤 마법사와 컨트롤을 만들 때 페이지.  
-  
- 창 없는 활성화를 사용 하는 경우이 최적화에 영향을 주지 않습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [MFC ActiveX 컨트롤: 최적화](../mfc/mfc-activex-controls-optimization.md)
+
+그리기 작업 및 깜빡임을 비활성 사이 전환할 때는 일반적으로 발생 하는 컨트롤의 비활성 및 활성 상태에서 동일 하 게 자신을 그릴과 창 없는 활성화를 사용 하지 않는 경우 제거할 수 있습니다. 및 활성 상태입니다. 이 위해 포함 된 **noFlickerActivate** 반환한 플래그 집합이 플래그 [COleControl::GetControlFlags](../mfc/reference/colecontrol-class.md#getcontrolflags)합니다. 예를 들어:
+
+[!code-cpp[NVC_MFC_AxOpt#5](../mfc/codesnippet/cpp/providing-flicker-free-activation_1.cpp)]
+[!code-cpp[NVC_MFC_AxOpt#13](../mfc/codesnippet/cpp/providing-flicker-free-activation_2.cpp)]
+[!code-cpp[NVC_MFC_AxOpt#7](../mfc/codesnippet/cpp/providing-flicker-free-activation_3.cpp)]
+
+이 플래그를 포함 하는 코드는 선택 하는 경우에 자동으로 생성 됩니다는 **깜빡임 없는 활성화** 옵션을 합니다 [제어 설정을](../mfc/reference/control-settings-mfc-activex-control-wizard.md) MFC ActiveX 컨트롤 마법사를 사용 하 여 컨트롤을 만들 때 페이지입니다.
+
+창 없는 활성화를 사용 하는 경우이 최적화에 영향을 주지 않습니다.
+
+## <a name="see-also"></a>참고 항목
+
+[MFC ActiveX 컨트롤: 최적화](../mfc/mfc-activex-controls-optimization.md)
 

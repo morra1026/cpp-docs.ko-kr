@@ -21,24 +21,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdad5073b3f566ad43d25258ca0b5e173f52fb57
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: b398fedb8637ae6ce539a876410222485054919b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36956813"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46409547"
 ---
 # <a name="setting-the-mode-of-a-cstatusbarctrl-object"></a>CStatusBarCtrl 개체의 모드 설정
-두 가지 방식에 대 한는 `CStatusBarCtrl` 개체: 단순 및 비 단순 합니다. 대부분의 경우 상태 표시줄 컨트롤이 텍스트와 아이콘이 나 아이콘 함께 하나 이상의 파트를 갖습니다. 이 비 단순 모드를 라고 합니다. 이 모드에 대 한 자세한 내용은 참조 하십시오. [CStatusBarCtrl 개체의 일부 초기화](../mfc/initializing-the-parts-of-a-cstatusbarctrl-object.md)합니다.  
-  
- 그러나만 해야 하는 경우 텍스트 한 줄을 표시 하려면 있습니다. 이 경우 단순 모드는 충분 합니다. 모드를 변경 하는 `CStatusBarCtrl` simple로 개체를 호출 하는 [SetSimple](../mfc/reference/cstatusbarctrl-class.md#setsimple) 멤버 함수입니다. 단순 모드에서 상태 표시줄 컨트롤을 호출 하 여 텍스트를 설정의 `SetText` 255에 대 한 값으로 전달 되는 멤버 함수는 *nPane* 매개 변수입니다.  
-  
- 사용할 수 있습니다는 [IsSimple](../mfc/reference/cstatusbarctrl-class.md#issimple) 하는 모드를 결정 하는 함수는 `CStatusBarCtrl` 개체입니다.  
-  
+
+에 대 한 두 가지 모드를 가지는 `CStatusBarCtrl` 개체: 단순 및 비 단순 합니다. 대부분의 경우 상태 표시줄 컨트롤에 텍스트와 아이콘이 나 아이콘 함께 하나 이상의 파트를 해야 합니다. 이 비 단순 모드를 라고 합니다. 이 모드에 대 한 자세한 내용은 참조 하세요. [CStatusBarCtrl 개체의 일부 초기화](../mfc/initializing-the-parts-of-a-cstatusbarctrl-object.md)합니다.
+
+그러나만 해야 하는 텍스트 한 줄을 표시 하는 경우가 있습니다. 이 경우 간단한 모드 요구 사항에 맞게 충분 한입니다. 모드를 변경 합니다 `CStatusBarCtrl` simple로 개체를 호출 하는 [SetSimple](../mfc/reference/cstatusbarctrl-class.md#setsimple) 멤버 함수입니다. 상태 표시줄 컨트롤은 단순 모드에서 되 면 호출 하 여 텍스트를 설정 합니다 `SetText` 255에 대 한 값으로 전달 되는 멤버 함수는 *nPane* 매개 변수입니다.
+
+사용할 수는 [IsSimple](../mfc/reference/cstatusbarctrl-class.md#issimple) 모드를 결정 하는 함수는 `CStatusBarCtrl` 개체가 있습니다.
+
 > [!NOTE]
->  및로 단순, 상태 표시줄 개체가 단순 하지 않고에서 변경 하거나 그 반대로 창을 즉시 다시 그려집니다 경우 해당 하는 경우, 정의 된 모든 부분이 자동으로 복원 됩니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [CStatusBarCtrl 사용](../mfc/using-cstatusbarctrl.md)   
- [컨트롤](../mfc/controls-mfc.md)
+>  경우 상태 표시줄 개체가 인스턴스이므로에서 간단 하 고로 변경 됩니다 또는 창을 즉시 다시 그릴 그 반대의 경우와 해당 하는 경우, 정의 된 모든 부분이 자동으로 복원 됩니다.
+
+## <a name="see-also"></a>참고 항목
+
+[CStatusBarCtrl 사용](../mfc/using-cstatusbarctrl.md)<br/>
+[컨트롤](../mfc/controls-mfc.md)
 

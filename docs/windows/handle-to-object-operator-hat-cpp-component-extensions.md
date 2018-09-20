@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 569770b548d4bb076bdfac83942def5684ebdf5e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: fa72b6ec2983c0d7b9850578e743d03b7e3946e3
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597299"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46410860"
 ---
 # <a name="handle-to-object-operator---c-component-extensions"></a>개체 연산자에 대한 핸들(^)(C++ 구성 요소 확장)
 
@@ -235,5 +235,5 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)  
+[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)<br/>
 [추적 참조 연산자](../windows/tracking-reference-operator-cpp-component-extensions.md)

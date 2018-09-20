@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 72c312bdec9248cdc38150163d914b2ac7036ab8
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 993f0e190d87b140fba0008872d57f2a34b6a5cb
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45711089"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46377268"
 ---
 # <a name="enum-class--c-component-extensions"></a>enum 클래스(C++ 구성 요소 확장)
 
@@ -44,23 +44,23 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
 
 ### <a name="parameters"></a>매개 변수
 
-*access*  
+*access*<br/>
 해당 되는 열거형의 접근성 **공용** 하거나 **개인**합니다.
 
-*enumeration-identifier*  
+*enumeration-identifier*<br/>
 열거형의 이름입니다.
 
-*underlying-type*  
+*underlying-type*<br/>
 (선택 사항) 열거형의 내부 형식입니다.
 
 (선택 사항. Windows 런타임 전용) 수 있는 열거형의 내부 형식 **bool**, **char**를 `char16`를 `int16`를 `uint16`를 **int**, `uint32`하십시오 `int64`, 또는 `uint64`합니다.
 
-*enumerator-list*  
+*enumerator-list*<br/>
 열거자 이름의 쉼표로 구분된 목록입니다.
 
 각 열거자의 값은 컴파일러에 의해 암시적으로 정의되거나 *enumerator*`=`*constant-expression*을 참조하세요. 기본적으로 첫 번째 열거자의 값은 암시적으로 정의된 경우 0입니다. 암시적으로 정의된 각 후속 열거자의 값은 이전 열거자의 값 + 1입니다.
 
-*var*  
+*var*<br/>
 (선택 사항) 열거형 형식의 변수 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -92,19 +92,19 @@ accessenum structname [:type] { enumerator-list } var;
 
 ### <a name="parameters"></a>매개 변수
 
-*access*  
+*access*<br/>
 열거형의 접근성입니다. 일 수 있습니다 **공개** 하거나 **개인**합니다.
 
-*enumerator-list*  
+*enumerator-list*<br/>
 열거형에서 식별자(열거자)의 쉼표로 구분된 목록입니다.
 
-*name*  
+*name*<br/>
 열거형의 이름입니다. 관리되는 익명 열거형은 허용되지 않습니다.
 
-*type*  
+*type*<br/>
 (선택 사항) 내부 형식의 합니다 *식별자*합니다. 서명 되거나 서명 되지 않은 버전의 같은 스칼라 형식일 수 **int**를 **짧은**, 또는 **긴**합니다.  **bool** 나 **char** 사용할 수 있습니다.
 
-*var*  
+*var*<br/>
 (선택 사항) 열거형 형식의 변수 이름입니다.
 
 ### <a name="remarks"></a>설명

@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3c758226935151bd11faec12aed459aeb2606ca9
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 8b220ecd69ce539c03339ac73048efb2750d2e32
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43684826"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46401805"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows 런타임 C++ 템플릿 라이브러리(WRL)
 
@@ -50,43 +50,43 @@ Windows Runtime c + + 템플릿 라이브러리 및 C + + /cli CX 서로 다른 
 
 지금 바로 Windows Runtime c + + 템플릿 라이브러리를 사용 하 여 작업할 수 있는 일부 리소스는 다음과 같습니다.
 
-[Windows 런타임 라이브러리 (WRL)](http://channel9.msdn.com/Events/Windows-Camp/Developing-Windows-8-Metro-style-apps-in-Cpp/The-Windows-Runtime-Library-WRL-)  
+[Windows 런타임 라이브러리 (WRL)](http://channel9.msdn.com/Events/Windows-Camp/Developing-Windows-8-Metro-style-apps-in-Cpp/The-Windows-Runtime-Library-WRL-)<br/>
 이 채널 9 비디오에서는 자세한 Windows 런타임 c + + 템플릿 라이브러리를 사용 하는 방법에 대 한 작성 하 고 Windows 런타임 구성 요소를 사용 하는 방법과 유니버설 Windows 플랫폼 (UWP) 앱을 작성 합니다.
 
-[방법: 활성화 하 고 Windows 런타임 구성 요소를 사용 하 여](../windows/how-to-activate-and-use-a-windows-runtime-component-using-wrl.md)  
+[방법: 활성화 하 고 Windows 런타임 구성 요소를 사용 하 여](../windows/how-to-activate-and-use-a-windows-runtime-component-using-wrl.md)<br/>
 Windows 런타임을 초기화 및 활성화 하 고 Windows 런타임 구성 요소를 사용 하 여 Windows Runtime c + + 템플릿 라이브러리를 사용 하는 방법을 보여 줍니다.
 
-[방법: 비동기 작업 완료](../windows/how-to-complete-asynchronous-operations-using-wrl.md)  
+[방법: 비동기 작업 완료](../windows/how-to-complete-asynchronous-operations-using-wrl.md)<br/>
 Windows Runtime c + + 템플릿 라이브러리를 사용 하 여 비동기 작업을 시작 하 고 작업 완료 시 작업을 수행 하는 방법을 보여 줍니다.
 
-[방법: 이벤트 처리](../windows/how-to-handle-events-using-wrl.md)  
+[방법: 이벤트 처리](../windows/how-to-handle-events-using-wrl.md)<br/>
 구독 하 고 Windows 런타임 개체의 이벤트를 처리 하는 Windows 런타임 c + + 템플릿 라이브러리를 사용 하는 방법을 보여 줍니다.
 
-[연습: WRL 및 미디어 파운데이션을 사용하여 UWP 앱 만들기](../windows/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)  
+[연습: WRL 및 미디어 파운데이션을 사용하여 UWP 앱 만들기](../windows/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)<br/>
 사용 하는 UWP 앱을 만드는 방법을 알아봅니다 [Microsoft 미디어 파운데이션](/windows/desktop/medfound/microsoft-media-foundation-sdk)합니다.
 
-[방법: 기본 COM 구성 요소 만들기](../windows/how-to-create-a-classic-com-component-using-wrl.md)  
+[방법: 기본 COM 구성 요소 만들기](../windows/how-to-create-a-classic-com-component-using-wrl.md)<br/>
 기본 COM 구성 요소를 만들고 등록 하 고 데스크톱 앱에서 COM 구성 요소를 사용 하면 기본 Windows Runtime c + + 템플릿 라이브러리를 사용 하는 방법을 보여 줍니다.
 
-[방법: 직접 WRL 구성 요소 인스턴스화](../windows/how-to-instantiate-wrl-components-directly.md)  
+[방법: 직접 WRL 구성 요소 인스턴스화](../windows/how-to-instantiate-wrl-components-directly.md)<br/>
 사용 방법 알아보기 합니다 [Microsoft::WRL::Make](../windows/make-function.md) 및 [Microsoft::WRL::Details::MakeAndInitialize](../windows/makeandinitialize-function.md) 를 정의 하는 모듈에서 구성 요소를 인스턴스화하는 함수입니다.
 
-[방법: winmdidl.exe 및 midlrt.exe를 사용하여 Windows 메타데이터에서 .h 파일 만들기](../windows/use-winmdidl-and-midlrt-to-create-h-files-from-windows-metadata.md)  
+[방법: winmdidl.exe 및 midlrt.exe를 사용하여 Windows 메타데이터에서 .h 파일 만들기](../windows/use-winmdidl-and-midlrt-to-create-h-files-from-windows-metadata.md)<br/>
 .winmd 메타데이터에서 IDL 파일을 만들어 WRL의 사용자 지정 Windows 런타임 구성 요소를 사용하는 방법을 살펴봅니다.
 
-[연습: 작업 및 XML HTTP 요청을 사용하여 연결](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)  
+[연습: 작업 및 XML HTTP 요청을 사용하여 연결](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)<br/>
 사용 하는 방법을 보여 줍니다 합니다 [IXMLHTTPRequest2](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) 하 고 [IXMLHTTPRequest2Callback](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) UWP 앱에서 웹 서비스에 HTTP GET 및 POST 요청을 보내는 작업 함께 인터페이스.
 
-[Bing Maps Trip Optimizer 샘플](http://code.msdn.microsoft.com/Bing-Maps-trip-optimizer-c4e037f7)  
+[Bing Maps Trip Optimizer 샘플](http://code.msdn.microsoft.com/Bing-Maps-trip-optimizer-c4e037f7)<br/>
 사용 하는 `HttpRequest` 에 정의 된 클래스 [연습:를 사용 하 여 작업 연결 및 XML HTTP 요청](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md) 완전 한 UWP 앱의 컨텍스트에서 합니다.
 
-[C + + 샘플을 사용 하 여 Windows 런타임 DLL 구성 요소 만들기](http://code.msdn.microsoft.com/windowsapps/Creating-a-Windows-Runtime-6c399797)  
+[C + + 샘플을 사용 하 여 Windows 런타임 DLL 구성 요소 만들기](http://code.msdn.microsoft.com/windowsapps/Creating-a-Windows-Runtime-6c399797)<br/>
 in-process DLL 구성 요소를 만들고 C +에서 사용 하는 Windows 런타임 c + + 템플릿 라이브러리를 사용 하는 방법을 보여 줍니다 + /CX, JavaScript 및 C#입니다.
 
-[DirectX marble maze 게임 샘플](http://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345)  
+[DirectX marble maze 게임 샘플](http://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345)<br/>
 완전 한 3 차원 게임의 컨텍스트에서 DirectX 및 미디어 파운데이션 같은 COM 구성 요소의 수명을 관리 하는 Windows 런타임 c + + 템플릿 라이브러리를 사용 하는 방법을 보여 줍니다.
 
-[샘플 데스크톱 앱에서에서 알림 보내기](http://code.msdn.microsoft.com/windowsdesktop/Sending-toast-notifications-71e230a2)  
+[샘플 데스크톱 앱에서에서 알림 보내기](http://code.msdn.microsoft.com/windowsdesktop/Sending-toast-notifications-71e230a2)<br/>
 데스크톱 앱에서 알림 메시지를 사용 하는 Windows 런타임 c + + 템플릿 라이브러리를 사용 하는 방법을 보여 줍니다.
 
 ## <a name="windows-runtime-c-template-library-compared-to-atl"></a>과 ATL의 비교 하는 Windows 런타임 c + + 템플릿 라이브러리

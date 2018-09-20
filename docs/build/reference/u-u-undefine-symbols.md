@@ -23,12 +23,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 34030a8ef91e5a25bdb1a13981925c5ddf1f05df
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a32106dd9802643a827f8a3e97298f389d31d3b4
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721554"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430672"
 ---
 # <a name="u-u-undefine-symbols"></a>/U, /u(기호 정의 해제)
 
@@ -83,7 +83,7 @@ ms.locfileid: "45721554"
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
-[/J (부호 형식은 기본 문자)](../../build/reference/j-default-char-type-is-unsigned.md)
-[/GR (런타임 형식 정보 사용)](../../build/reference/gr-enable-run-time-type-information.md)
-[/EH (예외 처리 모델)](../../build/reference/eh-exception-handling-model.md) 
- [/MD, /MT, /LD (런타임 라이브러리 사용)](../../build/reference/md-mt-ld-use-run-time-library.md)
+[/J(부호 없는 기본 문자 형식)](../../build/reference/j-default-char-type-is-unsigned.md)<br/>
+[/GR(런타임 형식 정보 사용)](../../build/reference/gr-enable-run-time-type-information.md)<br/>
+[/EH(예외 처리 모델)](../../build/reference/eh-exception-handling-model.md)<br/>
+[/MD, /MT, /LD(런타임 라이브러리 사용)](../../build/reference/md-mt-ld-use-run-time-library.md)

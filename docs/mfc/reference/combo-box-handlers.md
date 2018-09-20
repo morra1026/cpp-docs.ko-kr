@@ -37,30 +37,32 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e1dcd48bfadcc4ed5a4b64fd0dcdee334c1f1b4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5751fbdd4bff0cf3d42231ad00bef0c3483ccfb9
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33368080"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46424263"
 ---
 # <a name="combo-box-handlers"></a>콤보 상자 처리기
-다음 맵 항목 함수 프로토타입을에 해당합니다.  
-  
-|맵 항목|함수 프로토타입|  
-|---------------|------------------------|  
-|ON_CBN_CLOSEUP ( \<id >, \<memberFxn >)|afx_msg void memberFxn)|  
-|ON_CBN_DBLCLK ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|  
-|ON_CBN_DROPDOWN ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|  
-|ON_CBN_EDITCHANGE ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|  
-|ON_CBN_EDITUPDATE ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|  
-|ON_CBN_ERRSPACE ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|  
-|ON_CBN_KILLFOCUS ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|  
-|ON_CBN_SELCHANGE ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|  
-|ON_CBN_SELENDCANCEL ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|  
-|ON_CBN_SELENDOK ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|  
-|ON_CBN_SETFOCUS ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|  
-  
-## <a name="see-also"></a>참고 항목  
- [메시지 맵](../../mfc/reference/message-maps-mfc.md)
+
+다음 맵 항목 있는 함수 프로토타입과 일치합니다.
+
+|맵 항목|함수 프로토타입|
+|---------------|------------------------|
+|ON_CBN_CLOSEUP ( \<id >, \<memberFxn >)|afx_msg void memberFxn)|
+|ON_CBN_DBLCLK ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|
+|ON_CBN_DROPDOWN ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|
+|ON_CBN_EDITCHANGE ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|
+|ON_CBN_EDITUPDATE ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|
+|ON_CBN_ERRSPACE ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|
+|ON_CBN_KILLFOCUS ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|
+|ON_CBN_SELCHANGE ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|
+|ON_CBN_SELENDCANCEL ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|
+|ON_CBN_SELENDOK ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|
+|ON_CBN_SETFOCUS ( \<id >, \<memberFxn >)|afx_msg void memberFxn ();|
+
+## <a name="see-also"></a>참고 항목
+
+[메시지 맵](../../mfc/reference/message-maps-mfc.md)
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8b2bc46f916e4aaaedc74e8b6d94faafa1ead3b9
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e2780721d2f0b1a8cda05cb028b36d8d5c926cb1
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595489"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46415254"
 ---
 # <a name="asyncbaseputonprogress-method"></a>AsyncBase::PutOnProgress 메서드
 
@@ -38,7 +38,7 @@ STDMETHOD(
 
 ### <a name="parameters"></a>매개 변수
 
-*progressHandler*  
+*progressHandler*<br/>
 진행률 이벤트 처리기에 설정 된 주소입니다.
 
 ## <a name="return-value"></a>반환 값

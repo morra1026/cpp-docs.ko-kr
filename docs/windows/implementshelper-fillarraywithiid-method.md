@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 876f2bde68c53a27c1c40e9206b6285b8562bd91
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d570eaf3872f5d281d769e77298f9186d35e5a26
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591141"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46410431"
 ---
 # <a name="implementshelperfillarraywithiid-method"></a>ImplementsHelper::FillArrayWithIid 메서드
 
@@ -38,10 +38,10 @@ void FillArrayWithIid(
 
 ### <a name="parameters"></a>매개 변수
 
-*index*  
+*index*<br/>
 이 작업에 대 한 시작 배열 요소를 나타내는 0부터 시작 인덱스입니다. 이 작업이 완료 되 면 *인덱스* 1 씩 증가 합니다.
 
-*iid*  
+*iid*<br/>
 Iid 형식의 배열입니다.
 
 ## <a name="remarks"></a>설명
@@ -56,5 +56,5 @@ Iid 형식의 배열입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[ImplementsHelper 구조체](../windows/implementshelper-structure.md)  
+[ImplementsHelper 구조체](../windows/implementshelper-structure.md)<br/>
 [Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)

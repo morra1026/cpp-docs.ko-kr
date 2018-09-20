@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 97a0f98044e18ec6eff1f1b99e9c9178b711e040
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0f4aeb3bc5b2ee0598cf9e7d3f572f1f0e5fb5f2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596025"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46393180"
 ---
 # <a name="comptrrefoperator-operator"></a>ComPtrRef::operator!= 연산자
 
@@ -57,10 +57,10 @@ bool operator!=(
 
 ### <a name="parameters"></a>매개 변수
 
-*a*  
+*a*<br/>
 에 대 한 참조를 **ComPtrRef** 개체입니다.
 
-*b*  
+*b*<br/>
 다른에 대 한 참조가 **ComPtrRef** 개체 또는 익명 개체에 대 한 포인터 (`void*`).
 
 ## <a name="return-value"></a>반환 값
@@ -83,5 +83,5 @@ bool operator!=(
 
 ## <a name="see-also"></a>참고 항목
 
-[Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)  
+[Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)<br/>
 [ComPtrRef 클래스](../windows/comptrref-class.md)

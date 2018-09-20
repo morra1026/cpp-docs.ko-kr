@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a73d5bb3ef67469ad1cc12b2a2c2757cf1ce137
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a2e61616ae6a481925bdb8b9b135f0a6a9fdfff7
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45712839"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46407948"
 ---
 # <a name="ctabbedpane-class"></a>CTabbedPane 클래스
 
@@ -183,9 +183,9 @@ virtual BOOL DetachPane(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *pBar*  
+[in] *pBar*
 
-[in] *bHide*  
+[in] *bHide*
 
 ### <a name="return-value"></a>반환 값
 
@@ -225,9 +225,9 @@ virtual BOOL FloatTab(
 ### <a name="parameters"></a>매개 변수
 
 *pBar*<br/>
-[in] [in] *nTabID*  
+[in] [in] *nTabID*
 *dockMethod*<br/>
-[in] [in] *bHide*  
+[in] [in] *bHide*
 
 ### <a name="return-value"></a>반환 값
 
@@ -308,6 +308,7 @@ AFX_IMPORT_DATA static BOOL m_bTabsAlwaysTop;
 기본값은 FALSE입니다.
 
 ##  <a name="m_ptabwndrtc"></a>  CTabbedPane::m_pTabWndRTC
+
 사용자 지정 `CMFCTabCtrl` 파생 개체에 대한 런타임 클래스 정보입니다.
 
 ```
@@ -351,8 +352,8 @@ static void SetTabAutoColors(const CArray<COLORREF, COLORREF>& arColors);
 
 ## <a name="see-also"></a>참고 항목
 
-[계층 구조 차트](../../mfc/hierarchy-chart.md)  
-[클래스](../../mfc/reference/mfc-classes.md)  
-[CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md)  
-[CBaseTabbedPane 클래스](../../mfc/reference/cbasetabbedpane-class.md)  
-[CMFCOutlookBar 클래스](../../mfc/reference/cmfcoutlookbar-class.md)  
+[계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
+[클래스](../../mfc/reference/mfc-classes.md)<br/>
+[CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md)<br/>
+[CBaseTabbedPane 클래스](../../mfc/reference/cbasetabbedpane-class.md)<br/>
+[CMFCOutlookBar 클래스](../../mfc/reference/cmfcoutlookbar-class.md)
