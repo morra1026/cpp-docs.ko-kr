@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 36b438662fb42cdeeb894906753a38168208f5ae
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 37e5db99d97bc65f1f4a75e2e56e1f0e719dd9ab
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218821"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427175"
 ---
 # <a name="uuid-c-attributes"></a>uuid(C++ 특성)
 
@@ -38,7 +38,7 @@ ms.locfileid: "43218821"
 
 ### <a name="parameters"></a>매개 변수
 
-*uuid*  
+*uuid*<br/>
 128 비트 고유 식별자입니다.
 
 ## <a name="remarks"></a>설명
@@ -70,8 +70,8 @@ ms.locfileid: "43218821"
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](../windows/idl-attributes.md)  
-[인터페이스 특성](../windows/interface-attributes.md)  
-[클래스 특성](../windows/class-attributes.md)  
-[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)  
+[IDL 특성](../windows/idl-attributes.md)<br/>
+[인터페이스 특성](../windows/interface-attributes.md)<br/>
+[클래스 특성](../windows/class-attributes.md)<br/>
+[Typedef, Enum, Union 및 Struct 특성](../windows/typedef-enum-union-and-struct-attributes.md)<br/>
 [uuid](/windows/desktop/Midl/uuid)  

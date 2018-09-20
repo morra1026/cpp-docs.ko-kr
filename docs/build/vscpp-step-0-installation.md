@@ -2,7 +2,7 @@
 title: Visual Studio 2017에서 c + + 지원 설치 | Microsoft Docs
 description: Visual Studio의 Visual c + + 지원 설치
 ms.custom: mvc
-ms.date: 06/21/2018
+ms.date: 09/17/2018
 ms.topic: tutorial
 ms.technology:
 - devlang-C++
@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3e0fef319fbe119118e3a915a66bea3546bbb9a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6c905df6fb406b9189bd46d20c6f199d3d90a722
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45702899"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46441943"
 ---
 # <a name="install-c-support-in-visual-studio"></a>Visual Studio에서 c + + 지원 설치
 
@@ -37,7 +37,7 @@ ms.locfileid: "45702899"
 
 ## <a name="visual-studio-2015-installation"></a>Visual Studio 2015 설치
 
-Visual Studio 2015를 설치하려면 [이전 버전의 Visual Studio 다운로드](https://www.visualstudio.com/vs/older-downloads/)로 이동합니다. 설치 프로그램을 실행하고 **사용자 지정 설치**를 선택한 다음, C++ 구성 요소를 선택합니다.
+Visual Studio 2015를 설치하려면 [이전 버전의 Visual Studio 다운로드](https://www.visualstudio.com/vs/older-downloads/)로 이동합니다. 설치 프로그램을 실행하고 **사용자 지정 설치**를 선택한 다음, C++ 구성 요소를 선택합니다. 기존 Visual Studio 2015 설치에 c + + 지원을 추가 하려면 Windows 시작 단추 및 유형에 따라 클릭 **프로그램 추가 / 제거**합니다. 결과 목록에서 프로그램을 열고 설치 된 프로그램 목록에서 Visual Studio 2015 설치를 찾습니다. 두 번 클릭 한 다음 선택 **수정** 설치할 Visual c + + 구성 요소를 선택 합니다.
 
 일반적으로 Visual Studio 2015 컴파일러를 사용하여 코드를 컴파일해야 하는 경우에도 Visual Studio 2017을 사용하는 것이 좋습니다. 자세한 내용은 [Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드](../porting/use-native-multi-targeting.md)를 참조하세요.
 
