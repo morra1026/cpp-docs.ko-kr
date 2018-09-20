@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: abbe93f5359171c88134ff61759e9edc63db2451
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7cccebf6e1c6004a2416f4fdeb254369f9aa7b72
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610435"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46410314"
 ---
 # <a name="moduleregistercomobject-method"></a>Module::RegisterCOMObject 메서드
 
@@ -42,19 +42,19 @@ WRL_NOTHROW virtual HRESULT RegisterCOMObject(
 
 ### <a name="parameters"></a>매개 변수
 
-*서버 이름*  
+*서버 이름*<br/>
 서버의 정규화된 이름입니다.
 
-*clsid*  
+*clsid*<br/>
 등록할 CLSID의 배열입니다.
 
-*팩터리*  
+*팩터리*<br/>
 가용성을 게시하고 있는 클래스 개체의 IUnknown 인터페이스 배열입니다.
 
-*쿠키*  
+*쿠키*<br/>
 작업이 완료되면 등록된 클래스 개체를 식별하는 값에 대한 포인터 배열입니다. 이러한 값은 나중에 등록을 해지하는 데 사용됩니다.
 
-*count*  
+*count*<br/>
 등록할 CLSID 수입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -74,4 +74,5 @@ COM 개체는 CLSCTX 열거형의 CLSCTX_LOCAL_SERVER 열거자를 사용하여 
 **네임스페이스:** Microsoft::WRL
 
 ## <a name="see-also"></a>참고 항목
+
 [Module 클래스](../windows/module-class.md)

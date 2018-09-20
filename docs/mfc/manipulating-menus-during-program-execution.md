@@ -18,18 +18,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4979b75a7644ab747d1a32c14826a25678e276b6
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 93257b89645692885aba728f2dffa698152122db
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929762"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46433714"
 ---
 # <a name="manipulating-menus-during-program-execution"></a>프로그램 실행 중 메뉴 조작
-클래스를 사용 하 여 `CMenu` 메뉴 및 메뉴 항목에서 바로 조작할 수 있습니다. `CMenu` Windows HMENU 핸들을 캡슐화 하 고 메뉴를 사용 하기 위한 멤버 함수를 제공 합니다.  
-  
- 클래스에 대 한 개요를 참조 [CMenu](../mfc/reference/cmenu-class.md) 대 한 자세한 내용은 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [메뉴](../mfc/menus-mfc.md)
+
+클래스를 사용 하 여 `CMenu` 메뉴 및 메뉴 항목에서 바로 조작할 수 있습니다. `CMenu` Windows HMENU 핸들을 캡슐화 하 고 메뉴를 사용 하 여 작업에 대 한 멤버 함수를 제공 합니다.
+
+클래스에 대 한 개요를 참조 하십시오 [CMenu](../mfc/reference/cmenu-class.md) 세부 정보에 대 한 합니다.
+
+## <a name="see-also"></a>참고 항목
+
+[메뉴](../mfc/menus-mfc.md)
 

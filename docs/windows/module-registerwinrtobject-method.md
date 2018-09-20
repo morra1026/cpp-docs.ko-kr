@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a7f5879a3a76e9af795a5dfc808423b43515662a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 496b1ccac5b998ba08f4e2eccfe31ffd18f2c37d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609303"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46431790"
 ---
 # <a name="moduleregisterwinrtobject-method"></a>Module::RegisterWinRTObject 메서드
 
@@ -39,16 +39,16 @@ HRESULT RegisterWinRTObject(const wchar_t* serverName,
 
 ### <a name="parameters"></a>매개 변수
 
-*서버 이름*  
+*서버 이름*<br/>
 이 작업으로 영향을 받는 개체의 하위 집합을 지정하는 이름입니다.
 
-*activatableClassIds*  
+*activatableClassIds*<br/>
 등록할 활성화 가능한 CLSID 배열입니다.
 
-*쿠키*  
+*쿠키*<br/>
 등록된 클래스 개체를 식별하는 값입니다. 이 값은 나중에 등록을 해지할 때 사용됩니다.
 
-*count*  
+*count*<br/>
 등록할 개체의 수입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -62,4 +62,5 @@ HRESULT RegisterWinRTObject(const wchar_t* serverName,
 **네임스페이스:** Microsoft::WRL
 
 ## <a name="see-also"></a>참고 항목
+
 [Module 클래스](../windows/module-class.md)

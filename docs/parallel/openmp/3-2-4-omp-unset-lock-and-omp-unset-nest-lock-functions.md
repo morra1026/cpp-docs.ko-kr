@@ -12,24 +12,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f480a75efff737356c1477593e182537ae73a8c8
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 426ac0a5ff974e486f70eed2965fdc27d5acc941
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33690223"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46419115"
 ---
 # <a name="324-ompunsetlock-and-ompunsetnestlock-functions"></a>3.2.4 omp_unset_lock and omp_unset_nest_lock 함수
-이러한 함수는 잠금 소유권을 해제 하는 방법 제공 합니다. 형식은 다음과 같습니다.  
-  
-```  
-#include <omp.h>  
-void omp_unset_lock(omp_lock_t *lock);  
-void omp_unset_nest_lock(omp_nest_lock_t *lock);  
-```  
-  
- 이러한 각 함수에 대 한 인수는 함수를 실행 하는 스레드에서 소유 하는 초기화 된 잠금 변수를 가리켜야 합니다. 스레드가 해당 잠금을 소유 하지 않은 경우 동작이 정의 되지 않습니다.  
-  
- 간단한 잠금에 대 한는 `omp_unset_lock` 함수는 잠금 소유권에서 함수를 실행 하는 스레드를 해제 합니다.  
-  
- 중첩 잠금에 대 한는 `omp_unset_nest_lock` 함수는 중첩 개수 및 릴리스 결과 횟수가 0 이면 잠금 소유권에서 함수를 실행 하는 스레드입니다.
+
+이러한 함수는 잠금 소유권을 해제 하는 수단을 제공 합니다. 형식은 다음과 같습니다.
+
+```
+#include <omp.h>
+void omp_unset_lock(omp_lock_t *lock);
+void omp_unset_nest_lock(omp_nest_lock_t *lock);
+```
+
+이러한 각 함수에 대 한 인수는 함수를 실행 하는 스레드를 소유 하는 초기화 잠금 변수를 가리키도록 해야 합니다. 스레드는 잠금을 소유 하지 않는 경우 동작이 정의 되지 않습니다.
+
+간단한 잠금에 대 한는 `omp_unset_lock` 함수 잠금 소유권에서 함수를 실행 하는 스레드를 해제 합니다.
+
+중첩 가능 잠금는 `omp_unset_nest_lock` 함수는 중첩 개수 및 릴리스 결과 횟수가 0 이면 잠금 소유권에서 함수를 실행 하는 스레드입니다.

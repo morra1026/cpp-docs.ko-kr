@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2080aae34a69b18286953bfa48a269b81a5a5e65
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1d6feb80c93298d5fe3d2cb23f9b34727bced57d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761815"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46442229"
 ---
 # <a name="atlmfc-shared-classes"></a>ATL/MFC 공유 클래스
 
@@ -44,16 +44,16 @@ ms.locfileid: "43761815"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[MFC와 ATL 간 공유 클래스](../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md)  
+[MFC와 ATL 간 공유 클래스](../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md)<br/>
 MFC 및 ATL 간에 공유되는 클래스에 대한 링크를 제공합니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[액티브 템플릿 라이브러리 (ATL) 참조](../atl/atl-com-desktop-components.md)  
+[액티브 템플릿 라이브러리 (ATL) 참조](../atl/atl-com-desktop-components.md)<br/>
 COM 개체를 손쉽게 프로그래밍할 수 있게 하는 템플릿 기반 C++ 클래스 집합인 ATL 라이브러리에 대한 참고 자료를 제공합니다.
 
-[MFC 라이브러리 참조](../mfc/mfc-desktop-applications.md)  
+[MFC 라이브러리 참조](../mfc/mfc-desktop-applications.md)<br/>
 Windows API로 작성된 애플리케이션 프레임워크를 구성하는 클래스 집합인 MFC 라이브러리에 대한 참조 자료를 제공합니다.
 
-[디버깅](/visualstudio/debugger/debugging-in-visual-studio)  
+[디버깅](/visualstudio/debugger/debugging-in-visual-studio)<br/>
 Visual Studio 디버거를 사용하여 응용 프로그램이나 저장 프로시저의 논리적 오류를 수정하는 방법을 설명하는 항목의 링크를 제공합니다.

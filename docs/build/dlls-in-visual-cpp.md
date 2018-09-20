@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28be2caa3477eabc8b717b387c99d65585a9ef19
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 4ea5026100239f00f03147e435ddd9555617f1dd
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45718057"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46432713"
 ---
 # <a name="dlls-in-visual-c"></a>Visual C++의 DLL
 
@@ -71,46 +71,67 @@ Dll 및 응용 프로그램은 모두 실행 모듈에도 여러 가지 방법�
 
 다음 항목에서는 Visual c + +에서 Dll을 프로그래밍 하는 방법에 대 한 자세한 정보를 제공합니다.
 
-[연습: 생성 및 동적 링크 라이브러리 (c + +)를 사용 하 여](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md) 만들고 Visual Studio를 사용 하 여 DLL을 사용 하는 방법을 설명 합니다.
+[연습: 동적 연결 라이브러리 만들기 및 사용(C++)](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)<br/>
+Visual Studio를 사용하여 DLL을 만들고 사용하는 방법에 대해 설명합니다.
 
-[Dll의 종류](../build/kinds-of-dlls.md) 빌드할 수 있는 Dll의 종류에 대 한 정보를 제공 합니다.
+[DLL의 종류](../build/kinds-of-dlls.md)<br/>
+빌드할 수 있는 다양한 종류의 DLL에 대한 정보를 제공합니다.
 
-[Frequently Asked Questions DLL](../build/dll-frequently-asked-questions.md) Dll에 대 한 질문과 대답을 제공 합니다.
+[DLL에 대 한 질문과 대답](../build/dll-frequently-asked-questions.md)<br/>
+DLL 관련 질문과 대답을 제공합니다.
 
-[실행 파일이 DLL에 링크](../build/linking-an-executable-to-a-dll.md) DLL에 대 한 명시적 및 암시적 링크에 대해 설명 합니다.
+[DLL에 실행 파일 링크](../build/linking-an-executable-to-a-dll.md)<br/>
+DLL에 대한 명시적 및 암시적 링크에 대해 설명합니다.
 
-[DLL 초기화](../build/run-time-library-behavior.md#initializing-a-dll) DLL이 로드 될 때 실행 되어야 하는 초기화 코드를 DLL에 설명 합니다.
+[DLL 초기화](../build/run-time-library-behavior.md#initializing-a-dll)<br/>
+DLL이 로드 될 때 실행 되어야 하는 DLL 초기화 코드를 설명 합니다.
 
-[Dll 및 Visual c + + 런타임 라이브러리 동작](../build/run-time-library-behavior.md) 런타임 라이브러리 DLL 시작 시퀀스를 수행 하는 방법에 대해 설명 합니다.
+[DLL 및 Visual C++ 런타임 라이브러리 동작](../build/run-time-library-behavior.md)<br/>
+런타임 라이브러리가 DLL 시동을 순서대로 수행하는 과정을 설명합니다.
 
-[LoadLibrary 및 AfxLoadLibrary](../build/loadlibrary-and-afxloadlibrary.md) 사용에 대해 설명 **LoadLibrary** 고 `AfxLoadLibrary` 런타임 시 DLL에 명시적으로 연결 합니다.
+[LoadLibrary 및 AfxLoadLibrary](../build/loadlibrary-and-afxloadlibrary.md)<br/>
+사용 하 여 설명 **LoadLibrary** 및 `AfxLoadLibrary` 런타임 시 DLL에 명시적으로 연결 합니다.
 
-[GetProcAddress](../build/getprocaddress.md) 사용에 대해 설명 **GetProcAddress** DLL에서 내보내기 함수의 주소를 가져옵니다.
+[GetProcAddress](../build/getprocaddress.md)<br/>
+사용 하 여 설명 **GetProcAddress** DLL에서 내보내기 함수의 주소를 가져옵니다.
 
-[FreeLibrary 및 AfxFreeLibrary](../build/freelibrary-and-afxfreelibrary.md) 사용에 대해 설명 **FreeLibrary** 고 `AfxFreeLibrary` DLL 모듈이 더 이상 필요 없는 경우.
+[FreeLibrary 및 AfxFreeLibrary](../build/freelibrary-and-afxfreelibrary.md)<br/>
+사용 하 여 설명 **FreeLibrary** 고 `AfxFreeLibrary` DLL 모듈이 더 이상 필요 없는 경우.
 
-[동적 연결 라이브러리 순서](/windows/desktop/Dlls/dynamic-link-library-search-order) 시스템에서 DLL을 찾기 위해 Windows 운영 체제가 사용 하는 검색 경로 설명 합니다.
+[동적 연결 라이브러리 순서](/windows/desktop/Dlls/dynamic-link-library-search-order)<br/>
+시스템에서 DLL을 찾기 위해 Windows 운영 체제가 사용하는 검색 경로에 대해 설명합니다.
 
-[일반 MFC DLL 동적으로 연결 된 mfc의 모듈 상태](../build/module-states-of-a-regular-dll-dynamically-linked-to-mfc.md) 일반 동적으로 MFC에 링크 된 MFC DLL의 모듈 상태를 설명 합니다.
+[동적으로 MFC에 링크된 기본 MFC DLL의 모듈 상태](../build/module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)<br/>
+일반 동적으로 MFC에 링크 된 MFC DLL의 모듈 상태를 설명 합니다.
 
-[MFC 확장명 Dll](../build/extension-dlls-overview.md) 일반적으로 기존 Microsoft Foundation Class 라이브러리 클래스에서 파생 된 다시 사용할 수 있는 클래스를 구현 하는 Dll에 설명 합니다.
+[MFC 확장명 DLL](../build/extension-dlls-overview.md)<br/>
+기존 MFC 라이브러리 클래스에서 파생된 다시 사용할 수 있는 클래스를 구현하는 DLL에 대해 설명합니다.
 
-[Resource-Only DLL 만들기](../build/creating-a-resource-only-dll.md) 아이콘, 비트맵, 문자열 및 대화 상자 등의 리소스만 포함 하는 리소스 전용 DLL에 설명 합니다.
+[리소스 전용 DLL 만들기](../build/creating-a-resource-only-dll.md)<br/>
+아이콘, 비트맵, 문자열 및 대화 상자 등의 리소스만 포함된 리소스 전용 DLL에 대해 설명합니다.
 
-[MFC 응용 프로그램의 지역화 된 리소스: 위성 Dll](../build/localized-resources-in-mfc-applications-satellite-dlls.md) 제공에는 위성 Dll 여러 언어로 지역화 된 응용 프로그램을 만드는 데 도움이 되는 기능에 대 한 지원이 향상 되었습니다.
+[MFC 응용 프로그램의 지역화된 리소스: 위성 DLL](../build/localized-resources-in-mfc-applications-satellite-dlls.md)<br/>
+여러 언어로 지역화된 응용 프로그램을 만드는 데 도움이 되는 위성 DLL에 대한 향상된 지원을 제공합니다.
 
-[가져오기 및 내보내기](../build/importing-and-exporting.md) DLL에서 함수를 내보내거나 응용 프로그램으로 공용 기호 가져오기에 대해 설명 합니다.
+[가져오기 및 내보내기](../build/importing-and-exporting.md)<br/>
+DLL에서 함수를 내보내거나 응용 프로그램으로 공용 기호를 가져오는 방법에 대해 설명합니다.
 
-[액티브 기술 및 Dll](../build/active-technology-and-dlls.md) 개체 서버 DLL 내에서 구현 될 수 있습니다.
+[액티브 기술 및 DLL](../build/active-technology-and-dlls.md)<br/>
+DLL 내에서 개체 서버가 구현될 수 있도록 합니다.
 
-[DLL의 자동화](../build/automation-in-a-dll.md) MFC DLL 마법사 자동화 옵션을 제공 하는 항목에 대해 설명 합니다.
+[DLL의 자동화](../build/automation-in-a-dll.md)<br/>
+MFC DLL 마법사 지원의 자동화 옵션이 무엇인지 설명합니다.
 
-[MFC Dll의 명명 규칙](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions) Dll 및 MFC에 포함 된 라이브러리가 구조적된 명명 규칙을 지키는 방법에 대해 설명 합니다.
+[MFC DLL의 명명 규칙](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions)<br/>
+MFC에 포함된 DLL 및 라이브러리가 구조적 명명 규칙을 지키는 방법에 대해 설명합니다.
 
-[Visual Basic 응용 프로그램에서 DLL 함수 호출](../build/calling-dll-functions-from-visual-basic-applications.md) Visual Basic 응용 프로그램에서 DLL 함수를 호출 하는 방법에 설명 합니다.
+[Visual Basic 응용 프로그램에서 DLL 함수 호출](../build/calling-dll-functions-from-visual-basic-applications.md)<br/>
+Visual Basic 응용 프로그램에서 DLL 함수를 호출하는 방법에 대해 설명합니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[MFC를 사용 하 여 DLL의 일부로](../mfc/tn011-using-mfc-as-part-of-a-dll.md) Windows 동적 연결 라이브러리의 일부로 MFC 라이브러리를 사용할 수 있는 기본 MFC Dll에 설명 합니다.
+[DLL의 일부로 MFC 사용](../mfc/tn011-using-mfc-as-part-of-a-dll.md)<br/>
+Windows 동적 연결 라이브러리의 일부로 MFC 라이브러리를 사용할 수 있는 기본 MFC Dll에 설명 합니다.
 
-[MFC의 DLL 버전](../mfc/tn033-dll-version-of-mfc.md) 어떻게 MFCxx.dll를 사용할 수 있습니다 및 MFC 응용 프로그램 및 MFC 확장명 Dll MFCxxD.dll (여기서 x는 MFC 버전 번호) 공유 동적 연결 라이브러리에 설명 합니다.
+[MFC의 DLL 버전](../mfc/tn033-dll-version-of-mfc.md)<br/>
+어떻게 MFCxx.dll를 사용할 수 있습니다 및 MFCxxD.dll (여기서 x는 MFC 버전 번호) 공유 동적 연결 라이브러리 MFC 응용 프로그램 및 MFC 확장명 Dll 사용 하 여 설명 합니다.
