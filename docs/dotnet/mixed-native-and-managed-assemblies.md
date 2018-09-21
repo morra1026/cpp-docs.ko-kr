@@ -1,7 +1,7 @@
 ---
 title: 혼합형 (네이티브 및 관리) 어셈블리 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.technology:
 - cpp-cli
 ms.topic: conceptual
@@ -23,18 +23,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 2a48f34edec8a9f24f22d35be482d3b297215dbe
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 4ee94905bc4c40f6d080e34098e24bd71d495141
+ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43210627"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494493"
 ---
 # <a name="mixed-native-and-managed-assemblies"></a>혼합형된 (네이티브 및 관리) 어셈블리
 
-혼합형된 어셈블리는 관리 되지 않는 컴퓨터 지침과 MSIL 명령이 포함 될 수 있습니다. 이 호출 하 고 완전히 관리 되지 않는 구성 요소를 사용 하 여 호환성을 유지 하면서.NET 구성 요소에서 호출할 수 있습니다. 혼합형된 어셈블리를 사용 하 여 개발자 관리 및 관리 되지 않는 기능이 함께 사용 하 여 응용 프로그램을 작성할 수 있습니다. 이렇게 하면 혼합된 어셈블리를 기존 Visual c + + 응용 프로그램을.NET 플랫폼으로 마이그레이션하는 데 적합 합니다.
+혼합형된 어셈블리는 관리 되지 않는 컴퓨터 지침과 MSIL 명령이 포함 될 수 있습니다. 이 호출 하 여 네이티브 c + + 라이브러리를 사용 하 여 호환성을 유지 하면서.NET 구성 요소에서 호출할 수 있도록 합니다. 혼합형된 어셈블리를 사용 하 여 개발자가.NET 및 네이티브 c + + 코드의 혼합을 사용 하 여 응용 프로그램을 작성할 수 있습니다.
 
-예를 들어 관리 되지 않는 함수로 구성 된 기존 응용 프로그램 제공 될 수 있습니다.NET 플랫폼을 사용 하 여 하나의 모듈을 다시 컴파일하여 합니다 **/clr** 컴파일러 스위치입니다. 이 모듈 다음.NET 기능을 사용할 수 있지만 나머지 응용 프로그램의 호환성이 유지 됩니다. 이러한 방식으로 점진적이 고 차례 대로 방식으로.NET 플랫폼에 응용 프로그램을 변환할 수 있습니다. 동일한 파일 내에서 함수에서 함수 별로 관리 및 비관리 컴파일을 선택할 수도 (참조 [관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md)).
+예를 들어 네이티브 c + + 코드로 구성 된 기존 라이브러리 제공 될 수 있습니다.NET 플랫폼을 사용 하 여 하나의 모듈을 다시 컴파일하여 합니다 **/clr** 컴파일러 스위치입니다. 이 모듈 다음.NET 기능을 사용할 수 있지만 나머지 응용 프로그램의 호환성이 유지 됩니다. 동일한 파일 내에서 함수에서 함수 별로 관리 및 네이티브 컴파일을 선택할 수도 (참조 [관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md)).
 
 Visual c + +만 사용 하 여 혼합 된 관리 되는 어셈블리의 생성을 지원 합니다 **/clr** 컴파일러 옵션입니다. **/clr: pure** 및 **/clr: safe** Visual Studio 2015에서 사용 되지 않고 Visual Studio 2017에서 지원 되지 않는 컴파일러 옵션입니다. 순수 이미지나 검증할 수 있는 관리 되는 어셈블리를 필요로 하는 경우에 C#을 사용 하 여 만든 것이 좋습니다.
 
