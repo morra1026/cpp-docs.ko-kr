@@ -2,7 +2,7 @@
 title: Visual Studio에서 C++ Linux 프로젝트 배포, 실행 및 디버그 | Microsoft Docs
 description: Visual Studio에 있는 C++ Linux 프로젝트 내의 원격 대상에서 코드를 컴파일하고, 실행하고, 디버그하는 방법을 설명합니다.
 ms.custom: ''
-ms.date: 07/20/2018
+ms.date: 09/12/2018
 ms.technology:
 - cpp-linux
 ms.tgt_pltfrm: Linux
@@ -13,12 +13,12 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 57f8aea7d3ff3ddfd28beff6647dc16885d972e3
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 2e6c6c98b027c561f6972ab76a520e9793c30963
+ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207681"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45601602"
 ---
 # <a name="deploy-run-and-debug-your-linux-project"></a>Linux 프로젝트 배포, 실행 및 디버그
 

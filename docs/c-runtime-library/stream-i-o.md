@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3fba53f16fad9321701e641020ed01349b13a5c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9ab13141c573ad302528a09b74cb3a5e2aaa0382
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32418106"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035230"
 ---
 # <a name="stream-io"></a>스트림 I/O
 
@@ -89,23 +89,23 @@ ms.locfileid: "32418106"
 |[_vsnprintf, _vsnwprintf](../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md), [vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l](../c-runtime-library/reference/vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md)|버퍼에 지정된 길이의 형식이 지정된 데이터를 씁니다.|
 |[vsprintf, vswprintf](../c-runtime-library/reference/vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md), [vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l](../c-runtime-library/reference/vsprintf-s-vsprintf-s-l-vswprintf-s-vswprintf-s-l.md)|버퍼에 형식이 지정된 데이터를 씁니다.|
 
- 프로그램 실행이 시작되면 시작 코드에서 여러 스트림, 즉 표준 입력(**stdin**에서 지시), 표준 출력(**stdout**에서 지시)과 표준 오류(**stderr**에서 지시)를 자동으로 엽니다. 이러한 스트림은 기본적으로 콘솔(키보드 및 화면)으로 전송됩니다. **freopen**을 사용하여 **stdin**, **stdout** 또는 **stderr**을 디스크 파일 또는 장치로 리디렉션합니다.
+프로그램 실행이 시작되면 시작 코드에서 여러 스트림, 즉 표준 입력(**stdin**에서 지시), 표준 출력(**stdout**에서 지시)과 표준 오류(**stderr**에서 지시)를 자동으로 엽니다. 이러한 스트림은 기본적으로 콘솔(키보드 및 화면)으로 전송됩니다. **freopen**을 사용하여 **stdin**, **stdout** 또는 **stderr**을 디스크 파일 또는 장치로 리디렉션합니다.
 
- 스트림 루틴을 사용하여 열린 파일은 기본적으로 버퍼링됩니다. **stdout** 및 **stderr** 함수는 가득 찰 때마다 또는 문자 입출력 장치에 쓰는 경우 각 라이브러리 호출 후에 플러시됩니다. 프로그램이 비정상적으로 종료되면 출력 버퍼가 플러시되지 않아 데이터 손실이 발생할 수 있습니다. **fflush** 또는 **_flushall**을 사용하여 지정된 파일과 연결된 버퍼 또는 열려 있는 모든 버퍼가 운영 체제로 플러시되도록 합니다. 그러면 디스크에 쓰기 전에 데이터를 캐시할 수 있습니다. 디스크에 커밋 기능은 시스템 오류 발생 시 플러시된 버퍼 내용이 손실되지 않도록 합니다.
+스트림 루틴을 사용하여 열린 파일은 기본적으로 버퍼링됩니다. **stdout** 및 **stderr** 함수는 가득 찰 때마다 또는 문자 입출력 장치에 쓰는 경우 각 라이브러리 호출 후에 플러시됩니다. 프로그램이 비정상적으로 종료되면 출력 버퍼가 플러시되지 않아 데이터 손실이 발생할 수 있습니다. **fflush** 또는 **_flushall**을 사용하여 지정된 파일과 연결된 버퍼 또는 열려 있는 모든 버퍼가 운영 체제로 플러시되도록 합니다. 그러면 디스크에 쓰기 전에 데이터를 캐시할 수 있습니다. 디스크에 커밋 기능은 시스템 오류 발생 시 플러시된 버퍼 내용이 손실되지 않도록 합니다.
 
- 버퍼 내용을 디스크에 커밋하는 방법에는 다음 두 가지가 있습니다.
+버퍼 내용을 디스크에 커밋하는 방법에는 다음 두 가지가 있습니다.
 
--   COMMODE.OBJ 파일에 연결하여 전역 커밋 플래그를 설정합니다. 전역 플래그의 기본 설정은 **n**("커밋 안 함")입니다.
+- COMMODE.OBJ 파일에 연결하여 전역 커밋 플래그를 설정합니다. 전역 플래그의 기본 설정은 **n**("커밋 안 함")입니다.
 
--   **fopen** 또는 **_fdopen**을 사용하여 모드 플래그를 **c**로 설정합니다.
+- **fopen** 또는 **_fdopen**을 사용하여 모드 플래그를 **c**로 설정합니다.
 
- **c** 또는 **n** 플래그를 사용하여 특별히 열린 파일은 전역 커밋/커밋 안 함 플래그 상태에 관계없이 플래그에 따라 동작합니다.
+**c** 또는 **n** 플래그를 사용하여 특별히 열린 파일은 전역 커밋/커밋 안 함 플래그 상태에 관계없이 플래그에 따라 동작합니다.
 
- 프로그램이 명시적으로 스트림을 닫지 않을 경우 프로그램이 종료되면 스트림이 자동으로 닫힙니다. 그러나 한 번에 열려 있을 수 있는 스트림 수가 제한되므로 프로그램이 작업을 마치면 스트림을 닫아야 합니다. 이 제한에 대한 자세한 내용은 [_setmaxstdio](../c-runtime-library/reference/setmaxstdio.md) 를 참조하세요.
+프로그램이 명시적으로 스트림을 닫지 않을 경우 프로그램이 종료되면 스트림이 자동으로 닫힙니다. 그러나 한 번에 열려 있을 수 있는 스트림 수가 제한되므로 프로그램이 작업을 마치면 스트림을 닫아야 합니다. 이 제한에 대한 자세한 내용은 [_setmaxstdio](../c-runtime-library/reference/setmaxstdio.md) 를 참조하세요.
 
- **fflush** 또는 파일 위치 지정 함수(**fseek**, **fsetpos** 또는 **rewind**)에 대한 중간 호출을 통해서만 입력에서 출력을 직접 따라갈 수 있습니다. 입력 작업이 파일의 끝을 발견할 경우 파일 위치 지정 함수에 대한 중간 호출 없이 출력이 입력을 따를 수 있습니다.
+**fflush** 또는 파일 위치 지정 함수(**fseek**, **fsetpos** 또는 **rewind**)에 대한 중간 호출을 통해서만 입력에서 출력을 직접 따라갈 수 있습니다. 입력 작업이 파일의 끝을 발견할 경우 파일 위치 지정 함수에 대한 중간 호출 없이 출력이 입력을 따를 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 
 [입력 및 출력](../c-runtime-library/input-and-output.md)<br/>
- [범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>

@@ -33,36 +33,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bb491e8073acf2af525814b595ce79365df0fa1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 63da23d30b12859c79427432bce38e1156e190de
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389041"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063335"
 ---
 # <a name="math-error-constants"></a>수학 오류 상수
-## <a name="syntax"></a>구문  
-  
-```  
-  
-#include <math.h>  
-  
-```  
-  
-## <a name="remarks"></a>설명  
- 런타임 라이브러리의 수학 루틴은 수학 오류 상수를 생성할 수 있습니다.  
-  
- 이러한 오류는 아래에 설명된 대로 MATH.H에서 정의된 예외 형식에 해당되며 수학 오류가 발생할 때 `_matherr` 함수에 의해 반환됩니다.  
-  
-|상수|의미|  
-|--------------|-------------|  
-|`_DOMAIN`|함수에 대한 인수는 함수의 외부 도메인입니다.|  
-|`_OVERFLOW`|함수의 반환 형식으로 표현하기에는 결과가 너무 큽니다.|  
-|`_PLOSS`|중요 부분 손실이 발생했습니다.|  
-|`_SING`|인수 이상: 함수의 인수 값이 잘못되었습니다. 예를 들어 0이 아닌 값이 필요한 함수에 값 0이 전달되었습니다.|  
-|`_TLOSS`|중요 전체 손실이 발생했습니다.|  
-|`_UNDERFLOW`|결과가 너무 작아 나타낼 수 없습니다.|  
-  
-## <a name="see-also"></a>참고 항목  
- [_matherr](../c-runtime-library/reference/matherr.md)   
- [전역 상수](../c-runtime-library/global-constants.md)
+
+## <a name="syntax"></a>구문
+
+```
+
+#include <math.h>
+
+```
+
+## <a name="remarks"></a>설명
+
+런타임 라이브러리의 수학 루틴은 수학 오류 상수를 생성할 수 있습니다.
+
+이러한 오류는 아래에 설명된 대로 MATH.H에서 정의된 예외 형식에 해당되며 수학 오류가 발생할 때 `_matherr` 함수에 의해 반환됩니다.
+
+|상수|의미|
+|--------------|-------------|
+|`_DOMAIN`|함수에 대한 인수는 함수의 외부 도메인입니다.|
+|`_OVERFLOW`|함수의 반환 형식으로 표현하기에는 결과가 너무 큽니다.|
+|`_PLOSS`|중요 부분 손실이 발생했습니다.|
+|`_SING`|인수 이상: 함수의 인수 값이 잘못되었습니다. 예를 들어 0이 아닌 값이 필요한 함수에 값 0이 전달되었습니다.|
+|`_TLOSS`|중요 전체 손실이 발생했습니다.|
+|`_UNDERFLOW`|결과가 너무 작아 나타낼 수 없습니다.|
+
+## <a name="see-also"></a>참고 항목
+
+[_matherr](../c-runtime-library/reference/matherr.md)<br/>
+[전역 상수](../c-runtime-library/global-constants.md)

@@ -45,39 +45,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f603757706bfdeeaaefe5b6d33cd94bb2624c389
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fd7278d017002ff0d5aa716db61fdcdb54e24018
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410137"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051140"
 ---
 # <a name="stat-structure-stmode-field-constants"></a>_stat 구조체 st_mode 필드 상수
-## <a name="syntax"></a>구문  
-  
-```  
-  
-#include <sys/stat.h>  
-  
-```  
-  
-## <a name="remarks"></a>설명  
- 이러한 상수는 [_stat 구조](../c-runtime-library/standard-types.md)의 **st_mode** 필드에 있는 파일 형식을 나타내는 데 사용됩니다.  
-  
- 다음은 비트 마스크 상수에 대한 설명입니다.  
-  
-|상수|의미|  
-|--------------|-------------|  
-|`_S_IFMT`|파일 형식 마스크|  
-|`_S_IFDIR`|디렉터리|  
-|`_S_IFCHR`|특수 문자(설정된 경우 장치를 나타냄)|  
-|`_S_IFREG`|기본|  
-|`_S_IREAD`|읽기 권한, 소유자|  
-|`_S_IWRITE`|쓰기 권한, 소유자|  
-|`_S_IEXEC`|실행/검색 권한, 소유자|  
-  
-## <a name="see-also"></a>참고 항목  
- [_stat, _wstat 함수](../c-runtime-library/reference/stat-functions.md)   
- [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)   
- [표준 형식](../c-runtime-library/standard-types.md)   
- [전역 상수](../c-runtime-library/global-constants.md)
+
+## <a name="syntax"></a>구문
+
+```
+
+#include <sys/stat.h>
+
+```
+
+## <a name="remarks"></a>설명
+
+이러한 상수는 [_stat 구조](../c-runtime-library/standard-types.md)의 **st_mode** 필드에 있는 파일 형식을 나타내는 데 사용됩니다.
+
+다음은 비트 마스크 상수에 대한 설명입니다.
+
+|상수|의미|
+|--------------|-------------|
+|`_S_IFMT`|파일 형식 마스크|
+|`_S_IFDIR`|디렉터리|
+|`_S_IFCHR`|특수 문자(설정된 경우 장치를 나타냄)|
+|`_S_IFREG`|기본|
+|`_S_IREAD`|읽기 권한, 소유자|
+|`_S_IWRITE`|쓰기 권한, 소유자|
+|`_S_IEXEC`|실행/검색 권한, 소유자|
+
+## <a name="see-also"></a>참고 항목
+
+[_stat, _wstat 함수](../c-runtime-library/reference/stat-functions.md)<br/>
+[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
+[표준 형식](../c-runtime-library/standard-types.md)<br/>
+[전역 상수](../c-runtime-library/global-constants.md)

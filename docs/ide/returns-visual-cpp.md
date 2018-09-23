@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b9956299370b4a41ce725cf903ff2aefe55bf53
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: ed871ee2148b6b731ab9354cd45c2e178b4d85a8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33336738"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056081"
 ---
 # <a name="ltreturnsgt-visual-c"></a>&lt;returns&gt;(Visual C++)
 \<returns> 태그는 메서드 선언의 주석에서 반환 값을 설명하는 데 사용해야 합니다.  
@@ -35,8 +35,8 @@ ms.locfileid: "33336738"
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `description`  
- 반환 값에 대한 설명입니다.  
+*description*<br/>
+반환 값에 대한 설명입니다.  
   
 ## <a name="remarks"></a>설명  
  [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.  

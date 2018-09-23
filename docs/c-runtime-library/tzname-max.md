@@ -16,23 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e68b1b16873989f59a8322246e2547b56e360d8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3be68ca3632d11231f446de262a8251c2b3409c2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408122"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032513"
 ---
 # <a name="tznamemax"></a>TZNAME_MAX
-표준 시간대 이름 변수의 허용 가능한 최대 문자열 길이입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-#include <limits.h>  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [환경 상수](../c-runtime-library/environmental-constants.md)   
- [전역 상수](../c-runtime-library/global-constants.md)   
- [_get_tzname](../c-runtime-library/reference/get-tzname.md)
+
+표준 시간대 이름 변수의 허용 가능한 최대 문자열 길이입니다.
+
+## <a name="syntax"></a>구문
+
+```
+#include <limits.h>
+```
+
+## <a name="see-also"></a>참고 항목
+
+[환경 상수](../c-runtime-library/environmental-constants.md)<br/>
+[전역 상수](../c-runtime-library/global-constants.md)<br/>
+[_get_tzname](../c-runtime-library/reference/get-tzname.md)
