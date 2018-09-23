@@ -14,27 +14,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12fee7eadecbd81e3c4e410d254de50bcf3a9ac0
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7da654321dfae520f458374654a21a9e8ebb98f5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43208828"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706656"
 ---
 # <a name="idl-attributes-add-property-wizard"></a>속성 추가 마법사, IDL 특성
 이 속성에 대한 IDL(인터페이스 정의 언어) 설정을 지정하려면 이 속성 추가 마법사 페이지를 사용합니다.  
   
- **ID**  
- 속성을 식별하는 숫자 ID를 설정합니다. 이 옵션은 사용자 지정 인터페이스의 속성에 사용할 수 없습니다. *MIDL 참조*에서 [id](/windows/desktop/Midl/id)를 확인합니다.  
+- **ID**
+
+   속성을 식별하는 숫자 ID를 설정합니다. 이 옵션은 사용자 지정 인터페이스의 속성에 사용할 수 없습니다. *MIDL 참조*에서 [id](/windows/desktop/Midl/id)를 확인합니다.  
   
- **helpcontext**  
- 도움말 파일에서 이 속성에 대한 정보를 볼 수 있는 컨텍스트 ID를 지정합니다. *MIDL 참조*에서 [helpcontext](/windows/desktop/Midl/helpcontext)를 확인합니다.  
+- **helpcontext**
+
+   도움말 파일에서 이 속성에 대한 정보를 볼 수 있는 컨텍스트 ID를 지정합니다. *MIDL 참조*에서 [helpcontext](/windows/desktop/Midl/helpcontext)를 확인합니다.  
   
- **helpstring**  
- 적용되는 요소를 설명하는 데 사용되는 문자열을 지정합니다. 기본적으로 "속성 *속성 이름*"으로 설정됩니다. *MIDL 참조*에서 [helpstring](/windows/desktop/Midl/helpstring)을 확인합니다.  
+- **helpstring**
+
+   적용되는 요소를 설명하는 데 사용되는 문자열을 지정합니다. 기본적으로 "속성 *속성 이름*"으로 설정됩니다. *MIDL 참조*에서 [helpstring](/windows/desktop/Midl/helpstring)을 확인합니다.  
   
 ## <a name="other-options"></a>기타 옵션  
- 일부 옵션은 모든 속성 유형에 대해 사용할 수 있습니다.  
+
+일부 옵션은 모든 속성 유형에 대해 사용할 수 있습니다.  
   
 |옵션|설명|  
 |------------|-----------------|  

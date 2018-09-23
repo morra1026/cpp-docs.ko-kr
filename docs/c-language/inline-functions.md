@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be5afa2dc4980f9393deb498c7a5decdc56aece5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 127438da4929e58e07e10701dd64869b084fe4c5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387374"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46078584"
 ---
 # <a name="inline-functions"></a>인라인 함수
 
@@ -45,7 +45,7 @@ ms.locfileid: "32387374"
 
 `__inline`을 사용하는 함수는 인라인 어셈블러 코드와 혼동해서는 안 됩니다. 자세한 내용은 [인라인 어셈블러](../c-language/inline-assembler-c.md)를 참조하세요.
 
-**Microsoft 전용 종료**  
+**Microsoft 전용 종료**
 
 ## <a name="see-also"></a>참고 항목
 

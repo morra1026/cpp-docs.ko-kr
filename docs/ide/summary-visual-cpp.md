@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47b7063dc9156e8feb41d447283ee457a13f1f4d
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: dae0eef25b11d49e5f869d88862e602d862135c1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43692304"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082250"
 ---
 # <a name="ltsummarygt-visual-c"></a>&lt;summary&gt;(Visual C++)
 \<summary > 태그를 사용하여 형식 또는 형식 멤버를 설명해야 합니다. [\<remarks>](../ide/remarks-visual-cpp.md)를 사용하여 형식 설명에 보충 정보를 추가할 수 있습니다.  
@@ -35,8 +35,8 @@ ms.locfileid: "43692304"
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `description`  
- 개체에 대한 요약입니다.  
+*description*<br/>
+개체에 대한 요약입니다.  
   
 ## <a name="remarks"></a>설명  
  \<summary> 태그의 텍스트는 IntelliSense의 형식에 대한 유일한 정보 소스이며 [개체 브라우저](/visualstudio/ide/viewing-the-structure-of-code) 및 코드 주석 웹 보고서에도 표시됩니다.  

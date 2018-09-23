@@ -22,14 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 265dfe599d4c3586b350787baab5977562326991
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: cbfc7e7bd6a3f2ef727a0cc259f222afad0ab555
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757684"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055236"
 ---
 # <a name="c-function-definitions"></a>C 함수 정의
+
 함수 정의는 함수의 이름, 받아야 하는 매개 변수의 형식과 개수 및 반환 형식을 지정합니다. 함수 정의는 지역 변수의 선언과 함수의 기능을 결정하는 문이 있는 함수 본문도 포함합니다.
 
 ## <a name="syntax"></a>구문
@@ -103,4 +104,5 @@ ms.locfileid: "43757684"
 [함수 특성](../c-language/function-attributes.md), [저장소 클래스](../c-language/storage-class.md), [반환 형식](../c-language/return-type.md), [매개 변수](../c-language/parameters.md) 및 [함수 본문](../c-language/function-body.md) 섹션에서는 함수 정의의 구성 요소에 대해 자세히 설명합니다.
 
 ## <a name="see-also"></a>참고 항목
+
 [함수](../c-language/functions-c.md)

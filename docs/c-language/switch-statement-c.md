@@ -16,41 +16,44 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71fa5ae717963d8ab2afc0b290bb42a3de72c0b6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 6ac5fb523e1b1340d031cd5256995568b9b9e2a2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760359"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46034126"
 ---
 # <a name="switch-statement-c"></a>switch 문 (C)
-`switch` 및 **case** 문은 복잡한 조건부 및 분기 작업을 제어하는 데 도움이 됩니다. `switch` 문은 해당 본문 내의 문으로 제어를 전달합니다.  
-  
+
+`switch` 및 **case** 문은 복잡한 조건부 및 분기 작업을 제어하는 데 도움이 됩니다. `switch` 문은 해당 본문 내의 문으로 제어를 전달합니다.
+
 ## <a name="syntax"></a>구문
 
 *selection-statement*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**switch (** *expression* **)** *statement*  
-  
+&nbsp;&nbsp;&nbsp;&nbsp;**switch (** *expression* **)** *statement*
+
 *labeled-statement*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**case**  *constant-expression*  **:**  *statement*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**default :**  *statement*  
-  
-**case** *constant-expression*이 **switch(** *expression* **)** 의 값과 일치하는 문으로 제어가 전달됩니다. `switch` 문에는 **case** 인스턴스가 개수에 제한 없이 포함될 수 있지만 동일한 `switch` 문 내에 값이 같은 두 case 상수가 존재할 수는 없습니다. 문 본문의 실행은 선택된 문에서 시작되고 본문의 끝에 도달하거나 **break** 문이 본문 밖으로 제어를 전달할 때까지 계속됩니다.  
-  
-`switch` 문의 사용은 대개 다음과 같습니다.  
+&nbsp;&nbsp;&nbsp;&nbsp;**default :**  *statement*
 
-**switch** ( *expression* )  
-**{**  
-&nbsp;&nbsp;&nbsp;&nbsp;*declarations*  
-&nbsp;&nbsp;&nbsp;&nbsp;/\* . . . \*/  
-&nbsp;&nbsp;&nbsp;&nbsp;**case** *constant-expression* **:**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* statements executed if the expression equals the \*/  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* value of this constant-expression \*/  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**break;**  
-&nbsp;&nbsp;&nbsp;&nbsp;**default :**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* statements executed if expression does not equal \*/  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* any case constant-expression \*/  
-**}**
+**case** *constant-expression*이 **switch(** *expression* **)** 의 값과 일치하는 문으로 제어가 전달됩니다. `switch` 문에는 **case** 인스턴스가 개수에 제한 없이 포함될 수 있지만 동일한 `switch` 문 내에 값이 같은 두 case 상수가 존재할 수는 없습니다. 문 본문의 실행은 선택된 문에서 시작되고 본문의 끝에 도달하거나 **break** 문이 본문 밖으로 제어를 전달할 때까지 계속됩니다.
+
+`switch` 문의 사용은 대개 다음과 같습니다.
+
+```C
+switch ( expression )
+{
+    // declarations
+    // . . .
+    case constant_expression:
+        // statements executed if the expression equals the
+        // value of this constant_expression
+        break;
+    default:
+        // statements executed if expression does not equal
+        // any case constant_expression
+}
+```
 
 **break** 문을 사용하여 `switch` 문 내의 특정 case 처리를 종료하고 `switch` 문의 끝으로 분기할 수 있습니다. **break**가 없는 경우 프로그램은 다음 case로 지속되어 **break** 또는 문의 끝에 도달할 때까지 문을 실행합니다. 어떤 상황에서는 이러한 지속이 바람직할 수 있습니다.
 
@@ -94,29 +97,29 @@ switch( i )
 }
 ```
 
-이 예제에서 **break** 문은 `switch` 본문의 각 문 뒤에 나옵니다. **break** 문은 한 문이 실행된 후 문 본문에서 강제로 빠져나옵니다. `i`가 –1과 같은 경우 `n`만 증가합니다. `n++;` 문 다음에 오는 **break**는 실행 제어가 문 본문 밖으로 전달되고 나머지 문들을 우회하도록 합니다. 이와 마찬가지로 `i`가 0과 같은 경우 `z`만 증가하고, `i`가 1과 같은 경우에는 `p`만 증가합니다. 제어가 복합 문의 끝에서 본문 밖으로 전달되므로 마지막 **break** 문은 반드시 필요하지는 않지만 일관성을 위해 포함되었습니다.  
-  
-다음 예제와 같이 단일 문이 여러 **case** 레이블을 수행할 수 있습니다.  
-  
+이 예제에서 **break** 문은 `switch` 본문의 각 문 뒤에 나옵니다. **break** 문은 한 문이 실행된 후 문 본문에서 강제로 빠져나옵니다. `i`가 –1과 같은 경우 `n`만 증가합니다. `n++;` 문 다음에 오는 **break**는 실행 제어가 문 본문 밖으로 전달되고 나머지 문들을 우회하도록 합니다. 이와 마찬가지로 `i`가 0과 같은 경우 `z`만 증가하고, `i`가 1과 같은 경우에는 `p`만 증가합니다. 제어가 복합 문의 끝에서 본문 밖으로 전달되므로 마지막 **break** 문은 반드시 필요하지는 않지만 일관성을 위해 포함되었습니다.
+
+다음 예제와 같이 단일 문이 여러 **case** 레이블을 수행할 수 있습니다.
+
 ```C
-case 'a' :  
-case 'b' :  
-case 'c' :  
-case 'd' :  
-case 'e' :  
-case 'f' :  hexcvt(c);  
-```  
-  
-이 예제에서 *constant-expression*이 `'a'`와 `'f'` 사이의 문자와 같은 경우 `hexcvt` 함수가 호출됩니다.  
-  
-**Microsoft 전용**  
-  
-Microsoft C는 `switch` 문의 case 값 수를 제한하지 않습니다. 이 수는 사용 가능한 메모리에 의해서만 제한됩니다. ANSI C의 경우 `switch` 문에서 257개 이상의 case 레이블이 허용되어야 합니다.  
-  
-기본적으로 Microsoft C에는 Microsoft 확장을 사용하도록 설정되어 있습니다. 이러한 확장을 사용하지 않도록 설정하려면 /Za 컴파일러 옵션을 사용하십시오.  
-  
-**Microsoft 전용 종료**  
-  
+case 'a' :
+case 'b' :
+case 'c' :
+case 'd' :
+case 'e' :
+case 'f' :  hexcvt(c);
+```
+
+이 예제에서 *constant-expression*이 `'a'`와 `'f'` 사이의 문자와 같은 경우 `hexcvt` 함수가 호출됩니다.
+
+**Microsoft 전용**
+
+Microsoft C는 `switch` 문의 case 값 수를 제한하지 않습니다. 이 수는 사용 가능한 메모리에 의해서만 제한됩니다. ANSI C의 경우 `switch` 문에서 257개 이상의 case 레이블이 허용되어야 합니다.
+
+기본적으로 Microsoft C에는 Microsoft 확장을 사용하도록 설정되어 있습니다. 이러한 확장을 사용하지 않도록 설정하려면 /Za 컴파일러 옵션을 사용하십시오.
+
+**Microsoft 전용 종료**
+
 ## <a name="see-also"></a>참고 항목
 
 [switch 문(C++)](../cpp/switch-statement-cpp.md)
