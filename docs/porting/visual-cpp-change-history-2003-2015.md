@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4b7184e2eebcea83770aff55a5e9f75242aa1c1
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 04e331da219f0c7a3996dda69d53769ea443b55e
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43206173"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44319099"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ 변경 기록 2003 - 2015
 
@@ -65,7 +65,7 @@ Visual Studio 2017에 대한 자세한 내용은 [Visual Studio 2017의 Visual C
   
 - **수식 라이브러리 함수의 C++ 오버로드** 이전 버전에서 \<math.h>는 수식 라이브러리 함수에 대한 일부 C++ 오버로드를 정의했습니다. \<cmath>는 나머지 오버로드를 정의하므로 모든 오버로드를 가져오려면 \<cmath> 헤더를 포함해야 했습니다. 이로 인해 \<math.h>만 포함된 코드에서는 함수 오버로드 확인에 대한 문제가 발생했습니다. 현재 모든 C++ 오버로드는 \<math.h>에서 제거되었고 \<cmath>에만 있습니다.  
   
-     오류를 해결하려면 <cmath>를 포함하여 \<math.h>에서 제거된 함수 선언을 가져옵니다. 다음 표에서는 이동된 함수를 보여 줍니다.  
+     오류를 해결하려면 \<cmath>를 포함하여 \<math.h>에서 제거된 함수 선언을 가져옵니다. 다음 표에서는 이동된 함수를 보여 줍니다.  
   
      이동된 함수:  
   
