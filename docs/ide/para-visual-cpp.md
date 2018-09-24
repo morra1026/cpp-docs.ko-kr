@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ebf50e4672ee2a3398f6c484c42f8e36f231169
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 00110a0e821077231c0f386a0656dc2214b0267d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33325119"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46034722"
 ---
 # <a name="ltparagt-visual-c"></a>&lt;para&gt;(Visual C++)
 \<para> 태그는 [\<summary>](../ide/summary-visual-cpp.md), [\<remarks>](../ide/remarks-visual-cpp.md), [\<returns>](../ide/returns-visual-cpp.md) 등의 태그 내에 사용되어 텍스트에 구조를 추가할 수 있게 합니다.  
@@ -35,8 +35,8 @@ ms.locfileid: "33325119"
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `content`  
- 단락의 텍스트입니다.  
+*content*<br/>
+단락의 텍스트입니다.  
   
 ## <a name="remarks"></a>설명  
  [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.  

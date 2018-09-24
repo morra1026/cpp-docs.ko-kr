@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 383347dc5cd1ce0dcadff6bdee802b90fd52e85d
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: caf28f01778bea31bc84a57fa74fed3221673dec
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33333907"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039961"
 ---
 # <a name="xdcmake-reference"></a>XDCMake 참조
 xdcmake.exe는 .xdc 파일을 .xml 파일로 컴파일하는 프로그램입니다. [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md)을 사용하여 소스 코드를 컴파일하는 경우 및 소스 코드 파일에 XML 태그로 표시된 문서 주석이 포함되는 경우 각 소스 코드 파일에 대해 Visual C++ 컴파일러에서 .xdc 파일이 만들어집니다.  
@@ -41,13 +41,12 @@ xdcmake.exe는 .xdc 파일을 .xml 파일로 컴파일하는 프로그램입니�
  xdcmake `input_filename options`  
   
 ## <a name="parameters"></a>매개 변수  
- 다음은 각 문자에 대한 설명입니다.  
   
- `input_filename`  
- xdcmake.exe에 대한 입력으로 사용되는 .xdc 파일의 파일 이름입니다. 하나 이상의 .xdc 파일을 지정하거나 *.xdc를 사용하여 현재 디렉터리에서 모든 .xdc 파일을 사용합니다.  
+*input_filename*<br/>
+xdcmake.exe에 대한 입력으로 사용되는 .xdc 파일의 파일 이름입니다. 하나 이상의 .xdc 파일을 지정하거나 *.xdc를 사용하여 현재 디렉터리에서 모든 .xdc 파일을 사용합니다.  
   
- `options`  
- 다음 중 0개 이상:  
+*options*<br/>
+다음 중 0개 이상:  
   
 |옵션|설명|  
 |------------|-----------------|  

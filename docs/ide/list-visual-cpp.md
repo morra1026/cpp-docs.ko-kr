@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bff8e3588e31414f50cb6d150c0e8c9f2603586b
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 15133673a33930222d5bf4c621c9ec9361e31f24
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33323981"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046409"
 ---
 # <a name="ltlistgt-visual-c"></a>&lt;list&gt;(Visual C++)
 \<listheader> 블록은 테이블 또는 정의 목록의 머리글 행을 정의하는 데 사용됩니다. 테이블을 정의할 때는 머리글에 용어 항목만 제공하면 됩니다.  
@@ -44,11 +44,11 @@ ms.locfileid: "33323981"
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `term`  
- `description`에서 정의되는, 정의할 용어입니다.  
+*term*<br/>
+`description`에서 정의되는, 정의할 용어입니다.  
   
- `description`  
- 글머리 기호 또는 번호 매기기 목록의 항목이나 `term`의 정의입니다.  
+*description*<br/>
+글머리 기호 또는 번호 매기기 목록의 항목이나 `term`의 정의입니다.  
   
 ## <a name="remarks"></a>설명  
  목록의 각 항목은 \<item> 블록을 사용하여 지정됩니다. 정의 목록을 만들 때는 `term`과 `description`을 모두 지정해야 합니다. 그러나 테이블, 글머리 기호 목록 또는 번호 매기기 목록의 경우 `description` 항목만 제공하면 됩니다.  
@@ -59,7 +59,7 @@ ms.locfileid: "33323981"
   
 ## <a name="example"></a>예  
   
-```  
+```cpp  
 // xml_list_tag.cpp  
 // compile with: /doc /LD  
 // post-build command: xdcmake xml_list_tag.dll  
