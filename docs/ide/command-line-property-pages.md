@@ -16,20 +16,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 580c11d19a1d2ea5510390296a80589cce988f12
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 54a9f68c1cd750cd3d0e5c638d1ab101a8588a61
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33327813"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46416892"
 ---
 # <a name="command-line-property-pages"></a>명령줄 속성 페이지
-대부분의 속성 페이지 폴더에는 **명령줄** 속성 페이지가 포함되어 있습니다. 이 페이지에는 폴더에 설정된 속성이 표시합니다. **명령줄** 속성 페이지에는 도구에 유효하지만, 폴더에 속성이 없는 속성을 지정할 수 있는 **추가 옵션** 상자도 포함되어 있습니다.  
-  
- 편집 상자에 입력하는 모든 명령은 폴더의 도구로 전달됩니다. 입력에 대한 확인이나 검사가 수행되지 않으며 종속성 검사도 수행되지 않습니다.  
-  
- **명령줄** 속성 페이지에 액세스하는 방법에 대한 자세한 내용은 [프로젝트 속성 작업](../ide/working-with-project-properties.md)을 참조하세요.  
-  
-## <a name="see-also"></a>참고 항목  
- [속성 페이지](../ide/property-pages-visual-cpp.md)   
- [링커 입력 파일로 사용하는 .Lib 파일](../build/reference/dot-lib-files-as-linker-input.md)
+
+대부분의 속성 페이지 폴더에는 **명령줄** 속성 페이지가 포함되어 있습니다. 이 페이지에는 폴더에 설정된 속성이 표시합니다. **명령줄** 속성 페이지에는 도구에 유효하지만, 폴더에 속성이 없는 속성을 지정할 수 있는 **추가 옵션** 상자도 포함되어 있습니다.
+
+편집 상자에 입력하는 모든 명령은 폴더의 도구로 전달됩니다. 입력에 대한 확인이나 검사가 수행되지 않으며 종속성 검사도 수행되지 않습니다.
+
+**명령줄** 속성 페이지에 액세스하는 방법에 대한 자세한 내용은 [프로젝트 속성 작업](../ide/working-with-project-properties.md)을 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+[속성 페이지](../ide/property-pages-visual-cpp.md)<br>
+[링커 입력 파일로 사용하는 .Lib 파일](../build/reference/dot-lib-files-as-linker-input.md)

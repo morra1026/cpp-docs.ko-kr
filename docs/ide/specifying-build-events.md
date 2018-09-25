@@ -25,12 +25,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5940f0d6efaec402a4a85ed659f42d7eab1bf91d
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: dfdedf01c6203c483c1aa30d5d2934caa66e76d2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33334966"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46375970"
 ---
 # <a name="specifying-build-events"></a>빌드 이벤트 지정
 
@@ -64,6 +64,6 @@ ms.locfileid: "33334966"
 
 ## <a name="see-also"></a>참고 항목
 
-[사용자 지정 빌드 단계 및 빌드 이벤트 이해](../ide/understanding-custom-build-steps-and-build-events.md)  
-[빌드 명령 및 속성에 대한 일반 매크로](../ide/common-macros-for-build-commands-and-properties.md)  
-[빌드 사용자 지정 문제 해결](../ide/troubleshooting-build-customizations.md)  
+[사용자 지정 빌드 단계 및 빌드 이벤트 이해](../ide/understanding-custom-build-steps-and-build-events.md)<br>
+[빌드 명령 및 속성에 대한 일반 매크로](../ide/common-macros-for-build-commands-and-properties.md)<br>
+[빌드 사용자 지정 문제 해결](../ide/troubleshooting-build-customizations.md)

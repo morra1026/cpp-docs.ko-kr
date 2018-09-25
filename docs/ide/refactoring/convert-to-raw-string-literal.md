@@ -10,12 +10,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b98825719e7b3c0d8eb760a2ec50644b5eddd54e
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 75037ea542a5bd2160d9a89138b12f82867002a5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33328411"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46388448"
 ---
 # <a name="convert-to-raw-string-literal"></a>원시 문자열 리터럴로 변환
 **대상:** 모든 문자열을 C++ 원시 문자열 리터럴로 변환할 수 있습니다.
@@ -37,6 +37,6 @@ ms.locfileid: "33328411"
      * 코드를 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, 상황에 맞는 메뉴에서 **원시 문자열 리터럴로 변환**을 선택합니다.
      * 왼쪽 여백에 나타나는 ![Lightbulb](images/bulb.png) 아이콘을 클릭하고 상황에 맞는 메뉴에서 **원시 문자열 리터럴로 변환**을 선택합니다.
 
-1. 문자열은 즉시 원시 문자열 리터럴로 변환됩니다.  
+1. 문자열은 즉시 원시 문자열 리터럴로 변환됩니다.
 
    ![원시 문자열 리터럴 결과](images/stringliteral_result.png)
