@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce86a9ceffaa5d9dacfe56e6b89b677b3abb1517
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: eefbbde88704ffd53f8bcf1445186bb7e6cdd6af
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392486"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46017640"
 ---
 # <a name="conversions-from-floating-point-types"></a>부동 소수점 형식에서 변환
 
@@ -65,4 +65,4 @@ ms.locfileid: "32392486"
 
 ## <a name="see-also"></a>참고 항목
 
-[할당 변환](../c-language/assignment-conversions.md)  
+[할당 변환](../c-language/assignment-conversions.md)

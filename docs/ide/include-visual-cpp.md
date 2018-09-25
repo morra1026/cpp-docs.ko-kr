@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3cb07824ad5212f4174a6f19e3efa4549432455
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: cd68e4488857708d119399df8bbc0da467983115
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894454"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46100753"
 ---
 # <a name="ltincludegt-visual-c"></a>&lt;include&gt;(Visual C++)
 
@@ -37,16 +37,16 @@ ms.locfileid: "43894454"
 
 #### <a name="parameters"></a>매개 변수
 
-`filename`  
+*filename*<br/>
 문서가 포함된 파일의 이름입니다. 경로를 사용하여 파일 이름을 정규화할 수 있습니다.  이름을 단일 또는 이중 따옴표로 묶습니다.  `filename`가 검색되지 않는 경우 컴파일러에서 경고가 발생합니다.
 
-`tagpath`  
+*tagpath*<br/>
 파일에 포함된 원하는 노드 집합을 선택하는 유효한 XPath 식입니다.
 
-`name`  
+*name*<br/>
 주석 앞에 오는 태그의 이름 지정자입니다. `name`에는 `id`가 있습니다.
 
-`id`  
+*ID*<br/>
 주석 앞에 오는 태그의 ID입니다.  이름을 단일 또는 이중 따옴표로 묶습니다.
 
 ## <a name="remarks"></a>설명

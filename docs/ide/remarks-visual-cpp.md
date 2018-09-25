@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 409f10dffdf6816f3ff0ab4e71060c9bcb6eaf9f
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 5bf60222b276050af5296d678985eda8fd12948b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43684214"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027572"
 ---
 # <a name="ltremarksgt-visual-c"></a>&lt;remarks&gt;(Visual C++)
 \<remarks> 태그는 형식에 대한 정보를 추가하여 [\<summary>](../ide/summary-visual-cpp.md)로 지정된 정보를 보완하기 위해 사용됩니다. 이 정보는 [개체 브라우저](/visualstudio/ide/viewing-the-structure-of-code) 및 코드 주석 웹 보고서에 표시됩니다.  
@@ -35,8 +35,8 @@ ms.locfileid: "43684214"
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `description`  
- 멤버에 대한 설명입니다.  
+*description*<br/>
+멤버에 대한 설명입니다.  
   
 ## <a name="remarks"></a>설명  
  [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.  

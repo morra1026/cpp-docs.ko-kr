@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 331828f5c2cd3001cef50a29388a10c0a6a26f1d
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 508f6b41c791cdb3a62e7c6e3de8a8a633dff3e9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33330121"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038882"
 ---
 # <a name="ltcodegt-visual-c"></a>&lt;코드&gt;(Visual C++)
 \<code> 태그를 사용하면 하나 이상의 줄을 코드로 지정할 수 있습니다.  
@@ -35,8 +35,8 @@ ms.locfileid: "33330121"
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `content`  
- 코드로 표시할 텍스트입니다.  
+*content*<br/>
+코드로 표시할 텍스트입니다.  
   
 ## <a name="remarks"></a>설명  
  [\<c>](../ide/c-visual-cpp.md)를 사용하여 텍스트의 일부를 코드로 표시해야 합니다.  

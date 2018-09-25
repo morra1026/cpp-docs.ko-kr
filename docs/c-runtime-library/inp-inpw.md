@@ -30,18 +30,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1049965d7edd880027eaff264fffe56fc1cdb1f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8734f2dbca04287652a6a59f633f8c872f2b00a1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32388924"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040988"
 ---
 # <a name="inp-inpw"></a>inp, inpw
-이러한 POSIX 함수는 더 이상 사용되지 않습니다. ISO C++ 규칙에 부합되는 [_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md) 를 대신 사용하세요.  
-  
+
+이러한 POSIX 함수는 더 이상 사용되지 않습니다. ISO C++ 규칙에 부합되는 [_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md) 를 대신 사용하세요.
+
 > [!IMPORTANT]
->  이러한 함수는 사용되지 않습니다. Visual Studio 2015부터 CRT에서 사용할 수 없습니다.  
-  
+>  이러한 함수는 사용되지 않습니다. Visual Studio 2015부터 CRT에서 사용할 수 없습니다.
+
 > [!IMPORTANT]
 >  이 API는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.

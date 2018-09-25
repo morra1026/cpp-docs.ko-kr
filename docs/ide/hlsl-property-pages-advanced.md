@@ -15,22 +15,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58dca91d5ab3bf0cf28d30a04d33ae8bf5819401
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: edcc84e8c12fab7149bbf6db2baf1f86e8635eb5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33321196"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725509"
 ---
 # <a name="hlsl-property-pages-advanced"></a>HLSL 속성 페이지: 고급
 HLSL 컴파일러(fxc.exe)의 다음 속성을 구성하려면 해당 **고급** 속성 페이지를 사용합니다. HLSL 폴더의 **고급** 속성 페이지에 액세스하는 방법에 대한 자세한 내용은 [프로젝트 속성 작업](../ide/working-with-project-properties.md)을 참조하세요.  
   
-## <a name="uielement-list"></a>UI 요소 목록  
- **시작 배너 표시 안 함**  
- 시작 배너 및 정보 메시지를 표시하지 않으려면 **예(/nologo)** 를 선택하고, 그렇지 않으면 **아니요**를 선택합니다. 기본적으로 값은 **예(/nologo)** 입니다.  
+## <a name="uielement-list"></a>UI 요소 목록
+
+- **시작 배너 표시 안 함**
+
+   시작 배너 및 정보 메시지를 표시하지 않으려면 **예(/nologo)** 를 선택하고, 그렇지 않으면 **아니요**를 선택합니다. 기본적으로 값은 **예(/nologo)** 입니다.  
   
- **경고를 오류로 처리**  
- 모든 컴파일러 경고를 오류로 처리하려면 **예(/WX)** 를 선택하고, 그렇지 않으면 **아니요**를 선택합니다.  
+- **경고를 오류로 처리**
+
+   모든 컴파일러 경고를 오류로 처리하려면 **예(/WX)** 를 선택하고, 그렇지 않으면 **아니요**를 선택합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [HLSL 속성 페이지](../ide/hlsl-property-pages.md)   

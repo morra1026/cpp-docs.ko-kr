@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a8a77e898feb6676487c557b8e96d54dc793ace
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 38ef2c16c92322ae54dcc6dd7d577268daf74831
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391524"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46058278"
 ---
 # <a name="conversions-from-unsigned-integral-types"></a>부호 없는 정수 계열 형식에서 변환
 
@@ -82,4 +82,4 @@ Microsoft C 컴파일러의 경우 **unsigned int** 형식이 **unsigned long** 
 
 ## <a name="see-also"></a>참고 항목
 
-[할당 변환](../c-language/assignment-conversions.md)  
+[할당 변환](../c-language/assignment-conversions.md)

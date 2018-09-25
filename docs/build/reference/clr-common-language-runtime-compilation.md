@@ -1,7 +1,7 @@
 ---
 title: -clr (공용 언어 런타임 컴파일) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -23,12 +23,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b46f61ef727c1b283137bb3d537d2dbad416c1d8
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: dcd5739f2fb0663609ce7bcabc920cc3aa20d8e1
+ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703822"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494415"
 ---
 # <a name="clr-common-language-runtime-compilation"></a>/clr(공용 언어 런타임 컴파일)
 
@@ -45,15 +45,15 @@ ms.locfileid: "45703822"
 
 - 없음
 
-   옵션 없이 **/clr** 응용 프로그램에 대 한 메타 데이터를 만듭니다. 메타데이터는 다른 CLR 응용 프로그램에서 사용될 수 있으며 응용 프로그램이 다른 CLR 구성 요소의 메타데이터에 있는 형식과 데이터를 사용할 수 있게 합니다. 자세한 내용은 [혼합형 (네이티브 및 관리) 어셈블리](../../dotnet/mixed-native-and-managed-assemblies.md) 하 고 [방법: /clr으로 마이그레이션](../../dotnet/how-to-migrate-to-clr.md)합니다.
+   옵션 없이 **/clr** 응용 프로그램에 대 한 메타 데이터를 만듭니다. 메타데이터는 다른 CLR 응용 프로그램에서 사용될 수 있으며 응용 프로그램이 다른 CLR 구성 요소의 메타데이터에 있는 형식과 데이터를 사용할 수 있게 합니다. 자세한 내용은 [혼합형 (네이티브 및 관리) 어셈블리](../../dotnet/mixed-native-and-managed-assemblies.md)합니다.
 
 - **순수**
 
-   **/clr: pure 되지**합니다. 이후 버전의 컴파일러는 이 옵션을 지원하지 않을 수 있습니다. C#에 대한 순수형 MSIL이어야 하는 코드를 포팅하는 것이 좋습니다.
+   **/clr: pure 되지**합니다. 옵션은 Visual Studio 2017에서 제거 됩니다. C#에 대한 순수형 MSIL이어야 하는 코드를 포팅하는 것이 좋습니다.
 
 - **safe**
 
-   **/clr: safe는 사용 되지 않습니다.** 합니다. 이후 버전의 컴파일러는 이 옵션을 지원하지 않을 수 있습니다. C#에 안전 하 게 MSIL 이어야 하는 코드를 포팅하는 것이 좋습니다.
+   **/clr: safe는 사용 되지 않습니다.** 합니다. 옵션은 Visual Studio 2017에서 제거 됩니다. C#에 안전 하 게 MSIL 이어야 하는 코드를 포팅하는 것이 좋습니다.
 
 - **noAssembly**
 
@@ -112,31 +112,6 @@ class {} x;
 ```
 
 메타데이터를 보려면 Ildasm.exe를 사용합니다.
-
-## <a name="managed-extensions-for-c"></a>Managed Extensions for C++
-
-Visual C++에서는 **/clr:oldsyntax** 옵션을 더 이상 지원하지 않습니다. 이 옵션은 Visual Studio 2005에서 사용이 중단되었습니다. C++에서 관리 코드 작성에 지원되는 구문은 C++/CLI입니다. 자세한 내용은 [Component Extensions for Runtime Platforms](../../windows/component-extensions-for-runtime-platforms.md)을 참조하세요.
-
-Managed Extensions for C++를 사용하는 코드가 있는 경우 C++/CLI 구문을 사용하도록 포팅하는 것이 좋습니다. 코드를 포팅하는 방법에 대한 자세한 내용은 [C++/CLI Migration Primer](../../dotnet/cpp-cli-migration-primer.md)을 참조하세요.
-
-#### <a name="to-set-this-compiler-option-in-visual-studio"></a>Visual Studio에서 이 컴파일러 옵션을 설정하려면
-
-1. **솔루션 탐색기**에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성** 을 클릭하여 프로젝트 **속성 페이지** 대화 상자를 엽니다.
-
-1. 선택 된 **구성 속성** > **일반** 속성 페이지.
-
-1. 수정 된 **공용 언어 런타임 지원을** 속성입니다.
-
-   > [!NOTE]
-   > **속성 페이지** 대화 상자에서 **/clr** 을 사용하도록 설정하는 경우 **/clr** 과 호환되지 않는 컴파일러 옵션 속성도 필요에 따라 조정됩니다. 예를 들어 **/RTC** 를 설정한 다음 **/clr** 을 사용하도록 설정하는 경우 **/RTC** 가 해제됩니다.
-   >
-   >  또한 **/clr** 응용 프로그램을 디버그하는 경우 **디버거 형식** 속성을 **혼합** 또는 **관리 전용**으로 설정합니다. 자세한 내용은 [c + + 디버그 구성에 대 한 프로젝트 설정을](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration)합니다.
-
-   모듈을 만드는 방법에 대 한 정보에 대 한 참조 [/NOASSEMBLY (MSIL 모듈 만들기)](../../build/reference/noassembly-create-a-msil-module.md)합니다.
-
-#### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
-
-- <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.CompileAsManaged%2A>을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

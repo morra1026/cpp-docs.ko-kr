@@ -25,12 +25,13 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d11aa80eb3c1f8e56ccd27d29319fe5c71e53c4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 72eb8f75a882912a9d481109f44a6a7a67c0bb1f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32388398"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097707"
 ---
 # <a name="operator-deletecrt"></a>operator delete(CRT)
-Visual Studio 2013부터 UCRT(유니버설 C 런타임)에서 C++ 관련 연산자 new 및 연산자 delete 함수를 더 이상 지원하지 않습니다. 이러한 함수는 이제 C++ 표준 라이브러리에 속합니다. 자세한 내용은 C++ 언어 참조의 [new 및 delete 연산자](../cpp/new-and-delete-operators.md) 및 [delete 연산자](../cpp/delete-operator-cpp.md)를 참조하세요. 
+
+Visual Studio 2013부터 UCRT(유니버설 C 런타임)에서 C++ 관련 연산자 new 및 연산자 delete 함수를 더 이상 지원하지 않습니다. 이러한 함수는 이제 C++ 표준 라이브러리에 속합니다. 자세한 내용은 C++ 언어 참조의 [new 및 delete 연산자](../cpp/new-and-delete-operators.md) 및 [delete 연산자](../cpp/delete-operator-cpp.md)를 참조하세요.

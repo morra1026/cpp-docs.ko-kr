@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e13824780a5c73d4423bd544a97108b45d1b770a
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: b1dab2c803fee38662a638d056b35f79f8d5e8e9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33324085"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096615"
 ---
 # <a name="ltpermissiongt-visual-c"></a>&lt;permission&gt;(Visual C++)
 \<permission> 태그를 사용하면 멤버 액세스 권한을 문서화할 수 있습니다. <xref:System.Security.PermissionSet>를 사용하면 멤버 액세스 권한을 지정할 수 있습니다.  
@@ -35,15 +35,15 @@ ms.locfileid: "33324085"
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- `member`  
- 현재 컴파일 환경에서 호출할 수 있는 멤버 또는 필드에 대한 참조입니다. 컴파일러는 지정된 코드 요소가 있으며 `member`를 출력 XML의 정식 요소 이름으로 변환하는지 확인합니다.  이름을 단일 또는 이중 따옴표로 묶습니다.  
+*member*<br/>
+현재 컴파일 환경에서 호출할 수 있는 멤버 또는 필드에 대한 참조입니다. 컴파일러는 지정된 코드 요소가 있으며 `member`를 출력 XML의 정식 요소 이름으로 변환하는지 확인합니다.  이름을 단일 또는 이중 따옴표로 묶습니다.  
   
  `member`가 검색되지 않는 경우 컴파일러에서 경고가 발생합니다.  
   
  제네릭 형식에 대한 cref 참조를 만드는 방법에 대한 자세한 내용은 [\<see>](../ide/see-visual-cpp.md)를 참조하세요.  
   
- `description`  
- 멤버 액세스 권한에 대한 설명입니다.  
+*description*<br/>
+멤버 액세스 권한에 대한 설명입니다.  
   
 ## <a name="remarks"></a>설명  
  [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.  

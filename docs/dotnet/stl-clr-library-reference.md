@@ -1,7 +1,7 @@
 ---
 title: STL/CLR 라이브러리 참조 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/18/2018"
 ms.technology:
 - cpp-cli
 ms.topic: reference
@@ -17,16 +17,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 78dc5c57ca000dfa03dba640c46cec16aaca133f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 14217396801731505753be121e98f0aebf5b5f22
+ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429477"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494391"
 ---
 # <a name="stlclr-library-reference"></a>STL/CLR 라이브러리 참조
 
-STL/CLR 라이브러리는 c + + 및.NET Framework 공용 언어 런타임 (CLR)의 사용에 대 한 c + + 표준 라이브러리의 하위 집합 패키징 됩니다. STL/CLR을 사용 하 여 모든 컨테이너, 반복기 및 알고리즘의 관리 되는 환경에서 표준 라이브러리를 사용할 수 있습니다.
+STL/CLR 라이브러리를 사용 하 여 c + + 및.NET Framework 공용 언어 런타임 (CLR)에 대 한 c + + 표준 라이브러리 컨테이너와 비슷한 인터페이스를 제공합니다. STL/CLR c + + 표준 라이브러리의 Microsoft 구현과 완전히 별개입니다. STL/CLR 레거시 지원을 위해 유지는 되지만 c + + 표준을 사용 하 여 최신 상태로 유지 됩니다. 네이티브를 사용 하는 것이 좋습니다 [c + + 표준 라이브러리](../standard-library/cpp-standard-library-reference.md) 대신 가능한 STL/CLR 컨테이너입니다.
 
 STL/CLR을 사용 합니다 하:
 
@@ -34,7 +34,7 @@ STL/CLR을 사용 합니다 하:
 
 - 사용 하 여 라이브러리 이름을 한 정하는 `cliext::` 대신 `std::`합니다.
 
-STL/CLR는.NET 어셈블리의 어셈블리 간 시나리오에 사용 되는 제네릭 형식 및 인터페이스에 노출 **Microsoft.VisualC.STLCLR.dll**합니다. 이 DLL은.NET Framework 3.5에 포함 됩니다. STL/CLR을 사용 하는 응용 프로그램을 재배포 하는 경우에 설치 프로젝트의 종속성 섹션에서 프로젝트를 사용 하는 모든 Visual c + + 라이브러리 뿐만 아니라.NET Framework 3.5를 포함 해야 합니다.
+STL/CLR 라이브러리는.NET Framework CLR (공용 언어 런타임) 및 c + +와 함께 사용는 STL 비슷한 인터페이스를 제공합니다. 이 라이브러리는 유지 레거시 지원을 위해 되지만 c + + 표준을 사용 하 여 최신 상태로 유지 됩니다. 네이티브를 사용 하는 것이 좋습니다 [c + + 표준 라이브러리](../standard-library/cpp-standard-library-reference.md) 대신 STL/CLR 컨테이너입니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 

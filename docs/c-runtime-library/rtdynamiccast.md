@@ -27,55 +27,60 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90c68ed56b52b57deb234717b3b95ec197d26318
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 5f94d60d4c6e804a9bd27293bb0eff67b29a1e8a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34450936"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46092065"
 ---
 # <a name="rtdynamiccast"></a>__RTDynamicCast
-[dynamic_cast](../cpp/dynamic-cast-operator.md) 연산자의 런타임 구현입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-PVOID __RTDynamicCast (  
-   PVOID inptr,   
-   LONG VfDelta,  
-   PVOID SrcType,  
-   PVOID TargetType,   
-   BOOL isReference  
-   ) throw(...)  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
- `inptr`  
- 다형 개체에 대한 포인터입니다.  
-  
- `VfDelta`  
- 개체 내 가상 함수 포인터의 오프셋입니다.  
-  
- `SrcType`  
- `inptr` 매개 변수가 가리키는 개체의 정적 형식입니다.  
-  
- `TargetType`  
- 캐스트의 의도된 결과입니다.  
-  
- `isReference`  
- 입력이 참조인 경우 `true`이며, 입력이 포인터인 경우 `false`입니다.  
-  
-## <a name="return-value"></a>반환 값  
- 성공한 경우 적절한 하위 개체에 대한 포인터입니다. 그렇지 않으면 **NULL**입니다.  
-  
-## <a name="exceptions"></a>예외  
- `bad_cast()`에 대한 입력이 참조이고 캐스팅이 실패한 경우 `dynamic_cast<>`입니다.  
-  
-## <a name="remarks"></a>설명  
- `inptr`을 `TargetType` 형식의 개체로 변환합니다. `TargetType`이 포인터인 경우 `inptr`의 형식은 포인터여야 하며 `TargetType`이 참조인 경우에는 l 값이어야 합니다. `TargetType`은 포인터, 이전에 정의한 클래스 형식에 대한 참조 또는 void에 대한 포인터여야 합니다.  
-  
-## <a name="requirements"></a>요구 사항  
-  
-|루틴에서 반환된 값|필수 헤더|  
-|-------------|---------------------|  
+
+[dynamic_cast](../cpp/dynamic-cast-operator.md) 연산자의 런타임 구현입니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+PVOID __RTDynamicCast (
+   PVOID inptr,
+   LONG VfDelta,
+   PVOID SrcType,
+   PVOID TargetType,
+   BOOL isReference
+   ) throw(...)
+```
+
+#### <a name="parameters"></a>매개 변수
+
+*inptr*<br/>
+다형 개체에 대한 포인터입니다.
+
+*VfDelta*<br/>
+개체 내 가상 함수 포인터의 오프셋입니다.
+
+*SrcType*<br/>
+`inptr` 매개 변수가 가리키는 개체의 정적 형식입니다.
+
+*TargetType*<br/>
+캐스트의 의도된 결과입니다.
+
+*isReference*<br/>
+입력이 참조인 경우 `true`이며, 입력이 포인터인 경우 `false`입니다.
+
+## <a name="return-value"></a>반환 값
+
+성공한 경우 적절한 하위 개체에 대한 포인터입니다. 그렇지 않으면 **NULL**입니다.
+
+## <a name="exceptions"></a>예외
+
+`bad_cast()`에 대한 입력이 참조이고 캐스팅이 실패한 경우 `dynamic_cast<>`입니다.
+
+## <a name="remarks"></a>설명
+
+`inptr`을 `TargetType` 형식의 개체로 변환합니다. `TargetType`이 포인터인 경우 `inptr`의 형식은 포인터여야 하며 `TargetType`이 참조인 경우에는 l 값이어야 합니다. `TargetType`은 포인터, 이전에 정의한 클래스 형식에 대한 참조 또는 void에 대한 포인터여야 합니다.
+
+## <a name="requirements"></a>요구 사항
+
+|루틴에서 반환된 값|필수 헤더|
+|-------------|---------------------|
 |__RTDynamicCast|rtti.h|

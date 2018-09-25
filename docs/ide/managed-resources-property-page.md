@@ -18,28 +18,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e88f7ccf6f510ad5bcc7178af87714ca22a97252
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 58d2b1eaee54ac33e687d457830372f2bef06230
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688613"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718512"
 ---
 # <a name="managed-resources-property-page"></a>관리되는 리소스 속성 페이지
 리소스 컴파일러에 대한 설정을 사용하도록 설정합니다.  
   
  **관리되는 리소스** 속성 페이지에는 다음과 같은 속성이 포함되어 있습니다.  
   
- **리소스 논리적 이름**  
- 생성된 중간 .resources 파일의 *논리적 이름*을 지정합니다. 논리적 이름은 리소스를 로드하는 데 사용되는 이름입니다. 논리적 이름이 지정되지 않는 경우 리소스(.resx) 파일 이름이 논리적 이름으로 사용됩니다.  
+- **리소스 논리적 이름**
+
+   생성된 중간 .resources 파일의 *논리적 이름*을 지정합니다. 논리적 이름은 리소스를 로드하는 데 사용되는 이름입니다. 논리적 이름이 지정되지 않는 경우 리소스(.resx) 파일 이름이 논리적 이름으로 사용됩니다.  
   
- **출력 파일 이름**  
- 리소스(.resx) 파일이 적용되는 최종 출력 파일 이름을 지정합니다.  
+- **출력 파일 이름**
+
+   리소스(.resx) 파일이 적용되는 최종 출력 파일 이름을 지정합니다.  
   
- **기본 지역화 리소스**  
- 기존 .resx 파일이 기본 리소스 또는 위성 .dll에 적용되는지 여부를 지정합니다.  
+- **기본 지역화 리소스**
+
+   기존 .resx 파일이 기본 리소스 또는 위성 .dll에 적용되는지 여부를 지정합니다.  
   
- **관리되는 리소스** 속성 페이지에 액세스하는 방법에 대한 자세한 내용은 [프로젝트 속성 작업](../ide/working-with-project-properties.md)을 참조하세요.  
+**관리되는 리소스** 속성 페이지에 액세스하는 방법에 대한 자세한 내용은 [프로젝트 속성 작업](../ide/working-with-project-properties.md)을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [RC(RC 명령줄) 사용](/windows/desktop/menurc/using-rc-the-rc-command-line-)   

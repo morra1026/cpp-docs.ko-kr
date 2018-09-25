@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a87a6518eec495961d1f8d40c625e589db01bd3b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 70a31d32ce7bdf89cd0216926c6628b4fa7bdd27
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32382116"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027353"
 ---
 # <a name="c-pragmas"></a>C Pragma
 
@@ -37,8 +37,8 @@ ms.locfileid: "32382116"
 
 Microsoft C 컴파일러 pragmas에 대한 설명은 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)를 참조하세요.
 
- **Microsoft 전용 종료**
+**Microsoft 전용 종료**
 
 ## <a name="see-also"></a>참고 항목
 
-[원본 파일 및 원본 프로그램](../c-language/source-files-and-source-programs.md)  
+[원본 파일 및 원본 프로그램](../c-language/source-files-and-source-programs.md)

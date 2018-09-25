@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a54e0ba354e76996d03503e116008aa200b0905b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a471d6743da0cf803de72a9f257dfa67bc0dcbd1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199359"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036360"
 ---
 # <a name="file-handling"></a>파일 처리
 
@@ -86,7 +86,7 @@ C 런타임 라이브러리에서는 한 번에 열 수 있는 파일의 수가 
 |[_get_osfhandle](../c-runtime-library/reference/get-osfhandle.md)|기존 C 런타임 파일 설명자와 연결된 운영 체제 파일 핸들 반환|
 |[_open_osfhandle](../c-runtime-library/reference/open-osfhandle.md)|C 런타임 파일 설명자를 기존 운영 체제 파일 핸들에 연결합니다.|
 
- 다음 Win32 함수도 파일 및 파이프를 엽니다.
+다음 Win32 함수도 파일 및 파이프를 엽니다.
 
 - [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea)
 

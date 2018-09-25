@@ -12,17 +12,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b66880bbb86d786516782892b540ff2b84be0321
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0e8be236b2f84473fb8ea6b918d8520f7b2060cd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381511"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019734"
 ---
 # <a name="file-access-limits"></a>파일 액세스 제한
-**ANSI 4.9.3** 동일한 파일이 여러 번 열릴 수 있는지 여부  
-  
- 이미 열려 있는 파일은 열 수 없습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [라이브러리 함수](../c-language/library-functions.md)
+
+**ANSI 4.9.3** 동일한 파일이 여러 번 열릴 수 있는지 여부
+
+이미 열려 있는 파일은 열 수 없습니다.
+
+## <a name="see-also"></a>참고 항목
+
+[라이브러리 함수](../c-language/library-functions.md)

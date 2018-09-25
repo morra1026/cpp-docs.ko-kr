@@ -3,7 +3,7 @@ title: -Yc (미리 컴파일된 헤더 파일 만들기) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
-- devlang-cpp
+- cpp-tools
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.UsePrecompiledHeader
@@ -25,12 +25,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5288e748956a405073697ddd7331a73b95d8650
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 37a81eb21065ef67ef6d0b6ee7cdc6724c0a517b
+ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714248"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029517"
 ---
 # <a name="yc-create-precompiled-header-file"></a>/Yc(미리 컴파일된 헤더 파일 만들기)
 
@@ -38,8 +38,8 @@ ms.locfileid: "45714248"
 
 ## <a name="syntax"></a>구문
 
-> __/Yc__
->  __/Yc__*파일 이름*
+> __/Yc__<br/>
+> __/Yc__*파일 이름*
 
 ## <a name="arguments"></a>인수
 

@@ -1,7 +1,7 @@
 ---
 title: 방법:-clr로 마이그레이션 | Microsoft Docs
 ms.custom: get-started-article
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.technology:
 - cpp-cli
 ms.topic: conceptual
@@ -20,16 +20,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 818b6e102d9da759aa8889779515917b96e22c89
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 210cf8d3183e9fcd94cfa51d875a0b26e4a8fa07
+ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412966"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029660"
 ---
 # <a name="how-to-migrate-to-clr"></a>방법: /clr로 마이그레이션
 
-이 항목에서는 네이티브 코드를 컴파일할 때 발생 하는 문제를 설명 **/clr** (참조 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md) 자세한). **/clr** Visual c + + 모듈을 호출 하 고 관리 되지 않는 모듈을 사용 하 여 호환성을 유지 하면서.NET 어셈블리에서 호출할 수 있습니다. 참조 [혼합형 (네이티브 및 관리) 어셈블리](../dotnet/mixed-native-and-managed-assemblies.md) 하 고 [네이티브 및.NET 상호 운용성](../dotnet/native-and-dotnet-interoperability.md) 사용 하 여 컴파일하면의 이점에 대 한 자세한 내용은 **/clr**합니다.
+이 항목에서는 네이티브 코드를 컴파일할 때 발생 하는 문제를 설명 **/clr** (참조 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md) 자세한). **/clr** 네이티브 c + + 코드를 호출 하 고 다른 네이티브 c + + 코드 외에도.NET 어셈블리에서 호출할 수 있습니다. 참조 [혼합형 (네이티브 및 관리) 어셈블리](../dotnet/mixed-native-and-managed-assemblies.md) 하 고 [네이티브 및.NET 상호 운용성](../dotnet/native-and-dotnet-interoperability.md) 사용 하 여 컴파일하면의 이점에 대 한 자세한 내용은 **/clr**합니다.
 
 ## <a name="known-issues-compiling-library-projects-with-clr"></a>알려진된 문제 컴파일 라이브러리 프로젝트 /clr을 사용한
 
@@ -86,8 +86,6 @@ C + + 수도 있어야 함수 하거나 프로토타입화 하거나 완전히 �
 
 C + +에서 키워드 될 수 있는 C 코드에서 사용 하는 식별자 (같은 `virtual`, `new`, `delete`, `bool`를 `true`, `false`등) 이름을 변경 해야 합니다. 이 간단한 검색 및 바꾸기 작업을 사용 하 여 일반적으로 수행할 수 있습니다.
 
-마지막으로, C 스타일 COM 호출 v-table 명시적으로 사용 해야 하는 반면 및 `this` 포인터, c + + 그렇지 않습니다.
-
 ```
 COMObj1->lpVtbl->Method(COMObj, args);  // C code
 COMObj2->Method(args);  // C++ equivalent
@@ -132,7 +130,7 @@ COMObj2->Method(args);  // C++ equivalent
 
 ### <a name="loader-lock-deadlock"></a>로더 잠금 교착 상태
 
-Visual Studio 2010 이상에서는 "로더 잠금 교착 상태"에 발생할 수 이전 버전에서는 하지만 결정적 이며으로 감지 하 고 런타임 시 보고 합니다. 참조 [혼합 어셈블리 초기화](../dotnet/initialization-of-mixed-assemblies.md) 자세한 배경을, 지침 및 솔루션에 대 한 합니다.
+"로더 잠금 교착 상태"가 발생할 수 있지만 결정적 검색 되 고 런타임 시 보고 합니다. 참조 [혼합 어셈블리 초기화](../dotnet/initialization-of-mixed-assemblies.md) 자세한 배경을, 지침 및 솔루션에 대 한 합니다.
 
 ### <a name="data-exports"></a>데이터 내보내기
 

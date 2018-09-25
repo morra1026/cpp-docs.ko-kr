@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bfd0715acd7eb18c4ccc83d496a1e9a98084fdf
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8a58338d980db5acd8f41c71e23c37c1700a0761
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757951"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055119"
 ---
 # <a name="initializing-aggregate-types"></a>집합체 형식 초기화
 
@@ -109,13 +109,13 @@ triplet nlist[2][3] =
 
 이 예제에서는 `nlist`가 구조체의 2-3 배열로 선언되며 각 구조체는 세 가지 멤버를 갖습니다. 초기화의 1행은 다음과 같이 `nlist`의 첫 번째 행에 값을 할당합니다.
 
-1.  1행의 첫 번째 왼쪽 중괄호는 `nlist`의 첫 집합체 멤버(즉, `nlist[0]`)의 초기화를 시작하는 컴파일러로 신호를 보냅니다.
+1. 1행의 첫 번째 왼쪽 중괄호는 `nlist`의 첫 집합체 멤버(즉, `nlist[0]`)의 초기화를 시작하는 컴파일러로 신호를 보냅니다.
 
-2.  두 번째 왼쪽 중괄호는 `nlist[0]`의 첫 번째 집합체 멤버(즉, `nlist[0][0]`의 구조체) 초기화를 시작함을 나타냅니다.
+1. 두 번째 왼쪽 중괄호는 `nlist[0]`의 첫 번째 집합체 멤버(즉, `nlist[0][0]`의 구조체) 초기화를 시작함을 나타냅니다.
 
-3.  첫 번째 오른쪽 중괄호는 구조체 `nlist[0][0]`의 초기화를 종료하며 다음 왼쪽 중괄호는 `nlist[0][1]`의 초기화를 시작합니다.
+1. 첫 번째 오른쪽 중괄호는 구조체 `nlist[0][0]`의 초기화를 종료하며 다음 왼쪽 중괄호는 `nlist[0][1]`의 초기화를 시작합니다.
 
-4.  프로세스는 닫는 오른쪽 중괄호가 `nlist[0]`의 초기화를 종료하는 줄의 끝까지 계속됩니다.
+1. 프로세스는 닫는 오른쪽 중괄호가 `nlist[0]`의 초기화를 종료하는 줄의 끝까지 계속됩니다.
 
 2행은 비슷한 방법으로 값을 `nlist`의 두 번째 행으로 할당합니다. 1행과 2행에서 초기화를 닫는 중괄호의 외부 집합이 필요합니다. 외부 중괄호를 생략하는 다음 생성에서는 오류가 발생합니다.
 
