@@ -3,8 +3,7 @@ title: -실행-문자 집합 (실행 문자 집합 설정) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
-- cpp
-- devlang-cpp
+- cpp-tools
 ms.topic: reference
 f1_keywords:
 - execution-charset
@@ -19,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5a2e2c690b9e827992ca79f861e40452c071d42
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ca6681fde6ae4e46dea62e0258138f567ef8ebc5
+ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420987"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029608"
 ---
 # <a name="execution-charset-set-execution-character-set"></a>/execution-charset (실행 문자 집합 설정)
 
@@ -38,10 +37,10 @@ ms.locfileid: "46420987"
 
 ## <a name="arguments"></a>인수
 
-**IANA_name**<br/>
+*IANA_name*<br/>
 IANA 정의한 문자 집합 이름입니다.
 
-**CPID**<br/>
+*CPID*<br/>
 코드 페이지 식별자입니다.
 
 ## <a name="remarks"></a>설명

@@ -5,7 +5,7 @@ ms.custom: mvc
 ms.date: 12/12/2017
 ms.topic: tutorial
 ms.technology:
-- devlang-C++
+- cpp-tools
 ms.devlang: C++
 dev_langs:
 - C++
@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05a5204234eb127da676e3b4a12ef875baecdad0
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: c9c32f6811a18fae00cb2943a9ca97a89cf159a1
+ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45705785"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029595"
 ---
 # <a name="build-and-run-a-c-console-app-project"></a>C + + 콘솔 앱 프로젝트 빌드 및 실행
 
@@ -45,7 +45,7 @@ Visual Studio이 다음과 같은 경우을 빌드하고 앱을 실행 합니다
 
    ![프로젝트를 시작 합니다](../build/media/vscpp-start-without-debugging.gif "프로젝트 시작")
 
-    콘솔 창이 열리고 응용 프로그램을 실행 합니다. Visual Studio에서 콘솔 앱을 시작 하면 코드를 실행 한 다음 인쇄 "계속 하려면 아무 키나 누릅니다. . ." 하면 출력을 볼 수 있도록 합니다.
+   콘솔 창이 열리고 응용 프로그램을 실행 합니다. Visual Studio에서 콘솔 앱을 시작 하면 코드를 실행 한 다음 인쇄 "계속 하려면 아무 키나 누릅니다. . ." 하면 출력을 볼 수 있도록 합니다.
 
 지금까지 회원님이 만든 첫 번째 "Hello, world!" Visual Studio에서 콘솔 앱! 콘솔 창을 닫고 Visual Studio로 돌아와서 키를 누릅니다.
 

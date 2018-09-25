@@ -1,7 +1,7 @@
 ---
 title: '연습: 표준 C++ 프로그램(C++) 만들기 | Microsoft Docs'
 ms.custom: get-started-article
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.technology:
 - cpp-windows
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ff4a2078bef03127507d1da35599ea391904bee7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d5481b9391d47887d85ca43746f1a6aff5f6eb92
+ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382637"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029621"
 ---
 # <a name="walkthrough-creating-a-standard-c-program-c"></a>연습: 표준 C++ 프로그램(C++) 만들기
 
@@ -45,42 +45,49 @@ Visual C++는 2003년에 제정된 C++ 표준대로 2단계 이름 조회, 예�
 
 1. 메뉴의 **파일**에서 **새로만들기**를 클릭한 다음 **프로젝트**를 선택하여 새 프로젝트를 만듭니다.
 
-2. 에 **Visual c + +** 프로젝트 형식 창에서 클릭 **Windows Desktop**를 클릭 하 고 **Windows 콘솔 응용 프로그램**.
+1. 에 **Visual c + +** 프로젝트 형식 창에서 클릭 **Windows Desktop**를 클릭 하 고 **Windows 콘솔 응용 프로그램**. 
 
-3. 프로젝트 이름을 입력합니다. 
+   > [!NOTE]
+   > Visual Studio 2017 년 보다 오래 된 버전에 **새 프로젝트** 대화 상자에서 **설치 됨** > **템플릿**  >  **Visual c + +** 를 선택한 후 **Win32**합니다. 가운데 창에서 **Win32 콘솔 응용 프로그램**을 선택합니다. 
+
+   프로젝트 이름을 입력합니다. 
 
    기본적으로 프로젝트를 포함하는 솔루션에 프로젝트와 동일한 이름이 허용되지만 다른 이름을 입력하는 것을 권장합니다. 프로젝트 위치를 변경할 수 있습니다.
 
    **확인**을 클릭해 프로젝트를 만듭니다.
 
-4. **솔루션 탐색기**가 표시되지 않는 경우 메뉴의 **보기**에서 **솔루션 탐색기**를 선택할 수 있습니다.
+   > [!NOTE]
+   > Visual studio 2017 이전 버전의 경우 완료 합니다 **Win32 응용 프로그램 마법사**합니다. 클릭 **다음**에 있는지 확인 합니다 **콘솔 응용 프로그램** 을 선택 하 고 선택 취소 합니다 **미리 컴파일된 헤더** 상자. **마침**을 클릭합니다.
 
-5. 다음과 같이 새 소스 파일을 프로젝트에 추가 합니다.
+1. **솔루션 탐색기**가 표시되지 않는 경우 메뉴의 **보기**에서 **솔루션 탐색기**를 선택할 수 있습니다.
+
+1. 다음과 같이 새 소스 파일을 프로젝트에 추가 합니다.
 
    1. **솔루션 탐색기**에서 **소스 파일** 폴더를 마우스 오른쪽 단추로 클릭하고 **추가**를 클릭 후 **새 항목**을 선택합니다.
 
-   2. **코드** 노드에서 **C++ 파일(.cpp)** 을 클릭하고, 파일 이름을 입력한 다음 **추가**를 클릭합니다.
+   1. **코드** 노드에서 **C++ 파일(.cpp)** 을 클릭하고, 파일 이름을 입력한 다음 **추가**를 클릭합니다.
 
    .Cpp 파일이 합니다 **소스 파일** 폴더에서 **솔루션 탐색기**, 파일을 Visual Studio 편집기에서 연 합니다.
 
-6. 편집기의 파일에서 C++ 표준 라이브러리를 사용하는 올바른 C++ 프로그램 입력 샘플 프로그램 중 하나를 복사하여 파일에 붙여넣습니다.
+1. 편집기의 파일에서 C++ 표준 라이브러리를 사용하는 올바른 C++ 프로그램 입력 샘플 프로그램 중 하나를 복사하여 파일에 붙여넣습니다.
 
 
-7. 파일을 저장합니다.
+1. 파일을 저장합니다.
 
-8. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
+1. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
 
    **출력** 창에서는 빌드 로그 및 빌드 상태를 나타내는 메시지와 같은 컴파일 진행 상황을 안내합니다.
 
-9. **디버그** 메뉴를 클릭하여 **디버깅하지 않고 시작**을 선택합니다.
+1. **디버그** 메뉴를 클릭하여 **디버깅하지 않고 시작**을 선택합니다.
 
    샘플 프로그램을 사용하는 경우 명령 창이 표시되고 `set`에서 특정 정수를 찾았는지를 보여줍니다.
 
 ## <a name="next-steps"></a>다음 단계
 
-**이전:** [콘솔 Visual c + +에서 응용 프로그램](../windows/console-applications-in-visual-cpp.md)합니다. **다음:**[연습: 명령줄에서 네이티브 c + + 프로그램 컴파일](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)합니다.
+**이전:** [콘솔 Visual c + +에서 응용 프로그램](../windows/console-applications-in-visual-cpp.md)<br/>
+**다음:** [연습: 명령줄에서 네이티브 c + + 프로그램 컴파일](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
 
 ## <a name="see-also"></a>참고 항목
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
-[C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)
+[C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)<br/>
