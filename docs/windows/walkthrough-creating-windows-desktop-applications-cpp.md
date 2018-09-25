@@ -1,7 +1,7 @@
 ---
 title: '연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (c + +) | Microsoft Docs'
 ms.custom: get-started-article
-ms.date: 06/12/2018
+ms.date: 09/18/2018
 ms.technology:
 - cpp-windows
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 34342fbca00a127d1fdee13d29626bc2a3dfe53f
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 7e9541517852696073a3dbbff560bb6c44fd3264
+ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679207"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029673"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (c + +)
 
@@ -120,7 +120,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    매개 변수 및 반환 값이 함수에 대 한 정보를 참조 하세요 [WinMain 진입점](https://msdn.microsoft.com/library/windows/desktop/ms633559)합니다.
 
    > [!NOTE]
-   > 추가 된 모든 단어를 같은 이란 `CALLBACK`, 또는 `HINSTANCE`, 또는 `_In_`? 기존의 Windows API는 typedef를 사용 하 고 전처리기 매크로 추상화를 광범위 하 게 형식 및 플랫폼별의 세부 정보 중 일부 코딩, 규칙을 호출 하는 등 **__declspec** 선언과 컴파일러 pragmas 합니다. Visual Studio에서 IntelliSense를 사용할 수 있습니다 [요약 정보](/visualstudio/ide/using-intellisense#quick-info) 이러한 typedefs 및 매크로 정의 항목을 참조 하는 기능입니다. 관심 단어 위로 마우스를 가져가서 또는 선택 하 고 ctrl + K, ctrl 키를 눌러-I 정의 포함 하는 작은 팝업 창입니다. 자세한 내용은 [IntelliSense 사용](/visualstudio/ide/using-intellisense)을 참조하세요. 매개 변수 및 반환 형식을 사용할 경우가 많습니다 *SAL 주석을* 수 있도록 프로그래밍 오류 catch 합니다. 자세한 내용은 [C/c + + 코드 오류를 줄이기 위한 SAL 주석 사용](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects)합니다.
+   > 추가 된 모든 단어를 같은 이란 `CALLBACK`, 또는 `HINSTANCE`, 또는 `_In_`? 기존의 Windows API는 typedef를 사용 하 고 전처리기 매크로 추상화를 광범위 하 게 형식 및 플랫폼별의 세부 정보 중 일부 코딩, 규칙을 호출 하는 등 **__declspec** 선언과 컴파일러 pragmas 합니다. Visual Studio에서 IntelliSense를 사용할 수 있습니다 [요약 정보](/visualstudio/ide/using-intellisense#quick-info) 이러한 typedefs 및 매크로 정의 항목을 참조 하는 기능입니다. 관심 단어 위로 마우스를 가져가서 또는 선택 하 고 키를 눌러 **Ctrl**+**K**를 **Ctrl**+**합니까** 에 대 한는 정의 포함 하는 작은 팝업 창입니다. 자세한 내용은 [IntelliSense 사용](/visualstudio/ide/using-intellisense)을 참조하세요. 매개 변수 및 반환 형식을 사용할 경우가 많습니다 *SAL 주석을* 수 있도록 프로그래밍 오류 catch 합니다. 자세한 내용은 [C/c + + 코드 오류를 줄이기 위한 SAL 주석 사용](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects)합니다.
 
 1. Windows 데스크톱 프로그램 필요 &lt;windows.h >. &lt;tchar.h > 정의 `TCHAR` 궁극적으로 확인 되는 매크로를 **wchar_t** 유니코드 기호가 프로젝트에 정의 된 경우 그렇지 않은 경우 확인 **char**합니다.  TCHAR 필요 하 고를 사용할 수 없는 항상를 빌드하는 경우 사용 하도록 설정 하는 유니코드를 사용 하 여 **wchar_t** 직접.
 

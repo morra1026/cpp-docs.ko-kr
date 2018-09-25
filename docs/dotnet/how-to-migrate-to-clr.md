@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: cf55b6f5dc422bb01babe0bdf8d8c27ce50371da
-ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
+ms.openlocfilehash: 210cf8d3183e9fcd94cfa51d875a0b26e4a8fa07
+ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494467"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029660"
 ---
 # <a name="how-to-migrate-to-clr"></a>방법: /clr로 마이그레이션
 
@@ -85,8 +85,6 @@ NewFunc2 = (MYPROC)GetProcAddress( hLib, "Func2" );
 C + + 수도 있어야 함수 하거나 프로토타입화 하거나 완전히 정의 전에 참조 하거나 호출할 수 있습니다.
 
 C + +에서 키워드 될 수 있는 C 코드에서 사용 하는 식별자 (같은 `virtual`, `new`, `delete`, `bool`를 `true`, `false`등) 이름을 변경 해야 합니다. 이 간단한 검색 및 바꾸기 작업을 사용 하 여 일반적으로 수행할 수 있습니다.
-
-마지막으로, C 스타일 COM 호출 v-table 명시적으로 사용 해야 하는 반면 및 `this` 포인터, c + + 그렇지 않습니다.
 
 ```
 COMObj1->lpVtbl->Method(COMObj, args);  // C code

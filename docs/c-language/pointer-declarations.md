@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2870b2958f2e18b711ea568fdda2ae01d41e37f6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ca5ef287ad853387635bbcc349374e1f174b4fd6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752725"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095939"
 ---
 # <a name="pointer-declarations"></a>포인터 선언
 
@@ -59,6 +59,7 @@ ms.locfileid: "43752725"
 구조체, 공용 구조체 또는 열거형 형식을 정의하기 전에 구조체, 공용 구조체 또는 열거형 형식에 대한 포인터를 선언할 수 있습니다. 아래의 예제와 같이 구조체 또는 공용 구조체 태그를 사용하여 포인터를 선언합니다. 컴파일러가 구조체나 공용 구조체의 크기를 몰라도 포인터 변수의 공간을 할당할 수 있으므로 이러한 선언이 허용됩니다.
 
 ## <a name="examples"></a>예제
+
 다음 예제에서는 포인터 선언을 보여 줍니다.
 
 ```
