@@ -1,7 +1,7 @@
 ---
 title: '연습: MFC 프로젝트에 애니메이션 추가 | Microsoft Docs'
 ms.custom: ''
-ms.date: 06/28/2018
+ms.date: 09/20/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dfcab237070b401d78c3fc52fc765930272832da
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 326535395599a76f521100475cfc80b014ba6cd9
+ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439278"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47169439"
 ---
 # <a name="walkthrough-adding-animation-to-an-mfc-project"></a>연습: MFC 프로젝트에 애니메이션 추가
 
@@ -50,27 +50,27 @@ ms.locfileid: "46439278"
 
 1. **파일** 메뉴에서 **새로 만들기** 를 가리킨 다음 **프로젝트**를 클릭합니다.
 
-2. 에 **새 프로젝트** 대화 상자에서 왼쪽 창의 **설치 된 템플릿**를 확장 **Visual c + +** 선택한 후 **MFC**. 가운데 창에서 선택 **MFC 응용 프로그램**합니다. 에 **이름을** 상자에 입력 *MFCAnimationWalkthrough*합니다. **확인**을 클릭합니다.
+1. 에 **새 프로젝트** 대화 상자에서 왼쪽 창의 **설치 된 템플릿**를 확장 **Visual c + +** 선택한 후 **MFC**. 가운데 창에서 선택 **MFC 응용 프로그램**합니다. 에 **이름을** 상자에 입력 *MFCAnimationWalkthrough*합니다. **확인**을 클릭합니다.
 
-3. 에 **MFC 응용 프로그램 마법사** 대화 상자에서 확인 하는 **응용 프로그램 유형** 는 **여러 문서**, **프로젝트 스타일** 는 **Visual Studio**, 및 **문서/뷰 아키텍처 지원** 옵션을 선택 합니다. **마침**을 클릭합니다.
+1. 에 **MFC 응용 프로그램 마법사** 대화 상자에서 확인 하는 **응용 프로그램 유형** 는 **여러 문서**, **프로젝트 스타일** 는 **Visual Studio**, 및 **문서/뷰 아키텍처 지원** 옵션을 선택 합니다. **마침**을 클릭합니다.
 
 ### <a name="to-add-a-menu-and-then-add-commands-to-start-and-stop-an-animation"></a>메뉴를 추가 하 고 다음 시작 애니메이션을 중지 하는 명령을 추가 하려면
 
 1. 에 **뷰** 메뉴에서 **기타 Windows** 클릭 하 고 **리소스 뷰**합니다.
 
-2. **리소스 뷰**로 이동 합니다 **메뉴** 폴더를 엽니다. 두 번 클릭 합니다 `IDR_MFCAnimationWalTYPE` 리소스를 수정 하기 위해 엽니다.
+1. **리소스 뷰**로 이동 합니다 **메뉴** 폴더를 엽니다. 두 번 클릭 합니다 **IDR_MFCAnimationWalkthroughTYPE** 리소스를 수정 하기 위해 엽니다.
 
-3. 메뉴 모음에서에 **여기에 입력** 상자에 입력 *a&nimation* 애니메이션 메뉴를 만들려면.
+1. 메뉴 모음에서에 **여기에 입력** 상자에 입력 *a&nimation* 애니메이션 메뉴를 만들려면.
 
-4. 아래 **애니메이션**를 **여기에 입력** 상자에 입력 *시작 및 전달* Start Forward 명령을 만들려면.
+1. 아래 **애니메이션**를 **여기에 입력** 상자에 입력 *시작 및 전달* Start Forward 명령을 만들려면.
 
-5. 아래 **Start Forward**를 **여기에 입력** 상자에 입력 *시작 & 뒤로*합니다.
+1. 아래 **Start Forward**를 **여기에 입력** 상자에 입력 *시작 & 뒤로*합니다.
 
-6. 아래 **Start Backward**를 **여기에 입력** 상자에 입력 *s&top* 중지 명령을 만들려면.
+1. 아래 **Start Backward**를 **여기에 입력** 상자에 입력 *s&top* 중지 명령을 만들려면.
 
-7. MFCAnimationWalkthrough.rc를 저장 하 고 닫습니다.
+1. MFCAnimationWalkthrough.rc를 저장 하 고 닫습니다.
 
-8. **솔루션 탐색기**, MainFrm.cpp 수정에 대 한 열을 두 번 클릭 합니다. 에 `CMainFrame::OnCreate` 메서드를 여러 번 호출 된 섹션을 찾습니다 `lstBasicCommands.AddTail`합니다. 이 섹션 직후 다음 코드를 추가 합니다.
+1. **솔루션 탐색기**, MainFrm.cpp 수정에 대 한 열을 두 번 클릭 합니다. 에 `CMainFrame::OnCreate` 메서드를 여러 번 호출 된 섹션을 찾습니다 `lstBasicCommands.AddTail`합니다. 이 섹션 직후 다음 코드를 추가 합니다.
 
     ```cpp
     lstBasicCommands.AddTail(ID_ANIMATION_STARTFORWARD);
@@ -78,29 +78,29 @@ ms.locfileid: "46439278"
     lstBasicCommands.AddTail(ID_ANIMATION_STOP);
     ```
 
-9. 파일을 저장 하 고 닫습니다.
+1. 파일을 저장 하 고 닫습니다.
 
 ### <a name="to-create-handlers-for-the-start-and-stop-commands"></a>시작에 대 한 처리기를 만들고 중지 명령
 
 1. 에 **프로젝트** 메뉴에서 클릭 **클래스 마법사**합니다.
 
-2. 에 **MFC 클래스 마법사**아래에 있는 **클래스 이름을**를 선택 `CMFCAnimationWalkthroughView`합니다.
+1. 에 **MFC 클래스 마법사**아래에 있는 **클래스 이름을**를 선택 **CMFCAnimationWalkthroughView**합니다.
 
-3. 에 **명령** 탭의 **개체 Id** 상자에서 `ID_ANIMATION_STARTFORWARD`, 한 다음를 **메시지** 상자에서 `COMMAND`합니다. 클릭 **처리기를 추가**합니다.
+1. 에 **명령** 탭의 **개체 Id** 상자에서 **ID_ANIMATION_STARTFORWARD**, 한 다음를 **메시지** 상자 를선택합니다 **명령**입니다. 클릭 **처리기를 추가**합니다.
 
-4. 에 **멤버 함수 추가** 대화 상자, 클릭 **확인**합니다.
+1. 에 **멤버 함수 추가** 대화 상자, 클릭 **확인**합니다.
 
-5. 에 **개체 Id** 상자에서 `ID_ANIMATION_STARTBACKWARD`, 한 다음 합니다 **메시지** 상자에서 `COMMAND`합니다. 클릭 **처리기를 추가**합니다.
+1. 에 **개체 Id** 상자에서 **ID_ANIMATION_STARTBACKWARD**, 한 다음 합니다 **메시지** 상자에서 **명령**합니다. 클릭 **처리기를 추가**합니다.
 
-6. 에 **멤버 함수 추가** 대화 상자, 클릭 **확인**합니다.
+1. 에 **멤버 함수 추가** 대화 상자, 클릭 **확인**합니다.
 
-7. 에 **개체 Id** 상자에서 `ID_ANIMATION_STOP`, 한 다음 합니다 **메시지** 상자에서 `COMMAND`합니다. 클릭 **추가 처리기** 을 클릭 한 다음 **확인**합니다.
+1. 에 **개체 Id** 상자에서 **ID_ANIMATION_STOP**, 한 다음 합니다 **메시지** 상자에서 **명령**합니다. 클릭 **추가 처리기** 을 클릭 한 다음 **확인**합니다.
 
-8. 에 **멤버 함수 추가** 대화 상자, 클릭 **확인**합니다.
+1. 에 **멤버 함수 추가** 대화 상자, 클릭 **확인**합니다.
 
-9. 에 **MFC 클래스 마법사**, 클릭 **확인**합니다.
+1. 에 **MFC 클래스 마법사**, 클릭 **확인**합니다.
 
-10. 편집기에서 열려 있는 MFCAnimationWalkthroughView.cpp 저장 하지만 닫지 마세요.
+1. 편집기에서 열려 있는 MFCAnimationWalkthroughView.cpp 저장 하지만 닫지 마세요.
 
 ### <a name="to-add-an-animated-object-to-the-project"></a>프로젝트에 애니메이션이 적용 된 개체를 추가 하려면
 
@@ -123,7 +123,7 @@ ms.locfileid: "46439278"
     };
     ```
 
-2. 끝을 `CMFCAnimationWalkthroughView` 클래스에 다음 코드를 추가 합니다.
+1. 끝을 `CMFCAnimationWalkthroughView` 클래스에 다음 코드를 추가 합니다.
 
     ```cpp
     CCustomAnimationController m_animationController;
@@ -131,22 +131,22 @@ ms.locfileid: "46439278"
     CAnimationRect m_animationRect;
     ```
 
-3. 이후에 `DECLARE_MESSAGE_MAP()` 줄, 다음 코드를 추가 합니다.
+1. 이후에 `DECLARE_MESSAGE_MAP()` 줄, 다음 코드를 추가 합니다.
 
     ```cpp
     void Animate(BOOL bDirection);
     ```
 
-4. 파일을 저장 하 고 닫습니다.
+1. 파일을 저장 하 고 닫습니다.
 
-5. 후 파일의 맨 위에 있는 MFCAnimationWalkthroughView.cpp에는 `#include` 문을 하지만 모든 클래스 메서드 전에 다음 코드를 추가 합니다.
+1. 후 파일의 맨 위에 있는 MFCAnimationWalkthroughView.cpp에는 `#include` 문을 하지만 모든 클래스 메서드 전에 다음 코드를 추가 합니다.
 
     ```cpp
     static int nAnimationGroup = 0;
     static int nInfoAreaHeight = 40;
     ```
 
-6. 생성자의 끝에 `CMFCAnimationWalkthroughView`, 다음 코드를 추가 합니다.
+1. 생성자의 끝에 `CMFCAnimationWalkthroughView`, 다음 코드를 추가 합니다.
 
     ```cpp
     m_animationController.EnableAnimationTimerEventHandler();
@@ -159,7 +159,7 @@ ms.locfileid: "46439278"
     m_animationController.AddAnimationObject(&m_animationRect);
     ```
 
-7. 찾을 `CAnimationWalthroughView::PreCreateWindow` 메서드를 다음 코드로 바꿉니다.
+1. 찾을 `CAnimationWalthroughView::PreCreateWindow` 메서드를 다음 코드로 바꿉니다.
 
     ```cpp
     BOOL CMFCAnimationWalkthroughView::PreCreateWindow(CREATESTRUCT& cs)
@@ -172,7 +172,7 @@ ms.locfileid: "46439278"
     }
     ```
 
-8. 찾을 `CAnimationWalkthroughView::OnDraw` 메서드를 다음 코드로 바꿉니다.
+1. 찾을 `CAnimationWalkthroughView::OnDraw` 메서드를 다음 코드로 바꿉니다.
 
     ```cpp
     void CMFCAnimationWalkthroughView::OnDraw(CDC* pDC)
@@ -209,7 +209,7 @@ ms.locfileid: "46439278"
     }
     ```
 
-9. 파일 끝에 다음 코드를 추가 합니다.
+1. 파일 끝에 다음 코드를 추가 합니다.
 
     ```cpp
     void CMFCAnimationWalkthroughView::Animate(BOOL bDirection)
@@ -219,9 +219,9 @@ ms.locfileid: "46439278"
         static BYTE nStartColor = 50;
         static BYTE nEndColor = 255;
 
-        BYTE nRedColorFinal = bDirection  nStartColor : nEndColor;
-        BYTE nGreenColorFinal = bDirection  nStartColor : nEndColor;
-        BYTE nBlueColorFinal = bDirection  nStartColor : nEndColor;
+        BYTE nRedColorFinal = bDirection ? nStartColor : nEndColor;
+        BYTE nGreenColorFinal = bDirection ? nStartColor : nEndColor;
+        BYTE nBlueColorFinal = bDirection ? nStartColor : nEndColor;
 
         CLinearTransition* pRedTransition =
             new CLinearTransition(duration, (DOUBLE)nRedColorFinal);
@@ -278,13 +278,13 @@ ms.locfileid: "46439278"
     }
     ```
 
-10. 에 **프로젝트** 메뉴에서 클릭 **클래스 마법사**합니다.
+1. 에 **프로젝트** 메뉴에서 클릭 **클래스 마법사**합니다.
 
-11. 에 **MFC 클래스 마법사**아래에 있는 **클래스 이름을**를 선택 `CMFCAnimationWalkthroughView`합니다.
+1. 에 **MFC 클래스 마법사**아래에 있는 **클래스 이름을**를 선택 **CMFCAnimationWalkthroughView**합니다.
 
-12. 에 **메시지** 탭의 **메시지** 상자에서 `WM_ERASEBKGND`, 클릭 **처리기 추가**, 클릭 하 고 **확인**.
+1. 에 **메시지** 탭의 **메시지** 상자에서 **WM_ERASEBKGND**, 클릭 **처리기 추가**, 클릭 하 고 **확인** .
 
-13. MFCAnimationWalkthroughView.cpp, 바꿉니다 구현의 `OnEraseBkgnd` 를 다시 그릴 때 애니메이션된 개체의 깜박임 줄이기 위해 다음 코드를 사용 합니다.
+1. MFCAnimationWalkthroughView.cpp, 바꿉니다 구현의 `OnEraseBkgnd` 를 다시 그릴 때 애니메이션된 개체의 깜박임 줄이기 위해 다음 코드를 사용 합니다.
 
     ```cpp
     BOOL CMFCAnimationWalkthroughView::OnEraseBkgnd(CDC* /*pDC*/)
@@ -293,7 +293,7 @@ ms.locfileid: "46439278"
     }
     ```
 
-14. 구현을 대체 `CMFCAnimationWalkthroughView::OnAnimationStartforward`, `CMFCAnimationWalkthroughView::OnAnimationStartbackward`, 및 `CMFCAnimationWalkthroughView::OnAnimationStop` 다음 코드를 사용 하 여 합니다.
+1. 구현을 대체 `CMFCAnimationWalkthroughView::OnAnimationStartforward`, `CMFCAnimationWalkthroughView::OnAnimationStartbackward`, 및 `CMFCAnimationWalkthroughView::OnAnimationStop` 다음 코드를 사용 하 여 합니다.
 
     ```cpp
     void CMFCAnimationWalkthroughView::OnAnimationStartforward()
@@ -317,7 +317,7 @@ ms.locfileid: "46439278"
     }
     ```
 
-15. 파일을 저장 하 고 닫습니다.
+1. 파일을 저장 하 고 닫습니다.
 
 ### <a name="to-center-the-animated-object-in-the-window"></a>가운데 창에서 애니메이션된 개체
 
@@ -327,15 +327,15 @@ ms.locfileid: "46439278"
     BOOL m_bCurrentDirection;
     ```
 
-2. 파일을 저장 하 고 닫습니다.
+1. 파일을 저장 하 고 닫습니다.
 
-3. 에 **프로젝트** 메뉴에서 클릭 **클래스 마법사**합니다.
+1. 에 **프로젝트** 메뉴에서 클릭 **클래스 마법사**합니다.
 
-4. 에 **MFC 클래스 마법사**아래에 있는 **클래스 이름을**를 선택 `CMFCAnimationWalkthroughView`합니다.
+1. 에 **MFC 클래스 마법사**아래에 있는 **클래스 이름을**를 선택 **CMFCAnimationWalkthroughView**합니다.
 
-5. 에 **메시지** 탭의 **메시지** 상자에서 `WM_SIZE`, 클릭 **처리기 추가**, 클릭 하 고 **확인**.
+1. 에 **메시지** 탭의 **메시지** 상자에서 **WM_SIZE**, 클릭 **처리기 추가**를 클릭 하 고 **확인**.
 
-6. MFCAnimationWalkthroughView.cpp에서 코드를 대체할 `CMFCAnimationWalkthroughView::OnSize` 다음 코드를 사용 합니다.
+1. MFCAnimationWalkthroughView.cpp에서 코드를 대체할 `CMFCAnimationWalkthroughView::OnSize` 다음 코드를 사용 합니다.
 
     ```cpp
     void CMFCAnimationWalkthroughView::OnSize(UINT nType, int cx, int cy)
@@ -358,19 +358,19 @@ ms.locfileid: "46439278"
     }
     ```
 
-7. 생성자의 시작 부분에 `CMFCAnimationWalkthroughView`, 다음 코드를 추가 합니다.
+1. 생성자의 시작 부분에 `CMFCAnimationWalkthroughView`, 다음 코드를 추가 합니다.
 
     ```cpp
     m_bCurrentDirection = TRUE;
     ```
 
-8. 맨 앞에 `CMFCAnimationWalkthroughView::Animate` 메서드를 다음 코드를 추가 합니다.
+1. 맨 앞에 `CMFCAnimationWalkthroughView::Animate` 메서드를 다음 코드를 추가 합니다.
 
     ```cpp
     m_bCurrentDirection = bDirection;
     ```
 
-9. 파일을 저장 하 고 닫습니다.
+1. 파일을 저장 하 고 닫습니다.
 
 ### <a name="to-verify-the-results"></a>결과 확인 하려면
 

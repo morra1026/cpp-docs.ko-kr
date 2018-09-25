@@ -1,28 +1,40 @@
 ---
 title: WeakReference 클래스 1 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/24/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::WeakReference
+- implements/Microsoft::WRL::Details::WeakReference::DecrementStrongReference
+- implements/Microsoft::WRL::Details::WeakReference::IncrementStrongReference
+- implements/Microsoft::WRL::Details::WeakReference::Resolve
+- implements/Microsoft::WRL::Details::WeakReference::SetUnknown
+- implements/Microsoft::WRL::Details::WeakReference::~WeakReference
+- implements/Microsoft::WRL::Details::WeakReference::WeakReference
 dev_langs:
 - C++
 helpviewer_keywords:
-- WeakReference class
+- Microsoft::WRL::Details::WeakReference class
+- Microsoft::WRL::Details::WeakReference::DecrementStrongReference method
+- Microsoft::WRL::Details::WeakReference::IncrementStrongReference method
+- Microsoft::WRL::Details::WeakReference::Resolve method
+- Microsoft::WRL::Details::WeakReference::SetUnknown method
+- Microsoft::WRL::Details::WeakReference::~WeakReference, destructor
+- Microsoft::WRL::Details::WeakReference::WeakReference, constructor
 ms.assetid: 3f4c956b-dbbd-49b1-8cfa-9509a9956c97
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a9b7270a03192a6fcf53f0c2ecfd1af07a216243
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 4d82dbffee5b686c6d8923f395c74fedfac54816
+ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595533"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47169673"
 ---
 # <a name="weakreference-class1"></a>WeakReference 클래스 1
 
@@ -38,29 +50,29 @@ class WeakReference;
 
 나타냅니다는 *약한 참조* Windows 런타임 또는 클래식 COM.를 사용 하 여 사용할 수 있는 약한 참조는 액세스할 수 있거나 액세스할 수 없는 개체를 나타냅니다.
 
-A **WeakReference** 개체를 유지 관리를 *강한 참조*, 개체에 대 한 포인터는 및 *강력한 참조 횟수*, 강력한의 복사본 수 인 참조 하 여 배포 된 `Resolve()` 메서드. 강력한 참조 횟수가 0이 아닌 이지만, 강력한 참조가 유효 하며 개체 액세스할 수 있습니다. 강력한 참조 횟수가 0 인 경우 강력한 참조가 올바르지 않습니다. 및 개체에 액세스할 수 없습니다.
+A `WeakReference` 개체를 유지 관리를 *강력한 참조*, 개체에 대 한 포인터는 및 *강력한 참조 횟수*에서 배포한는 강력한 참조의 복사본 수 인 `Resolve()` 메서드. 강력한 참조 횟수가 0이 아닌 이지만, 강력한 참조가 유효 하며 개체 액세스할 수 있습니다. 강력한 참조 횟수가 0 인 경우 강력한 참조가 올바르지 않습니다. 및 개체에 액세스할 수 없습니다.
 
-A **WeakReference** 개체는 일반적으로 외부 스레드나 응용 프로그램에서 제어 하는 개체를 나타내는 데 사용 됩니다. 예를 들어, 생성 된 **WeakReference** 파일 개체에 대 한 참조에서 개체입니다. 파일이 열려 있는 동안 강력한 참조는 유효합니다. 그러나 파일이 닫히면 강력한 참조는 유효하지 않게 됩니다.
+`WeakReference` 개체는 일반적으로 외부 스레드나 응용 프로그램에서 제어 하는 개체를 나타내는 데 사용 됩니다. 예를 들어, 생성 된 `WeakReference` 파일 개체에 대 한 참조에서 개체입니다. 파일이 열려 있는 동안 강력한 참조는 유효합니다. 그러나 파일이 닫히면 강력한 참조는 유효하지 않게 됩니다.
 
-합니다 **WeakReference** 메서드는 스레드로부터 안전 합니다.
+`WeakReference` 메서드는 스레드로부터 안전 합니다.
 
 ## <a name="members"></a>멤버
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
-|----------|-----------------|
-|[WeakReference::WeakReference 생성자](../windows/weakreference-weakreference-constructor.md)|새 인스턴스를 초기화 합니다 **WeakReference** 클래스입니다.|
-|[WeakReference::~WeakReference 소멸자](../windows/weakreference-tilde-weakreference-destructor.md)|초기화 취소 (삭제)의 현재 인스턴스를 **WeakReference** 클래스입니다.|
+이름                                                  | 설명
+----------------------------------------------------- | ---------------------------------------------------------------------------
+[Weakreference:: Weakreference](#weakreference)        | `WeakReference` 클래스의 새 인스턴스를 초기화합니다.
+[WeakReference:: ~ WeakReference](#tilde-weakreference) | 초기화 취소 (삭제)의 현재 인스턴스는 `WeakReference` 클래스입니다.
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
-|----------|-----------------|
-|[WeakReference::DecrementStrongReference 메서드](../windows/weakreference-decrementstrongreference-method.md)|현재는 강력한 참조 횟수를 감소 시킵니다 **WeakReference** 개체입니다.|
-|[WeakReference::IncrementStrongReference 메서드](../windows/weakreference-incrementstrongreference-method.md)|현재 강력한 참조 횟수를 증가 시킵니다 **WeakReference** 개체입니다.|
-|[WeakReference::Resolve 메서드](../windows/weakreference-resolve-method.md)|강력한 참조 횟수가 0이 아닌 경우 현재 강력한 참조 값으로 지정된 된 포인터를 설정 합니다.|
-|[WeakReference::SetUnknown 메서드](../windows/weakreference-setunknown-method.md)|현재 강력한 참조를 설정 합니다 **WeakReference** 개체를 지정 된 인터페이스 포인터입니다.|
+이름                                                                 | 설명
+-------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------
+[Weakreference:: Decrementstrongreference](#decrementstrongreference) | 현재는 강력한 참조 횟수를 감소 시킵니다 `WeakReference` 개체입니다.
+[Weakreference:: Incrementstrongreference](#incrementstrongreference) | 현재 강력한 참조 횟수를 증가 시킵니다 `WeakReference` 개체입니다.
+[WeakReference::Resolve](#resolve)                                   | 강력한 참조 횟수가 0이 아닌 경우 현재 강력한 참조 값으로 지정된 된 포인터를 설정 합니다.
+[Weakreference:: Setunknown](#setunknown)                             | 현재는 강력한 참조를 설정 `WeakReference` 개체를 지정 된 인터페이스 포인터입니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -72,6 +84,114 @@ A **WeakReference** 개체는 일반적으로 외부 스레드나 응용 프로�
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="see-also"></a>참고 항목
+## <a name="tilde-weakreference"></a>WeakReference:: ~ WeakReference
 
-[Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)
+WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
+
+```cpp
+virtual ~WeakReference();
+```
+
+### <a name="return-value"></a>반환 값
+
+### <a name="remarks"></a>설명
+
+현재 인스턴스를 초기화 해제는 `WeakReference` 클래스입니다.
+
+## <a name="decrementstrongreference"></a>Weakreference:: Decrementstrongreference
+
+WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
+
+```cpp
+ULONG DecrementStrongReference();
+```
+
+### <a name="remarks"></a>설명
+
+현재는 강력한 참조 횟수를 감소 시킵니다 `WeakReference` 개체입니다.
+
+강력한 참조 횟수가 0이 되 면 강력한 참조로 설정 됩니다 `nullptr`합니다.
+
+### <a name="return-value"></a>반환 값
+
+감소 된 강력한 참조 수입니다.
+
+## <a name="incrementstrongreference"></a>Weakreference:: Incrementstrongreference
+
+WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
+
+```cpp
+ULONG IncrementStrongReference();
+```
+
+### <a name="return-value"></a>반환 값
+
+증가 된 강력한 참조 수입니다.
+
+### <a name="remarks"></a>설명
+
+현재 강력한 참조 횟수를 증가 시킵니다 `WeakReference` 개체입니다.
+
+## <a name="resolve"></a>Weakreference:: Resolve
+
+WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
+
+```cpp
+STDMETHOD(Resolve)  
+   (REFIID riid,
+   _Deref_out_opt_ IInspectable **ppvObject
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*riid*<br/>
+인터페이스 ID입니다.
+
+*ppvObject*<br/>
+이 작업이 완료 될 때 강력한 참조 횟수가 0이 아닌 경우 현재 강력한 참조의 복사본입니다.
+
+### <a name="return-value"></a>반환 값
+
+- 이 작업에 성공 하면 S_OK와 강력한 참조 횟수는 0입니다. 합니다 *ppvObject* 매개 변수는 설정 `nullptr`합니다.
+
+- 이 작업은 성공 하 고 강력한 참조 횟수가 0이 아닌 경우 S_OK입니다. 합니다 *ppvObject* 매개 변수는 강력한 참조를 설정 합니다.
+
+- 그렇지 않은 경우 이유를 나타내는 HRESULT이이 작업이 실패 했습니다.
+
+### <a name="remarks"></a>설명
+
+강력한 참조 횟수가 0이 아닌 경우 현재 강력한 참조 값으로 지정된 된 포인터를 설정 합니다.
+
+## <a name="setunknown"></a>Weakreference:: Setunknown
+
+WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
+
+```cpp
+void SetUnknown(
+   _In_ IUnknown* unk
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*unk*<br/>
+에 대 한 포인터를 `IUnknown` 개체의 인터페이스입니다.
+
+### <a name="remarks"></a>설명
+
+현재는 강력한 참조를 설정 `WeakReference` 개체를 지정 된 인터페이스 포인터입니다.
+
+## <a name="weakreference"></a>Weakreference:: Weakreference
+
+WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
+
+```cpp
+WeakReference();
+```
+
+### <a name="remarks"></a>설명
+
+`WeakReference` 클래스의 새 인스턴스를 초기화합니다.
+
+에 대 한 강력한 참조 포인터를 `WeakReference` 개체에 초기화 됩니다 `nullptr`, 및 강력한 참조 횟수를 1로 초기화 됩니다.

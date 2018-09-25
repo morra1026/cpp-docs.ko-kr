@@ -1,7 +1,7 @@
 ---
 title: '연습: MFC 자유 곡선 응용 프로그램 (2 부) 업데이트 | Microsoft Docs'
 ms.custom: ''
-ms.date: 06/28/2018
+ms.date: 09/20/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 351aea09376d6cba7f091828225fd337fa3f68e1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 208ae27e694396a21b76bc482c87084e03a21975
+ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423178"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47169686"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-2"></a>연습: MFC 자유 곡선 응용 프로그램 업데이트(파트 2)
 
@@ -55,31 +55,29 @@ ms.locfileid: "46423178"
 
    1. **도구 상자**, 끌어를 **패널** 에 **홈** 범주. 다음 두 가지를 끌어 **확인란** 패널에 있습니다.
 
-   2. 해당 속성을 수정 하는 패널을 클릭 합니다. 변경 **캡션** 에 `View`입니다.
+   1. 해당 속성을 수정 하는 패널을 클릭 합니다. 변경 **캡션** 에 `View`입니다.
 
-   3. 해당 속성을 수정 하려면 첫 번째 확인란을 클릭 합니다. 변경 **ID** 하 `ID_VIEW_TOOLBAR` 하 고 **캡션** 에 `Toolbar`입니다.
+   1. 해당 속성을 수정 하려면 첫 번째 확인란을 클릭 합니다. 변경 **ID** 하 `ID_VIEW_TOOLBAR` 하 고 **캡션** 에 `Toolbar`입니다.
 
-   4. 해당 속성을 수정 하려면 두 번째 확인란을 클릭 합니다. 변경 **ID** 하 `ID_VIEW_STATUS_BAR` 하 고 **캡션** 에 `Status Bar`입니다.
+   1. 해당 속성을 수정 하려면 두 번째 확인란을 클릭 합니다. 변경 **ID** 하 `ID_VIEW_STATUS_BAR` 하 고 **캡션** 에 `Status Bar`입니다.
 
-2. 명명 된 패널을 만드는 `Window` 분할 단추를 포함 합니다. 사용자가 분할 단추를 클릭 하면 바로 가기 메뉴에 자유 곡선 응용 프로그램에 이미 정의 된 세 가지 명령이 표시 됩니다.
+1. 명명 된 패널을 만드는 `Window` 분할 단추를 포함 합니다. 사용자가 분할 단추를 클릭 하면 바로 가기 메뉴에 자유 곡선 응용 프로그램에 이미 정의 된 세 가지 명령이 표시 됩니다.
 
    1. **도구 상자**, 끌어를 **패널** 에 **홈** 범주. 놓습니다를 **단추** 패널에 있습니다.
 
-   2. 해당 속성을 수정 하는 패널을 클릭 합니다. 변경 **캡션** 에 `Window`입니다.
+   1. 해당 속성을 수정 하는 패널을 클릭 합니다. 변경 **캡션** 에 `Window`입니다.
 
-   3. 단추를 클릭합니다. 변경 **캡션** 하 `Windows`, **키** 에 `w`를 **큰 이미지 인덱스** 에 `1`, 및 **분할 모드** `False`입니다. 줄임표를 클릭 한 다음 (**...** ) 옆에 **메뉴 항목** 열려는 합니다 **항목 편집기** 대화 상자.
+   1. 단추를 클릭합니다. 변경 **캡션** 하 `Windows`, **키** 에 `w`를 **큰 이미지 인덱스** 에 `1`, 및 **분할 모드** `False`입니다. 줄임표를 클릭 한 다음 (**...** ) 옆에 **메뉴 항목** 열려는 합니다 **항목 편집기** 대화 상자.
 
-   4. 클릭 **추가** 세 번 세 개의 단추를 추가 합니다.
+   1. 클릭 **추가** 세 번 세 개의 단추를 추가 합니다.
 
-   5. 첫 번째 단추를 클릭 한 다음 변경 **캡션** 하 `New Window`, 및 **ID** 에 `ID_WINDOW_NEW`입니다.
+   1. 첫 번째 단추를 클릭 한 다음 변경 **캡션** 하 `New Window`, 및 **ID** 에 `ID_WINDOW_NEW`입니다.
 
-   6. 두 번째 단추를 클릭 한 다음 변경 **캡션** 하 `Cascade`, 및 **ID** 에 `ID_WINDOW_CASCADE`입니다.
+   1. 두 번째 단추를 클릭 한 다음 변경 **캡션** 하 `Cascade`, 및 **ID** 에 `ID_WINDOW_CASCADE`입니다.
 
-   7. 세 번째 단추를 클릭 한 다음 변경 **캡션** 하 `Tile`, 및 **ID** 에 `ID_WINDOW_TILE_HORZ`입니다.
+   1. 세 번째 단추를 클릭 한 다음 변경 **캡션** 하 `Tile`, 및 **ID** 에 `ID_WINDOW_TILE_HORZ`입니다.
 
-3. 변경 사항을 저장한 다음 응용 프로그램을 빌드하고 실행합니다. **뷰** 하 고 **창** 패널을 표시 합니다. 제대로 작동 하는지 확인 하려면 단추를 클릭 합니다.
-
-[[섹션에서는](#top)]
+1. 변경 사항을 저장한 다음 응용 프로그램을 빌드하고 실행합니다. **뷰** 하 고 **창** 패널을 표시 합니다. 제대로 작동 하는지 확인 하려면 단추를 클릭 합니다.
 
 ##  <a name="addhelppanel"></a> 도움말 패널 리본에 추가
 
@@ -89,18 +87,16 @@ ms.locfileid: "46423178"
 
 1. **도구 상자**, 끌어를 **패널** 에 **홈** 범주. 다음 두 가지를 끌어 **단추** 패널에 있습니다.
 
-2. 해당 속성을 수정 하는 패널을 클릭 합니다. 변경 **캡션** 에 `Help`입니다.
+1. 해당 속성을 수정 하는 패널을 클릭 합니다. 변경 **캡션** 에 `Help`입니다.
 
-3. 첫 번째 단추를 클릭 합니다. 변경 **캡션** 하 `Help Topics`, 및 **ID** 에 `ID_HELP_FINDER`입니다.
+1. 첫 번째 단추를 클릭 합니다. 변경 **캡션** 하 `Help Topics`, 및 **ID** 에 `ID_HELP_FINDER`입니다.
 
-4. 두 번째 단추를 클릭 합니다. 변경 **캡션** 하 `About Scribble...`, 및 **ID** 에 `ID_APP_ABOUT`입니다.
+1. 두 번째 단추를 클릭 합니다. 변경 **캡션** 하 `About Scribble...`, 및 **ID** 에 `ID_APP_ABOUT`입니다.
 
-5. 변경 사항을 저장한 다음 응용 프로그램을 빌드하고 실행합니다. A **도움말** 두 리본 단추가 포함 된 패널을 표시 합니다.
+1. 변경 사항을 저장한 다음 응용 프로그램을 빌드하고 실행합니다. A **도움말** 두 리본 단추가 포함 된 패널을 표시 합니다.
 
    > [!IMPORTANT]
    > 클릭할 때 합니다 **도움말 항목** 단추를 자유 곡선 응용 프로그램 이라는 압축된 (.chm) HTML 도움말 파일을 엽니다 *your_project_name*. chm. 결과적으로 프로젝트가 Scribble 라는 프로젝트 이름으로 도움말 파일을 이름을 해야 합니다.
-
-[[섹션에서는](#top)]
 
 ##  <a name="addpenpanel"></a> 리본에 펜 패널 추가
 
@@ -112,27 +108,27 @@ ms.locfileid: "46423178"
 
 1. **도구 상자**, 끌어를 **패널** 에 **홈** 범주. 놓습니다를 **확인란** 두 개의 **콤보 상자** 패널에 있습니다.
 
-2. 해당 속성을 수정 하는 패널을 클릭 합니다. 변경 **캡션** 에 `Pen`입니다.
+1. 해당 속성을 수정 하는 패널을 클릭 합니다. 변경 **캡션** 에 `Pen`입니다.
 
-3. 확인란을 클릭 합니다. 변경 **캡션** 하 `Use Thick`, 및 **ID** 에 `ID_PEN_THICK_OR_THIN`입니다.
+1. 확인란을 클릭 합니다. 변경 **캡션** 하 `Use Thick`, 및 **ID** 에 `ID_PEN_THICK_OR_THIN`입니다.
 
-4. 첫 번째 콤보 상자를 클릭 합니다. 변경 **캡션** 하 `Thin Pen`, **ID** 를 `ID_PEN_THIN_WIDTH`, **텍스트** 를 `2`를 **형식** 를 `Drop List`, 및 **데이터** 에 `1;2;3;4;5;6;7;8;9;`입니다.
+1. 첫 번째 콤보 상자를 클릭 합니다. 변경 **캡션** 하 `Thin Pen`, **ID** 를 `ID_PEN_THIN_WIDTH`, **형식** 를 `Drop List`를 **데이터** 를 `1;2;3;4;5;6;7;8;9;`, 및 **텍스트** 에 `2`입니다.
 
-5. 두 번째 콤보 상자를 클릭 합니다. 변경 **캡션** 하 `Thick Pen`, **ID** 를 `ID_PEN_THICK_WIDTH`, **텍스트** 를 `5`를 **형식** 를 `Drop List`, 및 **데이터** 에 `5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;`입니다.
+1. 두 번째 콤보 상자를 클릭 합니다. 변경 **캡션** 하 `Thick Pen`, **ID** 를 `ID_PEN_THICK_WIDTH`, **형식** 를 `Drop List`를 **데이터** 를 `5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;`, 및 **텍스트** 에 `5`입니다.
 
-6. 새 콤보 상자의 모든 기존 메뉴 항목에 일치 하지 않습니다. 따라서 모든 펜 옵션에 대 한 메뉴 항목을 만들어야 합니다.
+1. 새 콤보 상자의 모든 기존 메뉴 항목에 일치 하지 않습니다. 따라서 모든 펜 옵션에 대 한 메뉴 항목을 만들어야 합니다.
 
-   1. 에 **리소스 뷰** 창 IDR_SCRIBBTYPE 메뉴 리소스를 엽니다.
+   1. 에 **리소스 뷰** 창을 열려면 합니다 **IDR_SCRIBBTYPE** 메뉴 리소스입니다.
 
-   2. 클릭 **펜** p를 열려면**en** 메뉴. 누른 **여기에 입력** 유형과 `Thi&n Pen`합니다.
+   1. 클릭 **펜** 펜 메뉴를 엽니다. 누른 **여기에 입력** 유형과 `Thi&n Pen`합니다.
 
-   3. 열려는 방금 입력 한 텍스트를 마우스 오른쪽 단추로 클릭 합니다 **속성** 창 및 속성을 변경 ID `ID_PEN_THIN_WIDTH`합니다.
+   1. 열려는 방금 입력 한 텍스트를 마우스 오른쪽 단추로 클릭 합니다 **속성** 창 및 속성을 변경 ID `ID_PEN_THIN_WIDTH`합니다.
 
-   4. 모든 펜 메뉴 항목에 대 한 이벤트 처리기도 만들어야 합니다. 마우스 오른쪽 단추로 클릭 합니다 **이번 & n 펜** 메뉴 항목을 방금 만든 하 고 클릭 **이벤트 처리기 추가**합니다. 합니다 **이벤트 처리기 마법사** 표시 됩니다.
+   1. 모든 펜 메뉴 항목에 대 한 이벤트 처리기도 만들어야 합니다. 마우스 오른쪽 단추로 클릭 합니다 **이번 & n 펜** 메뉴 항목을 방금 만든 하 고 클릭 **이벤트 처리기 추가**합니다. 합니다 **이벤트 처리기 마법사** 표시 됩니다.
 
-   5. 에 **클래스 목록** 마법사에서 선택 상자 **CScribbleDoc** 클릭 하 고 **추가 및 편집**합니다. 라는 이벤트 처리기를 만들고이 `CScribbleDoc::OnPenThinWidth`합니다.
+   1. 에 **클래스 목록** 마법사에서 선택 상자 **CScribbleDoc** 클릭 하 고 **추가 및 편집**합니다. 라는 이벤트 처리기를 만들고이 `CScribbleDoc::OnPenThinWidth`합니다.
 
-   6. 다음 코드를 `CScribbleDoc::OnPenThinWidth`에 추가합니다.
+   1. 다음 코드를 `CScribbleDoc::OnPenThinWidth`에 추가합니다.
 
     ```cpp
     // Get a pointer to the ribbon bar
@@ -147,26 +143,26 @@ ms.locfileid: "46423178"
     int nCurSel = pThinComboBox->GetCurSel();
     if (nCurSel>= 0)
     {
-        m_nThinWidth = atoi(pThinComboBox->GetItem(nCurSel));
+        m_nThinWidth = atoi(CStringA(pThinComboBox->GetItem(nCurSel)));
     }
 
     // Create a new pen using the selected width
     ReplacePen();
     ```
 
-7. 그런 다음 메뉴 굵게 펜에 대 한 항목 및 이벤트 처리기를 만듭니다.
+1. 그런 다음 메뉴 굵게 펜에 대 한 항목 및 이벤트 처리기를 만듭니다.
 
-   1. 에 **리소스 뷰** 창 IDR_SCRIBBTYPE 메뉴 리소스를 엽니다.
+   1. 에 **리소스 뷰** 창을 열려면 합니다 **IDR_SCRIBBTYPE** 메뉴 리소스입니다.
 
-   2. 클릭 **펜** 펜 메뉴를 엽니다. 누른 **여기에 입력** 유형과 `Thic&k Pen`합니다.
+   1. 클릭 **펜** 펜 메뉴를 엽니다. 누른 **여기에 입력** 유형과 `Thic&k Pen`합니다.
 
-   3. 표시할 방금 입력 한 텍스트를 마우스 오른쪽 단추로 클릭 합니다 **속성** 창입니다. ID 속성을 변경 `ID_PEN_THICK_WIDTH`합니다.
+   1. 표시할 방금 입력 한 텍스트를 마우스 오른쪽 단추로 클릭 합니다 **속성** 창입니다. ID 속성을 변경 `ID_PEN_THICK_WIDTH`합니다.
 
-   4. 마우스 오른쪽 단추로 클릭 합니다 **굵게 펜** 메뉴 항목을 방금 만든 하 고 클릭 **이벤트 처리기 추가**합니다. 합니다 **이벤트 처리기 마법사** 표시 됩니다.
+   1. 마우스 오른쪽 단추로 클릭 합니다 **굵게 펜** 메뉴 항목을 방금 만든 하 고 클릭 **이벤트 처리기 추가**합니다. 합니다 **이벤트 처리기 마법사** 표시 됩니다.
 
-   5. 에 **클래스 목록** 마법사의 상자 **CScribbleDoc** 클릭 하 고 **추가 및 편집**합니다. 라는 이벤트 처리기를 만들고이 `CScribbleDoc::OnPenThickWidth`합니다.
+   1. 에 **클래스 목록** 마법사의 상자 **CScribbleDoc** 클릭 하 고 **추가 및 편집**합니다. 라는 이벤트 처리기를 만들고이 `CScribbleDoc::OnPenThickWidth`합니다.
 
-   6. 다음 코드를 `CScribbleDoc::OnPenThickWidth`에 추가합니다.
+   1. 다음 코드를 `CScribbleDoc::OnPenThickWidth`에 추가합니다.
 
       ```cpp
       // Get a pointer to the ribbon bar
@@ -179,16 +175,14 @@ ms.locfileid: "46423178"
       int nCurSel = pThickComboBox->GetCurSel();
       if (nCurSel>= 0)
       {
-          m_nThickWidth = atoi(pThickComboBox->GetItem(nCurSel));
+          m_nThickWidth = atoi(CStringA(pThickComboBox->GetItem(nCurSel)));
       }
 
       // Create a new pen using the selected width
       ReplacePen();
       ```
 
-8. 변경 사항을 저장한 다음 응용 프로그램을 빌드하고 실행합니다. 새 단추와 콤보 상자를 표시 되어야 합니다. Scribble을 다른 펜 너비를 사용해 보세요.
-
-[[섹션에서는](#top)]
+1. 변경 사항을 저장한 다음 응용 프로그램을 빌드하고 실행합니다. 새 단추와 콤보 상자를 표시 되어야 합니다. Scribble을 다른 펜 너비를 사용해 보세요.
 
 ##  <a name="addcolorbutton"></a> 펜 패널 색 단추 추가
 
@@ -196,19 +190,17 @@ ms.locfileid: "46423178"
 
 ### <a name="to-add-a-color-button-to-the-pen-panel"></a>펜 패널로 색 단추를 추가 하려면
 
-1. 색 단추를 추가 하려면 먼저 해당 메뉴 항목을 만듭니다. 에 **리소스 뷰** 창 IDR_SCRIBBTYPE 메뉴 리소스를 엽니다. 클릭 합니다 **펜** 펜 메뉴를 열려면 메뉴 항목입니다. 누른 **여기에 입력** 유형과 `&Color`합니다. 표시할 방금 입력 한 텍스트를 마우스 오른쪽 단추로 클릭 합니다 **속성** 창입니다. ID 변경 `ID_PEN_COLOR`합니다.
+1. 색 단추를 추가 하려면 먼저 해당 메뉴 항목을 만듭니다. 에 **리소스 뷰** 창을 열려면 합니다 **IDR_SCRIBBTYPE** 메뉴 리소스입니다. 클릭 합니다 **펜** 펜 메뉴를 열려면 메뉴 항목입니다. 누른 **여기에 입력** 유형과 `&Color`합니다. 표시할 방금 입력 한 텍스트를 마우스 오른쪽 단추로 클릭 합니다 **속성** 창입니다. ID 변경 `ID_PEN_COLOR`합니다.
 
-2. 이제 색 단추를 추가 합니다. **도구 상자**, 끌어를 **색 단추** 에 **펜** 패널.
+1. 이제 색 단추를 추가 합니다. **도구 상자**, 끌어를 **색 단추** 에 **펜** 패널.
 
-3. 색 단추를 클릭 합니다. 변경 **캡션** 하 `Color`, **ID** 에 `ID_PEN_COLOR`를 **SimpleLook** 를 `True`, **큰 이미지 인덱스** 를 `1`, 및 **분할 모드** 하려면 `False`합니다.
+1. 색 단추를 클릭 합니다. 변경 **캡션** 하 `Color`, **ID** 를 `ID_PEN_COLOR`, **Simple Look** 를 `True`를 **큰 이미지 인덱스** 를 `1`, 및 **분할 모드** 하려면 `False`합니다.
 
-4. 변경 사항을 저장한 다음 응용 프로그램을 빌드하고 실행합니다. 새 색 단추에 표시 되어야 합니다 **펜** 패널입니다. 그러나 이벤트 처리기 없는 때문에 사용할 수 없습니다. 다음 단계에는 색 단추에 대 한 이벤트 처리기를 추가 하는 방법을 보여 줍니다.
-
-[[섹션에서는](#top)]
+1. 변경 사항을 저장한 다음 응용 프로그램을 빌드하고 실행합니다. 새 색 단추에 표시 되어야 합니다 **펜** 패널입니다. 그러나 이벤트 처리기 없는 때문에 사용할 수 없습니다. 다음 단계에는 색 단추에 대 한 이벤트 처리기를 추가 하는 방법을 보여 줍니다.
 
 ##  <a name="addcolormember"></a> 문서 클래스에 색 멤버 추가
 
-원래 Scribble 응용 프로그램에 펜 색이 없기 때문에 구현을 작성 해야 합니다. 펜 색입니다. 문서를 저장 하려면 문서 클래스에 새 멤버 추가 `CscribbleDoc.`
+원래 Scribble 응용 프로그램에 펜 색이 없기 때문에 구현을 작성 해야 합니다. 문서 클래스에 새 구성원을 추가 펜 색입니다. 문서를 저장 하려면 `CscribbleDoc`합니다.
 
 ### <a name="to-add-a-color-member-to-the-document-class"></a>문서 클래스에 색 구성원을 추가 하려면
 
@@ -219,20 +211,20 @@ ms.locfileid: "46423178"
    COLORREF m_penColor;
    ```
 
-2. 모든 문서 목록에 사용자가 이미 그린 스트로크 합니다. 정의한 모든 스트로크를 `CStroke` 개체입니다. `CStroke` 클래스 펜 색에 대 한 정보를 포함 하지 않습니다. 따라서 클래스를 수정 해야 합니다. Scribdoc.h에서를 `CStroke` 클래스를 정의 후 다음 코드 줄을 추가 합니다 `m_nPenWidth` 데이터 멤버입니다.
+1. 모든 문서 목록에 사용자가 이미 그린 스트로크 합니다. 정의한 모든 스트로크를 `CStroke` 개체입니다. `CStroke` 클래스 펜 색에 대 한 정보를 포함 하지 않습니다. 따라서 클래스를 수정 해야 합니다. Scribdoc.h에서를 `CStroke` 클래스를 정의 후 다음 코드 줄을 추가 합니다 `m_nPenWidth` 데이터 멤버입니다.
 
    ```cpp
    // Pen color for the stroke
    COLORREF m_penColor;
    ```
 
-3. Scribdoc.h, 추가 새 `CStroke` 생성자 매개 변수를 가진 너비와 색을 지정 합니다. 뒤에 코드의 다음 줄을 추가 합니다 `CStroke(UINT nPenWidth);` 문입니다.
+1. Scribdoc.h, 추가 새 `CStroke` 생성자 매개 변수를 가진 너비와 색을 지정 합니다. 뒤에 코드의 다음 줄을 추가 합니다 `CStroke(UINT nPenWidth);` 문입니다.
 
    ```cpp
    CStroke(UINT nPenWidth, COLORREF penColor);
    ```
 
-4. Scribdoc.cpp에서 새 구현을 추가 `CStroke` 생성자입니다. 구현 후 다음 코드를 추가 합니다 `CStroke::CStroke(UINT nPenWidth)` 생성자입니다.
+1. Scribdoc.cpp에서 새 구현을 추가 `CStroke` 생성자입니다. 구현 후 다음 코드를 추가 합니다 `CStroke::CStroke(UINT nPenWidth)` 생성자입니다.
 
    ```cpp
    // Constructor that uses the document's current width and color
@@ -244,40 +236,40 @@ ms.locfileid: "46423178"
    }
    ```
 
-5. 두 번째 줄을 변경 합니다 `CStroke::DrawStroke` 같이 메서드.
+1. 두 번째 줄을 변경 합니다 `CStroke::DrawStroke` 같이 메서드.
 
    ```cpp
    if (!penStroke.CreatePen(PS_SOLID, m_nPenWidth, m_penColor))
    ```
 
-6. 문서 클래스에 대 한 기본 펜 색을 설정 합니다. Scribdoc.cpp에서 다음 줄을 추가 합니다 `CScribbleDoc::InitDocument`뒤의 `m_nThickWidth = 5;` 문입니다.
+1. 문서 클래스에 대 한 기본 펜 색을 설정 합니다. Scribdoc.cpp에서 다음 줄을 추가 합니다 `CScribbleDoc::InitDocument`뒤의 `m_nThickWidth = 5;` 문입니다.
 
    ```cpp
    // default pen color is black
    m_penColor = RGB(0, 0, 0);
    ```
 
-7. Scribdoc.cpp, 변경의 첫 번째 줄은 `CScribbleDoc::NewStroke` 다음 방법입니다.
+1. Scribdoc.cpp, 변경의 첫 번째 줄은 `CScribbleDoc::NewStroke` 다음 방법입니다.
 
    ```cpp
    CStroke* pStrokeItem = new CStroke(m_nPenWidth, m_penColor);
    ```
 
-8. 마지막 줄을 변경 합니다 `CScribbleDoc::ReplacePen` 메서드는 다음과 같습니다.
+1. 마지막 줄을 변경 합니다 `CScribbleDoc::ReplacePen` 메서드는 다음과 같습니다.
 
    ```cpp
    m_penCur.CreatePen(PS_SOLID, m_nPenWidth, m_penColor);
    ```
 
-9. 추가 된 `m_penColor` 이전 단계에서 멤버입니다. 이제 멤버를 설정 하는 색 단추에 대 한 이벤트 처리기를 만듭니다.
+1. 추가 된 `m_penColor` 이전 단계에서 멤버입니다. 이제 멤버를 설정 하는 색 단추에 대 한 이벤트 처리기를 만듭니다.
 
    1. 에 **리소스 뷰** 창 IDR_SCRIBBTYPE 메뉴 리소스를 엽니다.
 
-   2. 마우스 오른쪽 단추로 클릭 합니다 **Color** 메뉴 항목을 클릭 **이벤트 처리기 추가**합니다. 합니다 **이벤트 처리기 마법사** 나타납니다.
+   1. 마우스 오른쪽 단추로 클릭 합니다 **Color** 메뉴 항목을 클릭 **이벤트 처리기 추가**합니다. 합니다 **이벤트 처리기 마법사** 나타납니다.
 
-   3. 에 **클래스 목록** 마법사에서 선택 상자 **CScribbleDoc** 클릭 하 고는 **추가 및 편집** 단추입니다. 이렇게는 `CScribbleDoc::OnPenColor` 이벤트 처리기 스텁 합니다.
+   1. 에 **클래스 목록** 마법사에서 선택 상자 **CScribbleDoc** 클릭 하 고는 **추가 및 편집** 단추입니다. 이렇게는 `CScribbleDoc::OnPenColor` 이벤트 처리기 스텁 합니다.
 
-10. 에 대 한 스텁을 바꿉니다는 `CScribbleDoc::OnPenColor` 이벤트 처리기를 다음 코드로 바꿉니다.
+1. 에 대 한 스텁을 바꿉니다는 `CScribbleDoc::OnPenColor` 이벤트 처리기를 다음 코드로 바꿉니다.
 
    ```cpp
    void CScribbleDoc::OnPenColor()
@@ -295,9 +287,7 @@ ms.locfileid: "46423178"
    }
    ```
 
-11. 변경 사항을 저장한 다음 응용 프로그램을 빌드하고 실행합니다. 색 단추를 눌러 및 펜의 색을 변경할 수 있어야 합니다.
-
-[[섹션에서는](#top)]
+1. 변경 사항을 저장한 다음 응용 프로그램을 빌드하고 실행합니다. 색 단추를 눌러 및 펜의 색을 변경할 수 있어야 합니다.
 
 ##  <a name="initpensave"></a> 펜을 초기화 하 고 기본 설정 저장
 
@@ -337,21 +327,19 @@ ms.locfileid: "46423178"
    pThickComboBox->SelectItem(0);
    ```
 
-2. 파일을 그릴 색을 저장 합니다. Scribdoc.cpp, 다음 문을 추가 합니다 `CStroke::Serialize` 메서드 뒤를 `ar << (WORD)m_nPenWidth;` 문입니다.
+1. 파일을 그릴 색을 저장 합니다. Scribdoc.cpp, 다음 문을 추가 합니다 `CStroke::Serialize` 메서드 뒤를 `ar << (WORD)m_nPenWidth;` 문입니다.
 
    ```cpp
    ar << (COLORREF)m_penColor;
-    ```
+   ```
 
-3. 파일에서 그리기 색을 마지막으로 로드 합니다. 에 코드의 다음 줄을 추가 합니다 `CStroke::Serialize` 메서드 뒤를 `m_nPenWidth = w;` 문입니다.
+1. 파일에서 그리기 색을 마지막으로 로드 합니다. 에 코드의 다음 줄을 추가 합니다 `CStroke::Serialize` 메서드 뒤를 `m_nPenWidth = w;` 문입니다.
 
    ```cpp
    ar >> m_penColor;
    ```
 
-4. 이제 색에서 scribble 및 드로잉을 파일로 저장 합니다.
-
-[[섹션에서는](#top)]
+1. 이제 색에서 scribble 및 드로잉을 파일로 저장 합니다.
 
 ## <a name="conclusion"></a>결론
 
