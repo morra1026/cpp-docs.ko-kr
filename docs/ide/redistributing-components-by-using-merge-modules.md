@@ -15,19 +15,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d816d932ce518e006e5537075fe4ac7782362ad4
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2f4dda75533b2c16405485f8bb2f3ab9982033ce
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43206986"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46425563"
 ---
 # <a name="redistributing-components-by-using-merge-modules"></a>병합 모듈을 사용하여 구성 요소 재배포
-Visual Studio에는 응용 프로그램으로 재배포할 권한이 있는 각 Visual C++ 구성 요소에 대한 [병합 모듈](/windows/desktop/Msi/about-merge-modules)이 포함됩니다. 병합 모듈이 Windows Installer 설치 파일에서 컴파일되면 특정 플랫폼이 있는 컴퓨터에 특정 DLL을 배포할 수 있습니다. 설치 파일에서 병합 모듈을 응용 프로그램의 필수 구성 요소로 지정합니다. Visual Studio가 설치되면 병합 모듈이 \Program Files\Common Files\Merge Modules\\\에 설치됩니다. (디버그가 아닌 버전의 Visual C++ DLL만 재배포할 수 있습니다.) 자세한 내용과 재배포 권한이 있는 병합 모듈 목록 링크는 [Visual C++ 파일 재배포](../ide/redistributing-visual-cpp-files.md)를 참조하세요.  
-  
- 병합 모듈을 사용하여 재배포 가능 Visual C++ DLL을 %SYSTEMROOT%\system32\ 폴더에 설치할 수 있습니다. (Visual Studio 자체가 이 기법을 사용합니다.) 그러나 설치하는 사용자가 관리자 권한이 없는 경우 이 폴더에 설치되지 않습니다.  
-  
- 응용 프로그램을 제공할 필요가 없고 둘 이상의 DLL 버전에 대한 종속성이 없는 경우를 제외하고 병합 모듈을 사용하지 않는 것이 좋습니다. 동일한 DLL의 여러 버전에 대한 병합 모듈은 하나의 설치 관리자에 포함될 수 없고 병합 모듈은 응용 프로그램에 관계없이 DLL을 제공하기 어렵습니다. 대신에 Visual C++ 재배포 가능 패키지를 설치하는 것이 좋습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [Visual C++ 파일 재배포](../ide/redistributing-visual-cpp-files.md)
+
+Visual Studio에는 응용 프로그램으로 재배포할 권한이 있는 각 Visual C++ 구성 요소에 대한 [병합 모듈](/windows/desktop/Msi/about-merge-modules)이 포함됩니다. 병합 모듈이 Windows Installer 설치 파일에서 컴파일되면 특정 플랫폼이 있는 컴퓨터에 특정 DLL을 배포할 수 있습니다. 설치 파일에서 병합 모듈을 응용 프로그램의 필수 구성 요소로 지정합니다. Visual Studio가 설치되면 병합 모듈이 \Program Files\Common Files\Merge Modules\\\에 설치됩니다. (디버그가 아닌 버전의 Visual C++ DLL만 재배포할 수 있습니다.) 자세한 내용과 재배포 권한이 있는 병합 모듈 목록 링크는 [Visual C++ 파일 재배포](../ide/redistributing-visual-cpp-files.md)를 참조하세요.
+
+병합 모듈을 사용하여 재배포 가능 Visual C++ DLL을 %SYSTEMROOT%\system32\ 폴더에 설치할 수 있습니다. (Visual Studio 자체가 이 기법을 사용합니다.) 그러나 설치하는 사용자가 관리자 권한이 없는 경우 이 폴더에 설치되지 않습니다.
+
+응용 프로그램을 제공할 필요가 없고 둘 이상의 DLL 버전에 대한 종속성이 없는 경우를 제외하고 병합 모듈을 사용하지 않는 것이 좋습니다. 동일한 DLL의 여러 버전에 대한 병합 모듈은 하나의 설치 관리자에 포함될 수 없고 병합 모듈은 응용 프로그램에 관계없이 DLL을 제공하기 어렵습니다. 대신에 Visual C++ 재배포 가능 패키지를 설치하는 것이 좋습니다.
+
+## <a name="see-also"></a>참고 항목
+
+[Visual C++ 파일 재배포](../ide/redistributing-visual-cpp-files.md)

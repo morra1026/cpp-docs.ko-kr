@@ -15,14 +15,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed8a8ab088f3fbb10b5f477d125dbf3f2a7ac932
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 8091bbba7dcee344677c54a7944708679f2ff867
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42578537"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46411848"
 ---
 # <a name="upgrading-projects-from-earlier-versions-of-visual-c"></a>이전 버전의 Visual C++에서 프로젝트 업그레이드
+
 대부분의 경우 Visual Studio 이전 버전에서 만든 프로젝트를 열 수 있습니다. 그러나 이를 위해 Visual Studio는 프로젝트를 업그레이드합니다. 이 업그레이드된 프로젝트를 저장하면 이전 버전에서 열 수 없습니다.  
   
 > [!IMPORTANT]
@@ -44,7 +45,7 @@ ms.locfileid: "42578537"
   
 ## <a name="see-also"></a>참고 항목  
 
-[빌드 시스템 변경 내용](../build/build-system-changes.md)  
-[Visual Studio 2017의 Visual C++에 대한 새로운 기능](../what-s-new-for-visual-cpp-in-visual-studio.md) 
-[Visual C++ 변경 기록 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)   
+[빌드 시스템 변경 내용](../build/build-system-changes.md)<br/>
+[Visual Studio 2017의 Visual C++에 대한 새로운 기능](../what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
+[Visual C++ 변경 기록 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>
 [비표준 동작](../cpp/nonstandard-behavior.md)

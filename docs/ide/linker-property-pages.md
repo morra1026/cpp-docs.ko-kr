@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2cec232bb4e4f2f6ac1ab9af703b368eec0ba5dd
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: eec1620d9ae84e5c0b957b7426ad388c70626813
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33331521"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46379218"
 ---
 # <a name="linker-property-pages"></a>링커 속성 페이지
 
@@ -65,5 +65,5 @@ Visual Studio의 등록은 일반적으로 HKEY_CLASSES_ROOT(HKCR)에서 수행�
 
 ## <a name="see-also"></a>참고 항목
 
-[옵션 대화 상자, 프로젝트 및 솔루션, VC++ 프로젝트 설정](/visualstudio/ide/reference/vcpp-project-settings-projects-and-solutions-options-dialog-box)  
-[속성 페이지](../ide/property-pages-visual-cpp.md)  
+[옵션 대화 상자, 프로젝트 및 솔루션, VC++ 프로젝트 설정](/visualstudio/ide/reference/vcpp-project-settings-projects-and-solutions-options-dialog-box)<br>
+[속성 페이지](../ide/property-pages-visual-cpp.md)

@@ -20,19 +20,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80ac3479338dcb7f6be9e7e5f3f150cc8e15a9a9
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 45b62d5ce8f49b023721cf7323dc42e1c65c2109
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33339984"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46396690"
 ---
 # <a name="visual-c-project-types"></a>Visual C++ 프로젝트 형식
 
 프로젝트 템플릿을 사용하면 만들려는 프로젝트의 종류에 적합한 기본 프로그램 구조, 메뉴, 도구 모음, 아이콘, 참조 및 `#include` 문을 만들 수 있습니다. Visual Studio는 여러 종류의 Visual C++ 프로젝트 템플릿을 포함하며 대부분의 템플릿에 대해 마법사를 제공하므로 프로젝트를 만들면서 사용자 지정할 수 있습니다. 프로젝트를 만든 직후에 응용 프로그램을 빌드하고 실행할 수 있으므로, 응용 프로그램을 개발하면서 간간이 빌드하는 것이 좋습니다.
 
-프로젝트를 만드는 데 템플릿을 사용할 필요는 없지만 대부분의 경우에는 템플릿을 사용하는 것이 더 효율적입니다. 프로젝트 파일과 구조를 새로 만드는 것보다는 제공된 프로젝트 파일과 구조를 수정하는 것이 더 쉽기 때문입니다.  
-  
+프로젝트를 만드는 데 템플릿을 사용할 필요는 없지만 대부분의 경우에는 템플릿을 사용하는 것이 더 효율적입니다. 프로젝트 파일과 구조를 새로 만드는 것보다는 제공된 프로젝트 파일과 구조를 수정하는 것이 더 쉽기 때문입니다.
+
 > [!NOTE]
 > C++ 프로젝트 템플릿을 사용하여 C 언어 프로젝트를 만들 수 있습니다. 생성된 프로젝트에서 파일 이름 확장명이 .cpp인 파일을 찾아 확장명을 .c로 변경합니다. 그런 다음 솔루션이 아닌 프로젝트의 **프로젝트 속성** 페이지에서 **구성 속성**, **C/C++** 를 차례로 확장하고 **고급**을 선택합니다. **컴파일 옵션** 설정을 **C 코드로 컴파일(/TC)** 로 변경합니다.
 
@@ -42,8 +42,8 @@ Visual Studio에 포함된 프로젝트 템플릿은 설치한 제품 버전 및
 
 ### <a name="windows-desktop"></a>Windows 바탕 화면
 
-|프로젝트 템플릿|설명|  
-|----------------------|-----------------------------| 
+|프로젝트 템플릿|설명|
+|----------------------|-----------------------------|
 |[Windows 콘솔 응용 프로그램](../windows/creating-a-console-application.md)|Windows 콘솔 응용 프로그램을 만드는 프로젝트입니다.|
 |[Windows 데스크톱 응용 프로그램](../windows/walkthrough-creating-windows-desktop-applications-cpp.md)|Windows 데스크톱(Win32) 응용 프로그램을 만드는 프로젝트입니다.|
 |[동적 연결 라이브러리](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)|DLL(동적 연결 라이브러리)을 만드는 프로젝트입니다.|
@@ -104,4 +104,4 @@ C++에서 Windows 유니버설 앱의 개요는 [유니버설 Windows 앱(C++)](
 
 ## <a name="see-also"></a>참고 항목
 
-[응용 프로그램 마법사를 사용하여 데스크톱 프로젝트 만들기](../ide/creating-desktop-projects-by-using-application-wizards.md)   
+[응용 프로그램 마법사를 사용하여 데스크톱 프로젝트 만들기](../ide/creating-desktop-projects-by-using-application-wizards.md)

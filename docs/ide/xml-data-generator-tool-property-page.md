@@ -18,33 +18,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74c95c8e8364630416025242633126f91cafbc30
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: bd101d5cbea106c356fcfab5b556dc3f49fe8e87
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45699936"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46385042"
 ---
 # <a name="xml-data-generator-tool-property-page"></a>XML 데이터 생성기 도구 속성 페이지
-**XML 데이터 생성기 도구** 속성 페이지는 프로젝트에 데이터 집합을 추가할 때 사용할 수 있습니다.  
-  
-**XML 데이터 생성기 도구** 속성 페이지에는 다음 속성이 포함되어 있습니다.  
-  
+
+**XML 데이터 생성기 도구** 속성 페이지는 프로젝트에 데이터 집합을 추가할 때 사용할 수 있습니다.
+
+**XML 데이터 생성기 도구** 속성 페이지에는 다음 속성이 포함되어 있습니다.
+
 - **출력 파일**
 
-   사용할 출력 파일 이름을 지정합니다.  
-  
+   사용할 출력 파일 이름을 지정합니다.
+
 - **시작 배너 표시 안 함**
 
-   시작 배너 및 정보 메시지를 표시하지 않습니다.  
-  
+   시작 배너 및 정보 메시지를 표시하지 않습니다.
+
 - **프록시 생성 언어**
 
-   관리 코드를 내보낼지 여부를 결정합니다.  
-  
-**XML 데이터 생성기 도구** 속성 페이지에 액세스하는 방법에 대한 자세한 내용은 [프로젝트 속성 작업](../ide/working-with-project-properties.md)을 참조하세요.  
-  
-이 개체의 멤버에 프로그래밍 방식으로 액세스하는 방법에 대한 자세한 내용은 <xref:Microsoft.VisualStudio.VCProjectEngine.VCXMLDataGeneratorTool>을 참조하세요.  
-  
-## <a name="see-also"></a>참고 항목  
- [속성 페이지](../ide/property-pages-visual-cpp.md)
+   관리 코드를 내보낼지 여부를 결정합니다.
+
+**XML 데이터 생성기 도구** 속성 페이지에 액세스하는 방법에 대한 자세한 내용은 [프로젝트 속성 작업](../ide/working-with-project-properties.md)을 참조하세요.
+
+이 개체의 멤버에 프로그래밍 방식으로 액세스하는 방법에 대한 자세한 내용은 <xref:Microsoft.VisualStudio.VCProjectEngine.VCXMLDataGeneratorTool>을 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+[속성 페이지](../ide/property-pages-visual-cpp.md)

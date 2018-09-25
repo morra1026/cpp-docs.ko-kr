@@ -12,14 +12,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb8f7d4835fe50dba2cb7eb6d4e7cb6a54efdbba
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: e204e8dcc0d846294393edf9bf73b86360b40de2
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42578162"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46421988"
 ---
 # <a name="floating-point-migration-issues"></a>부동 소수점 마이그레이션 문제  
+
   
 프로젝트를 최신 버전의 Visual Studio로 업그레이드할 때 특정 부동 소수점 연산의 결과가 변경될 수 있습니다. 일반적으로 이 문제는 두 가지 이유 즉, 사용 가능한 프로세서를 더 효율적으로 활용하는 코드 생성 변경, CRT(C 런타임 라이브러리)에서 수학 함수에 사용된 알고리즘 변경 또는 버그 수정 중 한 가지 이유로 인해 발생합니다. 일반적으로 언어 표준에 지정된 범위 내에서는 새 결과가 올바릅니다. 변경된 내용과 함수에서 이전에 얻은 것과 동일한 결과를 구하는 방법을 알아보려면 계속 읽어보세요.  
 
@@ -41,6 +42,6 @@ Visual Studio 2015에서 수학 함수를 유니버설 CRT로 이동하면서 �
   
 ## <a name="see-also"></a>참고 항목  
   
-[이전 버전의 Visual C++에서 프로젝트 업그레이드](upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
-[잠재적인 업그레이드 문제 개요(Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)  
+[이전 버전의 Visual C++에서 프로젝트 업그레이드](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
+[잠재적인 업그레이드 문제 개요(Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>
 [Visual C++ 변경 기록 2003 - 2015](visual-cpp-change-history-2003-2015.md)  

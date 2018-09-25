@@ -12,14 +12,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 019e63009706fd5d0ab22044642449c5bce3c3a6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 84aded46176c1c286ce5270254a0455dfce39d5d
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222383"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427880"
 ---
 # <a name="porting-guide-spy"></a>포팅 가이드: Spy++
+
 이 포팅 사례 연구는 일반적인 포팅 프로젝트, 발생할 수 있는 문제 유형 및 포팅 문제를 다루기 위한 몇 가지 일반적인 팁과 트릭에 대한 아이디어를 제공하도록 설계되었습니다. 프로젝트 포팅 경험은 코드의 세부 사항에 따라 달라지므로 결정적인 포팅 가이드는 아닙니다.  
   
 ## <a name="spy"></a>Spy++  
@@ -74,7 +75,7 @@ C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxv_w32.h
   
 Windows XP는 Microsoft에서 더 이상 지원되지 않으므로 Visual Studio 2015에서 대상으로 지정할 수는 있지만 응용 프로그램에서 지원을 단계적으로 중단하고 사용자가 새 버전의 Windows를 채택하도록 장려해야 합니다.  
   
- 오류를 제거하려면 **프로젝트 속성** 설정을 현재 대상으로 지정하려는 가장 낮은 Windows 버전으로 업데이트하여 WINVER을 정의합니다. 다양한 Windows 릴리스에 대한 값 테이블은 [여기](/windows/desktop/WinProg/using-the-windows-headers)서 확인할 수 있습니다.  
+오류를 제거하려면 **프로젝트 속성** 설정을 현재 대상으로 지정하려는 가장 낮은 Windows 버전으로 업데이트하여 WINVER을 정의합니다. 다양한 Windows 릴리스에 대한 값 테이블은 [여기](/windows/desktop/WinProg/using-the-windows-headers)서 확인할 수 있습니다.  
   
 stdafx.h 파일에 이러한 매크로 정의 중 일부가 포함되어 있었습니다.  
   
@@ -551,7 +552,7 @@ wsprintf(szTmp, _T("%d.%2.2d.%4.4d"), rmj, rmm, rup);
   
 _T 매크로는 문자열 리터럴이 MBCS 또는 UNICODE 설정에 따라 **char** 문자열이나 **wchar_t** 문자열로 컴파일되게 하는 효과가 있습니다. Visual Studio에서 모든 문자열을 _T로 바꾸려면 먼저 **빠른 바꾸기**(키보드: **Ctrl**+**F**) 상자 또는 **파일에서 바꾸기**(키보드: **Ctrl**+**Shift**+**H**)를 연 다음, **정규식 사용** 확인란을 선택합니다. `((\".*?\")|('.+?'))`를 검색 텍스트로 입력하고 `_T($1)`를 바꿀 텍스트로 입력합니다. _T 매크로가 일부 문자열 앞뒤에 이미 있는 경우 이 절차에서 다시 추가하며, `#include`를 사용하는 경우와 같이 _T를 원하지 않는 경우도 있으므로 **모두 바꾸기** 대신 **다음 찾기**를 사용하는 것이 가장 좋습니다.  
   
- 이 특정 함수 [wsprintf](/windows/desktop/api/winuser/nf-winuser-wsprintfa)는 실제로 Windows 헤더에서 정의되며, 해당 설명서에서 가능한 버퍼 오버런으로 인해 사용하지 않도록 권장합니다. `szTmp` 버퍼에 대한 크기가 지정되지 않으므로 함수에서 버퍼가 기록되는 모든 데이터를 포함할 수 있는지 확인할 방법이 없습니다. 보안 CRT로 포팅하는 방법에 대한 다음 섹션을 참조하세요. 여기서는 다른 유사한 문제를 해결합니다. 결국 [_stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)로 바꾸었습니다.  
+이 특정 함수 [wsprintf](/windows/desktop/api/winuser/nf-winuser-wsprintfa)는 실제로 Windows 헤더에서 정의되며, 해당 설명서에서 가능한 버퍼 오버런으로 인해 사용하지 않도록 권장합니다. `szTmp` 버퍼에 대한 크기가 지정되지 않으므로 함수에서 버퍼가 기록되는 모든 데이터를 포함할 수 있는지 확인할 방법이 없습니다. 보안 CRT로 포팅하는 방법에 대한 다음 섹션을 참조하세요. 여기서는 다른 유사한 문제를 해결합니다. 결국 [_stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)로 바꾸었습니다.  
   
 유니코드로 변환할 때 표시되는 다른 일반적인 오류는 다음과 같습니다.  
   
@@ -680,5 +681,5 @@ int CPerfTextDataBase::NumStrings(LPCTSTR mszStrings) const
   
 ## <a name="see-also"></a>참고 항목  
 
-[포팅 및 업그레이드: 예제 및 사례 연구](../porting/porting-and-upgrading-examples-and-case-studies.md)   
+[포팅 및 업그레이드: 예제 및 사례 연구](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
 [이전 사례 연구: COM Spy](../porting/porting-guide-com-spy.md)

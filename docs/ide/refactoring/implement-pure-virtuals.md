@@ -10,17 +10,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: afce516f2718a76658846ed4f992aeabff75330b
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 234ae9a67bcbc60ea156fbacb5169d0bd1573a91
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33328028"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46442762"
 ---
 # <a name="implement-pure-virtuals"></a>순수 가상 구현
-**대상:** 클래스의 모든 순수 가상 메서드를 구현하는 데 필요한 코드를 즉시 생성할 수 있습니다. 
+**대상:** 클래스의 모든 순수 가상 메서드를 구현하는 데 필요한 코드를 즉시 생성할 수 있습니다.
 
-**시기:** 순수 가상 함수가 있는 클래스에서 상속받으려는 경우.  
+**시기:** 순수 가상 함수가 있는 클래스에서 상속받으려는 경우.
 
 **이유:** 모든 순수 가상 함수를 하나씩 수동으로 구현할 수 있지만 이 기능은 모든 메서드 시그니처를 자동으로 생성합니다.
 

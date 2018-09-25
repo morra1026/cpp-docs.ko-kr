@@ -15,12 +15,12 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 346e83461fd9dbfb7635b85e8765d241564d3157
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 88f5ef5379d597a81456dab7f3dd28a73a4df84b
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45708008"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394922"
 ---
 # <a name="configure-a-linux-cmake-project"></a>Linux CMake 프로젝트 구성
 
@@ -164,5 +164,5 @@ cmake -E capabilities
 
 ## <a name="see-also"></a>참고 항목
 
-[프로젝트 속성 사용](../ide/working-with-project-properties.md)  
+[프로젝트 속성 사용](../ide/working-with-project-properties.md)<br/>
 [Visual C++용 CMake 도구](../ide/cmake-tools-for-visual-cpp.md)  

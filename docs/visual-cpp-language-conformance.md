@@ -11,12 +11,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 70fc4705b6e150978812563fcde9e0f4d6b3cea1
-ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
+ms.openlocfilehash: 4a40738b5a360e521ff890ef53240609a9afde32
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34246236"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46388983"
 ---
 # <a name="visual-c-language-conformance"></a>Visual C++ 언어 규칙
 
@@ -308,10 +308,10 @@ __VS 2017 15.7__는 Visual Studio 2017 버전 15.7에서 지원되는 기능을 
 
 ## <a name="see-also"></a>참고 항목
 
-[C++ 언어 참조](cpp/cpp-language-reference.md)  
-[C++ 표준 라이브러리](standard-library/cpp-standard-library-reference.md)  
-[Visual Studio 2017의 C++ 규칙 향상](cpp-conformance-improvements-2017.md)  
-[Visual Studio 2017의 Visual C++에 대한 새로운 기능](what-s-new-for-visual-cpp-in-visual-studio.md)  
-[2003~ 2015 Visual C++ 주요 변경 내용](porting/visual-cpp-change-history-2003-2015.md)  
-[Visual C++ 2003 ~ 2015의 새로운 기능](porting/visual-cpp-what-s-new-2003-through-2015.md)  
+[C++ 언어 참조](cpp/cpp-language-reference.md)<br/>
+[C++ 표준 라이브러리](standard-library/cpp-standard-library-reference.md)<br/>
+[Visual Studio 2017의 C++ 규칙 향상](cpp-conformance-improvements-2017.md)<br/>
+[Visual Studio 2017의 Visual C++에 대한 새로운 기능](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
+[2003~ 2015 Visual C++ 주요 변경 내용](porting/visual-cpp-change-history-2003-2015.md)<br/>
+[Visual C++ 2003 ~ 2015의 새로운 기능](porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
 [Visual C++ 팀 블로그](https://blogs.msdn.microsoft.com/vcblog/)  
