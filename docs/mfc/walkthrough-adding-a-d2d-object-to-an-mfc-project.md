@@ -1,7 +1,7 @@
 ---
 title: '연습: MFC 프로젝트에 D2D 개체 추가 | Microsoft Docs'
 ms.custom: ''
-ms.date: 06/19/2018
+ms.date: 09/20/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -15,24 +15,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 87e1c696f3da374d7b71e1b24e3a8bd3ebfe41b9
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 6117b17421e37238c9bc585677eb7b0c8ed557fb
+ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36954873"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47169660"
 ---
 # <a name="walkthrough-adding-a-d2d-object-to-an-mfc-project"></a>연습: MFC 프로젝트에 D2D 개체 추가
 
-이 연습에서는 기본 Direct2D를 추가 하는 방법에 설명 (D2D) Visual c + +, Microsoft Foundation 클래스 라이브러리 (MFC) 프로젝트 개체를 출력 하는 응용 프로그램에 다음 프로젝트를 빌드합니다 "Hello, world" 그라데이션 배경의 합니다.
+이 연습에서는 기본 Direct2D를 추가 하는 방법 (D2D) Visual c + +, Microsoft Foundation 클래스 라이브러리 (MFC) 프로젝트 개체를 출력 하는 응용 프로그램에는 프로젝트를 빌드합니다 "Hello, world"의 배경에 그라데이션 효과입니다.
 
-이러한 작업을 수행 하는 방법을 보여 줍니다.
+이 연습에서는 이러한 작업을 수행 하는 방법을 보여 줍니다.
 
 - MFC 응용 프로그램을 만듭니다.
 
 - 단색 브러시 및 선형 그라데이션 브러시를 만듭니다.
 
-- 그라데이션 브러시를 수정 하 여 창 크기를 조정할 때 적절 하 게 변경 합니다.
+- 그라데이션 브러시를 수정 하는 창 크기를 조정할 때 적절 하 게 변경 합니다.
 
 - D2D 그리기 처리기를 구현 합니다.
 
@@ -42,19 +42,19 @@ ms.locfileid: "36954873"
 
 ## <a name="prerequisites"></a>전제 조건
 
-이 연습을 완료 하려면 Visual Studio와 함께 설치 된 있어야는 **c + + 데스크톱 개발** 작업과 선택적 **x86 및 x64 Visual c + + MFC** 구성 요소입니다.
+Visual Studio를 설치 하려면이 연습을 완료 해야 합니다 **c + +를 사용한 데스크톱 개발** 워크 로드 및 선택적 **x86 및 x64 용 Visual c + + MFC** 구성 요소입니다.
 
 ## <a name="to-create-an-mfc-application"></a>MFC 응용 프로그램을 만들려면
 
-1. 에 **파일** 메뉴에서 **새로** 선택한 후 **프로젝트**합니다.
+1. 에 **파일** 메뉴에서 **새로 만들기** 를 선택한 후 **프로젝트**합니다.
 
-2. 에 **새 프로젝트** 아래 왼쪽된 창에서 대화 상자에서 **설치 된 템플릿**를 확장 하 고 **Visual c + +** 선택한 후 **MFC**합니다. 가운데 창에서 선택 **MFC 응용 프로그램**합니다. 에 **이름** 상자에서 입력 *MFCD2DWalkthrough*합니다. **확인**을 선택합니다.
+1. 에 **새 프로젝트** 대화 상자에서 왼쪽 창의 **설치 된 템플릿**를 확장 **Visual c + +** 선택한 후 **MFC**. 가운데 창에서 선택 **MFC 응용 프로그램**합니다. 에 **이름을** 상자에 입력 *MFCD2DWalkthrough*합니다. **확인**을 선택합니다.
 
-3. 에 **MFC 응용 프로그램 마법사**, 선택 **마침** 모든 설정을 변경 하지 않고 있습니다.
+1. 에 **MFC 응용 프로그램 마법사**, 선택 **마침** 설정을 변경 하지 않고 있습니다.
 
 ## <a name="to-create-a-solid-color-brush-and-a-linear-gradient-brush"></a>단색 브러시 및 선형 그라데이션 브러시를 만들려면
 
-1. **솔루션 탐색기**에 **MFCD2DWalkthrough** 프로젝트에 **헤더 파일** 폴더를 열고 MFCD2DWalkthroughView.h 합니다. 이 코드를 추가 하는 `CMFCD2DWalkthroughView` 세 개의 데이터 변수를 만드는 클래스:
+1. **솔루션 탐색기**를 **MFCD2DWalkthrough** 프로젝트를 합니다 **헤더 파일** 폴더를 열고 MFCD2DWalkthroughView.h 합니다. 이 코드를 추가 합니다 `CMFCD2DWalkthroughView` 세 개의 데이터 변수를 만들려면 클래스:
 
    ```cpp
    CD2DTextFormat* m_pTextFormat;
@@ -64,7 +64,7 @@ ms.locfileid: "36954873"
 
    파일을 저장 하 고 닫습니다.
 
-2. 에 **소스 파일** 폴더를 열고 MFCD2DWalkthroughView.cpp 합니다. 에 대 한 생성자에는 `CMFCD2DWalkthroughView` 클래스에이 코드를 추가 합니다.
+1. 에 **소스 파일** 폴더를 열고 MFCD2DWalkthroughView.cpp 합니다. 생성자에는 `CMFCD2DWalkthroughView` 클래스에이 코드를 추가 합니다.
 
    ```cpp
    // Enable D2D support for this window:
@@ -108,15 +108,15 @@ ms.locfileid: "36954873"
 
    파일을 저장 하 고 닫습니다.
 
-## <a name="to-modify-the-gradient-brush-so-that-it-will-change-appropriately-when-the-window-is-resized"></a>그라데이션 브러시를 수정 하 여 창 크기를 조정할 때 적절 하 게 변경 하려면
+## <a name="to-modify-the-gradient-brush-so-that-it-will-change-appropriately-when-the-window-is-resized"></a>창 크기를 조정할 때 적절히 변경 되도록 그라데이션 브러시를 수정 하려면
 
 1. 에 **프로젝트** 메뉴 선택 **클래스 마법사**합니다.
 
-2. 에 **MFC 클래스 마법사**아래 **클래스 이름**선택, `CMFCD2DWalkthroughView`합니다.
+1. 에 **MFC 클래스 마법사**아래에 있는 **클래스 이름을**를 선택 `CMFCD2DWalkthroughView`합니다.
 
-3. 에 **메시지** 탭에 **메시지** 상자 `WM_SIZE` 선택한 후 **처리기 추가**합니다. 이 작업을 추가 `OnSize` 메시지 처리기는 `CMFCD2DWalkthroughView` 클래스입니다.
+1. 에 **메시지** 탭의 **메시지** 상자에서 `WM_SIZE` 선택한 후 **처리기 추가**합니다. 이 작업을 추가 합니다 `OnSize` 메시지 처리기를 `CMFCD2DWalkthroughView` 클래스.
 
-4. 에 **기존 처리기** 상자 `OnSize`합니다. 선택 **코드 편집** 표시 하는 `CMFCD2DWalkthroughView::OnSize` 메서드. 메서드의 끝에 다음 코드를 추가 합니다.
+1. 에 **기존 처리기** 상자에서 `OnSize`합니다. 선택할 **코드 편집** 표시할는 `CMFCD2DWalkthroughView::OnSize` 메서드. 메서드 끝에 다음 코드를 추가 합니다.
 
    ```cpp
    m_pLinearGradientBrush->SetEndPoint(CPoint(cx, cy));
@@ -128,13 +128,13 @@ ms.locfileid: "36954873"
 
 1. 에 **프로젝트** 메뉴 선택 **클래스 마법사**합니다.
 
-2. 에 **MFC 클래스 마법사**아래 **클래스 이름**선택, `CMFCD2DWalkthroughView`합니다.
+1. 에 **MFC 클래스 마법사**아래에 있는 **클래스 이름을**를 선택 `CMFCD2DWalkthroughView`합니다.
 
-3. 에 **메시지** 탭에서 선택 **사용자 정의 메시지 추가**합니다.
+1. 에 **메시지** 탭에서 **사용자 지정 메시지 추가**합니다.
 
-4. 에 **사용자 정의 메시지 추가** 대화 상자는 **사용자 지정 Windows 메시지** 상자에 입력 합니다 *AFX_WM_DRAW2D*합니다. 에 **메시지 처리기 이름은** 상자에서 입력 *OnDraw2D*합니다. 선택 된 **등록 메시지** 옵션 선택한 후 **확인**합니다. 이 작업을 추가 하려면 AFX_WM_DRAW2D 메시지에 대 한 메시지 처리기는 `CMFCD2DWalkthroughView` 클래스입니다.
+1. 에 **사용자 지정 메시지 추가** 대화 상자의 합니다 **사용자 지정 Windows 메시지** 상자에 입력 *AFX_WM_DRAW2D*합니다. 에 **메시지 처리기 이름은** 상자에 입력 *OnDraw2D*합니다. 선택 된 **등록 된 메시지** 옵션을 선택한 **확인**합니다. 이 작업은 AFX_WM_DRAW2D 메시지에 대 한 메시지 처리기를 추가 합니다 `CMFCD2DWalkthroughView` 클래스입니다.
 
-5. 에 **기존 처리기** 상자 `OnDraw2D`합니다. 선택 **코드 편집** 표시 하는 `CMFCD2DWalkthroughView::OnDraw2D` 메서드. 에 대 한이 코드를 사용 하 여 `CMFCD2DWalkthroughView::OnDrawD2D` 메서드:
+1. 에 **기존 처리기** 상자에서 `OnDraw2D`합니다. 선택할 **코드 편집** 표시할는 `CMFCD2DWalkthroughView::OnDraw2D` 메서드. 이 코드를 사용 하 여 `CMFCD2DWalkthroughView::OnDrawD2D` 메서드:
 
    ```cpp
    afx_msg LRESULT CMFCD2DWalkthroughView::OnDraw2D(
@@ -163,8 +163,8 @@ ms.locfileid: "36954873"
 
 ## <a name="to-verify-the-results"></a>결과 확인 하려면
 
-- 응용 프로그램을 빌드 및 실행합니다. 창의 크기를 조정할 때 변경 되는 그라데이션 사각형이 필요 합니다. "Hello World!" 사각형의 중앙에 표시 됩니다.
+응용 프로그램을 빌드 및 실행합니다. 창 크기를 조정할 때 변경 되는 그라데이션 사각형이 있어야 합니다. "Hello World!" 사각형의 가운데에 표시 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-- [연습](../mfc/walkthroughs-mfc.md)
+[연습](../mfc/walkthroughs-mfc.md)
