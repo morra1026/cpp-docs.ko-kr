@@ -16,12 +16,12 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8d495843d7979ace1d23710eb50c910e9089cf9c
-ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
+ms.openlocfilehash: a85789123b1dd9129916683c08484bf6607a0687
+ms.sourcegitcommit: 9799816278ffa3e6b64199862ec57143c1b1ea56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029699"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47188121"
 ---
 # <a name="walkthrough-creating-and-using-a-static-library-c"></a>연습: 정적 라이브러리 만들기 및 사용(C++)
 
@@ -60,7 +60,7 @@ C++ 언어의 기본적인 사항을 알고 있어야 합니다.
 
         1. 아래 **응용 프로그램 종류**를 선택 **정적 라이브러리 (.lib)** 합니다.
 
-        1. 아래 **Additioal 옵션**의 선택을 취소 합니다 **미리 컴파일된 헤더** 확인란 합니다.
+        1. 아래 **추가 옵션**의 선택을 취소 합니다 **미리 컴파일된 헤더** 확인란 합니다.
 
         1. 선택할 **확인** 프로젝트를 만듭니다.
 
@@ -108,7 +108,7 @@ C++ 언어의 기본적인 사항을 알고 있어야 합니다.
 
         1. 아래 **응용 프로그램 종류**를 선택 **콘솔 응용 프로그램 (.exe)** 합니다.
 
-        1. 아래 **Additioal 옵션**의 선택을 취소 합니다 **미리 컴파일된 헤더** 확인란 합니다.
+        1. 아래 **추가 옵션**의 선택을 취소 합니다 **미리 컴파일된 헤더** 확인란 합니다.
 
         1. 선택할 **확인** 프로젝트를 만듭니다.
 
