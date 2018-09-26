@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 825551f04dc4cf026d4d1e124a42b279ee20fadf
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fd9bb058220a2e84c98069e8804473ef0da1a422
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32418538"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056367"
 ---
 # <a name="security-enhanced-versions-of-crt-functions"></a>보안이 강화된 CRT 함수 버전
 
@@ -110,4 +110,5 @@ ms.locfileid: "32418538"
 |[wctomb, _wctomb_l](../c-runtime-library/reference/wctomb-wctomb-l.md)|[wctomb_s, _wctomb_s_l](../c-runtime-library/reference/wctomb-s-wctomb-s-l.md)|와이드 문자를 해당 멀티바이트 문자로 변환합니다.|
 
 ## <a name="see-also"></a>참고 항목
- [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)
+
+[CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)
