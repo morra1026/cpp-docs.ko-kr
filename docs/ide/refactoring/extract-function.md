@@ -10,17 +10,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7fc4d48c972bca9352f326085574e4cf4df83aea
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 8ca75ca3b69fb175bea160d7f2a35d36416ea2f5
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33333159"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46441371"
 ---
 # <a name="extract-function"></a>함수 추출
 **대상:** 코드 조각을 고유한 함수로 변환할 수 있습니다.
 
-**시기:** 다른 함수에서 호출해야 하는 일부 함수에 기존 코드 조각이 있습니다.  
+**시기:** 다른 함수에서 호출해야 하는 일부 함수에 기존 코드 조각이 있습니다.
 
 **이유:** 해당 코드를 복사하여 붙여넣을 수 있지만 중복이 발생합니다.  더 나은 솔루션은 다른 함수에서 자유롭게 호출할 수 있는 고유한 함수로 해당 조각을 리팩터링하는 것입니다.
 
@@ -39,7 +39,7 @@ ms.locfileid: "33333159"
      * 코드를 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, 상황에 맞는 메뉴에서 **함수 추출(실험적)** 을 선택합니다.
      * 왼쪽 여백에 나타나는 ![전구](images/bulb.png) 아이콘을 클릭하고, 상황에 맞는 메뉴에서 **함수 추출(실험적)** 을 선택합니다.
 
-1. **함수/메서드 추출(실험적)** 창에서 새로운 함수 이름을 입력하고, 코드를 배치하려는 위치를 선택하고, **확인** 단추를 클릭합니다.  
+1. **함수/메서드 추출(실험적)** 창에서 새로운 함수 이름을 입력하고, 코드를 배치하려는 위치를 선택하고, **확인** 단추를 클릭합니다.
 
    ![함수 추출 함수](images/extractfunction_dialog.png)
 

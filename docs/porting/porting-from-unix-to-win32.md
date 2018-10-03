@@ -20,14 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18217b1d4574f6591287ab6cb83e28c67fe95537
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a5dddac6d5e8b5be1b99d9c8004fcaa36d6b0b30
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218126"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46394038"
 ---
 # <a name="porting-from-unix-to-win32"></a>UNIX에서 Win32로 이식
+
 UNIX에서 Windows로 응용 프로그램을 마이그레이션하는 경우 다음과 같은 여러 옵션이 있습니다.  
   
 - UNIX 라이브러리를 사용하여 UNIX에서 Win32로 응용 프로그램 포팅  
@@ -84,6 +85,6 @@ UNIX 프로그래머가 고려하는 또 다른 옵션은 Windows POSIX 하위 �
   
 ## <a name="see-also"></a>참고 항목  
  
-[Visual C++ 이식 및 업그레이드 가이드](visual-cpp-change-history-2003-2015.md)   
-[UNIX](../c-runtime-library/unix.md)   
+[Visual C++ 포팅 및 업그레이드 가이드](visual-cpp-change-history-2003-2015.md)<br/>
+[UNIX](../c-runtime-library/unix.md)<br/>
 [유추 규칙](../build/inference-rules.md)

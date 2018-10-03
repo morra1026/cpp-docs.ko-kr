@@ -10,17 +10,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60d583ec47a3f9c5b61599a5945e3cfa0d375b1d
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 383691a5c2da2af6e4a992ab8766cd99ffa3d781
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33331285"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46408390"
 ---
 # <a name="create-declaration--definition"></a>선언/정의 만들기
 **대상:** 함수의 선언 또는 정의를 즉시 생성할 수 있습니다.
 
-**시기:** 선언이 필요한 함수가 있거나 그 반대의 경우.  
+**시기:** 선언이 필요한 함수가 있거나 그 반대의 경우.
 
 **이유:** 선언/정의를 수동으로 만들 수 있지만, 필요한 경우 자동으로 헤더/코드 파일이 생성됩니다.
 

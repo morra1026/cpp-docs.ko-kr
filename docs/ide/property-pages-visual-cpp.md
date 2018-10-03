@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1dc831dff6d1e3dbef4fc762712e8125a5b20e1
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: c24ed9328f77d26a8ad11a6ff6bdbf47bad9fbe3
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33339711"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46381415"
 ---
 # <a name="property-pages-visual-c"></a>속성 페이지(Visual C++)
 
@@ -143,5 +143,5 @@ Windows 이외 프로젝트의 경우 [Linux C++ 속성 페이지 참조](../lin
 
 ## <a name="see-also"></a>참고 항목
 
-[방법: 프로젝트 종속성 만들기 및 제거](/visualstudio/ide/how-to-create-and-remove-project-dependencies)  
-[방법: 구성 만들기 및 편집](/visualstudio/ide/how-to-create-and-edit-configurations)  
+[방법: 프로젝트 종속성 만들기 및 제거](/visualstudio/ide/how-to-create-and-remove-project-dependencies)<br>
+[방법: 구성 만들기 및 편집](/visualstudio/ide/how-to-create-and-edit-configurations)

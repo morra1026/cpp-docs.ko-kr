@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9961eaa6529773e8d21d9c953242d1656a6a443
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 85439e191ac8676603c9d7fab8a41bb126e97b9e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211665"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46398666"
 ---
 # <a name="working-with-project-properties"></a>프로젝트 속성 사용
 
@@ -141,11 +141,11 @@ v:<br/>
 
 ##### <a name="to-create-a-user-defined-macro"></a>사용자 정의 매크로를 만들려면
 
-1.  **속성 관리자** 창(메뉴 모음에서 **보기**, **속성 관리자**선택)에서 속성 시트(이름 끝에 .user)에 대한 바로 가기 메뉴를 연 다음 속성을 선택합니다. 해당 속성 시트의 **속성 페이지** 대화 상자가 열립니다.
+1. **속성 관리자** 창(메뉴 모음에서 **보기**, **속성 관리자**선택)에서 속성 시트(이름 끝에 .user)에 대한 바로 가기 메뉴를 연 다음 속성을 선택합니다. 해당 속성 시트의 **속성 페이지** 대화 상자가 열립니다.
 
-2.  대화 상자의 왼쪽 창에서 **사용자 매크로**를 선택합니다. 오른쪽 창에서 **매크로 추가** 단추를 선택하여 **사용자 매크로 추가** 대화 상자를 엽니다.
+1. 대화 상자의 왼쪽 창에서 **사용자 매크로**를 선택합니다. 오른쪽 창에서 **매크로 추가** 단추를 선택하여 **사용자 매크로 추가** 대화 상자를 엽니다.
 
-3.  대화 상자에서 매크로에 대한 이름 및 값을 지정합니다. 또는 **이 매크로를 빌드 환경의 환경 변수로 설정** 확인란을 선택합니다.
+1. 대화 상자에서 매크로에 대한 이름 및 값을 지정합니다. 또는 **이 매크로를 빌드 환경의 환경 변수로 설정** 확인란을 선택합니다.
 
 ## <a name="property-editor"></a>속성 편집기
 

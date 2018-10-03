@@ -1,7 +1,7 @@
 ---
 title: Visual C++ 포팅 및 업그레이드 가이드 | Microsoft 문서
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.technology:
 - cpp-language
 ms.topic: conceptual
@@ -12,14 +12,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 06350e851501cfa26d1ea4d326c26d7a37270889
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 1b573a22b9502548cc84f2bd459cda72d071cf68
+ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42578472"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494402"
 ---
 # <a name="visual-c-porting-and-upgrading-guide"></a>Visual C++ 포팅 및 업그레이드 가이드
+
 이 항목에서는 Visual C++ 코드를 업그레이드하기 위한 가이드를 제공합니다. 여기에는 최신 릴리스의 도구에서 코드가 올바르게 컴파일 및 실행되도록 하고 새로운 언어와 Visual Studio 기능을 활용하는 방법이 포함됩니다. 또한 이 항목에는 레거시 앱을 최신 플랫폼으로 마이그레이션하는 방법에 대한 정보가 포함되어 있습니다.  
   
 ## <a name="reasons-to-upgrade-visual-c-code"></a>Visual C++ 코드를 업그레이드하는 이유  
@@ -92,7 +93,6 @@ Visual Studio의 빌드 시스템을 사용하지 않는 경우 MSBuild를 사�
 |[유니버설 Windows 플랫폼으로 포팅](porting-to-the-universal-windows-platform-cpp.md)|Windows 10으로 코드를 이식하는 방법에 대한 정보를 포함합니다.|  
 |[UNIX 사용자를 위한 Visual C++ 소개](introduction-to-visual-cpp-for-unix-users.md)|Visual C++를 처음 사용하며 생산성을 높이려는 UNIX 사용자에게 정보를 제공합니다.|  
 |[UNIX에서 Win32로 포팅](porting-from-unix-to-win32.md)|UNIX 응용 프로그램을 Windows로 마이그레이션하는 옵션을 설명합니다.|  
-|[C++/CLI 마이그레이션 입문](../dotnet/cpp-cli-migration-primer.md)|새 구문을 사용하도록 Managed Extensions for C++ 구문을 업그레이드하는 방법을 자세히 보여 줍니다. 자세한 내용은 [런타임 플랫폼의 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)을 참조하세요.|  
   
 ## <a name="see-also"></a>참고 항목  
 

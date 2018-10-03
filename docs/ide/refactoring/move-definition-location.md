@@ -10,17 +10,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 44211105429e33c136999a7877ac6ee42af29f17
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 5058e0b3bab1fb5fb5e8d52b55e3fa7c37fd8a4e
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33327842"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46430062"
 ---
 # <a name="move-definition-location"></a>정의 위치 이동
 **대상:** 함수 정의를 해당 헤더 파일로 즉시 이동할 수 있습니다.
 
-**시기:** 헤더 파일로 이동할 함수가 있는 경우.  
+**시기:** 헤더 파일로 이동할 함수가 있는 경우.
 
 **이유:** 함수를 수동으로 이동할 수 있지만, 이 기능이 함수를 자동으로 이동하고, 필요한 경우 헤더 파일을 만듭니다.
 

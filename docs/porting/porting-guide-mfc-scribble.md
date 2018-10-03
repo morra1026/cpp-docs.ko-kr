@@ -12,14 +12,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a73a822e3cf6daa9d9d7c3ebdabbcd4671fc5c7e
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: a8230cf66fd3cc8cdce017c07f05f58b381ebd14
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42578338"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46400915"
 ---
 # <a name="porting-guide-mfc-scribble"></a>포팅 가이드: MFC Scribble
+
 이 항목은 이전 버전의 Visual Studio에서 만든 Visual C++ 프로젝트를 Visual Studio 2017로 업그레이드하는 절차를 소개하는 여러 항목 중 첫 번째입니다. 이러한 항목에서는 예를 들어 매우 간단한 프로젝트부터 좀더 복잡한 프로젝트로 이동하는 업그레이드 프로세스를 소개합니다. 이 항목에서는 MFC Sribble이라는 특정 프로젝트에 대한 업그레이드 프로세스를 안내합니다. C++ 프로젝트에 대한 업그레이드 프로세스의 기본 사항을 소개하는 데 적합합니다.  
   
 각 Visual Studio 버전에는 이전 버전의 Visual Studio에서 최신 버전으로의 코드 이동을 복잡하게 하는 비호환성이 있을 수 있습니다. 코드에 필요한 변경이 있어서 코드를 다시 컴파일하고 업데이트해야 하는 경우도 있고, 프로젝트 파일에 필요한 변경이 있는 경우도 있습니다. 이전 버전의 Visual Studio에서 만든 프로젝트를 여는 경우 Visual Studio에서 프로젝트 또는 솔루션을 최신 버전으로 업데이트할지 여부를 묻는 메시지를 자동으로 표시합니다. 이러한 도구는 일반적으로 프로젝트 파일만 업그레이드하고 소스 코드를 수정하지 않습니다.  
@@ -37,6 +38,7 @@ MFC Scribble은 다양한 버전의 Visual C++에 포함된 잘 알려진 샘플
 마법사를 사용하여 프로젝트를 업그레이드하는 대신 `/Upgrade` 옵션을 사용하여 명령줄에서 devenv를 실행할 수도 있습니다. [/Upgrade (devenv.exe)](/visualstudio/ide/reference/upgrade-devenv-exe)를 참조하세요. 이 작업은 다수의 프로젝트에 대해 업그레이드 프로세스를 자동화하는 데 유용할 수 있습니다.  
   
 ### <a name="step-1-converting-the-project-file"></a>1단계: 프로젝트 파일 변환  
+
 Visual Studio 2017에서 이전 프로젝트 파일을 여는 경우 Visual Studio에서 프로젝트 파일을 최신 버전으로 변환하도록 제안하며, 이 제안을 수락했습니다. 다음과 같은 대화 상자가 나타납니다.  
   
 ![프로젝트 및 솔루션 변경 내용 검토](../porting/media/scribbleprojectupgrade.PNG "ScribbleProjectUpgrade")  
@@ -56,6 +58,7 @@ Platform 'Itanium' is missing from this project. All the configurations and thei
 이 경우 문제는 모두 경고였으며, Visual Studio에서 프로젝트 파일을 적절하게 변경했습니다. 프로젝트와 관련해서 가장 큰 차이점은 빌드 도구가 vcbuild에서 msbuild로 변경된 것입니다. 이 변경 내용은 Visual Studio 2010에서 처음 도입되었습니다. 기타 변경 내용에는 프로젝트 파일 자체의 요소 시퀀스 다시 정렬이 포함됩니다. 이 간단한 프로젝트에서 추가로 주의해야 할 문제는 없었습니다.  
   
 ### <a name="step-2-getting-it-to-build"></a>2단계. 빌드  
+
 빌드하기 전에 프로젝트 시스템에서 사용 중인 컴파일러 버전을 알 수 있도록 플랫폼 도구 집합을 확인합니다. 프로젝트 속성 대화 상자의 **구성 속성** 아래, **일반** 범주에서 **플랫폼 도구 집합** 속성을 확인합니다. Visual Studio 버전 및 플랫폼 도구 버전 번호(이 경우 Visual Studio 2017 버전의 도구에 해당하는 v141)이 포함되어 있습니다. 원래 Visual C++ 2010, 2012, 2013 또는 2015를 사용하여 컴파일된 프로젝트를 변환하는 경우 도구 집합이 Visual Studio 2017 도구 집합으로 자동으로 업데이트되지 않습니다.   
   
 유니코드로 전환하려면 프로젝트의 속성을 열고 **구성 속성** 아래에서 **일반** 섹션을 선택한 다음 **문자 집합** 속성을 찾습니다. 이 속성을 **멀티바이트 문자 집합 사용**에서 **유니코드 문자 집합 사용**으로 변경합니다. 이렇게 변경하면 _UNICODE 및 UNICODE 매크로가 정의되고 _MBCS는 정의되지 않습니다. 이는 속성 대화 상자의 **C/C++** 범주 아래, **명령줄** 속성에서 확인할 수 있습니다.  
@@ -72,18 +75,20 @@ Scribble 프로젝트는 유니코드 문자를 사용하여 컴파일되도록 
 _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)  
 ```  
   
- 이는 오류가 아니라 경고이며, Visual C++ 프로젝트를 업그레이드할 때 흔히 발생합니다. 응용 프로그램이 실행되는 가장 낮은 버전의 Windows를 정의하는 매크로입니다. 경고를 무시하는 경우 현재 버전의 Windows를 의미하는 기본값 _WIN32_WINNT_MAXVER을 수락하는 것입니다. 가능한 값의 테이블은 [Using the Windows Headers](/windows/desktop/WinProg/using-the-windows-headers)(Windows 헤더 사용)을 참조하세요. 예를 들어 Vista부터 모든 버전에서 실행되도록 설정할 수 있습니다.  
+이는 오류가 아니라 경고이며, Visual C++ 프로젝트를 업그레이드할 때 흔히 발생합니다. 응용 프로그램이 실행되는 가장 낮은 버전의 Windows를 정의하는 매크로입니다. 경고를 무시하는 경우 현재 버전의 Windows를 의미하는 기본값 _WIN32_WINNT_MAXVER을 수락하는 것입니다. 가능한 값의 테이블은 [Using the Windows Headers](/windows/desktop/WinProg/using-the-windows-headers)(Windows 헤더 사용)을 참조하세요. 예를 들어 Vista부터 모든 버전에서 실행되도록 설정할 수 있습니다.  
   
-```  
+```cpp
 #define _WIN32_WINNT _WIN32_WINNT_VISTA  
 ```  
   
 코드에서 이 매크로로 지정한 Windows 버전에서 사용할 수 없는 Windows API의 일부를 사용하는 경우 컴파일러 오류로 표시됩니다. Scribble 코드의 경우 오류가 없습니다.  
   
 ### <a name="step-3-testing-and-debugging"></a>3단계. 테스트 및 디버깅  
+
 테스트 도구 모음이 없으므로 앱을 시작하고 UI를 통해 수동으로 해당 기능을 테스트했습니다. 문제가 발견되지 않았습니다.  
   
 ### <a name="step-4-improve-the-code"></a>4단계. 코드 개선  
+
 이제 Visual Studio 2017로 마이그레이션했으므로 새로운 C++ 기능을 활용하기 위해 일부 변경 작업을 수행하는 것이 좋습니다. 현재 버전의 C++ 컴파일러는 이전 버전보다 C++ 표준에 훨씬 더 부합되므로 코드를 더 안전하고 다른 컴파일러 및 운영 체제로 포팅하기 쉽게 변경하려는 경우 몇 가지 향상된 기능을 고려해야 합니다.  
   
 ## <a name="next-steps"></a>다음 단계  
@@ -92,5 +97,5 @@ Scribble은 작고 간단한 Windows 데스크톱 응용 프로그램이며 변�
   
 ## <a name="see-also"></a>참고 항목  
  
-[포팅 및 업그레이드: 예제 및 사례 연구](../porting/porting-and-upgrading-examples-and-case-studies.md)   
+[포팅 및 업그레이드: 예제 및 사례 연구](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
 [다음 예제: COM Spy](../porting/porting-guide-com-spy.md)

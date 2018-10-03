@@ -27,34 +27,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f70520b60ccfaf1af5b223bcb4ea1a90639aa484
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7e311c27d61eca82019f8069b0984557af02c74a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32385555"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028209"
 ---
 # <a name="abnormaltermination"></a>_abnormal_termination
-시스템이 종료 처리기의 내부 목록을 실행하는 동안 [try-finally](../cpp/try-finally-statement.md) 문의 `__finally` 블록이 입력되었는지 여부를 나타냅니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-int   _abnormal_termination(  
-   );  
-```  
-  
-## <a name="return-value"></a>반환 값  
- 시스템이 스택을 *해제*하면 `true`이고 해제하지 않으면 `false`입니다.  
-  
-## <a name="remarks"></a>설명  
- 해제 예외를 관리하기 위해 사용되는 내부 함수이며 사용자 코드에서 호출할 수 없습니다.  
-  
-## <a name="requirements"></a>요구 사항  
-  
-|루틴에서 반환된 값|필수 헤더|  
-|-------------|---------------------|  
-|_abnormal_termination|excpt.h|  
-  
-## <a name="see-also"></a>참고 항목  
- [try-finally 문](../cpp/try-finally-statement.md)
+
+시스템이 종료 처리기의 내부 목록을 실행하는 동안 [try-finally](../cpp/try-finally-statement.md) 문의 `__finally` 블록이 입력되었는지 여부를 나타냅니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+int   _abnormal_termination(
+   );
+```
+
+## <a name="return-value"></a>반환 값
+
+시스템이 스택을 *해제*하면 `true`이고 해제하지 않으면 `false`입니다.
+
+## <a name="remarks"></a>설명
+
+해제 예외를 관리하기 위해 사용되는 내부 함수이며 사용자 코드에서 호출할 수 없습니다.
+
+## <a name="requirements"></a>요구 사항
+
+|루틴에서 반환된 값|필수 헤더|
+|-------------|---------------------|
+|_abnormal_termination|excpt.h|
+
+## <a name="see-also"></a>참고 항목
+
+[try-finally 문](../cpp/try-finally-statement.md)

@@ -1,28 +1,30 @@
 ---
 title: IsSame 구조체 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/21/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - internal/Microsoft::WRL::Details::IsSame
+- internal/Microsoft::WRL::Details::IsSame::value
 dev_langs:
 - C++
 helpviewer_keywords:
-- IsSame structure
+- Microsoft::WRL::Details::IsSame structure
+- Microsoft::WRL::Details::IsSame::value constant
 ms.assetid: 1eddbc3f-3cc5-434f-8495-e4477e1f868e
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b7d1879217ac43e2d7d3714f491f44b8245f4f27
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a6d1e22d52a2e618357357555a549437ae453abe
+ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390528"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47169699"
 ---
 # <a name="issame-structure"></a>IsSame 구조체
 
@@ -58,9 +60,9 @@ struct IsSame<T1, T1>;
 
 ### <a name="public-constants"></a>공용 상수
 
-|이름|설명|
-|----------|-----------------|
-|[IsSame::value 상수](../windows/issame-value-constant.md)|한 형식이 다른 동일한 인지 여부를 나타냅니다.|
+이름                    | 설명
+----------------------- | --------------------------------------------------
+[Issame:: Value](#value) | 한 형식이 다른 동일한 인지 여부를 나타냅니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -72,6 +74,26 @@ struct IsSame<T1, T1>;
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="see-also"></a>참고 항목
+## <a name="value"></a>Issame:: Value
 
-[Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)
+WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
+
+```cpp
+template <typename T1, typename T2>
+struct IsSame
+{
+    static const bool value = false;
+};
+
+template <typename T1>
+struct IsSame<T1, T1>
+{
+    static const bool value = true;
+};
+```
+
+### <a name="remarks"></a>설명
+
+한 형식이 다른 동일한 인지 여부를 나타냅니다.
+
+`value` 됩니다 `true` 템플릿 매개 변수는 동일 하는 경우 및 `false` 템플릿 매개 변수는 서로 다른 경우.

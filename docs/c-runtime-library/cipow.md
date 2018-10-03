@@ -29,12 +29,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c09801841e25b5de2f98e64c01bf48b1eea9992b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 01fa112fe70094cbf97537e6288751ac14acd2db
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052090"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235953"
 ---
 # <a name="cipow"></a>_CIpow
 
@@ -53,7 +53,8 @@ void __cdecl _CIpow();
 결과 값이 스택의 맨 위에 푸시됩니다.
 
 ## <a name="requirements"></a>요구 사항
- **플랫폼:** x86
+
+**플랫폼:** x86
 
 ## <a name="see-also"></a>참고 항목
 

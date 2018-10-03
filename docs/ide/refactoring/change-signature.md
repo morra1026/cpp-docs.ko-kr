@@ -10,17 +10,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f913f0b3065b136f626ef15cc2a77dce8d0254f
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 0007cf50eafa7b61e48b550172eb2d316270c61f
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33335093"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46448334"
 ---
 # <a name="change-signature"></a>시그니처 변경
 **대상:** 함수의 매개 변수를 수정할 수 있습니다.
 
-**시기:** 다양한 위치에서 현재 사용 중인 함수의 매개 변수를 다시 정렬하거나, 다시 이동하거나, 수정하려고 합니다.  
+**시기:** 다양한 위치에서 현재 사용 중인 함수의 매개 변수를 다시 정렬하거나, 다시 이동하거나, 수정하려고 합니다.
 
 **이유:** 이러한 매개 변수를 수동으로 제거한 다음, 해당 함수에 대한 모든 호출을 찾아 하나씩 변경할 수 있지만 오류가 발생할 수 있습니다.  이 리팩터링 도구는 작업을 자동으로 수행합니다.
 

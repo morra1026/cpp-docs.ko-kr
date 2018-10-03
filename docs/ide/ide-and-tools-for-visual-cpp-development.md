@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df30bdea71a890eed25f546a53e7f329fa330762
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: d4e7742afd3fecc4dd115624da0c1650dc662004
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43132022"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46412524"
 ---
 # <a name="ide-and-tools-for-visual-c-development"></a>IDE 및 Visual C++ 개발 도구
 
@@ -29,7 +29,7 @@ Visual Studio IDE에 있는 공유 도구 외에도, MSVC에는 네이티브 코
 
 ## <a name="creating-a-solution-and-projects"></a>솔루션 및 프로젝트 만들기
 
-*프로젝트*는 기본적으로 실행 파일에 빌드된 이미지 또는 데이터 파일과 같은 소스 코드 파일 및 리소스 집합입니다. 
+*프로젝트*는 기본적으로 실행 파일에 빌드된 이미지 또는 데이터 파일과 같은 소스 코드 파일 및 리소스 집합입니다.
 
 Visual Studio 2015는 MSBuild 프로젝트에 대한 지원을 제공합니다. Qt 또는 CMake와 같은 다른 빌드 시스템에 대한 Visual Studio 확장을 다운로드할 수 있습니다.
 
@@ -119,7 +119,7 @@ Visual Studio는 [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelin
 
 ## <a name="deploy-completed-applications"></a>완성된 응용 프로그램 배포
 
-**프로젝트** > **Microsoft Store** 메뉴 옵션을 사용하여 Microsoft Store를 통해 UWP 앱을 고객에게 배포합니다. CRT 배포는 백그라운드에서 자동으로 처리됩니다. 자세한 내용은 [Windows 앱 및 게임 게시](/windows/uwp/publish/)를 참조하세요. 
+**프로젝트** > **Microsoft Store** 메뉴 옵션을 사용하여 Microsoft Store를 통해 UWP 앱을 고객에게 배포합니다. CRT 배포는 백그라운드에서 자동으로 처리됩니다. 자세한 내용은 [Windows 앱 및 게임 게시](/windows/uwp/publish/)를 참조하세요.
 
 네이티브 C++ 데스크톱 응용 프로그램을 다른 컴퓨터에 배포할 때는 응용 프로그램 자체 및 이 응용 프로그램이 종속되는 라이브러리 파일을 설치해야 합니다. 중앙 배포, 로컬 배포 또는 정적 연결의 세 가지 방법으로 응용 프로그램과 함께 유니버셜 C++ 런타임(UCRT)을 배포할 수 있습니다. 자세한 내용은 [데스크톱 응용 프로그램 배포](../ide/deploying-native-desktop-applications-visual-cpp.md)를 참조하세요.
 
