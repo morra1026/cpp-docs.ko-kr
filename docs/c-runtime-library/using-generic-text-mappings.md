@@ -37,12 +37,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c9435076bdc02f9f0b8a909ffdbc60dd06e1a388
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4aeee73cb065e40d345dcbfe35ac2d6a7be03d90
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097525"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234660"
 ---
 # <a name="using-generic-text-mappings"></a>일반 텍스트 매핑 사용
 
@@ -105,7 +105,7 @@ RetVal = strrev(szString);
 
 따라서 이러한 세 가지 종류의 문자 집합과 관련된 루틴에서 실행할 단일 소스 코드 파일을 작성하고, 유지하고, 컴파일할 수 있습니다.
 
- **Microsoft 전용 종료**
+**Microsoft 전용 종료**
 
 ## <a name="see-also"></a>참고 항목
 

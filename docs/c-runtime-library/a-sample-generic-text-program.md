@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dbb02f426e839eff20a1dcd37ab41d4a08640599
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3adde04ba8fe259c25f3439cef247192eea175f2
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46081535"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48233682"
 ---
 # <a name="a-sample-generic-text-program"></a>샘플 일반 텍스트 프로그램
 
@@ -31,7 +31,7 @@ ms.locfileid: "46081535"
 
 다음 프로그램 GENTEXT.C에서는 TCHAR.H에서 정의된 제네릭 텍스트 매핑의 사용에 대해 보다 상세한 설명을 제공합니다.
 
-```
+```C
 // GENTEXT.C
 // use of generic-text mappings defined in TCHAR.H
 
@@ -67,12 +67,11 @@ int __cdecl _tmain(int argc, _TCHAR **argv, _TCHAR **envp)
    _tprintf(_T("'%s'\n"), _tcsrev(_tcsdup(str)));
    return 0;
 }
-
 ```
 
 `_MBCS`가 정의된 경우 GENTEXT.C는 다음 MBCS 프로그램에 매핑됩니다.
 
-```
+```C
 // crt_mbcsgtxt.c
 
 /*
@@ -110,7 +109,7 @@ int __cdecl main(int argc, char **argv, char **envp)
 
 `_UNICODE`가 정의된 경우 GENTEXT.C는 프로그램의 다음 유니코드 버전에 매핑됩니다. `main` 대신 유니코드 프로그램의 `wmain`을 사용하는 방법에 대한 자세한 내용은 *C 언어 참조*의 [wmain 사용](../c-language/using-wmain.md)을 참조하세요.
 
-```
+```C
 // crt_unicgtxt.c
 
 /*
@@ -148,7 +147,7 @@ int __cdecl wmain(int argc, wchar_t **argv, wchar_t **envp)
 
 `_MBCS` 또는 `_UNICODE`가 둘 다 정의되지 않은 경우 GENTEXT.C는 다음과 같이 싱글바이트 ASCII 코드에 매핑됩니다.
 
-```
+```C
 // crt_sbcsgtxt.c
 /*
  * Use of generic-text mappings defined in TCHAR.H
@@ -183,7 +182,7 @@ int __cdecl main(int argc, char **argv, char **envp)
 }
 ```
 
- **Microsoft 전용 종료**
+**Microsoft 전용 종료**
 
 ## <a name="see-also"></a>참고 항목
 

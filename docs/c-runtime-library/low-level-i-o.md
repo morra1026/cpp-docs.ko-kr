@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d263d1d61a6dcc6921d6918db2b89386e918551
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8134ea416f94def7e985a4d63cc61d740924317a
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46018316"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235297"
 ---
 # <a name="low-level-io"></a>하위 수준 I/O
 
@@ -59,7 +59,7 @@ ms.locfileid: "46018316"
 |[_umask](../c-runtime-library/reference/umask.md), [_umask_s](../c-runtime-library/reference/umask-s.md)|파일 사용 권한 마스크 설정|
 |[_write](../c-runtime-library/reference/write.md)|파일에 데이터 쓰기|
 
- **_dup** 및 **_dup2**는 일반적으로 미리 정의된 파일 설명자를 다른 파일에 연결하는 데 사용됩니다.
+**_dup** 및 **_dup2**는 일반적으로 미리 정의된 파일 설명자를 다른 파일에 연결하는 데 사용됩니다.
 
 ## <a name="see-also"></a>참고 항목
 

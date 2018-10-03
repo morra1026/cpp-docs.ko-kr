@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b65ceb18eb6b8f24db0a85ba2ed13277b13f657
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 45428f1642b428640509978f29c0a36b60696cb0
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46117499"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235063"
 ---
 # <a name="string-to-numeric-value-functions"></a>문자열을 숫자 값으로 변환하는 함수
 
@@ -94,7 +94,7 @@ ms.locfileid: "46117499"
 |`_strtoui64`|오버플로|**_UI64_MAX**|
 |`_strtoui64`|변환 없음|0|
 
- **_I64_MAX**, _**I64_MIN** 및 **_UI64_MAX**는 LIMITS.H에 정의됩니다.
+**_I64_MAX**, _**I64_MIN** 및 **_UI64_MAX**는 LIMITS.H에 정의됩니다.
 
 `wcstod`, `wcstol`, `wcstoul`, `_wcstoi64` 및 `_wcstoui64`는 각각 `strtod`, `strtol`, `strtoul`, `_strtoi64` 및 `_strtoui64`의 와이드 문자 버전이며, 이러한 각 와이드 문자 함수의 변환 종료 인수에 대한 포인터는 와이드 문자열입니다. 그렇지 않은 경우 이러한 각 와이드 문자 함수는 싱글바이트 문자 함수와 동일하게 동작합니다.
 
