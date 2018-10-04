@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef2aaf3f37e9699547c3a85c55a2f72d4baab7a6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 86387103d4d8257a109928a665579621468a3cf3
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46047696"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788701"
 ---
 # <a name="compiler-warning-level-1-c4096"></a>컴파일러 경고 (수준 1) C4096
 
@@ -29,7 +29,7 @@ ms.locfileid: "46047696"
 
 COM 인터페이스로 계획 했던 인터페이스 정의 COM 인터페이스로 정의 되지 않은 및 따라서 내보내지 않습니다 IDL 파일에 있습니다.
 
-참조 [인터페이스 특성](../../windows/interface-attributes.md) 인터페이스는 COM 인터페이스를 나타내는 목록 특성에 대 한 합니다.
+참조 [인터페이스 특성](../../windows/attributes/interface-attributes.md) 인터페이스는 COM 인터페이스를 나타내는 목록 특성에 대 한 합니다.
 
 다음 샘플에서는 C4096 오류가 생성 됩니다.
 
