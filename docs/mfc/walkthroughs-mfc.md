@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05255f71f304b32de95faf96eaa23f5ce3da9f96
-ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
+ms.openlocfilehash: 9d96ce9ade06c849716a680bd3c0c8bb6feeccc6
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169413"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235661"
 ---
 # <a name="walkthroughs-mfc"></a>연습(MFC)
 
@@ -28,7 +28,7 @@ ms.locfileid: "47169413"
 ## <a name="in-this-section"></a>섹션 내용
 
 [연습: 새 MFC 셸 컨트롤 사용](../mfc/walkthrough-using-the-new-mfc-shell-controls.md)<br/>
-이 연습에서 파일 탐색기와 비슷한 응용 프로그램을 만듭니다. 두 개의 창이 포함 된 창을 만듭니다. 왼쪽된 창에 있는 한 [CMFCShellTreeCtrl](../mfc/reference/cmfcshelltreectrl-class.md) 개체 계층 구조 보기를 데스크톱을 표시할 수 있습니다. 오른쪽 창에 있는 한 [CMFCShellListCtrl](../mfc/reference/cmfcshelllistctrl-class.md) 왼쪽된 창에서 선택한 폴더에 파일이 표시 됩니다.
+이 연습에서는 파일 탐색기와 비슷한 응용 프로그램을 만들어야 합니다. 두 개의 창이 포함 된 창을 만듭니다. 왼쪽된 창에는 [CMFCShellTreeCtrl](../mfc/reference/cmfcshelltreectrl-class.md) 개체 계층 구조 보기를 데스크톱을 표시할 수 있습니다. 오른쪽 창에는 [CMFCShellListCtrl](../mfc/reference/cmfcshelllistctrl-class.md) 왼쪽된 창에서 선택한 폴더에 파일이 표시 됩니다.
 
 [연습: 도구 모음에 컨트롤 배치](../mfc/walkthrough-putting-controls-on-toolbars.md)<br/>
 최신 MFC 도구 모음 간단한 단추 이외의 컨트롤을 호스트할 수 있습니다. 이 문서에는 작업을 수행 하는 방법을 설명 합니다.

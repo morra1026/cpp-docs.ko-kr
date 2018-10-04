@@ -1,28 +1,30 @@
 ---
 title: BoolStruct 구조체 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/21/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - internal/Microsoft::WRL::Details::BoolStruct
+- internal/Microsoft::WRL::Details::BoolStruct::Member
 dev_langs:
 - C++
 helpviewer_keywords:
-- BoolStruct structure
+- Microsoft::WRL::Details::BoolStruct structure
+- Microsoft::WRL::Details::BoolStruct::Member data member
 ms.assetid: 666eae78-e81d-4fb7-a9e4-1ba617d6d4cd
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 13c1e57ec0b2f7459bdab447a6f7fe98ac8eb1d1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 74a292f2253d29730e8ee9104ea81308081c0496
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416661"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234270"
 ---
 # <a name="boolstruct-structure"></a>BoolStruct 구조체
 
@@ -36,15 +38,15 @@ struct BoolStruct;
 
 ## <a name="remarks"></a>설명
 
-합니다 **BoolStruct** 구조를 정의 하는지 여부를 `ComPtr` 인터페이스의 개체 수명을 관리 하는 합니다. **BoolStruct** 내부적으로 사용 되는 [BoolType()](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md) 연산자입니다.
+합니다 `BoolStruct` 구조를 정의 하는지 여부를 `ComPtr` 인터페이스의 개체 수명을 관리 하는 합니다. `BoolStruct` 내부적으로 사용 되는 [BoolType()](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md) 연산자입니다.
 
 ## <a name="members"></a>멤버
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|이름|설명|
-|----------|-----------------|
-|[BoolStruct::Member 데이터 멤버](../windows/boolstruct-member-data-member.md)|지정 된 [ComPtr](../windows/comptr-class.md) 인지 또는 인터페이스의 개체 수명 관리 되지 합니다.|
+이름                          | 설명
+----------------------------- | ------------------------------------------------------------------------------------------------------------------
+[Boolstruct:: Member](#member) | 지정 된 [ComPtr](../windows/comptr-class.md) 인지 또는 인터페이스의 개체 수명 관리 되지 합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -56,7 +58,14 @@ struct BoolStruct;
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="see-also"></a>참고 항목
+## <a name="member"></a>Boolstruct:: Member
 
-[Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)<br/>
-[ComPtr::operator Microsoft::WRL::Details::BoolType 연산자](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md)
+WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
+
+```cpp
+int Member;
+```
+
+### <a name="remarks"></a>설명
+
+지정 된 [ComPtr](../windows/comptr-class.md) 인지 또는 인터페이스의 개체 수명 관리 되지 합니다.

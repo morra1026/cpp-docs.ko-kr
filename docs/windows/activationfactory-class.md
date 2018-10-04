@@ -1,28 +1,42 @@
 ---
 title: ActivationFactory 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::ActivationFactory
+- module/Microsoft::WRL::ActivationFactory::ActivationFactory
+- module/Microsoft::WRL::ActivationFactory::AddRef
+- module/Microsoft::WRL::ActivationFactory::GetIids
+- module/Microsoft::WRL::ActivationFactory::GetRuntimeClassName
+- module/Microsoft::WRL::ActivationFactory::GetTrustLevel
+- module/Microsoft::WRL::ActivationFactory::QueryInterface
+- module/Microsoft::WRL::ActivationFactory::Release
 dev_langs:
 - C++
 helpviewer_keywords:
-- ActivationFactory class
+- Microsoft::WRL::ActivationFactory class
+- Microsoft::WRL::ActivationFactory::ActivationFactory, constructor
+- Microsoft::WRL::ActivationFactory::AddRef method
+- Microsoft::WRL::ActivationFactory::GetIids method
+- Microsoft::WRL::ActivationFactory::GetRuntimeClassName method
+- Microsoft::WRL::ActivationFactory::GetTrustLevel method
+- Microsoft::WRL::ActivationFactory::QueryInterface method
+- Microsoft::WRL::ActivationFactory::Release method
 ms.assetid: 5faddf1f-43b6-4f8a-97de-8c9d3ae1e1ff
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 55c82290c3a96ab71419b36a7ec4a4eb2b528753
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3997ee3e435aceec536215599ea0d95321fd5a38
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419817"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234673"
 ---
 # <a name="activationfactory-class"></a>ActivationFactory 클래스
 
@@ -52,7 +66,7 @@ class ActivationFactory : public Details::RuntimeClass<typename Details::Interfa
 
 ## <a name="remarks"></a>설명
 
-**ActivationFactory** 등록 방법 및에 대 한 기본 기능을 제공 합니다 `IActivationFactory` 인터페이스입니다. **ActivationFactory** 사용자 지정 팩터리 구현을 제공할 수 있습니다.
+`ActivationFactory` 등록 방법 및에 대 한 기본 기능을 제공 합니다 `IActivationFactory` 인터페이스입니다. `ActivationFactory` 사용자 지정 팩터리 구현을 제공할 수 있습니다.
 
 다음 코드 조각에는 기호로 ActivationFactory를 사용 하는 방법을 보여 줍니다.
 
@@ -66,20 +80,20 @@ class ActivationFactory : public Details::RuntimeClass<typename Details::Interfa
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
-|----------|-----------------|
-|[ActivationFactory::ActivationFactory 생성자](../windows/activationfactory-activationfactory-constructor.md)|초기화 된 **ActivationFactory** 클래스입니다.|
+이름                                                       | 설명
+---------------------------------------------------------- | ------------------------------------------
+[Activationfactory:: Activationfactory](#activationfactory) | 초기화는 `ActivationFactory` 클래스입니다.
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
-|----------|-----------------|
-|[ActivationFactory::AddRef 메서드](../windows/activationfactory-addref-method.md)|현재 참조 수가 증가 **ActivationFactory** 개체입니다.|
-|[ActivationFactory::GetIids 메서드](../windows/activationfactory-getiids-method.md)|구현된 인터페이스 ID의 배열을 가져옵니다.|
-|[ActivationFactory::GetRuntimeClassName 메서드](../windows/activationfactory-getruntimeclassname-method.md)|개체의 런타임 클래스 이름을 가져옵니다 현재 **ActivationFactory** 인스턴스화합니다.|
-|[ActivationFactory::GetTrustLevel 메서드](../windows/activationfactory-gettrustlevel-method.md)|개체의 신뢰 수준을 가져옵니다 현재 **ActivationFactory** 인스턴스화합니다.|
-|[ActivationFactory::QueryInterface 메서드](../windows/activationfactory-queryinterface-method.md)|지정된 된 인터페이스에 대 한 포인터를 검색합니다.|
-|[ActivationFactory::Release 메서드](../windows/activationfactory-release-method.md)|현재 참조 횟수를 감소 **ActivationFactory** 개체입니다.|
+이름                                                           | 설명
+-------------------------------------------------------------- | --------------------------------------------------------------------------------------------
+[Activationfactory:: Addref](#addref)                           | 현재 참조 수가 증가 `ActivationFactory` 개체입니다.
+[Activationfactory:: Getiids](#getiids)                         | 구현된 인터페이스 ID의 배열을 가져옵니다.
+[Activationfactory:: Getruntimeclassname](#getruntimeclassname) | 개체의 런타임 클래스 이름을 가져옵니다 현재 `ActivationFactory` 인스턴스화합니다.
+[Activationfactory:: Gettrustlevel](#gettrustlevel)             | 개체의 신뢰 수준을 가져옵니다 현재 `ActivationFactory` 인스턴스화합니다.
+[Activationfactory:: Queryinterface](#queryinterface)           | 지정된 된 인터페이스에 대 한 포인터를 검색합니다.
+[Activationfactory:: Release](#release)                         | 현재 참조 횟수를 감소 `ActivationFactory` 개체입니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -109,6 +123,122 @@ class ActivationFactory : public Details::RuntimeClass<typename Details::Interfa
 
 **네임스페이스:** Microsoft::WRL
 
-## <a name="see-also"></a>참고 항목
+## <a name="activationfactory"></a>Activationfactory:: Activationfactory
 
-[Microsoft::WRL 네임스페이스](../windows/microsoft-wrl-namespace.md)
+초기화는 `ActivationFactory` 클래스입니다.
+
+```cpp
+ActivationFactory();
+```
+
+## <a name="addref"></a>Activationfactory:: Addref
+
+현재 참조 수가 증가 `ActivationFactory` 개체입니다.
+
+```cpp
+STDMETHOD_(
+   ULONG,
+   AddRef
+)();
+```
+
+### <a name="return-value"></a>반환 값
+
+성공하면 S_OK이고, 그렇지 않으면 실패를 설명하는 HRESULT가 발생합니다.
+
+## <a name="getiids"></a>Activationfactory:: Getiids
+
+구현된 인터페이스 ID의 배열을 가져옵니다.
+
+```cpp
+STDMETHOD(
+   GetIids
+)(_Out_ ULONG *iidCount, _Deref_out_ _Deref_post_cap_(*iidCount) IID **iids);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*iidCount*<br/>
+이 작업이 완료 되 면 인터페이스 Id 수는 *iid* 배열입니다.
+
+*iid*<br/>
+이 작업이 완료될 대 구현된 인터페이스 ID의 배열입니다.
+
+### <a name="return-value"></a>반환 값
+
+성공하면 S_OK이고, 그렇지 않으면 실패를 설명하는 HRESULT가 발생합니다. E_OUTOFMEMORY는 가능한 실패 HRESULT입니다.
+
+## <a name="getruntimeclassname"></a>Activationfactory:: Getruntimeclassname
+
+개체의 런타임 클래스 이름을 가져옵니다 현재 `ActivationFactory` 인스턴스화합니다.
+
+```cpp
+STDMETHOD(
+   GetRuntimeClassName
+)(_Out_ HSTRING* runtimeName);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*runtimeName*<br/>
+이 작업이 완료 될 때, 개체의 런타임 클래스 이름을 포함 하는 문자열에 대 한 핸들을 현재 `ActivationFactory` 인스턴스화합니다.
+
+### <a name="return-value"></a>반환 값
+
+성공하면 S_OK이고, 그렇지 않으면 실패를 설명하는 HRESULT가 발생합니다.
+
+## <a name="gettrustlevel"></a>Activationfactory:: Gettrustlevel
+
+개체의 신뢰 수준을 가져옵니다 현재 `ActivationFactory` 인스턴스화합니다.
+
+```cpp
+STDMETHOD(
+   GetTrustLevel
+)(_Out_ TrustLevel* trustLvl);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*trustLvl*<br/>
+이 작업이 완료 되 면 런타임에서의 신뢰 수준을 클래스는 `ActivationFactory` 인스턴스화합니다.
+
+### <a name="return-value"></a>반환 값
+
+성공 하면 s_ok이 고 어설션 오류가 내보내집니다. 그렇지 않은 경우 및 *trustLvl* 로 설정 된 `FullTrust`합니다.
+
+## <a name="queryinterface"></a>Activationfactory:: Queryinterface
+
+지정된 된 인터페이스에 대 한 포인터를 검색합니다.
+
+```cpp
+STDMETHOD(
+   QueryInterface
+)(REFIID riid, _Deref_out_ void **ppvObject);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*riid*<br/>
+인터페이스 ID입니다.
+
+*ppvObject*<br/>
+이 작업이 완료 되 면, 매개 변수에서 지정 된 인터페이스에 대 한 포인터 *riid*합니다.
+
+### <a name="return-value"></a>반환 값
+
+성공하면 S_OK이고, 그렇지 않으면 실패를 설명하는 HRESULT가 발생합니다.
+
+## <a name="release"></a>Activationfactory:: Release
+
+현재 참조 횟수를 감소 `ActivationFactory` 개체입니다.
+
+```cpp
+STDMETHOD_(
+   ULONG,
+   Release
+)();
+```
+
+### <a name="return-value"></a>반환 값
+
+성공하면 S_OK이고, 그렇지 않으면 실패를 설명하는 HRESULT가 발생합니다.

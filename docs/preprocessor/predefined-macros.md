@@ -152,12 +152,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9a1472cba13f477143c9b9ace27cb2555f41406
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a95141aa97d7272970adaaa69f3f63de2a622780
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408429"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235648"
 ---
 # <a name="predefined-macros"></a>미리 정의된 매크로
 
@@ -435,7 +435,7 @@ Microsoft Visual c + +는 이러한 추가 미리 정의 된 매크로 지원합
 
 - **&#95;WINRT&#95;DLL** , c + +로 컴파일된 경우 1로 정의 [/ZW (Windows 런타임 컴파일)](../build/reference/zw-windows-runtime-compilation.md) 하 고 [/LD 또는 /LDd](../build/reference/md-mt-ld-use-run-time-library.md) 컴파일러 옵션을 설정 합니다. 그렇지 않으면 정의 되지 않았습니다.
 
- ATL 또는 MFC 라이브러리 버전을 확인 하는 데 사용 되는 전처리기 매크로 컴파일러에서 미리 정의 되지 않습니다. 이러한 매크로 라이브러리에 대 한 헤더에 정의 필수 헤더를 포함 하기 전에 전처리기 지시문에서 정의 됩니다.
+ATL 또는 MFC 라이브러리 버전을 확인 하는 데 사용 되는 전처리기 매크로 컴파일러에서 미리 정의 되지 않습니다. 이러한 매크로 라이브러리에 대 한 헤더에 정의 필수 헤더를 포함 하기 전에 전처리기 지시문에서 정의 됩니다.
 
 - **&#95;ATL&#95;VER** 에 정의 된 \<atldef.h > ATL 버전 번호를 인코딩하는 정수 리터럴.
 

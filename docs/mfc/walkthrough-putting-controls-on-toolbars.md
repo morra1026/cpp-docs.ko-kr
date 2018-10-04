@@ -15,26 +15,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8267704e6bb1b43a13cc05d21d0572695365fd6
-ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
+ms.openlocfilehash: 1995d3472f175872e084e2654531a2e72a90f950
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169751"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235518"
 ---
 # <a name="walkthrough-putting-controls-on-toolbars"></a>연습: 도구 모음에 컨트롤 배치
 
-이 항목에서는 Windows 컨트롤을 포함하는 도구 모음 단추를 도구 모음에 추가하는 방법을 설명합니다. MFC 도구 모음 단추 이어야 합니다는 [CMFCToolBarButton 클래스](../mfc/reference/cmfctoolbarbutton-class.md)-예를 들어 클래스를 파생 [CMFCToolBarComboBoxButton 클래스](../mfc/reference/cmfctoolbarcomboboxbutton-class.md)를 [CMFCToolBarEditBoxButton 클래스](../mfc/reference/cmfctoolbareditboxbutton-class.md), [CMFCDropDownToolbarButton 클래스](../mfc/reference/cmfcdropdowntoolbarbutton-class.md), 또는 [CMFCToolBarMenuButton 클래스](../mfc/reference/cmfctoolbarmenubutton-class.md)합니다.
+이 문서에서는 Windows 컨트롤 도구 모음을 포함 하는 도구 모음 단추를 추가 하는 방법을 설명 합니다. MFC 도구 모음 단추 이어야 합니다는 [CMFCToolBarButton 클래스](../mfc/reference/cmfctoolbarbutton-class.md)-예를 들어 클래스를 파생 [CMFCToolBarComboBoxButton 클래스](../mfc/reference/cmfctoolbarcomboboxbutton-class.md)를 [CMFCToolBarEditBoxButton 클래스](../mfc/reference/cmfctoolbareditboxbutton-class.md), [CMFCDropDownToolbarButton 클래스](../mfc/reference/cmfcdropdowntoolbarbutton-class.md), 또는 [CMFCToolBarMenuButton 클래스](../mfc/reference/cmfctoolbarmenubutton-class.md)합니다.
 
 ## <a name="adding-controls-to-toolbars"></a>도구 모음에 컨트롤 추가
 
 도구 모음에 컨트롤을 추가 하려면 다음 단계를 따르십시오.
 
-1. 부모 도구 모음 리소스의 단추에 대한 더미 리소스 ID를 예약합니다. 사용 하 여 단추를 만드는 방법에 대 한 자세한 합니다 **도구 모음 편집기** Visual Studio에 표시 합니다 [도구 모음 편집기](../windows/toolbar-editor.md) 항목.
+1. 부모 도구 모음 리소스의 단추에 대한 더미 리소스 ID를 예약합니다. 사용 하 여 단추를 만드는 방법에 대 한 자세한 합니다 **도구 모음 편집기** Visual Studio에 표시 합니다 [도구 모음 편집기](../windows/toolbar-editor.md) 문서.
 
 1. 부모 도구 모음에서 모든 비트맵의 단추에 대한 도구 모음 이미지(단추 아이콘)를 예약합니다.
 
-1. `AFX_WM_RESETTOOLBAR` 메시지를 처리하는 메시지 처리기에서 다음을 수행합니다.
+1. 처리 하는 메시지 처리기를 `AFX_WM_RESETTOOLBAR` 메시지에서 다음 단계를 수행 합니다.
 
    1. `CMFCToolbarButton` 파생 클래스를 사용하여 단추 컨트롤을 생성합니다.
 
@@ -45,13 +45,13 @@ ms.locfileid: "47169751"
 
 ## <a name="toolbar-controls-and-customization"></a>도구 모음 컨트롤 및 사용자 지정
 
-**명령** 탭의 **사용자 지정** 대화 상자에 응용 프로그램에서 사용할 수 있는 명령 목록을 포함 합니다. 기본적으로 **사용자 지정** 대화 상자 응용 프로그램 메뉴를 처리 하 고 각 메뉴 범주의 표준 도구 모음 단추의 목록을 작성 합니다. 도구 모음 컨트롤을 제공 하는 확장된 된 기능을 유지 하기 위해에서 사용자 지정 컨트롤을 사용 하 여 표준 도구 모음 단추를 대체 해야 합니다 **사용자 지정** 대화 상자.
+**명령** 탭의 **사용자 지정** 대화 상자에 응용 프로그램에서 사용할 수 있는 명령 목록을 포함 합니다. 기본적으로 **사용자 지정** 대화 상자 응용 프로그램 메뉴를 처리 하 고 각 메뉴 범주의 표준 도구 모음 단추의 목록을 작성 합니다. 도구 모음 컨트롤을 제공 하는 확장된 된 기능을 유지 하려면에서 사용자 지정 컨트롤을 사용 하 여 표준 도구 모음 단추를 대체 해야 합니다 **사용자 지정** 대화 상자.
 
 만든 사용자 지정을 사용 하도록 설정 하면 합니다 **사용자 지정** 사용자 지정 처리기에서 대화 상자 `OnViewCustomize` 사용 하 여 합니다 [CMFCToolBarsCustomizeDialog 클래스](../mfc/reference/cmfctoolbarscustomizedialog-class.md) 클래스. 표시 합니다 **사용자 지정** 호출 하 여 대화 상자 [CMFCToolBarsCustomizeDialog::Create](../mfc/reference/cmfctoolbarscustomizedialog-class.md#create), 호출 [CMFCToolBarsCustomizeDialog::ReplaceButton](../mfc/reference/cmfctoolbarscustomizedialog-class.md#replacebutton) 바꾸려면 새 컨트롤을 사용 하 여 표준 단추입니다.
 
 ## <a name="example-creating-a-find-combo-box"></a>예제: 찾기 콤보 상자 만들기
 
-이 섹션에는 만드는 방법을 설명 합니다는 **찾을** 도구 모음에 나타나고 최근에 사용 된 검색 문자열을 포함 하는 콤보 상자 컨트롤입니다. 사용자는 컨트롤에 문자열을 입력한 다음 Enter 키를 눌러 문서를 검색하거나 Esc 키를 눌러 주 프레임에 포커스를 반환합니다. 이 예에서는 문서에 표시 되는 가정를 [CEditView 클래스](../mfc/reference/ceditview-class.md)-뷰를 파생 합니다.
+이 섹션에는 만드는 방법을 설명 합니다는 **찾을** 콤보 상자 컨트롤 도구 모음에 표시 되는 사용 된 최근 검색 문자열을 포함 합니다. 사용자는 컨트롤에 문자열을 입력한 다음 Enter 키를 눌러 문서를 검색하거나 Esc 키를 눌러 주 프레임에 포커스를 반환합니다. 이 예에서는 문서에 표시 되는 가정를 [CEditView 클래스](../mfc/reference/ceditview-class.md)-뷰를 파생 합니다.
 
 ### <a name="creating-the-find-control"></a>찾기 컨트롤 만들기
 
@@ -72,7 +72,7 @@ ms.locfileid: "47169751"
 
 1. `CFindComboBox` 클래스에서 `PreTranslateMessage` 가상 메서드를 재정의합니다. 이 메서드를 처리 하는 데 콤보 상자를 통해 합니다 [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) 메시지입니다. 사용자가 Esc 키를 누르면(`VK_ESCAPE`) 주 프레임 창으로 포커스를 반환합니다. 사용자가 Enter 키를 누르면(`VK_ENTER`) `WM_COMMAND` 명령 ID를 포함하는 `ID_EDIT_FIND_COMBO` 메시지를 주 프레임 창에 게시합니다.
 
-1. 클래스를 만듭니다는 **찾을** 에서 파생 되는 콤보 상자 단추 [CMFCToolBarComboBoxButton 클래스](../mfc/reference/cmfctoolbarcomboboxbutton-class.md)합니다. 이 예제에서는 `CFindComboButton`이라는 이름으로 지정됩니다.
+1. 클래스를 만듭니다는 **찾을** 에서 파생 되는 콤보 상자 단추 [CMFCToolBarComboBoxButton 클래스](../mfc/reference/cmfctoolbarcomboboxbutton-class.md)합니다. 이 예제에서는 라는 `CFindComboButton`합니다.
 
 1. `CMFCToolbarComboBoxButton`의 생성자에는 세 개의 매개 변수(단추의 명령 ID, 단추 이미지 인덱스 및 콤보 상자의 스타일)가 있습니다. 이러한 매개 변수를 다음과 같이 설정합니다.
 

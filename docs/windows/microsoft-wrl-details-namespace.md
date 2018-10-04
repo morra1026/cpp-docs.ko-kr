@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3dd07ead0608657597a81b239732347f67455273
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f95eaa49db5e09bceaefafc16312250d823e5d5c
+ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436886"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48250395"
 ---
 # <a name="microsoftwrldetails-namespace"></a>Microsoft::WRL::Details 네임스페이스
 
@@ -43,7 +43,7 @@ namespace Microsoft::WRL::Details;
 |[MakeAllocator 클래스](../windows/makeallocator-class.md)|약한 참조 지원을 유무는 활성화 가능한 클래스에 대 한 메모리를 할당합니다.|
 |[ModuleBase 클래스](../windows/modulebase-class.md)|기본 클래스를 나타냅니다 합니다 [모듈](../windows/module-class.md) 클래스입니다.|
 |[RemoveIUnknown 클래스](../windows/removeiunknown-class.md)|해당 하는 형식을 만들 수는 `IUnknown`-기반, 하지만 형식은 비가상 `QueryInterface`를 `AddRef`, 및 `Release` 메서드.|
-|[WeakReference 클래스](../windows/weakreference-class1.md)|나타냅니다는 *약한 참조* Windows 런타임 또는 클래식 COM.를 사용 하 여 사용할 수 있는 약한 참조는 액세스할 수 있거나 액세스할 수 없는 개체를 나타냅니다.|
+|[WeakReference 클래스](../windows/weakreference-class.md)|나타냅니다는 *약한 참조* Windows 런타임 또는 클래식 COM.를 사용 하 여 사용할 수 있는 약한 참조는 액세스할 수 있거나 액세스할 수 없는 개체를 나타냅니다.|
 
 ### <a name="structures"></a>구조체
 
@@ -84,7 +84,7 @@ namespace Microsoft::WRL::Details;
 |[ActivationFactoryCallback 함수](../windows/activationfactorycallback-function.md)|지정 된 활성화 ID에 대 한 활성화 팩터리를 가져옵니다.|
 |[Move 함수](../windows/move-function.md)|다른 곳에서 지정 된 인수를 이동합니다.|
 |[RaiseException 함수](../windows/raiseexception-function.md)|호출 스레드에서 예외가 발생 합니다.|
-|[Swap 함수(Windows Runtime C++ 템플릿 라이브러리)](../windows/swap-function-windows-runtime-cpp-template-library.md)|두 개의 지정 된 인수 값을 교환 합니다.|
+|[Swap 함수 (WRL)](../windows/swap-function-wrl.md)|두 개의 지정 된 인수 값을 교환 합니다.|
 |[TerminateMap 함수](../windows/terminatemap-function.md)|지정된 된 모듈의 클래스 팩터리를 종료합니다.|
 
 ## <a name="requirements"></a>요구 사항

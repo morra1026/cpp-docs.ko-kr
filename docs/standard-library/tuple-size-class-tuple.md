@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 883e7bdefe4bc1424dfea343d8d473015e6387d6
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 4169532a6aff64d24bdff59debcb675a35d72f06
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45700221"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48233608"
 ---
 # <a name="tuplesize-class"></a>tuple_size 클래스
 
@@ -105,24 +105,29 @@ int main()
 {
     MyTuple c0(0, 1.5, 2, 3.7);
 
-    // display contents " 0 1 2 3"
-    cout << " " << get<0>(c0);
+    // display contents "0 1 2 3"
+    cout << get<0>(c0);
     cout << " " << get<1>(c0);
     cout << " " << get<2>(c0);
     cout << " " << get<3>(c0) << endl;
 
-    // display size " 4"
+    // display size "4"
     cout << " " << tuple_size<MyTuple>::value << endl;
 }
 ```
 
 ```Output
- 0 1.5 2 3.7
+0 1.5 2 3.7
+4
 ```
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<튜플 > **헤더:** \<배열 > (배열 특수화 용) **헤더:** \<유틸리티 > (쌍 특수화 용)
+**헤더:** \<tuple>
+
+**헤더:** \<array>(배열 특수화용)
+
+**헤더:** \<utility>(쌍 특수화용)
 
 **네임스페이스:** std
 

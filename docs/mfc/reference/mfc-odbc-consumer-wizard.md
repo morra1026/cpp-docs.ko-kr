@@ -1,7 +1,7 @@
 ---
 title: MFC ODBC 소비자 마법사 | Microsoft Docs
 ms.custom: ''
-ms.date: 09/17/2018
+ms.date: 10/03/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -17,16 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2df730c5ee38c41cc6f40ac7000802bbe0bbb30d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 23a264c48f0a03888f8b6ac744129de75d8ad757
+ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400317"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48250473"
 ---
 # <a name="mfc-odbc-consumer-wizard"></a>MFC ODBC 소비자 마법사
 
-여기 "검색 결과" 요약을 삽입 합니다.
+> [!WARNING]
+> Visual Studio 2017 버전 15.9에서에서이 코드 마법사는 사용 되지 않으며 Visual Studio의 이후 버전에서 제거 됩니다. 이 마법사는 거의 사용 되었습니다. 이 마법사를 제거 하 여 ATL 및 MFC에 대 한 일반 지원을 받지 않습니다. 이 사용 중단에 대 한 의견을 공유 하려는 경우를 완료 하십시오 [이 설문 조사](https://www.surveymonkey.com/r/QDWKKCN)합니다. 여러분의 의견을 중요합니다.
 
 이 마법사는 지정 된 데이터 원본에 액세스 하는 데 필요한 ODBC 레코드 집합 클래스와 데이터 바인딩을 설정 합니다.
 

@@ -1,7 +1,7 @@
 ---
 title: ATL OLE DB 공급자 마법사 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/03/2018
 ms.technology:
 - cpp-atl
 ms.topic: reference
@@ -17,16 +17,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15104e0252ad6994b6220b433c7324085199440c
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6857bf80aaaad36b4dcfc4fbf1330eccd03f971a
+ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717212"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48250356"
 ---
 # <a name="atl-ole-db-provider-wizard"></a>ATL OLE DB 공급자 마법사
 
 이 마법사에서는 OLE DB 공급자를 구성 하는 클래스를 만듭니다.
+
+> [!WARNING]
+> Visual Studio 2017 버전 15.9에서에서이 코드 마법사는 사용 되지 않으며 Visual Studio의 이후 버전에서 제거 됩니다. 이 마법사는 거의 사용 되었습니다. 이 마법사를 제거 하 여 ATL 및 MFC에 대 한 일반 지원을 받지 않습니다. 이 사용 중단에 대 한 의견을 공유 하려는 경우를 완료 하십시오 [이 설문 조사](https://www.surveymonkey.com/r/QDWKKCN)합니다. 여러분의 의견을 중요합니다.
+
 
 ## <a name="remarks"></a>설명
 

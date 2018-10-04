@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48efa5d85ac6c7ba7e989cc55196f12fb391fa6d
-ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
+ms.openlocfilehash: 899ddba8ee72039702f05b0d369b79e347f7db7e
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169725"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235609"
 ---
 # <a name="walkthrough-adding-a-ctaskdialog-to-an-application"></a>연습: 응용 프로그램에 CTaskDialog 추가
 
@@ -43,7 +43,7 @@ ms.locfileid: "47169725"
 
 ## <a name="replacing-a-windows-message-box-with-a-ctaskdialog"></a>Windows 메시지 상자를 CTaskDialog로 대체
 
-다음 절차에서는 Windows 메시지 상자를 대체하는 `CTaskDialog`의 가장 기본적인 사용법을 보여 줍니다. 또한 이 예제에서는 작업 대화 상자와 연결된 아이콘을 변경합니다. 아이콘을 변경하면 `CTaskDialog` 가 Windows 메시지 상자와 동일하게 표시됩니다.
+다음 절차에서는 Windows 메시지 상자를 대체하는 `CTaskDialog`의 가장 기본적인 사용법을 보여 줍니다. 또한 이 예제에서는 작업 대화 상자와 연결된 아이콘을 변경합니다. 아이콘을 변경 하면는 `CTaskDialog` 동일한 Windows 메시지 상자를 표시 합니다.
 
 ### <a name="to-replace-a-windows-message-box-with-a-ctaskdialog"></a>Windows 메시지 상자를 CTaskDialog로 대체하려면
 
@@ -61,7 +61,7 @@ ms.locfileid: "47169725"
     CString emptyString;
     ```
 
-1. 4단계의 코드 뒤에 다음 코드를 추가합니다. 이 코드를 사용하면 사용자 컴퓨터에서 `CTaskDialog`가 지원됩니다. 대화 상자가 지원되지 않는 경우 응용 프로그램에 Windows 메시지 상자가 대신 표시됩니다.
+1. 4단계의 코드 뒤에 다음 코드를 추가합니다. 이 코드를 사용하면 사용자 컴퓨터에서 `CTaskDialog`가 지원됩니다. 대화 상자 지원 되지 않는 경우 응용 프로그램 대신 Windows 메시지 상자를 표시 합니다.
 
     ```cpp
     if (CTaskDialog::IsSupported())
@@ -92,7 +92,7 @@ ms.locfileid: "47169725"
     taskDialog.DoModal();
     ```
 
-`CTaskDialog` 를 Windows 메시지 상자와 동일한 아이콘으로 표시하지 않으려는 경우 7단계를 생략할 수 있습니다. 이 단계를 생략하면 `CTaskDialog` 가 아무 아이콘 없이 응용 프로그램에 표시됩니다.
+하지 못하도록 하려는 경우에 7 단계를 방지할 수 있습니다는 `CTaskDialog` Windows 메시지 상자와 동일한 아이콘을 표시 합니다. 해당 단계를 방지 하는 경우는 `CTaskDialog` 응용 프로그램이 표시 하는 경우에 아이콘이 없습니다.
 
 응용 프로그램을 컴파일하고 실행합니다. 응용 프로그램이 시작된 후 작업 대화 상자가 표시됩니다.
 
@@ -102,7 +102,7 @@ ms.locfileid: "47169725"
 
 ### <a name="to-add-functionality-to-the-ctaskdialog"></a>CTaskDialog에 기능을 추가하려면
 
-1. **리소스 뷰**로 이동합니다. **리소스 뷰**가 보이지 않는 경우 **뷰** 메뉴에서 열 수 있습니다.
+1. **리소스 뷰**로 이동합니다. 볼 수 없는 경우는 **리소스 뷰**에서 열 수 있습니다 합니다 **보기** 메뉴.
 
 1. **문자열 테이블** 폴더를 선택할 수 있을 때까지 **리소스 뷰** 를 확장합니다. 폴더를 확장하고 **문자열 테이블** 항목을 두 번 클릭합니다.
 
@@ -181,7 +181,7 @@ ms.locfileid: "47169725"
 
 ### <a name="to-display-a-ctaskdialog-without-creating-a-ctaskdialog-object"></a>CTaskDialog 개체를 만들지 않고 CTaskDialog를 표시하려면
 
-1. MyProject.cpp 파일을 엽니다(아직 열려 있지 않은 경우).
+1. 아직 열려 있지 않은 경우 MyProject.cpp 파일을 엽니다.
 
 1. `if (CTaskDialog::IsSupported())` 문에 대한 오른쪽 대괄호로 이동합니다.
 
@@ -197,7 +197,7 @@ ms.locfileid: "47169725"
 
 응용 프로그램을 컴파일하고 실행합니다. 두 개의 작업 대화 상자가 응용 프로그램에 표시됩니다. 첫 번째 대화 상자가 표시 됩니다는 **CTaskDialog에 기능을 추가 하려면** 프로시저 않으면 두 번째 대화 상자는 마지막 절차에서 합니다.
 
-이러한 예제는 `CTaskDialog`에 사용 가능한 일부 옵션만 보여 주지만 시작하는 데 도움이 될 수 있습니다. 클래스에 대한 전체 설명은 [CTaskDialog Class](../mfc/reference/ctaskdialog-class.md) 를 참조하세요.
+이러한 예제에 대 한 모든 사용 가능한 옵션 설명 하지는 `CTaskDialog`, 있지만 시작 하는 데 도움이 됩니다. 클래스에 대한 전체 설명은 [CTaskDialog Class](../mfc/reference/ctaskdialog-class.md) 를 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 

@@ -1,28 +1,32 @@
 ---
 title: CriticalSectionTraits 구조체 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/26/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits
+- corewrappers/Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits::GetInvalidValue
+- corewrappers/Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits::Unlock
 dev_langs:
 - C++
 helpviewer_keywords:
-- CriticalSectionTraits structure
+- Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits structure
+- Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits::GetInvalidValue method
+- Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits::Unlock method
 ms.assetid: c515a1b5-4eb0-40bc-9035-c4d9352c9de7
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6d15f65ecc2253556a6812cfb90ef78f90c7fb29
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 420ab1019dfa2e95e00e366c64509178ad20e685
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42594736"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234348"
 ---
 # <a name="criticalsectiontraits-structure"></a>CriticalSectionTraits 구조체
 
@@ -38,16 +42,16 @@ struct CriticalSectionTraits;
 
 ### <a name="public-typedefs"></a>공용 Typedefs
 
-|이름|설명|
-|----------|-----------------|
-|`Type`|A **typedef** 임계 영역에 대 한 포인터를 정의 하는 합니다. `Type` 로 정의 된 `typedef CRITICAL_SECTION* Type;`합니다.|
+이름   | 설명
+------ | -----------------------------------------------------------------------------------------------------------------
+`Type` | `typedef` 임계 영역에 대 한 포인터를 정의 하는 합니다. `Type` 로 정의 된 `typedef CRITICAL_SECTION* Type;`합니다.
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
-|----------|-----------------|
-|[CriticalSectionTraits::GetInvalidValue 메서드](../windows/criticalsectiontraits-getinvalidvalue-method.md)|전문적으로 다루는 `CriticalSection` 템플릿 서식 파일은 항상 유효한 수 있도록 합니다.|
-|[CriticalSectionTraits::Unlock 메서드](../windows/criticalsectiontraits-unlock-method.md)|특수화는 `CriticalSection` 를 지정 된 임계 영역 개체의 해제 소유권 지원 하므로 템플릿.|
+이름                                                       | 설명
+---------------------------------------------------------- | -----------------
+[Criticalsectiontraits:: Getinvalidvalue](#getinvalidvalue) | 전문적으로 다루는 `CriticalSection` 템플릿 서식 파일은 항상 유효한 수 있도록 합니다.
+[Criticalsectiontraits:: Unlock](#unlock)                   | 특수화는 `CriticalSection` 를 지정 된 임계 영역 개체의 해제 소유권 지원 하므로 템플릿.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -59,6 +63,39 @@ struct CriticalSectionTraits;
 
 **Namespace:** Microsoft::WRL::Wrappers::HandleTraits
 
-## <a name="see-also"></a>참고 항목
+## <a name="getinvalidvalue"></a>Criticalsectiontraits:: Getinvalidvalue
 
-[Microsoft::WRL::Wrappers::HandleTraits 네임스페이스](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+전문적으로 다루는 `CriticalSection` 템플릿 서식 파일은 항상 유효한 수 있도록 합니다.
+
+```cpp
+inline static Type GetInvalidValue();
+```
+
+### <a name="return-value"></a>반환 값
+
+잘못 된 중요 한 섹션에 대 한 포인터를 항상 반환합니다.
+
+### <a name="remarks"></a>설명
+
+합니다 `Type` 한정자로 정의 된 `typedef CRITICAL_SECTION* Type;`합니다.
+
+## <a name="unlock"></a>Criticalsectiontraits:: Unlock
+
+특수화는 `CriticalSection` 를 지정 된 임계 영역 개체의 해제 소유권 지원 하므로 템플릿.
+
+```cpp
+inline static void Unlock(
+   _In_ Type cs
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*cs*<br/>
+임계 영역 개체에 대 한 포인터입니다.
+
+### <a name="remarks"></a>설명
+
+합니다 `Type` 한정자로 정의 된 `typedef CRITICAL_SECTION* Type;`합니다.
+
+자세한 내용은 **LeaveCriticalSection 함수** 에 **동기화 함수** Windows API 설명서의 섹션입니다.

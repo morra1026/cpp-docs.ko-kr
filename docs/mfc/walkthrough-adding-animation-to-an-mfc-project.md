@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 326535395599a76f521100475cfc80b014ba6cd9
-ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
+ms.openlocfilehash: 16613425633f55eeed152e86c1b4fea7f00a784c
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169439"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234069"
 ---
 # <a name="walkthrough-adding-animation-to-an-mfc-project"></a>연습: MFC 프로젝트에 애니메이션 추가
 
@@ -100,11 +100,11 @@ ms.locfileid: "47169439"
 
 1. 에 **MFC 클래스 마법사**, 클릭 **확인**합니다.
 
-1. 편집기에서 열려 있는 MFCAnimationWalkthroughView.cpp 저장 하지만 닫지 마세요.
+1. 편집기에서 열려 있는 MFCAnimationWalkthroughView.cpp 저장 되지만 창을 닫지 마세요.
 
 ### <a name="to-add-an-animated-object-to-the-project"></a>프로젝트에 애니메이션이 적용 된 개체를 추가 하려면
 
-1. 솔루션 탐색기에서 MFCAnimationWalkthroughView.h 수정에 대 한 열을 두 번 클릭 합니다. 정의 바로 앞의 `CMFCAnimationWalkthroughView` 클래스 애니메이션 개체를 사용 하 여 일정 충돌을 처리 하는 사용자 지정 애니메이션 컨트롤러를 만들려면 다음 코드를 추가 합니다.
+1. **솔루션 탐색기**, MFCAnimationWalkthroughView.h 수정에 대 한 열을 두 번 클릭 합니다. 정의 바로 앞의 `CMFCAnimationWalkthroughView` 클래스 애니메이션 개체를 사용 하 여 일정 충돌을 처리 하는 사용자 지정 애니메이션 컨트롤러를 만들려면 다음 코드를 추가 합니다.
 
     ```cpp
     class CCustomAnimationController : public CAnimationController
