@@ -1,28 +1,34 @@
 ---
 title: 클래스를 세마포 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/25/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::Semaphore
+- corewrappers/Microsoft::WRL::Wrappers::Semaphore::Lock
+- corewrappers/Microsoft::WRL::Wrappers::Semaphore::operator=
+- corewrappers/Microsoft::WRL::Wrappers::Semaphore::Semaphore
 dev_langs:
 - C++
 helpviewer_keywords:
-- Semaphore class
+- Microsoft::WRL::Wrappers::Semaphore class
+- Microsoft::WRL::Wrappers::Semaphore::Lock method
+- Microsoft::WRL::Wrappers::Semaphore::operator= operator
+- Microsoft::WRL::Wrappers::Semaphore::Semaphore, constructor
 ms.assetid: ded53526-17b4-4381-9c60-ea5e77363db6
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bb0b3d5dff91bcb1fb1688c7b1a9314fe7ebf00c
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 269b3229a0755e88d55fc4fa5d14b843345ccc44
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598417"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234455"
 ---
 # <a name="semaphore-class"></a>Semaphore 클래스
 
@@ -38,33 +44,27 @@ class Semaphore : public HandleT<HandleTraits::SemaphoreTraits>
 
 ### <a name="public-typedefs"></a>공용 Typedefs
 
-|이름|설명|
-|----------|-----------------|
-|`SyncLock`|동기 잠금을 지 원하는 클래스에 대 한 동의어입니다.|
+이름       | 설명
+---------- | ------------------------------------------------------
+`SyncLock` | 동기 잠금을 지 원하는 클래스에 대 한 동의어입니다.
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
-|----------|-----------------|
-|[Semaphore::Semaphore 생성자](../windows/semaphore-semaphore-constructor.md)|새 인스턴스를 초기화 합니다 **세마포** 클래스입니다.|
+이름                               | 설명
+---------------------------------- | ----------------------------------------------------
+[Semaphore:: semaphore](#semaphore) | `Semaphore` 클래스의 새 인스턴스를 초기화합니다.
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
-|----------|-----------------|
-|[InvokeHelper::Invoke 메서드](../windows/invokehelper-invoke-method.md)|지정 된 인수 개수를 포함 하는 시그니처를 가진 이벤트 처리기를 호출 합니다.|
-
-### <a name="public-data-members"></a>공용 데이터 멤버
-
-|이름|설명|
-|----------|-----------------|
-|[Semaphore::Lock 메서드](../windows/semaphore-lock-method.md)|현재 개체 또는 지정된 된 핸들과 연결 된 개체가 될 때까지 대기한 신호를 받은 상태 이거나 지정한 시간 제한 간격이 경과 합니다.|
+이름                     | 설명
+------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------
+[Semaphore:: lock](#lock) | 현재 개체 또는 지정된 된 핸들과 연결 된 개체가 될 때까지 대기한 신호를 받은 상태 이거나 지정한 시간 제한 간격이 경과 합니다.
 
 ### <a name="public-operators"></a>Public 연산자
 
-|이름|설명|
-|----------|-----------------|
-|[Semaphore::operator= 연산자](../windows/semaphore-operator-assign-operator.md)|지정 된 핸들을 이동 하는 **세마포** 개체를 현재 **세마포** 개체입니다.|
+이름                                     | 설명
+---------------------------------------- | ---------------------------------------------------------------------------------------
+[Semaphore:: operator =](#operator-assign) | 지정 된 핸들을 이동 하는 `Semaphore` 개체를 현재 `Semaphore` 개체입니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -76,6 +76,67 @@ class Semaphore : public HandleT<HandleTraits::SemaphoreTraits>
 
 **Namespace:** Microsoft::WRL::Wrappers
 
-## <a name="see-also"></a>참고 항목
+## <a name="lock"></a>Semaphore:: lock
 
-[Microsoft::WRL::Wrappers 네임스페이스](../windows/microsoft-wrl-wrappers-namespace.md)
+현재 개체를 때까지 대기 또는 `Semaphore` 개체와 연결 된 지정된 된 핸들에 신호를 받은 상태 이거나 지정한 시간 제한 간격이 경과 합니다.
+
+```cpp
+SyncLock Lock(
+   DWORD milliseconds = INFINITE
+);
+
+static SyncLock Lock(
+   HANDLE h,
+   DWORD milliseconds = INFINITE
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*시간 (밀리초)*<br/>
+제한 시간 간격(밀리초)입니다. 기본값은 INFINITE으로, 무제한 대기합니다.
+
+*h*<br/>
+에 대 한 핸들을 `Semaphore` 개체입니다.
+
+### <a name="return-value"></a>반환 값
+
+`Details::SyncLockWithStatusT<HandleTraits::SemaphoreTraits>`입니다.
+
+## <a name="operator-assign"></a>Semaphore:: operator =
+
+지정 된 핸들을 이동 하는 `Semaphore` 개체를 현재 `Semaphore` 개체입니다.
+
+```cpp
+Semaphore& operator=(
+   _Inout_ Semaphore&& h
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*h*<br/>
+대 한 Rvalue 참조는 `Semaphore` 개체입니다.
+
+### <a name="return-value"></a>반환 값
+
+현재에 대 한 참조 `Semaphore` 개체입니다.
+
+## <a name="semaphore"></a>Semaphore:: semaphore
+
+`Semaphore` 클래스의 새 인스턴스를 초기화합니다.
+
+```cpp
+explicit Semaphore(
+   HANDLE h
+);
+
+WRL_NOTHROW Semaphore(
+   _Inout_ Semaphore&& h
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*h*<br/>
+핸들 또는 rvalue 참조에는 `Semaphore` 개체입니다.

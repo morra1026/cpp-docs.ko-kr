@@ -17,18 +17,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 017dac5f9cba676980629109b53f4b2aec4af940
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 57f6e24ec664128a47813c29ce07a4272ce4a771
+ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713221"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48250369"
 ---
 # <a name="atl-active-server-page-component-wizard"></a>ATL Active Server Page 구성 요소 마법사
 
 이 마법사는 ASP Active Server Pages () 구성 요소를 프로젝트에 삽입합니다. Microsoft 인터넷 정보 서비스 (IIS)의 향상 된 웹 페이지 개발 아키텍처의 일부로 ASP 구성 요소를 사용 합니다.
 
 이 마법사를 사용 하 여 구성의 스레딩 모델 및 집계 지원을 지정할 수 있습니다. 오류 정보 인터페이스, 연결점 및 자유 스레드된 마샬링을 지원을 나타낼 수도 있습니다.
+
+> [!WARNING]
+> Visual Studio 2017 버전 15.9에서에서이 코드 마법사는 사용 되지 않으며 Visual Studio의 이후 버전에서 제거 됩니다. 이 마법사는 거의 사용 되었습니다. 이 마법사를 제거 하 여 ATL 및 MFC에 대 한 일반 지원을 받지 않습니다. 이 사용 중단에 대 한 의견을 공유 하려는 경우를 완료 하십시오 [이 설문 조사](https://www.surveymonkey.com/r/QDWKKCN)합니다. 여러분의 의견을 중요합니다.
 
 ## <a name="remarks"></a>설명
 

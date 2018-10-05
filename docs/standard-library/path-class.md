@@ -1,7 +1,7 @@
 ---
 title: path 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 09/10/2018
+ms.date: 09/27/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -14,16 +14,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd8fa524d0c41d437575a61ff4e4456fd9933404
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 7674f07c92f8a0c9d8a9070f3f99e00dfde39140
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725311"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235466"
 ---
 # <a name="path-class"></a>path 클래스
 
-합니다 **경로** 형식의 개체를 저장 하는 클래스 `string_type`라는 `myname` 경로 이름으로 사용 하기 적합 한 표시를 위해 여기입니다. `string_type` 에 대 한 동의어 `basic_string<value_type>`, 여기서 `value_type` 의 동의어입니다 **char** Windows 아래에서 또는 **wchar_t** posix 합니다.
+합니다 **경로** 형식의 개체를 저장 하는 클래스 `string_type`라는 `myname` 경로 이름으로 사용 하기 적합 한 표시를 위해 여기입니다. `string_type` 에 대 한 동의어 `basic_string<value_type>`, 여기서 `value_type` 의 동의어입니다 **wchar_t** Windows에서 또는 **char** POSIX에서.
 
 자세한 내용 및 코드 예제를 보려면 [파일 시스템 탐색(C++)](../standard-library/file-system-navigation.md)을 참조하세요.
 

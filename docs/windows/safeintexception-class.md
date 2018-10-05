@@ -1,32 +1,36 @@
 ---
 title: SafeIntException 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/27/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - SafeIntException Class
+- SafeIntException
+- SafeIntException.SafeIntException
+- SafeIntException::SafeIntException
 dev_langs:
 - C++
 helpviewer_keywords:
 - SafeIntException class
+- SafeIntException, constructor
 ms.assetid: 88bef958-1f48-4d55-ad4f-d1f9581a293a
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0a0eda94c370f978bd04d7c2de1dd3e06237e490
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4ffd82f80b8af0b53ca86ca3daded84580e1e07b
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437717"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235739"
 ---
 # <a name="safeintexception-class"></a>SafeIntException 클래스
 
-합니다 `SafeInt` 클래스는 **SafeIntException** 수학 작업을 완료할 수 없습니다는 이유를 확인 하려면.
+합니다 `SafeInt` 클래스는 `SafeIntException` 수학 작업을 완료할 수 없습니다는 이유를 확인 하려면.
 
 ## <a name="syntax"></a>구문
 
@@ -38,16 +42,17 @@ class SafeIntException;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-[SafeIntException::SafeIntException](../windows/safeintexception-safeintexception.md)<br/>
-만듭니다는 **SafeIntException** 개체입니다.
+이름                                                    | 설명
+------------------------------------------------------- | ------------------------------------
+[SafeIntException::SafeIntException](#safeintexception) | `SafeIntException` 개체를 만듭니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 [SafeInt 클래스](../windows/safeint-class.md) 사용 하는 유일한 클래스는 **SafeIntException** 클래스입니다.
+합니다 [SafeInt 클래스](../windows/safeint-class.md) 사용 하는 유일한 클래스는 `SafeIntException` 클래스입니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
-[SafeIntException 클래스](../windows/safeintexception-class.md)
+`SafeIntException`
 
 ## <a name="requirements"></a>요구 사항
 
@@ -55,7 +60,27 @@ class SafeIntException;
 
 **Namespace:** msl:: utilities
 
-## <a name="see-also"></a>참고 항목
+## <a name="safeintexception"></a>Safeintexception:: Safeintexception
 
-[SafeInt 라이브러리](../windows/safeint-library.md)<br/>
-[SafeInt 클래스](../windows/safeint-class.md)
+`SafeIntException` 개체를 만듭니다.
+
+```cpp
+SafeIntException();
+
+SafeIntException(
+   SafeIntError code
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*코드*<br/>
+[in] 발생 한 오류를 설명 하는 열거형된 데이터 값입니다.
+
+### <a name="remarks"></a>설명
+
+가능한 값에 대 한 *코드* Safeint.h 파일에 정의 됩니다. 편의 위해 가능한 값도 여기에 나와 있습니다.
+
+- `SafeIntNoError`
+- `SafeIntArithmeticOverflow`
+- `SafeIntDivideByZero`

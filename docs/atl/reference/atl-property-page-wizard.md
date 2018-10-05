@@ -1,7 +1,7 @@
 ---
 title: ATL 속성 페이지 마법사 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/03/2018
 ms.technology:
 - cpp-atl
 ms.topic: reference
@@ -17,16 +17,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5a150a81ea26e34e05cbfb9199c734a1ccad9b7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 206fe83407421a7aabfd920214590a86e4727714
+ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46094197"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48250421"
 ---
 # <a name="atl-property-page-wizard"></a>ATL 속성 페이지 마법사
 
 이 마법사 [ATL 프로젝트에 속성 페이지 추가](../../atl/reference/adding-an-atl-property-page.md) 또는 MFC 프로젝트에 ATL 지원 합니다. 속성을 설정 하는 것에 대 한 사용자 인터페이스를 제공 하는 ATL 속성 페이지 (또는 메서드를 호출) 하나 이상의 COM 개체입니다.
+
+> [!WARNING]
+> Visual Studio 2017 버전 15.9에서에서이 코드 마법사는 사용 되지 않으며 Visual Studio의 이후 버전에서 제거 됩니다. 이 마법사는 거의 사용 되었습니다. 이 마법사를 제거 하 여 ATL 및 MFC에 대 한 일반 지원을 받지 않습니다. 이 사용 중단에 대 한 의견을 공유 하려는 경우를 완료 하십시오 [이 설문 조사](https://www.surveymonkey.com/r/QDWKKCN)합니다. 여러분의 의견을 중요합니다.
 
 ## <a name="remarks"></a>설명
 

@@ -1,28 +1,40 @@
 ---
 title: EventTargetArray 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/21/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - event/Microsoft::WRL::Details::EventTargetArray
+- event/Microsoft::WRL::Details::EventTargetArray::AddTail
+- event/Microsoft::WRL::Details::EventTargetArray::Begin
+- event/Microsoft::WRL::Details::EventTargetArray::End
+- event/Microsoft::WRL::Details::EventTargetArray::EventTargetArray
+- event/Microsoft::WRL::Details::EventTargetArray::Length
+- event/Microsoft::WRL::Details::EventTargetArray::~EventTargetArray
 dev_langs:
 - C++
 helpviewer_keywords:
-- EventTargetArray class
+- Microsoft::WRL::Details::EventTargetArray class
+- Microsoft::WRL::Details::EventTargetArray::AddTail method
+- Microsoft::WRL::Details::EventTargetArray::Begin method
+- Microsoft::WRL::Details::EventTargetArray::End method
+- Microsoft::WRL::Details::EventTargetArray::EventTargetArray, constructor
+- Microsoft::WRL::Details::EventTargetArray::Length method
+- Microsoft::WRL::Details::EventTargetArray::~EventTargetArray, destructor
 ms.assetid: e3cadb7c-2160-4cbb-a2f8-c28733d1e96d
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3be91f85838ceb557edd5def7d7984aaf8904ea5
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a02c571f33378ed65fc4b0c4efc7d1a82144279f
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42575667"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234710"
 ---
 # <a name="eventtargetarray-class"></a>EventTargetArray 클래스
 
@@ -38,25 +50,25 @@ class EventTargetArray : public Microsoft::WRL::RuntimeClass<Microsoft::WRL::Run
 
 이벤트 처리기의 배열을 나타냅니다.
 
-연관 된 이벤트 처리기는 [EventSource](../windows/eventsource-class.md) 개체는 저장의 보호 된 **EventTargetArray** 데이터 멤버입니다.
+연관 된 이벤트 처리기는 [EventSource](../windows/eventsource-class.md) 개체는 저장의 보호 된 `EventTargetArray` 데이터 멤버입니다.
 
 ## <a name="members"></a>멤버
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
-|----------|-----------------|
-|[EventTargetArray::EventTargetArray 생성자](../windows/eventtargetarray-eventtargetarray-constructor.md)|새 인스턴스를 초기화 합니다 **EventTargetArray** 클래스입니다.|
-|[EventTargetArray::~EventTargetArray 소멸자](../windows/eventtargetarray-tilde-eventtargetarray-destructor.md)|현재 초기화 취소 **EventTargetArray** 클래스입니다.|
+이름                                                           | 설명
+-------------------------------------------------------------- | -----------------------------------------------------------
+[Eventtargetarray:: Eventtargetarray](#eventtargetarray)        | `EventTargetArray` 클래스의 새 인스턴스를 초기화합니다.
+[EventTargetArray:: ~ EventTargetArray](#tilde-eventtargetarray) | 현재 초기화 취소 `EventTargetArray` 클래스입니다.
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
-|----------|-----------------|
-|[EventTargetArray::AddTail 메서드](../windows/eventtargetarray-addtail-method.md)|이벤트 처리기의 내부 배열의 끝에 지정된 된 이벤트 처리기를 추가합니다.|
-|[EventTargetArray::Begin 메서드](../windows/eventtargetarray-begin-method.md)|이벤트 처리기의 내부 배열에서 첫 번째 요소의 주소를 가져옵니다.|
-|[EventTargetArray::End 메서드](../windows/eventtargetarray-end-method.md)|이벤트 처리기의 내부 배열에서 마지막 요소의 주소를 가져옵니다.|
-|[EventTargetArray::Length 메서드](../windows/eventtargetarray-length-method.md)|이벤트 처리기의 내부 배열에 현재 요소 수를 가져옵니다.|
+이름                                  | 설명
+------------------------------------- | ---------------------------------------------------------------------------------------
+[Eventtargetarray:: Addtail](#addtail) | 이벤트 처리기의 내부 배열의 끝에 지정된 된 이벤트 처리기를 추가합니다.
+[Eventtargetarray:: Begin](#begin)     | 이벤트 처리기의 내부 배열에서 첫 번째 요소의 주소를 가져옵니다.
+[Eventtargetarray:: End](#end)         | 이벤트 처리기의 내부 배열에서 마지막 요소의 주소를 가져옵니다.
+[Eventtargetarray:: Length](#length)   | 이벤트 처리기의 내부 배열에 현재 요소 수를 가져옵니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -68,6 +80,117 @@ class EventTargetArray : public Microsoft::WRL::RuntimeClass<Microsoft::WRL::Run
 
 **Namespace:** Microsoft::WRL::Details
 
-## <a name="see-also"></a>참고 항목
+## <a name="tilde-eventtargetarray"></a>EventTargetArray:: ~ EventTargetArray
 
-[Microsoft::WRL::Details 네임스페이스](../windows/microsoft-wrl-details-namespace.md)
+WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
+
+```cpp
+~EventTargetArray();
+```
+
+### <a name="remarks"></a>설명
+
+현재 초기화 취소 `EventTargetArray` 클래스입니다.
+
+## <a name="addtail"></a>Eventtargetarray:: Addtail
+
+WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
+
+```cpp
+void AddTail(
+   _In_ IUnknown* element
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*요소*<br/>
+추가할 이벤트 처리기에 대 한 포인터입니다.
+
+### <a name="remarks"></a>설명
+
+이벤트 처리기의 내부 배열의 끝에 지정된 된 이벤트 처리기를 추가합니다.
+
+`AddTail()` 만 내부적으로 사용할 수는 `EventSource` 클래스입니다.
+
+## <a name="begin"></a>Eventtargetarray:: Begin
+
+WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
+
+```cpp
+ComPtr<IUnknown>* Begin();
+```
+
+### <a name="return-value"></a>반환 값
+
+이벤트 처리기의 내부 배열에서 첫 번째 요소의 주소입니다.
+
+### <a name="remarks"></a>설명
+
+이벤트 처리기의 내부 배열에서 첫 번째 요소의 주소를 가져옵니다.
+
+## <a name="end"></a>Eventtargetarray:: End
+
+WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
+
+```cpp
+ComPtr<IUnknown>* End();
+```
+
+### <a name="return-value"></a>반환 값
+
+이벤트 처리기의 내부 배열에서 마지막 요소의 주소입니다.
+
+### <a name="remarks"></a>설명
+
+이벤트 처리기의 내부 배열에서 마지막 요소의 주소를 가져옵니다.
+
+## <a name="eventtargetarray"></a>Eventtargetarray:: Eventtargetarray
+
+WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
+
+```cpp
+EventTargetArray(
+   _Out_ HRESULT* hr,
+   size_t items
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*hr*<br/>
+이 생성자 작업을 수행한 후 매개 변수 *hr* 배열 할당 성공 또는 실패 여부를 나타냅니다. 다음 목록에 대 한 가능한 값을 보여 줍니다 *hr*합니다.
+
++   S_OK<br/>
+    작업에 성공했습니다.
+
++   E_OUTOFMEMORY<br/>
+    배열에 대 한 메모리를 할당할 수 없습니다.
+
++   S_FALSE<br/>
+    매개 변수 *항목* 0 보다 작거나 같음.
+
+*항목*<br/>
+할당할 배열의 요소 수입니다.
+
+### <a name="remarks"></a>설명
+
+`EventTargetArray` 클래스의 새 인스턴스를 초기화합니다.
+
+`EventTargetArray` 이벤트 처리기의 배열을 유지 하는 데 사용 되는 `EventSource` 개체입니다.
+
+## <a name="length"></a>Eventtargetarray:: Length
+
+WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
+
+```cpp
+size_t Length();
+```
+
+### <a name="return-value"></a>반환 값
+
+현재 이벤트 처리기의 내부 배열의 요소 개수입니다.
+
+### <a name="remarks"></a>설명
+
+이벤트 처리기의 내부 배열에 현재 요소 수를 가져옵니다.

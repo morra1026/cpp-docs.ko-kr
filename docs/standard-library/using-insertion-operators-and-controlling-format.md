@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51754b2b777523593118b0b0a88dfa4ac8803b20
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 60f82332f9dd0fa6d6e64beb2a5d793784471a1f
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959809"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234601"
 ---
 # <a name="using-insertion-operators-and-controlling-format"></a>삽입 연산자 사용 및 형식 제어
 
@@ -99,7 +99,7 @@ int main( )
    double values[] = { 1.23, 35.36, 653.7, 4358.24 };
    char *names[] = { "Zoot", "Jimmy", "Al", "Stan" };
    for( int i = 0; i < 4; i++ )
-      cout << setw( 6 )  << names[i]
+      cout << setw( 7 )  << names[i]
            << setw( 10 ) << values[i] << endl;
 }
 ```
@@ -107,10 +107,10 @@ int main( )
 합니다 `width` 멤버 함수에서 선언 됩니다 \<iostream >. `setw` 또는 다른 조작자를 인수와 함께 사용하는 경우 \<iomanip>를 포함해야 합니다. 출력에서 문자열은 너비가 6인 필드에 출력되고 정수는 너비가 10인 필드에 출력됩니다.
 
 ```Output
-  Zoot      1.23
- Jimmy     35.36
-    Al     653.7
-  Stan   4358.24
+   Zoot      1.23
+  Jimmy     35.36
+     Al     653.7
+   Stan   4358.24
 ```
 
 모두 `setw` 나 `width` 값을 자릅니다. 형식이 지정된 출력이 너비를 초과할 경우 전체 값이 출력되고 스트림의 전체 자릿수 설정이 적용됩니다. 둘 다 `setw` 고 `width` 다음 필드에만 영향을 줍니다. 한 필드가 출력된 후 필드 너비가 기본 동작(필요한 너비)으로 돌아갑니다. 그러나 다른 스트림 형식 옵션은 변경될 때까지 적용된 상태로 유지됩니다.
