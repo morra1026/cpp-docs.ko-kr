@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 2355a5341259978e402ecc6f8de5c684c9435e3a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5867f9524d897657641ab9db392d77585117a465
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433064"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234994"
 ---
 # <a name="hosting-a-windows-form-user-control-as-an-mfc-dialog-box"></a>Windows Form 사용자 정의 컨트롤을 MFC 대화 상자로 호스팅
 
@@ -56,7 +56,7 @@ MFC를 사용 하는 Windows Forms을 보여 주는 샘플 응용 프로그램�
 
 1. 새 클래스를 서브클래싱하는 추가 `CDialog`합니다.
 
-     프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 서브클래싱하는 CHostForWinForm 이라는 MFC 클래스 추가 `CDialog`합니다. 대화 상자 리소스 않아도 되므로 리소스 ID를 삭제할 수 있습니다 (리소스 보기를 선택, 대화 상자 폴더를 확장 한 다음 IDD_HOSTFORWINFORM 리소스를 삭제 합니다.  그런 다음 ID에 대 한 참조에서에서 제거 코드 합니다.).
+     프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 서브클래싱하는 CHostForWinForm 이라는 MFC 클래스 추가 `CDialog`합니다. 대화 상자 리소스 않아도 되므로 리소스 ID를 삭제할 수 있습니다 (선택 **리소스 뷰**를 확장 합니다 **대화 상자** 폴더 및 delete `IDD_HOSTFORWINFORM` 리소스입니다.  그런 다음 ID에 대 한 참조에서에서 제거 코드 합니다.).
 
 1. 바꿉니다 `CDialog` CHostForWinForm.h 및 CHostForWinForm.cpp 파일에서 `CWinFormsDialog<WindowsControlLibrary1::UserControl1>`합니다.
 

@@ -1,28 +1,32 @@
 ---
 title: SRWLockSharedTraits 구조체 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/27/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SRWLockSharedTraits
+- corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SRWLockSharedTraits::GetInvalidValue
+- corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SRWLockSharedTraits::Unlock
 dev_langs:
 - C++
 helpviewer_keywords:
-- SRWLockSharedTraits structure
+- Microsoft::WRL::Wrappers::HandleTraits::SRWLockSharedTraits structure
+- Microsoft::WRL::Wrappers::HandleTraits::SRWLockSharedTraits::GetInvalidValue method
+- Microsoft::WRL::Wrappers::HandleTraits::SRWLockSharedTraits::Unlock method
 ms.assetid: 709cb51e-d70c-40b6-bdb4-d8eacf3af495
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 50bcfc728a2f228e4fa8444fe41cc25c3ff449a2
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5cfebfd1a6ccb1f243b534c9693a4402de574f17
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602248"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48233679"
 ---
 # <a name="srwlocksharedtraits-structure"></a>SRWLockSharedTraits 구조체
 
@@ -38,16 +42,16 @@ struct SRWLockSharedTraits;
 
 ### <a name="public-typedefs"></a>공용 Typedefs
 
-|이름|설명|
-|----------|-----------------|
-|`Type`|동의어에 대 한 포인터를 [SRWLOCK](../windows/srwlock-class.md) 클래스입니다.|
+이름   | 설명
+------ | --------------------------------------------------------------------------
+`Type` | 동의어에 대 한 포인터를 [SRWLOCK](../windows/srwlock-class.md) 클래스입니다.
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
-|----------|-----------------|
-|[SRWLockSharedTraits::GetInvalidValue 메서드](../windows/srwlocksharedtraits-getinvalidvalue-method.md)|검색을 **SRWLockSharedTraits** 항상 유효 하지 않은 개체입니다.|
-|[SRWLockSharedTraits::Unlock 메서드](../windows/srwlocksharedtraits-unlock-method.md)|지정 된 한 독점적인 제어권을 해제 `SRWLock` 개체입니다.|
+이름                                                     | 설명
+-------------------------------------------------------- | -----------------------------------------------------------------
+[Srwlocksharedtraits:: Getinvalidvalue](#getinvalidvalue) | 검색을 `SRWLockSharedTraits` 항상 유효 하지 않은 개체입니다.
+[Srwlocksharedtraits:: Unlock](#unlock)                   | 지정 된 한 독점적인 제어권을 해제 `SRWLock` 개체입니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -59,6 +63,29 @@ struct SRWLockSharedTraits;
 
 **Namespace:** Microsoft::WRL::Wrappers::HandleTraits
 
-## <a name="see-also"></a>참고 항목
+## <a name="getinvalidvalue"></a>Srwlocksharedtraits:: Getinvalidvalue
 
-[Microsoft::WRL::Wrappers::HandleTraits 네임스페이스](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+검색을 `SRWLockSharedTraits` 항상 유효 하지 않은 개체입니다.
+
+```cpp
+inline static Type GetInvalidValue();
+```
+
+### <a name="return-value"></a>반환 값
+
+에 대 한 핸들을 `SRWLockSharedTraits` 개체입니다.
+
+## <a name="unlock"></a>Srwlocksharedtraits:: Unlock
+
+지정 된 한 독점적인 제어권을 해제 `SRWLock` 개체입니다.
+
+```cpp
+inline static void Unlock(
+   _In_ Type srwlock
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*srwlock*<br/>
+에 대 한 핸들을 `SRWLock` 개체입니다.

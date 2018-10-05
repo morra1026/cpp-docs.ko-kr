@@ -14,39 +14,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df8fcc1f316b5281e8c6775492d402559d77f483
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: e8bfad1919863a58554604fe6d32b4563e57a14a
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857755"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235713"
 ---
 # <a name="writing-your-own-manipulators-without-arguments"></a>인수 없이 고유 조작자 작성
 
 인수를 사용하지 않는 조작자를 작성할 때는 클래스 파생이 필요하지 않으며 복잡한 매크로를 사용할 필요도 없습니다. 프린터에서 \<ESC>[ 쌍을 굵은 글꼴 모드로 입력해야 한다고 가정해 보겠습니다. 이 경우 스트림에 이 쌍을 직접 삽입할 수 있습니다.
 
 ```cpp
-cout <<"regular " <<'\033' <<'[' <<"boldface" <<endl;
+cout << "regular " << '\033' << '[' << "boldface" << endl;
 ```
 
 또는 문자를 삽입하는 `bold` 조작자를 정의할 수 있습니다.
 
 ```cpp
 ostream& bold(ostream& os) {
-    return os <<'\033' <<'[';
+    return os << '\033' << '[';
 }
-cout <<"regular " <<bold <<"boldface" <<endl;
+cout << "regular " << bold << "boldface" << endl;
 ```
 
 전역적으로 정의된 `bold` 함수는 `ostream` 참조 인수를 사용하며 `ostream` 참조를 반환합니다. 이 함수는 private 클래스 요소에 액세스할 필요가 없으므로 구성원 함수나 friend가 아닙니다. `bold` 함수는 스트림에 연결됩니다. 해당 함수 유형을 허용하기 위해 스트림의 `<<` 연산자가 다음과 같은 선언을 사용하여 오버로드되기 때문입니다.
 
 ```cpp
 _Myt& operator<<(ios_base& (__cdecl *_Pfn)(ios_base&))
-{     // call ios_base manipulator
- (*_Pfn)(*(ios_base *)this);
+{
+    // call ios_base manipulator
+    (*_Pfn)(*(ios_base *)this);
 
     return (*this);
-
 }
 ```
 

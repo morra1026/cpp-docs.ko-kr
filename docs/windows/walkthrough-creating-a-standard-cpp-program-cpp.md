@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d5481b9391d47887d85ca43746f1a6aff5f6eb92
-ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
+ms.openlocfilehash: 342716f3197713a584e2f0a1d20e4de75ece474b
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029621"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48234326"
 ---
 # <a name="walkthrough-creating-a-standard-c-program-c"></a>연습: 표준 C++ 프로그램(C++) 만들기
 
@@ -32,7 +32,7 @@ ms.locfileid: "47029621"
 
 C++ 프로그램을 직접 입력하거나 샘플 프로그램 중 하나를 이용할 수 있습니다. 이 연습에서는 샘플 프로그램은 콘솔 응용 프로그램입니다. 이 응용 프로그램에서는 C++ 표준 라이브러리 컨테이너 `set`을 사용합니다.
 
-Visual C++는 2003년에 제정된 C++ 표준대로 2단계 이름 조회, 예외 사양 및 내보내기와 같은 주요 변경대로 컴파일합니다. 또한 Visual C++ 람다 식, auto, static_assert, rvalue 참조 및 extern template과 같은 몇 가지 C++ 0x 기능을 지원합니다.
+Visual c + + 주요 예외가 2003 c + + 표준에 따릅니다: 2 단계 이름 조회, 예외 사양 및 내보내기. 또한 Visual C++ 람다 식, auto, static_assert, rvalue 참조 및 extern template과 같은 몇 가지 C++ 0x 기능을 지원합니다.
 
 > [!NOTE]
 > 사용 하 여 표준 준수가 필요한 경우를 `/Za` 컴파일러 옵션을 표준 Microsoft 확장을 사용 하지 않도록 설정 합니다. 자세한 내용은 [/Za, /Ze (언어 확장명 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md)합니다.
@@ -59,7 +59,7 @@ Visual C++는 2003년에 제정된 C++ 표준대로 2단계 이름 조회, 예�
    > [!NOTE]
    > Visual studio 2017 이전 버전의 경우 완료 합니다 **Win32 응용 프로그램 마법사**합니다. 클릭 **다음**에 있는지 확인 합니다 **콘솔 응용 프로그램** 을 선택 하 고 선택 취소 합니다 **미리 컴파일된 헤더** 상자. **마침**을 클릭합니다.
 
-1. **솔루션 탐색기**가 표시되지 않는 경우 메뉴의 **보기**에서 **솔루션 탐색기**를 선택할 수 있습니다.
+1. 하는 경우 **솔루션 탐색기** 에 표시 되지 않으면 합니다 **뷰** 메뉴에서 클릭 **솔루션 탐색기**합니다.
 
 1. 다음과 같이 새 소스 파일을 프로젝트에 추가 합니다.
 

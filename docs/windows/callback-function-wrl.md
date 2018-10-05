@@ -1,5 +1,5 @@
 ---
-title: 콜백 함수 (Windows Runtime c + + 템플릿 라이브러리) | Microsoft Docs
+title: 콜백 함수 (WRL) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 19bb77128eee9cc8af514e60730c3a39115695cc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ac4032184e8e8681b6cfa01ec48e8053af57b623
+ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426544"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48250978"
 ---
-# <a name="callback-function-windows-runtime-c-template-library"></a>Callback 함수(Windows Runtime C++ 템플릿 라이브러리)
+# <a name="callback-function-wrl"></a>콜백 함수 (WRL)
 
 멤버 함수가 콜백 메서드인 개체를 만듭니다.
 

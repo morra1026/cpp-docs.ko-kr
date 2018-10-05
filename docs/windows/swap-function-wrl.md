@@ -1,5 +1,5 @@
 ---
-title: Swap 함수 (Windows Runtime c + + 템플릿 라이브러리) | Microsoft Docs
+title: Swap 함수 (WRL) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 512619381ebf44ebcd451484403ec27e1ca869b8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 32efd35d162413de75d4e68c54593f03406aba0d
+ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437029"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48250973"
 ---
-# <a name="swap-function-windows-runtime-c-template-library"></a>Swap 함수(Windows Runtime C++ 템플릿 라이브러리)
+# <a name="swap-function-wrl"></a>Swap 함수 (WRL)
 
 WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습니다.
 

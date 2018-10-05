@@ -1,28 +1,32 @@
 ---
 title: HANDLENullTraits 구조체 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/27/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits
+- corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::Close
+- corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::GetInvalidValue
 dev_langs:
 - C++
 helpviewer_keywords:
-- HANDLENullTraits structure
+- Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits structure
+- Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::Close method
+- Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::GetInvalidValue method
 ms.assetid: 88a29a14-c516-40cb-a0ca-ee897a668623
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3a49a1a1ac4495c7697fc041f8fcf217850f09d8
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 517e861020c48d08f40c9683822e3df23cbf38a2
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609426"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235895"
 ---
 # <a name="handlenulltraits-structure"></a>HANDLENullTraits 구조체
 
@@ -38,16 +42,16 @@ struct HANDLENullTraits;
 
 ### <a name="public-typedefs"></a>공용 Typedefs
 
-|이름|설명|
-|----------|-----------------|
-|`Type`|핸들에 대 한 동의어입니다.|
+이름   | 설명
+------ | ---------------------
+`Type` | 핸들에 대 한 동의어입니다.
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
-|----------|-----------------|
-|[HANDLENullTraits::Close 메서드](../windows/handlenulltraits-close-method.md)|지정된 된 핸들을 닫습니다.|
-|[HANDLENullTraits::GetInvalidValue 메서드](../windows/handlenulltraits-getinvalidvalue-method.md)|잘못 된 핸들을 나타냅니다.|
+이름                                                  | 설명
+----------------------------------------------------- | -----------------------------
+[Handlenulltraits:: Close](#close)                     | 지정된 된 핸들을 닫습니다.
+[Handlenulltraits:: Getinvalidvalue](#getinvalidvalue) | 잘못 된 핸들을 나타냅니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -59,6 +63,33 @@ struct HANDLENullTraits;
 
 **Namespace:** Microsoft::WRL::Wrappers::HandleTraits
 
-## <a name="see-also"></a>참고 항목
+## <a name="close"></a>Handlenulltraits:: Close
 
-[Microsoft::WRL::Wrappers::HandleTraits 네임스페이스](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+지정된 된 핸들을 닫습니다.
+
+```cpp
+inline static bool Close(
+   _In_ Type h
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*h*<br/>
+핸들 닫기입니다.
+
+### <a name="return-value"></a>반환 값
+
+`true` 경우 처리할 *h* 이 고, 그렇지 않으면 닫은 `false`합니다.
+
+## <a name="getinvalidvalue"></a>Handlenulltraits:: Getinvalidvalue
+
+잘못 된 핸들을 나타냅니다.
+
+```cpp
+inline static Type GetInvalidValue();
+```
+
+### <a name="return-value"></a>반환 값
+
+항상 `nullptr`를 반환합니다.

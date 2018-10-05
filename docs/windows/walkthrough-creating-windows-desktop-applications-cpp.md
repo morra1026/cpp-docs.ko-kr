@@ -16,18 +16,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7e9541517852696073a3dbbff560bb6c44fd3264
-ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
+ms.openlocfilehash: 0b50234efa193adda081520667658f57e42de1b4
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029673"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235423"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (c + +)
 
 이 연습에서는 Visual Studio에서 기존 Windows 데스크톱 응용 프로그램을 만드는 방법을 보여 줍니다. 예제 응용 프로그램을 만든 Windows API를 사용 하 여 "Hello, Windows desktop!"를 표시 하려면 줍니다. 이 연습에서 개발하는 코드를 패턴으로 사용하여 다른 Windows 데스크톱 응용 프로그램을 만들 수 있습니다.
 
-Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API)는 Windows 응용 프로그램을 만들기 위한 C 언어 기반 프레임 워크입니다. 1980 년대부터 존재에서 되었습니다 하 고 수십 Windows 응용 프로그램을 만드는 데 사용 된 합니다. MFC, ATL 및.NET frameworks 등이 API를 기반으로 빌드되어 더욱 고급 및 프로그램을 쉽게 프레임 워크입니다. C +로 작성 된 UWP 및 스토어 앱에 대 한 가장 최신 코드 + WinRT 아래이 API를 사용 합니다. Windows API에 대 한 자세한 내용은 참조 하세요. [Windows API 인덱스](/windows/desktop/apiindex/windows-api-list)합니다. 여러 가지 방법으로 Windows 응용 프로그램을 만들고 했지만이 첫 번째입니다.
+Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API)는 Windows 응용 프로그램을 만들기 위한 C 언어 기반 프레임 워크입니다. 1980 년대부터 존재에서 되었습니다 하 고 수십 Windows 응용 프로그램을 만드는 데 사용 된 합니다. MFC, ATL 및.NET framework와 같은 Windows API를 기반으로 빌드되어 더욱 고급 및 프로그램을 쉽게 프레임 워크입니다. C +로 작성 된 UWP 및 스토어 앱에 대 한 가장 최신 코드 + WinRT 아래 Windows API를 사용 합니다. Windows API에 대 한 자세한 내용은 참조 하세요. [Windows API 인덱스](/windows/desktop/apiindex/windows-api-list)합니다. 여러 가지 방법으로 Windows 응용 프로그램을 만들어야 하지만 위에서 설명한 프로세스 첫 번째입니다.
 
 > [!IMPORTANT]
 > 간단히 하기 위해 일부 코드 문은 텍스트에서 생략 됩니다. 합니다 [코드를 작성](#build-the-code) 이 문서의 끝에 있는 섹션에는 전체 코드를 보여 줍니다.
@@ -140,13 +140,13 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    );
    ```
 
-   이 함수를 처리 하는 코드를 작성 *메시지* Windows에서 응용 프로그램에서 받는 경우 *이벤트* 발생 합니다. 사용자는 응용 프로그램에서 확인 단추를 선택 하면 Windows 메시지를 보냅니다 하 고 내 코드를 작성할 수 있습니다 예를 들어 프로그램 `WndProc` 적합 한 모든 작업을 수행 하는 함수입니다. 이 이라고 *처리* 이벤트입니다. 응용 프로그램에 대 한 관련 된 이벤트를 처리 합니다.
+   이 함수를 처리 하는 코드 작성 *메시지* Windows에서 응용 프로그램에서 받는 경우 *이벤트* 발생 합니다. 사용자는 응용 프로그램에서 확인 단추를 선택 하면 Windows 메시지를 보냅니다 하 고 내 코드를 작성할 수 있습니다 예를 들어 프로그램 `WndProc` 적합 한 모든 작업을 수행 하는 함수입니다. 라고 *처리* 이벤트입니다. 응용 프로그램에 대 한 관련 된 이벤트를 처리 합니다.
 
    자세한 내용은 [창 프로시저](https://msdn.microsoft.com/library/windows/desktop/ms632593)합니다.
 
 ### <a name="to-add-functionality-to-the-winmain-function"></a>WinMain 함수에 기능을 추가하려면
 
-1. 에 `WinMain` 함수를 형식의 구조체를 채우는 [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577)합니다. 이 구조는 예를 들어, 응용 프로그램 아이콘, 제목 표시줄에 매우 중요 한 점은 창 프로시저에 대 한 함수 포인터를 표시할 이름 창의 배경색 창에 대 한 정보를 포함 합니다. 다음 예제에서는 일반적인 `WNDCLASSEX` 구조를 보여 줍니다.
+1. 에 `WinMain` 함수를 형식의 구조체를 채우는 [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577)합니다. 예를 들어, 응용 프로그램 아이콘, 제목 표시줄에 중요 한 점은 창 프로시저에 대 한 함수 포인터를 표시할 이름 창의 배경색을 창에 대 한 정보를 포함 하는 구조입니다. 다음 예제에서는 일반적인 `WNDCLASSEX` 구조를 보여 줍니다.
 
    ```cpp
    WNDCLASSEX wcex;
@@ -165,9 +165,9 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    wcex.hIconSm        = LoadIcon(wcex.hInstance, IDI_APPLICATION);
    ```
 
-   이 구조의 필드에 대 한 정보를 참조 하세요 [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577)합니다.
+   위의 구조의 필드에 대 한 정보를 참조 하세요 [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577)합니다.
 
-1. 등록 해야 합니다는 `WNDCLASSEX` 한다는 창 및 메시지를 보내는 방법에 대 한 알 수 있도록 Windows를 사용 하 여 합니다. 사용 된 [RegisterClassEx](https://msdn.microsoft.com/library/windows/desktop/ms633587) 함수 및 창 클래스 구조를 인수로 전달 합니다. `_T` 매크로 사용 하기 때문에 사용 되는 `TCHAR` 형식.
+1. 등록 된 `WNDCLASSEX` 한다는 창 및 메시지를 보내는 방법에 대 한 알 수 있도록 Windows를 사용 하 여 합니다. 사용 된 [RegisterClassEx](https://msdn.microsoft.com/library/windows/desktop/ms633587) 함수 및 창 클래스 구조를 인수로 전달 합니다. `_T` 매크로 사용 하기 때문에 사용 되는 `TCHAR` 형식.
 
    ```cpp
    if (!RegisterClassEx(&wcex))
@@ -232,7 +232,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    UpdateWindow(hWnd);
    ```
 
-   아직 구현 되지 때문에 표시 된 창에 많은 내용을 포함 하지 않습니다는 `WndProc` 함수입니다. 즉, 응용 프로그램을 Windows에 이제 보내는 메시지를 아직 처리 하지 않는 합니다.
+   아직 구현 하지 않았다면 때문에 표시 된 창 만큼의 콘텐츠가 없는 `WndProc` 함수입니다. 즉, 응용 프로그램 이제는 Windows를 전송 하는 메시지를 아직 처리 되지 않습니다.
 
 1. 메시지를 처리 하려면 먼저 Windows에서 보내는 메시지를 수신 메시지 루프를 추가 합니다. 응용 프로그램 메시지를 받으면이 루프가 디스패치합니다 프로그램 `WndProc` 처리할 함수. 메시지 루프는 다음 코드와 유사합니다.
 
@@ -340,9 +340,9 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
 1. `WndProc` 함수에서 응용 프로그램이 받는 메시지를 처리하게 하려면 switch 문을 구현합니다.
 
-   하나의 중요 한 메시지를 처리 하는 합니다 [WM_PAINT](/windows/desktop/gdi/wm-paint) 메시지입니다. 응용 프로그램은 표시된 창 일부를 업데이트해야 할 때 이 메시지를 받습니다. 이 이벤트는 사용자 창을 이동 하 여 사용자의 창 앞에 다음 이동 위치로 다시 발생할 수 있습니다. 응용 프로그램 같이 이벤트가 발생할 때; 알 수 없습니다. Windows만 알고 사용 하 여 알려 하므로 `WM_PAINT`합니다. 창이 처음 표시 되 면 모두 업데이트 되어야 합니다.
+   하나의 중요 한 메시지를 처리 하는 합니다 [WM_PAINT](/windows/desktop/gdi/wm-paint) 메시지입니다. 응용 프로그램이 수신 된 `WM_PAINT` 표시 된 창에 메시지를 업데이트 해야 합니다. 응용 프로그램에 이러한 이벤트가 발생할 때 알 수 없습니다 및 사용자 창을 이동 하 여 사용자의 창 앞에 다음 이동 위치로 다시 이벤트가 발생할 수 있습니다. Windows만 알고 사용 하 여 알려 하므로 `WM_PAINT`합니다. 창이 처음 표시 되 면 모두 업데이트 되어야 합니다.
 
-   처리 하는 `WM_PAINT` 메시지를 첫 번째 호출 [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint)고, 텍스트, 단추 및 창에서 다른 컨트롤의 레이아웃에 모든 논리를 처리 하는 다음 호출 하 [EndPaint](/windows/desktop/api/winuser/nf-winuser-endpaint)합니다. 이 응용 프로그램에 대 한 시작 호출과 종료 호출 간의 논리 "Hello, Windows desktop!" 문자열을 표시 하는 것입니다. 다음 코드를 알 수 있듯이 [TextOut](/windows/desktop/api/wingdi/nf-wingdi-textouta) 함수를 사용 하는 문자열을 표시 합니다.
+   처리 하는 `WM_PAINT` 메시지를 첫 번째 호출 [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint)고, 텍스트, 단추 및 창에서 다른 컨트롤의 레이아웃에 모든 논리를 처리 하는 다음 호출 하 [EndPaint](/windows/desktop/api/winuser/nf-winuser-endpaint)합니다. 응용 프로그램에 대 한 시작 호출과 종료 호출 간의 논리 "Hello, Windows desktop!" 문자열을 표시 하는 것입니다. 다음 코드를 알 수 있듯이 [TextOut](/windows/desktop/api/wingdi/nf-wingdi-textouta) 함수를 사용 하는 문자열을 표시 합니다.
 
    ```cpp
    PAINTSTRUCT ps;
@@ -367,7 +367,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    }
    ```
 
-   `HDC` 이 코드는 Windows 그래픽 하위 시스템을 사용 하 여 통신 하도록 응용 프로그램을 사용 하도록 설정 하는 데 사용 하는 데이터 구조는 장치 컨텍스트에 핸들이입니다. 합니다 `BeginPaint` 및 `EndPaint` 함수 응용 프로그램이 적합 처럼 동작 하 고 필요한 것 보다 더 이상에 대 한 장치 컨텍스트를 사용 하지 않도록 합니다. 이렇게 하면 그래픽 하위 시스템은 다른 응용 프로그램에서 사용할 수 있습니다.
+   `HDC` 코드의 그래픽 하위 시스템을 사용 하 여 통신 하도록 응용 프로그램을 사용 하도록 설정 하려면 Windows를 사용 하는 데이터 구조는 장치 컨텍스트에 대 한 핸들입니다. 합니다 `BeginPaint` 및 `EndPaint` 함수 적합 처럼 응용 프로그램 및 필요한 것 보다 더 이상에 대 한 장치 컨텍스트를 사용 하지 않습니다. 함수 도움말 make 그래픽 하위 시스템은 다른 응용 프로그램에서 사용할 수 있습니다.
 
 1. 응용 프로그램이 일반적으로 많은 기타 메시지를 처리 예를 들어 [WM_CREATE](/windows/desktop/winmsg/wm-create) 창을 처음 만들어질 때와 [WM_DESTROY](/windows/desktop/winmsg/wm-destroy) 창이 닫힐 때. 다음 코드에서는 기본적인 전체 `WndProc` 함수를 보여 줍니다.
 

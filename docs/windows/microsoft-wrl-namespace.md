@@ -24,12 +24,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5ffea6dede3bc6bcc7c28b2326299362e78ed2b9
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8c9aebeb2216bf8248b3182159a0f0aef1482c3b
+ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599303"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48250447"
 ---
 # <a name="microsoftwrl-namespace"></a>Microsoft::WRL 네임스페이스
 
@@ -78,7 +78,7 @@ namespace Microsoft::WRL;
 
 ### <a name="enumerations"></a>열거형
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[AsyncResultType 열거형](../windows/asyncresulttype-enumeration.md)|반환 된 결과의 형식을 지정 합니다 `GetResults()` 메서드.|
 |[ModuleType 열거형](../windows/moduletype-enumeration.md)|모듈이 in-process 서버를 지원하는지 out-of-process 서버를 지원해야 하는지 여부를 지정합니다.|
@@ -89,7 +89,7 @@ namespace Microsoft::WRL;
 |이름|설명|
 |----------|-----------------|
 |[AsWeak 함수](../windows/asweak-function.md)|지정된 인스턴스에 대한 약한 참조를 가져옵니다.|
-|[콜백 함수](../windows/callback-function-windows-runtime-cpp-template-library.md)|멤버 함수가 콜백 메서드인 개체를 만듭니다.|
+|[콜백 함수 (WRL)](../windows/callback-function-wrl.md)|멤버 함수가 콜백 메서드인 개체를 만듭니다.|
 |[CreateActivationFactory 함수](../windows/createactivationfactory-function.md)|Windows 런타임으로 활성화할 수 있는 지정된 클래스의 인스턴스를 생성하는 팩터리를 만듭니다.|
 |[CreateClassFactory 함수](../windows/createclassfactory-function.md)|지정된 클래스의 인스턴스를 생성하는 팩터리를 만듭니다.|
 |[Make 함수](../windows/make-function.md)|지정된 된 Windows 런타임 클래스를 초기화합니다.|
