@@ -1,7 +1,7 @@
 ---
 title: 웹 페이지 (ATL 자습서, 7 부)에 컨트롤 배치 | Microsoft Docs
 ms.custom: get-started-article
-ms.date: 11/04/2016
+ms.date: 09/27/2018
 ms.technology:
 - cpp-atl
 ms.topic: conceptual
@@ -12,24 +12,55 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: edc45522aaff12077de6115105b344ecf41e187e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 052c6fa80b222a077fb41d861a4ea234f64073ec
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762826"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821610"
 ---
 # <a name="putting-the-control-on-a-web-page-atl-tutorial-part-7"></a>웹 페이지에 컨트롤 배치(ATL 자습서, 7부)
 
 컨트롤이 이제 완료 되었습니다. 실제 상황에서 컨트롤 작업을 보려면 웹 페이지에 배치 합니다. 컨트롤이 포함 된 HTML 파일에는 컨트롤을 정의할 때 생성 되었습니다. PolyCtl.htm 파일을 엽니다 **솔루션 탐색기**, 웹 페이지에 컨트롤을 볼 수 있습니다.
 
-이 단계에서는 이벤트에 응답 하도록 웹 페이지를 스크립팅할 수 있습니다. 또한 Internet Explorer 스크립트 사용에 안전한 컨트롤 임을 알 수 있도록 컨트롤을 수정 합니다.
+이 단계에서는 컨트롤에 기능을 추가 하 고 이벤트에 응답 하도록 웹 페이지 스크립팅 합니다. 또한 Internet Explorer 스크립트 사용에 안전한 컨트롤 임을 알 수 있도록 컨트롤을 수정 합니다.
+
+## <a name="adding-new-functionality"></a>새 기능 추가
+
+### <a name="to-add-control-features"></a>제어 기능을 추가 하려면
+
+1. PolyCtl.cpp를 열고 다음 코드를 바꿉니다.
+
+    ```cpp
+    if (PtInRegion(hRgn, xPos, yPos))
+        Fire_ClickIn(xPos, yPos);
+    else
+        Fire_ClickOut(xPos, yPos);
+    ```
+
+    다음 문자열로 바꾸세요.
+
+    ```cpp
+    short temp = m_nSides;
+    if (PtInRegion(hRgn, xPos, yPos))
+    {
+        Fire_ClickIn(xPos, yPos);
+        put_Sides(++temp);
+    }
+    else
+    {
+        Fire_ClickOut(xPos, yPos);
+        put_Sides(--temp);
+    }
+    ```
+
+이제 셰이프 추가 하거나 클릭 하는 위치에 따라 양쪽 제거 됩니다.
 
 ## <a name="scripting-the-web-page"></a>웹 페이지 스크립팅
 
 컨트롤은 작업을 수행할 아직, 따라서 전송 되는 이벤트에 응답 하도록 웹 페이지를 변경 합니다.
 
-#### <a name="to-script-the-web-page"></a>웹 페이지 스크립팅
+### <a name="to-script-the-web-page"></a>웹 페이지 스크립팅
 
 1. PolyCtl.htm을 열고 HTML 뷰를 선택 합니다. HTML 코드에 다음 줄을 추가 합니다. 다음 추가 합니다 `</OBJECT>` 하기 전에 `</BODY>`입니다.
 
@@ -37,22 +68,25 @@ ms.locfileid: "43762826"
     <SCRIPT LANGUAGE="VBScript">
     <!--
         Sub PolyCtl_ClickIn(x, y)
-            PolyCtl.Sides = PolyCtl.Sides + 1
+            MsgBox("Clicked (" & x & ", " & y & ") - adding side")
         End Sub
         Sub PolyCtl_ClickOut(x, y)
-            PolyCtl.Sides = PolyCtl.Sides - 1
+            MsgBox("Clicked (" & x & ", " & y & ") - removing side")
         End Sub
     -->
     </SCRIPT>
     ```
 
-2. HTM 파일을 저장 합니다.
+1. HTM 파일을 저장 합니다.
 
 컨트롤에서 면 속성을 가져오고 컨트롤 내부를 클릭 하면 변 수가 1 씩 증가 하는 VBScript 코드도 추가 했습니다. 컨트롤의 바깥쪽을 클릭 하면 변 수가 하나씩 줄어듭니다.
 
 ## <a name="indicating-that-the-control-is-safe-for-scripting"></a>스크립트에 안전한 컨트롤 임을 나타내는
 
 Internet Explorer에서 컨트롤을 사용 하 여 웹 페이지를 볼 수 있습니다 또는 더 편리 하 게 사용 하 여 Visual c + +에 내장 된 웹 브라우저 보기. 웹 브라우저 보기에서 컨트롤을 보려면 PolyCtl.htm을 마우스 오른쪽 단추로 클릭 하 고 클릭 **브라우저에서 보기**합니다.
+
+> [!NOTE]
+> 컨트롤이 표시 되지 않는 경우 일부 브라우저에 ActiveX 컨트롤을 실행할 설정을 조정 해야는 알고 있습니다. ActiveX 컨트롤을 사용 하는 방법에 대 한 브라우저 설명서를 참조 하십시오.
 
 현재 Internet Explorer 보안 설정에 따라 표시 될 수 있습니다 보안 경고 피해 대화 상자 알리는 컨트롤 스크립트에 안전 하지 않을 가능성이 있습니다. 예를 들어, 파일을 표시 하지만 또한 컨트롤을 설치한 경우는 `Delete` 파일을 삭제 하는 메서드를 안전 하 게 되 면 될 수만 페이지에서 볼 수 있습니다. 것은 스크립트에 안전 하므로 사용자가 호출할 수는 `Delete` 메서드.
 
@@ -61,19 +95,19 @@ Internet Explorer에서 컨트롤을 사용 하 여 웹 페이지를 볼 수 있
 
 프로그래밍 방식으로이 특정 컨트롤에 대 한 보안 경고 대화 상자를 표시할 필요 하지 않습니다 Internet Explorer을 알릴 수 있습니다. 사용 하 여이 수행할 수는 `IObjectSafety` 클래스에서이 인터페이스의 구현을 제공 하는 인터페이스 및 ATL [IObjectSafetyImpl](../atl/reference/iobjectsafetyimpl-class.md)합니다. 컨트롤에 인터페이스를 추가 하려면 추가 `IObjectSafetyImpl` 상속 된 클래스의 목록에 고 COM 맵에에 대 한 항목을 추가 합니다.
 
-#### <a name="to-add-iobjectsafetyimpl-to-the-control"></a>컨트롤에 IObjectSafetyImpl을 추가 하려면
+### <a name="to-add-iobjectsafetyimpl-to-the-control"></a>컨트롤에 IObjectSafetyImpl을 추가 하려면
 
 1. PolyCtl.h의 상속 된 클래스 목록 끝에 다음 줄을 추가 하 고 이전 줄에 쉼표를 추가 합니다.
 
-[!code-cpp[NVC_ATL_Windowing#62](../atl/codesnippet/cpp/putting-the-control-on-a-web-page-atl-tutorial-part-7_1.h)]
+    [!code-cpp[NVC_ATL_Windowing#62](../atl/codesnippet/cpp/putting-the-control-on-a-web-page-atl-tutorial-part-7_1.h)]
 
-2. 다음 줄을 PolyCtl.h의 COM 맵에 추가:
+1. 다음 줄을 PolyCtl.h의 COM 맵에 추가:
 
-[!code-cpp[NVC_ATL_Windowing#63](../atl/codesnippet/cpp/putting-the-control-on-a-web-page-atl-tutorial-part-7_2.h)]
+    [!code-cpp[NVC_ATL_Windowing#63](../atl/codesnippet/cpp/putting-the-control-on-a-web-page-atl-tutorial-part-7_2.h)]
 
 ## <a name="building-and-testing-the-control"></a>빌드 및 컨트롤 테스트
 
-컨트롤을 빌드하십시오. 빌드가 완료 되 면 PolyCtl.htm를 다시 브라우저 보기에서 엽니다. 이 이번에 보안 경고 대화 상자 없이 직접 웹 페이지가 표시 됩니다. 다각형 내부를 클릭 합니다. 하면 변 수가 하나 증가합니다. 면의 수를 줄이기 위해 다각형 외부를 클릭 합니다. 줄이려면 3 이하로 줄이려고 하면 설정한 오류 메시지가 표시 됩니다.
+컨트롤을 빌드하십시오. 빌드가 완료 되 면 PolyCtl.htm를 다시 브라우저 보기에서 엽니다. 이 이번에는 웹 페이지가 표시 되도록 하지 않고 직접 합니다 **보안 경고** 대화 상자. 다각형 내부를 클릭 합니다. 하면 변 수가 하나 증가합니다. 면의 수를 줄이기 위해 다각형 외부를 클릭 합니다.
 
 [6 단계로 돌아가기](../atl/adding-a-property-page-atl-tutorial-part-6.md)
 

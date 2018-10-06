@@ -48,18 +48,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae293007250fb051339b42b1a09d50806b36b8e9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 78582039e172be92f397c898163ec62c6041f32f
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46407922"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821463"
 ---
 # <a name="cmfcautohidebar-class"></a>CMFCAutoHideBar 클래스
 
 `CMFCAutoHideBar` 클래스는 자동 숨기기 기능을 구현하는 특수 도구 모음 클래스입니다.
 
 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+
 ## <a name="syntax"></a>구문
 
 ```
@@ -131,7 +132,7 @@ class CMFCAutoHideBar : public CPane
 
 **헤더:** afxautohidebar.h
 
-##  <a name="addautohidewindow"></a>  CMFCAutoHideBar::AddAutoHideWindow
+## <a name="addautohidewindow"></a>  CMFCAutoHideBar::AddAutoHideWindow
 
 자동으로 숨길 수 있도록 하는 기능을 `CDockablePane` 창에 추가합니다.
 
@@ -163,8 +164,7 @@ CMFCAutoHideButton* AddAutoHideWindow(
 
 - CBRS_ALIGN_BOTTOM
 
-##  <a name="allowshowonpanemenu"></a>  CMFCAutoHideBar::AllowShowOnPaneMenu
-
+## <a name="allowshowonpanemenu"></a>  CMFCAutoHideBar::AllowShowOnPaneMenu
 
 ```
 virtual BOOL AllowShowOnPaneMenu() const;
@@ -174,8 +174,7 @@ virtual BOOL AllowShowOnPaneMenu() const;
 
 ### <a name="remarks"></a>설명
 
-##  <a name="calcfixedlayout"></a>  CMFCAutoHideBar::CalcFixedLayout
-
+## <a name="calcfixedlayout"></a>  CMFCAutoHideBar::CalcFixedLayout
 
 ```
 virtual CSize CalcFixedLayout(
@@ -192,7 +191,7 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="remarks"></a>설명
 
-##  <a name="cmfcautohidebar"></a>  CMFCAutoHideBar::CMFCAutoHideBar
+## <a name="cmfcautohidebar"></a>  CMFCAutoHideBar::CMFCAutoHideBar
 
 CMFCAutoHideBar 개체를 생성합니다.
 
@@ -202,8 +201,7 @@ CMFCAutoHideBar();
 
 ### <a name="remarks"></a>설명
 
-##  <a name="create"></a>  CMFCAutoHideBar::Create
-
+## <a name="create"></a>  CMFCAutoHideBar::Create
 
 ```
 virtual BOOL Create(
@@ -219,17 +217,24 @@ virtual BOOL Create(
 ### <a name="parameters"></a>매개 변수
 
 *lpszClassName*<br/>
-[in] [in] *dwStyle*
+
+*dwStyle*<br/>
+
 *rect*<br/>
-[in] [in] *pParentWnd*
+
+*pParentWnd*<br/>
+
 *nID*<br/>
-[in] [in] *dwControlBarStyle* [in] *pContext*
+
+*dwControlBarStyle*<br/>
+
+*pContext*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-##  <a name="getfirstahwindow"></a>  CMFCAutoHideBar::GetFirstAHWindow
+## <a name="getfirstahwindow"></a>  CMFCAutoHideBar::GetFirstAHWindow
 
 응용 프로그램의 첫 번째 자동 숨기기 창에 대한 포인터를 반환합니다.
 
@@ -243,7 +248,7 @@ CDockablePane* GetFirstAHWindow();
 
 ### <a name="remarks"></a>설명
 
-##  <a name="getvisiblecount"></a>  CMFCAutoHideBar::GetVisibleCount
+## <a name="getvisiblecount"></a>  CMFCAutoHideBar::GetVisibleCount
 
 표시되는 자동 숨기기 단추 수를 가져옵니다.
 
@@ -257,7 +262,7 @@ int GetVisibleCount();
 
 ### <a name="remarks"></a>설명
 
-##  <a name="m_nshowahwnddelay"></a>  CMFCAutoHideBar::m_nShowAHWndDelay
+## <a name="m_nshowahwnddelay"></a>  CMFCAutoHideBar::m_nShowAHWndDelay
 
 사용자 위에 마우스 커서를 배치 하는 경우 현재 사이의 지연 시간을 [CMFCAutoHideButton 클래스](../../mfc/reference/cmfcautohidebutton-class.md) 및 프레임 워크에 연결 된 창이 표시 되는 경우 현재 합니다.
 
@@ -269,8 +274,7 @@ int CMFCAutoHideBar::m_nShowAHWndDelay = 400;
 
 사용자 위에 마우스 커서를 배치 하는 경우는 `CMFCAutoHideButton`, 프레임 워크에 연결 된 창이 표시 되기까지 약간의 지연이 발생 합니다. 이 매개 변수는 지연 (밀리초)의 길이 결정합니다.
 
-##  <a name="onshowcontrolbarmenu"></a>  CMFCAutoHideBar::OnShowControlBarMenu
-
+## <a name="onshowcontrolbarmenu"></a>  CMFCAutoHideBar::OnShowControlBarMenu
 
 ```
 virtual BOOL OnShowControlBarMenu(CPoint);
@@ -284,7 +288,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 
 ### <a name="remarks"></a>설명
 
-##  <a name="removeautohidewindow"></a>  CMFCAutoHideBar::RemoveAutoHideWindow
+## <a name="removeautohidewindow"></a>  CMFCAutoHideBar::RemoveAutoHideWindow
 
 자동 숨기기 창을 제거하고 삭제합니다.
 
@@ -302,7 +306,7 @@ CDockablePane * *pAutoHideWnd* 자동 숨기기 창을 제거 합니다.
 
 ### <a name="remarks"></a>설명
 
-##  <a name="setactiveingroup"></a>  CMFCAutoHideBar::SetActiveInGroup
+## <a name="setactiveingroup"></a>  CMFCAutoHideBar::SetActiveInGroup
 
 자동 숨기기 막대에 활성으로 플래그를 지정합니다.
 
@@ -318,8 +322,7 @@ virtual void SetActiveInGroup(BOOL bActive);
 
 참조 [cpane:: Setactiveingroup](../../mfc/reference/cpane-class.md#setactiveingroup)합니다.
 
-##  <a name="setrecentvisiblestate"></a>  CMFCAutoHideBar::SetRecentVisibleState
-
+## <a name="setrecentvisiblestate"></a>  CMFCAutoHideBar::SetRecentVisibleState
 
 ```
 void SetRecentVisibleState(BOOL bState);
@@ -327,26 +330,32 @@ void SetRecentVisibleState(BOOL bState);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *bState*
+*bState*<br/>
+[in] 상태를 설정 합니다.
 
 ### <a name="remarks"></a>설명
 
-##  <a name="showautohidewindow"></a>  CMFCAutoHideBar::ShowAutoHideWindow
+## <a name="showautohidewindow"></a>  CMFCAutoHideBar::ShowAutoHideWindow
 
 자동 숨기기 창을 표시합니다.
 
 ```
 BOOL ShowAutoHideWindow(
-        CDockablePane* pAutoHideWnd,
-        BOOL bShow,
-        BOOL bDelay);
+    CDockablePane* pAutoHideWnd,
+    BOOL bShow,
+    BOOL bDelay);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] CDockablePane * *pAutoHideWnd* [in] BOOL *bShow* 창 표시 하려면 true로 설정 합니다.
+*pAutoHideWnd*<br/>
+[in] 표시할 창입니다.
 
-[in] BOOL *bDelay* 이 매개 변수가 무시 됩니다.
+*bShow*<br/>
+[in] 창을 표시 하려면 TRUE입니다.
+
+*bDelay*<br/>
+[in] 이 매개 변수가 무시 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -354,7 +363,7 @@ BOOL ShowAutoHideWindow(
 
 ### <a name="remarks"></a>설명
 
-##  <a name="stretchpane"></a>  CMFCAutoHideBar::StretchPane
+## <a name="stretchpane"></a>  CMFCAutoHideBar::StretchPane
 
 `CMFCAutoHideButton` 개체에 맞게 자동 숨기기 막대의 크기를 축소된 상태로 조정합니다.
 
@@ -380,7 +389,7 @@ virtual CSize StretchPane(
 
 파생된 클래스는 이 메서드를 재정의하여 동작을 사용자 지정할 수 있습니다.
 
-##  <a name="unsetautohidemode"></a>  CMFCAutoHideBar::UnSetAutoHideMode
+## <a name="unsetautohidemode"></a>  CMFCAutoHideBar::UnSetAutoHideMode
 
 자동 숨기기 막대의 그룹에 대해 자동 숨기기 모드를 사용하지 않도록 설정합니다.
 
@@ -394,7 +403,7 @@ void UnSetAutoHideMode(CDockablePane* pFirstBarInGroup)
 
 ### <a name="remarks"></a>설명
 
-##  <a name="updatevisiblestate"></a>  CMFCAutoHideBar::UpdateVisibleState
+## <a name="updatevisiblestate"></a>  CMFCAutoHideBar::UpdateVisibleState
 
 자동 숨기기 막대를 다시 그려야 할 때 프레임워크에서 호출됩니다.
 

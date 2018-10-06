@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28d1df72efcc1fa7408922876ad91bafcd2b005a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2ba89aadc8e1c617ed8e101a226560b80cb9e431
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422670"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821402"
 ---
 # <a name="c-developer-guidance-for-speculative-execution-side-channels"></a>투기적 실행 쪽 채널에 대 한 c + + 개발자 지침
 
@@ -73,7 +73,7 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 
 ## <a name="what-software-scenarios-can-be-impacted"></a>어떤 소프트웨어 시나리오에 영향이 있을 수 있습니다.
 
-과 같은 프로세스를 사용 하 여 보안 소프트웨어를 개발 합니다 [Security Development Lifecycle](https://www.microsoft.com/en-us/sdl/) (SDL)에 일반적으로 응용 프로그램에 존재 하는 신뢰 경계를 식별 하는 개발자가 필요 합니다. 트러스트 경계 경우 시스템에서 다른 프로세스 또는 커널 모드 장치 드라이버의 경우 관리자가 아닌 사용자 모드 프로세스와 같은 신뢰할 수 없는 context에서 제공 하는 데이터와 응용 프로그램 상호 작용할 수 있습니다 위치에 있습니다. 투기적 실행 쪽 채널 관련 된 취약점의 새 클래스 코드 및 장치에서 데이터를 격리 하는 기존 소프트웨어 보안 모델의 트러스트 경계 중 많은 부분에 관련이 있습니다.
+과 같은 프로세스를 사용 하 여 보안 소프트웨어를 개발 합니다 [Security Development Lifecycle](https://www.microsoft.com/sdl/) (SDL)에 일반적으로 응용 프로그램에 존재 하는 신뢰 경계를 식별 하는 개발자가 필요 합니다. 트러스트 경계 경우 시스템에서 다른 프로세스 또는 커널 모드 장치 드라이버의 경우 관리자가 아닌 사용자 모드 프로세스와 같은 신뢰할 수 없는 context에서 제공 하는 데이터와 응용 프로그램 상호 작용할 수 있습니다 위치에 있습니다. 투기적 실행 쪽 채널 관련 된 취약점의 새 클래스 코드 및 장치에서 데이터를 격리 하는 기존 소프트웨어 보안 모델의 트러스트 경계 중 많은 부분에 관련이 있습니다.
 
 다음 표에서 발생 하는 이러한 취약성에 대 한 고려 개발자가 해야 할 수 있는 소프트웨어 보안 모델의 요약을 제공 합니다.
 
@@ -341,7 +341,7 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 
 ### <a name="speculation-barrier-via-compiler-time-instrumentation"></a>추론 장벽을 컴파일러 타임 계측을 통해
 
-Visual Studio 2017 (버전 15.5.5부터 시작)에서 Visual c + + 컴파일러에 대 한 지원이 포함 된 `/Qspectre` CVE 2017-5753에 자동으로 제한 된 집합만 잠재적으로 취약 한 코딩 패턴에 대 한 추론 장벽을 삽입 하는 스위치와 관련 된 합니다. 에 대 한 설명서는 [/Qspectre](https://docs.microsoft.com/en-us/cpp/build/reference/qspectre) 플래그 효과 및 사용에 자세한 정보를 제공 합니다. 이 플래그는 모든 잠재적으로 취약 한 코딩 패턴은 다루지 않습니다을 같이 개발자에 의존 하지 않아야 하의 취약점으로 인 한이이 클래스에 대 한 포괄적인 완화 하는 것이 반드시 합니다.
+Visual Studio 2017 (버전 15.5.5부터 시작)에서 Visual c + + 컴파일러에 대 한 지원이 포함 된 `/Qspectre` CVE 2017-5753에 자동으로 제한 된 집합만 잠재적으로 취약 한 코딩 패턴에 대 한 추론 장벽을 삽입 하는 스위치와 관련 된 합니다. 에 대 한 설명서는 [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) 플래그 효과 및 사용에 자세한 정보를 제공 합니다. 이 플래그는 모든 잠재적으로 취약 한 코딩 패턴은 다루지 않습니다을 같이 개발자에 의존 하지 않아야 하의 취약점으로 인 한이이 클래스에 대 한 포괄적인 완화 하는 것이 반드시 합니다.
 
 ### <a name="masking-array-indices"></a>마스킹 배열 인덱스
 

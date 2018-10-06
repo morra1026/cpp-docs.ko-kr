@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cbcc791d4e39f58146ed13bb41c8ec43941d3527
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 32fcf4f8f99f80e44758c107a8941c51bd8a767f
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087814"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821168"
 ---
 # <a name="switch-statement-c"></a>switch 문 (C++)
 
@@ -119,14 +119,14 @@ int main()
 **Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): switch 문을 소개 하 고 범위가 블록 switch 문의 제한 된 변수를 초기화할 수 있습니다.
 
 ```cpp
-switch (Gadget gadget(args); auto s = gadget.get_status())
-        {
-        case status::good:
-            gadget.zip();
-            break;
-        case status::bad:
-            throw BadGadget();
-        };
+    switch (Gadget gadget(args); auto s = gadget.get_status())
+    {
+    case status::good:
+        gadget.zip();
+        break;
+    case status::bad:
+        throw BadGadget();
+    };
 ```
 
 내부 블록을 **전환** 문은으로 연결할 수는 초기화를 사용 하 여 정의 포함할 수 있습니다-즉, 모든 가능한 실행 경로 의해 무시 되지 않습니다. 이러한 선언을 사용하여 정의된 이름에는 로컬 범위가 있습니다. 예를 들어:
@@ -138,35 +138,35 @@ switch (Gadget gadget(args); auto s = gadget.get_status())
 using namespace std;
 int main(int argc, char *argv[])
 {
-   switch( tolower( *argv[1] ) )
-   {
-       // Error. Unreachable declaration.
-       char szChEntered[] = "Character entered was: ";
+    switch( tolower( *argv[1] ) )
+    {
+        // Error. Unreachable declaration.
+        char szChEntered[] = "Character entered was: ";
 
-   case 'a' :
-       {
-       // Declaration of szChEntered OK. Local scope.
-       char szChEntered[] = "Character entered was: ";
-       cout << szChEntered << "a\n";
-       }
-       break;
+    case 'a' :
+        {
+        // Declaration of szChEntered OK. Local scope.
+        char szChEntered[] = "Character entered was: ";
+        cout << szChEntered << "a\n";
+        }
+        break;
 
-   case 'b' :
-       // Value of szChEntered undefined.
-       cout << szChEntered << "b\n";
-       break;
+    case 'b' :
+        // Value of szChEntered undefined.
+        cout << szChEntered << "b\n";
+        break;
 
-   default:
-       // Value of szChEntered undefined.
-       cout << szChEntered << "neither a nor b\n";
-       break;
-   }
+    default:
+        // Value of szChEntered undefined.
+        cout << szChEntered << "neither a nor b\n";
+        break;
+    }
 }
 ```
 
 A **전환** 문은 중첩 될 수 있습니다. 이러한 경우 **사례** 또는 **기본** 레이블을 연결 가장 가까운 **전환** 바깥쪽 문을 합니다.
 
-## <a name="microsoft-specific"></a>Microsoft 전용
+**Microsoft 전용**
 
 Microsoft C의 경우 값의 수를 제한 하지 않습니다는 **전환** 문입니다. 이 수는 사용 가능한 메모리에 의해서만 제한됩니다. ANSI C 257 개 이상의 case 레이블이 허용을 **전환** 문입니다.
 
