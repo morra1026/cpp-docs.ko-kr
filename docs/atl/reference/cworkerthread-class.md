@@ -25,19 +25,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2c3e0eb625c492cb9f0e9a1234d33149ac201a1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 79855860b4d2d6bfee328f8fa07f2a3ba6cfd69c
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040234"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861462"
 ---
 # <a name="cworkerthread-class"></a>CWorkerThread 클래스
 
 이 클래스 작업자 스레드를 만듭니다 또는 기존 항목을 사용 하 여, 하나 이상의 커널 개체 핸들에서 대기 및 핸들 중 하나에 신호가 전달 될 때 지정 된 클라이언트 함수를 실행 합니다.
 
 > [!IMPORTANT]
->  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
+> 이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -46,7 +46,7 @@ template <class ThreadTraits = DefaultThreadTraits>
 class CWorkerThread
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
 *ThreadTraits*<br/>
 와 같은 스레드 생성 함수를 제공 하는 클래스 [CRTThreadTraits](../../atl/reference/crtthreadtraits-class.md) 하거나 [Win32ThreadTraits](../../atl/reference/win32threadtraits-class.md)합니다.
@@ -84,19 +84,19 @@ class CWorkerThread
 
 1. 이 클래스의 인스턴스를 만듭니다.
 
-2. 호출 [CWorkerThread::Initialize](#initialize)합니다.
+1. 호출 [CWorkerThread::Initialize](#initialize)합니다.
 
-3. 호출 [CWorkerThread::AddHandle](#addhandle) 커널 개체와의 구현에 대 한 핸들로 [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md)합니다.
+1. 호출 [CWorkerThread::AddHandle](#addhandle) 커널 개체와의 구현에 대 한 핸들로 [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md)합니다.
 
-     - 또는
+   \- 또는 -
 
-     호출 [CWorkerThread::AddTimer](#addtimer) 의 구현에 대 한 포인터를 사용 하 여 [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md)합니다.
+   호출 [CWorkerThread::AddTimer](#addtimer) 의 구현에 대 한 포인터를 사용 하 여 [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md)합니다.
 
-4. 구현 [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) 핸들 또는 타이머 신호를 받는 경우 몇 가지 작업을 수행 하 합니다.
+1. 구현 [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) 핸들 또는 타이머 신호를 받는 경우 몇 가지 작업을 수행 하 합니다.
 
-5. 대기 가능 개체의 목록에서 개체를 제거 하려면 호출 [CWorkerThread::RemoveHandle](#removehandle)합니다.
+1. 대기 가능 개체의 목록에서 개체를 제거 하려면 호출 [CWorkerThread::RemoveHandle](#removehandle)합니다.
 
-6. 호출 스레드를 종료 하려면 [CWorkerThread::Shutdown](#shutdown)합니다.
+1. 호출 스레드를 종료 하려면 [CWorkerThread::Shutdown](#shutdown)합니다.
 
 ## <a name="requirements"></a>요구 사항
 

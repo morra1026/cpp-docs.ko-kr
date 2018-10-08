@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c64db5a041845bbd068bab1a72ad461740170b8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5e65451fcb506da9072d0dc8031ffba1b30280e6
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040481"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861436"
 ---
 # <a name="ccontainedwindowt-class"></a>CContainedWindowT 클래스
 
@@ -118,7 +118,7 @@ class CContainedWindowT : public TBase
 |컨트롤 만들기|[ATL 자습서](../../atl/active-template-library-atl-tutorial.md)|
 |ATL에서 창 사용하기|[ATL 창 클래스](../../atl/atl-window-classes.md)|
 |ATL 프로젝트 마법사|[ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)|
-|Windows|[Windows](https://msdn.microsoft.com/library/windows/desktop/ms632595) 및 Windows SDK의 후속 항목|
+|Windows|[Windows](/windows/desktop/winmsg/windows) 및 Windows SDK의 후속 항목|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 

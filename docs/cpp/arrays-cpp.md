@@ -16,44 +16,41 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7c88c1d0f4096017b8ffc48a92143a63d229c5e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b2423355aa53abe52fffcd81ec847b41337efcbf
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017913"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861033"
 ---
 # <a name="arrays-c"></a>배열 (C++)
 
 배열은 서로 유사한 개체의 컬렉션입니다. 가장 간단한 배열은 다음과 같은 시퀀스로 선언될 수 있는 벡터입니다.
 
-```
-decl-specifier identifier [ constant-expression ]
-decl-specifier identifier []
-decl-specifier identifer [][ constant-expression] . . .
-decl-specifier identifier [ constant-expression ]
-[ constant-expression ] . . .
-```
+> *선언 지정자* *식별자* **\[** *상수 식* **]**<br/>
+> *선언 지정자* *식별자*  **\[]**<br/>
+> *선언 지정자* *식별자* **\[]\[** *상수-식* **]** 합니다. . .<br/>
+> *선언 지정자* *식별자* **\[** *상수 식* **]** **\[** *상수-식* **]** 합니다. . .
 
 1. 선언 지정자:
 
-- 선택적 저장소 클래스 지정자.
+   - 선택적 저장소 클래스 지정자.
 
-- 선택적 **상수** 및/또는 **volatile** 지정자입니다.
+   - 선택적 **상수** 및/또는 **volatile** 지정자입니다.
 
-- 배열 요소의 형식 이름입니다.
+   - 배열 요소의 형식 이름입니다.
 
-2. 선언자:
+1. 선언자:
 
-- 식별자입니다.
+   - 식별자입니다.
 
-- 대괄호로 묶인 정수 계열 형식의 상수 식 **[]** 합니다. 추가 대괄호를 사용 하 여 여러 차원을 선언 하는 경우 첫 번째 대괄호 집합에서 상수 식을 생략할 수 있습니다.
+   - 대괄호로 묶인 정수 계열 형식의 상수 식  **\[]** 합니다. 추가 대괄호를 사용 하 여 여러 차원을 선언 하는 경우 첫 번째 대괄호 집합에서 상수 식을 생략할 수 있습니다.
 
-- 상수 식을 묶는 선택적 추가 대괄호입니다.
+   - 상수 식을 묶는 선택적 추가 대괄호입니다.
 
-3. 선택적 이니셜라이저입니다.  참조 [이니셜라이저](../cpp/initializers.md)합니다.
+1. 선택적 이니셜라이저입니다. 자세한 내용은 [이니셜라이저](../cpp/initializers.md)합니다.
 
-배열의 요소 수는 상수 식으로 지정됩니다. 배열의 첫 번째 요소는 0 번째 요소 이며 마지막 요소는 (*n*-1) 요소에 있는 *n* 요소 배열에 포함 될 수입니다. 합니다 *상수-식* 정수 계열 형식 이어야 하며 0 보다 커야 합니다. 크기가 0 인 배열은 배열이의 마지막 필드가 있는 경우에 유효는 **구조체** 하거나 **union** Microsoft 확장 (/Ze)을 사용 하는 경우 및 합니다.
+배열의 요소 수를 지정 하 여는 *상수-식*합니다. 배열의 첫 번째 요소는 0 번째 요소 이며 마지막 요소는 (*n*-1) 요소에 있는 *n* 요소 배열에 포함 될 수입니다. 합니다 *상수-식* 정수 계열 형식 이어야 하며 0 보다 커야 합니다. 크기가 0 인 배열은 배열이의 마지막 필드가 있는 경우에 유효는 **구조체** 하거나 **union** Microsoft 확장 (/Ze)을 사용 하는 경우 및 합니다.
 
 다음 예제에서는 런타임에 배열을 정의하는 방법을 보여 줍니다.
 

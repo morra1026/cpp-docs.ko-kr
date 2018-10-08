@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 985ff4eb96b904dc9c5b4377b336109b00e06b40
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ba4cb1411bca452de0f146626421315fa7dc177e
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716594"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48859863"
 ---
 # <a name="ai-specify-metadata-directories"></a>/AI(메타데이터 디렉터리 지정)
 
@@ -49,9 +49,9 @@ ms.locfileid: "45716594"
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
 
-2. 선택 된 **구성 속성** > **C/c + +** > **일반** 속성 페이지.
+1. 선택 된 **구성 속성** > **C/c + +** > **일반** 속성 페이지.
 
-3. 수정 된 **추가 #using 디렉터리** 속성입니다.
+1. 수정 된 **추가 #using 디렉터리** 속성입니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 

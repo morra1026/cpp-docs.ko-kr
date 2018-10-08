@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae9ab3c2e8f077d943b69b419694fbf686ffdf38
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 22b79454b71f4908d71e683d8bebe4611da7cb14
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703861"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861865"
 ---
 # <a name="export-exports-a-function"></a>/EXPORT(함수 내보내기)
 
@@ -70,9 +70,9 @@ BOOL CALLBACK PlainFuncName( Things * lpParams)
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
 
-2. 선택 된 **구성 속성** > **링커** > **명령줄** 속성 페이지.
+1. 선택 된 **구성 속성** > **링커** > **명령줄** 속성 페이지.
 
-3. 에 대 한 옵션을 입력 합니다 **추가 옵션** 상자입니다.
+1. 에 대 한 옵션을 입력 합니다 **추가 옵션** 상자입니다.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면
 

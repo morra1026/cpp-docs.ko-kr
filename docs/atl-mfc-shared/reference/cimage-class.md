@@ -64,19 +64,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd0858763d31e1f46e1cb366154871f06ae7a910
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7053c72536c0ab91420f1bbc068f39843eb99c1b
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400408"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861813"
 ---
 # <a name="cimage-class"></a>CImage 클래스
 
 `CImage` 향상 된 비트맵 지원, 로드 및 JPEG, GIF, BMP, 및 PNG 이동식 네트워크 그래픽 () 형식 이미지를 저장 하는 기능을 포함 하 여 제공 합니다.
 
 > [!IMPORTANT]
->  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
+> 이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -163,10 +163,10 @@ class CImage
 연결 된 비트맵을 DIB 구역을 인지를 확인 하려면 호출 [IsDibSection](#isdibsection)합니다.
 
 > [!NOTE]
-> **참고** 에서 Visual Studio.NET 2003에서이 클래스 수가 개수를 유지 합니다 `CImage` 생성 되는 개체입니다. 함수를 0으로 카운트가 때마다 `GdiplusShutdown` GDI +에서 사용 되는 리소스를 해제 하려면 자동으로 호출 됩니다. 이렇게 하면 모든 `CImage` Dll에서 직접 또는 간접적으로 생성 된 개체는 항상 올바르게 소멸 올바르고 `GdiplusShutdown` 에서 호출 되지 않습니다 `DllMain`합니다.
+> Visual Studio.NET 2003에서이 클래스는 수의 개수를 유지 `CImage` 생성 되는 개체입니다. 함수를 0으로 카운트가 때마다 `GdiplusShutdown` GDI +에서 사용 되는 리소스를 해제 하려면 자동으로 호출 됩니다. 이렇게 하면 모든 `CImage` Dll에서 직접 또는 간접적으로 생성 된 개체는 항상 올바르게 소멸 올바르고 `GdiplusShutdown` 에서 호출 되지 않습니다 `DllMain`합니다.
 
 > [!NOTE]
->  전역을 사용 하 여 `CImage` 개체 DLL에 권장 되지 않습니다. 전역 사용 해야 하는 경우 `CImage` 개체를 dll로 호출 [CImage::ReleaseGDIPlus](#releasegdiplus) 를 명시적으로 GDI +에서 사용 되는 리소스를 해제 합니다.
+> 전역을 사용 하 여 `CImage` 개체 DLL에 권장 되지 않습니다. 전역 사용 해야 하는 경우 `CImage` 개체를 dll로 호출 [CImage::ReleaseGDIPlus](#releasegdiplus) 를 명시적으로 GDI +에서 사용 되는 리소스를 해제 합니다.
 
 `CImage` 새 선택할 수 없습니다 [CDC](../../mfc/reference/cdc-class.md)합니다. `CImage` 이미지에 대 한 자체 HDC를 만듭니다. HBITMAP 연관만 HBITMAP를 한 번에 하나의 HDC를 선택할 수 있습니다, 되므로 `CImage` 다른 HDC를 선택할 수 없습니다. CDC를 해야 하는 경우 검색에서 HDC는 `CImage` [CDC::FromHandle]에 게 제공 하 고 (... /.. /mfc/reference/cdc-class.md#cdc__fromhandle 합니다.
 
@@ -183,7 +183,6 @@ m_myImage.ReleaseDC();
 
 사용 하는 경우 `CImage` MFC 프로젝트에서 프로젝트의 멤버 함수는 예상에 대 한 포인터를 확인 한 [CBitmap](../../mfc/reference/cbitmap-class.md) 개체입니다. 사용 하려는 경우 `CImage` 이러한 함수를 사용 하 여 같은 [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#appendmenu)를 사용 하 여 [CBitmap::FromHandle](../../mfc/reference/cbitmap-class.md#fromhandle), 전달에 `CImage` HBITMAP를 사용 하 여 반환 된 `CBitmap*`합니다.  
 
-
 ## <a name="example"></a>예제
 
 ```cpp  
@@ -199,15 +198,14 @@ void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
 }
 ```
 
-
 통해 `CImage`, DIB 섹션의 실제 비트에 액세스할 수 있습니다. 사용할 수는 `CImage` Win32 HBITMAP 또는 DIB 구역을 사용 했던 개체입니다.
 
 사용할 수 있습니다 `CImage` MFC 또는 ATL.
 
 > [!NOTE]
->  사용 하 여 프로젝트를 만들면 `CImage`를 정의 해야 합니다 `CString` 포함 하기 전에 `atlimage.h`입니다. 프로젝트에 ATL MFC 없이 사용 하는 경우 포함 `atlstr.h` 포함 하기 전에 `atlimage.h`입니다. 프로젝트에 MFC (또는 MFC 지원을 통해 ATL 프로젝트를) 사용 하는 경우 포함 `afxstr.h` 포함 하기 전에 `atlimage.h`입니다.  
+> 사용 하 여 프로젝트를 만들면 `CImage`를 정의 해야 합니다 `CString` 포함 하기 전에 `atlimage.h`입니다. 프로젝트에 ATL MFC 없이 사용 하는 경우 포함 `atlstr.h` 포함 하기 전에 `atlimage.h`입니다. 프로젝트에 MFC (또는 MFC 지원을 통해 ATL 프로젝트를) 사용 하는 경우 포함 `afxstr.h` 포함 하기 전에 `atlimage.h`입니다.  
 >   
->  마찬가지로, 포함 해야 합니다 `atlimage.h` 포함 하기 전에 `atlimpl.cpp`입니다. 이를 위해 쉽게 포함 `atlimage.h` 에서 프로그램 `stdafx.h`합니다.
+> 마찬가지로, 포함 해야 합니다 `atlimage.h` 포함 하기 전에 `atlimpl.cpp`입니다. 이를 위해 쉽게 포함 `atlimage.h` 에서 프로그램 `stdafx.h`합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -219,81 +217,81 @@ void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
 
 ```
 BOOL AlphaBlend(
-HDC hDestDC,
-int xDest,
-int yDest,
-BYTE bSrcAlpha = 0xff,
-BYTE bBlendOp = AC_SRC_OVER) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    BYTE bSrcAlpha = 0xff,
+    BYTE bBlendOp = AC_SRC_OVER) const throw();
 
 BOOL AlphaBlend(
-HDC hDestDC,
-const POINT& pointDest,
-BYTE bSrcAlpha = 0xff,
-BYTE bBlendOp = AC_SRC_OVER) const throw();
+    HDC hDestDC,
+    const POINT& pointDest,
+    BYTE bSrcAlpha = 0xff,
+    BYTE bBlendOp = AC_SRC_OVER) const throw();
 
 BOOL AlphaBlend(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-int xSrc,
-int ySrc,
-int nSrcWidth,
-int nSrcHeight,
-BYTE bSrcAlpha = 0xff,
-BYTE bBlendOp = AC_SRC_OVER);
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    int xSrc,
+    int ySrc,
+    int nSrcWidth,
+    int nSrcHeight,
+    BYTE bSrcAlpha = 0xff,
+    BYTE bBlendOp = AC_SRC_OVER);
 
 BOOL AlphaBlend(
-HDC hDestDC,
-const RECT& rectDest,
-const RECT& rectSrc,
-BYTE bSrcAlpha = 0xff,
-BYTE bBlendOp = AC_SRC_OVER);
+    HDC hDestDC,
+    const RECT& rectDest,
+    const RECT& rectSrc,
+    BYTE bSrcAlpha = 0xff,
+    BYTE bBlendOp = AC_SRC_OVER);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*hDestDC*  
+*hDestDC*<br/>
 대상 장치 컨텍스트에 대 한 핸들입니다.
 
-*xDest*  
+*xDest*<br/>
 X 좌표를 대상 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
-*yDest*  
+*yDest*<br/>
 Y 좌표, 대상 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
-*bSrcAlpha*  
+*bSrcAlpha*<br/>
 전체 소스 비트맵에 사용 하는 알파 투명도 값입니다. 기본값 (255) 0xff 불투명 이미지는 픽셀 별 알파 값만 사용 하려는 가정 합니다.
 
-*bBlendOp*  
+*bBlendOp*<br/>
 전체 소스 비트맵 및 소스 비트맵에 대 한 형식 정보에 적용할 전역 알파 값을 원본 및 대상 비트맵에는 알파 혼합 함수입니다. 원본 및 대상 blend 함수는 현재 AC_SRC_OVER로 제한 합니다.
 
-*pointDest*  
+*pointDest*<br/>
 에 대 한 참조를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 논리 단위에서 대상 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.
 
-*nDestWidth*  
+*nDestWidth*<br/>
 논리 단위를 대상 사각형의 너비입니다.
 
-*nDestHeight*  
+*nDestHeight*<br/>
 대상 사각형의 논리 단위에서 높이입니다.
 
-*xSrc*  
+*xSrc*<br/>
 소스 사각형의 왼쪽된 위 모퉁이의 논리적 x 좌표입니다.
 
-*ySrc*  
+*ySrc*<br/>
 소스 사각형의 왼쪽된 위 모퉁이의 논리적 y 좌표입니다.
 
-*nSrcWidth*  
+*nSrcWidth*<br/>
 논리 단위를 소스 사각형의 너비입니다.
 
-*nSrcHeight*  
+*nSrcHeight*<br/>
 소스 사각형의 논리 단위에서 높이입니다.
 
-*rectDest*  
+*rectDest*<br/>
 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조, 대상을 식별 합니다.
 
-*rectSrc*  
+*rectSrc*<br/>
 에 대 한 참조를 `RECT` 구조, 소스를 식별 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -316,10 +314,10 @@ void Attach(HBITMAP hBitmap, DIBOrientation eOrientation = DIBOR_DEFAULT) throw(
 
 ### <a name="parameters"></a>매개 변수
 
-*hBitmap*  
+*hBitmap*<br/>
 HBITMAP 핸들입니다.
 
-*eOrientation*  
+*eOrientation*<br/>
 비트맵의 방향을 지정합니다. 다음 중 하나일 수 있습니다.
 
 - 비트맵의 방향을 DIBOR_DEFAULT 운영 체제에 의해 결정 됩니다. 그러나이 없을 수 있습니다 항상 의도 한 결과 모든 운영 체제에서. 이 대 한 자세한 내용은 다음 기술 자료 문서를 참조 하세요. (**Q186586**): PRB: getobject () 항상 반환 양의 높이 대 한 DIB 섹션입니다.
@@ -338,66 +336,66 @@ HBITMAP 핸들입니다.
 
 ```
 BOOL BitBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL BitBlt(
-HDC hDestDC,
-const POINT& pointDest,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    const POINT& pointDest,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL BitBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-int xSrc,
-int ySrc,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    int xSrc,
+    int ySrc,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL BitBlt(
-HDC hDestDC,
-const RECT& rectDest,
-const POINT& pointSrc,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    const POINT& pointSrc,
+    DWORD dwROP = SRCCOPY) const throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*hDestDC*  
+*hDestDC*<br/>
 HDC 대상입니다.
 
-*xDest*  
+*xDest*<br/>
 대상 사각형의 왼쪽된 위 모퉁이의 논리적 x 좌표입니다.
 
-*yDest*  
+*yDest*<br/>
 대상 사각형의 왼쪽된 위 모퉁이의 논리적 y 좌표입니다.
 
-*dwROP*  
+*dwROP*<br/>
 래스터 작업 수행 수입니다. 래스터 작업 코드를 대상 (현재 선택 된 브러시에 의해 정의 됨) 처럼 원본, 대상 및 패턴의 비트를 결합 하는 방법에 정확 하 게 정의 합니다. 참조 [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) 다른 래스터 연산은 코드와 해당 설명의 목록을 Windows SDK에 있습니다.
 
-*pointDest*  
+*pointDest*<br/>
 A [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 대상 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.
 
-*nDestWidth*  
+*nDestWidth*<br/>
 논리 단위를 대상 사각형의 너비입니다.
 
-*nDestHeight*  
+*nDestHeight*<br/>
 대상 사각형의 논리 단위에서 높이입니다.
 
-*xSrc*  
+*xSrc*<br/>
 소스 사각형의 왼쪽된 위 모퉁이의 논리적 x 좌표입니다.
 
-*ySrc*  
+*ySrc*<br/>
 소스 사각형의 왼쪽된 위 모퉁이의 논리적 y 좌표입니다.
 
-*rectDest*  
+*rectDest*<br/>
 A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 대상 사각형을 나타내는 구조입니다.
 
-*pointSrc*  
+*pointSrc*<br/>
 `POINT` 소스 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -430,30 +428,30 @@ CImage() throw();
 
 ```
 BOOL Create(
-int nWidth,
-int nHeight,
-int nBPP,
-DWORD dwFlags = 0) throw();
+    int nWidth,
+    int nHeight,
+    int nBPP,
+    DWORD dwFlags = 0) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*nWidth*  
+*nWidth*<br/>
 너비는 `CImage` 비트맵 픽셀에서입니다.
 
-*nHeight*  
+*nHeight*<br/>
 높이 `CImage` 비트맵 픽셀에서입니다. 하는 경우 *nHeight* 이 양수인 경우 비트맵 상향식 DIB 이며 해당 원본 왼쪽된 아래 모퉁이. 하는 경우 *nHeight* 음수 이면 비트맵 하향식 DIB 이며 해당 원점은 왼쪽된 위 모퉁이.
 
-*nBPP*  
+*nBPP*<br/>
 비트맵의 픽셀 당 비트 수입니다. 일반적으로 4, 8, 16, 24 또는 32 흑백 비트맵 또는 마스크에 대 한 1을 수 있습니다.
 
-*dwFlags*  
+*dwFlags*<br/>
 비트맵 개체에 알파 채널이 있는지를 지정 합니다. 0 개 이상의 다음 값의 조합일 수 있습니다.
 
 - *createAlphaChannel* 경우에 사용할 수 *nBPP* 은 32, 및 *eCompression* BI_RGB 됩니다. 를 지정 하는 경우 만든된 이미지의 각 픽셀 (영숫자가 아닌 32 비트 이미지에 사용 되지 않는)의 네 번째 바이트에 저장 된 각 픽셀에 대 한 알파 (투명도) 값. 호출할 때이 알파 채널은 자동으로 사용 됩니다 [CImage::AlphaBlend](#alphablend)합니다.
 
 > [!NOTE]
->  에 대 한 호출 [CImage::Draw](#draw), 알파 채널을 사용 하 여 이미지는 자동으로 알파 대상으로 혼합 합니다.
+> 에 대 한 호출 [CImage::Draw](#draw), 알파 채널을 사용 하 여 이미지는 자동으로 알파 대상으로 혼합 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -465,36 +463,36 @@ DWORD dwFlags = 0) throw();
 
 ```
 BOOL CreateEx(
-int nWidth,
-int nHeight,
-int nBPP,
-DWORD eCompression,
-const DWORD* pdwBitmasks = NULL,
-DWORD dwFlags = 0) throw();
+    int nWidth,
+    int nHeight,
+    int nBPP,
+    DWORD eCompression,
+    const DWORD* pdwBitmasks = NULL,
+    DWORD dwFlags = 0) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*nWidth*  
+*nWidth*<br/>
 너비는 `CImage` 비트맵 픽셀에서입니다.
 
-*nHeight*  
+*nHeight*<br/>
 높이 `CImage` 비트맵 픽셀에서입니다. 하는 경우 *nHeight* 이 양수인 경우 비트맵 상향식 DIB 이며 해당 원본 왼쪽된 아래 모퉁이. 하는 경우 *nHeight* 음수 이면 비트맵 하향식 DIB 이며 해당 원점은 왼쪽된 위 모퉁이.
 
-*nBPP*  
+*nBPP*<br/>
 비트맵의 픽셀 당 비트 수입니다. 일반적으로 4, 8, 16, 24 또는 32 흑백 비트맵 또는 마스크에 대 한 1을 수 있습니다.
 
-*eCompression*  
+*eCompression*<br/>
 (위에서 아래로 Dib를 압축할 수 없습니다.) 압축 된 상향식 비트맵에 대 한 압축 유형을 지정 합니다. 다음 값 중 하나입니다.
 
 - BI_RGB 형식으로 압축 된 아닙니다. 호출할 때이 값을 지정할 `CImage::CreateEx` 호출과 같습니다 `CImage::Create`합니다.
 
 - BI_BITFIELDS 형식으로 압축 되지 및 색상표의 각 픽셀의 각각 빨강, 녹색 및 파랑 구성 요소를 지정 하는 세 가지 DWORD 색 마스크 구성 됩니다. 16 및 32 bpp 비트맵을 사용 하는 경우에 유효 합니다.
 
-*pdwBitfields*  
+*pdwBitfields*<br/>
 경우에 사용 *eCompression* 설정할지를 BI_BITFIELDS, 그렇지 않으면 NULL 이어야 합니다. 비트를 각 픽셀의 색의 빨강, 녹색 및 파랑 구성 요소에 대해 각각 사용 지정, 세 개의 DWORD 비트 마스크의 배열에 대 한 포인터입니다. 비트 필드에 대 한 제한 사항에 대 한 자세한 내용은 [BITMAPINFOHEADER](https://msdn.microsoft.com/library/windows/desktop/dd183376) Windows SDK에 있습니다.
 
-*dwFlags*  
+*dwFlags*<br/>
 비트맵 개체에 알파 채널이 있는지를 지정 합니다. 0 개 이상의 다음 값의 조합일 수 있습니다.
 
 - *createAlphaChannel* 경우에 사용할 수 *nBPP* 은 32, 및 *eCompression* BI_RGB 됩니다. 를 지정 하는 경우 만든된 이미지의 각 픽셀 (영숫자가 아닌 32 비트 이미지에 사용 되지 않는)의 네 번째 바이트에 저장 된 각 픽셀에 대 한 알파 (투명도) 값. 호출할 때이 알파 채널은 자동으로 사용 됩니다 [CImage::AlphaBlend](#alphablend)합니다.
@@ -541,78 +539,78 @@ HBITMAP Detach() throw();
 
 ```
 BOOL Draw(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-int xSrc,
-int ySrc,
-int nSrcWidth,
-int nSrcHeight) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    int xSrc,
+    int ySrc,
+    int nSrcWidth,
+    int nSrcHeight) const throw();
 
 BOOL Draw(
-HDC hDestDC,
-const RECT& rectDest,
-const RECT& rectSrc) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    const RECT& rectSrc) const throw();
 
 BOOL Draw(
-HDC hDestDC,
-int xDest,
-int yDest) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest) const throw();
 
 BOOL Draw(
-HDC hDestDC,
-const POINT& pointDest) const throw();
+    HDC hDestDC,
+    const POINT& pointDest) const throw();
 
 BOOL Draw(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight) const throw();
 
 BOOL Draw(
-HDC hDestDC,
-const RECT& rectDest) const throw();
+    HDC hDestDC,
+    const RECT& rectDest) const throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*hDestDC*  
+*hDestDC*<br/>
 대상 장치 컨텍스트의 핸들입니다.
 
-*xDest*  
+*xDest*<br/>
 X 좌표를 대상 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
-*yDest*  
+*yDest*<br/>
 Y 좌표, 대상 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
-*nDestWidth*  
+*nDestWidth*<br/>
 논리 단위를 대상 사각형의 너비입니다.
 
-*nDestHeight*  
+*nDestHeight*<br/>
 대상 사각형의 논리 단위에서 높이입니다.
 
-*xSrc*  
+*xSrc*<br/>
 X 좌표를 소스 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
-*ySrc*  
+*ySrc*<br/>
 Y 좌표를 소스 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
-*nSrcWidth*  
+*nSrcWidth*<br/>
 논리 단위를 소스 사각형의 너비입니다.
 
-*nSrcHeight*  
+*nSrcHeight*<br/>
 소스 사각형의 논리 단위에서 높이입니다.
 
-*rectDest*  
+*rectDest*<br/>
 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조, 대상을 식별 합니다.
 
-*rectSrc*  
+*rectSrc*<br/>
 에 대 한 참조를 `RECT` 구조, 소스를 식별 합니다.
 
-*pointDest*  
+*pointDest*<br/>
 에 대 한 참조를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 논리 단위에서 대상 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -642,7 +640,7 @@ void* GetBits() throw();
 이 포인터를 반환한 값과 함께 사용 하 여 [GetPitch](#getpitch)를 찾아서 개별 픽셀 이미지를 변경할 수 있습니다.
 
 > [!NOTE]
->  이 메서드는 DIB 섹션 포함 된 비트맵만; 지원 픽셀을 액세스 하는 결과적으로 `CImage` 픽셀 DIB 섹션 하는 동일한 방식으로 개체입니다. 반환된 된 포인터 (0, 0) 위치에 픽셀을 가리킵니다.
+> 이 메서드는 DIB 섹션 포함 된 비트맵만; 지원 픽셀을 액세스 하는 결과적으로 `CImage` 픽셀 DIB 섹션 하는 동일한 방식으로 개체입니다. 반환된 된 포인터 (0, 0) 위치에 픽셀을 가리킵니다.
 
 ##  <a name="getbpp"></a>  CImage::GetBPP
 
@@ -667,20 +665,21 @@ int GetBPP() const throw();
 DIB 섹션의 색상표에 있는 항목의 범위에서 빨간색, 녹색, 파란색 (RGB) 색 값을 검색합니다.
 
 ```
-void GetColorTable(UINT iFirstColor,
-UINT nColors,
-RGBQUAD* prgbColors) const throw();
+void GetColorTable(
+    UINT iFirstColor,
+    UINT nColors,
+    RGBQUAD* prgbColors) const throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*iFirstColor*  
+*iFirstColor*<br/>
 검색할 첫 번째 항목의 색 테이블 인덱스입니다.
 
-*nColors*  
+*nColors*<br/>
 검색할 색 테이블 항목의 수입니다.
 
-*prgbColors*  
+*prgbColors*<br/>
 배열에 대 한 포인터 [RGBQUAD](/windows/desktop/api/wingdi/ns-wingdi-tagrgbquad) 색을 검색 하는 구조 테이블 항목입니다.
 
 ##  <a name="getdc"></a>  CImage::GetDC
@@ -704,25 +703,26 @@ HDC GetDC() const throw();
 이미지를 저장 하기 위한 사용 가능한 이미지 형식을 찾습니다.
 
 ```
-static HRESULT GetExporterFilterString(CSimpleString& strExporters,
-CSimpleArray<GUID>& aguidFileTypes,
-LPCTSTR pszAllFilesDescription = NULL,
-DWORD dwExclude = excludeDefaultSave,
-TCHAR chSeparator = _T('|'));
+static HRESULT GetExporterFilterString(
+    CSimpleString& strExporters,
+    CSimpleArray<GUID>& aguidFileTypes,
+    LPCTSTR pszAllFilesDescription = NULL,
+    DWORD dwExclude = excludeDefaultSave,
+    TCHAR chSeparator = _T('|'));
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*strExporters*  
+*strExporters*<br/>
 `CSimpleString` 개체에 대한 참조입니다. 참조 **주의** 자세한 내용은 합니다.
 
-*aguidFileTypes*  
+*aguidFileTypes*<br/>
 문자열에 있는 파일 형식의 하나에 해당 하는 각 요소와 Guid의 배열입니다. 예에서 *pszAllFilesDescription* 아래 *aguidFileTypes*[0] GUID_NULL 이며 나머지 배열 값은 현재 운영 체제에서 지 원하는 이미지 파일 형식입니다.
 
 > [!NOTE]
->  상수의 전체 목록은 참조 하세요 **이미지 파일 형식 상수** Windows SDK에 있습니다.
+> 상수의 전체 목록은 참조 하세요 **이미지 파일 형식 상수** Windows SDK에 있습니다.
 
-*pszAllFilesDescription*  
+*pszAllFilesDescription*<br/>
 이 매개 변수가 NULL이 아닌 경우 필터 문자열 목록 맨 앞에 추가 필터 중 하나의 갖습니다. 이 필터의 현재 값을 갖습니다 *pszAllFilesDescription* 해당 설명에 대 한 목록의 모든 다른 내보내기에서 지원 되는 확장명의 파일을 수락 하 고 있습니다.
 
 예를 들어:  
@@ -736,7 +736,7 @@ _T("All Image Files"));
 ```
 
 
-*dwExclude*  
+*dwExclude*<br/>
 목록에서 제외할 파일 형식을 지정 하는 비트 플래그 집합입니다. 사용할 수 있는 플래그는:
 
 - `excludeGIF` = 0x01 제외 GIF 파일.
@@ -761,7 +761,7 @@ _T("All Image Files"));
 
 - `excludeDefaultSave` = `excludeIcon &#124; excludeEMF &#124; excludeWMF` 저장에 대 한 일반적으로 특별 한 요구 사항이 있기 때문에 이러한 파일은 기본적으로 제외 됩니다.
 
-*chSeparator*  
+*chSeparator*<br/>
 이미지 형식 간에 사용 되는 구분 기호입니다. 참조 **주의** 자세한 내용은 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -799,25 +799,26 @@ int GetHeight() const throw();
 이미지를 로드 하는 사용 가능한 이미지 형식을 찾습니다.
 
 ```
-static HRESULT GetImporterFilterString(CSimpleString& strImporters,
-CSimpleArray<GUID>& aguidFileTypes,
-LPCTSTR pszAllFilesDescription = NULL,
-DWORD dwExclude = excludeDefaultLoad,
-TCHAR chSeparator = _T('|'));
+static HRESULT GetImporterFilterString(
+    CSimpleString& strImporters,
+    CSimpleArray<GUID>& aguidFileTypes,
+    LPCTSTR pszAllFilesDescription = NULL,
+    DWORD dwExclude = excludeDefaultLoad,
+    TCHAR chSeparator = _T('|'));
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*strImporters*  
+*strImporters*<br/>
 `CSimpleString` 개체에 대한 참조입니다. 참조 **주의** 자세한 내용은 합니다.
 
-*aguidFileTypes*  
+*aguidFileTypes*<br/>
 문자열에 있는 파일 형식의 하나에 해당 하는 각 요소와 Guid의 배열입니다. 예에서 *pszAllFilesDescription* 아래 *aguidFileTypes*[0] GUID_NULL 나머지 배열 값은 현재 운영 체제에서 지 원하는 이미지 파일 형식입니다.
 
 > [!NOTE]
->  상수의 전체 목록은 참조 하세요 **이미지 파일 형식 상수** Windows SDK에 있습니다.
+> 상수의 전체 목록은 참조 하세요 **이미지 파일 형식 상수** Windows SDK에 있습니다.
 
-*pszAllFilesDescription*  
+*pszAllFilesDescription*<br/>
 이 매개 변수가 NULL이 아닌 경우 필터 문자열 목록 맨 앞에 추가 필터 중 하나의 갖습니다. 이 필터의 현재 값을 갖습니다 *pszAllFilesDescription* 해당 설명에 대 한 목록의 모든 다른 내보내기에서 지원 되는 확장명의 파일을 수락 하 고 있습니다.
 
 예를 들어:  
@@ -831,7 +832,7 @@ _T("All Image Files"));
 ```
 
 
-*dwExclude*  
+*dwExclude*<br/>
 목록에서 제외할 파일 형식을 지정 하는 비트 플래그 집합입니다. 사용할 수 있는 플래그는:
 
 - `excludeGIF` = 0x01 제외 GIF 파일.
@@ -856,7 +857,7 @@ _T("All Image Files"));
 
 - `excludeDefaultSave` = `excludeIcon &#124; excludeEMF &#124; excludeWMF` 저장에 대 한 일반적으로 특별 한 요구 사항이 있기 때문에 이러한 파일은 기본적으로 제외 됩니다.
 
-*chSeparator*  
+*chSeparator*<br/>
 이미지 형식 간에 사용 되는 구분 기호입니다. 참조 **주의** 자세한 내용은 합니다.
 
 ### <a name="remarks"></a>설명
@@ -908,22 +909,22 @@ int GetPitch() const throw();
 사용 하 여 `GetPitch` 사용 하 여 [GetBits](#getbits) 이미지의 각 픽셀을 찾으려고 합니다.
 
 > [!NOTE]
->  이 메서드는 DIB 구역을 비트맵만 지원합니다.
+> 이 메서드는 DIB 구역을 비트맵만 지원합니다.
 
 ##  <a name="getpixel"></a>  CImage::GetPixel
 
 지정 된 위치에 있는 픽셀의 색을 검색 *x* 하 고 *y*합니다.
 
 ```
-COLORREF GetPixel(int x,int y) const throw();
+COLORREF GetPixel(int x, int y) const throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 픽셀의 x 좌표입니다.
 
-*y*  
+*y*<br/>
 픽셀의 y 좌표입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -935,15 +936,15 @@ COLORREF GetPixel(int x,int y) const throw();
 정확한 픽셀의 주소를 검색합니다.
 
 ```
-void* GetPixelAddress(int x,int y) throw();
+void* GetPixelAddress(int x, int y) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 픽셀의 x 좌표입니다.
 
-*y*  
+*y*<br/>
 픽셀의 y 좌표입니다.
 
 ### <a name="remarks"></a>설명
@@ -953,7 +954,7 @@ void* GetPixelAddress(int x,int y) throw();
 픽셀당 8 비트 미만의 있는 형식의 경우이 메서드는 픽셀을 포함 하는 바이트의 주소를 반환 합니다. 예를 들어, 이미지 형식, 픽셀당 4 비트 있으면 `GetPixelAddress` 반환 바이트 당 픽셀 수 2 바이트에서 첫 번째 픽셀의 주소를 계산 해야 합니다.
 
 > [!NOTE]
->  이 메서드는 DIB 구역을 비트맵만 지원합니다.
+> 이 메서드는 DIB 구역을 비트맵만 지원합니다.
 
 ##  <a name="gettransparentcolor"></a>  CImage::GetTransparentColor
 
@@ -1026,7 +1027,7 @@ TRUE 이면 인덱싱된; 그렇지 않으면 FALSE입니다.
 이 메서드는 8 비트 비트맵 하는 경우에 TRUE를 반환 합니다 (256 색)이 있습니다.
 
 > [!NOTE]
->  이 메서드는 DIB 구역을 비트맵만 지원합니다.
+> 이 메서드는 DIB 구역을 비트맵만 지원합니다.
 
 ##  <a name="isnull"></a>  CImage::IsNull
 
@@ -1067,10 +1068,10 @@ HRESULT Load(IStream* pStream) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pszFileName*  
+*pszFileName*<br/>
 로드할 이미지 파일의 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
-*pStream*  
+*pStream*<br/>
 로드할 이미지 파일의 이름을 포함 하는 스트림에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1089,23 +1090,23 @@ HRESULT Load(IStream* pStream) throw();
 
 ```
 void LoadFromResource(
-HINSTANCE hInstance,
-LPCTSTR pszResourceName) throw();
+    HINSTANCE hInstance,
+    LPCTSTR pszResourceName) throw();
 
 void LoadFromResource(
-HINSTANCE hInstance,
-UINT nIDResource) throw();
+    HINSTANCE hInstance,
+    UINT nIDResource) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*hInstance*  
+*hInstance*<br/>
 로드할 이미지를 포함 하는 모듈의 인스턴스를 처리 합니다.
 
-*pszResourceName*  
+*pszResourceName*<br/>
 로드할 이미지를 포함 하는 리소스의 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
-*nIDResource*  
+*nIDResource*<br/>
 로드할 리소스의 ID입니다.
 
 ### <a name="remarks"></a>설명
@@ -1118,85 +1119,85 @@ UINT nIDResource) throw();
 
 ```
 BOOL MaskBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-int xSrc,
-int ySrc,
-HBITMAP hbmMask,
-int xMask,
-int yMask,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    int xSrc,
+    int ySrc,
+    HBITMAP hbmMask,
+    int xMask,
+    int yMask,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL MaskBlt(
-HDC hDestDC,
-const RECT& rectDest,
-const POINT& pointSrc,
-HBITMAP hbmMask,
-const POINT& pointMask,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    const POINT& pointSrc,
+    HBITMAP hbmMask,
+    const POINT& pointMask,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL MaskBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-HBITMAP hbmMask,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    HBITMAP hbmMask,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL MaskBlt(
-HDC hDestDC,
-const POINT& pointDest,
-HBITMAP hbmMask,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    const POINT& pointDest,
+    HBITMAP hbmMask,
+    DWORD dwROP = SRCCOPY) const throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*hDestDC*  
+*hDestDC*<br/>
 해당 실행 파일에는 리소스가 포함 된 모듈에 대 한 핸들입니다.
 
-*xDest*  
+*xDest*<br/>
 X 좌표를 대상 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
-*yDest*  
+*yDest*<br/>
 Y 좌표, 대상 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
-*nDestWidth*  
+*nDestWidth*<br/>
 논리 단위를 대상 사각형 및 소스 비트맵의 너비입니다.
 
-*nDestHeight*  
+*nDestHeight*<br/>
 대상 사각형 및 소스 비트맵의 논리 단위에서 높이입니다.
 
-*xSrc*  
+*xSrc*<br/>
 소스 비트맵의 왼쪽된 위 모퉁이의 논리적 x 좌표입니다.
 
-*ySrc*  
+*ySrc*<br/>
 소스 비트맵의 왼쪽된 위 모퉁이의 논리적 y 좌표입니다.
 
-*hbmMask*  
+*hbmMask*<br/>
 원본 장치 컨텍스트에서 색 비트맵을 함께 단색 마스크 비트맵에 대 한 핸들입니다.
 
-*xMask*  
+*xMask*<br/>
 지정 된 마스크 비트맵의 가로 픽셀 오프셋 합니다 *hbmMask* 매개 변수입니다.
 
-*yMask*  
+*yMask*<br/>
 지정 된 마스크 비트맵의 세로 픽셀 오프셋 합니다 *hbmMask* 매개 변수입니다.
 
-*dwROP*  
+*dwROP*<br/>
 전경색과 배경색을 모두 3 개로 구성 된 래스터 연산 코드 메서드를 사용 하 여 원본 및 대상 데이터의 조합에 컨트롤을 지정 합니다. 백그라운드 래스터 연산 코드는이 값의 상위 단어에 대해 높은 순서 바이트가에 저장 됩니다. 전경 래스터 연산 코드는이 값의 상위 단어의 낮은 순서 바이트에 저장 됩니다. 이 값의 하위 단어를 무시 되 고 0 이어야 합니다. 전경색과 배경색이 메서드의 컨텍스트에서 설명은 참조 하세요. `MaskBlt` Windows SDK에 있습니다. 일반적인 래스터 연산 코드 목록은 참조 하세요. `BitBlt` Windows SDK에 있습니다.
 
-*rectDest*  
+*rectDest*<br/>
 에 대 한 참조를 `RECT` 구조, 대상을 식별 합니다.
 
-*pointSrc*  
+*pointSrc*<br/>
 `POINT` 소스 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.
 
-*pointMask*  
+*pointMask*<br/>
 `POINT` 마스크 비트맵의 왼쪽된 위 모퉁이 나타내는 구조입니다.
 
-*pointDest*  
+*pointDest*<br/>
 에 대 한 참조를 `POINT` 논리 단위에서 대상 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1217,62 +1218,62 @@ Y 좌표, 대상 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
 ```
 BOOL PlgBlt(
-HDC hDestDC,
-const POINT* pPoints,
-HBITMAP hbmMask = NULL) const throw();
+    HDC hDestDC,
+    const POINT* pPoints,
+    HBITMAP hbmMask = NULL) const throw();
 
 BOOL PlgBlt(
-HDC hDestDC,
-const POINT* pPoints,
-int xSrc,
-int ySrc,
-int nSrcWidth,
-int nSrcHeight,
-HBITMAP hbmMask = NULL,
-int xMask = 0,
-int yMask = 0) const throw();
+    HDC hDestDC,
+    const POINT* pPoints,
+    int xSrc,
+    int ySrc,
+    int nSrcWidth,
+    int nSrcHeight,
+    HBITMAP hbmMask = NULL,
+    int xMask = 0,
+    int yMask = 0) const throw();
 
 BOOL PlgBlt(
-HDC hDestDC,
-const POINT* pPoints,
-const RECT& rectSrc,
-HBITMAP hbmMask = NULL,
-const POINT& pointMask = CPoint(0, 0)) const throw();
+    HDC hDestDC,
+    const POINT* pPoints,
+    const RECT& rectSrc,
+    HBITMAP hbmMask = NULL,
+    const POINT& pointMask = CPoint(0, 0)) const throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*hDestDC*  
+*hDestDC*<br/>
 대상 장치 컨텍스트의 핸들입니다.
 
-*pPoints*  
+*pPoints*<br/>
 대상 평행 사변형의 세 모퉁이 식별 하는 세 가지 논리 공간의 점 배열에 대 한 포인터입니다. 소스 사각형의 왼쪽된 위 모퉁이이 배열, 오른쪽 위 모퉁이이 배열의 두 번째 지점 및 세 번째 지점 왼쪽된 아래 모서리에서 첫 번째 요소에 매핑됩니다. 소스 사각형의 오른쪽 아래 모퉁이 평행 사변형에 암시적 네 번째 지점에 매핑됩니다.
 
-*hbmMask*  
+*hbmMask*<br/>
 소스 사각형의 색을 마스크 하는 데 사용 되는 선택적 흑백 비트맵 핸들입니다.
 
-*xSrc*  
+*xSrc*<br/>
 X 좌표를 소스 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
-*ySrc*  
+*ySrc*<br/>
 Y 좌표를 소스 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
-*nSrcWidth*  
+*nSrcWidth*<br/>
 논리 단위를 소스 사각형의 너비입니다.
 
-*nSrcHeight*  
+*nSrcHeight*<br/>
 소스 사각형의 논리 단위에서 높이입니다.
 
-*xMask*  
+*xMask*<br/>
 흑백 비트맵의 왼쪽된 위 모퉁이의 x 좌표입니다.
 
-*yMask*  
+*yMask*<br/>
 흑백 비트맵의 왼쪽된 위 모퉁이의 y 좌표입니다.
 
-*rectSrc*  
+*rectSrc*<br/>
 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 소스 사각형의 좌표를 지정 합니다.
 
-*pointMask*  
+*pointMask*<br/>
 A [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 마스크 비트맵의 왼쪽된 위 모퉁이 나타내는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1314,22 +1315,24 @@ void ReleaseGDIPlus() throw();
 지정 된 스트림 또는 디스크에 파일 이미지를 저장합니다.
 
 ```
-HRESULT Save(IStream* pStream,
-REFGUID guidFileType) const throw();
+HRESULT Save(
+    IStream* pStream,
+    REFGUID guidFileType) const throw();
 
-HRESULT Save(LPCTSTR pszFileName,
-REFGUID guidFileType= GUID_NULL) const throw();
+HRESULT Save(
+    LPCTSTR pszFileName,
+    REFGUID guidFileType = GUID_NULL) const throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*pStream*  
+*pStream*<br/>
 파일 이미지 데이터를 포함 하는 COM IStream 개체에 대 한 포인터입니다.
 
-*pszFileName*  
+*pszFileName*<br/>
 이미지 파일 이름에 대 한 포인터입니다.
 
-*guidFileType*  
+*guidFileType*<br/>
 이미지를 저장 하려면 파일 형식입니다. 다음 중 하나일 수 있습니다.
 
 - `ImageFormatBMP` 압축 되지 않은 비트맵 이미지입니다.
@@ -1341,7 +1344,7 @@ REFGUID guidFileType= GUID_NULL) const throw();
 - `ImageFormatGIF` GIF 이미지를 압축 합니다.
 
 > [!NOTE]
->  상수의 전체 목록은 참조 하세요 **이미지 파일 형식 상수** Windows SDK에 있습니다.
+> 상수의 전체 목록은 참조 하세요 **이미지 파일 형식 상수** Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1364,13 +1367,13 @@ void SetColorTable(
 
 ### <a name="parameters"></a>매개 변수
 
-*iFirstColor*  
+*iFirstColor*<br/>
 설정할 첫 번째 항목의 색 테이블 인덱스입니다.
 
-*nColors*  
+*nColors*<br/>
 색 테이블 항목 집합의 수입니다.
 
-*prgbColors*  
+*prgbColors*<br/>
 배열에 대 한 포인터 [RGBQUAD](/windows/desktop/api/wingdi/ns-wingdi-tagrgbquad) 색을 설정 하는 구조 테이블 항목입니다.
 
 ### <a name="remarks"></a>설명
@@ -1387,13 +1390,13 @@ void SetPixel(int x, int y, COLORREF color) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 설정할 픽셀의 가로 위치입니다.
 
-*y*  
+*y*<br/>
 설정할 픽셀의 세로 위치입니다.
 
-*색*  
+*색*<br/>
 픽셀을 설정한 색입니다.
 
 ### <a name="remarks"></a>설명
@@ -1410,13 +1413,13 @@ void SetPixelIndexed(int x, int y, int iIndex) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 설정할 픽셀의 가로 위치입니다.
 
-*y*  
+*y*<br/>
 설정할 픽셀의 세로 위치입니다.
 
-*iIndex*  
+*iIndex*<br/>
 색상표에서 색의 인덱스입니다.
 
 ##  <a name="setpixelrgb"></a>  CImage::SetPixelRGB
@@ -1425,28 +1428,28 @@ void SetPixelIndexed(int x, int y, int iIndex) throw();
 
 ```
 void SetPixelRGB(  
-int x,
-int y,
-BYTE r,
-BYTE g,
-BYTE b) throw();
+    int x,
+    int y,
+    BYTE r,
+    BYTE g,
+    BYTE b) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*x*  
+*x*<br/>
 설정할 픽셀의 가로 위치입니다.
 
-*y*  
+*y*<br/>
 설정할 픽셀의 세로 위치입니다.
 
-*r*  
+*r*<br/>
 빨간색의 농도입니다.
 
-*g*  
+*g*<br/>
 녹색 색의 강도 따라 합니다.
 
-*b*  
+*b*<br/>
 파랑 색의 강도 따라 합니다.
 
 ### <a name="remarks"></a>설명
@@ -1463,7 +1466,7 @@ LONG SetTransparentColor(LONG iTransparentColor) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*iTransparentColor*  
+*iTransparentColor*<br/>
 설정에 투명 한 색의 색상표의 인덱스입니다. -1 이면 색 없음 설정은 투명 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1476,73 +1479,73 @@ LONG SetTransparentColor(LONG iTransparentColor) throw();
 
 ```
 BOOL StretchBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL StretchBlt(
-HDC hDestDC,
-const RECT& rectDest,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL StretchBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-int xSrc,
-int ySrc,
-int nSrcWidth,
-int nSrcHeight,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    int xSrc,
+    int ySrc,
+    int nSrcWidth,
+    int nSrcHeight,
+    DWORD dwROP = SRCCOPY) const throw();
 
 BOOL StretchBlt(
-HDC hDestDC,
-const RECT& rectDest,
-const RECT& rectSrc,
-DWORD dwROP = SRCCOPY) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    const RECT& rectSrc,
+    DWORD dwROP = SRCCOPY) const throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*hDestDC*  
+*hDestDC*<br/>
 대상 장치 컨텍스트의 핸들입니다.
 
-*xDest*  
+*xDest*<br/>
 X 좌표를 대상 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
-*yDest*  
+*yDest*<br/>
 Y 좌표, 대상 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
-*nDestWidth*  
+*nDestWidth*<br/>
 논리 단위를 대상 사각형의 너비입니다.
 
-*nDestHeight*  
+*nDestHeight*<br/>
 대상 사각형의 논리 단위에서 높이입니다.
 
-*dwROP*  
+*dwROP*<br/>
 래스터 작업 수행 수입니다. 래스터 작업 코드를 대상 (현재 선택 된 브러시에 의해 정의 됨) 처럼 원본, 대상 및 패턴의 비트를 결합 하는 방법에 정확 하 게 정의 합니다. 참조 [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) 다른 래스터 연산은 코드와 해당 설명의 목록을 Windows SDK에 있습니다.
 
-*rectDest*  
+*rectDest*<br/>
 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조, 대상을 식별 합니다.
 
-*xSrc*  
+*xSrc*<br/>
 X 좌표를 소스 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
-*ySrc*  
+*ySrc*<br/>
 Y 좌표를 소스 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
-*nSrcWidth*  
+*nSrcWidth*<br/>
 논리 단위를 소스 사각형의 너비입니다.
 
-*nSrcHeight*  
+*nSrcHeight*<br/>
 소스 사각형의 논리 단위에서 높이입니다.
 
-*rectSrc*  
+*rectSrc*<br/>
 에 대 한 참조를 `RECT` 구조, 소스를 식별 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1559,73 +1562,73 @@ Y 좌표를 소스 사각형의 왼쪽된 위 모퉁이의 논리 단위입니�
 
 ```
 BOOL TransparentBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-UINT crTransparent = CLR_INVALID) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    UINT crTransparent = CLR_INVALID) const throw();
 
 BOOL TransparentBlt(
-HDC hDestDC,
-const RECT& rectDest,
-UINT crTransparent = CLR_INVALID) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    UINT crTransparent = CLR_INVALID) const throw();
 
 BOOL TransparentBlt(
-HDC hDestDC,
-int xDest,
-int yDest,
-int nDestWidth,
-int nDestHeight,
-int xSrc,
-int ySrc,
-int nSrcWidth,
-int nSrcHeight,
-UINT crTransparent = CLR_INVALID) const throw();
+    HDC hDestDC,
+    int xDest,
+    int yDest,
+    int nDestWidth,
+    int nDestHeight,
+    int xSrc,
+    int ySrc,
+    int nSrcWidth,
+    int nSrcHeight,
+    UINT crTransparent = CLR_INVALID) const throw();
 
 BOOL TransparentBlt(
-HDC hDestDC,
-const RECT& rectDest,
-const RECT& rectSrc,
-UINT crTransparent = CLR_INVALID) const throw();
+    HDC hDestDC,
+    const RECT& rectDest,
+    const RECT& rectSrc,
+    UINT crTransparent = CLR_INVALID) const throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*hDestDC*  
+*hDestDC*<br/>
 대상 장치 컨텍스트의 핸들입니다.
 
-*xDest*  
+*xDest*<br/>
 X 좌표를 대상 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
-*yDest*  
+*yDest*<br/>
 Y 좌표, 대상 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
-*nDestWidth*  
+*nDestWidth*<br/>
 논리 단위를 대상 사각형의 너비입니다.
 
-*nDestHeight*  
+*nDestHeight*<br/>
 대상 사각형의 논리 단위에서 높이입니다.
 
-*crTransparent*  
+*crTransparent*<br/>
 소스 비트맵을 투명 하 게 처리할 색입니다. 기본적으로 CLR_INVALID, 현재 이미지의 투명 한 색으로 설정 된 색상을 사용 해야 함을 나타내는입니다.
 
-*rectDest*  
+*rectDest*<br/>
 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조, 대상을 식별 합니다.
 
-*xSrc*  
+*xSrc*<br/>
 X 좌표를 소스 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
-*ySrc*  
+*ySrc*<br/>
 Y 좌표를 소스 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
-*nSrcWidth*  
+*nSrcWidth*<br/>
 논리 단위를 소스 사각형의 너비입니다.
 
-*nSrcHeight*  
+*nSrcHeight*<br/>
 소스 사각형의 논리 단위에서 높이입니다.
 
-*rectSrc*  
+*rectSrc*<br/>
 에 대 한 참조를 `RECT` 구조, 소스를 식별 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1635,7 +1638,6 @@ TRUE 이면 성공적이 고, 그렇지 않으면 FALSE.
 ### <a name="remarks"></a>설명
 
 `TransparentBlt` 소스 비트맵 및 픽셀 당 8 비트 픽셀당 4 비트에 대 한 지원 됩니다. 사용 하 여 [CImage::AlphaBlend](#alphablend) 투명도 사용 하 여 32 비트 / 픽셀 비트맵을 지정 합니다.
-
 
 ### <a name="example"></a>예제  
 
@@ -1666,7 +1668,6 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage,
 }
 ```
 
-
 ## <a name="see-also"></a>참고 항목
 
 [MMXSwarm 샘플](../../visual-cpp-samples.md)<br/>
@@ -1676,4 +1677,3 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage,
 [ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md)<br/>
 [장치 독립적 비트맵](/windows/desktop/gdi/device-independent-bitmaps)<br/>
 [CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibsection)   
-

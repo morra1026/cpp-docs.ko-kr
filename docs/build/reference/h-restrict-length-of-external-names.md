@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61a931ac5f9793f800157ed02ffcb7ff5071f4df
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: c4881ba20e999b13e2a7841161a775eac69638f6
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724401"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861020"
 ---
 # <a name="h-restrict-length-of-external-names"></a>/H(외부 이름 길이 제한)
 
@@ -86,9 +86,9 @@ void func2(void) {}
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
 
-2. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
+1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
 
-3. 컴파일러 옵션을 입력 합니다 **추가 옵션** 상자입니다.
+1. 컴파일러 옵션을 입력 합니다 **추가 옵션** 상자입니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 512f791b3db513c2a143bda84a8dc2677b341544
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1b8074ad511544dcc6638ca804a26745e3da317b
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106048"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860344"
 ---
 # <a name="adding-an-atl-dialog-box"></a>ATL 대화 상자를 추가합니다.
 
@@ -30,15 +30,15 @@ ATL 대화 상자에 프로젝트를 추가 하려면 프로젝트에 ATL 프로
 기본적으로 ATL 대화 상자 마법사에서 파생 된 대화 상자를 구현 [CAxDialogImpl](../../atl/reference/caxdialogimpl-class.md)합니다. 이 클래스에는 Windows 및 ActiveX 컨트롤을 호스팅하기 위한 지원이 포함 됩니다. ActiveX 컨트롤 지원이 오버 헤드는 마법사가 코드를 생성 하는 면에 하지 않을 수 있습니다, 경우 바꾸려면 `CAxDialogImpl` 중 하나를 사용 하 여 [CSimpleDialog](../../atl/reference/csimpledialog-class.md) 하거나 [CDialogImpl](../../atl/reference/cdialogimpl-class.md) 기본 클래스로 .
 
 > [!NOTE]
->  `CSimpleDialog` 만 Windows 공용 컨트롤을 지 원하는 모달 대화 상자만 만듭니다. `CDialogImpl` 모달 또는 모덜리스 대화 상자 중 하나를 만듭니다.
+> `CSimpleDialog` 만 Windows 공용 컨트롤을 지 원하는 모달 대화 상자만 만듭니다. `CDialogImpl` 모달 또는 모덜리스 대화 상자 중 하나를 만듭니다.
 
-### <a name="to-add-an-atl-dialog-resource-to-your-project"></a>ATL 대화 상자 리소스를 프로젝트에 추가 하려면
+## <a name="to-add-an-atl-dialog-resource-to-your-project"></a>ATL 대화 상자 리소스를 프로젝트에 추가 하려면
 
 1. 사용 하 여 ATL 프로젝트 만들기를 [ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)합니다.
 
-2. [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code), 프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 클릭 **추가** 바로 가기 메뉴에서. 클릭 **클래스 추가**합니다.
+1. [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code), 프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 클릭 **추가** 바로 가기 메뉴에서. 클릭 **클래스 추가**합니다.
 
-3. 템플릿 창에는 [클래스 추가](../../ide/add-class-dialog-box.md) 대화 상자, 클릭 **ATL 대화 상자**합니다. 클릭 **엽니다** 표시할 합니다 [ATL 대화 상자 마법사](../../atl/reference/atl-dialog-wizard.md)합니다.
+1. 에 **템플릿** 창 합니다 [클래스 추가](../../ide/add-class-dialog-box.md) 대화 상자에서 클릭 **ATL 대화 상자**합니다. 클릭 **엽니다** 표시할 합니다 [ATL 대화 상자 마법사](../../atl/reference/atl-dialog-wizard.md)합니다.
 
 자세한 내용은 [대화 상자 구현](../../atl/implementing-a-dialog-box.md)합니다.
 
@@ -47,4 +47,3 @@ ATL 대화 상자에 프로젝트를 추가 하려면 프로젝트에 ATL 프로
 [클래스 추가](../../ide/adding-a-class-visual-cpp.md)<br/>
 [창 클래스](../../atl/atl-window-classes.md)<br/>
 [메시지 맵](../../atl/message-maps-atl.md)
-

@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97b5e3ef2e5c14ae93d4fcc3b016f4dbc955edbd
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f2d0e6567f8666df4ec170ad7911ef08f5a1d335
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45709165"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861631"
 ---
 # <a name="diagnostics-compiler-diagnostic-options"></a>/diagnostics (컴파일러 진단 옵션)
 
@@ -56,9 +56,9 @@ ms.locfileid: "45709165"
 
 1. 프로젝트를 엽니다 **속성 페이지** 대화 상자.
 
-2. 아래 **구성 속성**를 확장 합니다 **C/c + +** 폴더 선택한를 **일반** 속성 페이지.
+1. 아래 **구성 속성**를 확장 합니다 **C/c + +** 폴더 선택한를 **일반** 속성 페이지.
 
-3. 드롭다운 컨트롤을 사용 합니다 **진단 형식** 필드를 진단을 선택 옵션이 표시 됩니다. 선택 **확인** 하거나 **적용** 변경 내용을 저장 합니다.
+1. 드롭다운 컨트롤을 사용 합니다 **진단 형식** 필드를 진단을 선택 옵션이 표시 됩니다. 선택 **확인** 하거나 **적용** 변경 내용을 저장 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

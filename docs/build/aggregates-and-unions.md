@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f0ac55dce5d00f8931ee263be0fc5ab8a8a3a08
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: aac6da94a0786e5cdc2eee4d16f5927f66e0a8d5
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710023"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861189"
 ---
 # <a name="aggregates-and-unions"></a>집계 및 공용 구조체
 
@@ -29,7 +29,7 @@ ms.locfileid: "45710023"
 
    인접 한 데이터 개체의 정렬된 된 그룹을 포함합니다. 각 개체에 요소를 라고 합니다. 모든 요소 배열 크기 및 데이터 형식이 동일한 경우
 
--  구조체
+- 구조체
 
    데이터 개체의 정렬된 된 그룹을 포함합니다. 배열의 요소와 달리 구조체 내의 데이터 개체는 다른 데이터 형식 및 크기를 가질 수 있습니다. 각 데이터 개체 구조의 멤버를 라고 합니다.
 

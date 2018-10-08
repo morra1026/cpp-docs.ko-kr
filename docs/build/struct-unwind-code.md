@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1da6f078741c598099e71da9164f54b56da3f355
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f5bccddd2ddd5c0f9dfbc828a7da3a66fa13339d
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726650"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861722"
 ---
 # <a name="struct-unwindcode"></a>구조체 UNWIND_CODE
 
@@ -112,17 +112,17 @@ MOV 푸시를 대신 사용 하 여 스택에 정수 비휘발성 레지스터�
 
 1. 에 스택 맨 위에서 반환 주소 RIP 팝 *Temp*
 
-2. SS 푸시
+1. SS 푸시
 
-3. 이전 RSP 푸시
+1. 이전 RSP 푸시
 
-4. EFLAGS 푸시
+1. EFLAGS 푸시
 
-5. CS 푸시
+1. CS 푸시
 
-6. 푸시 *Temp*
+1. 푸시 *Temp*
 
-7. (Op 정보에는 1과 같음) 하는 경우 오류 코드를 푸시
+1. (Op 정보에는 1과 같음) 하는 경우 오류 코드를 푸시
 
 Simulated `UWOP_PUSH_MACHFRAME` 40 여 작업 감소 RSP (op 정보가 0) 또는 48 (op 정보가 1).
 

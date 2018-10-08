@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9bd01cf5c153fcd31bae1a73fead87fe480cdd2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a3a93d434907a2a3ff13053ee4b932201de22f3a
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46030427"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861410"
 ---
 # <a name="references-c"></a>참조 (C++)
 
@@ -32,41 +32,35 @@ ms.locfileid: "46030427"
 
 참조를 선언할 수 있는 구문은 다음과 같습니다.
 
-```
-[storage-class-specifiers] [cv-qualifiers] type-specifiers 
-[ms-modifier] declarator [= expression];
-```
+> \[*저장소 클래스 지정자*] \[ *cv 한정자*] *형식 지정자* \[ *ms 한정자*]  *선언 자* \[ **=** *식*]**;**
 
 참조를 지정하는 임의의 유효한 선언자를 사용할 수 있습니다. 참조가 함수 또는 배열 형식에 대한 참조가 아닌 한 다음 단순화된 구문이 적용됩니다.
 
-```
-[storage-class-specifiers] [cv-qualifiers] type-specifiers [& or &&] 
-[cv-qualifiers] identifier [= expression];
-```
+> \[*저장소 클래스 지정자*] \[ *cv 한정자*] *형식 지정자* \[ **&** 또는 **&&**] \[ *cv 한정자*] *식별자* \[ **=** *식을*]**;**
 
 참조를 선언하는 시퀀스는 다음과 같습니다.
 
 1. 선언 지정자:
 
-- 선택적 저장소 클래스 지정자.
+   - 선택적 저장소 클래스 지정자.
 
-- 선택적 **상수** 및/또는 **volatile** 한정자입니다.
+   - 선택적 **상수** 및/또는 **volatile** 한정자입니다.
 
-- 형식 지정자: 형식의 이름
+   - 형식 지정자: 형식의 이름
 
-- 2. 선언자:
+1. 선언자:
 
-- 선택적 Microsoft 전용 한정자. 자세한 내용은 [Microsoft 전용 한정자](../cpp/microsoft-specific-modifiers.md)합니다.
+   - 선택적 Microsoft 전용 한정자. 자세한 내용은 [Microsoft 전용 한정자](../cpp/microsoft-specific-modifiers.md)합니다.
 
-- & 연산자 또는 && 연산자입니다.
+   - 합니다 **&** 연산자 또는 **&&** 연산자입니다.
 
-- 선택적 **상수** 및/또는 **volatile** 한정자입니다.
+   - 선택적 **상수** 및/또는 **volatile** 한정자입니다.
 
-- 식별자입니다.
+   - 식별자입니다.
 
-3. 선택적 이니셜라이저입니다.
+1. 선택적 이니셜라이저입니다.
 
-더 복잡 한 선언 자 형태도 배열 및 함수에 대 한 참조 배열 및 함수에 대 한 포인터에 적용할 참조 [포인터](../cpp/pointers-cpp.md)합니다.
+배열 및 함수에 대 한 포인터에 대 한 더 복잡 한 선언 자 형태도 배열 및 함수에 대 한 참조에 적용 됩니다. 자세한 내용은 [포인터](../cpp/pointers-cpp.md)합니다.
 
 여러 선언자와 이니셜라이저가 단일 선언 지정자 뒤에 쉼표로 구분된 목록으로 나타날 수 있습니다. 예를 들어:
 
@@ -83,7 +77,7 @@ int &ref, *ptr, k;
 
 참조는 개체의 주소를 보유하지만 구문적으로 개체처럼 동작합니다.
 
-다음 프로그램에서 개체 이름인 `Today`와 개체에 대한 참조인 `TodayRef`를 프로그램에서 동일하게 사용할 수 있습니다.
+다음 프로그램에서 개체 이름인 `s`와 개체에 대한 참조인 `SRef`를 프로그램에서 동일하게 사용할 수 있습니다.
 
 ## <a name="example"></a>예제
 
@@ -120,4 +114,3 @@ int main() {
 [참조 형식 함수 인수](../cpp/reference-type-function-arguments.md)<br/>
 [참조 형식 함수 반환](../cpp/reference-type-function-returns.md)<br/>
 [포인터에 대한 참조](../cpp/references-to-pointers.md)
-

@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5da401f940a39c135ba0b64571b6330a42fed796
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 09cab9f0c7d94c3c51eb63008ec6b7cfb1292f89
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725519"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860578"
 ---
 # <a name="await-enable-coroutine-support"></a>/await (코 루틴 지원 사용)
 
@@ -44,9 +44,9 @@ ms.locfileid: "45725519"
 
 1. 프로젝트를 엽니다 **속성 페이지** 대화 상자.
 
-2. 아래 **구성 속성**를 확장 합니다 **C/c + +** 폴더 선택한를 **명령줄** 속성 페이지.
+1. 아래 **구성 속성**를 확장 합니다 **C/c + +** 폴더 선택한를 **명령줄** 속성 페이지.
 
-3. 입력를 **/await** 컴파일러 옵션을 **추가 옵션** 상자입니다. 선택 **확인** 하거나 **적용** 변경 내용을 저장 합니다.
+1. 입력를 **/await** 컴파일러 옵션을 **추가 옵션** 상자입니다. 선택 **확인** 하거나 **적용** 변경 내용을 저장 합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 

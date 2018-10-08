@@ -35,12 +35,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6a980a96198db80f0956895292d37f123d0351c
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 75f629c8a9c8a06f02024e9d52ab13b2d12b234c
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723309"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860396"
 ---
 # <a name="building-an-import-library-and-export-file"></a>가져오기 라이브러리 및 내보내기 파일 빌드
 
@@ -52,9 +52,9 @@ ms.locfileid: "45723309"
 
 1. A **__declspec (dllexport)** 중 하나에 정의 된 *objfiles* 또는 *라이브러리*
 
-2. /EXPORT 사양:*이름을* LIB 명령줄에서
+1. /EXPORT 사양:*이름을* LIB 명령줄에서
 
-3. 정의 **내보내기를** 문에서 *deffile*
+1. 정의 **내보내기를** 문에서 *deffile*
 
 이들은 내보내는 프로그램을 연결 하는 경우 내보내기를 지정 하는 데 동일한 메서드입니다. 프로그램 메서드가 둘 이상 사용할 수 있습니다. LIB 명령 부분을 지정할 수 있습니다 (여러 등 *objfiles* 또는 /EXPORT 사양) LIB 명령에서 명령 파일에서 하듯이 수 링크 명령에서입니다.
 

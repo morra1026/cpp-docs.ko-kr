@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c9f1d205eff155b628081c5bc615570c44a88f08
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: eea3159bff6f2c69c94ef31d01b1d6a85104ef13
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412810"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861862"
 ---
 # <a name="fa-fa-listing-file"></a>/FA, /Fa(목록 파일)
 
@@ -87,9 +87,9 @@ ms.locfileid: "46412810"
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
 
-2. 선택 된 **구성 속성** > **C/c + +** > **출력 파일** 속성 페이지.
+1. 선택 된 **구성 속성** > **C/c + +** > **출력 파일** 속성 페이지.
 
-3. 수정 합니다 **어셈블러 출력** 속성을 설정 합니다 **/FAc** 및 **/FAs** assembler, 컴퓨터 및 소스 코드에 대 한 옵션입니다. 수정 합니다 **어셈블러 목록에 대 한 사용 하 여 유니코드** 속성을 설정 합니다 **하려면 /FAu** ANSI 또는 u t F-8 출력에 대 한 옵션입니다. 수정 합니다 **ASM 목록 위치** 설정 하는 **/Fa** 파일 이름과 위치를 나열 하기 위한 옵션입니다.
+1. 수정 합니다 **어셈블러 출력** 속성을 설정 합니다 **/FAc** 및 **/FAs** assembler, 컴퓨터 및 소스 코드에 대 한 옵션입니다. 수정 합니다 **어셈블러 목록에 대 한 사용 하 여 유니코드** 속성을 설정 합니다 **하려면 /FAu** ANSI 또는 u t F-8 출력에 대 한 옵션입니다. 수정 합니다 **ASM 목록 위치** 설정 하는 **/Fa** 파일 이름과 위치를 나열 하기 위한 옵션입니다.
 
 모두 설정 **어셈블러 출력** 하 고 **어셈블러 목록에 대 한 사용 하 여 유니코드** 속성에서 발생할 수 있습니다 [명령줄 경고 D9025](../../error-messages/tool-errors/command-line-warning-d9025.md)합니다. IDE에서 이러한 옵션을 결합 하려면 사용 합니다 **추가 옵션** 필드에 **명령줄** 속성 페이지 대신 합니다.
 

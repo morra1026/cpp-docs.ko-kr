@@ -1,7 +1,7 @@
 ---
 title: 시도-문을 제외 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/05/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 107b759345e221ad8100f11d97b79c5bd9fd2b65
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6e938f5b7e5f25461ae921fbfa3c49920eca86eb
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031447"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861930"
 ---
 # <a name="try-except-statement"></a>try-except 문
 
@@ -50,7 +50,14 @@ ms.locfileid: "46031447"
 
 ## <a name="syntax"></a>구문
 
-> **__try** {/ / 코드 보호} **__except** ( *식* ) {/ / 예외 처리기 코드}
+> **__try** <br/>
+> {<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp;보호 된 코드<br/>
+> }<br/>
+> **__except** ( *식* )<br/>
+> {<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp;예외 처리기 코드<br/>
+> }<br/>
 
 ## <a name="remarks"></a>설명
 
@@ -67,15 +74,15 @@ ms.locfileid: "46031447"
 
 1. 보호된 섹션이 실행됩니다.
 
-2. 다음의 문에서 실행이 계속 보호 된 섹션이 실행 하는 동안 예외가 발생 하는 경우는 **__except** 절.
+1. 다음의 문에서 실행이 계속 보호 된 섹션이 실행 하는 동안 예외가 발생 하는 경우는 **__except** 절.
 
-3. 보호 된 섹션이 실행 하는 동안 예외가 발생 하거나 임의의 루틴에서 보호 된 섹션이 호출에 **__except** *식* (호출 합니다 *필터* 식) 평가 값은 예외를 처리 하는 방법을 결정 합니다. 다음과 같은 세 가지 값이 있습니다.
+1. 보호 된 섹션이 실행 하는 동안 예외가 발생 하거나 임의의 루틴에서 보호 된 섹션이 호출에 **__except** *식* (호출 합니다 *필터* 식) 평가 값은 예외를 처리 하는 방법을 결정 합니다. 다음과 같은 3가지 값이 가능합니다.
 
-   EXCEPTION_CONTINUE_EXECUTION (-1) 예외를 무시 합니다. 예외가 발생한 지점에서 계속 실행합니다.
+   - EXCEPTION_CONTINUE_EXECUTION (-1) 예외를 무시 합니다. 예외가 발생한 지점에서 계속 실행합니다.
 
-   EXCEPTION_CONTINUE_SEARCH (0) 예외 인식 되지 않습니다. **try-except** 문을 포함하는 처리기를 먼저 검색한 후, 그 다음으로 우선 순위가 높은 처리기를 검색하는 순으로 처리기 스택을 계속 검색합니다.
+   - EXCEPTION_CONTINUE_SEARCH (0) 예외 인식 되지 않습니다. **try-except** 문을 포함하는 처리기를 먼저 검색한 후, 그 다음으로 우선 순위가 높은 처리기를 검색하는 순으로 처리기 스택을 계속 검색합니다.
 
-   EXCEPTION_EXECUTE_HANDLER (1) 예외를 인식 합니다. 실행 하 여 예외 처리기로 제어를 전송 합니다 **__except** 복합 문을 이후 실행을 계속 합니다 **__except** 블록입니다.
+   - EXCEPTION_EXECUTE_HANDLER (1) 예외를 인식 합니다. 실행 하 여 예외 처리기로 제어를 전송 합니다 **__except** 복합 문을 이후 실행을 계속 합니다 **__except** 블록입니다.
 
 때문에 합니다 **__except** 식은 C 식으로 계산 됩니다, 단일 값, 조건식 연산자 또는 쉼표 연산자로 제한 됩니다. 더 광범위한 처리가 필요한 경우 식은 위에 나열된 세 값 중 하나를 반환하는 루틴을 호출할 수 있습니다.
 
@@ -83,9 +90,7 @@ ms.locfileid: "46031447"
 
 유효 하지 않은으로 이동 하는 **__try** 문을 하나 내부에서 외부로 점프할 수 있지만. 실행 하는 도중에 프로세스를 종료할 경우 예외 처리기가 호출 되지를 **시도-제외한** 문입니다.
 
-자세한 내용은 기술 자료 문서, "Q315937: 방법: Visual C++ 응용 프로그램에서 스택 오버플로 감지"를 참조하십시오.
-
-## <a name="the-leave-keyword"></a>__leave 키워드
+### <a name="the-leave-keyword"></a>__leave 키워드
 
 합니다 **__leave** 키워드는 보호 된 섹션 내 에서만 사용할 수는 **시도-제외 하 고** 문과 미치는 보호 된 섹션의 끝으로 이동 하는 것입니다. 실행은 예외 처리기 뒤에 나오는 첫 번째 문에서 계속 됩니다.
 
@@ -170,7 +175,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>출력
+### <a name="output"></a>출력
 
 ```Output
 hello
