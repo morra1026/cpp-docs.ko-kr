@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 078fcbfd42c64a0ec5d90a41e8ec3e4ae392f57d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b001bb4d8ad9f1b4895147e0507ea3b6fda97ee5
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433952"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48820713"
 ---
 # <a name="ud2"></a>__ud2
 
@@ -40,7 +40,7 @@ void __ud2();
 
 프로세서 정의 되지 않은 명령을 실행 하는 경우 잘못 된 opcode가 예외를 발생 시킵니다.
 
-합니다 `__ud2` 함수는 동일 합니다 `UD2` 컴퓨터 명령 및 커널 모드 에서만 사용할 수 있습니다. 자세한 내용은 문서를 검색 "Intel 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조"에 [Intel Corporation](https://software.intel.com/en-us/articles/intel-sdm) 사이트입니다.
+합니다 `__ud2` 함수는 동일 합니다 `UD2` 컴퓨터 명령 및 커널 모드 에서만 사용할 수 있습니다. 자세한 내용은 문서를 검색 "Intel 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조"에 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트입니다.
 
 ## <a name="requirements"></a>요구 사항
 

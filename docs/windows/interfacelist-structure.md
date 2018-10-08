@@ -1,7 +1,7 @@
 ---
 title: InterfaceList 구조체 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/03/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7ce497c621f116c4755e8b47d148e24a9043b46b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3d9cbc1dfb31d744086e7a138521ae24f58e693f
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374752"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788658"
 ---
 # <a name="interfacelist-structure"></a>InterfaceList 구조체
 
@@ -31,10 +31,7 @@ WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습
 ## <a name="syntax"></a>구문
 
 ```cpp
-template <
-   typename T,
-   typename U
->
+template <typename T, typename U>
 struct InterfaceList;
 ```
 

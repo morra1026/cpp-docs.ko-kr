@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c6a48067ebc145c907a81212a9acca55c3f4665
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 71c28ab1531c2af19f2b8f594db457d0272b0664
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46066598"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48820362"
 ---
 # <a name="constexpr-lambda-expressions-in-c"></a>c + +에서 constexpr 람다 식
 
@@ -38,7 +38,9 @@ ms.locfileid: "46066598"
         return [n] { return n + 1; }();
     }
 ```
+
 람다는 암시적으로 **constexpr** 결과의 요구 사항을 충족 하는 경우를 **constexpr** 함수:
+
 ```cpp
     auto answer = [](int n)
     {
@@ -47,6 +49,7 @@ ms.locfileid: "46066598"
 
     constexpr int response = answer(10);
 ```
+
 람다는 암시적 또는 명시적으로 하는 경우 **constexpr**, 및 함수 포인터로 변환할 결과 함수가 이기도 **constexpr**:
 
 ```cpp

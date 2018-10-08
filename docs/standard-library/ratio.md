@@ -41,12 +41,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a5ffa7666f9b976312bf1c3115d93204bdd8f8a
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 53f3e618378abd70506e2fed45767c7c856320b0
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853754"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821144"
 ---
 # <a name="ltratiogt"></a>&lt;ratio&gt;
 
@@ -62,7 +62,7 @@ ms.locfileid: "33853754"
 
 ```cpp
 template<std::intmax_t Numerator, std::intmax_t Denominator = 1>
-   struct ratio // holds the ratio of Numerator to Denominator
+struct ratio // holds the ratio of Numerator to Denominator
 {
    static constexpr std::intmax_t num;
    static constexpr std::intmax_t den;
@@ -70,7 +70,7 @@ template<std::intmax_t Numerator, std::intmax_t Denominator = 1>
 }
 ```
 
-서식 파일 `ratio` 정적 상수를 정의 `num` 및 `den` 되도록 `num`  /  `den` 분자 = = / 분모 및 `num` 및 `den` 일반적인 요인을 없습니다. `num` / `den` 템플릿 클래스에 의해 표시 되는 값이입니다. 따라서 `type` 인스턴스화 지정 `ratio<num, den>`합니다.
+템플릿을 `ratio` 정적 상수를 정의 `num` 하 고 `den` 되도록 `num`  /  `den` 분자 = = / 분모 및 `num` 및 `den` 공약수가 없도록 합니다. `num` / `den` 템플릿 클래스에 의해 표현 되는 값이입니다. 따라서 `type` 인스턴스화 지정 `ratio<num, den>`합니다.
 
 ### <a name="specializations"></a>특수화
 
@@ -95,7 +95,7 @@ template<std::intmax_t Numerator, std::intmax_t Denominator = 1>
 
 ### <a name="typedefs"></a>형식 정의
 
-편의 위해 헤더 표준 SI 접두사에 대 한 비율을 정의합니다.
+편의 위해 헤더는 표준 SI 접두사에 대 한 비율을 정의합니다.
 
 ```cpp
 typedef ratio<1, 1000000000000000000> atto;

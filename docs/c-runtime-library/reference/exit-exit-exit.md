@@ -40,19 +40,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d26cc39039b95b8c12e429d333918e83628b2619
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: eb5bd1ef619c899a6b0faab33104a579fdb9f1d0
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110606"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821284"
 ---
 # <a name="exit-exit-exit"></a>exit, _Exit, _exit
 
 호출 프로세스를 종료합니다. 합니다 **종료** 함수는 정리 후 종료 **_exit** 하 고 **_Exit** 즉시 종료 합니다.
 
 > [!NOTE]
-> 테스트 또는 디버깅 시나리오에서 유니버설 Windows 플랫폼 (UWP) 앱을 제외 하 고 종료 하려면이 메서드를 사용 하지 마십시오. 스토어 앱을 닫으려면 프로그래밍 또는 UI 방식으로에 따라 허용 되지 않습니다 합니다 [Microsoft Store 정책](/legal/windows/agreements/store-policies)합니다. 자세한 내용은 [UWP 앱 수명 주기](/windows/uwp/launch-resume/app-lifecycle)합니다. Windows 10 앱에 대한 자세한 내용은 [Windows 10 앱에 대한 방법 가이드](https://developer.microsoft.com/en-us/windows/apps)를 참조하세요.
+> 테스트 또는 디버깅 시나리오에서 유니버설 Windows 플랫폼 (UWP) 앱을 제외 하 고 종료 하려면이 메서드를 사용 하지 마십시오. 스토어 앱을 닫으려면 프로그래밍 또는 UI 방식으로에 따라 허용 되지 않습니다 합니다 [Microsoft Store 정책](/legal/windows/agreements/store-policies)합니다. 자세한 내용은 [UWP 앱 수명 주기](/windows/uwp/launch-resume/app-lifecycle)합니다. Windows 10 앱에 대한 자세한 내용은 [Windows 10 앱에 대한 방법 가이드](https://developer.microsoft.com/windows/apps)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 

@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a1fc13df342b4282ee63c185205c2f2b12ca003
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b845ccb24d6d7a93767ec3c3219562c1c87bf81f
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110616"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48820247"
 ---
 # <a name="microsoft-specific-modifiers"></a>Microsoft 전용 한정자
 
@@ -31,22 +31,22 @@ ms.locfileid: "46110616"
 
 - 합니다 [__w64](w64.md) 키워드
 
-### <a name="microsoft-specific-keywords"></a>Microsoft 전용 키워드
+## <a name="microsoft-specific-keywords"></a>Microsoft 전용 키워드
 
 Microsoft 전용 키워드 중 대다수는 파생 형식을 형성하는 선언자를 수정하는 데 사용될 수 있습니다. 선언 자에 대 한 자세한 내용은 참조 하세요. [선언 자](overview-of-declarators.md)합니다.
 
-|키워드|의미|파생 형식을 만드는 데 사용됩니까?|   
+|키워드|의미|파생 형식을 만드는 데 사용됩니까?|
 |-------------|-------------|---------------------------------|
-|[__based](based-grammar.md)|뒤에 오는 이름이 32비트 오프셋을 선언에 포함된 32비트 기준으로 선언합니다.|예|   
-|[__cdecl](cdecl.md)|뒤에 오는 이름이 C 명명 및 호출 규칙을 사용합니다.|예|      
-|[__declspec](declspec.md)|뒤에 오는 이름이 Microsoft 전용 저장소 클래스 특성을 지정합니다.|아니요|    
-|[__fastcall](fastcall.md)|뒤에 오는 이름이 인수 전달 시 가능하면 스택 대신 레지스터를 사용하는 함수를 선언합니다.|예|   
-|[__restrict](extension-restrict.md)|__Declspec 비슷합니다 ([제한](restrict.md)), 하지만 변수에서 사용 합니다.|아니요|      
-|[__stdcall](stdcall.md)|뒤에 오는 이름이 표준 호출 규칙을 준수하는 함수를 지정합니다.|예|     
-|[__w64](w64.md)|64비트 컴파일러에서 더 큰 형식으로 데이터 형식을 표시합니다.|아니요|    
-|[__unaligned](unaligned.md)|형식 또는 다른 데이터의 포인터가 정렬되지 않음을 지정합니다.|아니요|      
-|[__vectorcall](vectorcall.md)|뒤에 오는 이름이 인수 전달 시 가능하면 스택 대신 SSE 레지스터 등의 레지스터를 사용하는 함수를 선언합니다.|예|      
-    
-## <a name="see-also"></a>참고 항목     
+|[__based](based-grammar.md)|뒤에 오는 이름이 32비트 오프셋을 선언에 포함된 32비트 기준으로 선언합니다.|예|
+|[__cdecl](cdecl.md)|뒤에 오는 이름이 C 명명 및 호출 규칙을 사용합니다.|예|
+|[__declspec](declspec.md)|뒤에 오는 이름이 Microsoft 전용 저장소 클래스 특성을 지정합니다.|아니요|
+|[__fastcall](fastcall.md)|뒤에 오는 이름이 인수 전달 시 가능하면 스택 대신 레지스터를 사용하는 함수를 선언합니다.|예|
+|[__restrict](extension-restrict.md)|__Declspec 비슷합니다 ([제한](restrict.md)), 하지만 변수에서 사용 합니다.|아니요|
+|[__stdcall](stdcall.md)|뒤에 오는 이름이 표준 호출 규칙을 준수하는 함수를 지정합니다.|예|
+|[__w64](w64.md)|64비트 컴파일러에서 더 큰 형식으로 데이터 형식을 표시합니다.|아니요|
+|[__unaligned](unaligned.md)|형식 또는 다른 데이터의 포인터가 정렬되지 않음을 지정합니다.|아니요|
+|[__vectorcall](vectorcall.md)|뒤에 오는 이름이 인수 전달 시 가능하면 스택 대신 SSE 레지스터 등의 레지스터를 사용하는 함수를 선언합니다.|예|
+
+## <a name="see-also"></a>참고 항목
 
 [C++ 언어 참조](cpp-language-reference.md)

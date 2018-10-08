@@ -19,16 +19,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e55788e280eb60f176a286cf9d1693e93447a077
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: aee04052a0088ff95a41ccb6083abc334287ea2b
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031461"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48820648"
 ---
 # <a name="if-else-statement-c"></a>if-else 문 (C++)
 
 조건부 분기를 제어 합니다. 문에서 *경우 블록* 실행 된 경우에 합니다 *if 식은* 0이 아닌 값 (또는 TRUE)으로 계산 되. 경우 값 *식* 는 0이 아니면 *문 1* 블록에 있는 다른 문이 실행 되 고 다른-블록에 있는 경우를 건너뜁니다. 경우 값 *식* 가 0 이면 다음 경우 블록을 생략 되 고 다른-블록이 있으면 실행 됩니다. 0이 아닌 값으로 계산 되는 식은
+
 - true
 - null이 아닌 포인터
 - 0이 아닌 산술 값, 또는
@@ -36,7 +37,7 @@ ms.locfileid: "46031461"
 
 ## <a name="syntax"></a>구문
 
-```
+```cpp
 if ( expression )
 {
    statement1;
@@ -84,7 +85,7 @@ using namespace std;
 class C
 {
     public:
-    void do_somthing(){}
+    void do_something(){}
 };
 void init(C){}
 bool is_true() { return true; }
@@ -101,15 +102,14 @@ int main()
         cout << "b is false!\n";
     }
 
-  // no else statement
+    // no else statement
     if (x == 10)
     {
         x = 0;
     }
-    
 
     C* c;
-  init(c);
+    init(c);
     if (c)
     {
         c->do_something();
@@ -120,13 +120,14 @@ int main()
     }
 }
 ```
+
 ## <a name="if_with_init"></a> 경우는 이니셜라이저를 사용 하 여 문을
 
 **Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)):는 **경우** 문에 선언 하 고 명명 된 변수를 초기화 하는 식을 포함 될 수도 있습니다. 변수의 경우 블록의 범위 안에서 필요한 경우 if 문이 이러한 형식의 사용 합니다.
 
-```cpp
-## Example
+## <a name="example"></a>예제
 
+```cpp
 #include <iostream>
 #include <mutex>
 #include <map>
@@ -180,18 +181,18 @@ int main()
 template <class T, class... Rest>
 void f(T&& t, Rest&&... r)
 {
-// handle t
-   do_something(t);
+    // handle t
+    do_something(t);
 
-   // handle r conditionally
-   if constexpr (sizeof...(r))
-   {
-      f(r...);
-   }
-   else
-   {
-       g(r...);
-   }
+    // handle r conditionally
+    if constexpr (sizeof...(r))
+    {
+        f(r...);
+    }
+    else
+    {
+        g(r...);
+    }
 }
 ```
 

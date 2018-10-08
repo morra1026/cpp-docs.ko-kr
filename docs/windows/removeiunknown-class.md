@@ -1,7 +1,7 @@
 ---
 title: RemoveIUnknown 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/03/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 81892b624425032c8f0e69fe667ad24026c40ca4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c13f84916bf4733d906a1bd50411a85c6a5ed1e0
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410272"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788957"
 ---
 # <a name="removeiunknown-class"></a>RemoveIUnknown 클래스
 
@@ -29,14 +29,10 @@ WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습
 ## <a name="syntax"></a>구문
 
 ```cpp
-template <
-   typename T
->
+template <typename T>
 struct RemoveIUnknown;
 
-template <
-   typename T
->
+template <typename T>
 class RemoveIUnknown : public T;
 ```
 

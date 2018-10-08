@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc08e0807f1af6859587271ec48d2508b9d4bd6e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d7a9915c7ca6b9d2c3f01cea12e2979ef256f904
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46048671"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821181"
 ---
 # <a name="lambda-expressions-in-c"></a>C++의 람다 식
 
@@ -349,7 +349,9 @@ vector v after 2nd call to fillVector(): 10 11 12 13 14 15 16 17 18
         return [n] { return n + 1; }();
     }
 ```
+
 람다는 암시적으로 `constexpr` 결과의 요구 사항을 충족 하는 경우는 `constexpr` 함수:
+
 ```cpp
     auto answer = [](int n)
     {
@@ -358,6 +360,7 @@ vector v after 2nd call to fillVector(): 10 11 12 13 14 15 16 17 18
 
     constexpr int response = answer(10);
 ```
+
 람다는 암시적 또는 명시적으로 하는 경우 `constexpr`를 함수 포인터로 변환을 생성을 `constexpr` 함수:
 
 ```cpp

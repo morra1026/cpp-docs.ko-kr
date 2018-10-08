@@ -1,7 +1,7 @@
 ---
 title: 사용자 정의 특성 (c + + 구성 요소 확장) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/02/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 605759e241498e83174f4d6b16435c3119c56671
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 3c2f5568b067c119bfa65744290c39d7ca577072
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600383"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48789230"
 ---
 # <a name="user-defined-attributes--c-component-extensions"></a>사용자 정의 특성(C++ 구성 요소 확장)
 
@@ -47,7 +47,7 @@ C + + /cli CX 특성 속성만 지원 하지만 생성자 또는 메서드 특�
 
 ### <a name="remarks"></a>설명
 
-에 표시 된 정보를 교체 하는 정보 및이 항목에 제시 된 구문 것 [특성](../windows/attribute.md)합니다.
+에 표시 된 정보를 교체 하는 정보 및이 항목에 제시 된 구문 것 [특성](attributes/attribute.md)합니다.
 
 줄어들고 형식을 정의 하 여 사용자 지정 특성을 정의할 수 있습니다 <xref:System.Attribute> 기본 클래스 형식 및 선택적으로 적용 합니다 <xref:System.AttributeUsageAttribute> 특성입니다.
 
@@ -55,9 +55,9 @@ C + + /cli CX 특성 속성만 지원 하지만 생성자 또는 메서드 특�
 
 자세한 내용은 다음 항목을 참조하세요.
 
-- [특성 대상](../windows/attribute-targets-cpp-component-extensions.md)
+- [특성 대상](attribute-targets-cpp-component-extensions.md)
 
-- [특성 매개 변수 형식](../windows/attribute-parameter-types-cpp-component-extensions.md)
+- [특성 매개 변수 형식](attribute-parameter-types-cpp-component-extensions.md)
 
 Visual c + +에서 어셈블리 서명에 대 한 자세한 내용은 [강력한 이름 어셈블리 (어셈블리 서명) (C + + /cli CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md)합니다.
 
@@ -177,7 +177,7 @@ Service Access = Read
 
 특성 인수에는 컴파일 시간 상수; 여야 합니다. 대부분의 경우에서 상수 리터럴 여야 합니다.
 
-참조 [typeid](../windows/typeid-cpp-component-extensions.md) 사용자 지정 특성 블록에서 system:: type 값을 반환 하는 방법에 대 한 정보에 대 한 합니다.
+참조 [typeid](typeid-cpp-component-extensions.md) 사용자 지정 특성 블록에서 system:: type 값을 반환 하는 방법에 대 한 정보에 대 한 합니다.
 
 ```cpp
 // extending_metadata_e.cpp
@@ -216,4 +216,4 @@ ref struct B {};
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[런타임 플랫폼용 구성 요소 확장](component-extensions-for-runtime-platforms.md)

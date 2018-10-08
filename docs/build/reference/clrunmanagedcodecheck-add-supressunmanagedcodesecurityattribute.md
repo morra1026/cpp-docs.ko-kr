@@ -1,7 +1,7 @@
 ---
-title: /CLRUNMANAGEDCODECHECK (SuppressUnmanagedCodeSecurityAttribute 추가) | Microsoft Docs
+title: /CLRUNMANAGEDCODECHECK (제거 SuppressUnmanagedCodeSecurityAttribute) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/27/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -17,16 +17,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 679adc527cc70056e1292eb7e639499bd814bca6
-ms.sourcegitcommit: 7838764e09819822a105accf5d773b2e37ffa0ae
+ms.openlocfilehash: 9868f0c35f4a988ac8e0aee8076f232f86c04afd
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47429763"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48820927"
 ---
-# <a name="clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute"></a>/CLRUNMANAGEDCODECHECK (SuppressUnmanagedCodeSecurityAttribute 추가)
+# <a name="clrunmanagedcodecheck-remove-suppressunmanagedcodesecurityattribute"></a>/CLRUNMANAGEDCODECHECK (제거 SuppressUnmanagedCodeSecurityAttribute)
 
-**/CLRUNMANAGEDCODECHECK** 링커 적용 되는지 여부를 지정 <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> 링커 생성 `PInvoke` 관리 코드에서 네이티브 Dll로 호출 합니다.
+**/CLRUNMANAGEDCODECHECK** 링커는 적용 되지 않습니다 지정 <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> 링커 생성 `PInvoke` 관리 코드에서 네이티브 Dll로 호출 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,13 +34,13 @@ ms.locfileid: "47429763"
 
 ## <a name="remarks"></a>설명
 
-기본적으로 링커는 다음과 같이 적용 됩니다. 합니다 **SuppressUnmanagedCodeSecurityAttribute** 링커 생성 `PInvoke` 호출 합니다. 때 **/CLRUNMANAGEDCODECHECK** 적용 **SuppressUnmanagedCodeSecurityAttribute** 적용 되지 않습니다.
+기본적으로 링커는 다음과 같이 적용 됩니다. 합니다 **SuppressUnmanagedCodeSecurityAttribute** 링커 생성 `PInvoke` 호출 합니다. 때 **/CLRUNMANAGEDCODECHECK** 적용 **SuppressUnmanagedCodeSecurityAttribute** 제거 됩니다. 명시적으로 적용 합니다 **SuppressUnmanagedCodeSecurityAttribute** 링커 생성 `PInvoke` 호출을 사용할 수 **/CLRUNMANAGEDCODECHECK:NO**합니다.
 
-링커만 사용 하 여 컴파일된 개체에 특성을 추가 **/clr** 또는 **/clr: pure**합니다. 그러나 합니다 **/clr: pure** 컴파일러 옵션은 Visual Studio 2015에서 더 이상 Visual Studio 2017에서 지원 되지 않는 합니다.
+만 링커를 사용 하 여 컴파일된 개체에 특성을 추가 **/clr** 하거나 **/clr: pure**합니다. 그러나 합니다 **/clr: pure** 컴파일러 옵션은 Visual Studio 2015에서 더 이상 Visual Studio 2017에서 지원 되지 않는 합니다.
 
 `PInvoke` 호출은 관리 되는 호출자에서 참조를 충족 하기 위해 관리 되는 기호를 찾을 수 없지만 해당 참조를 충족 하기 위해 네이티브 기호를 찾을 수 있습니다 하는 경우 링커에 의해 생성 됩니다. 에 대 한 자세한 내용은 `PInvoke`를 참조 하세요 [관리 코드에서 네이티브 함수 호출](../../dotnet/calling-native-functions-from-managed-code.md)합니다.
 
-사용 하는 경우 사용자에 게 유의 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> 코드를 명시적으로 설정 해야 **/CLRUNMANAGEDCODECHECK**합니다. 이미지 SuppressUnmanagedCodeSecurity 및 AllowPartiallyTrustedCallers 특성을 포함 하는 경우 잠재적인 보안 취약점으로 인 한 것입니다.
+사용 하는 경우 사용자에 게 유의 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> 코드를 명시적으로 설정 해야 **/CLRUNMANAGEDCODECHECK** 제거 하는 **SuppressUnmanagedCodeSecurity** 특성입니다. 이미지 모두를 포함 하는 경우 잠재적인 보안 취약점으로 인 한 것은 **SuppressUnmanagedCodeSecurity** 하 고 **AllowPartiallyTrustedCallers** 특성입니다.
 
 참조 [보안 코딩 지침 비관리 코드에 대 한](/dotnet/framework/security/secure-coding-guidelines-for-unmanaged-code) 사용의 의미에 대 한 자세한 내용은 **SuppressUnmanagedCodeSecurityAttribute**합니다.
 
