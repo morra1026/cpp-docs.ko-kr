@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 705f4f0d41b98c46e2cd61962d84fe8412b9e296
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: aa5cf1be80b22d3577347dbf7de9ee262125aa86
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414058"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821363"
 ---
 # <a name="message-map-macros-mfc"></a>메시지 맵 매크로(MFC)
 
@@ -81,7 +81,6 @@ MFC는 메시지 맵을 지원 하기 위해 다음 매크로 제공 합니다.
 |[ON_CONTROL_RANGE](#on_control_range)|컨트롤 매크로에 두 번째 및 세 번째 매개 변수에 지정 된 Id의 범위에서 알림을 처리할 함수를 나타냅니다. 첫 번째 BN_CLICKED 같은 컨트롤 알림 메시지입니다.|
 
 메시지 맵, 메시지 맵 선언 및 경계 매크로 및 메시지 매핑 매크로에 대 한 자세한 내용은 참조 하세요. [메시지 맵](../../mfc/reference/message-maps-mfc.md) 하 고 [메시지 처리 및 매핑 항목](../../mfc/message-handling-and-mapping.md)합니다. 메시지 맵 범위에 대 한 자세한 내용은 참조 하십시오 [메시지 맵 범위에 대 한 처리기](../../mfc/handlers-for-message-map-ranges.md)합니다.
-
 
 ## <a name="begin_message_map"></a> BEGIN_MESSAGE_MAP
 
@@ -125,15 +124,18 @@ END_MESSAGE_MAP()
 
 ### <a name="syntax"></a>구문
 
-  ```
+```
 BEGIN_TEMPLATE_MESSAGE_MAP( theClass, type_name, baseClass )
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *theClass*<br/>
 이 있는 메시지가 매핑할 클래스의 이름을 지정 합니다.
+
 *type_name*<br/>
 클래스에 대해 지정 된 템플릿 매개 변수의 이름입니다.
+
 *baseClass*<br/>
 기본 클래스의 이름을 지정 *theClass*합니다.
 
@@ -181,7 +183,6 @@ class CMainFrame : public CMDIFrameWnd
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afxwin.h
-
 
 ## <a name="end_message_map"></a>  END_MESSAGE_MAP
 
@@ -245,9 +246,10 @@ END_MESSAGE_MAP()
 
 ### <a name="syntax"></a>구문
 
-  ```
+```
 ON_COMMAND_EX(id, memberFxn);
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *ID*<br/>
@@ -267,6 +269,7 @@ ON_COMMAND_EX(id, memberFxn);
 ```
 ON_COMMAND_EX(id,  memberFxn);
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *ID*<br/>
@@ -287,8 +290,7 @@ ON_COMMAND_EX(id,  memberFxn);
 ### <a name="see-also"></a>참고 항목
 
 [ON_COMMAND](message-map-macros-mfc.md#on_command)<br/>
-[TN006: 메시지 맵] tm006-메시지-maps.md)
-
+[TN006: 메시지 맵](../tn006-message-maps.md)
 
 ## <a name="on_control"></a>  ON_CONTROL
 
@@ -322,7 +324,6 @@ ON_CONTROL( wNotifyCode, id, memberFxn )
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afxmsg_.h
-
 
 ## <a name="on_message"></a>  ON_MESSAGE
 
@@ -382,7 +383,7 @@ LRESULT CMyWnd2::OnMyMessage(WPARAM wParam, LPARAM lParam)
 
 **헤더:** afxmsg_.h
 
-## <a name="on_olecmd"></a>  ON_OLECMD  
+## <a name="on_olecmd"></a>  ON_OLECMD
 
 디스패치 인터페이스를 통해 명령을 라우팅하고 `IOleCommandTarget`합니다.
 
@@ -545,7 +546,6 @@ ON_REGISTERED_MESSAGE( nMessageVariable, memberFxn )
 ```cpp
 static UINT NEAR WM_FIND = RegisterWindowMessage(_T("COMMDLG_FIND"));
 
-
 BEGIN_MESSAGE_MAP(CMyWnd3, CWnd)
    ON_REGISTERED_MESSAGE(WM_FIND, OnFind)
 END_MESSAGE_MAP()
@@ -560,7 +560,7 @@ END_MESSAGE_MAP()
 [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947)<br/>
 [사용자 정의 처리기](user-defined-handlers.md)
 
-## <a name="on_registered_thread_message"></a>  ON_REGISTERED_THREAD_MESSAGE    
+## <a name="on_registered_thread_message"></a>  ON_REGISTERED_THREAD_MESSAGE
 
 함수를 Windows RegisterWindowMessage 함수에 의해 등록 메시지를 처리할 것을 나타냅니다.
 
@@ -586,7 +586,7 @@ RegisterWindowMessage는 시스템 전체에서 고유 하 게 보장 되는 새
 
 **헤더:** afxmsg_.h
 
-## <a name="on_thread_message"></a>  ON_THREAD_MESSAGE  
+## <a name="on_thread_message"></a>  ON_THREAD_MESSAGE
 
 사용자 정의 메시지를 처리할 함수를 나타냅니다.
 
@@ -612,7 +612,7 @@ ON_THREAD_MESSAGE 경우 ON_MESSAGE 대신 사용 해야 합니다는 `CWinThrea
 
 **헤더:** afxole.h
 
-## <a name="on_update_command_ui"></a>  ON_UPDATE_COMMAND_UI    
+## <a name="on_update_command_ui"></a>  ON_UPDATE_COMMAND_UI
 
 이 매크로 함수에는 사용자 인터페이스 업데이트 명령 메시지를 처리할 것을 나타냅니다.
 
@@ -699,7 +699,7 @@ void CChildFrame::OnRangeCmds(UINT nID)
 
 **헤더:** afxmsg_.h
 
-## <a name="on_update_command_ui_range"></a>  ON_UPDATE_COMMAND_UI_RANGE    
+## <a name="on_update_command_ui_range"></a>  ON_UPDATE_COMMAND_UI_RANGE
 
 명령 Id의 연속 된 범위를 단일 업데이트 메시지 처리기 함수에 매핑됩니다.
 
@@ -730,7 +730,7 @@ ON_UPDATE_COMMAND_UI_RANGE( id1, id2, memberFxn )
 
 **헤더:** afxmsg_.h
 
-## <a name="on_control_range"></a>  ON_CONTROL_RANGE    
+## <a name="on_control_range"></a>  ON_CONTROL_RANGE
 
 이 매크로 사용 하 여 BN_CLICKED 같은 지정 된 Windows 알림 메시지에 대 한 단일 메시지 처리기 함수에 인접 한 범위의 컨트롤 Id 매핑합니다.
 

@@ -16,18 +16,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a9d25a77b6936a3b5b741a1da927c6beb24cbb1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 90cd0b401624ea6815b31b55a7da9c8796746ce8
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46072227"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48789204"
 ---
 # <a name="compiler-warning-level-3-c4580"></a>컴파일러 경고(수준 3) C4580
 
 [attribute]는 사용되지 않습니다. 대신 System::Attribute or Platform::Metadata를 기본 클래스로 지정합니다.
 
-[[특성](../../windows/attribute.md)] 사용자 정의 특성을 만들기 위한 기본 구문은 더 이상. 자세한 내용은 [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md)을 참조하세요. CLR 코드의 경우 `System::Attribute`에서 특성을 파생시킵니다. Windows 런타임 코드의 경우 `Platform::Metadata`에서 특성을 파생시킵니다.
+[[특성](../../windows/attributes/attribute.md)] 사용자 정의 특성을 만들기 위한 기본 구문은 더 이상. 자세한 내용은 [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md)을 참조하세요. CLR 코드의 경우 `System::Attribute`에서 특성을 파생시킵니다. Windows 런타임 코드의 경우 `Platform::Metadata`에서 특성을 파생시킵니다.
 
 ## <a name="example"></a>예제
 

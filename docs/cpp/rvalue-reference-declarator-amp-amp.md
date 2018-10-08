@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ceb0d29a5e49efa4f387f2949a0aa670082a62ab
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 64a42a65e112930767aa27f94612d06b7fb2d34a
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46021943"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821636"
 ---
 # <a name="rvalue-reference-declarator-ampamp"></a>Rvalue 참조 선언 자: &amp;&amp;
 
@@ -63,7 +63,7 @@ int main()
 
 호출할 때마다 Visual c + + 2010 이전 **operator +** 할당 하 고 새 임시 반환 `string` 개체 (rvalue). **operator +** 소스 문자열이 lvalue 또는 rvalue 되는지 여부를 알지 못하므로 다른 하나의 문자열을 추가할 수 없습니다. 소스 문자열이 둘 다 lvalue인 경우 프로그램의 다른 곳에서 참조될 수 있으므로 수정되지 않아야 합니다. Rvalue 참조를 사용 하 여 **operator +** 프로그램의 다른 곳에서 참조 될 수 없는 rvalue를 사용 하도록 수정할 수 있습니다. 따라서 **operator +** 다른 이제 문자열 하나를 추가할 수 있습니다. 이에 따라 `string` 클래스가 수행해야 하는 동적 메모리 할당 수가 크게 줄어들 수 있습니다. 에 대 한 자세한 내용은 합니다 `string` 클래스를 참조 하십시오 [basic_string 클래스](../standard-library/basic-string-class.md)합니다.
 
-의미 체계 이동은 컴파일러에서 RVO(반환 값 최적화) 또는 NRVO(명명된 반환 값 최적화)를 사용할 수 없는 경우에도 도움이 됩니다. 이러한 경우에 컴파일러는 형식에 정의된 이동 생성자를 호출합니다. 명명 된 반환 값 최적화에 대 한 자세한 내용은 참조 하세요. [명명 된 Return Value Optimization in Visual c + + 2005](https://msdn.microsoft.com/en-us/library/ms364057.aspx)합니다.
+의미 체계 이동은 컴파일러에서 RVO(반환 값 최적화) 또는 NRVO(명명된 반환 값 최적화)를 사용할 수 없는 경우에도 도움이 됩니다. 이러한 경우에 컴파일러는 형식에 정의된 이동 생성자를 호출합니다. 명명 된 반환 값 최적화에 대 한 자세한 내용은 참조 하세요. [명명 된 Return Value Optimization in Visual c + + 2005](https://msdn.microsoft.com/library/ms364057.aspx)합니다.
 
 의미 체계 이동에 대해 자세히 이해하려면 요소를 `vector` 개체에 삽입하는 예를 참조하십시오. `vector` 개체의 용량이 초과될 경우 `vector` 개체는 해당 요소를 위해 메모리를 재할당한 다음 각 요소를 다른 메모리 위치로 복사하여 삽입된 요소를 위한 공간을 만들어야 합니다. 삽입 작업은 요소를 복사할 때 새 요소를 만들고 데이터를 이전 요소에서 새 요소로 복사하는 복사 생성자를 호출한 후 이전 요소를 제거합니다. 의미 체계 이동을 사용하면 비용이 많이 드는 메모리 할당 및 복사 작업을 수행할 필요 없이 개체를 직접 이동할 수 있습니다.
 

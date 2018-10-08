@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e20fce19824cf093625347bca42f55cbad302b61
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f66ff77ef10f45b19a33a286f63f4bf923f639a2
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040611"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48820388"
 ---
 # <a name="ole-db-architectural-design-issues"></a>OLE DB 아키텍처 설계 문제
 
@@ -46,7 +46,7 @@ Microsoft는이 위해 몇 가지 라이브러리를 제공 합니다: OLE DB �
 
 - [Microsoft 도움말 및 지원](https://support.microsoft.com/)
 
-- [Microsoft 데이터 액세스 기술 문서 개요](https://msdn.microsoft.com/en-us/library/ms810811.aspx)
+- [Microsoft 데이터 액세스 기술 문서 개요](https://msdn.microsoft.com/library/ms810811.aspx)
 
 ## <a name="see-also"></a>참고 항목
 

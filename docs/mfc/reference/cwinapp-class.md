@@ -202,12 +202,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a901b7bd102736bfbeec95a1afe8e44dc26ae3b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 86adc1e2337b32ced77cafda92229ed9724ba548
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412186"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821519"
 ---
 # <a name="cwinapp-class"></a>CWinApp 클래스
 
@@ -367,7 +367,7 @@ Microsoft Foundation 클래스를 사용 하는 각 응용 프로그램에서 �
 
 - `CWinApp`키 재정의 가능 합니다.
 
-`m_hPrevInstance` 데이터 멤버는 더 이상 존재 합니다. 이전 인스턴스를 검색 하는 방법은 `CWinApp`에서 기술 자료 문서 "방법 식별는 이전 인스턴스의는 응용 프로그램" (KB106385)를 참조 하세요 [ http://support.microsoft.com/default.aspxscid=kb; en-우리; 106385](http://support.microsoft.com/default.aspxscid=kb;en-us;106385)합니다.
+`m_hPrevInstance` 데이터 멤버는 더 이상 존재 합니다. 이전 인스턴스를 검색 하는 방법은 `CWinApp`, 기술 자료 문서 "방법 식별는 이전 인스턴스의는 응용 프로그램" (KB106385)를 보면 [ http://support.microsoft.com/default.aspxscid=kb106385;](http://support.microsoft.com/default.aspxscid=kb;106385)합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -1073,7 +1073,7 @@ virtual BOOL InitInstance();
 재정의 `InitInstance` Windows에서 실행 중인 응용 프로그램의 각 새 인스턴스를 초기화 합니다. 재정의 하는 일반적으로 `InitInstance` 주 창 개체를 생성 하 고 설정 하 여 `CWinThread::m_pMainWnd` 창으로 가리키도록 데이터 멤버입니다. 이 멤버 함수를 재정의 하는 방법은 참조 하세요 [CWinApp: 응용 프로그램 클래스](../../mfc/cwinapp-the-application-class.md)합니다.
 
 > [!NOTE]
-> MFC 응용 프로그램은 단일 스레드 아파트 (STA)로 초기화 되어야 합니다. 호출 하는 경우 [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) 에서 프로그램 `InitInstance` 재정의 COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED 아님)를 지정 합니다. 자세한 내용은 참조 PRB: MFC 응용 프로그램이 다른 이름으로 다중 스레드 아파트 (828643)에서 응용 프로그램을 초기화 하는 경우 응답 하지 [ http://support.microsoft.com/default.aspxscid=kb; en-우리; 828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643)합니다.
+> MFC 응용 프로그램은 단일 스레드 아파트 (STA)로 초기화 되어야 합니다. 호출 하는 경우 [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) 에서 프로그램 `InitInstance` 재정의 COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED 아님)를 지정 합니다. 자세한 내용은 참조 PRB: MFC 응용 프로그램이 다른 이름으로 다중 스레드 아파트 (828643)에서 응용 프로그램을 초기화 하는 경우 응답 하지 [ http://support.microsoft.com/default.aspxscid=kb828643;](http://support.microsoft.com/default.aspxscid=kb;828643)합니다.
 
 ### <a name="example"></a>예제
 

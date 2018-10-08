@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba075822c348d9d4b0dc3f580f3f136bb7d49a7a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4799f9381ad4ff6469af30482ed3c7089e5569a8
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415410"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821038"
 ---
 # <a name="vmxoff"></a>__vmx_off
 
@@ -38,7 +38,7 @@ void __vmx_off();
 
 ## <a name="remarks"></a>설명
 
-합니다 `__vmx_off` 함수는 동일 합니다 `VMXOFF` 컴퓨터 명령입니다. 이 함수는 게스트 운영 체제 및 해당 응용 프로그램과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용은 "Intel 가상화 기술 사양에 대 한는 IA-32 Intel 아키텍처" 문서를 검색에서 숫자 C97063-002를 문서화 합니다 [Intel Corporation](https://software.intel.com/en-us/articles/intel-sdm) 사이트입니다.
+합니다 `__vmx_off` 함수는 동일 합니다 `VMXOFF` 컴퓨터 명령입니다. 이 함수는 게스트 운영 체제 및 해당 응용 프로그램과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용은 "Intel 가상화 기술 사양에 대 한는 IA-32 Intel 아키텍처" 문서를 검색에서 숫자 C97063-002를 문서화 합니다 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트입니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cca4818d0ace6270b986ddb9b99068ca9532f1b2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c4a4327e1c3e4d65c5bdc3b822cf2cdfc1ec0353
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46395518"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48820596"
 ---
 # <a name="automation-clients"></a>자동화 클라이언트
 
@@ -46,7 +46,7 @@ Automation을 사용 하면 다른 응용 프로그램에서 구현 하는 개�
 
 ### <a name="handling-events-in-automation-clients"></a>자동화 클라이언트의 이벤트 처리
 
-자동화 클라이언트에서 이벤트를 처리 하려는 경우 싱크 인터페이스를 추가 해야 합니다. MFC는 ActiveX 컨트롤에 대 한 싱크 인터페이스를 추가 하지만 다른 COM 서버에 없습니다. 마법사 지원을 제공 합니다. COM 서버에서 설명 하는 원본 인터페이스에 대 한 MFC 클라이언트 싱크 인터페이스를 추가 하는 방법에 대 한 자세한 내용은 방법을 참조 하세요.:에서 MFC-Based COM 클라이언트 (KB 181845) 싱크 인터페이스를 만들 [ http://support.microsoft.com/default.aspxscid=kb; en-우리; 181845](http://support.microsoft.com/default.aspxscid=kb;en-us;181845)합니다.
+자동화 클라이언트에서 이벤트를 처리 하려는 경우 싱크 인터페이스를 추가 해야 합니다. MFC는 ActiveX 컨트롤에 대 한 싱크 인터페이스를 추가 하지만 다른 COM 서버에 없습니다. 마법사 지원을 제공 합니다. COM 서버에서 설명 하는 원본 인터페이스에 대 한 MFC 클라이언트 싱크 인터페이스를 추가 하는 방법에 대 한 자세한 내용은 방법을 참조 하세요.:에서 MFC-Based COM 클라이언트 (KB 181845) 싱크 인터페이스를 만들 [ http://support.microsoft.com/default.aspxscid=kb181845;](http://support.microsoft.com/default.aspxscid=kb;181845)합니다.
 
 ## <a name="see-also"></a>참고 항목
 

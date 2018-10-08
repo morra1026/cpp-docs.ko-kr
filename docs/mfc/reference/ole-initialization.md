@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8cd4318ac3d6b1da998e661da2a88f46cb84c8e9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a0e9c86cbe93fe5eb10145a322a19a26be149b4c
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46435833"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48820494"
 ---
 # <a name="ole-initialization"></a>OLE 초기화
 
@@ -79,7 +79,7 @@ MFC 응용 프로그램에 대 한 OLE 지원 초기화 하려면이 함수를 �
 >  하는 경우 **AfxOleInit** 라고는 MFC DLL에서 호출이 실패 합니다. 오류 함수는 DLL에서 호출 되는 경우 OLE 시스템 이전에 초기화 된 호출 응용 프로그램에서 가정 하기 때문에 발생 합니다.
 
 > [!NOTE]
->  MFC 응용 프로그램은 단일 스레드 아파트 (STA)로 초기화 되어야 합니다. 호출 하는 경우 [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) 에서 프로그램 `InitInstance` 재정의 COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED 아님)를 지정 합니다. 자세한 내용은 참조 PRB: MFC 응용 프로그램이 다른 이름으로 다중 스레드 아파트 (828643)에서 응용 프로그램을 초기화 하는 경우 응답 하지 [ http://support.microsoft.com/default.aspxscid=kb; en-우리; 828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643)합니다.
+>  MFC 응용 프로그램은 단일 스레드 아파트 (STA)로 초기화 되어야 합니다. 호출 하는 경우 [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) 에서 프로그램 `InitInstance` 재정의 COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED 아님)를 지정 합니다. 자세한 내용은 참조 PRB: MFC 응용 프로그램이 다른 이름으로 다중 스레드 아파트 (828643)에서 응용 프로그램을 초기화 하는 경우 응답 하지 [ http://support.microsoft.com/default.aspxscid=kb828643;](http://support.microsoft.com/default.aspxscid=kb;828643)합니다.
 
 ### <a name="requirements"></a>요구 사항
 

@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e078b38dd90fcda7a6973ac1b0aee13c301823d4
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: 9bfbcbe990effa20fc91494e5586d3c34d47a0d5
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691434"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821243"
 ---
 # <a name="spaceinfo-structure"></a>space_info 구조체
 
@@ -28,11 +28,12 @@ ms.locfileid: "44691434"
 ## <a name="syntax"></a>구문
 
 ```cpp
-struct space_info   {
+struct space_info
+{
     uintmax_t capacity;
     uintmax_t free;
     uintmax_t available;
-    };
+};
 ```
 
 ## <a name="members"></a>멤버
@@ -41,9 +42,9 @@ struct space_info   {
 
 |이름|설명|
 |----------|-----------------|
-|`unsigned long long available`|볼륨의 데이터를 나타내는 데 사용할 수 있는 바이트 수를 나타냅니다.|
 |`unsigned long long capacity`|볼륨이 나타낼 수 있는 총 바이트 수를 나타냅니다.|
 |`unsigned long long free`|볼륨의 데이터를 나타내는 데 사용되지 않는 바이트 수를 나타냅니다.|
+|`unsigned long long available`|볼륨의 데이터를 나타내는 데 사용할 수 있는 바이트 수를 나타냅니다.|
 
 ## <a name="requirements"></a>요구 사항
 

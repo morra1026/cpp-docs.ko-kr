@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5288400b5c7303840dfef98c7e1a48e7cf5d06f8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1961784efc61c3c31f87c76cd2bdfe00fe954c5d
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46032577"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48820706"
 ---
 # <a name="fatal-error-c1060"></a>심각한 오류 C1060
 
@@ -37,7 +37,7 @@ ms.locfileid: "46032577"
 
 1. 64비트 플랫폼에서 컴파일하는 경우 64비트 컴파일러 도구 집합을 사용합니다. 정보를 참조 하세요 [방법: 명령줄에서 64 비트 Visual c + + 도구를 사용 하도록 설정](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)합니다.
 
-1. 32 비트 Windows에서 사용 하 여 시도 합니다 [3GB](https://support.microsoft.com/en-us/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) boot.ini 스위치가 있습니다.
+1. 32 비트 Windows에서 사용 하 여 시도 합니다 [3GB](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) boot.ini 스위치가 있습니다.
 
 1. Windows 스왑 파일의 크기를 늘립니다.
 

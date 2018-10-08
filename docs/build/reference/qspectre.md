@@ -1,7 +1,7 @@
 ---
 title: /Qspectre | Microsoft Docs
 ms.custom: ''
-ms.date: 1/23/2018
+ms.date: 09/24/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aaf77e1856f535dba81d4b61e2ce19d363f48038
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9ed4b84ab761653dde4da6adcd14ec8e77334688
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386959"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821649"
 ---
 # <a name="qspectre"></a>/Qspectre
 
@@ -32,11 +32,13 @@ ms.locfileid: "46386959"
 
 ## <a name="remarks"></a>설명
 
-합니다 **/Qspectre** 옵션은 이상 Visual Studio 2017 버전 15.7에서에서 사용할 수 있습니다. 컴파일러가 특정 완화 하는 지침을 삽입할 [스펙터 보안 취약점으로 인 한](https://spectreattack.com/spectre.pdf)합니다. 호출에 이러한 취약성 *투기적 실행 사이드 채널 공격*많은 운영 체제 및 Intel, AMD 프로세서를 포함 하 여 최신 프로세서에 영향을 줄 고 ARM입니다.
+합니다 **/Qspectre** 옵션은 Visual Studio 2017 버전 15.5.5에서에서 사용할 수 있는 이상 및 Visual Studio 2015 업데이트 3- [KB 4338871](https://support.microsoft.com/en-us/help/4338871/visual-studio-2015-update-3-spectre-variant-1-toolset-qspectre)합니다. 컴파일러가 특정 완화 하는 지침을 삽입할 [스펙터 보안 취약점으로 인 한](https://spectreattack.com/spectre.pdf)합니다. 호출에 이러한 취약성 *투기적 실행 사이드 채널 공격*많은 운영 체제 및 Intel, AMD 프로세서를 포함 하 여 최신 프로세서에 영향을 줄 고 ARM입니다.
 
 합니다 **/Qspectre** 옵션은 기본적으로 해제 되어 있습니다.
 
-초기 릴리스에서는 **/Qspectre** 옵션 최적화 된 코드 에서만 작동 합니다. 최적화 옵션 중 하나를 사용 하 여 코드를 컴파일하려면 해야 (예를 들어 [/o1 또는/o2](o1-o2-minimize-size-maximize-speed.md) 있지만 [/Od](od-disable-debug.md)) 완화 적용 되도록 합니다. 마찬가지로, 사용 하는 코드를 검사할 [#pragma 최적화 ("stg", off)](../../preprocessor/optimize.md)합니다.
+초기 릴리스에서는 **/Qspectre** 최적화 된 코드에만 작동 하는 옵션입니다. Visual Studio 2017 버전 15.7 이상의 경우에 **/Qspectre** 옵션은 모든 최적화 수준에서 지원 됩니다. 
+
+Microsoft Visual c + + 라이브러리 스펙터 완화를 사용 하 여 버전에서 사용할 수 있습니다. Visual Studio 설치 관리자에서 Visual Studio 2017에 대 한 스펙터 완화 라이브러리를 다운로드할 수 있습니다. 있는 합니다 **개별 구성 요소** 탭 **컴파일러, 빌드 도구 및 런타임**, 이름에 "라이브러리에 대 한 스펙터"를 포함 하 고 있습니다. Visual c + + 런타임의 하위 집합에 대 한 DLL 및 정적 런타임 라이브러리 사용 하도록 설정 하는 완화를 사용 하 여 사용할: VC + + 시작 코드 "," vcruntime140 "," msvcp140 "," concrt140, "및" vcamp140 합니다. Dll 응용 프로그램 지역 배포만 지원 됩니다. Visual c + + 2017 런타임 라이브러리 재배포 가능 패키지의 내용은 수정 되지 않은 합니다. MFC 및 ATL에 대 한 스펙터 완화 라이브러리를 설치할 수도 있습니다는 **개별 구성 요소** 탭에서 **Sdk, 라이브러리 및 프레임 워크**합니다.
 
 ### <a name="applicability"></a>적용 가능성
 
@@ -44,9 +46,9 @@ ms.locfileid: "46386959"
 
 ### <a name="availability"></a>가용성
 
-합니다 **/Qspectre** 옵션은 Visual Studio 2017 버전 15.5.5 및 2018 년 1 월 23 일 이후에 만든 모든 업데이트를 Microsoft Visual c + + 컴파일러 (MSVC)에서 사용할 수 있습니다. Visual Studio 설치 관리자를 사용 하 여 컴파일러를 업데이트 하 고 개별 구성 요소로 스펙터 완화 라이브러리를 설치 합니다. 합니다 **/Qspectre** 옵션 패치를 통해 Visual Studio 2015 업데이트 3에서 제공 됩니다. 자세한 내용은 [KB 4338871](https://support.microsoft.com/help/4338871)합니다.
+합니다 **/Qspectre** 옵션은 2018 년 1 월 23 일 이후에 만든 모든 업데이트를 Microsoft Visual c + + 컴파일러 (MSVC) 및 Visual Studio 2017 버전 15.5.5에서에서 사용할 수 있습니다. Visual Studio 설치 관리자를 사용 하 여 컴파일러를 업데이트 하 고 개별 구성 요소로 스펙터 완화 라이브러리를 설치 합니다. 합니다 **/Qspectre** 옵션 패치를 통해 Visual Studio 2015 업데이트 3에서 제공 됩니다. 자세한 내용은 [KB 4338871](https://support.microsoft.com/help/4338871)합니다.
 
-모든 버전의 Visual Studio 2017 버전 15.5 및 모든 미리 보기의 Visual Studio 버전 15.6에는 이미는 문서화 되지 않은 옵션이 포함 되어 **/d2guardspecload**, 즉 해당 초기 동작 **/Qspectre**. 사용할 수 있습니다 **/d2guardspecload** 이러한 버전의 컴파일러에서 코드를 동일한 완화를 적용 합니다. 사용 하 여 빌드를 업데이트 하세요 **/Qspectre** ; 옵션을 지 원하는 컴파일러에서는 **/Qspectre** 컴파일러의 이후 버전에서 새 완화 옵션을 지원할 수도 있습니다.
+모든 버전의 Visual Studio 2017 버전 15.5 및 모든 미리 보기의 Visual Studio 2017 버전 15.6 문서화 되지 않은 옵션이 **/d2guardspecload**에 초기 동작에는 해당 **/Qspectre**. 사용할 수 있습니다 **/d2guardspecload** 이러한 버전의 컴파일러에서 코드를 동일한 완화를 적용 합니다. 사용 하 여 빌드를 업데이트 하세요 **/Qspectre** ; 옵션을 지 원하는 컴파일러에서는 **/Qspectre** 컴파일러의 이후 버전에서 새 완화 옵션을 지원할 수도 있습니다.
 
 ### <a name="effect"></a>효과
 
@@ -62,9 +64,9 @@ ms.locfileid: "46386959"
 
 합니다 **/Qspectre** 컴파일러 옵션 스펙터 완화를 위해 구축 된 런타임 라이브러리의 버전을 암시적으로 연결 하는 코드를 생성 합니다. 이러한 라이브러리는 Visual Studio 설치 관리자를 사용 하 여 설치 해야 하는 선택적 구성 요소:
 
-- VC + + 2017 버전 *version_number* (x86 및 x64) 스펙터 용 라이브러리
-- Spectre Mitigations 포함 Visual C++ ATL(x86/x64)
-- Spectre Mitigations 포함 x86/x64용 Visual C++ MFC
+- VC + + 2017 버전 *version_numbers* 스펙터 용 라이브러리 \[(x86 및 x64) | (ARM) | (ARM64)]
+- 에 대 한 visual c + + ATL \[(x64 x86) | ARM | ARM64] 스펙터 완화를 사용 하 여
+- 에 대 한 visual c + + MFC \[x86 x64 | ARM | ARM64] 스펙터 완화를 사용 하 여
 
 사용 하 여 코드를 작성 하는 경우 **/Qspectre** 이러한 라이브러리에는 없는 설치, 빌드 시스템 보고서 **경고 MSB8038: 스펙터 완화 설정 되어 있지만 스펙터 완화 된 라이브러리를 찾을 수 없습니다**합니다. MFC 또는 ATL 코드 빌드가 실패 하 고 링커와 같은 오류를 보고 하는 경우 **심각한 오류 LNK1104: 'oldnames.lib' 파일을 열 수 없습니다.**, 이러한 누락 된 라이브러리를 일으킬 수 있습니다.
 

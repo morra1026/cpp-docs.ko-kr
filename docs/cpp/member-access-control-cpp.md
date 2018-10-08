@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 32a58d35a78fce6a0a6bb499df1363a80200de5a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: dced1bd7db0f3eec9d9d070deb8cf990496116ae
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017562"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821662"
 ---
 # <a name="member-access-control-c"></a>멤버 Access Control(C++)
 
@@ -47,7 +47,7 @@ protected:      // Declare protected function for derived classes only.
 
 기본 액세스가 **사설** 클래스에서 및 **공용** 구조체 또는 공용 구조체에서. 클래스의 액세스 지정자는 순서에 관계없이 여러 번 사용할 수 있습니다. 클래스 형식 개체의 저장소 할당은 구현에 따라 다르지만 액세스 지정자 사이의 더 높은 메모리 주소가 연속적으로 멤버에 할당됩니다.
 
-### <a name="member-access-control"></a>멤버 액세스 제어
+## <a name="member-access-control"></a>멤버 액세스 제어
 
 |액세스 형식|의미|
 |--------------------|-------------|

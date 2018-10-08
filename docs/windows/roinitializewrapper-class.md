@@ -1,7 +1,7 @@
 ---
 title: RoInitializeWrapper 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 09/24/2018
+ms.date: 10/03/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 22271435db3a66095da5b6065a6b9cc9463b3de2
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 3dd1b5df8749f22873a52782b6f528760c3823a1
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48233751"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788763"
 ---
 # <a name="roinitializewrapper-class"></a>RoInitializeWrapper 클래스
 
@@ -37,7 +37,7 @@ Windows 런타임을 초기화합니다.
 ## <a name="syntax"></a>구문
 
 ```cpp
-class RoInitializeWrapper
+class RoInitializeWrapper;
 ```
 
 ## <a name="remarks"></a>설명

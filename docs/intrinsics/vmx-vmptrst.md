@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ccd691edb9ee799c8585fb33cb6b837e2871fc36
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4f9cd2ebdbcf2ad2feb3b66412fbcd5687e85dce
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413977"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48820570"
 ---
 # <a name="vmxvmptrst"></a>__vmx_vmptrst
 
@@ -46,7 +46,7 @@ void __vmx_vmptrst(
 
 VMCS 포인터는 64 비트 물리적 주소입니다.
 
-합니다 `__vmx_vmptrst` 함수는 동일 합니다 `VMPTRST` 컴퓨터 명령입니다. 이 함수는 게스트 운영 체제 및 해당 응용 프로그램과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용은 "Intel 가상화 기술 사양에 대 한는 IA-32 Intel 아키텍처" 문서를 검색에서 숫자 C97063-002를 문서화 합니다 [Intel Corporation](https://software.intel.com/en-us/articles/intel-sdm) 사이트입니다.
+합니다 `__vmx_vmptrst` 함수는 동일 합니다 `VMPTRST` 컴퓨터 명령입니다. 이 함수는 게스트 운영 체제 및 해당 응용 프로그램과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용은 "Intel 가상화 기술 사양에 대 한는 IA-32 Intel 아키텍처" 문서를 검색에서 숫자 C97063-002를 문서화 합니다 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트입니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,7 +1,7 @@
 ---
 title: RuntimeClassBaseT 구조체 | Microsoft Docs
 ms.custom: ''
-ms.date: 09/24/2018
+ms.date: 10/03/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c9e7f5b38d3434e8753646db4733218978e7e766
-ms.sourcegitcommit: edb46b0239a0e616af4ec58906e12338c3e8d2c6
+ms.openlocfilehash: 9c46e89dc11f4c6fe216cfd61c3222a9c52d9e45
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169712"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48789139"
 ---
 # <a name="runtimeclassbaset-structure"></a>RuntimeClassBaseT 구조체
 
@@ -35,9 +35,7 @@ WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습
 ## <a name="syntax"></a>구문
 
 ```cpp
-template <
-   unsigned int RuntimeClassTypeT
->
+template <unsigned int RuntimeClassTypeT>
 friend struct Details::RuntimeClassBaseT;
 ```
 

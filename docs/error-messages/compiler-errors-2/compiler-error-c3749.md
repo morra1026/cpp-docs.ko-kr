@@ -16,18 +16,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4151d712c12cb34785c3f4ab77c76cdd78d4830
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7ac866d742734f5b6126315a0b79020c9ec7fb74
+ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024088"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788398"
 ---
 # <a name="compiler-error-c3749"></a>컴파일러 오류 C3749
 
 'attribute': 함수 내에서 사용자 지정 특성을 사용할 수 없습니다
 
-함수 내에서 사용자 지정 특성을 사용할 수 없습니다. 사용자 지정 특성에 대 한 자세한 내용은 항목을 참조 하세요 [특성](../../windows/attribute.md)합니다.
+함수 내에서 사용자 지정 특성을 사용할 수 없습니다. 사용자 지정 특성에 대 한 자세한 내용은 항목을 참조 하세요 [특성](../../windows/attributes/attribute.md)합니다.
 
 ## <a name="example"></a>예제
 
