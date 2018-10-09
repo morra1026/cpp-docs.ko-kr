@@ -14,12 +14,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 043ad3a0767cc6769be1d20fe6e6d31cc5c119fb
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: ed44479f6e6d1569a9b27a059e837cbbb924b803
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42583896"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821435"
 ---
 # <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: Windows, Linux 및 MacOS용 C++ 패키지 관리자
 
@@ -138,7 +138,7 @@ zlib:x86-windows        1.2.11   A compression library
 
 ## <a name="target-linux-from-windows-via-wsl"></a>WSL을 통해 Windows에서 Linux 대상 지정
 
-WSL(Linux용 Windows 하위 시스템)을 사용하여 Windows 컴퓨터에서 Linux 바이너리를 생성할 수 있습니다. [Windows 10에 WSL을 설정](https://docs.microsoft.com/en-us/windows/wsl/install-win10) 지침에 따라 [Linux용 Visual Studio 확장](https://blogs.msdn.microsoft.com/vcblog/2017/02/08/targeting-windows-subsystem-for-linux-from-visual-studio/)을 사용하여 구성합니다. Windows와 Linux 모두에 대한 모든 내장 라이브러리를 동일한 폴더에 넣고 Windows와 WSL 모두에서 액세스할 수 있습니다.
+WSL(Linux용 Windows 하위 시스템)을 사용하여 Windows 컴퓨터에서 Linux 바이너리를 생성할 수 있습니다. [Windows 10에 WSL을 설정](/windows/wsl/install-win10) 지침에 따라 [Linux용 Visual Studio 확장](https://blogs.msdn.microsoft.com/vcblog/2017/02/08/targeting-windows-subsystem-for-linux-from-visual-studio/)을 사용하여 구성합니다. Windows와 Linux 모두에 대한 모든 내장 라이브러리를 동일한 폴더에 넣고 Windows와 WSL 모두에서 액세스할 수 있습니다.
 
 
 ## <a name="export_binaries_per_project"></a> 컴파일된 이진 파일 및 헤더 내보내기
@@ -243,4 +243,3 @@ Vcpkg 인스턴스의 내용:
 |---------|---------|
 |**--triplet \<t>**|세 가지 대상 아키텍처를 지정합니다. (기본값: `%VCPKG_DEFAULT_TRIPLET%`, **vcpkg help triplet** 참조)|
 |**--vcpkg-root \<path>**|vcpkg 루트 디렉터리 지정(기본값: `%VCPKG_ROOT%`)|
-
