@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62b49c20248ca4825bcf2c95b6c7adc956a39025
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6bf350b0a129c642678fc6af1bac7d35633fe909
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714528"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860981"
 ---
 # <a name="exports"></a>EXPORTS
 
@@ -82,11 +82,11 @@ EXPORTS
 
 1. 합니다 [__declspec (dllexport)](../../cpp/dllexport-dllimport.md) 소스 코드의 키워드
 
-2. .DEF 파일의 `EXPORTS` 문
+1. .DEF 파일의 `EXPORTS` 문
 
-3. [/내보내기](../../build/reference/export-exports-a-function.md) LINK 명령의 사양
+1. [/내보내기](../../build/reference/export-exports-a-function.md) LINK 명령의 사양
 
-4. A [주석](../../preprocessor/comment-c-cpp.md) 폼의 소스 코드에 지시문 `#pragma comment(linker, "/export: definition ")`합니다. 다음 예제에서는 함수 선언 전에 #pragma comment 지시문 위치 `PlainFuncName` 데코 레이트 되지 않은 이름 및 `_PlainFuncName@4` 함수의 트 데코 레이 된 이름:
+1. A [주석](../../preprocessor/comment-c-cpp.md) 폼의 소스 코드에 지시문 `#pragma comment(linker, "/export: definition ")`합니다. 다음 예제에서는 함수 선언 전에 #pragma comment 지시문 위치 `PlainFuncName` 데코 레이트 되지 않은 이름 및 `_PlainFuncName@4` 함수의 트 데코 레이 된 이름:
 
     ```cpp
     #pragma comment(linker, "/export:PlainFuncName=_PlainFuncName@4")

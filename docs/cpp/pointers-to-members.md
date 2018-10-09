@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 509181abc0d9b3e2f2c2d4c76275e635ba3a4477
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 971f3df56f049b919ebb1f3fb8f517c97b2829e7
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46076075"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861280"
 ---
 # <a name="pointers-to-members"></a>pointers_to_members
 
@@ -56,7 +56,7 @@ ms.locfileid: "46076075"
   - 클래스의 정규화된 이름
   - `::` 연산자
   - 적절한 형식의 클래스의 비정적 멤버 이름
-  -  항상 그렇듯이 여러 선언자(및 모든 관련 이니셜라이저)가 단일 선언에서 허용됩니다.
+  - 항상 그렇듯이 여러 선언자(및 모든 관련 이니셜라이저)가 단일 선언에서 허용됩니다.
 
 클래스의 멤버에 대한 포인터는 멤버의 형식과 멤버가 속한 클래스에 대한 형식 정보를 포함하기 때문에 일반 포인터와 다릅니다. 일반 포인터는 메모리에 있는 단일 개체만 식별합니다(해당 개체의 주소를 포함함). 클래스의 멤버에 대한 포인터는 클래스의 모든 인스턴스에서 해당 멤버를 식별합니다. 다음 예제에서는 `Window` 클래스와 멤버 데이터에 대한 몇 가지 포인터를 선언합니다.
 

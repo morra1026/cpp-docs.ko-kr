@@ -30,12 +30,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f6f287f98b542a3d8eb24f9cc2b5e725e27dceb
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 28e4e2ea0118d79e2746db93ba30478ed2563434
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725974"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860539"
 ---
 # <a name="base-base-address"></a>/BASE(기준 주소)
 
@@ -78,9 +78,9 @@ link dlltwo.obj /dll /base:@dlls.txt,two
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
 
-2. 선택 된 **구성 속성** > **링커** > **고급** 속성 페이지.
+1. 선택 된 **구성 속성** > **링커** > **고급** 속성 페이지.
 
-3. 수정 된 **기준 주소** 속성입니다.
+1. 수정 된 **기준 주소** 속성입니다.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면
 

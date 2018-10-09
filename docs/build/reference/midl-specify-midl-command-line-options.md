@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d9ecfada513e16ce10bab37bb38b6ce6d67f907
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d2fa03920f60d7da4730bc46b23605ccfa13f6d7
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397626"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860388"
 ---
 # <a name="midl-specify-midl-command-line-options"></a>/MIDL(MIDL 명령줄 옵션 지정)
 
@@ -51,9 +51,9 @@ IDL 파일을 TLB 파일로 변환에 대 한 모든 옵션 지정 해야 합니
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
 
-2. 선택 된 **구성 속성** > **링커** > **포함 IDL** 속성 페이지.
+1. 선택 된 **구성 속성** > **링커** > **포함 IDL** 속성 페이지.
 
-3. 수정 된 **MIDL 명령** 속성입니다.
+1. 수정 된 **MIDL 명령** 속성입니다.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면
 

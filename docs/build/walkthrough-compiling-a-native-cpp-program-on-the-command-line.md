@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7f8fad0c4676e8dfedcf8e80332c0a239f230cb
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 122d33be06755b92a17db62237787151a0811898
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821194"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860409"
 ---
 # <a name="walkthrough-compiling-a-native-c-program-on-the-command-line"></a>연습: 명령줄에서 네이티브 C++ 프로그램 컴파일
 
@@ -53,7 +53,7 @@ Visual Studio는 다양 한 언어 및 플랫폼에 대 한 완전 한 편집기
 
    Visual Studio의 다른 버전을 사용 하거나 다른 버전의 Windows 실행 하는 경우 시작 메뉴에서 확인 하거나 개발자 명령 프롬프트 바로 가기를 포함 하는 Visual Studio tools 폴더에 대 한 페이지를 시작 합니다. 또한 "개발자 명령 프롬프트"를 검색 하 고 Visual Studio의 설치 된 버전과 일치 하는 하나를 선택 하려면 Windows 검색 기능을 사용할 수 있습니다. 바로 가기를 사용 하 여 명령 프롬프트 창을 엽니다.
 
-1. 다음으로, Visual c + + 개발자 명령 프롬프트를 올바르게 설정 되어 있는지 확인 합니다. 명령 프롬프트 창에서 입력 `cl` 출력 같이 표시 되는지 확인 합니다.
+1. 다음으로, Visual c + + 개발자 명령 프롬프트를 올바르게 설정 되어 있는지 확인 합니다. 명령 프롬프트 창에서 입력 `cl` 및 다음과 같은 출력이 표시 되는지 확인 합니다.
 
    ```Output
    C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise>cl
@@ -140,7 +140,7 @@ Visual Studio는 다양 한 언어 및 플랫폼에 대 한 완전 한 편집기
    > [!NOTE]
    > 다른 컴파일러 또는 링커 오류 또는 경고를 받게 되 면 오류를 수정, 그런 다음 저장 하 고 컴파일러를 다시 실행 하도록 소스 코드를 검토 합니다. 특정 오류에 대 한 자세한 오류 번호를 확인 하려면 MSDN 페이지 검색 상자를 사용 합니다.
 
-7. hello.exe 프로그램을 실행하려면 명령 프롬프트에서 `hello`를 입력합니다.
+1. hello.exe 프로그램을 실행하려면 명령 프롬프트에서 `hello`를 입력합니다.
 
    프로그램이 다음 텍스트를 표시하고 종료됩니다.
 

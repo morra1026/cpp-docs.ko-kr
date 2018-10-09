@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a326b72ac5594d7ef5f0b9ad26f9bdf4e8472bd4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a9410ac275ecd321184153d45fd5b044deb80e5b
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46112995"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861514"
 ---
 # <a name="adding-an-atl-active-server-page-component"></a>ATL Active Server Page 구성 요소를 추가합니다.
 
@@ -36,13 +36,13 @@ Active Server Pages 구성 요소를 사용 하면 다음과 같은 고급 웹 �
 
 - 웹 기반 응용 프로그램에 대 한 ASP 오류 처리 기능을 사용할 수 있습니다.
 
-### <a name="to-add-an-atl-active-server-pages-component-to-your-project"></a>프로젝트에는 ATL Active Server Pages 구성 요소를 추가 하려면
+## <a name="to-add-an-atl-active-server-pages-component-to-your-project"></a>프로젝트에는 ATL Active Server Pages 구성 요소를 추가 하려면
 
 1. **솔루션 탐색기** ATL Active Server Pages 구성 요소를 추가 하려면 프로젝트의 이름을 마우스 오른쪽 단추로 클릭 합니다.
 
-2. 바로 가기 메뉴에서 **추가**를 클릭한 다음, **클래스 추가**를 클릭합니다.
+1. 바로 가기 메뉴에서 **추가**를 클릭한 다음, **클래스 추가**를 클릭합니다.
 
-3. 에 [클래스 추가](../../ide/add-class-dialog-box.md) 대화 상자의 템플릿 창에서 클릭 **ATL Active Server Page 구성 요소**를 클릭 하 고 **열기** 표시할는 [ATL Active Server Page 구성 요소 마법사](../../atl/reference/atl-active-server-page-component-wizard.md)합니다.
+1. 에 [클래스 추가](../../ide/add-class-dialog-box.md) 대화 상자의 합니다 **템플릿** 창 클릭 **ATL Active Server Page 구성 요소**, 클릭 하 고 **열기** 표시할는 [ATL Active Server Page 구성 요소 마법사](../../atl/reference/atl-active-server-page-component-wizard.md)합니다.
 
 ## <a name="see-also"></a>참고 항목
 
@@ -52,4 +52,3 @@ Active Server Pages 구성 요소를 사용 하면 다음과 같은 고급 웹 �
 [메서드 추가](../../ide/adding-a-method-visual-cpp.md)<br/>
 [MFC 클래스](../../mfc/reference/adding-an-mfc-class.md)<br/>
 [일반 C++ 클래스 추가](../../ide/adding-a-generic-cpp-class.md)
-

@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7047161a059432b43d4ff1a92e9c4d10dc01d51
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3a2567182f0e2622a72ceb9b98988c4d122a3561
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387018"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860565"
 ---
 # <a name="cstring-operations-relating-to-c-style-strings"></a>C 스타일 문자열 관련 CString 작업
 
@@ -67,7 +67,7 @@ strcpy(myString, (LPCTSTR)aCString);
 [!code-cpp[NVC_ATLMFC_Utilities#189](../atl-mfc-shared/codesnippet/cpp/cstring-operations-relating-to-c-style-strings_1.cpp)]
 
 > [!NOTE]
->  세 번째 인수 `strcpy_s` (또는 유니코드/MBCS-노트북 `_tcscpy_s`)이를 `const wchar_t*` (유니코드) 또는 `const char*` (ANSI). 위의 예에서는 이 인수에 대해 `CString`을 전달합니다. C++ 컴파일러는 `CString`을 `CString`로 변환하는 `LPCTSTR` 클래스에 대해 정의된 변환 함수를 자동으로 적용합니다. C++의 가장 유용한 기능 중 하나는 형식 간의 캐스팅 작업을 정의하는 기능입니다.
+> 세 번째 인수 `strcpy_s` (또는 유니코드/MBCS-노트북 `_tcscpy_s`)이를 `const wchar_t*` (유니코드) 또는 `const char*` (ANSI). 위의 예에서는 이 인수에 대해 `CString`을 전달합니다. C++ 컴파일러는 `CString`을 `CString`로 변환하는 `LPCTSTR` 클래스에 대해 정의된 변환 함수를 자동으로 적용합니다. C++의 가장 유용한 기능 중 하나는 형식 간의 캐스팅 작업을 정의하는 기능입니다.
 
 ##  <a name="_core_working_with_standard_run.2d.time_library_string_functions"></a> 표준 런타임 라이브러리 문자열 함수 사용
 
@@ -83,13 +83,13 @@ C 런타임 문자열 함수를 사용 해야 할 경우 _core_using_cstring_as_
 
 `GetBuffer` 및 `ReleaseBuffer` 메서드를 통해 `CString` 개체의 내부 문자 버퍼에 액세스하여 해당 버퍼를 직접 수정할 수 있습니다. 다음 단계에서는 이러한 작업을 위해 해당 함수를 사용하는 방법을 보여줍니다.
 
-#### <a name="to-use-getbuffer-and-releasebuffer-to-access-the-internal-character-buffer-of-a-cstring-object"></a>GetBuffer 및 ReleaseBuffer를 사용하여 CString 개체의 내부 문자 버퍼에 액세스하려면
+### <a name="to-use-getbuffer-and-releasebuffer-to-access-the-internal-character-buffer-of-a-cstring-object"></a>GetBuffer 및 ReleaseBuffer를 사용하여 CString 개체의 내부 문자 버퍼에 액세스하려면
 
 1. `GetBuffer` 개체에 대해 `CString`를 호출하고 필요한 버퍼 길이를 지정합니다.
 
-2. `GetBuffer`에서 반환하는 포인터를 사용하여 `CString` 개체에 문자를 직접 씁니다.
+1. `GetBuffer`에서 반환하는 포인터를 사용하여 `CString` 개체에 문자를 직접 씁니다.
 
-3. `ReleaseBuffer` 개체에 대해 `CString`를 호출하여 문자열 길이 등의 모든 내부 `CString` 상태 정보를 업데이트합니다. `CString` 개체의 콘텐츠를 직접 수정한 후에는 `ReleaseBuffer`를 호출한 후에 다른 `CString` 멤버 함수를 호출해야 합니다.
+1. `ReleaseBuffer` 개체에 대해 `CString`를 호출하여 문자열 길이 등의 모든 내부 `CString` 상태 정보를 업데이트합니다. `CString` 개체의 콘텐츠를 직접 수정한 후에는 `ReleaseBuffer`를 호출한 후에 다른 `CString` 멤버 함수를 호출해야 합니다.
 
 ##  <a name="_core_using_cstring_objects_with_variable_argument_functions"></a> 가변 인수 함수와 함께 CString 개체 사용
 
@@ -113,4 +113,3 @@ C 런타임 문자열 함수를 사용 해야 할 경우 _core_using_cstring_as_
 
 [문자열 (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [CString 인수 전달](../atl-mfc-shared/cstring-argument-passing.md)
-

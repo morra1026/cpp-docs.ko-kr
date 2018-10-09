@@ -17,22 +17,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf2b3d047a6618326e69dcb51f143f77fc10c8a6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f0b20cbae3036ffecfa63f2e3ee6be8e2153fc8f
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099540"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860916"
 ---
 # <a name="making-an-atl-object-noncreatable"></a>ATL 개체 수 없도록 설정 만들기
 
 클라이언트 개체를 직접 만들 수 있도록 ATL 기반 COM 개체의 특성을 변경할 수 있습니다. 이 경우 개체는 수 다른 개체에서 메서드 호출을 통해 반환 된 것이 아니라 직접.
 
-### <a name="to-make-an-object-noncreatable"></a>개체 수 없도록 설정 하려면
+## <a name="to-make-an-object-noncreatable"></a>개체 수 없도록 설정 하려면
 
 1. 제거 된 [OBJECT_ENTRY_AUTO](object-map-macros.md#object_entry_auto) 개체에 대 한 합니다. 개체를 noncreatable 아니라 등록 컨트롤을 사용 하도록 하려는 경우 대체와 OBJECT_ENTRY_AUTO [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](object-map-macros.md#object_entry_non_createable_ex_auto)합니다.
 
-2. 추가 된 [noncreatable](../../windows/noncreatable.md) .idl 파일의 coclass 특성입니다. 예를 들어:
+1. 추가 된 [noncreatable](../../windows/noncreatable.md) .idl 파일의 coclass 특성입니다. 예를 들어:
 
     ```  
     [uuid(A1992E3D-3CF0-11D0-826F-00A0C90F2851), 
@@ -52,4 +52,3 @@ ms.locfileid: "46099540"
 [ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [기본 ATL 프로젝트 구성](../../atl/reference/default-atl-project-configurations.md)
-

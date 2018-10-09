@@ -18,18 +18,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fff4c581b91ed789b501d3866eb9b3b259a662b3
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9edf381864121d4e3f6c5a2b6cf7c01198368e1e
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755465"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860526"
 ---
 # <a name="current-time-general-purpose-classes"></a>현재 시간: 범용 클래스
 
 다음 절차에는 만드는 방법을 보여 줍니다는 `CTime` 개체 및 현재 시간을 사용 하 여 초기화 합니다.
 
-#### <a name="to-get-the-current-time"></a>현재 시간을 가져오려면
+### <a name="to-get-the-current-time"></a>현재 시간을 가져오려면
 
 1. 할당을 `CTime` 개체를 다음과 같이 합니다.
 
@@ -38,7 +38,7 @@ ms.locfileid: "43755465"
    > [!NOTE]
    > 초기화 되지 않은 `CTime` 개체는 올바른 시간으로 초기화 되지 않았습니다.
 
-2. 호출 된 `CTime::GetCurrentTime` 함수를 운영 체제에서 현재 시간을 가져옵니다. 이 함수는 반환을 `CTime` 의 값을 설정 하는 데 사용할 수 있습니다 `CTime`같이:
+1. 호출 된 `CTime::GetCurrentTime` 함수를 운영 체제에서 현재 시간을 가져옵니다. 이 함수는 반환을 `CTime` 의 값을 설정 하는 데 사용할 수 있습니다 `CTime`같이:
 
    [!code-cpp[NVC_ATLMFC_Utilities#172](../atl-mfc-shared/codesnippet/cpp/current-time-general-purpose-classes_2.cpp)]
 

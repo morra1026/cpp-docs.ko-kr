@@ -17,62 +17,52 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a39ee9c45084d03198157f427ca3edca13767e6c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7e896c1a00e45e5e7503837409903651ed2bdc3a
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024114"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861241"
 ---
 # <a name="pointers-c"></a>포인터 (c + +)
 
 포인터는 다음 시퀀스를 사용하여 선언합니다.
 
-```
-[storage-class-specifiers] [cv-qualifiers] type-specifiers 
-[ms-modifier] declarator ;
-```
+> \[*저장소 클래스 지정자*] \[ *cv 한정자*] *형식 지정자* \[ *ms 한정자*]  *선언 자* **;**
 
-여기서 모든 유효한 포인터 선언자를 `declarator`에 사용할 수 있습니다. 단순한 포인터 선언자 구문은 다음과 같습니다.
+여기서 모든 유효한 포인터 선언 자를 사용할 수 있습니다 *declarator*합니다. 단순한 포인터 선언자 구문은 다음과 같습니다.
 
-```
-* [cv-qualifiers] identifier [= expression]
-```
+> __\*__ \[*cv 한정자*] *식별자* \[ **=** *식*]
 
 1. 선언 지정자:
 
-    - 선택적 저장소 클래스 지정자. 자세한 내용은 [지정자](../cpp/specifiers.md)합니다.
+   - 선택적 저장소 클래스 지정자. 자세한 내용은 [지정자](../cpp/specifiers.md)합니다.
 
-    - 선택적인 **상수** 또는 **volatile** 키워드가 가리키는 개체의 형식에 적용 합니다.
+   - 선택적인 **상수** 또는 **volatile** 키워드가 가리키는 개체의 형식에 적용 합니다.
 
-    - 형식 지정자: 가리키는 대상 개체의 형식을 나타내는 형식의 이름
+   - 형식 지정자: 가리키는 대상 개체의 형식을 나타내는 형식의 이름
 
-2. 선언자:
+1. 선언자:
 
-    - 선택적 Microsoft 전용 한정자. 자세한 내용은 [Microsoft 전용 한정자](../cpp/microsoft-specific-modifiers.md)합니다.
+   - 선택적 Microsoft 전용 한정자. 자세한 내용은 [Microsoft 전용 한정자](../cpp/microsoft-specific-modifiers.md)합니다.
 
-    - `*` 연산자
+   - 합니다 __\*__ 연산자입니다.
 
-    - 선택적인 **상수** 또는 **volatile** 포인터 자체에 적용 되는 키워드입니다.
+   - 선택적인 **상수** 또는 **volatile** 포인터 자체에 적용 되는 키워드입니다.
 
-    - 식별자입니다.
+   - 식별자입니다.
 
-    - 선택적 이니셜라이저입니다.
+   - 선택적 이니셜라이저입니다.
 
-     함수 포인터의 선언자는 다음과 같습니다.
+함수 포인터의 선언자는 다음과 같습니다.
 
-```
-(* [cv-qualifiers] identifier )( argument-list ) [cv-qualifers]
-[exception specification] [= expression];
-```
+> __(\*__  \[ *cv 한정자*] *식별자* **) (** *인수 목록* **)** \[ *cv 한정자*] \[ *예외 사양을*] \[ **=** *식*] **;**
 
-- 포인터 배열의 경우 구문은 다음과 같습니다.
+포인터 배열의 경우 구문은 다음과 같습니다.
 
-```
-* identifier [ [ constant-expression ] ]
-```
+> __\*__ *식별자* **\[** \[ *상수-식*] **]**
 
-- 여러 선언자와 해당 이니셜라이저가 단일 선언에서 선언 지정자 뒤에 쉼표로 구분된 목록으로 함께 나타날 수 있습니다.
+여러 선언자와 해당 이니셜라이저가 단일 선언에서 선언 지정자 뒤에 쉼표로 구분된 목록으로 함께 나타날 수 있습니다.
 
 포인터 선언의 간단한 예제는 다음과 같습니다.
 

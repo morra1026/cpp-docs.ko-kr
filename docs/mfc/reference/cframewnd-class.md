@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12982c212cf8ff4fe502638a5c466306bfe15eb1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 32456b15cc00d296354016f8769e020f8133b609
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374290"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861735"
 ---
 # <a name="cframewnd-class"></a>CFrameWnd 클래스
 
@@ -1103,7 +1103,7 @@ virtual BOOL SetMenuBarState(DWORD nState);
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*nState*|[in] 메뉴의 표시 여부를 지정 합니다. 합니다 *nState* 매개 변수에 다음 값을 사용할 수 있습니다.<br /><br /> -AFX_MBS_VISIBLE (0x01)-숨겨져 있지만 표시 된 경우 효과가 없습니다 메뉴를 표시 합니다.<br />-AFX_MBS_HIDDEN (0x02)-표시 하지만 숨긴 경우 효과가 없습니다 경우 메뉴가 숨겨집니다.|
+|*nState*|[in] 메뉴의 표시 여부를 지정 합니다. 합니다 *nState* 매개 변수에 다음 값을 사용할 수 있습니다.<br /><br />-AFX_MBS_VISIBLE (0x01)-숨겨져 있지만 표시 된 경우 효과가 없습니다 메뉴를 표시 합니다.<br />-AFX_MBS_HIDDEN (0x02)-표시 하지만 숨긴 경우 효과가 없습니다 경우 메뉴가 숨겨집니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -1125,7 +1125,7 @@ virtual void SetMenuBarVisibility(DWORD nStyle);
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*nStyle*|[in] 여부를 메뉴 기본적으로 숨겨져 있는 경우 또는 표시 이며 지정 포커스를가지고 있습니다. 합니다 *nStyle* 매개 변수에 다음 값을 사용할 수 있습니다.<br /><br /> -AFX_MBV_KEEPVISIBLE (0X01)-<br />     메뉴 모든 시간에 표시 되 고 기본적으로는 포커스가 없습니다.<br />-AFX_MBV_DISPLAYONFOCUS (0X02)-<br />     메뉴는 기본적으로 숨겨져 있습니다. 메뉴에 숨겨진 경우 메뉴 표시에 포커스를 ALT 키를 누릅니다. 메뉴 표시 되지 않으면 메뉴를 숨기려면 alt 키 또는 ESC 키를 누릅니다.<br />-AFX_MBV_ DISPLAYONFOCUS (0x02) &#124; AFX_MBV_DISPLAYONF10 (0x04)<br />     (비트 조합 (OR))-메뉴는 기본적으로 숨겨져 있습니다. 메뉴에 숨겨진 경우 메뉴 표시에 포커스를 F10 키를 누릅니다. 메뉴 표시 되지 않으면 메뉴 켜거나 포커스를 전환 하려면 F10 키를 누릅니다. 메뉴 숨기려면 alt 키 또는 ESC 키를 누를 때까지 표시 됩니다.|
+|*nStyle*|[in] 여부를 메뉴 기본적으로 숨겨져 있는 경우 또는 표시 이며 지정 포커스를가지고 있습니다. 합니다 *nStyle* 매개 변수에 다음 값을 사용할 수 있습니다.<br /><br />-AFX_MBV_KEEPVISIBLE (0X01)-<br />     메뉴 모든 시간에 표시 되 고 기본적으로는 포커스가 없습니다.<br />-AFX_MBV_DISPLAYONFOCUS (0X02)-<br />     메뉴는 기본적으로 숨겨져 있습니다. 메뉴에 숨겨진 경우 메뉴 표시에 포커스를 ALT 키를 누릅니다. 메뉴 표시 되지 않으면 메뉴를 숨기려면 alt 키 또는 ESC 키를 누릅니다.<br />-AFX_MBV_ DISPLAYONFOCUS (0x02) &#124; AFX_MBV_DISPLAYONF10 (0x04)<br />     (비트 조합 (OR))-메뉴는 기본적으로 숨겨져 있습니다. 메뉴에 숨겨진 경우 메뉴 표시에 포커스를 F10 키를 누릅니다. 메뉴 표시 되지 않으면 메뉴 켜거나 포커스를 전환 하려면 F10 키를 누릅니다. 메뉴 숨기려면 alt 키 또는 ESC 키를 누를 때까지 표시 됩니다.|
 
 ### <a name="remarks"></a>설명
 

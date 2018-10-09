@@ -19,29 +19,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea8d1dcb0d5d3a59eb5f2899baffed18e7d1663f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4adaa1da407d9727db74add14eb517e83a5e610c
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46054755"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861553"
 ---
 # <a name="creating-an-atl-project"></a>ATL 프로젝트 만들기
 
-ATL 프로젝트를 만드는 가장 쉬운 방법은의 Win32 프로젝트 폴더에 있는 ATL 프로젝트 마법사를 사용 하는 것은 **새 프로젝트 대화 상자의**합니다.
+ATL 프로젝트를 만드는 가장 쉬운 방법은 ATL 프로젝트 마법사를 사용 하는 것은 **Win32 프로젝트** 폴더를 **새 프로젝트** 대화 상자.
 
-### <a name="to-create-an-atl-project-using-the-atl-project-wizard"></a>ATL 프로젝트 마법사를 사용 하 여 ATL 프로젝트를 만들려면
+## <a name="to-create-an-atl-project-using-the-atl-project-wizard"></a>ATL 프로젝트 마법사를 사용 하 여 ATL 프로젝트를 만들려면
 
 1. 항목의 지침을 따릅니다 [Visual c + + 응용 프로그램 마법사를 사용 하 여 프로젝트를 만드는](../../ide/creating-desktop-projects-by-using-application-wizards.md)합니다.
 
-2. 선택 된 **ATL 프로젝트** ATL 프로젝트 마법사를 열려면 템플릿 창에서 아이콘입니다.
+1. 선택 합니다 **ATL 프로젝트** 아이콘에는 **템플릿** 열려면 창을 **ATL 프로젝트 마법사**.
 
-3. 사용 하 여 응용 프로그램 설정을 정의 합니다 [응용 프로그램 설정](../../atl/reference/application-settings-atl-project-wizard.md) 페이지를 `ATL Project Wizard`입니다.
+1. 사용 하 여 응용 프로그램 설정을 정의 합니다 [응용 프로그램 설정](../../atl/reference/application-settings-atl-project-wizard.md) 페이지의 **ATL 프로젝트 마법사**합니다.
 
    > [!NOTE]
    > 마법사의 기본 설정을 그대로 유지하려면 이 단계를 건너 뜁니다.
 
-4. 클릭 **완료** 마법사를 닫고 개발 환경에서 새 프로젝트를 엽니다.
+1. 클릭 **완료** 마법사를 닫고 개발 환경에서 새 프로젝트를 엽니다.
 
 프로젝트가 만들어진 후에 만들어진 파일을 볼 수 있습니다 **솔루션 탐색기**합니다. 마법사에서 프로젝트용으로 만드는 파일에 대한 자세한 내용은 프로젝트 생성 파일인 ReadMe.txt를 참조하세요. 파일 형식에 대 한 자세한 내용은 참조 하세요. [Visual c + + 프로젝트용으로 만들어지는 파일 형식](../../ide/file-types-created-for-visual-cpp-projects.md)합니다. 새 ATL 프로젝트 및 변경 하는 방법에 대 한 구성에 대 한 자세한 내용은 참조 하세요. [기본 ATL 프로젝트 구성](../../atl/reference/default-atl-project-configurations.md)합니다.
 
@@ -49,4 +49,3 @@ ATL 프로젝트를 만드는 가장 쉬운 방법은의 Win32 프로젝트 폴�
 
 [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [속성 페이지](../../ide/property-pages-visual-cpp.md)   
-

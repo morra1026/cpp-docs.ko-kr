@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e95ad940aac14892ac14e8d56ba64f49d0bbf7c0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 66cbf25324b71c3fd28bdd344c7a217348cdb5d9
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423834"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861618"
 ---
 # <a name="12-definition-of-terms"></a>1.2 용어 정의
 
@@ -43,7 +43,7 @@ ms.locfileid: "46423834"
 
    문 내에 포함 된 어휘를 *구조화 된 블록*합니다.
 
--  마스터 스레드
+- 마스터 스레드
 
    팀을 만드는 스레드는 때를 *병렬 영역* 를 입력 합니다.
 
@@ -75,7 +75,7 @@ ms.locfileid: "46423834"
 
    구조화 된 블록에는 단일 항목 및 단일 종료 된 문 (단일 또는 복합)입니다. 문이 없는 경우 구조화 된 블록 또는 해당 문 외부로 점프 되 (에 대 한 호출을 포함 하 여 **longjmp**(3c) 또는 사용 **throw**에 대 한 호출이 **종료** 허용 됩니다). 열 때 항상 실행 시작 하는 경우 복합 문은 구조화 된 블록 **{0}** 항상 닫는 끝나는 **}** 합니다. 식, 선택 문, 반복 문 또는 **시도** 블록은 해당 복합 문의로 묶어서 얻은 경우 구조화 된 블록 **{0}** 고 **}** 구조화 된 블록을 것입니다. 점프 문, labeled 문 또는 선언문 구조화 된 블록이 아닙니다.
 
--  팀
+- 팀
 
    하나 이상의 스레드가 실행 구문의 협력 합니다.
 
