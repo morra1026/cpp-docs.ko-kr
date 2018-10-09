@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e318687dfa3cc8e841643e5caf6fe1fbcc00d051
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 953473102a42792dc3ae3afa3b1a8caf507e5648
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080768"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861501"
 ---
 # <a name="precedence-and-order-of-evaluation"></a>우선 순위 및 식 평가 순서
 
@@ -53,7 +53,7 @@ C 연산자의 우선 순위와 결합성은 식의 피연산자 그룹화 및 �
 
 1. 연산자는 내림차순 우선 순위로 나열됩니다. 여러 연산자가 같은 줄 또는 그룹에 표시된 경우, 해당 연산자는 우선 순위가 같습니다.
 
-2. 모든 단순 및 복합 할당 연산자의 우선 순위는 같습니다.
+1. 모든 단순 및 복합 할당 연산자의 우선 순위는 같습니다.
 
 식에 우선 순위가 같은 여러 연산자가 포함될 수 있습니다. 여러 연산자가 하나의 식에 같은 수준으로 표시된 경우, 오른쪽에서 왼쪽 또는 왼쪽에서 오른쪽으로 연산자의 연관성에 따라 계산이 진행됩니다. 계산의 방향은 같은 수준에 있는 곱하기(<strong>\*</strong>), 더하기(**+**) 또는 이진 비트(**&**, **&#124;**, 또는 **^**) 연산자가 둘 이상 포함된 식의 결과에 영향을 주지 않습니다. 연산 순서는 언어에 따라 정의되지 않습니다. 컴파일러는 일관된 결과를 보장할 수 있는 경우 어떠한 순서로든 이러한 식을 자유롭게 계산합니다.
 

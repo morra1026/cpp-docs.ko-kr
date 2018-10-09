@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f0090195506e26cab165e3ddadca0342c0b35b6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a6ad4b23e6caef15b5dabaaa3102d72e3ff84fbc
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46084057"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860591"
 ---
 # <a name="for-statement-c"></a>for 문 (C)
 
@@ -34,7 +34,7 @@ ms.locfileid: "46084057"
 
 1. *init-expression*이 계산됩니다(있는 경우). 이로 인해 루프에 대한 초기화가 지정됩니다. *init-expression*의 형식에 대한 제한은 없습니다.
 
-2. *cond-expression*이 계산됩니다(있는 경우). 이 식에는 산술 또는 포인터 형식이 있어야 합니다. 이 식은 각 반복 전에 계산됩니다. 세 가지 결과가 나타날 수 있습니다.
+1. *cond-expression*이 계산됩니다(있는 경우). 이 식에는 산술 또는 포인터 형식이 있어야 합니다. 이 식은 각 반복 전에 계산됩니다. 세 가지 결과가 나타날 수 있습니다.
 
    - *cond-expression*이 **true**(0이 아님)이고 *statement*가 실행되면 *loop-expression*이 계산됩니다(있는 경우). *loop-expression*은 각 반복 후 계산됩니다. 해당 형식에 대한 제한은 없습니다. 의도하지 않은 결과가 순서대로 실행됩니다. 그런 다음 *cond-expression*이 계산되며 프로세스가 다시 시작됩니다.
 
