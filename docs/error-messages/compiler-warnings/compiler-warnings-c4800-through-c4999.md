@@ -105,12 +105,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0f8e2c5e3feea1c7607b8303bc42cef5b2f21e0
-ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
+ms.openlocfilehash: deee159c9da6fce9001d010a1a6b1db9b3b1d666
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601615"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861423"
 ---
 # <a name="compiler-warnings-c4800-through-c5999"></a>컴파일러 경고 C4800 ~ C5999
 
@@ -153,6 +153,7 @@ ms.locfileid: "45601615"
 |컴파일러 경고 (수준 4) C4842|다중 상속을 사용 하는 형식에 적용 된 'offsetof' 결과 컴파일러 릴리스 간에 일관 되도록 보장 되지 않습니다.|
 |컴파일러 경고 C4843|'*type1*': 배열 또는 함수 형식에 대 한 참조의 예외 처리기를 연결할 수 없는 경우, 사용 하 여 '*type2*' 대신|
 |컴파일러 경고 C4844|' 모듈을 내보내는 *module_name*;' 모듈 인터페이스를 선언 하기 위한 기본 구문은 이제|
+|[컴파일러 경고 (수준 4) C4866](c4866.md)| 컴파일러는 호출에 대해 왼쪽에서 오른쪽 계산 순서를 적용할 수 없습니다. *operator_name*|
 |[컴파일러 경고 (Error) C4867](compiler-warning-c4867.md)|'*함수*': 함수 호출에 인수 목록이 없습니다; 사용 하 여 '*호출*' 멤버에 대 한 포인터를 만들려면|
 |[컴파일러 경고 (수준 4) C4868](compiler-warning-c4868.md)|'_파일_(*line_number*)' 컴파일러는 중괄호로 묶인된 초기화 목록에서 왼쪽에서 오른쪽 계산 순서를 적용할 수 없습니다.|
 |컴파일러 경고 (수준 2) C4872|concurrency:: parallel_for_each에 대해 호출 그래프를 컴파일하는 경우를 검색 하는 0으로 부동 소수점 나누기: '*위치*'|

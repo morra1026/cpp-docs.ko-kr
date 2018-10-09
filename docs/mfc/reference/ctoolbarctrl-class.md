@@ -192,12 +192,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 486e7ba1b91f1e5b8a7f99f27b89183ed32608a1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c5a71e6f358a682adad2d12f7b567dc0bad3d0f3
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409651"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861891"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl 클래스
 
@@ -440,11 +440,11 @@ typedef struct _TBBUTTON {
 
    이 단추에 대 한 이미지가 없는 경우-1 단추 이미지의 0부터 시작 인덱스입니다.
 
--  `idCommand`
+- `idCommand`
 
    단추와 연결 된 명령 식별자입니다. 단추를 선택할 때이 식별자에 WM_COMMAND 메시지에 전송 됩니다. 경우는 `fsStyle` 멤버 TBSTYLE_SEP 값을 가진이 멤버는 0 이어야 합니다.
 
--  `fsState`
+- `fsState`
 
    단추 상태 플래그입니다. 아래에 나열 된 값의 조합 수 있습니다.
 

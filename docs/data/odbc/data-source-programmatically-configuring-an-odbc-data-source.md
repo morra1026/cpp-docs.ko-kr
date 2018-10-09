@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 36f8233d7d3683a885fc0f38468ad5a7b9b59c57
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6c9b9cb66e64f85ad8800faf11011e351a3f3539
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46030770"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861358"
 ---
 # <a name="data-source-programmatically-configuring-an-odbc-data-source"></a>데이터 소스: 프로그래밍 방식으로 ODBC 데이터 소스 구성
 
@@ -85,7 +85,7 @@ ODBC 드라이버 관리자나 특정 ODBC 드라이버를 만들고 새 데이�
 *lpszAttributes*<br/>
 형식에서 특성 목록을 "keyname = value"입니다. 이러한 문자열이 목록의 끝에 두 개의 null 종결자를 사용 하 여 null 종결자로 구분 됩니다. 이러한 특성은 기본적으로 기본 드라이버 관련 항목을 새 데이터 원본에 대 한 레지스트리로 이동 합니다. 이 함수는 "DSN (데이터 원본 이름"), 새 데이터 원본의 이름을 지정 하는 ODBC API 참조에 언급 하지 않은 한 중요 한 키입니다. 항목의 나머지 부분을 새 데이터 원본에 대 한 드라이버와 관련이 있습니다. 종종 드라이버를 새 값에 대 한 대화 상자를 사용 하 여 사용자에 게 수 때문에 모든 항목을 제공 하는 데 필요한 아닙니다. (설정 *hwndParent* 로 null입니다.) 사용자에 게 묻지 않습니다 있도록 기본값을 명시적으로 지정할 수도 있습니다.  
   
-###### <a name="to-determine-the-description-of-a-driver-for-the-lpszdriver-parameter-using-odbc-administrator"></a>ODBC 관리자를 사용 하 여 lpszDriver 매개 변수에 대 한 드라이버 설명을 확인 하려면  
+#### <a name="to-determine-the-description-of-a-driver-for-the-lpszdriver-parameter-using-odbc-administrator"></a>ODBC 관리자를 사용 하 여 lpszDriver 매개 변수에 대 한 드라이버 설명을 확인 하려면  
   
 1. ODBC 관리자를 실행 합니다.  
   
@@ -97,23 +97,23 @@ ODBC 드라이버 관리자나 특정 ODBC 드라이버를 만들고 새 데이�
   
 키와 값을 찾을 수 합니다 *lpszAttributes* 매개 변수 (아마도 하나 ODBC 관리자에 의해 구성 된)를 이미 구성 된 데이터 원본에 대 한 Odbc.ini 파일을 검사 하는 것입니다.  
   
-###### <a name="to-find-keynames-and-values-for-the-lpszattributes-parameter"></a>LpszAttributes 매개 변수에 대 한 키 및 값을 찾으려면  
+#### <a name="to-find-keynames-and-values-for-the-lpszattributes-parameter"></a>LpszAttributes 매개 변수에 대 한 키 및 값을 찾으려면  
   
 1. Windows 레지스트리 편집기를 실행 하거나, 16 비트인 경우 Odbc.ini 파일을 엽니다.  
   
 1. 다음 중 하나를 사용 하 여 ODBC 데이터 원본 정보를 찾으려면  
   
-    -   32 비트에 대 한 키를 찾을 **HKEY_CURRENT_USER\Software\ODBC\ODBC 합니다. 데이터 원본 INI\ODBC** 왼쪽된 창에서.  
+   - 32 비트에 대 한 키를 찾을 **HKEY_CURRENT_USER\Software\ODBC\ODBC 합니다. 데이터 원본 INI\ODBC** 왼쪽된 창에서.  
   
-         오른쪽 창에는 형식의 항목 나열: "pub: REG_SZ:*<data source name>*", 여기서 *<data source name>* 하려는 드라이버에 대해 원하는 설정을 사용 하 여 이미 구성 된 데이터 소스 사용 합니다. 예를 들어, SQL Server에 데이터 원본을 선택 합니다. 문자열 다음의 항목 "pub:" 순서, 키 이름 및 값에서 사용 하는 사용자 *lpszAttributes* 매개 변수입니다.  
+      오른쪽 창에는 형식의 항목 나열: "pub: REG_SZ:*<data source name>*", 여기서 *<data source name>* 하려는 드라이버에 대해 원하는 설정을 사용 하 여 이미 구성 된 데이터 소스 사용 합니다. 예를 들어, SQL Server에 데이터 원본을 선택 합니다. 문자열 다음의 항목 "pub:" 순서, 키 이름 및 값에서 사용 하는 사용자 *lpszAttributes* 매개 변수입니다.  
   
-    -   16 비트에 대 한 섹션을 표시 하는 Odbc.ini 파일에서 찾을 [*\<데이터 원본 이름 >*].  
+   - 16 비트에 대 한 섹션을 표시 하는 Odbc.ini 파일에서 찾을 [*\<데이터 원본 이름 >*].  
   
-         형식입니다.이 줄을 다음 줄은 "keyname = value"입니다. 정확 하 게 항목에서 사용 하 여 *lpszAttributes* 매개 변수입니다.  
+      형식입니다.이 줄을 다음 줄은 "keyname = value"입니다. 정확 하 게 항목에서 사용 하 여 *lpszAttributes* 매개 변수입니다.  
   
 사용 하려는 특정 드라이버에 대 한 설명서를 참조할 수도 있습니다. ODBC 관리자를 실행 하 여 액세스할 수 있는 드라이버에 대 한 온라인 도움말에서 유용한 정보를 찾을 수 있습니다. 일반적으로 이러한 도움말 파일 Windows NT, Windows 3.1의 경우, 또는 Windows 95 WINDOWS\SYSTEM 디렉터리에 배치 합니다.  
   
-###### <a name="to-obtain-online-help-for-your-odbc-driver"></a>ODBC 드라이버에 대 한 온라인 도움말을 보려면  
+#### <a name="to-obtain-online-help-for-your-odbc-driver"></a>ODBC 드라이버에 대 한 온라인 도움말을 보려면  
   
 1. ODBC 관리자를 실행 합니다.  
   

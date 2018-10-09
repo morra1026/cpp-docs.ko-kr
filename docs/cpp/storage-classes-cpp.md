@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b57e2c4e6631683afdabec983f155941b8cd2da
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 29e5b2783dda3c66736a7e668186d0645cdd4b84
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46107471"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861319"
 ---
 # <a name="storage-classes-c"></a>저장소 클래스(C++)
 
@@ -220,13 +220,13 @@ void DoSomething()
 
 - Dll에서 스레드 로컬 변수를 동적으로 초기화 된 모든 호출 스레드에서 올바르게 초기화 되지 않을 수 있습니다. 자세한 내용은 [스레드](thread.md)를 참조하세요.
 
--  `thread_local` 지정자를 사용 하 여 결합할 수 있습니다 **정적** 하거나 **extern**합니다.
+- `thread_local` 지정자를 사용 하 여 결합할 수 있습니다 **정적** 하거나 **extern**합니다.
 
--  적용할 수 있습니다 `thread_local` 데이터 선언 및 정의에 `thread_local` 함수 선언 또는 정의에 사용할 수 없습니다.
+- 적용할 수 있습니다 `thread_local` 데이터 선언 및 정의에 `thread_local` 함수 선언 또는 정의에 사용할 수 없습니다.
 
--  정적 저장 기간이 있는 데이터 항목에만 `thread_local`을 지정할 수 있습니다. 여기에 전역 데이터 개체 (둘 다 **정적** 하 고 **extern**), 지역 정적 개체 및 클래스의 정적 데이터 멤버입니다. 모든 로컬 변수 선언 `thread_local` 없는 다른 저장소 클래스를 제공 하는 경우 암시적으로 정적 블록 범위에서 다시 말해 `thread_local` 동일 `thread_local static`합니다.
+- 정적 저장 기간이 있는 데이터 항목에만 `thread_local`을 지정할 수 있습니다. 여기에 전역 데이터 개체 (둘 다 **정적** 하 고 **extern**), 지역 정적 개체 및 클래스의 정적 데이터 멤버입니다. 모든 로컬 변수 선언 `thread_local` 없는 다른 저장소 클래스를 제공 하는 경우 암시적으로 정적 블록 범위에서 다시 말해 `thread_local` 동일 `thread_local static`합니다.
 
--  스레드 로컬 개체의 선언과 정의가 같은 파일에서 발생하는지, 아니면 별도의 파일에서 발생하는지와 관계없이 해당 선언과 정의 둘 다에 대해 `thread_local`을 지정해야 합니다.
+- 스레드 로컬 개체의 선언과 정의가 같은 파일에서 발생하는지, 아니면 별도의 파일에서 발생하는지와 관계없이 해당 선언과 정의 둘 다에 대해 `thread_local`을 지정해야 합니다.
 
 Windows에 온 `thread_local` 기능적으로 [__declspec (thread)](../cpp/thread.md) 점을 제외 하 고 **__declspec (thread)** 형식 정의에 적용 될 수 있으며 C 코드에서 유효 합니다. 가능한 경우 항상 C++ 표준의 일부로 포팅 가능성이 큰 `thread_local`을 사용합니다.
 
