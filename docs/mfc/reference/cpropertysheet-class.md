@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ec12275291321751c539d095c60fa9dabffa2b7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 50b1816320521f8ad20ee64fc4a051f938e902ec
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445180"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890779"
 ---
 # <a name="cpropertysheet-class"></a>CPropertySheet 클래스
 
@@ -155,7 +155,7 @@ class CPropertySheet : public CWnd
 
 마법사 형식의 대화 상자를 만들려면 호출 하지만, 표준 속성 시트 만들기를 수행 하는 동일한 단계를 수행 [SetWizardMode](#setwizardmode) 를 호출 하기 전에 [DoModal](#domodal)합니다. 마법사 단추를 사용 하도록 설정 하려면 호출 [SetWizardButtons](#setwizardbuttons), 플래그를 사용 하 여 해당 함수 및 모양을 사용자 지정할 수 있습니다. 사용 하도록 설정 합니다 **완료** 단추를 호출 [SetFinishText](#setfinishtext) 사용자가 마법사의 마지막 페이지에서 작업을 수행한 후 합니다.
 
-사용 하는 방법에 대 한 자세한 내용은 `CPropertySheet` 문서를 참조 하는 개체를 [속성 시트 및 속성 페이지](../../mfc/property-sheets-and-property-pages-in-mfc.md)합니다. 참고: 기술 자료 문서 Q146916: 방법: 모덜리스 CPropertySheet 표준 단추를 사용 하 여 만들고 Q300606 문서: 방법: 크기 조정 가능한 MFC 속성 시트를 디자인 합니다.
+사용 하는 방법에 대 한 자세한 내용은 `CPropertySheet` 문서를 참조 하는 개체를 [속성 시트 및 속성 페이지](../../mfc/property-sheets-and-property-pages-in-mfc.md)합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 

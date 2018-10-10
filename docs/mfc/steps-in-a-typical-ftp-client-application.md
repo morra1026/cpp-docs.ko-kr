@@ -18,24 +18,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d87682d9110aa37fbb806f7d1dcd70009cf2ad63
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4ac1eef12a3f782f3ad9ba8a9bb526989876251e
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46406960"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890220"
 ---
 # <a name="steps-in-a-typical-ftp-client-application"></a>일반적인 FTP 클라이언트 응용 프로그램의 단계
 
 일반적인 FTP 클라이언트 응용 프로그램을 만듭니다는 [CInternetSession](../mfc/reference/cinternetsession-class.md) 와 [CFtpConnection](../mfc/reference/cftpconnection-class.md) 개체입니다. 이러한 MFC WinInet 클래스 실제로 프록시 형식 설정을 제어 하 고 하지 않습니다 참고 IIS는 다음 작업을 수행 하지 않습니다.
-
-또한 다음 기술 자료 문서를 참조 하세요.
-
-- 방법: WinInet API를 사용 하 여 CERN 기반 프록시를 사용 하 여 FTP (문서 ID: Q166961)
-
-- 샘플: FTP CERN 기반 암호를 사용 하 여 보호 된 프록시 (문서 ID: Q216214)
-
-- 인터넷 서비스 관리자 설치 된 프록시 서비스를 표시 하지 못함 (문서 ID: Q216802)
 
 다음 표에서 일반적인 FTP 클라이언트 응용 프로그램에서 수행할 수 있는 단계를 보여 줍니다.
 

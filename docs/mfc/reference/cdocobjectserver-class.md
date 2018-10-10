@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 067f31d837b4b83a477d6b919f2d5bbd5efa00f3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 552252c8826e167b4aaa21aa41e489bbc8179ec3
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381077"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890377"
 ---
 # <a name="cdocobjectserver-class"></a>CDocObjectServer 클래스
 
@@ -74,10 +74,6 @@ DocObject 서버 문서에 포함 될 수 있습니다 [CDocObjectServerItem](..
 DocObject 서버를 사용자 지정 하려면에서 사용자 고유의 클래스를 파생 `CDocObjectServer` 해당 보기 설정 함수를 재정의 하 고 [OnActivateView](#onactivateview)하십시오 [OnApplyViewState](#onapplyviewstate), 및 [OnSaveViewState ](#onsaveviewstate). 프레임 워크 호출에 대 한 응답에서 클래스의 새 인스턴스를 제공 해야 합니다.
 
 참조에 대 한 자세한 내용은 DocObjects [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md) 및 [COleCmdUI](../../mfc/reference/colecmdui-class.md) 에 *MFC 참조*합니다.
-
-또한 다음 기술 자료 문서를 참조 하세요.
-
-- Q247382: PRB: ActiveX 문서 서버에서 컨트롤에 대 한 도구 설명 ActiveX 문서 컨테이너에 의해 숨겨집니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 

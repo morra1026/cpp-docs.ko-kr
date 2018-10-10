@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d23a9be38ebb870adf098b34fac79afff6345cd8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 660b2fc2f6ece6f60ff7bd1868b3a65bc8f045c1
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46394746"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890038"
 ---
 # <a name="mfc-com"></a>MFC COM
 
@@ -57,8 +57,6 @@ ms.locfileid: "46394746"
 - 이 섹션의 예를 들어, MFC를 사용 하 여 COM 구성 요소를 작성 하는 방법에도 정보를 제공 [연결점](../mfc/connection-points.md)합니다.
 
 OLE 액티브 기술 이라고 이제와 여전히 이라고의 내용은 항목을 참조 [OLE](../mfc/ole-in-mfc.md)합니다.
-
-참고: 기술 자료 문서 Q248019: 방법: 방지 서버 사용 중 대화 상자에서 표시 하는 동안는 시간이 오래 걸리는 COM 작업 합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 

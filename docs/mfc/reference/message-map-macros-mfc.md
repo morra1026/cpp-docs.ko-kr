@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa5cf1be80b22d3577347dbf7de9ee262125aa86
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: c2d5a0f2f5f7515e36997b876373dcf25bb6fc03
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821363"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890636"
 ---
 # <a name="message-map-macros-mfc"></a>메시지 맵 매크로(MFC)
 
@@ -352,7 +352,7 @@ ON_MESSAGE( message, memberFxn )
 메시지 처리기 함수에 매핑해야 하는 모든 사용자 정의 메시지에 대 한 메시지 맵에 ON_MESSAGE 매크로 문 하나만 있어야 합니다.
 
 > [!NOTE]
->  사용자 정의 메시지 외에도 ON_MESSAGE 덜 일반적인 Windows 메시지를 처리합니다. 자세한 내용은 기술 자료 문서를 참조 하세요 [99848: 정보: 맵 덜 일반적인 메시지를 사용 하 여 ON_MESSAGE() 매크로](http://go.microsoft.com/fwlink/p/?linkid=192022)합니다.
+>  사용자 정의 메시지 외에도 ON_MESSAGE 덜 일반적인 Windows 메시지를 처리합니다. 자세한 내용은 [메시지 맵](../../mfc/tn006-message-maps.md)합니다.
 
 자세한 내용 및 예제를 참조 하세요 [메시지를 처리 하 고 항목 매핑](../../mfc/message-handling-and-mapping.md) 고 [사용자 정의 처리기](user-defined-handlers.md)
 

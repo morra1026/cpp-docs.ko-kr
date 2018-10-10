@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bcd7e0a1b2786a92d7a0e64b85417ddb82c82871
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7fd8738c0dec9771a94ba94aefdcaf2af87fdb09
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437796"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890546"
 ---
 # <a name="toolbars"></a>도구 모음
 
@@ -38,10 +38,7 @@ ms.locfileid: "46437796"
 
 - [샘플](../mfc/toolbar-sample-list.md)
 
-MFC 도구 모음에 대 한 자세한 내용은 문서 참조 Q232017, "방법:: 추가 텍스트를 도구 모음 단추"에서 Microsoft 기술 자료에서 http://support.microsoft.com합니다.
-
 ## <a name="see-also"></a>참고 항목
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)<br/>
 [도구 모음 편집기](../windows/toolbar-editor.md)
-
