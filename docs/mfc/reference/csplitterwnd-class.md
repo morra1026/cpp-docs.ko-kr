@@ -82,12 +82,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e56ab939cd6b3cfcb0601eaec1e450835069705f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 549669841a4b10468679795ca045f5626f5e9101
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389557"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890675"
 ---
 # <a name="csplitterwnd-class"></a>CSplitterWnd 클래스
 
@@ -181,11 +181,7 @@ A `CSplitterWnd` 개체를 부모에 일반적으로 포함 되어 [CFrameWnd](.
 
 분할기 창을 만든 경우 이러한 특별 한 스크롤 막대를 만듭니다. 예를 들어, 한 `CSplitterWnd` 행이 하나씩, 두 개의 열을가지고 있으며 WS_VSCROLL 스타일에는 두 창에서 공유 되는 세로 스크롤 막대가 표시 됩니다. 사용자가 스크롤 막대를 움직이면 WM_VSCROLL 메시지 창 모두에 전송 됩니다. 창 스크롤 막대 위치를 설정 하는 경우 공유 스크롤 막대 설정 됩니다.
 
-분할 창에 자세한 내용은 다음을 참조 하세요.
-
-- [기술 참고 29](../../mfc/tn029-splitter-windows.md)
-
-- 기술 자료 문서 Q262024: 방법: CSplitterWnd의 자식으로 사용 하 여 CPropertySheet
+참조에 대 한 자세한 내용은 분할 창 [기술 참고 29](../../mfc/tn029-splitter-windows.md)합니다.
 
 동적 분할 창을 만드는 방법에 대 한 자세한 내용은 다음을 참조 하세요.
 
@@ -898,7 +894,7 @@ virtual void SetActivePane(
 하는 경우 *pWnd* NULL 이면 활성화 됩니다는 창에서 열을 지정 합니다.
 
 *pWnd*<br/>
-에 대 한 포인터를 `CWnd` 개체입니다. 창에서 지정한 값이 null 이면 *행* 하 고 *col* 활성 설정 됩니다. NULL이 아닌 경우에 활성 설정 되는 창을 지정 합니다.
+`CWnd` 개체에 대한 포인터입니다. 창에서 지정한 값이 null 이면 *행* 하 고 *col* 활성 설정 됩니다. NULL이 아닌 경우에 활성 설정 되는 창을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 

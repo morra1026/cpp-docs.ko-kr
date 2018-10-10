@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01610f888d8afe275b0e52b86e4f4c678f896c9f
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: ceb004cba243d6e2e9c44aadcaa40670ef7a0bbb
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48820477"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890259"
 ---
 # <a name="project-build-error-prj0016"></a>프로젝트 빌드 오류 PRJ0016
 
@@ -37,8 +37,4 @@ ms.locfileid: "48820477"
 
 이 오류는 정책 설정에 포함 되지 않습니다 VCSpawn.exe HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\RestrictRun 레지스트리 키에서이 사용자 계정에 대해 허용 된 창 프로그램으로 나타납니다.
 
-자세한 내용은 다음을 참조 하세요.
-
-- 사용할 수 있는 기술 자료 문서, 324153 [ http://support.microsoft.com/default.aspx?scid=kb324153;](http://support.microsoft.com/default.aspx?scid=kb;324153)합니다.
-
-- [시스템 정책 설정이 준수](https://msdn.microsoft.com/library/aa372139)를 "허용 된 Windows 응용 프로그램 실행" 섹션.
+자세한 내용은 참조 하세요. [시스템 정책을 설정 준수](https://msdn.microsoft.com/library/aa372139)를 "허용 된 Windows 응용 프로그램 실행" 섹션에서.

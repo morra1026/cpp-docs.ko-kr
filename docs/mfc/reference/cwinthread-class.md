@@ -60,12 +60,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f2c01336094077cc1f451f2e7b479ca4acf9fb77
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 412d9150836511c88b85326d2ce59181a0566c57
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441358"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890599"
 ---
 # <a name="cwinthread-class"></a>CWinThread 클래스
 
@@ -321,7 +321,7 @@ BOOL m_bAutoDelete;
 
 `m_bAutoDelete` 데이터 멤버는 BOOL 형식의 공용 변수입니다.
 
-`m_bAutoDelete`의 값은 해당 스레드 핸들이 닫히는 방식에 영향을 주지 않습니다. 스레드 핸들은 항상 `CWinThread` 개체가 소멸될 때 닫힙니다.
+`m_bAutoDelete`의 값은 해당 스레드 핸들이 닫히는 방식에 영향을 주지 않습니다. 스레드 핸들은 항상 `CWinThread` 개체가 제거될 때 닫힙니다.
 
 ##  <a name="m_hthread"></a>  CWinThread::m_hThread
 
@@ -455,7 +455,7 @@ BOOL PostThreadMessage(
 게시 된 메시지는 메시지 맵 매크로 ON_THREAD_MESSAGE에 의해 적절 한 메시지 처리기에 매핑됩니다.
 
 > [!NOTE]
->  Windows를 호출할 때 [PostThreadMessage](https://msdn.microsoft.com/library/windows/desktop/ms644946) 함수 MFC 응용 프로그램에서 MFC 메시지 처리기가 호출 되지 않습니다. 자세한 내용은 기술 자료 문서, "PRB:: MFC 메시지 처리기 하지 호출 된 PostThreadMessage()" (Q142415)을 참조 하세요.
+> 호출 하는 경우 [PostThreadMessage](https://msdn.microsoft.com/library/windows/desktop/ms644946), 메시지는 스레드의 메시지 큐에 배치 됩니다. 그러나 이러한 방식으로 게시 되는 메시지 창에 연결 되어 있지 않으므로 MFC는 디스패치하지 해당 메시지나 명령 처리기에. 이러한 메시지를 처리 하기 위해 재정의 `PreTranslateMessage()` CWinApp 파생의 함수 클래스를 수동으로 메시지를 처리 합니다.
 
 ##  <a name="pretranslatemessage"></a>  CWinThread::PreTranslateMessage
 

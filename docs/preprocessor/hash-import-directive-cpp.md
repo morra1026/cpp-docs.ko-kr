@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5bb62a61762c2c4e042777376f4d2b9f3ffc747e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 60397fea85e3fd121469ae4568dac18fa6b9ddb1
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429749"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890324"
 ---
 # <a name="import-directive-c"></a>#import 지시문 (C++)
 **C + + 전용**  
@@ -185,11 +185,9 @@ using namespace MyLib;
 실제 파일 이름에는 **#import** 주석은 레지스트리에 저장 된 대로 상호 참조 된 형식 라이브러리의 전체 경로. 형식 정의가 없어 오류가 발생하는 경우 .TLH 헤드의 주석을 확인하여 가장 먼저 가져와야 할 종속 형식 라이브러리를 확인하십시오. .TLI 파일을 컴파일하는 동안 발생 가능성이 높은 오류는 구문 오류(예: C2143, C2146, C2321), C2501(decl-specifiers 누락) 또는 C2433(데이터 선언에 '인라인'이 허용되지 않음)입니다.  
   
 종속성의 주석 제공 되지 않는 한 시스템 헤더에 의해 고 제공 하는 다음 결정 해야 합니다는 **#import** 하기 전에 일부 지점에는 **#import** 종속의 지시문 오류를 해결 하려면 형식 라이브러리입니다.  
-  
-자세한 내용은 기술 자료 문서인 "#import Wrapper Methods May Cause Access Violation"(Q242527) 또는 "Compiler Errors When You Use #import with XML"(Q269194)를 참조하십시오. MSDN 라이브러리 미디어 또는 기술 자료 문서를 찾을 수 있습니다 [Microsoft 지원](https://support.microsoft.com/)합니다.  
-  
-##  <a name="_predir_the_23import_directive_import_attributes"></a> #import 특성  
- 
+
+##  <a name="_predir_the_23import_directive_import_attributes"></a> #import 특성
+
 **#import** 하나 이상의 특성을 선택적으로 포함할 수 있습니다. 이러한 특성은 컴파일러가 형식 라이브러리 헤더의 콘텐츠를 수정하도록 지시합니다. 백슬래시 (**\\**) 기호는 단일에서 줄이 추가로 포함 데 사용할 수 있습니다 **#import** 문입니다. 예를 들어:  
   
 ```  

@@ -16,20 +16,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c6352c87748bafa635d8d6dae29bf37b78ac6c1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5c729ecbdea13c36cf5df71efa16d12853fc4433
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46041989"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890496"
 ---
 # <a name="compiler-error-c2143"></a>컴파일러 오류 C2143
 
 구문 오류: 'token2' 전에 ' token1' 누락
 
 컴파일러 특정 토큰 (즉, 공백 문자 이외의 언어 요소)를 예상 하 고 다른 토큰이 발견 합니다.
-
-이 오류에 대 한 함수 try 블록을 사용 하는 경우에 발생 하는 경우에 대해서 [기술 자료 문서 241706](http://support.microsoft.com/kb/241706)합니다.
 
 확인 합니다 [c + + 언어 참조](../../cpp/cpp-language-reference.md) 코드 구문이 잘못 되지 않는 확인 합니다. 컴파일러 문제를 발생 시키는 줄을 발견 한 후이 오류를 보고, 때문에 여러 줄 코드의 오류를 확인 합니다.
 

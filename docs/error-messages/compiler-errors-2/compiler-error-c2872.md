@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 038c3475a6041dfb719bb2270a87ac2898f8b958
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e4bdc67e13db11949371e2f9e3d8a205b146d701
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46036763"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890118"
 ---
 # <a name="compiler-error-c2872"></a>컴파일러 오류 C2872
 
@@ -31,7 +31,11 @@ ms.locfileid: "46036763"
 
 C2872 헤더 파일을 포함 하는 경우 발생할 수 있습니다는 [지시문을 사용 하 여](../../cpp/namespaces-cpp.md#using_directives), 및 후속 헤더 파일이 포함 되어에 지정 된 네임 스페이스에 있는 형식을 포함 하는 `using` 지시문입니다. 지정 된 `using` 헤더 파일 사용 하 여 지정 된 모든 해야만 지시문 `#include`합니다.
 
-C2872에 대 한 자세한 내용은 기술 자료 문서를 참조 하세요 [PRB: 컴파일러 오류 때 사용할 #import Visual c + +.NET에서의 XML을 사용 하 여](http://support.microsoft.com/kb/316317) 및 ["오류 C2872: 'Platform': 모호한 기호" 사용 하는 경우 오류 메시지는 Visual Studio 2013에서 Windows::Foundation::Metadata 네임 스페이스](https://support.microsoft.com/kb/2890859)합니다.
+C2872 Visual Studio 2013 간의 충돌로 인해 발생할 수 있습니다 합니다는 `Windows::Foundation::Metadata::Platform` 열거형 형식 및 C + + CX 정의한 `Platform` 네임 스페이스입니다. 이 문제를 해결 하려면 다음이 단계를 수행 합니다.
+
+- 프로젝트 파일에서 "네임 스페이스 Windows::Foundation::Metadata using" 절을 제거 합니다.
+
+- 이 네임 스페이스에 포함 된 모든 형식에 대 한 정규화 된 이름을 지정 합니다.
 
 ## <a name="example"></a>예제
 

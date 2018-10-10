@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 888c753920c4c0a858de8ab5bc72a07ff0696d1e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4dcbf18656e04e0732dbf377dae960ab0655be82
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429307"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890441"
 ---
 # <a name="cmdiframewnd-class"></a>CMDIFrameWnd 클래스
 
@@ -220,8 +220,6 @@ CMDIChildWnd* CreateNewChild(
 ### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCWindowing#15](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_3.cpp)]
-
-이 예제는 Q201045, 기술 자료 문서에서 발췌 한 "방법: 여러 창 형식을 비-문서/뷰 MDI 응용 프로그램에 추가 합니다." 기술 자료 문서에서 제공 됩니다 [ http://support.microsoft.com ](http://support.microsoft.com/)합니다.
 
 ##  <a name="getwindowmenupopup"></a>  CMDIFrameWnd::GetWindowMenuPopup
 

@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd69813251a96051f844051f27155e1d4ed404d6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 27121334345556a744a6fc838c238352ccc36621
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393425"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890533"
 ---
 # <a name="ccontrolbar-class"></a>CControlBar Class
 
@@ -118,8 +118,6 @@ class CControlBar : public CWnd
 - [컨트롤 막대](../../mfc/control-bars.md)
 
 - [Technical Note 31: 컨트롤 막대](../../mfc/tn031-control-bars.md)합니다.
-
-- 기술 자료 문서 Q242577: PRB: 업데이트 명령 UI 처리기 수행 하지 작업 대화 상자에 연결 된 메뉴
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -549,7 +547,7 @@ void SetInPlaceOwner(CWnd* pWnd);
 ### <a name="parameters"></a>매개 변수
 
 *pWnd*<br/>
-에 대 한 포인터를 `CWnd` 개체입니다.
+`CWnd` 개체에 대한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 

@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47d1a5308b379d8bd1923bb9ad1ad805cb6bded3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6004c3acd052d1424004017941a5e4aa110c602c
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46432823"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890338"
 ---
 # <a name="activex-controls-on-the-internet"></a>인터넷의 ActiveX 컨트롤
 
@@ -170,10 +170,6 @@ ActiveX 컨트롤 클래스에서이 메모리 매핑된 파일을 사용할 수
 예를 들어만 10 바이트를 사용할 수 있고 읽기 1k 파일에서 비동기적으로 호출 되는지, 읽기 차단 하지 않지만 현재 사용할 수 있는 10 바이트를 사용 하 여 반환 합니다.
 
 구현할 [비동기 모니커](../mfc/asynchronous-monikers-on-the-internet.md) 사용 하는 `CAsyncMonikerFile` 클래스입니다. 그러나 ActiveX 컨트롤을 사용할 수는 `CDataPathProperty` 클래스에서 파생 된 `CAsyncMonikerFile`, 비동기 컨트롤 속성을 구현할 수 있도록 합니다.
-
-ASYNDOWN 샘플 데이터를 읽는 타이머를 사용 하 여 비동기 루프를 설정 하는 방법을 보여 줍니다. ASYNDOWN "방법:: AsyncDown 방법을 보여 줍니다 비동기 데이터 다운로드" (Q177244) 기술 자료 문서에서 자세히 설명 되어 이며 Microsoft 다운로드 센터에서 다운로드할 수 있습니다. (Microsoft 다운로드 센터에서 파일을 다운로드 하는 방법에 대 한 자세한 내용은 "방법 가져오려면 Microsoft 지원 파일에서 온라인 서비스" (Q119591) Microsoft 기술 자료 문서 참조). 기술 자료 문서를 찾을 수 있습니다 [ http://support.microsoft.com/support ](http://support.microsoft.com/support)합니다.
-
-ASYNDOWN에 사용 되는 기본 기술 타이머를 설정 하는 것 **CDataPathProperty::OnDataAvailable** 에 데이터를 사용할 수 있는 시기를 나타냅니다. 타이머 메시지를 수신 되 면 응용 프로그램 데이터의 128 바이트 블록에서 읽고 편집 컨트롤을 채웁니다. 데이터를 사용할 수 없는 타이머 메시지를 처리 될 때 타이머 꺼져 있습니다. `OnDataAvailable` 더 많은 데이터는 나중에 도착 하면 타이머를 설정 합니다.
 
 ## <a name="displaying-a-control-on-a-web-page"></a>웹 페이지에 컨트롤 표시
 

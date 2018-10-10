@@ -344,12 +344,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 292121e95b20061e95e85b49c60d4758bd18a568
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 160d9857097c4cac1912d2ca44b0433905c238f5
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46435534"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890870"
 ---
 # <a name="colecontrol-class"></a>COleControl 클래스
 
@@ -957,7 +957,7 @@ virtual void DoPropExchange(CPropExchange* pPX);
 ### <a name="parameters"></a>매개 변수
 
 *pPX*<br/>
-에 대 한 포인터를 `CPropExchange` 개체입니다. 프레임 워크는 해당 방향을 포함 해 속성 교환의 컨텍스트를 설정 하는이 개체를 제공 합니다.
+`CPropExchange` 개체에 대한 포인터입니다. 프레임 워크는 해당 방향을 포함 해 속성 교환의 컨텍스트를 설정 하는이 개체를 제공 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1093,7 +1093,7 @@ BOOL ExchangeVersion(
 ### <a name="parameters"></a>매개 변수
 
 *pPX*<br/>
-에 대 한 포인터를 `CPropExchange` 개체입니다. 프레임 워크는 해당 방향을 포함 해 속성 교환의 컨텍스트를 설정 하는이 개체를 제공 합니다.
+`CPropExchange` 개체에 대한 포인터입니다. 프레임 워크는 해당 방향을 포함 해 속성 교환의 컨텍스트를 설정 하는이 개체를 제공 합니다.
 
 *dwVersionDefault*<br/>
 컨트롤의 현재 버전 번호입니다.
@@ -2158,7 +2158,7 @@ BOOL IsInvokeAllowed(DISPID dispid);
 
 ### <a name="remarks"></a>설명
 
-프레임 워크의 구현의 `IDispatch::Invoke` 호출 `IsInvokeAllowed` 경우 지정된 된 함수를 확인 하려면 (구분 `dispid`) 호출할 수 있습니다. OLE 컨트롤에 대 한 기본 동작은 자동화 메서드 컨트롤이 초기화 되었으면 하는 경우에 호출할 수 있도록 그러나 `IsInvokeAllowed` 가상 함수 이며 재정의 될 수 있습니다 필요한 경우 (예를 들어 경우 컨트롤을 자동화 서버로 사용). 자세한 내용은 기술 자료 문서 Q166472를을 참조 하세요. "방법: 자동화 서버로 OLE 컨트롤을 사용 합니다." 기술 자료 문서에서 제공 됩니다 [ http://support.microsoft.com ](http://support.microsoft.com/)합니다.
+프레임 워크의 구현의 `IDispatch::Invoke` 호출 `IsInvokeAllowed` 경우 지정된 된 함수를 확인 하려면 (구분 `dispid`) 호출할 수 있습니다. OLE 컨트롤에 대 한 기본 동작은 자동화 메서드 컨트롤이 초기화 되었으면 하는 경우에 호출할 수 있도록 그러나 `IsInvokeAllowed` 가상 함수 이며 재정의 될 수 있습니다 필요한 경우 (예를 들어 경우 컨트롤을 자동화 서버로 사용).
 
 ##  <a name="ismodified"></a>  COleControl::IsModified
 

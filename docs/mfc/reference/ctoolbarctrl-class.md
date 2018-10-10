@@ -192,12 +192,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5a71e6f358a682adad2d12f7b567dc0bad3d0f3
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 2473f33508274bb0f0aa9aebcb462973ec80b267
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861891"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890818"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl 클래스
 
@@ -731,8 +731,6 @@ void Customize();
 ### <a name="remarks"></a>설명
 
 이 대화 상자에 사용자를 추가 단추를 삭제 하 여 도구 모음을 지정할 수 있습니다. 사용자 지정을 지원 하려면 도구 모음을의 부모 창에 설명 된 대로 사용자 지정 알림 메시지를 처리 해야 합니다 [사용자 지정 알림 처리](../../mfc/handling-customization-notifications.md)합니다. 도구 모음을도 만들어야 CCS_ADJUSTABLE 스타일을 사용 하 여에 설명 된 대로 [CToolBarCtrl::Create](#create)합니다.
-
-자세한 내용은 기술 자료 문서 Q241850 참조: PRB: 사용자 지정 대화 상자 표시 CToolBarCtrl::Customize 유지 하지 않습니다를 호출 합니다.
 
 ##  <a name="deletebutton"></a>  CToolBarCtrl::DeleteButton
 

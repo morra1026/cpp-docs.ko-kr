@@ -64,12 +64,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7053c72536c0ab91420f1bbc068f39843eb99c1b
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: df61ebeea72a7cf860237b760288cc47ff353bf2
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861813"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890662"
 ---
 # <a name="cimage-class"></a>CImage 클래스
 
@@ -320,7 +320,7 @@ HBITMAP 핸들입니다.
 *eOrientation*<br/>
 비트맵의 방향을 지정합니다. 다음 중 하나일 수 있습니다.
 
-- 비트맵의 방향을 DIBOR_DEFAULT 운영 체제에 의해 결정 됩니다. 그러나이 없을 수 있습니다 항상 의도 한 결과 모든 운영 체제에서. 이 대 한 자세한 내용은 다음 기술 자료 문서를 참조 하세요. (**Q186586**): PRB: getobject () 항상 반환 양의 높이 대 한 DIB 섹션입니다.
+- 비트맵의 방향을 DIBOR_DEFAULT 운영 체제에 의해 결정 됩니다.
 
 - 비트맵의 선은 반대 순서로 DIBOR_BOTTOMUP 합니다. 이 인해 [CImage::GetBits](#getbits) 비트맵 버퍼의 끝 부분에 대 한 포인터를 반환 하 고 [CImage::GetPitch](#getpitch) 음수를 반환 합니다.
 
