@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0cf75e1c0fe2b3ff0d883a8785e69aef489c0545
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e0c42478e5e6ce3c9efe66c45ed32292f2040a83
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46056393"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084154"
 ---
 # <a name="argument-definitions"></a>인수 정의
 
@@ -45,7 +45,7 @@ int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
 첫 번째 명령줄 인수는 항상 `argv` **[1]** 마지막 이며 `argv` **[** `argc` -1 **]** 합니다.
 
 > [!NOTE]
->  규칙에 따라 `argv`**[0]** 은 프로그램을 호출하는 데 사용하는 명령입니다.  사용 하 여 프로세스를 생성할 수는 있지만 [CreateProcess](https://msdn.microsoft.com/library/windows/desktop/ms683197) 첫 번째 인수와 두 번째 인수를 사용 하는 경우 및 (*lpApplicationName* 하 고 *lpCommandLine*), `argv` **[0]** 실행 되지 않을 수 있습니다 이름을 사용 하십시오 [GetModuleFileName](https://msdn.microsoft.com/library/windows/desktop/ms683197) , 실행 파일 이름 및 정규화 된 경로를 검색 합니다.
+>  규칙에 따라 `argv`**[0]** 은 프로그램을 호출하는 데 사용하는 명령입니다.  사용 하 여 프로세스를 생성할 수는 있지만 [CreateProcess](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea) 첫 번째 인수와 두 번째 인수를 사용 하는 경우 및 (*lpApplicationName* 하 고 *lpCommandLine*), `argv` **[0]** 실행 되지 않을 수 있습니다 이름을 사용 하십시오 [GetModuleFileName](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea) , 실행 파일 이름 및 정규화 된 경로를 검색 합니다.
 
 ## <a name="microsoft-specific"></a>Microsoft 전용
 

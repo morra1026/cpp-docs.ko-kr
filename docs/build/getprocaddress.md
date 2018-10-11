@@ -18,16 +18,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce1a287a9fa608881a39f82a2b86cfc541674218
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ef48157d1f4efb467fd33270ff05271bedd1a563
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713729"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49081892"
 ---
 # <a name="getprocaddress"></a>GetProcAddress
 
-DLL 호출에 명시적으로 연결 하는 프로세스 [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212) DLL에서 내보내기 함수의 주소를 가져옵니다. 반환 된 함수 포인터를 사용 하 여 DLL 함수를 호출 합니다. **GetProcAddress** DLL 모듈 핸들을 매개 변수로 (에서 반환 된 **LoadLibrary**하십시오 `AfxLoadLibrary`, 또는 **GetModuleHandle**) 하려는 함수의 이름 및 호출 또는 함수의 내보내기 서 수입니다.
+DLL 호출에 명시적으로 연결 하는 프로세스 [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) DLL에서 내보내기 함수의 주소를 가져옵니다. 반환 된 함수 포인터를 사용 하 여 DLL 함수를 호출 합니다. **GetProcAddress** DLL 모듈 핸들을 매개 변수로 (에서 반환 된 **LoadLibrary**하십시오 `AfxLoadLibrary`, 또는 **GetModuleHandle**) 하려는 함수의 이름 및 호출 또는 함수의 내보내기 서 수입니다.
 
 있기 때문에 대 한 포인터를 통해 DLL 함수를 호출 하는 컴파일 타임 형식 검사 뿐, 함수 매개 변수는 올바른 스택에 할당 된 메모리 한도가 하지 않으며 액세스 위반이 발생할 수 있도록 해야 합니다. 형식 안전성을 보장 하는 한 가지 방법은 내보내기 함수의 함수 프로토타입을 확인 하 고 해당 함수 포인터에 대 한 일치 하는 형식 정의 만드는 경우 예를 들어:
 
@@ -73,7 +73,7 @@ if (hDLL != NULL)
 
 - [LoadLibrary 및 AfxLoadLibrary](../build/loadlibrary-and-afxloadlibrary.md)
 
-- [FreeLibrary](https://msdn.microsoft.com/library/windows/desktop/ms683152)
+- [FreeLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary)
 
 - [DEF 파일을 사용하여 DLL에서 내보내기](../build/exporting-from-a-dll-using-def-files.md)
 

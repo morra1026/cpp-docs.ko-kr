@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b64e92eaca38743f0bc9de31f9be7684271c4674
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9783da47a22260f0edbe5ddf6d8f5021aae31e5c
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374375"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083803"
 ---
 # <a name="application-information-and-management"></a>응용 프로그램 정보 및 관리
 
@@ -591,7 +591,7 @@ HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
 
 ### <a name="remarks"></a>설명
 
-사용할 수 있는 핸들을 반환 합니다 [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212) DLL 함수의 주소를 가져옵니다. `AfxLoadLibrary` 다른 실행 파일 모듈을 매핑할도 사용할 수 있습니다.
+사용할 수 있는 핸들을 반환 합니다 [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) DLL 함수의 주소를 가져옵니다. `AfxLoadLibrary` 다른 실행 파일 모듈을 매핑할도 사용할 수 있습니다.
 
 각 프로세스에는 각 로드 된 라이브러리 모듈에 대 한 참조 횟수를 유지 관리합니다. 이 참조 개수가 증가 될 때마다 `AfxLoadLibrary` 라고 하며 각 시간 감소는 `AfxFreeLibrary` 라고 합니다. 참조 횟수가 0에 도달하면, 호출 프로세스의 주소 공간에서 모듈이 매핑 해제되고 핸들이 더 이상 유효하지 않습니다.
 
@@ -752,7 +752,7 @@ void AFXAPI AfxSetPerUserRegistration(BOOL bEnable);
 
 일반적으로 사용 되는 레지스트리를 액세스 하는 응용 프로그램, Windows Vista 이전 합니다 **HKEY_CLASSES_ROOT** 노드. 그러나 Windows Vista 또는 이후 운영 체제를 사용 하 여 HKCR에 관리자 권한 모드로 응용 프로그램을 실행 해야 합니다.
 
-이 메서드를 읽고 레지스트리에 HKCU에 대 한 레지스트리 액세스 HKCR에서 리디렉션하여 관리자 모드에서 실행 하지 않고 응용을 프로그램을 수 있습니다. 자세한 내용은 [링커 속성 페이지](../../ide/linker-property-pages.md)합니다.
+이 메서드를 읽고 레지스트리에 HKCU에 대 한 레지스트리 액세스 HKCR에서 리디렉션하여 관리자 모드에서 실행 하지 않고 응용을 프로그램을 수 있습니다. 자세한 내용은 [Linker Property Pages](../../ide/linker-property-pages.md)을 참조하세요.
 
 프레임 워크에 대 한 액세스를 HKCR에서 리디렉션합니다 레지스트리 리디렉션을 사용 하도록 설정 하면 **HKEY_CURRENT_USER\Software\Classes**합니다. MFC 및 ATL 프레임 리디렉션 영향을 받습니다.
 

@@ -113,12 +113,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3406614b99e2057c9469fe69d02a9fcbe4eae23b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3538a8cd15fc315f4d91d1c83c517811acce1802
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116765"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082906"
 ---
 # <a name="cbulkrowset-class"></a>CBulkRowset 클래스
 
@@ -165,7 +165,7 @@ class CBulkRowset : public CRowset<TAccessor>
 
 ## <a name="addrefrows"></a> Cbulkrowset:: Addrefrows
 
-호출 [irowset:: Addrefrows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) bulk 행 집합에서 현재 검색 된 모든 행에 대 한 참조 수를 증가 합니다.  
+호출 [irowset:: Addrefrows](/previous-versions/windows/desktop/ms719619) bulk 행 집합에서 현재 검색 된 모든 행에 대 한 참조 수를 증가 합니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -264,7 +264,7 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
   
 ### <a name="return-value"></a>반환 값  
 
-참조 [irowset:: Getdata](/previous-versions/windows/desktop/ms716988\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 
+참조 [irowset:: Getdata](/previous-versions/windows/desktop/ms716988) 에 *OLE DB Programmer's Reference*합니다. 
 
 ## <a name="movetoratio"></a> Cbulkrowset:: Movetoratio
 
@@ -295,11 +295,11 @@ HRESULT MoveToRatio(DBCOUNTITEM nNumerator,
   
 `(nNumerator *  RowsetSize ) / nDenominator`  
   
-여기서 `RowsetSize` 행 단위로 측정 되는 행 집합의 크기입니다. 이 수식의 정확도 특정 공급자에 따라 달라 집니다. 세부 정보를 참조 하세요 [irowsetscroll::](/previous-versions/windows/desktop/ms709602\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.   
+여기서 `RowsetSize` 행 단위로 측정 되는 행 집합의 크기입니다. 이 수식의 정확도 특정 공급자에 따라 달라 집니다. 세부 정보를 참조 하세요 [irowsetscroll::](/previous-versions/windows/desktop/ms709602) 에 *OLE DB Programmer's Reference*합니다.   
 
 ## <a name="releaserows"></a> Cbulkrowset:: Releaserows
 
-호출 [irowset:: Releaserows](/previous-versions/windows/desktop/ms719771\(v=vs.85\)) bulk 행 집합에서 현재 검색 된 모든 행에 대 한 참조 횟수를 줄여야 합니다.  
+호출 [irowset:: Releaserows](/previous-versions/windows/desktop/ms719771) bulk 행 집합에서 현재 검색 된 모든 행에 대 한 참조 횟수를 줄여야 합니다.  
   
 ### <a name="syntax"></a>구문  
   

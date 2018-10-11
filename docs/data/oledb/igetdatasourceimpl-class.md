@@ -25,16 +25,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9ecc830937e36e213177205549ee4dd4e989e0ed
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0101f0d32ebf5fa5a46d735f64fea03b7e5208da
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118702"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082581"
 ---
 # <a name="igetdatasourceimpl-class"></a>IGetDataSourceImpl 클래스
 
-구현을 제공 합니다 [IGetDataSource](/previous-versions/windows/desktop/ms709721\(v=vs.85\)) 개체입니다.  
+구현을 제공 합니다 [IGetDataSource](/previous-versions/windows/desktop/ms709721) 개체입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -77,7 +77,7 @@ STDMETHOD(GetDataSource)(REFIID riid,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [IGetDataSource::GetDataSource](/previous-versions/windows/desktop/ms725443\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+참조 [IGetDataSource::GetDataSource](/previous-versions/windows/desktop/ms725443) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="remarks"></a>설명  
 

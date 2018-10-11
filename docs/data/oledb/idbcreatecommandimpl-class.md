@@ -23,16 +23,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c6d8a07ded3da02c21c4ee8c528474efc6e52b6c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b06d6c730562203cdef1191a9d73012c3b19c2c8
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46021566"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083970"
 ---
 # <a name="idbcreatecommandimpl-class"></a>IDBCreateCommandImpl 클래스
 
-구현을 제공 합니다 [IDBCreateCommand](/previous-versions/windows/desktop/ms711625\(v=vs.85\)) 인터페이스입니다.  
+구현을 제공 합니다 [IDBCreateCommand](/previous-versions/windows/desktop/ms711625) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -80,7 +80,7 @@ STDMETHOD(CreateCommand)(IUnknown * pUnkOuter,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [idbcreatecommand:: Createcommand](/previous-versions/windows/desktop/ms709772\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+참조 [idbcreatecommand:: Createcommand](/previous-versions/windows/desktop/ms709772) 에 *OLE DB Programmer's Reference*합니다.  
   
 에 해당 하는 일부 매개 변수 *OLE DB Programmer's Reference* 매개 변수에서 설명 하는 다른 이름의 `IDBCreateCommand::CreateCommand`:  
   

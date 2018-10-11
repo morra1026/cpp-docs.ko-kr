@@ -23,16 +23,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7f148176b8d5d0c85f3e899cfd117bbb381794b0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2e4427eede8efcd492e90597efe9488a89e6d4de
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46047397"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082373"
 ---
 # <a name="idbcreatesessionimpl-class"></a>IDBCreateSessionImpl 클래스
 
-에 대 한 구현을 제공 합니다 [IDBCreateSession](/previous-versions/windows/desktop/ms724076\(v=vs.85\)) 인터페이스입니다.  
+에 대 한 구현을 제공 합니다 [IDBCreateSession](/previous-versions/windows/desktop/ms724076) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -80,7 +80,7 @@ STDMETHOD(CreateSession)(IUnknown * pUnkOuter,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [idbcreatesession:: Createsession](/previous-versions/windows/desktop/ms714942\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.   
+참조 [idbcreatesession:: Createsession](/previous-versions/windows/desktop/ms714942) 에 *OLE DB Programmer's Reference*합니다.   
   
 ## <a name="see-also"></a>참고 항목  
 

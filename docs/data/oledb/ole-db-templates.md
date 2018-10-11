@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 60c7e33a0a486bf0880b06a2eb159ba02300dec7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5f828f21ebdb841d4eca1bb168f908543f990e94
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118247"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082672"
 ---
 # <a name="ole-db-templates"></a>OLE DB 템플릿
 
@@ -41,7 +41,7 @@ OLE DB 템플릿은 OLE DB 데이터 액세스가 보다 용이할 합니다. Vi
 [OLE DB 프로그래밍 개요](../../data/oledb/ole-db-programming-overview.md)<br/>
 OLE DB 이란 설명 하 고 OLE db에서 범용 데이터 액세스에 설명 합니다.  
   
-[OLE DB 프로그래머 참조](/previous-versions/windows/desktop/ms713643\(v=vs.85\))  
+[OLE DB 프로그래머 참조](/previous-versions/windows/desktop/ms713643)  
 OLE DB에는 Windows SDK 설명서에 대 한 링크를 제공합니다.  
   
 [OLE DB 템플릿 샘플](../../visual-cpp-samples.md)<br/>

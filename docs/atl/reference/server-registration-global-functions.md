@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6fb3febbbaffc7c3a0de945fc9d30b544fd22188
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c43e28e035691b04181bef2162de828f3271a600
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46023308"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082756"
 ---
 # <a name="server-registration-global-functions"></a>서버 등록 전역 함수
 
@@ -125,7 +125,7 @@ ATLINLINE ATLAPI AtlComModuleRegisterClassObjects(
 COM 모듈에 대 한 포인터입니다.
 
 *dwClsContext*<br/>
-클래스 개체를 실행할의 컨텍스트를 지정 합니다. 가능한 값은 CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER, 또는 CLSCTX_LOCAL_SERVER입니다. 참조 [CLSCTX](https://msdn.microsoft.com/library/windows/desktop/ms693716) 대 한 자세한 내용은 합니다.
+클래스 개체를 실행할의 컨텍스트를 지정 합니다. 가능한 값은 CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER, 또는 CLSCTX_LOCAL_SERVER입니다. 참조 [CLSCTX](/windows/desktop/api/wtypesbase/ne-wtypesbase-tagclsctx) 대 한 자세한 내용은 합니다.
 
 *dwFlags*<br/>
 클래스 개체에 연결 형식을 결정합니다. 가능한 값은 REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE, 또는 REGCLS_MULTI_SEPARATE입니다. 참조 [REGCLS](/windows/desktop/api/combaseapi/ne-combaseapi-tagregcls) 대 한 자세한 내용은 합니다.

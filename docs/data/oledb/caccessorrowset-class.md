@@ -41,12 +41,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: afae1f91907e8fd22640dd87fe607a067900edfa
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1ef9799c65f4932bf314f3c11fd8324e0fb40bf2
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024647"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49081738"
 ---
 # <a name="caccessorrowset-class"></a>CAccessorRowset 클래스
 
@@ -82,7 +82,7 @@ class CAccessorRowset : public TAccessor, public TRowset<TAccessor>
 |[CAccessorRowset](#caccessorrowset)|생성자입니다.|  
 |[닫기](#close)|행 집합 및 모든 접근자를 닫습니다.|  
 |[FreeRecordMemory](#freerecordmemory)|해제 해야 하는 현재 레코드의 모든 열을 해제 합니다.|  
-|[GetColumnInfo](#getcolumninfo)|구현 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\))합니다.|  
+|[GetColumnInfo](#getcolumninfo)|구현 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704)합니다.|  
   
 ## <a name="remarks"></a>설명  
 
@@ -153,7 +153,7 @@ HRESULT GetColumnInfo(DBORDINAL* pColumns,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+참조 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="return-value"></a>반환 값  
 
@@ -163,7 +163,7 @@ HRESULT GetColumnInfo(DBORDINAL* pColumns,
 
 사용자는 반환 된 열 정보와 문자열 버퍼를 해제 해야 합니다. 사용 하는 경우이 메서드의 두 번째 버전을 사용 하 여 [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) 바인딩을 재정의 해야 합니다.  
   
-자세한 내용은 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+자세한 내용은 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704) 에 *OLE DB Programmer's Reference*합니다.  
   
 ## <a name="see-also"></a>참고 항목  
 

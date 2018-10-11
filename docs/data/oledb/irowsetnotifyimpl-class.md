@@ -31,16 +31,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d2d63b4046774bd7e1c427639db3483536e94bc5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9ade96e5d73d86519a067d632a4e05250d1264cf
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46095347"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082308"
 ---
 # <a name="irowsetnotifyimpl-class"></a>IRowsetNotifyImpl 클래스
 
-구현 및 등록 [IRowsetNotify](/previous-versions/windows/desktop/ms712959\(v=vs.85\)) 소비자 (라고도 "sink")에 알림을 처리할 수 있도록 합니다.  
+구현 및 등록 [IRowsetNotify](/previous-versions/windows/desktop/ms712959) 소비자 (라고도 "sink")에 알림을 처리할 수 있도록 합니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -66,7 +66,7 @@ class ATL_NO_VTABLE IRowsetNotifyImpl : public IRowsetNotify
 
 참조 [알림 수신](../../data/oledb/receiving-notifications.md) 에서 소비자 연결 지점 인터페이스를 구현 하는 방법에 대 한 합니다.  
   
-`IRowsetNotifyImpl` 더미 구현을 제공 `IRowsetNotify`에 대 한 빈 함수를 사용 하 여 합니다 `IRowsetNotify` 메서드 [OnFieldChange](/previous-versions/windows/desktop/ms715961\(v=vs.85\))에 [OnRowChange](/previous-versions/windows/desktop/ms722694\(v=vs.85\)), 및 [OnRowsetChange](/previous-versions/windows/desktop/ms722669\(v=vs.85\)). 구현 하는 경우이 클래스에서 상속 하는 경우는 `IRowsetNotify` 인터페이스를 해야 하는 방법만 구현할 수 있습니다. 다른 방법에 대 한 빈 구현을 직접 제공 해야 합니다.  
+`IRowsetNotifyImpl` 더미 구현을 제공 `IRowsetNotify`에 대 한 빈 함수를 사용 하 여 합니다 `IRowsetNotify` 메서드 [OnFieldChange](/previous-versions/windows/desktop/ms715961)에 [OnRowChange](/previous-versions/windows/desktop/ms722694), 및 [OnRowsetChange](/previous-versions/windows/desktop/ms722669). 구현 하는 경우이 클래스에서 상속 하는 경우는 `IRowsetNotify` 인터페이스를 해야 하는 방법만 구현할 수 있습니다. 다른 방법에 대 한 빈 구현을 직접 제공 해야 합니다.  
 
 ## <a name="onfieldchange"></a> Irowsetnotifyimpl:: Onfieldchange
 
@@ -87,15 +87,15 @@ STDMETHOD(OnFieldChange)(
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961\(v=vs.85\)) 매개 변수 설명에 대 한 합니다.  
+참조 [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961) 매개 변수 설명에 대 한 합니다.  
   
 ### <a name="return-value"></a>반환 값  
 
-참조 [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961\(v=vs.85\)) 에 대 한 설명 값을 반환 합니다.  
+참조 [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961) 에 대 한 설명 값을 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
 
-이 메서드를 래핑하는 [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961\(v=vs.85\)) 메서드. 자세한 내용은 OLE DB 프로그래머 참조에서 해당 메서드의 설명을 참조하십시오.  
+이 메서드를 래핑하는 [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961) 메서드. 자세한 내용은 OLE DB 프로그래머 참조에서 해당 메서드의 설명을 참조하십시오.  
 
 ## <a name="onrowchange"></a> Irowsetnotifyimpl:: Onrowchange
 
@@ -115,15 +115,15 @@ STDMETHOD(OnRowChange)(
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [irowsetnotify:: Onrowchange](/previous-versions/windows/desktop/ms722694\(v=vs.85\)) 매개 변수 설명에 대 한 합니다.  
+참조 [irowsetnotify:: Onrowchange](/previous-versions/windows/desktop/ms722694) 매개 변수 설명에 대 한 합니다.  
   
 ### <a name="return-value"></a>반환 값  
 
-참조 [irowsetnotify:: Onrowchange](/previous-versions/windows/desktop/ms722694\(v=vs.85\)) 에 대 한 설명 값을 반환 합니다.  
+참조 [irowsetnotify:: Onrowchange](/previous-versions/windows/desktop/ms722694) 에 대 한 설명 값을 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
 
-이 메서드를 래핑하는 [irowsetnotify:: Onrowchange](/previous-versions/windows/desktop/ms722694\(v=vs.85\)) 메서드. 자세한 내용은 OLE DB 프로그래머 참조에서 해당 메서드의 설명을 참조하십시오. 
+이 메서드를 래핑하는 [irowsetnotify:: Onrowchange](/previous-versions/windows/desktop/ms722694) 메서드. 자세한 내용은 OLE DB 프로그래머 참조에서 해당 메서드의 설명을 참조하십시오. 
 
 ## <a name="onrowsetchange"></a> Irowsetnotifyimpl:: Onrowsetchange
 
@@ -141,19 +141,19 @@ STDMETHOD(OnRowsetChange)(
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669\(v=vs.85\)) 매개 변수 설명에 대 한 합니다.  
+참조 [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669) 매개 변수 설명에 대 한 합니다.  
   
 ### <a name="return-value"></a>반환 값  
 
-참조 [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669\(v=vs.85\)) 에 대 한 설명 값을 반환 합니다.  
+참조 [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669) 에 대 한 설명 값을 반환 합니다.  
   
 ### <a name="remarks"></a>설명  
 
-이 메서드를 래핑하는 [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669\(v=vs.85\)) 메서드. 자세한 내용은 OLE DB 프로그래머 참조에서 해당 메서드의 설명을 참조하십시오.
+이 메서드를 래핑하는 [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669) 메서드. 자세한 내용은 OLE DB 프로그래머 참조에서 해당 메서드의 설명을 참조하십시오.
   
 ## <a name="see-also"></a>참고 항목  
 
 [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[IRowsetNotify](/previous-versions/windows/desktop/ms712959\(v=vs.85\))   
+[IRowsetNotify](/previous-versions/windows/desktop/ms712959)   
 [IRowsetNotifyCP 클래스](../../data/oledb/irowsetnotifycp-class.md)

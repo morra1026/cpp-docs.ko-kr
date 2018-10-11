@@ -828,12 +828,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6cbe2269bfe4a67ba4e8c6952980216fce92165f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: bd35c0879896ca7edfd6524c31a86765bbcce219
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448612"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084193"
 ---
 # <a name="cwnd-class"></a>CWnd 클래스
 
@@ -1662,7 +1662,7 @@ void BringWindowToTop();
 
 또한 `BringWindowToTop`은 팝업, 최상위 및 MDI 자식 창을 활성화합니다. `BringWindowToTop` 멤버 함수를 사용하여 겹치는 창에 의해 부분적으로 또는 완전히 가려진 모든 창을 발견해야 합니다.
 
-이 함수는 Win32 호출 [BringWindowToTop](https://msdn.microsoft.com/library/windows/desktop/ms632673\(v=vs.85\).aspx) 함수입니다. 호출 된 [SetWindowPos](#setwindowpos) 함수 Z-순서에서 창의 위치를 변경 합니다. `BringWindowToTop` 함수는 창 스타일을 변경하여 최상위 창으로 만들지 않습니다. 자세한 내용은 참조 하세요. [HWND_TOP와 HWND_TOPMOST의 차이 란](http://blogs.msdn.com/b/oldnewthing/archive/2005/11/21/495246.aspx)
+이 함수는 Win32 호출 [BringWindowToTop](https://msdn.microsoft.com/library/windows/desktop/ms632673) 함수입니다. 호출 된 [SetWindowPos](#setwindowpos) 함수 Z-순서에서 창의 위치를 변경 합니다. `BringWindowToTop` 함수는 창 스타일을 변경하여 최상위 창으로 만들지 않습니다. 자세한 내용은 참조 하세요. [HWND_TOP와 HWND_TOPMOST의 차이 란](http://blogs.msdn.com/b/oldnewthing/archive/2005/11/21/495246.aspx)
 
 ### <a name="example"></a>예제
 
@@ -3207,7 +3207,7 @@ Windows 창의 HWND입니다.
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 `CWnd` 개체입니다.
+`CWnd` 개체에 대한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4417,7 +4417,7 @@ CWnd* GetOwner() const;
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 `CWnd` 개체입니다.
+`CWnd` 개체에 대한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4467,7 +4467,7 @@ CWnd* GetParentOwner() const;
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 `CWnd` 개체입니다. `CWnd` 개체가 핸들에 연결되지 않은 경우 임시 `CWnd` 개체를 만들어 연결합니다. 해당 포인터는 임시적이며, 나중에 사용하려고 저장하면 안됩니다.
+`CWnd` 개체에 대한 포인터입니다. `CWnd` 개체가 핸들에 연결되지 않은 경우 임시 `CWnd` 개체를 만들어 연결합니다. 해당 포인터는 임시적이며, 나중에 사용하려고 저장하면 안됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4492,7 +4492,7 @@ void GetProperty(
 검색할 속성을 식별 합니다.
 
 *vtProp*<br/>
-검색할 속성의 형식을 지정 합니다. 가능한 값에 대 한 설명 섹션을 참조 하세요 [coledispatchdriver:: Invokehelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)합니다.
+검색할 속성의 형식을 지정 합니다. 가능한 값에 대해서는 [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)의 설명 섹션을 참조하세요.
 
 *pvProp*<br/>
 하는 변수의 주소가 속성 값을 받게 됩니다. 지정 된 형식과 일치 해야 합니다 *vtProp*합니다.
@@ -5363,7 +5363,7 @@ void AFX_CDECL InvokeHelper(
 에 대 한 호출의 컨텍스트를 설명 하는 플래그 `IDispatch::Invoke`합니다.
 
 *vtRet*<br/>
-반환 값 형식을 지정합니다. 가능한 값에 대 한 설명 섹션을 참조 하세요 [coledispatchdriver:: Invokehelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)합니다.
+반환 값 형식을 지정합니다. 가능한 값에 대해서는 [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)의 설명 섹션을 참조하세요.
 
 *pvRet*<br/>
 하는 변수의 주소가 속성 값을 수신 하거나 값을 반환 합니다. 지정 된 형식과 일치 해야 합니다 *vtRet*합니다.
@@ -5376,9 +5376,9 @@ void AFX_CDECL InvokeHelper(
 
 ### <a name="remarks"></a>설명
 
-합니다 *pbParamInfo* 매개 변수를 메서드 또는 속성에 전달 된 매개 변수의 형식을 지정 합니다. 인수의 변수 목록은 표현 *...*  구문 선언에서.
+합니다 *pbParamInfo* 매개 변수를 메서드 또는 속성에 전달 된 매개 변수의 형식을 지정 합니다. 인수의 변수 목록은 구문 선언에서 *...* 로 표시됩니다.
 
-이 함수 VARIANTARG 값을 매개 변수를 문자열로 변환한 다음 호출을 `IDispatch::Invoke` ActiveX 컨트롤 메서드. 경우에 대 한 호출 `IDispatch::Invoke` 실패 하면이이 함수는 예외를 throw 합니다. SCODE (상태 코드) 반환한 경우 `IDispatch::Invoke` DISP_E_EXCEPTION을를이 함수는 [COleException](../../mfc/reference/coleexception-class.md) 개체 이거나 그렇지 않으면 throw를 [COleDispatchException](../../mfc/reference/coledispatchexception-class.md)합니다.
+이 함수 VARIANTARG 값을 매개 변수를 문자열로 변환한 다음 호출을 `IDispatch::Invoke` ActiveX 컨트롤 메서드. `IDispatch::Invoke` 호출에 실패하면 이 함수가 예외를 throw합니다. SCODE (상태 코드) 반환한 경우 `IDispatch::Invoke` DISP_E_EXCEPTION을를이 함수는 [COleException](../../mfc/reference/coleexception-class.md) 개체 이거나 그렇지 않으면 throw를 [COleDispatchException](../../mfc/reference/coledispatchexception-class.md)합니다.
 
 > [!NOTE]
 > 이 함수 에서만 호출 해야는 `CWnd` ActiveX 컨트롤을 나타내는 개체입니다.
@@ -8805,7 +8805,7 @@ afx_msg void OnPaintClipboard(
 클립보드 응용 프로그램 창에 대한 포인터를 지정합니다. 해당 포인터는 임시적이며, 나중에 사용하려고 저장하면 안됩니다.
 
 *hPaintStruct*<br/>
-식별 된 [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) 그릴 클라이언트 영역을 정의 하는 데이터 구조입니다.
+그릴 클라이언트 영역을 정의하는 [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) 데이터 구조를 식별합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -10602,7 +10602,7 @@ virtual void PreSubclassWindow();
 
 ##  <a name="pretranslatemessage"></a>  CWnd::PreTranslateMessage
 
-클래스에서 사용 하는 [CWinApp](../../mfc/reference/cwinapp-class.md) 디스패치 되기 전에 창 메시지를 변환 하는 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수입니다.
+창 메시지가 [TranslateMessage](../../mfc/reference/cwinapp-class.md) 및 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) Windows 함수로 디스패치되기 전에 [CWinApp](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) 클래스가 이 메시지를 해석하는 데 사용됩니다.
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -11592,7 +11592,7 @@ void AFX_CDECL SetProperty(
 설정할 속성을 확인합니다.
 
 *vtProp*<br/>
-설정할 속성의 유형을 지정합니다. 가능한 값에 대 한 설명 섹션을 참조 하세요 [coledispatchdriver:: Invokehelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)합니다.
+설정할 속성의 유형을 지정합니다. 가능한 값에 대해서는 [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)의 설명 섹션을 참조하세요.
 
 *...*<br/>
 지정 된 형식의 단일 매개 변수 *vtProp*합니다.

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e6fb948efd63a8392661cc38a80393bc90d5e694
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 163ef22563141b9365bc2c086870877c7ad2bf00
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396468"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083595"
 ---
 # <a name="run-time-object-model-services"></a>런타임 개체 모델 서비스
 
@@ -92,7 +92,7 @@ AFX_COMCTL32_IF_EXISTS(  proc );
 
 ### <a name="remarks"></a>설명
 
-이 매크로 사용 하 여 공용 컨트롤 라이브러리 함수가 지정 여부를 결정할 *proc* (호출 하는 대신 [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212)합니다.
+이 매크로 사용 하 여 공용 컨트롤 라이브러리 함수가 지정 여부를 결정할 *proc* (호출 하는 대신 [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress)합니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -119,7 +119,7 @@ AFX_COMCTL32_IF_EXISTS2( proc );
 
 ### <a name="remarks"></a>설명
 
-이 매크로 사용 하 여 공용 컨트롤 라이브러리 함수가 지정 여부를 결정할 *proc* (호출 하는 대신 [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212)합니다. 이 매크로 AFX_COMCTL32_IF_EXISTS의 유니코드 버전입니다.
+이 매크로 사용 하 여 공용 컨트롤 라이브러리 함수가 지정 여부를 결정할 *proc* (호출 하는 대신 [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress)합니다. 이 매크로 AFX_COMCTL32_IF_EXISTS의 유니코드 버전입니다.
 
 ### <a name="requirements"></a>요구 사항
 

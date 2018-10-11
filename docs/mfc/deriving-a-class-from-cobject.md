@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 177d4160972f521eeeaee56087c29e18433be87e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f673f0212884fce33069f044b34d5396cf72b7c3
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440240"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49081936"
 ---
 # <a name="deriving-a-class-from-cobject"></a>CObject에서 클래스 파생시키기
 
@@ -69,7 +69,7 @@ ms.locfileid: "46440240"
 
      [!code-cpp[NVC_MFCCObjectSample#1](../mfc/codesnippet/cpp/deriving-a-class-from-cobject_1.h)]
 
-일반적으로의 일부를 재정의할 수도 있지만 `CObject`의 새 클래스의 세부 정보를 처리 하는 멤버 함수입니다. 예를 들어 재정의 하려는 일반적으로 `Dump` 함수의 `CObject` 클래스의 내용에 대 한 디버깅 출력을 제공 하 합니다. 재정의 하는 방법에 대 한 내용은 `Dump`, 문서를 참조 하세요 [진단: 개체 내용을 덤프](/previous-versions/visualstudio/visual-studio-2010/sc15kz85\(v=vs.100\))합니다. 재정의할 수도 있습니다는 `AssertValid` 함수의 `CObject` 클래스 개체의 데이터 멤버의 일관성을 검사할 사용자 지정 된 테스트를 제공 하 합니다. 재정의 하는 방법에 대 한 `AssertValid`를 참조 하세요 [MFC ASSERT_VALID 및 CObject::AssertValid](/previous-versions/visualstudio/visual-studio-2010/38z04tfa\(v=vs.100\))합니다.
+일반적으로의 일부를 재정의할 수도 있지만 `CObject`의 새 클래스의 세부 정보를 처리 하는 멤버 함수입니다. 예를 들어 재정의 하려는 일반적으로 `Dump` 함수의 `CObject` 클래스의 내용에 대 한 디버깅 출력을 제공 하 합니다. 재정의 하는 방법에 대 한 내용은 `Dump`, 문서를 참조 하세요 [진단: 개체 내용을 덤프](/previous-versions/visualstudio/visual-studio-2010/sc15kz85)합니다. 재정의할 수도 있습니다는 `AssertValid` 함수의 `CObject` 클래스 개체의 데이터 멤버의 일관성을 검사할 사용자 지정 된 테스트를 제공 하 합니다. 재정의 하는 방법에 대 한 `AssertValid`를 참조 하세요 [MFC ASSERT_VALID 및 CObject::AssertValid](/previous-versions/visualstudio/visual-studio-2010/38z04tfa)합니다.
 
 이 문서 [기능 수준 지정](../mfc/specifying-levels-of-functionality.md) 다른 수준의 기능을 런타임 클래스 정보, 동적 개체 만들기 및 serialization 등을 지정 하는 방법에 설명 합니다.
 

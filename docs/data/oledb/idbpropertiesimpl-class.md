@@ -33,12 +33,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2c786783963bf2f3613228b87a7ede23eb75a450
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7f7662fabc53054b7a6712d271d89c2c3451067e
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46025596"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083038"
 ---
 # <a name="idbpropertiesimpl-class"></a>IDBPropertiesImpl 클래스
 
@@ -73,7 +73,7 @@ class ATL_NO_VTABLE IDBPropertiesImpl
   
 ## <a name="remarks"></a>설명  
 
-[IDBProperties](/previous-versions/windows/desktop/ms719607\(v=vs.85\)) 는 데이터 원본 개체에 대 한 필수 인터페이스 및 열거자에 대 한 선택적 인터페이스입니다. 그러나 열거자를 노출 하는 경우 [IDBInitialize](/previous-versions/windows/desktop/ms713706\(v=vs.85\))를 노출 해야 `IDBProperties`합니다. `IDBPropertiesImpl` 구현 `IDBProperties` 정의 된 정적 함수를 사용 하 여 [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md)합니다.  
+[IDBProperties](/previous-versions/windows/desktop/ms719607) 는 데이터 원본 개체에 대 한 필수 인터페이스 및 열거자에 대 한 선택적 인터페이스입니다. 그러나 열거자를 노출 하는 경우 [IDBInitialize](/previous-versions/windows/desktop/ms713706)를 노출 해야 `IDBProperties`합니다. `IDBPropertiesImpl` 구현 `IDBProperties` 정의 된 정적 함수를 사용 하 여 [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md)합니다.  
 
 ## <a name="getproperties"></a> Idbpropertiesimpl:: Getproperties
 
@@ -90,7 +90,7 @@ STDMETHOD(GetProperties)(ULONG cPropertySets,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [idbproperties:: Getproperties](/previous-versions/windows/desktop/ms714344\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+참조 [idbproperties:: Getproperties](/previous-versions/windows/desktop/ms714344) 에 *OLE DB Programmer's Reference*합니다.  
   
 에 해당 하는 일부 매개 변수 *OLE DB Programmer's Reference* 매개 변수에서 설명 하는 다른 이름의 `IDBProperties::GetProperties`:  
   
@@ -121,7 +121,7 @@ STDMETHOD(GetPropertyInfo)(ULONG cPropertySets,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [idbproperties:: Getpropertyinfo](/previous-versions/windows/desktop/ms718175\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+참조 [idbproperties:: Getpropertyinfo](/previous-versions/windows/desktop/ms718175) 에 *OLE DB Programmer's Reference*합니다.  
   
 에 해당 하는 일부 매개 변수 *OLE DB Programmer's Reference* 매개 변수에서 설명 하는 다른 이름의 `IDBProperties::GetPropertyInfo`:  
   
@@ -147,7 +147,7 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [idbproperties:: Setproperties](/previous-versions/windows/desktop/ms723049\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+참조 [idbproperties:: Setproperties](/previous-versions/windows/desktop/ms723049) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="remarks"></a>설명  
 

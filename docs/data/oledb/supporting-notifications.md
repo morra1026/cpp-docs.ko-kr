@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7ab24f981e90342a679b1a0a542b540192fee06e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a98848799163fd31037dc137b92b94878a1ee675
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46107859"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082464"
 ---
 # <a name="supporting-notifications"></a>알림 지원
 
@@ -33,7 +33,7 @@ ms.locfileid: "46107859"
 
 알림을 구현 하는 공급자 클래스에서 상속 해야 합니다 [IRowsetNotifyCP](../../data/oledb/irowsetnotifycp-class.md) 하 고 [IConnectionPointContainer](../../atl/reference/iconnectionpointcontainerimpl-class.md)합니다.  
   
-`IRowsetNotifyCP` 연결 지점 인터페이스에 대 한 공급자 사이트 구현 [IRowsetNotify](/previous-versions/windows/desktop/ms712959\(v=vs.85\))합니다. `IRowsetNotifyCP` 구현 브로드캐스트 수신기 연결 지점에 advise 할 함수 `IID_IRowsetNotify` 행 집합의 내용 변경 합니다.  
+`IRowsetNotifyCP` 연결 지점 인터페이스에 대 한 공급자 사이트 구현 [IRowsetNotify](/previous-versions/windows/desktop/ms712959)합니다. `IRowsetNotifyCP` 구현 브로드캐스트 수신기 연결 지점에 advise 할 함수 `IID_IRowsetNotify` 행 집합의 내용 변경 합니다.  
   
 또한 구현 및 등록 해야 하는 참고 `IRowsetNotify` 를 사용 하 여 소비자 (싱크 라고도 함)에 [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) 소비자 알림을 처리할 수 있도록 합니다. 소비자의 연결 지점 인터페이스를 구현 하는 방법에 대 한 내용은 [알림 수신](../../data/oledb/receiving-notifications.md)합니다.  
   

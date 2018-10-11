@@ -46,12 +46,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: aa4953c5ba879f5fa0fe8c5b892f91dfa8d15dc9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fb27c7fc401fb27b3677659f4f1b5539c19fda2c
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46095217"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082698"
 ---
 # <a name="csimplerow-class"></a>CSimpleRow 클래스
 
@@ -112,11 +112,11 @@ HRESULT Compare(CSimpleRow* pRow);
 #### <a name="parameters"></a>매개 변수  
 
 *pRow*<br/>
-에 대 한 포인터를 `CSimpleRow` 개체입니다.  
+`CSimpleRow` 개체에 대한 포인터입니다.  
   
 ### <a name="return-value"></a>반환 값  
 
-일반적으로 S_OK HRESULT 값을 두 행이 동일한 행 인스턴스를 나타내거나 S_FALSE를 두 개 행을 나타내는 다릅니다. 참조 [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 다른 가능한 반환 값입니다. 
+일반적으로 S_OK HRESULT 값을 두 행이 동일한 행 인스턴스를 나타내거나 S_FALSE를 두 개 행을 나타내는 다릅니다. 참조 [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629) 에 *OLE DB Programmer's Reference* 다른 가능한 반환 값입니다. 
 
 ## <a name="csimplerow"></a> Csimplerow:: Csimplerow
 

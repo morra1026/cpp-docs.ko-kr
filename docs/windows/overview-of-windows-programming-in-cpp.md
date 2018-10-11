@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0ddfd6de46d6d0700265f5308f06458b3cdd984a
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: b2870aa742806671e39728c3b73604dcf4e810e9
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677829"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083088"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++의 Windows 프로그래밍 개요
 
@@ -54,11 +54,11 @@ Windows 10에서는 태블릿, 휴대폰 및 데스크톱과 같은 모든 Windo
 
 일반적으로 참조 UWP에 대 한 자세한 내용은 [유니버설 Windows 플랫폼 (UWP) 앱 이란?](/windows/uwp/get-started/whats-a-uwp)합니다.
 
-이러한 모든 개념에 대 한 자세한 내용은 참조 하세요. [Windows 유니버설 앱 가이드](http://go.microsoft.com/fwlink/p/?linkid=534605)합니다.
+이러한 모든 개념에 대한 자세한 내용은 [Windows 유니버설 앱 가이드](http://go.microsoft.com/fwlink/p/?linkid=534605)를 참조하세요.
 
 ##  <a name="BK_Native"></a> 데스크톱 및 서버 응용 프로그램
 
-데스크톱용 Windows 클라이언트 응용 프로그램 작성의 기본 사항에 알아보려면 [c + +에서 Windows 응용 프로그램 개발](https://msdn.microsoft.com/vstudio//hh304489) 하 고 [c + +에서 Windows 프로그래밍 소개](https://msdn.microsoft.com/library/windows/desktop/ff381398\(v=vs.85\).aspx)합니다.
+데스크톱용 Windows 클라이언트 응용 프로그램 작성의 기본 사항을 알아보려면 [C++에서 Windows 응용 프로그램 개발](https://msdn.microsoft.com/vstudio//hh304489) 및 [C++에서 Windows 프로그래밍 소개](https://msdn.microsoft.com/library/windows/desktop/ff381398)를 참조하세요.
 
 Windows 10에서 다양 한 데스크톱 프로그램을 만들려면 Visual c + +를 사용할 수 있습니다.
 
@@ -68,7 +68,7 @@ Windows 10에서 다양 한 데스크톱 프로그램을 만들려면 Visual c +
 
 - .NET Framework에서 실행 되는 엔터프라이즈 및 기간 업무 앱 대부분의.NET Framework 응용 프로그램은 C# 또는 Visual Basic에서 기록 됩니다. 에서는 C + + 네이티브 c + + 라이브러리를 사용 하는.NET 코드를 사용 하도록 설정 하는 interop 레이어를 만들려면 CLI입니다. 자세한 내용은 [.NET 프로그래밍 C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)를 참조합니다.
 
-- 네이티브 코드에서 실행되는 SQL 데이터베이스 클라이언트 자세한 내용은 [SQL Server Native Client](/sql/relational-databases/native-client/odbc/sql-server-native-client-odbc)합니다.
+- 네이티브 코드에서 실행되는 SQL 데이터베이스 클라이언트 자세한 내용은 [SQL Server Native Client](/sql/relational-databases/native-client/odbc/sql-server-native-client-odbc)를 참조하세요.
 
 - Microsoft Office 응용 프로그램의 추가 기능 자세한 내용은 [Outlook 2010의 C++ 추가 기능 빌드](http://go.microsoft.com/fwlink/p/?LinkId=256420)를 참조하세요.
 
@@ -76,7 +76,7 @@ Windows 10에서 다양 한 데스크톱 프로그램을 만들려면 Visual c +
 
 - Windows 서비스. 자세한 내용은 [Introduction to Windows Service Applications](/dotnet/framework/windows-services/introduction-to-windows-service-applications)을 참조하세요.
 
-Visual C++를 사용하여 C++ 응용 프로그램이나 C# 또는 Visual Basic과 같은 다른 언어로 작성된 앱이 소비할 수 있는 Win32 DLL 또는 COM DLL에서 거의 모든 종류의 사용자 지정 고성능 기능을 패키지할 수 있습니다. WIn32 DLL에 대한 자세한 내용은 [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)를 참조하세요. COM 개발에 대 한 자세한 내용은 참조 하세요. [구성 요소 개체 모델 (COM)](/windows/desktop/com/component-object-model--com--portal)합니다.
+Visual C++를 사용하여 C++ 응용 프로그램이나 C# 또는 Visual Basic과 같은 다른 언어로 작성된 앱이 소비할 수 있는 Win32 DLL 또는 COM DLL에서 거의 모든 종류의 사용자 지정 고성능 기능을 패키지할 수 있습니다. WIn32 DLL에 대한 자세한 내용은 [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)를 참조하세요. COM 개발에 대한 자세한 내용은 [Component Object Model (COM)](/windows/desktop/com/component-object-model--com--portal)을 참조하세요.
 
 ## <a name="games"></a>게임
 

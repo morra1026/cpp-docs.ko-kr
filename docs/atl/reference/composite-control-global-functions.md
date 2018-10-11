@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54e4ab00a0d0df90601d06d9e2ffa100d82d4c03
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: dee59f5e86cddeec47da47c648b0cf12789cc85a
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46037361"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084102"
 ---
 # <a name="composite-control-global-functions"></a>복합 컨트롤 전역 함수
 
@@ -81,7 +81,7 @@ ATLAPI_(int) AtlAxDialogBox(
 [in] 해당 실행 파일 대화 상자 템플릿이 포함 된 모듈의 인스턴스를 식별 합니다.
 
 *lpTemplateName*<br/>
-[in] 대화 상자 템플릿을 식별합니다. 이 매개 변수는 대화 상자 템플릿의 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터 이거나 대화 상자 템플릿의 리소스 식별자를 지정 하는 정수 값입니다. 매개 변수는 리소스 식별자를 지정 하는 경우 경우 상위 워드가 0 이어야 합니다 하 고 해당 하위 단어는 식별자가 있어야 합니다. 사용할 수는 [MAKEINTRESOURCE](https://msdn.microsoft.com/library/windows/desktop/ms648029) 매크로이 값을 생성 합니다.
+[in] 대화 상자 템플릿을 식별합니다. 이 매개 변수는 대화 상자 템플릿의 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터 이거나 대화 상자 템플릿의 리소스 식별자를 지정 하는 정수 값입니다. 매개 변수는 리소스 식별자를 지정 하는 경우 경우 상위 워드가 0 이어야 합니다 하 고 해당 하위 단어는 식별자가 있어야 합니다. 사용할 수는 [MAKEINTRESOURCE](/windows/desktop/api/winuser/nf-winuser-makeintresourcea) 매크로이 값을 생성 합니다.
 
 *hWndParent*<br/>
 [in] 대화 상자를 소유 하는 창을 식별 합니다.
@@ -128,7 +128,7 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 [in] 해당 실행 파일 대화 상자 템플릿이 포함 된 모듈의 인스턴스를 식별 합니다.
 
 *lpTemplateName*<br/>
-[in] 대화 상자 템플릿을 식별합니다. 이 매개 변수는 대화 상자 템플릿의 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터 이거나 대화 상자 템플릿의 리소스 식별자를 지정 하는 정수 값입니다. 매개 변수는 리소스 식별자를 지정 하는 경우 경우 상위 워드가 0 이어야 합니다 하 고 해당 하위 단어는 식별자가 있어야 합니다. 사용할 수는 [MAKEINTRESOURCE](https://msdn.microsoft.com/library/windows/desktop/ms648029) 매크로이 값을 생성 합니다.
+[in] 대화 상자 템플릿을 식별합니다. 이 매개 변수는 대화 상자 템플릿의 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터 이거나 대화 상자 템플릿의 리소스 식별자를 지정 하는 정수 값입니다. 매개 변수는 리소스 식별자를 지정 하는 경우 경우 상위 워드가 0 이어야 합니다 하 고 해당 하위 단어는 식별자가 있어야 합니다. 사용할 수는 [MAKEINTRESOURCE](/windows/desktop/api/winuser/nf-winuser-makeintresourcea) 매크로이 값을 생성 합니다.
 
 *hWndParent*<br/>
 [in] 대화 상자를 소유 하는 창을 식별 합니다.

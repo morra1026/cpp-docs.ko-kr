@@ -33,16 +33,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 22f4aee2ac7cbefee19a33d929ec80b319b537d4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6f85fafe213fa7e53f67fb6a3035f415235c8794
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46117480"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082451"
 ---
 # <a name="cenumerator-class"></a>CEnumerator 클래스
 
-노출 하는 OLE DB 열거자 개체를 사용 하는 [ISourcesRowset](/previous-versions/windows/desktop/ms715969\(v=vs.85\)) 모든 데이터 원본 및 열거자를 설명 하는 행 집합을 반환 하는 인터페이스입니다.  
+노출 하는 OLE DB 열거자 개체를 사용 하는 [ISourcesRowset](/previous-versions/windows/desktop/ms715969) 모든 데이터 원본 및 열거자를 설명 하는 행 집합을 반환 하는 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -61,7 +61,7 @@ class CEnumerator :
   
 |||  
 |-|-|  
-|[찾기](#find)|지정한 이름을 가진 하나를 찾고 사용할 수 있는 공급자 (데이터 원본)를 통해 검색 합니다.|  
+|[Find](#find)|지정한 이름을 가진 하나를 찾고 사용할 수 있는 공급자 (데이터 원본)를 통해 검색 합니다.|  
 |[GetMoniker](#getmoniker)|검색 된 `IMoniker` 현재 레코드에 대 한 인터페이스입니다.|  
 |[열기](#open)|열거자를 엽니다.|  
   
@@ -90,7 +90,7 @@ bool Find(TCHAR* szSearchName) throw();
   
 ### <a name="remarks"></a>설명  
 
-이 이름에 매핑되는 `SOURCES_NAME` 의 멤버는 [ISourcesRowset](/previous-versions/windows/desktop/ms715969\(v=vs.85\)) 인터페이스입니다.  
+이 이름에 매핑되는 `SOURCES_NAME` 의 멤버는 [ISourcesRowset](/previous-versions/windows/desktop/ms715969) 인터페이스입니다.  
   
 ## <a name="getmoniker"></a> Cenumerator:: Getmoniker
 
@@ -119,7 +119,7 @@ HRESULT GetMoniker(LPMONIKER* ppMoniker,
 
 ## <a name="open"></a> Cenumerator:: Open
 
-지정 된 경우 하나를 호출 하 여 행 집합 열거자에 대 한 검색 하는 경우 열거자에 대 한 모니커를 바인딩합니다 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\))합니다.  
+지정 된 경우 하나를 호출 하 여 행 집합 열거자에 대 한 검색 하는 경우 열거자에 대 한 모니커를 바인딩합니다 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200)합니다.  
   
 ### <a name="syntax"></a>구문  
   

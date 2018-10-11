@@ -15,16 +15,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e115cf74eaac194c9e5b7154898cc23e10b220eb
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: b09fe303cb69cb36d04d696af2b83b30b8378f70
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100433"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083452"
 ---
 # <a name="platformguid-value-class"></a>Platform::Guid 값 클래스
 
-나타냅니다는 [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx) Windows 런타임 형식 시스템의 형식입니다.
+Windows 런타임 형식 시스템의 [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931) 형식을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -45,7 +45,7 @@ Guid에는 [Platform::Object Class](../cppcx/platform-object-class.md) [Platform
 
 ### <a name="remarks"></a>설명
 
-Windows 함수를 사용 하 여 새 platform::를 생성 하는 방법의 예로 [CoCreateGuid](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateguid)를 참조 하세요 [WinRT 구성 요소: GUID를 생성 하는 방법?](http://blogs.msdn.com/b/eternalcoding/archive/2013/03/25/winrt-component-how-to-generate-a-guid.aspx)
+Windows 함수 [CoCreateGuid](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateguid)를 사용하여 새 Platform::Guid를 생성하는 방법에 대한 예제는 [WinRT 구성 요소: GUID를 생성하는 방법](http://blogs.msdn.com/b/eternalcoding/archive/2013/03/25/winrt-component-how-to-generate-a-guid.aspx)을 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -157,7 +157,7 @@ Platform::Guid::operator!=
 
 ## <a name="operator-call"></a> Guid::operator() 연산자
 
-암시적으로 변환 된 [GUID 구조체](https://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx)platform:: GUID입니다.
+암시적으로 변환 된 [GUID 구조체](https://msdn.microsoft.com/library/windows/desktop/aa373931)platform:: GUID입니다.
 
 ### <a name="syntax"></a>구문
 

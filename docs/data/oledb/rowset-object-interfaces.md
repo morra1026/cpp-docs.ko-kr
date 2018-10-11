@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 87b8b6893c8fdd04374919ceff1d28a61bc315e5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 58986c7b80f2bb84b222047efc7aae359c0cd5b1
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024670"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083895"
 ---
 # <a name="rowset-object-interfaces"></a>행 집합 개체 인터페이스
 
@@ -32,30 +32,30 @@ ms.locfileid: "46024670"
   
 |인터페이스|필수 여부|OLE DB 템플릿에서 구현 되었습니까?|  
 |---------------|---------------|--------------------------------------|  
-|[IAccessor](/previous-versions/windows/desktop/ms719672\(v=vs.85\))|필수|예|  
-|[IColumnsInfo](/previous-versions/windows/desktop/ms724541\(v=vs.85\))|필수|예|  
-|[IConvertType](/previous-versions/windows/desktop/ms715926\(v=vs.85\))|필수|예|  
-|[IRowset](/previous-versions/windows/desktop/ms720986\(v=vs.85\))|필수|예|  
-|[IRowsetInfo](/previous-versions/windows/desktop/ms724541\(v=vs.85\))|필수|예|  
-|[IChapteredRowset](/previous-versions/windows/desktop/ms718180\(v=vs.85\))|Optional|아니요|  
-|[IColumnsInfo2](/previous-versions/windows/desktop/ms712953\(v=vs.85\))|Optional|아니요|  
-|[IColumnsRowset](/previous-versions/windows/desktop/ms722657\(v=vs.85\))|Optional|아니요|  
+|[IAccessor](/previous-versions/windows/desktop/ms719672)|필수|예|  
+|[IColumnsInfo](/previous-versions/windows/desktop/ms724541)|필수|예|  
+|[IConvertType](/previous-versions/windows/desktop/ms715926)|필수|예|  
+|[IRowset](/previous-versions/windows/desktop/ms720986)|필수|예|  
+|[IRowsetInfo](/previous-versions/windows/desktop/ms724541)|필수|예|  
+|[IChapteredRowset](/previous-versions/windows/desktop/ms718180)|Optional|아니요|  
+|[IColumnsInfo2](/previous-versions/windows/desktop/ms712953)|Optional|아니요|  
+|[IColumnsRowset](/previous-versions/windows/desktop/ms722657)|Optional|아니요|  
 |[IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)|Optional|예 (ATL)|  
-|[IDBAsynchStatus](/previous-versions/windows/desktop/ms709832\(v=vs.85\))|Optional|아니요|  
-|[IGetRow](/previous-versions/windows/desktop/ms718047\(v=vs.85\))|Optional|아니요|  
-|[IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\))|Optional|예|  
-|[IRowsetChapterMember](/previous-versions/windows/desktop/ms725430\(v=vs.85\))|Optional|아니요|  
-|[IRowsetCurrentIndex](/previous-versions/windows/desktop/ms709700\(v=vs.85\))|Optional|아니요|  
-|[IRowsetFind](/previous-versions/windows/desktop/ms724221\(v=vs.85\))|Optional|아니요|  
-|[IRowsetIdentity](/previous-versions/windows/desktop/ms715913\(v=vs.85\))|선택적 (수준 0 공급자에 대 한 필수)|예|  
-|[IRowsetIndex](/previous-versions/windows/desktop/ms719604\(v=vs.85\))|Optional|아니요|  
-|[IRowsetLocate](/previous-versions/windows/desktop/ms721190\(v=vs.85\))|Optional|예|  
-|[IRowsetRefresh](/previous-versions/windows/desktop/ms714892\(v=vs.85\))|Optional|아니요|  
-|[IRowsetScroll](/previous-versions/windows/desktop/ms712984\(v=vs.85\))|Optional|아니요|  
-|[IRowsetUpdate](/previous-versions/windows/desktop/ms714401\(v=vs.85\))|Optional|예|  
-|[IRowsetView](/previous-versions/windows/desktop/ms709755\(v=vs.85\))|Optional|아니요|  
-|[ISupportErrorInfo](/previous-versions/windows/desktop/ms715816\(v=vs.85\))|Optional|예|  
-|[IRowsetBookmark](/previous-versions/windows/desktop/ms714246\(v=vs.85\))|Optional|아니요|  
+|[IDBAsynchStatus](/previous-versions/windows/desktop/ms709832)|Optional|아니요|  
+|[IGetRow](/previous-versions/windows/desktop/ms718047)|Optional|아니요|  
+|[IRowsetChange](/previous-versions/windows/desktop/ms715790)|Optional|예|  
+|[IRowsetChapterMember](/previous-versions/windows/desktop/ms725430)|Optional|아니요|  
+|[IRowsetCurrentIndex](/previous-versions/windows/desktop/ms709700)|Optional|아니요|  
+|[IRowsetFind](/previous-versions/windows/desktop/ms724221)|Optional|아니요|  
+|[IRowsetIdentity](/previous-versions/windows/desktop/ms715913)|선택적 (수준 0 공급자에 대 한 필수)|예|  
+|[IRowsetIndex](/previous-versions/windows/desktop/ms719604)|Optional|아니요|  
+|[IRowsetLocate](/previous-versions/windows/desktop/ms721190)|Optional|예|  
+|[IRowsetRefresh](/previous-versions/windows/desktop/ms714892)|Optional|아니요|  
+|[IRowsetScroll](/previous-versions/windows/desktop/ms712984)|Optional|아니요|  
+|[IRowsetUpdate](/previous-versions/windows/desktop/ms714401)|Optional|예|  
+|[IRowsetView](/previous-versions/windows/desktop/ms709755)|Optional|아니요|  
+|[ISupportErrorInfo](/previous-versions/windows/desktop/ms715816)|Optional|예|  
+|[IRowsetBookmark](/previous-versions/windows/desktop/ms714246)|Optional|아니요|  
   
 마법사에서 생성 된 행 집합 개체에 구현 `IAccessor`, `IRowset`, 및 `IRowsetInfo` 상속을 통해. `IAccessorImpl` 모두 출력 열을 바인딩합니다. `IRowset` 인출 행 및 데이터를 처리 하는 인터페이스입니다. `IRowsetInfo` 행 집합 속성을 처리 하는 인터페이스입니다.  
   

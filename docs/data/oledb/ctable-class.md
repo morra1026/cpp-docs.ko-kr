@@ -24,12 +24,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c94152a9322b64acafe91e1fb0eb34ab82aa2902
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4548e319d7a85c547b0e750d040bdc6b6d7bbba5
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46081301"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083907"
 ---
 # <a name="ctable-class"></a>CTable 클래스
 
@@ -106,10 +106,10 @@ HRESULT Open(const CSession& session,
 [in] `DBID` 열려는 테이블입니다.  
   
 *pPropSet*<br/>
-[in] 배열에 대 한 포인터 [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다. 기본값은 NULL 없는 속성을 지정합니다.  
+[in] 배열에 대 한 포인터 [DBPROPSET](/previous-versions/windows/desktop/ms714367) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](/previous-versions/windows/desktop/ms713696) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다. 기본값은 NULL 없는 속성을 지정합니다.  
   
 *ulPropSets*<br/>
-[in] 수가 [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) 구조에 전달 합니다 *pPropSet* 인수입니다.  
+[in] 수가 [DBPROPSET](/previous-versions/windows/desktop/ms714367) 구조에 전달 합니다 *pPropSet* 인수입니다.  
   
 ### <a name="return-value"></a>반환 값  
 
@@ -117,7 +117,7 @@ HRESULT Open(const CSession& session,
   
 ### <a name="remarks"></a>설명  
 
-자세한 내용은 참조 하세요. [iopenrowset:: Openrowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+자세한 내용은 참조 하세요. [iopenrowset:: Openrowset](/previous-versions/windows/desktop/ms716724) 에 *OLE DB Programmer's Reference*합니다.  
   
 ## <a name="see-also"></a>참고 항목  
 

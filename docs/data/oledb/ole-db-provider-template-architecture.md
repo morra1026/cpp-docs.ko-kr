@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 71e693c09d59643a272a0b2736a5a229ef444aa9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ebea06a70f82c8014b52bc8f8db081ca2f0264c7
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46078896"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082997"
 ---
 # <a name="ole-db-provider-template-architecture"></a>OLE DB 공급자 템플릿 구조
 
@@ -50,7 +50,7 @@ OLE DB 공급자 템플릿에 필요한 모든 인터페이스에 대 한 미리
   
 참고 OLE DB 공급자 템플릿 행 및 저장소 개체를 구현 하지 않습니다.  
   
-다음 표에서 위에 나열 된 개체에 대 한 필수 및 선택적 인터페이스에 따라 합니다 [OLE DB 2.6 SDK 설명서](/previous-versions/windows/desktop/ms722784\(v=vs.85\))합니다.  
+다음 표에서 위에 나열 된 개체에 대 한 필수 및 선택적 인터페이스에 따라 합니다 [OLE DB 2.6 SDK 설명서](/previous-versions/windows/desktop/ms722784)합니다.  
   
 |구성 요소|인터페이스|주석|  
 |---------------|---------------|-------------|  
@@ -69,4 +69,4 @@ OLE DB 공급자 템플릿에 필요한 모든 인터페이스에 대 한 미리
 ## <a name="see-also"></a>참고 항목  
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB 인터페이스](/previous-versions/windows/desktop/ms709709\(v=vs.85\))
+[OLE DB 인터페이스](/previous-versions/windows/desktop/ms709709)

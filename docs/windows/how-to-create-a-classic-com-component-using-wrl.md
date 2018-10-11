@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3844c0ad304c1ebd18a707ca1821b72b60e92707
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7c3d16cada621232c54176717f9bbdedb71a7e21
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43198021"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083428"
 ---
 # <a name="how-to-create-a-classic-com-component-using-wrl"></a>방법: WRL을 사용하여 기본 COM 구성 요소 만들기
 
@@ -38,7 +38,7 @@ ms.locfileid: "43198021"
 
    [!code-cpp[wrl-classic-com-component#1](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_1.idl)]
 
-5. CalculatorComponent.cpp에서 `CalculatorComponent` 클래스를 정의합니다. 합니다 `CalculatorComponent` 클래스에서 상속 [Microsoft::WRL::RuntimeClass](../windows/runtimeclass-class.md)합니다. [Microsoft::WRL::RuntimeClassFlags\<ClassicCom >](../windows/runtimeclassflags-structure.md) 클래스에서 파생 되는 지정 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 아니라 [IInspectable](https://msdn.microsoft.com/library/br205821\(v=vs.85\).aspx)합니다. (`IInspectable` Windows 런타임 앱 구성 요소에만 사용할 수 있습니다.) `CoCreatableClass` 와 같은 함수를 사용 하 여 사용할 수 있는 클래스에 대 한 팩터리를 만듭니다 [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)합니다.
+5. CalculatorComponent.cpp에서 `CalculatorComponent` 클래스를 정의합니다. 합니다 `CalculatorComponent` 클래스에서 상속 [Microsoft::WRL::RuntimeClass](../windows/runtimeclass-class.md)합니다. [Microsoft::WRL::RuntimeClassFlags\<ClassicCom >](../windows/runtimeclassflags-structure.md) 클래스에서 파생 되는 지정 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 아니라 [IInspectable](https://msdn.microsoft.com/library/br205821)합니다. (`IInspectable` Windows 런타임 앱 구성 요소에만 사용할 수 있습니다.) `CoCreatableClass` 와 같은 함수를 사용 하 여 사용할 수 있는 클래스에 대 한 팩터리를 만듭니다 [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)합니다.
 
    [!code-cpp[wrl-classic-com-component#2](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_2.cpp)]
 

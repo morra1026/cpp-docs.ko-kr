@@ -37,16 +37,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 542c97c1e13d5979290772668b6dccebe1ece9f9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3d00e6a89d8c05f5b9d6a3f1eaef434968931a26
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46113164"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083309"
 ---
 # <a name="irowsetinfoimpl-class"></a>IRowsetInfoImpl 클래스
 
-에 대 한 구현을 제공 합니다 [IRowsetInfo](/previous-versions/windows/desktop/ms724541\(v=vs.85\)) 인터페이스입니다.  
+에 대 한 구현을 제공 합니다 [IRowsetInfo](/previous-versions/windows/desktop/ms724541) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -98,7 +98,7 @@ STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [irowsetinfo:: Getproperties](/previous-versions/windows/desktop/ms719611\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 
+참조 [irowsetinfo:: Getproperties](/previous-versions/windows/desktop/ms719611) 에 *OLE DB Programmer's Reference*합니다. 
 
 ## <a name="getreferencedrowset"></a> Irowsetinfoimpl:: Getreferencedrowset
 
@@ -114,7 +114,7 @@ STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [IRowsetInfo::GetReferencedRowset](/previous-versions/windows/desktop/ms721145\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 합니다 *iOrdinal* 매개 변수는 책갈피 열 이어야 합니다. 
+참조 [IRowsetInfo::GetReferencedRowset](/previous-versions/windows/desktop/ms721145) 에 *OLE DB Programmer's Reference*합니다. 합니다 *iOrdinal* 매개 변수는 책갈피 열 이어야 합니다. 
 
 ## <a name="getspecification"></a> Irowsetinfoimpl:: Getspecification
 
@@ -129,7 +129,7 @@ STDMETHOD (GetSpecification )(REFIID riid,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [IRowsetInfo::GetSpecification](/previous-versions/windows/desktop/ms716746\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+참조 [IRowsetInfo::GetSpecification](/previous-versions/windows/desktop/ms716746) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="remarks"></a>설명  
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 60bed04015060bd65f4d4c771a228e3b50c3486e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8c4e3003beb0e50887f6b765904095c65dd8f1b6
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46057108"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083660"
 ---
 # <a name="obtaining-metadata-with-schema-rowsets"></a>스키마 행 집합을 사용하여 메타데이터 구하기
 
@@ -63,7 +63,7 @@ CRestrictions<CAccessor<CColumnsInfo>
   
 합니다 [CRestrictions](../../data/oledb/crestrictions-class.md) 클래스는 제한을 지원 제공 합니다. 스키마 행 집합의 인스턴스를 만든 후 호출 [crestrictions:: Open](../../data/oledb/crestrictions-open.md)합니다. 이 메서드는 지정하는 제한을 기반으로 결과 집합을 반환합니다.  
   
-제한 지정을 하려면를 참조 [부록 b: 스키마 행 집합](/previous-versions/windows/desktop/ms712921\(v=vs.85\)) 및 사용 하는 행 집합을 조회 합니다. 예를 들어 `CColumns` 에 해당 하는 [COLUMNS 행 집합](/previous-versions/windows/desktop/ms723052\(v%3dvs.85\));에서는 COLUMNS 행 집합에서 제한 열이 나열: TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME 합니다. 제한을 지정할 때 이 순서를 따라야 합니다.  
+제한 지정을 하려면를 참조 [부록 b: 스키마 행 집합](/previous-versions/windows/desktop/ms712921) 및 사용 하는 행 집합을 조회 합니다. 예를 들어 `CColumns` 에 해당 하는 [COLUMNS 행 집합](/previous-versions/windows/desktop/ms723052\(v%3dvs.85\));에서는 COLUMNS 행 집합에서 제한 열이 나열: TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME 합니다. 제한을 지정할 때 이 순서를 따라야 합니다.  
   
 따라서 예를 들어 테이블 이름으로 제한 하려는 경우 TABLE_NAME이 세 번째 제한 열에는 및 호출 `Open`, 다음 예제에서와 같이 원하는 테이블 이름을 세 번째 제한 매개 변수로 지정 합니다.  
   
@@ -93,7 +93,7 @@ CRestrictions<CAccessor<CColumnsInfo>
   
 스키마 행 집합의 참조를 OLE DB 템플릿에서 typedef 클래스가 제공 (참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)).  
   
-제한 열을 포함 하 여 OLE DB 스키마 행 집합에 대 한 자세한 내용은 참조 [부록 b: 스키마 행 집합](/previous-versions/windows/desktop/ms712921\(v=vs.85\)) OLE DB 프로그래머 참조에서입니다.  
+제한 열을 포함 하 여 OLE DB 스키마 행 집합에 대 한 자세한 내용은 참조 [부록 b: 스키마 행 집합](/previous-versions/windows/desktop/ms712921) OLE DB 프로그래머 참조에서입니다.  
   
 스키마 행 집합 클래스를 사용 하는 방법의 더 복잡 한 예제를 참조 하세요. 합니다 [CatDB](https://github.com/Microsoft/VCSamples) 하 고 [DBViewer](https://github.com/Microsoft/VCSamples) 샘플입니다.  
   

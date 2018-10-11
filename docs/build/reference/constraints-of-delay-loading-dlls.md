@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69e985b81072de306c818218e19bbb660e3e04a4
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 497de9695e75810f2fe68101627f2ba3606aa048
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45719735"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082011"
 ---
 # <a name="constraints-of-delay-loading-dlls"></a>DLL 지연 로드의 제약 조건
 
@@ -44,9 +44,9 @@ ms.locfileid: "45719735"
 ## <a name="see-also"></a>참고 항목
 
 [링커의 지연 로드된 DLL 지원](../../build/reference/linker-support-for-delay-loaded-dlls.md)<br/>
-[LoadLibrary 함수](https://msdn.microsoft.com/library/windows/desktop/ms684175.aspx)<br/>
-[GetModuleHandle 함수](https://msdn.microsoft.com/library/windows/desktop/ms683199.aspx)<br/>
-[GetProcAddress 함수](https://msdn.microsoft.com/library/windows/desktop/ms683212.aspx)<br/>
+[LoadLibrary 함수](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya)<br/>
+[GetModuleHandle 함수](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea)<br/>
+[GetProcAddress 함수](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress)<br/>
 [TlsAlloc 함수](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc)<br/>
 [Tlsfree가 함수](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsfree)<br/>
 [TlsGetValue 함수](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)<br/>

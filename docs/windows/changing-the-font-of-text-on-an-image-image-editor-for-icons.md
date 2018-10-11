@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5a49cb4fa88b3a014d79969cc86fc03fa1136efa
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5491f8a761eee80595265150ee0cb89c682b3079
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405348"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084050"
 ---
 # <a name="changing-the-font-of-text-on-an-image-image-editor-for-icons"></a>이미지의 텍스트 글꼴 변경(아이콘에 대한 이미지 편집기)
 
@@ -32,7 +32,7 @@ ms.locfileid: "46405348"
 
 ### <a name="to-change-the-font-of-text-on-an-image"></a>이미지의 텍스트의 글꼴을 변경 하려면
 
-1. C + + Windows Forms 응용 프로그램을 만듭니다. 자세한 내용은 참조 하세요 [Windows 응용 프로그램 프로젝트를 만드는](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5\(v=vs.100\))합니다. `app.ico` 파일은 기본적으로 프로젝트에 추가 됩니다.
+1. C + + Windows Forms 응용 프로그램을 만듭니다. 자세한 내용은 참조 하세요 [Windows 응용 프로그램 프로젝트를 만드는](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5)합니다. `app.ico` 파일은 기본적으로 프로젝트에 추가 됩니다.
 
 2. **솔루션 탐색기**, app.ico 파일을 두 번 클릭 합니다. 합니다 [이미지 편집기](../windows/image-editor-for-icons.md) 열립니다.
 

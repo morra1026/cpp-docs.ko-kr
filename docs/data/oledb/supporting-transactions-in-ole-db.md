@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 76dc4cb86601be714e7ca1d442eb904d016e877b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 47b869ffc6ad3dd1492ab052d648bcb8acde7e52
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46102788"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083699"
 ---
 # <a name="supporting-transactions-in-ole-db"></a>OLE DB에서 트랜잭션 지원
 
@@ -33,11 +33,11 @@ A [트랜잭션](../../data/transactions-mfc-data-access.md) 그룹 또는 일�
   
 OLE DB는 다음 세 가지 메서드를 사용 하 여 트랜잭션을 지원합니다.  
   
-- [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786\(v=vs.85\))  
+- [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786)  
   
-- [ITransaction::Commit](/previous-versions/windows/desktop/ms713008\(v=vs.85\))  
+- [ITransaction::Commit](/previous-versions/windows/desktop/ms713008)  
   
-- [ITransaction::Abort](/previous-versions/windows/desktop/ms709833\(v=vs.85\))  
+- [ITransaction::Abort](/previous-versions/windows/desktop/ms709833)  
   
 ## <a name="relationship-of-sessions-and-transactions"></a>세션 및 트랜잭션과의 관계  
 
@@ -59,7 +59,7 @@ OLE DB는 다음 세 가지 메서드를 사용 하 여 트랜잭션을 지원�
   
 ## <a name="nested-transactions"></a>중첩 된 트랜잭션  
 
-A [트랜잭션 중첩](/previous-versions/windows/desktop/ms716985\(v=vs.85\)) 세션에 활성 트랜잭션이 이미 있는 경우 새 로컬 트랜잭션을 시작할 때 발생 합니다. 현재 트랜잭션 아래 중첩 트랜잭션으로 새 트랜잭션이 시작 됩니다. 공급자는 중첩 된 트랜잭션을 지원 하지 않으면, 호출 `StartTransaction` 세션에 활성 트랜잭션이 이미 있을 때 XACT_E_XTIONEXISTS를 반환 합니다.  
+A [트랜잭션 중첩](/previous-versions/windows/desktop/ms716985) 세션에 활성 트랜잭션이 이미 있는 경우 새 로컬 트랜잭션을 시작할 때 발생 합니다. 현재 트랜잭션 아래 중첩 트랜잭션으로 새 트랜잭션이 시작 됩니다. 공급자는 중첩 된 트랜잭션을 지원 하지 않으면, 호출 `StartTransaction` 세션에 활성 트랜잭션이 이미 있을 때 XACT_E_XTIONEXISTS를 반환 합니다.  
   
 ## <a name="distributed-transactions"></a>분산 트랜잭션  
 

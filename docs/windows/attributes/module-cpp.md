@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 71ada4927d1a29c2f4d9a95ed93554b0cbffc92d
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: e999928e2080796c013107e3bc862d19426dbf88
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791409"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083530"
 ---
 # <a name="module-c"></a>module(C++)
 
@@ -57,7 +57,7 @@ ms.locfileid: "48791409"
 라이브러리에 대한 고유 ID입니다. 이 매개 변수를 생략하면 라이브러리에 대한 ID가 자동으로 생성됩니다. 검색 해야 합니다 *uuid* 의 라이브러리 블록의 식별자를 사용 하 여 수행할 수 있습니다 **__uuidof (** *libraryname* **)** 합니다.
 
 *lcid*<br/>
-지역화 매개 변수입니다. 참조 [lcid](/windows/desktop/Midl/lcid) 자세한 내용은 합니다.
+지역화 매개 변수입니다. 자세한 내용은 [lcid](/windows/desktop/Midl/lcid) 를 참조하세요.
 
 *control*<br/>
 (선택 사항) 라이브러리의 모든 coclass 컨트롤 되도록 지정 합니다.
@@ -66,7 +66,7 @@ ms.locfileid: "48791409"
 형식 라이브러리를 지정합니다.
 
 *helpstringdll*<br/>
-(선택 사항) 문서 문자열 조회를 수행 하는 데.dll 파일의 이름을 설정 합니다. 참조 [helpstringdll](/windows/desktop/Midl/helpstringdll) 자세한 내용은 합니다.
+(선택 사항) 문서 문자열 조회를 수행 하는 데.dll 파일의 이름을 설정 합니다. 자세한 내용은 [helpstringdll](/windows/desktop/Midl/helpstringdll) 을 참조하세요.
 
 *helpfile*<br/>
 (선택 사항) 이름을 합니다 **도움말** 형식 라이브러리 파일입니다.
@@ -78,10 +78,10 @@ ms.locfileid: "48791409"
 (선택 사항) 참조 [helpstringcontext](helpstringcontext.md) 자세한 내용은 합니다.
 
 *hidden*<br/>
-(선택 사항) 전체 라이브러리가 표시 되지 않도록 방지 합니다. 이 사용법은 컨트롤과 함께 사용하기 위한 것입니다. 호스트는 확장된 속성을 사용하여 컨트롤을 래핑하는 새로운 형식 라이브러리를 만들어야 합니다. 참조 된 [숨겨진](/windows/desktop/Midl/hidden) 자세한 MIDL 특성입니다.
+(선택 사항) 전체 라이브러리가 표시 되지 않도록 방지 합니다. 이 사용법은 컨트롤과 함께 사용하기 위한 것입니다. 호스트는 확장된 속성을 사용하여 컨트롤을 래핑하는 새로운 형식 라이브러리를 만들어야 합니다. 자세한 내용은 [hidden](/windows/desktop/Midl/hidden) MIDL 특성을 참조하세요.
 
 *restricted*<br/>
-(선택 사항) 라이브러리의 멤버를 임의로 호출할 수 없습니다. 참조 된 [제한](/windows/desktop/Midl/restricted) 자세한 MIDL 특성입니다.
+(선택 사항) 라이브러리의 멤버를 임의로 호출할 수 없습니다. 자세한 내용은 [restricted](/windows/desktop/Midl/restricted) MIDL 특성을 참조하세요.
 
 *custom*<br/>
 (선택 사항) 하나 이상의 특성 이 비슷합니다는 [사용자 지정](custom-cpp.md) 특성입니다. 첫 번째 매개 변수를 *사용자 지정* 특성의 GUID입니다. 예를 들어:
@@ -98,9 +98,9 @@ DLL, 실행 파일 또는 서비스의 APP ID를 등록하는 데 사용되는 .
 
 ## <a name="remarks"></a>설명
 
-지정 하지 않으면 합니다 *제한* 매개 변수를 [emitidl](emitidl.md)를 **모듈** c + + 특성을 사용 하는 프로그램에 필요 합니다.
+*restricted* 매개 변수를 [emitidl](emitidl.md)로 지정하지 않는 경우, C++ 특성을 사용하는 프로그램에 **module** 이 필요합니다.
 
-하는 경우 라이브러리 블록이 만들어집니다 외에 **모듈** 특성을 소스 코드에서는 [dispinterface](dispinterface.md)를 [이중](dual.md), [개체](object-cpp.md), 또는 암시 하는 특성 [coclass](coclass.md)합니다.
+소스 코드가 **module** 특성 외에 [dispinterface](dispinterface.md), [dual](dual.md), [object](object-cpp.md)특성 또는 [coclass](coclass.md)를 암시하는 특성을 사용하는 경우 라이브러리 블록이 만들어집니다.
 
 .idl 파일 하나에 라이브러리 블록 하나가 허용됩니다. 소스 코드에 여러 모듈 항목이 병합되며, 가장 최근의 매개 변수 값이 구현됩니다.
 
@@ -108,15 +108,15 @@ ATL을 사용하는 프로젝트 내에서 이 특성을 사용하는 경우 특
 
 - `type` = **dll**
 
-   [CAtlDllModuleT](../../atl/reference/catldllmodulet-class.md) 기본 클래스 및 표준 DLL 진입점으로 사용 되는 COM 서버에 필요한 합니다. 이러한 진입점은 [DllMain](/windows/desktop/Dlls/dllmain), [DllRegisterServer](https://msdn.microsoft.com/library/windows/desktop/ms682162), [DllUnRegisterServer](https://msdn.microsoft.com/library/windows/desktop/ms691457)하십시오 [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), 및 [ DllGetClassObject](https://msdn.microsoft.com/library/windows/desktop/dd797891)합니다.
+   [CAtlDllModuleT](../../atl/reference/catldllmodulet-class.md) 는 COM 서버에 필요한 기본 클래스 및 표준 DLL 진입점으로 사용됩니다. 이러한 진입점은 [DllMain](/windows/desktop/Dlls/dllmain), [DllRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllregisterserver), [DllUnRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllunregisterserver), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow)및 [DllGetClassObject](https://msdn.microsoft.com/library/windows/desktop/dd797891)입니다.
 
 - `type` = **exe**
 
-   [CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md) 기본 클래스 및 표준 실행 파일 진입점으로 사용 됩니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559)합니다.
+   [CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md) 는 기본 클래스 및 표준 실행 파일 진입점 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559)으로 사용됩니다.
 
 - `type` = **service**
 
-   [CAtlServiceModuleT](../../atl/reference/catlservicemodulet-class.md) 기본 클래스 및 표준 실행 파일 진입점으로 사용 됩니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559)합니다.
+   [CAtlServiceModuleT](../../atl/reference/catlservicemodulet-class.md) 는 기본 클래스 및 표준 실행 파일 진입점 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559)으로 사용됩니다.
 
 - `type` = **unspecified**
 
@@ -132,7 +132,7 @@ ATL을 사용하는 프로젝트 내에서 이 특성을 사용하는 경우 특
 [module(name="MyLibrary", version="1.2", helpfile="MyHelpFile")];
 ```
 
-다음 코드는 **module**사용 결과 삽입된 코드에 나타날 수 있는 함수의 자체 구현을 제공할 수 있음을 보여 줍니다. 참조 [/Fx](../../build/reference/fx-merge-injected-code.md) 삽입 된 코드 보기에 대 한 자세한 내용은 합니다. **module** 특성에 의해 삽입된 함수 중 하나를 재정의하려면 함수의 구현을 포함할 클래스를 만들고 여기에 **module** 특성을 적용합니다.
+다음 코드는 **module**사용 결과 삽입된 코드에 나타날 수 있는 함수의 자체 구현을 제공할 수 있음을 보여 줍니다. 삽입된 코드 보기에 대한 자세한 정보는 [/Fx](../../build/reference/fx-merge-injected-code.md) 를 참조하세요. **module** 특성에 의해 삽입된 함수 중 하나를 재정의하려면 함수의 구현을 포함할 클래스를 만들고 여기에 **module** 특성을 적용합니다.
 
 ```cpp
 // cpp_attr_ref_module2.cpp
@@ -168,7 +168,7 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

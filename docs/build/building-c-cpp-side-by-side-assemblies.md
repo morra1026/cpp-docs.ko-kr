@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e3c80b383c592d3eebf892981c088e26529c515
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 93e02ee27fb8b5a1f4f4f7b2e435a737e1c637a2
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860942"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083845"
 ---
 # <a name="building-cc-side-by-side-assemblies"></a>C/C++ side-by-side 어셈블리 빌드
 
@@ -30,7 +30,7 @@ Visual c + + 응용 프로그램을 응용 프로그램의 다른 부분에 하�
 기본적으로 Visual Studio를 사용 하 여 DLL를 빌드할 때에 [응용 프로그램 매니페스트](/windows/desktop/SbsCs/application-manifests) ID가 2 RT_MANIFEST 리소스로 포함 합니다. 이 매니페스트 파일과 마찬가지로 개발자가 다른 어셈블리에이 DLL의 종속성을 설명합니다. DLL side-by-side-어셈블리의 일부가 아닙니다.이 DLL에 종속 된 응용 프로그램을 로드 하는 대신 운영 체제 로더에 시스템 경로에이 DLL을 찾을 수에 따라 응용 프로그램 매니페스트를 사용 하지 않는 되었다고 가정 합니다.
 
 > [!NOTE]
-> ID가 2 인 리소스로 포함 된 매니페스트가 있어야 응용 프로그램 매니페스트를 사용 하는 DLL에 대 한 것입니다. 런타임에 동적으로 DLL을 로드 하는 경우 (예를 들어,를 사용 하 여는 [LoadLibrary](https://msdn.microsoft.com/library/windows/desktop/ms684175) 함수), 운영 체제 로더에 DLL의 매니페스트에 지정 하는 종속 어셈블리를 로드 합니다. Dll에 대 한 외부 응용 프로그램 매니페스트 하는 동안 선택 하지 않으면는 `LoadLibrary` 호출 합니다. 매니페스트에 포함 되지 않은 경우 로더는 잘못 된 버전의 어셈블리를 로드 하거나 종속 어셈블리를 찾지 못했습니다. 시도할 수 있습니다.
+> ID가 2 인 리소스로 포함 된 매니페스트가 있어야 응용 프로그램 매니페스트를 사용 하는 DLL에 대 한 것입니다. 런타임에 동적으로 DLL을 로드 하는 경우 (예를 들어,를 사용 하 여는 [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) 함수), 운영 체제 로더에 DLL의 매니페스트에 지정 하는 종속 어셈블리를 로드 합니다. Dll에 대 한 외부 응용 프로그램 매니페스트 하는 동안 선택 하지 않으면는 `LoadLibrary` 호출 합니다. 매니페스트에 포함 되지 않은 경우 로더는 잘못 된 버전의 어셈블리를 로드 하거나 종속 어셈블리를 찾지 못했습니다. 시도할 수 있습니다.
 
 하나 이상의 관련 해당 side-by-side-어셈블리에 Dll을 재구성할 수 있습니다 [어셈블리 매니페스트](/windows/desktop/SbsCs/assembly-manifests)를 설명 하는 다른-side-by-side에 대 한 어셈블리의 종속성 뿐만 아니라 어셈블리를 형성 하는 파일 어셈블리입니다.
 
