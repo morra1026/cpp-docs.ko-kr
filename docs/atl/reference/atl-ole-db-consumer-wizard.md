@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 163949c4421cca8e4d5e414a18bda4ed98f32d3d
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 2555bdd9c1de130cd692131c12b7b2afc37537be
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861644"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083049"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB 소비자 마법사
 
@@ -36,7 +36,7 @@ ms.locfileid: "48861644"
 
 - **데이터 원본**
 
-   합니다 **데이터 원본** 단추 지정된 된 OLE DB 공급자를 사용 하 여 지정 된 데이터 소스를 설정할 수 있습니다. 이 단추를 클릭 합니다 **데이터 연결 속성** 대화 상자가 나타납니다. 연결 문자열을 작성 하는 방법은 하며 **데이터 연결 속성** 대화 상자, 참조 [데이터 링크 API 개요](/previous-versions/windows/desktop/ms718102\(v=vs.85\)) Windows SDK 설명서의 합니다.
+   합니다 **데이터 원본** 단추 지정된 된 OLE DB 공급자를 사용 하 여 지정 된 데이터 소스를 설정할 수 있습니다. 이 단추를 클릭 합니다 **데이터 연결 속성** 대화 상자가 나타납니다. 연결 문자열을 작성 하는 방법은 하며 **데이터 연결 속성** 대화 상자, 참조 [데이터 링크 API 개요](/previous-versions/windows/desktop/ms718102) Windows SDK 설명서의 합니다.
 
    다음과 같은 추가 정보는 탭에 설명 합니다 **데이터 연결 속성** 대화 상자.
 
@@ -177,7 +177,7 @@ ms.locfileid: "48861644"
 
 - **지원**
 
-   (기본값은 none) 소비자에서 지원 되는 데 업데이트 종류를 지정 하는 확인란을 선택 합니다. 설정이 다음 각 [DBPROP_IRowsetChange](/previous-versions/windows/desktop/ms715892\(v=vs.85\)) 와 적절 한 항목을 [DBPROP_UPDATABILITY](/previous-versions/windows/desktop/ms722676\(v=vs.85\)) 속성에서 지도 설정 합니다.
+   (기본값은 none) 소비자에서 지원 되는 데 업데이트 종류를 지정 하는 확인란을 선택 합니다. 설정이 다음 각 [DBPROP_IRowsetChange](/previous-versions/windows/desktop/ms715892) 와 적절 한 항목을 [DBPROP_UPDATABILITY](/previous-versions/windows/desktop/ms722676) 속성에서 지도 설정 합니다.
 
    - **변경**
 
@@ -195,4 +195,4 @@ ms.locfileid: "48861644"
 
 [ATL OLE DB 소비자](../../atl/reference/adding-an-atl-ole-db-consumer.md)<br/>
 [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[연결 문자열 및 데이터 링크 (OLE DB)](/previous-versions/windows/desktop/ms718376\(v=vs.85\))
+[연결 문자열 및 데이터 링크 (OLE DB)](/previous-versions/windows/desktop/ms718376)

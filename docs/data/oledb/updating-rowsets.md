@@ -18,18 +18,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0c662099f3e7c42b75dc0cf197117144790f9df1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: be82fb1c1f77ae3204bed54257062f362d286844
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46108354"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083829"
 ---
 # <a name="updating-rowsets"></a>행 집합 업데이트
 
 매우 기본적인 데이터베이스 작업은 데이터 저장소 업데이트 또는 데이터 기록입니다. OLE DB에서 업데이트 메커니즘은 간단합니다. 소비자 응용 프로그램이 바인딩된 데이터 멤버의 값을 설정하고 행 집합에 해당 값을 쓴 다음 소비자가 공급자에게 데이터 저장소를 업데이트하도록 요청합니다.  
   
-소비자는 행 내의 열 값 설정, 행 삽입, 행 삭제 등의 업데이트를 행 집합 데이터에서 수행할 수 있습니다. OLE DB 템플릿 클래스는 이러한 작업을 수행할 [CRowset](../../data/oledb/crowset-class.md) 구현 합니다 [IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\)) 인터페이스 및 다음 인터페이스 메서드를 재정의 합니다.  
+소비자는 행 내의 열 값 설정, 행 삽입, 행 삭제 등의 업데이트를 행 집합 데이터에서 수행할 수 있습니다. 이러한 작업을 수행하기 위해 OLE DB 템플릿 클래스 [CRowset](../../data/oledb/crowset-class.md) 는 [IRowsetChange](/previous-versions/windows/desktop/ms715790) 인터페이스를 구현하고 다음 인터페이스 메서드를 재정의합니다.  
   
 - [SetData](../../data/oledb/crowset-setdata.md) 는 행 집합의 한 행에서 열 값을 변경하며 SQL UPDATE 명령과 같습니다.  
   
@@ -223,4 +223,4 @@ product.Update();                 // Update row 101 now
 
 [OLE DB 소비자 템플릿 작업](../../data/oledb/working-with-ole-db-consumer-templates.md)<br/>
 [CRowset 클래스](../../data/oledb/crowset-class.md)<br/>
-[IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\))
+[IRowsetChange](/previous-versions/windows/desktop/ms715790)

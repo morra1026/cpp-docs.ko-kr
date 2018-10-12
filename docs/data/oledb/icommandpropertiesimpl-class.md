@@ -27,16 +27,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b31a023e39241a5393fbb9f36177ca42f88fd57e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 432fb57b1505733b4f9cbda4e558699a8108a3ad
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070901"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083998"
 ---
 # <a name="icommandpropertiesimpl-class"></a>ICommandPropertiesImpl 클래스
 
-구현을 제공 합니다 [ICommandProperties](/previous-versions/windows/desktop/ms723044\(v=vs.85\)) 인터페이스입니다.  
+구현을 제공 합니다 [ICommandProperties](/previous-versions/windows/desktop/ms723044) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -86,7 +86,7 @@ STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [icommandproperties:: Getproperties](/previous-versions/windows/desktop/ms723119\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+참조 [icommandproperties:: Getproperties](/previous-versions/windows/desktop/ms723119) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="remarks"></a>설명  
 
@@ -105,7 +105,7 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [icommandproperties:: Setproperties](/previous-versions/windows/desktop/ms711497\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+참조 [icommandproperties:: Setproperties](/previous-versions/windows/desktop/ms711497) 에 *OLE DB Programmer's Reference*합니다.  
   
 ## <a name="see-also"></a>참고 항목  
 

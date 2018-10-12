@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cfb885a5d29c26f4a40d5b93490a06652eff1ffc
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6253b52d322982efe8beafc45c9942fb3787818a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216674"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46082497"
 ---
 # <a name="format-specification-syntax-printf-and-wprintf-functions"></a>형식 사양 구문: printf 및 wprintf 함수
 
@@ -58,8 +58,7 @@ ms.locfileid: "43216674"
 `short`, `int`, `long`, `long long` 등의 정수 형식 및 그 `unsigned` 변형은 **d**, **i**, **o**, **u**, **x** 및 **X**를 사용하여 지정됩니다. `float`, `double`, `long double` 등의 부동 소수점 형식은 **a**, **A**, **e**, **E**, **f**, **F**, **g** 및 **G**를 사용하여 지정됩니다. *size* 접두사에 의해 수정되지 않는 한, 기본적으로 정수 인수는 `int` 형식으로 강제 변환되고 부동 소수점 인수는 `double`로 강제 변환됩니다. 64비트 시스템에서, `int`는 32비트 값이므로 **ll** 또는 **I64**의 *size* 접두사가 사용되지 않는 경우 64비트 정수는 출력을 위해 형식이 지정될 때 잘립니다. **p**로 지정되는 포인터 형식은 플랫폼에 대해 기본 포인터 크기를 사용합니다.
 
 > [!NOTE]
-> **Microsoft 전용**  
-> **Z** 형식 문자와 **c**, **C**, **s** 및 **S** 형식 문자가 `printf` 및 `wprintf` 함수와 함께 사용될 때의 동작은 Microsoft 확장입니다. ISO C 표준에서는 모든 형식 지정 함수에서 반각 문자 및 문자열에 대해 일관되게 **c** 및 **s**를 사용하고 와이드 문자 및 문자열에 대해 **C** 및 **S**를 사용합니다.
+> **Microsoft 특정** **Z** 형식 문자와 **c**, **C**, **s** 및 **S** 형식 문자가 `printf` 및 `wprintf` 함수와 함께 사용될 때의 동작은 Microsoft 확장입니다. ISO C 표준에서는 모든 형식 지정 함수에서 반각 문자 및 문자열에 대해 일관되게 **c** 및 **s**를 사용하고 와이드 문자 및 문자열에 대해 **C** 및 **S**를 사용합니다.
 
 ### <a name="type-field-characters"></a>형식 필드 문자
 
@@ -212,11 +211,10 @@ Visual C++에서 `long double`은 고유한 형식이지만 내부 표현은 `do
 **hc** 또는 **hC** 형식 지정자는 `printf` 함수의 **c** 및 `wprintf` 함수의 **C**와 같습니다. **lc**, **lC**, **wc** 또는 **wC** 형식 지정자는 `printf` 함수의 **C** 및 `wprintf` 함수의 **c**와 같습니다. **hs** 또는 **hS** 형식 지정자는 `printf` 함수의 **s** 및 `wprintf` 함수의 **S**와 같습니다. **ls**, **lS**, **ws** 또는 **wS** 형식 지정자는 `printf` 함수의 **S** 및 `wprintf` 함수의 **s**와 같습니다.
 
 > [!NOTE]
-> **Microsoft 전용**  
-> **I**(대문자 i), **I32**, **I64** 및 **w** 인수 크기 한정자 접두사는 Microsoft 확장이며 ISO C와 호환되지 않습니다. `char` 형식의 데이터와 함께 사용되는 **h** 접두사 및 `double` 형식의 데이터와 함께 사용되는 **l**(소문자 L) 접두사는 Microsoft 확장입니다.
+> **Microsoft 특정** **I**(대문자 i), **I32**, **I64** 및 **w** 인수 크기 한정자 접두사는 Microsoft 확장이며 ISO C와 호환되지 않습니다. `char` 형식의 데이터와 함께 사용되는 **h** 접두사 및 `double` 형식의 데이터와 함께 사용되는 **l**(소문자 L) 접두사는 Microsoft 확장입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)  
-[printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)  
-[printf_p 위치 매개 변수](../c-runtime-library/printf-p-positional-parameters.md)  
+[printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
+[printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)<br/>
+[printf_p 위치 매개 변수](../c-runtime-library/printf-p-positional-parameters.md)

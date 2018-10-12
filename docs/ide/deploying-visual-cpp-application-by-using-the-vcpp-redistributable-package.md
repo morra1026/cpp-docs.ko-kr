@@ -1,7 +1,7 @@
 ---
 title: 재배포 가능 패키지(C++)를 사용하여 앱 배포 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/17/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 569c5c8adcb57ae92f111929efca544c76412a4b
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 9759811554fd0998a919c9939a0441c63c26a3f8
+ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895281"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494350"
 ---
 # <a name="walkthrough-deploying-a-visual-c-application-by-using-the-visual-c-redistributable-package"></a>연습: Visual C++ 재배포 가능 패키지를 사용하여 Visual C++ 응용 프로그램 배포
 
@@ -35,66 +35,66 @@ ms.locfileid: "43895281"
 
 ### <a name="to-use-the-visual-c-redistributable-package-to-deploy-an-application"></a>Visual C++ 재배포 가능 패키지를 사용하여 응용 프로그램을 배포하려면
 
-1. [연습: 설치 프로젝트를 사용하여 Visual C++ 응용 프로그램 배포](../ide/deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md)의 처음 세 단계를 수행하여 MFC 응용 프로그램을 생성하고 빌드합니다.
+1.  [연습: 설치 프로젝트를 사용하여 Visual C++ 응용 프로그램 배포](walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md)의 단계를 수행하여 MFC 응용 프로그램을 생성하고 구축합니다.
 
-2. 파일을 만들고 이름을 setup.bat로 지정한 후, 다음 명령을 추가합니다. `MyMFCApplication`을 프로젝트의 이름으로 변경합니다.
+1. 파일을 만들고 이름을 setup.bat로 지정한 후, 다음 명령을 추가합니다. `MyMFCApplication`을 프로젝트의 이름으로 변경합니다.
 
     ```cmd
     @echo off
     vcredist_x86.exe
     mkdir "C:\Program Files\MyMFCApplication"
     copy MyMFCApplication.exe "C:\Program Files\MyMFCApplication"
-    ```  
+    ```
 
-3. 자동 압축 풀기 설치 파일을 만듭니다.
+1. 자동 압축 풀기 설치 파일을 만듭니다.
 
    1. 명령 프롬프트 또는 **실행** 창에서 iexpress.exe를 실행합니다.
 
-   2. **새 자동 압축 풀기 지시문 파일 만들기**를 선택한 후, **다음** 단추를 선택합니다.
+   1. **새 자동 압축 풀기 지시문 파일 만들기**를 선택한 후, **다음** 단추를 선택합니다.
 
-   3. **파일 압축을 풀고 설치 명령 실행**을 선택한 후, **다음**을 선택합니다.
+   1. **파일 압축을 풀고 설치 명령 실행**을 선택한 후, **다음**을 선택합니다.
 
-   4. 텍스트 상자에 MFC 응용 프로그램 이름을 입력한 후, **다음**을 선택합니다.
+   1. 텍스트 상자에 MFC 응용 프로그램 이름을 입력한 후, **다음**을 선택합니다.
 
-   5. **확인 프롬프트** 페이지에서 **프롬프트 없음**을 선택한 후, **다음**을 선택합니다.
+   1. **확인 프롬프트** 페이지에서 **프롬프트 없음**을 선택한 후, **다음**을 선택합니다.
 
-   6. **사용권 계약** 페이지에서 **라이선스를 표시하지 않음**을 선택한 후, **다음**을 선택합니다.
+   1. **사용권 계약** 페이지에서 **라이선스를 표시하지 않음**을 선택한 후, **다음**을 선택합니다.
 
-   7. **파일 패키지** 페이지에서 다음 파일을 추가한 후, **다음**을 선택합니다.
+   1. **파일 패키지** 페이지에서 다음 파일을 추가한 후, **다음**을 선택합니다.
 
       - MFC 응용 프로그램(.exe 파일).
 
-      - vcredist_x86.exe. 이 파일은 \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\vcredist_x86\\에 있습니다.
+      - vcredist_x86.exe. 이 파일은 \Program Files (x86)\Microsoft Visual Studio \<버전>\SDK\Bootstrapper\Packages\.에 있습니다. [Microsoft](https://www.microsoft.com/download/confirmation.aspx?id=5555)에서 이 파일을 다운로드할 수도 있습니다.
 
       - 이전 단계에서 만든 setup.bat 파일.
 
-   8. **시작할 설치 프로그램** 페이지의 **설치 프로그램** 텍스트 상자에 다음 명령줄을 입력한 후, **다음**을 선택합니다.
+   1. **시작할 설치 프로그램** 페이지의 **설치 프로그램** 텍스트 상자에 다음 명령줄을 입력한 후, **다음**을 선택합니다.
 
-      **cmd.exe /c "setup.bat"**  
+      **cmd.exe /c "setup.bat"**
 
-   9. **창 표시** 페이지에서 **기본값**을 선택한 후, **다음**을 선택합니다.
+   1. **창 표시** 페이지에서 **기본값**을 선택한 후, **다음**을 선택합니다.
 
-   10. **완료 메시지** 페이지에서 **메시지 없음**을 선택한 후, **다음**을 선택합니다.
+   1. **완료 메시지** 페이지에서 **메시지 없음**을 선택한 후, **다음**을 선택합니다.
 
-   11. **패키지 이름 및 옵션** 페이지에서 자동 압축 풀기 설치 파일의 이름을 입력하고 **패키지 내 긴 파일 이름을 사용하여 파일 저장** 옵션을 선택한 후, **다음**을 선택합니다. 파일 이름의 끝은 Setup.exe여야 합니다(예: MyMFCApplicationSetup.exe).
+   1. **패키지 이름 및 옵션** 페이지에서 자동 압축 풀기 설치 파일의 이름을 입력하고 **패키지 내 긴 파일 이름을 사용하여 파일 저장** 옵션을 선택한 후, **다음**을 선택합니다. 파일 이름의 끝은 Setup.exe여야 합니다(예: *MyMFCApplicationSetup.exe*).
 
-   12. **다시 시작 구성** 페이지에서 **다시 시작 없음**을 선택한 후, **다음**을 선택합니다.
+   1. **다시 시작 구성** 페이지에서 **다시 시작 없음**을 선택한 후, **다음**을 선택합니다.
 
-   13. **자동 압축 풀기 지시문 저장** 페이지에서 **SED(자동 압축 풀기 지시문) 파일 저장**을 선택한 후, **다음**을 선택합니다.
+   1. **자동 압축 풀기 지시문 저장** 페이지에서 **SED(자동 압축 풀기 지시문) 파일 저장**을 선택한 후, **다음**을 선택합니다.
 
-   14. **패키지 만들기** 페이지에서 **다음**을 선택합니다.
+   1. **패키지 만들기** 페이지에서 **다음**을 선택합니다. **마침**을 선택합니다.
 
-4. Visual C++ 라이브러리가 없는 다른 컴퓨터에서 자동 압축 풀기 설치 파일을 테스트합니다.
+1. Visual C++ 라이브러리가 없는 다른 컴퓨터에서 자동 압축 풀기 설치 파일을 테스트합니다.
 
-   1. 다른 컴퓨터에 설치 파일의 복사본을 다운로드한 다음, 해당 파일을 실행하고 제공되는 단계에 따라 설치합니다.
+   1. 다른 컴퓨터에 설치 파일의 복사본을 다운로드한 다음, 해당 파일을 실행하고 제공되는 단계에 따라 설치합니다. 선택한 옵션에 따라 설치 시 **관리자 권한으로 실행** 명령이 필요할 수 있습니다.
 
-   2. MFC 응용 프로그램을 실행합니다.
+   1. MFC 응용 프로그램을 실행합니다.
 
       자동 압축 풀기 설치 파일은 2단계에서 지정한 폴더에 있는 MFC 응용 프로그램을 설치합니다. Visual C++ 재배포 가능 패키지 설치 관리자가 자동 압축 풀기 설치 파일에 포함되어 있기 때문에 응용 프로그램이 성공적으로 실행됩니다.
 
       > [!IMPORTANT]
-      > 설치 관리자는 설치된 런타임 버전을 확인하기 위해 레지스트리 키 \HKLM\SOFTWARE\Microsoft\VisualStudio\11.0\VC\Runtimes\\[platform]을 확인합니다. 현재 설치된 버전이 설치 관리자가 설치하려고 하는 버전보다 최신 버전인 경우, 설치 관리자는 이전 버전을 설치하지 않고 성공을 반환하고 제어판의 설치된 프로그램 페이지에 추가 항목을 남겨둡니다.
+      > 설치 관리자는 설치된 런타임 버전을 확인하기 위해 레지스트리 키 \HKLM\SOFTWARE\Microsoft\VisualStudio\\\<버전>\VC\Runtimes\\<platform>을 확인합니다. 현재 설치된 버전이 설치 관리자가 설치하려고 하는 버전보다 최신 버전인 경우, 설치 관리자는 이전 버전을 설치하지 않고 성공을 반환하고 제어판의 설치된 프로그램 페이지에 추가 항목을 남겨둡니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[배포 예제](../ide/deployment-examples.md)
+[배포 예제](deployment-examples.md)<br/>

@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 591465ed9c16485498174a710d2d37ff68425058
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3df63cbed5fcb17b01450435aa2d991ca3e0c5a8
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116869"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083920"
 ---
 # <a name="csecuritydesc-class"></a>CSecurityDesc 클래스
 
@@ -563,7 +563,7 @@ bool SetControl(
 ### <a name="parameters"></a>매개 변수
 
 *ControlBitsOfInterest*<br/>
-설정 제어 비트를 나타내는 SECURITY_DESCRIPTOR_CONTROL 마스크입니다. 설정할 수 있는 플래그 목록은 참조 하세요 [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx)합니다.
+설정 제어 비트를 나타내는 SECURITY_DESCRIPTOR_CONTROL 마스크입니다. 설정할 수 있는 플래그 목록은 참조 하세요 [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582)합니다.
 
 *ControlBitsToSet*<br/>
 지정 된 컨트롤 비트에 대 한 새 값을 나타내는 SECURITY_DESCRIPTOR_CONTROL 마스크를 *ControlBitsOfInterest* 마스크입니다. 이 매개 변수에 대해 나열 된 플래그의 조합 수를 *ControlBitsOfInterest* 매개 변수입니다.
@@ -574,7 +574,7 @@ bool SetControl(
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 호출 [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx)합니다.
+이 메서드를 호출 [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582)합니다.
 
 ##  <a name="setdacl"></a>  CSecurityDesc::SetDacl
 

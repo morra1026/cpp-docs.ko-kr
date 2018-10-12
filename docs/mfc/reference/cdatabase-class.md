@@ -60,12 +60,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb101179cff40d79ab142e55b4fc46cc8941d126
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d1e050baf87374b98d5490ef8a760ca13620e240
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399552"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083933"
 ---
 # <a name="cdatabase-class"></a>CDatabase 클래스
 
@@ -202,7 +202,7 @@ void Cancel();
 
 ### <a name="remarks"></a>설명
 
-MFC ODBC 클래스에 비동기 처리를 사용 하지는 note 비동기 작업을 수행 하려면 직접 ODBC API 함수를 호출 해야 [SQLSetConnectOption](/previous-versions/windows/desktop/ms713564\(v=vs.85\))합니다. 자세한 내용은 [비동기 실행](/previous-versions/windows/desktop/ms713563\(v=vs.85\)) Windows SDK에 있습니다.
+MFC ODBC 클래스에 비동기 처리를 사용 하지는 note 비동기 작업을 수행 하려면 직접 ODBC API 함수를 호출 해야 [SQLSetConnectOption](/previous-versions/windows/desktop/ms713564)합니다. 자세한 내용은 [비동기 실행](/previous-versions/windows/desktop/ms713563) Windows SDK에 있습니다.
 
 ##  <a name="cantransact"></a>  CDatabase::CanTransact
 

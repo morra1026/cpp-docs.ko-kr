@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c5c360246282f8b6062d21061856a57bd2c7194
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 26b313aa3e1dec6d401ed27e1a4f8ae0bd870eaa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384335"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118520"
 ---
 # <a name="c-bitwise-operators"></a>C 비트 연산자
 
@@ -35,17 +35,11 @@ ms.locfileid: "32384335"
 
 ## <a name="syntax"></a>구문
 
-*AND-expression*:  
-&nbsp;&nbsp;*equality-expression*  
-&nbsp;&nbsp;*AND-expression* **&** *equality-expression*
+*AND-expression*: &nbsp;&nbsp;*equality-expression* &nbsp;&nbsp;*AND-expression* **&** *equality-expression*
 
-*exclusive-OR-expression*:  
-&nbsp;&nbsp;*AND-expression*  
-&nbsp;&nbsp;*exclusive-OR-expression* **^** *AND-expression*
+*exclusive-OR-expression*: &nbsp;&nbsp;*AND-expression* &nbsp;&nbsp;*exclusive-OR-expression* **^** *AND-expression*
 
-*inclusive-OR-expression*:  
-&nbsp;&nbsp;*exclusive-OR-expression*  
-&nbsp;&nbsp;*inclusive-OR-expression* &#124; *exclusive-OR-expression*
+*inclusive-OR-expression*: &nbsp;&nbsp;*exclusive-OR-expression* &nbsp;&nbsp;*inclusive-OR-expression* &#124; *exclusive-OR-expression*
 
 비트 연산자의 피연산자는 정수 형식을 가져야 하지만 해당 형식은 다를 수 있습니다. 이러한 연산자는 일반적인 산술 변환을 수행하며, 결과의 형식은 변환 후 피연산자의 형식입니다.
 
@@ -96,6 +90,6 @@ n = i ^ j;
 
 ## <a name="see-also"></a>참고 항목
 
-[비트 AND 연산자: &](../cpp/bitwise-and-operator-amp.md)  
-[배타적 비트 OR 연산자: ^](../cpp/bitwise-exclusive-or-operator-hat.md)  
-[포괄적 비트 OR 연산자: &#124;](../cpp/bitwise-inclusive-or-operator-pipe.md)  
+[비트 AND 연산자: &](../cpp/bitwise-and-operator-amp.md)<br/>
+[배타적 비트 OR 연산자: ^](../cpp/bitwise-exclusive-or-operator-hat.md)<br/>
+[포괄적 비트 OR 연산자: &#124;](../cpp/bitwise-inclusive-or-operator-pipe.md)

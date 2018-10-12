@@ -1,7 +1,7 @@
 ---
 title: .vcxproj 및 .props 파일 구조 | Microsoft Docs
 ms.custom: ''
-ms.date: 04/27/2017
+ms.date: 09/18/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -14,16 +14,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe466ff9250543a61fde8da41900b152a9874e09
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 957d9e1063c71e342339eb4e6a6c913eeb5a8f64
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33337352"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46374090"
 ---
 # <a name="vcxproj-and-props-file-structure"></a>.vcxproj 및 .props 파일 구조
 
-MSBuild는 Visual Studio의 기본 프로젝트 시스템입니다. Visual C++에서 **파일 | 새 프로젝트**를 차례로 선택하면 `.vcxproj` 확장명의 XML 프로젝트 파일에 설정이 저장되는 MSBuild 프로젝트를 만들 수 있습니다. 프로젝트 파일은 설정을 저장할 수 있는 .props 파일과 .targets 파일을 가져올 수도 있습니다. 대부분의 경우 프로젝트 파일을 수동으로 편집할 필요가 없으며, 실제로 MSBuild를 잘 알고 있지 않으면 수동으로 편집하지 않아야 합니다. 가능하면 Visual Studio 속성 페이지를 사용하여 프로젝트 설정을 수정해야 합니다([프로젝트 속성 사용](working-with-project-properties.md) 참조). 그러나 경우에 따라 프로젝트 파일 또는 속성 시트를 수동으로 수정해야 할 수도 있습니다. 이 문서에는 이러한 시나리오의 파일 구조에 대한 기본 정보가 포함되어 있습니다.
+[MSBuild](../build/msbuild-visual-cpp.md)는 Visual Studio의 기본 프로젝트 시스템입니다. Visual C++에서 **파일** > **새 프로젝트**를 차례로 선택하면 `.vcxproj` 확장명의 XML 프로젝트 파일에 설정이 저장되는 MSBuild 프로젝트를 만들 수 있습니다. 프로젝트 파일은 설정을 저장할 수 있는 .props 파일과 .targets 파일을 가져올 수도 있습니다. 대부분의 경우 프로젝트 파일을 수동으로 편집할 필요가 없으며, 실제로 MSBuild를 잘 알고 있지 않으면 수동으로 편집하지 않아야 합니다. 가능하면 Visual Studio 속성 페이지를 사용하여 프로젝트 설정을 수정해야 합니다([프로젝트 속성 사용](working-with-project-properties.md) 참조). 그러나 경우에 따라 프로젝트 파일 또는 속성 시트를 수동으로 수정해야 할 수도 있습니다. 이 문서에는 이러한 시나리오의 파일 구조에 대한 기본 정보가 포함되어 있습니다.
 
 **중요:**
 
@@ -43,6 +43,8 @@ MSBuild는 Visual Studio의 기본 프로젝트 시스템입니다. Visual C++�
    <ClCompile Include="$(IntDir)\generated.cpp"/>
    ```
 
+   “지원 안 함”은 IDE의 모든 조작에 대해 매크로가 작동하도록 보장되지 않음을 의미합니다. 다른 구성에서 값을 변경하지 않는 매크로는 작동해야 하지만 항목을 다른 필터 또는 프로젝트로 이동해도 유지되지 않을 수 있습니다. IDE가 프로젝트 구성마다 다른 프로젝트 항목 경로를 예상하지 않으므로, 다른 구성에 대한 값을 변경하는 매크로로 인해 문제가 발생합니다.
+
 1. **프로젝트 속성** 대화 상자에서 편집할 때 프로젝트 속성이 올바르게 추가, 제거 또는 수정되도록 하려면, 파일에 각 프로젝트 구성에 대한 별도의 그룹이 있어야 하며 조건이 다음과 같은 형식이어야 합니다.
 
    ```xml
@@ -58,7 +60,9 @@ MSBuild는 Visual Studio의 기본 프로젝트 시스템입니다. Visual C++�
 가장 먼저 주목해야 할 것은 최상위 요소가 특정 순서로 표시된다는 것입니다. 예:
 
 - 대부분의 속성 그룹 및 항목 정의 그룹은 Microsoft.Cpp.Default.props를 가져온 후에 표시됩니다.
+
 - 모든 대상은 파일의 끝에서 가져옵니다.
+
 - 각각 고유한 레이블이 있는 여러 속성 그룹이 있으며 특정 순서로 표시됩니다.
 
 MSBuild는 순차적 평가 모델을 기반으로 하므로 프로젝트 파일에 있는 요소의 순서는 매우 중요합니다.  가져온 .props 및 .targets 파일을 모두 포함한 프로젝트 파일이 속성의 여러 정의로 구성되어 있으면 마지막 정의가 앞의 정의를 재정의합니다. 다음 예제에서는 "xyz" 값이 MSBUild 엔진에서 평가 중에 마지막으로 발생하기 때문에 컴파일하는 동안 설정됩니다.
@@ -72,20 +76,20 @@ MSBuild는 순차적 평가 모델을 기반으로 하므로 프로젝트 파일
 
 ```xml
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns='http://schemas.microsoft.com/developer/msbuild/2003'>
-   <ItemGroup Label="ProjectConfigurations" />
-   <PropertyGroup Label="Globals" />
-   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.default.props" />
-   <PropertyGroup Label="Configuration" />
-   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-   <ImportGroup Label="ExtensionSettings" />
-   <ImportGroup Label="PropertySheets" />
-   <PropertyGroup Label="UserMacros" />
-   <PropertyGroup />
-   <ItemDefinitionGroup />
-   <ItemGroup />
-   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-   <ImportGroup Label="ExtensionTargets" />
- </Project>
+  <ItemGroup Label="ProjectConfigurations" />
+  <PropertyGroup Label="Globals" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.default.props" />
+  <PropertyGroup Label="Configuration" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
 ```
 
 다음 섹션에서는 이러한 각 요소의 용도와 해당 순서로 지정된 이유에 대해 설명합니다.
@@ -112,23 +116,27 @@ MSBuild는 순차적 평가 모델을 기반으로 하므로 프로젝트 파일
 
 다음 코드 조각에서는 프로젝트 구성을 보여 줍니다. 이 예제에서 'Debug|x64'는 구성 이름입니다. 프로젝트 구성 이름은 $(구성)|$(플랫폼) 형식이어야 합니다. 프로젝트 구성 노드에는 Configuration 및 Platform의 두 가지 속성이 있을 수 있습니다. 구성이 활성화되면 이러한 속성이 자동으로 여기에 지정된 값으로 설정됩니다.
 
-   ```xml
-   <ProjectConfiguration Include="Debug|x64">
-     <Configuration>Debug</Configuration>
-     <Platform>x64</Platform>
-   </ProjectConfiguration>
-   ```
+```xml
+<ProjectConfiguration Include="Debug|x64">
+  <Configuration>Debug</Configuration>
+  <Platform>x64</Platform>
+</ProjectConfiguration>
+```
 
 IDE는 모든 ProjectConfiguration 항목에 사용된 구성 및 플랫폼 값의 조합에 대한 프로젝트 구성을 찾는 데 필요합니다. 이는 종종 프로젝트에서 이 요구 사항을 충족하기 위해 의미 없는 프로젝트 구성이 있을 수 있음을 의미합니다. 예를 들어 프로젝트에 다음 구성이 있는 경우가 있습니다.
 
 - 디버그|Win32
+
 - 소매|Win32
+
 - 특별한 32비트 최적화|Win32
 
 그렇다면 "특별한 32비트 최적화"가 x64에는 의미가 없더라도 다음과 같은 구성이 있어야 합니다.
 
 - Debug|x64
+
 - 소매|x64
+
 - 특별한 32비트 최적화|x64
 
 **솔루션 구성 관리자**에서 모든 구성에 대한 빌드 및 배포 명령을 사용하지 않도록 설정할 수 있습니다.
@@ -136,7 +144,7 @@ IDE는 모든 ProjectConfiguration 항목에 사용된 구성 및 플랫폼 값�
 ### <a name="globals-propertygroup-element"></a>Globals PropertyGroup 요소
 
 ```xml
- <PropertyGroup Label="Globals" />
+<PropertyGroup Label="Globals" />
 ```
 
 `Globals`에는 ProjectGuid, RootNamespace 및 ApplicationType/ ApplicationTypeRevision과 같은 프로젝트 수준 설정이 포함됩니다. 마지막 두 설정에서 대상 OS를 정의하는 경우가 있습니다. 현재 참조 및 프로젝트 항목에는 조건이 없으므로 프로젝트에서 단일 OS만을 대상으로 할 수 있습니다. 이러한 속성은 일반적으로 프로젝트 파일의 다른 위치에서 재정의되지 않습니다. 이 그룹은 구성에 종속되지 않으므로 일반적으로 프로젝트 파일에는 하나의 Globals 그룹만 있습니다.
@@ -202,7 +210,7 @@ IDE는 모든 ProjectConfiguration 항목에 사용된 구성 및 플랫폼 값�
 ### <a name="per-configuration-itemdefinitiongroup-elements"></a>구성별 ItemDefinitionGroup 요소
 
 ```xml
- <ItemDefinitionGroup />
+<ItemDefinitionGroup />
 ```
 
 항목 정의가 포함됩니다. 이러한 요소는 레이블이 없는 구성별 PropertyGroup 요소와 동일한 조건 규칙을 따라야 합니다.
@@ -217,34 +225,35 @@ IDE는 모든 ProjectConfiguration 항목에 사용된 구성 및 플랫폼 값�
 
 메타데이터에는 모두 동일하더라도 각 구성에 대한 구성 조건이 있어야 합니다. 예:
 
-   ```xml
-   <ItemGroup>
-     <ClCompile Include="stdafx.cpp">
-       <TreatWarningAsError Condition="‘$(Configuration)|$(Platform)’==’Debug|Win32’">true</TreatWarningAsError>
-       <TreatWarningAsError Condition="‘$(Configuration)|$(Platform)’==’Debug|x64’">true</TreatWarningAsError>
-     </ClCompile>
-   </ItemGroup>
-   ```
+```xml
+<ItemGroup>
+  <ClCompile Include="stdafx.cpp">
+    <TreatWarningAsError Condition="‘$(Configuration)|$(Platform)’==’Debug|Win32’">true</TreatWarningAsError>
+    <TreatWarningAsError Condition="‘$(Configuration)|$(Platform)’==’Debug|x64’">true</TreatWarningAsError>
+  </ClCompile>
+</ItemGroup>
+```
 
 현재 Visual C++ 프로젝트 시스템은 프로젝트 항목에 와일드카드를 지원하지 않습니다.
 
-   ```xml
-   <ItemGroup>
-     <ClCompile Include="*.cpp"> <!--Error-->
-   </ItemGroup>
-   ```
+```xml
+<ItemGroup>
+  <ClCompile Include="*.cpp"> <!--Error-->
+</ItemGroup>
+```
 
 현재 Visual C++ 프로젝트 시스템은 프로젝트 항목에 매크로를 지원하지 않습니다.
 
-   ```xml
-   <ItemGroup>
-     <ClCompile Include="$(IntDir)\generated.cpp"> <!--not guaranteed to work in all scenarios-->
-   </ItemGroup>
-   ```
+```xml
+<ItemGroup>
+  <ClCompile Include="$(IntDir)\generated.cpp"> <!--not guaranteed to work in all scenarios-->
+</ItemGroup>
+```
 
 참조는 ItemGroup에 지정되며, 제한 사항은 다음과 같습니다.
 
 - 참조는 조건을 지원하지 않습니다.
+
 - 참조 메타데이터는 조건을 지원하지 않습니다.
 
 ### <a name="microsoftcpptargets-import-element"></a>Microsoft.Cpp.targets Import 요소
@@ -293,5 +302,5 @@ IDE의 일반 속성 페이지에서 **UseOfAtl** 속성을 설정하면, 프로
 
 ## <a name="see-also"></a>참고 항목
 
-[프로젝트 속성 사용](working-with-project-properties.md)  
-[속성 페이지 XML 파일](property-page-xml-files.md)  
+[프로젝트 속성 사용](working-with-project-properties.md)<br/>
+[속성 페이지 XML 파일](property-page-xml-files.md)

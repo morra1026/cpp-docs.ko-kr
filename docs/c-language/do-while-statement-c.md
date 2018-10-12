@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f5254adbf533a30da65349f2f8aadd100b8776d7
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ef670aca60b2e3156ea70480a1dafc315ae60624
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755554"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46061478"
 ---
 # <a name="do-while-statement-c"></a>do-while 문 (C)
 
@@ -30,8 +30,7 @@ ms.locfileid: "43755554"
 
 ## <a name="syntax"></a>구문
 
-*iteration-statement*:  
-&nbsp;&nbsp;&nbsp;&nbsp;**do**  *statement*  **while (**  *expression*  **) ;**
+*iteration-statement*: &nbsp;&nbsp;&nbsp;&nbsp;**do**  *statement*  **while (**  *expression*  **) ;**
 
 *do-while* 문의 *expression*은 루프의 본문이 실행된 후 평가됩니다. 따라서 루프의 본문은 항상 한 번 이상 실행됩니다.
 
@@ -47,10 +46,10 @@ ms.locfileid: "43755554"
 
 ```C
 do
-{  
-    y = f( x );  
-    x--;  
-} while ( x > 0 );  
+{
+    y = f( x );
+    x--;
+} while ( x > 0 );
 ```
 
 이 *do-while* 문에서는 `x`의 초기 값과 관계없이 `y = f( x );` 및 `x--;` 문이 실행됩니다. 그런 다음 `x > 0`이 평가됩니다. `x`가 0보다 크면 문 본문이 다시 실행되고 `x > 0`이 다시 평가됩니다. `x`가 0보다 크게 유지되는 한 문 본문은 반복해서 실행됩니다. *do-while* 문의 실행은 `x`가 0이나 음수가 될 때 종료됩니다. 루프의 본문은 최소한 한 번 실행됩니다.

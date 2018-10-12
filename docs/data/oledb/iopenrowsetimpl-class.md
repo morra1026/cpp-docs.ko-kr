@@ -25,12 +25,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 84050dcf4faed8bb99b871d3b797400c1ed5620e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5f5071adcf12bde10a3fc67a5503875dfb264372
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46086956"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49081606"
 ---
 # <a name="iopenrowsetimpl-class"></a>IOpenRowsetImpl 클래스
 
@@ -63,11 +63,11 @@ class IOpenRowsetImpl : public IOpenRowset
   
 ## <a name="remarks"></a>설명  
 
-합니다 [IOpenRowset](/previous-versions/windows/desktop/ms716946\(v=vs.85\)) 인터페이스는 세션 개체에 대 한 필수입니다. 열고 단일 기본 테이블 또는 인덱스에서 모든 행이 포함 된 행 집합을 반환 합니다.  
+합니다 [IOpenRowset](/previous-versions/windows/desktop/ms716946) 인터페이스는 세션 개체에 대 한 필수입니다. 열고 단일 기본 테이블 또는 인덱스에서 모든 행이 포함 된 행 집합을 반환 합니다.  
   
 ## <a name="createrowset"></a> Iopenrowsetimpl:: Createrowset
 
-행 집합 개체를 만듭니다. 사용자가 직접 호출 되지 않습니다. 참조 [iopenrowset:: Openrowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) 에 *OLE DB 프로그래머 참조입니다.*  
+행 집합 개체를 만듭니다. 사용자가 직접 호출 되지 않습니다. 참조 [iopenrowset:: Openrowset](/previous-versions/windows/desktop/ms716724) 에 *OLE DB 프로그래머 참조입니다.*  
   
 ### <a name="syntax"></a>구문  
   
@@ -91,7 +91,7 @@ HRESULT CreateRowset(IUnknown* pUnkOuter,
 *pRowsetObj*<br/>
 [out] 행 집합 개체에 대 한 포인터입니다. 일반적으로이 매개 변수는 사용 되지 않지만 COM 개체를 전달 하기 전에 행 집합에서 더 많은 작업을 수행 해야 하는 경우 사용할 수 있습니다. 수명을 *pRowsetObj* 바인딩된 *ppRowset*합니다.  
   
-다른 매개 변수를 참조 하세요 [iopenrowset:: Openrowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) 에 *OLE DB 프로그래머 참조입니다.*  
+다른 매개 변수를 참조 하세요 [iopenrowset:: Openrowset](/previous-versions/windows/desktop/ms716724) 에 *OLE DB 프로그래머 참조입니다.*  
 
 ## <a name="openrowset"></a> Iopenrowsetimpl:: Openrowset
 
@@ -111,7 +111,7 @@ HRESULT OpenRowset(IUnknown* pUnkOuter,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [iopenrowset:: Openrowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+참조 [iopenrowset:: Openrowset](/previous-versions/windows/desktop/ms716724) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="remarks"></a>설명  
 

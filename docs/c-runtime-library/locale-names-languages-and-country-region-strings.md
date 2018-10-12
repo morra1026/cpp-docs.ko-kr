@@ -20,23 +20,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c072074c24466458ebd19e1335f49169c5c22bd5
-ms.sourcegitcommit: 3b78ddea5fd3e22b7c5cd2d787ec71a518a52223
+ms.openlocfilehash: 2622702cd19dab3cad2613aa3df28b5cef464853
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42578357"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076010"
 ---
 # <a name="locale-names-languages-and-countryregion-strings"></a>로캘 이름, 언어 및 국가/지역 문자열
 
 `setlocale` 및 `_create_locale` 함수에 대한 *locale* 인수는 Windows NLS API에서 지원하는 로캘 이름, 언어, 국가/지역 코드 및 코드 페이지를 사용하여 설정할 수 있습니다. *locale* 인수 형식은 다음과 같습니다.
 
-> *locale* :: "*locale_name*"  
-&nbsp;&nbsp;&nbsp;&nbsp;| "*language*\[\_*country-region*]\[.*code_page*]]"  
-&nbsp;&nbsp;&nbsp;&nbsp;| ".*code_page*"  
-&nbsp;&nbsp;&nbsp;&nbsp;| "C"  
-&nbsp;&nbsp;&nbsp;&nbsp;| ""  
-&nbsp;&nbsp;&nbsp;&nbsp;| NULL  
+> *locale* :: "*locale_name*" &nbsp;&nbsp;&nbsp;&nbsp;| "*language*\[\_*country-region*]\[.*code_page*]]" &nbsp;&nbsp;&nbsp;&nbsp;| ".*code_page*" &nbsp;&nbsp;&nbsp;&nbsp;| "C" &nbsp;&nbsp;&nbsp;&nbsp;| "" &nbsp;&nbsp;&nbsp;&nbsp;| NULL
 
 로캘 이름 형식(예: 영어(미국)의 경우 `en-US` 또는 보스니아어(키릴 자모, 보스니아 헤르체고비나)의 경우 `bs-Cyrl-BA`)을 사용하는 것이 좋습니다. 로캘 이름 집합은 [Locale Names(로캘 이름)](/windows/desktop/Intl/locale-names)에 설명되어 있습니다. Windows 운영 체제 버전별 지원되는 로캘 이름 목록은 [MS-LCID]: Windows LCID(언어 코드 식별자) 참조의 [Appendix A: Product Behavior](https://msdn.microsoft.com/library/cc233982.aspx)(부록 A: 제품 동작)에 있는 표의 **언어 태그** 열을 참조하세요. 이 리소스는 로캘 이름의 지원되는 언어, 스크립트 및 영역 부분을 나열합니다. 비-기본 정렬 순서를 사용하는 지원되는 로캘 이름에 대한 정보는 **Sort Order Identifiers(정렬 순서 식별자)** 에서 [로캘 이름](/windows/desktop/Intl/sort-order-identifiers)열을 참조하세요. Windows 10 이상에서는 유효한 BCP-47 언어 태그에 해당하는 로캘 이름을 사용할 수 있습니다. 예를 들어 `jp-US`는 유효한 BCP-47 태그이지만 로캘 기능의 경우 `US`만 유효합니다.
 
@@ -50,8 +45,7 @@ ms.locfileid: "42578357"
 
 `setlocale` 범주를 사용하여 `_wsetlocale` 및 `LC_ALL` 함수에 대해 동시에 모든 로캘 범주를 지정할 수 있습니다. 범주를 모두 동일한 로캘로 설정하거나 이 양식을 사용하는 로캘 인수를 사용하여 범주를 각각 설정할 수 있습니다.
 
-> LC_ALL_specifier :: locale  
-&nbsp;&nbsp;&nbsp;&nbsp;| [LC_COLLATE=locale][;LC_CTYPE=locale][;LC_MONETARY=locale][;LC_NUMERIC=locale][;LC_TIME=locale]
+> LC_ALL_specifier :: locale &nbsp;&nbsp;&nbsp;&nbsp;| [LC_COLLATE=locale][;LC_CTYPE=locale][;LC_MONETARY=locale][;LC_NUMERIC=locale][;LC_TIME=locale]
 
 세미콜론으로 구분된 여러 범주 형식을 지정할 수 있습니다. 지정되지 않은 범주 형식에서 현재 로캘 설정을 사용합니다. 예를 들어 이 코드 조각에서는 모든 범주에 대한 현재 로캘을 `de-DE`로 설정한 다음, `LC_MONETARY` 범주를 `en-GB`로, `LC_TIME` 범주를 `es-ES`로 설정합니다.
 
@@ -62,9 +56,9 @@ _wsetlocale(LC_ALL, L"LC_MONETARY=en-GB;LC_TIME=es-ES");
 
 ## <a name="see-also"></a>참고 항목
 
-[C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)  
-[_get_current_locale](../c-runtime-library/reference/get-current-locale.md)  
-[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)  
-[_create_locale, _wcreate_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md)  
-[언어 문자열](../c-runtime-library/language-strings.md)  
-[국가/지역 문자열](../c-runtime-library/country-region-strings.md)  
+[C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)<br/>
+[_get_current_locale](../c-runtime-library/reference/get-current-locale.md)<br/>
+[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
+[_create_locale, _wcreate_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md)<br/>
+[언어 문자열](../c-runtime-library/language-strings.md)<br/>
+[국가/지역 문자열](../c-runtime-library/country-region-strings.md)

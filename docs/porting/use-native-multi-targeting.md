@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb9d7b950e4c38ea53db6e459edfa1a179eb971d
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 62404de4012bcd49888da527ae93ed1b2137a48a
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42578135"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46374147"
 ---
 # <a name="use-native-multi-targeting-in-visual-studio-to-build-old-projects"></a>Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드
 
@@ -70,19 +70,11 @@ Visual Studio 2008에는 **VCBuild**라는 C++에 대한 자체 전용 빌드 �
 
 업그레이드할 수 없거나 업그레이드하지 않으려는 이전 Visual C++ 프로젝트가 있지만 프로젝트와 일치하는 플랫폼 도구 집합 버전이 없을 수 있습니다. 이 경우 도구 집합을 얻으려면 필요한 버전의 무료 Visual Studio Community 또는 Express 버전을 설치합니다. Visual Studio 2008부터 Visual Studio의 모든 버전은 현재 Visual Studio에서 해당 버전을 대상으로 지정하는 데 필요한 컴파일러, 도구 및 라이브러리를 설치할 수 있습니다. Microsoft 다운로드 센터를 검색하여 특정 버전의 Visual Studio를 찾고 다운로드합니다. 설치하는 동안 C++ 설치 옵션을 선택해야 합니다. 설치가 완료되면 업데이트를 설치할 Visual Studio의 해당 버전을 실행합니다. 또한 필요한 Windows 업데이트 변경 내용이 있는지 확인합니다. 모든 업데이트를 받기 위해 이 업데이트 확인 프로세스를 두 번 이상 반복해야 할 수 있습니다.
 
-다음은 필요할 수 있는 일부 Visual Studio 다운로드입니다.
-
-  - [Microsoft Visual Studio Community 2015](https://www.microsoft.com/download/details.aspx?id=48146)  
-  - [Microsoft Visual Studio Express 2013 for Windows Desktop with Update 5](https://www.microsoft.com/download/details.aspx?id=48131)(Microsoft Visual Studio Express 2013 for Windows Desktop 업데이트 5)  
-  - [Microsoft Visual Studio Express 2012 for Windows Desktop](https://www.microsoft.com/download/details.aspx?id=34673)  
-  - [Visual Studio 2012 업데이트 5](https://www.microsoft.com/download/details.aspx?id=34673)  
-  - [Microsoft Visual C++ 2010 Express (Web Installer)](https://download.microsoft.com/download/1/D/9/1D9A6C0E-FC89-43EE-9658-B9F0E3A76983/vc_web.exe)(Microsoft Visual C++ 2010 Express(웹 설치 관리자))  
-  - [Microsoft Visual Studio 2010 서비스 팩 1(설치 관리자)](https://www.microsoft.com/download/details.aspx?id=23691)  
-  - [Microsoft Visual C++ 2008 Express with SP1 (Web Installer)](https://go.microsoft.com/?linkid=7729279)(Microsoft Visual C++ 2008 Express SP1(웹 설치 관리자))  
+현재 사용 가능한 다운로드는 [이전 버전의 Visual Studio 소프트웨어 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/)를 참조하세요.
 
 이러한 제품이 설치되면 **속성 페이지** 대화 상자의 **플랫폼 도구 집합** 속성 드롭다운이 사용 가능한 도구 집합을 표시하도록 자동으로 업데이트됩니다. 이제 최신 버전의 Visual Studio를 사용하여 이전 버전의 도구 집합을 위한 프로젝트를 변환하거나 업그레이드하지 않고 빌드할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[이전 버전의 Visual C++에서 프로젝트 업그레이드](upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
+[이전 버전의 Visual C++에서 프로젝트 업그레이드](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [Visual Studio 2017의 C++ 규칙 향상](../cpp-conformance-improvements-2017.md)  

@@ -23,16 +23,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e6c7e498100a60a3d4c592c343cc86b5ee0a0ea
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a86300b4814c8712f3cf88f91421dc1d0842e8a7
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713364"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49081526"
 ---
 # <a name="freelibrary-and-afxfreelibrary"></a>FreeLibrary 및 AfxFreeLibrary
 
-DLL 호출에 명시적으로 연결 하는 프로세스를 [FreeLibrary](https://msdn.microsoft.com/library/windows/desktop/ms683152(v=vs.85).aspx) DLL 모듈이 더 이상 필요 없는 경우에 작동 합니다. 이 함수는 모듈의 참조 횟수를 프로세스의 주소 공간에서 참조 횟수가 0 이면 매핑을 해제 합니다.
+DLL 호출에 명시적으로 연결 하는 프로세스를 [FreeLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary) DLL 모듈이 더 이상 필요 없는 경우에 작동 합니다. 이 함수는 모듈의 참조 횟수를 프로세스의 주소 공간에서 참조 횟수가 0 이면 매핑을 해제 합니다.
 
 MFC 응용 프로그램에서 사용 하 여 [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary) 대신 `FreeLibrary` MFC 확장 DLL을 언로드할 수 있습니다. 인터페이스 (함수 프로토타입)에 대 한 `AfxFreeLibrary` 같습니다 `FreeLibrary`합니다.
 
@@ -51,5 +51,5 @@ MFC 응용 프로그램에서 사용 하 여 [AfxFreeLibrary](../mfc/reference/a
 ## <a name="see-also"></a>참고 항목
 
 [Visual C++의 DLL](../build/dlls-in-visual-cpp.md)<br/>
-[FreeLibrary](https://msdn.microsoft.com/library/windows/desktop/ms683152(v=vs.85).aspx)
+[FreeLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary)
 [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary)

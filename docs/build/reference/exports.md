@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6bf350b0a129c642678fc6af1bac7d35633fe909
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: b650c2a20d18f3f638f924cce1e4b475f7e33a0d
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860981"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084063"
 ---
 # <a name="exports"></a>EXPORTS
 
@@ -67,7 +67,7 @@ C + + 함수에 대 한 이름 데코레이션을 사용 하는 Visual c + + 컴
 
 사용할 수 있습니다 \@ *서* 숫자 및 함수 이름이 아니라 DLL의 내보내기 테이블로 이동 되도록 합니다. 많은 Windows DLL은 서수를 내보내 레거시 코드를 지원합니다. Windows DLL의 크기를 최소화할 수 있기 때문에 16비트 Windows 코드에서는 서수를 사용하는 것이 일반적입니다. DLL 클라이언트에서 레거시 지원에 서수를 사용할 필요가 없는 경우 서수별 함수를 내보내지 않는 것이 좋습니다. .LIB 파일에는 서수와 함수 간의 매핑이 포함되므로 DLL을 사용하는 프로젝트에서 일반적으로 하는 것처럼 함수 이름을 사용할 수 있습니다.
 
-선택적를 사용 하 여 **NONAME** 키워드를 서 수로만 결과 DLL의 내보내기 테이블의 크기를 줄일 수 있습니다. 그러나 사용 하려는 경우 [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212.aspx) DLL에서 알고 있어야 합니다 서 수 있으므로 이름이 유효 하지 않게 됩니다.
+선택적를 사용 하 여 **NONAME** 키워드를 서 수로만 결과 DLL의 내보내기 테이블의 크기를 줄일 수 있습니다. 그러나 사용 하려는 경우 [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) DLL에서 알고 있어야 합니다 서 수 있으므로 이름이 유효 하지 않게 됩니다.
 
 선택적 키워드인 **사설** 방지 *entryname* 링크에 의해 생성 된 가져오기 라이브러리에 포함 되지 합니다. 이는 LINK에서도 생성한 이미지에서 내보내기에 영향을 미치지 않습니다.
 

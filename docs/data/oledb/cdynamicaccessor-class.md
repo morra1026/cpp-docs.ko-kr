@@ -138,12 +138,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8b421bcc84152fede78ca985bbf2896f42a148fe
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b9d1982e1da6526c1c9db607062a66b163f912ce
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46100458"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083673"
 ---
 # <a name="cdynamicaccessor-class"></a>CDynamicAccessor 클래스
 
@@ -167,7 +167,7 @@ class CDynamicAccessor : public CAccessorBase
 |-|-|  
 |[AddBindEntry](#addbindentry)|기본 접근자를 재정의할 때 바인딩 항목을 출력 열에 추가 합니다.|  
 |[CDynamicAccessor](#cdynamicaccessor)|인스턴스화하고 초기화는 `CDynamicAccessor` 개체입니다.|  
-|[닫기](#close)|모든 열을 바인딩 해제, 할당된 된 메모리를 해제 하 고 해제 합니다 [IAccessor](/previous-versions/windows/desktop/ms719672\(v=vs.85\)) 클래스에 대 한 인터페이스 포인터입니다.|  
+|[닫기](#close)|모든 열을 바인딩 해제, 할당된 된 메모리를 해제 하 고 해제 합니다 [IAccessor](/previous-versions/windows/desktop/ms719672) 클래스에 대 한 인터페이스 포인터입니다.|  
 |[GetBlobHandling](#getblobhandling)|BLOB 처리 현재 행에 대 한 값을 검색 합니다.|  
 |[GetBlobSizeLimit](#getblobsizelimit)|최대 BLOB 크기 (바이트) 검색합니다.|  
 |[GetBookmark](#getbookmark)|현재 행에 대 한 책갈피를 검색 합니다.|  
@@ -207,7 +207,7 @@ HRESULT AddBindEntry(const DBCOLUMNINFO& info) throw();
 #### <a name="parameters"></a>매개 변수  
 
 *정보*<br/>
-[in] `DBCOLUMNINFO` 열 정보가 포함 된 구조입니다. "DBCOLUMNINFO 구조"를 참조 하세요 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+[in] `DBCOLUMNINFO` 열 정보가 포함 된 구조입니다. "DBCOLUMNINFO 구조"를 참조 하세요 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="return-value"></a>반환 값  
 
@@ -244,7 +244,7 @@ Binary large object (BLOB) 데이터 처리 방법을 지정 합니다. 기본�
 
 ## <a name="close"></a> Cdynamicaccessor:: Close
 
-모든 열을 바인딩 해제, 할당된 된 메모리를 해제 하 고 해제 합니다 [IAccessor](/previous-versions/windows/desktop/ms719672\(v=vs.85\)) 클래스에 대 한 인터페이스 포인터입니다.  
+모든 열을 바인딩 해제, 할당된 된 메모리를 해제 하 고 해제 합니다 [IAccessor](/previous-versions/windows/desktop/ms719672) 클래스에 대 한 인터페이스 포인터입니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -334,7 +334,7 @@ bool GetColumnFlags(DBORDINAL nColumn,
 [in] 열 번호입니다. 열 번호는 1부터 시작 합니다. 값이 0 있으면 책갈피 열을 참조 합니다.  
   
 *pFlags*<br/>
-[out] 열 특징을 설명 하는 비트 마스크에 대 한 포인터입니다. "DBCOLUMNFLAGS 열거 형식"을 참조 하세요 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+[out] 열 특징을 설명 하는 비트 마스크에 대 한 포인터입니다. "DBCOLUMNFLAGS 열거 형식"을 참조 하세요 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="return-value"></a>반환 값  
 
@@ -360,13 +360,13 @@ HRESULT GetColumnInfo(IRowset* pRowset,
 #### <a name="parameters"></a>매개 변수  
 
 *pRowset*<br/>
-[in] 에 대 한 포인터를 [IRowset](/previous-versions/windows/desktop/ms720986\(v=vs.85\)) 인터페이스입니다.  
+[in] 에 대 한 포인터를 [IRowset](/previous-versions/windows/desktop/ms720986) 인터페이스입니다.  
   
 *pColumns*<br/>
 [out] 행 집합의 열 개수를 반환할 메모리에 대 한 포인터 있는 경우이 숫자는 책갈피 열을 포함 합니다.  
   
 *ppColumnInfo*<br/>
-[out] 배열을 반환할 메모리에 대 한 포인터 `DBCOLUMNINFO` 구조입니다. "DBCOLUMNINFO 구조"를 참조 하세요 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+[out] 배열을 반환할 메모리에 대 한 포인터 `DBCOLUMNINFO` 구조입니다. "DBCOLUMNINFO 구조"를 참조 하세요 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704) 에 *OLE DB Programmer's Reference*합니다.  
   
 *ppStringsBuffer*<br/>
 [out] 모든 문자열 값에 대 한 저장소에 대 한 포인터를 반환할 메모리에 대 한 포인터 (이름 내에서 사용할 *columnid* 용인지 *pwszName*) 단일 할당 블록 내에서.  
@@ -377,7 +377,7 @@ HRESULT 값 중 하나입니다.
   
 ### <a name="remarks"></a>설명  
 
-참조 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 데이터 형식에 대 한 내용은 `DBORDINAL`를 `DBCOLUMNINFO`, 및 `OLECHAR`합니다.  
+참조 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704) 에 *OLE DB Programmer's Reference* 데이터 형식에 대 한 내용은 `DBORDINAL`를 `DBCOLUMNINFO`, 및 `OLECHAR`합니다.  
 
 ## <a name="getcolumnname"></a> Cdynamicaccessor:: Getcolumnname
 
@@ -509,7 +509,7 @@ bool GetStatus(const WCHAR* pColumnName,
 [in] 열 이름을 포함 하는 문자열에 대 한 포인터입니다.  
   
 *pStatus*<br/>
-[out] 열 상태가 들어 있는 변수에 대 한 포인터입니다. 참조 [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.  
+[out] 열 상태가 들어 있는 변수에 대 한 포인터입니다. 참조 [DBSTATUS](/previous-versions/windows/desktop/ms722617) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.  
   
 ### <a name="return-value"></a>반환 값  
 
@@ -667,7 +667,7 @@ bool SetStatus(const WCHAR* pColumnName,
 [in] 열 번호입니다. 열 번호는 1부터 시작 합니다. 값이 0 있으면 책갈피 열을 참조 합니다.  
   
 *status*<br/>
-[in] 열 상태입니다. 참조 [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.  
+[in] 열 상태입니다. 참조 [DBSTATUS](/previous-versions/windows/desktop/ms722617) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.  
   
 *pColumnName*<br/>
 [in] 열 이름을 포함 하는 문자열에 대 한 포인터입니다.  

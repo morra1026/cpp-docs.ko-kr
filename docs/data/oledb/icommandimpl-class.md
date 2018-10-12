@@ -63,16 +63,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 41636a0ff93a247b33c3d7fb7c13a65c05e1aa1d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5f04104aadc2897118a402a06d93db27a5a16079
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46041469"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082815"
 ---
 # <a name="icommandimpl-class"></a>ICommandImpl 클래스
 
-에 대 한 구현을 제공 합니다 [ICommand](/previous-versions/windows/desktop/ms709737\(v=vs.85\)) 인터페이스입니다.  
+에 대 한 구현을 제공 합니다 [ICommand](/previous-versions/windows/desktop/ms709737) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -130,7 +130,7 @@ STDMETHOD(Cancel)();
   
 ### <a name="remarks"></a>설명  
 
-참조 [ICommand::Cancel](/previous-versions/windows/desktop/ms714402\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+참조 [ICommand::Cancel](/previous-versions/windows/desktop/ms714402) 에 *OLE DB Programmer's Reference*합니다.  
 
 ## <a name="cancelexecution"></a> Icommandimpl:: Cancelexecution
 
@@ -189,7 +189,7 @@ HRESULT CreateRowset(IUnknown* pUnkOuter,
 
 둘 이상의 행 집합을 만들고, 다른 행 집합 만들기에 대 한 사용자 고유의 조건을 제공 하는 다양 한 호출을 배치 `CreateRowset` 내에서 `Execute`합니다.  
   
-참조 [icommand:: Execute](/previous-versions/windows/desktop/ms718095\(v=vs.85\)) 에 *OLE DB 프로그래머 참조입니다.*  
+참조 [icommand:: Execute](/previous-versions/windows/desktop/ms718095) 에 *OLE DB 프로그래머 참조입니다.*  
 
 ## <a name="execute"></a> Icommandimpl:: Execute
 
@@ -207,7 +207,7 @@ HRESULT Execute(IUnknown* pUnkOuter,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [icommand:: Execute](/previous-versions/windows/desktop/ms718095\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+참조 [icommand:: Execute](/previous-versions/windows/desktop/ms718095) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="remarks"></a>설명  
 
@@ -228,7 +228,7 @@ STDMETHOD (GetDBSession) (REFIID riid,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [ICommand::GetDBSession](/previous-versions/windows/desktop/ms719622\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+참조 [ICommand::GetDBSession](/previous-versions/windows/desktop/ms719622) 에 *OLE DB Programmer's Reference*합니다.  
   
 ### <a name="remarks"></a>설명  
 

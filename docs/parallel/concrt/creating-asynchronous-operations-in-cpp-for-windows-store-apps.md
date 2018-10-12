@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3461c4965dd40d0aecc7515185592a13f30c08c9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4014d0d7cea999c105a5ee513d9dd1be410546f4
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423015"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084076"
 ---
 # <a name="creating-asynchronous-operations-in-c-for-uwp-apps"></a>C + + UWP 앱 용 비동기 작업 만들기
 
@@ -113,7 +113,7 @@ XAML 및 C#을 사용 하 여 계산 집약적인 작업을 수행 하는 UI와 
 
 [!code-cpp[concrt-windowsstore-primes#2](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_3.cpp)]
 
-각 메서드는 먼저 입력된 매개 변수는 음수가 아닌 수 있도록 유효성 검사를 수행 합니다. 입력된 값이 음수 이면 메서드에서 throw [platform:: invalidargumentexception](https://msdn.microsoft.com/library/windows/apps/hh755794\(v=vs.110\).aspx)합니다. 오류 처리에 대해서는 이 섹션의 뒷부분에서 설명합니다.
+각 메서드는 먼저 입력된 매개 변수는 음수가 아닌 수 있도록 유효성 검사를 수행 합니다. 입력 값이 음수이면 메서드에서 [Platform::InvalidArgumentException](https://msdn.microsoft.com/library/windows/apps/hh755794.aspx)을 throw합니다. 오류 처리에 대해서는 이 섹션의 뒷부분에서 설명합니다.
 
 UWP 앱에서 이러한 메서드를 사용 하려면 다음을 사용 Visual C# **빈 앱 (XAML)** 템플릿을 Visual Studio 솔루션에 두 번째 프로젝트를 추가 합니다. 이 예에서는 프로젝트 이름을 `Primes`로 지정합니다. 그런 다음 `Primes` 프로젝트에서 `PrimesLibrary` 프로젝트에 대한 참조를 추가합니다.
 
@@ -136,7 +136,7 @@ MainPage.xaml의 `MainPage` 클래스에 다음 코드를 추가합니다. 이 �
 
 ![Windows 런타임 Primes 앱](../../parallel/concrt/media/concrt_windows_primes.png "concrt_windows_primes")
 
-사용 하는 예제에 대 한 `create_async` 다른 언어에서 사용할 수 있는 비동기 작업을 만들려면 참조 [Bing Maps Trip Optimizer 샘플에서 c + +를 사용 하 여](https://msdn.microsoft.com/library/windows/apps/hh699891\(v=vs.110\).aspx) 고 [PPL사용하여c++의Windows8비동기작업](http://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d).
+`create_async` 를 사용하여 다른 언어에서 사용할 수 있는 비동기 작업을 만드는 예는 [Bing 지도 여정 최적화 프로그램 샘플에서 C++ 사용](https://msdn.microsoft.com/library/windows/apps/hh699891.aspx) 및 [PPL을 사용하는 C++의 Windows 8 비동기 작업](http://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d)을 참조하세요.
 
 ##  <a name="exethread"></a> 실행 스레드 제어
 
@@ -166,7 +166,7 @@ UI가 있는 앱에서 ASTA(응용 프로그램 STA) 스레드는 창 메시지�
 
 ##  <a name="example-app"></a> 예: c + + 및 XAML을 사용 하 여 Windows 런타임 앱에서 실행 제어
 
-디스크에서 파일을 읽고 해당 파일에서 가장 일반적인 단어를 찾은 다음 UI에 결과를 표시하는 C++ XAML 앱을 살펴보겠습니다. 이 앱을 만들려면, Visual Studio에서 만들어 시작을 **비어 있는 앱 (유니버설 Windows)** 프로젝트 이름을 지정 하 고 `CommonWords`입니다. 앱 매니페스트에서 **문서 라이브러리** 접근 권한을 지정하여 앱이 문서 폴더에 액세스할 수 있도록 합니다. 또한 텍스트(.txt) 파일 형식을 앱 매니페스트의 선언 섹션에 추가합니다. 앱 기능 및 선언에 대 한 자세한 내용은 참조 하세요. [앱 패키지 및 배포](https://msdn.microsoft.com/library/windows/apps/hh464929.aspx)합니다.
+디스크에서 파일을 읽고 해당 파일에서 가장 일반적인 단어를 찾은 다음 UI에 결과를 표시하는 C++ XAML 앱을 살펴보겠습니다. 이 앱을 만들려면, Visual Studio에서 만들어 시작을 **비어 있는 앱 (유니버설 Windows)** 프로젝트 이름을 지정 하 고 `CommonWords`입니다. 앱 매니페스트에서 **문서 라이브러리** 접근 권한을 지정하여 앱이 문서 폴더에 액세스할 수 있도록 합니다. 또한 텍스트(.txt) 파일 형식을 앱 매니페스트의 선언 섹션에 추가합니다. 앱 기능 및 선언에 대한 자세한 내용은 [앱 패키지 및 배포](https://msdn.microsoft.com/library/windows/apps/hh464929.aspx)를 참조하세요.
 
 MainPage.xaml에서 `Grid` 요소를 업데이트하여 `ProgressRing` 요소와 `TextBlock` 요소를 포함합니다. `ProgressRing` 은 작업이 진행 중임을 나타내고, `TextBlock` 은 계산의 결과를 보여 줍니다.
 

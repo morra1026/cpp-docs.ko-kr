@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 263a90710d2103c4ea97e6c56da67d676ba7366b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7f9cbfce7e04040f0e1618148a3c258f21bb84b8
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222082"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083465"
 ---
 # <a name="converting-projects-from-mixed-mode-to-pure-intermediate-language"></a>혼합된 모드에서 순수 intermediate language로 프로젝트를 변환
 
@@ -84,26 +84,26 @@ ms.locfileid: "43222082"
 
 3. 모든 관리 되지 않는 형식을 제거 합니다.
 
-   적절 한 위치에서 구조에 대 한 참조를 사용 하 여 관리 되지 않는 형식 대체를 [시스템](https://msdn.microsoft.com/library/system.appdomainmanager.appdomainmanager.aspx) 네임 스페이스입니다. 일반적인 관리 되는 유형이 다음 표에 나와 있습니다.
+   적절 한 위치에서 구조에 대 한 참조를 사용 하 여 관리 되지 않는 형식 대체를 [시스템](/dotnet/api/system) 네임 스페이스입니다. 일반적인 관리 되는 유형이 다음 표에 나와 있습니다.
 
    |구조체|설명|
    |---------------|-----------------|
-   |[Boolean](https://msdn.microsoft.com/library/system.boolean\(v=vs.140\).aspx)|부울 값을 나타냅니다.|
-   |[Byte](https://msdn.microsoft.com/library/system.byte\(v=vs.140\).aspx)|부호 없는 8비트 정수를 나타냅니다.|
-   |[Char](https://msdn.microsoft.com/library/system.char\(v=vs.140\).aspx)|유니코드 문자를 나타냅니다.|
-   |[DateTime](https://msdn.microsoft.com/library/system.datetime.datetime.aspx)|일반적으로 날짜와 시간으로 표시된 시간을 나타냅니다.|
-   |[Decimal](https://msdn.microsoft.com/library/system.decimal\(v=vs.140\).aspx)|10진수를 나타냅니다.|
-   |[Double](https://msdn.microsoft.com/library/system.double\(v=vs.140\).aspx)|배정밀도 부동 소수점 숫자를 나타냅니다.|
-   |[Guid](https://msdn.microsoft.com/library/system.guid\(v=vs.140\).aspx)|GUID(Globally Unique IDentifier)를 나타냅니다.|
-   |[Int16](https://msdn.microsoft.com/library/system.int16\(v=vs.140\).aspx)|부호 있는 16비트 정수를 나타냅니다.|
-   |[Int32](https://msdn.microsoft.com/library/system.int32\(v=vs.140\).aspx)|부호 있는 32비트 정수를 나타냅니다.|
-   |[Int64](https://msdn.microsoft.com/library/system.int64\(v=vs.140\).aspx)|부호 있는 64비트 정수를 나타냅니다.|
-   |[IntPtr](https://msdn.microsoft.com/library/system.intptr\(v=vs.140\).aspx)|포인터나 핸들을 나타내는 데 사용되는 플랫폼별 형식입니다.|
-   |[SByte](https://msdn.microsoft.com/library/system.byte.aspx)|8비트 부호 있는 정수를 나타냅니다.|
-   |[Single](https://msdn.microsoft.com/library/system.single.aspx)|단정밀도 부동 소수점 숫자를 나타냅니다.|
-   |[TimeSpan](https://msdn.microsoft.com/library/system.timespan\(v=vs.140\).aspx)|시간 간격을 나타냅니다.|
-   |[UInt16](https://msdn.microsoft.com/library/system.uint16\(v=vs.140\).aspx)|16비트 부호 없는 정수를 나타냅니다.|
-   |[UInt32](https://msdn.microsoft.com/library/system.uint32\(v=vs.140\).aspx)|32비트 부호 없는 정수를 나타냅니다.|
-   |[UInt64](https://msdn.microsoft.com/library/system.uint64\(v=vs.140\).aspx)|64비트 부호 없는 정수를 나타냅니다.|
-   |[UIntPtr](https://msdn.microsoft.com/library/system.uintptr\(v=vs.140\).aspx)|포인터나 핸들을 나타내는 데 사용되는 플랫폼별 형식입니다.|
-   |[void](https://msdn.microsoft.com/library/system.void\(v=vs.140\).aspx)|값을 반환 하지 않는 메서드를 나타냅니다. 즉, 메서드 void 반환 형식을 갖습니다.|
+   |[Boolean](/dotnet/api/system.boolean)|부울 값을 나타냅니다.|
+   |[Byte](/dotnet/api/system.byte)|부호 없는 8비트 정수를 나타냅니다.|
+   |[Char](/dotnet/api/system.char)|유니코드 문자를 나타냅니다.|
+   |[DateTime](/dotnet/api/system.datetime.datetime.aspx)|일반적으로 날짜와 시간으로 표시된 시간을 나타냅니다.|
+   |[Decimal](/dotnet/api/system.decimal)|10진수를 나타냅니다.|
+   |[double](/dotnet/api/system.double)|배정밀도 부동 소수점 숫자를 나타냅니다.|
+   |[Guid](/dotnet/api/system.guid)|GUID(Globally Unique IDentifier)를 나타냅니다.|
+   |[Int16](/dotnet/api/system.int16)|부호 있는 16비트 정수를 나타냅니다.|
+   |[Int32](/dotnet/api/system.int32)|부호 있는 32비트 정수를 나타냅니다.|
+   |[Int64](/dotnet/api/system.int64)|부호 있는 64비트 정수를 나타냅니다.|
+   |[IntPtr](/dotnet/api/system.intptr)|포인터나 핸들을 나타내는 데 사용되는 플랫폼별 형식입니다.|
+   |[SByte](/dotnet/api/system.byte.aspx)|8비트 부호 있는 정수를 나타냅니다.|
+   |[Single](/dotnet/api/system.single.aspx)|단정밀도 부동 소수점 숫자를 나타냅니다.|
+   |[TimeSpan](/dotnet/api/system.timespan)|시간 간격을 나타냅니다.|
+   |[UInt16](/dotnet/api/system.uint16)|16비트 부호 없는 정수를 나타냅니다.|
+   |[UInt32](/dotnet/api/system.uint32)|32비트 부호 없는 정수를 나타냅니다.|
+   |[UInt64](/dotnet/api/system.uint64)|64비트 부호 없는 정수를 나타냅니다.|
+   |[UIntPtr](/dotnet/api/system.uintptr)|포인터나 핸들을 나타내는 데 사용되는 플랫폼별 형식입니다.|
+   |[void](/dotnet/api/system.void)|값을 반환 하지 않는 메서드를 나타냅니다. 즉, 메서드 void 반환 형식을 갖습니다.|

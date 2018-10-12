@@ -38,16 +38,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: bde6a3947d7afa836d93387e80c9b7885b1bc15c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3a0b7bb8f430f2e132413fbb8bca2563c4fd7014
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099410"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083712"
 ---
 # <a name="icolumnsinfoimpl-class"></a>IColumnsInfoImpl 클래스
 
-구현을 제공 합니다 [IColumnsInfo](/previous-versions/windows/desktop/ms724541\(v=vs.85\)) 인터페이스입니다.  
+구현을 제공 합니다 [IColumnsInfo](/previous-versions/windows/desktop/ms724541) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -94,7 +94,7 @@ STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+참조 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704) 에 *OLE DB Programmer's Reference*합니다.  
 
 ## <a name="mapcolumnids"></a> Icolumnsinfoimpl:: Mapcolumnids
 
@@ -110,7 +110,7 @@ STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+참조 [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200) 에 *OLE DB Programmer's Reference*합니다.  
   
 ## <a name="see-also"></a>참고 항목  
 
