@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 165ea5b42ea4e293eb60b7a798778e3a461e0385
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: f7ecf84317f8d88748e4a50a43c173a3fe41e0e2
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235453"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163740"
 ---
 # <a name="how-to-migrate-to-clr"></a>방법: /clr로 마이그레이션
 
@@ -84,7 +84,7 @@ NewFunc2 = (MYPROC)GetProcAddress( hLib, "Func2" );
 
 C + + 수도 있어야 함수 하거나 프로토타입화 하거나 완전히 정의 전에 참조 하거나 호출할 수 있습니다.
 
-C + +에서 키워드 될 수 있는 C 코드에서 사용 하는 식별자 (같은 `virtual`, `new`, `delete`, `bool`를 `true`, `false`등) 이름을 변경 해야 합니다. 이 간단한 검색 및 바꾸기 작업을 사용 하 여 일반적으로 수행할 수 있습니다.
+C + +에서 키워드 될 수 있는 C 코드에서 사용 하는 식별자 (같은 **가상**를 **새**를 **삭제**를 **bool**, **true** 하십시오 **false**등) 이름을 변경 해야 합니다. 이 간단한 검색 및 바꾸기 작업을 사용 하 여 일반적으로 수행할 수 있습니다.
 
 ```
 COMObj1->lpVtbl->Method(COMObj, args);  // C code

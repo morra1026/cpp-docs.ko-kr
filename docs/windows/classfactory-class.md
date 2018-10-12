@@ -27,12 +27,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9e3639bb9d6ca88862b3a2fb4367fc429a665287
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 4facba4a35e28818f22ba17f6d835b781cd76061
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788671"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163272"
 ---
 # <a name="classfactory-class"></a>ClassFactory 클래스
 
@@ -158,7 +158,7 @@ STDMETHOD(
 ### <a name="parameters"></a>매개 변수
 
 *떼*<br/>
-추적된 개체 수를 늘리려면 `true`입니다. 추적된 개체 수를 줄이려면 `false`입니다.
+**true** 추적 된 개체 수가 증가 합니다. **false** 추적 된 개체 수가 감소 합니다.
 
 ### <a name="return-value"></a>반환 값
 

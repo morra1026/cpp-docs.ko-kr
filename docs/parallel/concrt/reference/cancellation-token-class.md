@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9b438725a5a725597a81f0587936618a06cbb4b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 218451b0483e569bf4c944e139aff3446f5925e7
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414305"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162076"
 ---
 # <a name="cancellationtoken-class"></a>cancellation_token 클래스
 
@@ -55,7 +55,7 @@ class cancellation_token;
 |----------|-----------------|
 |[deregister_callback](#deregister_callback)|등록 시 반환된 `register` 개체를 기반으로 `cancellation_token_registration` 메서드를 통해 이전에 등록한 콜백을 제거합니다.|
 |[is_cancelable](#is_cancelable)|이 토큰을 취소할 수 있는지 여부를 나타내는 값을 반환합니다.|
-|[is_canceled](#is_canceled)|토큰이 취소된 경우 `true`를 반환합니다.|
+|[is_canceled](#is_canceled)|반환 **true** 토큰이 취소 된 경우.|
 |[none](#none)|취소에 영향을 받을 수 없는 취소 토큰을 반환합니다.|
 |[register_callback](#register_callback)|토큰에 콜백 함수를 등록합니다. 만약 토큰이 취소되면 콜백이 만들어집니다. 이 메서드가 호출된 시점에 토큰이 이미 취소된 경우, 동기적으로 즉시 콜백이 만들어집니다.|
 
@@ -65,7 +65,7 @@ class cancellation_token;
 |----------|-----------------|
 |[operator!=](#operator_neq)||
 |[operator=](#operator_eq)||
-|[operator==](#operator_eq_eq)||
+|[연산자==](#operator_eq_eq)||
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -123,7 +123,7 @@ bool is_cancelable() const;
 
 ##  <a name="is_canceled"></a> is_canceled
 
-토큰이 취소된 경우 `true`를 반환합니다.
+반환 **true** 토큰이 취소 된 경우.
 
 ```
 bool is_canceled() const;
@@ -131,7 +131,7 @@ bool is_canceled() const;
 
 ### <a name="return-value"></a>반환 값
 
-토큰이 취소되면 값은 `true`이고, 그렇지 않으면 값은 `false`입니다.
+값 **true** 토큰이 취소 된 그렇지 않은 경우 값 **false**합니다.
 
 ##  <a name="none"></a> 없음
 

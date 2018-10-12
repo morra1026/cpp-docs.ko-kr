@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 78cbd53baf9e9ade8c20f3b9f5fa419eeb2d1c80
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 211005f273500992440c0e95d2c3c4e3adcef581
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441917"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163415"
 ---
 # <a name="concurrency-namespace-functions-amp"></a>Concurrency 네임 스페이스 함수 (AMP)
 
@@ -92,7 +92,7 @@ inline bool atomic_compare_exchange(
 
 ### <a name="return-value"></a>반환 값
 
-작업에 성공하면 `true`이고, 그렇지 않으면 `false`입니다.
+**true 이면** 작업이 고, 그렇지 않으면 성공한 경우 **false**합니다.
 
 ##  <a name="atomic_exchange"></a>  atomic_exchange 함수 (c + + AMP)
 
@@ -554,7 +554,7 @@ concurrency::completion_future copy_async(
 
 ##  <a name="direct3d_abort"></a>  direct3d_abort
 
-`restrict(amp)` 제한 절이 있는 함수의 실행을 중단합니다. AMP 런타임이 호출을 감지 하는 경우 발생을 [runtime_exception](runtime-exception-class.md) 오류 메시지를 사용 하 여 예외 "Reference Rasterizer: Shader abort 명령 적중"입니다.
+`restrict(amp)` 제한 절이 있는 함수의 실행을 중단합니다. AMP 런타임이 호출을 감지하면 "Reference Rasterizer: Shader abort instruction hit" 오류 메시지로 [runtime_exception](runtime-exception-class.md) 예외를 발생시킵니다.
 
 ```
 void direct3d_abort() restrict(amp);

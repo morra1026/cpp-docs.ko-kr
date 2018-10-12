@@ -43,12 +43,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f5b84020d9428066bdadfff53500d671233f07d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f4a184e0fee76f3aa5bb8f7729250c03b10b9dfc
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163493"
 ---
 # <a name="sourceblock-class"></a>source_block 클래스
 
@@ -237,7 +237,7 @@ virtual message<_Target_type>* consume(
 
 메서드에서 throw 한 [bad_target](bad-target-class.md) 예외 경우 매개 변수 `_PTarget` 호출한 대상을 나타내지 않습니다 `reserve`합니다.
 
-`consume` 메서드는 비슷합니다 `accept`를 항상 호출을 통해 야 하지만 `reserve` 반환 되는 `true`합니다.
+`consume` 메서드와 비슷합니다 `accept`를 항상 호출을 통해 야 하지만 `reserve` 반환 **true**합니다.
 
 ##  <a name="consume_message"></a> consume_message
 
@@ -427,7 +427,7 @@ virtual bool reserve(
 
 ### <a name="return-value"></a>반환 값
 
-`true` 메시지를 성공적으로 예약 하는 경우 `false` 그렇지 않은 경우. 예약은 메시지를 이미 다른 대상이 예약했거나 수락한 경우, 소스에서 예약을 거부한 경우 등과 같은 다양한 이유로 실패할 수 있습니다.
+**true 이면** 메시지를 성공적으로 예약 하는 경우 **false** 그렇지 않은 경우. 예약은 메시지를 이미 다른 대상이 예약했거나 수락한 경우, 소스에서 예약을 거부한 경우 등과 같은 다양한 이유로 실패할 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -450,11 +450,11 @@ virtual bool reserve_message(runtime_object_identity _MsgId) = 0;
 
 ### <a name="return-value"></a>반환 값
 
-`true` 메시지를 성공적으로 예약 하는 경우 `false` 그렇지 않은 경우.
+**true 이면** 메시지를 성공적으로 예약 하는 경우 **false** 그렇지 않은 경우.
 
 ### <a name="remarks"></a>설명
 
-후 `reserve` 반환 하는 경우 라고 `true`하거나, `consume` 또는 `release` 수행 하거나 메시지의 소유권을 해제를 호출 해야 합니다.
+후 `reserve` 반환 하는 경우 라고 **true**하거나, `consume` 또는 `release` 수행 하거나 메시지의 소유권을 해제를 호출 해야 합니다.
 
 ##  <a name="resume_propagation"></a> resume_propagation
 

@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f96a8a27b511c1a93114c32d048043aa9562fe1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 24e1113dac068a20e535bee3e8fd5fa9dcfb9064
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392969"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163571"
 ---
 # <a name="how-to-use-oversubscription-to-offset-latency"></a>방법: 초과 구독을 사용하여 대기 오프셋
 
@@ -30,7 +30,7 @@ ms.locfileid: "46392969"
 
 이 예제에서는 합니다 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md) HTTP 서버에서 파일을 다운로드 합니다. `http_reader` 클래스에서 파생 되며 [concurrency:: agent](../../parallel/concrt/reference/agent-class.md) 및 사용 하 여 메시지를 다운로드할 URL 이름을 비동기적으로 읽는 전달 합니다.
 
-`http_reader` 클래스가 사용 하는 [concurrency:: task_group](reference/task-group-class.md) 클래스를 동시에 각 파일을 읽습니다. 각 작업 호출을 [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) 메서드를 `_BeginOversubscription` 매개 변수 설정 `true` 현재 컨텍스트에서 초과 구독을 사용 하도록 설정 합니다. 각 작업 (MFC (Microsoft Foundation 클래스)에 다음 사용 하 여 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 하 고 [CHttpFile](../../mfc/reference/chttpfile-class.md) 클래스 파일을 다운로드 합니다. 마지막으로, 각 작업 호출 `Context::Oversubscribe` 사용 하 여 합니다 `_BeginOversubscription` 매개 변수 설정 `false` 초과 구독을 사용 하지 않도록 설정 합니다.
+`http_reader` 클래스가 사용 하는 [concurrency:: task_group](reference/task-group-class.md) 클래스를 동시에 각 파일을 읽습니다. 각 작업 호출을 [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) 메서드를 `_BeginOversubscription` 매개 변수 설정 **true** 현재 컨텍스트에서 초과 구독을 사용 하도록 설정 합니다. 각 작업 (MFC (Microsoft Foundation 클래스)에 다음 사용 하 여 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 하 고 [CHttpFile](../../mfc/reference/chttpfile-class.md) 클래스 파일을 다운로드 합니다. 마지막으로, 각 작업 호출 `Context::Oversubscribe` 사용 하 여 합니다 `_BeginOversubscription` 매개 변수 설정 **false** 초과 구독을 사용 하지 않도록 설정 합니다.
 
 초과 구독을 사용 하는 경우 런타임은 작업을 실행 하는 하나의 추가 스레드를 만듭니다. 이러한 각 스레드가 현재 컨텍스트에서 초과 구독 하 고 있으므로 추가 스레드를 만들 수 있습니다. 합니다 `http_reader` 클래스가 사용 하는 [concurrency:: unbounded_buffer](reference/unbounded-buffer-class.md) 응용 프로그램을 사용 하는 스레드 수를 제한 하는 개체입니다. 에이전트는 고정된 된 수의 토큰 값을 사용 하 여 버퍼를 초기화합니다. 각 다운로드 작업에 대 한 에이전트 작업을 시작 하 고 다음이 값이 기록 다시 버퍼에는 작업이 완료 된 후 전에 버퍼에서 토큰 값을를 읽습니다. 버퍼가 비어 있는 경우 에이전트는 버퍼에 값을 다시 쓸 다운로드 작업 중 하나에 대 한 대기 합니다.
 
@@ -68,7 +68,7 @@ Downloaded 1801040 bytes in 3276 ms.
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `download-oversubscription.cpp` 및 Visual Studio 명령 프롬프트 창에서 다음 중 하나를 실행된 명령을 합니다.
+예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `download-oversubscription.cpp` 명령에 다음 중 하나를 실행된 한 다음 고는 **Visual Studio 명령 프롬프트** 창.
 
 **cl.exe /EHsc /MD /D "_AFXDLL" download-oversubscription.cpp**
 

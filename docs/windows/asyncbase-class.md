@@ -65,12 +65,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a1003553cb0c3fc3abc8c24a6870485816397eaa
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 9647e18af021caf67dea5d946c9e5bf00fb50807
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861956"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162934"
 ---
 # <a name="asyncbase-class"></a>AsyncBase 클래스
 
@@ -233,7 +233,7 @@ inline bool ContinueAsyncOperation();
 
 ### <a name="return-value"></a>반환 값
 
-`true` 비동기 작업의 현재 상태 이면 *시작*, 즉, 작업을 계속 해야 합니다. 그렇지 않으면 `false`, 즉, 작업을 중지 해야 합니다.
+**true** 비동기 작업의 현재 상태 이면 *시작*, 즉, 작업을 계속 해야 합니다. 그렇지 않으면 **false**, 즉, 작업을 중지 해야 합니다.
 
 ## <a name="currentstatus"></a>Asyncbase:: Currentstatus
 
@@ -528,7 +528,7 @@ bool TryTransitionToCompleted(
 
 ### <a name="return-value"></a>반환 값
 
-`true` 비동기 작업이 완료 되었으면; 그렇지 않으면 `false`합니다.
+**true 이면** 비동기 작업이 완료 되었으면;이 고, 그렇지 **false**합니다.
 
 ## <a name="trytransitiontoerror"></a>Asyncbase:: Trytransitiontoerror
 
@@ -547,7 +547,7 @@ HRESULT 오류가 발생 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-`true` 내부 오류 상태를 변경 된 경우 그렇지 않으면 `false`합니다.
+**true 이면** 내부 오류 상태가 고, 그렇지 않으면 변경 되었으면 **false**합니다.
 
 ### <a name="remarks"></a>설명
 

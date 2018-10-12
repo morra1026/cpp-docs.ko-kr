@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b16dee4d0a3c5a6d09c1fd19006c832be400d5a4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 93578f9d798e0c0bab0fe58a3211c20507dd99d4
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46411078"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162063"
 ---
 # <a name="how-to-use-a-message-block-filter"></a>방법: 메시지 블록 필터 사용
 
@@ -48,7 +48,7 @@ ms.locfileid: "46411078"
 
 [!code-cpp[concrt-primes-filter#2](../../parallel/concrt/codesnippet/cpp/how-to-use-a-message-block-filter_2.cpp)]
 
-`transformer` 개체는 이제는 해당 값만 처리 합니다. 이전 예에서 `transformer` 모든 메시지를 처리 하는 개체입니다. 따라서 앞의 예제 수가 보내는 메시지를 받아야 합니다. 이 예제에서는 결과 [concurrency:: send](reference/concurrency-namespace-functions.md#send) 메시지에서 수신 하도록 결정 하는 함수는 `transformer` 개체입니다. 합니다 `send` 함수에서 반환 `true` 메시지 버퍼에서 메시지를 수락 하는 경우 및 `false` 메시지 버퍼는 메시지를 거부 하는 경우. 따라서 메시지 버퍼에서 메시지를 수락 하는 횟수에는 소수의 수와 일치 합니다.
+`transformer` 개체는 이제는 해당 값만 처리 합니다. 이전 예에서 `transformer` 모든 메시지를 처리 하는 개체입니다. 따라서 앞의 예제 수가 보내는 메시지를 받아야 합니다. 이 예제에서는 결과 [concurrency:: send](reference/concurrency-namespace-functions.md#send) 메시지에서 수신 하도록 결정 하는 함수는 `transformer` 개체입니다. 합니다 `send` 함수에서 반환 **true** 메시지 버퍼에서 메시지를 수락 하는 경우 및 **false** 메시지 버퍼는 메시지를 거부 하는 경우. 따라서 메시지 버퍼에서 메시지를 수락 하는 횟수에는 소수의 수와 일치 합니다.
 
 ## <a name="example"></a>예제
 

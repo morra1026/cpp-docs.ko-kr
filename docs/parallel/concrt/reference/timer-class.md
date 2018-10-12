@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b821dcc3426c6e1d9f3cd2f2ff8eb057197ca8d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e37348fe92354d2ea7be3168dc5b3c9aee9fcd63
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416203"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163106"
 ---
 # <a name="timer-class"></a>timer 클래스
 
@@ -193,11 +193,11 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 ### <a name="return-value"></a>반환 값
 
-`true` 메시지를 성공적으로 예약 하는 경우 `false` 그렇지 않은 경우.
+**true 이면** 메시지를 성공적으로 예약 하는 경우 **false** 그렇지 않은 경우.
 
 ### <a name="remarks"></a>설명
 
-후 `reserve` 반환 하는 경우 라고 `true`하거나, `consume` 또는 `release` 수행 하거나 메시지의 소유권을 해제를 호출 해야 합니다.
+후 `reserve` 반환 하는 경우 라고 **true**하거나, `consume` 또는 `release` 수행 하거나 메시지의 소유권을 해제를 호출 해야 합니다.
 
 ##  <a name="resume_propagation"></a> resume_propagation
 
@@ -267,11 +267,11 @@ True 이면 타이머가 정기적으로 실행 됩니다 모든 `_Ms` 시간 (�
 `Scheduler` 개체에 대 한 작업 전파 되는 `timer` 메시징 블록은 예약 된 예약 됩니다.
 
 *_ScheduleGroup*<br/>
-`ScheduleGroup` 개체에 대 한 작업의 전파는는 `timer` 메시징 블록 예약 됩니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.
+`ScheduleGroup` 메시징 블록의 전파 작업이 예약되는 `timer` 개체입니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.
 
 ### <a name="remarks"></a>설명
 
-지정 하지 않는 경우 런타임은 기본 스케줄러를 사용 합니다 `_Scheduler` 또는 `_ScheduleGroup` 매개 변수입니다.
+런타임은 `_Scheduler` 또는 `_ScheduleGroup` 매개 변수를 지정하지 않는 경우 기본 스케줄러를 사용합니다.
 
 ##  <a name="dtor"></a> ~ 타이머
 

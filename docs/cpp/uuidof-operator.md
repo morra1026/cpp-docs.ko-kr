@@ -1,13 +1,15 @@
 ---
 title: __uuidof 연산자 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/10/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
 f1_keywords:
 - __LIBID_cpp
 - __uuidof_cpp
+- __uuidof
+- _uuidof
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84fd779d50fb481cffc97b61a65f255c6c8f52a1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c75e33dd7aab1e96a1d2d3464e974a7095f83f3f
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46056740"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163857"
 ---
 # <a name="uuidof-operator"></a>__uuidof 연산자
 
@@ -50,7 +52,9 @@ __uuidof (expression)
 - 사용 하 여 만든 라이브러리 블록의 [모듈](../windows/module-cpp.md) 특성입니다.
 
 > [!NOTE]
->  디버그 빌드에서 **__uuidof** 항상 동적으로 (런타임으로) 개체를 초기화 합니다. 릴리스 빌드에서 **__uuidof** 정적으로 (컴파일 시) 개체를 초기화할 수 있습니다.
+> 디버그 빌드에서 **__uuidof** 항상 동적으로 (런타임으로) 개체를 초기화 합니다. 릴리스 빌드에서 **__uuidof** 정적으로 (컴파일 시) 개체를 초기화할 수 있습니다.
+
+이전 버전과 호환성에 대 한 **_uuidof** 에 대 한 동의어가 **__uuidof** 하지 않으면 컴파일러 옵션 [/Za \(언어 확장 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md) 는 지정 합니다.
 
 ## <a name="example"></a>예제
 

@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 18aeac7767fbd4c1688b202670a812e5738ef62f
-ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
+ms.openlocfilehash: ad7081e22762409682250da0330575885378e8ab
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494428"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161881"
 ---
 # <a name="modulegenericreleasenotifier-class"></a>Module::GenericReleaseNotifier 클래스
 
@@ -99,11 +99,11 @@ GenericReleaseNotifier(
 
 ### <a name="parameters"></a>매개 변수
 
-*콜백*  
+*콜백*<br/>
 람다, 함수 또는 괄호 함수 연산자를 사용 하 여 호출할 수 있는 함수에 대 한 포인터 이벤트 처리기 (`()`).
 
-*release*  
-지정할 `true` 내부 호출을 사용 하도록 설정 하려면 [모듈:: ReleaseNotifier::Release()](../windows/module-releasenotifier-release.md) 메서드를 지정이 고, 그렇지 `false`합니다.
+*release*<br/>
+지정할 **true** 내부 호출을 사용 하도록 설정 하려면 [모듈:: ReleaseNotifier::Release()](../windows/module-releasenotifier-release.md) 메서드를 지정이 고, 그렇지 **false**합니다.
 
 ## <a name="genericreleasenotifier-invoke"></a>Module:: genericreleasenotifier:: 호출
 

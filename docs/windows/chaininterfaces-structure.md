@@ -27,12 +27,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: df483f08e96f2bd479504028ce4ce17513bb7d41
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 28683d8c69a800cb6f9a365beda26c75b3a69d15
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789023"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161816"
 ---
 # <a name="chaininterfaces-structure"></a>ChainInterfaces 구조체
 
@@ -117,7 +117,7 @@ struct ChainInterfaces<
 파생 형식이 기본 형식입니다.
 
 *hasImplements*<br/>
-경우에 해당 하는 부울 값 `true`를 사용할 수 없습니다는 [MixIn](../windows/mixin-structure.md) 에서 파생 되지 않은 클래스를 사용 하 여 구조를 [구현](../windows/implements-structure.md) 갖는 합니다.
+경우에 해당 하는 부울 값 **true**를 사용할 수 없습니다는 [MixIn](../windows/mixin-structure.md) 에서 파생 되지 않은 클래스를 사용 하 여 구조를 [구현](../windows/implements-structure.md) 갖는 합니다.
 
 ## <a name="members"></a>멤버
 
@@ -169,7 +169,7 @@ __forceinline bool CanCastTo(
 
 ### <a name="return-value"></a>반환 값
 
-`true` 모든 캐스트 연산에 성공할 경우 그렇지 않으면 `false`합니다.
+**true 이면** 모든 캐스트 작업이 성공 하면이 고, 그렇지 **false**합니다.
 
 ## <a name="casttounknown"></a>Chaininterfaces:: Casttounknown
 

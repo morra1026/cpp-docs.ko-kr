@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac3072e3fafe317e0517c36b375259c3c98a1a41
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6fee851ed1df79f2868414a0a7e960eeb76bc127
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438485"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163649"
 ---
 # <a name="completionfuture-class"></a>completion_future 클래스
 
@@ -203,7 +203,7 @@ bool valid() const;
 
 ### <a name="return-value"></a>반환 값
 
-개체가 비동기 작업에 연결되어 있으면 `true`이고, 그렇지 않으면 `false`입니다.
+**true 이면** 개체가 비동기 작업을 포함 하 고, 그렇지 않으면 **false**합니다.
 
 ## <a name="wait"></a> 대기
 

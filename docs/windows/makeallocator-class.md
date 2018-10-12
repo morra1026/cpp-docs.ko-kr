@@ -25,12 +25,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 94c094fe21127592bd8756d0f0b467e2c74df487
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 93fb92c51ee16593f9314d7172f0b38e6d0918e8
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789243"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162479"
 ---
 # <a name="makeallocator-class"></a>MakeAllocator 클래스
 
@@ -60,7 +60,7 @@ class MakeAllocator<T, true>;
 형식 이름.
 
 *hasWeakReferenceSupport*<br/>
-`true` 약한 참조를 지 원하는 개체에 대 한 메모리를 할당 하려면 `false` 약한 참조를 지원 하지 않는 개체에 대 한 메모리를 할당할 수 있습니다.
+**true** ; 약한 참조를 지 원하는 개체에 대 한 메모리를 할당 하려면 **false** 약한 참조를 지원 하지 않는 개체에 대 한 메모리를 할당할 수 있습니다.
 
 ## <a name="remarks"></a>설명
 

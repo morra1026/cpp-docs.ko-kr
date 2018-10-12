@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e84c8df1748e68f2364400fd4725ce6bffd232f1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 854f5935a66d845aa3c63b9f15857732fdfe6b8a
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379712"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163870"
 ---
 # <a name="context-class"></a>Context 클래스
 
@@ -64,7 +64,7 @@ class Context;
 |[GetId](#getid)|컨텍스트에 속한 스케줄러 내의 고유한 컨텍스트에 대 한 식별자를 반환 합니다.|
 |[GetScheduleGroupId](#getschedulegroupid)|컨텍스트는 현재 작업의 일정 그룹에 대 한 식별자를 반환 합니다.|
 |[GetVirtualProcessorId](#getvirtualprocessorid)|컨텍스트는 현재 실행 중인 가상 프로세서에 대 한 식별자를 반환 합니다.|
-|[Id](#id)|현재 컨텍스트의 현재 컨텍스트에 속한 scheduler 내에서 고유한 식별자를 반환 합니다.|
+|[ID](#id)|현재 컨텍스트의 현재 컨텍스트에 속한 scheduler 내에서 고유한 식별자를 반환 합니다.|
 |[IsCurrentTaskCollectionCanceling](#iscurrenttaskcollectioncanceling)|반환 여부를 현재 컨텍스트에서 현재 인라인으로 실행 하는 작업 컬렉션을 활성 취소를 도중 (또는 곧).|
 |[IsSynchronouslyBlocked](#issynchronouslyblocked)|컨텍스트에서 동기적으로 차단 여부를 결정 합니다. 컨텍스트를 명시적으로 차단 발생 하는 작업을 수행한 경우 동기적으로 차단으로 간주 됩니다.|
 |[초과 구독](#oversubscribe)|해당 스케줄러의 가상 프로세서 중 하나에서 실행 컨텍스트에서 호출 될 때 코드 블록 기간에 대 한 스케줄러에 추가 가상 프로세서를 삽입 합니다.|
@@ -241,7 +241,7 @@ static void __cdecl Oversubscribe(bool _BeginOversubscription);
 ### <a name="parameters"></a>매개 변수
 
 *_BeginOversubscription*<br/>
-경우 `true`, 초과 구독의 기간에서 추가 가상 프로세서를 추가 해야 함을 나타냅니다. 경우 `false`를 나타내는 값을 초과 구독이 종료 되어야 하는 이전에 추가한 가상 프로세서를 제거 해야 합니다.
+하는 경우 **true**, 초과 구독의 기간에서 추가 가상 프로세서를 추가 해야 함을 나타냅니다. 하는 경우 **false**를 나타내는 값을 초과 구독이 종료 되어야 하는 이전에 추가한 가상 프로세서를 제거 해야 합니다.
 
 ##  <a name="schedulegroupid"></a> ScheduleGroupId
 

@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7be66658c9452fa97c1971ae6719dccb06dbd836
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9fb14544a799861053c2fdf2a5bb92f210eb5c46
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378223"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163831"
 ---
 # <a name="contexts"></a>컨텍스트
 
@@ -67,7 +67,7 @@ Concurrency::[컨텍스트 클래스](../../parallel/concrt/reference/context-cl
 > [!NOTE]
 >  동시성 런타임을 통해 생성된 스레드에서만 초과 구독을 사용하도록 설정하십시오. 초과 구독 (main 메서드가 포함) 런타임에 의해 생성 되지 않은 스레드에서 호출 될 때에 영향이 없습니다.
 
-현재 컨텍스트에서 초과 구독을 사용 하도록 설정 하려면 호출을 [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) 메서드를 `_BeginOversubscription` 매개 변수 설정 `true`합니다. 동시성 런타임에 의해 생성 된 스레드의 초과 구독을 사용 하도록 설정 하면 하나의 추가 스레드를 만드는 데 런타임입니다. 초과 구독 완료 해야 하는 모든 작업을 표시 한 후 호출 `Context::Oversubscribe` 사용 하 여 합니다 `_BeginOversubscription` 매개 변수 설정 `false`합니다.
+현재 컨텍스트에서 초과 구독을 사용 하도록 설정 하려면 호출을 [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) 메서드를 `_BeginOversubscription` 매개 변수 설정 **true**합니다. 동시성 런타임에 의해 생성 된 스레드의 초과 구독을 사용 하도록 설정 하면 하나의 추가 스레드를 만드는 데 런타임입니다. 초과 구독 완료 해야 하는 모든 작업을 표시 한 후 호출 `Context::Oversubscribe` 사용 하 여 합니다 `_BeginOversubscription` 매개 변수 설정 **false**합니다.
 
 여러 번에서 현재 컨텍스트에서 초과 구독을 설정할 수 있습니다. 하지만를 사용할 수 있는 횟수 만큼 해제 해야 합니다. 초과 구독 중첩 될 수도 있습니다. 즉, 초과 구독을 사용 하는 다른 작업에 의해 만들어지는 작업 컨텍스트 초과 구독할 수도 있습니다. 그러나 중첩된 된 작업 및 해당 부모는 동일한 컨텍스트를 가장 바깥쪽 호출만에 속하는 경우 `Context::Oversubscribe` 추가 스레드가 만들어지도록 합니다.
 

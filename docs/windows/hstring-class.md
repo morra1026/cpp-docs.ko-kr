@@ -47,12 +47,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fea4f576e347ca03dda1142b3118bf605bc9f385
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 2a70b39352f26d76e9199b9da46f679507b148ed
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235349"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163122"
 ---
 # <a name="hstring-class"></a>HString 클래스
 
@@ -225,7 +225,7 @@ bool IsValid() const throw()
 
 ### <a name="parameters"></a>매개 변수
 
-`true` 하는 경우 현재 `HString` 개체는 비어 있지 않으면 `false`합니다.
+**true 이면** 하는 경우 현재 `HString` 개체가 비어 있지 않으면 아닙니다 **false**합니다.
 
 ## <a name="makereference"></a>Hstring:: Makereference
 
@@ -310,7 +310,7 @@ inline bool operator==(
 
 ### <a name="return-value"></a>반환 값
 
-`true` 경우는 *lhs* 하 고 *rhs* 같고, 그렇지 않으면 매개 변수는 `false`합니다.
+**true** 경우는 *lhs* 하 고 *rhs* 매개 변수는 같고, 그렇지 않으면 **false**합니다.
 
 ## <a name="operator-inequality"></a>Hstring:: Operator! = 연산자
 
@@ -343,7 +343,7 @@ inline bool operator!=( const HString& lhs,
 
 ### <a name="return-value"></a>반환 값
 
-`true` 경우는 *lhs* 하 고 *rhs* 매개 변수는 같고, 그렇지 않으면 `false`합니다.
+**true** 경우는 *lhs* 하 고 *rhs* 매개 변수는 같고, 그렇지 않으면 **false**합니다.
 
 ## <a name="operator-less-than"></a>Hstring:: Operator&lt; 연산자
 
@@ -365,7 +365,7 @@ inline bool operator<(
 
 ### <a name="return-value"></a>반환 값
 
-`true` 경우는 *lhs* 매개 변수는 보다 작은 *rhs* 매개 변수가 고, 그렇지 않으면 `false`합니다.
+**true** 경우는 *lhs* 매개 변수는 보다 작은 *rhs* 매개 변수가 고, 그렇지 않으면 **false**합니다.
 
 ## <a name="release"></a>Hstring:: Release
 

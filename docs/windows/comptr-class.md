@@ -61,12 +61,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4f549f0737d74829dbd79c280f3f6c1acd9bca6e
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 12afcfe09335082f873d88e1aa825b4eee3a1ae2
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235999"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163233"
 ---
 # <a name="comptr-class"></a>ComPtr 클래스
 
@@ -539,9 +539,9 @@ bool operator==(
 
 ### <a name="return-value"></a>반환 값
 
-첫 번째 연산자 생성 `true` 하는 경우 개체 *는* 개체와 동일한 지 *b*고, 그렇지 않으면 `false`합니다.
+첫 번째 연산자 생성 **true** 하는 경우 개체 *는* 개체와 동일한 지 *b*고, 그렇지 않으면 **false**합니다.
 
-두 번째 및 세 번째 연산자를 생성 `true` 경우 개체 *는* 값과 같음 `nullptr`이 고, 그렇지 않으면 `false`합니다.
+두 번째와 세 번째 연산자에서 생성 **true** 하는 경우 개체 *는* 값과 같음 **nullptr**고, 그렇지 않으면 **false**합니다.
 
 ## <a name="operator-inequality"></a>Comptr:: Operator! =
 
@@ -574,9 +574,9 @@ bool operator!=(
 
 ### <a name="return-value"></a>반환 값
 
-첫 번째 연산자 생성 `true` 하는 경우 개체 *는* 개체와 같지 않은 *b*고, 그렇지 않으면 `false`합니다.
+첫 번째 연산자 생성 **true** 하는 경우 개체 *는* 개체와 같지 않은 *b*고, 그렇지 않으면 **false**합니다.
 
-두 번째 및 세 번째 연산자에서 생성 `true` 경우 개체 *는* 같지 `nullptr`이 고, 그렇지 않으면 `false`합니다.
+두 번째 및 세 번째 연산자를 생성 **true** 경우 개체 *는* 같지 **nullptr**고, 그렇지 않으면 **false**합니다.
 
 ## <a name="operator-microsoft-wrl-details-booltype"></a>Comptr:: Operator Microsoft::WRL::Details::BoolType
 
@@ -588,7 +588,7 @@ WRL_NOTHROW operator Microsoft::WRL::Details::BoolType() const;
 
 ### <a name="return-value"></a>반환 값
 
-인터페이스와 연결 된 경우 `ComPtr`의 주소를 [boolstruct:: Member](../windows/boolstruct-member-data-member.md) 데이터 멤버가 고, 그렇지 않으면 `nullptr`합니다.
+인터페이스와 연결 된 경우 `ComPtr`의 주소를 [boolstruct:: Member](../windows/boolstruct-member-data-member.md) 데이터 멤버가 고, 그렇지 않으면 **nullptr**합니다.
 
 ## <a name="ptr"></a>Comptr:: Ptr_
 

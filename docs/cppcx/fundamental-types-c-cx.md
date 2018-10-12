@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0bec396efa2d0a4191c67440e4ed3ed5d4bc083
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 1d8a9340abf7ca16fe2f0e6d6660bf14f00bd594
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110794"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161231"
 ---
 # <a name="fundamental-types-ccx"></a>기본 형식(C++/CX)
 
@@ -26,7 +26,7 @@ ms.locfileid: "44110794"
 
 |네임스페이스|C + + /cli CX 이름|정의|표준 C++ 이름|값의 범위|
 |---------------|-----------------------------------------------------------------------|----------------|-------------------------|---------------------|
-|플랫폼|부울|8비트 부울 값입니다.|bool|`true` (0이 아님) 및 `false` (0)|
+|플랫폼|부울|8비트 부울 값입니다.|bool|**true 이면** (0이 아닌) 및 **false** (영)|
 |default|char16|유니코드(UTF-16) 코드 포인트를 나타내는 숫자가 아닌 16비트 값입니다.|wchar_t<br /><br /> 또는<br /><br /> L'c'|(유니코드 표준으로 지정됨)|
 
 ## <a name="numeric-types"></a>숫자 형식

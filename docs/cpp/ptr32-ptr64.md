@@ -1,13 +1,17 @@
 ---
 title: __ptr32, __ptr64 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/09/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
 f1_keywords:
 - __ptr32_cpp
 - __ptr64_cpp
+- __ptr32
+- __ptr64
+- _ptr32
+- _ptr64
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -22,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 573af4088e288403edaa8e5c34fb84817442c8f5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 50360ab6a163f70f4f950e44d963b9aa67dc04f4
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46115998"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161647"
 ---
 # <a name="ptr32-ptr64"></a>__ptr32, __ptr64
 
@@ -46,6 +50,8 @@ int * __ptr64 p64;
 
 > [!NOTE]
 > 사용할 수 없습니다 **__ptr32** 또는 **__ptr64** 사용 하 여 컴파일하면 **/clr: pure**합니다. 그렇지 않으면 컴파일러 오류 C2472 생성 됩니다. **/clr: pure** 및 **/clr: safe** Visual Studio 2015에서 사용 되지 않고 Visual Studio 2017에서 지원 되지 않는 컴파일러 옵션입니다.
+
+이전 버전과 호환성에 대 한 **_ptr32** 하 고 **_ptr64** 에 대 한 동의어가 **__ptr32** 및 **__ptr64** 하지 않는 한 컴파일러 옵션 [/Za \(언어 확장 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md) 지정 됩니다.
 
 ## <a name="example"></a>예제
 

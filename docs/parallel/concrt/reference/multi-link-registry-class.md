@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26144fe1098e932512344550864c0949e5306238
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 174a168d6a22bca54fb00bf302cd7cbbc65cc961
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46401709"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162336"
 ---
 # <a name="multilinkregistry-class"></a>multi_link_registry 클래스
 
@@ -127,7 +127,7 @@ virtual bool contains(_EType _Link);
 
 ### <a name="return-value"></a>반환 값
 
-`true` 지정된 된 블록 있으면 `false` 그렇지 않은 경우.
+**true** 지정된 된 블록 있으면 **false** 그렇지 않은 경우.
 
 ##  <a name="count"></a> 개수
 
@@ -176,7 +176,7 @@ virtual bool remove(_EType _Link);
 
 ### <a name="return-value"></a>반환 값
 
-`true` 링크를 찾아 제거 했으면 `false` 그렇지 않은 경우.
+**true** 링크를을 찾아 제거 했으면 **false** 그렇지 않은 경우.
 
 ##  <a name="set_bound"></a> set_bound
 

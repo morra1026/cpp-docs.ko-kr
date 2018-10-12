@@ -1,12 +1,14 @@
 ---
 title: __fastcall | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/09/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
 f1_keywords:
 - __fastcall_cpp
+- __fastcall
+- _fastcall
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72e3a36c646249fe34791d6703fd0350111b4137
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fa181349ab01ea2a375bacbb5e23d073a99f3f11
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46099683"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161244"
 ---
 # <a name="fastcall"></a>__fastcall
 
@@ -62,6 +64,8 @@ void CMyClass::mymethod() { return; }
 ```cpp
 void __fastcall CMyClass::mymethod() { return; }
 ```
+
+이전 버전과 호환성에 대 한 **_fastcall** 에 대 한 동의어가 **__fastcall** 하지 않으면 컴파일러 옵션 [/Za \(언어 확장 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md) 는 지정 합니다.
 
 ## <a name="example"></a>예제
 

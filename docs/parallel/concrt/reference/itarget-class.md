@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c4ada69fcd687d63022d0527ddf8da43906c483
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8fe26b202dbe9aabc1ccf98a59ead6c51c498fc1
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412017"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163714"
 ---
 # <a name="itarget-class"></a>ITarget 클래스
 
@@ -67,7 +67,7 @@ class ITarget;
 |----------|-----------------|
 |[propagate](#propagate)|파생된 클래스에서 재정의 되 면 비동기적으로 메시지를 소스 블록에서이 대상 블록 전달 합니다.|
 |[send](#send)|파생된 클래스에서 재정의 되 면 대상 블록에 동기적으로 메시지를 전달 합니다.|
-|[supports_anonymous_source](#supports_anonymous_source)|파생 클래스에서 재정의된 경우, 연결되지 않은 소스에서 제공하는 메시지를 메시지 블록이 수락할지 여부에 따라 true 또는 false를 반환합니다. 재정의된 메서드가 `true`를 반환할 경우 연기된 메시지를 나중에 사용하려면 소스 링크 레지스트리에서 해당 소스를 식별해야 하기 때문에 대상은 제공된 메시지를 연기할 수 없습니다.|
+|[supports_anonymous_source](#supports_anonymous_source)|파생 클래스에서 재정의된 경우, 연결되지 않은 소스에서 제공하는 메시지를 메시지 블록이 수락할지 여부에 따라 true 또는 false를 반환합니다. 재정의 된 메서드가 반환 하는 경우 **true**, 나중에 연기 된 메시지 소비를 소스 링크 레지스트리에서 해당 식별 해야 원본의 요구에 따라 대상 제공된 된 메시지를 연기할 수 없습니다.|
 
 ### <a name="protected-methods"></a>보호된 메서드
 
@@ -174,7 +174,7 @@ A [message_status](concurrency-namespace-enums.md) 메시지와 함께 수행 �
 
 ##  <a name="supports_anonymous_source"></a> supports_anonymous_source
 
-파생 클래스에서 재정의된 경우, 연결되지 않은 소스에서 제공하는 메시지를 메시지 블록이 수락할지 여부에 따라 true 또는 false를 반환합니다. 재정의된 메서드가 `true`를 반환할 경우 연기된 메시지를 나중에 사용하려면 소스 링크 레지스트리에서 해당 소스를 식별해야 하기 때문에 대상은 제공된 메시지를 연기할 수 없습니다.
+파생 클래스에서 재정의된 경우, 연결되지 않은 소스에서 제공하는 메시지를 메시지 블록이 수락할지 여부에 따라 true 또는 false를 반환합니다. 재정의 된 메서드가 반환 하는 경우 **true**, 나중에 연기 된 메시지 소비를 소스 링크 레지스트리에서 해당 식별 해야 원본의 요구에 따라 대상 제공된 된 메시지를 연기할 수 없습니다.
 
 ```
 virtual bool supports_anonymous_source();
@@ -182,7 +182,7 @@ virtual bool supports_anonymous_source();
 
 ### <a name="return-value"></a>반환 값
 
-블록에서 연결되지 않은 소스로부터의 메시지를 수락하면 `true`이고, 그렇지 않으면 `false`입니다.
+**true 이면** 블록에 연결 되지 않은 소스 로부터의 메시지를 허용할 수 있으면 **false** 그렇지 않은 경우.
 
 ##  <a name="unlink_source"></a> unlink_source
 

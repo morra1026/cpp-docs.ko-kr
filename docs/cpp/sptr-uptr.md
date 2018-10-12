@@ -1,13 +1,17 @@
 ---
 title: __sptr, __uptr | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/10/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
 f1_keywords:
 - __uptr_cpp
 - __sptr_cpp
+- __uptr
+- __sptr
+- _uptr
+- _sptr
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 269fe70a5a40a90a512c826e98ba2c8ea698a55b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fa67c815fdfeac0f5728ecd671aaa8f04a59ef89
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052519"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163480"
 ---
 # <a name="sptr-uptr"></a>__sptr, __uptr
 
@@ -44,6 +48,8 @@ void MyFunction(char * __uptr __ptr32 myValue);
 ```
 
 사용 합니다 **__sptr** 하 고 **__uptr** 포인터 선언 사용 하 여 한정자입니다. 한정자를 사용 하 여 위치에는 [포인터 형식 한정자](../c-language/pointer-declarations.md), 즉, 한정자 별표를 수행 해야 합니다. 한정자와 함께 사용할 수 없습니다 [멤버에 대 한 포인터](../cpp/pointers-to-members.md)합니다. 한정자는 포인터 선언이 아닌 선언에 영향을 주지 않습니다.
+
+이전 버전과 호환성에 대 한 **_sptr** 하 고 **_uptr** 에 대 한 동의어가 **__sptr** 및 **__uptr** 컴파일러 옵션 [/Za \(언어 확장 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md) 지정 됩니다.
 
 ## <a name="example"></a>예제
 

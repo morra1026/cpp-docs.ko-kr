@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e222ba48121702c2388e64cea5e81da627f324a
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: e1dd4aab5912b2f15e8c0b36c7e482001809099d
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110859"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163909"
 ---
 # <a name="platformcollectionsmapview-class"></a>Platform::Collections::MapView 클래스
 
@@ -117,11 +117,11 @@ bool HasKey(K key);
 ### <a name="parameters"></a>매개 변수
 
 *key*<br/>
-MapView 요소를 찾는 데 사용되는 키입니다. 유형의 `key` typename 됩니다 *K*합니다.
+MapView 요소를 찾는 데 사용되는 키입니다. 유형의 *키* 형식 이름 *K*합니다.
 
 ### <a name="return-value"></a>반환 값
 
-키가 있으면 `true`이고, 그렇지 않으면 `false`입니다.
+**true 이면** 이 고, 그렇지 않으면 키가 없으면 **false**합니다.
 
 ##  <a name="lookup"></a> Mapview:: Lookup 메서드
 

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e9379dd15dbb0d814da1e617fb1f3f8408d1da0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0b180b1a92defb2c29d0e54b0ecf9700dd299170
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388487"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163428"
 ---
 # <a name="asynchronous-message-blocks"></a>비동기 메시지 블록
 
@@ -307,7 +307,7 @@ Concurrency::[timer 클래스](../../parallel/concrt/reference/timer-class.md) �
 
 `timer` 클래스 하나만 대상에는 메시지를 보냅니다. 설정 하는 경우는 `_PTarget` 생성자에서 매개 변수 `NULL`, 대상을 호출 하 여 나중에 지정할 수 있습니다 합니다 [concurrency::ISource::link_target](reference/source-block-class.md#link_target) 메서드.
 
-`timer` 개체를 반복 하거나 반복 되지 않는 수 있습니다. 반복 되는 타이머를 만들려면 전달 `true` 에 대 한는 `_Repeating` 매개 변수는 생성자를 호출 합니다. 그렇지 않으면 전달 `false` 에 대 한는 `_Repeating` 매개 변수를 반복 되지 않는 타이머를 만듭니다. 반복 되는 타이머 보냅니다 동일한 메시지가 해당 대상에 각 간격 후.
+`timer` 개체를 반복 하거나 반복 되지 않는 수 있습니다. 반복 되는 타이머를 만들려면 전달 **true** 에 대 한는 `_Repeating` 매개 변수는 생성자를 호출 합니다. 그렇지 않으면 전달 **false** 에 대 한는 `_Repeating` 매개 변수를 반복 되지 않는 타이머를 만듭니다. 반복 되는 타이머 보냅니다 동일한 메시지가 해당 대상에 각 간격 후.
 
 에이전트 라이브러리 만듭니다 `timer` 시작 되지 않은 상태의 개체입니다. 타이머 개체를 시작 하려면 호출을 [concurrency::timer::start](reference/timer-class.md#start) 메서드. 중지 하는 `timer` 개체, 개체 또는 호출을 제거 합니다 [concurrency::timer::stop](reference/timer-class.md#stop) 메서드. 반복 되는 타이머를 일시 중지 하려면 호출을 [concurrency::timer::pause](reference/timer-class.md#pause) 메서드.
 

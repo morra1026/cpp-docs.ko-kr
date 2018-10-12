@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad6feef707d991d07fa4e086bc8535f32b991825
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 9c337ec94f863e6c19851bcf962db61f277491cf
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716873"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163246"
 ---
 # <a name="msbuild-visual-c-overview"></a>MSBuild(Visual C++) 개요
 
@@ -111,7 +111,7 @@ IDE에서 프로젝트 속성을 설정 하 고 다음 프로젝트를 저장 �
 
 ### <a name="useenv-property"></a>UseEnv 속성
 
-기본적으로 현재 프로젝트의 플랫폼별 설정은 PATH, INCLUDE, LIB, LIBPATH, 구성 및 플랫폼 환경 변수를 재정의 합니다. 설정 된 `UseEnv` 속성을 `true` 환경 변수 재정의 되지 않도록 보장 하기 위해.
+기본적으로 현재 프로젝트의 플랫폼별 설정은 PATH, INCLUDE, LIB, LIBPATH, 구성 및 플랫폼 환경 변수를 재정의 합니다. 설정 된 `UseEnv` 속성을 **true** 환경 변수 재정의 되지 않도록 보장 하기 위해.
 
 `msbuild myProject.vcxproj /p:UseEnv=true`
 

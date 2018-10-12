@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 489ff00571c79d89c9e807f0d8796989e7a0f84f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e9b8ee4c80310c4d94ed432d48ee9702c41f80bf
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714990"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161791"
 ---
 # <a name="gh-enable-pexit-hook-function"></a>/GH(_pexit 후크 함수 사용)
 
@@ -43,7 +43,7 @@ ms.locfileid: "45714990"
 명시적으로 호출 하려는 경우가 아니면 `_pexit`, 프로토타입을 제공 해야 합니다. 함수 처럼 다음과 같은 프로토타입의 되었 및 항목에 대해 모든 레지스터의 콘텐츠를 푸시 하며 종료 시 변경 되지 않은 콘텐츠를 pop에 나타나야 합니다.
 
 ```
-void __declspec(naked) _cdecl _pexit( void );
+void __declspec(naked) __cdecl _pexit( void );
 ```
 
 `_pexit` 비슷합니다 `_penter`; 참조 [/Gh (_penter 후크 함수 사용)](../../build/reference/gh-enable-penter-hook-function.md) 작성 하는 방법의 예는 `_pexit` 함수입니다.

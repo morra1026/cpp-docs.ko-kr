@@ -1,7 +1,7 @@
 ---
 title: __int8, __int16, __int32, __int64 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/09/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -10,6 +10,14 @@ f1_keywords:
 - __int16_cpp
 - __int32_cpp
 - __int64_cpp
+- __int8
+- __int16
+- __int32
+- __int64
+- _int8
+- _int16
+- _int32
+- _int64
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -24,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 723724a477a5cdb714aa2644e1db938d67fb7b73
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b639e7a65bbe206d029a5ba28109170cb0f6a610
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43194253"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163545"
 ---
 # <a name="int8-int16-int32-int64"></a>__int8, __int16, __int32, __int64
 
@@ -47,6 +55,8 @@ __int64 nHuge;      // Declares 64-bit integer
 ```
 
 형식을 **__int8**하십시오 **__int16**, 및 **__int32** 동의어는 동일한 ANSI 형식 크기와 동일 하 게 동작 하는 이식 가능한 코드를 작성 하는 데 유용 여러 플랫폼입니다. 합니다 **__int8** 데이터 형식은 형식과 동의어 **char**를 **__int16** 형식과 동의어 **짧은**, 및 **__int32**  형식과 동의어 **int**합니다. 합니다 **__int64** 형식은 형식과 동의어 **long long**합니다.
+
+이전 버전과 호환성에 대 한 **_int8**하십시오 **_int16**, **_int32**, 및 **_int64** 는 **__int8** 하십시오 **__int16**, **__int32**, 및 **__int64** 하지 않는 한 컴파일러 옵션 [/Za \(언어를 사용 하지 않도록 설정 확장)](../build/reference/za-ze-disable-language-extensions.md) 지정 됩니다.
 
 ## <a name="example"></a>예제
 

@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74e871255e3308450764e8f65cdb6acebe79df38
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ab586243df9b015c95f4a703744bfb02a54d064e
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437744"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162193"
 ---
 # <a name="event-class"></a>event 클래스
 
@@ -167,7 +167,7 @@ static size_t __cdecl wait_for_multiple(
 제공 된 배열 내에서 이벤트의 수를 `_PPEvents` 매개 변수입니다.
 
 *_FWaitAll*<br/>
-경우 값으로 설정 `true`, 매개 변수 배열 내에서 모든 이벤트에서 제공 하는 지정 된 `_PPEvents` 매개 변수는 대기를 만족 하려면 신호를 보내야 합니다. 경우 값으로 설정 `false`를 배열 내에서 모든 이벤트에 제공 하는 지정 된 `_PPEvents` 신호는 매개 변수는 대기를 만족 합니다.
+경우 값으로 설정 **true**, 매개 변수 배열 내에서 모든 이벤트에서 제공 하는 지정 된 `_PPEvents` 매개 변수는 대기를 만족 하려면 신호를 보내야 합니다. 경우 값으로 설정 **false**, 배열 내에서 모든 이벤트에 제공 하는 지정 된 `_PPEvents` 신호는 매개 변수는 대기를 만족 합니다.
 
 *시간 제한 _t*<br/>
 대기 시간이 초과 되기까지의 시간 (밀리초)의 수를 나타냅니다. 값 `COOPERATIVE_TIMEOUT_INFINITE` 제한 시간이 없음을 임을 나타냅니다.
@@ -181,7 +181,7 @@ static size_t __cdecl wait_for_multiple(
 경우 매개 변수 `_FWaitAll` 값으로 설정 됩니다 `true` 는 모든 이벤트 신호를 보내야 하는 대기를 만족을 나타내기 위해 함수에서 반환 된 인덱스가 전달 것 값 이외의 다른 특별 한 의미가 없습니다 `COOPERATIVE_WAIT_TIMEOUT`합니다.
 
 > [!IMPORTANT]
->  유니버설 Windows 플랫폼 (UWP) 앱에서 호출 하지 마십시오 `wait_for_multiple` ASTA에서 스레드와이 호출은 현재 스레드를 차단 하 고 응용 프로그램에서 응답 하지 않게 될 수 있습니다.
+> 유니버설 Windows 플랫폼 (UWP) 앱에서 호출 하지 마십시오 `wait_for_multiple` ASTA에서 스레드와이 호출은 현재 스레드를 차단 하 고 응용 프로그램에서 응답 하지 않게 될 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

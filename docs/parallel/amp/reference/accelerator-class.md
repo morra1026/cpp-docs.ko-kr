@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7748ae0f3993c1df97dcf97308fd6dfbfafdc8b6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a154d266ead19cfef00f30a5327c5b18809a4111
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375879"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163168"
 ---
 # <a name="accelerator-class"></a>accelerator 클래스
 
@@ -102,9 +102,9 @@ class accelerator;
 
 |이름|설명|
 |----------|-----------------|
-|[operator!=](#operator_neq)|비교 `accelerator` 다른 개체를 반환 합니다 `false` 가 같으면이 고, 그렇지 반환 `true`합니다.|
+|[operator!=](#operator_neq)|비교 `accelerator` 다른 개체를 반환 합니다 **false** 같으면 경우 그렇지 않으면 반환 **true**합니다.|
 |[operator=](#operator_eq)|지정 된 내용을 복사 `accelerator` 여기에 개체입니다.|
-|[operator==](#operator_eq_eq)|비교 `accelerator` 다른 개체를 반환 합니다 `true` 가 같으면이 고, 그렇지 반환 `false`합니다.|
+|[연산자==](#operator_eq_eq)|비교 `accelerator` 다른 개체를 반환 합니다 **true** 같으면 경우 그렇지 않으면 반환 **false**합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
@@ -362,7 +362,7 @@ bool get_has_display() const;
 
 ### <a name="return-value"></a>반환 값
 
-`true` 경우는 `accelerator` ; 디스플레이에 출력할 수이 고, 그렇지 `false`합니다.
+**true 이면** 경우는 `accelerator` ; 디스플레이에 출력할 수이 고, 그렇지 **false**합니다.
 
 ##  <a name="get_is_debug"></a> get_is_debug
 
@@ -375,7 +375,7 @@ bool get_is_debug() const;
 
 ### <a name="return-value"></a>반환 값
 
-`true` 경우는 `accelerator` 를 위해 DEBUG 레이어가 활성화 폭넓은 오류 보고 했습니다. 그렇지 않으면 `false`입니다.
+**true** 경우는 `accelerator` 를 위해 DEBUG 레이어가 활성화 폭넓은 오류 보고 했습니다. 그렇지 않으면 **false**합니다.
 
 ##  <a name="get_is_emulated"></a> get_is_emulated
 
@@ -388,7 +388,7 @@ bool get_is_emulated() const;
 
 ### <a name="return-value"></a>반환 값
 
-`true` 경우는 `accelerator` 는 캐싱이 에뮬레이트됩니다. 그렇지 않으면 `false`입니다.
+**true 이면** 경우는 `accelerator` 는 캐싱이 에뮬레이트됩니다. 그렇지 않으면 **false**합니다.
 
 ##  <a name="get_supports_cpu_shared_memory"></a> get_supports_cpu_shared_memory
 
@@ -401,11 +401,11 @@ bool get_supports_cpu_shared_memory() const;
 
 ### <a name="return-value"></a>반환 값
 
-`true` 액셀러레이터에서 CPU 공유 메모리가 지원 되는 경우 그렇지 않으면 `false`합니다.
+**true 이면** accelerator에서 지 원하는 CPU 메모리를 공유 하는 경우이 고, 그렇지 **false**합니다.
 
 ##  <a name="get_supports_double_precision"></a> get_supports_double_precision
 
-액셀러레이터가 이중 정밀도 수치를 지원 합니다 있는지 여부를 포함 하 여 결합 하는 여부를 나타내는 부울 값을 곱하기 반환 추가 (FMA), 나누기, 역 수 및 사이의 캐스팅 `int` 및 `double`합니다.
+액셀러레이터가 이중 정밀도 수치를 지원 합니다 있는지 여부를 포함 하 여 결합 하는 여부를 나타내는 부울 값을 곱하기 반환 추가 (FMA), 나누기, 역 수 및 사이의 캐스팅 **int** 및 **double**
 
 ```
 bool get_supports_double_precision() const;
@@ -414,11 +414,11 @@ bool get_supports_double_precision() const;
 
 ### <a name="return-value"></a>반환 값
 
-`true` 액셀러레이터가 이중 정밀도 수치; 지원 되는 경우 그렇지 않으면 `false`합니다.
+**true 이면** 액셀러레이터가 이중 정밀도 수치; 지원 되는 경우이 고, 그렇지 **false**합니다.
 
 ##  <a name="get_supports_limited_double_precision"></a> get_supports_limited_double_precision
 
-액셀러레이터가 이중 정밀도 수치를 제한적으로 지원하는지 여부를 나타내는 부울 값을 반환합니다. 액셀러레이터에서 제한적으로만 지원하는 경우 FMA(Fused Multiply Add), 나누기, 역수 및 `int` 및 `double` 사이의 캐스팅은 지원되지 않습니다.
+액셀러레이터가 이중 정밀도 수치를 제한적으로 지원하는지 여부를 나타내는 부울 값을 반환합니다. 액셀러레이터 키에만 제한적으로 지원, fused multiply (FMA)를 추가 하는 경우 나누기, 역 수 및 사이의 캐스팅 **int** 하 고 **double** 지원 되지 않습니다.
 
 ```
 bool get_supports_limited_double_precision() const;
@@ -427,7 +427,7 @@ bool get_supports_limited_double_precision() const;
 
 ### <a name="return-value"></a>반환 값
 
-엑셀러레이터가 이중 정밀도 수치를 제한적으로 지원하는 경우 `true`이고, 그렇지 않으면 `false`입니다.
+**true 이면** 액셀러레이터에 이중 정밀도 수치;에 대 한 지원 제한 되어 있으면이 고, 그렇지 **false**합니다.
 
 ##  <a name="get_version"></a> get_version
 
@@ -468,7 +468,7 @@ __declspec(property(get= get_is_emulated)) bool is_emulated;
 
 ##  <a name="operator_neq"></a> operator!=
 
-비교 `accelerator` 다른 개체를 반환 합니다 `false` 가 같으면이 고, 그렇지 반환 `true`합니다.
+비교 `accelerator` 다른 개체를 반환 합니다 **false** 같으면 경우 그렇지 않으면 반환 **true**합니다.
 
 ```
 bool operator!= (const accelerator& _Other) const;
@@ -482,7 +482,7 @@ bool operator!= (const accelerator& _Other) const;
 
 ### <a name="return-value"></a>반환 값
 
-`false` 하는 경우 두 `accelerator` 개체가 동일한 지 고, 그렇지 않으면 `true`합니다.
+**false** 하는 경우 두 `accelerator` 개체가 동일한 지 고, 그렇지 않으면 **true**합니다.
 
 ##  <a name="operator_eq"></a> 연산자 =
 
@@ -503,7 +503,7 @@ accelerator& operator= (const accelerator& _Other);
 
 ##  <a name="operator_eq_eq"></a> 연산자 = =
 
-비교 `accelerator` 다른 개체를 반환 합니다 `true` 가 같으면이 고, 그렇지 반환 `false`합니다.
+비교 `accelerator` 다른 개체를 반환 합니다 **true** 같으면 경우 그렇지 않으면 반환 **false**합니다.
 
 ```
 bool operator== (const accelerator& _Other) const;
@@ -517,7 +517,7 @@ bool operator== (const accelerator& _Other) const;
 
 ### <a name="return-value"></a>반환 값
 
-`true` 하는 경우 다른 `accelerator` 개체가이 동일 `accelerator` ; 개체이 고, 그렇지 `false`합니다.
+**true** 하는 경우 다른 `accelerator` 개체가이 동일 `accelerator` ; 개체이 고, 그렇지 **false**합니다.
 
 ##  <a name="set_default"></a> 인지 나타냅니다
 
@@ -534,7 +534,7 @@ static inline bool set_default(std::wstring _Path);
 
 ### <a name="return-value"></a>반환 값
 
-`true` 기본 액셀러레이터 설정 시 호출이 성공 하면 합니다. 그렇지 않으면 `false`입니다.
+**true** 기본 액셀러레이터 설정 시 호출이 성공 하는 경우. 그렇지 않으면 **false**합니다.
 
 ##  <a name="set_default_cpu_access_type"></a> set_default_cpu_access_type
 
@@ -664,7 +664,7 @@ bool get_is_auto_selection() const;
 
 ### <a name="return-value"></a>반환 값
 
-`true` 런타임에서 자동으로 적절 한 액셀러레이터;를 선택 하는 경우 그렇지 않으면 `false`합니다.
+**true 이면** 런타임에서 자동으로 적절 한 액셀러레이터;를 선택 하는 경우이 고, 그렇지 **false**합니다.
 
 ##  <a name="get_is_debug"></a> get_is_debug
 
@@ -737,7 +737,7 @@ bool operator!= (const accelerator_view& _Other) const;
 
 ### <a name="return-value"></a>반환 값
 
-두 개체가 같으면 `false`이고, 그렇지 않으면 `true`입니다.
+**false** 두 개체가 동일 하면이 고, 그렇지 **true**합니다.
 
 ##  <a name="operator_eq"></a> 연산자 =
 
@@ -758,7 +758,7 @@ accelerator_view& operator= (const accelerator_view& _Other);
 
 ##  <a name="operator_eq_eq"></a> 연산자 = =
 
-비교 [accelerator_view](accelerator-view-class.md) 다른 개체를 반환 합니다 `true` 같으면 경우 그렇지 않으면 반환 `false`합니다.
+비교 [accelerator_view](accelerator-view-class.md) 다른 개체를 반환 합니다 **true** 같으면 경우 그렇지 않으면 반환 **false**합니다.
 
 ```
 bool operator== (const accelerator_view& _Other) const;
@@ -772,7 +772,7 @@ bool operator== (const accelerator_view& _Other) const;
 
 ### <a name="return-value"></a>반환 값
 
-두 개체가 같으면 `true`이고, 그렇지 않으면 `false`입니다.
+**true 이면** 두 개체가 동일 하면이 고, 그렇지 **false**합니다.
 
 ##  <a name="queuing_mode"></a> queuing_mode
 

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe3c516881115dd96337f950d83de2d30c57161b
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 9cfad80ac1f16d200f29504be1d4fb818e6e6afd
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102514"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163896"
 ---
 # <a name="platformcollectionsvectorview-class"></a>Platform::Collections::VectorView 클래스
 
@@ -140,7 +140,7 @@ virtual unsigned int GetMany(
 검색할 항목 시작 부분의 0부터 시작하는 인덱스입니다.
 
 *dest*<br/>
-이 작업이 완료 될 때를 지정 하는 요소에서 시작 하는 항목의 배열을 `startIndex` VectorView의 마지막 요소에서 끝나는 합니다.
+이 작업이 완료되면 `startIndex`로 지정된 요소에서 시작해 VectorView의 마지막 요소에서 끝나는 항목의 배열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -168,11 +168,11 @@ virtual bool IndexOf(
 *index*<br/>
 매개 변수 `value`가 있으면 0부터 시작하는 항목의 인덱스이고, 그렇지 않으면 0입니다.
 
-항목이 VectorView의 첫 번째 요소이거나 항목을 찾을 수 없으면 `index` 매개 변수가 0입니다. 반환 값이 `true`일 경우 항목을 찾았고 첫 번째 요소인 것이며, 그렇지 않으면 항목을 찾지 못한 것입니다.
+합니다 *인덱스* 항목 또는 첫 번째 요소의 경우 매개 변수는 0을 `VectorView` 또는 항목을 찾을 수 없습니다. 반환 값이 **true**, 항목을 찾을 것이 첫 번째 요소 하 고 그렇지 않으면 항목을 찾을 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
 
-지정된 항목을 찾았으면 `true`이고, 그렇지 않으면 `false`입니다.
+**true 이면** 지정된 된 항목이 고, 그렇지 않으면 **false**합니다.
 
 ## <a name="size"></a>  Vectorview:: Size 메서드
 
@@ -285,4 +285,4 @@ A [std:: array](../standard-library/array-class-stl.md) 현재 VectorView를 초
 ## <a name="see-also"></a>참고 항목
 
 [플랫폼 Namespace](platform-namespace-c-cx.md)<br/>
-[C + + Windows 런타임 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
+[C++로 Windows Runtime 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

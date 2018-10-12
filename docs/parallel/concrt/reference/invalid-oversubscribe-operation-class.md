@@ -18,16 +18,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e62dc4ad1600b2e5cc7f955c4a419d27482bb557
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a1728053c7b42afedb4cda9b2dc96a089750a866
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433220"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161699"
 ---
 # <a name="invalidoversubscribeoperation-class"></a>invalid_oversubscribe_operation 클래스
 
-이 클래스는 `_BeginOversubscription` 매개 변수를 `true`로 설정하여 `Context::Oversubscribe` 메서드를 이전에 호출하지 않고 `_BeginOversubscription` 매개 변수를 `false`로 설정하여 `Context::Oversubscribe` 메서드를 호출하는 경우 발생하는 예외를 설명합니다.
+때 throw 되는 예외를 설명 하는이 클래스는 `Context::Oversubscribe` 메서드를 호출 합니다 `_BeginOversubscription` 매개 변수 설정 **false** 를 이전에 호출 하지 않고는 `Context::Oversubscribe` 메서드를 `_BeginOversubscription` 매개 변수가 로설정**true**합니다.
 
 ## <a name="syntax"></a>구문
 

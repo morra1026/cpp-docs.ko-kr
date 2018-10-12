@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d621b1ceb0ac5b84647da5d9b5a0863dfa06141b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8b8d1e80103784260250c396fceeb7032f6414b9
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439837"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163974"
 ---
 # <a name="concurrentunorderedset-class"></a>concurrent_unordered_set 클래스
 
@@ -269,7 +269,7 @@ bool empty() const;
 
 ### <a name="return-value"></a>반환 값
 
-`true` 동시 컨테이너 비어 있으면 `false` 그렇지 않은 경우.
+**true 이면** 동시 컨테이너 비어 있으면 **false** 그렇지 않은 경우.
 
 ### <a name="remarks"></a>설명
 

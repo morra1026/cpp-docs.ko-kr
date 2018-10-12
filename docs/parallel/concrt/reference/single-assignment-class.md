@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13ddf5a303096d3244f6b8b59e58bcb41bafe91f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ee06d9a30339a72bd7137db6f277a1eb41028d50
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374264"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163091"
 ---
 # <a name="singleassignment-class"></a>single_assignment 클래스
 
@@ -58,7 +58,7 @@ class single_assignment : public propagator_block<multi_link_registry<ITarget<T>
 
 |이름|설명|
 |----------|-----------------|
-|[single_assignment](#ctor)|오버로드됨. 생성 된 `single_assignment` 메시징 블록입니다.|
+|[single_assignment](#ctor)|오버로드됨. `single_assignment` 메시징 블록을 생성합니다.|
 |[~ single_assignment 소멸자](#dtor)|제거 된 `single_assignment` 메시징 블록입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
@@ -66,7 +66,7 @@ class single_assignment : public propagator_block<multi_link_registry<ITarget<T>
 |이름|설명|
 |----------|-----------------|
 |[has_value](#has_value)|확인 여부를이 `single_assignment` 아직 메시징 블록 값으로 초기화 했습니다.|
-|[value](#value)|현재 페이로드의에 저장 되는 메시지에 대 한 참조를 가져옵니다는 `single_assignment` 메시징 블록입니다.|
+|[값](#value)|현재 페이로드의에 저장 되는 메시지에 대 한 참조를 가져옵니다는 `single_assignment` 메시징 블록입니다.|
 
 ### <a name="protected-methods"></a>보호된 메서드
 
@@ -158,7 +158,7 @@ bool has_value() const;
 
 ### <a name="return-value"></a>반환 값
 
-`true` 블록 값을 받은 경우 `false` 그렇지 않은 경우.
+**true 이면** 블록에 값을 받은 경우 **false** 그렇지 않은 경우.
 
 ##  <a name="link_target_notification"></a> link_target_notification
 
@@ -236,11 +236,11 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 ### <a name="return-value"></a>반환 값
 
-`true` 메시지를 성공적으로 예약 하는 경우 `false` 그렇지 않은 경우.
+**true 이면** 메시지를 성공적으로 예약 하는 경우 **false** 그렇지 않은 경우.
 
 ### <a name="remarks"></a>설명
 
-후 `reserve` 반환 하는 경우 라고 `true`하거나, `consume` 또는 `release` 수행 하거나 메시지의 소유권을 해제를 호출 해야 합니다.
+후 `reserve` 반환 하는 경우 라고 **true**하거나, `consume` 또는 `release` 수행 하거나 메시지의 소유권을 해제를 호출 해야 합니다.
 
 ##  <a name="resume_propagation"></a> resume_propagation
 
@@ -274,7 +274,7 @@ A [message_status](concurrency-namespace-enums.md) 메시지와 함께 수행 �
 
 ##  <a name="ctor"></a> single_assignment
 
-생성 된 `single_assignment` 메시징 블록입니다.
+`single_assignment` 메시징 블록을 생성합니다.
 
 ```
 single_assignment();
@@ -303,10 +303,10 @@ single_assignment(
 제공 된 메시지를 허용 해야 하는지 여부를 결정 하는 필터 함수입니다.
 
 *_PScheduler*<br/>
-`Scheduler` 개체에 대 한 작업의 전파는는 `single_assignment` 메시징 블록 예약 됩니다.
+`Scheduler` 메시징 블록의 전파 작업이 예약되는 `single_assignment` 개체입니다.
 
 *_PScheduleGroup*<br/>
-`ScheduleGroup` 개체에 대 한 작업의 전파는는 `single_assignment` 메시징 블록 예약 됩니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.
+`ScheduleGroup` 메시징 블록의 전파 작업이 예약되는 `single_assignment` 개체입니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.
 
 ### <a name="remarks"></a>설명
 
