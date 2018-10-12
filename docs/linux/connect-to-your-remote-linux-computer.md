@@ -13,12 +13,12 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 9b3977c46e05ab0b175dad3658d1dcc390d33354
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: bba17549abc9f747d93299cf22c39ae7c3e8f4d6
+ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207668"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45601446"
 ---
 # <a name="connect-to-your-remote-linux-computer"></a>원격 Linux 컴퓨터에 연결
 
@@ -41,7 +41,7 @@ Visual Studio에서 C++ Linux 프로젝트를 빌드할 때 Linux 코드가 원�
    | **사용자 이름**           | 인증할 사용자
    | **인증 형식** | 암호 또는 개인 키가 모두 지원됨
    | **암호**            | 입력한 사용자 이름의 암호
-   | **개인 키 파일**    | SSH 연결을 위해 생성된 개인 키
+   | **개인 키 파일**    | SSH 연결을 위해 생성된 개인 키 파일
    | **암호**          | 위에서 선택한 개인 키와 함께 사용된 암호
 
 1. **연결** 단추를 클릭하여 원격 컴퓨터에 대한 연결을 시도합니다.  연결이 실패하면 변경해야 하는 입력 상자에 빨간색 윤곽선이 표시됩니다.

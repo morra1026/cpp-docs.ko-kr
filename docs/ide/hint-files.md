@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dca97238310c42b9a537baa4056563b25c20c617
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 98734522410b867d735d0af25f440d5b45874563
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895229"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46393284"
 ---
 # <a name="hint-files"></a>힌트 파일
 
@@ -52,9 +52,9 @@ STDMETHOD(myMethod)(int parameter1);
 
 ```cpp
 // Header file.
-#define STDMETHOD(method) HRESULT (STDMETHODCALLTYPE * method)  
+#define STDMETHOD(method) HRESULT (STDMETHODCALLTYPE * method)
 #define STDMETHODCALLTYPE __stdcall
-#define HRESULT void*  
+#define HRESULT void*
 ```
 
 `STDMETHOD`라는 함수가 선언된 것처럼 보이고 이 선언은 포함된 두 개의 매개 변수 목록으로 인해 구문적으로 올바르지 않기 때문에 구문 분석 시스템에서 이 소스 코드를 해석할 수 없습니다. 구문 분석 시스템은 `STDMETHOD`, `STDMETHODCALLTYPE` 및 `HRESULT` 매크로에 대한 정의를 찾기 위해 헤더 파일을 열지 않습니다. 이에 따라 구문 분석 시스템에서 `STDMETHOD` 매크로를 해석할 수 없으므로 전체 구문을 무시한 다음, 구문 분석을 계속합니다.
@@ -127,21 +127,21 @@ STDMETHOD(myMethod)(int parameter1);
 
 다음 소스 코드에서 `FormatWindowClassName()` 함수의 매개 변수 형식은 `PXSTR`이고, 매개 변수 이름은 `szBuffer`입니다. 그러나 구문 분석 시스템은 매개 변수 형식 또는 매개 변수 이름에 대한 `_Pre_notnull_` 및 `_Post_z_` SAL 주석을 잘못 사용합니다.
 
-**소스 코드:**  
+**소스 코드:**
 
-```  
-static void FormatWindowClassName(_Pre_notnull__Post_z_ PXSTR szBuffer)  
-```  
+```cpp
+static void FormatWindowClassName(_Pre_notnull__Post_z_ PXSTR szBuffer)
+```
 
 **전략:** Null 정의
 
-이 상황의 전략은 SAL 주석을 존재하지 않는 것처럼 처리하는 것입니다. 이렇게 하려면 대체 문자열이 null인 힌트를 지정합니다. 이에 따라 구문 분석 시스템에서 주석을 무시하고 **클래스 뷰** 브라우저에 해당 주석이 표시되지 않습니다. (Visual C++에는 SAL 주석을 숨기는 기본 제공 힌트 파일이 포함되어 있습니다.)  
+이 상황의 전략은 SAL 주석을 존재하지 않는 것처럼 처리하는 것입니다. 이렇게 하려면 대체 문자열이 null인 힌트를 지정합니다. 이에 따라 구문 분석 시스템에서 주석을 무시하고 **클래스 뷰** 브라우저에 해당 주석이 표시되지 않습니다. (Visual C++에는 SAL 주석을 숨기는 기본 제공 힌트 파일이 포함되어 있습니다.)
 
-**힌트 파일:**  
+**힌트 파일:**
 
-```  
+```cpp.hint
 #define _Pre_notnull_
-```  
+```
 
 ### <a name="concealed-cc-language-elements"></a>숨겨진 C/C++ 언어 요소
 
@@ -149,11 +149,11 @@ static void FormatWindowClassName(_Pre_notnull__Post_z_ PXSTR szBuffer)
 
 다음 소스 코드에서 `START_NAMESPACE` 매크로는 쌍을 이루지 않는 왼쪽 중괄호(`{`)를 숨깁니다.
 
-**소스 코드:**  
+**소스 코드:**
 
-```  
+```cpp
 #define START_NAMESPACE namespace MyProject {
-```  
+```
 
 **전략:** 직접 복사
 
@@ -161,11 +161,11 @@ static void FormatWindowClassName(_Pre_notnull__Post_z_ PXSTR szBuffer)
 
 소스 파일의 매크로에 다른 매크로가 포함되어 있으면 해당 매크로는 효과적인 힌트 집합에 이미 있는 경우에만 해석됩니다.
 
-**힌트 파일:**  
+**힌트 파일:**
 
-```  
+```cpp.hint
 #define START_NAMESPACE namespace MyProject {
-```  
+```
 
 ### <a name="maps"></a>맵
 
@@ -173,9 +173,9 @@ static void FormatWindowClassName(_Pre_notnull__Post_z_ PXSTR szBuffer)
 
 다음 소스 코드는 `BEGIN_CATEGORY_MAP`, `IMPLEMENTED_CATEGORY` 및 `END_CATEGORY_MAP` 매크로를 정의합니다.
 
-**소스 코드:**  
+**소스 코드:**
 
-```  
+```cpp
 #define BEGIN_CATEGORY_MAP(x)\
 static const struct ATL::_ATL_CATMAP_ENTRY* GetCategoryMap() throw() {\
 static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
@@ -183,15 +183,15 @@ static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
 #define END_CATEGORY_MAP()\
    { _ATL_CATMAP_ENTRY_END, NULL } };\
    return( pMap ); }
-```  
+```
 
 **전략:** 맵 요소 식별
 
 맵의 시작, 중간(있는 경우) 및 끝 요소에 대한 힌트를 지정합니다. `@<`, `@=` 및 `@>` 특수 맵 대체 문자열을 사용합니다. 자세한 내용은 이 문서의 `Syntax` 섹션을 참조하세요.
 
-**힌트 파일:**  
+**힌트 파일:**
 
-```  
+```cpp.hint
 // Start of the map.
 #define BEGIN_CATEGORY_MAP(x) @<
 // Intermediate map element.
@@ -200,7 +200,7 @@ static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
 #define REQUIRED_CATEGORY( catid ) @=
 // End of the map.
 #define END_CATEGORY_MAP() @>
-```  
+```
 
 ### <a name="composite-macros"></a>복합 매크로
 
@@ -208,11 +208,11 @@ static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
 
 다음 소스 코드에는 네임스페이스 범위의 시작을 지정하는 `START_NAMESPACE` 매크로 및 맵의 시작을 지정하는 `BEGIN_CATEGORY_MAP` 매크로가 포함되어 있습니다.
 
-**소스 코드:**  
+**소스 코드:**
 
-```  
+```cpp
 #define NSandMAP START_NAMESPACE BEGIN_CATEGORY_MAP
-```  
+```
 
 **전략:** 직접 복사
 
@@ -220,31 +220,31 @@ static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
 
 이 예제에서는 `Concealed C/C++ Language Elements` 부제목의 이 항목에서 설명한 대로 힌트가 이미 `START_NAMESPACE`에 있다고 가정합니다. 그리고 `Maps`의 앞부분에서 설명한 대로 힌트가 `BEGIN_CATEGORY_MAP`에 있다고 가정합니다.
 
-**힌트 파일:**  
+**힌트 파일:**
 
-```  
+```cpp.hint
 #define NSandMAP START_NAMESPACE BEGIN_CATEGORY_MAP
-```  
+```
 
 ### <a name="inconvenient-macros"></a>불편한 매크로
 
 일부 매크로는 구문 분석 시스템에서 해석할 수 있지만 매크로가 길거나 복잡하기 때문에 소스 코드를 읽기가 어렵습니다. 가독성을 높이기 위해 매크로 표시를 단순화하는 힌트를 제공할 수 있습니다.
 
-**소스 코드:**  
+**소스 코드:**
 
-```  
-#define STDMETHOD(methodName) HRESULT (STDMETHODCALLTYPE * methodName)  
-```  
+```cpp
+#define STDMETHOD(methodName) HRESULT (STDMETHODCALLTYPE * methodName)
+```
 
 **전략:** 단순화
 
 더 간단한 매크로 정의를 표시하는 힌트를 만듭니다.
 
-**힌트 파일:**  
+**힌트 파일:**
 
-```  
+```cpp.hint
 #define STDMETHOD(methodName) void* methodName
-```  
+```
 
 ## <a name="example"></a>예
 
@@ -254,7 +254,7 @@ static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
 
 ### <a name="hint-file-directories"></a>힌트 파일 디렉터리
 
-![일반 및 프로젝트 &#45; 특정 힌트 파일 디렉터리](../ide/media/hintfile.png "HintFile")  
+![일반 및 프로젝트 &#45; 특정 힌트 파일 디렉터리](../ide/media/hintfile.png "HintFile")
 
 ### <a name="directories-and-hint-file-contents"></a>디렉터리 및 힌트 파일 내용
 
@@ -262,41 +262,41 @@ static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
 
 - vcpackages
 
-    ```  
-    // vcpackages (partial list)  
+    ```cpp.hint
+    // vcpackages (partial list)
     #define _In_
     #define _In_opt_
     #define _In_z_
     #define _In_opt_z_
-    #define _In_count_(size)  
-    ```  
+    #define _In_count_(size)
+    ```
 
 - 디버그
 
-    ```  
+    ```cpp.hint
     // Debug
     #undef _In_
     #define OBRACE {
     #define CBRACE }
-    #define RAISE_EXCEPTION(x) throw (x)  
+    #define RAISE_EXCEPTION(x) throw (x)
     #define START_NAMESPACE namespace MyProject {
     #define END_NAMESPACE }
-    ```  
+    ```
 
 - A1
 
-    ```  
+    ```cpp.hint
     // A1
     #define START_NAMESPACE namespace A1Namespace {
-    ```  
+    ```
 
 - A2
 
-    ```  
+    ```cpp.hint
     // A2
     #undef OBRACE
     #undef CBRACE
-    ```  
+    ```
 
 ### <a name="effective-hints"></a>효과적인 힌트
 
@@ -306,19 +306,19 @@ static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
 
 - 효과적인 힌트:
 
-    ```  
-    // vcpackages (partial list)  
+    ```cpp.hint
+    // vcpackages (partial list)
     #define _In_opt_
     #define _In_z_
     #define _In_opt_z_
-    #define _In_count_(size)  
+    #define _In_count_(size)
     // Debug...
-    #define RAISE_EXCEPTION(x) throw (x)  
+    #define RAISE_EXCEPTION(x) throw (x)
     // A1
     #define START_NAMESPACE namespace A1Namespace {
     // ...Debug
     #define END_NAMESPACE }
-    ```  
+    ```
 
 위의 목록에 적용되는 참고 사항은 다음과 같습니다.
 
@@ -332,10 +332,10 @@ static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
 
 ## <a name="see-also"></a>참고 항목
 
-[Visual C++ 프로젝트용 파일 형식](../ide/file-types-created-for-visual-cpp-projects.md)    
-[#define 지시문(C/C++)](../preprocessor/hash-define-directive-c-cpp.md)   
-[#undef 지시문(C/C++)](../preprocessor/hash-undef-directive-c-cpp.md)   
-[SAL 주석](../c-runtime-library/sal-annotations.md)   
-[메시지 맵](../mfc/reference/message-maps-mfc.md)   
-[메시지 맵 매크로](../atl/reference/message-map-macros-atl.md)   
+[Visual C++ 프로젝트용 파일 형식](../ide/file-types-created-for-visual-cpp-projects.md)<br>
+[#define 지시문(C/C++)](../preprocessor/hash-define-directive-c-cpp.md)<br>
+[#undef 지시문(C/C++)](../preprocessor/hash-undef-directive-c-cpp.md)<br>
+[SAL 주석](../c-runtime-library/sal-annotations.md)<br>
+[메시지 맵](../mfc/reference/message-maps-mfc.md)<br>
+[메시지 맵 매크로](../atl/reference/message-map-macros-atl.md)<br>
 [개체 맵 매크로](../atl/reference/object-map-macros.md)

@@ -197,7 +197,7 @@
 ### [/CLRIMAGETYPE(CLR 이미지 형식 지정)](clrimagetype-specify-type-of-clr-image.md)
 ### [/CLRSUPPORTLASTERROR(PInvoke 호출의 마지막 오류 코드 유지)](clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls.md)
 ### [/CLRTHREADATTRIBUTE(CLR 스레드 특성 설정)](clrthreadattribute-set-clr-thread-attribute.md)
-### [/CLRUNMANAGEDCODECHECK(SupressUnmanagedCodeSecurityAttribute 추가)](clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute.md)
+### [/CLRUNMANAGEDCODECHECK(SuppressUnmanagedCodeSecurityAttribute 제거)](clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute.md)
 ### [/DEBUG(디버깅 정보 생성)](debug-generate-debug-info.md)
 ### [/DEBUGTYPE(디버그 정보 옵션)](debugtype-debug-info-options.md)
 ### [/DEF(모듈 정의 파일 지정)](def-specify-module-definition-file.md)
