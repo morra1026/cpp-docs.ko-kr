@@ -113,12 +113,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f64fce16201a15936cb97b1961827865c7b917b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2ce23acf1988e88954279f3b8cdbc8fc3c9001af
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446350"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083647"
 ---
 # <a name="canimationcontroller-class"></a>CAnimationController 클래스
 
@@ -882,7 +882,7 @@ pGroupNew에서 소유한 스토리보드가 우선인 경우 TRUE를 반환해�
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 CAnimationController::EnablePriorityComparisonHandler를 사용하여 우선 순위 비교 이벤트를 활성화하고 UI_ANIMATION_PHT_CANCEL을 지정하는 경우 호출됩니다. 응용 프로그램별 작업을 수행하기 위해 파생된 클래스에서 재정의될 수 있습니다. 충돌 관리에 대 한 자세한 정보에 대 한 읽기 Windows 애니메이션 API 설명서 (https://msdn.microsoft.com/library/dd371759(VS.85).aspx)합니다.
+이 메서드는 CAnimationController::EnablePriorityComparisonHandler를 사용하여 우선 순위 비교 이벤트를 활성화하고 UI_ANIMATION_PHT_CANCEL을 지정하는 경우 호출됩니다. 응용 프로그램별 작업을 수행하기 위해 파생된 클래스에서 재정의될 수 있습니다. 에 대 한 자세한 정보에 대 한 읽기 Windows 애니메이션 API 설명서 [충돌 관리](https://msdn.microsoft.com/library/dd371759)합니다.
 
 ##  <a name="onhasprioritycompress"></a>  CAnimationController::OnHasPriorityCompress
 
@@ -912,7 +912,7 @@ pGroupNew에서 소유한 스토리보드가 우선인 경우 TRUE를 반환해�
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 CAnimationController::EnablePriorityComparisonHandler를 사용하여 우선 순위 비교 이벤트를 활성화하고 UI_ANIMATION_PHT_COMPRESS를 지정하는 경우 호출됩니다. 응용 프로그램별 작업을 수행하기 위해 파생된 클래스에서 재정의될 수 있습니다. 충돌 관리에 대 한 자세한 정보에 대 한 읽기 Windows 애니메이션 API 설명서 (https://msdn.microsoft.com/library/dd371759(VS.85).aspx)합니다.
+이 메서드는 CAnimationController::EnablePriorityComparisonHandler를 사용하여 우선 순위 비교 이벤트를 활성화하고 UI_ANIMATION_PHT_COMPRESS를 지정하는 경우 호출됩니다. 응용 프로그램별 작업을 수행하기 위해 파생된 클래스에서 재정의될 수 있습니다. 에 대 한 자세한 정보에 대 한 읽기 Windows 애니메이션 API 설명서 [충돌 관리](https://msdn.microsoft.com/library/dd371759)합니다.
 
 ##  <a name="onhaspriorityconclude"></a>  CAnimationController::OnHasPriorityConclude
 
@@ -942,7 +942,7 @@ pGroupNew에서 소유한 스토리보드가 우선인 경우 TRUE를 반환해�
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 CAnimationController::EnablePriorityComparisonHandler를 사용하여 우선 순위 비교 이벤트를 활성화하고 UI_ANIMATION_PHT_TRIM을 지정하는 경우 호출됩니다. 응용 프로그램별 작업을 수행하기 위해 파생된 클래스에서 재정의될 수 있습니다. 충돌 관리에 대 한 자세한 정보에 대 한 읽기 Windows 애니메이션 API 설명서 (https://msdn.microsoft.com/library/dd371759(VS.85).aspx)합니다.
+이 메서드는 CAnimationController::EnablePriorityComparisonHandler를 사용하여 우선 순위 비교 이벤트를 활성화하고 UI_ANIMATION_PHT_TRIM을 지정하는 경우 호출됩니다. 응용 프로그램별 작업을 수행하기 위해 파생된 클래스에서 재정의될 수 있습니다. 에 대 한 자세한 정보에 대 한 읽기 Windows 애니메이션 API 설명서 [충돌 관리](https://msdn.microsoft.com/library/dd371759)합니다.
 
 ##  <a name="onhasprioritytrim"></a>  CAnimationController::OnHasPriorityTrim
 
@@ -972,7 +972,7 @@ pGroupNew에서 소유한 스토리보드가 우선인 경우 TRUE를 반환해�
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 CAnimationController::EnablePriorityComparisonHandler를 사용하여 우선 순위 비교 이벤트를 활성화하고 UI_ANIMATION_PHT_TRIM을 지정하는 경우 호출됩니다. 응용 프로그램별 작업을 수행하기 위해 파생된 클래스에서 재정의될 수 있습니다. 충돌 관리에 대 한 자세한 정보에 대 한 읽기 Windows 애니메이션 API 설명서 (https://msdn.microsoft.com/library/dd371759(VS.85).aspx)합니다.
+이 메서드는 CAnimationController::EnablePriorityComparisonHandler를 사용하여 우선 순위 비교 이벤트를 활성화하고 UI_ANIMATION_PHT_TRIM을 지정하는 경우 호출됩니다. 응용 프로그램별 작업을 수행하기 위해 파생된 클래스에서 재정의될 수 있습니다. 에 대 한 자세한 정보에 대 한 읽기 Windows 애니메이션 API 설명서 [충돌 관리](https://msdn.microsoft.com/library/dd371759)합니다.
 
 ##  <a name="onstoryboardstatuschanged"></a>  CAnimationController::OnStoryboardStatusChanged
 

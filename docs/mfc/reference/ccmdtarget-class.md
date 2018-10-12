@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 575ba3786e6639e5d6801ec9555c4a85f9732b20
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 13b71838bb4db152fb76fa1115a426e2711422ea
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415735"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890585"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget 클래스
 
@@ -223,7 +223,7 @@ void EnableTypeLib();
 
 ### <a name="remarks"></a>설명
 
-생성자에서이 멤버 함수를 호출 하면 `CCmdTarget`-형식 정보를 제공 하는 경우 개체를 파생 합니다. 자세한 내용은 기술 자료 문서 Q185720를을 참조 하세요. "방법: MFC 자동화 서버에서 형식 정보를 제공 합니다." 기술 자료 문서에서 제공 됩니다 [ http://support.microsoft.com ](http://support.microsoft.com/)합니다.
+생성자에서이 멤버 함수를 호출 하면 `CCmdTarget`-형식 정보를 제공 하는 경우 개체를 파생 합니다.
 
 ##  <a name="endwaitcursor"></a>  CCmdTarget::EndWaitCursor
 
@@ -303,8 +303,6 @@ TRUE 이면 성공적이 고, 그렇지 않으면 FALSE. 성공 하면 \* *pIID*
 ### <a name="remarks"></a>설명
 
 파생된 클래스에서이 멤버 함수를 재정의 해야 (재정의 되지 않으면 `GetDispatchIID` FALSE를 반환 합니다). 참조 [COleControl](../../mfc/reference/colecontrol-class.md)합니다.
-
-자세한 내용은 기술 자료 문서 Q185720를을 참조 하세요. "방법: MFC 자동화 서버에서 형식 정보를 제공 합니다." 기술 자료 문서에서 제공 됩니다 [ http://support.microsoft.com ](http://support.microsoft.com/)합니다.
 
 ##  <a name="getidispatch"></a>  CCmdTarget::GetIDispatch
 
@@ -407,7 +405,7 @@ virtual CTypeLibCache* GetTypeLibCache();
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 `CTypeLibCache` 개체입니다.
+`CTypeLibCache` 개체에 대한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 

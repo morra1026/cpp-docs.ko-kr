@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16c204636baf87cd88f80294b1f413cacc9f5ddc
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c2bf6990180a7fe325b1ee3d4f4e497a433c183e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764266"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46103362"
 ---
 # <a name="c-type-specifiers"></a>C 형식 지정자
 
@@ -28,19 +28,7 @@ ms.locfileid: "43764266"
 
 ## <a name="syntax"></a>구문
 
-*type-specifier*:  
-&nbsp;&nbsp;&nbsp;&nbsp;**void**  
-&nbsp;&nbsp;&nbsp;&nbsp;**char**  
-&nbsp;&nbsp;&nbsp;&nbsp;**short**  
-&nbsp;&nbsp;&nbsp;&nbsp;**int**  
-&nbsp;&nbsp;&nbsp;&nbsp;**long**  
-&nbsp;&nbsp;&nbsp;&nbsp;**float**  
-&nbsp;&nbsp;&nbsp;&nbsp;**double**  
-&nbsp;&nbsp;&nbsp;&nbsp;**signed**  
-&nbsp;&nbsp;&nbsp;&nbsp;**unsigned**  
-&nbsp;&nbsp;&nbsp;&nbsp;*struct-or-union-specifier*  
-&nbsp;&nbsp;&nbsp;&nbsp;*enum-specifier*  
-&nbsp;&nbsp;&nbsp;&nbsp;*typedef-name*  
+*type-specifier*: &nbsp;&nbsp;&nbsp;&nbsp;**void** &nbsp;&nbsp;&nbsp;&nbsp;**char** &nbsp;&nbsp;&nbsp;&nbsp;**short** &nbsp;&nbsp;&nbsp;&nbsp;**int** &nbsp;&nbsp;&nbsp;&nbsp;**long** &nbsp;&nbsp;&nbsp;&nbsp;**float** &nbsp;&nbsp;&nbsp;&nbsp;**double** &nbsp;&nbsp;&nbsp;&nbsp;**signed** &nbsp;&nbsp;&nbsp;&nbsp;**unsigned** &nbsp;&nbsp;&nbsp;&nbsp;*struct-or-union-specifier* &nbsp;&nbsp;&nbsp;&nbsp;*enum-specifier* &nbsp;&nbsp;&nbsp;&nbsp;*typedef-name*
 
 **signed char**, **signed int**, **signed short int** 및 **signed long int** 형식은 상응하는 **unsigned** 및 **enum**과 함께 *정수* 형식이라고 불립니다. **float**, **double** 및 **long double** 형식 지정자는 *부동* 또는 *부동 소수점* 형식이라고 합니다. 변수 또는 함수 선언에서 정수 계열 또는 부동 소수점 형식 지정자를 사용할 수 있습니다. *type-specifier*가 선언에서 제공되지 않으면 **int**로 간주됩니다.
 
@@ -87,4 +75,4 @@ ANSI 사양을 따르려면 <strong>void\*\*</strong>를 <strong>int\*\*</strong
 
 ## <a name="see-also"></a>참고 항목
 
-[선언 및 형식](../c-language/declarations-and-types.md)  
+[선언 및 형식](../c-language/declarations-and-types.md)

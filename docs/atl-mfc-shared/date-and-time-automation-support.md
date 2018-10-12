@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38933847065544f97d60dfc109436f059a025f7a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1ce0acc7eb90e534e1e66882f5a4a6a88b1eb782
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763856"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890181"
 ---
 # <a name="date-and-time-automation-support"></a>날짜 및 시간: 자동화 지원
 
@@ -57,11 +57,8 @@ ms.locfileid: "43763856"
 
 CRT는 올바르게 23 시간 차이 계산합니다. `COleDateTimeSpan` 24 시간 차이 계산합니다.
 
-올바르게 사용 하 여 날짜를 표시 하는 해결 방법 끝부분의 예제에서는 사용 됩니다 `COleDateTime::Format`합니다. 기술 자료 문서를 참조 하세요. "버그: Format("%D") 실패 `COleDateTime` 고 `COleDateTimeSpan`" (Q167338).
-
 [!code-cpp[NVC_ATLMFC_Utilities#176](../atl-mfc-shared/codesnippet/cpp/date-and-time-automation-support_1.cpp)]
 
 ## <a name="see-also"></a>참고 항목
 
 [날짜 및 시간](../atl-mfc-shared/date-and-time.md)
-

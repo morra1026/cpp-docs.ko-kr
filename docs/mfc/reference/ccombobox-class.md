@@ -118,12 +118,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03d418fc45d3947248c78d70af5d036bd93b204d
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 912bbd37d4d9afcb60158d41b82b7fa829eeb4ec
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821506"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890649"
 ---
 # <a name="ccombobox-class"></a>CComboBox 클래스
 
@@ -147,7 +147,7 @@ class CComboBox : public CWnd
 
 |이름|설명|
 |----------|-----------------|
-|[Ccombobox:: Addstring](#addstring)|콤보 상자 또는 CBS_SORT 스타일을 사용 하 여 목록 상자에 대 한 정렬 된 위치에 있는 목록 상자에서 목록의 끝에 문자열을 추가 합니다.|
+|[CComboBox::AddString](#addstring)|콤보 상자 또는 CBS_SORT 스타일을 사용 하 여 목록 상자에 대 한 정렬 된 위치에 있는 목록 상자에서 목록의 끝에 문자열을 추가 합니다.|
 |[CComboBox::Clear](#clear)|삭제 (삭제) 편집 컨트롤에 있는 경우 현재 선택 합니다.|
 |[CComboBox::CompareItem](#compareitem)|정렬 된 소유자가 그린 콤보 상자에서 새 목록 항목의 상대 위치를 확인 하기 위해 프레임 워크에서 호출 됩니다.|
 |[CComboBox::Copy](#copy)|CF_TEXT 형식으로 클립보드에 있는 경우 현재 선택 영역을 복사 합니다.|
@@ -256,7 +256,7 @@ class CComboBox : public CWnd
 
 포함 하는 경우는 `CComboBox` 개체 다른 창 내에서 개체를 삭제 해야 합니다. 만드는 경우는 `CComboBox` 개체 스택에 자동으로 제거 됩니다. 만드는 경우는 `CComboBox` 개체를 사용 하 여 힙에 **새** 를 호출 해야 함수 **삭제** Windows 콤보 상자가 소멸 될 때 소멸 시킬 개체에서.
 
-**참고** WM_KEYDOWN과 WM_CHAR 메시지를 처리 하려는 경우 하위 클래스입니다 콤보 상자의 편집 하 고 목록 상자 컨트롤에서 클래스를 파생할 `CEdit` 및 `CListBox`, 파생된 클래스에 해당 메시지에 대 한 처리기를 추가 합니다. 자세한 내용은 [ http://support.microsoft.com/default.aspxscid=kb; Q174667](http://support.microsoft.com/default.aspxscid=kb;q174667) 하 고 [CWnd::SubclassWindow](../../mfc/reference/cwnd-class.md#subclasswindow)합니다.
+**참고** WM_KEYDOWN과 WM_CHAR 메시지를 처리 하려는 경우 하위 클래스입니다 콤보 상자의 편집 하 고 목록 상자 컨트롤에서 클래스를 파생할 `CEdit` 및 `CListBox`, 파생된 클래스에 해당 메시지에 대 한 처리기를 추가 합니다. 자세한 내용은 [CWnd::SubclassWindow](../../mfc/reference/cwnd-class.md#subclasswindow)합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -1070,7 +1070,7 @@ int InsertString(
 
 ### <a name="remarks"></a>설명
 
-달리를 [AddString](#addstring) 멤버 함수는 `InsertString` 멤버 함수는 목록을 사용 하 여 발생 하지 않습니다는 [CBS_SORT](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) 정렬 스타일입니다.
+[AddString](#addstring) 멤버 함수와 달리 `InsertString` 멤버 함수에서는 [CBS_SORT](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) 스타일의 목록이 정렬되지 않습니다.
 
 > [!NOTE]
 >  이 함수는 Windows에서 지원 되지 않습니다 `ComboBoxEx` 제어 합니다. 이 컨트롤에 대 한 자세한 내용은 참조 하세요. [ComboBoxEx 컨트롤](/windows/desktop/Controls/comboboxex-controls) Windows SDK에 있습니다.

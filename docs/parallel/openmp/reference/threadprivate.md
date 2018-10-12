@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9313934744f6eae66736f25b0d0b8592743cf12
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3b769b5aa5f46b9a4b815424a0c4178cf4504ab5
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376982"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082438"
 ---
 # <a name="threadprivate"></a>threadprivate
 
@@ -46,7 +46,7 @@ ms.locfileid: "46376982"
 
 `threadprivate` 지시문에 기반 합니다 [스레드](../../../cpp/thread.md) `__declspec` 특성;에 대 한 제한 **__declspec (thread)** 적용할 `threadprivate`.
 
-사용할 수 없습니다 `threadprivate` 를 통해 로드 되는 모든 dll [LoadLibrary](https://msdn.microsoft.com/library/windows/desktop/ms684175)합니다.  여기에 사용 하 여 로드 되는 Dll [/DELAYLOAD (가져오기 로드 지연)](../../../build/reference/delayload-delay-load-import.md)를 사용 하 여 **LoadLibrary**합니다.
+사용할 수 없습니다 `threadprivate` 를 통해 로드 되는 모든 dll [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya)합니다.  여기에 사용 하 여 로드 되는 Dll [/DELAYLOAD (가져오기 로드 지연)](../../../build/reference/delayload-delay-load-import.md)를 사용 하 여 **LoadLibrary**합니다.
 
 사용할 수 있습니다 `threadprivate` 프로세스를 시작할 때 정적으로 로드 된 dll에서입니다.
 

@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ce585f9dc8439a02a2883229e8d9ec006c29c24
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 086fab7d1d50f96ab05c38f2e6d524d7ff344e02
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717693"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49081918"
 ---
 # <a name="delay-delay-load-import-settings"></a>/DELAY(가져오기 설정 로드 지연)
 
@@ -46,7 +46,7 @@ ms.locfileid: "45717693"
 
 - NOBIND 한정자는 링커에 바인딩할 수 있는 IAT를 최종 이미지에서 제외하도록 지시합니다. 기본값은 지연 로드된 DLL에 대해 바인딩할 수 있는 IAT를 만드는 것입니다. 결과 이미지는 정적으로 바인딩할 수 없습니다. 바인딩할 수 있는 IAT가 포함된 이미지는 실행 전에 정적으로 바인딩할 수 없습니다. 참조 [바인딩/](../../build/reference/bind.md)합니다.
 
-   도우미 함수를 호출 하는 대신 바인딩된 정보를 사용 하려고 경우 DLL이 바인딩되면 [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212.aspx) 참조 된 각 합니다. 타임스탬프 또는 기본 설정 주소가 로드된 DLL의 타임스탬프 또는 기본 설정 주소와 일치하지 않으면 도우미 함수는 바인딩된 IAT가 오래되었다고 가정하고 마치 바인딩된 IAT가 없는 것처럼 진행합니다.
+   도우미 함수를 호출 하는 대신 바인딩된 정보를 사용 하려고 경우 DLL이 바인딩되면 [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) 참조 된 각 합니다. 타임스탬프 또는 기본 설정 주소가 로드된 DLL의 타임스탬프 또는 기본 설정 주소와 일치하지 않으면 도우미 함수는 바인딩된 IAT가 오래되었다고 가정하고 마치 바인딩된 IAT가 없는 것처럼 진행합니다.
 
    NOBIND는 프로그램 이미지를 더 크게 만들지만 DLL 로드 시간은 단축할 수 있습니다. DLL 바인딩을 의도하지 않은 경우 NOBIND는 바인딩된 IAT가 생성되지 않도록 합니다.
 

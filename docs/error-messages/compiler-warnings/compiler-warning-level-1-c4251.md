@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad47d769dbfd09cc741be18598355dc34486bd54
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d964c375adf80caef3bb5a6eb06c67ef8e3e7200
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46045694"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890051"
 ---
 # <a name="compiler-warning-level-1-c4251"></a>컴파일러 경고(수준 1) C4251
 
@@ -39,11 +39,9 @@ ms.locfileid: "46045694"
 
 가상 함수를 사용 하 여 클래스를 정의 하 고 함수는 DLL 인스턴스화하기 위해 호출할 수를 정의 하 고 형식의 개체를 삭제 하면 클래스를 내보내지 방지할 수 있습니다.  그런 다음 가상 함수 형식에만 호출할 수 있습니다.
 
-템플릿 내보내기에 대 한 자세한 내용은 참조 하세요. [ http://support.microsoft.com/default.aspx?scid=KB; EN-US; 168958](http://support.microsoft.com/default.aspx?scid=KB;EN-US;168958)합니다.
-
 디버그 릴리스에 컴파일할 c + + 표준 라이브러리의 형식에서 파생 하는 경우에 C4251를 무시할 수 있습니다 (**/MTd**) 및 컴파일러 오류 메시지 _Container_base를 참조 하는 위치입니다.
 
-```
+```cpp
 // C4251.cpp
 // compile with: /EHsc /MTd /W2 /c
 #include <vector>

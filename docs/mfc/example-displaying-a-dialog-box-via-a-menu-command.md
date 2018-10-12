@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2869e936115317ff34183b55ba16fe8e9cdc4d2d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1abb923a52ccce181782d5387636c45491c342cd
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378191"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890207"
 ---
 # <a name="example-displaying-a-dialog-box-via-a-menu-command"></a>예: 메뉴 명령을 통해 대화 상자 표시
 
@@ -98,12 +98,7 @@ ms.locfileid: "46378191"
 
          [!code-cpp[NVC_MFCControlLadenDialog#48](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_7.cpp)]
 
-또한 다음 기술 자료 문서를 참조 하세요.
-
-- Q251059: 방법: MFC 대화 상자에 대 한 고유한 창 클래스 이름 제공
-
 ## <a name="see-also"></a>참고 항목
 
 [대화 상자](../mfc/dialog-boxes.md)<br/>
 [모달 및 모덜리스 대화 상자](../mfc/modal-and-modeless-dialog-boxes.md)
-

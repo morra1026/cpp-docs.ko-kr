@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a800fb8065fd3c613a2bc05975c15decb0145891
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8a3dbb1d63e7d7c6f5e036fc0cde967277c91a40
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46028313"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890129"
 ---
 # <a name="linker-tools-error-lnk2005"></a>링커 도구 오류 LNK2005
 
@@ -121,14 +121,3 @@ ms.locfileid: "46028313"
     ```
 
    이 문제를 해결 하려면 추가 [/FORCE:MULTIPLE](../../build/reference/force-force-file-output.md) 링커 명령줄 옵션 및 해야 다음 uuid.lib가 참조 하는 첫 번째 라이브러리입니다.
-
-## <a name="additional-information"></a>추가 정보
-
-이전 버전의 도구 집합을 사용 하는 경우이 오류에 대 한 특정 원인에 대 한 자세한 내용은 다음 기술 자료 문서를 참조 하세요.
-
-- [CRT 라이브러리와 MFC 라이브러리는 Visual c + +에서 잘못 된 순서로 연결 된 경우 LNK2005 오류 발생](https://support.microsoft.com/kb/148652)
-
-- [해결 방법: 오버 로드 된 전역 Delete 연산자 원인 LNK2005](https://support.microsoft.com/kb/140440)
-
-- [Visual c + +에서 ATL 실행 (.exe) 프로젝트를 컴파일하는 경우 LNK2005 오류를 받게](https://support.microsoft.com/kb/184235)합니다.
-

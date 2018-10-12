@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0910c23202b975999e10ef2effaebc470c62fb9d
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: e8b9f8614feb98f7e21392565aa610b7d42cd512
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821077"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890168"
 ---
 # <a name="linker-tools-error-lnk1168"></a>링커 도구 오류 LNK1168
 
@@ -38,7 +38,3 @@ Windows SysInternals 유틸리티를 사용할 수 있습니다 [처리할](http
 파일이 검색 인덱싱 서비스에 의해 잠겨 있으면 자동 인덱싱에서 빌드 출력 디렉터리를 제외하여 이 문제를 해결할 수 있습니다. 자세한 내용은 인덱싱 서비스의 설명서를 참조하세요. Windows 검색 인덱싱 서비스를 변경 하려면 사용 하 여 **인덱싱 옵션** 는 Windows에서 **제어판**합니다. 자세한 내용은 [인덱스를 사용 하 여 개선 하는 Windows 검색: 질문과 대답](http://windows.microsoft.com/windows/improve-windows-searches-using-index-faq#1TC=windows-7)합니다.
 
 실행 파일을 빌드 프로세스에 의해 덮어쓸 수 없는 경우 파일 탐색기에 의해 잠겨 있을 수 있습니다. 경우는 **응용 프로그램 환경을** 서비스가 비활성화 되었습니다, 파일 탐색기는 실행 파일 핸들 잠금 오랜된 시간 동안 보유할 수 있습니다. 이 문제를 해결 하려면 실행 **services.msc** 연 다음 합니다 **속성** 대화 상자를 **응용 프로그램 환경을** 서비스입니다. 변경 된 **시작 유형** 에서 **사용 안 함** 에 **수동**합니다.
-
-## <a name="see-also"></a>참고 항목
-
-[솔루션 또는 Visual c + +에서 ActiveX 프로젝트를 빌드하려고 할 때 "오류 PRJ0008" 또는 "심각한 오류 LNK1168" 오류 메시지가 나타날 수 있습니다.](http://support.microsoft.com/kb/308358)

@@ -45,12 +45,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee8e59fbc88e63343d4da75a4cbf95d4f83bf815
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 1aefd61d724f7716392b5fd2d15ef3a2f9ff0006
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45701365"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890233"
 ---
 # <a name="md-mt-ld-use-run-time-library"></a>/MD, /MT, /LD(런타임 라이브러리 사용)
 
@@ -80,8 +80,6 @@ C 런타임 라이브러리 및 사용 하 여 컴파일할 때 사용 되는 �
 링커의 지정된 된 호출에 전달 되는 모든 모듈은 동일한 런타임 라이브러리 컴파일러 옵션을 사용 하 여 컴파일된 있어야 합니다 (**/MD**를 **/MT**하십시오 **/LD**).
 
 런타임 라이브러리의 디버그 버전을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [C 런타임 라이브러리 참조](../../c-runtime-library/c-run-time-library-reference.md)합니다.
-
-적절한 C 런타임 라이브러리를 선택하는 방법은 기술 자료 문서 Q140584에서도 설명합니다.
 
 Dll에 대 한 자세한 내용은 참조 하세요 [Visual c + +에서 Dll](../../build/dlls-in-visual-cpp.md)합니다.
 

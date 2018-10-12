@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 253282092bb71b6d4a5c520355ab4f8b51015c9f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6d6a6afeca0bcf0d08a0a206983d3db33b61a041
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445141"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890701"
 ---
 # <a name="cstringt-class"></a>CStringT 클래스
 
@@ -224,7 +224,7 @@ ATL 응용 프로그램에서 사용 하 여 하는 경우:
 `CString`하십시오 `CStringA`, 및 `CStringW` (MFC90 MFC DLL에서 내보낸. DLL), 사용자 Dll에서 하지 않습니다. 방지 하기 위해 이렇게 `CStringT` 에서 여러 번 정의 되 고 있습니다.
 
 > [!NOTE]
->  코드에 설명 된 링커 오류에 대 한 해결 방법을 포함 하는 경우 [Linking Errors When You Import CString-Derived 클래스 "(Q309801)](https://support.microsoft.com/help/309801/you-may-receive-an-lnk2019-error-message-when-you-build-a-visual-c-200), 해당 코드를 제거 해야 합니다. 필요 하지 않습니다.
+>  코드에 설명 된 링커 오류에 대 한 해결 방법을 포함 하는 경우 [CStringT를 사용 하 여 문자열 클래스 내보내기](../../atl-mfc-shared/exporting-string-classes-using-cstringt.md), 해당 코드를 제거 해야 합니다. 필요 하지 않습니다.
 
 MFC 기반 응용 프로그램 내에서 사용 가능한 다음 문자열 형식은 다음과 같습니다.
 

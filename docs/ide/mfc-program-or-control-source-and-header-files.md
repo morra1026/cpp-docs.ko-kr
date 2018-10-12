@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0cb9518f60db98bd590cecdffa09ee7d814241ac
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7ec05f200d81a9753563a654257d9df3dd50a19f
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46447910"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861111"
 ---
 # <a name="mfc-program-or-control-source-and-header-files"></a>MFC 프로그램 또는 컨트롤 소스 및 헤더 파일
 
@@ -36,7 +36,7 @@ Visual Studio에서 MFC 프로젝트를 만들 때, 생성하는 프로젝트에
 |Dlgproxy.cpp, Dlgproxy.h|대화 상자 기반 프로그램에서 기본 대화 상자용 프로젝트의 Automation 프록시 클래스에 대한 구현 및 헤더 파일입니다. 이는 Automation 지원을 선택한 경우에만 사용됩니다.|
 |*Projname*doc.cpp, *Projname*doc.h|`CProjnameDoc`이라는 문서 클래스를 파생시키고 구현하며, 문서를 초기화하고 직렬화(저장 및 로드)하고 디버깅 진단을 구현하는 기본 멤버 함수를 포함합니다.|
 |*Projname*set.h/.cpp|데이터베이스를 지원하고 레코드 집합 클래스를 포함하는 프로그램을 만드는 경우 만들었습니다.|
-|*Projname*view.cpp, *Projname*view.h|문서 데이터를 표시하고 인쇄하는 데 사용되는 `CProjnameView`이라는 뷰 클래스를 파생시키고 구현합니다. `CProjnameView` 클래스는 다음 MFC 클래스 중 하나에서 파생됩니다.<br /><br /> -   [CEditView](../mfc/reference/ceditview-class.md)<br />-   [CFormView](../mfc/reference/cformview-class.md)<br />-   [CRecordView](../mfc/reference/crecordview-class.md)<br />-   [COleDBRecordView](../mfc/reference/coledbrecordview-class.md)<br />-   [CTreeView](../mfc/reference/ctreeview-class.md)<br />-   [CListView](../mfc/reference/clistview-class.md)<br />-   [CRichEditView](../mfc/reference/cricheditview-class.md)<br />-   [CScrollView](../mfc/reference/cscrollview-class.md)<br />-   [CView](../mfc/reference/cview-class.md)<br />-   [CHTMLView](../mfc/reference/chtmlview-class.md)<br />-   [CHTMLEditView](../mfc/reference/chtmleditview-class.md)<br /><br /> 프로젝트의 뷰 클래스는 뷰를 그리고 디버깅 진단을 구현하는 기초 멤버 함수를 포함합니다. 인쇄에 대한 지원을 사용한 경우 메시지 맵 항목은 인쇄, 인쇄 설정 및 미리 보기 명령 메시지에 대해 추가됩니다. 이러한 항목은 기본 뷰 클래스에서 해당 멤버 함수를 호출합니다.|
+|*Projname*view.cpp, *Projname*view.h|문서 데이터를 표시하고 인쇄하는 데 사용되는 `CProjnameView`이라는 뷰 클래스를 파생시키고 구현합니다. `CProjnameView` 클래스는 다음 MFC 클래스 중 하나에서 파생됩니다.<br /><br />- [CEditView](../mfc/reference/ceditview-class.md)<br />- [CFormView](../mfc/reference/cformview-class.md)<br />- [CRecordView](../mfc/reference/crecordview-class.md)<br />- [COleDBRecordView](../mfc/reference/coledbrecordview-class.md)<br />- [CTreeView](../mfc/reference/ctreeview-class.md)<br />- [CListView](../mfc/reference/clistview-class.md)<br />- [CRichEditView](../mfc/reference/cricheditview-class.md)<br />- [CScrollView](../mfc/reference/cscrollview-class.md)<br />- [CView](../mfc/reference/cview-class.md)<br />- [CHTMLView](../mfc/reference/chtmlview-class.md)<br />- [CHTMLEditView](../mfc/reference/chtmleditview-class.md)<br /><br /> 프로젝트의 뷰 클래스는 뷰를 그리고 디버깅 진단을 구현하는 기초 멤버 함수를 포함합니다. 인쇄에 대한 지원을 사용한 경우 메시지 맵 항목은 인쇄, 인쇄 설정 및 미리 보기 명령 메시지에 대해 추가됩니다. 이러한 항목은 기본 뷰 클래스에서 해당 멤버 함수를 호출합니다.|
 |*Projname*PropPage.h, *Projname*PropPage.cpp|`CProjnamePropPage` 클래스를 구현하고 선언합니다. `CProjnamePropPage`은 `COlePropertyPage`에서 파생되고 기본 멤버 함수 `DoDataExchange`은 데이터 교환 및 유효성 검사를 구현하기 위해 제공됩니다.|
 |IPframe.cpp, IPframe.h|응용 프로그램 마법사의 **자동화 옵션** 페이지(3/6 단계)에서 미니 서버 또는 전체 서버 옵션을 선택하는 경우 만들었습니다. 해당 파일은 컨테이너 프로그램에서 서버를 내부에서 활성화할 때 사용된 **CInPlaceFrame**이라는 내부 프레임 창 클래스를 파생시키고 구현합니다.|
 |Mainfrm.cpp, Mainfrm.h|[CFrameWnd](../mfc/reference/cframewnd-class.md)(SDI 응용 프로그램용) 또는 [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md)(MDI 응용 프로그램용)에서 **CMainFrame** 클래스를 파생시킵니다. 응용 프로그램 마법사의 **응용 프로그램 옵션** 페이지(4/6 단계)에서 해당 옵션을 선택한 경우 **CMainFrame** 클래스는 도구 모음 단추 및 상태 표시줄의 생성을 처리합니다. **CMainFrame** 사용에 대한 내용은 [응용 프로그램 마법사로 만든 프레임 창 클래스](../mfc/frame-window-classes-created-by-the-application-wizard.md)를 참조합니다.|

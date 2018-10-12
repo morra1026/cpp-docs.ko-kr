@@ -15,16 +15,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4e052de60234b065a137c5528c77d2d6c97490e8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 88272c935c3e610ee633a1e076a2d2d76b5840f2
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46034853"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082568"
 ---
 # <a name="reading-strings-into-the-ole-db-provider"></a>OLE DB 공급자로 문자열 읽어들이기
 
-`RMyProviderRowset::Execute` 함수 파일을 열고 문자열을 읽습니다. 소비자를 호출 하 여 공급자에 게 파일 이름을 전달 [icommandtext:: Setcommandtext](/previous-versions/windows/desktop/ms709757\(v=vs.85\))합니다. 공급자 파일 이름을 받고 멤버 변수에 저장 `m_szCommandText`합니다. `Execute` 파일 이름을 읽고 `m_szCommandText`합니다. 파일 이름이 잘못 되었거나 파일을 사용할 수 없는 경우 `Execute` 오류를 반환 합니다. 을 열고 파일 및 호출 `fgets` 문자열을 검색 합니다. 각 설정 문자열의 읽기에 대 한 `Execute` 사용자 레코드의 인스턴스를 만듭니다 (`CAgentMan`) 배열에 넣습니다.  
+`RMyProviderRowset::Execute` 함수 파일을 열고 문자열을 읽습니다. 소비자를 호출 하 여 공급자에 게 파일 이름을 전달 [icommandtext:: Setcommandtext](/previous-versions/windows/desktop/ms709757)합니다. 공급자 파일 이름을 받고 멤버 변수에 저장 `m_szCommandText`합니다. `Execute` 파일 이름을 읽고 `m_szCommandText`합니다. 파일 이름이 잘못 되었거나 파일을 사용할 수 없는 경우 `Execute` 오류를 반환 합니다. 을 열고 파일 및 호출 `fgets` 문자열을 검색 합니다. 각 설정 문자열의 읽기에 대 한 `Execute` 사용자 레코드의 인스턴스를 만듭니다 (`CAgentMan`) 배열에 넣습니다.  
   
 파일을 열 수 없는 경우 `Execute` DB_E_NOTABLE 반환 해야 합니다. 공급자를 여러 소비자와 함께 작동 하지 않으며 OLE DB를 통과 하지 못합니다 E_FAIL을 대신 반환 하는 경우 [적합성 테스트](../../data/oledb/testing-your-provider.md)합니다.  
   

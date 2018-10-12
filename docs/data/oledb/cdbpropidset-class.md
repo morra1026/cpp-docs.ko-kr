@@ -44,12 +44,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9619ffdf9fd24bd73548fb3992084eb0a5d437a7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 514a013cf3f327c0c73ca8469900693d6a4e5e21
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46114477"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084037"
 ---
 # <a name="cdbpropidset-class"></a>CDBPropIDSet 클래스
 
@@ -83,7 +83,7 @@ class CDBPropIDSet : public tagDBPROPIDSET
   
 ## <a name="remarks"></a>설명  
 
-OLE DB 소비자가 사용 하 여 `DBPROPIDSET` 는 소비자가 속성 정보를 가져올 속성 Id의 배열을 전달 하는 구조입니다. 단일에서 식별 된 속성을 [DBPROPIDSET](/previous-versions/windows/desktop/ms717981\(v=vs.85\)) 구조 하나의 속성 집합에 속합니다.  
+OLE DB 소비자가 사용 하 여 `DBPROPIDSET` 는 소비자가 속성 정보를 가져올 속성 Id의 배열을 전달 하는 구조입니다. 단일에서 식별 된 속성을 [DBPROPIDSET](/previous-versions/windows/desktop/ms717981) 구조 하나의 속성 집합에 속합니다.  
 
 ## <a name="addpropertyid"></a> Cdbpropidset:: Addpropertyid
 
@@ -102,7 +102,7 @@ bool AddPropertyID(DBPROPID propid) throw();
 
 ## <a name="cdbpropidset"></a> Cdbpropidset:: Cdbpropidset
 
-생성자입니다. 초기화 합니다 `rgProperties`, `cProperties`, 및 (선택 사항) `guidPropertySet` 의 필드를 [DBPROPIDSET](/previous-versions/windows/desktop/ms717981\(v=vs.85\)) 구조입니다.  
+생성자입니다. 초기화 합니다 `rgProperties`, `cProperties`, 및 (선택 사항) `guidPropertySet` 의 필드를 [DBPROPIDSET](/previous-versions/windows/desktop/ms717981) 구조입니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -135,7 +135,7 @@ void SetGUID(const GUID& guid) throw();
 #### <a name="parameters"></a>매개 변수  
 
 *guid*<br/>
-[in] 설정 하는 데 GUID를 `guidPropertySet` 필드를 [DBPROPIDSET](/previous-versions/windows/desktop/ms717981\(v=vs.85\)) 구조입니다.  
+[in] 설정 하는 데 GUID를 `guidPropertySet` 필드를 [DBPROPIDSET](/previous-versions/windows/desktop/ms717981) 구조입니다.  
   
 ### <a name="remarks"></a>설명  
 

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85439e191ac8676603c9d7fab8a41bb126e97b9e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4420bdac9e788f80142546d8b09781a8aa3ce06d
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46398666"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821389"
 ---
 # <a name="working-with-project-properties"></a>프로젝트 속성 사용
 
@@ -250,7 +250,7 @@ Visual C++ 컴파일러(cl.exe)는 특정 환경 변수, 특히 LIB, LIBPATH, PA
 
 ## <a name="modifying-properties-and-targets-without-changing-the-project-file"></a>프로젝트 파일을 변경하지 않고 속성 및 대상 수정
 
-파일을 변경하지 않고 MSBuild 명령 프롬프트에서 프로젝트 속성 및 대상을 재정의할 수 있습니다. 일시적으로 또는 경우에 따라 일부 속성을 적용하려는 경우에 유용합니다. MSBuild의 일부 정보를 가정합니다. 자세한 내용은 [MSBUild](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild)를 참조하세요.
+파일을 변경하지 않고 MSBuild 명령 프롬프트에서 프로젝트 속성 및 대상을 재정의할 수 있습니다. 일시적으로 또는 경우에 따라 일부 속성을 적용하려는 경우에 유용합니다. MSBuild의 일부 정보를 가정합니다. 자세한 내용은 [MSBUild](https://docs.microsoft.com/visualstudio/msbuild/msbuild)를 참조하세요.
 
 > [!IMPORTANT]
 > .props 또는 .targets 파일을 만들려면 Visual Studio의 XML 편집기 또는 모든 텍스트 편집기를 사용할 수 있습니다. **속성 관리자**가 프로젝트 파일에 속성을 추가하기 때문에 이 시나리오에서는 사용하지 마십시오.

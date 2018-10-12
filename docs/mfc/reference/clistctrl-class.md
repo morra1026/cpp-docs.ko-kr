@@ -274,12 +274,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a93294e955dcdc04b320302c573dcbbb827670d
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: c530a9853aad3e16e5e4094f4d90e30c2643c0d8
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821571"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890896"
 ---
 # <a name="clistctrl-class"></a>CListCtrl 클래스
 
@@ -457,12 +457,6 @@ class CListCtrl : public CWnd
 - 보고서 보기
 
      각 항목이 오른쪽에 열으로 정렬 하는 추가 정보를 사용 하 여 자체 줄에 나타납니다. 맨 왼쪽 열의 작은 아이콘 및 레이블 포함 하 고 후속 열 응용 프로그램에서 지정 된 대로 하위 항목을 포함 합니다. 포함 된 헤더 컨트롤 (클래스 [CHeaderCtrl](../../mfc/reference/cheaderctrl-class.md)) 이러한 열을 구현 합니다. 헤더 컨트롤 및 보고서 보기의 열에 대 한 자세한 내용은 참조 하세요. [를 사용 하 여 CListCtrl: 컨트롤 (보고서 뷰)에 열 추가](../../mfc/adding-columns-to-the-control-report-view.md)합니다.
-
-다음 항목도 참조하세요.
-
-- 기술 자료 문서 Q250614: 방법: 보고서 뷰에서 CListCtrl 항목 정렬
-
-- 기술 자료 문서 Q200054: PRB: OnTimer() 됩니다 하지 호출 반복적으로 목록 컨트롤
 
 컨트롤의 현재 목록 보기의 스타일을 현재 보기를 확인합니다. 이러한 스타일 및 해당 사용법에 대 한 자세한 내용은 참조 하세요. [를 사용 하 여 CListCtrl: 목록 컨트롤 스타일 변경](../../mfc/changing-list-control-styles.md)합니다.
 

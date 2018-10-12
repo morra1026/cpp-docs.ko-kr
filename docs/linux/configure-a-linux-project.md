@@ -1,7 +1,7 @@
 ---
 title: Visual Studio에서 C++ Linux 프로젝트 구성 | Microsoft Docs
 ms.custom: ''
-ms.date: 09/05/2018
+ms.date: 09/18/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: fbc0674a7659ffccd5ab5c655f74167acebdca97
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 17597ae7497288312b8ddcfcf53a77130fbbf2d8
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895203"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46383248"
 ---
 # <a name="configure-a-linux-project"></a>Linux 프로젝트 구성
 
@@ -33,9 +33,11 @@ Visual Studio를 사용하여 Linux 프로젝트에 대해 다양한 옵션을 �
 
 기본적으로는 실행 파일(.out)은 도구를 사용하여 빌드됩니다.  정적 또는 동적 라이브러리를 빌드하거나 기존 메이크파일을 사용하려면 **구성 형식** 선택을 사용합니다.
 
+속성 페이지의 옵션에 대한 자세한 내용은 [Linux 프로젝트 속성 페이지 참조](prop-pages-linux.md)를 참조하세요.
+
 ## <a name="remote-settings"></a>원격 설정
 
-원격 Linux 컴퓨터와 관련된 설정을 변경하려면 **일반** 설정에 표시되는 원격 옵션을 구성합니다.
+원격 Linux 컴퓨터와 관련된 설정을 변경하려면 [일반](prop-pages/general-linux.md) 설정에 표시되는 원격 옵션을 구성합니다.
 
 - 대상 Linux 컴퓨터를 변경하려면 **원격 빌드 컴퓨터** 항목을 사용합니다.  이렇게 하면 이전에 만든 연결 중 하나를 선택할 수 있습니다.  새 항목을 만들려면 [Connecting to Your Remote Linux Computer](connect-to-your-remote-linux-computer.md)(원격 Linux 컴퓨터에 연결) 섹션을 참조하세요.
 
@@ -44,11 +46,12 @@ Visual Studio를 사용하여 Linux 프로젝트에 대해 다양한 옵션을 �
 - **원격 빌드 프로젝트 디렉터리**는 원격 Linux 컴퓨터에서 이 특정 프로젝트가 빌드되는 위치입니다.  기본값은 **$(RemoteRootDir)/$(ProjectName)** 이며, 위에 설정된 루트 디렉터리 아래의 현재 프로젝트를 따라 명명된 디렉터리로 확장됩니다.
 
 > [!NOTE]
-> 프로젝트를 빌드하는 데 사용되는 기본 C 및 C++ 컴파일러 또는 링커 및 보관기를 변경하려면 **C/C++ > 일반** 섹션 및 **링커 > 일반** 섹션에서 적절한 항목을 사용합니다.  예를 들어 이러한 항목은 GCC 또는 Clang 컴파일러의 특정 버전을 사용하여 설정할 수 있습니다.
+> 프로젝트를 빌드하는 데 사용되는 기본 C 및 C++ 컴파일러 또는 링커 및 보관기를 변경하려면 **C/C++ > 일반** 섹션 및 **링커 > 일반** 섹션에서 적절한 항목을 사용합니다.  예를 들어 이러한 항목은 GCC 또는 Clang 컴파일러의 특정 버전을 사용하여 설정할 수 있습니다. 자세한 내용은 [C/C++ 속성(Linux C++)](prop-pages/c-cpp-linux.md) 및 [링커 속성(Linux C++)](prop-pages/linker-linux.md)을 참조하세요.
 
 ## <a name="include-directories-and-intellisense-support"></a>디렉터리 및 IntelliSense 지원 포함
 
-**Visual Studio 2017 버전 15.6 이상:** 기본적으로 Visual Studio에는 Linux 컴퓨터의 모든 시스템 수준 포함 파일이 포함되지 않습니다.  예를 들어 **/usr/include** 디렉터리의 항목은 Visual Studio에 없습니다.
+**Visual Studio 2017 버전 15.6 이하**:<br/>
+기본적으로 Visual Studio에는 Linux 컴퓨터의 모든 시스템 수준 포함 파일이 포함되지 않습니다.  예를 들어 **/usr/include** 디렉터리의 항목은 Visual Studio에 없습니다.
 완전한 [IntelliSense](/visualstudio/ide/using-intellisense) 지원을 위해서는, 개발 컴퓨터의 일부 위치로 해당 파일을 복사하고 Visual Studio에 이 위치를 가리켜야 합니다.  한 가지 방법은 scp(보안 복사)를 사용하여 파일을 복사합니다.  Windows 10에서 [Bash on Windows](https://msdn.microsoft.com/commandline/wsl/about)(Windows의 Bash)를 사용하여 scp를 실행할 수 있습니다.  이전 버전의 Windows에서는 [PSCP(PuTTY 보안 복사)](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)와 같은 방법을 사용할 수 있습니다.
 
 다음과 비슷한 명령을 사용하여 파일을 복사할 수 있습니다.
@@ -61,7 +64,8 @@ Visual Studio를 사용하여 Linux 프로젝트에 대해 다양한 옵션을 �
 
 ![VC++ 디렉터리](media/settings_directories.png)
 
-**Visual Studio 2017 버전 15.7 이상:** [IntelliSense용 원격 헤더 관리](#remote_intellisense)를 참조하세요.
+**Visual Studio 2017 버전 15.7 이상:**<br/>
+[IntelliSense에 대한 원격 헤더 관리](#remote_intellisense)를 참조하세요.
 
 ## <a name="copy-sources"></a>소스 복사
 
@@ -97,8 +101,8 @@ apt install zip
 
 ## <a name="see-also"></a>참고 항목
 
-[프로젝트 속성 사용](../ide/working-with-project-properties.md)  
-[C++ 일반 속성(Linux C++)](../linux/prop-pages/general-linux.md)  
-[VC++ 디렉터리(Linux C++)](../linux/prop-pages/directories-linux.md)  
-[소스 복사 프로젝트 속성(Linux C++)](../linux/prop-pages/copy-sources-project.md)  
+[프로젝트 속성 사용](../ide/working-with-project-properties.md)<br/>
+[C++ 일반 속성(Linux C++)](../linux/prop-pages/general-linux.md)<br/>
+[VC++ 디렉터리(Linux C++)](../linux/prop-pages/directories-linux.md)<br/>
+[소스 복사 프로젝트 속성(Linux C++)](../linux/prop-pages/copy-sources-project.md)<br/>
 [빌드 이벤트 속성(Linux C++)](../linux/prop-pages/build-events-linux.md)

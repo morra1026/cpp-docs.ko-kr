@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc42cd1eab4f19c8184ad500b4a4a1871747d6aa
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 9a68a0ae6392c2a9a64c9ff6c567451c2672c861
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713091"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890194"
 ---
 # <a name="dll-frequently-asked-questions"></a>DLL 관련 질문과 대답
 
@@ -39,7 +39,7 @@ ms.locfileid: "45713091"
 
 ## <a name="mfc_multithreaded_1"></a> MFC DLL 여러 스레드를 만들 수 있습니까?
 
-초기화 하는 동안 MFC DLL을 안전 하 게 스레드를 만들 수 여러으로 Win32 스레드 로컬 저장소 (TLS)와 같은 함수를 사용 하 여 제외 **TlsAlloc** 스레드 로컬 저장소를 할당 합니다. 그러나 MFC DLL을 사용 하는 경우 **__declspec (thread)** 스레드 로컬 저장소를 할당 하려면 클라이언트 응용 프로그램 해야 수 암시적으로 DLL에 연결 합니다. 클라이언트 응용 프로그램 DLL에 대 한 호출에 명시적으로 연결 하는 경우 **LoadLibrary** DLL을 성공적으로 로드 되지 것입니다. MFC Dll 내에서 여러 스레드를 만드는 방법에 대 한 자세한 내용은 기술 자료 문서 "PRB:: 호출 LoadLibrary()에 부하를 DLL는에 정적 TLS" (Q118816)를 참조 하세요. Dll의 스레드 지역 변수에 대 한 자세한 내용은 참조 하세요. [스레드](../cpp/thread.md)합니다.
+초기화 하는 동안 MFC DLL을 안전 하 게 스레드를 만들 수 여러으로 Win32 스레드 로컬 저장소 (TLS)와 같은 함수를 사용 하 여 제외 **TlsAlloc** 스레드 로컬 저장소를 할당 합니다. 그러나 MFC DLL을 사용 하는 경우 **__declspec (thread)** 스레드 로컬 저장소를 할당 하려면 클라이언트 응용 프로그램 해야 수 암시적으로 DLL에 연결 합니다. 클라이언트 응용 프로그램 DLL에 대 한 호출에 명시적으로 연결 하는 경우 **LoadLibrary** DLL을 성공적으로 로드 되지 것입니다. Dll의 스레드 지역 변수에 대 한 자세한 내용은 참조 하세요. [스레드](../cpp/thread.md)합니다.
 
 MFC DLL를 시작 하는 동안 새 MFC 스레드를 만드는 응용 프로그램에서 언로드될 때 중지 됩니다. 여기에 스레드를 호출 하 여 생성 될 때마다 `AfxBeginThread` 또는 `CWinThread::CreateThread` 내:
 
@@ -49,13 +49,11 @@ MFC DLL를 시작 하는 동안 새 MFC 스레드를 만드는 응용 프로그�
 
 - 제공 된 `DllMain` 나 **RawDllMain** MFC 확장 DLL의에서 함수입니다.
 
-초기화 하는 동안 스레드를 만드는 방법에 대 한 자세한 내용은 기술 자료 문서, "PRB:: 없습니다 만들기는 MFC 스레드 DLL 시작 하는 동안" (Q142243)을 참조 하세요.
-
 ## <a name="mfc_multithreaded_2"></a> 다중 스레드 응용 프로그램을 서로 다른 스레드에서 MFC DLL에 액세스할 수 있습니까?
 
 다중 스레드 응용 프로그램에는 서로 다른 여러 스레드에서 MFC에 동적으로 연결 된 기본 MFC Dll 및 MFC 확장명 Dll 액세스할 수 있습니다. 및 Visual c + + 4.2 버전을 기준으로 응용 프로그램 응용 프로그램에서 생성 하는 여러 스레드에서 정적으로 MFC에 링크는 기본 MFC Dll에 액세스할 수 있습니다.
 
-버전 4.2 이전 외부에 하나의 스레드만 정적으로 MFC에 링크 된 기본 MFC DLL에 연결할 수 없습니다. (이전 Visual c + + 버전 4.2) 여러 스레드에서 정적으로 MFC에 링크 되는 기본 MFC Dll에 액세스 하는 제한 사항에 대 한 자세한 내용은 기술 자료 문서를 참조 하세요. "여러 스레드 및 MFC 동적으로 링크할 수" (Q122676).
+버전 4.2 이전 외부에 하나의 스레드만 정적으로 MFC에 링크 된 기본 MFC DLL에 연결할 수 없습니다.
 
 용어 USRDLL Visual c + + 설명서에 더 이상 사용 되는 참고 합니다. 정적으로 MFC에 링크는 기본 MFC DLL은 이전의 usrdll과 같은 특징에 있습니다.
 

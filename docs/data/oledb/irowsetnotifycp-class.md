@@ -35,16 +35,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 15e00f27c5ad5d5312928bda8f73304a8417a6bc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1c6bda8180d775b49c6bfe6bc98e3ddabe535ac0
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46071824"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082843"
 ---
 # <a name="irowsetnotifycp-class"></a>IRowsetNotifyCP 클래스
 
-연결 지점 인터페이스에 대 한 공급자 사이트 구현 [IRowsetNotify](/previous-versions/windows/desktop/ms712959\(v=vs.85\))합니다.  
+연결 지점 인터페이스에 대 한 공급자 사이트 구현 [IRowsetNotify](/previous-versions/windows/desktop/ms712959)합니다.  
   
 ## <a name="syntax"></a>구문
 
@@ -96,7 +96,7 @@ class IRowsetNotifyCP :
 
 ## <a name="onfieldchange"></a> Irowsetnotifycp:: Fire_onfieldchange
 
-브로드캐스트는 [OnFieldChange](/previous-versions/windows/desktop/ms715961\(v=vs.85\)) 열의 값이 변경의 소비자에 게 알리는 이벤트를 합니다.  
+브로드캐스트는 [OnFieldChange](/previous-versions/windows/desktop/ms715961) 열의 값이 변경의 소비자에 게 알리는 이벤트를 합니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -112,11 +112,11 @@ HRESULT Fire_OnFieldChange(IRowset* pRowset,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다. 
+참조 [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961) 에 *OLE DB Programmer's Reference*합니다. 
 
 ## <a name="onrowchange"></a> Irowsetnotifycp:: Fire_onrowchange
 
-브로드캐스트는 [OnRowChange](/previous-versions/windows/desktop/ms722694\(v=vs.85\)) 연결 지점에 대해 모든 수신기에 이벤트 `IID_IRowsetNotify` 행에 영향을 미치는 변경의 소비자에 게 알립니다.  
+브로드캐스트는 [OnRowChange](/previous-versions/windows/desktop/ms722694) 연결 지점에 대해 모든 수신기에 이벤트 `IID_IRowsetNotify` 행에 영향을 미치는 변경의 소비자에 게 알립니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -131,11 +131,11 @@ HRESULT Fire_OnRowChange(IRowset* pRowset,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [irowsetnotify:: Onrowchange](/previous-versions/windows/desktop/ms722694\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+참조 [irowsetnotify:: Onrowchange](/previous-versions/windows/desktop/ms722694) 에 *OLE DB Programmer's Reference*합니다.  
 
 ## <a name="onrowsetchange"></a> Irowsetnotifycp:: Fire_onrowsetchange
 
-브로드캐스트는 [OnRowsetChange](/previous-versions/windows/desktop/ms722669\(v=vs.85\)) 연결 지점에 대해 모든 수신기에 이벤트 `IID_IRowsetNotify` 전체 행 집합에 영향을 미치는 변경의 소비자에 게 알립니다.  
+브로드캐스트는 [OnRowsetChange](/previous-versions/windows/desktop/ms722669) 연결 지점에 대해 모든 수신기에 이벤트 `IID_IRowsetNotify` 전체 행 집합에 영향을 미치는 변경의 소비자에 게 알립니다.  
   
 ### <a name="syntax"></a>구문  
   
@@ -148,7 +148,7 @@ HRESULT Fire_OnRowsetChange(IRowset* pRowset,
   
 #### <a name="parameters"></a>매개 변수  
 
-참조 [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669) 에 *OLE DB Programmer's Reference*합니다.
   
 ## <a name="see-also"></a>참고 항목  
 

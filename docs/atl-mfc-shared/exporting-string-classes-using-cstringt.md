@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5355b6e81354ef04b7cc4d2c3495289c9d1d029d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f2d77516ae53b0ee1c4f39e4d8f095848aa00acc
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444207"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48889973"
 ---
 # <a name="exporting-string-classes-using-cstringt"></a>CStringT를 사용 하 여 문자열 클래스 내보내기
 
@@ -29,7 +29,7 @@ ms.locfileid: "46444207"
 
 - 새 `CStringT` 템플릿 클래스를 사용자 지정할 수 있습니다 `CString` c + + 표준 라이브러리의 템플릿에 유사한 문자 특성을 지정 하는 템플릿 매개 변수를 사용 하 여 동작 합니다.
 
-- 사용 하 여 DLL에서 고유한 문자열 클래스를 내보내면 `CStringT`, 컴파일러도 자동으로 내보냅니다.는 `CString` 기본 클래스입니다. 하므로 `CString` 템플릿 클래스는 그 자체가 컴파일러에서 인식 하지 않는 한 컴파일러를 사용 하 여 인스턴스화할 수 있습니다는 `CString` DLL에서 가져왔습니다. 마이그레이션한 경우 프로젝트를 Visual c + + 6.0에서에서 Visual c + +.net, 보았을 링커에서 기호 오류 곱하기 정의한 `CString` 의 충돌 때문에 `CString` 로컬로 인스턴스화된 버전과 DLL에서 가져온입니다. 이 작업을 수행 하는 적절 한 방법은 아래 설명 되어 있습니다. 이 문제에 대 한 자세한 내용은 기술 자료 문서를 참조 하세요. "링크 오류 CString 파생을 가져올 때 클래스" (Q309801)에서 [ http://support.microsoft.com/default.aspx ](http://support.microsoft.com/default.aspx)합니다.
+- 사용 하 여 DLL에서 고유한 문자열 클래스를 내보내면 `CStringT`, 컴파일러도 자동으로 내보냅니다.는 `CString` 기본 클래스입니다. 하므로 `CString` 템플릿 클래스는 그 자체가 컴파일러에서 인식 하지 않는 한 컴파일러를 사용 하 여 인스턴스화할 수 있습니다는 `CString` DLL에서 가져왔습니다. 마이그레이션한 경우 프로젝트를 Visual c + + 6.0에서에서 Visual c + +.net, 보았을 링커에서 기호 오류 곱하기 정의한 `CString` 의 충돌 때문에 `CString` 로컬로 인스턴스화된 버전과 DLL에서 가져온입니다. 이 작업을 수행 하는 적절 한 방법은 아래 설명 되어 있습니다.
 
 다음 시나리오는 여러 번 정의 된 클래스에 대 한 기호 오류를 생성 하도록 링커에 발생 합니다. 내보내는 경우를 가정 된 `CString`-파생 클래스 (`CMyString`)는 MFC 확장 DLL에서에서:
 

@@ -16,16 +16,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: aef8b069e9f77b61ee0c6c26d8d9232ee139867d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a7d8f7a55379707282fd5ea9ad2063d00392d7eb
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46098918"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082620"
 ---
 # <a name="setting-properties-in-your-provider"></a>공급자에 속성 설정
 
-원하는 속성에 대 한 속성 그룹 및 속성 ID를 찾습니다. 자세한 내용은 [OLE DB 속성](/previous-versions/windows/desktop/ms722734\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.  
+원하는 속성에 대 한 속성 그룹 및 속성 ID를 찾습니다. 자세한 내용은 [OLE DB 속성](/previous-versions/windows/desktop/ms722734) 에 *OLE DB Programmer's Reference*합니다.  
   
 마법사에서 생성 된 공급자 코드에서 속성 그룹에 해당 하는 속성 맵을 찾습니다. 일반적으로 속성 그룹의 이름을 해당 개체의 이름을 합니다. 명령 또는 행 집합에서 명령 및 행 집합 속성을 찾을 수 있습니다. 데이터 원본 개체에서 데이터 원본 및 초기화 속성을 찾을 수 있습니다.  
   
@@ -33,7 +33,7 @@ ms.locfileid: "46098918"
   
 - 속성에 해당 속성 ID입니다. 속성 이름의 앞에서 처음 7 자로 ("DBPROP_")를 제거 해야 합니다. 예를 들어 추가 하려는 `DBPROP_MAXROWS`, 전달 `MAXROWS` 첫 번째 요소로 합니다. 사용자 지정 속성의 경우 전체 GUID 이름을 전달 (예를 들어 `DBMYPROP_MYPROPERTY`).  
   
-- Variant 형식의 속성 (에서 [OLE DB 속성](/previous-versions/windows/desktop/ms722734\(v=vs.85\)) 에 *OLE DB Programmer's Reference*). VT_ 형식 (예: VT_BOOL 또는 VT_I2) 해당 데이터 형식으로 입력 합니다.  
+- Variant 형식의 속성 (에서 [OLE DB 속성](/previous-versions/windows/desktop/ms722734) 에 *OLE DB Programmer's Reference*). VT_ 형식 (예: VT_BOOL 또는 VT_I2) 해당 데이터 형식으로 입력 합니다.  
   
 - 읽고 쓸 수 있는 속성 인지 및 속해 있는 그룹을 나타내는 플래그입니다. 예를 들어, 다음 코드는 행 집합 그룹에 속하는 읽기/쓰기 속성을 나타냅니다.  
   

@@ -17,12 +17,12 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 414074c6cbc7945573409923da8070eac218c91a
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 41f506f5b8b60f925cfa2270168ed7a643cf4e3b
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315653"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083543"
 ---
 # <a name="resources-for-creating-a-c-game-using-directx"></a>DirectX를 사용 하 여 c + + 게임을 만들기 위한 리소스
 
@@ -36,7 +36,7 @@ Windows 8.1 이상, DirectX SDK는 Windows SDK에 포함 됩니다. 다른 기�
 
 Windows 7, Windows Vista 또는 Windows XP용 DirectX 앱을 만들기 위해 독립 실행형 [DirectX SDK](http://www.microsoft.com/download/details.aspx?displaylang=en&id=6812)를 다운로드합니다.
 
-[DirectX 그래픽 및 게임](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx)은 DirectX 프로그래밍을 시작하는 데 도움이 되는 정보와 샘플을 가지고 있습니다.
+[DirectX 그래픽 및 게임](https://msdn.microsoft.com/library/windows/desktop/ee663274)은 DirectX 프로그래밍을 시작하는 데 도움이 되는 정보와 샘플을 가지고 있습니다.
 
 [Win32 Windows 응용 프로그램](../windows/windows-desktop-applications-cpp.md) 기본 Windows 데스크톱 앱을 만드는 방법을 설명 하는 문서가 포함 되어 있습니다.
 

@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94b989594316f2eac3e65fad2cb5bf419e7ee2eb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 03fc15cc2d2a73c0e8a1a016a2a477a5c65cdc15
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46407546"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890559"
 ---
 # <a name="mfc-activex-controls-subclassing-a-windows-control"></a>MFC ActiveX 컨트롤: Windows 컨트롤 서브클래싱
 
@@ -48,10 +48,8 @@ Windows 컨트롤의 하위 클래스를 만들려면 다음 작업을 완료 �
 
 - [컨트롤에 반영 ActiveX 제어 메시지 (OCM)를 처리 합니다.](#_core_handling_reflected_window_messages)
 
-    > [!NOTE]
-    >  이 작업의 대부분은가 수행 ActiveX 컨트롤 마법사를 사용 하 여 서브클래싱 할 컨트롤을 선택 합니다 **부모 창 클래스 선택** 드롭 다운 목록에서를 **제어 설정을** 페이지.
-
-자세한 내용은 기술 자료 문서를 Q243454 컨트롤 서브클래싱에서 참조 하십시오.
+   > [!NOTE]
+   > 이 작업의 대부분은가 수행 ActiveX 컨트롤 마법사를 사용 하 여 서브클래싱 할 컨트롤을 선택 합니다 **부모 창 클래스 선택** 드롭 다운 목록에서를 **제어 설정을** 페이지.
 
 ##  <a name="_core_overriding_issubclassedcontrol_and_precreatewindow"></a> IsSubclassedControl 및 PreCreateWindow 재정의
 

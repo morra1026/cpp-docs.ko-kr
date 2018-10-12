@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7cb8f397243bb6531f33ac5e444914cfa36e5fe1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 55b93d1ebd81850982b4f6ceac1ceb008ed1fa49
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46022638"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890285"
 ---
 # <a name="compiler-warning-level-2-c4275"></a>컴파일러 경고(수준 2) C4275
 
@@ -42,8 +42,6 @@ ms.locfileid: "46022638"
 - 클래스의 메서드가 없는 (에 관계 없이 인라인) 인스턴스화 EXE 및 DLL에 있는 정적 데이터 차이 형식을 사용할 수 있습니다.
 
 가상 함수를 사용 하 여 클래스를 정의 하 고 함수는 DLL 인스턴스화하기 위해 호출할 수를 정의 하 고 형식의 개체를 삭제 하면 클래스를 내보내지 방지할 수 있습니다.  그런 다음 가상 함수 형식에만 호출할 수 있습니다.
-
-템플릿 내보내기에 대 한 자세한 내용은 참조 하세요. [ http://support.microsoft.com/default.aspx?scid=KB; EN-US; 168958](http://support.microsoft.com/default.aspx?scid=KB;EN-US;168958)합니다.
 
 디버그 릴리스에 컴파일할 c + + 표준 라이브러리의 형식에서 파생 하는 경우 Visual c + +에서 C4275를 무시할 수 있습니다 (**/MTd**) 및 컴파일러 오류 메시지 _Container_base를 참조 하는 위치입니다.
 

@@ -101,16 +101,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a92f52f7d97e3c89de3d147c2c1b798d4af6d3a4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d0db07c8419db53d30612e6edbbe134634e37a74
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019462"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083946"
 ---
 # <a name="cdynamicparameteraccessor-class"></a>CDynamicParameterAccessor 클래스
 
-비슷합니다 [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) 를 호출 하 여 설정할 매개 변수 정보를 가져오고 있지만 합니다 [ICommandWithParameters](/sql/relational-databases/native-client-ole-db-interfaces/icommandwithparameters) 인터페이스입니다.
+[CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) 와 유사하지만 [ICommandWithParameters](/sql/relational-databases/native-client-ole-db-interfaces/icommandwithparameters) 인터페이스를 호출하여 설정한 매개 변수 정보를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -323,7 +323,7 @@ DBSTATUS* GetParamStatus(DBORDINAL nParam) const throw();
 [in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 참조 [SetParam](../../data/oledb/cdynamicparameteraccessor-setparam.md) 예입니다.  
   
 *pStatus*<br/>
-[out] 지정된 된 매개 변수의 DBSTATUS 상태가 들어 있는 변수에 대 한 포인터입니다. DBSTATUS 값에 대 한 자세한 내용은 [상태](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) 에 *OLE DB Programmer's Reference*, 또는 DBSTATUS oledb.h에서 검색 합니다.  
+[out] 지정된 된 매개 변수의 DBSTATUS 상태가 들어 있는 변수에 대 한 포인터입니다. DBSTATUS 값에 대 한 자세한 내용은 [상태](/previous-versions/windows/desktop/ms722617) 에 *OLE DB Programmer's Reference*, 또는 DBSTATUS oledb.h에서 검색 합니다.  
   
 ### <a name="remarks"></a>설명  
 
@@ -435,7 +435,7 @@ bool SetParam(TCHAR* pParamName,
 [in] 버퍼에 쓸 데이터를 포함 하는 메모리에 대 한 포인터입니다.  
   
 *status*<br/>
-[in] DBSTATUS 열 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 [상태](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) 에 *OLE DB Programmer's Reference*, 또는 DBSTATUS oledb.h에서 검색 합니다.  
+[in] DBSTATUS 열 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 [상태](/previous-versions/windows/desktop/ms722617) 에 *OLE DB Programmer's Reference*, 또는 DBSTATUS oledb.h에서 검색 합니다.  
   
 ### <a name="return-value"></a>반환 값  
 
@@ -483,7 +483,7 @@ bool SetParamStatus(DBORDINAL nParam,
 [in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 참조 [SetParam](../../data/oledb/cdynamicparameteraccessor-setparam.md) 예입니다.  
   
 *status*<br/>
-[in] 지정된 된 매개 변수의 DBSTATUS 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 [상태](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) 에 *OLE DB Programmer's Reference*, 또는 DBSTATUS oledb.h에서 검색 합니다.  
+[in] 지정된 된 매개 변수의 DBSTATUS 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 [상태](/previous-versions/windows/desktop/ms722617) 에 *OLE DB Programmer's Reference*, 또는 DBSTATUS oledb.h에서 검색 합니다.  
   
 ### <a name="remarks"></a>설명  
 
@@ -512,7 +512,7 @@ bool SetParamString(DBORDINAL nParam,
 [in] ANSI에 대 한 포인터 (**CHAR**) 또는 유니코드 (**WCHAR**) 문자열 데이터의 지정된 된 매개 변수입니다. Oledb.h에서 DBSTATUS를 참조 하세요.  
   
 *status*<br/>
-[in] 지정된 된 매개 변수의 DBSTATUS 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 [상태](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) 에 *OLE DB Programmer's Reference*, 또는 DBSTATUS oledb.h에서 검색 합니다.  
+[in] 지정된 된 매개 변수의 DBSTATUS 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 [상태](/previous-versions/windows/desktop/ms722617) 에 *OLE DB Programmer's Reference*, 또는 DBSTATUS oledb.h에서 검색 합니다.  
   
 ### <a name="remarks"></a>설명  
 

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5fa8370bb02e71c457f7967d5cb6b508e743333e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: abc9af657e790fcedf949719776581b5c1877e89
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46373937"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48889993"
 ---
 # <a name="mfc-activex-controls-creating-an-automation-server"></a>MFC ActiveX 컨트롤: 자동화 서버 만들기
 
@@ -33,7 +33,7 @@ ms.locfileid: "46373937"
 
 1. [메서드 추가](../mfc/mfc-activex-controls-methods.md)합니다.
 
-1. 재정의 [IsInvokeAllowed](../mfc/reference/colecontrol-class.md#isinvokeallowed)합니다. 자세한 내용은 기술 자료 문서 Q146120를 참조 하세요.
+1. 재정의 [IsInvokeAllowed](../mfc/reference/colecontrol-class.md#isinvokeallowed)합니다.
 
 1. 컨트롤을 빌드하십시오.
 

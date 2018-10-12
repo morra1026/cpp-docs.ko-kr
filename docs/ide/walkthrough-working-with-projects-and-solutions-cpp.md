@@ -1,7 +1,7 @@
 ---
 title: '연습: 프로젝트 및 솔루션 작업(C++) | Microsoft Docs'
 ms.custom: ''
-ms.date: 12/13/2017
+ms.date: 09/14/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f62b2317669949473c8b0e68ad4410a3d9b03806
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 56b5e41872ebe4b3cdc4800d7818cceb05f03dd1
+ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33339137"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48235154"
 ---
 # <a name="walkthrough-working-with-projects-and-solutions-c"></a>연습: 프로젝트 및 솔루션 작업(C++)
 
@@ -42,13 +42,16 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
 
 ### <a name="to-create-a-project"></a>프로젝트를 만들려면
 
-1. 메뉴 모음에서 **파일 > 새로 만들기 > 프로젝트**를 차례로 선택합니다.
+1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
 1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **설치됨**을 확장하고, 아직 열려 있지 않은 경우 **Visual C++** 를 선택합니다.
 
 1. 가운데 창의 설치된 템플릿 목록에서 **Windows 콘솔 응용 프로그램**을 선택합니다.
 
-1. **이름** 상자에 프로젝트의 이름을 입력합니다. 이 예에서는 **Game**을 입력합니다.
+   > [!NOTE]
+   > 이전 버전의 Visual Studio에서는 설치된 템플릿을 **Win32 콘솔 응용 프로그램**이라고 합니다.
+
+1. **이름** 상자에 프로젝트의 이름을 입력합니다. 이 예에서는 *Game*을 입력합니다.
 
    **위치** 드롭다운 목록에서 기본 위치를 적용하거나 다른 위치를 입력하거나 **찾아보기** 단추를 선택하여 프로젝트를 저장할 디렉터리를 찾아볼 수 있습니다.
 
@@ -66,9 +69,9 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
 
 ### <a name="to-add-a-class-to-a-project"></a>프로젝트에 클래스를 추가하려면
 
-1. **솔루션 탐색기** 창이 Visual Studio에 표시되지 않으면 메뉴 모음에서 **보기 > 솔루션 탐색기**를 선택합니다.
+1. **솔루션 탐색기** 창이 Visual Studio에 표시되지 않으면 메뉴 모음에서 **보기** > **솔루션 탐색기**를 선택합니다.
 
-1. **솔루션 탐색기**에서 **Game** 프로젝트를 선택합니다. 메뉴 모음에서 **프로젝트 > 클래스 추가**를 선택합니다.
+1. **솔루션 탐색기**에서 **Game** 프로젝트를 선택합니다. 메뉴 모음에서 **프로젝트** > **클래스 추가**를 선택합니다.
 
 1. **클래스 추가** 대화 상자에서 **클래스 이름** 상자에 *Cardgame*을 입력합니다. 기본 파일 이름과 설정을 수정하지 마십시오. **확인** 단추를 선택합니다.
 
@@ -88,17 +91,15 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
 
       `Cardgame();`
 
-      이 생성자를 수정하여 *players*라고 명명된 `int` 형식의 매개 변수 하나를 사용합니다.
+      생성자를 수정하여 *players*라고 명명된 `int` 형식의 매개 변수 하나를 사용합니다.
 
-      <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#101](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_2.h)]-->
-      `Cardgame(int players);`
+      <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#101](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_2.h)]--> `Cardgame(int players);`
 
    - 기본 소멸자 뒤에 매개 변수를 사용하지 않고 `totalParticipants` 값을 반환하는 *GetParticipants*라는 `static int` 멤버 함수에 대한 인라인 선언을 추가합니다.
 
-      <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#102](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_3.h)]-->
-      `static int GetParticipants() { return totalParticipants; }`
+      <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#102](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_3.h)]--> `static int GetParticipants() { return totalParticipants; }`
 
-   변경한 후 Cardgame.h 파일은 다음과 유사합니다.
+   변경한 후 Cardgame.h 파일은 아래 코드와 유사합니다.
 
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#103](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_4.h)]-->
    ```cpp
@@ -109,12 +110,12 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
        static int totalParticipants;
    public:
        Cardgame(int players);
-       ~Cardgame(void);
+       ~Cardgame();
        static int GetParticipants() { return totalParticipants; }
    };
    ```
 
-   `#pragma once` 줄은 컴파일러에 헤더 파일을 한 번만 포함하도록 지시합니다. 자세한 내용은 [once](../preprocessor/once.md)를 참조하세요. 이 헤더 파일에 포함된 다른 C++ 키워드에 대한 자세한 내용은 [class](../cpp/class-cpp.md), [int](../cpp/fundamental-types-cpp.md), [static](../cpp/storage-classes-cpp.md) 및 [public](../cpp/public-cpp.md)을 참조하세요.
+   `#pragma once` 줄은 컴파일러에 헤더 파일을 한 번만 포함하도록 지시합니다. 자세한 내용은 [once](../preprocessor/once.md)를 참조하세요. 위의 헤더 파일에 포함된 다른 C++ 키워드에 대한 자세한 내용은 [class](../cpp/class-cpp.md), [int](../cpp/fundamental-types-cpp.md), [static](../cpp/storage-classes-cpp.md) 및 [public](../cpp/public-cpp.md)을 참조하세요.
 
 1. 편집 창 맨 위에 있는 **Cardgame.cpp** 탭을 선택하여 편집할 수 있도록 엽니다.
 
@@ -122,7 +123,7 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
 
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#111](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_5.cpp)]-->
    ```cpp
-   #include "stdafx.h"
+   #include "pch.h"
    #include "Cardgame.h"
    #include <iostream>
 
@@ -144,7 +145,7 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
    ```
 
    > [!NOTE]
-   > 코드를 입력할 때 자동 완성 기능을 사용할 수 있습니다. 예를 들어 키보드에서 이 코드를 입력한 경우 *pl* 또는 *tot*를 입력한 다음, Ctrl+스페이스바를 누릅니다. 자동 완성 기능이 `players` 또는 `totalParticipants`를 자동으로 입력합니다.
+   > 코드를 입력할 때 자동 완성 기능을 사용할 수 있습니다. 예를 들어 키보드에서 이 코드를 입력한 경우 *pl* 또는 *tot*를 입력한 다음, **Ctrl**+**스페이스바**를 누릅니다. 자동 완성 기능이 `players` 또는 `totalParticipants`를 자동으로 입력합니다.
 
 ## <a name="add-test-code-to-your-main-function"></a>main 함수에 테스트 코드 추가
 
@@ -152,14 +153,14 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
 
 ### <a name="to-add-test-code-to-the-project"></a>테스트 코드를 프로젝트에 추가하려면
 
-1. Game.cpp 편집기 창에서 기존 코드를 다음과 같이 바꿉니다.
+1. **Game.cpp** 편집기 창에서 기존 코드를 다음과 같이 바꿉니다.
 
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#120](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_6.cpp)]-->
    ```cpp
    // Game.cpp : Defines the entry point for the console application.
    //
 
-   #include "stdafx.h"
+   #include "pch.h"
    #include "Cardgame.h"
    #include <iostream>
 
@@ -179,7 +180,7 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
        return 0;
    }
    ```
-이 코드는 소스 코드에 테스트 함수 `PlayGames`를 추가하고, `main`에서 호출합니다. 
+이 코드는 소스 코드에 테스트 함수 `PlayGames`를 추가하고, `main`에서 호출합니다.
 
 ## <a name="build-and-run-your-app-project"></a>앱 프로젝트 빌드 및 실행
 
@@ -187,17 +188,17 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
 
 ### <a name="to-build-and-run-the-project"></a>프로젝트를 빌드하여 실행하려면
 
-1. 메뉴 모음에서 **빌드 > 솔루션 빌드**를 선택합니다.
+1. 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다.
 
    빌드의 출력이 **출력** 창에 표시됩니다. 빌드가 성공한 경우 출력은 다음과 같습니다.
 
    ```Output
    1>------ Build started: Project: Game, Configuration: Debug Win32 ------
-   1>  stdafx.cpp
-   1>  Game.cpp
-   1>  Cardgame.cpp
-   1>  Generating Code...
-   1>  Game.vcxproj -> C:\Users\username\Source\Repos\Game\Debug\Game.exe
+   1>pch.cpp
+   1>Cardgame.cpp
+   1>Game.cpp
+   1>Generating Code...
+   1>Game.vcxproj -> C:\Users\<username>\source\repos\Game\Debug\Game.exe
    ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
    ```
 
@@ -205,7 +206,7 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
 
    빌드가 실패한 경우 코드를 이전 단계에서 표시된 코드와 비교합니다.
 
-1. 프로젝트를 실행하려면 메뉴 모음에서 **디버그 > 디버깅하지 않고 시작**을 선택합니다. 콘솔 창이 나타나고 출력이 다음과 유사해야 합니다.
+1. 프로젝트를 실행하려면 메뉴 모음에서 **디버그** > **디버그하지 않고 시작**을 선택합니다. 콘솔 창이 나타나고 출력은 다음과 같습니다.
 
    ```Output
    4 players have started a new game.  There are now 4 players in total.
@@ -219,10 +220,10 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
 
 ## <a name="next-steps"></a>다음 단계
 
-**이전:** [C++ 데스크톱 개발에 Visual Studio IDE 사용](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).  
-**다음:** [연습: 프로젝트 빌드(C++)](../ide/walkthrough-building-a-project-cpp.md).
+**이전:** [C++ 데스크톱 개발에 Visual Studio IDE 사용](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)<br/>
+**다음:** [연습: 프로젝트 빌드(C++)](../ide/walkthrough-building-a-project-cpp.md)<br/>
 
 ## <a name="see-also"></a>참고 항목
 
-[C++ 언어 참조](../cpp/cpp-language-reference.md)  
-[C/C++ 프로그램 빌드](../build/building-c-cpp-programs.md)
+[C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
+[C/C++ 프로그램 빌드](../build/building-c-cpp-programs.md)<br/>

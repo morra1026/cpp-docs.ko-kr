@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 238f26e8955d4be676c3bf37f7cc8b2d842b3de9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 82aaa2dc43177963b9b38c398e74aaa0ffff11dd
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46394454"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821220"
 ---
 # <a name="vc-directories-property-page-windows"></a>VC++ 디렉터리 속성 페이지
 
@@ -76,11 +76,13 @@ Visual Studio에서 *프로젝트 속성*에 익숙한 경우 먼저 [프로젝�
 
 매크로 및 가능하면 하드코딩된 경로 대신에 매크로를 사용해야 하는 이유에 대한 자세한 내용은 [프로젝트 속성 사용](../ide/working-with-project-properties.md#bkmkPropertiesVersusMacros)을 참조하세요.
 
-자주 사용되는 매크로의 목록은 [빌드 명령 및 속성에 대한 일반적인 매크로](https://docs.microsoft.com/en-us/cpp/ide/common-macros-for-build-commands-and-properties)를 참조하세요.
+자주 사용되는 매크로의 목록은 [빌드 명령 및 속성에 대한 일반적인 매크로](https://docs.microsoft.com/cpp/ide/common-macros-for-build-commands-and-properties)를 참조하세요.
 
 다음과 같은 두 가지 방법으로 고유한 매크로를 정의할 수 있습니다.
--   개발자 명령 프롬프트에서 환경 변수를 설정합니다. 모든 환경 변수는 MSBuild 속성/매크로로 처리됩니다.
--   .props 파일에서 사용자 매크로를 정의합니다. 자세한 내용은 [속성 페이지 매크로](working-with-project-properties.md#bkmkPropertiesVersusMacros)를 참조하세요.
+
+- 개발자 명령 프롬프트에서 환경 변수를 설정합니다. 모든 환경 변수는 MSBuild 속성/매크로로 처리됩니다.
+
+- .props 파일에서 사용자 매크로를 정의합니다. 자세한 내용은 [속성 페이지 매크로](working-with-project-properties.md#bkmkPropertiesVersusMacros)를 참조하세요.
 
 자세한 내용은 [VC++ 디렉터리](http://blogs.msdn.com/b/vsproject/archive/2009/07/07/vc-directories.aspx), [상속된 속성 및 속성 시트](http://blogs.msdn.com/b/vsproject/archive/2009/06/23/inherited-properties-and-property-sheets.aspx) 및 [Visual Studio 2010 C++ 프로젝트 업그레이드 가이드](http://blogs.msdn.com/b/vcblog/archive/2010/03/02/visual-studio-2010-c-project-upgrade-guide.aspx) 블로그 게시물을 참조하세요.
 

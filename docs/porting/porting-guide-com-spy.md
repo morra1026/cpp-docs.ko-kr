@@ -12,14 +12,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 434acbaa23826636a221deb77f1930283e43e9de
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: d8a4278d89727f47e85d20809060fc8cef421998
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42578183"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46427214"
 ---
 # <a name="porting-guide-com-spy"></a>포팅 가이드: COM Spy
+
 이 항목은 이전 Visual C++ 프로젝트를 최신 버전의 Visual Studio로 업그레이드하는 프로세스를 보여 주는 일련의 문서 중 두 번째입니다. 이 항목의 예제 코드는 Visual Studio 2005를 사용하여 마지막으로 컴파일되었습니다.  
   
 ## <a name="comspy"></a>COMSpy  
@@ -175,6 +176,6 @@ private void button1_Click(object sender, EventArgs e)
   
 ## <a name="see-also"></a>참고 항목  
 
-[포팅 및 업그레이드: 예제 및 사례 연구](../porting/porting-and-upgrading-examples-and-case-studies.md)   
-[다음 예제: Spy++](../porting/porting-guide-spy-increment.md)   
+[포팅 및 업그레이드: 예제 및 사례 연구](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
+[다음 예제: Spy++](../porting/porting-guide-spy-increment.md)<br/>
 [이전 예제: MFC Scribble](../porting/porting-guide-mfc-scribble.md)

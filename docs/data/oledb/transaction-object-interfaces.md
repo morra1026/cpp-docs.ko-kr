@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 88b6884ff8543b3aa6ec329330563fbe1ad27b8e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: caf57ab85b7a37b8e43230dc9bcf1caf031f7a78
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46071590"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083790"
 ---
 # <a name="transaction-object-interfaces"></a>트랜잭션 개체 인터페이스
 
@@ -36,8 +36,8 @@ ms.locfileid: "46071590"
 |인터페이스|필수 여부|OLE DB 템플릿에서 구현 되었습니까?|  
 |---------------|---------------|--------------------------------------|  
 |[IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)|필수|아니요|  
-|[ITransaction](/previous-versions/windows/desktop/ms723053\(v=vs.85\))|필수|아니요|  
-|[ISupportErrorInfo](/previous-versions/windows/desktop/ms715816\(v=vs.85\))|Optional|아니요|  
+|[ITransaction](/previous-versions/windows/desktop/ms723053)|필수|아니요|  
+|[ISupportErrorInfo](/previous-versions/windows/desktop/ms715816)|Optional|아니요|  
   
 ## <a name="see-also"></a>참고 항목  
 

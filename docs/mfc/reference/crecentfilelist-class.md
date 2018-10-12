@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a6ac97eaa55dde337068e450c0223b4ec4409f8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1394c3c614d80a07bfea7f411576d5b303d67da8
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393310"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890610"
 ---
 # <a name="crecentfilelist-class"></a>CRecentFileList 클래스
 
@@ -78,10 +78,6 @@ class CRecentFileList
 ## <a name="remarks"></a>설명
 
 파일에 추가 하거나 최근에 사용한 파일 목록에서 삭제할 수, 파일 목록에서 읽거나 수 레지스트리에 기록 된 또는 합니다. INI 파일 및 최근에 사용한 파일 목록을 표시 하 고 메뉴를 업데이트할 수 있습니다.
-
-MRU 메뉴 항목에 대 한 자세한 내용은 참조 하세요.
-
-- 기술 자료 문서 Q243751: 방법: MFC 응용 프로그램의 MRU 메뉴 항목에 대 한 명령 처리기 추가
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 

@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 172ead8aa67f042512a73b8c0d1ecdaa0723c5d1
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 1e74ed975cce0ac3a87716d9f7ad00da2d75d509
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43676547"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48820681"
 ---
 # <a name="visual-c-help-and-community"></a>Visual C++ 도움말 및 커뮤니티
 
@@ -34,7 +34,7 @@ ms.locfileid: "43676547"
 |제목|설명|
 |-----------|-----------------|
 |[Visual C++](visual-cpp-in-visual-studio.md)|Visual C++에 대한 참조 및 개념 설명서를 포함합니다. MSDN Library의 일부입니다.|
-|[Windows 개발자 센터](https://developer.microsoft.com/en-us/windows/)|C++ 및 기타 언어를 사용하여 Windows 8용 앱을 개발하는 방법에 대한 정보를 포함합니다. Windows 개발자 센터의 일부이며, C++ 콘텐츠는 문서 > 언어 참조 노드 아래에 있습니다.|
+|[Windows 개발자 센터](https://developer.microsoft.com/windows/)|C++ 및 기타 언어를 사용하여 Windows 8용 앱을 개발하는 방법에 대한 정보를 포함합니다. Windows 개발자 센터의 일부이며, C++ 콘텐츠는 문서 > 언어 참조 노드 아래에 있습니다.|
 
 ### <a name="online-and-offline-documentation"></a>온라인 및 오프라인 설명서
 

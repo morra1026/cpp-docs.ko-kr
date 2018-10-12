@@ -110,12 +110,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ca5b649ba5d09d0406658112b8067ed804f7e70
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 81ecc91d8c942a36920368bdb4054ffc2145478d
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423938"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890727"
 ---
 # <a name="cricheditview-class"></a>CRichEditView 클래스
 
@@ -470,8 +470,6 @@ virtual HMENU GetContextMenu(
 기본 구현은 NULL을 반환합니다. 이 고급 재정의할 수 있습니다.
 
 자세한 내용은 [IRichEditOleCallback::GetContextMenu](/windows/desktop/api/richole/nf-richole-iricheditolecallback-getcontextmenu) 하 고 [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) Windows SDK의 합니다.
-
-대 한 자세한 내용은 합니다 `OLEOBJECT` 형식에서 OLE 데이터 구조 및 구조 할당 문서를 참조 하십시오 합니다 *OLE 기술 자료*합니다.
 
 ##  <a name="getdocument"></a>  CRichEditView::GetDocument
 

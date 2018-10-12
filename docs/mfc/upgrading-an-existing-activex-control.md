@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ddf4b505689521fbdfd702eb1944ac0779f16bf
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dc5bca0f7ff1b2fdb2650eadbcdca4778d9b53ef
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409573"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890362"
 ---
 # <a name="upgrading-an-existing-activex-control"></a>기존 ActiveX 컨트롤 업그레이드
 
@@ -56,7 +56,7 @@ ms.locfileid: "46409573"
 
 ##  <a name="_core_packaging_code_for_downloading"></a> 다운로드 패키징 코드
 
-이 주제에 대 한 자세한 내용은 기술 자료 문서 "패키징 MFC 컨트롤에 대 한 사용 하 여 인터넷을 통해" (Q167158)을 참조 하세요. 기술 자료 문서를 찾을 수 있습니다 [ http://support.microsoft.com/support ](http://support.microsoft.com/support)합니다.
+이 주제에 대 한 자세한 내용은 참조 하세요. [패키징 ActiveX 컨트롤](https://docs.microsoft.com//previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa751974%28v%3dvs.85%29)합니다.
 
 ### <a name="the-codebase-tag"></a>코드 베이스 태그
 
@@ -94,7 +94,7 @@ CODEBASE="http://example.microsoft.com/acontrol.cab#version=1,
 
 ### <a name="creating-cab-files"></a>CAB 파일 만들기
 
-기술 자료 문서에서 캐비닛 개발 키트를 다운로드할 수 있습니다 [310618: Microsoft 캐비닛 소프트웨어 개발 키트](http://go.microsoft.com/fwlink/p/?linkid=148204)합니다. 이 키트에서 캐비닛 파일을 생성 하는 데 필요한 도구를 찾을 수 있습니다.
+캐비닛 파일을 만들기 위한 도구를 지금의 일부인 합니다 [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)합니다.
 
 캐비닛 파일에서 가리키는 `CODEBASE` ActiveX 컨트롤에 대 한.ocx 파일 및 해당 설치를 제어 하는.inf 파일을 포함 해야 합니다. 사용자 컨트롤 파일의 이름을 지정 하 여 캐비닛 파일 및.inf 파일을 만듭니다. 이 캐비닛 파일 시스템에 이미 있을 수 있는 종속 Dll을 포함 하지 않습니다. 예를 들어, MFC Dll 별도 캐비닛 파일에 패키지 되 고 제어.inf 파일에서 참조 합니다.
 

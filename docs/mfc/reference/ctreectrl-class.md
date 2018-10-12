@@ -172,12 +172,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f1294517a49687a2fc94b1bb696a111a9f55da7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 98dfdc792341d215830d46d078d9ece69419efed
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403970"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890844"
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl Class
 
@@ -292,8 +292,6 @@ class CTreeCtrl : public CWnd
 - [CTreeCtrl 사용](../../mfc/using-ctreectrl.md)
 
 - [트리 뷰 컨트롤 참조](/windows/desktop/Controls/tree-view-control-reference) Windows SDK에에서 있습니다.
-
-- 기술 자료 문서 Q222905: 방법: CTreeCtrl에 대 한 상황에 맞는 메뉴 표시
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 

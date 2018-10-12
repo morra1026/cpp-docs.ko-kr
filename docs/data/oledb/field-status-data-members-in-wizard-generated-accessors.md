@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e289e2f40326142894894dad1bfe34c801889bb3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b1c48f4699c0add937c2bcdb13d49bce8cb895c4
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46066858"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49083966"
 ---
 # <a name="field-status-data-members-in-wizard-generated-accessors"></a>마법사 생성 접근자의 필드 상태 데이터 멤버
 
@@ -86,7 +86,7 @@ END_COLUMN_MAP()
   
 또한 특정 필드에 NULL 값을 설정 하는 상태 값을 사용할 수 있습니다. 이렇게 하면 0이 아닌 NULL로 필드 값을 구분 하고자 하는 경우에 도움이 됩니다. 유효한 값 또는 특수 한 값을 NULL 인지 여부를 결정 하 고 응용 프로그램 처리 해야 하는 방법을 결정 하는 것입니다. OLE DB 일반 NULL 값을 지정 하는 올바른 수단으로 DBSTATUS_S_ISNULL을 정의 합니다. 소비자 데이터를 읽고, 값이 null, status 필드 DBSTATUS_S_ISNULL에 설정 됩니다. 소비자를 NULL 값을 설정 하려는 소비자는 공급자를 호출 하기 전에 상태 값을 DBSTATUS_S_ISNULL을 설정 합니다.  
   
-다음으로, Oledb.h를 열고 검색할 `DBSTATUSENUM`합니다. 숫자 값에 대해 0이 아닌 상태를 일치 시킬 수 있습니다는 `DBSTATUSENUM` 열거형 값입니다. 열거형 이름 무엇이 알리는 충분 하지 않으면 "데이터 값 바인딩" 섹션에서 "상태" 항목을 참조 합니다 [OLE DB Programmer's Guide](/previous-versions/windows/desktop/ms713643\(v=vs.85\))합니다. 이 항목의 상태 값을 가져오거나 데이터를 설정할 때 사용 되는 테이블을 포함 합니다. 길이 값에 대 한 내용은 동일한 섹션에서 "Length" 항목을 참조 합니다.  
+다음으로, Oledb.h를 열고 검색할 `DBSTATUSENUM`합니다. 숫자 값에 대해 0이 아닌 상태를 일치 시킬 수 있습니다는 `DBSTATUSENUM` 열거형 값입니다. 열거형 이름 무엇이 알리는 충분 하지 않으면 "데이터 값 바인딩" 섹션에서 "상태" 항목을 참조 합니다 [OLE DB Programmer's Guide](/previous-versions/windows/desktop/ms713643)합니다. 이 항목의 상태 값을 가져오거나 데이터를 설정할 때 사용 되는 테이블을 포함 합니다. 길이 값에 대 한 내용은 동일한 섹션에서 "Length" 항목을 참조 합니다.  
   
 ## <a name="retrieving-the-length-or-status-of-a-column"></a>길이 또는 열의 상태를 검색합니다.  
 

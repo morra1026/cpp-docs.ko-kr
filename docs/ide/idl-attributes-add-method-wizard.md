@@ -17,52 +17,54 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea2f0cd3ae445c4804738567b5bd9265363995e3
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ce9042a980190bf1fe3da06fb4a9843f73294dee
+ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45705171"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46398848"
 ---
 # <a name="idl-attributes-add-method-wizard"></a>IDL 특성, 메서드 추가 마법사
-이 메서드에 대한 IDL(인터페이스 정의 언어) 설정을 지정하려면 이 메서드 추가 마법사 페이지를 사용합니다.  
-  
+
+이 메서드에 대한 IDL(인터페이스 정의 언어) 설정을 지정하려면 이 메서드 추가 마법사 페이지를 사용합니다.
+
 - **ID**
 
-   메서드를 식별하는 숫자 ID를 설정합니다. *MIDL 참조*에서 [id](/windows/desktop/Midl/id)를 확인합니다.  
-  
-   이 상자는 사용자 지정 인터페이스에는 사용할 수 없으며 MFC dispinterface에 사용할 수 없습니다.  
-  
+   메서드를 식별하는 숫자 ID를 설정합니다. *MIDL 참조*에서 [id](/windows/desktop/Midl/id)를 확인합니다.
+
+   이 상자는 사용자 지정 인터페이스에는 사용할 수 없으며 MFC dispinterface에 사용할 수 없습니다.
+
 - **call_as**
 
-   이 로컬 메서드를 매핑할 수 있는 원격 메서드의 이름을 지정합니다. *MIDL 참조*에서 [call_as](/windows/desktop/Midl/call-as)를 확인합니다.  
-  
-   MFC dispinterface에는 사용할 수 없습니다.  
-  
+   이 로컬 메서드를 매핑할 수 있는 원격 메서드의 이름을 지정합니다. *MIDL 참조*에서 [call_as](/windows/desktop/Midl/call-as)를 확인합니다.
+
+   MFC dispinterface에는 사용할 수 없습니다.
+
 - **helpcontext**
 
-   도움말 파일에서 사용자가 이 메서드에 대한 정보를 볼 수 있는 컨텍스트 ID를 지정합니다. *MIDL 참조*에서 [helpcontext](/windows/desktop/Midl/helpcontext)를 확인합니다.  
-  
-   MFC dispinterface에는 사용할 수 없습니다.  
-  
+   도움말 파일에서 사용자가 이 메서드에 대한 정보를 볼 수 있는 컨텍스트 ID를 지정합니다. *MIDL 참조*에서 [helpcontext](/windows/desktop/Midl/helpcontext)를 확인합니다.
+
+   MFC dispinterface에는 사용할 수 없습니다.
+
 - **helpstring**
 
-   적용되는 요소를 설명하는 데 사용되는 문자열을 지정합니다. 기본적으로 "메서드 *메서드 이름*"으로 설정됩니다. *MIDL 참조*에서 [helpstring](/windows/desktop/Midl/helpstring)을 확인합니다.  
-  
-   MFC dispinterface에는 사용할 수 없습니다.  
-  
+   적용되는 요소를 설명하는 데 사용되는 문자열을 지정합니다. 기본적으로 "메서드 *메서드 이름*"으로 설정됩니다. *MIDL 참조*에서 [helpstring](/windows/desktop/Midl/helpstring)을 확인합니다.
+
+   MFC dispinterface에는 사용할 수 없습니다.
+
 - **추가 특성**
 
-   MFC dispinterface에는 사용할 수 없습니다.  
-  
-   |특성|설명|  
-   |---------------|-----------------|  
-   |**hidden**|메서드가 존재하지만 사용자 기반 브라우저에는 표시되지 않습니다. *MIDL 참조*에서 [hidden](/windows/desktop/Midl/hidden)을 확인합니다.|  
-   |**source**|메서드의 멤버가 이벤트의 소스입니다. *MIDL 참조*에서 [source](/windows/desktop/Midl/source)를 확인합니다.|  
-   |`local`|메서드가 원격이 아니라고 MIDL 컴파일러에 지정합니다. *MIDL 참조*에서 [local](/windows/desktop/Midl/local)을 확인합니다.|  
-   |**restricted**|메서드를 임의로 호출할 수 없도록 지정합니다. *MIDL 참조*에서 [restricted](/windows/desktop/Midl/restricted)를 확인합니다.|  
-   |**vararg**|메서드가 가변 개수의 인수를 사용하도록 지정합니다. 이 작업을 수행하려면 마지막 인수는 나머지 인수를 모두 포함하는 안전한 **VARIANT** 형식의 배열이어야 합니다. *MIDL 참조*에서 [vararg](/windows/desktop/Midl/vararg)를 확인합니다.|  
-  
-## <a name="see-also"></a>참고 항목  
- [메서드 추가](../ide/adding-a-method-visual-cpp.md)   
- [메서드 추가 마법사](../ide/add-method-wizard.md)
+   MFC dispinterface에는 사용할 수 없습니다.
+
+   |특성|설명|
+   |---------------|-----------------|
+   |**hidden**|메서드가 존재하지만 사용자 기반 브라우저에는 표시되지 않습니다. *MIDL 참조*에서 [hidden](/windows/desktop/Midl/hidden)을 확인합니다.|
+   |**source**|메서드의 멤버가 이벤트의 소스입니다. *MIDL 참조*에서 [source](/windows/desktop/Midl/source)를 확인합니다.|
+   |`local`|메서드가 원격이 아니라고 MIDL 컴파일러에 지정합니다. *MIDL 참조*에서 [local](/windows/desktop/Midl/local)을 확인합니다.|
+   |**restricted**|메서드를 임의로 호출할 수 없도록 지정합니다. *MIDL 참조*에서 [restricted](/windows/desktop/Midl/restricted)를 확인합니다.|
+   |**vararg**|메서드가 가변 개수의 인수를 사용하도록 지정합니다. 이 작업을 수행하려면 마지막 인수는 나머지 인수를 모두 포함하는 안전한 **VARIANT** 형식의 배열이어야 합니다. *MIDL 참조*에서 [vararg](/windows/desktop/Midl/vararg)를 확인합니다.|
+
+## <a name="see-also"></a>참고 항목
+
+[메서드 추가](../ide/adding-a-method-visual-cpp.md)<br>
+[메서드 추가 마법사](../ide/add-method-wizard.md)

@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1e331401a3a2a789b13bc21b76c9b1cbfcb30e33
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 308e84a84c39399c93d270ba4662b3b0f593e42d
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318502"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082490"
 ---
 # <a name="finding-a-string-resource-c"></a>문자열 리소스 (c + +) 찾기
 
@@ -47,7 +47,7 @@ ms.locfileid: "44318502"
    > [!TIP]
    > 파일을 검색할 때 정규식을 사용 하려면 사용 합니다 **파일에서 찾기** 명령입니다. 정규식 패턴과 일치 하거나 오른쪽의 단추 클릭을 입력 합니다 **찾을 내용** 정규 검색 식의 목록을 표시 하려면 상자입니다. 검색 텍스트로 대체 식을이 목록에서를 선택 하면 합니다 **찾을 내용** 상자입니다. 정규식을 사용 하는 경우는 **사용: Regular Expressions** 확인란을 선택 합니다.
 
-(대상으로 하는 공용 언어 런타임) 관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리 되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대 한 내용은 참조 하세요 [연습: Windows Forms 지역화](/previous-versions/visualstudio/visual-studio-2010/y99d1cd3\(v=vs.100\))합니다.
+(대상으로 하는 공용 언어 런타임) 관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리 되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대 한 내용은 참조 하세요 [연습: Windows Forms 지역화](/previous-versions/visualstudio/visual-studio-2010/y99d1cd3)합니다.
 
 ## <a name="requirements"></a>요구 사항
 

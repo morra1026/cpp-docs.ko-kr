@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bda3bcbd8686d985406842a4b7a64536616ae8ac
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fdbbda6956e3265e7b17aa63ea26ac760b1fda5a
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419556"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890623"
 ---
 # <a name="cdialog-class"></a>CDialog 클래스
 
@@ -133,11 +133,7 @@ A `CDialog` 개체는 대화 상자 템플릿의 조합 및 `CDialog`-클래스�
 
 모덜리스 대화 상자를 구현 하는 경우 항상 재정의 합니다 `OnCancel` 멤버 함수 및 호출 `DestroyWindow` 에서 그 합니다. 기본 클래스를 호출 하지 마세요 `CDialog::OnCancel`를 호출 하므로, `EndDialog`, 대화 상자를 보이지 않도록 됩니다 있지만 삭제 하지 것입니다. 또한 재정의 해야 `PostNcDestroy` 삭제 하려면 모덜리스 대화 상자에 대 한 **이**모덜리스 대화 상자는 일반적으로 사용 하 여 할당 되므로 **새**합니다. 모달 대화 상자 프레임에 일반적으로 생성 되 고 필요가 없습니다 `PostNcDestroy` 정리 합니다.
 
-에 대 한 자세한 `CDialog`를 참조 하세요.
-
-- [대화 상자](../../mfc/dialog-boxes.md)
-
-- 기술 자료 문서 Q262954: 방법: 스크롤 막대를 사용 하 여 크기 대화 상자 만들기
+에 대 한 자세한 `CDialog`를 참조 하세요 [대화 상자](../../mfc/dialog-boxes.md)합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -281,7 +277,7 @@ DLGINIT 리소스를 가리킵니다.
 
 사용 합니다 `CWnd::DestroyWindow` 함수에서 만든 대화 상자를 제거 하는 `CreateIndirect` 함수입니다.
 
-ActiveX 컨트롤을 포함 하는 대화 상자에는 DLGINIT 리소스에서 제공 하는 추가 정보가 필요 합니다. 자세한 내용은 기술 자료 문서 Q231591를을 참조 하세요. "방법: ActiveX 컨트롤을 사용 하 여 MFC 대화 상자를 만들려면 대화 상자 템플릿을 사용 합니다." 기술 자료 문서에서 제공 됩니다 [ http://support.microsoft.com ](http://support.microsoft.com/)합니다.
+ActiveX 컨트롤을 포함 하는 대화 상자에는 DLGINIT 리소스에서 제공 하는 추가 정보가 필요 합니다.
 
 ##  <a name="domodal"></a>  CDialog::DoModal
 
@@ -410,7 +406,7 @@ DLGINIT 리소스를 가리킵니다.
 
 모달 대화 상자를 직접 만들려면 전역 메모리 블록을 할당 및 대화 상자 템플릿을 사용 하 여 입력 합니다. 그런 다음 호출 하는 빈 `CDialog` 대화 상자 개체를 생성 하는 생성자입니다. 그런 다음 호출 `InitModalIndirect` 메모리 내 대화 상자 템플릿에 핸들을 저장 합니다. Windows 대화 상자 생성 되어 표시 나중 합니다 [DoModal](#domodal) 멤버 함수를 호출 합니다.
 
-ActiveX 컨트롤을 포함 하는 대화 상자에는 DLGINIT 리소스에서 제공 하는 추가 정보가 필요 합니다. 자세한 내용은 기술 자료 문서 Q231591를을 참조 하세요. "방법: ActiveX 컨트롤을 사용 하 여 MFC 대화 상자를 만들려면 대화 상자 템플릿을 사용 합니다." 기술 자료 문서에서 제공 됩니다 [ http://support.microsoft.com ](http://support.microsoft.com/)합니다.
+ActiveX 컨트롤을 포함 하는 대화 상자에는 DLGINIT 리소스에서 제공 하는 추가 정보가 필요 합니다.
 
 ##  <a name="mapdialogrect"></a>  CDialog::MapDialogRect
 

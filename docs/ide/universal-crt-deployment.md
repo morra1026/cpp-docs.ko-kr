@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 20006118d4bf27c379b78b84dc8807a4fd6c5e6c
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: b7fe21753dc4310752c1081d17ddff942bcbd89f
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34256292"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48820999"
 ---
 # <a name="universal-crt-deployment"></a>범용 CRT 배포
 
@@ -29,7 +29,7 @@ Visual Studio 2013을 통해 Visual Studio .NET에서 C++ 컴파일러 및 도�
 
 ## <a name="central-deployment"></a>중앙 배포
 
-중앙에 범용 CRT를 설치하기 위해 선호하는 메서드는 Microsoft Windows Update를 사용하는 것입니다. 범용 CRT는 지원되는 모든 Microsoft Windows 운영 체제에 대해 권장되는 업데이트이므로 기본적으로 대부분의 컴퓨터가 정기 업데이트 프로세스의 일부로 를 이를 설치합니다. 범용 CRT의 초기 릴리스가 [KB2999226](https://support.microsoft.com/en-us/kb/2999226)이었고, 다양한 버그가 수정된 이후 업데이트는 [KB3118401](https://support.microsoft.com/en-us/kb/3118401)에서 이뤄졌으며, 추가 버그 수정과 새 기능을 통한 추가 업데이트가 있습니다. 최신 업데이트는 [support.microsoft.com](https://support.microsoft.com)에서 유니버설 C 런타임 또는 범용 CRT를 검색합니다.
+중앙에 범용 CRT를 설치하기 위해 선호하는 메서드는 Microsoft Windows Update를 사용하는 것입니다. 범용 CRT는 지원되는 모든 Microsoft Windows 운영 체제에 대해 권장되는 업데이트이므로 기본적으로 대부분의 컴퓨터가 정기 업데이트 프로세스의 일부로 를 이를 설치합니다. 범용 CRT의 초기 릴리스가 [KB2999226](https://support.microsoft.com/kb/2999226)이었고, 다양한 버그가 수정된 이후 업데이트는 [KB3118401](https://support.microsoft.com/kb/3118401)에서 이뤄졌으며, 추가 버그 수정과 새 기능을 통한 추가 업데이트가 있습니다. 최신 업데이트는 [support.microsoft.com](https://support.microsoft.com)에서 유니버설 C 런타임 또는 범용 CRT를 검색합니다.
 
 일부 Microsoft Windows 컴퓨터는 Windows Update를 사용하여 정기적으로 업데이트를 설치하고, 일부는 모든 권장 업데이트를 설치하지 않을 수도 있습니다. 이러한 컴퓨터에서 Visual Studio 2015 및 최신 C++ 도구 집합을 사용하여 빌드된 응용 프로그램의 사용을 지원하려면 오프라인 배포에 사용할 수 있는 범용 CRT 재배포 가능 패키지가 있습니다. 위의 KB 링크 중 하나에서 이러한 재배포 가능 패키지를 다운로드할 수 있습니다. 범용 CRT 재배포 가능 패키지는 컴퓨터가 현재 서비스 팩으로 업데이트될 것을 요구합니다. 따라서 예를 들어 Windows 7용 재배포 가능 패키지는 Windows 7 RTM이 아닌 Windows 7 SP1에만 설치됩니다.
 
