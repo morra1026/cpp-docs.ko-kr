@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1f7d94dafa34c5ab01dfbcf28e2c429642dbf68
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d6f0e5ce08e362cef0fd625036a92c1d13885ded
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397317"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821545"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ 변경 기록 2003 - 2015
 
@@ -2966,7 +2966,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 ### <a name="mfc-and-atl"></a>MFC 및 ATL
 
-- **Visual Studio 2013만 해당**: 유니코드가 일반화되고 MBCS의 사용이 크게 줄었기 때문에 MFC MBCS 라이브러리는 Visual Studio에 포함되지 않습니다. 여러 새로운 컨트롤과 메시지가 유니코드 전용이기 때문에 이 변경으로 인해 MFC는 Windows SDK 자체와 보다 밀접한 관계로 유지됩니다. 그러나 MFC MBCS 라이브러리를 계속 사용해야 하는 경우 MSDN 다운로드 센터의 [Visual Studio 2013용 멀티바이트 MFC 라이브러리](https://www.microsoft.com/en-us/download/details.aspx?id=40770)에서 다운로드할 수 있습니다. Visual C++ 재배포 가능 패키지에는 이 라이브러리가 계속 포함됩니다.  (참고: MBCS DLL은 Visual Studio 2015 이상의 C++ 설치 구성 요소에 포함됩니다).
+- **Visual Studio 2013만 해당**: 유니코드가 일반화되고 MBCS의 사용이 크게 줄었기 때문에 MFC MBCS 라이브러리는 Visual Studio에 포함되지 않습니다. 여러 새로운 컨트롤과 메시지가 유니코드 전용이기 때문에 이 변경으로 인해 MFC는 Windows SDK 자체와 보다 밀접한 관계로 유지됩니다. 그러나 MFC MBCS 라이브러리를 계속 사용해야 하는 경우 MSDN 다운로드 센터의 [Visual Studio 2013용 멀티바이트 MFC 라이브러리](https://www.microsoft.com/download/details.aspx?id=40770)에서 다운로드할 수 있습니다. Visual C++ 재배포 가능 패키지에는 이 라이브러리가 계속 포함됩니다.  (참고: MBCS DLL은 Visual Studio 2015 이상의 C++ 설치 구성 요소에 포함됩니다).
 
 - MFC 리본에 대한 접근성이 변경되었습니다.  한 수준의 아키텍처 대신 이제 계층적 아키텍처가 있습니다. `CRibbonBar::EnableSingleLevelAccessibilityMode()`를 호출하여 기존 동작을 계속 사용할 수 있습니다.
 
