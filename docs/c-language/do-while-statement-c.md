@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef670aca60b2e3156ea70480a1dafc315ae60624
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4b86fa6444889f77b306e4ae543e7d2db41d721b
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46061478"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860682"
 ---
 # <a name="do-while-statement-c"></a>do-while 문 (C)
 
@@ -38,7 +38,7 @@ ms.locfileid: "46061478"
 
 1. 문 본문이 실행됩니다.
 
-2. 다음으로, *expression*이 평가됩니다. *expression*이 false인 경우 *do-while* 문이 종료되고 프로그램의 다음 문으로 제어가 전달됩니다. *expression*이 true(0이 아님)인 경우에는 프로세스가 1단계부터 반복됩니다.
+1. 다음으로, *expression*이 평가됩니다. *expression*이 false인 경우 *do-while* 문이 종료되고 프로그램의 다음 문으로 제어가 전달됩니다. *expression*이 true(0이 아님)인 경우에는 프로세스가 1단계부터 반복됩니다.
 
 *do-while* 문은 문 본문 내에서 **break**, **goto** 또는 **return** 문이 실행되는 경우에도 종료될 수 있습니다.
 
