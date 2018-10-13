@@ -1,35 +1,32 @@
 ---
 title: Visual Studio의 Visual C++ | Microsoft Docs
+description: Visual C++는 Visual Studio IDE에 있는 Microsoft C++ 컴파일러, 코드 편집기 및 관련 도구의 이름입니다. Visual C++를 사용하여 Windows, Linux, Android 및 iOS 프로그램을 개발합니다.
 ms.custom: ''
-ms.date: 08/22/2018
+ms.date: 09/26/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- unmanaged code, C++
-- development environment, Visual C++
-- unmanaged code
-- Visual C++
-- Visual C++, reference
+- Visual C++, home page
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6116a1b27595c6400edfcb79daafb362fb7aec5f
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: ae68abc0768c0a06526af6439a8a881684ecdb15
+ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43684493"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48821295"
 ---
 # <a name="visual-c-in-visual-studio"></a>Visual Studio의 Visual C++
 
 > [!NOTE]  
 > 이 개발자 설명서는 Visual Studio 2015 및 Visual Studio 2017에 적용됩니다. 
 
-> 프로그램을 실행할 수 있도록 Visual C++ 재배포 가능 패키지를 찾고 있다면 [Microsoft 다운로드 센터](http://www.microsoft.com/en-us/download/)로 이동하여 검색 상자에 **Visual C++** 를 입력합니다.  
+> 프로그램을 실행할 수 있도록 Visual C++ 재배포 가능 패키지를 찾고 있다면 [Microsoft 다운로드 센터](http://www.microsoft.com/download/)로 이동하여 검색 상자에 **Visual C++** 를 입력합니다.  
   
 
 일반적으로 Visual C++ 또는 MSVC라고 줄여부르는 Microsoft Visual C++는 C++, C 및 어셈블리 언어 개발 도구 및 Windows에서 Visual Studio의 일부로 사용할 수 있는 라이브러리의 이름입니다. 이러한 도구 및 라이브러리를 통해 UWP(유니버설 Windows 플랫폼) 앱, 네이티브 Windows 데스크톱 및 서버 응용 프로그램, Windows, Linux, Android 및 iOS에서 실행되는 플랫폼 간 라이브러리 및 앱뿐만 아니라 .NET Framework를 사용하는 관리 앱 및 라이브러리를 만들 수 있습니다. Visual C++를 사용하여 간단한 콘솔 앱 항목부터 Windows 데스크톱용 가장 정교하고 복잡한 앱, 장치 드라이버 및 운영 체제 구성 요소부터 모바일 장치용 플랫폼 간 게임, 가장 작은 IoT 장치부터 Azure 클라우드의 다중 서버 성능 컴퓨팅 기능을 작성할 수 있습니다.
@@ -81,10 +78,20 @@ C++를 배우기 시작합니다.
 
 ## <a name="c-development-tools"></a>C++ 개발 도구
 
-[IDE 및 개발 도구](ide/ide-and-tools-for-visual-cpp-development.md)
-Visual Studio IDE를 사용하여 프로젝트 만들기, 소스 코드 파일 사용, 라이브러리에 연결, 컴파일, 디버그, 단위 테스트 만들기, 정적 분석 수행, 배포 등의 작업을 수행하는 방법
+[IDE 및 개발 도구](ide/ide-and-tools-for-visual-cpp-development.md)<br/>
+Visual Studio IDE를 사용하여 프로젝트 만들기, 코드 편집, 라이브러리에 연결, 컴파일, 디버그, 단위 테스트 만들기, 정적 분석 수행, 배포 등의 작업을 수행하는 방법입니다.
 
-[컴파일러 및 빌드 도구](build/building-c-cpp-programs.md) Microsoft C++ 컴파일러 및 링커 옵션, 오류 메시지, 명령줄 예제, 다양한 플랫폼 구성 및 참조 항목 빌드 
+[컴파일러 및 빌드 도구](build/building-c-cpp-programs.md)<br/>
+Microsoft C++ 컴파일러 및 링커 옵션, 오류 메시지, 명령줄 예제, 다양한 플랫폼 구성 및 빌드 참조 항목입니다.
+
+[네이티브 코드 디버그](/visualstudio/debugger/debugging-native-code)<br/>
+C++ 프로젝트에서 Visual Studio 디버거를 사용합니다.
+
+[C/C++용 코드 분석 개요](/visualstudio/code-quality/code-analysis-for-c-cpp-overview)<br/>
+SAL 주석 또는 C++ Core Guidelines 검사 프로그램을 사용하여 정적 분석을 수행합니다.
+
+[Visual Studio에서 C/C++에 대한 단위 테스트 작성](/visualstudio/test/writing-unit-tests-for-c-cpp)<br/>
+C++, Google Test, Boost.Test 또는 CTest에 대한 Microsoft 유닛 테스트 프레임워크를 사용하여 단위 테스트를 만듭니다.
 
 ## <a name="write-applications-in-c"></a>C++에서 응용 프로그램 작성
 
@@ -94,9 +101,11 @@ Windows 개발자 센터의 가이드 및 참조 내용을 알아봅니다. UWP 
 [데스크톱 응용 프로그램(C++)](windows/desktop-applications-visual-cpp.md)<br/>
 Windows용 기존 네이티브 C++ 데스크톱 응용 프로그램을 만드는 방법을 알아봅니다.
 
-[C++/CLI를 사용하여 .NET 프로그래밍](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md) C# 또는 Visual Basic과 같은 언어로 작성된 네이티브 C++ 및 .NET 프로그램 간의 상호 운용성을 활성화하는 DLL을 만드는 방법을 알아봅니다.
+[C++/CLI를 사용한 .NET 프로그래밍](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
+C# 또는 Visual Basic과 같은 언어로 작성된 네이티브 C++ 및 .NET 프로그램 간의 상호 운용성을 활성화하는 DLL을 만드는 방법을 알아봅니다.
 
-[Linux 프로그래밍](linux/index.md) Visual Studio IDE를 사용하여 GCC로 컴파일을 위해 원격 Linux 머신으로 코딩 및 배포합니다.
+[Linux 프로그래밍](linux/index.md)<br/>
+Visual Studio IDE를 사용하여 GCC로 컴파일을 위해 원격 Linux 머신으로 코딩 및 배포합니다.
 
 [Visual C++의 DLL](build/dlls-in-visual-cpp.md)<br/>
 Win32, ATL 및 MFC를 사용하여 Windows 데스크톱 DLL을 만드는 방법을 설명하고 DLL을 컴파일 및 등록하는 방법에 대해 알아봅니다.
@@ -116,11 +125,15 @@ ODBC 및 기타 데이터베이스 액세스 기술을 사용하여 데이터베
 [텍스트 및 문자열](text/text-and-strings-in-visual-cpp.md)<br/>
 현지 및 국제적 개발을 위한 다양한 텍스트 및 문자열 형식과 인코딩을 사용하는 방법을 알아봅니다.
 
-## <a name="c-language-reference"></a>C++ 언어 참조
+## <a name="languages-reference"></a>언어 참조
 
-C++ 언어에 대한 자세한 내용은 [C++ Language Reference](cpp/cpp-language-reference.md)를 참조하세요.
+[C++ 언어 참조](cpp/cpp-language-reference.md)
 
-C++ 전처리기에 대한 자세한 내용은 [C/C++ Preprocessor Reference](preprocessor/c-cpp-preprocessor-reference.md)를 참조하세요.
+[ 전처리기 참조](preprocessor/c-cpp-preprocessor-reference.md)
+
+[C# 언어 참조](c-language/c-language-reference.md)
+
+[컴파일러 내장 및 어셈블리 언어](intrinsics/compiler-intrinsics-and-assembly-language.md)
 
 ## <a name="c-libraries-in-visual-studio"></a>Visual Studio의 C++ 라이브러리
 

@@ -25,12 +25,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5c9af03549eec7b62cc34aec2840764c54d2a21e
-ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
+ms.openlocfilehash: e2dae7809a5926fa93626fa33148d444fe12807b
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494363"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161894"
 ---
 # <a name="modulereleasenotifier-class"></a>Module::ReleaseNotifier 클래스
 
@@ -56,7 +56,7 @@ class ReleaseNotifier;
 이름                                                         | 설명
 ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------
 [Module:: releasenotifier:: 호출](#releasenotifier-invoke)   | 구현될 때 모듈의 마지막 개체가 해제되면 이벤트 처리기를 호출합니다.
-[Module::ReleaseNotifier::Release](#releasenotifier-release) | 현재 삭제 `Module::ReleaseNotifier` 개체의 매개 변수를 사용 하 여 생성 된 경우 개체 `true`합니다.
+[Module::ReleaseNotifier::Release](#releasenotifier-release) | 현재 삭제 `Module::ReleaseNotifier` 개체의 매개 변수를 사용 하 여 생성 된 개체 **true**합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -86,7 +86,7 @@ virtual void Invoke() = 0;
 
 ## <a name="releasenotifier-release"></a>Module::ReleaseNotifier::Release
 
-현재 삭제 `Module::ReleaseNotifier` 개체의 매개 변수를 사용 하 여 생성 된 경우 개체 `true`합니다.
+현재 삭제 `Module::ReleaseNotifier` 개체의 매개 변수를 사용 하 여 생성 된 개체 **true**합니다.
 
 ```cpp
 void Release() throw();
