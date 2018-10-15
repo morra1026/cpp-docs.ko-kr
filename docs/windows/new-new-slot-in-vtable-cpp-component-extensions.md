@@ -1,7 +1,7 @@
 ---
-title: 새 (새 vtable의 슬롯) (c + + 구성 요소 확장) | Microsoft Docs
+title: 새 (새 vtable의 슬롯) (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b5dc0f490da43b4a2a2befa22f2902e7bfce51ca
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 48351903b7827f4ad9e6d63824658e4f44e047e0
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420922"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327741"
 ---
-# <a name="new-new-slot-in-vtable--c-component-extensions"></a>new(vtable의 새 슬롯)(C++ 구성 요소 확장)
+# <a name="new-new-slot-in-vtable--ccli-and-ccx"></a>새 (새 vtable의 슬롯) (C + + /cli 및 C + + /cli CX)
 
 합니다 **새** 키워드를 가상 멤버가 vtable의 new 슬롯을 얻게 되며 나타냅니다.
 
@@ -115,5 +115,6 @@ E::f() called
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)<br/>
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)<br/>
+
 [Override 지정자](../windows/override-specifiers-cpp-component-extensions.md)

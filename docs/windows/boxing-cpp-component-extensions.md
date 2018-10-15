@@ -1,7 +1,7 @@
 ---
-title: Boxing (c + + 구성 요소 확장) | Microsoft Docs
+title: Boxing (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,16 +15,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 92dc2032031fd0f3032db57b9eca8c723367da9e
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: b11ac2f6b640e42c14522b45fe0c3da89036ae24
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316720"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328014"
 ---
-# <a name="boxing--c-component-extensions"></a>Boxing(C++ 구성 요소 확장)
+# <a name="boxing--ccli-and-ccx"></a>Boxing (C + + /cli 및 C + + /cli CX)
 
-Visual c + + 컴파일러 라는 프로세스에서 개체 값 형식을 변환할 수 *boxing*, 및 개체 값의에서 형식으로 변환 이라는 프로세스 *unboxing*합니다.
+개체에 값 형식의 변환 이라고 *boxing*, 값 형식 개체의 변환 이라고 *unboxing*합니다.
 
 ## <a name="all-runtimes"></a>모든 런타임
 
@@ -86,7 +86,7 @@ void BlankPage::OnNavigatedTo(NavigationEventArgs^ e)
 
 ## <a name="common-language-runtime"></a>공용 언어 런타임
 
-Visual C++ 컴파일러에서는 값 형식을 <xref:System.Object>로 boxing합니다. 값 형식을 <xref:System.Object>로 변환하는 컴파일러에서 정의된 변환 때문에 이 작업이 가능합니다.
+컴파일러 상자 값 형식을 <xref:System.Object>합니다. 값 형식을 <xref:System.Object>로 변환하는 컴파일러에서 정의된 변환 때문에 이 작업이 가능합니다.
 
 Boxing 및 unboxing을 통해 값 형식으로 개체로 처리할 수 있습니다. 구조체 형식 및 int와 같은 기본 제공 형식을 비롯하여 값 형식을 <xref:System.Object> 형식으로 변환하거나 그 반대로 변환할 수 있습니다.
 
@@ -200,4 +200,4 @@ in func2(System::ValueType^)
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

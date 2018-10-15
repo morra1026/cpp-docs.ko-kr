@@ -21,16 +21,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa840b2fd6e143715c924d0f7ac67e78eb8306a4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3ca548fec9a70a04b0bdb9a5169021fc43f149eb
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417548"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328547"
 ---
 # <a name="csize-class"></a>CSize 클래스
 
-Windows 비슷합니다 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 상대 좌표 또는 위치를 구현 하는 구조입니다.
+상대 좌표 또는 위치를 구현하는 Windows [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조체와 유사합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -100,7 +100,7 @@ CSize( DWORD dwSize) throw();
 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 나 `CSize` 개체를 초기화 하는 데 `CSize`합니다.
 
 *initPt*  
-[지점](../../mfc/reference/point-structure1.md) 구조 나 `CPoint` 개체를 초기화 하는 데 `CSize`합니다.
+[지점](../../mfc/reference/point-structure.md) 구조 나 `CPoint` 개체를 초기화 하는 데 `CSize`합니다.
 
 *dwSize*  
 DWORD 초기화 하는 데 `CSize`합니다. 하위 단어를 `cx` 멤버 이며 상위 단어를 `cy` 멤버입니다.

@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 566164f40f8795c8402b04c9c25e13dda036961d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 50295c9d296449e36ed4a305b568d2e0aaed10a3
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765439"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327910"
 ---
 # <a name="classes-shared-by-mfc-and-atl"></a>MFC와 ATL에서 공유 하는 클래스
 
@@ -33,8 +33,8 @@ ms.locfileid: "43765439"
 |[CImage](../../atl-mfc-shared/reference/cimage-class.md)|향상 된 비트맵 지원, 로드 및 JPEG, GIF, BMP, 및 PNG 이동식 네트워크 그래픽 () 형식 이미지를 저장 하는 기능을 포함 하 여 제공 합니다.|atlimage.h|
 |[COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md)|OLE 자동화에 사용 되는 날짜 데이터 형식을 캡슐화 합니다.|atlcomtime.h|
 |[COleDateTimeSpan](../../atl-mfc-shared/reference/coledatetimespan-class.md)|상대 시간을 시간 범위를 나타냅니다.|atlcomtime.h|
-|[CPoint](../../atl-mfc-shared/reference/cpoint-class.md)|클래스는 Windows 비슷합니다 [지점](../../mfc/reference/point-structure1.md) 도 조작 하는 멤버 함수를 포함 하는 구조 `CPoint` 및 `POINT` 구조입니다.|atltypes.h|
-|[CRect](../../atl-mfc-shared/reference/crect-class.md)|클래스는 Windows 비슷합니다 [RECT](../../mfc/reference/rect-structure1.md) 도 조작 하는 멤버 함수를 포함 하는 구조 `CRect` 개체 및 Windows `RECT` 구조입니다.|atltypes.h|
+|[CPoint](../../atl-mfc-shared/reference/cpoint-class.md)|클래스는 Windows 비슷합니다 [지점](../../mfc/reference/point-structure.md) 도 조작 하는 멤버 함수를 포함 하는 구조 `CPoint` 및 `POINT` 구조입니다.|atltypes.h|
+|[CRect](../../atl-mfc-shared/reference/crect-class.md)|클래스는 Windows 비슷합니다 [RECT](../../mfc/reference/rect-structure.md) 도 조작 하는 멤버 함수를 포함 하는 구조 `CRect` 개체 및 Windows `RECT` 구조입니다.|atltypes.h|
 |[CSimpleStringT](../../atl-mfc-shared/reference/csimplestringt-class.md)|나타냅니다는 `CSimpleStringT` 개체입니다.|atlsimpstr.h|
 |[CSize](../../atl-mfc-shared/reference/csize-class.md)|상대 좌표 또는 위치를 구현 하는 Windows 크기 구조와 비슷한 하는 클래스입니다.|atltypes.h|
 |[CStrBufT](../../atl-mfc-shared/reference/cstrbuft-class.md)|자동 리소스 정리를 제공 `GetBuffer` 하 고 `ReleaseBuffer` 호출을 기존 `CStringT` 개체입니다.|atlsimpstr.h|

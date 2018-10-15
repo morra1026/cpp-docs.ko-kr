@@ -1,7 +1,7 @@
 ---
-title: 상황에 맞는 키워드 (c + + 구성 요소 확장) | Microsoft Docs
+title: 상황에 맞는 키워드 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -17,14 +17,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 785836f575c0dec3a0e08c32063116f01e16d4fe
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5d02939e61da4a247b46da5637c38d01e7990c49
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605241"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327936"
 ---
-# <a name="context-sensitive-keywords--c-component-extensions"></a>상황에 맞는 키워드(C++ 구성 요소 확장)
+# <a name="context-sensitive-keywords--ccli-and-ccx"></a>상황에 맞는 키워드 (C + + /cli 및 C + + /cli CX)
 
 *상황에 맞는 키워드* 는 특정 컨텍스트에서만에서 인식 되는 언어 요소입니다. 특정 컨텍스트가 아닐 경우 상황에 맞는 키워드는 사용자 정의 기호일 수 있습니다.
 
@@ -48,7 +48,7 @@ ms.locfileid: "42605241"
 
 - `internal`
 
-- [리터럴](../windows/literal-cpp-component-extensions.md)
+- [name](../windows/literal-cpp-component-extensions.md)
 
 - [override](../windows/override-cpp-component-extensions.md)
 
@@ -111,4 +111,4 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

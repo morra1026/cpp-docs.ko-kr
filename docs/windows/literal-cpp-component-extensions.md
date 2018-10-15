@@ -1,7 +1,7 @@
 ---
-title: 리터럴 (c + + 구성 요소 확장) | Microsoft Docs
+title: 리터럴 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -18,14 +18,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 76a57261b28679c4f05b677dc7b49008535c921b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8168b3cd981bb288df35659ffd3520a7c8597d1e
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596448"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328072"
 ---
-# <a name="literal-c-component-extensions"></a>리터럴(C++ 구성 요소 확장명)
+# <a name="literal-ccli-and-ccx"></a>리터럴 (C + + /cli 및 C + + /cli CX)
 
 변수 (데이터 멤버)로 표시 **리터럴** 에 **/clr** 해당 하는 네이티브 컴파일이 **정적 const** 변수.
 
@@ -59,7 +59,7 @@ ms.locfileid: "42596448"
 
 **리터럴** 상황에 맞는 키워드입니다. 참조 [상황에 맞는 키워드](../windows/context-sensitive-keywords-cpp-component-extensions.md) 자세한 내용은 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 예에서는 한 **리터럴** 변수에 의미 **정적**합니다.
 
@@ -75,7 +75,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 샘플에서는 메타데이터에서 리터럴의 영향을 보여 줍니다.
 
@@ -98,7 +98,7 @@ public ref struct A {
 .field public static literal int32 lit = int32(0x0000000A)  
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 샘플에서는 C#에서 작성 된 이전 샘플에서 만든 메타 데이터를 참조 하 고 영향을 보여 줍니다 **리터럴** 하 고 **정적 const** 변수:
 
@@ -137,4 +137,4 @@ class B {
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

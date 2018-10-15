@@ -1,7 +1,7 @@
 ---
 title: '방법: 내부 포인터 및 관리 되는 배열 선언 및 사용 (C + + /cli CLI) | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 691b2606e6b479937394c2ba021934e8f98b0fe5
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: c0c34b43451f8e62583450998efa8e74000807b4
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599084"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328118"
 ---
 # <a name="how-to-declare-and-use-interior-pointers-and-managed-arrays-ccli"></a>방법: 내부 포인터 및 관리되는 배열 선언 및 사용(C++/CLI)
 
@@ -30,7 +30,7 @@ ms.locfileid: "42599084"
 > [!IMPORTANT]
 > 이 언어 기능은 `/clr` 컴파일러 옵션에서 지원하지만 `/ZW` 컴파일러 옵션에서는 지원하지 않습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ### <a name="code"></a>코드
 

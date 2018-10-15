@@ -1,7 +1,7 @@
 ---
 title: 가변 인수 목록 (...) (C + + /CLI CLI) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -16,23 +16,23 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e58b7ea2d8db0c3d36ad36aaccbf23957c449a77
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0e95f963636e50bdf453835ee920463e6e266a2a
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590465"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327806"
 ---
 # <a name="variable-argument-lists--ccli"></a>가변 인수 목록(...)(C++/CLI)
 
-사용 하는 방법을 보여 주는이 예제는 `...` Visual c + + 가변 개수의 인수를 갖는 함수를 구현 하는 구문입니다.
+사용 하는 방법을 보여 주는이 예제는 `...` 구문은 C + + 가변 개수의 인수를 갖는 함수를 구현 하는 CLI입니다.
 
 > [!NOTE]
 > 이 항목에서는 관련 된 C + + /cli CLI입니다. 사용에 관한 정보를 `...` ISO 표준 c + +에서 참조 [Ellipses 및 Variadic 템플릿](../cpp/ellipses-and-variadic-templates.md) 줄임표 및 기본 인수에 [후 위 식](../cpp/postfix-expressions.md)합니다.
 
 매개 변수를 사용 하는 `...` 매개 변수 목록의 마지막 매개 변수 여야 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ### <a name="code"></a>코드
 

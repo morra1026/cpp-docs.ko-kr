@@ -1,7 +1,7 @@
 ---
-title: 제네릭 (c + + 구성 요소 확장) | Microsoft Docs
+title: 제네릭 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -18,37 +18,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 121d3bf1fd7d59f36362a034216e0728b2fc25b0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8bb0c6bc3459ff0b86200502b1a31ee341078280
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448352"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327677"
 ---
-# <a name="generics--c-component-extensions"></a>제네릭(C++ 구성 요소 확장명)
+# <a name="generics--ccli-and-ccx"></a>제네릭 (C + + /cli 및 C + + /cli CX)
 
-제네릭은 매개 변수화된 형식 및 메서드입니다. 이 섹션에서는 Windows 런타임 및 공용 언어 런타임에서 모두 지원되거나 공용 언어 런타임에서만 지원되는 제네릭 기능을 확인할 수 있습니다. 또한 Visual C++에서 고유한 제네릭 메서드 및 형식을 작성하는 방법과 Visual C++에서 .NET Framework 언어로 작성한 제네릭 형식을 사용하는 방법을 확인할 수 있습니다. 마지막으로 이 섹션에서는 제네릭 및 C++ 템플릿의 비교를 제공합니다.
+제네릭은 매개 변수화된 형식 및 메서드입니다. 이 섹션에서는 Windows 런타임 및 공용 언어 런타임에서 모두 지원되거나 공용 언어 런타임에서만 지원되는 제네릭 기능을 확인할 수 있습니다. 또한 C + 고유한 형식과 제네릭 메서드를 작성 하는 방법에 대해 알아봅니다 + CLI 및 C +의.NET Framework 언어로 작성 한 제네릭 형식을 사용 하는 방법을 + CLI입니다. 마지막으로 이 섹션에서는 제네릭 및 C++ 템플릿의 비교를 제공합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
 ### <a name="supported-by-the-windows-runtime-and-the-common-language-runtime"></a>Windows 런타임 및 공용 언어 런타임에서 지원
 
-[Visual C++의 제네릭 개요](../windows/overview-of-generics-in-visual-cpp.md)<br/>
+[C +의 제네릭 개요 + CLI](../windows/overview-of-generics-in-visual-cpp.md)<br/>
 제네릭에 대한 정보, 언어 기능에 대한 동기, 제네릭을 설명하는 데 사용되는 용어의 정의 및 제네릭에 대한 형식 매개 변수로서 참조 형식과 값 형식의 사용에 대한 정보.
 
-[제네릭 인터페이스(Visual C++)](../windows/generic-interfaces-visual-cpp.md)<br/>
+[제네릭 인터페이스 (C + + /cli CLI)](../windows/generic-interfaces-visual-cpp.md)<br/>
 제네릭 인터페이스의 정의 및 사용에 대한 정보.
 
-[제네릭 대리자(Visual C++)](../windows/generic-delegates-visual-cpp.md)<br/>
+[제네릭 대리자 (C + + /cli CLI)](../windows/generic-delegates-visual-cpp.md)<br/>
 제네릭 대리자의 정의 및 사용에 대한 정보.
 
 [제네릭 형식 매개 변수에 대한 제약 조건(C++/CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)<br/>
 제네릭 형식의 제약 조건 사용에 대한 정보.
 
 [제네릭 사용(C++/CLI)](../windows/consuming-generics-cpp-cli.md)<br/>
-Visual C++에서 다른 언어로 작성되었을 수 있는 .NET 어셈블리에 정의된 제네릭 사용에 대한 정보.
+C + 다른 언어로 작성 되었을 수 있는.NET 어셈블리에 정의 된 제네릭 사용에 대 한 정보 + CLI입니다.
 
-[제네릭 및 템플릿(Visual C++)](../windows/generics-and-templates-visual-cpp.md)<br/>
+[제네릭 및 템플릿 (C + + /cli CLI)](../windows/generics-and-templates-visual-cpp.md)<br/>
 제네릭 및 템플릿의 비교, 개별로 사용해야 할 때와 유용하게 결합하는 방법.
 
 ### <a name="supported-by-the-common-language-runtime"></a>공용 언어 런타임에서 지원
@@ -66,4 +66,4 @@ Visual C++에서 다른 언어로 작성되었을 수 있는 .NET 어셈블리�
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

@@ -1,7 +1,7 @@
 ---
 title: 제네릭 함수 (C + + /cli CLI) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b8c51b3468a636335a74b8a4206a6b533d3a200b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0d687dfbee48105001d3be04fd4918b9889e2d04
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46398861"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327702"
 ---
 # <a name="generic-functions-ccli"></a>제네릭 함수(C++/CLI)
 
@@ -91,7 +91,7 @@ return-type identifier<type-parameter identifier(s)>
 
 제네릭 함수는 제네릭 형식 매개 변수를 사용 하 여 선언 된 함수입니다. 메서드는 클래스, 구조체 또는 독립 실행형 함수에 있을 수 있습니다. 단일 제네릭 선언에는 암시적으로 함수를 다른 실제 형식의 제네릭 형식 매개 변수에 대 한 대체만 다르고 패밀리를 선언 합니다.
 
-Visual c + +에서 클래스 또는 구조체 생성자를 제네릭 형식 매개 변수를 사용 하 여 선언할 수 없습니다.
+제네릭 형식 매개 변수를 사용 하 여 클래스 또는 구조체 생성자를 선언할 수 있습니다.
 
 를 호출 하는 경우 제네릭 형식 매개 변수는 실제 형식으로 대체 됩니다. 템플릿 함수 호출과 유사 구문을 사용 하 여 꺾쇠 괄호에 실제 형식은 명시적으로 지정할 수 있습니다. 형식 매개 변수 없이 호출 되 면 컴파일러는 함수 호출에 제공 하는 매개 변수를 실제 형식을 유추 하려고 합니다. 사용 된 매개 변수에서 원하는 형식 인수를 추론할 수 없으므로, 컴파일러는 오류를 보고 합니다.
 
@@ -193,5 +193,5 @@ My function returned a string: Hello generic functions!
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)<br/>
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)<br/>
 [제네릭](../windows/generics-cpp-component-extensions.md)

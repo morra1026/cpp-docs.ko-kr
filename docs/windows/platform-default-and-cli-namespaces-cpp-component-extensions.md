@@ -1,7 +1,7 @@
 ---
-title: Platform, default 및 cli 네임 스페이스 (c + + 구성 요소 확장) | Microsoft Docs
+title: Platform, default 및 cli 네임 스페이스 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -19,20 +19,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 726c9e2653f2914c01d4a45a572614438e12bc8f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a70fb5317f42e98ccddb21fe66e328e1cc6f7643
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43194651"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328027"
 ---
-# <a name="platform-default-and-cli-namespaces--c-component-extensions"></a>Platform, default 및 cli 네임스페이스(C++ 구성 요소 확장)
+# <a name="platform-default-and-cli-namespaces--ccli-and-ccx"></a>Platform, default 및 cli 네임 스페이스 (C + + /cli 및 C + + /cli CX)
 
 네임스페이스는 언어 요소의 이름을 한정하므로, 이름이 그렇지 않았다면 소스 코드의 다른 곳에 있는 같은 이름과 충돌하지 않습니다. 예를 들어 이름 충돌이 방해가 컴파일러에서 인식 [상황에 맞는 키워드](../windows/context-sensitive-keywords-cpp-component-extensions.md)합니다. 네임스페이스는 컴파일러에 의해 사용되지만 컴파일된 어셈블리에 유지되지 않습니다.
 
 ## <a name="all-runtimes"></a>모든 런타임
 
-Visual C++는 프로젝트를 만들 때 프로젝트에 대한 기본 네임스페이스를 제공합니다. Windows 런타임에서.winmd 파일의 이름에는 루트 네임 스페이스의 이름과 일치 해야 하지만 네임 스페이스를 수동으로 바꿀 수 있습니다.
+Visual Studio 프로젝트를 만들 때 프로젝트에 대 한 기본 네임 스페이스를 제공 합니다. 하지만에서 C + 네임 스페이스 이름을 수동으로 바꿀 수 있습니다 + CX.winmd 파일의 이름에는 루트 네임 스페이스의 이름과 일치 해야 합니다.
 
 ## <a name="windows-runtime"></a>Windows 런타임
 
@@ -90,4 +90,4 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

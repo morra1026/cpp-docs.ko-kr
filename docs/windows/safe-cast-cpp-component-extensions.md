@@ -1,7 +1,7 @@
 ---
-title: safe_cast (c + + 구성 요소 확장) | Microsoft Docs
+title: safe_cast (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -19,14 +19,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8d5a4f92e16c2d758fa5e2b88575b12d5710dd08
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 76d53a1322024f1a56477de4e4b58bcdb88930ad
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404216"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328482"
 ---
-# <a name="safecast-c-component-extensions"></a>safe_cast(C++ 구성 요소 확장명)
+# <a name="safecast-ccli-and-ccx"></a>safe_cast (C + + /cli 및 C + + /cli CX)
 
 합니다 **safe_cast** 작업이 성공 하면 지정된 된 형식으로 지정된 된 식을 반환 합니다; 그렇지 않으면 throw `InvalidCastException`합니다.
 
@@ -37,11 +37,7 @@ ms.locfileid: "46404216"
 ### <a name="syntax"></a>구문
 
 ```cpp
-[default]:: safe_cast<
-type-id
->(
-expression
-)  
+[default]:: safe_cast< type-id >( expression )  
 ```
 
 ## <a name="windows-runtime"></a>Windows 런타임
@@ -51,11 +47,7 @@ expression
 ### <a name="syntax"></a>구문
 
 ```cpp
-[default]:: safe_cast<
-type-id
->(
-expression
-)  
+[default]:: safe_cast< type-id >( expression )
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -115,11 +107,7 @@ Caught expected exception: InvalidCastException
 ### <a name="syntax"></a>구문
 
 ```cpp
-[cli]:: safe_cast<
-type-id
->(
-expression
-)  
+[cli]:: safe_cast< type-id >( expression )  
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -132,7 +120,7 @@ expression
 
 ### <a name="remarks"></a>설명
 
-식을 `safe_cast<` *type-id 형식의*`>(`*식* `)` 피연산자 식을 type-id 형식의 개체로 변환 합니다.
+식을 `safe_cast<` *type-id 형식의*`>(`*식* `)` 피연산자를 변환 *식* 형식의개체로*type-id 형식의*합니다.
 
 컴파일러에서 허용 됩니다는 [static_cast](../cpp/static-cast-operator.md) 것을 허용 하는 대부분의 환경에는 **safe_cast**합니다.  그러나 **safe_cast** 안정형 MSIL을 생성 하도록 보장 됩니다 여기서는 **static_cast** 확인할 수 없는 MSIL을 생성할 수 없습니다.  참조 [순수형 및 안정형 코드 (C + + /cli CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md) 하 고 [Peverify.exe (PEVerify 도구)](/dotnet/framework/tools/peverify-exe-peverify-tool) 검증할 수 있는 코드에 대 한 자세한 내용은 합니다.
 
@@ -188,4 +176,4 @@ Caught expected exception
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

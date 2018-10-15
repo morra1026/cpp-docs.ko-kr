@@ -15,18 +15,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 39dac1bda25a66ecd67feac167e0029931a204e0
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 49e298af793655bb3ea3854909a16dd4db03c6a3
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791832"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328183"
 ---
 # <a name="attributes-by-usage"></a>용도별 특성
 
 이 항목에서는 적용 되는 c + + 언어 요소에 따라 특성을 나열 합니다.
 
-특성은 특성의 범위에 없으므로 하는 Visual c + + 요소 뒤에 나오는 특성 블록을 주석으로 처리 됩니다.
+특성은 특성의 범위에 있지 않은 요소 뒤에 나오는 특성 블록을 주석으로 처리 됩니다.
 
 |특성|설명|
 |---------------|-----------------|
@@ -89,6 +89,6 @@ ms.locfileid: "48791832"
 
 ## <a name="see-also"></a>참고 항목
 
-[COM 및.NET에 대 한 c + + 특성](cpp-attributes-com-net.md)<br/>
+[COM 및 .NET에 대한 C++ 특성](cpp-attributes-com-net.md)<br/>
 [그룹별 특성](attributes-by-group.md)<br/>
 [특성 사전순 참조](attributes-alphabetical-reference.md)
