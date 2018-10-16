@@ -1,7 +1,7 @@
 ---
 title: 형식 전달 (C + + /cli CLI) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,28 +15,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 806003e33e60b5146bdd722fa5248011cd4939c0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7fe70de2503134bf76f5e1c7099773737cc153f8
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396553"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328339"
 ---
 # <a name="type-forwarding-ccli"></a>형식 전달(C++/CLI)
 
 *형식 전달* A. 어셈블리를 사용 하는 클라이언트를 다시 컴파일할 필요는 없습니다 되도록 다른 어셈블리 (어셈블리 B)에 형식 어셈블리 (어셈블리 A) 간에 이동할 수 있습니다
 
-## <a name="all-platforms"></a>모든 플랫폼
-
-이 기능은 모든 런타임에서 지원 되지 않습니다.
-
 ## <a name="windows-runtime"></a>Windows 런타임
 
 이 기능은 Windows 런타임에서 지원 되지 않습니다.
-
-### <a name="requirements"></a>요구 사항
-
-컴파일러 옵션: `/ZW`
 
 ## <a name="common-language-runtime"></a>공용 언어 런타임
 
@@ -44,7 +36,7 @@ ms.locfileid: "46396553"
 
 ### <a name="syntax"></a>구문
 
-```
+```cpp
 #using "new.dll"
 [assembly:TypeForwardedTo(type::typeid)];
 ```
@@ -97,7 +89,7 @@ ms.locfileid: "46396553"
 
 3. 삭제는 `MyClass` A.dll, 빌드 및 다음으로 대체 하는 데 사용 되는 소스 코드에서 정의 입력 합니다.
 
-    ```
+    ```cpp
     #using "B.dll"
     [assembly:TypeForwardedTo(MyClass::typeid)];
     ```
