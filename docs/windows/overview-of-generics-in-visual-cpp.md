@@ -1,7 +1,7 @@
 ---
-title: Visual c + +의 제네릭 개요 | Microsoft Docs
+title: C +의 제네릭 개요 + CLI | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -22,20 +22,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2c1a6e9b9734fbb836d9e061b15534e23b95b29c
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9e6240fd5e33f44c42d8a0d33302b9ef4cf9f8bb
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590940"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327858"
 ---
-# <a name="overview-of-generics-in-visual-c"></a>Visual C++의 제네릭 개요
+# <a name="overview-of-generics-in-ccli"></a>C +의 제네릭 개요 + CLI
 
 제네릭은 공용 언어 런타임에서 지원하는 매개 변수화된 형식입니다. 매개 변수화된 형식은 제네릭이 사용될 때 지정되는 알 수 없는 형식 매개 변수로 정의된 형식입니다.
 
 ## <a name="why-generics"></a>왜 제네릭인가?
 
-C++은 템플릿을 지원하고 템플릿과 제네릭은 모두 매개 변수화된 형식을 지원하여 형식화된 컬렉션 클래스를 만듭니다. 그러나 템플릿은 컴파일 시간 매개 변수화를 제공합니다. 템플릿 정의가 포함된 어셈블리를 참조하고 해당 템플릿의 새 특수화를 만들 수는 없습니다. 컴파일되면 특수화된 템플릿은 다른 클래스나 메서드처럼 보입니다. 반면에, 제네릭은 매개 변수화된 형식이 되기 위해 런타임으로 알려진 매개 변수화된 형식으로 MSIL에서 출력됩니다. 제네릭 형식이 포함된 어셈블리를 참조하는 소스 코드는 특수화된 제네릭 형식을 만들 수 있습니다. Visual c + + 템플릿과 제네릭의 비교에 자세한 내용은 참조 [제네릭과 템플릿 (Visual c + +)](../windows/generics-and-templates-visual-cpp.md)합니다.
+C++은 템플릿을 지원하고 템플릿과 제네릭은 모두 매개 변수화된 형식을 지원하여 형식화된 컬렉션 클래스를 만듭니다. 그러나 템플릿은 컴파일 시간 매개 변수화를 제공합니다. 템플릿 정의가 포함된 어셈블리를 참조하고 해당 템플릿의 새 특수화를 만들 수는 없습니다. 컴파일되면 특수화된 템플릿은 다른 클래스나 메서드처럼 보입니다. 반면에, 제네릭은 매개 변수화된 형식이 되기 위해 런타임으로 알려진 매개 변수화된 형식으로 MSIL에서 출력됩니다. 제네릭 형식이 포함된 어셈블리를 참조하는 소스 코드는 특수화된 제네릭 형식을 만들 수 있습니다. 표준 c + + 템플릿과 제네릭의 비교에 자세한 내용은 참조 [제네릭과 템플릿 (C + + /cli CLI)](../windows/generics-and-templates-visual-cpp.md)합니다.
 
 ## <a name="generic-functions-and-types"></a>제네릭 함수 및 형식
 

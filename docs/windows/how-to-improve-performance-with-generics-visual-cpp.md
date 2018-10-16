@@ -1,7 +1,7 @@
 ---
-title: '방법: 제네릭 (Visual c + +)를 사용 하 여 성능 향상 | Microsoft Docs'
+title: '방법: 제네릭 사용 하 여 성능 향상 (C + + /cli CLI) | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -18,16 +18,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9f946970f78b432774a5e4c7ba20fd15a00ae654
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: ead9491e7b5302cadfa59eb7d98215fb3c41eb09
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318528"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327825"
 ---
-# <a name="how-to-improve-performance-with-generics-visual-c"></a>방법: 제네릭을 사용하여 성능 개선(Visual C++)
+# <a name="how-to-improve-performance-with-generics-ccli"></a>방법: 제네릭 사용 하 여 성능 향상 (C + + /cli CLI)
 
-제네릭을 사용하여 형식 매개 변수를 기반으로 재사용 가능한 코드를 만들 수 있습니다. 형식 매개 변수의 실제 형식은 클라이언트 코드에서 호출할 때까지 지연됩니다. 제네릭에 대 한 자세한 내용은 참조 하세요. [제네릭](../windows/generics-cpp-component-extensions.md)합니다.
+제네릭을 사용하여 형식 매개 변수를 기반으로 재사용 가능한 코드를 만들 수 있습니다. 형식 매개 변수의 실제 형식은 클라이언트 코드에서 호출할 때까지 지연됩니다. 제네릭에 대한 자세한 내용은 [Generics](../windows/generics-cpp-component-extensions.md)을 참조하세요.
 
 이 문서에서는 제네릭으로 컬렉션을 사용하는 응용 프로그램의 성능을 향상시키는 방법을 설명합니다.
 

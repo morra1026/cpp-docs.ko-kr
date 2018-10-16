@@ -11,12 +11,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2050be008f89ff2d125842d5919407dc292eed40
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: b0b8a17cf83171a570f2ca3f6ff40c657d17164d
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105837"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162349"
 ---
 # <a name="platformcollectionsunorderedmap-class"></a>Platform::Collections::UnorderedMap 클래스
 
@@ -58,7 +58,7 @@ ref class Map sealed;
 
 - public enum 클래스
 
-**UnorderedMap** 에 대 한 래퍼는 기본적으로 [std:: unordered_map](../standard-library/unordered-map-class.md) Windows 런타임 형식의 storage를 지 원하는 합니다. 것을의 구체적인 구현을 합니다 [Windows::Foundation::Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_) 및 [IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) 공용 전반에서 전달 되는 Windows 런타임 인터페이스. 공용 반환 값 또는 매개 변수에서 `Platform::Collections::UnorderedMap` 형식을 사용하려고 하면 컴파일러 오류 C3986이 발생합니다. 매개 변수 또는 반환 값의 형식을 변경 하 여 오류를 해결할 수 있습니다 [Windows::Foundation::Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_)합니다.
+**UnorderedMap** 에 대 한 래퍼는 기본적으로 [std:: unordered_map](../standard-library/unordered-map-class.md) Windows 런타임 형식의 storage를 지 원하는 합니다. 것을의 구체적인 구현을 합니다 [Windows::Foundation::Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_) 및 [IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) 공용 전반에서 전달 되는 Windows 런타임 인터페이스. 공용 반환 값 또는 매개 변수에서 `Platform::Collections::UnorderedMap` 형식을 사용하려고 하면 컴파일러 오류 C3986이 발생합니다. 매개 변수나 반환 값 형식을 [Windows::Foundation::Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_)으로 변경하여 오류를 수정할 수 있습니다.
 
 자세한 내용은 [컬렉션](../cppcx/collections-c-cx.md)합니다.
 
@@ -163,7 +163,7 @@ UnorderedMap 요소를 찾는 데 사용되는 키입니다. 유형의 *키* 형
 
 ### <a name="return-value"></a>반환 값
 
-키가 있으면 `true`이고, 그렇지 않으면 `false`입니다.
+**true 이면** 이 고, 그렇지 않으면 키가 없으면 **false**합니다.
 
 ## <a name="insert"></a>  UnorderedMap::Insert Method
 
@@ -188,7 +188,7 @@ virtual bool Insert(
 
 ### <a name="return-value"></a>반환 값
 
-`true` 현재 Map의 기존 요소 키와 일치 하는 경우 *키* 로 설정 되어 해당 요소의 값 부분이 *값*합니다. `false` 일치 하는 현재 Map의 기존 요소가 *키* 하며 *키* 하 고 *값* 매개 변수는 키-값 쌍으로 수행 하 고 현재 UnorderedMap에 추가 합니다.
+**true** 현재 Map의 기존 요소 키와 일치 하는 경우 *키* 로 설정 되어 해당 요소의 값 부분이 *값*합니다. **false** 일치 하는 현재 Map의 기존 요소가 *키* 하며 *키* 및 *값* 매개 변수는 키-값 쌍으로 수행 되며 그런 다음에 추가 합니다 현재 UnorderedMap 합니다.
 
 ## <a name="lookup"></a>  Unorderedmap:: Lookup 메서드
 
@@ -374,4 +374,4 @@ A [std:: initializer_list](../standard-library/initializer-list-class.md) 의 [s
 [Platform::Collections::Map 클래스](../cppcx/platform-collections-map-class.md)<br/>
 [Platform::Collections::UnorderedMapView 클래스](../cppcx/platform-collections-unorderedmapview-class.md)<br/>
 [컬렉션](../cppcx/collections-c-cx.md)<br/>
-[C + + Windows 런타임 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
+[C++로 Windows Runtime 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

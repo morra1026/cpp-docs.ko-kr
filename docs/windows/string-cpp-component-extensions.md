@@ -1,7 +1,7 @@
 ---
-title: 문자열 (c + + 구성 요소 확장) | Microsoft Docs
+title: 문자열 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/08/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -16,24 +16,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2d6b6ce066c84056997ec9b54c9d74e782064df4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b835f1d507c8e577f8b44ca314422dd5b6f2ca46
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408403"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327430"
 ---
-# <a name="string--c-component-extensions"></a>문자열(C++ 구성 요소 확장)
-
-Visual c + + 컴파일러에서 지 원하는 *문자열*를 문자 시퀀스로 텍스트를 나타내는 개체입니다. Visual c + + 문자열 변수를 해당 값이 암시적, 및 해당 값은 명시적 따옴표 붙은 문자열 리터럴을 지원 합니다.
-
-## <a name="all-runtimes"></a>모든 런타임
+# <a name="string--ccli-and-ccx"></a>문자열 (C + + /cli 및 C + + /cli CX)
 
 Windows 런타임 및 공용 언어 런타임 할당 된 메모리는 자동으로 관리 되는 개체와 문자열을 나타냅니다. 즉,는 범위 외부로 이동 하는 문자열 변수 또는 응용 프로그램이 종료 될 때 문자열에 대 한 메모리를 명시적으로 삭제할 필요가 없습니다. 자동으로 관리 하는 문자열 개체의 수명을 상태임을 나타내기 위해 사용 하 여 문자열 형식을 선언 합니다 [개체 핸들 (^)](../windows/handle-to-object-operator-hat-cpp-component-extensions.md) 한정자입니다.
 
 ## <a name="windows-runtime"></a>Windows 런타임
 
-Windows 런타임 아키텍처 Visual c + + 구현 하는 데 필요 합니다 `String` 데이터 형식에 `Platform` 네임 스페이스입니다. 편의 위해 Visual c + +에서는 합니다 `string` 데이터 형식에의 동의어 `Platform::String`의 `default` 네임 스페이스입니다.
+Windows 런타임 아키텍처에서는 합니다 `String` 데이터 형식에는 `Platform` 네임 스페이스입니다. 편의 위해 Visual c + +에서는 합니다 `string` 데이터 형식에의 동의어 `Platform::String`의 `default` 네임 스페이스입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -51,8 +47,6 @@ using namespace default;
 컴파일러 옵션: `/ZW`
 
 ## <a name="common-language-runtime"></a>공용 언어 런타임
-
-이 항목에서는 사용 하 여 실행 하면 Visual c + + 컴파일러에서 문자열 리터럴을 처리 하는 방법을 설명 합니다 `/clr` 컴파일러 옵션입니다. 사용 하 `/clr`는 CLR (공용 언어 런타임), C +을 사용 해야 + CLI 구문 및 개체를 관리 합니다. 에 대 한 자세한 내용은 `/clr`를 참조 하세요 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md)합니다.
 
 사용 하 여 컴파일하면 `/clr`, 컴파일러는 문자열 리터럴 형식의 문자열로 변환 <xref:System.String>합니다. 유지 하기 위해 기존 코드를 사용 하 여 이전 버전과 호환성은이 두 가지 예외:
 
@@ -91,9 +85,9 @@ using namespace default;
 using namespace System;
 
 int main() {
-   String ^ a = gcnew String("abc");
-   String ^ b = "def";   // same as gcnew form
-   Object ^ c = gcnew String("ghi");
+   String^ a = gcnew String("abc");
+   String^ b = "def";   // same as gcnew form
+   Object^ c = gcnew String("ghi");
 
    char d[100] = "abc";
 
@@ -111,12 +105,12 @@ int main() {
    // concatenation of a System::String and string literal
    Console::WriteLine(a + "zzz");
 
-   // you can append to a System::String ^
+   // you can append to a System::String^
    Console::WriteLine(a + 1);
    Console::WriteLine(a + 'a');
    Console::WriteLine(a + 3.1);
 
-   // test System::String ^ for equality
+   // test System::String^ for equality
    a += b;
    Console::WriteLine(a);
    a = b;
@@ -127,12 +121,12 @@ int main() {
    if (a != b)  
       Console::WriteLine("a and b are not equal");
 
-   // System:String ^ and tracking reference
+   // System:String^ and tracking reference
    String^% rstr1 = a;
    Console::WriteLine(rstr1);
 
-   // testing an empty System::String ^
-   String ^ n;
+   // testing an empty System::String^
+   String^ n;
    if (n == nullptr)  
       Console::WriteLine("n is empty");
 }
@@ -179,29 +173,29 @@ using namespace System;
 void Test_Overload(const char * a) {
    Console::WriteLine("const char * a");
 }
-void Test_Overload(String ^ a) {
-   Console::WriteLine("String ^ a");
+void Test_Overload(String^ a) {
+   Console::WriteLine("String^ a");
 }
 
 // overload will be called instead of compiler defined operator
-String ^ operator +(String ^ a, String ^ b) {
-   return ("overloaded +(String ^ a, String ^ b)");
+String^ operator +(String^ a, String^ b) {
+   return ("overloaded +(String^ a, String^ b)");
 }
 
 // overload will be called instead of compiler defined operator
-String ^ operator +(Object ^ a, String ^ b) {
-   return ("overloaded +(Object ^ a, String ^ b)");
+String^ operator +(Object^ a, String^ b) {
+   return ("overloaded +(Object^ a, String^ b)");
 }
 
 // overload will be called instead of compiler defined operator
-String ^ operator +(String ^ a, Object ^ b) {
-   return ("overloaded +(String ^ a, Object ^ b)");
+String^ operator +(String^ a, Object^ b) {
+   return ("overloaded +(String^ a, Object^ b)");
 }
 
 int main() {
-   String ^ a = gcnew String("abc");
-   String ^ b = "def";   // same as gcnew form
-   Object ^ c = gcnew String("ghi");
+   String^ a = gcnew String("abc");
+   String^ b = "def";   // same as gcnew form
+   Object^ c = gcnew String("ghi");
 
    char d[100] = "abc";
 
@@ -215,13 +209,13 @@ int main() {
 ```
 
 ```Output
-overloaded +(String ^ a, String ^ b)
+overloaded +(String^ a, String^ b)
 
-overloaded +(String ^ a, Object ^ b)
+overloaded +(String^ a, Object^ b)
 
-overloaded +(Object ^ a, String ^ b)
+overloaded +(Object^ a, String^ b)
 
-String ^ a
+String^ a
 
 const char * a
 ```
@@ -277,6 +271,6 @@ System.String
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)<br/>
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)<br/>
 [문자열 및 문자 리터럴](../cpp/string-and-character-literals-cpp.md)<br/>
 [/clr(공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md)

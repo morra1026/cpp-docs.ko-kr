@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46789b74d0b7b8d882a1e2ea90103c4c2f1e934b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ffc1ea1f512e049f3a6af15170429a3618323dc5
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396352"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162999"
 ---
 `unbounded_buffer` 메시징 블록은 메시지를 개수에 제한 없이 저장할 수 있는, 순서가 지정된 다중 대상 다중 소스 `propagator_block`입니다.
 
@@ -175,7 +175,7 @@ bool enqueue(
 
 ### <a name="return-value"></a>반환 값
 
-`true` 항목을 수락 되 면 `false` 그렇지 않은 경우.
+**true** 항목을 수락 되 면 **false** 그렇지 않은 경우.
 
 ##  <a name="link_target_notification"></a> link_target_notification
 
@@ -274,11 +274,11 @@ virtual bool reserve_message(
 
 ### <a name="return-value"></a>반환 값
 
-`true` 메시지를 성공적으로 예약 하는 경우 `false` 그렇지 않은 경우.
+**true 이면** 메시지를 성공적으로 예약 하는 경우 **false** 그렇지 않은 경우.
 
 ### <a name="remarks"></a>설명
 
-후 `reserve` 반환 하는 경우 라고 `true`하거나, `consume` 또는 `release` 수행 하거나 메시지의 소유권을 해제를 호출 해야 합니다.
+후 `reserve` 반환 하는 경우 라고 **true**하거나, `consume` 또는 `release` 수행 하거나 메시지의 소유권을 해제를 호출 해야 합니다.
 
 ##  <a name="resume_propagation"></a> resume_propagation
 
@@ -321,7 +321,7 @@ virtual bool supports_anonymous_source();
 
 ### <a name="return-value"></a>반환 값
 
-블록은 제공된 메시지를 연기하지 않기 때문에 `true`입니다.
+**true** 블록은 연기 하지 때문에 메시지를 제공 합니다.
 
 ##  <a name="ctor"></a> unbounded_buffer
 
@@ -359,10 +359,10 @@ unbounded_buffer(
 제공 된 메시지를 허용 해야 하는지 여부를 결정 하는 필터 함수입니다.
 
 *_PScheduler*<br/>
-`Scheduler` 개체에 대 한 작업의 전파는는 `unbounded_buffer` 메시징 블록 예약 됩니다.
+`Scheduler` 메시징 블록의 전파 작업이 예약되는 `unbounded_buffer` 개체입니다.
 
 *_PScheduleGroup*<br/>
-`ScheduleGroup` 개체에 대 한 작업의 전파는는 `unbounded_buffer` 메시징 블록 예약 됩니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.
+`ScheduleGroup` 메시징 블록의 전파 작업이 예약되는 `unbounded_buffer` 개체입니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.
 
 ### <a name="remarks"></a>설명
 

@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 039f69f31c5a92cf07f96442c30bd59b0cc6f40e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9d38b8415b5ca214800c968d186f37c020dce6dc
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414578"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163961"
 ---
 # <a name="choice-class"></a>choice 클래스
 
@@ -85,7 +85,7 @@ class choice: public ISource<size_t>;
 |[reserve](#reserve)|이전에 제공한 메시지를 예약 `choice` 메시징 블록입니다.|
 |[unlink_target](#unlink_target)|이 대상 블록을 연결 해제 `choice` 메시징 블록입니다.|
 |[unlink_targets](#unlink_targets)|이 모든 대상의 연결을 해제 `choice` 메시징 블록입니다. (재정의 [isource:: Unlink_targets](isource-class.md#unlink_targets).)|
-|[value](#value)|인덱스를 포함 하 여 선택 된 메시지를 가져옵니다는 `choice` 메시징 블록입니다.|
+|[값](#value)|인덱스를 포함 하 여 선택 된 메시지를 가져옵니다는 `choice` 메시징 블록입니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -216,7 +216,7 @@ virtual message<size_t>* consume(
 
 ### <a name="remarks"></a>설명
 
-`consume` 메서드는 비슷합니다 `accept`를 항상 호출을 통해 야 하지만 `reserve` 반환 되는 `true`합니다.
+`consume` 메서드와 비슷합니다 `accept`를 항상 호출을 통해 야 하지만 `reserve` 반환 **true**합니다.
 
 ##  <a name="has_value"></a> has_value
 
@@ -229,7 +229,7 @@ bool has_value() const;
 
 ### <a name="return-value"></a>반환 값
 
-`true` 블록 값을 받은 경우 `false` 그렇지 않은 경우.
+**true 이면** 블록에 값을 받은 경우 **false** 그렇지 않은 경우.
 
 ##  <a name="index"></a> 인덱스
 
@@ -315,7 +315,7 @@ virtual bool reserve(
 
 ### <a name="return-value"></a>반환 값
 
-`true` 메시지를 성공적으로 예약 하는 경우 `false` 그렇지 않은 경우. 예약은 메시지를 이미 다른 대상이 예약했거나 수락한 경우, 소스에서 예약을 거부한 경우 등과 같은 다양한 이유로 실패할 수 있습니다.
+**true 이면** 메시지를 성공적으로 예약 하는 경우 **false** 그렇지 않은 경우. 예약은 메시지를 이미 다른 대상이 예약했거나 수락한 경우, 소스에서 예약을 거부한 경우 등과 같은 다양한 이유로 실패할 수 있습니다.
 
 ### <a name="remarks"></a>설명
 

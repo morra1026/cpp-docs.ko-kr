@@ -1,7 +1,7 @@
 ---
 title: 인라인 함수 (c + +) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/09/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -9,6 +9,10 @@ f1_keywords:
 - __forceinline_cpp
 - __inline_cpp
 - inline_cpp
+- __inline
+- _inline
+- __forceinline
+- _forceinline
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31738407b788f69998681442f15a8f1c104477a3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 21f3d74a7b640e203a8a5882710849c98ba5b40f
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017823"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163597"
 ---
 # <a name="inline-functions-c"></a>인라인 함수(C++)
 
@@ -84,7 +88,7 @@ int main()
 
 컴파일러는 인라인 확장 옵션과 키워드를 제안으로 처리합니다. 함수가 인라인으로 처리된다는 보장은 없습니다. 컴파일러에서 특정 함수를 인라인에도 강제할 수는 없습니다 합니다 **__forceinline** 키워드입니다. 사용 하 여 컴파일하면 **/clr**, 컴파일러는 인라인 처리 하지 않습니다 함수의 경우 함수에 적용 된 보안 특성.
 
-합니다 **인라인** 키워드는 c + + 에서만 사용할 수 있습니다. 합니다 **__inline** 하 고 **__forceinline** 키워드는 C 및 c + +에서 사용할 수 있습니다. 이전 버전과 호환성에 대 한 **_inline** 에 대 한 동의어가 **__inline**합니다.
+합니다 **인라인** 키워드는 c + + 에서만 사용할 수 있습니다. 합니다 **__inline** 하 고 **__forceinline** 키워드는 C 및 c + +에서 사용할 수 있습니다. 이전 버전과 호환성에 대 한 **_inline** 하 고 **_forceinline** 은 **__inline**, 및 **__forceinline** 하지 않으면 컴파일러 옵션 [/Za \(언어 확장 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md) 지정 됩니다.
 
 합니다 **인라인** 키워드는 컴파일러가 인라인 확장을 다른 사용자는 것이 좋습니다. 그러나 컴파일러는 함수의 별도 인스턴스를 만들고(인스턴스화) 인라인으로 코드를 삽입하는 대신 표준 호출 링크를 만들 수 있습니다. 다음은 이런 상황이 발생할 수 있는 두 가지 경우입니다.
 

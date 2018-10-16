@@ -41,12 +41,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e07c5b985552fcf30b2acb18030ab3288efb9be
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b89c1a3057e9753b99aaac837c903b6fd5f6d3ea
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428150"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163350"
 ---
 # <a name="concurrency-namespace-functions"></a>concurrency 네임 스페이스 함수
 
@@ -118,7 +118,7 @@ bool asend(
 
 ### <a name="return-value"></a>반환 값
 
-`true` 메서드가 반환 되기 전에 메시지가 허용 된 경우 `false` 그렇지 않은 경우.
+**true** 메서드가 반환 되기 전에 메시지 수락 되었으면 **false** 그렇지 않은 경우.
 
 ### <a name="remarks"></a>설명
 
@@ -424,7 +424,7 @@ bool __cdecl is_current_task_group_canceling();
 
 ### <a name="return-value"></a>반환 값
 
-`true` 현재 실행 중인 작업 그룹을 취소 하는 경우 `false` 그렇지 않은 경우.
+**true 이면** 현재 실행 중인 작업 그룹을 취소 하는 경우 **false** 그렇지 않은 경우.
 
 ### <a name="remarks"></a>설명
 
@@ -687,7 +687,7 @@ C + + 표준 라이브러리 호환 메모리 할당자의 형식입니다.
 C + + 표준 라이브러리 호환 메모리 할당자의 인스턴스.
 
 *_Func*<br/>
-순서에 따라 연속적인 요소에 대해 충족될 비교 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하여 조건이 충족되면 `true`를 반환하고, 충족되지 않으면 `false`를 반환합니다. 이 비교 함수는 시퀀스의 요소 쌍에 대해 엄밀히 약한 순서를 적용해야 합니다.
+순서에 따라 연속적인 요소에 대해 충족될 비교 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다. 이 비교 함수는 시퀀스의 요소 쌍에 대해 엄밀히 약한 순서를 적용해야 합니다.
 
 *_Chunk_size*<br/>
 병렬 실행을 위해 두 개로 분할될 청크의 최소 크기입니다.
@@ -1217,7 +1217,7 @@ inline void parallel_sort(
 저장할 범위의 마지막 요소 하나 다음 위치를 주소 지정하는 임의 액세스 반복기입니다.
 
 *_Func*<br/>
-순서에 따라 연속적인 요소에 대해 충족될 비교 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하여 조건이 충족되면 `true`를 반환하고, 충족되지 않으면 `false`를 반환합니다. 이 비교 함수는 시퀀스의 요소 쌍에 대해 엄밀히 약한 순서를 적용해야 합니다.
+순서에 따라 연속적인 요소에 대해 충족될 비교 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다. 이 비교 함수는 시퀀스의 요소 쌍에 대해 엄밀히 약한 순서를 적용해야 합니다.
 
 *_Chunk_size*<br/>
 병렬 실행을 위해 두 개로 분할될 청크의 최소 크기입니다.
@@ -1460,7 +1460,7 @@ bool send(ITarget<T>& _Trg, const T& _Data);
 
 ### <a name="return-value"></a>반환 값
 
-`true` 메시지가 허용 된 경우 `false` 그렇지 않은 경우.
+**true** 메시지를 수락 되 면 **false** 그렇지 않은 경우.
 
 ### <a name="remarks"></a>설명
 
@@ -1613,7 +1613,7 @@ void Trace_agents_register_name(
 
 ##  <a name="try_receive"></a>  try_receive
 
-컨텍스트에서 정확히 한 소스의 데이터를 찾고 허용되는 값을 필터링할 수 있게 하는 일반 try-receive 구현입니다. 데이터가 준비되지 않은 경우 메서드가 false를 반환합니다.
+컨텍스트에서 정확히 한 소스의 데이터를 찾고 허용되는 값을 필터링할 수 있게 하는 일반 try-receive 구현입니다. 데이터를 준비 없으면 메서드는 반환 **false**합니다.
 
 ```
 template <class T>

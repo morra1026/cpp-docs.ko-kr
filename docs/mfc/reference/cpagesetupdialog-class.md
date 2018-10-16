@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 721dd285760027c35ae93d89ec5bb3fde6e9ba11
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 86dc19600dc8cbb452db585993dec85c3f7b8591
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413453"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328391"
 ---
 # <a name="cpagesetupdialog-class"></a>CPageSetupDialog 클래스
 
@@ -272,7 +272,7 @@ void GetMargins(
 ### <a name="parameters"></a>매개 변수
 
 *lpRectMargins*<br/>
-에 대 한 포인터를 [RECT](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us) 구조 나 [CRect](../../atl-mfc-shared/reference/crect-class.md) 현재 선택한 프린터에서 인쇄 여백을 (1/1000 인치 또는 1/100 mm)에서 설명 하는 개체입니다. 이 사각형에 관심이 없는 경우이 매개 변수에 대해 NULL을 전달 합니다.
+에 대 한 포인터를 [RECT](rect-structure.md) 구조 나 [CRect](../../atl-mfc-shared/reference/crect-class.md) 현재 선택한 프린터에서 인쇄 여백을 (1/1000 인치 또는 1/100 mm)에서 설명 하는 개체입니다. 이 사각형에 관심이 없는 경우이 매개 변수에 대해 NULL을 전달 합니다.
 
 *lpRectMinMargins*<br/>
 에 대 한 포인터를 `RECT` 구조 또는 `CRect` 현재 선택된 된 프린터에 대 한 최소 인쇄 여백 (1/1000 인치 또는 1/100 mm)에서 설명 하는 개체입니다. 이 사각형에 관심이 없는 경우이 매개 변수에 대해 NULL을 전달 합니다.
@@ -351,7 +351,7 @@ virtual UINT OnDrawPage(
 - 반송 주소 표현에 대 한 WM_PSD_YAFULLPAGERECT 영역입니다. 이 영역은 샘플 페이지 영역의 가장자리에 확장 됩니다.
 
 *lpRect*<br/>
-에 대 한 포인터를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 하거나 [RECT](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us) 그리기 영역의 좌표를 포함 하는 개체입니다.
+에 대 한 포인터를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 하거나 [RECT](rect-structure.md) 그리기 영역의 좌표를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 

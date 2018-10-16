@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c960e73604a915dbb15c0efac958dc229c16b3b1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 045cdeab321e9e3f88ee9bd50d337101e8512718
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379540"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163818"
 ---
 # <a name="join-class"></a>join 클래스
 
@@ -60,7 +60,7 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
 
 |이름|설명|
 |----------|-----------------|
-|[join](#ctor)|오버로드됨. 생성 된 `join` 메시징 블록입니다.|
+|[join](#ctor)|오버로드됨. `join` 메시징 블록을 생성합니다.|
 |[~ join 소멸자](#dtor)|제거 된 `join` 블록입니다.|
 
 ### <a name="protected-methods"></a>보호된 메서드
@@ -138,7 +138,7 @@ virtual message<_OutputType>* consume_message(runtime_object_identity _MsgId);
 
 ##  <a name="ctor"></a> 조인
 
-생성 된 `join` 메시징 블록입니다.
+`join` 메시징 블록을 생성합니다.
 
 ```
 join(
@@ -176,10 +176,10 @@ join(
 제공 된 메시지를 허용 해야 하는지 여부를 결정 하는 필터 함수입니다.
 
 *_PScheduler*<br/>
-`Scheduler` 개체에 대 한 작업의 전파는는 `join` 메시징 블록 예약 됩니다.
+`Scheduler` 메시징 블록의 전파 작업이 예약되는 `join` 개체입니다.
 
 *_PScheduleGroup*<br/>
-`ScheduleGroup` 개체에 대 한 작업의 전파는는 `join` 메시징 블록 예약 됩니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.
+`ScheduleGroup` 메시징 블록의 전파 작업이 예약되는 `join` 개체입니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -261,11 +261,11 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 ### <a name="return-value"></a>반환 값
 
-`true` 메시지를 성공적으로 예약 하는 경우 `false` 그렇지 않은 경우.
+**true 이면** 메시지를 성공적으로 예약 하는 경우 **false** 그렇지 않은 경우.
 
 ### <a name="remarks"></a>설명
 
-후 `reserve` 반환 하는 경우 라고 `true`하거나, `consume` 또는 `release` 수행 하거나 메시지의 소유권을 해제를 호출 해야 합니다.
+후 `reserve` 반환 하는 경우 라고 **true**하거나, `consume` 또는 `release` 수행 하거나 메시지의 소유권을 해제를 호출 해야 합니다.
 
 ##  <a name="resume_propagation"></a> resume_propagation
 

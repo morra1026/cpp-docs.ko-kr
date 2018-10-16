@@ -1,5 +1,5 @@
 ---
-title: RECT 구조체 1 | Microsoft Docs
+title: RECT 구조체 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,14 +18,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa77af9dd97afc2e9b0cfb94c1fd4c69a50f309b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: eae2b248f4aa4586bf6453dcc37b521387327d25
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419596"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49334570"
 ---
-# <a name="rect-structure1"></a>RECT 구조체 1
+# <a name="rect-structure"></a>RECT 구조체
 
 `RECT` 구조체는 사각형의 왼쪽 위 및 오른쪽 아래 모퉁이의 좌표를 정의합니다.
 

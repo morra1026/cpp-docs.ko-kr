@@ -1,5 +1,5 @@
 ---
-title: 제네릭 대리자 (Visual c + +) | Microsoft Docs
+title: 제네릭 대리자 (C + + /cli CLI) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,16 +16,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 94b6d94b59e1088501a22f44a219177b926dd02e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1177b3c09649affc781a8c247a109f8efd8088d2
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440877"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328287"
 ---
-# <a name="generic-delegates-visual-c"></a>제네릭 대리자(Visual C++)
+# <a name="generic-delegates-ccli"></a>제네릭 대리자 (C + + /cli CLI)
 
-대리자에 제네릭 형식 매개 변수를 사용할 수 있습니다. 대리자에 대 한 자세한 내용은 참조 하세요. [delegate (c + + 구성 요소 확장)](../windows/delegate-cpp-component-extensions.md)합니다.
+대리자에 제네릭 형식 매개 변수를 사용할 수 있습니다. 대리자에 대 한 자세한 내용은 참조 하세요. [대리자 (C + + /cli 및 C + + /cli CX)](../windows/delegate-cpp-component-extensions.md)합니다.
 
 ## <a name="syntax"></a>구문
 

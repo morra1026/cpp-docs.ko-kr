@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17babc058ef3e1851da686e9a8c5bf17cefbc2fd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f84ca4c924c837ec008c16d6ff3b77af379df4cd
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427006"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163805"
 ---
 # <a name="cancellation-in-the-ppl"></a>PPL에서의 취소
 
@@ -91,7 +91,7 @@ PPL에서는 작업 및 작업 그룹을 사용하여 세분화된 작업 및 �
 
 - 에 대 한 `task` 개체를 사용 합니다 [concurrency:: cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) 함수입니다. `cancel_current_task`는 현재 작업 및 모든 값 기반 연속을 취소합니다. (취소는 취소 되지 않습니다 *토큰* 태스크 또는 해당 연속을 사용 하 여 연결 합니다.)
 
-- 작업 그룹 및 병렬 알고리즘을 사용 합니다 [concurrency:: is_current_task_group_canceling](reference/concurrency-namespace-functions.md#is_current_task_group_canceling) 취소를 감지 하 고이 함수가 반환 될 때 작업 본문에서 가능한 한 빨리 반환 하려면 함수 `true`합니다. (작업 그룹에서 `cancel_current_task`를 호출하지 마세요.)
+- 작업 그룹 및 병렬 알고리즘을 사용 합니다 [concurrency:: is_current_task_group_canceling](reference/concurrency-namespace-functions.md#is_current_task_group_canceling) 함수를 취소를 감지 하 여이 함수는 반환 될 때 작업 본문에서 가능한 한 빨리 반환 **true** . (작업 그룹에서 `cancel_current_task`를 호출하지 마세요.)
 
 다음 예제에서는 작업 취소의 첫 번째 기본 패턴을 보여 줍니다. 작업 본문에서는 때때로 루프 내부에 취소가 있는지 확인합니다.
 

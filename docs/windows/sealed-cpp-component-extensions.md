@@ -1,7 +1,7 @@
 ---
-title: sealed (c + + 구성 요소 확장) | Microsoft Docs
+title: sealed (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -18,19 +18,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 134ee819edc0698c4ffa067d38b715968f22590f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 211428335473f677f520ee14ad688e5ffcbda8fd
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439564"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328001"
 ---
-# <a name="sealed--c-component-extensions"></a>sealed(C++ 구성 요소 확장)
+# <a name="sealed--ccli-and-ccx"></a>sealed (C + + /cli 및 C + + /cli CX)
 
 **봉인 된** 는 가상 멤버를 재정의할 수 있는지 여부를 나타내는 ref 클래스에 대 한 상황에 맞는 키워드 또는 형식을 기본 형식으로 사용할 수 없습니다.
 
 > [!NOTE]
-> ISO C + + 11 표준 언어에는 [최종](../cpp/final-specifier.md) Visual Studio에서 지원 되는 키워드입니다. 사용 하 여 **최종** 표준 클래스 및 **봉인 된** ref 클래스에 있습니다.
+> ISO C + + 11 표준 언어 도입 된 [최종](../cpp/final-specifier.md) 키워드입니다. 사용 하 여 **최종** 표준 클래스 및 **봉인 된** ref 클래스에 있습니다.
 
 ## <a name="all-runtimes"></a>모든 런타임
 
@@ -53,7 +53,7 @@ virtual return-type identifier() sealed {...};
 
 첫 번째 구문 예에서는 클래스가 봉인되어 있고, 두 번째 예에서는 가상 함수가 봉인되어 있습니다.
 
-합니다 **봉인** 키워드는 네이티브 대상에 대해 그리고 Windows 런타임 및 공용 언어 런타임 (CLR)에 대 한 유효 합니다. 자세한 내용은 [재정의 지정자 및 네이티브 컴파일](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md)합니다.
+사용 된 **봉인** ref 클래스 및 해당 가상 멤버 함수에 대 한 키워드입니다. 자세한 내용은 [재정의 지정자 및 네이티브 컴파일](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md)합니다.
 
 사용 하 여 형식이 봉인 되어 있는지 여부를 컴파일 시간에 감지할 수 있습니다는 `__is_sealed(type)` 형식 특성 (trait). 자세한 내용은 [형식 특성에 대 한 컴파일러 지원](../windows/compiler-support-for-type-traits-cpp-component-extensions.md)합니다.
 
@@ -108,7 +108,7 @@ public:
    // the following override generates a compiler error
    virtual void g() override {
       System::Console::WriteLine("Y::g override of I1::g");
-   } 
+   }
    */
 };
 
@@ -150,4 +150,4 @@ public:
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

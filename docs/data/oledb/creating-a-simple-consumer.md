@@ -1,7 +1,7 @@
 ---
 title: 단순 소비자 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/09/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -15,46 +15,46 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 120829b08ab65c10cca7ab922fc4f9be732ccc53
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 85efb2a1d699914c6d7ffb1fd079a38be70f0b52
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860812"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163844"
 ---
 # <a name="creating-a-simple-consumer"></a>단순 소비자 만들기
 
 OLE DB 템플릿 소비자를 생성 하는 ATL 프로젝트 마법사 및 ATL OLE DB 소비자 마법사를 사용 합니다.
 
-### <a name="to-create-a-console-application-for-an-ole-db-consumer"></a>OLE DB 소비자에 대 한 콘솔 응용 프로그램을 만들려면
+## <a name="to-create-a-console-application-for-an-ole-db-consumer"></a>OLE DB 소비자에 대 한 콘솔 응용 프로그램을 만들려면
 
 1. **파일** 메뉴에서 **새로 만들기**를 클릭한 다음 **프로젝트**를 클릭합니다.
 
    **새 프로젝트** 대화 상자가 나타납니다.
 
-1. 프로젝트 형식 창에서 클릭 합니다 **Visual c + + 프로젝트** 폴더를 마우스 클릭 합니다 **Win32 프로젝트** 템플릿 창에서 아이콘입니다. 에 **이름을** 상자에 예를 들어 프로젝트의 이름을 입력 합니다 **MyCons**합니다.
+1. 에 **프로젝트 형식** 창 클릭 합니다 **설치 됨** > **템플릿** > **Visual c + +** 폴더 및 클릭 합니다 **Win32 콘솔 응용 프로그램** 아이콘에는 **템플릿** 창입니다. 에 **이름을** 상자에 예를 들어 프로젝트의 이름을 입력 합니다 *MyCons*합니다.
 
 1. **확인**을 클릭합니다.
 
-   Win32 프로젝트 마법사가 나타납니다.
+   Win32 응용 프로그램 마법사가 나타납니다.
 
-1. 에 **응용 프로그램 설정** 페이지에서 **콘솔 응용 프로그램**를 선택한 후 **ATL에 대 한 지원을 추가**합니다.
+1. 에 **응용 프로그램 설정** 페이지에서 **콘솔 응용 프로그램**를 선택한 후 **ATL에 대 한 공용 헤더 파일을 추가**합니다.
 
 1. 클릭 **완료** 마법사를 닫고 프로젝트를 생성 합니다.
 
 다음으로, ATL OLE DB 소비자 마법사를 사용 하 여 OLE DB 소비자 개체를 추가 합니다.
 
-#### <a name="to-create-a-consumer-with-the-atl-ole-db-consumer-wizard"></a>ATL OLE DB 소비자 마법사를 사용 하 여 소비자를 만들려면
+## <a name="to-create-a-consumer-with-the-atl-ole-db-consumer-wizard"></a>ATL OLE DB 소비자 마법사를 사용 하 여 소비자를 만들려면
 
-1. 클래스 뷰를 마우스 오른쪽 단추로 클릭는 `MyCons` 프로젝트입니다.
+1. **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭는 `MyCons` 프로젝트입니다.
 
-1. 바로 가기 메뉴에서 클릭 **추가**를 클릭 하 고 **클래스 추가**합니다.
+1. 바로 가기 메뉴에서 클릭 **추가**를 클릭 하 고 **클래스**합니다.
 
    합니다 **클래스 추가** 대화 상자가 나타납니다.
 
-1. 범주 창에서 클릭 **Visual c + +** 를 클릭 합니다 **ATL OLE DB 소비자** 클릭 한 다음 확인 하 고 템플릿 창에서 아이콘 **열기**합니다.
+1. 에 **범주** 창 클릭 **설치 됨** > **Visual c + +** > **ATL**를 클릭 합니다 **ATL OLEDB 소비자** 아이콘에는 **템플릿** 창과 클릭 **추가**합니다.
 
-   ATL OLE DB 소비자 마법사가 나타납니다.
+   ATL OLEDB 소비자 마법사가 나타납니다.
 
 1. 클릭 합니다 **데이터 원본** 단추입니다.
 
@@ -64,7 +64,7 @@ OLE DB 템플릿 소비자를 생성 하는 ATL 프로젝트 마법사 및 ATL O
 
    - 에 **공급자** 탭에서 OLE DB 공급자를 지정 합니다.
 
-   - 에 **연결** 탭에서 서버의 서버 이름, 로그온 ID 및 데이터 원본 및 데이터베이스에 대 한 암호를 지정 합니다.
+   - 에 **연결** 탭에서 서버의 데이터 원본 및 데이터베이스에 대 한 암호, 서버 이름 및 로그온 ID 등 필요한 정보를 지정 합니다.
 
    > [!NOTE]
    > 보안 문제가 합니다 **암호 저장 허용** 의 기능을 **데이터 연결 속성** 대화 상자. **서버에 로그온 정보 입력**, 두 개의 라디오 단추가 있습니다: **사용 하 여 Windows NT 통합 보안** 하 고 **특정 사용자 이름 및 암호를 사용 하 여**.
@@ -79,7 +79,7 @@ OLE DB 템플릿 소비자를 생성 하는 ATL 프로젝트 마법사 및 ATL O
 
    합니다 **데이터베이스 개체 선택** 대화 상자가 나타납니다.
 
-1. 트리 컨트롤을 사용 하 여 테이블, 뷰 또는 저장된 프로시저를 선택 합니다. 이 절차를 위해 Northwind 데이터베이스의 Products 테이블을 선택 합니다.
+1. 트리 컨트롤을 사용 하 여 테이블, 뷰 또는 저장된 프로시저를 선택 합니다. 이 절차를 목적으로 선택 합니다 `Products` 에서 테이블을 `Northwind` 데이터베이스입니다.
 
 1. **확인**을 클릭합니다. ATL OLE DB 소비자 마법사 돌아갑니다.
 

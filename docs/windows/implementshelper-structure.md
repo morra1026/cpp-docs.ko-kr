@@ -25,12 +25,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 574d0dbf6a252f65dd6c15681a243ce0e4086f0e
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: d734e98d8d7713451be1a16e08e58676f2b0cde4
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788502"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163688"
 ---
 # <a name="implementshelper-structure"></a>ImplementsHelper 구조체
 
@@ -52,7 +52,7 @@ friend struct Details::ImplementsHelper;
 목록 인터페이스 Id입니다.
 
 *IsDelegateToClass*<br/>
-지정 `true` 하는 경우 현재 인스턴스의 `Implements` 첫 번째 인터페이스 ID의 기본 클래스인 *ILst*고, 그렇지 않으면 `false`합니다.
+지정 **true** 하는 경우 현재 인스턴스의 `Implements` 첫 번째 인터페이스 ID의 기본 클래스인 *ILst*고, 그렇지 않으면 **false**합니다.
 
 ## <a name="remarks"></a>설명
 

@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 20da45d6161f76043c3d06f027192726c3520f44
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 668365cf69fc3457efc615a5fa0da2c24b3cb02e
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102553"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162388"
 ---
 # <a name="platformcollectionsvectoriterator-class"></a>Platform::Collections::VectorIterator 클래스
 
@@ -124,7 +124,7 @@ VectorIterator operator--(int);
 
 첫 번째 VectorIterator 구문은 현재 VectorIterator를 사전에 감소시킵니다.
 
-두 번째 구문은 현재 VectorIterator를 사후에 감소시킵니다. `int` 두 번째 구문의 형식은 실제 정수 피연산자가 없습니다를 후 위 감소 연산을 나타냅니다.
+두 번째 구문은 현재 VectorIterator를 사후에 감소시킵니다. 두 번째 구문의 `int` 형식은 실제 정수 연산자가 아니라 후위 감소 연산을 나타냅니다.
 
 ## <a name="operator-dereference"></a>  Vectoriterator:: Operator\* 연산자
 
@@ -157,7 +157,7 @@ bool operator==(const VectorIterator& other) const;
 
 ### <a name="return-value"></a>반환 값
 
-현재 VectorIterator가 `true`와 같지 않으면 `other`이고, 같으면 `false`입니다.
+**true** 현재 VectorIterator 같으면 *다른*이 고, 그렇지 않으면 **false**합니다.
 
 ## <a name="operator-greater-than"></a>  Vectoriterator:: Operator&gt; 연산자
 
@@ -176,7 +176,7 @@ bool operator>(const VectorIterator& other) const
 
 ### <a name="return-value"></a>반환 값
 
-`true` 현재 VectorIterator 보다 크면 `other`이 고, 그렇지 않으면 `false`합니다.
+**true 이면** 현재 VectorIterator 보다 크면 *다른*이 고, 그렇지 않으면 **false**합니다.
 
 ## <a name="operator-greater-than-or-equals"></a>  Vectoriterator:: Operator&gt;= 연산자
 
@@ -195,7 +195,7 @@ bool operator>=(const VectorIterator& other) const
 
 ### <a name="return-value"></a>반환 값
 
-현재 VectorIterator가 `true`보다 크거나 같으면 `other`이고, 그렇지 않으면 `false`입니다.
+**true 이면** 현재 VectorIterator 보다 크거나 같은 경우 *다른*이 고, 그렇지 않으면 **false**합니다.
 
 ## <a name="operator-increment"></a>  Vectoriterator:: Operator + + 연산자
 
@@ -216,7 +216,7 @@ VectorIterator operator++(int);
 
 첫 번째 VectorIterator 구문은 현재 VectorIterator를 사전에 증가시킵니다.
 
-두 번째 구문은 현재 VectorIterator를 사후에 증가시킵니다. 두 번째 구문의 `int` 형식은 실제 정수 연산자가 아니라 후위 증가 연산을 나타냅니다.
+두 번째 구문은 현재 VectorIterator를 사후에 증가시킵니다. 두 번째 구문의 `int` 형식은 실제 정수 피연산자가 아니라 후위 증가 연산을 나타냅니다.
 
 ## <a name="operator-inequality"></a>  Vectoriterator:: Operator! = 연산자
 
@@ -235,7 +235,7 @@ bool operator!=(const VectorIterator& other) const;
 
 ### <a name="return-value"></a>반환 값
 
-`true` 현재 VectorIterator를 같지 `other`이 고, 그렇지 않으면 `false`합니다.
+**true** 현재 VectorIterator를 같지 *다른*이 고, 그렇지 않으면 **false**합니다.
 
 ## <a name="operator-less-than"></a>  Vectoriterator:: Operator&lt; 연산자
 
@@ -254,7 +254,7 @@ bool operator<(const VectorIterator& other) const
 
 ### <a name="return-value"></a>반환 값
 
-현재 VectorIterator가 `true`보다 작으면 `other`이고, 크거나 같으면 `false`입니다.
+**true 이면** 현재 VectorIterator가 보다 작거나 *다른*이 고, 그렇지 않으면 **false**합니다.
 
 ## <a name="operator-less-than-or-equals"></a>  Vectoriterator:: Operator&lt;= 연산자
 
@@ -273,7 +273,7 @@ bool operator<=(const VectorIterator& other) const
 
 ### <a name="return-value"></a>반환 값
 
-`true` 현재 VectorIterator 보다 작거나 같음 인지 `other`이 고, 그렇지 않으면 `false`합니다.
+**true 이면** 현재 VectorIterator 보다 작거나 같음 인지 *다른*이 고, 그렇지 않으면 **false**합니다.
 
 ## <a name="operator-minus"></a>  Vectoriterator:: Operator-연산자
 
@@ -298,7 +298,7 @@ difference_type operator-(const VectorIterator& other) const;
 
 ### <a name="return-value"></a>반환 값
 
-VectorIterator 개체를 반환 하는 첫 번째 연산자 구문은 `n` 현재 VectorIterator 보다 작은 요소입니다. 두 번째 연산자 구문은 현재 사이의 요소 수를 반환 하며 `other` VectorIterator입니다.
+첫 번째 연산자 구문은 현재 VectorIterator에서 `n`개 요소를 뺀 VectorIterator 개체를 반환합니다. 두 번째 구문은 현재 VectorIterator와 `other` VectorIterator의 요소 수 차이를 반환합니다.
 
 ## <a name="operator-plus-assign"></a>  Vectoriterator:: Operator + = 연산자
 

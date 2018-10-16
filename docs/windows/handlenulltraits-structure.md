@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 517e861020c48d08f40c9683822e3df23cbf38a2
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 1060d28e35a52e2a8c5c550664d36d8272628526
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235895"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161738"
 ---
 # <a name="handlenulltraits-structure"></a>HANDLENullTraits 구조체
 
@@ -80,7 +80,7 @@ inline static bool Close(
 
 ### <a name="return-value"></a>반환 값
 
-`true` 경우 처리할 *h* 이 고, 그렇지 않으면 닫은 `false`합니다.
+**true** 경우 처리할 *h* 이 고, 그렇지 않으면 닫은 **false**합니다.
 
 ## <a name="getinvalidvalue"></a>Handlenulltraits:: Getinvalidvalue
 

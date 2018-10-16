@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 622f439355c9d8b059ac48f0bdc1f57c1b32e5eb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 82266e387bcba3e4e7f2e377c666ce890d258e0f
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387668"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162115"
 ---
 # <a name="overwritebuffer-class"></a>overwrite_buffer 클래스
 
@@ -67,7 +67,7 @@ class overwrite_buffer : public propagator_block<multi_link_registry<ITarget<T>>
 |이름|설명|
 |----------|-----------------|
 |[has_value](#has_value)|확인 여부를이 `overwrite_buffer` 메시징 블록 값을 갖고 있습니다.|
-|[value](#value)|현재 페이로드의에 저장 되는 메시지에 대 한 참조를 가져옵니다는 `overwrite_buffer` 메시징 블록입니다.|
+|[값](#value)|현재 페이로드의에 저장 되는 메시지에 대 한 참조를 가져옵니다는 `overwrite_buffer` 메시징 블록입니다.|
 
 ### <a name="protected-methods"></a>보호된 메서드
 
@@ -160,7 +160,7 @@ bool has_value() const;
 
 ### <a name="return-value"></a>반환 값
 
-`true` 블록 값을 받은 경우 `false` 그렇지 않은 경우.
+**true 이면** 블록에 값을 받은 경우 **false** 그렇지 않은 경우.
 
 ##  <a name="link_target_notification"></a> link_target_notification
 
@@ -214,10 +214,10 @@ overwrite_buffer(
 제공 된 메시지를 허용 해야 하는지 여부를 결정 하는 필터 함수입니다.
 
 *_PScheduler*<br/>
-`Scheduler` 개체에 대 한 작업의 전파는는 `overwrite_buffer` 메시징 블록 예약 됩니다.
+`Scheduler` 메시징 블록의 전파 작업이 예약되는 `overwrite_buffer` 개체입니다.
 
 *_PScheduleGroup*<br/>
-`ScheduleGroup` 개체에 대 한 작업의 전파는는 `overwrite_buffer` 메시징 블록 예약 됩니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.
+`ScheduleGroup` 메시징 블록의 전파 작업이 예약되는 `overwrite_buffer` 개체입니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -296,7 +296,7 @@ virtual bool supports_anonymous_source();
 
 ### <a name="return-value"></a>반환 값
 
-블록은 제공된 메시지를 연기하지 않기 때문에 `true`입니다.
+**true** 블록은 연기 하지 때문에 메시지를 제공 합니다.
 
 ##  <a name="release_message"></a> release_message
 
@@ -326,11 +326,11 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 ### <a name="return-value"></a>반환 값
 
-`true` 메시지를 성공적으로 예약 하는 경우 `false` 그렇지 않은 경우.
+**true 이면** 메시지를 성공적으로 예약 하는 경우 **false** 그렇지 않은 경우.
 
 ### <a name="remarks"></a>설명
 
-후 `reserve` 반환 하는 경우 라고 `true`하거나, `consume` 또는 `release` 수행 하거나 메시지의 소유권을 해제를 호출 해야 합니다.
+후 `reserve` 반환 하는 경우 라고 **true**하거나, `consume` 또는 `release` 수행 하거나 메시지의 소유권을 해제를 호출 해야 합니다.
 
 ##  <a name="resume_propagation"></a> resume_propagation
 

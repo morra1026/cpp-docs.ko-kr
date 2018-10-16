@@ -1,12 +1,14 @@
 ---
 title: __stdcall | Microsoft Docs
 ms.custom: ''
-ms.date: 09/05/2018
+ms.date: 10/10/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
 f1_keywords:
 - __stdcall_cpp
+- __stdcall
+- _stdcall
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb65ff85346412587fab96934ca5438bb6a4dfe5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 06eafcd4303e01be523554f2a164e6cb14f79a26
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46031381"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162258"
 ---
 # <a name="stdcall"></a>__stdcall
 
@@ -46,6 +48,8 @@ ms.locfileid: "46031381"
 |대/소문자 변환 규칙|없음|
 
 합니다 [/Gz](../build/reference/gd-gr-gv-gz-calling-convention.md) 컴파일러 옵션 지정 **__stdcall** 다른 호출 규칙을 사용 하 여 명시적으로 선언 된 모든 함수에 대 한 합니다.
+
+이전 버전과 호환성에 대 한 **_stdcall** 에 대 한 동의어가 **__stdcall** 하지 않으면 컴파일러 옵션 [/Za \(언어 확장 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md) 는 지정 합니다.
 
 사용 하 여 선언 된 함수는 **__stdcall** 반환 되는 한정자 값을 사용 하 여 선언 된 함수와 동일한 방식으로 [__cdecl](../cpp/cdecl.md)합니다.
 

@@ -1,7 +1,7 @@
 ---
 title: '방법: const 키워드를 사용 하 여 내부 포인터 선언 (C + + /cli CLI) | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ec8b965cb29e689fccf7af6a3692a5fe164a9aa6
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 3781caf8d45037ae634ea4baccc8f297aa344609
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603187"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327508"
 ---
 # <a name="how-to-declare-interior-pointers-with-the-const-keyword-ccli"></a>방법: const 키워드(C++/CLI)를 사용하여 내부 포인터 선언
 
@@ -29,7 +29,7 @@ ms.locfileid: "42603187"
 > [!IMPORTANT]
 > 이 언어 기능은 `/clr` 컴파일러 옵션에서 지원하지만 `/ZW` 컴파일러 옵션에서는 지원하지 않습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // interior_ptr_const.cpp

@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: d96ddbd35b37f084e277951812f7868452ed09d5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6ea18e7881b3569a3f4f9da237dc8a2b31a2ef29
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438199"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163506"
 ---
 # <a name="lockoperator"></a>lock::operator!=
 
@@ -46,11 +46,11 @@ template<class T> bool operator!=(
 
 ## <a name="return-value"></a>반환 값
 
-반환 `true` 하는 경우 `t` 잠금의 개체에서 다른 `false` 그렇지 않은 경우.
+반환 **true** 하는 경우 `t` 잠금의 개체에서 다른 **false** 그렇지 않은 경우.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // msl_lock_op_ineq.cpp
 // compile with: /clr
 #include <msclr/lock.h>

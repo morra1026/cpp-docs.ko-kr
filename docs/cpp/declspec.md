@@ -1,12 +1,14 @@
 ---
 title: __declspec | Microsoft Docs
 ms.custom: ''
-ms.date: 1/23/2018
+ms.date: 10/09/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
 f1_keywords:
 - __declspec_cpp
+- __declspec
+- _declspec
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b159bcdae6e7f576ed92275ec5f79d25132b53e5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f413c56b665a1878fb1e948b975ab8e4cbc0daf4
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111324"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163590"
 ---
 # <a name="declspec"></a>__declspec
 
@@ -66,6 +68,8 @@ ms.locfileid: "46111324"
 확장 된 특성 문법 이러한 Microsoft 전용 저장소 클래스 특성에서 지 원하는: [맞춤](../cpp/align-cpp.md)를 [할당할](../cpp/allocate.md)를 [appdomain](../cpp/appdomain.md), [code_seg](../cpp/code-seg-declspec.md), [사용 되지 않음](../cpp/deprecated-cpp.md)를 [dllexport](../cpp/dllexport-dllimport.md)를 [dllimport](../cpp/dllexport-dllimport.md)를 [jitintrinsic](../cpp/jitintrinsic.md), [naked](../cpp/naked-cpp.md), [noalias](../cpp/noalias.md)를 [noinline](../cpp/noinline.md)를 [noreturn](../cpp/noreturn.md)를 [nothrow](../cpp/nothrow-cpp.md)를 [novtable](../cpp/novtable.md) 를 [프로세스](../cpp/process.md), [제한](../cpp/restrict.md)를 [safebuffers](../cpp/safebuffers.md)를 [selectany](../cpp/selectany.md)를 [스펙터](../cpp/spectre.md), 및 [스레드](../cpp/thread.md)합니다. 또한 이러한 COM 개체 특성인 지원: [속성](../cpp/property-cpp.md) 하 고 [uuid](../cpp/uuid-cpp.md)합니다.
 
 합니다 **code_seg**, **dllexport**를 **dllimport**를 **naked**를 **noalias**, **nothrow** , **속성**, **제한할**를 **selectany**를 **스레드**, 및 **uuid**저장소 클래스 특성은 적용 되는 함수 개체의 선언에만 속성입니다. 합니다 **스레드** 특성 데이터에 영향을 줍니다. 및 개체에 합니다. 합니다 **naked** 하 고 **스펙터** 특성 함수에만 영향을 합니다. 합니다 **dllimport** 하 고 **dllexport** 특성 함수, 데이터 및 개체에 영향을 줍니다. 합니다 **속성**, **selectany**, 및 **uuid** 특성 COM 개체에 영향을 줍니다.
+
+이전 버전과 호환성에 대 한 **_declspec** 에 대 한 동의어가 **__declspec** 하지 않으면 컴파일러 옵션 [/Za \(언어 확장 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md) 는 지정 합니다.
 
 합니다 **__declspec** 키워드는 단순한 선언 시작 부분에 배치 해야 합니다. 컴파일러 경고 없이 무시 **__declspec** 키워드 뒤에 배치 * 또는 & 및 선언에 변수 식별자 앞에 있습니다.
 

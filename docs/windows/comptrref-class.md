@@ -35,12 +35,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a674d63c52f6f204d0bb69c69cd5814cd6d9761a
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 85f9498f44f4f1ec2598e6263c003d041f519105
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788944"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162219"
 ---
 # <a name="comptrref-class"></a>ComPtrRef 클래스
 
@@ -176,11 +176,11 @@ bool operator==(
 
 ### <a name="return-value"></a>반환 값
 
-첫 번째 연산자 생성 `true` 하는 경우 개체 *는* 개체와 동일한 지 *b*고, 그렇지 않으면 `false`합니다.
+첫 번째 연산자 생성 **true** 하는 경우 개체 *는* 개체와 동일한 지 *b*고, 그렇지 않으면 **false**합니다.
 
-두 번째 및 세 번째 연산자를 생성 `true` 경우 개체 *는* 값과 같음 `nullptr`이 고, 그렇지 않으면 `false`합니다.
+두 번째와 세 번째 연산자에서 생성 **true** 하는 경우 개체 *는* 값과 같음 **nullptr**고, 그렇지 않으면 **false**합니다.
 
-네 번째와 다섯 번째 연산자에서 생성 `true` 경우 개체 *는* 개체와 동일한 지 *b*고, 그렇지 않으면 `false`합니다.
+네 번째와 다섯 번째 연산자에서 생성 **true** 경우 개체 *는* 개체와 동일한 지 *b*고, 그렇지 않으면 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -227,11 +227,11 @@ bool operator!=(
 
 ### <a name="return-value"></a>반환 값
 
-첫 번째 연산자 생성 `true` 하는 경우 개체 *는* 개체와 같지 않은 *b*고, 그렇지 않으면 `false`합니다.
+첫 번째 연산자 생성 **true** 하는 경우 개체 *는* 개체와 같지 않은 *b*고, 그렇지 않으면 **false**합니다.
 
-두 번째 및 세 번째 연산자에서 생성 `true` 경우 개체 *는* 같지 `nullptr`이 고, 그렇지 않으면 `false`합니다.
+두 번째 및 세 번째 연산자를 생성 **true** 경우 개체 *는* 같지 **nullptr**고, 그렇지 않으면 **false**합니다.
 
-네 번째와 다섯 번째 연산자에서 생성 `true` 하는 경우 개체 *는* 개체와 같지 않은 *b*고, 그렇지 않으면 `false`합니다.
+네 번째와 다섯 번째 연산자에서 생성 **true** 하는 경우 개체 *는* 개체와 같지 않은 *b*고, 그렇지 않으면 **false**합니다.
 
 ### <a name="remarks"></a>설명
 

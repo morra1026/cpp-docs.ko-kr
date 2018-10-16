@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67376497f3c0be84c0e24e403eaa3129ec38b255
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: a0aa56c511ac5f7b98ffdd75aebd7f71ef9f21ac
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110781"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162024"
 ---
 # <a name="platformcollectionsinputiterator-class"></a>Platform::Collections::InputIterator 클래스
 
@@ -137,7 +137,7 @@ bool operator== (const InputIterator& other) const;
 
 ### <a name="return-value"></a>반환 값
 
-현재 InputIterator가 `true`와 같으면 `other`이고, 같으면 `false`입니다.
+**true 이면** 현재 inputiterator가 같으면 *다른*이 고, 그렇지 않으면 **false**합니다.
 
 ## <a name="operator-increment"></a>  Inputiterator:: Operator + + 연산자
 
@@ -158,7 +158,7 @@ InputIterator operator++(int);
 
 첫 번째 InputIterator 구문은 현재 InputIterator를 사전에 증가시킵니다.
 
-두 번째 구문은 현재 InputIterator를 사후에 증가시킵니다. 두 번째 구문의 `int` 형식은 실제 정수 연산자가 아니라 후위 증가 연산을 나타냅니다.
+두 번째 구문은 현재 InputIterator를 사후에 증가시킵니다. 두 번째 구문의 `int` 형식은 실제 정수 피연산자가 아니라 후위 증가 연산을 나타냅니다.
 
 ## <a name="operator-inequality"></a>  Inputiterator:: Operator! = 연산자
 
@@ -177,7 +177,7 @@ bool operator!=(const InputIterator& other) const;
 
 ### <a name="return-value"></a>반환 값
 
-현재 InputIterator가 `true`와 같지 않으면 `other`이고, 같으면 `false`입니다.
+**true 이면** 현재 inputiterator가 같지 않은 경우 *다른*이 고, 그렇지 않으면 **false**합니다.
 
 ## <a name="see-also"></a>참고 항목
 

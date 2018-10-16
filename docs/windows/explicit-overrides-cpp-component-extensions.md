@@ -1,7 +1,7 @@
 ---
-title: 명시적 재정의 (c + + 구성 요소 확장) | Microsoft Docs
+title: 명시적 재정의 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ba6ed66359ee833b51154e47f8f6c26c0de8994c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 689c8420c2526f94f88c8b2ba8433c2310281874
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408949"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328040"
 ---
-# <a name="explicit-overrides--c-component-extensions"></a>명시적 재정의(C++ 구성 요소 확장명)
+# <a name="explicit-overrides--ccli-and-ccx"></a>명시적 재정의 (C + + /cli 및 C + + /cli CX)
 
 이 항목에서는 기본 클래스 또는 인터페이스의 멤버를 명시적으로 재정의 하는 방법을 설명 합니다. 명명 된 (명시적) 재정의 다른 이름을 가진 파생된 메서드를 사용 하 여 메서드를 재정의 하려면 사용할 해야 합니다.
 
@@ -184,4 +184,4 @@ public:
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

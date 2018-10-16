@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36fe82bc5d17cd3c4951b008af28ba89b171c78f
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: acf3ae2fd16eb3aacbc0a2e681ae39aece1b4dd4
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103934"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163220"
 ---
 # <a name="platformcollectionsvector-class"></a>Platform::Collections::Vector 클래스
 
@@ -71,7 +71,7 @@ Vector 개체에 포함된 요소의 형식입니다.
 
 합니다 **벡터** 클래스는 c + + 구체적 구현 합니다 [Windows::Foundation::Collections::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_) 인터페이스입니다.
 
-사용 하려는 경우는 **벡터** 입력 공용 반환 값 또는 매개 변수, 컴파일러 오류 C3986이 발생 합니다. 값 형식을 반환 하거나 매개 변수를 변경 하 여 오류를 해결할 수 있습니다 [Windows::Foundation::Collections::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_)합니다. 자세한 내용은 [컬렉션(C++/CX)](../cppcx/collections-c-cx.md)을 참조하세요.
+사용 하려는 경우는 **벡터** 입력 공용 반환 값 또는 매개 변수, 컴파일러 오류 C3986이 발생 합니다. 매개 변수나 반환 값 형식을 [Windows::Foundation::Collections::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_)로 변경하여 오류를 수정할 수 있습니다. 자세한 내용은 [컬렉션(C++/CX)](../cppcx/collections-c-cx.md)을 참조하세요.
 
 ### <a name="members"></a>멤버
 
@@ -240,11 +240,11 @@ virtual bool IndexOf(T value, unsigned int* index);
 *index*<br/>
 항목의 인덱스 0부터 시작 하는 경우 매개 변수 *값* 이 고, 그렇지 않으면 0입니다.
 
-합니다 *인덱스* 매개 변수 0은 벡터의 첫 번째 요소인 항목 또는 항목을 찾을 수 없습니다. 반환 값이 `true`일 경우 항목을 찾았고 첫 번째 요소인 것이며, 그렇지 않으면 항목을 찾지 못한 것입니다.
+합니다 *인덱스* 매개 변수 0은 벡터의 첫 번째 요소인 항목 또는 항목을 찾을 수 없습니다. 반환 값이 **true**, 항목을 찾을 것이 첫 번째 요소 하 고 그렇지 않으면 항목을 찾을 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
 
-지정된 항목을 찾았으면 `true`이고, 그렇지 않으면 `false`입니다.
+**true 이면** 지정된 된 항목이 고, 그렇지 않으면 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -401,4 +401,4 @@ Vector의 요소 수입니다.
 ## <a name="see-also"></a>참고 항목
 
 [플랫폼 Namespace](platform-namespace-c-cx.md)<br/>
-[C + + Windows 런타임 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
+[C++로 Windows Runtime 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16778adeb898759a9c15d08175d9482f8411b44c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 867f94cd290e6b8ee5f9e50b266b0e4c9df63adf
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413772"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163259"
 ---
 # <a name="taskcompletionevent-class"></a>task_completion_event 클래스
 
@@ -96,11 +96,11 @@ bool set() const ;
 
 ### <a name="return-value"></a>반환 값
 
-메서드는 반환 `true` 이벤트 설정에 성공 합니다. 반환 `false` 이벤트가 이미 설정 된 경우.
+메서드는 반환 **true** 이벤트 설정에 성공 합니다. 반환 **false** 이벤트가 이미 설정 된 경우.
 
 ### <a name="remarks"></a>설명
 
-여러 개 있는 경우 또는 동시 호출이 `set`, 첫 번째 호출만 성공 하 고 그 결과 (있는 경우) 작업 완료 이벤트에 저장 됩니다. 나머지 세트는 무시 됩니다 및 메서드는 false를 반환 합니다. 작업 완료 이벤트를 설정 하면 이벤트 즉시 완료 하 고 연속 작업이 있는 경우 예정 된 모든 작업에서 만들어집니다. 작업 완료 개체는 `_ResultType` 이외의 `void` 연속으로 값을 전달 합니다.
+여러 개 있는 경우 또는 동시 호출이 `set`, 첫 번째 호출만 성공 하 고 그 결과 (있는 경우) 작업 완료 이벤트에 저장 됩니다. 나머지 세트는 무시 됩니다 및 메서드는 false를 반환 합니다. 작업 완료 이벤트를 설정 하면 이벤트 즉시 완료 하 고 연속 작업이 있는 경우 예정 된 모든 작업에서 만들어집니다. 작업 완료 개체는 `_ResultType` 이외의 **void** 연속으로 값을 전달 합니다.
 
 ##  <a name="set_exception"></a> set_exception
 

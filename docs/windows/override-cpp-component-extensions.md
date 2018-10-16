@@ -1,5 +1,5 @@
 ---
-title: override (c + + 구성 요소 확장) | Microsoft Docs
+title: 재정의 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6071cef3d5669fda86975bb0f27a2b9b87eeb011
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fc124ffcdd0ff428c4ef696bf54a27eb9b0ee7d8
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46407272"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328456"
 ---
-# <a name="override--c-component-extensions"></a>override(C++ 구성 요소 확장)
+# <a name="override--ccli-and-ccx"></a>재정의 (C + + /cli 및 C + + /cli CX)
 
 합니다 **재정의** 상황에 맞는 키워드는 형식의 멤버를 기본 클래스 또는 기본 인터페이스 멤버를 재정의 함을 나타냅니다.
 

@@ -29,12 +29,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a50203f8e709a24293598b29e41b3220d5e9af5a
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: f140522e3697a427f66c88a2b9f6a53d40f2f8ad
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788729"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162141"
 ---
 # <a name="interfacetraits-structure"></a>InterfaceTraits 구조체
 
@@ -129,7 +129,7 @@ static __forceinline bool CanCastTo(
 
 ### <a name="return-value"></a>반환 값
 
-`true` 이 작업이 완료 되 고 *ptr* 포인터로 캐스팅 됩니다 `Base`이 고, 그렇지 않으면 `false` 합니다.
+**true** 이 작업이 완료 되 고 *ptr* 포인터로 캐스팅 됩니다 `Base`이 고, 그렇지 않으면 **false**합니다.
 
 ### <a name="remarks"></a>설명
 

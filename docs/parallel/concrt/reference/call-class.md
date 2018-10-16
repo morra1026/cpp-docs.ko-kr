@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b4f993c357ef3d4f66f9b2f22c9fb37a4e10c77
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0a99de307ec64c3b6d4e49f4e0a6eef532314bf9
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423899"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161868"
 ---
 # <a name="call-class"></a>call 클래스
 
@@ -55,7 +55,7 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
 
 |이름|설명|
 |----------|-----------------|
-|[call](#ctor)|오버로드됨. 생성 된 `call` 메시징 블록입니다.|
+|[call](#ctor)|오버로드됨. `call` 메시징 블록을 생성합니다.|
 |[~ call 소멸자](#dtor)|제거 된 `call` 메시징 블록입니다.|
 
 ### <a name="protected-methods"></a>보호된 메서드
@@ -88,7 +88,7 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
 
 ##  <a name="ctor"></a> 호출
 
-생성 된 `call` 메시징 블록입니다.
+`call` 메시징 블록을 생성합니다.
 
 ```
 call(
@@ -126,10 +126,10 @@ call(
 제공 된 메시지를 허용 해야 하는지 여부를 결정 하는 필터 함수입니다.
 
 *_PScheduler*<br/>
-`Scheduler` 개체에 대 한 작업의 전파는는 `call` 메시징 블록 예약 됩니다.
+`Scheduler` 메시징 블록의 전파 작업이 예약되는 `call` 개체입니다.
 
 *_PScheduleGroup*<br/>
-`ScheduleGroup` 개체에 대 한 작업의 전파는는 `call` 메시징 블록 예약 됩니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.
+`ScheduleGroup` 메시징 블록의 전파 작업이 예약되는 `call` 개체입니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -227,7 +227,7 @@ virtual bool supports_anonymous_source();
 
 ### <a name="return-value"></a>반환 값
 
-블록은 제공된 메시지를 연기하지 않기 때문에 `true`입니다.
+**true** 블록은 연기 하지 때문에 메시지를 제공 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9fc41bdccf9cce3d455d4effd3541731929e5de2
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 90ceaf20a5d601fc2904b7ce8610b4a3906e30ac
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789269"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161205"
 ---
 # <a name="isbaseofstrict-structure"></a>IsBaseOfStrict 구조체
 
@@ -52,7 +52,7 @@ struct IsBaseOfStrict<Base, Base>;
 
 형식 하나가 다른 형식의 기본 형식인지 테스트합니다.
 
-첫 번째 템플릿 형식을 생성 하는 기본 형식에서 파생 됩니다 있는지 여부를 테스트 `true` 또는 `false`합니다. 파생 된 형식 자체에서 항상 생성 하는 두 번째 템플릿은 테스트 `false`합니다.
+첫 번째 템플릿 형식을 생성 하는 기본 형식에서 파생 됩니다 있는지 여부를 테스트 **true** 하거나 **false**합니다. 두 번째 템플릿은 파생 된 형식 자체에서 항상 생성 하는 여부를 테스트 **false**합니다.
 
 ## <a name="members"></a>멤버
 
@@ -84,4 +84,4 @@ static const bool value = __is_base_of(Base, Derived);
 
 한 형식이 다른 형식의 기본 인지 여부를 나타냅니다.
 
-`value` 됩니다 `true` 경우 형식 `Base` 형식의 기본 클래스인 `Derived`, 그렇지 않으면 `false`합니다.
+`value` 됩니다 **true** 경우 형식 `Base` 형식의 기본 클래스인 `Derived`, 그렇지 않으면 **false**합니다.

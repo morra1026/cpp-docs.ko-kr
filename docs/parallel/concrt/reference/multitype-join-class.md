@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2a0a49431b50157248d6a86c03fa5085d78dcd8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2e8a06068d7a9bec4fd828941da409780eeed457
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387941"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163667"
 ---
 # <a name="multitypejoin-class"></a>multitype_join 클래스
 
@@ -164,7 +164,7 @@ virtual message<_Destination_type>* consume(
 
 ### <a name="remarks"></a>설명
 
-`consume` 메서드는 비슷합니다 `accept`를 항상 호출을 통해 야 하지만 `reserve` 반환 되는 `true`합니다.
+`consume` 메서드와 비슷합니다 `accept`를 항상 호출을 통해 야 하지만 `reserve` 반환 **true**합니다.
 
 ##  <a name="link_target"></a> link_target
 

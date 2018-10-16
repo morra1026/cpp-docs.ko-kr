@@ -144,7 +144,7 @@
 ### [빌드 사용자 지정 문제 해결](troubleshooting-build-customizations.md)
 ### [사용자 지정 빌드 단계 또는 빌드 이벤트의 출력 형식 지정](formatting-the-output-of-a-custom-build-step-or-build-event.md)
 ## [빌드 명령 및 속성에 대한 일반 매크로](common-macros-for-build-commands-and-properties.md)
-## [프로젝트 파일](project-files.md)
+## [예제 프로젝트 파일](project-files.md)
 ## [연습: Visual Studio에서 CLR을 대상으로 하는 C++ 프로그램 컴파일](walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md)
 # [C++ 데스크톱 개발에 Visual Studio IDE 사용](using-the-visual-studio-ide-for-cpp-desktop-development.md)
 ## [연습: 프로젝트 및 솔루션 작업(C++)](walkthrough-working-with-projects-and-solutions-cpp.md)

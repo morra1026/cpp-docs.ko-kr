@@ -31,12 +31,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 70663c43c6d3bc7b661f339ce679d3faf16c9aae
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: ae2199ec414556fe3401c94c273d5ef0c13c3c5d
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235864"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162531"
 ---
 # <a name="hstringreference-class"></a>HStringReference 클래스
 
@@ -199,7 +199,7 @@ inline bool operator==(
 
 ### <a name="return-value"></a>반환 값
 
-`true` 경우는 *lhs* 하 고 *rhs* 같고, 그렇지 않으면 매개 변수는 `false`합니다.
+**true** 경우는 *lhs* 하 고 *rhs* 매개 변수는 같고, 그렇지 않으면 **false**합니다.
 
 ## <a name="operator-inequality"></a>Hstringreference:: Operator! =
 
@@ -229,7 +229,7 @@ inline bool operator!=(
 
 ### <a name="return-value"></a>반환 값
 
-`true` 경우는 *lhs* 하 고 *rhs* 매개 변수는 같고, 그렇지 않으면 `false`합니다.
+**true** 경우는 *lhs* 하 고 *rhs* 매개 변수는 같고, 그렇지 않으면 **false**합니다.
 
 ## <a name="operator-less-than"></a>Hstringreference:: Operator&lt;
 
@@ -251,4 +251,4 @@ inline bool operator<(
 
 ### <a name="return-value"></a>반환 값
 
-`true` 경우는 *lhs* 매개 변수는 보다 작은 *rhs* 매개 변수가 고, 그렇지 않으면 `false`합니다.
+**true** 경우는 *lhs* 매개 변수는 보다 작은 *rhs* 매개 변수가 고, 그렇지 않으면 **false**합니다.

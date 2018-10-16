@@ -1,5 +1,5 @@
 ---
-title: MSG 구조체 1 | Microsoft Docs
+title: MSG 구조체 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2819faa25e2dbd41d6578d60780d13011bb645c0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2b2f58af3bcf3eef524b95d25579e5bc233f9108
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388396"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49334566"
 ---
-# <a name="msg-structure1"></a>MSG 구조체 1
+# <a name="msg-structure"></a>MSG 구조체
 
 `MSG` 구조 스레드의 메시지 큐에서 메시지 정보를 포함 합니다.
 

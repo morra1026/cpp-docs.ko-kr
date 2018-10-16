@@ -1,5 +1,5 @@
 ---
-title: Cacceleratedeceleratetransition 클래스 1 | Microsoft Docs
+title: Cacceleratedeceleratetransition 클래스 클래스 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d548a87b7d02130e4a926fd33490223f0070c74c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b0133a24b5253baa4d7292cc54d02df5201abd63
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445037"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49334595"
 ---
 # <a name="cacceleratedeceleratetransition-class"></a>Cacceleratedeceleratetransition 클래스 클래스
 

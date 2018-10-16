@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3777116bf2a641a4fdc220306680c0150d5ba2d0
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 2d9c68bde9fdd49e4007b8b6e1d92899d71dde4e
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106416"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162544"
 ---
 # <a name="platformstring-class"></a>Platform::String 클래스
 
@@ -174,7 +174,7 @@ String^ Concat( String^ str1, String^ str2);
 
 `str1` 값과 `str2` 값의 연결을 값으로 하는 새로운 String^ 개체입니다.
 
-경우 `str1` 됩니다 `null` 하 고 `str2` 되지 `str1` 반환 됩니다. 경우 `str2` 됩니다 `null` 하 고 `str1` 되지 `str2` 반환 됩니다. `str1`과 `str2`가 모두 `null`이면 빈 문자열(L"")이 반환됩니다.
+`str1`가 `null`이고 `str2`이l 아니면 `str1`가 반환됩니다. `str2`가 `null`이고 `str1`이l 아니면 `str2`가 반환됩니다. `str1`과 `str2`가 모두 `null`이면 빈 문자열(L"")이 반환됩니다.
 
 ## <a name="data"></a>  String:: data 메서드
 
@@ -240,7 +240,7 @@ bool String::Equals(String^ str);
 
 ### <a name="return-value"></a>반환 값
 
-`true`이 현재 개체와 같으면 `str`이고, 그렇지 않으면 `false`입니다.
+**true 이면** 하는 경우 `str` 이 고, 그렇지 않으면 현재 개체와 같으면 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -272,7 +272,7 @@ bool IsEmpty();
 
 ### <a name="return-value"></a>반환 값
 
-현재 String 개체가 `true` 또는 빈 문자열(L"")이면 `null`이고, 그렇지 않으면 `false`입니다.
+**true** 하는 경우 현재 `String` 개체가 **null** 이거나 빈 문자열 (L"")이 고, 그렇지 않으면 **false**합니다.
 
 ## <a name="isfastpass"></a>  String:: isfastpass 메서드
 
@@ -286,7 +286,7 @@ bool IsFastPass();
 
 ### <a name="return-value"></a>반환 값
 
-현재 String 개체가 fast-past이면 `true`이고, 그렇지 않으면 `false`입니다.
+**true** 하는 경우 현재 `String` 개체가 고, 그렇지 않으면 빠른 과거 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -294,7 +294,7 @@ bool IsFastPass();
 
 ## <a name="length"></a>  String:: length 메서드
 
-현재 String 개체의 문자 수를 검색합니다.
+현재에서 문자 수를 검색 `String` 개체입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -304,7 +304,7 @@ unsigned int Length();
 
 ### <a name="return-value"></a>반환 값
 
-현재 String 개체의 문자 수입니다.
+현재에서 문자 수가 `String` 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -337,11 +337,11 @@ bool String::operator+( String^ str1, String^ str2);
 
 ### <a name="return-value"></a>반환 값
 
-`true`가 `str1`와 같으면 `str2`이고, 그러지 않으면 `false`입니다.
+**true** 하는 경우 *str1* 값과 같음 *str2*고, 그렇지 않으면 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
-이 연산자는 두 피연산자의 데이터가 들어 있는 `String^` 개체를 만듭니다. 매우 높은 성능이 중요하지 않은 경우 편의를 위해 이를 사용합니다. 함수에서 "`+`"를 몇 번 호출하는 것은 그렇게 눈에 띄지 않지만 대행 개체나 텍스트 데이터를 연속해서 조작하는 경우 표준 C++ 매커니즘과 형식을 사용하십시오.
+이 연산자는 두 피연산자의 데이터가 들어 있는 `String^` 개체를 만듭니다. 매우 높은 성능이 중요하지 않은 경우 편의를 위해 이를 사용합니다. 함수에서 "`+`"를 몇 번 호출하는 것은 그렇게 눈에 띄지 않지만 대행 개체나 텍스트 데이터를 연속해서 조작하는 경우 표준 C++ 매커니즘과 형식을 사용하세요.
 
 ##  <a name="operator-equality"></a> String:: operator = = 연산자
 
@@ -356,14 +356,14 @@ bool String::operator==( String^ str1, String^ str2);
 ### <a name="parameters"></a>매개 변수
 
 *str1*<br/>
-비교할 첫 번째 String 개체입니다.
+비교할 첫 번째 `String` 개체입니다.
 
 *str2*<br/>
-비교할 두 번째 String 개체입니다.
+비교할 두 번째 `String` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
-`true`의 내용이 `str1`와 같으면 `str2`이고, 그렇지 않으면 `false`입니다.
+**true** 경우 내용의 `str1` 같으면 `str2`이 고, 그렇지 않으면 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -371,7 +371,7 @@ bool String::operator==( String^ str1, String^ str2);
 
 ##  <a name="operator-greater-than"></a>  String::operator&gt;
 
-String 개체 값이 두 번째 String 개체 값보다 큰지 여부를 나타냅니다.
+나타냅니다 여부를 하나의 값 `String` 개체의 값 보다 크면 `String` 개체입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -382,14 +382,14 @@ bool String::operator>( String^ str1, String^ str2);
 ### <a name="parameters"></a>매개 변수
 
 *str1*<br/>
-첫 번째 String 개체입니다.
+첫 번째 `String` 개체입니다.
 
 *str2*<br/>
-두 번째 String 개체입니다.
+두 번째 `String` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
-`str1`의 값이 `str2`의 값보다 크면 `true`이고, 그렇지 않으면 `false`입니다.
+**true** 하는 경우 값 `str1` 의 값 보다 크면 `str2`이 고, 그렇지 않으면 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -397,7 +397,7 @@ bool String::operator>( String^ str1, String^ str2);
 
 ## <a name="operator-greater-than-or-equals"></a> String::operator&gt;=
 
-String 개체 값이 두 번째 String 개체 값보다 크거나 같은지 여부를 나타냅니다.
+나타냅니다 여부를 하나의 값 `String` 개체가 두 번째 값 보다 크거나 `String` 개체입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -408,18 +408,18 @@ bool String::operator>=( String^ str1, String^ str2);
 ### <a name="parameters"></a>매개 변수
 
 *str1*<br/>
-첫 번째 String 개체입니다.
+첫 번째 `String` 개체입니다.
 
 *str2*<br/>
-두 번째 String 개체입니다.
+두 번째 `String` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
-`str1`의 값이 `str2`의 값보다 크거나 같으면 `true`이고, 그렇지 않으면 `false`입니다.
+**true** 경우 값 `str1` 는 값 보다 크거나 `str2`고, 그렇지 않으면 **false**합니다.
 
 ## <a name="operator-inequality"></a> String::operator!=
 
-지정된 두 String 개체의 값이 다른지 여부를 나타냅니다.
+나타냅니다 두 지정 `String` 개체에 다른 값입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -430,18 +430,18 @@ bool String::operator!=( String^ str1, String^ str2);
 ### <a name="parameters"></a>매개 변수
 
 *str1*<br/>
-비교할 첫 번째 String 개체입니다.
+비교할 첫 번째 `String` 개체입니다.
 
 *str2*<br/>
-비교할 두 번째 String 개체입니다.
+비교할 두 번째 `String` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
-`true`가 `str1`와 다르면 `str2`이고, 그러지 않으면 `false`입니다.
+**true** 하는 경우 `str1` 같지 `str2`이 고, 그렇지 않으면 **false**합니다.
 
 ## <a name="operator-less-than"></a> String:: operator&lt;
 
-String 개체 값이 두 번째 String 개체 값보다 작은지 여부를 나타냅니다.
+나타냅니다 여부를 하나의 값 `String` 개체를 사용 하면 두 번째 값 보다 작으면 `String` 개체입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -452,18 +452,18 @@ bool String::operator<( String^ str1, String^ str2);
 ### <a name="parameters"></a>매개 변수
 
 *str1*<br/>
-첫 번째 String 개체입니다.
+첫 번째 `String` 개체입니다.
 
 *str2*<br/>
-두 번째 String 개체입니다.
+두 번째 `String` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
-`str1`의 값이 `str2`의 값보다 작으면 `true`이고, 그렇지 않으면 `false`입니다.
+**true** 하는 경우 값 *str1* 의 값 보다 작으면 *str2*고, 그렇지 않으면 **false**합니다.
 
 ## <a name="ctor"></a> String:: string 생성자
 
-입력 문자열 데이터의 복사본을 사용하여 String 클래스의 새 인스턴스를 초기화합니다.
+새 인스턴스를 초기화 합니다 `String` 입력된 문자열 데이터의 복사본을 사용 하 여 클래스입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -492,7 +492,7 @@ String^ s = L"Hello!";
 
 ## <a name="tostring"></a> String::ToString
 
-현재 문자열과 같은 값을 갖는 String 개체를 반환합니다.
+반환 된 `String` 현재 문자열과 동일한 값인 개체입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -502,7 +502,7 @@ String^ String::ToString();
 
 ### <a name="return-value"></a>반환 값
 
-현재 문자열과 같은 값을 갖는 String 개체입니다.
+`String` 현재 문자열과 동일한 값인 개체입니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -13,12 +13,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9eb820b533b74d5634695ddabda26f081a35f95
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8065be6cc53cad04d5d52bea91da05bb3125dd63
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436925"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162570"
 ---
 # <a name="concurrency-namespace-operators"></a>concurrency 네임 스페이스 연산자
 
@@ -26,7 +26,7 @@ ms.locfileid: "46436925"
 |-|-|-|
 |[operator!=](#operator_neq)|[operator&amp;&amp;](#operator_amp_amp)|[operator&gt;](#operator_gt)|
 |[operator&gt;=](#operator_gt_eq)|[operator&lt;](#operator_lt)|[operator&lt;=](#operator_lt_eq)|
-|[operator==](#operator_eq_eq)|[operator||](#operator_lor)|
+|[연산자==](#operator_eq_eq)|[operator||](#operator_lor)|
 
 ##  <a name="operator_lor"></a>  연산자&#124; &#124; 연산자
 
@@ -151,7 +151,7 @@ inline bool operator== (
 
 ### <a name="return-value"></a>반환 값
 
-`true` 연산자의 좌 변에 있는 동시 벡터가 연산자의 오른쪽에 있는 동시 벡터와 같으면 그렇지 않으면 `false`합니다.
+**true 이면** 연산자의 좌 변에 있는 동시 벡터가 연산자의 오른쪽에 있는 동시 벡터와 같지 않으면 이면 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -189,7 +189,7 @@ inline bool operator!= (
 
 ### <a name="return-value"></a>반환 값
 
-`true` 동시 벡터가 같지 않으면 하는 경우 `false` 동시 벡터가 같으면 합니다.
+**true** 동시 벡터가 같지 않으면 하는 경우 **false** 동시 벡터가 같으면 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -227,7 +227,7 @@ inline bool operator<(
 
 ### <a name="return-value"></a>반환 값
 
-`true` 연산자의 좌 변에 있는 동시 벡터가 연산자의 오른쪽에 있는 동시 벡터 보다 작은 경우 그렇지 않으면 `false`합니다.
+**true 이면** 연산자의 좌 변에 있는 동시 벡터가 연산자의 오른쪽에 있는 동시 벡터 보다 작으면이 고, 그렇지 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -265,7 +265,7 @@ inline bool operator<= (
 
 ### <a name="return-value"></a>반환 값
 
-`true` 연산자의 좌 변에 있는 동시 벡터가 연산자의 오른쪽에 있는 동시 벡터 보다 작거나 경우 그렇지 않으면 `false`합니다.
+**true 이면** 작으면 연산자의 좌 변에 있는 동시 벡터 보다 또는 연산자의 오른쪽에 있는 동시 벡터 같음이 고 그렇지 않으면 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -303,7 +303,7 @@ inline bool operator>(
 
 ### <a name="return-value"></a>반환 값
 
-연산자 좌변에 있는 동시 벡터가 연산자 우변에 있는 동시 벡터보다 큰 경우 `true`이고, 그렇지 않으면 `false`입니다.
+**true 이면** 연산자의 좌 변에 있는 동시 벡터가 고 그렇지 않으면 연산자의 오른쪽에 있는 동시 벡터 보다 큰 경우 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -341,7 +341,7 @@ inline bool operator>= (
 
 ### <a name="return-value"></a>반환 값
 
-`true` 연산자의 좌 변에 있는 동시 벡터 보다 크거나 같음 연산자의 오른쪽에 있는 동시 벡터 이면 그렇지 않으면 `false`합니다.
+**true 이면** 연산자의 좌 변에 있는 동시 벡터 보다 큰 또는 연산자의 오른쪽에 있는 동시 벡터와 같지 않으면 이면 **false**합니다.
 
 ### <a name="remarks"></a>설명
 

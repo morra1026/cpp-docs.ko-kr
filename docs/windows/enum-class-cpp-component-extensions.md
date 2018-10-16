@@ -1,7 +1,7 @@
 ---
-title: enum 클래스 (c + + 구성 요소 확장) | Microsoft Docs
+title: enum 클래스 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -13,14 +13,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 993f0e190d87b140fba0008872d57f2a34b6a5cb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7b85807b9e9dd0cec63def8ffc4a9aa69056f270
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377268"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328144"
 ---
-# <a name="enum-class--c-component-extensions"></a>enum 클래스(C++ 구성 요소 확장)
+# <a name="enum-class--ccli-and-ccx"></a>enum 클래스 (C + + /cli 및 C + + /cli CX)
 
 열거자라는 명명된 상수 집합으로 구성된 사용자 정의 형식인 열거형을 네임스페이스 범위에서 선언합니다.
 
@@ -65,7 +65,7 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
 
 ### <a name="remarks"></a>설명
 
-자세한 내용 및 예제를 참조 하세요 [열거형](https://msdn.microsoft.com/%20library/windows/apps/hh755820.aspx)합니다.
+자세한 내용과 예제는 [열거형](https://msdn.microsoft.com/%20library/windows/apps/hh755820.aspx)을 참조하세요.
 
 컴파일러는 열거자의 값을 정의하는 상수 식을 *underlying-type*으로 표현할 수 없는 경우 오류 메시지를 내보냅니다.  그러나 컴파일러는 내부 형식에 적합하지 않은 값에 대해 오류를 보고하지 않습니다. 예를 들어:
 
@@ -146,13 +146,13 @@ static const int mon = 1;
 
 표준 열거형의 열거자는 바깥쪽 범위에 강력하게 삽입됩니다.  즉, 바깥쪽 범위에 열거자와 동일한 이름을 가진 다른 기호가 있을 경우 컴파일러에서 오류를 생성합니다.
 
-Visual C++ 2002 및 Visual C++ 2003에서는 열거자가 약하게 삽입됩니다(동일한 이름을 가진 다른 식별자가 없을 경우 바깥쪽 범위에 표시됨).
+Visual Studio 2002 및 Visual Studio 2003에서는 열거자가 약하게 삽입 됩니다 (표시 바깥쪽 범위에 동일한 이름 가진 다른 식별자가 없을 경우).
 
-표준 c + + enum이 정의 된 경우 (없이 **클래스** 또는 **구조체**) 사용 하 여 컴파일하면 `/clr` 관리 되는 enum으로 컴파일됩니다 열거형에 발생 합니다.  열거형이 여전히 관리되지 않는 열거형의 의미 체계를 사용합니다.  컴파일러는 Visual C++ 컴파일러가 인식하는 `Microsoft::VisualC::NativeEnumAttribute`특성을 삽입하여 열거형을 네이티브 열거형으로 만들려는 프로그래머의 의도를 확인합니다.  다른 컴파일러에는 표준 열거형이 관리되는 열거형으로 표시됩니다.
+표준 c + + enum이 정의 된 경우 (없이 **클래스** 또는 **구조체**) 사용 하 여 컴파일하면 `/clr` 관리 되는 enum으로 컴파일됩니다 열거형에 발생 합니다.  열거형이 여전히 관리되지 않는 열거형의 의미 체계를 사용합니다.  컴파일러 특성을 삽입 `Microsoft::VisualC::NativeEnumAttribute` 열거형을 네이티브 열거형에 대 한 프로그래머의 의도 식별 합니다.  다른 컴파일러에는 표준 열거형이 관리되는 열거형으로 표시됩니다.
 
 명명에 사용 하 여 컴파일된 표준 열거형 `/clr` 열거형을 관리 되는 어셈블리에 표시 되 고 다른 관리 되는 컴파일러에서 사용할 수 있습니다.   그러나 명명되지 않은 표준 열거형은 어셈블리에서 공개적으로 표시되지 않습니다.
 
-Visual C++ 2002 및 Visual C++ 2003에서 함수 매개 변수
+Visual Studio 2002 및 Visual Studio 2003에서 함수 매개 변수에서 형식으로 사용 되는 표준 열거형:
 
 ```cpp
 // mcppv2_enum.cpp
@@ -231,4 +231,4 @@ convert to int: 1
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

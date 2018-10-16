@@ -1,7 +1,7 @@
 ---
-title: typeid (c + + 구성 요소 확장) | Microsoft Docs
+title: typeid (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,18 +15,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e1daf9d33b3eb21bf7d196a4263b5f2f7009b183
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b31344b1ba72b37bcfff45a3fd4feefda85f6a7a
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46435404"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327585"
 ---
-# <a name="typeid--c-component-extensions"></a>typeid(C++ 구성 요소 확장)
+# <a name="typeid--ccli-and-ccx"></a>typeid (C + + /cli 및 C + + /cli CX)
 
 개체의 유형을 나타내는 값을 가져옵니다.
 
-> [!WARNING]
+> [!NOTE]
 > 이 항목은 TypeId의 C++ 구성 요소 확장명 버전을 참조합니다. 이 키워드의 ISO c + + 버전을 참조 하세요 [typeid 연산자](../cpp/typeid-operator.md)합니다.
 
 ## <a name="all-runtimes"></a>모든 런타임
@@ -200,4 +200,4 @@ int::typeid == handle_to_int::typeid, as expected
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

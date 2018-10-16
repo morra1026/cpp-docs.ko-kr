@@ -1,7 +1,7 @@
 ---
-title: ref new, gcnew (c + + 구성 요소 확장) | Microsoft Docs
+title: ref new, gcnew (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -20,14 +20,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1c31cda7c074b06025051661d27f00d2624721d0
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: f5a10278957e6a89b52e744f8f0dd78b475f7730
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596160"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328313"
 ---
-# <a name="ref-new-gcnew--c-component-extensions"></a>ref new, gcnew(C++ 구성 요소 확장)
+# <a name="ref-new-gcnew--ccli-and-ccx"></a>ref new, gcnew (C + + /cli 및 C + + /cli CX)
 
 합니다 **ref n e w** 집계 키워드는 가비지 수집 개체에 액세스할 수 없을 때 핸들을 반환 하는 형식의 인스턴스가 할당 ([^](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)) 할당된 된 개체에 있습니다.
 
@@ -99,4 +99,4 @@ int main()
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

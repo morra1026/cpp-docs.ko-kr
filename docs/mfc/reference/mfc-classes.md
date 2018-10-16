@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6fb0cfa6d3657c0cce01e91c94cb23bce8886a43
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a276868dfdb14f754cac3938e052e82b7ab22a6f
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403146"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328612"
 ---
 # <a name="mfc-classes"></a>MFC 클래스
 
@@ -34,7 +34,7 @@ ms.locfileid: "46403146"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[Cacceleratedeceleratetransition 클래스 클래스](../../mfc/reference/cacceleratedeceleratetransition-class1.md)<br/>
+[Cacceleratedeceleratetransition 클래스 클래스](../../mfc/reference/cacceleratedeceleratetransition-class.md)<br/>
 가속-감속 전환을 구현합니다.
 
 [CAnimateCtrl 클래스](../../mfc/reference/canimatectrl-class.md)<br/>
@@ -137,7 +137,7 @@ Windows 단추 컨트롤의 기능을 제공합니다.
 Windows 검사 목록 상자의 기능을 제공합니다.
 
 [CClientDC 클래스](../../mfc/reference/cclientdc-class.md)<br/>
-Windows 함수 호출을 처리 [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) 생성 시 및 [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) 소멸 시.
+생성 시 Windows 함수 [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) 의 호출과 소멸 시 [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) 의 호출을 처리합니다.
 
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 MFC 라이브러리 메시지 맵 아키텍처의 기본 클래스입니다.
@@ -863,7 +863,7 @@ Windows 목록 컨트롤 기능을 제공하고 셸 항목 목록을 표시하�
 일반적으로 부동 도구 모음에 있는 절반 높이의 프레임 창을 나타냅니다.
 
 [CMonikerFile 클래스](../../mfc/reference/cmonikerfile-class.md)<br/>
-데이터 스트림을 나타냅니다 ([IStream](/windows/desktop/api/objidl/nn-objidl-istream))로 명명 한 [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker)합니다.
+[IMoniker](/windows/desktop/api/objidl/nn-objidl-istream)에서 이름을 지정한 데이터 스트림( [IStream](/windows/desktop/api/objidl/nn-objidl-imoniker))을 나타냅니다.
 
 [CMonthCalCtrl 클래스](../../mfc/reference/cmonthcalctrl-class.md)<br/>
 달력 컨트롤의 기능을 캡슐화합니다.
@@ -1022,7 +1022,7 @@ OLE 비주얼 편집 서버, 자동화 서버 및 링크 컨테이너(포함에 
 OLE 편집 링크 대화 상자의 특별한 경우에 사용됩니다. 예를 들어, 문서에서 기존에 연결되거나 포함된 개체만 업데이트할 경우에 사용해야 합니다.
 
 [COleVariant 클래스](../../mfc/reference/colevariant-class.md)<br/>
-캡슐화 된 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 데이터 형식입니다.
+[VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 데이터 형식을 캡슐화합니다.
 
 [CPagerCtrl 클래스](../../mfc/reference/cpagerctrl-class.md)<br/>
 `CPagerCtrl` 클래스는 윈도우에 맞지 않는 포함된 창을 보기로 스크롤할 수 있는 Windows 페이저 컨트롤을 래핑합니다.
@@ -1109,7 +1109,7 @@ MRU(가장 최근에 사용됨) 파일 목록의 컨트롤을 지원합니다.
 컨트롤에 데이터베이스 레코드를 표시하는 뷰입니다.
 
 [CRect 클래스](../../atl-mfc-shared/reference/crect-class.md)<br/>
-Windows 비슷합니다 [RECT 구조체](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us)합니다.
+Windows 비슷합니다 [RECT 구조체](rect-structure.md)합니다.
 
 [CRectTracker 클래스](../../mfc/reference/crecttracker-class.md)<br/>
 항목을 다른 방식으로 표시, 이동하거나 크기를 변경할 수 있도록 합니다.
@@ -1175,7 +1175,7 @@ SDI(단일 문서 인터페이스)를 구현하는 문서 템플릿을 정의합
 애니메이션 변수의 초기 속도에 의해 진폭이 결정되는 사인 곡선 속도 전환을 캡슐화합니다.
 
 [CSize 클래스](../../atl-mfc-shared/reference/csize-class.md)<br/>
-Windows 비슷합니다 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 상대 좌표 또는 위치를 구현 하는 구조입니다.
+상대 좌표 또는 위치를 구현하는 Windows [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조체와 유사합니다.
 
 [CSliderCtrl 클래스](../../mfc/reference/csliderctrl-class.md)<br/>
 Windows의 공용 슬라이더 컨트롤의 기능을 제공합니다.

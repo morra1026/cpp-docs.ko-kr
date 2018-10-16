@@ -1,7 +1,7 @@
 ---
-title: nullptr (c + + 구성 요소 확장) | Microsoft Docs
+title: nullptr (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -16,14 +16,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0596276589790ee6fae8e071e50b4d9b55dd8b85
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 46a68e3ab7119dfb2c99578f299b9d38cbc5736d
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439616"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328495"
 ---
-# <a name="nullptr--c-component-extensions"></a>nullptr(C++ 구성 요소 확장)
+# <a name="nullptr--ccli-and-ccx"></a>nullptr (C + + /cli 및 C + + /cli CX)
 
 합니다 **nullptr** 키워드를 나타내는 *포인터 값을 null*합니다. 개체 핸들, 내부 포인터 또는 네이티브 포인터가 개체를 가리키지 않습니다 나타내기 위해 null 포인터 값을 사용 합니다.
 
@@ -235,5 +235,5 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)<br/>
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)<br/>
 [nullptr](../cpp/nullptr.md)

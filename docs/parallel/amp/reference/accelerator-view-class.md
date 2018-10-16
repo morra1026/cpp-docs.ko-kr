@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b9a157f747f32b7e146a0bc89ac695837c37974
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 30eb0befda4d439bf4153d7c6726c982d3bf19ae
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399680"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163337"
 ---
 # <a name="acceleratorview-class"></a>accelerator_view 클래스
 
@@ -74,9 +74,9 @@ class accelerator_view;
 
 |이름|설명|
 |----------|-----------------|
-|[operator!=](#operator_neq)|비교 `accelerator_view` 다른 개체를 반환 합니다 `false` 가 같으면이 고, 그렇지 반환 `true`합니다.|
+|[operator!=](#operator_neq)|비교 `accelerator_view` 다른 개체를 반환 합니다 **false** 같으면 경우 그렇지 않으면 반환 **true**합니다.|
 |[operator=](#operator_eq)|지정 된 내용을 복사 `accelerator_view` 을 여기에 개체입니다.|
-|[operator==](#operator_eq_eq)|비교 `accelerator_view` 다른 개체를 반환 합니다 `true` 가 같으면이 고, 그렇지 반환 `false`합니다.|
+|[연산자==](#operator_eq_eq)|비교 `accelerator_view` 다른 개체를 반환 합니다 **true** 같으면 경우 그렇지 않으면 반환 **false**합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
@@ -183,7 +183,7 @@ bool get_is_auto_selection() const;
 
 ### <a name="return-value"></a>반환 값
 
-`true` 런타임에서 자동으로 적절 한 액셀러레이터;를 선택 하는 경우 그렇지 않으면 `false`합니다.
+**true 이면** 런타임에서 자동으로 적절 한 액셀러레이터;를 선택 하는 경우이 고, 그렇지 **false**합니다.
 
 ## <a name="accelerator_view__get_is_debug"></a> get_is_debug
 
@@ -249,7 +249,7 @@ __declspec(property(get= get_is_debug)) bool is_debug;
 
 ## <a name="accelerator_view__operator_neq"></a> operator!=
 
-다른이 accelerator_view 개체를 비교 하 고 반환 `false` 같으면 경우 그렇지 않으면 반환 `true`합니다.
+다른이 accelerator_view 개체를 비교 하 고 반환 **false** 같으면 경우 반환이 고, 그렇지 **true**합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -264,7 +264,7 @@ bool operator!= (    const accelerator_view & _Other ) const;
 
 ### <a name="return-value"></a>반환 값
 
-두 개체가 같으면 `false`이고, 그렇지 않으면 `true`입니다.
+**false** 두 개체가 동일 하면이 고, 그렇지 **true**합니다.
 
 ## <a name="accelerator_view__operator_eq"></a> 연산자 =
 
@@ -287,7 +287,7 @@ accelerator_view & operator= (    const accelerator_view & _Other );
 
 ## <a name="accelerator_view__operator_eq_eq"></a> 연산자 = =
 
-다른이 accelerator_view 개체를 비교 하 고 반환 `true` 같으면 경우 그렇지 않으면 반환 `false`합니다.
+다른이 accelerator_view 개체를 비교 하 고 반환 **true** 같으면 경우 반환이 고, 그렇지 **false**합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -302,7 +302,7 @@ bool operator= = (    const accelerator_view & _Other ) const;
 
 ### <a name="return-value"></a>반환 값
 
-두 개체가 같으면 `true`이고, 그렇지 않으면 `false`입니다.
+**true 이면** 두 개체가 동일 하면이 고, 그렇지 **false**합니다.
 
 ## <a name="accelerator_view__queuing_mode"></a> queuing_mode
 

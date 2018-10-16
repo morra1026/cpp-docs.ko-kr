@@ -1,5 +1,5 @@
 ---
-title: SYSTEMTIME 구조체 1 | Microsoft Docs
+title: SYSTEMTIME 구조체 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 79c7cec92550ad51b53242b44b3aee334be21f3f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6882a4e169b7efa67bef02ab5abee1276384e52f
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397210"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49334575"
 ---
-# <a name="systemtime-structure1"></a>SYSTEMTIME 구조체 1
+# <a name="systemtime-structure"></a>SYSTEMTIME 구조체
 
 `SYSTEMTIME` 구조는 날짜 및 시간을 월, 일, 연도, 요일, 시간, 분, 초 및 밀리초에 대 한 개별 멤버를 사용 하 여 나타냅니다.
 

@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 26ecab69c2c31db51e137ad012bf67541e03a095
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 2af59860016835f8e8dfddc9d0a77204ff866bd3
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788463"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161855"
 ---
 # <a name="issame-structure"></a>IsSame 구조체
 
@@ -92,4 +92,4 @@ struct IsSame<T1, T1>
 
 한 형식이 다른 동일한 인지 여부를 나타냅니다.
 
-`value` 됩니다 `true` 템플릿 매개 변수는 동일 하는 경우 및 `false` 템플릿 매개 변수는 서로 다른 경우.
+`value` 됩니다 **true** 같으면 템플릿 매개 변수, 및 **false** 템플릿 매개 변수는 서로 다른 경우.
