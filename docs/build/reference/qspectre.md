@@ -1,7 +1,7 @@
 ---
 title: /Qspectre | Microsoft Docs
 ms.custom: ''
-ms.date: 09/24/2018
+ms.date: 10/12/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ed4b84ab761653dde4da6adcd14ec8e77334688
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 0baba6503d1d5b4e382347f4f4d9680b11f954ce
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821649"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328521"
 ---
 # <a name="qspectre"></a>/Qspectre
 
@@ -32,7 +32,7 @@ ms.locfileid: "48821649"
 
 ## <a name="remarks"></a>설명
 
-합니다 **/Qspectre** 옵션은 Visual Studio 2017 버전 15.5.5에서에서 사용할 수 있는 이상 및 Visual Studio 2015 업데이트 3- [KB 4338871](https://support.microsoft.com/en-us/help/4338871/visual-studio-2015-update-3-spectre-variant-1-toolset-qspectre)합니다. 컴파일러가 특정 완화 하는 지침을 삽입할 [스펙터 보안 취약점으로 인 한](https://spectreattack.com/spectre.pdf)합니다. 호출에 이러한 취약성 *투기적 실행 사이드 채널 공격*많은 운영 체제 및 Intel, AMD 프로세서를 포함 하 여 최신 프로세서에 영향을 줄 고 ARM입니다.
+합니다 **/Qspectre** 옵션은 Visual Studio 2017 버전 15.5.5에서에서 사용할 수 있는 이상 및 Visual Studio 2015 업데이트 3- [KB 4338871](https://support.microsoft.com/help/4338871/visual-studio-2015-update-3-spectre-variant-1-toolset-qspectre)합니다. 컴파일러가 특정 완화 하는 지침을 삽입할 [스펙터 보안 취약점으로 인 한](https://spectreattack.com/spectre.pdf)합니다. 호출에 이러한 취약성 *투기적 실행 사이드 채널 공격*많은 운영 체제 및 Intel, AMD 프로세서를 포함 하 여 최신 프로세서에 영향을 줄 고 ARM입니다.
 
 합니다 **/Qspectre** 옵션은 기본적으로 해제 되어 있습니다.
 

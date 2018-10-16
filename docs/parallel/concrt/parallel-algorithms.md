@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 23a4efb1412260ad71a610f53a7d1745157b3c53
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f1eb46754f80bca89419e6c3c85db94ec802df2f
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46435001"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163402"
 ---
 # <a name="parallel-algorithms"></a>병렬 알고리즘
 
@@ -284,7 +284,7 @@ PPL은 세 가지 정렬 알고리즘을 제공 합니다. [concurrency:: parall
 
 [!code-cpp[concrt-parallel-sort-points#3](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_14.cpp)]
 
-해시 함수는 정수 계열 형식을 반환 해야 합니다 ([is_integral](../../standard-library/is-integral-class.md) 있어야 `true`). 이 정수 계열 형식을 `size_t` 형식으로 변환할 수 있어야 합니다.
+해시 함수는 정수 계열 형식을 반환 해야 합니다 ([is_integral](../../standard-library/is-integral-class.md) 있어야 **true**). 이 정수 계열 형식을 `size_t` 형식으로 변환할 수 있어야 합니다.
 
 ###  <a name="choose_sort"></a> 정렬 알고리즘 선택
 

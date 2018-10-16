@@ -1,7 +1,7 @@
 ---
 title: '방법: 내부 포인터 및 네이티브 포인터를 사용 하 여 함수 오버 로드 (C + + /cli CLI) | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c019114726f696461de58d2dc4110a3150318c8f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 02f8d15c69bfef361d8ce34d9d6a1748692ea345
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598003"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327832"
 ---
 # <a name="how-to-overload-functions-with-interior-pointers-and-native-pointers-ccli"></a>방법: 내부 포인터 및 네이티브 포인터를 사용하여 함수 오버로드(C++/CLI)
 
@@ -29,7 +29,7 @@ ms.locfileid: "42598003"
 > [!IMPORTANT]
 > 이 언어 기능은 `/clr` 컴파일러 옵션에서 지원하지만 `/ZW` 컴파일러 옵션에서는 지원하지 않습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ### <a name="code"></a>코드
 

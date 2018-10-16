@@ -1,7 +1,7 @@
 ---
-title: Windows 런타임 및 관리 되는 템플릿 (c + + 구성 요소 확장) | Microsoft Docs
+title: Windows 런타임 및 관리 되는 템플릿 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0a7d08354bcd2b0b0d8cf1db6e4bd58fb9821708
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b83aa54b9f9697fddbefc6da29e7cf99d497cc12
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591451"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328300"
 ---
-# <a name="windows-runtime-and-managed-templates-c-component-extensions"></a>Windows 런타임 및 관리되는 템플릿(C++ 구성 요소 확장명)
+# <a name="windows-runtime-and-managed-templates-ccli-and-ccx"></a>Windows 런타임 및 관리 되는 템플릿 (C + + /cli 및 C + + /cli CX)
 
 템플릿을 사용하면 공용 언어 런타임 형식 또는 Windows 런타임의 프로토타입을 정의한 다음, 다른 템플릿 형식 매개 변수를 사용하여 해당 형식의 변형을 인스턴스화할 수 있습니다.
 
@@ -50,7 +50,7 @@ ms.locfileid: "42591451"
 
 ### <a name="examples"></a>예제
 
-관리되는 형식 템플릿 매개 변수로 제네릭 형식을 인스턴스화할 수 있지만 제네릭 형식 템플릿 매개 변수로 관리되는 템플릿을 인스턴스화할 수 없습니다. 이는 제네릭 형식이 런타임에 확인되기 때문입니다. 자세한 내용은 [제네릭과 템플릿 (Visual c + +)](../windows/generics-and-templates-visual-cpp.md)합니다.
+관리되는 형식 템플릿 매개 변수로 제네릭 형식을 인스턴스화할 수 있지만 제네릭 형식 템플릿 매개 변수로 관리되는 템플릿을 인스턴스화할 수 없습니다. 이는 제네릭 형식이 런타임에 확인되기 때문입니다. 자세한 내용은 [제네릭과 템플릿 (C + + /cli CLI)](../windows/generics-and-templates-visual-cpp.md)합니다.
 
 ```cpp
 // managed_templates.cpp
@@ -142,4 +142,4 @@ class A <int> {};
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

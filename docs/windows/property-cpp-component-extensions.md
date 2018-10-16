@@ -1,7 +1,7 @@
 ---
-title: 속성 (c + + 구성 요소 확장) | Microsoft Docs
+title: 속성 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -18,14 +18,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6f9c444861587e21724fe5f6aff545935fed6086
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9bd79042a43588ad4cedcbe88cc69f30947de7f8
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420506"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328235"
 ---
-# <a name="property--c-component-extensions"></a>속성(C++ 구성 요소 확장)
+# <a name="property--ccli-and-ccx"></a>속성 (C + + /cli 및 C + + /cli CX)
 
 선언 된 *속성*, 동작 및 데이터 멤버 또는 배열 요소 처럼 액세스 되는 멤버 함수는 합니다.
 
@@ -226,4 +226,4 @@ test
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

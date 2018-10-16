@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b87ac316c08f93a95f7791297b74cbbb20d5452a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: de97557025929c394039b1a786fe12a7035381e1
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413876"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163155"
 ---
 # <a name="concurrentpriorityqueue-class"></a>concurrent_priority_queue 클래스
 
@@ -195,7 +195,7 @@ bool empty() const;
 
 ### <a name="return-value"></a>반환 값
 
-`true` 함수가 호출 된 시점에 우선 순위 큐가 비어 있으면 `false` 그렇지 않은 경우.
+**true 이면** 함수를 호출 하는 순간에 우선 순위 큐가 비어 있으면 **false** 그렇지 않은 경우.
 
 ##  <a name="get_allocator"></a> get_allocator
 
@@ -287,7 +287,7 @@ bool try_pop(reference _Elem);
 
 ### <a name="return-value"></a>반환 값
 
-`true` 값을 팝 하는 경우 `false` 그렇지 않은 경우.
+**true 이면** 값을 팝 하는 경우 **false** 그렇지 않은 경우.
 
 ## <a name="see-also"></a>참고 항목
 

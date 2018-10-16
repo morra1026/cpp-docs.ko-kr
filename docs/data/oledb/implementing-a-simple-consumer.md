@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 681aa3ef5a1434ab191854f23a9e7bc908b65728
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ce6f57846a0dcad79eead500286525e94c66a8e6
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082419"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162297"
 ---
 # <a name="implementing-a-simple-consumer"></a>단순 소비자 구현
 
@@ -34,17 +34,17 @@ ms.locfileid: "46082419"
 - "소비자에 게 XML 지원 추가" XML 데이터 형식으로 검색 된 행 집합 데이터를 출력 하도록 소비자 코드를 수정 하는 방법을 보여 줍니다.  
   
 > [!NOTE]
->  MyProv 및 공급자 샘플 공급자를 테스트 하려면이 섹션에 설명 된 소비자 응용 프로그램을 사용할 수 있습니다.  
+> MyProv 및 공급자 샘플 공급자를 테스트 하려면이 섹션에 설명 된 소비자 응용 프로그램을 사용할 수 있습니다.  
   
 > [!NOTE]
->  MyProv 테스트할 소비자 응용 프로그램을 빌드하 (동일한 공급자에서 설명한 [간단한 읽기 전용 공급자의 기능 향상](../../data/oledb/enhancing-the-simple-read-only-provider.md)), "책갈피 지원을 추가 소비자에 게."에 설명 된 대로 책갈피 지원을 포함 해야 합니다  
+> MyProv 테스트할 소비자 응용 프로그램을 빌드하 (동일한 공급자에서 설명한 [간단한 읽기 전용 공급자의 기능 향상](../../data/oledb/enhancing-the-simple-read-only-provider.md)), "책갈피 지원을 추가 소비자에 게."에 설명 된 대로 책갈피 지원을 포함 해야 합니다  
   
 > [!NOTE]
->  공급자를 테스트 하는 소비자 응용 프로그램을 빌드하려면 "책갈피 지원 소비자에 추가"에 설명 된 책갈피 지원을 건너뛰고로 "XML 지원을 추가 소비자에 게."  
+> 공급자를 테스트 하는 소비자 응용 프로그램을 빌드하려면 "책갈피 지원 소비자에 추가"에 설명 된 책갈피 지원을 건너뛰고로 "XML 지원을 추가 소비자에 게."  
   
 ## <a name="retrieving-data-with-the-consumer"></a>소비자를 사용 하 여 데이터를 검색합니다.  
   
-#### <a name="to-modify-the-console-application-to-use-the-ole-db-consumer"></a>OLE DB 소비자를 사용 하 여 콘솔 응용 프로그램을 수정 하려면  
+### <a name="to-modify-the-console-application-to-use-the-ole-db-consumer"></a>OLE DB 소비자를 사용 하 여 콘솔 응용 프로그램을 수정 하려면  
   
 1. MyCons.cpp, 다음과 같은 굵은 텍스트를 삽입 하 여 기본 코드를 변경:  
   
@@ -94,9 +94,9 @@ ms.locfileid: "46082419"
 - 파일의 끝에 추가 하 여 책갈피가 표시 된 행을 출력 합니다.  
   
 > [!NOTE]
->  공급자 샘플 공급자 응용 프로그램을 테스트 하려면이 소비자 응용 프로그램을 사용 하는 경우이 섹션에 설명 된 책갈피 지원을 그대로 둡니다.  
+> 공급자 샘플 공급자 응용 프로그램을 테스트 하려면이 소비자 응용 프로그램을 사용 하는 경우이 섹션에 설명 된 책갈피 지원을 그대로 둡니다.  
   
-#### <a name="to-instantiate-the-bookmark"></a>책갈피를 인스턴스화  
+### <a name="to-instantiate-the-bookmark"></a>책갈피를 인스턴스화  
   
 1. 형식의 개체를 포함 해야 하는 접근자 [CBookmark](../../data/oledb/cbookmark-class.md)합니다. 합니다 *nSize* 매개 변수 (일반적으로 32 비트 플랫폼에 대 한 4) 및 64 비트 플랫폼에 대 한 8 바이트에서 책갈피 버퍼의 크기를 지정 합니다. 사용자 레코드 클래스의 열 데이터 멤버에 다음 선언을 추가 합니다.  
   
@@ -111,7 +111,7 @@ ms.locfileid: "46082419"
        ...  
     ```  
   
-#### <a name="to-request-a-bookmark-column-from-the-provider"></a>책갈피 열 공급자를 요청 하려면  
+### <a name="to-request-a-bookmark-column-from-the-provider"></a>책갈피 열 공급자를 요청 하려면  
   
 1. 다음 코드를 추가 합니다 `GetRowsetProperties` 사용자 레코드 클래스의 메서드:  
   
@@ -125,7 +125,7 @@ ms.locfileid: "46082419"
     }  
     ```  
   
-#### <a name="to-add-a-bookmark-entry-to-the-column-map"></a>책갈피 항목 열 지도를 추가 하려면  
+### <a name="to-add-a-bookmark-entry-to-the-column-map"></a>책갈피 항목 열 지도를 추가 하려면  
   
 1. 사용자 레코드 클래스의 열 지도에 다음 항목을 추가 합니다.  
   
@@ -139,7 +139,7 @@ ms.locfileid: "46082419"
     END_COLUMN_MAP()  
     ```  
   
-#### <a name="to-use-a-bookmark-in-your-main-code"></a>기본 코드에 책갈피를 사용 하려면  
+### <a name="to-use-a-bookmark-in-your-main-code"></a>기본 코드에 책갈피를 사용 하려면  
   
 1. 이전에 만든 콘솔 응용 프로그램에서 MyCons.cpp 파일에서를 다음과 같이 기본 코드를 변경 합니다. 책갈피를 사용 하려면 주 코드 자체 책갈피 개체를 인스턴스화하려면 요구 (`myBookmark`);는이 접근자에서 다른 책갈피 (`m_bookmark`).  
   
@@ -184,7 +184,7 @@ ms.locfileid: "46082419"
        {  
           nCounter++;  
           if(nCounter == 5 )  
-             myBookmark = rs.bookmark;  
+             myBookmark = rs.m_bookmark;  
           // Output the column information for each row:  
           outfile << rs.m_ProductID << rs.m_ProductName << lPrice << rs.m_QuantityPerUnit << rs.m_UnitsInStock << rs.m_ReorderLevel << endl;  
           hr = rs.MoveNext();  
@@ -216,7 +216,7 @@ ms.locfileid: "46082419"
 
 에 설명 된 대로 [XML 데이터 액세스](../../data/oledb/accessing-xml-data.md), 데이터 원본에서 XML 데이터를 검색 하는 방법은 두 가지:를 사용 하 여 [CStreamRowset](../../data/oledb/cstreamrowset-class.md) 알거나 [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md). 이 예제에서는 `CStreamRowset`를 보다 효율적입니다 있지만 SQL Server 2000이 샘플 응용 프로그램을 실행 하는 컴퓨터에서 실행 해야 합니다.  
   
-#### <a name="to-modify-the-command-class-to-inherit-from-cstreamrowset"></a>CStreamRowset 상속할 명령 클래스를 수정 하려면  
+### <a name="to-modify-the-command-class-to-inherit-from-cstreamrowset"></a>CStreamRowset 상속할 명령 클래스를 수정 하려면  
   
 1. 이전에 만든 소비자 응용 프로그램에서 변경 하 `CCommand` 지정에 대 한 선언을 `CStreamRowset` 행 집합으로 클래스 같이:  
   
@@ -224,7 +224,7 @@ ms.locfileid: "46082419"
     class CProducts : public CCommand<CAccessor<CProductsAccessor>, CStreamRowset >  
     ```  
   
-#### <a name="to-modify-the-main-code-to-retrieve-and-output-the-xml-data"></a>검색 하 고 XML 데이터를 출력 하는 기본 코드를 수정 하려면  
+### <a name="to-modify-the-main-code-to-retrieve-and-output-the-xml-data"></a>검색 하 고 XML 데이터를 출력 하는 기본 코드를 수정 하려면  
   
 1. 콘솔 응용 프로그램의 이전에 만든 MyCons.cpp 파일에는 기본 코드를 다음과 같이 변경:  
   

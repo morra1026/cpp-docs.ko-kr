@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8adba73274fbc9821eb8096e82268b24b41718f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 72fa49d763159385607330231994d15952f0c771
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46430059"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163142"
 ---
 # <a name="ischedulerproxy-structure"></a>ISchedulerProxy 구조체
 
@@ -124,7 +124,7 @@ virtual IExecutionResource* RequestInitialVirtualProcessors(bool doSubscribeCurr
 
 ### <a name="return-value"></a>반환 값
 
-합니다 `IExecutionResource` 현재 스레드에 대 한 인터페이스 매개 변수 `doSubscribeCurrentThread` 기본값이 `true`합니다. 값이 `false`, 메서드가 반환 `NULL`합니다.
+합니다 `IExecutionResource` 현재 스레드에 대 한 인터페이스 매개 변수 `doSubscribeCurrentThread` 기본값이 **true**합니다. 값이 **false**, NULL이 반환 됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -132,7 +132,7 @@ virtual IExecutionResource* RequestInitialVirtualProcessors(bool doSubscribeCurr
 
 Resource Manager 리소스를 스케줄러에 메서드를 호출 하 여 부여 [ischeduler:: Addvirtualprocessors](ischeduler-structure.md#addvirtualprocessors) 가상 프로세서 루트의 목록입니다. 메서드는이 메서드가 반환 되기 전에 스케줄러에 대 한 콜백 호출 됩니다.
 
-스케줄러 매개 변수를 설정 하 여 현재 스레드에 대 한 구독을 요청 하는 경우 `doSubscribeCurrentThread` 하 `true`, 메서드는 `IExecutionResource` 인터페이스. 구독을 나중에 사용 하 여 종료 해야 합니다는 [iexecutionresource:: Remove](iexecutionresource-structure.md#remove) 메서드.
+스케줄러 매개 변수를 설정 하 여 현재 스레드에 대 한 구독을 요청 하는 경우 `doSubscribeCurrentThread` 하 **true**, 메서드는 `IExecutionResource` 인터페이스. 구독을 나중에 사용 하 여 종료 해야 합니다는 [iexecutionresource:: Remove](iexecutionresource-structure.md#remove) 메서드.
 
 하드웨어 스레드 선택을 결정할 때 Resource Manager는 프로세서 노드 선호도 대 한 최적화 하려고 합니다. 현재 스레드에 대 한 구독 요청 될 경우 현재 스레드가이 스케줄러에 할당 된 작업에 참여 하고자 함을 나타냅니다. 이러한 경우 할당 된 가상 프로세서 루트는 현재 스레드가 실행 되 고, 가능한 경우 프로세서 노드에 있습니다.
 

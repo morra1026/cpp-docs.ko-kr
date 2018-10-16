@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 912cdb59a1841bbe3bbe3e71202a796a3e67a94e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 642b73f81146fa8df68d36ee3b63b1902ed66619
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390268"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162401"
 ---
 # <a name="iexecutionresource-structure"></a>IExecutionResource 구조체
 
@@ -79,7 +79,7 @@ virtual unsigned int CurrentSubscriptionLevel() const = 0;
 
 구독 수준 하드웨어 스레드를 사용 하 여 연결 된 실행 중인 스레드 수를 알려 줍니다. 이 리소스 관리자는 구독 한 스레드 및 스레드 프록시를 현재 실행 중인 가상 프로세서 루트의 형태로 인식 하는 스레드가 포함 됩니다.
 
-메서드를 호출 [ischedulerproxy:: Subscribecurrentthread](ischedulerproxy-structure.md#subscribecurrentthread), 또는 메서드 [ischedulerproxy:: Requestinitialvirtualprocessors](ischedulerproxy-structure.md#requestinitialvirtualprocessors) 매개 변수를 사용 하 여 `doSubscribeCurrentThread` 값으로설정`true`구독 수준 하드웨어 스레드를 1 씩입니다. 반환 한다는 점에서 `IExecutionResource` 구독을 나타내는 인터페이스입니다. 해당 호출을 [iexecutionresource:: Remove](#remove) 감소 씩 하드웨어 스레드의 구독 수준입니다.
+메서드를 호출 [ischedulerproxy:: Subscribecurrentthread](ischedulerproxy-structure.md#subscribecurrentthread), 또는 메서드 [ischedulerproxy:: Requestinitialvirtualprocessors](ischedulerproxy-structure.md#requestinitialvirtualprocessors) 매개 변수를 사용 하 여 `doSubscribeCurrentThread` 값으로설정**true** 씩 하드웨어 스레드 구독 수준을 증가 시킵니다. 반환 한다는 점에서 `IExecutionResource` 구독을 나타내는 인터페이스입니다. 해당 호출을 [iexecutionresource:: Remove](#remove) 감소 씩 하드웨어 스레드의 구독 수준입니다.
 
 메서드를 사용 하는 가상 프로세서 루트를 활성화 act [ivirtualprocessorroot:: Activate](ivirtualprocessorroot-structure.md#activate) 구독 수준 하드웨어 스레드를 1 씩입니다. 메서드 [ivirtualprocessorroot:: Deactivate](ivirtualprocessorroot-structure.md#deactivate), 또는 [iexecutionresource:: Remove](#remove) 구독 수준은 활성화 된 가상 프로세서 루트에서 호출 되 면 1 씩 감소 합니다.
 

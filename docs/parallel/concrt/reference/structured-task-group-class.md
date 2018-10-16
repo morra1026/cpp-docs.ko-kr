@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4aa6df9afddc43980818439ee2c7bbd29ca2f848
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a9e87ebd4523b5211c94955b5bec7905ed848946
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446077"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161686"
 ---
 # <a name="structuredtaskgroup-class"></a>structured_task_group 클래스
 
@@ -54,7 +54,7 @@ class structured_task_group;
 |이름|설명|
 |----------|-----------------|
 |[cancel](#cancel)|이 작업 그룹에서 시작한 작업의 하위 트리를 취소 하려고 최선을 다를 수 있습니다. 작업 그룹에 예약 된 모든 작업은 전이적으로 취소 가능한 경우.|
-|[is_canceling](#is_canceling)|작업 그룹의 현재 취소 중 인지 아닌지에 호출자에 게 알립니다. 이 반드시을 나타내지 않는 합니다 `cancel` 메서드를 호출한 합니다 `structured_task_group` 개체 (반드시 반환 하려면이 메서드 `true`). 대/소문자 수도 있습니다는 `structured_task_group` 인라인으로 실행 개체 및 작업 그룹을 추가로 구성 작업 트리에서 취소 되었습니다. 이 경우 런타임에서 취소는이 통해 이동 하는 미리 확인할 수 있습니다 `structured_task_group` 개체를 `true` 도 반환 됩니다.|
+|[is_canceling](#is_canceling)|작업 그룹의 현재 취소 중 인지 아닌지에 호출자에 게 알립니다. 이 반드시을 나타내지 않는 합니다 `cancel` 메서드를 호출한 합니다 `structured_task_group` 개체 (반드시 반환 하려면이 메서드 **true**). 대/소문자 수도 있습니다는 `structured_task_group` 인라인으로 실행 개체 및 작업 그룹을 추가로 구성 작업 트리에서 취소 되었습니다. 이 경우 런타임에서 취소는이 통해 이동 하는 미리 확인할 수 있습니다 `structured_task_group` 개체를 **true** 도 반환 됩니다.|
 |[run](#run)|오버로드됨. 작업을 예약 하는 `structured_task_group` 개체입니다. 호출자의 수명을 관리 합니다 `task_handle` 전달 된 개체는 `_Task_handle` 매개 변수입니다. `_Placement` 매개 변수를 사용하는 버전은 이 매개 변수로 지정된 위치에서 작업이 실행되도록 합니다.|
 |[run_and_wait](#run_and_wait)|오버로드됨. 도움으로 인라인 호출 컨텍스트에서 실행 되도록 작업을 예약 합니다 `structured_task_group` 전체 취소 지원에 대 한 개체입니다. 경우는 `task_handle` 개체에 대 한 매개 변수로 전달 됩니다 `run_and_wait`, 호출자가의 수명을 관리 하는 일을 담당 합니다 `task_handle` 개체. 함수는 다음 모두에서 작동 될 때까지 대기 합니다 `structured_task_group` 개체 완료 되거나 취소 되었습니다.|
 |[wait](#wait)|모두에서 작동 될 때까지 대기 합니다 `structured_task_group` 완료 또는 취소 됩니다.|
@@ -97,7 +97,7 @@ void cancel();
 
 ##  <a name="is_canceling"></a> is_canceling
 
-작업 그룹의 현재 취소 중 인지 아닌지에 호출자에 게 알립니다. 이 반드시을 나타내지 않는 합니다 `cancel` 메서드를 호출한 합니다 `structured_task_group` 개체 (반드시 반환 하려면이 메서드 `true`). 대/소문자 수도 있습니다는 `structured_task_group` 인라인으로 실행 개체 및 작업 그룹을 추가로 구성 작업 트리에서 취소 되었습니다. 이 경우 런타임에서 취소는이 통해 이동 하는 미리 확인할 수 있습니다 `structured_task_group` 개체를 `true` 도 반환 됩니다.
+작업 그룹의 현재 취소 중 인지 아닌지에 호출자에 게 알립니다. 이 반드시을 나타내지 않는 합니다 `cancel` 메서드를 호출한 합니다 `structured_task_group` 개체 (반드시 반환 하려면이 메서드 **true**). 대/소문자 수도 있습니다는 `structured_task_group` 인라인으로 실행 개체 및 작업 그룹을 추가로 구성 작업 트리에서 취소 되었습니다. 이 경우 런타임에서 취소는이 통해 이동 하는 미리 확인할 수 있습니다 `structured_task_group` 개체를 **true** 도 반환 됩니다.
 
 ```
 bool is_canceling();

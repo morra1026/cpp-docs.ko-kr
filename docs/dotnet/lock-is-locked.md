@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 130ffcb372e3791af74ae6ec70e7b9bcfaff9376
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 64c0a3fbc197af66e8a57928cadc29c28b1ece1a
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438095"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163766"
 ---
 # <a name="lockislocked"></a>lock::is_locked
 
@@ -40,13 +40,13 @@ bool is_locked();
 
 ## <a name="return-value"></a>반환 값
 
-`true` 잠금이 유지 되는 경우 `false` 그렇지 않은 경우.
+**true 이면** 잠금이 유지 되는 경우 **false** 그렇지 않은 경우.
 
 ## <a name="example"></a>예제
 
 이 예제에서는 여러 스레드에서 클래스의 단일 인스턴스를 사용 합니다.  클래스 자체에 잠금을 사용 하 여 내부 데이터에 대 한 액세스는 각 스레드에 대해 일치 되도록 합니다.  주 응용 프로그램 스레드는 주기적으로 확인 하는 경우 모든 작업자 스레드가 여전히 존재 하며 일까 지 모든 작업자 스레드가 끝나기를 대기 요소가 해당 작업을 완료 하는 클래스의 동일한 인스턴스에서 잠금을 사용 합니다.
 
-```
+```cpp
 // msl_lock_is_locked.cpp
 // compile with: /clr
 #include <msclr/lock.h>

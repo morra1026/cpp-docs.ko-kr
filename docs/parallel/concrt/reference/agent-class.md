@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 04202b647910914de8ebe92397efe1373e9508be
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8d6d91f312b028f44e0671c7960d4b06c2634928
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46401370"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162518"
 ---
 # <a name="agent-class"></a>에이전트 클래스
 
@@ -108,7 +108,7 @@ agent(ScheduleGroup& _PGroup);
 
 ### <a name="remarks"></a>설명
 
-지정 하지 않는 경우 런타임은 기본 스케줄러를 사용 합니다 `_PScheduler` 또는 `_PGroup` 매개 변수입니다.
+런타임은 `_PScheduler` 또는 `_PGroup` 매개 변수를 지정하지 않는 경우 기본 스케줄러를 사용합니다.
 
 ##  <a name="dtor"></a> ~ 에이전트
 
@@ -132,7 +132,7 @@ bool cancel();
 
 ### <a name="return-value"></a>반환 값
 
-`true` 에이전트가 취소 된 경우 `false` 그렇지 않은 경우. 이미 실행을 시작 하거나 이미 완료 된 경우 에이전트를 취소할 수 없습니다.
+**true 이면** 에이전트가 취소 된 경우 **false** 그렇지 않은 경우. 이미 실행을 시작 하거나 이미 완료 된 경우 에이전트를 취소할 수 없습니다.
 
 ##  <a name="done"></a> 작업 수행
 
@@ -144,7 +144,7 @@ bool done();
 
 ### <a name="return-value"></a>반환 값
 
-`true` 에이전트는 이동 하는 경우는 `agent_done` 상태 `false` 그렇지 않은 경우. 에이전트 취소 되었습니다.를 이동할 수 없습니다는 `agent_done` 상태입니다.
+**true** 에이전트는 이동 하는 경우는 `agent_done` 상태 **false** 그렇지 않은 경우. 에이전트 취소 되었습니다.를 이동할 수 없습니다는 `agent_done` 상태입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -172,7 +172,7 @@ bool start();
 
 ### <a name="return-value"></a>반환 값
 
-`true` 에이전트가 올바르게 시작 하는 경우 `false` 그렇지 않은 경우. 취소 되었습니다. 에이전트를 시작할 수 없습니다.
+**true 이면** 에이전트가 올바르게 시작 하는 경우 **false** 그렇지 않은 경우. 취소 되었습니다. 에이전트를 시작할 수 없습니다.
 
 ##  <a name="status"></a> 상태
 

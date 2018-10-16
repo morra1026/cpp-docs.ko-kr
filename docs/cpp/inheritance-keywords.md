@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1106ad878f4053cacae67d9d0e343e9469b1a1c1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f4b3703d0bd4556090c08a874bce362120817397
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46061177"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161803"
 ---
 # <a name="inheritance-keywords"></a>상속 키워드
 
@@ -83,6 +83,8 @@ int S::*p;
 
 > [!NOTE]
 >  클래스 멤버 포인터 표현의 동일한 정방향 선언이 해당 클래스의 멤버에 대한 포인터를 선언하는 각 변환 단위에서 발생해야 하며, 이 선언은 멤버에 대한 포인터가 선언되기 전에 발생해야 합니다.
+
+이전 버전과 호환성에 대 한 **_single_inheritance**를 **_multiple_inheritance**, 및 **_virtual_inheritance** 는 **__ single_inheritance**하십시오 **__multiple_inheritance**, 및 **__virtual_inheritance** 하지 않으면 컴파일러 옵션 [/Za \(언어를 사용 하지 않도록 설정 확장)](../build/reference/za-ze-disable-language-extensions.md) 지정 됩니다.
 
 **Microsoft 전용 종료**
 

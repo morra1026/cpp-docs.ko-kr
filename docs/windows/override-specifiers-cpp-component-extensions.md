@@ -1,7 +1,7 @@
 ---
-title: Override 지정자 (c + + 구성 요소 확장) | Microsoft Docs
+title: Override 지정자 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -16,14 +16,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bcbc46ea12dd053c0c0cf5066173ea2a28857452
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 0620bc7045dcb312667cfdfe670e1f19b0545cf2
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316122"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327466"
 ---
-# <a name="override-specifiers--c-component-extensions"></a>Override 지정자(C++ 구성 요소 확장)
+# <a name="override-specifiers--ccli-and-ccx"></a>Override 지정자 (C + + /cli 및 C + + /cli CX)
 
 *Override 지정자* 수정 방법을 상속 된 형식 및 상속 된 형식의 멤버가 파생된 형식에서 작동 합니다.
 
@@ -65,4 +65,4 @@ ms.locfileid: "44316122"
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

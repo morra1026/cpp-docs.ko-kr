@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 845addc73d0dd542b7bb6a4abccbf915005ddd41
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 4dab192b2d5d4210461bd791e3f4d9996363c953
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235817"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163298"
 ---
 # <a name="safeint-class"></a>SafeInt 클래스
 
@@ -195,7 +195,7 @@ SafeInt 개체 간 논리 비교를 수행하는 경우, 비교 동작은 엄격
 
 - `((uint)~0) > -1`
 
-첫 번째 문은 `true`로, 두 번째 문은 `false`로 풀이됩니다. 0에 대한 비트 부정은 0xFFFFFFFF입니다. 두 번째 문은 기본 비교 연산자 0xFFFFFFFF와 0xFFFFFFFF로 비교하고 동일한 것으로 간주합니다. `SafeInt` 클래스의 비교 연산자는 첫 번째 매개 변수를 부호가 없는 것으로, 두 번째 매개 변수를 음수로 인식합니다. 따라서 비트 표현은 동일하지만 `SafeInt` 논리 연산자는 부호 없는 정수가 -1보다 큰지 확인합니다.
+로 확인 되는 첫 번째 문 **true**, 두 번째 문은 확인 하지만 `false`합니다. 0에 대한 비트 부정은 0xFFFFFFFF입니다. 두 번째 문은 기본 비교 연산자 0xFFFFFFFF와 0xFFFFFFFF로 비교하고 동일한 것으로 간주합니다. `SafeInt` 클래스의 비교 연산자는 첫 번째 매개 변수를 부호가 없는 것으로, 두 번째 매개 변수를 음수로 인식합니다. 따라서 비트 표현은 동일하지만 `SafeInt` 논리 연산자는 부호 없는 정수가 -1보다 큰지 확인합니다.
 
 `SafeInt`클래스를 `?:` 삼항 연산자와 함께 사용할 때 주의해야 합니다. 다음 코드 줄을 고려 합니다.
 

@@ -1,7 +1,7 @@
 ---
 title: __identifier (C + + /cli CLI) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -18,25 +18,23 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 572767c2f85b07f201bef93578b14b731aa467e0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 09a8b69402dbe3812bdd49f8944c979300209bff
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415020"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328274"
 ---
 # <a name="identifier-ccli"></a>__identifier(C++/CLI)
 
-식별자로 Visual c + + 키워드를 사용 하도록 설정 합니다.
+식별자로 c + + 키워드를 사용 하도록 설정 합니다.
 
 ## <a name="all-platforms"></a>모든 플랫폼
 
 ### <a name="syntax"></a>구문
 
 ```cpp
-__identifier(
-Visual_C++_keyword
-)  
+__identifier(C++_keyword)  
 ```
 
 ### <a name="remarks"></a>설명
@@ -53,7 +51,7 @@ Visual_C++_keyword
 
 **예제**
 
-다음 예제에서는 클래스 이름이 **템플릿** C#에서 만들어지고 DLL로 분산 합니다. 사용 하는 Visual c + + 프로그램에는 **템플릿** 클래스를 **__identifier** 키워드는 팩트를 숨깁니다는 **템플릿** 는 표준 c + + 키워드입니다.
+다음 예제에서는 클래스 이름이 **템플릿** C#에서 만들어지고 DLL로 분산 합니다. C + + 프로그램을 사용 하는 **템플릿** 클래스는 **__identifier** 키워드는 팩트를 숨깁니다는 **템플릿** 는 표준 c + + 키워드입니다.
 
 ```cs
 // identifier_template.cs
@@ -85,7 +83,7 @@ int main() {
 
 ### <a name="examples"></a>예제
 
-다음 예제에서는 클래스 이름이 **템플릿** C#에서 만들어지고 DLL로 분산 합니다. 사용 하는 Visual c + + 프로그램에는 **템플릿** 클래스를 **__identifier** 키워드는 팩트를 숨깁니다는 **템플릿** 는 표준 c + + 키워드입니다.
+다음 예제에서는 클래스 이름이 **템플릿** C#에서 만들어지고 DLL로 분산 합니다. C + + 프로그램을 사용 하는 **템플릿** 클래스는 **__identifier** 키워드는 팩트를 숨깁니다는 **템플릿** 는 표준 c + + 키워드입니다.
 
 ```cs
 // identifier_template.cs
@@ -108,5 +106,5 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)<br/>
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)<br/>
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

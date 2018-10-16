@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41e4c6f3a540f44f6cec0d94ffab74d65a1ffe52
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7f8f864dcbf412b9dea0d96f6a0ba046792d7827
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386589"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162973"
 ---
 # <a name="concurrentqueue-class"></a>concurrent_queue 클래스
 
@@ -177,7 +177,7 @@ bool empty() const;
 
 ### <a name="return-value"></a>반환 값
 
-`true` 순간에 동시 큐가 비어 있으면 `false` 그렇지 않은 경우.
+**true 이면** 는 순간에 동시 큐가 비어 있으면 **false** 그렇지 않은 경우.
 
 ### <a name="remarks"></a>설명
 
@@ -229,11 +229,11 @@ bool try_pop(T& _Dest);
 
 ### <a name="return-value"></a>반환 값
 
-`true` 항목이 성공적으로 큐에서 제거 되었으면 `false` 그렇지 않은 경우.
+**true 이면** 항목이 성공적으로 큐에서 제거 되었으면 **false** 그렇지 않은 경우.
 
 ### <a name="remarks"></a>설명
 
-항목이 성공적으로 큐에서 제거 된 경우 매개 변수 `_Dest` 큐에서 제거 된 값을 받습니다. 큐에 저장 된 원래 값을 제거 하 고이 함수는 반환 `true`합니다. 이 함수를 반환 하는 경우 큐에서 항목이 발생 `false` 내용의 차단 없이 `_Dest` 매개 변수 정의 되지 않습니다.
+항목이 성공적으로 큐에서 제거 된 경우 매개 변수 `_Dest` 큐에서 제거 된 값을 받습니다. 큐에 저장 된 원래 값을 제거 하 고이 함수는 반환 **true**합니다. 이 함수를 반환 하는 경우 큐에서 항목이 발생 `false` 내용의 차단 없이 `_Dest` 매개 변수 정의 되지 않습니다.
 
 `try_pop` 동시성이 보장에 대 한 메서드 호출 `push`, `try_pop`, 및 `empty`합니다.
 

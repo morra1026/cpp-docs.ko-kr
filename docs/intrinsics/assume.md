@@ -1,12 +1,13 @@
 ---
 title: __assume | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/09/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
 f1_keywords:
 - __assume
+- _assume
 - __assume_cpp
 dev_langs:
 - C++
@@ -17,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e1c8c37bc46580db42bfa2a91d215b09bc1dbaf4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 41542065a4fc7d3b90fd3159dca4c7a7d169c115
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405699"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163675"
 ---
 # <a name="assume"></a>__assume
 
@@ -57,6 +58,8 @@ true로 평가된다고 간주되는 식입니다.
 사용 하 여 `__assume` 에 [ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) 만 경우 assert는 복구할 수 없습니다. 후속 오류 복구 코드가 있는 어설션에서는 `__assume`을 사용하지 마세요. 이렇게 하면 컴파일러가 오류 처리 코드를 최적화하지 않을 수도 있습니다.
 
 `__assume(0)` 문은 특수한 경우입니다. 연결할 수 없는 코드 경로를 나타내려는 경우 `__assume(0)`을 사용합니다. 다음 예제에서는 `__assume(0)`을 사용하여 스위치 문의 기본 사례에 연결할 수 없음을 나타내는 방법을 보여 줍니다. 여기에는 가장 일반적인 `__assume(0)` 사용 방식이 나와 있습니다.
+
+이전 버전과 호환성에 대 한 **_assume** 에 대 한 동의어가 **__assume** 하지 않으면 컴파일러 옵션 [/Za \(언어 확장 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md) 는 지정 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

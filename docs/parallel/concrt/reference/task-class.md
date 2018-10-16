@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e40a98bd546f29cd42629ad991866a85a86852c9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: bac539fc2826b5628769126d9802688c01f01c7b
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399303"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163207"
 ---
 # <a name="task-class-concurrency-runtime"></a>작업 클래스(동시성 런타임)
 
@@ -87,7 +87,7 @@ class task;
 |----------|-----------------|
 |[operator!=](#operator_neq)|오버로드됨. 두 `task` 개체가 서로 다른 내부 작업을 나타내는지 여부를 확인합니다.|
 |[operator=](#operator_eq)|오버로드됨. 하나의 `task` 개체 콘텐츠를 다른 개체 콘텐츠로 바꿉니다.|
-|[operator==](#operator_eq_eq)|오버로드됨. 두 `task` 개체가 동일한 내부 작업을 나타내는지 여부를 확인합니다.|
+|[연산자==](#operator_eq_eq)|오버로드됨. 두 `task` 개체가 동일한 내부 작업을 나타내는지 여부를 확인합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -134,7 +134,7 @@ bool is_apartment_aware() const;
 
 ### <a name="return-value"></a>반환 값
 
-작업이 `true` 인터페이스의 래핑을 해제하거나 그러한 작업의 하위 작업이면 `IAsyncInfo`이고, 그렇지 않으면 `false`입니다.
+**true** 작업의 래핑을 해제 하는 경우는 `IAsyncInfo` 인터페이스 또는 그러한 작업의 하위 **false** 그렇지 않은 경우.
 
 ##  <a name="is_done"></a>  task:: is_done 메서드 (동시성 런타임)
 
@@ -169,7 +169,7 @@ bool operator!= (const task<void>& _Rhs) const;
 
 ### <a name="return-value"></a>반환 값
 
-개체가 서로 다른 기본 작업을 참조하면 `true`이고, 그렇지 않으면 `false`입니다.
+**true** 서로 다른 기본 작업 개체가 참조 하는 경우 및 **false** 그렇지 않은 경우.
 
 ##  <a name="operator_eq"></a> 연산자 =
 
@@ -209,7 +209,7 @@ bool operator== (const task<void>& _Rhs) const;
 
 ### <a name="return-value"></a>반환 값
 
-개체가 동일한 기본 작업을 참조하면 `true`이고, 그렇지 않으면 `false`입니다.
+**true** 개체가 참조는 같은 기본 작업을 하는 경우 및 **false** 그렇지 않은 경우.
 
 ##  <a name="scheduler"></a>  task:: scheduler 메서드 (동시성 런타임)
 
@@ -354,7 +354,7 @@ task_status wait() const;
 ### <a name="remarks"></a>설명
 
 > [!IMPORTANT]
->  유니버설 Windows 플랫폼 (UWP) 앱에서 호출 하지 마십시오 `wait` STA에서 실행 되는 코드에서 그렇지 않으면 런타임에서 throw [concurrency:: invalid_operation](invalid-operation-class.md) 이 메서드는 현재 스레드를 차단 하 고 응용 프로그램에서 응답 하지 않게 될 수 있습니다. 호출할 수 있습니다 합니다 [concurrency::task::get](#get) 작업 기반 연속에서 선행 작업의 결과 수신 하는 방법입니다.
+>  유니버설 Windows 플랫폼 (UWP) 앱에서 호출 하지 마십시오 `wait` STA에서 실행 되는 코드에서 호출하는 경우 이 메서드가 현재 스레드를 차단하고 앱이 응답하지 않게 만들 수 있기 때문에 런타임에서 [concurrency::invalid_operation](invalid-operation-class.md) 을 throw합니다. 그러나 [concurrency::task::get](#get) 메서드를 호출하여 작업 기반 연속에서 선행 작업의 결과를 받을 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

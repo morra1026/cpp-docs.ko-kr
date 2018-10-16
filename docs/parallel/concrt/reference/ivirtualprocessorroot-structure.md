@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7466c00ec1a5c507a84a098b3dca79d57ffee91e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 891fcd96901423e5d5c23b840784f9e050dbbe81
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445986"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162921"
 ---
 # <a name="ivirtualprocessorroot-structure"></a>IVirtualProcessorRoot 구조체
 
@@ -111,7 +111,7 @@ virtual bool Deactivate(_Inout_ IExecutionContext* pContext) = 0;
 
 ### <a name="return-value"></a>반환 값
 
-부울 값입니다. 값 `true` 스레드 프록시를 반환 함을 나타냅니다는 `Deactivate` 메서드 호출에 대 한 응답에서을 `Activate` 메서드. 값 `false` 스레드 프록시 리소스 관리자에서 알림 이벤트에 대 한 응답으로 메서드에서 반환 함을 나타냅니다. 사용자 모드 예약 가능 (UMS) 스레드 스케줄러에서이 나타내고 항목 스케줄러의 완성 목록에 표시 스케줄러 처리 해야 합니다.
+부울 값입니다. 값 **true** 스레드 프록시를 반환 합니다 `Deactivate` 메서드 호출에 대 한 응답에서는 `Activate` 메서드. 값 `false` 스레드 프록시 리소스 관리자에서 알림 이벤트에 대 한 응답으로 메서드에서 반환 함을 나타냅니다. 사용자 모드 예약 가능 (UMS) 스레드 스케줄러에서이 나타내고 항목 스케줄러의 완성 목록에 표시 스케줄러 처리 해야 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -119,9 +119,9 @@ virtual bool Deactivate(_Inout_ IExecutionContext* pContext) = 0;
 
 비활성화 된 가상 프로세서 루트에 대 한 호출을 사용 하 여 해제 될 수 있습니다 합니다 `Activate` 에 전달 된 것과 같은 인수를 사용 하 여 메서드를 `Deactivate` 메서드. Scheduler는를 호출 하는 것을 담당 합니다 `Activate` 및 `Deactivate` 메서드 쌍을 있지만 특정 순서 대로 수신 해야 하는 것은 아닙니다. Resource Manager에 대 한 호출을 받는 처리할 수는 `Activate` 메서드 호출을 수신 하기 전에 `Deactivate` 을 메서드.
 
-가상 프로세서 루트를 활성화 되는 경우의 반환 값을 `Deactivate` 메서드는 값 `false`, 스케줄러를 통해 UMS 완성 목록을 쿼리해야 합니다.는 `IUMSCompletionList::GetUnblockNotifications` 해당 정보를 작업할 메서드와 를이후에호출`Deactivate`메서드를 다시 합니다. 이 때까지 반복 해야 합니다 `Deactivate` 메서드 값을 반환 합니다. `true`합니다.
+가상 프로세서 루트를 활성화 되는 경우의 반환 값을 `Deactivate` 메서드는 값 **false**, 스케줄러를 통해 UMS 완성 목록을 쿼리해야 합니다.는 `IUMSCompletionList::GetUnblockNotifications` 메서드는 해당 정보에는 act 차례로 호출 이후에 `Deactivate` 메서드를 다시 합니다. 이 때까지 반복 해야 합니다 `Deactivate` 메서드 값을 반환 합니다. `true`합니다.
 
-`invalid_argument` 경우 발생 하는 인수 `pContext` 기본값이 `NULL`합니다.
+`invalid_argument` 경우 발생 하는 인수 `pContext` 기본값이 NULL입니다.
 
 `invalid_operation` 가상 프로세서 루트에서 활성화 되지 않은 경우 발생 하는 인수 또는 `pContext` 최근이 가상 프로세서 루트에서 디스패치 된 실행 컨텍스트를 나타내지 않습니다.
 

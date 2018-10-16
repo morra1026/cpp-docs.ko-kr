@@ -1,7 +1,7 @@
 ---
-title: 클래스 및 구조체 (c + + 구성 요소 확장) | Microsoft Docs
+title: ref 클래스 및 ref 구조체 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -18,16 +18,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 60e388e18e6d3607dac1946c3fd9a511e948afd4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f2d7ceea7dd3253b28eab5b5fad28381f115225f
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448378"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328078"
 ---
-# <a name="classes-and-structs--c-component-extensions"></a>클래스 및 구조체(C++ 구성 요소 확장)
+# <a name="ref-class-and-ref-struct--ccli-and-ccx"></a>ref 클래스 및 ref 구조체 (C + + /cli 및 C + + /cli CX)
 
-클래스 또는 구조체 선언입니다 *개체 수명* 자동으로 관리 됩니다. 개체가 더 이상 액세스 불가능하게 되거나 범위를 벗어나면 Visual C++가 개체에 할당된 메모리를 자동 삭제합니다.
+합니다 **ref 클래스** 또는 **ref 구조체** 클래스 또는 구조체를 선언 하는 확장입니다 *개체 수명* 자동으로 관리 됩니다. 개체가 더 이상 액세스할 또는 범위를 벗어날 때 해제 됩니다.
 
 ## <a name="all-runtimes"></a>모든 런타임
 
@@ -61,7 +61,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
 *base_type*<br/>
 (선택 사항) 기본 형식입니다. 그러나 값 형식은 기본 형식으로 작동할 수 없습니다.
 
-자세한 내용은 특정 언어에 대 한 설명은 Windows 런타임 및 공용 언어 Runtimesections에서이 매개 변수를 참조 하세요.
+자세한 내용은 Windows 런타임 및 공용 언어 런타임 섹션에서이 매개 변수의 언어별 설명을 참조 하십시오.
 
 ### <a name="remarks"></a>설명
 
@@ -129,4 +129,4 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

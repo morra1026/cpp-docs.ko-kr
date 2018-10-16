@@ -1,7 +1,7 @@
 ---
-title: 특성 매개 변수 형식 (c + + 구성 요소 확장) | Microsoft Docs
+title: 특성 매개 변수 형식 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 84c97dc0eb449ed0a2e835c46e77981dda0b67e2
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8db82e2b31984429165ce39a328abc28ba6e2cfd
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611908"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328170"
 ---
-# <a name="attribute-parameter-types--c-component-extensions"></a>특성 매개 변수 형식(C++ 구성 요소 확장)
+# <a name="attribute-parameter-types--ccli-and-ccx"></a>특성 매개 변수 형식 (C + + /cli 및 C + + /cli CX)
 
 특성에 전달된 값은 컴파일 타임에 컴파일러에 알려야 합니다.  특성 매개 변수는 다음 형식일 수 있습니다.
 
@@ -50,7 +50,7 @@ ms.locfileid: "42611908"
 
 - **enum**
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ### <a name="code"></a>코드
 

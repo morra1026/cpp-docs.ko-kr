@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 561173e2b451a0b736d97042667a2fb14b3a7eb7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 80f831d527e918fce0551f6a1336fd2fe994917d
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46094899"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161283"
 ---
 # <a name="compiler-warning-level-4-c4127"></a>컴파일러 경고(수준 4) C4127
 
@@ -29,9 +29,9 @@ ms.locfileid: "46094899"
 
 ## <a name="remarks"></a>설명
 
-`if` 문 또는 `while` 루프의 제어 식이 상수로 계산됩니다. Visual Studio 2015 업데이트 3, 1과 같은 특수 상수부터 해당 일반적인 관용구 사용으로 인해 또는 `true` 식에서 연산의 결과가 아닌 경고를 트리거하지 않습니다.
+제어 식이 **하는 경우** 문 또는 **하는 동안** 루프 상수로 계산 합니다. Visual Studio 2015 업데이트 3, 1과 같은 특수 상수부터 해당 일반적인 관용구 사용으로 인해 또는 **true** 식에서 연산의 결과가 아닌 경고를 트리거하지 않습니다.
 
-하는 경우의 제어 식이 `while` 루프는 루프가 중간에 종료 때문에 상수를 바꾸는 것이 좋습니다는 `while` 루프를 `for` 루프입니다. 초기화, 종료 테스트를 생략 하 고 루프의 증가 `for` 인해 마찬가지로 무한 루프가 있는 루프 `while(1)`, 본문에서 루프를 종료할 수 있습니다는 `for` 문입니다.
+하는 경우의 제어 식이 **하는 동안** 루프는 루프가 중간에 종료 때문에 상수를 바꾸는 것이 좋습니다는 **하는 동안** 루프를 **에 대 한** 루프입니다. 초기화, 종료 테스트를 생략 하 고 루프의 증가 **에 대 한** 인해 마찬가지로 무한 루프가 있는 루프 `while(1)`, 본문에서 루프를 종료할 수 있습니다 합니다 **에 대 한** 문입니다.
 
 ## <a name="example"></a>예제
 

@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b3997f8beb414992464c51ca1c1fd944145c43d
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: d8c8c3cc219f0cf658dc2669ccc10adf3aba55bd
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45715145"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163532"
 ---
 # <a name="manifestuac-embeds-uac-information-in-manifest"></a>/MANIFESTUAC(매니페스트에 UAC 정보 포함)
 
@@ -50,7 +50,7 @@ UAC(사용자 계정 컨트롤) 정보를 program 매니페스트에 포함할�
 중 하나 *asInvoker*하십시오 *highestAvailable*, 또는 *requireAdministrator*합니다. AsInvoker 기본값은입니다. 자세한 내용은이 항목의 뒷부분에 나오는 주의 섹션을 참조 하세요.
 
 *_uiAccess*<br/>
-응용 프로그램에서 사용자 인터페이스 보호 수준을 우회하고 데스크톱에서 상위 권한 창에 입력할 수 있게 하려면 `true`이고 그렇지 않으면 `false`입니다. 기본값은 `false`입니다. 로 `true` 사용자 인터페이스 접근성 응용 프로그램에 대해서만 합니다.
+**true 이면** 응용 프로그램 사용자 인터페이스 보호 수준을 무시 하 고, 그렇지 않으면 데스크톱에서 상위 권한 창에 대 한 입력을 원하면 **false**합니다. 기본값으로 **false**합니다. 로 **true** 사용자 인터페이스 접근성 응용 프로그램에 대해서만 합니다.
 
 ## <a name="remarks"></a>설명
 

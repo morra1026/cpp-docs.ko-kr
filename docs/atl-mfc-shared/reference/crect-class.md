@@ -44,16 +44,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0abe16bc12052601f86cb18677b52af9b40ad15
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b135b318a77835d22d7547e78f3b5c4f7ee3daee
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428501"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328586"
 ---
 # <a name="crect-class"></a>CRect 클래스
 
-Windows 비슷합니다 [RECT](../../mfc/reference/rect-structure1.md) 구조입니다.
+Windows 비슷합니다 [RECT](../../mfc/reference/rect-structure.md) 구조입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -102,8 +102,8 @@ class CRect : public tagRECT
 |이름|설명|
 |----------|-----------------|
 |[CRect::operator-](#operator_-)|지정 된 오프셋을 뺍니다 `CRect` 압축 또는 `CRect` 결과 반환 하 고 `CRect`입니다.|
-|[LPCRECT CRect::operator](#operator_lpcrect)|변환 된 `CRect` 에 `LPCRECT`.|
-|[LPRECT CRect::operator](#operator_lprect)|변환 된 `CRect` 에 `LPRECT`.|
+|[LPCRECT CRect::operator](#operator_lpcrect)|`CRect`를 `LPCRECT`로 변환합니다.|
+|[LPRECT CRect::operator](#operator_lprect)|`CRect`를 `LPRECT`로 변환합니다.|
 |[CRect::operator! =](#operator_neq)|확인 여부를 `CRect` 사각형와 같지 않습니다.|
 |[CRect::operator &amp;](#operator_amp)|교차 부분을 만듭니다 `CRect` 사각형 및 결과 반환 하 고 `CRect`입니다.|
 |[CRect::operator &amp;=](#operator_amp_eq)|집합 `CRect` 의 교집합 같음 `CRect` 및 사각형입니다.|
@@ -131,7 +131,7 @@ class CRect : public tagRECT
 조작 하는 경우 주의 해야는 `CRect` 사용 하 여 합니다 [CDC::DPtoLP](../../mfc/reference/cdc-class.md#dptolp) 및 [CDC::LPtoDP](../../mfc/reference/cdc-class.md#lptodp) 멤버 함수입니다. Y-범위는 음수 이면 에서처럼 표시 컨텍스트 매핑 모드 인지 `MM_LOENGLISH`, 한 다음 `CDC::DPtoLP` 변환 됩니다는 `CRect` 맨 위쪽 보다 되도록 합니다. 와 같은 함수 `Height` 하 고 `Size` 그런 다음 변환 된 높이 대 한 음수 값을 반환 합니다 `CRect`, 정규화 되지 않은 사각형 됩니다.  
 
 
-사용 하 여이 오버 로드 `CRect` 연산자는 첫 번째 피연산자 이어야 합니다는 `CRect`; 두 일 수 있습니다를 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 `CRect` 개체.
+사용 하 여이 오버 로드 `CRect` 연산자는 첫 번째 피연산자 이어야 합니다는 `CRect`; 두 일 수 있습니다를 [RECT](../../mfc/reference/rect-structure.md) 구조 또는 `CRect` 개체.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -260,7 +260,7 @@ void CopyRect(LPCRECT lpSrcRect) throw();
 ### <a name="parameters"></a>매개 변수
 
 *lpSrcRect*  
-가리키는 합니다 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 `CRect` 복사 하는 개체입니다.
+가리키는 합니다 [RECT](../../mfc/reference/rect-structure.md) 구조 또는 `CRect` 복사 하는 개체입니다.
 
 ### <a name="example"></a>예제
 
@@ -313,7 +313,7 @@ CRect(POINT topLeft, POINT bottomRight) throw();
 아래 지정 `CRect`합니다.
 
 *srcRect*  
-참조 하는 [RECT](../../mfc/reference/rect-structure1.md) 좌표를 사용 하 여 구조 `CRect`합니다.
+참조 하는 [RECT](../../mfc/reference/rect-structure.md) 좌표를 사용 하 여 구조 `CRect`합니다.
 
 *lpSrcRect*  
 가리키는 합니다 `RECT` 좌표를 사용 하 여 구조 `CRect`합니다.
@@ -397,7 +397,7 @@ void DeflateRect(int l, int t, int r, int b) throw();
 A [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 하거나 [CSize](csize-class.md) deflate 단위의 수를 지정 하는 `CRect`합니다. 합니다 `cx` 왼쪽과 오른쪽 deflate 단위의 수를 지정 하는 값 및 `cy` 값 위쪽과 아래쪽 deflate 단위의 수를 지정 합니다.
 
 *lpRect*  
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 `CRect` 양쪽 deflate 단위의 수를 지정 하는 합니다.
+가리키는 [RECT](../../mfc/reference/rect-structure.md) 구조 또는 `CRect` 양쪽 deflate 단위의 수를 지정 하는 합니다.
 
 *l*  
 좌 변의 deflate 단위의 수를 지정 `CRect`합니다.
@@ -443,7 +443,7 @@ BOOL EqualRect(LPCRECT lpRect) const throw();
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*  
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 `CRect` 사각형의 왼쪽 및 오른쪽 아래 모퉁이 좌표를 포함 하는 개체입니다.
+가리키는 [RECT](../../mfc/reference/rect-structure.md) 구조 또는 `CRect` 사각형의 왼쪽 및 오른쪽 아래 모퉁이 좌표를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -528,7 +528,7 @@ void InflateRect(int l, int t, int r,  int b) throw();
 A [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 하거나 [CSize](csize-class.md) 확장 단위의 수를 지정 하는 `CRect`합니다. 합니다 `cx` 왼쪽과 오른쪽 확장 단위의 수를 지정 하는 값 및 `cy` 값 위쪽과 아래쪽 확장 단위의 수를 지정 합니다.
 
 *lpRect*  
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 `CRect` 양쪽 확장 단위의 수를 지정 하는 합니다.
+가리키는 [RECT](../../mfc/reference/rect-structure.md) 구조 또는 `CRect` 양쪽 확장 단위의 수를 지정 하는 합니다.
 
 *l*  
 왼쪽된에 있는 확장 단위의 수를 지정 `CRect`합니다.
@@ -569,7 +569,7 @@ BOOL IntersectRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
 ### <a name="parameters"></a>매개 변수
 
 *lpRect1*  
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 `CRect` 소스 사각형을 포함 하는 개체입니다.
+가리키는 [RECT](../../mfc/reference/rect-structure.md) 구조 또는 `CRect` 소스 사각형을 포함 하는 개체입니다.
 
 *lpRect2*  
 가리키는 `RECT` 구조 또는 `CRect` 소스 사각형을 포함 하는 개체입니다.
@@ -810,7 +810,7 @@ void OffsetRect(SIZE size) throw();
 위로 또는 아래로 이동할 크기를 지정 합니다. 위로 이동 하려면 음수 여야 합니다.
 
 *지점*  
-포함 된 [지점](../../mfc/reference/point-structure1.md) 구조 또는 [CPoint](cpoint-class.md) 이동 하는 두 크기 모두를 지정 하는 개체입니다.
+포함 된 [지점](../../mfc/reference/point-structure.md) 구조 또는 [CPoint](cpoint-class.md) 이동 하는 두 크기 모두를 지정 하는 개체입니다.
 
 *size*  
 포함 된 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 또는 [CSize](csize-class.md) 이동 하는 두 크기 모두를 지정 하는 개체입니다.
@@ -873,7 +873,7 @@ void operator=(const RECT& srcRect) throw();
 ### <a name="parameters"></a>매개 변수
 
 *srcRect*  
-소스 사각형을 가리킵니다. 수는 [RECT](../../mfc/reference/rect-structure1.md) 또는 `CRect`합니다.
+소스 사각형을 가리킵니다. 수는 [RECT](../../mfc/reference/rect-structure.md) 또는 `CRect`합니다.
 
 ### <a name="example"></a>예제
 
@@ -901,7 +901,7 @@ BOOL operator==(const RECT& rect) const throw();
 ### <a name="parameters"></a>매개 변수
 
 *rect*  
-소스 사각형을 가리킵니다. 수는 [RECT](../../mfc/reference/rect-structure1.md) 또는 `CRect`합니다.
+소스 사각형을 가리킵니다. 수는 [RECT](../../mfc/reference/rect-structure.md) 또는 `CRect`합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -947,7 +947,7 @@ BOOL operator!=(const RECT& rect) const throw();
 ### <a name="parameters"></a>매개 변수
 
 *rect*  
-소스 사각형을 가리킵니다. 수는 [RECT](../../mfc/reference/rect-structure1.md) 또는 `CRect`합니다.
+소스 사각형을 가리킵니다. 수는 [RECT](../../mfc/reference/rect-structure.md) 또는 `CRect`합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -994,13 +994,13 @@ void operator+=(LPCRECT lpRect) throw();
 ### <a name="parameters"></a>매개 변수
 
 *지점*  
-A [지점](../../mfc/reference/point-structure1.md) 구조 나 [CPoint](cpoint-class.md) 사각형을 이동할 단위의 수를 지정 하는 개체입니다.
+A [지점](../../mfc/reference/point-structure.md) 구조 나 [CPoint](cpoint-class.md) 사각형을 이동할 단위의 수를 지정 하는 개체입니다.
 
 *size*  
 A [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 나 [CSize](csize-class.md) 사각형을 이동할 단위의 수를 지정 하는 개체입니다.
 
 *lpRect*  
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 `CRect` 양쪽 확장 단위의 수를 포함 하는 개체 `CRect`합니다.
+가리키는 [RECT](../../mfc/reference/rect-structure.md) 구조 또는 `CRect` 양쪽 확장 단위의 수를 포함 하는 개체 `CRect`합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1037,13 +1037,13 @@ void operator-=(LPCRECT lpRect) throw();
 ### <a name="parameters"></a>매개 변수
 
 *지점*  
-A [지점](../../mfc/reference/point-structure1.md) 구조 나 [CPoint](cpoint-class.md) 사각형을 이동할 단위의 수를 지정 하는 개체입니다.
+A [지점](../../mfc/reference/point-structure.md) 구조 나 [CPoint](cpoint-class.md) 사각형을 이동할 단위의 수를 지정 하는 개체입니다.
 
 *size*  
 A [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 나 [CSize](csize-class.md) 사각형을 이동할 단위의 수를 지정 하는 개체입니다.
 
 *lpRect*  
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 `CRect` 양쪽 deflate 단위의 수를 포함 하는 개체 `CRect`합니다.
+가리키는 [RECT](../../mfc/reference/rect-structure.md) 구조 또는 `CRect` 양쪽 deflate 단위의 수를 포함 하는 개체 `CRect`합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1078,7 +1078,7 @@ void operator&=(const RECT& rect) throw();
 ### <a name="parameters"></a>매개 변수
 
 *rect*  
-포함 된 [RECT](../../mfc/reference/rect-structure1.md) 또는 `CRect`합니다.
+포함 된 [RECT](../../mfc/reference/rect-structure.md) 또는 `CRect`합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1102,7 +1102,7 @@ void operator|=(const RECT& rect) throw();
 ### <a name="parameters"></a>매개 변수
 
 *rect*  
-포함 된 `CRect` 또는 [RECT](../../mfc/reference/rect-structure1.md)합니다.
+포함 된 `CRect` 또는 [RECT](../../mfc/reference/rect-structure.md)합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1141,13 +1141,13 @@ CRect operator+(SIZE size) const throw();
 ### <a name="parameters"></a>매개 변수
 
 *지점*  
-A [지점](../../mfc/reference/point-structure1.md) 구조 나 [CPoint](cpoint-class.md) 반환 값을 이동할 단위의 수를 지정 하는 개체입니다.
+A [지점](../../mfc/reference/point-structure.md) 구조 나 [CPoint](cpoint-class.md) 반환 값을 이동할 단위의 수를 지정 하는 개체입니다.
 
 *size*  
 A [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 나 [CSize](csize-class.md) 반환 값을 이동할 단위의 수를 지정 하는 개체입니다.
 
 *lpRect*  
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 `CRect` 반환 값의 각 측면을 확장 하는 단위 수를 포함 하는 개체입니다.
+가리키는 [RECT](../../mfc/reference/rect-structure.md) 구조 또는 `CRect` 반환 값의 각 측면을 확장 하는 단위 수를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1185,13 +1185,13 @@ CRect operator-(LPCRECT lpRect) const throw();
 ### <a name="parameters"></a>매개 변수
 
 *지점*  
-A [지점](../../mfc/reference/point-structure1.md) 구조 또는 `CPoint` 반환 값을 이동할 단위의 수를 지정 하는 개체입니다.
+A [지점](../../mfc/reference/point-structure.md) 구조 또는 `CPoint` 반환 값을 이동할 단위의 수를 지정 하는 개체입니다.
 
 *size*  
 A [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 또는 `CSize` 반환 값을 이동할 단위의 수를 지정 하는 개체입니다.
 
 *lpRect*  
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 `CRect` 반환 값의 각 면 deflate 단위의 수를 포함 하는 개체입니다.
+가리키는 [RECT](../../mfc/reference/rect-structure.md) 구조 또는 `CRect` 반환 값의 각 면 deflate 단위의 수를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1227,7 +1227,7 @@ CRect operator&(const RECT& rect2) const throw();
 ### <a name="parameters"></a>매개 변수
 
 *rect2*  
-포함 된 [RECT](../../mfc/reference/rect-structure1.md) 또는 `CRect`합니다.
+포함 된 [RECT](../../mfc/reference/rect-structure.md) 또는 `CRect`합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1265,7 +1265,7 @@ rect2) const throw();
 ### <a name="parameters"></a>매개 변수
 
 *rect2*  
-포함 된 [RECT](../../mfc/reference/rect-structure1.md) 또는 `CRect`합니다.
+포함 된 [RECT](../../mfc/reference/rect-structure.md) 또는 `CRect`합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1307,7 +1307,7 @@ BOOL PtInRect(POINT point) const throw();
 ### <a name="parameters"></a>매개 변수
 
 *지점*  
-포함 된 [지점](../../mfc/reference/point-structure1.md) 구조 또는 [CPoint](cpoint-class.md) 개체입니다.
+포함 된 [지점](../../mfc/reference/point-structure.md) 구조 또는 [CPoint](cpoint-class.md) 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1439,7 +1439,7 @@ BOOL SubtractRect(LPCRECT lpRectSrc1, LPCRECT lpRectSrc2) throw();
 ### <a name="parameters"></a>매개 변수
 
 *lpRectSrc1*  
-가리키는 합니다 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 `CRect` 사각형 뺄 개체입니다.
+가리키는 합니다 [RECT](../../mfc/reference/rect-structure.md) 구조 또는 `CRect` 사각형 뺄 개체입니다.
 
 *lpRectSrc2*  
 가리키는 합니다 `RECT` 구조 또는 `CRect` 가리키는 사각형에서 뺄에 있는 개체를 *lpRectSrc1* 매개 변수입니다.
@@ -1527,7 +1527,7 @@ BOOL UnionRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
 ### <a name="parameters"></a>매개 변수
 
 *lpRect1*  
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 또는 `CRect` 소스 사각형을 포함 하는 합니다.
+가리키는 [RECT](../../mfc/reference/rect-structure.md) 또는 `CRect` 소스 사각형을 포함 하는 합니다.
 
 *lpRect2*  
 가리키는 `RECT` 또는 `CRect` 소스 사각형을 포함 하는 합니다.
@@ -1588,5 +1588,5 @@ int nWid = rect.Width();
 
 [CPoint 클래스](cpoint-class.md)<br/>
 [CSize 클래스](csize-class.md)<br/>
-[RECT](../../mfc/reference/rect-structure1.md)
+[RECT](../../mfc/reference/rect-structure.md)
 

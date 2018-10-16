@@ -1,7 +1,7 @@
 ---
-title: 형식 특성 (c + + 구성 요소 확장)에 대 한 컴파일러 지원 | Microsoft Docs
+title: 형식 특성에 대 한 컴파일러 지원 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -71,16 +71,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5df33233f78eed1f3dc6c9403eb4b1740ccf1a70
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: dfa3f599da4594e9cb0d416def1846b9937664f8
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42588284"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328540"
 ---
-# <a name="compiler-support-for-type-traits-c-component-extensions"></a>형식 특성에 대한 컴파일러 지원(C++ 구성 요소 확장명)
+# <a name="compiler-support-for-type-traits-ccli-and-ccx"></a>형식 특성에 대 한 컴파일러 지원 (C + + /cli 및 C + + /cli CX)
 
-컴파일러에서 지 원하는 *형식 특성*, 컴파일 시간에 형식의 다양 한 특성을 나타내는입니다.
+Microsoft c + + 컴파일러에서 지 원하는 *형식 특성* C + + /cli 및 C + + 컴파일 타임에 형식의 다양 한 특성을 나타내는 CX 확장 합니다.
 
 ## <a name="all-runtimes"></a>모든 런타임
 
@@ -90,9 +90,9 @@ ms.locfileid: "42588284"
 
 다음은 컴파일러에서 지 원하는 형식 특성을 포함 합니다. 모든 특성이 반환 형식 **false** 형식 특성의 이름으로 지정 된 조건이 충족 되지 않으면.
 
-(다음 목록에서 코드 예제는 작성만 C + + /cli CLI입니다. 하지만 다른 설명이 없는 한 Visual c + + 구성 요소 확장의 해당 형식 특성 (trait)도 지원 됩니다. 용어 "플랫폼 형식" 가리킵니다 Windows 런타임 형식 또는 공용 언어 런타임 형식입니다.)
+(다음 목록에서 코드 예제는 작성만 C + + /cli CLI입니다. 하지만 해당 형식 특성 (trait) 에서도 지원 됩니다 C + + /cli CX 언급이 합니다. 용어 "플랫폼 형식" 가리킵니다 Windows 런타임 형식 또는 공용 언어 런타임 형식입니다.)
 
-- `__has_assign(` `type` `)`
+- `__has_assign(` *형식* `)`
 
    반환 **true** 플랫폼 또는 네이티브 형식에 복사 할당 연산자입니다.
 
@@ -106,7 +106,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__has_copy(` `type` `)`
+- `__has_copy(` *형식* `)`
 
    반환 **true** 플랫폼 또는 네이티브 형식에는 복사 생성자가 하는 경우.
 
@@ -120,9 +120,9 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__has_finalizer(` `type` `)`
+- `__has_finalizer(` *형식* `)`
 
-   (지원 되지 않음 Visual c + + 구성 요소 확장의.) 반환 **true** CLR 형식에 종료 자가 있으면 됩니다. 참조 [방법의 소멸자 및 종료자: 클래스 및 구조체 정의 및 사용 (C + + /cli CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) 자세한 내용은 합니다.
+   (C +에서 지원 되지 않는 + CX.) 반환 **true** CLR 형식에 종료 자가 있으면 됩니다. 참조 [방법의 소멸자 및 종료자: 클래스 및 구조체 정의 및 사용 (C + + /cli CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) 자세한 내용은 합니다.
 
     ```cpp
     using namespace System;
@@ -137,7 +137,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__has_nothrow_assign(` `type` `)`
+- `__has_nothrow_assign(` *형식* `)`
 
    반환 **true** 복사 할당 연산자에 빈 예외 사양이 있으면 됩니다.
 
@@ -153,7 +153,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__has_nothrow_constructor(` `type` `)`
+- `__has_nothrow_constructor(` *형식* `)`
 
    반환 **true** 기본 생성자에 빈 예외 사양이 있으면 됩니다.
 
@@ -169,7 +169,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__has_nothrow_copy(` `type` `)`
+- `__has_nothrow_copy(` *형식* `)`
 
    반환 **true** 복사 생성자에 빈 예외 사양이 있으면 됩니다.
 
@@ -185,7 +185,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__has_trivial_assign(` `type` `)`
+- `__has_trivial_assign(` *형식* `)`
 
    반환 **true** 형식에 trivial, 컴파일러에서 생성 된 할당 연산자를 사용 하면 됩니다.
 
@@ -199,7 +199,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__has_trivial_constructor(` `type` `)`
+- `__has_trivial_constructor(` *형식* `)`
 
    반환 **true** 형식에 컴파일러에서 생성 된 trivial 생성자가 있습니다.
 
@@ -213,7 +213,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__has_trivial_copy(` `type` `)`
+- `__has_trivial_copy(` *형식* `)`
 
    반환 **true** 형식에 있는 경우, 컴파일러에서 생성 된 trivial 복사 생성자입니다.
 
@@ -227,7 +227,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__has_trivial_destructor(` `type` `)`
+- `__has_trivial_destructor(` *형식* `)`
 
    반환 **true** 형식에 trivial, 컴파일러에서 생성 된 소멸자가 있습니다.
 
@@ -242,7 +242,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__has_user_destructor(` `type` `)`
+- `__has_user_destructor(` *형식* `)`
 
    반환 **true** 플랫폼 또는 네이티브 형식에는 사용자가 선언한 소멸자가 있으면 됩니다.
 
@@ -259,7 +259,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__has_virtual_destructor(` `type` `)`
+- `__has_virtual_destructor(` *형식* `)`
 
    반환 **true** 형식에 가상 소멸자가 있습니다.
 
@@ -278,11 +278,11 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__is_abstract(` `type` `)`
+- `__is_abstract(` *형식* `)`
 
-   반환 **true** 형식이 추상 형식입니다. 네이티브 추상 형식에 대 한 자세한 내용은 참조 하세요. [추상](../windows/abstract-cpp-component-extensions.md)합니다.
+   반환 **true** 형식이 추상 형식입니다. 네이티브 추상 형식에 대 한 자세한 내용은 참조 하세요. [추상 클래스](../cpp/abstract-classes-cpp.md)합니다.
 
-   `__is_abstract`는 플랫폼 형식에 대해서도 작동합니다. 하나 이상의 멤버가 있는 인터페이스는 하나 이상의 추상 멤버가 있는 참조 형식과 마찬가지로 추상 형식입니다. 추상 플랫폼 형식에 대 한 자세한 내용은 참조 하세요. [추상 클래스](../cpp/abstract-classes-cpp.md)
+   `__is_abstract`는 플랫폼 형식에 대해서도 작동합니다. 하나 이상의 멤버가 있는 인터페이스는 하나 이상의 추상 멤버가 있는 참조 형식과 마찬가지로 추상 형식입니다. 추상 플랫폼 형식에 대 한 자세한 내용은 참조 하세요. [추상](../windows/abstract-cpp-component-extensions.md)합니다.
 
     ```cpp
     // is_abstract.cpp
@@ -318,7 +318,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__is_class(` `type` `)`
+- `__is_class(` *형식* `)`
 
    반환 **true** 형식이 네이티브 클래스 또는 구조체입니다.
 
@@ -350,9 +350,9 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__is_delegate(` `type` `)`
+- `__is_delegate(` *형식* `)`
 
-   반환 **true** 경우 `type` 는 대리자입니다. 자세한 내용은 [delegate (c + + 구성 요소 확장)](../windows/delegate-cpp-component-extensions.md)합니다.
+   반환 **true** 경우 `type` 는 대리자입니다. 자세한 내용은 [대리자 (C + + /cli 및 C + + CX)](../windows/delegate-cpp-component-extensions.md)합니다.
 
     ```cpp
     delegate void MyDel();
@@ -361,7 +361,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__is_empty(` `type` `)`
+- `__is_empty(` *형식* `)`
 
    반환 **true** 형식 인스턴스 데이터 멤버가 있으면 됩니다.
 
@@ -377,7 +377,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__is_enum(` `type` `)`
+- `__is_enum(` *형식* `)`
 
    반환 **true** 형식이 네이티브 열거형입니다.
 
@@ -399,7 +399,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__is_interface_class(` `type` `)`
+- `__is_interface_class(` *형식* `)`
 
    반환 **true** 플랫폼 인터페이스가 전달 하는 경우. 자세한 내용은 [인터페이스 클래스](../windows/interface-class-cpp-component-extensions.md)합니다.
 
@@ -413,7 +413,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__is_pod(` `type` `)`
+- `__is_pod(` *형식* `)`
 
    반환 **true** 형식은 클래스 또는 생성자를 사용 하 여 공용 구조체 또는 전용 또는 보호 된 비정적 멤버, 기본 클래스가 없고, 및 가상 함수가 없는 경우. POD에 대한 자세한 내용은 C++ 표준, 섹션 8.5.1/1, 9/4 및 3.9/10을 참조하세요.
 
@@ -429,7 +429,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__is_polymorphic(` `type` `)`
+- `__is_polymorphic(` *형식* `)`
 
    반환 **true** 네이티브 형식에 있는 경우 가상 함수입니다.
 
@@ -445,7 +445,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__is_ref_array(` `type` `)`
+- `__is_ref_array(` *형식* `)`
 
    반환 **true** 플랫폼 배열이 전달 하는 경우. 자세한 내용은 [배열](../windows/arrays-cpp-component-extensions.md)합니다.
 
@@ -457,7 +457,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__is_ref_class(` `type` `)`
+- `__is_ref_class(` *형식* `)`
 
    반환 **true** 참조 클래스를 전달 하는 경우. 사용자 정의 참조 형식에 대 한 자세한 내용은 참조 하세요. [클래스 및 구조체](../windows/classes-and-structs-cpp-component-extensions.md)합니다.
 
@@ -470,7 +470,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__is_sealed(` `type` `)`
+- `__is_sealed(` *형식* `)`
 
    반환 **true** 플랫폼 또는 sealed로 표시 된 네이티브 형식에 전달 하는 경우. 자세한 내용은 [봉인](../windows/sealed-cpp-component-extensions.md)합니다.
 
@@ -481,7 +481,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__is_simple_value_class(` `type` `)`
+- `__is_simple_value_class(` *형식* `)`
 
    반환 **true** 가비지 수집 힙이에 대 한 참조를 포함 하는 값 형식이 전달 되는 경우. 사용자 정의 값 형식에 대 한 자세한 내용은 참조 하세요. [클래스 및 구조체](../windows/classes-and-structs-cpp-component-extensions.md)합니다.
 
@@ -499,7 +499,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__is_union(` `type` `)`
+- `__is_union(` *형식* `)`
 
    반환 **true** 형식이 공용 구조체 인지 합니다.
 
@@ -516,7 +516,7 @@ ms.locfileid: "42588284"
     }
     ```
 
-- `__is_value_class(` `type` `)`
+- `__is_value_class(` *형식* `)`
 
    반환 **true** 값 형식이 전달 되는 경우. 사용자 정의 값 형식에 대 한 자세한 내용은 참조 하세요. [클래스 및 구조체](../windows/classes-and-structs-cpp-component-extensions.md)합니다.
 
@@ -580,4 +580,4 @@ R is a ref class
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

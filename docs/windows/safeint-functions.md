@@ -41,12 +41,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 504cfe0780cfb0116f59ae67937ea5f0370dc8b2
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 43960e70f1aad29fa4b8fc03517231c7658d155b
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235570"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162583"
 ---
 # <a name="safeint-functions"></a>SafeInt 함수
 
@@ -101,7 +101,7 @@ inline bool SafeAdd (
 
 ### <a name="return-value"></a>반환 값
 
-`true` 오류가 발생 하지 않으면; `false` 오류가 발생 합니다.
+**true** 오류가 발생 하지 않으면; **false** 오류가 발생 합니다.
 
 ## <a name="safecast"></a>SafeCast
 
@@ -125,7 +125,7 @@ inline bool SafeCast (
 
 ### <a name="return-value"></a>반환 값
 
-`true` 오류가 발생 하지 않으면; `false` 오류가 발생 합니다.
+**true** 오류가 발생 하지 않으면; **false** 오류가 발생 합니다.
 
 ## <a name="safedivide"></a>SafeDivide
 
@@ -153,7 +153,7 @@ inline bool SafeDivide (
 
 ### <a name="return-value"></a>반환 값
 
-`true` 오류가 발생 하지 않으면; `false` 오류가 발생 합니다.
+**true** 오류가 발생 하지 않으면; **false** 오류가 발생 합니다.
 
 ## <a name="safeequals"></a>SafeEquals
 
@@ -177,7 +177,7 @@ inline bool SafeEquals (
 
 ### <a name="return-value"></a>반환 값
 
-`true` 하는 경우 *t* 하 고 *u* 같고, 그렇지 않으면 `false`합니다.
+**true 이면** 하는 경우 *t* 하 고 *u* 같고, 그렇지 않으면 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -205,7 +205,7 @@ inline bool SafeGreaterThan (
 
 ### <a name="return-value"></a>반환 값
 
-`true` 하는 경우 *t* 보다 크면 *u*이 고 그렇지 않으면 `false`합니다.
+**true** 하는 경우 *t* 보다 크면 *u*이 고 그렇지 않으면 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -233,7 +233,7 @@ inline bool SafeGreaterThanEquals (
 
 ### <a name="return-value"></a>반환 값
 
-`true` 하는 경우 *t* 보다 크거나 같음 *u*이 고 그렇지 않으면 `false`합니다.
+**true 이면** 하는 경우 *t* 보다 크거나 같음 *u*이 고 그렇지 않으면 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -261,7 +261,7 @@ inline bool SafeLessThan (
 
 ### <a name="return-value"></a>반환 값
 
-`true` 하는 경우 *t* 는 보다 작은 *u*이 고 그렇지 않으면 `false`합니다.
+**true** 하는 경우 *t* 는 미만 *u*이 고 그렇지 않으면 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -289,7 +289,7 @@ inline bool SafeLessThanEquals (
 
 ### <a name="return-value"></a>반환 값
 
-`true` 하는 경우 *t* 보다 작거나 같음 *u*이 고 그렇지 않으면 `false`합니다.
+**true 이면** 하는 경우 *t* 보다 작거나 같음 *u*이 고 그렇지 않으면 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -321,7 +321,7 @@ inline bool SafeModulus (
 
 ### <a name="return-value"></a>반환 값
 
-`true` 오류가 발생 하지 않으면; `false` 오류가 발생 합니다.
+**true** 오류가 발생 하지 않으면; **false** 오류가 발생 합니다.
 
 ## <a name="safemultiply"></a>SafeMultiply
 
@@ -373,7 +373,7 @@ inline bool SafeNotEquals (
 
 ### <a name="return-value"></a>반환 값
 
-`true` 하는 경우 *t* 하 고 *u* 같지 않으면 `false`합니다.
+**true** 하는 경우 *t* 하 고 *u* 같지 않으면이 고 그렇지 **false**합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -405,4 +405,4 @@ inline bool SafeSubtract (
 
 ### <a name="return-value"></a>반환 값
 
-`true` 오류가 발생 하지 않으면; `false` 오류가 발생 합니다.
+**true** 오류가 발생 하지 않으면; **false** 오류가 발생 합니다.

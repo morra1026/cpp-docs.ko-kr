@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60e1f944d19efd22cb2c6c7d6a3752d6d32ae1e3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d544ac392e2eb227d7e1c37412110d09272f10d5
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381675"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162511"
 ---
 # <a name="combinable-class"></a>combinable 클래스
 
@@ -182,7 +182,7 @@ T& local(bool& _Exists);
 ### <a name="parameters"></a>매개 변수
 
 *_Exists*<br/>
-부울에 대 한 참조입니다. 이 인수에서 참조 하는 부울 값에 설정할 `true` 경우 하위 계산이 이미이 스레드에서 있으며로 `false` 이것이이 스레드에서 첫 번째 하위 계산 하는 경우.
+부울에 대 한 참조입니다. 이 인수에서 참조 하는 부울 값에 설정할 **true** 경우 하위 계산이 이미이 스레드에서 있으며로 **false** 이것이이 스레드에서 첫 번째 하위 계산 하는 경우.
 
 ### <a name="return-value"></a>반환 값
 

@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1cedafaea33ac642e3a5593468b996f2442bd50
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 47504b7a471dc38f30e4ceb59b5feeffcc53db6d
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894566"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161839"
 ---
 # <a name="calling-dll-functions-from-visual-basic-applications"></a>Visual Basic 응용 프로그램에서 DLL 함수 호출
 
@@ -33,7 +33,7 @@ Visual Basic 응용 프로그램 (또는 파스칼 이나 포트란 등 다른 �
 
 `__stdcall` 함수에 대 한 올바른 호출 규칙을 만듭니다 (스택을 정리 하는 호출된 된 함수 및 매개 변수는 오른쪽에서 왼쪽으로 전달 됩니다) 만들지만 함수 이름을 다르게 데코레이팅합니다. 따라서 **__declspec (dllexport)** 는 트 데코 레이 된 이름을 DLL에서 내보낸된 함수를에 내보내집니다.
 
-합니다 `__stdcall` 이름 데코레이션은 기호 이름에 밑줄 (_)을 사용 하 여 기호를 추가 at 기호 (**\@**) 문자 다음에 인수 목록 (필요한 스택 공간)의 바이트 수입니다. 결과적으로 선언 된 함수가:
+합니다 `__stdcall` 이름 데코레이션은 기호 이름에 밑줄에 접두사 ( **\_** ) 기호를 추가 하 고는 at 기호 (**\@**) 문자 수가 뒤 인수 목록 (필요한 스택 공간) 바이트 수입니다. 결과적으로 선언 된 함수가:
 
 ```C
 int __stdcall func (int a, double b)
@@ -45,7 +45,7 @@ C 호출 규칙 (`__cdecl`)의 이름으로 데코 레이트 `_func`합니다.
 
 데코레이팅된 이름을 가져오려면 [/map](../build/reference/map-generate-mapfile.md)합니다. 이용 **__declspec (dllexport)** 다음을 수행 합니다.
 
-- C 호출 규칙을 사용 하 여 함수를 내보내는 경우 (**_cdecl**), 이름을 내보낼 때 선행 밑줄 (_)을 제거 합니다.
+- C 호출 규칙을 사용 하 여 함수를 내보내는 경우 (`__cdecl`), 선행 밑줄을 제거 ( **\_** ) 패키지를 내보낸 경우 이름입니다.
 
 - 내보내기 함수가 C 호출 규칙을 사용 하지 않습니다 (예를 들어 `__stdcall`), 데코레이팅된 이름을 내보냅니다.
 

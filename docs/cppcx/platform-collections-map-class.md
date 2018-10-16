@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9eccefff291dc509f846bce951cfe9508834876e
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 7e64f5857a2b0530fb0346a2635611db03fd9bc8
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103881"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162557"
 ---
 # <a name="platformcollectionsmap-class"></a>Platform::Collections::Map 클래스
 
@@ -173,7 +173,7 @@ Map 요소를 찾는 데 사용되는 키입니다. 유형의 *키* 형식 이�
 
 ### <a name="return-value"></a>반환 값
 
-키가 있으면 `true`이고, 그렇지 않으면 `false`입니다.
+**true 이면** 이 고, 그렇지 않으면 키가 없으면 **false**합니다.
 
 ## <a name="insert"></a>  Map:: insert 메서드
 
@@ -195,7 +195,7 @@ virtual bool Insert(K key, V value);
 
 ### <a name="return-value"></a>반환 값
 
-`true` 현재 Map의 기존 요소 키와 일치 하는 경우 *키* 로 설정 되어 해당 요소의 값 부분이 *값*합니다. `false` 일치 하는 현재 Map의 기존 요소가 *키* 하며 *키* 하 고 *값* 매개 변수는 키-값 쌍으로 수행 하 고 현재 Map에 추가 합니다.
+**true** 현재 Map의 기존 요소 키와 일치 하는 경우 *키* 로 설정 되어 해당 요소의 값 부분이 *값*합니다. **false** 일치 하는 현재 Map의 기존 요소가 *키* 하며 *키* 및 *값* 매개 변수는 키-값 쌍으로 수행 되며 그런 다음에 추가 합니다 현재 Map입니다.
 
 ## <a name="lookup"></a>  Map:: lookup 메서드
 
@@ -304,4 +304,4 @@ Map의 요소 수입니다.
 ## <a name="see-also"></a>참고 항목
 
 [플랫폼 Namespace](platform-namespace-c-cx.md)<br/>
-[C + + Windows 런타임 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
+[C++로 Windows Runtime 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

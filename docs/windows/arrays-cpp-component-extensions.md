@@ -1,7 +1,7 @@
 ---
-title: 배열 (c + + 구성 요소 확장) | Microsoft Docs
+title: 배열 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -22,14 +22,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 836017dcec969db85a0725a49193d7b8e8a88875
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b1a1f977e15d80d631799d8a9e101a8c85e3aaf1
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402852"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328105"
 ---
-# <a name="arrays-c-component-extensions"></a>배열(C++ 구성 요소 확장명)
+# <a name="arrays-ccli-and-ccx"></a>배열 (C + + /cli 및 C + + /cli CX)
 
 `Platform::Array<T>` 형식에서 C + + CX, 또는 **배열** 키워드에서 C + + CLI 초기 값을 지정 된 형식 배열을 선언 합니다.
 
@@ -180,4 +180,4 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

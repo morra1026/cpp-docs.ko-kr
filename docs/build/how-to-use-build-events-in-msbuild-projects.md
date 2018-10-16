@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d875836cbfe9506d41a979a63d941d1ee5b467a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fd35ff136c0145e1c76a04d15052d426a7c90dcc
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444335"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161270"
 ---
 # <a name="how-to-use-build-events-in-msbuild-projects"></a>방법: MSBuild 프로젝트에서 빌드 이벤트 사용
 
@@ -29,7 +29,7 @@ ms.locfileid: "46444335"
 
 각각 세 개의 빌드 이벤트 명령 요소에 의해 항목 정의 그룹에 표시 됩니다 (`<Command>`) 실행 되는 및 메시지 요소 (`<Message>`)는 선택할 때 표시 된 **MSBuild** 빌드 이벤트를 수행 합니다. 각 요소에는 선택 사항이 며 동일한 요소를 여러 번 지정 하는 경우 마지막 우선적으로 적용 합니다.
 
-선택적인 *빌드에 사용 하 여* 요소 (`<`*빌드 이벤트*`UseInBuild>`) 빌드 이벤트 실행 되는지 여부를 나타내는 속성 그룹을 지정할 수 있습니다. 콘텐츠의 값을 *빌드에 사용 하 여* 요소는 `true` 또는 `false`합니다. 빌드 이벤트를 하지 않는 한 기본적으로 실행 하면 해당 *빌드에 사용 하 여* 로 설정 된 `false`합니다.
+선택적인 *빌드에 사용 하 여* 요소 (`<`*빌드 이벤트*`UseInBuild>`) 빌드 이벤트 실행 되는지 여부를 나타내는 속성 그룹을 지정할 수 있습니다. 콘텐츠의 값을 *빌드에 사용 하 여* 요소는 **true** 하거나 **false**합니다. 빌드 이벤트를 하지 않는 한 기본적으로 실행 하면 해당 *빌드에 사용 하 여* 로 설정 된 `false`합니다.
 
 다음 표에서 각 빌드 이벤트 XML 요소를 나열합니다.
 

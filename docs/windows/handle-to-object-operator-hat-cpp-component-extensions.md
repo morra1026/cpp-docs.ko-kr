@@ -1,7 +1,7 @@
 ---
-title: 개체 연산자 (^) (c + + 구성 요소 확장)에 대 한 핸들 | Microsoft Docs
+title: 개체 연산자 (^)에 대 한 핸들 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,26 +15,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fa72b6ec2983c0d7b9850578e743d03b7e3946e3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d7fb74dcff370b314df5da5428ba3e406023acbe
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410860"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327975"
 ---
-# <a name="handle-to-object-operator---c-component-extensions"></a>개체 연산자에 대한 핸들(^)(C++ 구성 요소 확장)
+# <a name="handle-to-object-operator---ccli-and-ccx"></a>개체 연산자 (^)에 대 한 핸들 (C + + /cli 및 C + + /cli CX)
 
 합니다 *핸들 선언 자* (`^`, "햇"으로 발음), 형식이 수정 [지정자](../cpp/overview-of-declarators.md) 선언된 된 개체를 삭제 해야 함을 자동으로 시스템 개체 인지를 확인 함을 의미 하도록 더 이상 액세스할 수 없습니다.
 
 ## <a name="accessing-the-declared-object"></a>선언된 개체 액세스
 
-핸들 선언자를 사용하여 선언된 변수는 개체에 대한 포인터처럼 동작합니다. 하지만 변수는 전체 개체를 가리키며 개체의 한 멤버를 가리킬 수 없습니다. 또한 포인터 연산을 지원하지 않습니다. 개체에 액세스하려면 간접 연산자(`*`)를 사용하고 개체의 멤버에 액세스하려면 화살표 멤버 액세스 연산자(`->`)를 사용합니다.
+핸들 선언자를 사용하여 선언된 변수는 개체에 대한 포인터처럼 동작합니다. 하지만 변수는 전체 개체를 가리키며 개체의 한 멤버를 가리킬 수 없습니다. 또한 포인터 연산을 지원하지 않습니다. 개체에 액세스하려면 간접 참조 연산자(`*`)를 사용하고 개체의 멤버에 액세스하려면 화살표 멤버 액세스 연산자(`->`)를 사용합니다.
 
 ## <a name="windows-runtime"></a>Windows 런타임
 
 COM을 사용 하 여 컴파일러 *참조 카운팅* 개체가 더 이상 사용 되지 및 삭제할 수 없습니다 하는 경우를 확인 하는 메커니즘입니다. 이러한 기능이 가능한 이유는 Windows 런타임 인터페이스에서 파생된 개체가 실제로 COM 개체이기 때문입니다. 참조 횟수는 개체가 생성 또는 복사될 때 증가하고 개체가 null로 설정되거나 범위를 벗어날 때 감소합니다. 참조 횟수가 0이 되면 개체가 자동으로, 즉시 삭제됩니다.
 
-핸들 선언자의 장점을 이해하려면 COM에서 개체의 참조 횟수를 명시적으로 관리해야 하며 이 프로세스는 번거로울 뿐만 아니라 오류가 발생하기 쉽다는 점을 알아야 합니다. 즉, 참조 횟수를 증가 및 감소하려면 개체의 AddRef() 및 Release() 메서드를 호출해야 합니다. 하지만 핸들 선언자로 개체를 선언하면 Visual C++ 컴파일러에서 참조 횟수를 자동으로 조정하는 코드를 만듭니다.
+핸들 선언자의 장점을 이해하려면 COM에서 개체의 참조 횟수를 명시적으로 관리해야 하며 이 프로세스는 번거로울 뿐만 아니라 오류가 발생하기 쉽다는 점을 알아야 합니다. 즉, 참조 횟수를 증가 및 감소하려면 개체의 AddRef() 및 Release() 메서드를 호출해야 합니다. 하지만 핸들 선언 자를 사용 하 여 개체를 선언 하는 경우 컴파일러가 자동으로 참조 횟수를 조정 하는 코드를 생성 합니다.
 
 개체를 인스턴스화하는 방법에 대 한 자세한 내용은 [ref n e w](../windows/ref-new-gcnew-cpp-component-extensions.md)합니다.
 
@@ -47,8 +47,6 @@ COM을 사용 하 여 컴파일러 *참조 카운팅* 개체가 더 이상 사�
 CLR을 사용 하 여 시스템 *가비지 수집기* 개체가 더 이상 사용 되지 및 삭제할 수 없습니다 하는 경우를 확인 하는 메커니즘입니다. 공용 언어 런타임은 개체를 할당하는 힙을 유지 관리하고 프로그램의 관리되는 참조(변수)를 사용하여 힙에서의 개체 위치를 나타냅니다. 더 이상 개체를 사용하지 않으면 힙에 점유된 메모리가 해제됩니다. 가비지 수집기는 해제된 메모리를 더 효율적으로 사용하기 위해 힙을 정기적으로 압축합니다. 힙을 압축하면 힙에서 개체가 이동할 수 있고, 그럴 경우 관리되는 참조에서 참조한 위치가 무효화됩니다. 하지만 가비지 수집기는 관리되는 모든 참조의 위치를 알고 있으며 해당 위치를 자동으로 업데이트하여 힙에서 개체의 현재 위치를 나타냅니다.
 
 네이티브 C++ 포인터(`*`) 및 참조(`&`)는 관리되는 참조가 아니며 가비지 수집기는 참조하는 주소를 자동으로 업데이트할 수 없습니다. 이 문제를 해결하려면 핸들 선언자를 사용하여 가비지 수집기가 알고 있고 자동으로 업데이트할 수 있는 변수를 지정합니다.
-
-Visual C++ 2002 및 Visual C++ 2003에서는 관리되는 힙에서 개체를 선언하는 데 `__gc *`가 사용되었습니다.  새 구문에서는 `^` 대신 `__gc *`을 사용합니다.
 
 자세한 내용은 [방법: 네이티브 형식에 처리 선언](../dotnet/how-to-declare-handles-in-native-types.md)합니다.
 
@@ -235,5 +233,5 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)<br/>
+[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)<br/>
 [추적 참조 연산자](../windows/tracking-reference-operator-cpp-component-extensions.md)

@@ -1,7 +1,7 @@
 ---
-title: Point 구조체 1 | Microsoft Docs
+title: POINT 구조체 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -18,14 +18,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82955bb42ae68cb7f07fb89be94a7fcf424ee81c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1d2aaafe65b742ded6c0adf49fac430679e24380
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416099"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49334561"
 ---
-# <a name="point-structure1"></a>Point 구조체 1
+# <a name="point-structure"></a>POINT 구조체
 
 합니다 `POINT` 구조 정의 x*-* 및 점의 y-좌표입니다.
 

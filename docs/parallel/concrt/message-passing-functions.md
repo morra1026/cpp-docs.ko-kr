@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0b7a7afb25d46fa3b521353c4577fbed66e69fd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7435bdbc4d5959771a1f80e2ad12f038a8157bae
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436990"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162284"
 ---
 # <a name="message-passing-functions"></a>메시지 전달 함수
 
@@ -41,9 +41,9 @@ ms.locfileid: "46436990"
 
 합니다 [concurrency:: send](reference/concurrency-namespace-functions.md#send) 함수는 지정 된 대상에 동기적으로 메시지를 보냅니다 및 [concurrency:: asend](reference/concurrency-namespace-functions.md#asend) 함수는 지정 된 대상에 비동기적으로 메시지를 보냅니다. 모두를 `send` 및 `asend` 함수는 것은 결국 수락 또는 거부 메시지 대상 나타냅니다 될 때까지 기다립니다.
 
-`send` 함수 대상을 수락 하거나 반환 하기 전에 메시지를 거부 될 때까지 대기 합니다. 합니다 `send` 함수에서 반환 `true` 메시지 전달 된 경우 및 `false` 그렇지 않은 경우. 때문에 합니다 `send` 함수는 동기적으로 작동 합니다 `send` 함수를 반환 하기 전에 메시지를 받는 대상을 기다립니다.
+`send` 함수 대상을 수락 하거나 반환 하기 전에 메시지를 거부 될 때까지 대기 합니다. 합니다 `send` 함수에서 반환 **true** 메시지 전달 된 경우 및 **false** 그렇지 않은 경우. 때문에 합니다 `send` 함수는 동기적으로 작동 합니다 `send` 함수를 반환 하기 전에 메시지를 받는 대상을 기다립니다.
 
-반대로,는 `asend` 함수를 허용 하거나 반환 하기 전에 메시지를 거부할 대상을 기다리지 않습니다. 대신 합니다 `asend` 함수에서 반환 `true` 대상 메시지를 수락 하 고 최종적 경우. 이 고, 그렇지 `asend` 반환 `false` 대상에 메시지를 거부 하거나 메시지를 받을지 여부에 대 한 결정을 연기를 나타냅니다.
+반대로,는 `asend` 함수를 허용 하거나 반환 하기 전에 메시지를 거부할 대상을 기다리지 않습니다. 대신 합니다 `asend` 함수에서 반환 **true** 대상 메시지를 수락 하 고 최종적 경우. 이 고, 그렇지 `asend` 반환 **false** 대상에 메시지를 거부 하거나 메시지를 받을지 여부에 대 한 결정을 연기를 나타냅니다.
 
 [[맨 위로 이동](#top)]
 

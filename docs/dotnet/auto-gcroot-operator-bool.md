@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 6e21626b9b69d1c25ca638f659b6d8cc1a850594
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c2fe517809db7cecacc7a0190e0dae94ef55c35d
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46421221"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161192"
 ---
 # <a name="autogcrootoperator-bool"></a>auto_gcroot::operator bool
 
@@ -40,15 +40,15 @@ operator bool() const;
 
 ## <a name="return-value"></a>반환 값
 
-`true` 래핑된 개체가 잘못 되었습니다. `false` 그렇지 않은 경우.
+**true** 래핑된 개체가 잘못 되었습니다. **false** 그렇지 않은 경우.
 
 ## <a name="remarks"></a>설명
 
-이 연산자를 실제로 변환 `_detail_class::_safe_bool` 는 보다 안전한 `bool` 정수 계열 형식으로 변환할 수 없기 때문입니다.
+이 연산자를 실제로 변환 `_detail_class::_safe_bool` 는 보다 안전한 **bool** 정수 계열 형식으로 변환할 수 없기 때문입니다.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // msl_auto_gcroot_operator_bool.cpp
 // compile with: /clr
 #include <msclr\auto_gcroot.h>

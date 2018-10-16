@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d745b912406407cd56252ba593601a7794fc841d
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 77664c6e849707e6ec9efafbc816a586d5b4850e
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234718"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328209"
 ---
 # <a name="walkthrough-creating-a-uwp-app-using-wrl-and-media-foundation"></a>연습: WRL 및 Media Foundation을 사용 하 여 UWP 앱 만들기
 
@@ -52,7 +52,7 @@ ms.locfileid: "48234718"
 
 - 합니다 [InspectableClass](../windows/inspectableclass-macro.md) 매크로 참조 계산과 같은 기본 COM 기능을 구현 하며 `QueryInterface` 메서드 및 런타임 클래스 이름 및 신뢰 수준을 설정 합니다.
 
-- microsoft:: wrl을 사용 하 여::[모듈 클래스](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/b4acf5de-2f4c-4c8b-b5ff-9140d023ecbe) 과 같은 DLL 진입점 함수를 구현 하려면 [DllGetActivationFactory](https://msdn.microsoft.com/library/br205771.aspx)를 [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), 및 [ DllGetClassObject](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject)합니다.
+- microsoft:: wrl을 사용 하 여::[모듈 클래스](module-class.md) 과 같은 DLL 진입점 함수를 구현 하려면 [DllGetActivationFactory](https://msdn.microsoft.com/library/br205771.aspx)를 [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), 및 [ DllGetClassObject](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject)합니다.
 
 - 구성 요소 DLL을 runtimeobject.lib에 연결합니다. 또한 지정할 [/WINMD](../cppcx/compiler-and-linker-options-c-cx.md) Windows 메타 데이터를 생성할 링커 줄에 있습니다.
 

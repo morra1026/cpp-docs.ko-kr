@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: be9c1bc8125c30eb2208b389097eac7e1cf38e09
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2534563ba85ec3d2d513c192637d3ae8b3beb971
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374388"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162362"
 ---
 # <a name="autohandleoperator-bool"></a>auto_handle::operator bool
 
@@ -40,11 +40,11 @@ operator bool();
 
 ## <a name="return-value"></a>반환 값
 
-`true` 래핑된 개체가 잘못 되었습니다. `false` 그렇지 않은 경우.
+**true** 래핑된 개체가 잘못 되었습니다. **false** 그렇지 않은 경우.
 
 ## <a name="remarks"></a>설명
 
-이 연산자를 실제로 변환 `_detail_class::_safe_bool` 는 보다 안전한 `bool` 정수 계열 형식으로 변환할 수 없기 때문입니다.
+이 연산자를 실제로 변환 `_detail_class::_safe_bool` 는 보다 안전한 **bool** 정수 계열 형식으로 변환할 수 없기 때문입니다.
 
 ## <a name="example"></a>예제
 

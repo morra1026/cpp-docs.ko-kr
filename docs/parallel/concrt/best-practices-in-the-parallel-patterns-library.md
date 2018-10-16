@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28bedc703a8fa965b5380cb8c7eba840d07f7772
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d5ad7d0210f99b1b1aa5c481ed1b8695c68fb311
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396937"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49163389"
 ---
 # <a name="best-practices-in-the-parallel-patterns-library"></a>병렬 패턴 라이브러리의 유용한 정보
 
@@ -180,7 +180,7 @@ Container 1: Freeing resources...Exiting program...
 
 작업(task)이 협조적 차단 작업(operation)을 수행하면 첫 번째 작업(task)이 데이터를 기다리는 동안 런타임에서 다른 작업(work)을 수행할 수 있습니다. 대기 중인 작업이 차단 해제되면 런타임에서 다시 예약합니다. 일반적으로 런타임은 이전에 차단 해제된 작업을 다시 예약하기 전에 최근에 차단 해제된 작업을 다시 예약합니다. 따라서 런타임이 차단 작업 중에 불필요한 작업을 예약하여 성능 저하가 발생할 수 있습니다. 병렬 작업을 취소하기 전에 차단 작업을 수행하는 경우 차단 작업으로 인해 `cancel` 호출이 지연될 수 있습니다. 이 경우 다른 작업이 불필요한 작업을 수행합니다.
 
-제공된 조건자 함수를 충족하는 제공된 배열의 요소를 검색하는 `parallel_find_answer` 함수를 정의하는 다음 예제를 고려해 보세요. 조건자 함수가 `true`를 반환하는 경우 병렬 작업 함수는 `Answer` 개체를 만들고 전체 작업을 취소합니다.
+제공된 조건자 함수를 충족하는 제공된 배열의 요소를 검색하는 `parallel_find_answer` 함수를 정의하는 다음 예제를 고려해 보세요. 조건자 함수를 반환 하는 경우 **true**, 병렬 작업 함수를 만듭니다는 `Answer` 개체 및 전반적인 작업을 취소 합니다.
 
 [!code-cpp[concrt-blocking-cancel#1](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_13.cpp)]
 
@@ -238,7 +238,7 @@ PPL이 정의 된 [concurrency:: combinable](../../parallel/concrt/reference/com
 
 작업 그룹 또는 병렬 알고리즘에 람다 식을 제공하는 경우 캡처 절은 람다 식의 본문이 값이나 참조로 바깥쪽 범위의 변수에 액세스하는지를 지정합니다. 변수를 참조로 람다 식에 전달하는 경우 작업이 완료될 때까지 해당 변수의 수명이 유지되도록 보장해야 합니다.
 
-`object` 클래스 및 `perform_action` 함수를 정의하는 다음 예제를 고려해 보세요. `perform_action` 함수는 `object` 변수를 만들고 해당 변수에 대해 비동기적으로 일부 작업을 수행합니다. `perform_action` 함수가 반환되기 전에 작업이 완료되도록 보장되지 않으므로 작업을 실행 중일 때 `object` 변수가 삭제되면 프로그램 작동이 중단되거나 지정되지 않은 동작이 나타납니다.
+`object` 클래스 및 `perform_action` 함수를 정의하는 다음 예제를 고려해 보세요. `perform_action` 함수는 `object` 변수를 만들고 해당 변수에 대해 비동기적으로 일부 작업을 수행합니다. `perform_action` 함수가 반환되기 전에 작업이 완료되도록 보장되지 않으므로 작업을 실행 중일 때 `object` 변수가 제거되면 프로그램 작동이 중단되거나 지정되지 않은 동작이 나타납니다.
 
 [!code-cpp[concrt-lambda-lifetime#1](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_20.cpp)]
 

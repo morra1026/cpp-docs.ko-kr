@@ -1,7 +1,7 @@
 ---
 title: 시도-문을 제외 | Microsoft Docs
 ms.custom: ''
-ms.date: 10/05/2018
+ms.date: 10/09/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -11,6 +11,7 @@ f1_keywords:
 - EXCEPTION_CONTINUE_SEARCH
 - _exception_info
 - __except
+- _except
 - EXCEPTION_CONTINUE_EXECUTION
 - _exception_code
 - __except_cpp
@@ -35,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e938f5b7e5f25461ae921fbfa3c49920eca86eb
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: af4d14eb3fad691a5ff10665a83879ae4319a3d9
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861930"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162037"
 ---
 # <a name="try-except-statement"></a>try-except 문
 
@@ -89,6 +90,8 @@ ms.locfileid: "48861930"
 각 응용 프로그램에는 자체 예외 처리기를 사용할 수 있습니다.
 
 유효 하지 않은으로 이동 하는 **__try** 문을 하나 내부에서 외부로 점프할 수 있지만. 실행 하는 도중에 프로세스를 종료할 경우 예외 처리기가 호출 되지를 **시도-제외한** 문입니다.
+
+이전 버전과 호환성에 대 한 **_try**를 **_except**, 및 **_leave** 에 대 한 동의어가 **__try**, **__except** , 및 **__leave** 하지 않으면 컴파일러 옵션 [/Za \(언어 확장 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md) 지정 됩니다.
 
 ### <a name="the-leave-keyword"></a>__leave 키워드
 

@@ -1,7 +1,7 @@
 ---
-title: 특성 대상 (c + + 구성 요소 확장) | Microsoft Docs
+title: 대상 특성 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d7a4cc42a0913636b0b63057f0f265f3fb8a034c
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9dfb469bb9dcea8a2c1e197fa7c305d08d155cf1
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42589418"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327782"
 ---
-# <a name="attribute-targets-c-component-extensions"></a>특성 대상(C++ 구성 요소 확장명)
+# <a name="attribute-targets-ccli-and-ccx"></a>대상 특성 (C + + /cli 및 C + + /cli CX)
 
 특성 사용 지정자를 사용하여 특성 대상을 지정할 수 있습니다.  각 특성을 정의하여 특정 언어 요소에 적용합니다. 예를 들어, 특성을 정의하여 클래스와 구조체에만 적용할 수도 있습니다.  다음 목록에서는 사용자 지정 특성을 사용할 수 있는 가능한 구문 요소를 보여 줍니다. 이러한 값의 조합(논리적 OR)을 사용할 수 있습니다.
 

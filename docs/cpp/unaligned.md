@@ -1,12 +1,14 @@
 ---
 title: __unaligned | Microsoft Docs
 ms.custom: ''
-ms.date: 03/09/2018
+ms.date: 10/10/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
 f1_keywords:
 - __unaligned_cpp
+- __unaligned
+- _unaligned
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9593a0b3c6e6980f5be2ce9dcf13e505e94dcace
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 444bc3372b22676cacb3ee89b9c0ad92000cedcc
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040202"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161220"
 ---
 # <a name="unaligned"></a>__unaligned
 
@@ -32,6 +34,8 @@ ms.locfileid: "46040202"
 이 한정자에는 포인터가; 데이터의 맞춤을 설명 합니다. 포인터 자체는 정렬로 간주 됩니다.
 
 에 대 한 필요성을 **__unaligned** 키워드 플랫폼과 환경에 따라 다릅니다. 데이터를 적절 하 게 표시할 오류 성능 저하의 하드웨어 오류에 이르는 다양 한 문제가 발생할 수 있습니다. 합니다 **__unaligned** 한정자 x86에 대해 올바르지 않습니다. 플랫폼입니다.
+
+이전 버전과 호환성에 대 한 **_unaligned** 에 대 한 동의어가 **__unaligned** 하지 않으면 컴파일러 옵션 [/Za \(언어 확장 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md) 지정 됩니다.
 
 정렬에 대한 자세한 내용은 다음을 참조하십시오.
 

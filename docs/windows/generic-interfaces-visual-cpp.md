@@ -1,7 +1,7 @@
 ---
-title: 제네릭 인터페이스 (Visual c + +) | Microsoft Docs
+title: 제네릭 인터페이스 (C + + /cli CLI) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -16,14 +16,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2065b96875f2c441b24eb69f8ca51b06fe5717f0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e36a4c1d9604753fd4bff6a51df060e1d26822fb
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46444495"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328365"
 ---
-# <a name="generic-interfaces-visual-c"></a>제네릭 인터페이스(Visual C++)
+# <a name="generic-interfaces-ccli"></a>제네릭 인터페이스 (C + + /cli CLI)
 
 클래스에서 형식 매개 변수에 적용 되는 제한을 인터페이스에서 형식 매개 변수에 적용 하는 것과 동일 (참조 [제네릭 클래스 (C + + /cli CLI)](../windows/generic-classes-cpp-cli.md)).
 

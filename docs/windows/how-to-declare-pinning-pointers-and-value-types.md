@@ -1,7 +1,7 @@
 ---
 title: '방법: 고정 포인터를 선언 및 값 형식 | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -16,18 +16,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 88c7b9d0b9ed8a39bae09e2ec1691de90549fc11
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2e724e468ec9c95a2404ea70c8666bc6880207ca
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607151"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49327611"
 ---
 # <a name="how-to-declare-pinning-pointers-and-value-types"></a>방법: 고정 포인터 및 값 형식 선언
 
 값 형식은 암시적으로 boxing할 수 있습니다. 자체 및 사용에 다음 값 형식 개체에 대 한 고정 포인터를 선언할 수 있습니다는 **pin_ptr** boxed 값 형식입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ### <a name="code"></a>코드
 
