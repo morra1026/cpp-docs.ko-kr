@@ -1,7 +1,7 @@
 ---
-title: 사용자 정의 특성 (c + + 구성 요소 확장) | Microsoft Docs
+title: 사용자 정의 특성 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
 ms.custom: ''
-ms.date: 10/02/2018
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -16,26 +16,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3c2f5568b067c119bfa65744290c39d7ca577072
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 004c4c30c6e7e75f626e1ac87c09cb0a87f1c8cc
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48789230"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328443"
 ---
-# <a name="user-defined-attributes--c-component-extensions"></a>사용자 정의 특성(C++ 구성 요소 확장)
+# <a name="user-defined-attributes--ccli-and-ccx"></a>사용자 정의 특성 (C + + /cli 및 C + + /cli CX)
 
-사용자 지정 특성을 사용 하는 인터페이스, 클래스 또는 구조체, 메서드, 매개 변수 또는 열거형의 메타 데이터를 확장할 수 있습니다.
-
-## <a name="all-runtimes"></a>모든 런타임
-
-모든 런타임 사용자 지정 특성을 지원 합니다.
+C + + /cli 및 C + + /cli CX 인터페이스, 클래스 또는 구조체, 메서드, 매개 변수 또는 열거형의 메타 데이터를 확장 하는 플랫폼 특정 특성을 만들 수 있습니다. 이러한 특성은는 [표준 c + + 특성](../cpp/attributes.md)합니다.
 
 ## <a name="windows-runtime"></a>Windows 런타임
 
-C + + /cli CX 특성 속성만 지원 하지만 생성자 또는 메서드 특성을 지정 하지 않습니다.
-
-### <a name="remarks"></a>설명
+다음을 적용할 수 있습니다 C + + /cli CX 특성 속성에 있지만 생성자 또는 메서드 수는 없습니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -43,17 +37,11 @@ C + + /cli CX 특성 속성만 지원 하지만 생성자 또는 메서드 특�
 
 ## <a name="common-language-runtime"></a>공용 언어 런타임
 
-사용자 지정 특성을 통해 관리 되는 요소의 메타 데이터를 확장할 수 있습니다. 자세한 내용은 [특성](/dotnet/standard/attributes/index)을 참조하세요.
-
-### <a name="remarks"></a>설명
-
 에 표시 된 정보를 교체 하는 정보 및이 항목에 제시 된 구문 것 [특성](attributes/attribute.md)합니다.
 
 줄어들고 형식을 정의 하 여 사용자 지정 특성을 정의할 수 있습니다 <xref:System.Attribute> 기본 클래스 형식 및 선택적으로 적용 합니다 <xref:System.AttributeUsageAttribute> 특성입니다.
 
-예를 들어에 Microsoft Transaction Server (MTS) 1.0, 트랜잭션, 동기화와 관련 하 여 동작 부하 분산, 및 등 ODL 사용자 지정 특성을 사용 하 여 형식 라이브러리에 삽입 하는 사용자 지정 Guid를 통해 지정 된 합니다. 따라서 MTS 서버의 클라이언트 형식 라이브러리를 참조 하 여 해당 특성을 지정할 수 있습니다. .NET framework에서는 형식 라이브러리의 아날로그 메타 데이터를 이며 ODL 사용자 지정 특성의 사용자 지정 특성입니다. 또한 형식 라이브러리를 읽기는 형식에 리플렉션을 사용 하 여 유사 합니다.
-
-자세한 내용은 다음 항목을 참조하세요.
+자세한 내용은 다음을 참조하세요.
 
 - [특성 대상](attribute-targets-cpp-component-extensions.md)
 
@@ -216,4 +204,4 @@ ref struct B {};
 
 ## <a name="see-also"></a>참고 항목
 
-[런타임 플랫폼용 구성 요소 확장](component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP 용 구성 요소 확장](component-extensions-for-runtime-platforms.md)
