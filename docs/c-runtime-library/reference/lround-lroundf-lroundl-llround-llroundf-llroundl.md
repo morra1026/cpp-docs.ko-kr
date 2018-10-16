@@ -46,12 +46,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9af035e65e383c8027c8c19df02e18c298f625e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4ea24e45c26abe418023d4f065117928bb17ae2b
+ms.sourcegitcommit: 3f3f1d687e109b63399e14e2c8f4404787bdfae7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401050"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336537"
 ---
 # <a name="lround-lroundf-lroundl-llround-llroundf-llroundl"></a>lround, lroundf, lroundl, llround, llroundf, llroundl
 
@@ -99,21 +99,21 @@ long long llroundl(
 
 ## <a name="return-value"></a>반환 값
 
-**lround** 및 **llround** 함수는 가장 가까운 반환 **긴** 또는 **긴** **긴** 정수 *x*합니다. 중간값은 부동 소수점 반올림 모드의 설정과 관계없이 0에서 멀어지는 쪽으로 반올림됩니다. 반환되는 오류가 없습니다.
+합니다 **lround** 및 **llround** 함수는 가장 가까운 반환 **긴** 또는 **긴** **긴** 정수 *x*합니다. 중간값은 부동 소수점 반올림 모드의 설정과 관계없이 0에서 멀어지는 쪽으로 반올림됩니다. 반환되는 오류가 없습니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **IND**|없음|**_DOMAIN**|
+|**QNAN**, **찾기**|없음|**(_D)**|
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **lround** 또는 **llround** 사용 하 고 반환 **float** 및 **긴** **double** 값입니다. C 프로그램에서 **lround** 및 **llround** 항상 사용 하 고 반환 된 **double**합니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **lround** 하거나 **llround** 및 반환 하는 **float** 고 **긴** **이중** 값입니다. C 프로그램에서 **lround** 하 고 **llround** 항상 하 고 반환을 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**lround**, **lroundf**, **lroundl**, **llround**, **llroundf**, **llroundl**|\<math.h>|
+|**lround**, **lroundf**합니다 **lroundl**를 **llround**를 **llroundf**, **llroundl**|\<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
@@ -121,7 +121,7 @@ C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수
 
 ```C
 // crt_lround.c
-// Build with: cl /W3 /Tc crt_lround.c
+// Build with: cl /W4 /Tc crt_lround.c
 // This example displays the rounded results of
 // the floating-point values 2.499999, -2.499999,
 // 2.8, -2.8, 3.5 and -3.5.
@@ -133,7 +133,7 @@ int main( void )
 {
    double x = 2.499999;
    float y = 2.8f;
-   long double z = 3.5;
+   long double z = 3.5L;
 
    printf("lround(%f) is %d\n", x, lround(x));
    printf("lround(%f) is %d\n", -x, lround(-x));
@@ -149,8 +149,8 @@ lround(2.499999) is 2
 lround(-2.499999) is -2
 lroundf(2.800000) is 3
 lroundf(-2.800000) is -3
-lroundl(2.500000) is 4
-lroundl(-2.500000) is -4
+lroundl(3.500000) is 4
+lroundl(-3.500000) is -4
 ```
 
 ## <a name="see-also"></a>참고자료
