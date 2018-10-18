@@ -1,7 +1,7 @@
 ---
 title: SQL Server에 안정형 어셈블리 사용 (C + + /cli CLI) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/17/2019
 ms.technology:
 - cpp-cli
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 2bb4adbb960f9d062cc8573c7ca0f7cd5dcd0426
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4fca5d567d19434654b7ccf3cfb2b4d5d3e44d53
+ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382221"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410709"
 ---
 # <a name="using-verifiable-assemblies-with-sql-server-ccli"></a>SQL Server에 안정형 어셈블리 사용(C++/CLI)
 
@@ -32,9 +32,10 @@ SQL Server transact-sql (T-SQL)을 SQL Server에 안정형 어셈블리를 설�
 
 - 무제한 모드:; 위험은 사용자 고유의 코드를 실행 합니다. 코드 형식 안전성이 될 필요가 없습니다.
 
-- 안전 모드: 형식이 안전한 코드를 실행 /clr: safe를 사용 하 여 컴파일됩니다.
+- 안전 모드: 형식이 안전한 코드를 실행 /clr: safe를 사용 하 여 컴파일됩니다. 
 
-안전 모드에서는 형식 안전 파일이 되도록 어셈블리를 실행된 합니다.
+> [!IMPORTANT]
+> 사용 되지 않는 visual Studio 2015 및 Visual Studio 2017을 지원 하지 않습니다 합니다 **/clr: pure** 및 **/clr: safe** 검증할 수 있는 프로젝트를 만들 합니다. 검증할 수 있는 코드를 필요로 하는 경우에 C# 코드를 변환 하는 것이 좋습니다.
 
 를 만들고 SQL Server에 안정형 어셈블리를 로드 하려면 다음과 같이 CREATE ASSEMBLY 문과 DROP ASSEMBLY TRANSACT-SQL 명령을 사용 합니다.
 
@@ -88,5 +89,5 @@ sqlcmd -S MyServer -E -i myScript.sql -o myResult.txt
 
 ## <a name="see-also"></a>참고 항목
 
-[방법: /clr: safe로 마이그레이션 (C + + /cli CLI)](../dotnet/how-to-migrate-to-clr-safe-cpp-cli.md)<br/>
+
 [클래스 및 구조체](../cpp/classes-and-structs-cpp.md)
