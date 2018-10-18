@@ -1,7 +1,7 @@
 ---
 title: 아이콘에 대 한 이미지 편집기 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/17/2018
 ms.technology:
 - cpp-windows
 ms.topic: conceptual
@@ -23,16 +23,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fe7cad7fccabd7acc8af7ecf1f3711d5b0d636ce
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ecd2b3b94f04a246242a33494a124171e95cae7c
+ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379192"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410670"
 ---
 # <a name="image-editor-for-icons"></a>아이콘에 대한 이미지 편집기
 
-이미지 편집기에는 도구 모음 비트맵 만들기에 도움이 되는 기능뿐 아니라 이미지 만들기와 편집에 사용하는 다양한 도구도 들어 있습니다. **이미지 편집기** 도구 모음에서 **이미지** 메뉴와 도구의 명령을 사용하여 비트맵, 아이콘 및 커서뿐 아니라 GIF나 JPEG 형식의 이미지도 편집할 수 있습니다.
+솔루션 탐색기에서 이미지 파일 (예:.ico,.bmp,.png)를 클릭 하면 이미지는 이미지 편집기에서 코드 파일이 코드 편집기에서 열려 있는 동일한 방식으로에서 열립니다. 이미지 편집기 탭이 활성화 되어 있으면 도구 모음 만들기 및 편집 이미지에 대 한 많은 도구를 사용 하 여 표시 됩니다. **이미지 편집기** 도구 모음에서 **이미지** 메뉴와 도구의 명령을 사용하여 비트맵, 아이콘 및 커서뿐 아니라 GIF나 JPEG 형식의 이미지도 편집할 수 있습니다.
 
 이미지 편집기를 사용하면 다음과 같은 작업을 할 수 있습니다.
 

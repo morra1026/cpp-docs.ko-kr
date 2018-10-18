@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3ed6610f71561a62d3ff99a794bb166bdcabd3d3
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 32f3fc1b6a990a746c3dc87740c63fbe898f79d5
+ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083517"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410631"
 ---
 # <a name="ole-db-programming"></a>OLE DB 프로그래밍
 
@@ -40,7 +40,7 @@ OLE DB 템플릿은 일반적으로 사용되는 많은 OLE DB 인터페이스�
 |OLE DB 공급자 템플릿 사용(개념 항목)|[OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)|  
 |OLE DB 템플릿 클래스 및 매크로|[OLE DB 템플릿 참조](../../data/oledb/ole-db-templates.md) (Visual c + +)|  
 |OLE DB 소비자 특성|[OLE DB 소비자 특성](../../windows/ole-db-consumer-attributes.md)|  
-|OLE DB 인터페이스|[OLE DB 프로그래머 참조](/previous-versions/windows/desktop/ms713643) (에 Windows SDK)|  
+|OLE DB 인터페이스|[OLE DB 프로그래머 참조](/previous-versions/windows/desktop/ms713643(v%3dvs.85)) (에 Windows SDK)| 
 |OLE DB 템플릿 샘플|[OLE DB 템플릿 샘플](https://github.com/Microsoft/VCSamples)| 
 |데이터 액세스 프로그래밍 개요(Visual C++)|[데이터 액세스 프로그래밍](../../data/data-access-programming-mfc-atl.md)|  
 |ODBC 개념 항목|[ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)|  

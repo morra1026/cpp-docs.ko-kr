@@ -47,16 +47,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2a70b39352f26d76e9199b9da46f679507b148ed
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: a93c36748eb01a1c647a2aa433196c7364f60744
+ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163122"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410813"
 ---
 # <a name="hstring-class"></a>HString 클래스
 
-RAII 패턴을 사용 하 여 HSTRING의 수명 관리에 대 한 도우미 클래스입니다.
+수명을 관리 하기 위한 도우미 클래스를 [HSTRING](/windows/desktop/WinRT/hstring) RAII 패턴을 사용 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -66,7 +66,7 @@ class HString;
 
 ## <a name="remarks"></a>설명
 
-Windows 런타임 HSTRING 핸들을 통해 문자열에 대 한 액세스를 제공합니다. `HString` 편의 함수 및 연산자 HSTRING 핸들을 사용 하 여 단순화 하기 위해 클래스를 제공 합니다. 이 클래스는 RAII 패턴을 통해 소유 HSTRING의 수명 동안을 처리할 수 있습니다.
+Windows 런타임을 통해 문자열에 대 한 액세스를 제공 [HSTRING](/windows/desktop/WinRT/hstring) 핸들입니다. `HString` 편의 함수 및 연산자 HSTRING 핸들을 사용 하 여 단순화 하기 위해 클래스를 제공 합니다. 이 클래스는 RAII 패턴을 통해 소유 HSTRING의 수명 동안을 처리할 수 있습니다.
 
 ## <a name="members"></a>멤버
 
