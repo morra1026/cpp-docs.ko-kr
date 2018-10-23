@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7ce6949e582142e208058b4fa59d02008513e29f
-ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
+ms.openlocfilehash: cd8412ed280c0a256ea8acb7274da5d6238134fc
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410735"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49807799"
 ---
 # <a name="creating-a-consumer-without-using-a-wizard"></a>마법사를 사용하지 않고 소비자 만들기
 
@@ -67,7 +67,7 @@ ATL OLE DB 소비자 마법사를 사용 하지 않고 OLE DB 소비자 지원�
     hr = rs.Open();            // (Open also executes the command)  
     ```  
   
-- 필요에 따라 행 집합 속성 설정 사용 하 여 `CDBPropSet::AddProperty` 에 대 한 매개 변수로 전달 하 고 및 `rs.Open`합니다. 이렇게 하는 방법의 예제를 참조 하세요 **GetRowsetProperties** 에 [소비자 마법사 생성 메서드](../../data/oledb/consumer-wizard-generated-methods.md)합니다.  
+- 필요에 따라 행 집합 속성 설정 사용 하 여 `CDBPropSet::AddProperty` 에 대 한 매개 변수로 전달 하 고 및 `rs.Open`합니다. 이렇게 하는 방법의 예제를 참조 하세요 `GetRowsetProperties` 에 [소비자 마법사 생성 메서드](../../data/oledb/consumer-wizard-generated-methods.md)합니다.  
   
 - 이제 데이터를 검색/조작 하는 행 집합을 사용할 수 있습니다.  
   

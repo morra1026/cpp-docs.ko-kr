@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f313b659629f824828c52948b9a73c50f86b5e40
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: be0e05d61d4949deaee683c5b8f43d18e0501d23
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808981"
 ---
 # <a name="coledatetimespan-class"></a>COleDateTimeSpan 클래스
 
@@ -124,7 +124,7 @@ bool operator>=(const COleDateTimeSpan& dateSpan) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dateSpan*  
+*dateSpan*<br/>
 비교할 `COleDateTimeSpan`입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -154,7 +154,7 @@ COleDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dblSpanSrc*  
+*dblSpanSrc*<br/>
 복사할 새 일 수가 `COleDateTimeSpan` 개체입니다.
 
 *lDays*하십시오 *nHours*하십시오 *nMins*, *nSecs*  
@@ -189,7 +189,7 @@ CString Format(UINT nID) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*벗어나거나*  
+*벗어나거나*<br/>
 유사한 문자열 서식의 `printf` 문자열 서식을 지정 합니다. 서식 코드 앞에 백분율 (`%`)에 서명, 해당 바뀝니다 `COleDateTimeSpan` 구성 요소입니다. 반환된 된 문자열에 형식 문자열에 다른 문자 변경 되지 않고 복사 됩니다. 값 및 서식 지정 코드의 의미를 `Format` 다음과 같습니다.
 
 - **%H** 현재 날짜 시간
@@ -204,7 +204,7 @@ CString Format(UINT nID) const;
 
 -
 
-*nID*  
+*nID*<br/>
 형식 컨트롤 문자열에 대 한 리소스 ID입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -731,7 +731,7 @@ void SetStatus(DateTimeSpanStatus status) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*status*  
+*status*<br/>
 이 대 한 새 상태 값을 `COleDateTimeSpan` 개체입니다.
 
 ### <a name="remarks"></a>설명

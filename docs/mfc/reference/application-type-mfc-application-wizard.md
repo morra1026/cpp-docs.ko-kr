@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7d27245e06350a9174699fc20246d5e8997795d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: df0b938186716ab86b8eaeadd69d123ff14e57e0
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434379"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808773"
 ---
 # <a name="application-type-mfc-application-wizard"></a>MFC 응용 프로그램 마법사, 응용 프로그램 종류
 
@@ -58,7 +58,7 @@ ms.locfileid: "46434379"
 
 - **리소스 언어**
 
-   리소스의 언어를 설정합니다. Visual Studio가 설치 된 시스템에서 사용할 수 있는 언어를 표시 합니다. 시스템 언어 이외의 언어를 선택 하려는 경우 해당 언어에 대 한 적절 한 템플릿 폴더 이미 설치 되어 있어야 합니다. 사용할 수 있는 기본값에서 다른 언어 리소스를 설치 하는 방법에 대 한 자세한 내용은 합니다 **리소스 언어** 나열을 참조 하십시오 [다른 언어에 대 한 마법사 지원](../../ide/wizard-support-for-other-languages.md)합니다.
+   리소스의 언어를 설정합니다. Visual Studio가 설치 된 시스템에서 사용할 수 있는 언어를 표시 합니다. 시스템 언어 이외의 언어를 선택 하려는 경우 해당 언어에 대 한 적절 한 템플릿 폴더 이미 설치 되어 있어야 합니다.
 
    선택한 언어에 반영 됩니다는 **지역화 된 문자열** 옵션을 [MFC 응용 프로그램 마법사, 문서 템플릿 문자열](../../mfc/reference/document-template-strings-mfc-application-wizard.md) 마법사의 페이지입니다.
 
