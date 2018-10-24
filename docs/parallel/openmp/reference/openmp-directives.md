@@ -39,12 +39,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e761115642cb9ab95931a89ac3b511256d88708b
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 4d92d196cc38e6033c6f16332e4977f2481c4496
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49809007"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990336"
 ---
 # <a name="openmp-directives"></a>OpenMP 지시문
 
@@ -66,7 +66,7 @@ Visual c + +에서는 다음 OpenMP 지시문을 지원합니다.
 [single](#single)                     | 코드의 섹션 마스터 스레드 반드시 단일 스레드에서 실행할지를 지정할 수 있습니다.
 [threadprivate](#threadprivate)       | 변수는 스레드에 private 임을 지정 합니다.
 
-## <a name="atomic"></a>원자성(atomic)
+## <a name="atomic"></a>원자성
 
 지정 하는 원자 단위로 업데이트 되는 메모리 위치입니다.
 
@@ -111,7 +111,7 @@ int main() {
 Number of threads: 10
 ```
 
-## <a name="barrier"></a>barrier
+## <a name="barrier"></a>장벽
 
 팀;의 모든 스레드를 동기화합니다. 모든 스레드가 장애물 모든 스레드가 장애물을 실행할 때까지 일시 중지 합니다.
 
@@ -129,7 +129,7 @@ Number of threads: 10
 
 샘플을 사용 하는 방법에 대 한 `barrier`를 참조 하세요 [마스터](#master)합니다.
 
-## <a name="critical"></a>Critical
+## <a name="critical"></a>중요 한
 
 한 번에 하나의 스레드에서 코드는만 실행 됩니다 지정 합니다.
 
@@ -382,7 +382,7 @@ int main() {
 The sum of 1 through 10 is 55
 ```
 
-## <a name="master"></a>master
+## <a name="master"></a>마스터
 
 마스터 스레드만 프로그램의 섹션을 실행할지를 지정 합니다.
 
@@ -515,7 +515,7 @@ test2() iteration 3
 test2() iteration 4
 ```
 
-## <a name="parallel"></a>parallel
+## <a name="parallel"></a>병렬
 
 병렬로 여러 스레드에서 실행 될 코드는 병렬 영역을 정의 합니다.
 
@@ -588,7 +588,7 @@ Hello from thread 3
    #pragma omp section
    {
       code_block
-   } 
+   } 
 }
 ```
 
@@ -641,7 +641,7 @@ Hello from thread 0
 코드의 섹션 마스터 스레드 반드시 단일 스레드에서 실행할지를 지정할 수 있습니다.
 
 ```
-#pragma omp single [clauses] 
+#pragma omp single [clauses] 
 {
    code_block
 }

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d3a0b2d2da67e4db55dbf3a3f5b23c0c88797dd7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4dd8c62e376b3e160dcc0b6a5da9e2eb0b28cf8c
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065350"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49989959"
 ---
 # <a name="using-an-existing-ado-recordset"></a>기존 ADO 레코드 집합 사용
 
@@ -38,7 +38,7 @@ OLE DB 소비자 템플릿 및 현재 데이터 개체 (ADO)를 혼합 하려면
     ```  
   
     > [!NOTE]
-    >  *lpUnk* 가리키는 `IUnknown` ADO 레코드 집합의 개체입니다.  
+    > *lpUnk* 가리키는 `IUnknown` ADO 레코드 집합의 개체입니다.  
   
 1. 적절 한 OLE DB 소비자 템플릿 클래스에 접근자 및 행 집합을 연결 합니다.  
   

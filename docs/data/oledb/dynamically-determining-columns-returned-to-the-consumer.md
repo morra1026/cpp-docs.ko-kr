@@ -16,22 +16,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d3b7d20fb82399f3778c751de28858b93f81071a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fffa63c9bbcc556009fb5edff93fd02f302ae3ea
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080885"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990128"
 ---
 # <a name="dynamically-determining-columns-returned-to-the-consumer"></a>소비자에게 반환되는 열을 동적으로 결정
 
 PROVIDER_COLUMN_ENTRY 매크로 정상적으로 처리 된 `IColumnsInfo::GetColumnsInfo` 호출 합니다. 그러나 소비자는 책갈피를 사용 하도록 선택할 수, 있으므로 공급자 소비자는 책갈피를 요청 하는 여부에 따라 반환 되는 열을 변경할 수 여야 합니다.  
   
-처리 하는 `IColumnsInfo::GetColumnsInfo` 함수를 정의 하는 PROVIDER_COLUMN_MAP, 삭제를 호출할 `GetColumnInfo`에서 `CAgentMan` 사용자 MyProviderRS.h의 기록 하 고 고유한 정의로 바꿉니다 `GetColumnInfo` 함수:  
+처리 하는 `IColumnsInfo::GetColumnsInfo` 호출 함수를 정의 하는 PROVIDER_COLUMN_MAP, 삭제, `GetColumnInfo`에서 `CAgentMan` 에서 사용자 레코드 *사용자 지정*RS.h 및 자체에 대 한 정의 사용 하 여 바꾸기 `GetColumnInfo` 함수:  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
-// MyProviderRS.H  
+// CustomRS.H  
 class CAgentMan  
 {  
 public:  
@@ -52,13 +52,13 @@ public:
   
 다음으로 구현 된 `GetColumnInfo` MyProviderRS.cpp, 다음 코드와 같이 함수입니다.  
   
-`GetColumnInfo` 먼저 확인 하는 경우 OLE DB 속성인 `DBPROP_BOOKMARKS` 설정 됩니다. 속성을 가져올 `GetColumnInfo` 대 한 포인터를 사용 하 여 (`pRowset`) 행 집합 개체입니다. `pThis` 포인터 클래스인 속성 맵에 저장 된 행 집합을 생성 하는 클래스를 나타냅니다. `GetColumnInfo` 포인터로 변환 합니다 `pThis` 에 대 한 포인터는 `RMyProviderRowset` 포인터입니다.  
+`GetColumnInfo` 먼저 확인 하는 경우 OLE DB 속성인 `DBPROP_BOOKMARKS` 설정 됩니다. 속성을 가져올 `GetColumnInfo` 대 한 포인터를 사용 하 여 (`pRowset`) 행 집합 개체입니다. `pThis` 포인터 클래스인 속성 맵에 저장 된 행 집합을 생성 하는 클래스를 나타냅니다. `GetColumnInfo` 포인터로 변환 합니다 `pThis` 에 대 한 포인터는 `RCustomRowset` 포인터입니다.  
   
 확인 하는 `DBPROP_BOOKMARKS` 속성인 `GetColumnInfo` 사용 하 여를 `IRowsetInfo` 인터페이스를 호출 하 여 가져올 수 있습니다 `QueryInterface` 에 `pRowset` 인터페이스. 또는 ATL을 사용할 수 있습니다 [CComQIPtr](../../atl/reference/ccomqiptr-class.md) 메서드 대신 합니다.  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////  
-// MyProviderRS.cpp  
+// CustomRS.cpp  
 ATLCOLUMNINFO* CAgentMan::GetColumnInfo(void* pThis, ULONG* pcCols)  
 {  
    static ATLCOLUMNINFO _rgColumns[5];  
@@ -119,7 +119,7 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(void* pThis, ULONG* pcCols)
   
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
-// MyProviderRS.h  
+// CustomRS.h  
   
 #define ADD_COLUMN_ENTRY(ulCols, name, ordinal, colSize, type, precision, scale, guid, dataClass, member) \  
    _rgColumns[ulCols].pwszName = (LPOLESTR)name; \  

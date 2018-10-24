@@ -1,7 +1,7 @@
 ---
 title: 사용자 레코드 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/22/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -26,16 +26,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4389fdd35c36a8f7708361176889111b1665f2c6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 10025d7bdb8035ee6ce9c070ab57bc52c507f585
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46073655"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990167"
 ---
 # <a name="user-records"></a>사용자 레코드
 
-정적 접근자를 사용 하 (접근자에서 파생 되는, `CAccessor`), 소비자 사용자 레코드가 있어야 합니다. 사용자 레코드는 핸들 입력 또는 출력에 데이터 요소를 포함 하는 c + + 클래스입니다. ATL OLE DB 소비자 마법사는 소비자에 대 한 사용자 레코드를 생성합니다. 명령 처리와 같은 선택적 작업에 대 한 사용자 레코드에 메서드를 추가할 수 있습니다.  
+정적 접근자를 사용 하 (접근자에서 파생 되는, `CAccessor`), 소비자 사용자 레코드가 있어야 합니다. 사용자 레코드는 핸들 입력 또는 출력에 데이터 요소를 포함 하는 c + + 클래스입니다. 합니다 **ATL OLE DB 소비자 마법사** 소비자에 대 한 사용자 레코드를 생성 합니다. 명령 처리와 같은 선택적 작업에 대 한 사용자 레코드에 메서드를 추가할 수 있습니다.  
   
 다음 코드에서는 명령을 처리 하는 샘플 레코드를 보여 줍니다. 사용자 레코드에서 BEGIN_COLUMN_MAP 공급자에서 소비자에 게 전달 하는 데이터 행 집합을 나타냅니다. BEGIN_PARAM_MAP 명령 매개 변수 집합을 나타냅니다. 사용 하 여이 예제는 [CCommand](../../data/oledb/ccommand-class.md) 명령 매개 변수를 처리 하는 클래스입니다. 맵 항목의 데이터 멤버는 클래스의 각 인스턴스에 대 한 메모리의 한 연속 블록으로 오프셋을 나타냅니다. COLUMN_ENTRY 매크로 공급자 측의 PROVIDER_COLUMN_ENTRY 매크로에 해당합니다.  
   
@@ -66,7 +66,7 @@ END_PARAM_MAP()
   
 ## <a name="wizard-generated-user-records"></a>마법사에서 생성 된 사용자 기록  
 
-ATL OLE DB 소비자 마법사를 사용 하 여 소비자를 생성 하는 경우 OLE DB 템플릿 또는 OLE DB 특성을 사용 하 여 선택할을 수 있습니다. 생성 된 코드는 경우에 따라 다릅니다. 이 코드에 대 한 자세한 내용은 참조 하세요. [소비자 마법사 생성 클래스](../../data/oledb/consumer-wizard-generated-classes.md)합니다.  
+사용 하는 경우는 **ATL OLE DB 소비자 마법사** 소비자를 생성 하려면 OLE DB 템플릿 또는 OLE DB 특성을 사용 하 여 선택할 수 있습니다. 생성 된 코드는 경우에 따라 다릅니다. 이 코드에 대 한 자세한 내용은 참조 하세요. [소비자 마법사 생성 클래스](../../data/oledb/consumer-wizard-generated-classes.md)합니다.  
   
 ## <a name="user-record-support-for-multiple-accessors"></a>여러 접근자에 대 한 사용자 레코드 지원  
 

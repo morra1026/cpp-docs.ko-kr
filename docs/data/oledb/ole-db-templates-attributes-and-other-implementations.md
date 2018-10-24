@@ -1,7 +1,7 @@
 ---
 title: OLE DB 템플릿, 특성 및 기타 구현 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/22/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8b2cbe36a933580edc09e8139dca0ed6ec090f90
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 5798eeb4e99e4901ea83a26e4e570c18437ff445
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082659"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49989933"
 ---
 # <a name="ole-db-templates-attributes-and-other-implementations"></a>OLE DB 템플릿, 특성 및 기타 구현
 
@@ -36,7 +36,7 @@ OLE DB 템플릿, ATL (액티브 템플릿 라이브러리)의 일부인 고성�
   
 - **OLE DB 공급자 템플릿** OLE DB 서버 (공급자) 응용 프로그램을 구현 하는 데 사용 합니다.  
   
-OLE DB 템플릿을 사용하려면 C++ 템플릿, COM 및 OLE DB 인터페이스에 대해 잘 알고 있어야 합니다. OLE DB에 익숙하지 않은 경우 [OLE DB 프로그래머 참조](/previous-versions/windows/desktop/ms713643)를 참조하세요.  
+OLE DB 템플릿을 사용하려면 C++ 템플릿, COM 및 OLE DB 인터페이스에 대해 잘 알고 있어야 합니다. OLE DB에 익숙하지 참조 [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643)합니다.  
   
 자세한 내용은 다음을 수행할 수 있습니다.  
   
@@ -60,7 +60,7 @@ MFC 라이브러리에는 하나의 클래스 [COleDBRecordView](../../mfc/refer
   
 ## <a name="ole-db-sdk-interfaces"></a>OLE DB SDK 인터페이스  
 
-OLE DB 템플릿 OLE DB 기능 지원 하지 않는 경우에는 OLE DB 인터페이스를 직접 사용 해야 합니다. 자세한 내용은 [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643) Windows SDK에 있습니다.  
+OLE DB 템플릿은 OLE DB 기능을 지원 하지는 경우에는 OLE DB 인터페이스를 직접 사용 해야 합니다. 자세한 내용은 [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643) Windows SDK에 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
 

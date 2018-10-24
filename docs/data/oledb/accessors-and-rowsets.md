@@ -1,7 +1,7 @@
 ---
 title: 접근자 및 행 집합 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/22/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -28,12 +28,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f8dc681e149d54742e4bf5e7ff44afeebe2292eb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c3247cd3b5844df76b8a115a3f28a76874db2a16
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46113099"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990180"
 ---
 # <a name="accessors-and-rowsets"></a>접근자 및 행 집합
 
@@ -50,7 +50,7 @@ ms.locfileid: "46113099"
   
 - [CAccessor](../../data/oledb/caccessor-class.md) 디자인 타임에 원본 데이터베이스의 구조를 알고 있는 경우이 접근자를 사용 합니다. `CAccessor` 정적으로 버퍼를 포함 하는 데이터베이스 레코드를 데이터 소스에 바인딩합니다.  
   
-- [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) 디자인 타임에 데이터베이스의 구조를 알지 못하는 경우이 접근자를 사용 합니다. `CDynamicAccessor` 호출 `IColumnsInfo::GetColumnInfo` 데이터베이스 열 정보를 가져옵니다. 만들고 접근자 및 버퍼를 관리 합니다.  
+- [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) 디자인 타임에 데이터베이스의 구조를 알 수 없는 경우이 접근자를 사용 합니다. `CDynamicAccessor` 호출 `IColumnsInfo::GetColumnInfo` 데이터베이스 열 정보를 가져옵니다. 만들고 접근자 및 버퍼를 관리 합니다.  
   
 - [CDynamicParameterAccessor](../../data/oledb/cdynamicparameteraccessor-class.md) 이 접근자를 사용 하 여 알 수 없는 명령 유형을 처리 합니다. 명령을 준비할 때 `CDynamicParameterAccessor` 에서 매개 변수 정보를 얻을 수는 `ICommandWithParameters` 인터페이스를 공급자가 지 원하는 경우 `ICommandWithParameters`합니다.  
   
@@ -77,7 +77,7 @@ OLE DB 템플릿 지원 행 집합 (위 그림 참조)의 세 가지 종류: 행
 ![RowsetType 그래픽](../../data/oledb/media/vcrowsettypes.gif "vcrowsettypes")  
 행 집합 클래스  
   
-[스키마 행 집합](../../data/oledb/obtaining-metadata-with-schema-rowsets.md) 데이터의 데이터에 액세스 하지 저장 없지만 대신 메타 데이터 라고 하는 데이터 저장소에 대 한 정보에 액세스 합니다. 스키마 행 집합은 일반적으로 데이터베이스 구조 컴파일 타임에 알려지지 않은 및 런타임 시 얻을 수 해야 상황에서 사용 됩니다.  
+[스키마 행 집합](../../data/oledb/obtaining-metadata-with-schema-rowsets.md) 안 데이터의 데이터 액세스 저장 되지만 대신 메타 데이터 라고 하는 데이터 저장소에 대 한 정보에 액세스 합니다. 스키마 행 집합은 일반적으로 데이터베이스 구조 컴파일 타임에 알려질 및 런타임 시 얻을 수 해야 상황에서 사용 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
 

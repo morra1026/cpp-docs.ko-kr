@@ -1,7 +1,7 @@
 ---
 title: 컴파일러 버전별 컴파일러 경고 | Microsoft Docs
 ms.custom: ''
-ms.date: 07/03/2018
+ms.date: 10/24/2018
 ms.technology:
 - devlang-cpp
 ms.topic: error-reference
@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6645bb81a1fd4a2b42eb7419a0d008b9ac7692ad
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 1c4d815ba1036a03042992d2715e49bbd8f74a28
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44319086"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990388"
 ---
 # <a name="compiler-warnings-by-compiler-version"></a>컴파일러 버전별 컴파일러 경고
 
@@ -45,10 +45,19 @@ ms.locfileid: "44319086"
 | Visual c + + 2017 버전 15.5 | 19.12.25830.0 |
 | Visual c + + 2017 버전 15.6 | 19.13.26128.0 |
 | Visual c + + 2017 버전 15.7 | 19.14.26428.0 |
+| Visual c + + 2017 버전 15.8 | 19.15.26726.0 |
 
 만 주 번호, 주 및 부 번호 또는 주, 부를 지정할 수 있으며 빌드 번호를 합니다 __/Wv__ 옵션입니다. 컴파일러는 지정된 된 수로 시작 하는 버전과 일치 하는 모든 경고를 보고 하 고 지정된 된 숫자 보다 큰 버전에 대 한 모든 경고를 표시 하지 않습니다. 예를 들어 __/Wv:17__ 이전의 모든 버전의 Visual Studio 2012에서 도입 된 모든 경고를 보고 하 고 이상 Visual Studio 2013 (버전 18)에서 모든 컴파일러에서 도입 된 모든 경고를 표시 하지 않습니다. Visual Studio 2015에서 도입 된 경고를 표시 하지 않으려면 2를 업데이트 하 고 나중에 사용할 수 있습니다 __/Wv:19.00.23506__합니다. 사용 하 여 __/Wv:19.11__ 보고할 모든 경고는 Visual Studio 2017 버전 15.5 이전 Visual Studio의 모든 버전에서 도입 되었지만 Visual Studio 2017 버전 15.5 이상에서 도입 된 경고를 표시 하지 않습니다.
 
 다음 섹션에서는 사용 하 여 표시 하지 않을 수 있는 Visual c + +의 각 버전에서 도입 된 경고를 나열 합니다 __/Wv__ 컴파일러 옵션입니다. 합니다 __/Wv__ 옵션은 지정 된 버전의 컴파일러는 나열 되지 않은 경고 표시 하지 않을 수 있습니다.
+
+## <a name="warnings-introduced-in-visual-c-2017-version-158-compiler-version-1915267260"></a>Visual c + + 2017 버전 15.8 (컴파일러 버전 19.15.26726.0)에서 도입 된 경고
+
+이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 __/Wv:19.14__합니다.
+
+|||
+|-|-|
+C5046|'*함수*': 정의 되지 않은 내부 링크가 있는 형식을 포함 하는 기호|
 
 ## <a name="warnings-introduced-in-visual-c-2017-version-157-compiler-version-1914264280"></a>Visual c + + 2017 버전 15.7 (컴파일러 버전 19.14.26428.0)에서 도입 된 경고
 

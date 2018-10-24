@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a98848799163fd31037dc137b92b94878a1ee675
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 73bc32cd4a02affa98c53f892e5d34e1650d08f7
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082464"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990104"
 ---
 # <a name="supporting-notifications"></a>알림 지원
 
@@ -39,7 +39,7 @@ ms.locfileid: "49082464"
   
 또한 클래스는 다음과 같이 연결 지점 항목을 정의 하는 맵을 포함도 해야 합니다.  
   
-```  
+```cpp  
 BEGIN_CONNECTION_POINT_MAP  
    CONNECTIONPOINT_ENTRY (IID_IRowsetNotify)  
 END_CONNECTION_POINT_MAP  
@@ -52,7 +52,7 @@ END_CONNECTION_POINT_MAP
 예를 들어의 상속 체인을 같습니다 `RUpdateRowset` 에 [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV):  
   
 > [!NOTE]
->  샘플 코드입니다; 여기에 표시 된 것과 다를 수 있습니다. 샘플 코드를 좀 더 최신 버전으로 간주 해야 합니다.  
+> 샘플 코드입니다; 여기에 표시 된 것과 다를 수 있습니다. 샘플 코드를 좀 더 최신 버전으로 간주 해야 합니다.  
   
 ```cpp
 ///////////////////////////////////////////////////////////////////////////  
@@ -71,7 +71,7 @@ public CRowsetImpl< RUpdateRowset, CAgentMan, CUpdateCommand,
 
 다음 행의 COM 맵에 추가 해야 합니다.  
   
-```  
+```cpp  
 COM_INTERFACE_ENTRY(IConnectionPointContainer)  
 COM_INTERFACE_ENTRY_IMPL(IConnectionPointContainer)  
 ```  
@@ -82,7 +82,7 @@ COM_INTERFACE_ENTRY_IMPL(IConnectionPointContainer)
 
 연결 지점 지도 추가 해야 합니다. 와 같이 표시 됩니다.  
   
-```  
+```cpp  
 BEGIN_CONNECTION_POINT_MAP(rowset-name)  
      CONNECTION_POINT_ENTRY(_uuidof(IRowsetNotify))  
 END_CONNECTION_POINT_MAP()  

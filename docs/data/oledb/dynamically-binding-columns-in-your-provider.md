@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ed2b8d1d8bc3ac516b3d605f13e02bda37bb0122
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a9373c7569ac31b74429e815bd466cd9d5b9aa78
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46028547"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990272"
 ---
 # <a name="dynamically-binding-columns-in-your-provider"></a>공급자에서 열을 동적으로 바인딩
 
@@ -32,7 +32,7 @@ ms.locfileid: "46028547"
   
 - 열을 추가 하는 책갈피와 같은 요소를 지원 합니다.  
   
-### <a name="to-implement-dynamic-column-binding"></a>동적 열 바인딩 구현  
+## <a name="to-implement-dynamic-column-binding"></a>동적 열 바인딩 구현  
   
 1. 제거 `PROVIDER_COLUMN_MAP`코드의 합니다.  
   

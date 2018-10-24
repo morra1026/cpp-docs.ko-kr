@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: cbf1c696a66024ec1d3b3022b1e3a03445e9b6fe
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ee405244d4c23e3cacddb5efe5dfa276a8a21db0
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46043302"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990323"
 ---
 # <a name="creating-an-updatable-provider"></a>업데이트 가능 공급자 만들기
 
@@ -33,7 +33,7 @@ ms.locfileid: "46043302"
 그런 다음 공급자 소비자가 요청 하는 아무 것도 지원 하기 위한 모든 기능이 포함 되어 있는지 확인 해야 합니다. 소비자를 데이터 저장소를 업데이트 하려는 경우 공급자는 데이터 저장소의 데이터를 유지 하는 코드를 포함 해야 합니다. 예를 들어, 데이터 원본에 따라 이러한 작업을 수행 하는 C 런타임 라이브러리 또는 MFC를 사용할 수 있습니다. 섹션 "[데이터 원본에 작성](#vchowwritingtothedatasource)" 데이터 원본에 작성, NULL이 고 기본 값을 처리 및 열 플래그를 설정 하는 방법을 설명 합니다.  
   
 > [!NOTE]
->  [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) 은 업데이트할 수 있는 공급자의 예입니다. UpdatePV는 MyProv로 업데이트할 수 있는 지원과 동일합니다.  
+> [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) 은 업데이트할 수 있는 공급자의 예입니다. UpdatePV는 MyProv로 업데이트할 수 있는 지원과 동일합니다.  
   
 ##  <a name="vchowmakingprovidersupdatable"></a> 메서드를 업데이트 가능 공급자 만들기  
 
@@ -47,7 +47,7 @@ ms.locfileid: "46043302"
   
 사실은 `IRowsetUpdateImpl` 에서 파생 `IRowsetChangeImpl`합니다. 따라서 `IRowsetUpdateImpl` 제공 기능 뿐만 아니라 일괄 처리 기능을 변경 합니다.  
   
-#### <a name="to-support-updatability-in-your-provider"></a>업데이트를 지원 하려면 공급자에서  
+### <a name="to-support-updatability-in-your-provider"></a>업데이트를 지원 하려면 공급자에서  
   
 1. 행 집합 클래스에서 상속 `IRowsetChangeImpl` 또는 `IRowsetUpdateImpl`합니다. 이러한 클래스는 데이터 저장소 변경에 대 한 적절 한 인터페이스를 제공 합니다.  
   
@@ -70,7 +70,7 @@ ms.locfileid: "46043302"
     ```  
   
     > [!NOTE]
-    >  제거 해야 합니다 `IRowsetChangeImpl` 상속 체인에 줄. 앞에서 언급 한 지시문이 한 가지 예외에 대 한 코드를 포함 해야 `IRowsetChangeImpl`합니다.  
+    > 제거 해야 합니다 `IRowsetChangeImpl` 상속 체인에 줄. 앞에서 언급 한 지시문이 한 가지 예외에 대 한 코드를 포함 해야 `IRowsetChangeImpl`합니다.  
   
 1. 다음을 고 COM 맵에 추가 합니다 (`BEGIN_COM_MAP ... END_COM_MAP`):  
   
@@ -109,7 +109,7 @@ ms.locfileid: "46043302"
      속성 Id 및 값을 Atldb.h에 검색 하 여 이러한 매크로 호출에 사용 되는 값을 찾을 수 있습니다 (Atldb.h 온라인 설명서와 다른 경우 Atldb.h 대체 설명서).  
   
     > [!NOTE]
-    >  많은 합니다 `VARIANT_FALSE` 및 `VARIANT_TRUE` 설정은 OLE DB 템플릿에서 필요; OLE DB 사양은 읽기/쓰기 수 하지만 OLE DB 템플릿 하나의 값을 하나만 지원할 수 있습니다.  
+    > 많은 합니다 `VARIANT_FALSE` 및 `VARIANT_TRUE` 설정은 OLE DB 템플릿에서 필요; OLE DB 사양은 읽기/쓰기 수 하지만 OLE DB 템플릿 하나의 값을 하나만 지원할 수 있습니다.  
   
      **IRowsetChangeImpl를 구현 하는 경우**  
   
@@ -142,16 +142,14 @@ ms.locfileid: "46043302"
     - `DBPROP_MAXPENDINGROWS`.  
   
         > [!NOTE]
-        >  알림을 지 원하는 경우 해야 할 수 있습니다 다른 속성 에서도; 섹션을 참조 `IRowsetNotifyCP` 이 목록에 대 한 합니다.  
+        > 알림을 지 원하는 경우 해야 할 수 있습니다 다른 속성 에서도; 섹션을 참조 `IRowsetNotifyCP` 이 목록에 대 한 합니다.  
   
 ##  <a name="vchowwritingtothedatasource"></a> 데이터 원본에 쓰기  
 
 데이터 원본에서 읽기 호출을 `Execute` 함수입니다. 데이터 원본에 쓸 호출을 `FlushData` 함수입니다. (일반적인 의미에서 플러시 테이블 또는 인덱스를 디스크에 수정 내용을 저장 하는 수단입니다.)  
 
 ```cpp
-
 FlushData(HROW, HACCESSOR);  
-
 ```
 
 행 핸들 (HROW) 및 접근자 핸들 (HACCESSOR) 인수를 사용 하면 쓸 지역을 지정할 수 있습니다. 일반적으로 한 번에 단일 데이터 필드를 작성합니다.
@@ -192,7 +190,7 @@ NULL 값을 처리 합니다.
 
 ### <a name="handling-default-values"></a>기본 값을 처리 합니다.
 
-사용자 고유의 FlushData 메서드를 구현 하려면를 지정 해야 합니다.
+자체적으로 구현 하려면 `FlushData` 메서드를 해야 합니다.
 
 - 행 집합 클래스를 이동 합니다.
 
@@ -207,7 +205,7 @@ NULL 값을 처리 합니다.
 
 - 구현을 제공 `FlushData`합니다.
 
-FlushData 제대로 구현 하면 행 및 실제로 업데이트 된 열에 저장 합니다. 현재 행 및 최적화에 대 한 저장 되는 열을 결정 하는 HROW 및 HACCESSOR 매개 변수를 사용할 수 있습니다.
+제대로 구현 하면 `FlushData` 행과 실제로 업데이트 된 열만을 저장 합니다. 현재 행 및 최적화에 대 한 저장 되는 열을 결정 하는 HROW 및 HACCESSOR 매개 변수를 사용할 수 있습니다.
 
 일반적으로 가장 큰 문제는 사용자의 기본 데이터 저장소를 사용 하 여 작동지 않습니다. 가능한 경우 하려고 합니다.
 
@@ -219,7 +217,7 @@ FlushData 제대로 구현 하면 행 및 실제로 업데이트 된 열에 저�
 
 가장 좋은 점은 실제 값을 지정 NULL 값과 기본값에 대 한 데이터 저장소에서 하는 것입니다. 이 데이터를 추정할 수 있습니다 하는 것이 좋습니다. 그렇지 않은 경우 NULL 값과 기본값을 사용할 수 없도록는 것이 좋습니다.
 
-다음 예제와 어떻게 `FlushData` UpdatePV 예제의 RUpdateRowset 클래스에서 구현 됩니다 (샘플 코드에서 Rowset.h 참조).
+다음 예제와 어떻게 `FlushData` 에서 구현 되는 `RUpdateRowset` 클래스는 `UpdatePV` 샘플 (샘플 코드에서 Rowset.h 참조):
 
 ```cpp
 ///////////////////////////////////////////////////////////////////////////  
@@ -374,16 +372,15 @@ ATLCOLUMNINFO* CommonGetColInfo(IUnknown* pPropsUnk, ULONG* pcCols, bool bBookma
   
     return _rgColumns;  
 }  
-
 ```
 
 ### <a name="default-values"></a>기본값
 
 NULL 데이터와 마찬가지로 기본값을 변경 하 여 처리할을 해야 합니다.
 
-FlushData 및 실행의 기본값인 S_OK를 반환 합니다. 따라서이 함수를 재정의 하지 않으면 하는 경우 변경 내용이 표시 되려면 (S_OK가 반환 되어), 데이터 저장소에 전송 되지 않게 됩니다.
+기본값인 `FlushData` 고 `Execute` S_OK를 반환 하는 것입니다. 따라서이 함수를 재정의 하지 않으면 하는 경우 변경 내용이 표시 되려면 (S_OK가 반환 되어), 데이터 저장소에 전송 되지 않게 됩니다.
 
-UpdatePV 샘플 (Rowset.h)에 `SetDBStatus` 메서드 기본 값을 다음과 같이 처리 합니다.
+에 `UpdatePV` 샘플 (Rowset.h)는 `SetDBStatus` 메서드 기본 값을 다음과 같이 처리:
 
 ```cpp
 virtual HRESULT SetDBStatus(DBSTATUS* pdbStatus, CSimpleRow* pRow,  
@@ -422,11 +419,11 @@ virtual HRESULT SetDBStatus(DBSTATUS* pdbStatus, CSimpleRow* pRow,
 
 ### <a name="column-flags"></a>열 플래그
 
-메타 데이터를 사용 하 여 설정 해야 하는 열에 기본값을 지원 합니다 \<공급자 클래스\>SchemaRowset 클래스입니다. 설정 `m_bColumnHasDefault` = VARIANT_TRUE입니다.
+메타 데이터를 사용 하 여 설정 해야 하는 열에 기본값을 지원 합니다 \<공급자 클래스\>SchemaRowset 클래스입니다. 설정 `m_bColumnHasDefault = VARIANT_TRUE`합니다.
 
 열거 형식의 DBCOLUMNFLAGS를 사용 하 여 지정 된 열의 플래그를 설정을 해야 합니다. 열 플래그 열 특성을 설명 합니다.
 
-예를 들어를 `CUpdateSessionColSchemaRowset` 클래스 (Session.h)에서 UpdatePV의 첫 번째 열은 이런 방식이으로 설정:
+예를 들어 합니다 `CUpdateSessionColSchemaRowset` 클래스의 `UpdatePV` (Session.h)에서 첫 번째 열은 이런 방식이으로 설정:
 
 ```cpp
 // Set up column 1  
