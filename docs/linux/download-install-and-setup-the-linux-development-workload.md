@@ -2,7 +2,7 @@
 title: Visual Studio에서 C++ Linux 워크로드 설치 | Microsoft Docs
 description: Visual Studio에서 C++에 대한 Linux 워크로드를 다운로드하고, 설치하고, 설정하는 방법을 설명합니다.
 ms.custom: ''
-ms.date: 09/12/2018
+ms.date: 10/12/2018
 ms.technology:
 - cpp-linux
 ms.tgt_pltfrm: Linux
@@ -13,14 +13,14 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 403f1bcd8634c3f471f34ff1266501de5bf05d52
-ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
+ms.openlocfilehash: 060859879c6164bd8af10763ae5f828c9136abe5
+ms.sourcegitcommit: b05cff71a8a6a8a4c7bbea1263fd0a711853f921
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45601394"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307908"
 ---
-# <a name="download-install-and-setup-the-linux-workload"></a>Linux 워크로드 다운로드, 설치, 설정
+# <a name="download-install-and-setup-the-linux-workload"></a>Linux 작업 다운로드, 설치, 설정
 
 Windows에서 Visual Studio IDE를 사용하여 Linux 물리적 컴퓨터, 가상 머신 또는 [Linux용 Windows 하위 시스템](/windows/wsl/about)에서 실행되는 C++ 프로젝트를 작성, 편집 및 디버그할 수 있습니다. 이러한 시나리오에서는 먼저 **C++를 사용한 Linux 개발** 워크로드를 설치합니다.
 
@@ -41,7 +41,7 @@ Windows에서 Visual Studio IDE를 사용하여 Linux 물리적 컴퓨터, 가�
 
 Windows 10에서 다른 옵션은 Linux용 Windows 하위 시스템을 활성화하는 것입니다. 자세한 내용은 [Windows 10 설치 가이드](/windows/wsl/install-win10)를 참조하세요.
 
-## <a name="linux-setup"></a>Linux 설치
+## <a name="linux-setup-ubuntu"></a>Linux 설정: Ubuntu
 
 대상 Linux 컴퓨터에 **openssh-server**, **g++**, **gdb** 및 **gdbserver**가 설치되어 있고 ssh 데몬이 실행되고 있어야 합니다. IntelliSense 지원을 위해 로컬 머신과 원격 헤더를 자동 동기화하려면 **zip**이 필요합니다. 이러한 응용 프로그램이 없다면 다음과 같이 설치할 수 있습니다.
 
@@ -49,10 +49,27 @@ Windows 10에서 다른 옵션은 Linux용 Windows 하위 시스템을 활성화
 
    `sudo apt-get install openssh-server g++ gdb gdbserver zip`
 
-   sudo 명령 때문에 루트 암호를 입력하라는 메시지가 표시될 수 있습니다.  메시지가 표시되면 루트 암호를 입력하고 계속합니다.  완료되면 이러한 서비스와 도구가 설치됩니다.
+   sudo 명령 때문에 루트 암호를 입력하라는 메시지가 표시될 수 있습니다.  메시지가 표시되면 루트 암호를 입력하고 계속합니다. 완료되면 필수 서비스 및 도구가 설치됩니다.
 
 1. 다음을 실행하여 ssh 서비스가 Linux 컴퓨터에서 실행되고 있는지 확인합니다.
 
    `sudo service ssh start`
 
    그러면 서비스가 시작되고 백그라운드에서 실행되므로 연결을 허용할 준비가 됩니다.
+
+## <a name="linux-setup-fedora"></a>Linux 설정: Fedora
+
+Fedora를 실행하는 대상 시스템은 **dnf** 패키지 설치 프로그램을 사용합니다. **openssh-server**, **g++**, **gdb**, **gdbserver** 및 **zip**을 다운로드하고 ssh 디먼을 다운로드하려면 다음 지침을 따르세요.
+
+1. Linux 컴퓨터의 셸 프롬프트에서 다음을 실행합니다.
+
+   `sudo dnf install openssh-server g++ gdb gdbserver zip`
+
+   sudo 명령 때문에 루트 암호를 입력하라는 메시지가 표시될 수 있습니다.  메시지가 표시되면 루트 암호를 입력하고 계속합니다. 완료되면 필수 서비스 및 도구가 설치됩니다.
+
+1. 다음을 실행하여 ssh 서비스가 Linux 컴퓨터에서 실행되고 있는지 확인합니다.
+
+   `sudo systemctl start sshd`
+
+   그러면 서비스가 시작되고 백그라운드에서 실행되므로 연결을 허용할 준비가 됩니다.
+

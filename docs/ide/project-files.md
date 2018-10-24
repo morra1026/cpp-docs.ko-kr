@@ -1,32 +1,30 @@
 ---
-title: 프로젝트 파일 | Microsoft Docs
+title: 프로젝트 파일 예제 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/09/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- .vcproj files
-- Visual C++ projects, project file format
-- VCPROJ (Visual C++ project file) format
-- project files [C++], .vcproj file format
+- .vcxproj files
+- C++ projects, project file format
 ms.assetid: 5261cf45-3136-40a6-899e-dc1339551401
 author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7202dff0bd1a790a4e8727bbac9d375daecb8e7a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 591802e04348ca08bded17504b3fb19fb9aa7213
+ms.sourcegitcommit: 243ee0395ee44654a81ce1232f4581fb54904868
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389035"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072387"
 ---
 # <a name="project-files"></a>프로젝트 파일
 
-Visual C++ 프로젝트 파일은 .vcxproj 파일 이름 확장명을 가진 XML 기반 파일이며 Visual C++ 프로젝트를 빌드하는 데 필요한 정보를 포함합니다.
+Visual C++ 프로젝트 파일은 .vcxproj 파일 이름 확장명을 가진 XML 기반 파일이며 Visual C++ 프로젝트를 빌드하는 데 필요한 정보를 포함합니다. 프로젝트 파일은 확장명이 *.props* 또는 *.targets*인 다양한 프로젝트 파일을 가져옵니다. 이러한 파일에는 추가 빌드 정보가 포함되어 있으며 다른 *.props* 또는 *.targets* 파일을 참조할 수도 있습니다. 파일 경로(예를 들면 `$(VCTargetsPath)`)의 매크로는 Visual Studio 설치에 따라 다릅니다. 이러한 매크로와 *.props* 및 *.targets* 파일에 대한 자세한 내용은 [VC++ 디렉터리 속성 페이지](vcpp-directories-property-page.md), [프로젝트 속성 작업](working-with-project-properties.md#bkmkPropertiesVersusMacros) 및 [빌드 명령 및 속성에 대한 일반 매크로](common-macros-for-build-commands-and-properties.md)를 참조하세요.
 
 ## <a name="example"></a>예
 

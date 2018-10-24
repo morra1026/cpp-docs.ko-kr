@@ -27,12 +27,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f94d60d4c6e804a9bd27293bb0eff67b29a1e8a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 85f8b31ee9faec433fa0c9f1ff64d5bfa1e9665a
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092065"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161257"
 ---
 # <a name="rtdynamiccast"></a>__RTDynamicCast
 
@@ -65,7 +65,7 @@ PVOID __RTDynamicCast (
 캐스트의 의도된 결과입니다.
 
 *isReference*<br/>
-입력이 참조인 경우 `true`이며, 입력이 포인터인 경우 `false`입니다.
+입력이 참조인 경우 **true**이고, 입력이 포인터인 경우 **false** 입니다.
 
 ## <a name="return-value"></a>반환 값
 
