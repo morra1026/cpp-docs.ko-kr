@@ -1,7 +1,7 @@
 ---
 title: CStringT 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d6a6afeca0bcf0d08a0a206983d3db33b61a041
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: f2d31d24007da1ec279e9c9762158b549e83d114
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890701"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49809124"
 ---
 # <a name="cstringt-class"></a>CStringT 클래스
 
@@ -115,7 +115,7 @@ public CSimpleStringT<BaseType,
 
 #### <a name="parameters"></a>매개 변수
 
-*BaseType*  
+*BaseType*<br/>
 String 클래스의 문자 형식입니다. 다음 중 하나일 수 있습니다.
 
 - **char** (용 ANSI 문자열)입니다.
@@ -124,7 +124,7 @@ String 클래스의 문자 형식입니다. 다음 중 하나일 수 있습니�
 
 - TCHAR (ANSI 및 유니코드 문자열)에 대 한 합니다.
 
-*StringTraits*  
+*StringTraits*<br/>
 String 클래스 C 런타임 (CRT) 라이브러리 지원 및 문자열 리소스가 있는 경우 결정 합니다. 다음 중 하나일 수 있습니다.
 
 - **StrTraitATL < wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsCRT < wchar_t** &#124; `char` &#124; **TCHAR >>**
@@ -343,13 +343,13 @@ void __cdecl AppendFormat(UINT nFormatID, [, argument] ...);
 
 ### <a name="parameters"></a>매개 변수
 
-*pszFormat*  
+*pszFormat*<br/>
 형식 컨트롤 문자열입니다.
 
-*nFormatID*  
+*nFormatID*<br/>
 형식 컨트롤 문자열을 포함 하는 문자열 리소스 식별자입니다.
 
-*argument*  
+*argument*<br/>
 선택적 인수입니다.
 
 ### <a name="remarks"></a>설명
@@ -370,7 +370,7 @@ int Collate(PCXSTR psz) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*psz*  
+*psz*<br/>
 다른 문자열 비교에 사용 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -391,7 +391,7 @@ int CollateNoCase(PCXSTR psz) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*psz*  
+*psz*<br/>
 다른 문자열 비교에 사용 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -416,7 +416,7 @@ int Compare(PCXSTR psz) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*psz*  
+*psz*<br/>
 다른 문자열 비교에 사용 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -445,7 +445,7 @@ int CompareNoCase(PCXSTR psz) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*psz*  
+*psz*<br/>
 다른 문자열 비교에 사용 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -539,28 +539,28 @@ CStringT(const YCHAR* pch, int nLength, IAtlStringMgr* pStringMgr) :
 
 ### <a name="parameters"></a>매개 변수
 
-*pch*  
+*pch*<br/>
 길이 문자 배열에 대 한 포인터 *nLength*null로 끝나는 없습니다.
 
-*nLength*  
+*nLength*<br/>
 문자 수가 *pch*합니다.
 
-*ch*  
+*ch*<br/>
 단일 문자입니다.
 
-*pszSrc*  
+*pszSrc*<br/>
 복사할이 null로 끝나는 문자열을 `CStringT` 개체입니다.
 
-*pStringMgr*  
+*pStringMgr*<br/>
 Memory manager에 대 한 포인터를 `CStringT` 개체입니다. 에 대 한 자세한 `IAtlStringMgr` 및 메모리 관리에 대 한 `CStringT`를 참조 하십시오 [CStringT 사용한 메모리 관리](../../atl-mfc-shared/memory-management-with-cstringt.md)합니다.
 
-*strSrc*  
+*strSrc*<br/>
 기존 `CStringT` 에이 복사 될 개체 `CStringT` 개체입니다. 에 대 한 자세한 `CThisString` 고 `CThisSimpleString`, 주의 섹션을 참조 합니다.
 
-*varSrc*  
+*varSrc*<br/>
 이에 복사할 variant 개체 `CStringT` 개체입니다.
 
-*BaseType*  
+*BaseType*<br/>
 String 클래스의 문자 형식입니다. 다음 중 하나일 수 있습니다.
 
 **char** (용 ANSI 문자열)입니다.
@@ -569,13 +569,13 @@ String 클래스의 문자 형식입니다. 다음 중 하나일 수 있습니�
 
 TCHAR (ANSI 및 유니코드 문자열)에 대 한 합니다.
 
-*bMFCDLL*  
+*bMFCDLL*<br/>
 프로젝트는 MFC DLL (TRUE) 인지 여부를 지정 하는 부울 값 (FALSE)입니다.
 
-*SystemString*  
+*SystemString*<br/>
 해야 `System::String`, 및 /clr을 사용 하 여 프로젝트를 컴파일해야 합니다.
 
-*pstring이*  
+*pstring이*<br/>
 에 대 한 핸들을 `CStringT` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -624,10 +624,10 @@ int Delete(int iIndex, int nCount = 1);
 
 ### <a name="parameters"></a>매개 변수
 
-*iIndex*  
+*iIndex*<br/>
 첫 번째 문자의 인덱스를 `CStringT` 삭제할 개체입니다.
 
-*nCount*  
+*nCount*<br/>
 제거할 문자 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -660,13 +660,13 @@ int Find(XCHAR ch, int iStart=0) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pszSub*  
+*pszSub*<br/>
 검색할 부분 문자열입니다.
 
-*iStart*  
+*iStart*<br/>
 인덱스, 검색을 시작 하는 문자열의 0부터에서 시작 하는 문자입니다.
 
-*ch*  
+*ch*<br/>
 단일 문자에 대 한 검색입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -691,7 +691,7 @@ int FindOneOf(PCXSTR pszCharSet) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pszCharSet*  
+*pszCharSet*<br/>
 일치 하는 문자를 포함 하는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -717,13 +717,13 @@ void __cdecl Format(PCXSTR pszFormat,  [, argument] ...);
 
 ### <a name="parameters"></a>매개 변수
 
-*nFormatID*  
+*nFormatID*<br/>
 형식 컨트롤 문자열을 포함 하는 문자열 리소스 식별자입니다.
 
-*pszFormat*  
+*pszFormat*<br/>
 형식 컨트롤 문자열입니다.
 
-*argument*  
+*argument*<br/>
 선택적 인수입니다.
 
 ### <a name="remarks"></a>설명
@@ -751,13 +751,13 @@ void __cdecl FormatMessage(PCXSTR pszFormat, [, argument]...);
 
 ### <a name="parameters"></a>매개 변수
 
-*nFormatID*  
+*nFormatID*<br/>
 형식이 지정 되지 않은 메시지 텍스트가 포함 된 문자열 리소스 식별자입니다.
 
-*pszFormat*  
+*pszFormat*<br/>
 형식 컨트롤 문자열을 가리킵니다. 수 삽입에 대 한 검색 하 고 그에 따라 서식이 지정 합니다. 서식 문자열은 실행 시간 함수와 비슷합니다 *printf*-매개 변수는 임의의 순서로 삽입할 수 있도록 점을 제외 하 고 형식 문자열 스타일입니다.
 
-*argument*  
+*argument*<br/>
 선택적 인수입니다.
 
 ### <a name="remarks"></a>설명
@@ -783,10 +783,10 @@ void FormatMessageV(PCXSTR pszFormat, va_list* pArgList);
 
 ### <a name="parameters"></a>매개 변수
 
-*pszFormat*  
+*pszFormat*<br/>
 형식 컨트롤 문자열을 가리킵니다. 수 삽입에 대 한 검색 하 고 그에 따라 서식이 지정 합니다. 서식 문자열은 런타임 함수와 유사한 `printf`-매개 변수는 임의의 순서로 삽입할 수 있도록 점을 제외 하 고 형식 문자열 스타일입니다.
 
-*pArgList*  
+*pArgList*<br/>
 인수 목록에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -808,10 +808,10 @@ void FormatV(PCXSTR pszFormat, va_list args);
 
 ### <a name="parameters"></a>매개 변수
 
-*pszFormat*  
+*pszFormat*<br/>
 형식 컨트롤 문자열을 가리킵니다. 수 삽입에 대 한 검색 하 고 그에 따라 서식이 지정 합니다. 서식 문자열은 런타임 함수와 유사한 `printf`-매개 변수는 임의의 순서로 삽입할 수 있도록 점을 제외 하 고 형식 문자열 스타일입니다.
 
-*인수*  
+*인수*<br/>
 인수 목록에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -834,7 +834,7 @@ BOOL GetEnvironmentVariable(PCXSTR pszVar);
 
 ### <a name="parameters"></a>매개 변수
 
-*pszVar*  
+*pszVar*<br/>
 환경 변수를 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -860,13 +860,13 @@ int Insert(int iIndex, XCHAR ch);
 
 ### <a name="parameters"></a>매개 변수
 
-*iIndex*  
+*iIndex*<br/>
 되기까지의 삽입 수행 되는 문자의 인덱스입니다.
 
-*psz*  
+*psz*<br/>
 삽입할 하위 문자열 포인터입니다.
 
-*ch*  
+*ch*<br/>
 삽입할 문자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -891,7 +891,7 @@ CStringT Left(int nCount) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*nCount*  
+*nCount*<br/>
 이 `CStringT` 개체에서 추출할 문자의 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -920,13 +920,13 @@ BOOL LoadString(UINT nID);
 
 ### <a name="parameters"></a>매개 변수
 
-*hInstance*  
+*hInstance*<br/>
 모듈의 인스턴스 핸들입니다.
 
-*nID*  
+*nID*<br/>
 Windows 문자열 리소스 id입니다.
 
-*wLanguageID*  
+*wLanguageID*<br/>
 문자열 리소스의 언어입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1002,10 +1002,10 @@ CStringT Mid(int iFirst) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*iFirst*  
+*iFirst*<br/>
 이 첫 번째 문자의 인덱스 `CStringT` 추출된 된 부분 문자열에 포함 되어야 하는 개체입니다.
 
-*nCount*  
+*nCount*<br/>
 이 `CStringT` 개체에서 추출할 문자의 수입니다. 이 매개 변수를 제공 하지 않으면 문자열의 나머지 부분 추출 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1054,22 +1054,22 @@ friend CStringT operator+(wchar_t ch1, const CStringT& str2,);
 
 ### <a name="parameters"></a>매개 변수
 
-*ch1*  
+*ch1*<br/>
 연결 문자열을 사용 하 여 ANSI 또는 유니코드 문자입니다.
 
-*c h 2*  
+*c h 2*<br/>
 연결 문자열을 사용 하 여 ANSI 또는 유니코드 문자입니다.
 
-*str1*  
+*str1*<br/>
 `CStringT` 문자열 또는 문자를 사용 하 여 연결 합니다.
 
-*str2*  
+*str2*<br/>
 `CStringT` 문자열 또는 문자를 사용 하 여 연결 합니다.
 
-*psz1*  
+*psz1*<br/>
 문자열 또는 문자를 사용 하 여 연결 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
-*psz2*  
+*psz2*<br/>
 문자열 또는 문자를 사용 하 여 연결 문자열에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -1108,22 +1108,22 @@ CStringT& operator+=(const VARIANT& var);
 str  
 `CThisSimpleString` 개체에 대한 참조입니다.
 
-*bMFCDLL*  
+*bMFCDLL*<br/>
 프로젝트는 MFC DLL 인지 여부를 지정 하는 부울입니다.
 
-*BaseType*  
+*BaseType*<br/>
 문자열 기본 형식입니다.
 
-*var*  
+*var*<br/>
 이 문자열을 연결 하는 variant 개체입니다.
 
-*ch*  
+*ch*<br/>
 연결 문자열을 사용 하 여 ANSI 또는 유니코드 문자입니다.
 
-*pszSrc*  
+*pszSrc*<br/>
 연결 되 고 원래 문자열에 대 한 포인터입니다.
 
-*strSrc*  
+*strSrc*<br/>
 `CStringT` 이 문자열을 연결 합니다.
 
 ### <a name="remarks"></a>설명
@@ -1155,22 +1155,22 @@ friend bool operator==(XCHAR ch1, const CStringT& str2,) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*ch1*  
+*ch1*<br/>
 비교에 대 한 ANSI 또는 유니코드 문자입니다.
 
-*c h 2*  
+*c h 2*<br/>
 비교에 대 한 ANSI 또는 유니코드 문자입니다.
 
-*str1*  
+*str1*<br/>
 `CStringT` 비교 합니다.
 
-*str2*  
+*str2*<br/>
 `CStringT` 비교 합니다.
 
-*psz1*  
+*psz1*<br/>
 Null로 끝나는 문자열 비교에 대 한 포인터입니다.
 
-*psz2*  
+*psz2*<br/>
 Null로 끝나는 문자열 비교에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -1197,22 +1197,22 @@ friend bool operator!=(XCHAR ch1, const CStringT& str2,) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*ch1*  
+*ch1*<br/>
 연결 문자열을 사용 하 여 ANSI 또는 유니코드 문자입니다.
 
-*c h 2*  
+*c h 2*<br/>
 연결 문자열을 사용 하 여 ANSI 또는 유니코드 문자입니다.
 
-*str1*  
+*str1*<br/>
 `CStringT` 비교 합니다.
 
-*str2*  
+*str2*<br/>
 `CStringT` 비교 합니다.
 
-*psz1*  
+*psz1*<br/>
 Null로 끝나는 문자열 비교에 대 한 포인터입니다.
 
-*psz2*  
+*psz2*<br/>
 Null로 끝나는 문자열 비교에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -1235,16 +1235,16 @@ friend bool operator<(PCXSTR psz1, const CStringT& str2) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*str1*  
+*str1*<br/>
 `CStringT` 비교 합니다.
 
-*str2*  
+*str2*<br/>
 `CStringT` 비교 합니다.
 
-*psz1*  
+*psz1*<br/>
 Null로 끝나는 문자열 비교에 대 한 포인터입니다.
 
-*psz2*  
+*psz2*<br/>
 Null로 끝나는 문자열 비교에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -1273,16 +1273,16 @@ friend bool operator>(PCXSTR psz1, const CStringT& str2) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*str1*  
+*str1*<br/>
 `CStringT` 비교 합니다.
 
-*str2*  
+*str2*<br/>
 `CStringT` 비교 합니다.
 
-*psz1*  
+*psz1*<br/>
 Null로 끝나는 문자열 비교에 대 한 포인터입니다.
 
-*psz2*  
+*psz2*<br/>
 Null로 끝나는 문자열 비교에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -1311,16 +1311,16 @@ friend bool operator<=(PCXSTR psz1, const CStringT& str2) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*str1*  
+*str1*<br/>
 `CStringT` 비교 합니다.
 
-*str2*  
+*str2*<br/>
 `CStringT` 비교 합니다.
 
-*psz1*  
+*psz1*<br/>
 Null로 끝나는 문자열 비교에 대 한 포인터입니다.
 
-*psz2*  
+*psz2*<br/>
 Null로 끝나는 문자열 비교에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -1349,16 +1349,16 @@ friend bool operator>=(PCXSTR psz1, const CStringT& str2) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*str1*  
+*str1*<br/>
 `CStringT` 비교 합니다.
 
-*str2*  
+*str2*<br/>
 `CStringT` 비교 합니다.
 
-*psz1*  
+*psz1*<br/>
 문자열 비교에 대 한 포인터입니다.
 
-*psz2*  
+*psz2*<br/>
 문자열 비교에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -1385,7 +1385,7 @@ int Remove(XCHAR chRemove);
 
 ### <a name="parameters"></a>매개 변수
 
-*chRemove*  
+*chRemove*<br/>
 문자열에서 제거할 문자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1411,16 +1411,16 @@ int Replace(XCHAR chOld, XCHAR chNew);
 
 ### <a name="parameters"></a>매개 변수
 
-*pszOld*  
+*pszOld*<br/>
 교체는 null로 끝나는 문자열에 대 한 포인터 *pszNew*합니다.
 
-*pszNew*  
+*pszNew*<br/>
 대체 하는 null로 끝나는 문자열에 대 한 포인터 *pszOld*합니다.
 
-*chOld*  
+*chOld*<br/>
 교체 문자 *chNew*합니다.
 
-*chNew*  
+*chNew*<br/>
 문자 대체 *chOld*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1458,7 +1458,7 @@ int ReverseFind(XCHAR ch) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*  
+*ch*<br/>
 검색할 문자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1483,7 +1483,7 @@ CStringT Right(int nCount) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*nCount*  
+*nCount*<br/>
 이 `CStringT` 개체에서 추출할 문자의 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1510,7 +1510,7 @@ BSTR SetSysString(BSTR* pbstr) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*pbstr*  
+*pbstr*<br/>
 문자열 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1537,7 +1537,7 @@ CStringT SpanExcluding(PCXSTR pszCharSet) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*pszCharSet*  
+*pszCharSet*<br/>
 문자열로 문자 집합으로 해석 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1562,7 +1562,7 @@ CStringT SpanIncluding(PCXSTR pszCharSet) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*pszCharSet*  
+*pszCharSet*<br/>
 문자열로 문자 집합으로 해석 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1587,10 +1587,10 @@ CStringT Tokenize(PCXSTR pszTokens, int& iStart) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*pszTokens*  
+*pszTokens*<br/>
 토큰 구분 기호를 포함 하는 문자열입니다. 이러한 구분 기호 순서가 중요 합니다.
 
-*iStart*  
+*iStart*<br/>
 검색을 시작할 0부터 시작 하는 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1629,10 +1629,10 @@ CStringT& Trim();
 
 ### <a name="parameters"></a>매개 변수
 
-*chTarget*  
+*chTarget*<br/>
 대상 문자 트리밍입니다.
 
-*pszTargets*  
+*pszTargets*<br/>
 대상 트리밍될 문자를 포함 하는 문자열에 대 한 포인터입니다. 모든 선행 및 후행 문자가 *pszTarget* 에서 잘립니다는 `CStringT` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1674,10 +1674,10 @@ CStringT& TrimLeft();
 
 ### <a name="parameters"></a>매개 변수
 
-*chTarget*  
+*chTarget*<br/>
 대상 문자 트리밍입니다.
 
-*pszTargets*  
+*pszTargets*<br/>
 대상 트리밍될 문자를 포함 하는 문자열에 대 한 포인터입니다. 에 있는 문자의 선행 항목을 모두 *pszTarget* 에서 잘립니다는 `CStringT` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1710,10 +1710,10 @@ CStringT& TrimRight();
 
 ### <a name="parameters"></a>매개 변수
 
-*chTarget*  
+*chTarget*<br/>
 대상 문자 트리밍입니다.
 
-*pszTargets*  
+*pszTargets*<br/>
 대상 트리밍될 문자를 포함 하는 문자열에 대 한 포인터입니다. 모든 후행 문자가 *pszTarget* 에서 잘립니다는 `CStringT` 개체입니다.
 
 ### <a name="return-value"></a>반환 값

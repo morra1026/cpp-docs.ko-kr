@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f5e32599096b4e0fa451c18b3e05adf01b34ff4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b372959105407074cd2a7295837e2c47ef629da7
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46407598"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49162167"
 ---
 # <a name="adding-references-in-visual-c-projects"></a>Visual C++ 프로젝트에서 참조 추가
 
@@ -84,11 +84,11 @@ ActiveX 참조 속성은 COM 구성 요소에 대한 참조에만 사용할 수 
 
 - **로컬 위성 어셈블리 복사**
 
-   참조된 어셈블리의 위성 어셈블리를 빌드 중에 대상 위치에 자동으로 복사할지 지정합니다. **로컬 복사** 가 `true`인 경우에만 사용됩니다.
+   참조된 어셈블리의 위성 어셈블리를 빌드 중에 대상 위치에 자동으로 복사할지 지정합니다. **로컬 복사**가 **true**인 경우에만 사용됩니다.
 
 - **참조 어셈블리 출력**
 
-   이 어셈블리가 빌드 프로세스에서 사용되도록 지정합니다. `true`이면 빌드 중 어셈블리가 컴파일러 명령줄에서 사용됩니다.
+   이 어셈블리가 빌드 프로세스에서 사용되도록 지정합니다. **true**이면 빌드 중 어셈블리가 컴파일러 명령줄에서 사용됩니다.
 
 ### <a name="project-to-project-reference-properties"></a>프로젝트 간 참조 속성
 
@@ -144,7 +144,7 @@ ActiveX 참조 속성은 COM 구성 요소에 대한 참조에만 사용할 수 
 
 - **강력한 이름**
 
-   참조된 어셈블리에 강력한 이름이 있는 경우 `true`입니다. 강력한 이름이 지정된 어셈블리의 버전은 고유합니다.
+   참조된 어셈블리에 강력한 이름이 있는 경우`true` 입니다. 강력한 이름이 지정된 어셈블리의 버전은 고유합니다.
 
 - **Version**
 

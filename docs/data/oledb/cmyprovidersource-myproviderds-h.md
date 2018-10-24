@@ -1,46 +1,49 @@
 ---
 title: CMyProviderSource (MyProviderDS.H) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/22/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
 f1_keywords:
 - myproviderds.h
 - cmyprovidersource
+- customds.h
+- ccustomsource
 dev_langs:
 - C++
 helpviewer_keywords:
 - OLE DB providers, wizard-generated files
 - CMyProviderSource class in MyProviderDS.H
+- CCustomSource class in CustomDS.H
 ms.assetid: c143d48e-59c8-4f67-9141-3aab51859b92
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d7add0ccd001579c15a3621afc87354a0626c454
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 47a09aa9a368741dfd4c95bb86f22d09bc11e1b8
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024517"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808279"
 ---
-# <a name="cmyprovidersource-myproviderdsh"></a>CMyProviderSource(MyProviderDS.H)
+# <a name="ccustomclasssource-customclassdsh"></a>CCustomClassSource (CustomClassDS.h)
 
 공급자 클래스는 다중 상속을 사용 합니다. 다음 코드는 데이터 원본 개체의 상속 체인을 보여 줍니다.  
   
 ```cpp
 /////////////////////////////////////////////////////////////////////////  
-// CMyProviderSource  
-class ATL_NO_VTABLE CMyProviderSource :   
+// CCustomSource  
+class ATL_NO_VTABLE CCustomSource :   
    public CComObjectRootEx<CComSingleThreadModel>,  
-   public CComCoClass<CMyProviderSource, &CLSID_MyProvider>,  
-   public IDBCreateSessionImpl<CMyProviderSource, CMyProviderSession>,  
-   public IDBInitializeImpl<CMyProviderSource>,  
-   public IDBPropertiesImpl<CMyProviderSource>,  
-   public IPersistImpl<CMyProviderSource>,  
-   public IInternalConnectionImpl<CMyProviderSource>  
+   public CComCoClass<CCustomSource, &CLSID_Custom>,  
+   public IDBCreateSessionImpl<CCustomSource, CCustomSession>,  
+   public IDBInitializeImpl<CCustomSource>,  
+   public IDBPropertiesImpl<CCustomSource>,  
+   public IPersistImpl<CCustomSource>,  
+   public IInternalConnectionImpl<CCustomSource>  
 ```  
   
 모든 COM 구성 요소에서 파생 `CComObjectRootEx` 고 `CComCoClass`입니다. `CComObjectRootEx` 모든 구현 된 `IUnknown` 인터페이스입니다. 스레딩 모델을 처리할 수 있습니다. `CComCoClass` 필요한 모든 오류 지원을 처리 합니다. 클라이언트에 자세한 오류 정보를 전송 하려는 경우 일부의 오류가 Api 사용할 수 있습니다에 `CComCoClass`입니다.  
@@ -51,8 +54,8 @@ class ATL_NO_VTABLE CMyProviderSource :
 
 클라이언트가 호출할 때마다 `QueryInterface` 데이터 원본에서 인터페이스의 경우 다음 COM 맵을 통해 이동 합니다.  
   
-```  
-BEGIN_COM_MAP(CMyProviderSource)  
+```cpp  
+BEGIN_COM_MAP(CCustomSource)  
    COM_INTERFACE_ENTRY(IDBCreateSession)  
    COM_INTERFACE_ENTRY(IDBInitialize)  
    COM_INTERFACE_ENTRY(IDBProperties)  
@@ -67,8 +70,8 @@ COM_INTERFACE_ENTRY 매크로 ATL에서 고 구현의 `QueryInterface` 에서 `C
 
 속성 맵 공급자가 지정한 모든 속성을 지정 합니다.  
   
-```  
-BEGIN_PROPSET_MAP(CMyProviderSource)  
+```cpp  
+BEGIN_PROPSET_MAP(CCustomSource)  
    BEGIN_PROPERTY_SET(DBPROPSET_DATASOURCEINFO)  
       PROPERTY_INFO_ENTRY(ACTIVESESSIONS)  
       PROPERTY_INFO_ENTRY(ASYNCTXNABORT)  
@@ -131,7 +134,7 @@ BEGIN_PROPSET_MAP(CMyProviderSource)
    BEGIN_PROPERTY_SET(DBPROPSET_DATASOURCE)  
       PROPERTY_INFO_ENTRY(CURRENTCATALOG)  
    END_PROPERTY_SET(DBPROPSET_DATASOURCE)  
-   CHAIN_PROPERTY_SET(CMyProviderSession)  
+   CHAIN_PROPERTY_SET(CCustomSession)  
 END_PROPSET_MAP()  
 ```  
   

@@ -1,7 +1,7 @@
 ---
 title: 'TN041: MFC-OLE 2로 MFC-OLE1 마이그레이션 | Microsoft Docs'
 ms.custom: ''
-ms.date: 06/28/2018
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75177743b893bdcf48b52b27c25ea4070e000f88
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c2f93ffa79c5f737be032ae9edffa6c3e49c7055
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49809020"
 ---
 # <a name="tn041-mfcole1-migration-to-mfcole-2"></a>TN041: MFC/OLE 2로 MFC/OLE1 마이그레이션
 
@@ -301,7 +301,7 @@ ON_COMMAND(ID_OLE_EDIT_CONVERT, OnEditConvert)
 
 OLE의 가장 흥미로운 기능 중 하나에 내부 활성화 (또는 "비주얼 편집")입니다. 이 기능에는 서버 응용 프로그램을 사용자에 대 한 더 원활 하 게 편집 인터페이스를 제공 하는 컨테이너의 사용자 인터페이스의 일부를 통해 데 있습니다. OCLIENT에 내부 활성화를 구현 하려면 몇 가지 특별 한 리소스를 몇 가지 추가 코드 뿐만 아니라 추가 해야 합니다. 이러한 리소스와 코드는 일반적으로 응용 프로그램 마법사에서 제공-"Container" 지원 사용 하 여 새 응용 프로그램 마법사에서 응용 프로그램에서 직접 가져온 된 코드 대부분 사실입니다.
 
-먼저, 전체 활성 상태인 항목 때 사용할 메뉴 리소스를 추가 하는 데 필요한 것입니다. Visual c + +에서 IDR_OCLITYPE 리소스 복사 및 파일과 창 팝업 남기고 모두 제거 하 여이 추가 메뉴 리소스를 만들 수 있습니다. 구분선을 두 그룹의 분리를 나타내려면 파일과 창 팝업 사이 삽입 됩니다 (처럼 보여야 합니다: 파일 &#124; &#124; 창). 이러한 구분 기호 의미 하 고 서버 및 컨테이너 메뉴를 병합 하는 방법에 대 한 자세한 내용은 "메뉴 및 리소스:: 메뉴 병합"의 참조 *OLE 2 클래스*합니다.
+먼저, 전체 활성 상태인 항목 때 사용할 메뉴 리소스를 추가 하는 데 필요한 것입니다. Visual c + +에서 IDR_OCLITYPE 리소스 복사 및 파일과 창 팝업 남기고 모두 제거 하 여이 추가 메뉴 리소스를 만들 수 있습니다. 구분선을 두 그룹의 분리를 나타내려면 파일과 창 팝업 사이 삽입 됩니다 (처럼 보여야 합니다: 파일 &#124; &#124; 창). 이러한 구분 기호 의미 하 고 서버 및 컨테이너 메뉴를 병합 하는 방법에 대 한 자세한 내용은 참조 하세요 [메뉴 및 리소스: 메뉴 병합](../mfc/menus-and-resources-menu-merging.md)입니다.
 
 만든 이러한 메뉴를 만든 후에 대 한 프레임 워크를 사용 해야 합니다. 호출 하 여 이렇게 `CDocTemplate::SetContainerInfo` 여 InitInstance에 문서 템플릿 목록에 추가 하기 전에 문서 서식 파일에 대 한 합니다. 문서 서식 파일을 등록 하려면 새 코드는 다음과 같습니다.
 
@@ -618,7 +618,7 @@ CServerItem 재정의 `COleServerItem::OnGetTextData`합니다. 이 함수는 MF
 \hiersvr\svrview.cpp(325) : error C2660: 'CopyToClipboard' : function does not take 2 parameters
 ```
 
-`COleServerItem::CopyToClipboard` 더 이상 'bIncludeNative' 플래그를 지원합니다. 원시 데이터 (서버 항목의 직렬화 함수에 의해 쓰여지는 데이터)는 첫 번째 매개 변수를 제거 하므로 항상 복사 됩니다. 또한 `CopyToClipboard` FALSE를 반환 하는 대신 오류가 발생 하면 예외가 throw 됩니다. CServerView::OnEditCopy에 대 한 코드를 다음과 같이 변경 합니다.
+`COleServerItem::CopyToClipboard` 더 이상 지원 하지는 `bIncludeNative` 플래그입니다. 원시 데이터 (서버 항목의 직렬화 함수에 의해 쓰여지는 데이터)는 첫 번째 매개 변수를 제거 하므로 항상 복사 됩니다. 또한 `CopyToClipboard` FALSE를 반환 하는 대신 오류가 발생 하면 예외가 throw 됩니다. CServerView::OnEditCopy에 대 한 코드를 다음과 같이 변경 합니다.
 
 ```cpp
 void CServerView::OnEditCopy()
@@ -654,7 +654,7 @@ void CServerView::OnEditCopy()
 
 - 이러한 특별 리소스 및 클래스에 대 한 프레임 워크를 입력 해야 합니다.
 
-메뉴 리소스는 쉽게 만들 수 있습니다. Visual c + +를 실행, 메뉴 리소스 IDR_HIERSVRTYPE IDR_HIERSVRTYPE_SRVR_IP 라는 메뉴 리소스 복사 합니다. 편집 및 도움말 메뉴 팝업만 유지 됩니다 있도록 메뉴를 수정 합니다. 메뉴 편집 및 도움말 메뉴 사이 두 개의 구분 기호를 추가 (처럼 보여야 합니다: 편집 &#124; &#124; 도움말). 이러한 구분 기호 의미 서버 및 컨테이너 메뉴를 병합 하는 방법에 대 한 자세한 내용은 "메뉴 및 리소스:: 메뉴 병합"의 참조 *OLE 2 클래스*합니다.
+메뉴 리소스는 쉽게 만들 수 있습니다. Visual c + +를 실행, 메뉴 리소스 IDR_HIERSVRTYPE IDR_HIERSVRTYPE_SRVR_IP 라는 메뉴 리소스 복사 합니다. 편집 및 도움말 메뉴 팝업만 유지 됩니다 있도록 메뉴를 수정 합니다. 메뉴 편집 및 도움말 메뉴 사이 두 개의 구분 기호를 추가 (처럼 보여야 합니다: 편집 &#124; &#124; 도움말). 이러한 구분 기호 의미 서버 및 컨테이너 메뉴를 병합 하는 방법에 대 한 자세한 내용은 참조 하세요. [메뉴 및 리소스: 메뉴 병합](../mfc/menus-and-resources-menu-merging.md)입니다.
 
 "서버" 옵션을 선택 하 여 새로 생성 하는 응용 프로그램 마법사에서 응용 프로그램에서 하나를 복사 하 여 하위 집합 도구 모음에 대 한 비트맵을 쉽게 만들 수 있습니다. 이 비트맵 Visual c + +로 가져올 수 있습니다. ID의 IDR_HIERSVRTYPE_SRVR_IP 비트맵을 제공 해야 합니다.
 
@@ -677,7 +677,7 @@ pMenu->TrackPopupMenu(TPM_CENTERALIGN | TPM_RIGHTBUTTON,
     AfxGetApp()->m_pMainWnd);
 ```
 
-에 대 한 참조를 확인할 수 있습니다 *`AfxGetApp()->m_pMainWnd*`합니다. 서버가 활성화 될 때 주 창 및 m_pMainWnd 설정 되어 있으며 일반적으로 표시 되지 않습니다. 또한이 창 참조 하는 *주* 응용 프로그램의 창에서 서버를 완벽 하 게 하는 경우 표시 되는 MDI 프레임 창을 열거나 독립 실행형 실행 합니다. 활성 프레임이 창에는 나타내지 않습니다-때 현재 위치 활성화 되는 프레임 창에서 파생 된 `COleIPFrameWnd`합니다. 전체 편집,이 버전의 MFC는 새로운 함수를 추가 하는 경우에 올바른 활성 창에 가져오려는 `AfxGetMainWnd`합니다. 대신이 함수를 사용 해야 하는 일반적으로 *`AfxGetApp()->m_pMainWnd*`합니다. 이 코드는 다음과 같이 변경 해야 합니다.
+에 대 한 참조를 확인할 수 있습니다 `AfxGetApp()->m_pMainWnd`합니다. 서버가 활성화 될 때 주 창 및 m_pMainWnd 설정 되어 있으며 일반적으로 표시 되지 않습니다. 또한이 창 참조 하는 *주* 응용 프로그램의 창에서 서버를 완벽 하 게 하는 경우 표시 되는 MDI 프레임 창을 열거나 독립 실행형 실행 합니다. 활성 프레임이 창에는 나타내지 않습니다-때 현재 위치 활성화 되는 프레임 창에서 파생 된 `COleIPFrameWnd`합니다. 전체 편집,이 버전의 MFC는 새로운 함수를 추가 하는 경우에 올바른 활성 창에 가져오려는 `AfxGetMainWnd`합니다. 대신이 함수를 사용 해야 하는 일반적으로 `AfxGetApp()->m_pMainWnd`입니다. 이 코드는 다음과 같이 변경 해야 합니다.
 
 ```cpp
 pMenu->TrackPopupMenu(TPM_CENTERALIGN | TPM_RIGHTBUTTON,

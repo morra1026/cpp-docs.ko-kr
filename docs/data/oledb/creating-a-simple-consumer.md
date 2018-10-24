@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 85efb2a1d699914c6d7ffb1fd079a38be70f0b52
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: c9cb2003b857bb156709e4ba2a3345dfb57bfd3c
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163844"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808942"
 ---
 # <a name="creating-a-simple-consumer"></a>단순 소비자 만들기
 
@@ -32,15 +32,15 @@ OLE DB 템플릿 소비자를 생성 하는 ATL 프로젝트 마법사 및 ATL O
 
    **새 프로젝트** 대화 상자가 나타납니다.
 
-1. 에 **프로젝트 형식** 창 클릭 합니다 **설치 됨** > **템플릿** > **Visual c + +** 폴더 및 클릭 합니다 **Win32 콘솔 응용 프로그램** 아이콘에는 **템플릿** 창입니다. 에 **이름을** 상자에 예를 들어 프로젝트의 이름을 입력 합니다 *MyCons*합니다.
+1. 에 **프로젝트 형식** 창 클릭 합니다 **설치 됨** > **Visual c + +** > **Windows Desktop** 폴더 클릭 하 고는 **Windows 데스크톱 마법사** 아이콘에는 **템플릿** 창입니다. 에 **이름을** 상자에 예를 들어 프로젝트의 이름을 입력 합니다 *MyCons*합니다.
 
 1. **확인**을 클릭합니다.
 
-   Win32 응용 프로그램 마법사가 나타납니다.
+   합니다 **Windows 데스크톱 프로젝트** 마법사가 나타납니다.
 
 1. 에 **응용 프로그램 설정** 페이지에서 **콘솔 응용 프로그램**를 선택한 후 **ATL에 대 한 공용 헤더 파일을 추가**합니다.
 
-1. 클릭 **완료** 마법사를 닫고 프로젝트를 생성 합니다.
+1. 클릭 **확인** 마법사를 닫고 프로젝트를 생성 합니다.
 
 다음으로, ATL OLE DB 소비자 마법사를 사용 하 여 OLE DB 소비자 개체를 추가 합니다.
 
@@ -48,9 +48,9 @@ OLE DB 템플릿 소비자를 생성 하는 ATL 프로젝트 마법사 및 ATL O
 
 1. **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭는 `MyCons` 프로젝트입니다.
 
-1. 바로 가기 메뉴에서 클릭 **추가**를 클릭 하 고 **클래스**합니다.
+1. 바로 가기 메뉴에서 클릭 **추가**를 클릭 하 고 **새 항목**합니다.
 
-   합니다 **클래스 추가** 대화 상자가 나타납니다.
+   **새 항목 추가** 대화 상자가 나타납니다.
 
 1. 에 **범주** 창 클릭 **설치 됨** > **Visual c + +** > **ATL**를 클릭 합니다 **ATL OLEDB 소비자** 아이콘에는 **템플릿** 창과 클릭 **추가**합니다.
 

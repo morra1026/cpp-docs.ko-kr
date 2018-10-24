@@ -1,7 +1,7 @@
 ---
 title: CStrBufT 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43c460d45e0f1ce41cebd463bc3ba6b7f295d9ca
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 82152ea3df6bb21ee1405790acf9d3fb2c9630c5
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46411185"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808994"
 ---
 # <a name="cstrbuft-class"></a>CStrBufT 클래스
 
@@ -43,7 +43,7 @@ class CStrBufT
 
 #### <a name="parameters"></a>매개 변수
 
-*TCharType*  
+*TCharType*<br/>
 문자 형식을 `CStrBufT` 클래스입니다. 다음 중 하나일 수 있습니다.
 
 - **char** (용 ANSI 문자열)
@@ -121,13 +121,13 @@ explicit CStrBufT(StringType& str) throw(...);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*  
+*str*<br/>
 버퍼와 연결 된 문자열 개체입니다. 일반적으로 개발자가 사용 하 여의 미리 정의 된 typedef `CStrBuf` (TCHAR variant 형식) `CStrBufA` (**char** 변형) 및 `CStrBufW` (**wchar_t** 변형).
 
-*nMinLength*  
+*nMinLength*<br/>
 문자 버퍼의 최소 길이입니다.
 
-*dwFlags*  
+*dwFlags*<br/>
 문자열 길이 자동으로 결정할지를 결정 합니다. 다음 중 하나일 수 있습니다.
 
 - AUTO_LENGTH 문자열 길이가 자동으로 결정 될 때 [CSimpleStringT::Release](../../atl-mfc-shared/reference/csimplestringt-class.md#releasebuffer) 라고 합니다. 문자열에는 null 종료를 사용 해야 합니다. 기본 값입니다.
@@ -212,7 +212,7 @@ void SetLength(int nLength);
 
 ### <a name="parameters"></a>매개 변수
 
-*nLength*  
+*nLength*<br/>
 문자열 개체의 문자 버퍼의 새 길이입니다.
 
 > [!NOTE]

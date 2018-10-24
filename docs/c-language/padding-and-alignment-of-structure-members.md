@@ -1,7 +1,7 @@
 ---
 title: 구조체 멤버 채우기 및 맞춤 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 959d6296c563958a0c8bdd1ecca660680941755f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a1b301372a9998197c46c1e44c91c9d3456cea8e
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46074853"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808214"
 ---
 # <a name="padding-and-alignment-of-structure-members"></a>구조체 멤버 채우기 및 맞춤
 
@@ -29,7 +29,7 @@ ms.locfileid: "46074853"
 
 모든 데이터 개체에는 맞춤 요구 사항이 있습니다. 구조체, 공용 구조체 및 배열을 제외한 모든 데이터에 대한 맞춤 요구 사항은 개체의 크기 또는 현재 압축 크기(/Zp 또는 `pack` pragma 중에서 작은 것으로 지정됨)입니다. 구조체, 공용 구조체 및 배열에 대한 맞춤 요구 사항은 해당 멤버의 최대 맞춤 요구 사항입니다. 다음과 같이 되도록 모든 개체에 오프셋이 할당됩니다.
 
-*offset*  `%` *alignment-requirement* `==` 0
+*offset* **%** *alignment-requirement* **== 0**
 
 정수 계열 형식의 크기가 같으며 다음 비트 필드가 비트 필드의 일반 할당 요구 사항에 따라 적용되는 경계를 벗어나지 않고 현재 할당 단위에 맞는 경우 인접 비트 필드는 동일한 1, 2 또는 4바이트 할당 단위로 압축됩니다.
 

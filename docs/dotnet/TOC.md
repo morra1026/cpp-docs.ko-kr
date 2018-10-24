@@ -1,4 +1,4 @@
-# [C++/CLI를 사용한 .NET 프로그래밍(Visual C++)](dotnet-programming-with-cpp-cli-visual-cpp.md)
+# [C++/CLI를 사용한 .NET 프로그래밍](dotnet-programming-with-cpp-cli-visual-cpp.md)
 ## [C++/CLI 작업](cpp-cli-tasks.md)
 ### [방법: CLR 빈 프로젝트 만들기](how-to-create-clr-empty-projects.md)
 ### [방법: CLR 콘솔 응용 프로그램 만들기(C++/CLI)](how-to-create-clr-console-applications-cpp-cli.md)

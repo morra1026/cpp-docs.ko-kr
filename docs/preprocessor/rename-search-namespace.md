@@ -1,7 +1,7 @@
 ---
 title: rename_search_namespace | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -16,33 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4350492921c59d4bda4ead37933e4c2242b7df9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f0cc95851c4aa7127e690ec013b9d06d57f2730d
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46411159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808890"
 ---
 # <a name="renamesearchnamespace"></a>rename_search_namespace
-**C + + 전용**  
-  
-와 동일한 기능을 [rename_namespace](../preprocessor/rename-namespace.md) 하지만 사용 하는 형식 라이브러리에 사용 되는 `#import` 지시문에 [auto_search](../preprocessor/auto-search.md) 특성.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-rename_search_namespace("NewName")  
-```  
-  
-### <a name="parameters"></a>매개 변수  
-*NewName*  
-네임스페이스의 새 이름입니다.  
-  
-## <a name="remarks"></a>설명  
- 
-**C + + 전용 종료**  
-  
-## <a name="see-also"></a>참고 항목  
- 
+
+**C + + 전용**
+
+와 동일한 기능을 [rename_namespace](../preprocessor/rename-namespace.md) 하지만 사용 하는 형식 라이브러리에 사용 되는 `#import` 지시문에 [auto_search](../preprocessor/auto-search.md) 특성.
+
+## <a name="syntax"></a>구문
+
+```
+rename_search_namespace("NewName")
+```
+
+### <a name="parameters"></a>매개 변수
+
+*NewName*<br/>
+네임스페이스의 새 이름입니다.
+
+## <a name="remarks"></a>설명
+
+**C + + 전용 종료**
+
+## <a name="see-also"></a>참고 항목
+
 [#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import 지시문](../preprocessor/hash-import-directive-cpp.md)

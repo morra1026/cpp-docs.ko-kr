@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39329f4895060ff950f36c3d10dd5e4020f3b98a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 92761508a5e93c7ef0d0a4099dde587987a50dad
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448430"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49809163"
 ---
 # <a name="coledatetime-class"></a>COleDateTime 클래스
 
@@ -165,7 +165,7 @@ bool operator>=(const COleDateTime& date) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*날짜*  
+*날짜*<br/>
 비교할 `COleDateTime` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -210,22 +210,22 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dateSrc*  
+*dateSrc*<br/>
 기존 `COleDateTime` 복사할 새 개체 `COleDateTime` 개체입니다.
 
-*varSrc*  
+*varSrc*<br/>
 기존 `VARIANT` 데이터 구조 (가능한 경우는 `COleVariant` 개체) 날짜/시간 값 (VT_DATE)으로 변환 되어 새 복사할 `COleDateTime` 개체입니다.
 
-*dtSrc*  
+*dtSrc*<br/>
 날짜/시간 (`DATE`)를 새 복사할 값 `COleDateTime` 개체입니다.
 
-*timeSrc*  
+*timeSrc*<br/>
 A `time_t` 하거나 `__time64_t` 값을 날짜/시간 값으로 변환 하 고 새 복사 `COleDateTime` 개체입니다.
 
-*systimeSrc*  
+*systimeSrc*<br/>
 A `SYSTEMTIME` 날짜/시간 값으로 변환 되어 새 복사 구조 `COleDateTime` 개체입니다.
 
-*filetimeSrc*  
+*filetimeSrc*<br/>
 A `FILETIME` 날짜/시간 값으로 변환 되어 새 복사 구조 `COleDateTime` 개체입니다. `FILETIME` 협정 세계시 (UTC)를 사용 하 여 될 수 있으므로 구조의 현지 시간을 전달 하는 경우 결과 올바른 합니다. 참조 [파일 시간](/windows/desktop/SysInfo/file-times) 자세한 내용은 Windows SDK에 있습니다.
 
 *nYear*, *nMonth*합니다 *발생 한 날짜*를 *n 시간*를 *nMin*, *nSec*  
@@ -234,7 +234,7 @@ A `FILETIME` 날짜/시간 값으로 변환 되어 새 복사 구조 `COleDateTi
 *wDosDate*, *wDosTime*  
 MS-DOS 날짜 및 시간 값을 날짜/시간 값으로 변환 되어 새 복사 `COleDateTime` 개체입니다.
 
-*dbts*  
+*dbts*<br/>
 에 대 한 참조를 [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) 현재 현지 시간을 포함 하는 구조체.
 
 ### <a name="remarks"></a>설명
@@ -297,7 +297,7 @@ CString Format(UINT nFormatID) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*dwFlags*  
+*dwFlags*<br/>
 로캘 플래그 중 하나를 나타냅니다.
 
 - LOCALE_NOUSEROVERRIDE는 사용자 지정 사용자 설정 대신 시스템 기본 로캘 설정을 사용 합니다.
@@ -306,10 +306,10 @@ CString Format(UINT nFormatID) const;
 
 - VAR_DATEVALUEONLY 구문 분석 하는 동안 시간 부분을 무시 합니다.
 
-*lcid*  
+*lcid*<br/>
 변환에 사용할 로캘 ID를 나타냅니다. 언어 식별자에 대 한 자세한 내용은 참조 하세요. [언어 식별자](/windows/desktop/Intl/language-identifiers)합니다.
 
-*lpszFormat*  
+*lpszFormat*<br/>
 유사한 문자열 서식의 `printf` 문자열 서식을 지정 합니다. 각 서식 코드를 앞에 백분율 ( `%`)에 서명, 해당 바뀝니다 `COleDateTime` 구성 요소입니다. 반환된 된 문자열에 형식 문자열에 다른 문자 변경 되지 않고 복사 됩니다. 런타임 함수를 참조 하세요 [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) 자세한 내용은 합니다. 값 및 서식 지정 코드의 의미를 `Format` 됩니다.
 
 - `%H` 현재 날짜 시간
@@ -320,7 +320,7 @@ CString Format(UINT nFormatID) const;
 
 - `%%` 백분율 기호
 
-*nFormatID*  
+*nFormatID*<br/>
 형식 컨트롤 문자열에 대 한 리소스 ID입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -356,7 +356,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dbts*  
+*dbts*<br/>
 에 대 한 참조를 [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -381,7 +381,7 @@ bool GetAsSystemTime(SYSTEMTIME& sysTime) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*sysTime*  
+*sysTime*<br/>
 에 대 한 참조를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 에서 변환 된 날짜/시간 값을 받는 구조체는 `COleDateTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -404,7 +404,7 @@ bool GetAsUDATE(UDATE& udate) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*udate*  
+*udate*<br/>
 에 대 한 참조를 `UDATE` 에서 변환 된 날짜/시간 값을 받는 구조체는 `COleDateTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -938,10 +938,10 @@ LCID lcid = LANG_USER_DEFAULT) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszDate*  
+*lpszDate*<br/>
 구문 분석 하는 null로 끝나는 문자열에 대 한 포인터입니다. 자세한 내용은 설명을 참조하세요.
 
-*dwFlags*  
+*dwFlags*<br/>
 로캘 설정 및 구문 분석에 대 한 플래그를 나타냅니다. 하나 이상의 플래그:
 
 - LOCALE_NOUSEROVERRIDE는 사용자 지정 사용자 설정 대신 시스템 기본 로캘 설정을 사용 합니다.
@@ -950,7 +950,7 @@ LCID lcid = LANG_USER_DEFAULT) throw();
 
 - VAR_DATEVALUEONLY 구문 분석 하는 동안 시간 부분을 무시 합니다.
 
-*lcid*  
+*lcid*<br/>
 변환에 사용할 로캘 ID를 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1151,7 +1151,7 @@ void SetStatus(DateTimeStatus status) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*status*  
+*status*<br/>
 이 대 한 새 상태 값을 `COleDateTime` 개체입니다.
 
 ### <a name="remarks"></a>설명

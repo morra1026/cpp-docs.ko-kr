@@ -1,7 +1,7 @@
 ---
 title: CFileTime 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b81a8aeaf2b4475a95421853c4ab5822bc06abb3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 36e71cd975ff138343770b80e60b0287faa32558
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808825"
 ---
 # <a name="cfiletime-class"></a>CFileTime 클래스
 
@@ -133,10 +133,10 @@ CFileTime(ULONGLONG nTime) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*ft*  
+*ft*<br/>
 A [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) 구조입니다.
 
-*않았습니다*  
+*않았습니다*<br/>
 날짜 및 64 비트 값으로 표현 된 시간입니다.
 
 ### <a name="remarks"></a>설명
@@ -246,10 +246,10 @@ CFileTimeSpan operator-(CFileTime ft) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 `CFileTimeSpan` 개체입니다.
 
-*ft*  
+*ft*<br/>
 `CFileTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -266,7 +266,7 @@ bool operator!=(CFileTime ft) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*ft*  
+*ft*<br/>
 비교할 `CFileTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -283,7 +283,7 @@ CFileTime operator+(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 `CFileTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -300,7 +300,7 @@ CFileTime& operator+=(CFileTimeSpan span) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 `CFileTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -317,7 +317,7 @@ bool operator<(CFileTime ft) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*ft*  
+*ft*<br/>
 비교할 `CFileTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -338,7 +338,7 @@ bool operator<=(CFileTime ft) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*ft*  
+*ft*<br/>
 비교할 `CFileTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -355,7 +355,7 @@ CFileTime& operator=(const FILETIME& ft) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*ft*  
+*ft*<br/>
 `CFileTime` 새 시간 및 날짜를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -372,7 +372,7 @@ CFileTime& operator-=(CFileTimeSpan span) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 `CFileTimeSpan` 뺄 상대 시간을 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -389,7 +389,7 @@ bool operator==(CFileTime ft) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*ft*  
+*ft*<br/>
 `CFileTime` 비교할 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -406,7 +406,7 @@ bool operator>(CFileTime ft) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*ft*  
+*ft*<br/>
 비교할 `CFileTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -423,7 +423,7 @@ bool operator>=(CFileTime ft) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*ft*  
+*ft*<br/>
 비교할 `CFileTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -452,7 +452,7 @@ void SetTime(ULONGLONG nTime) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*않았습니다*  
+*않았습니다*<br/>
 날짜 및 시간, 현지 또는 utc (협정 세계시) 형식 중 하나를 나타내는 64 비트 값입니다.
 
 ##  <a name="utctolocal"></a>  CFileTime::UTCToLocal
@@ -489,4 +489,3 @@ static const ULONGLONG Week = Day* 7;
 [CFileTimeSpan 클래스](../../atl-mfc-shared/reference/cfiletimespan-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC 공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-

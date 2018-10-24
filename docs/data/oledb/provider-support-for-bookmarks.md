@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e7f97011e66c72c79c3ab6db3b6011e1d4d76ce7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d01674929522326c21eea2ad7d40f33e8ff6fae6
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46017175"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49807525"
 ---
 # <a name="provider-support-for-bookmarks"></a>공급자의 책갈피 지원
 
@@ -247,7 +247,7 @@ HRESULT hr = table.Compare(table.dwBookmark, table.dwBookmark,
 }  
 ```  
   
-While 루프를 호출 하도록 코드를 포함 합니다 `Compare` 의 메서드는 `IRowsetLocate` 인터페이스. 정확히 동일한 책갈피를 비교 하기 때문에 항상 코드를 전달 해야 합니다. 또한 한 책갈피를 임시 변수에 저장 while 후 사용할 수 있도록 호출을 완료 된 루프를 `MoveToBookmark` 소비자 템플릿에 함수입니다. 합니다 `MoveToBookmark` 함수 호출을 `GetRowsAt` 에서 메서드 `IRowsetLocate`합니다.  
+**하는 동안** 루프를 호출 하도록 코드를 포함 합니다 `Compare` 에서 메서드를 `IRowsetLocate` 인터페이스입니다. 정확히 동일한 책갈피를 비교 하기 때문에 항상 코드를 전달 해야 합니다. 또한 한 책갈피를 임시 변수에 저장 후 사용할 수 있도록 합니다 **하는 동안** 호출 완료 루프는 `MoveToBookmark` 소비자 템플릿에 함수. 합니다 `MoveToBookmark` 함수 호출을 `GetRowsAt` 에서 메서드 `IRowsetLocate`합니다.  
   
 소비자에서 사용자 레코드를 업데이트 해야 합니다. 책갈피 및 항목을 처리 하는 클래스에 항목을 추가 합니다 `COLUMN_MAP`:  
   
