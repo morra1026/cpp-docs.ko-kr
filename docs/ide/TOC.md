@@ -26,7 +26,6 @@
 ### [속성 페이지 XML 파일](property-page-xml-files.md)
 ### [.vcxproj 및 .props 파일 구조](vcxproj-file-structure.md)
 ## [응용 프로그램 마법사를 사용하여 데스크톱 프로젝트 만들기](creating-desktop-projects-by-using-application-wizards.md)
-### [다른 언어에 대한 마법사 지원](wizard-support-for-other-languages.md)
 ### [메이크파일 프로젝트 만들기](creating-a-makefile-project.md)
 #### [메이크파일 프로젝트 마법사](makefile-project-wizard.md)
 ##### [메이크파일 프로젝트 마법사, 응용 프로그램 설정](application-settings-makefile-project-wizard.md)
