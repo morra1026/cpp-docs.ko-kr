@@ -1,34 +1,37 @@
 ---
-title: CMyProviderRowset (MyProviderRS.H) | Microsoft Docs
+title: CCustomRowset (CustomRS.H) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/22/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
 f1_keywords:
 - cmyproviderrowset
 - myproviderrs.h
+- ccustomrowset
+- customrs.h
 dev_langs:
 - C++
 helpviewer_keywords:
 - OLE DB providers, wizard-generated files
 - CMyProviderRowset class in MyProviderRS.H
+- CCustomRowset class in CustomRS.H
 ms.assetid: 7ba1a124-3842-40eb-a36b-302190a1af3a
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c7c9830970f6e09d1993ac2fd78510b84068efaa
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4ee7aed5463054256d6903e485b83ce201a685d2
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46021277"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49807915"
 ---
-# <a name="cmyproviderrowset-myproviderrsh"></a>CMyProviderRowset(MyProviderRS.H)
+# <a name="ccustomrowset-customrsh"></a>CCustomRowset (CustomRS.H)
 
-마법사는 행 집합 개체에 대 한 진입점을 생성합니다. 여기서는 이 행 집합을 `CMyProviderRowset`이라고 합니다. 합니다 `CMyProviderRowset` 클래스 라고 하는 OLE DB 공급자 클래스에서 상속 `CRowsetImpl`, 행 집합 개체에 필요한 모든 인터페이스를 구현 하는 합니다. 다음 코드에 대 한 상속 체인을 보여 주는 `CRowsetImpl`:  
+마법사는 행 집합 개체에 대 한 진입점을 생성합니다. 여기서는 이 행 집합을 `CCustomRowset`이라고 합니다. 합니다 `CCustomRowset` 클래스 라고 하는 OLE DB 공급자 클래스에서 상속 `CRowsetImpl`, 행 집합 개체에 필요한 모든 인터페이스를 구현 하는 합니다. 다음 코드에 대 한 상속 체인을 보여 주는 `CRowsetImpl`:  
   
 ```cpp  
 template <class T, class Storage, class CreatorClass,   

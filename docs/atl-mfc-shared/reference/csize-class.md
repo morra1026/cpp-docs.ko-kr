@@ -1,7 +1,7 @@
 ---
 title: CSize 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ca548fec9a70a04b0bdb9a5169021fc43f149eb
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 9966bcdf31df3b6d3f702ec425131c5b8baa3aee
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328547"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808500"
 ---
 # <a name="csize-class"></a>CSize 클래스
 
@@ -90,19 +90,19 @@ CSize( DWORD dwSize) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*initCX*  
+*initCX*<br/>
 집합의 `cx` 에 대 한 멤버는 `CSize`합니다.
 
-*initCY*  
+*initCY*<br/>
 집합의 `cy` 에 대 한 멤버는 `CSize`합니다.
 
-*initSize*  
+*initSize*<br/>
 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 나 `CSize` 개체를 초기화 하는 데 `CSize`합니다.
 
-*initPt*  
+*initPt*<br/>
 [지점](../../mfc/reference/point-structure.md) 구조 나 `CPoint` 개체를 초기화 하는 데 `CSize`합니다.
 
-*dwSize*  
+*dwSize*<br/>
 DWORD 초기화 하는 데 `CSize`합니다. 하위 단어를 `cx` 멤버 이며 상위 단어를 `cy` 멤버입니다.
 
 ### <a name="remarks"></a>설명

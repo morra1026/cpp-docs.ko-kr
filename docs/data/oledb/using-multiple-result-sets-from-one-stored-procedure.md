@@ -16,20 +16,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3e75a100bb5b56b613419160a3ea063bce42bbdb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 70fab2751e216ca90dbe09e31c88f9aa80aa7b90
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092325"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808266"
 ---
 # <a name="using-multiple-result-sets-from-one-stored-procedure"></a>저장 프로시저 하나에서 여러 결과 집합 사용
 
-대부분의 저장된 프로시저는 여러 결과 집합을 반환 합니다. 자세한 내용은 select 문 또는 일반적으로 이러한 저장된 프로시저가 하나 포함 됩니다. 소비자는 모든 결과 집합을 처리 하 게 고려해 야 합니다.  
+대부분의 저장된 프로시저는 여러 결과 집합을 반환 합니다. 자세한 내용은 select 문 또는 일반적으로 이러한 저장된 프로시저가 하나 포함 됩니다. 소비자가이 포함 된 모든 결과 집합을 처리 하는 것이 좋습니다.  
   
-### <a name="to-handle-multiple-result-sets"></a>여러 결과 처리 하도록 설정 합니다.  
+## <a name="to-handle-multiple-result-sets"></a>여러 결과 처리 하도록 설정 합니다.  
   
-1. 만들기는 `CCommand` 클래스와 `CMultipleResults` 템플릿 인수로 및 원하는 접근자와 함께 합니다. 일반적으로 이것이 동적 또는 수동 접근자입니다. 다른 유형의 접근자를 사용 하는 경우 각 행 집합에 대 한 출력 열을 결정할 수 수 없습니다.  
+1. 만들기는 `CCommand` 클래스와 `CMultipleResults` 템플릿 인수로 및 선택한 일반적으로 동적 또는 수동 접근자의 접근자와 함께 합니다. 다른 유형의 접근자를 사용 하는 경우 각 행 집합에 대 한 출력 열을 결정할 수 수 없습니다.  
   
 1. 일반적으로 저장된 프로시저를 실행 하 고 열 바인딩 (참조 [방법 데이터 페치?](../../data/oledb/fetching-data.md)).  
   

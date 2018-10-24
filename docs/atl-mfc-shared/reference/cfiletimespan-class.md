@@ -1,7 +1,7 @@
 ---
 title: CFileTimeSpan 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c69a45ec56c5ee6f1c8d7a48be2cac2d158dc6e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 27be228c735b667d76f1dc70d9ae36f4229acd01
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808968"
 ---
 # <a name="cfiletimespan-class"></a>CFileTimeSpan 클래스
 
@@ -93,10 +93,10 @@ CFileTimeSpan(LONGLONG nSpan) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 기존 `CFileTimeSpan` 개체입니다.
 
-*nSpan*  
+*nSpan*<br/>
 기간 시간 (밀리초)입니다.
 
 ### <a name="remarks"></a>설명
@@ -125,7 +125,7 @@ CFileTimeSpan operator-(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 `CFileTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -142,7 +142,7 @@ bool operator!=(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 비교할 `CFileTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -159,7 +159,7 @@ CFileTimeSpan operator+(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 `CFileTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -176,7 +176,7 @@ CFileTimeSpan& operator+=(CFileTimeSpan span) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 `CFileTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -193,7 +193,7 @@ bool operator<(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 비교할 `CFileTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -210,7 +210,7 @@ bool operator<=(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 비교할 `CFileTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -227,7 +227,7 @@ CFileTimeSpan& operator=(const CFileTimeSpan& span) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 `CFileTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -244,7 +244,7 @@ CFileTimeSpan& operator-=(CFileTimeSpan span) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 `CFileTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -261,7 +261,7 @@ bool operator==(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 비교할 `CFileTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -278,7 +278,7 @@ bool operator>(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 비교할 `CFileTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -295,7 +295,7 @@ bool operator>=(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 비교할 `CFileTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -312,7 +312,7 @@ void SetTimeSpan(LONGLONG nSpan) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nSpan*  
+*nSpan*<br/>
 밀리초 단위의 시간 범위에 대 한 새 값입니다.
 
 ## <a name="see-also"></a>참고 항목
@@ -321,4 +321,3 @@ void SetTimeSpan(LONGLONG nSpan) throw();
 [CFileTime 클래스](../../atl-mfc-shared/reference/cfiletime-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC 공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-

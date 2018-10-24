@@ -1,7 +1,7 @@
 ﻿---
 title: ATL COM 데스크톱 구성 요소 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/19/2018
 ms.technology:
 - cpp-atl
 ms.topic: conceptual
@@ -15,16 +15,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eadbcd138bd9fc73835938b8ff59d694ede152b8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 378cd6fd283cd36142e293b51fdb91527afb6f88
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065623"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808903"
 ---
 # <a name="atl-com-desktop-components"></a>ATL COM 데스크톱 구성 요소
 
-ATL 참조는 액티브 템플릿 라이브러리(ATL), 콤포넌트 개체 모델(COM) 객체의 프로그래밍을 단순화하는 템플릿 기반 C++ 클래스 집합을 설명합니다. ATL를 완전히 활용하기 위해 COM에 대한 지식이 있는 것이 가장 좋습니다.  완벽 하 게 활용 하기 위해 ATL, COM에 대 한 작업 지식이 것이 좋습니다.
+ATL 참조는 액티브 템플릿 라이브러리(ATL), 콤포넌트 개체 모델(COM) 객체의 프로그래밍을 단순화하는 템플릿 기반 C++ 클래스 집합을 설명합니다. ATL를 완전히 활용하기 위해 COM에 대한 지식이 있는 것이 가장 좋습니다.  COM은 이진 규정을 만들고 Windows에서 소프트웨어 구성 요소를 사용 합니다. 완벽 하 게 활용 하기 위해 ATL, COM에 대 한 작업 지식이 것이 좋습니다. COM에 대 한 자세한 내용은 참조 하세요. [구성 요소 개체 모델 (COM)](/windows/desktop/com/component-object-model--com--portal)합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 

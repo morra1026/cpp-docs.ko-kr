@@ -1,7 +1,7 @@
 ---
 title: CTimeSpan 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -33,12 +33,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b70e4ca31f4346e8ad0b6dda4e66192e2e53111
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 32e6599fa19c23751beaf3545696a90a2d117248
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397522"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49809085"
 ---
 # <a name="ctimespan-class"></a>CTimeSpan 클래스
 
@@ -114,7 +114,7 @@ bool operator>=(CTimeSpan span) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 비교할 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -133,22 +133,22 @@ bool operator>=(CTimeSpan span) const throw();
 CTimeSpan() throw();
 CTimeSpan(__time64_t time) throw();
 
-CTimeSpan(  
-LONG lDays,
-int nHours,
-int nMins,
-int nSecs) throw();
+CTimeSpan(
+    LONG lDays,
+    int nHours,
+    int nMins,
+    int nSecs) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*timeSpanSrc*  
+*timeSpanSrc*<br/>
 `CTimeSpan` 이미 존재 하는 개체입니다.
 
-*time*  
+*time*<br/>
 A **__time64_t** 시간 값에서 시간 범위를 시간 (초)입니다.
 
-*lDays*하십시오 *nHours*하십시오 *nMins*, *nSecs*  
+*lDays*하십시오 *nHours*하십시오 *nMins*, *nSecs*<br/>
 일, 시간, 분 및 초, 각각.
 
 ### <a name="remarks"></a>설명
@@ -163,12 +163,12 @@ A **__time64_t** 시간 값에서 시간 범위를 시간 (초)입니다.
 
 - `CTimeSpan( LONG, int, int, int );` 생성 된 `CTimeSpan` 각 구성 요소를 사용 하 여 구성 요소에서 개체를 다음 범위로 제한 합니다.
 
-    |구성 요소|범위|  
-    |---------------|-----------|  
-    |*lDays*|0-25,000 (약)|  
-    |*nHours*|0-23|  
-    |*nMins*|0-59|  
-    |*nSecs*|0-59|
+   |구성 요소|범위|
+   |---------------|-----------|
+   |*lDays*|0-25,000 (약)|
+   |*nHours*|0-23|
+   |*nMins*|0-59|
+   |*nSecs*|0-59|
 
 Microsoft Foundation Class 라이브러리의 디버그 버전 경우 어설션 또는 시간 구성 요소 범위를 벗어났습니다. 호출 하기 전에 인수의 유효성을 검사 해야 하는 것입니다.
 
@@ -188,7 +188,7 @@ CString Format(UINT nID) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*벗어나거나*, *pszFormat*  
+*벗어나거나*, *pszFormat*<br/>
 유사한 문자열 서식의 `printf` 문자열 서식을 지정 합니다. 서식 코드 앞에 백분율 (`%`)에 서명, 해당 바뀝니다 `CTimeSpan` 구성 요소입니다. 반환된 된 문자열에 형식 문자열에 다른 문자 변경 되지 않고 복사 됩니다. 값 및 서식 지정 코드의 의미를 `Format` 다음과 같습니다.
 
 - **%D** 총이 일 수 `CTimeSpan`
@@ -201,7 +201,7 @@ CString Format(UINT nID) const;
 
 - **%%** 백분율 기호
 
-*nID*  
+*nID*<br/>
 이 형식을 식별 하는 문자열의 ID입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -355,7 +355,7 @@ CTimeSpan operator-(CTimeSpan span) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 에 추가할 값을 `CTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -381,7 +381,7 @@ CTimeSpan& operator-=(CTimeSpan span) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 에 추가할 값을 `CTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -409,7 +409,7 @@ CArchive& Serialize64(CArchive& ar);
 
 ### <a name="parameters"></a>매개 변수
 
-*ar*  
+*ar*<br/>
 `CArchive` 업데이트 하려는 개체입니다.
 
 ### <a name="return-value"></a>반환 값

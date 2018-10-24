@@ -25,12 +25,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4a3f80d3e421701ac0612ddb2552d10d1eff1f02
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6d8bcd61fb77b12db612bb12ae516a8665caaee8
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46056029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808227"
 ---
 # <a name="consumer-wizard-generated-methods"></a>소비자 마법사 생성 메서드
 
@@ -40,7 +40,7 @@ ATL OLE DB 소비자 마법사 및 MFC 응용 프로그램 마법사는 알고 �
   
 - `CloseAll` 열려 있는 모든 행 집합을 닫고 모든 명령 실행을 해제 합니다.  
   
-- `OpenRowset` OpenAll 소비자 행 집합 또는 행 집합 열에 의해 호출 됩니다.  
+- `OpenRowset` 호출한 `OpenAll` 소비자 행 집합 또는 행 집합 열입니다.  
   
 - `GetRowsetProperties` 속성을 설정할 수 있습니다 사용 하 여 설정 하는 행 집합의 속성에 대 한 포인터를 검색 합니다.  
   
@@ -91,7 +91,7 @@ int main(int argc, char* argv[])
   
 ## <a name="remarks"></a>설명  
 
-정의 하는 경우는 `HasBookmark` 메서드는 `OpenAll` DBPROP_IRowsetLocate 속성을 설정 하는 코드에만 이렇게 하면 공급자에 게 해당 속성을 지 원하는 경우 해야 합니다.  
+정의한 경우를 `HasBookmark` 메서드를 `OpenAll` 집합 코드를 `DBPROP_IRowsetLocate` 속성만 수행 해야이 공급자에 게 해당 속성을 지 원하는 경우.  
   
 ## <a name="openrowset"></a>OpenRowset  
   
@@ -104,7 +104,7 @@ HRESULT OpenRowset(const CSession& session, LPCWSTR szCommand = NULL);
   
 `OpenAll` 소비자에서 행 집합을 열려면이 메서드를 호출 합니다. 일반적으로 호출할 필요가 없습니다 `OpenRowset` 여러 데이터 원본/세션/행 집합을 사용 하는 경우가 있습니다. `OpenRowset` 명령 또는 테이블 클래스 헤더 파일에 선언 됩니다.  
   
-```  
+```cpp  
 // OLE DB Template version:  
 HRESULT OpenRowset(DBPROPSET *pPropSet = NULL)  
 {  
@@ -117,7 +117,7 @@ HRESULT OpenRowset(DBPROPSET *pPropSet = NULL)
 }  
 ```  
   
-특성을 다르게이 메서드를 구현 합니다. 이 버전에는 세션 개체를 다른 전달할 수 있지만 db_command에 지정 된 명령 문자열에 설정 되는 명령 문자열을 사용 합니다. 정의 하는 경우는 `HasBookmark` 메서드는 `OpenRowset` DBPROP_IRowsetLocate 속성을 설정 하는 코드에만 이렇게 하면 공급자에 게 해당 속성을 지 원하는 경우 해야 합니다.  
+특성을 다르게이 메서드를 구현 합니다. 이 버전에는 세션 개체를 다른 전달할 수 있지만 db_command에 지정 된 명령 문자열에 설정 되는 명령 문자열을 사용 합니다. 정의한 경우를 `HasBookmark` 메서드를 `OpenRowset` 집합 코드를 `DBPROP_IRowsetLocate` 속성만 수행 해야이 공급자에 게 해당 속성을 지 원하는 경우.  
   
 ```cpp  
 // Attribute-injected version:  
@@ -142,7 +142,7 @@ HRESULT OpenRowset(const CSession& session, LPCWSTR szCommand=NULL)
 void GetRowsetProperties(CDBPropSet* pPropSet);  
 ```  
   
-이 메서드는 행 집합의 속성 집합에 대 한 포인터를 검색합니다. DBPROP_IRowsetChange 같은 속성을 설정 하려면이 포인터를 사용할 수 있습니다. `GetRowsetProperties` 사용자 레코드 클래스는 다음과 같습니다. 추가 행 집합 속성을 설정 하는이 코드를 수정할 수 있습니다.  
+이 메서드는 행 집합의 속성 집합에 대 한 포인터를 검색합니다. 이 포인터를 사용 하 여 같은 속성을 설정 하려면 `DBPROP_IRowsetChange`합니다. `GetRowsetProperties` 사용자 레코드 클래스는 다음과 같습니다. 추가 행 집합 속성을 설정 하는이 코드를 수정할 수 있습니다.  
   
 ```cpp  
 void GetRowsetProperties(CDBPropSet* pPropSet)  

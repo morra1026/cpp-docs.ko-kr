@@ -1,7 +1,7 @@
 ---
 title: C 가감 연산자 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7be460ace4e407a328c0cf23c9e6c9af09d17ca0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 339904e3fe75c712254f3a7802fc76a0e283c8e5
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46101482"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808357"
 ---
 # <a name="c-additive-operators"></a>C 가감 연산자
 
@@ -31,14 +31,13 @@ ms.locfileid: "46101482"
 
 ## <a name="syntax"></a>구문
 
-*additive-expression*: *multiplicative-expression*
-
-*additive-expression*  **+**  *multiplicative-expression*
-
-*additive-expression*  **-**  *multiplicative-expression*
+*additive-expression*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*multiplicative-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression* **+** *multiplicative-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*additive-expression* **-** *multiplicative-expression*
 
 > [!NOTE]
->  *additive-expression*의 구문에 *multiplicative-expression*이 포함되지만 곱하기를 사용하는 식이 필요하다는 의미는 아닙니다. *multiplicative-expression*, *cast-expression* 및 *unary-expression*에 대한 구문은 [C 언어 구문 요약](../c-language/c-language-syntax-summary.md)을 참조하세요.
+> *additive-expression*의 구문에 *multiplicative-expression*이 포함되지만 곱하기를 사용하는 식이 필요하다는 의미는 아닙니다. *multiplicative-expression*, *cast-expression* 및 *unary-expression*에 대한 구문은 [C 언어 구문 요약](../c-language/c-language-syntax-summary.md)을 참조하세요.
 
 피연산자는 정수 계열 또는 부동 형식 값일 수 있습니다. 일부 가감 연산은 포인터 값을 대상으로 수행될 수도 있습니다. 이에 대한 내용은 각 연산자에 대한 설명에 나와 있습니다.
 

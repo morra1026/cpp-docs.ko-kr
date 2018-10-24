@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8218500fc17efda01b4ecaa11b6ebf12bd76812
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 721c8ba75fc72879a2c4c7de0f21010f51513f50
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436275"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808786"
 ---
 # <a name="mfc-dll-wizard"></a>MFC DLL 마법사
 
@@ -56,5 +56,4 @@ Visual c + +를 사용 하 여 프로젝트에 개체 또는 컨트롤 MFC DLL �
 [MFC 클래스](../../mfc/reference/adding-an-mfc-class.md)<br/>
 [멤버 함수 추가](../../ide/adding-a-member-function-visual-cpp.md)<br/>
 [인터페이스 구현](../../ide/implementing-an-interface-visual-cpp.md)<br/>
-[다른 언어에 대한 마법사 지원](../../ide/wizard-support-for-other-languages.md)
 

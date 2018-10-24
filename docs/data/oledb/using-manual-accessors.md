@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5aa7f72cc76f80e2304faf93ca0c6198c505e88a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8805878f880d1c195ddf89abc283719e73ff5182
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46101646"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808929"
 ---
 # <a name="using-manual-accessors"></a>수동 접근자 사용
 
@@ -36,7 +36,7 @@ ms.locfileid: "46101646"
   
 - 여러 행 집합을 반환 하는 경우 확인  
   
-OLE DB 소비자 템플릿을 사용 하 여이 작업을 수행 하려면 사용 된 `CManualAccessor` 클래스 및 다음이 단계를 수행 합니다.  
+OLE DB 소비자 템플릿을 사용 하 여 이러한 작업을 수행 하려면 사용 된 `CManualAccessor` 클래스 및 다음이 단계를 수행 합니다.  
   
 1. 엽니다는 `CCommand` 개체를 `CManualAccessor` 템플릿 매개 변수로 합니다.  
   

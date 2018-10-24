@@ -1,7 +1,7 @@
 ---
 title: XML 데이터에 액세스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: cfde3980e58ba86d6923eaac765332a23e40ad7e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d7db1d790ca9caeea6bd9c7853139f59ffa0ab6c
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46062503"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808721"
 ---
 # <a name="accessing-xml-data"></a>XML 데이터 액세스
 
@@ -34,7 +34,7 @@ ms.locfileid: "46062503"
 |기능|CStreamRowset|CXMLAccessor|  
 |-------------------|-------------------|------------------|  
 |전송 된 데이터 양|한 번에 모든 열과 행에서 데이터를 검색합니다.|모든 열에서 데이터를 검색 하지만 한 번에 한 행만 합니다. 와 같은 메서드를 사용 하 여 행을 이동 해야 `MoveNext`합니다.|  
-|문자열의 서식을 지정|SQL Server XML 문자열의 형식을 지정 하 고 소비자에 게 보냅니다.|행 집합 형식으로 데이터를 네이티브 (공급자 유니코드 문자열로 전송 요청)을 검색 하 고 XML 형식으로 데이터를 포함 하는 문자열을 빌드합니다.|  
+|문자열의 서식을 지정|SQL Server XML 문자열의 형식을 지정 하 고 소비자에 게 보냅니다.|행 집합 형식으로 데이터를 네이티브 (공급자 유니코드 문자열로 전송 요청)을 검색 하 고 XML 형식으로 데이터를 보유 하는 문자열을 빌드합니다.|  
 |형식 제어|몇 가지 수준의 일부 SQL Server 2000 관련 속성을 설정 하 여 XML 문자열의 서식 지정 하는 방법을 제어 해야 합니다.|생성된 된 XML 문자열의 형식 제어할 수 없거나 해야합니다.|  
   
 하지만 `CStreamRowset` 제공을 보다 효과적으로 XML 형식으로 데이터를에서 검색 하는 SQL Server 2000 에서만 지원 됩니다.  
@@ -53,7 +53,7 @@ CCommand<CAccessor<CMyAccessor>, CStreamRowset> myCmd;
 CCommand<CNoAccessor, CStreamRowset> myCmd;  
 ```  
   
-정상적으로 호출 하는 경우 `CCommand::Open` (예를 들어 지정 `CRowset` 으로 `TRowset` 클래스)를 가져와서는 `IRowset` 포인터. `ICommand::Execute` 반환 합니다는 `IRowset` 에 저장 된 포인터를 `m_spRowset` 의 멤버는 `CRowset` 개체. 와 같은 메서드와 `MoveFirst`, `MoveNext`, 및 `GetData` 해당 포인터를 사용 하 여 데이터를 검색 합니다.  
+정상적으로 호출 하는 경우 `CCommand::Open` (예를 들어, 지정 `CRowset` 으로 `TRowset` 클래스)를 가져옵니다는 `IRowset` 포인터. `ICommand::Execute` 반환 합니다는 `IRowset` 에 저장 된 포인터를 `m_spRowset` 의 멤버는 `CRowset` 개체. 와 같은 메서드와 `MoveFirst`, `MoveNext`, 및 `GetData` 해당 포인터를 사용 하 여 데이터를 검색 합니다.  
   
 반면, 호출 하는 경우 `CCommand::Open` (지정 `CStreamRowset` 으로 `TRowset` 클래스), `ICommand::Execute` 반환는 `ISequentialStream` 에 저장 된 포인터를 `m_spStream` 데이터 멤버의 [CStreamRowset](../../data/oledb/cstreamrowset-class.md). 그런 다음 사용은 `Read` XML 형식에서 (유니코드 문자열) 데이터를 검색 하는 방법. 예를 들어:  
   
@@ -61,12 +61,12 @@ CCommand<CNoAccessor, CStreamRowset> myCmd;
 myCmd.m_spStream->Read()  
 ```  
   
-SQL Server 2000 XML 서식 지정을 수행 하 고 모든 열과 하나의 XML 문자열로 행 집합의 모든 행을 반환 합니다.  
+SQL Server 2000에서는 XML 서식 지정 하 고 모든 열과 하나의 XML 문자열로 행 집합의 모든 행을 반환 합니다.  
   
 사용 하는 예제는 `Read` 메서드를에서 "XML 지원 소비자에 추가"를 참조 하세요 [단순 소비자 구현](../../data/oledb/implementing-a-simple-consumer.md)합니다.  
   
 > [!NOTE]
->  XML을 사용 하 여 지원 `CStreamRowset` SQL Server 2000 에서만 작동 하 고 SQL Server 2000 (MDAC를 사용 하 여 설치 됨)에 대 한 OLE DB 공급자가 있어야 합니다.  
+> XML을 사용 하 여 지원 `CStreamRowset` SQL Server 2000 에서만 작동 하 고 SQL Server 2000 (MDAC를 사용 하 여 설치 됨)에 대 한 OLE DB 공급자가 있어야 합니다.  
   
 ## <a name="retrieving-xml-data-using-cxmlaccessor"></a>CXMLAccessor를 사용 하 여 XML 데이터를 검색 합니다.  
 

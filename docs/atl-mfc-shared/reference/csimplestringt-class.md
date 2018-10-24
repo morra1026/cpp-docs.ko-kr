@@ -1,7 +1,7 @@
 ---
 title: CSimpleStringT 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7a4abff1faaa8fe93f15fb2d4a7e5ba15d6e434
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1f835558bb4d97f90857d44ef63e4b8f6075d2c0
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434663"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49809150"
 ---
 # <a name="csimplestringt-class"></a>CSimpleStringT 클래스
 
@@ -66,7 +66,7 @@ class CSimpleStringT
 
 ### <a name="parameters"></a>매개 변수
 
-*BaseType*  
+*BaseType*<br/>
 String 클래스의 문자 형식입니다. 다음 중 하나일 수 있습니다.
 
 - **char** (용 ANSI 문자열)입니다.
@@ -151,13 +151,13 @@ void Append(PCXSTR pszSrc);
 ```
 #### <a name="parameters"></a>매개 변수
 
-*strSrc*  
+*strSrc*<br/>
 `CSimpleStringT` 추가할 개체입니다.
 
-*pszSrc*  
+*pszSrc*<br/>
 추가할 문자를 포함 하는 문자열에 대 한 포인터입니다.
 
-*nLength*  
+*nLength*<br/>
 추가할 문자 수입니다.
 
 ### <a name="remarks"></a>설명
@@ -187,7 +187,7 @@ void AppendChar(XCHAR ch);
 ```
 #### <a name="parameters"></a>매개 변수
 
-*ch*  
+*ch*<br/>
 추가할 문자
 
 ### <a name="remarks"></a>설명
@@ -209,13 +209,13 @@ static void CopyChars(
 
 #### <a name="parameters"></a>매개 변수
 
-*pchDest*  
+*pchDest*<br/>
 문자열 포인터입니다.
 
-*pchSrc*  
+*pchSrc*<br/>
 복사할 문자를 포함 하는 문자열에 대 한 포인터입니다.
 
-*nChars*  
+*nChars*<br/>
 수가 *pchSrc* 복사 될 문자입니다.
 
 ### <a name="remarks"></a>설명
@@ -249,13 +249,13 @@ static void CopyCharsOverlapped(
 
 #### <a name="parameters"></a>매개 변수
 
-*pchDest*  
+*pchDest*<br/>
 문자열 포인터입니다.
 
-*pchSrc*  
+*pchSrc*<br/>
 복사할 문자를 포함 하는 문자열에 대 한 포인터입니다.
 
-*nChars*  
+*nChars*<br/>
 수가 *pchSrc* 복사 될 문자입니다.
 
 ### <a name="remarks"></a>설명
@@ -280,19 +280,19 @@ explicit CSimpleStringT(IAtlStringMgr* pStringMgr) throw();
 ```
 #### <a name="parameters"></a>매개 변수
 
-*strSrc*  
+*strSrc*<br/>
 기존 `CSimpleStringT` 에이 복사 될 개체 `CSimpleStringT` 개체입니다.
 
-*pchSrc*  
+*pchSrc*<br/>
 길이 문자 배열에 대 한 포인터 *nLength*, null 종료 되지 않습니다.
 
-*pszSrc*  
+*pszSrc*<br/>
 복사할이 null로 끝나는 문자열을 `CSimpleStringT` 개체입니다.
 
-*nLength*  
+*nLength*<br/>
 문자 수가 `pch`합니다.
 
-*pStringMgr*  
+*pStringMgr*<br/>
 메모리 관리자에 대 한 포인터를 `CSimpleStringT` 개체입니다. 에 대 한 자세한 내용은 `IAtlStringMgr` 및 메모리 관리에 대 한 `CSimpleStringT`를 참조 하십시오 [메모리 관리 및 CStringT](../memory-management-with-cstringt.md)합니다.
 
 ### <a name="remarks"></a>설명
@@ -419,7 +419,7 @@ XCHAR GetAt(int iChar) const;
 ```
 #### <a name="parameters"></a>매개 변수
 
-*iChar*  
+*iChar*<br/>
 문자의 0부터 시작 인덱스는 `CSimpleStringT` 개체입니다. 합니다 *iChar* 매개 변수 보다 큰 또는 0 및 반환 하는 값 미만 이어야 합니다. [GetLength](#getlength)합니다. 그렇지 않으면 `GetAt` 하면 예외가 발생 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -451,7 +451,7 @@ PXSTR GetBuffer();
 ```
 #### <a name="parameters"></a>매개 변수
 
-*nMinBufferLength*  
+*nMinBufferLength*<br/>
 문자 버퍼에서 보유할 수 있는 문자의 최소 수입니다. 이 값에 null 종결자를 위한 공간이 포함 되지 않습니다.
 
 하는 경우 *nMinBufferLength* 현재 버퍼의 길이 보다 크면 `GetBuffer` 현재 버퍼 제거, 요청된 된 크기의 버퍼를 사용 하 여 대체 및 개체 참조 횟수를 0으로 다시 설정 합니다. 이전에 호출한 경우 [LockBuffer](#lockbuffer) 이 버퍼에서 버퍼 잠금이 손실 합니다.
@@ -498,7 +498,7 @@ PXSTR GetBufferSetLength(int nLength);
 ```
 #### <a name="parameters"></a>매개 변수
 
-*nLength*  
+*nLength*<br/>
 정확한 크기를 `CSimpleStringT` 문자의 문자 버퍼입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -696,7 +696,7 @@ XCHAR operator[](int iChar) const;
 ```
 #### <a name="parameters"></a>매개 변수
 
-*iChar*  
+*iChar*<br/>
 문자열에서 문자의 0부터 시작 인덱스입니다.
 
 ### <a name="remarks"></a>설명
@@ -727,7 +727,7 @@ XCHAR operator[](int iChar) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*iChar*  
+*iChar*<br/>
 문자열에서 문자의 0부터 시작 인덱스입니다.
 
 ### <a name="remarks"></a>설명
@@ -755,13 +755,13 @@ CSimpleStringT& operator +=(wchar_t ch);
 ```
 #### <a name="parameters"></a>매개 변수
 
-*pszSrc*  
+*pszSrc*<br/>
 Null로 끝나는 문자열에 대 한 포인터입니다.
 
-*strSrc*  
+*strSrc*<br/>
 기존에 대 한 포인터 `CSimpleStringT` 개체입니다.
 
-*ch*  
+*ch*<br/>
 추가할 문자입니다.
 
 ### <a name="remarks"></a>설명
@@ -789,10 +789,10 @@ CSimpleStringT& operator =(const CSimpleStringT& strSrc);
 ```
 #### <a name="parameters"></a>매개 변수
 
-*pszSrc*  
+*pszSrc*<br/>
 Null로 끝나는 문자열에 대 한 포인터입니다.
 
-*strSrc*  
+*strSrc*<br/>
 기존에 대 한 포인터 `CSimpleStringT` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -894,7 +894,7 @@ void Preallocate( int nLength);
 ```
 #### <a name="parameters"></a>매개 변수
 
-*nLength*  
+*nLength*<br/>
 정확한 크기를 `CSimpleStringT` 문자의 문자 버퍼입니다.
 
 ### <a name="remarks"></a>설명
@@ -934,7 +934,7 @@ void ReleaseBuffer(int nNewLength = -1);
 ```
 #### <a name="parameters"></a>매개 변수
 
-*nNewLength*  
+*nNewLength*<br/>
 문자를 제외 하 고 null 종결자에 있는 문자열의 새 길이입니다. 기본값-1로 설정 하는 문자열이 null 인 경우 종료를 `CSimpleStringT` 크기 문자열의 현재 길이입니다.
 
 ### <a name="remarks"></a>설명
@@ -974,7 +974,7 @@ void ReleaseBufferSetLength(int nNewLength);
 ```
 #### <a name="parameters"></a>매개 변수
 
-*nNewLength*  
+*nNewLength*<br/>
 해제 하 고 문자열의 길이
 
 ### <a name="remarks"></a>설명
@@ -992,10 +992,10 @@ void SetAt(int iChar, XCHAR ch);
 ```
 #### <a name="parameters"></a>매개 변수
 
-*iChar*  
+*iChar*<br/>
 문자의 0부터 시작 인덱스는 `CSimpleStringT` 개체입니다. 합니다 *iChar* 매개 변수 보다 큰 또는 0 및 반환 하는 값 미만 이어야 합니다. [GetLength](#getlength)합니다.
 
-*ch*  
+*ch*<br/>
 새 문자입니다.
 
 ### <a name="remarks"></a>설명
@@ -1023,7 +1023,7 @@ void SetManager(IAtlStringMgr* pStringMgr);
 ```
 #### <a name="parameters"></a>매개 변수
 
-*pStringMgr*  
+*pStringMgr*<br/>
 새 메모리 관리자에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -1051,10 +1051,10 @@ void SetString(PCXSTR pszSrc);
 ```
 #### <a name="parameters"></a>매개 변수
 
-*pszSrc*  
+*pszSrc*<br/>
 Null로 끝나는 문자열에 대 한 포인터입니다.
 
-*nLength*  
+*nLength*<br/>
 문자 수가 *pszSrc*합니다.
 
 ### <a name="remarks"></a>설명
@@ -1091,7 +1091,7 @@ ATL_NOINLINE static int StringLength(PCXSTR psz) throw();
 ```
 #### <a name="parameters"></a>매개 변수
 
-*psz*  
+*psz*<br/>
 Null로 끝나는 문자열에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1121,7 +1121,7 @@ void Truncate(int nNewLength);
 ```
 #### <a name="parameters"></a>매개 변수
 
-*nNewLength*  
+*nNewLength*<br/>
 문자열의 새 길이입니다.
 
 ### <a name="remarks"></a>설명

@@ -10,17 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: Linux
 ms.topic: conceptual
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
-author: corob-msft
-ms.author: corob
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 82134d48853896ccb70c2620cd70c803fcc74bc8
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 20291e1f824704ee94cb45f14c16d6f0e4960348
+ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821051"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410839"
 ---
 # <a name="configure-a-linux-cmake-project"></a>Linux CMake 프로젝트 구성
 
@@ -30,7 +30,7 @@ Visual Studio에 대한 Linux C++ 워크로드를 설치하면 Linux용 CMake �
 이 항목에서는 Visual Studio의 CMake 지원에 대한 기본 지식이 있다고 가정합니다. 자세한 내용은 [Visual C++용 CMake 도구](../ide/cmake-tools-for-visual-cpp.md)를 참조하세요. CMake 자체에 대한 자세한 내용은 [CMake를 사용하여 소프트웨어 빌드, 테스트 및 패키지](https://cmake.org/)를 참조하세요.
 
 > [!NOTE]  
-> Visual Studio에서 CMake가 지원되려면 CMake 3.8에 도입된 서버 모드 지원이 필요합니다. Visual Studio의 [CMake 대상 보기](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) 창에서 지원하는 Microsoft 제공 CMake 변형은 [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases)에서 미리 작성된 최신 이진 파일을 다운로드합니다. 패키지 관리자가 CMake 3.8보다 이전 버전을 제공하는 경우 [소스에서 CMake를 빌드](#build-a-supported-cmake-release-from-source)하여 해결할 수 있습니다. 또는 표준 CMake를 사용하는 것이 좋습니다. 공식 [CMake 다운로드 페이지](https://cmake.org/download/)에서 다운로드할 수 있습니다. 
+> Visual Studio에서 CMake가 지원되려면 CMake 3.8에 도입된 서버 모드 지원이 필요합니다. Microsoft 제공 CMake 변형의 경우 [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases)에서 미리 빌드된 최신 바이너리를 다운로드합니다. 
 
 ## <a name="open-a-folder"></a>폴더 열기
 
@@ -118,49 +118,10 @@ Linux 대상을 지정하면 Linux 컴퓨터에 소스가 복사됩니다. 그�
 
 이러한 옵션을 사용하면 빌드하기 전후 및 CMake 생성하기 전에 원격 상자에서 명령을 실행할 수 있습니다. 원격 상자에서 유효한 명령일 수 있습니다. 출력은 Visual Studio로 다시 파이핑됩니다.
 
-## <a name="build-a-supported-cmake-release-from-source"></a>소스로 지원되는 CMake 릴리스 빌드
+## <a name="download-prebuilt-cmake-binaries"></a>미리 빌드된 CMake 바이너리 다운로드
 
-Linux 컴퓨터에 필요한 CMake의 최소 버전은 3.8이며, 서버 모드도 지원해야 합니다. 이를 확인하려면 이 명령을 실행합니다.
+Linux distro에 이전 버전의 CMake가 있을 수 있습니다. Visual Studio에서 CMake가 지원되려면 CMake 3.8에 도입된 서버 모드 지원이 필요합니다. Microsoft 제공 CMake 변형의 경우 [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases)에서 미리 빌드된 최신 바이너리를 다운로드합니다. 
 
-```cmd
-cmake --version
-```
-
-서버 모드가 활성화되었는지 확인하려면 다음을 실행합니다.
-
-```cmd
-cmake -E capabilities
-```
-
-출력에서 **"serverMode":true**를 찾습니다. 아래에 설명된 대로 소스로 CMake를 컴파일하는 경우에도 완료 후 기능을 확인해야 합니다. Linux 컴퓨터에 서버 모드가 활성화되지 못하게 하는 제한 사항이 있을 수 있습니다.
-
-Linux 시스템용 셸에서 소스로 CMake 빌드를 시작하려면 패키지 관리자가 최신 상태이고 사용 가능한 git 및 cmake가 있는지 확인해야 합니다.
-
-먼저 Visual Studio의 CMake 지원에 대한 포크를 관리하는 [Microsoft CMake 리포지토리](https://github.com/Microsoft/CMake) 에서 CMake 소스를 복제합니다.
-
-```cmd
-sudo apt-get update
-sudo apt-get install -y git cmake
-git clone https://github.com/Microsoft/CMake.git
-cd CMake
-```
-
-다음으로, CMake의 현재 릴리스를 빌드하고 /usr/local/bin에 설치하려면 다음 명령을 실행합니다.
-
-```cmd
-mkdir out
-cd out
-cmake ../
-make
-sudo make install
-```
-
-그런 다음, 이 명령을 실행하여 버전이 3.8 이상이고 서버 모드가 활성화되어 있는지 확인합니다.
-
-```cmd
-/usr/local/bin/cmake –version
-cmake -E capabilities
-```
 
 ## <a name="see-also"></a>참고 항목
 

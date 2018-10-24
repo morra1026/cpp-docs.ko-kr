@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1ab725391b03eeba35e230c3e0a5ebe0913fec2
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 18f6f49cbcb9fc95ecec73ee22f6830458c561db
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328352"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808539"
 ---
 # <a name="cpoint-class"></a>CPoint 클래스
 
@@ -99,19 +99,19 @@ CPoint(LPARAM dwPoint) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*initX*  
+*initX*<br/>
 `x`의 `CPoint` 멤버 값을 지정합니다.
 
-*initY*  
+*initY*<br/>
 `y`의 `CPoint` 멤버 값을 지정합니다.
 
-*initPt*  
+*initPt*<br/>
 [지점](../../mfc/reference/point-structure.md) 구조 나 `CPoint` 초기화 하는 데 사용 하는 값을 지정 하는 `CPoint`합니다.
 
-*initSize*  
+*initSize*<br/>
 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 나 [CSize](../../atl-mfc-shared/reference/csize-class.md) 초기화 하는 데 사용 하는 값을 지정 하는 `CPoint`합니다.
 
-*dwPoint*  
+*dwPoint*<br/>
 집합의 `x` 멤버의 하위 단어를 *dwPoint* 하며 `y` 멤버의 상위 단어를 *dwPoint*합니다.
 
 ### <a name="remarks"></a>설명
@@ -157,16 +157,16 @@ void Offset(SIZE size) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*사분면*  
+*사분면*<br/>
 오프셋할 크기를 지정 합니다 `x` 의 멤버는 `CPoint`합니다.
 
-*y 오프셋*  
+*y 오프셋*<br/>
 오프셋할 크기를 지정 합니다 `y` 의 멤버는 `CPoint`합니다.
 
-*지점*  
+*지점*<br/>
 크기를 지정 합니다 ( [지점](../../mfc/reference/point-structure.md) 또는 `CPoint`) 오프셋을 `CPoint`입니다.
 
-*size*  
+*size*<br/>
 크기를 지정 합니다 ( [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 또는 [CSize](../../atl-mfc-shared/reference/csize-class.md)) 오프셋을 `CPoint`입니다.
 
 ### <a name="example"></a>예제
@@ -183,7 +183,7 @@ BOOL operator==(POINT point) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*  
+*지점*<br/>
 포함 된 [지점](../../mfc/reference/point-structure.md) 구조 또는 `CPoint` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -204,7 +204,7 @@ BOOL operator!=(POINT point) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*  
+*지점*<br/>
 포함 된 [지점](../../mfc/reference/point-structure.md) 구조 또는 `CPoint` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -226,10 +226,10 @@ void operator+=(POINT point) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*size*  
+*size*<br/>
 포함 된 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 또는 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
 
-*지점*  
+*지점*<br/>
 포함 된 [지점](../../mfc/reference/point-structure.md) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -255,10 +255,10 @@ void operator-=(POINT point) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*size*  
+*size*<br/>
 포함 된 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 또는 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
 
-*지점*  
+*지점*<br/>
 포함 된 [지점](../../mfc/reference/point-structure.md) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -285,13 +285,13 @@ CRect operator+(const RECT* lpRect) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*size*  
+*size*<br/>
 포함 된 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 또는 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
 
-*지점*  
+*지점*<br/>
 포함 된 [지점](../../mfc/reference/point-structure.md) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
 
-*lpRect*  
+*lpRect*<br/>
 에 대 한 포인터를 포함 한 [RECT](../../mfc/reference/rect-structure.md) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -321,13 +321,13 @@ CPoint operator-() const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*  
+*지점*<br/>
 A [지점](../../mfc/reference/point-structure.md) 구조 나 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
 
-*size*  
+*size*<br/>
 A [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 나 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
 
-*lpRect*  
+*lpRect*<br/>
 에 대 한 포인터를 [RECT](../../mfc/reference/rect-structure.md) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체입니다.
 
 ### <a name="return-value"></a>반환 값

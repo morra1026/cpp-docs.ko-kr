@@ -1,43 +1,45 @@
 ---
-title: CMyProviderWindowsFile | Microsoft Docs
+title: CCustomWindowsFile | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/22/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
 f1_keywords:
 - cmyproviderwindowsfile
+- ccustomwindowsfile
 dev_langs:
 - C++
 helpviewer_keywords:
 - CMyProviderWindowsFile class
 - OLE DB providers, wizard-generated files
+- CCustomWindowsFile class
 ms.assetid: 0e9e72ac-1e1e-445f-a7ac-690c20031f9d
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6f3badc08da7bd11e65c244c42c91ad37a584ca5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a87f8cc4d6581c253225fa038d0c8972e71fcff1
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46087268"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808799"
 ---
-# <a name="cmyproviderwindowsfile"></a>CMyProviderWindowsFile
+# <a name="ccustomwindowsfile"></a>CCustomWindowsFile
 
-마법사는 데이터의 행을 하나씩 포함 하는 클래스를 만듭니다. 이 경우에 호출 됩니다 `CMyProviderWindowsFile`합니다. 다음 코드에 대 한 `CMyProviderWindowsFile` 마법사에서 생성 되 고 사용 하 여 디렉터리의 모든 파일을 나열 합니다 `WIN32_FIND_DATA` 구조입니다. `CMyProviderWindowsFile` 상속 되는 `WIN32_FIND_DATA` 구조:  
+마법사는 데이터의 행을 하나씩 포함 하는 클래스를 만듭니다. 이 경우에 호출 됩니다 `CCustomWindowsFile`합니다. 다음 코드에 대 한 `CCustomWindowsFile` 마법사에서 생성 되 고 사용 하 여 디렉터리의 모든 파일을 나열 합니다 `WIN32_FIND_DATA` 구조입니다. `CCustomWindowsFile` 상속 되는 `WIN32_FIND_DATA` 구조:  
   
 ```cpp
 /////////////////////////////////////////////////////////////////////  
-// MyProviderRS.H  
+// CustomRS.H  
   
-class CMyProviderWindowsFile:   
+class CCustomWindowsFile:   
    public WIN32_FIND_DATA  
 {  
 public:  
-BEGIN_PROVIDER_COLUMN_MAP(CMyProviderWindowsFile)  
+BEGIN_PROVIDER_COLUMN_MAP(CCustomWindowsFile)  
    PROVIDER_COLUMN_ENTRY("FileAttributes", 1, dwFileAttributes)  
    PROVIDER_COLUMN_ENTRY("FileSizeHigh", 2, nFileSizeHigh)  
    PROVIDER_COLUMN_ENTRY("FileSizeLow", 3, nFileSizeLow)  
@@ -47,13 +49,13 @@ END_PROVIDER_COLUMN_MAP()
 };  
 ```  
   
-`CMyProviderWindowsFile` 호출 되는 [사용자 레코드 클래스](../../data/oledb/user-record.md) 공급자의 행 집합의 열을 설명 하는 맵도 포함 하므로 합니다. 공급자 열 지도 PROVIDER_COLUMN_ENTRY 매크로 사용 하 여 행 집합의 각 필드에 대해 하나의 항목을 포함 합니다. 매크로 열 이름, 서 수 및 항목을 구조에 오프셋을 지정합니다. 위의 코드에서 공급자 열 항목에 오프셋을 포함 합니다 `WIN32_FIND_DATA` 구조입니다. 소비자가 호출 하는 경우 `IRowset::GetData`, 하나의 연속 된 버퍼에서 데이터를 전송 합니다. 포인터 산술 연산을 수행 하면 작업을 수행 하는 대신 지도 사용 하면 데이터 멤버를 지정할 수 있습니다.  
+`CCustomWindowsFile` 호출 되는 [사용자 레코드 클래스](../../data/oledb/user-record.md) 공급자의 행 집합의 열을 설명 하는 맵도 포함 하므로 합니다. 공급자 열 지도 PROVIDER_COLUMN_ENTRY 매크로 사용 하 여 행 집합의 각 필드에 대해 하나의 항목을 포함 합니다. 매크로 열 이름, 서 수 및 항목을 구조에 오프셋을 지정합니다. 위의 코드에서 공급자 열 항목에 오프셋을 포함 합니다 `WIN32_FIND_DATA` 구조입니다. 소비자가 호출 하는 경우 `IRowset::GetData`, 하나의 연속 된 버퍼에서 데이터를 전송 합니다. 포인터 산술 연산을 수행 하면 작업을 수행 하는 대신 지도 사용 하면 데이터 멤버를 지정할 수 있습니다.  
   
-`CMyProviderRowset` 클래스도 포함 된 `Execute` 메서드. `Execute` 네이티브 소스에서 데이터를 실제로 읽고 무엇 이며 다음 코드에서는 마법사에서 생성 된 `Execute` 메서드. 함수는 Win32를 사용 `FindFirstFile` 하 고 `FindNextFile` 디렉터리의 파일에 대 한 정보를 검색 한 인스턴스의에 배치 하는 Api는 `CMyProviderWindowsFile` 클래스입니다.  
+`CCustomRowset` 클래스도 포함 된 `Execute` 메서드. `Execute` 네이티브 소스에서 데이터를 실제로 읽고 무엇 이며 다음 코드에서는 마법사에서 생성 된 `Execute` 메서드. 함수는 Win32를 사용 `FindFirstFile` 하 고 `FindNextFile` 디렉터리의 파일에 대 한 정보를 검색 한 인스턴스의에 배치 하는 Api는 `CCustomWindowsFile` 클래스입니다.  
   
 ```cpp
 /////////////////////////////////////////////////////////////////////  
-// MyProviderRS.H  
+// CustomRS.H  
   
 HRESULT Execute(DBPARAMS * pParams, LONG* pcRowsAffected)  
 {  
@@ -62,7 +64,7 @@ HRESULT Execute(DBPARAMS * pParams, LONG* pcRowsAffected)
    HANDLE hFile;  
    LPTSTR  szDir = (m_strCommandText == _T("")) ? _T("*.*") :  
        OLE2T(m_strCommandText);  
-   CMyProviderWindowsFile wf;  
+   CCustomWindowsFile wf;  
    hFile = FindFirstFile(szDir, &wf);  
    if (hFile == INVALID_HANDLE_VALUE)  
       return DB_E_ERRORSINCOMMAND;  
