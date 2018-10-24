@@ -1,7 +1,7 @@
 ---
 title: C 관계 및 같음 연산자 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bf3c406059fe8744843e1353ad997acc19c499b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9251aeb93ec53c47ca9c7474785b5180c36a3887
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058239"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808955"
 ---
 # <a name="c-relational-and-equality-operators"></a>C 관계 및 같음 연산자
 
@@ -31,32 +31,28 @@ ms.locfileid: "46058239"
 
 **구문**
 
-*relational-expression*: *shift-expression*
+*relational-expression*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **&lt;** *shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **>** *shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **&lt;=** *shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **>=** *shift-expression*<br/>
 
-*relational-expression*  **\<**  *shift-expression*
-
-*relational-expression*  **>**  *shift-expression*
-
-*relational-expression*  **\<=**  *shift-expression*
-
-*relational-expression*  **>=**  *shift-expression*
-
-*equality-expression*: *relational-expression*
-
-*equality-expression*  **==**  *relational-expression*
-
-*equality-expression*  **!=**  *relational-expression*
+*equality-expression*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*equality-expression* **==** *relational-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*equality-expression* **!=** *relational-expression*
 
 관계형 연산자와 같음 연산자는 다음 관계를 테스트합니다.
 
 |연산자|테스트되는 관계|
 |--------------|-------------------------|
-|**\<**|첫 번째 피연산자가 두 번째 피연산자보다 작음|
+|**&lt;**|첫 번째 피연산자가 두 번째 피연산자보다 작음|
 |**>**|첫 번째 피연산자가 두 번째 피연산자보다 큼|
-|**\<=**|첫 번째 피연산자가 두 번째 피연산자보다 작거나 같음|
+|**&lt;=**|첫 번째 피연산자가 두 번째 피연산자보다 작거나 같음|
 |**>=**|첫 번째 피연산자가 두 번째 피연산자보다 크거나 같음|
-|`==`|첫 번째 피연산자가 두 번째 피연산자와 같음|
-|`!=`|첫 번째 피연산자가 두 번째 피연산자와 같지 않음|
+|**==**|첫 번째 피연산자가 두 번째 피연산자와 같음|
+|**!=**|첫 번째 피연산자가 두 번째 피연산자와 같지 않음|
 
 위 목록에 있는 처음 네 연산자의 우선 순위가 같음 연산자(`==` 및 `!=`)보다 높습니다. [C++ 연산자의 우선 순위와 결합성](../c-language/precedence-and-order-of-evaluation.md) 표에서 우선 순위 정보를 참조하세요.
 
@@ -64,7 +60,7 @@ ms.locfileid: "46058239"
 
 - 모든 관계형 연산자나 같음 연산자의 피연산자는 둘 다 동일한 형식에 대한 포인터일 수 있습니다. 같음(`==`) 및 같지 않음(`!=`) 연산자의 경우 비교의 결과는 두 개의 포인터가 동일한 메모리 위치를 가리키는지 여부를 나타냅니다. 다른 관계형 연산자(**\<**, **>**, **\<**= 및 **>**=)의 경우 비교의 결과는 가리킨 개체에 대한 두 메모리 주소의 상대적 위치를 나타냅니다. 관계형 연산자는 오프셋만 비교합니다.
 
-     포인터 비교는 같은 개체의 부분에 대해서만 정의됩니다. 포인터가 배열의 멤버를 참조하는 경우 비교는 해당 아래 첨자의 비교와 동일합니다. 첫 번째 배열 요소의 주소는 마지막 요소의 주소보다 "작습니다." 구조체의 경우 나중에 선언된 구조체 멤버에 대한 포인터는 구조체에서 이전에 선언된 멤버에 대한 포인터보다 "큽니다." 같은 공용 구조체의 멤버에 대한 포인터는 동일합니다.
+   포인터 비교는 같은 개체의 부분에 대해서만 정의됩니다. 포인터가 배열의 멤버를 참조하는 경우 비교는 해당 아래 첨자의 비교와 동일합니다. 첫 번째 배열 요소의 주소는 마지막 요소의 주소보다 "작습니다." 구조체의 경우 나중에 선언된 구조체 멤버에 대한 포인터는 구조체에서 이전에 선언된 멤버에 대한 포인터보다 "큽니다." 같은 공용 구조체의 멤버에 대한 포인터는 동일합니다.
 
 - 포인터 값을 상수 값 0과 비교하여 같은지(`==`) 또는 같지 않은지(`!=`)를 확인할 수 있습니다. 값이 0인 포인터를 "null" 포인터라고 합니다. 즉, 이러한 포인터는 유효한 메모리 위치를 가리키지 않습니다.
 
@@ -74,14 +70,14 @@ ms.locfileid: "46058239"
 
 아래 예제에서는 관계형 연산자와 같음 연산자를 보여 줍니다.
 
-```
+```C
 int x = 0, y = 0;
 if ( x < y )
 ```
 
 `x` 및 `y`가 같기 때문에 이 예제의 식은 0 값을 생성합니다.
 
-```
+```C
 char array[10];
 char *p;
 
@@ -91,7 +87,7 @@ for ( p = array; p < &array[10]; p++ )
 
 이 예제에서는 `array`의 각 요소를 null 문자 상수로 설정합니다.
 
-```
+```C
 enum color { red, white, green } col;
    .
    .

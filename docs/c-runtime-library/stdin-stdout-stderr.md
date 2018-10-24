@@ -1,7 +1,7 @@
 ---
 title: stdin, stdout, stderr | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/23/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: conceptual
@@ -23,20 +23,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a36d5fd60a19222e6f802e5a14037fb01ff865f5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 707811a9c05135cb46520dd72895d677cdc0a6e4
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46071980"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808708"
 ---
 # <a name="stdin-stdout-stderr"></a>stdin, stdout, stderr
 
 ## <a name="syntax"></a>구문
 
 ```
-
-      FILE *stdin; 
+FILE *stdin; 
 FILE *stdout; 
 FILE *stderr; 
 #include <stdio.h>
@@ -53,12 +52,12 @@ FILE *stderr;
 |포인터|스트림|
 |-------------|------------|
 |`stdin`|표준 입력|
-|**stdout**|표준 출력|
+|`stdout`|표준 출력|
 |`stderr`|표준 오류|
 
-이러한 포인터는 함수에 대한 인수로 사용할 수 있습니다. **getchar** 및 `putchar`와 같은 일부 함수는 자동으로 `stdin` 및 **stdout**을 사용합니다.
+이러한 포인터는 함수에 대한 인수로 사용할 수 있습니다. [getchar](../c-runtime-library/reference/getchar-getwchar.md) 및 [putchar](../c-runtime-library/reference/putchar-putwchar.md)와 같은 일부 함수는 자동으로 `stdin` 및 `stdout`을 사용합니다.
 
-이러한 포인터는 상수입니다. 여기에 새로운 값을 할당할 수 없습니다. `freopen` 함수는 스트림을 디스크 파일 또는 다른 장치로 리디렉션하는 데 사용할 수 있습니다. 운영 체제에서는 명령 수준에서 프로그램의 표준 입력 및 출력을 리디렉션할 수 있습니다.
+이러한 포인터는 상수입니다. 여기에 새로운 값을 할당할 수 없습니다. [freopen](../c-runtime-library/reference/freopen-wfreopen.md) 함수는 스트림을 디스크 파일 또는 다른 장치로 리디렉션하는 데 사용할 수 있습니다. 운영 체제에서는 명령 수준에서 프로그램의 표준 입력 및 출력을 리디렉션할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 
