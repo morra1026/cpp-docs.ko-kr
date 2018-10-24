@@ -1,7 +1,7 @@
 ---
 title: OLE DB 프로그래밍 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/22/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 32f3fc1b6a990a746c3dc87740c63fbe898f79d5
-ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
+ms.openlocfilehash: 2628756992298fa61bad070b72f66232d65bec5f
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410631"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990038"
 ---
 # <a name="ole-db-programming"></a>OLE DB 프로그래밍
 
@@ -32,7 +32,7 @@ OLE DB 템플릿은 일반적으로 사용되는 많은 OLE DB 인터페이스�
   
 또한 Visual C++에는 OLE DB 시작 응용 프로그램을 만드는 마법사도 제공됩니다.  
   
-뿐만 아니라 특성을 사용하여 OLE DB 소비자 템플릿을 구현할 수 있습니다.  
+또한 OLE DB 소비자 템플릿 구현에 특성을 사용할 수 있습니다.  
   
 |자세한 정보를 확인할 항목|참조|  
 |-------------------------|---------|  

@@ -1,5 +1,5 @@
 ---
-title: RMyProviderRowset의 상속 수정 | Microsoft Docs
+title: RCustomRowset의 상속 수정 | Microsoft 문서
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,28 +10,29 @@ dev_langs:
 helpviewer_keywords:
 - RMyProviderRowset
 - inheritance [C++]
+- RCustomRowset
 ms.assetid: 33089c90-98a4-43e7-8e67-d4bb137e267e
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 77b26d1d0b67726e1ba2cd66d0e181bc04105a6a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a6f4827ecf0571878bc0eeaef5dce74326488c61
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46028170"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990285"
 ---
-# <a name="modifying-the-inheritance-of-rmyproviderrowset"></a>RMyProviderRowset의 상속 수정
+# <a name="modifying-the-inheritance-of-rcustomrowset"></a>RCustomRowset의 상속 수정
 
-추가 하는 `IRowsetLocate` 단순한 읽기 전용 공급자 예제 인터페이스의 상속 수정, `RMyProviderRowset`합니다. 처음에 `RMyProviderRowset` 에서 상속 `CRowsetImpl`합니다. 상속 하도록 수정 해야 `CRowsetBaseImpl`합니다.  
+추가 하는 `IRowsetLocate` 단순한 읽기 전용 공급자 예제 인터페이스의 상속 수정, `RCustomRowset`합니다. 처음에 `RCustomRowset` 에서 상속 `CRowsetImpl`합니다. 상속 하도록 수정 해야 `CRowsetBaseImpl`합니다.  
   
-이렇게 하려면 새 클래스를 만듭니다 `CMyRowsetImpl`, MyProviderRS.h의:  
+이렇게 하려면 새 클래스를 만듭니다 `CMyRowsetImpl`의 *사용자 지정*RS.h:  
   
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
-// MyProviderRS.h  
+// CustomRS.h  
   
 template <class T, class Storage, class CreatorClass, class ArrayType = CAtlArray<Storage>>  
 class CMyRowsetImpl:  
@@ -41,7 +42,7 @@ class CMyRowsetImpl:
 };  
 ```  
   
-이제 다음과 같이 되도록 MyProviderRS.h의 COM 인터페이스 맵을 편집 합니다.  
+이제에서 COM 인터페이스 맵을 편집 *사용자 지정*RS.h 다음과 같이 되도록 합니다.  
   
 ```cpp  
 BEGIN_COM_MAP(CMyRowsetImpl)  
@@ -55,7 +56,7 @@ END_COM_MAP()
 마지막으로 연결 `RAgentRowset` 하 `CMyRowsetBaseImpl` 수정 하 여 `RAgentRowset` 상속할 `CMyRowsetImpl`같이:  
   
 ```cpp  
-class RAgentRowset : public CMyRowsetImpl<RAgentRowset, CAgentMan, CMyProviderCommand>  
+class RAgentRowset : public CMyRowsetImpl<RAgentRowset, CAgentMan, CCustomCommand>  
 ```  
   
 `RAgentRowset` 이제 사용할 수는 `IRowsetLocate` 행 집합 클래스 구현의 나머지 부분을 활용 하는 인터페이스입니다.  

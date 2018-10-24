@@ -1,7 +1,7 @@
 ---
 title: 공급자 용 프로젝트 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/22/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f4d776dbbfbab5e038e14c15a9c281c8edb09153
-ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
+ms.openlocfilehash: 86f85b95b4b45624a778bc183cabadda886d002d
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410878"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990089"
 ---
 # <a name="creating-a-project-for-the-provider"></a>공급자용 프로젝트 만들기
 
@@ -32,7 +32,10 @@ ms.locfileid: "49410878"
   
      **새 프로젝트** 대화 상자가 나타납니다.  
   
-1. 에 **프로젝트 형식** 창 클릭 합니다 **Visual c + + 프로젝트** 폴더입니다. 에 **템플릿을** 창 클릭 **ATL 프로젝트**합니다.  
+1. 에 **프로젝트 형식** 창 클릭 합니다 **설치 됨** > **Visual c + +** > **MFC/ATL** 폴더입니다. 에 **템플릿을** 창 클릭 **ATL 프로젝트**합니다.  
+
+    > [!NOTE]
+    > Visual Studio의 이전 버전에서에서 프로젝트 형식의 찾을 **설치 됨** > **템플릿** > **Visual c + +**  >  **ATL**합니다.
   
 1. 에 **이름을** 상자, 프로젝트의 이름을 입력 한 다음 클릭 **확인**합니다.  
   

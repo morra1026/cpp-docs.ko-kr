@@ -1,7 +1,7 @@
 ---
 title: _get_tzname | Microsoft 문서
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/22/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -34,12 +34,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4b49aa404dda6234382ae461459dece64e5996d
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: d773d5d98466963ef621cc3fa7bc5ab8b4acc40a
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451695"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990310"
 ---
 # <a name="gettzname"></a>_get_tzname
 
@@ -62,19 +62,27 @@ errno_t _get_tzname(
 문자열 길이 *표준 시간대 이름* null 종결자를 포함 합니다.
 
 *표준 시간대 이름*<br/>
-에 따라 표준 시간대 이름 또는 일광 표준시 영역 이름 (DST) 표현에 대 한 문자에 대 한 문자열의 주소 *인덱스*합니다.
+에 따라 표준 시간대 이름 또는 일광 표준 시간대 이름 (DST)의 표현에 대 한 문자에 대 한 문자열의 주소 *인덱스*합니다.
 
 *sizeInBytes*<br/>
-크기는 *표준 시간대 이름* 문자열 (바이트)에서입니다.
+크기를 *표준 시간대 이름* 바이트 문자열입니다.
 
 *index*<br/>
 검색할 두 표준 시간대 이름 중 하나의 인덱스입니다.
+
+|*index*|내용을 *표준 시간대 이름*|*표준 시간대 이름* 기본값|
+|-|-|-|
+|0|표준 시간대 이름|"PST"|
+|1|일광 표준 시간대 이름|"PDT"|
+|> 1 또는 < 0|**errno** 로 **EINVAL**|수정 안 됨|
+
+런타임에 값을 명시적으로 변경하는 경우가 아니면 기본값은 각각 "PST" 및 "PDT"입니다.
 
 ## <a name="return-value"></a>반환 값
 
 성공 하면 0이 고, 그렇지는 **errno** 값을 입력 합니다.
 
-어느 경우 *표준 시간대 이름* 은 **NULL**, 또는 *sizeInBytes* 가 0 이거나 0 (하나만), 보다 작은 잘못 된 매개 변수 처리기가 호출에 설명 된 대로 [ 매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 이 함수를 설정 하는 경우 실행을 계속 허용 된, **errno** 를 **EINVAL** 반환 **EINVAL**합니다.
+이면 *표준 시간대 이름* 됩니다 **NULL**, 또는 *sizeInBytes* 0 또는 0 (하지만 둘 다가 아닌) 보다 작으면는 잘못 된 매개 변수 처리기가 호출에 설명 된 대로 [ 매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우이 함수를 설정 합니다 **errno** 하 **EINVAL** 반환 **EINVAL**합니다.
 
 ### <a name="error-conditions"></a>오류 조건
 
@@ -82,27 +90,61 @@ errno_t _get_tzname(
 |--------------------|--------------------|-------------------|-------------|------------------|--------------------------------|
 |TZ 이름의 크기|**NULL**|0|0 또는 1|0|수정 안 됨|
 |TZ 이름의 크기|any|> 0|0 또는 1|0|TZ 이름|
-|수정 안 됨|**NULL**|> 0|모두|**EINVAL**|수정 안 됨|
-|수정 안 됨|모두|0|모두|**EINVAL**|수정 안 됨|
-|수정 안 됨|모두|> 0|> 1|**EINVAL**|수정 안 됨|
+|수정 안 됨|**NULL**|> 0|any|**EINVAL**|수정 안 됨|
+|수정 안 됨|any|0|any|**EINVAL**|수정 안 됨|
+|수정 안 됨|any|> 0|> 1|**EINVAL**|수정 안 됨|
 
 ## <a name="remarks"></a>설명
 
-**_get_tzname** 함수 검색의 주소에 표준 시간대 이름 또는 일광 절약 시간 표준 영역 이름 (DST)의 문자 문자열 표현을 *표준 시간대 이름* 인덱스에 따라 값에서 문자열의 크기와 함께 *pReturnValue*합니다. 경우 *표준 시간대 이름* 은 **NULL** 및 *sizeInBytes* 0 인 바이트의 영역에 반환 된 두 시간 문자열 크기 *pReturnValue*. 인덱스 값은 표준 시간대인 경우 0, 일광 표준 시간대인 경우 1입니다. 다른 모든 인덱스 값에는 결정되지 않은 결과가 포함됩니다.
+합니다 **_get_tzname** 함수는 문자열 표현을 현재 표준 시간대 이름 또는 일광 표준 시간대 이름 (DST)의 주소로 검색 *표준 시간대 이름* 따라는 인덱스 값에서 문자열의 크기와 함께 *pReturnValue*합니다. 하는 경우 *표준 시간대 이름* 됩니다 **NULL** 하 고 *sizeInBytes* 0으로 지정된 된 표준 시간대를 포함 하는 데 필요한 문자열의 크기 이며 에바이트에서종결null이반환*pReturnValue*합니다. 인덱스 값을 표준 시간대에 대해 0 또는 일광 표준 시간대는 1 이어야 합니다. 다른 모든 값 *인덱스* 가 지정 되지 않은 결과입니다.
 
-### <a name="index-values"></a>인덱스 값
+## <a name="example"></a>예제
 
-|*index*|내용을 *표준 시간대 이름*|*표준 시간대 이름* 기본값|
-|-------------|--------------------------------|----------------------------------|
-|0|표준 시간대 이름|"PST"|
-|1|일광 표준 시간대 이름|"PDT"|
-|> 1 또는 < 0|**errno** 로 설정 **EINVAL**|수정 안 됨|
+이 샘플에서는 호출 **_get_tzname** 필요한 버퍼 크기를 현재 일광 표준 시간대 이름에 표시할 호출 해당 크기의 버퍼를 할당 **_get_tzname** 다시 이름을 로드 하는 를 버퍼링 하 고 콘솔에 출력 합니다.
 
-런타임에 값을 명시적으로 변경하는 경우가 아니면 기본값은 각각 "PST" 및 "PDT"입니다.  이러한 문자 배열 크기에 따라 관리 됩니다 **TZNAME_MAX** 값입니다.
+```C
+// crt_get_tzname.c
+// Compile by using: cl /W4 crt_get_tzname.c
+#include <stdio.h>
+#include <time.h>
+#include <malloc.h>
+
+enum TZINDEX {
+    STD,
+    DST
+};
+
+int main()
+{
+    size_t tznameSize = 0;
+    char * tznameBuffer = NULL;
+
+    // Get the size of buffer required to hold DST time zone name
+    if (_get_tzname(&tznameSize, NULL, 0, DST))
+        return 1;    // Return an error value if it failed
+
+    // Allocate a buffer for the name
+    if (NULL == (tznameBuffer = (char *)(malloc(tznameSize))))
+        return 2;    // Return an error value if it failed
+
+    // Load the name in the buffer
+    if (_get_tzname(&tznameSize, tznameBuffer, tznameSize, DST))
+        return 3;    // Return an error value if it failed
+
+    printf_s("The current Daylight standard time zone name is %s.\n", tznameBuffer);
+    return 0;
+}
+```
+
+### <a name="output"></a>출력
+
+```Output
+The current Daylight standard time zone name is PDT.
+```
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_get_tzname**|\<time.h>|
 
@@ -115,4 +157,3 @@ errno_t _get_tzname(
 [_get_daylight](get-daylight.md)<br/>
 [_get_dstbias](get-dstbias.md)<br/>
 [_get_timezone](get-timezone.md)<br/>
-[TZNAME_MAX](../../c-runtime-library/tzname-max.md)<br/>

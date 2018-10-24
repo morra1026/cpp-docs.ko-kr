@@ -1,7 +1,7 @@
 ---
 title: CSocketAddr 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/22/2018
 ms.technology:
 - cpp-atl
 ms.topic: reference
@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c39ca72136db7c11e925f28cc3413a5f7b77002
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 705cbd051f7c5761ae9a2aabfe919519681ef089
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040858"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990219"
 ---
 # <a name="csocketaddr-class"></a>CSocketAddr 클래스
 
@@ -62,7 +62,7 @@ class CSocketAddr
 
 이 클래스는 Windows 사용에 대 한 네트워크 주소를 조회 하는 것에 대 한 알 수 없는 방식을 소켓 API 함수 및 소켓 래퍼 라이브러리에는 IP 버전을 제공 합니다.
 
-Win32 API 함수를 사용 하 여 네트워크 주소를 조회 하는 데 사용 되는이 클래스의 멤버 [getaddrinfo](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo)합니다.
+Win32 API 함수를 사용 하 여 네트워크 주소를 조회 하는 데 사용 되는이 클래스의 멤버 [getaddrinfo](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo)합니다. ANSI 또는 유니코드 버전의 함수는 ANSI 또는 유니코드에 대 한 코드가 컴파일 여부에 따라 호출 됩니다.
 
 이 클래스는 두 IPv4 andIPv6 네트워크 주소를 지원합니다.
 
@@ -88,15 +88,15 @@ CSocketAddr();
 
 ```
 int FindAddr(
-    const char *szHost,
-    const char *szPortOrServiceName,
+    const TCHAR *szHost,
+    const TCHAR *szPortOrServiceName,
     int flags,
     int addr_family,
     int sock_type,
     int ai_proto);
 
 int FindAddr(
-    const char *szHost,
+    const TCHAR *szHost,
     int nPortNo,
     int flags,
     int addr_family,
@@ -141,10 +141,10 @@ int FindAddr(
 
 ```
 int FindINET4Addr(
-    const char *szHost,
+    const TCHAR *szHost,
     int nPortNo,
-    int flags,
-    int sock_type,);
+    int flags = 0,
+    int sock_type = SOCK_STREAM);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -175,10 +175,10 @@ int FindINET4Addr(
 
 ```
 int FindINET6Addr(
-    const char *szHost,
+    const TCHAR *szHost,
     int nPortNo,
-    int flags,
-    int sock_type,);
+    int flags = 0,
+    int sock_type = SOCK_STREAM);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -208,7 +208,7 @@ int FindINET6Addr(
 특정 요소에 대 한 포인터를 반환 하려면이 메서드를 호출 합니다 `addrinfo` 목록입니다.
 
 ```
-addrinfo* const GetAddrInfoint nIndex = 0) const;
+addrinfo* const GetAddrInfo(int nIndex = 0) const;
 ```
 
 ### <a name="parameters"></a>매개 변수

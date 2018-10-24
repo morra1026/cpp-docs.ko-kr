@@ -1,7 +1,7 @@
 ---
 title: 마법사를 사용 하 여 OLE DB 소비자 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/22/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -15,16 +15,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2f9a301d6e8b2c26d5be7c4234550ba4af7eefd3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 76f16c10ff4342e32a6081e89581945c53ee607c
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097899"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990115"
 ---
 # <a name="creating-an-ole-db-consumer-using-a-wizard"></a>마법사를 사용하여 OLE DB 소비자 만들기
 
-이 절차에서는 OLE DB 템플릿 소비자 생성을 검색 하 고 데이터베이스 테이블에서 데이터를 표시 합니다. 콘솔 응용 프로그램의 주요 코드를 수정 하는 ATL 프로젝트 마법사 및 ATL OLE DB 소비자 마법사를 사용 하는 방법을 보여 줍니다.  
+이 절차에서는 사용 하는 방법을 보여 줍니다.는 **ATL 프로젝트 마법사** 및 **ATL OLE DB 소비자 마법사* OLE DB 템플릿 소비자를 생성 하 고 다음 콘솔 응용 프로그램의 주요 코드를 수정 하려면 검색 하 고 데이터베이스 테이블에서 데이터를 표시 합니다.  
   
 마지막으로 두 개의 섹션에는 OLE DB 소비자 마법사에서 생성 된 코드를 설명합니다.  
   
