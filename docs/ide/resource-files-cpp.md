@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9ba28a426c439454d8b0723f8d2997bbefa5759
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 101d58eeb61335939db507ff6addd0c4fa7917f0
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417230"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48861904"
 ---
 # <a name="resource-files-c"></a>리소스 파일(C++)
 
@@ -31,7 +31,7 @@ ms.locfileid: "46417230"
 
 |파일 이름|디렉터리 위치|솔루션 탐색기 위치|설명|
 |---------------|------------------------|--------------------------------|-----------------|
-|*Projname*.rc|*Projname*|소스 파일|프로젝트의 리소스 스크립트 파일입니다. 리소스 스크립트 파일에는 프로젝트의 형식에 따라 프로젝트에 대해 선택된 지원(예: 도구 모음, 대화 상자 또는 HTML) 및 다음이 포함되어 있습니다.<br /><br /> - 기본 메뉴 정의<br />- 가속기 및 문자열 테이블<br />- 기본 **정보** 대화 상자<br />- 기타 대화 상자<br />- 아이콘 파일(res\\*Projname*.ico)<br />- 버전 정보<br />- 비트맵<br />- 도구 모음<br />- HTML 파일<br /><br /> 리소스 파일에는 표준 Microsoft Foundation Class 리소스에 대한 Afxres.rc 파일이 포함됩니다.|
+|*Projname*.rc|*Projname*|소스 파일|프로젝트의 리소스 스크립트 파일입니다. 리소스 스크립트 파일에는 프로젝트의 형식에 따라 프로젝트에 대해 선택된 지원(예: 도구 모음, 대화 상자 또는 HTML) 및 다음이 포함되어 있습니다.<br /><br />- 기본 메뉴 정의<br />- 가속기 및 문자열 테이블<br />- 기본 **정보** 대화 상자<br />- 기타 대화 상자<br />- 아이콘 파일(res\\*Projname*.ico)<br />- 버전 정보<br />- 비트맵<br />- 도구 모음<br />- HTML 파일<br /><br /> 리소스 파일에는 표준 Microsoft Foundation Class 리소스에 대한 Afxres.rc 파일이 포함됩니다.|
 |Resource.h|*Projname*|Header Files|프로젝트에서 사용하는 리소스에 대한 정의를 포함하는 리소스 헤더 파일입니다.|
 |*Projname*.rc2|*Projname*\res|소스 파일|프로젝트에서 사용하는 추가 리소스를 포함하는 스크립트 파일입니다. 프로젝트의 .rc 파일 아래에 .rc2 파일을 포함할 수 있습니다.<br /><br /> .rc2 파일은 여러 가지 다른 프로젝트에서 사용하는 리소스를 포함하는 데 유용합니다. 다른 프로젝트에서 여러 번 동일한 리소스를 만드는 대신 .rc2 파일에 배치하고, .rc2 파일을 기본 .rc 파일에 포함할 수 있습니다.|
 |*Projname*.def|*Projname*|소스 파일|DLL 프로젝트의 모듈 정의 파일입니다. 컨트롤의 경우 런타임 힙의 크기뿐만 아니라 컨트롤의 이름 및 설명을 제공합니다.|

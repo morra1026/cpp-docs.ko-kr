@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3091437333d01db3fa556cb3c164e916c3628333
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 80c1f0d4ac5d843732771281202612e31a4073c2
+ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46057799"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48860890"
 ---
 # <a name="c-keywords"></a>C 키워드
 
@@ -48,15 +48,15 @@ Microsoft C 컴파일러에서 다음 키워드 및 특수 식별자가 인식�
 
 |||||
 |-|-|-|-|
-|**__asm**|**dllimport**2|**__int8**|**naked**2|
-|**__based**1|**__except**|**__int16**|**__stdcall**|
-|**__cdecl**|**__fastcall**|**__int32**|**thread**2|
+|**__asm**|**dllimport**<sup>2</sup>|**__int8**|**naked**<sup>2</sup>|
+|**__based**<sup>1</sup>|**__except**|**__int16**|**__stdcall**|
+|**__cdecl**|**__fastcall**|**__int32**|**thread**<sup>2</sup>|
 |**__declspec**|**__finally**|**__int64**|**__try**|
-|**dllexport**2|**__inline**|**__leave**||
+|**dllexport**<sup>2</sup>|**__inline**|**__leave**||
 
-1. **__based** 키워드의 경우 32 비트 및 64 비트 대상 컴파일에서 제한적으로 사용됩니다.
+<sup>1</sup> **__based**키워드의 경우 32비트 및 64비트 대상 컴파일에서 제한적으로 사용됩니다.
 
-2. 이들은 **__declspec**과 함께 사용되는 특수 식별자이며 다른 컨텍스트에서의 사용은 제한되지 않습니다.
+<sup>2</sup> 이들은 **__declspec**과 함께 사용되는 특수 식별자이며 다른 컨텍스트에서의 사용은 제한되지 않습니다.
 
 Microsoft 확장은 기본적으로 사용하도록 설정됩니다. 프로그램이 완전하게 이식 가능하도록 하려면, 컴파일하는 동안 /Za 옵션(ANSI 호환을 위한 컴파일)을 지정하여 Microsoft 확장을 사용하지 않도록 설정할 수 있습니다. 이렇게 하면 Microsoft 관련 키워드를 사용할 수 없습니다.
 

@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc82a45c181d4a2b56670af9cc0d6da055737b8d
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 40c74633be8556fc075f10e328521209761f385c
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45722321"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890714"
 ---
 # <a name="whats-new-for-visual-c-in-visual-studio-2017"></a>Visual Studio 2017의 Visual C++에 대한 새로운 기능
 
@@ -65,7 +65,7 @@ Visual Studio 2017에는 Visual C++ 환경에 대한 많은 업데이트와 수�
 
 **Visual Studio 2017 버전 15.5**:
 
-생성된 코드의 품질 향상으로 인해 Visual C++ 런타임 성능은 계속 개선되고 있습니다. 즉, 사용자 코드를 단순히 다시 컴파일하기만 하면 앱이 보다 빠르게 실행됩니다. 컴파일러 최적화 기능 중에는 조건부 스칼라 저장소의 벡터화, 호출 `sin(x)` 및 `cos(x)`를 새로운 `sincos(x)`로 결합, SSA 최적화 프로그램을 통한 중복 명령 제거와 같이 완전히 새로운 기능이 있습니다. 다른 컴파일러 최적화 기능으로는 조건식의 벡터화 도우미 추론, 더 나은 루프 최적화 및 부동 최소/최대 codegen과 같은 기존 기능에 대한 개선 사항이 있습니다. 링커에는 링크 시간 속도를 최대 9% 개선할 수 있는 새롭고 더욱 빠른 **/OPT:ICF** 구현이 있고, 증분 링크에는 다른 성능 개선 사항이 있습니다. 자세한 내용은 [/OPT(최적화)](https://docs.microsoft.com/en-us/cpp/build/reference/opt-optimizations) 및 [/INCREMENTAL(증분 링크)](https://docs.microsoft.com/en-us/cpp/build/reference/incremental-link-incrementally)을 참조하세요.
+생성된 코드의 품질 향상으로 인해 Visual C++ 런타임 성능은 계속 개선되고 있습니다. 즉, 사용자 코드를 단순히 다시 컴파일하기만 하면 앱이 보다 빠르게 실행됩니다. 컴파일러 최적화 기능 중에는 조건부 스칼라 저장소의 벡터화, 호출 `sin(x)` 및 `cos(x)`를 새로운 `sincos(x)`로 결합, SSA 최적화 프로그램을 통한 중복 명령 제거와 같이 완전히 새로운 기능이 있습니다. 다른 컴파일러 최적화 기능으로는 조건식의 벡터화 도우미 추론, 더 나은 루프 최적화 및 부동 최소/최대 codegen과 같은 기존 기능에 대한 개선 사항이 있습니다. 링커에는 링크 시간 속도를 최대 9% 개선할 수 있는 새롭고 더욱 빠른 **/OPT:ICF** 구현이 있고, 증분 링크에는 다른 성능 개선 사항이 있습니다. 자세한 내용은 [/OPT(최적화)](build/reference/opt-optimizations.md) 및 [/INCREMENTAL(증분 링크)](build/reference/incremental-link-incrementally.md)을 참조하세요.
 
 Visual C++는 AVX-512의 새로운 기능을 128비트 및 256비트 차원의 레지스터에 가져오는 벡터 길이 명령을 포함하는 Intel의 AVX-512를 지원합니다.
 
@@ -398,7 +398,7 @@ C++는 유니버설 Windows 앱 워크로드에 대한 선택적 구성 요소�
 
 이제 새 코드를 작성할 때 헤더 파일에서만 구현되는 Windows 런타임용 표준 C++ 언어 프로젝션인 C++/WinRT를 사용할 수 있습니다. C++/WinRT를 사용하면 모든 표준 규격 C++ 컴파일러를 통해 Windows 런타임 API를 작성하고 사용할 수 있습니다. C++/WinRT는 C++ 개발자에게 최신 Windows API에 대한 최고 수준의 액세스를 제공하도록 설계되었습니다. 자세한 내용은 [C++/WinRT Available on GitHub](https://moderncpp.com/)(GitHub에서 C++/WinRT를 사용할 수 있음)를 참조하세요.
 
-[Windows SDK Insider Preview의 빌드 17025](https://blogs.windows.com/buildingapps/2017/11/01/windows-10-sdk-preview-build-17025/#ryPH3zAy6yk2cIRX.97)부터 C++/WinRT가 Windows SDK에 포함됩니다. 자세한 내용은 [Windows SDK에 이제 C++/WinRT가 포함됨(영문)](https://blogs.msdn.microsoft.com/vcblog/2017/11/01/cppwinrt-is-now-included-the-windows-sdk/)을 참조하세요.
+Windows SDK Insider Preview의 빌드 17025부터 C++/WinRT가 Windows SDK에 포함됩니다. 자세한 내용은 [Windows SDK에 이제 C++/WinRT가 포함됨(영문)](https://blogs.msdn.microsoft.com/vcblog/2017/11/01/cppwinrt-is-now-included-the-windows-sdk/)을 참조하세요.
 
 ## <a name="clangc2-platform-toolset"></a>Clang/C2 플랫폼 도구 집합
 
@@ -439,7 +439,7 @@ C++는 유니버설 Windows 앱 워크로드에 대한 선택적 구성 요소�
 
 **Visual Studio 2017 버전 15.7**:
 
-[CodeLens](https://docs.microsoft.com/en-us/visualstudio/ide/find-code-changes-and-other-history-with-codelens) C++ 단위 테스트 프로젝트에 대한 지원이 추가되었습니다. 자세한 내용은 [C++ 단위 테스트 프로젝트에 대한 CodeLens 알림](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/announcing-codelens-for-c-unit-testing/)을 참조하세요.
+[CodeLens](/visualstudio/ide/find-code-changes-and-other-history-with-codelens) C++ 단위 테스트 프로젝트에 대한 지원이 추가되었습니다. 자세한 내용은 [C++ 단위 테스트 프로젝트에 대한 CodeLens 알림](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/announcing-codelens-for-c-unit-testing/)을 참조하세요.
 
 ## <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 그래픽 진단
 
