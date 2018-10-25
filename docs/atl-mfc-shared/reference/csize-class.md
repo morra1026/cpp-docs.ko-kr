@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9966bcdf31df3b6d3f702ec425131c5b8baa3aee
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 6d9927712077f7d0d57d9ece5ae72489be291866
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808500"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055231"
 ---
 # <a name="csize-class"></a>CSize 클래스
 
@@ -35,7 +35,7 @@ ms.locfileid: "49808500"
 ## <a name="syntax"></a>구문
 
 ```
-class CSize : public tagSIZE 
+class CSize : public tagSIZE
 ```
 
 ## <a name="members"></a>멤버
@@ -64,7 +64,7 @@ class CSize : public tagSIZE
 `cx` 하 고 `cy` 멤버인 `SIZE` (및 `CSize`)는 공용입니다. 또한 `CSize` 조작 하는 멤버 함수를 구현 하는 `SIZE` 구조입니다.
 
 > [!NOTE]
->  공유 유틸리티 클래스에 대 한 자세한 (같은 `CSize`)를 참조 하세요 [공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)합니다.
+> 공유 유틸리티 클래스에 대 한 자세한 (같은 `CSize`)를 참조 하세요 [공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -85,7 +85,7 @@ CSize() throw();
 CSize( int initCX, int initCY) throw();
 CSize( SIZE initSize) throw();
 CSize( POINT initPt) throw();
-CSize( DWORD dwSize) throw(); 
+CSize( DWORD dwSize) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -117,8 +117,8 @@ DWORD 초기화 하는 데 `CSize`합니다. 하위 단어를 `cx` 멤버 이며
 
 두 크기가 같은지 확인 합니다.
 
-``` 
-BOOL operator==(SIZE size) const throw(); 
+```
+BOOL operator==(SIZE size) const throw();
 ```
 
 ### <a name="remarks"></a>설명
@@ -133,8 +133,8 @@ BOOL operator==(SIZE size) const throw();
 
 두 크기가 같지 확인 합니다.
 
-``` 
-BOOL operator!=(SIZE size) const throw(); 
+```
+BOOL operator!=(SIZE size) const throw();
 ```
 
 ### <a name="remarks"></a>설명
@@ -149,8 +149,8 @@ BOOL operator!=(SIZE size) const throw();
 
 이 크기를 추가 `CSize`합니다.
 
-``` 
-void operator+=(SIZE size) throw(); 
+```
+void operator+=(SIZE size) throw();
 ```
 
 ### <a name="example"></a>예제
@@ -161,8 +161,8 @@ void operator+=(SIZE size) throw();
 
 이 크기를 뺍니다 `CSize`합니다.
 
-``` 
-void operator-=(SIZE size) throw(); 
+```
+void operator-=(SIZE size) throw();
 ```
 
 ### <a name="example"></a>예제
@@ -173,10 +173,10 @@ void operator-=(SIZE size) throw();
 
 이러한 연산자는이 추가 `CSize` 매개 변수의 값입니다.
 
-``` 
+```
 CSize operator+(SIZE size) const throw();
 CPoint operator+(POINT point) const throw();
-CRect operator+(const RECT* lpRect) const throw(); 
+CRect operator+(const RECT* lpRect) const throw();
 ```
 
 ### <a name="remarks"></a>설명
@@ -197,11 +197,11 @@ CRect operator+(const RECT* lpRect) const throw();
 
 이러한 연산자의 처음 3 개를 뺄이 `CSize` 매개 변수의 값입니다.
 
-``` 
+```
 CSize operator-(SIZE size) const throw();
 CPoint operator-(POINT point) const throw();
 CRect operator-(const RECT* lpRect) const throw();
-CSize operator-() const throw(); 
+CSize operator-() const throw();
 ```
 
 ### <a name="remarks"></a>설명

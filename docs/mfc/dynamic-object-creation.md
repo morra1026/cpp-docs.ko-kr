@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19f6a895eb48b3ae1816edc45747c865e7e03b96
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c1b8cca1453ef4a044a39853e615c5d0e6c3268f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420155"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50051891"
 ---
 # <a name="dynamic-object-creation"></a>동적 개체 만들기
 
@@ -32,7 +32,7 @@ ms.locfileid: "46420155"
 
 1. 동적으로 사용 하 여 개체를 만드는 다음 코드를 사용 합니다 `CreateObject` 함수는 `CRuntimeClass`합니다. 실패 시 유의 `CreateObject` 반환 **NULL** 예외를 발생 시키는 대신:
 
-     [!code-cpp[NVC_MFCCObjectSample#6](../mfc/codesnippet/cpp/dynamic-object-creation_1.cpp)]
+   [!code-cpp[NVC_MFCCObjectSample#6](../mfc/codesnippet/cpp/dynamic-object-creation_1.cpp)]
 
 ## <a name="see-also"></a>참고 항목
 

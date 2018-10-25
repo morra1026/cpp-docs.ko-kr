@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 1d3f8dc2251dbfbcd8155b0edc512a9dc40bacc2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 71e42f7d7a60478ec9344a44e8e86463e5845500
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393401"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50061575"
 ---
 # <a name="how-to-call-properties-and-methods-of-the-windows-forms-control"></a>방법: Windows Forms 컨트롤의 속성 및 메서드 호출
 
@@ -39,11 +39,11 @@ ms.locfileid: "46393401"
 
 1. 공용 재정의 섹션에 다음 줄을 추가 합니다 `CMFC02View` 클래스 MFC02View.h에서 선언 합니다.
 
-     `gcroot<WindowsFormsControlLibrary1::UserControl1 ^> m_ViewControl;`
+   `gcroot<WindowsFormsControlLibrary1::UserControl1 ^> m_ViewControl;`
 
 1. OnInitialupdate에 대 한 재정의 추가 합니다.
 
-     표시 된 **속성** 창 (F4). **클래스 뷰** (CTRL + SHIFT + C) CMFC02View 클래스를 선택 합니다. 에 **속성** 창, 재정의 대 한 아이콘을 선택 합니다. OnInitialUpdate 목록 아래로 Scoll 합니다. 드롭다운 목록 및 선택 목록에서 클릭 \<추가 >. MFC02View.cpp에서. OnInitialUpdate 함수 본문은 다음과 같이 해야 합니다.
+   표시 된 **속성** 창 (F4). **클래스 뷰** (CTRL + SHIFT + C) CMFC02View 클래스를 선택 합니다. 에 **속성** 창, 재정의 대 한 아이콘을 선택 합니다. OnInitialUpdate 목록 아래로 Scoll 합니다. 드롭다운 목록 및 선택 목록에서 클릭 \<추가 >. MFC02View.cpp에서. OnInitialUpdate 함수 본문은 다음과 같이 해야 합니다.
 
     ```
     CWinFormsView::OnInitialUpdate();
@@ -53,11 +53,11 @@ ms.locfileid: "46393401"
 
 1. 프로젝트를 빌드하고 실행합니다.
 
-     **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
+   **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
 
-     에 **디버그** 메뉴에서 클릭 **디버깅 하지 않고 시작**합니다.
+   에 **디버그** 메뉴에서 클릭 **디버깅 하지 않고 시작**합니다.
 
-     텍스트 상자 초기화를 확인 합니다.
+   텍스트 상자 초기화를 확인 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

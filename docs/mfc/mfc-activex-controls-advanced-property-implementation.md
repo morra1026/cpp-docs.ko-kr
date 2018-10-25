@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4aa1116384ac9fd5212046f9a0b3354a3aa70d88
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f18d9466c1608742f63e68caa639c1ad6697df1c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416086"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063655"
 ---
 # <a name="mfc-activex-controls-advanced-property-implementation"></a>MFC ActiveX 컨트롤: 고급 속성 구현
 
@@ -48,7 +48,7 @@ ms.locfileid: "46416086"
 
 1. 바로 가기 메뉴에서 클릭 **추가** 을 클릭 한 다음 **속성 추가**합니다.
 
-     열립니다는 [속성 추가 마법사](../ide/names-add-property-wizard.md)합니다.
+   열립니다는 [속성 추가 마법사](../ide/names-add-property-wizard.md)합니다.
 
 1. 에 **속성 이름이** 상자 속성의 이름을 입력 합니다.
 

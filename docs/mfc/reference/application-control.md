@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b20b5ea002ac16feb99707610fbe4556bf3254f7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3b06302d330ec8677a3de9b3ccaebf0b7b237b0e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375996"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053893"
 ---
 # <a name="application-control"></a>응용 프로그램 컨트롤
 
@@ -41,7 +41,6 @@ OLE 응용 프로그램 및 해당 개체를 통해 상당한 컨트롤에 필�
 |[AfxOleUnlockControl](#afxoleunlockcontrol)| 지정된 된 컨트롤의 클래스 팩터리를 잠금 해제합니다. |
 |[AfxOleRegisterServerClass](#afxoleregisterserverclass)|OLE 시스템 레지스트리에 서버를 등록합니다.|
 |[AfxOleSetEditMenu](#afxoleseteditmenu)|에 대 한 사용자 인터페이스를 구현 합니다 *typename* 명령 개체입니다.|
-
 
 ##  <a name="afxolecanexitapp"></a>  AfxOleCanExitApp
 
@@ -192,6 +191,7 @@ void AFXAPI AfxOleUnlockApp();
 BOOL AFXAPI AfxOleLockControl(  REFCLSID clsid  );
 BOOL AFXAPI AfxOleLockControl( LPCTSTR lpszProgID );
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *clsid*<br/>
@@ -206,7 +206,7 @@ BOOL AFXAPI AfxOleLockControl( LPCTSTR lpszProgID );
 
 ### <a name="remarks"></a>설명
 
-이렇게 하면 컨트롤 표시 속도가 상당히 빨라질 수 있습니다. 예를 들어 대화 상자에서 컨트롤을 만들고 이 컨트롤을 `AfxOleLockControl`로 잠글 경우에는 대화 상자를 표시 또는 삭제할 때마다 대화 상자를 만들고 종료할 필요가 없습니다. 사용자가 대화 상자를 반복해서 열고 닫는 경우, 컨트롤을 잠그면 성능이 크게 향상될 수 있습니다. 컨트롤을 삭제할 준비가 되면 `AfxOleUnlockControl`을 호출합니다.
+이렇게 하면 컨트롤 표시 속도가 상당히 빨라질 수 있습니다. 예를 들어 대화 상자에서 컨트롤을 만들고 이 컨트롤을 `AfxOleLockControl`로 잠글 경우에는 대화 상자를 표시 또는 삭제할 때마다 대화 상자를 만들고 종료할 필요가 없습니다. 사용자가 대화 상자를 반복해서 열고 닫는 경우, 컨트롤을 잠그면 성능이 크게 향상될 수 있습니다. 컨트롤을 제거할 준비가 되면 `AfxOleUnlockControl`을 호출합니다.
 
 ### <a name="example"></a>예제
 
@@ -357,6 +357,7 @@ void AFXAPI AfxOleSetEditMenu(
 BOOL AFXAPI AfxOleUnlockControl( REFCLSID clsid );
 BOOL AFXAPI AfxOleUnlockControl( LPCTSTR lpszProgID );
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *clsid*<br/>
@@ -371,7 +372,7 @@ BOOL AFXAPI AfxOleUnlockControl( LPCTSTR lpszProgID );
 
 ### <a name="remarks"></a>설명
 
-컨트롤을 사용 하 여 잠겨 `AfxOleLockControl`컨트롤과 연결 된 동적으로 생성된 된 데이터는 메모리에 남아 있도록 합니다. 크게 컨트롤을 만들고 제거 될 때마다 표시 되는 수 해야 하기 때문에 컨트롤의 표시 속도 높일 수이 있습니다. 컨트롤을 삭제할 준비가 되면 `AfxOleUnlockControl`을 호출합니다.
+컨트롤을 사용 하 여 잠겨 `AfxOleLockControl`컨트롤과 연결 된 동적으로 생성된 된 데이터는 메모리에 남아 있도록 합니다. 크게 컨트롤을 만들고 제거 될 때마다 표시 되는 수 해야 하기 때문에 컨트롤의 표시 속도 높일 수이 있습니다. 컨트롤을 제거할 준비가 되면 `AfxOleUnlockControl`을 호출합니다.
 
 ### <a name="example"></a>예제
 

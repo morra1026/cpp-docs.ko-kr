@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49ea94258c163c241243934f41d55d896d0d1fa2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 74660dc2baeff683d35fac8d4b9dda06bdbec22d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46372459"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50061315"
 ---
 # <a name="using-the-carchive-ltlt-and-gtgt-operators"></a>CArchive를 사용 하 여 &lt; &lt; 하 고 &gt; &gt; 연산자
 
@@ -33,13 +33,13 @@ ms.locfileid: "46372459"
 
 1. 다음 예제에서는 보관을 통해 파일에 개체를 저장 하는 방법을 보여 줍니다.
 
-     [!code-cpp[NVC_MFCSerialization#7](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_1.cpp)]
+   [!code-cpp[NVC_MFCSerialization#7](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_1.cpp)]
 
 #### <a name="to-load-an-object-from-a-value-previously-stored-in-a-file"></a>파일에서 이전에 저장 된 값에서 개체를 로드 하려면
 
 1. 다음 예제에서는 이전에 파일에 저장 된 값에서 개체를 로드 하는 방법을 보여 줍니다.
 
-     [!code-cpp[NVC_MFCSerialization#8](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_2.cpp)]
+   [!code-cpp[NVC_MFCSerialization#8](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_2.cpp)]
 
 저장 하 고에서 보관을 통해 파일에서 데이터를 로드 하는 일반적으로 `Serialize` 함수의 `CObject`-파생 클래스에 DECLARE_SERIALIZE 매크로 사용 하 여 선언 해야 합니다. 에 대 한 참조를 `CArchive` 개체를 전달 하 여 `Serialize` 함수입니다. 호출 하는 `IsLoading` 함수는 `CArchive` 결정 하는 개체 있는지 여부를 `Serialize` 파일에서 데이터를 로드 하거나 파일로 데이터를 저장 기능을 호출 했습니다.
 

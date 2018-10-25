@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 708825ddda9becc51d9009d0d6a03a22c48f8007
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cad3d8456d219918179b31acfb3c32818e445534
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46432479"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062777"
 ---
 # <a name="unicode-and-multibyte-character-set-mbcs-support"></a>유니코드 및 MBCS(멀티바이트 문자 집합) 지원
 
@@ -106,4 +106,4 @@ Dbcs에서 지정 된 문자열은 싱글바이트 ANSI 문자만, 모든 더블
 ## <a name="see-also"></a>참고 항목
 
 [문자열 (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
-[문자열 조작](../c-runtime-library/string-manipulation-crt.md)  
+[문자열 조작](../c-runtime-library/string-manipulation-crt.md)

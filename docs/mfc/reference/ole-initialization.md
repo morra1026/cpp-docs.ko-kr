@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65d02bdd5f00e5ffc5d64381b04da38ec0d57d15
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: df0187364a44c84a2d0f7f38e968e0ea17df1fb2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890104"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50064162"
 ---
 # <a name="ole-initialization"></a>OLE 초기화
 
@@ -34,7 +34,6 @@ ms.locfileid: "48890104"
 |-|-|
 |[AfxOleInit](#afxoleinit)|OLE 라이브러리를 초기화합니다.|
 |[AfxEnableControlContainer](#afxenablecontrolcontainer)|응용 프로그램 개체에서이 함수를 호출 `InitInstance` 함수 OLE 컨트롤의 포함에 대 한 지원을 사용 하도록 설정 합니다.|
-
 
 ## <a name="afxenablecontrolcontainer"></a> AfxEnableControlContainer
 
@@ -53,7 +52,6 @@ OLE 컨트롤 (이제 ActiveX 컨트롤 이라고 함)에 대 한 자세한 내�
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afxdisp.h
-
 
 ##  <a name="afxoleinit"></a>  AfxOleInit
 

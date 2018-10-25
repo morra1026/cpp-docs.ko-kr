@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 5867f9524d897657641ab9db392d77585117a465
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 86a820e54e63c21c3ec4b9ace538bd6bfb4e9c0a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234994"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052867"
 ---
 # <a name="hosting-a-windows-form-user-control-as-an-mfc-dialog-box"></a>Windows Form 사용자 정의 컨트롤을 MFC 대화 상자로 호스팅
 
@@ -36,35 +36,35 @@ MFC를 사용 하는 Windows Forms을 보여 주는 샘플 응용 프로그램�
 
 1. MFC 응용 프로그램 프로젝트를 만듭니다.
 
-     에 **파일** 메뉴에서 **새로 만들기**를 클릭 하 고 **프로젝트**합니다. 에 **Visual c + +** 폴더 선택 **MFC 응용 프로그램**합니다.
+   에 **파일** 메뉴에서 **새로 만들기**를 클릭 하 고 **프로젝트**합니다. 에 **Visual c + +** 폴더 선택 **MFC 응용 프로그램**합니다.
 
-     에 **이름** 상자에 입력 합니다 `MFC03` 솔루션 설정을 변경 하 고 **솔루션을 추가할**합니다. 클릭 **확인**합니다.
+   에 **이름** 상자에 입력 합니다 `MFC03` 솔루션 설정을 변경 하 고 **솔루션을 추가할**합니다. 클릭 **확인**합니다.
 
-     에 **MFC 응용 프로그램 마법사**에서 모든 기본값을 적용 하 고 클릭 **마침**합니다. 이 다중 문서 인터페이스를 사용 하 여 MFC 응용 프로그램을 만듭니다.
+   에 **MFC 응용 프로그램 마법사**에서 모든 기본값을 적용 하 고 클릭 **마침**합니다. 이 다중 문서 인터페이스를 사용 하 여 MFC 응용 프로그램을 만듭니다.
 
 1. 프로젝트를 구성 합니다.
 
-     **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 합니다 **MFC03** 프로젝트 노드를 선택한 **속성**합니다. 합니다 **속성 페이지** 대화 상자가 나타납니다.
+   **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 합니다 **MFC03** 프로젝트 노드를 선택한 **속성**합니다. 합니다 **속성 페이지** 대화 상자가 나타납니다.
 
-     에 **속성 페이지** 대화 상자의 합니다 **구성 속성** 트리 컨트롤 **일반**, 그런 다음를 **프로젝트 기본값**으로 설정 **공용 언어 런타임 지원** 하 **공용 언어 런타임 지원 (/ clr)** 합니다. **확인**을 클릭합니다.
+   에 **속성 페이지** 대화 상자의 합니다 **구성 속성** 트리 컨트롤 **일반**, 그런 다음를 **프로젝트 기본값**으로 설정 **공용 언어 런타임 지원** 하 **공용 언어 런타임 지원 (/ clr)** 합니다. **확인**을 클릭합니다.
 
 1. .NET 컨트롤에 대 한 참조를 추가 합니다.
 
-     **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 합니다 **MFC03** 선택한 프로젝트 노드 **추가**를 **참조**합니다. 에 **속성 페이지**, 클릭 **새 참조 추가**, WindowsControlLibrary1을 선택 (아래는 **프로젝트** 탭), 클릭 **확인**합니다. 형식의 대 한 참조를 추가 [/FU](../build/reference/fu-name-forced-hash-using-file.md) 컴파일러 옵션은 프로그램을 컴파일되지; WindowsControlLibrary1.dll에 복사 합니다 `MFC03` 프로그램이 실행 되는 프로젝트 디렉터리.
+   **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 합니다 **MFC03** 선택한 프로젝트 노드 **추가**를 **참조**합니다. 에 **속성 페이지**, 클릭 **새 참조 추가**, WindowsControlLibrary1을 선택 (아래는 **프로젝트** 탭), 클릭 **확인**합니다. 형식의 대 한 참조를 추가 [/FU](../build/reference/fu-name-forced-hash-using-file.md) 컴파일러 옵션은 프로그램을 컴파일되지; WindowsControlLibrary1.dll에 복사 합니다 `MFC03` 프로그램이 실행 되는 프로젝트 디렉터리.
 
 1. 추가 `#include <afxwinforms.h>` stdafx.h에서 기존 끝 `#include` 문입니다.
 
 1. 새 클래스를 서브클래싱하는 추가 `CDialog`합니다.
 
-     프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 서브클래싱하는 CHostForWinForm 이라는 MFC 클래스 추가 `CDialog`합니다. 대화 상자 리소스 않아도 되므로 리소스 ID를 삭제할 수 있습니다 (선택 **리소스 뷰**를 확장 합니다 **대화 상자** 폴더 및 delete `IDD_HOSTFORWINFORM` 리소스입니다.  그런 다음 ID에 대 한 참조에서에서 제거 코드 합니다.).
+   프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 서브클래싱하는 CHostForWinForm 이라는 MFC 클래스 추가 `CDialog`합니다. 대화 상자 리소스 않아도 되므로 리소스 ID를 삭제할 수 있습니다 (선택 **리소스 뷰**를 확장 합니다 **대화 상자** 폴더 및 delete `IDD_HOSTFORWINFORM` 리소스입니다.  그런 다음 ID에 대 한 참조에서에서 제거 코드 합니다.).
 
 1. 바꿉니다 `CDialog` CHostForWinForm.h 및 CHostForWinForm.cpp 파일에서 `CWinFormsDialog<WindowsControlLibrary1::UserControl1>`합니다.
 
 1. CHostForWinForm 클래스에서 DoModal을 호출 합니다.
 
-     MFC03.cpp에 추가 `#include "HostForWinForm.h"`합니다.
+   MFC03.cpp에 추가 `#include "HostForWinForm.h"`합니다.
 
-     CMFC03App::InitInstance의 정의에서 return 문의 하기 전에 다음을 추가 합니다.
+   CMFC03App::InitInstance의 정의에서 return 문의 하기 전에 다음을 추가 합니다.
 
     ```cpp
     CHostForWinForm m_HostForWinForm;
@@ -73,15 +73,15 @@ MFC를 사용 하는 Windows Forms을 보여 주는 샘플 응용 프로그램�
 
 1. 프로젝트를 빌드하고 실행합니다.
 
-     **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
+   **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
 
-     에 **디버그** 메뉴에서 클릭 **디버깅 하지 않고 시작**합니다.
+   에 **디버그** 메뉴에서 클릭 **디버깅 하지 않고 시작**합니다.
 
-     그런 다음 MFC 응용 프로그램에서 Windows Forms에서 컨트롤의 상태를 모니터링 하는 코드를 추가 합니다.
+   그런 다음 MFC 응용 프로그램에서 Windows Forms에서 컨트롤의 상태를 모니터링 하는 코드를 추가 합니다.
 
 9. OnInitDialog에 대 한 처리기를 추가 합니다.
 
-     표시 된 **속성** 창 (F4). **클래스 뷰**에서 CHostForWinForm을 선택 합니다. 에 **속성** 창에서 선택 재정의 OnInitDialog에 대 한 행의 왼쪽 열에서 클릭 및 선택 \< 추가 >. 그러면 CHostForWinForm.h에 다음 줄 추가:
+   표시 된 **속성** 창 (F4). **클래스 뷰**에서 CHostForWinForm을 선택 합니다. 에 **속성** 창에서 선택 재정의 OnInitDialog에 대 한 행의 왼쪽 열에서 클릭 및 선택 \< 추가 >. 그러면 CHostForWinForm.h에 다음 줄 추가:
 
     ```cpp
     virtual BOOL OnInitDialog();
@@ -107,7 +107,7 @@ MFC를 사용 하는 Windows Forms을 보여 주는 샘플 응용 프로그램�
     END_DELEGATE_MAP()
     ```
 
-     CHostForWinForm.cpp에이 정의 추가 합니다.
+   CHostForWinForm.cpp에이 정의 추가 합니다.
 
     ```
     void CHostForWinForm::OnButton1( System::Object^ sender, System::EventArgs^ e )
@@ -118,7 +118,7 @@ MFC를 사용 하는 Windows Forms을 보여 주는 샘플 응용 프로그램�
 
 12. 프로젝트를 빌드하고 실행합니다. Windows 폼에 있는 단추를 클릭 하면 MFC 응용 프로그램에서 코드가 실행 됩니다.
 
-     다음 Windows 폼에 텍스트 상자에 값을 MFC 코드에서 표시 하는 코드를 추가 합니다.
+   다음 Windows 폼에 텍스트 상자에 값을 MFC 코드에서 표시 하는 코드를 추가 합니다.
 
 13. CHostForWinForm.h에서 CHostForWinForm 클래스의 public 섹션에 다음 선언을 추가 합니다.
 

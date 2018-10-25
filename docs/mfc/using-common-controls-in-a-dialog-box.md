@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8d3db1d8c19b68adb8cec53984e0dfe5a189651
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7ff5c3f28a47eb4e1810f046a242f6170c537bf2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389871"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054938"
 ---
 # <a name="using-common-controls-in-a-dialog-box"></a>대화 상자에서 공용 컨트롤 사용
 
@@ -42,7 +42,7 @@ Windows 공용 컨트롤에서 사용할 수 있습니다 [대화 상자](../mfc
 
 1. [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) 대화 상자 클래스에 대 한 공용 컨트롤에 대 한 초기 조건을 설정 합니다. 이전 단계에서 만든 멤버 변수를 사용하여 멤버 함수를 통해 초기 값 및 기타 설정을 지정합니다. 설정에 대한 자세한 내용은 컨트롤에 대한 다음 설명을 참조하십시오.
 
-     사용할 수도 있습니다 [대화 상자 데이터 교환](../mfc/dialog-data-exchange-and-validation.md) (DDX) 대화 상자에서 컨트롤을 초기화 합니다.
+   사용할 수도 있습니다 [대화 상자 데이터 교환](../mfc/dialog-data-exchange-and-validation.md) (DDX) 대화 상자에서 컨트롤을 초기화 합니다.
 
 1. 대화 상자의 컨트롤에 대한 처리기에서 멤버 변수를 사용해서 컨트롤을 조작합니다. 메서드에 대한 자세한 내용은 컨트롤에 대해 다음 설명을 참조하십시오.
 

@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea6b687b00310390e3748fb5a8f6db74a19dfd0a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 97735b5509fb841a8b9b3d8212f4a23514f9d28c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46373898"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057467"
 ---
 # <a name="how-to-manage-a-scheduler-instance"></a>방법: 스케줄러 인스턴스 관리
 
@@ -34,7 +34,7 @@ ms.locfileid: "46373898"
 
 1. 호출 된 [concurrency::CurrentScheduler::Create](reference/currentscheduler-class.md#create) 메서드 또는 [concurrency::Scheduler::Create](reference/scheduler-class.md#create) 스케줄러 인스턴스를 만드는 방법.
 
-     사용 하는 경우는 `Scheduler::Create` 메서드를 호출 합니다 [concurrency::Scheduler::Attach](reference/scheduler-class.md#attach) 메서드는 현재 컨텍스트를 사용 하 여 스케줄러를 연결 해야 하는 경우.
+   사용 하는 경우는 `Scheduler::Create` 메서드를 호출 합니다 [concurrency::Scheduler::Attach](reference/scheduler-class.md#attach) 메서드는 현재 컨텍스트를 사용 하 여 스케줄러를 연결 해야 하는 경우.
 
 1. 호출 된 [CreateEvent](/windows/desktop/api/synchapi/nf-synchapi-createeventa) 신호를 자동 재설정 이벤트 개체에 대 한 핸들을 만드는 함수입니다.
 
@@ -44,7 +44,7 @@ ms.locfileid: "46373898"
 
 1. 호출 된 [concurrency::CurrentScheduler::Detach](reference/currentscheduler-class.md#detach) 메서드를 현재 스케줄러를 분리 하 고 현재 이전 스케줄러를 복원 합니다.
 
-     사용 하는 경우는 `Scheduler::Create` 메서드를 호출 합니다 [concurrency::Scheduler::Release](reference/scheduler-class.md#release) 참조 횟수를 감소 시키기 위해 메서드를 `Scheduler` 개체.
+   사용 하는 경우는 `Scheduler::Create` 메서드를 호출 합니다 [concurrency::Scheduler::Release](reference/scheduler-class.md#release) 참조 횟수를 감소 시키기 위해 메서드를 `Scheduler` 개체.
 
 1. 이벤트에 핸들을 전달 합니다 [WaitForSingleObject](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) 함수를 종료 하려면 스케줄러에 대 한 대기 합니다.
 

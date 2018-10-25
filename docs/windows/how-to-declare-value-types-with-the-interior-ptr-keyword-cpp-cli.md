@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bae409c881255b19a92b481fecab625c6b66c3c1
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: e9e24b2ac55e36c256adc076cee4ace2109a642d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49327949"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056201"
 ---
 # <a name="how-to-declare-value-types-with-the-interiorptr-keyword-ccli"></a>방법: interior_ptr 키워드를 사용하여 값 형식 선언(C++/CLI)
 
@@ -131,7 +131,7 @@ int main() {
 }
 ```
 
-```Output 
+```Output
 22
 23
 hello

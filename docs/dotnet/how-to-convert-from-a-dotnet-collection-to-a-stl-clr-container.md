@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: ba6d6193c8422e25e174c7a4b73b2b74095cced9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4dd67728773df86f9961fe54c7dd9e4a08ec743d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436509"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060951"
 ---
 # <a name="how-to-convert-from-a-net-collection-to-a-stlclr-container"></a>방법: .NET 컬렉션에서 STL/CLR 컨테이너로 변환
 
@@ -31,7 +31,7 @@ ms.locfileid: "46436509"
 
 1. 전체 컬렉션으로 변환 하려면 STL/CLR 컨테이너 만들기 및 컬렉션 생성자에 전달 합니다.
 
-     첫 번째 예제에서는이 절차를 보여 줍니다.
+   첫 번째 예제에서는이 절차를 보여 줍니다.
 
 -또는-
 
@@ -39,7 +39,7 @@ ms.locfileid: "46436509"
 
 1. 컨테이너에.NET 컬렉션의 콘텐츠를 복사 합니다. STL/CLR을 사용 하 여 이렇게 [알고리즘](../dotnet/algorithm-stl-clr.md),.NET 컬렉션을 반복 하 고 STL/CLR 컨테이너에 각 요소의 복사본을 삽입 하 여 또는입니다.
 
-     두 번째 예제에서는이 절차를 보여 줍니다.
+   두 번째 예제에서는이 절차를 보여 줍니다.
 
 ## <a name="example"></a>예제
 

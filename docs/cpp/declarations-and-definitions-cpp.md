@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f2155fef0f9287273b3c45e9318665acfdae527
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2c0ebbc2686c229d7818042672cdb1d6d2143f81
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070641"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50058078"
 ---
 # <a name="declarations-and-definitions-c"></a>선언 및 정의 (C++)
 
@@ -35,7 +35,7 @@ ms.locfileid: "46070641"
 
 1. 선언이 클래스 선언 내의 정적 데이터 멤버입니다.
 
-     정적 클래스 데이터 멤버는 클래스의 모든 개체가 공유하는 개별 변수이므로 클래스 선언 외부에서 정의 및 초기화되어야 합니다. (클래스 및 클래스 멤버에 대 한 자세한 내용은 참조 하세요. [클래스](../cpp/classes-and-structs-cpp.md).)
+   정적 클래스 데이터 멤버는 클래스의 모든 개체가 공유하는 개별 변수이므로 클래스 선언 외부에서 정의 및 초기화되어야 합니다. (클래스 및 클래스 멤버에 대 한 자세한 내용은 참조 하세요. [클래스](../cpp/classes-and-structs-cpp.md).)
 
 1. 선언이 `class T;`과 같은 정의가 뒤따르지 않는 클래스 이름 선언입니다.
 

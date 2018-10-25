@@ -53,12 +53,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5df7ae90a347d82b303d7db251e533733c8e4a86
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 2357790e3084c91011f16eb9f1f718948462f898
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808632"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059482"
 ---
 # <a name="module-class"></a>Module 클래스
 
@@ -243,7 +243,7 @@ WRL_NOTHROW HRESULT GetActivationFactory(
 클래스 팩터리의 캐시를 가져옵니다.
 
 ```cpp
- HRESULT GetClassObject(
+HRESULT GetClassObject(
    REFCLSID clsid,
    REFIID riid,
    _Deref_out_ void **ppv,

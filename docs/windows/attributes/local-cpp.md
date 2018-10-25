@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e24efe4d4ad4f4e28b93503ecf82936e3113c1ed
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: e510e4faa707c954c52ae9daae4c4dc0d4c800dd
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791953"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057158"
 ---
 # <a name="local-c"></a>local(C++)
 
@@ -53,11 +53,11 @@ ms.locfileid: "48791953"
 |**필수 특성**|없음|
 |**잘못된 특성**|`dispinterface`|
 
-자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 [IDL 특성](idl-attributes.md)<br/>
 [인터페이스 특성](interface-attributes.md)<br/>
 [메서드 특성](method-attributes.md)<br/>
-[call_as](call-as.md)  
+[call_as](call-as.md)

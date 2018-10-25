@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a636b7d4c943896bcd1e5e7b3580c2d3f7410fc8
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 1529f6d43c3a4543a172229abe2adf0ce6a99c49
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791196"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060197"
 ---
 # <a name="export"></a>내보내기
 
@@ -70,9 +70,9 @@ struct MyStruct {
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 [컴파일러 특성](compiler-attributes.md)<br/>
-[Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)  
+[Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)

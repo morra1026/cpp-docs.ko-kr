@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: edc9d5aa1d7c49de34ee3dbb02d2a55542962a50
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 78d108dfda75147e4147e94544ddddcdfa04481d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791809"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062862"
 ---
 # <a name="registrationscript"></a>registration_script
 
@@ -43,7 +43,7 @@ ms.locfileid: "48791809"
 
 합니다 **registration_script** c + + 특성으로 지정 된 사용자 지정 등록 스크립트 실행 *스크립트*합니다. 이 특성은 지정 하지 않으면 표준.rgs 파일 (구성 요소를 등록 하는 것에 대 한 정보 포함)이 사용 됩니다. .Rgs 파일에 대 한 자세한 내용은 참조 하세요. [ATL 레지스트리 구성 요소 (등록자)](../../atl/atl-registry-component-registrar.md)합니다.
 
-이 특성을 사용 하려면 합니다 [coclass](coclass.md)를 [progid](progid.md), 또는 [vi_progid](vi-progid.md) 특성 (또는 다음 중 하나를 암시 하는 다른 특성)도 적용할 같은 요소입니다.
+이 특성을 사용하려면 [coclass](coclass.md), [progid](progid.md)또는 [vi_progid](vi-progid.md) 특성(또는 이 중 하나를 암시하는 다른 특성)을 동일한 요소에 적용해야 합니다.
 
 ## <a name="example"></a>예제
 
@@ -79,10 +79,10 @@ class CMyClass:public IFace {};
 |**필수 특성**|다음 중 하나 이상의: `coclass`, `progid`, 또는 `vi_progid`합니다.|
 |**잘못된 특성**|없음|
 
-특성 컨텍스트에 대 한 자세한 내용은 참조 하세요. [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 [COM 특성](com-attributes.md)<br/>
 [클래스 특성](class-attributes.md)<br/>
-[rdx](rdx.md)  
+[rdx](rdx.md)

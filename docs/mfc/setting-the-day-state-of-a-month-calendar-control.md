@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b443e1758f766b7fa2dd9a0169ab98172423779d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5e589f07d1c9c54c3acd2fa3ff6a0f346077f9b4
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439344"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053099"
 ---
 # <a name="setting-the-day-state-of-a-month-calendar-control"></a>MonthCalendar 컨트롤의 일 상태 설정
 
@@ -51,9 +51,9 @@ MCN_GETDAYSTATE 메시지 표시 개월 내 날짜를 표시 하는 방법을 �
 
 1. 처리기의 본문에 다음 코드를 추가 합니다.
 
-     [!code-cpp[NVC_MFCControlLadenDialog#26](../mfc/codesnippet/cpp/setting-the-day-state-of-a-month-calendar-control_1.cpp)]
+   [!code-cpp[NVC_MFCControlLadenDialog#26](../mfc/codesnippet/cpp/setting-the-day-state-of-a-month-calendar-control_1.cpp)]
 
-     로 변환 합니다 *pNMHDR* 적절 한 형식에 대 한 포인터는 다음 몇 달의 정보를 요청 하는 결정 (`pDayState->cDayState`). 매월 현재 비트 필드 (`pDayState->prgDayState[i]`) 0과 다음 필요한 인스턴스화될 날짜 (이 예제의 경우 각 월의 15 일)에 설정 됩니다.
+   로 변환 합니다 *pNMHDR* 적절 한 형식에 대 한 포인터는 다음 몇 달의 정보를 요청 하는 결정 (`pDayState->cDayState`). 매월 현재 비트 필드 (`pDayState->prgDayState[i]`) 0과 다음 필요한 인스턴스화될 날짜 (이 예제의 경우 각 월의 15 일)에 설정 됩니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -37,105 +37,105 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3d00e6a89d8c05f5b9d6a3f1eaef434968931a26
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: ac05cdb93ff87e40c41a59ce466d81aa7bcb5e92
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083309"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053476"
 ---
 # <a name="irowsetinfoimpl-class"></a>IRowsetInfoImpl 클래스
 
-에 대 한 구현을 제공 합니다 [IRowsetInfo](/previous-versions/windows/desktop/ms724541) 인터페이스입니다.  
-  
+에 대 한 구현을 제공 합니다 [IRowsetInfo](/previous-versions/windows/desktop/ms724541) 인터페이스입니다.
+
 ## <a name="syntax"></a>구문
 
 ```cpp
-template <class T, class PropClass = T>  
-class ATL_NO_VTABLE IRowsetInfoImpl :   
-   public IRowsetInfo,    
-   public CUtlProps<PropClass>  
-```  
-  
-### <a name="parameters"></a>매개 변수  
+template <class T, class PropClass = T>
+class ATL_NO_VTABLE IRowsetInfoImpl :
+   public IRowsetInfo,  
+   public CUtlProps<PropClass>
+```
+
+### <a name="parameters"></a>매개 변수
 
 *T*<br/>
-클래스에서 파생 된 `IRowsetInfoImpl`합니다.  
-  
+클래스에서 파생 된 `IRowsetInfoImpl`합니다.
+
 *PropClass*<br/>
-기본적으로 사용자 정의 가능한 속성 클래스 *T*합니다. 
+기본적으로 사용자 정의 가능한 속성 클래스 *T*합니다.
 
-## <a name="requirements"></a>요구 사항  
+## <a name="requirements"></a>요구 사항
 
-**헤더:** altdb.h   
-  
-## <a name="members"></a>멤버  
-  
-### <a name="interface-methods"></a>인터페이스 메서드  
-  
-|||  
-|-|-|  
-|[GetProperties](#getproperties)|행 집합에서 지 원하는 모든 속성의 현재 설정을 반환 합니다.|  
-|[GetReferencedRowset](#getreferencedrowset)|책갈피 적용 되는 행 집합에 대 한 인터페이스 포인터를 반환 합니다.|  
-|[GetSpecification](#getspecification)|이 행 집합을 만든 개체 (명령 또는 세션)에 대 한 인터페이스 포인터를 반환 합니다.|  
-  
-## <a name="remarks"></a>설명  
+**헤더:** altdb.h
 
-행 집합에는 필수 인터페이스입니다. 이 클래스를 사용 하 여 행 집합 속성을 구현 합니다 [속성 집합 맵](../../data/oledb/begin-propset-map.md) 명령 클래스에 정의 합니다. 행 집합 클래스를 사용 하 여 명령 클래스의 속성 수를 설정 하는 나타나지만, 명령 또는 세션 개체로 만들 때 런타임 속성의 자체 복사본을 사용 하 여 행 집합 제공 됩니다.  
-  
+## <a name="members"></a>멤버
+
+### <a name="interface-methods"></a>인터페이스 메서드
+
+|||
+|-|-|
+|[GetProperties](#getproperties)|행 집합에서 지 원하는 모든 속성의 현재 설정을 반환 합니다.|
+|[GetReferencedRowset](#getreferencedrowset)|책갈피 적용 되는 행 집합에 대 한 인터페이스 포인터를 반환 합니다.|
+|[GetSpecification](#getspecification)|이 행 집합을 만든 개체 (명령 또는 세션)에 대 한 인터페이스 포인터를 반환 합니다.|
+
+## <a name="remarks"></a>설명
+
+행 집합에는 필수 인터페이스입니다. 이 클래스를 사용 하 여 행 집합 속성을 구현 합니다 [속성 집합 맵](../../data/oledb/begin-propset-map.md) 명령 클래스에 정의 합니다. 행 집합 클래스를 사용 하 여 명령 클래스의 속성 수를 설정 하는 나타나지만, 명령 또는 세션 개체로 만들 때 런타임 속성의 자체 복사본을 사용 하 여 행 집합 제공 됩니다.
+
 ## <a name="getproperties"></a> Irowsetinfoimpl:: Getproperties
 
-속성에 대 한 현재 설정을 반환 합니다 `DBPROPSET_ROWSET` 그룹입니다.  
-  
-### <a name="syntax"></a>구문  
-  
-```cpp
-STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,  
-   const DBPROPIDSET rgPropertyIDSets[],  
-   ULONG* pcPropertySets,  
-   DBPROPSET** prgPropertySets);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+속성에 대 한 현재 설정을 반환 합니다 `DBPROPSET_ROWSET` 그룹입니다.
 
-참조 [irowsetinfo:: Getproperties](/previous-versions/windows/desktop/ms719611) 에 *OLE DB Programmer's Reference*합니다. 
+### <a name="syntax"></a>구문
+
+```cpp
+STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,
+   const DBPROPIDSET rgPropertyIDSets[],
+   ULONG* pcPropertySets,
+   DBPROPSET** prgPropertySets);
+```
+
+#### <a name="parameters"></a>매개 변수
+
+참조 [irowsetinfo:: Getproperties](/previous-versions/windows/desktop/ms719611) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="getreferencedrowset"></a> Irowsetinfoimpl:: Getreferencedrowset
 
-책갈피 적용 되는 행 집합에 대 한 인터페이스 포인터를 반환 합니다.  
-  
-### <a name="syntax"></a>구문  
-  
-```cpp
-STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,  
-   REFIID riid,  
-   IUnknown** ppReferencedRowset);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+책갈피 적용 되는 행 집합에 대 한 인터페이스 포인터를 반환 합니다.
 
-참조 [IRowsetInfo::GetReferencedRowset](/previous-versions/windows/desktop/ms721145) 에 *OLE DB Programmer's Reference*합니다. 합니다 *iOrdinal* 매개 변수는 책갈피 열 이어야 합니다. 
+### <a name="syntax"></a>구문
+
+```cpp
+STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,
+   REFIID riid,
+   IUnknown** ppReferencedRowset);
+```
+
+#### <a name="parameters"></a>매개 변수
+
+참조 [IRowsetInfo::GetReferencedRowset](/previous-versions/windows/desktop/ms721145) 에 *OLE DB Programmer's Reference*합니다. 합니다 *iOrdinal* 매개 변수는 책갈피 열 이어야 합니다.
 
 ## <a name="getspecification"></a> Irowsetinfoimpl:: Getspecification
 
-이 행 집합을 만든 개체 (명령 또는 세션)에 대 한 인터페이스 포인터를 반환 합니다.  
-  
-### <a name="syntax"></a>구문  
-  
+이 행 집합을 만든 개체 (명령 또는 세션)에 대 한 인터페이스 포인터를 반환 합니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-STDMETHOD (GetSpecification )(REFIID riid,  
-   IUnknown** ppSpecification);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+STDMETHOD (GetSpecification )(REFIID riid,
+   IUnknown** ppSpecification);
+```
 
-참조 [IRowsetInfo::GetSpecification](/previous-versions/windows/desktop/ms716746) 에 *OLE DB Programmer's Reference*합니다.  
-  
-### <a name="remarks"></a>설명  
+#### <a name="parameters"></a>매개 변수
 
-이 메서드를 사용 하 여 [IGetDataSourceImpl](../../data/oledb/igetdatasourceimpl-class.md) 데이터 원본 개체에서 속성을 검색할 수 있습니다.  
-  
-## <a name="see-also"></a>참고 항목  
+참조 [IRowsetInfo::GetSpecification](/previous-versions/windows/desktop/ms716746) 에 *OLE DB Programmer's Reference*합니다.
+
+### <a name="remarks"></a>설명
+
+이 메서드를 사용 하 여 [IGetDataSourceImpl](../../data/oledb/igetdatasourceimpl-class.md) 데이터 원본 개체에서 속성을 검색할 수 있습니다.
+
+## <a name="see-also"></a>참고 항목
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

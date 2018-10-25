@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3835d3c3d2900b97c16bc82963df2d08f35a879d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f2976feebf4a17465c2bf2010b4dc608550ce077
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416294"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059469"
 ---
 # <a name="preprocessor-directives"></a>전처리기 지시문
 
@@ -45,4 +45,4 @@ ms.locfileid: "46416294"
 
 [전처리기 연산자](../preprocessor/preprocessor-operators.md)<br/>
 [미리 정의된 매크로](../preprocessor/predefined-macros.md)<br/>
-[ 전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)  
+[ 전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)

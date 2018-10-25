@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 97c7ca1f808beb7e0658338dac77819455f9ed84
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 14a58573af8b8cb917d7aaaa864b6b4d61e70172
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791377"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063005"
 ---
 # <a name="include-c"></a>include(C++)
 
@@ -67,7 +67,7 @@ ms.locfileid: "48791377"
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
@@ -76,4 +76,4 @@ ms.locfileid: "48791377"
 [import](import.md)<br/>
 [importidl](importidl.md)<br/>
 [includelib](includelib-cpp.md)<br/>
-[importlib](importlib.md)  
+[importlib](importlib.md)

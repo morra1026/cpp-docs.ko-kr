@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ec76a554068dbec050078a0e0558cecd583410c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cd9ea4397c655f0ebb28d10febe82581d6ad8771
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429211"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055010"
 ---
 # <a name="icommandui-interface"></a>ICommandUI 인터페이스
 
@@ -73,6 +73,7 @@ MFC의 사용자 인터페이스 명령을 관리 하는 방법에 대 한 자�
 ```
 property UICheckState Check;
 ```
+
 ## <a name="remarks"></a>설명
 
 이 속성을 적절 한 확인 상태로이 명령에 대 한 사용자 인터페이스 항목을 설정합니다. 다음 값을 확인을 설정 합니다.
@@ -86,6 +87,7 @@ property UICheckState Check;
 ```
 void ContinueRouting();
 ```
+
 ## <a name="remarks"></a>설명
 
 이 FALSE를 반환 하는 ON_COMMAND_EX 처리기와 함께에서 사용 해야 하는 고급 멤버 함수입니다. 자세한 내용은 기술 참고 TN006 참조: 메시지 맵.
@@ -96,6 +98,7 @@ void ContinueRouting();
 ```
 property bool Enabled;
 ```
+
 ## <a name="remarks"></a>설명
 
 이 속성을 사용 하도록 설정 하거나이 명령에 대 한 사용자 인터페이스 항목을 사용 하지 않도록 설정 합니다. 사용 설정 항목을 사용 하지 않도록 하려면 FALSE true로 설정 합니다.
@@ -106,6 +109,7 @@ ICommandUI 개체가 나타내는 사용자 인터페이스 개체의 ID를 가�
 ```
 property unsigned int ID;
 ```
+
 ## <a name="remarks"></a>설명
 
 이 속성 메뉴 항목, 도구 모음 단추 또는 ICommandUI 개체에 의해 표시 되는 다른 사용자 인터페이스 개체의 ID를 (핸들)를 가져옵니다.
@@ -116,6 +120,7 @@ ICommandUI 개체가 나타내는 사용자 인터페이스 개체의 인덱스�
 ```
 property unsigned int Index;
 ```
+
 ## <a name="remarks"></a>설명
 
 이 속성 메뉴 항목, 도구 모음 단추 또는 ICommandUI 개체에 의해 표시 되는 다른 사용자 인터페이스 개체의 인덱스를 (핸들)를 가져옵니다.
@@ -126,6 +131,7 @@ property unsigned int Index;
 ```
 property bool Radio;
 ```
+
 ## <a name="remarks"></a>설명
 
 이 속성을 적절 한 확인 상태로이 명령에 대 한 사용자 인터페이스 항목을 설정합니다. 항목이 사용 하도록 설정 하려면 true로 설정 하는 라디오를 설정합니다 그렇지 않으면 FALSE입니다.
@@ -136,6 +142,7 @@ property bool Radio;
 ```
 property String^ Text;
 ```
+
 ## <a name="remarks"></a>설명
 
 이 속성에는이 명령에 대 한 사용자 인터페이스 항목의 텍스트를 설정합니다. 텍스트 문자열 핸들에 텍스트를 설정 합니다.

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 91bed0ebfdacae21f2d606c0b8fa1bb43326816d
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 54fcef3c7b2ef86273a570e483f65b34b3b2efc2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48792009"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063102"
 ---
 # <a name="idlmodule"></a>idl_module
 
@@ -56,10 +56,10 @@ function declaration
 (선택 사항) 이 형식 라이브러리에 대 한 도움말 ID입니다.
 
 *hidden*<br/>
-(선택 사항) 라이브러리 표시 되는 것을 방지 하는 매개 변수입니다. 참조 된 [숨겨진](/windows/desktop/Midl/hidden) 자세한 MIDL 특성입니다.
+(선택 사항) 라이브러리 표시 되는 것을 방지 하는 매개 변수입니다. 자세한 내용은 [hidden](/windows/desktop/Midl/hidden) MIDL 특성을 참조하세요.
 
 *restricted*<br/>
-(선택 사항) 라이브러리의 멤버를 임의로 호출할 수 없습니다. 참조 된 [제한](/windows/desktop/Midl/restricted) 자세한 MIDL 특성입니다.
+(선택 사항) 라이브러리의 멤버를 임의로 호출할 수 없습니다. 자세한 내용은 [restricted](/windows/desktop/Midl/restricted) MIDL 특성을 참조하세요.
 
 *함수 선언*<br/>
 함수 정의입니다.
@@ -98,10 +98,10 @@ void FuncName(int i);
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 [IDL 특성](idl-attributes.md)<br/>
 [독립 실행형 특성](stand-alone-attributes.md)<br/>
-[entry](entry.md)  
+[entry](entry.md)

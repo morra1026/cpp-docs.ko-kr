@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff44a91b4916092e319c7acc0520c49aeb9a5fa4
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 0f88957ac4c9ce14d05a71c266607e499c512541
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953077"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059040"
 ---
 # <a name="gslicearray-class"></a>gslice_array 클래스
 
@@ -36,39 +36,27 @@ public:
     typedef Type value_type;
     void operator=(const valarray<Type>& x) const;
 
-
     void operator=(const Type& x) const;
-
 
     void operator*=(const valarray<Type>& x) const;
 
-
     void operator/=(const valarray<Type>& x) const;
-
 
     void operator%=(const valarray<Type>& x) const;
 
-
     void operator+=(const valarray<Type>& x) const;
-
 
     void operator-=(const valarray<Type>& x) const;
 
-
     void operator^=(const valarray<Type>& x) const;
-
 
     void operator&=(const valarray<Type>& x) const;
 
-
     void operator|=(const valarray<Type>& x) const;
-
 
     void operator<<=(const valarray<Type>& x) const;
 
-
     void operator>>=(const valarray<Type>& x) const;
-
 
 // The rest is private or implementation defined
 }
@@ -99,7 +87,7 @@ const valarray<size_t> len(lv, 2), str(dv, 2);
 
 인덱스가 유효해야 프로시저도 유효합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 slice_array를 선언하고 사용하는 방법의 예제는 [gslice::gslice](../standard-library/gslice-class.md#gslice)의 예제를 참조하세요.
 

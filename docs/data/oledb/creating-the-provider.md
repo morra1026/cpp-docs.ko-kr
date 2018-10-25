@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0dbdf7350eeba1a29392bafc2f099a857e212e37
-ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
+ms.openlocfilehash: 230620a2375ac5aa822e55496d1f26751ee6f7b3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410748"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055348"
 ---
 # <a name="creating-the-provider"></a>공급자 만들기
 
@@ -32,7 +32,7 @@ ms.locfileid: "49410748"
 
 1. 에 **클래스 추가** 대화 상자의 **설치 됨** > **Visual c + +** > **ATL**를 선택 합니다 **ATL OLEDB 공급자** 아이콘과 클릭 **열려**합니다.
 
-1. 에 **ATL OLE DB 공급자 마법사**, 공급자의 짧은 이름을 입력 합니다 **짧은 이름** 상자. 다음 항목의 짧은 이름을 "MyProvider"를 사용 하지만 다른 이름을 사용할 수 있습니다. 다른 이름 입력란을 입력 하는 이름에 따라 채워집니다.
+1. 에 **ATL OLE DB 공급자 마법사**, 공급자의 짧은 이름을 입력 합니다 **짧은 이름** 상자. 다음 항목의 짧은 이름을 사용 *사용자 지정*, 하지만 다른 이름을 사용할 수 있습니다. 다른 이름 입력란을 입력 하는 이름에 따라 채워집니다.
 
 1. 필요한 경우 다른 이름 입력란을 편집 합니다. 개체 및 파일 이름 외에도 다음을 편집할 수 있습니다.
 

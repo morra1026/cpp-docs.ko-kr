@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8426a0113ca245f6c9390a5c95f350398938731
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e0b9a8e72cb3c1334484ed4a4e5c85c8b9a12347
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106235"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055140"
 ---
 # <a name="marshaling-global-functions"></a>마샬링 전역 함수
 
@@ -34,7 +34,7 @@ ms.locfileid: "46106235"
 |-|-|
 |[AtlFreeMarshalStream](#atlfreemarshalstream)|마샬링 데이터를 해제 및 `IStream` 포인터입니다.|
 |[AtlMarshalPtrInProc](#atlmarshalptrinproc)|새 스트림 개체를 만들고 지정 된 인터페이스 포인터를 마샬링합니다.|
-|[AtlUnmarshalPtr](#atlunmarshalptr)|에 대 한 인터페이스 포인터를 스트림의 마샬링 데이터를 변환합니다.|  
+|[AtlUnmarshalPtr](#atlunmarshalptr)|에 대 한 인터페이스 포인터를 스트림의 마샬링 데이터를 변환합니다.|
 
 ## <a name="requirements"></a>요구 사항:
 
@@ -42,7 +42,7 @@ ms.locfileid: "46106235"
 
 ##  <a name="atlfreemarshalstream"></a>  AtlFreeMarshalStream
 
-스트림에서 마샬링 데이터를 해제한 다음 스트림 포인터를 해제합니다.  
+스트림에서 마샬링 데이터를 해제한 다음 스트림 포인터를 해제합니다.
 
 ```
 HRESULT AtlFreeMarshalStream(IStream* pStream);

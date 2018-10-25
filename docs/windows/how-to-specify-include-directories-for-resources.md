@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ebebd8d0b6dc53ef5d83374c329ebe35d23f7fe8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: be030539a7b2d0585ea895f1428de822d3300d53
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46443542"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052969"
 ---
 # <a name="how-to-specify-include-directories-for-resources-c"></a>방법: 지정 (c + +) 리소스에 대 한 포함 디렉터리
 
@@ -32,7 +32,7 @@ ms.locfileid: "46443542"
 
 2. 에 **속성 페이지** 대화 상자에서 클릭 합니다 **리소스** 왼쪽된 창에서 노드 추가 포함 디렉터리를 지정 합니다 합니다 **추가 포함 디렉터리** 속성입니다.
 
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) .NET Framework Developer's Guide에 있습니다. 
+관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) .NET Framework Developer's Guide에 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 

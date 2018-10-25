@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b14f562bd93bf023d540bf362dd2f9a881c2e441
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3b33097c6f6f747d99cf582c1553e25942f1bfcd
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436795"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056011"
 ---
 # <a name="mfc-activex-controls-painting-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤 그리기
 
@@ -112,11 +112,11 @@ ActiveX 컨트롤 그리기의 기본 구현은 전체 컨트롤 영역을 그�
 
 1. 에 **새 컨트롤 삽입** 상자, 컨트롤 선택 및 클릭 **확인**합니다.
 
-     컨트롤이 테스트 컨테이너에 나타납니다.
+   컨트롤이 테스트 컨테이너에 나타납니다.
 
 1. 에 **제어** 메뉴에서 클릭 **메타 파일 그리기**합니다.
 
-     별도의 창이 표시되는 메타파일에 나타납니다. 이 창의 크기를 변경하여 배율이 컨트롤의 메타파일에 주는 영향을 볼 수 있습니다. 언제든지 이 창을 닫을 수 있습니다.
+   별도의 창이 표시되는 메타파일에 나타납니다. 이 창의 크기를 변경하여 배율이 컨트롤의 메타파일에 주는 영향을 볼 수 있습니다. 언제든지 이 창을 닫을 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

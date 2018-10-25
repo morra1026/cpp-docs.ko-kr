@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 217dcd1d5e999ea640795c656bbf40f7adad3d7d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 295077b474681cabeb1221052ae9e2c9ad5ed79a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46398750"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053177"
 ---
 # <a name="windows-sockets-using-sockets-with-archives"></a>Windows 소켓: 소켓과 아카이브 함께 사용
 
@@ -49,7 +49,7 @@ ms.locfileid: "46398750"
 
 1. 개체를 사용 하 여 기본 만들려는 **소켓** 처리 합니다.
 
-     에 `CSocket` 클라이언트 개체를 일반적으로 기본 매개 변수를 사용 해야 [만들기](../mfc/reference/casyncsocket-class.md#create)데이터 그램 소켓 필요 하지 않은 경우, 합니다. 에 `CSocket` 서버 개체에서 포트를 지정 해야 합니다는 `Create` 호출 합니다.
+   에 `CSocket` 클라이언트 개체를 일반적으로 기본 매개 변수를 사용 해야 [만들기](../mfc/reference/casyncsocket-class.md#create)데이터 그램 소켓 필요 하지 않은 경우, 합니다. 에 `CSocket` 서버 개체에서 포트를 지정 해야 합니다는 `Create` 호출 합니다.
 
     > [!NOTE]
     >  `CArchive`는 데이터그램 소켓에서 작동하지 않습니다. 데이터그램 소켓에 대해 `CSocket`을 사용하려는 경우에는 `CAsyncSocket`을 사용할 때와 마찬가지로, 아카이브 없이 클래스를 사용해야 합니다. 데이터그램은 안정적이지 않기 때문에(수신이 보장되지 않고 반복되거나 순서가 바뀔 수 있음), 아카이브를 통한 serialization과 호환되지 않습니다. serialization 작업은 안정적으로 그리고 순차적으로 완료할 것으로 예상됩니다. 데이터그램에 대해 `CSocket` 개체와 함께 `CArchive`을 사용하려고 시도하면 MFC 어설션이 실패합니다.
@@ -58,7 +58,7 @@ ms.locfileid: "46398750"
 
      또는
 
-     소켓이 서버인 경우 호출할 [CAsyncSocket::Listen](../mfc/reference/casyncsocket-class.md#listen) 하려면 클라이언트에서 연결 시도 대 한 수신 대기 합니다. 연결 요청을 받으면 호출 하 여 수락 [CAsyncSocket::Accept](../mfc/reference/casyncsocket-class.md#accept)합니다.
+   소켓이 서버인 경우 호출할 [CAsyncSocket::Listen](../mfc/reference/casyncsocket-class.md#listen) 하려면 클라이언트에서 연결 시도 대 한 수신 대기 합니다. 연결 요청을 받으면 호출 하 여 수락 [CAsyncSocket::Accept](../mfc/reference/casyncsocket-class.md#accept)합니다.
 
     > [!NOTE]
     >  합니다 `Accept` 멤버 함수는 비어 있는 새에 대 한 참조 `CSocket` 매개 변수로 개체입니다. 호출 하기 전에이 개체를 생성 해야 `Accept`합니다. 이 소켓 개체가 범위를 벗어나면 연결이 닫힙니다. 호출 하지 마십시오 `Create` 이 새 소켓 개체에 대 한 합니다.
@@ -67,13 +67,13 @@ ms.locfileid: "46398750"
 
 1. 만들기는 [CArchive](../mfc/reference/carchive-class.md) 개체 로드 (수신) 또는 (송신) 데이터를 저장 합니다. 아카이브는 `CSocketFile` 개체와 연결됩니다.
 
-     `CArchive`는 데이터그램 소켓에서 작동하지 않습니다.
+   `CArchive`는 데이터그램 소켓에서 작동하지 않습니다.
 
 1. 클라이언트 및 서버 소켓 사이에 데이터를 전달하려면 `CArchive` 개체를 사용합니다.
 
-     특정 `CArchive` 개체는 데이터를 한 방향으로만 이동합니다. 즉, 로드(수신) 또는 저장(송신) 방향으로만 이동합니다. 일부 경우에는 데이터 송신 및 수신 확인을 위해 두 개의 `CArchive` 개체를 사용합니다.
+   특정 `CArchive` 개체는 데이터를 한 방향으로만 이동합니다. 즉, 로드(수신) 또는 저장(송신) 방향으로만 이동합니다. 일부 경우에는 데이터 송신 및 수신 확인을 위해 두 개의 `CArchive` 개체를 사용합니다.
 
-     연결을 수락하고 아카이브를 설정한 후에는 암호 유효성 검사와 같은 작업을 수행할 수 있습니다.
+   연결을 수락하고 아카이브를 설정한 후에는 암호 유효성 검사와 같은 작업을 수행할 수 있습니다.
 
 1. 아카이브, 소켓 파일 및 소켓 개체를 제거합니다.
 

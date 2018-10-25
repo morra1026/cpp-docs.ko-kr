@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4b5ed392850fac97e8671774dee0905bf3417eb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 765a5293f233cb6df0654416ea2a5463df1095a8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375892"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054425"
 ---
 # <a name="specifying-levels-of-functionality"></a>기능 수준 지정
 
@@ -46,11 +46,11 @@ ms.locfileid: "46375892"
 
 1. 다음과 같이 클래스 선언에서 DECLARE_DYNAMIC 매크로 사용 합니다.
 
-     [!code-cpp[NVC_MFCCObjectSample#2](../mfc/codesnippet/cpp/specifying-levels-of-functionality_1.h)]
+   [!code-cpp[NVC_MFCCObjectSample#2](../mfc/codesnippet/cpp/specifying-levels-of-functionality_1.h)]
 
 1. IMPLEMENT_DYNAMIC 매크로 사용 하 여 구현 파일에서 (합니다. CPP) 클래스입니다. 이 매크로 인수로 클래스 및 해당 기본 클래스의 이름을 다음과 같이 합니다.
 
-     [!code-cpp[NVC_MFCCObjectSample#3](../mfc/codesnippet/cpp/specifying-levels-of-functionality_2.cpp)]
+   [!code-cpp[NVC_MFCCObjectSample#3](../mfc/codesnippet/cpp/specifying-levels-of-functionality_2.cpp)]
 
 > [!NOTE]
 >  IMPLEMENT_DYNAMIC 구현 파일에 항상 배치 (합니다. CPP) 클래스에 대 한 합니다. IMPLEMENT_DYNAMIC 매크로 컴파일 중에 한 번만 평가 해야 하 고 따라서 해서는 안 인터페이스 파일에 (합니다. H)는 둘 이상의 파일에 잠재적으로 포함 될 수 있습니다.

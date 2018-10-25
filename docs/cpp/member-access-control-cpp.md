@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dced1bd7db0f3eec9d9d070deb8cf990496116ae
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: e0ac5ceda3b979454c5d37e513cbd77a4d3e3e20
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821662"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063356"
 ---
 # <a name="member-access-control-c"></a>멤버 Access Control(C++)
 
@@ -247,7 +247,6 @@ int main()
 ![상속 그래프의 경로 따라 액세스](../cpp/media/vc38v91.gif "vc38V91") 상속 그래프의 경로 따라 액세스
 
 그림에서 클래스 `VBase`에 선언된 이름은 언제나 클래스 `RightPath`를 통해 도달됩니다.  `RightPath`는 `VBase`를 공용 기본 클래스로 선언하지만, `LeftPath`는 `VBase`를 비공개로 선언합니다. 따라서, 오른쪽 경로를 보다 쉽게 액세스할 수 있습니다.
-
 
 ## <a name="see-also"></a>참고 항목
 

@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef1469c40de8aae06460f1874905c53e91a47ca1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 575af8c372e0d935e1ca7c262a70466a97885648
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46079338"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053957"
 ---
 # <a name="catlpreviewctrlimpl-class"></a>CAtlPreviewCtrlImpl 클래스
 
@@ -89,7 +89,7 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
 |이름|설명|
 |----------|-----------------|
 |[CAtlPreviewCtrlImpl::m_clrBack](#m_clrback)|미리 보기 창의 배경색입니다.|
-|[CAtlPreviewCtrlImpl::m_clrText](#m_clrtext)|미리 보기 창의 텍스트 색입니다.|  
+|[CAtlPreviewCtrlImpl::m_clrText](#m_clrtext)|미리 보기 창의 텍스트 색입니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -226,7 +226,7 @@ const LOGFONTW* m_plf;
 WM_PAINT 메시지를 처리 합니다.
 
 ```
-LRESULT OnPaint(  
+LRESULT OnPaint(
     UINT nMsg,
     WPARAM wParam,
     LPARAM lParam,

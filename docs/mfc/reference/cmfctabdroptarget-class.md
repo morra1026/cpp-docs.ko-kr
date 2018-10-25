@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f4951da1f6407dae1d31d92724bbcc80e677616
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ca9b67737933ceeb59861234759aa2652b6b985e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442437"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057454"
 ---
 # <a name="cmfctabdroptarget-class"></a>CMFCTabDropTarget 클래스
 
@@ -264,6 +264,4 @@ BOOL Register(CMFCBaseTabCtrl *pOwner);
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [끌어서 놓기(OLE)](../../mfc/drag-and-drop-ole.md)
-
-
 
