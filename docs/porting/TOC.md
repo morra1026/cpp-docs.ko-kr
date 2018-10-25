@@ -15,6 +15,7 @@
 ### [라이브러리 내부 요소에 대한 종속성 해결](fix-your-dependencies-on-library-internals.md)
 ### [부동 소수점 마이그레이션 문제](floating-point-migration-issues.md)
 ### [Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드](use-native-multi-targeting.md)
+### [Visual C++ 기능은 Visual Studio 2019 미리 보기에서 사용되지 않음](features-deprecated-in-visual-studio.md)
 ## [UNIX 사용자를 위한 Visual C++ 소개](introduction-to-visual-cpp-for-unix-users.md)
 ## [UNIX에서 Win32로 포팅](porting-from-unix-to-win32.md)
 ## [유니버설 Windows 플랫폼으로 포팅(C++)](porting-to-the-universal-windows-platform-cpp.md)

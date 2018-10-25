@@ -1,7 +1,7 @@
 ---
 title: ActiveX 컨트롤의 클래스 추가(Visual C++) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/07/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -15,16 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7fd284236d2e9267d281061eef3915ed41f6f590
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6f9e7d8ea0e3b21b06d73e187a4f45c53cd896cf
+ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375958"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48250486"
 ---
 # <a name="adding-a-class-from-an-activex-control-visual-c"></a>ActiveX 컨트롤의 클래스 추가(Visual C++)
 
 이 마법사를 사용하여 사용 가능한 ActiveX 컨트롤의 인터페이스에서 MFC 클래스를 만듭니다. MFC 클래스를 [MFC 응용 프로그램](../mfc/reference/creating-an-mfc-application.md), [MFC DLL](../mfc/reference/creating-an-mfc-dll-project.md) 또는 [MFC ActiveX 컨트롤](../mfc/reference/creating-an-mfc-activex-control.md)에 추가할 수 있습니다.
+
+> [!WARNING]
+> Visual Studio 2017 버전 15.9에서 이 코드 마법사는 더 이상 사용되지 않으므로 Visual Studio의 이후 버전에서 제거됩니다. 이 마법사는 거의 사용되지 않습니다. 이 마법사가 제거되더라도 ATL 및 MFC에 대한 일반 지원은 그대로 유지됩니다. 이 지원 중단에 대한 의견을 공유하려면 [이 설문 조사](https://www.surveymonkey.com/r/QDWKKCN)를 완료하세요. 여러분의 의견은 소중합니다.
 
 > [!NOTE]
 >  ActiveX 컨트롤에서 클래스를 추가하기 위해 자동화가 활성화된 MFC 프로젝트를 만들 필요가 없습니다.
