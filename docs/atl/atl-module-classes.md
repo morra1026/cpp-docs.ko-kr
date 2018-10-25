@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e885ef1db8f282bbdca2e8c39c3d1221d791d1a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7e067b1d72b80950b4ed33fbae8cac7333ac0438
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46067638"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083078"
 ---
 # <a name="atl-module-classes"></a>ATL 모듈 클래스
 
@@ -55,15 +55,15 @@ ms.locfileid: "46067638"
 
 - 기능을 확인 `CComModule` 세분화 합니다.
 
-     COM, windowing, 인터페이스, 디버깅 및 응용 프로그램별 (DLL 또는 EXE) 기능에 대 한 지원은 이제 별도 클래스입니다.
+   COM, windowing, 인터페이스, 디버깅 및 응용 프로그램별 (DLL 또는 EXE) 기능에 대 한 지원은 이제 별도 클래스입니다.
 
 - 이러한 각 모듈의 전역 인스턴스를 자동으로 선언 합니다.
 
-     필수 모듈 클래스의 전역 인스턴스를 프로젝트에 연결 됩니다.
+   필수 모듈 클래스의 전역 인스턴스를 프로젝트에 연결 됩니다.
 
 - Init 및 용어 메서드를 호출 하는 필요성을 제거 합니다.
 
-     Init 및 용어 메서드는 모듈 클래스에 대 한 생성자 및 소멸자로 이동 되어 더 이상 없기 Init 및 용어를 호출 해야 합니다.
+   Init 및 용어 메서드는 모듈 클래스에 대 한 생성자 및 소멸자로 이동 되어 더 이상 없기 Init 및 용어를 호출 해야 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

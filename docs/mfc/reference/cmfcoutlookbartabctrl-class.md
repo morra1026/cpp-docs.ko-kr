@@ -1,7 +1,7 @@
 ---
 title: CMFCOutlookBarTabCtrl 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c4836a82c829dafee64c74237fa33c6199ace4e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 19550315f17982e019d1ba6f495dedee6d2f346d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396911"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081016"
 ---
 # <a name="cmfcoutlookbartabctrl-class"></a>CMFCOutlookBarTabCtrl Class
 
@@ -85,7 +85,7 @@ class CMFCOutlookBarTabCtrl : public CMFCBaseTabCtrl
 |이름|설명|
 |----------|-----------------|
 |[CMFCOutlookBarTabCtrl::AddControl](#addcontrol)|Outlook 표시줄에서 새 탭으로 Windows 컨트롤을 추가합니다.|
-|`CMFCOutlookBarTabCtrl::CalcRectEdit`|프레임 워크에서 호출 하는 사용자가 표시 되는 입력란의 크기를 결정의 이름을 바꿉니다 탭을. (`CMFCBaseTabCtrl::CalcRectEdit`를 재정의합니다.)|
+|`CMFCOutlookBarTabCtrl::CalcRectEdit`|프레임 워크에서 호출 하는 사용자가 표시 되는 입력란의 크기를 결정의 이름을 바꿉니다 탭을. ( `CMFCBaseTabCtrl::CalcRectEdit`을 재정의합니다.)|
 |[CMFCOutlookBarTabCtrl::CanShowFewerPageButtons](#canshowfewerpagebuttons)|현재 표시 되는 것 보다 더 적은 Outlook 표시줄 탭 페이지 단추를 표시할 수 있으면 확인 하려면 크기 조정 작업 중 프레임 워크에서 호출 됩니다.|
 |[CMFCOutlookBarTabCtrl::CanShowMorePageButtons](#canshowmorepagebuttons)|현재 표시 되는 것 보다 자세한 Outlook 표시줄 탭 페이지 단추를 표시할 수 있으면 확인 하려면 크기 조정 작업 중 프레임 워크에서 호출 됩니다.|
 |[CMFCOutlookBarTabCtrl::Create](#create)|Outlook 표시줄 탭 컨트롤을 만듭니다.|
@@ -102,7 +102,7 @@ class CMFCOutlookBarTabCtrl : public CMFCBaseTabCtrl
 |[CMFCOutlookBarTabCtrl::IsMode2003](#ismode2003)|Microsoft Outlook 2003을 에뮬레이트하는 모드로 Outlook 표시줄 탭 컨트롤 인지 여부를 확인 합니다.|
 |`CMFCOutlookBarTabCtrl::IsPtInTabArea`|꼭 짓 점이 탭 영역 내에서 결정 합니다. (재정의 [CMFCBaseTabCtrl::IsPtInTabArea](../../mfc/reference/cmfcbasetabctrl-class.md#isptintabarea).)|
 |`CMFCOutlookBarTabCtrl::IsTabDetachable`|탭 분리식 인지 확인 합니다. (재정의 [CMFCBaseTabCtrl::IsTabDetachable](../../mfc/reference/cmfcbasetabctrl-class.md#istabdetachable).)|
-|`CMFCOutlookBarTabCtrl::OnChangeTabs`|탭 삽입 되거나 제거 되 면 프레임 워크에서 호출 됩니다. (`CMFCBaseTabCtrl::OnChangeTabs`를 재정의합니다.)|
+|`CMFCOutlookBarTabCtrl::OnChangeTabs`|탭 삽입 되거나 제거 되 면 프레임 워크에서 호출 됩니다. ( `CMFCBaseTabCtrl::OnChangeTabs`을 재정의합니다.)|
 |[CMFCOutlookBarTabCtrl::OnShowFewerPageButtons](#onshowfewerpagebuttons)|표시 된 탭 페이지 단추의 수를 줄이려면 프레임 워크에서 호출 됩니다.|
 |[CMFCOutlookBarTabCtrl::OnShowMorePageButtons](#onshowmorepagebuttons)|표시 된 탭 페이지 단추의 수를 늘리려면 프레임 워크에서 호출 됩니다.|
 |[CMFCOutlookBarTabCtrl::OnShowOptions](#onshowoptions)|표시 된 **탐색 창 옵션** 대화 합니다.|
@@ -322,7 +322,6 @@ int GetBorderSize() const;
 
 ##  <a name="getvisiblepagebuttons"></a>  CMFCOutlookBarTabCtrl::GetVisiblePageButtons
 
-
 ```
 int GetVisiblePageButtons() const;
 ```
@@ -505,14 +504,13 @@ Microsoft Office 2003 모드에 없는 경우이 메서드를 호출 해야 합�
 
 ##  <a name="setvisiblepagebuttons"></a>  CMFCOutlookBarTabCtrl::SetVisiblePageButtons
 
-
 ```
 void SetVisiblePageButtons(int nVisiblePageButtons);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nVisiblePageButtons*
+[in] *nVisiblePageButtons*<br/>
 
 ### <a name="remarks"></a>설명
 

@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 411b8f58b38d2b35c1353d1ff446407026977d66
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6537cdb9e7ff9806bef3bfec85a94e0d50808477
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46030146"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078468"
 ---
 # <a name="ccomsafearray-class"></a>CComSafeArray 클래스
 
@@ -100,7 +100,7 @@ class CComSafeArray
 |----------|-----------------|
 |[CComSafeArray::operator LPSAFEARRAY](#operator_lpsafearray)|값으로 캐스팅 된 `SAFEARRAY` 포인터입니다.|
 |[CComSafeArray::operator\[\]](ccomsafearray-class.md#operator_at)|배열에서 요소를 검색합니다.|
-|[CComSafeArray::operator =](#operator_eq)|대입 연산자입니다.|  
+|[CComSafeArray::operator =](#operator_eq)|대입 연산자입니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
@@ -110,7 +110,7 @@ class CComSafeArray
 
 ## <a name="remarks"></a>설명
 
-`CComSafeArray` 에 대 한 래퍼를 제공 합니다 [SAFEARRAY 데이터 형식](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearray) 클래스에 간단 하 게 만들고의 거의 모든 VARIANT 지원 형식의 차원 및 다차원 배열을 관리 합니다.
+`CComSafeArray` 는 [SAFEARRAY Data Type](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearray) 클래스에 대한 래퍼를 제공합니다. 따라서 거의 모든 VARIANT 지원 형식의 1차원 및 다차원 배열을 쉽게 만들고 관리할 수 있습니다.
 
 `CComSafeArray` 는 프로세스 간의 배열 전달을 간소화할 뿐만 아니라 상한과 하한에 대해 배열 인덱스 값을 확인하여 추가 보안을 제공합니다.
 
@@ -159,7 +159,7 @@ HRESULT Add(const T& t, BOOL bCopy = TRUE);
 ### <a name="parameters"></a>매개 변수
 
 *psaSrc*<br/>
-에 대 한 포인터를 `SAFEARRAY` 개체입니다.
+`SAFEARRAY` 개체에 대한 포인터입니다.
 
 *ulCount*<br/>
 배열에 추가할 개체의 수입니다.
@@ -311,7 +311,7 @@ HRESULT Create(ULONG ulCount = 0, LONG lLBound = 0);
 ### <a name="parameters"></a>매개 변수
 
 *pBound*<br/>
-에 대 한 포인터를 `SAFEARRAYBOUND` 개체입니다.
+`SAFEARRAYBOUND` 개체에 대한 포인터입니다.
 
 *uDims*<br/>
 배열의 차원 수를 지정 합니다.
@@ -597,7 +597,7 @@ ATL::CComSafeArray<T>& operator=(const SAFEARRAY* psaSrc);
 `CComSafeArray` 개체에 대한 참조입니다.
 
 *psaSrc*<br/>
-에 대 한 포인터를 `SAFEARRAY` 개체입니다.
+`SAFEARRAY` 개체에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 

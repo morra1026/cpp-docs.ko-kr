@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 608b4560f11e35d9aefb2c848a27c99c8dc6f4ec
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 3d942e2c5bca7d86e66cb579de1cbe946cb9f5f6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821350"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081497"
 ---
 # <a name="function-overloading"></a>함수 오버로드
 
@@ -126,7 +126,6 @@ int print(double dvalue, int prec)
 기본 인수는 함수 형식의 일부로 간주되지 않습니다. 따라서 오버로드된 함수를 선택하는 데 사용되지 않습니다. 해당 기본 인수에만 다른 두 개의 함수는 오버로드된 함수 대신 여러 정의로 간주됩니다.
 
 오버로드된 연산자에 기본 인수를 제공할 수 없습니다.
-
 
 ## <a name="argument-matching"></a>인수 일치
 
@@ -471,7 +470,7 @@ int main()
     void Print( PSTR szToPrint );
     ```
 
-     위의 두 함수에는 동일한 인수 목록이 있습니다. `PSTR` 형식에 대 한 동의어가 `char *`합니다. 멤버 범위에서 이 코드를 사용하면 오류가 발생합니다.
+   위의 두 함수에는 동일한 인수 목록이 있습니다. `PSTR` 형식에 대 한 동의어가 `char *`합니다. 멤버 범위에서 이 코드를 사용하면 오류가 발생합니다.
 
 - 열거 형식은 고유한 형식이며 오버로드된 함수 사이를 구분하는 데 사용할 수 있습니다.
 
@@ -482,7 +481,7 @@ int main()
     void Print( char szToPrint[] );
     ```
 
-     다차원 배열의 경우 둘째 및 이후의 모든 차원은 형식의 일부로 간주됩니다. 따라서 이들은 오버로드된 함수를 구별하는 데 사용됩니다.
+   다차원 배열의 경우 둘째 및 이후의 모든 차원은 형식의 일부로 간주됩니다. 따라서 이들은 오버로드된 함수를 구별하는 데 사용됩니다.
 
     ```cpp
     void Print( char szToPrint[] );

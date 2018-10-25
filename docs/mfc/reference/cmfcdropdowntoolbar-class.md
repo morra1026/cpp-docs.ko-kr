@@ -1,7 +1,7 @@
 ---
 title: CMFCDropDownToolBar 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/188/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 675a155c8f19ca9c0ab30d15da9be7f5b3b40e7a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5d781cb78b1dce9f7ab3580e7acd32e3e6dbac55
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392322"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063343"
 ---
 # <a name="cmfcdropdowntoolbar-class"></a>CMFCDropDownToolBar 클래스
 
@@ -54,12 +54,12 @@ class CMFCDropDownToolBar : public CMFCToolBar
 
 |이름|설명|
 |----------|-----------------|
-|[CMFCDropDownToolBar::AllowShowOnPaneMenu](#allowshowonpanemenu)|(`CPane::AllowShowOnPaneMenu`를 재정의합니다.)|
+|[CMFCDropDownToolBar::AllowShowOnPaneMenu](#allowshowonpanemenu)|( `CPane::AllowShowOnPaneMenu`을 재정의합니다.)|
 |[CMFCDropDownToolBar::LoadBitmap](#loadbitmap)|(재정의 [CMFCToolBar::LoadBitmap](../../mfc/reference/cmfctoolbar-class.md#loadbitmap).)|
 |[CMFCDropDownToolBar::LoadToolBar](#loadtoolbar)|(재정의 [CMFCToolBar::LoadToolBar](../../mfc/reference/cmfctoolbar-class.md#loadtoolbar).)|
 |[CMFCDropDownToolBar::OnLButtonUp](#onlbuttonup)||
 |[CMFCDropDownToolBar::OnMouseMove](#onmousemove)||
-|[CMFCDropDownToolBar::OnSendCommand](#onsendcommand)|(`CMFCToolBar::OnSendCommand`를 재정의합니다.)|
+|[CMFCDropDownToolBar::OnSendCommand](#onsendcommand)|( `CMFCToolBar::OnSendCommand`을 재정의합니다.)|
 |[CMFCDropDownToolBar::OnUpdateCmdUI](#onupdatecmdui)|(재정의 [CMFCToolBar::OnUpdateCmdUI](cmfctoolbar-class.md)합니다.|
 
 ### <a name="remarks"></a>설명
@@ -115,7 +115,6 @@ class CMFCDropDownToolBar : public CMFCToolBar
 
 ##  <a name="allowshowonpanemenu"></a>  CMFCDropDownToolBar::AllowShowOnPaneMenu
 
-
 ```
 virtual BOOL AllowShowOnPaneMenu() const;
 ```
@@ -164,12 +163,11 @@ virtual BOOL LoadBitmap(
 
 ### <a name="remarks"></a>설명
 
-합니다 [cmfctoolbar:: Loadtoolbarex](../../mfc/reference/cmfctoolbar-class.md#loadtoolbarex) 도구 모음을 사용 하 여 연결 된 이미지를 로드 하려면이 메서드를 호출 합니다. 이미지 리소스의 사용자 지정 로드를 수행하려면 이 메서드를 재정의합니다.
+[CMFCToolBar::LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#loadtoolbarex) 메서드는 이 메서드를 호출하여 도구 모음과 관련된 이미지를 로드합니다. 이미지 리소스의 사용자 지정 로드를 수행하려면 이 메서드를 재정의합니다.
 
 `LoadBitmapEx` 메서드를 호출하여 도구 모음을 만든 후 추가 이미지를 로드합니다.
 
 ##  <a name="loadtoolbar"></a>  CMFCDropDownToolBar::LoadToolBar
-
 
 ```
 virtual BOOL LoadToolBar(
@@ -184,19 +182,25 @@ virtual BOOL LoadToolBar(
 
 ### <a name="parameters"></a>매개 변수
 
-*uiResID*<br/>
-[in] [in] *uiColdResID*
-*uiMenuResID*<br/>
-[in] [in] *BOOL*
-*uiDisabledResID*<br/>
-[in] [in] *uiMenuDisabledResID* [in] *uiHotResID*
+[in] *uiResID*<br/>
+
+[in] *uiColdResID*<br/>
+
+[in] *uiMenuResID*<br/>
+
+[in] *BOOL*<br/>
+
+[in] *uiDisabledResID*<br/>
+
+[in] *uiMenuDisabledResID*<br/>
+
+[in] *uiHotResID*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="onlbuttonup"></a>  CMFCDropDownToolBar::OnLButtonUp
-
 
 ```
 afx_msg void OnLButtonUp(
@@ -206,13 +210,13 @@ afx_msg void OnLButtonUp(
 
 ### <a name="parameters"></a>매개 변수
 
-*nFlags*<br/>
-[in] [in] *지점*
+[in] *nFlags*<br/>
+
+[in] *지점*<br/>
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="onmousemove"></a>  CMFCDropDownToolBar::OnMouseMove
-
 
 ```
 afx_msg void OnMouseMove(
@@ -222,13 +226,13 @@ afx_msg void OnMouseMove(
 
 ### <a name="parameters"></a>매개 변수
 
-*nFlags*<br/>
-[in] [in] *지점*
+[in] *nFlags*<br/>
+
+[in] *지점*<br/>
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="onsendcommand"></a>  CMFCDropDownToolBar::OnSendCommand
-
 
 ```
 virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
@@ -236,14 +240,13 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *pButton*
+[in] *pButton*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="onupdatecmdui"></a>  CMFCDropDownToolBar::OnUpdateCmdUI
-
 
 ```
 virtual void OnUpdateCmdUI(
@@ -253,8 +256,9 @@ virtual void OnUpdateCmdUI(
 
 ### <a name="parameters"></a>매개 변수
 
-*pTarget*<br/>
-[in] [in] *bDisableIfNoHndler*
+[in] *pTarget*<br/>
+
+[in] *bDisableIfNoHndler*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -267,6 +271,4 @@ virtual void OnUpdateCmdUI(
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
 [CMFCDropDownToolbarButton 클래스](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md)<br/>
 [연습: 도구 모음에 컨트롤 배치](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-
-
 

@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 20cb959727cb2c515bd82d5b4d5d8e45019c6875
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 7f5c117d0d65f86e4f4b69011457e166b6440820
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788489"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081565"
 ---
 # <a name="deferrableeventargs-class"></a>DeferrableEventArgs 클래스
 
@@ -73,7 +73,7 @@ class DeferrableEventArgs : public TEventArgsInterface;
 에 대 한 참조를 가져옵니다 합니다 [지연](http://go.microsoft.com/fwlink/p/?linkid=526520) 지연된 된 이벤트를 나타내는 개체입니다.
 
 ```cpp
-HRESULT GetDeferral([out, retval] Windows::Foundation::IDeferral** result)  
+HRESULT GetDeferral([out, retval] Windows::Foundation::IDeferral** result)
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -88,11 +88,11 @@ HRESULT GetDeferral([out, retval] Windows::Foundation::IDeferral** result)
 ## <a name="invokeallfinished"></a>Deferrableeventargs:: Invokeallfinished
 
 지연된 이벤트를 처리하는 모든 처리가 완료되었음을 나타내기 위해 호출됩니다.
-  
+
 ```cpp
-void InvokeAllFinished()  
+void InvokeAllFinished()
 ```
-  
+
 ### <a name="remarks"></a>설명
 
 이벤트 원본 호출한 후이 메서드를 호출 해야 [InvokeAll](../windows/eventsource-invokeall-method.md)합니다. 이 메서드를 호출하면 추가 지연이 수행되지 않고, 수행된 지연이 없을 경우 완료 처리기가 강제로 실행됩니다.

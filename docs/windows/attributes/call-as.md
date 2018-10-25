@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7ca6336a79b3e218e1e3a68112f1c12d7e4822a4
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: c8769b542fccd512c1c32b418ffc9f1ad5758628
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791130"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50061549"
 ---
 # <a name="callas"></a>call_as
 
@@ -70,10 +70,10 @@ __interface IMInterface {
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-특성 컨텍스트에 대 한 자세한 내용은 참조 하세요. [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 [IDL 특성](idl-attributes.md)<br/>
 [메서드 특성](method-attributes.md)<br/>
-[local](local-cpp.md)  
+[local](local-cpp.md)

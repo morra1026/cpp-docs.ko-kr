@@ -18,18 +18,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 81e03f515d01902ad4c6935b8b263e51823f62d8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: af1eab82c95c933108cf71861083828b939a7591
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080209"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079053"
 ---
 # <a name="installing-database-support-mfcatl"></a>데이터베이스 지원 설치 (MFC/ATL)
 
-Visual c + +는 모든 데이터베이스 제품을 포함 하지 않습니다. 대상  
-  
- 
-## <a name="see-also"></a>참고 항목  
+Visual c + +는 모든 데이터베이스 제품을 포함 하지 않습니다. 대상
+
+
+## <a name="see-also"></a>참고 항목
 
 [데이터 액세스](data-access-in-cpp.md)

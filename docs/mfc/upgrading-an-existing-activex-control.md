@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc5bca0f7ff1b2fdb2650eadbcdca4778d9b53ef
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 0567913eac57c4150f9fe6d051d2fc8e0e31860b
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890362"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082933"
 ---
 # <a name="upgrading-an-existing-activex-control"></a>기존 ActiveX 컨트롤 업그레이드
 
@@ -213,11 +213,11 @@ Internet Explorer에서 사용이 허가 된 ActiveX 컨트롤을 사용 하려�
 
 1. 삽입 된 \<개체 > 라이선스 관리자는 태그 뒤에 사용이 허가 된 컨트롤의 태그입니다.
 
-     예를 들어 Microsoft 마스킹된 편집 컨트롤을 표시 하는 HTML 페이지는 다음과 같습니다. 라이선스 관리자 컨트롤에 대 한 ID가 첫 번째 클래스, 마스킹된 편집 컨트롤에 대 한 ID가 두 번째 클래스입니다. 이전에 만든 제작 파일의 상대 경로를 가리키도록 태그를 변경 하 고 컨트롤의 클래스 ID를 포함 하는 개체 태그를 추가 합니다.
+   예를 들어 Microsoft 마스킹된 편집 컨트롤을 표시 하는 HTML 페이지는 다음과 같습니다. 라이선스 관리자 컨트롤에 대 한 ID가 첫 번째 클래스, 마스킹된 편집 컨트롤에 대 한 ID가 두 번째 클래스입니다. 이전에 만든 제작 파일의 상대 경로를 가리키도록 태그를 변경 하 고 컨트롤의 클래스 ID를 포함 하는 개체 태그를 추가 합니다.
 
 1. 삽입 된 \<EMBED > NCompass ActiveX 플러그 인을 사용 하는 경우 LPK 파일의 특성입니다.
 
-     활성 지원 브라우저에서 다른 컨트롤을 볼 수 있는 경우-NCompass ActiveX 플러그 인을 사용 하 여 Netscape 예를 들어-추가 해야 합니다는 \<EMBED > 아래와 같이 구문입니다.
+   활성 지원 브라우저에서 다른 컨트롤을 볼 수 있는 경우-NCompass ActiveX 플러그 인을 사용 하 여 Netscape 예를 들어-추가 해야 합니다는 \<EMBED > 아래와 같이 구문입니다.
 
 ```
 <OBJECT CLASSID="clsid:5220cb21-c88d-11cf-b347-00aa00a28331">

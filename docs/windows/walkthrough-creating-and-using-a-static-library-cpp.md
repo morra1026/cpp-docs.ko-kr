@@ -16,12 +16,12 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 90754db9c648395ad916cf03682a5c87c0b7da3b
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 3cc592deaed967a7b6e93f9250103e28fb058de3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235310"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080756"
 ---
 # <a name="walkthrough-creating-and-using-a-static-library-c"></a>연습: 정적 라이브러리 만들기 및 사용(C++)
 
@@ -33,9 +33,9 @@ ms.locfileid: "48235310"
 
 - [정적 라이브러리에 클래스 추가](#AddClassToLib)
 
-- [정적 라이브러리를 참조 하는 c + + 콘솔 앱 만들기](#CreateAppToRefTheLib)
+- [정적 라이브러리를 참조하는 C++ 콘솔 앱 만들기](#CreateAppToRefTheLib)
 
-- [앱에서 정적 라이브러리의 기능을 사용 하 여](#UseLibInApp)
+- [앱에서 정적 라이브러리의 기능 사용](#UseLibInApp)
 
 - [앱 실행](#RunApp)
 
@@ -54,7 +54,7 @@ C++ 언어의 기본적인 사항을 알고 있어야 합니다.
    > [!NOTE]
    > Visual Studio 2017 년 보다 오래 된 버전에 **새 프로젝트** 대화 상자에서 **설치 됨** > **템플릿**  >  **Visual c + +** 를 선택한 후 **Win32**합니다. 가운데 창에서 **Win32 콘솔 응용 프로그램**을 선택합니다.
 
-1. 프로젝트의 이름을 지정-예를 들어 *MathFuncsLib*-에 **이름** 상자입니다. 솔루션의 이름을 지정-예를 들어 *StaticLibrary*-에 **솔루션 이름** 상자입니다. **확인** 단추를 선택합니다.
+1. *이름*상자에서 프로젝트 이름(예: **MathFuncsLib** )을 지정합니다. *솔루션 이름*상자에서 솔루션 이름(예: **StaticLibrary** )을 지정합니다. **확인** 단추를 선택합니다.
 
     - Visual Studio 2017의 경우
 
@@ -74,13 +74,13 @@ C++ 언어의 기본적인 사항을 알고 있어야 합니다.
 
 ### <a name="to-add-a-class-to-the-static-library"></a>정적 라이브러리에 클래스를 추가하려면
 
-1. 바로 가기 메뉴를 열고 새 클래스에 대 한 헤더 파일을 만들려면 합니다 **MathFuncsLib** 프로젝트 **솔루션 탐색기**를 선택한 후 **추가**  >   **새 항목**합니다. **새 항목 추가** 대화 상자의 왼쪽 창에 있는 **Visual C++** 에서 **코드**를 선택합니다. 가운데 창에서 **헤더 파일 (.h)** 을 선택합니다. 헤더 파일의 이름을 지정-예를 들어 *MathFuncsLib.h*-를 선택 합니다 **추가** 단추입니다. 빈 헤더 파일이 표시됩니다.
+1. 바로 가기 메뉴를 열고 새 클래스에 대 한 헤더 파일을 만들려면 합니다 **MathFuncsLib** 프로젝트 **솔루션 탐색기**를 선택한 후 **추가**  >   **새 항목**합니다. **새 항목 추가** 대화 상자의 왼쪽 창에 있는 **Visual C++** 에서 **코드**를 선택합니다. 가운데 창에서 **헤더 파일 (.h)** 을 선택합니다. 헤더 파일의 이름(예: *MathFuncsLib.h*)을 지정하고 **추가** 단추를 선택합니다. 빈 헤더 파일이 표시됩니다.
 
 1. 라는 클래스를 추가 `MyMathFuncs` 더하기, 빼기, 곱하기 및 나누기 같은 일반적인 산술 연산을 수행 합니다. 코드는 같아야 합니다.
 
    [!code-cpp[NVC_Walkthrough_Create_Static_Lib#100](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_1.h)]
 
-1. 바로 가기 메뉴를 열고 새 클래스에 대 한 소스 파일을 만들려면 합니다 **MathFuncsLib** 프로젝트 **솔루션 탐색기**를 선택한 후 **추가**  >   **새 항목**합니다. **새 항목 추가** 대화 상자의 왼쪽 창에 있는 **Visual C++** 에서 **코드**를 선택합니다. 가운데 창에서 **C++ 파일 (.cpp)** 을 선택합니다. 소스 파일의 이름을 지정-예를 들어 *MathFuncsLib.cpp*-를 선택 합니다 **추가** 단추입니다. 빈 소스 파일이 표시됩니다.
+1. 바로 가기 메뉴를 열고 새 클래스에 대 한 소스 파일을 만들려면 합니다 **MathFuncsLib** 프로젝트 **솔루션 탐색기**를 선택한 후 **추가**  >   **새 항목**합니다. **새 항목 추가** 대화 상자의 왼쪽 창에 있는 **Visual C++** 에서 **코드**를 선택합니다. 가운데 창에서 **C++ 파일 (.cpp)** 을 선택합니다. 소스 파일의 이름(예: *MathFuncsLib.cpp*)을 지정하고 **추가** 단추를 선택합니다. 빈 소스 파일이 표시됩니다.
 
 1. 이 소스 파일을 사용하여 **MyMathFuncs**의 기능을 구현합니다. 코드는 같아야 합니다.
 
@@ -91,18 +91,18 @@ C++ 언어의 기본적인 사항을 알고 있어야 합니다.
    > [!NOTE]
    > Visual Studio 명령줄에서 빌드하는 경우 프로그램을 빌드하는 데 두 단계를 거쳐야 합니다. 먼저 실행 `cl /c /EHsc MathFuncsLib.cpp` 라는 개체 파일을 만들고 코드를 컴파일하려면 코드 `MathFuncsLib.obj`합니다. `cl` 명령은 Cl.exe 컴파일러를 호출하고, `/c` 옵션은 연결 없는 컴파일을 지정합니다. 자세한 내용은 [(컴파일 없이 링크 사용)는 /c](../build/reference/c-compile-without-linking.md).) 둘째, 실행 `lib MathFuncsLib.obj` 정적 라이브러리를 만들고 코드를 링크 합니다 `MathFuncsLib.lib`합니다. `lib` 명령은 Lib.exe 라이브러리 관리자를 호출합니다. 자세한 내용은 [LIB Reference](../build/reference/lib-reference.md)를 참조하세요.
 
-##  <a name="CreateAppToRefTheLib"></a> 정적 라이브러리를 참조 하는 c + + 콘솔 앱 만들기
+##  <a name="CreateAppToRefTheLib"></a> 정적 라이브러리를 참조하는 C++ 콘솔 앱 만들기
 
 ### <a name="to-create-a-c-console-app-that-references-the-static-library"></a>정적 라이브러리를 참조하는 C++ 콘솔 앱을 만들려면
 
 1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
-1. 왼쪽된 창에서 합니다 **새 프로젝트** 대화 상자에서 **설치 됨** > **Visual c + +** 를 선택한 후 **Windows Desktop**. 가운데 창에서 선택 **Windows 데스크톱 마법사**합니다. 
+1. 왼쪽된 창에서 합니다 **새 프로젝트** 대화 상자에서 **설치 됨** > **Visual c + +** 를 선택한 후 **Windows Desktop**. 가운데 창에서 선택 **Windows 데스크톱 마법사**합니다.
 
    > [!NOTE]
    > Visual Studio 2017 년 보다 오래 된 버전에 **새 프로젝트** 대화 상자에서 **설치 됨** > **템플릿**  >  **Visual c + +** 를 선택한 후 **Win32**합니다. 가운데 창에서 **Win32 콘솔 응용 프로그램**을 선택합니다.
 
-1. 프로젝트의 이름을 지정-예를 들어 *MyExecRefsLib*-에 **이름** 상자입니다. **솔루션**옆에 있는 드롭다운 목록에서 **솔루션에 추가**를 선택합니다. 이 명령은 정적 라이브러리를 포함 하는 솔루션에 새 프로젝트를 추가 합니다. **확인** 단추를 선택합니다.
+1. *이름*상자에서 프로젝트 이름(예: **MyExecRefsLib** )을 지정합니다. **솔루션**옆에 있는 드롭다운 목록에서 **솔루션에 추가**를 선택합니다. 이 명령은 정적 라이브러리를 포함 하는 솔루션에 새 프로젝트를 추가 합니다. **확인** 단추를 선택합니다.
 
     - Visual Studio 2017의 경우
 
@@ -118,7 +118,7 @@ C++ 언어의 기본적인 사항을 알고 있어야 합니다.
 
         1. 했는지 **콘솔 응용 프로그램** 을 선택 합니다. 다음 확인 합니다 **빈 프로젝트** 확인란을 선택한 **마침**합니다.
 
-##  <a name="UseLibInApp"></a> 앱에서 정적 라이브러리의 기능을 사용 하 여
+##  <a name="UseLibInApp"></a> 앱에서 정적 라이브러리의 기능 사용
 
 ### <a name="to-use-the-functionality-from-the-static-library-in-the-app"></a>앱에서 정적 라이브러리의 기능을 사용하려면
 
@@ -144,7 +144,7 @@ C++ 언어의 기본적인 사항을 알고 있어야 합니다.
 
 1. **솔루션 탐색기** 에서 **MyExecRefsLib** 의 바로 가기 메뉴를 열고 **시작 프로젝트로 설정**을 선택하여 **MyExecRefsLib**가 기본 프로젝트로 선택되었는지 확인합니다.
 
-1. 메뉴 모음에서 프로젝트를 실행 하려면 **디버깅할** > **디버깅 하지 않고 시작**합니다. 출력은 유사 합니다.
+1. 프로젝트를 실행하려면 메뉴 모음에서 **디버그** > **디버그하지 않고 시작**을 선택합니다. 출력은 유사 합니다.
 
     ```Output
     a + b = 106.4

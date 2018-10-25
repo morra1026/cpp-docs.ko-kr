@@ -18,30 +18,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 70b472ba11445cdc5aa2a192d02d82c51d724b8c
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: a6a389289f8849ac6155543299392586dcd389d2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42540860"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078949"
 ---
 # <a name="pushmacro"></a>push_macro
-값을 저장 합니다 *macro_name* 이 매크로 대 한 스택의 맨 위에 매크로입니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-#pragma push_macro("  
-macro_name  
-")  
-```  
-  
-## <a name="remarks"></a>설명  
- 
-에 대 한 값을 검색할 수 있습니다 *macro_name* 사용 하 여 `pop_macro`입니다.  
-  
-참조 [pop_macro](../preprocessor/pop-macro.md) 샘플입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- 
+값을 저장 합니다 *macro_name* 이 매크로 대 한 스택의 맨 위에 매크로입니다.
+
+## <a name="syntax"></a>구문
+
+```
+#pragma push_macro("
+macro_name
+")
+```
+
+## <a name="remarks"></a>설명
+
+에 대 한 값을 검색할 수 있습니다 *macro_name* 사용 하 여 `pop_macro`입니다.
+
+참조 [pop_macro](../preprocessor/pop-macro.md) 샘플입니다.
+
+## <a name="see-also"></a>참고 항목
+
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40dddf2bb1619bd896ecf50008f80fca968ef8c9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ce642b6ed4017dba66d80325e7b9be8f18a7fb16
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46075711"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076089"
 ---
 # <a name="ccomcachedtearoffobject-class"></a>CComCachedTearOffObject 클래스
 
@@ -199,7 +199,7 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
 ### <a name="remarks"></a>설명
 
-요청한 인터페이스가 `IUnknown`에 대 한 포인터를 반환 합니다는 `CComCachedTearOffObject`의 자체 `IUnknown` 참조 횟수를 증가 시킵니다. 그렇지 않은 경우 사용 하 여 분리 클래스에서 인터페이스에 대 한 쿼리를 [InternalQueryInterface](ccomobjectrootex-class.md#internalqueryinterface) 에서 상속 된 메서드 `CComObjectRootEx`합니다.  
+요청한 인터페이스가 `IUnknown`에 대 한 포인터를 반환 합니다는 `CComCachedTearOffObject`의 자체 `IUnknown` 참조 횟수를 증가 시킵니다. 그렇지 않은 경우 사용 하 여 분리 클래스에서 인터페이스에 대 한 쿼리를 [InternalQueryInterface](ccomobjectrootex-class.md#internalqueryinterface) 에서 상속 된 메서드 `CComObjectRootEx`합니다.
 
 ##  <a name="release"></a>  CComCachedTearOffObject::Release
 

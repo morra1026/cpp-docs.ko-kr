@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b1b8da6f6c1b94432d9cd4c91d88f6d844fbb27
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4184ca20188ccbc3eff0818e807911635292b668
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433051"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081380"
 ---
 # <a name="message-categories"></a>메시지 범주
 
@@ -33,17 +33,17 @@ ms.locfileid: "46433051"
 
 1. Windows 메시지
 
-     여기에 사용 하 여 시작 하는 메시지에 주로 합니다 **WM_** WM_COMMAND 제외 하 고 접두사입니다. Windows 메시지는 windows 및 보기에서 처리 됩니다. 이러한 메시지는 메시지를 처리 하는 방법을 결정 하는 데 사용 되는 매개 변수가 있는 경우가 많습니다.
+   여기에 사용 하 여 시작 하는 메시지에 주로 합니다 **WM_** WM_COMMAND 제외 하 고 접두사입니다. Windows 메시지는 windows 및 보기에서 처리 됩니다. 이러한 메시지는 메시지를 처리 하는 방법을 결정 하는 데 사용 되는 매개 변수가 있는 경우가 많습니다.
 
 1. 컨트롤 알림
 
-     부모 창에 WM_COMMAND 알림 메시지에서 컨트롤 및 기타 자식 창을 포함 됩니다. 예를 들어 편집 컨트롤을 사용자가 편집 컨트롤의 텍스트를 변경할 수 있는 동작을 수행한 경우에에서 EN_CHANGE 컨트롤 알림 코드를 포함 하는 WM_COMMAND 메시지 부모를 보냅니다. 창 메시지 처리기는 컨트롤의 텍스트를 검색 하는 등의 적절 한 방법으로 알림 메시지에 응답 합니다.
+   부모 창에 WM_COMMAND 알림 메시지에서 컨트롤 및 기타 자식 창을 포함 됩니다. 예를 들어 편집 컨트롤을 사용자가 편집 컨트롤의 텍스트를 변경할 수 있는 동작을 수행한 경우에에서 EN_CHANGE 컨트롤 알림 코드를 포함 하는 WM_COMMAND 메시지 부모를 보냅니다. 창 메시지 처리기는 컨트롤의 텍스트를 검색 하는 등의 적절 한 방법으로 알림 메시지에 응답 합니다.
 
-     프레임 워크는 같은 다른 컨트롤 알림 메시지를 라우팅하고 **WM_** 메시지입니다. 그러나 단, 해당 사용자가 단추를 보낸 BN_CLICKED 컨트롤 알림 메시지를입니다. 이 메시지는 특별히 명령 메시지를 처리 하며 다른 명령 처럼 라우팅됩니다.
+   프레임 워크는 같은 다른 컨트롤 알림 메시지를 라우팅하고 **WM_** 메시지입니다. 그러나 단, 해당 사용자가 단추를 보낸 BN_CLICKED 컨트롤 알림 메시지를입니다. 이 메시지는 특별히 명령 메시지를 처리 하며 다른 명령 처럼 라우팅됩니다.
 
 1. 명령 메시지
 
-     여기에 사용자 인터페이스 개체에서 알림 메시지 WM_COMMAND: 메뉴, 도구 모음 단추 및 바로 가기 키입니다. 프레임 워크 명령을 다르게 다른 메시지를 처리 하 고에 설명 된 대로 많은 종류의 개체를 처리할 수 있습니다 [명령 대상](../mfc/command-targets.md)합니다.
+   여기에 사용자 인터페이스 개체에서 알림 메시지 WM_COMMAND: 메뉴, 도구 모음 단추 및 바로 가기 키입니다. 프레임 워크 명령을 다르게 다른 메시지를 처리 하 고에 설명 된 대로 많은 종류의 개체를 처리할 수 있습니다 [명령 대상](../mfc/command-targets.md)합니다.
 
 ##  <a name="_core_windows_messages_and_control.2d.notification_messages"></a> Windows 메시지 및 컨트롤 알림 메시지
 

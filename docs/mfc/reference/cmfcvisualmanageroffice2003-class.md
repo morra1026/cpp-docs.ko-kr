@@ -102,12 +102,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43f180fd62d4e79f64119097401632caca9b44fe
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d50731fede9a65e8d354008e1cee0075b43dd163
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399404"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083531"
 ---
 # <a name="cmfcvisualmanageroffice2003-class"></a>CMFCVisualManagerOffice2003 클래스
 
@@ -131,82 +131,82 @@ class CMFCVisualManagerOffice2003 : public CMFCVisualManagerOfficeXP
 |[CMFCVisualManagerOffice2003::DrawPushButtonWinXP](#drawpushbuttonwinxp)|현재 Windows XP 테마를 사용 하 여 푸시 단추를 그립니다. (재정의 [CMFCVisualManager::DrawPushButtonWinXP](../../mfc/reference/cmfcvisualmanager-class.md#drawpushbuttonwinxp).)|
 |[CMFCVisualManagerOffice2003::GetBaseThemeColor](#getbasethemecolor)|기본 테마 색을 가져옵니다.|
 |[CMFCVisualManagerOffice2003::GetHighlightMenuItemColor](#gethighlightmenuitemcolor)|강조 표시 된 메뉴 항목에 사용 되는 색을 가져옵니다.|
-|[CMFCVisualManagerOffice2003::GetPropertyGridGroupColor](#getpropertygridgroupcolor)|프레임 워크는 속성 목록의 배경색을 가져오려면이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::GetPropertyGridGroupColor`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::GetPropertyGridGroupTextColor](#getpropertygridgrouptextcolor)|프레임 워크는 속성 목록의 텍스트 색을 검색 하려면이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::GetPropertyGridGroupTextColor`를 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::GetPropertyGridGroupColor](#getpropertygridgroupcolor)|프레임 워크는 속성 목록의 배경색을 가져오려면이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::GetPropertyGridGroupColor`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::GetPropertyGridGroupTextColor](#getpropertygridgrouptextcolor)|프레임 워크는 속성 목록의 텍스트 색을 검색 하려면이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::GetPropertyGridGroupTextColor`을 재정의합니다.)|
 |[CMFCVisualManagerOffice2003::GetShowAllMenuItemsHeight](#getshowallmenuitemsheight)|모든 메뉴 항목의 높이 반환합니다. (재정의 [CMFCVisualManager::GetShowAllMenuItemsHeight](../../mfc/reference/cmfcvisualmanager-class.md#getshowallmenuitemsheight).)|
-|[CMFCVisualManagerOffice2003::GetSmartDockingBaseGuideColors](#getsmartdockingbaseguidecolors)|지정 된 기본 그룹 배경색과 테두리 색을 설정합니다. (`CMFCVisualManagerOfficeXP::GetSmartDockingBaseGuideColors`를 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::GetSmartDockingBaseGuideColors](#getsmartdockingbaseguidecolors)|지정 된 기본 그룹 배경색과 테두리 색을 설정합니다. ( `CMFCVisualManagerOfficeXP::GetSmartDockingBaseGuideColors`을 재정의합니다.)|
 |[CMFCVisualManagerOffice2003::GetSmartDockingHighlightToneColor](#getsmartdockinghighlighttonecolor)|어조 강조 표시 색을 가져옵니다. (재정의 [CMFCVisualManager::GetSmartDockingHighlightToneColor](../../mfc/reference/cmfcvisualmanager-class.md#getsmartdockinghighlighttonecolor).)|
 |[CMFCVisualManagerOffice2003::GetTabFrameColors](#gettabframecolors)|프레임 워크 탭 창 그리기에 대 한 색 집합을 검색 하는 경우이 함수를 호출 합니다. (재정의 [CMFCVisualManager::GetTabFrameColors](../../mfc/reference/cmfcvisualmanager-class.md#gettabframecolors).)|
-|[CMFCVisualManagerOffice2003::GetToolBarCustomizeButtonMargin](#gettoolbarcustomizebuttonmargin)|도구 모음 사용자 지정 단추의 여백을 가져옵니다. (`CMFCVisualManager::GetToolBarCustomizeButtonMargin`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::GetToolbarDisabledColor](#gettoolbardisabledcolor)|도구 모음에 대 한 비활성화 된 색을 가져옵니다. (`CMFCVisualManager::GetToolbarDisabledColor`를 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::GetToolBarCustomizeButtonMargin](#gettoolbarcustomizebuttonmargin)|도구 모음 사용자 지정 단추의 여백을 가져옵니다. ( `CMFCVisualManager::GetToolBarCustomizeButtonMargin`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::GetToolbarDisabledColor](#gettoolbardisabledcolor)|도구 모음에 대 한 비활성화 된 색을 가져옵니다. ( `CMFCVisualManager::GetToolbarDisabledColor`을 재정의합니다.)|
 |[CMFCVisualManagerOffice2003::GetToolTipInfo](#gettooltipinfo)|도구 설명 정보를 가져오기 위해 프레임 워크에서 호출 됩니다. (재정의 [CMFCVisualManager::GetToolTipInfo](../../mfc/reference/cmfcvisualmanager-class.md#gettooltipinfo).)|
 |[CMFCVisualManagerOffice2003::IsDefaultWinXPColorsEnabled](#isdefaultwinxpcolorsenabled)|비주얼 관리자 네이티브 Windows XP 테마 색을 사용 하는지 여부를 나타냅니다.|
 |[CMFCVisualManagerOffice2003::IsDockingTabHasBorder](#isdockingtabhasborder)|현재 비주얼 관리자 창이 도킹 되어 탭 된 주위에 테두리를 그릴지 여부를 반환 합니다. (재정의 [CMFCVisualManager::IsDockingTabHasBorder](../../mfc/reference/cmfcvisualmanager-class.md#isdockingtabhasborder).)|
-|[CMFCVisualManagerOffice2003::IsHighlightOneNoteTabs](#ishighlightonenotetabs)|OneNote 탭을 강조 표시 해야 하는지 여부를 나타냅니다. (`CMFCVisualManager::IsHighlightOneNoteTabs`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::IsOffsetPressedButton](#isoffsetpressedbutton)|도구 모음 단추를 그릴 때 프레임 워크에서 호출 됩니다. (`CMFCVisualManager::IsOffsetPressedButton`를 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::IsHighlightOneNoteTabs](#ishighlightonenotetabs)|OneNote 탭을 강조 표시 해야 하는지 여부를 나타냅니다. ( `CMFCVisualManager::IsHighlightOneNoteTabs`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::IsOffsetPressedButton](#isoffsetpressedbutton)|도구 모음 단추를 그릴 때 프레임 워크에서 호출 됩니다. ( `CMFCVisualManager::IsOffsetPressedButton`을 재정의합니다.)|
 |[CMFCVisualManagerOffice2003::IsStatusBarOfficeXPLook](#isstatusbarofficexplook)|Office XP 확인을 사용 하 여 상태 표시줄이 있는지 여부를 나타냅니다.|
 |[CMFCVisualManagerOffice2003::IsToolbarRoundShape](#istoolbarroundshape)|지정 된 도구 모음에 둥근 도형을 있는지 여부를 나타냅니다. (재정의 [CMFCVisualManager::IsToolbarRoundShape](../../mfc/reference/cmfcvisualmanager-class.md#istoolbarroundshape).)|
 |[CMFCVisualManagerOffice2003::IsUseGlobalTheme](#isuseglobaltheme)|전역 Windows XP 테마 사용 되는지 여부를 나타냅니다.|
 |[CMFCVisualManagerOffice2003::IsWindowsThemingSupported](#iswindowsthemingsupported)|Windows 테마 지원 되는지 여부를 나타냅니다. (재정의 [CMFCVisualManager::IsWindowsThemingSupported](../../mfc/reference/cmfcvisualmanager-class.md#iswindowsthemingsupported).)|
 |[CMFCVisualManagerOffice2003::OnDrawAutoHideButtonBorder](#ondrawautohidebuttonborder)|자동 숨기기 단추의 테두리를 그릴 때 프레임워크에서 이 메서드를 호출합니다. (재정의 [CMFCVisualManager::OnDrawAutoHideButtonBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawautohidebuttonborder).)|
-|[CMFCVisualManagerOffice2003::OnDrawBarGripper](#ondrawbargripper)|컨트롤 막대에 대 한 위치 조정 막대를 그릴 때 프레임 워크에서 호출 됩니다. (`CMFCVisualManagerOfficeXP::OnDrawBarGripper`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnDrawBrowseButton](#ondrawbrowsebutton)|편집 컨트롤에 대 한 찾아보기 단추를 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnDrawBrowseButton`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnDrawButtonBorder](#ondrawbuttonborder)|도구 모음 단추의 테두리를 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnDrawButtonBorder`를 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawBarGripper](#ondrawbargripper)|컨트롤 막대에 대 한 위치 조정 막대를 그릴 때 프레임 워크에서 호출 됩니다. ( `CMFCVisualManagerOfficeXP::OnDrawBarGripper`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawBrowseButton](#ondrawbrowsebutton)|편집 컨트롤에 대 한 찾아보기 단추를 그릴 때 프레임 워크에서이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::OnDrawBrowseButton`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawButtonBorder](#ondrawbuttonborder)|도구 모음 단추의 테두리를 그릴 때 프레임 워크에서이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::OnDrawButtonBorder`을 재정의합니다.)|
 |[CMFCVisualManagerOffice2003::OnDrawCaptionBarBorder](#ondrawcaptionbarborder)|프레임 워크의 테두리를 그릴 때이 메서드를 호출을 [CMFCCaptionBar 클래스](../../mfc/reference/cmfccaptionbar-class.md) 개체입니다. (재정의 [CMFCVisualManager::OnDrawCaptionBarBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawcaptionbarborder).)|
 |[CMFCVisualManagerOffice2003::OnDrawCheckBoxEx](#ondrawcheckboxex)|확인란을 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::OnDrawCheckBoxEx](../../mfc/reference/cmfcvisualmanager-class.md#ondrawcheckboxex).)|
-|[CMFCVisualManagerOffice2003::OnDrawComboBorder](#ondrawcomboborder)|테두리를 그릴 때 프레임 워크에서이 메서드를 호출을 [CMFCToolBarComboBoxButton 클래스](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md) 개체입니다. (`CMFCVisualManagerOfficeXP::OnDrawComboBorder`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnDrawComboDropButton](#ondrawcombodropbutton)|드롭다운 단추를 그릴 때 프레임 워크에서이 메서드를 호출을 [CMFCToolBarComboBoxButton 클래스](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md)합니다. (`CMFCVisualManagerOfficeXP::OnDrawComboDropButton`를 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawComboBorder](#ondrawcomboborder)|테두리를 그릴 때 프레임 워크에서이 메서드를 호출을 [CMFCToolBarComboBoxButton 클래스](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md) 개체입니다. ( `CMFCVisualManagerOfficeXP::OnDrawComboBorder`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawComboDropButton](#ondrawcombodropbutton)|드롭다운 단추를 그릴 때 프레임 워크에서이 메서드를 호출을 [CMFCToolBarComboBoxButton 클래스](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md)합니다. ( `CMFCVisualManagerOfficeXP::OnDrawComboDropButton`을 재정의합니다.)|
 |[CMFCVisualManagerOffice2003::OnDrawControlBorder](#ondrawcontrolborder)|컨트롤의 테두리를 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::OnDrawControlBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawcontrolborder).)|
 |[CMFCVisualManagerOffice2003::OnDrawExpandingBox](#ondrawexpandingbox)|프레임 워크 확장 상자를 그릴 때이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::OnDrawExpandingBox](../../mfc/reference/cmfcvisualmanager-class.md#ondrawexpandingbox).)|
 |[CMFCVisualManagerOffice2003::OnDrawHeaderCtrlBorder](#ondrawheaderctrlborder)|인스턴스의 테두리를 그릴 때 프레임 워크에서이 메서드를 호출 합니다 [CMFCHeaderCtrl 클래스](../../mfc/reference/cmfcheaderctrl-class.md)합니다. (재정의 [CMFCVisualManager::OnDrawHeaderCtrlBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawheaderctrlborder).)|
-|[CMFCVisualManagerOffice2003::OnDrawMenuBorder](#ondrawmenuborder)|프레임 워크의 테두리를 그릴 때이 메서드를 호출을 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md)합니다. (`CMFCVisualManagerOfficeXP::OnDrawMenuBorder`를 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawMenuBorder](#ondrawmenuborder)|프레임 워크의 테두리를 그릴 때이 메서드를 호출을 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md)합니다. ( `CMFCVisualManagerOfficeXP::OnDrawMenuBorder`을 재정의합니다.)|
 |[CMFCVisualManagerOffice2003::OnDrawOutlookBarSplitter](#ondrawoutlookbarsplitter)|Outlook 표시줄에 대 한 분할을 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::OnDrawOutlookBarSplitter](../../mfc/reference/cmfcvisualmanager-class.md#ondrawoutlookbarsplitter).)|
 |[CMFCVisualManagerOffice2003::OnDrawOutlookPageButtonBorder](#ondrawoutlookpagebuttonborder)|Outlook 페이지 단추의 테두리를 그릴 때 프레임 워크에서 호출 됩니다. (재정의 [CMFCVisualManager::OnDrawOutlookPageButtonBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondrawoutlookpagebuttonborder).)|
-|[CMFCVisualManagerOffice2003::OnDrawPaneBorder](#ondrawpaneborder)|프레임 워크의 테두리를 그릴 때이 메서드를 호출을 [CPane 클래스](../../mfc/reference/cpane-class.md) 개체입니다. (`CMFCVisualManagerOfficeXP::OnDrawPaneBorder`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnDrawPaneCaption](#ondrawpanecaption)|프레임 워크에 대 한 캡션을 그릴 때이 메서드를 호출을 [CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md) 개체입니다. (`CMFCVisualManagerOfficeXP::OnDrawPaneCaption`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnDrawPopupWindowBorder](#ondrawpopupwindowborder)|팝업 창의 테두리를 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnDrawPopupWindowBorder`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnDrawPopupWindowButtonBorder](#ondrawpopupwindowbuttonborder)|팝업 창에서 단추의 테두리를 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnDrawPopupWindowButtonBorder`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnDrawPopupWindowCaption](#ondrawpopupwindowcaption)|팝업 창의 캡션을 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnDrawPopupWindowCaption`를 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawPaneBorder](#ondrawpaneborder)|프레임 워크의 테두리를 그릴 때이 메서드를 호출을 [CPane 클래스](../../mfc/reference/cpane-class.md) 개체입니다. ( `CMFCVisualManagerOfficeXP::OnDrawPaneBorder`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawPaneCaption](#ondrawpanecaption)|프레임 워크에 대 한 캡션을 그릴 때이 메서드를 호출을 [CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md) 개체입니다. ( `CMFCVisualManagerOfficeXP::OnDrawPaneCaption`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawPopupWindowBorder](#ondrawpopupwindowborder)|팝업 창의 테두리를 그릴 때 프레임 워크에서이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::OnDrawPopupWindowBorder`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawPopupWindowButtonBorder](#ondrawpopupwindowbuttonborder)|팝업 창에서 단추의 테두리를 그릴 때 프레임 워크에서이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::OnDrawPopupWindowButtonBorder`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawPopupWindowCaption](#ondrawpopupwindowcaption)|팝업 창의 캡션을 그릴 때 프레임 워크에서이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::OnDrawPopupWindowCaption`을 재정의합니다.)|
 |[CMFCVisualManagerOffice2003::OnDrawRibbonButtonsGroup](#ondrawribbonbuttonsgroup)|리본의 단추 그룹을 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::OnDrawRibbonButtonsGroup](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonbuttonsgroup).)|
 |[CMFCVisualManagerOffice2003::OnDrawRibbonCategoryCaption](#ondrawribboncategorycaption)|리본 범주에 대 한 캡션 표시줄을 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::OnDrawRibbonCategoryCaption](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribboncategorycaption).)|
 |[CMFCVisualManagerOffice2003::OnDrawRibbonCategoryTab](#ondrawribboncategorytab)|리본 범주에 대 한 탭을 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::OnDrawRibbonCategoryTab](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribboncategorytab).)|
 |[CMFCVisualManagerOffice2003::OnDrawRibbonProgressBar](#ondrawribbonprogressbar)|그릴 때 프레임 워크에서이 메서드를 호출을 [CMFCRibbonProgressBar 클래스](../../mfc/reference/cmfcribbonprogressbar-class.md)합니다. (재정의 [CMFCVisualManager::OnDrawRibbonProgressBar](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonprogressbar).)|
-|[CMFCVisualManagerOffice2003::OnDrawRibbonQuickAccessToolBarSeparator](#ondrawribbonquickaccesstoolbarseparator)|리본 빠른 실행 도구 모음의 구분 기호를 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnDrawRibbonQuickAccessToolBarSeparator`를 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawRibbonQuickAccessToolBarSeparator](#ondrawribbonquickaccesstoolbarseparator)|리본 빠른 실행 도구 모음의 구분 기호를 그릴 때 프레임 워크에서이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::OnDrawRibbonQuickAccessToolBarSeparator`을 재정의합니다.)|
 |[CMFCVisualManagerOffice2003::OnDrawRibbonSliderChannel](#ondrawribbonsliderchannel)|프레임 워크의 채널을 그릴 때이 메서드를 호출을 [CMFCRibbonSlider 클래스](../../mfc/reference/cmfcribbonslider-class.md)합니다. (재정의 [CMFCVisualManager::OnDrawRibbonSliderChannel](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonsliderchannel).)|
 |[CMFCVisualManagerOffice2003::OnDrawRibbonSliderThumb](#ondrawribbonsliderthumb)|프레임 워크의 thumb을 그릴 때이 메서드를 호출을 [CMFCRibbonSlider](../../mfc/reference/cmfcribbonslider-class.md) 개체입니다. (재정의 [CMFCVisualManager::OnDrawRibbonSliderThumb](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonsliderthumb).)|
 |[CMFCVisualManagerOffice2003::OnDrawRibbonSliderZoomButton](#ondrawribbonsliderzoombutton)|프레임 워크의 확대/축소 단추를 그릴 때이 메서드를 호출을 [CMFCRibbonSlider](../../mfc/reference/cmfcribbonslider-class.md) 개체입니다. (재정의 [CMFCVisualManager::OnDrawRibbonSliderZoomButton](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonsliderzoombutton).)|
-|[CMFCVisualManagerOffice2003::OnDrawRibbonStatusBarPane](#ondrawribbonstatusbarpane)|창 상태 표시줄에 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnDrawRibbonStatusBarPane`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnDrawScrollButtons](#ondrawscrollbuttons)|스크롤 단추를 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnDrawScrollButtons`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnDrawSeparator](#ondrawseparator)|구분 기호를 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnDrawSeparator`를 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawRibbonStatusBarPane](#ondrawribbonstatusbarpane)|창 상태 표시줄에 그릴 때 프레임 워크에서이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::OnDrawRibbonStatusBarPane`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawScrollButtons](#ondrawscrollbuttons)|스크롤 단추를 그릴 때 프레임 워크에서이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::OnDrawScrollButtons`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawSeparator](#ondrawseparator)|구분 기호를 그릴 때 프레임 워크에서이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::OnDrawSeparator`을 재정의합니다.)|
 |[CMFCVisualManagerOffice2003::OnDrawShowAllMenuItems](#ondrawshowallmenuitems)|프레임 워크 메뉴에 있는 모든 항목을 그릴 때이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::OnDrawShowAllMenuItems](../../mfc/reference/cmfcvisualmanager-class.md#ondrawshowallmenuitems).)|
-|[CMFCVisualManagerOffice2003::OnDrawStatusBarPaneBorder](#ondrawstatusbarpaneborder)|테두리를 그릴 때 프레임 워크에서이 메서드를 호출을 [CMFCStatusBar 클래스](../../mfc/reference/cmfcstatusbar-class.md) 개체입니다. (`CMFCVisualManagerOfficeXP::OnDrawStatusBarPaneBorder`를 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawStatusBarPaneBorder](#ondrawstatusbarpaneborder)|테두리를 그릴 때 프레임 워크에서이 메서드를 호출을 [CMFCStatusBar 클래스](../../mfc/reference/cmfcstatusbar-class.md) 개체입니다. ( `CMFCVisualManagerOfficeXP::OnDrawStatusBarPaneBorder`을 재정의합니다.)|
 |[CMFCVisualManagerOffice2003::OnDrawStatusBarProgress](#ondrawstatusbarprogress)|진행률 표시기 그릴 때 프레임 워크에서이 메서드를 호출 합니다 [CMFCStatusBar](../../mfc/reference/cmfcstatusbar-class.md) 개체입니다. (재정의 [CMFCVisualManager::OnDrawStatusBarProgress](../../mfc/reference/cmfcvisualmanager-class.md#ondrawstatusbarprogress).)|
 |[CMFCVisualManagerOffice2003::OnDrawStatusBarSizeBox](#ondrawstatusbarsizebox)|프레임 워크에 대 한 크기 상자를 그릴 때이 메서드를 호출을 [CMFCStatusBar](../../mfc/reference/cmfcstatusbar-class.md)합니다. (재정의 [CMFCVisualManager::OnDrawStatusBarSizeBox](../../mfc/reference/cmfcvisualmanager-class.md#ondrawstatusbarsizebox).)|
-|[CMFCVisualManagerOffice2003::OnDrawTab](#ondrawtab)|프레임 워크에 대 한 탭을 그릴 때이 메서드를 호출을 [CMFCBaseTabCtrl 클래스](../../mfc/reference/cmfcbasetabctrl-class.md) 개체입니다. (`CMFCVisualManagerOfficeXP::OnDrawTab`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnDrawTabsButtonBorder](#ondrawtabsbuttonborder)|프레임 워크 탭 단추의 테두리를 그릴 때이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnDrawTabsButtonBorder`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnDrawTask](#ondrawtask)|그릴 때 프레임 워크에서이 메서드를 호출을 [CMFCTasksPaneTask 클래스](../../mfc/reference/cmfctaskspanetask-class.md) 개체입니다. (`CMFCVisualManagerOfficeXP::OnDrawTask`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnDrawTasksGroupAreaBorder](#ondrawtasksgroupareaborder)|프레임 워크 그룹 주위에 테두리를 그릴 때이 메서드를 호출을 [CMFCTasksPane 클래스](../../mfc/reference/cmfctaskspane-class.md) 개체입니다. (`CMFCVisualManagerOfficeXP::OnDrawTasksGroupAreaBorder`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnDrawTasksGroupCaption](#ondrawtasksgroupcaption)|프레임 워크에 대 한 캡션을 그릴 때이 메서드를 호출을 [CMFCTasksPaneTaskGroup 클래스](../../mfc/reference/cmfctaskspanetaskgroup-class.md) 개체입니다. (`CMFCVisualManagerOfficeXP::OnDrawTasksGroupCaption`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnDrawTearOffCaption](#ondrawtearoffcaption)|프레임 워크에 대 한 캡션을 그릴 때이 메서드를 호출을 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md) 개체입니다. (`CMFCVisualManagerOfficeXP::OnDrawTearOffCaption`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnErasePopupWindowButton](#onerasepopupwindowbutton)|팝업 창에 있는 단추를 지울 때 프레임 워크에서이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnErasePopupWindowButton`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnEraseTabsArea](#onerasetabsarea)|프레임 워크는 탭 창에서 탭 영역의 지울 때이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnEraseTabsArea`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnEraseTabsButton](#onerasetabsbutton)|프레임 워크는 텍스트와 아이콘 탭 단추를 지울 때이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnEraseTabsButton`를 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawTab](#ondrawtab)|프레임 워크에 대 한 탭을 그릴 때이 메서드를 호출을 [CMFCBaseTabCtrl 클래스](../../mfc/reference/cmfcbasetabctrl-class.md) 개체입니다. ( `CMFCVisualManagerOfficeXP::OnDrawTab`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawTabsButtonBorder](#ondrawtabsbuttonborder)|프레임 워크 탭 단추의 테두리를 그릴 때이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::OnDrawTabsButtonBorder`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawTask](#ondrawtask)|그릴 때 프레임 워크에서이 메서드를 호출을 [CMFCTasksPaneTask 클래스](../../mfc/reference/cmfctaskspanetask-class.md) 개체입니다. ( `CMFCVisualManagerOfficeXP::OnDrawTask`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawTasksGroupAreaBorder](#ondrawtasksgroupareaborder)|프레임 워크 그룹 주위에 테두리를 그릴 때이 메서드를 호출을 [CMFCTasksPane 클래스](../../mfc/reference/cmfctaskspane-class.md) 개체입니다. ( `CMFCVisualManagerOfficeXP::OnDrawTasksGroupAreaBorder`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawTasksGroupCaption](#ondrawtasksgroupcaption)|프레임 워크에 대 한 캡션을 그릴 때이 메서드를 호출을 [CMFCTasksPaneTaskGroup 클래스](../../mfc/reference/cmfctaskspanetaskgroup-class.md) 개체입니다. ( `CMFCVisualManagerOfficeXP::OnDrawTasksGroupCaption`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnDrawTearOffCaption](#ondrawtearoffcaption)|프레임 워크에 대 한 캡션을 그릴 때이 메서드를 호출을 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md) 개체입니다. ( `CMFCVisualManagerOfficeXP::OnDrawTearOffCaption`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnErasePopupWindowButton](#onerasepopupwindowbutton)|팝업 창에 있는 단추를 지울 때 프레임 워크에서이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::OnErasePopupWindowButton`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnEraseTabsArea](#onerasetabsarea)|프레임 워크는 탭 창에서 탭 영역의 지울 때이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::OnEraseTabsArea`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnEraseTabsButton](#onerasetabsbutton)|프레임 워크는 텍스트와 아이콘 탭 단추를 지울 때이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::OnEraseTabsButton`을 재정의합니다.)|
 |[CMFCVisualManagerOffice2003::OnEraseTabsFrame](#onerasetabsframe)|프레임 워크에서 프레임을 지우고 해당 하는 경우이 메서드를 호출을 [CMFCBaseTabCtrl 클래스](../../mfc/reference/cmfcbasetabctrl-class.md)합니다. (재정의 [CMFCVisualManager::OnEraseTabsFrame](../../mfc/reference/cmfcvisualmanager-class.md#onerasetabsframe).)|
 |[CMFCVisualManagerOffice2003::OnFillAutoHideButtonBackground](#onfillautohidebuttonbackground)|자동 숨기기 단추의 배경을 채울 때 프레임워크에서 이 메서드를 호출합니다. (재정의 [CMFCVisualManager::OnFillAutoHideButtonBackground](../../mfc/reference/cmfcvisualmanager-class.md#onfillautohidebuttonbackground).)|
-|[CMFCVisualManagerOffice2003::OnFillBarBackground](#onfillbarbackground)|배경을 채울 때 프레임 워크에서이 메서드를 호출을 [CBasePane 클래스](../../mfc/reference/cbasepane-class.md) 개체입니다. (`CMFCVisualManagerOfficeXP::OnFillBarBackground`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnFillButtonInterior](#onfillbuttoninterior)|도구 모음 단추의 배경을 채울 때 프레임 워크에서이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnFillButtonInterior`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnFillCommandsListBackground](#onfillcommandslistbackground)|명령 목록에 속하는 도구 모음 단추의 배경을 채울 때 프레임 워크에서이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnFillCommandsListBackground`를 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnFillBarBackground](#onfillbarbackground)|배경을 채울 때 프레임 워크에서이 메서드를 호출을 [CBasePane 클래스](../../mfc/reference/cbasepane-class.md) 개체입니다. ( `CMFCVisualManagerOfficeXP::OnFillBarBackground`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnFillButtonInterior](#onfillbuttoninterior)|도구 모음 단추의 배경을 채울 때 프레임 워크에서이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::OnFillButtonInterior`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnFillCommandsListBackground](#onfillcommandslistbackground)|명령 목록에 속하는 도구 모음 단추의 배경을 채울 때 프레임 워크에서이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::OnFillCommandsListBackground`을 재정의합니다.)|
 |[CMFCVisualManagerOffice2003::OnFillHeaderCtrlBackground](#onfillheaderctrlbackground)|헤더 컨트롤의 배경을 채울 때 프레임 워크에서이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::OnFillHeaderCtrlBackground](../../mfc/reference/cmfcvisualmanager-class.md#onfillheaderctrlbackground).)|
-|[CMFCVisualManagerOffice2003::OnFillHighlightedArea](#onfillhighlightedarea)|도구 모음 단추의 강조 표시 된 영역을 채우도록 때이 메서드를 호출 하는 프레임 워크입니다. (`CMFCVisualManagerOfficeXP::OnFillHighlightedArea`를 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnFillHighlightedArea](#onfillhighlightedarea)|도구 모음 단추의 강조 표시 된 영역을 채우도록 때이 메서드를 호출 하는 프레임 워크입니다. ( `CMFCVisualManagerOfficeXP::OnFillHighlightedArea`을 재정의합니다.)|
 |[CMFCVisualManagerOffice2003::OnFillOutlookBarCaption](#onfilloutlookbarcaption)|Outlook 캡션 표시줄의 배경을 채울 때 프레임 워크에서이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::OnFillOutlookBarCaption](../../mfc/reference/cmfcvisualmanager-class.md#onfilloutlookbarcaption).)|
 |[CMFCVisualManagerOffice2003::OnFillOutlookPageButton](#onfilloutlookpagebutton)|프레임 워크는 Outlook 페이지 단추의 내부 채울 때이 메서드를 호출 합니다. (재정의 [CMFCVisualManager::OnFillOutlookPageButton](../../mfc/reference/cmfcvisualmanager-class.md#onfilloutlookpagebutton).)|
-|[CMFCVisualManagerOffice2003::OnFillPopupWindowBackground](#onfillpopupwindowbackground)|팝업 창의 배경을 채울 때 프레임 워크에서이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnFillPopupWindowBackground`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnFillTab](#onfilltab)|탭 창의 배경을 채울 때이 메서드를 호출 하는 프레임 워크입니다. (`CMFCVisualManagerOfficeXP::OnFillTab`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnFillTasksGroupInterior](#onfilltasksgroupinterior)|프레임 워크의 내부를 채울 때이 메서드를 호출을 [CMFCTasksPaneTaskGroup 클래스](../../mfc/reference/cmfctaskspanetaskgroup-class.md) 개체입니다. (`CMFCVisualManagerOfficeXP::OnFillTasksGroupInterior`를 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnFillPopupWindowBackground](#onfillpopupwindowbackground)|팝업 창의 배경을 채울 때 프레임 워크에서이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::OnFillPopupWindowBackground`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnFillTab](#onfilltab)|탭 창의 배경을 채울 때이 메서드를 호출 하는 프레임 워크입니다. ( `CMFCVisualManagerOfficeXP::OnFillTab`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnFillTasksGroupInterior](#onfilltasksgroupinterior)|프레임 워크의 내부를 채울 때이 메서드를 호출을 [CMFCTasksPaneTaskGroup 클래스](../../mfc/reference/cmfctaskspanetaskgroup-class.md) 개체입니다. ( `CMFCVisualManagerOfficeXP::OnFillTasksGroupInterior`을 재정의합니다.)|
 |[CMFCVisualManagerOffice2003::OnFillTasksPaneBackground](#onfilltaskspanebackground)|배경을 채울 때 프레임 워크에서이 메서드를 호출을 [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) 제어 합니다. (재정의 [CMFCVisualManager::OnFillTasksPaneBackground](../../mfc/reference/cmfcvisualmanager-class.md#onfilltaskspanebackground).)|
-|[CMFCVisualManagerOffice2003::OnHighlightQuickCustomizeMenuButton](#onhighlightquickcustomizemenubutton)|프레임 워크를 강조 표시 된을 그릴 때이 메서드가 빨리-사용자 지정 메뉴 단추를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnHighlightQuickCustomizeMenuButton`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnHighlightRarelyUsedMenuItems](#onhighlightrarelyusedmenuitems)|강조 표시 된 메뉴 명령을 그릴 때 프레임 워크에서이 메서드를 호출 합니다. (`CMFCVisualManagerOfficeXP::OnHighlightRarelyUsedMenuItems`를 재정의합니다.)|
-|[CMFCVisualManagerOffice2003::OnUpdateSystemColors](#onupdatesystemcolors)|시스템 색이 변경 하는 경우이 함수를 호출 하는 프레임 워크입니다. (`CMFCVisualManagerOfficeXP::OnUpdateSystemColors`를 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnHighlightQuickCustomizeMenuButton](#onhighlightquickcustomizemenubutton)|프레임 워크를 강조 표시 된을 그릴 때이 메서드가 빨리-사용자 지정 메뉴 단추를 호출 합니다. ( `CMFCVisualManagerOfficeXP::OnHighlightQuickCustomizeMenuButton`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnHighlightRarelyUsedMenuItems](#onhighlightrarelyusedmenuitems)|강조 표시 된 메뉴 명령을 그릴 때 프레임 워크에서이 메서드를 호출 합니다. ( `CMFCVisualManagerOfficeXP::OnHighlightRarelyUsedMenuItems`을 재정의합니다.)|
+|[CMFCVisualManagerOffice2003::OnUpdateSystemColors](#onupdatesystemcolors)|시스템 색이 변경 하는 경우이 함수를 호출 하는 프레임 워크입니다. ( `CMFCVisualManagerOfficeXP::OnUpdateSystemColors`을 재정의합니다.)|
 |[CMFCVisualManagerOffice2003::SetDefaultWinXPColors](#setdefaultwinxpcolors)|비주얼 관리자 네이티브 Windows XP 테마 색을 사용할지 아니면 색에서 가져온 지정 [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor)합니다.|
 |[CMFCVisualManagerOffice2003::SetStatusBarOfficeXPLook](#setstatusbarofficexplook)|Windows XP 전역 테마를 사용 해야 함을 지정 합니다.|
 |[CMFCVisualManagerOffice2003::SetUseGlobalTheme](#setuseglobaltheme)|비주얼 관리자 전역 테마를 사용 하는지 여부를 지정 합니다.|
@@ -803,10 +803,11 @@ virtual BOOL OnDrawBrowseButton(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDC*<br/>
-[in] [in] *rect*
-*pEdit*<br/>
-[in] [in] *상태* [in] *clrText*
+[in] *pDC*<br/>
+[in] *rect*<br/>
+[in] *pEdit*<br/>
+[in] *상태*<br/>
+[in] *clrText*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -1057,8 +1058,9 @@ virtual void OnDrawHeaderCtrlBorder(
 *rect*<br/>
 [in] 헤더 컨트롤의 경계를 지정 하는 사각형입니다.
 
-*bIsPressed*<br/>
-[in] [in] *bIsHighlighted* 헤더 컨트롤을 눌렀는지 여부를 나타내는 부울 매개 변수입니다.
+[in] *bIsPressed*<br/>
+[in] *bIsHighlighted*<br/>
+헤더 컨트롤을 눌렀는지 여부를 나타내는 부울 매개 변수입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1717,8 +1719,9 @@ virtual void OnDrawStatusBarProgress(
 *clrBar*<br/>
 [in] 진행률 표시줄에 대 한 초기 색입니다. 값은 색 그라데이션의 시작 또는 완료 진행률 표시줄의 색입니다.
 
-*clrProgressBarDest*<br/>
-[in] [in] *clrProgressText* [in] *bProgressText*
+[in] *clrProgressBarDest*<br/>
+[in] *clrProgressText*<br/>
+[in] *bProgressText*<br/>
 
 ### <a name="remarks"></a>설명
 

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e06f10114b896e2728e5a017281e54f75ce534e5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b00eb755ef0fba0037df8c6d1e99bfd25d13b263
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404633"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078416"
 ---
 # <a name="testing-properties-and-events-with-test-container"></a>테스트 컨테이너로 속성 및 이벤트 테스트
 
@@ -56,7 +56,7 @@ ms.locfileid: "46404633"
 
 1. 클릭 **Invoke** 개체에 새 값을 적용 합니다.
 
-     속성에는 이제 새 값을 포함 합니다.
+   속성에는 이제 새 값을 포함 합니다.
 
 #### <a name="to-test-events-and-specify-the-destination-of-event-information"></a>테스트 이벤트 및 이벤트 정보의 대상을 지정 합니다.
 

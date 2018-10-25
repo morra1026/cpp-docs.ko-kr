@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 477ed175e6f8e81acdae5c873d1436e6c3dbbd60
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b12f3ff78f88029067d3b77296979a173dad494d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423561"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079651"
 ---
 # <a name="using-image-lists-with-header-controls"></a>이미지 목록과 헤더 컨트롤 함께 사용
 
@@ -35,17 +35,17 @@ ms.locfileid: "46423561"
 
 1. 호출 하 여 새 이미지 목록 개체를 초기화 [CImageList::Create](../mfc/reference/cimagelist-class.md#create)합니다. 다음 코드는이 호출의 한 가지 예입니다.
 
-     [!code-cpp[NVC_MFCControlLadenDialog#15](../mfc/codesnippet/cpp/using-image-lists-with-header-controls_1.cpp)]
+   [!code-cpp[NVC_MFCControlLadenDialog#15](../mfc/codesnippet/cpp/using-image-lists-with-header-controls_1.cpp)]
 
 1. 각 헤더 항목에 대 한 이미지를 추가 합니다. 다음 코드는 두 개의 미리 정의 된 이미지를 추가 합니다.
 
-     [!code-cpp[NVC_MFCControlLadenDialog#16](../mfc/codesnippet/cpp/using-image-lists-with-header-controls_2.cpp)]
+   [!code-cpp[NVC_MFCControlLadenDialog#16](../mfc/codesnippet/cpp/using-image-lists-with-header-controls_2.cpp)]
 
 1. 헤더 컨트롤에 대 한 호출을 사용 하 여 이미지 목록을 연관 [CHeaderCtrl::SetImageList](../mfc/reference/cheaderctrl-class.md#setimagelist)합니다.
 
 1. 연결 된 이미지 목록의 이미지를 표시 하려면 머리글 항목을 수정 합니다. 다음 예제에서 첫 번째 이미지를 할당 `m_phdrImages`를 첫 번째 헤더 항목에 `m_pHdrCtrl`입니다.
 
-     [!code-cpp[NVC_MFCControlLadenDialog#17](../mfc/codesnippet/cpp/using-image-lists-with-header-controls_3.cpp)]
+   [!code-cpp[NVC_MFCControlLadenDialog#17](../mfc/codesnippet/cpp/using-image-lists-with-header-controls_3.cpp)]
 
 사용 된 매개 변수 값에 대 한 자세한 내용은 참조는 관련 [CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)합니다.
 
