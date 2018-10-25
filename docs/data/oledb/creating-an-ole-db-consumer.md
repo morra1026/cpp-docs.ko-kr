@@ -1,7 +1,7 @@
 ---
 title: OLE DB 소비자 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/22/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -15,16 +15,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d4ef6d5d54bb3d6ed55ec2837a2300d8a1dcb03e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f64145a8d6269a5c6fd09f7178343a59ebc1b3ad
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46034091"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49989920"
 ---
 # <a name="creating-an-ole-db-consumer"></a>OLE DB 소비자 만들기
 
-만들면 OLE DB 템플릿 소비자 없이 ATL OLE DB 소비자 마법사를 사용 하 여 마법사를 사용 하는 것이 좋지만 있지만 됩니다. 소비자는 ATL이 지원 응용 프로그램에서 작동할 수 있습니다.  
+유무에 관계 없이 OLE DB 템플릿 소비자를 만들 수 있습니다 합니다 **ATL OLE DB 소비자 마법사**되지만 마법사를 사용 하 여 것이 좋습니다. 소비자는 ATL이 지원 응용 프로그램에서 작동할 수 있습니다.  
   
 이 단원에서는 다음 항목에 대해 설명합니다.  
   
