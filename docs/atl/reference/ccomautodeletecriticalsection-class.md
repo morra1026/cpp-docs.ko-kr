@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c8ff6141fb5aa58e8de626675e29b46426ed47f
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 327c5fdcdc2a73cc8ee662ed71736f848ccd2e9d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118442"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066346"
 ---
 # <a name="ccomautodeletecriticalsection-class"></a>CComAutoDeleteCriticalSection 클래스
 
@@ -36,7 +36,7 @@ class CComAutoDeleteCriticalSection : public CComSafeDeleteCriticalSection
 
 ## <a name="remarks"></a>설명
 
-`CComAutoDeleteCriticalSection` 클래스에서 파생 [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md)합니다. 그러나 `CComAutoDeleteCriticalSection` 재정의 된 [용어](ccomsafedeletecriticalsection-class.md#term) 메서드를 **개인** 이 클래스의 인스턴스 범위를 벗어나는 않거나에서 명시적으로 삭제 하는 경우에 발생 하는 내부 메모리 정리를 강제 하는 액세스 메모리입니다.  
+`CComAutoDeleteCriticalSection` 클래스에서 파생 [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md)합니다. 그러나 `CComAutoDeleteCriticalSection` 재정의 된 [용어](ccomsafedeletecriticalsection-class.md#term) 메서드를 **개인** 이 클래스의 인스턴스 범위를 벗어나는 않거나에서 명시적으로 삭제 하는 경우에 발생 하는 내부 메모리 정리를 강제 하는 액세스 메모리입니다.
 
 이 클래스는 기본 클래스를 통해 추가 메서드가 도입 되었습니다. 참조 [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md) 하 고 [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) 임계 도우미 클래스에 대 한 자세한 내용은 합니다.
 

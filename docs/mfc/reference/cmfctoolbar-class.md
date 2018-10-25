@@ -321,12 +321,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b92acb477e6e15dfe933360dd6456db09d7f52a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d50d751028cc9e162f2a4bd903f35255a5ed3814
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408742"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067815"
 ---
 # <a name="cmfctoolbar-class"></a>CMFCToolBar 클래스
 
@@ -471,7 +471,7 @@ class CMFCToolBar : public CMFCBaseToolBar
 |[CMFCToolBar::ResetAllImages](#resetallimages)|응용 프로그램의 모든 도구 모음 이미지 컬렉션을 지웁니다.|
 |[Cmfctoolbar:: Restoreoriginalstate](#restoreoriginalstate)|도구 모음의 원래 상태를 복원합니다.|
 |[CMFCToolBar::SaveState](#savestate)|Windows 레지스트리에 도구 모음에 대 한 상태 정보를 저장합니다. (재정의 [CPane::SaveState](../../mfc/reference/cpane-class.md#savestate).)|
-|`CMFCToolBar::Serialize`|(`CBasePane::Serialize`를 재정의합니다.)|
+|`CMFCToolBar::Serialize`|( `CBasePane::Serialize`을 재정의합니다.)|
 |[CMFCToolBar::SetBasicCommands](#setbasiccommands)|사용자 메뉴를 열 때 항상 표시 되는 명령의 목록을 설정 합니다.|
 |[CMFCToolBar::SetButtonInfo](#setbuttoninfo)|명령 ID, 스타일 및 도구 모음 단추의 이미지 ID를 설정합니다.|
 |[CMFCToolBar::SetButtonStyle](#setbuttonstyle)|지정된 된 인덱스에서 도구 모음 단추의 스타일을 설정합니다.|
@@ -1155,7 +1155,6 @@ void EnableCustomizeButton(
     int iCustomizeCmd,
     const CString& strCustomizeText,
     BOOL bQuickCustomize=TRUE);
-
 
 void EnableCustomizeButton(
     BOOL bEnable,
@@ -2173,7 +2172,6 @@ virtual int InsertButton(
     const CMFCToolBarButton& button,
     INT_PTR iInsertAt=-1);
 
-
 virtual int InsertButton(
     CMFCToolBarButton* pButton,
     int iInsertAt=-1);
@@ -2543,7 +2541,6 @@ BOOL IsOneRowWithSibling();
 
 ##  <a name="isresourcechanged"></a>  CMFCToolBar::IsResourceChanged
 
-
 ```
 virtual BOOL IsResourceChanged() const;
 ```
@@ -2553,7 +2550,6 @@ virtual BOOL IsResourceChanged() const;
 ### <a name="remarks"></a>설명
 
 ##  <a name="issibling"></a>  CMFCToolBar::IsSibling
-
 
 ```
 BOOL IsSibling();
@@ -2615,12 +2611,11 @@ virtual BOOL LoadBitmap(
 
 ### <a name="remarks"></a>설명
 
-합니다 [cmfctoolbar:: Loadtoolbarex](#loadtoolbarex) 도구 모음을 사용 하 여 연결 된 이미지를 로드 하려면이 메서드를 호출 합니다. 이미지 리소스의 사용자 지정 로드를 수행하려면 이 메서드를 재정의합니다.
+[CMFCToolBar::LoadToolBarEx](#loadtoolbarex) 메서드는 이 메서드를 호출하여 도구 모음과 관련된 이미지를 로드합니다. 이미지 리소스의 사용자 지정 로드를 수행하려면 이 메서드를 재정의합니다.
 
 `LoadBitmapEx` 메서드를 호출하여 도구 모음을 만든 후 추가 이미지를 로드합니다.
 
 ##  <a name="loadbitmapex"></a>  CMFCToolBar::LoadBitmapEx
-
 
 ```
 virtual BOOL LoadBitmapEx(
@@ -2630,8 +2625,8 @@ virtual BOOL LoadBitmapEx(
 
 ### <a name="parameters"></a>매개 변수
 
-*params*<br/>
-[in] [in] *차단*
+[in] *매개 변수*<br/>
+[in] *차단*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -2639,14 +2634,13 @@ virtual BOOL LoadBitmapEx(
 
 ##  <a name="loadlargeiconsstate"></a>  CMFCToolBar::LoadLargeIconsState
 
-
 ```
 static BOOL __stdcall LoadLargeIconsState(LPCTSTR lpszProfileName = NULL);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *lpszProfileName*
+[in] *lpszProfileName*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -2804,7 +2798,6 @@ AFX_IMPORT_DATA static double m_dblLargeImageRatio;
 
 ##  <a name="nextmenu"></a>  CMFCToolBar::NextMenu
 
-
 ```
 virtual BOOL NextMenu();
 ```
@@ -2814,7 +2807,6 @@ virtual BOOL NextMenu();
 ### <a name="remarks"></a>설명
 
 ##  <a name="onbeforeremovebutton"></a>  CMFCToolBar::OnBeforeRemoveButton
-
 
 ```
 virtual BOOL OnBeforeRemoveButton(
@@ -2853,7 +2845,6 @@ virtual void OnChangeHot(int iHot);
 
 ##  <a name="onchangevisualmanager"></a>  CMFCToolBar::OnChangeVisualManager
 
-
 ```
 virtual void OnChangeVisualManager();
 ```
@@ -2881,7 +2872,6 @@ virtual void OnFillBackground(CDC* pDC);
 
 ##  <a name="onglobalfontschanged"></a>  CMFCToolBar::OnGlobalFontsChanged
 
-
 ```
 virtual void OnGlobalFontsChanged();
 ```
@@ -2904,14 +2894,13 @@ virtual void OnReset();
 
 ##  <a name="onsetaccdata"></a>  CMFCToolBar::OnSetAccData
 
-
 ```
 virtual BOOL OnSetAccData(long lVal);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *lVal*
+[in] *lVal*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -2969,7 +2958,6 @@ TRUE 이면 *strTTText* 도구 설명 텍스트를 사용 하 여 채워진 되�
 재정의 `OnUserToolTip` 도구 모음 단추의 도구 설명 사용자 지정할 수 있습니다. 기본 구현 호출 [CMFCToolBar::OnUserToolTip](#onusertooltip) 도구 설명 텍스트를 가져오려고 합니다.
 
 ##  <a name="prevmenu"></a>  CMFCToolBar::PrevMenu
-
 
 ```
 virtual BOOL PrevMenu();
@@ -3132,7 +3120,6 @@ static void __stdcall ResetAllImages();
 
 ##  <a name="resetimages"></a>  CMFCToolBar::ResetImages
 
-
 ```
 virtual void ResetImages();
 ```
@@ -3140,7 +3127,6 @@ virtual void ResetImages();
 ### <a name="remarks"></a>설명
 
 ##  <a name="restorefocus"></a>  CMFCToolBar::RestoreFocus
-
 
 ```
 virtual void RestoreFocus();
@@ -3168,14 +3154,13 @@ TRUE 이면 메서드가 성공 하거나 사용자 정의 메서드가 실패 �
 
 ##  <a name="saveparameters"></a>  CMFCToolBar::SaveParameters
 
-
 ```
 static BOOL __stdcall SaveParameters(LPCTSTR lpszProfileName = NULL);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *lpszProfileName*
+[in] *lpszProfileName*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -3431,19 +3416,17 @@ void SetHeight(int cyHeight);
 
 ##  <a name="sethelpmode"></a>  CMFCToolBar::SetHelpMode
 
-
 ```
 static void __stdcall SetHelpMode(BOOL bOn = TRUE);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *bOn*
+[in] *bOn*<br/>
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="sethot"></a>  CMFCToolBar::SetHot
-
 
 ```
 BOOL SetHot(CMFCToolBarButton* pMenuButton);
@@ -3451,7 +3434,7 @@ BOOL SetHot(CMFCToolBarButton* pMenuButton);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *pMenuButton*
+[in] *pMenuButton*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -3495,14 +3478,13 @@ static void SetHotTextColor(COLORREF clrText);
 
 ##  <a name="setignoresettext"></a>  CMFCToolBar::SetIgnoreSetText
 
-
 ```
 void SetIgnoreSetText(BOOL bValue);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *bValue*
+[in] *bValue*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -3557,14 +3539,13 @@ void SetLockedSizes(
 
 ##  <a name="setmaskmode"></a>  CMFCToolBar::SetMaskMode
 
-
 ```
 void SetMaskMode(BOOL bMasked);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *bMasked*
+[in] *bMasked*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -3631,14 +3612,13 @@ void SetOneRowWithSibling();
 
 ##  <a name="setorigbuttons"></a>  CMFCToolBar::SetOrigButtons
 
-
 ```
 void SetOrigButtons(const CObList& lstOrigButtons);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *lstOrigButtons*
+[in] *lstOrigButtons*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -3936,6 +3916,4 @@ AFX_IMPORT_DATA static BOOL m_bDontScaleImages;
 [CMFCPopupMenuBar 클래스](../../mfc/reference/cmfcpopupmenubar-class.md)<br/>
 [CMFCDropDownToolBar 클래스](../../mfc/reference/cmfcdropdowntoolbar-class.md)<br/>
 [연습: 도구 모음에 컨트롤 배치](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-
-
 

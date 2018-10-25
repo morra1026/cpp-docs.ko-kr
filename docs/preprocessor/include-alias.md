@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26e59888a26b5f71b697e398e81b16012dd35e3a
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: c9844c610a1b5bffab8f5fba67daff90a52412e4
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42541287"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065176"
 ---
 # <a name="includealias"></a>include_alias
 
@@ -31,7 +31,7 @@ ms.locfileid: "42541287"
 
 ## <a name="syntax"></a>구문
 
-> #<a name="pragma-includealiaslongfilename-shortfilename"></a>pragma include_alias("*long_filename*", "*short_filename*")  
+> #<a name="pragma-includealiaslongfilename-shortfilename"></a>pragma include_alias("*long_filename*", "*short_filename*")
 > #<a name="pragma-includealiaslongfilename-shortfilename"></a>pragma include_alias(*long_filename*, *short_filename*)
 
 ## <a name="remarks"></a>설명
@@ -59,7 +59,7 @@ ms.locfileid: "42541287"
 ```
 
 헤더 파일 문자열이 정확하게 일치하지 않기 때문에 별칭 대체가 수행되지 않습니다. 또한 헤더 파일에 대 한 인수로 사용 합니다 `/Yu` 및 `/Yc` 컴파일러 옵션 또는 `hdrstop` pragma를 대체 되지 않습니다. 예를 들어 소스 파일에 다음 지시문이 포함된 경우,
-  
+
 ```cpp
 #include <AppleSystemHeaderStop.h>
 ```
@@ -111,7 +111,7 @@ myfile.h(15) : error C2059 : syntax error
 #include "one.h"
 ```
 
-컴파일러는 THREE.H가 아니라 TWO.H 파일을 검색합니다.  
+컴파일러는 THREE.H가 아니라 TWO.H 파일을 검색합니다.
 
 ## <a name="see-also"></a>참고 항목
 

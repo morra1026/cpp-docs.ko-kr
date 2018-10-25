@@ -18,16 +18,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7df892a3d3f038655f37b78fa88babb09d50df2d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1a74691b17e04c20fa45045fa4105fd73925f19f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46373482"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065397"
 ---
 # <a name="csplitterwndex-class"></a>CSplitterWndEx 클래스
-
-
 
 사용자 지정된 분할자 창을 나타냅니다.
 

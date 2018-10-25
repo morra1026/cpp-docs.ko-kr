@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 11a58511684a58ebb0b8ec13138bfbdb7afa4729
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: bd8facb38bc4d71445674eb64ad09ab14d0b636a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49081905"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065891"
 ---
 # <a name="dbsource"></a>db_source
 
@@ -43,7 +43,7 @@ ms.locfileid: "49081905"
 (선택 사항) 사용 하는 경우 **db_source** 클래스에서 *이름* 있는 데이터 원본 개체의 인스턴스를 **db_source** 특성 (예 1 참조)를 적용 합니다. 사용 하는 경우 **db_source** 메서드 구현에서 인라인 *이름* 데이터 액세스에 사용할 수 있는 변수 (로컬 메서드에) 원본 (예 2 참조). 이 전달할 *이름* 에 *source_name* 의 매개 변수 `db_command` 명령을 사용 하 여 데이터 원본에 연결할 합니다.
 
 *hresult*<br/>
-(선택 사항) 이 데이터베이스 명령의 HRESULT 받을 변수를 식별 합니다. 변수가 없으면 특성에 의해 자동으로 삽입됩니다.
+(선택 사항) 이 데이터베이스 명령의 HRESULT를 수신할 변수를 식별합니다. 변수가 없으면 특성에 의해 자동으로 삽입됩니다.
 
 ## <a name="remarks"></a>설명
 
@@ -55,7 +55,7 @@ ms.locfileid: "49081905"
 
 **db_source** 클래스 또는 메서드 내에서 데이터 원본 속성을 추가 합니다. 와 함께에서 사용 됩니다 `db_command` (사용 하는 합니다 *db_source* *이름* 매개 변수에 해당 *source_name* 매개 변수).
 
-컴파일러는 클래스 이름을 소비자 특성 공급자가이 특성 클래스에 적용 될 때 \_ *YourClassName*접근자를 여기서 *YourClassName* 제공한 이름인는 클래스 및 컴파일러 라는 클래스를 만들 수도 됩니다 *YourClassName*에서 파생 되는 \_ *YourClassName*접근자입니다.  클래스 뷰에 두 클래스 모두 표시됩니다.
+소비자 특성 공급자가 클래스에 이 특성을 적용하는 경우 컴파일러는 클래스의 이름을 _\_*YourClassName*Accessor로 바꿉니다. 여기서 *YourClassName*은 클래스에 지정한 이름입니다. 컴파일러는 또한 \_*YourClassName*Accessor에서 파생되는 *YourClassName*이라는 클래스를 만듭니다.  클래스 뷰에 두 클래스 모두 표시됩니다.
 
 응용 프로그램에서 사용 되는이 특성의 예로, 샘플을 참조 하세요 [AtlAgent](https://github.com/Microsoft/VCSamples) 하 고 [MultiRead](https://github.com/Microsoft/VCSamples)합니다.
 
@@ -72,7 +72,7 @@ ms.locfileid: "49081905"
 
 [
   db_source(L"my_connection_string", name="ds"),
-  db_command(L"select * from Products")  
+  db_command(L"select * from Products")
 ]
 class CMyCommand {};
 ```
@@ -83,7 +83,7 @@ class CMyCommand {};
 
 |||
 |-|-|
-|**적용 대상**|**클래스**하십시오 **구조체**, 멤버, 메서드, 로컬|
+|**적용 대상**|**클래스**, **구조체**, 멤버, 메서드, 로컬|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
@@ -92,4 +92,4 @@ class CMyCommand {};
 
 ## <a name="see-also"></a>참고 항목
 
-[OLE DB 소비자 특성](ole-db-consumer-attributes.md)  
+[OLE DB 소비자 특성](ole-db-consumer-attributes.md)

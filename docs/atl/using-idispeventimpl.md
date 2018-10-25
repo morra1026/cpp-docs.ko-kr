@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48afac392d02edfd3d312583642367bc6726e536
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1d28a9a8bad8ced772d5c698e76d3d08f09c8db2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106794"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066476"
 ---
 # <a name="using-idispeventimpl"></a>IDispEventImpl 사용
 
@@ -41,7 +41,7 @@ ms.locfileid: "46106794"
 
 아래 예제에서는 처리 하는 방법을 보여 줍니다 합니다 `DocumentChange` 단어의 이벤트가 **응용 프로그램** 개체입니다. 이 이벤트에서 메서드로 정의 됩니다는 `ApplicationEvents` dispinterface 합니다.
 
-예로 [ATLEventHandling 샘플](../visual-cpp-samples.md)합니다.  
+예로 [ATLEventHandling 샘플](../visual-cpp-samples.md)합니다.
 
 ```cpp
 [ uuid(000209F7-0000-0000-C000-000000000046), hidden ]
