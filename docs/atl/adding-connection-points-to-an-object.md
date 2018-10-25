@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdaf4cf8e1c2f6a062c133ab9e0427cab1d3d094
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 685f1b7d24e781dbee6d67b325b059f09ca9bf4c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762550"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054217"
 ---
 # <a name="adding-connection-points-to-an-object"></a>개체에 연결 지점 추가
 
@@ -38,15 +38,15 @@ ms.locfileid: "43762550"
 
 1. .Idl 파일의 라이브러리 블록에는 dispinterface를 정의 합니다. ATL 컨트롤 마법사를 사용 하 여 컨트롤을 만들 때 연결 지점에 대 한 지원을 설정한 경우 dispinterface 이미 만들어질 수 있습니다. 컨트롤을 만들 때 연결 지점에 대 한 지원을 사용 하지 않은, 경우.idl 파일에는 dispinterface을 수동으로 추가 해야 합니다. 다음은 dispinterface의 예입니다. 나가는 인터페이스 디스패치 인터페이스로 필요 하지 않지만이 예제에서는 두 dispinterface를 사용 하므로이 VBScript 및 JScript와 같은 많은 스크립팅 언어 요구 합니다.
 
-     [!code-cpp[NVC_ATL_Windowing#81](../atl/codesnippet/cpp/adding-connection-points-to-an-object_1.idl)]
+   [!code-cpp[NVC_ATL_Windowing#81](../atl/codesnippet/cpp/adding-connection-points-to-an-object_1.idl)]
 
-     Uuidgen.exe 또는 guidgen.exe 유틸리티를 사용 하 여 GUID를 생성 합니다.
+   Uuidgen.exe 또는 guidgen.exe 유틸리티를 사용 하 여 GUID를 생성 합니다.
 
 2. 으로 dispinterface를 추가 합니다 `[default,source]` coclass 프로젝트의.idl 파일에 있는 개체에 대 한 인터페이스입니다. 다시 설정한 경우 연결 지점에 대 한 지원을 컨트롤을 만들 때, ATL 컨트롤 마법사 만들어집니다는 `[default,source`] 항목입니다. 이 항목을 수동으로 추가 하려면 굵게 표시 된 줄을 추가 합니다.
 
-     [!code-cpp[NVC_ATL_Windowing#82](../atl/codesnippet/cpp/adding-connection-points-to-an-object_2.idl)]
+   [!code-cpp[NVC_ATL_Windowing#82](../atl/codesnippet/cpp/adding-connection-points-to-an-object_2.idl)]
 
-     .Idl 파일을 참조 합니다 [Circ](../visual-cpp-samples.md) 예로 ATL 샘플입니다.
+   .Idl 파일을 참조 합니다 [Circ](../visual-cpp-samples.md) 예로 ATL 샘플입니다.
 
 3. 이벤트 인터페이스에 메서드 및 속성을 추가할 클래스 뷰를 사용 합니다. 클래스 뷰에서 클래스를 마우스 오른쪽 **추가** 바로 가기 메뉴를 클릭 **연결점 추가**합니다.
 
@@ -56,7 +56,7 @@ ms.locfileid: "43762550"
 
    - 연결 지점 지도에 항목을 추가 합니다.
 
-     또한 컴퓨터에 형식 라이브러리의 모든 목록이 나타납니다. 다른 형식 라이브러리에 있는 정확히 같은 나가는 인터페이스를 구현 하려는 경우 연결 지점과 정의 하려면 이러한 다른 형식 라이브러리 중 하나를 사용 해야 합니다.
+   또한 컴퓨터에 형식 라이브러리의 모든 목록이 나타납니다. 다른 형식 라이브러리에 있는 정확히 같은 나가는 인터페이스를 구현 하려는 경우 연결 지점과 정의 하려면 이러한 다른 형식 라이브러리 중 하나를 사용 해야 합니다.
 
 ### <a name="to-reuse-a-connection-point-interface-defined-in-another-type-library"></a>다른 형식 라이브러리에 정의 된 연결 지점 인터페이스를 다시 사용
 

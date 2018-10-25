@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1244c05b7af94d69394c412a3c67864d6e75c337
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9f9ce0094bce1f8e7590cef0cbe3bfe85f35158d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46050881"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056063"
 ---
 # <a name="run-time-type-information"></a>런타임 형식 정보
 
@@ -35,15 +35,15 @@ RTTI(런타임 형식 정보)는 프로그램 실행 중에 개체의 형식이 
 
 - 합니다 [dynamic_cast](../cpp/dynamic-cast-operator.md) 연산자입니다.
 
-     다형 형식을 변환하는 데 사용됩니다.
+   다형 형식을 변환하는 데 사용됩니다.
 
 - 합니다 [typeid](../cpp/typeid-operator.md) 연산자입니다.
 
-     개체의 정확한 형식을 식별하는 데 사용됩니다.
+   개체의 정확한 형식을 식별하는 데 사용됩니다.
 
 - 합니다 [type_info](../cpp/type-info-class.md) 클래스입니다.
 
-     반환 된 형식 정보를 저장 하는 데 사용 합니다 **typeid** 연산자입니다.
+   반환 된 형식 정보를 저장 하는 데 사용 합니다 **typeid** 연산자입니다.
 
 ## <a name="see-also"></a>참고자료
 

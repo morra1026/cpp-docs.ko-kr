@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15f021d78158caa6f607be3d68a9666b4ab6d6a7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4ca52f7a5940de3caa87f81ddf07625ab751927c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448521"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054537"
 ---
 # <a name="cimagelist-class"></a>CImageList 클래스
 
@@ -184,7 +184,6 @@ class CImageList : public CObject
 int Add(
     CBitmap* pbmImage,
     CBitmap* pbmMask);
-
 
 int Add(
     CBitmap* pbmImage,
@@ -288,7 +287,6 @@ BOOL Copy(
     int iSrc,
     UINT uFlags = ILCF_MOVE);
 
-
 BOOL Copy(
     int iDst,
     CImageList* pSrc,
@@ -335,20 +333,17 @@ BOOL Create(
     int nInitial,
     int nGrow);
 
-
 BOOL Create(
     UINT nBitmapID,
     int cx,
     int nGrow,
     COLORREF crMask);
 
-
 BOOL Create(
     LPCTSTR lpszBitmapID,
     int cx,
     int nGrow,
     COLORREF crMask);
-
 
 BOOL Create(
     CImageList& imagelist1,
@@ -417,7 +412,7 @@ BOOL Create(CImageList* pImageList);
 픽셀 단위로 첫 번째 이미지에는 관계에서 두 번째 이미지의 y 축 오프셋입니다.
 
 *pImageList*<br/>
-에 대 한 포인터를 `CImageList` 개체입니다.
+`CImageList` 개체에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -678,7 +673,6 @@ BOOL DrawEx(
 
 ```
 BOOL DrawIndirect(IMAGELISTDRAWPARAMS* pimldp);
-
 
 BOOL DrawIndirect(
     CDC* pDC,
@@ -1046,7 +1040,6 @@ BOOL Replace(
     int nImage,
     CBitmap* pbmImage,
     CBitmap* pbmMask);
-
 
 int Replace(
     int nImage,
