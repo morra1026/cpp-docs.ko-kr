@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 95eb37898d4934740e1520df758ed33d3dd4c79a
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: ae14a6346f547d8c362bad478144e915ee9ebb98
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791246"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077298"
 ---
 # <a name="entry"></a>entry
 
@@ -58,8 +58,8 @@ DLL의 진입점을 식별 하 여 모듈에는 내보낸된 함수 또는 상�
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](idl-attributes.md)  
+[IDL 특성](idl-attributes.md)

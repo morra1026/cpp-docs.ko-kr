@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8fc187cea874d16522955dcd46c2ceac34d29098
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c7100199d7e4ee76bf2f096aba9e20c244ae10ab
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46136168"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070566"
 ---
 # <a name="debugging-and-error-reporting-macros"></a>디버깅 및 오류 보고 매크로
 
@@ -102,7 +102,7 @@ ATLASSERT(booleanExpression);
 
 ### <a name="remarks"></a>설명
 
-디버그 빌드에서 ATLASSERT 평가 *booleanExpression* 결과가 false 인 경우 디버그 보고서를 생성 합니다.  
+디버그 빌드에서 ATLASSERT 평가 *booleanExpression* 결과가 false 인 경우 디버그 보고서를 생성 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -139,11 +139,11 @@ ATLENSURE ATLASSERT 사이의 차이점은 ATLENSURE 빌드에서 릴리스도 �
 
 ### <a name="example"></a>예제
 
-[!code-cpp[NVC_ATL_Utilities#108](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_1.cpp)]  
+[!code-cpp[NVC_ATL_Utilities#108](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_1.cpp)]
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afx.h  
+**헤더:** afx.h
 
 ##  <a name="atltracenotimpl"></a>  ATLTRACENOTIMPL
 
@@ -168,7 +168,7 @@ ATLTRACENOTIMPL(funcname);
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atltrace.h 
+**헤더:** atltrace.h
 
 ##  <a name="atltrace"></a>  ATLTRACE
 
@@ -177,7 +177,7 @@ ATLTRACENOTIMPL(funcname);
 ```
 ATLTRACE(exp);
 
-ATLTRACE(  
+ATLTRACE(
     DWORD category,
     UINT  level,
     LPCSTR lpszFormat, ...);

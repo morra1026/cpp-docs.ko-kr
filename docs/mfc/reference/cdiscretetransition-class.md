@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98deeff0e6b39a52002416c1b234434623f31b6a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9384fbc79137807015b5b18092806e2a67577b88
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416216"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073879"
 ---
 # <a name="cdiscretetransition-class"></a>CDiscreteTransition 클래스
 
@@ -115,7 +115,6 @@ virtual BOOL Create(
 
 *pLibrary*<br/>
 에 대 한 포인터를 [IUIAnimationTransitionLibrary 인터페이스](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), 표준 전환의 라이브러리를 정의 하는 합니다.
-
 
 ### <a name="return-value"></a>반환 값
 

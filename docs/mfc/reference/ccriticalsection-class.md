@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e5147faaf0170a10295006f12d7e95f5dfd3e8d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 159d452c3b0a813c52d8486f52d67b9817c3a558
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380700"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069284"
 ---
 # <a name="ccriticalsection-class"></a>CCriticalSection 클래스
 
@@ -81,7 +81,7 @@ class CCriticalSection : public CSyncObject
 
 - 독립 실행형을 사용 하는 독립 실행형 방법 `CCriticalSection` 개체를 생성 합니다 `CCriticalSection` 필요할 때 개체입니다. 생성자에서 성공적으로 반환 된 후 명시적으로 호출 하 여 개체 잠금 [잠금](#lock)합니다. 호출 [잠금 해제](#unlock) 완료 되 면 중요 섹션에 액세스 합니다. 소스 코드를 읽는 사람에 게 명확 하 게 파악할 하는 동안이 메서드는 액세스 전후 중요 섹션을 잠금을 해제 해야 하는 대로 오류 발생 가능성이.
 
-     사용 하는 것이 더 좋습니다 메서드는 [CSingleLock](../../mfc/reference/csinglelock-class.md) 클래스입니다. 또한를 `Lock` 및 `Unlock` 방법 이지만 비용이 있습니다 예외가 발생 하는 경우에 리소스를 잠금 해제에 대해 걱정할 필요가 없습니다.
+   사용 하는 것이 더 좋습니다 메서드는 [CSingleLock](../../mfc/reference/csinglelock-class.md) 클래스입니다. 또한를 `Lock` 및 `Unlock` 방법 이지만 비용이 있습니다 예외가 발생 하는 경우에 리소스를 잠금 해제에 대해 걱정할 필요가 없습니다.
 
 - 메서드를 추가 하 여 여러 스레드를 사용 하 여 클래스를 공유할 수도 있습니다를 포함 한 `CCriticalSection`-클래스와 잠금이 필요한 경우 데이터 멤버 형식 데이터 멤버입니다.
 

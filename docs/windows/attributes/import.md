@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a0509f6c1292ee7bb2e1ba97d1f75c626f3b0761
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 046a6eb0d1033efb44dd9f34806e747e1fafd700
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791833"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071118"
 ---
 # <a name="import"></a>import
 
@@ -82,7 +82,7 @@ library MyLib {
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
@@ -91,4 +91,4 @@ library MyLib {
 [importidl](importidl.md)<br/>
 [importlib](importlib.md)<br/>
 [include](include-cpp.md)<br/>
-[includelib](includelib-cpp.md)  
+[includelib](includelib-cpp.md)

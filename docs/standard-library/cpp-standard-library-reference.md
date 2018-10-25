@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c38485e84f0b06e79e02ba780926b6e08378220
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 27981084c79b5bf1347715df8945598c1e6683e4
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392920"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071661"
 ---
 # <a name="c-standard-library-reference"></a>C++ 표준 라이브러리 참조
 
@@ -40,5 +40,4 @@ iostream 프로그래밍에 대한 개요를 제공합니다.
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
 코드 예제를 포함하여 C++ 표준 라이브러리 헤더 파일에 대해 설명하는 참조 항목에 대한 링크를 제공합니다.
-
 

@@ -140,12 +140,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6e1fb04de4097a2cdf1dd51dc12265bef8d6c0b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c86efacf7211415bfdc2936a736d78e29dc419bf
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423132"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076401"
 ---
 # <a name="crecordset-class"></a>CRecordset 클래스
 
@@ -727,17 +727,14 @@ void GetFieldValue(
     CDBVariant& varValue,
     short nFieldType = DEFAULT_FIELD_TYPE);
 
-
 void GetFieldValue(
     short nIndex,
     CDBVariant& varValue,
     short nFieldType = DEFAULT_FIELD_TYPE);
 
-
 void GetFieldValue(
     short nIndex,
     CStringA& strValue);
-
 
 void GetFieldValue(
     short nIndex,
@@ -822,7 +819,6 @@ short GetODBCFieldCount() const;
 void GetODBCFieldInfo(
     LPCTSTR lpszName,
     CODBCFieldInfo& fieldinfo);
-
 
 void GetODBCFieldInfo(
     short nIndex,
@@ -1538,7 +1534,7 @@ virtual BOOL Open(
 
 - `CRecordset::forwardOnly` 읽기 전용 레코드 집합 스크롤만 전달 합니다.
 
-     에 대 한 `CRecordset`, 기본값은 `CRecordset::snapshot`합니다. 기본값 메커니즘 모두 ODBC와 상호 작용 하는 Visual c + + 마법사를 사용 하면 `CRecordset` 및 DAO `CDaoRecordset`, 다른 기본값이입니다.
+   에 대 한 `CRecordset`, 기본값은 `CRecordset::snapshot`합니다. 기본값 메커니즘 모두 ODBC와 상호 작용 하는 Visual c + + 마법사를 사용 하면 `CRecordset` 및 DAO `CDaoRecordset`, 다른 기본값이입니다.
 
 이러한 레코드 집합 형식에 대 한 자세한 내용은 문서 참조 [레코드 집합 (ODBC)](../../data/odbc/recordset-odbc.md)합니다. 관련 정보 "를 사용 하 여 블록 및 스크롤 가능 커서" Windows SDK의 문서를 참조 합니다.
 
@@ -1613,7 +1609,7 @@ virtual BOOL Open(
 
 일반적인 절차는 NULL을 전달할 `Open`;이 예에서 `Open` 호출 [GetDefaultSQL](#getdefaultsql)합니다. 파생을 사용 하는 경우 `CRecordset` 클래스인 `GetDefaultSQL` 클래스 마법사에서 지정한 테이블 이름을 제공 합니다. 기타 정보를 지정할 수 있습니다는 `lpszSQL` 매개 변수입니다.
 
-전달 무엇이 든 `Open` 쿼리에 대 한 최종 SQL 문자열을 생성 (문자열 SQL 있을 수 있습니다 **여기서** 및 **ORDER BY** 절에 추가 합니다 `lpszSQL` 전달 된 문자열)를 빌드한 다음 실행 쿼리입니다. 호출 하 여 생성 된 문자열을 검사할 수 있습니다 [GetSQL](#getsql) 호출한 후 *`Open`합니다. 레코드 SQL 문을 생성 하 고 레코드를 선택 하는 방법에 대 한 자세한 문서를 참조 하세요 [레코드 집합: 레코드 집합을 선택 하는 방법 (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)합니다.
+전달 무엇이 든 `Open` 쿼리에 대 한 최종 SQL 문자열을 생성 (문자열 SQL 있을 수 있습니다 **여기서** 및 **ORDER BY** 절에 추가 합니다 `lpszSQL` 전달 된 문자열)를 빌드한 다음 실행 쿼리입니다. 호출 하 여 생성 된 문자열을 검사할 수 있습니다 [GetSQL](#getsql) 호출한 후 `Open`합니다. 레코드 SQL 문을 생성 하 고 레코드를 선택 하는 방법에 대 한 자세한 문서를 참조 하세요 [레코드 집합: 레코드 집합을 선택 하는 방법 (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)합니다.
 
 레코드 집합 클래스의 필드 데이터 멤버는 선택한 데이터의 열에 바인딩됩니다. 레코드가 반환 되는 경우 첫 번째 레코드는 현재 레코드가 됩니다.
 

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 010e5f58f1d72a33cbab44438f085b52e8fe4be8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f684bbb287213ad0cbe6d490c1bef869f5ffc9db
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387772"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077779"
 ---
 # <a name="activex-control-containers-manually-enabling-activex-control-containment"></a>ActiveX 컨트롤 컨테이너: ActiveX 컨트롤 포함 수동 설정
 
@@ -37,12 +37,12 @@ ActiveX 컨트롤을 지원 하려면 두 프로젝트의 파일에 코드 한 �
 
 - 기본 대화에 수정 `InitInstance` 함수 (컨테이너에서 찾을 수 있습니다. CPP)를 호출 하는 MFC 응용 프로그램 마법사로 [AfxEnableControlContainer](reference/ole-initialization.md#afxenablecontrolcontainer)다음 예제와 같이:
 
-     [!code-cpp[NVC_MFCOleContainer#34](../mfc/codesnippet/cpp/activex-control-containers-manually-enabling-activex-control-containment_1.cpp)]
+   [!code-cpp[NVC_MFCOleContainer#34](../mfc/codesnippet/cpp/activex-control-containers-manually-enabling-activex-control-containment_1.cpp)]
     [!code-cpp[NVC_MFCOleContainer#35](../mfc/codesnippet/cpp/activex-control-containers-manually-enabling-activex-control-containment_2.cpp)]
 
 - 프로젝트의 STDAFX에 다음을 추가 합니다. H 헤더 파일:
 
-     [!code-cpp[NVC_MFCOleContainer#36](../mfc/codesnippet/cpp/activex-control-containers-manually-enabling-activex-control-containment_3.h)]
+   [!code-cpp[NVC_MFCOleContainer#36](../mfc/codesnippet/cpp/activex-control-containers-manually-enabling-activex-control-containment_3.h)]
 
 다음이 단계를 완료 한 후 클릭 하 여 프로젝트를 다시 빌드합니다 **빌드할** 에 **빌드** 메뉴.
 

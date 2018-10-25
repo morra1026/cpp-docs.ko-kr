@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c881e31d178d6303939c94d68e2824fb11ec2cbd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f9d4155fec333061c65f148f29e849dc4717f0d2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425406"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073763"
 ---
 # <a name="using-a-dialog-bar-with-a-rebar-control"></a>대화 상자 모음과 Rebar 컨트롤 함께 사용
 
@@ -41,13 +41,13 @@ ms.locfileid: "46425406"
 
 1. 새 처리기를 다음 예제와 일치 하도록 기존 코드를 수정 합니다.
 
-     [!code-cpp[NVC_MFCControlLadenDialog#29](../mfc/codesnippet/cpp/using-a-dialog-bar-with-a-rebar-control_1.cpp)]
+   [!code-cpp[NVC_MFCControlLadenDialog#29](../mfc/codesnippet/cpp/using-a-dialog-bar-with-a-rebar-control_1.cpp)]
 
 1. WM_MOVE 메시지에 대 한 처리기를 추가 합니다.
 
 1. 새 처리기를 다음 예제와 일치 하도록 기존 코드를 수정 합니다.
 
-     [!code-cpp[NVC_MFCControlLadenDialog#30](../mfc/codesnippet/cpp/using-a-dialog-bar-with-a-rebar-control_2.cpp)]
+   [!code-cpp[NVC_MFCControlLadenDialog#30](../mfc/codesnippet/cpp/using-a-dialog-bar-with-a-rebar-control_2.cpp)]
 
 새 처리기를 부모 창에 WM_ERASEBKGND 메시지를 전달 하 고 대화 상자 모음 개체가 이동 될 때마다 다시 그리기를 강제 적용 하 여 대화 상자 막대의 투명도 시뮬레이션 합니다.
 

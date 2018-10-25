@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a996df63430a2d6b1942112122a1f185ba8f13de
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 16bea4bb35a7eeffa1c6986953d7245ff588abd3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48859603"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075531"
 ---
 # <a name="adding-an-atl-control"></a>ATL 컨트롤 추가
 
@@ -47,4 +47,4 @@ ms.locfileid: "48859603"
 ## <a name="see-also"></a>참고 항목
 
 [복합 컨트롤에 기능 추가](../../atl/adding-functionality-to-the-composite-control.md)<br/>
-[ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)   
+[ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)

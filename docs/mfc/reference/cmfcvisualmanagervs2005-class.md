@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b854697ce0888393970ae3815ae46b5e8896ef58
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: de174e976a2aacfe1402ad47f5eea31f13a2f96e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442060"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067279"
 ---
 # <a name="cmfcvisualmanagervs2005-class"></a>CMFCVisualManagerVS2005 클래스
 
@@ -77,7 +77,7 @@ class CMFCVisualManagerVS2005 : public CMFCVisualManagerOffice2003
 |[CMFCVisualManagerVS2005::GetTabFrameColors](#gettabframecolors)|(재정의 [CMFCVisualManagerOffice2003::GetTabFrameColors](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#gettabframecolors).)|
 |[CMFCVisualManagerVS2005::HasOverlappedAutoHideButtons](#hasoverlappedautohidebuttons)|자동 숨기기 단추는 현재 비주얼 관리자에서 겹치는 지 여부를 반환 합니다. (재정의 [CMFCVisualManager::HasOverlappedAutoHideButtons](../../mfc/reference/cmfcvisualmanager-class.md#hasoverlappedautohidebuttons).)|
 |[CMFCVisualManagerVS2005::OnDrawAutoHideButtonBorder](#ondrawautohidebuttonborder)|(재정의 [CMFCVisualManagerOffice2003::OnDrawAutoHideButtonBorder](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawautohidebuttonborder).)|
-|[CMFCVisualManagerVS2005::OnDrawCaptionButton](#ondrawcaptionbutton)|(`CMFCVisualManagerOfficeXP::OnDrawCaptionButton`를 재정의합니다.)|
+|[CMFCVisualManagerVS2005::OnDrawCaptionButton](#ondrawcaptionbutton)|( `CMFCVisualManagerOfficeXP::OnDrawCaptionButton`을 재정의합니다.)|
 |[CMFCVisualManagerVS2005::OnDrawPaneCaption](#ondrawpanecaption)|(재정의 [CMFCVisualManagerOffice2003::OnDrawPaneCaption](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawpanecaption).)|
 |[CMFCVisualManagerVS2005::OnDrawSeparator](#ondrawseparator)|(재정의 [CMFCVisualManagerOffice2003::OnDrawSeparator](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawseparator).)|
 |[CMFCVisualManagerVS2005::OnDrawTab](#ondrawtab)|(재정의 [CMFCVisualManagerOffice2003::OnDrawTab](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawtab).)|
@@ -85,7 +85,7 @@ class CMFCVisualManagerVS2005 : public CMFCVisualManagerOffice2003
 |[CMFCVisualManagerVS2005::OnEraseTabsArea](#onerasetabsarea)|(재정의 [CMFCVisualManagerOffice2003::OnEraseTabsArea](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onerasetabsarea).)|
 |[CMFCVisualManagerVS2005::OnFillAutoHideButtonBackground](#onfillautohidebuttonbackground)|(재정의 [CMFCVisualManagerOffice2003::OnFillAutoHideButtonBackground](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onfillautohidebuttonbackground).)|
 |[CMFCVisualManagerVS2005::OnFillHighlightedArea](#onfillhighlightedarea)|(재정의 [CMFCVisualManagerOffice2003::OnFillHighlightedArea](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onfillhighlightedarea).)|
-|[CMFCVisualManagerVS2005::OnFillMiniFrameCaption](#onfillminiframecaption)|(`CMFCVisualManagerOfficeXP::OnFillMiniFrameCaption`를 재정의합니다.)|
+|[CMFCVisualManagerVS2005::OnFillMiniFrameCaption](#onfillminiframecaption)|( `CMFCVisualManagerOfficeXP::OnFillMiniFrameCaption`을 재정의합니다.)|
 |[CMFCVisualManagerVS2005::OnUpdateSystemColors](#onupdatesystemcolors)|(재정의 [CMFCVisualManagerOffice2003::OnUpdateSystemColors](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onupdatesystemcolors).)|
 
 ## <a name="remarks"></a>설명
@@ -120,7 +120,6 @@ CMFCVisualManagerVS2005 클래스를 사용 하 여 Microsoft Visual Studio 2005
 
 ##  <a name="getdockingtabsborderssize"></a>  CMFCVisualManagerVS2005::GetDockingTabsBordersSize
 
-
 ```
 virtual int GetDockingTabsBordersSize();
 ```
@@ -130,7 +129,6 @@ virtual int GetDockingTabsBordersSize();
 ### <a name="remarks"></a>설명
 
 ##  <a name="getmditabsborderssize"></a>  CMFCVisualManagerVS2005::GetMDITabsBordersSize
-
 
 ```
 virtual int GetMDITabsBordersSize();
@@ -142,21 +140,19 @@ virtual int GetMDITabsBordersSize();
 
 ##  <a name="getpropertygridgroupcolor"></a>  CMFCVisualManagerVS2005::GetPropertyGridGroupColor
 
-
 ```
 virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *pPropList*
+[in] *pPropList*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="gettabframecolors"></a>  CMFCVisualManagerVS2005::GetTabFrameColors
-
 
 ```
 virtual void GetTabFrameColors(
@@ -173,19 +169,19 @@ virtual void GetTabFrameColors(
 
 ### <a name="parameters"></a>매개 변수
 
-*pTabWnd*<br/>
-[in] [in] *clrDark*
-*clrBlack*<br/>
-[in] [in] *clrHighlight*
-*clrFace*<br/>
-[in] [in] *clrDarkShadow*
-*clrLight*<br/>
-[in] [in] *pbrFace* [in] *pbrBlack*
+[in] *pTabWnd*<br/>
+[in] *clrDark*<br/>
+[in] *clrBlack*<br/>
+[in] *clrHighlight*<br/>
+[in] *clrFace*<br/>
+[in] *clrDarkShadow*<br/>
+[in] *clrLight*<br/>
+[in] *pbrFace*<br/>
+[in] *pbrBlack*<br/>
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="hasoverlappedautohidebuttons"></a>  CMFCVisualManagerVS2005::HasOverlappedAutoHideButtons
-
 
 ```
 virtual BOOL HasOverlappedAutoHideButtons() const;
@@ -197,7 +193,6 @@ virtual BOOL HasOverlappedAutoHideButtons() const;
 
 ##  <a name="ondrawautohidebuttonborder"></a>  CMFCVisualManagerVS2005::OnDrawAutoHideButtonBorder
 
-
 ```
 virtual void OnDrawAutoHideButtonBorder(
     CDC* pDC,
@@ -208,15 +203,14 @@ virtual void OnDrawAutoHideButtonBorder(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDC*<br/>
-[in] [in] *rectBounds*
-*rectBorderSize*<br/>
-[in] [in] *pButton*
+[in] *pDC*<br/>
+[in] *rectBounds*<br/>
+[in] *rectBorderSize*<br/>
+[in] *pButton*<br/>
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="ondrawcaptionbutton"></a>  CMFCVisualManagerVS2005::OnDrawCaptionButton
-
 
 ```
 virtual void OnDrawCaptionButton(
@@ -231,17 +225,17 @@ virtual void OnDrawCaptionButton(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDC*<br/>
-[in] [in] *pButton*
-*bActive*<br/>
-[in] [in] *bHorz*
-*bMaximized*<br/>
-[in] [in] *사용 안 함* [in] *nImageID*
+[in] *pDC*<br/>
+[in] *pButton*<br/>
+[in] *bActive*<br/>
+[in] *bHorz*<br/>
+[in] *bMaximized*<br/>
+[in] *사용 안 함*<br/>
+[in] *nImageID*<br/>
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="ondrawpanecaption"></a>  CMFCVisualManagerVS2005::OnDrawPaneCaption
-
 
 ```
 virtual COLORREF OnDrawPaneCaption(
@@ -254,17 +248,17 @@ virtual COLORREF OnDrawPaneCaption(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDC*<br/>
-[in] [in] *pBar*
-*bActive*<br/>
-[in] [in] *rectCaption* [in] *rectButtons*
+[in] *pDC*<br/>
+[in] *pBar*<br/>
+[in] *bActive*<br/>
+[in] *rectCaption*<br/>
+[in] *rectButtons*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="ondrawseparator"></a>  CMFCVisualManagerVS2005::OnDrawSeparator
-
 
 ```
 virtual void OnDrawSeparator(
@@ -276,15 +270,14 @@ virtual void OnDrawSeparator(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDC*<br/>
-[in] [in] *pBar*
-*rect*<br/>
-[in] [in] *bIsHoriz*
+[in] *pDC*<br/>
+[in] *pBar*<br/>
+[in] *rect*<br/>
+[in] *bIsHoriz*<br/>
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="ondrawtab"></a>  CMFCVisualManagerVS2005::OnDrawTab
-
 
 ```
 virtual void OnDrawTab(
@@ -297,15 +290,15 @@ virtual void OnDrawTab(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDC*<br/>
-[in] [in] *rectTab*
-*iTab*<br/>
-[in] [in] *bIsActive* [in] *pTabWnd*
+[in] *pDC*<br/>
+[in] *rectTab*<br/>
+[in] *iTab*<br/>
+[in] *bIsActive*<br/>
+[in] *pTabWnd*<br/>
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="ondrawtoolboxframe"></a>  CMFCVisualManagerVS2005::OnDrawToolBoxFrame
-
 
 ```
 virtual void OnDrawToolBoxFrame(
@@ -315,13 +308,12 @@ virtual void OnDrawToolBoxFrame(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDC*<br/>
-[in] [in] *rect*
+[in] *pDC*<br/>
+[in] *rect*<br/>
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="onerasetabsarea"></a>  CMFCVisualManagerVS2005::OnEraseTabsArea
-
 
 ```
 virtual void OnEraseTabsArea(
@@ -332,13 +324,13 @@ virtual void OnEraseTabsArea(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDC*<br/>
-[in] [in] *rect* [in] *pTabWnd*
+[in] *pDC*<br/>
+[in] *rect*<br/>
+[in] *pTabWnd*<br/>
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="onfillautohidebuttonbackground"></a>  CMFCVisualManagerVS2005::OnFillAutoHideButtonBackground
-
 
 ```
 virtual void OnFillAutoHideButtonBackground(
@@ -349,13 +341,13 @@ virtual void OnFillAutoHideButtonBackground(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDC*<br/>
-[in] [in] *rect* [in] *pButton*
+[in] *pDC*<br/>
+[in] *rect*<br/>
+[in] *pButton*<br/>
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="onfillhighlightedarea"></a>  CMFCVisualManagerVS2005::OnFillHighlightedArea
-
 
 ```
 virtual void OnFillHighlightedArea(
@@ -367,15 +359,14 @@ virtual void OnFillHighlightedArea(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDC*<br/>
-[in] [in] *rect*
-*pBrush*<br/>
-[in] [in] *pButton*
+[in] *pDC*<br/>
+[in] *rect*<br/>
+[in] *pBrush*<br/>
+[in] *pButton*<br/>
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="onfillminiframecaption"></a>  CMFCVisualManagerVS2005::OnFillMiniFrameCaption
-
 
 ```
 virtual COLORREF OnFillMiniFrameCaption(
@@ -387,17 +378,16 @@ virtual COLORREF OnFillMiniFrameCaption(
 
 ### <a name="parameters"></a>매개 변수
 
-*pDC*<br/>
-[in] [in] *rectCaption*
-*pFrameWnd*<br/>
-[in] [in] *bActive*
+[in] *pDC*<br/>
+[in] *rectCaption*<br/>
+[in] *pFrameWnd*<br/>
+[in] *bActive*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="onupdatesystemcolors"></a>  CMFCVisualManagerVS2005::OnUpdateSystemColors
-
 
 ```
 virtual void OnUpdateSystemColors();

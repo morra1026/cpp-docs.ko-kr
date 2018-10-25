@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca420ce09cae5bf7c11dcfb0ad384e0002bdc4b1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 738d441cf88b41740cb0cff933916489cac683f2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403581"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073099"
 ---
 # <a name="handlers-for-message-map-ranges"></a>메시지 맵 범위에 대한 처리기
 
@@ -81,7 +81,7 @@ ms.locfileid: "46403581"
 
 - 매크로에 매개 변수:
 
-     처음 두 매크로 세 개의 매개 변수를 수행합니다.
+   처음 두 매크로 세 개의 매개 변수를 수행합니다.
 
    - 범위를 시작 하는 명령 ID
 
@@ -89,9 +89,9 @@ ms.locfileid: "46403581"
 
    - 메시지 처리기 함수의 이름
 
-     명령 Id의 범위는 연속적 이어야 합니다.
+   명령 Id의 범위는 연속적 이어야 합니다.
 
-     세 번째 매크로 `ON_CONTROL_RANGE`, 추가 첫 번째 매개 변수: 컨트롤 알림 메시지와 같은 **에서 EN_CHANGE**합니다.
+   세 번째 매크로 `ON_CONTROL_RANGE`, 추가 첫 번째 매개 변수: 컨트롤 알림 메시지와 같은 **에서 EN_CHANGE**합니다.
 
 ##  <a name="_core_declaring_the_handler_function"></a> 처리기 함수 선언
 
@@ -113,11 +113,11 @@ ms.locfileid: "46403581"
 
 - 두 명령 Id, 시작 및 연속 된 범위를 종료 합니다.
 
-     마련 **ID_VIEW_ZOOM25** 하 고 **ID_VIEW_ZOOM300**합니다.
+   마련 **ID_VIEW_ZOOM25** 하 고 **ID_VIEW_ZOOM300**합니다.
 
 - 명령에 대 한 처리기 함수의 이름입니다.
 
-     여기에 `OnZoom`입니다.
+   여기에 `OnZoom`입니다.
 
 함수 선언은 다음과 같습니다.
 
@@ -137,15 +137,15 @@ ms.locfileid: "46403581"
 
 - 특정 컨트롤 알림 메시지입니다.
 
-     여기에 **BN_CLICKED**합니다.
+   여기에 **BN_CLICKED**합니다.
 
 - 컨트롤의 연속 된 범위에 연결 된 컨트롤 ID 값입니다.
 
-     다음은 이러한 **IDC_BUTTON1** 하 고 **IDC_BUTTON10**합니다.
+   다음은 이러한 **IDC_BUTTON1** 하 고 **IDC_BUTTON10**합니다.
 
 - 메시지 처리기 함수의 이름입니다.
 
-     여기에 `OnButtonClicked`입니다.
+   여기에 `OnButtonClicked`입니다.
 
 처리기 함수를 작성할 때 지정할 추가 **UINT** 매개 변수를 다음과 같이 합니다.
 

@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: a650d62a53fa6cada535119cb8897f1f97870ea1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 446ed0c6fb84990db572e1e1ead5c2ab5094ec70
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46421260"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076063"
 ---
 # <a name="how-to-create-clr-console-applications-ccli"></a>방법: CLR 콘솔 응용 프로그램 만들기(C++/CLI)
 
@@ -33,7 +33,7 @@ ms.locfileid: "46421260"
 
 - 이러한.NET Framework 네임스페이스에 대한 참조:
 
-   - [시스템](https://msdn.microsoft.com/library/system.appdomainmanager.appdomainmanager.aspx)-Contains 기본적인 클래스 및 일반적으로 정의 하는 기본 클래스 값 및 참조 데이터 형식, 이벤트 및 이벤트 처리기, 인터페이스, 특성 및 예외 처리를 사용 합니다.
+   - [System](https://msdn.microsoft.com/library/system.appdomainmanager.appdomainmanager.aspx)- 일반적으로 사용되는 값과 참조 데이터 형식, 이벤트와 이벤트 처리기, 인터페이스, 특성 및 처리 예외 등을 정의하는 기본 클래스가 포함됩니다.
 
    - mscorlib - .NET Framework 개발을 지원하는 DLL 어셈블리입니다.
 
@@ -67,7 +67,7 @@ ms.locfileid: "46421260"
 
 1. **이름** 상자에 응용 프로그램의 고유 이름을 입력합니다.
 
-     다른 프로젝트 및 솔루션 설정을 지정할 수 있지만 필요하지 않습니다.
+   다른 프로젝트 및 솔루션 설정을 지정할 수 있지만 필요하지 않습니다.
 
 1. **확인** 단추를 선택합니다.
 

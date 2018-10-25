@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ebc257d78bf658b722a93e9d7c306c9bcf6e88bd
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 87ab9e42af139f9b156fa2a688558077967dfa8c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791728"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067802"
 ---
 # <a name="idl-attributes"></a>IDL 특성
 
@@ -83,7 +83,7 @@ ms.locfileid: "48791728"
 |[licensed](licensed.md)|적용 되는 coclass 사용이 허가 되을 사용 하 여 인스턴스화해야 나타냅니다 `IClassFactory2`합니다.|
 |[local](local-cpp.md)|MIDL 컴파일러 인터페이스 헤더에 사용 되는 경우에 헤더 생성기로 사용할 수 있습니다. 개별 함수를 사용할 경우 없는 스텁 생성 되는 로컬 프로시저를 지정 합니다.|
 |[max_is](max-is.md)|유효한 배열 인덱스에 대 한 최대값을 지정합니다.|
-|[모듈](module-cpp.md)|.Idl 파일의 라이브러리 블록을 정의합니다.|
+|[module](module-cpp.md)|.Idl 파일의 라이브러리 블록을 정의합니다.|
 |[ms_union](ms-union.md)|Nonencapsulated 공용 구조체의 네트워크 데이터 표현 맞춤을 제어합니다.|
 |[no_injected_text](no-injected-text.md)|컴파일러 특성 사용으로 인해 코드를 삽입 하지 못하도록 방지 합니다.|
 |[nonbrowsable](nonbrowsable.md)|인터페이스 멤버를 속성 브라우저에 표시 되지 해야 나타냅니다.|
@@ -92,7 +92,7 @@ ms.locfileid: "48791728"
 |[object](object-cpp.md)|사용자 지정 인터페이스를; 식별 사용자 지정 특성을 사용 하 여 동의어입니다.|
 |[odl](odl.md)|개체 설명 언어 (ODL) 인터페이스는 인터페이스를 식별합니다.|
 |[oleautomation](oleautomation.md)|Automation 호환 인터페이스를 나타냅니다.|
-|[선택 사항](optional-cpp.md)|멤버 함수에 대 한 선택적 매개 변수를 지정합니다.|
+|[optional](optional-cpp.md)|멤버 함수에 대 한 선택적 매개 변수를 지정합니다.|
 |[out](out-cpp.md)|호출된 프로시저에서 호출하는 프로시저로 반환된(서버에서 클라이언트로 반환된) 포인터 매개 변수를 식별합니다.|
 |[pointer_default](pointer-default.md)|매개 변수 목록에 표시 되는 최상위 포인터를 제외 하 고 모든 포인터에 대 한 기본 포인터 특성을 지정 합니다.|
 |[pragma](pragma.md)|생성된 된.idl 파일의 따옴표 없이 지정된 된 문자열을 내보냅니다.|
@@ -125,4 +125,4 @@ ms.locfileid: "48791728"
 
 ## <a name="see-also"></a>참고 항목
 
-[그룹별 특성](attributes-by-group.md)  
+[그룹별 특성](attributes-by-group.md)

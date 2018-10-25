@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d9acae5f87223a3b23c492f02596452fabb745f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ca8a6689d0ac305a0dc3264b0311a4d7bf2e7d11
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441293"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076076"
 ---
 # <a name="cmfcbutton-class"></a>CMFCButton 클래스
 
@@ -419,8 +419,6 @@ static BOOL IsWindowsThemingEnabled();
 
 단추 테두리 스타일을 현재 Windows 테마;에 해당 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
-
-
 ## <a name="a-namembdontusewinxptheme-cmfcbuttonmbdontusewinxptheme"></a><a name="m_bDontUseWinXPTheme"/> CMFCButton::m_bDontUseWinXPTheme
 
 단추를 그릴 때 Windows XP 테마를 사용할지 여부를 지정 합니다.
@@ -446,7 +444,6 @@ BOOL m_bDrawFocus;
 ##  <a name="m_bGrayDisabled"></a>  CMFCButton::m_bGrayDisabled
 
 TRUE 인 경우에 비활성화 된 단추를 회색으로 그릴 수 있습니다.
-
 
 ```
 BOOL m_bGrayDisabled;
@@ -479,7 +476,6 @@ BOOL m_bResponseOnButtonDown;
 ```
 BOOL m_bRightImage;
 ```
-
 
 ##  <a name="m_bTopImage"></a>  CMFCButton::m_bTopImage](#m_bTopImage)
 
@@ -663,7 +659,7 @@ virtual void OnDrawText(
 [in] 텍스트의 서식을 지정 하는 방법을 지정 하는 플래그입니다. 자세한 내용은 참조는 *nFormat* 의 매개 변수를 [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) 메서드.
 
 *uiState*<br/>
-[in] 예약 되어 있습니다.
+[in] 예약되어 있습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -739,14 +735,12 @@ void SetCheckedImage(
     HICON hIconDisabled=NULL,
     BOOL bAlphaBlend=FALSE);
 
-
 void SetCheckedImage(
     HBITMAP hBitmap,
     BOOL bAutoDestroy=TRUE,
     HBITMAP hBitmapHot=NULL,
     BOOL bMap3dColors=TRUE,
     HBITMAP hBitmapDisabled=NULL);
-
 
 void SetCheckedImage(
     UINT uiBmpResId,
@@ -828,14 +822,12 @@ void SetImage(
     HICON hIconDisabled=NULL,
     BOOL bAlphaBlend=FALSE);
 
-
 void SetImage(
     HBITMAP hBitmap,
     BOOL bAutoDestroy=TRUE,
     HBITMAP hBitmapHot=NULL,
     BOOL bMap3dColors=TRUE,
     HBITMAP hBitmapDisabled=NULL);
-
 
 void SetImage(
     UINT uiBmpResId,

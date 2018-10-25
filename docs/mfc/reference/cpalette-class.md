@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4a2b161368b39f586c6393bbf1916d64dacd833
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 28c12e2c462061604398ab5283374e74bcad810e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381402"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071903"
 ---
 # <a name="cpalette-class"></a>CPalette 클래스
 
@@ -341,6 +341,4 @@ Windows 구조에 대 한 자세한 내용은 `PALETTEENTRY`를 참조 하세요
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CPalette::GetPaletteEntries](#getpaletteentries)<br/>
 [CPalette::SetPaletteEntries](#setpaletteentries)
-
-
 

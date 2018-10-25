@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 352f3e5ebd9606cc355ea9af65739c3e17894298
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 75e34fd4cfa53257f0e8a497cf8bc245c90f6732
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46136298"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077356"
 ---
 # <a name="composite-control-macros"></a>복합 컨트롤 매크로
 
@@ -41,7 +41,7 @@ ms.locfileid: "46136298"
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlcom.h  
+**헤더:** atlcom.h
 
 ##  <a name="begin_sink_map"></a>  BEGIN_SINK_MAP
 
@@ -122,7 +122,7 @@ SINK_ENTRY_EX_P( id, piid, dispid, fn ) // (Visual Studio 2017)
 [in] 컨트롤을 식별합니다.
 
 *iid*<br/>
-[in] 디스패치 인터페이스를 나타냅니다.  
+[in] 디스패치 인터페이스를 나타냅니다.
 
 *piid*<br/>
 [in] 디스패치 인터페이스에 대 한 포인터입니다.
@@ -156,7 +156,7 @@ SINK_ENTRY_INFO_P( id, piid, dispid, fn, info ) // (Visual Studio 2017)
 [in] 이벤트 소스를 식별 하는 부호 없는 정수입니다. 이 값과 일치 해야 합니다 *nID* 관련에 사용 되는 템플릿 매개 변수 [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) 기본 클래스입니다.
 
 *iid*<br/>
-[in] 디스패치 인터페이스를 식별 하는 IID입니다.  
+[in] 디스패치 인터페이스를 식별 하는 IID입니다.
 
 *piid*<br/>
 [in] 디스패치 인터페이스를 식별 하는 IID에 대 한 포인터입니다.

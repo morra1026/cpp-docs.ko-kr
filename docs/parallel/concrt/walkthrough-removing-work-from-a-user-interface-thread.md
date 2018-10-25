@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d87fe1060756e46418411584fa6042533bbc1f2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cc766b3f5410cc52543b5d2bafc06b87d9222e4a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46385510"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077935"
 ---
 # <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>연습: 사용자 인터페이스 스레드에서 작업 제거
 
@@ -72,7 +72,7 @@ ms.locfileid: "46385510"
 
 1. 클릭 **완료** 프로젝트를 만들고 닫습니다 합니다 **MFC 응용 프로그램 마법사**합니다.
 
-     응용 프로그램을 빌드하고 실행 하 여 만들어졌는지 확인 합니다. 응용 프로그램을 작성 하는 **빌드** 메뉴에서 클릭 **솔루션 빌드**합니다. 응용 프로그램이 성공적으로 빌드되면 클릭 하 여 응용 프로그램 실행 **디버깅 시작** 에 **디버그** 메뉴.
+   응용 프로그램을 빌드하고 실행 하 여 만들어졌는지 확인 합니다. 응용 프로그램을 작성 하는 **빌드** 메뉴에서 클릭 **솔루션 빌드**합니다. 응용 프로그램이 성공적으로 빌드되면 클릭 하 여 응용 프로그램 실행 **디버깅 시작** 에 **디버그** 메뉴.
 
 ##  <a name="serial"></a> 직렬 버전 Mandelbrot 응용 프로그램의 구현
 
@@ -82,37 +82,37 @@ ms.locfileid: "46385510"
 
 1. Stdafx.h에서 다음 추가 `#include` 지시문:
 
-     [!code-cpp[concrt-mandelbrot#1](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_1.h)]
+   [!code-cpp[concrt-mandelbrot#1](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_1.h)]
 
 1. ChildView.h에서 후 합니다 `pragma` 지시문을 정의 합니다 `BitmapPtr` 형식. 합니다 `BitmapPtr` 형식에 대 한 포인터를 사용 하면를 `Bitmap` 여러 구성 요소에서 공유 하는 개체입니다. `Bitmap` 모든 구성 요소에서 참조 되지 않는 개체가 삭제 됩니다.
 
-     [!code-cpp[concrt-mandelbrot#2](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_2.h)]
+   [!code-cpp[concrt-mandelbrot#2](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_2.h)]
 
 1. ChildView.h, 다음 코드를 추가 합니다 `protected` 부분을 `CChildView` 클래스:
 
-     [!code-cpp[concrt-mandelbrot#3](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_3.h)]
+   [!code-cpp[concrt-mandelbrot#3](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_3.h)]
 
 1. ChildView.cpp, 주석 처리 하거나 다음 줄을 제거 합니다.
 
-     [!code-cpp[concrt-mandelbrot#4](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_4.cpp)]
+   [!code-cpp[concrt-mandelbrot#4](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_4.cpp)]
 
-     디버그 빌드에서이 단계에서 사용 하 여 응용 프로그램을 방지 합니다 `DEBUG_NEW` 할당자에 GDI +와 호환 되지 않습니다.
+   디버그 빌드에서이 단계에서 사용 하 여 응용 프로그램을 방지 합니다 `DEBUG_NEW` 할당자에 GDI +와 호환 되지 않습니다.
 
 1. ChildView.cpp, 추가 된 `using` 지시문을 `Gdiplus` 네임 스페이스.
 
-     [!code-cpp[concrt-mandelbrot#5](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_5.cpp)]
+   [!code-cpp[concrt-mandelbrot#5](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_5.cpp)]
 
 1. 생성자 및 소멸자의 다음 코드를 추가 합니다 `CChildView` 클래스를 초기화 한 GDI +를 종료 합니다.
 
-     [!code-cpp[concrt-mandelbrot#6](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_6.cpp)]
+   [!code-cpp[concrt-mandelbrot#6](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_6.cpp)]
 
 1. `CChildView::DrawMandelbrot` 메서드를 구현합니다. 이 메서드는 지정 된 Mandelbrot 프랙탈을 그리는 데 `Bitmap` 개체입니다.
 
-     [!code-cpp[concrt-mandelbrot#7](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_7.cpp)]
+   [!code-cpp[concrt-mandelbrot#7](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_7.cpp)]
 
 1. `CChildView::OnPaint` 메서드를 구현합니다. 이 메서드를 호출 `CChildView::DrawMandelbrot` 의 내용을 복사는 `Bitmap` 창에는 개체입니다.
 
-     [!code-cpp[concrt-mandelbrot#8](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_8.cpp)]
+   [!code-cpp[concrt-mandelbrot#8](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_8.cpp)]
 
 9. 응용 프로그램을 빌드하고 실행 하 여 성공적으로 업데이트 되었는지 확인 합니다.
 
@@ -136,25 +136,25 @@ ms.locfileid: "46385510"
 
 1. Stdafx.h에서 다음 추가 `#include` 지시문:
 
-     [!code-cpp[concrt-mandelbrot#101](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_9.h)]
+   [!code-cpp[concrt-mandelbrot#101](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_9.h)]
 
 1. ChildView.h, 추가 `task_group` 및 `unbounded_buffer` 멤버 변수를 `protected` 섹션을 `CChildView` 클래스. 합니다 `task_group` 개체는; 그리기를 수행 하는 작업을 보유 합니다 `unbounded_buffer` 완료 Mandelbrot 이미지를 보유 하는 개체입니다.
 
-     [!code-cpp[concrt-mandelbrot#102](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_10.h)]
+   [!code-cpp[concrt-mandelbrot#102](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_10.h)]
 
 1. ChildView.cpp, 추가 된 `using` 지시문을 `concurrency` 네임 스페이스.
 
-     [!code-cpp[concrt-mandelbrot#103](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_11.cpp)]
+   [!code-cpp[concrt-mandelbrot#103](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_11.cpp)]
 
 1. 에 `CChildView::DrawMandelbrot` 메서드를 호출한 후 `Bitmap::UnlockBits`, 호출를 [concurrency:: send](reference/concurrency-namespace-functions.md#send) 전달할 함수를 `Bitmap` UI 스레드로 개체입니다. 그런 다음 UI 스레드로 그리기 메시지를 게시 하 고 클라이언트 영역을 무효화 합니다.
 
-     [!code-cpp[concrt-mandelbrot#104](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_12.cpp)]
+   [!code-cpp[concrt-mandelbrot#104](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_12.cpp)]
 
 1. 업데이트를 `CChildView::OnPaint` 업데이트를 수신 하는 방법 `Bitmap` 개체 및 클라이언트 창에는 이미지를 그립니다.
 
-     [!code-cpp[concrt-mandelbrot#105](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_13.cpp)]
+   [!code-cpp[concrt-mandelbrot#105](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_13.cpp)]
 
-     `CChildView::OnPaint` 메서드는 메시지 버퍼에 존재 하지 않는 경우 Mandelbrot 이미지를 생성 하는 작업을 만듭니다. 메시지 버퍼에 포함 되지 않습니다는 `Bitmap` 예: 초기 그리기 메시지를 클라이언트 창 앞에 다른 창이 이동 하는 경우에서 개체입니다.
+   `CChildView::OnPaint` 메서드는 메시지 버퍼에 존재 하지 않는 경우 Mandelbrot 이미지를 생성 하는 작업을 만듭니다. 메시지 버퍼에 포함 되지 않습니다는 `Bitmap` 예: 초기 그리기 메시지를 클라이언트 창 앞에 다른 창이 이동 하는 경우에서 개체입니다.
 
 1. 응용 프로그램을 빌드하고 실행 하 여 성공적으로 업데이트 되었는지 확인 합니다.
 
@@ -194,37 +194,37 @@ Mandelbrot 응용 프로그램을 만듭니다 `Bitmap` 클라이언트 창의 �
 
 1. ChildView.h에서를 `protected` 의 섹션을 `CChildView` 클래스에 대 한 선언을 추가 합니다 `OnSize`, `OnSizing`, 및 `OnDestroy` 메시지 맵 함수.
 
-     [!code-cpp[concrt-mandelbrot#201](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_15.h)]
+   [!code-cpp[concrt-mandelbrot#201](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_15.h)]
 
 1. ChildView.cpp에 대 한 처리기를 포함 하는 메시지 맵을 수정 합니다 `WM_SIZE`, `WM_SIZING`, 및 `WM_DESTROY` 메시지입니다.
 
-     [!code-cpp[concrt-mandelbrot#202](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_16.cpp)]
+   [!code-cpp[concrt-mandelbrot#202](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_16.cpp)]
 
 1. `CChildView::OnSizing` 메서드를 구현합니다. 이 메서드는 기존의 모든 그리기 작업을 취소합니다.
 
-     [!code-cpp[concrt-mandelbrot#203](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_17.cpp)]
+   [!code-cpp[concrt-mandelbrot#203](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_17.cpp)]
 
 1. `CChildView::OnSize` 메서드를 구현합니다. 이 메서드는 기존의 모든 그리기 작업을 취소 하 고 업데이트 된 클라이언트 창 크기에 대 한 새 그리기 작업을 만듭니다.
 
-     [!code-cpp[concrt-mandelbrot#204](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_18.cpp)]
+   [!code-cpp[concrt-mandelbrot#204](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_18.cpp)]
 
 1. `CChildView::OnDestroy` 메서드를 구현합니다. 이 메서드는 기존의 모든 그리기 작업을 취소합니다.
 
-     [!code-cpp[concrt-mandelbrot#205](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_19.cpp)]
+   [!code-cpp[concrt-mandelbrot#205](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_19.cpp)]
 
 1. ChildView.cpp, 정의 된 `scope_guard` RAII 패턴을 구현 하는 클래스입니다.
 
-     [!code-cpp[concrt-mandelbrot#206](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_20.cpp)]
+   [!code-cpp[concrt-mandelbrot#206](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_20.cpp)]
 
 1. 다음 코드를 추가 합니다 `CChildView::DrawMandelbrot` 메서드를 호출한 후 `Bitmap::LockBits`:
 
-     [!code-cpp[concrt-mandelbrot#207](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_21.cpp)]
+   [!code-cpp[concrt-mandelbrot#207](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_21.cpp)]
 
-     이 코드는 만들어 취소를 처리 한 `scope_guard` 개체입니다. 개체가 범위를 벗어나면 비트맵 bits 잠금을 해제 합니다.
+   이 코드는 만들어 취소를 처리 한 `scope_guard` 개체입니다. 개체가 범위를 벗어나면 비트맵 bits 잠금을 해제 합니다.
 
 1. 끝을 수정 합니다 `CChildView::DrawMandelbrot` 해제 하는 방법의 `scope_guard` 비트맵 비트 잠긴 후 하지만 UI 스레드에서 모든 메시지가 전송 되기 전에 개체. 이렇게 하면 UI 스레드가 비트맵 비트 잠금이 해제 된 전에 업데이트 되지 않습니다.
 
-     [!code-cpp[concrt-mandelbrot#208](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_22.cpp)]
+   [!code-cpp[concrt-mandelbrot#208](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_22.cpp)]
 
 9. 응용 프로그램을 빌드하고 실행 하 여 성공적으로 업데이트 되었는지 확인 합니다.
 

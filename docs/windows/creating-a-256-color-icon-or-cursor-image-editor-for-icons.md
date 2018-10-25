@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1d6e3af00bfe906a1954f7fc1d2b0af1ea52945e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dcd9edb155afa9138778f1d464a5e59a20dd7ffd
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415917"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070033"
 ---
 # <a name="creating-a-256-color-icon-or-cursor-image-editor-for-icons"></a>256색 아이콘 또는 커서 만들기(아이콘에 대한 이미지 편집기)
 
@@ -34,7 +34,7 @@ ms.locfileid: "46415917"
 
 1. [리소스 뷰](../windows/resource-view-window.md),.rc 파일을 마우스 오른쪽 단추로 클릭 한 다음 선택 **삽입 리소스** 바로 가기 메뉴에서. (Cursor와 같은.rc 파일에서 기존 이미지 리소스가 이미 있는 경우 단순히 단추로 클릭 합니다 **커서** 선택한 폴더 **커서 삽입** 바로 가기 메뉴에서.)
 
-   > [!NOTE] 
+   > [!NOTE]
    > 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.
 
 2. 에 [리소스 삽입 대화 상자](../windows/add-resource-dialog-box.md)를 선택 **아이콘** 또는 **커서** 클릭 **새**합니다.

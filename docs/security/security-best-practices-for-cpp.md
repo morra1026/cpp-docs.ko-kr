@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0bcfc1cef3ea8e7010dd4ecc14c8048f546b25f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a42abcf891b5ebdeb8f9eaac8fa7fc9b20733558
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438134"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068764"
 ---
 # <a name="security-best-practices-for-c"></a>C++의 최선의 보안 구현 방법
 
@@ -94,7 +94,6 @@ AppVerifier를 사용하여 다음 작업을 수행할 수 있습니다.
 - 응용 프로그램에서 메모리 관련 문제를 검사합니다.
 
 - 응용 프로그램에서 잠재적인 보안 문제를 식별합니다.
-
 
 ## <a name="windows-user-accounts"></a>Windows 사용자 계정
 

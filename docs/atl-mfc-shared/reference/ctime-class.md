@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c99fe44b5012e08a4b32a9e84d4255e4ee2b7e0
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 2b82d172ec449a48866ee973421da95787bc9858
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808838"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070532"
 ---
 # <a name="ctime-class"></a>CTime 클래스
 
@@ -161,7 +161,7 @@ CTime(const DBTIMESTAMP& dbts, int nDST = -1) throw();
 나타냅니다는 `CTime` 이미 존재 하는 개체입니다.
 
 *time*<br/>
-A **__time64_t** 시간 값은 1970 년 1 월 1 일 UTC 이후의 초 수입니다. 현지 시간으로 조정 됩니다이 note 합니다. 예를 들어, 뉴욕에 만들려는 경우는 `CTime` 자릿수가 0 인 매개 변수를 전달 하 여 개체 [CTime::GetMonth](#getmonth) 12를 반환 합니다.
+`__time64_t` 시간 값은 1970 년 1 월 1 일 UTC 이후의 초 수입니다. 현지 시간으로 조정 됩니다이 note 합니다. 예를 들어, 뉴욕에 만들려는 경우는 `CTime` 자릿수가 0 인 매개 변수를 전달 하 여 개체 [CTime::GetMonth](#getmonth) 12를 반환 합니다.
 
 *nYear*, *nMonth*합니다 *발생 한 날짜*를 *n 시간*를 *nMin*, *nSec*<br/>
 복사할 새 날짜 및 시간 값을 나타내는 `CTime` 개체입니다.

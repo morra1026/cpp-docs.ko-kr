@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d024c9468b06291ba93c4e404674925202fabcad
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a1dd43b806852e578c28dc7a647cb367ad6f2780
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46406797"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076622"
 ---
 # <a name="servers-implementing-a-server"></a>서버: 서버 구현
 
@@ -36,7 +36,7 @@ ms.locfileid: "46406797"
 
    - 서버 내부에서 활성 상태일 때 사용 되는 메뉴 및 도구 모음 리소스입니다.
 
-     이러한 리소스에 대 한 자세한 내용은 참조 하세요. [메뉴 및 리소스: 서버 추가](../mfc/menus-and-resources-server-additions.md)합니다.
+   이러한 리소스에 대 한 자세한 내용은 참조 하세요. [메뉴 및 리소스: 서버 추가](../mfc/menus-and-resources-server-additions.md)합니다.
 
 - 항목 클래스 정의에서 파생 된 `COleServerItem`합니다. 서버 항목에 자세한 내용은 참조 하세요 [서버: 서버 항목](../mfc/servers-server-items.md)합니다.
 

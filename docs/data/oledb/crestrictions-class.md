@@ -24,88 +24,88 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2e850b5ebad231b07ce7d6c7dca79126a9b2ba15
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: a4ea0536a8af87927521f88d888e19aa145f2c04
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082360"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50072072"
 ---
 # <a name="crestrictions-class"></a>CRestrictions 클래스
 
-스키마 행 집합에 대 한 제한을 지정할 수 있는 제네릭 클래스입니다.  
-  
+스키마 행 집합에 대 한 제한을 지정할 수 있는 제네릭 클래스입니다.
+
 ## <a name="syntax"></a>구문
 
 ```cpp
-template <class T, short nRestrictions, const GUID* pguid>  
-class CRestrictions : 
-   public CSchemaRowset <T, nRestrictions>  
-```  
-  
-### <a name="parameters"></a>매개 변수  
+template <class T, short nRestrictions, const GUID* pguid>
+class CRestrictions :
+   public CSchemaRowset <T, nRestrictions>
+```
+
+### <a name="parameters"></a>매개 변수
 
 *T*<br/>
-접근자에 사용 되는 클래스입니다.  
-  
+접근자에 사용 되는 클래스입니다.
+
 *nRestrictions*<br/>
-스키마 행 집합에 대 한 제한 열의 수입니다.  
-  
+스키마 행 집합에 대 한 제한 열의 수입니다.
+
 *pguid*<br/>
-스키마에 대 한 GUID에 대 한 포인터입니다.  
+스키마에 대 한 GUID에 대 한 포인터입니다.
 
-## <a name="requirements"></a>요구 사항  
+## <a name="requirements"></a>요구 사항
 
-**헤더:** atldbsch.h 
-  
-## <a name="members"></a>멤버  
-  
-### <a name="methods"></a>메서드  
-  
-|||  
-|-|-|  
-|[열기](#open)|결과 사용자가 제공한 제한 사항에 따라 집합을 반환 합니다.|   
+**헤더:** atldbsch.h
+
+## <a name="members"></a>멤버
+
+### <a name="methods"></a>메서드
+
+|||
+|-|-|
+|[열기](#open)|결과 사용자가 제공한 제한 사항에 따라 집합을 반환 합니다.|
 
 ## <a name="open"></a> Crestrictions:: Open
 
-결과 사용자가 제공한 제한 사항에 따라 집합을 반환 합니다.  
-  
-### <a name="syntax"></a>구문  
-  
+결과 사용자가 제공한 제한 사항에 따라 집합을 반환 합니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-HRESULT Open(const CSession& session,  
-   LPCTSTR lpszParam 1 = NULL,  
-   LPCTSTR lpszParam 2 = NULL,  
-   LPCTSTR lpszParam 3 = NULL,  
-   LPCTSTR lpszParam 4 = NULL,  
-   LPCTSTR lpszParam 5 = NULL,  
-   LPCTSTR lpszParam 6 = NULL,  
-   LPCTSTR lpszParam 7 = NULL,  
-   bool bBind = true);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+HRESULT Open(const CSession& session,
+   LPCTSTR lpszParam 1 = NULL,
+   LPCTSTR lpszParam 2 = NULL,
+   LPCTSTR lpszParam 3 = NULL,
+   LPCTSTR lpszParam 4 = NULL,
+   LPCTSTR lpszParam 5 = NULL,
+   LPCTSTR lpszParam 6 = NULL,
+   LPCTSTR lpszParam 7 = NULL,
+   bool bBind = true);
+```
+
+#### <a name="parameters"></a>매개 변수
 
 *세션*<br/>
-[in] 데이터 원본에 연결 하는 데 기존 세션 개체를 지정 합니다.  
-  
+[in] 데이터 원본에 연결 하는 데 기존 세션 개체를 지정 합니다.
+
 *lpszParam*<br/>
-[in] 스키마 행 집합에는 제한을 지정합니다.  
-  
+[in] 스키마 행 집합에는 제한을 지정합니다.
+
 *bBind*<br/>
-[in] 열 지도 자동으로 바인딩할 지 여부를 지정 합니다. 기본값은 **true**를 자동으로 바인딩할 열 지도 이르게 합니다. 설정 *bBind* 하 **false** 수동으로 바인딩할 수 있도록 열 맵의 자동 바인딩 방지 합니다. (수동 바인딩으로 OLAP 사용자에 게 특히 관심입니다.)  
-  
-### <a name="return-value"></a>반환 값  
+[in] 열 지도 자동으로 바인딩할 지 여부를 지정 합니다. 기본값은 **true**를 자동으로 바인딩할 열 지도 이르게 합니다. 설정 *bBind* 하 **false** 수동으로 바인딩할 수 있도록 열 맵의 자동 바인딩 방지 합니다. (수동 바인딩으로 OLAP 사용자에 게 특히 관심입니다.)
 
-HRESULT 값 중 하나입니다.  
-  
-### <a name="remarks"></a>설명  
+### <a name="return-value"></a>반환 값
 
-스키마 행 집합에서 최대 7 개의 제한 지정할 수 있습니다.  
-  
-참조 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686) 각 스키마 행 집합에서 정의 된 제한에 대 한 정보에 대 한 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
+HRESULT 값 중 하나입니다.
+
+### <a name="remarks"></a>설명
+
+스키마 행 집합에서 최대 7 개의 제한 지정할 수 있습니다.
+
+참조 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686) 각 스키마 행 집합에서 정의 된 제한에 대 한 정보에 대 한 합니다.
+
+## <a name="see-also"></a>참고 항목
 
 [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

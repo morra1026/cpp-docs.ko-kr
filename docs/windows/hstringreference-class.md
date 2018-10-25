@@ -31,12 +31,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ae2199ec414556fe3401c94c273d5ef0c13c3c5d
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 4754a74365b2c596e240bd13eb11fdc852205e2c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162531"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077890"
 ---
 # <a name="hstringreference-class"></a>HStringReference 클래스
 
@@ -110,7 +110,7 @@ HRESULT CopyTo(
 기본 HSTRING 핸들의 값을 검색 합니다.
 
 ```cpp
-HSTRING Get() const throw()  
+HSTRING Get() const throw()
 ```
 
 ### <a name="return-value"></a>반환 값
@@ -159,7 +159,7 @@ HStringReference(HStringReference&& other) throw();
 다른 값으로 이동 `HStringReference` 개체를 현재 `HStringReference` 개체입니다.
 
 ```cpp
-HStringReference& operator=(HStringReference&& other) throw()  
+HStringReference& operator=(HStringReference&& other) throw()
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -186,7 +186,7 @@ inline bool operator==(
 
 inline bool operator==(
                const HStringReference& lhs,
-               const HSTRING& rhs) throw()  
+               const HSTRING& rhs) throw()
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -216,7 +216,7 @@ inline bool operator!=(
 
 inline bool operator!=(
                const HStringReference& lhs,
-               const HSTRING& rhs) throw()  
+               const HSTRING& rhs) throw()
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -238,7 +238,7 @@ inline bool operator!=(
 ```cpp
 inline bool operator<(
     const HStringReference& lhs,
-    const HStringReference& rhs) throw()  
+    const HStringReference& rhs) throw()
 ```
 
 ### <a name="parameters"></a>매개 변수

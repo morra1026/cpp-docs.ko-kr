@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: e5dc30c7-405a-4ba4-8ae9-51937243fce8
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: b257628747dca488292cfdfff0ef783303bd1b88
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2a20a5c8ad87428e66f90b8f04c3006e5f1c2e84
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46094439"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068874"
 ---
 # <a name="ccomsinglethreadmodel-class"></a>CComSingleThreadModel 클래스
 
@@ -58,9 +58,9 @@ class CComSingleThreadModel
 
 ## <a name="remarks"></a>설명
 
-`CComSingleThreadModel` 변수의 값 증가 및 감소에 대 한 메서드를 제공 합니다. 와 달리 [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) 하 고 [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md), 이러한 메서드는 스레드로부터 안전 하지 않습니다.  
+`CComSingleThreadModel` 변수의 값 증가 및 감소에 대 한 메서드를 제공 합니다. 와 달리 [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) 하 고 [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md), 이러한 메서드는 스레드로부터 안전 하지 않습니다.
 
-일반적으로 사용 `CComSingleThreadModel` 두 가지 중 하나를 통해 **typedef** 하거나 이름을 [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) 하거나 [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)합니다. 각 참조 하는 클래스 **typedef** 다음 표에 나와 있는 것 처럼 사용 스레딩 모델에 따라 달라 집니다.  
+일반적으로 사용 `CComSingleThreadModel` 두 가지 중 하나를 통해 **typedef** 하거나 이름을 [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) 하거나 [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)합니다. 각 참조 하는 클래스 **typedef** 다음 표에 나와 있는 것 처럼 사용 스레딩 모델에 따라 달라 집니다.
 
 |형식 정의|단일 스레딩 모델|아파트 스레딩 모델|무료 스레딩 모델|
 |-------------|----------------------------|-------------------------------|--------------------------|

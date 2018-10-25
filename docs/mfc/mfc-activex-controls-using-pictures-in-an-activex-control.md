@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 919cff46250d07876c9ca50acb21972fcfa75d4d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a734e51f298f7f092dde341479293bad3a2d9434
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46411412"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50072685"
 ---
 # <a name="mfc-activex-controls-using-pictures-in-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤에서 그림 사용하기
 
@@ -47,15 +47,15 @@ ActiveX 컨트롤 클래스는 컨트롤 내에서 그림 속성을 구현하는
 
 - [CPictureHolder](../mfc/reference/cpictureholder-class.md) 클래스.
 
-     이 클래스를 사용하면 사용자 지정 그림 속성이 표시하는 항목에 대한 그림 개체 및 기능에 쉽게 액세스할 수 있습니다.
+   이 클래스를 사용하면 사용자 지정 그림 속성이 표시하는 항목에 대한 그림 개체 및 기능에 쉽게 액세스할 수 있습니다.
 
 - Get/Set 함수로 구현된 **LPPICTUREDISP**형식의 속성 지원.
 
-     클래스 뷰를 사용하여 그림 형식을 지원하는 사용자 지정 속성을 빠르게 추가할 수 있습니다. 클래스 뷰를 사용하여 ActiveX 컨트롤 속성을 추가하는 방법에 대한 자세한 내용은 [MFC ActiveX 컨트롤: 속성](../mfc/mfc-activex-controls-properties.md)문서를 참조하세요.
+   클래스 뷰를 사용하여 그림 형식을 지원하는 사용자 지정 속성을 빠르게 추가할 수 있습니다. 클래스 뷰를 사용하여 ActiveX 컨트롤 속성을 추가하는 방법에 대한 자세한 내용은 [MFC ActiveX 컨트롤: 속성](../mfc/mfc-activex-controls-properties.md)문서를 참조하세요.
 
 - 컨트롤의 그림 속성을 조작하는 속성 페이지.
 
-     이 속성 페이지는 ActiveX 컨트롤에서 사용할 수 있는 스톡 속성 페이지 그룹의 일부입니다. ActiveX 컨트롤 속성 페이지에 대한 자세한 내용은 [MFC ActiveX 컨트롤: 스톡 속성 페이지 사용](../mfc/mfc-activex-controls-using-stock-property-pages.md)을 참조하세요.
+   이 속성 페이지는 ActiveX 컨트롤에서 사용할 수 있는 스톡 속성 페이지 그룹의 일부입니다. ActiveX 컨트롤 속성 페이지에 대한 자세한 내용은 [MFC ActiveX 컨트롤: 스톡 속성 페이지 사용](../mfc/mfc-activex-controls-using-stock-property-pages.md)을 참조하세요.
 
 ##  <a name="_core_implementing_a_custom_picture_property_in_your_activex_control"></a> ActiveX 컨트롤에서 사용자 지정 그림 속성 구현
 
@@ -67,11 +67,11 @@ ActiveX 컨트롤 클래스는 컨트롤 내에서 그림 속성을 구현하는
 
 - [컨트롤 프로젝트에 코드 추가](#_core_additions_to_your_control_project).
 
-     표준 그림 속성 페이지 ID, `CPictureHolder`형식의 데이터 멤버, Get/Set 구현이 있는 **LPPICTUREDISP** 형식의 사용자 지정 속성을 추가해야 합니다.
+   표준 그림 속성 페이지 ID, `CPictureHolder`형식의 데이터 멤버, Get/Set 구현이 있는 **LPPICTUREDISP** 형식의 사용자 지정 속성을 추가해야 합니다.
 
 - [컨트롤 클래스의 여러 함수 수정](#_core_modifications_to_your_control_project).
 
-     ActiveX 컨트롤 그리기를 담당하는 여러 함수가 수정됩니다.
+   ActiveX 컨트롤 그리기를 담당하는 여러 함수가 수정됩니다.
 
 ##  <a name="_core_additions_to_your_control_project"></a> 컨트롤 프로젝트에 대한 추가
 

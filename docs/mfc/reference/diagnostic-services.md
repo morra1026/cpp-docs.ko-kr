@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b572af3bdfd444687af98172da9ada0736dac25
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dd420544f341159fa4281c4f837fa222d357e1b1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429515"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068699"
 ---
 # <a name="diagnostic-services"></a>진단 서비스
 
@@ -103,7 +103,6 @@ MFC 라이브러리는 프로그램을 더 쉽게 디버그할 수 있는 많은
 |-|-|
 |[_AFX_SECURE_NO_WARNINGS](#afx_secure_no_warnings)|사용 되지 않는 MFC 함수 사용에 대 한 컴파일러 경고를 표시 하지 않습니다.|
 
-
 ## <a name="afx_secure_no_warnings"></a> _AFX_SECURE_NO_WARNINGS
 
 사용 되지 않는 MFC 함수 사용에 대 한 컴파일러 경고를 표시 하지 않습니다.
@@ -113,6 +112,7 @@ MFC 라이브러리는 프로그램을 더 쉽게 디버그할 수 있는 많은
 ```
 _AFX_SECURE_NO_WARNINGS
 ```
+
 ### <a name="example"></a>예제
 
 이 코드 샘플 _AFX_SECURE_NO_WARNINGS 정의 되지 않은 경우 컴파일러 경고가 발생 됩니다.
@@ -309,6 +309,7 @@ DEBUG_ONLY 매크로 주변 *식* 사용 하 여 `#ifdef _DEBUG` 고 `#endif`입
 ENSURE(  booleanExpression )
 ENSURE_VALID( booleanExpression  )
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *booleanExpression*<br/>
@@ -370,7 +371,6 @@ static char THIS_FILE[] = __FILE__;
 [매크로 및 전역](mfc-macros-and-globals.md)<br/>
 [ASSERT](#assert)<br/>
 [VERIFY](#verify)
-
 
 ##  <a name="trace"></a>  TRACE
 
@@ -450,7 +450,6 @@ Windows NT 및 Windows에서의 모든 버전에서 `afxDump` 출력은 응용 �
 
 **헤더:** afx.h
 
-
 ## <a name="afxdump"></a> AfxDump (내부)
 
 MFC 디버깅 하는 동안 개체의 상태를 덤프 하는 데 사용 하는 내부 함수입니다.
@@ -460,6 +459,7 @@ MFC 디버깅 하는 동안 개체의 상태를 덤프 하는 데 사용 하는 
 ```
 void AfxDump(const CObject* pOb);
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *pOb*<br/>
@@ -478,8 +478,6 @@ void AfxDump(const CObject* pOb);
 ### <a name="see-also"></a>참고 항목
 
 [CObject::Dump](cobject-class.md#dump)
-
-
 
 ##  <a name="afxmemdf"></a>  afxMemDF
 
@@ -597,8 +595,6 @@ void AfxDump(const CObject* pOb);
 ### <a name="see-also"></a>참고 항목
 
 [CObject::Dump](cobject-class.md#dump)
-
-
 
 ##  <a name="afxdumpstack"></a>  AfxDumpStack
 

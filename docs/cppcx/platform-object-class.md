@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c2bc732453edb66f70fde88da8fb7230f66cd13
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 39c51c10ad8c697fcc21c56fcef247c17e8faab5
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162310"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069765"
 ---
 # <a name="platformobject-class"></a>Platform::Object 클래스
 
@@ -196,6 +196,7 @@ public:
     };
 };
 ```
+
 ## <a name="see-also"></a>참고 항목
 
 [플랫폼 Namespace](platform-namespace-c-cx.md)

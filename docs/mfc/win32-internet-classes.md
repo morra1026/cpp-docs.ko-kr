@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1b4adb3de5c6ec57b9f6bc2c48385916c3e5076
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 075804ae82d2e8431bef97d656aeee212feb6757
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445700"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073801"
 ---
 # <a name="win32-internet-classes"></a>Win32 인터넷 클래스
 
@@ -32,7 +32,6 @@ MFC는 인터넷 프로그래밍을 쉽게 수행할 수 있도록 Win32 인터�
 
 >[!IMPORTANT]
 > ActiveX는 새로운 개발에 사용 되지 해야 하는 레거시 기술입니다. ActiveX를 대체 하는 최신 기술에 대 한 자세한 내용은 참조 하세요. [ActiveX 컨트롤](activex-controls.md)합니다.
-
 
 [CInternetSession](../mfc/reference/cinternetsession-class.md)<br/>
 만들고 초기화 한 인터넷 세션 또는 여러 동시 인터넷 세션, 필요한 경우 프록시 서버에 연결을 설명 합니다.
