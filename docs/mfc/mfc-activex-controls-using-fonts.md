@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b14adec8d601778e255ae7e4242fc552fc820e64
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8c34b4a842655ebce6fccaa89a1dfc6d4ef49add
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46396703"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063486"
 ---
 # <a name="mfc-activex-controls-using-fonts"></a>MFC ActiveX 컨트롤: 글꼴 사용
 
@@ -64,7 +64,7 @@ ActiveX 컨트롤에서 텍스트를 표시 하는 경우 컨트롤 사용자가
 
 1. 바로 가기 메뉴에서 클릭 **추가** 을 클릭 한 다음 **속성 추가**합니다.
 
-     이 속성 추가 마법사를 엽니다.
+   이 속성 추가 마법사를 엽니다.
 
 1. 에 **속성 이름이** 상자를 클릭 합니다 **글꼴**합니다.
 
@@ -90,7 +90,7 @@ ActiveX 컨트롤에서 텍스트를 표시 하는 경우 컨트롤 사용자가
 
 1. 바로 가기 메뉴에서 클릭 **추가** 을 클릭 한 다음 **속성 추가**합니다.
 
-     이 속성 추가 마법사를 엽니다.
+   이 속성 추가 마법사를 엽니다.
 
 1. 에 **속성 이름이** 상자를 클릭 합니다 **캡션**합니다.
 
@@ -132,7 +132,7 @@ ActiveX 컨트롤에서 텍스트를 표시 하는 경우 컨트롤 사용자가
 
 1. 바로 가기 메뉴에서 클릭 **추가** 을 클릭 한 다음 **속성 추가**합니다.
 
-     이 속성 추가 마법사를 엽니다.
+   이 속성 추가 마법사를 엽니다.
 
 1. 에 **속성 이름** 상자, 속성에 대 한 이름을 입력 합니다. 예를 들어 사용 하 여 **HeadingFont**합니다.
 
@@ -168,35 +168,35 @@ DISP_PROPERTY_EX 매크로 연결 합니다 `HeadingFont` 속성을 해당 이�
 
 - 초기화할 *m_fontHeading* 컨트롤 생성자에서.
 
-     [!code-cpp[NVC_MFC_AxFont#9](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_9.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#9](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_9.cpp)]
 
 - 글꼴의 기본 특성을 포함 하는 정적 FONTDESC 구조체를 선언 합니다.
 
-     [!code-cpp[NVC_MFC_AxFont#10](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_10.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#10](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_10.cpp)]
 
 - 컨트롤의 `DoPropExchange` 멤버 함수를 호출을 추가 합니다 `PX_Font` 함수입니다. 이 초기화 및 사용자 지정 글꼴 속성에 대 한 지 속성을 제공합니다.
 
-     [!code-cpp[NVC_MFC_AxFont#11](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_11.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#11](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_11.cpp)]
 
 - 컨트롤의 구현을 마무리 `GetHeadingFont` 멤버 함수입니다.
 
-     [!code-cpp[NVC_MFC_AxFont#12](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_12.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#12](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_12.cpp)]
 
 - 컨트롤의 구현을 마무리 `SetHeadingFont` 멤버 함수입니다.
 
-     [!code-cpp[NVC_MFC_AxFont#13](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_13.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#13](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_13.cpp)]
 
 - 컨트롤을 수정 `OnDraw` 멤버 함수를 이전에 선택한 글꼴을 보유 하는 변수를 정의 합니다.
 
-     [!code-cpp[NVC_MFC_AxFont#14](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_14.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#14](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_14.cpp)]
 
 - 컨트롤을 수정 `OnDraw` 멤버 함수를 글꼴을 사용할 때마다 다음 줄을 추가 하 여 장치 컨텍스트로 사용자 지정 글꼴을 선택 합니다.
 
-     [!code-cpp[NVC_MFC_AxFont#15](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_15.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#15](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_15.cpp)]
 
 - 컨트롤을 수정 `OnDraw` 멤버 함수는 글꼴이 사용 된 후 다음 줄을 추가 하 여 장치 컨텍스트로 다시 이전 글꼴을 선택 합니다.
 
-     [!code-cpp[NVC_MFC_AxFont#16](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_16.cpp)]
+   [!code-cpp[NVC_MFC_AxFont#16](../mfc/codesnippet/cpp/mfc-activex-controls-using-fonts_16.cpp)]
 
 사용자 지정 글꼴 속성을 구현한 후 컨트롤의 현재 글꼴을 변경 하려면 사용자가 컨트롤을 표준 글꼴 속성 페이지 구현 되어야 합니다. 표준 글꼴 속성 페이지에 대 한 속성 페이지 ID를 추가 하려면 BEGIN_PROPPAGEIDS 매크로 뒤에 다음 줄을 삽입 합니다.
 

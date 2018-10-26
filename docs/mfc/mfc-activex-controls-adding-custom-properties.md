@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98cf8a0532c3b1f2044ba0338d3f2f2bf8e73813
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0070103724385dcb598c20cd15bc29f341628bce
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390991"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079443"
 ---
 # <a name="mfc-activex-controls-adding-custom-properties"></a>MFC ActiveX 컨트롤: 사용자 지정 속성 추가
 
@@ -36,19 +36,19 @@ ms.locfileid: "46390991"
 
 - 멤버 변수 구현
 
-     이 구현은 컨트롤 클래스에서 멤버 변수로 속성의 상태를 나타냅니다. 속성 값을 변경 하는 경우 알아야 중요 하지 않을 때 멤버 변수 구현을 사용 합니다. 이 구현은 세 가지 유형의 속성에 대 한 지원 코드의 최소 크기를 만듭니다. 멤버 변수 구현에 대 한 디스패치 맵 항목 매크로가 [DISP_PROPERTY](../mfc/reference/dispatch-maps.md#disp_property)합니다.
+   이 구현은 컨트롤 클래스에서 멤버 변수로 속성의 상태를 나타냅니다. 속성 값을 변경 하는 경우 알아야 중요 하지 않을 때 멤버 변수 구현을 사용 합니다. 이 구현은 세 가지 유형의 속성에 대 한 지원 코드의 최소 크기를 만듭니다. 멤버 변수 구현에 대 한 디스패치 맵 항목 매크로가 [DISP_PROPERTY](../mfc/reference/dispatch-maps.md#disp_property)합니다.
 
 - 멤버 변수 알림 구현
 
-     이 구현은 멤버 변수 및 속성 추가 마법사에서 만든 알림 함수로 구성 됩니다. 알림 함수는 자동으로 속성 값 변경 된 후 프레임 워크에서 호출 됩니다. 멤버 변수 알림 구현 해야 할 때 사용 속성 값이 변경 후 알림을 받도록 합니다. 이 구현은 함수 호출이 필요 하기 때문에 더 많은 시간이 필요 합니다. 이 구현에 대 한 디스패치 맵 항목 매크로가 [DISP_PROPERTY_NOTIFY](../mfc/reference/dispatch-maps.md#disp_property_notify)합니다.
+   이 구현은 멤버 변수 및 속성 추가 마법사에서 만든 알림 함수로 구성 됩니다. 알림 함수는 자동으로 속성 값 변경 된 후 프레임 워크에서 호출 됩니다. 멤버 변수 알림 구현 해야 할 때 사용 속성 값이 변경 후 알림을 받도록 합니다. 이 구현은 함수 호출이 필요 하기 때문에 더 많은 시간이 필요 합니다. 이 구현에 대 한 디스패치 맵 항목 매크로가 [DISP_PROPERTY_NOTIFY](../mfc/reference/dispatch-maps.md#disp_property_notify)합니다.
 
 - Get/Set 메서드 구현
 
-     이 구현은 컨트롤 클래스의 멤버 함수 쌍으로 구성 합니다. Get/Set 메서드 구현을 자동으로 호출 Get 멤버가 속성의 현재 값을 요청 하는 컨트롤의 사용자 함수 및 집합 멤버 함수 속성이 변경 될 컨트롤의 사용자가 요청 하는 경우. 런타임에 속성 값을 계산 합니다. 실제 속성을 변경 하기 전에 컨트롤의 사용자에 의해 전달 된 값의 유효성을 검사 하거나 읽기 또는 쓰기 전용 속성 유형을 구현 하는 경우이 구현을 사용 합니다. 이 구현에 대 한 디스패치 맵 항목 매크로가 [DISP_PROPERTY_EX](../mfc/reference/dispatch-maps.md#disp_property_ex)합니다. 다음 섹션인 [속성 추가 마법사를 사용 하 여 사용자 지정 속성을 추가 하려면](#_core_using_classwizard_to_add_a_custom_property), CircleOffset 사용자 지정 속성을 사용 하 여이 구현을 보여 줍니다.
+   이 구현은 컨트롤 클래스의 멤버 함수 쌍으로 구성 합니다. Get/Set 메서드 구현을 자동으로 호출 Get 멤버가 속성의 현재 값을 요청 하는 컨트롤의 사용자 함수 및 집합 멤버 함수 속성이 변경 될 컨트롤의 사용자가 요청 하는 경우. 런타임에 속성 값을 계산 합니다. 실제 속성을 변경 하기 전에 컨트롤의 사용자에 의해 전달 된 값의 유효성을 검사 하거나 읽기 또는 쓰기 전용 속성 유형을 구현 하는 경우이 구현을 사용 합니다. 이 구현에 대 한 디스패치 맵 항목 매크로가 [DISP_PROPERTY_EX](../mfc/reference/dispatch-maps.md#disp_property_ex)합니다. 다음 섹션인 [속성 추가 마법사를 사용 하 여 사용자 지정 속성을 추가 하려면](#_core_using_classwizard_to_add_a_custom_property), CircleOffset 사용자 지정 속성을 사용 하 여이 구현을 보여 줍니다.
 
 - 매개 변수가 있는 구현
 
-     매개 변수가 있는 구현 속성 추가 마법사에서 지원 됩니다. 매개 변수화 된 속성 (속성 배열 라고도 함) 값 집합을 컨트롤의 단일 속성을 통해 액세스를 사용할 수 있습니다. 이 구현에 대 한 디스패치 맵 항목 매크로 DISP_PROPERTY_PARAM입니다. 이 형식을 구현 하는 방법은 참조 하세요 [매개 변수가 있는 속성 구현](../mfc/mfc-activex-controls-advanced-topics.md) 문서의 ActiveX 컨트롤: 고급 항목입니다.
+   매개 변수가 있는 구현 속성 추가 마법사에서 지원 됩니다. 매개 변수화 된 속성 (속성 배열 라고도 함) 값 집합을 컨트롤의 단일 속성을 통해 액세스를 사용할 수 있습니다. 이 구현에 대 한 디스패치 맵 항목 매크로 DISP_PROPERTY_PARAM입니다. 이 형식을 구현 하는 방법은 참조 하세요 [매개 변수가 있는 속성 구현](../mfc/mfc-activex-controls-advanced-topics.md) 문서의 ActiveX 컨트롤: 고급 항목입니다.
 
 ##  <a name="_core_using_classwizard_to_add_a_custom_property"></a> 사용 하는 속성 추가 마법사 사용자 지정 속성을 추가 하려면
 
@@ -66,7 +66,7 @@ ms.locfileid: "46390991"
 
 1. 바로 가기 메뉴에서 클릭 **추가** 을 클릭 한 다음 **속성 추가**합니다.
 
-     열립니다는 [속성 추가 마법사](../ide/names-add-property-wizard.md)합니다.
+   열립니다는 [속성 추가 마법사](../ide/names-add-property-wizard.md)합니다.
 
 1. 에 **속성 이름이** 상자에 입력 *CircleOffset*합니다.
 

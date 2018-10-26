@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6e8f448d4b6bee4b301fc567cc8e8e857747a4e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1ec2e3253b4d26bc6773ffc4005100edfbec1bff
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440292"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077532"
 ---
 # <a name="cpen-class"></a>CPen 클래스
 
@@ -92,12 +92,10 @@ class CPen : public CGdiObject
 ```
 CPen();
 
-
 CPen(
     int nPenStyle,
     int nWidth,
     COLORREF crColor);
-
 
 CPen(
     int nPenStyle,
@@ -132,13 +130,13 @@ CPen(
 
 - PS_COSMETIC 성형 펜을을 만듭니다.
 
-     두 번째 버전은 `CPen` 의 다음 펜 스타일을 추가 하는 생성자 *nPenStyle*:
+   두 번째 버전은 `CPen` 의 다음 펜 스타일을 추가 하는 생성자 *nPenStyle*:
 
 - PS_ALTERNATE 다른 모든 픽셀을 설정 하는 펜을 만듭니다. (이 스타일은 표면적인 펜에만 적용할 수 있습니다.)
 
 - 펜 스타일 배열을 사용 하는 사용자가 제공한 PS_USERSTYLE 만듭니다.
 
-     끝 캡은 다음 값 중 하나일 수 있습니다.
+   끝 캡은 다음 값 중 하나일 수 있습니다.
 
 - PS_ENDCAP_ROUND 끝 캡 반올림 됩니다.
 
@@ -146,7 +144,7 @@ CPen(
 
 - PS_ENDCAP_FLAT 끝 캡은 평면입니다.
 
-     조인에는 다음 값 중 하나일 수 있습니다.
+   조인에는 다음 값 중 하나일 수 있습니다.
 
 - PS_JOIN_BEVEL 조인 경사진 됩니다.
 
@@ -192,7 +190,6 @@ BOOL CreatePen(
     int nPenStyle,
     int nWidth,
     COLORREF crColor);
-
 
 BOOL CreatePen(
     int nPenStyle,

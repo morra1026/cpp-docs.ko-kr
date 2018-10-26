@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e178dfd91382db6c72fbced24ac990c09861a766
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e493f978606f4013da21c292ccf8f520e4e56ea5
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433234"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070415"
 ---
 # <a name="standard-dialog-data-exchange-routines"></a>표준 대화 상자 데이터 교환 루틴
 
@@ -75,7 +75,7 @@ void AFXAPI DDX_CBIndex(
 
 때 `DDX_CBIndex` 가 호출 *인덱스* 현재 콤보 상자의 선택 항목의 인덱스에 설정 됩니다. 선택 된 항목이 면 *인덱스* 0으로 설정 됩니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -110,7 +110,7 @@ void AFXAPI DDX_CBString(
 > [!NOTE]
 >  콤보 상자의 드롭다운 목록 상자 인 경우 교환 값 255 자로 제한 됩니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -145,7 +145,7 @@ void AFXAPI DDX_CBStringExact(
 > [!NOTE]
 >  콤보 상자의 드롭다운 목록 상자 인 경우 교환 값 255 자로 제한 됩니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -177,7 +177,7 @@ void AFXAPI DDX_Check(
 
 때 `DDX_Check` 가 호출 *값* check box 컨트롤의 현재 상태로 설정 됩니다. 가능한 상태 값의 목록을 참조 하세요 [BM_GETCHECK](/windows/desktop/Controls/bm-getcheck) Windows SDK에 있습니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -209,7 +209,7 @@ void AFXAPI DDX_Control(
 
 *pDX* 프레임 워크에서 개체가 제공 되지 때를 `DoDataExchange` 함수를 호출 합니다. 따라서 `DDX_Control` 재정의가 내 에서만 호출 되어야 `DoDataExchange`합니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -253,7 +253,7 @@ void AFXAPI DDX_DateTimeCtrl(
 
 위의 세 번째 버전 `DDX_DateTimeCtrl` 으로의 전송을 관리 `CString` 사이의 데이터 시간 제어 및 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 컨트롤 뷰 개체의 데이터 멤버입니다. 문자열의 날짜 및 시간 서식 지정에 대 한 현재 로캘의 규칙을 사용 하 여 지정 합니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -268,10 +268,11 @@ DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 �
 ```
 template <typename T>
 void DDX_ManagedControl(
-     CDataExchange* pDX,
-     int nIDC,
-     CWinFormsControl<T>& control );
+   CDataExchange* pDX,
+   int nIDC,
+   CWinFormsControl<T>& control );
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *pDX*<br/>
@@ -297,8 +298,6 @@ void DDX_ManagedControl(
 
 [CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol)<br/>
 [CDialog::OnInitDialog](cdialog-class.md#oninitdialog)
-
-
 
 ##  <a name="ddx_ipaddress"></a>  DDX_IPAddress
 
@@ -335,7 +334,7 @@ Win32 [IPM_GETADDRESS](/windows/desktop/Controls/ipm-getaddress) 값을 읽거�
 
 때 `DDX_IPAddress` 가 호출 *값* IP 주소 컨트롤에서 하거나 읽기 또는 *값* exchange의 방향에 따라 컨트롤에 기록 됩니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -367,7 +366,7 @@ void AFXAPI DDX_LBIndex(
 
 때 `DDX_LBIndex` 가 호출 *인덱스* 현재 목록 상자 선택 항목의 인덱스에 설정 됩니다. 선택 된 항목이 면 *인덱스* -1로 설정 됩니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -404,7 +403,7 @@ void AFXAPI DDX_LBString(
 > [!NOTE]
 >  목록 상자 드롭다운 목록 상자 인 경우 교환 값 255 자로 제한 됩니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -441,7 +440,7 @@ void AFXAPI DDX_LBStringExact(
 > [!NOTE]
 >  목록 상자 드롭다운 목록 상자 인 경우 교환 값 255 자로 제한 됩니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -481,7 +480,7 @@ Month calendar 컨트롤의 리소스 ID 멤버 변수를 사용 하 여 연결 
 
 때 `DDX_MonthCalCtrl` 가 호출 *값* month calendar 컨트롤의 현재 상태로 설정 됩니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -515,7 +514,7 @@ void AFXAPI DDX_Radio(
 
 첫 번째 라디오 단추 그룹에 있는 경우에 예를 들어 (WS_GROUP 스타일을 사용 하 여 단추)의 값을 확인 합니다 **int** 등 멤버는 0입니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -547,7 +546,7 @@ void AFXAPI DDX_Scroll(
 
 때 `DDX_Scroll` 가 호출 *값* 컨트롤의 thumb의 현재 위치에 설정 됩니다. 컨트롤의 thumb의 현재 위치와 연결 된 값에 대 한 자세한 내용은 참조 하세요. [GetScrollPos](/windows/desktop/api/winuser/nf-winuser-getscrollpos) Windows SDK에 있습니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -579,7 +578,7 @@ void AFXAPI DDX_Slider(
 
 때 `DDX_Slider` 가 호출 *값* 컨트롤의 thumb의 현재 위치를로 exchange의 방향에 따라 위치를 수신 하는 값 또는 합니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다. 슬라이더 컨트롤에 대 한 자세한 내용은 [CSliderCtrl 사용 하 여](../../mfc/using-csliderctrl.md)입니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요. 슬라이더 컨트롤에 대 한 자세한 내용은 [CSliderCtrl 사용 하 여](../../mfc/using-csliderctrl.md)입니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -659,7 +658,7 @@ void AFXAPI DDX_Text(
 
 ### <a name="remarks"></a>설명
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 

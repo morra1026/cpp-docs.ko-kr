@@ -17,17 +17,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 732fab9e0f9f0233de6de7db6328c2e6736db5d0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dfdec25349afcd9b582952f2c907cd573e366a35
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437730"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059625"
 ---
 # <a name="mfc-database-programming-symbols"></a>MFC 데이터베이스 프로그래밍 기호
 
 이 표의 기호 데이터베이스 지원이 추가 되었습니다. 경우에 MFC 프로젝트에 나타납니다. SQL server 데이터베이스 프로그래밍에 대 한 MFC 연결과 지원합니다.
-  
+
 |||
 |-|-|
 |AFX_IDP_SQL_API_CONFORMANCE|AFX_IDP_SQL_BOOKMARKS_ NOT_ENABLED|
@@ -44,11 +44,11 @@ ms.locfileid: "46437730"
 |AFX_IDP_SQL_ROW_FETCH|AFX_IDP_SQL_ROW_UPDATE_ NOT_SUPPORTED|
 |AFX_IDP_SQL_SNAPSHOT_ NOT_SUPPORTED|AFX_IDP_SQL_SQL_CONFORMANCE|
 |AFX_IDP_SQL_SQL_NO_TOTAL|AFX_IDP_SQL_UPDATE_DELETE_FAILED|
-  
+
 ## <a name="requirements"></a>요구 사항
 
 MFC
-  
+
 ## <a name="see-also"></a>참고 항목
 
 [미리 정의된 MFC 기호](../windows/mfc-predefined-symbols.md)<br/>

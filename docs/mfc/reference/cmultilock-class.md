@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39cde8affc84ed879ad3731cb6c18449c60498f3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 097f6173faad4f99f64c5dac45e2a0d1292a07eb
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46430854"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076362"
 ---
 # <a name="cmultilock-class"></a>CMultiLock 클래스
 
@@ -148,19 +148,19 @@ DWORD Lock(
 
 - WAIT_OBJECT_0, WAIT_OBJECT_0 + (1 개체 개수)
 
-     하는 경우 *bWaitForAll* 가 TRUE 인 모든 개체 (사용 가능) 신호입니다. 하는 경우 *bWaitForAll* 가 FALSE를 반환 값-WAIT_OBJECT_0 신호를 받는 (사용 가능) 하는 개체의 개체 배열의 인덱스입니다.
+   하는 경우 *bWaitForAll* 가 TRUE 인 모든 개체 (사용 가능) 신호입니다. 하는 경우 *bWaitForAll* 가 FALSE를 반환 값-WAIT_OBJECT_0 신호를 받는 (사용 가능) 하는 개체의 개체 배열의 인덱스입니다.
 
 - WAIT_OBJECT_0 + (개체 개수)
 
-     에 지정 된 이벤트 *dwWakeMask* 스레드의 입력된 큐에서 사용할 수 있습니다.
+   에 지정 된 이벤트 *dwWakeMask* 스레드의 입력된 큐에서 사용할 수 있습니다.
 
 - WAIT_ABANDONED_0, WAIT_ABANDONED_0 + (1 개체 개수)
 
-     하는 경우 *bWaitForAll* 가 TRUE이 고, 신호는 모든 개체는 개체 중 하나 이상이 중단 된 뮤텍스 개체입니다. 하는 경우 *bWaitForAll* 가 FALSE를 반환 값-WAIT_ABANDONED_0 대기를 만족 하는 중단 된 뮤텍스 개체의 개체 배열의 인덱스입니다.
+   하는 경우 *bWaitForAll* 가 TRUE이 고, 신호는 모든 개체는 개체 중 하나 이상이 중단 된 뮤텍스 개체입니다. 하는 경우 *bWaitForAll* 가 FALSE를 반환 값-WAIT_ABANDONED_0 대기를 만족 하는 중단 된 뮤텍스 개체의 개체 배열의 인덱스입니다.
 
 - WAIT_TIMEOUT
 
-     에 지정 된 시간 제한 간격 *dwTimeOut* 그 다음 대기 하지 않고 만료 되었습니다.
+   에 지정 된 시간 제한 간격 *dwTimeOut* 그 다음 대기 하지 않고 만료 되었습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -174,7 +174,6 @@ DWORD Lock(
 
 ```
 BOOL Unlock();
-
 
 BOOL Unlock(
     LONG lCount,
@@ -202,6 +201,4 @@ BOOL Unlock(
 ## <a name="see-also"></a>참고 항목
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-
-
 

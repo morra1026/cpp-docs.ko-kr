@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 87fac131c053afa3c3b6d6da549d7a002fa95b64
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5a456c745a11fa4250ad731f00556b211ad21b8f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445030"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50061705"
 ---
 # <a name="editing-a-string-in-a-version-information-resource-c"></a>버전 정보 리소스 (c + +)의 문자열 편집
 
@@ -31,7 +31,7 @@ ms.locfileid: "46445030"
 
 1. 항목을 한 번 클릭하여 선택하고 다시 클릭하여 편집을 시작합니다. 변경에 직접 합니다 **버전 정보** 테이블 또는 합니다 [속성 창](/visualstudio/ide/reference/properties-window)합니다. 변경 내용은 두 위치에 모두 반영됩니다.
 
-   > [!NOTE] 
+   > [!NOTE]
    > 편집 하는 경우는 `FILEFLAGS` 키를 **버전 정보** 편집기를 보면 설정할 수 없습니다는 **디버그**를 **개인 빌드**, 또는 **특수 빌드** 속성 (에 **속성** 창).rc 파일에 대 한 합니다.
 
    - **버전 정보** 편집기 설정을 **디버그** 속성을 `#ifdef` 에 따라 리소스 스크립트는 `_DEBUG` 빌드 플래그.
@@ -49,4 +49,4 @@ Win32
 ## <a name="see-also"></a>참고 항목
 
 [버전 정보 편집기](../windows/version-information-editor.md)<br/>
-[버전 정보 (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)
+[버전 정보(Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)

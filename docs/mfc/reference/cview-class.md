@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ccb638669712222cac2dee522bf729766a4bc93
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e76dc8ca4a61839b893b4328bdb9d606424def91
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402267"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062238"
 ---
 # <a name="cview-class"></a>CView 클래스
 
@@ -196,7 +196,7 @@ BOOL DoPreparePrinting(CPrintInfo* pInfo);
 ### <a name="parameters"></a>매개 변수
 
 *pInfo*<br/>
-가리키는 [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) 현재 인쇄 작업을 설명 하는 구조입니다.
+현재 인쇄 작업을 설명하는 [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) 구조체를 가리킵니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -319,13 +319,13 @@ virtual void OnBeginPrinting(
 프린터 장치 컨텍스트를 가리킵니다.
 
 *pInfo*<br/>
-가리키는 [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) 현재 인쇄 작업을 설명 하는 구조입니다.
+현재 인쇄 작업을 설명하는 [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) 구조체를 가리킵니다.
 
 ### <a name="remarks"></a>설명
 
-이 함수의 기본 구현은 아무 작업도 수행하지 않습니다. 인쇄용으로 특별히 필요한 GDI 리소스(예: 펜 또는 글꼴)를 할당하려면 이 함수를 재정의합니다. 내에서 장치 컨텍스트로 GDI 개체를 선택 합니다 [OnPrint](#onprint) 사용 하는 각 페이지에 대 한 멤버 함수입니다. 동일한 view 개체를 사용하여 화면 표시와 인쇄를 모두 수행하는 경우 각 화면 표시에 필요한 GDI 리소스에 별도의 변수를 사용합니다. 이렇게 하면 인쇄하는 동안 화면을 업데이트할 수 있습니다.
+이 함수의 기본 구현은 아무 작업도 수행하지 않습니다. 인쇄용으로 특별히 필요한 GDI 리소스(예: 펜 또는 글꼴)를 할당하려면 이 함수를 재정의합니다. GDI 개체를 사용하는 각 페이지에 대한 [OnPrint](#onprint) 멤버 함수 내에서 장치 컨텍스트로 GDI 개체를 선택합니다. 동일한 view 개체를 사용하여 화면 표시와 인쇄를 모두 수행하는 경우 각 화면 표시에 필요한 GDI 리소스에 별도의 변수를 사용합니다. 이렇게 하면 인쇄하는 동안 화면을 업데이트할 수 있습니다.
 
-또한 이 함수를 사용하여 프린터 장치 컨텍스트의 속성에 따라 초기화를 수행할 수 있습니다. 예를 들어 문서를 인쇄하는 데 필요한 페이지 수는 사용자가 인쇄 대화 상자에서 지정한 설정(예: 페이지 길이)에 따라 다를 수 있습니다. 이러한 상황에서 문서 길이 지정할 수 없습니다는 [OnPreparePrinting](#onprepareprinting) 멤버 함수는 일반적으로 수행 되므로; 프린터 장치 컨텍스트 대화 상자 설정에 따라 생성 될 때까지 대기 해야 합니다. [OnBeginPrinting](#onbeginprinting) 가 제공 하는 첫 번째 재정의 가능 함수에 대 한 액세스를 [CDC](../../mfc/reference/cdc-class.md) 이 함수에서 문서 길이 설정할 수 있도록 프린터 장치 컨텍스트를 나타내는 개체입니다. 이때까지 문서 길이를 지정하지 않으면 인쇄 미리 보기 중에 스크롤 막대가 표시되지 않습니다.
+또한 이 함수를 사용하여 프린터 장치 컨텍스트의 속성에 따라 초기화를 수행할 수 있습니다. 예를 들어 문서를 인쇄하는 데 필요한 페이지 수는 사용자가 인쇄 대화 상자에서 지정한 설정(예: 페이지 길이)에 따라 다를 수 있습니다. 이러한 상황에서는 일반적인 경우와 달리 [OnPreparePrinting](#onprepareprinting) 멤버 함수에서 문서 길이를 지정할 수 없습니다. 대화 상자 설정에 따라 프린터 장치 컨텍스트가 만들어질 때까지 기다려야 합니다. [OnBeginPrinting](#onbeginprinting) 은 프린터 장치 컨텍스트를 나타내는 [CDC](../../mfc/reference/cdc-class.md) 개체에 대한 액세스를 제공하는 첫 번째 재정의 가능 함수이므로 이 함수에서 문서 길이를 설정할 수 있습니다. 이때까지 문서 길이를 지정하지 않으면 인쇄 미리 보기 중에 스크롤 막대가 표시되지 않습니다.
 
 ##  <a name="ondragenter"></a>  CView::OnDragEnter
 
@@ -602,7 +602,7 @@ virtual void OnEndPrinting(
 프린터 장치 컨텍스트를 가리킵니다.
 
 *pInfo*<br/>
-가리키는 [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) 현재 인쇄 작업을 설명 하는 구조입니다.
+현재 인쇄 작업을 설명하는 [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) 구조체를 가리킵니다.
 
 ### <a name="remarks"></a>설명
 
@@ -626,7 +626,7 @@ virtual void OnEndPrintPreview(
 프린터 장치 컨텍스트를 가리킵니다.
 
 *pInfo*<br/>
-가리키는 [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) 현재 인쇄 작업을 설명 하는 구조입니다.
+현재 인쇄 작업을 설명하는 [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) 구조체를 가리킵니다.
 
 *지점*<br/>
 미리 보기 모드에서 마지막으로 표시 된 페이지에 지정 합니다.
@@ -701,7 +701,7 @@ virtual BOOL OnPreparePrinting(CPrintInfo* pInfo);
 ### <a name="parameters"></a>매개 변수
 
 *pInfo*<br/>
-가리키는 [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) 현재 인쇄 작업을 설명 하는 구조입니다.
+현재 인쇄 작업을 설명하는 [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) 구조체를 가리킵니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -757,7 +757,7 @@ virtual void OnPrint(
 
 - 인쇄 된 이미지 (즉, 응용 프로그램이 없는 경우 WYSIWYG) 화면 이미지와 다르게 보일 수 있도록 합니다. 프린터 장치 컨텍스트를 전달 하는 대신 `OnDraw`, 화면에 표시 되지 않습니다 하는 특성을 사용 하 여 이미지를 렌더링 하 고 장치 컨텍스트를 사용 합니다.
 
-     GDI 리소스 화면 표시가 사용 하지 않는 인쇄 해야 그리기 전에 장치 컨텍스트로 선택 하 고 나중에 선택 취소 합니다. 이러한 GDI 리소스에 할당 해야 [OnBeginPrinting](#onbeginprinting) 에 출시 하 고 [OnEndPrinting](#onendprinting)합니다.
+   GDI 리소스 화면 표시가 사용 하지 않는 인쇄 해야 그리기 전에 장치 컨텍스트로 선택 하 고 나중에 선택 취소 합니다. 이러한 GDI 리소스에 할당 해야 [OnBeginPrinting](#onbeginprinting) 에 출시 하 고 [OnEndPrinting](#onendprinting)합니다.
 
 - 머리글 또는 바닥글을 구현 합니다. 계속 사용할 수 있습니다 `OnDraw` 에 인쇄할 수 있는 영역을 제한 하 여 렌더링을 수행 합니다.
 

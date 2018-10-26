@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 31c47fa07375c587257bc979ac68b64381880398
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: d31de803e1a867c7a9e509ced71eb3801d3946ff
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791162"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066840"
 ---
 # <a name="in-c"></a>in(C++)
 
@@ -53,7 +53,7 @@ ms.locfileid: "48791162"
 |**필수 특성**|없음|
 |**잘못된 특성**|**retval**|
 
-특성 컨텍스트에 대 한 자세한 내용은 참조 하세요. [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
@@ -62,4 +62,4 @@ ms.locfileid: "48791162"
 [메서드 특성](method-attributes.md)<br/>
 [defaultvalue](defaultvalue.md)<br/>
 [ID](id.md)<br/>
-[out](out-cpp.md)  
+[out](out-cpp.md)

@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3dd1b5df8749f22873a52782b6f528760c3823a1
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 8a0eeb4b7da53b5722733ba0b0116cf03dab4a29
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788763"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053446"
 ---
 # <a name="roinitializewrapper-class"></a>RoInitializeWrapper 클래스
 
@@ -74,7 +74,7 @@ class RoInitializeWrapper;
 마지막으로 생성 된 HRESULT 값을 검색 `RoInitializeWrapper` 생성자입니다.
 
 ```cpp
-operator HRESULT()  
+operator HRESULT()
 ```
 
 ## <a name="roinitializewrapper"></a>Roinitializewrapper:: Roinitializewrapper
@@ -82,7 +82,7 @@ operator HRESULT()
 `RoInitializeWrapper` 클래스의 새 인스턴스를 초기화합니다.
 
 ```cpp
-RoInitializeWrapper(   RO_INIT_TYPE flags)  
+RoInitializeWrapper(RO_INIT_TYPE flags)
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -99,7 +99,7 @@ Windows 런타임에서 제공 하는 지원을 지정 하는 RO_INIT_TYPE 열�
 Windows 런타임 초기화를 취소 합니다.
 
 ```cpp
-~RoInitializeWrapper()  
+~RoInitializeWrapper()
 ```
 
 ### <a name="remarks"></a>설명

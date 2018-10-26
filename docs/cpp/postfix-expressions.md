@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77bcb8257fc6907b48330301cf009fa44f00578d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d28d909866808fbffb6165e552bf825bf1241771
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082549"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069817"
 ---
 # <a name="postfix-expressions"></a>후위 식
 
@@ -41,7 +41,7 @@ ms.locfileid: "46082549"
 다음 구문에서는 가능한 후위 식을 설명합니다.
 
 ```
-primary-expression 
+primary-expression 
 postfix-expression[expression]postfix-expression(expression-list)simple-type-name(expression-list)postfix-expression.namepostfix-expression->namepostfix-expression++postfix-expression--cast-keyword < typename > (expression )typeid ( typename )
 ```
 
@@ -83,20 +83,20 @@ simple-type-name ( expression-list )
     Func( 7 );          // Execute function call
     ```
 
-     호출 전의 개념적 초기화는 다음과 같습니다.
+   호출 전의 개념적 초기화는 다음과 같습니다.
 
     ```cpp
     int Temp_i = 7;
     Func( Temp_i );
     ```
 
-     괄호 구문 대신 등호 구문을 사용하는 것처럼 초기화가 수행됩니다. 함수에 값을 전달하기 전에 `i`의 복사본을 만듭니다. (자세한 내용은 [이니셜라이저](../cpp/initializers.md) 하 고 [변환](../cpp/user-defined-type-conversions-cpp.md)).
+   괄호 구문 대신 등호 구문을 사용하는 것처럼 초기화가 수행됩니다. 함수에 값을 전달하기 전에 `i`의 복사본을 만듭니다. (자세한 내용은 [이니셜라이저](../cpp/initializers.md) 하 고 [변환](../cpp/user-defined-type-conversions-cpp.md)).
 
-     따라서 함수 프로토타입 (선언) 형식의 인수에 대 한 호출 하는 경우 **긴**, 호출 프로그램 형식의 실제 인수를 제공 하는 경우 **int**를 사용 하 여 실제 인수가 승격 됩니다는 유형으로 표준 형식 변환을 **긴** (참조 [표준 변환](../cpp/standard-conversions.md)).
+   따라서 함수 프로토타입 (선언) 형식의 인수에 대 한 호출 하는 경우 **긴**, 호출 프로그램 형식의 실제 인수를 제공 하는 경우 **int**를 사용 하 여 실제 인수가 승격 됩니다는 유형으로 표준 형식 변환을 **긴** (참조 [표준 변환](../cpp/standard-conversions.md)).
 
-     형식 인수의 형식에 대한 표준 또는 사용자 정의 변환이 없는 실제 인수를 제공하는 것은 오류입니다.
+   형식 인수의 형식에 대한 표준 또는 사용자 정의 변환이 없는 실제 인수를 제공하는 것은 오류입니다.
 
-     클래스 형식의 실제 인수의 경우 클래스의 생성자를 호출하여 형식 인수가 초기화됩니다. (참조 [생성자](../cpp/constructors-cpp.md) 이러한 특수 클래스 멤버 함수에 대 한 자세한 내용은 합니다.)
+   클래스 형식의 실제 인수의 경우 클래스의 생성자를 호출하여 형식 인수가 초기화됩니다. (참조 [생성자](../cpp/constructors-cpp.md) 이러한 특수 클래스 멤버 함수에 대 한 자세한 내용은 합니다.)
 
 - 함수 호출이 실행됩니다.
 

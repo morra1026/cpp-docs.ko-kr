@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a15cc3aae03c0f9c57d982aac93cf711c735b35b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ffda10923d3be1baf7c9f6ed898480ee1c1367c3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393499"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067698"
 ---
 # <a name="tiledextent-class"></a>tiled_extent 클래스
 
@@ -216,6 +216,7 @@ static const int tile_dim0 = _Dim0;
 ```
 static const int tile_dim1 = _Dim1;
 ```
+
 ## <a name="tile_dim2"> </a>  tile_dim2
 
 최소 유효 치수의 길이 저장 합니다.
@@ -225,6 +226,7 @@ static const int tile_dim1 = _Dim1;
 ```
 static const int tile_dim2 = _Dim2;
 ```
+
 ## <a name="tile_extent"> </a>  tile_extent
   가져옵니다는 `extent` 의 값을 캡처하는 개체를 `tiled_extent` 템플릿 인수 `_Dim0`, `_Dim1`, 및 `_Dim2`.
 

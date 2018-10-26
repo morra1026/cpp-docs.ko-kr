@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e65451fcb506da9072d0dc8031ffba1b30280e6
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: fde79b2f96c815144b9cbdef1dcc7623e5a0eb60
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861436"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065215"
 ---
 # <a name="ccontainedwindowt-class"></a>CContainedWindowT 클래스
 
@@ -176,7 +176,7 @@ CContainedWindowT(
 호출 [RegisterWndSuperclass](#registerwndsuperclass) 기존 클래스에 기반 이지만 사용 하는 창 클래스 등록 [CContainedWindowT::WindowProc](#windowproc)합니다.
 
 ```
-HWND Create(  
+HWND Create(
     HWND hWndParent,
     _U_RECT rect,
     LPCTSTR szWindowName = NULL,
@@ -441,7 +441,7 @@ HWND UnsubclassWindow(BOOL bForce = FALSE);
 이 정적 메서드는 창 프로시저를 구현합니다.
 
 ```
-static LRESULT CALLBACK WindowProc(  
+static LRESULT CALLBACK WindowProc(
     HWND hWnd,
     UINT uMsg,
     WPARAM wParam,

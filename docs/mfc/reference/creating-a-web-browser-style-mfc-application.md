@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ae8f516da368631e727cf302f85ab33ea31f608
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 89ac9f6b17636d6c0b8a4326df2b49d8e6785383
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397678"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078871"
 ---
 # <a name="creating-a-web-browser-style-mfc-application"></a>웹 브라우저 스타일 MFC 응용 프로그램 만들기
 
@@ -84,5 +84,4 @@ void CWebView::OnInitialUpdate()
 [프로젝트 속성 사용](../../ide/working-with-project-properties.md)<br/>
 [속성 페이지](../../ide/property-pages-visual-cpp.md)<br/>
 [프로젝트 속성 사용](../../ide/working-with-project-properties.md)
-
 

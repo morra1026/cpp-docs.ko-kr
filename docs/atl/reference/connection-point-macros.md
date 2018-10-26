@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5b025e29c93cffe9c600646a2475f7e3230fd03
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a654f820d3c1dcdaa49ed8b3b3203d2c271b6880
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46039545"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055486"
 ---
 # <a name="connection-point-macros"></a>연결 지점 매크로
 
@@ -33,7 +33,7 @@ ms.locfileid: "46039545"
 |[BEGIN_CONNECTION_POINT_MAP](#begin_connection_point_map)|연결 지점 맵 항목의 시작을 표시 합니다.|
 |[CONNECTION_POINT_ENTRY](#connection_point_entry)|지도에 연결점을 입력합니다.|
 |[CONNECTION_POINT_ENTRY_P](#connection_point_entry)| (Visual Studio 2017) CONNECTION_POINT_ENTRY 유사 하지만 iid에 대 한 포인터를 사용합니다.|
-|[END_CONNECTION_POINT_MAP](#end_connection_point_map)|연결 지점 맵 항목의 끝을 표시 합니다.|  
+|[END_CONNECTION_POINT_MAP](#end_connection_point_map)|연결 지점 맵 항목의 끝을 표시 합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -74,7 +74,7 @@ CONNECTION_POINT_ENTRY_P(piid) // (Visual Studio 2017)
 ### <a name="parameters"></a>매개 변수
 
 *iid*<br/>
-[in] 연결 지점 지도에 추가 되는 인터페이스의 GUID입니다. 
+[in] 연결 지점 지도에 추가 되는 인터페이스의 GUID입니다.
 
 *piid*<br/>
 [in] Adde 되는 인터페이스의 GUID에 대 한 포인터입니다.

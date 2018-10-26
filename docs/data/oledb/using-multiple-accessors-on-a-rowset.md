@@ -1,7 +1,7 @@
 ---
 title: 행 집합에서 여러 접근자 사용 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/24/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 43fa36e0f5b79a6901c1294345f54386340c43ef
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: fb0eeb3a0a3c347c115cb05c2a35d221e6a94fe4
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808461"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071047"
 ---
 # <a name="using-multiple-accessors-on-a-rowset"></a>행 집합에서 여러 접근자 사용
 
@@ -37,7 +37,7 @@ ms.locfileid: "49808461"
 
 - **성능.** 이 시나리오에서는 하나 이상의 열에는 많은 양의 데이터를 예를 들어, 그래픽, 사운드 또는 비디오 파일입니다. 행으로 이동할 때마다 있습니다 하려는 큰 데이터 파일을 사용 하 여 열을 검색할 수행 하므로 응용 프로그램의 성능을 저하 때문에 있습니다.
 
-   대규모 데이터를 제외한 모든 열을 포함 하는 첫 번째 접근자에 자동으로 해당이 열에서 데이터를 검색 하는 별도 접근자를 설정할 수 있습니다. 첫 번째 접근자가 자동 접근자입니다. 두 번째 접근자 대용량 데이터가 포함 된 열만 검색 하지만 자동으로이 열에서 데이터를 검색 하지 것입니다. 다른 메서드를 업데이트 하거나 요청 시 큰 데이터를 가져올 수도 있습니다.
+   대규모 데이터를 제외한 모든 열을 포함 하는 첫 번째 접근자에 자동으로 해당이 열에서 데이터를 검색 하는 별도 접근자를 설정할 수 있습니다. 첫 번째 접근자가 자동 접근자입니다. 두 번째 접근자 큰 데이터를 포함 하는 열만 검색 하지만 자동으로이 열에서 데이터를 검색 하지 것입니다. 다른 메서드를 업데이트 하거나 요청 시 큰 데이터를 가져올 수도 있습니다.
 
    - 접근자 0은 자동 접근자; 대규모 데이터를 제외한 모든 열을 검색 합니다.
 
@@ -45,7 +45,7 @@ ms.locfileid: "49808461"
 
    자동 인수를 사용 하 여 접근자 자동 접근자가 있는지 여부를 지정 합니다.
 
-- **여러 ISequentialStream 열입니다.** 이 시나리오에 포함 된 둘 이상의 열 `ISequentialStream` 데이터입니다. 그러나 각 접근자 하나로 제한 됩니다 `ISequentialStream` 데이터 스트림 합니다. 이 문제를 해결 하기 위해 설정 여러 접근자를 각각 하나 `ISequentialStream` 포인터입니다.
+- **여러 ISequentialStream 열입니다.** 이 시나리오에서는 둘 이상의 열 보유 하면 `ISequentialStream` 데이터입니다. 그러나 각 접근자 하나로 제한 됩니다 `ISequentialStream` 데이터 스트림 합니다. 이 문제를 해결 하기 위해 설정 여러 접근자를 각각 하나 `ISequentialStream` 포인터입니다.
 
 일반적으로 사용 하 여 접근자를 만든 합니다 [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) 하 고 [END_ACCESSOR](../../data/oledb/end-accessor.md) 매크로입니다. 사용할 수도 있습니다는 [db_accessor](../../windows/db-accessor.md) 특성입니다. (접근자에 자세히 설명 되어 [사용자 레코드](../../data/oledb/user-records.md).) 매크로 또는 특성 접근자 자동 인지, 자동이 아닌 접근자를 지정 합니다.
 

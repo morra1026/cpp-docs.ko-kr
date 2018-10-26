@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3374b2a292fc6463cb4fd85d0cd56fe9c3556443
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 986bc24c57f8692bfdd98194b9e58c9cee6817f6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448250"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067191"
 ---
 # <a name="deleting-all-objects-in-a-cobject-collection"></a>CObject 컬렉션의 모든 개체 삭제
 
@@ -68,9 +68,9 @@ ms.locfileid: "46448250"
 
 1. 호출 된 `RemoveAll` 삭제 된 후 배열에서 모든 요소를 제거 하는 함수입니다.
 
-     배열의 모든 요소를 삭제 하는 것에 대 한 코드는 다음과 같습니다.
+   배열의 모든 요소를 삭제 하는 것에 대 한 코드는 다음과 같습니다.
 
-     [!code-cpp[NVC_MFCCollections#18](../mfc/codesnippet/cpp/deleting-all-objects-in-a-cobject-collection_2.cpp)]
+   [!code-cpp[NVC_MFCCollections#18](../mfc/codesnippet/cpp/deleting-all-objects-in-a-cobject-collection_2.cpp)]
 
 위의 목록 예제를 사용 하 여 호출할 수 있습니다 하는 대로 `RemoveAll` 배열의 모든 요소를 제거 하려면 또는 `RemoveAt` 개별 요소를 제거 하려면.
 
@@ -82,9 +82,9 @@ ms.locfileid: "46448250"
 
 1. 호출 된 `RemoveAll` 삭제 한 후 맵에서 모든 요소를 제거 하는 함수입니다.
 
-     모든 요소를 삭제 하는 것에 대 한 코드는 `CMap` 컬렉션은 다음과 같습니다. 맵의 각 요소는 키로 문자열 및 `CPerson` 개체 (에서 파생 된 `CObject`) 값으로.
+   모든 요소를 삭제 하는 것에 대 한 코드는 `CMap` 컬렉션은 다음과 같습니다. 맵의 각 요소는 키로 문자열 및 `CPerson` 개체 (에서 파생 된 `CObject`) 값으로.
 
-     [!code-cpp[NVC_MFCCollections#19](../mfc/codesnippet/cpp/deleting-all-objects-in-a-cobject-collection_3.cpp)]
+   [!code-cpp[NVC_MFCCollections#19](../mfc/codesnippet/cpp/deleting-all-objects-in-a-cobject-collection_3.cpp)]
 
 호출할 수 있습니다 `RemoveAll` 맵에서 모든 요소를 제거 하려면 또는 `RemoveKey` 지정된 된 키를 사용 하 여 개별 요소를 제거 합니다.
 

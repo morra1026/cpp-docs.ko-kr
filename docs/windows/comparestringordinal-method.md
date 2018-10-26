@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9fba5ff2db133d7a510499bd79de8bb77119eb79
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0dc85bad774260f3db589d4f2649e0c39de2a530
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387213"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067204"
 ---
 # <a name="comparestringordinal-method"></a>CompareStringOrdinal 메서드
 
@@ -31,7 +31,7 @@ WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습
 ```cpp
 inline INT32 CompareStringOrdinal(
    HSTRING lhs,
-   HSTRING rhs)  
+   HSTRING rhs)
 ```
 
 ### <a name="parameters"></a>매개 변수

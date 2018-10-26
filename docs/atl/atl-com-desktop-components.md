@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 378cd6fd283cd36142e293b51fdb91527afb6f88
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: e5cce23d34c739ed6a3aca67e05b59c6cafd9191
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808903"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062303"
 ---
 # <a name="atl-com-desktop-components"></a>ATL COM 데스크톱 구성 요소
 
@@ -61,4 +61,4 @@ ATL Worker 원형에 대 한 링크를 제공합니다.
 COM 객체를 이용한 ATL 사용 방법을 보여주는 샘플 코드입니다.
 
 [OLE DB 템플릿](../data/oledb/ole-db-templates.md)<br/>
-흔히 사용되는 여러 OLE DB 인터페이스를 구현하는 템플릿 클래스 집합인 OLE DB 소비자 및 공급자 템플릿에 대한 참조 자료를 제공합니다.  
+흔히 사용되는 여러 OLE DB 인터페이스를 구현하는 템플릿 클래스 집합인 OLE DB 소비자 및 공급자 템플릿에 대한 참조 자료를 제공합니다.

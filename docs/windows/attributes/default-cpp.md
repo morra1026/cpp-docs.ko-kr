@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5fb7f205ccdf78e1ef64e2ba2c132e3c2b6b6000
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 2ca39b160aacdf72bb6d6131b757755f87ac22a6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791944"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075084"
 ---
 # <a name="default-c"></a>default(C++)
 
@@ -44,13 +44,13 @@ coclass 내에 정의된 custom 또는 dispinterface가 기본 프로그래밍 �
 지정된 기본 인터페이스가 없는 경우 처음에 발생하는 비 소스 인터페이스가 기본값으로 사용됩니다.
 
 *interface2*<br/>
-(선택 사항) 기본 소스 인터페이스입니다. 이 인터페이스를 지정 해야 합니다 [원본](source-cpp.md) 특성입니다.
+(선택 사항) 기본 소스 인터페이스입니다. 이 인터페이스는 [source](source-cpp.md) 특성을 사용하여 지정해야 합니다.
 
 지정된 기본 소스 인터페이스가 없는 경우 첫 번째 소스 인터페이스가 기본값으로 사용됩니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **기본** c + + 특성에 동일한 기능을 합니다 [기본](/windows/desktop/Midl/default) MIDL 특성입니다. **기본** 특성은 사용 합니다 [사례](case-cpp.md) 특성입니다.
+**default** C++ 특성에는 [default](/windows/desktop/Midl/default) MIDL 특성과 동일한 기능이 있습니다. **default** 특성을 [case](case-cpp.md) 특성과 함께 사용할 수도 있습니다.
 
 ## <a name="example"></a>예제
 
@@ -77,7 +77,7 @@ __interface ICustomDispatch : public IDispatch {
    HRESULT Dispatch([in] long l, [out, retval] long *pLong);
 };
 
-[   coclass, default(ICustomDispatch), source(IDual), uuid("9E66A294-4365-11D2-A997-00C04FA37DDB")  
+[   coclass, default(ICustomDispatch), source(IDual), uuid("9E66A294-4365-11D2-A997-00C04FA37DDB")
 ]
 class CClass : public ICustom, public IDual, public ICustomDispatch {
    HRESULT Custom(long l, long *pLong) { return(S_OK); }
@@ -102,7 +102,7 @@ int main() {
 }
 ```
 
-합니다 [소스](source-cpp.md) 특성에 사용 하는 방법의 예제도 있습니다. **기본**입니다.
+[source](source-cpp.md) 특성에는 **default**사용 방법에 대한 예제도 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -115,10 +115,10 @@ int main() {
 |**필수 특성**|**coclass** (적용할 때 **클래스** 하거나 **구조체**)|
 |**잘못된 특성**|없음|
 
-자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 [IDL 특성](idl-attributes.md)<br/>
 [클래스 특성](class-attributes.md)<br/>
-[coclass](coclass.md)  
+[coclass](coclass.md)

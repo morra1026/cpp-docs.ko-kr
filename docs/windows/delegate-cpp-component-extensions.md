@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2281dfb6648f9c4756800a0693f184ccaa7435d7
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: fd0f63aebaa6dd742e1ce701e42cf8238fb6033f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49327962"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068100"
 ---
 # <a name="delegate--ccli-and-ccx"></a>대리자 (C + + /cli 및 C + + /cli CX)
 
@@ -52,7 +52,7 @@ return-type
 delegate-type-identifier
 (
 [ parameters ]
-)  
+)
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -131,7 +131,7 @@ function_declaration
 
 - [방법: 대리자 정의 및 사용(C++/CLI)](../dotnet/how-to-define-and-use-delegates-cpp-cli.md)
 
-- [제네릭 대리자 (C + + /cli CLI)](../windows/generic-delegates-visual-cpp.md)
+- [제네릭 대리자(C++/CLI)](../windows/generic-delegates-visual-cpp.md)
 
 ### <a name="requirements"></a>요구 사항
 
@@ -171,14 +171,14 @@ int main () {
    MyDel^ DelInst;
 
    // test if delegate is initialized
-   if (DelInst)  
+   if (DelInst)
       DelInst(7);
 
    // assigning to delegate
    DelInst = gcnew MyDel(a, &A::func1);
 
    // invoke delegate
-   if (DelInst)  
+   if (DelInst)
       DelInst(8);
 
    // add a function
@@ -212,4 +212,4 @@ in static func3 11
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

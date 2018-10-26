@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7fe08de0cbeaf6e70c8d786f3cfc849094117cd2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a6146106a7ae378821fc7133d2d65597d1225cc1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389555"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079664"
 ---
 # <a name="windows-sockets-background"></a>Windows 소켓: 백그라운드
 
@@ -69,11 +69,11 @@ Windows 소켓 사양에 Windows 소켓: 네트워크 컴퓨팅에서 Microsoft 
 
 - Stream 소켓
 
-     레코드 허물기 데이터 흐름에 대 한 제공 Stream 소켓: 바이트 스트림 합니다. 스트림은 배달할 올바르게 시퀀싱 하 고 중복을 보장 됩니다.
+   레코드 허물기 데이터 흐름에 대 한 제공 Stream 소켓: 바이트 스트림 합니다. 스트림은 배달할 올바르게 시퀀싱 하 고 중복을 보장 됩니다.
 
 - 데이터 그램 소켓
 
-     배달 보장 되지 않으며으로 시퀀싱 할 수 있습니다 하는 데이터 그램 소켓 지원 레코드 지향 데이터 흐름 순차적이 지 않거나 합니다.
+   배달 보장 되지 않으며으로 시퀀싱 할 수 있습니다 하는 데이터 그램 소켓 지원 레코드 지향 데이터 흐름 순차적이 지 않거나 합니다.
 
 "시퀀스"는 패킷이 보낸 순서 대로 배달 하는 것을 의미 합니다. "중복 되지 않은" 특정 패킷을 한 번만 가져올 있습니다 의미 합니다.
 

@@ -1,7 +1,7 @@
 ---
 title: SafeInt 함수 | Microsoft Docs
 ms.custom: ''
-ms.date: 09/28/2018
+ms.date: 10/22/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -41,12 +41,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 43960e70f1aad29fa4b8fc03517231c7658d155b
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 515bf6793a2b1546bc79998283104b704de7f1ca
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49162583"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057291"
 ---
 # <a name="safeint-functions"></a>SafeInt 함수
 
@@ -55,6 +55,9 @@ SafeInt 라이브러리의 인스턴스를 만들지 않고도 사용할 수 있
 이러한 함수를 사용 하면 먼저 동일한 형식으로 변환 하지 않고도 두 가지 유형의 매개 변수에서 수학 작업을 수행 하거나 비교할 수 있습니다.
 
 이러한 각 함수는 두 가지 서식 파일 형식: `T` 고 `U`입니다. 이러한 각 유형의 부울, 문자 또는 정수 계열 형식 수 있습니다. 정수 계열 형식 수 서명 되거나 서명 되지 않은 및 8 비트에서 64 비트 크기입니다.
+
+> [!NOTE]
+> 이 라이브러리의 최신 버전에 위치한 [ https://github.com/dcleblanc/SafeInt ](https://github.com/dcleblanc/SafeInt)합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a20d069024fd424beeec41d3483f8e2c28432e00
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 62cb53dd65810132170d608e68661b64dc97d791
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410730"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070233"
 ---
 # <a name="activex-control-containers-using-controls-in-a-non-dialog-container"></a>ActiveX 컨트롤 컨테이너: 대화 상자가 아닌 컨테이너에서 컨트롤 사용
 
@@ -56,18 +56,18 @@ SDI 응용 프로그램의 폼 보기에서이 함수를 사용 하 여 동적�
 
 1. 가변 원형 삽입 CMYVIEW에서 H입니다. H, 직전의 `CMyView` 클래스 정의:
 
-     [!code-cpp[NVC_MFC_AxCont#12](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_1.h)]
+   [!code-cpp[NVC_MFC_AxCont#12](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_1.h)]
 
 1. 멤버 변수 추가 (형식의 `CCirc`)의 보호 된 섹션에는 `CMyView` 클래스 CMYVIEW에 정의 합니다. H:
 
-     [!code-cpp[NVC_MFC_AxCont#13](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_2.h)]
+   [!code-cpp[NVC_MFC_AxCont#13](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_2.h)]
     [!code-cpp[NVC_MFC_AxCont#14](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_3.h)]
 
 1. 추가 된 `WM_CREATE` 클래스에 메시지 처리기 `CMyView`합니다.
 
 1. 처리기 함수에서 `CMyView::OnCreate`, 컨트롤의 호출 `Create` 함수를 사용 하는 **이** 부모 창으로 포인터:
 
-     [!code-cpp[NVC_MFC_AxCont#15](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_4.cpp)]
+   [!code-cpp[NVC_MFC_AxCont#15](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_4.cpp)]
 
 1. 프로젝트를 다시 빌드합니다. 응용 프로그램의 뷰를 만들 때마다 Circ 컨트롤을 동적으로 생성 됩니다.
 

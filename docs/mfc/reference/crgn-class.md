@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f90524b63a7d89d43cb6ed080804ed72fe2429e3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7f6ed7b94509c5dafd868680254c5f48f0066b7f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412681"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054230"
 ---
 # <a name="crgn-class"></a>CRgn 클래스
 
@@ -622,7 +622,7 @@ Windows 지역에 대 한 핸들을 지정합니다.
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 `CRgn` 개체입니다. 함수가 성공 하면 반환 값은 NULL입니다.
+`CRgn` 개체에 대한 포인터입니다. 함수가 성공 하면 반환 값은 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -852,6 +852,4 @@ void SetRectRgn(LPCRECT lpRect);
 
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-
-
 

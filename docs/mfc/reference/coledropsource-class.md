@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f40ac527ba8ad7e65f025910e96a69f546842e30
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: cb12135a0fbffdeba55130bced80c2f23c365caa
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46447559"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052356"
 ---
 # <a name="coledropsource-class"></a>COleDropSource 클래스
 
@@ -177,6 +177,4 @@ ESC 키 또는 오른쪽 단추를 누르면 되었거나 단추 왼쪽 DRAGDROP
 [MFC 샘플 OCLIENT](../../visual-cpp-samples.md)<br/>
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-
-
 

@@ -1,7 +1,7 @@
 ---
 title: CDockablePane Class | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed4325cc950cdfa5320f1107df7103cbb2c026b5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 91058da47a97098826939be2248d81ba657f3cbb
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417490"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078312"
 ---
 # <a name="cdockablepane-class"></a>CDockablePane Class
 
@@ -223,7 +223,7 @@ class CDockablePane : public CPane
 |[CDockablePane::ReplacePane](#replacepane)|창에 지정 된 창으로 대체합니다.|
 |[CDockablePane::RestoreDefaultPaneDivider](#restoredefaultpanedivider)|기본 창 구분선을 복원 하려면 deserialize 되는 창으로이 메서드를 호출 하는 프레임 워크입니다.|
 |`CDockablePane::SaveState`|내부적으로 사용 합니다.|
-|`CDockablePane::Serialize`|창에 serialize합니다. (`CBasePane::Serialize`를 재정의합니다.)|
+|`CDockablePane::Serialize`|창에 serialize합니다. ( `CBasePane::Serialize`을 재정의합니다.)|
 |[CDockablePane::SetAutoHideMode](#setautohidemode)|표시 된 도킹 창 설정/해제 및 자동 숨기기 모드입니다.|
 |[CDockablePane::SetAutoHideParents](#setautohideparents)|자동 숨기기 단추와 창의 자동 숨기기 도구 모음을 설정합니다.|
 |`CDockablePane::SetDefaultPaneDivider`|내부적으로 사용 합니다.|
@@ -337,7 +337,8 @@ virtual CDockablePane* AttachToTabWnd(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] [out] *pTabControlBarAttachTo* 현재 창에 연결 하는 대상 창 지정 합니다. 대상 창 도킹 가능한 창 이어야 합니다.
+*pTabControlBarAttachTo*<br/>
+[out에서] 현재 창에 연결 하는 대상 창을 지정 합니다. 대상 창 도킹 가능한 창 이어야 합니다.
 
 *dockMethod*<br/>
 [in] 도킹 메서드를 지정합니다.
@@ -585,7 +586,6 @@ virtual BOOL Create(
     DWORD dwControlBarStyle = AFX_DEFAULT_DOCKING_PANE_STYLE,
     CCreateContext* pContext = NULL);
 
-
 virtual BOOL Create(
     LPCTSTR lpszWindowName,
     CWnd* pParentWnd,
@@ -602,7 +602,8 @@ virtual BOOL Create(
 *lpszCaption*<br/>
 [in] 창 이름을 지정합니다.
 
-[in] [out] *pParentWnd* 부모 기간을 지정 합니다.
+*pParentWnd*<br/>
+[out에서] 부모 창을 지정합니다.
 
 *rect*<br/>
 [in] 클라이언트 좌표에서 창의 위치와 크기 지정 *pParentWnd*합니다.
@@ -622,7 +623,8 @@ virtual BOOL Create(
 *dwControlBarStyle*<br/>
 [in] 추가 스타일 특성을 지정합니다.
 
-[in] [out] *pContext* 창의 만들기 컨텍스트를 지정 합니다.
+*pContext*<br/>
+[out에서] 창 만들기 컨텍스트를 지정 합니다.
 
 *lpszWindowName*<br/>
 [in] 창 이름을 지정합니다.
@@ -705,7 +707,8 @@ virtual BOOL CreateEx(
 *lpszCaption*<br/>
 [in] 창 이름을 지정합니다.
 
-[in] [out] *pParentWnd* 부모 기간을 지정 합니다.
+*pParentWnd*<br/>
+[out에서] 부모 창을 지정합니다.
 
 *rect*<br/>
 [in] 클라이언트 좌표에서 창의 위치와 크기 지정 *pParentWnd*합니다.
@@ -725,7 +728,8 @@ virtual BOOL CreateEx(
 *dwControlBarStyle*<br/>
 [in] 추가 스타일 특성을 지정합니다.
 
-[in] [out] *pContext* 창의 만들기 컨텍스트를 지정 합니다.
+*pContext*<br/>
+[out에서] 창 만들기 컨텍스트를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -842,7 +846,8 @@ virtual BOOL DockToWindow(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] [out] *pTargetWindow* 이 창의 도킹 도킹 가능한 창을 지정 합니다.
+*pTargetWindow*<br/>
+[out에서] 이 창의 도킹 도킹 가능한 창을 지정 합니다.
 
 *dwAlignment*<br/>
 [in] 도킹 창에 맞춤을 지정합니다. CBRS_ALIGN_LEFT "," CBRS_ALIGN_TOP "," CBRS_ALIGN_RIGHT "," CBRS_ALIGN_BOTTOM "또는" CBRS_ALIGN_ANY 중 하나일 수 있습니다. (Afxres.h에 정의).
@@ -1339,7 +1344,7 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *pWndOldParent*
+[in] *pWndOldParent*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -1509,7 +1514,8 @@ virtual CMFCAutoHideBar* SetAutoHideMode(
 *dwAlignment*<br/>
 [in] 만들려는 자동 숨기기 창의 맞춤을 지정 합니다.
 
-[in] [out] *pCurrAutoHideBar* 현재 자동 숨기기 도구 모음에 대 한 포인터입니다. NULL 일 수 있습니다.
+*pCurrAutoHideBar*<br/>
+[out에서] 현재 자동 숨기기 도구 모음에 대 한 포인터입니다. NULL 일 수 있습니다.
 
 *bUseTimer*<br/>
 [in] 사용자가 창 자동 숨기기 모드로 전환할 때 자동 숨기기 효과 사용 하려면 또는 즉시 창을 숨기려면 여부를 지정 합니다.

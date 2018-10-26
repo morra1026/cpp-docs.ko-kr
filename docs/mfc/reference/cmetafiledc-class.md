@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa9cc938d3738cd789dc648c87eb8bf9b84a6b14
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c4b19358b97ca0afbe7a70347e5b05bed9916846
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46414474"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076349"
 ---
 # <a name="cmetafiledc-class"></a>CMetaFileDC 클래스
 
@@ -227,6 +227,4 @@ Null로 끝나는 문자열을 가리킵니다. 만들려는 확장된 메타 �
 
 [CDC 클래스](../../mfc/reference/cdc-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-
-
 

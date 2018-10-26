@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48cbc29685660f00665fbbb08be76779272d0fcf
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 3daa42008bd385b2d45d05106162c99fb9ca0b12
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235510"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082881"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>연습: MFC 자유 곡선 응용 프로그램 (파트 1) 업데이트
 
@@ -32,7 +32,7 @@ ms.locfileid: "48235510"
 
 이 연습에서는 마우스를 사용하여 줄 그리기를 만들 수 있는 클래식 Scribble 1.0 MFC 샘플을 수정합니다. 이 연습 부분에서는 리본 표시줄에 표시되도록 Scribble 샘플을 수정하는 방법을 보여 줍니다. [2 부](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md) 리본 표시줄에 단추를 추가 합니다.
 
-## <a name="prerequisites"></a>전제 조건 
+## <a name="prerequisites"></a>전제 조건
 
 합니다 [Scribble 1.0 MFC 샘플](http://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe)합니다. Visual Studio 2017에 변환에 대 한 도움말을 참조 하세요 [포팅 가이드: MFC Scribble](../porting/porting-guide-mfc-scribble.md)합니다.
 
@@ -91,9 +91,9 @@ ms.locfileid: "48235510"
 
     mainfrm.h 파일에서
 
-    1. `CToolBar`을 `CMFCToolBar`로 바꿉니다.
+    1. `CToolBar` 을 `CMFCToolBar`로 바꿉니다.
 
-    1. `CStatusBar`을 `CMFCStatusBar`로 바꿉니다.
+    1. `CStatusBar` 을 `CMFCStatusBar`로 바꿉니다.
 
 1. mainfrm.cpp 파일에서
 
@@ -146,7 +146,7 @@ ms.locfileid: "48235510"
    1. 11 개의 16 x 16 (16 x 176) 포함 된 filesmall.bmp 파일을 가져올 이미지입니다. 비트맵의 ID를 변경 `IDB_RIBBON_FILESMALL`합니다.
 
    > [!NOTE]
-   > 처음 8 개의 16x16 이미지 (16 x 128)만 해야 하므로 128 176에서이 비트맵의 오른쪽에 있는 너비를 필요에 따라 자를 수 있습니다. 
+   > 처음 8 개의 16x16 이미지 (16 x 128)만 해야 하므로 128 176에서이 비트맵의 오른쪽에 있는 너비를 필요에 따라 자를 수 있습니다.
 
    1. Filelarge.bmp를 9 개 32 x 32 (32 x 288)를 포함 하는 이미지입니다. 비트맵의 ID를 변경 `IDB_RIBBON_FILELARGE`합니다.
 
@@ -161,7 +161,7 @@ ms.locfileid: "48235510"
    1. 8개의 16x16 이미지가 포함된 panelicons.bmp 비트맵을 가져옵니다. 에 **속성** 기간 합니다 **비트맵 편집기**, 64 (16 x 64) 비트맵의 너비를 조정 합니다. 비트맵의 ID를 변경 `IDB_PANEL_ICONS`합니다.
 
    > [!NOTE]
-   > 처음 네 개의 16 x 16 이미지 (16 x 64)만 해야 하므로 64 128에서이 비트맵의 오른쪽에 있는 너비를 필요에 따라 자를 수 있습니다. 
+   > 처음 네 개의 16 x 16 이미지 (16 x 64)만 해야 하므로 64 128에서이 비트맵의 오른쪽에 있는 너비를 필요에 따라 자를 수 있습니다.
 
 ##  <a name="addribbon"></a> 프로젝트에 리본 리소스 추가
 

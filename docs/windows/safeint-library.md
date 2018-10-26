@@ -1,7 +1,7 @@
 ---
 title: SafeInt 라이브러리 | Microsoft Docs
 ms.custom: index-page
-ms.date: 11/04/2016
+ms.date: 10/22/2018
 ms.technology:
 - cpp-windows
 ms.topic: conceptual
@@ -18,16 +18,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 567190aafad10577bb715e2d1c7e651faa2e280b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8b91ed376e77a2e8a6d6b476065ff89c8c1d3e94
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613609"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053502"
 ---
 # <a name="safeint-library"></a>SafeInt 라이브러리
 
-합니다 **SafeInt** 라이브러리에 응용 프로그램 수학 연산을 수행할 때 발생할 수 있는 정수 오버플로 방지 하는 데 도움이 됩니다.
+합니다 **SafeInt** 라이브러리에 응용 프로그램 수학 연산을 수행할 때 발생할 수 있는 정수 오버플로 방지 하는 데 도움이 됩니다. 이 라이브러리의 최신 버전에 위치한 [ https://github.com/dcleblanc/SafeInt ](https://github.com/dcleblanc/SafeInt)합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 

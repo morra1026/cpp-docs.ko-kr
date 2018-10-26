@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 116cd9ee86ca29aac6da489916f78c3884ba8bdd
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3a37f79851df043a5473c82b514b7e85f418f1b6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446552"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067919"
 ---
 # <a name="standard-dialog-data-validation-routines"></a>표준 대화 상자 데이터 유효성 검사 루틴
 
@@ -47,8 +47,6 @@ ms.locfileid: "46446552"
 |[DDV_MinMaxUInt](#ddv_minmaxuint)|지정 된 컨트롤 값을 초과 하지 확인을 주어진 **UINT** 범위입니다.|
 |[DDV_MinMaxUnsigned](#ddv_minmaxuint)|지정 된 컨트롤을 지정 된 두 값 사이 확인 합니다.|
 |[DDV_MinMaxULongLong](#ddv_minmaxulonglong)|지정 된 컨트롤 값을 초과 하지 확인을 주어진 **ULONGLONG** 범위입니다.|
-
-
 
 ##  <a name="ddv_maxchars"></a>  DDV_MaxChars
 
@@ -552,6 +550,7 @@ DDV에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 �
        unsigned minVal,
        unsigned maxVal );
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *pDX*<br/>
@@ -579,6 +578,4 @@ DDV에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 �
 [매크로 및 전역](mfc-macros-and-globals.md)<br/>
 [DDX_Slider](#ddx_slider)<br/>
 [DDX_FieldSlider](#ddx_fieldslider)
-
-
 

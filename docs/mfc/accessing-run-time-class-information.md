@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b92f634e120bf40fe2355a4c09e0e0fb68e9ec2c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 61da17093d56dcfd8b0eeec3ade7955f27bc6b85
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46407454"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077720"
 ---
 # <a name="accessing-run-time-class-information"></a>런타임 클래스 정보 액세스
 
@@ -50,7 +50,7 @@ ms.locfileid: "46407454"
 
 1. 사용 하 여 `RUNTIME_CLASS` 클래스에 대 한 다음과 같은 클래스의 이름을 사용 하 여 `CObject`:
 
-     [!code-cpp[NVC_MFCCObjectSample#4](../mfc/codesnippet/cpp/accessing-run-time-class-information_1.cpp)]
+   [!code-cpp[NVC_MFCCObjectSample#4](../mfc/codesnippet/cpp/accessing-run-time-class-information_1.cpp)]
 
 거의 런타임 클래스 개체를 직접 액세스 해야 합니다. 런타임 클래스 개체를 전달 하는 보다 일반적인 사용의 `IsKindOf` 다음 절차에 나와 있는 것 처럼 작동 합니다. `IsKindOf` 특정 클래스에 속해 있는지 확인 하는 개체를 테스트 하는 함수입니다.
 
@@ -60,9 +60,9 @@ ms.locfileid: "46407454"
 
 1. 호출 된 `IsKindOf` 클래스의 개체에 대 한 멤버 함수를 사용 하 여는 `RUNTIME_CLASS` 생성 하는 매크로 `CRuntimeClass` 인수를 다음과 같이:
 
-     [!code-cpp[NVC_MFCCObjectSample#2](../mfc/codesnippet/cpp/accessing-run-time-class-information_2.h)]
+   [!code-cpp[NVC_MFCCObjectSample#2](../mfc/codesnippet/cpp/accessing-run-time-class-information_2.h)]
 
-     [!code-cpp[NVC_MFCCObjectSample#5](../mfc/codesnippet/cpp/accessing-run-time-class-information_3.cpp)]
+   [!code-cpp[NVC_MFCCObjectSample#5](../mfc/codesnippet/cpp/accessing-run-time-class-information_3.cpp)]
 
     > [!NOTE]
     >  IsKindOf 반환 **TRUE** 개체가 지정된 된 클래스에서 파생 된 클래스 또는 지정된 된 클래스의 멤버인 경우. `IsKindOf` 필요한 경우 Microsoft Foundation 클래스 파생된에 대해 여러 상속을 사용할 수 있지만 여러 상속 이나 가상 기본 클래스를 지원 하지 않습니다.

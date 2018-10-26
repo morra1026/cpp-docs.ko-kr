@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abc9af657e790fcedf949719776581b5c1877e89
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: e37e6183ca840067ceca47dd48f3b24d7b3b98c7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48889993"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50074542"
 ---
 # <a name="mfc-activex-controls-creating-an-automation-server"></a>MFC ActiveX 컨트롤: 자동화 서버 만들기
 
@@ -43,17 +43,17 @@ ms.locfileid: "48889993"
 
 1. 맨 앞에 `InitInstance` 함수를 다음 줄을 추가 합니다.
 
-     [!code-cpp[NVC_MFC_AxCont#17](../mfc/codesnippet/cpp/mfc-activex-controls-creating-an-automation-server_1.cpp)]
+   [!code-cpp[NVC_MFC_AxCont#17](../mfc/codesnippet/cpp/mfc-activex-controls-creating-an-automation-server_1.cpp)]
 
 1. 클래스 뷰에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 선택 **typelib의 클래스 추가** 형식 라이브러리를 가져옵니다.
 
-     이렇게 하면 파일 확장명이.h 및.cpp 파일을 프로젝트에 추가 됩니다.
+   이렇게 하면 파일 확장명이.h 및.cpp 파일을 프로젝트에 추가 됩니다.
 
 1. 헤더 파일에서 클래스의 하나 이상의 메서드를 호출 하는 ActiveX 컨트롤의는 여기서 다음 줄을 추가 합니다. `#include filename.h`, 여기서 파일 name은 형식 라이브러리를 가져올 때 생성 된 헤더 파일의 이름입니다.
 
 1. ActiveX 컨트롤의 메서드는 전화를 걸 수 있는 함수에서 컨트롤의 래퍼 클래스의 개체를 만드는 코드를 추가 하 고 ActiveX 개체를 만듭니다. 예를 들어, 다음과 같은 MFC 코드 인스턴스화합니다를 `CCirc` 제어 캡션 속성을 가져옵니다 및 대화 상자에서 확인 단추를 클릭 하면 결과 표시 합니다.
 
-     [!code-cpp[NVC_MFC_AxCont#18](../mfc/codesnippet/cpp/mfc-activex-controls-creating-an-automation-server_2.cpp)]
+   [!code-cpp[NVC_MFC_AxCont#18](../mfc/codesnippet/cpp/mfc-activex-controls-creating-an-automation-server_2.cpp)]
 
 응용 프로그램에서 사용 후 ActiveX 컨트롤에 메서드 추가 하는 경우 응용 프로그램에서 컨트롤의 최신 버전을 사용 하 여 형식 라이브러리를 가져올 때 생성 된 파일을 삭제 하 여 시작할 수 있습니다. 다음 형식 라이브러리를 다시 가져오십시오.
 
