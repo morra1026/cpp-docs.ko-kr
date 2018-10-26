@@ -39,12 +39,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d92d196cc38e6033c6f16332e4977f2481c4496
-ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
+ms.openlocfilehash: 98fec6659c2f4e998b946983a0bd2bdea6d0cde1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49990336"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083258"
 ---
 # <a name="openmp-directives"></a>OpenMP 지시문
 
@@ -52,19 +52,19 @@ OpenMP API에서 사용 되는 지시문에 대 한 링크를 제공 합니다.
 
 Visual c + +에서는 다음 OpenMP 지시문을 지원합니다.
 
-지시문                             | 설명
-------------------------------------- | -----------------------------------------------------------------------------------------------------------------
-[atomic](#atomic)                     | 지정 하는 원자 단위로 업데이트 되는 메모리 위치입니다.
-[barrier](#barrier)                   | 팀;의 모든 스레드를 동기화합니다. 모든 스레드가 장애물 모든 스레드가 장애물을 실행할 때까지 일시 중지 합니다.
-[critical](#critical)                 | 한 번에 코드 한 스레드에서 실행만 되는지 지정 합니다.
-[flush](#flush-openmp)                | 모든 스레드 모든 공유 개체에 대 한 메모리의 동일한 보기를 지정 합니다.
-[for](#for-openmp)                    | 수행 된 작업을 하면는 `for` 여러 스레드로 분배 하는 병렬 영역 내부 루프입니다.
-[master](#master)                     | 마스터 스레드만 프로그램의 섹션을 실행할지를 지정 합니다.
-[ordered](#ordered-openmp-directives) | 해당 코드를 병렬화 된 아래 지정 `for` 순차 루프와 같은 루프를 실행 해야 합니다.
-[parallel](#parallel)                 | 병렬로 여러 스레드에서 실행 될 코드는 병렬 영역을 정의 합니다.
-[섹션](#sections-openmp)          | 모든 스레드 간에 나눌 코드 섹션을 식별 합니다.
-[single](#single)                     | 코드의 섹션 마스터 스레드 반드시 단일 스레드에서 실행할지를 지정할 수 있습니다.
-[threadprivate](#threadprivate)       | 변수는 스레드에 private 임을 지정 합니다.
+|지시문|설명|
+|---------|-----------|
+|[atomic](#atomic)|지정 하는 원자 단위로 업데이트 되는 메모리 위치입니다.|
+|[barrier](#barrier)|팀;의 모든 스레드를 동기화합니다. 모든 스레드가 장애물 모든 스레드가 장애물을 실행할 때까지 일시 중지 합니다.|
+|[critical](#critical)|한 번에 코드 한 스레드에서 실행만 되는지 지정 합니다.|
+|[flush](#flush-openmp)|모든 스레드 모든 공유 개체에 대 한 메모리의 동일한 보기를 지정 합니다.|
+|[for](#for-openmp)|수행 된 작업을 하면는 `for` 여러 스레드로 분배 하는 병렬 영역 내부 루프입니다.|
+|[master](#master)|마스터 스레드만 프로그램의 섹션을 실행할지를 지정 합니다.|
+|[ordered](#ordered-openmp-directives)|해당 코드를 병렬화 된 아래 지정 `for` 순차 루프와 같은 루프를 실행 해야 합니다.|
+|[parallel](#parallel)|병렬로 여러 스레드에서 실행 될 코드는 병렬 영역을 정의 합니다.|
+|[섹션](#sections-openmp)|모든 스레드 간에 나눌 코드 섹션을 식별 합니다.|
+|[single](#single)|코드의 섹션 마스터 스레드 반드시 단일 스레드에서 실행할지를 지정할 수 있습니다.|
+|[threadprivate](#threadprivate)|변수는 스레드에 private 임을 지정 합니다.|
 
 ## <a name="atomic"></a>원자성
 
@@ -306,13 +306,13 @@ data = 2
 
 `for` 지시문 다음 OpenMP 절을 지원 합니다.
 
-- [firstprivate](../../../parallel/openmp/reference/firstprivate.md)
-- [lastprivate](../../../parallel/openmp/reference/lastprivate.md)
-- [nowait](../../../parallel/openmp/reference/nowait.md)
-- [ordered](../../../parallel/openmp/reference/ordered-openmp-directives.md)
-- [private](../../../parallel/openmp/reference/private-openmp.md)
-- [reduction](../../../parallel/openmp/reference/reduction.md)
-- [schedule](../../../parallel/openmp/reference/schedule.md)
+- [firstprivate](openmp-clauses.md#firstprivate)
+- [lastprivate](openmp-clauses.md#lastprivate)
+- [nowait](openmp-clauses.md#nowait)
+- [ordered](openmp-clauses.md#ordered-openmp-clauses)
+- [private](openmp-clauses.md#private-openmp)
+- [reduction](openmp-clauses.md#reduction)
+- [schedule](openmp-clauses.md#schedule)
 
 하는 경우 `parallel` 도 지정 되어 `clauses` 절에서 사용할 수는 `parallel` 또는 `for` 지시문을 제외한 `nowait`합니다.
 
@@ -535,14 +535,14 @@ test2() iteration 4
 
 `parallel` 지시문 다음 OpenMP 절을 지원 합니다.
 
-- [copyin](../../../parallel/openmp/reference/copyin.md)
-- [default](../../../parallel/openmp/reference/default-openmp.md)
-- [firstprivate](../../../parallel/openmp/reference/firstprivate.md)
-- [if](../../../parallel/openmp/reference/if-openmp.md)
-- [num_threads](../../../parallel/openmp/reference/num-threads.md)
-- [private](../../../parallel/openmp/reference/private-openmp.md)
-- [reduction](../../../parallel/openmp/reference/reduction.md)
-- [shared](../../../parallel/openmp/reference/shared-openmp.md)
+- [copyin](openmp-clauses.md#copyin)
+- [default](openmp-clauses.md#default-openmp)
+- [firstprivate](openmp-clauses.md#firstprivate)
+- [if](openmp-clauses.md#if-openmp)
+- [num_threads](openmp-clauses.md#num-threads)
+- [private](openmp-clauses.md#private-openmp)
+- [reduction](openmp-clauses.md#reduction)
+- [shared](openmp-clauses.md#shared-openmp)
 
 `parallel` 사용 하 여 사용할 수도 있습니다는 [섹션](#sections-openmp) 하 고 [에 대 한](#for-openmp) 지시문입니다.
 
@@ -603,11 +603,11 @@ Hello from thread 3
 
 `sections` 지시문 다음 OpenMP 절을 지원 합니다.
 
-- [firstprivate](../../../parallel/openmp/reference/firstprivate.md)
-- [lastprivate](../../../parallel/openmp/reference/lastprivate.md)
-- [nowait](../../../parallel/openmp/reference/nowait.md)
-- [private](../../../parallel/openmp/reference/private-openmp.md)
-- [reduction](../../../parallel/openmp/reference/reduction.md)
+- [firstprivate](openmp-clauses.md#firstprivate)
+- [lastprivate](openmp-clauses.md#lastprivate)
+- [nowait](openmp-clauses.md#nowait)
+- [private](openmp-clauses.md#private-openmp)
+- [reduction](openmp-clauses.md#reduction)
 
 하는 경우 `parallel` 도 지정 되어 `clauses` 절에서 사용할 수는 `parallel` 또는 `sections` 지시문을 제외한 `nowait`합니다.
 
@@ -656,10 +656,10 @@ Hello from thread 0
 
 `single` 지시문 다음 OpenMP 절을 지원 합니다.
 
-- [copyprivate](../../../parallel/openmp/reference/copyprivate.md)
-- [firstprivate](../../../parallel/openmp/reference/firstprivate.md)
-- [nowait](../../../parallel/openmp/reference/nowait.md)
-- [private](../../../parallel/openmp/reference/private-openmp.md)
+- [copyprivate](openmp-clauses.md#copyprivate)
+- [firstprivate](openmp-clauses.md#firstprivate)
+- [nowait](openmp-clauses.md#nowait)
+- [private](openmp-clauses.md#private-openmp)
 
 합니다 [마스터](#master) 지시어를 사용 하면 코드의 섹션은 마스터 스레드에서만 실행 되도록 지정 합니다.
 
@@ -745,4 +745,4 @@ int main()
 
 ### <a name="example"></a>예제
 
-사용 하는 예제에 대 한 `threadprivate`를 참조 하세요 [개인](../../../parallel/openmp/reference/private-openmp.md)합니다.
+사용 하는 예제에 대 한 `threadprivate`를 참조 하세요 [개인](openmp-clauses.md#private-openmp)합니다.

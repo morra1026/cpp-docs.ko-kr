@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 378a99021ca1b48599ee934d659542384068e195
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2f3824e87a2016a848b3723aaa293f235f6f9b09
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46443347"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054867"
 ---
 # <a name="serialization-making-a-serializable-class"></a>Serialization: Serialize 가능한 클래스 만들기
 
@@ -67,9 +67,9 @@ ms.locfileid: "46443347"
 
 1. 삽입 또는 클래스에 관련 된 멤버 변수를 추출 합니다.
 
-     읽기 및 쓰기 데이터 보관 클래스를 사용 하 여 삽입 및 추출 연산자 상호 작용 합니다. 다음 예제에서는 구현 하는 방법을 보여 줍니다 `Serialize` 에 대 한는 `CPerson` 위의 클래스 선언:
+   읽기 및 쓰기 데이터 보관 클래스를 사용 하 여 삽입 및 추출 연산자 상호 작용 합니다. 다음 예제에서는 구현 하는 방법을 보여 줍니다 `Serialize` 에 대 한는 `CPerson` 위의 클래스 선언:
 
-     [!code-cpp[NVC_MFCSerialization#2](../mfc/codesnippet/cpp/serialization-making-a-serializable-class_2.cpp)]
+   [!code-cpp[NVC_MFCSerialization#2](../mfc/codesnippet/cpp/serialization-making-a-serializable-class_2.cpp)]
 
 사용할 수도 있습니다는 [CArchive::Read](../mfc/reference/carchive-class.md#read) 및 [CArchive::Write](../mfc/reference/carchive-class.md#write) 대량의 형식화 되지 않은 데이터를 읽고 하는 멤버 함수입니다.
 

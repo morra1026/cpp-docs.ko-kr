@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8213ac8d45b2981a7b945fb0af0a590cf7974a8a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b6a70efc6fe4c717ccaa236ea46d73f9df206876
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402358"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075094"
 ---
 # <a name="documents-views-and-the-framework"></a>문서, 뷰 및 프레임워크
 
@@ -41,31 +41,31 @@ MFC 프레임 워크의 핵심은 문서 및 뷰 개념입니다. 문서에 있�
 
 - 문서 또는 문서입니다.
 
-     문서 클래스 (에서 파생 된 [CDocument](../mfc/reference/cdocument-class.md)) 응용 프로그램의 데이터를 지정 합니다.
+   문서 클래스 (에서 파생 된 [CDocument](../mfc/reference/cdocument-class.md)) 응용 프로그램의 데이터를 지정 합니다.
 
-     응용 프로그램에서 OLE 기능을 원하는 경우에서 문서 클래스 파생 [COleDocument](../mfc/reference/coledocument-class.md) 유형의 해야 하는 기능에 따라 해당 파생된 클래스 중 하나입니다.
+   응용 프로그램에서 OLE 기능을 원하는 경우에서 문서 클래스 파생 [COleDocument](../mfc/reference/coledocument-class.md) 유형의 해야 하는 기능에 따라 해당 파생된 클래스 중 하나입니다.
 
 - 보기 또는 뷰입니다.
 
-     뷰 클래스 (에서 파생 된 [CView](../mfc/reference/cview-class.md)) 사용자의 "창이 데이터입니다." 뷰 클래스에는 사용자 문서의 데이터를 표시 하 고 상호 작용 하는 방법을 제어 합니다. 일부 경우에는 문서 데이터의 여러 보기를 확인할 수 있습니다.
+   뷰 클래스 (에서 파생 된 [CView](../mfc/reference/cview-class.md)) 사용자의 "창이 데이터입니다." 뷰 클래스에는 사용자 문서의 데이터를 표시 하 고 상호 작용 하는 방법을 제어 합니다. 일부 경우에는 문서 데이터의 여러 보기를 확인할 수 있습니다.
 
-     스크롤을 해야 하는 경우 파생 [CScrollView](../mfc/reference/cscrollview-class.md)합니다. 보기에 대화 상자 템플릿 리소스에 배치 되는 사용자 인터페이스에서 파생 [CFormView](../mfc/reference/cformview-class.md)합니다. 간단한 텍스트 데이터에 대 한 사용 하거나 파생 [CEditView](../mfc/reference/ceditview-class.md)합니다. 파생 되는 폼 기반 데이터 액세스 응용 프로그램의 경우 데이터 입력 프로그램 같은 [CRecordView](../mfc/reference/crecordview-class.md) (ODBC)에 대 한 합니다. 또한 사용할 수는 클래스 [CTreeView](../mfc/reference/ctreeview-class.md)를 [CListView](../mfc/reference/clistview-class.md), 및 [CRichEditView](../mfc/reference/cricheditview-class.md)합니다.
+   스크롤을 해야 하는 경우 파생 [CScrollView](../mfc/reference/cscrollview-class.md)합니다. 보기에 대화 상자 템플릿 리소스에 배치 되는 사용자 인터페이스에서 파생 [CFormView](../mfc/reference/cformview-class.md)합니다. 간단한 텍스트 데이터에 대 한 사용 하거나 파생 [CEditView](../mfc/reference/ceditview-class.md)합니다. 파생 되는 폼 기반 데이터 액세스 응용 프로그램의 경우 데이터 입력 프로그램 같은 [CRecordView](../mfc/reference/crecordview-class.md) (ODBC)에 대 한 합니다. 또한 사용할 수는 클래스 [CTreeView](../mfc/reference/ctreeview-class.md)를 [CListView](../mfc/reference/clistview-class.md), 및 [CRichEditView](../mfc/reference/cricheditview-class.md)합니다.
 
 - 프레임 창
 
-     뷰 "문서 프레임 창" 내부 표시 됩니다. SDI 응용 프로그램에서 문서 프레임 창 이기도 응용 프로그램에 대 한 "주 프레임 창" 합니다. MDI 응용 프로그램 문서 창에는 자식 창을 주 프레임 창 내에 표시 합니다. 파생 된 주 프레임 창 클래스 스타일 및 프레임 창의 뷰를 포함 하는 다른 특성을 지정 합니다. 프레임 창 사용자 지정 하는 경우에서 파생 [CFrameWnd](../mfc/reference/cframewnd-class.md) SDI 응용 프로그램에 대 한 문서 프레임 창에 맞게 합니다. 파생 [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md) MDI 응용 프로그램에 대 한 주 프레임 창을 사용자 지정할 수 있습니다. 클래스를 파생 시킵니다 [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md) 각 고유 유형의 응용 프로그램을 지 원하는 MDI 문서 프레임 창 사용자 지정할 수 있습니다.
+   뷰 "문서 프레임 창" 내부 표시 됩니다. SDI 응용 프로그램에서 문서 프레임 창 이기도 응용 프로그램에 대 한 "주 프레임 창" 합니다. MDI 응용 프로그램 문서 창에는 자식 창을 주 프레임 창 내에 표시 합니다. 파생 된 주 프레임 창 클래스 스타일 및 프레임 창의 뷰를 포함 하는 다른 특성을 지정 합니다. 프레임 창 사용자 지정 하는 경우에서 파생 [CFrameWnd](../mfc/reference/cframewnd-class.md) SDI 응용 프로그램에 대 한 문서 프레임 창에 맞게 합니다. 파생 [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md) MDI 응용 프로그램에 대 한 주 프레임 창을 사용자 지정할 수 있습니다. 클래스를 파생 시킵니다 [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md) 각 고유 유형의 응용 프로그램을 지 원하는 MDI 문서 프레임 창 사용자 지정할 수 있습니다.
 
 - 문서 템플릿 또는 템플릿
 
-     문서 템플릿을 문서, 뷰 및 프레임 창 만들기를 오케스트레이션 합니다. 클래스에서 파생 된 특정 문서 템플릿 클래스 [CDocTemplate](../mfc/reference/cdoctemplate-class.md)만들고 한 형식의 모든 열린 문서를 관리 합니다. 둘 이상의 형식의 문서를 지 원하는 응용 프로그램에는 여러 문서 템플릿이. 클래스를 사용 하 여 [CSingleDocTemplate](../mfc/reference/csingledoctemplate-class.md) SDI 응용 프로그램 또는 클래스를 사용 하는 것에 대 한 [CMultiDocTemplate](../mfc/reference/cmultidoctemplate-class.md) MDI 응용 프로그램에 대 한 합니다.
+   문서 템플릿을 문서, 뷰 및 프레임 창 만들기를 오케스트레이션 합니다. 클래스에서 파생 된 특정 문서 템플릿 클래스 [CDocTemplate](../mfc/reference/cdoctemplate-class.md)만들고 한 형식의 모든 열린 문서를 관리 합니다. 둘 이상의 형식의 문서를 지 원하는 응용 프로그램에는 여러 문서 템플릿이. 클래스를 사용 하 여 [CSingleDocTemplate](../mfc/reference/csingledoctemplate-class.md) SDI 응용 프로그램 또는 클래스를 사용 하는 것에 대 한 [CMultiDocTemplate](../mfc/reference/cmultidoctemplate-class.md) MDI 응용 프로그램에 대 한 합니다.
 
 - 응용 프로그램 개체
 
-     응용 프로그램 클래스 (에서 파생 된 [CWinApp](../mfc/reference/cwinapp-class.md)) 위의 개체를 모두 제어 하 고 초기화 및 정리 같은 응용 프로그램 동작을 지정 합니다. 유일한 응용 프로그램 및 응용 프로그램의 개체를 만들고 모든 문서에서 응용 프로그램에서 지 원하는 형식에 대 한 문서 서식 파일을 관리 합니다.
+   응용 프로그램 클래스 (에서 파생 된 [CWinApp](../mfc/reference/cwinapp-class.md)) 위의 개체를 모두 제어 하 고 초기화 및 정리 같은 응용 프로그램 동작을 지정 합니다. 유일한 응용 프로그램 및 응용 프로그램의 개체를 만들고 모든 문서에서 응용 프로그램에서 지 원하는 형식에 대 한 문서 서식 파일을 관리 합니다.
 
 - 스레드 개체
 
-     응용 프로그램의 개별 실행 스레드를 만드는 경우-백그라운드에서 계산을 수행 하는 등-에서 파생 된 클래스를 사용할지 [CWinThread](../mfc/reference/cwinthread-class.md)합니다. [CWinApp](../mfc/reference/cwinapp-class.md) 에서 파생 되는 자체 `CWinThread` 응용 프로그램에서 실행 (또는 기본 프로세스)의 주 스레드를 나타냅니다. 또한 보조 스레드에서 MFC를 사용할 수 있습니다.
+   응용 프로그램의 개별 실행 스레드를 만드는 경우-백그라운드에서 계산을 수행 하는 등-에서 파생 된 클래스를 사용할지 [CWinThread](../mfc/reference/cwinthread-class.md)합니다. [CWinApp](../mfc/reference/cwinapp-class.md) 에서 파생 되는 자체 `CWinThread` 응용 프로그램에서 실행 (또는 기본 프로세스)의 주 스레드를 나타냅니다. 또한 보조 스레드에서 MFC를 사용할 수 있습니다.
 
 실행 중인 응용 프로그램에서 이러한 개체의 사용자 동작에 협조적으로 응답 함께 바인딩된 명령 및 기타 메시지입니다. 단일 응용 프로그램 개체를 하나 이상의 문서 서식 파일을 관리합니다. 각 문서 템플릿을 만들고 (인지 여부에 따라 응용 프로그램 SDI MDI) 하나 이상의 문서를 관리 합니다. 사용자 뷰 및 프레임 창 안에 포함 된 뷰를 통해 문서를 조작 합니다. 다음 그림 SDI 응용 프로그램에 대 한 이러한 개체 간의 관계를 보여 줍니다.
 

@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e760bab6fb3ad420fc6fe0f5c8a2ea6addc652ac
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 597825c89b19c15872c831c675981e68345aa947
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019430"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068226"
 ---
 # <a name="iobjectsafetyimpl-class"></a>IObjectSafetyImpl 클래스
 
@@ -94,7 +94,7 @@ class IObjectSafetyImpl
 개체에 대 한 현재 설정 된 보안 옵션 뿐만 아니라 개체에서 지 원하는 보안 옵션을 검색 합니다.
 
 ```
-HRESULT GetInterfaceSafetyOptions(  
+HRESULT GetInterfaceSafetyOptions(
     REFIID riid,
     DWORD* pdwSupportedOptions,
     DWORD* pdwEnabledOptions);
@@ -122,7 +122,7 @@ DWORD m_dwCurrentSafety;
 개체를 초기화 하거나 설정 하 여 스크립트에 대 한 안전 하 게 합니다 [m_dwCurrentSafety](#m_dwcurrentsafety) 적절 한 값 멤버입니다.
 
 ```
-HRESULT SetInterfaceSafetyOptions(  
+HRESULT SetInterfaceSafetyOptions(
     REFIID riid,
     DWORD dwOptionsSetMask,
     DWORD dwEnabledOptions);

@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 869cc0404b19dd9cd6cd49dda9702445f420965e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b168bf95e44a41973d92230f559246b03f275601
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46016977"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073086"
 ---
 # <a name="exception-handling-in-visual-c"></a>Visual C++에서 예외 처리
 
@@ -31,15 +31,15 @@ Visual C++은 세 종류의 예외 처리를 지원합니다.
 
 - [C + + 예외 처리](../cpp/cpp-exception-handling.md)
 
-     대부분의 C++ 프로그램의 경우 형식 안전이며 스택 해제 중 개체 소멸자의 호출을 확인하는 C++ 예외 처리를 사용해야 합니다.
+   대부분의 C++ 프로그램의 경우 형식 안전이며 스택 해제 중 개체 소멸자의 호출을 확인하는 C++ 예외 처리를 사용해야 합니다.
 
 - [구조적된 예외 처리](../cpp/structured-exception-handling-c-cpp.md)
 
-     Windows는 SEH라는 고유한 예외 메커니즘을 제공합니다. C++ 또는 MFC 프로그래밍에는 권장되지 않습니다. 비 MFC C 프로그램에만 SEH를 사용 합니다.
+   Windows는 SEH라는 고유한 예외 메커니즘을 제공합니다. C++ 또는 MFC 프로그래밍에는 권장되지 않습니다. 비 MFC C 프로그램에만 SEH를 사용 합니다.
 
 - [MFC 예외](../mfc/exception-handling-in-mfc.md)
 
-     버전 3.0 이상에서는 MFC가 C++ 예외를 사용했으나 형식에서 C++ 예외와 유사한 이전 예외 처리 매크로를 여전히 지원합니다. 이러한 매크로는 새 프로그래밍에는 권장되지 않지만 여전히 역 호환성에 대해 지원됩니다. 매크로를 이미 사용하는 프로그램에서 자유롭게 C++ 예외를 사용할 수 있습니다. 전처리 중 매크로는 Visual C++ 버전 2.0처럼 C++ 언어의 Visual C++ 구현에서 정의된 예외 처리 키워드를 계산합니다. C++ 예외를 사용하는 동안 기존 예외 매크로를 남겨둘 수 있습니다.
+   버전 3.0 이상에서는 MFC가 C++ 예외를 사용했으나 형식에서 C++ 예외와 유사한 이전 예외 처리 매크로를 여전히 지원합니다. 이러한 매크로는 새 프로그래밍에는 권장되지 않지만 여전히 역 호환성에 대해 지원됩니다. 매크로를 이미 사용하는 프로그램에서 자유롭게 C++ 예외를 사용할 수 있습니다. 전처리 중 매크로는 Visual C++ 버전 2.0처럼 C++ 언어의 Visual C++ 구현에서 정의된 예외 처리 키워드를 계산합니다. C++ 예외를 사용하는 동안 기존 예외 매크로를 남겨둘 수 있습니다.
 
 사용 된 [/EH](../build/reference/eh-exception-handling-model.md) ; 프로젝트에서 사용 하는 예외 처리의 유형을 지정 하는 컴파일러 옵션 C + + 예외 처리에는 기본값입니다. 오류 처리 메커니즘을 혼용하지 마십시오. 예를 들어 C++ 예외를 구조적 예외 처리와 함께 사용하지 마십시오. C++ 예외 처리를 사용하면 코드 이식 가능성이 향상되며 모든 형식의 예외를 처리할 수 있습니다. 구조적된 예외 처리의 단점에 대 한 자세한 내용은 참조 [구조적 예외 처리](../cpp/structured-exception-handling-c-cpp.md)합니다. MFC 매크로 및 c + + 예외 혼합 하는 방법에 대 한 도움말을 참조 하세요 [예외: MFC 매크로 및 c + + 예외 사용](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md)합니다.
 

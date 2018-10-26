@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ffee10ea334c6c425aa5ecd81705ef1915dc80c0
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: e48d71ace613eac040f83023f70f2a1f28d09f6e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791226"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082310"
 ---
 # <a name="rdx"></a>rdx
 
@@ -62,7 +62,7 @@ ms.locfileid: "48791226"
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-특성 컨텍스트에 대 한 자세한 내용은 참조 하세요. [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -90,4 +90,4 @@ public:
 ## <a name="see-also"></a>참고 항목
 
 [COM 특성](com-attributes.md)<br/>
-[registration_script](registration-script.md)  
+[registration_script](registration-script.md)

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6613e38a19987abcc9f95288e9d1cb6957b076a2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: add9336165195ba4da0125c606eebd39f3fce298
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427279"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062230"
 ---
 # <a name="windows-sockets-example-of-sockets-using-archives"></a>Windows 소켓: 아카이브를 사용하는 소켓의 예
 
@@ -40,11 +40,11 @@ ms.locfileid: "46427279"
 
 - "헤더" 데이터의 특성을 지정 하는 (이 경우 값을 *bValue* 변수와 복사본 개수를 받게 됩니다).
 
-     이 예제에 대 한 두 항목은 임의로 생성 됩니다.
+   이 예제에 대 한 두 항목은 임의로 생성 됩니다.
 
 - 지정 된 데이터의 복사본 수입니다.
 
-     내부 **에 대 한** 보냅니다 루프 *bValue* 지정 된 횟수입니다.
+   내부 **에 대 한** 보냅니다 루프 *bValue* 지정 된 횟수입니다.
 
 - 라는 문자열이 *strText* 수신자가 해당 사용자에 게 표시 하는 합니다.
 

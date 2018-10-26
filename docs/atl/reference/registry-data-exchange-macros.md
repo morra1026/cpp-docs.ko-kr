@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8a4ac19f9ead379b66d93a7be031bb53bc50fe5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7e9e62c1969d61f84319c0ffadf50f9f96534380
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46109347"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055487"
 ---
 # <a name="registry-data-exchange-macros"></a>레지스트리 데이터 교환 매크로
 
@@ -39,7 +39,7 @@ ms.locfileid: "46109347"
 |[RDX_BINARY](#rdx_binary)|BYTE 형식의 지정 된 멤버 변수를 사용 하 여 지정 된 레지스트리 항목을 연결합니다.|
 |[RDX_CSTRING_TEXT](#rdx_cstring_text)|CString 형식의 지정 된 멤버 변수를 사용 하 여 지정 된 레지스트리 항목을 연결합니다.|
 |[RDX_DWORD](#rdx_dword)|DWORD 형식의 지정 된 멤버 변수를 사용 하 여 지정 된 레지스트리 항목을 연결합니다.|
-|[RDX_TEXT](#rdx_text)|TCHAR 형식의 지정 된 멤버 변수를 사용 하 여 지정 된 레지스트리 항목을 연결합니다.|  
+|[RDX_TEXT](#rdx_text)|TCHAR 형식의 지정 된 멤버 변수를 사용 하 여 지정 된 레지스트리 항목을 연결합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -80,10 +80,10 @@ BYTE 형식의 지정 된 멤버 변수를 사용 하 여 지정 된 레지스�
 
 ```
 RDX_BINARY(
-    rootkey, 
-    subkey, 
-    valuename, 
-    member, 
+    rootkey,
+    subkey,
+    valuename,
+    member,
     member_size )
 ```
 
@@ -98,7 +98,7 @@ RDX_BINARY(
 *valuename*<br/>
 레지스트리 키입니다.
 
-*멤버*<br/>
+*member*<br/>
 멤버 변수를 지정 된 레지스트리 항목 연결입니다.
 
 *member_size*<br/>
@@ -114,10 +114,10 @@ CString 형식의 지정 된 멤버 변수를 사용 하 여 지정 된 레지�
 
 ```
 RDX_CSTRING_TEXT(
-    rootkey, 
-    subkey, 
-    valuename, 
-    member, 
+    rootkey,
+    subkey,
+    valuename,
+    member,
     member_size )
 ```
 
@@ -132,7 +132,7 @@ RDX_CSTRING_TEXT(
 *valuename*<br/>
 레지스트리 키입니다.
 
-*멤버*<br/>
+*member*<br/>
 멤버 변수를 지정 된 레지스트리 항목 연결입니다.
 
 *member_size*<br/>
@@ -148,10 +148,10 @@ DWORD 형식의 지정 된 멤버 변수를 사용 하 여 지정 된 레지스�
 
 ```
 RDX_DWORD(
-    rootkey, 
-    subkey, 
-    valuename, 
-    member, 
+    rootkey,
+    subkey,
+    valuename,
+    member,
     member_size )
 ```
 
@@ -166,7 +166,7 @@ RDX_DWORD(
 *valuename*<br/>
 레지스트리 키입니다.
 
-*멤버*<br/>
+*member*<br/>
 멤버 변수를 지정 된 레지스트리 항목 연결입니다.
 
 *member_size*<br/>
@@ -182,10 +182,10 @@ TCHAR 형식의 지정 된 멤버 변수를 사용 하 여 지정 된 레지스�
 
 ```
 RDX_TEXT(
-    rootkey, 
-    subkey, 
-    valuename, 
-    member, 
+    rootkey,
+    subkey,
+    valuename,
+    member,
     member_size )
 ```
 
@@ -200,7 +200,7 @@ RDX_TEXT(
 *valuename*<br/>
 레지스트리 키입니다.
 
-*멤버*<br/>
+*member*<br/>
 멤버 변수를 지정 된 레지스트리 항목 연결입니다.
 
 *member_size*<br/>

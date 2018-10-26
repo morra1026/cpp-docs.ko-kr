@@ -98,12 +98,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc19475cff0038d11131a26c36ab498a562b234c
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 7e9ec6724addeb8002eeb681f289f232520f31dc
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48236038"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060108"
 ---
 # <a name="hashmap-class"></a>hash_map 클래스
 
@@ -277,7 +277,6 @@ const Type& at(const Key& key) const;
 ### <a name="remarks"></a>설명
 
 인수 키 값을 찾을 수 없는 경우 이 함수는 [out_of_range 클래스](../standard-library/out-of-range-class.md) 클래스의 개체를 throw합니다.
-
 
 ### <a name="example"></a>예제
 
@@ -2688,9 +2687,9 @@ hash_map이 요소의 순서를 지정하는 데 사용하는 비교 함수 개�
 
 ### <a name="remarks"></a>설명
 
-hash_map *m*의 두 요소 *e*1 *(k*1 *, d*1 *)* 및 *e*2 *(k*2 *, d*2 *)* 가 [value_type](#value_type) 형식의 개체인 경우(여기서 *k*1 및 *k*2는 [key_type](#key_type) 형식의 요소 키이고 `d`1 및 `d`2는 [mapped_type](#mapped_type) 형식의 요소 데이터임) *m.*`value_comp`*( )(e*1 *, e*2 *)* 는 *m.*`key_comp`*( )(k*1 *, k*2 *)* 와 같습니다. 저장된 개체는 멤버 함수
+Hash_map에 대 한 *m*이면 두 요소 *e1* (*k1*하십시오 *d1*) 및 *e2* (*k2*, *d2*) 형식의 개체가 [value_type](#value_type)여기서 *k1* 하 고 *k2* 형식의해당키가[key_type](#key_type) 하 고 *d1* 및 *d2* 은 해당 데이터 형식의 [mapped_type](#mapped_type), 다음 `m.value_comp()(e1, e2)` 동일 `m.key_comp()(k1, k2)` . 저장된 개체는 멤버 함수
 
-**bool operator**(**value_type&** `left`, **value_type&** `right`) **;** 를
+`bool operator(value_type& left, value_type& right);`
 
 정의합니다. 이 함수는 `left`의 키 값이 앞에 오고 정렬 순서의 `right` 키 값과 같지 않으면 **true**를 반환합니다.
 

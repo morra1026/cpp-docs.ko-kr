@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f24cf6cce5cdf268367f547e8a536dcdae7cc859
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 413485bc7675fbc68f2c224ceefdd0f552538eb9
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46098955"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076986"
 ---
 # <a name="ccomobjectrootex-class"></a>CComObjectRootEx 클래스
 
@@ -51,7 +51,7 @@ class CComObjectRootEx : public CComObjectRootBase
 #### <a name="parameters"></a>매개 변수
 
 *ThreadModel*<br/>
-메서드가 필요한 스레딩 모델을 구현 하는 클래스입니다. 설정 하 여 스레딩 모델을 명시적으로 선택할 수 있습니다 *ThreadModel* 에 [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md)하십시오 [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md), 또는 [ CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md)합니다. 설정 하 여 서버의 기본 스레드 모델을 적용할 수 있습니다 *ThreadModel* 하 [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) 하거나 [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)합니다.  
+메서드가 필요한 스레딩 모델을 구현 하는 클래스입니다. 설정 하 여 스레딩 모델을 명시적으로 선택할 수 있습니다 *ThreadModel* 에 [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md)하십시오 [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md), 또는 [ CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md)합니다. 설정 하 여 서버의 기본 스레드 모델을 적용할 수 있습니다 *ThreadModel* 하 [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) 하거나 [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)합니다.
 
 ## <a name="members"></a>멤버
 
@@ -139,9 +139,9 @@ HRESULT 값 S_OK 성공 표준 오류 중 하나를 반환 합니다.
 
 - 클래스의 생성자에서 가상 함수 메커니즘을 통해 가상 함수를 호출할 수 없습니다. 상속 계층 구조에서 해당 지점에서 정의 된 대로 정적으로 확인 된 함수 호출에서 결과 클래스의 생성자에서 가상 함수를 호출 합니다. 순수 가상 함수에 대 한 호출 링커 오류가 발생합니다.
 
-     클래스 상속 계층 구조에서 가장 많이 파생 된 클래스가 아닙니다.-해당 기능의 일부를 제공 하는 ATL 제공한 파생된 클래스에 의존 합니다. 초기화 됩니다 (이것은 분명 클래스 개체를 다른 개체를 집계 하는 경우) 해당 클래스에서 제공 하는 기능을 사용 해야 하는 경우가 있지만 클래스의 생성자가 해당 기능에 액세스할 수 없습니다. 클래스에 대 한 생성 코드는 가장 많이 파생 된 클래스는 완벽 하 게 생성 하기 전에 실행 됩니다.
+   클래스 상속 계층 구조에서 가장 많이 파생 된 클래스가 아닙니다.-해당 기능의 일부를 제공 하는 ATL 제공한 파생된 클래스에 의존 합니다. 초기화 됩니다 (이것은 분명 클래스 개체를 다른 개체를 집계 하는 경우) 해당 클래스에서 제공 하는 기능을 사용 해야 하는 경우가 있지만 클래스의 생성자가 해당 기능에 액세스할 수 없습니다. 클래스에 대 한 생성 코드는 가장 많이 파생 된 클래스는 완벽 하 게 생성 하기 전에 실행 됩니다.
 
-     그러나 `FinalConstruct` 클래스가 가상 함수를 호출 하 고 ATL. 제공한 참조 횟수 구현을 사용할 수 있습니다 생성 완벽 하 게 될 가장 많이 파생 된 후 즉시 호출 됩니다
+   그러나 `FinalConstruct` 클래스가 가상 함수를 호출 하 고 ATL. 제공한 참조 횟수 구현을 사용할 수 있습니다 생성 완벽 하 게 될 가장 많이 파생 된 후 즉시 호출 됩니다
 
 ### <a name="example"></a>예제
 
@@ -265,7 +265,7 @@ long m_dwRef;
 
 ### <a name="remarks"></a>설명
 
-사용 하 여 `m_pOuterUnknown`공용 구조체의 일부인:  
+사용 하 여 `m_pOuterUnknown`공용 구조체의 일부인:
 
 ```
 union {

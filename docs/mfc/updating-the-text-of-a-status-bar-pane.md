@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8aa04fdee2b63f9d91d2bdd7dfd62100b3e32a2c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ae8b15431edbdd24a7afd6c7e25be6b9eadb4107
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393323"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081393"
 ---
 # <a name="updating-the-text-of-a-status-bar-pane"></a>상태 표시줄 창의 텍스트 업데이트
 
@@ -40,17 +40,17 @@ ms.locfileid: "46393323"
 
 1. 정의 된 창의 명령 id입니다.
 
-     에 **뷰** 메뉴에서 클릭 **리소스 뷰**합니다. 프로젝트 리소스를 마우스 오른쪽 단추로 클릭 하 고 클릭 **리소스 기호**합니다. 리소스 기호 대화 상자에서 클릭 `New`합니다. 명령 ID 이름을 입력 합니다: 예를 들어 `ID_INDICATOR_PAGE`합니다. ID에 대 한 값을 지정 하거나 리소스 기호 대화 상자에서 제안한 값을 허용 합니다. 예를 들어 `ID_INDICATOR_PAGE`, 기본값을 그대로 적용 합니다. 리소스 기호 대화 상자를 닫습니다.
+   에 **뷰** 메뉴에서 클릭 **리소스 뷰**합니다. 프로젝트 리소스를 마우스 오른쪽 단추로 클릭 하 고 클릭 **리소스 기호**합니다. 리소스 기호 대화 상자에서 클릭 `New`합니다. 명령 ID 이름을 입력 합니다: 예를 들어 `ID_INDICATOR_PAGE`합니다. ID에 대 한 값을 지정 하거나 리소스 기호 대화 상자에서 제안한 값을 허용 합니다. 예를 들어 `ID_INDICATOR_PAGE`, 기본값을 그대로 적용 합니다. 리소스 기호 대화 상자를 닫습니다.
 
 1. 창에 표시할 기본 문자열을 정의 합니다.
 
-     리소스 뷰 열기를 두 번 클릭 **문자열 테이블** 응용 프로그램에 대 한 리소스 종류를 나열 하는 창에서. 사용 하 여는 **문자열 테이블** 편집기를 열면 **새 문자열** 에서 **삽입** 메뉴. 문자열 속성 창에서 선택 창에 명령 ID (예를 들어 `ID_INDICATOR_PAGE`) "페이지"와 같은 기본 문자열 값을 입력 하 고 있습니다. 문자열 편집기를 닫습니다. (컴파일러 오류를 방지 하려면 기본 문자열을 해야 합니다.)
+   리소스 뷰 열기를 두 번 클릭 **문자열 테이블** 응용 프로그램에 대 한 리소스 종류를 나열 하는 창에서. 사용 하 여는 **문자열 테이블** 편집기를 열면 **새 문자열** 에서 **삽입** 메뉴. 문자열 속성 창에서 선택 창에 명령 ID (예를 들어 `ID_INDICATOR_PAGE`) "페이지"와 같은 기본 문자열 값을 입력 하 고 있습니다. 문자열 편집기를 닫습니다. (컴파일러 오류를 방지 하려면 기본 문자열을 해야 합니다.)
 
 1. 창을 추가 합니다 *표시기* 배열입니다.
 
-     에 해당 합니다. CPP로 찾을 합니다 *표시기* 배열입니다. 이 배열의 모든 왼쪽에서 오른쪽 순서로 상태 표시줄의 지표에 대 한 명령 Id를 나열합니다. 배열에서 적절 한 시점에 창의 명령 ID에 대 한 다음과 같은 입력 `ID_INDICATOR_PAGE`:
+   에 해당 합니다. CPP로 찾을 합니다 *표시기* 배열입니다. 이 배열의 모든 왼쪽에서 오른쪽 순서로 상태 표시줄의 지표에 대 한 명령 Id를 나열합니다. 배열에서 적절 한 시점에 창의 명령 ID에 대 한 다음과 같은 입력 `ID_INDICATOR_PAGE`:
 
-     [!code-cpp[NVC_MFCDocView#10](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_1.cpp)]
+   [!code-cpp[NVC_MFCDocView#10](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_1.cpp)]
 
 창에 텍스트를 표시 하는 권장된 방법은 호출 하는 것을 `SetText` 클래스의 멤버 함수 `CCmdUI` 창의 업데이트 처리기 함수에 있습니다. 정수 변수를 설정 하려는 하는 예를 들어 *m_nPage* 사용 하 여 확인 하 고 현재 페이지 번호를 포함 하는 `SetText` 해당 숫자의 문자열 버전으로 창의 텍스트를 설정 합니다.
 
@@ -63,19 +63,19 @@ ms.locfileid: "46393323"
 
 1. 명령에 대 한 명령 업데이트 처리기를 추가 합니다.
 
-     수동으로 처리기에 대 한 프로토타입이 다음과 같이 추가 대 한 `ID_INDICATOR_PAGE` (에 해당 합니다. H):
+   수동으로 처리기에 대 한 프로토타입이 다음과 같이 추가 대 한 `ID_INDICATOR_PAGE` (에 해당 합니다. H):
 
-     [!code-cpp[NVC_MFCDocView#11](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_2.h)]
+   [!code-cpp[NVC_MFCDocView#11](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_2.h)]
 
 1. 에 해당 합니다. CPP 파일에서 처리기의 정의 다음과 같이 추가 대 한 `ID_INDICATOR_PAGE` (에 해당 합니다. CPP):
 
-     [!code-cpp[NVC_MFCDocView#12](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_3.cpp)]
+   [!code-cpp[NVC_MFCDocView#12](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_3.cpp)]
 
-     이 처리기의 마지막 세 줄은 텍스트를 표시 하는 코드입니다.
+   이 처리기의 마지막 세 줄은 텍스트를 표시 하는 코드입니다.
 
 1. 적절 한 메시지 맵에서 ON_UPDATE_COMMAND_UI 매크로 대 한 다음과 같은 추가 `ID_INDICATOR_PAGE` (에 해당 합니다. CPP):
 
-     [!code-cpp[NVC_MFCDocView#13](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_4.cpp)]
+   [!code-cpp[NVC_MFCDocView#13](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_4.cpp)]
 
 값을 정의 하 고 나면 합니다 *m_nPage* 멤버 변수 (클래스의 `CMainFrame`),이 방법을 사용 하면 응용 프로그램 업데이트 다른 표시기는 동일한 방식으로 유휴 처리 하는 동안 창에 표시할 페이지 번호입니다. 하는 경우 *m_nPage* 변경, 다음 유휴 루프 중 변경 내용을 표시 합니다.
 

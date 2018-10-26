@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4678acbe251086f3a42e3544e155a191a5847f11
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4ebabc2d200047acec458c4a29603cc6aee5a589
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46101399"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076830"
 ---
 # <a name="ccomcriticalsection-class"></a>CComCriticalSection 클래스
 
@@ -67,7 +67,7 @@ class CComCriticalSection
 
 `CComCriticalSection` 클래스와 유사한 [CComAutoCriticalSection](../../atl/reference/ccomautocriticalsection-class.md)단, 명시적으로 초기화 하 고 중요 섹션을 해제 해야 합니다.
 
-일반적으로 사용 `CComCriticalSection` 를 통해 합니다 **typedef** 이름 [CriticalSection](ccommultithreadmodel-class.md#criticalsection)합니다. 이 이름을 참조 `CComCriticalSection` 때 [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) 사용 되 고 있습니다.  
+일반적으로 사용 `CComCriticalSection` 를 통해 합니다 **typedef** 이름 [CriticalSection](ccommultithreadmodel-class.md#criticalsection)합니다. 이 이름을 참조 `CComCriticalSection` 때 [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) 사용 되 고 있습니다.
 
 참조 [CComCritSecLock 클래스](../../atl/reference/ccomcritseclock-class.md) 호출 보다이 클래스를 사용 하는 안전한 방법을 `Lock` 고 `Unlock` 직접.
 

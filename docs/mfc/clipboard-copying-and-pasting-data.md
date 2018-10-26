@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15a03708f96f881206aa683b31c26c3c5192f8cb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8f4a3ba23fbf6e9465d78b04fcd79758c7cae525
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389061"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060236"
 ---
 # <a name="clipboard-copying-and-pasting-data"></a>클립보드: 데이터 복사 및 붙여넣기
 
@@ -56,7 +56,7 @@ ms.locfileid: "46389061"
 
 1. 호출 `COleDataObject::IsDataAvailable` 를 특정 형식으로 사용할 수 있는지 확인 합니다.
 
-     또는 사용할 수 있습니다 `COleDataObject::BeginEnumFormats` 응용 프로그램에 가장 적합 한 찾을 때까지 다른 형식에 대 한 검색할 합니다.
+   또는 사용할 수 있습니다 `COleDataObject::BeginEnumFormats` 응용 프로그램에 가장 적합 한 찾을 때까지 다른 형식에 대 한 검색할 합니다.
 
 1. 형식의 붙여넣기를 수행 합니다.
 

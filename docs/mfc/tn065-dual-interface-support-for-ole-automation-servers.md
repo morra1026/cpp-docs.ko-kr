@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 837149397ec45ebd8b41808b170b9f5e25146d6a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c079201b92b6eaf3ef372bf04ab4785598c3b2bf
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387694"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053970"
 ---
 # <a name="tn065-dual-interface-support-for-ole-automation-servers"></a>TN065: OLE 자동화 서버에 대한 이중 인터페이스 지원
 
@@ -328,7 +328,7 @@ STDMETHODIMP CAutoClickDoc::XDualAClick::put_text(BSTR newText)
     hr = MAKE_HRESULT(SEVERITY_ERROR, FACILITY_ITF, (e->m_wCode + 0x200));
     ```
 
-     이렇게는 `HRESULT` 예외를 발생 시킨 인터페이스에 특정 합니다. 오류 코드를 사용 하 여 시스템에 정의 된 모든 충돌을 피하기 위해 0x200 만큼 오프셋 됩니다 `HRESULT`표준 OLE 인터페이스에 대 한 합니다.
+   이렇게는 `HRESULT` 예외를 발생 시킨 인터페이스에 특정 합니다. 오류 코드를 사용 하 여 시스템에 정의 된 모든 충돌을 피하기 위해 0x200 만큼 오프셋 됩니다 `HRESULT`표준 OLE 인터페이스에 대 한 합니다.
 
 - [CMemoryException](../mfc/reference/cmemoryexception-class.md) -이 경우 `E_OUTOFMEMORY` 반환 됩니다.
 

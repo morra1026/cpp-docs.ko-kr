@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02323f1af8ee36d53cdd29d48989a96e61f72c60
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 15b073d361fe8dbffb7c92718f5d7522534fc7e1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46406804"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052353"
 ---
 # <a name="adding-an-mfc-odbc-consumer"></a>MFC ODBC 소비자 추가
 
@@ -31,7 +31,7 @@ MFC ODBC 소비자 데이터 원본에 액세스 하는 데 필요한 ODBC 레�
 
 1. Visual c + + 폴더를 두 번 클릭 합니다 **MFC ODBC 소비자** 아이콘 또는 선택 하 고 클릭 **오픈**합니다.
 
-     MFC ODBC 소비자 마법사가 열립니다.
+   MFC ODBC 소비자 마법사가 열립니다.
 
 1. 에 설명 된 대로 설정을 정의할 [MFC ODBC 소비자 마법사](../../mfc/reference/mfc-odbc-consumer-wizard.md)합니다.
 

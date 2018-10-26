@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67a0fd2af9bb8bf3ec11d5a4e2a38c195b18633c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7d29222b461091dcd72a0c894a138a4df15b9d4b
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424250"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057299"
 ---
 # <a name="database-macros-and-globals"></a>데이터베이스 매크로 및 전역
 
@@ -50,7 +50,6 @@ MFC 4.2에서 매크로 하기 전에 `AFX_SQL_ASYNC` 및 `AFX_SQL_SYNC` 지정�
 |-|-|
 |[AfxDbInitModule](#afxdbinitmodule)|MFC에 동적으로 연결 된 기본 MFC DLL에 대 한 데이터베이스 지원을 추가 합니다.|
 |[AfxGetHENV](#afxgethenv)|MFC에서 사용 중인 ODBC 환경 핸들을 검색합니다. 직접 ODBC 호출에서이 핸들을 사용할 수 있습니다.|
-
 
 ## <a name="afxdbinitmodule"></a> AfxDbInitModule
 
@@ -74,8 +73,6 @@ void AFXAPI AfxDbInitModule( );
 
 [매크로 및 전역](mfc-macros-and-globals.md)
 
-
-
 ##  <a name="afx_odbc_call"></a>  AFX_ODBC_CALL
 
 이 매크로 사용 하 여 반환할 수 있는 모든 ODBC API 함수를 호출 `SQL_STILL_EXECUTING`합니다.
@@ -96,7 +93,6 @@ ODBC API 함수입니다. ODBC API 함수에 대 한 자세한 내용은 Windows
 호출 하기 전에 `AFX_ODBC_CALL`, 변수를 선언 해야 `nRetCode`, RETCODE 형식의 합니다.
 
 MFC ODBC 클래스 지금 사용 하 여 동기적 처리만는 note 합니다. 비동기 작업을 수행 하려면 ODBC API 함수를 호출 해야 `SQLSetConnectOption`합니다. 자세한 내용은 "비동기적으로 함수 실행" Windows SDK의 항목을 참조 합니다.
-
 
 ### <a name="example"></a>예제
 

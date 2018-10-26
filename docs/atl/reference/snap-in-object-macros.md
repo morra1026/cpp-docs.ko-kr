@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d37c8c9d319495c3247bf98d9ed3c8f58063ae56
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f2c692f9055e0c2ca3657a6bba0d854209f786b8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46050556"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068751"
 ---
 # <a name="snap-in-object-macros"></a>스냅인 개체 매크로
 
@@ -41,7 +41,7 @@ ms.locfileid: "46050556"
 |[EXTENSION_SNAPIN_DATACLASS](#extension_snapin_dataclass)|스냅인 확장의 데이터 클래스에 대 한 데이터 멤버를 만듭니다.|
 |[EXTENSION_SNAPIN_NODEINFO_ENTRY](#extension_snapin_nodeinfo_entry)|스냅인 개체의 스냅인 확장 데이터 클래스 map에 스냅인 확장 데이터 클래스를 입력합니다.|
 |[SNAPINMENUID](#snapinmenuid)|스냅인 개체에서 사용 하는 상황에 맞는 메뉴의 ID를 선언 합니다.|
-|[SNAPINTOOLBARID_ENTRY](#snapintoolbarid_entry)|스냅인 개체의 도구 모음 지도에 도구 모음을 입력합니다.|  
+|[SNAPINTOOLBARID_ENTRY](#snapintoolbarid_entry)|스냅인 개체의 도구 모음 지도에 도구 모음을 입력합니다.|
 
 ## <a name="requirements"></a>요구 사항
 

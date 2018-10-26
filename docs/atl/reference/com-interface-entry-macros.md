@@ -28,16 +28,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa3f3356cf3fdddeeb4245986549fa1bd2e12ae7
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 16aa17ef58e8e4a7f0b8970cb229b6c914f291fe
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46085227"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080119"
 ---
-# <a name="cominterfaceentry-macros"></a>COM_INTERFACE_ENTRY 매크로  
+# <a name="cominterfaceentry-macros"></a>COM_INTERFACE_ENTRY 매크로
 
-이러한 매크로를 쿼리하면 COM 맵을 개체의 인터페이스에서 액세스할 수 있도록 입력 `QueryInterface`합니다. COM 맵에 순서가 순서 인터페이스를 확인 하는 동안 일치 하는 IID `QueryInterface`합니다.  
+이러한 매크로를 쿼리하면 COM 맵을 개체의 인터페이스에서 액세스할 수 있도록 입력 `QueryInterface`합니다. COM 맵에 순서가 순서 인터페이스를 확인 하는 동안 일치 하는 IID `QueryInterface`합니다.
 
 |||
 |-|-|
@@ -55,7 +55,7 @@ ms.locfileid: "46085227"
 |[COM_INTERFACE_ENTRY_CHAIN](#com_interface_entry_chain)|처리 하는 COM 맵에이 항목에 도달할 때 기본 클래스의 COM 맵에 처리 합니다.|
 |[COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)|ATL의에 연결 하는 일반 메커니즘 `QueryInterface` 논리입니다.|
 |[COM_INTERFACE_ENTRY_FUNC_BLIND](#com_interface_entry_func_blind)|동일 [COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)에 대 한 호출으로 인해 모든 IID에 대 한 쿼리는 점을 제외 하 고 *func*합니다.|
-|[COM_INTERFACE_ENTRY_NOINTERFACE](#com_interface_entry_nointerface)|E_NOINTERFACE가 반환 하 고에 대 한 지정된 된 인터페이스를 쿼리하면 COM 맵을 처리를 종료 합니다.|  
+|[COM_INTERFACE_ENTRY_NOINTERFACE](#com_interface_entry_nointerface)|E_NOINTERFACE가 반환 하 고에 대 한 지정된 된 인터페이스를 쿼리하면 COM 맵을 처리를 종료 합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -70,6 +70,7 @@ COM 인터페이스 맵을에 인터페이스를 입력합니다.
 ```
 COM_INTERFACE_ENTRY( x )
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *x*<br/>
@@ -88,6 +89,7 @@ BEGIN_COM_MAP(CThisExample)
    COM_INTERFACE_ENTRY(ISupportErrorInfo)
 END_COM_MAP()
 ```
+
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** atlcom.h
@@ -406,4 +408,3 @@ COM_INTERFACE_ENTRY_NOINTERFACE(x)
 
 인터페이스 IID를 추가 하 여 만들어집니다 *x* 에 `IID_`입니다. 예를 들어 경우 *x* 됩니다 `IPersistStorage`, IID 됩니다 `IID_IPersistStorage`합니다.
 
-  

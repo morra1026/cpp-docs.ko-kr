@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c777f2800d16775ccb9a6ba51baa708d861e0d68
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 8e92b52ce3b14b5ee26641186222ddc228877e71
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44313353"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057272"
 ---
 # <a name="changing-the-properties-of-a-resource-c"></a>리소스 (c + +)의 속성 변경
 
@@ -29,7 +29,7 @@ ms.locfileid: "44313353"
 
 1. [리소스 뷰](../windows/resource-view-window.md)을 편집 하 고 선택 하려는 리소스를 마우스 오른쪽 단추로 클릭 **속성** 바로 가기 메뉴에서.
 
-   > [!NOTE] 
+   > [!NOTE]
    > 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.
 
 2. 에 [속성 창](/visualstudio/ide/reference/properties-window), 리소스의 속성을 변경 합니다.

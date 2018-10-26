@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b85d157cd6124bb0ef6e6167a415c018e14b046
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cfda40e857cc05a907ce4dcdc2352d52cb9cf0b5
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040442"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075933"
 ---
 # <a name="object-map-macros"></a>개체 맵 매크로
 
@@ -31,7 +31,7 @@ ms.locfileid: "46040442"
 |-|-|
 |[DECLARE_OBJECT_DESCRIPTION](#declare_object_description)|개체 맵의 입력 클래스 개체의 텍스트 설명을 지정할 수 있습니다.|
 |[OBJECT_ENTRY_AUTO](#object_entry_auto)|개체 맵의에 ATL 개체를 입력 하 고 레지스트리를 업데이트 합니다. 개체의 인스턴스를 만듭니다.|
-|[OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](#object_entry_non_createable_ex_auto)|개체를 등록하고 초기화해야 하지만 `CoCreateInstance`를 통해 외부적으로 생성할 수 없도록 지정할 수 있습니다.|  
+|[OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](#object_entry_non_createable_ex_auto)|개체를 등록하고 초기화해야 하지만 `CoCreateInstance`를 통해 외부적으로 생성할 수 없도록 지정할 수 있습니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -54,7 +54,7 @@ DECLARE_OBJECT_DESCRIPTION( x )
 
 ATL을 통해 개체 맵에이 설명을 입력 합니다 [OBJECT_ENTRY_AUTO](#object_entry_auto) 매크로입니다.
 
-DECLARE_OBJECT_DESCRIPTION 구현 하는 `GetObjectDescription` 함수를 재정의 하는 데 사용할 수 있는 합니다 [CComCoClass::GetObjectDescription](ccomcoclass-class.md#getobjectdescription) 메서드.  
+DECLARE_OBJECT_DESCRIPTION 구현 하는 `GetObjectDescription` 함수를 재정의 하는 데 사용할 수 있는 합니다 [CComCoClass::GetObjectDescription](ccomcoclass-class.md#getobjectdescription) 메서드.
 
 합니다 `GetObjectDescription` 함수는 호출한 `IComponentRegistrar::GetComponents`합니다. `IComponentRegistrar` 등록 및 DLL의 개별 구성 요소를 등록 취소할 수 있는 자동화 인터페이스가입니다. ATL 프로젝트 마법사를 사용 하 여 구성 요소 등록자 개체를 만들 때 마법사는 자동으로 구현 된 `IComponentRegistrar` 인터페이스입니다. `IComponentRegistrar` Microsoft Transaction Server에서 주로 사용 됩니다.
 
@@ -84,7 +84,7 @@ OBJECT_ENTRY_AUTO( clsid, class )
 
 개체 항목 매크로는 클래스 등록, 초기화 및 만들기를 지원하도록 프로젝트의 전역 범위에 배치됩니다.
 
-OBJECT_ENTRY_AUTO 입력 생성자 클래스 및 클래스 팩터리 생성자 클래스의 함수 포인터 `CreateInstance` ATL 개체 자동으로 생성 된 map에이 개체에 대 한 함수입니다. 때 [CAtlComModule::RegisterServer](catlcommodule-class.md#registerserver) 는 개체 맵의 각 개체에 대 한 시스템 레지스트리 업데이트를 호출 합니다.  
+OBJECT_ENTRY_AUTO 입력 생성자 클래스 및 클래스 팩터리 생성자 클래스의 함수 포인터 `CreateInstance` ATL 개체 자동으로 생성 된 map에이 개체에 대 한 함수입니다. 때 [CAtlComModule::RegisterServer](catlcommodule-class.md#registerserver) 는 개체 맵의 각 개체에 대 한 시스템 레지스트리 업데이트를 호출 합니다.
 
 아래 표에이 매크로에 두 번째 매개 변수로 제공 하는 클래스의 개체 맵에 추가 정보는 가져온 하는 방법을 설명 합니다.
 
@@ -94,7 +94,7 @@ OBJECT_ENTRY_AUTO 입력 생성자 클래스 및 클래스 팩터리 생성자 �
 |클래스 팩터리 만들기|[클래스 팩터리 매크로](../../atl/reference/aggregation-and-class-factory-macros.md)|
 |인스턴스 만들기|[집계 매크로](../../atl/reference/aggregation-and-class-factory-macros.md)|
 |구성 요소 범주 등록|[범주 매크로](../../atl/reference/category-macros.md)|
-|클래스 수준 초기화 및 정리|[ObjectMain](ccomobjectrootex-class.md#objectmain)|  
+|클래스 수준 초기화 및 정리|[ObjectMain](ccomobjectrootex-class.md#objectmain)|
 
 ##  <a name="object_entry_non_createable_ex_auto"></a>  OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO
 

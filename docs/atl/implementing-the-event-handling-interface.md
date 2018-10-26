@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2241080fda6aa58dc5e70f57c83afec69a57203
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 57e685ea9ac4b1efc76f7657421d825b83f4a9b7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757340"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078624"
 ---
 # <a name="implementing-the-event-handling-interface"></a>이벤트 처리 인터페이스 구현
 
@@ -37,7 +37,7 @@ ATL을 사용 하 여 인터페이스를 구현 하는 가장 일반적인 방�
 
 - 파생 [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) 런타임에 형식 정보를 로드 하 여 효율성을 개선 하려는 경우 또는 형식 라이브러리에 설명 되지 않은 dispinterface에 대 한 합니다.
 
-호출 하 여 이벤트 소스를 권장 해야 사용자 지정 또는 이중 인터페이스를 구현 하는 경우 [AtlAdvise](reference/connection-point-global-functions.md#atladvise) 하거나 [CComPtrBase::Advise](../atl/reference/ccomptrbase-class.md#advise)합니다. 호출에서 반환 된 쿠키를 추적 해야 합니다. 호출 [AtlUnadvise](reference/connection-point-global-functions.md#atlunadvise) 연결을 끊습니다.  
+호출 하 여 이벤트 소스를 권장 해야 사용자 지정 또는 이중 인터페이스를 구현 하는 경우 [AtlAdvise](reference/connection-point-global-functions.md#atladvise) 하거나 [CComPtrBase::Advise](../atl/reference/ccomptrbase-class.md#advise)합니다. 호출에서 반환 된 쿠키를 추적 해야 합니다. 호출 [AtlUnadvise](reference/connection-point-global-functions.md#atlunadvise) 연결을 끊습니다.
 
 사용 하 여 dispinterface를 구현 하는 경우 `IDispEventImpl` 또는 `IDispEventSimpleImpl`를 호출 하 여 이벤트 소스를 권장 해야 [IDispEventSimpleImpl::DispEventAdvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventadvise)합니다. 호출 [IDispEventSimpleImpl::DispEventUnadvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventunadvise) 연결을 끊습니다.
 
@@ -48,4 +48,3 @@ ATL을 사용 하 여 인터페이스를 구현 하는 가장 일반적인 방�
 ## <a name="see-also"></a>참고 항목
 
 [이벤트 처리](../atl/event-handling-and-atl.md)
-

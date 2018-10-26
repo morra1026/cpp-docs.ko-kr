@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8499fd02e9338d518eae9c3f7ea4d4cb077fedb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4aebb9ab084bafa80f212a29969dce27a6ae6c5d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403607"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059690"
 ---
 # <a name="structures-styles-callbacks-and-message-maps"></a>구조체, 스타일, 콜백 및 메시지 맵
 
@@ -51,6 +51,4 @@ MFC 라이브러리에 나타나는 콜백 함수에 대한 링크를 제공합�
 
 [MFC 샘플](../../visual-cpp-samples.md)<br/>
 MFC 라이브러리를 사용하는 방법을 보여 주는 샘플에 대한 링크를 제공합니다.
-
-
 

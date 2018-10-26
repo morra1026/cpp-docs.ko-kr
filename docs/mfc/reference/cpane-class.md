@@ -143,12 +143,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 629e10d06a59b926604fad3b3a6e191fefcb71e7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1a32625001ae86f4d6dffa7eeb953c538822d207
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46384509"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080223"
 ---
 # <a name="cpane-class"></a>CPane Class
 
@@ -190,7 +190,7 @@ class CPane : public CBasePane
 |[CPane::DockByMouse](#dockbymouse)|메서드를 도킹 마우스를 사용 하 여 창을 도킹 합니다.|
 |[CPane::DockPane](#dockpane)|부동 창의 기본 창으로 도킹합니다.|
 |[CPane::DockPaneStandard](#dockpanestandard)|개요 (표준) 도킹을 사용 하 여 창을 도킹 합니다.|
-|[CPane::DockToFrameWindow](#docktoframewindow)|도킹 가능한 창 프레임으로 도킹합니다. (`CBasePane::DockToFrameWindow`를 재정의합니다.)|
+|[CPane::DockToFrameWindow](#docktoframewindow)|도킹 가능한 창 프레임으로 도킹합니다. ( `CBasePane::DockToFrameWindow`을 재정의합니다.)|
 |[CPane::DoesAllowSiblingBars](#doesallowsiblingbars)|현재 창 도킹 될 위치 같은 행에 있는 다른 창에 도킹할 수 있는지 여부를 나타냅니다.|
 |[CPane::FloatPane](#floatpane)|창을 부동 합니다.|
 |[CPane::GetAvailableExpandSize](#getavailableexpandsize)|확장 창에 있는 픽셀 양을 반환 합니다.|
@@ -207,7 +207,7 @@ class CPane : public CBasePane
 |[CPane::GetVirtualRect](#getvirtualrect)|검색 된 *가상 사각형* 창입니다.|
 |[CPane::IsChangeState](#ischangestate)|창에는이 메서드는 다른 창 기준으로 창의 위치를 분석 이동 하는 행 및 미니 프레임 창을 도킹 하 고 적절 한 AFX_CS_STATUS 값을 반환 합니다.|
 |[CPane::IsDragMode](#isdragmode)|창에 끌어 놓는 여부를 지정 합니다.|
-|[CPane::IsInFloatingMultiPaneFrameWnd](#isinfloatingmultipaneframewnd)|다중 창 프레임 창의 창이 되는지를 지정 합니다. (`CBasePane::IsInFloatingMultiPaneFrameWnd`를 재정의합니다.)|
+|[CPane::IsInFloatingMultiPaneFrameWnd](#isinfloatingmultipaneframewnd)|다중 창 프레임 창의 창이 되는지를 지정 합니다. ( `CBasePane::IsInFloatingMultiPaneFrameWnd`을 재정의합니다.)|
 |[CPane::IsLeftOf](#isleftof)|창 왼쪽의 (또는 위에서) 결정 지정된 된 사각형입니다.|
 |[CPane::IsResizable](#isresizable)|창 크기를 조정할 수 있는지 여부를 결정 합니다. (재정의 [cbasepane:: Isresizable](../../mfc/reference/cbasepane-class.md#isresizable).)|
 |[CPane::IsTabbed](#istabbed)|창 탭 창의 탭 컨트롤에 삽입 된 여부를 결정 합니다. (재정의 [CBasePane::IsTabbed](../../mfc/reference/cbasepane-class.md#istabbed).)|
@@ -500,7 +500,8 @@ virtual BOOL Create(
 *rect*<br/>
 [in] 초기 크기와 위치를 지정 합니다 *pParentWnd* 창의 클라이언트 좌표입니다.
 
-[in] [out] *pParentWnd* 이 창의 부모 기간을 지정 합니다.
+*pParentWnd*<br/>
+[out에서] 이 창의 부모 창을 지정합니다.
 
 *nID*<br/>
 [in] 창의 ID를 지정합니다.
@@ -508,7 +509,8 @@ virtual BOOL Create(
 *dwControlBarStyle*<br/>
 [in] 창 스타일을 지정합니다. 자세한 내용은 [cbasepane:: Createex](../../mfc/reference/cbasepane-class.md#createex)합니다.
 
-[in] [out] *pContext* 창의 만들기 컨텍스트를 지정 합니다.
+*pContext*<br/>
+[out에서] 창 만들기 컨텍스트를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -573,7 +575,8 @@ virtual BOOL CreateEx(
 *rect*<br/>
 [in] 초기 크기와 위치를 지정 합니다 *pParentWnd* 창의 클라이언트 좌표입니다.
 
-[in] [out] *pParentWnd* 이 창의 부모 기간을 지정 합니다.
+*pParentWnd*<br/>
+[out에서] 이 창의 부모 창을 지정합니다.
 
 *nID*<br/>
 [in] 창의 ID를 지정합니다.
@@ -581,7 +584,8 @@ virtual BOOL CreateEx(
 *dwControlBarStyle*<br/>
 [in] 창 스타일을 지정합니다. 자세한 내용은 [cbasepane:: Createex](../../mfc/reference/cbasepane-class.md#createex)합니다.
 
-[in] [out] *pContext* 창의 만들기 컨텍스트를 지정 합니다.
+*pContext*<br/>
+[out에서] 창 만들기 컨텍스트를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -623,7 +627,8 @@ virtual BOOL DockPane(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] [out] *pDockBar* 의 기본 창이이 창의 도킹을 지정 합니다.
+*pDockBar*<br/>
+[out에서] 기본 창이이 창의 도킹을 지정 합니다.
 
 *lpRect*<br/>
 [in] 이 창을 도킹할 수 인 기본 창에서 사각형을 지정 합니다.
@@ -1161,7 +1166,8 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] [out] *pWndOldParent* 창을 이전 부모입니다.
+*pWndOldParent*<br/>
+[out에서] 창의 이전 부모 창입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1213,7 +1219,8 @@ virtual void OnBeforeChangeParent(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] [out] *pWndNewParent* 새 부모 기간을 지정 합니다.
+*pWndNewParent*<br/>
+[out에서] 새 부모 창을 지정합니다.
 
 *bDelay*<br/>
 [in] 전역 도킹 레이아웃 조정; 지연 하려면 TRUE 그렇지 않으면 FALSE입니다.
@@ -1237,7 +1244,8 @@ virtual BOOL OnBeforeDock(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] [out] *ppDockBar* 이 창에 도킹 되는 창 지정 합니다.
+*ppDockBar*<br/>
+[out에서] 이 창에 도킹 되는 창을 지정 합니다.
 
 *lpRect*<br/>
 [in] 도킹 사각형을 지정합니다.
@@ -1518,7 +1526,8 @@ void SetMiniFrameRTC(CRuntimeClass* pClass);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] [out] *pClass* 미니 프레임 창에 대 한 런타임 클래스 정보를 지정 합니다.
+*pClass*<br/>
+[out에서] 미니 프레임 창에 대 한 런타임 클래스 정보를 지정합니다.
 
 ### <a name="remarks"></a>설명
 

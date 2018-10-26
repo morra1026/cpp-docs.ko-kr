@@ -47,12 +47,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 564ff010756a2afa9210fc71dd47fce2b72dcbca
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1223de9791ea5c47c7ef3cf9ee5b490c5238fec3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46075724"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078526"
 ---
 # <a name="catlmap-class"></a>CAtlMap 클래스
 
@@ -62,8 +62,8 @@ ms.locfileid: "46075724"
 
 ```
 template <typename K,
-          typename V, 
-          class KTraits = CElementTraits<K>, 
+          typename V,
+          class KTraits = CElementTraits<K>,
           class VTraits = CElementTraits<V>>
 class CAtlMap
 ```
@@ -97,7 +97,7 @@ Key 요소 형식입니다.
 
 |이름|설명|
 |----------|-----------------|
-|[CAtlMap::CPair 클래스](#cpair_class)|키 및 값 요소를 포함 하는 클래스입니다.|  
+|[CAtlMap::CPair 클래스](#cpair_class)|키 및 값 요소를 포함 하는 클래스입니다.|
 
 ### <a name="cpair-data-members"></a>CPair 데이터 멤버
 
@@ -145,7 +145,7 @@ Key 요소 형식입니다.
 
 |이름|설명|
 |----------|-----------------|
-|[CAtlMap::operator\[\]](catlmap-class.md#operator_at)|새 요소를 추가 하거나이 대체 합니다 `CAtlMap`합니다.|  
+|[CAtlMap::operator\[\]](catlmap-class.md#operator_at)|새 요소를 추가 하거나이 대체 합니다 `CAtlMap`합니다.|
 
 ## <a name="remarks"></a>설명
 

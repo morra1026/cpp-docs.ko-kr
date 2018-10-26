@@ -124,19 +124,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 664894fb99f02168d06cfc5d82b4225defe7fe38
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 46b7f613cdb67fa446c878ceda7dd9eca6eec7e3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422228"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082582"
 ---
 # <a name="cmfcribbonpanel-class"></a>CMFCRibbonPanel 클래스
 
 리본 요소 집합이 포함된 패널을 구현합니다. 패널을 그리면 지정된 패널 크기에 가능한 한 많은 요소를 표시합니다.
 
 자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
-
 
 ## <a name="syntax"></a>구문
 
@@ -540,7 +539,6 @@ LPCTSTR GetName() const;
 
 ##  <a name="getparentbutton"></a>  CMFCRibbonPanel::GetParentButton
 
-
 ```
 CMFCRibbonBaseElement* GetParentButton() const;
 ```
@@ -562,7 +560,6 @@ CMFCRibbonCategory* GetParentCategory() const;
 이 리본 패널에 있는 리본 범주에 대 한 포인터입니다.
 
 ##  <a name="getparentmenubar"></a>  CMFCRibbonPanel::GetParentMenuBar
-
 
 ```
 CMFCRibbonPanelMenuBar* GetParentMenuBar() const;
@@ -830,7 +827,6 @@ virtual BOOL IsMainPanel() const;
 
 ##  <a name="ismenumode"></a>  CMFCRibbonPanel::IsMenuMode
 
-
 ```
 BOOL IsMenuMode() const;
 ```
@@ -841,14 +837,13 @@ BOOL IsMenuMode() const;
 
 ##  <a name="onkey"></a>  CMFCRibbonPanel::OnKey
 
-
 ```
 virtual BOOL OnKey(UINT nChar);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *nChar*
+[in] *nChar*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -929,7 +924,8 @@ CMFCRibbonBaseElement* pElem);
 *nIndex*<br/>
 [in] 바꿀 요소의 인덱스를 지정 합니다.
 
-[in] [out] *pElem* 원래 요소를 대체 하는 요소에 대 한 유효한 포인터입니다.
+*pElem*<br/>
+[out에서] Original 요소를 대체 하는 요소에 유효한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -954,7 +950,8 @@ CMFCRibbonBaseElement* pElem);
 *uiCmdID*<br/>
 [in] 바꿀 요소의 명령 ID를 지정 합니다.
 
-[in] [out] *pElem* 원래 요소를 대체 하는 요소에 대 한 유효한 포인터입니다.
+*pElem*<br/>
+[out에서] Original 요소를 대체 하는 요소에 유효한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1007,7 +1004,6 @@ HMENU hMenu,
 BOOL bIsDefautCommand = FALSE,
 BOOL bRightAlign = FALSE);
 
-
 BOOL SetElementMenu(
 UINT uiCmdID,
 UINT uiMenuResID,
@@ -1055,7 +1051,8 @@ CRuntimeClass* pRTC);
 *nIndex*<br/>
 [in] 추가할 리본 요소의 0부터 시작 인덱스를 지정 합니다.
 
-[in] [out] *pRTC* 리본 패널에 추가 되는 리본 요소에 대 한 런타임 클래스 정보에 대 한 포인터입니다.
+*pRTC*<br/>
+[out에서] 리본 패널에 추가 되는 리본 요소에 대 한 런타임 클래스 정보에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1080,7 +1077,8 @@ CRuntimeClass* pRTC);
 *uiCmdID*<br/>
 [in] 추가할 리본 요소의 명령 ID를 지정 합니다.
 
-[in] [out] *pRTC* 리본 패널에 추가 되는 리본 요소에 연결 된 런타임 클래스 정보에 대 한 포인터입니다.
+*pRTC*<br/>
+[out에서] 리본 패널에 추가 되는 리본 요소에 연결 된 런타임 클래스 정보에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1106,7 +1104,6 @@ CMFCRibbonColorButton* pColorButton =
 (CMFCRibbonColorButton*)pPanel->SetElementRTCByID(
 ID_CHAR_COLOR,
     RUNTIME_CLASS (CMFCRibbonColorButton));
-
 
 // SetElementRTCByID sets runtime class and returns a pointer
 // to the newly created custom button,

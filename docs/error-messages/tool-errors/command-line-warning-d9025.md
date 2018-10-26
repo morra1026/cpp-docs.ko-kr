@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 822d1ac0cc1e6b3e728d43b816e7a0a15eee9958
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c5bcc7cbe6fcd8a61e15e80c43f27703957a1e88
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46063699"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083089"
 ---
 # <a name="command-line-warning-d9025"></a>명령줄 경고 D9025
 
@@ -35,6 +35,6 @@ ms.locfileid: "46063699"
 
 - 코드 또는 프로젝트의 프로젝트 설정에서 옵션을 지정할 수 있습니다. 컴파일러의 살펴보면 [명령줄 속성 페이지](../../ide/command-line-property-pages.md) 충돌 하는 옵션을 표시 하는 경우를 **옵션을 모두** 옵션이 고, 그렇지 프로젝트의 속성 페이지에서 옵션 설정 되어 다음 필드 소스 코드에서 설정 됩니다.
 
-     프로젝트의 속성 페이지에서 옵션을 설정 (솔루션 탐색기에서 선택한 프로젝트 노드)와 컴파일러의 전처리기 속성 페이지에서 확인 합니다.  여기서 설정, 솔루션 탐색기에서 각 소스 코드 파일에 대 한 전처리기 속성 페이지 설정 되었는지 확인 하는 옵션을 표시 되지 않으면 있습니다 추가 되지 않습니다.
+   프로젝트의 속성 페이지에서 옵션을 설정 (솔루션 탐색기에서 선택한 프로젝트 노드)와 컴파일러의 전처리기 속성 페이지에서 확인 합니다.  여기서 설정, 솔루션 탐색기에서 각 소스 코드 파일에 대 한 전처리기 속성 페이지 설정 되었는지 확인 하는 옵션을 표시 되지 않으면 있습니다 추가 되지 않습니다.
 
-     옵션은 코드에서 설정 된 경우 코드에서 또는 windows 헤더에서 설정할 수 있습니다.  전처리 된 파일을 만들어 볼 수 있습니다 ([/P](../../build/reference/p-preprocess-to-a-file.md)) 기호에 대 한 검색 합니다.
+   옵션은 코드에서 설정 된 경우 코드에서 또는 windows 헤더에서 설정할 수 있습니다.  전처리 된 파일을 만들어 볼 수 있습니다 ([/P](../../build/reference/p-preprocess-to-a-file.md)) 기호에 대 한 검색 합니다.

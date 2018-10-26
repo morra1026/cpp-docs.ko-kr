@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c08387d5c1a2a9b9b757bab7a8112783a3810065
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4c16337949340b03bbaa517ca98ac9b65a5bb2bb
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097798"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053932"
 ---
 # <a name="catlarray-class"></a>CAtlArray 클래스
 
@@ -90,7 +90,7 @@ class CAtlArray
 
 |||
 |-|-|
-|[연산자&#91;&#93;](#operator_at)|배열의 요소에 대 한 참조를 반환 하도록이 연산자를 호출 합니다.|  
+|[연산자&#91;&#93;](#operator_at)|배열의 요소에 대 한 참조를 반환 하도록이 연산자를 호출 합니다.|
 
 ### <a name="typedefs"></a>형식 정의
 

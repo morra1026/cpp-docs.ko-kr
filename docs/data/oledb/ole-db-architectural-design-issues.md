@@ -15,17 +15,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a79cc4dfa36170293a8832571ba3348d6e2c8865
-ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
+ms.openlocfilehash: 0a0fc54c002511b9c091acc5d5e3fbe4636ad933
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49990025"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50072241"
 ---
 # <a name="ole-db-architectural-design-issues"></a>OLE DB 아키텍처 설계 문제
 
-OLE DB 응용 프로그램을 시작 하기 전에 다음 사항을 고려 하십시오.  
-  
+OLE DB 응용 프로그램을 시작 하기 전에 다음 사항을 고려 하십시오.
+
 ## <a name="what-programming-implementation-will-you-use-to-write-your-ole-db-application"></a>OLE DB 응용 프로그램을 작성 하는 프로그래밍 구현을 사용할 것인가?
 
 Microsoft는이 작업을 수행 하는 몇 가지 라이브러리를 제공 합니다: OLE DB 템플릿 라이브러리를, OLE DB 특성 및 OLE DB SDK에서 원시 OLE DB 인터페이스입니다. 또한 마법사가 프로그램을 작성 하는 데 도움이 되도록 합니다. 이러한 구현에 설명 되어 있습니다 [OLE DB 템플릿, 특성 및 기타 구현](../../data/oledb/ole-db-templates-attributes-and-other-implementations.md)합니다.

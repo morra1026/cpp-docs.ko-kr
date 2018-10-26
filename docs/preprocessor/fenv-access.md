@@ -18,23 +18,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eeb138a8b2598c209005031a3ccd3104fead48dc
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 3c06556d47bf0c471aa7e4fab610971e2b7ad11e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42541781"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081471"
 ---
 # <a name="fenvaccess"></a>fenv_access
 사용 하지 않도록 설정 (**온**)을 선택 하거나 (**해제**) 부동 소수점 환경을 변경할 수 있는 최적화 플래그 테스트 및 모드 변경 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **#pragma fenv_access (** {0} **온** | **해제** } **)**  
+> **#pragma fenv_access (** {0} **온** | **해제** } **)**
 
 ## <a name="remarks"></a>설명
 
-기본적으로 **fenv_access** 됩니다 **해제**합니다. 컴파일러 가정할 수 있습니다 코드에 액세스 하지 않거나 부동 소수점 환경을 조작할 경우 여러 부동 소수점 코드 최적화를 수행할 수 있습니다. 설정 **fenv_access** 하 **에서** 하는 코드에서 액세스 하는 부동 소수점 환경을 예외 상태 플래그를 테스트 하거나 제어 모드 플래그를 설정 하려면 컴파일러에 알립니다. 컴파일러는 코드는 부동 소수점 환경의 일관 되 게 액세스할 수 있도록 이러한 최적화를 해제 합니다. 
+기본적으로 **fenv_access** 됩니다 **해제**합니다. 컴파일러 가정할 수 있습니다 코드에 액세스 하지 않거나 부동 소수점 환경을 조작할 경우 여러 부동 소수점 코드 최적화를 수행할 수 있습니다. 설정 **fenv_access** 하 **에서** 하는 코드에서 액세스 하는 부동 소수점 환경을 예외 상태 플래그를 테스트 하거나 제어 모드 플래그를 설정 하려면 컴파일러에 알립니다. 컴파일러는 코드는 부동 소수점 환경의 일관 되 게 액세스할 수 있도록 이러한 최적화를 해제 합니다.
 
 부동 소수점 동작에 대 한 자세한 내용은 참조 하세요. [/fp (부동 소수점 동작 지정)](../build/reference/fp-specify-floating-point-behavior.md)합니다.
 

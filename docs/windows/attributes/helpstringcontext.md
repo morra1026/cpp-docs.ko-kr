@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e6d42dc242a2818f677f8f486b2c7db50125854c
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 00b0e7824de3c6977bd641e7016e3efc5acdcfa1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791289"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067374"
 ---
 # <a name="helpstringcontext"></a>helpstringcontext
 
@@ -70,7 +70,7 @@ __interface IMyI
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
@@ -78,4 +78,4 @@ __interface IMyI
 [인터페이스 특성](interface-attributes.md)<br/>
 [클래스 특성](class-attributes.md)<br/>
 [메서드 특성](method-attributes.md)<br/>
-[모듈](module-cpp.md)  
+[module](module-cpp.md)

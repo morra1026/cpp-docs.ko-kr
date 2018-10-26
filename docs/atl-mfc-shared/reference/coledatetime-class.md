@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92761508a5e93c7ef0d0a4099dde587987a50dad
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: b4490eef3427f66456ec79ae2f5429d309a82a54
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49809163"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057403"
 ---
 # <a name="coledatetime-class"></a>COleDateTime 클래스
 
@@ -228,10 +228,10 @@ A `SYSTEMTIME` 날짜/시간 값으로 변환 되어 새 복사 구조 `COleDate
 *filetimeSrc*<br/>
 A `FILETIME` 날짜/시간 값으로 변환 되어 새 복사 구조 `COleDateTime` 개체입니다. `FILETIME` 협정 세계시 (UTC)를 사용 하 여 될 수 있으므로 구조의 현지 시간을 전달 하는 경우 결과 올바른 합니다. 참조 [파일 시간](/windows/desktop/SysInfo/file-times) 자세한 내용은 Windows SDK에 있습니다.
 
-*nYear*, *nMonth*합니다 *발생 한 날짜*를 *n 시간*를 *nMin*, *nSec*  
+*nYear*, *nMonth*합니다 *발생 한 날짜*를 *n 시간*를 *nMin*, *nSec*<br/>
 복사할 새 날짜 및 시간 값을 나타내며 `COleDateTime` 개체입니다.
 
-*wDosDate*, *wDosTime*  
+*wDosDate*, *wDosTime*<br/>
 MS-DOS 날짜 및 시간 값을 날짜/시간 값으로 변환 되어 새 복사 `COleDateTime` 개체입니다.
 
 *dbts*<br/>
@@ -333,13 +333,13 @@ CString Format(UINT nFormatID) const;
 
 이 함수에 대 한 세 가지 형식에 대 한 간단한 설명은 다음과 같습니다.
 
-`Format`( *dwFlags*하십시오 *lcid*)  
+`Format`( *dwFlags*하십시오 *lcid*)<br/>
 이 양식을 언어 사양 (로캘 Id)를 사용 하 여 날짜 및 시간에 대 한 값의 형식을 지정 합니다. 기본 매개 변수를 사용 하 여이 폼 인쇄 됩니다 날짜 및 시간을 아니면 시간 부분은 0 (자정),이 경우 날짜만, 인쇄, 날짜 부분은 0 (30 1899 년 12 월)의 경우에 출력 됩니다. 날짜 및 시간 값을 0 (30 1899 년 12 월 자정) 인 경우 기본 매개 변수를 사용 하 여이 양식을 자정을 인쇄 됩니다.
 
-`Format`( *lpszFormat*)  
+`Format`( *lpszFormat*)<br/>
 이 폼에서와 같이 백분율 기호 (%) 뒤에 나오는 특별 한 서식 지정 코드를 포함 하는 형식 문자열을 사용 하 여 값 형식을 `printf`합니다. 서식 문자열은 함수에 매개 변수로 전달 됩니다. 서식 지정 코드에 대 한 자세한 내용은 참조 하세요. [strftime, wcsftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) 런타임 라이브러리 참조에서 합니다.
 
-`Format`( *nFormatID*)  
+`Format`( *nFormatID*)<br/>
 이 폼에서와 같이 백분율 기호 (%) 뒤에 나오는 특별 한 서식 지정 코드를 포함 하는 형식 문자열을 사용 하 여 값 형식을 `printf`합니다. 서식 문자열 리소스입니다. 이 문자열 리소스의 ID 매개 변수로 전달 됩니다. 서식 지정 코드에 대 한 자세한 내용은 참조 하세요. [strftime, wcsftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) 에 *런타임 라이브러리 참조*합니다.
 
 ### <a name="example"></a>예제
@@ -701,13 +701,13 @@ DateTimeStatus GetStatus() const throw();
 반환 값으로 정의 됩니다는 `DateTimeStatus` 내에 정의 된 형식 열거는 `COleDateTime` 클래스.
 
 ```
-enum DateTimeStatus  
-{  
-   error = -1,  
-   valid = 0,  
-   invalid = 1,    // Invalid date (out of range, etc.)  
-   null = 2,       // Literally has no value  
-};  
+enum DateTimeStatus
+{
+   error = -1,
+   valid = 0,
+   invalid = 1,    // Invalid date (out of range, etc.)
+   null = 2,       // Literally has no value
+};
 ```
 
 이러한 상태 값의 간략 한 설명을 다음 목록을 참조 합니다.
@@ -930,10 +930,10 @@ operator DATE() const throw();
 날짜/시간 값을 읽을 문자열을 구문 분석 합니다.
 
 ```
-bool ParseDateTime(  
-LPCTSTR lpszDate,
-DWORD dwFlags = 0,
-LCID lcid = LANG_USER_DEFAULT) throw();
+bool ParseDateTime(
+    LPCTSTR lpszDate,
+    DWORD dwFlags = 0,
+    LCID lcid = LANG_USER_DEFAULT) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -991,15 +991,15 @@ VAR_DATEVALUEONLY의 경우 시간 값은 0 또는 자정 시간으로 설정 �
 이 날짜 설정 `COleDateTime` 개체입니다.
 
 ```
-int SetDate(  
-int nYear,
-int nMonth,
-int nDay) throw();
+int SetDate(
+    int nYear,
+    int nMonth,
+    int nDay) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*nYear*하십시오 *nMonth*, *발생 한 날짜*  
+*nYear*하십시오 *nMonth*, *발생 한 날짜*<br/>
 이에 복사할 날짜 구성 요소를 나타내는 `COleDateTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1062,18 +1062,18 @@ int nDay) throw();
 이의 시간과 날짜를 설정 `COleDateTime` 개체입니다.
 
 ```
-int SetDateTime(  
-int nYear,
-int nMonth,
-int nDay,
-int nHour,
-int nMin,
-int nSec) throw();
+int SetDateTime(
+    int nYear,
+    int nMonth,
+    int nDay,
+    int nHour,
+    int nMin,
+    int nSec) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*nYear*, *nMonth*합니다 *발생 한 날짜*를 *n 시간*를 *nMin*, *nSec*  
+*nYear*, *nMonth*합니다 *발생 한 날짜*를 *n 시간*를 *nMin*, *nSec*<br/>
 이에 복사 될 날짜 및 시간 구성 요소를 나타내는 `COleDateTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1170,15 +1170,15 @@ void SetStatus(DateTimeStatus status) throw();
 이 시간을 설정 `COleDateTime` 개체입니다.
 
 ```
-int SetTime(  
-int nHour,
-int nMin,
-int nSec) throw();
+int SetTime(
+    int nHour,
+    int nMin,
+    int nSec) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*n 시간*하십시오 *nMin*, *nSec*  
+*n 시간*하십시오 *nMin*, *nSec*<br/>
 이에 복사 될 시간 구성 요소를 나타내는 `COleDateTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값

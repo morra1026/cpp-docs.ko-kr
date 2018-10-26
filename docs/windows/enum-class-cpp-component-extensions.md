@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7b85807b9e9dd0cec63def8ffc4a9aa69056f270
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 7c63a043b8f1a91654c0b765632969b82725a3c0
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328144"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066164"
 ---
 # <a name="enum-class--ccli-and-ccx"></a>enum 클래스 (C + + /cli 및 C + + /cli CX)
 
@@ -175,7 +175,7 @@ void f(int32);
 그러나 현재 버전의 컴파일러에서는 표준 열거형이 [NativeEnumAttribute] 및 함수 서명에 대해 MSIL에서 다음을 사용하여 관리되는 열거형으로 내보내집니다.
 
 ```cpp
-void f(E)  
+void f(E)
 ```
 
 네이티브 열거형에 대한 자세한 내용은 [C++ Enumeration Declarations](../cpp/enumerations-cpp.md)를 참조하십시오.
@@ -202,7 +202,7 @@ public enum n { c, d };
 // unnamed, standard enum
 public enum { e, f } o;
 
-int main()  
+int main()
 {
    // consume managed enum
    m mym = m::b;
@@ -231,4 +231,4 @@ convert to int: 1
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

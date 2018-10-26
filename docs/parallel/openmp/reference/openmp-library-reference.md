@@ -1,7 +1,7 @@
 ---
 title: OpenMP 라이브러리 참조 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/24/2018
 ms.technology:
 - cpp-parallel
 ms.topic: reference
@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3812f698f034b5610f90c57b94b56f0b8648417
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ce6c10802f470e3416d0db9aca5b66db9064ade3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403803"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057012"
 ---
 # <a name="openmp-library-reference"></a>OpenMP 라이브러리 참조
 
@@ -27,11 +27,11 @@ OpenMP 표준의 Visual c + + 구현에는 다음과 같은 구문이 포함 됩
 
 |구문|설명|
 |---------------|-----------------|
-|[라이브러리](../../../parallel/openmp/reference/openmp-libraries.md)|Visual c + +의 OpenMP 런타임 라이브러리를 구성 하는.lib 파일에 설명 합니다.|
-|[데이터 형식](../../../parallel/openmp/reference/openmp-data-types.md)|OpenMP API에서 사용 되는 데이터 형식에 대 한 링크를 제공 합니다.|
-|[환경 변수](../../../parallel/openmp/reference/openmp-environment-variables.md)|OpenMP API에서 사용 되는 환경 변수를 제공 합니다.|
-|[함수](../../../parallel/openmp/reference/openmp-functions.md)|OpenMP API에서 사용 되는 함수에 대 한 링크를 제공 합니다.|
+|[라이브러리](openmp-libraries.md)|Visual c + +의 OpenMP 런타임 라이브러리를 구성 하는.lib 파일에 설명 합니다.|
+|[데이터 형식](openmp-data-types.md)|OpenMP API에서 사용 되는 데이터 형식에 대 한 링크를 제공 합니다.|
+|[환경 변수](openmp-environment-variables.md)|OpenMP API에서 사용 되는 환경 변수를 제공 합니다.|
+|[함수](openmp-functions.md)|OpenMP API에서 사용 되는 함수에 대 한 링크를 제공 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OpenMP](../../../parallel/openmp/openmp-in-visual-cpp.md)

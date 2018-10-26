@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c4acd417dacadbe2667f63c70435b97353bafe1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4d5db33dda6abc141c9247c74c16624bef5f0fc8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46384418"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076037"
 ---
 # <a name="mfc-activex-controls-adding-custom-events"></a>MFC ActiveX 컨트롤: 사용자 지정 이벤트 추가
 
@@ -48,7 +48,7 @@ ms.locfileid: "46384418"
 
 1. 바로 가기 메뉴에서 클릭 **추가** 을 클릭 한 다음 **이벤트 추가**합니다.
 
-     이 이벤트 추가 마법사를 엽니다.
+   이 이벤트 추가 마법사를 엽니다.
 
 1. 에 **이벤트 이름** 상자, 먼저 모든 기존 이벤트를 선택한 다음 클릭 합니다 **사용자 지정** 라디오 단추를 선택한 다음 입력 *ClickIn*합니다.
 
@@ -94,7 +94,7 @@ ms.locfileid: "46384418"
 
 1. 속성 창에서 클릭 합니다 **메시지** 단추입니다.
 
-     속성 창에는 ActiveX 컨트롤에서 처리할 수 있는 메시지의 목록을 표시 합니다. 이미 굵게 표시 된 모든 메시지에 할당 된 처리기 함수를 포함 합니다.
+   속성 창에는 ActiveX 컨트롤에서 처리할 수 있는 메시지의 목록을 표시 합니다. 이미 굵게 표시 된 모든 메시지에 할당 된 처리기 함수를 포함 합니다.
 
 1. 속성 창에서 처리 하려는 메시지를 선택 합니다. 예를 들어 WM_LBUTTONDOWN를 선택 합니다.
 
@@ -131,7 +131,7 @@ ms.locfileid: "46384418"
 
 1. 바로 가기 메뉴에서 클릭 **추가** 을 클릭 한 다음 **이벤트 추가**합니다.
 
-     이 이벤트 추가 마법사를 엽니다.
+   이 이벤트 추가 마법사를 엽니다.
 
 1. 에 **이벤트 이름** 드롭 다운 목록에서 스톡 이벤트 이름을 선택 합니다. 예를 들어 선택 **클릭**합니다.
 

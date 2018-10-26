@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 5161e23d17283ba1495baf6fcb201943f8b6ae12
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2af0148c386bc3b1ea8db60fdf84d080c38af857
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422417"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080691"
 ---
 # <a name="how-to-add-command-routing-to-the-windows-forms-control"></a>방법: Windows Forms 컨트롤에 명령 라우팅 추가
 
@@ -51,7 +51,7 @@ ms.locfileid: "46422417"
     partial class UserControl1
     ```
 
-     다음과 같이 변경
+   다음과 같이 변경
 
     ```
     partial class UserControl1 : System.Windows.Forms.UserControl, ICommandTarget
@@ -84,19 +84,19 @@ ms.locfileid: "46422417"
 
 1. 호출 하는 메뉴 옵션을 추가 `singleMenuHandler`합니다.
 
-     로 이동 **리소스 뷰** (Ctrl + Shift + E)를 확장 합니다 **메뉴** 폴더를 마우스 두 번 클릭 **IDR_MFC02TYPE**합니다. 메뉴 편집기가 표시 됩니다.
+   로 이동 **리소스 뷰** (Ctrl + Shift + E)를 확장 합니다 **메뉴** 폴더를 마우스 두 번 클릭 **IDR_MFC02TYPE**합니다. 메뉴 편집기가 표시 됩니다.
 
-     아래쪽의 메뉴 옵션을 추가 합니다 **보기** 메뉴. 메뉴 옵션에서의 ID를 확인 합니다 **속성** 창입니다. 파일을 저장합니다.
+   아래쪽의 메뉴 옵션을 추가 합니다 **보기** 메뉴. 메뉴 옵션에서의 ID를 확인 합니다 **속성** 창입니다. 파일을 저장합니다.
 
-     **솔루션 탐색기**Resource.h 파일을 열고, 방금 추가한 메뉴 옵션에 대 한 ID 값을 복사 및 첫 번째 매개 변수로 해당 값을 붙여 넣습니다. 합니다 `m_CmdSrc.AddCommandHandler` C# 프로젝트의 호출 `Initialize` ( 대체메서드`32771` 필요한 경우).
+   **솔루션 탐색기**Resource.h 파일을 열고, 방금 추가한 메뉴 옵션에 대 한 ID 값을 복사 및 첫 번째 매개 변수로 해당 값을 붙여 넣습니다. 합니다 `m_CmdSrc.AddCommandHandler` C# 프로젝트의 호출 `Initialize` ( 대체메서드`32771` 필요한 경우).
 
 9. 프로젝트를 빌드하고 실행합니다.
 
-     **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
+   **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
 
-     에 **디버그** 메뉴에서 클릭 **디버깅 하지 않고 시작**합니다.
+   에 **디버그** 메뉴에서 클릭 **디버깅 하지 않고 시작**합니다.
 
-     추가한 메뉴 옵션을 선택 합니다. .Dll의 메서드가 호출 되도록 확인 합니다.
+   추가한 메뉴 옵션을 선택 합니다. .Dll의 메서드가 호출 되도록 확인 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

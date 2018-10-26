@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7f4c3da16181dca4a3a0722f96f61ce02863d369
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 77d9647fd4432bf2ab0cf9e4add2a08ce964b85a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378726"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060080"
 ---
 # <a name="choosing-a-transparent-or-opaque-background-image-editor-for-icons"></a>투명 또는 불투명 배경 선택(아이콘에 대한 이미지 편집기)
 
@@ -32,7 +32,7 @@ ms.locfileid: "46378726"
 
 불투명 한 배경으로 투명 한 배경을 (기본값)에서 전환 하 고 다시 수 있습니다. 선택 도구를 사용 하는 경우는 **투명 한 배경을** 및 **불투명 한 배경** 옵션에 표시 합니다 **옵션** 선택기는 **이미지 편집기** 도구 모음 (아래와 같이).
 
-![배경 옵션 &#45; 불투명 또는 투명](../windows/media/vcimageeditoropaqtranspback.gif "vcImageEditorOpaqTranspBack")  
+![배경 옵션 &#45; 불투명 또는 투명](../windows/media/vcimageeditoropaqtranspback.gif "vcImageEditorOpaqTranspBack")<br/>
 **투명 한 픽셀과 불투명 한 옵션** 에 **이미지 편집기 도구 모음**
 
 ### <a name="to-switch-between-a-transparent-and-opaque-background"></a>투명 한 픽셀과 불투명 한 배경 사이 전환 하려면

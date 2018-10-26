@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1557cf0ee42b10627618fff8a30ea6d5a6fbb169
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: b81832ba31fc8ef36510ce4f35c9fb1a5f3426b9
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49807941"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075023"
 ---
 # <a name="executioncharacterset"></a>execution_character_set
 
@@ -52,6 +52,6 @@ ms.locfileid: "49807941"
 
 ## <a name="see-also"></a>참고 항목
 
-[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
+[Pragma 지시문 및 \_ \_Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 [/execution-charset (실행 문자 집합 설정)](../build/reference/execution-charset-set-execution-character-set.md)<br/>
 [/utf-8(소스 및 실행 파일 문자 집합을 UTF-8로 설정)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)

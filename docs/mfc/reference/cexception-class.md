@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 189a6bd675ef3dec467fac98584abd7edfb49c19
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3de077e636f0dfdd1ab046a57a81808b3f80357e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433947"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052841"
 ---
 # <a name="cexception-class"></a>CException 클래스
 
@@ -242,5 +242,4 @@ else
 [계층 구조 차트](../hierarchy-chart.md)<br/>
 [예외 처리](exception-processing.md)<br/>
 [I: 나만의 사용자 지정 예외 클래스를 만드는 방법](http://go.microsoft.com/fwlink/p/?linkid=128045)
-
 

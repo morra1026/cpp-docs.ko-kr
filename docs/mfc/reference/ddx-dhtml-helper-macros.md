@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a4dbf1b085ca5ffddd87396fc367bf19f2ad02e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 841a140236c092ad14501698db90007bce0322ec
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46383063"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054880"
 ---
 # <a name="ddxdhtml-helper-macros"></a>DDX_DHtml 도우미 매크로
 
@@ -58,8 +58,6 @@ DDX_DHtml 도우미 매크로는 HTML 페이지에 있는 컨트롤의 자주 �
 ## <a name="ddx_dhtml_anchor_href"></a> DDX_DHtml_Anchor_Href
 
 설정 하거나 대상 URL 또는 앵커 지점을 검색 합니다.
-
-
 
 ```
 DDX_DHtml_Anchor_Href(
@@ -113,8 +111,6 @@ HTML 컨트롤의 ID 매개 변수에 대해 지정 된 값입니다.
 
 설정 하거나 현재 요소의 시작 및 끝 태그 사이의 HTML을 검색 합니다.
 
-
-
 ```
 DDX_DHtml_ElementInnerHtml(
     CDataExchange* dx,
@@ -137,12 +133,9 @@ HTML 컨트롤의 ID 매개 변수에 대해 지정 된 값입니다.
 
 이 매크로 호출 합니다 [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) 는 DISPID_IHTMLELEMENT_INNERHTML를 사용 하 여 함수 디스패치 id입니다.
 
-
 ## <a name="ddx_dhtml_elementinnertext"></a>  DDX_DHtml_ElementInnerText
 
 설정 하거나 현재 요소의 시작 및 끝 태그 사이의 텍스트를 검색 합니다.
-
-
 
 ```
 DDX_DHtml_ElementInnerText(
@@ -224,8 +217,6 @@ HTML 컨트롤의 ID 매개 변수에 대해 지정 된 값입니다.
 
 설정 하거나 연결된 된 프레임의 URL을 검색 합니다.
 
-
-
 ```
 DDX_DHtml_IFrame_Src(
     CDataExchange* dx,
@@ -275,7 +266,6 @@ HTML 컨트롤의 ID 매개 변수에 대해 지정 된 값입니다.
 이미지 요소에 대 한 src 속성을 검색할 DDX_DHtml_Img_Src 매크로 사용 하는 경우 Internet Explorer 이미지 개체는 이미지 원본에 대 한 완전히 이스케이프 된 URL을 반환 합니다. 예를 들어 DDX_DHtml_Img_Src 매크로 사용 하 여 "몇 가지 흥미로운 그림" 문자열에는 IMAGE 요소의 src 속성을 설정 하는 경우 해당 속성에 Internet Explorer를 검색 하는 경우는 문자열을 반환할 "res://d:\myapplication\myapp.exe/some% 20interesting %20picture입니다. "
 
 이 매크로 호출 합니다 [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) 는 DISPID_IHTMLIMGELEMENT_SRC를 사용 하 여 함수 디스패치 id입니다.
-
 
 ## <a name="see-also"></a>참고 항목
 

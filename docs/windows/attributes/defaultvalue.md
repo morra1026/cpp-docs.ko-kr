@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e67ed063030ae619124d82cb8fb8de3e7a6ff708
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: cf3e41beccf351fdda52fb7e126996a8cfbd3239
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791122"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063024"
 ---
 # <a name="defaultvalue"></a>defaultvalue
 
@@ -76,7 +76,7 @@ __interface IFireTabCtrl : IDispatch {
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
@@ -86,4 +86,4 @@ __interface IFireTabCtrl : IDispatch {
 [retval](retval.md)<br/>
 [in](in-cpp.md)<br/>
 [pointer_default](pointer-default.md)<br/>
-[unique](unique-cpp.md)  
+[unique](unique-cpp.md)

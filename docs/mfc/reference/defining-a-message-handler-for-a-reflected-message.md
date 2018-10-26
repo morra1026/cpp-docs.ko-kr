@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26345a95559000815ed7d2e2cc336892d619969b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 104f9e0be67a350a1725dfbcd2bf234a8bc79553
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413746"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052566"
 ---
 # <a name="defining-a-message-handler-for-a-reflected-message"></a>리플렉트된 메시지의 메시지 처리기 정의
 
@@ -53,7 +53,7 @@ ms.locfileid: "46413746"
 
 1. 제안된 된 이름을 수락 하도록 클릭 합니다. 처리기는 프로젝트에 추가 됩니다.
 
-     추가 된 메시지 처리기 이름은 리플 렉 트 된 메시지 창의 오른쪽 열에 나타납니다.
+   추가 된 메시지 처리기 이름은 리플 렉 트 된 메시지 창의 오른쪽 열에 나타납니다.
 
 9. 을 편집 하거나 메시지 처리기를 삭제 하려면 4 ~ 7 단계를 반복 합니다. 편집 하거나 삭제 하 고 적절 한 작업을 클릭 처리기 이름이 포함 된 셀을 클릭 합니다.
 

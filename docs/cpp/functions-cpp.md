@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aacbb7709daf6952f00276663e20131e967a554d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 24eded7bac023bd2291e0c574012f72ba86b6bcf
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46022360"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053801"
 ---
 # <a name="functions-c"></a>함수(C++)
 
@@ -101,7 +101,7 @@ int sum(int a, int b)
 
     ```
 
-     자세한 내용은 [프로그램 및 링크](../cpp/program-and-linkage-cpp.md)합니다.
+   자세한 내용은 [프로그램 및 링크](../cpp/program-and-linkage-cpp.md)합니다.
 
 1. **인라인**, 함수 코드 자체를 사용 하 여 함수에 대 한 모든 호출을 바꾸려면 컴파일러 지시 합니다. 인라인 처리는 성능이 중요한 코드 섹션에서 함수가 신속하게 실행되고 반복적으로 호출되는 시나리오의 성능 향상에 도움이 됩니다.
 
@@ -112,7 +112,7 @@ int sum(int a, int b)
     }
     ```
 
-     자세한 내용은 [인라인 함수](../cpp/inline-functions-cpp.md)합니다.
+   자세한 내용은 [인라인 함수](../cpp/inline-functions-cpp.md)합니다.
 
 1. `noexcept` 함수는 예외를 throw 할 수 있는지 여부를 지정 하는 식입니다. 다음 예제에서 함수는 예외를 throw 하지 경우 합니다 `is_pod` 식이 **true**합니다.
 
@@ -123,7 +123,7 @@ int sum(int a, int b)
     T copy_object(T& obj) noexcept(std::is_pod<T>) {...}
     ```
 
-     자세한 내용은 [noexcept](../cpp/noexcept-cpp.md)합니다.
+   자세한 내용은 [noexcept](../cpp/noexcept-cpp.md)합니다.
 
 1. (멤버 함수에만 해당) Cv 한정자에 함수 인지 여부를 지정 하는 **상수** 하거나 **volatile**합니다.
 
@@ -264,12 +264,11 @@ auto Add(const Lhs& lhs, const Rhs& rhs) -> decltype(lhs + rhs)
 
 때 **자동** 는 후행 반환 형식과 함께에서 방금 역할도 자리 표시자는 decltype 식이 생성에 대 한 및 형식 추론을 수행 자체 하지 않습니다.
 
-
 ## <a name="function-local-variables"></a>함수 지역 변수
 
 함수 본문 내에서 선언 된 변수는 호출을 *지역 변수* 또는 간단히 *로컬*합니다. 비정적 지역은 함수 본문 내에만 표시되며, 스택에서 선언될 경우 함수가 종료되면 범위를 벗어납니다. 지역 변수를 생성하고 값으로 반환하는 경우 컴파일러에서 일반적으로 반환 값 최적화를 수행하여 불필요한 복사 작업을 방지합니다. 지역 변수를 참조로 반환하는 경우 해당 참조를 사용하려는 호출자의 모든 시도가 지역이 제거된 후 수행되므로 컴파일러에서 경고가 발생합니다.
 
-C++에서는 지역 변수를 정적으로 선언할 수 있습니다. 이 변수는 함수 본문 내에만 표시되지만 함수의 모든 인스턴스에 대해 변수의 단일 복사본이 존재합니다. 로컬 정적 개체는 `atexit`로 지정된 종료 중에 소멸됩니다. 프로그램의 제어 흐름이 정적 개체의 선언을 건너뛰었기 때문에 정적 개체가 생성되지 않은 경우에는 해당 개체를 제거하려고 하지 않습니다.
+C++에서는 지역 변수를 정적으로 선언할 수 있습니다. 이 변수는 함수 본문 내에만 표시되지만 함수의 모든 인스턴스에 대해 변수의 단일 복사본이 존재합니다. 로컬 정적 개체는 `atexit`로 지정된 종료 중에 제거됩니다. 프로그램의 제어 흐름이 정적 개체의 선언을 건너뛰었기 때문에 정적 개체가 생성되지 않은 경우에는 해당 개체를 제거하려고 하지 않습니다.
 
 ##  <a name="type_deduction"></a> 반환 형식 (C + + 14)에서 형식 추론
 

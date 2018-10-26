@@ -17,17 +17,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 83d518aded30215684970e58d2868625fb8cd0e5
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 2aa88f88fe26b96202f2a917bddf5c8bb07c0d3c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791881"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071130"
 ---
 # <a name="com-attributes"></a>COM 특성
 
 COM 특성에는 COM 및.NET Framework 공용 언어 런타임 개발의 다양 한 영역을 지 원하는 코드를 삽입 합니다. 이러한 영역 범위에서 사용자 지정 인터페이스 구현 및 지원을 기존 인터페이스의 스톡 속성, 메서드 및 이벤트를 지 원하는입니다. 또한 복합 및 ActiveX 컨트롤 구현을 위한 지원은 찾을 수 있습니다.
-  
+
 |특성|설명|
 |---------------|-----------------|
 |[aggregatable](aggregatable.md)|컨트롤을 다른 컨트롤에서 집계할 수 있는지를 나타냅니다.|
@@ -41,9 +41,9 @@ COM 특성에는 COM 및.NET Framework 공용 언어 런타임 개발의 다양 
 |[requires_category](requires-category.md)|클래스에 대 한 필수 구성 요소 범주를 지정합니다.|
 |[support_error_info](support-error-info.md)|대상 개체에 대해 오류 보고를 지원 합니다.|
 |[synchronize](synchronize.md)|메서드에 대 한 액세스를 동기화합니다.|
-|[스레딩](threading-cpp.md)|COM 개체에 대 한 스레딩 모델을 지정합니다.|
+|[threading](threading-cpp.md)|COM 개체에 대 한 스레딩 모델을 지정합니다.|
 |[vi_progid](vi-progid.md)|컨트롤에 대 한 버전 독립 ProgID를 정의합니다.|
-  
+
 ## <a name="see-also"></a>참고 항목
 
 [그룹별 특성](attributes-by-group.md)

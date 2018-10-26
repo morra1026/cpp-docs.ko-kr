@@ -13,18 +13,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d79888a58e5fc6d6911c4cc123877c1537f22cf1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c2d0cc85272eae4a5231872232dc259a9120a6bd
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441930"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059872"
 ---
 # <a name="key-wrl-apis-by-category"></a>범주별 키 WRL API
+
 다음 표에서 기본 Windows Runtime c + + 템플릿 라이브러리 클래스, 구조체, 함수 및 매크로 나열합니다. 도우미 네임 스페이스 및 클래스의 구문 생략 됩니다. 이 목록은 네임 스페이스에 의해 정렬 되는 API 설명서를 보강 합니다.
-  
-### <a name="classes"></a>클래스
-  
+
+## <a name="classes"></a>클래스
+
 |제목|설명|
 |-----------|-----------------|
 |[ActivationFactory 클래스](../windows/activationfactory-class.md)|Windows 런타임으로 활성화할 클래스를 하나 이상 사용합니다.|
@@ -46,18 +47,18 @@ ms.locfileid: "46441930"
 |[SimpleActivationFactory 클래스](../windows/simpleactivationfactory-class.md)|Windows 런타임 또는 클래식 COM 기본 클래스를 만드는 기본적인 메커니즘을 제공합니다.|
 |[SimpleClassFactory 클래스](../windows/simpleclassfactory-class.md)|기본 클래스를 만드는 기본적인 메커니즘을 제공합니다.|
 |[WeakRef 클래스](../windows/weakref-class.md)|클래식 COM이 아닌 Windows 런타임에서만 사용할 수 있는 *약한 참조* 를 나타냅니다. 약한 참조는 액세스할 수 있거나 액세스할 수 없는 개체를 나타냅니다.|
-  
-### <a name="structures"></a>구조체
-  
+
+## <a name="structures"></a>구조체
+
 |제목|설명|
 |-----------|-----------------|
 |[ChainInterfaces 구조체](../windows/chaininterfaces-structure.md)|인터페이스 ID 집합에 적용할 수 있는 확인 및 초기화 함수를 지정합니다.|
 |[CloakedIid 구조체](../windows/cloakediid-structure.md)|에 `RuntimeClass`, `Implements` 및 `ChainInterfaces` 지정된 된 인터페이스 IID 목록에서 액세스할 수 없는 템플릿.|
 |[Implements 구조체](../windows/implements-structure.md)|구현 `QueryInterface` 고 `GetIid` 지정된 된 인터페이스에 대 한 합니다.|
 |[MixIn 구조체](../windows/mixin-structure.md)|런타임 클래스가 Windows 런타임 인터페이스에서 파생되었는지 확인한 다음 있는 경우 클래식 COM 인터페이스를 확인합니다.|
-  
-### <a name="functions"></a>함수
-  
+
+## <a name="functions"></a>함수
+
 |제목|설명|
 |-----------|-----------------|
 |[ActivateInstance 함수](../windows/activateinstance-function.md)|등록 하 고 ID가 지정 된 클래스에 정의 된 지정 된 형식의 인스턴스를 검색 합니다.|
@@ -67,14 +68,14 @@ ms.locfileid: "46441930"
 |[CreateClassFactory 함수](../windows/createclassfactory-function.md)|지정된 클래스의 인스턴스를 생성하는 팩터리를 만듭니다.|
 |[GetActivationFactory 함수](../windows/getactivationfactory-function.md)|템플릿 매개 변수로 지정 된 형식에 대 한 활성화 팩터리를 검색 합니다.|
 |[Make 함수](../windows/make-function.md)|지정된 된 Windows 런타임 클래스를 초기화합니다.|
-  
-### <a name="macros"></a>매크로
-  
+
+## <a name="macros"></a>매크로
+
 |제목|설명|
 |-----------|-----------------|
 |[ActivatableClass 매크로](../windows/activatableclass-macros.md)|지정된 된 클래스의 인스턴스를 만들 수 있는 팩터리를 포함 하는 내부 캐시를 채웁니다.|
 |[InspectableClass 매크로](../windows/inspectableclass-macro.md)|런타임 클래스 이름 및 신뢰 수준을 설정합니다.|
-  
+
 ## <a name="see-also"></a>참고 항목
 
 [Windows 런타임 C++ 템플릿 라이브러리(WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)

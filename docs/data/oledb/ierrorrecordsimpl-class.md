@@ -76,265 +76,265 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 26d443aaa5a160968a461bbdb81444f5a9f097c9
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 0413a83f51e430c52cfcccba05637a59973dc604
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084089"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070389"
 ---
 # <a name="ierrorrecordsimpl-class"></a>IErrorRecordsImpl 클래스
 
-OLE DB 구현 [IErrorRecords](/previous-versions/windows/desktop/ms718112) 레코드를 추가 하 고 데이터 멤버에서 레코드를 검색 하는 인터페이스를 ([m_rgErrors](../../data/oledb/ierrorrecordsimpl-m-rgerrors.md)) 형식의 **CAtlArray <** `RecordClass`**>**.  
-  
+OLE DB 구현 [IErrorRecords](/previous-versions/windows/desktop/ms718112) 레코드를 추가 하 고 데이터 멤버에서 레코드를 검색 하는 인터페이스를 ([m_rgErrors](../../data/oledb/ierrorrecordsimpl-m-rgerrors.md)) 형식의 **CAtlArray <** `RecordClass`**>**.
+
 ## <a name="syntax"></a>구문
 
 ```cpp
-template <class T, class RecordClass = ATLERRORINFO>  
-class IErrorRecordsImpl : public IErrorRecords  
-```  
-  
-### <a name="parameters"></a>매개 변수  
+template <class T, class RecordClass = ATLERRORINFO>
+class IErrorRecordsImpl : public IErrorRecords
+```
+
+### <a name="parameters"></a>매개 변수
 
 *T*<br/>
-파생 된 클래스 `IErrorRecordsImpl`합니다.  
-  
+파생 된 클래스 `IErrorRecordsImpl`합니다.
+
 *RecordClass*<br/>
-OLE DB 오류 개체를 나타내는 클래스입니다.  
+OLE DB 오류 개체를 나타내는 클래스입니다.
 
-## <a name="requirements"></a>요구 사항  
+## <a name="requirements"></a>요구 사항
 
-**헤더:** atldb.h  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="methods"></a>메서드  
-  
-|||  
-|-|-|  
-|[GetErrorDescriptionString](#geterrordescriptionstring)|오류 레코드에서 오류 설명 문자열을 가져옵니다.|  
-|[GetErrorGUID](#geterrorguid)|오류 레코드에서 오류를 GUID를 가져옵니다.|  
-|[GetErrorHelpContext](#geterrorhelpcontext)|오류 레코드에서 도움말 컨텍스트 ID를 가져옵니다.|  
-|[GetErrorHelpFile](#geterrorhelpfile)|오류 레코드에서 도움말 파일의 전체 경로 이름을 가져옵니다.|  
-|[GetErrorSource](#geterrorsource)|오류 레코드에서 오류 소스 코드를 가져옵니다.|  
-  
-### <a name="interface-methods"></a>인터페이스 메서드  
-  
-|||  
-|-|-|  
-|[AddErrorRecord](#adderrorrecord)|OLE DB 오류 개체에 레코드를 추가합니다.|  
-|[GetBasicErrorInfo](#getbasicerrorinfo)|반환 코드 및 공급자 특정 오류 번호와 같은 오류에 대 한 기본 정보를 반환 합니다.|  
-|[GetCustomErrorObject](#getcustomerrorobject)|인터페이스를 사용자 지정 오류 개체에 대 한 포인터를 반환합니다.|  
-|[GetErrorInfo](#geterrorinfo)|반환 된 [IErrorInfo](/previous-versions/windows/desktop/ms718112) 지정된 된 레코드에 대 한 인터페이스 포인터입니다.|  
-|[GetErrorParameters](#geterrorparameters)|오류 매개 변수를 반환합니다.|  
-|[GetRecordCount](#getrecordcount)|OLE DB 레코드 개체의 레코드 수를 반환 합니다.|  
-  
-### <a name="data-members"></a>데이터 멤버  
-  
-|||  
-|-|-|  
-|[m_rgErrors](#rgerrors)|오류 레코드의 배열입니다.|  
+**헤더:** atldb.h
+
+## <a name="members"></a>멤버
+
+### <a name="methods"></a>메서드
+
+|||
+|-|-|
+|[GetErrorDescriptionString](#geterrordescriptionstring)|오류 레코드에서 오류 설명 문자열을 가져옵니다.|
+|[GetErrorGUID](#geterrorguid)|오류 레코드에서 오류를 GUID를 가져옵니다.|
+|[GetErrorHelpContext](#geterrorhelpcontext)|오류 레코드에서 도움말 컨텍스트 ID를 가져옵니다.|
+|[GetErrorHelpFile](#geterrorhelpfile)|오류 레코드에서 도움말 파일의 전체 경로 이름을 가져옵니다.|
+|[GetErrorSource](#geterrorsource)|오류 레코드에서 오류 소스 코드를 가져옵니다.|
+
+### <a name="interface-methods"></a>인터페이스 메서드
+
+|||
+|-|-|
+|[AddErrorRecord](#adderrorrecord)|OLE DB 오류 개체에 레코드를 추가합니다.|
+|[GetBasicErrorInfo](#getbasicerrorinfo)|반환 코드 및 공급자 특정 오류 번호와 같은 오류에 대 한 기본 정보를 반환 합니다.|
+|[GetCustomErrorObject](#getcustomerrorobject)|인터페이스를 사용자 지정 오류 개체에 대 한 포인터를 반환합니다.|
+|[GetErrorInfo](#geterrorinfo)|반환 된 [IErrorInfo](/previous-versions/windows/desktop/ms718112) 지정된 된 레코드에 대 한 인터페이스 포인터입니다.|
+|[GetErrorParameters](#geterrorparameters)|오류 매개 변수를 반환합니다.|
+|[GetRecordCount](#getrecordcount)|OLE DB 레코드 개체의 레코드 수를 반환 합니다.|
+
+### <a name="data-members"></a>데이터 멤버
+
+|||
+|-|-|
+|[m_rgErrors](#rgerrors)|오류 레코드의 배열입니다.|
 
 ## <a name="geterrordescriptionstring"></a> Ierrorrecordsimpl:: Geterrordescriptionstring
 
-오류 레코드에서 오류 설명 문자열을 가져옵니다.  
-  
-### <a name="syntax"></a>구문  
-  
+오류 레코드에서 오류 설명 문자열을 가져옵니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-LPOLESTR GetErrorDescriptionString(ERRORINFO& rCurError);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+LPOLESTR GetErrorDescriptionString(ERRORINFO& rCurError);
+```
+
+#### <a name="parameters"></a>매개 변수
 
 *rCurError*<br/>
-`ERRORINFO` 레코드는 `IErrorInfo` 인터페이스입니다.  
-  
-### <a name="return-value"></a>반환 값  
+`ERRORINFO` 레코드는 `IErrorInfo` 인터페이스입니다.
 
-오류를 설명 하는 문자열에 대 한 포인터입니다.  
-  
+### <a name="return-value"></a>반환 값
+
+오류를 설명 하는 문자열에 대 한 포인터입니다.
+
 ## <a name="geterrorguid"></a> Ierrorrecordsimpl:: Geterrorguid
 
-오류 레코드에서 오류를 GUID를 가져옵니다.  
-  
-### <a name="syntax"></a>구문  
-  
+오류 레코드에서 오류를 GUID를 가져옵니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-REFGUID GetErrorGUID(ERRORINFO& rCurError);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+REFGUID GetErrorGUID(ERRORINFO& rCurError);
+```
+
+#### <a name="parameters"></a>매개 변수
 
 *rCurError*<br/>
-`ERRORINFO` 레코드는 `IErrorInfo` 인터페이스입니다.  
-  
-### <a name="return-value"></a>반환 값  
+`ERRORINFO` 레코드는 `IErrorInfo` 인터페이스입니다.
 
-오류에 대 한 GUID에 대 한 참조입니다.  
+### <a name="return-value"></a>반환 값
+
+오류에 대 한 GUID에 대 한 참조입니다.
 
 ## <a name="geterrorhelpcontext"></a> Ierrorrecordsimpl:: Geterrorhelpcontext
 
-오류 레코드에서 도움말 컨텍스트 ID를 가져옵니다.  
-  
-### <a name="syntax"></a>구문  
-  
+오류 레코드에서 도움말 컨텍스트 ID를 가져옵니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-DWORD GetErrorHelpContext(ERRORINFO& rCurError);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+DWORD GetErrorHelpContext(ERRORINFO& rCurError);
+```
+
+#### <a name="parameters"></a>매개 변수
 
 *rCurError*<br/>
-`ERRORINFO` 레코드는 `IErrorInfo` 인터페이스입니다.  
-  
-### <a name="return-value"></a>반환 값  
+`ERRORINFO` 레코드는 `IErrorInfo` 인터페이스입니다.
 
-오류에 대 한 도움말 컨텍스트 ID입니다.  
+### <a name="return-value"></a>반환 값
+
+오류에 대 한 도움말 컨텍스트 ID입니다.
 
 ## <a name="geterrorhelpfile"></a> Ierrorrecordsimpl:: Geterrorhelpfile
 
-오류 레코드에서 도움말 파일의 경로 이름을 가져옵니다.  
-  
-### <a name="syntax"></a>구문  
-  
+오류 레코드에서 도움말 파일의 경로 이름을 가져옵니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-LPOLESTR GetErrorHelpFile(ERRORINFO& rCurError);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+LPOLESTR GetErrorHelpFile(ERRORINFO& rCurError);
+```
+
+#### <a name="parameters"></a>매개 변수
 
 *rCurError*<br/>
-`ERRORINFO` 레코드는 `IErrorInfo` 인터페이스입니다.  
-  
-### <a name="return-value"></a>반환 값  
+`ERRORINFO` 레코드는 `IErrorInfo` 인터페이스입니다.
+
+### <a name="return-value"></a>반환 값
 
 오류에 대 한 도움말 파일의 경로 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
 ## <a name="geterrorsource"></a> Ierrorrecordsimpl:: Geterrorsource
 
-오류 레코드에서 오류를 발생 시킨 소스 코드를 가져옵니다.  
-  
-### <a name="syntax"></a>구문  
-  
+오류 레코드에서 오류를 발생 시킨 소스 코드를 가져옵니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-LPOLESTR GetErrorSource(ERRORINFO& rCurError);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+LPOLESTR GetErrorSource(ERRORINFO& rCurError);
+```
+
+#### <a name="parameters"></a>매개 변수
 
 *rCurError*<br/>
-`ERRORINFO` 레코드는 `IErrorInfo` 인터페이스입니다.  
-  
-### <a name="return-value"></a>반환 값  
+`ERRORINFO` 레코드는 `IErrorInfo` 인터페이스입니다.
 
-오류에 대 한 소스 코드를 포함 하는 문자열에 대 한 포인터입니다. 
+### <a name="return-value"></a>반환 값
+
+오류에 대 한 소스 코드를 포함 하는 문자열에 대 한 포인터입니다.
 
 ## <a name="adderrorrecord"></a> Ierrorrecordsimpl:: Adderrorrecord
 
-OLE DB 오류 개체에 레코드를 추가합니다.  
-  
-### <a name="syntax"></a>구문  
-  
-```cpp
-STDMETHOD(AddErrorRecord )(ERRORINFO *pErrorInfo,  
-   DWORD dwLookupID,  
-   DISPPARAMS *pdispparams,  
-   IUnknown *punkCustomError,  
-   DWORD dwDynamicErrorID);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+OLE DB 오류 개체에 레코드를 추가합니다.
 
-참조 [IErrorRecords::AddErrorRecord](/previous-versions/windows/desktop/ms725362) 에 *OLE DB Programmer's Reference*합니다.  
+### <a name="syntax"></a>구문
+
+```cpp
+STDMETHOD(AddErrorRecord )(ERRORINFO *pErrorInfo,
+   DWORD dwLookupID,
+   DISPPARAMS *pdispparams,
+   IUnknown *punkCustomError,
+   DWORD dwDynamicErrorID);
+```
+
+#### <a name="parameters"></a>매개 변수
+
+참조 [IErrorRecords::AddErrorRecord](/previous-versions/windows/desktop/ms725362) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="getbasicerrorinfo"></a> Ierrorrecordsimpl:: Getbasicerrorinfo
 
-반환 코드 및 공급자 특정 오류 번호와 같은 오류에 대 한 기본 정보를 반환 합니다.  
-  
-### <a name="syntax"></a>구문  
-  
-```cpp
-STDMETHOD(GetBasicErrorInfo )(ULONG ulRecordNum,  
-   ERRORINFO *pErrorInfo);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+반환 코드 및 공급자 특정 오류 번호와 같은 오류에 대 한 기본 정보를 반환 합니다.
 
-참조 [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907) 에 *OLE DB Programmer's Reference*합니다. 
+### <a name="syntax"></a>구문
+
+```cpp
+STDMETHOD(GetBasicErrorInfo )(ULONG ulRecordNum,
+   ERRORINFO *pErrorInfo);
+```
+
+#### <a name="parameters"></a>매개 변수
+
+참조 [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="getcustomerrorobject"></a> Ierrorrecordsimpl:: Getcustomerrorobject
 
-인터페이스를 사용자 지정 오류 개체에 대 한 포인터를 반환합니다.  
-  
-### <a name="syntax"></a>구문  
-  
-```cpp
-STDMETHOD(GetCustomErrorObject )(ULONG ulRecordNum,  
-   REFIID riid,  
-   IUnknown **ppObject);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+인터페이스를 사용자 지정 오류 개체에 대 한 포인터를 반환합니다.
 
-참조 [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417) 에 *OLE DB Programmer's Reference*합니다.  
+### <a name="syntax"></a>구문
+
+```cpp
+STDMETHOD(GetCustomErrorObject )(ULONG ulRecordNum,
+   REFIID riid,
+   IUnknown **ppObject);
+```
+
+#### <a name="parameters"></a>매개 변수
+
+참조 [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="geterrorinfo"></a> Ierrorrecordsimpl:: Geterrorinfo
 
-반환 된 [IErrorInfo](/previous-versions/windows/desktop/ms718112) 지정된 된 레코드에 대 한 인터페이스 포인터입니다.  
-  
-### <a name="syntax"></a>구문  
-  
+반환 된 [IErrorInfo](/previous-versions/windows/desktop/ms718112) 지정된 된 레코드에 대 한 인터페이스 포인터입니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-STDMETHOD(GetErrorInfo )(ULONG ulRecordNum,  
-   LCID lcid,  
-   IErrorInfo **ppErrorInfo);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+STDMETHOD(GetErrorInfo )(ULONG ulRecordNum,
+   LCID lcid,
+   IErrorInfo **ppErrorInfo);
+```
+
+#### <a name="parameters"></a>매개 변수
 
 참조 [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="geterrorparameters"></a> Ierrorrecordsimpl:: Geterrorparameters
 
-오류 매개 변수를 반환합니다.  
-  
-### <a name="syntax"></a>구문  
-  
-```cpp
-STDMETHOD(GetErrorParameters )(ULONG ulRecordNum,  
-   DISPPARAMS *pdispparams);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+오류 매개 변수를 반환합니다.
 
-참조 [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793) 에 *OLE DB Programmer's Reference*합니다.  
+### <a name="syntax"></a>구문
+
+```cpp
+STDMETHOD(GetErrorParameters )(ULONG ulRecordNum,
+   DISPPARAMS *pdispparams);
+```
+
+#### <a name="parameters"></a>매개 변수
+
+참조 [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="getrecordcount"></a> Ierrorrecordsimpl:: Getrecordcount
 
-OLE DB 레코드 개체의 레코드 수를 반환 합니다.  
-  
-### <a name="syntax"></a>구문  
-  
-```cpp
-STDMETHOD(GetRecordCount )(ULONG *pcRecords);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+OLE DB 레코드 개체의 레코드 수를 반환 합니다.
 
-참조 [IErrorRecords::GetRecordCount](/previous-versions/windows/desktop/ms722724) 에 *OLE DB Programmer's Reference*합니다.  
+### <a name="syntax"></a>구문
+
+```cpp
+STDMETHOD(GetRecordCount )(ULONG *pcRecords);
+```
+
+#### <a name="parameters"></a>매개 변수
+
+참조 [IErrorRecords::GetRecordCount](/previous-versions/windows/desktop/ms722724) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="rgerrors"></a> Ierrorrecordsimpl:: M_rgerrors
 
-오류 레코드의 배열입니다.  
-  
-### <a name="syntax"></a>구문  
-  
+오류 레코드의 배열입니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-CAtlArray< RecordClass > m_rgErrors;  
-```  
-  
-## <a name="see-also"></a>참고 항목  
+CAtlArray< RecordClass > m_rgErrors;
+```
+
+## <a name="see-also"></a>참고 항목
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

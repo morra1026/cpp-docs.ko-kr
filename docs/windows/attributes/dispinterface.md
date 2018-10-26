@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3b02244e0576f99cc0a6940f2ee4a13511cfbe6f
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: ea3ece20ac6df0fab00f1e21d27c41ae6e115517
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791103"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065904"
 ---
 # <a name="dispinterface"></a>dispinterface
 
@@ -38,9 +38,9 @@ ms.locfileid: "48791103"
 
 **dispinterface** C++ 특성이 인터페이스 앞에 오면, 생성된 .idl 파일에서 인터페이스가 라이브러리 블록 내부에 배치됩니다.
 
-기본 클래스를 지정하지 않으면 디스패치 인터페이스가 `IDispatch`에서 파생됩니다. 지정 해야 합니다는 [id](id.md) 디스패치 인터페이스의 멤버에 대 한 합니다.
+기본 클래스를 지정하지 않으면 디스패치 인터페이스가 `IDispatch`에서 파생됩니다. 디스패치 인터페이스의 멤버에 대한 [id](id.md) 를 지정해야 합니다.
 
-사용 예 [dispinterface](/windows/desktop/Midl/dispinterface) MIDL 설명서에서:
+MIDL 문서에 있는 [dispinterface](/windows/desktop/Midl/dispinterface) 의 사용 예:
 
 ```cpp
 dispinterface helloPro
@@ -51,7 +51,7 @@ dispinterface helloPro
 
 ## <a name="example"></a>예제
 
-예를 참조 하세요 [바인딩 가능한](bindable.md) 사용 하는 방법의 예제 **dispinterface**합니다.
+[dispinterface](bindable.md) 사용법에 대한 예는 **bindable**의 예를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -64,7 +64,7 @@ dispinterface helloPro
 |**필수 특성**|없음|
 |**잘못된 특성**|`dual`, `object`, `oleautomation`, `local`, `ms_union`|
 
-자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
@@ -74,4 +74,4 @@ dispinterface helloPro
 [dual](dual.md)<br/>
 [custom](custom-cpp.md)<br/>
 [object](object-cpp.md)<br/>
-[__interface](../../cpp/interface.md)  
+[__interface](../../cpp/interface.md)

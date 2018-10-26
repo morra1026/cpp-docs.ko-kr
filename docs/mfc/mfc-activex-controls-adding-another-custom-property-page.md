@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce81436781a92c8d2c9156e1d1c02513c3816dc4
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1599500a775bcd1c76f2e63a1f7b20126a2fb329
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440058"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078208"
 ---
 # <a name="mfc-activex-controls-adding-another-custom-property-page"></a>MFC ActiveX 컨트롤: 다른 사용자 지정 속성 페이지 추가
 
@@ -65,7 +65,7 @@ ms.locfileid: "46440058"
 
 1. 바로 가기 메뉴에서 클릭 **추가** 을 클릭 한 다음 **클래스 추가**합니다.
 
-     열립니다는 [클래스 추가](../ide/add-class-dialog-box.md) 대화 상자.
+   열립니다는 [클래스 추가](../ide/add-class-dialog-box.md) 대화 상자.
 
 1. 두 번 클릭 합니다 **MFC 클래스** 템플릿.
 
@@ -95,25 +95,25 @@ BEGIN_PROPPAGEIDS 매크로 (속성 페이지 수) 1에서 2의 두 번째 매�
 
 1. 두 번 클릭 합니다 **문자열 테이블** 기존 문자열 테이블 리소스 문자열을 추가 하려는 폴더 및 다음 두 번 클릭 합니다.
 
-     문자열 테이블을 창에서 열립니다.
+   문자열 테이블을 창에서 열립니다.
 
 1. 문자열 테이블의 끝에 있는 빈 줄을 선택 하 고 텍스트 또는 캡션 문자열을 입력 합니다: 예를 들어, "추가 속성 페이지입니다."
 
-     열립니다는 **문자열 속성** 페이지 표시 **캡션** 하 고 **ID** 상자입니다. 합니다 **캡션** 상자에 입력 한 문자열이 포함 됩니다.
+   열립니다는 **문자열 속성** 페이지 표시 **캡션** 하 고 **ID** 상자입니다. 합니다 **캡션** 상자에 입력 한 문자열이 포함 됩니다.
 
 1. 에 **ID** 상자에서 선택 하거나 문자열에 대 한 ID를 입력 합니다. 마친 후 enter 키를 누릅니다.
 
-     이 예제에서는 **IDS_SAMPLE_ADDPAGE** 새 속성 페이지의 형식 이름입니다.
+   이 예제에서는 **IDS_SAMPLE_ADDPAGE** 새 속성 페이지의 형식 이름입니다.
 
 1. 사용 하 여 3-4 단계를 반복 **IDS_SAMPLE_ADDPPG_CAPTION** ID 및 캡션에 대 한 "추가 속성 페이지"에 대 한 합니다.
 
 1. 안에. 새 속성 페이지 클래스의 CPP 파일 (이 예제에서는 `CAddtlPropPage`) 수정 합니다 `CAddtlPropPage::CAddtlPropPageFactory::UpdateRegistry` IDS_SAMPLE_ADDPAGE로 전달 되도록 [AfxOleRegisterPropertyPageClass](../mfc/reference/registering-ole-controls.md#afxoleregisterpropertypageclass)다음 예제와 같이:
 
-     [!code-cpp[NVC_MFC_AxUI#33](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_2.cpp)]
+   [!code-cpp[NVC_MFC_AxUI#33](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_2.cpp)]
 
 1. 생성자를 수정 `CAddtlPropPage` IDS_SAMPLE_ADDPPG_CAPTION에 전달 되도록는 `COlePropertyPage` 다음과 같은 생성자:
 
-     [!code-cpp[NVC_MFC_AxUI#34](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_3.cpp)]
+   [!code-cpp[NVC_MFC_AxUI#34](../mfc/codesnippet/cpp/mfc-activex-controls-adding-another-custom-property-page_3.cpp)]
 
 후 필요한 수정 프로젝트를 다시 작성 및 테스트 컨테이너를 사용 하 여 새 속성 페이지를 테스트 합니다. 테스트 컨테이너에 액세스하는 방법은 [테스트 컨테이너로 속성 및 이벤트 테스트](../mfc/testing-properties-and-events-with-test-container.md) 를 참조하세요.
 

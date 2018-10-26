@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 329f1d21489b57130531db20014e249588f101a6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8a2bb3a95f2b9e5506ee761906a7df213f97b927
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400512"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50061796"
 ---
 # <a name="including-shared-read-only-or-calculated-symbols"></a>공유(읽기 전용) 또는 계산된 기호 포함
 
@@ -40,7 +40,7 @@ ms.locfileid: "46400512"
 
 ```cpp
 #define   IDC_CONTROL1 2100
-#define   IDC_CONTROL2 (IDC_CONTROL1+1)  
+#define   IDC_CONTROL2 (IDC_CONTROL1+1)
 ```
 
 다음과 같은 경우 환경에서 이러한 계산된 기호를 올바르게 해석합니다.

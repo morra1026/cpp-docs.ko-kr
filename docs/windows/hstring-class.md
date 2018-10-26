@@ -47,12 +47,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a93c36748eb01a1c647a2aa433196c7364f60744
-ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
+ms.openlocfilehash: 8165a404924b997d70d0097c28ac7d34ade92fc3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410813"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063863"
 ---
 # <a name="hstring-class"></a>HString 클래스
 
@@ -115,7 +115,7 @@ Windows 런타임을 통해 문자열에 대 한 액세스를 제공 [HSTRING](/
 현재 인스턴스를 제거 합니다 `HString` 클래스입니다.
 
 ```cpp
-~HString() throw()  
+~HString() throw()
 ```
 
 ## <a name="attach"></a>Hstring:: Attach
@@ -125,7 +125,7 @@ Windows 런타임을 통해 문자열에 대 한 액세스를 제공 [HSTRING](/
 ```cpp
 void Attach(
        HSTRING hstr
-       ) throw()  
+       ) throw()
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -157,7 +157,7 @@ HRESULT CopyTo(
 지정 된 연결을 끊습니다 `HString` 해당 내부 값 개체입니다.
 
 ```cpp
-HSTRING Detach() throw()  
+HSTRING Detach() throw()
 ```
 
 ### <a name="return-value"></a>반환 값
@@ -169,7 +169,7 @@ HSTRING Detach() throw()
 기본 HSTRING 핸들의 값을 검색 합니다.
 
 ```cpp
-HSTRING Get() const throw()  
+HSTRING Get() const throw()
 ```
 
 ### <a name="return-value"></a>반환 값
@@ -181,7 +181,7 @@ HSTRING Get() const throw()
 기본 HSTRING 핸들에 대 한 포인터를 검색합니다.
 
 ```cpp
-HSTRING* GetAddressOf() throw()  
+HSTRING* GetAddressOf() throw()
 ```
 
 ### <a name="return-value"></a>반환 값
@@ -220,7 +220,7 @@ HSTRING 핸들입니다.
 나타냅니다 여부를 현재 `HString` 개체가 비어 있습니다.
 
 ```cpp
-bool IsValid() const throw()  
+bool IsValid() const throw()
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -262,7 +262,7 @@ template<unsigned int sizeDest>
 다른 값으로 이동 `HString` 개체를 현재 `HString` 개체입니다.
 
 ```cpp
-HString& operator=(HString&& other) throw()  
+HString& operator=(HString&& other) throw()
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -297,7 +297,7 @@ inline bool operator==(
 
 inline bool operator==(
                  const HString& lhs,
-                 const HSTRING& rhs) throw()  
+                 const HSTRING& rhs) throw()
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -330,7 +330,7 @@ inline bool operator!=( const HSTRING& lhs,
                         const HString& rhs) throw()
 
 inline bool operator!=( const HString& lhs,
-                        const HSTRING& rhs) throw()  
+                        const HSTRING& rhs) throw()
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -352,7 +352,7 @@ inline bool operator!=( const HString& lhs,
 ```cpp
 inline bool operator<(
     const HString& lhs,
-    const HString& rhs) throw()  
+    const HString& rhs) throw()
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -372,7 +372,7 @@ inline bool operator<(
 원본 문자열 값을 삭제 하 고 현재 초기화 `HString` 개체를 빈 값입니다.
 
 ```cpp
-void Release() throw()  
+void Release() throw()
 ```
 
 ## <a name="set"></a>Hstring:: Set

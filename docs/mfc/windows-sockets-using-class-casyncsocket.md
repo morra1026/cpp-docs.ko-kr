@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49e5df8e88124d1d94869618a94525e224d32495
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0aaefc41ca365e2bf4d87583f2e25dfa2a870a90
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424677"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079014"
 ---
 # <a name="windows-sockets-using-class-casyncsocket"></a>Windows 소켓: CAsyncSocket 클래스 사용
 
@@ -48,19 +48,19 @@ ms.locfileid: "46424677"
 
 1. 생성 된 [CAsyncSocket](../mfc/reference/casyncsocket-class.md) 개체를 사용 하는 개체의 내부 **소켓** 처리 합니다.
 
-     소켓 만들기 2 단계 생성의 MFC 패턴을 따릅니다.
+   소켓 만들기 2 단계 생성의 MFC 패턴을 따릅니다.
 
-     예를 들어:
+   예를 들어:
 
-     [!code-cpp[NVC_MFCSimpleSocket#3](../mfc/codesnippet/cpp/windows-sockets-using-class-casyncsocket_1.cpp)]
+   [!code-cpp[NVC_MFCSimpleSocket#3](../mfc/codesnippet/cpp/windows-sockets-using-class-casyncsocket_1.cpp)]
 
      또는
 
-     [!code-cpp[NVC_MFCSimpleSocket#4](../mfc/codesnippet/cpp/windows-sockets-using-class-casyncsocket_2.cpp)]
+   [!code-cpp[NVC_MFCSimpleSocket#4](../mfc/codesnippet/cpp/windows-sockets-using-class-casyncsocket_2.cpp)]
 
-     위의 첫 번째 생성자는 만듭니다는 `CAsyncSocket` 스택의 개체입니다. 두 번째 생성자는 만듭니다는 `CAsyncSocket` 힙에 합니다. 첫 번째 [만들기](../mfc/reference/casyncsocket-class.md#create) 호출 위의 기본 매개 변수를 사용 하 여 스트림 소켓을 만듭니다. 두 번째 `Create` 호출은 지정 된 포트와 주소를 사용 하 여 데이터 그램 소켓을 만듭니다. (사용할 수 있습니다 `Create` 생성 방법 중 하나를 사용 하 여 버전입니다.)
+   위의 첫 번째 생성자는 만듭니다는 `CAsyncSocket` 스택의 개체입니다. 두 번째 생성자는 만듭니다는 `CAsyncSocket` 힙에 합니다. 첫 번째 [만들기](../mfc/reference/casyncsocket-class.md#create) 호출 위의 기본 매개 변수를 사용 하 여 스트림 소켓을 만듭니다. 두 번째 `Create` 호출은 지정 된 포트와 주소를 사용 하 여 데이터 그램 소켓을 만듭니다. (사용할 수 있습니다 `Create` 생성 방법 중 하나를 사용 하 여 버전입니다.)
 
-     매개 변수를 `Create` 됩니다.
+   매개 변수를 `Create` 됩니다.
 
    - "Port": 정수 (short)입니다.
 
@@ -72,28 +72,28 @@ ms.locfileid: "46424677"
 
          This is your Internet Protocol (IP) address on the network. You will probably always rely on the default value for this parameter.
 
-     용어 "port" 및 "소켓 주소" [Windows 소켓: 포트 및 소켓 주소](../mfc/windows-sockets-ports-and-socket-addresses.md)합니다.
+   용어 "port" 및 "소켓 주소" [Windows 소켓: 포트 및 소켓 주소](../mfc/windows-sockets-ports-and-socket-addresses.md)합니다.
 
 1. 소켓이 클라이언트인 경우 소켓 개체 서버에 연결 소켓을 사용 하 여 [CAsyncSocket::Connect](../mfc/reference/casyncsocket-class.md#connect)합니다.
 
      또는
 
-     소켓이 서버인 경우 수신 대기를 시작 소켓 설정 (사용 하 여 [CAsyncSocket::Listen](../mfc/reference/casyncsocket-class.md#listen)) 클라이언트에서 연결 시도를 합니다. 적용 사용 하 여 연결 요청을 받으면 [CAsyncSocket::Accept](../mfc/reference/casyncsocket-class.md#accept)합니다.
+   소켓이 서버인 경우 수신 대기를 시작 소켓 설정 (사용 하 여 [CAsyncSocket::Listen](../mfc/reference/casyncsocket-class.md#listen)) 클라이언트에서 연결 시도를 합니다. 적용 사용 하 여 연결 요청을 받으면 [CAsyncSocket::Accept](../mfc/reference/casyncsocket-class.md#accept)합니다.
 
-     연결을 허용한 후 암호 유효성 검사 등의 작업을 수행할 수 있습니다.
+   연결을 허용한 후 암호 유효성 검사 등의 작업을 수행할 수 있습니다.
 
     > [!NOTE]
     >  합니다 `Accept` 멤버 함수는 비어 있는 새에 대 한 참조 `CSocket` 매개 변수로 개체입니다. 호출 하기 전에이 개체를 생성 해야 `Accept`합니다. 이 소켓 개체가 범위를 벗어나면 연결이 닫힙니다. 호출 하지 마십시오 `Create` 이 새 소켓 개체에 대 한 합니다. 예를 들어 문서를 참조 [Windows 소켓: 작업 순서](../mfc/windows-sockets-sequence-of-operations.md)합니다.
 
 1. 호출 하 여 다른 소켓와의 통신을 수행 합니다 `CAsyncSocket` Windows Sockets API 함수를 캡슐화 하는 개체의 멤버 함수입니다.
 
-     Windows 소켓 사양 및 클래스를 참조 하세요 [CAsyncSocket](../mfc/reference/casyncsocket-class.md) 에 *MFC 참조*합니다.
+   Windows 소켓 사양 및 클래스를 참조 하세요 [CAsyncSocket](../mfc/reference/casyncsocket-class.md) 에 *MFC 참조*합니다.
 
 1. 삭제 된 `CAsyncSocket` 개체입니다.
 
-     스택에 소켓 개체를 만든 경우 포함 하는 범위를 벗어나면 해당 소멸자가 호출 됩니다. 힙에 소켓 개체를 만든 경우 사용 하는 **새** 연산자를 담당 하는 사용 하 여를 **삭제** 개체를 제거 하는 연산자입니다.
+   스택에 소켓 개체를 만든 경우 포함 하는 범위를 벗어나면 해당 소멸자가 호출 됩니다. 힙에 소켓 개체를 만든 경우 사용 하는 **새** 연산자를 담당 하는 사용 하 여를 **삭제** 개체를 제거 하는 연산자입니다.
 
-     개체의를 호출 하는 소멸자 [닫기](../mfc/reference/casyncsocket-class.md#close) 멤버 함수는 개체를 제거 하기 전에 합니다.
+   개체의를 호출 하는 소멸자 [닫기](../mfc/reference/casyncsocket-class.md#close) 멤버 함수는 개체를 제거 하기 전에 합니다.
 
 코드에서이 시퀀스의 예 (에 실제로 `CSocket` 개체)를 참조 [Windows 소켓: 작업 순서](../mfc/windows-sockets-sequence-of-operations.md)합니다.
 

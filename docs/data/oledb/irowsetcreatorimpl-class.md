@@ -30,70 +30,70 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 51534ffb027e35bbab5a9473cf4190c14b384808
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 34fc1304fe4fad1196b5f204e6ba241093e03f32
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118149"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066216"
 ---
 # <a name="irowsetcreatorimpl-class"></a>IRowsetCreatorImpl 클래스
 
-동일한 기능을 수행 `IObjectWithSite` 하지만 또한 OLE DB 속성을 사용 하면 `DBPROPCANSCROLLBACKWARDS DBPROPCANFETCHBACKWARDS`합니다.  
-  
+동일한 기능을 수행 `IObjectWithSite` 하지만 또한 OLE DB 속성을 사용 하면 `DBPROPCANSCROLLBACKWARDS DBPROPCANFETCHBACKWARDS`합니다.
+
 ## <a name="syntax"></a>구문
 
 ```cpp
-template < class T >  
-class ATL_NO_VTABLE IRowsetCreatorImpl   
-   : public IObjectWithSiteImpl< T >  
-```  
-  
-### <a name="parameters"></a>매개 변수  
+template < class T >
+class ATL_NO_VTABLE IRowsetCreatorImpl
+   : public IObjectWithSiteImpl< T >
+```
+
+### <a name="parameters"></a>매개 변수
 
 *T*<br/>
-파생 된 클래스 `IRowsetCreator`합니다.  
+파생 된 클래스 `IRowsetCreator`합니다.
 
-## <a name="requirements"></a>요구 사항  
+## <a name="requirements"></a>요구 사항
 
-**헤더:** atldb.h  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="methods"></a>메서드  
-  
-|||  
-|-|-|  
-|[SetSite](#setsite)|행 집합 개체를 포함 하는 사이트를 설정 합니다.|  
-  
-## <a name="remarks"></a>설명  
+**헤더:** atldb.h
 
-이 클래스에서 상속 [IObjectWithSite](/windows/desktop/api/ocidl/nn-ocidl-iobjectwithsite) 재정의 [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite)합니다. 공급자 명령 또는 세션 개체를 행 집합을 만들 때 호출 `QueryInterface` 행 집합 개체에서 `IObjectWithSite` 호출 `SetSite` 행 집합 개체를 전달 `IUnkown` 사이트 인터페이스와 인터페이스입니다.  
+## <a name="members"></a>멤버
+
+### <a name="methods"></a>메서드
+
+|||
+|-|-|
+|[SetSite](#setsite)|행 집합 개체를 포함 하는 사이트를 설정 합니다.|
+
+## <a name="remarks"></a>설명
+
+이 클래스에서 상속 [IObjectWithSite](/windows/desktop/api/ocidl/nn-ocidl-iobjectwithsite) 재정의 [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite)합니다. 공급자 명령 또는 세션 개체를 행 집합을 만들 때 호출 `QueryInterface` 행 집합 개체에서 `IObjectWithSite` 호출 `SetSite` 행 집합 개체를 전달 `IUnkown` 사이트 인터페이스와 인터페이스입니다.
 
 ## <a name="setsite"></a> Irowsetcreatorimpl:: Setsite
 
-행 집합 개체를 포함 하는 사이트를 설정 합니다. 자세한 내용은 [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite)합니다.  
-  
-### <a name="syntax"></a>구문  
-  
+행 집합 개체를 포함 하는 사이트를 설정 합니다. 자세한 내용은 [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite)합니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-STDMETHOD(SetSite )(IUnknown* pCreator);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+STDMETHOD(SetSite )(IUnknown* pCreator);
+```
+
+#### <a name="parameters"></a>매개 변수
 
 *pCreator*<br/>
-[in] 에 대 한 포인터를 `IUnknown` 행 집합 개체를 관리 하는 사이트의 인터페이스 포인터입니다.  
-  
-### <a name="return-value"></a>반환 값  
+[in] 에 대 한 포인터를 `IUnknown` 행 집합 개체를 관리 하는 사이트의 인터페이스 포인터입니다.
 
-표준 HRESULT입니다.  
-  
-### <a name="remarks"></a>설명  
+### <a name="return-value"></a>반환 값
 
-또한 `IRowsetCreatorImpl::SetSite` OLE DB를 사용 하면 `DBPROPCANSCROLLBACKWARDS DBPROPCANFETCHBACKWARDS` 속성입니다. 
+표준 HRESULT입니다.
 
-## <a name="see-also"></a>참고 항목  
+### <a name="remarks"></a>설명
+
+또한 `IRowsetCreatorImpl::SetSite` OLE DB를 사용 하면 `DBPROPCANSCROLLBACKWARDS DBPROPCANFETCHBACKWARDS` 속성입니다.
+
+## <a name="see-also"></a>참고 항목
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

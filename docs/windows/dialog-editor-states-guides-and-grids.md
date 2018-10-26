@@ -15,14 +15,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3d0cc73df8304377bde00d8da2ab3c501ea5db45
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4a362404cc92a147b0517b394c3923e0c9924ca3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46373273"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059339"
 ---
-# <a name="dialog-editor-states-guides-and-grids-c"></a>대화 상자 편집기 상태 (안내선과 모눈) (c + +) 
+# <a name="dialog-editor-states-guides-and-grids-c"></a>대화 상자 편집기 상태 (안내선과 모눈) (c + +)
 
 사용 하 여 대화 상자에 컨트롤을 정렬할 수 있습니다 합니다 **대화 상자** 세 가지 상태 중 하나로 편집기:
 

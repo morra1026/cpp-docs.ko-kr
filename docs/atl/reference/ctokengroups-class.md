@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d14a839cded7d22236912ba52a733a9ce15f7aa
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ae36ce81d51c3fc66941bfd3c8755c4bcdcc98fe
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46103245"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077209"
 ---
 # <a name="ctokengroups-class"></a>CTokenGroups 클래스
 
@@ -230,7 +230,7 @@ Dword 배열에 대 한 포인터입니다. 이 매개 변수가 생략 하거�
 연관 된 특성 검색을 `CSid` 개체입니다.
 
 ```
-bool LookupSid(  
+bool LookupSid(
     const CSid& rSid,
     DWORD* pdwAttributes = NULL) const throw();
 ```

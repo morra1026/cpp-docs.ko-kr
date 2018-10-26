@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f19d79b7946e3f2b4fda0b2651ce8d2099373d93
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3b66fa88a98f800c77e2b6b0a731bbd40df9eb9d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433584"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054633"
 ---
 # <a name="tn020-id-naming-and-numbering-conventions"></a>TN020: ID 명명 및 번호 매기기 규칙
 
@@ -105,7 +105,7 @@ MFC는 또한 문자열 ("형식이 사용") 하는 대신 특수 형식으로 "
 
    - 16000 18000 (afxribbonres.h 참조)를 통해
 
-     이러한 범위의 MFC 구현에서는 나중에 변경할 수 있습니다.
+   이러한 범위의 MFC 구현에서는 나중에 변경할 수 있습니다.
 
 - 몇 가지 Windows 시스템 명령이 0xF000 0xffff의 범위를 사용 합니다.
 

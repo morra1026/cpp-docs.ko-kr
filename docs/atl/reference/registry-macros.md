@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17040448771e4ca3c0f999e72a9c08f0e1fa28aa
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c10908454252b1ae381a2b96835ce09f3aa6db6f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46058499"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053658"
 ---
 # <a name="registry-macros"></a>레지스트리 매크로
 
@@ -41,7 +41,7 @@ ms.locfileid: "46058499"
 |[DECLARE_REGISTRY](#declare_registry)|입력 또는 시스템 레지스트리에 기본 개체의 항목을 제거 합니다.|
 |[DECLARE_REGISTRY_APPID_RESOURCEID](#declare_registry_appid_resourceid)|자동으로 등록 하는 데 필요한 정보를 지정 합니다 *appid*합니다.|
 |[DECLARE_REGISTRY_RESOURCE](#declare_registry_resource)|명명 된 리소스를 찾아 그 레지스트리 스크립트를 실행 합니다.|
-|[DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid)|ID 번호로 식별 되는 리소스를 찾아 그 레지스트리 스크립트를 실행 합니다.|  
+|[DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid)|ID 번호로 식별 되는 리소스를 찾아 그 레지스트리 스크립트를 실행 합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -96,10 +96,10 @@ DECLARE_NO_REGISTRY()
 
 ```
 DECLARE_REGISTRY(
-    class, 
-    pid, 
-    vpid, 
-    nid, 
+    class,
+    pid,
+    vpid,
+    nid,
     flags )
 ```
 
@@ -132,7 +132,7 @@ DECLARE_REGISTRY(
 
 ```
 DECLARE_REGISTRY_APPID_RESOURCEID(
-    resid, 
+    resid,
     appid )
 ```
 
@@ -173,7 +173,7 @@ ATL 레지스트리 구성 요소 (등록자)에 최적화 된 레지스트리 �
 
 [!code-cpp[NVC_ATL_COM#56](../../atl/codesnippet/cpp/registry-macros_2.h)]
 
-런타임 시 대체 값으로 대체 하는 ATL 원한다 면 DECLARE_REGISTRY_RESOURCE 또는 DECLARE_REGISTRY_RESOURCEID 매크로 지정 하지 마십시오. 대신, 배열을 만든 `_ATL_REGMAP_ENTRIES` 런타임에 자리 표시자 값을 사용 하 여 쌍을 이루는 구조, 각 항목 변수 자리 표시자를 포함 하는 위치입니다. 그런 다음 호출 [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) 하거나 [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), 배열을 전달 합니다. 모든에서 대체 값이 추가 `_ATL_REGMAP_ENTRIES` 기관의 대체 맵 구조입니다.  
+런타임 시 대체 값으로 대체 하는 ATL 원한다 면 DECLARE_REGISTRY_RESOURCE 또는 DECLARE_REGISTRY_RESOURCEID 매크로 지정 하지 마십시오. 대신, 배열을 만든 `_ATL_REGMAP_ENTRIES` 런타임에 자리 표시자 값을 사용 하 여 쌍을 이루는 구조, 각 항목 변수 자리 표시자를 포함 하는 위치입니다. 그런 다음 호출 [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) 하거나 [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), 배열을 전달 합니다. 모든에서 대체 값이 추가 `_ATL_REGMAP_ENTRIES` 기관의 대체 맵 구조입니다.
 
 대체 가능 매개 변수 및 스크립팅 하는 방법에 대 한 자세한 내용은 문서 참조 [ATL 레지스트리 구성 요소 (등록자)](../../atl/atl-registry-component-registrar.md)합니다.
 
@@ -198,7 +198,7 @@ ATL 레지스트리 구성 요소 (등록자)에 최적화 된 레지스트리 �
 
 [!code-cpp[NVC_ATL_COM#56](../../atl/codesnippet/cpp/registry-macros_2.h)]
 
-런타임 시 대체 값으로 대체 하는 ATL 원한다 면 DECLARE_REGISTRY_RESOURCE 또는 DECLARE_REGISTRY_RESOURCEID 매크로 지정 하지 마십시오. 대신, 배열을 만든 `_ATL_REGMAP_ENTRIES` 런타임에 자리 표시자 값을 사용 하 여 쌍을 이루는 구조, 각 항목 변수 자리 표시자를 포함 하는 위치입니다. 그런 다음 호출 [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) 하거나 [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), 배열을 전달 합니다. 모든에서 대체 값이 추가 `_ATL_REGMAP_ENTRIES` 기관의 대체 맵 구조입니다.  
+런타임 시 대체 값으로 대체 하는 ATL 원한다 면 DECLARE_REGISTRY_RESOURCE 또는 DECLARE_REGISTRY_RESOURCEID 매크로 지정 하지 마십시오. 대신, 배열을 만든 `_ATL_REGMAP_ENTRIES` 런타임에 자리 표시자 값을 사용 하 여 쌍을 이루는 구조, 각 항목 변수 자리 표시자를 포함 하는 위치입니다. 그런 다음 호출 [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) 하거나 [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), 배열을 전달 합니다. 모든에서 대체 값이 추가 `_ATL_REGMAP_ENTRIES` 기관의 대체 맵 구조입니다.
 
 대체 가능 매개 변수 및 스크립팅 하는 방법에 대 한 자세한 내용은 문서 참조 [ATL 레지스트리 구성 요소 (등록자)](../../atl/atl-registry-component-registrar.md)합니다.
 

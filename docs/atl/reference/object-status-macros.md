@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b684d66a96a7a3a7d7d60a1b107792c2061ce57
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c4b8be9cf1b421a66081fcf650462447d3c0ef7e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46086605"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052540"
 ---
 # <a name="object-status-macros"></a>개체 상태 매크로
 
@@ -27,11 +27,11 @@ ms.locfileid: "46086605"
 
 |||
 |-|-|
-|[DECLARE_OLEMISC_STATUS](#declare_olemisc_status)|ATL ActiveX 컨트롤의 OLEMISC 플래그를 설정 하는 데 사용 합니다.|  
+|[DECLARE_OLEMISC_STATUS](#declare_olemisc_status)|ATL ActiveX 컨트롤의 OLEMISC 플래그를 설정 하는 데 사용 합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlcom.h  
+**헤더:** atlcom.h
 
 ##  <a name="declare_olemisc_status"></a>  DECLARE_OLEMISC_STATUS
 

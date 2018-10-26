@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 295e19d875585e0ea166dfce552866b8c1fc81b7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7c2c954851348fcb96b28a4c47aee4b4475aeaca
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46392272"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070285"
 ---
 # <a name="dialog-data-exchange-functions-for-crecordview-and-cdaorecordview"></a>CRecordView 및 CDaoRecordView에 대한 대화 상자 데이터 교환 함수
 
@@ -98,7 +98,7 @@ void AFXAPI DDX_FieldCBIndex(
 
 ODBC 기반 클래스를 사용 하 여 작업 하는 경우 첫 번째 버전을 사용 합니다. DAO 기반 클래스를 사용 하는 경우에 두 번째 버전을 사용 합니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다. 예제 및에 대 한 DDX에 대 한 자세한 내용은 [CRecordView](../../mfc/reference/crecordview-class.md) 하 고 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 문서를 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요. 예제 및에 대 한 DDX에 대 한 자세한 내용은 [CRecordView](../../mfc/reference/crecordview-class.md) 하 고 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 문서를 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -146,7 +146,7 @@ void AFXAPI DDX_FieldCBString(
 
 ODBC 기반 클래스를 사용 하 여 작업 하는 경우 첫 번째 버전을 사용 합니다. DAO 기반 클래스를 사용 하는 경우에 두 번째 버전을 사용 합니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다. 예제 및에 대 한 DDX에 대 한 자세한 내용은 [CRecordView](../../mfc/reference/crecordview-class.md) 하 고 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 문서를 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요. 예제 및에 대 한 DDX에 대 한 자세한 내용은 [CRecordView](../../mfc/reference/crecordview-class.md) 하 고 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 문서를 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -194,7 +194,7 @@ void AFXAPI DDX_FieldCBStringExact(
 
 ODBC 기반 클래스를 사용 하 여 작업 하는 경우 첫 번째 버전을 사용 합니다. DAO 기반 클래스를 사용 하는 경우에 두 번째 버전을 사용 합니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다. 예제 및에 대 한 DDX에 대 한 자세한 내용은 [CRecordView](../../mfc/reference/crecordview-class.md) 하 고 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 문서를 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요. 예제 및에 대 한 DDX에 대 한 자세한 내용은 [CRecordView](../../mfc/reference/crecordview-class.md) 하 고 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 문서를 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -240,7 +240,7 @@ void AFXAPI DDX_FieldCheck(
 
 때 `DDX_FieldCheck` 가 호출 *값* check box 컨트롤의 현재 상태로 설정 됩니다 컨트롤의 상태 설정할지 *값*전송의 방향에 따라 합니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -284,7 +284,7 @@ void AFXAPI DDX_FieldLBIndex(
 
 ODBC 기반 클래스를 사용 하 여 작업 하는 경우 첫 번째 버전을 사용 합니다. DAO 기반 클래스를 사용 하는 경우에 두 번째 버전을 사용 합니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다. 예제 및에 대 한 DDX에 대 한 자세한 내용은 [CRecordView](../../mfc/reference/crecordview-class.md) 하 고 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 문서를 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요. 예제 및에 대 한 DDX에 대 한 자세한 내용은 [CRecordView](../../mfc/reference/crecordview-class.md) 하 고 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 문서를 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -332,7 +332,7 @@ void AFXAPI DDX_FieldLBString(
 
 ODBC 기반 클래스를 사용 하 여 작업 하는 경우 첫 번째 버전을 사용 합니다. DAO 기반 클래스를 사용 하는 경우에 두 번째 버전을 사용 합니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다. 예제 및에 대 한 DDX에 대 한 자세한 내용은 [CRecordView](../../mfc/reference/crecordview-class.md) 하 고 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 문서를 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요. 예제 및에 대 한 DDX에 대 한 자세한 내용은 [CRecordView](../../mfc/reference/crecordview-class.md) 하 고 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 문서를 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -380,7 +380,7 @@ void AFXAPI DDX_FieldLBStringExact(
 
 ODBC 기반 클래스를 사용 하 여 작업 하는 경우 첫 번째 버전을 사용 합니다. DAO 기반 클래스를 사용 하는 경우에 두 번째 버전을 사용 합니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다. 예제 및에 대 한 DDX에 대 한 자세한 내용은 [CRecordView](../../mfc/reference/crecordview-class.md) 하 고 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 문서를 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요. 예제 및에 대 한 DDX에 대 한 자세한 내용은 [CRecordView](../../mfc/reference/crecordview-class.md) 하 고 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 문서를 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -428,7 +428,7 @@ void AFXAPI DDX_FieldRadio(
 
 ODBC 기반 클래스를 사용 하 여 작업 하는 경우 첫 번째 버전을 사용 합니다. DAO 기반 클래스를 사용 하는 경우에 두 번째 버전을 사용 합니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다. 예제 및에 대 한 DDX에 대 한 자세한 내용은 [CRecordView](../../mfc/reference/crecordview-class.md) 하 고 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 문서를 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요. 예제 및에 대 한 DDX에 대 한 자세한 내용은 [CRecordView](../../mfc/reference/crecordview-class.md) 하 고 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 문서를 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -476,7 +476,7 @@ void AFXAPI DDX_FieldScroll(
 
 ODBC 기반 클래스를 사용 하 여 작업 하는 경우 첫 번째 버전을 사용 합니다. DAO 기반 클래스를 사용 하는 경우에 두 번째 버전을 사용 합니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다. 예제 및에 대 한 DDX에 대 한 자세한 내용은 [CRecordView](../../mfc/reference/crecordview-class.md) 하 고 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 문서를 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요. 예제 및에 대 한 DDX에 대 한 자세한 내용은 [CRecordView](../../mfc/reference/crecordview-class.md) 하 고 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 문서를 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -499,11 +499,12 @@ DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 �
        CRecordset* pRecordset );
 
 void AFXAPI DDX_FieldSlider(
-     CDataExchange* pDX,
-     int nIDC,
-     int& value,
-     CDaoRecordset* pRecordset );
+   CDataExchange* pDX,
+   int nIDC,
+   int& value,
+   CDaoRecordset* pRecordset );
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *pDX*<br/>
@@ -526,7 +527,7 @@ void AFXAPI DDX_FieldSlider(
 
 ODBC 기반 클래스를 사용 하는 경우에 함수의 첫 번째 재정의 사용 합니다. DAO 기반 클래스를 사용 하 여 두 번째 재정의 사용 합니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../dialog-data-exchange-and-validation.md)합니다. 예제 및에 대 한 DDX에 대 한 자세한 내용은 `CRecordView` 하 고 `CDaoRecordView` 필드를 참조 하십시오 [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다. 슬라이더 컨트롤에 대 한 자세한 내용은 [CSliderCtrl 사용 하 여](../using-csliderctrl.md)입니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../dialog-data-exchange-and-validation.md)를 참조하세요. 예제 및에 대 한 DDX에 대 한 자세한 내용은 `CRecordView` 하 고 `CDaoRecordView` 필드를 참조 하십시오 [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다. 슬라이더 컨트롤에 대 한 자세한 내용은 [CSliderCtrl 사용 하 여](../using-csliderctrl.md)입니다.
 
 ### <a name="example"></a>예제
 
@@ -674,14 +675,13 @@ void AFXAPI DDX_FieldText(
 
 사용 하 여 버전을 사용 하 여 [CRecordset](../../mfc/reference/crecordset-class.md) ODBC 기반 클래스를 사용 하 여 작업 하는 경우 매개 변수입니다. 사용 하 여 버전을 사용 하 여 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) DAO 기반 클래스를 사용 하 여 작업 하는 경우 매개 변수입니다.
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다. 예제 및에 대 한 DDX에 대 한 자세한 내용은 [CRecordView](../../mfc/reference/crecordview-class.md) 하 고 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 문서를 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요. 예제 및에 대 한 DDX에 대 한 자세한 내용은 [CRecordView](../../mfc/reference/crecordview-class.md) 하 고 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 문서를 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다.
 
 ### <a name="example"></a>예제
 
 다음 `DoDataExchange` 함수를 [CRecordView](../../mfc/reference/crecordview-class.md) 포함 `DDX_FieldText` 세 개의 데이터 형식에 대 한 함수 호출: `IDC_COURSELIST` 은 콤보 상자;는 다른 두 컨트롤은 편집 상자입니다. DAO 프로그래밍에 대 한 합니다 *하기 위해* 매개 변수는에 대 한 포인터는 [CRecordset](../../mfc/reference/crecordset-class.md) 또는 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md)합니다.
 
 [!code-cpp[NVC_MFCDatabase#43](../../mfc/codesnippet/cpp/dialog-data-exchange-functions-for-crecordview-and-cdaorecordview_1.cpp)]
-
 
 ### <a name="requirements"></a>요구 사항
 

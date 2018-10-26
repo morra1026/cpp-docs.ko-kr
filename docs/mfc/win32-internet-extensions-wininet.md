@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35d3805ee88cca048ac44dc15426cb35eb52bb5b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2ac1f416906109df866d157d40a603d0c51330b6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374764"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50074698"
 ---
 # <a name="win32-internet-extensions-wininet"></a>Win32 인터넷 확장명(WinInet)
 
@@ -60,6 +60,4 @@ Microsoft Win32 인터넷 기능 (WinInet)의 도움을 받아 인터넷 응용 
 
 [MFC 인터넷 프로그래밍 기본 사항](../mfc/mfc-internet-programming-basics.md)<br/>
 [WinInet 기본 사항](../mfc/wininet-basics.md)
-
-
 

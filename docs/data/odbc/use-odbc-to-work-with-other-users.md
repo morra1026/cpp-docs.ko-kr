@@ -15,19 +15,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d87ec365f6e6dbdf913d9e1f66de871f74de3d5d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1d2456717083fc70091d5774ff79bf574a1266af
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052428"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059508"
 ---
 # <a name="use-odbc-to-work-with-other-users"></a>ODBC를 사용하여 다른 사용자와 작업
 
-여러 사용자가 같은 ODBC 데이터베이스는 사용 환경에서 ODBC를 사용 합니다.  
-  
-## <a name="in-this-section"></a>섹션 내용  
-  
-## <a name="see-also"></a>참고 항목  
+여러 사용자가 같은 ODBC 데이터베이스는 사용 환경에서 ODBC를 사용 합니다.
+
+## <a name="in-this-section"></a>섹션 내용
+
+## <a name="see-also"></a>참고 항목
 
 [ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)

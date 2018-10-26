@@ -13,20 +13,21 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e8251f45d07e8a410c41a89fbc618839e9bbb838
-ms.sourcegitcommit: 6a6b2061db9d51c5cc79775512de54589a4d2fbc
+ms.openlocfilehash: 6ea59ae2cb0c12a60a8463434105f1cc6af0a77d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49347230"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073534"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++의 Windows 프로그래밍 개요
 
 Windows 서버, 클라우드에서 또는 Xbox에서 다양 한 종류의 (x 86, x64 또는 ARM)는 Windows PC에서 실행 되는 프로그램을 쓸 Visual c + +를 사용할 수 있습니다. 잘 작성 된 c + + 프로그램에 이러한 품질:
+
 - 메모리 요구 사항을 효율적으로
-- 전력 소비 경제적인 옵션 
+- 전력 소비 경제적인 옵션
 - 다중 코어 및 다중 코어 장치를 최대한 활용할 수
-- 일반 컴퓨팅 (GPGPU) 그래픽 처리 장치에서 작업을 수행할 수  
+- 일반 컴퓨팅 (GPGPU) 그래픽 처리 장치에서 작업을 수행할 수
 - 하드웨어에서 다른 최신 고급 기능을 활용할 수 있습니다.
 
 Visual C++를 사용하여 광범위한 범주의 다양한 Windows 앱을 구현할 수 있습니다. 이러한 범주에 서로 다른 프로그래밍 모델 없거나 년간 추가한 앱 모델입니다. 각 모델 플랫폼에 대 한 액세스를 제공 하 고 창 및 대화 상자와 같은 사용자 인터페이스를 만들 다른 라이브러리 및 Api를 사용 합니다. UWP에 대 한 몇 가지 제한 사항이 이러한 범주 중 하나에서 타사 라이브러리 뿐만 아니라 c + + 표준 라이브러리를 사용할 수 있습니다.
@@ -98,7 +99,7 @@ Microsoft 라이브러리는 다음과 같습니다.
 
 - 동시성 런타임: 다중 코어 및 다중 코어 장치에 대한 병렬 및 비동기 프로그래밍 작업을 간소화하는 라이브러리입니다. 자세한 내용은 [Concurrency Runtime](../parallel/concrt/concurrency-runtime.md)을 참조하세요.
 
-많은 Windows 프로그래밍 시나리오에는 Windows 운영 체제 구성 요소에 액세스할 수 있는 헤더 파일을 포함하는 Windows SDK도 필요합니다. 기본적으로 Visual Studio는 유니버설 Windows 앱을 개발할 수 있도록 하는 c + + 데스크톱 워크 로드의 구성 요소로 Windows SDK를 설치 합니다. UWP 앱을 개발 하려면 Windows 10 버전의 Windows SDK를 해야 합니다. 정보를 참조 하세요 [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)합니다. (이전 버전 Windows의 Windows Sdk에 대 한 자세한 내용은 참조는 [Windows SDK 아카이브](https://developer.microsoft.com/windows/downloads/sdk-archive)). 
+많은 Windows 프로그래밍 시나리오에는 Windows 운영 체제 구성 요소에 액세스할 수 있는 헤더 파일을 포함하는 Windows SDK도 필요합니다. 기본적으로 Visual Studio는 유니버설 Windows 앱을 개발할 수 있도록 하는 c + + 데스크톱 워크 로드의 구성 요소로 Windows SDK를 설치 합니다. UWP 앱을 개발 하려면 Windows 10 버전의 Windows SDK를 해야 합니다. 정보를 참조 하세요 [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)합니다. (이전 버전 Windows의 Windows Sdk에 대 한 자세한 내용은 참조는 [Windows SDK 아카이브](https://developer.microsoft.com/windows/downloads/sdk-archive)).
 
 **프로그램 파일 (x86) \Windows 키트** 설치 된 Windows SDK의 모든 버전에 대 한 기본 위치입니다.
 

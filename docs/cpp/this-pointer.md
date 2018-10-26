@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee6c0b958fe27c04c116b4f82098f459c1f0f745
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c6fddd337cb9c0bcd78df1bfa563d1f447131078
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070589"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077337"
 ---
 # <a name="this-pointer"></a>this 포인터
 
@@ -32,7 +32,7 @@ ms.locfileid: "46070589"
 ## <a name="syntax"></a>구문
 
 ```
-this 
+this 
 this->member-identifier
 ```
 
@@ -181,7 +181,7 @@ int main()
 
 유형의 **이** 멤버 함수는 다음 구문으로 설명 위치 *cv 한정자 목록* 멤버 함수 선언 자에서 결정 되 고 수 **const**또는 **volatile** (또는 둘 다) 및 *클래스 형식* 클래스의 이름입니다.
 
-*[cv 한정자 목록] 클래스 형식* **\* const이**
+*[cv 한정자 목록] 클래스 형식* **&#42; const이**
 
 다시 말해 **이** 는 항상 const 포인터 이며 다시 할당할 수 없습니다.  **상수** 또는 **volatile** 멤버 함수 선언에 사용 되는 한정자가 가리키는 클래스 인스턴스에 적용 **이** 해당 함수 범위의 합니다.
 

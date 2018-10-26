@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff655573f77b901725fe18c2346c46306c9b853a
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: bf5bca25f0e5b6a349544e24d0983d4d297be9ae
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45716809"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065878"
 ---
 # <a name="ltfilesystemgt-enumerations"></a>&lt;filesystem&gt; 열거형
 
@@ -73,7 +73,6 @@ enum class copy_options {
 |`directories_only`|디렉터리만 반복하고 파일을 무시합니다.|
 |`create_symlinks`|파일을 복사하지 않고 기호 링크를 만듭니다. 대상이 현재 디렉터리가 아니면 절대 경로를 소스 경로로 사용해야 합니다.|
 |`create_hard_links`|파일을 복사하지 않고 하드 링크를 만듭니다.|
-
 
 ## <a name="directory_options"></a> directory_options
 

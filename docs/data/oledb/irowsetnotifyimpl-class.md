@@ -31,129 +31,129 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9ade96e5d73d86519a067d632a4e05250d1264cf
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 8659897e411f703882f398fd7e96c8838b5ddafb
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082308"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056173"
 ---
 # <a name="irowsetnotifyimpl-class"></a>IRowsetNotifyImpl 클래스
 
-구현 및 등록 [IRowsetNotify](/previous-versions/windows/desktop/ms712959) 소비자 (라고도 "sink")에 알림을 처리할 수 있도록 합니다.  
-  
+구현 및 등록 [IRowsetNotify](/previous-versions/windows/desktop/ms712959) 소비자 (라고도 "sink")에 알림을 처리할 수 있도록 합니다.
+
 ## <a name="syntax"></a>구문
 
 ```cpp
-class ATL_NO_VTABLE IRowsetNotifyImpl : public IRowsetNotify  
-```  
+class ATL_NO_VTABLE IRowsetNotifyImpl : public IRowsetNotify
+```
 
-## <a name="requirements"></a>요구 사항  
+## <a name="requirements"></a>요구 사항
 
-**헤더:** atldbcli.h  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="methods"></a>메서드  
-  
-|||  
-|-|-|  
-|[OnFieldChange](#onfieldchange)|열의 값을 변경한의 소비자를 게 알립니다.|  
-|[OnRowChange](#onrowchange)|첫 번째 행을 변경 또는 전체 행에 영향을 주는 변경 소비자를 게 알립니다.|  
-|[OnRowsetChange](#onrowsetchange)|전체 행 집합에 영향을 미치는 변경의 소비자를 게 알립니다.|  
-  
-## <a name="remarks"></a>설명  
+**헤더:** atldbcli.h
 
-참조 [알림 수신](../../data/oledb/receiving-notifications.md) 에서 소비자 연결 지점 인터페이스를 구현 하는 방법에 대 한 합니다.  
-  
-`IRowsetNotifyImpl` 더미 구현을 제공 `IRowsetNotify`에 대 한 빈 함수를 사용 하 여 합니다 `IRowsetNotify` 메서드 [OnFieldChange](/previous-versions/windows/desktop/ms715961)에 [OnRowChange](/previous-versions/windows/desktop/ms722694), 및 [OnRowsetChange](/previous-versions/windows/desktop/ms722669). 구현 하는 경우이 클래스에서 상속 하는 경우는 `IRowsetNotify` 인터페이스를 해야 하는 방법만 구현할 수 있습니다. 다른 방법에 대 한 빈 구현을 직접 제공 해야 합니다.  
+## <a name="members"></a>멤버
+
+### <a name="methods"></a>메서드
+
+|||
+|-|-|
+|[OnFieldChange](#onfieldchange)|열의 값을 변경한의 소비자를 게 알립니다.|
+|[OnRowChange](#onrowchange)|첫 번째 행을 변경 또는 전체 행에 영향을 주는 변경 소비자를 게 알립니다.|
+|[OnRowsetChange](#onrowsetchange)|전체 행 집합에 영향을 미치는 변경의 소비자를 게 알립니다.|
+
+## <a name="remarks"></a>설명
+
+참조 [알림 수신](../../data/oledb/receiving-notifications.md) 에서 소비자 연결 지점 인터페이스를 구현 하는 방법에 대 한 합니다.
+
+`IRowsetNotifyImpl` 더미 구현을 제공 `IRowsetNotify`에 대 한 빈 함수를 사용 하 여 합니다 `IRowsetNotify` 메서드 [OnFieldChange](/previous-versions/windows/desktop/ms715961)에 [OnRowChange](/previous-versions/windows/desktop/ms722694), 및 [OnRowsetChange](/previous-versions/windows/desktop/ms722669). 구현 하는 경우이 클래스에서 상속 하는 경우는 `IRowsetNotify` 인터페이스를 해야 하는 방법만 구현할 수 있습니다. 다른 방법에 대 한 빈 구현을 직접 제공 해야 합니다.
 
 ## <a name="onfieldchange"></a> Irowsetnotifyimpl:: Onfieldchange
 
-열의 값을 변경한의 소비자를 게 알립니다.  
-  
-### <a name="syntax"></a>구문  
-  
+열의 값을 변경한의 소비자를 게 알립니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-STDMETHOD(OnFieldChange)(   
-/* [in] */ IRowset* /* pRowset */,  
-/* [in] */ HROW /* hRow */,  
-/* [in] */ DBORDINAL /* cColumns */,  
-/* [size_is][in] */ DBORDINAL /* rgColumns */ [] ,  
-/* [in] */ DBREASON /* eReason */,  
-/* [in] */ DBEVENTPHASE /* ePhase */,  
-/* [in] */ BOOL /* fCantDeny */)  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+STDMETHOD(OnFieldChange)( 
+/* [in] */ IRowset* /* pRowset */,
+/* [in] */ HROW /* hRow */,
+/* [in] */ DBORDINAL /* cColumns */,
+/* [size_is][in] */ DBORDINAL /* rgColumns */ [] ,
+/* [in] */ DBREASON /* eReason */,
+/* [in] */ DBEVENTPHASE /* ePhase */,
+/* [in] */ BOOL /* fCantDeny */)
+```
 
-참조 [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961) 매개 변수 설명에 대 한 합니다.  
-  
-### <a name="return-value"></a>반환 값  
+#### <a name="parameters"></a>매개 변수
 
-참조 [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961) 에 대 한 설명 값을 반환 합니다.  
-  
-### <a name="remarks"></a>설명  
+참조 [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961) 매개 변수 설명에 대 한 합니다.
 
-이 메서드를 래핑하는 [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961) 메서드. 자세한 내용은 OLE DB 프로그래머 참조에서 해당 메서드의 설명을 참조하십시오.  
+### <a name="return-value"></a>반환 값
+
+참조 [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961) 에 대 한 설명 값을 반환 합니다.
+
+### <a name="remarks"></a>설명
+
+이 메서드를 래핑하는 [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961) 메서드. 자세한 내용은 OLE DB 프로그래머 참조에서 해당 메서드의 설명을 참조하십시오.
 
 ## <a name="onrowchange"></a> Irowsetnotifyimpl:: Onrowchange
 
-첫 번째 행을 변경 또는 전체 행에 영향을 주는 변경 소비자를 게 알립니다.  
-  
-### <a name="syntax"></a>구문  
-  
+첫 번째 행을 변경 또는 전체 행에 영향을 주는 변경 소비자를 게 알립니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-STDMETHOD(OnRowChange)(   
-/* [in] */ IRowset* /* pRowset */,  
-/* [in] */ DBCOUNTITEM /* cRows */,  
-/* [size_is][in] */ const HROW /* rghRows*/ [] ,  
-/* [in] */ DBREASON /* eReason */,  
-/* [in] */ DBEVENTPHASE /* ePhase */,  
-/* [in] */ BOOL /* fCantDeny */)  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+STDMETHOD(OnRowChange)( 
+/* [in] */ IRowset* /* pRowset */,
+/* [in] */ DBCOUNTITEM /* cRows */,
+/* [size_is][in] */ const HROW /* rghRows*/ [] ,
+/* [in] */ DBREASON /* eReason */,
+/* [in] */ DBEVENTPHASE /* ePhase */,
+/* [in] */ BOOL /* fCantDeny */)
+```
 
-참조 [irowsetnotify:: Onrowchange](/previous-versions/windows/desktop/ms722694) 매개 변수 설명에 대 한 합니다.  
-  
-### <a name="return-value"></a>반환 값  
+#### <a name="parameters"></a>매개 변수
 
-참조 [irowsetnotify:: Onrowchange](/previous-versions/windows/desktop/ms722694) 에 대 한 설명 값을 반환 합니다.  
-  
-### <a name="remarks"></a>설명  
+참조 [irowsetnotify:: Onrowchange](/previous-versions/windows/desktop/ms722694) 매개 변수 설명에 대 한 합니다.
 
-이 메서드를 래핑하는 [irowsetnotify:: Onrowchange](/previous-versions/windows/desktop/ms722694) 메서드. 자세한 내용은 OLE DB 프로그래머 참조에서 해당 메서드의 설명을 참조하십시오. 
+### <a name="return-value"></a>반환 값
+
+참조 [irowsetnotify:: Onrowchange](/previous-versions/windows/desktop/ms722694) 에 대 한 설명 값을 반환 합니다.
+
+### <a name="remarks"></a>설명
+
+이 메서드를 래핑하는 [irowsetnotify:: Onrowchange](/previous-versions/windows/desktop/ms722694) 메서드. 자세한 내용은 OLE DB 프로그래머 참조에서 해당 메서드의 설명을 참조하십시오.
 
 ## <a name="onrowsetchange"></a> Irowsetnotifyimpl:: Onrowsetchange
 
-전체 행 집합에 영향을 미치는 변경의 소비자를 게 알립니다.  
-  
-### <a name="syntax"></a>구문  
-  
+전체 행 집합에 영향을 미치는 변경의 소비자를 게 알립니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-STDMETHOD(OnRowsetChange)(   
-/* [in] */ IRowset* /* pRowset */,  
-/* [in] */ DBREASON /* eReason */,  
-/* [in] */ DBEVENTPHASE /* ePhase */,  
-/* [in] */ BOOL /* fCantDeny */)  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+STDMETHOD(OnRowsetChange)( 
+/* [in] */ IRowset* /* pRowset */,
+/* [in] */ DBREASON /* eReason */,
+/* [in] */ DBEVENTPHASE /* ePhase */,
+/* [in] */ BOOL /* fCantDeny */)
+```
 
-참조 [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669) 매개 변수 설명에 대 한 합니다.  
-  
-### <a name="return-value"></a>반환 값  
+#### <a name="parameters"></a>매개 변수
 
-참조 [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669) 에 대 한 설명 값을 반환 합니다.  
-  
-### <a name="remarks"></a>설명  
+참조 [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669) 매개 변수 설명에 대 한 합니다.
+
+### <a name="return-value"></a>반환 값
+
+참조 [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669) 에 대 한 설명 값을 반환 합니다.
+
+### <a name="remarks"></a>설명
 
 이 메서드를 래핑하는 [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669) 메서드. 자세한 내용은 OLE DB 프로그래머 참조에서 해당 메서드의 설명을 참조하십시오.
-  
-## <a name="see-also"></a>참고 항목  
+
+## <a name="see-also"></a>참고 항목
 
 [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[IRowsetNotify](/previous-versions/windows/desktop/ms712959)   
+[IRowsetNotify](/previous-versions/windows/desktop/ms712959)
 [IRowsetNotifyCP 클래스](../../data/oledb/irowsetnotifycp-class.md)

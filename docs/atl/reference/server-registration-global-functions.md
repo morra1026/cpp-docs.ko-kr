@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c43e28e035691b04181bef2162de828f3271a600
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: c8a2935d5b1c32298215b0ebfcf7382dafd259b3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082756"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052943"
 ---
 # <a name="server-registration-global-functions"></a>서버 등록 전역 함수
 
@@ -38,7 +38,7 @@ ms.locfileid: "49082756"
 |[AtlComModuleUnregisterServer](#atlcommoduleunregisterserver)|이 함수는 개체 맵의 모든 개체를 등록 취소하기 위해 호출됩니다.|
 |[AtlComModuleRegisterClassObjects](#atlcommoduleregisterclassobjects)|이 함수는 클래스 개체를 등록하기 위해 호출됩니다.|
 |[AtlComModuleRevokeClassObjects](#atlcommodulerevokeclassobjects)|이 함수는 COM 모듈에서 클래스 개체를 해지 하 라고 합니다.|
-|[AtlComModuleGetClassObject](#atlcommodulegetclassobject)|이 함수는 클래스 개체를 가져와 호출 됩니다.|  
+|[AtlComModuleGetClassObject](#atlcommodulegetclassobject)|이 함수는 클래스 개체를 가져와 호출 됩니다.|
 
 ## <a name="requirements"></a>요구 사항
 

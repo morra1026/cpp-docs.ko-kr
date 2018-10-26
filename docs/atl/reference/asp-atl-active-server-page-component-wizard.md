@@ -16,18 +16,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31ac9d8ab0200d8dd56bbca3c82eb0ebec32388b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 210ef0d41cd0653718908b10ad64cd6004886c64
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46015974"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077753"
 ---
 # <a name="asp-atl-active-server-page-component-wizard"></a>ASP, ATL Active Server Page 구성 요소 마법사
 
 ATL Active Server 페이지 구성 요소 마법사의이 페이지를 사용 하 여 ASP 구성 요소와 관련 된 상태 및 정보 처리에 대 한 선택적 설정을 지정 합니다.
 
-- **선택적 메서드**  
+- **선택적 메서드**
 
    선택적 ASP 메서드 추가 **OnStartPage** 하 고 **OnEndPage**, 개체입니다. Active Server Pages 내장 개체를 설정 하려면이 옵션을 선택 해야 합니다. 기본적으로 선택 됩니다.
 
@@ -35,7 +35,7 @@ ATL Active Server 페이지 구성 요소 마법사의이 페이지를 사용 �
 
    [OnStartPage](https://msdn.microsoft.com/library/ms691624.aspx) 스크립트 개체에 액세스 하려고 처음으로 호출 됩니다. **OnEndPage** 개체가 완료 되 면 호출 되는 스크립트를 처리 합니다.
 
-- **내장 개체**  
+- **내장 개체**
 
    선택 해야 합니다 **OnStartPage/OnEndPage** ASP 내장 개체를 설정 하는 옵션입니다.
 

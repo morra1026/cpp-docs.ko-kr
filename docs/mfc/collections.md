@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b6f2fdeb02fbc5e57bbba58f685d21133841279
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 72bae0d985c81478321109c3c02c07e6b1386028
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412862"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069908"
 ---
 # <a name="collections"></a>컬렉션
 
@@ -53,15 +53,15 @@ Microsoft Foundation Class 라이브러리는 개체 그룹을 관리하기 위�
 
 - 목록
 
-     목록 클래스는 이중으로 링크된 목록으로 구현되는 정렬되었고 인덱싱되지 않은 요소 목록을 제공합니다. 목록에는 "머리"와 "꼬리"가 포함되며, 머리 또는 꼬리에서 요소를 추가 또는 제거하거나, 가운데에서 요소를 삽입 또는 삭제는 작업은 속도가 매우 빠릅니다.
+   목록 클래스는 이중으로 링크된 목록으로 구현되는 정렬되었고 인덱싱되지 않은 요소 목록을 제공합니다. 목록에는 "머리"와 "꼬리"가 포함되며, 머리 또는 꼬리에서 요소를 추가 또는 제거하거나, 가운데에서 요소를 삽입 또는 삭제는 작업은 속도가 매우 빠릅니다.
 
 - 배열
 
-     배열 클래스는 개체에 대해 동적으로 크기가 조정되고, 정렬되었으며, 정수로 인덱싱된 배열을 제공합니다.
+   배열 클래스는 개체에 대해 동적으로 크기가 조정되고, 정렬되었으며, 정수로 인덱싱된 배열을 제공합니다.
 
 - 맵(사전이라고도 부름)
 
-     맵은 키 개체를 값 개체와 연결하는 컬렉션입니다.
+   맵은 키 개체를 값 개체와 연결하는 컬렉션입니다.
 
 ##  <a name="_core_the_template_based_collection_classes"></a> 템플릿 기반 컬렉션 클래스
 

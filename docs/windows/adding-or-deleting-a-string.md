@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1e26af845071e5765b30320a86f8d048d2eb12e6
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: b3800a99a6c3ae22b34f1c70a7a688ae523b7a67
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083764"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50061644"
 ---
 # <a name="adding-or-deleting-a-string-resource-c"></a>추가 또는 삭제 문자열 리소스 (c + +)
 
@@ -73,4 +73,4 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[문자열 편집기](../windows/string-editor.md)  
+[문자열 편집기](../windows/string-editor.md)

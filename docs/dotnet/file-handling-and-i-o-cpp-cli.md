@@ -35,12 +35,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 1ee17fe577f30735ca78661394c432519d0a4050
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f6fa8dcf1488b693b53cde591c548122767f1af7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46397002"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075114"
 ---
 # <a name="file-handling-and-io-ccli"></a>파일 처리 및 I/O(C++/CLI)
 .NET Framework를 사용 하 여 다양 한 파일 작업 방법을 보여 줍니다.
@@ -182,6 +182,7 @@ int main()
    return 0;
 }
 ```
+
 ## <a name="read_text"></a> 텍스트 파일 읽기
 
 다음 코드 예제에서는 열고 사용 하 여 한 번에 텍스트 파일을 한 줄씩 읽는 방법을 보여 줍니다.는 <xref:System.IO.StreamReader> 에 정의 된 클래스는 <xref:System.IO?displayProperty=fullName> 네임 스페이스입니다. 이 클래스 인스턴스의 텍스트 파일을 여는 고 된 <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=fullName> 메서드 사용은 각 줄.

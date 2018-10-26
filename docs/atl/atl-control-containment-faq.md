@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28e22df4eba5a12806221beea1966d1c1cdeae46
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: af14755b9be9413feb3a519d09200577c9260c5a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46052919"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053711"
 ---
 # <a name="atl-control-containment-faq"></a>ATL 컨트롤 포함 FAQ
 
@@ -37,7 +37,7 @@ ms.locfileid: "46052919"
 |[CAxWindow2T](../atl/reference/caxwindow2t-class.md)|래핑하는 **"AtlAxWinLic80"** 창 만들기 창, 컨트롤 만들기 및/또는 사용이 허가 된 컨트롤을 창에 연결 및 호스트 개체에서 인터페이스 포인터를 검색에 대 한 메서드를 제공 합니다.|
 |[CComCompositeControl](../atl/reference/ccomcompositecontrol-class.md)|대화 상자 리소스를 기반으로 하는 ActiveX 컨트롤 클래스에 대 한 기본 클래스로 작동 합니다. 이러한 컨트롤 다른 ActiveX 컨트롤을 포함할 수 있습니다.|
 |[CAxDialogImpl](../atl/reference/caxdialogimpl-class.md)|대화 상자 리소스를 기반으로 하는 대화 상자 클래스에 대 한 기본 클래스로 작동 합니다. 이러한 대화 상자는 ActiveX 컨트롤을 포함할 수 있습니다.|
-|[CWindow](../atl/reference/cwindow-class.md)|메서드를 제공 합니다 [GetDlgControl](../atl/reference/cwindow-class.md#getdlgcontrol), 해당 호스트 창의 ID를 지정 된 컨트롤에 인터페이스 포인터를 반환 됩니다. Windows API 래퍼에 의해 노출 되는 또한 `CWindow` 일반적으로 창 관리를 용이 합니다.|  
+|[CWindow](../atl/reference/cwindow-class.md)|메서드를 제공 합니다 [GetDlgControl](../atl/reference/cwindow-class.md#getdlgcontrol), 해당 호스트 창의 ID를 지정 된 컨트롤에 인터페이스 포인터를 반환 됩니다. Windows API 래퍼에 의해 노출 되는 또한 `CWindow` 일반적으로 창 관리를 용이 합니다.|
 
 ## <a name="what-is-the-atl-control-hosting-api"></a>새로운 ATL 컨트롤 호스팅 API?
 
@@ -62,11 +62,11 @@ ATL의 컨트롤 호스팅 API는 ActiveX 컨트롤 컨테이너 역할을 허�
 처음 7 개의 함수 호출 [AtlAxWinInit](reference/composite-control-global-functions.md#atlaxwininit) 암시적으로 합니다.
 
 > [!NOTE]
->  컨트롤 호스팅 API는 ActiveX 컨트롤 포함에 대 한 ATL의 지원의 기초를 구성 합니다. 그러나 방법이 일반적으로 활용 하거나 ATL의 래퍼 클래스를 최대한 활용 하는 경우 이러한 함수를 직접 호출할 필요는 없습니다. 자세한 내용은 [는 ATL 클래스 용이 하 게 ActiveX 컨트롤 포함](which-atl-classes-facilitate-activex-control-containment-q.md)합니다.  
+>  컨트롤 호스팅 API는 ActiveX 컨트롤 포함에 대 한 ATL의 지원의 기초를 구성 합니다. 그러나 방법이 일반적으로 활용 하거나 ATL의 래퍼 클래스를 최대한 활용 하는 경우 이러한 함수를 직접 호출할 필요는 없습니다. 자세한 내용은 [는 ATL 클래스 용이 하 게 ActiveX 컨트롤 포함](which-atl-classes-facilitate-activex-control-containment-q.md)합니다.
 
 ## <a name="what-is-atlaxwin100"></a>AtlAxWin100 이란?
 
-`AtlAxWin100` ATL의 컨트롤 호스팅 기능을 제공 하는 데 도움이 되는 창 클래스의 이름이입니다. 이 클래스의 인스턴스를 만들면 창 프로시저 창과 연결 된 호스트 개체를 만들고 창의 제목으로 지정 하는 컨트롤을 사용 하 여 로드 컨트롤 호스팅 API를 자동으로 사용 합니다. 
+`AtlAxWin100` ATL의 컨트롤 호스팅 기능을 제공 하는 데 도움이 되는 창 클래스의 이름이입니다. 이 클래스의 인스턴스를 만들면 창 프로시저 창과 연결 된 호스트 개체를 만들고 창의 제목으로 지정 하는 컨트롤을 사용 하 여 로드 컨트롤 호스팅 API를 자동으로 사용 합니다.
 
 ## <a name="when-do-i-need-to-call-atlaxwininit"></a>AtlAxWinInit를 호출 해야 하는 경우는 합니까?
 

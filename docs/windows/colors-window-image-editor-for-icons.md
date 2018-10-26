@@ -21,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ae58ae7cf09257b399fd21d7c34890b829394b98
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a65959ffc149b93c6d9b28667647d8f49cfc1f2d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46430594"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063239"
 ---
 # <a name="colors-window-image-editor-for-icons"></a>색상 창(아이콘에 대한 이미지 편집기)
 
@@ -36,8 +36,8 @@ ms.locfileid: "46430594"
 
 2. 합니다 **색 표시기**, 전경색 및 배경색 및 화면색 및 반전색 선택 기가 보여 줍니다.
 
-   ![색상 창은](../windows/media/vccolorswindow.gif "vcColorsWindow")  
-색상 창
+   ![색상 창은](../windows/media/vccolorswindow.gif "vcColorsWindow")<br/>
+   색상 창
 
 > [!NOTE]
 > **색 화면** 하 고 **반전색** 도구 아이콘 및 커서에만 사용할 수 있습니다.

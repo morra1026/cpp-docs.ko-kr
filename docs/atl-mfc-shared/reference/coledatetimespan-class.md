@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be0e05d61d4949deaee683c5b8f43d18e0501d23
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: 5e50fe341ff52916d16b3c006e438fe2bfa99154
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49808981"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082842"
 ---
 # <a name="coledatetimespan-class"></a>COleDateTimeSpan 클래스
 
@@ -157,7 +157,7 @@ COleDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 *dblSpanSrc*<br/>
 복사할 새 일 수가 `COleDateTimeSpan` 개체입니다.
 
-*lDays*하십시오 *nHours*하십시오 *nMins*, *nSecs*  
+*lDays*하십시오 *nHours*하십시오 *nMins*, *nSecs*<br/>
 복사할 새 날짜 및 시간 값을 나타내며 `COleDateTimeSpan` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -217,10 +217,10 @@ CString Format(UINT nID) const;
 
 이 함수에 대 한 폼에 대 한 간단한 설명은 다음과 같습니다.
 
-**형식 (** *벗어나거나* **)**  
+**형식 (** *벗어나거나* **)**<br/>
 이 폼에서와 같이 백분율 기호 (%) 뒤에 나오는 특별 한 서식 지정 코드를 포함 하는 형식 문자열을 사용 하 여 값의 서식을 지정 `printf`합니다. 서식 문자열은 함수에 매개 변수로 전달 됩니다.
 
-**형식 (** *nID* **)**  
+**형식 (** *nID* **)**<br/>
 이 폼에서와 같이 백분율 기호 (%) 뒤에 나오는 특별 한 서식 지정 코드를 포함 하는 형식 문자열을 사용 하 여 값의 서식을 지정 `printf`합니다. 서식 문자열 리소스입니다. 이 문자열 리소스의 ID 매개 변수로 전달 됩니다.
 
 ### <a name="example"></a>예제
@@ -388,11 +388,11 @@ DateTimeSpanStatus GetStatus() const throw();
 반환 값으로 정의 됩니다는 `DateTimeSpanStatus` 내에 정의 된 형식 열거는 `COleDateTimeSpan` 클래스.
 
 ```
-enum DateTimeSpanStatus{  
-   valid = 0,  
-   invalid = 1,  
-   null = 2,  
-};  
+enum DateTimeSpanStatus{
+   valid = 0,
+   invalid = 1,
+   null = 2,
+};
 ```
 
 이러한 상태 값의 간략 한 설명을 다음 목록을 참조 합니다.
@@ -585,11 +585,11 @@ DateTimeSpanStatus m_status;
 ### <a name="remarks"></a>설명
 
 ```
-enum DateTimeSpanStatus{  
-   valid = 0,  
-   invalid = 1,  
-   null = 2,  
-   };  
+enum DateTimeSpanStatus{
+   valid = 0,
+   invalid = 1,
+   null = 2,
+   };
 ```
 
 이러한 상태 값의 간략 한 설명을 다음 목록을 참조 합니다.
@@ -694,7 +694,7 @@ void SetDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lDays*하십시오 *nHours*하십시오 *nMins*, *nSecs*  
+*lDays*하십시오 *nHours*하십시오 *nMins*, *nSecs*<br/>
 이에 복사할 날짜 범위 및 시간 범위 값을 나타내는 `COleDateTimeSpan` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -739,11 +739,11 @@ void SetStatus(DateTimeSpanStatus status) throw();
 합니다 *상태* 매개 변수 값으로 정의 됩니다 합니다 `DateTimeSpanStatus` 열거 형식 내에 정의 된를 `COleDateTimeSpan` 클래스입니다.
 
 ```
-enum DateTimeSpanStatus{  
-   valid = 0,  
-   invalid = 1,  
-   null = 2,  
-   };  
+enum DateTimeSpanStatus{
+   valid = 0,
+   invalid = 1,
+   null = 2,
+   };
 ```
 
 이러한 상태 값의 간략 한 설명을 다음 목록을 참조 합니다.

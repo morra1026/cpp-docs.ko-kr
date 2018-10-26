@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3aea9e17d17008642f9421beb47be38cac401132
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4e94fa412b76107dde90d3a6a664ec68c6b6bdaf
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46071317"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078796"
 ---
 # <a name="temporary-objects"></a>임시 개체
 
@@ -41,9 +41,9 @@ ms.locfileid: "46071317"
                     //   value.
     ```
 
-     반환 값이 다른 개체에 복사되지 않기 때문에 임시 개체가 만들어집니다. 임시 개체가 만들어지는 보다 일반적인 경우는 오버로드된 연산자 함수를 호출해야 하는 식을 계산하는 경우입니다. 이러한 오버로드된 연산자 함수는 다른 개체에 자주 복사되지 않는 사용자 정의 형식을 반환합니다.
+   반환 값이 다른 개체에 복사되지 않기 때문에 임시 개체가 만들어집니다. 임시 개체가 만들어지는 보다 일반적인 경우는 오버로드된 연산자 함수를 호출해야 하는 식을 계산하는 경우입니다. 이러한 오버로드된 연산자 함수는 다른 개체에 자주 복사되지 않는 사용자 정의 형식을 반환합니다.
 
-     `ComplexResult = Complex1 + Complex2 + Complex3` 식을 참조하십시오. `Complex1 + Complex2` 식이 계산되고 결과가 임시 개체에 저장됩니다. 다음으로, 식 *임시* `+ Complex3` 계산 된 결과에 복사한 `ComplexResult` (가정 대입 연산자 오버 로드 되지).
+   `ComplexResult = Complex1 + Complex2 + Complex3` 식을 참조하십시오. `Complex1 + Complex2` 식이 계산되고 결과가 임시 개체에 저장됩니다. 다음으로, 식 *임시* `+ Complex3` 계산 된 결과에 복사한 `ComplexResult` (가정 대입 연산자 오버 로드 되지).
 
 - 캐스팅 결과를 사용자 정의 형식에 저장하려는 경우. 지정된 형식의 개체를 사용자 정의 형식으로 명시적으로 변환하는 경우 새 개체는 임시 개체로 구성됩니다.
 

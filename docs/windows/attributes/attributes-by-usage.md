@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 49e298af793655bb3ea3854909a16dd4db03c6a3
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 7dc5519fbef10ca6c369bcffacacb8351dbc0390
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328183"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060431"
 ---
 # <a name="attributes-by-usage"></a>용도별 특성
 
@@ -43,7 +43,7 @@ ms.locfileid: "49328183"
 
 ## <a name="module-attributes"></a>모듈 특성
 다음 특성에만 적용 될 수는 [모듈](module-cpp.md) 특성입니다.
-  
+
 |특성|설명|
 |---------------|-----------------|
 |[helpstringdll](helpstringdll.md)|문서 문자열 조회 (지역화)를 수행 하는 데 DLL의 이름을 지정 합니다.|
@@ -85,7 +85,6 @@ ms.locfileid: "49328183"
 - 오버 로드 된 메서드가 허용 됩니다.
 
 지정 하지 않는 경우는 [uuid](uuid-cpp-attributes.md) 특성 및 다른 특성 프로젝트 동일한 인터페이스 이름을 사용 하 여, 동일한 GUID가 생성 됩니다.
-
 
 ## <a name="see-also"></a>참고 항목
 

@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d050f27688d97cd3ef0352eed00f4dadb1fe6d98
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 96bcaf768ece46c22422fb3d98b85def7c57ed6b
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403788"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056596"
 ---
 # <a name="creating-stack-and-queue-collections"></a>스택 및 큐 컬렉션 만들기
 
@@ -40,9 +40,9 @@ ms.locfileid: "46403788"
 
 1. 기존 MFC 목록 클래스 중 하나에서 새 목록 클래스를 파생 하 고 스택 작업의 기능을 지원 하기 위해 더 많은 멤버 함수를 추가 합니다.
 
-     다음 예제에서는 요소 스택의 맨 위에 있는 요소를 미리 보고 하면 스택에 푸시 및 스택의 맨 위에 있는 요소를 팝 하는 멤버 함수를 추가 하는 방법을 보여 줍니다.
+   다음 예제에서는 요소 스택의 맨 위에 있는 요소를 미리 보고 하면 스택에 푸시 및 스택의 맨 위에 있는 요소를 팝 하는 멤버 함수를 추가 하는 방법을 보여 줍니다.
 
-     [!code-cpp[NVC_MFCCollections#20](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_1.h)]
+   [!code-cpp[NVC_MFCCollections#20](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_1.h)]
 
 이 방법은 기본 표시는 `CObList` 클래스입니다. 호출할 수 `CObList` 멤버 함수를 있는지 여부는 스택에 대 한 것이 좋습니다.
 
@@ -54,9 +54,9 @@ ms.locfileid: "46403788"
 
 1. Microsoft Foundation Class 라이브러리를 사용 하 여 제공 되는 미리 정의 된 목록 클래스 중 하나에서 새 목록 클래스를 파생 하 고 큐 작업의 의미 체계를 지원 하기 위해 더 많은 멤버 함수를 추가 합니다.
 
-     다음 예제에서는 큐의 앞에서 요소를 받고 큐의 끝에 요소를 추가 하는 멤버 함수를 추가할 수 있습니다 하는 방법을 보여 줍니다.
+   다음 예제에서는 큐의 앞에서 요소를 받고 큐의 끝에 요소를 추가 하는 멤버 함수를 추가할 수 있습니다 하는 방법을 보여 줍니다.
 
-     [!code-cpp[NVC_MFCCollections#21](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_2.h)]
+   [!code-cpp[NVC_MFCCollections#21](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_2.h)]
 
 ## <a name="see-also"></a>참고 항목
 

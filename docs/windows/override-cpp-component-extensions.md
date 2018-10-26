@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fc124ffcdd0ff428c4ef696bf54a27eb9b0ee7d8
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 1d97558dc50adc0bac8758d0821badff14707c04
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328456"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056141"
 ---
 # <a name="override--ccli-and-ccx"></a>재정의 (C + + /cli 및 C + + /cli CX)
 
@@ -55,7 +55,7 @@ struct X : public I1 {
 
 다음 코드 예제에 따르면 **재정의** Windows 런타임 컴파일에서 사용할 수 있습니다.
 
-```cpp 
+```cpp
 // override_keyword_2.cpp
 // compile with: /ZW /c
 ref struct I1 {

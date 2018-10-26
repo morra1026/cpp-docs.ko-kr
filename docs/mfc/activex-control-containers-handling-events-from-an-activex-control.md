@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7bd8c505c857082732e56ff2b4bf1a5bed76647
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 913bc04533668e6576a84641937992504f49390a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420311"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080080"
 ---
 # <a name="activex-control-containers-handling-events-from-an-activex-control"></a>ActiveX 컨트롤 컨테이너: ActiveX 컨트롤에서 보낸 이벤트 처리
 
@@ -34,7 +34,6 @@ ms.locfileid: "46420311"
 
 >[!IMPORTANT]
 > ActiveX는 새로운 개발에 사용 되지 해야 하는 레거시 기술입니다. ActiveX를 대체 하는 최신 기술에 대 한 자세한 내용은 참조 하세요. [ActiveX 컨트롤](activex-controls.md)합니다.
-
 
 > [!NOTE]
 >  이 문서는 대화 상자 기반 ActiveX 컨트롤 컨테이너 프로젝트 라는 컨테이너와 절차 및 코드의 예로 Circ 라는 포함 된 컨트롤을 사용 합니다.
@@ -70,7 +69,7 @@ ms.locfileid: "46420311"
 
 1. 속성 창에서 포함 된 ActiveX 컨트롤의 컨트롤 ID를 선택 합니다. 예를 들어 사용 하 여 `IDC_CIRCCTRL1`입니다.
 
-     속성 창에는 포함 된 ActiveX 컨트롤에서 실행 될 수 있는 이벤트의 목록을 표시 합니다. 이미 굵게 표시 된 멤버 함수에 할당 하는 처리기 함수가 있습니다.
+   속성 창에는 포함 된 ActiveX 컨트롤에서 실행 될 수 있는 이벤트의 목록을 표시 합니다. 이미 굵게 표시 된 멤버 함수에 할당 하는 처리기 함수가 있습니다.
 
 1. 원하는 이벤트를 처리 하는 대화 상자 클래스를 선택 합니다. 예를 들어 선택 **클릭**합니다.
 

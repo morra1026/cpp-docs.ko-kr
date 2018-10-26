@@ -16,16 +16,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b46b5c3b4750957c548becfcc5143f5eed858f71
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 0df8cb1def78e3a7b564f268eb1b3b0a2069fb11
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791259"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062849"
 ---
 # <a name="stand-alone-attributes"></a>독립 실행형 특성
+
 독립 실행형 특성을 c + + 키워드에서 작동 하지 않습니다 하지만 코드 줄에 비슷합니다. 독립 실행형 특성 문은 줄의 끝에 세미콜론이 필요합니다.
-  
+
+## <a name="stand-alone-attribute-list"></a>독립 실행형 특성 목록
+
 |특성|설명|
 |---------------|-----------------|
 |[cpp_quote](cpp-quote.md)|생성된 된 헤더 파일의 따옴표 없이 지정된 된 문자열을 내보냅니다.|
@@ -40,10 +43,10 @@ ms.locfileid: "48791259"
 |[include](include-cpp.md)|생성된 된.idl 파일에 포함할 하나 이상의 헤더 파일을 지정 합니다.|
 |[includelib](includelib-cpp.md)|생성된 된.idl 파일에 포함 될.idl 또는.h 파일을 사용 하면 됩니다.|
 |[library_block](library-block.md)|.Idl 파일의 라이브러리 블록 내부 구문을 배치합니다.|
-|[모듈](module-cpp.md)|.Idl 파일의 라이브러리 블록을 정의합니다.|
+|[module](module-cpp.md)|.Idl 파일의 라이브러리 블록을 정의합니다.|
 |[no_injected_text](no-injected-text.md)|컴파일러 특성 사용으로 인해 코드를 삽입 하지 못하도록 방지 합니다.|
 |[pragma](pragma.md)|생성된 된.idl 파일의 따옴표 없이 지정된 된 문자열을 내보냅니다.|
-  
+
 ## <a name="see-also"></a>참고 항목
 
 [용도별 특성](attributes-by-usage.md)

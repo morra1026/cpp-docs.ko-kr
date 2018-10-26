@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b62de2a1e6cba6ecbb29521518f5442ab002ddf3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7907935971fae7d990c651410e5b76982b798075
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381948"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060522"
 ---
 # <a name="servers-implementing-server-documents"></a>서버: 서버 문서 구현
 
@@ -36,7 +36,7 @@ ms.locfileid: "46381948"
 
 1. 구현 된 `OnGetEmbeddedItem` 서버 문서 클래스의 멤버 함수입니다.
 
-     `OnGetEmbeddedItem` 컨테이너 응용 프로그램의 사용자가 만들거나 포함 된 항목을 편집할 때 호출 됩니다. 전체 문서를 나타내는 항목을 반환 합니다. 개체 이어야 합니다 하 `COleServerItem`-클래스를 파생 합니다.
+   `OnGetEmbeddedItem` 컨테이너 응용 프로그램의 사용자가 만들거나 포함 된 항목을 편집할 때 호출 됩니다. 전체 문서를 나타내는 항목을 반환 합니다. 개체 이어야 합니다 하 `COleServerItem`-클래스를 파생 합니다.
 
 1. 재정의 `Serialize` 문서의 내용을 serialize 할 멤버 함수입니다. 사용 하지 않으면 해당 데이터를 나타내는 기본 문서에서 server 항목 목록을 serialize 할 필요가 없습니다. 자세한 내용은 *서버 항목 구현* 문서의 [서버: 서버 항목](../mfc/servers-server-items.md)합니다.
 

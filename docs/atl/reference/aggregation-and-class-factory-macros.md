@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a9cc4a142a0aefc4937df493fa87552464b4294
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7115d73319dc7b76386367fb93329906cd72a027
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46043419"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073411"
 ---
 # <a name="aggregation-and-class-factory-macros"></a>집계 및 클래스 팩터리 매크로
 
@@ -51,7 +51,7 @@ ms.locfileid: "46043419"
 |[DECLARE_ONLY_AGGREGATABLE](#declare_only_aggregatable)|개체를 집계 해야 합니다는 선언 합니다.|
 |[DECLARE_POLY_AGGREGATABLE](#declare_poly_aggregatable)|알 수 없는 외부의 값을 확인 하 고 집계할 수 또는 집계할 수 없는, 해당 개체를 선언 합니다.|
 |[DECLARE_PROTECT_FINAL_CONSTRUCT](#declare_protect_final_construct)|외부 개체는 내부 개체를 생성 하는 동안 삭제 되지 않도록 보호합니다.|
-|[DECLARE_VIEW_STATUS](#declare_view_status)|컨테이너에 VIEWSTATUS 플래그를 지정합니다.|  
+|[DECLARE_VIEW_STATUS](#declare_view_status)|컨테이너에 VIEWSTATUS 플래그를 지정합니다.|
 
 ## <a name="requirements"></a>요구 사항
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 52b5c5bea282e4ebb4106d8e9c2fede40f375ae3
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: a06353780b78339c39ebb20e9bc2f770694f47c2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083614"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073256"
 ---
 # <a name="dbcolumn"></a>db_column
 
@@ -65,7 +65,7 @@ ms.locfileid: "49083614"
 
 사용 하 여 **db_column** 함께에서 합니다 [db_table](db-table.md) 하거나 [db_command](db-command.md) 특성입니다.
 
-컴파일러는 클래스 이름을 소비자 특성 공급자가이 특성 클래스에 적용 될 때 \_ *YourClassName*접근자를 여기서 *YourClassName* 제공한 이름인는 클래스 및 컴파일러 라는 클래스를 만들 수도 됩니다 *YourClassName*에서 파생 되는 \_ *YourClassName*접근자입니다.  클래스 뷰에 두 클래스 모두 표시됩니다.
+소비자 특성 공급자가 클래스에 이 특성을 적용하는 경우 컴파일러는 클래스의 이름을 _\_*YourClassName*Accessor로 바꿉니다. 여기서 *YourClassName*은 클래스에 지정한 이름입니다. 컴파일러는 또한 \_*YourClassName*Accessor에서 파생되는 *YourClassName*이라는 클래스를 만듭니다.  클래스 뷰에 두 클래스 모두 표시됩니다.
 
 응용 프로그램에서 사용 되는이 특성의 예제는 예제를 보려면 [AtlAgent](https://github.com/Microsoft/VCSamples), 및 [MultiRead](https://github.com/Microsoft/VCSamples)합니다.
 
@@ -125,4 +125,4 @@ class CProducts {
 ## <a name="see-also"></a>참고 항목
 
 [OLE DB 소비자 특성](ole-db-consumer-attributes.md)<br/>
-[클래스 특성](class-attributes.md)  
+[클래스 특성](class-attributes.md)

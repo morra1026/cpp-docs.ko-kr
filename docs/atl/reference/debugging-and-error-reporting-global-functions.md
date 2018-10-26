@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3bef300671894e054ddf9b1ca0ab9dcf3b135370
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f035ac105dee4e668ca8bee0bab18c2a31fd027f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46019423"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069154"
 ---
 # <a name="debugging-and-error-reporting-global-functions"></a>디버깅 및 오류 보고 전역 함수
 
@@ -47,11 +47,11 @@ HRESULT AtlHresultFromLastError();
 
 ### <a name="remarks"></a>설명
 
-`AtlHresultFromLastError` 호출 `GetLastError` 마지막 오류를 가져오려면 HRESULT_FROM_WIN32 매크로 사용 하는 HRESULT를 변환한 후 오류를 반환 합니다.  
+`AtlHresultFromLastError` 호출 `GetLastError` 마지막 오류를 가져오려면 HRESULT_FROM_WIN32 매크로 사용 하는 HRESULT를 변환한 후 오류를 반환 합니다.
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlcomcli.h  
+**헤더:** atlcomcli.h
 
 ##  <a name="atlhresultfromwin32"></a>  AtlHresultFromWin32
 
@@ -71,11 +71,11 @@ AtlHresultFromWin32(DWORD error);
 Win32 오류 코드 HRESULT HRESULT_FROM_WIN32 매크로 사용 하 여 변환 합니다.
 
 > [!NOTE]
->  사용 하는 대신 `HRESULT_FROM_WIN32(GetLastError())`에서 함수를 사용 하 여 [AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror)합니다.  
+>  사용 하는 대신 `HRESULT_FROM_WIN32(GetLastError())`에서 함수를 사용 하 여 [AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror)합니다.
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlcomcli.h  
+**헤더:** atlcomcli.h
 
 ##  <a name="atlreporterror"></a>  AtlReportError
 
@@ -166,7 +166,7 @@ HRESULT WINAPI AtlReportError(
 [!code-cpp[NVC_ATL_COM#52](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_1.cpp)]
 
 > [!CAUTION]
->  사용 하지 않는 `AtlReportError` c + +에서 catch 처리기입니다. 이러한 함수의 재정의 중 일부 사용 하 여 ATL 문자열 변환 매크로 내부적으로 사용 된 `_alloca` 내부적으로 작동 합니다. 사용 하 여 `AtlReportError` c + + catch 처리기 c + + catch 처리기에서 예외를 일으킬 수 있습니다.  
+>  사용 하지 않는 `AtlReportError` c + +에서 catch 처리기입니다. 이러한 함수의 재정의 중 일부 사용 하 여 ATL 문자열 변환 매크로 내부적으로 사용 된 `_alloca` 내부적으로 작동 합니다. 사용 하 여 `AtlReportError` c + + catch 처리기 c + + catch 처리기에서 예외를 일으킬 수 있습니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -203,11 +203,11 @@ ATL 프로젝트에 대 한 오류 발생 시 ATL에서 사용할이 함수의 �
 
 ### <a name="example"></a>예제
 
-[!code-cpp[NVC_ATL_Windowing#95](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_2.h)]  
+[!code-cpp[NVC_ATL_Windowing#95](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_2.h)]
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atldef.h  
+**헤더:** atldef.h
 
 ##  <a name="atlthrowlastwin32"></a>  AtlThrowLastWin32
 
@@ -225,7 +225,7 @@ inline void AtlThrowLastWin32();
 
 함수가 throw _ATL_NO_EXCEPTIONS ATL 프로젝트에 정의 되어 있지 않으면, 한 [CAtlException](../../atl/reference/catlexception-class.md)합니다.
 
-_ATL_NO_EXCEPTIONS 정의 된 경우 함수는 예외를 throw 하는 대신 어설션 실패가 발생 합니다.  
+_ATL_NO_EXCEPTIONS 정의 된 경우 함수는 예외를 throw 하는 대신 어설션 실패가 발생 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -37,12 +37,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 042fe1a446137546654c8f0cfd5ee9be8072dcee
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2b62de5b8303cfdd0516b143654fb9eb2e767eb2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46091831"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059820"
 ---
 # <a name="csnapinitemimpl-class"></a>CSnapInItemImpl 클래스
 
@@ -119,7 +119,7 @@ TRUE 이면 개체는 스냅인 확장; 그렇지 않으면 FALSE입니다.
 이 메서드 구현 Win32 함수 [IExtendContextMenu::AddMenuItems](https://msdn.microsoft.com/library/aa814841)합니다.
 
 ```
-AddMenuItems(  
+AddMenuItems(
     LPCONTEXTMENUCALLBACK piCallback,
     long* pInsertionAllowed,
     DATA_OBJECT_TYPES type);
@@ -181,7 +181,7 @@ Command(long lCommandID, DATA_OBJECT_TYPES type);
 이 메서드 구현 Win32 함수 [IExtendPropertySheet::CreatePropertyPages](https://msdn.microsoft.com/library/aa814846)합니다.
 
 ```
-CreatePropertyPages(  
+CreatePropertyPages(
     LPPROPERTYSHEETCALLBACK lpProvider,
     long handle,
     IUnknown* pUnk,
@@ -393,7 +393,7 @@ QueryPagesFor(DATA_OBJECT_TYPES type);
 지정 된 메뉴 삽입 플래그를 수정 하려면이 함수를 호출 *pInsertionAllowed*, 스냅인 개체에 대 한 합니다.
 
 ```
-void SetMenuInsertionFlags(  
+void SetMenuInsertionFlags(
     bool bBeforeInsertion,
     long* pInsertionAllowed);
 ```
@@ -425,7 +425,7 @@ void SetMenuInsertionFlags(
 도구 모음을 만들기 전에 스냅인 개체의 모든 도구 모음 단추 스타일을 수정 하려면이 함수를 호출 합니다.
 
 ```
-void SetToolbarButtonInfo(  
+void SetToolbarButtonInfo(
     UINT id,
     BYTE* fsState,
     BYTE* fsType);
@@ -469,7 +469,7 @@ void SetToolbarButtonInfo(
 스냅인 개체의 상황에 맞는 메뉴에 삽입 하기 전에 메뉴 항목을 수정 하려면이 함수를 호출 합니다.
 
 ```
-void UpdateMenuState(  
+void UpdateMenuState(
     UINT id,
     LPTSTR pBuf,
     UINT* flags);

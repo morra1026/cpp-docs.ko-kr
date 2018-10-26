@@ -38,81 +38,81 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3a0b7bb8f430f2e132413fbb8bca2563c4fd7014
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: cded311abd2956317861bac484e3c32a4e14f5cb
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083712"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50072332"
 ---
 # <a name="icolumnsinfoimpl-class"></a>IColumnsInfoImpl 클래스
 
-구현을 제공 합니다 [IColumnsInfo](/previous-versions/windows/desktop/ms724541) 인터페이스입니다.  
-  
+구현을 제공 합니다 [IColumnsInfo](/previous-versions/windows/desktop/ms724541) 인터페이스입니다.
+
 ## <a name="syntax"></a>구문
 
 ```cpp
-template <class T>  
-class ATL_NO_VTABLE IColumnsInfoImpl :   
-   public IColumnsInfo,    
-   public CDBIDOps  
-```  
-  
-### <a name="parameters"></a>매개 변수  
+template <class T>
+class ATL_NO_VTABLE IColumnsInfoImpl :
+   public IColumnsInfo,  
+   public CDBIDOps
+```
+
+### <a name="parameters"></a>매개 변수
 
 *T*<br/>
-클래스에서 파생 된 `IColumnsInfoImpl`합니다.  
+클래스에서 파생 된 `IColumnsInfoImpl`합니다.
 
-## <a name="requirements"></a>요구 사항  
+## <a name="requirements"></a>요구 사항
 
-**헤더:** atldb.h  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="methods"></a>메서드  
-  
-|||  
-|-|-|  
-|[GetColumnInfo](#getcolumninfo)|대부분의 소비자에 필요한 열 메타 데이터를 반환 합니다.|  
-|[MapColumnIDs](#mapcolumnids)|지정된 된 열 Id로 식별 되는 행 집합의 열 서 수의 배열을 반환 합니다.|  
-  
-## <a name="remarks"></a>설명  
+**헤더:** atldb.h
 
-행 집합 및 명령에는 필수 인터페이스입니다. 공급자의 동작을 수정 하려면 `IColumnsInfo` 공급자 열 지도 수정 해야 하는 구현 합니다.  
+## <a name="members"></a>멤버
+
+### <a name="methods"></a>메서드
+
+|||
+|-|-|
+|[GetColumnInfo](#getcolumninfo)|대부분의 소비자에 필요한 열 메타 데이터를 반환 합니다.|
+|[MapColumnIDs](#mapcolumnids)|지정된 된 열 Id로 식별 되는 행 집합의 열 서 수의 배열을 반환 합니다.|
+
+## <a name="remarks"></a>설명
+
+행 집합 및 명령에는 필수 인터페이스입니다. 공급자의 동작을 수정 하려면 `IColumnsInfo` 공급자 열 지도 수정 해야 하는 구현 합니다.
 
 ## <a name="getcolumninfo"></a> Icolumnsinfoimpl:: Getcolumninfo
 
-대부분의 소비자에 필요한 열 메타 데이터를 반환 합니다.  
-  
-### <a name="syntax"></a>구문  
-  
-```cpp
-STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,  
-   DBCOLUMNINFO** prgInfo,  
-   OLECHAR** ppStringsBuffer);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+대부분의 소비자에 필요한 열 메타 데이터를 반환 합니다.
 
-참조 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704) 에 *OLE DB Programmer's Reference*합니다.  
+### <a name="syntax"></a>구문
+
+```cpp
+STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,
+   DBCOLUMNINFO** prgInfo,
+   OLECHAR** ppStringsBuffer);
+```
+
+#### <a name="parameters"></a>매개 변수
+
+참조 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="mapcolumnids"></a> Icolumnsinfoimpl:: Mapcolumnids
 
-지정된 된 열 Id로 식별 되는 행 집합의 열 서 수의 배열을 반환 합니다.  
-  
-### <a name="syntax"></a>구문  
-  
-```cpp
-STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,  
-   const DBID rgColumnIDs[],  
-   DBORDINAL rgColumns[]);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+지정된 된 열 Id로 식별 되는 행 집합의 열 서 수의 배열을 반환 합니다.
 
-참조 [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200) 에 *OLE DB Programmer's Reference*합니다.  
-  
-## <a name="see-also"></a>참고 항목  
+### <a name="syntax"></a>구문
+
+```cpp
+STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,
+   const DBID rgColumnIDs[],
+   DBORDINAL rgColumns[]);
+```
+
+#### <a name="parameters"></a>매개 변수
+
+참조 [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200) 에 *OLE DB Programmer's Reference*합니다.
+
+## <a name="see-also"></a>참고 항목
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

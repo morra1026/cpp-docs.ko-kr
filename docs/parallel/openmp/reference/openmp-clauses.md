@@ -43,12 +43,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d19a2b1859012a56bdaf3c454f8b92758179bed9
-ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
+ms.openlocfilehash: ea394ca09a086229a8718f4e7e1bfa55115652bc
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49809072"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056225"
 ---
 # <a name="openmp-clauses"></a>OpenMP 절
 
@@ -56,21 +56,21 @@ OpenMP API에서 사용 하는 절에 대 한 링크를 제공 합니다.
 
 Visual c + +에서는 다음 OpenMP 절을 지원합니다.
 
-절                             | 설명
----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-[copyin](#copyin)                  | 스레드가 마스터 스레드에 값에 대 한 액세스 하도록 허용 된 [threadprivate](openmp-directives.md#threadprivate) 변수입니다.
-[copyprivate](#copyprivate)        | 하나 이상의 변수는 모든 스레드 간에 공유 해야 지정 합니다.
-[default](#default-openmp)         | 병렬 영역 범위가 지정 되지 않은 변수 동작을 지정 합니다.
-[firstprivate](#firstprivate)      | 병렬 구문 전에 존재 하므로 각 스레드에 변수의 자체 인스턴스에 있어야 하 고 변수 값을 사용 하 여 변수를 초기화 해야 한다는 지정 합니다.
-[if](#if-openmp)                   | 직렬 또는 병렬로 루프를 실행할지 여부를 지정 합니다.
-[lastprivate](#lastprivate)        | 변수는 바깥쪽 컨텍스트에서 버전 어떤 스레드가 실행 마지막 반복 (루프에 대 한 구성) 또는 마지막 섹션 (#pragma 섹션)의 개인 버전 설정 되어 있는지를 지정 합니다.
-[nowait](#nowait)                  | 지시문에서 암시적 장애물을 재정의합니다.
-[num_threads](#num-threads)        | 스레드 팀에서 스레드 수를 설정합니다.
-[ordered](#ordered-openmp-clauses) | 병렬에 필요한 [에 대 한](openmp-directives.md#for-openmp) 문 경우는 [정렬](openmp-directives.md#ordered-openmp-directives) 지시문은 루프에서 사용 됩니다.
-[private](#private-openmp)         | 각 스레드는 자체 인스턴스 변수를 지정 합니다.
-[reduction](#reduction)            | 각 스레드에 private는 하나 이상의 변수 끝의 병렬 영역 감소 작업의 제목을 지정 합니다.
-[schedule](#schedule)              | 에 적용 된 [에 대 한](openmp-directives.md#for-openmp) 지시문입니다.
-[shared](#shared-openmp)           | 하나 이상의 변수는 모든 스레드 간에 공유 해야 지정 합니다.
+|절|설명|
+|------|-----------|
+|[copyin](#copyin)|스레드가 마스터 스레드에 값에 대 한 액세스 하도록 허용 된 [threadprivate](openmp-directives.md#threadprivate) 변수입니다.|
+|[copyprivate](#copyprivate)|하나 이상의 변수는 모든 스레드 간에 공유 해야 지정 합니다.|
+|[default](#default-openmp)|병렬 영역 범위가 지정 되지 않은 변수 동작을 지정 합니다.|
+|[firstprivate](#firstprivate)|병렬 구문 전에 존재 하므로 각 스레드에 변수의 자체 인스턴스에 있어야 하 고 변수 값을 사용 하 여 변수를 초기화 해야 한다는 지정 합니다.|
+|[if](#if-openmp)|직렬 또는 병렬로 루프를 실행할지 여부를 지정 합니다.|
+|[lastprivate](#lastprivate)|변수는 바깥쪽 컨텍스트에서 버전 어떤 스레드가 실행 마지막 반복 (루프에 대 한 구성) 또는 마지막 섹션 (#pragma 섹션)의 개인 버전 설정 되어 있는지를 지정 합니다.|
+|[nowait](#nowait)|지시문에서 암시적 장애물을 재정의합니다.|
+|[num_threads](#num-threads)|스레드 팀에서 스레드 수를 설정합니다.|
+|[ordered](#ordered-openmp-clauses)|병렬에 필요한 [에 대 한](openmp-directives.md#for-openmp) 문 경우는 [정렬](openmp-directives.md#ordered-openmp-directives) 지시문은 루프에서 사용 됩니다.|
+|[private](#private-openmp)|각 스레드는 자체 인스턴스 변수를 지정 합니다.|
+|[reduction](#reduction)|각 스레드에 private는 하나 이상의 변수 끝의 병렬 영역 감소 작업의 제목을 지정 합니다.|
+|[schedule](#schedule)|에 적용 된 [에 대 한](openmp-directives.md#for-openmp) 지시문입니다.|
+|[shared](#shared-openmp)|하나 이상의 변수는 모든 스레드 간에 공유 해야 지정 합니다.|
 
 ## <a name="copyin"></a>copyin
 
@@ -401,7 +401,7 @@ num_threads(num)
 
 ### <a name="remarks"></a>설명
 
-합니다 `num_threads` 절에 동일한 기능을 합니다 [omp_set_num_threads](../../../parallel/openmp/reference/omp-set-num-threads.md) 함수입니다.
+합니다 `num_threads` 절에 동일한 기능을 합니다 [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) 함수입니다.
 
 `num_threads` 다음 지시문에 적용 됩니다.
 

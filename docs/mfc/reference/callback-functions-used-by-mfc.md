@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be34fa84a05d329d26d1bc4aaacbed0c2b0a76e3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f3093ca60b222512e517400f478fc9d635a6f867
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409196"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073775"
 ---
 # <a name="callback-functions-used-by-mfc"></a>MFC에서 사용하는 콜백 함수
 
@@ -127,7 +127,6 @@ BOOL CALLBACK EXPORT AbortFunc(
 ### <a name="remarks"></a>설명
 
 실제 이름을의 설명 섹션에 설명 된 대로 내보내야 [cdc:: setabortproc](../../mfc/reference/cdc-class.md#setabortproc)합니다.
-
 
 ## <a name="see-also"></a>참고 항목
 

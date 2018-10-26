@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1781077896465d8a7a1d925262c3fd0696d24380
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9a077cd90055a17f9aff71d67d2cb9a511a1caf0
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410561"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078039"
 ---
 # <a name="mfc-library-versions"></a>MFC 라이브러리 버전
 
@@ -95,7 +95,7 @@ IDE에서 유니코드 문자열 및 문자 지원 단일 바이트, 멀티 바�
 
 MFC에 대 한 정적 라이브러리에는 다음 명명 규칙을 사용합니다. 라이브러리 이름에는 폼
 
-> *u*AFX*c**d*.LIB
+> <em>u</em>AFX<em>cd</em>합니다. LIB
 
 여기서 기울임꼴 소문자로 표시 문자는 해당 의미는 다음 표와 지정자에 대 한 자리 표시자:
 

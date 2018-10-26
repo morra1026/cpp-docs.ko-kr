@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4cff60e5316202842b2ee22c5c6ba10813839b5d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 127e5187f2e6511279633ffe9b5e26b24014f6b2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46035853"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070649"
 ---
 # <a name="application-settings-atl-project-wizard"></a>응용 프로그램 설정, ATL 프로젝트 마법사
 
@@ -31,15 +31,15 @@ ms.locfileid: "46035853"
 
 세 가지 서버 유형 중 하나를 선택 합니다.
 
-- **동적 연결 라이브러리 (DLL)**  
+- **동적 연결 라이브러리 (DLL)**
 
    프로세스 서버를 만들려면 선택 합니다.
 
-- **실행 파일 (EXE)**  
+- **실행 파일 (EXE)**
 
    로컬-out-of-process 서버를 만들려면 선택 합니다. 이 옵션에는 MFC 나 COM + 1.0에 대 한 지원을 허용 하지 않습니다. 프록시/스텁 코드 병합 허용 하지 않습니다.
 
-- **서비스 (EXE)**  
+- **서비스 (EXE)**
 
    Windows 시작 될 때 백그라운드에서 실행 되는 Windows 응용 프로그램을 만들려면 선택 합니다. 이 옵션은 MFC 또는 COM + 1.0 지원을 허용 하지 않거나 프록시/스텁 코드 병합 허용 하지 않습니다.
 
@@ -48,15 +48,15 @@ ms.locfileid: "46035853"
 > [!NOTE]
 > 모든 추가 옵션은 DLL 프로젝트에만 사용할 수 있습니다.
 
-- **프록시/스텁 코드 병합 허용**  
+- **프록시/스텁 코드 병합 허용**
 
    선택 된 **프록시/스텁 코드 병합 허용** 인터페이스 마샬링 필요할 때 편의 위해 확인란 합니다. 이 옵션을이 선택 배치 MIDL에서 생성 된 프록시 및 스텁 코드 동일한 서버로 실행 합니다.
 
-- **MFC 지원**  
+- **MFC 지원**
 
    개체에 MFC 지원이 포함 되도록 지정 하려면 선택 합니다. 이 옵션 클래스와 포함 된 함수 중 하나를 액세스할 수 있도록 프로젝트가 MFC 라이브러리에 연결 합니다.
 
-- **COM + 1.0 지원**  
+- **COM + 1.0 지원**
 
    COM + 1.0 구성 요소를 지원 하도록 프로젝트 빌드 설정을 수정 하려면 선택 합니다. 라이브러리의 표준 목록 외에도 COM + 1.0 구성 요소 관련 라이브러리 comsvcs.lib가 추가 됩니다.
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c695dbee2b92a2a3fbc5de0830f298b81e63ad8d
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: fbb7bc07ab3b3942f1a3a6fa20c69327c0bd1a53
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791146"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063759"
 ---
 # <a name="out-c"></a>out(C++)
 
@@ -36,11 +36,11 @@ ms.locfileid: "48791146"
 
 ## <a name="remarks"></a>설명
 
-**아웃** c + + 특성에 동일한 기능을 합니다 [out](/windows/desktop/Midl/out-idl) MIDL 특성입니다.
+**out** C++ 특성에는 [out](/windows/desktop/Midl/out-idl) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 
-예를 참조 하세요 [bindable](bindable.md) 의 샘플 사용에 대 한 **아웃**합니다.
+[out](bindable.md) 의 샘플 사용에 대해서는 **bindable**에 대한 예제를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -53,11 +53,11 @@ ms.locfileid: "48791146"
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-특성 컨텍스트에 대 한 자세한 내용은 참조 하세요. [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 [IDL 특성](idl-attributes.md)<br/>
 [매개 변수 특성](parameter-attributes.md)<br/>
 [defaultvalue](defaultvalue.md)<br/>
-[ID](id.md)  
+[ID](id.md)

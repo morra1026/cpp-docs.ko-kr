@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a276868dfdb14f754cac3938e052e82b7ab22a6f
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 1eea2e3158d980c77863640d0342f8b074bf7849
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328612"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080249"
 ---
 # <a name="mfc-classes"></a>MFC 클래스
 
@@ -1316,6 +1316,4 @@ MFC 라이브러리의 모든 Window 클래스의 기본적인 기능을 제공�
 
 [MFC 데스크톱 응용 프로그램](../../mfc/mfc-desktop-applications.md)<br/>
 클래스, 전역 함수, 전역 변수 및 MFC 라이브러리를 구성하는 매크로에 대한 항목을 볼 수 있는 링크를 포함합니다.
-
-
 

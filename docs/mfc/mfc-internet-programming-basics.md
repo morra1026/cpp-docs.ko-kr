@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7134ea1a822fa61ec0d82592145f1fd3c5ecc6aa
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b2be02e6cac5dac226f7b04cd627a292e3761980
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418309"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082679"
 ---
 # <a name="mfc-internet-programming-basics"></a>MFC 인터넷 프로그래밍 기본 사항
 
@@ -91,6 +91,4 @@ Microsoft 인터넷 기술에 대 한 자세한 내용은 참조는 [Microsoft �
 Windows SDK의 OLE 섹션 OLE 프로그래밍에 대 한 추가 정보를 포함합니다. 이 정보를 직접 보다는 MFC 클래스를 통해 Win32 WinInet 함수를 사용 하는 방법에 대 한 세부 정보를 제공 합니다. 또한 인터넷 기술에 대 한 개요 정보를 포함 합니다.
 
 ## <a name="see-also"></a>참고 항목
-
-
 

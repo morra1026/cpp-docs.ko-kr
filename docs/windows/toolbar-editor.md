@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0bb329b60b72aae268252ae3ddbcc2c63d4a18f6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 273893f5164c4e89b3516c43b5414e5487af376e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389693"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063213"
 ---
 # <a name="toolbar-editor-c"></a>도구 모음 편집기 (c + +)
 
@@ -43,8 +43,7 @@ ms.locfileid: "46389693"
 
 합니다 **도구 모음** 편집기 창에는 이미지 편집기 창과 동일한 지 단추 이미지 뷰 두 개가 표시 됩니다. 분할줄이 두 창을 구분합니다. 분할줄을 한 쪽에서 다른 쪽으로 끌면 창의 상대적 크기를 변경할 수 있습니다. 활성 창에는 선택 테두리가 표시됩니다. 이미지 뷰 두 개 위에 제목 도구 모음이 있습니다.
 
-![도구 모음 편집기](../mfc/media/vctoolbareditor.gif "vcToolbarEditor")  
-도구 모음 편집기
+![도구 모음 편집기](../mfc/media/vctoolbareditor.gif "vcToolbarEditor") 도구 모음 편집기
 
 합니다 **도구 모음** 편집기는 비슷합니다는 **이미지** 편집기 기능에서입니다. 메뉴 항목, 그래픽 도구 및 비트맵 그리드는와 동일 합니다 **이미지** 편집기입니다. 메뉴 명령에 있는지를 **이미지** 메뉴 간을 전환할 수 있도록 합니다 **도구 모음** 편집기 및 **이미지** 편집기입니다. 사용 하 여 대 한 자세한 내용은 합니다 **그래픽** 도구 모음 **색** 팔레트 또는 **이미지** 메뉴 참조 [이미지 편집기](../windows/image-editor-for-icons.md)합니다.
 

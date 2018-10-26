@@ -16,33 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c882a8d4eb2510969401b4280eb66116ad220c77
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3f169b30394e3fdf893475a49946266143772eb7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440838"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078065"
 ---
 # <a name="noimplementation"></a>no_implementation
-**C + + 전용**  
-  
-래퍼 멤버 함수의 구현이 포함된 .tli 헤더를 생성하지 않습니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-no_implementation  
-```  
-  
-## <a name="remarks"></a>설명  
- 
-이 특성이 지정된 경우 형식 라이브러리 항목을 노출하는 선언이 포함된 .tlh 헤더가 .tli 헤더 파일을 포함하는 `#include` 문 없이 생성됩니다.  
-  
-이 특성은 함께에서 사용 [implementation_only](../preprocessor/implementation-only.md)합니다.  
-  
-**C + + 전용 종료**  
-  
-## <a name="see-also"></a>참고 항목  
- 
+**C + + 전용**
+
+래퍼 멤버 함수의 구현이 포함된 .tli 헤더를 생성하지 않습니다.
+
+## <a name="syntax"></a>구문
+
+```
+no_implementation
+```
+
+## <a name="remarks"></a>설명
+
+이 특성이 지정된 경우 형식 라이브러리 항목을 노출하는 선언이 포함된 .tlh 헤더가 .tli 헤더 파일을 포함하는 `#include` 문 없이 생성됩니다.
+
+이 특성은 함께에서 사용 [implementation_only](../preprocessor/implementation-only.md)합니다.
+
+**C + + 전용 종료**
+
+## <a name="see-also"></a>참고 항목
+
 [#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import 지시문](../preprocessor/hash-import-directive-cpp.md)

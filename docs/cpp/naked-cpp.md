@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89ab41c396f8602d16e2b2d88c3d83aeb7cdf21a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: cdf77589ea39de4d17ccad1e3ef369cf4f0ca24d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46018383"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080886"
 ---
 # <a name="naked-c"></a>naked(C++)
 
@@ -39,7 +39,6 @@ __declspec(naked) declarator
 ## <a name="remarks"></a>설명
 
 때문에 합니다 **naked** 특성 함수 정의에 관련이 없는 형식 한정자를 naked 함수는 확장 된 특성 구문을 사용 해야 합니다 하며 [__declspec](../cpp/declspec.md) 키워드입니다.
-
 
 함수는도 표시 하는 경우에 컴파일러는 naked 특성으로 표시 하는 함수에 대 한 인라인 함수를 생성할 수 없습니다는 [__forceinline](inline-functions-cpp.md) 키워드입니다.
 

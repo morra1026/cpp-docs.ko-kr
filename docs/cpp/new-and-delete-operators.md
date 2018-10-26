@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b205be3c2417453faa54c9d24ac28216ee0af5cf
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 447a03cec8beba331aedc8077a44dc9090fccbc6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46060538"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078533"
 ---
 # <a name="new-and-delete-operators"></a>new 및 delete 연산자
 
@@ -45,7 +45,6 @@ char *pch = new char[BUFFER_SIZE];
 저장소의 0 바이트가 요청 되는 경우 **new 연산자** 고유 개체에 대 한 포인터를 반환 합니다 (즉,에 대 한 호출을 반복 **new 연산자** 다른 포인터를 반환). 할당 요청에 대 한 메모리가 부족 한 경우 **new 연산자** std:: bad_alloc 예외를 throw 하거나 반환 **nullptr** throw 되지 않는에 연결한 경우 **new 연산자** 지원 합니다.
 
 메모리를 확보 하 고 할당;을 다시 시도 하려고 하는 루틴을 작성할 수 있습니다. 참조 [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) 자세한 내용은 합니다. 복구 체계에 대 한 자세한 내용은이 항목의 처리 메모리가 부족 하 여 섹션을 참조 합니다.
-
 
 두 범위가 **new 연산자** 기능은 다음 표에 설명 되어 있습니다.
 

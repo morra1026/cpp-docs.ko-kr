@@ -166,12 +166,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7c797cdb2b0950d0158e8a63294f1e2ea913512
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b238dedf9b4f638baf4ea2c9373e7658c90114cb
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436899"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069336"
 ---
 # <a name="cmdiframewndex-class"></a>CMDIFrameWndEx 클래스
 
@@ -230,7 +230,7 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 |[CMDIFrameWndEx::IsMenuBarAvailable](#ismenubaravailable)|프레임 창 메뉴 모음에 있는지 여부를 결정 합니다.|
 |[CMDIFrameWndEx::IsPointNearDockSite](#ispointneardocksite)|도킹 사이트 근처에 지정된 된 지점 인지 여부를 결정 합니다.|
 |[CMDIFrameWndEx::IsPrintPreview](#isprintpreview)|프레임 창을 인쇄 미리 보기 모드 인지 여부를 결정 합니다.|
-|[CMDIFrameWndEx::LoadFrame](#loadframe)|리소스 정보에서 프레임 창을 만듭니다. (`CMDIFrameWnd::LoadFrame`를 재정의합니다.)|
+|[CMDIFrameWndEx::LoadFrame](#loadframe)|리소스 정보에서 프레임 창을 만듭니다. ( `CMDIFrameWnd::LoadFrame`을 재정의합니다.)|
 |[Cmdiframewndex:: Loadmdistate](#loadmdistate)|MDI 탭 그룹의 지정 된 레이아웃 및 이전에 열린된 문서의 목록을 로드합니다.|
 |[CMDIFrameWndEx::MDITabMoveToNextGroup](#mditabmovetonextgroup)|다음 또는 이전 탭된 그룹에 현재 활성 탭된 창에서 활성 탭을 이동합니다.|
 |[CMDIFrameWndEx::MDITabNewGroup](#mditabnewgroup)|단일 창에는 새 탭된 그룹을 만듭니다.|
@@ -251,9 +251,9 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 |[CMDIFrameWndEx::OnShowPopupMenu](#onshowpopupmenu)|팝업 메뉴가 활성화될 때 프레임워크에서 호출됩니다.|
 |[CMDIFrameWndEx::OnSizeMDIClient](#onsizemdiclient)|클라이언트 MDI 창 크기가 변경 될 때 프레임 워크에서 호출 됩니다.|
 |[CMDIFrameWndEx::OnTearOffMenu](#ontearoffmenu)|분리 막대가 있는 메뉴가 활성화될 때 프레임워크에서 호출됩니다.|
-|[CMDIFrameWndEx::OnUpdateFrameMenu](#onupdateframemenu)|프레임 메뉴를 업데이트 하기 위해 프레임 워크에서 호출 됩니다. (`CMDIFrameWnd::OnUpdateFrameMenu`를 재정의합니다.)|
+|[CMDIFrameWndEx::OnUpdateFrameMenu](#onupdateframemenu)|프레임 메뉴를 업데이트 하기 위해 프레임 워크에서 호출 됩니다. ( `CMDIFrameWnd::OnUpdateFrameMenu`을 재정의합니다.)|
 |[CMDIFrameWndEx::PaneFromPoint](#panefrompoint)|지정 된 위치를 포함 하는 도킹 창을 반환 합니다.|
-|`CMDIFrameWndEx::PreTranslateMessage`|클래스에서 사용 하는 [CWinApp](../../mfc/reference/cwinapp-class.md) 디스패치 되기 전에 창 메시지를 변환 하는 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수입니다.  (`CMDIFrameWnd::PreTranslateMessage`를 재정의합니다.)|
+|`CMDIFrameWndEx::PreTranslateMessage`|창 메시지가 [TranslateMessage](../../mfc/reference/cwinapp-class.md) 및 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) Windows 함수로 디스패치되기 전에 [CWinApp](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) 클래스가 이 메시지를 해석하는 데 사용됩니다.  ( `CMDIFrameWnd::PreTranslateMessage`을 재정의합니다.)|
 |[CMDIFrameWndEx::RecalcLayout](#recalclayout)|프레임 창의 레이아웃을 다시 계산 하기 위해 프레임 워크에서 호출 됩니다. (재정의 [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout).)|
 |[CMDIFrameWndEx::RemovePaneFromDockManager](#removepanefromdockmanager)|창을 등록을 취소 하 고 도킹 관리자에서 제거 합니다.|
 |[CMDIFrameWndEx::SaveMDIState](#savemdistate)|MDI 탭 그룹의 현재 레이아웃 및 이전에 열린된 문서의 목록을 저장합니다.|
@@ -831,7 +831,6 @@ void EnableWindowsDialog(
     LPCTSTR lpszMenuText,
     BOOL bShowAllways=FALSE,
     BOOL bShowHelpButton=FALSE);
-
 
 void EnableWindowsDialog(
     UINT uiMenuId,
@@ -2033,7 +2032,7 @@ virtual void WinHelp(
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 재정의 [cwnd:: Winhelp](../../mfc/reference/cwnd-class.md#winhelp)합니다.
+이 메서드는 [CWnd::WinHelp](../../mfc/reference/cwnd-class.md#winhelp)를 재정의합니다.
 
 ## <a name="see-also"></a>참고 항목
 

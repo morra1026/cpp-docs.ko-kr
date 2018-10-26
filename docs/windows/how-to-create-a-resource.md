@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 61105469abc25de38d0d9ae9a59755e08fd298b6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 23717c35d0590c88a4904e5b6b6ddb0e4c7ccffc
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438641"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071974"
 ---
 # <a name="how-to-create-a-resource"></a>방법: 리소스 파일 만들기
 
@@ -33,7 +33,7 @@ ms.locfileid: "46438641"
 
 1. .rc 파일에 포커스를 사용 하 여 [리소스 뷰](../windows/resource-view-window.md)를 클릭 합니다 **편집** 메뉴 선택 **리소스 추가** (에서.rc 파일을 마우스 오른쪽 단추로 클릭 **리소스 뷰** 선택한 **리소스 추가** 바로 가기 메뉴에서).
 
-   > [!NOTE] 
+   > [!NOTE]
    > 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.
 
 2. [리소스 추가 대화 상자](../windows/add-resource-dialog-box.md)에서 프로젝트에 추가할 리소스 형식을 선택합니다.
@@ -48,7 +48,7 @@ ms.locfileid: "46438641"
 
 ### <a name="to-create-a-new-resource-in-class-view"></a>클래스 뷰에서 새 리소스를 만들려면
 
-1. [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)클래스를 마우스 오른쪽 단추로 클릭 하 고 선택 **추가**, 클릭 **리소스 추가** 바로 가기 메뉴에서.
+1. [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)에서 클래스를 마우스 오른쪽 단추로 클릭하고 **추가**를 선택하고 바로 가기 메뉴에서 **리소스 추가** 를 클릭합니다.
 
 2. [리소스 추가 대화 상자](../windows/add-resource-dialog-box.md)에서 프로젝트에 추가할 리소스 형식을 선택합니다.
 
@@ -70,4 +70,4 @@ Win32
 
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 [리소스 편집기](../windows/resource-editors.md)<br/>
-[리소스 추가 대화 상자](../windows/add-resource-dialog-box.md)
+[Add Resource Dialog Box](../windows/add-resource-dialog-box.md)

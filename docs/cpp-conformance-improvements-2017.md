@@ -10,12 +10,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ebcb2e52f67cfe37c4954e530fd2b2393ae23b68
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: a4003868609d8ffd1ea3b29074bdd24c25442ad8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861696"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054451"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158"></a>Visual Studio 2017 버전 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158)의 C++ 규칙 향상입니다.
 
@@ -227,9 +227,9 @@ B b(42L); // now calls B(int)
 struct Derived;
 
 struct Base {
-    friend struct Derived;
+    friend struct Derived;
 private:
-    Base() {}
+    Base() {}
 };
 
 struct Derived : Base {};
@@ -247,9 +247,9 @@ C++17에서 `Derived`는 이제 집계 형식으로 간주되므로 전용 기�
 struct Derived;
 
 struct Base {
-    friend struct Derived;
+    friend struct Derived;
 private:
-    Base() {}
+    Base() {}
 };
 
 struct Derived : Base {
@@ -1375,7 +1375,7 @@ constexpr 정적 데이터 멤버는 이제 암시적으로 인라인이므로 �
 
 ```cpp
 struct X {
-    static constexpr int size = 3;
+    static constexpr int size = 3;
 };
 const int X::size; // C5041
 ```
@@ -1588,7 +1588,7 @@ D<int> d;
 
 ### <a name="constexpr-aggregate-initialization"></a>constexpr 집계 초기화
 
-이전 버전의 C++ 컴파일러가 constexpr 집계 초기화를 잘못 처리했습니다. aggregate-init-list에 요소가 너무 많은 잘못된 코드를 허용했으며 잘못된 codegen을 생성했습니다. 다음 코드는 이러한 코드의 예제입니다. 
+이전 버전의 C++ 컴파일러가 constexpr 집계 초기화를 잘못 처리했습니다. aggregate-init-list에 요소가 너무 많은 잘못된 코드를 허용했으며 잘못된 codegen을 생성했습니다. 다음 코드는 이러한 코드의 예제입니다.
 
 ```cpp
 #include <array>
@@ -1690,15 +1690,14 @@ struct S : Base<T> {
 
 C++ 표준에서는 사용자가 `std` 네임스페이스에 정방향 선언 또는 정의를 추가할 수 없습니다. `std` 네임스페이스 또는 std 네임스페이스 내의 네임스페이스에 선언 또는 정의를 추가하면 정의되지 않은 동작이 발생합니다.
 
-향후 Microsoft는 일부 STL 형식이 정의된 위치를 변경할 예정입니다. 이 경우 `std` 네임스페이스에 정방향 선언을 추가하는 기존 코드가 중단됩니다. 새로운 경고, C4643을 통해 이러한 소스 문제를 파악할 수 있습니다. 이 경고는 **/default** 모드에서 사용하도록 설정되며 기본적으로 해제되어 있습니다. 이것은 **/Wall** 또는 **/WX**로 컴파일되는 프로그램에 영향을 줍니다. 
+향후 Microsoft는 일부 STL 형식이 정의된 위치를 변경할 예정입니다. 이 경우 `std` 네임스페이스에 정방향 선언을 추가하는 기존 코드가 중단됩니다. 새로운 경고, C4643을 통해 이러한 소스 문제를 파악할 수 있습니다. 이 경고는 **/default** 모드에서 사용하도록 설정되며 기본적으로 해제되어 있습니다. 이것은 **/Wall** 또는 **/WX**로 컴파일되는 프로그램에 영향을 줍니다.
 
-이제 C4643: *C++ 표준에서는 std 네임스페이스에서 'vector' 정방향 선언이 허용되지 않습니다.* 코드가 발생합니다. 
-
+이제 C4643: *C++ 표준에서는 std 네임스페이스에서 'vector' 정방향 선언이 허용되지 않습니다.* 코드가 발생합니다.
 
 ```cpp
-namespace std { 
-    template<typename T> class vector; 
-} 
+namespace std {
+    template<typename T> class vector;
+}
 ```
 
 이 오류를 해결하려면 정방향 선언보다는 **include** 지시문을 사용합니다.
@@ -1714,106 +1713,106 @@ C++ 표준은 위임하는 생성자가 자신을 위임할 때 컴파일러가 
 이 오류가 없으면 다음 프로그램이 컴파일되지만 무한 루프가 생성됩니다.
 
 ```cpp
-class X { 
-public: 
-    X(int, int); 
+class X {
+public:
+    X(int, int);
     X(int v) : X(v){}
-}; 
+};
 ```
 
 무한 루프를 방지하려면 다른 생성자에 위임합니다.
 
 ```cpp
-class X { 
-public: 
+class X {
+public:
 
-    X(int, int); 
-    X(int v) : X(v, 0) {} 
-}; 
+    X(int, int);
+    X(int v) : X(v, 0) {}
+};
 ```
 
 ### <a name="offsetof-with-constant-expressions"></a>상수 식이 있는 offsetof
 
-지금까지 [offsetof](c-runtime-library/reference/offsetof-macro.md)는 [reinterpret_cast](cpp/reinterpret-cast-operator.md)가 필요한 매크로를 사용하여 구현되었습니다. 이는 상수 식을 필요로 하는 컨텍스트에서는 올바르지 않지만 Microsoft C++ 컴파일러는 일반적으로 허용합니다. STL의 일부로 제공되는 offsetof 매크로는 컴파일러 내장 함수(**__builtin_offsetof**)를 올바르게 사용하지만 많은 사람은 매크로 트릭을 사용하여 자신의 **offsetof**을 정의합니다.  
+지금까지 [offsetof](c-runtime-library/reference/offsetof-macro.md)는 [reinterpret_cast](cpp/reinterpret-cast-operator.md)가 필요한 매크로를 사용하여 구현되었습니다. 이는 상수 식을 필요로 하는 컨텍스트에서는 올바르지 않지만 Microsoft C++ 컴파일러는 일반적으로 허용합니다. STL의 일부로 제공되는 offsetof 매크로는 컴파일러 내장 함수(**__builtin_offsetof**)를 올바르게 사용하지만 많은 사람은 매크로 트릭을 사용하여 자신의 **offsetof**을 정의합니다.
 
 Visual Studio 2017 버전 15.8에서 컴파일러는 reinterpret_casts가 기본 모드로 표시될 수 있는 영역을 제한하여 코드가 표준 C++ 동작을 준수하도록 합니다. [/permissive-](build/reference/permissive-standards-conformance.md) 아래에서는 제약 조건이 더욱 엄격합니다. 상수 식을 요구하는 위치에서 offsetof 결과를 사용하면 C4644 *상수 식에 매크로 기반 offsetof 패턴을 사용하는 것은 표준이 아닙니다. 대신 C++ 표준 라이브러리에 정의된 offsetof를 사용하십시오.* 또는 C2975 *템플릿 인수가 잘못되었습니다. 컴파일 시간 상수 식이 필요합니다.* 라는 경고를 생성하는 코드가 발생할 수 있습니다.
 
-**/default** 및 **/std:c++17** 모드에서는 C4644가, **/permissive-** 모드에서는 C2975 코드가 발생합니다. 
+**/default** 및 **/std:c++17** 모드에서는 C4644가, **/permissive-** 모드에서는 C2975 코드가 발생합니다.
 
 ```cpp
-struct Data { 
-    int x; 
-}; 
+struct Data {
+    int x;
+};
 
-// Common pattern of user-defined offsetof 
-#define MY_OFFSET(T, m) (unsigned long long)(&(((T*)nullptr)->m)) 
+// Common pattern of user-defined offsetof
+#define MY_OFFSET(T, m) (unsigned long long)(&(((T*)nullptr)->m))
 
-int main() 
+int main()
 
-{ 
-    switch (0) { 
-    case MY_OFFSET(Data, x): return 0; 
-    default: return 1; 
-    } 
-} 
+{
+    switch (0) {
+    case MY_OFFSET(Data, x): return 0;
+    default: return 1;
+    }
+}
 ```
 
 이 오류를 해결하려면 \<cstddef>:를 통해 정의된 대로 **offsetof**를 사용하세요.
 
 ```cpp
-#include <cstddef>  
+#include <cstddef>
 
-struct Data { 
-    int x; 
-};  
+struct Data {
+    int x;
+};
 
-int main() 
-{ 
-    switch (0) { 
-    case offsetof(Data, x): return 0; 
-    default: return 1; 
-    } 
-} 
+int main()
+{
+    switch (0) {
+    case offsetof(Data, x): return 0;
+    default: return 1;
+    }
+}
 ```
-
 
 ### <a name="cv-qualifiers-on-base-classes-subject-to-pack-expansion"></a>팩 확장의 대상이 되는 기본 클래스의 CV 한정자
 
-이전 버전의 Microsoft C++ 컴파일러는 기본 클래스가 팩 확장의 대상이 될 경우 기본 클래스에 cv 한정자가 있음을 감지하지 못했습니다. 
+이전 버전의 Microsoft C++ 컴파일러는 기본 클래스가 팩 확장의 대상이 될 경우 기본 클래스에 cv 한정자가 있음을 감지하지 못했습니다.
 
-Visual Studio 2017 버전 15.8의 **/permissive-** 모드에서는 C3770 *'const S': 유효한 기본 클래스가 아닙니다.* 코드가 발생합니다. 
+Visual Studio 2017 버전 15.8의 **/permissive-** 모드에서는 C3770 *'const S': 유효한 기본 클래스가 아닙니다.* 코드가 발생합니다.
 
 ```cpp
-template<typename... T> 
-class X : public T... { };  
+template<typename... T>
+class X : public T... { };
 
-class S { };  
+class S { };
 
-int main() 
-{ 
-    X<const S> x; 
-} 
+int main()
+{
+    X<const S> x;
+}
 ```
+
 ### <a name="template-keyword-and-nested-name-specifiers"></a>템플릿 키워드 및 중첩된 이름 지정자
 
-**/permissive-** 모드에서 컴파일러는 종속된 중첩된 이름 지정자 뒤에 오는 경우 `template` 키워드가 템플릿 이름 앞에 오도록 요구합니다. 
+**/permissive-** 모드에서 컴파일러는 종속된 중첩된 이름 지정자 뒤에 오는 경우 `template` 키워드가 템플릿 이름 앞에 오도록 요구합니다.
 
 **/permissive-** 모드에서 다음 코드는 C7510: *'foo': 종속 템플릿 이름은 'template'과 함께 사용해야 합니다. 참고: 컴파일 중인 클래스 템플릿 인스턴스화 'X<T>'에 대한 참조를 확인하십시오.* 를 생성합니다.
 
 ```cpp
 template<typename T> struct Base
 {
-    template<class U> void foo() {} 
-}; 
+    template<class U> void foo() {}
+};
 
-template<typename T> 
-struct X : Base<T> 
-{ 
-    void foo() 
-    { 
-        Base<T>::foo<int>(); 
-    } 
-}; 
+template<typename T>
+struct X : Base<T>
+{
+    void foo()
+    {
+        Base<T>::foo<int>();
+    }
+};
 ```
 
 이 오류를 해결하려면 다음 예제에서 표시된 대로 `template` 키워드를 `Base<T>::foo<int>();` 문에 추가합니다.
@@ -1823,16 +1822,16 @@ template<typename T> struct Base
 {
     template<class U> void foo() {}
 };
- 
-template<typename T> 
-struct X : Base<T> 
-{ 
-    void foo() 
-    { 
+
+template<typename T>
+struct X : Base<T>
+{
+    void foo()
+    {
         // Add template keyword here:
-        Base<T>::template foo<int>(); 
-    } 
-}; 
+        Base<T>::template foo<int>();
+    }
+};
 ```
 
 ## <a name="see-also"></a>참고 항목

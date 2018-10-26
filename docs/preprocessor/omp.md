@@ -18,26 +18,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15491517ad95973d7eabf2998741dbcc89ca602b
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 8726499df30d26e35d4a554e7028af9ff2249549
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42538502"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080899"
 ---
 # <a name="omp"></a>omp
-모든 선택적 지시문 절과 함께 하나 이상의 OpenMP 지시문을 사용합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-#pragma omp directive  
-```  
-  
-## <a name="remarks"></a>설명  
- 
-참조 [OpenMP 지시문](../parallel/openmp/reference/openmp-directives.md) 자세한 내용은 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
+모든 선택적 지시문 절과 함께 하나 이상의 OpenMP 지시문을 사용합니다.
+
+## <a name="syntax"></a>구문
+
+```
+#pragma omp directive
+```
+
+## <a name="remarks"></a>설명
+
+참조 [OpenMP 지시문](../parallel/openmp/reference/openmp-directives.md) 자세한 내용은 합니다.
+
+## <a name="see-also"></a>참고 항목
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

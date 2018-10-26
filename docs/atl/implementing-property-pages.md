@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f69dab9dfc9216d1c56ed54730d5f94cbb58b1db
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f00e95aee0f3e16a979f4969a33b90746b4082ea
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46088737"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062407"
 ---
 # <a name="implementing-property-pages"></a>속성 페이지 구현
 
@@ -43,11 +43,11 @@ ATL을 사용 하 여 속성 페이지를 만들려면:
 
 - 필요에 따라 재정의 `IPropertyPageImpl` 아래 지침을 사용 하 여 메서드.
 
-   |IPropertyPageImpl 메서드|재정의 하려는 경우를 포함 하는 중...|노트|  
-   |------------------------------|----------------------------------|-----------|  
-   |[SetObjects](../atl/reference/ipropertypageimpl-class.md#setobjects)|페이지 및 지원 되는 인터페이스에 전달 되는 개체의 수에 대 한 기본 온전성 검사를 수행 합니다.|기본 클래스 구현을 호출 하기 전에 사용자 고유의 코드를 실행 합니다. 설정할 개체 예상과 따르지 않는 경우에 호출 가능한 한 빨리 장애 해야 있습니다.|  
-   |[활성화](../atl/reference/ipropertypageimpl-class.md#activate)|페이지의 사용자 인터페이스 (예를 들어, 개체에서 현재 속성 값을 사용 하 여 대화 상자 컨트롤을 설정, 컨트롤을 동적으로 만들거나 또는 다른 초기화를 수행)을 초기화 합니다.|기본 클래스에 업데이트 하려고 하기 전에 대화 상자 창 및 모든 컨트롤을 만들 수 있도록 코드 하기 전에 기본 클래스 구현을 호출 합니다.|  
-   |[적용](../atl/reference/ipropertypageimpl-class.md#apply)|속성 설정의 유효성을 검사 하 고 개체를 업데이트 합니다.|작동 하지 추적 외에도 호출 되므로 기본 클래스 구현을 호출 하지 않아도가 됩니다.|  
+   |IPropertyPageImpl 메서드|재정의 하려는 경우를 포함 하는 중...|노트|
+   |------------------------------|----------------------------------|-----------|
+   |[SetObjects](../atl/reference/ipropertypageimpl-class.md#setobjects)|페이지 및 지원 되는 인터페이스에 전달 되는 개체의 수에 대 한 기본 온전성 검사를 수행 합니다.|기본 클래스 구현을 호출 하기 전에 사용자 고유의 코드를 실행 합니다. 설정할 개체 예상과 따르지 않는 경우에 호출 가능한 한 빨리 장애 해야 있습니다.|
+   |[활성화](../atl/reference/ipropertypageimpl-class.md#activate)|페이지의 사용자 인터페이스 (예를 들어, 개체에서 현재 속성 값을 사용 하 여 대화 상자 컨트롤을 설정, 컨트롤을 동적으로 만들거나 또는 다른 초기화를 수행)을 초기화 합니다.|기본 클래스에 업데이트 하려고 하기 전에 대화 상자 창 및 모든 컨트롤을 만들 수 있도록 코드 하기 전에 기본 클래스 구현을 호출 합니다.|
+   |[적용](../atl/reference/ipropertypageimpl-class.md#apply)|속성 설정의 유효성을 검사 하 고 개체를 업데이트 합니다.|작동 하지 추적 외에도 호출 되므로 기본 클래스 구현을 호출 하지 않아도가 됩니다.|
    |[비활성화](../atl/reference/ipropertypageimpl-class.md#deactivate)|창 관련 항목을 정리 합니다.|기본 클래스 구현을 나타내는 속성 페이지 대화 상자를 제거 합니다. 대화 상자를 제거 하기 전에 정리 해야 할 경우에 기본 클래스를 호출 하기 전에 코드를 추가 해야 합니다.|
 
 속성 페이지 구현 예제를 참조 하세요. [예제: 속성 페이지 구현](../atl/example-implementing-a-property-page.md)합니다.

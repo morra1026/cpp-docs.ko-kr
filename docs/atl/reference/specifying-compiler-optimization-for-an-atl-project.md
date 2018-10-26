@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 622c0720f55e638d6640094f095e59d2d5e5f931
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f756da8f553d68e89dcbee737adbab75f256ae8d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46069341"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053125"
 ---
 # <a name="specifying-compiler-optimization-for-an-atl-project"></a>ATL 프로젝트에 대 한 컴파일러 최적화 지정
 
@@ -51,7 +51,7 @@ ATL_NO_VTABLE 매크로 확장 하 여 _ATL_DISABLE_NO_VTABLE를 정의 하지 �
 
 ATL_NO_VTABLE를 사용 해야 및 결과적으로 `declspec(novtable)`, 직접 만들 수 없는 기본 클래스로 합니다. 사용 하지 않아야 `declspec(novtable)` 프로젝트에서 가장 많이 파생 된 클래스를 사용 하 여 때문에이 클래스 (일반적으로 [CComObject](../../atl/reference/ccomobject-class.md)를 [CComAggObject](../../atl/reference/ccomaggobject-class.md), 또는 [CComPolyObject](../../atl/reference/ccompolyobject-class.md)) 프로젝트에 대해 vtable 포인터를 초기화합니다.
 
-가상 함수를 사용 하는 모든 개체의 생성자에서 호출 해야 `declspec(novtable)`합니다. 해당 호출을 이동 해야 합니다 [FinalConstruct](ccomobjectrootex-class.md#finalconstruct) 메서드.  
+가상 함수를 사용 하는 모든 개체의 생성자에서 호출 해야 `declspec(novtable)`합니다. 해당 호출을 이동 해야 합니다 [FinalConstruct](ccomobjectrootex-class.md#finalconstruct) 메서드.
 
 사용 해야 할지 확실 하지 않은 경우는 `declspec(novtable)` 한정자 ATL_NO_VTABLE 매크로, 모든 클래스 정의에서 제거 하거나 지정 하 여 전역적으로 비활성화할 수 있습니다
 

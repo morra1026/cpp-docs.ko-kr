@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67e5b086e57c90b9cb11779d8f3af167768a45fe
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 5b57b03af7c0a98e2bb8c70b6c0921930ebb1b9c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103349"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062641"
 ---
 # <a name="collections-ccx"></a>컬렉션(C++/CX)
 
@@ -30,14 +30,14 @@ C + + /CX 프로그램 가능 표준 템플릿 라이브러리 (STL) 컨테이�
 
 - [Platform::Collections::VectorView 클래스](../cppcx/platform-collections-vectorview-class.md) 및[Platform::Collections::MapView 클래스](../cppcx/platform-collections-mapview-class.md) 는 `Vector` 및 `Map`의 읽기 전용 버전입니다.
 
-- 반복기는 [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)에서 정의됩니다. 이러한 반복기는 STL 반복기에 대 한 요구 사항을 충족 하 고를 사용 하도록 설정 [std::find](../standard-library/algorithm-functions.md#find)하십시오 [수](../standard-library/algorithm-functions.md#count_if), 및 기타 STL 알고리즘에서 [Windows::Foundation::Collections](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.aspx) 인터페이스 형식 또는 [platform:: collections](../cppcx/platform-collections-namespace.md) 구체적 형식입니다. 예를 들어,이 C#에서 만들어진 하 고 STL 알고리즘을 적용 하는 Windows 런타임 구성 요소 컬렉션을 반복할 수 있습니다 의미 합니다.
+- 반복기는 [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)에서 정의됩니다. 이러한 반복기는 STL 반복기에 대한 요구 사항을 충족하며 모든 [Windows::Foundation::Collections](../standard-library/algorithm-functions.md#find)인터페이스 형식 또는  [Platform::Collections](../standard-library/algorithm-functions.md#count_if)구체적 형식에 대해 [std::find](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.aspx) , [std::count_if](../cppcx/platform-collections-namespace.md) 및 기타 STL 알고리즘을 사용할 수 있게 만듭니다. 예를 들어,이 C#에서 만들어진 하 고 STL 알고리즘을 적용 하는 Windows 런타임 구성 요소 컬렉션을 반복할 수 있습니다 의미 합니다.
 
    > [!IMPORTANT]
    > 프록시 반복기 `VectorIterator` 및 `VectorViewIterator` 는 프록시 개체 `VectoryProxy<T>` 및 `ArrowProxy<T>` 를 활용하여 STL 컨테이너에 사용할 수 있게 만듭니다. 자세한 내용은 이 문서 뒷부분의 "VectorProxy 요소"를 참조하세요.
 
 - C + + /cli CX 컬렉션 형식은 STL 컨테이너 지 원하는 동일한 스레드 보안 보장 합니다.
 
-- [Windows::Foundation::Collections::IObservableVector](/uwp/api/Windows.Foundation.Collections.IObservableVector_T_) 하 고 [Windows::Foundation::Collections::IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) 다양 한 방법으로 컬렉션이 변경 될 때 발생 하는 이벤트를 정의 합니다. 이러한 인터페이스를 구현하여  [Platform::Collections::Map](../cppcx/platform-collections-map-class.md) 및 [Platform::Collections::Vector](../cppcx/platform-collections-vector-class.md) 는 XAML 컬렉션을 사용한 데이터 바인딩을 지원합니다. 예를 들어, `Vector` 에 데이터 바인딩된 `Grid`가 있는 경우 컬렉션에 항목을 추가하면 변경 내용이 Grid UI에 반영됩니다.
+- [Windows::Foundation::Collections::IObservableVector](/uwp/api/Windows.Foundation.Collections.IObservableVector_T_) 및 [Windows::Foundation::Collections::IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) 은 컬렉션이 다양한 방식으로 변경될 때 발생하는 이벤트를 정의합니다. 이러한 인터페이스를 구현하여  [Platform::Collections::Map](../cppcx/platform-collections-map-class.md) 및 [Platform::Collections::Vector](../cppcx/platform-collections-vector-class.md) 는 XAML 컬렉션을 사용한 데이터 바인딩을 지원합니다. 예를 들어, `Vector` 에 데이터 바인딩된 `Grid`가 있는 경우 컬렉션에 항목을 추가하면 변경 내용이 Grid UI에 반영됩니다.
 
 ## <a name="vector-usage"></a>Vector 사용법
 
@@ -60,11 +60,11 @@ C + + /CX 프로그램 가능 표준 템플릿 라이브러리 (STL) 컨테이�
 
 ## <a name="value-types-in-vector"></a>Vector의 값 형식
 
-[Platform::Collections::Vector](../cppcx/platform-collections-vector-class.md) 에 저장될 모든 요소는 암시적으로 또는 제공하는 사용자 지정 [std::equal_to](../standard-library/equal-to-struct.md) 비교 연산자를 사용하여 같음 비교를 지원해야 합니다. 모든 참조 형식과 모든 스칼라 형식은 같음 비교를 암시적으로 지원합니다. 스칼라가 아닌 값 형식이 같은 [Windows::Foundation::DateTime](https://msdn.microsoft.com/library/windows/apps/windows.foundation.datetime.aspx), 또는 사용자 지정 비교-예를 들어 `objA->UniqueID == objB->UniqueID`-사용자 지정 함수 개체를 제공 해야 합니다.
+[Platform::Collections::Vector](../cppcx/platform-collections-vector-class.md) 에 저장될 모든 요소는 암시적으로 또는 제공하는 사용자 지정 [std::equal_to](../standard-library/equal-to-struct.md) 비교 연산자를 사용하여 같음 비교를 지원해야 합니다. 모든 참조 형식과 모든 스칼라 형식은 같음 비교를 암시적으로 지원합니다. [Windows::Foundation::DateTime](https://msdn.microsoft.com/library/windows/apps/windows.foundation.datetime.aspx)과 같은 스칼라 값이 아닌 형식이나 `objA->UniqueID == objB->UniqueID`와 같은 사용자 지정 비교의 경우 사용자 지정 함수 개체를 제공해야 합니다.
 
 ## <a name="vectorproxy-elements"></a>VectorProxy 요소
 
-[Platform::Collections::VectorIterator](../cppcx/platform-collections-vectoriterator-class.md) 하 고 [Platform::Collections::VectorViewIterator](../cppcx/platform-collections-vectorviewiterator-class.md) 를 사용 하도록 설정 `range for` 루프와 같은 알고리즘 [std:: sort](../standard-library/algorithm-functions.md#sort) 를사용하여[ IVector\<T >](https://msdn.microsoft.com/library/windows/apps/br206631.aspx) 컨테이너입니다. 하지만 `IVector` 요소는 c + +를 통해 액세스할 수 없습니다 포인터 역참조; 통해서만 액세스할 수 있습니다 [GetAt](https://msdn.microsoft.com/library/windows/apps/br206634.aspx) 하 고 [SetAt](https://msdn.microsoft.com/library/windows/apps/br206642.aspx) 메서드. 따라서 STL 요구 사항에 맞게 `Platform::Details::VectorProxy<T>` , `Platform::Details::ArrowProxy<T>` 및 `*`연산자를 통해 개별 요소에 대한 액세스를 제공하기 위해 이러한 반복기에 프록시 클래스 `->`및 `[]` 가 사용됩니다. 엄밀히 말해 `IVector<Person^> vec`지정 시 `*begin(vec)` 의 형식은 `VectorProxy<Person^>`입니다. 그러나 프록시 개체는 사용자 코드에 거의 표시되지 않습니다. 이러한 프록시 개체는 내부적으로 반복기에만 사용되므로 문서화되지 않지만 메커니즘의 작동 방식을 알면 유용합니다.
+[Platform::Collections::VectorIterator](../cppcx/platform-collections-vectoriterator-class.md) 하 고 [Platform::Collections::VectorViewIterator](../cppcx/platform-collections-vectorviewiterator-class.md) 를 사용 하도록 설정 `range for` 루프와 같은 알고리즘 [std:: sort](../standard-library/algorithm-functions.md#sort) 를사용하여[ IVector\<T >](https://msdn.microsoft.com/library/windows/apps/br206631.aspx) 컨테이너입니다. 그러나 `IVector` 요소는 C++ 포인터 역참조를 통해 액세스할 수 없습니다. 이 요소는 [GetAt](https://msdn.microsoft.com/library/windows/apps/br206634.aspx) 및 [SetAt](https://msdn.microsoft.com/library/windows/apps/br206642.aspx) 메서드를 통해서만 액세스할 수 있습니다. 이러한 반복기는 프록시 클래스를 사용 하는 따라서 `Platform::Details::VectorProxy<T>` 하 고 `Platform::Details::ArrowProxy<T>` 통해 개별 요소에 대 한 액세스를 제공 하기 __\*__, __->__, 및  __\[]__ 표준 라이브러리를 통해 필요에 따라 연산자입니다. 엄밀히 말해 `IVector<Person^> vec`지정 시 `*begin(vec)` 의 형식은 `VectorProxy<Person^>`입니다. 그러나 프록시 개체는 사용자 코드에 거의 표시되지 않습니다. 이러한 프록시 개체는 내부적으로 반복기에만 사용되므로 문서화되지 않지만 메커니즘의 작동 방식을 알면 유용합니다.
 
 `range for` 컨테이너에 대해 `IVector` 루프를 사용할 때는 반복기 변수가 `auto&&` 요소에 올바르게 바인딩되도록 `VectorProxy` 를 사용합니다. `auto` 또는 `auto&`를 사용하면 컴파일러 경고 C4239가 발생하고 `VectoryProxy` 가 경고 텍스트에 언급됩니다.
 
@@ -74,8 +74,7 @@ C + + /CX 프로그램 가능 표준 템플릿 라이브러리 (STL) 컨테이�
 
 프록시 개체를 코딩해야 하는 시나리오 중 하나는 `dynamic_cast` 요소 컬렉션에서 특정 형식의 XAML 개체를 찾을 때 등에 요소에 대해 `UIElement` 를 수행해야 하는 경우입니다. 이 경우 먼저 요소를 [Platform::Object](../cppcx/platform-object-class.md)^으로 캐스팅한 다음 동적 캐스팅을 수행해야 합니다.
 
-```
-
+```cpp
 void FindButton(UIElementCollection^ col)
 {
     // Use auto&& to avoid warning C4239
@@ -96,7 +95,7 @@ void FindButton(UIElementCollection^ col)
 
 [!code-cpp[cx_collections#04](../cppcx/codesnippet/CPP/collections/class1.cpp#04)]
 
-일반적으로 내부 맵 기능에는 성능상 `std::map` 형식을 사용하는 것이 좋습니다. Abi 전반에서 컨테이너를 전달 해야 하는 경우 구성를 [Platform::Collections::Map](../cppcx/platform-collections-map-class.md) 에서 합니다 [std:: map](../standard-library/map-class.md) 반환 하 고는 `Map` 으로 [windows:: foundation:: Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_)합니다. 공용 반환 값 또는 매개 변수에서 `Map` 형식을 사용하려고 하면 컴파일러 오류 C3986이 발생합니다. `Map` 를 `IMap`로 변경하여 이 오류를 해결할 수 있습니다. 조회 또는 삽입 수가 많지 않고 ABI 너머로 컬렉션을 자주 전달하는 경우 등에는 `Platform::Collections::Map` 을 변환할 필요 없이 처음부터 `std::map`을 사용하는 것이 경제적일 수 있습니다. 어떤 경우든, 조회 및 삽입 작업은 세 가지 형식의 성능을 가장 크게 저하시키기 때문에 `IMap` 에서 사용하지 않는 것이 좋습니다. `IMap` 으로의 변환은 ABI 너머로 컨테이너를 전달할 때만 수행합니다.
+일반적으로 내부 맵 기능에는 성능상 `std::map` 형식을 사용하는 것이 좋습니다. ABI 전반에서 컨테이너를 전달해야 하는 경우 [std::map](../cppcx/platform-collections-map-class.md) 에서 [Platform::Collections::Map](../standard-library/map-class.md) 을 생성하고 `Map` 을 [Windows::Foundation::Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_)으로 반환합니다. 공용 반환 값 또는 매개 변수에서 `Map` 형식을 사용하려고 하면 컴파일러 오류 C3986이 발생합니다. `Map` 를 `IMap`로 변경하여 이 오류를 해결할 수 있습니다. 조회 또는 삽입 수가 많지 않고 ABI 너머로 컬렉션을 자주 전달하는 경우 등에는 `Platform::Collections::Map` 을 변환할 필요 없이 처음부터 `std::map`을 사용하는 것이 경제적일 수 있습니다. 어떤 경우든, 조회 및 삽입 작업은 세 가지 형식의 성능을 가장 크게 저하시키기 때문에 `IMap` 에서 사용하지 않는 것이 좋습니다. `IMap` 으로의 변환은 ABI 너머로 컨테이너를 전달할 때만 수행합니다.
 
 ## <a name="value-types-in-map"></a>Map의 값 형식
 
@@ -149,7 +148,7 @@ STL  `const` 임의 액세스 반복기의 요구 사항을 충족하는 STL 반
 
 `Vector` 및 `Map` 은 컬렉션 개체가 변경되거나 다시 설정된 경우 또는 컬렉션의 요소가 삽입, 제거 또는 변경된 경우에 발생하는 이벤트를 구현하여 XAML 컬렉션에서 데이터 바인딩을 지원합니다. 데이터 바인딩을 지원하는 고유한 형식을 작성할 수 있지만 이러한 형식이 봉인되기 때문에 `Map` 또는 `Vector` 에서 상속할 수는 없습니다.
 
-합니다 [Windows::Foundation::Collections::VectorChangedEventHandler](/uwp/api/windows.foundation.collections.vectorchangedeventhandler) 하 고 [Windows::Foundation::Collections::MapChangedEventHandler](/uwp/api/windows.foundation.collections.mapchangedeventhandler) 대리자에 대 한 이벤트 처리기에 대 한 서명을 지정 컬렉션 변경 이벤트. [Windows::Foundation::Collections::CollectionChange](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx) public enum 클래스, 및 `Platform::Collection::Details::MapChangedEventArgs` 고 `Platform::Collections::Details::VectorChangedEventArgs` ref 클래스는 이벤트의 원인을 확인 하기 위해 이벤트 인수를 저장 합니다. *`EventArgs` 형식은 `Details` 또는 `Map` 를 사용할 때 명시적으로 생성하거나 사용할 필요가 없기 때문에 `Vector`네임스페이스에서 정의됩니다.
+[Windows::Foundation::Collections::VectorChangedEventHandler](/uwp/api/windows.foundation.collections.vectorchangedeventhandler) 및 [Windows::Foundation::Collections::MapChangedEventHandler](/uwp/api/windows.foundation.collections.mapchangedeventhandler) 대리자는 컬렉션 변경 이벤트에 대한 이벤트 처리기의 서명을 지정합니다. [Windows::Foundation::Collections::CollectionChange](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx) public enum 클래스와 `Platform::Collection::Details::MapChangedEventArgs` 및 `Platform::Collections::Details::VectorChangedEventArgs` ref 클래스는 이벤트의 원인을 확인하기 위해 이벤트 인수를 저장합니다. 합니다 `*EventArgs` 형식에 정의 된 합니다 `Details` 네임 스페이스를 생성 하거나 사용 하는 경우 명시적으로 사용할 필요가 없기 때문에 `Map` 또는 `Vector`합니다.
 
 ## <a name="see-also"></a>참고 항목
 

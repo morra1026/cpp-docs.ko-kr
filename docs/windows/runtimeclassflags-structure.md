@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c5bfd9fc6dd87c61149722e8ef7fed79f8f017da
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 90b590637935b7dbeaa0bb6a07ed84faeb0d0a1d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788840"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076181"
 ---
 # <a name="runtimeclassflags-structure"></a>RuntimeClassFlags 구조체
 
@@ -63,7 +63,7 @@ A [RuntimeClassType 열거형](../windows/runtimeclasstype-enumeration.md) 값�
 ## <a name="value-constant"></a>Runtimeclassflags:: Value 상수
 
 포함 된 필드를 [RuntimeClassType 열거형](../windows/runtimeclasstype-enumeration.md) 값입니다.
-  
+
 ```cpp
 static const unsigned int value = flags;
 ```

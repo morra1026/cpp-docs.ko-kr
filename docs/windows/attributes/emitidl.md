@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5e11e1ce061fcf2e9ce21155dcbeb93b45b66238
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 520b9bf8d6a71593acd95ebaac98a72036fcabf2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791737"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070038"
 ---
 # <a name="emitidl"></a>emitidl
 
@@ -49,7 +49,8 @@ ms.locfileid: "48791737"
 
 - `push` 현재 저장할 수 있습니다 **emitidl** 설정을 내부 **emitidl** 스택 및 `pop` 설정할 수 있습니다 **emitidl** 내부 맨 위에 있는 모든 값이 하 **emitidl** 스택.
 
-`defaultimports=`*부울* \(선택 사항)  
+`defaultimports=`*부울* \(선택 사항)
+
 - 경우 *부울* 됩니다 **true**, docobj.idl 생성된 된.idl 파일을 가져오면 됩니다. 또한.idl 파일을.h 동일한 이름의 파일을 경우 `#include` 원본에 코드.h 파일과 동일한 디렉터리에 위치한 다음 생성된 된.idl 파일에는.idl 파일에 대 한 import 문을 포함 합니다.
 
 - 하는 경우 *부울* 됩니다 **false**, docobj.idl는 생성 된.idl 파일을 가져올 수 없습니다. .Idl 파일을 명시적으로 가져와야 [가져올](import.md)합니다.
@@ -73,9 +74,9 @@ ms.locfileid: "48791737"
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 [컴파일러 특성](compiler-attributes.md)<br/>
-[독립 실행형 특성](stand-alone-attributes.md)  
+[독립 실행형 특성](stand-alone-attributes.md)

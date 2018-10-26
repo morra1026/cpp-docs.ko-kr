@@ -13,29 +13,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0bb6b1738b0eecbfd4e97171d2a9faea2d9b6005
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 82dcbbe31110a38c381dd0891ab1837b893be59e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49327767"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079131"
 ---
 # <a name="extensions-that-are-specific-to-ccli"></a>C++/CLI와 관련된 확장명
 
 다음 언어 기능은 적용할만 C + + /cli CLI:
-  
-[__identifier(C++/CLI)](../windows/identifier-cpp-cli.md)  
-  
-[/Clr을 사용한 C 스타일 캐스트 (C + + /cli CLI)](../windows/c-style-casts-with-clr-cpp-cli.md)  
-  
-[interior_ptr(C++/CLI)](../windows/interior-ptr-cpp-cli.md)  
-  
-[pin_ptr(C++/CLI)](../windows/pin-ptr-cpp-cli.md)  
-  
-[형식 전달(C++/CLI)](../windows/type-forwarding-cpp-cli.md)  
-  
-[가변 인수 목록(...)(C++/CLI)](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md)  
-  
+
+[__identifier(C++/CLI)](../windows/identifier-cpp-cli.md)
+
+[/Clr을 사용한 C 스타일 캐스트 (C + + /cli CLI)](../windows/c-style-casts-with-clr-cpp-cli.md)
+
+[interior_ptr(C++/CLI)](../windows/interior-ptr-cpp-cli.md)
+
+[pin_ptr(C++/CLI)](../windows/pin-ptr-cpp-cli.md)
+
+[형식 전달(C++/CLI)](../windows/type-forwarding-cpp-cli.md)
+
+[가변 인수 목록(...)(C++/CLI)](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md)
+
 ## <a name="see-also"></a>참고 항목
 
-[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

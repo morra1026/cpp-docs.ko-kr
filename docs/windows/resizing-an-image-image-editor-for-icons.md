@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6e81ca5418782b993f406f33b0b207bc8acb5ba0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dc70d6cd5933608067a43cdb7dcca1e11dd22a2d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393661"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082298"
 ---
 # <a name="resizing-an-image-image-editor-for-icons"></a>이미지 크기 조정(아이콘에 대한 이미지 편집기)
 
@@ -37,7 +37,7 @@ ms.locfileid: "46393661"
 
 메커니즘은 두 가지 이미지 크기 조정에 대 한: 크기 조정 핸들 및 [속성 창](/visualstudio/ide/reference/properties-window)합니다. 이미지의 일부나 모두의 크기를 변경 하려면 크기 조정 핸들을 끌 수 있습니다. 끌 수 있는 크기 조정 핸들은 실선입니다. 속이 빈 핸들을 끌 수 없습니다. 사용할 수는 **속성** 창의 전체 크기를 조정할 이미지 선택된 된 부분이 아닌만 합니다.
 
-![비트맵의 핸들 크기 조정](../mfc/media/vcimageeditorsizinghandles.gif "vcImageEditorSizingHandles")  
+![비트맵의 핸들 크기 조정](../mfc/media/vcimageeditorsizinghandles.gif "vcImageEditorSizingHandles")<br/>
 크기 조정 핸들
 
 > [!NOTE]

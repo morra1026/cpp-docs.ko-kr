@@ -72,12 +72,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d9a50e3dcfb82e245dcac5f57553b34fef584fa
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: addbc7c81c8cd38f44b7b1004c0b4e23ca183ecb
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412030"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067322"
 ---
 # <a name="cbasetabbedpane-class"></a>CBaseTabbedPane 클래스
 
@@ -179,7 +179,8 @@ virtual BOOL AddTab(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] [out] *pNewBar* 추가할 창에 대 한 포인터입니다. 이 메서드를 호출한 후이 포인터를 잘못 될 수 있습니다. 자세한 내용은 설명 섹션을 참조하세요.
+*pNewBar*<br/>
+[out에서] 추가할 창에 대 한 포인터입니다. 이 메서드를 호출한 후이 포인터를 잘못 될 수 있습니다. 자세한 내용은 설명 섹션을 참조하세요.
 
 *bVisible*<br/>
 [in] 하려면 True이 고 탭 표시 그렇지 않으면 FALSE입니다.
@@ -384,7 +385,8 @@ virtual BOOL FloatTab(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] [out] *pBar* float 창에 대 한 포인터입니다.
+*pBar*<br/>
+[out에서] Float로 창에 대 한 포인터입니다.
 
 *nTabID*<br/>
 [in] Float 탭의 인덱스를 지정합니다.
@@ -594,7 +596,8 @@ virtual BOOL RemovePane(CWnd* pBar);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] [out] *pBar* 탭된 창에서 제거할 창에 대 한 포인터입니다.
+*pBar*<br/>
+[out에서] 탭된 창에서 제거할 창에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -689,7 +692,8 @@ virtual CMFCAutoHideToolBar* SetAutoHideMode(
 *dwAlignment*<br/>
 [in] 만들어야 하는 자동 숨기기 창의 맞춤을 지정 합니다. 가능한 값 목록을 참조 하세요 [CPane::MoveByAlignment](../../mfc/reference/cpane-class.md#movebyalignment)합니다.
 
-[in] [out] *pCurrAutoHideBar* 현재 자동 숨기기 도구 모음에 대 한 포인터입니다. NULL 일 수 있습니다.
+*pCurrAutoHideBar*<br/>
+[out에서] 현재 자동 숨기기 도구 모음에 대 한 포인터입니다. NULL 일 수 있습니다.
 
 *bUseTimer*<br/>
 [in] 사용자가 창 자동 숨기기 모드로 전환할 때 자동 숨기기 효과 사용 하려면 또는 즉시 창을 숨기려면 여부를 지정 합니다.

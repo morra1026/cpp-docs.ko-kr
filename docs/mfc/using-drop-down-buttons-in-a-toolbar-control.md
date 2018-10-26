@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac8b8c9f4460995aaab6a9d415202c2a965a6e9a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5e58b6b9d64111e021586fc23a985f31c0edf9de
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389046"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063772"
 ---
 # <a name="using-drop-down-buttons-in-a-toolbar-control"></a>도구 모음 컨트롤에서 드롭다운 단추 사용
 
@@ -43,19 +43,19 @@ ms.locfileid: "46389046"
 
 1. 한 번에 `CToolBarCtrl` 개체가 생성 된, 다음 코드를 사용 하 여 TBSTYLE_EX_DRAWDDARROWS 스타일을 설정 합니다.
 
-     [!code-cpp[NVC_MFCControlLadenDialog#36](../mfc/codesnippet/cpp/using-drop-down-buttons-in-a-toolbar-control_1.cpp)]
+   [!code-cpp[NVC_MFCControlLadenDialog#36](../mfc/codesnippet/cpp/using-drop-down-buttons-in-a-toolbar-control_1.cpp)]
 
 1. 에 대 한 새 TBSTYLE_DROPDOWN 스타일을 설정 ([InsertButton](../mfc/reference/ctoolbarctrl-class.md#insertbutton) 하거나 [AddButtons](../mfc/reference/ctoolbarctrl-class.md#addbuttons)) 또는 기존 ([SetButtonInfo](../mfc/reference/ctoolbarctrl-class.md#setbuttoninfo)) 드롭다운 단추 수 있는 단추입니다. 다음 예제에서는 수정에 기존 단추는 `CToolBarCtrl` 개체:
 
-     [!code-cpp[NVC_MFCControlLadenDialog#37](../mfc/codesnippet/cpp/using-drop-down-buttons-in-a-toolbar-control_2.cpp)]
+   [!code-cpp[NVC_MFCControlLadenDialog#37](../mfc/codesnippet/cpp/using-drop-down-buttons-in-a-toolbar-control_2.cpp)]
 
 1. 도구 모음 개체의 부모 클래스에 TBN_DROPDOWN 처리기를 추가 합니다.
 
-     [!code-cpp[NVC_MFCControlLadenDialog#38](../mfc/codesnippet/cpp/using-drop-down-buttons-in-a-toolbar-control_3.cpp)]
+   [!code-cpp[NVC_MFCControlLadenDialog#38](../mfc/codesnippet/cpp/using-drop-down-buttons-in-a-toolbar-control_3.cpp)]
 
 1. 새 처리기에서 적절 한 팝업 메뉴를 표시 합니다. 다음 코드는 하나의 메서드를 보여 줍니다.
 
-     [!code-cpp[NVC_MFCControlLadenDialog#39](../mfc/codesnippet/cpp/using-drop-down-buttons-in-a-toolbar-control_4.cpp)]
+   [!code-cpp[NVC_MFCControlLadenDialog#39](../mfc/codesnippet/cpp/using-drop-down-buttons-in-a-toolbar-control_4.cpp)]
 
 ## <a name="see-also"></a>참고 항목
 

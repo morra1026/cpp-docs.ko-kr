@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 018623e9e6a093c4f86b8768e0fd5329f4ea3282
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6da48b12b657944864b1a33216692fce296e5dfd
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46443776"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083453"
 ---
 # <a name="multithreading-when-to-use-the-mfc-synchronization-classes"></a>다중 스레딩: 동기화 Mfc를 사용 하는 경우
 
@@ -38,17 +38,17 @@ MFC와 함께 제공 되는 다중 스레드 클래스 두 가지 범주로 나�
 
 1. 응용 프로그램 특정 작업이 실행 되는 리소스에 액세스 하기 전에 대기 하는 (예를 들어 데이터에서에서 받아야 하는 통신 포트 파일에 쓸 수 전에)?
 
-     그렇다면 사용 `CEvent`합니다.
+   그렇다면 사용 `CEvent`합니다.
 
 2. 수 이상의 스레드가 동일한 응용 프로그램 액세스 내에서이 리소스 한 번에 (예를 들어, 응용 프로그램 허용 같은 문서에 뷰를 사용 하 여 최대 5 개의 창이)?
 
-     그렇다면 사용 `CSemaphore`합니다.
+   그렇다면 사용 `CSemaphore`합니다.
 
 3. 이 리소스를 사용 하 여 둘 이상의 응용 프로그램 수 있습니다 (예를 들어이 리소스는 DLL)?
 
-     그렇다면 사용 `CMutex`합니다.
+   그렇다면 사용 `CMutex`합니다.
 
-     그렇지 않은 경우 사용 하 여 `CCriticalSection`입니다.
+   그렇지 않은 경우 사용 하 여 `CCriticalSection`입니다.
 
 `CSyncObject` 직접 사용 되지 않습니다. 다른 4 개의 동기화 클래스에 대 한 기본 클래스입니다.
 

@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 451cf4b404143ce8f9b94481dd27227f487874d0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b66debe5c6401b4eee01bc81acc58b8445e20c21
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381168"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068777"
 ---
 # <a name="mfc-activex-controls-licensing-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤 라이선스
 
@@ -84,15 +84,15 @@ ActiveX 컨트롤 마법사를 사용 하 여 ActiveX 컨트롤 라이선스 지
 
 - [VerifyUserLicense](../mfc/reference/coleobjectfactory-class.md#verifyuserlicense)
 
-     컨트롤 라이선스 파일의 존재에 대 한 시스템을 확인 하 여 디자인 타임에 사용할 컨트롤을 허용 하는지 확인 합니다. 이 함수는 처리의 일부로 프레임 워크에서 호출 됩니다 `IClassFactory2::GetLicInfo` 고 `IClassFactory::CreateInstanceLic`입니다.
+   컨트롤 라이선스 파일의 존재에 대 한 시스템을 확인 하 여 디자인 타임에 사용할 컨트롤을 허용 하는지 확인 합니다. 이 함수는 처리의 일부로 프레임 워크에서 호출 됩니다 `IClassFactory2::GetLicInfo` 고 `IClassFactory::CreateInstanceLic`입니다.
 
 - [GetLicenseKey](../mfc/reference/coleobjectfactory-class.md#getlicensekey)
 
-     컨트롤 DLL에서에서 고유 키를 요청합니다. 이 키 컨테이너 응용 프로그램에 포함 되며 나중에 함께 사용 `VerifyLicenseKey`, 컨트롤의 인스턴스를 만들려고 합니다. 이 함수는 처리의 일부로 프레임 워크에서 호출 됩니다 `IClassFactory2::RequestLicKey`합니다.
+   컨트롤 DLL에서에서 고유 키를 요청합니다. 이 키 컨테이너 응용 프로그램에 포함 되며 나중에 함께 사용 `VerifyLicenseKey`, 컨트롤의 인스턴스를 만들려고 합니다. 이 함수는 처리의 일부로 프레임 워크에서 호출 됩니다 `IClassFactory2::RequestLicKey`합니다.
 
 - [VerifyLicenseKey](../mfc/reference/coleobjectfactory-class.md#verifylicensekey)
 
-     포함된 된 키와 컨트롤의 고유 키가 동일한 지 확인 합니다. 이렇게 하면 컨테이너 용도 맞게 컨트롤의 인스턴스를 만들 수 있습니다. 이 함수는 처리의 일부로 프레임 워크에서 호출 됩니다 `IClassFactory2::CreateInstanceLic` 라이선스 키의 사용자 지정된 확인을 제공 하려면 재정의할 수 있습니다. 기본 구현에는 문자열 비교를 수행 합니다. 자세한 내용은 [ActiveX 컨트롤의 라이선스를 사용자 지정](#_core_customizing_the_licensing_of_an_activex_control)이 문서의 뒷부분에 나오는.
+   포함된 된 키와 컨트롤의 고유 키가 동일한 지 확인 합니다. 이렇게 하면 컨테이너 용도 맞게 컨트롤의 인스턴스를 만들 수 있습니다. 이 함수는 처리의 일부로 프레임 워크에서 호출 됩니다 `IClassFactory2::CreateInstanceLic` 라이선스 키의 사용자 지정된 확인을 제공 하려면 재정의할 수 있습니다. 기본 구현에는 문자열 비교를 수행 합니다. 자세한 내용은 [ActiveX 컨트롤의 라이선스를 사용자 지정](#_core_customizing_the_licensing_of_an_activex_control)이 문서의 뒷부분에 나오는.
 
 ###  <a name="_core_header_file_modifications"></a> 헤더 파일 수정
 

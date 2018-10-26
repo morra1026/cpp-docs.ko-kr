@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9391d99f75bdb5ac2191a65e525ce989aefcd6b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6c4e2f27a6f123d870e56750180a5b7d4ee624fc
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46421286"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066411"
 ---
 # <a name="walkthrough-creating-a-custom-message-block"></a>연습: 사용자 지정 메시지 블록 만들기
 
@@ -92,19 +92,19 @@ ms.locfileid: "46421286"
 
 [!code-cpp[concrt-priority-buffer#2](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_3.h)]
 
-     The `priority_buffer` class stores `message` objects in a `priority_queue` object. These type specializations enable the priority queue to sort messages according to their priority. The priority is the first element of the `tuple` object.
+   합니다 `priority_buffer` 저장소 클래스 `message` 개체를 `priority_queue` 개체입니다. 메시지 우선 순위에 따라 정렬 우선 순위 큐를 사용 하는 이러한 형식 특수화 합니다. 우선 순위는 첫 번째 요소는 `tuple` 개체입니다.
 
 1. 에 `concurrencyex` 네임 스페이스를 선언 합니다 `priority_buffer` 클래스입니다.
 
 [!code-cpp[concrt-priority-buffer#3](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_4.h)]
 
-     The `priority_buffer` class derives from `propagator_block`. Therefore, it can both send and receive messages. The `priority_buffer` class can have multiple targets that receive messages of type `Type`. It can also have multiple sources that send messages of type `tuple<PriorityType, Type>`.
+   `priority_buffer` 클래스는 `propagator_block`에서 파생됩니다. 따라서이 수 모두 송신 및 수신 메시지. 합니다 `priority_buffer` 클래스의 형식의 메시지를 수신 하는 여러 대상이 있을 수 있습니다 `Type`합니다. 유형의 메시지를 전송 하는 여러 원본 수도 `tuple<PriorityType, Type>`합니다.
 
 1. 에 `private` 의 섹션은 `priority_buffer` 클래스에 다음 멤버 변수를 추가 합니다.
 
 [!code-cpp[concrt-priority-buffer#6](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_5.h)]
 
-     The `priority_queue` object holds incoming messages; the `queue` object holds outgoing messages. A `priority_buffer` object can receive multiple messages simultaneously; the `critical_section` object synchronizes access to the queue of input messages.
+   합니다 `priority_queue` 들어오는 메시지를 보유 하는 개체, `queue` 개체는 보내는 메시지를 보유 합니다. A `priority_buffer` 개체는 동시에 여러 메시지를 받을 수 있습니다; 그리고 `critical_section` 입력된 메시지의 큐에 대 한 액세스를 동기화 하는 개체입니다.
 
 1. 에 `private` 섹션, 복사 생성자 및 대입 연산자를 정의 합니다. 그러면 `priority_queue` 개체를 할당할 수 없게 합니다.
 
@@ -122,65 +122,65 @@ ms.locfileid: "46421286"
 
 [!code-cpp[concrt-priority-buffer#9](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_9.h)]
 
-     The `propagate_to_any_targets` method transfers the message that is at the front of the input queue to the output queue and propagates out all messages in the output queue.
+   `propagate_to_any_targets` 메서드는 입력된 큐 출력 큐의 앞에 있고 출력 큐의 모든 메시지를 전파 하는 메시지를 전송 합니다.
 
 10. 에 `protected` 섹션을 정의 합니다 `accept_message` 메서드.
 
 [!code-cpp[concrt-priority-buffer#8](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_10.h)]
 
-     When a target block calls the `accept_message` method, the `priority_buffer` class transfers ownership of the message to the first target block that accepts it. (This resembles the behavior of `unbounded_buffer`.)
+   대상 블록을 호출 하는 경우는 `accept_message` 메서드는 `priority_buffer` 수락 하는 첫 번째 대상 블록에 메시지의 소유권을 전송 하는 클래스입니다. (의 동작과 비슷합니다이 `unbounded_buffer`.)
 
 11. 에 `protected` 섹션을 정의 합니다 `reserve_message` 메서드.
 
 [!code-cpp[concrt-priority-buffer#10](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_11.h)]
 
-     The `priority_buffer` class permits a target block to reserve a message when the provided message identifier matches the identifier of the message that is at the front of the queue. In other words, a target can reserve the message if the `priority_buffer` object has not yet received an additional message and has not yet  propagated out the current one.
+   `priority_buffer` 클래스를 사용 하면 제공 된 메시지 식별자가 큐의 앞에 있는 메시지의 식별자와 일치 하는 경우 메시지를 예약 하는 대상 블록입니다. 즉, 통해 대상 하는 경우 메시지를 예약할 수는 `priority_buffer` 개체는 추가 메시지를 아직 받지 않은 및 현재 아직 전파 되지 않습니다.
 
 12. 에 `protected` 섹션을 정의 합니다 `consume_message` 메서드.
 
 [!code-cpp[concrt-priority-buffer#11](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_12.h)]
 
-     A target block calls `consume_message` to transfer ownership of the message that it reserved.
+   대상 블록은 호출 `consume_message` 예약 된 메시지의 소유권을 전송 합니다.
 
 13. 에 `protected` 섹션을 정의 합니다 `release_message` 메서드.
 
 [!code-cpp[concrt-priority-buffer#12](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_13.h)]
 
-     A target block calls `release_message` to cancel its reservation to a message.
+   대상 블록은 호출 `release_message` 메시지에 대 한 예약을 취소 합니다.
 
 14. 에 `protected` 섹션을 정의 합니다 `resume_propagation` 메서드.
 
 [!code-cpp[concrt-priority-buffer#13](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_14.h)]
 
-     The runtime calls `resume_propagation` after a target block either consumes or releases a reserved message. This method propagates out any messages that are in the output queue.
+   런타임 호출 `resume_propagation` 후 대상 블록을 사용 하거나 예약된 된 메시지를 해제 합니다. 이 메서드는 출력 큐에 있는 모든 메시지를 전파 합니다.
 
 15. 에 `protected` 섹션을 정의 합니다 `link_target_notification` 메서드.
 
 [!code-cpp[concrt-priority-buffer#14](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_15.h)]
 
-     The `_M_pReservedFor` member variable is defined by the base class, `source_block`. This member variable points to the target block, if any, that is holding a reservation to the message that is at the front of the output queue. The runtime calls `link_target_notification` when a new target is linked to the `priority_buffer` object. This method propagates out any messages that are in the output queue if no target is holding a reservation.
+   합니다 `_M_pReservedFor` 멤버 변수는 기본 클래스를 정의한 `source_block`합니다. 이 멤버 변수는 출력 큐의 앞에 있는 메시지에 대 한 예약을 포함 하는 경우 대상 블록을 가리킵니다. 런타임 호출 `link_target_notification` 새 대상에 연결 되는 경우는 `priority_buffer` 개체입니다. 이 메서드 대상이 없습니다. 예약을 보유 하는 경우 출력 큐에 있는 모든 메시지를 전파 합니다.
 
 16. 에 `private` 섹션을 정의 합니다 `propagate_priority_order` 메서드.
 
 [!code-cpp[concrt-priority-buffer#15](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_16.h)]
 
-     This method propagates out all messages from the output queue. Every message in the queue is offered to every target block until one of the target blocks accepts the message. The `priority_buffer` class preserves the order of the outgoing messages. Therefore, the first message in the output queue must be accepted by a target block before this method offers any other message to the target blocks.
+   이 메서드는 출력 큐에서 모든 메시지 전파합니다. 큐의 모든 메시지는 대상 블록 중 하나에서 메시지를 수락 될 때까지 모든 대상 블록에 제공 됩니다. `priority_buffer` 클래스는 나가는 메시지의 순서를 유지 합니다. 따라서 출력 큐의 첫 번째 메시지에 동의 해야 합니다는 대상 블록에 의해이 메서드는 대상 블록에 있는 다른 모든 메시지를 제공 합니다.
 
 17. 에 `protected` 섹션을 정의 합니다 `propagate_message` 메서드.
 
 [!code-cpp[concrt-priority-buffer#16](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_17.h)]
 
-     The `propagate_message` method enables the `priority_buffer` class to act as a message receiver, or target. This method receives the message that is offered by the provided source block and inserts that message into the priority queue. The `propagate_message` method then asynchronously sends all output messages to the target blocks.
+   `propagate_message` 메서드를 사용 하면은 `priority_buffer` 나 대상 하는 클래스는 메시지 받는 사람 역할을 합니다. 이 메서드는 제공 된 소스 블록에서 제공 하 고 우선 순위 큐에 메시지를 삽입 하는 메시지를 받습니다. `propagate_message` 메서드 다음 비동기적으로 보내는 모든 대상 블록에 메시지를 출력 합니다.
 
-     The runtime calls this method when you call the [concurrency::asend](reference/concurrency-namespace-functions.md#asend) function or when the message block is connected to other message blocks.
+   호출할 때 런타임에서이 메서드를 호출 합니다 [concurrency:: asend](reference/concurrency-namespace-functions.md#asend) 함수 또는 메시지 블록이 다른 메시지 블록에 연결 되어 경우.
 
 18. 에 `protected` 섹션을 정의 합니다 `send_message` 메서드.
 
 [!code-cpp[concrt-priority-buffer#17](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-custom-message-block_18.h)]
 
-     The `send_message` method resembles `propagate_message`. However it sends the output messages synchronously instead of asynchronously.
+   합니다 `send_message` 메서드가 유사 `propagate_message`합니다. 그러나 비동기적으로 대신 동기적으로 출력 메시지를 보냅니다.
 
-     The runtime calls this method during a synchronous send operation, such as when you call the [concurrency::send](reference/concurrency-namespace-functions.md#send) function.
+   런타임에서 호출 하는 경우 등의 동기 전송 작업을 하는 동안이 메서드를 호출 합니다 [concurrency:: send](reference/concurrency-namespace-functions.md#send) 함수입니다.
 
 `priority_buffer` 클래스는 일반적으로 여러 메시지 블록 형식에는 생성자 오버 로드를 포함 합니다. 일부 생성자 오버 로드 [concurrency:: scheduler](../../parallel/concrt/reference/scheduler-class.md) 하거나 [concurrency:: schedulegroup](../../parallel/concrt/reference/schedulegroup-class.md) 특정 작업 스케줄러로 관리 되는 메시지 블록을 사용 하도록 설정 하는 개체입니다. 다른 생성자 오버 로드는 필터 함수를 받습니다. 필터 함수를 사용 하면 메시지 블록을 수락 하거나 해당 페이로드를 기준으로 메시지를 거부 합니다. 메시지 필터에 대 한 자세한 내용은 참조 하세요. [비동기 메시지 블록](../../parallel/concrt/asynchronous-message-blocks.md)합니다. 작업 스케줄러에 대 한 자세한 내용은 참조 하세요. [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)합니다.
 

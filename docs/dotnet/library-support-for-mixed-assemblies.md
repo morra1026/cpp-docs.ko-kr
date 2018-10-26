@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 868cae6701e17c79c9856b3a16c63c1e25b67bda
-ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
+ms.openlocfilehash: 8c3fec26f3e41c3edd2346ac2e1b9b1f6b98ba33
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494519"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069622"
 ---
 # <a name="library-support-for-mixed-assemblies"></a>혼합형 어셈블리에 대한 라이브러리 지원
 
@@ -51,7 +51,6 @@ C + + 표준 라이브러리를 C 런타임 라이브러리 (CRT)의 사용을 �
 또한이 지원에는 다음 제한 사항을 제공합니다.
 
 - 모델에만 해당 CRT DLL로 컴파일된 코드에 대 한 지원 됩니다 **/clr**합니다. 지 원하는 정적 CRT 라이브러리가 **/clr** 빌드합니다.
-
 
 ## <a name="see-also"></a>참고자료
 

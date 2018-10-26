@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 320bbc9fde5888f75149d6f3f9fad60deb869924
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 18fda4f020c4143a29ed88526c61f9fdf45a096a
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821430"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054659"
 ---
 # <a name="macros-and-functions-for-managing-dlls"></a>Dll을 관리 하기 위한 함수와 매크로
 
@@ -221,6 +221,7 @@ MFC 모듈 상태에 대 한 자세한 내용은 "관리는 데이터의 MFC 모
 ```
 BOOL AFXAPI AfxInitExtensionModule( AFX_EXTENSION_MODULE& state,  HMODULE hModule );
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *state*<br/>
@@ -282,6 +283,7 @@ MFC의 WinSxS 동작에 영향을 주는 모듈별 상태 플래그를 설정 �
 ```
 void AFXAPI AfxSetAmbientActCtx(BOOL bSet);
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *bSet*<br/>

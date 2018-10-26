@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc7b0ca9388de82d49927a7fe76694212b94246b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 30715cffb42c1dbf92512fa7314bf70f46f300a3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46053715"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079937"
 ---
 # <a name="service-map-macros"></a>서비스 맵 매크로
 
@@ -33,7 +33,7 @@ ms.locfileid: "46053715"
 |[BEGIN_SERVICE_MAP](#begin_service_map)|ATL 서비스 맵의 시작을 표시 합니다.|
 |[END_SERVICE_MAP](#end_service_map)|ATL 서비스 맵의 끝을 표시 합니다.|
 |[SERVICE_ENTRY](#service_entry)|개체는 특정 서비스 ID를 지원함을 나타냅니다.|
-|[SERVICE_ENTRY_CHAIN](#service_entry_chain)|지시 [IServiceProviderImpl::QueryService](#queryservice) 지정 된 개체는 체인으로 연결 합니다.|  
+|[SERVICE_ENTRY_CHAIN](#service_entry_chain)|지시 [IServiceProviderImpl::QueryService](#queryservice) 지정 된 개체는 체인으로 연결 합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -115,7 +115,7 @@ SERVICE_ENTRY_CHAIN( punk )
 만듭니다 또는 지정된 된 서비스에 액세스 하 고 지정된 된 인터페이스는 서비스에 대 한 인터페이스 포인터를 반환 합니다.
 
 ```
-STDMETHOD(QueryService)( 
+STDMETHOD(QueryService)(
     REFGUID guidService,
     REFIID riid,
     void** ppvObject);

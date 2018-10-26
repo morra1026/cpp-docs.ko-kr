@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc13285549543eeab07bed6372f8f7d529f90a32
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 40fdfa363da286952139248088c737b348873ec8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46078701"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063681"
 ---
 # <a name="category-macros"></a>범주 매크로
 
@@ -51,11 +51,11 @@ ms.locfileid: "46078701"
 |[BEGIN_CATEGORY_MAP](#begin_category_map)|범주 맵 시작 부분을 표시합니다.|
 |[END_CATEGORY_MAP](#end_category_map)|범주 map의 끝을 표시합니다.|
 |[IMPLEMENTED_CATEGORY](#implemented_category)|COM 개체에 의해 구현 되는 범주를 나타냅니다.|
-|[REQUIRED_CATEGORY](#required_category)|COM 개체에서 필요한 컨테이너의 범주를 나타냅니다.|  
+|[REQUIRED_CATEGORY](#required_category)|COM 개체에서 필요한 컨테이너의 범주를 나타냅니다.|
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlcom.h  
+**헤더:** atlcom.h
 
 ##  <a name="begin_category_map"></a>  BEGIN_CATEGORY_MAP
 

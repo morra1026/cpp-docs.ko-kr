@@ -16,29 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7871b3f547e51bac983e1fe65cf815c8bb70e369
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5eba42cd2884c233ac25a24176f7653fd1d6c257
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46423106"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50051968"
 ---
 # <a name="namedguids"></a>named_guids
-**C + + 전용**  
-  
-정의 하 고 폼의 이전 스타일의 GUID 변수를 초기화 하는 컴파일러가 `LIBID_MyLib`, `CLSID_MyCoClass`를 `IID_MyInterface`, 및 `DIID_MyDispInterface`합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-named_guids  
-```  
-  
-## <a name="remarks"></a>설명  
+**C + + 전용**
 
-**C + + 전용 종료**  
-  
-## <a name="see-also"></a>참고 항목  
- 
+정의 하 고 폼의 이전 스타일의 GUID 변수를 초기화 하는 컴파일러가 `LIBID_MyLib`, `CLSID_MyCoClass`를 `IID_MyInterface`, 및 `DIID_MyDispInterface`합니다.
+
+## <a name="syntax"></a>구문
+
+```
+named_guids
+```
+
+## <a name="remarks"></a>설명
+
+**C + + 전용 종료**
+
+## <a name="see-also"></a>참고 항목
+
 [#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import 지시문](../preprocessor/hash-import-directive-cpp.md)
