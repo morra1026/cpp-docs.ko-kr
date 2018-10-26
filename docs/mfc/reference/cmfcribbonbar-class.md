@@ -198,12 +198,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd7dfaa0511c7d776afd009ad8ea9c1db3008f09
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c8d337fdf6b861b4a64cba2876de33cc65d89b6b
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434293"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070337"
 ---
 # <a name="cmfcribbonbar-class"></a>CMFCRibbonBar 클래스
 
@@ -290,14 +290,14 @@ class CMFCRibbonBar : public CPane
 |[Cmfcribbonbar:: Loadfromresource](#loadfromresource)|오버로드됨. 응용 프로그램 리소스에서 리본 표시줄을 로드합니다.|
 |[CMFCRibbonBar::OnClickButton](#onclickbutton)||
 |[CMFCRibbonBar::OnEditContextMenu](#oneditcontextmenu)||
-|[CMFCRibbonBar::OnRTLChanged](#onrtlchanged)|(`CPane::OnRTLChanged`를 재정의합니다.)|
+|[CMFCRibbonBar::OnRTLChanged](#onrtlchanged)|( `CPane::OnRTLChanged`을 재정의합니다.)|
 |[CMFCRibbonBar::OnSetAccData](#onsetaccdata)|(재정의 [cbasepane:: Onsetaccdata](../../mfc/reference/cbasepane-class.md#onsetaccdata).)|
 |[CMFCRibbonBar::OnShowRibbonContextMenu](#onshowribboncontextmenu)||
 |[CMFCRibbonBar::OnShowRibbonQATMenu](#onshowribbonqatmenu)||
 |[CMFCRibbonBar::OnSysKeyDown](#onsyskeydown)||
 |[CMFCRibbonBar::OnSysKeyUp](#onsyskeyup)||
 |[CMFCRibbonBar::PopTooltip](#poptooltip)||
-|[CMFCRibbonBar::PreTranslateMessage](#pretranslatemessage)|(`CBasePane::PreTranslateMessage`를 재정의합니다.)|
+|[CMFCRibbonBar::PreTranslateMessage](#pretranslatemessage)|( `CBasePane::PreTranslateMessage`을 재정의합니다.)|
 |[CMFCRibbonBar::RecalcLayout](#recalclayout)|(재정의 [cpane:: Recalclayout](../../mfc/reference/cpane-class.md#recalclayout).)|
 |[CMFCRibbonBar::RemoveAllCategories](#removeallcategories)|리본 표시줄에서 모든 리본 범주를 제거합니다.|
 |[CMFCRibbonBar::RemoveAllFromTabs](#removeallfromtabs)|탭 영역에서 모든 리본 요소를 제거합니다.|
@@ -1495,7 +1495,6 @@ virtual void OnClickButton(
 
 ##  <a name="oneditcontextmenu"></a>  CMFCRibbonBar::OnEditContextMenu
 
-
 ```
 virtual void OnEditContextMenu(
     CMFCRibbonRichEditCtrl* pEdit,
@@ -1504,8 +1503,8 @@ virtual void OnEditContextMenu(
 
 ### <a name="parameters"></a>매개 변수
 
-*pEdit*<br/>
-[in] [in] *지점*
+[in] *pEdit*<br/>
+[in] *지점*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -1546,7 +1545,6 @@ BOOL OnSetAccData(long lVal);
 
 ##  <a name="onshowribboncontextmenu"></a>  CMFCRibbonBar::OnShowRibbonContextMenu
 
-
 ```
 virtual BOOL OnShowRibbonContextMenu(
     CWnd* pWnd,
@@ -1557,17 +1555,16 @@ virtual BOOL OnShowRibbonContextMenu(
 
 ### <a name="parameters"></a>매개 변수
 
-*pWnd*<br/>
-[in] [in] *x*
-*y*<br/>
-[in] [in] *pHit*
+[in] *pWnd*<br/>
+[in] *x*<br/>
+[in] *y*<br/>
+[in] *pHit*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="onshowribbonqatmenu"></a>  CMFCRibbonBar::OnShowRibbonQATMenu
-
 
 ```
 virtual BOOL OnShowRibbonQATMenu(
@@ -1579,10 +1576,10 @@ virtual BOOL OnShowRibbonQATMenu(
 
 ### <a name="parameters"></a>매개 변수
 
-*pWnd*<br/>
-[in] [in] *x*
-*y*<br/>
-[in] [in] *pHit*
+[in] *pWnd*<br/>
+[in] *x*<br/>
+[in] *y*<br/>
+[in] *pHit*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -2076,7 +2073,6 @@ virtual BOOL LoadFromResource(
     LPCTSTR lpszResType = RT_RIBBON,
     HINSTANCE hInstance = NULL);
 
-
 virtual BOOL LoadFromResource(
     LPCTSTR lpszXMLResID,
     LPCTSTR lpszResType = RT_RIBBON,
@@ -2170,6 +2166,4 @@ TRUE는 리본 레이아웃을 다시 계산 FALSE이 고, 그렇지 합니다.
 [CMFCRibbonPanel 클래스](../../mfc/reference/cmfcribbonpanel-class.md)<br/>
 [CMFCRibbonBaseElement 클래스](../../mfc/reference/cmfcribbonbaseelement-class.md)<br/>
 [연습: MFC 자유 곡선 응용 프로그램 업데이트](../../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)
-
-
 

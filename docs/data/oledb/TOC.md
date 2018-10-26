@@ -66,7 +66,7 @@
 ###### [OLE DB 공급자로 문자열 읽어 들이기](reading-strings-into-the-ole-db-provider.md)
 ###### [OLE DB 공급자에 문자열 저장](storing-strings-in-the-ole-db-provider.md)
 ##### [단순한 읽기 전용 공급자의 기능 향상](enhancing-the-simple-read-only-provider.md)
-###### [RMyProviderRowset의 상속 수정](modifying-the-inheritance-of-rmyproviderrowset.md)
+###### [RCustomRowset의 상속 수정](modifying-the-inheritance-of-rmyproviderrowset.md)
 ###### [소비자에게 반환되는 열을 동적으로 결정](dynamically-determining-columns-returned-to-the-consumer.md)
 ##### [읽기 전용 공급자 테스트](testing-the-read-only-provider.md)
 #### [업데이트 가능 공급자 만들기](creating-an-updatable-provider.md)
