@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3930f08ae0708b81dde218a88fcda4dc34931390
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f07ab7b4420a5c33be56a9278b60afb6424e9e83
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389741"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063551"
 ---
 # <a name="tn026-ddx-and-ddv-routines"></a>TN026: DDX 및 DDV 루틴
 
@@ -224,21 +224,21 @@ else
 
    - *promptN*
 
-     항목 편집 (사용 하 여 & 가속기에 대 한) 위에 배치 하는 문자열입니다.
+      항목 편집 (사용 하 여 & 가속기에 대 한) 위에 배치 하는 문자열입니다.
 
    - *fmtN*
 
-     Arg 형식 중 하나에 대 한 형식 문자.
+      Arg 형식 중 하나에 대 한 형식 문자.
 
-     |문자|형식|
-     |-|-|
-     d | int
-     u | unsigned int
-     D | (즉, long) int를 긴
-     U | 부호 없는 long (즉, DWORD)
-     f | float
-     F | double
-     s | string
+      |문자|형식|
+      |-|-|
+      |d | int|
+      |u | unsigned int|
+      |D | (즉, long) int를 긴|
+      |U | 부호 없는 long (즉, DWORD)|
+      |f | float|
+      |F | double|
+      |s | string|
 
 ## <a name="see-also"></a>참고자료
 

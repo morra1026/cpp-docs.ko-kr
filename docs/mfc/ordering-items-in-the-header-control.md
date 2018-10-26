@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f446eb557fab4f4ff6396042e832e4584546bd96
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 60139821c1b15673fac0fb8f9ec3925cbfa6dc31
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416827"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052099"
 ---
 # <a name="ordering-items-in-the-header-control"></a>헤더 컨트롤에서 항목 순서 지정
 
@@ -35,11 +35,11 @@ ms.locfileid: "46416827"
 
 - [CHeaderCtrl::GetOrderArray](../mfc/reference/cheaderctrl-class.md#getorderarray) 고 [CHeaderCtrl::SetOrderArray](../mfc/reference/cheaderctrl-class.md#setorderarray)
 
-     검색 하 고 헤더 항목의 왼쪽에서 오른쪽 순서를 설정 합니다.
+   검색 하 고 헤더 항목의 왼쪽에서 오른쪽 순서를 설정 합니다.
 
 - [CHeaderCtrl::OrderToIndex](../mfc/reference/cheaderctrl-class.md#ordertoindex)합니다.
 
-     특정 헤더 항목에 대 한 인덱스 값을 검색합니다.
+   특정 헤더 항목에 대 한 인덱스 값을 검색합니다.
 
 멤버 함수는 이전 하는 것 외에도 HDS_DRAGDROP 스타일에는 헤더 컨트롤 내의 머리글 항목을 끌어다 사용자 수 있습니다. 자세한 내용은 [헤더 항목에 대 한 끌어서 놓기 지원 제공](../mfc/providing-drag-and-drop-support-for-header-items.md)합니다.
 

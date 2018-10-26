@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5071f2c6f00b3cc4aaf09974a01c4601d0078e42
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4908566a80fcad2350023f2306a952b2d97b2e62
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377965"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060678"
 ---
 # <a name="icommandsource-interface"></a>ICommandSource 인터페이스
 
@@ -103,6 +103,7 @@ void AddCommandRangeHandler(
     unsigned int cmdIDMax,
     CommandHandler^ cmdHandler);
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *cmdIDMin*<br/>
@@ -124,6 +125,7 @@ void AddCommandRangeUIHandler(
     unsigned int cmdIDMax,
     CommandUIHandler^ cmdUIHandler);
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *cmdIDMin*<br/>
@@ -145,6 +147,7 @@ void AddCommandUIHandler(
     unsigned int cmdID,
     CommandUIHandler^ cmdUIHandler);
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *cmdID*<br/>
@@ -162,6 +165,7 @@ void AddCommandUIHandler(
 ```
 void PostCommand(unsigned int command);
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *command*<br/>
@@ -170,13 +174,13 @@ void PostCommand(unsigned int command);
 
 이 메서드는 비동기적으로 명령에 의해 지정 된 ID에 매핑된 메시지를 게시 합니다. 창의 메시지 큐에 메시지를 저장 하는 CWnd::PostMessage 호출 하 고 메시지를 처리 하는 데 해당 창까지 기다리지 않고 반환 합니다.
 
-
 ## <a name="removecommandhandler"></a> ICommandSource::RemoveCommandHandler
 
 명령 소스 개체에서 명령 처리기를 제거합니다.
 ```
 void RemoveCommandHandler(unsigned int cmdID);
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *cmdID*<br/>
@@ -184,7 +188,6 @@ void RemoveCommandHandler(unsigned int cmdID);
 ### <a name="remarks"></a>설명
 
 이 메서드는 명령 원본 개체에서 cmdID에 매핑된 명령 처리기를 제거 합니다.
-
 
 ## <a name="removecommandrangecommandhandler"></a> ICommandSource::RemoveCommandRangeHandler
 
@@ -194,6 +197,7 @@ void RemoveCommandRangeUIHandler(
     unsigned int cmdIDMin,
     unsigned int cmdIDMax);
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *cmdIDMin*<br/>
@@ -212,6 +216,7 @@ void RemoveCommandRangeUIHandler(
     unsigned int cmdIDMin,
     unsigned int cmdIDMax);
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *cmdIDMin*<br/>
@@ -228,6 +233,7 @@ void RemoveCommandRangeUIHandler(
 ```
 void RemoveCommandUIHandler(unsigned int cmdID);
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *cmdID*<br/>
@@ -242,6 +248,7 @@ void RemoveCommandUIHandler(unsigned int cmdID);
 ```
 void SendCommand(unsigned int command);
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *command*<br/>

@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b9ec3c034e388cec4f91617fbee0e6ab19180de
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 51dee27c69d42bde83f8eb6925e96d0dad80dca6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418751"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081250"
 ---
 # <a name="containers-advanced-features"></a>컨테이너: 고급 기능
 
@@ -49,7 +49,7 @@ ms.locfileid: "46418751"
 
 - 재정의 `COleClientItem::CanActivate` 자리에서 편집 하는 서버 자체를 사용 하는 동안 현재 위치에서 항목을 편집 하지 않아도 됩니다.
 
-     예를 들어, MFC OLE 샘플 [OCLIENT](../visual-cpp-samples.md) 더 컨테이너/서버 응용 프로그램에서 만든 항목을 포함 합니다. OCLIENT 응용 프로그램을 열면 및 전체 컨테이너/서버 응용 프로그램에서 만든 항목을 편집 합니다. MFC OLE 샘플에서 만든 항목을 포함 하려는 하려는 응용 프로그램의 항목을 편집 하는 동안 [HIERSVR](../visual-cpp-samples.md)합니다. 이 위해 내부 활성화를 사용할 수 없습니다. 이 항목을 활성화 하는 HIERSVR 완전히 열어야 합니다. Microsoft Foundation Class 라이브러리는이 OLE 기능을 지원 하지 않으므로, 재정의 `COleClientItem::CanActivate` 이 이런 확인 하 고 응용 프로그램에서 가능한 런타임 오류를 방지할 수 있습니다.
+   예를 들어, MFC OLE 샘플 [OCLIENT](../visual-cpp-samples.md) 더 컨테이너/서버 응용 프로그램에서 만든 항목을 포함 합니다. OCLIENT 응용 프로그램을 열면 및 전체 컨테이너/서버 응용 프로그램에서 만든 항목을 편집 합니다. MFC OLE 샘플에서 만든 항목을 포함 하려는 하려는 응용 프로그램의 항목을 편집 하는 동안 [HIERSVR](../visual-cpp-samples.md)합니다. 이 위해 내부 활성화를 사용할 수 없습니다. 이 항목을 활성화 하는 HIERSVR 완전히 열어야 합니다. Microsoft Foundation Class 라이브러리는이 OLE 기능을 지원 하지 않으므로, 재정의 `COleClientItem::CanActivate` 이 이런 확인 하 고 응용 프로그램에서 가능한 런타임 오류를 방지할 수 있습니다.
 
 새 응용 프로그램을 만드는 경우 컨테이너/서버 응용 프로그램으로 작동 시키려면 응용 프로그램 마법사에서이 지원은 OLE 옵션 대화 상자에서 옵션 자동으로 만들 수는 선택 합니다. 자세한 내용은 문서 참조 [개요: ActiveX 컨트롤 컨테이너 만들기](../mfc/reference/creating-an-mfc-activex-control-container.md)합니다. MFC 샘플에 대 한 내용은 MFC 샘플을 참조 하세요.
 

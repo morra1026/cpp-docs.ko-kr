@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: e76b1c8be4e180136c4c1ff3de3e4801770bce92
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7b6a915dbe9904a7bbe56e8ba1100631bd954d86
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46437687"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071169"
 ---
 # <a name="how-to-create-clr-empty-projects"></a>방법: CLR 빈 프로젝트 만들기
 
@@ -34,7 +34,7 @@ CLR 빈 프로젝트를 만들려면 사용 합니다 **CLR 빈 프로젝트** �
 
 1. **파일** 메뉴에서 **새로 만들기**를 클릭한 다음 **프로젝트**를 클릭합니다.
 
-     **새 프로젝트** 대화 상자가 나타납니다.
+   **새 프로젝트** 대화 상자가 나타납니다.
 
 1. 아래 **설치 된 템플릿**, 클릭 합니다 **Visual c + +** 노드 클릭 합니다 **CLR** 노드. 선택 된 **CLR 빈 프로젝트** 아이콘입니다.
 

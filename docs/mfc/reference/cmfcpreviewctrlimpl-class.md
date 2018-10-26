@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b157cfb497c355f44a15c8e42b81bc30753a4a9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 29632784248d624f184550f0c598d05cd26b85cf
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441306"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079547"
 ---
 # <a name="cmfcpreviewctrlimpl-class"></a>CMFCPreviewCtrlImpl 클래스
 
@@ -183,7 +183,6 @@ virtual void DoPaint(
 *pDC*<br/>
 그리기에 대 한 장치 컨텍스트 포인터입니다.
 
-
 ## <a name="focus"></a> CMFCPreviewCtrlImpl::Focus
 
 입력이 컨트롤에 포커스를 설정 합니다.
@@ -193,6 +192,7 @@ virtual void DoPaint(
 ```
 virtual void Focus();
 ```
+
 ## <a name="getdocument"></a> CMFCPreviewCtrlImpl::GetDocument
 
 이 미리 보기 컨트롤에 연결 된 문서를 반환 합니다.
@@ -226,6 +226,7 @@ COLORREF m_clrBackColor;
 ```
 COLORREF m_clrTextColor;
 ```
+
 ## <a name="m_font"></a> 미리 보기 창에 텍스트를 표시 하는 데 사용 되는 CMFCPreviewCtrlImpl::m_font 글꼴입니다.
 
 ### <a name="syntax"></a>구문
@@ -233,6 +234,7 @@ COLORREF m_clrTextColor;
 ```
 CFont m_font;
 ```
+
 ## <a name="m_pdocument"></a> CMFCPreviewCtrlImpl::m_pDocument
 
 컨트롤에서 해당 콘텐츠를 미리 볼 문서에 대 한 포인터입니다.
@@ -252,6 +254,7 @@ ATL::IDocument* m_pDocument;
 ```
 virtual void Redraw();
 ```
+
 ## <a name="setdocument"></a> CMFCPreviewCtrlImpl::SetDocument
 
 문서 구현 및 미리 보기 컨트롤 간의 관계를 만들려면 미리 보기 처리기에서 호출 됩니다.

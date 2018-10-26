@@ -13,12 +13,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01ee370b4fd96419ce095fa9a93450b98b241dd2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 51921f8e55b9d4ce4e1875f5216984fe3257ca97
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448573"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084115"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ 2003 ~ 2015의 새로운 기능
 
@@ -1360,7 +1360,7 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
 
 - **특성 사용 ATL 코드 지원 중단**(수준 1(`/W1`)이 기본적으로 설정되어 있음)
 
-   이전 버전의 컴파일러에서는 특성 사용 ATL 코드를 지원했습니다. [Visual C++ 2008부터 시작](https://msdn.microsoft.com/library/bb384632\(v=vs.90\).aspx)된 특성 사용 ATL 코드 지원 제거의 다음 단계로 특성 사용 ATL 코드가 더 이상 사용되지 않습니다. 이제 컴파일러에서 사용되지 않는 이러한 종류의 코드를 식별하기 위해 컴파일러 경고 C4467을 실행합니다.
+   이전 버전의 컴파일러에서는 특성 사용 ATL 코드를 지원했습니다. [Visual C++ 2008부터 시작](https://msdn.microsoft.com/library/bb384632)된 특성 사용 ATL 코드 지원 제거의 다음 단계로 특성 사용 ATL 코드가 더 이상 사용되지 않습니다. 이제 컴파일러에서 사용되지 않는 이러한 종류의 코드를 식별하기 위해 컴파일러 경고 C4467을 실행합니다.
 
    ```Output
     warning C4467: Usage of ATL attributes is deprecated
@@ -1873,7 +1873,7 @@ MFC는 애니메이션과 Direct2D 그래픽을 지원합니다. MFC 라이브�
 이러한 업무 분리에 따라 검색 기능(예: **클래스 뷰** 및 새 **탐색 대상** 대화 상자)이 컴파일되지 않는 이전의 찾아보기 파일(.ncb)을 대체하는 새로운 SQL Server 데스크톱 데이터베이스 파일(.sdf)을 기반으로 하는 시스템에서 처리됩니다. 요약 정보, 자동 완성 및 매개 변수 도움말과 같은 IntelliSense 기능은 필요한 경우에만 변환 단위를 구문 분석합니다. 새로운 **호출 계층 구조** 창과 같은 하이브리드 기능은 찾아보기와 IntelliSense 기능을 결합하여 사용합니다.
 IntelliSense는 현재 필요한 정보만 처리하므로 IDE의 응답성이 향상됩니다. 또한 최신 정보이므로 IDE 뷰 및 창이 더욱 정확합니다. 마지막으로 IDE 인프라가 더 효율적으로 구성되고, 관련 기능이 다양하고, 확장성이 뛰어나므로 더 큰 프로젝트를 처리할 수 있습니다.
 
-**향상된 IntelliSense 오류** IDE는 IntelliSense가 손실될 수 있는 오류를 더 효율적으로 검색하고 그 아래에 빨간색 물결선 밑줄을 표시합니다. 또한 IDE는 IntelliSense 오류를 **오류 목록 창**에 보고합니다. 문제가 발생하는 코드를 표시하려면 **오류 목록 창**에서 해당 오류를 두 번 클릭합니다.
+**향상된 IntelliSense 오류** IDE는 IntelliSense가 손실될 수 있는 오류를 더 효율적으로 검색하고 그 아래에 빨간색 물결선 밑줄을 표시합니다. 또한 IDE는 IntelliSense 오류를 **오류 목록 창**에 보고합니다. 문제가 발생되는 코드를 표시하려면 **오류 목록 창**에서 해당 오류를 두 번 클릭합니다.
 
 **#include 자동 완성 기능** IDE는 `#include` 키워드에 대한 자동 완성 기능을 지원합니다. `#include`를 입력하면 IDE에서 유효한 헤더 파일의 드롭다운 목록 상자를 만듭니다. 파일 이름을 입력하여 계속하면 IDE에서 입력한 내용에 기반하여 목록을 필터링합니다. 언제든지 목록에서 포함할 파일을 선택할 수 있습니다. 이렇게 하면 정확한 파일 이름을 알지 못해도 파일을 빠르게 포함할 수 있습니다.
 

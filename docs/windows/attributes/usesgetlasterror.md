@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 501f6b1801ace9f6002cca5d3559dfcb01e994f5
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: bb08e2442e34c4d579e568c68d240accdfdbde59
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791305"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50074243"
 ---
 # <a name="usesgetlasterror"></a>usesgetlasterror
 
@@ -53,8 +53,8 @@ ms.locfileid: "48791305"
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-특성 컨텍스트에 대 한 자세한 내용은 참조 하세요. [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-[IDL 특성](idl-attributes.md)  
+[IDL 특성](idl-attributes.md)

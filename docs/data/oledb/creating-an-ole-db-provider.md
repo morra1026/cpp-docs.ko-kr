@@ -1,7 +1,7 @@
 ---
 title: OLE DB 공급자 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/13/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -16,35 +16,38 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 441fdfcf98e08b30e1049cac986ebc9e0f7df682
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7c3d94bec2638901f542dfa7c412da0de9a60942
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46030406"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078301"
 ---
 # <a name="creating-an-ole-db-provider"></a>OLE DB 공급자 만들기
 
-OLE DB 공급자를 만들려면 마법사를 사용 하 여 ATL COM 프로젝트를 만들고 공급자를 다음 OLE DB 템플릿을 사용 하 여 파일을 수정 하는 것이 좋습니다. 공급자를 사용자 지정할 때에 필요 없는 속성 주석 수 있으며 선택적 인터페이스를 추가할 수 있습니다.  
-  
-기본 단계는 다음과 같습니다.  
-  
-1. ATL 프로젝트 마법사를 사용 하 여 기본 프로젝트 파일을 만들고 ATL OLE DB 공급자 마법사는 공급자를 만들려면 (선택 **ATL OLE DB Provider** Visual c + + 폴더에서 **클래스 추가**).  
-  
-1. 코드를 수정 하는 `Execute` CMyProviderRS.h에서 메서드. 예를 들어 참조 [OLE DB 공급자로 문자열 읽어들이기](../../data/oledb/reading-strings-into-the-ole-db-provider.md)합니다.  
-  
-1. 속성 맵 MyProviderDS.h MyProviderSess.h, 고 MyProviderRS.h를 편집 합니다. 마법사는 공급자가 구현 하는 모든 속성을 포함 하는 속성 맵을 만듭니다. 속성 맵을 진행 하 고 제거 또는 공급자에 게 지 원하는 데 필요 없는 속성 주석입니다.  
-  
-1. MyProviderRS.h의 있는 PROVIDER_COLUMN_MAP를 업데이트 합니다. 예를 들어 참조 [OLE DB 공급자에 문자열 저장](../../data/oledb/storing-strings-in-the-ole-db-provider.md)합니다.  
-  
-1. 공급자를 테스트할 준비가 되었을 때 공급자 열거 목록에서 공급자를 찾으려고 시도 하 여 테스트할 수 있습니다. 공급자를 찾는 열거형에는 테스트 코드의 예제를 참조 하세요. 합니다 [CATDB](https://github.com/Microsoft/VCSamples) 및 [DBVIEWER](https://github.com/Microsoft/VCSamples) 샘플 또는에서 예제 [단순 소비자 구현](../../data/oledb/implementing-a-simple-consumer.md)합니다.  
-  
-1. 원하는 추가 인터페이스를 추가 합니다. 예를 들어 참조 [간단한 읽기 전용 공급자의 기능 향상](../../data/oledb/enhancing-the-simple-read-only-provider.md)합니다.  
-  
-    > [!NOTE]
-    >  기본적으로 마법사는 OLE DB 수준 0과 호환 되는 코드를 생성 합니다. 응용 프로그램 수준 0 규격 유지 되도록 코드에서 마법사에서 생성 된 인터페이스 중 하나를 제거 하지 마십시오.  
-  
-## <a name="see-also"></a>참고 항목  
+OLE DB 공급자를 만들려면 마법사를 사용 하 여 ATL COM 프로젝트를 만들고 공급자를 다음 OLE DB 템플릿을 사용 하 여 파일을 수정 하는 것이 좋습니다. 공급자를 사용자 지정할 때에 필요 없는 속성 주석 수 있으며 선택적 인터페이스를 추가할 수 있습니다.
 
-[CATDB](https://github.com/Microsoft/VCSamples)<br/>
-[DBVIEWER](https://github.com/Microsoft/VCSamples)
+기본 단계는 다음과 같습니다.
+
+1. 사용 합니다 **ATL 프로젝트 마법사** 기본 프로젝트 파일을 만들려면 및 **ATL OLEDB 공급자 마법사** 공급자를 만들려면 (선택 **ATL OLEDB 공급자** 합니다 에서**설치 됨** > **Visual c + +** > **ATL** 폴더에 **새 항목 추가**).
+
+   > [!NOTE]
+   > 프로젝트에 MFC 지원을 추가 하기 전에 포함 해야 합니다는 **ATL OLEDB 공급자**합니다.
+
+1. 코드를 수정 합니다 `Execute` 의 메서드 [CCustomRowset(CustomRS.h)](cmyproviderrowset-myproviderrs-h.md)합니다. 예를 들어 참조 [OLE DB 공급자로 문자열 읽어들이기](../../data/oledb/reading-strings-into-the-ole-db-provider.md)합니다.
+
+1. 맵 속성 편집 [CustomDS.h](cmyprovidersource-myproviderds-h.md)를 [CustomSess.h](cmyprovidersession-myprovidersess-h.md), 및 [CustomRS.h](cmyproviderrowset-myproviderrs-h.md)합니다. 마법사는 공급자가 구현 하는 모든 속성을 포함 하는 속성 맵을 만듭니다. 속성 맵을 진행 하 고 제거 또는 공급자에 게 지 원하는 데 필요 없는 속성 주석입니다.
+
+1. 에 있는 PROVIDER_COLUMN_MAP를 업데이트할 [CCustomRowset(CustomRS.h)](cmyproviderrowset-myproviderrs-h.md)합니다. 예를 들어 참조 [OLE DB 공급자에 문자열 저장](../../data/oledb/storing-strings-in-the-ole-db-provider.md)합니다.
+
+1. 공급자를 테스트할 준비가 되었을 때 공급자 열거 목록에서 공급자를 찾으려고 시도 하 여 테스트할 수 있습니다. 공급자를 찾는 열거형에는 테스트 코드의 예제를 참조 하세요. 합니다 [CATDB](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/catdb) 및 [DBVIEWER](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/dbviewer) 샘플 또는에서 예제 [단순 소비자 구현](../../data/oledb/implementing-a-simple-consumer.md)합니다.
+
+1. 원하는 추가 인터페이스를 추가 합니다. 예를 들어 참조 [간단한 읽기 전용 공급자의 기능 향상](../../data/oledb/enhancing-the-simple-read-only-provider.md)합니다.
+
+   > [!NOTE]
+   > 기본적으로 마법사는 OLE DB 수준 0과 호환 되는 코드를 생성 합니다. 응용 프로그램 수준 0 규격 유지 되도록 코드에서 마법사에서 생성 된 인터페이스 중 하나를 제거 하지 마십시오.
+
+## <a name="see-also"></a>참고 항목
+
+[CatDB 샘플: 데이터 원본 스키마 브라우저](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/catdb)<br/>
+[데이터베이스 브라우저 DBViewer 샘플:](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/dbviewer)

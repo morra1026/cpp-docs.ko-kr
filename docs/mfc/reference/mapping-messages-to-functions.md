@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb37637cbfc2ec0af96ed339da6e71cf349797e2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b53175e46cfa858a73b581dfefc78047e96380d6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46402878"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50058956"
 ---
 # <a name="mapping-messages-to-functions"></a>함수에 메시지 매핑
 
@@ -42,7 +42,7 @@ ms.locfileid: "46402878"
     > [!NOTE]
     >  합니다 **메시지** 클래스 뷰 또는 소스 창 내부를 클릭할 때 클래스 이름 중 하나를 선택 하면 단추는 사용할 수 있습니다.
 
-     프로젝트에는 메시지에 대 한 처리기를 처리기의 이름을 메시지 옆에 있는 오른쪽 열에 나타납니다.
+   프로젝트에는 메시지에 대 한 처리기를 처리기의 이름을 메시지 옆에 있는 오른쪽 열에 나타납니다.
 
 1. 메시지 처리기가 없으면, 같이 처리기의 제안 된 이름을 표시 하려면 속성 창의 오른쪽 열에 셀을 클릭 한 다음 \<추가 >*HandlerName*합니다. (예를 들어 WM_TIMER 메시지 처리기 제안 \<추가 >`OnTimer`).
 

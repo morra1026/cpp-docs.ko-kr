@@ -48,114 +48,114 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 896c1dd1f1d3a43a3678a086d80e0f95b60b6126
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 616d2cc9919c992212024d25ab11902ffe2eda5e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083335"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50072150"
 ---
 # <a name="cenumeratoraccessor-class"></a>CEnumeratorAccessor 클래스
 
-사용한 [CEnumerator](../../data/oledb/cenumerator-class.md) 열거자 행 집합에서 데이터를 액세스할 수 있습니다.  
-  
+사용한 [CEnumerator](../../data/oledb/cenumerator-class.md) 열거자 행 집합에서 데이터를 액세스할 수 있습니다.
+
 ## <a name="syntax"></a>구문
 
 ```cpp
-class CEnumeratorAccessor  
-```  
+class CEnumeratorAccessor
+```
 
-## <a name="requirements"></a>요구 사항  
+## <a name="requirements"></a>요구 사항
 
-**헤더:** atldbcli.h  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="data-members"></a>데이터 멤버  
-  
-|||  
-|-|-|  
-|[m_bIsParent](#bisparent)|있는지 여부를 나타내는 열거자 부모 열거자의 경우 행이 열거자는 변수입니다.|  
-|[m_nType](#ntype)|행이 데이터 원본 또는 열거자를 설명 하는지 여부를 나타내는 변수입니다.|  
-|[m_szDescription](#szdescription)|데이터 원본 또는 열거자의 설명입니다.|  
-|[m_szName](#szname)|데이터 원본 또는 열거자의 이름입니다.|  
-|[m_szParseName](#szparsename)|에 전달할 문자열 [IParseDisplayName](/windows/desktop/api/oleidl/nn-oleidl-iparsedisplayname) 데이터 원본 또는 열거자에 대 한 모니커를 가져오려고 합니다.|  
-  
-## <a name="remarks"></a>설명  
+**헤더:** atldbcli.h
 
-이 행 집합은 데이터 원본 및 현재 열거자에서 표시 되는 열거자 구성 됩니다.  
-  
+## <a name="members"></a>멤버
+
+### <a name="data-members"></a>데이터 멤버
+
+|||
+|-|-|
+|[m_bIsParent](#bisparent)|있는지 여부를 나타내는 열거자 부모 열거자의 경우 행이 열거자는 변수입니다.|
+|[m_nType](#ntype)|행이 데이터 원본 또는 열거자를 설명 하는지 여부를 나타내는 변수입니다.|
+|[m_szDescription](#szdescription)|데이터 원본 또는 열거자의 설명입니다.|
+|[m_szName](#szname)|데이터 원본 또는 열거자의 이름입니다.|
+|[m_szParseName](#szparsename)|에 전달할 문자열 [IParseDisplayName](/windows/desktop/api/oleidl/nn-oleidl-iparsedisplayname) 데이터 원본 또는 열거자에 대 한 모니커를 가져오려고 합니다.|
+
+## <a name="remarks"></a>설명
+
+이 행 집합은 데이터 원본 및 현재 열거자에서 표시 되는 열거자 구성 됩니다.
+
 ## <a name="bisparent"></a> Cenumeratoraccessor:: M_bisparent
 
-있는지 여부를 나타내는 열거자 부모 열거자의 경우 행이 열거자는 변수입니다.  
-  
-### <a name="syntax"></a>구문  
-  
-```cpp
-VARIANT_BOOL m_bIsParent;  
-```  
-  
-### <a name="remarks"></a>설명  
+있는지 여부를 나타내는 열거자 부모 열거자의 경우 행이 열거자는 변수입니다.
 
-참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다. 
+### <a name="syntax"></a>구문
+
+```cpp
+VARIANT_BOOL m_bIsParent;
+```
+
+### <a name="remarks"></a>설명
+
+참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
 
 ## <a name="ntype"></a> Cenumeratoraccessor:: M_ntype
 
-행이 데이터 원본 또는 열거자를 설명 하는지 여부를 나타내는 변수입니다.  
-  
-### <a name="syntax"></a>구문  
-  
+행이 데이터 원본 또는 열거자를 설명 하는지 여부를 나타내는 변수입니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-USHORT m_nType;  
-```  
-  
-### <a name="remarks"></a>설명  
+USHORT m_nType;
+```
+
+### <a name="remarks"></a>설명
 
 참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
 
 ## <a name="szdescription"></a> Cenumeratoraccessor:: M_szdescription
 
-데이터 원본 또는 열거자의 설명입니다.  
-  
-### <a name="syntax"></a>구문  
-  
+데이터 원본 또는 열거자의 설명입니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-WCHAR m_szDescription[129];  
-```  
-  
-### <a name="remarks"></a>설명  
+WCHAR m_szDescription[129];
+```
+
+### <a name="remarks"></a>설명
 
 참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
 
 ## <a name="szname"></a> Cenumeratoraccessor:: M_szname
 
-데이터 원본 또는 열거자의 이름입니다.  
-  
-### <a name="syntax"></a>구문  
-  
-```cpp
-WCHAR m_szName[129];  
-```  
-  
-### <a name="remarks"></a>설명  
+데이터 원본 또는 열거자의 이름입니다.
 
-참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.  
+### <a name="syntax"></a>구문
+
+```cpp
+WCHAR m_szName[129];
+```
+
+### <a name="remarks"></a>설명
+
+참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
 
 ## <a name="szparsename"></a> Cenumeratoraccessor:: M_szparsename
 
-에 전달할 문자열 [IParseDisplayName](/windows/desktop/api/oleidl/nn-oleidl-iparsedisplayname) 데이터 원본 또는 열거자에 대 한 모니커를 가져오려고 합니다.  
-  
-### <a name="syntax"></a>구문  
-  
-```cpp
-WCHAR m_szParseName[129];  
-```  
-  
-### <a name="remarks"></a>설명  
+에 전달할 문자열 [IParseDisplayName](/windows/desktop/api/oleidl/nn-oleidl-iparsedisplayname) 데이터 원본 또는 열거자에 대 한 모니커를 가져오려고 합니다.
 
-참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
+### <a name="syntax"></a>구문
+
+```cpp
+WCHAR m_szParseName[129];
+```
+
+### <a name="remarks"></a>설명
+
+참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
+
+## <a name="see-also"></a>참고 항목
 
 [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

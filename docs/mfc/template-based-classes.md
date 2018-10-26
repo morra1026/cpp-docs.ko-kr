@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 680ff7d339f592cf112a91fc303a6367fbc4805b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b972d4552a8e41ca0dcea4ef57d48ef161ea35b9
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408756"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069232"
 ---
 # <a name="template-based-classes"></a>템플릿 기반 클래스
 
@@ -47,11 +47,11 @@ MFC는 두 가지 범주의 템플릿 기반 컬렉션을 미리 정의 합니�
 
 - [단순 배열, 목록 및 맵 클래스](#_core_using_simple_array.2c_.list.2c_.and_map_templates)
 
-     `CArray`, `CList`, `CMap`
+   `CArray`, `CList`, `CMap`
 
 - [배열, 목록 및 형식화 된 포인터의 맵을](#_core_using_typed.2d.pointer_collection_templates)
 
-     `CTypedPtrArray`, `CTypedPtrList`, `CTypedPtrMap`
+   `CTypedPtrArray`, `CTypedPtrList`, `CTypedPtrMap`
 
 간단한 컬렉션 클래스는 모든 클래스에서 파생 됩니다 `CObject`serialization, 동적 생성 및 다른 속성을 상속 하므로 `CObject`합니다. 형식화 된 포인터 컬렉션 클래스에서 파생 하는 클래스를 지정 해야-같은 MFC에서 미리 정의 된 비템플릿 포인터 컬렉션 중 하나인 `CPtrList` 또는 `CPtrArray`합니다. 지정된 된 기본 클래스에서 상속 되는 새 컬렉션 클래스 및 형식 안전성을 적용 하는 기본 클래스 멤버에 캡슐화 된 호출을 사용 하는 새 클래스의 멤버 함수입니다.
 

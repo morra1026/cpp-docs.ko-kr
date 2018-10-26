@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d7fb74dcff370b314df5da5428ba3e406023acbe
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: fa8434230081afe0ad104853e80ba5aa28ec280e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49327975"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054139"
 ---
 # <a name="handle-to-object-operator---ccli-and-ccx"></a>개체 연산자 (^)에 대 한 핸들 (C + + /cli 및 C + + /cli CX)
 
@@ -94,7 +94,7 @@ using namespace System;
 void Test(Object^ o) {
    Int32^ i = dynamic_cast<Int32^>(o);
 
-   if(i)  
+   if(i)
       Console::WriteLine(i);
    else
       Console::WriteLine("Not a boxed int");
@@ -173,12 +173,12 @@ private:
 public:
    DataCollection(int i) : Size(i) {
       x = gcnew array<String^>(Size);
-      for (int i = 0 ; i < Size ; i++)  
+      for (int i = 0 ; i < Size ; i++)
          x[i] = i.ToString();
    }
 
    void f(int Item) {
-      if (Item >= Size)  
+      if (Item >= Size)
       {
          System::Console::WriteLine("Cannot access array element {0}, size is {1}", Item, Size);
          return;
@@ -233,5 +233,5 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)<br/>
+[.NET 및 UWP용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)<br/>
 [추적 참조 연산자](../windows/tracking-reference-operator-cpp-component-extensions.md)

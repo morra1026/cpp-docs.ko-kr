@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94a250862f5514f290043bf596ba19bf0834e71e
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: 4040f5a05f8c9bccfbf1c8b48a40188f684d48ad
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49161660"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060015"
 ---
 # <a name="try-finally-statement"></a>try-finally 문
 
@@ -44,7 +44,7 @@ ms.locfileid: "49161660"
 다음 구문에 설명 합니다 **try-finally** 문:
 
 ```cpp
-__try {
+__try {
    // guarded code
 }
 __finally {
@@ -73,7 +73,7 @@ __finally {
 
 1. 이후 실행 진행 종료 처리기에는 다음이 완료 되 면 합니다 **__finally** 문입니다. 보호 된 섹션이 끝나는 방법에 관계 없이 (예를 통해는 **goto** 보호 된 본문 밖 또는 **반환** 문), 종료 처리기가 실행 됩니다 *하기 전에* 는 제어 흐름이 보호 된 섹션 밖으로 이동 합니다.
 
-     A **__finally** 문이 적절 한 예외 처리기 검색을 차단 하지 않습니다.
+   A **__finally** 문이 적절 한 예외 처리기 검색을 차단 하지 않습니다.
 
 예외가 발생 하는 경우는 **__try** 블록 프로그램이 실패 또는 운영 체제는 예외에 대 한 처리기를 찾아야 합니다. 처리기가 있으면 모든 **__finally** 블록을 실행 하 고 처리기에서 실행을 다시 시작 합니다.
 

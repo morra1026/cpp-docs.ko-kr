@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c3064da609c8a81a6e264c7f46d37d4cd5681d1
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3a6eb1b97acfe2fa41511433de3990da8923de7d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46107145"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059547"
 ---
 # <a name="general-rules-for-operator-overloading"></a>연산자 오버로드에 대한 일반 규칙
 
@@ -48,7 +48,7 @@ ms.locfileid: "46107145"
     }
     ```
 
-     위의 코드 예제에서는 작음 연산자를 멤버 함수로 선언합니다. 그러나 더하기 연산자는 friend 액세스 권한이 있는 전역 함수로 선언됩니다. 지정된 연산자에 대해 둘 이상의 구현이 제공될 수 있습니다. 위에 나오는 더하기 연산자의 경우 원활한 가환성을 위해 두 가지 구현이 제공됩니다. 해당 연산자를 추가 하는 것 처럼 것을 `Point` 에 `Point`, **int** 를 `Point`등, 구현할 수 있습니다.
+   위의 코드 예제에서는 작음 연산자를 멤버 함수로 선언합니다. 그러나 더하기 연산자는 friend 액세스 권한이 있는 전역 함수로 선언됩니다. 지정된 연산자에 대해 둘 이상의 구현이 제공될 수 있습니다. 위에 나오는 더하기 연산자의 경우 원활한 가환성을 위해 두 가지 구현이 제공됩니다. 해당 연산자를 추가 하는 것 처럼 것을 `Point` 에 `Point`, **int** 를 `Point`등, 구현할 수 있습니다.
 
 - 연산자는 기본 제공 형식과 함께 연산자를 사용하는 일반적인 경우에 적용되는 피연산자의 수, 우선 순위 및 그룹화를 준수합니다. 따라서 개념을 표현할 수 없는 방법이 있습니다. "2 및 3 형식의 개체에 추가 `Point`," 2에 추가할 필요는 *x* 좌표 및 3에 추가할 합니다 *y* 조정 합니다.
 

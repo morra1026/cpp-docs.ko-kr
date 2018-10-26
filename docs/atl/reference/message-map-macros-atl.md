@@ -47,12 +47,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ce6099b904c088399dcb43635a1b254567e8320
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fbfd58491981cdba1b3aa3002736f49a7c09038c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46024918"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054478"
 ---
 # <a name="message-map-macros-atl"></a>메시지 맵 매크로 (ATL)
 
@@ -93,11 +93,11 @@ ms.locfileid: "46024918"
 |[REFLECTED_NOTIFY_HANDLER](#reflected_notify_handler)|리플 렉 트 된 WM_NOTIFY 메시지를 알림 코드 및 컨트롤 식별자를 기반으로 처리기 함수에 매핑됩니다.|
 |[REFLECTED_NOTIFY_ID_HANDLER](#reflected_notify_id_handler)|컨트롤 식별자를 기반으로 처리기 함수에 반영된 WM_NOTIFY 메시지를 매핑합니다.|
 |[REFLECTED_NOTIFY_RANGE_CODE_HANDLER](#reflected_notify_range_code_handler)|리플 렉 트 된 WM_NOTIFY 메시지를 알림 코드 및 인접 한 범위의 컨트롤 식별자에 따라 처리기 함수에 매핑됩니다.|
-|[REFLECTED_NOTIFY_RANGE_HANDLER](#reflected_notify_range_handler)|컨트롤 식별자의 연속 범위를 기반으로 처리기 함수에 반영된 WM_NOTIFY 메시지를 매핑합니다.|  
+|[REFLECTED_NOTIFY_RANGE_HANDLER](#reflected_notify_range_handler)|컨트롤 식별자의 연속 범위를 기반으로 처리기 함수에 반영된 WM_NOTIFY 메시지를 매핑합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlwin.h  
+**헤더:** atlwin.h
 
 ##  <a name="alt_msg_map"></a>  ALT_MSG_MAP
 
@@ -136,7 +136,7 @@ ATL 번호로 각 메시지 맵에 식별합니다. 기본 메시지 맵에서 (
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlwin.h   
+**헤더:** atlwin.h
 
 ##  <a name="begin_msg_map"></a>  BEGIN_MSG_MAP
 
@@ -153,7 +153,7 @@ BEGIN_MSG_MAP(theClass)
 
 ### <a name="remarks"></a>설명
 
-[CWindowImpl::WindowProc](cwindowimpl-class.md#windowproc) 기본 메시지 맵을 창에 전송 된 메시지를 처리 하는 데 사용 합니다. 메시지 맵에서 적절 한 처리기 함수로 또는 다른 메시지 구조에 메시지를 보냅니다.  
+[CWindowImpl::WindowProc](cwindowimpl-class.md#windowproc) 기본 메시지 맵을 창에 전송 된 메시지를 처리 하는 데 사용 합니다. 메시지 맵에서 적절 한 처리기 함수로 또는 다른 메시지 구조에 메시지를 보냅니다.
 
 다음 매크로를 처리기 함수는 메시지를 매핑합니다. 이 함수에 정의 되어 있어야 *theClass*합니다.
 
@@ -328,7 +328,7 @@ CHAIN_MSG_MAP_DYNAMIC(dynaChainID)
 
 ### <a name="remarks"></a>설명
 
-CHAIN_MSG_MAP_DYNAMIC 다른 개체의 기본 메시지 맵에 런타임에 메시지를 보냅니다. 와 관련 된 개체 및 자신의 메시지 맵을 *dynaChainID*를 통해 정의한 [CDynamicChain::SetChainEntry](cdynamicchain-class.md#setchainentry)합니다. 클래스를 파생 시켜야 `CDynamicChain` CHAIN_MSG_MAP_DYNAMIC를 사용 하려면. 예를 들어 참조 된 [CDynamicChain](../../atl/reference/cdynamicchain-class.md) 개요.  
+CHAIN_MSG_MAP_DYNAMIC 다른 개체의 기본 메시지 맵에 런타임에 메시지를 보냅니다. 와 관련 된 개체 및 자신의 메시지 맵을 *dynaChainID*를 통해 정의한 [CDynamicChain::SetChainEntry](cdynamicchain-class.md#setchainentry)합니다. 클래스를 파생 시켜야 `CDynamicChain` CHAIN_MSG_MAP_DYNAMIC를 사용 하려면. 예를 들어 참조 된 [CDynamicChain](../../atl/reference/cdynamicchain-class.md) 개요.
 
 > [!NOTE]
 >  항상 메시지 맵을 사용 하 여 시작 [BEGIN_MSG_MAP](#begin_msg_map)합니다. 그런 다음 후속 대체 메시지 맵 ALT_MSG_MAP 사용 하 여 선언할 수 있습니다. 합니다 [END_MSG_MAP](#end_msg_map) 매크로 메시지 map의 끝을 표시 합니다. 모든 메시지 맵이 BEGIN_MSG_MAP 및 END_MSG_MAP 인스턴스가 하나만 있어야 합니다.
@@ -823,7 +823,7 @@ REFLECTED_COMMAND_CODE_HANDLER( code, func )
 [in] 알림 코드입니다.
 
 *func*<br/>
-[in] 메시지-처리기 함수의 이름입니다.  
+[in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -846,11 +846,11 @@ REFLECTED_COMMAND_HANDLER( id, code, func )
 [in] 알림 코드입니다.
 
 *func*<br/>
-[in] 메시지-처리기 함수의 이름입니다.  
+[in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlwin.h  
+**헤더:** atlwin.h
 
 ##  <a name="reflected_command_id_handler"></a>  REFLECTED_COMMAND_ID_HANDLER
 
@@ -866,11 +866,11 @@ REFLECTED_COMMAND_ID_HANDLER( id, func )
 [in] 메뉴 항목, 컨트롤 또는 액셀러레이터 키의 식별자입니다.
 
 *func*<br/>
-[in] 메시지-처리기 함수의 이름입니다.  
+[in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlwin.h  
+**헤더:** atlwin.h
 
 ##  <a name="reflected_command_range_code_handler"></a>  REFLECTED_COMMAND_RANGE_CODE_HANDLER
 
@@ -892,11 +892,11 @@ REFLECTED_COMMAND_RANGE_CODE_HANDLER( idFirst, idLast, code, func )
 [in] 알림 코드입니다.
 
 *func*<br/>
-[in] 메시지-처리기 함수의 이름입니다.  
+[in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlwin.h  
+**헤더:** atlwin.h
 
 ##  <a name="reflected_command_range_handler"></a>  REFLECTED_COMMAND_RANGE_HANDLER
 
@@ -915,11 +915,11 @@ REFLECTED_COMMAND_RANGE_HANDLER( idFirst, idLast, func )
 [in] 컨트롤 식별자의 연속 된 범위 끝을 표시 합니다.
 
 *func*<br/>
-[in] 메시지-처리기 함수의 이름입니다.  
+[in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlwin.h  
+**헤더:** atlwin.h
 
 ##  <a name="reflected_notify_code_handler"></a>  REFLECTED_NOTIFY_CODE_HANDLER
 
@@ -935,11 +935,11 @@ REFLECTED_NOTIFY_CODE_HANDLER_EX( cd, func )
 [in] 알림 코드입니다.
 
 *func*<br/>
-[in] 메시지-처리기 함수의 이름입니다.  
+[in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlwin.h  
+**헤더:** atlwin.h
 
 ##  <a name="reflected_notify_handler"></a>  REFLECTED_NOTIFY_HANDLER
 
@@ -958,11 +958,11 @@ REFLECTED_NOTIFY_HANDLER( id, cd, func )
 [in] 알림 코드입니다.
 
 *func*<br/>
-[in] 메시지-처리기 함수의 이름입니다.  
+[in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlwin.h  
+**헤더:** atlwin.h
 
 ##  <a name="reflected_notify_id_handler"></a>  REFLECTED_NOTIFY_ID_HANDLER
 
@@ -978,11 +978,11 @@ REFLECTED_NOTIFY_ID_HANDLER( id, func )
 [in] 메뉴 항목, 컨트롤 또는 액셀러레이터 키의 식별자입니다.
 
 *func*<br/>
-[in] 메시지-처리기 함수의 이름입니다.  
+[in] 메시지-처리기 함수의 이름입니다.
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlwin.h  
+**헤더:** atlwin.h
 
 ##  <a name="reflected_notify_range_code_handler"></a>  REFLECTED_NOTIFY_RANGE_CODE_HANDLER
 

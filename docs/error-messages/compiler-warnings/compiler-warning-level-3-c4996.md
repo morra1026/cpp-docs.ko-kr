@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d618ace9d922daabecf908c76a319e89a9fdedcc
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: dff9f3c988e7ffdf8f15b5502bb0326e2692a128
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46094184"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079040"
 ---
 # <a name="compiler-warning-level-3-c4996"></a>컴파일러 경고 (수준 3) C4996
 
@@ -82,7 +82,6 @@ Microsoft의 C99 및 c++03 규칙 전역 함수 구현이 정의 된 이름에 �
 이 문제를 해결 하려면 일반적으로 권장 제안 된 함수 이름을 대신 사용 하도록 코드를 변경 합니다. 그러나 업데이트 된 이름은 Microsoft 전용입니다. 이식성 이유로 기존 함수 이름을 사용 해야 할 경우에 이러한 경고를 해제할 수 있습니다. 원래 이름 아래에 있는 라이브러리의 POSIX 함수를 사용할 수 있습니다.
 
 이러한 함수에 대 한 사용 중단 경고를 끄려면 전처리기 매크로 정의할  **\_CRT\_NONSTDC\_아니오\_경고**합니다. 옵션을 포함 하 여 명령줄에서이 매크로 정의할 수 있습니다 `/D_CRT_NONSTDC_NO_WARNINGS`합니다.
-
 
 ### <a name="unsafe-crt-library-functions"></a>안전 하지 않은 CRT 라이브러리 함수
 

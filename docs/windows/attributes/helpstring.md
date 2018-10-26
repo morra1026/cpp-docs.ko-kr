@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8ea4a1ac927d03b0fc6427fb6ad39f748655fda7
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 8cca35d151d0f28c7273c84643662b442afbd3a3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791960"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056986"
 ---
 # <a name="helpstring"></a>helpstring
 
@@ -58,7 +58,7 @@ ms.locfileid: "48791960"
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
@@ -68,4 +68,4 @@ ms.locfileid: "48791960"
 [메서드 특성](method-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>
 [helpfile](helpfile.md)<br/>
-[helpcontext](helpcontext.md)  
+[helpcontext](helpcontext.md)

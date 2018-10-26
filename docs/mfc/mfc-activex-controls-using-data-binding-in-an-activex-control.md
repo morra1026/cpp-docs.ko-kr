@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ecd2cea655536ab12751a169793273c27b7d8f7
-ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
+ms.openlocfilehash: 397356f8144e3680f3b2d19824d19c0a3bbaddd1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029569"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062615"
 ---
 # <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤에서 데이터 바인딩 사용
 
@@ -63,13 +63,13 @@ ActiveX 컨트롤을 사용 하는 더 강력한 중 하나는 데이터베이�
 
 1. 컨트롤의 인터페이스 노드를 마우스 오른쪽 단추로 클릭 합니다.
 
-     바로 가기 메뉴가 열립니다.
+   바로 가기 메뉴가 열립니다.
 
 1. 바로 가기 메뉴에서 클릭 **추가** 을 클릭 한 다음 **속성 추가**합니다.
 
 1. 항목을 중 하나를 선택 합니다 **속성 이름이** 드롭 다운 목록. 예를 들어, 선택할 수 있습니다 **텍스트**합니다.
 
-     때문에 **텍스트** 스톡 속성으로는 **바인딩할 수 있는** 및 **requestedit** 특성을 이미 검사 합니다.
+   때문에 **텍스트** 스톡 속성으로는 **바인딩할 수 있는** 및 **requestedit** 특성을 이미 검사 합니다.
 
 1. 다음 확인란을 선택 합니다 **IDL 특성** 탭: **displaybind** 및 **defaultbind** 프로젝트의 속성 정의에 특성을 추가 합니다. IDL 파일입니다. 이러한 컨트롤을 사용자에 게 표시 되도록 특성과 스톡 속성의 기본 바인딩 가능 속성을 확인 합니다.
 
@@ -96,7 +96,7 @@ ActiveX 컨트롤을 사용 하는 더 강력한 중 하나는 데이터베이�
 
 1. 컨트롤의 인터페이스 노드를 마우스 오른쪽 단추로 클릭 합니다.
 
-     바로 가기 메뉴가 열립니다.
+   바로 가기 메뉴가 열립니다.
 
 1. 바로 가기 메뉴에서 클릭 **추가** 을 클릭 한 다음 **속성 추가**합니다.
 
@@ -112,33 +112,33 @@ ActiveX 컨트롤을 사용 하는 더 강력한 중 하나는 데이터베이�
 
 11. 본문을 수정 합니다 `SetMyProp` 함수를 다음 코드를 포함 합니다.
 
-     [!code-cpp[NVC_MFC_AxData#2](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_2.cpp)]
+   [!code-cpp[NVC_MFC_AxData#2](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_2.cpp)]
 
 12. 매개 변수를 전달 합니다 `BoundPropertyChanged` 및 `BoundPropertyRequestEdit` 기능은 id () 특성의 속성에 대해 전달 된 매개 변수 속성의 dispid를 합니다. IDL 파일입니다.
 
 13. 수정 된 [OnOcmCommand](../mfc/mfc-activex-controls-subclassing-a-windows-control.md) 함수 이므로 다음 코드를 포함 합니다.
 
-     [!code-cpp[NVC_MFC_AxData#1](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_1.cpp)]
+   [!code-cpp[NVC_MFC_AxData#1](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_1.cpp)]
 
 14. 수정 된 `OnDraw` 함수를 다음 코드를 포함 합니다.
 
-     [!code-cpp[NVC_MFC_AxData#3](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_3.cpp)]
+   [!code-cpp[NVC_MFC_AxData#3](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_3.cpp)]
 
 15. 헤더 파일 컨트롤 클래스에 대 한 헤더 파일의 공용 섹션으로 멤버 변수에 대 한 다음 정의 (생성자)를 추가 합니다.
 
-     [!code-cpp[NVC_MFC_AxData#4](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_4.h)]
+   [!code-cpp[NVC_MFC_AxData#4](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_4.h)]
 
 16. 다음 줄의 마지막 줄을 확인 합니다 `DoPropExchange` 함수:
 
-     [!code-cpp[NVC_MFC_AxData#5](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_5.cpp)]
+   [!code-cpp[NVC_MFC_AxData#5](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_5.cpp)]
 
 17. 수정 된 `OnResetState` 함수를 다음 코드를 포함 합니다.
 
-     [!code-cpp[NVC_MFC_AxData#6](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_6.cpp)]
+   [!code-cpp[NVC_MFC_AxData#6](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_6.cpp)]
 
 18. 수정 된 `GetMyProp` 함수를 다음 코드를 포함 합니다.
 
-     [!code-cpp[NVC_MFC_AxData#7](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_7.cpp)]
+   [!code-cpp[NVC_MFC_AxData#7](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_7.cpp)]
 
 이제 컨트롤을 등록 하는 프로젝트를 빌드할 수 있습니다. 대화 상자에 컨트롤을 삽입할 때 합니다 **데이터 필드** 하 고 **데이터 원본** 속성은 추가 했 고 이제 데이터 원본 및 컨트롤에 표시할 필드를 선택할 수 있습니다.
 

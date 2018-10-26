@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b9479957fdfb4d6b92ec531941808940765a9e5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 150179fc0fd97450ba805d6957f5282bfaf8345c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116726"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071260"
 ---
 # <a name="constexpr-c"></a>constexpr(C++)
 
@@ -95,7 +95,6 @@ Constexpr 함수에 다음 규칙이 적용 됩니다.
 - 지역 변수 선언, 포함 될 수 있지만 변수 초기화는 리터럴 형식 이어야 하 고 정적 또는 스레드 로컬 일 수 없습니다. 로컬로 선언 된 변수는 const 일 필요가 없습니다 및 변경할 수 있습니다.
 
 - Constexpr 비정적 멤버 함수는 암시적으로 생성 될 필요가 없습니다.
-
 
 ```cpp
 constexpr float exp(float x, int n)

@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 876f3b45cc9f45ab5ff1aaa7e07116482f89afc1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2035e665bd7d8cba502c3516498934f32c2b3dd0
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442086"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080847"
 ---
 # <a name="security-implications-of-customization"></a>사용자 지정의 보안 의미
 
@@ -38,7 +38,7 @@ MFC를 사용 하면 예를 들어, 단추 및 아이콘 모양 응용 프로그
 
 - 레지스트리에서 대신 보안 파일에 데이터를 저장 합니다.
 
-     를 수행 하기 위해 먼저 두 가지 중 하나에서 클래스를 파생 [CSettingsStore 클래스](../mfc/reference/csettingsstore-class.md) 암호화 또는 레지스트리 외부 저장소를 구현 하는 해당 메서드를 재정의 합니다.
+   를 수행 하기 위해 먼저 두 가지 중 하나에서 클래스를 파생 [CSettingsStore 클래스](../mfc/reference/csettingsstore-class.md) 암호화 또는 레지스트리 외부 저장소를 구현 하는 해당 메서드를 재정의 합니다.
 
 - 또한 응용 프로그램에서 사용자 지정을 비활성화할 수 있습니다.
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8376db7eb824856d84e8c742d8a187604f939455
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 13e3f621bafad08694e8e930835ecc62562db013
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46384717"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071682"
 ---
 # <a name="custom-image-dialog-box-c-image-editor-for-icons"></a>사용자 지정 이미지 대화 상자 (c + +) (아이콘에 대 한 이미지 편집기)
 
@@ -31,19 +31,19 @@ ms.locfileid: "46384717"
 - **너비**
 
    픽셀 (1-512 최대 2048)에서 사용자 지정 이미지의 너비를 입력할 공간을 제공 합니다.
-  
+
 - **높이**
 
    사용자 지정 이미지 픽셀 (1-512 최대 2048)의 높이 입력할 공간을 제공 합니다.
-  
+
 - **색**
 
    사용자 지정 이미지에 대 한 색의 수를 선택 하기 위한 공간을 제공 합니다. 2, 16, 또는 256입니다.
-  
+
 ## <a name="requirements"></a>요구 사항
 
 없음
-  
+
 ## <a name="see-also"></a>참고 항목
 
 [새 \<장치 > 이미지 형식 대화 상자](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md)<br/>

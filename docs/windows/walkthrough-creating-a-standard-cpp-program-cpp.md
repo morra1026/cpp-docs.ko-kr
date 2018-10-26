@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 342716f3197713a584e2f0a1d20e4de75ece474b
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 800dd3b626a03ec3b04910f6c4c1bbea3e1ab17d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234326"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053528"
 ---
 # <a name="walkthrough-creating-a-standard-c-program-c"></a>연습: 표준 C++ 프로그램(C++) 만들기
 
@@ -45,10 +45,10 @@ Visual c + + 주요 예외가 2003 c + + 표준에 따릅니다: 2 단계 이름
 
 1. 메뉴의 **파일**에서 **새로만들기**를 클릭한 다음 **프로젝트**를 선택하여 새 프로젝트를 만듭니다.
 
-1. 에 **Visual c + +** 프로젝트 형식 창에서 클릭 **Windows Desktop**를 클릭 하 고 **Windows 콘솔 응용 프로그램**. 
+1. 에 **Visual c + +** 프로젝트 형식 창에서 클릭 **Windows Desktop**를 클릭 하 고 **Windows 콘솔 응용 프로그램**.
 
    > [!NOTE]
-   > Visual Studio 2017 년 보다 오래 된 버전에 **새 프로젝트** 대화 상자에서 **설치 됨** > **템플릿**  >  **Visual c + +** 를 선택한 후 **Win32**합니다. 가운데 창에서 **Win32 콘솔 응용 프로그램**을 선택합니다. 
+   > Visual Studio 2017 년 보다 오래 된 버전에 **새 프로젝트** 대화 상자에서 **설치 됨** > **템플릿**  >  **Visual c + +** 를 선택한 후 **Win32**합니다. 가운데 창에서 **Win32 콘솔 응용 프로그램**을 선택합니다.
 
    프로젝트 이름을 입력합니다. 
 

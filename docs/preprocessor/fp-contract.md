@@ -18,26 +18,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 514b4708129d625ea7880e4c61be22c4b1ac2db5
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 95f23fa132a263970047a480ccde37382b6d03de
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33912890"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052166"
 ---
 # <a name="fpcontract"></a>fp_contract
 
-부동 소수점 축약형 수행 여부를 결정 합니다. 부동 소수점 축약형 FMA (Fused Multiply-Add) 별도 단일 명령으로 부동 두 소수점 연산 결합 하는 등 명령입니다. 이 지침의 사용 하 여 각 작업이 끝난 후 반올림 하는 대신 프로세서 수 한 번만 반올림 두 작업을 수행한 후 때문에 부동 소수점 정밀도 발생할 수 있습니다.
+부동 소수점 축약 발생 여부를 결정 합니다. 부동 소수점 축약은 별도 단일 명령으로 부동 두 지점 작업을 결합 하는 FMA (Fused-곱셈-덧셈)와 같은 명령입니다. 이러한 명령을 사용 하 여 각 작업이 끝난 후 반올림 하는 대신 프로세서 반올림할 수 한 번만 모두 작업 후 때문에 부동 소수점 정밀도만을 달라질 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
-> **#pragma fp_contract (** { **에** | **오프** } **)**  
+> **#pragma fp_contract (** {0} **온** | **해제** } **)**
 
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>설명
 
-기본적으로 **fp_contract** 은 **에**합니다. 이 가능한 경우 부동 소수점 축약형 지침을 사용 하도록 컴파일러에 지시 합니다. 설정 **fp_contract** 를 **오프** 개별 부동 소수점 명령을 유지 하려면.
+기본적으로 **fp_contract** 됩니다 **에서**합니다. 이 가능한 경우 부동 소수점 축약 지침을 사용 하도록 컴파일러에 지시 합니다. 설정할 **fp_contract** 하 **해제** 개별 부동 소수점 명령을 유지 하려면.
 
-부동 소수점 동작에 대 한 자세한 내용은 참조 하십시오. [/fp (부동 소수점 동작 지정)](../build/reference/fp-specify-floating-point-behavior.md)합니다.
+부동 소수점 동작에 대 한 자세한 내용은 참조 하세요. [/fp (부동 소수점 동작 지정)](../build/reference/fp-specify-floating-point-behavior.md)합니다.
 
 다른 부동 소수점 pragma는 다음과 같습니다.
 
@@ -47,8 +47,8 @@ ms.locfileid: "33912890"
 
 ## <a name="example"></a>예제
 
-이 샘플에서 생성 된 코드는 대상 프로세서에서 사용할 수 있는 경우에 fused multiply-add 명령을 사용 하지 않습니다. 주석으로 처리 하는 경우 `#pragma fp_contract (off)`, 사용 가능한 경우 생성된 된 코드 fused multiply-add 명령을 사용할 수 있습니다.  
-  
+이 샘플에서 생성 된 코드는 대상 프로세서에서 사용할 수 있는 경우에 fused-곱셈-덧셈 지침을 사용 하지 않습니다. 주석으로 처리 하는 경우 `#pragma fp_contract (off)`, 생성된 된 코드는 사용 가능한 경우 fused-곱셈-덧셈 명령을 사용할 수 있습니다.
+
 ```cpp
 // pragma_directive_fp_contract.cpp
 // on x86 and x64 compile with: /O2 /fp:fast /arch:AVX2

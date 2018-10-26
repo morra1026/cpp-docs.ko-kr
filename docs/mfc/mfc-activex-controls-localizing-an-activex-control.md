@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2705061b1914ac8fad9f7ca8d769df16bab2f5c1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1a970c7fd75eec2ea028f74220cbdb046e5d23bd
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415696"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053281"
 ---
 # <a name="mfc-activex-controls-localizing-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤 지역화
 
@@ -68,7 +68,7 @@ SAMPLEFR 속성 이름을 변경 합니다. 사용 하 여 MKTYPLIB와 프랑스
 
 1. 컨트롤 프로젝트를 열고에 **프로젝트** 메뉴에서 클릭 **기존 항목 추가**합니다.
 
-     합니다 **기존 항목 추가** 대화 상자가 나타납니다.
+   합니다 **기존 항목 추가** 대화 상자가 나타납니다.
 
 1. 필요한 경우에 드라이브 및 디렉터리를 선택 합니다.
 

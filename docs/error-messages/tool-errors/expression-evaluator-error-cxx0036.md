@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2d82a1254a11dbda3164ea1c350dc14e2b1a122
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a94ed846d2d4ebda2e457ee772a9f8bf081d69d6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46050114"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50077174"
 ---
 # <a name="expression-evaluator-error-cxx0036"></a>식 계산기 오류 CXX0036
 
@@ -32,20 +32,20 @@ ms.locfileid: "46050114"
 
 - 컨텍스트 연산자 구문을 (**{}**) 올바르게 지정 되지 않았습니다.
 
-     컨텍스트 연산자의 구문은 다음과 같습니다.
+   컨텍스트 연산자의 구문은 다음과 같습니다.
 
      {*함수*를*모듈*하십시오*dll*}*식*
 
-     컨텍스트를 지정 하는이 *식*합니다. 컨텍스트 연산자에 동일한 우선 순위 및 사용 현황으로 형식 캐스팅
+   컨텍스트를 지정 하는이 *식*합니다. 컨텍스트 연산자에 동일한 우선 순위 및 사용 현황으로 형식 캐스팅
 
-     후행 쉼표를 생략할 수 있습니다. 하나라 *함수*를 *모듈*, 또는 *dll* 리터럴 쉼표를 포함 전체 이름을 괄호로 묶어야 합니다.
+   후행 쉼표를 생략할 수 있습니다. 하나라 *함수*를 *모듈*, 또는 *dll* 리터럴 쉼표를 포함 전체 이름을 괄호로 묶어야 합니다.
 
 - 함수 이름 철자가 잘못 되었거나, 또는 지정한 모듈 또는 동적 연결 라이브러리에 존재 하지 않습니다.
 
-     C는 언어를 대/소문자 구분 *함수* 원본에 정의 된 대로 정확한 경우 지정 해야 합니다.
+   C는 언어를 대/소문자 구분 *함수* 원본에 정의 된 대로 정확한 경우 지정 해야 합니다.
 
 - 모듈 또는 DLL을 찾을 수 없습니다.
 
-     지정한 모듈 또는 DLL의 전체 경로 이름을 확인 합니다.
+   지정한 모듈 또는 DLL의 전체 경로 이름을 확인 합니다.
 
 이 오류는 can0036과 동일 합니다.

@@ -29,12 +29,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: adbd47e8aeeb777b9a5e077429d74ef542abb85d
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: f40e0509f5e532ea85930052a6bda35d89e47ae1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788814"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071026"
 ---
 # <a name="weakref-class"></a>WeakRef 클래스
 
@@ -75,7 +75,7 @@ A `WeakRef` 개체를 유지 관리를 *강한 참조*, 개체와 관련이 있�
 
 `WeakRef` 개체는 일반적으로 외부 스레드나 응용 프로그램에서 제어 하는 개체를 나타내는 데 사용 됩니다. 예를 들어, 생성 된 `WeakRef` 파일 개체에 대 한 참조에서 개체입니다. 파일이 열려 있는 동안 강력한 참조는 유효합니다. 그러나 파일이 닫히면 강력한 참조는 유효하지 않게 됩니다.
 
-동작 변경이 있다는 점에 주의 합니다 [으로](#as)를 [AsIID](#asiid) 및 [CopyTo](#copyto) Windows 10 SDK에는 메서드. 이전에 이러한 방법 중 하나를 호출한 후 확인할 수 있습니다 합니다 `WeakRef` 에 대 한 `nullptr` 경우 강력한 참조를 성공적으로 가져왔는지, 다음 코드 에서처럼 확인 하려면:
+Windows 10 SDK에서는 [As](#as), [AsIID](#asiid) 및 [CopyTo](#copyto) 메서드의 동작 변경이 있습니다. 이전에 이러한 방법 중 하나를 호출한 후 확인할 수 있습니다 합니다 `WeakRef` 에 대 한 `nullptr` 경우 강력한 참조를 성공적으로 가져왔는지, 다음 코드 에서처럼 확인 하려면:
 
 ```cpp
 WeakRef wr;
@@ -88,7 +88,7 @@ HRESULT hr = wr.As(&strongRef);
 
 // This check won't work with the Windows 10 SDK version of the library.
 // Check the input pointer instead.
-if(wr == nullptr)  
+if(wr == nullptr)
 {
     wprintf(L"Couldn’t get strong ref!");
 }
@@ -97,7 +97,7 @@ if(wr == nullptr)
 위의 코드는 Windows 10 SDK(이상)를 사용하는 경우 작동하지 않습니다. 대신에 전달 된 포인터를 확인할 `nullptr`합니다.
 
 ```cpp
-if (strongRef == nullptr)  
+if (strongRef == nullptr)
 {
     wprintf(L"Couldn't get strong ref!");
 }
@@ -244,7 +244,7 @@ Windows 10 SDK 부터는이 메서드는 설정 하지 않습니다는 `WeakRef`
 반환 된 `ComPtrRef` 현재를 나타내는 개체 `WeakRef` 개체입니다.
 
 ```cpp
-Details::ComPtrRef<WeakRef> operator&() throw()  
+Details::ComPtrRef<WeakRef> operator&() throw()
 ```
 
 ### <a name="return-value"></a>반환 값
@@ -262,7 +262,7 @@ A `ComPtrRef` 현재 나타내는 `WeakRef` 개체입니다.
 ```cpp
 WeakRef();
 WeakRef(
-   decltype(__nullptr)  
+   decltype(__nullptr)
 );
 
 WeakRef(

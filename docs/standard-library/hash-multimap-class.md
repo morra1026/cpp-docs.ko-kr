@@ -1,7 +1,7 @@
 ---
 title: hash_multimap 클래스 | Microsoft 문서
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d34569f1b0f984a521b7d5a79221e089f1a1df0
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 3796ba7b243305fbae75e64f44e14964a89a9805
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235765"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075322"
 ---
 # <a name="hashmultimap-class"></a>hash_multimap 클래스
 
@@ -1497,7 +1497,6 @@ hash_multimap(
     initializer_list<Type> IList,
     const Compare& Comp);
 
-
 hash_multimap(
     initializer_list<Type> IList,
     const Compare& Comp,
@@ -1554,7 +1553,7 @@ hash_multimap(
 ## <a name="insert"></a>  hash_multimap::insert
 
 > [!NOTE]
-> 이 API는 더 이상 사용되지 않습니다. [unordered_multimap 클래스](../standard-library/unordered-multimap-class.md)를 대신 사용하는 것이 좋습니다.
+> 이 API는 더 이상 사용되지 않습니다. 다른 방법은 [unordered_multimap Class](../standard-library/unordered-multimap-class.md)입니다.
 
 hash_multimap에 요소 또는 요소의 범위를 삽입합니다.
 
@@ -2477,9 +2476,9 @@ hash_multimap이 요소의 순서를 지정하는 데 사용하는 비교 함수
 
 ### <a name="remarks"></a>설명
 
-hash_multimap *m*의 두 요소 *e*1(*k*1 *, d*1) 및 *e*2(*k*2 *, d*2)가 [value_type](#value_type)인 경우(여기서 *k*1 및 *k*2는 [key_type](#key_type) 형식의 요소 키이고 `d`1 및 `d`2는 [mapped_type](#mapped_type) 형식의 요소 데이터임) *m.*`value_comp`( )(*e*1 *, e*2)는 *m.*`key_comp`( )(*k*1 *, k*2)와 같습니다. 저장된 개체는 멤버 함수
+Hash_multimap에 대 한 *m*이면 두 요소 *e1* (*k1*하십시오 *d1*) 및 *e2*(*k2* , *d2*) 형식의 개체가 [value_type](#value_type)여기서 *k1* 하 고 *k2* 형식의해당키가[key_type](#key_type) 하 고 *d1* 및 *d2* 은 해당 데이터 형식의 [mapped_type](#mapped_type), 다음 `m.value_comp()(e1, e2)` 동일 `m.key_comp()(k1, k2)` . 저장된 개체는 멤버 함수
 
-**bool operator**(**value_type&**`left`, **value_type&** `right`);를
+`bool operator( value_type& left, value_type& right);`
 
 정의합니다. 이 함수는 `left`의 키 값이 앞에 오고 정렬 순서의 `right` 키 값과 같지 않으면 **true**를 반환합니다.
 

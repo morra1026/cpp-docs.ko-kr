@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3610f5c8fa11aabcc3de81ddf0cb23060b9e77a1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5af0ea66ba143935689486d7b7afa3cfaf8cd033
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390931"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071273"
 ---
 # <a name="cd2dsizef-class"></a>CD2DSizeF 클래스
 
@@ -75,7 +75,6 @@ CSize 개체에서 CD2DSizeF 개체를 생성합니다.
 CD2DSizeF(const CSize& size);
 CD2DSizeF(const D2D1_SIZE_F& size);
   CD2DSizeF(const D2D1_SIZE_F* size);
-
 
 CD2DSizeF(
     FLOAT cx = 0.,

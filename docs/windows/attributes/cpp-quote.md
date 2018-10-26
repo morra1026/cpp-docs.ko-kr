@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f3d6042866661659102090380c95e7d04e9bcd6c
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 0e67b839b487f7bb457eeadb0f4d0385b025ebc3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791328"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080600"
 ---
 # <a name="cppquote"></a>cpp_quote
 
@@ -62,9 +62,9 @@ C 명령입니다.
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-특성 컨텍스트에 대 한 자세한 내용은 참조 하세요. [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 [IDL 특성](idl-attributes.md)<br/>
-[독립 실행형 특성](stand-alone-attributes.md)  
+[독립 실행형 특성](stand-alone-attributes.md)

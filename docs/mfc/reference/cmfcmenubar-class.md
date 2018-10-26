@@ -1,7 +1,7 @@
 ---
 title: CMFCMenuBar 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6aafffcdcfbab750215ccb968774d60259e03672
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 93e9d1d148cc70ad0b83bb71565276baa5174afb
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433655"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080873"
 ---
 # <a name="cmfcmenubar-class"></a>CMFCMenuBar 클래스
 
@@ -140,11 +140,11 @@ class CMFCMenuBar : public CMFCToolbar
 
 |이름|설명|
 |----------|-----------------|
-|[CMFCMenuBar::AdjustLocations](#adjustlocations)|(`CMFCToolBar::AdjustLocations`를 재정의합니다.)|
+|[CMFCMenuBar::AdjustLocations](#adjustlocations)|( `CMFCToolBar::AdjustLocations`을 재정의합니다.)|
 |[CMFCMenuBar::AllowChangeTextLabels](#allowchangetextlabels)|텍스트 레이블을 도구 모음 단추 이미지에서 표시할 수 있는지 여부를 지정 합니다. (재정의 [CMFCToolBar::AllowChangeTextLabels](../../mfc/reference/cmfctoolbar-class.md#allowchangetextlabels).)|
-|[CMFCMenuBar::AllowShowOnPaneMenu](#allowshowonpanemenu)|(`CPane::AllowShowOnPaneMenu`를 재정의합니다.)|
+|[CMFCMenuBar::AllowShowOnPaneMenu](#allowshowonpanemenu)|( `CPane::AllowShowOnPaneMenu`을 재정의합니다.)|
 |[CMFCMenuBar::CalcFixedLayout](#calcfixedlayout)|도구 모음의 가로 크기를 계산합니다. (재정의 [CMFCToolBar::CalcFixedLayout](../../mfc/reference/cmfctoolbar-class.md#calcfixedlayout).)|
-|[CMFCMenuBar::CalcLayout](#calclayout)|(`CMFCToolBar::CalcLayout`를 재정의합니다.)|
+|[CMFCMenuBar::CalcLayout](#calclayout)|( `CMFCToolBar::CalcLayout`을 재정의합니다.)|
 |[CMFCMenuBar::CalcMaxButtonHeight](#calcmaxbuttonheight)|도구 모음에서 단추의 최대 높이 계산합니다. (재정의 [CMFCToolBar::CalcMaxButtonHeight](../../mfc/reference/cmfctoolbar-class.md#calcmaxbuttonheight).)|
 |[CMFCMenuBar::CanBeClosed](#canbeclosed)|사용자 도구 모음을 닫을 수 있는지 여부를 지정 합니다. (재정의 [CMFCToolBar::CanBeClosed](../../mfc/reference/cmfctoolbar-class.md#canbeclosed).)|
 |[CMFCMenuBar::CanBeRestored](#canberestored)|여부를 시스템 후 복원할 수는 도구 모음을 원래 상태로 사용자 지정을 결정 합니다. (재정의 [CMFCToolBar::CanBeRestored](../../mfc/reference/cmfctoolbar-class.md#canberestored).)|
@@ -177,10 +177,10 @@ class CMFCMenuBar : public CMFCToolbar
 |[CMFCMenuBar::LoadState](#loadstate)|상태를 로드 합니다 `CMFCMenuBar` 레지스트리에서 개체입니다.|
 |[CMFCMenuBar::OnChangeHot](#onchangehot)|사용자가 도구 모음에서 단추를 선택할 때 프레임 워크에서 호출 됩니다. (재정의 [CMFCToolBar::OnChangeHot](../../mfc/reference/cmfctoolbar-class.md#onchangehot).)|
 |[CMFCMenuBar::OnDefaultMenuLoaded](#ondefaultmenuloaded)|프레임 창의 리소스 파일에서 기본 메뉴를 로드할 때 프레임 워크에서 호출 됩니다.|
-|[CMFCMenuBar::OnSendCommand](#onsendcommand)|(`CMFCToolBar::OnSendCommand`를 재정의합니다.)|
+|[CMFCMenuBar::OnSendCommand](#onsendcommand)|( `CMFCToolBar::OnSendCommand`을 재정의합니다.)|
 |[CMFCMenuBar::OnSetDefaultButtonText](#onsetdefaultbuttontext)|메뉴 사용자 지정 모드에 있고 사용자 메뉴 항목의 텍스트를 변경할 경우 프레임 워크에서 호출 됩니다.|
-|[CMFCMenuBar::OnToolHitTest](#ontoolhittest)|(`CMFCToolBar::OnToolHitTest`를 재정의합니다.)|
-|[CMFCMenuBar::PreTranslateMessage](#pretranslatemessage)|(`CMFCToolBar::PreTranslateMessage`를 재정의합니다.)|
+|[CMFCMenuBar::OnToolHitTest](#ontoolhittest)|( `CMFCToolBar::OnToolHitTest`을 재정의합니다.)|
+|[CMFCMenuBar::PreTranslateMessage](#pretranslatemessage)|( `CMFCToolBar::PreTranslateMessage`을 재정의합니다.)|
 |[CMFCMenuBar::RestoreOriginalstate](#restoreoriginalstate)|메뉴 사용자 지정 모드에 있고 사용자가 선택할 경우 프레임 워크에서 호출 **재설정** 메뉴 모음에 대 한 합니다.|
 |[CMFCMenuBar::SaveState](#savestate)|상태를 저장 합니다 `CMFCMenuBar` 레지스트리에 개체입니다.|
 |[CMFCMenuBar::SetDefaultMenuResId](#setdefaultmenuresid)|리소스 파일의 원래 메뉴를 설정합니다.|
@@ -254,7 +254,6 @@ virtual BOOL AllowChangeTextLabels() const;
 
 ##  <a name="allowshowonpanemenu"></a>  CMFCMenuBar::AllowShowOnPaneMenu
 
-
 ```
 virtual BOOL AllowShowOnPaneMenu() const;
 ```
@@ -265,7 +264,6 @@ virtual BOOL AllowShowOnPaneMenu() const;
 
 ##  <a name="calcfixedlayout"></a>  CMFCMenuBar::CalcFixedLayout
 
-
 ```
 virtual CSize CalcFixedLayout(
     BOOL bStretch,
@@ -274,15 +272,15 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="parameters"></a>매개 변수
 
-*bStretch*<br/>
-[in] [in] *bHorz*
+[in] *bStretch*<br/>
+
+[in] *bHorz*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="calclayout"></a>  CMFCMenuBar::CalcLayout
-
 
 ```
 virtual CSize CalcLayout(
@@ -292,15 +290,15 @@ virtual CSize CalcLayout(
 
 ### <a name="parameters"></a>매개 변수
 
-*dwMode*<br/>
-[in] [in] *nLength*
+[in] *dwMode*<br/>
+
+[in] *nLength*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="calcmaxbuttonheight"></a>  CMFCMenuBar::CalcMaxButtonHeight
-
 
 ```
 virtual int CalcMaxButtonHeight();
@@ -312,7 +310,6 @@ virtual int CalcMaxButtonHeight();
 
 ##  <a name="canbeclosed"></a>  CMFCMenuBar::CanBeClosed
 
-
 ```
 virtual BOOL CanBeClosed() const;
 ```
@@ -322,7 +319,6 @@ virtual BOOL CanBeClosed() const;
 ### <a name="remarks"></a>설명
 
 ##  <a name="canberestored"></a>  CMFCMenuBar::CanBeRestored
-
 
 ```
 virtual BOOL CanBeRestored() const;
@@ -487,7 +483,6 @@ static void EnableMenuShadows(BOOL bEnable = TRUE);
 
 ##  <a name="getavailableexpandsize"></a>  CMFCMenuBar::GetAvailableExpandSize
 
-
 ```
 virtual int GetAvailableExpandSize() const;
 ```
@@ -497,7 +492,6 @@ virtual int GetAvailableExpandSize() const;
 ### <a name="remarks"></a>설명
 
 ##  <a name="getcolumnwidth"></a>  CMFCMenuBar::GetColumnWidth
-
 
 ```
 virtual int GetColumnWidth() const;
@@ -541,21 +535,19 @@ UINT GetDefaultMenuResId() const;
 
 ##  <a name="getfloatpopupdirection"></a>  CMFCMenuBar::GetFloatPopupDirection
 
-
 ```
 int GetFloatPopupDirection(CMFCToolBarMenuButton* pButton);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *pButton*
+[in] *pButton*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="getforcedownarrows"></a>  CMFCMenuBar::GetForceDownArrows
-
 
 ```
 BOOL GetForceDownArrows();
@@ -629,7 +621,6 @@ CMFCToolBarButton* GetMenuItem(int iItem) const;
 
 ##  <a name="getrowheight"></a>  CMFCMenuBar::GetRowHeight
 
-
 ```
 virtual int GetRowHeight() const;
 ```
@@ -640,7 +631,6 @@ virtual int GetRowHeight() const;
 
 ##  <a name="getsystembutton"></a>  CMFCMenuBar::GetSystemButton
 
-
 ```
 CMFCToolBarMenuButtonsButton* GetSystemButton(
     UINT uiBtn,
@@ -649,15 +639,15 @@ CMFCToolBarMenuButtonsButton* GetSystemButton(
 
 ### <a name="parameters"></a>매개 변수
 
-*uiBtn*<br/>
-[in] [in] *bByCommand*
+[in] *uiBtn*<br/>
+
+[in] *bByCommand*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="getsystembuttonscount"></a>  CMFCMenuBar::GetSystemButtonsCount
-
 
 ```
 int GetSystemButtonsCount() const;
@@ -668,7 +658,6 @@ int GetSystemButtonsCount() const;
 ### <a name="remarks"></a>설명
 
 ##  <a name="getsystemmenu"></a>  CMFCMenuBar::GetSystemMenu
-
 
 ```
 CMFCToolBarSystemMenuButton* GetSystemMenu() const;
@@ -696,7 +685,6 @@ static void HighlightDisabledItems(BOOL bHighlight = TRUE);
 기본적으로 프레임 워크를 강조 표시 하지 않습니다 사용할 수 없는 메뉴 항목 위로 마우스 포인터를 놓을 때.
 
 ##  <a name="isbuttonextrasizeavailable"></a>  CMFCMenuBar::IsButtonExtraSizeAvailable
-
 
 ```
 virtual BOOL IsButtonExtraSizeAvailable() const;
@@ -828,14 +816,13 @@ virtual BOOL LoadState(
 
 ##  <a name="onchangehot"></a>  CMFCMenuBar::OnChangeHot
 
-
 ```
 virtual void OnChangeHot(int iHot);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *iHot*
+[in] *iHot*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -858,14 +845,13 @@ virtual void OnDefaultMenuLoaded(HMENU hMenu);
 
 ##  <a name="onsendcommand"></a>  CMFCMenuBar::OnSendCommand
 
-
 ```
 virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *pButton*
+[in] *pButton*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -894,7 +880,6 @@ virtual BOOL OnSetDefaultButtonText(CMFCToolBarButton* pButton);
 
 ##  <a name="ontoolhittest"></a>  CMFCMenuBar::OnToolHitTest
 
-
 ```
 virtual INT_PTR OnToolHitTest(
     CPoint point,
@@ -903,8 +888,9 @@ virtual INT_PTR OnToolHitTest(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
-[in] [in] *pTI*
+[in] *지점*<br/>
+
+[in] *pTI*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -912,14 +898,13 @@ virtual INT_PTR OnToolHitTest(
 
 ##  <a name="pretranslatemessage"></a>  CMFCMenuBar::PreTranslateMessage
 
-
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *pMsg*
+[in] *pMsg*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -996,14 +981,13 @@ void SetDefaultMenuResId(UINT uiResId);
 
 ##  <a name="setforcedownarrows"></a>  CMFCMenuBar::SetForceDownArrows
 
-
 ```
 void SetForceDownArrows(BOOL bValue);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *bValue*
+[in] *bValue*<br/>
 
 ### <a name="remarks"></a>설명
 

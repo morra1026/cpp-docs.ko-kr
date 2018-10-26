@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e3b93e2c52feab4dea5c4d069d48991a2e14ee54
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2705a1889e7b9c9c0960cce45b8dc7b411e16982
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438901"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50061004"
 ---
 # <a name="coleexception-class"></a>COleException 클래스
 
@@ -115,13 +115,11 @@ SCODE에 대 한 자세한 내용은 참조 하세요. [COM 오류 코드 구조
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [coledispatchdriver:: Createdispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch)합니다.
+  [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch)에 대한 예제를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 [CALCDRIV MFC 샘플](../../visual-cpp-samples.md)<br/>
 [CException 클래스](../../mfc/reference/cexception-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-
-
 

@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 02f8d15c69bfef361d8ce34d9d6a1748692ea345
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 6df6f84e8cb407fe960f639fd2cb9415df6d1082
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49327832"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071916"
 ---
 # <a name="how-to-overload-functions-with-interior-pointers-and-native-pointers-ccli"></a>방법: 내부 포인터 및 네이티브 포인터를 사용하여 함수 오버로드(C++/CLI)
 
@@ -68,9 +68,9 @@ int main() {
 };
 ```
 
-```Output 
-in f( int* pi )  
-in f( interior_ptr<int> pi )  
+```Output
+in f( int* pi )
+in f( interior_ptr<int> pi )
 ```
 
 ## <a name="see-also"></a>참고 항목

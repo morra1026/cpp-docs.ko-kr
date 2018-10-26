@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0baba6503d1d5b4e382347f4f4d9680b11f954ce
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 7bef66e8b3c326f205b6399538a811bcc83c9f9d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328521"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070402"
 ---
 # <a name="qspectre"></a>/Qspectre
 
@@ -36,7 +36,7 @@ ms.locfileid: "49328521"
 
 합니다 **/Qspectre** 옵션은 기본적으로 해제 되어 있습니다.
 
-초기 릴리스에서는 **/Qspectre** 최적화 된 코드에만 작동 하는 옵션입니다. Visual Studio 2017 버전 15.7 이상의 경우에 **/Qspectre** 옵션은 모든 최적화 수준에서 지원 됩니다. 
+초기 릴리스에서는 **/Qspectre** 최적화 된 코드에만 작동 하는 옵션입니다. Visual Studio 2017 버전 15.7 이상의 경우에 **/Qspectre** 옵션은 모든 최적화 수준에서 지원 됩니다.
 
 Microsoft Visual c + + 라이브러리 스펙터 완화를 사용 하 여 버전에서 사용할 수 있습니다. Visual Studio 설치 관리자에서 Visual Studio 2017에 대 한 스펙터 완화 라이브러리를 다운로드할 수 있습니다. 있는 합니다 **개별 구성 요소** 탭 **컴파일러, 빌드 도구 및 런타임**, 이름에 "라이브러리에 대 한 스펙터"를 포함 하 고 있습니다. Visual c + + 런타임의 하위 집합에 대 한 DLL 및 정적 런타임 라이브러리 사용 하도록 설정 하는 완화를 사용 하 여 사용할: VC + + 시작 코드 "," vcruntime140 "," msvcp140 "," concrt140, "및" vcamp140 합니다. Dll 응용 프로그램 지역 배포만 지원 됩니다. Visual c + + 2017 런타임 라이브러리 재배포 가능 패키지의 내용은 수정 되지 않은 합니다. MFC 및 ATL에 대 한 스펙터 완화 라이브러리를 설치할 수도 있습니다는 **개별 구성 요소** 탭에서 **Sdk, 라이브러리 및 프레임 워크**합니다.
 

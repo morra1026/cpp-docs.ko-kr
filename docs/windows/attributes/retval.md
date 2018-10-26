@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e2b71271dc0579e1d0682b95a0d3bdf57d197d1a
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: ffa4b43c595bfa75d805e8896aad8c44ac6baa50
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791825"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50064708"
 ---
 # <a name="retval"></a>retval
 
@@ -55,10 +55,10 @@ ms.locfileid: "48791825"
 |**필수 특성**|**out**|
 |**잘못된 특성**|**in**|
 
-특성 컨텍스트에 대 한 자세한 내용은 참조 하세요. [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 [IDL 특성](idl-attributes.md)<br/>
 [매개 변수 특성](parameter-attributes.md)<br/>
-[메서드 특성](method-attributes.md)  
+[메서드 특성](method-attributes.md)

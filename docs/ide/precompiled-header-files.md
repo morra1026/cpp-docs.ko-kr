@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d2e2bab9da3d19347577f0b1d1e8ab2ed6bb0dc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d93486d8df8cdb8bc253a0e71037f4e2ddf9e128
+ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404022"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48890481"
 ---
 # <a name="precompiled-header-files"></a>미리 컴파일된 헤더 파일
 
@@ -35,7 +35,7 @@ ms.locfileid: "46404022"
 
 |파일 이름|설명|
 |---------------|-----------------|
-|stdafx.h|표준 시스템 포함 파일 및 자주 사용되지만 자주 변경되지 않는 프로젝트 관련 포함 파일에 대한 포함 파일입니다.<br /><br /> stdafx.h에서는 _AFX_NO_XXX 매크로를 정의하거나 정의 해제해서는 안 됩니다. 기술 자료 문서 "PRB: _AFX_NO_XXX를 정의하는 동안 문제 발생"을 참조하세요. 기술 자료 문서는 MSDN 라이브러리 또는 [http:// support.microsoft.com/](http://%20support.microsoft.com/)에서 찾을 수 있습니다.|
+|stdafx.h|표준 시스템 포함 파일 및 자주 사용되지만 자주 변경되지 않는 프로젝트 관련 포함 파일에 대한 포함 파일입니다.<br /><br /> stdafx.h에서 _AFX_NO_XXX 매크로를 정의하거나 정의를 취소해서는 안 됩니다.|
 |stdafx.cpp|전처리기 지시문 `#include "stdafx.h"` 를 포함하며 미리 컴파일된 형식에 대한 포함 파일을 추가합니다. 헤더 파일을 비롯한 모든 형식의 미리 컴파일된 파일은 필요한 파일로만 컴파일을 제한하여 보다 빠른 컴파일 시간을 지원합니다. 처음으로 프로젝트를 빌드하고 나면 미리 컴파일된 헤더 파일이 있기 때문에 이후 빌드 시간이 훨씬 더 빨라짐을 확인할 수 있습니다.|
 
 ## <a name="see-also"></a>참고 항목

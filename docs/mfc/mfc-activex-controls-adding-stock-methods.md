@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b42907273423d69ed93df5700b33556047338fe2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e103e43f23746f8274ad00da4d043e3446dfc706
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391428"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053030"
 ---
 # <a name="mfc-activex-controls-adding-stock-methods"></a>MFC ActiveX 컨트롤: 스톡 메서드 추가
 
@@ -51,7 +51,7 @@ ms.locfileid: "46391428"
 
 1. 바로 가기 메뉴에서 클릭 **추가** 을 클릭 한 다음 **메서드 추가**합니다.
 
-     이 메서드 추가 마법사를 엽니다.
+   이 메서드 추가 마법사를 엽니다.
 
 1. 에 **메서드 이름** 상자를 클릭 합니다 **새로 고침**합니다.
 

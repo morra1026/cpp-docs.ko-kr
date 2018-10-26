@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5942a41272671a391cb600ef959d2c69b0bab3e3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 777180468ec377b50ee0affaa29bd04a302bda52
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419037"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057922"
 ---
 # <a name="dhtml-event-maps"></a>DHTML 이벤트 맵
 
@@ -142,7 +142,6 @@ BEGIN_DHTML_EVENT_MAP 매크로 클래스의 정의 (.h) 파일 클래스를 처
 ### <a name="requirements"></a>요구 사항
 
   **헤더** afxdhtml.h
-
 
 ##  <a name="declare_dhtml_event_map"></a>  DECLARE_DHTML_EVENT_MAP
 
@@ -1160,7 +1159,6 @@ URL이 페이지를 지정 *url*합니다. 일치 *맵 이름* 에 [BEGIN_EMBED_
 ### <a name="example"></a>예제
 
 예제를 참조 하세요 [BEGIN_DHTML_URL_EVENT_MAP](#begin_dhtml_url_event_map)합니다.
-
 
 ### <a name="requirements"></a>요구 사항
 

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 163ef22563141b9365bc2c086870877c7ad2bf00
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 5979fcb76dc688bffd9ad8076f123927439e3840
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083595"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50064566"
 ---
 # <a name="run-time-object-model-services"></a>런타임 개체 모델 서비스
 
@@ -39,8 +39,6 @@ Serialization은 쓰거나 읽을 하거나 개체의 내용을 파일에서의 
 
 ### <a name="run-time-object-model-services-macros"></a>런타임 개체 모델 서비스 매크로
 
-
-
 |||
 |-|-|
 |[DECLARE_DYNAMIC](#declare_dynamic)|(클래스 선언에서 사용 해야 합니다) 런타임 클래스 정보에 액세스할 수 있습니다.|
@@ -51,19 +49,11 @@ Serialization은 쓰거나 읽을 하거나 개체의 내용을 파일에서의 
 |[IMPLEMENT_SERIAL](#implement_serial)|Serialization 및 런타임 클래스 정보 (클래스 구현에 사용 해야 합니다)에 대 한 액세스를 허용 합니다.|
 |[RUNTIME_CLASS](#runtime_class)|반환 된 `CRuntimeClass` 명명된 된 클래스에 해당 합니다.|
 
-
 OLE 개체의 런타임 시 동적 생성을 자주 필요합니다. 예를 들어 OLE 서버 응용 프로그램 클라이언트의 요청에 응답에서 OLE 항목을 동적으로 만들 수 있어야 합니다. 마찬가지로, 자동화 서버 항목을 만드는 자동화 클라이언트에서 요청에 응답할에서 수 있어야 합니다.
 
 Microsoft Foundation Class 라이브러리를 OLE에 특정 두 매크로 제공합니다.
 
 ### <a name="dynamic-creation-of-ole-objects"></a>OLE 개체의 동적 생성
-
-
-
-
-
-
-
 
 |||
 |-|-|
@@ -85,6 +75,7 @@ Microsoft Foundation Class 라이브러리를 OLE에 특정 두 매크로 제공
   ```
 AFX_COMCTL32_IF_EXISTS(  proc );
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *프로시저*<br/>
@@ -112,6 +103,7 @@ afxcomctl32.h, afxcomctl32.inl이
 ```
 AFX_COMCTL32_IF_EXISTS2( proc );
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *프로시저*<br/>
@@ -129,8 +121,6 @@ afxcomctl32.h, afxcomctl32.inl이
 
 [MFC 공용 컨트롤 라이브러리 격리](../isolation-of-the-mfc-common-controls-library.md)<br/>
 [AFX_COMCTL32_IF_EXISTS](#afx_comctl32_if_exists)
-
-
 
 ##  <a name="declare_dynamic"></a>  DECLARE_DYNAMIC
 
@@ -197,7 +187,6 @@ DECLARE_DYNCREATE 매크로에 대 한 자세한 내용은 참조 하세요. [CO
 
 **헤더:** afx.h
 
-
 ## <a name="declareolectltype"></a>DECLARE_OLECTLTYPE
 
 선언 된 `GetUserTypeNameID` 고 `GetMiscStatus` 컨트롤 클래스의 멤버 함수입니다.
@@ -207,6 +196,7 @@ DECLARE_DYNCREATE 매크로에 대 한 자세한 내용은 참조 하세요. [CO
 ```
 DECLARE_OLECTLTYPE( class_name )
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *class_name*<br/>
@@ -224,7 +214,6 @@ DECLARE_OLECTLTYPE( class_name )
 
 [IMPLEMENT_OLECTLTYPE](#implement_olectltype)
 
-
 ## <a name="declareproppageids"></a>DECLARE_PROPPAGEIDS
 
 OLE 컨트롤 속성을 표시 하도록 속성 페이지의 목록을 제공 하는 선언 합니다.
@@ -234,6 +223,7 @@ OLE 컨트롤 속성을 표시 하도록 속성 페이지의 목록을 제공 �
 ```
 DECLARE_PROPPAGEIDS( class_name )
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *class_name*<br/>
@@ -370,6 +360,7 @@ IMPLEMENT_OLECREATE_FLAGS( class_name, external_name, nFlags,
     l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8)
 
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *class_name*<br/>
@@ -408,7 +399,6 @@ OLE 클래스 ID가 고유 128 비트 식별자 개체입니다. 하나 이루�
 [DECLARE_OLECREATE](#declare_olecreate)<br/>
 [CLSID 키](/windows/desktop/com/clsid-key-hklm)
 
-
 ## <a name="implement_olecreate"></a> IMPLEMENT_OLECTLTYPE
 
 구현 된 `GetUserTypeNameID` 고 `GetMiscStatus` 컨트롤 클래스의 멤버 함수입니다.
@@ -418,6 +408,7 @@ OLE 클래스 ID가 고유 128 비트 식별자 개체입니다. 하나 이루�
 ```
 DECLARE_OLECTLTYPE( class_name, idsUserTypeName, dwOleMisc )
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *class_name*<br/>

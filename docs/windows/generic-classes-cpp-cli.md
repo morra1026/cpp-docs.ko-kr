@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3dbf6d861dd446745ba0cc3581c7e3e5511c01d3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f5d87663402081a06270f09547b2d61477d5ea3f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409365"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056908"
 ---
 # <a name="generic-classes-ccli"></a>제네릭 클래스(C++/CLI)
 
@@ -58,7 +58,7 @@ class-body
 *제약 조건 절*<br/>
 목록 (쉼표로 구분 되지 않습니다)의 **여기서** 절 형식 매개 변수 제약 조건을 지정 합니다. 형식을 사용 합니다.
 
-> **여기서** *형식-매개 변수-식별자* **:** *제약 조건 목록***...** 
+> **여기서** *형식-매개 변수-식별자* **:** *제약 조건 목록***...**
 
 *제약 조건 목록*<br/>
 *클래스 또는 인터페이스*[`,` *...* ]
@@ -346,7 +346,7 @@ int main() {
 
 ```Output
 Name: Jeff Smith
-Amount: $123.00**  
+Amount: $123.00**
 ```
 
 ## <a name="generic-methods-in-generic-classes"></a>제네릭 클래스의 제네릭 메서드

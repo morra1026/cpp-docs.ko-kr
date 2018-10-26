@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a14a45341645feeb0b85f92379702c9fc40c9d0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 010afb3939afcb392d38cda8dfb1ab1a37100d3b
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46381729"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083375"
 ---
 # <a name="collection-class-helpers"></a>컬렉션 클래스 도우미
 
@@ -152,7 +152,6 @@ void  AFXAPI DumpElements(
 합니다 `CArray::Dump`, `CList::Dump`, 및 `CMap::Dump` 덤프의 깊이 0 보다 큰 경우이 함수 호출 합니다.
 
 기본 구현은 아무 작업도 수행하지 않습니다. 컬렉션의 요소에서 파생 된 경우 `CObject`를 재정의 일반적으로 컬렉션의 요소를 반복 호출 `Dump` 의 각 요소에 대 한 합니다.
-
 
 ### <a name="requirements"></a>요구 사항
 

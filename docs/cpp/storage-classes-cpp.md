@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 29e5b2783dda3c66736a7e668186d0645cdd4b84
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 659b76a640a0dfaee75179f135fee9d1eeb5ba02
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861319"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50058338"
 ---
 # <a name="storage-classes-c"></a>저장소 클래스(C++)
 
@@ -35,7 +35,6 @@ A *저장소 클래스* c + +의 컨텍스트에서 변수 선언 하는 개체�
 1. 합니다 [변경할 수 있는](../cpp/mutable-data-members-cpp.md) 키워드는 저장소 클래스 지정자로 간주 될 수 있습니다. 하지만 클래스 정의의 멤버 목록에만 사용할 수 있습니다.
 
 1. **Visual c + + 2010 이상:** 는 **자동** 키워드는 c + + 저장소 클래스 지정자를 사용 하는 더 이상 하며 **등록** 키워드가 사용 되지 않습니다. **Visual Studio 2017 버전 15.7 이상의:** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 합니다 **등록** 키워드는 c + + 언어에서 제거 됩니다.
-
 
 ```cpp
    register int val; // warning C5033: 'register' is no longer a supported storage class

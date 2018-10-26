@@ -1,7 +1,7 @@
 ---
 title: VC++ 디렉터리 속성 페이지 | Microsoft Docs
 ms.custom: ''
-ms.date: 04/26/2018
+ms.date: 10/09/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82aaa2dc43177963b9b38c398e74aaa0ffff11dd
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 1799bfedaacd5e1560b1294524f717db8912f6b0
+ms.sourcegitcommit: 243ee0395ee44654a81ce1232f4581fb54904868
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821220"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072400"
 ---
 # <a name="vc-directories-property-page-windows"></a>VC++ 디렉터리 속성 페이지
 
@@ -76,7 +76,7 @@ Visual Studio에서 *프로젝트 속성*에 익숙한 경우 먼저 [프로젝�
 
 매크로 및 가능하면 하드코딩된 경로 대신에 매크로를 사용해야 하는 이유에 대한 자세한 내용은 [프로젝트 속성 사용](../ide/working-with-project-properties.md#bkmkPropertiesVersusMacros)을 참조하세요.
 
-자주 사용되는 매크로의 목록은 [빌드 명령 및 속성에 대한 일반적인 매크로](https://docs.microsoft.com/cpp/ide/common-macros-for-build-commands-and-properties)를 참조하세요.
+자주 사용되는 매크로의 목록은 [빌드 명령 및 속성에 대한 일반적인 매크로](common-macros-for-build-commands-and-properties.md)를 참조하세요.
 
 다음과 같은 두 가지 방법으로 고유한 매크로를 정의할 수 있습니다.
 

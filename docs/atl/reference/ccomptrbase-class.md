@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 70ba26e5893b21393a3466ae7cf1c6cea43b81ef
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 68701e0cc79eac815ab56f99f41cc0f47bf3585f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46070160"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065137"
 ---
 # <a name="ccomptrbase-class"></a>CComPtrBase 클래스
 
@@ -162,12 +162,12 @@ void Attach(T* p2) throw();
 지정 된 클래스 ID 또는 id입니다. 프로그램에 연결 된 클래스의 개체를 만들려면이 메서드를 호출
 
 ```
-HRESULT CoCreateInstance(  
+HRESULT CoCreateInstance(
     LPCOLESTR szProgID,
     LPUNKNOWN pUnkOuter = NULL,
     DWORD dwClsContext = CLSCTX_ALL) throw();
 
-HRESULT CoCreateInstance(  
+HRESULT CoCreateInstance(
     REFCLSID rclsid,
     LPUNKNOWN pUnkOuter = NULL,
     DWORD dwClsContext = CLSCTX_ALL) throw();

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24c63c10feff624abe399952b682303a6e262d35
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e6ef01a7943bbb0c14ec630651757a8665373b85
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425017"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055224"
 ---
 # <a name="servers-implementing-in-place-frame-windows"></a>서버: 내부 프레임 창 구현
 
@@ -39,15 +39,15 @@ ms.locfileid: "46425017"
 
 1. frame-window 클래스에서 `COleResizeBar` 멤버를 선언합니다. 이 멤버는 서버 응용 프로그램의 내부 크기 조정을 지원하려는 경우에 필요합니다.
 
-     선언를 `OnCreate` 메시지 처리기 (사용 하 여는 **속성** 창), 호출 `Create` 에 대 한 프로그램 `COleResizeBar` 멤버에 정의 된 경우.
+   선언를 `OnCreate` 메시지 처리기 (사용 하 여는 **속성** 창), 호출 `Create` 에 대 한 프로그램 `COleResizeBar` 멤버에 정의 된 경우.
 
 1. 도구 모음이 있으면 frame-window 클래스에서 `CToolBar` 멤버를 선언합니다.
 
-     서버가 내부에서 활성 상태일 때 도구 모음을 만들도록 `OnCreateControlBars` 멤버 함수를 재정의합니다. 예를 들어:
+   서버가 내부에서 활성 상태일 때 도구 모음을 만들도록 `OnCreateControlBars` 멤버 함수를 재정의합니다. 예를 들어:
 
-     [!code-cpp[NVC_MFCOleServer#1](../mfc/codesnippet/cpp/servers-implementing-in-place-frame-windows_1.cpp)]
+   [!code-cpp[NVC_MFCOleServer#1](../mfc/codesnippet/cpp/servers-implementing-in-place-frame-windows_1.cpp)]
 
-     5단계의 코드 설명을 참조하십시오.
+   5단계의 코드 설명을 참조하십시오.
 
 1. 기본 .cpp 파일에서 이 내부 frame-window 클래스에 대한 헤더 파일을 포함합니다.
 

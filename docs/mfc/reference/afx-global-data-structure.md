@@ -65,12 +65,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b6ccad2c7c6c925a2c5ef6a7270a95d8a270f0d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 935a92beb49d26240aa63f5cfbd4adc9f22d06e8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46398992"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078013"
 ---
 # <a name="afxglobaldata-structure"></a>AFX_GLOBAL_DATA 구조체
 
@@ -113,13 +113,13 @@ struct AFX_GLOBAL_DATA
 |[AFX_GLOBAL_DATA::IsD2DInitialized](#isd2dinitialized)|`D2D`, `DirectWrite`및 `WIC` 팩터리를 초기화합니다. 주 창이 초기화되기 전에 이 메서드를 호출합니다.|
 |[AFX_GLOBAL_DATA::Is32BitIcons](#is32biticons)|미리 정의된 32비트 아이콘이 지원되는지 여부를 나타냅니다.|
 |[AFX_GLOBAL_DATA::IsD2DInitialized](#isd2dinitialized)|`D2D` 의 초기화 여부를 확인합니다.|
-|[Afx_global_data:: isdwmcompositionenabled](#isdwmcompositionenabled)|Windows를 호출 하는 간단한 방법을 제공 [DwmIsCompositionEnabled](/windows/desktop/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) 메서드.|
+|[Afx_global_data:: isdwmcompositionenabled](#isdwmcompositionenabled)|Windows [DwmIsCompositionEnabled](/windows/desktop/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) 메서드를 호출하는 간단한 방법을 제공합니다.|
 |[Afx_global_data:: ishighcontrastmode](#ishighcontrastmode)|이미지가 현재 고대비로 표시되는지 여부를 나타냅니다.|
 |[Afx_global_data:: onsettingchange](#onsettingchange)|데스크톱 메뉴 애니메이션의 현재 상태 및 작업 표시줄 자동 숨기기 기능을 탐지합니다.|
 |[Afx_global_data:: registerwindowclass](#registerwindowclass)|지정된 MFC 창 클래스를 등록합니다.|
 |[Afx_global_data:: releasetaskbarrefs](#releasetaskbarrefs)|GetITaskbarList 및 GetITaskbarList3 메서드를 통해 얻은 인터페이스를 해제합니다.|
-|[Afx_global_data:: resume](#resume)|Windows를 지 원하는 메서드에 액세스 하는 내부 함수 포인터를 다시 초기화 [테마 및 비주얼 스타일](/windows/desktop/Controls/visual-styles-overview)합니다.|
-|[Afx_global_data:: setlayeredattrib](#setlayeredattrib)|Windows를 호출 하는 간단한 방법을 제공 [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes) 메서드.|
+|[Afx_global_data:: resume](#resume)|Windows [테마 및 비주얼 스타일](/windows/desktop/Controls/visual-styles-overview)을 지원하는 메서드에 액세스하는 내부 함수 포인터를 다시 초기화합니다.|
+|[Afx_global_data:: setlayeredattrib](#setlayeredattrib)|Windows [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes) 메서드를 호출하는 간단한 방법을 제공합니다.|
 |[Afx_global_data:: setmenufont](#setmenufont)|지정된 논리 글꼴을 만듭니다.|
 |[Afx_global_data:: shellcreateitemfromparsingname](#shellcreateitemfromparsingname)|구문 분석 이름에서 셸 항목 개체를 만들고 초기화합니다.|
 |[Afx_global_data:: updatefonts](#updatefonts)|프레임워크에서 사용하는 논리 글꼴을 다시 초기화합니다.|
@@ -169,11 +169,9 @@ struct AFX_GLOBAL_DATA
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [구조체, 스타일, 콜백 및 메시지 맵](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
 
-
 ## <a name="bisosalphablendingsupport"></a> Afx_global_data:: bisosalphablendingsupport
 
 운영 체제가 알파 혼합을 지원 하는지 여부를 나타냅니다.
-
 
 ```
 BOOL  bIsOSAlphaBlendingSupport;
@@ -183,19 +181,17 @@ BOOL  bIsOSAlphaBlendingSupport;
 
 TRUE 이면 알파 혼합 지원 됩니다. 그렇지 않으면 FALSE입니다.
 
-
 ## <a name="cleanup"></a> Afx_global_data:: cleanup
 
 브러시, 글꼴 및 DLL 등 프레임워크에 의해 할당되는 리소스를 해제합니다.
 
-
 ```
 void CleanUp();
 ```
+
 ## <a name="d2d1makerotatematrix"></a> AFX_GLOBAL_DATA::D2D1MakeRotateMatrix
 
 지정된 점을 기준으로 지정된 각도만큼 회전하는 회전 변환을 만듭니다.
-
 
 ```
 HRESULT D2D1MakeRotateMatrix(
@@ -223,7 +219,6 @@ HRESULT D2D1MakeRotateMatrix(
 
 지정된 영역에 컨트롤 부모의 배경을 그립니다.
 
-
 ```
 BOOL DrawParentBackground(
     CWnd* pWnd,
@@ -250,7 +245,6 @@ BOOL DrawParentBackground(
 
 지정된 테마의 비주얼 스타일로 지정된 텍스트를 그립니다.
 
-
 ```
 BOOL DrawTextOnGlass(
     HTHEME hTheme,
@@ -275,10 +269,10 @@ BOOL DrawTextOnGlass(
 [in] 장치 컨텍스트에 대 한 포인터입니다.
 
 *iPartId*<br/>
-[in] 원하는 텍스트 모양이 있는 컨트롤 파트입니다. 자세한 내용은 표의 파트 열을 참조 하세요 [파트 및 상태](https://msdn.microsoft.com/library/windows/desktop/bb773210)합니다. 이 값이 0이면 텍스트가 기본 글꼴로 그려지거나 장치 컨텍스트로 선택된 글꼴로 그려집니다.
+[in] 원하는 텍스트 모양이 있는 컨트롤 파트입니다. 자세한 내용은 [파트 및 상태](https://msdn.microsoft.com/library/windows/desktop/bb773210)에 설명된 표의 파트 열을 참조하세요. 이 값이 0이면 텍스트가 기본 글꼴로 그려지거나 장치 컨텍스트로 선택된 글꼴로 그려집니다.
 
 *iStateId*<br/>
-[in] 원하는 텍스트 모양이 있는 컨트롤 상태입니다. 자세한 내용은 표의 상태 열을 참조 하세요 [파트 및 상태](https://msdn.microsoft.com/library/windows/desktop/bb773210)합니다.
+[in] 원하는 텍스트 모양이 있는 컨트롤 상태입니다. 자세한 내용은 [파트 및 상태](https://msdn.microsoft.com/library/windows/desktop/bb773210)에 설명된 표의 상태 열을 참조하세요.
 
 *strText*<br/>
 [in] 그릴 텍스트입니다.
@@ -319,7 +313,6 @@ BOOL DrawTextOnGlass(
 
 Microsoft Active Accessibility 지원을 사용하거나 사용하지 않도록 설정합니다.
 
-
 ```
 void EnableAccessibilitySupport(BOOL bEnable=TRUE);
 ```
@@ -335,7 +328,6 @@ Active Accessibility는 프로그램의 방식을 향상시키는 COM 기반의 
 
 사용 된 [afx_global_data:: isaccessibilitysupport](#isaccessibilitysupport) Microsoft Active Accessibility 지원이 활성화 되어 있는지 여부를 결정 하는 방법입니다.
 
-
 ### <a name="see-also"></a>참고 항목
 
 [UI 자동화 및 Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility)<br/>
@@ -344,7 +336,6 @@ Active Accessibility는 프로그램의 방식을 향상시키는 COM 기반의 
 ## <a name="excludetag"></a> Afx_global_data:: excludetag
 
 지정된 버퍼에서 지정된 XML 태그 쌍을 제거합니다.
-
 
 ```
 BOOL ExcludeTag(
@@ -392,7 +383,6 @@ XML 태그 쌍을 열고 닫는 태그 시작 및 지정 된 버퍼에서 텍스
 
 지정된 사용자 인터페이스 요소의 현재 색을 검색합니다.
 
-
 ```
 COLORREF GetColor(int nColor);
 ```
@@ -420,7 +410,6 @@ COLORREF GetColor(int nColor);
 
 글로벌 데이터에 저장 된 ID2D1Factory 인터페이스에 대 한 포인터를 반환 합니다. 인터페이스가 초기화되지 않은 경우 기본 매개 변수와 함께 인터페이스가 생성됩니다.
 
-
 ```
 ID2D1Factory* GetDirect2dFactory();
 ```
@@ -433,7 +422,6 @@ ID2D1Factory* GetDirect2dFactory();
 
 미리 정의 된 커서는 손 모양의 이며 식별자 IDC_HAND를 검색 합니다.
 
-
 ```
 HCURSOR GetHandCursor();
 ```
@@ -445,7 +433,6 @@ HCURSOR GetHandCursor();
 ## <a name="getnonclientmetrics"></a> Afx_global_data:: getnonclientmetrics
 
 최소화되지 않은 창의 비클라이언트 영역과 관련된 메트릭을 검색합니다.
-
 
 ```
 BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
@@ -460,7 +447,6 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
 
 이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
-
 ### <a name="see-also"></a>참고 항목
 
 [NONCLIENTMETRICS 구조](https://msdn.microsoft.com/library/windows/desktop/ff729175)
@@ -468,7 +454,6 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
 ## <a name="gettextheight"></a> Afx_global_data:: gettextheight
 
 현재 글꼴에서 텍스트 문자의 높이를 검색합니다.
-
 
 ```
 int GetTextHeight(BOOL bHorz = TRUE);
@@ -487,7 +472,6 @@ int GetTextHeight(BOOL bHorz = TRUE);
 
 글로벌 데이터에 저장 되는 IWICImagingFactory 인터페이스에 대 한 포인터를 반환 합니다. 인터페이스가 초기화되지 않은 경우 기본 매개 변수와 함께 인터페이스가 생성됩니다.
 
-
 ```
 IWICImagingFactory* GetWICFactory();
 ```
@@ -500,7 +484,6 @@ IWICImagingFactory* GetWICFactory();
 
 글로벌 데이터에 저장 된 IDWriteFactory 인터페이스에 대 한 포인터를 반환 합니다. 인터페이스가 초기화되지 않은 경우 기본 매개 변수와 함께 인터페이스가 생성됩니다.
 
-
 ```
 IDWriteFactory* GetWriteFactory();
 ```
@@ -512,7 +495,6 @@ IDWriteFactory* GetWriteFactory();
 ## <a name="initd2d"></a> AFX_GLOBAL_DATA::InitD2D
 
 D2D 고 DirectWrite, WIC 팩터리를 초기화합니다. 주 창이 초기화되기 전에 이 메서드를 호출합니다.
-
 
 ```
 BOOL InitD2D(
@@ -536,10 +518,8 @@ TRUE를 반환 하는 경우 팩터리 된 intilalizrd, FALSE-그렇지 않으�
 
 미리 정의된 32비트 아이콘이 지원되는지 여부를 나타냅니다.
 
-
 ```
 BOOL Is32BitIcons() const;
-
 
 ```
 
@@ -555,7 +535,6 @@ BOOL Is32BitIcons() const;
 
 Microsoft Active Accessibility 지원이 활성화되어 있는지 여부를 나타냅니다.
 
-
 ```
 BOOL IsAccessibilitySupport() const;
 ```
@@ -570,7 +549,6 @@ Microsoft Active Accessibility에 내게 필요한 옵션이 응용 프로그램
 
 사용 된 [afx_global_data:: enableaccessibilitysupport](#enableaccessibilitysupport) Active Accessibility 지원을 설정 또는 해제 방법입니다.
 
-
 ### <a name="see-also"></a>참고 항목
 
 [UI 자동화 및 Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility)
@@ -578,7 +556,6 @@ Microsoft Active Accessibility에 내게 필요한 옵션이 응용 프로그램
 ## <a name="isd2dinitialized"></a> AFX_GLOBAL_DATA::IsD2DInitialized
 
 D2D 초기화 되었는지 여부를 결정 합니다.
-
 
 ```
 BOOL IsD2DInitialized() const;
@@ -590,8 +567,7 @@ D2D 초기화 되었습니다. 그렇지 않으면 FALSE입니다.
 
 ## <a name="isdwmcompositionenabled"></a> Afx_global_data:: isdwmcompositionenabled
 
-Windows를 호출 하는 간단한 방법을 제공 [DwmIsCompositionEnabled](/windows/desktop/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) 메서드.
-
+Windows [DwmIsCompositionEnabled](/windows/desktop/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) 메서드를 호출하는 간단한 방법을 제공합니다.
 
 ```
 BOOL IsDwmCompositionEnabled();
@@ -625,7 +601,6 @@ BOOL IsHighContrastMode() const;
 
 운영 체제가 계층화된 창을 지원하는지 여부를 나타냅니다.
 
-
 ```
 BOOL IsWindowsLayerSupportAvailable() const;
 ```
@@ -642,7 +617,6 @@ BOOL IsWindowsLayerSupportAvailable() const;
 
 프레임워크가 미리 정의된 32비트 컬러 아이콘을 사용하는지, 아니면 더 낮은 해상도의 아이콘을 사용하는지를 나타냅니다.
 
-
 ```
 BOOL  m_bUseBuiltIn32BitIcons;
 ```
@@ -656,7 +630,6 @@ TRUE 사용 하도록 지정 하는 프레임 워크 32 비트 컬러 아이콘;
 ## <a name="m_busesystemfont"></a> Afx_global_data:: m_busesystemfont
 
 시스템 글꼴이 메뉴, 도구 모음 및 리본에 사용되는지 여부를 나타냅니다.
-
 
 ```
 BOOL m_bUseSystemFont;
@@ -672,7 +645,6 @@ TRUE는 시스템 글꼴;를 사용 하도록 지정 그렇지 않으면 FALSE�
 
 손 모양 커서에 대한 핸들을 저장합니다.
 
-
 ```
 HCURSOR m_hcurHand;
 ```
@@ -680,7 +652,6 @@ HCURSOR m_hcurHand;
 ## <a name="m_hcurstretch"></a> Afx_global_data:: m_hcurstretch
 
 가로 늘이기 커서에 대한 핸들을 저장합니다.
-
 
 ```
 HCURSOR m_hcurStretch;
@@ -690,7 +661,6 @@ HCURSOR m_hcurStretch;
 
 세로 늘이기 커서에 대한 핸들을 저장합니다.
 
-
 ```
 HCURSOR m_hcurStretchVert;
 ```
@@ -699,14 +669,13 @@ HCURSOR m_hcurStretchVert;
 
 도구 아이콘에 대한 핸들을 저장합니다.
 
-
 ```
 HICON m_hiconTool;
 ```
+
 ## <a name="m_nautohidetoolbarmargin"></a> Afx_global_data:: m_nautohidetoolbarmargin
 
 맨 왼쪽 자동 숨기기 도구 모음에서 도킹 모음의 왼쪽 까지의 오프셋을 지정합니다.
-
 
 ```
 int  m_nAutoHideToolBarMargin;
@@ -720,7 +689,6 @@ int  m_nAutoHideToolBarMargin;
 
 자동 숨기기 도구 모음 사이의 간격을 지정합니다.
 
-
 ```
 int   m_nAutoHideToolBarSpacing;
 ```
@@ -732,7 +700,6 @@ int   m_nAutoHideToolBarSpacing;
 ## <a name="m_ndragframethicknessdock"></a> Afx_global_data:: m_ndragframethicknessdock
 
 도킹된 된 상태를 나타내는 데 사용 되는 끌기 프레임의 두께 지정 합니다.
-
 
 ```
 int  m_nDragFrameThicknessDock;
@@ -746,7 +713,6 @@ int  m_nDragFrameThicknessDock;
 
 부동 상태를 나타내는 데 사용 되는 끌기 프레임의 두께 지정 합니다.
 
-
 ```
 int  m_nDragFrameThicknessFloat;
 ```
@@ -759,7 +725,6 @@ int  m_nDragFrameThicknessFloat;
 
 데스크톱 메뉴 애니메이션의 현재 상태 및 작업 표시줄 자동 숨기기 기능을 탐지합니다.
 
-
 ```
 void OnSettingChange();
 ```
@@ -771,7 +736,6 @@ void OnSettingChange();
 ## <a name="registerwindowclass"></a> Afx_global_data:: registerwindowclass
 
 지정된 MFC 창 클래스를 등록합니다.
-
 
 ```
 CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
@@ -799,7 +763,6 @@ CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
 
 Windows 테마 및 비주얼 스타일을 지 원하는 메서드에 액세스 하는 내부 함수 포인터를 다시 초기화 합니다.
 
-
 ```
 BOOL Resume();
 ```
@@ -814,8 +777,7 @@ BOOL Resume();
 
 ## <a name="setlayeredattrib"></a> Afx_global_data:: setlayeredattrib
 
-Windows를 호출 하는 간단한 방법을 제공 [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes) 메서드.
-
+Windows [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes) 메서드를 호출하는 간단한 방법을 제공합니다.
 
 ```
 BOOL SetLayeredAttrib(
@@ -852,7 +814,6 @@ BOOL SetLayeredAttrib(
 
 지정된 논리 글꼴을 만듭니다.
 
-
 ```
 BOOL SetMenuFont(
     LPLOGFONT lpLogFont,
@@ -879,7 +840,6 @@ BOOL SetMenuFont(
 
 프레임워크에서 사용하는 논리 글꼴을 다시 초기화합니다.
 
-
 ```
 void UpdateFonts();
 ```
@@ -892,7 +852,6 @@ void UpdateFonts();
 
 프레임워크에서 사용하는 색, 색 농도, 브러시, 펜 및 이미지를 초기화합니다.
 
-
 ```
 void UpdateSysColors();
 ```
@@ -900,7 +859,6 @@ void UpdateSysColors();
 ## <a name="biswindows7"></a> AFX_GLOBAL_DATA::bIsWindows7
 
 Windows 7 이상 응용 프로그램 실행 되는지를 나타냅니다.
-
 
 ```
 BOOL bIsWindows7;
@@ -910,7 +868,6 @@ BOOL bIsWindows7;
 
 활성 캡션의 그라데이션 색을 지정합니다. 도킹 창에 일반적으로 사용됩니다.
 
-
 ```
 COLORREF clrActiveCaptionGradient;
 ```
@@ -919,7 +876,6 @@ COLORREF clrActiveCaptionGradient;
 
 비활성 캡션의 그라데이션 색을 지정합니다. 도킹 창에 일반적으로 사용됩니다.
 
-
 ```
 COLORREF clrInactiveCaptionGradient;
 ```
@@ -927,7 +883,6 @@ COLORREF clrInactiveCaptionGradient;
 ## <a name="getitaskbarlist"></a> Afx_global_data:: getitaskbarlist
 
 만들고 글로벌 데이터에 대 한 포인터를 저장 합니다 `ITaskBarList` 인터페이스입니다.
-
 
 ```
 ITaskbarList *GetITaskbarList();
@@ -941,7 +896,6 @@ ITaskbarList *GetITaskbarList();
 
 만들고 글로벌 데이터에 대 한 포인터를 저장 합니다 `ITaskBarList3` 인터페이스입니다.
 
-
 ```
 ITaskbarList3 *GetITaskbarList3();
 ```
@@ -953,7 +907,6 @@ ITaskbarList3 *GetITaskbarList3();
 ## <a name="getshellautohidebars"></a> Afx_global_data:: getshellautohidebars
 
 셸 자동 숨기기 막대의 위치를 결정합니다.
-
 
 ```
 int GetShellAutohideBars();
@@ -967,7 +920,6 @@ int GetShellAutohideBars();
 
 통해 얻은 인터페이스를 해제 합니다 `GetITaskbarList` 고 `GetITaskbarList3` 메서드.
 
-
 ```
 void ReleaseTaskBarRefs();
 ```
@@ -975,7 +927,6 @@ void ReleaseTaskBarRefs();
 ## <a name="shellcreateitemfromparsingname"></a> Afx_global_data:: shellcreateitemfromparsingname
 
 구문 분석 이름에서 셸 항목 개체를 만들고 초기화합니다.
-
 
 ```
 HRESULT ShellCreateItemFromParsingName(

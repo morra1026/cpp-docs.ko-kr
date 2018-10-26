@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cf4bcdd9290817bb77eeb20f1a014bd537d15d8b
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 763ee9c6ad165ad06016a730e218d6aa36777997
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791720"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50065124"
 ---
 # <a name="libraryblock"></a>library_block
 
@@ -64,9 +64,9 @@ __interface IMyInterface {
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 [컴파일러 특성](compiler-attributes.md)<br/>
-[독립 실행형 특성](stand-alone-attributes.md)  
+[독립 실행형 특성](stand-alone-attributes.md)

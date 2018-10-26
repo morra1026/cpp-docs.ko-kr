@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a535858a0d5540db481fd42918b4079f30c90728
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e0fa2a4b422a7bd1f36fc46837adec4136b693fb
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375675"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50064956"
 ---
 # <a name="logpen-structure"></a>LOGPEN 구조체
 
@@ -56,9 +56,9 @@ typedef struct tagLOGPEN {  /* lgpn */
 
 - 경계 사각형을 지정 하는 함수 출력 PS_INSIDEFRAME 닫힌된 도형의 프레임 내에서 선을 그리는 펜을 생성 하 여 만듭니다 GDI (예를 들어 합니다 `Ellipse`, `Rectangle`를 `RoundRect`를 `Pie`, 및 `Chord` 멤버 함수)입니다. 경계 사각형을 지정 하지 않는 함수 출력 GDI를 사용 하 여이 스타일은 사용 하는 경우 (예를 들어를 `LineTo` 멤버 함수), 펜의 그리기 영역 프레임으로 제한 되지 않습니다.
 
-     펜 PS_INSIDEFRAME 스타일 및 색 논리 색상표에서 색을 일치 하지 않는 경우, 펜 디더링된 색으로 그려집니다. 디더링된 색을 사용 하 여 펜을을 만들려면 PS_SOLID 펜 스타일을 사용할 수 없습니다. PS_INSIDEFRAME 스타일은 1 보다 작거나 펜 굵기 이면 PS_SOLID 동일 합니다.
+   펜 PS_INSIDEFRAME 스타일 및 색 논리 색상표에서 색을 일치 하지 않는 경우, 펜 디더링된 색으로 그려집니다. 디더링된 색을 사용 하 여 펜을을 만들려면 PS_SOLID 펜 스타일을 사용할 수 없습니다. PS_INSIDEFRAME 스타일은 1 보다 작거나 펜 굵기 이면 PS_SOLID 동일 합니다.
 
-     이외의 다른 함수에 의해 생성 된 PS_INSIDEFRAME 스타일 GDI 개체를 사용 하면 `Ellipse`, `Rectangle`, 및 `RoundRect`, 지정된 된 프레임 내에서 줄 완전히 되지 않을 수 있습니다.
+   이외의 다른 함수에 의해 생성 된 PS_INSIDEFRAME 스타일 GDI 개체를 사용 하면 `Ellipse`, `Rectangle`, 및 `RoundRect`, 지정된 된 프레임 내에서 줄 완전히 되지 않을 수 있습니다.
 
 *lopnWidth*<br/>
 논리 단위의 펜 굵기를 지정합니다. 경우는 `lopnWidth` 구성원은 0, 펜은 현재 매핑 모드에 관계 없이 래스터 장치에서 1 픽셀 너비입니다.

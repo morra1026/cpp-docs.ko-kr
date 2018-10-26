@@ -72,12 +72,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 964fab6030e0a89ef69730fd4867973e402db614
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a4a5b6936397728472bf0041735248157091db56
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442021"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054360"
 ---
 # <a name="cdaoworkspace-class"></a>CDaoWorkspace 클래스
 
@@ -163,7 +163,7 @@ MFC dao에서 보안 제어에 사용 되는 사용자 및 그룹 컬렉션을 �
 
 - 기본 작업 영역을 명시적으로 열어야 합니다.
 
-     일반적으로 기본 작업 영역 사용은 암시적-새 열 때 [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) 하거나 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) 개체입니다. 하지만 명시적으로 액세스 해야 합니다.-예를 들어 데이터베이스 엔진이 속성에 액세스 하거나 작업 영역 컬렉션을 합니다. 아래의 "기본 작업 영역의 암시적 사용"을 참조 하십시오.
+   일반적으로 기본 작업 영역 사용은 암시적-새 열 때 [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) 하거나 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) 개체입니다. 하지만 명시적으로 액세스 해야 합니다.-예를 들어 데이터베이스 엔진이 속성에 액세스 하거나 작업 영역 컬렉션을 합니다. 아래의 "기본 작업 영역의 암시적 사용"을 참조 하십시오.
 
 - 새 작업 영역을 만듭니다. 호출 [Append](#append) 작업 영역 컬렉션에 추가 하려는 경우.
 
@@ -309,7 +309,6 @@ static void PASCAL CompactDatabase(
     LPCTSTR lpszLocale = dbLangGeneral,
     int nOptions = 0);
 
-
 static void PASCAL CompactDatabase(
     LPCTSTR lpszSrcName,
     LPCTSTR lpszDestName,
@@ -453,7 +452,6 @@ void GetDatabaseInfo(
     int nIndex,
     CDaoDatabaseInfo& dbinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
-
 
 void GetDatabaseInfo(
     LPCTSTR lpszName,
@@ -624,7 +622,6 @@ void GetWorkspaceInfo(
     int nIndex,
     CDaoWorkspaceInfo& wkspcinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
-
 
 void GetWorkspaceInfo(
     LPCTSTR lpszName,

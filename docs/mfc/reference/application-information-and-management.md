@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9783da47a22260f0edbe5ddf6d8f5021aae31e5c
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 1867f044c143fc0e5fbb06705bf45b8fa729a5cc
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083803"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068972"
 ---
 # <a name="application-information-and-management"></a>응용 프로그램 정보 및 관리
 
@@ -61,8 +61,6 @@ Microsoft Foundation Class 라이브러리는 이러한 작업을 수행 하는 
 |[AfxSocketInit](#afxsocketinit)|호출을 `CWinApp::InitInstance` Windows 소켓을 초기화 하는 재정의 합니다.|
 |[AfxUserToolsManager](#afxusertoolsmanager)|전역에 대 한 포인터 [사용자 도구 관리자](cusertoolsmanager-class.md)합니다.|
 |[AfxWinInit](#afxwininit)|MFC에서 제공한 호출한 `WinMain` 의 일부로 함수를 [CWinApp](../../mfc/reference/cwinapp-class.md) GUI 기반 응용 프로그램을 MFC를 초기화 하려면 초기화 합니다. MFC를 사용 하는 콘솔 응용 프로그램에 대 한 직접 호출 해야 합니다.|
-
-
 
 ##  <a name="afxbeginthread"></a>  AfxBeginThread
 
@@ -145,6 +143,7 @@ CWinThread* AfxBeginThread(
 ```
 CContextMenuManager* afxContextMenuManager;
 ```
+
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afxcontextmenumanager.h
@@ -152,7 +151,6 @@ CContextMenuManager* afxContextMenuManager;
 ### <a name="see-also"></a>참고 항목
 
 [CContextMenuManager 클래스](ccontextmenumanager-class.md)
-
 
 ##  <a name="afxendthread"></a>  AfxEndThread
 
@@ -190,6 +188,7 @@ void AFXAPI AfxEndThread(
 ```
 HINSTANCE AFXAPI AfxFindResourceHandle( LPCTSTR lpszName,  LPCTSTR lpszType );
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *lpszName*<br/>
@@ -471,6 +470,7 @@ BOOL AFXAPI AfxInitRichEdit2();
 ```
 BOOL AFXAPI AfxIsExtendedFrameClass( CWnd* pWnd );
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *pWnd*<br/>
@@ -514,6 +514,7 @@ BOOL AFXAPI AfxIsExtendedFrameClass( CWnd* pWnd );
 ```
 BOOL AFXAPI AfxIsMFCToolBar(CWnd* pWnd);
 ```
+
 ### <a name="parameters"></a>매개 변수
 
 *pWnd*<br/>
@@ -536,7 +537,6 @@ BOOL AFXAPI AfxIsMFCToolBar(CWnd* pWnd);
 [CWnd 클래스](cwnd-class.md)<br/>
 [CMFCToolBar 클래스](cmfctoolbar-class.md)
 
-
 ## <a name="afxkeyboardmanager"></a> AfxKeyboardManager
 
 전역에 대 한 포인터 [키보드 manager](ckeyboardmanager-class.md)합니다.
@@ -546,6 +546,7 @@ BOOL AFXAPI AfxIsMFCToolBar(CWnd* pWnd);
 ```
 CKeyboardManager* afxKeyboardManager;
 ```
+
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afxkeyboardmanager.h
@@ -554,7 +555,6 @@ CKeyboardManager* afxKeyboardManager;
 
 [매크로, 전역 함수 및 전역 변수](mfc-macros-and-globals.md)<br/>
 [CKeyboardManager 클래스](ckeyboardmanager-class.md)
-
 
 ##  <a name="afxloadlibrary"></a>  AfxLoadLibrary
 
@@ -618,6 +618,7 @@ HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
 ```
 CMenuTearOffManager* g_pTearOffMenuManager;
 ```
+
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afxmenutearoffmanager.h
@@ -635,6 +636,7 @@ CMenuTearOffManager* g_pTearOffMenuManager;
 ```
 CMouseManager* afxMouseManager;
 ```
+
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afxmousemanager.h
@@ -642,8 +644,6 @@ CMouseManager* afxMouseManager;
 ### <a name="see-also"></a>참고 항목
 
 [CMouseManager 클래스](cmousemanager-class.md)
-
-
 
 ##  <a name="afxregisterclass"></a>  AfxRegisterClass
 
@@ -843,7 +843,6 @@ CUserToolsManager* afxUserToolsManager;
 ### <a name="see-also"></a>참고 항목
 
 [CUserToolsManager 클래스](cusertoolsmanager-class.md)
-
 
 ##  <a name="afxwininit"></a>  AfxWinInit
 

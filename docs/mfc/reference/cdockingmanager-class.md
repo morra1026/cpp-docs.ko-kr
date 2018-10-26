@@ -170,12 +170,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24b663e1b07d1012c1611714390340df3ce3867f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c17b280d658eb615d314526f4fd241bf57c2eed1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448505"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50074737"
 ---
 # <a name="cdockingmanager-class"></a>CDockingManager 클래스
 
@@ -296,7 +296,7 @@ class CDockingManager : public CObject
 
     - `AFX_DOCK_TYPE::DT_SMART`
 
-     이러한 도킹 모드가 정의한 [CDockingManager::m_dockModeGlobal](#m_dockmodeglobal) 를 호출 하 여 설정 됩니다 [CDockingManager::SetDockingMode](#setdockingmode)합니다.
+   이러한 도킹 모드가 정의한 [CDockingManager::m_dockModeGlobal](#m_dockmodeglobal) 를 호출 하 여 설정 됩니다 [CDockingManager::SetDockingMode](#setdockingmode)합니다.
 
 - 비 부동, 크기 조정이 불가능 창을 만들려는 경우 호출 된 [CDockingManager::AddPane](#addpane) 메서드. 이 메서드는 창의 레이아웃을 담당 하 고 도킹 관리자를 사용 하 여 창에 등록 합니다.
 
@@ -396,7 +396,7 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 ### <a name="parameters"></a>매개 변수
 
 *hdwp*<br/>
-[in] 지연 된 창 위치 구조를 지정합니다. 자세한 내용은 [Windows 데이터 형식](/windows/desktop/WinProg/windows-data-types)합니다.
+[in] 지연 된 창 위치 구조를 지정합니다. 자세한 내용은 [Windows 데이터 형식](/windows/desktop/WinProg/windows-data-types)을 참조하세요.
 
 ### <a name="remarks"></a>설명
 

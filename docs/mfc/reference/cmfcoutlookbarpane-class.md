@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08055d748bb61101e80df31b272e847db045164c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d2d468ded9db1d21fd19bc553ed2a0c3227725a0
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46398081"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075556"
 ---
 # <a name="cmfcoutlookbarpane-class"></a>CMFCOutlookBarPane 클래스
 
@@ -88,12 +88,12 @@ class CMFCOutlookBarPane : public CMFCToolBar
 |[CMFCOutlookBarPane::ClearAll](#clearall)|Outlook 표시줄 창에 이미지를 사용 하는 리소스를 해제 합니다.|
 |[CMFCOutlookBarPane::Create](#create)|Outlook 표시줄 창을 만듭니다.|
 |`CMFCOutlookBarPane::CreateObject`|프레임워크에서 이 클래스 형식의 동적 인스턴스를 만드는 데 사용합니다.|
-|`CMFCOutlookBarPane::Dock`|Outlook 표시줄 창을 도킹 프레임 워크에서 호출 됩니다. (`CPane::Dock`를 재정의합니다.)|
+|`CMFCOutlookBarPane::Dock`|Outlook 표시줄 창을 도킹 프레임 워크에서 호출 됩니다. ( `CPane::Dock`을 재정의합니다.)|
 |[CMFCOutlookBarPane::EnablePageScrollMode](#enablepagescrollmode)|Outlook 표시줄 창에 있는 스크롤 화살표 단추 또는 페이지에서 단추 목록을 이동 하는지 여부를 지정 합니다.|
 |[CMFCOutlookBarPane::GetRegularColor](#getregularcolor)|Outlook 표시줄 창입니다 (선택 되지 않은) 하는 일반 텍스트 색을 반환합니다.|
 |`CMFCOutlookBarPane::GetThisClass`|에 대 한 포인터를 가져오는 데 프레임 워크에 의해 합니다 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 이 클래스 형식과 연결 된 개체입니다.|
 |[CMFCOutlookBarPane::IsBackgroundTexture](#isbackgroundtexture)|Outlook 표시줄 창에 대 한 로드 배경 이미지 인지 확인 합니다.|
-|`CMFCOutlookBarPane::IsChangeState`|부동 창에 도킹할 수 있는지 여부를 결정 합니다. (`CPane::IsChangeState`를 재정의합니다.)|
+|`CMFCOutlookBarPane::IsChangeState`|부동 창에 도킹할 수 있는지 여부를 결정 합니다. ( `CPane::IsChangeState`을 재정의합니다.)|
 |[CMFCOutlookBarPane::IsDrawShadedHighlight](#isdrawshadedhighlight)|단추가 강조 표시 하 고 배경 이미지에 표시 되 면 단추 테두리 음영 처리 된 인지 확인 합니다.|
 |`CMFCOutlookBarPane::OnBeforeFloat`|Float에 대 한이 되 면 프레임 워크에서 호출 됩니다. (재정의 [CPane::OnBeforeFloat](../../mfc/reference/cpane-class.md#onbeforefloat).)|
 |[CMFCOutlookBarPane::RemoveButton](#removebutton)|지정 된 명령 ID가 있는 단추를 제거 합니다.|
@@ -104,7 +104,7 @@ class CMFCOutlookBarPane : public CMFCToolBar
 |[CMFCOutlookBarPane::SetExtraSpace](#setextraspace)|Outlook 표시줄 창에 단추 주위에 사용 되는 패딩 픽셀 수를 설정 합니다.|
 |[CMFCOutlookBarPane::SetTextColor](#settextcolor)|Outlook 표시줄 창에 일반 및 강조 표시 된 텍스트의 색을 설정합니다.|
 |[CMFCOutlookBarPane::SetTransparentColor](#settransparentcolor)|Outlook 표시줄 창에 대 한 투명 한 색을 설정합니다.|
-|`CMFCOutlookBarPane::SmartUpdate`|Outlook 표시줄을 업데이트 하려면 내부적으로 사용 합니다. (`CMFCToolBar::SmartUpdate`를 재정의합니다.)|
+|`CMFCOutlookBarPane::SmartUpdate`|Outlook 표시줄을 업데이트 하려면 내부적으로 사용 합니다. ( `CMFCToolBar::SmartUpdate`을 재정의합니다.)|
 
 ### <a name="protected-methods"></a>보호된 메서드
 
@@ -159,13 +159,11 @@ BOOL AddButton(
     UINT iIdCommand,
     int iInsertAt=-1);
 
-
 BOOL AddButton(
     UINT uiImage,
     UINT uiLabel,
     UINT iIdCommand,
     int iInsertAt=-1);
-
 
 BOOL AddButton(
     LPCTSTR szBmpFileName,
@@ -173,13 +171,11 @@ BOOL AddButton(
     UINT iIdCommand,
     int iInsertAt=-1);
 
-
 BOOL AddButton(
     HBITMAP hBmp,
     LPCTSTR lpszLabel,
     UINT iIdCommand,
     int iInsertAt=-1);
-
 
 BOOL AddButton(
     HICON hIcon,

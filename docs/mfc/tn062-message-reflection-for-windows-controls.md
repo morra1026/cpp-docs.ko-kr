@@ -37,12 +37,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5cb576ba6ce532bce15b9dda2aa598649044c2d8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 994095042dc473fda315b6d842d9ec9355ff3671
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378017"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055400"
 ---
 # <a name="tn062-message-reflection-for-windows-controls"></a>TN062: Windows 컨트롤에 대한 메시지 리플렉션
 
@@ -126,7 +126,7 @@ ON_NOTIFY_REFLECT 및 ON_CONTROL_REFLECT 매크로 변형이 지정된 된 메�
 
 1. 기존 응용 프로그램에서 새 대화 상자를 만듭니다. 자세한 내용은 참조는 [대화 상자 편집기](../windows/dialog-editor.md) 항목입니다.
 
-     재사용 가능한 컨트롤을 개발 하는 응용 프로그램이 있어야 합니다. 사용 하 여 기존 응용 프로그램에 없는 경우 응용 프로그램 마법사를 사용 하 여 대화 상자 기반 응용 프로그램을 만듭니다.
+   재사용 가능한 컨트롤을 개발 하는 응용 프로그램이 있어야 합니다. 사용 하 여 기존 응용 프로그램에 없는 경우 응용 프로그램 마법사를 사용 하 여 대화 상자 기반 응용 프로그램을 만듭니다.
 
 2. Visual c + +에 로드 된 프로젝트를 사용 하 여 클래스 마법사 라는 새 클래스를 만듭니다 `CYellowEdit` 기반 `CEdit`입니다.
 
@@ -145,7 +145,7 @@ ON_NOTIFY_REFLECT 및 ON_CONTROL_REFLECT 매크로 변형이 지정된 된 메�
 
 5. 리플 렉 트 된 WM_CTLCOLOR 메시지에 대 한 처리기를 추가 클래스 마법사를 사용 하 여 `CYellowEdit` 클래스입니다. 메시지를 처리할 수 있습니다 목록의 메시지 이름 앞에 등호 메시지 반영 됩니다 나타내는 note 합니다. 에 설명 되어 [반영 메시지의 메시지 처리기 정의](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md)합니다.
 
-     다음 메시지 맵 매크로 및 스 켈 레 톤 함수를 추가 하는 클래스 마법사:
+   다음 메시지 맵 매크로 및 스 켈 레 톤 함수를 추가 하는 클래스 마법사:
 
     ```cpp
     ON_WM_CTLCOLOR_REFLECT()

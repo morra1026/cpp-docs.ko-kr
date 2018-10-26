@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae0cefa518ce44913f5c316a096d221fa9bd41aa
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1e6fed56e21f2b5d97b9b89596630cd63f544148
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433857"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078689"
 ---
 # <a name="activex-control-containers-connecting-an-activex-control-to-a-member-variable"></a>ActiveX 컨트롤 컨테이너: ActiveX 컨트롤을 멤버 변수에 연결
 
@@ -45,7 +45,7 @@ ActiveX 컨트롤에서 해당 컨트롤 컨테이너 응용 프로그램 내에
 
 1. 에 **변수 이름** 상자에 이름을 입력 합니다.
 
-     예를 들어 *m_circctl*합니다.
+   예를 들어 *m_circctl*합니다.
 
 1. 클릭 **완료** 하 여 변경 내용을 적용 하 고 멤버 변수 추가 마법사를 종료 합니다.
 

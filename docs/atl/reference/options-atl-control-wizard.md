@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 25116b0750016fdbb4ffd792d0b16efb6c6c1793
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 9c1acf9602dedf0eef1b8d96344914c367ce5926
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45711951"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073554"
 ---
 # <a name="options-atl-control-wizard"></a>옵션, ATL 컨트롤 마법사
 
@@ -49,11 +49,11 @@ ms.locfileid: "45711951"
 
    - 복합 컨트롤을 포함 하는 HTML 테스트 페이지입니다.
 
-     기본적으로이 제어는 다음과 같이 설정 됩니다. [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) 를 true로 창 있는 컨트롤 임을 나타냅니다. 싱크 맵을 구현합니다. 자세한 내용은 [DHTML 컨트롤에 대 한 지원을](../../atl/atl-support-for-dhtml-controls.md)합니다.
+   기본적으로이 제어는 다음과 같이 설정 됩니다. [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) 를 true로 창 있는 컨트롤 임을 나타냅니다. 싱크 맵을 구현합니다. 자세한 내용은 [DHTML 컨트롤에 대 한 지원을](../../atl/atl-support-for-dhtml-controls.md)합니다.
 
 - **DHTML 컨트롤**:는 ATL DHTML 컨트롤에는 HTML을 사용 하 여 사용자 인터페이스를 지정 합니다. DHTML UI 클래스를 COM 맵을 포함합니다. 기본적으로이 제어는 다음과 같이 설정 됩니다. [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) 를 true로 창 있는 컨트롤 임을 나타냅니다.
 
-     자세한 내용은 [DHTML 컨트롤 프로젝트의 요소 식별](../../atl/identifying-the-elements-of-the-dhtml-control-project.md)합니다.
+   자세한 내용은 [DHTML 컨트롤 프로젝트의 요소 식별](../../atl/identifying-the-elements-of-the-dhtml-control-project.md)합니다.
 
 ### <a name="minimal-control"></a>최소 컨트롤
 

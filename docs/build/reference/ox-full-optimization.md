@@ -1,13 +1,14 @@
 ---
 title: -Ox (대부분의 속도 최적화 사용) | Microsoft Docs
 ms.custom: ''
-ms.date: 09/25/2017
+ms.date: 10/18/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.ToolOptimization
-- /ox
+- /Ox
+- /Oxs
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e1da84c3a4ec481d3af2880a80f5923bf0c50cc
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f3f5a39201283567285b37a0901929022b688104
+ms.sourcegitcommit: 4cbde5d164d681204c4011dc95a921d75292f423
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438082"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459168"
 ---
 # <a name="ox-enable-most-speed-optimizations"></a>/Ox (대부분의 속도 최적화 사용)
 
@@ -33,7 +34,7 @@ ms.locfileid: "46438082"
 
 ## <a name="syntax"></a>구문
 
-> /Ox
+> **/Ox**
 
 ## <a name="remarks"></a>설명
 
@@ -59,7 +60,7 @@ ms.locfileid: "46438082"
 
 - [/Od(디버그 사용 안 함)](../../build/reference/od-disable-debug.md)
 
-오차의 속도 취소할 수 있습니다는 **/Ox** 컴파일러 옵션을 지정 하는 경우 **/Oxs**를 결합 하는 합니다 **/Ox** 컴파일러 옵션 [(크기 우선 작은 /Os 코드)](../../build/reference/os-ot-favor-small-code-favor-fast-code.md)합니다. 결합 된 옵션은 코드 크기를 선호합니다.
+오차의 속도 취소할 수 있습니다는 **/Ox** 컴파일러 옵션을 지정 하는 경우 **/Oxs**를 결합 하는 합니다 **/Ox** 컴파일러 옵션 [(크기 우선 작은 /Os 코드)](../../build/reference/os-ot-favor-small-code-favor-fast-code.md)합니다. 결합 된 옵션은 코드 크기를 선호합니다.  합니다 **/Oxs** 옵션은 정확 하 게 지정 하는 것 같습니다 **/Ox** **/Os** 경우 옵션은 지정 된 순서로 표시 합니다.
 
 릴리스 빌드에 대 한 모든 사용 가능한 파일-수준 최적화를 적용 하려면 지정할 권장 [/o2 (속도 최대화)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) of **/Ox**, 및 [/o1 (크기 최소화)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) 대신 **/Oxs**합니다. 릴리스에서 더 많은 최적화 빌드에 대 한 수도 합니다 [/GL (전체 프로그램 최적화)](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션 및 [/LTCG (링크 타임 코드 생성)](../../build/reference/ltcg-link-time-code-generation.md) 링커 옵션입니다.
 

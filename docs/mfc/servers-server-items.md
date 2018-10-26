@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72f8de75607921edda62aec9baec424066431d61
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c134f0d0b0c8ee3009e372de7712a6c0894a51de
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438862"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082907"
 ---
 # <a name="servers-server-items"></a>서버: 서버 항목
 
@@ -43,7 +43,7 @@ ms.locfileid: "46438862"
 
 1. 파생 클래스에서 `OnDraw` 멤버 함수를 재정의합니다.
 
-     프레임워크는 `OnDraw`를 호출하여 OLE 항목을 메타파일로 렌더링합니다. 컨테이너 응용 프로그램은 이 메타파일을 사용하여 항목을 렌더링합니다. 응용 프로그램의 뷰 클래스에는 `OnDraw` 멤버 함수도 있습니다. 이 함수는 서버 응용 프로그램이 활성화인 경우 항목을 렌더링하는 데 사용됩니다.
+   프레임워크는 `OnDraw`를 호출하여 OLE 항목을 메타파일로 렌더링합니다. 컨테이너 응용 프로그램은 이 메타파일을 사용하여 항목을 렌더링합니다. 응용 프로그램의 뷰 클래스에는 `OnDraw` 멤버 함수도 있습니다. 이 함수는 서버 응용 프로그램이 활성화인 경우 항목을 렌더링하는 데 사용됩니다.
 
 1. 서버 문서 클래스에 대한 `OnGetEmbeddedItem`의 재정의를 구현합니다. 자세한 내용은 문서 참조 [서버: 서버 문서 구현](../mfc/servers-implementing-server-documents.md) 와 MFC OLE 샘플 [HIERSVR](../visual-cpp-samples.md)합니다.
 

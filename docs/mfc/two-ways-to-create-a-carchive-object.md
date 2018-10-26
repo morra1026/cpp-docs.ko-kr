@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10b87f57daaf510252fe6f07dc3ba2d9d0a8650d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 630cdd1614aa19ec3a5a654d7dc4bfe7336ce027
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409340"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080587"
 ---
 # <a name="two-ways-to-create-a-carchive-object"></a>CArchive 개체를 만드는 두 가지 방법
 
@@ -66,9 +66,9 @@ ms.locfileid: "46409340"
 
 1. 전달 된 `CFile` 개체에 대 한 생성자를 `CArchive`다음 예제에서와 같이:
 
-     [!code-cpp[NVC_MFCSerialization#5](../mfc/codesnippet/cpp/two-ways-to-create-a-carchive-object_1.cpp)]
+   [!code-cpp[NVC_MFCSerialization#5](../mfc/codesnippet/cpp/two-ways-to-create-a-carchive-object_1.cpp)]
 
-     두 번째 인수는 `CArchive` 생성자는 저장 또는 로드 하거나 데이터 파일에 대 한 보관 파일을 사용할지 여부를 지정 하는 열거형된 값입니다. 합니다 `Serialize` 개체의 함수를 호출 하 여이 상태를 확인 합니다 `IsStoring` 보관 개체에 대 한 함수입니다.
+   두 번째 인수는 `CArchive` 생성자는 저장 또는 로드 하거나 데이터 파일에 대 한 보관 파일을 사용할지 여부를 지정 하는 열거형된 값입니다. 합니다 `Serialize` 개체의 함수를 호출 하 여이 상태를 확인 합니다 `IsStoring` 보관 개체에 대 한 함수입니다.
 
 마쳤으면 저장 하거나 데이터를 로드 하는 `CArchive` 개체를 닫아야 합니다. 하지만 합니다 `CArchive` (및 `CFile`) 개체는 자동으로 닫고 보관 파일 (파일), 명시적으로 쉽게 오류를 복구 하므로 이렇게 하는 것이 좋습니다. 오류 처리에 대 한 자세한 내용은 문서를 참조 하세요 [예외: 예외를 catch 하면 및 삭제](../mfc/exceptions-catching-and-deleting-exceptions.md)합니다.
 
@@ -76,7 +76,7 @@ ms.locfileid: "46409340"
 
 1. 다음 예제를 종결 하는 방법의 `CArchive` 개체:
 
-     [!code-cpp[NVC_MFCSerialization#6](../mfc/codesnippet/cpp/two-ways-to-create-a-carchive-object_2.cpp)]
+   [!code-cpp[NVC_MFCSerialization#6](../mfc/codesnippet/cpp/two-ways-to-create-a-carchive-object_2.cpp)]
 
 ## <a name="see-also"></a>참고 항목
 

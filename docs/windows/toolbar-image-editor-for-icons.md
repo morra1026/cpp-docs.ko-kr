@@ -22,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8dee099912b69d48b0ded4184dc68c14da1899fe
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ed6639bdf86a54689834c6eda03a3b6ec4dd171d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391906"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063850"
 ---
 # <a name="toolbar-c-image-editor-for-icons"></a>도구 모음 (아이콘에 대 한 c + + 이미지 편집기)
 
@@ -36,8 +36,7 @@ ms.locfileid: "46391906"
 > [!NOTE]
 > 사용할 수 있는 모든 도구를 **이미지 편집기** 도구 모음에서 사용할 수 있습니다.는 **이미지** 메뉴 (아래 합니다 **도구** 명령).
 
-![이미지 편집기 도구 모음](../mfc/media/vcimageeditortoolbar.gif "vcImageEditorToolbar")  
-이미지 편집기 도구 모음
+![이미지 편집기 도구 모음](../mfc/media/vcimageeditortoolbar.gif "vcImageEditorToolbar") 이미지 편집기 도구 모음
 
 사용 하는 **이미지 편집기** 도구 모음 및 **옵션** 선택기 도구 또는 하려는 옵션입니다.
 
@@ -46,8 +45,7 @@ ms.locfileid: "46391906"
 
 사용 하 여 합니다 **옵션** 선택기 줄, 브러시 스트로크 등의 너비를 지정할 수 있습니다. 에 있는 아이콘을 **옵션** 선택한 도구에 따라 선택기 단추 변경 합니다.
 
-![그리기&#45;이미지 편집기 도구 모음의 모양 선택기](../mfc/media/vcimageeditortoolbaroptionselector.gif "vcImageEditorToolbarOptionSelector")  
-이미지 편집기 도구 모음 옵션 선택기
+![그리기&#45;이미지 편집기 도구 모음의 모양 선택기](../mfc/media/vcimageeditortoolbaroptionselector.gif "vcImageEditorToolbarOptionSelector") 이미지 편집기 도구 모음 옵션 선택기
 
 관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리 되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대 한 내용은 참조 하세요 [데스크톱 앱에 대 한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)합니다. 전역화 및 지역화 관리 되는 앱의 리소스에 대 한 내용은 참조 하세요 [Globalizing and Localizing.NET Framework Applications](/dotnet/standard/globalization-localization/index)합니다.
 

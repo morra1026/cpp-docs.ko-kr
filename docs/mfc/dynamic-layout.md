@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08fc6f6a5b93851468d412e34b3ee0a85ab534e5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5e2fb7b2468946be29553f54fcedde98e43881d7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46413252"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068829"
 ---
 # <a name="dynamic-layout"></a>동적 레이아웃
 
@@ -65,7 +65,7 @@ Visual Studio 2015에서 MFC를 사용 하 여 조정할 수 있는 대화 상�
 
 1. 대화 상자 클래스의 구현 코드에서 대화 상자에 대한 동적 레이아웃을 지정할 위치를 찾거나 만듭니다. 예를 들어 대화 상자에 `AdjustLayout`과 같은 메서드를 추가하고 레이아웃을 변경해야 하는 위치에서 호출할 수 있습니다. 생성자에서 이 메서드를 처음 호출하거나 대화 상자를 변경한 후 호출할 수 있습니다.
 
-2. 대화 상자에 대 한 호출 [GetDynamicLayout](../mfc/reference/cwnd-class.md#getdynamiclayout)의 메서드는 `CWnd` 클래스입니다. `GetDynamicLayout` 에 대 한 포인터를 반환 합니다.는 `CMFCDynamicLayout` 개체입니다.
+2. 대화 상자에 대 한 호출 [GetDynamicLayout](../mfc/reference/cwnd-class.md#getdynamiclayout)의 메서드는 `CWnd` 클래스입니다. `GetDynamicLayout` 는 `CMFCDynamicLayout` 개체에 대한 포인터를 반환합니다.
 
     ```cpp
     CMFCDynamicLayout* dynamicLayout = pDialog->GetDynamicLayout();
@@ -119,7 +119,7 @@ Visual Studio 2015에서 MFC를 사용 하 여 조정할 수 있는 대화 상�
     dynamicLayout->LoadResource("IDD_DIALOG1");
     ```
 
-     명명 된 리소스의 형태로 레이아웃 정보가 포함 된 대화 상자를 참조 해야 합니다는 **AFX_DIALOG_LAYOUT** 다음 예제와 같이 리소스 파일의 항목에에서:
+   명명 된 리소스의 형태로 레이아웃 정보가 포함 된 대화 상자를 참조 해야 합니다는 **AFX_DIALOG_LAYOUT** 다음 예제와 같이 리소스 파일의 항목에에서:
 
     ```RC
     /////////////////////////////////////////////////////////////////////////////

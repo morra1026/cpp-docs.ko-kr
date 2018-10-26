@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24dc82015e003b3a2ddbbd202dd6cba9176154eb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 757bc0e1418b2ff68f3aefce7bf54ca38e8a4687
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440084"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079560"
 ---
 # <a name="cmfcribbonlinkctrl-class"></a>CMFCRibbonLinkCtrl 클래스
 
@@ -72,15 +72,15 @@ class CMFCRibbonLinkCtrl : public CMFCRibbonButton
 
 |이름|설명|
 |----------|-----------------|
-|[CMFCRibbonLinkCtrl::CopyFrom](#copyfrom)|(`CMFCRibbonButton::CopyFrom`를 재정의합니다.)|
+|[CMFCRibbonLinkCtrl::CopyFrom](#copyfrom)|( `CMFCRibbonButton::CopyFrom`을 재정의합니다.)|
 |[CMFCRibbonLinkCtrl::GetCompactSize](#getcompactsize)|(재정의 [cmfcribbonbutton:: Getcompactsize](../../mfc/reference/cmfcribbonbutton-class.md#getcompactsize).)|
 |[CMFCRibbonLinkCtrl::GetLink](#getlink)|하이퍼링크의 값을 반환합니다.|
 |[CMFCRibbonLinkCtrl::GetRegularSize](#getregularsize)|(재정의 [cmfcribbonbutton:: Getregularsize](../../mfc/reference/cmfcribbonbutton-class.md#getregularsize).)|
 |[CMFCRibbonLinkCtrl::GetToolTipText](#gettooltiptext)|(재정의 [cmfcribbonbutton:: Gettooltiptext](../../mfc/reference/cmfcribbonbutton-class.md#gettooltiptext).)|
-|[CMFCRibbonLinkCtrl::IsDrawTooltipImage](#isdrawtooltipimage)|(`CMFCRibbonButton::IsDrawTooltipImage`를 재정의합니다.)|
+|[CMFCRibbonLinkCtrl::IsDrawTooltipImage](#isdrawtooltipimage)|( `CMFCRibbonButton::IsDrawTooltipImage`을 재정의합니다.)|
 |[CMFCRibbonLinkCtrl::OnDraw](#ondraw)|(재정의 [cmfcribbonbutton:: Ondraw](../../mfc/reference/cmfcribbonbutton-class.md#ondraw).)|
 |[CMFCRibbonLinkCtrl::OnDrawMenuImage](#ondrawmenuimage)|(재정의 [cmfcribbonbaseelement:: Ondrawmenuimage](../../mfc/reference/cmfcribbonbaseelement-class.md#ondrawmenuimage).)|
-|[CMFCRibbonLinkCtrl::OnMouseMove](#onmousemove)|(`CMFCRibbonButton::OnMouseMove`를 재정의합니다.)|
+|[CMFCRibbonLinkCtrl::OnMouseMove](#onmousemove)|( `CMFCRibbonButton::OnMouseMove`을 재정의합니다.)|
 |[CMFCRibbonLinkCtrl::OnSetIcon](#onseticon)||
 |[CMFCRibbonLinkCtrl::OpenLink](#openlink)|하이퍼링크에 지정된 웹 페이지를 엽니다.|
 |[CMFCRibbonLinkCtrl::SetLink](#setlink)|하이퍼링크의 값을 설정합니다.|
@@ -129,19 +129,17 @@ CMFCRibbonLinkCtrl(
 
 ##  <a name="copyfrom"></a>  CMFCRibbonLinkCtrl::CopyFrom
 
-
 ```
 virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *src*
+[in] *src*<br/>
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="getcompactsize"></a>  CMFCRibbonLinkCtrl::GetCompactSize
-
 
 ```
 virtual CSize GetCompactSize(CDC* pDC);
@@ -149,7 +147,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -171,21 +169,19 @@ LPCTSTR GetLink() const;
 
 ##  <a name="getregularsize"></a>  CMFCRibbonLinkCtrl::GetRegularSize
 
-
 ```
 virtual CSize GetRegularSize(CDC* pDC);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="gettooltiptext"></a>  CMFCRibbonLinkCtrl::GetToolTipText
-
 
 ```
 virtual CString GetToolTipText() const;
@@ -197,21 +193,20 @@ virtual CString GetToolTipText() const;
 
 ##  <a name="ondrawmenuimage"></a>  CMFCRibbonLinkCtrl::OnDrawMenuImage
 
-
 ```
 virtual BOOL OnDrawMenuImage(CDC*, CRect);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *CDC** [in] *CRect*
+[in] *CDC&#42;*<br/>
+[in] *CRect*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="isdrawtooltipimage"></a>  CMFCRibbonLinkCtrl::IsDrawTooltipImage
-
 
 ```
 virtual BOOL IsDrawTooltipImage() const;
@@ -223,19 +218,17 @@ virtual BOOL IsDrawTooltipImage() const;
 
 ##  <a name="ondraw"></a>  CMFCRibbonLinkCtrl::OnDraw
 
-
 ```
 virtual void OnDraw(CDC* pDC);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *pDC*
+[in] *pDC*<br/>
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="onmousemove"></a>  CMFCRibbonLinkCtrl::OnMouseMove
-
 
 ```
 virtual void OnMouseMove(CPoint point);
@@ -243,12 +236,11 @@ virtual void OnMouseMove(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *지점*
+[in] *지점*<br/>
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="onseticon"></a>  CMFCRibbonLinkCtrl::OnSetIcon
-
 
 ```
 virtual void OnSetIcon();

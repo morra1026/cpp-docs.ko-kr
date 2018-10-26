@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a2567182f0e2622a72ceb9b98988c4d122a3561
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 765cb6ccf24415c174761c57268dc79e1fc6845b
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860565"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062563"
 ---
 # <a name="cstring-operations-relating-to-c-style-strings"></a>C 스타일 문자열 관련 CString 작업
 
@@ -54,9 +54,9 @@ A [CString](../atl-mfc-shared/using-cstring.md) 문자열 데이터를 포함 �
 
 사용 하는 `CString` C 스타일 문자열로 개체 LPCTSTR 개체 형식으로 캐스팅 하세요. 다음 예에서 `CString`은 C 스타일의 null로 종료되는 읽기 전용 문자열에 대한 포인터를 반환합니다. `strcpy` 함수는 C 스타일 문자열 복사본을 `myString` 변수에 포함합니다.
 
-```
-CString aCString = "A string";  
-char myString[256];  
+```cpp
+CString aCString = "A string";
+char myString[256];
 strcpy(myString, (LPCTSTR)aCString);
 ```
 

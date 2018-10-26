@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f79f8648c2c0d12bf521c38e2db025a8841ab927
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2b8508b5a14e67092339a456f5b85f78d17906a5
+ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46061086"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49082542"
 ---
 # <a name="argument-description"></a>인수 설명
 
@@ -33,7 +33,7 @@ ms.locfileid: "46061086"
 
 `argv` 매개 변수는 프로그램 인수를 나타내며 null로 끝나는 문자열에 대한 포인터의 배열입니다. 배열의 각 요소는 **main** 또는 **wmain**에 전달되는 인수의 문자열 표현을 가리킵니다. 배열에 대한 내용은 [배열 선언](../c-language/array-declarations.md)을 참조하세요. `argv` 형식에 대한 포인터의 배열(`char`) 또는 `char *argv[]` 형식에 대한 포인터의 포인터(`char`)로 `char **argv` 매개 변수를 선언할 수 있습니다. **wmain**의 경우 `wchar_t` 형식에 대한 포인터의 배열(`wchar_t *argv[]`) 또는 `wchar_t` 형식에 대한 포인터의 포인터(`wchar_t **argv`)로 `argv` 매개 변수를 선언할 수 있습니다.
 
-규칙에 따라 `argv`**[0]** 은 프로그램을 호출하는 데 사용하는 명령입니다.  그러나 [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa)를 사용하여 프로세스를 생성할 수 있으며 첫 번째 인수와 두 번째 인수(`lpApplicationName` 및 `lpCommandLine`)를 모두 사용할 경우 `argv`**[0]** 이 실행 파일 이름이 아닐 수 있습니다. 실행 파일 이름을 검색하려면 [GetModuleFileName](https://msdn.microsoft.com/library/windows/desktop/ms683197)을 사용하세요.
+규칙에 따라 `argv`**[0]** 은 프로그램을 호출하는 데 사용하는 명령입니다.  그러나 [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa)를 사용하여 프로세스를 생성할 수 있으며 첫 번째 인수와 두 번째 인수(`lpApplicationName` 및 `lpCommandLine`)를 모두 사용할 경우 `argv`**[0]** 이 실행 파일 이름이 아닐 수 있습니다. 실행 파일 이름을 검색하려면 [GetModuleFileName](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea)을 사용하세요.
 
 마지막 포인터(`argv[argc]`)는 **NULL**입니다. 환경 변수 정보를 가져오기 위한 다른 방법은 *런타임 라이브러리 참조*의 [getenv](../c-runtime-library/reference/getenv-wgetenv.md)를 참조하세요.
 

@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 428f43d5cd1a0cfaa4b5f829b59208ce96eab85d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 652f09146ba0bb193efbf889995f6de5f53a9492
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441085"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50074477"
 ---
 # <a name="mfc-activex-controls-adding-custom-methods"></a>MFC ActiveX 컨트롤: 사용자 지정 메서드 추가
 
@@ -48,7 +48,7 @@ ActiveX 컨트롤 사용자 컨트롤 관련 작업을 수행 하려면 언제 �
 
 1. 바로 가기 메뉴에서 클릭 **추가** 을 클릭 한 다음 **메서드 추가**합니다.
 
-     이 메서드 추가 마법사를 엽니다.
+   이 메서드 추가 마법사를 엽니다.
 
 1. 에 **메서드 이름** 상자에 입력 *PtInCircle*합니다.
 

@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0e4eba9940546e72f11c220dc03a6538750ae85
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: af2780c8b7fb332cd739416e5051a57a8bc7f765
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46028339"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50073541"
 ---
 # <a name="registry-and-typelib-global-functions"></a>레지스트리 및 TypeLib 전역 함수
 
@@ -60,7 +60,7 @@ ms.locfileid: "46028339"
 |||
 |-|-|
 |[AtlGetPerUserRegistration](#atlgetperuserregistration)|응용 프로그램에 대 한 레지스트리 액세스 리디렉션합니다 있는지 여부를 검색 합니다 **HKEY_CURRENT_USER** ( **HKCU**) 노드.|
-|[AtlSetPerUserRegistration](#atlsetperuserregistration)|응용 프로그램에 대 한 레지스트리 액세스 리디렉션합니다 있는지 여부를 설정 합니다 **HKEY_CURRENT_USER** ( **HKCU**) 노드.|  
+|[AtlSetPerUserRegistration](#atlsetperuserregistration)|응용 프로그램에 대 한 레지스트리 액세스 리디렉션합니다 있는지 여부를 설정 합니다 **HKEY_CURRENT_USER** ( **HKCU**) 노드.|
 
 ### <a name="requirements"></a>요구 사항
 
@@ -93,7 +93,7 @@ S_OK는 메서드가 성공적 이면, 그렇지 않으면 HRESULT 오류 코드
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlbase.h  
+**헤더:** atlbase.h
 
 ## <a name="afxregcreatekey"></a> AfxRegCreateKey
 
@@ -121,11 +121,11 @@ LONG AFXAPI AfxRegCreateKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTr
 
 ### <a name="return-value"></a>반환 값
 
-함수가 성공할 경우 반환 값은 ERROR_SUCCESS입니다. 함수가 실패 한 경우 반환 값은 winerror에 정의 된 0이 아닌 오류 코드입니다.  
+함수가 성공할 경우 반환 값은 ERROR_SUCCESS입니다. 함수가 실패 한 경우 반환 값은 winerror에 정의 된 0이 아닌 오류 코드입니다.
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** afxpriv.h  
+**헤더:** afxpriv.h
 
 ## <a name="afxregdeletekey"></a> AfxRegDeleteKey
 
@@ -154,7 +154,7 @@ LONG AFXAPI AfxRegDeleteKey(HKEY hKey, LPCTSTR lpSubKey, CAtlTransactionManager*
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** afxpriv.h  
+**헤더:** afxpriv.h
 
 ## <a name="afxregisterpreviewhandler"></a>
 
@@ -179,7 +179,7 @@ BOOL AFXAPI AfxRegisterPreviewHandler(LPCTSTR lpszCLSID, LPCTSTR lpszShortTypeNa
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** afxdisp.h   
+**헤더:** afxdisp.h
 
 ##  <a name="atlregistertypelib"></a>  AtlRegisterTypeLib
 
@@ -239,11 +239,11 @@ LONG AFXAPI AfxRegOpenKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTran
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** afxpriv.h  
+**헤더:** afxpriv.h
 
 ## <a name="afxregopenkeyex"></a>  AfxRegOpenKeyEx
 
-지정 된 레지스트리 키를 엽니다. 
+지정 된 레지스트리 키를 엽니다.
 
 ### <a name="syntax"></a>구문
 
@@ -277,7 +277,7 @@ LONG AFXAPI AfxRegOpenKeyEx(HKEY hKey, LPCTSTR lpSubKey, DWORD ulOptions, REGSAM
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** afxpriv.h  
+**헤더:** afxpriv.h
 
 ## <a name="afxunregisterpreviewhandler"></a> AfxUnregisterPreviewHandler
 
@@ -296,7 +296,7 @@ BOOL AFXAPI AfxUnRegisterPreviewHandler(LPCTSTR lpszCLSID);
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** afxdisp.h  
+**헤더:** afxdisp.h
 
 ## <a name="atlsetperuserregistration"></a> AtlSetPerUserRegistration
 
@@ -321,11 +321,11 @@ S_OK는 메서드가 성공적 이면, 그렇지 않으면 HRESULT 오류 코드
 
 레지스트리 리디렉션 기본적으로 사용 되지 않습니다. 이 옵션을 사용 하는 경우 레지스트리 액세스도 리디렉션되는지 **HKEY_CURRENT_USER\Software\Classes**합니다.
 
-리디렉션 전역 아닙니다. 이 레지스트리 리디렉션은 MFC 및 ATL 프레임 영향을 받습니다.  
+리디렉션 전역 아닙니다. 이 레지스트리 리디렉션은 MFC 및 ATL 프레임 영향을 받습니다.
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlbase.h  
+**헤더:** atlbase.h
 
 ##  <a name="atlunregistertypelib"></a>  AtlUnRegisterTypeLib
 
@@ -335,7 +335,7 @@ S_OK는 메서드가 성공적 이면, 그렇지 않으면 HRESULT 오류 코드
 
 ```
 ATLAPI AtlUnRegisterTypeLib(
-    HINSTANCE hInstTypeLib, 
+    HINSTANCE hInstTypeLib,
     LPCOLESTR lpszIndex);
 ```
 
@@ -353,7 +353,7 @@ ATLAPI AtlUnRegisterTypeLib(
 
 ### <a name="remarks"></a>설명
 
-이 도우미 함수를 사용 하 여 [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) 하 고 [AtlComModuleUnregisterServer](#atlcommoduleunregisterserver)합니다.  
+이 도우미 함수를 사용 하 여 [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) 하 고 [AtlComModuleUnregisterServer](#atlcommoduleunregisterserver)합니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -405,7 +405,7 @@ ATLINLINE ATLAPI AtlLoadTypeLib(
 
 ##  <a name="registrydataexchange"></a>  RegistryDataExchange
 
-이 함수는 시스템 레지스트리에서 읽거나 쓰기 위해 호출됩니다.  
+이 함수는 시스템 레지스트리에서 읽거나 쓰기 위해 호출됩니다.
 
 ### <a name="syntax"></a>구문
 

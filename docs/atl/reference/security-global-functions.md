@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2cdeef97b92550731b06dcb4a1d425d77f5920a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: bbac8dc499c08d96abd33d49f5adec08095ca420
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46075162"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067295"
 ---
 # <a name="security-global-functions"></a>보안 전역 함수
 
@@ -50,11 +50,11 @@ ms.locfileid: "46075162"
 |[AtlSetOwnerSid](#atlsetownersid)|개체의 소유자 보안 식별자(SID)를 설정하려면 이 함수를 호출합니다.|
 |[AtlGetSacl](#atlgetsacl)|지정된 개체의 SACL(시스템 액세스 제어 목록) 정보를 검색하려면 이 함수를 호출합니다.|
 |[AtlSetSacl](#atlsetsacl)|지정된 개체의 SACL(시스템 액세스 제어 목록) 정보를 설정하려면 이 함수를 호출합니다.|
-|[AtlGetSecurityDescriptor](#atlgetsecuritydescriptor)|지정된 개체의 보안 설명자를 검색하려면 이 함수를 호출합니다.|  
+|[AtlGetSecurityDescriptor](#atlgetsecuritydescriptor)|지정된 개체의 보안 설명자를 검색하려면 이 함수를 호출합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlsecurity.h 
+**헤더:** atlsecurity.h
 
 ##  <a name="atlgetdacl"></a>  AtlGetDacl
 
@@ -127,7 +127,7 @@ inline bool AtlSetDacl(
 디버그 빌드에서 어설션 오류가 발생 하는 경우 *hObject* 유효 하지 않은 경우 *dwInheritanceFlowControl* 허용 되는 세 가지 값 중 하나가 아닙니다.
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlsecurity.h 
+**헤더:** atlsecurity.h
 
 ##  <a name="atlgetgroupsid"></a>  AtlGetGroupSid
 
@@ -156,11 +156,11 @@ inline bool AtlGetGroupSid(
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 true를 반환하고, 실패하면 false를 반환합니다.  
+성공하면 true를 반환하고, 실패하면 false를 반환합니다.
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlsecurity.h 
+**헤더:** atlsecurity.h
 
 ##  <a name="atlsetgroupsid"></a>  AtlSetGroupSid
 
@@ -189,11 +189,11 @@ inline bool AtlSetGroupSid(
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 true를 반환하고, 실패하면 false를 반환합니다.  
+성공하면 true를 반환하고, 실패하면 false를 반환합니다.
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlsecurity.h 
+**헤더:** atlsecurity.h
 
 ##  <a name="atlgetownersid"></a>  AtlGetOwnerSid
 
@@ -222,11 +222,11 @@ inline bool AtlGetOwnerSid(
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 true를 반환하고, 실패하면 false를 반환합니다.  
+성공하면 true를 반환하고, 실패하면 false를 반환합니다.
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlsecurity.h 
+**헤더:** atlsecurity.h
 
 ##  <a name="atlsetownersid"></a>  AtlSetOwnerSid
 
@@ -255,11 +255,11 @@ inline bool AtlSetOwnerSid(
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 true를 반환하고, 실패하면 false를 반환합니다.  
+성공하면 true를 반환하고, 실패하면 false를 반환합니다.
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlsecurity.h 
+**헤더:** atlsecurity.h
 
 ##  <a name="atlgetsacl"></a>  AtlGetSacl
 
@@ -296,11 +296,11 @@ True 이면 함수는 SE_SECURITY_NAME 권한을 설정 하 고 완료 되 면 �
 
 ### <a name="remarks"></a>설명
 
-하는 경우 `AtlGetSacl` 많은 다른 개체를 여러 번 호출 되는 것은 SE_SECURITY_NAME 사용 하 여 함수를 호출 하기 전에 한 번 설정 하는 것이 효율적 *bRequestNeededPrivileges* false로 설정 합니다.  
+하는 경우 `AtlGetSacl` 많은 다른 개체를 여러 번 호출 되는 것은 SE_SECURITY_NAME 사용 하 여 함수를 호출 하기 전에 한 번 설정 하는 것이 효율적 *bRequestNeededPrivileges* false로 설정 합니다.
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlsecurity.h 
+**헤더:** atlsecurity.h
 
 ##  <a name="atlsetsacl"></a>  AtlSetSacl
 
@@ -343,11 +343,11 @@ True 이면 함수는 SE_SECURITY_NAME 권한을 설정 하 고 완료 되 면 �
 
 디버그 빌드에서 어설션 오류가 발생 하는 경우 *hObject* 유효 하지 않은 경우 *dwInheritanceFlowControl* 허용 되는 세 가지 값 중 하나가 아닙니다.
 
-하는 경우 `AtlSetSacl` 많은 다른 개체를 여러 번 호출 되는 것은 SE_SECURITY_NAME 사용 하 여 함수를 호출 하기 전에 한 번 설정 하는 것이 효율적 *bRequestNeededPrivileges* false로 설정 합니다.  
+하는 경우 `AtlSetSacl` 많은 다른 개체를 여러 번 호출 되는 것은 SE_SECURITY_NAME 사용 하 여 함수를 호출 하기 전에 한 번 설정 하는 것이 효율적 *bRequestNeededPrivileges* false로 설정 합니다.
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** atlsecurity.h 
+**헤더:** atlsecurity.h
 
 ##  <a name="atlgetsecuritydescriptor"></a>  AtlGetSecurityDescriptor
 
@@ -390,7 +390,7 @@ True 이면 함수는 SE_SECURITY_NAME 권한을 설정 하 고 완료 되 면 �
 
 ### <a name="remarks"></a>설명
 
-하는 경우 `AtlGetSecurityDescriptor` 많은 다른 개체를 여러 번 호출 되는 것은 SE_SECURITY_NAME 사용 하 여 함수를 호출 하기 전에 한 번 설정 하는 것이 효율적 *bRequestNeededPrivileges* false로 설정 합니다.  
+하는 경우 `AtlGetSecurityDescriptor` 많은 다른 개체를 여러 번 호출 되는 것은 SE_SECURITY_NAME 사용 하 여 함수를 호출 하기 전에 한 번 설정 하는 것이 효율적 *bRequestNeededPrivileges* false로 설정 합니다.
 
 ### <a name="requirements"></a>요구 사항
 

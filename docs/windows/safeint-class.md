@@ -1,7 +1,7 @@
 ﻿---
 title: SafeInt 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 09/27/2018
+ms.date: 10/22/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -20,16 +20,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4dab192b2d5d4210461bd791e3f4d9996363c953
-ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
+ms.openlocfilehash: b7d9c6b68f67185bb9cc529949fcc7c43e91d21e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49163298"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081864"
 ---
 # <a name="safeint-class"></a>SafeInt 클래스
 
 기본 정수형을 확장하여 정수 오버플로를 방지하고 다양한 유형의 정수를 비교할 수 있습니다.
+
+> [!NOTE] 
+> 이 라이브러리의 최신 버전에 위치한 [ https://github.com/dcleblanc/SafeInt ](https://github.com/dcleblanc/SafeInt)합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -261,7 +264,7 @@ SafeInt (
 I template <typename U>
 SafeInt (
    const U& i
-)  
+)
 ```
 
 ### <a name="parameters"></a>매개 변수

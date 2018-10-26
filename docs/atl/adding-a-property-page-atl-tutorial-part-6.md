@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d0db4d53d64def1c1f55929aa9d7514142955cf
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 00390f5a5872c183fdea385158dfa5020362a06f
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821135"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055065"
 ---
 # <a name="adding-a-property-page-atl-tutorial-part-6"></a>속성 페이지 추가(ATL 자습서, 6부)
 
@@ -45,7 +45,7 @@ ms.locfileid: "48821135"
 
 1. 클릭 **문자열** 열려는 합니다 **문자열** 페이지 및 입력 **& 다각형** 으로 **제목**합니다.
 
-     합니다 **Title** 속성의 페이지는 해당 페이지의 탭에 표시 되는 문자열입니다. 합니다 **Doc 문자열** 상태 줄 또는 도구 설명에 적용할 속성 프레임을 사용 하는 설명입니다. 참고는 표준 속성 프레임에서 현재 사용 하지 않으므로이 문자열 기본 내용이 포함 된 상태로 남겨둘 수 있습니다. 생성 하지 것입니다는 **도움말 파일** 지금은 되므로 해당 텍스트 상자에 항목을 삭제 합니다.
+   합니다 **Title** 속성의 페이지는 해당 페이지의 탭에 표시 되는 문자열입니다. 합니다 **Doc 문자열** 상태 줄 또는 도구 설명에 적용할 속성 프레임을 사용 하는 설명입니다. 참고는 표준 속성 프레임에서 현재 사용 하지 않으므로이 문자열 기본 내용이 포함 된 상태로 남겨둘 수 있습니다. 생성 하지 것입니다는 **도움말 파일** 지금은 되므로 해당 텍스트 상자에 항목을 삭제 합니다.
 
 1. 클릭 **완료**, 속성 페이지 개체 생성 됩니다.
 

@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d86749cc8481f2472ed2ebe29dd535e05dcb2e2
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 12070bd690cc2b6228ae5f86e69d9d698bd28348
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48236025"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50056921"
 ---
 # <a name="walkthrough-creating-a-ribbon-application-by-using-mfc"></a>연습: MFC를 사용하여 리본 응용 프로그램 만들기
 
@@ -38,7 +38,7 @@ ms.locfileid: "48236025"
 
 1. 다음 옵션을 설정 합니다 **MFC 응용 프로그램 마법사**:
 
-    1. 에 **응용 프로그램 종류** 섹션의 **비주얼 스타일 및 색**를 선택 **Office 2007 (파랑 테마)** 합니다. 
+    1. 에 **응용 프로그램 종류** 섹션의 **비주얼 스타일 및 색**를 선택 **Office 2007 (파랑 테마)** 합니다.
 
     1. 에 **복합 문서 지원** 섹션에서 확인 **None** 선택 합니다.
 
@@ -46,7 +46,7 @@ ms.locfileid: "48236025"
 
     1. 에 **데이터베이스 지원** 섹션에서 확인 **None** 선택 합니다.
 
-    1. 에 **사용자 인터페이스 기능** 섹션에서 확인 **리본 메뉴를 사용 하 여** 선택 합니다. 
+    1. 에 **사용자 인터페이스 기능** 섹션에서 확인 **리본 메뉴를 사용 하 여** 선택 합니다.
 
     1. 기본적으로 **MFC 응용 프로그램 마법사** 여러 도킹 창에 대 한 지원이 추가 되었습니다. 이 연습에서는 리본 메뉴만을 설명하기 때문에, 응용 프로그램에서 이러한 옵션을 제거할 수 있습니다. 에 **고급 기능** 섹션에서 모든 옵션의 선택을 취소 합니다.
 

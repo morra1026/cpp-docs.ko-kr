@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f844d63bc04deb4294203f04aef30db48f195fd9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: bc5aec34177572552d119df967c9d25571b6cb63
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438069"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066034"
 ---
 # <a name="terminatemap-function"></a>TerminateMap 함수
 
@@ -34,12 +34,12 @@ WRL 인프라를 지원하며 사용자 코드에서 직접 사용할 수 없습
 inline bool TerminateMap(
    _In_ ModuleBase *module,
    _In_opt_z_ const wchar_t *serverName,
-    bool forceTerminate) throw()  
+    bool forceTerminate) throw()
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*모듈*<br/>
+*module*<br/>
 A [모듈](../windows/module-class.md)합니다.
 
 *서버 이름*<br/>

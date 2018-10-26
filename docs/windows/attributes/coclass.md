@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5a76fa402cd270bfc7d0fa87902362de50c55a73
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: df131b79d3247e39aecb95c81564d7ac9fc2732d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791087"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50058936"
 ---
 # <a name="coclass"></a>coclass
 
@@ -102,7 +102,7 @@ appobject, uuid("9E66A294-4365-11D2-A997-00C04FA37DDB")]
 class CMyClass : public I {};
 ```
 
-다음 예제에서 삽입 된 코드에 표시 되는 함수의 기본 구현을 재정의 하는 방법을 설명 합니다 **coclass** 특성입니다. 참조 [/Fx](../../build/reference/fx-merge-injected-code.md) 삽입 된 코드 보기에 대 한 자세한 내용은 합니다. 모든 기본 클래스 또는 인터페이스 클래스를 사용 하는 삽입된 된 코드에 나타납니다. 또한 클래스는 삽입된 된 코드에 기본적으로 포함 하 고 명시적으로 해당 클래스를 기준으로 프로그램 coclass에 대 한를 지정 하는 경우 특성 공급자 코드에서 지정 된 형식을 사용 합니다.
+다음 예제에서 삽입 된 코드에 표시 되는 함수의 기본 구현을 재정의 하는 방법을 설명 합니다 **coclass** 특성입니다. 삽입된 코드 보기에 대한 자세한 정보는 [/Fx](../../build/reference/fx-merge-injected-code.md) 를 참조하세요. 모든 기본 클래스 또는 인터페이스 클래스를 사용 하는 삽입된 된 코드에 나타납니다. 또한 클래스는 삽입된 된 코드에 기본적으로 포함 하 고 명시적으로 해당 클래스를 기준으로 프로그램 coclass에 대 한를 지정 하는 경우 특성 공급자 코드에서 지정 된 형식을 사용 합니다.
 
 ```cpp
 // cpp_attr_ref_coclass2.cpp
@@ -128,7 +128,7 @@ public:
       // you can add to the default implementation
       CRegistryVirtualMachine rvm;
       HRESULT hr;
-      if (FAILED(hr = rvm.AddStandardReplacements()))  
+      if (FAILED(hr = rvm.AddStandardReplacements()))
          return hr;
       rvm.AddReplacement(_T("FriendlyName"), GetObjectFriendlyName());
       return rvm.VMUpdateRegistry(GetOpCodes(), GetOpcodeStringVals(),       GetOpcodeDWORDVals(), GetOpcodeBinaryVals(), bRegister);
@@ -147,7 +147,7 @@ public:
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-특성 컨텍스트에 대 한 자세한 내용은 참조 하세요. [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

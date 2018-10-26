@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff86123f395e9647ef848ad017fe3cb69b69dd71
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a460870887f3a012bf02ee6518ba70c65881c804
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427682"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081419"
 ---
 # <a name="windows-sockets-in-mfc"></a>MFC의 Windows 소켓
 
@@ -42,11 +42,11 @@ Windows 소켓, 소켓 개념에 대 한 설명과 함께에 대 한 내용은 [
 
 - `CAsyncSocket`
 
-     이 클래스는 Windows Sockets API를 캡슐화합니다. [CAsyncSocket](../mfc/reference/casyncsocket-class.md) 네트워크 프로그래밍을 알지만 소켓 API에 직접 프로그래밍의 유연성을 원하는 및 네트워크 이벤트 알림에 대 한 콜백 함수에서 편리 하 게 할지는 프로그래머에 게 적합 합니다. 소켓을 사용 하 여 c + +에서에 대 한 개체 지향 형식 패키징 이외의으로이 클래스를 제공 하는 유일한 추가 추상화는를 콜백으로 특정 소켓 관련 Windows 메시지를 변환 합니다. 자세한 내용은 [Windows 소켓: 소켓 알림](../mfc/windows-sockets-socket-notifications.md)합니다.
+   이 클래스는 Windows Sockets API를 캡슐화합니다. [CAsyncSocket](../mfc/reference/casyncsocket-class.md) 네트워크 프로그래밍을 알지만 소켓 API에 직접 프로그래밍의 유연성을 원하는 및 네트워크 이벤트 알림에 대 한 콜백 함수에서 편리 하 게 할지는 프로그래머에 게 적합 합니다. 소켓을 사용 하 여 c + +에서에 대 한 개체 지향 형식 패키징 이외의으로이 클래스를 제공 하는 유일한 추가 추상화는를 콜백으로 특정 소켓 관련 Windows 메시지를 변환 합니다. 자세한 내용은 [Windows 소켓: 소켓 알림](../mfc/windows-sockets-socket-notifications.md)합니다.
 
 - `CSocket`
 
-     이 클래스에서 파생 `CAsyncSocket`에 MFC 통해 소켓 작업에 대 한 상위 수준 추상화를 제공 [CArchive](../mfc/reference/carchive-class.md) 개체입니다. 보관을 사용 하 여 소켓을 크게 사용 MFC의 파일 serialization 프로토콜을 사용 하 여 유사 합니다. 이렇게 하면 보다 사용 하기 쉽게 합니다 `CAsyncSocket` 모델입니다. [CSocket](../mfc/reference/csocket-class.md) 에서 많은 멤버 함수를 상속 `CAsyncSocket` Windows Sockets Api를 캡슐화 하는, 이러한 함수 중 일부를 사용 하 고 일반적으로 프로그래밍 하는 소켓을 이해 해야 합니다. 하지만 `CSocket` 원시 API 또는 클래스를 사용 하 여 사용자가 직접 수행 해야 하는 통신의 많은 측면을 관리 `CAsyncSocket`합니다. 가장 중요 한 점은 `CSocket` (백그라운드 처리와 Windows 메시지) 차단을 제공 동기 작업을 하는 데 필수적인 `CArchive`합니다.
+   이 클래스에서 파생 `CAsyncSocket`에 MFC 통해 소켓 작업에 대 한 상위 수준 추상화를 제공 [CArchive](../mfc/reference/carchive-class.md) 개체입니다. 보관을 사용 하 여 소켓을 크게 사용 MFC의 파일 serialization 프로토콜을 사용 하 여 유사 합니다. 이렇게 하면 보다 사용 하기 쉽게 합니다 `CAsyncSocket` 모델입니다. [CSocket](../mfc/reference/csocket-class.md) 에서 많은 멤버 함수를 상속 `CAsyncSocket` Windows Sockets Api를 캡슐화 하는, 이러한 함수 중 일부를 사용 하 고 일반적으로 프로그래밍 하는 소켓을 이해 해야 합니다. 하지만 `CSocket` 원시 API 또는 클래스를 사용 하 여 사용자가 직접 수행 해야 하는 통신의 많은 측면을 관리 `CAsyncSocket`합니다. 가장 중요 한 점은 `CSocket` (백그라운드 처리와 Windows 메시지) 차단을 제공 동기 작업을 하는 데 필수적인 `CArchive`합니다.
 
 만들기 및 사용 `CSocket` 하 고 `CAsyncSocket` 개체에 설명 되어 [Windows 소켓: 소켓과 아카이브 함께 사용 하 여 소켓](../mfc/windows-sockets-using-sockets-with-archives.md) 및 [Windows 소켓: 클래스를 사용 하 여 CAsyncSocket](../mfc/windows-sockets-using-class-casyncsocket.md)합니다.
 

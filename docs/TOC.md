@@ -14,7 +14,6 @@
 # [C++ 표준 라이브러리](standard-library/cpp-standard-library-reference.md)
 # [Windows 개발](windows/overview-of-windows-programming-in-cpp.md)
 # [Linux 개발](linux/download-install-and-setup-the-linux-development-workload.md)
-# [C++/CLI를 사용한 .NET 개발](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 # [Visual C++의 클라우드 및 웹 프로그래밍](cloud/cloud-and-web-programming-in-visual-cpp.md)
 # [병렬 프로그래밍](parallel/parallel-programming-in-visual-cpp.md)
 # [데이터 액세스](data/data-access-in-cpp.md)

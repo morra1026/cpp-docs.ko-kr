@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18d0a15b2fe1d61e1b7ba14d210b428f282bff4d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e2b0c4b137079d90a1f51cb852f6046c676d32b8
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386368"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067932"
 ---
 # <a name="mfc-activex-controls-advanced-topics"></a>MFC ActiveX 컨트롤: 고급 항목
 
@@ -188,7 +188,7 @@ ActiveX 컨트롤에 대 한 키보드 인터페이스를 처리 하는 방법�
 
 - 대화 상자 항목으로 지역 변수 및 하위 클래스를 선언 합니다. 다음과 유사한 코드를 삽입 (`CMyCtrl` 래퍼 클래스인 IDC_MYCTRL1은 컨트롤의 ID):
 
-     [!code-cpp[NVC_MFC_AxCont#19](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_6.cpp)]
+   [!code-cpp[NVC_MFC_AxCont#19](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_6.cpp)]
 
 ## <a name="see-also"></a>참고 항목
 

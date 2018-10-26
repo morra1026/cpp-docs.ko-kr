@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 295749648dd54349c3fa735008ef8c04d51c8e04
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f4c2ad96674058ac57ccdc7cef9537f1cb413b92
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441904"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079703"
 ---
 # <a name="coleobjectfactory-class"></a>COleObjectFactory 클래스
 
@@ -132,7 +132,6 @@ COleObjectFactory(
     BOOL bMultiInstance,
     LPCTSTR lpszProgID);
 
-
 COleObjectFactory(
     REFCLSID clsid,
     CRuntimeClass* pRuntimeClass,
@@ -163,7 +162,7 @@ COleObjectFactory(
 
 - `afxRegFreeThreading` ThreadingModel 레지스트리의 스레딩 모델을 설정 합니다. 무료 =.
 
-     두 플래그를 조합할 수 있습니다 `afxRegApartmentThreading` 및 `afxRegFreeThreading` ThreadingModel 설정 = Both입니다. 참조 [InprocServer32](/windows/desktop/com/inprocserver32) 스레딩 모델 등록 대 한 자세한 내용은 Windows SDK에 있습니다.
+   두 플래그를 조합할 수 있습니다 `afxRegApartmentThreading` 및 `afxRegFreeThreading` ThreadingModel 설정 = Both입니다. 참조 [InprocServer32](/windows/desktop/com/inprocserver32) 스레딩 모델 등록 대 한 자세한 내용은 Windows SDK에 있습니다.
 
 *lpszProgID*<br/>
 "Microsoft Excel입니다."와 같은 구두 프로그램 식별자를 포함 하는 문자열에 대 한 포인터
@@ -349,7 +348,7 @@ virtual BOOL UpdateRegistry(BOOL bRegister);
 
 - **UpdateRegistry (** `bRegister` **)** 함수의이 폼은 재정의할 수 있습니다. 하는 경우 *b 등록 하십시오* 가 TRUE 이면이 함수 레지스터 시스템 레지스트리를 사용 하 여 컨트롤 클래스입니다. 그렇지 않으면 클래스 등록 취소합니다.
 
-     MFC ActiveX 컨트롤을 사용 하 여 프로젝트를 만드는 경우 컨트롤은이 순수 가상 함수 재정의 제공 합니다.
+   MFC ActiveX 컨트롤을 사용 하 여 프로젝트를 만드는 경우 컨트롤은이 순수 가상 함수 재정의 제공 합니다.
 
 ##  <a name="updateregistryall"></a>  등록 됩니다
 

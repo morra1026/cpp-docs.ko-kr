@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6004c3acd052d1424004017941a5e4aa110c602c
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 1bf8d43d9325ff6900cd1c5cd63629ead434acbc
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890338"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055517"
 ---
 # <a name="activex-controls-on-the-internet"></a>인터넷의 ActiveX 컨트롤
 
@@ -67,7 +67,7 @@ ActiveX 컨트롤 인터넷에 제한 되지 않습니다. ActiveX 컨트롤 데
 
 - 작은 블록으로에서 데이터를 다운로드 합니다.
 
-     비트맵 또는 비디오 데이터 같은 큰 스트림을 다운로드 하는 경우 컨테이너를 사용 하 여 공동 작업에 비동기적으로 컨트롤의 데이터에 액세스 합니다. 데이터 검색 될 수 있는 다른 컨트롤을 사용 하 여 공동으로 작업 하는 증분 또는 점진적 동기적으로 데이터를 검색 합니다. 코드는 비동기적으로 다운로드 될 수 있습니다.
+   비트맵 또는 비디오 데이터 같은 큰 스트림을 다운로드 하는 경우 컨테이너를 사용 하 여 공동 작업에 비동기적으로 컨트롤의 데이터에 액세스 합니다. 데이터 검색 될 수 있는 다른 컨트롤을 사용 하 여 공동으로 작업 하는 증분 또는 점진적 동기적으로 데이터를 검색 합니다. 코드는 비동기적으로 다운로드 될 수 있습니다.
 
 - 백그라운드에서 속성과 코드를 다운로드 합니다.
 
@@ -75,15 +75,15 @@ ActiveX 컨트롤 인터넷에 제한 되지 않습니다. ActiveX 컨트롤 데
 
 - 것이 좋습니다 (예: 비트맵 이미지 또는 비디오 데이터) 속성 및 큰 데이터를 Blob 영구 데이터를 저장 하는 방법입니다.
 
-     많은 양의 큰 비트맵 또는 AVI 파일 등의 영구 데이터를 사용 하 여 컨트롤 메서드를 다운로드 하는 데 세심 한 주의 필요 합니다. 문서 또는 페이지를 가능한 한 빨리 표시 됩니다 하 고 사용자 컨트롤은 백그라운드에서 데이터를 검색 하는 동안 페이지와 상호 작용할 수 있도록 수 있습니다.
+   많은 양의 큰 비트맵 또는 AVI 파일 등의 영구 데이터를 사용 하 여 컨트롤 메서드를 다운로드 하는 데 세심 한 주의 필요 합니다. 문서 또는 페이지를 가능한 한 빨리 표시 됩니다 하 고 사용자 컨트롤은 백그라운드에서 데이터를 검색 하는 동안 페이지와 상호 작용할 수 있도록 수 있습니다.
 
 - 코드 크기를 유지 하 고 실행 시간을 효율적으로 루틴을 작성 합니다.
 
-     작은 단추 및 레이블 컨트롤을 몇 바이트만 영구 데이터를 사용 하 여 인터넷 환경 및 브라우저 내 작업에 적합합니다.
+   작은 단추 및 레이블 컨트롤을 몇 바이트만 영구 데이터를 사용 하 여 인터넷 환경 및 브라우저 내 작업에 적합합니다.
 
 - 진행률이 컨테이너에 전달 하는 것이 좋습니다.
 
-     다운로드가 완료 되 면 사용자는 페이지와 상호 작용을 시작할 수 있는 시기 및 포함 하 여 비동기 다운로드를 진행을 컨테이너를 알립니다. 컨테이너 수 진행률 (예: % % 완료) 사용자에 게 표시 합니다.
+   다운로드가 완료 되 면 사용자는 페이지와 상호 작용을 시작할 수 있는 시기 및 포함 하 여 비동기 다운로드를 진행을 컨테이너를 알립니다. 컨테이너 수 진행률 (예: % % 완료) 사용자에 게 표시 합니다.
 
 - 클라이언트 컴퓨터에 컨트롤을 등록 하는 방법을 고려해 야 합니다.
 
@@ -99,7 +99,7 @@ ActiveX 컨트롤 인터넷에 제한 되지 않습니다. ActiveX 컨트롤 데
 
 1. 에 **제어 설정을** 페이지에서 **속성을 비동기적으로 로드**합니다. 이 옵션을 선택 하면에 대 한 준비 상태 속성 및 준비 상태 변경 이벤트를 설정 합니다.
 
-     다른 최적화와 같은 선택할 수도 있습니다 **창 없는 활성화**에 설명 되어 있습니다 [ActiveX 컨트롤: 최적화](../mfc/mfc-activex-controls-optimization.md)합니다.
+   다른 최적화와 같은 선택할 수도 있습니다 **창 없는 활성화**에 설명 되어 있습니다 [ActiveX 컨트롤: 최적화](../mfc/mfc-activex-controls-optimization.md)합니다.
 
 1. 선택할 **완료** 프로젝트를 만듭니다.
 
@@ -111,15 +111,15 @@ ActiveX 컨트롤 인터넷에 제한 되지 않습니다. ActiveX 컨트롤 데
 
 1. 이 클래스에서 재정의 `OnDataAvailable`합니다. 이 함수는 데이터 표시를 위해 가능할 때마다 호출 됩니다. 데이터를 사용할 수 있게 되 면 선택 된 모든 방식, 예를 들어 점진적으로 렌더링 하 여 처리할 수 있습니다.
 
-     다음 코드 부분은 점진적으로 편집 컨트롤에 데이터를 표시 하는 간단한 예입니다. 사용 하 여 플래그 **BSCF_FIRSTDATANOTIFICATION** 편집 컨트롤의 선택을 취소 합니다.
+   다음 코드 부분은 점진적으로 편집 컨트롤에 데이터를 표시 하는 간단한 예입니다. 사용 하 여 플래그 **BSCF_FIRSTDATANOTIFICATION** 편집 컨트롤의 선택을 취소 합니다.
 
-     [!code-cpp[NVC_MFCActiveXControl#1](../mfc/codesnippet/cpp/activex-controls-on-the-internet_1.cpp)]
+   [!code-cpp[NVC_MFCActiveXControl#1](../mfc/codesnippet/cpp/activex-controls-on-the-internet_1.cpp)]
 
-     AFXCMN 포함 해야 하는 참고 합니다. H를 사용 하 여 `CListCtrl` 클래스입니다.
+   AFXCMN 포함 해야 하는 참고 합니다. H를 사용 하 여 `CListCtrl` 클래스입니다.
 
 1. 컨트롤의 전체 상태 변경 (예를 들어 로드를 초기화 또는 사용자의 대화형)을 호출 `COleControl::InternalSetReadyState`합니다. 컨트롤에 하나의 데이터 요소만 경로 속성을 하는 경우에 코드를 추가할 수 있습니다 **BSCF_LASTDATANOTIFICATION** 다운로드가 완료 되는 컨테이너를 알립니다. 예를 들어:
 
-     [!code-cpp[NVC_MFCActiveXControl#2](../mfc/codesnippet/cpp/activex-controls-on-the-internet_2.cpp)]
+   [!code-cpp[NVC_MFCActiveXControl#2](../mfc/codesnippet/cpp/activex-controls-on-the-internet_2.cpp)]
 
 1. `OnProgress`을 재정의합니다. `OnProgress`, 최대 범위를 표시 하는 숫자를 전달 하 고 현재 다운로드의 진행 정도 숫자 표시 됩니다. 사용자에 게 완료율와 같은 상태를 표시 하려면이 숫자를 사용할 수 있습니다.
 
@@ -135,19 +135,19 @@ ActiveX 컨트롤 인터넷에 제한 되지 않습니다. ActiveX 컨트롤 데
 
 1. 멤버 변수 선언에 `CDataPathProperty`-ActiveX 컨트롤 클래스를 파생 클래스입니다.
 
-     [!code-cpp[NVC_MFCActiveXControl#3](../mfc/codesnippet/cpp/activex-controls-on-the-internet_3.h)]
+   [!code-cpp[NVC_MFCActiveXControl#3](../mfc/codesnippet/cpp/activex-controls-on-the-internet_3.h)]
 
 1. `Get/Set` 메서드를 구현합니다. 에 대 한 `Get`, 문자열을 반환 합니다. 에 대 한 `Set`, 속성 및 호출 로드 `SetModifiedFlag`합니다.
 
-     [!code-cpp[NVC_MFCActiveXControl#4](../mfc/codesnippet/cpp/activex-controls-on-the-internet_4.cpp)]
+   [!code-cpp[NVC_MFCActiveXControl#4](../mfc/codesnippet/cpp/activex-controls-on-the-internet_4.cpp)]
 
 1. [DoPropExchange](../mfc/reference/colecontrol-class.md#dopropexchange), 다음 줄을 추가 합니다.
 
-     [!code-cpp[NVC_MFCActiveXControl#5](../mfc/codesnippet/cpp/activex-controls-on-the-internet_5.cpp)]
+   [!code-cpp[NVC_MFCActiveXControl#5](../mfc/codesnippet/cpp/activex-controls-on-the-internet_5.cpp)]
 
 1. 재정의 [ResetData](../mfc/reference/cdatapathproperty-class.md#resetdata) 이 줄을 추가 하 여 해당 컨트롤을 다시 설정할 속성에 알리기 위해:
 
-     [!code-cpp[NVC_MFCActiveXControl#6](../mfc/codesnippet/cpp/activex-controls-on-the-internet_6.cpp)]
+   [!code-cpp[NVC_MFCActiveXControl#6](../mfc/codesnippet/cpp/activex-controls-on-the-internet_6.cpp)]
 
 ## <a name="deciding-whether-to-derive-from-cdatapathproperty-or-ccacheddatapathproperty"></a>CDataPathProperty 또는 CCachedDataPathProperty 파생 여부 결정
 
@@ -200,8 +200,6 @@ OLE 컨트롤 4.2 이전 버전의 Visual c + +를 사용 하 여 생성 된 경
 [!code-cpp[NVC_MFCActiveXControl#8](../mfc/codesnippet/cpp/activex-controls-on-the-internet_8.cpp)]
 
 코드를 호출 하 여 다운로드는 준비 상태가 업데이트 됩니다 [COleControl::InternalSetReadyState](../mfc/reference/colecontrol-class.md#internalsetreadystate)합니다. 곳에 호출할 수 있습니다 `InternalSetReadyState` 에서는 `OnProgress` 재정의 `CDataPathProperty`-클래스를 파생 합니다.
-
-
 
 ## <a name="see-also"></a>참고 항목
 

@@ -76,12 +76,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be2676609cae4de6b2f3995be1bc9311f88e0a84
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a10e1f6adb1fc9274a2a59215564fb60984ea661
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408716"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50074490"
 ---
 # <a name="cdaoquerydef-class"></a>CDaoQueryDef 클래스
 
@@ -235,7 +235,7 @@ BOOL CanUpdate();
 
 - 데이터베이스에 대 한 권한을 업데이트 해야합니다.
 
-     이 보안 기능 구현 했는지에 따라 달라 집니다. MFC 보안;에 대 한 지원을 제공 하지 않습니다. 구현 해야이 직접 직접 DAO 호출 또는 Microsoft Access를 사용 하 여. DAO 도움말의 "권한 속성" 항목을 참조 하세요.
+   이 보안 기능 구현 했는지에 따라 달라 집니다. MFC 보안;에 대 한 지원을 제공 하지 않습니다. 구현 해야이 직접 직접 DAO 호출 또는 Microsoft Access를 사용 하 여. DAO 도움말의 "권한 속성" 항목을 참조 하세요.
 
 ##  <a name="cdaoquerydef"></a>  CDaoQueryDef::CDaoQueryDef
 
@@ -426,7 +426,6 @@ void GetFieldInfo(
     CDaoFieldInfo& fieldinfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
 
-
 void GetFieldInfo(
     LPCTSTR lpszName,
     CDaoFieldInfo& fieldinfo,
@@ -519,7 +518,6 @@ void GetParameterInfo(
     int nIndex,
     CDaoParameterInfo& paraminfo,
     DWORD dwInfoOptions = AFX_DAO_PRIMARY_INFO);
-
 
 void GetParameterInfo(
     LPCTSTR lpszName,
@@ -790,7 +788,6 @@ void SetODBCTimeout(short nODBCTimeout);
 virtual void SetParamValue(
     LPCTSTR lpszName,
     const COleVariant& varValue);
-
 
 virtual void SetParamValue(
     int nIndex,

@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d5e735a78f35ac799678b077b7933c6134d568e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4833c10772afd7cfd167171821e13a000a611f15
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386190"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083037"
 ---
 # <a name="mfc-macros-and-globals"></a>MFC 매크로 및 전역
 
@@ -75,7 +75,6 @@ MFC 매크로 및 전역 다음 범주에는 기능을 제공합니다.
 - [ToolBar 컨트롤 스타일](toolbar-control-styles.md)
 
 - [CMFCImagePaintArea::IMAGE_EDIT_MODE 열거형](cmfcimagepaintarea-image-edit-mode-enumeration.md)
-
 
 ## <a name="database"></a>데이터베이스
 
@@ -139,6 +138,4 @@ MFC는 호출 된 함수를 제공 하는 또한 [AfxEnableControlContainer](ole
 ## <a name="see-also"></a>참고 항목
 
 [클래스 개요](../../mfc/class-library-overview.md)
-
-
 

@@ -46,128 +46,128 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: fb27c7fc401fb27b3677659f4f1b5539c19fda2c
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: d5ceb07577386f4b3fc9389cf9103fba4036b591
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082698"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076792"
 ---
 # <a name="csimplerow-class"></a>CSimpleRow 클래스
 
-사용 되는 행 핸들에 대 한 기본 구현을 제공 합니다 [IRowsetImpl](../../data/oledb/irowsetimpl-class.md) 클래스입니다.  
-  
+사용 되는 행 핸들에 대 한 기본 구현을 제공 합니다 [IRowsetImpl](../../data/oledb/irowsetimpl-class.md) 클래스입니다.
+
 ## <a name="syntax"></a>구문
 
 ```cpp
-class CSimpleRow  
-```  
+class CSimpleRow
+```
 
-## <a name="requirements"></a>요구 사항  
+## <a name="requirements"></a>요구 사항
 
-**헤더:** atldb.h  
+**헤더:** atldb.h
 
-## <a name="members"></a>멤버  
-  
-### <a name="methods"></a>메서드  
-  
-|||  
-|-|-|  
-|[AddRefRow](#addrefrow)|기존 행 핸들에 대 한 참조 횟수를 추가합니다.|  
-|[Compare](#compare)|동일한 행 인스턴스를 참조 하는지에 두 개의 행을 비교 합니다.|  
-|[CSimpleRow](#csimplerow)|생성자입니다.|  
-|[ReleaseRow](#releaserow)|행을 해제합니다.|  
-  
-### <a name="data-members"></a>데이터 멤버  
-  
-|||  
-|-|-|  
-|[m_dwRef](#dwref)|기존 행 핸들에 대 한 참조 수입니다.|  
-|[m_iRowset](#irowset)|커서를 나타내는 행 집합에는 인덱스입니다.|  
-  
-## <a name="remarks"></a>설명  
+## <a name="members"></a>멤버
 
-행 핸들은 논리적으로 결과 행에 대 한 고유 태그입니다. `IRowsetImpl` 새로 만듭니다 `CSimpleRow` 에서 요청 된 모든 행에 대 한 [irowsetimpl:: Getnextrows](../../data/oledb/irowsetimpl-getnextrows.md)합니다. `CSimpleRow` 기본 템플릿 인수를 그대로의 행 핸들을 사용자 고유의 구현으로 대체할 수 있습니다 `IRowsetImpl`합니다. 이 클래스를 대체 한 유일한 요구 사항은 형식의 단일 매개 변수를 받아들이는 생성자를 제공 하는 대체 클래스는 **긴**합니다.  
+### <a name="methods"></a>메서드
+
+|||
+|-|-|
+|[AddRefRow](#addrefrow)|기존 행 핸들에 대 한 참조 횟수를 추가합니다.|
+|[Compare](#compare)|동일한 행 인스턴스를 참조 하는지에 두 개의 행을 비교 합니다.|
+|[CSimpleRow](#csimplerow)|생성자입니다.|
+|[ReleaseRow](#releaserow)|행을 해제합니다.|
+
+### <a name="data-members"></a>데이터 멤버
+
+|||
+|-|-|
+|[m_dwRef](#dwref)|기존 행 핸들에 대 한 참조 수입니다.|
+|[m_iRowset](#irowset)|커서를 나타내는 행 집합에는 인덱스입니다.|
+
+## <a name="remarks"></a>설명
+
+행 핸들은 논리적으로 결과 행에 대 한 고유 태그입니다. `IRowsetImpl` 새로 만듭니다 `CSimpleRow` 에서 요청 된 모든 행에 대 한 [irowsetimpl:: Getnextrows](../../data/oledb/irowsetimpl-getnextrows.md)합니다. `CSimpleRow` 기본 템플릿 인수를 그대로의 행 핸들을 사용자 고유의 구현으로 대체할 수 있습니다 `IRowsetImpl`합니다. 이 클래스를 대체 한 유일한 요구 사항은 형식의 단일 매개 변수를 받아들이는 생성자를 제공 하는 대체 클래스는 **긴**합니다.
 
 ## <a name="addrefrow"></a> Csimplerow:: Addrefrow
 
-스레드로부터 안전한 방식으로 기존 행 핸들에 대 한 참조 횟수를 추가합니다.  
-  
-### <a name="syntax"></a>구문  
-  
+스레드로부터 안전한 방식으로 기존 행 핸들에 대 한 참조 횟수를 추가합니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-DWORD AddRefRow();  
-```  
+DWORD AddRefRow();
+```
 
 ## <a name="compare"></a> Csimplerow:: Compare
 
-동일한 행 인스턴스를 참조 하는지에 두 개의 행을 비교 합니다.  
-  
-### <a name="syntax"></a>구문  
-  
+동일한 행 인스턴스를 참조 하는지에 두 개의 행을 비교 합니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-HRESULT Compare(CSimpleRow* pRow);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+HRESULT Compare(CSimpleRow* pRow);
+```
+
+#### <a name="parameters"></a>매개 변수
 
 *pRow*<br/>
-`CSimpleRow` 개체에 대한 포인터입니다.  
-  
-### <a name="return-value"></a>반환 값  
+`CSimpleRow` 개체에 대한 포인터입니다.
 
-일반적으로 S_OK HRESULT 값을 두 행이 동일한 행 인스턴스를 나타내거나 S_FALSE를 두 개 행을 나타내는 다릅니다. 참조 [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629) 에 *OLE DB Programmer's Reference* 다른 가능한 반환 값입니다. 
+### <a name="return-value"></a>반환 값
+
+일반적으로 S_OK HRESULT 값을 두 행이 동일한 행 인스턴스를 나타내거나 S_FALSE를 두 개 행을 나타내는 다릅니다. 참조 [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629) 에 *OLE DB Programmer's Reference* 다른 가능한 반환 값입니다.
 
 ## <a name="csimplerow"></a> Csimplerow:: Csimplerow
 
-생성자입니다.  
-  
-### <a name="syntax"></a>구문  
-  
+생성자입니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-CSimpleRow(DBCOUNTITEM iRowsetCur);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+CSimpleRow(DBCOUNTITEM iRowsetCur);
+```
+
+#### <a name="parameters"></a>매개 변수
 
 *iRowsetCur*<br/>
-[in] 현재 행 집합에 인덱스입니다.  
-  
-### <a name="remarks"></a>설명  
+[in] 현재 행 집합에 인덱스입니다.
 
-집합 [m_iRowset](../../data/oledb/csimplerow-m-irowset.md) 하 *iRowsetCur*합니다. 
+### <a name="remarks"></a>설명
+
+집합 [m_iRowset](../../data/oledb/csimplerow-m-irowset.md) 하 *iRowsetCur*합니다.
 
 ## <a name="releaserow"></a> Csimplerow:: Releaserow
 
-스레드로부터 안전한 방식으로 행을 해제합니다.  
-  
-### <a name="syntax"></a>구문  
-  
+스레드로부터 안전한 방식으로 행을 해제합니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-DWORD ReleaseRow();  
-```  
+DWORD ReleaseRow();
+```
 
 ## <a name="dwref"></a> Csimplerow:: M_dwref
 
-기존 행 핸들에 대 한 참조 수입니다.  
-  
-### <a name="syntax"></a>구문  
-  
+기존 행 핸들에 대 한 참조 수입니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-DWORD m_dwRef;  
-```  
+DWORD m_dwRef;
+```
 
 ## <a name="irowset"></a> Csimplerow:: M_irowset
 
-커서를 나타내는 행 집합에 인덱스입니다.  
-  
-### <a name="syntax"></a>구문  
-  
+커서를 나타내는 행 집합에 인덱스입니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-KeyType m_iRowset;  
-```  
-  
-## <a name="see-also"></a>참고 항목  
+KeyType m_iRowset;
+```
+
+## <a name="see-also"></a>참고 항목
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

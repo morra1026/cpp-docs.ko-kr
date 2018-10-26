@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9aa7775f0da26846851677aa267b91438ce84dbf
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2eb61c47b4366dd1ece4060937fa15fcab43fc3d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46117961"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070948"
 ---
 # <a name="compiler-error-c3206"></a>컴파일러 오류 C3206
 
@@ -93,7 +93,6 @@ int main() {
    gf<GS<int> >();
 }
 ```
-
 
 클래스 템플릿은 템플릿 형식 인수로 허용되지 않습니다. 다음 샘플 C3206을 발생 시킵니다.
 

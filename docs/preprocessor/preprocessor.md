@@ -14,39 +14,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b693d83872ca1c918c97e47f75c89f788748353c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 74cf3ff56f37375cd8f267e3541b78e2d76a18fa
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375905"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083310"
 ---
 # <a name="preprocessor"></a>전처리기
-전처리기는 첫 번째 변환 단계의 일부로 소스 파일의 텍스트를 조작하는 텍스트 처리기입니다. 전처리기는 소스 텍스트를 구문 분석하지 않지만 매크로 호출을 찾기 위해 소스 텍스트를 토큰으로 나눕니다. 컴파일러는 일반적으로 첫 번째 단계에서 전처리기를 호출하지만, 컴파일 없이 텍스트를 처리하기 위해 전처리기를 별도로 호출할 수도 있습니다.  
-  
-전처리기에 대한 참조 자료에는 다음 단원이 포함되어 있습니다.  
-  
-- [전처리기 지시문](../preprocessor/preprocessor-directives.md)  
-  
-- [전처리기 연산자](../preprocessor/preprocessor-operators.md)  
-  
-- [미리 정의 된 매크로](../preprocessor/predefined-macros.md)  
-  
-- [pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md)  
-  
-**Microsoft 전용**  
-  
-사용 하 여 전처리 후 소스 코드의 목록을 가져올 수 있습니다 합니다 [/E](../build/reference/e-preprocess-to-stdout.md) 하거나 [/EP](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) 컴파일러 옵션입니다. 두 옵션 모두 전처리기를 호출하고 결과 텍스트를 표준 출력 장치(대부분의 경우 콘솔)에 출력합니다. 두 옵션의 차이점은 /E는 `#line` 지시문을 포함하고 /EP는 이러한 지시문을 제거한다는 점입니다.  
-  
-**Microsoft 전용 종료**  
-  
-##  <a name="_predir_special_terminology"></a> 특수 용어  
+전처리기는 첫 번째 변환 단계의 일부로 소스 파일의 텍스트를 조작하는 텍스트 처리기입니다. 전처리기는 소스 텍스트를 구문 분석하지 않지만 매크로 호출을 찾기 위해 소스 텍스트를 토큰으로 나눕니다. 컴파일러는 일반적으로 첫 번째 단계에서 전처리기를 호출하지만, 컴파일 없이 텍스트를 처리하기 위해 전처리기를 별도로 호출할 수도 있습니다.
 
-전처리기 설명서에서 "인수"라는 용어는 함수에 전달되는 엔터티를 나타냅니다. 경우에 따라 함수 호출에서 지정된 인수 식과 함수 정의에서 지정된 인수 선언을 각각 나타내는 "실제" 또는 "형식"이라는 수식어가 인수에 붙습니다.  
-  
-"변수"라는 용어는 간단한 C 형식 데이터 개체를 나타냅니다. "개체"라는 용어는 C++ 개체 및 변수를 둘 다 나타내는 포괄적인 용어입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- 
+전처리기에 대한 참조 자료에는 다음 단원이 포함되어 있습니다.
+
+- [전처리기 지시문](../preprocessor/preprocessor-directives.md)
+
+- [전처리기 연산자](../preprocessor/preprocessor-operators.md)
+
+- [미리 정의 된 매크로](../preprocessor/predefined-macros.md)
+
+- [pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+
+**Microsoft 전용**
+
+사용 하 여 전처리 후 소스 코드의 목록을 가져올 수 있습니다 합니다 [/E](../build/reference/e-preprocess-to-stdout.md) 하거나 [/EP](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) 컴파일러 옵션입니다. 두 옵션 모두 전처리기를 호출하고 결과 텍스트를 표준 출력 장치(대부분의 경우 콘솔)에 출력합니다. 두 옵션의 차이점은 /E는 `#line` 지시문을 포함하고 /EP는 이러한 지시문을 제거한다는 점입니다.
+
+**Microsoft 전용 종료**
+
+##  <a name="_predir_special_terminology"></a> 특수 용어
+
+전처리기 설명서에서 "인수"라는 용어는 함수에 전달되는 엔터티를 나타냅니다. 경우에 따라 함수 호출에서 지정된 인수 식과 함수 정의에서 지정된 인수 선언을 각각 나타내는 "실제" 또는 "형식"이라는 수식어가 인수에 붙습니다.
+
+"변수"라는 용어는 간단한 C 형식 데이터 개체를 나타냅니다. "개체"라는 용어는 C++ 개체 및 변수를 둘 다 나타내는 포괄적인 용어입니다.
+
+## <a name="see-also"></a>참고 항목
+
 [ 전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
 [변환 단계](../preprocessor/phases-of-translation.md)

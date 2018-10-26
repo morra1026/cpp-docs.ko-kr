@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39329f4895060ff950f36c3d10dd5e4020f3b98a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b4490eef3427f66456ec79ae2f5429d309a82a54
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448430"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057403"
 ---
 # <a name="coledatetime-class"></a>COleDateTime 클래스
 
@@ -165,7 +165,7 @@ bool operator>=(const COleDateTime& date) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*날짜*  
+*날짜*<br/>
 비교할 `COleDateTime` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -210,31 +210,31 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dateSrc*  
+*dateSrc*<br/>
 기존 `COleDateTime` 복사할 새 개체 `COleDateTime` 개체입니다.
 
-*varSrc*  
+*varSrc*<br/>
 기존 `VARIANT` 데이터 구조 (가능한 경우는 `COleVariant` 개체) 날짜/시간 값 (VT_DATE)으로 변환 되어 새 복사할 `COleDateTime` 개체입니다.
 
-*dtSrc*  
+*dtSrc*<br/>
 날짜/시간 (`DATE`)를 새 복사할 값 `COleDateTime` 개체입니다.
 
-*timeSrc*  
+*timeSrc*<br/>
 A `time_t` 하거나 `__time64_t` 값을 날짜/시간 값으로 변환 하 고 새 복사 `COleDateTime` 개체입니다.
 
-*systimeSrc*  
+*systimeSrc*<br/>
 A `SYSTEMTIME` 날짜/시간 값으로 변환 되어 새 복사 구조 `COleDateTime` 개체입니다.
 
-*filetimeSrc*  
+*filetimeSrc*<br/>
 A `FILETIME` 날짜/시간 값으로 변환 되어 새 복사 구조 `COleDateTime` 개체입니다. `FILETIME` 협정 세계시 (UTC)를 사용 하 여 될 수 있으므로 구조의 현지 시간을 전달 하는 경우 결과 올바른 합니다. 참조 [파일 시간](/windows/desktop/SysInfo/file-times) 자세한 내용은 Windows SDK에 있습니다.
 
-*nYear*, *nMonth*합니다 *발생 한 날짜*를 *n 시간*를 *nMin*, *nSec*  
+*nYear*, *nMonth*합니다 *발생 한 날짜*를 *n 시간*를 *nMin*, *nSec*<br/>
 복사할 새 날짜 및 시간 값을 나타내며 `COleDateTime` 개체입니다.
 
-*wDosDate*, *wDosTime*  
+*wDosDate*, *wDosTime*<br/>
 MS-DOS 날짜 및 시간 값을 날짜/시간 값으로 변환 되어 새 복사 `COleDateTime` 개체입니다.
 
-*dbts*  
+*dbts*<br/>
 에 대 한 참조를 [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) 현재 현지 시간을 포함 하는 구조체.
 
 ### <a name="remarks"></a>설명
@@ -297,7 +297,7 @@ CString Format(UINT nFormatID) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*dwFlags*  
+*dwFlags*<br/>
 로캘 플래그 중 하나를 나타냅니다.
 
 - LOCALE_NOUSEROVERRIDE는 사용자 지정 사용자 설정 대신 시스템 기본 로캘 설정을 사용 합니다.
@@ -306,10 +306,10 @@ CString Format(UINT nFormatID) const;
 
 - VAR_DATEVALUEONLY 구문 분석 하는 동안 시간 부분을 무시 합니다.
 
-*lcid*  
+*lcid*<br/>
 변환에 사용할 로캘 ID를 나타냅니다. 언어 식별자에 대 한 자세한 내용은 참조 하세요. [언어 식별자](/windows/desktop/Intl/language-identifiers)합니다.
 
-*lpszFormat*  
+*lpszFormat*<br/>
 유사한 문자열 서식의 `printf` 문자열 서식을 지정 합니다. 각 서식 코드를 앞에 백분율 ( `%`)에 서명, 해당 바뀝니다 `COleDateTime` 구성 요소입니다. 반환된 된 문자열에 형식 문자열에 다른 문자 변경 되지 않고 복사 됩니다. 런타임 함수를 참조 하세요 [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) 자세한 내용은 합니다. 값 및 서식 지정 코드의 의미를 `Format` 됩니다.
 
 - `%H` 현재 날짜 시간
@@ -320,7 +320,7 @@ CString Format(UINT nFormatID) const;
 
 - `%%` 백분율 기호
 
-*nFormatID*  
+*nFormatID*<br/>
 형식 컨트롤 문자열에 대 한 리소스 ID입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -333,13 +333,13 @@ CString Format(UINT nFormatID) const;
 
 이 함수에 대 한 세 가지 형식에 대 한 간단한 설명은 다음과 같습니다.
 
-`Format`( *dwFlags*하십시오 *lcid*)  
+`Format`( *dwFlags*하십시오 *lcid*)<br/>
 이 양식을 언어 사양 (로캘 Id)를 사용 하 여 날짜 및 시간에 대 한 값의 형식을 지정 합니다. 기본 매개 변수를 사용 하 여이 폼 인쇄 됩니다 날짜 및 시간을 아니면 시간 부분은 0 (자정),이 경우 날짜만, 인쇄, 날짜 부분은 0 (30 1899 년 12 월)의 경우에 출력 됩니다. 날짜 및 시간 값을 0 (30 1899 년 12 월 자정) 인 경우 기본 매개 변수를 사용 하 여이 양식을 자정을 인쇄 됩니다.
 
-`Format`( *lpszFormat*)  
+`Format`( *lpszFormat*)<br/>
 이 폼에서와 같이 백분율 기호 (%) 뒤에 나오는 특별 한 서식 지정 코드를 포함 하는 형식 문자열을 사용 하 여 값 형식을 `printf`합니다. 서식 문자열은 함수에 매개 변수로 전달 됩니다. 서식 지정 코드에 대 한 자세한 내용은 참조 하세요. [strftime, wcsftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) 런타임 라이브러리 참조에서 합니다.
 
-`Format`( *nFormatID*)  
+`Format`( *nFormatID*)<br/>
 이 폼에서와 같이 백분율 기호 (%) 뒤에 나오는 특별 한 서식 지정 코드를 포함 하는 형식 문자열을 사용 하 여 값 형식을 `printf`합니다. 서식 문자열 리소스입니다. 이 문자열 리소스의 ID 매개 변수로 전달 됩니다. 서식 지정 코드에 대 한 자세한 내용은 참조 하세요. [strftime, wcsftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) 에 *런타임 라이브러리 참조*합니다.
 
 ### <a name="example"></a>예제
@@ -356,7 +356,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dbts*  
+*dbts*<br/>
 에 대 한 참조를 [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -381,7 +381,7 @@ bool GetAsSystemTime(SYSTEMTIME& sysTime) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*sysTime*  
+*sysTime*<br/>
 에 대 한 참조를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 에서 변환 된 날짜/시간 값을 받는 구조체는 `COleDateTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -404,7 +404,7 @@ bool GetAsUDATE(UDATE& udate) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*udate*  
+*udate*<br/>
 에 대 한 참조를 `UDATE` 에서 변환 된 날짜/시간 값을 받는 구조체는 `COleDateTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -701,13 +701,13 @@ DateTimeStatus GetStatus() const throw();
 반환 값으로 정의 됩니다는 `DateTimeStatus` 내에 정의 된 형식 열거는 `COleDateTime` 클래스.
 
 ```
-enum DateTimeStatus  
-{  
-   error = -1,  
-   valid = 0,  
-   invalid = 1,    // Invalid date (out of range, etc.)  
-   null = 2,       // Literally has no value  
-};  
+enum DateTimeStatus
+{
+   error = -1,
+   valid = 0,
+   invalid = 1,    // Invalid date (out of range, etc.)
+   null = 2,       // Literally has no value
+};
 ```
 
 이러한 상태 값의 간략 한 설명을 다음 목록을 참조 합니다.
@@ -930,18 +930,18 @@ operator DATE() const throw();
 날짜/시간 값을 읽을 문자열을 구문 분석 합니다.
 
 ```
-bool ParseDateTime(  
-LPCTSTR lpszDate,
-DWORD dwFlags = 0,
-LCID lcid = LANG_USER_DEFAULT) throw();
+bool ParseDateTime(
+    LPCTSTR lpszDate,
+    DWORD dwFlags = 0,
+    LCID lcid = LANG_USER_DEFAULT) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszDate*  
+*lpszDate*<br/>
 구문 분석 하는 null로 끝나는 문자열에 대 한 포인터입니다. 자세한 내용은 설명을 참조하세요.
 
-*dwFlags*  
+*dwFlags*<br/>
 로캘 설정 및 구문 분석에 대 한 플래그를 나타냅니다. 하나 이상의 플래그:
 
 - LOCALE_NOUSEROVERRIDE는 사용자 지정 사용자 설정 대신 시스템 기본 로캘 설정을 사용 합니다.
@@ -950,7 +950,7 @@ LCID lcid = LANG_USER_DEFAULT) throw();
 
 - VAR_DATEVALUEONLY 구문 분석 하는 동안 시간 부분을 무시 합니다.
 
-*lcid*  
+*lcid*<br/>
 변환에 사용할 로캘 ID를 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
@@ -991,15 +991,15 @@ VAR_DATEVALUEONLY의 경우 시간 값은 0 또는 자정 시간으로 설정 �
 이 날짜 설정 `COleDateTime` 개체입니다.
 
 ```
-int SetDate(  
-int nYear,
-int nMonth,
-int nDay) throw();
+int SetDate(
+    int nYear,
+    int nMonth,
+    int nDay) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*nYear*하십시오 *nMonth*, *발생 한 날짜*  
+*nYear*하십시오 *nMonth*, *발생 한 날짜*<br/>
 이에 복사할 날짜 구성 요소를 나타내는 `COleDateTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1062,18 +1062,18 @@ int nDay) throw();
 이의 시간과 날짜를 설정 `COleDateTime` 개체입니다.
 
 ```
-int SetDateTime(  
-int nYear,
-int nMonth,
-int nDay,
-int nHour,
-int nMin,
-int nSec) throw();
+int SetDateTime(
+    int nYear,
+    int nMonth,
+    int nDay,
+    int nHour,
+    int nMin,
+    int nSec) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*nYear*, *nMonth*합니다 *발생 한 날짜*를 *n 시간*를 *nMin*, *nSec*  
+*nYear*, *nMonth*합니다 *발생 한 날짜*를 *n 시간*를 *nMin*, *nSec*<br/>
 이에 복사 될 날짜 및 시간 구성 요소를 나타내는 `COleDateTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1151,7 +1151,7 @@ void SetStatus(DateTimeStatus status) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*status*  
+*status*<br/>
 이 대 한 새 상태 값을 `COleDateTime` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -1170,15 +1170,15 @@ void SetStatus(DateTimeStatus status) throw();
 이 시간을 설정 `COleDateTime` 개체입니다.
 
 ```
-int SetTime(  
-int nHour,
-int nMin,
-int nSec) throw();
+int SetTime(
+    int nHour,
+    int nMin,
+    int nSec) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*n 시간*하십시오 *nMin*, *nSec*  
+*n 시간*하십시오 *nMin*, *nSec*<br/>
 이에 복사 될 시간 구성 요소를 나타내는 `COleDateTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값

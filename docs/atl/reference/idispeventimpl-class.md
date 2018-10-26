@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 815a276cb07a91da73acb68a32cceef4b2138325
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 2419b4da0cad2662a246c167938d673429afbf26
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46093848"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060900"
 ---
 # <a name="idispeventimpl-class"></a>IDispEventImpl 클래스
 
@@ -44,7 +44,7 @@ template <UINT nID, class T,
     const IID* pdiid = &IID_NULL,
     const GUID* plibid = &GUID_NULL,
     WORD wMajor = 0,
-    WORD wMinor = 0, 
+    WORD wMinor = 0,
     class tihclass = CcomTypeInfoHolder>
 class ATL_NO_VTABLE IDispEventImpl : public IDispEventSimpleImpl<nID, T, pdiid>
 ```
@@ -102,7 +102,7 @@ class ATL_NO_VTABLE IDispEventImpl : public IDispEventSimpleImpl<nID, T, pdiid>
 
 `IDispEventImpl` 적절 한 처리기 함수에 이벤트를 라우팅하도록 클래스에서 이벤트 싱크 맵과 함께 작동합니다. 이 클래스를 사용 합니다.
 
-추가 된 [SINK_ENTRY](composite-control-macros.md#sink_entry) 또는 [SINK_ENTRY_EX](composite-control-macros.md#sink_entry_ex) 처리 하려는 각 개체의 각 이벤트에 대 한 이벤트 싱크 맵 매크로입니다. 사용 하는 경우 `IDispEventImpl` 복합 컨트롤의 기본 클래스를 호출할 수 있습니다 [AtlAdviseSinkMap](connection-point-global-functions.md#atladvisesinkmap) 설정 하 고 모든 항목이 맵에 싱크 이벤트에 대 한 이벤트 소스를 사용 하 여 연결을 해제 합니다. 다른 경우 또는 큰 컨트롤에 대 한 호출 [DispEventAdvise](idispeventsimpleimpl-class.md#dispeventadvise) 소스 개체와 기본 클래스 간의 연결을 설정 합니다. 호출 [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise) 연결을 끊습니다.  
+추가 된 [SINK_ENTRY](composite-control-macros.md#sink_entry) 또는 [SINK_ENTRY_EX](composite-control-macros.md#sink_entry_ex) 처리 하려는 각 개체의 각 이벤트에 대 한 이벤트 싱크 맵 매크로입니다. 사용 하는 경우 `IDispEventImpl` 복합 컨트롤의 기본 클래스를 호출할 수 있습니다 [AtlAdviseSinkMap](connection-point-global-functions.md#atladvisesinkmap) 설정 하 고 모든 항목이 맵에 싱크 이벤트에 대 한 이벤트 소스를 사용 하 여 연결을 해제 합니다. 다른 경우 또는 큰 컨트롤에 대 한 호출 [DispEventAdvise](idispeventsimpleimpl-class.md#dispeventadvise) 소스 개체와 기본 클래스 간의 연결을 설정 합니다. 호출 [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise) 연결을 끊습니다.
 
 파생 되어야 합니다 `IDispEventImpl` (에 대 한 고유한 값을 사용 하 여 *nID*) 이벤트를 처리 해야 하는 각 개체에 대 한 합니다. 그런 다음 다양 한 원본 개체에 대해 조언 하는 원본 개체에 대해 바이 하 여 기본 클래스를 재사용할 수 있습니다 하지만 한 번에 단일 개체로 처리 될 수 있는 원본 개체의 최대 수로 제한 됩니다 `IDispEventImpl` 기본 클래스입니다.
 

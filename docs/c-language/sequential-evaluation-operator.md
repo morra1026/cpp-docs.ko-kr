@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a285cc87ec4182586663afcb3559101167ae7261
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0cee62bdf19e6ba3196e0336cb29a7c7606775b5
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46095575"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808292"
 ---
 # <a name="sequential-evaluation-operator"></a>순차적 확인 연산자
 
@@ -29,9 +29,9 @@ ms.locfileid: "46095575"
 
 ## <a name="syntax"></a>구문
 
-*expression*: *assignment-expression*
-
-*expression*  **,**  *assignment-expression*
+*expression*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*assignment-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*expression* **,** *assignment-expression*
 
 순차 계산 연산자의 왼쪽 피연산자는 `void` 식으로 계산됩니다. 연산 결과의 값 및 형식은 오른쪽 피연산자와 같습니다. 각 피연산자는 어떤 형식이든 될 수 있습니다. 순차 계산 연산자는 해당 피연산자 간에 형식 변환을 수행하지 않으며 l-value를 생성하지 않습니다. 첫째 피연산자 다음에 시퀀스 위치가 있는데, 이것은 왼쪽 피연산자의 계산으로 인해 발생한 의도하지 않은 모든 결과가 오른쪽 피연산자의 계산을 시작하기 전에 완료됨을 의미합니다. 자세한 내용은 [시퀀스 위치](../c-language/c-sequence-points.md)를 참조하세요.
 

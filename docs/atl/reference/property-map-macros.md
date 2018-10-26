@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 594b02d777d87decfc218064678dbecdf8ecf0c9
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: caa298ebbb96b04145bf2beb52f93838708ae50b
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46106353"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50088904"
 ---
 # <a name="property-map-macros"></a>속성 맵 매크로
 
@@ -39,7 +39,7 @@ ms.locfileid: "46106353"
 |[PROP_ENTRY_TYPE](#prop_entry_type)|속성 맵에 속성 설명, DISPID, 속성 및 속성 페이지 CLSID를 입력합니다.|
 |[PROP_ENTRY_TYPE_EX](#prop_entry_type_ex)|속성 설명을 DISPID, CLSID, 속성 페이지 속성을 입력 하 고 `IDispatch` 속성 맵에 대 한 IID입니다.|
 |[PROP_PAGE](#prop_page)|속성 맵의에 속성 페이지 CLSID를 입력합니다.|
-|[END_PROP_MAP](#end_prop_map)|ATL 속성 map의 끝을 표시합니다.|  
+|[END_PROP_MAP](#end_prop_map)|ATL 속성 map의 끝을 표시합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -83,7 +83,7 @@ PROP_DATA_ENTRY( szDesc, member, vt)
 *szDesc*<br/>
 [in] 속성 설명입니다.
 
-*멤버*<br/>
+*member*<br/>
 [in] 범위; 포함 된 데이터 멤버 예를 들어 `m_sizeExtent`합니다.
 
 *vt*<br/>

@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dee59f5e86cddeec47da47c648b0cf12789cc85a
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 8c8493650ef2c86a89c1a3060deb5ee6269a38a7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084102"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50068647"
 ---
 # <a name="composite-control-global-functions"></a>복합 컨트롤 전역 함수
 
@@ -56,11 +56,11 @@ ms.locfileid: "49084102"
 |[AtlSetChildSite](#atlsetchildsite)|초기화는 `IUnknown` 자식 사이트의.|
 |[AtlAxWinInit](#atlaxwininit)|AxWin 개체에 대 한 호스팅 코드를 초기화합니다.|
 |[AtlAxWinTerm](#atlaxwinterm)|AxWin 개체에 대 한 호스팅 코드를 초기화 하지 않습니다.|
-|[AtlGetObjectSourceInterface](#atlgetobjectsourceinterface)|개체의 기본 소스 인터페이스에 대 한 정보를 반환합니다.|  
+|[AtlGetObjectSourceInterface](#atlgetobjectsourceinterface)|개체의 기본 소스 인터페이스에 대 한 정보를 반환합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlhost.h  
+**헤더:** atlhost.h
 
 ##  <a name="atlaxdialogbox"></a>  AtlAxDialogBox
 
@@ -101,7 +101,7 @@ HRESULT 값 중 하나입니다.
 사용 하 `AtlAxDialogBox` ActiveX 컨트롤이 포함 된 대화 상자 템플릿을 사용으로 올바른 APPID, CLSID, URL 문자열을 지정 합니다 *텍스트* 필드를 **컨트롤** 섹션 대화 상자 리소스의 함께 " AtlAxWin80 "로 합니다 *클래스 이름* 동일한 섹션에서 필드입니다. 다음 어떤 올바른 방법을 보여 줍니다 **제어** 섹션은 다음과 같을 수 있습니다.
 
 ```
-CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,  
+CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,
     "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100
 ```
 
@@ -261,7 +261,7 @@ HRESULT 값 중 하나입니다.
 
 ##  <a name="atlaxcreatecontrollic"></a>  AtlAxCreateControlLic
 
-사용 허가를 받은 ActiveX 컨트롤을 만들고 초기화하며 지정한 창에 호스팅합니다.  
+사용 허가를 받은 ActiveX 컨트롤을 만들고 초기화하며 지정한 창에 호스팅합니다.
 
 ```
 ATLAPI AtlAxCreateControlLic(
@@ -484,7 +484,7 @@ ATLAPI_(BOOL) AtlAxWinInit();
 
 ### <a name="remarks"></a>설명
 
-ATL 컨트롤 호스팅 API를 사용 하기 전에이 함수를 호출 해야 합니다. 이 함수를 호출 합니다 **"AtlAxWin"** 창 클래스에 대 한 호출에서 사용할 수 있습니다 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) 또는 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa)Windows SDK에 설명 된 대로 합니다.  
+ATL 컨트롤 호스팅 API를 사용 하기 전에이 함수를 호출 해야 합니다. 이 함수를 호출 합니다 **"AtlAxWin"** 창 클래스에 대 한 호출에서 사용할 수 있습니다 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) 또는 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa)Windows SDK에 설명 된 대로 합니다.
 
 ##  <a name="atlaxwinterm"></a>  AtlAxWinTerm
 

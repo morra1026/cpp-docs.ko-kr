@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8aa96d87c51eb4db8c7d180f741c3543571984ec
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 04ff3603d403c34915bc062ff6c17fd818d8a286
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46416489"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50072514"
 ---
 # <a name="cmfctoolbarfontcombobox-class"></a>CMFCToolBarFontComboBox 클래스
 
@@ -104,7 +104,6 @@ CMFCToolBarFontComboBox(
     int iWidth = 0,
     BYTE nPitchAndFamily = DEFAULT_PITCH);
 
-
 protected:
 CMFCToolBarFontComboBox(
     CObList* pLstFontsExternal,
@@ -172,7 +171,7 @@ const CMFCFontInfo* GetFontDesc(int iIndex=-1) const;
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 `CMFCFontInfo` 개체입니다. 하는 경우 *iIndex* 유효한 항목 인덱스를 지정 하지 않는 반환 값은 NULL입니다.
+`CMFCFontInfo` 개체에 대한 포인터입니다. 하는 경우 *iIndex* 유효한 항목 인덱스를 지정 하지 않는 반환 값은 NULL입니다.
 
 ##  <a name="m_nfontheight"></a>  CMFCToolBarFontComboBox::m_nFontHeight
 
@@ -226,6 +225,4 @@ BOOL SetFont(
 [CMFCFontInfo 클래스](../../mfc/reference/cmfcfontinfo-class.md)<br/>
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
 [연습: 도구 모음에 컨트롤 배치](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-
-
 

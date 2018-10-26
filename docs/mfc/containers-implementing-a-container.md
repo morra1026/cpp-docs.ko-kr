@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46fa8b115dd01a9ee11442a0701cd719cc6d389e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 28c93e5d1331d7195b894fe88c3fe5fc11e7c31d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46394363"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50074074"
 ---
 # <a name="containers-implementing-a-container"></a>컨테이너: 컨테이너 구현
 
@@ -62,15 +62,15 @@ ms.locfileid: "46394363"
 
 - 포함 된 항목을 편집 하는 경우 내부 활성화.
 
-     자세한 내용은 [활성화](../mfc/activation-cpp.md)합니다.
+   자세한 내용은 [활성화](../mfc/activation-cpp.md)합니다.
 
 - OLE 항목 만들기는 서버 응용 프로그램에서 끌어서 선택 합니다.
 
-     자세한 내용은 [끌어서 놓기 (OLE)](../mfc/drag-and-drop-ole.md)합니다.
+   자세한 내용은 [끌어서 놓기 (OLE)](../mfc/drag-and-drop-ole.md)합니다.
 
 - 포함 된 개체 또는 조합 컨테이너/서버 응용 프로그램에 연결 합니다.
 
-     자세한 내용은 [컨테이너: 고급 기능](../mfc/containers-advanced-features.md)합니다.
+   자세한 내용은 [컨테이너: 고급 기능](../mfc/containers-advanced-features.md)합니다.
 
 ## <a name="see-also"></a>참고 항목
 

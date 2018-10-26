@@ -1,7 +1,7 @@
 ---
-title: 런타임 플랫폼용 구성 요소 확장명 | Microsoft Docs
+title: .NET 및 UWP 용 구성 요소 확장 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/12/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -19,28 +19,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0619585a0a5b59ffb6b8cfbe22e7930909369b23
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 45f83fbaaa867e2f58e329d8531259fa3751a521
+ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386756"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328417"
 ---
-# <a name="component-extensions-for-runtime-platforms"></a>런타임 플랫폼의 구성 요소 확장명
+# <a name="component-extensions-for-net-and-uwp"></a>.NET 및 UWP 용 구성 요소 확장
 
-Visual C++에서는 런타임 플랫폼을 대상으로 프로그래밍할 수 있도록 언어 확장을 제공합니다. 사용 하 여 C + + /CX에서는 유니버설 Windows 플랫폼 앱 및 네이티브 코드로 컴파일되는 구성 요소 프로그래밍할 수 있습니다. C +를 사용 하 여 Windows 런타임 COM 인터페이스에 대해 직접 프로그래밍 하 여 유니버설 Windows 플랫폼 앱을 만들 수 있지만 + CX, 생성자, 예외 및 기타 최신 c + + 프로그래밍 관용구를 사용 하 여 작업할 수 있습니다. .NET 플랫폼에서 관리 되는 실행 환경에서 c + + 프로그래밍을 사용 하도록 설정 하려면 다음을 사용할 수 있습니다 C + + /cli CLI입니다.
+C + + 표준 언어에 대 한 비표준 확장을 제공 하기 위해 컴파일러 공급 업체를 허용 합니다. Microsoft는 네이티브 c + + 코드를 코드는.NET Framework 또는 Windows 플랫폼 (UWP (유니버설)에서 실행 되는 연결 하는 데는 확장을 제공 합니다. .NET extensions 라고 C + +.NET에서 실행 되는 CLI 및 생성 코드 언어 런타임 (CLR (공용) 라고 하는 실행 환경을 관리 합니다. UWP 확장 이라고 C + + /cli CX 있으며 네이티브 기계어 코드를 생성 합니다.
+
+> [!NOTE]
+> 새 응용 프로그램에 대 한 것이 좋습니다 사용 하 여 C + + /cli WinRT 보다는 C + + /cli CX. C + + /cli WinRT 프로젝션인 새, 표준 C + + 17 개의 언어 Windows 런타임 Api에 대 한 합니다. 우리는 계속 지원 C + + /cli CX 및 WRL, 되지만 항상 권장 구성이 새 응용 프로그램에서 사용할 C + + WinRT 합니다. 자세한 내용은 [C + + /cli WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index)합니다.
 
 ### <a name="two-runtimes-one-set-of-extensions"></a>두 개의 런타임, 하나의 확장명 집합
 
-C + + /cli CX 하위 집합인 C + + /cli CLI입니다. C +에 공통적으로 적용 되는 확장 + /CX 및 C + + /cli CLI의 경우 의미 체계는 CLR (공용 언어 런타임) 또는 Windows 런타임 대상으로 하는지 여부에 따라 달라 집니다. Windows Runtime에서 실행 되도록 앱을 컴파일하려면 지정 된 `/ZW` 컴파일러 옵션입니다. CLR에서 실행되도록 컴파일하려면 `/clr` 컴파일러 옵션을 지정합니다. 이러한 스위치는 Visual Studio를 사용하여 프로젝트를 만들 때 자동으로 설정됩니다.
-
-C + +에서 유니버설 Windows 플랫폼 앱을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [c + +를 사용 하 여 로드맵에 대 한 Windows 런타임 앱](https://msdn.microsoft.com/library/windows/apps/hh700360.aspx)합니다.
-
 C + + /cli CLI ISO/ANSI c + + 표준에서를 확장 하 고 정의 된 아래 Ecma C + + /cli 표준 CLI입니다. 자세한 내용은 [.NET 프로그래밍 C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)를 참조합니다.
+
+C + + /cli CX 확장은 하위 집합 C + + /cli CLI입니다. 생성 되는 코드를 지정 했는지 여부에 따라 달라 집니다는 확장 구문을 대부분의 경우에서 동일한 경우에 합니다 `/ZW` UWP 대상으로 컴파일러 옵션 또는 `/clr` .NET 대상으로 하는 옵션입니다. 이러한 스위치는 Visual Studio를 사용하여 프로젝트를 만들 때 자동으로 설정됩니다.
 
 ## <a name="data-type-keywords"></a>데이터 형식 키워드
 
-언어 확장을 포함 *키워드를 집계*, 됩니다.이 키워드는 공백으로 구분 된 두 개의 토큰으로 구성 됩니다. 토큰은 별도로 사용될 때의 의미와 함께 사용될 때의 의미가 있을 수 있습니다. 예를 들어 "ref"라는 단어는 일반 식별자이고 "class"라는 단어는 네이티브 클래스를 선언하는 키워드입니다. 때 이러한 단어가 결합 되어 있지만 **ref 클래스**, 이라고 하는 엔터티를 선언 하는 결과 집계 키워드는 *런타임 클래스*합니다.
+언어 확장을 포함 *키워드를 집계*, 공백으로 구분 된 두 개의 토큰 구성 되 합니다. 토큰은 별도로 사용될 때의 의미와 함께 사용될 때의 의미가 있을 수 있습니다. 예를 들어 "ref"라는 단어는 일반 식별자이고 "class"라는 단어는 네이티브 클래스를 선언하는 키워드입니다. 때 이러한 단어가 결합 되어 있지만 **ref 클래스**, 이라고 하는 엔터티를 선언 하는 결과 집계 키워드는 *런타임 클래스*합니다.
 
 확장에도 *상황에 맞는* 키워드입니다. 키워드는 해당 키워드를 포함하는 문의 종류 및 해당 문에서의 배치에 따라 상황에 맞는 것으로 처리됩니다. 예를 들어 토큰 "property"는 식별자이거나 특별한 종류의 public 클래스 멤버를 선언할 수 있습니다.
 
@@ -53,7 +54,7 @@ C + + /cli CLI ISO/ANSI c + + 표준에서를 확장 하 고 정의 된 아래 E
 |**인터페이스 클래스**<br /><br /> **인터페이스 구조체**|아니요|인터페이스를 선언합니다.|[인터페이스 클래스](../windows/interface-class-cpp-component-extensions.md)|
 |**enum 클래스**<br /><br /> **enum 구조체**|아니요|열거형을 선언합니다.|[enum 클래스](../windows/enum-class-cpp-component-extensions.md)|
 |**속성**|예|속성을 선언합니다.|[속성](../windows/property-cpp-component-extensions.md)|
-|**delegate**|예|대리자를 선언합니다.|[delegate(C++ 구성 요소 확장)](../windows/delegate-cpp-component-extensions.md)|
+|**delegate**|예|대리자를 선언합니다.|[대리자 (C + + /cli 및 C + + /cli CX)](../windows/delegate-cpp-component-extensions.md)|
 |**event**|예|이벤트를 선언합니다.|[event](../windows/event-cpp-component-extensions.md)|
 
 ## <a name="override-specifiers"></a>Override 지정자
@@ -87,7 +88,7 @@ C + + /cli CLI ISO/ANSI c + + 표준에서를 확장 하 고 정의 된 아래 E
 |**gcnew**|아니요|가비지 수집 힙에 형식을 할당합니다. 대신 사용 하 여 **새** 하 고 **삭제**합니다.|[ref new, gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md)|
 |**ref n e w**|예|Windows 런타임 형식을 할당합니다. 대신 사용 하 여 **새** 하 고 **삭제**합니다.|[ref new, gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md)|
 |**initonly**|예|선언 또는 정적 생성자에서만 멤버를 초기화할 수 있음을 나타냅니다.|[initonly(C++/CLI)](../dotnet/initonly-cpp-cli.md)|
-|**리터럴**|예|리터럴 변수를 만듭니다.|[리터럴](../windows/literal-cpp-component-extensions.md)|
+|**name**|예|리터럴 변수를 만듭니다.|[name](../windows/literal-cpp-component-extensions.md)|
 |**nullptr**|아니요|핸들 또는 포인터가 개체를 가리키지 않음을 나타냅니다.|[nullptr](../windows/nullptr-cpp-component-extensions.md)|
 
 ## <a name="template-constructs"></a>템플릿 구문

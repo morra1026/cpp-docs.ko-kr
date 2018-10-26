@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8cba3c15049c176b19f0da197d19017ae2aa699d
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 297b457bdf2c70a75b9abdc433c87381fd115037
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791744"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50067750"
 ---
 # <a name="readonly-c"></a>readonly(C++)
 
@@ -36,9 +36,9 @@ ms.locfileid: "48791744"
 
 ## <a name="remarks"></a>설명
 
-**읽기 전용** c + + 특성에 동일한 기능을 합니다 [readonly](/windows/desktop/Midl/readonly) MIDL 특성입니다.
+**readonly** C++ 특성에는 [readonly](/windows/desktop/Midl/readonly) MIDL 특성과 동일한 기능이 있습니다.
 
-메서드 매개 변수의 수정을 금지 하려면 사용 합니다 [에서](in-cpp.md) 특성입니다.
+메서드 매개 변수의 수정을 금지하려면 [in](in-cpp.md) 특성을 사용합니다.
 
 ## <a name="example"></a>예제
 
@@ -69,9 +69,9 @@ __interface IFireTabCtrl
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-특성 컨텍스트에 대 한 자세한 내용은 참조 하세요. [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 [IDL 특성](idl-attributes.md)<br/>
-[데이터 멤버 특성](data-member-attributes.md)  
+[데이터 멤버 특성](data-member-attributes.md)

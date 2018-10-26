@@ -1,7 +1,7 @@
 ---
 title: IAtlStringMgr 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad98923c21a28976b54c2251f2da83eb0ec4cf5f
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6d637750ab4aa9dc30ca7b297373cb2c752802d8
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808877"
 ---
 # <a name="iatlstringmgr-class"></a>IAtlStringMgr 클래스
 
@@ -73,10 +73,10 @@ CStringData* Allocate(int nAllocLength,int nCharSize) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*nAllocLength*  
+*nAllocLength*<br/>
 새 메모리 블록에 있는 문자의 수입니다.
 
-*nCharSize*  
+*nCharSize*<br/>
 크기 (바이트) 문자열 관리자에서 사용 하는 문자 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -124,7 +124,7 @@ void Free(CStringData* pData) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*pData*  
+*pData*<br/>
 해제할 메모리 블록에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -151,31 +151,31 @@ CStringData* GetNilString() throw();
 빈 문자열 표현을 반환 하려면이 함수를 호출 합니다.
 
 > [!NOTE]
->  사용자 지정 문자열 관리자 구현 하는 경우이 함수는 실패 하지 해야 합니다. 인스턴스를 포함 하 여이 확실히 `CNilStringData` 문자열 manager 클래스 및 해당 인스턴스에 대 한 포인터를 반환 합니다.
+> 사용자 지정 문자열 관리자 구현 하는 경우이 함수는 실패 하지 해야 합니다. 인스턴스를 포함 하 여이 확실히 `CNilStringData` 문자열 manager 클래스 및 해당 인스턴스에 대 한 포인터를 반환 합니다.
 
 > [!NOTE]
->  사용 예제를 보려면 [메모리 관리 및 CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md)합니다.
+> 사용 예제를 보려면 [메모리 관리 및 CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md)합니다.
 
-##  <a name="reallocate"></a>  IAtlStringMgr::Reallocate
+## <a name="reallocate"></a>  IAtlStringMgr::Reallocate
 
 문자열 데이터 구조를 다시 할당합니다.
 
 ```
-CStringData* Reallocate(  
-CStringData* pData,
-int nAllocLength,
-int nCharSize) throw();
+CStringData* Reallocate(
+    CStringData* pData,
+    int nAllocLength,
+    int nCharSize) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*pData*  
+*pData*<br/>
 이 메모리 관리자에 의해 이전에 할당 된 메모리에 대 한 포인터입니다.
 
-*nAllocLength*  
+*nAllocLength*<br/>
 새 메모리 블록에 있는 문자의 수입니다.
 
-*nCharSize*  
+*nCharSize*<br/>
 크기 (바이트) 문자열 관리자에서 사용 하는 문자 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -189,10 +189,9 @@ int nCharSize) throw();
 호출 [IAtlStringMgr::Free](#free) 이 메서드에 의해 할당 된 메모리를 해제 합니다.
 
 > [!NOTE]
->  사용 예제를 보려면 [메모리 관리 및 CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md)합니다.
+> 사용 예제를 보려면 [메모리 관리 및 CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md)합니다.
 
 ## <a name="see-also"></a>참고 항목
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC 공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-

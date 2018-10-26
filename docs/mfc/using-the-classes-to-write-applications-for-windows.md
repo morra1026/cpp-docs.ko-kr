@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c60cf5d6f61f16aac18524e8b6e75638ec13d27e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9907424a583cc16f170890a739fa7ece8cc93ead
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46433337"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075127"
 ---
 # <a name="using-the-classes-to-write-applications-for-windows"></a>클래스를 사용하여 Windows 응용 프로그램 작성
 
@@ -66,17 +66,17 @@ Microsoft Foundation 클래스 (MFC) 라이브러리의 클래스를 전체적�
 
 - [메모리 관리](../mfc/memory-management.md)
 
-     Windows 운영 체제에 대 한 응용 프로그램 작성이 점으로 손꼽을 수 있도록 하는 것 외에도 MFC 하기가 특히 연결 및 기술을 포함 하는 OLE를 사용 하는 응용 프로그램을 작성 하기가 훨씬 쉽습니다. 가능 응용 프로그램 OLE 비주얼 편집 컨테이너, OLE 비주얼 편집 서버, 또는 둘 다 및 다른 응용 프로그램 응용 프로그램에서 개체를 사용 하거나 원격으로 수 있도록 자동화를 추가할 수 있습니다.
+   Windows 운영 체제에 대 한 응용 프로그램 작성이 점으로 손꼽을 수 있도록 하는 것 외에도 MFC 하기가 특히 연결 및 기술을 포함 하는 OLE를 사용 하는 응용 프로그램을 작성 하기가 훨씬 쉽습니다. 가능 응용 프로그램 OLE 비주얼 편집 컨테이너, OLE 비주얼 편집 서버, 또는 둘 다 및 다른 응용 프로그램 응용 프로그램에서 개체를 사용 하거나 원격으로 수 있도록 자동화를 추가할 수 있습니다.
 
 - [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)
 
-     OLE 컨트롤 개발 키트 (CDK) 프레임 워크를 사용 하 여 완전히 통합 되었습니다. 이 문서에서는 MFC로 ActiveX 컨트롤 개발의 개요를 제공합니다. (ActiveX 컨트롤 된 이전의 OLE 컨트롤입니다.)
+   OLE 컨트롤 개발 키트 (CDK) 프레임 워크를 사용 하 여 완전히 통합 되었습니다. 이 문서에서는 MFC로 ActiveX 컨트롤 개발의 개요를 제공합니다. (ActiveX 컨트롤 된 이전의 OLE 컨트롤입니다.)
 
 - [데이터베이스 프로그래밍](../data/data-access-programming-mfc-atl.md)
 
-     MFC는 또한 쓰기 데이터 액세스를 간소화 하는 database 클래스의 두 집합 제공 응용 프로그램입니다. ODBC 데이터베이스 클래스를 사용 하는 데이터베이스 연결 ODBC (Open) 드라이버를 통해 데이터베이스 연결, 테이블의 레코드를 선택 하 고 표시할 수에서 정보를 기록는 화면의 폼입니다. 데이터 액세스 개체 (DAO) 클래스를 사용 하 여, Microsoft Jet 데이터베이스 엔진 또는 외부 (비 Jet) 데이터 원본, ODBC 데이터 원본을 포함 하 여을 통해 데이터베이스를 사용 하 여 작업할 수 있습니다.
+   MFC는 또한 쓰기 데이터 액세스를 간소화 하는 database 클래스의 두 집합 제공 응용 프로그램입니다. ODBC 데이터베이스 클래스를 사용 하는 데이터베이스 연결 ODBC (Open) 드라이버를 통해 데이터베이스 연결, 테이블의 레코드를 선택 하 고 표시할 수에서 정보를 기록는 화면의 폼입니다. 데이터 액세스 개체 (DAO) 클래스를 사용 하 여, Microsoft Jet 데이터베이스 엔진 또는 외부 (비 Jet) 데이터 원본, ODBC 데이터 원본을 포함 하 여을 통해 데이터베이스를 사용 하 여 작업할 수 있습니다.
 
-     또한 MFC가 완전히 유니코드를 사용 하는 응용 프로그램을 작성 하는 것에 대 한 설정 및 멀티 바이트 문자 집합 (MBCS), 특히 더블 바이트 문자 집합 (DBCS).
+   또한 MFC가 완전히 유니코드를 사용 하는 응용 프로그램을 작성 하는 것에 대 한 설정 및 멀티 바이트 문자 집합 (MBCS), 특히 더블 바이트 문자 집합 (DBCS).
 
 MFC 설명서에 대 한 일반 지침을 참조 하세요 [일반 MFC 항목](../mfc/general-mfc-topics.md)합니다.
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 153e1bba37b10da64b394c48ee1cf8c059ae86e9
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 03131071f38dbbe1f9e1dbc2dc6645dcfb5d7366
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49083029"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057857"
 ---
 # <a name="dbparam"></a>db_param
 
@@ -71,7 +71,7 @@ ms.locfileid: "49083029"
 
 **db_param** 함께에서 사용 되는 [db_table](db-table.md) 또는 [db_command](db-command.md) 특성입니다.
 
-컴파일러는 클래스 이름을 소비자 특성 공급자가이 특성 클래스에 적용 될 때 \_ *YourClassName*접근자를 여기서 *YourClassName* 제공한 이름인는 클래스 및 컴파일러 라는 클래스를 만들 수도 됩니다 *YourClassName*에서 파생 되는 \_ *YourClassName*접근자입니다.  클래스 뷰에 두 클래스 모두 표시됩니다.
+소비자 특성 공급자가 클래스에 이 특성을 적용하는 경우 컴파일러는 클래스의 이름을 _\_*YourClassName*Accessor로 바꿉니다. 여기서 *YourClassName*은 클래스에 지정한 이름입니다. 컴파일러는 또한 \_*YourClassName*Accessor에서 파생되는 *YourClassName*이라는 클래스를 만듭니다.  클래스 뷰에 두 클래스 모두 표시됩니다.
 
 ## <a name="example"></a>예제
 
@@ -87,7 +87,7 @@ ms.locfileid: "49083029"
 #include <atldbcli.h>
 
 [ db_source(L"my_connection_string"),
-  db_command(L"{ ? = CALL dbo.\"Sales by Year\"(?,?) }")  
+  db_command(L"{ ? = CALL dbo.\"Sales by Year\"(?,?) }")
 ]
 struct CSalesbyYear {
    DBSTATUS m_dwShippedDateStatus;
@@ -119,7 +119,7 @@ struct CSalesbyYear {
 
 |||
 |-|-|
-|**적용 대상**|**클래스**하십시오 **구조체**, 멤버, 메서드, 로컬|
+|**적용 대상**|**클래스**, **구조체**, 멤버, 메서드, 로컬|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
@@ -128,4 +128,4 @@ struct CSalesbyYear {
 
 ## <a name="see-also"></a>참고 항목
 
-[OLE DB 소비자 특성](ole-db-consumer-attributes.md)  
+[OLE DB 소비자 특성](ole-db-consumer-attributes.md)

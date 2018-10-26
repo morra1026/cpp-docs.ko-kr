@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb3f2ca2cfe094f4ea9da11786af6f90db7d2217
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9fb13c8c4ce2705d3e7af8ca5b4cd0e4b97b13ca
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46136161"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059092"
 ---
 # <a name="type-conversions-and-type-safety-modern-c"></a>형식 변환 및 형식 안전성(최신 C++)
 
@@ -70,7 +70,7 @@ int k = 7.7; // warning C4244:'initializing':conversion from 'double' to
 
 ```cpp
 using namespace std;
-unsigned short num = numeric_limits<unsigned short>::max(); // #include <limits>
+unsigned short num = numeric_limits<unsigned short>::max(); // #include <limits>
 short num2 = num;
 cout << "unsigned val = " << num << " signed val = " << num2 << endl;
 // Prints: unsigned val = 65535 signed val = -1
@@ -126,7 +126,7 @@ C 스타일 캐스트 연산자는 호출 연산자 ()와 동일하므로 코드
     Derived* d2 = static_cast<Derived*>(b);
     ```
 
-     자세한 내용은 [static_cast](../cpp/static-cast-operator.md)합니다.
+   자세한 내용은 [static_cast](../cpp/static-cast-operator.md)합니다.
 
 - **dynamic_cast**에 대 한 포인터에서 기본 포인터를 파생의 안전 하 고 런타임이 검사 된 캐스트 합니다. A **dynamic_cast** 보다 안전를 **static_cast** 다운 캐스트 있지만 런타임 검사는 일부 오버 헤드를 초래 합니다.
 
@@ -151,7 +151,7 @@ C 스타일 캐스트 연산자는 호출 연산자 ()와 동일하므로 코드
     //Output: d3 is null;
     ```
 
-     자세한 내용은 [dynamic_cast](../cpp/dynamic-cast-operator.md)합니다.
+   자세한 내용은 [dynamic_cast](../cpp/dynamic-cast-operator.md)합니다.
 
 - **const_cast**캐스팅 하는 것에 대 한 합니다 **const**변수의 변수 또는 비 변환-**const** 변수를 **const**합니다. 캐스팅 하는 것 **상수**-이 연산자를 사용 하 여 ness는 방금으로 오류가 발생 하기 쉬운 C 스타일의 캐스트를 사용 하 여 제외 하 고 사용 하는 **const 캐스트** 실수로 캐스트를 수행 하려면 작은 가능성이 있습니다. 캐스팅 해야 할 경우가 합니다 **const**-변수의 예를 들어, 전달할 특성을 **const** 변수는 함수는 비-를**const** 매개 변수입니다. 다음 예제에서는 이 작업을 수행하는 방법을 보여 줍니다.
 
@@ -164,14 +164,14 @@ C 스타일 캐스트 연산자는 호출 연산자 ()와 동일하므로 코드
     }
     ```
 
-     자세한 내용은 [const_cast](../cpp/const-cast-operator.md)합니다.
+   자세한 내용은 [const_cast](../cpp/const-cast-operator.md)합니다.
 
 - **reinterpret_cast**같은 관련 없는 형식 간 캐스트에 대 한 **포인터** 하려면 **int**합니다.
 
     > [!NOTE]
     >  이 캐스트 연산자는 다른 연산자만큼 자주 사용되지 않으며 다른 컴파일러로 이식되는 것을 보장하지 않습니다.
 
-     다음 예제에서는 어떻게 **reinterpret_cast** 에서 다른 **static_cast**합니다.
+   다음 예제에서는 어떻게 **reinterpret_cast** 에서 다른 **static_cast**합니다.
 
     ```cpp
     const char* str = "hello";
@@ -183,7 +183,7 @@ C 스타일 캐스트 연산자는 호출 연산자 ()와 동일하므로 코드
                                        // However, it is not 64-bit safe.
     ```
 
-     자세한 내용은 [reinterpret_cast 연산자](../cpp/reinterpret-cast-operator.md)합니다.
+   자세한 내용은 [reinterpret_cast 연산자](../cpp/reinterpret-cast-operator.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

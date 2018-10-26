@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db431b80a569436aab477b89be447ee6df1932b2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e3b91d0397b1eec53988e7acd5a5b7dce61db4ec
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424003"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059885"
 ---
 # <a name="cmfcrebar-class"></a>CMFCReBar 클래스
 
@@ -117,12 +117,14 @@ BOOL AddBar(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] [out] *pBar* rebar에 삽입 되는 자식 창에 대 한 포인터입니다. 참조 된 개체에 있어야 합니다 **WS_CHILD** 창 스타일입니다.
+*pBar*<br/>
+[out에서] Rebar에 삽입 되는 자식 창에 대 한 포인터입니다. 참조 된 개체에 있어야 합니다 **WS_CHILD** 창 스타일입니다.
 
 *pszText*<br/>
 [in] Rebar에 표시할 텍스트를 지정 합니다. 텍스트를 자식 창에 속하지 않습니다. 대신, rebar 자체에 표시 됩니다.
 
-[in] [out] *pbmp* rebar 백그라운드에 표시할 비트맵을 지정 합니다.
+*pbmp*<br/>
+[out에서] Rebar 백그라운드에 표시할 비트맵을 지정 합니다.
 
 *dwStyle*<br/>
 [in] 밴드에 적용할 스타일을 포함 합니다. 대역 외 스타일의 전체 목록은에 대 한 설명을 참조 하세요 `fStyle` 에 [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) Windows SDK 설명서의 구조입니다.
@@ -151,7 +153,8 @@ BOOL Create(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] [out] *pParentWnd* 이 rebar 컨트롤의 부모 창에 대 한 포인터입니다.
+*pParentWnd*<br/>
+[out에서] 이 rebar 컨트롤의 부모 창에 대 한 포인터입니다.
 
 *dwCtrlStyle*<br/>
 [in] Rebar 컨트롤의 스타일을 지정합니다. 기본 스타일 값은 **RBS_BANDBORDERS**는 표시 좁힐 선으로 인접 한 rebar 컨트롤 밴드를 구분 합니다. 유효한 스타일의 목록은 참조 하세요 [Rebar 컨트롤 스타일](/windows/desktop/Controls/rebar-control-styles) Windows SDK 설명서의 합니다.
@@ -186,7 +189,6 @@ CReBarCtrl& GetReBarCtrl() const;
 
 ##  <a name="calcfixedlayout"></a>  CMFCReBar::CalcFixedLayout
 
-
 ```
 virtual CSize CalcFixedLayout(
     BOOL bStretch,
@@ -195,15 +197,14 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="parameters"></a>매개 변수
 
-*bStretch*<br/>
-[in] [in] *bHorz*
+[in] *bStretch*<br/>
+[in] *bHorz*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="canfloat"></a>  CMFCReBar::CanFloat
-
 
 ```
 virtual BOOL CanFloat() const;
@@ -215,19 +216,17 @@ virtual BOOL CanFloat() const;
 
 ##  <a name="enabledocking"></a>  CMFCReBar::EnableDocking
 
-
 ```
 void EnableDocking(DWORD dwDockStyle);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *dwDockStyle*
+[in] *dwDockStyle*<br/>
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="getrebarbandinfosize"></a>  CMFCReBar::GetReBarBandInfoSize
-
 
 ```
 UINT GetReBarBandInfoSize() const;
@@ -239,21 +238,19 @@ UINT GetReBarBandInfoSize() const;
 
 ##  <a name="onshowcontrolbarmenu"></a>  CMFCReBar::OnShowControlBarMenu
 
-
 ```
 virtual BOOL OnShowControlBarMenu(CPoint);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *CPoint*
+[in] *CPoint*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="ontoolhittest"></a>  CMFCReBar::OnToolHitTest
-
 
 ```
 virtual INT_PTR OnToolHitTest(
@@ -263,15 +260,14 @@ virtual INT_PTR OnToolHitTest(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
-[in] [in] *pTI*
+[in] *지점*<br/>
+[in] *pTI*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="onupdatecmdui"></a>  CMFCReBar::OnUpdateCmdUI
-
 
 ```
 virtual void OnUpdateCmdUI(
@@ -281,13 +277,12 @@ virtual void OnUpdateCmdUI(
 
 ### <a name="parameters"></a>매개 변수
 
-*pTarget*<br/>
-[in] [in] *bDisableIfNoHndler*
+[in] *pTarget*<br/>
+[in] *bDisableIfNoHndler*<br/>
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="setpanealignment"></a>  CMFCReBar::SetPaneAlignment
-
 
 ```
 virtual void SetPaneAlignment(DWORD dwAlignment);
@@ -295,7 +290,7 @@ virtual void SetPaneAlignment(DWORD dwAlignment);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *dwAlignment*
+[in] *dwAlignment*<br/>
 
 ### <a name="remarks"></a>설명
 

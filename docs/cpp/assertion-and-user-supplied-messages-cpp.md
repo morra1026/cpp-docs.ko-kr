@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88873c9ebde2ce03163e62a59f3dd6fffdd36849
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: fdbf1ba3c4cfda4163076386def70c700c156aa7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090284"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057880"
 ---
 # <a name="assertion-and-user-supplied-messages-c"></a>어설션 및 사용자 제공 메시지 (C++)
 
@@ -36,7 +36,7 @@ C + + 언어에서는 세 가지 오류 처리 메커니즘 도움이 되는 응
 
 - 합니다 [static_assert](../cpp/static-assert.md) 선언은 컴파일 타임에 적용 됩니다. 이 선언은 부울로 변환할 수 있는 사용자 지정 정수 계열 식으로 표현된 소프트웨어 어설션을 테스트합니다. 식이 0(false)으로 계산되는 경우 컴파일러는 사용자 지정 메시지를 발행하고 컴파일이 오류와 함께 실패합니다.
 
-     `static_assert` 선언은 디버깅 템플릿에 특히 유용합니다. 이는 템플릿 인수가 사용자 지정 식에 포함될 수 있기 때문입니다.
+   `static_assert` 선언은 디버깅 템플릿에 특히 유용합니다. 이는 템플릿 인수가 사용자 지정 식에 포함될 수 있기 때문입니다.
 
 - 합니다 [assert 매크로, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) 매크로 실행된 시간에 적용 됩니다. 이 매크로는 사용자 지정 식을 계산하며, 결과가 0인 경우 진단 메시지가 제공되고 응용 프로그램이 닫힙니다. 대부분의 다른 매크로 같은[_ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) _ASSERTE,이 매크로 유사 하지만 다양 한 시스템 정의 또는 사용자 정의 진단 메시지를 실행 합니다.
 

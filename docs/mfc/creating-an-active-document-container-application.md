@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f01b15a226887216b45ba232437d9d20c4691b6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f1b20dd592e180122e119b08ab59babfdaae8d54
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388339"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052814"
 ---
 # <a name="creating-an-active-document-container-application"></a>액티브 문서 컨테이너 응용 프로그램 만들기
 
@@ -57,9 +57,9 @@ ms.locfileid: "46388339"
 
          [!code-cpp[NVC_MFCDocView#56](../mfc/codesnippet/cpp/creating-an-active-document-container-application_1.cpp)]
 
-     `OnPreparePrinting`은 인쇄 지원을 제공합니다. 이 코드는 기본 인쇄 준비인 `DoPreparePrinting` 대신 사용됩니다.
+   `OnPreparePrinting`은 인쇄 지원을 제공합니다. 이 코드는 기본 인쇄 준비인 `DoPreparePrinting` 대신 사용됩니다.
 
-     액티브 문서 포함은 향상된 인쇄 체계를 제공합니다.
+   액티브 문서 포함은 향상된 인쇄 체계를 제공합니다.
 
    - 현재 문서를 먼저 호출 해당 `IPrint` 인터페이스 및 자체를 인쇄 하도록 지시 합니다. 이 컨테이너를 프린터에 포함된 된 항목의 이미지를 렌더링 해야 하는 이전의 OLE 포함 다릅니다 `CDC` 개체입니다.
 
@@ -67,7 +67,7 @@ ms.locfileid: "46388339"
 
    - 실패하면 항목을 직접 렌더링합니다.
 
-     정적 멤버 함수 `COleDocObjectItem::OnPrint` 및 `COleDocObjectItem::OnPreparePrinting`은 이전 코드에 구현된 대로 향상된 이 인쇄 체계를 처리합니다.
+   정적 멤버 함수 `COleDocObjectItem::OnPrint` 및 `COleDocObjectItem::OnPreparePrinting`은 이전 코드에 구현된 대로 향상된 이 인쇄 체계를 처리합니다.
 
 11. 사용자의 고유 구현을 추가하고 응용 프로그램을 빌드합니다.
 

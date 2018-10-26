@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f937c2cdaa4bb7f31b39b8a28c657274830fc36
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 45a5b1714721a414f1016d977cc9cb549b4000d7
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446610"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083115"
 ---
 # <a name="event-maps"></a>이벤트 맵
 
@@ -279,7 +279,6 @@ ON_STDOLEVERB(iVerb, memberFxn)
 폼의 표준 동사 인덱스는 `OLEIVERB_`고 뒤에 작업입니다. OLEIVERB_SHOW, OLEIVERB_HIDE, OLEIVERB_UIACTIVATE와 표준 동사의 몇 가지 예입니다.
 
 참조 [ON_OLEVERB](#on_oleverb) 에 대 한 설명은로 사용할 함수 프로토타입에 *memberFxn* 매개 변수입니다.
-
 
 ### <a name="requirements"></a>요구 사항
 

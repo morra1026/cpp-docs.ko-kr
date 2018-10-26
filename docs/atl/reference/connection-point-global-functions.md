@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12976bcf796466f959807f7ac2fb52257889454b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 5a1c972be0b4e14d881812195856465dbc7c9e70
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46025544"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075790"
 ---
 # <a name="connection-point-global-functions"></a>연결 지점 전역 함수
 
@@ -36,7 +36,7 @@ ms.locfileid: "46025544"
 |-|-|
 |[AtlAdvise](#atladvise)|개체의 연결 지점과 클라이언트의 싱크 간에 연결을 만듭니다.|
 |[AtlUnadvise](#atlunadvise)|통해 설정 된 연결을 종료 `AtlAdvise`합니다.|
-|[AtlAdviseSinkMap](#atladvisesinkmap)|제안 또는 항목에서 이벤트 싱크 맵과 unadvises 합니다.|  
+|[AtlAdviseSinkMap](#atladvisesinkmap)|제안 또는 항목에서 이벤트 싱크 맵과 unadvises 합니다.|
 
 ## <a name="requirements"></a>요구 사항
 

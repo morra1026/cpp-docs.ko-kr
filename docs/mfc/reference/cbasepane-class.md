@@ -176,12 +176,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9351e363bfa0ca654837436a01bb36b4f2b51eb2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5099251f46d3446368c04a39d624fde8128ab2e4
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378399"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50076311"
 ---
 # <a name="cbasepane-class"></a>CBasePane 클래스
 
@@ -292,7 +292,7 @@ class CBasePane : public CWnd
 |[Cbasepane:: Onsetaccdata](#onsetaccdata)|`CBasePane` 이 메서드를 사용 하지 않습니다.|
 |`CBasePane::OnUpdateCmdUI`|내부적으로 사용 합니다.|
 |[CBasePane::PaneFromPoint](#panefrompoint)|지정된 된 점을 포함 하는 창을 반환 합니다.|
-|`CBasePane::PreTranslateMessage`|클래스에서 사용 하는 [CWinApp](../../mfc/reference/cwinapp-class.md) 디스패치 되기 전에 창 메시지를 변환 하는 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수입니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|
+|`CBasePane::PreTranslateMessage`|창 메시지가 [TranslateMessage](../../mfc/reference/cwinapp-class.md) 및 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) Windows 함수로 디스패치되기 전에 [CWinApp](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) 클래스가 이 메시지를 해석하는 데 사용됩니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|
 |[CBasePane::RecalcLayout](#recalclayout)|`CBasePane` 이 메서드를 사용 하지 않습니다.|
 |[CBasePane::RemovePaneFromDockManager](#removepanefromdockmanager)|창을 등록을 취소 하 고 도킹 관리자 목록에서 제거 합니다.|
 |[CBasePane::SaveState](#savestate)|레지스트리에 창의 상태를 저장합니다.|
@@ -332,7 +332,7 @@ class CBasePane : public CWnd
 
     - AFX_CBRS_CLOSE 창을 (숨김) 닫을 수 있습니다.
 
-     이러한 값은 비트 OR 연산으로 결합할 수 있는 플래그입니다.
+   이러한 값은 비트 OR 연산으로 결합할 수 있는 플래그입니다.
 
 `CBasePane` 이러한 플래그를 반영 하도록 다음 가상 부울 메서드를 구현 합니다. [cbasepane:: Canbeclosed](#canbeclosed)를 [CBasePane::CanAutoHide](#canautohide)를 [CBasePane::CanFloat](#canfloat)합니다. 해당 동작을 사용자 지정 파생된 클래스에서 재정의할 수 있습니다.
 
@@ -1514,7 +1514,7 @@ virtual BOOL IsVisible() const;
 
 ### <a name="remarks"></a>설명
 
-창의 표시 유형을 결정 하려면이 메서드를 사용 합니다. 사용 하지 않는 `::IsWindowVisible`합니다.
+창의 표시 유형을 결정 하려면이 메서드를 사용 합니다. `::IsWindowVisible`는 사용하지 마세요.
 
 창 탭 하지는 경우 (참조 [CBasePane::IsTabbed](#istabbed)),이 메서드는 WS_VISIBLE 스타일에 대 한 확인 합니다. 창 탭은이 메서드는 부모 탭 창의 표시 여부를 확인 합니다. 부모 창을 표시 하지 않은 경우 함수 사용 하 여 창 탭의 표시 여부를 확인 하는 [CMFCBaseTabCtrl::IsTabVisible](../../mfc/reference/cmfcbasetabctrl-class.md#istabvisible)합니다.
 
@@ -1643,7 +1643,8 @@ virtual void OnMovePaneDivider(CPaneDivider*);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *CPaneDivider\**  사용 되지 않습니다.
+*CPaneDivider\**<br/>
+[in] 사용 되지 않습니다.
 
 ##  <a name="onpanecontextmenu"></a>  CBasePane::OnPaneContextMenu
 

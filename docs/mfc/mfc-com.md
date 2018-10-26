@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 660b2fc2f6ece6f60ff7bd1868b3a65bc8f045c1
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 5ae1ccdcda4fac1cbd0660b054d792999ae449fc
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890038"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079289"
 ---
 # <a name="mfc-com"></a>MFC COM
 
@@ -52,7 +52,7 @@ ms.locfileid: "48890038"
 
 - [Automation](../mfc/automation.md) (이전의 OLE Automation) 다른 응용 프로그램에서 구현 하는 개체를 조작 하거나 조작할 수 있도록 개체를 "노출" 응용 프로그램에 대 한 수 있도록 합니다.
 
-     자동화 개체는 로컬 또는 원격 다른 컴퓨터에서 네트워크를 통해 액세스할 수 있습니다. 자동화는 OLE 및 COM 개체 모두에 대해 사용할 수 있습니다.
+   자동화 개체는 로컬 또는 원격 다른 컴퓨터에서 네트워크를 통해 액세스할 수 있습니다. 자동화는 OLE 및 COM 개체 모두에 대해 사용할 수 있습니다.
 
 - 이 섹션의 예를 들어, MFC를 사용 하 여 COM 구성 요소를 작성 하는 방법에도 정보를 제공 [연결점](../mfc/connection-points.md)합니다.
 

@@ -19,20 +19,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2eb66b1068e20f4bfc8936e592afbcb5183974a2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: de45e534059ce71134ccabf8f5f6f71477b4a046
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110954"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057987"
 ---
 # <a name="catalog-information--mfc-data-access"></a>카탈로그 정보  (MFC Data Access)
 
-데이터 소스의 테이블에 대한 정보에는 테이블 및 테이블 내 열의 이름, 테이블 권한, 기본 키와 외래 키의 이름, 미리 정의된 쿼리나 저장 프로시저에 대한 정보, 테이블의 인덱스 관련 정보, 그리고 테이블 관련 통계가 포함될 수 있습니다.  
-  
-자세한 내용은 [데이터 원본: 데이터 원본 (ODBC)의 스키마 확인](../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)합니다.  
-  
-  
-## <a name="see-also"></a>참고 항목  
+데이터 소스의 테이블에 대한 정보에는 테이블 및 테이블 내 열의 이름, 테이블 권한, 기본 키와 외래 키의 이름, 미리 정의된 쿼리나 저장 프로시저에 대한 정보, 테이블의 인덱스 관련 정보, 그리고 테이블 관련 통계가 포함될 수 있습니다.
+
+자세한 내용은 [데이터 원본: 데이터 원본 (ODBC)의 스키마 확인](../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)합니다.
+
+## <a name="see-also"></a>참고 항목
 
 [데이터 액세스 프로그래밍 (MFC/ATL)](../data/data-access-programming-mfc-atl.md)

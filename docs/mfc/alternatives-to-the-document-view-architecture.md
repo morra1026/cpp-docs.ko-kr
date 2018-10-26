@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07277e9b98186747415cf1bf6abed3e431e64fff
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b45b1a1f2903dfcdfa4a95adc161766f5bb3328c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403477"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053047"
 ---
 # <a name="alternatives-to-the-documentview-architecture"></a>문서/뷰 아키텍처의 대체
 
@@ -56,7 +56,7 @@ MFC에서 제공하는 문서/뷰 아키텍처는 응용 프로그램의 많은 
 
 - 문서를 사용하지 않는 부속물로 취급하고 위에서 제시한 대로 뷰 클래스에서 데이터 관리 코드를 구현합니다. 문서에 대한 오버헤드는 상대적으로 낮습니다. 단일 [CDocument](../mfc/reference/cdocument-class.md) 개체의 작은 오버 헤드를 더한 자체로 오버 헤드의 양이 발생 `CDocument`의 기본 클래스인 [CCmdTarget](../mfc/reference/ccmdtarget-class.md) 하 고 [CObject](../mfc/reference/cobject-class.md)합니다. 후자의 클래스는 모두 작습니다.
 
-     에 선언 된 `CDocument`:
+   에 선언 된 `CDocument`:
 
    - 두 개의 `CString` 개체입니다.
 
@@ -66,7 +66,7 @@ MFC에서 제공하는 문서/뷰 아키텍처는 응용 프로그램의 많은 
 
    - 문서 보기 목록이 포함된 한 개의 `CPtrList` 개체입니다.
 
-     또한 문서에는 문서 개체를 만드는 시간, 해당 뷰 개체, 프레임 창 및 문서 템플릿 개체가 필요합니다.
+   또한 문서에는 문서 개체를 만드는 시간, 해당 뷰 개체, 프레임 창 및 문서 템플릿 개체가 필요합니다.
 
 - 문서와 뷰 모두 사용하지 않는 부속물로 취급합니다. 데이터 관리 및 그리기 코드를 뷰 대신 프레임 창에 넣습니다. 이 방법은 C 언어 프로그래밍 모델에 더 가깝습니다.
 

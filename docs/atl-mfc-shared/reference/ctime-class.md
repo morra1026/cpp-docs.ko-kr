@@ -1,7 +1,7 @@
 ---
 title: CTime 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 10/12/2018
+ms.date: 10/18/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c14dc8c8c9b697ecb7dcf1ff227eb7a76ad7cfa5
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 2b82d172ec449a48866ee973421da95787bc9858
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328599"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070532"
 ---
 # <a name="ctime-class"></a>CTime 클래스
 
@@ -49,7 +49,7 @@ ms.locfileid: "49328599"
 ## <a name="syntax"></a>구문
 
 ```
-class CTime  
+class CTime
 ```
 
 ## <a name="members"></a>멤버
@@ -119,17 +119,17 @@ class CTime
 비교 연산자입니다.
 
 ```
-bool operator==(CTime time) const throw(); 
+bool operator==(CTime time) const throw();
 bool operator!=(CTime time) const throw();
 bool operator<(CTime time) const throw();
 bool operator>(CTime time) const throw();
 bool operator<=(CTime time) const throw();
-bool operator>=(CTime time) const throw(); 
+bool operator>=(CTime time) const throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*time*  
+*time*<br/>
 비교할 `CTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -152,22 +152,21 @@ CTime(int nYear, int nMonth, int nDay,
 CTime(WORD wDosDate, WORD wDosTime, int nDST = -1);
 CTime(const SYSTEMTIME& st, int nDST = - 1) throw();
 CTime(const FILETIME& ft, int nDST = - 1);
-CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
+CTime(const DBTIMESTAMP& dbts, int nDST = -1) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*timeSrc*  
+*timeSrc*<br/>
 나타냅니다는 `CTime` 이미 존재 하는 개체입니다.
 
-*time*  
-A **__time64_t** 시간 값은 1970 년 1 월 1 일 UTC 이후의 초 수입니다. 현지 시간으로 조정 됩니다이 note 합니다. 예를 들어, 뉴욕에 만들려는 경우는 `CTime` 자릿수가 0 인 매개 변수를 전달 하 여 개체 [CTime::GetMonth](#getmonth) 12를 반환 합니다.  
+*time*<br/>
+`__time64_t` 시간 값은 1970 년 1 월 1 일 UTC 이후의 초 수입니다. 현지 시간으로 조정 됩니다이 note 합니다. 예를 들어, 뉴욕에 만들려는 경우는 `CTime` 자릿수가 0 인 매개 변수를 전달 하 여 개체 [CTime::GetMonth](#getmonth) 12를 반환 합니다.
 
-
-*nYear*, *nMonth*합니다 *발생 한 날짜*를 *n 시간*를 *nMin*, *nSec*  
+*nYear*, *nMonth*합니다 *발생 한 날짜*를 *n 시간*를 *nMin*, *nSec*<br/>
 복사할 새 날짜 및 시간 값을 나타내는 `CTime` 개체입니다.
 
-*nDST*  
+*nDST*<br/>
 일광 절약 시간이 적용 되는지 나타냅니다. 세 가지 값 중 하나일 수 있습니다.
 
 - *nDST* 0Standard 시간으로 적용 됩니다.
@@ -176,16 +175,16 @@ A **__time64_t** 시간 값은 1970 년 1 월 1 일 UTC 이후의 초 수입니�
 
 - *nDST* 0The 기본값 보다 작은 값으로 설정 합니다. 자동으로 표준 시간이 나 일광 절약 시간이 적용 되는지 계산 합니다.
 
-*wDosDate*, *wDosTime*  
+*wDosDate*, *wDosTime*<br/>
 MS-DOS 날짜 및 시간 값을 날짜/시간 값으로 변환 되어 새 복사 `CTime` 개체입니다.
 
-*st*  
+*st*<br/>
 A [SYSTEMTIME](../../mfc/reference/systemtime-structure.md) 하는 날짜/시간 값으로 변환 하 고 새 복사 구조 `CTime` 개체입니다.
 
-*ft*  
+*ft*<br/>
 A [FILETIME](../../mfc/reference/filetime-structure.md) 하는 날짜/시간 값으로 변환 하 고 새 복사 구조 `CTime` 개체입니다.
 
-dbts  
+*dbts*<br/>
 현재 현지 시간을 포함 하는 DBTIMESTAMP 구조체에 대 한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -200,13 +199,13 @@ dbts
 
 - `CTime( int, int, ...);` 생성 된 `CTime` 각 구성 요소와 현지 시간 구성 요소에서 개체를 다음 범위로 제한 합니다.
 
-   |구성 요소|범위|  
-   |---------------|-----------|  
-   |*nYear*|1970-3000|  
-   |*nMonth*|1-12|  
-   |*발생 한 날짜*|1-31|  
-   |*n 시간*|0-23|  
-   |*nMin*|0-59|  
+   |구성 요소|범위|
+   |---------------|-----------|
+   |*nYear*|1970-3000|
+   |*nMonth*|1-12|
+   |*발생 한 날짜*|1-31|
+   |*n 시간*|0-23|
+   |*nMin*|0-59|
    |*nSec*|0-59|
 
    이 생성자가 적절 한 UTC로 변환 합니다. Microsoft Foundation Class 라이브러리의 디버그 버전 경우 어설션 또는 범위를 벗어났습니다. 시간 구성 요소입니다. 인수를 호출 하기 전에 확인 해야 합니다. 이 생성자는 현지 시간을 필요합니다.
@@ -231,16 +230,16 @@ dbts
 날짜-시간 값의 서식이 지정 된 표현을 만들려면이 멤버 함수를 호출 합니다.
 
 ```
-CString Format(LPCTSTR pszFormat) const; 
-CString Format(UINT nFormatID) const; 
+CString Format(LPCTSTR pszFormat) const;
+CString Format(UINT nFormatID) const;
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*pszFormat*  
+*pszFormat*<br/>
 유사한 문자열 서식의 `printf` 문자열 서식을 지정 합니다. 서식 코드 앞에 백분율 (`%`)에 서명, 해당 바뀝니다 `CTime` 구성 요소입니다. 반환된 된 문자열에 형식 문자열에 다른 문자 변경 되지 않고 복사 됩니다. 런타임 함수를 참조 하세요 [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) 서식 코드의 목록은 합니다.
 
-*nFormatID*  
+*nFormatID*<br/>
 이 형식을 식별 하는 문자열의 ID입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -268,10 +267,10 @@ CString FormatGmt(UINT nFormatID) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*pszFormat*  
+*pszFormat*<br/>
 유사한 서식 문자열을 지정 합니다 `printf` 문자열 서식을 지정 합니다. 런타임 함수를 참조 하세요 [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) 세부 정보에 대 한 합니다.
 
-*nFormatID*  
+*nFormatID*<br/>
 이 형식을 식별 하는 문자열의 ID입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -298,7 +297,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*dbts*  
+*dbts*<br/>
 현재 현지 시간을 포함 하는 DBTIMESTAMP 구조체에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -323,7 +322,7 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*timeDest*  
+*timeDest*<br/>
 에 대 한 참조를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 의 변환 된 날짜/시간 값을 포함 하는 구조는 `CTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -359,7 +358,7 @@ static CTime WINAPI GetCurrentTime() throw();
 일 나타내는 반환 합니다 `CTime` 개체입니다.
 
 ```
-int GetDay() const throw(); 
+int GetDay() const throw();
 ```
 
 ### <a name="return-value"></a>반환 값
@@ -404,7 +403,7 @@ struct tm* GetGmtTm(struct tm* ptm) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*ptm*  
+*ptm*<br/>
 데이터를 받을 버퍼를 가리킵니다. 이 포인터가 NULL 이면 예외가 throw 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -451,7 +450,7 @@ struct tm* GetLocalTm(struct tm* ptm) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*ptm*  
+*ptm*<br/>
 데이터를 받을 버퍼를 가리킵니다. 이 포인터가 NULL 이면 예외가 throw 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -574,7 +573,7 @@ CTime& operator=(__time64_t time) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*time*  
+*time*<br/>
 새 날짜/시간 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -597,10 +596,10 @@ CTimeSpan operator-(CTime time) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*timeSpan*  
+*timeSpan*<br/>
 `CTimeSpan` 개체를 추가 하거나 뺄 수 있습니다.
 
-*time*  
+*time*<br/>
 `CTime` 뺄 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -626,7 +625,7 @@ CTime& operator-=(CTimeSpan span) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*  
+*범위*<br/>
 `CTimeSpan` 개체를 추가 하거나 뺄 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -654,7 +653,7 @@ CArchive& Serialize64(CArchive& ar);
 
 ### <a name="parameters"></a>매개 변수
 
-*ar*  
+*ar*<br/>
 `CArchive` 업데이트 하려는 개체입니다.
 
 ### <a name="return-value"></a>반환 값

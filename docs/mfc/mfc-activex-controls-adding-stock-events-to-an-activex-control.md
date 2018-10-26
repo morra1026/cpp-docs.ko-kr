@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51fff5b7e43b489bdaf2a27b115af26c48e33956
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3bf023dbc52ccac7311a62aba1a290b1a03190dd
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46400794"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060561"
 ---
 # <a name="mfc-activex-controls-adding-stock-events-to-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤에 스톡 이벤트 추가
 
@@ -73,13 +73,13 @@ ms.locfileid: "46400794"
 |-----------|---------------------|--------------|
 |클릭|**void FireClick)**|마우스를 캡처하면 컨트롤에서 모든 발생 **BUTTONUP** (왼쪽, 가운데 또는 오른쪽) 메시지를 수신 하 고 단추를 컨트롤 위에 놓을 합니다. MouseDown 재고 및 MouseUp 이벤트를이 이벤트 전에 발생합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_CLICK)**|
 |매크로나|**void FireDblClick)**|클릭과 유사 하지만 때 발생 하는 **BUTTONDBLCLK** 메시지를 수신 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_DBLCLICK)**|
-|Error|**FireError void (SCODE***scode* **, LPCSTR** `lpszDescription` **, UINT**`nHelpID`**= 0)** |메서드 호출 또는 속성 액세스의 범위 외부에서 ActiveX 컨트롤 내에 오류가 있을 때 발생 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_ERROREVENT)**|
-|KeyDown|**FireKeyDown void (짧은** `nChar` **짧은**`nShiftState`**)** |때 발생 하는 `WM_SYSKEYDOWN` 또는 `WM_KEYDOWN` 메시지를 수신 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_KEYDOWN)**|
-|키 누름|**FireKeyPress void (짧은** <strong>\*</strong> `pnChar` **)** |때 발생 하는 `WM_CHAR` 메시지를 수신 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_KEYPRESS)**|
-|KeyUp|**FireKeyUp void (짧은** `nChar` **짧은**`nShiftState`**)** |때 발생 하는 `WM_SYSKEYUP` 또는 `WM_KEYUP` 메시지를 수신 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_KEYUP)**|
-|MouseDown|**FireMouseDown void (짧은** `nButton` **짧은** `nShiftState` **, float***x* **, float** *y***)** |있는 경우 발생 **BUTTONDOWN** (왼쪽, 가운데 또는 오른쪽) 수신 합니다. 마우스는이 이벤트가 발생 하기 직전에 캡처됩니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_MOUSEDOWN)**|
-|MouseMove|**FireMouseMove void (짧은** `nButton` **짧은** `nShiftState` **, float***x* **, float** *y***)** |WM_MOUSEMOVE 메시지를 받을 때 발생 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_MOUSEMOVE)**|
-|MouseUp|**FireMouseUp void (짧은** `nButton` **짧은** `nShiftState` **, float***x* **, float** *y***)** |있는 경우 발생 **BUTTONUP** (왼쪽, 가운데 또는 오른쪽) 수신 합니다. 이 이벤트가 발생 하기 전에 마우스 캡처가 해제 됩니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_MOUSEUP)**|
+|Error|**FireError void (SCODE***scode* **, LPCSTR** `lpszDescription` **, UINT**`nHelpID`**= 0)**|메서드 호출 또는 속성 액세스의 범위 외부에서 ActiveX 컨트롤 내에 오류가 있을 때 발생 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_ERROREVENT)**|
+|KeyDown|**FireKeyDown void (짧은** `nChar` **짧은**`nShiftState`**)**|때 발생 하는 `WM_SYSKEYDOWN` 또는 `WM_KEYDOWN` 메시지를 수신 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_KEYDOWN)**|
+|키 누름|**FireKeyPress void (짧은** <strong>\*</strong> `pnChar` **)**|때 발생 하는 `WM_CHAR` 메시지를 수신 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_KEYPRESS)**|
+|KeyUp|**FireKeyUp void (짧은** `nChar` **짧은**`nShiftState`**)**|때 발생 하는 `WM_SYSKEYUP` 또는 `WM_KEYUP` 메시지를 수신 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_KEYUP)**|
+|MouseDown|**FireMouseDown void (짧은** `nButton` **짧은** `nShiftState` **, float***x* **, float** *y***)**|있는 경우 발생 **BUTTONDOWN** (왼쪽, 가운데 또는 오른쪽) 수신 합니다. 마우스는이 이벤트가 발생 하기 직전에 캡처됩니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_MOUSEDOWN)**|
+|MouseMove|**FireMouseMove void (짧은** `nButton` **짧은** `nShiftState` **, float***x* **, float** *y***)**|WM_MOUSEMOVE 메시지를 받을 때 발생 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_MOUSEMOVE)**|
+|MouseUp|**FireMouseUp void (짧은** `nButton` **짧은** `nShiftState` **, float***x* **, float** *y***)**|있는 경우 발생 **BUTTONUP** (왼쪽, 가운데 또는 오른쪽) 수신 합니다. 이 이벤트가 발생 하기 전에 마우스 캡처가 해제 됩니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_MOUSEUP)**|
 |ReadyStateChange|**void FireReadyStateChange)**|컨트롤이 받은 데이터의 양으로 인해 다음 준비 상태로 전환 하는 경우 발생 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_READYSTATECHANGE)**|
 
 ##  <a name="_core_adding_a_stock_event_using_classwizard"></a> 사용 하 여 스톡 이벤트 추가 이벤트 추가 마법사
@@ -94,7 +94,7 @@ ms.locfileid: "46400794"
 
 1. 바로 가기 메뉴에서 클릭 **추가** 을 클릭 한 다음 **이벤트 추가**합니다.
 
-     이 이벤트 추가 마법사를 엽니다.
+   이 이벤트 추가 마법사를 엽니다.
 
 1. 에 **이벤트 이름** 드롭 다운 목록에서 `KeyPress`합니다.
 

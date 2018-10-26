@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 83606041250dafed0ef57eb4eea18d7314e0bbef
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ba22c87ee601d66ccfb1092047e69be42d8163c3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429268"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50052757"
 ---
 # <a name="inserting-a-form-into-a-project"></a>프로젝트에 폼 삽입
 
@@ -33,7 +33,7 @@ ms.locfileid: "46429268"
 
 1. 바로 가기 메뉴에서 클릭 **추가** 을 클릭 한 다음 **클래스 추가**합니다.
 
-     경우는 **새 폼** 명령을 사용할 수 없는, 프로젝트에 활성 템플릿 라이브러리 (ATL)에 기반 할 수 있습니다. ATL 프로젝트에 폼을 추가 하려면 [설정이 지정](../atl/reference/application-settings-atl-project-wizard.md) 먼저 프로젝트를 만들 때.
+   경우는 **새 폼** 명령을 사용할 수 없는, 프로젝트에 활성 템플릿 라이브러리 (ATL)에 기반 할 수 있습니다. ATL 프로젝트에 폼을 추가 하려면 [설정이 지정](../atl/reference/application-settings-atl-project-wizard.md) 먼저 프로젝트를 만들 때.
 
 1. **MFC** 폴더를 클릭 **MFC 클래스**합니다.
 

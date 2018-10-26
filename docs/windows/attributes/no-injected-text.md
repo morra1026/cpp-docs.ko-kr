@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a9289c1b8f28b90dd5a3a4a437d3e2a5870e8468
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 3169c58d192b80400bada8c403f8a769cfb11f55
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791800"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069986"
 ---
 # <a name="noinjectedtext"></a>no_injected_text
 
@@ -54,8 +54,8 @@ ms.locfileid: "48791800"
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-특성 컨텍스트에 대 한 자세한 내용은 참조 하세요. [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-[컴파일러 특성](compiler-attributes.md)  
+[컴파일러 특성](compiler-attributes.md)

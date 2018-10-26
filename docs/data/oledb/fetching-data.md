@@ -1,7 +1,7 @@
 ---
 title: 데이터를 가져오는 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/19/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -18,22 +18,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b7aaff3ccd2756ecfbac1cf745aaac74b76a91f9
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 4f0467d322242bb222e5365b45a57e1aa2fe2943
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48859954"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49807473"
 ---
 # <a name="fetching-data"></a>데이터 페치
 
-데이터 원본, 세션 및 행 집합 개체를 연 후에 데이터를 가져올 수 있습니다. 사용할 접근자 형식에 따라 열을 바인딩하는 것이 해야 합니다.
+데이터 원본, 세션 및 행 집합 개체를 연 후에 데이터를 가져올 수 있습니다. 사용 중인 접근자의 형식에 따라 열을 바인딩하는 것이 해야 합니다.
 
-### <a name="to-fetch-data"></a>데이터를 인출 하려면
+## <a name="to-fetch-data"></a>데이터를 인출 하려면
 
 1. 적절 한 사용 하 여 행 집합을 엽니다 **열고** 명령입니다.
 
-1. 사용 중인 경우 `CManualAccessor`를 이미 수행 하지 않은 경우 출력 열을 바인딩합니다. 열을 바인딩하려면 호출 `GetColumnInfo`를 만든 다음 접근자는 바인딩을 사용 하 여 다음 예와에서 같이 및:
+1. 사용 중인 경우 `CManualAccessor`을 아직 수행 하지 않은 경우 출력 열을 바인딩합니다. 다음 예제에서 가져온 것은 [DBViewer](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/dbviewer) 샘플입니다. 열을 바인딩하려면 호출 `GetColumnInfo`를 만든 다음 접근자는 바인딩을 사용 하 여 다음 예와에서 같이 및:
 
     ```cpp
     // From the DBViewer Sample CDBTreeView::OnQueryEdit
@@ -50,7 +50,7 @@ ms.locfileid: "48859954"
     rs.Bind();
     ```
 
-1. 쓰기는 `while` 루프 데이터를 검색 합니다. 루프에서 호출 `MoveNext` 커서를 이동 하 고 다음 예와에서 같이 S_OK 반환 값을 검사 하려면:
+1. 쓰기를 **동안** 루프 데이터를 검색 합니다. 루프에서 호출 `MoveNext` 커서를 이동 하 고 다음 예와에서 같이 S_OK 반환 값을 검사 하려면:
 
     ```cpp
     while (rs.MoveNext() == S_OK)
@@ -60,7 +60,7 @@ ms.locfileid: "48859954"
     }
     ```
 
-1. 내는 `while` 루프 접근자 유형에 따라 데이터를 가져올 수 있습니다.
+1. 내 합니다 **동안** 루프 접근자 유형에 따라 데이터를 가져올 수 있습니다.
 
    - 사용 하는 경우는 [CAccessor](../../data/oledb/caccessor-class.md) 클래스 데이터 멤버를 포함 하는 사용자 레코드가 있어야 합니다. 다음 예제에서와 같이 해당 데이터 멤버를 사용 하 여 데이터를 액세스할 수 있습니다.
 
@@ -74,7 +74,7 @@ ms.locfileid: "48859954"
         }
         ```
 
-   - 사용 하는 경우는 `CDynamicAccessor` 또는 `CDynamicParameterAccessor` 클래스에 액세스 하는 함수를 사용 하 여 데이터를 가져올 수 있습니다 `GetValue` 및 `GetColumn`다음 예제에서와 같이 합니다. 사용 하는, 사용 하 여 데이터의 형식을 확인 하려는 경우 `GetType`합니다.
+   - 사용 하는 경우는 `CDynamicAccessor` 또는 `CDynamicParameterAccessor` 클래스에 액세스 하는 함수를 사용 하 여 데이터를 가져올 수 있습니다 `GetValue` 및 `GetColumn`다음 예제에서와 같이 합니다. 사용 중인 데이터의 형식을 확인 하려는 경우, 사용 하 여 `GetType`입니다.
 
         ```cpp
         while (rs.MoveNext() == S_OK)
@@ -101,6 +101,6 @@ ms.locfileid: "48859954"
         }
         ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 템플릿 작업](../../data/oledb/working-with-ole-db-consumer-templates.md)

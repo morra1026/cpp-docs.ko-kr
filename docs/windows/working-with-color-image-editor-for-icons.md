@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 200c71b6d2196251c8db3542b2b1b2ce88fdff85
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 9c829d086198233f0149782f1cb4cb1780aec7ad
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315537"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50054180"
 ---
 # <a name="working-with-color-image-editor-for-icons"></a>색 작업(아이콘에 대한 이미지 편집기)
 
@@ -69,4 +69,4 @@ True-컬러 이미지를 만들 수도 있습니다. 그러나 true 색상 샘�
 
 ## <a name="see-also"></a>참고 항목
 
-[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)  
+[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)

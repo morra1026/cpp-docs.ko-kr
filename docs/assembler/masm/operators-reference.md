@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e4708af3c0fa272a1ca803f549ce8953caccaa27
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 5c9f5beb0e3525de6df88e44248410810502962e
+ms.sourcegitcommit: 4cbde5d164d681204c4011dc95a921d75292f423
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688178"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459155"
 ---
 # <a name="masm-operators-reference"></a>MASM 연산자 참조
 
@@ -36,7 +36,7 @@ ms.locfileid: "43688178"
 
 ||||
 |-|-|-|
-|[! (논리적 not 런타임)](operator-logical-not-masm-run-time.md)|[! = (같지 않음 런타임)](operator-not-equal-masm.md)|[&#124;&#124;(런타임 논리 또는)](operator-logical-or.md)|
+|[\! (논리적 not 런타임)](operator-logical-not-masm-run-time.md)|[\!= (같지 않음 런타임)](operator-not-equal-masm.md)|[&#124;&#124;(런타임 논리 또는)](operator-logical-or.md)|
 |[& & (논리적 런타임 및)](operator-logical-and-masm-run-time.md)|[< (런타임 미만)](operator-less-than-masm-run-time.md)|[\<= (작거나 런타임)](operator-less-or-equal-masm-run-time.md)|
 |[(같은 런타임) = =](operator-equal-masm-run-time.md)|[> (보다 큰 런타임)](operator-greater-than-masm-run-time.md)|[> = (크거나 런타임)](operator-greater-or-equal-masm-run-time.md)|
 |[& (비트 런타임 및)](operator-bitwise-and.md)|||
@@ -54,7 +54,7 @@ ms.locfileid: "43688178"
 
 ||||
 |-|-|-|
-|[! (리터럴 문자)](operator-logical-not-masm.md)|[% (텍스트로 처리)](operator-percent.md)||
+|[\! (리터럴 문자)](operator-logical-not-masm.md)|[% (텍스트로 처리)](operator-percent.md)||
 |[;; (주석으로 처리)](operator-semicolons.md)|[&lt; &gt; (하나의 리터럴로 처리)](operator-literal.md)|[& & (매개 변수 값 대체)](operator-logical-and-masm.md)|
 
 ## <a name="miscellaneous"></a>기타

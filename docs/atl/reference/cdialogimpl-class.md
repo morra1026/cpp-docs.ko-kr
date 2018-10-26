@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4983d2a56407449873c8b4db73d82fa2ef864058
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 297a54b588cadc3a43e1b08ca89820807edb8ba2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328261"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069843"
 ---
 # <a name="cdialogimpl-class"></a>CDialogImpl 클래스
 
@@ -115,12 +115,12 @@ template <class T,
 
 ```
 HWND Create(
-    HWND hWndParent,  
-    LPARAM dwInitParam = NULL );  
+    HWND hWndParent,
+    LPARAM dwInitParam = NULL );
 
 HWND Create(
-    HWND hWndParent,  
-    RECT&, 
+    HWND hWndParent,
+    RECT&,
     LPARAM dwInitParam = NULL);
 ```
 
@@ -144,7 +144,7 @@ HWND Create(
 
 ##  <a name="destroywindow"></a>  CDialogImpl::DestroyWindow
 
-모덜리스 대화 상자를 제거합니다.  
+모덜리스 대화 상자를 제거합니다.
 
 ```
 BOOL DestroyWindow();
@@ -160,13 +160,13 @@ TRUE를 반환 하는 경우 대화 상자를 성공적으로 제거 되었습�
 
 ##  <a name="dialogproc"></a>  CDialogImpl::DialogProc
 
-이 정적 함수는 대화 상자 프로시저를 구현합니다.  
+이 정적 함수는 대화 상자 프로시저를 구현합니다.
 
 ```
 static LRESULT CALLBACK DialogProc(
-    HWND hWnd,  
-    UINT uMsg,  
-    WPARAM wParam,  
+    HWND hWnd,
+    UINT uMsg,
+    WPARAM wParam,
     LPARAM lParam);
 ```
 
@@ -199,8 +199,8 @@ TRUE 이면 메시지를 처리 합니다. 그렇지 않으면 FALSE입니다.
 모달 대화 상자를 만듭니다.
 
 ```
-INT_PTR DoModal(  
-    HWND hWndParent = ::GetActiveWindow(),   
+INT_PTR DoModal(
+    HWND hWndParent = ::GetActiveWindow(),
     LPARAM dwInitParam = NULL);
 ```
 
@@ -306,9 +306,9 @@ virtual void OnFinalMessage(HWND hWnd);
 
 ```
 static LRESULT CALLBACK StartDialogProc(
-    HWND hWnd,  
-    UINT uMsg,  
-    WPARAM wParam,  
+    HWND hWnd,
+    UINT uMsg,
+    WPARAM wParam,
     LPARAM lParam);
 ```
 

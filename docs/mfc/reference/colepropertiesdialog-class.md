@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa1803fb34ce1c9cf50b996efb9cc5467dd55996
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0bd1e6953d936106f272aa8bef4243728d742d8c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387837"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078195"
 ---
 # <a name="colepropertiesdialog-class"></a>COlePropertiesDialog 클래스
 
@@ -138,15 +138,15 @@ COlePropertiesDialog(
 
 - 일반
 
-     이 페이지는 선택한 문서 항목을 나타내는 파일에 대 한 시스템 정보를 포함 합니다. 이 페이지에서 사용자 다른 형식으로 선택한 항목을 변환할 수 있습니다.
+   이 페이지는 선택한 문서 항목을 나타내는 파일에 대 한 시스템 정보를 포함 합니다. 이 페이지에서 사용자 다른 형식으로 선택한 항목을 변환할 수 있습니다.
 
 - 보기
 
-     이 페이지, 항목을 표시 하 고, 아이콘을 변경 하 고, 이미지의 크기를 변경에 대 한 옵션이 있습니다.
+   이 페이지, 항목을 표시 하 고, 아이콘을 변경 하 고, 이미지의 크기를 변경에 대 한 옵션이 있습니다.
 
 - 링크
 
-     이 페이지에서 링크 된 항목의 위치를 변경 하 고 연결 된 항목을 업데이트 하는 옵션이 있습니다. 사용자는이 페이지에서 선택한 항목의 링크를 중단 될 수 있습니다.
+   이 페이지에서 링크 된 항목의 위치를 변경 하 고 연결 된 항목을 업데이트 하는 옵션이 있습니다. 사용자는이 페이지에서 선택한 항목의 링크를 중단 될 수 있습니다.
 
 기본적으로 제공 하는 것 보다 훨씬 많은 페이지를 추가 하려면 수정를 [m_psh](#m_psh) 멤버 변수 조건일 경우의 생성자에 `COlePropertiesDialog`-파생 클래스입니다. 이 고급 구현의 `COlePropertiesDialog` 생성자입니다.
 

@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5b5bb50c99efc2a7b18fbbbabba394ec5330661
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fc151ae25df4cac2c6b5ed9ac5a523efda28dff2
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378204"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082712"
 ---
 # <a name="using-property-sheets-in-your-application"></a>응용 프로그램에서 속성 시트 사용
 
@@ -34,9 +34,9 @@ ms.locfileid: "46378204"
 
 1. 각 속성 페이지 대화 상자 템플릿 리소스를 만듭니다. 사용자 수로 전환 하 한 페이지에서 다른 레이아웃을 각 페이지 최대한 일관 되 게 되므로 점을 염두에 두십시오.
 
-     모든 페이지에 대 한 대화 상자 템플릿 동일한 크기 일 필요가 없습니다. 속성 페이지에 대 한 속성 시트에 할당할 공간 크기를 확인 하는 가장 큰 페이지의 크기를 사용 하는 프레임 워크입니다.
+   모든 페이지에 대 한 대화 상자 템플릿 동일한 크기 일 필요가 없습니다. 속성 페이지에 대 한 속성 시트에 할당할 공간 크기를 확인 하는 가장 큰 페이지의 크기를 사용 하는 프레임 워크입니다.
 
-     속성 페이지 대화 상자 템플릿 리소스를 만들면 다음과 같은 스타일 속성 대화 상자 속성 시트에 지정 해야 합니다.
+   속성 페이지 대화 상자 템플릿 리소스를 만들면 다음과 같은 스타일 속성 대화 상자 속성 시트에 지정 해야 합니다.
 
    - 설정 합니다 **캡션** 편집 상자에는 **일반** 이 페이지에 대 한 탭에 표시 하려는 텍스트 페이지입니다.
 
@@ -60,9 +60,9 @@ ms.locfileid: "46378204"
 
    - 호출 [CPropertySheet::AddPage](../mfc/reference/cpropertysheet-class.md#addpage) 각 페이지에 대 한 합니다.
 
-     일반적으로 만드는 개체를 합니다 `CPropertySheet` 만들어지기를 `CPropertyPage` 이 단계에서는 개체입니다. 그러나 구현 하는 경우는 `CPropertySheet`-파생 클래스를 포함할 수 있습니다를 `CPropertyPage` 개체를 `CPropertySheet` 개체와 호출 `AddPage` 에서 각 페이지에 대 한는 `CPropertySheet`-클래스 생성자를 파생 합니다. `AddPage` 추가 된 `CPropertyPage` 속성 시트의 페이지 목록을 개체 하지만 실제로 해당 페이지의 창을 만들지 않습니다. 따라서 필요한 경우가 아니라면 호출 속성 시트 창의 생성 될 때까지 기다릴 `AddPage`; 호출할 수 있습니다 `AddPage` 속성 시트의 생성자에서.
+   일반적으로 만드는 개체를 합니다 `CPropertySheet` 만들어지기를 `CPropertyPage` 이 단계에서는 개체입니다. 그러나 구현 하는 경우는 `CPropertySheet`-파생 클래스를 포함할 수 있습니다를 `CPropertyPage` 개체를 `CPropertySheet` 개체와 호출 `AddPage` 에서 각 페이지에 대 한는 `CPropertySheet`-클래스 생성자를 파생 합니다. `AddPage` 추가 된 `CPropertyPage` 속성 시트의 페이지 목록을 개체 하지만 실제로 해당 페이지의 창을 만들지 않습니다. 따라서 필요한 경우가 아니라면 호출 속성 시트 창의 생성 될 때까지 기다릴 `AddPage`; 호출할 수 있습니다 `AddPage` 속성 시트의 생성자에서.
 
-     기본적으로 속성 시트에 속성 시트의 단일 행에 들어가는 것 보다 더 많은 탭 탭이 여러 행에 스택 됩니다. 호출 스택 사용 하지 않으려면 [CPropertySheet::EnableStackedTabs](../mfc/reference/cpropertysheet-class.md#enablestackedtabs) 매개 변수 설정한 **FALSE**합니다. 호출 해야 `EnableStackedTabs` 속성 시트를 만들 때.
+   기본적으로 속성 시트에 속성 시트의 단일 행에 들어가는 것 보다 더 많은 탭 탭이 여러 행에 스택 됩니다. 호출 스택 사용 하지 않으려면 [CPropertySheet::EnableStackedTabs](../mfc/reference/cpropertysheet-class.md#enablestackedtabs) 매개 변수 설정한 **FALSE**합니다. 호출 해야 `EnableStackedTabs` 속성 시트를 만들 때.
 
 1. 호출 [CPropertySheet::DoModal](../mfc/reference/cpropertysheet-class.md#domodal) 하거나 [만들기](../mfc/reference/cpropertysheet-class.md#create) 속성 시트를 표시 합니다. 호출 `DoModal` 모달 대화 상자로 속성 시트를 만들어야 합니다. 호출 **만들기** 모덜리스 대화 상자로 속성 시트를 만들려고 합니다.
 

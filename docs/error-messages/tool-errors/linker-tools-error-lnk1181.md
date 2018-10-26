@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2eaa6ce8a1ca566fd3d585b5c457e1fb2829b0b0
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 787c6c35b698b5dce57c4aaf3acb4eca496ead95
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46016743"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50072163"
 ---
 # <a name="linker-tools-error-lnk1181"></a>링커 도구 오류 LNK1181
 
@@ -42,8 +42,6 @@ ms.locfileid: "46016743"
 다른 가능한 원인은 LNK1181 공백이 포함된 된 긴 파일 이름을 따옴표로 묶지 된 경우  링커는만 첫 번째 공백 까지의 파일 이름으로 인식 하 고 파일 확장명으로 간주 하는 경우. obj.  이 상황을 해결 방법은 긴 파일 이름을 묶습니다 (경로 파일 이름) 따옴표로 합니다.
 
 사용 하 여 컴파일하는 [/P (파일로 전처리)](../../build/reference/p-preprocess-to-a-file.md) 옵션 LNK1181 해당 옵션.obj 파일의 생성을 억제 하기 때문에 발생할 수 있습니다.
-
-
 
 ## <a name="see-also"></a>참고 항목
 

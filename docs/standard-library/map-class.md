@@ -1,7 +1,7 @@
 ---
 title: map 클래스 | Microsoft 문서
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/18/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -98,12 +98,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42cd23fcba03ed0161b7a19923851dd3d574e23b
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 96d0b6abc7ca9f82c3b9c1ce3e84b7fad99ea486
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235687"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066398"
 ---
 # <a name="map-class"></a>map 클래스
 
@@ -1012,7 +1012,6 @@ The map m2 is empty.
 ```cpp
 const_iterator end() const;
 
-
 iterator end();
 ```
 
@@ -1115,11 +1114,9 @@ The map m1 doesn't have an element with a key less than 40.
 iterator erase(
     const_iterator Where);
 
-
 iterator erase(
     const_iterator First,
     const_iterator Last);
-
 
 size_type erase(
     const key_type& Key);
@@ -1232,7 +1229,6 @@ int main()
 
 ```cpp
 iterator find(const Key& key);
-
 
 const_iterator find(const Key& key) const;
 ```
@@ -1394,19 +1390,16 @@ map에 요소 또는 요소의 범위를 삽입합니다.
 pair<iterator, bool> insert(
     const value_type& Val);
 
-
 // (2) single element, perfect forwarded
 template <class ValTy>
 pair<iterator, bool>
 insert(
     ValTy&& Val);
 
-
 // (3) single element with hint
 iterator insert(
     const_iterator Where,
     const value_type& Val);
-
 
 // (4) single element, perfect forwarded, with hint
 template <class ValTy>
@@ -1414,13 +1407,11 @@ iterator insert(
     const_iterator Where,
     ValTy&& Val);
 
-
 // (5) range
 template <class InputIterator>
 void insert(
     InputIterator First,
     InputIterator Last);
-
 
 // (6) initializer list
 void insert(
@@ -2636,9 +2627,9 @@ map이 요소의 순서를 지정하는 데 사용하는 비교 함수 개체를
 
 ### <a name="remarks"></a>설명
 
-map *m*의 경우 두 요소 *e*1( *k*1, *d*1) 및 *e*2( *k*2, `d`2)가 `value_type` 형식의 개체이면 *m.*`value_comp`( *e*1, *e*2)는 *m.*`key_comp`*(k*1, *k*2)와 동일합니다. 여기서 *k*1 및 *k*2는 `key_type` 형식의 키이고 `d`1 및`d`2는 `mapped_type` 형식의 데이터입니다. 저장된 개체는 멤버 함수
+지도의 *m*경우 두 요소 *e1*(*k1*하십시오 *d1*) 및 *e2*(*k2*, *d2*) 형식의 개체가 `value_type`여기서 *k1* 하 고 *k1* 형식의 해당 키가 `key_type` 및 *d1* 및 *d2* 은 해당 데이터 형식의 `mapped_type`, 한 다음 `m.value_comp(e1, e2)` 동일 `m.key_comp(k1, k2)`합니다. 저장된 개체는 멤버 함수
 
-**bool operator**( **value_type&**`left`, **value_type&**`right`);를
+`bool operator( value_type& left, value_type& right);`
 
 정의합니다. 이 함수는 `left`의 키 값이 앞에 오고 정렬 순서의 `right` 키 값과 같지 않으면 **true**를 반환합니다.
 

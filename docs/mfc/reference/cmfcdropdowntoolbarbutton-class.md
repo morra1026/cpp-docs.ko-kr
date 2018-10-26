@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 157bcb8b1b8341e16d7dcb6c3a9d9fc9dc1a4d4e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c113ce68cf609970342d69ebc03f700e17c7e2a9
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431745"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50064318"
 ---
 # <a name="cmfcdropdowntoolbarbutton-class"></a>CMFCDropDownToolbarButton 클래스
 
@@ -91,7 +91,7 @@ class CMFCDropDownToolbarButton : public CMFCToolBarButton
 |[CMFCDropDownToolbarButton::IsDropDown](#isdropdown)|드롭다운 도구 모음에서 현재 열려 있는지 여부를 결정 합니다.|
 |[CMFCDropDownToolbarButton::IsExtraSize](#isextrasize)|단추는 확장 된 테두리 표시 될 수 있는지 여부를 결정 합니다. (재정의 [CMFCToolBarButton::IsExtraSize](../../mfc/reference/cmfctoolbarbutton-class.md#isextrasize).)|
 |[CMFCDropDownToolbarButton::OnCalculateSize](#oncalculatesize)|지정 된 디바이스 컨텍스트 및 도킹 상태에 대 한 단추의 크기를 계산 하기 위해 프레임 워크에서 호출 됩니다. (재정의 [CMFCToolBarButton::OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize).)|
-|`CMFCDropDownToolbarButton::OnCancelMode`|처리 하기 위해 프레임 워크에서 호출 된 [WM_CANCELMODE](/windows/desktop/winmsg/wm-cancelmode) 메시지입니다. (`CMCToolBarButton::OnCancelMode`를 재정의합니다.)|
+|`CMFCDropDownToolbarButton::OnCancelMode`|처리 하기 위해 프레임 워크에서 호출 된 [WM_CANCELMODE](/windows/desktop/winmsg/wm-cancelmode) 메시지입니다. ( `CMCToolBarButton::OnCancelMode`을 재정의합니다.)|
 |[CMFCDropDownToolbarButton::OnChangeParentWnd](#onchangeparentwnd)|새 도구 모음에 단추를 삽입할 때 프레임 워크에서 호출 됩니다. (재정의 [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd).)|
 |[CMFCDropDownToolbarButton::OnClick](#onclick)|사용자가 마우스 단추를 클릭 하면 프레임 워크에서 호출 됩니다. (재정의 [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick).)|
 |[CMFCDropDownToolbarButton::OnClickUp](#onclickup)|사용자가 마우스 단추를 놓을 때 프레임 워크에서 호출 됩니다. (재정의 [CMFCToolBarButton::OnClickUp](../../mfc/reference/cmfctoolbarbutton-class.md#onclickup).)|
@@ -151,7 +151,6 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 
 ```
 CMFCDropDownToolbarButton();
-
 
 CMFCDropDownToolbarButton(
     LPCTSTR lpszName,
@@ -557,6 +556,4 @@ void SetDefaultCommand(UINT uiCmd);
 [CMFCToolBar 클래스](../../mfc/reference/cmfctoolbar-class.md)<br/>
 [CMFCToolBarMenuButton 클래스](../../mfc/reference/cmfctoolbarmenubutton-class.md)<br/>
 [연습: 도구 모음에 컨트롤 배치](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-
-
 

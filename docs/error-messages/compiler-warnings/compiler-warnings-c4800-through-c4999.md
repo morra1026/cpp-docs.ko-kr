@@ -1,6 +1,6 @@
 ---
 title: 컴파일러 경고 C4800 ~ C5999 | Microsoft Docs
-ms.date: 05/30/2018
+ms.date: 10/24/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -99,18 +99,20 @@ f1_keywords:
 - C5042
 - C5043
 - C5044
+- C5045
+- C5046
 dev_langs:
 - C++
 author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: deee159c9da6fce9001d010a1a6b1db9b3b1d666
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 27f212865965883732e8bd956cafecf50e0a8de3
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861423"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990349"
 ---
 # <a name="compiler-warnings-c4800-through-c5999"></a>컴파일러 경고 C4800 ~ C5999
 
@@ -251,3 +253,4 @@ ms.locfileid: "48861423"
 |컴파일러 경고 (수준 2) C5043|'*사양*': 예외 사양이 이전 선언과 일치 하지 않습니다|
 |컴파일러 경고 (수준 4) C5044|명령줄 옵션에 인수가 *옵션* 경로 가리키는 '*경로*' 존재 하지 않는|
 |[컴파일러 경고 C5045](c5045.md)|컴파일러는 메모리 /Qspectre 스위치 하는 경우 지정 된 로드에 대 한 스펙터 완화를 삽입|
+|[컴파일러 경고 (수준 2) C5046](c5046.md)|'*함수*': 정의 되지 않은 내부 링크가 있는 형식을 포함 하는 기호|

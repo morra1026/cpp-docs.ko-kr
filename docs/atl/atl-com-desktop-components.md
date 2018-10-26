@@ -1,7 +1,7 @@
 ﻿---
 title: ATL COM 데스크톱 구성 요소 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/19/2018
 ms.technology:
 - cpp-atl
 ms.topic: conceptual
@@ -15,16 +15,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eadbcd138bd9fc73835938b8ff59d694ede152b8
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: e5cce23d34c739ed6a3aca67e05b59c6cafd9191
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46065623"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062303"
 ---
 # <a name="atl-com-desktop-components"></a>ATL COM 데스크톱 구성 요소
 
-ATL 참조는 액티브 템플릿 라이브러리(ATL), 콤포넌트 개체 모델(COM) 객체의 프로그래밍을 단순화하는 템플릿 기반 C++ 클래스 집합을 설명합니다. ATL를 완전히 활용하기 위해 COM에 대한 지식이 있는 것이 가장 좋습니다.  완벽 하 게 활용 하기 위해 ATL, COM에 대 한 작업 지식이 것이 좋습니다.
+ATL 참조는 액티브 템플릿 라이브러리(ATL), 콤포넌트 개체 모델(COM) 객체의 프로그래밍을 단순화하는 템플릿 기반 C++ 클래스 집합을 설명합니다. ATL를 완전히 활용하기 위해 COM에 대한 지식이 있는 것이 가장 좋습니다.  COM은 이진 규정을 만들고 Windows에서 소프트웨어 구성 요소를 사용 합니다. 완벽 하 게 활용 하기 위해 ATL, COM에 대 한 작업 지식이 것이 좋습니다. COM에 대 한 자세한 내용은 참조 하세요. [구성 요소 개체 모델 (COM)](/windows/desktop/com/component-object-model--com--portal)합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
@@ -61,4 +61,4 @@ ATL Worker 원형에 대 한 링크를 제공합니다.
 COM 객체를 이용한 ATL 사용 방법을 보여주는 샘플 코드입니다.
 
 [OLE DB 템플릿](../data/oledb/ole-db-templates.md)<br/>
-흔히 사용되는 여러 OLE DB 인터페이스를 구현하는 템플릿 클래스 집합인 OLE DB 소비자 및 공급자 템플릿에 대한 참조 자료를 제공합니다.  
+흔히 사용되는 여러 OLE DB 인터페이스를 구현하는 템플릿 클래스 집합인 OLE DB 소비자 및 공급자 템플릿에 대한 참조 자료를 제공합니다.

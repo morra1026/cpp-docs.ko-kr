@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd6f38ff8fbe0c4179addf46a43a35be4237b73e
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6129bea28b943f8f18e1cf6b1e760e604223bdc1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46100840"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060938"
 ---
 # <a name="compiler-error-c2558"></a>컴파일러 오류 C2558
 
@@ -33,7 +33,7 @@ ms.locfileid: "46100840"
 
 1. 복사 생성자가 `private`인 클래스를 복사하려고 하면 문제가 발생할 수 있습니다. 대부분의 경우 `private` 복사 생성자를 포함하는 클래스는 복사해서는 안 됩니다. 일반적인 프로그래밍 기술에서는 `private` 복사 생성자를 선언하여 클래스를 직접 사용하지 못하도록 합니다. 이 클래스 자체만으로는 사용될 수 없습니다. 제대로 작동하려면 또 다른 클래스가 필요합니다.
 
-     `private` 복사 생성자를 포함하는 클래스를 사용해도 안전하다고 판단되는 경우 `private` 생성자가 있는 클래스에서 새 클래스를 파생시킨 다음 새 클래스에서 사용할 수 있는 `public` 또는 `protected` 복사 생성자를 만듭니다. 원본 클래스 대신 파생 클래스를 사용하십시오.
+   `private` 복사 생성자를 포함하는 클래스를 사용해도 안전하다고 판단되는 경우 `private` 생성자가 있는 클래스에서 새 클래스를 파생시킨 다음 새 클래스에서 사용할 수 있는 `public` 또는 `protected` 복사 생성자를 만듭니다. 원본 클래스 대신 파생 클래스를 사용하십시오.
 
 1. 복사 생성자가 명시적인 클래스를 복사하려고 하면 문제가 발생할 수 있습니다. 복사 생성자를 `explicit`으로 선언하면 클래스 개체를 함수에 전달하거나 함수로부터 반환할 수 없습니다. 명시적 생성자에 대 한 자세한 내용은 참조 하세요. [사용자 정의 형식 변환](../../cpp/user-defined-type-conversions-cpp.md)합니다.
 

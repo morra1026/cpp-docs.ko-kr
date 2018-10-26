@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3fbc661a870c7adc6e2e5dda5def744fa3e0396
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 23b538904c78fc0f0bc88b7c12de1bc4862a88ab
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46417022"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50053411"
 ---
 # <a name="mapi-support-in-mfc"></a>MFC의 MAPI 지원
 
@@ -44,11 +44,11 @@ MAPI 첨부 파일을 전송할 파일을 읽는 데 필요 합니다. 응용 �
 
 1. Visual c + + 메뉴 편집기를 사용 하 여 명령 ID가 ID_FILE_SEND_MAIL 메뉴 항목을 추가 합니다.
 
-     이 명령은 ID AFXRES에서 프레임 워크에서 제공 됩니다. 8. 모든 메뉴에 명령을 추가할 수 있지만 일반적으로 추가 됩니다는 **파일** 메뉴.
+   이 명령은 ID AFXRES에서 프레임 워크에서 제공 됩니다. 8. 모든 메뉴에 명령을 추가할 수 있지만 일반적으로 추가 됩니다는 **파일** 메뉴.
 
 1. 문서 메시지 맵에 다음 수동으로 추가 합니다.
 
-     [!code-cpp[NVC_MFCDocView#9](../mfc/codesnippet/cpp/mapi-support-in-mfc_1.cpp)]
+   [!code-cpp[NVC_MFCDocView#9](../mfc/codesnippet/cpp/mapi-support-in-mfc_1.cpp)]
 
     > [!NOTE]
     >  이 메시지 맵 중 하나에서 파생 된 문서에 대해 작동 `CDocument` 또는 `COleDocument` -메시지 맵에서 파생된 문서 클래스에는 두 경우 모두 올바른 기본 클래스를 선택 합니다.

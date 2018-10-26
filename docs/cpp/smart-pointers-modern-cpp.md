@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9142ba85a78259c0a6e5ae06f3745d414e62e908
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 58591309faaa107756739a52173ceea2f1f7b188
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425629"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069882"
 ---
 # <a name="smart-pointers-modern-c"></a>스마트 포인터(최신 C++)
 
@@ -76,11 +76,14 @@ C++ 스마트 포인터 관용구는 C# 같은 언어에서의 개체 생성과 
 
 POCO(Plain Old C++ 개체)에 대한 포인터를 캡슐화하는 데 가장 먼저 스마트 포인터를 사용합니다.
 
-- `unique_ptr` 내부 포인터의 소유자를 하나만 있습니다. `shared_ptr`이 필요하다는 점을 확실히 알 경우 POCO의 기본 선택으로 사용합니다. 새 소유자로 이동할 수 있지만 복사하거나 공유할 수 없습니다. 사용하지 않는 `auto_ptr`을 대체합니다. `boost::scoped_ptr`과 비교합니다. `unique_ptr` 작고 효율적 이며, 크기는 1 포인터 및 빠른 삽입 및 c + + 표준 라이브러리 컬렉션에서 검색에 대 한 rvalue 참조를 지원 합니다. 헤더 파일: `<memory>`. 자세한 내용은 [방법: unique_ptr 인스턴스 만들기 및 사용](../cpp/how-to-create-and-use-unique-ptr-instances.md) 하 고 [unique_ptr 클래스](../standard-library/unique-ptr-class.md)합니다.
+- `unique_ptr`<br/>
+   기본 포인터로 한 명의 소유자만 허용합니다. `shared_ptr`이 필요하다는 점을 확실히 알 경우 POCO의 기본 선택으로 사용합니다. 새 소유자로 이동할 수 있지만 복사하거나 공유할 수 없습니다. 사용하지 않는 `auto_ptr`을 대체합니다. `boost::scoped_ptr`과 비교합니다. `unique_ptr` 작고 효율적 이며, 크기는 1 포인터 및 빠른 삽입 및 c + + 표준 라이브러리 컬렉션에서 검색에 대 한 rvalue 참조를 지원 합니다. 헤더 파일: `<memory>`. 자세한 내용은 [방법: unique_ptr 인스턴스 만들기 및 사용](../cpp/how-to-create-and-use-unique-ptr-instances.md) 하 고 [unique_ptr 클래스](../standard-library/unique-ptr-class.md)합니다.
 
-- `shared_ptr` 참조 횟수가 계산 스마트 포인터입니다. 원시 포인터 하나를 여러 소유자에게 할당하려고 할 경우 사용합니다(예: 컨테이너에서 포인터 복사본을 반환할 때 원본을 유지하고 싶을 경우). 원시 포인터는 모든 `shared_ptr` 소유자가 범위를 벗어나거나 소유권을 포기할 때까지 삭제되지 않습니다. 크기는 2개의 포인터입니다. 하나는 개체용이고, 다른 하나는 참조 횟수가 포함된 공유 제어 블록용입니다. 헤더 파일: `<memory>`. 자세한 내용은 [방법: shared_ptr 인스턴스 만들기 및 사용](../cpp/how-to-create-and-use-shared-ptr-instances.md) 하 고 [shared_ptr 클래스](../standard-library/shared-ptr-class.md)합니다.
+- `shared_ptr`<br/>
+   참조 횟수가 계산되는 스마트 포인터입니다. 원시 포인터 하나를 여러 소유자에게 할당하려고 할 경우 사용합니다(예: 컨테이너에서 포인터 복사본을 반환할 때 원본을 유지하고 싶을 경우). 원시 포인터는 모든 `shared_ptr` 소유자가 범위를 벗어나거나 소유권을 포기할 때까지 삭제되지 않습니다. 크기는 2개의 포인터입니다. 하나는 개체용이고, 다른 하나는 참조 횟수가 포함된 공유 제어 블록용입니다. 헤더 파일: `<memory>`. 자세한 내용은 [방법: shared_ptr 인스턴스 만들기 및 사용](../cpp/how-to-create-and-use-shared-ptr-instances.md) 하 고 [shared_ptr 클래스](../standard-library/shared-ptr-class.md)합니다.
 
-- `weak_ptr` 와 함께에서 사용 하기 위해 특별 한 경우 스마트 포인터 `shared_ptr`합니다. `weak_ptr`은 하나 이상의 `shared_ptr` 인스턴스가 소유하는 개체에 대한 액세스를 제공하지만, 참조 수 계산에 참가하지 않습니다. 개체를 관찰하는 동시에 해당 개체를 활성 상태로 유지하지 않으려는 경우 사용합니다. `shared_ptr` 인스턴스 사이의 순환 참조를 차단하기 위해 필요한 경우도 있습니다. 헤더 파일: `<memory>`. 자세한 내용은 [방법: weak_ptr 인스턴스 만들기 및 사용](../cpp/how-to-create-and-use-weak-ptr-instances.md) 하 고 [weak_ptr 클래스](../standard-library/weak-ptr-class.md)합니다.
+- `weak_ptr`<br/>
+    `shared_ptr`과 함께 사용할 수 있는 특별한 경우의 스마트 포인터입니다. `weak_ptr`은 하나 이상의 `shared_ptr` 인스턴스가 소유하는 개체에 대한 액세스를 제공하지만, 참조 수 계산에 참가하지 않습니다. 개체를 관찰하는 동시에 해당 개체를 활성 상태로 유지하지 않으려는 경우 사용합니다. `shared_ptr` 인스턴스 사이의 순환 참조를 차단하기 위해 필요한 경우도 있습니다. 헤더 파일: `<memory>`. 자세한 내용은 [방법: weak_ptr 인스턴스 만들기 및 사용](../cpp/how-to-create-and-use-weak-ptr-instances.md) 하 고 [weak_ptr 클래스](../standard-library/weak-ptr-class.md)합니다.
 
 ### <a name="smart-pointers-for-com-objects-classic-windows-programming"></a>COM 개체의 스마트 포인터(Windows 기본 프로그래밍)
 

@@ -1,7 +1,7 @@
 ---
 title: Module 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 09/17/2018
+ms.date: 10/18/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -53,12 +53,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0fa34cb8fce2854f4b3864629b86122bdfe6b35f
-ms.sourcegitcommit: 338e1ddc2f3869d92ba4b73599d35374cf1d5b69
+ms.openlocfilehash: 2357790e3084c91011f16eb9f1f718948462f898
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494532"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059482"
 ---
 # <a name="module-class"></a>Module 클래스
 
@@ -177,22 +177,22 @@ WRL_NOTHROW static Module& Create(
 template<typename T>
 WRL_NOTHROW static Module& Create(
    _In_ T* object,
-   _In_ void (T::* method)()  
+   _In_ void (T::* method)()
 );
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*T*  
+*T*<br/>
 모듈 유형입니다.
 
-*콜백*  
+*콜백*<br/>
 모듈의 마지막 인스턴스 개체가 해제 될 때 호출 됩니다.
 
-*object*  
+*object*<br/>
 합니다 *개체* 하 고 *메서드* 조합 하 여 매개 변수를 사용 합니다. 요소 마지막 인스턴스 개체 모듈의 마지막 인스턴스 개체가 해제 될 때입니다.
 
-*method*  
+*method*<br/>
 합니다 *개체* 하 고 *메서드* 조합 하 여 매개 변수를 사용 합니다. 모듈의 마지막 인스턴스 개체가 해제 될 때 마지막 인스턴스 개체의 메서드를 가리킵니다.
 
 ### <a name="return-value"></a>반환 값
@@ -225,13 +225,13 @@ WRL_NOTHROW HRESULT GetActivationFactory(
 
 ### <a name="parameters"></a>매개 변수
 
-*pActivatibleClassId*  
+*pActivatibleClassId*<br/>
 런타임 클래스의 IID입니다.
 
-*ppIFactory*  
+*ppIFactory*<br/>
 지정된 런타임 클래스에 대한 IActivationFactory입니다.
 
-*서버 이름*  
+*서버 이름*<br/>
 현재 모듈의 클래스 팩터리 하위 집합 이름입니다. 에 사용 되는 서버 이름을 지정 합니다 [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) 매크로 지정 하거나 `nullptr` 기본 서버 이름을 가져올 수 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -243,7 +243,7 @@ WRL_NOTHROW HRESULT GetActivationFactory(
 클래스 팩터리의 캐시를 가져옵니다.
 
 ```cpp
- HRESULT GetClassObject(
+HRESULT GetClassObject(
    REFCLSID clsid,
    REFIID riid,
    _Deref_out_ void **ppv,
@@ -253,16 +253,16 @@ WRL_NOTHROW HRESULT GetActivationFactory(
 
 ### <a name="parameters"></a>매개 변수
 
-*clsid*  
+*clsid*<br/>
 클래스 ID입니다.
 
-*riid*  
+*riid*<br/>
 요청하는 인터페이스 ID입니다.
 
-*ppv*  
+*ppv*<br/>
 반환된 개체에 대한 포인터입니다.
 
-*서버 이름*  
+*서버 이름*<br/>
 `ActivatableClassWithFactory`, `ActivatableClassWithFactoryEx` 또는 `ActivatableClass` 매크로에 지정된 서버 이름 또는 기본 서버 이름을 가져오는 `nullptr`입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -344,19 +344,19 @@ WRL_NOTHROW virtual HRESULT RegisterCOMObject(
 
 ### <a name="parameters"></a>매개 변수
 
-*서버 이름*  
+*서버 이름*<br/>
 서버의 정규화된 이름입니다.
 
-*clsid*  
+*clsid*<br/>
 등록할 CLSID의 배열입니다.
 
-*팩터리*  
+*팩터리*<br/>
 가용성을 게시하고 있는 클래스 개체의 IUnknown 인터페이스 배열입니다.
 
-*쿠키*  
+*쿠키*<br/>
 작업이 완료되면 등록된 클래스 개체를 식별하는 값에 대한 포인터 배열입니다. 이러한 값은 나중에 등록을 해지하는 데 사용됩니다.
 
-*count*  
+*count*<br/>
 등록할 CLSID 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -381,10 +381,10 @@ HRESULT RegisterObjects(
 
 ### <a name="parameters"></a>매개 변수
 
-*모듈*  
+*module*<br/>
 COM 또는 Windows 런타임 개체의 배열입니다.
 
-*서버 이름*  
+*서버 이름*<br/>
 개체를 생성한 서버의 이름입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -399,21 +399,21 @@ COM 또는 Windows 런타임 개체의 배열입니다.
 HRESULT RegisterWinRTObject(const wchar_t* serverName,
    wchar_t** activatableClassIds,
    WINRT_REGISTRATION_COOKIE* cookie,
-   unsigned int count)  
+   unsigned int count)
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*서버 이름*  
+*서버 이름*<br/>
 이 작업으로 영향을 받는 개체의 하위 집합을 지정하는 이름입니다.
 
-*activatableClassIds*  
+*activatableClassIds*<br/>
 등록할 활성화 가능한 CLSID 배열입니다.
 
-*쿠키*  
+*쿠키*<br/>
 등록된 클래스 개체를 식별하는 값입니다. 이 값은 나중에 등록을 해지할 때 사용됩니다.
 
-*count*  
+*count*<br/>
 등록할 개체의 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -453,13 +453,13 @@ virtual HRESULT UnregisterCOMObject(
 
 ### <a name="parameters"></a>매개 변수
 
-*서버 이름*  
+*서버 이름*<br/>
 (사용되지 않음)
 
-*쿠키*  
+*쿠키*<br/>
 등록 취소한 클래스 개체를 식별하는 값에 대한 포인터 배열입니다. 배열에서 만든 합니다 [RegisterCOMObject](#registercomobject) 메서드.
 
-*count*  
+*count*<br/>
 등록 취소할 클래스 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -478,10 +478,10 @@ HRESULT UnregisterObjects(
 
 ### <a name="parameters"></a>매개 변수
 
-*모듈*  
+*module*<br/>
 모듈에 대한 포인터입니다.
 
-*서버 이름*  
+*서버 이름*<br/>
 이 작업으로 영향을 받는 개체의 하위 집합을 지정하는 정규화 이름입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -501,5 +501,5 @@ virtual HRESULT UnregisterWinRTObject(
 
 ### <a name="parameters"></a>매개 변수
 
-*쿠키*  
+*쿠키*<br/>
 등록이 해지된 클래스 개체를 식별하는 값에 대한 포인터입니다.

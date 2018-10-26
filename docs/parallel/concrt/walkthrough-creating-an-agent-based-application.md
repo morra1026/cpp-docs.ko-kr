@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68c4b389bdd8f1121a59bce1a0ca8942f077e062
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 41ae491a851d2e9a21a57ce35a54590323060881
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46377172"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070597"
 ---
 # <a name="walkthrough-creating-an-agent-based-application"></a>연습: 에이전트 기반 응용 프로그램 만들기
 
@@ -64,7 +64,7 @@ ms.locfileid: "46377172"
 
 [!code-cpp[concrt-basic-agent#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_1.h)]
 
-     The header file agents.h contains the functionality of the [concurrency::agent](../../parallel/concrt/reference/agent-class.md) class.
+   기능을 포함 하는 헤더 파일 agents.h 합니다 [concurrency:: agent](../../parallel/concrt/reference/agent-class.md) 클래스입니다.
 
 1. 응용 프로그램을 빌드하고 실행 하 여 만들어졌는지 확인 합니다. 응용 프로그램을 작성 하는 **빌드** 메뉴에서 클릭 **솔루션 빌드**합니다. 응용 프로그램이 성공적으로 빌드되면 클릭 하 여 응용 프로그램 실행 **디버깅 시작** 에 **디버그** 메뉴.
 
@@ -90,19 +90,19 @@ ms.locfileid: "46377172"
 
 [!code-cpp[concrt-basic-agent#3](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_4.h)]
 
-     The `_file_name` member is the file name that the agent reads from. The `_target` member is a [concurrency::ITarget](../../parallel/concrt/reference/itarget-class.md) object that the agent writes the contents of the file to. The `_error` member holds any error that occurs during the life of the agent.
+   `_file_name` 멤버는 에이전트에서 읽는 파일 이름입니다. 합니다 `_target` 멤버를 [concurrency:: itarget](../../parallel/concrt/reference/itarget-class.md) 에이전트 파일의 내용을 쓰도록 개체입니다. `_error` 멤버는 에이전트의 수명 동안 발생 하는 모든 오류를 저장 합니다.
 
 1. 에 다음 코드를 추가 합니다 `file_reader` 생성자를 `public` 섹션은 `file_reader` 클래스.
 
 [!code-cpp[concrt-basic-agent#4](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_5.h)]
 
-     Each constructor overload sets the `file_reader` data members. The second and third constructor overload enables your application to use a specific scheduler with your agent. The first overload uses the default scheduler with your agent.
+   설정 하는 각 생성자 오버 로드는 `file_reader` 데이터 멤버입니다. 두 번째 및 세 번째 생성자 오버 로드를 통해 에이전트를 사용 하 여 특정 스케줄러를 사용 하도록 응용을 프로그램을 수 있습니다. 에이전트를 사용 하 여 기본 스케줄러를 사용 하는 첫 번째 오버 로드 합니다.
 
 1. 추가 된 `get_error` 의 public 섹션에는 메서드를 `file_reader` 클래스입니다.
 
 [!code-cpp[concrt-basic-agent#5](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_6.h)]
 
-     The `get_error` method retrieves any error that occurs during the life of the agent.
+   `get_error` 메서드는 에이전트의 수명 동안 발생 하는 모든 오류를 검색 합니다.
 
 1. 구현 된 [concurrency::agent::run](reference/agent-class.md#run) 에서 메서드를 `protected` 클래스의 섹션.
 
@@ -140,7 +140,7 @@ ms.locfileid: "46377172"
 
 [!code-cpp[concrt-basic-agent#11](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_12.cpp)]
 
-     This `call` object also sets the `event` object when it receives the empty string to signal the end of processing.
+   이 `call` 개체도 설정 하는 `event` 처리의 끝을 알리기 위해 빈 문자열을 받으면 개체입니다.
 
 1. 만들기는 `file_reader` test.txt 파일을 읽고 해당 파일의 내용을 기록 하는 개체는 `call` 개체입니다.
 

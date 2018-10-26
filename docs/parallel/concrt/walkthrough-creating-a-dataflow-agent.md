@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c71bfa1eb9acb270195549eec950fb4fdf6c31b3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f41bdf8d2487d81e7c8dc9887807b05afb32acbd
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438953"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060050"
 ---
 # <a name="walkthrough-creating-a-dataflow-agent"></a>연습: 데이터 흐름 에이전트 만들기
 
@@ -78,7 +78,7 @@ ms.locfileid: "46438953"
 
 [!code-cpp[concrt-dataflow-agent#6](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_3.cpp)]
 
-     The `countdown_event` class is shown later in this topic.
+   `countdown_event` 클래스는이 항목의 뒷부분에 나옵니다.
 
 1. 데이터 흐름 네트워크에서 메시지 참여할 버퍼 개체를 만듭니다.
 

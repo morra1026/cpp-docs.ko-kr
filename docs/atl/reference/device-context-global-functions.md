@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac2e56e4b13f739f61df5b37ab70689784a39882
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8d85767ad529cb54686ff2cde186bd4a681d3570
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46077544"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063317"
 ---
 # <a name="device-context-global-functions"></a>장치 컨텍스트 전역 함수
 
@@ -53,7 +53,7 @@ HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);
 
 구조에는 NULL이 고 *hdc* NULL 이면 기본 디스플레이 장치에 대 한 장치 컨텍스트를 만듭니다.
 
-하는 경우 *hdc* NULL이 아닌 및 *데* 가 null 인 경우 기존 반환 *hdc*합니다.  
+하는 경우 *hdc* NULL이 아닌 및 *데* 가 null 인 경우 기존 반환 *hdc*합니다.
 
 ## <a name="requirements"></a>요구 사항
 

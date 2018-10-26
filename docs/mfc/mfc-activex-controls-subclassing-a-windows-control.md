@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03fc15cc2d2a73c0e8a1a016a2a477a5c65cdc15
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 7cd03babd97033495ecfa84817938103cde05a73
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890559"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50081708"
 ---
 # <a name="mfc-activex-controls-subclassing-a-windows-control"></a>MFC ActiveX 컨트롤: Windows 컨트롤 서브클래싱
 
@@ -94,12 +94,12 @@ ActiveX 컨트롤 컨테이너의 필요성 해소 자체 메시지 리플렉션
 
 - 컨트롤 클래스에 해당 합니다. H 파일 처리기 함수를 선언 합니다. 함수 반환 형식이 있어야 합니다. **LRESULT** 형식과 두 개의 매개 변수를 **WPARAM** 하 고 **LPARAM**, 각각. 예를 들어:
 
-     [!code-cpp[NVC_MFC_AxSub#5](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_5.h)]
+   [!code-cpp[NVC_MFC_AxSub#5](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_5.h)]
     [!code-cpp[NVC_MFC_AxSub#6](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_6.h)]
 
 - 컨트롤 클래스에 해당 합니다. CPP 파일을 메시지 맵에 ON_MESSAGE 항목을 추가 합니다. 이 항목의 매개 변수는 메시지 식별자 및 처리기 함수의 이름 이어야 합니다. 예를 들어:
 
-     [!code-cpp[NVC_MFC_AxSub#7](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_7.cpp)]
+   [!code-cpp[NVC_MFC_AxSub#7](../mfc/codesnippet/cpp/mfc-activex-controls-subclassing-a-windows-control_7.cpp)]
 
 - 또한 합니다. CPP 파일에 구현 된 `OnOcmCommand` 리플 렉 트 된 메시지를 처리할 멤버 함수입니다. 합니다 *wParam* 하 고 *lParam* 매개 변수는 원래 창 메시지의 것과 동일 합니다.
 

@@ -25,67 +25,67 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 09f70e45891e7dc0b07933fe95dce772e5c7159a
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 351f22f49ec005b07fad6f4b215cdc75637213e0
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082347"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50078481"
 ---
 # <a name="iconverttypeimpl-class"></a>IConvertTypeImpl 클래스
 
-구현을 제공 합니다 [IConvertType](/previous-versions/windows/desktop/ms715926) 인터페이스입니다.  
-  
+구현을 제공 합니다 [IConvertType](/previous-versions/windows/desktop/ms715926) 인터페이스입니다.
+
 ## <a name="syntax"></a>구문
 
 ```cpp
-template <class T>  
-class ATL_NO_VTABLE IConvertTypeImpl   
-   : public IConvertType, public CConvertHelper  
-```  
-  
-### <a name="parameters"></a>매개 변수  
+template <class T>
+class ATL_NO_VTABLE IConvertTypeImpl
+   : public IConvertType, public CConvertHelper
+```
+
+### <a name="parameters"></a>매개 변수
 
 *T*<br/>
-클래스에서 파생 된 `IConvertTypeImpl`합니다.  
+클래스에서 파생 된 `IConvertTypeImpl`합니다.
 
-## <a name="requirements"></a>요구 사항  
+## <a name="requirements"></a>요구 사항
 
-**헤더:** atldb.h  
-  
-## <a name="members"></a>멤버  
-  
-### <a name="interface-methods"></a>인터페이스 메서드  
-  
-|||  
-|-|-|  
-|[CanConvert](#canconvert)|명령 또는 행 집합에서 형식 변환의 가용성에 대 한 정보를 제공합니다.|  
-  
-## <a name="remarks"></a>설명  
+**헤더:** atldb.h
 
-이 인터페이스는 명령, 행 집합 및 인덱스 행 집합에 필수입니다. `IConvertTypeImpl` OLE DB에서 제공 된 변환 개체에 위임 하 여 인터페이스를 구현 합니다.  
+## <a name="members"></a>멤버
+
+### <a name="interface-methods"></a>인터페이스 메서드
+
+|||
+|-|-|
+|[CanConvert](#canconvert)|명령 또는 행 집합에서 형식 변환의 가용성에 대 한 정보를 제공합니다.|
+
+## <a name="remarks"></a>설명
+
+이 인터페이스는 명령, 행 집합 및 인덱스 행 집합에 필수입니다. `IConvertTypeImpl` OLE DB에서 제공 된 변환 개체에 위임 하 여 인터페이스를 구현 합니다.
 
 ## <a name="canconvert"></a> Iconverttypeimpl:: Canconvert
 
-명령 또는 행 집합에서 형식 변환의 가용성에 대 한 정보를 제공합니다.  
-  
-### <a name="syntax"></a>구문  
-  
+명령 또는 행 집합에서 형식 변환의 가용성에 대 한 정보를 제공합니다.
+
+### <a name="syntax"></a>구문
+
 ```cpp
-STDMETHOD(CanConvert)(DBTYPE wFromType,   
-   DBTYPE wToType,   
-   DBCONVERTFLAGS dwConvertFlags);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
+STDMETHOD(CanConvert)(DBTYPE wFromType, 
+   DBTYPE wToType, 
+   DBCONVERTFLAGS dwConvertFlags);
+```
 
-참조 [IConvertType::CanConvert](/previous-versions/windows/desktop/ms711224) 에 *OLE DB Programmer's Reference*합니다.  
-  
-### <a name="remarks"></a>설명  
+#### <a name="parameters"></a>매개 변수
 
-OLE DB 데이터 변환을 사용 하 여 `MSADC.DLL`입니다.  
-  
-## <a name="see-also"></a>참고 항목  
+참조 [IConvertType::CanConvert](/previous-versions/windows/desktop/ms711224) 에 *OLE DB Programmer's Reference*합니다.
+
+### <a name="remarks"></a>설명
+
+OLE DB 데이터 변환을 사용 하 여 `MSADC.DLL`입니다.
+
+## <a name="see-also"></a>참고 항목
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

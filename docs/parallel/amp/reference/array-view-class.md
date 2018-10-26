@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c78d95afbadb0d3612dcdbca1714ae8c3a06454
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 690e612201d0d3614b47c8baf7b5c46cb29d6140
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426343"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50063044"
 ---
 # <a name="arrayview-class"></a>array_view 클래스
 
@@ -561,6 +561,7 @@ static const int rank = _Rank;
 ```
 void refresh() const restrict(cpu);
 ```
+
 ## <a name="reinterpret_as"></a> reinterpret_as
 
 옵션으로 소스 배열 보기 보다는 다른 값 형식을 가질 수는 1 차원 배열 통해 array_view를 재해석 합니다.

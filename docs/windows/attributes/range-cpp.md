@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 593cfbd4b7430c3f6ac5b4f2ab1053665136ab25
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 17ceaa7c470e57cadd198c17c21bb2a8ae4755ce
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791159"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50071662"
 ---
 # <a name="range-c"></a>range(C++)
 
@@ -73,11 +73,11 @@ __interface ICustom {
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-특성 컨텍스트에 대 한 자세한 내용은 참조 하세요. [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 [IDL 특성](idl-attributes.md)<br/>
 [메서드 특성](method-attributes.md)<br/>
 [매개 변수 특성](parameter-attributes.md)<br/>
-[데이터 멤버 특성](data-member-attributes.md)  
+[데이터 멤버 특성](data-member-attributes.md)

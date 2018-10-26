@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61293576fa36d9e8a853cb7a8b71e4c2de98e932
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4c23e72940115e929658949dc0bb15bb41f82b34
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46022554"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055075"
 ---
 # <a name="resource-compiler-error-rc2165"></a>리소스 컴파일러 오류 RC2165
 
@@ -31,4 +31,4 @@ ms.locfileid: "46022554"
 
 합니다 **DLGINCLUDE** 문을 다음 구문을 사용 해야 합니다.
 
-**DLGINCLUDE "*filename*.h"**
+**DLGINCLUDE "**<em>filename</em>**.h"**

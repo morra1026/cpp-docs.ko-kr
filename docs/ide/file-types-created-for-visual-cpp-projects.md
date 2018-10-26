@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 939937ec79ae3e6d172b48d22368176088064397
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dba47b8464c7fcdd170df1819b65aa448d8f8aeb
+ms.sourcegitcommit: 0164af5615389ffb1452ccc432eb55f6dc931047
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49808423"
 ---
 # <a name="file-types-created-for-visual-c-projects"></a>Visual C++ 프로젝트용으로 만들어지는 파일 형식
 
@@ -82,7 +82,7 @@ ms.locfileid: "46434351"
 |.pch|디버그|미리 컴파일된 헤더 파일|
 |.rc, .rc2|리소스|리소스를 생성하는[리소스 스크립트 파일](../windows/working-with-resource-files.md) |
 |.sbr|컴파일|소스 브라우저 중간 파일. [BSCMAKE](../build/reference/bscmake-options.md)의 입력 파일입니다.|
-|.sln|솔루션|[솔루션](/visualstudio/ide/solutions-and-projects-in-visual-studio) 파일입니다.|
+|.sln|솔루션|[솔루션](/visualstudio/ide/solutions-and-projects-in-visual-studio) 파일|
 |.suo|솔루션|솔루션 옵션 파일|
 |.txt|리소스|텍스트 파일(일반적으로 "추가 정보" 파일)|
 |.vap|프로젝트|Visual Studio Analyzer 프로젝트 파일|
@@ -105,4 +105,3 @@ Visual Studio와 관련된 다른 파일에 대한 자세한 내용은 [Visual S
 
 [Visual C++ 프로젝트 만들기 및 관리](../ide/creating-and-managing-visual-cpp-projects.md)<br>
 [Visual C++ 프로젝트 형식](../ide/visual-cpp-project-types.md)<br>
-[다른 언어에 대한 마법사 지원](../ide/wizard-support-for-other-languages.md)

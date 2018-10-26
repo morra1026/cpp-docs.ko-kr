@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e29583218feeff997d30bfa2b16d35be45b25249
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5963bdd004bfbd242e00e8adac274f33949b08ec
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46436301"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50082416"
 ---
 # <a name="colecontrolsite-class"></a>COleControlSite 클래스
 
@@ -307,7 +307,6 @@ virtual HRESULT CreateControl(
     CFile* pPersist = NULL,
     BOOL bStorage = FALSE,
     BSTR bstrLicKey = NULL);
-
 
 virtual HRESULT CreateControl(
     CWnd* pWndCtrl,
@@ -573,7 +572,7 @@ virtual void GetProperty(
 컨트롤의 기본에서 찾을 속성의 디스패치 ID를 식별 `IDispatch` 검색할 인터페이스입니다.
 
 *vtProp*<br/>
-검색할 속성의 형식을 지정 합니다. 가능한 값에 대 한 설명 섹션을 참조 하세요 [coledispatchdriver:: Invokehelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)합니다.
+검색할 속성의 형식을 지정 합니다. 가능한 값에 대해서는 [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)의 설명 섹션을 참조하세요.
 
 *pvProp*<br/>
 속성 값을 받을 변수의 주소입니다. 지정 된 형식과 일치 해야 합니다 *vtProp*합니다.
@@ -637,13 +636,13 @@ virtual void AFX_CDECL InvokeHelper(
 Idispatch:: Invoke 호출의 컨텍스트를 설명 하는 플래그입니다. 가능한 *wFlags* 값을 참조 하세요. `IDispatch::Invoke` Windows SDK에 있습니다.
 
 *vtRet*<br/>
-반환 값 형식을 지정합니다. 가능한 값에 대 한 설명 섹션을 참조 하세요 [coledispatchdriver:: Invokehelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)합니다.
+반환 값 형식을 지정합니다. 가능한 값에 대해서는 [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)의 설명 섹션을 참조하세요.
 
 *pvRet*<br/>
 속성 값이나 반환 값을 받을 변수의 주소입니다. 지정 된 형식과 일치 해야 합니다 *vtRet*합니다.
 
 *pbParamInfo*<br/>
-다음 매개 변수의 형식을 지정 하는 바이트의 null로 끝나는 문자열에 대 한 포인터 *pbParamInfo*합니다. 가능한 값에 대 한 설명 섹션을 참조 하세요 [coledispatchdriver:: Invokehelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)합니다.
+다음 매개 변수의 형식을 지정 하는 바이트의 null로 끝나는 문자열에 대 한 포인터 *pbParamInfo*합니다. 가능한 값에 대해서는 [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)의 설명 섹션을 참조하세요.
 
 *...*<br/>
 에 지정 된 형식의 매개 변수 목록을 *pbParamInfo*합니다.
@@ -652,7 +651,7 @@ Idispatch:: Invoke 호출의 컨텍스트를 설명 하는 플래그입니다. �
 
 합니다 *pbParamInfo* 매개 변수를 메서드 또는 속성에 전달 된 매개 변수의 형식을 지정 합니다. 인수의 변수 목록은 구문 선언에서...으로 표시 됩니다.
 
-이 함수 VARIANTARG 값을 매개 변수를 문자열로 변환한 다음 호출을 `IDispatch::Invoke` 컨트롤 메서드. 경우에 대 한 호출 `IDispatch::Invoke` 실패 하면이이 함수는 예외를 throw 합니다. 상태 코드를 반환한 경우 `IDispatch::Invoke` 됩니다 `DISP_E_EXCEPTION`,이 함수는 `COleDispatchException` 개체 이거나 그렇지 않으면 throw를 `COleException`.
+이 함수 VARIANTARG 값을 매개 변수를 문자열로 변환한 다음 호출을 `IDispatch::Invoke` 컨트롤 메서드. `IDispatch::Invoke` 호출에 실패하면 이 함수가 예외를 throw합니다. 상태 코드를 반환한 경우 `IDispatch::Invoke` 됩니다 `DISP_E_EXCEPTION`,이 함수는 `COleDispatchException` 개체 이거나 그렇지 않으면 throw를 `COleException`.
 
 ##  <a name="invokehelperv"></a>  COleControlSite::InvokeHelperV
 
@@ -677,13 +676,13 @@ virtual void InvokeHelperV(
 Idispatch:: Invoke 호출의 컨텍스트를 설명 하는 플래그입니다.
 
 *vtRet*<br/>
-반환 값 형식을 지정합니다. 가능한 값에 대 한 설명 섹션을 참조 하세요 [coledispatchdriver:: Invokehelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)합니다.
+반환 값 형식을 지정합니다. 가능한 값에 대해서는 [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)의 설명 섹션을 참조하세요.
 
 *pvRet*<br/>
 속성 값이나 반환 값을 받을 변수의 주소입니다. 지정 된 형식과 일치 해야 합니다 *vtRet*합니다.
 
 *pbParamInfo*<br/>
-다음 매개 변수의 형식을 지정 하는 바이트의 null로 끝나는 문자열에 대 한 포인터 *pbParamInfo*합니다. 가능한 값에 대 한 설명 섹션을 참조 하세요 [coledispatchdriver:: Invokehelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)합니다.
+다음 매개 변수의 형식을 지정 하는 바이트의 null로 끝나는 문자열에 대 한 포인터 *pbParamInfo*합니다. 가능한 값에 대해서는 [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)의 설명 섹션을 참조하세요.
 
 *argList*<br/>
 가변 인수 목록에 대 한 포인터입니다.
@@ -1010,7 +1009,7 @@ virtual BOOL AFX_CDECL SafeSetProperty(
 속성 또는 메서드를 찾을 컨트롤의 디스패치 ID를 식별 `IDispatch` 인터페이스를 설정 해야 합니다.
 
 *vtProp*<br/>
-설정할 속성의 형식을 지정 합니다. 가능한 값에 대 한 설명 섹션을 참조 하세요 [coledispatchdriver:: Invokehelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)합니다.
+설정할 속성의 형식을 지정 합니다. 가능한 값에 대해서는 [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)의 설명 섹션을 참조하세요.
 
 *...*<br/>
 지정 된 형식의 단일 매개 변수 *vtProp*합니다.
@@ -1095,7 +1094,7 @@ virtual void AFX_CDECL SetProperty(
 속성 또는 메서드를 찾을 컨트롤의 디스패치 ID를 식별 `IDispatch` 인터페이스를 설정 해야 합니다.
 
 *vtProp*<br/>
-설정할 속성의 형식을 지정 합니다. 가능한 값에 대 한 설명 섹션을 참조 하세요 [coledispatchdriver:: Invokehelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)합니다.
+설정할 속성의 형식을 지정 합니다. 가능한 값에 대해서는 [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)의 설명 섹션을 참조하세요.
 
 *...*<br/>
 지정 된 형식의 단일 매개 변수 *vtProp*합니다.
@@ -1123,7 +1122,7 @@ virtual void SetPropertyV(
 속성 또는 메서드를 찾을 컨트롤의 디스패치 ID를 식별 `IDispatch` 인터페이스를 설정 해야 합니다.
 
 *vtProp*<br/>
-설정할 속성의 형식을 지정 합니다. 가능한 값에 대 한 설명 섹션을 참조 하세요 [coledispatchdriver:: Invokehelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)합니다.
+설정할 속성의 형식을 지정 합니다. 가능한 값에 대해서는 [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)의 설명 섹션을 참조하세요.
 
 *argList*<br/>
 인수 목록에 대한 포인터입니다.

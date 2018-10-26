@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 04a533acecd837fd5bad51612ce7b7eced841178
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 19dc08fc29de4affaea987025a2bc8b92bc56460
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376488"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079859"
 ---
 # <a name="mfc-activex-controls-property-pages"></a>MFC ActiveX 컨트롤: 속성 페이지
 
@@ -86,7 +86,7 @@ ActiveX 컨트롤 마법사에서 파생 된 컨트롤에 대 한 기본 속성 
 
 1. IDD_PROPPAGE_SAMPLE 대화 상자를 엽니다.
 
-     ActiveX 컨트롤 마법사는 대화 ID이 예제의 경우 샘플의 끝에 프로젝트의 이름을 추가합니다.
+   ActiveX 컨트롤 마법사는 대화 ID이 예제의 경우 샘플의 끝에 프로젝트의 이름을 추가합니다.
 
 1. 대화 상자 영역 도구 상자에서 선택한 컨트롤을 끌어서 설정.
 

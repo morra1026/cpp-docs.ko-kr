@@ -19,50 +19,50 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b1843b6279cb7c86762cc6d975a2a7e67d3d278d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 1e55d4c15ca5d5a3733c44cf89b788b85c905513
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46055639"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50074672"
 ---
 # <a name="ccolumnaccessor-class"></a>CColumnAccessor 클래스
 
-삽입 된 소비자 코드를 생성합니다.  
-  
+삽입 된 소비자 코드를 생성합니다.
+
 ## <a name="syntax"></a>구문
 
 ```cpp
-class CColumnAccessor : public CAccessorBase  
-```  
-  
-## <a name="remarks"></a>설명  
+class CColumnAccessor : public CAccessorBase
+```
 
-삽입 된 코드에서 모든 열은 별도 접근자로 바인딩됩니다. 이 클래스는 삽입된 된 코드에서 사용 해야 (예를 들어, 발생할 수 있는 것을 디버깅할 때) 하지만 일반적으로 필요가 또는 해당 메서드를 직접 사용 합니다.  
-  
-`CColumnAccessor` 다른 접근자 클래스 메서드를 기능에 해당 하는 각각 다음 스텁 메서드를 구현 합니다.  
-  
-- `CColumnAccessor` 생성자입니다. 인스턴스화하고 초기화는 `CColumnAccessor` 개체입니다.  
-  
-- `CreateAccessor` 바인딩 구조 열에 대 한 메모리를 할당 하 고 열 데이터 멤버를 초기화 합니다.  
-  
-- `BindColumns` 접근자에 열을 바인딩합니다.  
-  
-- `SetParameterBuffer` 매개 변수에 대 한 버퍼를 할당합니다.  
-  
-- `AddParameter` 매개 변수 입력 구조에 매개 변수 항목을 추가합니다.  
-  
-- `HasOutputColumns` 접근자에 출력 열 여부를 결정 합니다.  
-  
-- `HasParameters` 접근자에 매개 변수가 있는지 여부를 결정 합니다.  
-  
-- `BindParameters` 열에 생성된 된 매개 변수를 바인딩합니다.  
-  
-## <a name="requirements"></a>요구 사항  
+## <a name="remarks"></a>설명
 
-**헤더:** atldbcli.h  
-  
-## <a name="see-also"></a>참고 항목  
+삽입 된 코드에서 모든 열은 별도 접근자로 바인딩됩니다. 이 클래스는 삽입된 된 코드에서 사용 해야 (예를 들어, 발생할 수 있는 것을 디버깅할 때) 하지만 일반적으로 필요가 또는 해당 메서드를 직접 사용 합니다.
+
+`CColumnAccessor` 다른 접근자 클래스 메서드를 기능에 해당 하는 각각 다음 스텁 메서드를 구현 합니다.
+
+- `CColumnAccessor` 생성자입니다. 인스턴스화하고 초기화는 `CColumnAccessor` 개체입니다.
+
+- `CreateAccessor` 바인딩 구조 열에 대 한 메모리를 할당 하 고 열 데이터 멤버를 초기화 합니다.
+
+- `BindColumns` 접근자에 열을 바인딩합니다.
+
+- `SetParameterBuffer` 매개 변수에 대 한 버퍼를 할당합니다.
+
+- `AddParameter` 매개 변수 입력 구조에 매개 변수 항목을 추가합니다.
+
+- `HasOutputColumns` 접근자에 출력 열 여부를 결정 합니다.
+
+- `HasParameters` 접근자에 매개 변수가 있는지 여부를 결정 합니다.
+
+- `BindParameters` 열에 생성된 된 매개 변수를 바인딩합니다.
+
+## <a name="requirements"></a>요구 사항
+
+**헤더:** atldbcli.h
+
+## <a name="see-also"></a>참고 항목
 
 [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

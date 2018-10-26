@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6eeeb28b7679fa67e991e96aa998abc4946bb82b
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: fb8b53141f54e0f59c9734b9d7d855569dfceb9d
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791769"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059366"
 ---
 # <a name="firstis"></a>first_is
 
@@ -78,7 +78,7 @@ requestedit] HRESULT get_I([out, retval]long *i);
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
-자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
@@ -88,4 +88,4 @@ requestedit] HRESULT get_I([out, retval]long *i);
 [last_is](last-is.md)<br/>
 [max_is](max-is.md)<br/>
 [length_is](length-is.md)<br/>
-[size_is](size-is.md)  
+[size_is](size-is.md)
