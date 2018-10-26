@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5a091a4301a107fb820f63c357c4e7f43c35948
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: ca1bae4e2ca45424fd7f9cff48d8ece1039d73f6
+ms.sourcegitcommit: 072e12d6b7a242765bdcc9afe4a14a284ade01fc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45721294"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136174"
 ---
 # <a name="linker-options"></a>링커 옵션
 
@@ -60,7 +60,7 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 |[/CLRIMAGETYPE](../../build/reference/clrimagetype-specify-type-of-clr-image.md)|CLR 이미지의 형식(IJW, 순수 또는 안전)을 설정합니다.|
 |[/CLRSUPPORTLASTERROR](../../build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls.md)|P/Invoke 메커니즘을 통해 호출된 함수의 마지막 오류 코드를 유지합니다.|
 |[/CLRTHREADATTRIBUTE](../../build/reference/clrthreadattribute-set-clr-thread-attribute.md)|CLR 프로그램의 진입점에 적용할 스레딩 특성을 지정합니다.|
-|[/CLRUNMANAGEDCODECHECK](../../build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute.md)|링커가 SuppressUnmanagedCodeSecurity 특성을 관리 코드에서 네이티브 DLL로 호출하는 링커 생성 PInvoke 스텁에 적용할지 여부를 지정합니다.|
+|[/CLRUNMANAGEDCODECHECK](../../build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute.md)|링커가 SuppressUnmanagedCodeSecurity 특성을 관리 코드에서 네이티브 DLL로 호출하는 링커 생성 PInvoke 스텁에 적용할지 여부를 지정합니다.|
 |[/DEBUG](../../build/reference/debug-generate-debug-info.md)|디버깅 정보를 생성합니다.|
 |[/DEBUGTYPE](../../build/reference/debugtype-debug-info-options.md)|디버깅 정보에 포함할 데이터를 지정합니다.|
 |[/DEF](../../build/reference/def-specify-module-definition-file.md)|모듈 정의 파일(.def)을 링커에 전달합니다.|

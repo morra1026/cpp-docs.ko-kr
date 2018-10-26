@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dcc942bc69ebb37a7aba59e722b1a4cebbbab3ff
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3f97ef0f285cda7d31ddd53f0a8b0ca9a22f360c
+ms.sourcegitcommit: 072e12d6b7a242765bdcc9afe4a14a284ade01fc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46071367"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136200"
 ---
 # <a name="how-to-use-winmdidlexe-and-midlrtexe-to-create-h-files-from-windows-metadata"></a>방법: winmdidl.exe 및 midlrt.exe를 사용하여 Windows 메타데이터에서 .h 파일 만들기
 
@@ -39,13 +39,13 @@ Winmdidl.exe 및 midlrt.exe는 Windows 런타임 구성 요소 및 네이티브 
 ## <a name="winmdidl-command-line-arguments"></a>Winmdidl 명령줄 인수
 
 ```
-Winmdidl.exe [/nologo] [/supressversioncheck] [/time] [/outdir:dir] [/banner:file] [/utf8] Winmdfile
+Winmdidl.exe [/nologo] [/suppressversioncheck] [/time] [/outdir:dir] [/banner:file] [/utf8] Winmdfile
 ```
 
 **/nologo**<br/>
 콘솔이 winmdidl 저작권 메시지 및 버전 번호를 표시하는 것을 방지합니다.
 
-**/supressversioncheck**<br/>
+**/suppressversioncheck**<br/>
 사용되지 않습니다.
 
 **/ 시간**<br/>
