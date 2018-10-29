@@ -201,7 +201,7 @@ int A::Func2( B& b ) { return b._b; }   // C2248
 friend class A;
 ```
 
-이 경우 `A` 클래스의 모든 멤버 함수에 `B` 클래스에 대한 freind 액세스 권한이 부여되었습니다. 다음 코드는 friend 클래스의 예입니다.
+이 경우 `A` 클래스의 모든 멤버 함수에 `B` 클래스에 대한 friend 액세스 권한이 부여되었습니다. 다음 코드는 friend 클래스의 예입니다.
 
 ```cpp
 // classes_as_friends2.cpp
