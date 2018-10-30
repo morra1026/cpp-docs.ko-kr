@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dff9f3c988e7ffdf8f15b5502bb0326e2692a128
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4ed220aad7dd90ff2b5ca97c4cf5160fd4d00ed4
+ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079040"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50204576"
 ---
 # <a name="compiler-warning-level-3-c4996"></a>컴파일러 경고 (수준 3) C4996
 

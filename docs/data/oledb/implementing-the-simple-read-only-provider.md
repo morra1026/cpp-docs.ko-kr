@@ -1,7 +1,7 @@
 ---
 title: 단순한 읽기 전용 공급자 구현 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/26/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 834370ef6af5cd3db15789a1637ad3aaf8707d10
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 517020762fa4baf45fc4ff0477e2a561ef353b39
+ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060115"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50216424"
 ---
 # <a name="implementing-the-simple-read-only-provider"></a>단순한 읽기 전용 공급자 구현
 
@@ -32,4 +32,4 @@ ms.locfileid: "50060115"
 
 ## <a name="see-also"></a>참고 항목
 
-[단순한 읽기 전용 공급자 만들기](../../data/oledb/creating-a-simple-read-only-provider.md)
+[단순한 읽기 전용 공급자 만들기](../../data/oledb/creating-a-simple-read-only-provider.md)<br/>

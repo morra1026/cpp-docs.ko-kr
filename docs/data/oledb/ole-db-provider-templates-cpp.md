@@ -1,7 +1,7 @@
 ---
 title: OLE DB 공급자 템플릿 (c + +) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/24/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0eef554fd6b7fbd16ff7c34434d08d917b5dcea9
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4d4d93f656279cf5e5c548ef09bf809364c9d90e
+ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50080067"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50216411"
 ---
 # <a name="ole-db-provider-templates-c"></a>OLE DB 공급자 템플릿(C++)
 
@@ -39,25 +39,25 @@ OLE DB 공급자는 소비자에 게 영구 원본 (데이터 저장소 라고 �
 
 각 공급자는 OLE DB 소비자 언어 (c + +와 같은 기본)에 관계 없이 모든 공급자에서 데이터를 액세스할 수 있도록 표준 의미를 가진 클라이언트에서 요청을 처리 하는 COM 개체의 표준 집합을 구현 합니다.
 
-각 COM 개체 중 일부는 필요 하 고 선택 사항 중 일부는 여러 인터페이스를 포함 합니다. 공급자는 필수 인터페이스를 구현 하 여 최소 수준의 모든 클라이언트가 사용할 수 있는 기능 (요건)를 보장 합니다. 공급자는 추가 기능을 제공 하는 선택적 인터페이스를 구현할 수 있습니다. [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md) 이러한 인터페이스에 자세히 설명 합니다. 클라이언트는 항상 호출 해야 `QueryInterface` 공급자는 특정된 인터페이스를 지원 하는지 확인 하 합니다.
+각 COM 개체 중 일부는 필요 하 고 선택 사항 중 일부는 여러 인터페이스를 포함 합니다. 공급자는 필수 인터페이스를 구현 하 여 최소 수준의 모든 클라이언트가 사용할 수 있는 기능 (요건)를 보장 합니다. 공급자는 추가 기능을 제공 하는 선택적 인터페이스를 구현할 수 있습니다. 합니다 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md) 이러한 인터페이스에 자세히 설명 합니다. 클라이언트는 항상 호출 해야 `QueryInterface` 공급자는 특정된 인터페이스를 지원 하는지 확인 하 합니다.
 
 ## <a name="ole-db-specification-level-support"></a>OLE DB 사양에 대 한 수준 지원
 
-OLE DB 공급자 템플릿 OLE DB 버전 2.7 사양을 지원 합니다. OLE DB 공급자 템플릿을 사용 하는 수준 0 규격 공급자를 구현할 수 있습니다. 예를 들어 공급자 샘플 파일 시스템을 쿼리 하는 DOS DIR 명령을 실행 하는 non-MS-DOS 명령 서버를 구현 하는 템플릿을 사용 합니다. 공급자 샘플 테이블 형식 데이터를 반환 하는 것에 대 한 표준 OLE DB 메커니즘 행 집합의 디렉터리 정보를 반환 합니다.
+OLE DB 공급자 템플릿 OLE DB 버전 2.7 사양을 지원 합니다. OLE DB 공급자 템플릿을 사용 하는 수준 0 규격 공급자를 구현할 수 있습니다. `Provider` 샘플 예를 들어, 파일 시스템을 쿼리 하는 DOS DIR 명령을 실행 하는 non-MS-DOS 명령 서버를 구현 하는 템플릿을 사용 합니다. `Provider` 샘플 테이블 형식 데이터를 반환 하는 것에 대 한 표준 OLE DB 메커니즘 행 집합의 디렉터리 정보를 반환 합니다.
 
 가장 단순한 유형의 OLE DB 템플릿에서 지 원하는 공급자는 명령이 없거나 읽기 전용 공급자. 책갈피 및 읽기/쓰기 기능으로 명령 사용 하 여 공급자도 지원 됩니다. 추가 코드를 작성 하 여 읽기/쓰기 공급자를 구현할 수 있습니다. 동적 행 집합과 트랜잭션이 현재 버전에서 지원 되지 않지만 원하는 경우 추가할 수 있습니다.
 
 ## <a name="when-do-you-need-to-create-an-ole-db-provider"></a>OLE DB 공급자를 만들 해야 하는 경우는 있습니다?
 
-항상 고유한 공급자를 만들 필요가 없습니다. Microsoft에서 여러 미리 패키지 된, 표준 공급자를 제공 합니다 **데이터 연결 속성** Visual c + +에서 대화 상자. OLE DB 공급자를 만들어야 하는 주된 이유 범용 데이터 액세스 전략을 활용 하는 것입니다. 이렇게 하면의 장점 중 일부 다음과 같습니다.
+사용자 고유의 공급자를 만들 필요가 항상 Microsoft에서 여러 미리 패키지 된, 표준 공급자를 제공 합니다 **데이터 연결 속성** Visual c + +에서 대화 상자. OLE DB 공급자를 만들어야 하는 주된 이유 범용 데이터 액세스 전략을 활용 하는 것입니다. 이렇게 하면의 장점 중 일부 다음과 같습니다.
 
 - C + +, Basic 및 Visual Basic Scripting Edition 등 모든 언어를 통해 데이터에 액세스 합니다. 사용할 언어의 관계 없이 동일한 방법으로 동일한 데이터에 액세스 하려면 조직에서 다른 프로그래머가 허용 합니다.
 
-- SQL Server, Excel 및 Access와 같은 원본 데이터를 다른 데이터를 노출 합니다. 이 다른 형식 간에 데이터를 전송 하려는 경우에 매우 유용할 수 있습니다.
+- SQL Server, Excel 및 Access와 같은 다른 데이터 원본에 데이터를 엽니다. 이 다른 형식 간에 데이터를 전송 하려는 경우에 유용할 수 있습니다.
 
-- (다른 유형의) 간 데이터 원본 작업에 참여. 데이터 웨어하우징 효과적으로 확인할 수 있습니다. OLE DB 공급자를 사용 하 여 네이티브 형식으로 데이터를 유지 하 고 간단한 작업으로 액세스할 수 수 있습니다.
+- (다른 유형의) 간 데이터 원본 작업에 참여. 데이터 웨어하우징 편리할 수 있습니다. OLE DB 공급자를 사용 하 여 네이티브 형식으로 데이터를 유지 하 고 간단한 작업으로 액세스할 수 수 있습니다.
 
-- 쿼리 처리와 같은 데이터에 추가 기능을 추가 합니다.
+- 쿼리 처리와 같은 데이터에 추가 기능을 추가합니다.
 
 - 조작 방법을 제어 하 여 데이터 액세스 성능 향상.
 
@@ -81,5 +81,5 @@ OLE DB 공급자 템플릿 OLE DB 버전 2.7 사양을 지원 합니다. OLE DB 
 ## <a name="see-also"></a>참고 항목
 
 [데이터 액세스](../data-access-in-cpp.md)<br/>
-[OLE DB SDK 설명서](/previous-versions/windows/desktop/ms722784)
-[OLE DB 프로그래머 참조](/previous-versions/windows/desktop/ms713643)
+[OLE DB SDK 설명서](/previous-versions/windows/desktop/ms722784)<br/>
+[OLE DB 프로그래머 참조](/previous-versions/windows/desktop/ms713643)<br/>

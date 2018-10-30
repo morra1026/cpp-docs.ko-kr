@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e832dfa694e5d2977e6b6a4d659d373f726c0cd6
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f38c4cdfcbb75cd4c2df4fadd10cfcaccda4540e
+ms.sourcegitcommit: a88d228480d4bb5834e985d7b3ead2760be95572
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46059040"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50203068"
 ---
 # <a name="auto-c"></a>auto (c + +)
 
@@ -79,22 +79,22 @@ auto declarator initializer;
 사용 하 여 유의 **자동** 참조, const 한정자 및 volatile 한정자를 삭제 합니다. 다음 예제를 참조하세요.
 
 ```cpp
-// cl.exe /analyze /EHsc /W4
-#include <iostream>
+// cl.exe /analyze /EHsc /W4
+#include <iostream>
 
-using namespace std;
+using namespace std;
 
-int main( )
+int main( )
 {
-    int count = 10;
-    int& countRef = count;
-    auto myAuto = countRef;
+    int count = 10;
+    int& countRef = count;
+    auto myAuto = countRef;
 
-    countRef = 11;
-    cout << count << " ";
+    countRef = 11;
+    cout << count << " ";
 
-    myAuto = 12;
-    cout << count << endl;
+    myAuto = 12;
+    cout << count << endl;
 }
 
 ```
@@ -103,7 +103,7 @@ int main( )
 
 ## <a name="type-deduction-with-braced-initializers-c14"></a>중괄호로 묶인된 이니셜라이저 (C + + 14)를 사용 하 여 형식 추론
 
-다음 코드 exmample 중괄호를 사용 하 여 자동 변수를 초기화 하는 방법을 보여 줍니다. A 및 B와 C 간의 차이 확인 하 고 5.
+다음 코드 예제에서는 중괄호를 사용 하 여 자동 변수를 초기화 하는 방법을 보여 줍니다. A 및 B와 C 간의 차이 확인 하 고 5.
 
 ```cpp
 #include <initializer_list>
