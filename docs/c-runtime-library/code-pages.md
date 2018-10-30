@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a81b358a89f3ed16747d27bc6401c01ad194680
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 6eafdf3a140dd8a5976cf2fe8554b3b076111b74
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46113723"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060509"
 ---
 # <a name="code-pages"></a>코드 페이지
 
@@ -43,7 +43,7 @@ Microsoft 런타임 라이브러리는 다음 형식의 코드 페이지를 사�
     setlocale ( LC_ALL, "" );
     ```
 
-     로캘이 시스템 기본 ANSI 코드 페이지로 설정됩니다.
+   로캘이 시스템 기본 ANSI 코드 페이지로 설정됩니다.
 
 - 로캘 코드 페이지. 다양한 런타임 루틴의 동작은 로캘 코드 페이지를 포함하는 현재 로캘 설정에 따라 달라집니다. 자세한 내용은 [로캘 종속 루틴](../c-runtime-library/locale.md)을 참조하세요. 기본적으로 Microsoft 런타임 라이브러리의 모든 로캘 종속 루틴은 "C" 로캘에 해당하는 코드 페이지를 사용합니다. 런타임에 [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)을 호출하여 사용 중인 로캘 코드 페이지를 변경하거나 쿼리할 수 있습니다.
 

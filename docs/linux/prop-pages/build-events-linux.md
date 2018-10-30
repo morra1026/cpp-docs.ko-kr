@@ -12,14 +12,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 38c036bf747115823b853d0d66077f4402a7f7ea
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2ea01c5d92cbdb6066dc87675221eae6865af354
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33338408"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070987"
 ---
-# <a name="build-event-properties-linux-c"></a>빌드 이벤트 속성(Linux C++) 
+# <a name="build-event-properties-linux-c"></a>빌드 이벤트 속성(Linux C++)
 
 ## <a name="pre-build-event"></a>빌드 전 이벤트
 

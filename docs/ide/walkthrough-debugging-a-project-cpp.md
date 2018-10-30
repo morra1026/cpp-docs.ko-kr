@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 04bec9c0de7734ae2c78dd3e9c124eac3d0a55d8
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: bd8d0cebc34b8f0d59f54e720d6a37a52ab2d9e9
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234325"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069323"
 ---
 # <a name="walkthrough-debugging-a-project-c"></a>연습: 프로젝트 디버깅(C++)
 
@@ -45,11 +45,11 @@ ms.locfileid: "48234325"
 
 1. Cardgame이 종료될 때 `totalParticipants`을 감소하려면 `Cardgame::~Cardgame` 소멸자의 여는 중괄호와 닫는 중괄호 사이에 다음 코드를 추가합니다.
 
-     [!code-cpp[NVC_Walkthrough_Debugging_A_Project#110](../ide/codesnippet/CPP/walkthrough-debugging-a-project-cpp_1.cpp)]
+   [!code-cpp[NVC_Walkthrough_Debugging_A_Project#110](../ide/codesnippet/CPP/walkthrough-debugging-a-project-cpp_1.cpp)]
 
 1. 변경한 후 Cardgame.cpp 파일은 아래 코드와 유사합니다.
 
-     [!code-cpp[NVC_Walkthrough_Debugging_A_Project#111](../ide/codesnippet/CPP/walkthrough-debugging-a-project-cpp_2.cpp)]
+   [!code-cpp[NVC_Walkthrough_Debugging_A_Project#111](../ide/codesnippet/CPP/walkthrough-debugging-a-project-cpp_2.cpp)]
 
 1. 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다.
 

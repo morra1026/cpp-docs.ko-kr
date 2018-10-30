@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aefcd05f4187e22adf5f21c4beffa74ca8be39b3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5c7473cd7d6f2f07d81011eca0826b8066513d23
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420558"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069258"
 ---
 # <a name="open-folder-projects-in-visual-c"></a>Visual C++의 폴더 열기 프로젝트
 
@@ -245,6 +245,7 @@ CppProperties.json에서 임의 개수의 구성을 만들 수 있습니다. 각
   ]
 }
 ```
+
 ### <a name="define-tasks-with-tasksvsjson"></a>tasks.vs.json으로 작업 정의
 
 현재 작업 영역에 있는 파일에 대한 빌드 스크립트 또는 기타 외부 작업을 IDE에서 직접 작업으로 실행하여 자동화할 수 있습니다. 파일 또는 폴더를 마우스 오른쪽 단추로 클릭하고 **작업 구성**을 선택하여 새 작업을 구성할 수 있습니다.

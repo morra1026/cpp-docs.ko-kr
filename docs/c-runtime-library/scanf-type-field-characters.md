@@ -24,12 +24,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50db1a8370a43b8b0c43c7c228c7b3acf9dd2c8a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 04a4c2005dc0a7e0e052002198bebb7c78267843
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46082884"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50059958"
 ---
 # <a name="scanf-type-field-characters"></a>scanf 형식 필드 문자
 
@@ -54,7 +54,6 @@ ms.locfileid: "46082884"
 |`n`|스트림 또는 버퍼에서 읽은 입력이 아닙니다.|`int`에 대한 포인터로, 여기에는 `scanf` 함수 또는 `wscanf` 함수에 대한 현재 호출에서 해당 시점까지 스트림 또는 버퍼에서 성공적으로 읽은 문자 수가 저장됩니다.|아니요.|
 |`s`|첫 번째 공백 문자(공백, 탭 또는 줄바꿈)까지의 문자열. 공백 문자로 구분되지 않는 문자열을 읽으려면`[ ]`에 설명된 대로 대괄호 집합( [[ ]](../c-runtime-library/scanf-width-specification.md)패밀리에 적용됩니다.|`scanf` 함수와 함께 사용되는 경우 싱글바이트 문자 배열을 나타내고 `wscanf` 함수와 함께 사용되는 경우 와이드 문자 배열을 나타냅니다. 어떤 경우든 문자 배열은 입력 필드와 자동으로 추가되는 null 종결 문자가 포함될 수 있도록 충분히 커야 합니다.|필수. 크기에는 null 종결자를 위한 공간이 포함되어 있습니다.|
 |`S`|첫 번째 공백 문자(공백, 탭 또는 줄바꿈)까지의 반대 크기 문자열. 공백 문자로 구분되지 않는 문자열을 읽으려면 [scanf 너비 지정](../c-runtime-library/scanf-width-specification.md)에서 설명하는 것처럼 대괄호(`[ ]`)를 사용합니다.|`scanf` 함수와 함께 사용되는 경우 와이드 문자 배열을 나타내고 `wscanf` 함수와 함께 사용되는 경우 싱글바이트 문자 배열을 나타냅니다. 어떤 경우든 문자 배열은 입력 필드와 자동으로 추가되는 null 종결 문자가 포함될 수 있도록 충분히 커야 합니다.|필수. 크기에는 null 종결자를 위한 공간이 포함되어 있습니다.|
-
 
 필요한 경우 크기 인수는 자신이 적용되는 인수 바로 뒤에 따라오는 매개 변수 목록에서 전달되어야 합니다. 예를 들어, 다음 코드는
 

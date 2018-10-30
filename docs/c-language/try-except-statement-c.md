@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f367bd5d9e61d44c24a876bf1d69ad24406d0630
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 957b76b6b39586016e9ed7b921b7bfa51a1fdf34
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46036217"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075140"
 ---
 # <a name="try-except-statement-c"></a>try-except 문 (C)
 
@@ -49,11 +49,11 @@ ms.locfileid: "46036217"
 
 1. 보호된 섹션의 실행 중이나 보호된 섹션에서 호출하는 루틴에서 예외가 발생하는 경우 `__except` 식이 계산되고 반환된 값에 따라 예외 처리 방식이 결정됩니다. 다음과 같은 세 가지 값이 있습니다.
 
-     `EXCEPTION_CONTINUE_SEARCH` 예외가 인식되지 않습니다. **try-except** 문을 포함하는 처리기를 먼저 검색한 후, 그 다음으로 우선 순위가 높은 처리기를 검색하는 순으로 처리기 스택을 계속 검색합니다.
+   `EXCEPTION_CONTINUE_SEARCH` 예외가 인식되지 않습니다. **try-except** 문을 포함하는 처리기를 먼저 검색한 후, 그 다음으로 우선 순위가 높은 처리기를 검색하는 순으로 처리기 스택을 계속 검색합니다.
 
-     `EXCEPTION_CONTINUE_EXECUTION` 예외가 인식되지만 무시됩니다. 예외가 발생한 지점에서 계속 실행합니다.
+   `EXCEPTION_CONTINUE_EXECUTION` 예외가 인식되지만 무시됩니다. 예외가 발생한 지점에서 계속 실행합니다.
 
-     `EXCEPTION_EXECUTE_HANDLER` 예외가 인식됩니다. `__except` 복합 문을 실행하여 예외 처리기로 제어를 전달한 다음 실행이 발생한 지점에서 실행을 계속합니다.
+   `EXCEPTION_EXECUTE_HANDLER` 예외가 인식됩니다. `__except` 복합 문을 실행하여 예외 처리기로 제어를 전달한 다음 실행이 발생한 지점에서 실행을 계속합니다.
 
 `__except` 식은 C 식으로 계산되므로 단일 값, 조건식 연산자 또는 쉼표 연산자로 제한됩니다. 더 광범위한 처리가 필요한 경우 식은 위에 나열된 세 값 중 하나를 반환하는 루틴을 호출할 수 있습니다.
 

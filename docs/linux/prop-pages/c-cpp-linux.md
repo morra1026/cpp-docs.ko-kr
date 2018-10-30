@@ -13,12 +13,12 @@ f1_keywords: []
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 7ab78284929de8e5991abb0d1a8c89ead500096a
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 78918acc70bddb25841b2bcaaf8f7cd7b627d63b
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314705"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50061562"
 ---
 # <a name="cc-properties-linux-c"></a>C/C++ 속성(Linux C++)
 
@@ -85,4 +85,4 @@ C++ 언어 표준 | C++ 언어 표준을 결정합니다. | **기본**<br/>**C++
 다음으로 컴파일 | .c 및 .cpp 파일에 대한 컴파일 언어 옵션을 선택합니다.  '기본값'은 .c 또는 .cpp 확장명에 따라 감지됩니다. (-x c, -x c++) | **기본값** - 기본값입니다.<br/>**C 코드로 컴파일** - C 코드로 컴파일합니다.<br/>**C++ 코드로 컴파일** - C++ 코드로 컴파일합니다.<br/>
 강제 포함 파일 | 하나 이상의 강제 포함 파일입니다. (-include [이름])
 
-## <a name="additional-options"></a>추가 옵션 
+## <a name="additional-options"></a>추가 옵션

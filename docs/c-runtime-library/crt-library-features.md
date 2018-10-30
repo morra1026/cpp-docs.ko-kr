@@ -28,12 +28,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a0864c87b33937fe18c3e4c3083e63bde23ac06
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 7562f6e5a8915f33b3f2c8bd23ce310e641984c6
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46092247"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50057050"
 ---
 # <a name="crt-library-features"></a>CRT 라이브러리 기능
 
@@ -123,7 +123,6 @@ C 런타임 라이브러리를 지정하는 컴파일러 옵션을 사용하지 
 프로세스의 모든 이미지가 동적으로 로드된 동일한 버전의 CRT를 사용하는 경우에도 이러한 문제를 피할 수 있습니다. 모든 구성 요소가 동일한 DLL 버전의 CRT를 사용하도록 하려면 **/MD** 옵션을 사용하여 빌드하고, 동일한 컴파일러 도구 집합 및 속성 설정을 사용합니다.
 
 동일한 버전의 CRT를 사용하는 경우에도, 프로그램에서 DLL 경계에서 특정 CRT 리소스(예: 파일 핸들, 로캘 및 환경 변수)를 전달하는 경우 주의해야 합니다. 관련된 문제 및 해결 방법에 대한 자세한 내용은 [DLL 경계를 넘어 CRT 개체를 전달할 때 발생할 수 있는 오류](../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md)를 참조하세요.
-
 
 ## <a name="see-also"></a>참고 항목
 
