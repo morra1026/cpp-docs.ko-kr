@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb9d21eee8e561e2caa8a7c4088774435d3ce273
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0e3d6501e969b103146aa53311069e5fdd4d048e
+ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46080443"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50204563"
 ---
 # <a name="scope-c"></a>범위 (C++)
 
@@ -41,7 +41,7 @@ ms.locfileid: "46080443"
 
 - **로컬 범위** 함수 또는 람다, 매개 변수 이름을 포함 하 여 내에서 선언 된 이름은 지역 범위를 갖습니다. 이러한는 "지역" 라고도 합니다. 만 함수나 람다 본문의 끝에 선언 된 지점에서 표시 됩니다. 로컬 범위는이 문서의 뒷부분에서 설명 하는 블록 범위 종류입니다.
 
-- **클래스 범위** 클래스 멤버 이름 정의 전체에서 클래스 선언 시점에 관계 없이 확장 하는 클래스 범위를 갖습니다. 클래스 멤버 액세스 가능성은 향후에 의해 제어 합니다 **공개**를 **개인**, 및 **보호** 키워드입니다. Public 또는 protected 멤버는 멤버 선택 연산자를 사용해 서만 액세스할 수 있습니다 (**합니다.** 또는 **->**) 또는 멤버 포인터 연산자 (**.** <strong>\*</strong> 하거나 **->** <strong>\*</strong>).
+- **클래스 범위** 클래스 멤버 이름 정의 전체에서 클래스 선언 시점에 관계 없이 확장 하는 클래스 범위를 갖습니다. 클래스 멤버 액세스 가능성에 의해 제어 추가 됩니다는 **공개**를 **개인**, 및 **보호** 키워드입니다. Public 또는 protected 멤버는 멤버 선택 연산자를 사용해 서만 액세스할 수 있습니다 (**합니다.** 또는 **->**) 또는 멤버 포인터 연산자 (**.** <strong>\*</strong> 하거나 **->** <strong>\*</strong>).
 
 - **문 범위의** 에 선언 된 이름은 **에 대 한**, **경우**를 **하는 동안**, 또는 **전환** 문이 끝날 때까지 표시 됩니다.는 문 블록입니다.
 
