@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01efc61d08204598cbce6d875bfe2c2293d8e711
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 16fe66e6ba8ea3f6e4f88f434b58c61d46ce1edb
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404269"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50080652"
 ---
 # <a name="porting-to-the-universal-windows-platform-c"></a>유니버설 Windows 플랫폼으로 포팅(C++)
 
@@ -74,7 +74,7 @@ Windows 8.1 스토어 앱을 사용하는 경우 이러한 작업을 위해 UWP 
     #if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)
     ```
 
-     이러한 문은 각각 UWP 앱, Windows Phone 스토어 앱 중 하나 또는 둘 다에 적용되거나 적용되지 않습니다(클래식 Win32 데스크톱만 해당). 이러한 매크로는 Windows SDK 8.1 이상에서만 사용할 수 있으므로 이전 버전의 Windows SDK 또는 Windows 이외의 다른 플랫폼 용으로 코드를 컴파일해야 하면 이러한 매크로가 정의되지 않은 경우도 고려해야 합니다.
+   이러한 문은 각각 UWP 앱, Windows Phone 스토어 앱 중 하나 또는 둘 다에 적용되거나 적용되지 않습니다(클래식 Win32 데스크톱만 해당). 이러한 매크로는 Windows SDK 8.1 이상에서만 사용할 수 있으므로 이전 버전의 Windows SDK 또는 Windows 이외의 다른 플랫폼 용으로 코드를 컴파일해야 하면 이러한 매크로가 정의되지 않은 경우도 고려해야 합니다.
 
 11. 앱이 지원하는 각 장치 종류에 대해 에뮬레이터 또는 실제 장치에서 앱을 실행하고 디버그합니다. 에뮬레이터를 실행하려면 가상 머신이 아닌 실제 컴퓨터에서 Visual Studio를 실행해야 합니다.
 
@@ -119,4 +119,4 @@ Visual Studio를 사용하여 새 UWP 프로젝트를 만든 경우 이 오류�
 ## <a name="see-also"></a>참고 항목
 
 [Visual C++ 포팅 가이드](../porting/porting-to-the-universal-windows-platform-cpp.md)<br/>
-[UWP(유니버설 Windows 플랫폼)용 앱 개발](/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp)  
+[UWP(유니버설 Windows 플랫폼)용 앱 개발](/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp)

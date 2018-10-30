@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62404de4012bcd49888da527ae93ed1b2137a48a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3c66fe63d97f623011b3dade46266a4a9d8d83b1
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374147"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50064423"
 ---
 # <a name="use-native-multi-targeting-in-visual-studio-to-build-old-projects"></a>Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드
 
@@ -52,11 +52,11 @@ Visual Studio는 프로젝트를 지속적으로 업그레이드합니다. 프�
 
 업그레이드하지 않도록 선택하면 Visual Studio에서는 솔루션 또는 프로젝트 파일을 변경하지 않습니다. 프로젝트를 빌드할 때 생성된 이진 파일은 이전 버전의 Visual Studio를 통해 빌드한 이진 파일과 완전히 호환됩니다. 이는 Visual Studio에서는 같은 C++ 컴파일러를 사용하고 이전 IDE와 함께 제공된 같은 라이브러리를 연결하기 때문입니다. 또한 **취소**를 선택할 경우 이전 Visual Studio 버전이 계속 설치되어 있음을 경고하는 업그레이드 대화 상자가 표시되는 이유이기도 합니다.
 
-## <a name="instructions-for-visual-studio-2008"></a>Visual Studio 2008에 대한 지침  
-  
+## <a name="instructions-for-visual-studio-2008"></a>Visual Studio 2008에 대한 지침
+
 Visual Studio 2008에는 **VCBuild**라는 C++에 대한 자체 전용 빌드 시스템이 있었습니다. Visual Studio 2010부터 Visual C++ 프로젝트는 **MSBuild**를 사용하도록 변경되었습니다. 즉, 최신 버전의 Visual Studio에서 Visual Studio 2008 프로젝트를 빌드하려면 업데이트 단계를 거쳐야 합니다. 업데이트된 프로젝트는 Visual Studio 2008 IDE를 사용하여 만들어진 이진 파일과 완전히 호환되는 이진 파일을 생성합니다.
 
-먼저 현재 버전의 Visual Studio 외에 Visual Studio 2010을 Visual Studio 2008과 같은 컴퓨터에 설치해야 합니다. Visual Studio 2008 프로젝트를 대상으로 지정하는 데 필요한 **MSBuild** 스크립트는 Visual Studio 2010에서만 설치합니다. 
+먼저 현재 버전의 Visual Studio 외에 Visual Studio 2010을 Visual Studio 2008과 같은 컴퓨터에 설치해야 합니다. Visual Studio 2008 프로젝트를 대상으로 지정하는 데 필요한 **MSBuild** 스크립트는 Visual Studio 2010에서만 설치합니다.
 
 다음으로 Visual Studio 2008 솔루션 및 프로젝트를 현재 버전의 Visual Studio로 업데이트해야 합니다. 업그레이드하기 전에 프로젝트 및 솔루션 파일의 백업을 만드는 것이 좋습니다. 업그레이드 프로세스를 시작하려면 현재 버전의 Visual Studio에서 솔루션을 엽니다. 업그레이드 프롬프트가 표시되면 제공된 정보를 검토하고 **확인**을 선택하여 업그레이드를 시작합니다. 솔루션에 두 개 이상의 프로젝트가 있는 경우 이를 업데이트해야 합니다. 마법사에서 기존 .vcproj 파일과 함께 새 .vcxproj 프로젝트 파일을 단계별로 만듭니다. 원래 .sln 파일의 복사본이 있는 경우 업그레이드가 Visual Studio 2008 프로젝트에 다른 영향을 미치지 않습니다.
 
@@ -77,4 +77,4 @@ Visual Studio 2008에는 **VCBuild**라는 C++에 대한 자체 전용 빌드 �
 ## <a name="see-also"></a>참고 항목
 
 [이전 버전의 Visual C++에서 프로젝트 업그레이드](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
-[Visual Studio 2017의 C++ 규칙 향상](../cpp-conformance-improvements-2017.md)  
+[Visual Studio 2017의 C++ 규칙 향상](../cpp-conformance-improvements-2017.md)

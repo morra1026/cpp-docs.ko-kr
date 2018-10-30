@@ -14,12 +14,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed44479f6e6d1569a9b27a059e837cbbb924b803
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 70af45a860ff854faf244cf51ad7462262f183fe
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821435"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50072696"
 ---
 # <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: Windows, Linux 및 MacOS용 C++ 패키지 관리자
 
@@ -37,11 +37,11 @@ Windows 카탈로그에 있는 라이브러리의 경우 vcpkg는 이진 파일[
 
 [1] *참고: 일부 독점 라이브러리에서는 소스를 사용할 수 없습니다. Vcpkg는 이러한 경우에 호환되는 미리 작성된 이진 파일을 다운로드합니다.*
 
-## <a name="installation"></a>설치 
+## <a name="installation"></a>설치
 
 GitHub에서 vcpkg 리포지토리를 복제합니다. https://github.com/Microsoft/vcpkg 원하는 폴더 위치에 다운로드할 수 있습니다.
 
-다음과 같이 루트 폴더에서 부트스트래퍼를 실행합니다. 
+다음과 같이 루트 폴더에서 부트스트래퍼를 실행합니다.
 
 - **bootstrap-vcpkg.bat**(Windows)
 - **./bootstrap-vcpkg.sh**(Linux, MacOS)
@@ -76,7 +76,7 @@ taglib      1.11.1-2   TagLib Audio Meta-Data Library
 
 **vcpkg search**를 사용하여 라이브러리 이름을 찾은 후에 **vcpkg install**을 사용하여 라이브러리를 다운로드하고 컴파일합니다. vcpkg는 포트 디렉터리에 있는 라이브러리의 포트 파일을 사용합니다. triplet을 지정하지 않으면 vcpkg는 대상 플랫폼에 대해 기본 triplet(x86-windows, x64-linux.cmake 또는 x64-osx.cmake)을 설치하고 컴파일합니다.
 
-Linux 라이브러리의 경우 vcpkg는 gcc가 로컬 시스템에 설치되어 있는지 여부에 따라 다릅니다. MacOS에서는 vcpkg가 Clang을 사용합니다. 
+Linux 라이브러리의 경우 vcpkg는 gcc가 로컬 시스템에 설치되어 있는지 여부에 따라 다릅니다. MacOS에서는 vcpkg가 Clang을 사용합니다.
 
 포트 파일이 종속성을 지정하는 경우 vcpkg도 해당 항목을 다운로드하고 설치합니다. 다운로드 후 vcpkg는 라이브러리가 사용하는 빌드 시스템이면 무엇이든 사용하여 라이브러리를 빌드합니다. CMake 및 MSBuild 프로젝트(Windows)이 선호되지만 MAKE도 다른 빌드 시스템과 함께 지원됩니다. vcpkg가 로컬 컴퓨터에서 지정된 빌드 시스템을 찾을 수 없으면 다운로드하여 설치합니다.
 
@@ -91,7 +91,7 @@ Additional packages (*) will be installed to complete this operation.
 
 ```
 
-CMAKE 프로젝트의 경우 CMAKE_TOOLCHAIN_FILE을 사용하여 `find_package()`에서 라이브러리를 사용할 수 있도록 합니다. 예:  
+CMAKE 프로젝트의 경우 CMAKE_TOOLCHAIN_FILE을 사용하여 `find_package()`에서 라이브러리를 사용할 수 있도록 합니다. 예:
 
 ```cmd
 cmake .. -DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake (Linux/MacOS)
@@ -132,14 +132,13 @@ zlib:x86-windows        1.2.11   A compression library
 1. **vcpkg install \<library>** 를 실행합니다.
 1. **vcpkg integrate project**를 사용하여 프로젝트 단위로 해당 라이브러리를 참조하는 NuGet 패키지를 만듭니다.
 
-## <a name="integrate-with-visual-studio-code-linuxmacos"></a>Visual Studio Code와 통합(Linux/MacOS) 
+## <a name="integrate-with-visual-studio-code-linuxmacos"></a>Visual Studio Code와 통합(Linux/MacOS)
 
 **vcpkg 통합 설치**를 실행하여 Linux/MacOS에서 vcpkg enlistement의 위치를 사용하여 Visual Studio Code를 구성하고 소스 파일에서 IntelliSense를 활성화합니다.
 
 ## <a name="target-linux-from-windows-via-wsl"></a>WSL을 통해 Windows에서 Linux 대상 지정
 
 WSL(Linux용 Windows 하위 시스템)을 사용하여 Windows 컴퓨터에서 Linux 바이너리를 생성할 수 있습니다. [Windows 10에 WSL을 설정](/windows/wsl/install-win10) 지침에 따라 [Linux용 Visual Studio 확장](https://blogs.msdn.microsoft.com/vcblog/2017/02/08/targeting-windows-subsystem-for-linux-from-visual-studio/)을 사용하여 구성합니다. Windows와 Linux 모두에 대한 모든 내장 라이브러리를 동일한 폴더에 넣고 Windows와 WSL 모두에서 액세스할 수 있습니다.
-
 
 ## <a name="export_binaries_per_project"></a> 컴파일된 이진 파일 및 헤더 내보내기
 

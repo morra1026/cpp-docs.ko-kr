@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40c74633be8556fc075f10e328521209761f385c
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 6f2b4dddd77b245de307173fbc2496181658be78
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890714"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50066073"
 ---
 # <a name="whats-new-for-visual-c-in-visual-studio-2017"></a>Visual Studio 2017의 Visual C++에 대한 새로운 기능
 
@@ -42,11 +42,11 @@ Visual Studio 2017에는 Visual C++ 환경에 대한 많은 업데이트와 수�
 
 - Visual Studio 2017에서는 [/sdl](build/reference/sdl-enable-additional-security-checks.md)과 함께 [/await](build/reference/await-enable-coroutine-support.md)를 사용할 수 있습니다. 코루틴에서 [/RTC](build/reference/rtc-run-time-error-checks.md) 제한이 제거되었습니다.
 
-   **Visual Studio 2017 버전 15.3**:  
+   **Visual Studio 2017 버전 15.3**:
+
 - [/std:c++14 및 /std:c++latest](build/reference/std-specify-language-standard-version.md): 이러한 컴파일러 옵션을 사용하면 프로젝트에서 특정 버전의 ISO C++ 프로그래밍 언어를 옵트인할 수 있습니다. **/std:c++latest** 옵션은 대부분의 새 초안 표준 기능을 보호합니다.
 
 - [/std:c++17](build/reference/std-specify-language-standard-version.md)을 사용하면 컴파일러에서 구현된 일련의 C++17 기능을 사용할 수 있습니다. 이 옵션에서는 C++17 이후의 C++표준 규격 초안(Working Draft) 및 결함 업데이트의 전에서 변경되거나 새로운 기능에 대한 컴파일러 및 표준 라이브러리 지원을 사용하지 않습니다. 이러한 기능을 사용하려면 **/std:c++latest**를 사용하세요.
-
 
 ### <a name="codegen-security-diagnostics-and-versioning"></a>Codegen, 보안, 진단 및 버전 관리
 
@@ -342,9 +342,9 @@ Visual Studio 2017에서는 MSBuild 프로젝트 파일(.vcxproj)로 변환하�
 
   ![Cmake 폴더 열기](media/cmake_cpp.png "Cmake 폴더 열기")
 
-**Visual Studio 2017 버전 15.3**: CMake 닌자 생성기에 대한 지원이 추가되었습니다. 
+**Visual Studio 2017 버전 15.3**: CMake 닌자 생성기에 대한 지원이 추가되었습니다.
 
-**Visual Studio 2017 버전 15.5**: 기존 CMake 캐시 가져오기에 대한 지원이 추가되었습니다. 
+**Visual Studio 2017 버전 15.5**: 기존 CMake 캐시 가져오기에 대한 지원이 추가되었습니다.
 
 **Visual Studio 2017 버전 15.7**: CMake 3.11에 대한 지원, CMake 프로젝트의 코드 분석, 솔루션 탐색기에서 대상 보기, 캐시 생성 옵션 및 단일 파일 컴파일 기능이 추가되었습니다. 자세한 내용은 [Visual Studio의 CMake 지원](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) 및 [Visual C++의 CMake 프로젝트](ide/cmake-tools-for-visual-cpp.md)를 참조하세요.
 
@@ -416,10 +416,11 @@ Windows SDK Insider Preview의 빌드 17025부터 C++/WinRT가 Windows SDK에 �
 
 15.3에서 나타나는 일부 경고 번호가 15.5에서는 더 이상 나타나지 않습니다. 이러한 경고는 더 구체적인 검사로 대체되었습니다.
 
-**Visual Studio 2017 버전 15.6**:  
-단일 파일 분석 및 분석 런타임 성능 향상을 위한 지원이 추가되었습니다. 자세한 내용은 [Visual Studio 2017 15.6 Preview 2에 대한 C++ 정적 분석 향상](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/c-static-analysis-improvements-for-visual-studio-2017-15-6-preview-2/)을 참조하세요.
+**Visual Studio 2017 버전 15.6**:
 
-**Visual Studio 2017 버전 15.7**:  
+- 단일 파일 분석 및 분석 런타임 성능 향상을 위한 지원이 추가되었습니다. 자세한 내용은 [Visual Studio 2017 15.6 Preview 2에 대한 C++ 정적 분석 향상](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/c-static-analysis-improvements-for-visual-studio-2017-15-6-preview-2/)을 참조하세요.
+
+**Visual Studio 2017 버전 15.7**:
 
 - 실행할 코드 분석 규칙을 지정할 수 있는 [/analyze:ruleset](build/reference/analyze-code-analysis.md)에 대한 지원이 추가되었습니다.
 - 추가 C++ Core Guidelines 규칙에 대한 지원이 추가되었습니다.  자세한 내용은 [C++ 핵심 지침 검사기 사용](/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers)을 참조하세요.
@@ -435,7 +436,7 @@ Windows SDK Insider Preview의 빌드 17025부터 C++/WinRT가 Windows SDK에 �
 - Boost.Test 동적 라이브러리 지원에 대한 지원이 추가되었습니다.
 - 이제 Boost.Test 항목 템플릿을 IDE에서 사용할 수 있습니다.
 
-자세한 내용은 [Boost.Test 단위 테스트: 동적 라이브러리 지원 및 새 항목 템플릿](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/boost-test-unit-testing-dynamic-library-support-and-new-item-template/)을 참조하세요. 
+자세한 내용은 [Boost.Test 단위 테스트: 동적 라이브러리 지원 및 새 항목 템플릿](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/boost-test-unit-testing-dynamic-library-support-and-new-item-template/)을 참조하세요.
 
 **Visual Studio 2017 버전 15.7**:
 

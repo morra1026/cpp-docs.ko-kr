@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: d2ffd41fe224e492eb4b27a355f6df864e0dd066
-ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
+ms.openlocfilehash: 964da719da8d6f48131fc60f7e7fdfb247637fbf
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410826"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50069949"
 ---
 # <a name="deploy-run-and-debug-your-linux-project"></a>Linux 프로젝트 배포, 실행 및 디버그
 
@@ -41,7 +41,7 @@ Linux 프로젝트를 조작하고 디버그할 수 있는 여러 가지 방법�
 
     - **gdb** 모드에서 Visual Studio 디버거는 로컬 버전의 GDB가 대상 컴퓨터에 설치된 버전과 호환되지 않을 경우 더 호환성이 높은 원격 시스템에서 GDB를 실행합니다. |
 
-    > [!NOTE] 
+    > [!NOTE]
     > gdbserver 디버깅 모드에서 중단점에 도달할 수 없는 경우 gdb 모드를 시도해 보세요. 우선 원격 대상에 gdb가 [설치](../linux/download-install-and-setup-the-linux-development-workload.md)되어 있어야 합니다.
 
 2. Visual Studio에서 표준 **디버그** 도구 모음을 사용하여 원격 대상을 선택합니다.
@@ -64,7 +64,7 @@ Linux 프로젝트를 조작하고 디버그할 수 있는 여러 가지 방법�
 
     오류가 없는 경우 앱이 시작되고 디버거가 중단점에서 일시 중지됩니다.
 
-    ![중단점 도달](media/hit_breakpoint.png)  
+    ![중단점 도달](media/hit_breakpoint.png)
 
     이제 **F10** 또는 **F11** 키와 같은 명령 키를 눌러 현재 상태의 응용 프로그램과 상호 작용하고, 변수를 보고, 코드 사이를 이동할 수 있습니다.
 
@@ -79,7 +79,7 @@ Linux 프로젝트를 조작하고 디버그할 수 있는 여러 가지 방법�
 ## <a name="configure-other-debugging-options"></a>다른 디버깅 옵션 구성
 
 * 프로젝트의 **디버깅** 속성 페이지에서 **프로그램 인수** 항목을 사용하여 명령줄 인수를 실행 파일에 전달할 수 있습니다.
-  
+
   ![프로그램 인수](media/settings_programarguments.png)
 
 * 특정 디버거 옵션은 **추가 디버거 명령** 항목을 통해 GDB에 전달될 수 있습니다.  예를 들어 SIGILL(잘못된 명령) 신호를 무시하고자 할 경우  **handle** 명령을 사용하여 신호를 무시할 수 있습니다.  위 그림처럼 **추가 디버거 명령** 항목에 다음 내용을 추가하면 됩니다.

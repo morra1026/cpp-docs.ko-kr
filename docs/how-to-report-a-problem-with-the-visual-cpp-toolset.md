@@ -10,12 +10,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 279598c320131b163b936091560de45255c18a4d
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: e2ca0f4aa5f3965adc97e4cdaef09e01646e8809
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235012"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50062121"
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ 도구 집합 또는 설명서의 문제를 보고하는 방법
 
@@ -381,7 +381,7 @@ C++ 컴파일러, 링커, 기타 도구 및 라이브러리와 관련된 문제�
 
 기본적으로 **보고서의 모든 정보와 모든 의견 및 댓글이 공개됩니다**. 일반적으로 다른 사용자가 발견한 문제점, 솔루션 및 해결 방법을 전체 커뮤니티가 볼 수 있기 때문에 이는 장점이 됩니다. 그러나 개인 정보 또는 지적 재산권을 이유로 데이터 또는 신원 공개가 우려되는 경우 이에 대한 옵션이 있습니다.
 
-신원 노출이 우려되는 경우 자신의 세부 정보를 공개하지 않는 [새로운 Microsoft 계정을 만듭니다.](https://signup.live.com/) 이 계정을 사용하여 보고서를 만듭니다. 
+신원 노출이 우려되는 경우 자신의 세부 정보를 공개하지 않는 [새로운 Microsoft 계정을 만듭니다.](https://signup.live.com/) 이 계정을 사용하여 보고서를 만듭니다.
 
 **공개된 초기 보고서의 제목이나 내용에 비공개 내용을 넣지 마십시오.** 대신 별도의 주석으로 개인 세부 정보를 보냅니다. 보고서가 적합한 사람들에게 전달되도록 하려면 문제 보고서의 주제 목록에 **cppcompiler**를 포함시킵니다. 문제 보고서가 작성되면 이제 회신과 첨부 파일을 볼 수 있는 사용자를 지정할 수 있습니다.
 
