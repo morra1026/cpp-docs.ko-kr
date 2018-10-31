@@ -1,7 +1,7 @@
 ---
 title: C++ 메이크파일 프로젝트 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 09/12/2018
+ms.date: 10/19/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -17,22 +17,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3360d2ed86d220bc59d6f09f582c71b48f7d78c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5f937c11b2453bd296468c5f153b7c9495eba290
+ms.sourcegitcommit: c045c3a7e9f2c7e3e0de5b7f9513e41d8b6d19b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399485"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990245"
 ---
 # <a name="creating-a-c-makefile-project"></a>C++ 메이크파일 프로젝트 만들기
 
-‘메이크파일’은 C++ 소스 코드 파일 집합을 컴파일하고 링크(또는 ‘빌드’)하는 방법에 대한 지시를 포함하는 텍스트 파일입니다. ‘메이크’ 프로그램은 메이크파일을 읽고, 컴파일러, 링커 및 가능한 다른 프로그램을 호출하여 실행 파일을 만듭니다. ‘메이크’ 프로그램의 Microsoft 구현을 **NMAKE**라고 합니다. (Visual Studio는 기본적으로 .vcsproj 파일을 기반으로 하는 MSBuild 시스템을 사용합니다. 이 파일은 **파일 | 새로 만들기 | 프로젝트**에서 만드는 항목입니다.)
+‘메이크파일’은 C++ 소스 코드 파일 집합을 컴파일하고 링크(또는 ‘빌드’)하는 방법에 대한 지시를 포함하는 텍스트 파일입니다. ‘메이크’ 프로그램은 메이크파일을 읽고, 컴파일러, 링커 및 가능한 다른 프로그램을 호출하여 실행 파일을 만듭니다. ‘메이크’ 프로그램의 Microsoft 구현을 **NMAKE**라고 합니다. (Visual Studio는 기본적으로 .vcxproj 파일을 기반으로 하는 MSBuild 시스템을 사용합니다. 이 파일은 **파일 | 새로 만들기 | 프로젝트**에서 만드는 항목입니다.)
 
 기존 메이크파일 프로젝트가 있는 경우 Visual Studio IDE에서 코딩 및/또는 디버그할지 선택 사항이 있습니다.
 
 - Visual Studio에서 기존 메이크파일을 사용하여 IDE에서 코드를 빌드하는 메이크파일 프로젝트를 만듭니다. (기본 MSBuild 프로젝트를 사용하여 다운로드하는 IDE 기능이 일부 없습니다.) 아래의 [메이크파일 프로젝트 만들기](#create_a_makefile_project)를 참조하세요.
 - **기존 코드 파일에서 새 프로젝트 만들기** 마법사를 사용하여 소스 코드에서 기본 MSBuild 프로젝트를 만듭니다. 자세한 내용은 [방법: 기존 코드로 C++ 프로젝트 만들기](how-to-create-a-cpp-project-from-existing-code.md)를 참조하세요.
-- **Visual Studio 2017 이상**: **폴더 열기** 기능을 사용하여 메이크파일을 엽니다. 자세한 내용은 [Visual C++의 폴더 열기 프로젝트](non-msbuild-projects.md)를 참조하세요.
+- **Visual Studio 2017 이상**: **폴더 열기** 기능을 사용하여 MSBuild로 변환하지 않고 메이크파일 프로젝트를 엽니다. 자세한 내용은 [Visual C++의 폴더 열기 프로젝트](non-msbuild-projects.md)를 참조하세요.
 
 ## <a name="a-namecreateamakefileproject-to-create-a-makefile-project-with-the-makefile-project-template"></a><a name="create_a_makefile_project"> 메이크파일 프로젝트 템플릿을 사용하여 메이크파일 프로젝트 만들기
 

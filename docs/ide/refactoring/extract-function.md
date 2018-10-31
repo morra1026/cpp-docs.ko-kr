@@ -10,12 +10,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ca75ca3b69fb175bea160d7f2a35d36416ea2f5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e032c2f1579294431b01d5a7695bf2c8a35aa421
+ms.sourcegitcommit: 072e12d6b7a242765bdcc9afe4a14a284ade01fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46441371"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136122"
 ---
 # <a name="extract-function"></a>함수 추출
 **대상:** 코드 조각을 고유한 함수로 변환할 수 있습니다.
@@ -41,7 +41,7 @@ ms.locfileid: "46441371"
 
 1. **함수/메서드 추출(실험적)** 창에서 새로운 함수 이름을 입력하고, 코드를 배치하려는 위치를 선택하고, **확인** 단추를 클릭합니다.
 
-   ![함수 추출 함수](images/extractfunction_dialog.png)
+   ![함수 추출 대화 상자](images/extractfunction_dialog.png)
 
 1. 새 함수는 사용자가 지정한 위치에서 생성되고, 함수는 해당하는 헤더 파일에 프로토타입으로 지정되고, 원본 코드는 해당 함수를 호출하도록 변경됩니다.
 

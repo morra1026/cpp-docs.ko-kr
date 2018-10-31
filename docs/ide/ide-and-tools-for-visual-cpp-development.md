@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31b9c0c8668ec16d84ad84627eb73a0f406eb21e
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 99fdb8f9c08845c5f440fc4ae1f100f8afd832e2
+ms.sourcegitcommit: 072e12d6b7a242765bdcc9afe4a14a284ade01fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328378"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136161"
 ---
 # <a name="ide-and-compiler-tools-for-visual-c-development"></a>IDE 및 Visual C++ 개발을 위한 컴파일러 도구
 
@@ -30,7 +30,7 @@ Visual Studio IDE에 있는 공유 도구 외에도, MSVC에는 네이티브 코
 
 ## <a name="create-projects"></a>프로젝트 만들기
 
-*프로젝트*는 기본적으로 실행 파일에 빌드된 이미지 또는 데이터 파일과 같은 소스 코드 파일 및 리소스 집합입니다. 
+*프로젝트*는 기본적으로 실행 파일에 빌드된 이미지 또는 데이터 파일과 같은 소스 코드 파일 및 리소스 집합입니다.
 
 Visual Studio 2015는 MSBuild 프로젝트에 대한 지원을 제공합니다. Qt 또는 CMake와 같은 다른 빌드 시스템에 대한 Visual Studio 확장을 다운로드할 수 있습니다.
 
@@ -65,7 +65,7 @@ MFC 응용 프로그램의 사용자 인터페이스 만드는 방법에 대한 
 
 ## <a name="write-code"></a>코드 작성
 
-프로젝트를 만든 후에는 모든 프로젝트 파일이 **솔루션 탐색기** 창에 표시됩니다. (*솔루션*은 하나 이상의 관련 프로젝트의 논리적 컨테이너입니다.) **솔루션 탐색기**에서 .h 또는 .cpp 파일을 클릭하면 파일이 코드 편집기에서 열립니다. 
+프로젝트를 만든 후에는 모든 프로젝트 파일이 **솔루션 탐색기** 창에 표시됩니다. (*솔루션*은 하나 이상의 관련 프로젝트의 논리적 컨테이너입니다.) **솔루션 탐색기**에서 .h 또는 .cpp 파일을 클릭하면 파일이 코드 편집기에서 열립니다.
 
 ![솔루션 탐색기 및 코드 편집기](media/vs2017-solution-explorer-code-editor.png "Visual Studio 2017 솔루션 탐색기 및 코드 편집기")
 
