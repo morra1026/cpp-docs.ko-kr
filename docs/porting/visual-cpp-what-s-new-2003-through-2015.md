@@ -13,12 +13,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51921f8e55b9d4ce4e1875f5216984fe3257ca97
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: f005beb9bc71724c289322822a3bae4c03f19d48
+ms.sourcegitcommit: 072e12d6b7a242765bdcc9afe4a14a284ade01fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084115"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136252"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ 2003 ~ 2015의 새로운 기능
 
@@ -128,7 +128,7 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
 
     struct S2
     {
-        template <class C, void (C::*Function)(int) const> void f() {}        
+        template <class C, void (C::*Function)(int) const> void f() {}
     };
 
     void f()
@@ -271,7 +271,7 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
    예를 들어 코드에서 **placement new** 및 **placement delete**를 둘 다 정의한다고 가정합니다.
 
    ```cpp
-    void * operator new(std::size_t, std::size_t);
+    void * operator new(std::size_t, std::size_t);
     void operator delete(void*, std::size_t) noexcept;
    ```
 
@@ -318,14 +318,14 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
 
    ```cpp
     struct S {
-      S();
-     };
+      S();
+     };
 
-     union {
-      struct {
-       S s;
-      };
-     } u; // C2280
+     union {
+      struct {
+       S s;
+      };
+     } u; // C2280
    ```
 
    앞의 코드는 Visual Studio 2015에서 다음 오류를 생성합니다.
@@ -525,7 +525,7 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
 
 - **개인 가상 기본 클래스 및 간접 상속**
 
-   이전 버전의 컴파일러에서는 파생 클래스에서 *간접적으로 파생된*`private virtual` 기본 클래스의 멤버 함수를 호출할 수 있었습니다. 이 이전 동작은 올바르지 않으며 C++ 표준을 따르지 않습니다. 컴파일러는 이러한 방식으로 작성된 코드를 더 이상 허용하지 않으며, 결과적으로 컴파일러 오류 C2280이 발생합니다.
+   이전 버전의 컴파일러에서는 파생 클래스에서 *간접적으로 파생된* `private virtual` 기본 클래스의 멤버 함수를 호출할 수 있었습니다. 이 이전 동작은 올바르지 않으며 C++ 표준을 따르지 않습니다. 컴파일러는 이러한 방식으로 작성된 코드를 더 이상 허용하지 않으며, 결과적으로 컴파일러 오류 C2280이 발생합니다.
 
    ```Output
     error C2280: 'void *S3::__delDtor(unsigned int)': attempting to reference a deleted function
@@ -834,7 +834,7 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
 
 - **#include: 경로 이름에 부모 디렉터리 지정자 '..' 사용**(`/Wall` `/WX`에만 영향을 줌)
 
-     이전 버전의 컴파일러에서는 `#include` 지시문의 경로 이름에서 부모 디렉터리 지정자('..')의 사용을 검색하지 못했습니다. 이러한 방식으로 작성된 코드는 일반적으로 프로젝트 상대 경로를 부정확하게 사용하여 프로젝트의 외부에 존재하는 헤더를 포함합니다. 이 이전 동작은 프로그램이 프로그래머가 의도한 것과 다른 소스 파일을 포함하여 컴파일되거나 이러한 상대 경로가 다른 빌드 환경으로 이식되지 않는 위험을 초래했습니다. 이제 컴파일러는 이러한 방식으로 작성된 코드를 검색하여 프로그래머에게 알립니다. 그리고 사용하도록 설정된 경우 선택적으로 컴파일러 경고 C4464가 발생합니다.
+   이전 버전의 컴파일러에서는 `#include` 지시문의 경로 이름에서 부모 디렉터리 지정자('..')의 사용을 검색하지 못했습니다. 이러한 방식으로 작성된 코드는 일반적으로 프로젝트 상대 경로를 부정확하게 사용하여 프로젝트의 외부에 존재하는 헤더를 포함합니다. 이 이전 동작은 프로그램이 프로그래머가 의도한 것과 다른 소스 파일을 포함하여 컴파일되거나 이러한 상대 경로가 다른 빌드 환경으로 이식되지 않는 위험을 초래했습니다. 이제 컴파일러는 이러한 방식으로 작성된 코드를 검색하여 프로그래머에게 알립니다. 그리고 사용하도록 설정된 경우 선택적으로 컴파일러 경고 C4464가 발생합니다.
 
    ```Output
     warning C4464: relative include path contains '..'
@@ -1465,7 +1465,7 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
 
    예제(이전):
 
-     X.cpp(-Ycc.h)
+   X.cpp(-Ycc.h)
 
    ```cpp
     #include "a.h"
@@ -1473,7 +1473,7 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
     #include "c.h"
    ```
 
-     Z.cpp(-Yuc.h)
+   Z.cpp(-Yuc.h)
 
    ```cpp
     #include "b.h"
@@ -1483,7 +1483,7 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
 
    예제(이후)
 
-     X.cpp(-Ycc.h)
+   X.cpp(-Ycc.h)
 
    ```cpp
     #include "a.h"
@@ -1491,7 +1491,7 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
     #include "c.h"
    ```
 
-     Z.cpp(-Yuc.h)
+   Z.cpp(-Yuc.h)
 
    ```cpp
     #include "a.h"
@@ -1774,7 +1774,7 @@ Visual Studio에서 새로운 C++ 단위 테스트 프레임워크를 사용하�
 
 #### <a name="architecture-dependency-graphs"></a>아키텍처 종속성 그래프
 
-코드를 더 잘 이해하기 위해 솔루션의 이진 파일, 클래스, 네임스페이스 및 포함 파일에 대한 종속성 그래프를 생성할 수 있습니다. 메뉴 모음에서 **아키텍처** > **종속성 그래프 생성** 및 **솔루션용** 또는 **포함 파일용**을 차례로 선택하여 종속성 그래프를 생성합니다. 그래프 생성이 완료되면 각 노드를 펼치고, 노드 간을 이동하여 종속성 관계를 알아보고, 노드의 바로 가기 메뉴에서 **콘텐츠 보기**를 선택하여 소스 코드를 탐색할 수 있습니다. 포함 파일에 대한 종속성 그래프를 생성하려면 *.cpp 소스 코드 파일 또는 *.h 헤더 파일의 바로 가기 메뉴에서 **포함 파일의 그래프 생성**을 선택합니다.
+코드를 더 잘 이해하기 위해 솔루션의 이진 파일, 클래스, 네임스페이스 및 포함 파일에 대한 종속성 그래프를 생성할 수 있습니다. 메뉴 모음에서 **아키텍처** > **종속성 그래프 생성** 및 **솔루션용** 또는 **포함 파일용**을 차례로 선택하여 종속성 그래프를 생성합니다. 그래프 생성이 완료되면 각 노드를 펼치고, 노드 간을 이동하여 종속성 관계를 알아보고, 노드의 바로 가기 메뉴에서 **콘텐츠 보기**를 선택하여 소스 코드를 탐색할 수 있습니다. 포함 파일에 대한 종속성 그래프를 생성하려면 \*.cpp 소스 코드 파일 또는 \*.h 헤더 파일의 바로 가기 메뉴에서 **포함 파일의 그래프 생성**을 선택합니다.
 
 #### <a name="architecture-explorer"></a>아키텍처 탐색기
 
@@ -2100,7 +2100,7 @@ __sptr, __uptr
 - `/CLRIMAGETYPE`(CLR 이미지 형식 지정) 링커 옵션이 추가되었습니다.
 - `/CLRSUPPORTLASTERROR`(PInvoke 호출의 마지막 오류 코드 유지) 링커 옵션이 추가되었습니다.
 - `/CLRTHREADATTRIBUTE`(CLR 스레드 특성 설정) 링커 옵션이 추가되었습니다.
-- `/CLRUNMANAGEDCODECHECK`(SupressUnmanagedCodeSecurityAttribute 추가) 링커 옵션이 추가되었습니다.
+- `/CLRUNMANAGEDCODECHECK`(SuppressUnmanagedCodeSecurityAttribute 추가) 링커 옵션이 추가되었습니다.
 - `/ERRORREPORT`(내부 링커 오류 보고) 링커 옵션이 추가되었습니다.
 - `/EXETYPE` 링커 옵션이 제거되었습니다. 링커는 더 이상 Windows 95 및 Windows 98 장치 드라이버를 만들도록 지원하지 않습니다. 적절한 DDK를 사용하여 이러한 장치 드라이버를 만듭니다. EXETYPE 키워드는 더 이상 모듈 정의 파일에 유효하지 않습니다.
 - `/FUNCTIONPADMIN`(핫 패치 가능 이미지 만들기) 링커 옵션이 추가되었습니다.

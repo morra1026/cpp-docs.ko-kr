@@ -39,12 +39,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98965b94c83b69e15c38319d7bc5a6e4151b323e
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 91b97c653a5f035a767fbedcfcbfdfa7ca178327
+ms.sourcegitcommit: 038f1406b1172318f8832371ad14176f788c44fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704888"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50132155"
 ---
 # <a name="link-options"></a>링크 옵션
 
@@ -57,6 +57,7 @@ CRT 라이브러리 디렉터리에는 코드를 변경하지 않고도 특정 C
 |binmode.obj|pbinmode.obj|기본 파일 변환 모드를 이진으로 설정합니다. [_fmode](../c-runtime-library/fmode.md)를 참조하세요.|
 |chkstk.obj|N/A|CRT를 사용하지 않는 경우 스택 검사 및 alloca를 지원합니다.|
 |commode.obj|pcommode.obj|전역 커밋 플래그를 "커밋"으로 설정합니다. [fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md) 및 [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md)를 참조하세요.|
+|exe_initialize_mta.lib|N/A|글로벌 스마트 포인터에서 COM 개체를 사용할 수 있도록 EXE 시작 시 MTA 아파트를 초기화합니다. 이 옵션은 종료하는 동안 MTA 아파트 참조를 누출하므로 DLL에 사용하지 마세요. 이 링크는 combase.h를 포함하고 _EXE_INITIALIZE_MTA를 정의하는 것과 같습니다. |
 |fp10.obj|N/A|기본 정밀도 컨트롤을 64비트로 변경합니다. [부동 소수점 지원](../c-runtime-library/floating-point-support.md)을 참조하세요.|
 |invalidcontinue.obj|pinvalidcontinue.obj|아무 작업도 수행하지 않는 기본 잘못된 매개 변수 처리기를 설정합니다. 즉, CRT 함수에 전달된 잘못된 매개 변수는 단순히 errno를 설정하고 오류 결과를 반환합니다.|
 |loosefpmath.obj|N/A|부동 소수점 코드에서 비정상적인 값을 허용하도록 합니다.|
