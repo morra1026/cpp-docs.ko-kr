@@ -1,33 +1,23 @@
 ---
-title: 컴파일러 경고 (수준 1) C4952 | Microsoft Docs
-ms.custom: ''
+title: 컴파일러 경고(수준 1) C4952
 ms.date: 08/27/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4952
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4952
 ms.assetid: 593324f0-5cfe-42fb-b221-2f71308765dd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f62f4c18380d89eb516a5fa49ef63e92ab79a6f2
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c2e9b88125655d9ea0abe3e65500b149289ba83b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43207153"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537581"
 ---
 # <a name="compiler-warning-level-1-c4952"></a>컴파일러 경고(수준 1) C4952
 
 > '*함수*': 프로그램 데이터베이스에 프로필 데이터가 없습니다 '*pgd_file*'
 
-사용 하는 경우 [/ltcg: pgupdate](../../build/reference/ltcg-link-time-code-generation.md), 컴파일러 후 컴파일된 입력된 모듈을 발견 `/LTCG:PGINSTRUMENT` 새 함수 (*함수*) 표시 합니다.
+[/LTCG:PGUPDATE](../../build/reference/ltcg-link-time-code-generation.md)를 사용할 때 컴파일러에서 `/LTCG:PGINSTRUMENT` 이후 다시 컴파일된 입력 모듈을 검색했습니다. 이 모듈에는 새 함수(*function*)가 있습니다.
 
 이 경고는 정보 제공용입니다. 이 경고를 해결하려면 `/LTCG:PGINSTRUMENT`를 실행하고 모든 테스트 실행을 다시 수행한 다음 `/LTCG:PGOPTIMIZE`를 실행해야 합니다.
 
