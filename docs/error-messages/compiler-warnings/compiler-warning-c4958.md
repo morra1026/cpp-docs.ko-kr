@@ -1,27 +1,17 @@
 ---
-title: 컴파일러 경고 C4958 | Microsoft Docs
-ms.custom: ''
+title: 컴파일러 경고 C4958
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4958
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4958
 ms.assetid: e79b9e9c-d572-4a3a-a3b6-60962b70864a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6e32acc4ec45275976e7fb56f993b10ba8a2a855
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 7d4ac6f21cfcfe0f37eb17ff81eabd3e6341a7d5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704875"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477404"
 ---
 # <a name="compiler-warning-c4958"></a>컴파일러 경고 C4958
 
@@ -31,13 +21,13 @@ ms.locfileid: "34704875"
 
 포인터 산술 연산을 사용하여 확인할 수 없는 이미지를 생성합니다.
 
-자세한 내용은 참조 [순수형 및 안정형 코드 (C + + /cli CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md)합니다.
+자세한 내용은 [순수형 및 안정형 코드 (C + + /cli CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md)합니다.
 
-**/clr: safe** 컴파일러 옵션은 Visual Studio 2015에서 사용 되지 않으며 Visual Studio 2017에서 지원 되지 않습니다.
+합니다 **/clr: safe** 컴파일러 옵션은 Visual Studio 2015에서 사용 되지 않으며 Visual Studio 2017에서 지원 되지 않습니다.
 
 이 경고는 오류로 발생하며 [warning](../../preprocessor/warning.md) pragma 또는 [/wd](../../build/reference/compiler-option-warning-level.md) 컴파일러 옵션과 함께 사용하지 않도록 설정할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 샘플에서는 C4958을 생성합니다.
 

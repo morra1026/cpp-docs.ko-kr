@@ -1,27 +1,17 @@
 ---
-title: 가져오기 라이브러리 및 내보내기 파일을 사용 하 여 | Microsoft Docs
-ms.custom: ''
+title: 가져오기 라이브러리 및 내보내기 파일 사용
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - circular exports
 - import libraries, using
 - export files
 ms.assetid: 2634256a-8aa5-4495-8c9e-6cde10e4ed76
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 77157ae9404e1d64aec34c897af7564511f275f8
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e23b729bdca102ec24c4426e9784e3aab267bff2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717250"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484962"
 ---
 # <a name="using-an-import-library-and-export-file"></a>가져오기 라이브러리 및 내보내기 파일 사용
 
