@@ -1,11 +1,6 @@
 ---
-title: fesetenv | Microsoft Docs
-ms.custom: ''
+title: fesetenv
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - fesetenv
 apilocation:
@@ -24,21 +19,15 @@ apitype: DLLExport
 f1_keywords:
 - fesetenv
 - fenv/fesetenv
-dev_langs:
-- C++
 helpviewer_keywords:
 - fesetenv function
 ms.assetid: ffc64fff-8ea7-4d59-9e04-ff96ef8cd012
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bd761f505c602aad44c5e00df223d4a6c983e851
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8c91bfbb89df964fed0a632d5fb5ebac47ebe948
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397248"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50436153"
 ---
 # <a name="fesetenv"></a>fesetenv
 
@@ -55,7 +44,7 @@ int fesetenv(
 ### <a name="parameters"></a>매개 변수
 
 *penv*<br/>
-에 대 한 포인터는 **fenv_t** 를 호출 하 여 부동 소수점 환경 설정 포함 된 개체 [fegetenv](fegetenv1.md) 또는 [feholdexcept](feholdexcept2.md)합니다. 사용 하 여 기본 시작 부동 소수점 환경을 지정할 수도 있습니다는 **FE_DFL_ENV** 매크로입니다.
+에 대 한 포인터를 **fenv_t** 를 호출 하 여 집합으로 부동 소수점 환경을 포함 하는 개체 [fegetenv](fegetenv1.md) 하거나 [feholdexcept](feholdexcept2.md)합니다. 사용 하 여 기본 시작 부동 소수점 환경을 지정할 수도 있습니다는 **FE_DFL_ENV** 매크로입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -63,15 +52,15 @@ int fesetenv(
 
 ## <a name="remarks"></a>설명
 
-**fesetenv** 에 저장 된 값에서 현재 부동 소수점 환경을 설정 하는 함수는 **fenv_t** 가리키는 개체 *penv*합니다. 부동 소수점 환경은 부동 소수점 계산에 영향을 미치는 상태 플래그 및 제어 모드의 집합입니다. 여기에는 부동 소수점 예외에 대한 상태 플래그와 반올림 모드가 포함됩니다.  경우 *penv* 않습니다 **FE_DFL_ENV** 유효한를 가리키지 않습니다 또는 **fenv_t** 개체를 후속 동작이 정의 되지 않습니다.
+**fesetenv** 에 저장 된 값에서 현재 부동 소수점 환경을 설정 하는 함수는 **fenv_t** 가리키는 개체가 *penv*합니다. 부동 소수점 환경은 부동 소수점 계산에 영향을 미치는 상태 플래그 및 제어 모드의 집합입니다. 여기에는 부동 소수점 예외에 대한 상태 플래그와 반올림 모드가 포함됩니다.  하는 경우 *penv* 아닙니다 **FE_DFL_ENV** 유효한를 가리키지 않습니다 또는 **fenv_t** 개체를 후속 동작이 정의 되지 않습니다.
 
-이 함수에 대 한 호출에 있는 상태 플래그는 예외를 설정의 *penv* 하지만 개체를 해당 하는 예외를 발생 하지 않습니다.
+이 함수 호출 예외에는 상태 플래그를 설정 합니다 *penv* 개체 있지만 이러한 예외를 발생 하지 않습니다.
 
 이 함수를 사용하려면 호출 전에 `#pragma fenv_access(on)` 지시문을 사용하여 액세스를 방지할 수 있는 부동 소수점 최적화를 꺼야 합니다. 자세한 내용은 [fenv_access](../../preprocessor/fenv-access.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|C 헤더|C++ 헤더|
+|기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
 |**fesetenv**|\<fenv.h>|\<cfenv>|
 

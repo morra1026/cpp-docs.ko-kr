@@ -1,10 +1,6 @@
 ---
-title: _get_wpgmptr | Microsoft 문서
-ms.custom: ''
+title: _get_wpgmptr
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _get_wpgmptr
 apilocation:
@@ -23,53 +19,47 @@ apitype: DLLExport
 f1_keywords:
 - get_wpgmptr
 - _get_wpgmptr
-dev_langs:
-- C++
 helpviewer_keywords:
 - _wpgmptr global variable
 - get_wpgmptr function
 - wpgmptr global variable
 - _get_wpgmptr function
 ms.assetid: a77cdd13-2303-4b7c-9a60-8debdbef2011
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9393351174477a4da43d0b3bd49e107430e68ece
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0e49bc35f43ed6ed5a5f86e6c76c51854ab71add
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398772"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50436337"
 ---
 # <a name="getwpgmptr"></a>_get_wpgmptr
 
-현재 값을 가져옵니다는 **_wpgmptr** 전역 변수입니다.
+현재 값을 가져옵니다 합니다 **_wpgmptr** 전역 변수입니다.
 
 ## <a name="syntax"></a>구문
 
 ```C
-errno_t _get_wpgmptr( 
-   wchar_t **pValue 
+errno_t _get_wpgmptr( 
+   wchar_t **pValue 
 );
 ```
 
 ### <a name="parameters"></a>매개 변수
 
 *pValue*<br/>
-현재 값으로 채울 문자열에 대 한 포인터는 **_wpgmptr** 변수입니다.
+현재 값을 채울 문자열에 대 한 포인터를 **_wpgmptr** 변수입니다.
 
 ## <a name="return-value"></a>반환 값
 
-성공하는 경우 0을 반환하고, 실패하는 경우 오류 코드를 반환합니다. 경우 *pValue* 은 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 이 함수를 설정 하는 경우 실행을 계속 허용 된, **errno** 를 **EINVAL** 반환 **EINVAL**합니다.
+성공하는 경우 0을 반환하고, 실패하는 경우 오류 코드를 반환합니다. 하는 경우 *pValue* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우이 함수를 설정 합니다 **errno** 하 **EINVAL** 반환 **EINVAL**합니다.
 
 ## <a name="remarks"></a>설명
 
-호출 **_get_wpgmptr** 프로그램 넓은 진입점이 있으면 같은 **wmain()** 또는 **wWinMain()** 합니다. **_wpgmptr** 전역 변수를 와이드 문자열로 프로세스와 관련 된 실행 파일의 전체 경로 포함 합니다. 자세한 내용은 [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md)를 참조하세요.
+호출 **_get_wpgmptr** 프로그램 와이드 진입점이 있으면 같은 **wmain()** 하거나 **wWinMain()** 합니다. 합니다 **_wpgmptr** 전역 변수를 와이드 문자열로 프로세스와 관련 된 실행 파일의 전체 경로 포함 합니다. 자세한 내용은 [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_get_wpgmptr**|\<stdlib.h>|
 

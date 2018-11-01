@@ -1,10 +1,6 @@
 ---
-title: imaxdiv | Microsoft 문서
-ms.custom: ''
+title: imaxdiv
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - imaxdiv
 apilocation:
@@ -22,21 +18,15 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - imaxdiv
-dev_langs:
-- C++
 helpviewer_keywords:
 - imaxdiv function
 ms.assetid: 7d90126f-fdc2-4986-9cdf-94e4c9123d26
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: db2a57e9b91672d39fbce5eaee061043604a0998
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 23067b2028fc11193fae707e25165fb0ce754515
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399698"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434460"
 ---
 # <a name="imaxdiv"></a>imaxdiv
 
@@ -53,7 +43,7 @@ imaxdiv_t imaxdiv(
 
 ### <a name="parameters"></a>매개 변수
 
-*번호*<br/>
+*필드가*<br/>
 분자입니다.
 
 *denom*<br/>
@@ -61,15 +51,15 @@ imaxdiv_t imaxdiv(
 
 ## <a name="return-value"></a>반환 값
 
-**imaxdiv** 형식의 인수를 사용 하 여 호출 [intmax_t](../../c-runtime-library/standard-types.md) 형식의 구조를 반환 [imaxdiv_t](../../c-runtime-library/standard-types.md) 몫과 나머지를 구성 하 합니다.
+**imaxdiv** 형식의 인수를 사용 하 여 호출 [intmax_t](../../c-runtime-library/standard-types.md) 형식의 구조체를 반환 [imaxdiv_t](../../c-runtime-library/standard-types.md) 몫과 나머지를 구성 하는 합니다.
 
 ## <a name="remarks"></a>설명
 
-**imaxdiv** 나눕니다 함수 *번호* 여 *denom* 함으로써 몫과 나머지를 계산 하 고 있습니다. **imaxdiv_t** 구조에는 몫인 **intmax_t** **q u o t**, 및 나머지 인 **intmax_t** **rem**. 몫의 부호는 수학적 몫의 부호와 같습니다. 몫의 절대 값은 수학적 몫의 절대 값보다 작은 가장 큰 정수입니다. 분모가 0이면 프로그램이 종료되고 오류 메시지가 표시됩니다.
+**imaxdiv** 함수 *필드가* 하 여 *denom* 있으므로 몫과 나머지를 계산 하 고 있습니다. 합니다 **imaxdiv_t** 구조에는 몫인 **intmax_t** **q u o t**, 및 나머지 인 **intmax_t** **rem**. 몫의 부호는 수학적 몫의 부호와 같습니다. 몫의 절대 값은 수학적 몫의 절대 값보다 작은 가장 큰 정수입니다. 분모가 0이면 프로그램이 종료되고 오류 메시지가 표시됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**imaxdiv**|\<inttypes.h>|
 

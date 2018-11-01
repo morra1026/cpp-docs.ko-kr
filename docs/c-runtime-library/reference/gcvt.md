@@ -1,10 +1,6 @@
 ---
-title: _gcvt | Microsoft 문서
-ms.custom: ''
+title: _gcvt
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _gcvt
 apilocation:
@@ -22,8 +18,6 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _gcvt
-dev_langs:
-- C++
 helpviewer_keywords:
 - _gcvt function
 - _CVTBUFSIZE
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - strings [C++], converting from floating point
 - CVTBUFSIZE
 ms.assetid: 5761411e-c06b-409a-912f-810fe7f4bcb5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d824d42a102aee68619d602044c39f398af177dc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9cf966b455af601d09b4444a5c590e305a6681c8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400982"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430864"
 ---
 # <a name="gcvt"></a>_gcvt
 
@@ -76,15 +66,15 @@ char *_gcvt(
 
 ## <a name="remarks"></a>설명
 
-**_gcvt** 함수는 부동 소수점 변환 *값* 문자 문자열로 (소수점 및 가능한 기호 바이트 포함)에 문자열을 저장 하 고 *버퍼*합니다. *버퍼* 변환 된 값에 더한 값은 자동으로 추가 종결 null 문자를 수용할 수 있어야 합니다. 버퍼 크기인 경우 *자릿수* + 1을 사용 하는 경우 함수는 버퍼의 끝을 덮어씁니다. 이는 변환된 문자열에 소수점이 포함되어 있고 부호 및 지수 정보가 포함될 수 있기 때문입니다. 오버플로에 대한 프로비전이 없습니다. **_gcvt** 생성 하려고 *자릿수* 10 진수 형식의 숫자입니다. 생성을 표시할 수 없는 경우 *자릿수* 지 수 서식의 자릿수입니다. 변환 시 뒤에 오는 0을 표시하지 않을 수 있습니다.
+**_gcvt** 함수는 부동 소수점 변환 *값* 를 포함 하는 소수점 및 가능한 부호 바이트 문자열로 문자열을 가져와 *버퍼*합니다. 합니다 *버퍼* 변환 된 값과 자동으로 추가 되는 종료 null 문자를 수용 하기에 충분 해야 합니다. 경우는 버퍼 크기인 *자릿수* + 1은 사용, 함수는 버퍼의 끝을 덮어씁니다. 이는 변환된 문자열에 소수점이 포함되어 있고 부호 및 지수 정보가 포함될 수 있기 때문입니다. 오버플로에 대한 프로비전이 없습니다. **_gcvt** 생성 하려고 *자릿수* 10 진수 형식의 숫자입니다. 수 없는 경우 생성 *자릿수* 지 수 서식의 자릿수입니다. 변환 시 뒤에 오는 0을 표시하지 않을 수 있습니다.
 
-A *버퍼* 길이의 **_CVTBUFSIZE** 충분히는 부동 소수점 값입니다.
+*버퍼* 길이의 **_CVTBUFSIZE** 충분 모두 부동 소수점 값입니다.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 경우 *버퍼* 은 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 이 함수를 설정 하는 경우 실행을 계속 허용 된, **errno** 를 **EINVAL** 반환 **NULL**합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. 하는 경우 *버퍼* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우이 함수를 설정 합니다 **errno** 하 **EINVAL** 반환 **NULL**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_gcvt**|\<stdlib.h>|
 

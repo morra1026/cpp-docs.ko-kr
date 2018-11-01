@@ -1,10 +1,6 @@
 ---
-title: CMFCPropertyGridToolTipCtrl 클래스 | Microsoft Docs
-ms.custom: ''
+title: CMFCPropertyGridToolTipCtrl 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCPropertyGridToolTipCtrl
 - AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl
@@ -15,8 +11,6 @@ f1_keywords:
 - AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Hide
 - AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::SetTextMargin
 - AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Track
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCPropertyGridToolTipCtrl [MFC], CMFCPropertyGridToolTipCtrl
 - CMFCPropertyGridToolTipCtrl [MFC], Create
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - CMFCPropertyGridToolTipCtrl [MFC], SetTextMargin
 - CMFCPropertyGridToolTipCtrl [MFC], Track
 ms.assetid: 84b436e5-6695-4da0-9569-1a875e087711
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ea84af41178316085a903d2663ded74ee57c99a1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a7262416fa3555993ea237dd2f6b82b73ed9949c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389748"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429096"
 ---
 # <a name="cmfcpropertygridtooltipctrl-class"></a>CMFCPropertyGridToolTipCtrl 클래스
 
@@ -66,7 +56,7 @@ class CMFCPropertyGridToolTipCtrl : public CWnd
 |[CMFCPropertyGridToolTipCtrl::Deactivate](#deactivate)|비활성화 하 고 도구 설명 컨트롤을 숨깁니다.|
 |[CMFCPropertyGridToolTipCtrl::GetLastRect](#getlastrect)|도구 설명 컨트롤의 마지막 위치 좌표를 반환합니다.|
 |[CMFCPropertyGridToolTipCtrl::Hide](#hide)|도구 설명 컨트롤을 숨깁니다.|
-|`CMFCPropertyGridToolTipCtrl::PreTranslateMessage`|클래스에서 사용 하는 [CWinApp](../../mfc/reference/cwinapp-class.md) 디스패치 되기 전에 창 메시지를 변환 하는 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수입니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|
+|`CMFCPropertyGridToolTipCtrl::PreTranslateMessage`|창 메시지가 [TranslateMessage](../../mfc/reference/cwinapp-class.md) 및 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) Windows 함수로 디스패치되기 전에 [CWinApp](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) 클래스가 이 메시지를 해석하는 데 사용됩니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|
 |[CMFCPropertyGridToolTipCtrl::SetTextMargin](#settextmargin)|도구 설명 텍스트를 도구 설명 창의 테두리 사이의 간격을 설정합니다.|
 |[CMFCPropertyGridToolTipCtrl::Track](#track)|도구 설명 컨트롤을 표시합니다.|
 

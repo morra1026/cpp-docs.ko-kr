@@ -1,24 +1,16 @@
 ---
-title: 'Platform:: box 클래스 | Microsoft Docs'
-ms.custom: ''
+title: Platform::Box 클래스
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::Box
-dev_langs:
-- C++
 ms.assetid: b3d7ea37-e98a-4fbc-80b0-ad35e50250c6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 133c8ebabe3e67526086661ab459bb6e96c4e727
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 387fa03caebed599d51292dd1b6d18ad4afd921c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106511"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429072"
 ---
 # <a name="platformbox-class"></a>Platform::Box 클래스
 
@@ -38,7 +30,7 @@ ref class Box abstract;
 **네임스페이스:** Platform
 |멤버|설명|
 |------------|-----------------|
-|[Object^](#ctor)|만듭니다는 `Box` 지정 된 형식의 값을 캡슐화 할 수 있는 합니다.|
+|[Object^](#ctor)|지정된 형식의 값을 캡슐화할 수 있는 `Box`를 만듭니다.|
 |[연산자 상자&lt;const T&gt;^](#box-const-t)|`const` 값 클래스 `T` 또는 `enum` 클래스 `T`를 `Box<T>`로 boxing 변환할 수 있습니다.|
 |[연산자 상자&lt;volatile const T&gt;^](#box-const-volatile-t)|`const volatile` 값 클래스 `T` 또는 `enum` 형식 `T`를 `Box<T>`로 boxing 변환할 수 있습니다. |
 |[연산자 상자&lt;T&gt;^](#box-t)|값 클래스 `T`를 `Box<T>`로 boxing 변환할 수 있습니다.|
@@ -56,7 +48,7 @@ Box(T valueArg);
 ### <a name="parameters"></a>매개 변수
 
 *valueArg*<br/>
-에 넣을 값의 형식을-예를 들어 `int`, `bool`를 `float64`, `DateTime`합니다.
+boxing할 값의 형식입니다(예: `int`, `bool`, `float64`, `DateTime`).
 
 ## <a name="box-const-t"></a> Box:: operator 상자가&lt;const T&gt;^ 연산자
 
