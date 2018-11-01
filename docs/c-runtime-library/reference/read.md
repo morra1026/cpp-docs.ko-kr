@@ -1,10 +1,6 @@
 ---
-title: _read | Microsoft Docs
-ms.custom: ''
+title: _read
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _read
 apilocation:
@@ -22,8 +18,6 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _read
-dev_langs:
-- C++
 helpviewer_keywords:
 - data [CRT]
 - _read function
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - reading data [C++]
 - files [C++], reading
 ms.assetid: 2ce9c433-57ad-47fe-9ac1-4a7d4c883d30
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2c67ce8ac0e754bf3003b23c56cd1d3f428be903
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8c43cbbc2681433bda02038ae73a827fad904835
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405811"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658446"
 ---
 # <a name="read"></a>_read
 
@@ -70,23 +60,23 @@ int _read(
 
 ## <a name="return-value"></a>반환 값
 
-**읽기 (_r)** 작은 일 수 있는 읽은 바이트 수를 반환 보다 *count* 보다 적은 경우 *count* 파일에 남아 있는 바이트 또는 파일이 텍스트 모드로 열려 있으면이 경우 각 캐리지 리턴-줄 바꿈 쌍 '\r\n'은 단일 줄 바꿈 문자 '\n'으로 바뀝니다. 반환 값에서는 단일 줄 바꿈 문자만 계산됩니다. 이러한 바꾸기는 파일 포인터에 영향을 주지 않습니다.
+**_read** 작을 수 있으며는 읽은 바이트 수를 반환 합니다 보다 *개수* 개 보다 적으면 *개수* 파일에 남아 있는 바이트 또는 파일이 텍스트 모드로 열려 있으면 있는 경우 각 캐리지 리턴-줄 바꿈 쌍 '\r\n' '\n' 단일 줄 바꿈 문자로 바뀝니다. 반환 값에서는 단일 줄 바꿈 문자만 계산됩니다. 이러한 바꾸기는 파일 포인터에 영향을 주지 않습니다.
 
-함수는 파일의 끝에서 읽기를 시도하는 경우 0을 반환합니다. 경우 *fd* 은 유효 하지 않은 파일이 열려 있지 않으면 읽기를 위해 또는 파일이 잠겨에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 함수는-1 반환 하 고 집합을 계속 하려면 실행 허용 된 경우 **errno** 를 **EBADF**합니다.
+함수는 파일의 끝에서 읽기를 시도하는 경우 0을 반환합니다. 하는 경우 *fd* 은 유효 하지 않은 파일을 열지 않은 읽기 또는 파일이 잠겨에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행 함수는-1 반환 하 고 집합을 계속 하도록 허용 된 경우 **errno** 하 **EBADF**합니다.
 
-*buffer*가 **NULL**인 경우 잘못된 매개 변수 처리기가 호출됩니다. 함수 실행을 계속 허용 된,-1을 반환 하 고 **errno** 로 설정 된 **EINVAL**합니다.
+*buffer*가 **NULL**인 경우 잘못된 매개 변수 처리기가 호출됩니다. 함수는 계속 실행 하도록 허용,-1을 반환 하 고 **errno** 로 설정 된 **EINVAL**합니다.
 
-이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
+이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하십시오.
 
 ## <a name="remarks"></a>설명
 
-**읽기 (_r)** 함수는 최대 읽고 *count* 바이트 *버퍼* 연결 된 파일에서 *fd*합니다. 읽기 작업은 지정된 파일과 연결된 파일 포인터의 현재 위치에서 시작됩니다. 읽기 작업 후 파일 포인터는 읽지 않은 다음 문자를 가리킵니다.
+**_read** 함수는 최대를 읽습니다 *개수* 바이트 *버퍼* 연관 된 파일에서 *fd*. 읽기 작업은 지정된 파일과 연결된 파일 포인터의 현재 위치에서 시작됩니다. 읽기 작업 후 파일 포인터는 읽지 않은 다음 문자를 가리킵니다.
 
-파일이 텍스트 모드로 열려 있으면 읽기 때 종료 **읽기 (_r)** 파일 끝 표시기로 처리 되는 CTRL + Z 문자를 발견 합니다. 파일 끝 표시기를 지우려면 [_lseek](lseek-lseeki64.md)를 사용합니다.
+읽기 종료 될 때 파일이 텍스트 모드로 열려 있으면 **_read** 파일 끝 표시기로 간주 되는 CTRL + Z 문자를 발견 합니다. 파일 끝 표시기를 지우려면 [_lseek](lseek-lseeki64.md)를 사용합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_read**|\<io.h>|
 

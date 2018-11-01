@@ -1,10 +1,6 @@
 ---
-title: _configthreadlocale | Microsoft 문서
-ms.custom: ''
+title: _configthreadlocale
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _configthreadlocale
 apilocation:
@@ -23,8 +19,6 @@ apitype: DLLExport
 f1_keywords:
 - _configthreadlocale
 - configthreadlocale
-dev_langs:
-- C++
 helpviewer_keywords:
 - configthreadlocale function
 - locales, per-thread
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - per-thread locale
 - thread locale
 ms.assetid: 10e4050e-b587-4f30-80bc-6c76b35fc770
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7531a5849bc1e86d469a12747b5c4648b76c9117
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 244ef9ce93e39bef23a9d5d6792a10ca25355f5a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395779"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648385"
 ---
 # <a name="configthreadlocale"></a>_configthreadlocale
 
@@ -60,27 +50,27 @@ int _configthreadlocale( int per_thread_locale_type );
 
 ## <a name="return-value"></a>반환 값
 
-이전 스레드 단위 로캘 상태 (**_DISABLE_PER_THREAD_LOCALE** 또는 **_ENABLE_PER_THREAD_LOCALE**), 또는 실패 시-1입니다.
+이전 per-thread locale 상태 (**_DISABLE_PER_THREAD_LOCALE** 하거나 **_ENABLE_PER_THREAD_LOCALE**), 실패 시-1을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_configurethreadlocale** 함수는 스레드별 로캘의 사용을 제어 하는 데 사용 됩니다. 다음 중 하나를 사용 하 여 *per_thread_locale_type* 옵션을 지정 하거나 스레드 단위 로캘을 상태를 확인 합니다.
+합니다 **_configurethreadlocale** 함수 스레드 관련 로캘 사용을 제어를 사용 합니다. 다음 중 하나를 사용 하 여 *per_thread_locale_type* 옵션을 지정 하거나 per-thread locale 상태를 확인 합니다.
 
 |||
 |-|-|
-**_ENABLE_PER_THREAD_LOCALE**|현재 스레드에서 스레드 관련 로캘을 사용하도록 합니다. 에 대 한 후속 호출 **setlocale** 이 스레드가 스레드 자체의 로캘만에 영향을 줍니다.
-**_DISABLE_PER_THREAD_LOCALE**|현재 스레드에서 전역 로캘을 사용하도록 합니다. 에 대 한 후속 호출 **setlocale** 이 스레드 전역 로캘을 사용 하 여 다른 스레드에서 영향을 줍니다.
+**_ENABLE_PER_THREAD_LOCALE**|현재 스레드에서 스레드 관련 로캘을 사용하도록 합니다. 에 대 한 후속 호출 **setlocale** 이 스레드의 스레드 자체의 로캘에 영향을 줍니다.
+**_DISABLE_PER_THREAD_LOCALE**|현재 스레드에서 전역 로캘을 사용하도록 합니다. 에 대 한 후속 호출 **setlocale** 이 스레드에서 전역 로캘을 사용 하 여 다른 스레드에 영향을 줍니다.
 **0**|이 특정 스레드에 대한 현재 설정을 검색합니다.
 
-이러한 함수에는 동작에 영향을 **setlocale**, **_tsetlocale**, **_wsetlocale**, 및 **_setmbcp**합니다. 스레드 단위 로캘을 사용 안 함, 모든 후속 호출을 경우 **setlocale** 또는 **_wsetlocale** 전역 로캘을 사용 하는 모든 스레드의 로캘을 변경 합니다. 스레드 단위 로캘을 사용 하는 **setlocale** 또는 **_wsetlocale** 만 현재 스레드의 로캘을 영향을 줍니다.
+이러한 함수 동작에 영향을 줄 **setlocale**를 **_tsetlocale**를 **_wsetlocale**, 및 **_setmbcp**합니다. 스레드별 로캘은 경우 사용 안 함, 모든 후속 호출 **setlocale** 하거나 **_wsetlocale** 전역 로캘을 사용 하는 모든 스레드의 로캘을 변경 합니다. 스레드별 로캘을 사용 하는 경우 **setlocale** 하거나 **_wsetlocale** 만 현재 스레드의 로캘에 영향을 줍니다.
 
-사용 하는 경우 **_configurethreadlocale** 스레드 단위 로캘을 사용할 수 있도록를 호출 하는 권장 **setlocale** 또는 **_wsetlocale** 스레드에서 기본 설정된 로캘을 설정 하려면 바로 다음에 있습니다.
+사용 하는 경우 **_configurethreadlocale** 스레드별 로캘을 사용할 수 있도록를 호출 하는 권장 **setlocale** 하거나 **_wsetlocale** 스레드에서 원하는 로캘을 설정 하려면 바로 다음에 있습니다.
 
-경우 *per_thread_locale_type* 값 중 하나가 아닙니다 표에 나열 된,이 함수는 잘못 된 매개 변수 처리기를 호출에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 이 함수를 설정 하는 경우 실행을 계속 허용 된, **errno** 를 **EINVAL** 하 고-1을 반환 합니다.
+하는 경우 *per_thread_locale_type* 값 중 하나가 아닌 표에 나열 된,이 함수는 잘못 된 매개 변수 처리기를 호출에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 이 함수를 설정 하는 경우는 계속 실행 하도록 허용 합니다 **errno** 하 **EINVAL** -1을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_configthreadlocale**|\<locale.h>|
 

@@ -1,27 +1,17 @@
 ---
-title: Override 지정자 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
-ms.custom: ''
+title: Override 지정자 (C + + /cli 및 C + + /cli CX)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - override specifiers, C++
 - override specifiers
 ms.assetid: 155bbf6f-4722-4654-afb1-9cb52af799fb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 0620bc7045dcb312667cfdfe670e1f19b0545cf2
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 9d839b9530cff144cda7897b0c96af48c14454a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49327466"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50639857"
 ---
 # <a name="override-specifiers--ccli-and-ccx"></a>Override 지정자 (C + + /cli 및 C + + /cli CX)
 
@@ -65,4 +55,4 @@ ms.locfileid: "49327466"
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

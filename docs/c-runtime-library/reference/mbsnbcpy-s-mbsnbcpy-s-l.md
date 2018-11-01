@@ -1,10 +1,6 @@
 ---
-title: _mbsnbcpy_s, _mbsnbcpy_s_l | Microsoft 문서
-ms.custom: ''
+title: _mbsnbcpy_s, _mbsnbcpy_s_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbsnbcpy_s_l
 - _mbsnbcpy_s
@@ -26,8 +22,6 @@ f1_keywords:
 - _mbsnbcpy_s
 - mbsnbcpy_s
 - _mbsnbcpy_s_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _mbsnbcpy_s function
 - tcsncpy_s function
@@ -38,20 +32,16 @@ helpviewer_keywords:
 - _mbsnbcpy_s_l function
 - _tcsncpy_s function
 ms.assetid: dfff64ab-fe6f-49c4-99ba-75014e2b0cd6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a9475609d304b6a3e49c2f71073c4d06c0380160
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 00f1fe7a6deb104a4f226e42858764f5649c52ae
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404119"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50493498"
 ---
 # <a name="mbsnbcpys-mbsnbcpysl"></a>_mbsnbcpy_s, _mbsnbcpy_s_l
 
-복사본 **n** 바이트의 문자열을 대상 문자열입니다. 이러한 버전의 [_mbsnbcpy, _mbsnbcpy_l](mbsnbcpy-mbsnbcpy-l.md)에는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 강화된 보안 기능이 포함되어 있습니다.
+복사본 **n** 바이트를 대상 문자열에는 문자열입니다. 이러한 버전의 [_mbsnbcpy, _mbsnbcpy_l](mbsnbcpy-mbsnbcpy-l.md)에는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 강화된 보안 기능이 포함되어 있습니다.
 
 > [!IMPORTANT]
 > 이 API는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
@@ -106,22 +96,22 @@ errno_t _mbsnbcpy_s_l(
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 0이 **EINVAL** 잘못 된 매개 변수로 전달 된 경우.
+성공 하면 0 **EINVAL** 잘못 된 매개 변수로 전달 된 경우.
 
 ## <a name="remarks"></a>설명
 
-**_mbsnbcpy_s** 복사본 함수 *count* 바이트 *strSource* 를 *strDest*합니다. 경우 *count* 의 크기를 초과 *strDest*중 하나, 입력된 문자열의 null 포인터는 또는 *sizeInBytes* 또는 *count* 은 0으로, 함수 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 합니다. 계속 하려면 실행 허용 된 경우, 함수 반환 **EINVAL**합니다. 소스 문자열과 대상 문자열이 겹치는 경우의 동작 **_mbsnbcpy_s** 정의 되지 않습니다.
+**_mbsnbcpy_s** 복사본 함수 *개수* 바이트 *strSource* 하 *strDest*합니다. 경우 *개수* 크기를 초과 *strDest*입력된 문자열의가 null 포인터인 경우 또는 *sizeInBytes* 또는 *개수* 0 이면 함수 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 합니다. 실행을 계속 하도록 허용 된 경우 함수 반환 **EINVAL**합니다. 소스 문자열과 대상 문자열이 겹치는 경우의 동작은 **_mbsnbcpy_s** 정의 되지 않습니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 > [!NOTE]
-> 이 함수는 안전 하지 않은 버전과 달리 **_mbsnbcpy_s** null 채움의 수행 하지 않으며 항상 null 문자열을 종료 합니다.
+> 이 함수는 안전 하지 않은 버전과 달리 **_mbsnbcpy_s** 는 null 채우기를 수행 하지 않으며 항상 null 종료 문자열입니다.
 
 C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
 이러한 함수의 디버그 버전은 우선 0xFD로 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -130,7 +120,7 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_mbsnbcpy_s**|\<mbstring.h>|
 |**_mbsnbcpy_s_l**|\<mbstring.h>|

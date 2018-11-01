@@ -1,33 +1,23 @@
 ---
-title: MFC ODBC 소비자 마법사 | Microsoft Docs
-ms.custom: ''
+title: MFC ODBC 소비자 마법사
 ms.date: 10/03/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.codewiz.class.mfc.consumer.overview
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC ODBC Consumer Wizard
 - wizards [MFC]
 ms.assetid: f64a890b-a252-4887-88a1-782a7cd4ff3d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e9623fae94891c62cca2ce34c621823251b65fe9
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: f86eded7cc7c04a85b1bcd93e917bd5a2b5c9696
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49082607"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590881"
 ---
 # <a name="mfc-odbc-consumer-wizard"></a>MFC ODBC 소비자 마법사
 
 > [!WARNING]
-> Visual Studio 2017 버전 15.9에서에서이 코드 마법사는 사용 되지 않으며 Visual Studio의 이후 버전에서 제거 됩니다. 이 마법사는 거의 사용 되었습니다. 이 마법사를 제거 하 여 ATL 및 MFC에 대 한 일반 지원을 받지 않습니다. 이 사용 중단에 대 한 의견을 공유 하려는 경우를 완료 하십시오 [이 설문 조사](https://www.surveymonkey.com/r/QDWKKCN)합니다. 여러분의 의견을 중요합니다.
+> Visual Studio 2017 버전 15.9에서 이 코드 마법사는 더 이상 사용되지 않으므로 Visual Studio의 이후 버전에서 제거됩니다. 이 마법사는 거의 사용되지 않습니다. 이 마법사가 제거되더라도 ATL 및 MFC에 대한 일반 지원은 그대로 유지됩니다. 이 지원 중단에 대한 의견을 공유하려면 [이 설문 조사](https://www.surveymonkey.com/r/QDWKKCN)를 완료하세요. 여러분의 의견은 소중합니다.
 
 이 마법사는 지정 된 데이터 원본에 액세스 하는 데 필요한 ODBC 레코드 집합 클래스와 데이터 바인딩을 설정 합니다.
 

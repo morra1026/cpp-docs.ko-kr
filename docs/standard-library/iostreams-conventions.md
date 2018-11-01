@@ -1,26 +1,16 @@
 ---
-title: iostreams 규칙 | Microsoft 문서
-ms.custom: ''
+title: iostreams 규칙
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - iostream header
 - C++ Standard Library, iostreams
 ms.assetid: 9fe5ded0-37a1-48d1-9671-c81ffc4760ad
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 37ba52981f317ff9929a820c42d35cde0506256f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 52cdd06385994e49ff793e40318ca4cbbbcfcda0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33846456"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645564"
 ---
 # <a name="iostreams-conventions"></a>iostreams 규칙
 
