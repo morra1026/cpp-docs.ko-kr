@@ -1,10 +1,6 @@
 ---
-title: _execl, _wexecl | Microsoft 문서
-ms.custom: ''
+title: _execl, _wexecl
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _execl
 - _wexecl
@@ -25,24 +21,18 @@ f1_keywords:
 - _execl
 - _wexecl
 - wexecl
-dev_langs:
-- C++
 helpviewer_keywords:
 - _execl function
 - wexecl function
 - _wexecl function
 - execl function
 ms.assetid: 81fefb8a-0a06-4221-b2bc-be18e38e89f4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 32ec50c83a29f3c517955979c2df0de5203dc9a0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3d736849f90782425e6e1c1cff04536972318c91
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398505"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530310"
 ---
 # <a name="execl-wexecl"></a>_execl, _wexecl
 
@@ -78,7 +68,7 @@ intptr_t _wexecl(
 
 ## <a name="return-value"></a>반환 값
 
-성공하면 이러한 함수는 호출 프로세스에 값을 반환하지 않습니다. 반환 값이-1은 오류를 나타내며이 경우는 **errno** 전역 변수가 설정 됩니다.
+성공하면 이러한 함수는 호출 프로세스에 값을 반환하지 않습니다. 반환 값이-1 나타냅니다 오류가 있는 경우에 **errno** 전역 변수가 설정 됩니다.
 
 |errno 값|설명|
 |-----------------|-----------------|
@@ -94,11 +84,11 @@ intptr_t _wexecl(
 
 이러한 각 함수는 새 프로세스를 로드하고 실행하여 각 명령줄 인수를 별도의 매개 변수로 전달합니다. 첫 번째 인수는 명령 또는 실행 파일 이름이고 두 번째 인수는 첫 번째와 같아야 합니다. 실행된 프로세스에서 첫 번째 인수는 `argv[0]`이 됩니다. 세 번째 인수는 실행 중인 프로세스의 첫 번째 인수 `argv[1]`입니다.
 
-**_execl** 함수는 매개 변수의 유효성을 검사 합니다. 어느 경우 *cmdname* 또는 *arg0* null 포인터 또는 빈 문자열인 경우 이러한 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 경우 실행 계속 해 서 이러한 함수를 설정 하도록 허용 된 **errno** 를 **EINVAL** 고-1을 반환 합니다. 새로운 프로세스가 실행되지 않습니다.
+합니다 **_execl** 함수 매개 변수 유효성을 검사 합니다. 이면 *cmdname* 또는 *arg0* 가 null 포인터 이거나 빈 문자열인 경우 이러한 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 경우 실행 계속, 이러한 함수를 설정 하도록 허용 된 **errno** 하 **EINVAL** 고-1을 반환 합니다. 새로운 프로세스가 실행되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|선택적 헤더|
+|기능|필수 헤더|선택적 헤더|
 |--------------|---------------------|---------------------|
 |**_execl**|\<process.h>|\<errno.h>|
 |**_wexecl**|\<process.h> 또는 \<wchar.h>|\<errno.h>|

@@ -1,10 +1,6 @@
 ---
-title: setlocale, _wsetlocale | Microsoft Docs
-ms.custom: ''
+title: setlocale, _wsetlocale
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wsetlocale
 - setlocale
@@ -25,8 +21,6 @@ f1_keywords:
 - _wsetlocale
 - _tsetlocale
 - setlocale
-dev_langs:
-- C++
 helpviewer_keywords:
 - wsetlocale function
 - setlocale function
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - defining locales
 - _wsetlocale function
 ms.assetid: 3ffb684e-5990-4202-9553-b5339af9520d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 666cb9954569d4c5bd232f387d63e320af52818a
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 0f2c0478ba5898ab369a04362734891f6d45cf42
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451838"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50548540"
 ---
 # <a name="setlocale-wsetlocale"></a>setlocale, _wsetlocale
 
@@ -74,7 +64,7 @@ wchar_t *_wsetlocale(
 
 ## <a name="return-value"></a>반환 값
 
-유효한 경우 *로캘* 및 *범주* 증명이, 지정 된 연결 문자열에 대 한 포인터를 반환 *로캘* 및 *범주*합니다. 경우는 *로캘* 또는 *범주* null 포인터와 프로그램의 현재 로캘 설정은 변경 되지 않습니다 반환에서는 유효 하지 않습니다.
+유효한 경우 *로캘* 하 고 *범주* 된, 지정 된 연결 문자열에 대 한 포인터를 반환 합니다 *로캘* 하 고 *범주*. 경우는 *로캘* 또는 *범주* null 포인터와 프로그램의 현재 로캘 설정은 변경 되지 않습니다 반환에서는 유효 하지 않습니다.
 
 예: 호출
 
@@ -88,42 +78,42 @@ setlocale( LC_ALL, "en-US" );
 en-US
 ```
 
-반환한 문자열을 복사할 수는 있지만 **setlocale** 프로그램 로캘 정보의 일부를 복원할 수 있습니다. 반환 된 문자열에 대 한 전역 또는 스레드 로컬 저장소는 사용 **setlocale**합니다. 나중에 대 한 호출이 **setlocale** 이전 호출에서 반환 된 문자열 포인터가 무효화 하는 문자열을 덮어씁니다.
+반환한 문자열을 복사할 수 있습니다 **setlocale** 프로그램 로캘 정보의 일부를 복원할 합니다. 전역 또는 스레드 로컬 저장소에서 반환한 문자열에 사용 됩니다 **setlocale**합니다. 나중에 호출 **setlocale** 이전 호출에서 반환 하는 문자열 포인터를 무효화 하는 문자열을 덮어씁니다.
 
 ## <a name="remarks"></a>설명
 
-사용 하 여는 **setlocale** 설정, 변경 하거나 일부 또는 모두로 지정 된 현재 프로그램 로캘 정보를 쿼리 하는 함수 *로캘* 및 *범주*합니다. *로캘* 를 프로그램의 특정 요소를 사용자 지정할 수 집약성 (국가/지역 및 언어)를 참조 합니다. 일부 로캘 종속 범주에는 날짜 형식 지정 및 통화 값의 형식 표시가 포함됩니다. 설정한 경우 *로캘* 확인 해야 컴퓨터에서 지원 되는 여러 폼에 있는 언어에 대 한 기본 문자열을는 **setlocale** 적용 되는 언어에 값을 반환 합니다. 예를 들어, 설정한 경우 *로캘* 을 "중국어"로 반환 값은 "중국어 간체" 또는 "중국어 번체" 일 수 있습니다.
+사용 합니다 **setlocale** 설정, 변경 또는 일부 또는 전부에서 지정한 현재 프로그램 로캘 정보를 쿼리 하는 함수 *로캘* 하 고 *범주*합니다. *로캘* 는 프로그램의 특정 요소를 사용자 지정할 수 있습니다 위치 (국가/지역 및 언어)을 가리킵니다. 일부 로캘 종속 범주에는 날짜 형식 지정 및 통화 값의 형식 표시가 포함됩니다. 설정 하는 경우 *로캘* 컴퓨터에서 지원 되는 여러 폼에 있는 언어에 대 한 기본 문자열을 확인 해야 합니다 **setlocale** 적용 되는 언어 값을 반환 합니다. 예를 들어 설정한 *로캘* 을 "중국어"로 반환 값을 "중국어 간체" 또는 "중국어 번체" 일 수 있습니다.
 
-**_wsetlocale** 의 와이드 문자 버전이 **setlocale**; *로캘* 인수 및 반환 값의 **_wsetlocale** 는 와이드 문자 문자열입니다. **_wsetlocale** 및 **setlocale** 동일 하 게 작동 합니다.
+**_wsetlocale** 의 와이드 문자 버전이 **setlocale**; *로캘* 의 인수와 반환 값 **_wsetlocale** 는 와이드 문자 문자열입니다. **_wsetlocale** 하 고 **setlocale** 동일 하 게 작동 합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tsetlocale**|**setlocale**|**setlocale**|**_wsetlocale**|
 
-*범주* 인수는 영향을 받는 프로그램 로캘 정보의 일부를 지정 합니다. 에 대 한 사용 되는 매크로 *범주* 및에 영향을 주는지 프로그램의 일부는 다음과 같습니다.
+합니다 *범주* 인수 영향을 받는 프로그램 로캘 정보의 일부를 지정 합니다. 에 사용 되는 매크로 *범주* 및 영향을 주는 프로그램의 일부는 다음과 같습니다.
 
 |*범주* 플래그|미치는 영향|
 |-|-|
 **LC_ALL**|아래에 나열된 모든 범주입니다.
-**LC_COLLATE**|**strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_ strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**, 및 **wcsxfrm** 함수입니다.
-**LC_CTYPE**|문자 처리 함수 (제외 하 고 **isdigit**, **isxdigit**, **mbstowcs**, 및 **mbtowc**, 영향을 받지 않습니다).
-**LC_MONETARY**|반환 되는 통화 서식 정보는 **localeconv** 함수입니다.
-**LC_NUMERIC**|소수점 형식이 지정 된 출력 루틴에 대 한 문자 (예: **printf**), 데이터 변환 루틴 및에서 반환 된 비 통화 서식 지정 정보에 대 한 **localeconv**합니다. 소수점 문자 이외에 **LC_NUMERIC** 집합 1000 단위 구분 기호 및 그룹화 제어 문자열에서 반환 된 [localeconv](localeconv.md)합니다.
-**LC_TIME**|**strftime** 및 **wcsftime** 함수입니다.
+**LC_COLLATE**|합니다 **strcoll**, **_stricoll**를 **wcscoll**를 **_wcsicoll**를 **strxfrm**, **_ strncoll**, **_strnicoll**를 **_wcsncoll**를 **_wcsnicoll**, 및 **wcsxfrm** 함수입니다.
+**LC_CTYPE**|문자 처리 함수 (제외한 **isdigit**, **isxdigit**를 **mbstowcs**, 및 **mbtowc**, 영향을 받지 않습니다).
+**LC_MONETARY**|반환 되는 통화 서식 정보를 **localeconv** 함수입니다.
+**LC_NUMERIC**|소수점 문자 형식이 지정 된 출력 루틴 (같은 **printf**), 데이터 변환 루틴 및 반환 하는 비 통화 서식 지정 정보에 대 한 **localeconv**합니다. 소수점 문자 이외에 **LC_NUMERIC** 제어에서 반환 된 문자열 집합 1000 단위 구분 기호 및 그룹화 [localeconv](localeconv.md)합니다.
+**LC_TIME**|합니다 **strftime** 하 고 **wcsftime** 함수입니다.
 
-이 함수는 범주 매개 변수의 유효성을 검사합니다. 범주 매개 변수가 이전 표에 지정된 값 중 하나가 아닌 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 함수를 설정 하는 경우 실행을 계속 허용 된, **errno** 를 **EINVAL** 반환 **NULL**합니다.
+이 함수는 범주 매개 변수의 유효성을 검사합니다. 범주 매개 변수가 이전 표에 지정된 값 중 하나가 아닌 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 함수를 설정 하는 경우는 계속 실행 하도록 허용 합니다 **errno** 하 **EINVAL** 반환 **NULL**합니다.
 
-*로캘* 인수는 로캘을 지정 하는 문자열에 대 한 포인터입니다. 형식에 대 한 내용은 *로캘* 인수 참조 [로캘 이름, 언어 및 국가/지역 문자열](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)합니다. *locale*에서 빈 문자열을 가리키면 로캘은 구현에서 정의된 네이티브 환경입니다. 값이 **C** C 번역에 대 한 최소 ANSI 표준에 맞는 환경을 지정 합니다. **C** 로캘 것으로 가정 **char** 데이터 형식이 1 바이트가 고 해당 값이 항상 256 보다 작은 합니다.
+합니다 *로캘* 인수는 로캘을 지정 하는 문자열에 대 한 포인터입니다. 형식에 대 한 자세한 합니다 *로캘* 인수를 참조 하십시오 [로캘 이름, 언어 및 국가/지역 문자열](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)합니다. *locale*에서 빈 문자열을 가리키면 로캘은 구현에서 정의된 네이티브 환경입니다. 값이 **C** C 번역에 대 한 최소 ANSI 표준에 맞는 환경을 지정 합니다. 합니다 **C** 로캘 가정 **char** 및 해당 값이 항상 256 보다 작은 데이터 형식은 1 바이트입니다.
 
 프로그램을 시작할 때 다음 문을 실행합니다.
 
 `setlocale( LC_ALL, "C" );`
 
-*로캘* 인수는 로캘 이름, 언어 문자열, 언어 문자열 및 국가/지역 코드, 코드 페이지 또는 언어 문자열, 국가/지역 코드 및 코드 페이지를 사용할 수 있습니다. 사용 가능한 로캘 이름, 언어, 국가/지역 코드 및 코드 페이지의 집합에는 문자당 2바이트 이상을 필요로 하는 코드 페이지를 제외하고, Windows NLS API에서 지원하는 모든 항목이 포함됩니다(예: UTF-7 및 UTF-8). Utf-7 또는 u t F-8의 코드 페이지 값을 제공 하는 경우 **setlocale** 반환 실패 합니다 **NULL**합니다. 지원 되는 로캘 이름 집합 **setlocale** 에 설명 된 [로캘 이름, 언어 및 국가/지역 문자열](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)합니다. 지 원하는 언어 및 국가/지역 문자열 집합이 **setlocale** 에 나열 된 [언어 문자열](../../c-runtime-library/language-strings.md) 및 [국가/지역 문자열](../../c-runtime-library/country-region-strings.md)합니다. 코드에 포함되거나 저장소에 직렬화된 로캘 문자열의 성능과 유지 관리를 위해 로캘 이름 형식을 사용하는 것이 좋습니다. 로캘 이름 문자열은 언어와 국가/지역 이름 형식보다 운영 체제 업데이트에 의해 변경될 가능성이 적습니다.
+합니다 *로캘* 인수는 로캘 이름, 언어 문자열, 언어 문자열 및 국가/지역 코드, 코드 페이지 또는 언어 문자열, 국가/지역 코드 및 코드 페이지에 사용할 수 있습니다. 사용 가능한 로캘 이름, 언어, 국가/지역 코드 및 코드 페이지의 집합에는 문자당 2바이트 이상을 필요로 하는 코드 페이지를 제외하고, Windows NLS API에서 지원하는 모든 항목이 포함됩니다(예: UTF-7 및 UTF-8). Utf-7 또는 u t F-8로의 코드 페이지 값을 제공 하는 경우 **setlocale** 실패를 반환 **NULL**합니다. 지 원하는 로캘 이름 집합이 **setlocale** 에 설명 되어 있습니다 [로캘 이름, 언어 및 국가/지역 문자열](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)합니다. 지 원하는 언어 및 국가/지역 문자열 집합이 **setlocale** 에 나와 [언어 문자열](../../c-runtime-library/language-strings.md) 하 고 [국가/지역 문자열](../../c-runtime-library/country-region-strings.md)합니다. 코드에 포함되거나 저장소에 직렬화된 로캘 문자열의 성능과 유지 관리를 위해 로캘 이름 형식을 사용하는 것이 좋습니다. 로캘 이름 문자열은 언어와 국가/지역 이름 형식보다 운영 체제 업데이트에 의해 변경될 가능성이 적습니다.
 
-로 전달 되는 null 포인터는 *로캘* 지정 하는 인수 **setlocale** 가 국제 환경을 설정 하는 대신 쿼리하도록 합니다. 경우는 *로캘* 인수가 null 포인터인 경우 프로그램의 현재 로캘 설정은 변경 되지 않습니다. 대신, **setlocale** 와 연결 된 문자열에 대 한 포인터를 반환 합니다.는 *범주* 스레드의 현재 로캘 합니다. 경우는 *범주* 인수가 **LC_ALL**, 함수는 세미콜론으로 구분 된 각 범주의 현재 설정을 나타내는 문자열을 반환 합니다. 예: 호출 시퀀스
+로 전달 되는 null 포인터를 *로캘* 지정 하는 인수 **setlocale** 국제 환경을 설정 하려면 대신 쿼리 합니다. 경우는 *로캘* 인수가 null 포인터 인지, 프로그램의 현재 로캘 설정은 변경 되지 않습니다. 대신 **setlocale** 연관 된 된 문자열에 대 한 포인터를 반환 합니다 *범주* 스레드의 현재 로캘. 경우는 *범주* 인수가 **LC_ALL**, 함수는 세미콜론으로 구분 된 각 범주의 현재 설정을 나타내는 문자열을 반환 합니다. 예: 호출 시퀀스
 
 ```C
 // Set all categories and return "en-US"
@@ -139,7 +129,7 @@ returns
 LC_COLLATE=en-US;LC_CTYPE=en-US;LC_MONETARY=fr-FR;LC_NUMERIC=en-US;LC_TIME=en-US
 ```
 
-연결 된 문자열의 **LC_ALL** 범주입니다.
+연결 된 문자열로 합니다 **LC_ALL** 범주입니다.
 
 다음 예제와 관련 된 **LC_ALL** 범주입니다. 사용자 기본 OEM 코드 페이지 및 사용자 기본 ANSI 코드 페이지의 사용을 각각 지정하기 위해 코드 페이지 번호 대신 ".OCP" 및 ".ACP" 문자열을 사용할 수 있습니다.
 
@@ -165,7 +155,7 @@ LC_COLLATE=en-US;LC_CTYPE=en-US;LC_MONETARY=fr-FR;LC_NUMERIC=en-US;LC_TIME=en-US
 
 - `setlocale( LC_ALL, "<language>_<country>.<code_page>" );`
 
-   로 표시 된 언어, 국가/지역 및 코드 페이지에 대 한 로캘 설정에서  *\<언어 >*,  *\<국가 >*, 및  *\<code_page >* 문자열입니다. 언어, 국가/지역 및 코드 페이지의 다양한 조합을 사용할 수 있습니다. 예를 들어, 이 호출은 코드 페이지 1252에 따라 로캘을 프랑스어(캐나다)로 설정합니다.
+   언어, 국가/지역 및 코드 페이지에 로캘을 나타내는 집합을  *\<언어 >* 를  *\<국가 >*, 및  *\<code_page >* 문자열입니다. 언어, 국가/지역 및 코드 페이지의 다양한 조합을 사용할 수 있습니다. 예를 들어, 이 호출은 코드 페이지 1252에 따라 로캘을 프랑스어(캐나다)로 설정합니다.
 
    `setlocale( LC_ALL, "French_Canada.1252" );`
 
@@ -179,7 +169,7 @@ LC_COLLATE=en-US;LC_CTYPE=en-US;LC_MONETARY=fr-FR;LC_NUMERIC=en-US;LC_TIME=en-US
 
 - `setlocale( LC_ALL, "<language>" );`
 
-   로캘을 *\<language>* 에 의해 표시되는 언어로 설정하고 호스트 운영 체제에서 가져온 대로 지정된 언어 및 사용자 기본 ANSI 코드 페이지와 지정된 언어를 위한 기본 국가/지역을 사용합니다. 예를 들어, 다음에 대 한 호출이 **setlocale** 기능적으로 동일 합니다.
+   로캘을 *\<language>* 에 의해 표시되는 언어로 설정하고 호스트 운영 체제에서 가져온 대로 지정된 언어 및 사용자 기본 ANSI 코드 페이지와 지정된 언어를 위한 기본 국가/지역을 사용합니다. 다음 호출은 예를 들어 **setlocale** 기능적으로 동일 합니다.
 
    `setlocale( LC_ALL, "en-US" );`
 
@@ -193,7 +183,7 @@ LC_COLLATE=en-US;LC_CTYPE=en-US;LC_MONETARY=fr-FR;LC_NUMERIC=en-US;LC_TIME=en-US
 
    지정한 코드 페이지에 대한 기본 국가/지역 및 언어(호스트 운영 체제에 의해 정의됨)와 함께 *<code_page>* 에 의해 표시되는 값으로 코드 페이지를 설정합니다.
 
-범주 중 하나 여야 합니다 **LC_ALL** 또는 **LC_CTYPE** 코드 페이지의 변경 내용을 적용 하려면. 예를 들어, 기본 국가/지역 및 호스트 운영 체제의 언어가 "미국" 및 "영어"는 경우 다음 두 호출이를 **setlocale** 기능적으로 동일 합니다.
+범주 중 하나 여야 합니다 **LC_ALL** 하거나 **LC_CTYPE** 를 코드 페이지에 변경 내용을 적용 합니다. 예를 들어 경우 기본 국가/지역 및 호스트 운영 체제의 언어가 "미국" 및 "영어"는 다음 두 호출이 **setlocale** 기능적으로 동일 합니다.
 
 `setlocale( LC_ALL, ".1252" );`
 
@@ -201,11 +191,11 @@ LC_COLLATE=en-US;LC_CTYPE=en-US;LC_MONETARY=fr-FR;LC_NUMERIC=en-US;LC_TIME=en-US
 
 자세한 내용은 [C/C++ 전처리기 참조](../../preprocessor/c-cpp-preprocessor-reference.md)에서 [setlocale](../../preprocessor/setlocale.md) pragma 지시문을 참조하세요.
 
-함수 [_configthreadlocale](configthreadlocale.md) 여부 제어 데 **setlocale** 프로그램의 모든 스레드 로캘 또는 호출 스레드의 로캘에 영향을 줍니다.
+함수 [_configthreadlocale](configthreadlocale.md) 여부를 제어 하 되 **setlocale** 프로그램의 모든 스레드 로캘 또는 호출 스레드의 로캘에 영향을 줍니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**setlocale**|\<locale.h>|
 |**_wsetlocale**|\<locale.h> 또는 \<wchar.h>|
