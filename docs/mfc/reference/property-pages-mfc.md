@@ -1,28 +1,18 @@
 ---
-title: 속성 페이지 (MFC) | Microsoft Docs
-ms.custom: ''
+title: 속성 페이지(MFC)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.mfc.macros
-dev_langs:
-- C++
 helpviewer_keywords:
 - property page data transfer functions in MFC
 - property pages [MFC], global MFC functions
 ms.assetid: 734f88bc-c776-4136-9b0e-f45c761a45c1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d6d72a6dbe8480e37751b760961f466db02c0c0d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 4f8e56ed4be6bf4c7a5283894493ee46c4ed2ff4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403083"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620911"
 ---
 # <a name="property-pages-mfc"></a>속성 페이지(MFC)
 
@@ -77,7 +67,7 @@ void AFXAPI DDP_CBIndex(
 *ID*<br/>
 콤보의 리소스 ID로 지정 된 컨트롤 속성과 연결 된 컨트롤 상자 *pszPropName*합니다.
 
-*멤버*<br/>
+*member*<br/>
 지정 된 속성 페이지 컨트롤과 연결 된 멤버 변수 *id* 속성과 지정 된 *pszPropName*합니다.
 
 *pszPropName*<br/>
@@ -111,7 +101,7 @@ void AFXAPI DDP_CBString(
 *ID*<br/>
 콤보의 리소스 ID로 지정 된 컨트롤 속성과 연결 된 컨트롤 상자 *pszPropName*합니다.
 
-*멤버*<br/>
+*member*<br/>
 지정 된 속성 페이지 컨트롤과 연결 된 멤버 변수 *id* 속성과 지정 된 *pszPropName*합니다.
 
 *pszPropName*<br/>
@@ -145,7 +135,7 @@ void AFXAPI DDP_CBStringExact(
 *ID*<br/>
 콤보의 리소스 ID로 지정 된 컨트롤 속성과 연결 된 컨트롤 상자 *pszPropName*합니다.
 
-*멤버*<br/>
+*member*<br/>
 지정 된 속성 페이지 컨트롤과 연결 된 멤버 변수 *id* 속성과 지정 된 *pszPropName*합니다.
 
 *pszPropName*<br/>
@@ -179,7 +169,7 @@ void AFXAPI DDP_Check(
 *ID*<br/>
 지정 된 컨트롤 속성을 사용 하 여 연결 된 확인란 컨트롤의 리소스 ID *pszPropName*합니다.
 
-*멤버*<br/>
+*member*<br/>
 지정 된 속성 페이지 컨트롤과 연결 된 멤버 변수 *id* 속성과 지정 된 *pszPropName*합니다.
 
 *pszPropName*<br/>
@@ -213,7 +203,7 @@ void AFXAPI DDP_LBIndex(
 *ID*<br/>
 리소스 ID 목록의 box로 지정 된 컨트롤 속성과 연결 된 컨트롤 *pszPropName*합니다.
 
-*멤버*<br/>
+*member*<br/>
 지정 된 속성 페이지 컨트롤과 연결 된 멤버 변수 *id* 속성과 지정 된 *pszPropName*합니다.
 
 *pszPropName*<br/>
@@ -247,7 +237,7 @@ void AFXAPI DDP_LBString(
 *ID*<br/>
 리소스 ID 목록의 box로 지정 된 컨트롤 속성과 연결 된 컨트롤 *pszPropName*합니다.
 
-*멤버*<br/>
+*member*<br/>
 지정 된 속성 페이지 컨트롤과 연결 된 멤버 변수 *id* 속성과 지정 된 *pszPropName*합니다.
 
 *pszPropName*<br/>
@@ -281,7 +271,7 @@ void AFXAPI DDP_LBStringExact(
 *ID*<br/>
 리소스 ID 목록의 box로 지정 된 컨트롤 속성과 연결 된 컨트롤 *pszPropName*합니다.
 
-*멤버*<br/>
+*member*<br/>
 지정 된 속성 페이지 컨트롤과 연결 된 멤버 변수 *id* 속성과 지정 된 *pszPropName*합니다.
 
 *pszPropName*<br/>
@@ -338,7 +328,7 @@ void AFXAPI DDP_Radio(
 *ID*<br/>
 라디오의 리소스 ID로 지정 된 컨트롤 속성과 연결 된 컨트롤 단추 *pszPropName*합니다.
 
-*멤버*<br/>
+*member*<br/>
 지정 된 속성 페이지 컨트롤과 연결 된 멤버 변수 *id* 속성과 지정 된 *pszPropName*합니다.
 
 *pszPropName*<br/>
@@ -414,7 +404,7 @@ void AFXAPI DDP_Text(
 *ID*<br/>
 지정 된 컨트롤 속성과 연결 된 컨트롤의 리소스 ID *pszPropName*합니다.
 
-*멤버*<br/>
+*member*<br/>
 지정 된 속성 페이지 컨트롤과 연결 된 멤버 변수 *id* 속성과 지정 된 *pszPropName*합니다.
 
 *pszPropName*<br/>

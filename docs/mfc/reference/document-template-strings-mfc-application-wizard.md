@@ -1,27 +1,17 @@
 ---
-title: 문서 템플릿 문자열을 MFC 응용 프로그램 마법사 | Microsoft Docs
-ms.custom: ''
+title: MFC 응용 프로그램 마법사, 문서 템플릿 문자열
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.appwiz.mfc.exe.doctemp
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC Application Wizard, document template strings
 ms.assetid: 8109f662-3182-4682-977a-2503321c678a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 616bbeee5e148bbd2e230ad33d0140b224c1ab9e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 24a5fcaea272924e20c55b8c1f5d58111e4eba13
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46384014"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50622240"
 ---
 # <a name="document-template-strings-mfc-application-wizard"></a>MFC 응용 프로그램 마법사, 문서 템플릿 문자열
 

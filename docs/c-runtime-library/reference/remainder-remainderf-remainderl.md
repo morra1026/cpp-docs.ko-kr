@@ -1,10 +1,6 @@
 ---
-title: remainder, remainderf, remainderl | Microsoft Docs
-ms.custom: ''
+title: remainder, remainderf, remainderl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - remainderl
 - remainder
@@ -26,23 +22,17 @@ f1_keywords:
 - remainderf
 - remainder
 - remainderl
-dev_langs:
-- C++
 helpviewer_keywords:
 - remainderf
 - remainderl
 - remainder
 ms.assetid: 5f721fb3-8b78-4597-9bc0-ca9bcd1f1d0e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 96d87a213029ab33e4d3c0269c4e7ba41e1aed43
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 9a9abe82e69122ca87f44e293e1da725c97045d4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39209419"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50572746"
 ---
 # <a name="remainder-remainderf-remainderl"></a>remainder, remainderf, remainderl
 
@@ -87,7 +77,7 @@ C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니�
 
 호환성에 대한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```C
 // crt_remainder.c

@@ -1,27 +1,17 @@
 ---
-title: _ITERATOR_DEBUG_LEVEL | Microsoft 문서
-ms.custom: ''
+title: _ITERATOR_DEBUG_LEVEL
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - _ITERATOR_DEBUG_LEVEL
-dev_langs:
-- C++
 helpviewer_keywords:
 - _ITERATOR_DEBUG_LEVEL
 ms.assetid: 718549cd-a9a9-4ab3-867b-aac00b321e67
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4163542d0ba741e6f0a123cbdcdc44dbbec470d1
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a584fe5a97e251205e750507b27e53e6e7b9a20e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957793"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50502819"
 ---
 # <a name="iteratordebuglevel"></a>_ITERATOR_DEBUG_LEVEL
 
@@ -57,7 +47,7 @@ _ITERATOR_DEBUG_LEVEL 매크로 _SECURE_SCL 및 _HAS_ITERATOR_DEBUGGING 매크�
 
 확인된 반복기에 대한 경고를 사용하지 않도록 설정하는 방법에 대한 자세한 내용은 [_SCL_SECURE_NO_WARNINGS](../standard-library/scl-secure-no-warnings.md)을 참조하세요.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 _ITERATOR_DEBUG_LEVEL 매크로 대 한 값을 지정 하려면 사용을 [/D](../build/reference/d-preprocessor-definitions.md) 컴파일러 옵션을 사용 하 여 또는 명령줄에서 정의 `#define` 전에 c + + 표준 라이브러리 헤더 소스 파일에 포함 됩니다. 컴파일하는 데 명령줄의 예를 들어 *sample.cpp* 디버그 모드에서 컴파일하고 디버그 반복기 지원을 사용 하려면 _ITERATOR_DEBUG_LEVEL 매크로 정의 지정할 수 있습니다.
 

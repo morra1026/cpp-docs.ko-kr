@@ -1,10 +1,6 @@
 ---
-title: _CrtDumpMemoryLeaks | Microsoft 문서
-ms.custom: ''
+title: _CrtDumpMemoryLeaks
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtDumpMemoryLeaks
 apilocation:
@@ -26,8 +22,6 @@ f1_keywords:
 - CrtDumpMemoryLeaks
 - _CrtDumpMemoryLeaks
 - _CRTDBG_CHECK_CRT_DF
-dev_langs:
-- C++
 helpviewer_keywords:
 - CrtDumpMemoryLeaks function
 - CRTDBG_LEAK_CHECK_DF macro
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - CRTDBG_CHECK_CRT_DF macro
 - _CRTDBG_CHECK_CRT_DF macro
 ms.assetid: 71b2eab4-7f55-44e8-a55a-bfea4f32d34c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 68a187283eedadcd2f435b0900fde648a5010368
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: baf4f8d8234ba744acda20541d37bbc3ed076678
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396968"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531973"
 ---
 # <a name="crtdumpmemoryleaks"></a>_CrtDumpMemoryLeaks
 
@@ -60,23 +50,23 @@ int _CrtDumpMemoryLeaks( void );
 
 ## <a name="return-value"></a>반환 값
 
-**_CrtDumpMemoryLeaks** 메모리 누수를 찾을 수 있으면 TRUE를 반환 합니다. 그렇지 않은 경우 이 함수는 FALSE를 반환합니다.
+**_CrtDumpMemoryLeaks** 메모리 누수가 발견 되는 경우 TRUE를 반환 합니다. 그렇지 않은 경우 이 함수는 FALSE를 반환합니다.
 
 ## <a name="remarks"></a>설명
 
-**_CrtDumpMemoryLeaks** 함수는 프로그램 실행의 시작 이후 메모리 누수가 발생 했는지 확인 합니다. 누수를 발견하면 힙에 있는 모든 개체에 대한 디버그 헤더 정보를 사용자가 읽을 수 있는 형식으로 덤프합니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 정의 되지 않은에 대 한 호출이 **_CrtDumpMemoryLeaks** 전처리 중 제거 됩니다.
+합니다 **_CrtDumpMemoryLeaks** 함수는 프로그램 실행의 시작 이후 메모리 누수가 발생 했는지 여부를 결정 합니다. 누수를 발견하면 힙에 있는 모든 개체에 대한 디버그 헤더 정보를 사용자가 읽을 수 있는 형식으로 덤프합니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 가 정의 되지 않은, 호출 **_CrtDumpMemoryLeaks** 전처리 중 제거 됩니다.
 
-**_CrtDumpMemoryLeaks** 자주 응용 프로그램에 의해 할당 된 모든 메모리 해제 된 확인 프로그램 실행이 끝날 때 호출 됩니다. 함수를 설정 하 여 자동으로 프로그램 종료 시 호출할 수 있습니다는 **_CRTDBG_LEAK_CHECK_DF** 비트 필드는 [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) 를 사용 하 여 플래그는 [_CrtSetDbgFlag](crtsetdbgflag.md)함수입니다.
+**_CrtDumpMemoryLeaks** 자주 응용 프로그램에 의해 할당 된 모든 메모리 해제 되었는지 확인 하려면 프로그램 실행이 끝날 때 호출 됩니다. 함수 설정 하 여 자동으로 프로그램 종료 시 호출할 수 있습니다는 **_CRTDBG_LEAK_CHECK_DF** 비트 필드를 [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) 사용 하 여 플래그를 [_CrtSetDbgFlag](crtsetdbgflag.md)함수입니다.
 
-**_CrtDumpMemoryLeaks** 호출 [_CrtMemCheckpoint](crtmemcheckpoint.md) 힙의 현재 상태를 가져오지 후 해제 되지 블록에 대 한 상태를 검색 합니다. Unfreed 블록에 오류가 발생 하면 **_CrtDumpMemoryLeaks** 호출 [_CrtMemDumpAllObjectsSince](crtmemdumpallobjectssince.md) 프로그램 실행의 시작 부분부터 힙에 할당 된 모든 개체에 대 한 정보를 덤프 합니다.
+**_CrtDumpMemoryLeaks** 호출 [_CrtMemCheckpoint](crtmemcheckpoint.md) 힙의 현재 상태를 가져오지 후 해제 되지 않은 블록에 대 한 상태를 검색 합니다. 해제 되지 않은 블록이 발견 되 면 **_CrtDumpMemoryLeaks** 호출 [_CrtMemDumpAllObjectsSince](crtmemdumpallobjectssince.md) 프로그램 실행의 시작부터 힙에 할당 된 모든 개체에 대 한 정보를 덤프 합니다.
 
-기본적으로 내부 C 런타임 블록 (**_CRT_BLOCK**) 메모리 덤프 작업에 포함 되지 않습니다. [_CrtSetDbgFlag](crtsetdbgflag.md) 를 켜려면 함수를 사용할 수 있습니다는 **_CRTDBG_CHECK_CRT_DF** 비트의 **_crtDbgFlag** 누수 검색 프로세스에서 이러한 블록을 포함 하도록 합니다.
+기본적으로 내부 C 런타임 블록 (**_CRT_BLOCK**) 메모리 덤프 작업에 포함 되지 않습니다. 합니다 [_CrtSetDbgFlag](crtsetdbgflag.md) 켜려면 함수를 사용할 수 있습니다 합니다 **_CRTDBG_CHECK_CRT_DF** 비트의 **_crtDbgFlag** 누수 검색 프로세스에서 이러한 블록을 포함 하도록 합니다.
 
-힙 상태 함수에 대 한 자세한 내용은 및 **_CrtMemState** 구조, 참조 [힙 상태 보고 함수](/visualstudio/debugger/crt-debug-heap-details)합니다. 기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요.
+힙 상태 함수에 대 한 자세한 내용은 하며 **_CrtMemState** 구조체를 참조 하십시오 [힙 상태 보고 함수](/visualstudio/debugger/crt-debug-heap-details)합니다. 기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_CrtDumpMemoryLeaks**|\<crtdbg.h>|
 
@@ -88,7 +78,7 @@ int _CrtDumpMemoryLeaks( void );
 
 ## <a name="example"></a>예제
 
-샘플을 사용 하는 방법에 대 한 **_CrtDumpMemoryLeaks**, 참조 [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1)합니다.
+샘플을 사용 하는 방법에 대 한 **_CrtDumpMemoryLeaks**를 참조 하십시오 [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1)합니다.
 
 ## <a name="see-also"></a>참고자료
 

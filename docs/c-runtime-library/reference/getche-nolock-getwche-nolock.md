@@ -1,10 +1,6 @@
 ---
-title: _getche_nolock, _getwche_nolock | Microsoft 문서
-ms.custom: ''
+title: _getche_nolock, _getwche_nolock
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _getche_nolock
 - _getwche_nolock
@@ -28,8 +24,6 @@ f1_keywords:
 - getche_nolock
 - getwche_nolock
 - gettche_nolock
-dev_langs:
-- C++
 helpviewer_keywords:
 - characters, getting from console
 - _gettche_nolock function
@@ -40,16 +34,12 @@ helpviewer_keywords:
 - _getwche_nolock function
 - gettche_nolock function
 ms.assetid: 9e853ad4-4d8a-4442-9ae5-da4b434f0b8c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 319c9e56cfbd4e52d9edac841ff6d4d8df73528c
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: b5745d85ec1a7338a4625d0c3eaf54da498e2af4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42571982"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50573591"
 ---
 # <a name="getchenolock-getwchenolock"></a>_getche_nolock, _getwche_nolock
 
@@ -88,7 +78,7 @@ wint_t _getwche_nolock( void );
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```C
 // crt_getche_nolock.c

@@ -1,10 +1,6 @@
 ---
-title: _CrtReportBlockType | Microsoft 문서
-ms.custom: ''
+title: _CrtReportBlockType
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtReportBlockType
 apilocation:
@@ -22,8 +18,6 @@ apitype: DLLExport
 f1_keywords:
 - _CrtReportBlockType
 - CrtReportBlockType
-dev_langs:
-- C++
 helpviewer_keywords:
 - CrtReportBlockType function
 - BLOCK_SUBTYPE macro
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - _BLOCK_SUBTYPE macro
 - BLOCK_TYPE macro
 ms.assetid: 0f4b9da7-bebb-4956-9541-b2581640ec6b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 59f8e919ee8a3ec9cc0822420ebbf6581480a13b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 186c63ce1619d6427436ff1458ca551e464d0bce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395567"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50516068"
 ---
 # <a name="crtreportblocktype"></a>_CrtReportBlockType
 
@@ -62,7 +52,7 @@ int _CrtReportBlockType(
 
 ## <a name="return-value"></a>반환 값
 
-유효한 디버그 힙 포인터를 전달 하는 경우는 **_CrtReportBlockType** 형식의 블록 유형 및 하위를 반환 하는 함수는 **int**합니다. 잘못된 포인터를 전달한 경우 함수는 -1을 반환합니다.
+유효한 디버그 힙 포인터를 전달 하는 경우는 **_CrtReportBlockType** 형태로 블록 형식과 하위를 반환 하는 함수는 **int**합니다. 잘못된 포인터를 전달한 경우 함수는 -1을 반환합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -72,7 +62,7 @@ int _CrtReportBlockType(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_CrtReportBlockType**|\<crtdbg.h>|
 

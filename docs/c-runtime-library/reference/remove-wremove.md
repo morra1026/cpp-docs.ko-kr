@@ -1,10 +1,6 @@
 ---
-title: remove, _wremove | Microsoft Docs
-ms.custom: ''
+title: remove, _wremove
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wremove
 - remove
@@ -25,8 +21,6 @@ f1_keywords:
 - remove
 - _wremove
 - _tremove
-dev_langs:
-- C++
 helpviewer_keywords:
 - tremove function
 - _wremove function
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - wremove function
 - remove function
 ms.assetid: b6345ec3-3289-4645-93a4-28b9e478cc19
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 36cdc09107a66067b358cb2fd72ec9bd1b2b30a1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d5636912ea36fd1b1412a556d516ac3e8184e0b4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406435"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50613972"
 ---
 # <a name="remove-wremove"></a>remove, _wremove
 
@@ -69,15 +59,15 @@ int _wremove(
 
 ## <a name="return-value"></a>반환 값
 
-파일이 삭제되면 이러한 함수 각각이 0을 반환합니다. 그렇지 않으면-1을 반환 하 고 설정 **errno** 하도록 **EACCES** 읽기 전용 파일을 지정 하는 경로 또는 파일을 열면, 나타내기 위해 또는 **ENOENT** 임을 나타내는 파일 이름 또는 경로 찾을 수 없거나 경로가 디렉터리를 지정 합니다.
+파일이 삭제되면 이러한 함수 각각이 0을 반환합니다. 그렇지 않으면-1을 반환 합니다 설정 **errno** 하거나 **EACCES** 경로 읽기 전용 파일을 지정 하거나 파일이 열려 또는 **ENOENT** 나타내는 합니다 파일 이름 또는 경로 찾을 수 없거나 경로가 디렉터리를 지정 합니다.
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은  [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**remove** 함수는 *path*로 지정된 파일을 삭제합니다. **_wremove** 의 와이드 문자 버전이 **_remove**; *경로* 인수를 **_wremove** 는 와이드 문자 문자열입니다. **_wremove** 및 **_remove** 동일 하 게 작동 합니다. 삭제하기 전에 파일에 대한 모든 핸들을 닫아야 합니다.
+**remove** 함수는 *path*로 지정된 파일을 삭제합니다. **_wremove** 의 와이드 문자 버전이 **제거 (_r)**; *경로* 인수 **_wremove** 는 와이드 문자 문자열입니다. **_wremove** 하 고 **제거 (_r)** 동일 하 게 작동 합니다. 삭제하기 전에 파일에 대한 모든 핸들을 닫아야 합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -85,7 +75,7 @@ int _wremove(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**remove**|\<stdio.h> 또는 \<io.h>|
 |**_wremove**|\<stdio.h> 또는 \<wchar.h>|

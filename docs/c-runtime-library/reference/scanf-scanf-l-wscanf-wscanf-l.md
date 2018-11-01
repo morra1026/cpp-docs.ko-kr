@@ -1,10 +1,6 @@
 ---
-title: scanf, _scanf_l, wscanf, _wscanf_l | Microsoft Docs
-ms.custom: ''
+title: scanf, _scanf_l, wscanf, _wscanf_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wscanf_l
 - scanf
@@ -29,8 +25,6 @@ f1_keywords:
 - _wscanf_l
 - scanf
 - _tscanf_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - tscanf_l function
 - _tscanf_l function
@@ -46,16 +40,12 @@ helpviewer_keywords:
 - wscanf_l function
 - _wscanf_l function
 ms.assetid: 73eac607-117f-4be4-9ff0-4afd9cf3c848
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 32d414685237e8d55e1c8acd5df74ea6922e222b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 48aa0bb3348a3336de9ee0eb9f9ec0d3e1a2b3cb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410696"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544770"
 ---
 # <a name="scanf-scanfl-wscanf-wscanfl"></a>scanf, _scanf_l, wscanf, _wscanf_l
 
@@ -99,22 +89,22 @@ int _wscanf_l(
 
 성공적으로 변환되고 할당된 필드 수를 반환합니다. 이때 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 반환 값이 0이면 할당된 필드가 없음을 나타냅니다.
 
-경우 *형식* 는 **NULL** 에 설명 된 대로 포인터, 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된 경우 이러한 함수가 반환 **EOF** 설정 **errno** 를 **EINVAL**합니다.
+하는 경우 *형식* 되는 **NULL** 에 설명 된 대로 포인터인 경우 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 이러한 함수는 반환 **EOF** 설정 **errno** 하 **EINVAL**합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 내용은 [_doserrno, errno, _sys_errlist, 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**scanf** 함수는 표준 입력 스트림에서 데이터를 읽는 **stdin** 제공한 위치에 데이터를 기록 하 고 *인수*합니다. 각 *인수* 의 형식 지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 *형식*합니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
+합니다 **scanf** 함수는 표준 입력 스트림에서 데이터를 읽고 **stdin** 하 여 지정 된 위치에 데이터를 쓰고 *인수*합니다. 각 *인수* 의 형식 지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다 *형식*합니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
 > [!IMPORTANT]
-> 문자열을 읽을 때 **scanf**, 항상에 대 한 너비를 지정 된 **%s** 형식 (예를 들어 **"%32s"** 대신 **"%s"**), 그렇지 않으면 형식이 잘못 지정 된 입력 버퍼 오버런을 쉽게 될 수 있습니다. 또는 [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)이나 [fgets](fgets-fgetws.md)를 사용하는 것이 좋습니다.
+> 문자열을 사용 하 여 읽을 때는 **scanf**, 항상 너비를 지정 합니다 **%s** 형식 (예를 들어 **"%32 초"** 대신 **"%s"**)이 고, 그렇지 않으면 부적절 하 게 서식이 지정 된 입력 버퍼 오버런을를 낳을 수 있습니다. 또는 [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)이나 [fgets](fgets-fgetws.md)를 사용하는 것이 좋습니다.
 
-**wscanf** 의 와이드 문자 버전이 **scanf**; *형식* 인수를 **wscanf** 는 와이드 문자 문자열입니다. **wscanf** 및 **scanf** 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 작동 합니다. **scanf** 현재 UNICODE 스트림에서의 입력을 지원 하지 않습니다.
+**wscanf** 의 와이드 문자 버전이 **scanf**; *형식* 인수를 **wscanf** 는 와이드 문자 문자열입니다. **wscanf** 하 고 **scanf** 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 작동 합니다. **scanf** 현재 UNICODE 스트림에서의 입력을 지원 하지 않습니다.
 
-있는 이러한 함수 버전은 **_l** 은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 점을 제외 하 고 접미사는 동일 합니다.
+포함 된 이러한 함수의 버전을 **_l** 접미사는 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -125,12 +115,12 @@ int _wscanf_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**scanf**, **_scanf_l**|\<stdio.h>|
 |**wscanf**, **_wscanf_l**|\<stdio.h> 또는 \<wchar.h>|
 
-콘솔 유니버설 Windows 플랫폼 (UWP) 응용 프로그램에서 지원 되지 않습니다. 콘솔을 사용 하는 연결 된 표준 스트림 핸들 **stdin**, **stdout**, 및 **stderr**, C 런타임 함수 UWP 앱에서 사용할 수 있는 전에 리디렉션되어야 . 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+콘솔 유니버설 Windows 플랫폼 (UWP) 앱에서 지원 되지 않습니다. 콘솔을 사용 하 여 연결 된 표준 스트림 핸들 **stdin**하십시오 **stdout**, 및 **stderr**, C 런타임 함수 UWP 앱에서 사용할 수 있는 되기 전에 리디렉션되어야 . 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
