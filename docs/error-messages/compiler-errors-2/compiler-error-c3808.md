@@ -1,41 +1,31 @@
 ---
-title: 컴파일러 오류 C3808 | Microsoft Docs
-ms.custom: ''
+title: 컴파일러 오류 C3808
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3808
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3808
 ms.assetid: 2ee8ac97-3ea4-417a-8710-be73a7f98cf4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 40668b8b2cc1a1f85b0ad4a7ef63d89956e922b3
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 0a1b0b82241c6e48d2c1941ff8122697d11492eb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34705207"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587735"
 ---
 # <a name="compiler-error-c3808"></a>컴파일러 오류 C3808
 
-> '*형식*': ComImport 특성이 있는 클래스 멤버를 정의할 수 없습니다 '*멤버*'만 abstract 또는 dllimport 함수를 사용할 수
+> '*형식*': ComImport 특성이 있는 클래스 멤버를 정의할 수 없습니다 '*멤버*', 추상만 또는 dllimport 함수를 사용할 수
 
 ## <a name="remarks"></a>설명
 
-파생 된 형식은 <xref:System.Runtime.InteropServices.ComImportAttribute> 정의할 수 없습니다. *멤버*합니다.
+파생 된 형식은 <xref:System.Runtime.InteropServices.ComImportAttribute> 정의할 수 없습니다 *멤버*합니다.
 
-**/clr: pure** 및 **/clr: safe** 컴파일러 옵션은 Visual Studio 2015에서는 사용 되지 않으며 Visual Studio 2017에서 지원 되지 않습니다.
+**/clr: pure** 및 **/clr: safe** Visual Studio 2015에서 사용 되지 않고 Visual Studio 2017에서 지원 되지 않는 컴파일러 옵션입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
-다음 샘플에서는 C3808 오류가 발생 합니다.
+다음 샘플 C3808를 생성합니다.
 
 ```cpp
 // C3808.cpp

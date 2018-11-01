@@ -1,27 +1,17 @@
 ---
-title: '방법: system:: string을 표준 문자열로 변환 | Microsoft Docs'
+title: '방법: System::String을 표준 문자열로 변환'
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - C++ Standard Library, converting System::String to standard string
 - string conversion, System::String
 ms.assetid: 79e2537e-d4eb-459f-9506-0e738045b59e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 458e0effa2e95b13ff53327b44eaa94b9087df56
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fafd23cb9dec25c742e040fad0793c38bd092322
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420389"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473232"
 ---
 # <a name="how-to-convert-systemstring-to-standard-string"></a>방법: System::String을 표준 문자열로 변환
 
