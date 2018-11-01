@@ -1,10 +1,6 @@
 ---
-title: _CrtGetReportHook | Microsoft 문서
-ms.custom: ''
+title: _CrtGetReportHook
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtGetReportHook
 apilocation:
@@ -22,22 +18,16 @@ apitype: DLLExport
 f1_keywords:
 - CrtGetReportHook
 - _CrtGetReportHook
-dev_langs:
-- C++
 helpviewer_keywords:
 - CrtGetReportHook function
 - _CrtGetReportHook function
 ms.assetid: 922758ed-7edd-4359-9c92-0535192dc11a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d78c176d5d4de54f4ae5eea84b0483b9e6bc3bec
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0b8b666093807c95312d4328ca9b3043ad1e09df
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395012"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50536762"
 ---
 # <a name="crtgetreporthook"></a>_CrtGetReportHook
 
@@ -55,13 +45,13 @@ _CRT_REPORT_HOOK _CrtGetReportHook( void );
 
 ## <a name="remarks"></a>설명
 
-**_CrtGetReportHook** 응용 프로그램이 보고 프로세스 C 런타임 디버그 라이브러리에 대 한 현재 보고 함수를 검색할 수 있습니다.
+**_CrtGetReportHook** 응용 프로그램이 C 런타임 디버그 라이브러리 보고 프로세스에 대 한 현재 보고 함수를 검색할 수 있습니다.
 
 다른 후크 가능 런타임 함수를 사용하고 고유한 클라이언트 정의 후크 함수를 작성하는 방법에 대한 자세한 내용은 [디버그 후크 함수 작성](/visualstudio/debugger/debug-hook-function-writing)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_CrtGetReportHook**|\<crtdbg.h>|
 
@@ -73,7 +63,7 @@ _CRT_REPORT_HOOK _CrtGetReportHook( void );
 
 ## <a name="example"></a>예제
 
-샘플을 사용 하는 방법에 대 한 **_CrtSetReportHook**, 참조 [보고서](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/report)합니다.
+샘플을 사용 하는 방법에 대 한 **_CrtSetReportHook**를 참조 하십시오 [보고서](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/report)합니다.
 
 ## <a name="see-also"></a>참고자료
 
