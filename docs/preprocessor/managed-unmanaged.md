@@ -1,33 +1,23 @@
 ---
-title: 관리 되는, 관리 되지 않는 | Microsoft Docs
-ms.custom: ''
+title: 관리되는, 관리되지 않는
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.unmanaged
 - managed_CPP
 - unmanaged_CPP
 - vc-pragma.managed
-dev_langs:
-- C++
 helpviewer_keywords:
 - managed pragma
 - pragmas, unmanaged
 - pragmas, managed
 - unmanaged pragma
 ms.assetid: f072ddcc-e1ec-408a-8ce1-326ddb60e4a4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2fdfcf65280f3be639da8f6e49f3d93a498478dd
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0cc253ad7d0d4529340a13546f931075b0c7dfdc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070883"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473829"
 ---
 # <a name="managed-unmanaged"></a>관리되는, 관리되지 않는
 함수를 관리되거나 관리되지 않는 것으로 컴파일하기 위해 함수 수준 제어를 사용하도록 설정합니다.

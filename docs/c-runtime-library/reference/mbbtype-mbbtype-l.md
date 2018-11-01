@@ -1,10 +1,6 @@
 ---
-title: _mbbtype, _mbbtype_l | Microsoft 문서
-ms.custom: ''
+title: _mbbtype, _mbbtype_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbbtype
 - _mbbtype_l
@@ -26,24 +22,18 @@ f1_keywords:
 - mbbtype
 - mbbtype_l
 - _mbbtype
-dev_langs:
-- C++
 helpviewer_keywords:
 - _mbbtype function
 - _mbbtype_l function
 - mbbtype function
 - mbbtype_l function
 ms.assetid: b8e34b40-842a-4298-aa39-0bd2d8e51c2a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 91b78b0dc57873810f96a793288da3f1457299de
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a6d17b99e4314c2ab836a16129ab8a0e6ac7720e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404417"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467173"
 ---
 # <a name="mbbtype-mbbtypel"></a>_mbbtype, _mbbtype_l
 
@@ -79,27 +69,27 @@ int _mbbtype_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_mbbtype** 바이트의 형식을 문자열로 반환 합니다. 이 결정은 값에 의해 지정 된 대로 상황에 맞는 *형식*, 컨트롤 테스트 조건을 제공 합니다. *형식* 문자열의 이전 바이트 형식입니다. 다음 표의 매니페스트 상수는 Mbctype.h에 정의됩니다.
+**_mbbtype** 문자열에서 바이트 형식을 반환 합니다. 이 결정은 값으로 지정 된 대로 상황에 맞는 *형식*, 컨트롤 테스트 조건을 제공 합니다. *형식* 문자열의 이전 바이트의 형식입니다. 다음 표의 매니페스트 상수는 Mbctype.h에 정의됩니다.
 
-|값 *유형*|**_mbbtype** 에 대 한 테스트|반환 값|*c*|
+|값 *형식*|**_mbbtype** 테스트|반환 값|*c*|
 |---------------------|--------------------------|------------------|---------|
-|1 제외한 모든 값|유효한 단일 바이트 또는 선행 바이트|**_MBC_SINGLE** (0)|단일 바이트 (0x20-0x7E, 0xA1-0xDF)|
-|1 제외한 모든 값|유효한 단일 바이트 또는 선행 바이트|**_MBC_LEAD** (1)|멀티 바이트 문자의 바이트 (0x81-0x9F, 0xE0-0xFC)|
-|1 제외한 모든 값|유효한 단일 바이트 또는 선행 바이트|**_MBC_ILLEGAL**<br /><br /> ( -1)|잘못 된 문자 (모든를 제외한 값 0x20-0x7E, 0xA1-0xDF, 0x81-0x9F, 0xE0-0xFC|
-|1|유효한 후행 바이트|**_MBC_TRAIL** (2)|후행 멀티 바이트 문자의 바이트 (0x40-0x7E, 0x80-0xFC)|
-|1|유효한 후행 바이트|**_MBC_ILLEGAL**<br /><br /> ( -1)|잘못 된 문자 (모든를 제외한 값 0x20-0x7E, 0xA1-0xDF, 0x81-0x9F, 0xE0-0xFC|
+|1 제외한 모든 값|유효한 단일 바이트 또는 선행 바이트|**_MBC_SINGLE** (0)|단일 바이트 (0x20-0x7E, 0xA1 – 0xDF)|
+|1 제외한 모든 값|유효한 단일 바이트 또는 선행 바이트|**_MBC_LEAD** (1)|선행 바이트 멀티 바이트 문자의 (0x81 – 0x9F, 0xE0 – 0xFC)|
+|1 제외한 모든 값|유효한 단일 바이트 또는 선행 바이트|**_MBC_ILLEGAL**<br /><br /> ( -1)|잘못 된 문자 (모든 제외한 값 0x20-0x7E, 0xA1 – 0xDF, 0x81 – 0x9F, 0xE0 – 0xFC|
+|1|유효한 후행 바이트|**_MBC_TRAIL** (2)|바이트 멀티 바이트 문자의 후행 (0x40-0x7E, 0x80-0xFC)|
+|1|유효한 후행 바이트|**_MBC_ILLEGAL**<br /><br /> ( -1)|잘못 된 문자 (모든 제외한 값 0x20-0x7E, 0xA1 – 0xDF, 0x81 – 0x9F, 0xE0 – 0xFC|
 
 ## <a name="remarks"></a>설명
 
-**_mbbtype** 함수는 멀티 바이트 문자에서 바이트 형식을 결정 합니다. 하는 경우의 값 *형식* 는 1, 1 **_mbbtype** 멀티 바이트 문자의 유효한 단일 바이트 또는 선행 바이트에 대 한 테스트 합니다. 하는 경우의 값 *형식* 는 1, **_mbbtype** 멀티 바이트 문자의 유효한 후행 바이트에 대 한 테스트 합니다.
+합니다 **_mbbtype** 함수는 멀티 바이트 문자에서 바이트 형식을 결정 합니다. 경우 값 *형식* 1 제외한 모든 값인 **_mbbtype** 멀티 바이트 문자의 유효한 단일 바이트 또는 선행 바이트에 대 한 테스트 합니다. 경우 값 *형식* 가 1 이면 **_mbbtype** 멀티 바이트 문자의 유효한 후행 바이트에 대 한 테스트 합니다.
 
-출력 값은의 설정에 영향을 **LC_CTYPE** 로캘 범주 설정; 참조 [setlocale, _wsetlocale](setlocale-wsetlocale.md) 자세한 정보에 대 한 합니다. **_mbbtype** 이 함수의 버전은이 로캘 종속 동작에 대 한 현재 로캘을 사용는 **_mbbtype_l** 버전은 동일 점을 제외 하 고 대신 전달 된 로캘 매개 변수를 사용 하 여 . 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값의 설정이 적용 됩니다는 **LC_CTYPE** 로캘 범주 설정; 참조 [setlocale, _wsetlocale](setlocale-wsetlocale.md) 자세한 내용은 합니다. **_mbbtype** 버전의이 함수가 로캘 종속 동작에 현재 로캘을 사용 합니다 **_mbbtype_l** 제외 하 고 대신 전달 된 로캘 매개 변수를 사용 하 여 버전 동일 합니다. . 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-이전 버전에서는 **_mbbtype** 변수의 이름이 **chkctype**합니다. 새 코드를 사용 하 여 **_mbbtype** 대신 합니다.
+이전 버전에서는 **_mbbtype** 이름이 **chkctype**합니다. 새 코드를 사용 하 여 **_mbbtype** 대신 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|선택적 헤더|
+|루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|---------------------|
 |**_mbbtype**|\<mbstring.h>|\<mbctype.h>*|
 |**_mbbtype_l**|\<mbstring.h>|\<mbctype.h>*|

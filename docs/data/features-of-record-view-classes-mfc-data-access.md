@@ -1,27 +1,16 @@
 ---
-title: 레코드의 기능 보기 클래스 (MFC Data Access) | Microsoft Docs
-ms.custom: ''
+title: 레코드 뷰 클래스의 기능  (MFC Data Access)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - record views, classes
 - record view classes
 ms.assetid: e7b2820f-09c4-483f-83c0-317e8be42bdf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 524fd0ac48c0f26f8621c074f5460e55d7690761
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 2feda8f8f446e02a5056287c656707ea038f5387
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074659"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461154"
 ---
 # <a name="features-of-record-view-classes--mfc-data-access"></a>레코드 뷰 클래스의 기능  (MFC Data Access)
 
