@@ -1,29 +1,19 @@
 ---
-title: alloc_text | Microsoft Docs
-ms.custom: ''
+title: alloc_text
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.alloc_text
 - alloc_text_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - alloc_text pragma
 - pragmas, alloc_text
 ms.assetid: 1fd7be18-e4f7-4f70-b079-6326f72b871a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d131cee2194ba139fdb99d9c0fa7ae2c922fe84d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 43f516830d0aa0fb8de6195c5958beadbeba9df6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073817"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50450377"
 ---
 # <a name="alloctext"></a>alloc_text
 지정한 함수 정의가 상주하는 코드 섹션의 이름을 지정합니다. pragma는 명명된 함수의 함수 선언자와 함수 정의 간에 발생해야 합니다.

@@ -1,31 +1,21 @@
 ---
-title: 경고 | Microsoft Docs
-ms.custom: ''
+title: 경고
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - warning_CPP
 - vc-pragma.warning
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, warning
 - push pragma warning
 - pop warning pragma
 - warning pragma
 ms.assetid: 8e9a0dec-e223-4657-b21d-5417ebe29cc8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 90cb11a6e6ab0c088c0b2425856d61556e76564c
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 53f79061ded358c9cb895fd7e8e245c46ed99fd5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234634"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631726"
 ---
 # <a name="warning-pragma"></a>경고 Pragma
 컴파일러 경고 메시지의 동작을 선택적으로 수정할 수 있습니다.
@@ -46,7 +36,7 @@ ms.locfileid: "48234634"
 |경고 지정자|의미|
 |------------------------|-------------|
 |*1, 2, 3, 4*|주어진 수준을 지정된 경고에 적용합니다. 기본적으로 해제되어 있는 지정된 경고를 설정하기도 합니다.|
-|*default*|경고 동작을 기본값으로 다시 설정합니다. 기본적으로 해제되어 있는 지정된 경고를 설정하기도 합니다. 문서화된 기본 수준에서 경고가 생성됩니다.<br /><br /> 자세한 내용은 [기본적으로 해제 되어 있는 컴파일러 경고](../preprocessor/compiler-warnings-that-are-off-by-default.md)합니다.|
+|*default*|경고 동작을 기본값으로 다시 설정합니다. 기본적으로 해제되어 있는 지정된 경고를 설정하기도 합니다. 문서화된 기본 수준에서 경고가 생성됩니다.<br /><br /> 자세한 내용은 [Compiler Warnings That Are Off by Default](../preprocessor/compiler-warnings-that-are-off-by-default.md)을 참조하세요.|
 |*disable*|지정된 경고 메시지를 생성하지 마십시오.|
 |*error*|지정된 경고를 오류로 보고합니다.|
 |*once*|지정된 메시지를 한 번만 표시합니다.|

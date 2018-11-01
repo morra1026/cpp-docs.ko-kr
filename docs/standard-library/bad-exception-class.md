@@ -1,27 +1,17 @@
 ---
-title: bad_exception 클래스 | Microsoft 문서
-ms.custom: ''
+title: bad_exception 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - exception/std::bad_exception
-dev_langs:
-- C++
 helpviewer_keywords:
 - bad_exception class
 ms.assetid: 5ae2c4ef-c7ad-4469-8a9e-a773e86bb000
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b3813fae7a9ae6105d4a3dfe4e72ac1773a10e65
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 94d1104b66fc6bd84e209caa23ce309cffd9fa85
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954658"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50457462"
 ---
 # <a name="badexception-class"></a>bad_exception 클래스
 
@@ -41,7 +31,7 @@ class bad_exception    : public exception {};
 
 `bad_exception` 클래스에 의해 상속된 멤버 목록은 [exception 클래스](../standard-library/exception-class.md)를 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 `bad_exception`을 throw하는 [unexpected](../standard-library/exception-functions.md#unexpected) 사용의 예는 [set_unexpected](../standard-library/exception-functions.md#set_unexpected)를 참조하세요.
 

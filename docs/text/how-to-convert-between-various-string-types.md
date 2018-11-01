@@ -1,27 +1,18 @@
 ---
-title: '방법: 다양 한 문자열 형식 간 변환 | Microsoft Docs'
+title: '방법: 다양한 문자열 형식 간 변환'
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - converting string types
 - string conversion [C++]
 - strings [C++], converting
 ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 57114f41328f35a8acad34cf3bd1c87e94b4ca2c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8ee8790e960c05827404d932a2305a7de79cbced
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46443613"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50443357"
 ---
 # <a name="how-to-convert-between-various-string-types"></a>방법: 다양한 문자열 형식 간 변환
 

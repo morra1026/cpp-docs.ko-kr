@@ -1,10 +1,6 @@
 ---
-title: CMFCToolBarsCustomizeDialog 클래스 | Microsoft Docs
-ms.custom: ''
+title: CMFCToolBarsCustomizeDialog 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCToolBarsCustomizeDialog
 - AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog
@@ -17,8 +13,6 @@ f1_keywords:
 - AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::GetFlags
 - AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::OnInitDialog
 - AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::PostNcDestroy
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCToolBarsCustomizeDialog [MFC], CMFCToolBarsCustomizeDialog
 - CMFCToolBarsCustomizeDialog [MFC], FillAllCommandsList
@@ -30,16 +24,12 @@ helpviewer_keywords:
 - CMFCToolBarsCustomizeDialog [MFC], OnInitDialog
 - CMFCToolBarsCustomizeDialog [MFC], PostNcDestroy
 ms.assetid: 78e2cddd-4f13-4097-afc3-1ad646a113f1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7d0e9a8cd4cba5fd34842ada81550db9b76e0b86
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 026c7392c3eb93b37a712059939683e3e0ab852c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46428163"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628997"
 ---
 # <a name="cmfctoolbarscustomizedialog-class"></a>CMFCToolBarsCustomizeDialog 클래스
 
@@ -82,7 +72,7 @@ class CMFCToolBarsCustomizeDialog : public CPropertySheet
 |`CMFCToolBarsCustomizeDialog::GetThisClass`|에 대 한 포인터를 가져오는 데 프레임 워크에 의해 합니다 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 이 클래스 형식과 연결 된 개체입니다.|
 |`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::OnEditToolbarMenuImage](#onedittoolbarmenuimage)|사용자는 도구 모음 단추 또는 메뉴 항목 아이콘을 사용자 지정할 수 있도록 이미지 편집기를 시작 합니다.|
 |[CMFCToolBarsCustomizeDialog::OnInitDialog](#oninitdialog)|속성 시트 초기화 보강를 재정의 합니다. (재정의 [cpropertysheet:: Oninitdialog](../../mfc/reference/cpropertysheet-class.md#oninitdialog).)|
-|[CMFCToolBarsCustomizeDialog::PostNcDestroy](#postncdestroy)|창이 소멸 된 후 프레임 워크에서 호출 됩니다. (`CPropertySheet::PostNcDestroy`를 재정의합니다.)|
+|[CMFCToolBarsCustomizeDialog::PostNcDestroy](#postncdestroy)|창이 소멸 된 후 프레임 워크에서 호출 됩니다. ( `CPropertySheet::PostNcDestroy`을 재정의합니다.)|
 |`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::RemoveButton](#removebutton)|지정된 된 범주 또는 모든 범주에서 지정된 된 명령 ID 사용 하 여 단추를 제거합니다.|
 |`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::RenameCategory](#renamecategory)|범주 목록 상자에서 범주를 이름을 바꿉니다는 **명령** 탭 합니다.|
 |`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::ReplaceButton](#replacebutton)|명령 목록에 있는 단추에 대체 합니다 **명령** 새 도구 모음 단추 탭 합니다.|

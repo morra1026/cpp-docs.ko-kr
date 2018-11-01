@@ -1,25 +1,15 @@
 ---
-title: 프로젝트 빌드 경고 PRJ0049 | Microsoft Docs
-ms.custom: ''
+title: 프로젝트 빌드 경고 PRJ0049
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - PRJ0049
 ms.assetid: 8b38afa1-e080-4efd-ae89-776cfd044413
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 169ba63318f630ac6a63b18d34fd6a7d829f4f90
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a451b7fe7b2f7cd89f8898232badf0d3b7e9f138
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46110889"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447218"
 ---
 # <a name="project-build-warning-prj0049"></a>프로젝트 빌드 경고 PRJ0049
 
