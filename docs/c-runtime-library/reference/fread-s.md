@@ -1,10 +1,6 @@
 ---
-title: fread_s | Microsoft 문서
-ms.custom: ''
+title: fread_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - fread_s
 apilocation:
@@ -23,19 +19,13 @@ apitype: DLLExport
 f1_keywords:
 - fread_s
 - stdio/fread_s
-dev_langs:
-- C++
 ms.assetid: ce735de0-f005-435d-a8f2-6f4b80ac775e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: febfab21889afab773dd9a8405b1e07dc7798f5c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 898e813c19fd53cfdacd536c2e9819743a62a8da
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401895"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519823"
 ---
 # <a name="freads"></a>fread_s
 
@@ -72,19 +62,19 @@ size_t fread_s(
 
 ## <a name="return-value"></a>반환 값
 
-**fread_s** 일 수 있는 버퍼로 읽어 들인 (전체) 개 항목을 반환 미만 *count* 읽기 오류 또는 파일의 끝 하기 전에 발생 하는 경우 *count* 에 도달 합니다. 사용 하 여는 **feof** 또는 **ferror** 오류가 파일 끝 조건을 구분 하기 위해 함수입니다. 경우 *크기* 또는 *count* 은 0으로, **fread_s** 0에서 버퍼의 내용이 변경 되지 않은 반환 합니다. 경우 *스트림* 또는 *버퍼* null 포인터가 **fread_s** 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) . 이 함수를 설정 하는 경우 실행을 계속 허용 된, **errno** 를 **EINVAL** 0을 반환 합니다.
+**fread_s** 일 수 있는 버퍼로 읽은 (전체) 번호 항목을 반환 미만 *개수* 읽기 오류 또는 파일 끝 하기 전에 발생 하는 경우 *개수* 에 도달 하면 합니다. 사용 된 **feof** 또는 **ferror** 오류가 파일 끝 조건을 구분 하기 위해 함수입니다. 하는 경우 *크기* 또는 *개수* 0 **fread_s** 0 고 버퍼 콘텐츠가 변경 되지 않은 반환 합니다. 하는 경우 *스트림을* 하거나 *버퍼* 가 null 포인터 **fread_s** 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) . 이 함수를 설정 하는 경우는 계속 실행 하도록 허용 합니다 **errno** 하 **EINVAL** 0을 반환 합니다.
 
 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**fread_s** 까지 함수 읽습니다 *count* 항목의 *elementSize* 바이트 입력에서 *스트림* 에저장하고*버퍼*합니다.  연결 된 파일 포인터 *스트림* (있는 경우) 만큼 증가 실제로 읽는 바이트 수입니다. 지정 된 스트림으로 텍스트 모드로 열리면, 캐리지 리턴-줄 바꿈 쌍 단일 줄 바꿈 문자로 대체 됩니다. 이렇게 바뀌더라도 파일 포인터 또는 반환 값에는 영향을 미치지 않습니다. 오류가 발생할 경우 파일 포인터 위치는 비활성화 상태입니다. 부분적으로 읽은 항목의 값은 확인할 수 없습니다.
+**fread_s** 함수를 읽고 *개수* 항목 *elementSize* 입력에서 바이트 *stream* 에저장합니다*버퍼*합니다.  연결 된 파일 포인터 *스트림을* (있는 경우) 실제로 읽는 바이트 수 만큼 증가 됩니다. 지정된 된 스트림에 텍스트 모드로 열리면, 캐리지 리턴-줄 바꿈 쌍 단일 줄 바꿈 문자로 바뀝니다. 이렇게 바뀌더라도 파일 포인터 또는 반환 값에는 영향을 미치지 않습니다. 오류가 발생할 경우 파일 포인터 위치는 비활성화 상태입니다. 부분적으로 읽은 항목의 값은 확인할 수 없습니다.
 
-이 함수는 다른 스레드를 잠급니다. 잠기지 않는 버전을 필요한 경우 사용 하 여 **_fread_nolock**합니다.
+이 함수는 다른 스레드를 잠급니다. 잠기지 않는 버전에 필요한 경우 사용할 **_fread_nolock**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**fread_s**|\<stdio.h>|
 

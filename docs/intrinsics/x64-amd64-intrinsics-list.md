@@ -1,26 +1,16 @@
 ---
-title: x64 (amd64) 내장 목록 | Microsoft Docs
-ms.custom: ''
+title: x64(amd64) 내장 목록
 ms.date: 06/01/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - cl-exe compiler, intrinsics
 - intrinsics, x64
 - intrinsics, amd64
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 006b6ce67182b698a1f6d0bb5d87d8165fba9cde
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 28a1d01910fd996ea396d2fd3e845001fa208341
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46406869"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491256"
 ---
 # <a name="x64-amd64-intrinsics-list"></a>x64(amd64) 내장 목록
 
@@ -30,7 +20,7 @@ ms.locfileid: "46406869"
 
 - 헤더 파일입니다. 많은 내장 기능이 헤더 파일의 주석에 설명되어 있습니다.
 
-- [Intel 내장 함수 가이드](https://software.intel.com/sites/landingpage/IntrinsicsGuide)합니다. 검색 상자를 사용하여 특정 내장 기능을 찾습니다.
+- [Intel 내장 함수 가이드](https://software.intel.com/sites/landingpage/IntrinsicsGuide) 검색 상자를 사용하여 특정 내장 기능을 찾습니다.
 
 - [Intel 64 및 IA-32 아키텍처 소프트웨어 개발자 설명서](https://software.intel.com/articles/intel-sdm)
 
@@ -1284,4 +1274,4 @@ ms.locfileid: "46406869"
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
 [ARM 내장 함수](../intrinsics/arm-intrinsics.md)<br/>
-[x86 내장 함수](../intrinsics/x86-intrinsics-list.md)
+[x86 내장 함수 목록](../intrinsics/x86-intrinsics-list.md)
