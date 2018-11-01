@@ -1,29 +1,19 @@
 ---
-title: UCRT 사전순 함수 참조 | Microsoft Docs
-ms.custom: ''
+title: UCRT 사전순 함수 참조
 ms.date: 04/11/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - vc.tables.runtime
-dev_langs:
-- C++
 ms.assetid: c2169b0e-cd86-489a-a2fa-2ee15c03b5c2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7e5b6d73219bed94268ee3a9b8854d28d1fc6c06
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c8c16b0f3eeb21bc9ad665bffee9fac15607f21f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405460"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50520466"
 ---
 # <a name="ucrt-alphabetical-function-reference"></a>UCRT 사전순 함수 참조
 
-(UCRT, 종종 정당한 CRT) 유니버설 C 런타임 라이브러리 참조 문서는 루틴에 의해 사전순으로 정렬 됩니다. 참조 하는 기능에 따라 CRT 루틴을 찾으려면 [범주별 런타임 루틴 유니버설 C](../../c-runtime-library/run-time-routines-by-category.md)합니다.
+(UCRT, 종종 CRT) 유니버설 C 런타임 라이브러리 참조 설명서는 루틴에서 사전순으로 정렬 됩니다. 기능에 따라 CRT 루틴을 참조 하세요 [범주별으로 유니버설 C 런타임 루틴](../../c-runtime-library/run-time-routines-by-category.md)합니다.
 
 ## <a name="a"></a>A
 
