@@ -1,11 +1,6 @@
 ---
-title: cacos, cacosf, cacosl | Microsoft 문서
-ms.custom: ''
+title: cacos, cacosf, cacosl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - cacos
 - cacosf
@@ -30,27 +25,21 @@ f1_keywords:
 - complex/cacos
 - complex/cacosf
 - complex/cacosl
-dev_langs:
-- C++
 helpviewer_keywords:
 - cacos function
 - cacosf function
 - cacosl function
 ms.assetid: 78118c00-0a07-49c1-8a13-4bf19ce3aea8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a6734080e8aff91d9276ef59203e2a3911ee9e7f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 18757ecd30f399ca3d1fdb77e8bff8213a265e74
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394459"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543197"
 ---
 # <a name="cacos-cacosf-cacosl"></a>cacos, cacosf, cacosl
 
-실제 축 따라 [-1, + 1] 간격 외부 분기 컷 복소수의 아크코사인 값을 검색합니다.
+실수 축 따라 [-1, + 1] 간격에서 벗어난 분기를 사용 하 여 복소수의 아크코사인 값을 검색합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -72,17 +61,17 @@ _Lcomplex cacos( _Lcomplex z );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-아크코사인 *z*, 라디안에서입니다. 결과는 허수 축에서는 제한이 없으며, 실수 축에서는 [0, π] 간격 내에 있습니다. 도메인 오류가 발생 합니다 *z* [-1, + 1] 간격을 벗어납니다.
+아크코사인 *z*, 라디안에서입니다. 결과는 허수 축에서는 제한이 없으며, 실수 축에서는 [0, π] 간격 내에 있습니다. 도메인 오류가 발생 *z* [-1, + 1] 간격에서 벗어난 합니다.
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **cacos** 사용 하 고 반환 **_Fcomplex** 및 **_Lcomplex** 값입니다. C 프로그램에서 **cacos** 항상 사용 하 고 반환 된 **_Dcomplex** 값입니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **cacos** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **cacos** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|C 헤더|C++ 헤더|
+|루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**cacos**, **cacosf**, **cacosl**|\<complex.h>|\<ccomplex>|
+|**cacos**하십시오 **cacosf**, **cacosl**|\<complex.h>|\<ccomplex>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
