@@ -1,11 +1,6 @@
 ---
-title: nearbyint, nearbyintf, nearbyintl | Microsoft Docs
-ms.custom: ''
+title: nearbyint, nearbyintf, nearbyintl
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - nearbyint
 - nearbyintf
@@ -30,23 +25,17 @@ f1_keywords:
 - math/nearbyint
 - math/narbyintf
 - math/narbyintl
-dev_langs:
-- C++
 helpviewer_keywords:
 - nearbyint function
 - nearbyintf function
 - nearbyintl function
 ms.assetid: dd39cb68-96b0-434b-820f-6ff2ea65584f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2362a68bf73a370f2fdf8eaa5ecb18b0a08bfaad
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4a36bddb28db9fb4c5809432dfaef9ca3ece4328
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403237"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668314"
 ---
 # <a name="nearbyint-nearbyintf-nearbyintl"></a>nearbyint, nearbyintf, nearbyintl
 
@@ -72,33 +61,33 @@ long double nearbyint( long double x ); //C++ only
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 반환 *x*가 보고 현재 반올림 형식을 사용 하 여 가장 가까운 정수로 반올림 [fegetround](fegetround-fesetround2.md)합니다. 그렇지 않은 경우에는 함수가 다음 값 중 하나를 반환할 수 있습니다.
+성공 하면 반환 *x*가 보고 현재 반올림 형식을 사용 하 여, 가장 가까운 정수로 반올림 [fegetround](fegetround-fesetround2.md)합니다. 그렇지 않은 경우에는 함수가 다음 값 중 하나를 반환할 수 있습니다.
 
 |문제|반환|
 |-----------|------------|
-|*x* ±INFINITY =|수정 되지 않은 ±INFINITY|
-|*x* ±0 =|수정 되지 않은 ±0|
+|*x* ±INFINITY =|±INFINITY, 수정 되지 않은|
+|*x* ±0 =|±0, 수정 되지 않은|
 |*x* = NaN|NaN|
 
-통해 오류가 보고 되지 않습니다 [_matherr](matherr.md), 특히,이 함수는 모든 보고 하지 **FE_INEXACT** 예외입니다.
+통해 오류가 보고 되지 않습니다 [_matherr](matherr.md)구체적으로이 함수는 모든 보고 하지 **FE_INEXACT** 예외입니다.
 
 ## <a name="remarks"></a>설명
 
-이 함수 사이의 주요 차이점은 및 [rint](rint-rintf-rintl.md) 은이 함수는 부정확 한 부동 소수점 예외를 발생 하지 않습니다.
+이 함수 간의 주요 차이점 및 [인쇄](rint-rintf-rintl.md) 는이 함수는 부정확 한 부동 소수점 예외가 발생 하지 않습니다.
 
 최대 부동 소수점 값은 정확한 정수이므로 이 함수 자체는 오버플로되지 않으며, 사용하는 함수의 버전에 따라 출력이 반환 값을 오버플로할 수는 있습니다.
 
-C + + 오버 로드의 오버 로드를 호출할 수 있도록 허용 **nearbyint** 사용 하 고 반환 **float** 또는 **긴** **double** 매개 변수입니다. C 프로그램에서 **nearbyint** 항상 두 double 값을 사용 하 고 double 값을 반환 합니다.
+C + +에서는 오버 로드를 허용 하므로 오버 로드를 호출할 수 있습니다 **nearbyint** 및 반환 하는 **float** 하거나 **긴** **double** 매개 변수입니다. C 프로그램에서 **nearbyint** 항상 double 값 두 개를 사용 하며 double 값을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|C 헤더|C++ 헤더|
+|기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**nearbyint**, **nearbyintf**, **nearbyintl**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**nearbyint**하십시오 **nearbyintf**, **nearbyintl**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 
 [사전순 함수 참조](crt-alphabetical-function-reference.md)<br/>
-[수치 연산 및 부동 소수점 지원](../floating-point-support.md)<br/>
+[수학식 및 부동 소수점 지원](../floating-point-support.md)<br/>

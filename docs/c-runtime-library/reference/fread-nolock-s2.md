@@ -1,11 +1,6 @@
 ---
-title: _fread_nolock_s2 | Microsoft 문서
-ms.custom: ''
+title: _fread_nolock_s2
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - _fread_nolock_s
 apilocation:
@@ -24,19 +19,13 @@ apitype: DLLExport
 f1_keywords:
 - _fread_nolock_s
 - stdio/_fread_nolock_s
-dev_langs:
-- C++
 ms.assetid: 5badb9ab-11df-4e17-8162-30bda2a4572e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: db0cd82d251595be586b46fb66a0f0262484e2f8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1dccbd362577e524f0455a2248d4d0f209ea6295
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398252"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580798"
 ---
 # <a name="freadnolocks"></a>_fread_nolock_s
 
@@ -77,11 +66,11 @@ size_t _fread_nolock_s(
 
 ## <a name="remarks"></a>설명
 
-이 함수는 잠기지 않은 버전의 **fread_s**합니다. 동일 **fread_s** 다른 스레드의 방해 로부터 보호 되지 않으므로 한다는 점이 다릅니다. 이는 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 응용 프로그램과 같은 스레드로부터 안전한 컨텍스트 또는 호출 범위에서 이미 스레드 격리를 처리하는 경우에만 이 함수를 사용합니다.
+이 함수는 잠기지 않은 버전의 **fread_s**합니다. 동일 **fread_s** 다른 스레드의 간섭 으로부터 보호 되지 않으므로 한다는 점이 다릅니다. 이는 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 응용 프로그램과 같은 스레드로부터 안전한 컨텍스트 또는 호출 범위에서 이미 스레드 격리를 처리하는 경우에만 이 함수를 사용합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**_fread_nolock_s**|C: \<stdio.h>; C++: \<cstdio> 또는 \<stdio.h>|
 

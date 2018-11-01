@@ -1,10 +1,6 @@
 ---
-title: fmod, fmodf, fmodl | Microsoft Docs
-ms.custom: ''
+title: fmod, fmodf, fmodl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - fmod
 - fmodf
@@ -26,8 +22,6 @@ f1_keywords:
 - fmod
 - _fmodl
 - fmodf
-dev_langs:
-- C++
 helpviewer_keywords:
 - calculating floating-point remainders
 - fmodf function
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - fmod function
 - floating-point numbers, calculating remainders
 ms.assetid: 6962d369-d11f-40b1-a6d7-6f67239f8a23
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c473b5cb6822df07f4972ff2c964c828b14b5966
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 78677be1a0c9921c35e54d43a00b8956a9d858b6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207535"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605337"
 ---
 # <a name="fmod-fmodf-fmodl"></a>fmod, fmodf, fmodl
 
@@ -98,7 +88,7 @@ C + +에서는 오버 로드를 허용 하므로 오버 로드를 호출할 수 
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```C
 // crt_fmod.c
