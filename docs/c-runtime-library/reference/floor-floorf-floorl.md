@@ -1,10 +1,6 @@
 ---
-title: floor, floorf, floorl | Microsoft 문서
-ms.custom: ''
+title: floor, floorf, floorl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - floorf
 - floorl
@@ -27,24 +23,18 @@ f1_keywords:
 - floorl
 - _floorl
 - floorf
-dev_langs:
-- C++
 helpviewer_keywords:
 - floor function
 - floorf function
 - calculating floors of values
 - floorl function
 ms.assetid: e9955f70-d659-414f-8050-132e13c8ff36
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 83795c9388b3889f99c9283cbffd33755d63fcd8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 050b7ea0eedf07666fa52145eeaf43f8fde2e18b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399425"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50647733"
 ---
 # <a name="floor-floorf-floorl"></a>floor, floorf, floorl
 
@@ -77,23 +67,23 @@ long double floorl(
 
 ## <a name="return-value"></a>반환 값
 
-**floor** 함수 보다 작거나 같은 최대 정수를 나타내는 부동 소수점 값을 반환 *x*합니다. 반환되는 오류가 없습니다.
+합니다 **floor** 보다 작거나 같은 최대 정수를 나타내는 부동 소수점 값을 반환 하는 함수 *x*합니다. 반환되는 오류가 없습니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
 |± QNAN,IND|없음|_DOMAIN|
 
-**floor** 스트리밍 SIMD 확장명 2 (SSE2)를 사용 하는 구현 합니다. SSE2 구현의 사용 제한 사항 및 그 사용 방법에 대한 자세한 내용은 [_set_SSE2_enable](set-sse2-enable.md)을 참조하세요.
+**floor** sse2(스트리밍 SIMD 확장 2 ()를 사용 하는 구현 합니다. SSE2 구현의 사용 제한 사항 및 그 사용 방법에 대한 자세한 내용은 [_set_SSE2_enable](set-sse2-enable.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-C + + 오버 로드의 오버 로드를 호출할 수 있도록 허용 **floor** 사용 하 고 반환 **float** 및 **긴** **double** 값입니다. C 프로그램에서 **floor** 항상 사용 하 고 반환 된 **double**합니다.
+C + +에서는 오버 로드를 허용 하므로 오버 로드를 호출할 수 있습니다 **floor** 및 반환 하는 **float** 하 고 **긴** **double** 값입니다. C 프로그램에서 **floor** 항상 받아서 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
-|**floor**, **floorf**, **floorl**|\<math.h>|
+|**floor**하십시오 **floorf**, **floorl**|\<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

@@ -1,10 +1,6 @@
 ---
-title: _commit | Microsoft 문서
-ms.custom: ''
+title: _commit
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _commit
 apilocation:
@@ -23,8 +19,6 @@ apitype: DLLExport
 f1_keywords:
 - _commit
 - commit
-dev_langs:
-- C++
 helpviewer_keywords:
 - files [C++], flushing
 - flushing files to disk
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - _commit function
 - committing files to disk
 ms.assetid: d0c74d3a-4f2d-4fb0-b140-2d687db3d233
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3e9bc746c347bfb60fb78edbf025b676f8218c66
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8408158cb3d4ef0d29d9af24d8a2acbd28e00192
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394833"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523073"
 ---
 # <a name="commit"></a>_commit
 
@@ -62,17 +52,17 @@ int _commit(
 
 ## <a name="return-value"></a>반환 값
 
-**_commit** 파일이 성공적으로 되었으면 0을 반환 합니다. 디스크에 플러시된 합니다. 반환 값-1의 오류를 나타냅니다.
+**_commit** 파일을 성공적으로 되었으면 0을 반환 합니다. 디스크에 플러시되 합니다. 반환 값이-1 오류를 나타냅니다.
 
 ## <a name="remarks"></a>설명
 
-**_commit** 함수 운영 체제와 관련 된 파일에 쓰기를 강제로 *fd* 디스크에 있습니다. 이 호출은 지정된 파일이 운영 체제의 결정을 따르지 않고 즉시 플러시되도록 합니다.
+**_commit** 함수는 연결 된 파일에 쓸 운영 체제를 강제로 *fd* 디스크. 이 호출은 지정된 파일이 운영 체제의 결정을 따르지 않고 즉시 플러시되도록 합니다.
 
-경우 *fd* 된 잘못 된 파일 설명자는에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 함수 실행을 계속 허용 된,-1을 반환 하 고 **errno** 로 설정 된 **EBADF**합니다.
+하는 경우 *fd* 잘못 된 파일 설명자 인에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 함수는 계속 실행 하도록 허용,-1을 반환 하 고 **errno** 로 설정 된 **EBADF**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|선택적 헤더|
+|루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|----------------------|
 |**_commit**|\<io.h>|\<errno.h>|
 

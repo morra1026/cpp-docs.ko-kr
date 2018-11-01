@@ -1,10 +1,6 @@
 ---
-title: vsscanf_s, vswscanf_s | Microsoft Docs
-ms.custom: ''
+title: vsscanf_s, vswscanf_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - vswscanf_s
 - vsscanf_s
@@ -24,19 +20,13 @@ f1_keywords:
 - vsscanf_s
 - vswscanf_s
 - _vstscanf_s
-dev_langs:
-- C++
 ms.assetid: 7b732e68-c6f4-4579-8917-122f5a7876e1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dbcf6d0a8b54cc08242d613b24c415ac1ef05fd3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3106e3533f5bb65334f8a4f3d38f55d886faef4c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32417105"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477170"
 ---
 # <a name="vsscanfs-vswscanfs"></a>vsscanf_s, vswscanf_s
 
@@ -70,28 +60,28 @@ int vswscanf_s(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 모두 성공적으로 변환되고 할당된 필드 수를 반환합니다. 이때 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 반환 값이 0이면 할당된 필드가 없음을 나타냅니다. 반환 값은 **EOF** 오류에 대 한 첫 번째 변환 하기 전에 문자열의 끝에 도달 하는 경우.
+이러한 각 함수는 모두 성공적으로 변환되고 할당된 필드 수를 반환합니다. 이때 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 반환 값이 0이면 할당된 필드가 없음을 나타냅니다. 반환 값은 **EOF** 오류에 대 한 첫 번째 변환 전에 문자열의 끝에 도달 하면 또는 합니다.
 
-경우 *버퍼* 또는 *형식* 는 **NULL** 에 설명 된 대로 포인터, 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된, 하는 경우 이러한 함수가-1을 반환 하 고 설정 **errno** 를 **EINVAL**합니다.
+하는 경우 *버퍼* 또는 *형식* 되는 **NULL** 에 설명 된 대로 포인터인 경우 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수가-1를 반환 하는 설정 **errno** 하 **EINVAL**합니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist, 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**vsscanf_s** 함수에서 데이터를 읽는 *버퍼* 각 인수에 제공 된 위치에는 *arglist* 인수 목록입니다. 형식 지정자에 해당 하는 형식이 포함 된 변수에 대 한 포인터를 지정 하는 인수 목록에서 인수 *형식*합니다. 덜 안전한 버전을 달리 **vsscanf**, 버퍼 크기 매개 변수는 형식 필드 문자를 사용할 때 필요한 **c**, **C**, **s**, **S**, 또는에 포함 된 문자열 컨트롤 집합 **[]** 합니다. 문자의 버퍼 크기는 해당 크기를 필요로 하는 각 버퍼 매개 변수 바로 뒤에 추가 매개 변수로 제공해야 합니다.
+합니다 **vsscanf_s** 함수에서 데이터를 읽는 *버퍼* 각 인수에 의해 지정 된 위치에는 *arglist* 인수 목록입니다. 형식 지정자에 해당 하는 형식의 변수에 대 한 포인터를 지정 하는 인수 목록의 인수 *형식*합니다. 덜 안전한 버전을 달리 **vsscanf**, 버퍼 크기 매개 변수는 형식 필드 문자를 사용할 때 필요한 **c**, **C**, **s**, **S**, 또는에 포함 된 문자열 컨트롤 집합 **[]** 합니다. 문자의 버퍼 크기는 해당 크기를 필요로 하는 각 버퍼 매개 변수 바로 뒤에 추가 매개 변수로 제공해야 합니다.
 
 버퍼 크기에는 종료 null이 포함되어 있습니다. 너비 사양 필드를 사용하면 읽은 토큰이 버퍼에 맞는지 확인할 수 있습니다. 너비 지정 필드가 사용되지 않으며 읽은 토큰이 너무 커서 버퍼에 맞지 않는 경우 버퍼에는 아무것도 기록되지 않습니다.
 
 자세한 내용은 참조 [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) 및 [scanf 형식 필드 문자](../../c-runtime-library/scanf-type-field-characters.md)를 참조하세요.
 
 > [!NOTE]
-> 크기 매개 변수는 형식 **서명 되지 않은**이 아니라 **size_t**합니다.
+> 크기 매개 변수는 형식 **unsigned**가 아닌 **size_t**합니다.
 
-*형식* 인수 컨트롤 입력의 해석은 필드 및 동일한 형태와 기능을 *형식* 에 대 한 인수는 **scanf_s** 함수입니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
+*형식* 인수 해석을 제어 하는 입력 필드 동일한 폼 및 함수는 *형식* 에 대 한 인수를 **scanf_s** 함수. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
-**vswscanf_s** 의 와이드 문자 버전이 **vsscanf_s**;에 대 한 인수 **vswscanf_s** 는 와이드 문자 문자열입니다. **vsscanf_s** 멀티 바이트 16 진수 문자를 처리 하지 않습니다. **vswscanf_s** 유니코드 전자 16 진수 또는 "호환성 영역" 문자를 처리 하지 않습니다. 그렇지 않으면 **vswscanf_s** 및 **vsscanf_s** 동일 하 게 작동 합니다.
+**vswscanf_s** 의 와이드 문자 버전이 **vsscanf_s**;에 대 한 인수 **vswscanf_s** 는 와이드 문자 문자열입니다. **vsscanf_s** 멀티 바이트 16 진수 문자를 처리 하지 않습니다. **vswscanf_s** 유니코드 전자 16 진수 또는 "호환 영역" 문자를 처리 하지 않습니다. 그렇지 않으면 **vswscanf_s** 하 고 **vsscanf_s** 동일 하 게 작동 합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -99,7 +89,7 @@ int vswscanf_s(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**vsscanf_s**|\<stdio.h>|
 |**vswscanf_s**|\<stdio.h> 또는 \<wchar.h>|

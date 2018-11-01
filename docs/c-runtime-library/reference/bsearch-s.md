@@ -1,10 +1,6 @@
 ---
-title: bsearch_s | Microsoft 문서
-ms.custom: ''
+title: bsearch_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - bsearch_s
 apilocation:
@@ -22,22 +18,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - bsearch_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - arrays [CRT], binary search
 - bsearch_s function
 ms.assetid: d5690d5e-6be3-4f1d-aa0b-5ca6dbded276
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c2600b77031967bec5d5dd549a7dd8f34fc5c5e3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cd621c1dae2cae847bbbf032dec7e6972c526203
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400618"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430838"
 ---
 # <a name="bsearchs"></a>bsearch_s
 
@@ -64,37 +54,37 @@ void *bsearch_s(
 *base*<br/>
 검색 데이터 기준에 대한 포인터입니다.
 
-*번호*<br/>
+*수*<br/>
 요소의 수입니다.
 
 *width*<br/>
 요소의 너비입니다.
 
 *compare*<br/>
-두 요소를 비교하는 콜백 함수입니다. 첫 번째 인수는 *컨텍스트* 포인터입니다. 두 번째 인수가에 대 한 포인터는 *키* 검색 합니다. 세 번째 인수는와 비교할 배열 요소에 포인터 *키*합니다.
+두 요소를 비교하는 콜백 함수입니다. 첫 번째 인수는 *상황에 맞는* 포인터입니다. 두 번째 인수는에 대 한 포인터를 *키* 검색 합니다. 세 번째 인수는와 비교할 배열 요소에 대 한 포인터 *키*합니다.
 
 *context*<br/>
 비교 함수에서 액세스할 수 있는 개체에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
-**bsearch_s** 의 발생에 대 한 포인터를 반환 합니다. *키* 가 가리키는 배열의 *기본*합니다. 경우 *키* 발견 되지 않으면 함수 반환 **NULL**합니다. 배열이 오름차순 정렬이 아니거나 동일한 키를 가진 중복 레코드를 포함하는 경우에는 결과를 예측할 수 없습니다.
+**bsearch_s** 발생에 대 한 포인터를 반환 *키* 가 가리키는 배열의 *기본*입니다. 하는 경우 *키* 발견 되지 않으면 반환 **NULL**합니다. 배열이 오름차순 정렬이 아니거나 동일한 키를 가진 중복 레코드를 포함하는 경우에는 결과를 예측할 수 없습니다.
 
-함수에 잘못된 매개 변수를 전달하면 [Parameter Validation](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수가 반환 하 고 **NULL**합니다. 자세한 내용은 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
+함수에 잘못된 매개 변수를 전달하면 [Parameter Validation](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고 함수가 반환 **NULL**합니다. 자세한 내용은 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ### <a name="error-conditions"></a>오류 조건
 
 |||||||
 |-|-|-|-|-|-|
-|*key*|*base*|*compare*|*번호*|*width*|**errno**|
-|**NULL**|모두|모두|모두|모두|**EINVAL**|
-|모두|**NULL**|모두|!= 0|모두|**EINVAL**|
-|모두|모두|모두|모두|= 0|**EINVAL**|
-|모두|모두|**NULL**|an|모두|**EINVAL**|
+|*key*|*base*|*compare*|*수*|*width*|**errno**|
+|**NULL**|any|any|any|any|**EINVAL**|
+|any|**NULL**|any|!= 0|any|**EINVAL**|
+|any|any|any|any|= 0|**EINVAL**|
+|any|any|**NULL**|an|any|**EINVAL**|
 
 ## <a name="remarks"></a>설명
 
-**bsearch_s** 함수의 정렬 된 배열의 이진 검색을 수행 *번호* 의 각 요소 *너비* 바이트 크기입니다. *기본* 값은 검색할 배열 기준에 대 한 포인터 및 *키* 는 검색 되는 값입니다. *비교* 매개 변수는 요청된 된 키를 배열 요소를 비교 하 고 서로의 관계를 지정 하는 다음 값 중 하나를 반환 하는 사용자 제공 루틴에 대 한 포인터.
+**bsearch_s** 의 정렬 된 배열의 이진 검색을 수행 하는 함수 *번호* 의 각 요소 *너비* 크기에서 (바이트). 합니다 *기본* 값은 검색할 배열의 밑에 대 한 포인터 및 *키* 가 검색 되는 값입니다. 합니다 *비교* 매개 변수는 배열 요소에 요청된 된 키를 비교 하 고 해당 관계를 지정 하는 다음 값 중 하나를 반환 하는 사용자가 제공한 루틴에 대 한 포인터:
 
 |반환 된 값 *비교* 루틴|설명|
 |-----------------------------------------|-----------------|
@@ -102,11 +92,11 @@ void *bsearch_s(
 |0|키가 배열 요소와 같습니다.|
 |> 0|키가 배열 요소보다 큽니다.|
 
-*컨텍스트* 포인터는 검색 된 데이터 구조는 개체의 일부 이며 비교 함수가 개체의 멤버에 액세스 해야 하는 경우 유용할 수 있습니다. *비교* 함수는 해당 개체의 적절 한 개체 유형 및 액세스 멤버에는 void 포인터 캐스팅 될 수 있습니다. 추가 *컨텍스트* 매개 변수를 사용 하면 **bsearch_s** 추가 컨텍스트 수 있으므로 데이터를 사용할 수 있도록 정적 변수를 사용 하 여 재진입 버그를 방지 하려면 보다 안전한는 *비교* 함수입니다.
+합니다 *상황에 맞는* 포인터 검색된 데이터 구조는 개체의 일부 이며 비교 함수가 개체의 멤버에 액세스 해야 하는 경우 유용할 수 있습니다. 합니다 *비교* 함수는 해당 개체의 적절 한 개체 유형 및 액세스 멤버에는 void 포인터 캐스팅 될 수 있습니다. 추가 합니다 *상황에 맞는* 매개 변수 **bsearch_s** 데이터를 사용할 수 있도록 정적 변수를 사용 하 여 연결 하는 재진입 버그를 방지 하려면 추가 컨텍스트를 사용할 수 있으므로 더 안전 합니다 *비교* 함수입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**bsearch_s**|\<stdlib.h> 및 \<search.h>|
 

@@ -1,10 +1,6 @@
 ---
-title: strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l | Microsoft Docs
-ms.custom: ''
+title: strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbspbrk
 - wcspbrk
@@ -31,8 +27,6 @@ f1_keywords:
 - _tcspbrk
 - _ftcspbrk
 - wcspbrk
-dev_langs:
-- C++
 helpviewer_keywords:
 - fstrpbrk function
 - _ftcspbrk function
@@ -50,16 +44,12 @@ helpviewer_keywords:
 - _mbspbrk function
 - mbspbrk_l function
 ms.assetid: 80b504f7-a167-4dde-97ad-4ae3000dc810
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: db26c60badceab6c1422146a32de3d6dd2ecb8bd
-ms.sourcegitcommit: 04d327940787df1297b72d534f388a035d472af0
+ms.openlocfilehash: 059b0659a8088783c6d169288de486b41a6e8d82
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39181135"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468967"
 ---
 # <a name="strpbrk-wcspbrk-mbspbrk-mbspbrkl"></a>strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
 
@@ -143,7 +133,7 @@ Null 종료 문자 집합입니다.
 
 합니다 `strpbrk` 함수에 있는 문자의 처음 나오는 경우에 대 한 포인터를 반환 *str* 의 문자 집합에 속하는 *strCharSet*합니다. 종료 null 문자는 검색에 포함되지 않습니다.
 
-`wcspbrk` 및 `_mbspbrk`는 `strpbrk`의 와이드 문자 및 멀티바이트 문자 버전입니다. `wcspbrk`의 인수 및 반환 값은 와이드 문자열이며 `_mbspbrk`의 인수와 반환 값은 멀티바이트 문자열입니다.
+`wcspbrk` 및 `_mbspbrk` 는 `strpbrk`의 와이드 문자 및 멀티바이트 문자 버전입니다. `wcspbrk`의 인수 및 반환 값은 와이드 문자열이며 `_mbspbrk`의 인수와 반환 값은 멀티바이트 문자열입니다.
 
 `_mbspbrk`는 매개 변수의 유효성을 검사합니다. 하는 경우 *str* 하거나 *strCharSet* 가 null 인 경우에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 `_mbspbrk` NULL을 반환 하 고 설정 `errno` EINVAL 하 합니다. `strpbrk` 및 `wcspbrk`는 매개 변수의 유효성을 검사하지 않습니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
@@ -170,7 +160,7 @@ C에서 이러한 함수는 다음과 같이 사용 됩니다.는 **const** 첫 
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```C
 // crt_strpbrk.c

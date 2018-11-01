@@ -1,10 +1,6 @@
 ---
-title: _mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l | Microsoft 문서
-ms.custom: ''
+title: _mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbcjistojms
 - _mbcjmstojis
@@ -32,8 +28,6 @@ f1_keywords:
 - mbcjmstojis_l
 - mbcjistojms_l
 - mbcjmstojis
-dev_langs:
-- C++
 helpviewer_keywords:
 - _mbcjmstojis_l function
 - _mbcjistojms function
@@ -44,16 +38,12 @@ helpviewer_keywords:
 - mbcjmstojis_l function
 - mbcjistojms_l function
 ms.assetid: dece5127-b337-40a4-aa10-53320a2c9432
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 07d34331e38362a6491e3231566443b5fe03260e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 22cf8eeb5f99b6abee624aa3b1d06246d7230652
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402435"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50665896"
 ---
 # <a name="mbcjistojms-mbcjistojmsl-mbcjmstojis-mbcjmstojisl"></a>_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l
 
@@ -95,19 +85,19 @@ unsigned int _mbcjmstojis_l(
 
 ## <a name="remarks"></a>설명
 
-**_mbcjistojms** 함수 일본 업계 표준 (JIS) 문자를 Microsoft 간지 (Shift JIS) 문자로 변환 합니다. 문자는 선행 및 후행 바이트 0x21-0x7E 범위에 있는 경우에 변환 됩니다. 잠재 고객 또는 평가판 바이트가이 범위에서 벗어난 경우 **errno** 로 설정 된 **EILSEQ**합니다. 이 오류 코드 및 다른 오류 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
+합니다 **_mbcjistojms** 함수 표준 JIS (Japan Industry) 문자를 Microsoft 간지 (Shift JIS) 문자로 변환 합니다. 문자는 선행 및 후행 바이트가 0x21-0x7E 범위에 있는 경우에 변환 됩니다. 선행 또는 후행 바이트가이 범위를 벗어나는 경우 **errno** 로 설정 된 **EILSEQ**합니다. 이 오류 코드 및 다른 오류 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
-**_mbcjmstojis** 함수 Shift JIS 문자 JIS 문자를 변환 합니다. 문자는 선행 바이트 0xFC 0x81-0x9F 또는 0xE0-범위에가 후행 바이트 0xFC 0x40-0x7E 또는 0x80-범위에가 경우에 변환 됩니다. 해당 범위의 일부 코드 포인트에는 할당된 문자가 없으므로 변환할 수 없습니다.
+합니다 **_mbcjmstojis** 함수 Shift JIS 문자를 JIS 문자로 변환 합니다. 문자는 선행 바이트는 범위는 0x81 – 0x9F 또는 0xE0 – 0xFC 및 후행 바이트는 0x40-0x7E 또는 0x80-범위 0xFC 하는 경우에 변환 됩니다. 해당 범위의 일부 코드 포인트에는 할당된 문자가 없으므로 변환할 수 없습니다.
 
-값 *c* 인 상위 8 비트 변환할 문자의 선행 바이트를 나타내고 해당 하위 8 비트가 후행 바이트는 16 비트 값 이어야 합니다.
+값 *c* 상위 8 비트 변환할 문자의 선행 바이트를 나타내고 나타내고 하위 8 비트는 후행 바이트를 나타내는 16 비트 값 이어야 합니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-이전 버전에서는 **_mbcjistojms** 및 **_mbcjmstojis** 호출한 **jistojms** 및 **jmstojis**각각. **_mbcjistojms**, **_mbcjistojms_l**, **_mbcjmstojis** 및 **_mbcjmstojis_l** 를 대신 사용 해야 합니다.
+이전 버전에서는 **_mbcjistojms** 하 고 **_mbcjmstojis** 호출한 **jistojms** 하 고 **jmstojis**각각. **_mbcjistojms**, **_mbcjistojms_l**를 **_mbcjmstojis** 하 고 **_mbcjmstojis_l** 를 대신 사용 해야 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_mbcjistojms**|\<mbstring.h>|
 |**_mbcjistojms_l**|\<mbstring.h>|

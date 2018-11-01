@@ -1,27 +1,17 @@
 ---
-title: 프레임 창 클래스 (아키텍처) | Microsoft Docs
-ms.custom: ''
+title: 프레임 창 클래스(아키텍처)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.frame
-dev_langs:
-- C++
 helpviewer_keywords:
 - frame window classes [MFC], document/view architecture
 ms.assetid: 5da01fb4-f531-46cc-914f-e422e4f07f5d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 117554b2c34853aa166c12d80b4821d3721e5992
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d1022d9a49e12585a6588e7b3202155f533e4706
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46394129"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431709"
 ---
 # <a name="frame-window-classes-architecture"></a>프레임 창 클래스(아키텍처)
 
@@ -40,7 +30,7 @@ MDI 응용 프로그램의 주 프레임 창에 대 한 기본 클래스입니�
 [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md)<br/>
 MDI 응용 프로그램의 문서 프레임 창에 대 한 기본 클래스입니다.
 
-[COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md)<br/>
+[클래스에서 파생하는 대신](../mfc/reference/coleipframewnd-class.md)<br/>
 준비에서 서버 문서를 편집 하는 경우 프레임 창 보기를 제공 합니다.
 
 ## <a name="see-also"></a>참고 항목

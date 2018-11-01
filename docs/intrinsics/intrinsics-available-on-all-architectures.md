@@ -1,35 +1,25 @@
 ---
-title: 일부 아키텍처에서 사용할 수 있는 내장 함수 | Microsoft Docs
-ms.custom: ''
+title: 모든 아키텍처에서 사용할 수 있는 내장 함수
 ms.date: 04/11/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - cl.exe compiler, intrinsics
 ms.assetid: 1fe3958e-d2fe-4188-8e34-5896738246eb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dbe070c2bae69563d65344072a56003f808d1486
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0a1331f53cd8b44c8a7bfc903216cbdbaf5fec1f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33340621"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473283"
 ---
-# <a name="intrinsics-available-on-all-architectures"></a>일부 아키텍처에서 사용할 수 있는 내장 함수
+# <a name="intrinsics-available-on-all-architectures"></a>모든 아키텍처에서 사용할 수 있는 내장 함수
 
-Microsoft C/c + + 컴파일러 및 유니버설 C 런타임 라이브러리 (UCRT) 내장 함수에서 사용할 수 있도록 모든 아키텍처.
+Microsoft C/c + + 컴파일러 및 유니버설 C 런타임 라이브러리 (UCRT) 일부 내장 함수에서 사용할 수 있도록 모든 아키텍처입니다.
 
 ## <a name="compiler-intrinsics"></a>컴파일러 내장 함수
 
 x86, AMD64 및 ARM 아키텍처에서 사용할 수 있는 내장 함수는 다음과 같습니다.
 
-|내장 함수|Header|
+|내장 함수|헤더|
 |---------------|------------|
 |[_AddressOfReturnAddress](../intrinsics/addressofreturnaddress.md)|intrin.h|
 |[_BitScanForward](../intrinsics/bitscanforward-bitscanforward64.md)|intrin.h|
@@ -99,9 +89,9 @@ x86, AMD64 및 ARM 아키텍처에서 사용할 수 있는 내장 함수는 다�
 
 ## <a name="ucrt-intrinsics"></a>UCRT 내장 함수
 
-다음 UCRT 함수는 모든 아키텍처에서 내장 형태를 갖습니다.
+다음 UCRT 함수에는 모든 아키텍처에서 내장 형식을:
 
-|내장 함수|Header|
+|내장 함수|헤더|
 |---------------|------------|
 |[abs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|
 |[_abs64](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|

@@ -1,10 +1,6 @@
 ---
-title: fgetpos | Microsoft 문서
-ms.custom: ''
+title: fgetpos
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - fgetpos
 apilocation:
@@ -22,22 +18,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - fgetpos
-dev_langs:
-- C++
 helpviewer_keywords:
 - fgetpos function
 - streams, file position indicator
 ms.assetid: bfa05c38-1135-418c-bda1-d41be51acb62
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b111a911083354c8d9478b2c914a0a5f7dfe7725
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e213c9830ffe6edf04b12a80828f14cc48f77524
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397387"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658421"
 ---
 # <a name="fgetpos"></a>fgetpos
 
@@ -62,15 +52,15 @@ int fgetpos(
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 **fgetpos** 0을 반환 합니다. 오류 시 0이 아닌 값을 반환 하 고 설정 **errno** 다음 중 하나에 매니페스트 상수 (STDIO에 정의 합니다. H): **EBADF**, 즉, 지정된 된 스트림에 올바른 파일 포인터가 아닌 없거나 액세스할 수, 또는 **EINVAL**, 즉은 *스트림* 값 이나 값*pos* 는 경우와 같이 유효 하거나가 null 포인터가 아닙니다. 경우 *스트림* 또는 *pos* 는 **NULL** 포인터, 함수 호출의 잘못 된 매개 변수 처리기에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md).
+성공 하면 **fgetpos** 0을 반환 합니다. 오류가 발생 하면 0이 아닌 값을 반환 하 고 설정 **errno** 다음 중 하나를 매니페스트 상수 (STDIO에 정의 합니다. H): **EBADF**, 즉, 지정 된 스트림에 유효한 파일 포인터가 아니거나에 액세스할 수 없는 또는 **EINVAL**, 즉 합니다 *stream* 값인지 값*pos* 는 경우와 같이 유효한 하거나가 null 포인터가 아닌 합니다. 하는 경우 *스트림을* 또는 *pos* 되는 **NULL** 포인터에 설명 된 대로 함수가 잘못 된 매개 변수 처리기를 호출 하 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md).
 
 ## <a name="remarks"></a>설명
 
-**fgetpos** 의 현재 값을 설정 하는 함수는 *스트림* 인수의 파일 위치 표시기 및 저장소에서 가리키는 개체에 *pos*합니다. **fsetpos** 함수에 저장 된 정보를 사용 하 여 나중에 수 *pos* 다시 설정 하는 *스트림* 시간에 해당 위치에 대 한 인수 포인터 **fgetpos** 호출 되었습니다. *pos* 값을 내부 형식에 저장 되 고 사용 하기 위한 에서만 **fgetpos** 및 **fsetpos**합니다.
+**fgetpos** 함수는 현재 값을 가져옵니다 합니다 *스트림* 인수 파일 위치 표시기 및 저장소에서 가리키는 개체에 *pos*합니다. 합니다 **fsetpos** 함수에 저장 된 정보를 나중에 사용할 수 있습니다 *pos* 다시 설정 하는 *stream* 해당 위치에 대 한 포인터 인수 **fgetpos** 였습니다. 합니다 *pos* 값을 내부 형식에 저장 되 고 사용 하기 위한 에서만 **fgetpos** 하 고 **fsetpos**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**fgetpos**|\<stdio.h>|
 

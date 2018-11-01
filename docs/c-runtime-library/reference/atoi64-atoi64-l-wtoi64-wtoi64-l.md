@@ -1,10 +1,6 @@
 ---
-title: _atoi64, _atoi64_l, _wtoi64, _wtoi64_l | Microsoft 문서
-ms.custom: ''
+title: _atoi64, _atoi64_l, _wtoi64, _wtoi64_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _atoi64_l
 - _wtoi64
@@ -35,8 +31,6 @@ f1_keywords:
 - wtoi64_l
 - _atoi64_l
 - atoi64_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - tstoi64 function
 - wtoi64 function
@@ -52,16 +46,12 @@ helpviewer_keywords:
 - _wtoi64 function
 - _atoi64 function
 ms.assetid: 2c3e30fd-545d-4222-8364-0c5905df9526
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fbb0f49edcba73bdf2b7e83d6495573cc2cc0567
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c80480be8895db6afe499d5426b91dcde786d654
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396679"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50515481"
 ---
 # <a name="atoi64-atoi64l-wtoi64-wtoi64l"></a>_atoi64, _atoi64_l, _wtoi64, _wtoi64_l
 
@@ -96,11 +86,11 @@ __int64 _wtoi64_l(
 
 ## <a name="return-value"></a>반환 값
 
-각 함수는 반환 된 **__int64** 입력된 된 문자를 숫자로 해석 하 여 계산 된 값입니다. 반환 값은 0에 대 한 **_atoi64** 입력 해당 형식의 값으로 변환할 수 없습니다.
+각 함수가 반환 하는 **__int64** 입력된 문자를 숫자로 해석 하 여 생성 된 값입니다. 반환 값은 0입니다 **_atoi64** 해당 형식의 값으로 입력을 변환할 수 없는 경우.
 
-큰 양의 정수 값으로 하는 오버플로의 경우 **_atoi64** 반환 **I64_MAX** 및 **I64_MIN** 큰 음의 정수 값으로 하는 오버플로의 경우.
+큰 양의 정수 값을 사용 하는 오버플로의 경우 **_atoi64** 반환 **I64_MAX** 하 고 **I64_MIN** 큰 음의 정수 값을 사용 하는 오버플로의 경우.
 
-모든 범위를 벗어난 경우에 **errno** 로 설정 된 **ERANGE**합니다. 전달 된 매개 변수는 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된, 이러한 함수 설정 **errno** 를 **EINVAL** 0을 반환 합니다.
+모든 범위를 벗어난 경우에 **errno** 로 설정 된 **ERANGE**합니다. 전달 된 매개 변수 인지 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL** 0을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -108,15 +98,15 @@ __int64 _wtoi64_l(
 
 입력 문자열은 지정된 형식의 숫자 값으로 해석될 수 있는 문자 시퀀스입니다. 함수는 숫자의 일부로 인식할 수 없는 첫 번째 문자에서 입력 문자열 읽기를 중지합니다. 이 문자는 문자열을 종결하는 null 문자('\0' 또는 L'\0')일 수 있습니다.
 
-*str* 인수를 **_atoi64** 형식은 다음과 같습니다.
+합니다 *str* 인수를 **_atoi64** 다음과 같은 형식을 갖습니다.
 
-> [*공백*] [*기호*] [*자릿수*]
+> [*공백을*] [*sign*] [*자릿수*]
 
-A *공백* ; 무시 되는 공백 또는 탭 문자로 구성 되어 *기호* 는 더하기 (+) 또는 빼기 (-); 및 *자릿수* 는 되는 하나 이상의 숫자입니다.
+A *공백* 무시 되는 공백 또는 탭 문자로 구성 됩니다 *로그인* 는 더하기 (+) 또는 빼기 (-) 이며 및 *숫자* 하나 이상의 숫자가 됩니다.
 
-**_wtoi64** 동일 **_atoi64** 한다는 매개 변수로 와이드 문자 문자열입니다.
+**_wtoi64** 동일 **_atoi64** 와이드 문자 문자열을 매개 변수로 소요 되는 점을 제외 하 고 있습니다.
 
-있는 이러한 함수 버전은 **_l** 은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 점을 제외 하 고 접미사는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+포함 된 이러한 함수의 버전을 **_l** 접미사 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -134,7 +124,7 @@ A *공백* ; 무시 되는 공백 또는 탭 문자로 구성 되어 *기호* �
 
 ## <a name="example"></a>예제
 
-이 프로그램은 방법 문자열로 저장 된 숫자를 사용 하 여 숫자 값으로 변환 될 수는 **_atoi64** 함수입니다.
+이 프로그램을 사용 하 여 숫자 값을 문자열로 저장 된 숫자를 변환할 수 하는 방법을 보여 줍니다 합니다 **_atoi64** 함수입니다.
 
 ```C
 // crt_atoi64.c
