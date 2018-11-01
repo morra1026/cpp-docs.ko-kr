@@ -1,26 +1,16 @@
 ---
-title: MFC 모듈 상태의 활성화 컨텍스트 지원 | Microsoft Docs
-ms.custom: ''
+title: MFC 모듈 상태의 활성화 컨텍스트 지원
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - activation contexts [MFC]
 - activation contexts [MFC], MFC support
 ms.assetid: 1e49eea9-3620-46dd-bc5f-d664749567c7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0e162ae0540157209733d9cf4833ad922d69949a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c5e3d5c9195f18c54de63ec7ecd38b165feca5df
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378363"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619025"
 ---
 # <a name="support-for-activation-contexts-in-the-mfc-module-state"></a>MFC 모듈 상태의 활성화 컨텍스트 지원
 
@@ -46,7 +36,7 @@ MFC는 사용자 모듈에서 제공되는 매니페스트 리소스를 사용�
 
 아래 설명 된 프로세스를 사용 하 여 활성화 컨텍스트 상태를 수정할 수 있지만 [활성화 컨텍스트 API를 사용 하 여](/windows/desktop/SbsCs/using-the-activation-context-api), MFC 활성화 컨텍스트 메커니즘을 사용 하 여 유용할 수 있습니다 DLL 기반 플러그 인 아키텍처를 개발 하는 경우 없는 어려운 (또는 불가능) 외부 플러그 인에 대 한 개별 호출 전후 수동으로 활성화 상태를 전환 합니다.
 
-된 활성화 컨텍스트 만들어집니다 [AfxWinInit](../mfc/reference/application-information-and-management.md#afxwininit)합니다. 이러한 활성화 컨텍스트는 `AFX_MODULE_STATE` 소멸자에서 소멸됩니다. 활성화 컨텍스트 핸들은 `AFX_MODULE_STATE`에서 유지됩니다. (`AFX_MODULE_STATE` 에 설명 되어 [AfxGetStaticModuleState](reference/extension-dll-macros.md#afxgetstaticmodulestate).)
+된 활성화 컨텍스트 만들어집니다 [AfxWinInit](../mfc/reference/application-information-and-management.md#afxwininit)합니다. 이러한 활성화 컨텍스트는 `AFX_MODULE_STATE` 소멸자에서 제거됩니다. 활성화 컨텍스트 핸들은 `AFX_MODULE_STATE`에서 유지됩니다. (`AFX_MODULE_STATE` 에 설명 되어 [AfxGetStaticModuleState](reference/extension-dll-macros.md#afxgetstaticmodulestate).)
 
 합니다 [AFX_MANAGE_STATE](reference/extension-dll-macros.md#afx_manage_state) 매크로 활성화 및 활성화 컨텍스트를 비활성화 합니다. `AFX_MANAGE_STATE`는 정적 MFC 라이브러리와 MFC DLL을 활성화하고 사용자 DLL이 선택한 해당 활성화 컨텍스트에서 실행되도록 MFC 코드를 허용합니다.
 

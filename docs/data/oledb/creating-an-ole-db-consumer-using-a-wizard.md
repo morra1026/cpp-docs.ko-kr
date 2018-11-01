@@ -1,26 +1,15 @@
 ---
-title: 마법사를 사용 하 여 OLE DB 소비자 만들기 | Microsoft Docs
-ms.custom: ''
+title: 마법사를 사용하여 OLE DB 소비자 만들기
 ms.date: 10/22/2018
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE DB consumers, creating
 ms.assetid: efefd4c0-4491-4072-aa9b-59545641efb3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: bd999c22b11c8cbb9958fd3d94c85246a54be75e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d7ebd2e9deaa58d2f350dad990d7ec24596cbf25
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070246"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50652194"
 ---
 # <a name="creating-an-ole-db-consumer-using-a-wizard"></a>마법사를 사용하여 OLE DB 소비자 만들기
 

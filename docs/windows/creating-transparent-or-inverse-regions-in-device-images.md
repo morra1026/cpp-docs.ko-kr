@@ -1,12 +1,6 @@
 ---
-title: 장치 이미지 (아이콘에 대 한 이미지 편집기)에서 투명 하 게 또는 반전 영역 만들기 | Microsoft Docs
-ms.custom: ''
+title: 장치 이미지에서 투명한 영역 또는 반전 영역 만들기(아이콘에 대한 이미지 편집기)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - cursors [C++], screen regions
 - inverse colors [C++], device images
@@ -25,17 +19,12 @@ helpviewer_keywords:
 - device projects [C++], transparent images
 - icons [C++], screen regions
 ms.assetid: a994954b-b039-4391-a535-58d1fa10fc3b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 2789d5c70dfe4569ef8eaa1d17136ad037efd18a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 3c4f5aa0b63259fbe42c353525e52319db1b0667
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374558"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626644"
 ---
 # <a name="creating-transparent-or-inverse-regions-in-device-images-image-editor-for-icons"></a>장치 이미지에서 투명한 영역 또는 반전 영역 만들기(아이콘에 대한 이미지 편집기)
 

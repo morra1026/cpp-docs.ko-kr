@@ -1,12 +1,6 @@
 ---
-title: 표준 컨트롤에서 컨트롤 파생 시키기 | Microsoft Docs
-ms.custom: ''
+title: 표준 컨트롤에서 컨트롤 파생시키기
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - standard controls [MFC], deriving controls from
 - common controls [MFC], deriving from
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - Windows common controls [MFC], deriving from
 - standard controls
 ms.assetid: a6f84315-7007-4e0e-8576-78be81254802
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bc1b0b047bc8d594a34177cabf1081c0a1c67970
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a6ce915102a8b85f135aa2c59e5e824b4fee25cf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46399771"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666286"
 ---
 # <a name="deriving-controls-from-a-standard-control"></a>표준 컨트롤에서 컨트롤 파생시키기
 

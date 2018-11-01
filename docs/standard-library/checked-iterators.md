@@ -1,14 +1,8 @@
 ---
-title: 확인된 반복기 | Microsoft 문서
-ms.custom: ''
+title: Checked Iterators
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - _SECURE_SCL_THROWS
-dev_langs:
-- C++
 helpviewer_keywords:
 - Safe Libraries
 - Safe Libraries, C++ Standard Library
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - iterators, checked
 - checked iterators
 ms.assetid: cfc87df8-e3d9-403b-ab78-e9483247d940
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 74adf7d42fcb5e5e3114e1a06162022f9f062e67
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 4558294da52577e1ed490be537e92665ce6b15f1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960241"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592766"
 ---
 # <a name="checked-iterators"></a>Checked Iterators
 
@@ -68,7 +58,7 @@ _ITERATOR_DEBUG_LEVEL 0으로 정의 된 경우:
 
 확인된 반복기를 지원하는 반복기 어댑터는 [checked_array_iterator 클래스](../standard-library/checked-array-iterator-class.md)와 [unchecked_array_iterator 클래스](../standard-library/unchecked-array-iterator-class.md)입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 _ITERATOR_DEBUG_LEVEL 1 또는 2를 사용 하 여 컴파일하는 경우 특정 클래스의 인덱싱 연산자를 사용 하 여 컨테이너의 범위 밖에 있는 요소에 액세스 하면 런타임 오류가 발생 합니다.
 
@@ -97,7 +87,7 @@ int main()
 
 이 프로그램은 "67"을 인쇄한 후 실패에 대한 자세한 정보가 들어 있는 어설션 실패 대화 상자를 팝업으로 표시합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 마찬가지로, _ITERATOR_DEBUG_LEVEL 1 또는 2를 사용 하 여 컴파일할 때 런타임 오류가 발생 요소를 사용 하 여 액세스 하려는 경우 `front` 또는 `back` 컨테이너가 비어 있을 때 컨테이너 클래스에 있습니다.
 
@@ -121,7 +111,7 @@ int main()
 
 이 프로그램은 실패에 대한 자세한 정보가 들어 있는 어설션 실패 대화 상자를 팝업으로 표시합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에는 다양한 반복기 사용 사례 시나리오에 대한 설명과 각각에 대한 주석이 나와 있습니다. 기본적으로 _ITERATOR_DEBUG_LEVEL 디버그 빌드에서 2 및 일반 정품 빌드에서 0으로 설정 됩니다.
 

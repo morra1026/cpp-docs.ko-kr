@@ -1,10 +1,6 @@
 ---
-title: _ftell_nolock, _ftelli64_nolock | Microsoft 문서
-ms.custom: ''
+title: _ftell_nolock, _ftelli64_nolock
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ftelli64_nolock
 - _ftell_nolock
@@ -26,8 +22,6 @@ f1_keywords:
 - ftelli64_nolock
 - ftell_nolock
 - _ftell_nolock
-dev_langs:
-- C++
 helpviewer_keywords:
 - ftelli64_nolock function
 - _ftelli64_nolock function
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - ftell_nolock function
 - file pointers [C++], getting current position
 ms.assetid: 84e68b0a-32f8-4c4a-90ad-3f2387685ede
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 15d1001b1f0465273771649404de306153edf920
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 58bfc8c7a8b8e820fdec09d52e24dfcb07f328f8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398459"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580845"
 ---
 # <a name="ftellnolock-ftelli64nolock"></a>_ftell_nolock, _ftelli64_nolock
 
@@ -64,19 +54,19 @@ __int64 _ftelli64_nolock(
 ### <a name="parameters"></a>매개 변수
 
 *스트림*<br/>
-대상의 **파일** 구조입니다.
+대상 합니다 **파일** 구조입니다.
 
 ## <a name="return-value"></a>반환 값
 
-와 동일 **ftell** 및 **_ftelli64**합니다. 자세한 내용은 참조 [ftell, _ftelli64](ftell-ftelli64.md)합니다.
+동일 **ftell** 하 고 **_ftelli64**합니다. 자세한 내용은 [ftell, _ftelli64](ftell-ftelli64.md)합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 잠기지 않은 버전의 **ftell** 및 **_ftelli64**각각. 동일 하기 **ftell** 및 **_ftelli64** 제외 하 고 다른 스레드에서 방해 로부터 보호 되지 않습니다. 이러한 함수는 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 응용 프로그램과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
+이러한 함수는 잠기지 않은 버전의 **ftell** 하 고 **_ftelli64**, 각각. 동일 **ftell** 하 고 **_ftelli64** 는 다른 스레드의 간섭 으로부터 보호 되지 않는다는 점을 제외 하 고 있습니다. 이러한 함수는 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 응용 프로그램과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|선택적 헤더|
+|기능|필수 헤더|선택적 헤더|
 |--------------|---------------------|---------------------|
 |**ftell_nolock**|\<stdio.h>|\<errno.h>|
 |**_ftelli64_nolock**|\<stdio.h>|\<errno.h>|

@@ -1,10 +1,6 @@
 ---
-title: _cputs, _cputws | Microsoft 문서
-ms.custom: ''
+title: _cputs, _cputws
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _cputws
 - _cputs
@@ -25,8 +21,6 @@ f1_keywords:
 - cputws
 - _cputs
 - _cputws
-dev_langs:
-- C++
 helpviewer_keywords:
 - strings [C++], writing
 - _cputs function
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - console, sending strings to
 - cputws function
 ms.assetid: ec418484-0f8d-43ec-8d8b-198a556c659e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3c192adccb6fe0e0cee66f03b5d85d89fc2e446a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 81d2364cd1fc409ca3267bc416bd3cbd16c62a15
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399766"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601177"
 ---
 # <a name="cputs-cputws"></a>_cputs, _cputws
 
@@ -76,11 +66,11 @@ int _cputws(
 
 ## <a name="remarks"></a>설명
 
-**_cputs** 함수에 의해 null로 끝나는 문자열을 씁니다 *str* 콘솔에 직접 합니다. CR-LF(캐리지 리턴-줄 바꿈) 조합은 문자열에 자동으로 추가되지 않습니다.
+합니다 **_cputs** 함수는이 가리키는 null로 끝나는 문자열을 씁니다 *str* 콘솔에 직접. CR-LF(캐리지 리턴-줄 바꿈) 조합은 문자열에 자동으로 추가되지 않습니다.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 경우 *str* 은 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고-1이 반환 됩니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. 하는 경우 *str* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고-1이 반환 됩니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -88,7 +78,7 @@ int _cputws(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|선택적 헤더|
+|루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|---------------------|
 |**_cputs**|\<conio.h>|\<errno.h>|
 |**_cputws**|\<conio.h>|\<errno.h>|

@@ -1,14 +1,8 @@
 ---
-title: 색 (아이콘에 대 한 이미지 편집기)를 사용 하 여 작업 | Microsoft Docs
-ms.custom: ''
+title: 색 작업(아이콘에 대한 이미지 편집기)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.image.color
-dev_langs:
-- C++
 helpviewer_keywords:
 - images [C++], background colors
 - Image editor [C++], Colors Palette
@@ -18,17 +12,12 @@ helpviewer_keywords:
 - foreground colors [C++], Image editor
 - colors [C++]
 ms.assetid: d34ff96f-241d-494f-abdd-13811ada8cd3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 9c829d086198233f0149782f1cb4cb1780aec7ad
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 7103332d0b7c0f4756da9526290cabb79544617d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50054180"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610706"
 ---
 # <a name="working-with-color-image-editor-for-icons"></a>색 작업(아이콘에 대한 이미지 편집기)
 
