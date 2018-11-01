@@ -1,27 +1,17 @@
 ---
-title: const_mem_fun1_ref_t 클래스 | Microsoft 문서
-ms.custom: ''
+title: const_mem_fun1_ref_t 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xfunctional/std::const_mem_fun1_ref_t
-dev_langs:
-- C++
 helpviewer_keywords:
 - const_mem_fun1_ref_t class
 ms.assetid: 8220d373-fa1c-44be-a21d-96d49b3ea6bb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c2dafffcaee1dc4ba9bc87c2bfaa60dee45ca234
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: e90ac09543c0704cf900e0fc5448e295034dcb66
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100769"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50516446"
 ---
 # <a name="constmemfun1reft-class"></a>const_mem_fun1_ref_t 클래스
 
@@ -56,7 +46,7 @@ class const_mem_fun1_ref_t
 
 ## <a name="remarks"></a>설명
 
-복사본을 저장 하는 템플릿 클래스 *Pm*, 클래스의 멤버 함수에 대 한 포인터 여야 `Type`, 전용 멤버 개체에 있습니다. 또한 해당 멤버 함수 `operator()`가 ( `left`.\* *Pm*)( `right`) **const**를 반환하는 것으로 정의합니다.
+복사본을 저장 하는 템플릿 클래스 *Pm*, 클래스의 멤버 함수에 대 한 포인터 여야 `Type`, 전용 멤버 개체에 있습니다. 또한 해당 멤버 함수 `operator()`가 ( `left`.\* Pm)( `right`) **const**를 반환하는 것으로 정의합니다.
 
 ## <a name="example"></a>예제
 

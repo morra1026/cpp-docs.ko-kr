@@ -1,10 +1,6 @@
 ---
-title: _execlpe, _wexeclpe | Microsoft 문서
-ms.custom: ''
+title: _execlpe, _wexeclpe
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _execlpe
 - _wexeclpe
@@ -26,24 +22,18 @@ f1_keywords:
 - execlpe
 - wexeclpe
 - _execlpe
-dev_langs:
-- C++
 helpviewer_keywords:
 - wexeclpe function
 - _wexeclpe function
 - _execlpe function
 - execlpe function
 ms.assetid: 07b861da-3e7e-4f1d-bb80-ad69b55e5162
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6b0dd88ce15b3a74c491ae751d4f32196e914d09
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e3aa4189d2a384a0092c742909e97c5efc52b5ff
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402178"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506860"
 ---
 # <a name="execlpe-wexeclpe"></a>_execlpe, _wexeclpe
 
@@ -84,7 +74,7 @@ intptr_t _wexeclpe(
 
 ## <a name="return-value"></a>반환 값
 
-성공하면 이러한 함수는 호출 프로세스에 값을 반환하지 않습니다. 반환 값이-1은 오류를 나타내며이 경우는 **errno** 전역 변수가 설정 됩니다.
+성공하면 이러한 함수는 호출 프로세스에 값을 반환하지 않습니다. 반환 값이-1 나타냅니다 오류가 있는 경우에 **errno** 전역 변수가 설정 됩니다.
 
 |**errno** 값|설명|
 |-------------------|-----------------|
@@ -100,13 +90,13 @@ intptr_t _wexeclpe(
 
 ## <a name="remarks"></a>설명
 
-이러한 각 함수는 각각의 명령줄 인수를 별도의 매개 변수로 전달하고 포인터 배열을 환경 설정에 전달하는 새 프로세스를 로드하고 실행합니다. 사용 하 여 이러한 함수는 **경로** 환경 변수를 실행할 파일을 찾습니다.
+이러한 각 함수는 각각의 명령줄 인수를 별도의 매개 변수로 전달하고 포인터 배열을 환경 설정에 전달하는 새 프로세스를 로드하고 실행합니다. 이러한 함수를 사용 합니다 **경로** 환경 변수를 실행 하려면 파일을 찾습니다.
 
-**_execlpe** 함수는 매개 변수의 유효성을 검사 합니다. 어느 경우 *cmdname* 또는 *arg0* 은 null 포인터 또는 빈 문자열을 이러한 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 하는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된, 이러한 함수 설정 **errno** 를 **EINVAL** 고-1을 반환 합니다. 새 프로세스가 시작되지 않습니다.
+합니다 **_execlpe** 함수 매개 변수 유효성을 검사 합니다. 이면 *cmdname* 또는 *arg0* 이 null 포인터 이거나 빈 문자열인 경우 이러한 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 하는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL** 고-1을 반환 합니다. 새 프로세스가 시작되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|선택적 헤더|
+|기능|필수 헤더|선택적 헤더|
 |--------------|---------------------|---------------------|
 |**_execlpe**|\<process.h>|\<errno.h>|
 |**_wexeclpe**|\<process.h> 또는 \<wchar.h>|\<errno.h>|
