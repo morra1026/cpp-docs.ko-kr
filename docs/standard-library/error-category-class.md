@@ -1,10 +1,6 @@
 ---
-title: error_category 클래스 | Microsoft 문서
-ms.custom: ''
+title: error_category 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - system_error/std::error_category
 - system_error/std::error_category::value_type
@@ -12,8 +8,6 @@ f1_keywords:
 - system_error/std::error_category::equivalent
 - system_error/std::error_category::message
 - system_error/std::error_category::name
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::error_category
 - std::error_category::value_type
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - std::error_category::message
 - std::error_category::name
 ms.assetid: e0a71e14-852d-4905-acd6-5f8ed426706d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f37029491c4a438f44c9f1bb27a9d192c14d1f12
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 55ff55b2026b741a2b7062d815fe43d6d19b078b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028231"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50451963"
 ---
 # <a name="errorcategory-class"></a>error_category 클래스
 
@@ -66,7 +56,7 @@ class error_category;
 
 |연산자|설명|
 |-|-|
-|[operator==](#op_eq_eq)|`error_category` 개체가 같은지 테스트합니다.|
+|[연산자==](#op_eq_eq)|`error_category` 개체가 같은지 테스트합니다.|
 |[operator!=](#op_neq)|`error_category` 개체가 같지 않은지 테스트합니다.|
 |[operator<](#op_lt)|[error_category](../standard-library/error-category-class.md) 개체가 비교를 위해 전달된 `error_category` 개체보다 작은지 테스트합니다.|
 

@@ -1,10 +1,6 @@
 ---
-title: _cscanf, _cscanf_l, _cwscanf, _cwscanf_l | Microsoft 문서
-ms.custom: ''
+title: _cscanf, _cscanf_l, _cwscanf, _cwscanf_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _cscanf_l
 - _cscanf
@@ -34,8 +30,6 @@ f1_keywords:
 - _cwscanf_l
 - cscanf_l
 - _tcscanf
-dev_langs:
-- C++
 helpviewer_keywords:
 - _cwscanf function
 - data [C++], reading from the console
@@ -51,16 +45,12 @@ helpviewer_keywords:
 - reading data [C++], from the console
 - _cwscanf_l function
 ms.assetid: dbfe7547-b577-4567-a1cb-893fa640e669
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 851de3810008532efa6683dd29d415560146f274
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 8cb121166ab0103565260538521824d8999425e2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451904"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468941"
 ---
 # <a name="cscanf-cscanfl-cwscanf-cwscanfl"></a>_cscanf, _cscanf_l, _cwscanf, _cwscanf_l
 
@@ -105,17 +95,17 @@ int _cwscanf_l(
 
 ## <a name="return-value"></a>반환 값
 
-성공적으로 변환되고 할당된 필드 수입니다. 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 반환 값은 **EOF** 읽지 파일의 끝에 대 한 합니다. 키보드 입력이 운영 체제 명령줄 수준에서 리디렉션될 때 발생할 수 있습니다. 반환 값이 0이면 할당된 필드가 없음을 의미합니다.
+성공적으로 변환되고 할당된 필드 수입니다. 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 반환 값은 **EOF** 파일의 끝에서 읽을 하려고 합니다. 키보드 입력이 운영 체제 명령줄 수준에서 리디렉션될 때 발생할 수 있습니다. 반환 값이 0이면 할당된 필드가 없음을 의미합니다.
 
 ## <a name="remarks"></a>설명
 
-**_cscanf** 함수에 의해 지정 된 위치로 console에서 직접 데이터를 읽습니다 *인수*합니다. [_getche](getch-getwch.md) 함수는 문자를 읽는 데 사용합니다. 각 선택적 매개 변수에의 형식 지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다. *형식*합니다. 형식 컨트롤 입력의 해석은 필드와 같은 형태와 기능을 *형식* 에 대 한 매개 변수는 [scanf](scanf-scanf-l-wscanf-wscanf-l.md) 함수입니다. 동안 **_cscanf** 일반적으로 입력된 문자를 에코 것 이렇게 하지 않으면에 마지막으로 호출한 경우 **_ungetch**합니다.
+합니다 **_cscanf** 함수에서 지정 된 위치로 콘솔에서 직접 데이터를 읽습니다 *인수*합니다. [_getche](getch-getwch.md) 함수는 문자를 읽는 데 사용합니다. 각 선택적 매개 변수에서 형식 지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다 *형식*합니다. 형식 컨트롤 입력의 해석은 필드와 동일한 폼 및 함수는 *형식* 에 대 한 매개 변수를 [scanf](scanf-scanf-l-wscanf-wscanf-l.md) 함수입니다. 하는 동안 **_cscanf** 일반적으로 입력된 문자를 에코 하지 않습니다 있도록 마지막으로 호출한 경우 **_ungetch**합니다.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 형식이 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수가 반환 하 고 **EOF**합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. 형식이 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고 함수가 반환 **EOF**합니다.
 
-있는 이러한 함수 버전은 **_l** 은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 점을 제외 하 고 접미사는 동일 합니다.
+포함 된 이러한 함수의 버전을 **_l** 접미사는 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -124,7 +114,7 @@ int _cwscanf_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_cscanf**, **_cscanf_l**|\<conio.h>|
 |**_cwscanf**, **_cwscanf_l**|\<conio.h> 또는 \<wchar.h>|
