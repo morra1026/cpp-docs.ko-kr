@@ -1,11 +1,6 @@
 ---
-title: cimag, cimagf, cimagl | Microsoft 문서
-ms.custom: ''
+title: cimag, cimagf, cimagl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - cimag
 - cimagf
@@ -30,23 +25,17 @@ f1_keywords:
 - complex/cimagf
 - complex/cimagl
 - cimag
-dev_langs:
-- C++
 helpviewer_keywords:
 - cimag function
 - cimagf function
 - cimagl function
 ms.assetid: 0d8836f5-d61d-44cd-8731-6f75cb776def
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c466ad2373686d368cb29c46c68da3aabd68662f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6f5067967aa62894abb5316f60074b5125b1cba1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394131"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50572733"
 ---
 # <a name="cimag-cimagf-cimagl"></a>cimag, cimagf, cimagl
 
@@ -72,17 +61,17 @@ long double cimag( _Lcomplex z );  // C++
 
 ## <a name="return-value"></a>반환 값
 
-허수 부분 *z*합니다.
+허수부 *z*입니다.
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **cimag** 사용 하는 **_Fcomplex** 또는 **_Lcomplex** 값 및 반환 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **cimag** 항상 약간의 **_Dcomplex** 값과 반환은 **double** 값입니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **cimag** 사용 하는 **_Fcomplex** 하거나 **_Lcomplex** 값 및 반환 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **cimag** 는 항상 사용을 **_Dcomplex** 값과 반환을 **double** 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|C 헤더|C++ 헤더|
+|루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**cimag**, **cimagf**, **cimagl**|\<complex.h>|\<ccomplex>|
+|**cimag**하십시오 **cimagf**, **cimagl**|\<complex.h>|\<ccomplex>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

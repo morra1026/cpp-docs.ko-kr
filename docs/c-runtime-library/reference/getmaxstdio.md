@@ -1,10 +1,6 @@
 ---
-title: _getmaxstdio | Microsoft 문서
-ms.custom: ''
+title: _getmaxstdio
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _getmaxstdio
 apilocation:
@@ -23,24 +19,18 @@ apitype: DLLExport
 f1_keywords:
 - _getmaxstdio
 - getmaxstdio
-dev_langs:
-- C++
 helpviewer_keywords:
 - files [C++], number open
 - _getmaxstdio function
 - getmaxstdio function
 - open files, getting number
 ms.assetid: 700ca8ce-4a8c-4e00-9467-dfa9d6b831a0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f2030937806eedbf1abe671032da75c531fdd5ca
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ea8e516b4c0806230376ea52e399c9fa1f9a858a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396786"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618341"
 ---
 # <a name="getmaxstdio"></a>_getmaxstdio
 
@@ -54,15 +44,15 @@ int _getmaxstdio( void );
 
 ## <a name="return-value"></a>반환 값
 
-현재 허용 되는 동시에 열리는 파일 수를 나타내는 숫자를 반환 된 **stdio** 수준입니다.
+현재 허용 되는 동시에 열리는 파일 수를 나타내는 숫자를 반환 합니다 **stdio** 수준입니다.
 
 ## <a name="remarks"></a>설명
 
-사용 하 여 [_setmaxstdio](setmaxstdio.md) 에서 허용 하는 동시에 열리는 파일 수를 구성 하는 **stdio** 수준입니다.
+사용 하 여 [_setmaxstdio](setmaxstdio.md) 에서 허용 되는 동시에 열리는 파일 수를 구성 하는 **stdio** 수준입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_getmaxstdio**|\<stdio.h>|
 

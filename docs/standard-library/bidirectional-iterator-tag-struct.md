@@ -1,28 +1,18 @@
 ---
-title: bidirectional_iterator_tag 구조체 | Microsoft 문서
-ms.custom: ''
+title: bidirectional_iterator_tag 구조체
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xutility/std::bidirectional_iterator_tag
-dev_langs:
-- C++
 helpviewer_keywords:
 - bidirectional_iterator_tag class
 - bidirectional_iterator_tag struct
 ms.assetid: 9ac06066-b8ae-44b6-bee4-b05855f6a31a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a04265a68a03edc9f957161991d2ddd91a8e6096
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: c8296ddf30c0e2a3d34e69cbf079c0477e0e8b7a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958181"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50661515"
 ---
 # <a name="bidirectionaliteratortag-struct"></a>bidirectional_iterator_tag 구조체
 
@@ -40,7 +30,7 @@ struct bidirectional_iterator_tag    : public forward_iterator_tag {};
 
 형식은 동일 **반복기** \< **Iter**>:: **iterator_category** 때 `Iter` 에 양방향으로 사용할 수 있는 개체에 설명 합니다. 반복기입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 `bidirectional_iterator_tag` 사용 방법의 예는 [random_access_iterator_tag](../standard-library/random-access-iterator-tag-struct.md)를 참조하세요.
 
