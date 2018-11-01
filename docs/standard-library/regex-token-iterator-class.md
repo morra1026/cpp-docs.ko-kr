@@ -1,10 +1,6 @@
 ---
-title: regex_token_iterator 클래스 | Microsoft Docs
-ms.custom: ''
+title: regex_token_iterator 클래스
 ms.date: 09/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - regex/std::regex_token_iterator
 - regex/std::regex_token_iterator::regex_type
@@ -18,8 +14,6 @@ f1_keywords:
 - regex/std::regex_token_iterator::operator*
 - regex/std::regex_token_iterator::operator->
 - regex/std::regex_token_iterator::operator++
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::regex_token_iterator [C++]
 - std::regex_token_iterator [C++], regex_type
@@ -29,16 +23,12 @@ helpviewer_keywords:
 - std::regex_token_iterator [C++], pointer
 - std::regex_token_iterator [C++], reference
 ms.assetid: a213ba48-8e4e-4b6b-871a-2637acf05f15
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 028d363b935ee48ef89c4d1ffdd7fa03ed714154
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 2cb66ce4cbee0936211e5e991b18f3ae4b8a7fe5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45705941"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50473517"
 ---
 # <a name="regextokeniterator-class"></a>regex_token_iterator 클래스
 
@@ -102,7 +92,7 @@ class regex_token_iterator
 |[operator!=](#op_neq)|반복기가 같지 않은지 비교합니다.|
 |[operator*](#op_star)|지정된 부분 일치에 액세스합니다.|
 |[operator++](#op_add_add)|반복기를 증가시킵니다.|
-|[operator==](#op_eq_eq)|반복기가 같은지 비교합니다.|
+|[연산자==](#op_eq_eq)|반복기가 같은지 비교합니다.|
 |[operator->](#op_arrow)|지정된 부분 일치에 액세스합니다.|
 
 ## <a name="requirements"></a>요구 사항
