@@ -1,10 +1,6 @@
 ---
-title: ARM 내장 함수 | Microsoft Docs
-ms.custom: ''
+title: ARM 내장 함수
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - arm_neon/vsetq_lane_p8
 - armintr/_arm_uxtb
@@ -1931,22 +1927,16 @@ f1_keywords:
 - arm_neon/vrsra_n_s32
 - arm_neon/vabdl_u16
 - arm_neon/vsliq_n_s32
-dev_langs:
-- C++
 helpviewer_keywords:
 - cl.exe compiler, intrinsics
 - intrinsics, ARM
 ms.assetid: d3d7dadd-7bd5-4508-8bff-371a66913e20
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 092ac94cac92b3ba327aa7c7853ec286268a00af
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5e32c33a5e04314b05558fe445aaaebb33dd92ef
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46434104"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50453861"
 ---
 # <a name="arm-intrinsics"></a>ARM 내장 함수
 
@@ -2169,7 +2159,7 @@ void __iso_volatile_store8(volatile __int8 * Location, __int8 Value)
 *위치*<br/>
 읽거나 쓸 메모리 위치의 주소입니다.
 
-*Value*<br/>
+*값*<br/>
 지정 된 메모리 위치 (저장 내장 함수만 해당)에 쓸 값입니다.
 
 #### <a name="return-value-load-intrinsics-only"></a>반환 값(로드 내장 함수만 해당)
