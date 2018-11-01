@@ -1,10 +1,6 @@
 ---
-title: vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l | Microsoft Docs
-ms.custom: ''
+title: vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _vswprintf_s_l
 - vsprintf_s
@@ -26,8 +22,6 @@ f1_keywords:
 - vswprintf_s
 - vsprintf_s
 - _vstprintf_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - _vstprintf_s_l function
 - vsprintf_s_l function
@@ -41,16 +35,12 @@ helpviewer_keywords:
 - formatted text [C++]
 - _vswprintf_s_l function
 ms.assetid: 60e90518-57f0-4f1b-b732-f62a69702833
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2f1ee1235b5fe6c3904c6dc201e7c8a183d95647
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8ef1d99caddfcff78bc41c24f7c132c307958db2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32416238"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50616494"
 ---
 # <a name="vsprintfs-vsprintfsl-vswprintfs-vswprintfsl"></a>vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l
 
@@ -105,7 +95,7 @@ int vswprintf_s(
 출력을 위한 저장소 위치입니다.
 
 *numberOfElements*<br/>
-크기 *버퍼* 문자 수입니다.
+크기인 *버퍼* 문자에서입니다.
 
 *format*<br/>
 형식 사양입니다.
@@ -118,23 +108,23 @@ int vswprintf_s(
 
 ## <a name="return-value"></a>반환 값
 
-**vsprintf_s** 및 **vswprintf_s** 는 출력 오류가 발생 하는 경우 종료 null 문자 또는 음수 값을 포함 하지 않고 작성 된 문자 수를 반환 합니다. 경우 *버퍼* 또는 *형식* null 포인터 이면 횟수가 0 이면 또는 경우에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 형식 문자열에 잘못 된 서식 문자가 들어 [ 매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 함수 실행을 계속 허용 된,-1을 반환 하 고 설정 **errno** 를 **EINVAL**합니다.
+**vsprintf_s** 하 고 **vswprintf_s** 출력 오류가 발생 하면 null 종결 문자 또는 음수 값을 포함 하지 않고 작성 된 문자 수를 반환 합니다. 하는 경우 *버퍼* 하거나 *형식* 횟수가 0 이면 null 포인터인 경우 또는에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 형식 문자열이 잘못 된 서식 문자열을 포함 하는 경우 [ 매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 함수는 계속 실행 하도록 허용,-1을 반환 하 고 설정 **errno** 하 **EINVAL**합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 내용은 [_doserrno, errno, _sys_errlist, 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-이러한 각 함수는 인수 목록에 대 한 포인터 및 다음 기록 하 고 형식이 지정된 된 데이터가 가리키는 메모리에 *버퍼*합니다.
+이러한 함수는 각각 인수 목록에 대 한 포인터 형식을 하 고 가리키는 메모리에 지정된 된 데이터를 씁니다 *버퍼*합니다.
 
-**vswprintf_s** 에 대 한 ISO C 표준을 따르는 **vswprintf**, 두 번째 매개 변수를 요구 하 *count*, 형식의 **size_t**합니다.
+**vswprintf_s** 에 대 한 ISO C 표준을 따르는 **vswprintf**, 두 번째 매개 변수를 요구 하는 *개수*, 형식의 **size_t**합니다.
 
 이러한 함수와 비보안 버전의 차이점은, 보안 버전이 위치 매개 변수를 지원한다는 것뿐입니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
 
-있는 이러한 함수 버전은 **_l** 은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 점을 제외 하 고 접미사는 동일 합니다.
+포함 된 이러한 함수의 버전을 **_l** 접미사는 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
 
 C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -143,7 +133,7 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|선택적 헤더|
+|루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|----------------------|
 |**vsprintf_s**, **_vsprintf_s_l**|\<stdio.h> 및 \<stdarg.h>|\<varargs.h>*|
 |**vswprintf_s**, **_vswprintf_s_l**|\<stdio.h> 또는 \<wchar.h> 및 \<stdarg.h>|\<varargs.h>*|

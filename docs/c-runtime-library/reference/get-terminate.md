@@ -1,10 +1,6 @@
 ---
-title: _get_terminate | Microsoft 문서
-ms.custom: ''
+title: _get_terminate
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _get_terminate
 apilocation:
@@ -24,27 +20,21 @@ f1_keywords:
 - get_terminate
 - _get_terminate
 - __get_terminate
-dev_langs:
-- C++
 helpviewer_keywords:
 - __get_terminate function
 - get_terminate function
 - _get_terminate function
 ms.assetid: c8f168c4-0ad5-4832-a522-dd1ef383c208
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 82caa4c8516b9d6ccf813240668692bb54d16eda
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 438bd287738f121efb436857c54c5a68427d9fb4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34450923"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484959"
 ---
 # <a name="getterminate"></a>_get_terminate
 
-호출할 종료 루틴 반환 **종료**합니다.
+호출할 종료 루틴을 반환 합니다 **종료**합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -54,11 +44,11 @@ terminate_function _get_terminate( void );
 
 ## <a name="return-value"></a>반환 값
 
-[set_terminate](set-terminate-crt.md)로 등록된 함수에 대한 포인터를 반환합니다. 기본 동작을 복원할 반환 값을 사용할 수 없는 함수가 설정 된 경우 이 값이 경우도 **NULL**합니다.
+[set_terminate](set-terminate-crt.md)로 등록된 함수에 대한 포인터를 반환합니다. 기본 동작을 복원 하려면 반환 값을 사용할 수 없는 함수를 설정한 경우 이 값이 있을 **NULL**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_get_terminate**|\<eh.h>|
 

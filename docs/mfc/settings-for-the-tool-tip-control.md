@@ -1,26 +1,16 @@
 ---
-title: 컨트롤을 설명 하는 도구에 대 한 설정 | Microsoft Docs
-ms.custom: ''
+title: 도구 설명 컨트롤에 대한 설정
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - tool tips [MFC], activating
 - CToolTipCtrl class [MFC], settings
 ms.assetid: ff8c5c46-2047-403a-bd98-ffec3d21ee3a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6d0adfd1c7a7ae1e1f36fa8dd53610d19ad8e7b2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 99ad8b30599b4399e4574dea611991b4c8e1a8e0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379556"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532673"
 ---
 # <a name="settings-for-the-tool-tip-control"></a>도구 설명 컨트롤에 대한 설정
 

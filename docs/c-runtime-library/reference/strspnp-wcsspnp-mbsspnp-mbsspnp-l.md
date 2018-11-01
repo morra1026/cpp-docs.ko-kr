@@ -1,10 +1,6 @@
 ---
-title: _strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l | Microsoft Docs
-ms.custom: ''
+title: _strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbsspnp
 - _wcsspnp
@@ -34,8 +30,6 @@ f1_keywords:
 - _wcsspnp
 - _strspnp
 - mbsspnp
-dev_langs:
-- C++
 helpviewer_keywords:
 - _strspnp function
 - _wcsspnp function
@@ -48,23 +42,19 @@ helpviewer_keywords:
 - _tcsspnp function
 - tcsspnp function
 ms.assetid: 1ce18100-2edd-4c3b-af8b-53f204d80233
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 80f257d7aef9678258644758e083817cbbfbe134
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 272375948c8c650b226bfb71073c6c65c5b8acef
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415298"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50635294"
 ---
 # <a name="strspnp-wcsspnp-mbsspnp-mbsspnpl"></a>_strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l
 
 지정된 다른 문자열에 없는 지정된 문자열의 첫 번째 문자에 대한 포인터를 반환합니다.
 
 > [!IMPORTANT]
-> **_mbsspnp** 및 **_mbsspnp_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbsspnp** 하 고 **_mbsspnp_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -102,27 +92,27 @@ Null 종료 문자 집합입니다.
 
 ## <a name="return-value"></a>반환 값
 
-**_strspnp**, **_wcsspnp**, 및 **_mbsspnp** 첫 번째 문자에 대 한 포인터를 반환할 *str* 의문자집합에속하지않는*charset*합니다. 이러한 각 함수 반환 **NULL** 경우 *str* 전체가에서 문자로 이루어진 *charset*합니다. 각 이러한 루틴에 대해 오류를 나타내기 위한 반환 값은 예약되지 않습니다.
+**_strspnp**, **_wcsspnp**, 및 **_mbsspnp** 첫 번째 문자에 대 한 포인터를 반환할 *str* 의문자집합에속하지않는*charset*합니다. 이러한 각 함수 반환 **NULL** 하는 경우 *str* 의 문자만으로 구성 됩니다 *charset*합니다. 각 이러한 루틴에 대해 오류를 나타내기 위한 반환 값은 예약되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
-**_mbsspnp** 함수 포인터의 첫 번째 문자를 멀티 바이트 문자를 반환 *str* 의 문자 집합에 속하지 않는 *charset*합니다. **_mbsspnp** 에 따라 멀티 바이트 문자 시퀀스를 인식 된 [멀티 바이트 코드 페이지](../../c-runtime-library/code-pages.md) 에서 현재 사용 합니다. 종료 null 문자는 검색에 포함되지 않습니다.
+합니다 **_mbsspnp** 함수는 멀티 바이트 문자에서 첫 번째 문자에 대 한 포인터를 반환 *str* 의 문자 집합에 속하지 않는 *charset*합니다. **_mbsspnp** 에 따라 멀티 바이트 문자 시퀀스를 인식 합니다 [멀티 바이트 코드 페이지](../../c-runtime-library/code-pages.md) 에서 현재 사용 합니다. 종료 null 문자는 검색에 포함되지 않습니다.
 
-어느 경우 *str* 또는 *charset* 가 null 포인터의 설명 대로 잘못 된 매개 변수 처리기를 호출 하는이 함수 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 계속 하려면 실행 허용 된 경우, 함수 반환 **NULL** 설정 **errno** 를 **EINVAL**합니다.
+경우 *str* 하거나 *charset* 가 null 포인터인 경우이 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 함수 반환 **NULL** 설정 **errno** 하 **EINVAL**합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tcsspnp**|**_strspnp**|**_mbsspnp**|**_wcsspnp**|
 
-**_strspnp** 및 **_wcsspnp** 단일 바이트 문자 및 와이드 문자 버전의 **_mbsspnp**합니다. **_strspnp** 및 **_wcsspnp** 동일 하 게 동작 **_mbsspnp** ; 그렇지 않으면 이러한 매핑을 위해서만 제공 하 고 기타 다른 이유로 사용할 수 없습니다. 자세한 내용은 [일반 텍스트 매핑 사용](../../c-runtime-library/using-generic-text-mappings.md) 및 [일반 텍스트 매핑](../../c-runtime-library/generic-text-mappings.md)을 참조하세요.
+**_strspnp** 하 고 **_wcsspnp** 싱글바이트 문자 및 와이드 문자 버전의 **_mbsspnp**합니다. **_strspnp** 하 고 **_wcsspnp** 동일 하 게 작동 **_mbsspnp** 그렇지 이러한 매핑을 위해서만 제공 됩니다 하며 다른 이유로 사용할 수 없습니다. 자세한 내용은 [일반 텍스트 매핑 사용](../../c-runtime-library/using-generic-text-mappings.md) 및 [일반 텍스트 매핑](../../c-runtime-library/generic-text-mappings.md)을 참조하세요.
 
-**_mbsspnp_l** 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_mbsspnp_l** 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_mbsspnp**|\<mbstring.h>|
 |**_strspnp**|\<tchar.h>|

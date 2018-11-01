@@ -1,27 +1,17 @@
 ---
-title: '&lt;forward_list&gt; | Microsoft 문서'
-ms.custom: ''
+title: '&lt;forward_list&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <forward_list>
-dev_langs:
-- C++
 helpviewer_keywords:
 - <forward_list>
 ms.assetid: 8b4ab09e-1475-434a-b4e0-fdbc07a08b5b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3a23fef80dd55e6c532df10cf64871849beda9bd
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: cbde6268be0f501a220721cae498254dd0588eb4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844473"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50597693"
 ---
 # <a name="ltforwardlistgt"></a>&lt;forward_list&gt;
 
@@ -37,7 +27,7 @@ ms.locfileid: "33844473"
 
 |연산자|설명|
 |-|-|
-|[operator==](../standard-library/forward-list-operators.md#op_eq_eq)|연산자의 좌변에 있는 정방향 목록 개체가 우변에 있는 정방향 목록 개체와 같은지 테스트합니다.|
+|[연산자==](../standard-library/forward-list-operators.md#op_eq_eq)|연산자의 좌변에 있는 정방향 목록 개체가 우변에 있는 정방향 목록 개체와 같은지 테스트합니다.|
 |[operator!=](../standard-library/forward-list-operators.md#op_neq)|연산자의 좌변에 있는 정방향 목록 개체가 우변에 있는 정방향 목록 개체와 같지 않은지 테스트합니다.|
 |[operator<](../standard-library/forward-list-operators.md#op_lt)|연산자의 좌변에 있는 정방향 목록 개체가 우변에 있는 정방향 목록 개체보다 작은지 테스트합니다.|
 |[operator<=](../standard-library/forward-list-operators.md#op_lt_eq)|연산자의 좌변에 있는 정방향 목록 개체가 우변에 있는 정방향 목록 개체보다 작거나 같은지 테스트합니다.|
@@ -46,7 +36,7 @@ ms.locfileid: "33844473"
 
 ### <a name="functions"></a>함수
 
-|함수|설명|
+|기능|설명|
 |-|-|
 |[swap](../standard-library/forward-list-functions.md#swap)|두 정방향 목록의 요소를 교환합니다.|
 

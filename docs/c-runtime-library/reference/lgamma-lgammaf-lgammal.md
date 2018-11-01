@@ -1,11 +1,6 @@
 ---
-title: lgamma, lgammaf, lgammal | Microsoft 문서
-ms.custom: ''
+title: lgamma, lgammaf, lgammal
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - lgamma
 - lgammaf
@@ -30,23 +25,17 @@ f1_keywords:
 - math/lgamma
 - math/lgammaf
 - math/lgammal
-dev_langs:
-- C++
 helpviewer_keywords:
 - lgamma function
 - lgammal function
 - lgammaf function
 ms.assetid: 6e326c58-7077-481a-a329-c82ae56ae9e6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4fb668e1c24d3f24331e0892002530192afdaeb6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 43ce1599ab9161b9fadf5643ddd2ec739ab2d8b8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400254"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533486"
 ---
 # <a name="lgamma-lgammaf-lgammal"></a>lgamma, lgammaf, lgammal
 
@@ -72,7 +61,7 @@ long double lgamma( long double x ); //C++ only
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면의 감마 함수의 절대 값의 자연 로그를 반환 *x*합니다.
+성공한 경우의 감마 함수 절대 값의 자연 로그를 반환 *x*합니다.
 
 |문제|반환|
 |-----------|------------|
@@ -87,15 +76,15 @@ long double lgamma( long double x ); //C++ only
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **lgamma** 사용 하 고 반환 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **lgamma** 항상 사용 하 고 반환 된 **double**합니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **lgamma** 및 반환 하는 **float** 하 고 **긴** **double** 형식입니다. C 프로그램에서 **lgamma** 항상 받아서 반환 된 **double**합니다.
 
-X 유리수 이면이 함수는 (x-1)의 계승값 로그를 반환 합니다.
+X가 유리수 인 경우이 함수는 (x-1)의 계승의 로그를 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|C 헤더|C++ 헤더|
+|기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**lgamma**, **lgammaf**, **lgammal**|\<math.h>|\<cmath>|
+|**lgamma**하십시오 **lgammaf**, **lgammal**|\<math.h>|\<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

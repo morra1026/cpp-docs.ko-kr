@@ -1,10 +1,6 @@
 ---
-title: '##elif, if, #else 및 #endif 지시문 (C/c + +) | Microsoft Docs'
-ms.custom: ''
+title: '##elif, if, #else 및 #endif 지시문 (C/c + +)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - '#else'
 - '#endif'
@@ -12,8 +8,6 @@ f1_keywords:
 - '#elif'
 - defined
 - __has_include
-dev_langs:
-- C++
 helpviewer_keywords:
 - '#elif directive'
 - conditional compilation, directives
@@ -27,16 +21,12 @@ helpviewer_keywords:
 - elif directive (#elif)
 - defined directive
 ms.assetid: c77a175f-6ca8-47d4-8df9-7bac5943d01b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8dcacaab21ca763a9ce45a9ab6eb503cd6fc7b74
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 76b8be265145896105490a82946c50bc576e6f9f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753843"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50520424"
 ---
 # <a name="if-elif-else-and-endif-directives-cc"></a>#if, #elif, #else, and #endif 지시문 (C/C++)
 
@@ -51,16 +41,16 @@ ms.locfileid: "43753843"
 &nbsp;&nbsp;&nbsp;&nbsp;*경우에 줄 텍스트*
 
 *if-line* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#if***상수 식* <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#ifdef***식별자* <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#ifndef***식별자* 
+&nbsp;&nbsp;&nbsp;&nbsp;**#if***상수 식*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#ifdef***식별자*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#ifndef***식별자*
 
 *elif-parts* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*elif 줄 텍스트*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*elif 부분 elif 줄 텍스트*
 
 *elif-line* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#elif***상수 식* 
+&nbsp;&nbsp;&nbsp;&nbsp;**#elif***상수 식*
 
 *else-part* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*다른 줄 텍스트*

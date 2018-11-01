@@ -1,28 +1,18 @@
 ---
-title: -Q 옵션 (하위 수준 작업) | Microsoft Docs
-ms.custom: ''
+title: /Q 옵션(하위 수준 작업)
 ms.date: 1/23/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /q
-dev_langs:
-- C++
 helpviewer_keywords:
 - Q compiler option [C++]
 - -Q compiler option [C++]
 - /Q compiler option [C++]
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 15854333a9f26f87d20f7819327e68050ab37bf6
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: a6dcbd256fa3510955884d3adba4855b23cdbfab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717788"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514255"
 ---
 # <a name="q-options-low-level-operations"></a>/Q 옵션(하위 수준 작업)
 

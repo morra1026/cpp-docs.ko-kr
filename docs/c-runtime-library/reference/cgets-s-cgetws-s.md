@@ -1,10 +1,6 @@
 ---
-title: _cgets_s, _cgetws_s | Microsoft 문서
-ms.custom: ''
+title: _cgets_s, _cgetws_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _cgetws_s
 - _cgets_s
@@ -26,8 +22,6 @@ f1_keywords:
 - cgets_s
 - cgetws_s
 - _cgetws_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - strings [C++], getting from console
 - console, getting strings from
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - _cgetws_s function
 - cgetws_s function
 ms.assetid: 38b74897-afe6-4dd9-a43f-36a3c0d72c5c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 48b00f9eee699b7e556c2fcc3f88abd8d783a261
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8341b775df3b9cbaececdfaa1f17e075d7c7416c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396799"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588541"
 ---
 # <a name="cgetss-cgetwss"></a>_cgets_s, _cgetws_s
 
@@ -98,19 +88,19 @@ errno_t _cgetws_s(
 
 |*buffer*|*numberOfElements*|*pSizeRead*|반환|내용을 *버퍼*|
 |--------------|------------------------|-----------------|------------|--------------------------|
-|**NULL**|모두|모두|**EINVAL**|N/A|
-|하지 **NULL**|0|모두|**EINVAL**|수정 안 됨|
-|하지 **NULL**|모두|**NULL**|**EINVAL**|빈 문자열|
+|**NULL**|any|any|**EINVAL**|N/A|
+|하지 **NULL**|0|any|**EINVAL**|수정 안 됨|
+|하지 **NULL**|any|**NULL**|**EINVAL**|빈 문자열|
 
 ## <a name="remarks"></a>설명
 
-**_cgets_s** 및 **_cgetws_s** 콘솔에서 문자열을 읽고 null 종결자) (사용 하 여 문자열에 복사 *버퍼*합니다. **_cgetws_s** 문자 크기가 아니라 이러한 두 함수의 동작이 같습니다 외; 함수의 와이드 문자 버전의를 합니다. 로 전달 되는 문자열을 읽을 수의 최대 크기는 *numberOfElements* 매개 변수입니다. 이 크기는 종료 null에 대한 추가 문자를 포함해야 합니다. 실제 읽은 문자 수에 위치한 *pSizeRead*합니다.
+**_cgets_s** 하 고 **_cgetws_s** 콘솔에서 문자열을 읽고 null 종결자) (사용 하 여 문자열을 복사 *버퍼*합니다. **_cgetws_s** 보다; 함수의 와이드 문자 버전 다른 문자 크기, 이러한 두 함수의 동작이 동일 합니다. 읽을 문자열의 최대 크기로 전달 되는 *numberOfElements* 매개 변수입니다. 이 크기는 종료 null에 대한 추가 문자를 포함해야 합니다. 실제 읽은 문자 수에 위치한 *pSizeRead*합니다.
 
-작업 중이나 매개 변수의 유효성을 검사할 때 오류가 발생하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 및 **EINVAL** 반환 됩니다.
+작업 중이나 매개 변수의 유효성을 검사할 때 오류가 발생하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 하 고 **EINVAL** 반환 됩니다.
 
 C++에서는 템플릿 오버로드를 통해 이러한 함수를 사용하는 것이 보다 간단해집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으므로 크기 인수를 지정할 필요가 없어지고 보안 수준이 낮은 기존 함수를 보안 수준이 높은 최신 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -118,7 +108,7 @@ C++에서는 템플릿 오버로드를 통해 이러한 함수를 사용하는 �
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_cgets_s**|\<conio.h>|
 |**_cgetws_s**|\<conio.h> 또는 \<wchar.h>|

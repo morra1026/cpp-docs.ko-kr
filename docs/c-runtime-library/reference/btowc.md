@@ -1,10 +1,6 @@
 ---
-title: btowc | Microsoft 문서
-ms.custom: ''
+title: btowc
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - btowc
 apilocation:
@@ -22,21 +18,15 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - btowc
-dev_langs:
-- C++
 helpviewer_keywords:
 - btowc function
 ms.assetid: 99a46e02-6f86-4569-af79-5feca012add8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4d0e56649218e6249550638af4e198cbd1284bc2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 399f56fe133a9f67ed457b435ae6c0496e1ecaa5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393318"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514679"
 ---
 # <a name="btowc"></a>btowc
 
@@ -57,11 +47,11 @@ wint_t btowc(
 
 ## <a name="return-value"></a>반환 값
 
-초기 시프트 상태에서 정수가 유효한 싱글바이트 문자를 나타내는 경우 문자의 와이드 문자 표현을 반환합니다. 초기 시프트 상태에서 정수가 EOF이거나 유효한 싱글바이트 문자가 아닌 경우 WEOF를 반환합니다. 현재가이 함수의 출력에 영향을 받는 **LC_TYPE** 로캘 합니다.
+초기 시프트 상태에서 정수가 유효한 싱글바이트 문자를 나타내는 경우 문자의 와이드 문자 표현을 반환합니다. 초기 시프트 상태에서 정수가 EOF이거나 유효한 싱글바이트 문자가 아닌 경우 WEOF를 반환합니다. 이 함수의 출력은 현재 영향을 받지 **LC_TYPE** 로캘.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**btowc**|\<stdio.h> 또는 \<wchar.h>|
 

@@ -1,20 +1,13 @@
 ---
-title: 네임 스페이스 및 형식 표시 유형 (C + + /cli CX) | Microsoft Docs
-ms.custom: ''
+title: 네임스페이스 및 형식 표시 유형(C++/CX)
 ms.date: 12/30/2016
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: cbc01a3a-3b69-4ded-9c42-ecbf0fd0a00e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 42457da3c85a73292b836c6da58b17f0341df1be
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: e9efc207fe0ed49fecf30366d265019e7a3ee009
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102774"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50440523"
 ---
 # <a name="namespaces-and-type-visibility-ccx-"></a>네임스페이스 및 형식 표시 유형(C++/CX)
 
@@ -41,13 +34,13 @@ private ref 클래스, 인터페이스 또는 대리자에서는 public 액세�
 |private|기본 액세스 가능성입니다. 표준 C++에서와 동일한 의미를 갖습니다.|아니요|
 |protected|응용 프로그램 또는 구성 요소와 메타데이터에서 표준 C++에서와 동일한 의미를 갖습니다.|예|
 |public|표준 C++에서와 동일한 의미를 갖습니다.|예|
-|`public protected` -또는- `protected public`|액세스 가능성이 메타데이터에서는 protected이고 응용 프로그램 또는 구성 요소에서는 public입니다.|예|
+|`public protected` 또는 `protected public`|액세스 가능성이 메타데이터에서는 protected이고 응용 프로그램 또는 구성 요소에서는 public입니다.|예|
 |`protected private` 또는 `private protected`|메타데이터에서는 표시되지 않고 응용 프로그램 또는 구성 요소에서는 액세스 가능성이 protected입니다.||
 |`internal` 또는 `private public`|멤버가 응용 프로그램 또는 구성 요소에서는 public이지만 메타데이터에서는 표시되지 않습니다.|아니요|
 
 ## <a name="windows-runtime-namespaces"></a>Windows 런타임 네임 스페이스
 
-Windows API는 Windows에서 선언 된 형식으로 구성 됩니다::\* 네임 스페이스입니다. 이러한 네임스페이스는 Windows용으로 예약되어 있으며 해당 네임스페이스에는 형식을 추가할 수 없습니다. **개체 브라우저**의 windows.winmd 파일에서 이러한 네임스페이스를 볼 수 있습니다. 이러한 네임 스페이스에 대 한 설명서를 참조 하세요 [Windows API](https://msdn.microsoft.com/library/windows/apps/br211377)합니다.
+Windows API는 Windows에서 선언 된 형식으로 구성 됩니다::\* 네임 스페이스입니다. 이러한 네임스페이스는 Windows용으로 예약되어 있으며 해당 네임스페이스에는 형식을 추가할 수 없습니다. **개체 브라우저**의 windows.winmd 파일에서 이러한 네임스페이스를 볼 수 있습니다. 이러한 네임스페이스에 대한 설명은 [Windows API](https://msdn.microsoft.com/library/windows/apps/br211377)를 참조하세요.
 
 ## <a name="ccx-namespaces"></a>C++/CX 네임스페이스
 

@@ -1,26 +1,16 @@
 ---
-title: 바로 가기 키 컨트롤 사용 | Microsoft Docs
-ms.custom: ''
+title: 바로 가기 키 컨트롤 사용
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CHotKeyCtrl class [MFC], using
 - hot key controls
 ms.assetid: cdd6524b-cc43-447f-b151-164273559685
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: be0d27016204724672c23f04fdee38f01b69e6a5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 335489011076b1e30a9c36720a3bf2e94c7918b3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46372292"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50542196"
 ---
 # <a name="using-a-hot-key-control"></a>바로 가기 키 컨트롤 사용
 
@@ -36,7 +26,7 @@ ms.locfileid: "46372292"
 
 - 사용자가 선택한 키를 알고에 설명 된 방법 중 하나를 사용 하 여 바로 가기 키를 설정할 수 있습니다 [바로 가기 키 설정](../mfc/setting-a-hot-key.md)합니다.
 
-- Hot key 컨트롤 대화 상자에 있으면이 고 `CHotKeyCtrl` 개체는 자동으로 소멸 됩니다. 그렇지 않은 경우 컨트롤 및 `CHotKeyCtrl` 개체가 모두 제대로 소멸되었는지 확인해야 합니다.
+- Hot key 컨트롤 대화 상자에 있으면이 고 `CHotKeyCtrl` 개체는 자동으로 소멸 됩니다. 그렇지 않은 경우 컨트롤 및 `CHotKeyCtrl` 개체가 모두 제대로 제거되었는지 확인해야 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

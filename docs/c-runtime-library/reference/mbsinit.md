@@ -1,10 +1,6 @@
 ---
-title: mbsinit | Microsoft 문서
-ms.custom: ''
+title: mbsinit
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - mbsinit
 apilocation:
@@ -21,21 +17,15 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - mbsinit
-dev_langs:
-- C++
 helpviewer_keywords:
 - mbsinit function
 ms.assetid: 4618555b-baaa-4d04-93fa-36abae411034
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 413592bcf3af01c898a72d0ca70239364ee432f9
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 8b467ae7f705fc2f4b2b38d3f76f3936f30ec15e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34450452"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50597238"
 ---
 # <a name="mbsinit"></a>mbsinit
 
@@ -56,11 +46,11 @@ int mbsinit(
 
 ## <a name="return-value"></a>반환 값
 
-0이 아닌 경우 *ps* 은 **NULL** 이거나 변환 과정이 아닌 합니다.
+0이 아닌 경우 *ps* 됩니다 **NULL** 변환 과정이 아닌 경우.
 
 ## <a name="remarks"></a>설명
 
-사용 하는 ANSI 함수 중 하나를 사용 하는 경우는 **mbstate_t** 포인터의 주소를 전달 하면 **mbstate_t** 버퍼의 마지막 바이트 변환 하는지 여부에 대 한 정보를 반환 합니다.
+ANSI 함수 중 하나를 사용 하는 경우는 **mbstate_t** 포인터의 주소를 전달 하 **mbstate_t** 버퍼의 마지막 바이트가 변환 되었는지 여부에 대 한 정보를 반환 합니다.
 
 멀티바이트 문자를 지원하려면 적절한 코드 페이지를 설치해야 합니다.
 

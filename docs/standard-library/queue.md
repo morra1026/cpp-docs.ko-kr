@@ -1,27 +1,17 @@
 ---
-title: '&lt;queue&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;queue&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <queue>
-dev_langs:
-- C++
 helpviewer_keywords:
 - queue header
 ms.assetid: 24fcf350-eb0e-48cf-9fef-978be1aeda1f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7ba139e2b50f1dd7c9887701a522a002173c21ee
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4f22212819ddea6f851360f7534495b679160022
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853679"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653370"
 ---
 # <a name="ltqueuegt"></a>&lt;queue&gt;
 
@@ -41,7 +31,7 @@ ms.locfileid: "33853679"
 |[operator!=](../standard-library/queue-operators.md#op_neq)|연산자의 좌변에 있는 큐 개체가 우변에 있는 큐 개체와 같지 않은지 테스트합니다.|
 |[operator<](../standard-library/queue-operators.md#op_lt)|연산자의 좌변에 있는 큐 개체가 우변에 있는 큐 개체보다 작은지 테스트합니다.|
 |[operator\<=](../standard-library/queue-operators.md#op_gt_eq)|연산자의 좌변에 있는 큐 개체가 우변에 있는 큐 개체보다 작거나 같은지 테스트합니다.|
-|[operator==](../standard-library/queue-operators.md#op_eq_eq)|연산자의 좌변에 있는 큐 개체가 우변에 있는 큐 개체와 같은지 테스트합니다.|
+|[연산자==](../standard-library/queue-operators.md#op_eq_eq)|연산자의 좌변에 있는 큐 개체가 우변에 있는 큐 개체와 같은지 테스트합니다.|
 |[operator>](../standard-library/queue-operators.md#op_gt)|연산자의 좌변에 있는 큐 개체가 우변에 있는 큐 개체보다 큰지 테스트합니다.|
 |[operator>=](../standard-library/queue-operators.md#op_gt_eq)|연산자의 좌변에 있는 큐 개체가 우변에 있는 큐 개체보다 크거나 같은지 테스트합니다.|
 

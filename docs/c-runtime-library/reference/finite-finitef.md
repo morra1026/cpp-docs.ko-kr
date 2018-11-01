@@ -1,10 +1,6 @@
 ---
-title: _finite, _finitef | Microsoft 문서
-ms.custom: ''
+title: _finite, _finitef
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _finite
 - _finitef
@@ -28,23 +24,17 @@ f1_keywords:
 - math/_finite
 - math/_finitef
 - float/_finite
-dev_langs:
-- C++
 helpviewer_keywords:
 - finite function
 - _finite function
 - _finitef function
 ms.assetid: 5a7d7ca7-befb-4e1f-831d-28713c6eb805
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3367f13e68aa85e53d9f5f0ee83521ef465d3996
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7b1bce6f1b2da77ed9de255f49dd8d0160e33e31
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396643"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431666"
 ---
 # <a name="finite-finitef"></a>_finite, _finitef
 
@@ -69,15 +59,15 @@ int _finitef(
 
 ## <a name="return-value"></a>반환 값
 
-둘 다 **_finite** 및 **_finitef** 경우 0이 아닌 값을 반환 인수 *x* 유한; 있는 경우,-INF < *x* < + INF입니다. 인수가 무한이거나 NAN이면 0을 반환합니다.
+둘 다 **_finite** 하 고 **_finitef** 경우 0이 아닌 값을 반환 인수 *x* 는 유한 인 경우,-INF < *x* < + INF입니다. 인수가 무한이거나 NAN이면 0을 반환합니다.
 
 ## <a name="remarks"></a>설명
 
-**_finite** 및 **_finitef** 함수는 Microsoft 전용입니다. **_finitef** 기능은 플랫폼 x86, ARM, 또는 ARM64 컴파일된 경우에 사용할 수 있습니다.
+합니다 **_finite** 하 고 **_finitef** 함수는 Microsoft 전용입니다. 합니다 **_finitef** 함수는만 플랫폼을 x86, ARM 또는 ARM64 컴파일된 경우 사용할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더(C)|필수 헤더(C++)|
+|기능|필수 헤더(C)|필수 헤더(C++)|
 |--------------|---------------------------|-------------------------------|
 |**_finite**|\<float.h> 또는 \<math.h>|\<float.h>, \<math.h>, \<cfloat> 또는 \<cmath>|
 |**_finitef**|\<math.h>|\<math.h> 또는 \<cmath>|

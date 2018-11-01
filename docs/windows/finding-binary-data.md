@@ -1,14 +1,8 @@
 ---
-title: 이진 데이터 (c + +) 찾기 | Microsoft Docs
-ms.custom: ''
+title: 이진 데이터 찾기 (c + +)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.binary
-dev_langs:
-- C++
 helpviewer_keywords:
 - hexadecimal bytes in binary data
 - strings [C++], searching for
@@ -16,17 +10,12 @@ helpviewer_keywords:
 - binary data, finding
 - ASCII characters, finding in binary data
 ms.assetid: 1675b19c-66e3-4040-82c2-5dde4b1793f8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 5c24d2c4fbae86d6b906de039b8cf6a041858b2e
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 34132ee9c243d15b7d9ea8087b629f164ee0ce16
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315771"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547422"
 ---
 # <a name="finding-binary-data"></a>이진 데이터 찾기
 

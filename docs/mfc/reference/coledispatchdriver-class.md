@@ -1,10 +1,6 @@
 ---
-title: COleDispatchDriver 클래스 | Microsoft Docs
-ms.custom: ''
+title: COleDispatchDriver 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleDispatchDriver
 - AFXDISP/COleDispatchDriver
@@ -18,8 +14,6 @@ f1_keywords:
 - AFXDISP/COleDispatchDriver::SetProperty
 - AFXDISP/COleDispatchDriver::m_bAutoRelease
 - AFXDISP/COleDispatchDriver::m_lpDispatch
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleDispatchDriver [MFC], COleDispatchDriver
 - COleDispatchDriver [MFC], AttachDispatch
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - COleDispatchDriver [MFC], m_bAutoRelease
 - COleDispatchDriver [MFC], m_lpDispatch
 ms.assetid: 3ed98daf-cdc7-4374-8a0c-cf695a8d3657
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: da7093d25e8221ce3fc3ec8d0d13f8bbc5b420d2
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: f6e52d993619929666d61f019c1f6d5d28243ab1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48821324"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569229"
 ---
 # <a name="coledispatchdriver-class"></a>COleDispatchDriver 클래스
 
@@ -111,7 +101,7 @@ OLE 디스패치 인터페이스 개체의 메서드 및 속성에 대 한 액�
 
 ##  <a name="attachdispatch"></a>  COleDispatchDriver::AttachDispatch
 
-`AttachDispatch` 멤버 함수를 호출하여 `IDispatch` 개체에 대한 `COleDispatchDriver` 포인터를 연결합니다. 자세한 내용은 [IDispatch 인터페이스 구현](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)합니다.
+`AttachDispatch` 멤버 함수를 호출하여 `IDispatch` 개체에 대한 `COleDispatchDriver` 포인터를 연결합니다. 자세한 내용은 [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)을 참조하십시오.
 
 ```
 void AttachDispatch(
@@ -162,15 +152,15 @@ COleDispatchDriver(const COleDispatchDriver& dispatchSrc);
 
 폼 `COleDispatchDriver`( **const**`COleDispatchDriver`& `dispatchSrc`) 기존 복사 `COleDispatchDriver` 개체 및 참조 횟수를 증가 시킵니다.
 
-폼 `COleDispatchDriver`()를 만듭니다를 `COleDispatchDriver` 개체 있지만 연결 하지는 `IDispatch` 인터페이스입니다. 사용 하기 전에 `COleDispatchDriver`연결 해야 인수 없이 ()는 `IDispatch` 중 하나를 사용 하 여 [coledispatchdriver:: Createdispatch](#createdispatch) 하거나 [COleDispatchDriver::AttachDispatch](#attachdispatch)합니다. 자세한 내용은 [IDispatch 인터페이스 구현](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)합니다.
+폼 `COleDispatchDriver`()를 만듭니다를 `COleDispatchDriver` 개체 있지만 연결 하지는 `IDispatch` 인터페이스입니다. 사용 하기 전에 `COleDispatchDriver`연결 해야 인수 없이 ()는 `IDispatch` 중 하나를 사용 하 여 [coledispatchdriver:: Createdispatch](#createdispatch) 하거나 [COleDispatchDriver::AttachDispatch](#attachdispatch)합니다. 자세한 내용은 [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)을 참조하십시오.
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [coledispatchdriver:: Createdispatch](#createdispatch)합니다.
+  [COleDispatchDriver::CreateDispatch](#createdispatch)에 대한 예제를 참조하세요.
 
 ##  <a name="createdispatch"></a>  Coledispatchdriver:: Createdispatch
 
-만듭니다는 [IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) 인터페이스 개체에 연결 하 고는 `COleDispatchDriver` 개체입니다.
+[IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) 인터페이스 개체를 만들고 `COleDispatchDriver` 개체에 연결합니다.
 
 ```
 BOOL CreateDispatch(
@@ -240,7 +230,7 @@ void GetProperty(
 검색할 속성을 식별 합니다.
 
 *vtProp*<br/>
-검색할 속성을 지정 합니다. 가능한 값에 대 한 설명 섹션을 참조 하세요 [coledispatchdriver:: Invokehelper](#invokehelper)합니다.
+검색할 속성을 지정 합니다. 가능한 값에 대해서는 [COleDispatchDriver::InvokeHelper](#invokehelper)의 설명 섹션을 참조하세요.
 
 *pvProp*<br/>
 속성 값을 받을 변수의 주소입니다. 지정 된 형식과 일치 해야 합니다 *vtProp*합니다.
@@ -304,7 +294,7 @@ void AFX_CDECL InvokeHelper(
 |VT_VARIANT|**VARIANT**|
 |VT_UNKNOWN|LPUNKNOWN|
 
-합니다 *pbParamInfo* 인수는 공백으로 구분 된 목록을 **VTS_** 상수입니다. 공백(쉼표가 아님)으로 구분된 이러한 값 중 하나 이상이 함수의 매개 변수 목록을 지정합니다. 가능한 값과 함께 나열 됩니다는 [EVENT_CUSTOM](event-maps.md#event_custom) 매크로입니다.
+합니다 *pbParamInfo* 인수는 공백으로 구분 된 목록을 **VTS_** 상수입니다. 공백(쉼표가 아님)으로 구분된 이러한 값 중 하나 이상이 함수의 매개 변수 목록을 지정합니다. 가능한 값은 [EVENT_CUSTOM](event-maps.md#event_custom) 매크로를 통해 나열됩니다.
 
 이 함수 VARIANTARG 값을 매개 변수를 문자열로 변환한 다음 호출을 [idispatch:: Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) 메서드. `Invoke` 호출에 실패하면 이 함수가 예외를 throw합니다. SCODE (상태 코드)에서 반환 하는 경우 `IDispatch::Invoke` DISP_E_EXCEPTION을를이 함수는 [COleException](../../mfc/reference/coleexception-class.md) throw이 고, 그렇지 않으면 개체를 [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).
 
@@ -312,7 +302,7 @@ void AFX_CDECL InvokeHelper(
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [coledispatchdriver:: Createdispatch](#createdispatch)합니다.
+  [COleDispatchDriver::CreateDispatch](#createdispatch)에 대한 예제를 참조하세요.
 
 ##  <a name="m_bautorelease"></a>  COleDispatchDriver::m_bAutoRelease
 
@@ -407,7 +397,7 @@ void AFX_CDECL SetProperty(
 설정할 속성을 확인합니다.
 
 *vtProp*<br/>
-설정할 속성의 유형을 지정합니다. 가능한 값에 대 한 설명 섹션을 참조 하세요 [coledispatchdriver:: Invokehelper](#invokehelper)합니다.
+설정할 속성의 유형을 지정합니다. 가능한 값에 대해서는 [COleDispatchDriver::InvokeHelper](#invokehelper)의 설명 섹션을 참조하세요.
 
 *...*<br/>
 지정 된 형식의 단일 매개 변수 *vtProp*합니다.

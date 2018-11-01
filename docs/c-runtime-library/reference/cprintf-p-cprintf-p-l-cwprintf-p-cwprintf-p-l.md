@@ -1,10 +1,6 @@
 ---
-title: _cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l | Microsoft 문서
-ms.custom: ''
+title: _cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _cprintf_p_l
 - _cwprintf_p_l
@@ -33,8 +29,6 @@ f1_keywords:
 - _cwprintf_p
 - _tcprintf_p
 - cprintf_p_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _cwprintf_p_l function
 - cwprintf_p function
@@ -49,16 +43,12 @@ helpviewer_keywords:
 - tcprintf_p function
 - cprintf_p function
 ms.assetid: 1f82fd7d-13c8-4c4a-a3e4-db0df3873564
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 328e6fba2854e2cee82bdb9b7ccfe2e62e7c1ddc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ef4ac6a89749c2784e4935fcf83810e81b61ae11
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402649"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658460"
 ---
 # <a name="cprintfp-cprintfpl-cwprintfp-cwprintfpl"></a>_cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l
 
@@ -107,18 +97,18 @@ int _cwprintf_p_l(
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 형식 및 일련의 문자 및 값을 콘솔에 직접 인쇄를 사용 하는 **_putch** 및 **_putwch** 출력 문자가 하는 함수입니다. 각 *인수* (있는 경우)이 변환 되 고 해당 형식 사양에 따라 출력 *형식*합니다. 형태와 기능을 동일한 형식을 갖고는 *형식* 에 대 한 매개 변수는 [printf_p](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) 함수입니다. 차이 **_cprintf_p** 및 **cprintf_s** 은 **_cprintf_p** 지원 위치 매개 변수를 인수는 순서를 지정할 수 있습니다 형식 문자열에 사용 합니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
+이러한 함수는 형식 및 일련의 문자 및 값을 콘솔에 직접 인쇄를 사용 하 여는 **_putch** 하 고 **_putwch** 출력 자로 함수입니다. 각 *인수* (있는 경우) 변환 되 고 해당 형식 사양에 따라 출력 *형식*합니다. 동일한 양식과 함수를 형식에는 *형식* 에 대 한 매개 변수를 [printf_p](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) 함수입니다. 차이점 **_cprintf_p** 하 고 **cprintf_s** 는 **_cprintf_p** 지원 위치는 매개 변수를 인수 하는 순서를 지정할 수 있습니다 형식 문자열에 사용 합니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
 
-와 달리는 **fprintf_p**, **printf_p**, 및 **sprintf_p** 함수도 **_cprintf_p** 나 **_cwprintf_p** 줄 바꿈 문자를 캐리지 리턴-줄 바꿈 (CR-LF) 조합으로 변환 출력 시. 중요 한 차이점은 **_cwprintf_p** Windows NT에서 사용 될 때 유니코드 문자를 표시 합니다. 와 달리 **_cprintf_p**, **_cwprintf_p** 현재 콘솔 로캘 설정을 사용 합니다.
+와 달리 합니다 **fprintf_p**를 **printf_p**, 및 **sprintf_p** 함수를 모두 **_cprintf_p** 나 **_cwprintf_p** 캐리지 리턴-줄 바꿈 (CR-LF) 조합으로 줄 바꿈 문자를 변환 하면 출력 합니다. 중요 한 차이점이 **_cwprintf_p** Windows NT에서 사용 될 때 유니코드 문자를 표시 합니다. 와 달리 **_cprintf_p**하십시오 **_cwprintf_p** 는 현재 콘솔 로캘 설정을 사용 합니다.
 
-있는 이러한 함수 버전은 **_l** 은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 점을 제외 하 고 접미사는 동일 합니다.
+포함 된 이러한 함수의 버전을 **_l** 접미사 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
 
 > [!IMPORTANT]
 > *format*이 사용자 정의 문자열이 아닌지 확인하세요.
 
-또한 같은 **_cprintf_s** 및 **_cwprintf_s**, 입력된 포인터 및 형식 문자열의 유효성을 검사 합니다. 경우 *형식* 또는 *인수* 는 **NULL**, 형식 문자열에 잘못 된 문자가 서식 지정 또는로 잘못 된 매개 변수 처리기를 호출 하는 이러한 함수 에 설명 된 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된, 하는 경우 이러한 함수가-1을 반환 하 고 설정 **errno** 를 **EINVAL**합니다.
+또한 같은 **_cprintf_s** 하 고 **_cwprintf_s**, 입력된 포인터 및 서식 문자열의 유효성을 검사 합니다. 하는 경우 *형식* 또는 *인수* 됩니다 **NULL**, 또는 형식 문자열에 잘못 된 문자가 서식 지정, 이러한 함수는으로 잘못 된 매개 변수 처리기를 호출 합니다. 설명한 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수가-1를 반환 하는 설정 **errno** 하 **EINVAL**합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -127,7 +117,7 @@ int _cwprintf_p_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_cprintf_p**, **_cprintf_p_l**|\<conio.h>|
 |**_cwprintf_p**, **_cwprintf_p_l**|\<conio.h>|

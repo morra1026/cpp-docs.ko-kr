@@ -1,28 +1,17 @@
 ---
-title: 새 &lt;장치&gt; 이미지 형식 대화 상자 (c + +) (아이콘에 대 한 이미지 편집기) | Microsoft Docs
-ms.custom: ''
+title: 새 &lt;장치&gt; 이미지 형식 대화 상자 (c + +) (아이콘에 대 한 이미지 편집기)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.newimagetype
-dev_langs:
-- C++
 helpviewer_keywords:
 - New <Device> Image Type dialog box [C++]
 ms.assetid: 9c1344f5-dea0-42cd-9042-b13032f72be2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 81a5c4cac614f70aa422e56a3c1c61fa2b6bd24e
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 3e1505013edd211a3d838bdfcc957877d767bb18
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861917"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50583861"
 ---
 # <a name="new-ltdevicegt-image-type-dialog-box-c-image-editor-for-icons"></a>새 &lt;장치&gt; 이미지 형식 대화 상자 (c + +) (아이콘에 대 한 이미지 편집기)
 

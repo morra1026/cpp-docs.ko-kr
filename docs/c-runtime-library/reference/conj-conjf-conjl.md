@@ -1,11 +1,6 @@
 ---
-title: conj, conjf, conjl | Microsoft 문서
-ms.custom: ''
+title: conj, conjf, conjl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - conj
 - conjf
@@ -30,23 +25,17 @@ f1_keywords:
 - complex/conj
 - complex/conjf
 - complex/conjl
-dev_langs:
-- C++
 helpviewer_keywords:
 - conj function
 - conjf function
 - conjl function
 ms.assetid: 792fccfa-19c6-4890-99f9-a3b89effccd6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cb91b566c499ba9f34c7c67c9cdc24d67924601d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 57ed5e8570a3a2467bf7080524db9d1bef618091
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394323"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579961"
 ---
 # <a name="conj-conjf-conjl"></a>conj, conjf, conjl
 
@@ -79,17 +68,17 @@ _Lcomplex conjl(
 
 ## <a name="return-value"></a>반환 값
 
-복소수의 켤레 *z*합니다.  결과 동일한 실수 및 허수 부분으로 *z*, 같지만 부호가 다른 합니다.
+켤레 복소수입니다 *z*입니다.  결과으로 동일한 실수 및 허수 부분 *z*, 하지만 부호가 반대입니다.
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **conj** 사용 하 고 반환 **_Fcomplex** 및 **_Lcomplex** 값입니다. C 프로그램에서 **conj** 항상 사용 하 고 반환 된 **_Dcomplex** 값입니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **conj** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **conj** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|C 헤더|C++ 헤더|
+|루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**conj**, **conjf**, **conjl**|\<complex.h>|\<ccomplex>|
+|**conj**하십시오 **conjf**, **conjl**|\<complex.h>|\<ccomplex>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

@@ -1,20 +1,13 @@
 ---
-title: 예외 (C + + /cli CX) | Microsoft Docs
-ms.custom: ''
+title: 예외(C++/CX)
 ms.date: 01/18/2018
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: 6cbdc1f1-e4d7-4707-a670-86365146432f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7e7514fdfc07fcbb4a1fff42d80fd138ab7d6043
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 7134cbb9e90f0355a3b2a912330027cf73876443
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100250"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471703"
 ---
 # <a name="exceptions-ccx"></a>예외(C++/CX)
 
@@ -22,7 +15,7 @@ ms.locfileid: "44100250"
 
 ## <a name="exceptions"></a>예외
 
-C + + 프로그램에서 throw 하는 Windows 런타임 작업에서 제공 되는 예외에서 파생 되는 예외를 catch `std::exception`, 또는 사용자 정의 형식입니다. 이 응용 프로그램 이진 ABI (인터페이스) 경계를 넘는 예를 들어 JavaScript에서 예외를 catch 하는 코드를 작성 하는 경우 경우에 Windows 런타임 예외를 throw 해야 합니다. 예외는 변환 비-Windows 런타임 c + + 예외가 ABI 경계에 도달 하면를 `Platform::FailureException` 예외가 E_FAIL HRESULT를 나타내는 예외입니다. ABI에 대 한 자세한 내용은 참조 하세요. [Creating Windows Runtime Components in c + +](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)합니다.
+C + + 프로그램에서 throw 하는 Windows 런타임 작업에서 제공 되는 예외에서 파생 되는 예외를 catch `std::exception`, 또는 사용자 정의 형식입니다. 이 응용 프로그램 이진 ABI (인터페이스) 경계를 넘는 예를 들어 JavaScript에서 예외를 catch 하는 코드를 작성 하는 경우 경우에 Windows 런타임 예외를 throw 해야 합니다. 예외는 변환 비-Windows 런타임 c + + 예외가 ABI 경계에 도달 하면를 `Platform::FailureException` 예외가 E_FAIL HRESULT를 나타내는 예외입니다. ABI에 대한 자세한 내용은 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)를 참조하세요.
 
 선언할 수 있습니다는 [platform:: exception](platform-exception-class.md) HRESULT 매개 변수 또는 HRESULT 매개 변수를 사용 하는 두 생성자 중 하나를 사용 하 여와 [platform:: string](platform-string-class.md)^ 간에 전달 될 수 있는 매개 변수는 처리 하는 모든 Windows 런타임 앱으로 할 ABI입니다. HRESULT 매개 변수 또는 HRESULT 매개 변수와 [매개 변수를 사용하는 두](platform-exception-class.md#createexception) Exception::CreateException 메서드 `Platform::String^` 오버로드 중 하나를 사용하여 예외를 선언할 수도 있습니다.
 
@@ -66,11 +59,11 @@ C + + /cli CX는 일반적인 HRESULT 오류를 나타내는 표준 예외 집�
 
 [!code-cpp[cx_exceptions#02](codesnippet/CPP/exceptiontest/class1.cpp#02)]
 
-비동기 작업 중에 throw 되는 예외를 catch 하려면 작업 클래스를 사용 하 고 오류 처리 연속을 추가 합니다. 오류 처리 연속은 다른 스레드에서 throw된 예외를 다시 호출 스레드로 마샬링하므로 모든 잠재적 예외를 코드의 한 지점에서 처리할 수 있습니다. 자세한 내용은 [c + +의 비동기 프로그래밍](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps)합니다.
+비동기 작업 중에 throw 되는 예외를 catch 하려면 작업 클래스를 사용 하 고 오류 처리 연속을 추가 합니다. 오류 처리 연속은 다른 스레드에서 throw된 예외를 다시 호출 스레드로 마샬링하므로 모든 잠재적 예외를 코드의 한 지점에서 처리할 수 있습니다. 자세한 내용은 [C++의 비동기 프로그래밍](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps)을 참조하세요.
 
 ## <a name="unhandlederrordetected-event"></a>UnhandledErrorDetected 이벤트
 
-Windows 8.1 구독할 수 있습니다 합니다 [:: unhandlederrordetected](/uwp/api/windows.applicationmodel.core.icoreapplicationunhandlederror#Windows_ApplicationModel_Core_ICoreApplicationUnhandledError_UnhandledErrorDetected) 프로세스를 종료 하려고 합니다. 처리 되지 않은 오류에 대 한 액세스를 제공 하는 정적 이벤트를 합니다. 이 처리기에 오류가 발생 한 위치에 관계 없이 도달할를 [Windows::ApplicationModel::Core::UnhandledError](/uwp/api/windows.applicationmodel.core.unhandlederror) 이벤트 인수를 사용 하 여 전달 되는 개체입니다. 개체에서 `Propagate` 를 호출하면 해당 개체가 오류 코드에 해당하는 형식의 `Platform::*Exception` 을 만들고 throw합니다. Catch 블록에서는 필요한 경우 사용자 상태를 저장할 수 있으며, 그런 다음 `throw`를 호출하여 프로세스가 종료되도록 허용하거나 프로그램을 알려진 상태로 되돌리기 위한 작업을 수행합니다. 다음 예제에서는 기본 패턴을 보여 줍니다.
+Windows 8.1 구독할 수 있습니다 합니다 [:: unhandlederrordetected](/uwp/api/windows.applicationmodel.core.icoreapplicationunhandlederror#Windows_ApplicationModel_Core_ICoreApplicationUnhandledError_UnhandledErrorDetected) 프로세스를 종료 하려고 합니다. 처리 되지 않은 오류에 대 한 액세스를 제공 하는 정적 이벤트를 합니다. 오류가 발생한 위치와 관계없이 이벤트 인수와 함께 전달되는 [Windows::ApplicationModel::Core::UnhandledError](/uwp/api/windows.applicationmodel.core.unhandlederror) 개체로 이 처리기에 수신됩니다. 개체에서 `Propagate` 를 호출하면 해당 개체가 오류 코드에 해당하는 형식의 `Platform::*Exception` 을 만들고 throw합니다. Catch 블록에서는 필요한 경우 사용자 상태를 저장할 수 있으며, 그런 다음 `throw`를 호출하여 프로세스가 종료되도록 허용하거나 프로그램을 알려진 상태로 되돌리기 위한 작업을 수행합니다. 다음 예제에서는 기본 패턴을 보여 줍니다.
 
 app.xaml.h:
 

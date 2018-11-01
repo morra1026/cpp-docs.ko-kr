@@ -1,35 +1,25 @@
 ---
-title: Typelib 마법사에서 클래스를 추가 합니다. | Microsoft Docs
-ms.custom: ''
+title: Typelib에서 클래스 추가 마법사
 ms.date: 10/03/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.codewiz.class.typelib
-dev_langs:
-- C++
 helpviewer_keywords:
 - Add Class from TypeLib Wizard [MFC]
 - COM interfaces, adding classes
 ms.assetid: 96152afd-9374-4649-a6ab-b0fa2a5592a3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0a54948fd98b5a5445aa1fdfafcf0fcd015bbf08
-ms.sourcegitcommit: d1527eb2d50156bf923f2a32ec3af9efc7fc4304
+ms.openlocfilehash: c0423ac06aa46b65c1fb0ffb3935d4bb54821ee9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48250382"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50654339"
 ---
 # <a name="add-class-from-typelib-wizard"></a>Typelib에서 클래스 추가 마법사
 
 이 마법사를 사용 하 여 사용 가능한 형식 라이브러리에서 MFC 클래스를 추가 합니다. 마법사는 선택한 형식 라이브러리에서 추가한 각 인터페이스에 대 한 클래스를 만듭니다.
 
 > [!WARNING]
-> Visual Studio 2017 버전 15.9에서에서이 코드 마법사는 사용 되지 않으며 Visual Studio의 이후 버전에서 제거 됩니다. 이 마법사는 거의 사용 되었습니다. 이 마법사를 제거 하 여 ATL 및 MFC에 대 한 일반 지원을 받지 않습니다. 이 사용 중단에 대 한 의견을 공유 하려는 경우를 완료 하십시오 [이 설문 조사](https://www.surveymonkey.com/r/QDWKKCN)합니다. 여러분의 의견을 중요합니다.
+> Visual Studio 2017 버전 15.9에서 이 코드 마법사는 더 이상 사용되지 않으므로 Visual Studio의 이후 버전에서 제거됩니다. 이 마법사는 거의 사용되지 않습니다. 이 마법사가 제거되더라도 ATL 및 MFC에 대한 일반 지원은 그대로 유지됩니다. 이 지원 중단에 대한 의견을 공유하려면 [이 설문 조사](https://www.surveymonkey.com/r/QDWKKCN)를 완료하세요. 여러분의 의견은 소중합니다.
 
 - **클래스를 추가 합니다.**
 
@@ -69,7 +59,7 @@ ms.locfileid: "48250382"
 
 - **클래스**
 
-   **마침**을 클릭하면 마법사에서 추가하는 **생성된 클래스** 상자에서 선택한 클래스의 이름을 지정합니다. 이름을 편집할 수는 **클래스** 상자입니다.
+   **마침**을 클릭하면 마법사에서 추가하는 **생성된 클래스** 상자에서 선택한 클래스의 이름을 지정합니다. **클래스** 상자에서 이름을 편집할 수 있습니다.
 
 - **파일**
 

@@ -1,10 +1,6 @@
 ---
-title: difftime, _difftime32, _difftime64 | Microsoft 문서
-ms.custom: ''
+title: difftime, _difftime32, _difftime64
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _difftime32
 - difftime
@@ -28,8 +24,6 @@ f1_keywords:
 - difftime64
 - _difftime32
 - difftime32
-dev_langs:
-- C++
 helpviewer_keywords:
 - _difftime32 function
 - difftime function
@@ -38,16 +32,12 @@ helpviewer_keywords:
 - _difftime64 function
 - difftime32 function
 ms.assetid: 4cc0ac2b-fc7b-42c0-8283-8c9d10c566d0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a972a8f7ee2cc5e97c22afeaa21f86e4b4d6d509
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: eefa946f0458f79950b443c0a84272866845df8d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398723"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50505952"
 ---
 # <a name="difftime-difftime32-difftime64"></a>difftime, _difftime32, _difftime64
 
@@ -71,21 +61,21 @@ double _difftime64( __time64_t timeEnd, __time64_t timeStart );
 
 ## <a name="return-value"></a>반환 값
 
-**difftime** 에서 경과 된 시간 (초)을 반환 *timeStart* 를 *시간 종료*합니다. 반환되는 값은 배정밀도 부동 소수점 숫자입니다. 반환 값은 오류를 나타내는 0일 수 있습니다.
+**difftime** 경과 된 시간에서 초 반환 *timeStart* 하려면 *시간 종료*합니다. 반환되는 값은 배정밀도 부동 소수점 숫자입니다. 반환 값은 오류를 나타내는 0일 수 있습니다.
 
 ## <a name="remarks"></a>설명
 
-**difftime** 두 제공 된 시간 값 사이의 차이 계산 하는 함수 *timeStart* 및 *시간 종료*합니다.
+합니다 **difftime** 두 제공 된 시간 값 사이의 차이 계산 하는 함수 *timeStart* 하 고 *시간 종료*합니다.
 
-제공 된 시간 값의 범위 내에 맞아야 합니다. **time_t**합니다. **time_t** 64 비트 값입니다. 따라서 범위의 끝은 2038년 1월 18일 23:59:59(UTC)에서 3000년 12월 31일 23:59:59로 확장되었습니다. 낮은 범위 **time_t** 는 여전히 1970 년 1 월 1 일 자정입니다.
+제공 된 시간 값의 범위 내에 담겨 야 **time_t**합니다. **time_t** 64 비트 값입니다. 따라서 범위의 끝은 2038년 1월 18일 23:59:59(UTC)에서 3000년 12월 31일 23:59:59로 확장되었습니다. 더 낮은 범위의 **time_t** 는 계속 1970 년 1 월 1 일 자정입니다.
 
-**difftime** 로 계산 되는 인라인 함수 이며 **_difftime32** 또는 **_difftime64** 인지 여부에 따라 **_USE_32BIT_TIME_T** 정의 됩니다. _difftime32 및 _difftime64는 시간 형식의 특정 크기를 강제로 사용하도록 직접 사용될 수 있습니다.
+**difftime** 로 계산 되는 인라인 함수 이며 **_difftime32** 하거나 **_difftime64** 여부에 따라 **_USE_32BIT_TIME_T** 정의 됩니다. _difftime32 및 _difftime64는 시간 형식의 특정 크기를 강제로 사용하도록 직접 사용될 수 있습니다.
 
-이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 매개 변수가 0 또는 음수인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 이러한 함수 실행을 계속 허용 된, 0을 반환 하 고 설정 **errno** 를 **EINVAL**합니다.
+이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 매개 변수가 0 또는 음수인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 이러한 함수 실행을 계속 수 하는 경우 0을 반환 하 고 설정 **errno** 하 **EINVAL**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**difftime**|\<time.h>|
 |**_difftime32**|\<time.h>|

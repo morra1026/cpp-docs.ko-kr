@@ -1,10 +1,6 @@
 ---
-title: pow, powf, powl | Microsoft Docs
-ms.custom: ''
+title: pow, powf, powl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - powl
 - pow
@@ -27,8 +23,6 @@ f1_keywords:
 - pow
 - _powl
 - powf
-dev_langs:
-- C++
 helpviewer_keywords:
 - exponential calculations
 - powl function
@@ -39,20 +33,16 @@ helpviewer_keywords:
 - powf function
 - pow function
 ms.assetid: e75c33ed-2e59-48b1-be40-81da917324f1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5daf7348198cb6f3ba0186eb4586b2486548f6f5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: edf6116413caba52f9311f03bdfcc1d87e68a011
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403832"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452013"
 ---
 # <a name="pow-powf-powl"></a>pow, powf, powl
 
-계산 *x* 의 거듭제곱을 *y*합니다.
+계산 *x* 의 거듭제곱 *y*합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -90,19 +80,19 @@ long double pow( long double x, int y );  // C++ only
 
 ## <a name="remarks"></a>설명
 
-**pow** 2 보다 큰 정수 부동 소수점 값을 인식 하지 않으므로<sup>64</sup> (예를 들어 1.0E100).
+**pow** 2 자리 보다 큰 정수 부동 소수점 값을 인식 하지 못하는<sup>64</sup> (예를 들어 1.0E100).
 
-**pow** 스트리밍 SIMD 확장명 2 (SSE2)를 사용 하는 구현 합니다. SSE2 구현의 사용 제한 사항 및 그 사용 방법에 대한 자세한 내용은 [_set_SSE2_enable](set-sse2-enable.md)을 참조하세요.
+**pow** sse2(스트리밍 SIMD 확장 2 ()를 사용 하는 구현 합니다. SSE2 구현의 사용 제한 사항 및 그 사용 방법에 대한 자세한 내용은 [_set_SSE2_enable](set-sse2-enable.md)을 참조하세요.
 
-C + +에서는 오버 로드를 허용 하므로 다양 한 오버 로드 중 하나를 호출할 수 있습니다 **pow**합니다. C 프로그램에서 **pow** 항상는 두 가지 **double** 값을 반환는 **double** 값입니다.
+C + +에서는 오버 로드 하므로 다양 한 오버 로드 중 하나를 호출할 수 있습니다 **pow**합니다. C 프로그램에서 **pow** 는 항상 두 가지 **double** 값 및 반환을 **double** 값입니다.
 
-`pow(int, int)` 오버로드는 더 이상 사용할 수 없습니다. 이 오버 로드를 사용 하는 경우 컴파일러를 내보낼 수 [C2668](../../error-messages/compiler-errors-2/compiler-error-c2668.md)합니다. 이 문제를 방지 하려면 첫 번째 매개 변수를 캐스팅 **double**, **float**, 또는 **긴** **double**합니다.
+`pow(int, int)` 오버로드는 더 이상 사용할 수 없습니다. 이 오버 로드를 사용 하는 경우 컴파일러가 내보낼 수 있습니다 [C2668](../../error-messages/compiler-errors-2/compiler-error-c2668.md)합니다. 이 문제를 방지 하려면 첫 번째 매개 변수를 캐스팅 **이중**를 **float**, 또는 **긴** **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더(C)|필수 헤더(C++)|
+|루틴에서 반환된 값|필수 헤더(C)|필수 헤더(C++)|
 |-|-|-|
-|**pow**, **powf**, **powl**|\<math.h>|\<math.h> 또는 \<cmath>|
+|**pow**하십시오 **powf**, **powl**|\<math.h>|\<math.h> 또는 \<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

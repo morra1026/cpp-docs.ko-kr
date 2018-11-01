@@ -1,10 +1,6 @@
 ---
-title: wcrtomb_s | Microsoft Docs
-ms.custom: ''
+title: wcrtomb_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - wcrtomb_s
 apilocation:
@@ -22,24 +18,18 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - wcrtomb_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - wide characters, converting
 - wcrtomb_s function
 - multibyte characters
 - characters, converting
 ms.assetid: 9a8a1bd0-1d60-463d-a3a2-d83525eaf656
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a035010c2af49c0d12b4b7f1d6429c66ba9032cc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7fe7fba861eecec562928cf381973f62a4db60fb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415610"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522466"
 ---
 # <a name="wcrtombs"></a>wcrtomb_s
 
@@ -73,31 +63,31 @@ errno_t wcrtomb_s(
 멀티바이트로 변환된 결과 문자입니다.
 
 *sizeOfmbchar*<br/>
-크기는 *mbchar* 변수 (바이트)에서입니다.
+크기를 *mbchar* 변수 (바이트)에서입니다.
 
 *wchar*<br/>
 변환할 와이드 문자입니다.
 
 *mbstate*<br/>
-에 대 한 포인터는 **mbstate_t** 개체입니다.
+에 대 한 포인터를 **mbstate_t** 개체입니다.
 
 ## <a name="return-value"></a>반환 값
 
-0 반환 또는 **errno** 값이 오류가 발생 합니다.
+0 반환 합니다 요소나 **errno** 값에 오류가 발생 합니다.
 
 ## <a name="remarks"></a>설명
 
-**wcrtomb_s** 함수 변환에 포함 된 지정 된 변환 상태에서 시작 하 고 와이드 *mbstate*에 포함 된 값에서 *wchar*에 주소를 나타내는 *mbchar*합니다. *pReturnValue* 값 아니지만 변환 하는 바이트 수가 됩니다 이상 **MB_CUR_MAX** 바이트 또는 오류가 발생 한 경우에-1입니다.
+합니다 **wcrtomb_s** 함수에 포함 된 지정한 변환 상태부터 시작 하 여 와이드 문자를 변환 *mbstate*, 포함 된 값에서 *wchar*에 주소를 나타내는 *mbchar*합니다. 합니다 *pReturnValue* 값 이지만 변환 된 바이트의 수 둘 **MB_CUR_MAX** 바이트 또는 오류가 발생 한 경우에-1입니다.
 
-경우 *mbstate* 매개 변수가 null 이면 내부 **mbstate_t** 변환 상태를 사용 합니다. 에 있는 문자가 포함 된 경우 *wchar* 해당 멀티 바이트 문자를의 값이 없는 *pReturnValue* 는 함수는 반환 하 고-1이 됩니다는 **errno** 값 **EILSEQ**합니다.
+하는 경우 *mbstate* 이 null 이면 내부 **mbstate_t** 변환 상태가 사용 됩니다. 문자에 포함 된 경우 *wchar* 를 해당 멀티 바이트 문자 값이 없는 *pReturnValue* -1이 됩니다 및 함수는 반환 된 **errno** 값 **EILSEQ**합니다.
 
-**wcrtomb_s** 함수에서와 다른 [wctomb_s, _wctomb_s_l](wctomb-s-wctomb-s-l.md) 다시 시작할 합니다. 변환 상태에 저장 됩니다 *mbstate* 같거나 다른 다시 시작 가능 함수에 대 한 후속 호출에 대 한 합니다. 다시 시작할 수 있는 함수와 다시 시작할 수 없는 함수를 함께 사용할 때는 결과가 정의되지 않습니다. 예를 들어 응용 프로그램 사용 **wcsrlen** 대신 **wcslen**후속 호출 하는 경우, **wcsrtombs_s** 대신 사용한 **wcstombs_s**.
+합니다 **wcrtomb_s** 함수에서 다른 [wctomb_s, _wctomb_s_l](wctomb-s-wctomb-s-l.md) 해당 다시 시작할 수 있다는입니다. 변환 상태에 저장 됩니다 *mbstate* 같거나 다른 다시 시작 가능 함수에 대 한 후속 호출에 대 한 합니다. 다시 시작할 수 있는 함수와 다시 시작할 수 없는 함수를 함께 사용할 때는 결과가 정의되지 않습니다. 예를 들어, 응용 프로그램 사용 **wcsrlen** 대신 **wcslen**경우에 대 한 후속 호출 **wcsrtombs_s** 대신 사용한 **wcstombs_s**.
 
 C++에서는 템플릿 오버로드로 인해 이러한 함수를 간편하게 사용할 수 있습니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
 ## <a name="exceptions"></a>예외
 
-**wcrtomb_s** 함수는 현재 스레드의 호출 함수는 아니면 다중 스레드로부터 안전 **setlocale** 이 함수를 실행 중일 때와 *mbstate* null입니다.
+**wcrtomb_s** 현재 스레드의 함수가 호출 함수는 다중 스레드 안전 **setlocale** 이 함수가 실행 중인 동안 하며 *mbstate* null입니다.
 
 ## <a name="example"></a>예제
 
@@ -145,7 +135,7 @@ The corresponding wide character "Q" was converted to a the "Q" multibyte charac
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**wcrtomb_s**|\<wchar.h>|
 

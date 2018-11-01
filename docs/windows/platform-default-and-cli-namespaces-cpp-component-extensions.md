@@ -1,30 +1,20 @@
 ---
-title: Platform, default 및 cli 네임 스페이스 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
-ms.custom: ''
+title: Platform, default 및 cli 네임 스페이스 (C + + /cli 및 C + + /cli CX)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - lang
 - cli
-dev_langs:
-- C++
 helpviewer_keywords:
 - lang namespace
 - cli namespace
 ms.assetid: 9d38bd1e-dc78-47d1-a84b-9b4683e52c9c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: a70fb5317f42e98ccddb21fe66e328e1cc6f7643
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: fb7c9135051d790a488775451e1d333ce69d3dda
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328027"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50598006"
 ---
 # <a name="platform-default-and-cli-namespaces--ccli-and-ccx"></a>Platform, default 및 cli 네임 스페이스 (C + + /cli 및 C + + /cli CX)
 
@@ -90,4 +80,4 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

@@ -1,27 +1,17 @@
 ---
-title: '연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (c + +) | Microsoft Docs'
+title: '연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (c + +)'
 ms.custom: get-started-article
 ms.date: 09/18/2018
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 0b50234efa193adda081520667658f57e42de1b4
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: fc2080470e3292a459325679a6c5dc00c01d6b35
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235423"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528380"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (c + +)
 
@@ -142,7 +132,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
    이 함수를 처리 하는 코드 작성 *메시지* Windows에서 응용 프로그램에서 받는 경우 *이벤트* 발생 합니다. 사용자는 응용 프로그램에서 확인 단추를 선택 하면 Windows 메시지를 보냅니다 하 고 내 코드를 작성할 수 있습니다 예를 들어 프로그램 `WndProc` 적합 한 모든 작업을 수행 하는 함수입니다. 라고 *처리* 이벤트입니다. 응용 프로그램에 대 한 관련 된 이벤트를 처리 합니다.
 
-   자세한 내용은 [창 프로시저](https://msdn.microsoft.com/library/windows/desktop/ms632593)합니다.
+   자세한 내용은 [창 프로시저](https://msdn.microsoft.com/library/windows/desktop/ms632593)를 참조하세요.
 
 ### <a name="to-add-functionality-to-the-winmain-function"></a>WinMain 함수에 기능을 추가하려면
 
@@ -167,7 +157,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
    위의 구조의 필드에 대 한 정보를 참조 하세요 [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577)합니다.
 
-1. 등록 된 `WNDCLASSEX` 한다는 창 및 메시지를 보내는 방법에 대 한 알 수 있도록 Windows를 사용 하 여 합니다. 사용 된 [RegisterClassEx](https://msdn.microsoft.com/library/windows/desktop/ms633587) 함수 및 창 클래스 구조를 인수로 전달 합니다. `_T` 매크로 사용 하기 때문에 사용 되는 `TCHAR` 형식.
+1. 등록 된 `WNDCLASSEX` 한다는 창 및 메시지를 보내는 방법에 대 한 알 수 있도록 Windows를 사용 하 여 합니다. [RegisterClassEx](https://msdn.microsoft.com/library/windows/desktop/ms633587) 함수를 사용하고 창 클래스 구조를 인수로 전달합니다. `_T` 매크로 사용 하기 때문에 사용 되는 `TCHAR` 형식.
 
    ```cpp
    if (!RegisterClassEx(&wcex))
@@ -181,7 +171,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    }
    ```
 
-1. 이제 창을 만들 수 있습니다. 사용 된 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) 함수입니다.
+1. 이제 창을 만들 수 있습니다. [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) 함수를 사용합니다.
 
    ```cpp
    static TCHAR szWindowClass[] = _T("DesktopApp");
@@ -219,7 +209,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    }
    ```
 
-   이 함수는 반환을 `HWND`, 창에 대 한 핸들 인 합니다. 핸들은 다소 열려 있는 창을 추적 하기 위해 Windows를 사용 하는 포인터입니다. 자세한 내용은 [Windows 데이터 형식](/windows/desktop/WinProg/windows-data-types)합니다.
+   이 함수는 반환을 `HWND`, 창에 대 한 핸들 인 합니다. 핸들은 다소 열려 있는 창을 추적 하기 위해 Windows를 사용 하는 포인터입니다. 자세한 내용은 [Windows 데이터 형식](/windows/desktop/WinProg/windows-data-types)을 참조하세요.
 
 1. 이 시점에서 창, 만들어졌지만 표시 되도록 Windows 알 필요가 있습니다. 다음과 같습니다.이 코드의 용도
 
@@ -247,7 +237,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    return (int) msg.wParam;
    ```
 
-   구조 및 메시지 루프의 함수에 대 한 자세한 내용은 참조 하세요. [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958)를 [GetMessage](https://msdn.microsoft.com/library/windows/desktop/ms644936)합니다 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage), 및 [DispatchMessage ](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).
+   메시지 루프의 구조 및 함수에 대한 자세한 내용은 [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958), [GetMessage](https://msdn.microsoft.com/library/windows/desktop/ms644936), [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage)및 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage)를 참조하세요.
 
    이때 `WinMain` 함수는 다음 코드와 유사합니다.
 
@@ -342,7 +332,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
    하나의 중요 한 메시지를 처리 하는 합니다 [WM_PAINT](/windows/desktop/gdi/wm-paint) 메시지입니다. 응용 프로그램이 수신 된 `WM_PAINT` 표시 된 창에 메시지를 업데이트 해야 합니다. 응용 프로그램에 이러한 이벤트가 발생할 때 알 수 없습니다 및 사용자 창을 이동 하 여 사용자의 창 앞에 다음 이동 위치로 다시 이벤트가 발생할 수 있습니다. Windows만 알고 사용 하 여 알려 하므로 `WM_PAINT`합니다. 창이 처음 표시 되 면 모두 업데이트 되어야 합니다.
 
-   처리 하는 `WM_PAINT` 메시지를 첫 번째 호출 [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint)고, 텍스트, 단추 및 창에서 다른 컨트롤의 레이아웃에 모든 논리를 처리 하는 다음 호출 하 [EndPaint](/windows/desktop/api/winuser/nf-winuser-endpaint)합니다. 응용 프로그램에 대 한 시작 호출과 종료 호출 간의 논리 "Hello, Windows desktop!" 문자열을 표시 하는 것입니다. 다음 코드를 알 수 있듯이 [TextOut](/windows/desktop/api/wingdi/nf-wingdi-textouta) 함수를 사용 하는 문자열을 표시 합니다.
+   `WM_PAINT` 메시지를 처리하려면 먼저 [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint)를 호출하고, 모든 논리를 처리하여 창에 텍스트, 단추 및 기타 컨트롤을 배치하고, [EndPaint](/windows/desktop/api/winuser/nf-winuser-endpaint)를 호출합니다. 응용 프로그램에 대 한 시작 호출과 종료 호출 간의 논리 "Hello, Windows desktop!" 문자열을 표시 하는 것입니다. 다음 코드에서 [TextOut](/windows/desktop/api/wingdi/nf-wingdi-textouta) 함수는 문자열을 표시하는 데 사용됩니다.
 
    ```cpp
    PAINTSTRUCT ps;

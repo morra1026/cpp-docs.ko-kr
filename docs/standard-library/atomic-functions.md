@@ -1,8 +1,6 @@
 ---
-title: '&lt;atomic&gt; 함수 | Microsoft 문서'
-ms.custom: ''
+title: '&lt;atomic&gt; 함수'
 ms.date: 07/11/2018
-ms.topic: reference
 f1_keywords:
 - atomic/std::atomic_compare_exchange_strong
 - atomic/std::atomic_compare_exchange_strong_explicit
@@ -34,8 +32,6 @@ f1_keywords:
 - atomic/std::atomic_thread_fence
 - atomic/std::kill_dependency
 ms.assetid: 5c53b4f8-6ff5-47d7-beb2-2d6ee3c6ea89
-author: mikeblome
-ms.author: mblome
 helpviewer_keywords:
 - std::atomic_compare_exchange_strong [C++]
 - std::atomic_compare_exchange_strong_explicit [C++]
@@ -66,14 +62,12 @@ helpviewer_keywords:
 - std::atomic_store_explicit [C++]
 - std::atomic_thread_fence [C++]
 - std::kill_dependency [C++]
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c00f66eef11d2d26bbcaa07110e9d9e738fc7c2f
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 6ec4ff879b70e4d2cc16a3328217660db695e859
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110164"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533759"
 ---
 # <a name="ltatomicgt-functions"></a>&lt;atomic&gt; 함수
 
@@ -116,7 +110,7 @@ inline bool atomic_compare_exchange_strong(
 *Exp*<br/>
 `Ty` 형식의 값에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `Ty` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -157,7 +151,7 @@ inline bool atomic_compare_exchange_strong_explicit(
 *Exp*<br/>
 `Ty` 형식의 값에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `Ty` 형식의 값입니다.
 
 *(Diffgr:id="order1*<br/>
@@ -200,7 +194,7 @@ inline bool atomic_compare_exchange_strong(
 *Exp*<br/>
 `Ty` 형식의 값에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `Ty` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -241,7 +235,7 @@ inline bool atomic_compare_exchange_weak_explicit(
 *Exp*<br/>
 `Ty` 형식의 값에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `Ty` 형식의 값입니다.
 
 *(Diffgr:id="order1*<br/>
@@ -275,7 +269,7 @@ inline T atomic_exchange(atomic<Ty>* Atom, Ty Value) noexcept;
 *Atom*<br/>
 `Ty` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `Ty` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -309,7 +303,7 @@ inline Ty atomic_exchange_explicit(
 *Atom*<br/>
 `Ty` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `Ty` 형식의 값입니다.
 
 *순서*<br/>
@@ -339,7 +333,7 @@ T* atomic_fetch_add(atomic<T*>* Atom, ptrdiff_t Value) noexcept;
 *Atom*<br/>
 `T` 형식에 대한 포인터를 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `ptrdiff_t` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -383,7 +377,7 @@ T* atomic_fetch_add_explicit(
 *Atom*<br/>
 `T` 형식에 대한 포인터를 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `ptrdiff_t` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -426,7 +420,7 @@ inline T atomic_fetch_and(volatile atomic<T>* Atom, T Value) noexcept;
 *Atom*<br/>
 `T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `T` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -460,7 +454,7 @@ inline T atomic_fetch_and_explicit(
 *Atom*<br/>
 `T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `T` 형식의 값입니다.
 
 *순서*<br/>
@@ -490,7 +484,7 @@ inline T atomic_fetch_or (volatile atomic<T>* Atom, T Value) noexcept;
 *Atom*<br/>
 `T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `T` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -524,7 +518,7 @@ inline T atomic_fetch_or_explicit(
 *Atom*<br/>
 `T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `T` 형식의 값입니다.
 
 *순서*<br/>
@@ -559,7 +553,7 @@ T* atomic_fetch_sub(
 *Atom*<br/>
 `T` 형식에 대한 포인터를 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `ptrdiff_t` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -601,7 +595,7 @@ T* atomic_fetch_sub_explicit(
 *Atom*<br/>
 `T` 형식에 대한 포인터를 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `ptrdiff_t` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -645,7 +639,7 @@ inline T atomic_fetch_xor(volatile atomic<T>* Atom, T Value) noexcept;
 *Atom*<br/>
 `T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `T` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -679,7 +673,7 @@ inline T atomic_fetch_xor_explicit(
 *Atom*<br/>
 `T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `T` 형식의 값입니다.
 
 *순서*<br/>
@@ -779,7 +773,7 @@ inline void atomic_init(atomic<Ty>* Atom, Ty Value) noexcept;
 *Atom*<br/>
 `Ty` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `Ty` 형식의 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -899,7 +893,7 @@ inline Ty atomic_store_explicit(const atomic<Ty>* Atom, T Value) noexcept;
 *Atom*<br/>
 `Ty` 형식의 값을 포함하는 원자 개체에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `Ty` 형식의 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -929,7 +923,7 @@ inline Ty atomic_store_explicit(
 *Atom*<br/>
 `Ty` 형식의 값을 포함하는 `atomic` 개체에 대한 포인터입니다.
 
-*Value*<br/>
+*값*<br/>
 `Ty` 형식의 값입니다.
 
 *순서*<br/>

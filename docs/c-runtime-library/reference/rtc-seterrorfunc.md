@@ -1,10 +1,6 @@
 ---
-title: _RTC_SetErrorFunc | Microsoft Docs
-ms.custom: ''
+title: _RTC_SetErrorFunc
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _RTC_SetErrorFunc
 apilocation:
@@ -22,22 +18,16 @@ apitype: DLLExport
 f1_keywords:
 - RTC_SetErrorFunc
 - _RTC_SetErrorFunc
-dev_langs:
-- C++
 helpviewer_keywords:
 - RTC_SetErrorFunc function
 - _RTC_SetErrorFunc function
 ms.assetid: b2292722-0d83-4092-83df-3d5b19880666
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e146f699f9026260470b1c540c7567f074896a38
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 6b292d685eea8eccb9e9b2a3c3e6cd903d501005
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451617"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514740"
 ---
 # <a name="rtcseterrorfunc"></a>_RTC_SetErrorFunc
 
@@ -58,15 +48,15 @@ _RTC_error_fn _RTC_SetErrorFunc(
 
 ## <a name="return-value"></a>반환 값
 
-이전에 정의된 오류 함수입니다. 이전에 정의 된 함수가 없으면 반환 **NULL**합니다.
+이전에 정의된 오류 함수입니다. 이전에 정의 된 함수가 없는 경우 반환 **NULL**합니다.
 
 ## <a name="remarks"></a>설명
 
-이 함수를 사용 하지 마십시오 대신를 사용 하 여 **_RTC_SetErrorFuncW**합니다. 이전 버전과의 호환성을 위해서만 유지됩니다.
+이 함수를 사용 하지 마십시오 대신 **_RTC_SetErrorFuncW**합니다. 이전 버전과의 호환성을 위해서만 유지됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_RTC_SetErrorFunc**|\<rtcapi.h>|
 

@@ -1,28 +1,17 @@
 ---
-title: propput (c + + COM 특성) | Microsoft Docs
-ms.custom: ''
+title: propput (c + + COM 특성)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
 f1_keywords:
 - vc-attr.propput
-dev_langs:
-- C++
 helpviewer_keywords:
 - propput attribute
 ms.assetid: 1f84dda9-9cce-4e16-aaf0-b2c5219827f2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: d9064a73dcafff8efbaffd50501dd86c2e91a29e
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 1902ba61417be457b4c296b513e1632bfdd8cec6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48792056"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492731"
 ---
 # <a name="propput"></a>propput
 
@@ -53,7 +42,7 @@ ms.locfileid: "48792056"
 |**필수 특성**|없음|
 |**잘못된 특성**|`propget`, `propputref`|
 
-특성 컨텍스트에 대 한 자세한 내용은 참조 하세요. [특성 컨텍스트](cpp-attributes-com-net.md#contexts)합니다.
+특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

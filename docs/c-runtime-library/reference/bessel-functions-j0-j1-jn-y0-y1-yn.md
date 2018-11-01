@@ -1,10 +1,6 @@
 ---
-title: 'Bessel 함수: _j0, _j1, _jn, _y0, _y1, _yn | Microsoft 문서'
-ms.custom: ''
+title: 'Bessel 함수: _j0, _j1, _jn, _y0, _y1, _yn'
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _j0
 - _j1
@@ -33,8 +29,6 @@ f1_keywords:
 - _y0
 - _y1
 - _yn
-dev_langs:
-- C++
 helpviewer_keywords:
 - Bessel functions
 - _j0 function
@@ -44,16 +38,12 @@ helpviewer_keywords:
 - _y1 function
 - _yn function
 ms.assetid: a21a8bf1-df9d-4ba0-a8c2-e7ef71921d96
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cf461a7737ee1f23650ff80f203524c427fb644d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 682eaa99d0be1b959152ff94cc10a86aa68d988d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393604"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531865"
 ---
 # <a name="bessel-functions-j0-j1-jn-y0-y1-yn"></a>Bessel 함수: _j0, _j1, _jn, _y0, _y1, _yn
 
@@ -94,29 +84,29 @@ Bessel 함수의 정수 순서입니다.
 
 ## <a name="return-value"></a>반환 값
 
-Bessel 함수를 반환 하는 이러한 각 루틴 *x*합니다. 경우 *x* 음수는 **_y0**, **_y1**, 또는 **_yn** 함수, 일상적인 집합 **errno** 를 **EDOM**, 인쇄는 **_DOMAIN** 오류 메시지를 **stderr**, 반환 **_HUGE_VAL**합니다. 사용 하 여 오류 처리를 수정할 수 있습니다 **_matherr**합니다.
+Bessel 함수를 반환 하는 이러한 각 루틴 *x*합니다. 경우 *x* 에서 음수인 합니다 **_y0**를 **_y1**, 또는 **_yn** 함수, 루틴 집합 **errno** 를 **EDOM**, 출력을 **(_d)** 오류 메시지를 **stderr**를 반환 합니다 **_HUGE_VAL**합니다. 사용 하 여 오류 처리를 수정할 수 있습니다 **_matherr**합니다.
 
 ## <a name="remarks"></a>설명
 
-**_j0**, **_j1**, 및 **_jn** 루틴 반환 Bessel 함수는 첫 번째 종류의: 각각 0, 1 세대 및 n을 정렬 합니다.
+**_j0**, **_j1**, 및 **_jn** 루틴 반환 Bessel 함수의 첫 번째 종류: 각각 0, 1 및 n을 정렬 합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **IND**|**올바르지 않음**|**_DOMAIN**|
+|**QNAN**, **찾기**|**올바르지 않음**|**(_D)**|
 
-**_y0**, **_y1**, 및 **_yn** 루틴 반환 Bessel 두 번째 종류의 기능: 각각 0, 1 세대 및 n을 정렬 합니다.
+합니다 **_y0**, **_y1**, 및 **_yn** 루틴 반환 Bessel 함수의 두 번째 종류: 각각 0, 1 및 n을 정렬 합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **IND**|**올바르지 않음**|**_DOMAIN**|
+|**QNAN**, **찾기**|**올바르지 않음**|**(_D)**|
 |± 0|**ZERODIVIDE**|**_SING**|
-|&#124;x&#124; < 0.0|**올바르지 않음**|**_DOMAIN**|
+|&#124;x&#124; < 0.0|**올바르지 않음**|**(_D)**|
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**_j0**, **_j1**, **_jn**, **_y0**, **_y1**, **_yn**|\<cmath> (C++), \<math.h> (C, C++)|
+|**_j0**, **_j1**합니다 **_jn**를 **_y0**를 **_y1**, **_yn**|\<cmath> (C++), \<math.h> (C, C++)|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

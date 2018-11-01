@@ -1,10 +1,6 @@
 ---
-title: CMFCPropertySheet 클래스 | Microsoft Docs
-ms.custom: ''
+title: CMFCPropertySheet 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CMFCPropertySheet
 - AFXPROPERTYSHEET/CMFCPropertySheet
@@ -25,8 +21,6 @@ f1_keywords:
 - AFXPROPERTYSHEET/CMFCPropertySheet::RemovePage
 - AFXPROPERTYSHEET/CMFCPropertySheet::SetIconsList
 - AFXPROPERTYSHEET/CMFCPropertySheet::SetLook
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMFCPropertySheet [MFC], CMFCPropertySheet
 - CMFCPropertySheet [MFC], AddPage
@@ -46,16 +40,12 @@ helpviewer_keywords:
 - CMFCPropertySheet [MFC], SetIconsList
 - CMFCPropertySheet [MFC], SetLook
 ms.assetid: 01d93573-9698-440f-a6a4-5bebbee879dc
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f5512f806b5abdee56b2c6eabe45f93545c8788e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8e643474d577c606e80f5f34c6166a59753610f2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46442944"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531614"
 ---
 # <a name="cmfcpropertysheet-class"></a>CMFCPropertySheet 클래스
 
@@ -94,7 +84,7 @@ class CMFCPropertySheet : public CPropertySheet
 |[CMFCPropertySheet::OnDrawPageHeader](#ondrawpageheader)|사용자 지정 속성 페이지 머리글을 그리기 위해 프레임워크에서 호출됩니다.|
 |`CMFCPropertySheet::OnInitDialog`|처리를 [WM_INITDIALOG](/windows/desktop/dlgbox/wm-initdialog) 메시지입니다. (재정의 [cpropertysheet:: Oninitdialog](../../mfc/reference/cpropertysheet-class.md#oninitdialog).)|
 |[CMFCPropertySheet::OnRemoveTreePage](#onremovetreepage)|트리 컨트롤에서 속성 페이지를 제거하기 위해 프레임워크에서 호출됩니다.|
-|`CMFCPropertySheet::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수입니다. (`CPropertySheet::PreTranslateMessage`를 재정의합니다.)|
+|`CMFCPropertySheet::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수입니다. ( `CPropertySheet::PreTranslateMessage`을 재정의합니다.)|
 |[CMFCPropertySheet::RemoveCategory](#removecategory)|트리 컨트롤에서 노드를 제거합니다.|
 |[CMFCPropertySheet::RemovePage](#removepage)|속성 시트에서 속성 페이지를 제거합니다.|
 |[CMFCPropertySheet::SetIconsList](#seticonslist)|Outlook 창의 탐색 컨트롤에서 사용되는 이미지 목록을 지정합니다.|

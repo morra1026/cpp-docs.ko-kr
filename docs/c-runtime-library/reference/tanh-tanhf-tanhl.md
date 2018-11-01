@@ -1,10 +1,6 @@
 ---
-title: tanh, tanhf, tanhl | Microsoft Docs
-ms.custom: ''
+title: tanh, tanhf, tanhl
 ms.date: 04/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - tanh
 - tanhf
@@ -27,8 +23,6 @@ f1_keywords:
 - tanhf
 - tanhl
 - _tanhl
-dev_langs:
-- C++
 helpviewer_keywords:
 - tanhl function
 - _tanhl function
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - tanhf function
 - trigonometric functions
 - hyperbolic functions
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 438c587099edafedbb2cc3feb4b3a285aa155a0d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3b9c7269d3c945301106098fc944383bbc364e5a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408522"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432389"
 ---
 # <a name="tanh-tanhf-tanhl"></a>tanh, tanhf, tanhl
 
@@ -71,7 +61,7 @@ long double tanh( long double x );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-**tanh** 함수의 쌍 곡 탄젠트를 반환할 *x*합니다. 반환되는 오류가 없습니다.
+합니다 **tanh** 의 쌍 곡 탄젠트를 반환 하는 함수 *x*합니다. 반환되는 오류가 없습니다.
 
 |입력|SEH 예외|**Matherr** 예외|
 |-----------|-------------------|-------------------------|
@@ -79,13 +69,13 @@ long double tanh( long double x );  // C++ only
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **tanh** 사용 하 고 반환 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **tanh** 항상 사용 하 고 반환 **double**합니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **tanh** 및 반환 하는 **float** 하거나 **긴** **double** 값입니다. C 프로그램에서 **tanh** 항상 받아서 반환 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더(C)|필수 헤더(C)|
+|루틴에서 반환된 값|필수 헤더(C)|필수 헤더(C)|
 |-------------|---------------------|-|
-|**tanh**, **tanhf**, **tanhl**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**tanh**하십시오 **tanhf**, **tanhl**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

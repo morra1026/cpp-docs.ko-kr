@@ -1,10 +1,6 @@
 ---
-title: fabs, fabsf, fabsl | Microsoft 문서
-ms.custom: ''
+title: fabs, fabsf, fabsl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - fabsf
 - fabs
@@ -29,8 +25,6 @@ f1_keywords:
 - "math\fabs"
 - "math\fabsf"
 - "math\fabsl"
-dev_langs:
-- C++
 helpviewer_keywords:
 - absolute values
 - fabsf function
@@ -38,16 +32,12 @@ helpviewer_keywords:
 - fabs function
 - fabsl function
 ms.assetid: 23bca210-f408-4f5e-b46b-0ccaaec31e36
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e97d8eef45c53c119fef663420ae70b4b4762e3e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8df36c06fb3ca9af9be4cf704998946b3eaf9a6c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395727"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50623563"
 ---
 # <a name="fabs-fabsf-fabsl"></a>fabs, fabsf, fabsl
 
@@ -80,7 +70,7 @@ long double fabsl(
 
 ## <a name="return-value"></a>반환 값
 
-**fabs** 함수 인수의 절대 값을 반환 *x*합니다. 반환되는 오류가 없습니다.
+합니다 **fabs** 함수는 인수의 절대값을 반환 *x*합니다. 반환되는 오류가 없습니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
@@ -88,13 +78,13 @@ long double fabsl(
 
 ## <a name="remarks"></a>설명
 
-C + + 오버 로드의 오버 로드를 호출할 수 있도록 허용 **fabs** 포함 하는 경우는 \<cmath > 헤더입니다. C 프로그램에서 **fabs** 항상 사용 하 고 반환 된 **double**합니다.
+C + +에서는 오버 로드를 허용 하므로 오버 로드를 호출할 수 있습니다 **fabs** 포함 하는 경우는 \<cmath > 헤더입니다. C 프로그램에서 **fabs** 항상 받아서 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 C 헤더|필수 C++ 헤더|
+|기능|필수 C 헤더|필수 C++ 헤더|
 |--------------|-----------------------|---------------------------|
-|**fabs**, **fabsf**, **fabsl**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**fabs**하십시오 **fabsf**, **fabsl**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

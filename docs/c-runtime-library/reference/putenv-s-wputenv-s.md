@@ -1,10 +1,6 @@
 ---
-title: _putenv_s, _wputenv_s | Microsoft Docs
-ms.custom: ''
+title: _putenv_s, _wputenv_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wputenv_s
 - _putenv_s
@@ -26,8 +22,6 @@ f1_keywords:
 - wputenv_s
 - _wputenv_s
 - _putenv_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - wputenv_s function
 - _putenv_s function
@@ -37,16 +31,12 @@ helpviewer_keywords:
 - environment variables, creating
 - environment variables, modifying
 ms.assetid: fbf51225-a8da-4b9b-9d7c-0b84ef72df18
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: de777c05d3b5186966e78b80e6fb1b10221d031a
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: f675c2c0a2b12db3cce841dd0db9fa722393f1b6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42572677"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50558953"
 ---
 # <a name="putenvs-wputenvs"></a>_putenv_s, _wputenv_s
 
@@ -119,7 +109,7 @@ errno_t _wputenv_s(
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 사용 하는 방법을 보여 주는 샘플에 대 한 **_putenv_s**를 참조 하십시오 [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md)합니다.
 

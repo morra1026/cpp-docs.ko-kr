@@ -1,28 +1,18 @@
 ---
-title: 대체 가능 매개 변수 (ATL 등록자)를 사용 하 여 | Microsoft Docs
-ms.custom: ''
+title: 대체 가능 매개 변수 (ATL 등록자)를 사용 하 여
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
 f1_keywords:
 - AddReplacement
 - ClearReplacements
-dev_langs:
-- C++
 helpviewer_keywords:
 - '%MODULE%'
 ms.assetid: 0b376994-84a6-4967-8d97-8c01dfc94efe
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eddeb6467dfb3bf578c0287161de989e8ba12483
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: c820307ecb0e7fbfe5cce7cd579ff46eb1f3a0f0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46097473"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588190"
 ---
 # <a name="using-replaceable-parameters-the-registrar39s-preprocessor"></a>대체 가능 매개 변수를 사용 하 여 (등록 기관에&#39;s 전처리기)
 

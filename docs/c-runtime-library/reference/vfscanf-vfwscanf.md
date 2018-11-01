@@ -1,10 +1,6 @@
 ---
-title: vfscanf, vfwscanf | Microsoft Docs
-ms.custom: ''
+title: vfscanf, vfwscanf
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - vfwscanf
 - vfscanf
@@ -24,19 +20,13 @@ f1_keywords:
 - vfwscanf
 - _vftscanf
 - vfscanf
-dev_langs:
-- C++
 ms.assetid: c06450ef-03f1-4d24-a8ac-d2dd98847918
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4e4a9c2d36ef8b60eed7b8277c39a8ca7ab998d9
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 39539b712636fd97eb10cadc3f5401ba597fbcde
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42572861"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50444090"
 ---
 # <a name="vfscanf-vfwscanf"></a>vfscanf, vfwscanf
 
@@ -97,7 +87,7 @@ int vfwscanf(
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```C
 // crt_vfscanf.c

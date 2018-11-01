@@ -1,8 +1,6 @@
 ---
-title: '&lt;ios&gt; 형식 정의 | Microsoft 문서'
-ms.custom: ''
+title: '&lt;ios&gt; 형식 정의'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - iosfwd/std::ios
 - iosfwd/std::streamoff
@@ -11,12 +9,12 @@ f1_keywords:
 - iosfwd/std::wios
 - iosfwd/std::wstreampos
 ms.assetid: 0b962632-3439-44de-bf26-20c67a7f0ff3
-ms.openlocfilehash: d79e3361d58165ac356e2ef75c0a3fd1a4cb4f26
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 1f0ff93c22263ca4b35377b5d9af089816e8895a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963643"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537113"
 ---
 # <a name="ltiosgt-typedefs"></a>&lt;ios&gt; 형식 정의
 
@@ -65,7 +63,7 @@ typedef fpos<mbstate_t> streampos;
 
 이 형식은 [fpos](../standard-library/fpos-class.md)< `mbstate_t`>의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_streampos.cpp
@@ -104,7 +102,7 @@ int main( )
 
 이 형식은 다양한 스트림 작업과 관련된 요소의 개수를 저장할 수 있는 개체를 설명하는 부호 있는 정수입니다. 해당 표현에는 16개 이상의 비트가 있습니다. 스트림 내에서 임의의 바이트 위치를 나타낼 만큼 충분히 크지 않아도 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 프로그램을 컴파일하고 실행한 후 test.txt 파일에서 `streamsize` 설정의 결과를 확인합니다.
 
@@ -148,7 +146,7 @@ typedef fpos<mbstate_t> wstreampos;
 
 이 형식은 [fpos](../standard-library/fpos-class.md)< `mbstate_t`>의 동의어입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 ```cpp
 // ios_wstreampos.cpp

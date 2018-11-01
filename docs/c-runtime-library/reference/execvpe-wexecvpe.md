@@ -1,10 +1,6 @@
 ---
-title: _execvpe, _wexecvpe | Microsoft 문서
-ms.custom: ''
+title: _execvpe, _wexecvpe
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _execvpe
 - _wexecvpe
@@ -26,24 +22,18 @@ f1_keywords:
 - execvpe
 - _wexecvpe
 - _execvpe
-dev_langs:
-- C++
 helpviewer_keywords:
 - wexecvpe function
 - execvpe function
 - _wexecvpe function
 - _execvpe function
 ms.assetid: c0c3c986-d9c0-4814-a96c-10f0b3092766
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 97020ba4e1b20bfc95f48eaa1afe6fa111a9b769
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 064f8b94a9a97795015c09c11cd56e0370dcc60c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401232"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431696"
 ---
 # <a name="execvpe-wexecvpe"></a>_execvpe, _wexecvpe
 
@@ -80,7 +70,7 @@ intptr_t _wexecvpe(
 
 ## <a name="return-value"></a>반환 값
 
-성공하면 이러한 함수는 호출 프로세스에 값을 반환하지 않습니다. 반환 값이-1은 오류를 나타내며이 경우는 **errno** 전역 변수가 설정 됩니다.
+성공하면 이러한 함수는 호출 프로세스에 값을 반환하지 않습니다. 반환 값이-1 나타냅니다 오류가 있는 경우에 **errno** 전역 변수가 설정 됩니다.
 
 |**errno** 값|설명|
 |-------------------|-----------------|
@@ -95,13 +85,13 @@ intptr_t _wexecvpe(
 
 ## <a name="remarks"></a>설명
 
-이러한 각 함수는 새 프로세스를 로드 및 실행하고, 명령줄 인수에 대한 포인터 배열 및 환경 설정에 대한 포인터 배열을 전달합니다. 사용 하 여 이러한 함수는 **경로** 환경 변수를 실행할 파일을 찾습니다.
+이러한 각 함수는 새 프로세스를 로드 및 실행하고, 명령줄 인수에 대한 포인터 배열 및 환경 설정에 대한 포인터 배열을 전달합니다. 이러한 함수를 사용 합니다 **경로** 환경 변수를 실행 하려면 파일을 찾습니다.
 
-**_execvpe** 함수는 매개 변수의 유효성을 검사 합니다. 경우는 *cmdname* 가 null 포인터인 경우 또는 *argv* 빈 배열에 대 한 포인터 또는 첫 번째 인수는 빈 문자열이 포함 된 배열에 대 한 포인터, null 포인터 이면 이러한 함수에 잘못 된 호출 에 설명 된 대로 매개 변수 처리기를 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된, 이러한 함수 설정 **errno** 를 **EINVAL** 고-1을 반환 합니다. 프로세스가 시작되지 않습니다.
+합니다 **_execvpe** 함수 매개 변수 유효성을 검사 합니다. 경우는 *cmdname* 가 null 포인터 이거나 *argv* null 포인터, 빈 배열에 대 한 포인터 또는 첫 번째 인수로 빈 문자열이 포함 된 배열에 대 한 포인터 이면 이러한 함수는 잘못 된 호출 에 설명 된 대로 매개 변수 처리기 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL** 고-1을 반환 합니다. 프로세스가 시작되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|선택적 헤더|
+|기능|필수 헤더|선택적 헤더|
 |--------------|---------------------|---------------------|
 |**_execvpe**|\<process.h>|\<errno.h>|
 |**_wexecvpe**|\<process.h> 또는 \<wchar.h>|\<errno.h>|

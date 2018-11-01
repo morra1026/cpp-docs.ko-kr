@@ -1,10 +1,6 @@
 ---
-title: _rotl, _rotl64, _rotr, _rotr64 | Microsoft Docs
-ms.custom: ''
+title: _rotl, _rotl64, _rotr, _rotr64
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _rotr64
 - _rotl
@@ -32,8 +28,6 @@ f1_keywords:
 - _rotr
 - _rotl
 - rotl
-dev_langs:
-- C++
 helpviewer_keywords:
 - rotl64 function
 - _rotl function
@@ -46,20 +40,16 @@ helpviewer_keywords:
 - _rotr64 function
 - bits, rotating
 ms.assetid: cfce439b-366f-4584-8ab1-d527b13fcfc6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a4ec4844c54bef09522191be62599ed79b97eb6c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c8cf61ecd8ffab9433f5c6ad077ddba39401c0e4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406656"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50567416"
 ---
 # <a name="rotl-rotl64-rotr-rotr64"></a>_rotl, _rotl64, _rotr, _rotr64
 
-비트를 왼쪽으로 회전 (**_rotl**) 또는 오른쪽 (**_rotr**).
+비트를 왼쪽 회전 (**_rotl**) 또는 오른쪽 (**_rotr**).
 
 ## <a name="syntax"></a>구문
 
@@ -97,11 +87,11 @@ unsigned __int64 _rotr64(
 
 ## <a name="remarks"></a>설명
 
-**_rotl** 및 **_rotr** 함수는 부호 없는 회전 *값* 여 *shift* 비트입니다. **_rotl** 값을 왼쪽으로 회전 합니다. **_rotr** 은 값을 오른쪽으로 회전 합니다. 두 함수 모두 순환되어 *value*의 한쪽 끝에서 잘린 비트 부분을 다른 쪽 끝에 추가합니다.
+**_rotl** 하 고 **_rotr** 함수는 부호 없는 회전 *값* 하 여 *shift* 비트입니다. **_rotl** 왼쪽 값을 기준으로 회전 합니다. **_rotr** 값 오른쪽 회전 합니다. 두 함수 모두 순환되어 *value*의 한쪽 끝에서 잘린 비트 부분을 다른 쪽 끝에 추가합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_rotl**, **_rotl64**|\<stdlib.h>|
 |**_rotr**, **_rotr64**|\<stdlib.h>|

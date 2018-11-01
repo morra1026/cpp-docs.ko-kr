@@ -1,10 +1,6 @@
 ---
-title: _calloc_dbg | Microsoft 문서
-ms.custom: ''
+title: _calloc_dbg
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _calloc_dbg
 apilocation:
@@ -22,22 +18,16 @@ apitype: DLLExport
 f1_keywords:
 - _calloc_dbg
 - calloc_dbg
-dev_langs:
-- C++
 helpviewer_keywords:
 - _calloc_dbg function
 - calloc_dbg function
 ms.assetid: 7f62c42b-eb9f-4de5-87d0-df57036c87de
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2759c19fb88b820fc346b5cf35e97522b7e74cb6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c525aa2f19b39ba3cb8304c59c96196707ad859c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396773"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50454394"
 ---
 # <a name="callocdbg"></a>_calloc_dbg
 
@@ -57,14 +47,14 @@ void *_calloc_dbg(
 
 ### <a name="parameters"></a>매개 변수
 
-*번호*<br/>
+*수*<br/>
 요청된 메모리 블록 수입니다.
 
 *size*<br/>
 요청된 각 메모리 블록 크기입니다(바이트).
 
 *blockType*<br/>
-요청 된 메모리 블록의 형식: **_CLIENT_BLOCK** 또는 **_NORMAL_BLOCK**합니다.
+요청 된 메모리 블록의 형식: **_CLIENT_BLOCK** 하거나 **_NORMAL_BLOCK**합니다.
 
 할당 블록 형식과 이러한 형식의 사용 방법에 대한 자세한 내용은 [디버그 힙의 블록 형식](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요.
 
@@ -72,9 +62,9 @@ void *_calloc_dbg(
 할당 작업을 요청한 소스 파일의 이름에 대 한 포인터 또는 **NULL**합니다.
 
 *linenumber*<br/>
-할당 작업이 요청 된 소스 파일의 줄 번호 또는 **NULL**합니다.
+할당 작업이 요청 있는 소스 파일의 줄 번호 또는 **NULL**합니다.
 
-*filename* 및 *linenumber* 매개 변수를만 사용할 때 **_calloc_dbg** 명시적으로 호출 되었거나 또는 [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md)전처리기 상수가 정의 된 합니다.
+*filename* 하 고 *linenumber* 매개 변수에 하면 볼 수 있습니다 **_calloc_dbg** 명시적으로 호출 된 또는 [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md)전처리기 상수가 정의 되었습니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -82,7 +72,7 @@ void *_calloc_dbg(
 
 ## <a name="remarks"></a>설명
 
-**_calloc_dbg** 의 디버그 버전이 [calloc](calloc.md) 함수입니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 를 정의 하지 않은를 호출할 때마다 **_calloc_dbg** 에 대 한 호출으로 줄어듭니다 **calloc**합니다. 둘 다 **calloc** 및 **_calloc_dbg** 할당 *번호* 기본 힙에서 메모리 블록 하지만 **_calloc_dbg** 몇 가지 디버깅을 제공 합니다. 기능:
+**_calloc_dbg** 의 디버그 버전이 합니다 [calloc](calloc.md) 함수입니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 를 정의 하지 않은를 호출할 때마다 **_calloc_dbg** 대 한 호출으로 줄어듭니다 **calloc**합니다. 둘 다 **calloc** 및 **_calloc_dbg** 할당 *번호* 기본 힙에서 메모리 블록을 하지만 **_calloc_dbg** 몇 가지 디버깅을 제공 합니다. 기능은 다음과 같습니다.
 
 - 누수를 테스트하기 위해 블록의 사용자 부분 양쪽에서 버퍼 제공.
 
@@ -90,15 +80,15 @@ void *_calloc_dbg(
 
 - *filename*/*linenumber* 정보로 할당 요청의 원점을 확인 하 합니다.
 
-**_calloc_dbg** 각 메모리 블록에는 요청 된 것 보다 약간 더 많은 공간을 할당 *크기*합니다. 디버그 힙 관리자는 추가 공간을 사용하여 디버그 메모리 블록을 연결하고 응용 프로그램에 디버그 헤더 정보를 제공하고 버퍼를 덮어씁니다. 블록이 할당되면 블록의 사용자 부분은 값 0xCD로 채워지고 각 덮어쓰기 버퍼는 0xFD로 채워집니다.
+**_calloc_dbg** 는 요청 된 것 보다 약간 더 많은 공간을 사용 하 여 각 메모리 블록 할당 *크기*합니다. 디버그 힙 관리자는 추가 공간을 사용하여 디버그 메모리 블록을 연결하고 응용 프로그램에 디버그 헤더 정보를 제공하고 버퍼를 덮어씁니다. 블록이 할당되면 블록의 사용자 부분은 값 0xCD로 채워지고 각 덮어쓰기 버퍼는 0xFD로 채워집니다.
 
-**_calloc_dbg** 설정 **errno** 를 **ENOMEM** 메모리 할당에 실패 하면 **EINVAL** (앞에서 언급 한 오버 헤드 포함) 필요한 메모리 양을 초과 하는 경우 반환 되 **_HEAP_MAXREQ**합니다. 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
+**_calloc_dbg** 설정 **errno** 하려면 **ENOMEM** 메모리를 할당 하지 못하면; **EINVAL** 이 반환 됩니다 (앞에서 언급 한 오버 헤드 포함)는 데 필요한 메모리 양을 초과 하는 경우 **_HEAP_MAXREQ**합니다. 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요. 응용 프로그램의 디버그 빌드에서 표준 힙 함수를 호출하는 것과 해당 함수의 디버그 버전을 호출하는 것의 차이에 대한 자세한 내용은 [힙 할당 함수의 디버그 버전](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_calloc_dbg**|\<crtdbg.h>|
 

@@ -1,23 +1,14 @@
 ---
-title: 개체 수명 및 리소스 관리 (최신 c + +) | Microsoft Docs
-ms.custom: ''
+title: 개체 수명 및 리소스 관리(최신 C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
 ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 8aa0e1a1-e04d-46b1-acca-1d548490700f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3fae540542abcd1e5281d355788860bea74e0b61
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d7bf45881ef82ecf0d11892e5ddf3d3c16a437cf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46105455"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50609939"
 ---
 # <a name="object-lifetime-and-resource-management-modern-c"></a>개체 수명 및 리소스 관리(최신 C++)
 

@@ -1,29 +1,19 @@
 ---
-title: '&lt;알고리즘&gt; | Microsoft 문서'
-ms.custom: ''
+title: '&lt;알고리즘&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <algorithm>
-dev_langs:
-- C++
 helpviewer_keywords:
 - algorithm header [C++]
 - C++ Standard Library, algorithms
 - <algorithm> header
 ms.assetid: 19f97711-7a67-4a65-8fd1-9a2bd3ca327d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9de7d5606d2bb178dd786d22bb0e5ab890fd16ff
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 042523cddf640e7cf6fd7f9a1dac9f3adbc360b6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964238"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484073"
 ---
 # <a name="ltalgorithmgt"></a>&lt;알고리즘&gt;
 
@@ -92,7 +82,7 @@ C++ 표준 라이브러리 알고리즘은 해당 목적 또는 요구 사항을
 |[max](../standard-library/algorithm-functions.md#max)|두 개체를 비교하고 둘 중 큰 개체를 반환합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
 |[max_element](../standard-library/algorithm-functions.md#max_element)|지정된 범위에서 가장 큰 첫 번째 요소를 찾습니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
 |[merge](../standard-library/algorithm-functions.md#merge)|정렬된 두 소스 범위의 모든 요소를 정렬된 단일 대상 범위로 결합합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
-|[min](../standard-library/algorithm-functions.md#min)|두 개체를 비교하고 둘 중 작은 개체를 반환합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
+|[분](../standard-library/algorithm-functions.md#min)|두 개체를 비교하고 둘 중 작은 개체를 반환합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
 |[min_element](../standard-library/algorithm-functions.md#min_element)|지정된 범위에서 가장 작은 첫 번째 요소를 찾습니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
 |[minmax](../standard-library/algorithm-functions.md#minmax)|두 개의 입력된 매개 변수를 비교하여 작은 수와 큰 수의 순서로 구성된 한 쌍을 반환합니다.|
 |[minmax_element](../standard-library/algorithm-functions.md#minmax_element)|한 번의 호출로 [min_element](../standard-library/algorithm-functions.md#min_element) 및 [max_element](../standard-library/algorithm-functions.md#max_element)에서 수행하는 작업을 수행합니다.|

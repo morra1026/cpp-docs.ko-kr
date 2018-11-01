@@ -1,10 +1,6 @@
 ---
-title: 로그, logf, logl, log10, log10f, log10l | Microsoft Docs
-ms.custom: ''
+title: log, logf, logl, log10, log10f, log10l
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - log10f
 - logf
@@ -34,8 +30,6 @@ f1_keywords:
 - log10f
 - log10l
 - log10
-dev_langs:
-- C++
 helpviewer_keywords:
 - calculating logarithms
 - log10f function
@@ -46,18 +40,14 @@ helpviewer_keywords:
 - logf function
 - logarithms
 ms.assetid: 7adc77c2-04f7-4245-a980-21215563cfae
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 12f475cde27d4660f4b4936f3f7717a665b70e86
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c8e3f73e61fefa7a39a6d53d63739b094d78c499
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402844"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543301"
 ---
-# <a name="log-logf-logl-log10-log10f-log10l"></a>로그, logf, logl, log10, log10f, log10l
+# <a name="log-logf-logl-log10-log10f-log10l"></a>log, logf, logl, log10, log10f, log10l
 
 로그를 계산합니다.
 
@@ -86,25 +76,25 @@ long double log10( long double x );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-**로그** 자연 로그를 반환 하는 함수 (기본 *e*)의 *x* 성공 하는 경우. **log10** 함수 밑이 10 인 로그를 반환 합니다. 경우 *x* 가 음수 이면 이러한 함수는 무한 (IND) 까지의 기본적으로 반환 합니다. 경우 *x* 0은 무한대 (INF)를 반환 합니다.
+합니다 **로그** 자연 로그를 반환 하는 함수 (기본 *e*)의 *x* 성공 합니다. 합니다 **log10** 함수는 밑이 10 인 로그를 반환 합니다. 하는 경우 *x* 가 음수 이면 이러한 함수는 무한 (IND)를 기본적으로 반환 합니다. 하는 경우 *x* 가 0 이면 무한대 (INF)를 반환 합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
-|± QNAN, IND|없음|_DOMAIN|
+|QNAN, 찾기|없음|_DOMAIN|
 |± 0|ZERODIVIDE|_SING|
 |*x* < 0|INVALID|_DOMAIN|
 
-**로그** 및 **log10** 스트리밍 SIMD 확장명 2 (SSE2)를 사용 하는 구현이 있어야 합니다. SSE2 구현의 사용 제한 사항 및 사용 방법에 대한 자세한 내용은 [_set_SSE2_enable](set-sse2-enable.md)을 참조하세요.
+**로그** 하 고 **log10** sse2(스트리밍 SIMD 확장 2 ()를 사용 하는 구현이 있습니다. SSE2 구현의 사용 제한 사항 및 사용 방법에 대한 자세한 내용은 [_set_SSE2_enable](set-sse2-enable.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-C + + 오버 로드의 오버 로드를 호출할 수 있도록 허용 **로그** 및 **log10** 사용 하 고 반환 **float** 또는 **long double** 값입니다. C 프로그램에서 **로그** 및 **log10** 항상 사용 하 고 반환 된 **double**합니다.
+C + +에서는 오버 로드를 허용 하므로 오버 로드를 호출할 수 있습니다 **로그** 하 고 **log10** 및 반환 하는 **float** 하거나 **long double** 값입니다. C 프로그램에서 **로그** 하 고 **log10** 항상 하 고 반환을 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**로그**, **logf**, **logl**, **log10**, **log10f**, **log10l**|\<math.h>|
+|**로그**, **logf**합니다 **logl**를 **log10**를 **log10f**, **log10l**|\<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

@@ -1,10 +1,6 @@
 ---
-title: tmpfile_s | Microsoft Docs
-ms.custom: ''
+title: tmpfile_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - tmpfile_s
 apilocation:
@@ -22,23 +18,17 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - tmpfile_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - temporary files
 - tmpfile_s function
 - temporary files, creating
 ms.assetid: 50879c69-215e-425a-a2a3-8b5467121eae
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1cd7866a7135f04aa580910d5ac121311312c542
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 341e1c8ed6dd20ec7e6a3d71999fb365e45e614a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32412152"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50488116"
 ---
 # <a name="tmpfiles"></a>tmpfile_s
 
@@ -63,23 +53,23 @@ errno_t tmpfile_s(
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*pFilePtr*|**반환 값**|**내용을***pFilePtr* |
+|*pFilePtr*|**반환 값**|**내용의***pFilePtr* |
 |----------------|----------------------|---------------------------------|
 |**NULL**|**EINVAL**|변경되지 않음|
 
-위의 매개 변수 유효성 검사 오류가 발생하는 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 값 반환 **EINVAL**합니다.
+위의 매개 변수 유효성 검사 오류가 발생하는 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 반환 값 이며 **EINVAL**합니다.
 
 ## <a name="remarks"></a>설명
 
-**tmpfile_s** 함수 임시 파일을 만들고 대 한 포인터를 해당 스트림에 넣습니다는 *pFilePtr* 인수입니다. 임시 파일은 루트 디렉터리에 만들어집니다. 루트가 아닌 디렉터리에 임시 파일을 만들려면 [fopen](fopen-wfopen.md)과 함께 [tmpnam_s](tmpnam-s-wtmpnam-s.md) 또는 [tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)을 사용합니다.
+**tmpfile_s** 함수를 임시 파일을 만들고 해당 스트림에 대 한 포인터를 배치 합니다 *pFilePtr* 인수입니다. 임시 파일은 루트 디렉터리에 만들어집니다. 루트가 아닌 디렉터리에 임시 파일을 만들려면 [fopen](fopen-wfopen.md)과 함께 [tmpnam_s](tmpnam-s-wtmpnam-s.md) 또는 [tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)을 사용합니다.
 
-파일을 열 수 없는 경우 **tmpfile_s** 씁니다 **NULL** 에 *pFilePtr* 매개 변수입니다. 파일이 닫힌 경우 또는 일반적으로 프로그램을 종료 하면이 임시 파일은 삭제 자동으로 **_rmtmp** 를 호출 하는 현재 작업 디렉터리를 변경 하지 않습니다. 임시 파일을 열 **w + b** (이진 읽기/쓰기) 모드입니다.
+파일을 열 수 없는 경우 **tmpfile_s** 씁니다 **NULL** 하는 *pFilePtr* 매개 변수입니다. 이 임시 파일은 때나 일반적으로 프로그램을 종료 하면 파일을 닫을 때 자동으로 삭제 됩니다 **_rmtmp** 현재 작업 디렉터리를 변경 하지 않습니다 가정 라고 합니다. 임시 파일에 열려 **w + b** (이진 읽기/쓰기) 모드입니다.
 
-시도 하면 오류가 발생할 수 있습니다 이상 **TMP_MAX_S** (STDIO 참조 합니다. H) 사용 하 여 호출 **tmpfile_s**합니다.
+시도 하면 오류가 발생할 수 있습니다 둘 **TMP_MAX_S** (STDIO 참조 합니다. H) 사용 하 여 호출 **tmpfile_s**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**tmpfile_s**|\<stdio.h>|
 

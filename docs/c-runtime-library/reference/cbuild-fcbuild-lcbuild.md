@@ -1,11 +1,6 @@
 ---
-title: _Cbuild, _FCbuild, _LCbuild | Microsoft Docs
-ms.custom: ''
+title: _Cbuild, _FCbuild, _LCbuild
 ms.date: 03/30/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - _Cbuild
 - _FCbuild
@@ -30,26 +25,20 @@ f1_keywords:
 - complex/_Cbuild
 - complex/_FCbuild
 - complex/_LCbuild
-dev_langs:
-- C++
 helpviewer_keywords:
 - _Cbuild function
 - _FCbuild function
 - _LCbuild function
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c6d567dc02715b9e55644b755b6d7360f2fe3d37
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5565c87a3cccd1715a1357f417238587f3fba4d5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394389"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50511802"
 ---
 # <a name="cbuild-fcbuild-lcbuild"></a>_Cbuild, _FCbuild, _LCbuild
 
-실수 및 허수 부분에서 복소수를 생성 합니다.
+실수부 및 허수부에서 복소수 생성합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -62,26 +51,26 @@ _Lcomplex _LCbuild( long double real, long double imaginary );
 ### <a name="parameters"></a>매개 변수
 
 *real*<br/>
-생성 하려면 복소수의 실수 부분입니다.
+실수 부분을 생성 하는 복소수입니다.
 
 *imaginary*<br/>
-생성 하려면 복소수의 허수 부분입니다.
+생성 하는 복소수의 허수 부분입니다.
 
 ## <a name="return-value"></a>반환 값
 
-A **_Dcomplex**, **_Fcomplex**, 또는 **_Lcomplex** 복소수를 나타내는 구조 (*실제*, *허수*  \* i) 지정 된 부동 소수점 형식의 값에 대 한 합니다.
+A **_Dcomplex**를 **_Fcomplex**, 또는 **_Lcomplex** 복소수를 나타내는 구조 (*실제*, *허수*  \* 있나요) 지정 된 부동 소수점 형식의 값에 대 한 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_Cbuild**, **_FCbuild**, 및 **_LCbuild** 함수 복합 형식 만들기를 단순화 합니다. 사용 하 여는 [creal, crealf, creall](creal-crealf-creall.md) 및 [cimag, cimagf, cimagl](cimag-cimagf-cimagl.md) 표현 복소수의 실수 및 허수 부분을 검색 하는 함수입니다.
+합니다 **_Cbuild**를 **_FCbuild**, 및 **_LCbuild** 복합 형식의 생성을 단순화 하는 함수입니다. 사용 된 [creal, crealf, creall](creal-crealf-creall.md) 및 [cimag, cimagf, cimagl](cimag-cimagf-cimagl.md) 표시 되는 복소수의 실수와 허수 부분을 검색 하는 함수입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|C 헤더|C++ 헤더|
+|루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**_Cbuild**, **_FCbuild**, **_LCbuild**|\<complex.h>|\<ccomplex>|
+|**_Cbuild**하십시오 **_FCbuild**, **_LCbuild**|\<complex.h>|\<ccomplex>|
 
-이러한 함수는 Microsoft 전용입니다. 형식을 **_Dcomplex**, **_Fcomplex**, 및 **_Lcomplex** 는 구현 되지 않은 C99 네이티브 형식에 해당 하는 Microsoft 전용 **double _Complex** , **_Complex float**, 및 **long double _Complex**각각. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+이러한 함수는 Microsoft 전용입니다. 형식을 **_Dcomplex**를 **_Fcomplex**, 및 **_Lcomplex** 구현 되지 않은 C99 네이티브 형식에 해당 하는 Microsoft 전용은 **double _Complex** 하십시오 **float _Complex**, 및 **long double _Complex**각각. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 

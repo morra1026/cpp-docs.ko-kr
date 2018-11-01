@@ -1,10 +1,6 @@
 ---
-title: offsetof 매크로 | Microsoft Docs
-ms.custom: ''
+title: offsetof 매크로
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -19,22 +15,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - offsetof
-dev_langs:
-- C++
 helpviewer_keywords:
 - structure members, offset
 - offsetof macro
 ms.assetid: f3b4eb16-a882-4d38-afc9-eebd976a7352
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 308aac2493751cfe2147187ed9848347124a90d6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a0f367dbe6fa2681a7d413304f32b5699b8f7cee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401466"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50458322"
 ---
 # <a name="offsetof-macro"></a>offsetof 매크로
 
@@ -63,14 +53,14 @@ size_t offsetof(
 
 ## <a name="remarks"></a>설명
 
-**offsetof** 매크로의 바이트 오프셋을 반환 *memberName* 지정 된 구조의 시작 부분부터 *structName* 형식의 값으로 **size_ t**합니다. 형식을 지정할 수는 **구조체** 키워드입니다.
+합니다 **offsetof** 매크로의 바이트 오프셋을 반환 합니다 *memberName* 하 여 지정 된 구조의 시작 부분 으로부터의 *structName* 형식의 값으로 **size_ t**합니다. 사용 하 여 형식을 지정할 수 있습니다 합니다 **구조체** 키워드입니다.
 
 > [!NOTE]
 > **offsetof** 함수가 아니며 C 프로토타입을 사용 하 여 설명할 수 없습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**offsetof**|\<stddef.h>|
 

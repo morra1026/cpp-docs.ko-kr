@@ -1,10 +1,6 @@
 ---
-title: _mbsnbcmp, _mbsnbcmp_l | Microsoft 문서
-ms.custom: ''
+title: _mbsnbcmp, _mbsnbcmp_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbsnbcmp
 - _mbsnbcmp_l
@@ -27,8 +23,6 @@ f1_keywords:
 - _mbsnbcmp_l
 - mbsnbcmp_l
 - _mbsnbcmp
-dev_langs:
-- C++
 helpviewer_keywords:
 - mbsnbcmp_l function
 - mbsnbcmp function
@@ -37,16 +31,12 @@ helpviewer_keywords:
 - _tcsncmp function
 - _mbsnbcmp function
 ms.assetid: dbc99e50-cf85-4e57-a13f-067591f18ac8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0a21d19a3de6a047366497283f2e8515aca37794
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4b21fde122f9804633ac037efaf1f343b5cb9440
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404638"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620008"
 ---
 # <a name="mbsnbcmp-mbsnbcmpl"></a>_mbsnbcmp, _mbsnbcmp_l
 
@@ -73,7 +63,7 @@ int _mbsnbcmp_l(
 
 ### <a name="parameters"></a>매개 변수
 
-*string1*, *문자열 2*<br/>
+*string1*, *string2*<br/>
 비교할 문자열입니다.
 
 *count*<br/>
@@ -84,27 +74,27 @@ int _mbsnbcmp_l(
 
 ## <a name="return-value"></a>반환 값
 
-반환 값의 부분 문자열 간의 서 수 관계를 나타내는 *string1* 및 *string2*합니다.
+반환 값의 부분 문자열 간의 서 수 관계를 나타내는 *string1* 하 고 *string2*합니다.
 
 |반환 값|설명|
 |------------------|-----------------|
-|< 0|*string1* 부분 문자열 보다 작은 *string2* 부분 문자열입니다.|
-|0|*string1* 부분 문자열은 동일 *string2* 부분 문자열입니다.|
+|< 0|*string1* 부분 문자열 보다 작거나 *string2* 부분 문자열입니다.|
+|0|*string1* substring 동일 *string2* 부분 문자열입니다.|
 |> 0|*string1* 부분 문자열 보다 크면 *string2* 부분 문자열입니다.|
 
-매개 변수 유효성 검사 오류 시 **_mbsnbcmp** 및 **_mbsnbcmp_l** 반환 **_NLSCMPERROR**에 정의 된 \<g. h > 및 \< mbstring.h > 합니다.
+매개 변수 유효성 검사 오류 시 **_mbsnbcmp** 하 고 **_mbsnbcmp_l** 반환 **_NLSCMPERROR**에 정의 된 \<string.h > 및 \< mbstring.h >.
 
 ## <a name="remarks"></a>설명
 
-**_mbsnbcmp** 함수는 첫 번째 비교 최대 *count* 바이트 *string1* 및 *string2* 나타내는 값을 반환 하 고는 부분 문자열 간의 관계입니다. **_mbsnbcmp** 의 대/소문자 구분 버전이 **_mbsnbicmp**합니다. 와 달리 **_mbsnbcoll**, **_mbsnbcmp** 로캘의 데이터 정렬 순서에 따라 영향을 받지 않습니다. **_mbsnbcmp** 현재 멀티 바이트에 따라 멀티 바이트 문자 시퀀스를 인식 [코드 페이지](../../c-runtime-library/code-pages.md)합니다.
+**_mbsnbcmp** 함수는 첫 번째 비교에 가장 *개수* 바이트 *string1* 및 *string2* 나타내는 값을 반환 합니다 부분 문자열 간의 관계입니다. **_mbsnbcmp** 의 대/소문자 구분 버전이 **_mbsnbicmp**합니다. 와 달리 **_mbsnbcoll**하십시오 **_mbsnbcmp** 로캘의 데이터 정렬 순서에 따라 영향을 받지 않습니다. **_mbsnbcmp** 현재 멀티 바이트에 따라 멀티 바이트 문자 시퀀스를 인식 [코드 페이지](../../c-runtime-library/code-pages.md)합니다.
 
-**_mbsnbcmp** 유사한 **_mbsncmp**제외 하 고 **_mbsncmp** 을 바이트가 아닌 문자로 문자열을 비교 합니다.
+**_mbsnbcmp** 비슷합니다 **_mbsncmp**점을 제외 하 고 **_mbsncmp** 을 바이트가 아닌 문자로 문자열을 비교 합니다.
 
-출력 값에 영향을 받는 **LC_CTYPE** 후행 바이트 멀티 바이트 문자의 선행 바이트를 지정 하는 로캘의 설정 범주입니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_mbsnbcmp** 함수가 로캘 종속 동작에 대 한 현재 로캘을 사용 합니다. **_mbsnbcmp_l** 사용 한다는 점을 제외 하 고 함수는 동일는 *로캘* 매개 변수 대신 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값에 영향을 받는 합니다 **LC_CTYPE** 후행 바이트 멀티 바이트 문자의 선행 바이트를 지정 하는 로캘의 설정 범주입니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. 합니다 **_mbsnbcmp** 함수가 로캘 종속 동작에 대 한 현재 로캘을 사용 합니다. **_mbsnbcmp_l** 함수를 사용 한다는 점을 제외 하면 동일 합니다 *로캘* 매개 변수 대신 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-경우 *string1* 또는 *string2* 가 null 포인터 이면 이러한 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된 경우 함수는 반환 **_NLSCMPERROR** 및 **errno** 로 설정 된 **EINVAL**합니다.
+이면 *string1* 또는 *string2* 가 null 포인터인 경우 이러한 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우이 함수는 반환 **_NLSCMPERROR** 하 고 **errno** 로 설정 되어 **EINVAL**합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|---------------------------------------|--------------------|-----------------------|
@@ -113,7 +103,7 @@ int _mbsnbcmp_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_mbsnbcmp**|\<mbstring.h>|
 |**_mbsnbcmp_l**|\<mbstring.h>|

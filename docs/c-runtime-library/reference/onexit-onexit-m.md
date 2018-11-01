@@ -1,10 +1,6 @@
 ---
-title: _onexit, _onexit_m | Microsoft Docs
-ms.custom: ''
+title: _onexit, _onexit_m
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _onexit
 - _onexit_m
@@ -25,8 +21,6 @@ f1_keywords:
 - onexit_m
 - onexit
 - _onexit_m
-dev_langs:
-- C++
 helpviewer_keywords:
 - onexit function
 - registry, registering exit routines
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - registering exit routines
 - registering to be called on exit
 ms.assetid: 45743298-0e2f-46cf-966d-1ca44babb443
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8c190ce2c78135625a502d7509e56771fd670aa3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c190f777032904802f771bab9fc323ba305ff32e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401710"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50609608"
 ---
 # <a name="onexit-onexitm"></a>_onexit, _onexit_m
 
@@ -69,19 +59,19 @@ _onexit_t_m _onexit_m(
 
 ## <a name="return-value"></a>반환 값
 
-**_onexit** 성공 하는 경우 함수에 대 한 포인터를 반환 하거나 **NULL** 함수 포인터를 저장 공간이 없는 경우.
+**_onexit** 성공 하면 함수에 대 한 포인터를 반환 하거나 **NULL** 함수 포인터를 저장할 공간이 없는 경우.
 
 ## <a name="remarks"></a>설명
 
-**_onexit** 함수는 함수의 주소를 전달 됩니다 (*함수*)는 프로그램이 정상적으로 종료 될 때 호출 되 합니다. 에 대 한 연속 호출은 **_onexit** LIFO (마지막에-선입 선출) 순서로 실행 되는 함수의 레지스터를 만듭니다. 함수에 전달 된 **_onexit** 매개 변수를 사용할 수 없습니다.
+합니다 **_onexit** 함수는 함수의 주소가 전달 됩니다 (*함수*) 프로그램이 정상적으로 종료 될 때 호출 되 합니다. 에 대 한 연속 호출 **_onexit** LIFO (마지막에-선입 선출) 순서 대로 실행 되는 함수의 레지스터가 만들어집니다. 함수에 전달 **_onexit** 매개 변수를 사용할 수 없습니다.
 
-경우에 때 **_onexit** DLL을 등록 된 루틴이 내에서 호출 **_onexit** 후 DLL에 실행의 언로드에서 **DllMain** DLL_PROCESS_DETACH를 사용 하 여 호출 됩니다.
+에서는 때 **_onexit** 등록 된 루틴이 DLL 내에서 호출 되 **_onexit** 후 실행 DLL의 언로드에서 **DllMain** DLL_PROCESS_DETACH를 사용 하 여 호출 됩니다.
 
-**_onexit** Microsoft 확장입니다. ANSI 이식성이 필요한 경우에는 [atexit](atexit.md)을 사용하세요. **_onexit_m** 버전의 함수는 혼합된 모드를 사용 합니다.
+**_onexit** Microsoft 확장입니다. ANSI 이식성이 필요한 경우에는 [atexit](atexit.md)을 사용하세요. 합니다 **_onexit_m** 함수의 버전은 혼합 된 모드용입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_onexit**|\<stdlib.h>|
 

@@ -1,10 +1,6 @@
 ---
-title: _heapwalk | Microsoft 문서
-ms.custom: ''
+title: _heapwalk
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _heapwalk
 apilocation:
@@ -23,23 +19,17 @@ apitype: DLLExport
 f1_keywords:
 - heapwalk
 - _heapwalk
-dev_langs:
-- C++
 helpviewer_keywords:
 - debugging [CRT], heap-related problems
 - heapwalk function
 - _heapwalk function
 ms.assetid: 2df67649-fb00-4570-a8b1-a4eca5738744
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3d98260ce281bc8773f597dae5897afe4beee0bc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cc2a49d9032746cc6c82c9dc401fc96baabbe2e1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403403"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50454901"
 ---
 # <a name="heapwalk"></a>_heapwalk
 
@@ -67,16 +57,16 @@ int _heapwalk( _HEAPINFO *entryinfo );
 |-|-|
 |**_HEAPBADBEGIN**| 초기 헤더 정보가 잘못되었거나 없습니다.|
 |**_HEAPBADNODE**| 힙이 손상되었거나 잘못된 노드가 있습니다.|
-|**_HEAPBADPTR**| **_heapinfo** 필드는 **_HEAPINFO** 구조 힙에 대 한 유효한 포인터를 포함 하지 않습니다 또는 *entryinfo* 가 null 포인터입니다.|
+|**_HEAPBADPTR**| 합니다 **_heapinfo** 필드를 **_HEAPINFO** 구조는 힙에 대 한 유효한 포인터를 포함 하지 않습니다 또는 *entryinfo* 가 null 포인터입니다.|
 |**_HEAPEND**| 힙 끝에 성공적으로 도달했습니다.|
 |**_HEAPEMPTY**| 힙이 초기화되지 않았습니다.|
-|**_HEAPOK**| 지금;까지 오류가 없습니다 *entryinfo* 다음 힙 항목에 대 한 정보로 업데이트 됩니다.|
+|**_HEAPOK**| 지금까지 오류가 없습니다 *entryinfo* 다음 힙 항목에 대 한 정보를 사용 하 여 업데이트 됩니다.|
 
-또한 오류가 발생 하는 경우 **_heapwalk** 설정 **errno** 를 **ENOSYS**합니다.
+또한 오류가 발생 하는 경우 **_heapwalk** 설정 **errno** 하 **ENOSYS**합니다.
 
 ## <a name="remarks"></a>설명
 
-**_heapwalk** 함수를 사용 하면 프로그램의 힙 관련 문제를 디버깅 합니다. 함수 호출을 하는 각 항목을 트래버스하는 힙에 안내 하 고 형식의 구조에 대 한 포인터를 반환 **_HEAPINFO** 다음 힙 항목에 대 한 정보가 들어 있는입니다. **_HEAPINFO** , Malloc.h에 정의 된 형식에는 다음과 같은 요소가 있습니다.
+합니다 **_heapwalk** 함수를 사용 하면 프로그램에서 힙 관련 문제를 디버그 합니다. 함수 호출 당 하나의 항목을 트래버스하는 힙을 안내 하 고 형식의 구조에 대 한 포인터를 반환 **_HEAPINFO** 다음 힙 항목에 대 한 정보를 포함 하는 합니다. 합니다 **_HEAPINFO** Malloc.h에 정의 된 형식이 다음 요소를 포함 합니다.
 
 |필드|의미|
 |-|-|
@@ -84,13 +74,13 @@ int _heapwalk( _HEAPINFO *entryinfo );
 |`size_t _size`|힙 항목의 크기.|
 |`int _useflag`|힙 항목이 사용 중인지 여부를 나타내는 플래그.|
 
-에 대 한 호출 **_heapwalk** 반환 하는 **_HEAPOK** 에 있는 항목의 크기를 저장는 **_size** 필드 및 집합은 **_heapinfo** 필드 중 하나를 **_FREEENTRY** 또는 **_USEDENTRY** (둘 다는 Malloc.h에 정의 된 상수). 힙에 있는 첫 번째 항목에 대 한이 정보를 얻으려면 전달 **_heapwalk** 에 대 한 포인터는 **_HEAPINFO** 갖는 **_heapinfo** 멤버는 **NULL** . 운영 체제를 지원 하지 않는 경우 **_heapwalk**함수 반환 (예: Windows 98) **_HEAPEND** 설정 **errno** 를 **ENOSYS**.
+에 대 한 호출 **_heapwalk** 반환 하는 **_HEAPOK** 항목의 크기를 저장 합니다 **크기 _s** 집합과 필드를 **_heapinfo** 필드 중 하나를 **_FREEENTRY** 하거나 **_USEDENTRY** (둘 다 Malloc.h에에서 정의 된). 힙에서 첫 번째 항목에 대 한이 정보를 얻으려면 전달 **_heapwalk** 에 대 한 포인터를 **_HEAPINFO** 갖는 **_heapinfo** 멤버인 **NULL** . 운영 체제를 지원 하지 않는 경우 **_heapwalk**함수를 반환 합니다 (예: Windows 98) **_HEAPEND** 집합과 **errno** 에 **ENOSYS**.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 경우 *entryinfo* 가 null 포인터에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수가 반환 하 고 **_HEAPBADPTR**합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. 하는 경우 *entryinfo* 가 null 포인터인 경우에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고 함수가 반환 **_HEAPBADPTR**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|선택적 헤더|
+|루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|---------------------|
 |**_heapwalk**|\<malloc.h>|\<errno.h>|
 

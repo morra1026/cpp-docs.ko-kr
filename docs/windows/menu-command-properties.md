@@ -1,26 +1,15 @@
 ---
-title: 메뉴 명령 속성 (c + +) | Microsoft Docs
-ms.custom: ''
+title: 메뉴 명령 속성 (c + +)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - menu items, properties
 ms.assetid: 6d308205-3c9e-42f2-ab42-45e656940e45
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: c846cecb415365db92e3097bbf04ab06cd4209d0
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: ddb33293d654944aa9390b9955388d6e3b01cddb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860448"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50468980"
 ---
 # <a name="menu-command-properties-c"></a>메뉴 명령 속성 (c + +)
 
@@ -28,7 +17,7 @@ ms.locfileid: "48860448"
 
 |속성|설명|
 |--------------|-----------------|
-|**Break**|다음 값 중 하나일 수 있습니다.<br /><br />- **None** (기본값): 나누기가 없습니다.<br />- **열**: 정적 메뉴의 경우이 값을 사용 하면 새 줄에 메뉴 명령을 배치 합니다. 팝업 메뉴의 경우 이 값은 열 사이에 구분선이 없이 새 열에 메뉴 명령을 배치합니다. 이 속성을 설정하는 경우 런타임에만 메뉴 모양에 영향이 있으며 메뉴 편집기에서는 영향이 없습니다.<br />- **표시줄**: 동일 **열** 를 제외 하 고 팝업 메뉴의 경우이 새 열 분리의 세로 줄을 사용 하 여 이전 열에서. 런타임 시만 메뉴의 모양에 없는 영향을이 속성을 설정 합니다 **메뉴** 편집기입니다.|
+|**Break**|다음 값 중 하나일 수 있습니다.<br /><br />- **없음** (기본값): 나누기가 없습니다.<br />- **열**: 정적 메뉴의 경우 이 값은 새 줄에 메뉴 명령을 배치합니다. 팝업 메뉴의 경우 이 값은 열 사이에 구분선이 없이 새 열에 메뉴 명령을 배치합니다. 이 속성을 설정하는 경우 런타임에만 메뉴 모양에 영향이 있으며 메뉴 편집기에서는 영향이 없습니다.<br />- **표시줄**: 동일 **열** 를 제외 하 고 팝업 메뉴의 경우이 새 열 분리의 세로 줄을 사용 하 여 이전 열에서. 런타임 시만 메뉴의 모양에 없는 영향을이 속성을 설정 합니다 **메뉴** 편집기입니다.|
 |**캡션**|메뉴 명령(메뉴 이름)의 레이블을 지정하는 텍스트입니다. 메뉴 명령의 캡션에 있는 문자 중 하나를 니모닉 키로 만들려면 문자 앞에 앰퍼샌드(&)를 추가합니다.|
 |**선택한 상태**|하는 경우 **True**, 메뉴 명령이 처음에 선택 합니다. 형식: **Bool**합니다. 기본값: **False**입니다.|
 |**사용**|**False**이면 메뉴 항목이 사용하지 않도록 설정됩니다.|

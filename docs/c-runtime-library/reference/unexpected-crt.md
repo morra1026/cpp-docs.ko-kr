@@ -1,10 +1,6 @@
 ---
-title: unexpected(CRT) | Microsoft Docs
-ms.custom: ''
+title: unexpected(CRT)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - unexpected
 apilocation:
@@ -21,25 +17,19 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - unexpected
-dev_langs:
-- C++
 helpviewer_keywords:
 - unexpected function
 ms.assetid: 2f873763-15ad-4556-a924-dcf28f2b52b4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fd8dc51c41ebf938f59493cbd62fac3e0a491601
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 78538c0a10e183e72c742b041b297275c0859a03
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408109"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534022"
 ---
 # <a name="unexpected-crt"></a>unexpected(CRT)
 
-호출 **종료** 또는 함수를 사용 하 여 지정 **set_unexpected**합니다.
+호출 **종료** 또는 함수를 사용 하 여 지정할 **set_unexpected**합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -49,11 +39,11 @@ void unexpected( void );
 
 ## <a name="remarks"></a>설명
 
-**예기치 않은** 루틴 c + + 예외 처리의 현재 구현과 함께 사용 되지 않습니다. **예기치 않은** 호출 **종료** 기본적으로 합니다. 사용자 지정 종료 함수를 작성 하 고 호출 하 여이 기본 동작을 변경할 수 있습니다 **set_unexpected** 의 인수로 서 함수 이름으로 합니다. **예기치 않은** 에 대 한 인수로 주어진 마지막 함수를 호출 **set_unexpected**합니다.
+합니다 **예기치 않은** 루틴 c + + 예외 처리의 현재 구현에서 사용 되지 않습니다. **예기치 않은** 호출 **종료** 기본적으로 합니다. 사용자 지정 종료 함수를 작성 하 고 호출 하 여이 기본 동작을 변경할 수 있습니다 **set_unexpected** 인수로 함수의 이름입니다. **예기치 않은** 인수로 주어진 마지막 함수 호출 **set_unexpected**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**unexpected**|\<eh.h>|
 

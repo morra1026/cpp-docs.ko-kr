@@ -1,12 +1,7 @@
 ---
-title: .NET 및 UWP 용 구성 요소 확장 | Microsoft Docs
-ms.custom: ''
+title: .NET 및 UWP 용 구성 요소 확장
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - what's new [C++], keywords
 - what's new [C++], language features
@@ -14,17 +9,12 @@ helpviewer_keywords:
 - keywords [C++]
 - Managed Extensions for C++, replacement syntax
 ms.assetid: 1e400ee6-3ac9-4910-a608-9d3d5993e423
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 45f83fbaaa867e2f58e329d8531259fa3751a521
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 3b29b2e8b00aa436d1687cdbbd5f299f4787c71b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328417"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432362"
 ---
 # <a name="component-extensions-for-net-and-uwp"></a>.NET 및 UWP 용 구성 요소 확장
 
@@ -54,7 +44,7 @@ C + + /cli CX 확장은 하위 집합 C + + /cli CLI입니다. 생성 되는 코
 |**인터페이스 클래스**<br /><br /> **인터페이스 구조체**|아니요|인터페이스를 선언합니다.|[인터페이스 클래스](../windows/interface-class-cpp-component-extensions.md)|
 |**enum 클래스**<br /><br /> **enum 구조체**|아니요|열거형을 선언합니다.|[enum 클래스](../windows/enum-class-cpp-component-extensions.md)|
 |**속성**|예|속성을 선언합니다.|[속성](../windows/property-cpp-component-extensions.md)|
-|**delegate**|예|대리자를 선언합니다.|[대리자 (C + + /cli 및 C + + /cli CX)](../windows/delegate-cpp-component-extensions.md)|
+|**delegate**|예|대리자를 선언합니다.|[위임(C++/CLI 및 C++/CX)](../windows/delegate-cpp-component-extensions.md)|
 |**event**|예|이벤트를 선언합니다.|[event](../windows/event-cpp-component-extensions.md)|
 
 ## <a name="override-specifiers"></a>Override 지정자

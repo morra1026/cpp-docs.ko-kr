@@ -1,28 +1,18 @@
 ---
-title: _mm_stream_ss | Microsoft Docs
-ms.custom: ''
+title: _mm_stream_ss
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _mm_stream_ss
-dev_langs:
-- C++
 helpviewer_keywords:
 - movntss instruction
 - _mm_stream_ss intrinsic
 ms.assetid: c53dffe9-0dfe-4063-85d3-e8987b870fce
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7061559cf7acd2e6607c2e64dbd505a5cf9c3814
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 089f8d5501c18b679a3d5878bb30762d2dcc1e04
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46375480"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438911"
 ---
 # <a name="mmstreamss"></a>_mm_stream_ss
 
@@ -44,7 +34,7 @@ void _mm_stream_ss(
 *대상*<br/>
 [out] 원본 데이터가 기록 되는 위치에 대 한 포인터입니다.
 
-*Source*<br/>
+*소스*<br/>
 [in] 포함 하는 128 비트 숫자를 `float` 32 비트 아래쪽에 쓸 값...
 
 ## <a name="return-value"></a>반환 값

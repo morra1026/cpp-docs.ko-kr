@@ -1,30 +1,20 @@
 ---
-title: PgoAutoSweep | Microsoft Docs
-ms.custom: ''
+title: PgoAutoSweep
 ms.date: 03/14/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 f1_keywords:
 - PgoAutoSweep
 - PogoAutoSweepA
 - PogoAutoSweepW
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 988a73dd8c4ad6929ef04691ad1959df7ea7bdd7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 356504da91a6778b5e873ca218df01944461d59c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379499"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456643"
 ---
 # <a name="pgoautosweep"></a>PgoAutoSweep
 
-`PgoAutoSweep` 파일에 현재 프로필 카운터 정보를 저장 하 고 카운터 다시 설정 합니다. 프로필 기반 최적화를 실행 중인 프로그램에서 최적화 빌드의에서 나중에 사용할.pgc 파일을 모든 프로필 데이터를 쓰는 데 필요한 교육을 하는 동안 함수를 사용 합니다.
+`PgoAutoSweep` 파일에 현재 프로필 카운터 정보를 저장 하 고 카운터를 다시 설정 합니다. 함수를 사용 하 여 나중에 사용할 최적화 빌드에서.pgc 파일에 실행 중인 프로그램에서 모든 프로필 데이터를 쓸 학습 하는 프로필 기반 최적화 중입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -36,31 +26,31 @@ void PgoAutoSweep(const wchar_t* name); // UNICODE
 ### <a name="parameters"></a>매개 변수
 
 *name*<br/>
-저장 된.pgc 파일에 대 한 식별 문자열입니다.
+저장 된.pgc 파일을 식별 하는 문자열입니다.
 
 ## <a name="remarks"></a>설명
 
-호출할 수 있습니다 `PgoAutoSweep` 응용 프로그램에서 저장 하 고 응용 프로그램을 실행 하는 동안 언제 든 지 프로필 데이터를 다시 설정 합니다. 계측 된 빌드에서 `PgoAutoSweep` 현재 프로 파일링 데이터를 캡처하는 파일에 저장 하 고 프로필 카운터를 다시 설정 합니다. 호출에 해당 하는 것이 고 [pgosweep](pgosweep.md) 실행 파일의 특정 지점에서 명령을 합니다. 최적화 된 빌드에 `PgoAutoSweep` 는 작동 하지 않습니다.
+호출할 수 있습니다 `PgoAutoSweep` 응용 프로그램에서 저장 하 고 응용 프로그램 실행 중 언제 든 지 프로필 데이터를 다시 설정 합니다. 계측된 된 빌드에 `PgoAutoSweep` 현재 프로 파일링 데이터를 캡처, 파일에서 저장 및 프로필 카운터 다시 설정 합니다. 호출에 해당 하는 것은 [pgosweep](pgosweep.md) 실행 파일의 특정 지점에서 명령을 합니다. 최적화 된 빌드에 `PgoAutoSweep` 는 작동 하지 않습니다.
 
-저장 된 프로필 카운터 데이터 라는 파일에 배치 됩니다 *base_name*-*이름*! *값*.pgc, 여기서 *base_name* 는 실행 파일의 기본 이름은 *이름* 에 전달 하는 매개 변수 `PgoAutoSweep`, 및 *값* 일반적으로 단조 증가 수, 파일 이름 충돌을 방지 하는 고유 값이입니다.
+라는 파일에 저장 된 프로필 카운터 데이터를 놓입니다 *base_name*-*이름*! *값*.pgc, 여기서 *base_name* 실행 파일의 기본 이름인 *이름* 에 전달 되는 매개 변수 `PgoAutoSweep`, 및 *값* 일반적으로 증가 하는 숫자, 파일 이름 충돌을 방지 하는 고유 값이입니다.
 
-생성 된.pgc 파일 `PgoAutoSweep` 최적화 된 실행 파일을 만드는 데 사용할 수 있도록.pgd 파일에 병합 해야 합니다. 사용할 수는 [pgomgr](pgomgr.md) 병합을 수행 하기 위한 명령입니다.
+만든.pgc 파일 `PgoAutoSweep` .pgd 파일로 최적화 된 실행 파일을 만드는 데 사용할에 병합 해야 합니다. 사용할 수는 [pgomgr](pgomgr.md) 병합을 수행 하는 명령입니다.
 
-사용 하 여 최적화 빌드하는 동안 병합된.pgd 파일의 이름의을 링커에 전달할 수는 **PGD =**_filename_ 인수에는 [/USEPROFILE](useprofile.md) 링커 옵션 또는 사용 되지 않는 **/PGD** 링커 옵션입니다. 라는 파일에.pgc 파일을 병합 하는 경우 *base_name*.pgd, 않아도 명령줄에서 파일 이름을 지정 하려면 링커 기본적으로이 파일 이름은.wadcfg 때문에 있습니다.
+사용 하 여 최적화 빌드하는 동안 병합된.pgd 파일의 이름을 링커에 전달할 수는 **PGD =**_filename_ 인수를 [/USEPROFILE](useprofile.md) 링커 옵션 또는 사용 되지 않는 **/PGD** 링커 옵션입니다. 라는 파일에.pgc 파일을 병합 하는 경우 *base_name*.pgd를 필요가 없습니다 명령줄에서 파일 이름을 지정 하는 링커 기본적으로이 파일 이름을 선택 하기 때문에 있습니다.
 
-`PgoAutoSweep` 함수를 유지 관리 계측 된 빌드를 만들 때 스레드 보안 설정을 지정 합니다. 기본 설정을 사용 하거나 지정 된 **NOEXACT** 인수를는 [/GENPROFILE 또는 /FASTGENPROFILE]() 링커 옵션에 대 한 호출이 `PgoAutoSweep` 스레드로부터 안전 하지 않습니다. **EXACT** 인수 만듭니다 스레드로부터 안전 하 고 정확 하 게 서로 느린, 계측 된 실행 파일입니다.
+`PgoAutoSweep` 함수 계측 된 빌드를 만들 때 지정한 스레드로부터의 안전성 설정이 유지 관리 합니다. 기본 설정을 사용 하거나 지정 하는 경우는 **NOEXACT** 인수를 [/GENPROFILE 또는 /FASTGENPROFILE]() 링커 옵션을 호출 `PgoAutoSweep` 는 스레드로부터 안전 하지 않습니다. 합니다 **EXACT** 인수 만듭니다 스레드로부터 안전 하 고 더 정확 하지만 느린 계측 된 실행 파일입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |`PgoAutoSweep`|\<pgobootrun.h>|
 
-실행 파일에 연결 된 라이브러리 pgobootrun.lib 파일을 포함 해야 합니다. 이 파일은 지원 되는 각 아키텍처에 대 한 VC 라이브러리 디렉터리에서 Visual Studio 설치에 포함 됩니다.
+실행 파일에 연결 된 라이브러리 pgobootrun.lib 파일을 포함 해야 합니다. 이 파일은 지원 되는 각 아키텍처에 대해 VC 라이브러리 디렉터리에서 Visual Studio 설치에 포함 됩니다.
 
 ## <a name="example"></a>예제
 
-사용 하 여 다음 예제에서는 `PgoAutoSweep` 두 만들려고 합니다. 실행 중 여러 지점에서 PGC 파일입니다. 될 때까지 런타임 동작을 설명 하는 데이터를 포함 하는 첫 번째 `count` 가 3, 두 번째 응용 프로그램이 종료 되기 직전까지이 시점 이후에 수집 된 데이터를 포함 합니다.
+사용 하 여 아래 예제에서는 `PgoAutoSweep` 두를 만들려고 합니다. 실행 하는 동안 여러 시점에서 PGC 파일입니다. 될 때까지 런타임 동작을 설명 하는 데이터를 포함 하는 첫 번째 `count` 가 3, 두 번째 응용 프로그램 종료 직전까지이 시점 이후에 수집 된 데이터를 포함 합니다.
 
 ```cpp
 // pgoautosweep.cpp
@@ -111,11 +101,11 @@ int main()
 
 `cl /c /GL /W4 /EHsc /O2 pgoautosweep.cpp`
 
-그런 다음이 명령을 사용 하 여 학습에 계측된 된 빌드를 생성 합니다.
+그런 다음이 명령을 사용 하 여 학습을 위한 계측된 된 빌드를 생성 합니다.
 
 `link /LTCG /genprofile pgobootrun.lib pgoautosweep.obj`
 
-학습 데이터를 캡처하기 위해 계측 된 실행 파일을 실행 합니다. 호출에 데이터 출력 `PgoAutoSweep` pgoautosweep func1 라는 파일에 저장 됩니다! 1.pgc 및 pgoautosweep func2! 1.pgc 합니다. 프로그램의 출력을 실행할 때 다음과 같이 표시 됩니다.
+학습 데이터를 캡처하기 위해 계측 된 실행 파일을 실행 합니다. 에 대 한 호출으로 데이터 출력 `PgoAutoSweep` pgoautosweep func1 라는 파일에 저장 됩니다! 1.pgc 및 pgoautosweep func2! 1.pgc 합니다. 프로그램의 출력은 실행 될 때 다음과 같이 표시 됩니다.
 
 ```Output
 hello from func1 9
@@ -130,11 +120,11 @@ hello from func2 1
 hello from func2 0
 ```
 
-실행 하 여 프로필 학습 데이터베이스에 저장된 된 데이터를 병합는 **pgomgr** 명령:
+실행 하 여 프로필 교육 데이터베이스에 저장된 된 데이터를 병합 합니다 **pgomgr** 명령:
 
 `pgoautosweep-func1!1.pgc pgoautosweep-func2!1.pgc`
 
-이 명령의 출력은 다음과 같습니다.
+이 명령의 출력이 같습니다.
 
 ```Output
 Microsoft (R) Profile Guided Optimization Manager 14.13.26128.0

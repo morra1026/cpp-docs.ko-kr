@@ -1,32 +1,22 @@
 ---
-title: C++ 표준 라이브러리 개요 | Microsoft 문서
-ms.custom: ''
+title: C++ 표준 라이브러리 개요
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - headers, C++ library
 - C++ Standard Library
 - libraries, Standard C++
 - C++ Standard Library, headers
 ms.assetid: 7acb83a4-da73-4ad3-bc30-a71289db7f60
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2795ab431930627160b0275866b573aff36bb97b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 57abafbcbd899d3eca7369205afba4ca262ad2c4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33845322"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50444995"
 ---
 # <a name="c-standard-library-overview"></a>C++ 표준 라이브러리 개요
 
-모든 C++ 라이브러리 엔터티가 하나 이상의 표준 헤더에서 선언되거나 정의됩니다. 이 구현에는 두 개의 추가 헤더 포함 됩니다. \<hash_map > 및 \<hash_set >, c + + 표준에 따라 필요 하지 않습니다. 이 구현에서 지원되는 헤더의 전체 목록을 보려면 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)를 참조하세요.
+모든 C++ 라이브러리 엔터티가 하나 이상의 표준 헤더에서 선언되거나 정의됩니다. 이 구현에는 두 개의 추가 헤더 포함 됩니다 \<hash_map > 및 \<hash_set >, c + + 표준에 따라 않아도 됩니다. 이 구현에서 지원되는 헤더의 전체 목록을 보려면 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)를 참조하세요.
 
 C++ 라이브러리의 독립형 구현에서는 이러한 헤더의 하위 집합만을 제공합니다.
 

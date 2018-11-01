@@ -1,10 +1,6 @@
 ---
-title: _ismbbpunct, _ismbbpunct_l | Microsoft 문서
-ms.custom: ''
+title: _ismbbpunct, _ismbbpunct_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbbpunct
 - _ismbbpunct_l
@@ -26,24 +22,18 @@ f1_keywords:
 - ismbbpunct_l
 - _ismbbpunct_l
 - _ismbbpunct
-dev_langs:
-- C++
 helpviewer_keywords:
 - ismbbpunct function
 - _ismbbpunct function
 - ismbbpunct_l function
 - _ismbbpunct_l function
 ms.assetid: 1976c9d3-7d1a-415f-ac52-2715c7bb56eb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7881461b7468d27ac376ab942d35683928cc1651
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: acf23cf9da34ba50693aea7772cdbcfaeb146f2f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400065"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562997"
 ---
 # <a name="ismbbpunct-ismbbpunctl"></a>_ismbbpunct, _ismbbpunct_l
 
@@ -71,11 +61,11 @@ int _ismbbpunct_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_ismbbpunct** 경우 0이 아닌 값을 반환 하는 정수 *c* 가 ASCII가 아닌 문장 부호 기호. **_ismbbpunct** 모든 로캘 종속 문자 설정에 대 한 현재 로캘을 사용 합니다. **_ismbbpunct_l** 에 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_ismbbpunct** 이면 0이 아닌 값을 반환 하는 정수 *c* 는 ASCII가 아닌 문장 부호 기호. **_ismbbpunct** 모든 로캘 종속 문자 설정에 대 한 현재 로캘을 사용 합니다. **_ismbbpunct_l** 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_ismbbpunct**|\<mbctype.h>|
 |**_ismbbpunct_l**|\<mbctype.h>|

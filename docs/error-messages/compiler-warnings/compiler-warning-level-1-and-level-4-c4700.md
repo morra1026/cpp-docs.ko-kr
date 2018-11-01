@@ -1,39 +1,29 @@
 ---
-title: 컴파일러 경고 (수준 1 및 수준 4) C4700 | Microsoft Docs
-ms.custom: ''
+title: 컴파일러 경고(수준 1 및 수준 4) C4700
 ms.date: 02/21/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4700
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4700
 ms.assetid: 2da0deb4-77dd-4b05-98d3-b78d74ac4ca7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 876ae98fb2fdea5a9d8bdaecb93b8c229213d329
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fa3326bd5ab495dbc4c54130bb168422eb827dce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33286070"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463221"
 ---
 # <a name="compiler-warning-level-1-and-level-4-c4700"></a>컴파일러 경고(수준 1 및 수준 4) C4700
 
-> 초기화 되지 않은 지역 변수 '*이름*' 사용
+> 초기화 되지 않은 지역 변수 '*이름을*' 사용
 
-지역 변수 *이름* 되었습니다 *사용*에서 즉, 읽기, 생기기 전에 값이 할당 되었습니다. C 및 c + +에서 기본적으로 로컬 변수가 초기화 되지 됩니다. 초기화 되지 않은 변수에는 어떤 값도 포함 될 수 있습니다 및 용도 따라 정의 되지 않은 동작이 있습니다. 경고 C4700 거의 항상 프로그램에서 예기치 않은 결과 나 충돌이 시킬 수 있는 버그를 나타냅니다.
+지역 변수 *이름을* 되었습니다 *사용*에서 즉, 읽기, 설정 되기 전에 값이 할당 되었습니다. C 및 c + +에서는 지역 변수는 기본적으로 초기화 되지 않았습니다. 초기화 되지 않은 변수 값을 포함할 수 있습니다 및 용도 정의 되지 않은 동작이 발생 합니다. 경고 C4700 거의 항상 프로그램에서 예기치 않은 결과 또는 충돌을 일으킬 수 있는 버그를 나타냅니다.
 
-이 문제를 해결 하려면 선언 될 때 지역 변수를 초기화할 수도 있고 사용 하기 전에 값을 할당할 수 있습니다. 해당 주소 포인터 매개 변수로 전달 되는 경우 또는 참조 매개 변수로 전달 되는 변수를 초기화 함수를 사용할 수 있습니다.
+이 문제를 해결 하려면 선언 된 경우 로컬 변수를 초기화 하거나 사용 하기 전에 값을 할당 수 있습니다. 해당 주소를 포인터 매개 변수로 전달 되는 경우 또는 참조 매개 변수로 전달 되는 변수를 초기화 하려면 함수를 사용할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-이 샘플에서는 초기화 되 고 발생할 수 있는 가비지 값의 종류를 보여 줍니다. 하려면 먼저 변수 t, u 및 v 사용 될 때 C4700를 생성 합니다. 변수 x, y 및 z 사용 하기 전에 초기화 되기 때문에 경고를 발생 하지 수행:
+이 샘플에서는 변수 t, u 및 v 사용 하는 경우 초기화 됩니다 하 고 발생할 수 있는 가비지 값의 종류를 표시 하려면 먼저 C4700를 생성 합니다. 변수 x, y 및 z 수행 하므로 사용 하기 전에 초기화 된다고 경고를 발생 하지:
 
 ```cpp
 // c4700.cpp
@@ -63,7 +53,7 @@ int main()
 }
 ```
 
-이 코드의 실행, t, u 및 v는 때를, 초기화 되지 않은 하 고 s에 대 한 출력을 예측할 수 없는:
+초기화 되지 않은이 코드 실행, t, u 및 v 경우 고 s에 대 한 출력 예측할 수 없습니다.
 
 ```Output
 Value in s: 37816963

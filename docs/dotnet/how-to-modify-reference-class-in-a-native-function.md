@@ -1,27 +1,17 @@
 ---
-title: '방법: 네이티브 함수에서 참조 클래스 수정 | Microsoft Docs'
+title: '방법: 네이티브 함수에서 참조 클래스 수정'
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - platform invoke, reference class
 - reference types, modifying in a C++ native function
 ms.assetid: c701145b-62a0-4c4b-b32a-db8d69a59720
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: e60b820975c76f5a5e89051b2676291b03ed6f00
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 20ebf23cf97eb6232698e8c5f59f2f0531beb55b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46409820"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528065"
 ---
 # <a name="how-to-modify-reference-class-in-a-native-function"></a>방법: 네이티브 함수에서 참조 클래스 수정
 

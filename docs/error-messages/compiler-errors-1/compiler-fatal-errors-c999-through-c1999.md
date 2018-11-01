@@ -1,10 +1,6 @@
 ---
-title: 컴파일러 오류 C999 C1999 통해 | Microsoft Docs
-ms.custom: ''
+title: 심각한 컴파일러 오류(C999~C1999)
 ms.date: 11/17/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1012
 - C1013
@@ -165,23 +161,17 @@ helpviewer_keywords:
 - C1901
 - C1903
 - C1904
-dev_langs:
-- C++
 ms.assetid: 6c8df109-7594-48ed-987a-97d9fe2b04af
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bdd0949d2d76cad636f833a75ea1371246ee3ebf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: edf2227bd0a542ce9ca5e8a6a3f908347bd816e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33237265"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677333"
 ---
 # <a name="compiler-fatal-errors-c999-through-c1999"></a>심각한 컴파일러 오류(C999~C1999)
 
-설명서의이 섹션의 문서 컴파일러에 의해 생성 되는 오류 메시지의 하위 집합에 설명 합니다.
+설명서의이 섹션의 문서는 컴파일러에서 생성 되는 오류 메시지의 하위 집합을 설명 합니다.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -198,7 +188,7 @@ ms.locfileid: "33237265"
 |[심각한 오류 C1007](../../error-messages/compiler-errors-1/fatal-error-c1007.md)|인식할 수 없는 플래그 '*string*'이 '*option*'에 있습니다.|
 |[심각한 오류 C1008](../../error-messages/compiler-errors-1/fatal-error-c1008.md)|입력 파일을 지정하지 않았습니다.|
 |[심각한 오류 C1009](../../error-messages/compiler-errors-1/fatal-error-c1009.md)|컴파일러 한계: 매크로가 너무 많이 중첩되었습니다.|
-|[심각한 오류 C1010](../../error-messages/compiler-errors-1/fatal-error-c1010.md)|미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. 추가 하 였는 ' #include <*파일*>' 소스에 있습니까?|
+|[심각한 오류 C1010](../../error-messages/compiler-errors-1/fatal-error-c1010.md)|미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. 추가 했는지 ' #include <*파일*>' 소스에?|
 |심각한 오류 C1012|괄호가 짝이 맞지 않습니다. '*character*"가 없습니다.|
 |심각한 오류 C1013|컴파일러 한계: 여는 괄호가 너무 많습니다.|
 |심각한 오류 C1014|포함 파일이 너무 많습니다. 수준 = *number*|
@@ -224,7 +214,7 @@ ms.locfileid: "33237265"
 |심각한 오류 C1048|알 수 없는 옵션 '*string*'이 '*option*'에 있습니다.|
 |심각한 오류 C1049|'*value*' 숫자 인수가 잘못되었습니다.|
 |[심각한 오류 C1051](../../error-messages/compiler-errors-1/fatal-error-c1051.md)|'*file*' 프로그램 데이터베이스 파일에 사용되지 않는 형식이 있습니다. 삭제한 후 다시 컴파일하세요.|
-|[심각한 오류 C1052](fatal-error-c1052.md)|프로그램 데이터베이스 파일 '*filename*', /debug: fastlink;를 사용 하 여 링커에 의해 생성 된 컴파일러 없습니다 이러한 PDB 파일을 업데이트할; 하십시오 삭제 하거나 /Fd를 사용 하 여 다른 PDB 파일 이름 지정|
+|[심각한 오류 C1052](fatal-error-c1052.md)|프로그램 데이터베이스 파일에 '*filename*', /debug: fastlink;를 사용 하 여 링커에 의해 생성 된 컴파일러 수 없습니다. 이러한 PDB 파일을 업데이트; 하세요 삭제 하거나 /Fd를 사용 하 여 다른 PDB 파일 이름을 지정 합니다.|
 |심각한 오류 C1053|'*function*': 함수가 너무 큽니다.|
 |[심각한 오류 C1054](../../error-messages/compiler-errors-1/fatal-error-c1054.md)|컴파일러 한계: 이니셜라이저가 너무 많이 중첩되었습니다.|
 |[심각한 오류 C1055](../../error-messages/compiler-errors-1/fatal-error-c1055.md)|컴파일러 한계: 키가 부족합니다.|

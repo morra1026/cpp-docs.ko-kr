@@ -1,33 +1,23 @@
 ---
-title: 컴파일러 오류 C3118 | Microsoft Docs
-ms.custom: ''
+title: 컴파일러 오류 C3118
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3118
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3118
 ms.assetid: 40fbe681-8868-4cb2-a2b2-4db4449319a7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 320d92bd97e3b5f9bb696959ee25ca33cba3544a
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 072bb821a9dc2547c9a2758fb1ca542bdbc66f86
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46063426"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50427406"
 ---
 # <a name="compiler-error-c3118"></a>컴파일러 오류 C3118
 
 'interface': 인터페이스가 가상 상속을 지원 하지 않습니다
 
-거의 인터페이스에서 상속 하려고 했습니다. 예를 들어 개체에 적용된
+거의 인터페이스에서 상속 하려고 했습니다. 예를 들면 다음과 같습니다.
 
 ```
 // C3118.cpp

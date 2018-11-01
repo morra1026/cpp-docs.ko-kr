@@ -1,10 +1,6 @@
 ---
-title: terminate(CRT) | Microsoft Docs
-ms.custom: ''
+title: terminate(CRT)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - terminate
 apilocation:
@@ -22,22 +18,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - terminate
-dev_langs:
-- C++
 helpviewer_keywords:
 - terminate function
 - exception handling, termination
 ms.assetid: 90e67402-08e9-4b2a-962c-66a8afd3ccb4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c743439b487f091b760e3747c47b471832e1ff3d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1f655d328b4d97a2989ad49005ed8a9f44fd9d79
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408676"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438639"
 ---
 # <a name="terminate-crt"></a>terminate(CRT)
 
@@ -51,7 +41,7 @@ void terminate( void );
 
 ## <a name="remarks"></a>설명
 
-**종료** 함수 c + + 예외 처리와 함께 사용 되 고 다음과 같은 경우에 호출 됩니다.
+합니다 **종료** 함수 c + + 예외 처리를 사용 하 여 사용 되 고 다음과 같은 경우에 호출 됩니다.
 
 - throw된 C++ 예외에 대해 일치하는 catch 처리기를 찾을 수 없는 경우
 
@@ -59,11 +49,11 @@ void terminate( void );
 
 - 스택이 예외를 throw한 후에 손상된 경우
 
-**종료** 호출 [중단](abort.md) 기본적으로 합니다. 자체 종료 함수를 작성 하 고 호출 하 여이 기본값을 변경할 수 있습니다 **set_terminate** 의 인수로 서 함수 이름으로 합니다. **종료** 에 대 한 인수로 주어진 마지막 함수를 호출 **set_terminate**합니다. 자세한 내용은 [처리되지 않은 C++ 예외](../../cpp/unhandled-cpp-exceptions.md)를 참조하세요.
+**종료** 호출 [중단](abort.md) 기본적으로 합니다. 하는 자체 종료 함수를 작성 하 고 호출 하 여이 기본값을 변경할 수 있습니다 **set_terminate** 인수로 함수의 이름입니다. **종료** 인수로 주어진 마지막 함수 호출 **set_terminate**합니다. 자세한 내용은 [처리되지 않은 C++ 예외](../../cpp/unhandled-cpp-exceptions.md)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**terminate**|\<eh.h>|
 

@@ -1,10 +1,6 @@
 ---
-title: _CrtSetReportHook2, _CrtSetReportHookW2 | Microsoft 문서
-ms.custom: ''
+title: _CrtSetReportHook2, _CrtSetReportHookW2
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtSetReportHook2
 - _CrtSetReportHookW2
@@ -25,24 +21,18 @@ f1_keywords:
 - CrtSetReportHook2
 - _CrtSetReportHookW2
 - _CrtSetReportHook2
-dev_langs:
-- C++
 helpviewer_keywords:
 - CrtSetReportHook2 function
 - _CrtSetReportHook2 function
 - _CrtSetReportHookW2 function
 - CrtSetReportHookW2 function
 ms.assetid: 12e5f68d-c8a7-4b1a-9a75-72ba4a8592d0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 17dc0fc97a46e6ce0b5bda68ec8adc6ef37c4218
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1e850d3e83ed7b7c77873400deac073084708b78
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402262"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50446776"
 ---
 # <a name="crtsetreporthook2-crtsetreporthookw2"></a>_CrtSetReportHook2, _CrtSetReportHookW2
 
@@ -64,22 +54,22 @@ int _CrtSetReportHookW2(
 ### <a name="parameters"></a>매개 변수
 
 *모드*<br/>
-수행할 동작을: **_CRT_RPTHOOK_INSTALL** 또는 **_CRT_RPTHOOK_REMOVE**합니다.
+수행할 작업: **_CRT_RPTHOOK_INSTALL** 하거나 **_CRT_RPTHOOK_REMOVE**합니다.
 
 *pfnNewHook*<br/>
 보고서 후크가 함수의 좁은 문자 또는 와이드 문자 버전에서 설치 하거나 제거할입니다.
 
 ## <a name="return-value"></a>반환 값
 
-오류가 발생 했습니다 경우-1와 **EINVAL** 또는 **ENOMEM** 설정; 그렇지 않으면의 참조 횟수를 반환 *pfnNewHook* 호출 후 합니다.
+오류가 발생 된 경우-1으로 **EINVAL** 또는 **ENOMEM** 설정; 그렇지 않으면 참조 횟수를 반환 *pfnNewHook* 호출 후 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_CrtSetReportHook2** 및 **_CrtSetReportHookW2** 반면이 사용 하면 후크 하거나 함수를 언 후크 할 [_CrtSetReportHook](crtsetreporthook.md) 함수를 후크 할 수 있습니다.
+**_CrtSetReportHook2** 하 고 **_CrtSetReportHookW2** 반면 후크 하거나 함수를 언 후크 할 수 있습니다 [_CrtSetReportHook](crtsetreporthook.md) 만 함수를 후크 할 수 있습니다.
 
-**_CrtSetReportHook2** 또는 **_CrtSetReportHookW2** 대신 사용 해야 **_CrtSetReportHook** DLL에서 후크 호출이 수행 시기 및 여러 Dll 로드 되는 경우가 및 자신의 설정 후크 함수입니다. 이러한 경우 DLL은 로드되었을 때와 다른 순서로 언로드될 수 있으며 후크 함수는 언로드된 DLL을 가리킨 상태를 유지할 수 있습니다. 후크 함수도 추가 된 경우 디버그 출력은 프로세스를 방해 **_CrtSetReportHook**합니다.
+**_CrtSetReportHook2** 나 **_CrtSetReportHookW2** 대신 사용 해야 **_CrtSetReportHook** DLL에서 후크 호출이 수행 때와 여러 Dll 로드 되는 경우가 및 자체 설정 함수에 연결 합니다. 이러한 경우 DLL은 로드되었을 때와 다른 순서로 언로드될 수 있으며 후크 함수는 언로드된 DLL을 가리킨 상태를 유지할 수 있습니다. 후크 함수를 사용 하 여 추가 된 경우 모든 디버그 출력에 프로세스 크래시 **_CrtSetReportHook**합니다.
 
-함수를 사용 하 여 추가 연결 모든 **_CrtSetReportHook** 후크와 함수를 추가 하는 경우 라고 **_CrtSetReportHook2** 또는 **_CrtSetReportHookW2** 또는 함수를 사용 하 여 추가 **_CrtSetReportHook2** 및 **_CrtSetReportHookW2** 반환 **FALSE**합니다.
+추가 된 후크가 **_CrtSetReportHook** 없습니다 추가 된 후크 함수가 있는 경우 라고 **_CrtSetReportHook2** 또는 **_CrtSetReportHookW2** 경우 또는 추가 된 **_CrtSetReportHook2** 하 고 **_CrtSetReportHookW2** 반환 **FALSE**합니다.
 
 이 함수의 와이드 문자 버전을 사용할 수 있습니다. 보고서 후크 함수는 형식(와이드 문자 또는 좁은 문자)이 사용된 이 함수 버전과 일치하는 문자열을 사용합니다. 이 함수의 와이드 문자 버전에서 사용되는 보고서 후크에 대해 다음과 같은 함수 프로토타입을 사용합니다.
 
@@ -93,14 +83,14 @@ int YourReportHook( int reportType, wchar_t *message, int *returnValue );
 int YourReportHook( int reportType, char *message, int *returnValue );
 ```
 
-이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 경우 *모드* 또는 **pfnNewNook** 은 유효 하지 않은 경우, 이러한 함수는 잘못 된 매개 변수 처리기를 호출에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된, 이러한 함수 설정 **errno** 를 **EINVAL** 고-1을 반환 합니다.
+이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 하는 경우 *모드* 하거나 **pfnNewNook** 는 잘못 된 경우 이러한 함수는 잘못 된 매개 변수 처리기를 호출에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL** 고-1을 반환 합니다.
 
 > [!NOTE]
-> 응용 프로그램은 컴파일된 경우 **/clr** 및 보고 함수를 호출 응용 프로그램이 종료 될 때 주, 보고 함수 모든 CRT 함수를 호출 하는 경우 CLR에서 예외가 throw 됩니다.
+> 응용 프로그램을 사용 하 여 컴파일된 경우 **/clr** 보고 함수를 호출 응용 프로그램이 종료 될 때 주, CLR 보고 함수가 CRT 함수를 호출 하는 경우 예외가 throw 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|선택적 헤더|
+|루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|---------------------|
 |**_CrtSetReportHook2**|\<crtdbg.h>|\<errno.h>|
 |**_CrtSetReportHookW2**|\<crtdbg.h>|\<errno.h>|

@@ -1,30 +1,20 @@
 ---
-title: 구조체 맞춤 예제 | Microsoft Docs
-ms.custom: ''
+title: 구조체 맞춤 예제
 ms.date: 03/26/2018
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - structure alignment
 - examples [C++], structure alignment
 ms.assetid: 03d137bf-5cc4-472e-9583-6498f2534199
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a9c4e8cb27d02777e40af56217bd82dec6e647b6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 27f7e89b1c7faec06347d8760247a76a33e0b91e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367744"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50466246"
 ---
 # <a name="examples-of-structure-alignment"></a>구조체 맞춤 예제
 
-4 개의 다음 예는 정렬 된 구조체 또는 공용 구조체 및 해당 숫자 값 구조체 또는 공용 메모리에서의 레이아웃을 보여 줍니다. 선언 합니다. 그림의 각 열 메모리의 바이트를 나타내며 열에 숫자는 해당 바이트의 치환을 나타냅니다. 각 수치의 두 번째 행에 있는 이름을 선언에서 변수 이름에 해당합니다. 음영 처리 된 열에 지정 된 맞춤을 달성 하기 위해 필요한 여백입니다 나타냅니다.
+4 개의 다음 예제는 정렬 된 구조체 또는 공용 구조체와 해당 수치는 구조체 또는 공용 구조체 메모리에서의 레이아웃을 보여 줍니다 선언 합니다. 그림의 각 열에는 메모리의 바이트를 나타내며 및 숫자 열에 해당 바이트 거리를 나타냅니다. 각 그림의 두 번째 행에 있는 이름을 선언에서 변수 이름에 해당합니다. 음영 처리 된 열에 지정된 된 맞춤을 달성 하기 위해 필요한 여백입니다 나타냅니다.
 
 ## <a name="example-1"></a>예제 1
 

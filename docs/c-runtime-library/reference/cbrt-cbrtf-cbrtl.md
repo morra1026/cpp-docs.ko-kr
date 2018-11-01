@@ -1,10 +1,6 @@
 ---
-title: cbrt, cbrtf, cbrtl | Microsoft 문서
-ms.custom: ''
+title: cbrt, cbrtf, cbrtl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - cbrt
 - cbrtf
@@ -26,23 +22,17 @@ f1_keywords:
 - cbrtl
 - cbrt
 - cbrtf
-dev_langs:
-- C++
 helpviewer_keywords:
 - cbrtl function
 - cbrtf function
 - cbrt function
 ms.assetid: ab51d916-3db2-4beb-b46a-28b4062cd33f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 29dee00f35c2b4d75e838e5abe2ee24de9753013
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c395a063cfa07cdfb7e841f19bc64fb1c57ca796
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393617"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50505536"
 ---
 # <a name="cbrt-cbrtf-cbrtl"></a>cbrt, cbrtf, cbrtl
 
@@ -75,7 +65,7 @@ long double cbrtl(
 
 ## <a name="return-value"></a>반환 값
 
-**cbrt** 의 세 제곱근을 반환 하는 함수 *x*합니다.
+합니다 **cbrt** 의 세 제곱근을 반환 하는 함수 *x*합니다.
 
 |입력|SEH 예외|**_matherr** 예외|
 |-----------|-------------------|--------------------------|
@@ -83,13 +73,13 @@ long double cbrtl(
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **cbrt** 사용 하는 **float** 또는 **긴** **double** 형식입니다. C 프로그램에서 **cbrt** 항상 사용 하 고 반환 **double**합니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **cbrt** 사용 하는 **float** 하거나 **긴** **double** 형식입니다. C 프로그램에서 **cbrt** 항상 받아서 반환 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|C 헤더|C++ 헤더|
+|기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**cbrt**, **cbrtf**, **cbrtl**|\<math.h>|\<cmath>|
+|**cbrt**하십시오 **cbrtf**, **cbrtl**|\<math.h>|\<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

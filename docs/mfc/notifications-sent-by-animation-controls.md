@@ -1,28 +1,18 @@
 ---
-title: 애니메이션 컨트롤이 보내는 알림 | Microsoft Docs
-ms.custom: ''
+title: 애니메이션 컨트롤이 보내는 알림
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - notifications [MFC], animation controls
 - CAnimateCtrl class [MFC], notifications
 - controls [MFC], animation
 - animation controls [MFC], notifications
 ms.assetid: 584f5824-446b-4a1a-85f7-ef61842c8186
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eb83fe6195c01c1e9dbcc2c00e43738af9ebc8e2
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8c437e6950435b49c280c4f1bb9225002545d6f2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386394"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50449298"
 ---
 # <a name="notifications-sent-by-animation-controls"></a>애니메이션 컨트롤이 보내는 알림
 

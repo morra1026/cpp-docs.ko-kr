@@ -1,28 +1,18 @@
 ---
-title: 인라인 어셈블리에서 레지스터 사용 및 유지 | Microsoft Docs
-ms.custom: ''
+title: 인라인 어셈블리에서 레지스터 사용 및 유지
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - __asm keyword [C++], register values
 - inline assembly, registers
 - registers, inline assembly
 - preserving registers
 ms.assetid: dbcd7360-6f3e-4b22-9ee2-9f65ca6f2543
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 60506f53eb1933e5acbb03318edada82a8904386
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 30b2f9ca8c658b65819709bb2e536b5aaecad676
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677020"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643068"
 ---
 # <a name="using-and-preserving-registers-in-inline-assembly"></a>인라인 어셈블리에서 레지스터 사용 및 유지
 

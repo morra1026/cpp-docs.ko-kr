@@ -1,10 +1,6 @@
 ---
-title: CVSListBox 클래스 | Microsoft Docs
-ms.custom: ''
+title: CVSListBox 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CVSListBox
 - AFXVSLISTBOX/CVSListBox
@@ -19,8 +15,6 @@ f1_keywords:
 - AFXVSLISTBOX/CVSListBox::SelectItem
 - AFXVSLISTBOX/CVSListBox::SetItemData
 - AFXVSLISTBOX/CVSListBox::GetListHwnd
-dev_langs:
-- C++
 helpviewer_keywords:
 - CVSListBox [MFC], CVSListBox
 - CVSListBox [MFC], AddItem
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - CVSListBox [MFC], SetItemData
 - CVSListBox [MFC], GetListHwnd
 ms.assetid: c79be7b4-46ed-4af8-a41e-68962782d8ef
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3d4bb676685a05ee9cedd9074f6d04ba357c5085
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e44fa868fc573efbf89bb00147f670298f633381
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46407753"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513765"
 ---
 # <a name="cvslistbox-class"></a>CVSListBox 클래스
 
@@ -68,16 +58,16 @@ class CVSListBox : public CVSListBoxBase
 
 |이름|설명|
 |----------|-----------------|
-|[CVSListBox::AddItem](#additem)|목록 컨트롤에 문자열을 추가 합니다. (`CVSListBoxBase::AddItem`를 재정의합니다.)|
-|[CVSListBox::EditItem](#edititem)|목록 컨트롤 항목의 텍스트에서 편집 작업을 시작 합니다. (`CVSListBoxBase::EditItem`를 재정의합니다.)|
-|[CVSListBox::GetCount](#getcount)|편집할 수 있는 목록 컨트롤에 문자열을 검색합니다. (`CVSListBoxBase::GetCount`를 재정의합니다.)|
-|[CVSListBox::GetItemData](#getitemdata)|편집할 수 있는 목록 컨트롤 항목을 사용 하 여 연결 하는 응용 프로그램별 32 비트 값을 검색 합니다. (`CVSListBoxBase::GetItemData`를 재정의합니다.)|
-|[CVSListBox::GetItemText](#getitemtext)|편집할 수 있는 목록 컨트롤 항목의 텍스트를 검색합니다. (`CVSListBoxBase::GetItemText`를 재정의합니다.)|
-|[CVSListBox::GetSelItem](#getselitem)|편집할 수 있는 목록 컨트롤에서 현재 선택된 된 항목의 인덱스를 검색합니다. (`CVSListBoxBase::GetSelItem`를 재정의합니다.)|
-|`CVSListBox::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수입니다. 자세한 내용 및 메서드 구문 참조 [cwnd:: Pretranslatemessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)합니다. (`CVSListBoxBase::PreTranslateMessage`를 재정의합니다.)|
-|[CVSListBox::RemoveItem](#removeitem)|편집할 수 있는 목록 컨트롤에서 항목을 제거 합니다. (`CVSListBoxBase::RemoveItem`를 재정의합니다.)|
-|[CVSListBox::SelectItem](#selectitem)|편집할 수 있는 목록 제어 문자열을 선택합니다. (`CVSListBoxBase::SelectItem`를 재정의합니다.)|
-|[CVSListBox::SetItemData](#setitemdata)|응용 프로그램별 32 비트 값을 편집할 수 있는 목록 컨트롤 항목을 사용 하 여 연결합니다. (`CVSListBoxBase::SetItemData`를 재정의합니다.)|
+|[CVSListBox::AddItem](#additem)|목록 컨트롤에 문자열을 추가 합니다. ( `CVSListBoxBase::AddItem`을 재정의합니다.)|
+|[CVSListBox::EditItem](#edititem)|목록 컨트롤 항목의 텍스트에서 편집 작업을 시작 합니다. ( `CVSListBoxBase::EditItem`을 재정의합니다.)|
+|[CVSListBox::GetCount](#getcount)|편집할 수 있는 목록 컨트롤에 문자열을 검색합니다. ( `CVSListBoxBase::GetCount`을 재정의합니다.)|
+|[CVSListBox::GetItemData](#getitemdata)|편집할 수 있는 목록 컨트롤 항목을 사용 하 여 연결 하는 응용 프로그램별 32 비트 값을 검색 합니다. ( `CVSListBoxBase::GetItemData`을 재정의합니다.)|
+|[CVSListBox::GetItemText](#getitemtext)|편집할 수 있는 목록 컨트롤 항목의 텍스트를 검색합니다. ( `CVSListBoxBase::GetItemText`을 재정의합니다.)|
+|[CVSListBox::GetSelItem](#getselitem)|편집할 수 있는 목록 컨트롤에서 현재 선택된 된 항목의 인덱스를 검색합니다. ( `CVSListBoxBase::GetSelItem`을 재정의합니다.)|
+|`CVSListBox::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수입니다. 자세한 내용 및 메서드 구문 참조 [cwnd:: Pretranslatemessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)합니다. ( `CVSListBoxBase::PreTranslateMessage`을 재정의합니다.)|
+|[CVSListBox::RemoveItem](#removeitem)|편집할 수 있는 목록 컨트롤에서 항목을 제거 합니다. ( `CVSListBoxBase::RemoveItem`을 재정의합니다.)|
+|[CVSListBox::SelectItem](#selectitem)|편집할 수 있는 목록 제어 문자열을 선택합니다. ( `CVSListBoxBase::SelectItem`을 재정의합니다.)|
+|[CVSListBox::SetItemData](#setitemdata)|응용 프로그램별 32 비트 값을 편집할 수 있는 목록 컨트롤 항목을 사용 하 여 연결합니다. ( `CVSListBoxBase::SetItemData`을 재정의합니다.)|
 
 ### <a name="protected-methods"></a>보호된 메서드
 

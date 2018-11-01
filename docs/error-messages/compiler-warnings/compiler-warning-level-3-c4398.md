@@ -1,41 +1,31 @@
 ---
-title: 컴파일러 경고 (수준 3) C4398 | Microsoft Docs
-ms.custom: ''
+title: 컴파일러 경고(수준 3) C4398
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4398
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4398
 ms.assetid: b6221432-9fed-4272-a547-a73f587904e6
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c38ade6b75242fdd5144481e3415e914cb6773c5
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 4126a1267b41cdf9c0161c7e85a9057b2a301d77
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34704616"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50578466"
 ---
 # <a name="compiler-warning-level-3-c4398"></a>컴파일러 경고(수준 3) C4398
 
-> '*변수*': appdomain이 여러 개 프로세스별 전역 개체가 제대로 작동 하지 않으면 __declspec (appdomain)을 사용 하는 것이 좋습니다.
+> '*변수*': appdomain이 여러 개 프로세스별 전역 개체가 제대로 작동 하지 않으면 __declspec (appdomain)를 사용 하는 것이 좋습니다.
 
 ## <a name="remarks"></a>설명
 
-갖는 가상 함수와 [__clrcall](../../cpp/clrcall.md) 를 네이티브 형식에 규칙을 호출 하면 생성 된 별로 응용 프로그램 도메인 vtable 합니다. 여러 응용 프로그램 도메인에서 사용 될 때 이러한 변수 올바르게 해결할 수는 없습니다.
+갖는 가상 함수와 [__clrcall](../../cpp/clrcall.md) 만들어지도록의 네이티브 형식에 호출 규칙을 응용 프로그램 도메인 vtable 당. 여러 응용 프로그램 도메인에서 사용 하는 경우 이러한 변수 올바르게 해결할 수는 없습니다.
 
-명시적으로 변수를 표시 하 여이 경고를 해결할 수 `__declspec(appdomain)`합니다. Visual Studio 2017 하기 전에 Visual Studio의 버전을 사용 하 여 컴파일하면이 경고를 해결할 수 **/clr: pure**, 기본적으로 appdomain 당 전역 변수를 만드는 합니다. **/clr: pure** 컴파일러 옵션은 Visual Studio 2015에서 사용 되지 않으며 Visual Studio 2017에서 지원 되지 않습니다.
+명시적으로 변수를 표시 하 여이 경고를 해결할 수 있습니다 `__declspec(appdomain)`합니다. Visual Studio 2017 이전 Visual Studio의 버전을 사용 하 여 컴파일하면이 경고를 해결할 수 있습니다 **/clr: pure**, 기본적으로 appdomain 당 전역 변수를 만드는 합니다. **/clr: pure** 컴파일러 옵션은 Visual Studio 2015에서 사용 되지 않으며 Visual Studio 2017에서 지원 되지 않습니다.
 
-자세한 내용은 참조 [appdomain](../../cpp/appdomain.md) 및 [응용 프로그램 도메인 및 Visual c + +](../../dotnet/application-domains-and-visual-cpp.md)합니다.
+자세한 내용은 [appdomain](../../cpp/appdomain.md) 하 고 [응용 프로그램 도메인 및 Visual c + +](../../dotnet/application-domains-and-visual-cpp.md)합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 샘플에서는 C4398 오류가 발생 합니다.
 

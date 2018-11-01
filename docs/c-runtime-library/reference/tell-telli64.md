@@ -1,10 +1,6 @@
 ---
-title: _tell, _telli64 | Microsoft Docs
-ms.custom: ''
+title: _tell, _telli64
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _telli64
 - _tell
@@ -26,8 +22,6 @@ f1_keywords:
 - telli64
 - _telli64
 - _tell
-dev_langs:
-- C++
 helpviewer_keywords:
 - tell function
 - file pointers [C++], getting
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - telli64 function
 - _telli64 function
 ms.assetid: 1500e8f9-8fec-4253-9eec-ec66125dfc9b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8c47958fdb3723c16f8f2dce03ace54c75ce6176
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 628f37d3b8a39a75fb2329a1b2805426f15e821f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409988"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660150"
 ---
 # <a name="tell-telli64"></a>_tell, _telli64
 
@@ -71,17 +61,17 @@ __int64 _telli64(
 
 파일 포인터의 현재 위치입니다. 검색을 수행할 수 없는 장치에서는 반환 값이 정의되지 않습니다.
 
-반환 값-1l이 오류를 나타냅니다. 경우 *처리* 된 잘못 된 파일 설명자는에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된, 이러한 함수 설정 **errno** 를 **EBADF** 고-1l을 반환 합니다.
+반환 값-1l 오류를 나타냅니다. 하는 경우 *처리할* 잘못 된 파일 설명자 인에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EBADF** 고-1l을 반환 합니다.
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) 을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**_tell** 함수에 연결 된 파일 포인터 (있는 경우)의 현재 위치를 가져옵니다는 *처리* 인수입니다. 위치는 파일의 시작 부분에서 바이트 수로 표현됩니다. 에 대 한는 **_telli64** 함수의 경우,이 값은 64 비트 정수로 표현 됩니다.
+합니다 **_tell** 함수에 연결 된 파일 포인터 (있는 경우)의 현재 위치를 가져옵니다 합니다 *처리* 인수입니다. 위치는 파일의 시작 부분에서 바이트 수로 표현됩니다. 에 대 한 합니다 **_telli64** 함수의 경우이 값은 64 비트 정수로 표현 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_tell**, **_telli64**|\<io.h>|
 

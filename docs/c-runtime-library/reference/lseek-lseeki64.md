@@ -1,10 +1,6 @@
 ---
-title: _lseek, _lseeki64 | Microsoft 문서
-ms.custom: ''
+title: _lseek, _lseeki64
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _lseeki64
 - _lseek
@@ -25,8 +21,6 @@ f1_keywords:
 - _lseeki64
 - _lseek
 - lseeki64
-dev_langs:
-- C++
 helpviewer_keywords:
 - lseek function
 - _lseek function
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - file pointers [C++], moving
 - seek file pointers
 ms.assetid: aba8a768-d40e-48c3-b38e-473dbd782f93
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eb47214ac2de3c3e217bf41387ba206b94caf906
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 19a312bcc3cdeea82bcebce6da95e26ef88992b0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403380"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541689"
 ---
 # <a name="lseek-lseeki64"></a>_lseek, _lseeki64
 
@@ -78,25 +68,25 @@ __int64 _lseeki64(
 
 ## <a name="return-value"></a>반환 값
 
-**_lseek** 파일의 시작 부분에서 새 위치로의 바이트 오프셋을 반환 합니다. **_lseeki64** 64 비트 정수에서 오프셋을 반환 합니다. 함수는 오류를 나타내기 위해-1l로 반환 합니다. 잘못된 파일 설명자와 같이 잘못된 매개 변수를 전달했거나, *origin*에 대한 값이 잘못되었거나, *offset*에 지정된 위치가 파일의 시작 이전인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행을 계속 허용 된, 이러한 함수 설정 **errno** 를 **EBADF** 고-1l을 반환 합니다. 검색을 수행할 수 없는 장치(예: 터미널 및 프린터)에서는 반환 값이 정의되지 않습니다.
+**_lseek** 파일의 새 위치부터에서의 바이트 오프셋을 반환 합니다. **_lseeki64** 64 비트 정수로 오프셋을 반환 합니다. 함수는 오류를 나타내기 위해-1l을 반환 합니다. 잘못된 파일 설명자와 같이 잘못된 매개 변수를 전달했거나, *origin*에 대한 값이 잘못되었거나, *offset*에 지정된 위치가 파일의 시작 이전인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EBADF** 고-1l을 반환 합니다. 검색을 수행할 수 없는 장치(예: 터미널 및 프린터)에서는 반환 값이 정의되지 않습니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**_lseek** 와 관련 된 파일 포인터를 이동 하는 함수 *fd* 중인 새 위치에 *오프셋* 바이트 *원점*합니다. 파일에 대한 다음 작업은 새 위치에서 수행됩니다. *origin* 인수는 Stdio.h에 정의된 다음 상수 중 하나여야 합니다.
+합니다 **_lseek** 와 연결 된 파일 포인터를 이동 하는 함수 *fd* 는 새 위치로 *오프셋* 바이트 *원본*합니다. 파일에 대한 다음 작업은 새 위치에서 수행됩니다. *origin* 인수는 Stdio.h에 정의된 다음 상수 중 하나여야 합니다.
 
-|*origin* 값||
+|*원본* 값||
 |-|-|
 **SEEK_SET**|파일 시작
 **SEEK_CUR**|파일 포인터의 현재 위치
 **SEEK_END**|파일 끝
 
-사용할 수 있습니다 **_lseek** 파일 또는 파일의 끝을 넘어 아무 곳 이나 마우스 포인터 위치입니다.
+사용할 수 있습니다 **_lseek** 위치를 변경 하려면 포인터가 아무 곳 이나 파일 또는 파일의 끝을 초과 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_lseek**|\<io.h>|
 |**_lseeki64**|\<io.h>|

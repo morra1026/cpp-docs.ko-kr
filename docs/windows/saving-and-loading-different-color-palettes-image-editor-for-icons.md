@@ -1,14 +1,8 @@
 ---
-title: 색상표 저장 및 다른 로드 (아이콘에 대 한 이미지 편집기) | Microsoft Docs
-ms.custom: ''
+title: 다른 색상표 저장 및 로드(아이콘에 대한 이미지 편집기)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.image.color
-dev_langs:
-- C++
 helpviewer_keywords:
 - color palettes [C++]
 - palettes
@@ -16,17 +10,12 @@ helpviewer_keywords:
 - colors [C++], Image editor
 - Image editor [C++], palettes
 ms.assetid: 694b6346-e606-4f19-aa01-9b4ceb47f423
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 50e74c65e080b11583e6ff1e591ef612b17e9533
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 847004210d5c0672fe013c51e59de5c9f849f977
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438888"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447985"
 ---
 # <a name="saving-and-loading-different-color-palettes-image-editor-for-icons"></a>다른 색상표 저장 및 로드(아이콘에 대한 이미지 편집기)
 

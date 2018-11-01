@@ -1,27 +1,17 @@
 ---
-title: '방법: interior_ptr 키워드를 사용 하 여 값 형식 선언 (C + + /cli CLI) | Microsoft Docs'
-ms.custom: ''
+title: '방법: interior_ptr 키워드를 사용하여 값 형식 선언(C++/CLI)'
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - _ptr keyword
 - value types, declaring
 ms.assetid: 49eea66e-eeba-49bd-95b0-ba297be436e3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: e9e24b2ac55e36c256adc076cee4ace2109a642d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 114d1bd3677537029f336f4de3675015f1725214
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50056201"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50612864"
 ---
 # <a name="how-to-declare-value-types-with-the-interiorptr-keyword-ccli"></a>방법: interior_ptr 키워드를 사용하여 값 형식 선언(C++/CLI)
 
