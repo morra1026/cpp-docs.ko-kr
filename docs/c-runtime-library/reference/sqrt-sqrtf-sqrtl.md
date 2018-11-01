@@ -1,10 +1,6 @@
 ---
-title: sqrt, sqrtf, sqrtl | Microsoft Docs
-ms.custom: ''
+title: sqrt, sqrtf, sqrtl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - sqrtl
 - sqrtf
@@ -26,8 +22,6 @@ f1_keywords:
 - sqrt
 - sqrtf
 - _sqrtl
-dev_langs:
-- C++
 helpviewer_keywords:
 - sqrtf function
 - sqrt function
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - calculating square roots
 - square roots, calculating
 ms.assetid: 2ba9467b-f172-41dc-8f10-b86f68fa813c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a6eefbbf3269ad809cdf30dd3ea034f7ca6c8ad8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c44f8813812b2aeffc2680a0a666d968bb2b4da6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407303"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50560578"
 ---
 # <a name="sqrt-sqrtf-sqrtl"></a>sqrt, sqrtf, sqrtl
 
@@ -78,11 +68,11 @@ long double sqrtl(
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **sqrt** 사용 하는 **float** 또는 **긴** **double** 형식입니다. C 프로그램에서 **sqrt** 항상 사용 하 고 반환 **double**합니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **sqrt** 사용 하는 **float** 하거나 **긴** **double** 형식입니다. C 프로그램에서 **sqrt** 항상 받아서 반환 **double**합니다.
 
 ## <a name="return-value"></a>반환 값
 
-**sqrt** 의 제곱근을 반환 하는 함수 *x*합니다. 기본적으로 경우 *x* 가 음수 이면 **sqrt** 무한 NaN을 반환 합니다.
+합니다 **sqrt** 의 제곱근을 반환 하는 함수 *x*합니다. 기본적으로 하는 경우 *x* 가 음수 이면 **sqrt** 는 무한 NaN을 반환 합니다.
 
 |입력|SEH 예외|**_matherr** 예외|
 |-----------|-------------------|--------------------------|
@@ -92,9 +82,9 @@ C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|C 헤더|C++ 헤더|
+|기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**sqrt**, **sqrtf**, **sqrtl**|\<math.h>|\<cmath>|
+|**sqrt**하십시오 **sqrtf**, **sqrtl**|\<math.h>|\<cmath>|
 
 호환성에 대한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

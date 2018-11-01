@@ -1,10 +1,6 @@
 ---
 title: array 클래스(C++ 표준 라이브러리)| Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - array/std::array
 - array/std::array::const_iterator
@@ -38,8 +34,6 @@ f1_keywords:
 - array/std::array::swap
 - array/std::array::operator=
 - array/std::array::operator[]
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::array [C++]
 - std::array [C++], const_iterator
@@ -102,16 +96,12 @@ helpviewer_keywords:
 - std::array [C++], size
 - std::array [C++], swap
 ms.assetid: fdfd43a5-b2b5-4b9e-991f-93bf10fb4293
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c52a68e87e29aaa827a61e657e04364acf6205b4
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 0cb12cfc74578969f96476c2acaadefb4dbc19de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318793"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555924"
 ---
 # <a name="array-class-c-standard-library"></a>array 클래스(C++ 표준 라이브러리)
 
@@ -176,7 +166,7 @@ class array;
 
 ## <a name="remarks"></a>설명
 
-형식에 기본 생성자 `array()`와 기본 대입 연산자 `operator=`가 있고 `aggregate`에 대한 요구 사항을 충족합니다. 따라서 집계 이니셜라이저를 사용하여 `array<Ty, N>` 형식의 개체를 초기화할 수 있습니다. 예를 들어 개체에 적용된
+형식에 기본 생성자 `array()`와 기본 대입 연산자 `operator=`가 있고 `aggregate`에 대한 요구 사항을 충족합니다. 따라서 집계 이니셜라이저를 사용하여 `array<Ty, N>` 형식의 개체를 초기화할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```cpp
 array<int, 4> ai = { 1, 2, 3 };
