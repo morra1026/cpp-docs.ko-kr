@@ -1,11 +1,6 @@
 ---
-title: timespec_get, _timespec32_get, _timespec64_get1 | Microsoft Docs
-ms.custom: ''
+title: timespec_get, _timespec32_get, _timespec64_get1
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - timespec_get
 - _timespec32_get
@@ -33,23 +28,17 @@ f1_keywords:
 - timespec
 - _timespec32
 - _timespec64
-dev_langs:
-- C++
 helpviewer_keywords:
 - timespec_get function
 - _timespec32_get function
 - _timespec64_get function
 ms.assetid: ed757258-b4f2-4c1d-a91b-22ea6ffce4ab
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f00a59f8b5813398b47562b106f3ec0eff3363b1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c1d0cbaf194060d816e31d397a9319ef47f75371
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32412835"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638453"
 ---
 # <a name="timespecget-timespec32get-timespec64get"></a>timespec_get, _timespec32_get, _timespec64_get
 
@@ -83,23 +72,23 @@ epoch 시작 이후 지난 시간(초 및 나노초)으로 설정된 구조체 �
 
 ## <a name="return-value"></a>반환 값
 
-값 *기본* 성공 하 고, 그렇지 않으면 0이 반환 됩니다.
+변수의 *기본* 경우 성공, 그렇지 않으면 0을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**timespec_get** 가 가리키는 구조체의 현재 시간을 설정 하는 함수는 *time_spec* 인수입니다. 이 구조체의 모든 버전에는 두 멤버는 **tv_sec** 및 **tv_nsec**합니다. **tv_sec** 실수 시간 (초) 값이 설정 및 **tv_nsec** 하기 위해 정수 나노초로 반올림 시스템 클록의 해상도로 로지정된epoch시작된이후*기본*합니다.
+합니다 **timespec_get** 가리키는 구조체에 현재 시간을 설정 하는 함수는 *time_spec* 인수입니다. 이 구조체의 모든 버전에는 두 명의 멤버 **tv_sec** 하 고 **tv_nsec**합니다. 합니다 **tv_sec** 값이 시간 (초)을 정수로 설정 하 고 **tv_nsec** 나노초의 계열 수로 반올림 시스템 클록의 해상도 하여지정된epoch시작이후*기본*입니다.
 
 **Microsoft 전용**
 
-이러한 함수는 지원만 **TIME_UTC** 로 *기본* 값입니다. 이 설정의 *time_spec* 값의 초 및 나노초는 epoch 시작, 1970 년 1 월 1 일 자정, Utc (협정 세계시) 이후 수 있습니다. 에 **구조체** **_timespec32**, **tv_sec** 는 **__time32_t** 값입니다. 에 **구조체** **_timespec64**, **tv_sec** 는 **__time64_t** 값입니다. 에 **구조체** **timespec**, **tv_sec** 는 **time_t** 32 비트 또는 64 비트 길이 인지 여부에 따라 형식을 전처리기 매크로 _USE_32BIT_TIME_T이 정의 합니다. **timespec_get** 함수를 호출 하는 인라인 함수는 **_timespec32_get** _USE_32BIT_TIME_T이 정의 하 고; 그렇지 않으면 호출 **_timespec64_get**합니다.
+이러한 함수는만 지원 **TIME_UTC** 으로 *기본* 값입니다. 이 설정 된 *time_spec* 초 및 나노초 epoch 시작, 1970 년 1 월 1 일 자정 Utc (협정 세계시) 이후 번호로 값을 합니다. 에 **구조체** **_timespec32**를 **tv_sec** 은 **__time32_t** 값입니다. 에 **구조체** **_timespec64**를 **tv_sec** 은 **__time64_t** 값입니다. 에 **구조체** **timespec**를 **tv_sec** 은 **time_t** 종류입니다. 32 비트 또는 64 비트 길이 인지에 따라 전처리기 매크로 _USE_32BIT_TIME_T이 정의 합니다. 합니다 **timespec_get** 함수를 호출 하는 인라인 함수 이며 **_timespec32_get** _USE_32BIT_TIME_T이 정의 하 고; 그렇지 않으면 호출 **_timespec64_get**합니다.
 
 **Microsoft 전용 종료**
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**timespec_get**, **_timespec32_get**, **_timespec64_get**|C: \<time.h>, C++: \<ctime> 또는 \<time.h>|
+|**timespec_get**하십시오 **_timespec32_get**, **_timespec64_get**|C: \<time.h>, C++: \<ctime> 또는 \<time.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

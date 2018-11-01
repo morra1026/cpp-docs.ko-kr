@@ -1,10 +1,6 @@
 ---
-title: _CrtSetDebugFillThreshold | Microsoft 문서
-ms.custom: ''
+title: _CrtSetDebugFillThreshold
 ms.date: 03/21/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtSetDebugFillThreshold
 apilocation:
@@ -22,8 +18,6 @@ apitype: DLLExport
 f1_keywords:
 - _CrtSetDebugFillThreshold
 - CrtSetDebugFillThreshold
-dev_langs:
-- C++
 helpviewer_keywords:
 - debug, buffer-filling behavior
 - CrtSetDebugFillThreshold function
@@ -31,16 +25,12 @@ helpviewer_keywords:
 - buffer-filling behavior
 - 0xFD
 ms.assetid: 6cb360e8-56ae-4248-b17f-e28aee3e0ed7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c0980331389a36fa123c6ee64989296f5afec5c8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ebe958ddc1c9a5c372f4ae68336e0dea3144e8b4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398661"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602204"
 ---
 # <a name="crtsetdebugfillthreshold"></a>_CrtSetDebugFillThreshold
 
@@ -63,7 +53,7 @@ size_t _CrtSetDebugFillThreshold( size_t newThreshold );
 
 ## <a name="remarks"></a>설명
 
-보안이 강화 된 CRT 함수는 일부의 디버그 버전은 특수 문자를 사용 하 여 전달 된 버퍼를 채웁니다 (0xFE). 이를 통해 잘못된 크기가 함수에 전달된 경우를 찾을 수 있습니다. 그러나 성능 또한 줄어듭니다. 성능 향상을 위해 사용 하 여 **_CrtSetDebugFillThreshold** 보다 큰 버퍼에 대 한 버퍼 채우기를 비활성화 하는 *newThreshold* 임계값입니다. A *newThreshold* 값이 0에 대 한 모든 버퍼 비활성화 합니다.
+일부 보안이 강화 된 CRT 함수의 디버그 버전에 특수 문자를 사용 하 여 전달 된 버퍼를 채웁니다 (0xFE). 이를 통해 잘못된 크기가 함수에 전달된 경우를 찾을 수 있습니다. 그러나 성능 또한 줄어듭니다. 성능 향상을 위해 사용 하 여 **_CrtSetDebugFillThreshold** 보다 큰 버퍼에 대 한 버퍼 채우기를 비활성화 하는 *newThreshold* 임계값입니다. A *newThreshold* 값이 0 모든 버퍼를 해제 합니다.
 
 기본 임계값은 **SIZE_T_MAX**합니다.
 
@@ -107,15 +97,15 @@ size_t _CrtSetDebugFillThreshold( size_t newThreshold );
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_CrtSetDebugFillThreshold**|\<crtdbg.h>|
 
-이 함수는 Microsoft 전용. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+이 함수는 Microsoft 전용입니다. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="libraries"></a>라이브러리
 
-디버그 버전의는 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md) 만 합니다.
+디버그 버전의 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md) 만 합니다.
 
 ## <a name="example"></a>예제
 

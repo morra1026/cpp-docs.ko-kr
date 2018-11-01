@@ -1,10 +1,6 @@
 ---
-title: _fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32 | Microsoft 문서
-ms.custom: ''
+title: _fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _fstat32
 - _fstat64
@@ -38,8 +34,6 @@ f1_keywords:
 - _fstat
 - fstat32
 - _fstat64i32
-dev_langs:
-- C++
 helpviewer_keywords:
 - _fstat64 function
 - fstati64 function
@@ -55,16 +49,12 @@ helpviewer_keywords:
 - _fstati64 function
 - fstat32i64 function
 ms.assetid: 088f5e7a-9636-4cf7-ab8e-e28d2aa4280a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 65d77bfdd7922387568ca8257e66f6e19dde1a35
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2cec64e408b326dccc7b950656d0aa699c084f83
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404970"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677788"
 ---
 # <a name="fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32"></a>_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32
 
@@ -109,32 +99,32 @@ int _fstat64i32(
 
 ## <a name="return-value"></a>반환 값
 
-파일 상태 정보를 가져오는 경우 0을 반환합니다. 반환 값-1의 오류를 나타냅니다. 파일 설명자에 유효 하지 않을 경우 또는 *버퍼* 은 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EBADF**, 잘못 된 파일 설명자의 경우 또는 **EINVAL**경우 *버퍼* **NULL**합니다.
+파일 상태 정보를 가져오는 경우 0을 반환합니다. 반환 값이-1 오류를 나타냅니다. 파일 설명자가 올바르지 않은 경우 또는 *버퍼* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EBADF**를 잘못 된 파일 설명자 인 경우 또는 **EINVAL**이면 *버퍼* 됩니다 **NULL**합니다.
 
 ## <a name="remarks"></a>설명
 
-**_fstat** 함수와 관련 된 열려 있는 파일에 대 한 정보를 가져오는 *fd* 에서 가리키는 구조에 저장 하 고 *버퍼*합니다. **_stat** SYS\Stat.h에 정의 된 구조에는 다음 필드가 포함 됩니다.
+합니다 **_fstat** 함수에 연결 된 열려 있는 파일에 대 한 정보를 가져옵니다 *fd* 가리키는 구조체에 저장 합니다 *버퍼*합니다. 합니다 **_stat** SYS\Stat.h에 정의 된 필드가 있습니다.
 
 |필드|의미|
 |-|-|
 **st_atime**|마지막 파일 액세스 시간입니다.
 **st_ctime**|파일 생성 시간입니다.
-**st_dev**|하는 경우 장치를 *fd*그렇지 않으면 0입니다.
-**st_mode**|파일 모드 정보의 비트 마스크입니다. **_S_IFCHR** 비트가 경우 *fd* 장치를 참조 합니다. **_S_IFREG** 비트가 경우 *fd* 일반 파일을 가리킵니다. 파일의 사용 권한 모드에 따라 사용자 읽기/쓰기 비트가 설정됩니다. **_S_IFCHR** 및 다른 상수 SYS\Stat.h에 정의 됩니다.
+**st_dev**|장치인 경우 *fd*그렇지 않으면 0입니다.
+**st_mode**|파일 모드 정보의 비트 마스크입니다. 합니다 **_S_IFCHR** 비트가 설정 됩니다 *fd* 장치를 참조 합니다. 합니다 **_S_IFREG** 비트가 설정 됩니다 *fd* 일반 파일을 가리킵니다. 파일의 사용 권한 모드에 따라 사용자 읽기/쓰기 비트가 설정됩니다. **_S_IFCHR** 및 기타 상수는 SYS\Stat.h에 정의 됩니다.
 **st_mtime**|파일의 마지막 수정 시간입니다.
 **st_nlink**|NTFS가 아닌 파일 시스템에서 항상 1입니다.
-**st_rdev**|하는 경우 장치를 *fd*그렇지 않으면 0입니다.
+**st_rdev**|장치인 경우 *fd*그렇지 않으면 0입니다.
 **st_size**|파일 크기(바이트)입니다.
 
-경우 *fd* 참조 하는 장치는 **st_atime**, **st_ctime**, **st_mtime**, 및 **st_size** 필드는 이 값은 의미가 없습니다.
+하는 경우 *fd* 장치를 참조 합니다 **st_atime**를 **st_ctime**를 **st_mtime**, 및 **st_size** 필드는 이 값은 의미가 없습니다.
 
 Stat.h에서는 Types.h에 정의된 [_dev_t](../../c-runtime-library/standard-types.md) 형식을 사용하므로 코드에서 Stat.h 앞에 Types.h를 포함해야 합니다.
 
-**_fstat64**를 사용 하는 **__stat64** 구조을 23시 59분: 59 까지의 3000 년 12 월 31 일, UTC 표현할 수 파일 작성 날짜를 사용 하면 다른 함수 23시 59분: 59 년 1 월 18 일 까지의 날짜만 나타내도록 되어 있지만 2038 년, UTC 1970년 1월 1일 자정은 이러한 모든 함수에 대한 날짜 범위의 하한입니다.
+**_fstat64**를 사용 합니다 **__stat64** 구조체, 파일 생성 날짜를 23시 59분: 59 까지의 3000 년 12 월 31 일, UTC; 표현할 수 있습니다. 다른 함수 23시 59분: 59 년 1 월 18 일 까지의 날짜만 나타냅니다 하는 반면 2038 년, UTC입니다. 1970년 1월 1일 자정은 이러한 모든 함수에 대한 날짜 범위의 하한입니다.
 
-이러한 함수의 변형은 32비트 또는 64비트 시간 형식과 32비트 또는 64비트 파일 길이를 지원합니다. 첫 번째 숫자 접미사 (**32** 또는 **64**)의 크기를 나타냅니다. 형식에 사용 되는, 두 번째 접미사 **i32** 또는 **i64**, 파일 크기는 32 비트 또는 64 비트 정수 표현 됩니다 있는지 여부를 나타내는입니다.
+이러한 함수의 변형은 32비트 또는 64비트 시간 형식과 32비트 또는 64비트 파일 길이를 지원합니다. 첫 번째 숫자 접미사 (**32** 또는 **64**)의 크기를 나타내는 형식에 사용 되는, 두 번째 접미사 **i32** 또는 **i64**, 32 비트 또는 64 비트 정수로 파일 크기를 나타낼지 여부를 나타내는입니다.
 
-**_fstat** 같습니다 **_fstat64i32**, 및 **구조체** **_stat** 64 비트 시간을 포함 합니다. 이러한 현상은 하지 않는 한 **_USE_32BIT_TIME_T** 정의이 경우 이전 동작이 적용 됩니다. **_fstat** 32 비트 시간을 사용 하 고 **구조체** **_stat** 32 비트 시간을 포함 합니다. 같은 기준이 **_fstati64**합니다.
+**_fstat** 같습니다 **_fstat64i32**, 및 **구조체** **_stat** 는 64 비트 시간을 포함 합니다. 이 경우가 아니면 **_USE_32BIT_TIME_T** 정의이 경우 이전 동작이 적용 됩니다 **_fstat** 32 비트 시간을 사용 하 고 **구조체** **_stat** 는 32 비트 시간을 포함 합니다. 같은 기준이 **_fstati64**합니다.
 
 ### <a name="time-type-and-file-length-type-variations-of-stat"></a>_stat의 시간 형식 및 파일 길이 형식 변형
 
@@ -151,7 +141,7 @@ Stat.h에서는 Types.h에 정의된 [_dev_t](../../c-runtime-library/standard-t
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**_fstat**|\<sys/stat.h> 및 \<sys/types.h>|
 |**_fstat32**|\<sys/stat.h> 및 \<sys/types.h>|

@@ -1,12 +1,6 @@
 ---
-title: 대화 상자의 수명 주기 | Microsoft Docs
-ms.custom: ''
+title: 대화 상자의 수명 주기
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - dialog boxes [MFC], life cycle
 - modal dialog boxes [MFC], life cycle
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], life cycle
 - life cycle of dialog boxes [MFC]
 ms.assetid: e16fd78e-238d-4f31-8c9d-8564f3953bd9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 05138040b6283b7af01f6e010bc371490aea495e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e92489499a3a5aaaf2fb97e8908cb30d5e168240
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46440500"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50577621"
 ---
 # <a name="life-cycle-of-a-dialog-box"></a>대화 상자의 수명 주기
 

@@ -1,10 +1,6 @@
 ---
-title: _get_dstbias | Microsoft 문서
-ms.custom: ''
+title: _get_dstbias
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _get_dstbias
 - __dstbias
@@ -25,24 +21,18 @@ f1_keywords:
 - __dstbias
 - _get_dstbias
 - get_dstbias
-dev_langs:
-- C++
 helpviewer_keywords:
 - __dstbias
 - daylight saving time offset
 - get_dstbias function
 - _get_dstbias function
 ms.assetid: e751358c-1ecc-411b-ae2c-81b2ec54ea45
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 82e334c6fcb282bebb003992219f6cf215ab7437
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 61807f854dc9c2f7de6f0acd5bbf4668987ce49e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397768"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579106"
 ---
 # <a name="getdstbias"></a>_get_dstbias
 
@@ -61,19 +51,19 @@ error_t _get_dstbias( int* seconds );
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 0 **errno** 값이 오류가 발생 합니다.
+성공 하는 경우 또는 0 **errno** 값에 오류가 발생 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_get_dstbias** 함수를 정수로 일광 절약 시간에서 초 수를 검색 합니다. 일광 절약 시간이 적용 중인 경우 몇몇 지역에서 2시간 오프셋을 따르고 있더라도 기본 오프셋은 3,600초입니다. 이 값은 한 시간을 나타내는 초 수입니다.
+합니다 **_get_dstbias** 함수 정수로 일광 절약 시간의 시간 (초) 수를 검색 합니다. 일광 절약 시간이 적용 중인 경우 몇몇 지역에서 2시간 오프셋을 따르고 있더라도 기본 오프셋은 3,600초입니다. 이 값은 한 시간을 나타내는 초 수입니다.
 
-경우 *초* 은 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 이 함수를 설정 하는 경우 실행을 계속 허용 된, **errno** 를 **EINVAL** 반환 **EINVAL**합니다.
+하는 경우 *초* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우이 함수를 설정 합니다 **errno** 하 **EINVAL** 반환 **EINVAL**합니다.
 
-매크로 대신이 함수를 사용 하는 것이 좋습니다 **_dstbias** 또는 사용 되지 않는 함수 **__dstbias**합니다.
+이 함수를 사용 하 여 매크로 대신 하는 것이 좋습니다 **_dstbias** 또는 사용 되지 않는 함수 **__dstbias**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_get_dstbias**|\<time.h>|
 

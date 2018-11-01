@@ -1,10 +1,6 @@
 ---
-title: AFX 메시지 | Microsoft Docs
-ms.custom: ''
+title: AFX 메시지
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - SB_LINELEFT
 - SB_THUMBTRACK
@@ -65,21 +61,15 @@ f1_keywords:
 - AFX_WM_CREATETOOLBAR
 - SB_THUMBPOSITION
 - AFX_WM_POSTSETPREVIEWFRAME
-dev_langs:
-- C++
 helpviewer_keywords:
 - AFX messages [MFC]
 ms.assetid: 3d601f3c-af6d-47d3-8553-34f1318fa74f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 92f24c18de594cfe734b703ec13c3116b7b5d31b
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 45c6a9174cbd39c4c0c24ffbdfdefb9d184a3cc1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46391000"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594690"
 ---
 # <a name="afx-messages"></a>AFX 메시지
 
@@ -100,7 +90,7 @@ ms.locfileid: "46391000"
 |AFX_WM_CHANGING_ACTIVE_TAB|부모에 전송 `CMFCTabCtrl` 개체입니다.  알림을 받으려는 경우이 메시지를 처리할 `CMFCTabCtrl` 사용자 탭으로 다시 설정 하는 경우 개체입니다.|활성화 되는 탭 인덱스입니다.|사용되지 않습니다.|0이 아닙니다.|
 |AFX_WM_CHECKEMPTYMINIFRAME|내부 전용입니다.|해당 사항 없음.|해당 사항 없음.|해당 사항 없음.|
 |AFX_WM_CREATETOOLBAR|보낸 `CMFCToolBarsListPropertyPage` 만드는 사용자는 새 도구 모음 사용자 지정 프로세스 중입니다. 사용자 지정 CMFCToolBar 파생 개체를 인스턴스화하기 위해이 메시지를 처리할 수 있습니다. 이 메시지를 처리 하 고 도구 모음을 직접 만들 경우 기본 처리기로 호출을 생략 합니다.|사용되지 않습니다.|도구 모음의 이름을 포함 하는 문자열에 대 한 포인터입니다.|새로 만든된 도구 모음에 대 한 포인터입니다. NULL은 도구 모음 만들기가 취소 되었음을 나타냅니다.|
-|AFX_WM_CUSTOMIZEHELP|사용자 지정 속성 시트에서 주 프레임 창으로 전송 `CMFCToolbarCustomize Dialog` 를 누를 때 합니다 **도움말** 단추나 F1 키입니다.|사용자 지정 속성 시트의 현재 페이지를 지정합니다.|에 대 한 포인터를 `CMFCToolbarCustomize Dialog` 개체입니다.|0입니다.|
+|AFX_WM_CUSTOMIZEHELP|사용자 지정 속성 시트에서 주 프레임 창으로 전송 `CMFCToolbarCustomize Dialog` 를 누를 때 합니다 **도움말** 단추나 F1 키입니다.|사용자 지정 속성 시트의 현재 페이지를 지정합니다.|`CMFCToolbarCustomize Dialog` 개체에 대한 포인터입니다.|0입니다.|
 |AFX_WM_CUSTOMIZETOOLBAR|`CMFCToolbarCustomize Dialog` 는 사용자가 새 도구 모음을 만들 부모 프레임에 알리기 위해이 메시지를 보냅니다.|사용자 지정 시작 되 면 FALSE 사용자 지정이 완료 되 면 TRUE입니다.|사용되지 않습니다.|0입니다.|
 |AFX_WM_DELETETOOLBAR|사용자가 사용자 지정 모드에서 도구 모음을 삭제 하려고 하면 주 프레임 창으로 전송 합니다.<br /><br /> 사용자 사용자 지정 모드에서 도구 모음을 삭제할 때 추가 작업을 수행 하려면이 메시지를 처리 합니다. 또한 기본 처리기를 호출 해야 (`OnToolbarDelete`), 도구 모음에서 삭제 합니다. 기본 처리기가 도구 모음을 삭제할 수 있는지 여부를 나타내는 값을 반환 합니다.|사용되지 않습니다.|에 대 한 포인터를 `CMFCToolBar` 삭제할 개체입니다.|0이 아닌 경우 도구 모음을 삭제할 수 없습니다. 그렇지 않으면 0입니다.|
 |AFX_WM_GETDOCUMENTCOLORS|`CMFCColorMenuButton` 문서 색 검색할 주 프레임 창에이 메시지를 보냅니다.|사용되지 않습니다.|[out에서] 에 대 한 포인터를 `CList<COLORREF, COLORREF>` 개체입니다.|0입니다.|

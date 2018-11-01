@@ -1,24 +1,16 @@
 ---
-title: 컴파일러 경고 (수준 4) C4840 | Microsoft Docs
-ms.custom: ''
+title: 컴파일러 경고 (수준 4) C4840
 ms.date: 09/13/2018
-ms.topic: error-reference
 f1_keywords:
 - C4840
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4840
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c43ce60d319c427877b77a043df7c30bd00edc9b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a757004659c1a9d2ce858cfae5ddfbc6c024d782
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46025882"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586435"
 ---
 # <a name="compiler-warning-level-4-c4840"></a>컴파일러 경고 (수준 4) C4840
 

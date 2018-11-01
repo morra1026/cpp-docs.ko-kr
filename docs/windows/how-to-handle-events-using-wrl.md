@@ -1,24 +1,14 @@
 ---
-title: '방법: WRL을 사용 하 여 이벤트 처리 | Microsoft Docs'
-ms.custom: ''
+title: '방법: WRL을 사용하여 이벤트 처리'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
 ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: 1c77543f-7b0c-4a94-93bf-e3225885ed76
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 9eb1e1257513ff764e0666c3485e62204a2ac66c
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 362ae7f421e94605b182356984431210c72cf41f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591299"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50591947"
 ---
 # <a name="how-to-handle-events-using-wrl"></a>방법: WRL을 사용하여 이벤트 처리
 
