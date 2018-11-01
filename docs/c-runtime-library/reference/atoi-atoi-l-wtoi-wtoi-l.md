@@ -1,10 +1,6 @@
 ---
-title: atoi, _atoi_l, _wtoi, _wtoi_l | Microsoft 문서
-ms.custom: ''
+title: atoi, _atoi_l, _wtoi, _wtoi_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wtoi
 - _wtoi_l
@@ -30,8 +26,6 @@ f1_keywords:
 - atoi
 - _atoi_l
 - _wtoi_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _atoi_l function
 - ttoi function
@@ -46,16 +40,12 @@ helpviewer_keywords:
 - atoi function
 - wtoi function
 ms.assetid: ad7fda30-28ab-421f-aaad-ef0b8868663a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8ec426518aed278f98ca334ba4ed34830f5836a1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b54c0a58a070fa42218a7b048d9eb57b05040738
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397157"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452249"
 ---
 # <a name="atoi-atoil-wtoi-wtoil"></a>atoi, _atoi_l, _wtoi, _wtoi_l
 
@@ -90,23 +80,23 @@ int _wtoi_l(
 
 ## <a name="return-value"></a>반환 값
 
-각 함수는 반환 된 **int** 입력된 된 문자를 숫자로 해석 하 여 계산 된 값입니다. 반환 값은 0에 대 한 **atoi** 및 **_wtoi**, 해당 형식의 값으로 입력을 변환할 수 없는 경우.
+각 함수가 반환 하는 **int** 입력된 문자를 숫자로 해석 하 여 생성 된 값입니다. 반환 값은 0입니다 **atoi** 하 고 **_wtoi**이면 입력 해당 형식의 값으로 변환할 수 없습니다.
 
-큰 음의 정수 값으로 하는 오버플로의 경우 **LONG_MIN** 반환 됩니다. **atoi** 및 **_wtoi** 반환 **INT_MAX** 및 **INT_MIN** 이러한 조건에 있습니다. 모든 범위를 벗어난 경우에 **errno** 로 설정 된 **ERANGE**합니다. 전달 된 매개 변수는 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된, 이러한 함수 설정 **errno** 를 **EINVAL** 0을 반환 합니다.
+큰 음의 정수 값을 사용 하는 오버플로의 경우 **LONG_MIN** 반환 됩니다. **atoi** 하 고 **_wtoi** 반환 **INT_MAX** 하 고 **INT_MIN** 이러한 조건에서 합니다. 모든 범위를 벗어난 경우에 **errno** 로 설정 된 **ERANGE**합니다. 전달 된 매개 변수 인지 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL** 0을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 정수 값을 문자열 변환 (**atoi** 및 **_wtoi**). 입력 문자열은 지정된 형식의 숫자 값으로 해석될 수 있는 문자 시퀀스입니다. 함수는 숫자의 일부로 인식할 수 없는 첫 번째 문자에서 입력 문자열 읽기를 중지합니다. 이 문자는 문자열을 종결하는 null 문자('\0' 또는 L'\0')일 수 있습니다.
+이러한 함수는 문자열을 정수 값으로 변환 (**atoi** 하 고 **_wtoi**). 입력 문자열은 지정된 형식의 숫자 값으로 해석될 수 있는 문자 시퀀스입니다. 함수는 숫자의 일부로 인식할 수 없는 첫 번째 문자에서 입력 문자열 읽기를 중지합니다. 이 문자는 문자열을 종결하는 null 문자('\0' 또는 L'\0')일 수 있습니다.
 
-*str* 인수를 **atoi** 및 **_wtoi** 형식은 다음과 같습니다.
+합니다 *str* 인수 **atoi** 하 고 **_wtoi** 형식은:
 
-> [*공백*] [*기호*] [*자릿수*]]
+> [*공백을*] [*sign*] [*자릿수*]]
 
-A *공백* ; 무시 되는 공백 또는 탭 문자로 구성 되어 *기호* 는 더하기 (+) 또는 빼기 (-); 및 *자릿수* 는 되는 하나 이상의 숫자입니다.
+A *공백* 무시 되는 공백 또는 탭 문자로 구성 됩니다 *로그인* 는 더하기 (+) 또는 빼기 (-) 이며 및 *숫자* 하나 이상의 숫자가 됩니다.
 
-있는 이러한 함수 버전은 **_l** 은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 점을 제외 하 고 접미사는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+포함 된 이러한 함수의 버전을 **_l** 접미사 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -118,11 +108,11 @@ A *공백* ; 무시 되는 공백 또는 탭 문자로 구성 되어 *기호* �
 |루틴|필수 헤더|
 |--------------|---------------------|
 |**atoi**|\<stdlib.h>|
-|**_atoi_l**, **_wtoi**, **_wtoi_l**|\<stdlib.h> 또는 \<wchar.h>|
+|**_atoi_l**하십시오 **_wtoi**, **_wtoi_l**|\<stdlib.h> 또는 \<wchar.h>|
 
 ## <a name="example"></a>예제
 
-이 프로그램은 방법 문자열로 저장 된 숫자를 사용 하 여 숫자 값으로 변환 될 수는 **atoi** 함수입니다.
+이 프로그램을 사용 하 여 숫자 값을 문자열로 저장 된 숫자를 변환할 수 하는 방법을 보여 줍니다 합니다 **atoi** 함수입니다.
 
 ```C
 // crt_atoi.c

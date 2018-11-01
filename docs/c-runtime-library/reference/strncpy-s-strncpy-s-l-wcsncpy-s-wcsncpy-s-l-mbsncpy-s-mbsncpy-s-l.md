@@ -1,10 +1,6 @@
 ---
-title: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l | Microsoft Docs
-ms.custom: ''
+title: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbsncpy_s_l
 - wcsncpy_s
@@ -33,8 +29,6 @@ f1_keywords:
 - _strncpy_s_l
 - wcsncpy_s
 - _tcsncpy_s_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _wcsncpy_s_l function
 - _mbsnbcpy_s function
@@ -51,23 +45,19 @@ helpviewer_keywords:
 - _tcsncpy_s function
 - wcsncpy_s_l function
 ms.assetid: a971c800-94d1-4d88-92f3-a2fe236a4546
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: add1f3ec75a3746d30e256ef32034b3d604f223a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8a6fc997ed874ba976e96f87df377e6fafd84a6b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32418213"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430071"
 ---
 # <a name="strncpys-strncpysl-wcsncpys-wcsncpysl-mbsncpys-mbsncpysl"></a>strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
 
 한 문자열의 문자를 다른 문자열에 복사합니다.  이러한 버전의 [strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)에는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 향상된 보안 기능이 포함되어 있습니다.
 
 > [!IMPORTANT]
-> **_mbsncpy_s** 및 **_mbsncpy_s_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbsncpy_s** 하 고 **_mbsncpy_s_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -171,46 +161,46 @@ errno_t _mbsncpy_s_l(
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 0 **STRUNCATE** 잘림이 발생 한 경우, 그렇지 않으면 오류 코드가 있습니다.
+성공 하면 0 **STRUNCATE** 잘림이 발생 한 경우, 그렇지 않으면 오류 코드입니다.
 
 ### <a name="error-conditions"></a>오류 조건
 
 |*strDest*|*numberOfElements*|*strSource*|반환 값|내용을 *strDest*|
 |---------------|------------------------|-----------------|------------------|---------------------------|
-|**NULL**|모두|모두|**EINVAL**|수정 안 됨|
-|모두|모두|**NULL**|**EINVAL**|*strDest*[0]을 0으로 설정|
-|모두|0|모두|**EINVAL**|수정 안 됨|
-|하지 **NULL**|너무 작음|모두|**ERANGE**|*strDest*[0]을 0으로 설정|
+|**NULL**|any|any|**EINVAL**|수정 안 됨|
+|any|any|**NULL**|**EINVAL**|*strDest*0 [0] 집합|
+|any|0|any|**EINVAL**|수정 안 됨|
+|하지 **NULL**|너무 작음|any|**ERANGE**|*strDest*0 [0] 집합|
 
 ## <a name="remarks"></a>설명
 
-이러한 함수를 첫 번째 복사 하려고 합니다. *D* 자의 *strSource* 를 *strDest*여기서 *D* 는 기간은 *개수*  의 길이가 *strSource*합니다. 이러한 경우 *D* 문자 내에 맞는 *strDest* (필요에 따라 크기가로 지정 된 *numberOfElements*) 해당 문자가 복사 되는 null 종결자를 위한 공간이 여전히 유지 종료 null 추가 됩니다. 그렇지 않으면 *strDest*[0] 설정 된 null 문자와 잘못 된 매개 변수 처리기가 호출에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다.
+이러한 함수는 첫 번째 복사 하려고 *D* 자의 *strSource* 에 *strDest*여기서 *D* 의 작은 *개수*  의 길이 *strSource*합니다. 이러한 경우 *D* 문자 내에 맞는 *strDest* (크기가으로 제공 됩니다 *numberOfElements*) 여전히 해당 문자가 복사 되며 다음 null 종결자를 위한 공간을 유지 하 고 종결 null 추가 됩니다. 그렇지 않으면 *strDest*[0] 설정 된 null 문자를 잘못 된 매개 변수 처리기가 호출에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다.
 
-위 단락의 설명에는 예외가 적용됩니다. 경우 *count* 은 **_TRUNCATE**, 만큼의 다음 *strSource* 로 크기에 *strDest* 하지만 대 한 복사 되는 항상 추가 되는 null을 종료 합니다.
+위 단락의 설명에는 예외가 적용됩니다. 경우 *개수* 됩니다 **_TRUNCATE**, 만큼의 *strSource* 포함할 *strDest* 에 대 한 공간은 남겨 두고 복사 되는 항상 추가 되는 null을 종료 합니다.
 
-예를 들어 개체에 적용된
+예를 들면 다음과 같습니다.
 
 ```C
 char dst[5];
 strncpy_s(dst, 5, "a long string", 5);
 ```
 
-회원님께 의미 **strncpy_s** 5 복사할 문자 버퍼에 길이가 5 바이트를 null 종결자에 공백이 없습니다. 따라서 남을 수 **strncpy_s** 0에서 문자열 및 잘못 된 호출 매개 변수 처리기입니다.
+요청 하는 것을 의미 **strncpy_s** 5 자를 복사 하도록 버퍼로 5 바이트 길이의 이렇게 하면 null 종결자에 공백이 없습니다. 따라서 **strncpy_s** 문자열 남지와 잘못 된 호출 매개 변수 처리기입니다.
 
-잘라내기 동작 필요한 경우 사용 **_TRUNCATE** 또는 (*크기* -1):
+잘라내기 동작이 필요한 경우 사용할 **_TRUNCATE** 하거나 (*크기* -1):
 
 ```C
 strncpy_s(dst, 5, "a long string", _TRUNCATE);
 strncpy_s(dst, 5, "a long string", 4);
 ```
 
-와 달리 **strncpy**경우 *count* 의 길이 보다 크면 *strSource*, 길이까지null문자로대상문자열은채워지지*count*합니다.
+와 달리 **strncpy**이면 *개수* 의 길이 보다 크면 *strSource*, 대상 문자열은 길이까지null문자로채워지지*개수*합니다.
 
 동작은 **strncpy_s** 소스 문자열과 대상 문자열이 겹치는 경우 정의 되지 않습니다.
 
-경우 *strDest* 또는 *strSource* 은 **NULL**, 또는 *numberOfElements* 은 0, 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 하려면 실행 허용 된 경우, 함수 반환 **EINVAL** 설정 **errno** 를 **EINVAL**합니다.
+하는 경우 *strDest* 또는 *strSource* 됩니다 **NULL**, 또는 *numberOfElements* 0 인 잘못 된 매개 변수 처리기가 호출 됩니다. 실행을 계속 하도록 허용 된 경우 함수 반환 **EINVAL** 설정 **errno** 하 **EINVAL**합니다.
 
-**wcsncpy_s** 및 **_mbsncpy_s** 와이드 문자 및 멀티 바이트 문자 버전의 **strncpy_s**합니다. 인수 및 반환 값이 **wcsncpy_s** 및 **mbsncpy_s** 그에 따라 다를 수행 합니다. 그 외의 경우에는 이들 6개 함수가 동일하게 작동합니다.
+**wcsncpy_s** 하 고 **_mbsncpy_s** 와이드 문자 및 멀티 바이트 문자 버전입니다 **strncpy_s**합니다. 인수 및 반환 값 **wcsncpy_s** 하 고 **mbsncpy_s** 그에 따라 달라 집니다. 그 외의 경우에는 이들 6개 함수가 동일하게 작동합니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -218,7 +208,7 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 
 이러한 함수의 디버그 버전은 우선 0xFD로 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -226,11 +216,11 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 |**_tcsncpy_s_l**|**_strncpy_s_l**|**_mbsnbcpy_s_l**|**_wcsncpy_s_l**|
 
 > [!NOTE]
-> **_strncpy_s_l**, **_wcsncpy_s_l** 및 **_mbsncpy_s_l** 로캘에 종속 되지 않습니다 있고 용 으로만 제공 되며 **_tcsncpy_s_l** 되지 않아야 하 고 직접 호출 합니다.
+> **_strncpy_s_l**, **_wcsncpy_s_l** 하 고 **_mbsncpy_s_l** 로캘에 종속 되지 않습니다 있고 용 으로만 제공 되며 **_tcsncpy_s_l** 되도록 하지 않습니다 직접 호출 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**strncpy_s**, **_strncpy_s_l**|\<string.h>|
 |**wcsncpy_s**, **_wcsncpy_s_l**|\<string.h> 또는 \<wchar.h>|

@@ -1,10 +1,6 @@
 ---
-title: _getdrives | Microsoft 문서
-ms.custom: ''
+title: _getdrives
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _getdrives
 apilocation:
@@ -23,23 +19,17 @@ apitype: DLLExport
 f1_keywords:
 - getdrives
 - _getdrives
-dev_langs:
-- C++
 helpviewer_keywords:
 - _getdrives function
 - getdrives function
 - disk drives
 ms.assetid: 869bb51f-4209-4328-846e-3aadebaceb9c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ec2834e9f755a8039326ea6fb193c4bc591355ac
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d34b03e307a9c619fab077973e4cc0a4c644de6c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399951"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50597260"
 ---
 # <a name="getdrives"></a>_getdrives
 
@@ -56,11 +46,11 @@ unsigned long _getdrives( void );
 
 ## <a name="return-value"></a>반환 값
 
-함수가 성공하는 경우 반환 값은 현재 사용 가능한 디스크 드라이브를 나타내는 비트 마스크입니다. 비트 위치 0(최하위 비트)은 드라이브 A, 비트 위치 1은 드라이브 B, 비트 위치 2는 드라이브 C 등입니다. 함수가 실패하면 반환 값은 0입니다. 확장 정보를 가져오려면 오류, 호출 **GetLastError**합니다.
+함수가 성공하는 경우 반환 값은 현재 사용 가능한 디스크 드라이브를 나타내는 비트 마스크입니다. 비트 위치 0(최하위 비트)은 드라이브 A, 비트 위치 1은 드라이브 B, 비트 위치 2는 드라이브 C 등입니다. 함수가 실패하면 반환 값은 0입니다. 확장 오류 정보를 가져오기, 호출 **GetLastError**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_getdrives**|\<direct.h>|
 

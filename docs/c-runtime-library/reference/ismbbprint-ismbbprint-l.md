@@ -1,10 +1,6 @@
 ---
-title: _ismbbprint, _ismbbprint_l | Microsoft 문서
-ms.custom: ''
+title: _ismbbprint, _ismbbprint_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbbprint_l
 - _ismbbprint
@@ -26,24 +22,18 @@ f1_keywords:
 - _ismbbprint
 - ismbbprint
 - ismbbprint_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - ismbbprint_l function
 - ismbbprint function
 - _ismbbprint function
 - _ismbbprint_l function
 ms.assetid: d08a061c-18a8-48f2-a75d-bff4870aec9d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 49618a119f089e70e88bbdb9efcdae9bab616560
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2fc697dd3ee4fee487beedf5e6e3deb706cc5f75
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400078"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660488"
 ---
 # <a name="ismbbprint-ismbbprintl"></a>_ismbbprint, _ismbbprint_l
 
@@ -75,11 +65,11 @@ int _ismbbprint_l(
 
 `isprint(c) || _ismbbkprint(c)`
 
-에 대 한이 0이 아닌 *c*, 없는 경우 0입니다. **_ismbbprint** 모든 로캘 종속 동작에 대해 현재 로캘을 사용 합니다. **_ismbbprint_l** 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+이 대 한 아닌 *c*, 있지 않으면 0입니다. **_ismbbprint** 모든 로캘 종속 동작에 현재 로캘을 사용 합니다. **_ismbbprint_l** 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_ismbbprint**|\<mbctype.h>|
 |**_ismbbprint_l**|\<mbctype.h>|

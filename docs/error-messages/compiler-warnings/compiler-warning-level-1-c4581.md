@@ -1,27 +1,17 @@
 ---
-title: 컴파일러 경고 (수준 1) C4581 | Microsoft Docs
-ms.custom: ''
+title: 컴파일러 경고(수준 1) C4581
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4581
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4581
 ms.assetid: 598bcd87-257d-4eb3-94e4-15bb31aadc99
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 586283e41fb38baae828bf5a4380ec2afe323ecb
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9e370bcff0c30fb508ebc22aaff1f6a56dd420a1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46116050"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50625123"
 ---
 # <a name="compiler-warning-level-1-c4581"></a>컴파일러 경고(수준 1) C4581
 

@@ -1,26 +1,16 @@
 ---
-title: C/c + + 전처리기 참조 | Microsoft Docs
-ms.custom: ''
+title: C/C++ 전처리기 참조
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - preprocessor
 - preprocessor, reference overview
 ms.assetid: e4a52843-7016-4f6d-8b40-cb1ace18f805
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4c7c1b84c23ae16828e2d73cb1f45084dfd5806e
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1ad46a1a3006cbca52336bf65bcfbafd37e59752
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50055335"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607664"
 ---
 # <a name="cc-preprocessor-reference"></a>C/C++ 전처리기 참조
 합니다 *C/c + + 전처리기 참조* Microsoft C/c + +에서 구현 되는 전처리기에 설명 합니다. 전처리기는 C 및 C++ 파일이 컴파일러로 전달되기 전에 해당 파일에 대한 준비 작업을 수행합니다. 전처리기를 사용하여 조건에 따라 코드를 컴파일하고, 파일을 삽입하고, 컴파일 시간 오류 메시지를 지정하고, 코드 섹션에 시스템별 규칙을 적용할 수 있습니다.

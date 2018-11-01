@@ -1,10 +1,6 @@
 ---
-title: strrchr, wcsrchr, _mbsrchr, _mbsrchr_l | Microsoft Docs
-ms.custom: ''
+title: strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - strrchr
 - wcsrchr
@@ -30,8 +26,6 @@ f1_keywords:
 - strrchr
 - wcsrchr
 - _mbsrchr
-dev_langs:
-- C++
 helpviewer_keywords:
 - _mbsrchr function
 - tcsrchr function
@@ -47,16 +41,12 @@ helpviewer_keywords:
 - _ftcsrchr function
 - _mbsrchr_l function
 ms.assetid: 75cf2664-758e-49bb-bf6b-8a139cd474d2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 03b0ce2c9bd205f9065c783a4ff4d7e50d0ff803
-ms.sourcegitcommit: 04d327940787df1297b72d534f388a035d472af0
+ms.openlocfilehash: d07930f5e77d76ae950af1058c55e58cb296011b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39181161"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607703"
 ---
 # <a name="strrchr-wcsrchr-mbsrchr-mbsrchrl"></a>strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
 
@@ -140,7 +130,7 @@ const unsigned char *_mbsrchr_l(
 
 합니다 `strrchr` 함수의 마지막 항목을 찾습니다 *c* (변환할 **char**)에서 *str*합니다. 검색에는 종료형 null 문자를 포함합니다.
 
-`wcsrchr` 및 `_mbsrchr`는 `strrchr`의 와이드 문자 및 멀티바이트 문자 버전입니다. `wcsrchr`의 인수 및 반환 값은 와이드 문자열이며 `_mbsrchr`의 인수와 반환 값은 멀티바이트 문자열입니다.
+`wcsrchr` 및 `_mbsrchr` 는 `strrchr`의 와이드 문자 및 멀티바이트 문자 버전입니다. `wcsrchr`의 인수 및 반환 값은 와이드 문자열이며 `_mbsrchr`의 인수와 반환 값은 멀티바이트 문자열입니다.
 
 C에서 이러한 함수는 다음과 같이 사용 됩니다.는 **const** 첫 번째 인수에 대 한 포인터입니다. C++에서는 두 오버로드를 모두 사용할 수 있습니다. 에 대 한 포인터를 갖는 오버 로드 **상수** 에 대 한 포인터를 반환 **const**;는 버전에 대 한 포인터를은 비**const** 에 대 한 포인터를 반환 하는 비-**const** . 매크로 _CRT_CONST_CORRECT_OVERLOADS 모두 정의 되는 **const** 및 비-**const** 이러한 함수의 버전은 사용할 수 있습니다. 필요 하면 이외**const** 두 c + + 오버 로드에 대 한 동작 기호 _CONST_RETURN을 정의 합니다.
 
@@ -165,7 +155,7 @@ C에서 이러한 함수는 다음과 같이 사용 됩니다.는 **const** 첫 
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 `strrchr` 사용 예제는 [strchr](strchr-wcschr-mbschr-mbschr-l.md)을 참조하세요.
 
