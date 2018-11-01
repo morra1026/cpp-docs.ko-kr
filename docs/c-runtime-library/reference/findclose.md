@@ -1,10 +1,6 @@
 ---
-title: _findclose | Microsoft 문서
-ms.custom: ''
+title: _findclose
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _findclose
 apilocation:
@@ -23,22 +19,16 @@ apitype: DLLExport
 f1_keywords:
 - _findclose
 - findclose
-dev_langs:
-- C++
 helpviewer_keywords:
 - _findclose function
 - findclose function
 ms.assetid: 9216c573-0878-444c-b5d7-cdaf16fb9163
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9a25ed42f1a53eb81c834997f42db0154658f376
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 29010f8a502d463eeb6ca98837a1b7dae9f5ae6b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395688"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50538114"
 ---
 # <a name="findclose"></a>_findclose
 
@@ -59,11 +49,11 @@ int _findclose(
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 **_findclose** 0을 반환 합니다. 그렇지 않으면-1을 반환 하 고 설정 **errno** 를 **ENOENT**, 나타내는 더 이상 일치 하는 파일을 찾을 수 없습니다.
+성공 하면 **_findclose** 0을 반환 합니다. 그렇지 않으면-1을 반환 합니다 설정 **errno** 하 **ENOENT**를 나타내는 더 이상 일치 하는 파일을 찾을 수 없습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**_findclose**|\<io.h>|
 
