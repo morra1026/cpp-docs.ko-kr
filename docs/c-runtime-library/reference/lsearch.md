@@ -1,10 +1,6 @@
 ---
-title: _lsearch | Microsoft 문서
-ms.custom: ''
+title: _lsearch
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _lsearch
 apilocation:
@@ -23,8 +19,6 @@ apitype: DLLExport
 f1_keywords:
 - _lsearch
 - lsearch
-dev_langs:
-- C++
 helpviewer_keywords:
 - _lsearch function
 - values, searching for
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - searching, linear
 - lsearch function
 ms.assetid: 8200f608-159a-46f0-923b-1a37ee1af7e0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2aaf6626b2f7005181640f77026b6924c39cd325
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 340e8ac382972b15acc52013d5d6a51352db969c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451301"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532813"
 ---
 # <a name="lsearch"></a>_lsearch
 
@@ -69,7 +59,7 @@ void *_lsearch(
 *base*<br/>
 검색할 배열의 기준에 대한 포인터입니다.
 
-*번호*<br/>
+*수*<br/>
 요소의 수입니다.
 
 *width*<br/>
@@ -80,19 +70,19 @@ void *_lsearch(
 
 ## <a name="return-value"></a>반환 값
 
-키가 있으면 **_lsearch** 배열의 요소에 대 한 포인터를 반환 *기본* 일치 하는 *키*합니다. 키가 없으면 **_lsearch** 배열의 끝에 새로 추가 된 항목에 대 한 포인터를 반환 합니다.
+키가 있으면 **_lsearch** 배열의 요소에 대 한 포인터를 반환 합니다. *기본* 일치 하는 *키*합니다. 키가 없으면 **_lsearch** 배열의 끝에서 새로 추가 된 항목에 대 한 포인터를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_lsearch** 함수 값에 대 한 선형 검색을 수행 *키* 배열을 *번호* 의 각 요소 *너비* 바이트입니다. 와 달리 **bsearch**, **_lsearch** 정렬할 배열 필요 하지 않습니다. 경우 *키* 발견 되지 않으면 **_lsearch** 배열과 간격의 끝에 추가 *번호*합니다.
+합니다 **_lsearch** 함수 값에 대 한 선형 검색을 수행 *키* 배열을 *번호* 의 각 요소 *너비* 바이트입니다. 와 달리 **bsearch**하십시오 **_lsearch** 배열을 정렬할 필요가 없습니다. 경우 *키* 가 없는 **_lsearch** 배열 및 증가의 끝에 추가 하 고 *번호*합니다.
 
-*비교* 인수는 두 배열 요소를 비교 하 고 서로의 관계를 지정 하는 값을 반환 하는 사용자 제공 루틴에 대 한 포인터입니다. **_lsearch** 호출은 *비교* 일상적인 한 번 이상 호출할 때마다 두 배열 요소에 포인터를 전달 검색 중. *비교* 요소를 비교 하 고 반환 해야 합니다 (요소는 서로 다른 의미) 0이 아닌 값 또는 0 (요소는 동일).
+합니다 *비교* 인수는 두 배열 요소를 비교 하 고 서로의 관계를 지정 하는 값을 반환 하는 사용자가 제공한 루틴에 대 한 포인터입니다. **_lsearch** 호출을 *비교* 일상적인 한 번 이상 각 호출에서 두 배열 요소에 대 한 포인터를 전달 하는 검색 중. *비교* 요소를 비교 하 고 반환 해야 합니다 (요소가 다르다는 의미) 0이 아닌 값 또는 0 (요소가 동일 하다는 의미).
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 경우 *비교*, *키* 또는 *번호* 은 **NULL**, if 또는 *기본* 은 **NULL**및 *번호* 이 값은 0 이거나 *너비* 작으면 0 보다는 잘못 된 매개 변수 처리기가 호출에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수가 반환 하 고 **NULL**합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. 경우 *비교*, *키* 또는 *번호* 은 **NULL**, 또는 *기본* 은 **NULL**하 고 *번호* 이 값은 0 이거나 *너비* 작습니다 0 보다는 잘못 된 매개 변수 처리기가 호출에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고 함수가 반환 **NULL**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_lsearch**|\<search.h>|
 

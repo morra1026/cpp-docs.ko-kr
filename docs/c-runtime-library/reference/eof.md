@@ -1,10 +1,6 @@
 ---
-title: _eof | Microsoft 문서
-ms.custom: ''
+title: _eof
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _eof
 apilocation:
@@ -22,8 +18,6 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _eof
-dev_langs:
-- C++
 helpviewer_keywords:
 - eof function
 - end of file, testing for
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - testing, for end-of-file
 - end of file
 ms.assetid: 265703f4-d07e-4005-abf3-b1d0cdd9e0b0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: da7ccad98491762d30db2741f8c3d9fe0d784dc6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1da849c3721d4d83ff0b3166bc18f95728ebf124
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395126"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522397"
 ---
 # <a name="eof"></a>_eof
 
@@ -62,15 +52,15 @@ int _eof(
 
 ## <a name="return-value"></a>반환 값
 
-**_eof** 현재 위치가 파일의 끝에 또는 0 되지 않았으면 1을 반환 합니다. 반환 값이-1은 오류;를 나타냅니다. 이 경우에 잘못 된 매개 변수 처리기가 호출에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EBADF**, 잘못 된 파일 설명자를 나타내는입니다.
+**_eof** 현재 위치가 파일의 끝에서 또는 0 없는 경우 1을 반환 합니다. 반환 값이-1은 오류;를 나타냅니다. 이 경우에 잘못 된 매개 변수 처리기가 호출에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EBADF**, 잘못 된 파일 설명자를 나타냅니다.
 
 ## <a name="remarks"></a>설명
 
-**_eof** 함수는 파일의 끝에 연결 된 있는지 여부를 결정 *fd* 에 도달 했습니다.
+합니다 **_eof** 함수는 파일의 끝에 연결 된 여부를 결정 *fd* 에 도달 했습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|선택적 헤더|
+|기능|필수 헤더|선택적 헤더|
 |--------------|---------------------|---------------------|
 |**_eof**|\<io.h>|\<errno.h>|
 

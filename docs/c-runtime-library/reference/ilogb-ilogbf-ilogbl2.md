@@ -1,11 +1,6 @@
 ---
-title: ilogb, ilogbf, ilogbl2 | Microsoft 문서
-ms.custom: ''
+title: ilogb, ilogbf, ilogbl2
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - ilogb
 - ilogbf
@@ -35,16 +30,12 @@ helpviewer_keywords:
 - ilogbf function
 - ilogbl function
 ms.assetid: 9ef19d57-1caa-41d5-8233-2faad3562fcb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1436874e1ab35cc72dc40390adf5597529d3bf57
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 63e04246d29fde50c745a5f353829bd337a814ad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398181"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551985"
 ---
 # <a name="ilogb-ilogbf-ilogbl"></a>ilogb, ilogbf, ilogbl
 
@@ -82,7 +73,7 @@ int ilogbl(
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 반환의 밑이 2 인 지 수 *x* signed로 **int** 값입니다.
+성공한 경우의 밑이 2 인 지 수를 반환 *x* 로그인으로 **int** 값입니다.
 
 그렇지 않으면 \<math.h>에 정의된 다음 값 중 하나를 반환합니다.
 
@@ -95,15 +86,15 @@ int ilogbl(
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **ilogb** 사용 하 고 반환 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **ilogb** 항상 사용 하 고 반환 된 **double**합니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **ilogb** 및 반환 하는 **float** 하 고 **긴** **double** 형식입니다. C 프로그램에서 **ilogb** 항상 받아서 반환 된 **double**합니다.
 
-이 함수를 호출 하는 것은 해당 하는 호출 비슷합니다 **logb** 함수를 다음 반환 값을 캐스팅 **int**합니다.
+이 함수를 호출 하는 것은 해당 호출 비슷합니다 **logb** 함수를 다음 반환 값을 캐스팅 **int**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|C 헤더|C++ 헤더|
+|루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**ilogb**, **ilogbf**, **ilogbl**|\<math.h>|\<cmath>|
+|**ilogb**하십시오 **ilogbf**, **ilogbl**|\<math.h>|\<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

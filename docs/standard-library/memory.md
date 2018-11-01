@@ -1,29 +1,19 @@
 ---
-title: '&lt;memory&gt; | Microsoft 문서'
-ms.custom: ''
+title: '&lt;memory&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - memory/std::<memory>
 - <memory>
 - std::<memory>
-dev_langs:
-- C++
 helpviewer_keywords:
 - memory header
 ms.assetid: ef8e38da-7c9d-4037-9ad1-20c99febf5dc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3b90a96816855e08610d0f63f3ab5c237d564453
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: def0b5560abe3ad6d1a0777e2878d9a3030c44ca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217951"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50538452"
 ---
 # <a name="ltmemorygt"></a>&lt;memory&gt;
 
@@ -72,7 +62,7 @@ ms.locfileid: "43217951"
 |연산자|설명|
 |-|-|
 |[operator!=](../standard-library/memory-operators.md#op_neq)|지정된 클래스의 할당자 개체가 다른지 테스트합니다.|
-|[operator==](../standard-library/memory-operators.md#op_eq_eq)|지정된 클래스의 할당자 개체가 같은지 테스트합니다.|
+|[연산자==](../standard-library/memory-operators.md#op_eq_eq)|지정된 클래스의 할당자 개체가 같은지 테스트합니다.|
 |[operator>=](../standard-library/memory-operators.md#op_gt_eq)|하나의 할당자 개체에 대한 테스트는 지정된 클래스의 두 번째 할당자 개체보다 크거나 같습니다.|
 |[operator<](../standard-library/memory-operators.md#op_lt)|하나의 개체에 대한 테스트는 지정된 클래스의 두 번째 개체보다 적습니다.|
 |[operator\<=](../standard-library/memory-operators.md#op_gt_eq)|하나의 개체에 대한 테스트는 지정된 클래스의 두 번째 개체보다 적거나 같습니다.|
