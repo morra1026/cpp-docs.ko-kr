@@ -1,10 +1,6 @@
 ---
-title: modf, modff, modfl | Microsoft Docs
-ms.custom: ''
+title: modf, modff, modfl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - modff
 - modf
@@ -30,23 +26,17 @@ f1_keywords:
 - math/modf
 - math/modff
 - math/modfl
-dev_langs:
-- C++
 helpviewer_keywords:
 - modf function
 - modff function
 - modfl function
 ms.assetid: b1c7abf5-d476-43ca-a03c-02072a86e32d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 87cddb8b565cdc369e6b1e9679583db64039bb49
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 59d6e2b9b02ad182c5630d6dc9a989c035e8fa92
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404833"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50478067"
 ---
 # <a name="modf-modff-modfl"></a>modf, modff, modfl
 
@@ -79,17 +69,17 @@ long double modf( long double x, long double * intptr );  // C++ only
 
 ## <a name="remarks"></a>설명
 
-**modf** 함수 부동 소수점 값을 구분 *x* 소수 부분에 각각 같은 부호를 포함 하는 정수 부품 및 *x*합니다. 부호 있는 소수 부분 *x* 반환 됩니다. 정수 부분에서 부동 소수점 값으로 저장 됩니다 *intptr*합니다.
+합니다 **modf** 함수는 부동 소수점 값을 세분화 *x* 를 소수 부분과 정수 부분으로와 부호가 같도록 *x*합니다. 부호 있는 소수 부분이 *x* 반환 됩니다. 정수 부분은 부동 소수점 값에 저장 됩니다 *intptr*합니다.
 
-**modf** 스트리밍 SIMD 확장명 2 (SSE2)를 사용 하는 구현 합니다. SSE2 구현의 사용 제한 사항 및 사용 방법에 대한 자세한 내용은 [_set_SSE2_enable](set-sse2-enable.md)을 참조하세요.
+**modf** sse2(스트리밍 SIMD 확장 2 ()를 사용 하는 구현 합니다. SSE2 구현의 사용 제한 사항 및 사용 방법에 대한 자세한 내용은 [_set_SSE2_enable](set-sse2-enable.md)을 참조하세요.
 
-C + + 오버 로드의 오버 로드를 호출할 수 있도록 허용 **modf** 사용 하 고 반환 **float** 또는 **긴** **double** 매개 변수입니다. C 프로그램에서 **modf** 항상 두 double 값을 사용 하 고 double 값을 반환 합니다.
+C + +에서는 오버 로드를 허용 하므로 오버 로드를 호출할 수 있습니다 **modf** 및 반환 하는 **float** 하거나 **긴** **double** 매개 변수입니다. C 프로그램에서 **modf** 항상 double 값 두 개를 사용 하며 double 값을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**modf**, **modff**, **modfl**|C: \<math.h><br /><br /> C++: , \<cmath> 또는 \<math.h>|
+|**modf**하십시오 **modff**, **modfl**|C: \<math.h><br /><br /> C++: , \<cmath> 또는 \<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

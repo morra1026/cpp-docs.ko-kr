@@ -1,25 +1,15 @@
 ---
-title: '&lt;스레드&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;thread&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <thread>
-dev_langs:
-- C++
 ms.assetid: 0c858405-4efb-449d-bf76-70d3693c9234
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ef5470d7c7e83c260f44d723665d5d9c0a5ad061
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 43fb79ceda6de7409e6f93797ce2f4ff213c43ee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953031"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487518"
 ---
 # <a name="ltthreadgt"></a>&lt;thread&gt;
 
@@ -54,7 +44,7 @@ ms.locfileid: "38953031"
 
 ### <a name="public-functions"></a>공용 함수
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |[get_id](../standard-library/thread-functions.md#get_id)|현재 실행 스레드를 고유하게 식별합니다.|
 |[sleep_for](../standard-library/thread-functions.md#sleep_for)|호출 스레드를 차단합니다.|

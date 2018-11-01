@@ -1,14 +1,8 @@
 ---
-title: 'TN031: 컨트롤 막대 | Microsoft Docs'
-ms.custom: ''
+title: 'TN031: 컨트롤 막대'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.controls.bars
-dev_langs:
-- C++
 helpviewer_keywords:
 - control bars [MFC], styles
 - CStatusBar class [MFC], Tech Note 31 usage
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - TN031
 - styles [MFC], control bars
 ms.assetid: 8cb895c0-40ea-40ef-90ee-1dd29f34cfd1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 412dd9e0a4e81ee6152197634205401cbe71df2e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9029b8c0fb6aa20de62dbdf21aedeae6d8a15994
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390619"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463309"
 ---
 # <a name="tn031-control-bars"></a>TN031: 컨트롤 막대
 
@@ -74,7 +64,7 @@ A `ControlBar` 는 `CWnd`-파생 된 클래스입니다.
 
 - 파생된 클래스의 구현 지원
 
-C++ 컨트롤 막대 개체는 일반적으로 `CFrameWnd` 파생 클래스의 멤버로 포함되며, 부모 `HWND` 및 개체가 제거되면 삭제됩니다. 설정 하기만 하면 힙에 컨트롤 막대 개체를 할당 해야 할 경우는 *m_bAutoDestruct* 멤버 **TRUE** 컨트롤 막대에 "**삭제**" 때 합니다 `HWND` 소멸 됩니다.
+C++ 컨트롤 막대 개체는 일반적으로 `CFrameWnd` 파생 클래스의 멤버로 포함되며, 부모 `HWND` 및 개체가 제거되면 삭제됩니다. 힙에 컨트롤 막대 개체를 할당해야 하는 경우 *가 제거될 때 컨트롤 막대에 "* delete this **"가 적용되도록** m_bAutoDestruct**멤버를**TRUE `HWND` 로 설정하기만 하면 됩니다.
 
 > [!NOTE]
 >  직접 만드는 경우 `CControlBar`-파생 클래스에서 파생 클래스와 같은 MFC의 중 하나를 사용 하지 않고 `CStatusBar`, `CToolBar`, 또는 `CDialogBar`를 설정 해야 합니다는 *m_dwStyle* 데이터 멤버입니다. 재정의에서이 작업을 수행할 수 있습니다 `Create`:

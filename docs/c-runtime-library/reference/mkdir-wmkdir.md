@@ -1,10 +1,6 @@
 ---
-title: _mkdir, _wmkdir | Microsoft Docs
-ms.custom: ''
+title: _mkdir, _wmkdir
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wmkdir
 - _mkdir
@@ -27,8 +23,6 @@ f1_keywords:
 - _tmkdir
 - wmkdir
 - _wmkdir
-dev_langs:
-- C++
 helpviewer_keywords:
 - _wmkdir function
 - folders [C++], creating
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - _mkdir function
 - _tmkdir function
 ms.assetid: 7f22d01d-63a5-4712-a6e7-d34878b2d840
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 40641911af9c61285049a5943cdc8f5c21cba99b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0d89e1f0930cf9131156a4691069f1f17c15c124
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402142"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496619"
 ---
 # <a name="mkdir-wmkdir"></a>_mkdir, _wmkdir
 
@@ -73,9 +63,9 @@ int _wmkdir(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 새 디렉터리가 만들어진 경우 0을 반환합니다. 오류, 함수 반환 값-1 및 집합에서 **errno** 다음과 같습니다.
+이러한 각 함수는 새 디렉터리가 만들어진 경우 0을 반환합니다. 오류, 함수 반환 값-1 및 세트 **errno** 다음과 같습니다.
 
-**EEXIST** 때문에 디렉터리가 만들어진 *dirname* 는 기존 파일, 디렉터리 또는 장치 이름입니다.
+**EEXIST** 않았으므로 디렉터리를 만들지 못했습니다 *dirname* 기존 파일, 디렉터리 또는 장치 이름입니다.
 
 **ENOENT** 경로 찾을 수 없습니다.
 
@@ -83,11 +73,11 @@ int _wmkdir(
 
 ## <a name="remarks"></a>설명
 
-**_mkdir** 함수는 지정 된 새 디렉터리를 만드는 *dirname 합니다.* **_mkdir** 의 마지막 구성 요소에만 호출당 하나의 새 디렉터리를 만들 수 *dirname* 새 디렉터리 이름을 지정할 수 있습니다. **_mkdir** 경로 구분 기호를 의미 하지는 않습니다. Windows NT에서 백슬래시(\\)와 슬래시(/)는 런타임 루틴의 문자열에 사용할 수 있는 경로 구분 기호입니다.
+합니다 **_mkdir** 함수는 지정 된 새 디렉터리를 만듭니다 *dirname 합니다.* **_mkdir** 의 마지막 구성 되므로 호출당 하나의 새 디렉터리를 만들 수 있습니다 *dirname* 새 디렉터리를 이름을 지정할 수 있습니다. **_mkdir** 경로 구분 기호를 변환 하지 않습니다. Windows NT에서 백슬래시(\\)와 슬래시(/)는 런타임 루틴의 문자열에 사용할 수 있는 경로 구분 기호입니다.
 
-**_wmkdir** 의 와이드 문자 버전이 **_mkdir**; *dirname* 인수를 **_wmkdir** 는 와이드 문자 문자열입니다. **_wmkdir** 및 **_mkdir** 동일 하 게 작동 합니다.
+**_wmkdir** 의 와이드 문자 버전이 **_mkdir**; *dirname* 인수 **_wmkdir** 는 와이드 문자 문자열입니다. **_wmkdir** 하 고 **_mkdir** 동일 하 게 작동 합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -95,7 +85,7 @@ int _wmkdir(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_mkdir**|\<direct.h>|
 |**_wmkdir**|\<direct.h> 또는 \<wchar.h>|
