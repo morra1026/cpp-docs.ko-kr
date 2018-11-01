@@ -1,11 +1,6 @@
 ---
-title: trunc, truncf, truncl | Microsoft Docs
-ms.custom: ''
+title: trunc, truncf, truncl
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - trunc
 - truncf
@@ -30,23 +25,17 @@ f1_keywords:
 - math/trunc
 - math/truncf
 - math/truncl
-dev_langs:
-- C++
 helpviewer_keywords:
 - trunc function
 - truncf function
 - truncl function
 ms.assetid: de2038ac-ac0b-483e-870c-e8992dcd4fd0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 67c179065a6b2c6fc10a4ba6ba87868c8306a2aa
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6e023b9d894ea1b40a0e056e73b7c32f1e3cbed7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409461"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519862"
 ---
 # <a name="trunc-truncf-truncl"></a>trunc, truncf, truncl
 
@@ -72,7 +61,7 @@ float trunc( float x ); //C++ only
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면의 정수 값을 반환 합니다. *x*0으로 반올림 합니다.
+성공한 경우의 정수 값을 반환 합니다. *x*0에 가깝도록 반올림 합니다.
 
 그렇지 않으면 다음 중 하나를 반환할 수 있습니다.
 
@@ -86,7 +75,7 @@ float trunc( float x ); //C++ only
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **trunc** 사용 하 고 반환 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **trunc** 항상 사용 하 고 반환 된 **double**합니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **trunc** 및 반환 하는 **float** 하 고 **긴** **double** 형식입니다. C 프로그램에서 **trunc** 항상 받아서 반환 된 **double**합니다.
 
 가장 큰 부동 소수점 값은 정확한 정수이므로 이 함수는 자체적으로는 오버플로되지 않습니다. 그러나 값을 정수값으로 반환하여 함수가 오버플로되도록 할 수 있습니다.
 
@@ -94,9 +83,9 @@ C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|C 헤더|C++ 헤더|
+|기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**trunc**, **truncf**, **truncl**|\<math.h>|\<cmath>|
+|**trunc**하십시오 **truncf**, **truncl**|\<math.h>|\<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

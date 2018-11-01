@@ -1,25 +1,15 @@
 ---
-title: Shared by MFC and ATL 클래스 | Microsoft Docs
-ms.custom: ''
+title: MFC와 ATL에서 공유 하는 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - shared classes, classes
 ms.assetid: ca8b4b6b-744d-430b-b31f-d5b2f17bf210
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 50295c9d296449e36ed4a305b568d2e0aaed10a3
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 6e63664020508252a61682c46439af85033cf068
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49327910"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50583874"
 ---
 # <a name="classes-shared-by-mfc-and-atl"></a>MFC와 ATL에서 공유 하는 클래스
 
